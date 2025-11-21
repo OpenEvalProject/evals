@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "DGRPool is a web-based resource that aggregates 1034 phenotypes across 135 DGRP studies, with 43 fully curated studies containing 505 unique phenotypes. The platform enables GWAS and PheWAS analyses using PLINK2 on ~4M DGRP variants, correcting for six known covariates, and is implemented using Ruby-on-Rails with PostgreSQL backend.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 provide consistent quantitative data about DGRPool's content and curation status. Claims C48-C50 describe the technical implementation and analytical methods. The data are internally consistent and represent the primary deliverable of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The curated studies in DGRPool show that the top annotated phenotype categories are 'Behaviour', 'Life History Traits', and 'Resistance', with the number of phenotypes per study ranging from 1 to 89 (median=5, mean=11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 are supported by data shown in Figures 1C and 1D. The distribution of phenotype categories aligns with historical Drosophila research focus areas, and the quantitative summary statistics are clearly presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Phenotypes from the same study correlate more strongly than those from different studies, but the longevity phenotype shows strong correlation across both sexes and laboratories, demonstrating robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are supported by correlation analyses shown in Figures 2B-D and citations to multiple independent studies. The within-study vs. cross-study correlation difference is statistically significant (p<2.22e-16), and longevity's cross-laboratory robustness is demonstrated across six studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C22"
+    ],
+    "result": "Cross-study phenotype correlations reveal biologically meaningful relationships, including morphology traits between studies, Wolbachia-related phenotypes, and reproductive behavior correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 describe specific cross-study correlations supported by Figure 2A and appropriate citations. The correlations are conceptually coherent (e.g., morphology studies correlating, Wolbachia studies correlating) and demonstrate the utility of the integrated resource.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Analysis of longevity correlations identified 33 phenotypes significantly associated at 5% FDR, including expected associations (starvation resistance, oxidative stress resistance) and less intuitive ones (desiccation survival, locomotor activity anti-correlation, food intake anti-correlation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 present a coherent proof-of-concept analysis supported by Figure 3C and appropriate citations to prior literature. The positive correlations (C24-C27) and negative correlations (C28-C31) are statistically significant and biologically interpretable, though the authors appropriately note that causality cannot be inferred from correlations alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Pre-calculated GWAS analyses using PLINK2 on all phenotypes suggest that p\u22641\u00d710\u207b\u2076 is an appropriate threshold for avoiding excessive false positives, while the Bonferroni threshold (p\u22642.67\u00d710\u207b\u2078) may be overly stringent, yielding only 20 hits on average (median=0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 describe the GWAS implementation and threshold evaluation supported by Figures 4A and 4\u2014figure supplement 2. The threshold recommendation is based on empirical distribution analysis, though the authors appropriately acknowledge this is specific to their normalization parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "GWAS validation using azinphos-methyl survival data successfully identified the Accord LTR insertion (2R:8072884, p=1.966\u00d710\u207b\u00b2\u2076) upstream of Cyp6g1 as the top variant associated with organophosphate resistance, reproducing published findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 present a validation case study supported by Figure 4E and citations to prior work (Daborn et al., 2002; Schmidt et al., 2010; Battlay, 2019). The successful reproduction of known associations demonstrates the reliability of DGRPool's GWAS implementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Analysis of phenotypic extremeness across DGRP lines revealed modest sex correlation (Spearman's \u03c1=0.3514, p<1.57\u00d710\u207b\u2075), with DGRP_757 and DGRP_765 consistently showing lower longevity, but no evidence of generally biased 'super normal' lines that would systematically affect genetic studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by extremeness analysis shown in Figure 5. The statistical analysis is appropriate, and the conclusion that no generally extreme lines exist is supported by the data showing that lines extreme for some traits (e.g., DGRP_852, DGRP_042) display normal longevity values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The DGRP consists of 205 fully sequenced inbred lines (192 available), with 155 publications from 2012-2024. The existing DGRP2 website hosts 31 phenotypes from 12 studies but has not been updated since 2015.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background context supported by Figure 1A, Table 1, and appropriate citations (Mackay, 2012; Huang et al., 2014). These establish the motivation for creating DGRPool by documenting the limitations of existing resources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "DGRPool was used as proof-of-concept to study longevity, uncovering both established and unexpected correlations with locomotor activity, starvation resistance, desiccation survival, and oxidative stress resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 summarizes the longevity case study that is detailed in claims C23-C31. This high-level summary is supported by the detailed analyses presented in Figure 3 and associated statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Drosophila melanogaster is an excellent model for genotype-phenotype studies, the DGRP has proven valuable for complex trait genetics, and batch effects may contribute to within-study phenotype similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 present general background knowledge supported by appropriate citations and Figure 1A. These establish the scientific context and potential confounders (batch effects) that inform the interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Prior DGRP studies have demonstrated cross-phenotype correlations, including defense correlations between fungal and bacterial pathogens (Wang et al., 2017) and brain size correlations with behavioral phenotypes (Zwarts et al., 2015).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 cite prior work to establish precedent for cross-study phenotype correlations. These are appropriately cited and provide context for the utility of DGRPool's integrated approach.",
+    "result_type": "MINOR"
+  }
+]

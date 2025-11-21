@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Implantation of PIK3CA-null (\u03b1KO) pancreatic cancer cells induces clonal enrichment of effector memory CD8+ T cells that are responsible for immune-mediated tumor elimination. Single-cell RNA sequencing and TCR repertoire analysis revealed large clonal expansions mapping predominantly to the Cd8_EffectorMem phenotype, with clonal sizes \u226550 cells observed in \u03b1KO tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17, C18, and C19 are well-supported by comprehensive single-cell RNA sequencing and TCR repertoire data presented in Figure 1. The clonal enrichment analysis, UMAP visualization, and phenotypic mapping provide converging evidence that \u03b1KO tumors induce expansion of effector memory CD8+ T cells. The methodology is appropriate and the conclusions are directly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "A genome-wide CRISPR screen identified PCCB as a key regulator of immune evasion in PIK3CA-null pancreatic tumors. Deletion of Pccb in \u03b1KO cells (p-\u03b1KO) reversed immune recognition, leading to tumor progression and death of host mice, while \u03b1KO tumors were completely eliminated. The Pccb sgRNA was enriched by orders of magnitude over other candidates in both independent tumors from the screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21-C23, and C27-C31 are strongly supported by the CRISPR screen data (Figure 2) and survival studies (Figure 3). The screen identified Pccb with high confidence (detected at orders of magnitude higher than other sgRNAs in both tumors), and the validation experiments with p-\u03b1KO cells demonstrated complete reversal of the immune elimination phenotype with 9/12 mice dying by week 8 versus 0/9 for \u03b1KO. The experimental design is rigorous and conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PCCB loss does not affect in vitro growth rates or PI3K-AKT signaling in \u03b1KO cells, and the increased tumor growth of p-\u03b1KO cells in vivo is not due to PCCB-related mitochondrial metabolic changes. Both \u03b1KO and p-\u03b1KO cells showed similar growth rates in culture and comparable mitochondrial function and TCA metabolite levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 are supported by multiple complementary assays including cell proliferation assays (Figure 3\u2014figure supplement 1A), western blotting (Figure 3A), Seahorse OCR measurements, and LC-MS metabolite analysis (Figure 3\u2014figure supplement 1B, E). The data consistently show that PCCB loss does not reverse PIK3CA-AKT signaling changes or significantly alter mitochondrial metabolism, supporting the conclusion that p-\u03b1KO tumor progression occurs through an immune-mediated mechanism rather than intrinsic metabolic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "p-\u03b1KO tumors remain highly infiltrated with T cells similar to \u03b1KO tumors, but these T cells express elevated levels of checkpoint inhibitory receptors (PD1, CTLA4, LAG3) and are functionally exhausted. Additionally, p-\u03b1KO tumors show a twofold increase in immunosuppressive M2 macrophage infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C44 are well-supported by immunohistochemistry data (Figure 4A-D) and flow cytometry analysis (Figure 4\u2014figure supplement 1). The IHC quantification shows statistically significant increases in PD1, CTLA4, and LAG3 expression in p-\u03b1KO versus \u03b1KO tumors, while T cell infiltration levels remain comparable. The flow cytometry data confirms increased M2 macrophages. The inference that T cells are functionally exhausted (C43) is reasonable given the elevated checkpoint receptor expression, though direct functional assays would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C66",
+      "C67",
+      "C68",
+      "C73"
+    ],
+    "result": "PD1/PD-L1 blockade, either through genetic deletion (PD1-null mice) or anti-PD1 antibody treatment, significantly improves survival of mice implanted with p-\u03b1KO cells. In PD1-null mice, 8/9 mice survived with 5/9 tumor-free at 8 weeks. Anti-PD1 antibody treatment resulted in 9/13 mice surviving versus 2/9 vehicle-treated mice, with 4/13 remaining tumor-free. However, the treatment did not achieve 100% efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C66-C68, and C73 are strongly supported by survival data and IVIS imaging (Figure 5). The experiments include appropriate controls (vehicle-treated mice) and demonstrate statistically significant improvements in survival with PD1 blockade. The acknowledgment that treatment did not achieve complete efficacy (C73) is appropriately supported by the data showing some mice still succumbed to tumors. The experimental design is rigorous with adequate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C69",
+      "C74"
+    ],
+    "result": "Single-cell sequencing analysis reveals that p-\u03b1KO tumors contain clonally enriched CD8+ T cells in both WT and PD1-null mice, with PD1 blockade leading to increased numbers of effector memory T cells. PD1-null mice showed 856 CD8+ EffectorMem cells (from 18 large clonotypes) versus 361 cells (from 3 clones) in WT mice. However, not all exhausted T cells were reactivated, explaining incomplete treatment efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56, C69, and C74 are well-supported by comprehensive single-cell RNA sequencing and TCR repertoire data (Figure 6). The quantitative analysis shows clear differences in clonotype numbers and effector memory T cell populations between WT and PD1-null conditions. The data directly support the conclusion that PD1 blockade reactivates anti-tumor T cells, and the observation that not all exhausted T cells are reactivated provides a mechanistic explanation for incomplete treatment efficacy. The methodology is appropriate and conclusions are data-driven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "p-\u03b1KO tumors in WT mice exhibit a distinct population of precursor exhausted T cells (Tpex) that transform into effector memory T cells upon anti-PD1 treatment, consistent with published models of checkpoint blockade mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 are supported by single-cell sequencing data (Figure 6C) showing Tpex populations in WT mice and their transformation to effector memory cells in PD1-null mice. The interpretation is consistent with cited literature (Kallies et al., 2020; Im et al., 2016; Utzschneider et al., 2016) and the data support this mechanistic model. However, lineage tracing experiments would provide more definitive evidence of the Tpex-to-effector memory transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Analysis of human PDAC patient data shows that higher PCCB/PIK3CA ratio trends toward better survival, PCCB expression is significantly lower in tumors versus normal tissue, and among patients with high CD8+ T cell infiltration, high PCCB expression confers survival benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C61 are based on analysis of TCGA and GEO databases (Figure 7). While C60 shows statistically significant differences in PCCB expression between tumor and normal tissues, C59 shows only a trend (p=0.19, not significant) for the PCCB/PIK3CA ratio survival analysis. The survival analysis in C61 for high CD8+ patients is presented but statistical significance is not clearly reported. The clinical relevance is suggestive but requires validation in larger, independent cohorts with appropriate statistical power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "LC-MS analysis showed elevated methylcitrate (MC) and propionylcarnitine (C3) levels upon Pccb deletion, though statistical significance was not reached. Intracellular propionyl-CoA levels were similar between \u03b1KO and p-\u03b1KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80 and C81 are based on LC-MS data (Figure 3\u2014figure supplement 1D), but the authors explicitly state that statistical significance was not reached for MC and C3 elevation. The similar propionyl-CoA levels between \u03b1KO and p-\u03b1KO cells are noted, but the authors acknowledge challenges in detecting this metabolite. Without statistical significance and given the technical limitations acknowledged, these metabolic findings remain uncertain and require further validation with larger sample sizes or more sensitive detection methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C90",
+      "C91"
+    ],
+    "result": "RNA sequencing revealed substantial changes in cytokine-related signaling pathways between \u03b1KO and p-\u03b1KO cells, suggesting PCCB regulates immune evasion by promoting PD-L1 expression in anti-tumor T cells. The findings suggest that combining PI3K inhibitors with checkpoint inhibitors could overcome PDAC resistance to either therapy alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87, C90, and C91 involve significant inferential leaps. While C87 is supported by RNA-seq data (Figure 3\u2014figure supplement 2) showing pathway changes, C90's claim that PCCB regulates immune evasion by promoting PD-L1 expression is not directly demonstrated\u2014the data show elevated PD1 on T cells, not PD-L1 on tumor cells. C91 is speculative about combination therapy without direct experimental evidence. The mechanistic link between PCCB loss, cytokine changes, and checkpoint expression requires additional validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Background claims about PDAC epidemiology, genetics, and immunotherapy resistance establish the clinical context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C12 are standard background knowledge about PDAC supported by appropriate citations. These claims accurately represent the current understanding of PDAC as a lethal cancer with high KRAS mutation frequency, poor survival rates, and resistance to immunotherapy. The citations to Siegel et al., 2023; Balachandran et al., 2017; Halbrook et al., 2023; and others are appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Prior work from the authors and others established that PIK3CA plays critical roles in PDAC initiation and immune evasion, and that PIK3CA inhibitors can transform cold tumors into hot tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13-C16, C62-C64 accurately represent prior published work, primarily from the authors' previous studies (Sivaram et al., 2019; Wu et al., 2014) and other groups. These claims are appropriately cited and provide essential context for the current study. The prior work is accurately described and not misrepresented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C78",
+      "C79"
+    ],
+    "result": "Background information on PCCB biochemical function and its role in propionic acidemia, noting that PCCB's role in cancer and tumor immunity was previously unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C26, C78, and C79 accurately describe the established biochemistry of PCC and its role in propionic acidemia, supported by appropriate citations (Wongkittichote et al., 2017; Shchelochkov et al., 1993; Gr\u00fcnert et al., 2013; Kurczynski et al., 1989; Ando et al., 1972). The statement that PCCB's role in cancer immunity was unknown (C26) appropriately establishes the novelty of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C75",
+      "C76"
+    ],
+    "result": "Prior studies support the potential of combining PI3K inhibitors with checkpoint blockade in other cancer models, and combination checkpoint inhibitor therapies show superior clinical benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72, C75, and C76 accurately represent prior published work on combination therapies, supported by appropriate citations (Isoyama et al., 2021; Collins et al., 2022; Gulhati et al., 2023; Smith et al., 2013; Tedelind et al., 2007; H\u00f8gh et al., 2020). These claims provide context for the therapeutic implications of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "IHC data revealed significant upregulation of TIGIT and LAG3 in p-\u03b1KO tumors, suggesting potential benefit of additional checkpoint inhibitors beyond PD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by IHC data shown in Figure 4C-D. The quantification shows elevated expression of both TIGIT and LAG3 in p-\u03b1KO tumors. The suggestion that additional checkpoint inhibitors may improve outcomes is a reasonable inference from the data, though it remains to be tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Prior studies on propionate's immunomodulatory effects show conflicting results, with some demonstrating anti-inflammatory properties and others showing immune-stimulatory effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 accurately represent prior published work on propionate's effects on immune cells, appropriately cited to Smith et al., 2013; Tedelind et al., 2007; and H\u00f8gh et al., 2020. The authors appropriately note that these findings are somewhat conflicting, which is an honest assessment of the literature. These claims provide context for potential mechanisms but do not directly support the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C20",
+      "C88",
+      "C89"
+    ],
+    "result": "Methodological claims about the CRISPR library composition, novelty of the PCCB-PIK3CA association, and rationale for using genetic knockout versus pharmacological inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C88, and C89 are methodological statements that are appropriately supported. C20 accurately describes the GeCKO library composition. C88 appropriately claims novelty for the PCCB-PIK3CA association. C89 provides reasonable justification for using genetic knockout, citing prior studies showing off-target effects of PI3K inhibitors (Wang et al., 2017; Gharbi et al., 2007; Miller et al., 2019; Kong and Yamori, 2008).",
+    "result_type": "MINOR"
+  }
+]

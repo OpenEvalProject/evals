@@ -1,0 +1,2043 @@
+{
+  "submission": {
+    "id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:29:13.491634Z",
+    "updated_at": "2025-11-21T20:29:13.491634Z"
+  },
+  "content": [
+    {
+      "id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "content_type": "manuscript",
+      "content_text": "# Crispant analysis in zebrafish as a tool for rapid functional screening of disease-causing genes for bone fragility\n\n## Authors\n\n- Sophie Debaenst<sup>1</sup> ([ORCID: 0000-0001-7598-919X](https://orcid.org/0000-0001-7598-919X))\n- Tamara Jarayseh<sup>1</sup>\n- Hanna De Saffel<sup>1</sup>\n- Jan Willem Bek<sup>1</sup>\n- Matthieu Boone<sup>2</sup>\n- Ivan Josipovic<sup>2</sup>\n- Pierre Kibleur<sup>2</sup>\n- Ronald Y Kwon<sup>3</sup> ([ORCID: 0000-0001-9760-3761](https://orcid.org/0000-0001-9760-3761))\n- Paul J Coucke<sup>1</sup>\n- Andy Willaert<sup>1</sup> ([ORCID: 0000-0002-9543-1932](https://orcid.org/0000-0002-9543-1932)) \u2020\n\n### Affiliations\n\n1. Center for Medical Genetics Ghent, Department of Biomolecular Medicine, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))\n2. Center for X-ray Tomography, Department of Physics and Astronomy, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))\n3. Department of Orthopaedics and Sports Medicine, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n4. Institute for Stem Cell and Regenerative Medicine, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHeritable fragile bone disorders (FBDs), ranging from multifactorial to rare monogenic conditions, are characterized by an elevated fracture risk. Validating causative genes and understanding their mechanisms remain challenging. We assessed a semi-high throughput zebrafish screening platform for rapid in vivo functional testing of candidate FBD genes. Six genes linked to severe recessive osteogenesis imperfecta (OI) and four associated with bone mineral density (BMD) from genome-wide association studies were analyzed. Using CRISPR/Cas9-based crispant screening in F0 mosaic founder zebrafish, Next-generation sequencing confirmed high indel efficiency (mean 88%), mimicking stable knock-out models. Skeletal phenotyping at 7, 14, and 90 days post-fertilization (dpf) using microscopy, Alizarin Red S staining, and microCT was performed. Larval crispants showed variable osteoblast and mineralization phenotypes, while adult crispants displayed consistent skeletal defects, including malformed neural and haemal arches, vertebral fractures and fusions, and altered bone volume and density. In addition, aldh7a1 and mbtps2 crispants experienced increased mortality due to severe skeletal deformities. RT-qPCR revealed differential expression of osteogenic markers bglap and col1a1a, highlighting their biomarker potential. Our results establish zebrafish crispant screening as a robust tool for FBD gene validation, combining skeletal and molecular analyses across developmental stages to uncover novel insights into gene functions in bone biology.\n\n## Introduction\n\nHeritable fragile bone disorders (FBD), which are generally associated with increased fracture risk, range from common multifactorial conditions to rare monogenic diseases (Charoenngam et al., 2023). They present within a wide phenotypic spectrum where monogenic disorders are generally more severe and often include skeletal deformities and extra-skeletal abnormalities. Multifactorial FBD, on the other hand, usually present with milder symptoms that are often restricted to bone fragility. Osteoporosis is a common skeletal disease characterized by low bone mass, low bone mineral density (BMD) and increased fracture risk (Kanis et al., 1994). It affects about 200 million people around the world (Pouresmaeili et al., 2018). In Europe, 5.6% of the population aged over 50 is diagnosed with osteoporosis, making it a highly prevalent disease, especially in the elderly. The risk of osteoporosis is influenced by both environmental factors, such as physical activity, diet preferences, medication use, coexisting diseases, and genetic factors (Ralston and Uitterlinden, 2010). Low BMD and fractures are highly heritable risk factors, with heritability values ranging from 50% to 80% (Richards et al., 2012). Genome-wide association studies (GWAS) in humans have unraveled hundreds of susceptible loci associated with BMD and other bone traits related to risk of osteoporotic fracture (Zhu et al., 2021). GWAS results have great potential for the development of drug targets, the identification of risk factors, and risk prediction for osteoporosis. However, the identification of causal genes at these loci or the mechanisms by which GWAS loci alter bone physiology has faced challenges due to the scarcity of in vivo validation tools with sufficient throughput (Sabik and Farber, 2017).\n\nIn monogenic FBD, on the other hand, gene identification is generally more straightforward. One example of such a disease is osteogenesis imperfecta (OI), a genetically heterogeneous connective tissue disorder that is mainly characterized by bone fragility, skeletal deformities, and other extra skeletal manifestations (Forlino and Marini, 2016). Although in the majority of cases, it is caused by autosomal dominant mutations in the collagen type 1 genes, mutations in an increasing number of non-collagen genes causing severe recessive forms of OI, are being identified. These genes encode proteins that are involved in different aspects of bone formation, such as osteoblast differentiation (OSTERIX, WNT1, OASIS, S2P, and SPARC), bone mineralization (PEDF and BRIL) and collagen processing (HSP47, FKBP65, LH2, KDELR2, CRTAP, P3H1, CyPB, and TRIC-B) (Forlino and Marini, 2016; Jovanovic et al., 2022). Recent sequencing technologies have improved genetic diagnosis, but the investigation of the pathogenesis of the different forms of OI is still a laborious, costly, and time-consuming task. Hence, it is essential to develop efficient and cost-effective methods for in vivo functional testing to validate the involvement and mechanistic role of candidate and newly identified causal genes in the pathogenesis of FBD.\n\nZebrafish are a valuable model organism for studying human diseases, as they share a high degree of genetic similarity with humans. More than 70% of human protein-coding genes and 82% of human disease-related genes have zebrafish orthologs, including most of the genes involved in skeletogenesis (Howe et al., 2013). Additionally, zebrafish share many of their skeletal features and ossification mechanisms with mammals (Dietrich et al., 2021) and numerous zebrafish models for skeletal diseases have been established and investigated (Gistelinck et al., 2018; Daponte et al., 2023; Kague and Karasik, 2022). These models have some advantages over rodent models, such as longer survival, likely due to the reduced impact of gravity on their fragile skeletons in the aquatic environment, and the availability of transgenic lines marking specific bone cell types combined with the transparency of early life stages allowing for in vivo observation of the dynamics of skeletal development (Dietrich et al., 2021).\n\nGenome-editing with CRISPR/Cas9 is a fast and easy method to create knockout alleles and stable zebrafish mutant lines (Uribe-Salazar et al., 2022). However, obtaining zebrafish lines that are homozygous for the mutant alleles requires two generations of adult animals (>6 months), which limits the efficiency and affordability of genetic screens (Kroll et al., 2021). To overcome these drawbacks, phenotyping the first-generation (F0) mosaic founder zebrafish, also known as crispants, is an emerging approach. Adult crispants have a shorter generation time (~3 months) than stable lines (6\u20139 months), which allows screening more genes in less time and at lower costs and resources. We previously demonstrated the feasibility of this approach by comparing the phenotypes and molecular profiles of a stable knockout line and a crispant for the osteoporosis gene lrp5, and found them to be highly similar (Bek et al., 2020). In a study by Watson et al., 2020, comparison of crispants to homozygous germline mutants for bmp1a and plod2, two causal OI genes, revealed phenotypic convergence, suggesting that crispants faithfully recapitulate the biology of germline skeletal disease models. Therefore, while zebrafish crispant screens are promising as an economic, fast, and biologically relevant genetic screening approach in vertebrate model systems, a rigorous evaluation of their potential to screen for FBD-associated genes is needed.\n\nIn this study, we aimed to conduct a pilot-study to evaluate the feasibility of zebrafish crispant screening as a gene-based approach for rapid in vivo functional screening and validation of a set of causal genes for a broad range of FBD. The selected set includes on one hand genes associated with traits related to osteoporosis which is a relatively mild late-onset FBD and on the other hand genes causing recessive forms of OI associated with more severe skeletal phenotypes. An overview of the selected genes with observed mutant phenotypes in human, mice and zebrafish is provided in Supplementary file 1a. With this study, we want to provide an experimental platform for medium-sized zebrafish crispant screening of FBD genes.\n\n## Results\n\n### Generation of zebrafish crispants for osteoporosis and OI genes\n\nTo identify and prioritize potential causal genes for osteoporosis, we used the GWAS catalog (Sollis et al., 2023). We selected the variants associated with bone density and ranked them by their GWAS evidence, i.e., the number of independent publications that reported significant associations. We then identified the genes that harbored these variants and chose the top four candidates with single zebrafish orthologs: ALDH7A1, ESR1, DAAM2, and SOST. Furthermore, we selected six genes associated with recessive forms of OI associated with severe skeletal phenotypes, and involved in different aspects of bone formation, including osteoblast differentiation (CREB3L1, MBTPS2, and SPARC), bone mineralization (SERPINF1 and IFITM5) and collagen transport (SEC24D).\n\nFor each of the 10 selected genes and \u2018scrambled\u2019 sequence, Alt-R gRNAs (IDT) were designed through a thorough procedure, via the Benchling platform. For each gene, the gRNA with the highest out-of-frame (OOF) efficiency, as predicted by the InDelphi-mESC prediction tool (Figure 1\u2014figure supplement 1) was selected for co-injection with Cas9 into one-cell stage embryos. Based on previous studies, we assumed that high indel (insertion/deletion) and OOF efficiencies result in a sufficient reduction or inactivation of the corresponding protein in crispants to induce a skeletal phenotype (Naert et al., 2020). DNA from a pool of 1 dpf larvae (n=10) for the different crispants and corresponding sibling controls, was extracted, and subjected to NGS analysis. Sequencing data was analyzed using the Crispresso2 tool (Clement et al., 2019) to determine the fraction of reads containing indels, the OOF rate and the number of in-frame deletions consisting of more than 6 base pairs in these pools (Table 1).\n\n**Table 1.**\n InDelphi-mESC prediction, indel, out-of-frame indel and in-frame rates for the different crispants, determined by NGS from pools of 1dpf embryos.The first four genes are associated with the pathogenesis of osteoporosis, while the last six are linked to osteogenesis imperfecta. The percentage of reads likely to affect the protein function is calculated based on the percentage of reads with out-of-frame indels combined with the percentage of reads with in-frame deletions of equal to or more than 6 basepairs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>aldh7a1</th>\n      <th>daam2</th>\n      <th>esr1</th>\n      <th>sost</th>\n      <th>creb3l1</th>\n      <th>ifitm5</th>\n      <th>mbtps2</th>\n      <th>sec24d</th>\n      <th>serpinf1</th>\n      <th>sparc</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>% reads with indel</td>\n      <td>87%</td>\n      <td>96%</td>\n      <td>92%</td>\n      <td>80%</td>\n      <td>71%</td>\n      <td>90%</td>\n      <td>94%</td>\n      <td>85%</td>\n      <td>92%</td>\n      <td>92%</td>\n    </tr>\n    <tr>\n      <td>% reads with out-of-frame indel</td>\n      <td>66%</td>\n      <td>57%</td>\n      <td>64%</td>\n      <td>64%</td>\n      <td>49%</td>\n      <td>73%</td>\n      <td>73%</td>\n      <td>63%</td>\n      <td>55%</td>\n      <td>72%</td>\n    </tr>\n    <tr>\n      <td>% reads with in frame indel \u22656 bp</td>\n      <td>16%</td>\n      <td>24%</td>\n      <td>15%</td>\n      <td>14%</td>\n      <td>11%</td>\n      <td>15%</td>\n      <td>19%</td>\n      <td>12%</td>\n      <td>25%</td>\n      <td>16%</td>\n    </tr>\n    <tr>\n      <td>% reads likely affecting protein function</td>\n      <td>82%</td>\n      <td>81%</td>\n      <td>79%</td>\n      <td>78%</td>\n      <td>60%</td>\n      <td>88%</td>\n      <td>92%</td>\n      <td>75%</td>\n      <td>80%</td>\n      <td>88%</td>\n    </tr>\n  </tbody>\n</table>\n\nAcross the different crispants the minimal indel efficiency was 71%, while the OOF rate ranged between 49 and 73%. We subsequently determined the proportion of reads containing in-frame deletions of at least six base pairs, resulting in the removal of two or more amino acids (Table 1; Figure 1\u2014figure supplement 1). Such deletions have a relatively high chance of impairing protein function (Emond et al., 2020; Savino et al., 2022; Miton and Tokuriki, 2023). The accumulated percentage of reads with indels that likely cause loss-of-function of the respective protein (OOF % + % in-frame indel \u22656 bp), fall within the range of 60% to 92%, although also reads with short in-frame indels (<6 bp) can affect protein function. Finally, we investigated the occurrence of off-target effects in these samples by analyzing NGS data from the three most probable off-target sites per crispant, as determined by the CFD score provided by the CRISPOR tool (Concordet and Haeussler, 2018). In 20 out of the 30 examined off-target sites, no off-target mutations were identified (Supplementary file 1b). For the remaining off-target sites, the off-target rate ranged from 0,11% to 2,82%. This included basepair substitutions which are most likely sequencing errors, or true off-target indel variants, present in such low number of genomes that it is negligible in terms of biological impact in the crispants.\n\n### Assessment of the early skeleton in crispants reveals differences in osteoblast-positive and mineralized surface areas\n\nCrispants and sibling controls were raised until 7 or 14 dpf. At this point, the presence of immature osteoblasts in the head region was visualized using the transgenic osx:Kaede background. Images from 10 larvae per crispant were captured from the ventral perspective at 7 dpf and from both ventral and lateral perspectives at 14dpf, as this provides a more comprehensive view of the opercle\u2019s surface area that can be clearly visualized at that time. The osteoblast-positive areas in both the total head and the opercle were then quantified to gain insight into the formation of new skeletal tissue during early development (Figure 1a; Figure 1 - figure supplement 2 and Figure 1\u2014figure supplement 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig1-v1.jpg)\n\n**Figure 1.:** The first four genes are associated with the pathogenesis of osteoporosis, while the last six are linked to osteogenesis imperfecta. (a) Schematic overview of the ventral and lateral perspective of the head of zebrafish larvae at 7 and 14 dpf. The notochord tip (n), the opercle (o) the mineralized vertebrae (v), the eyes (e) and parasphenoid (p) are shown. (b) Quantification of the osteoblast-positive surface area of the total head and the mineralized surface area of the total head and notochord tip at 7 dpf in comparison with their respective controls. (c) Quantification of the osteoblast-positive surface area of the total head and the mineralized surface area of the total head, opercle and notochord tip and number of vertebrae at 14 dpf in comparison with their respective controls. For easier visualization, obtained results were normalized to the respective controls (normalization = individual value crispant (or control) / mean control) (n=10). Statistical significance is evaluated using the Mann-Whitney U -test on non-normalized data and significant differences were visualized using an asterix (*=p \u2264 0,05; **=p \u2264 0,01; ***=p \u2264 0,001; ****=p \u2264 0,0001). Error bars show the standard deviation of non-normalized data.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The first four genes are associated with the pathogenesis of osteoporosis, while the last six are linked to osteogenesis imperfecta. (a) The predicted indel percentage using the InDelphi-mESC prediction tool. (b) Visualization of the in-frame analysis of the different crispants, showing the percentages of 9, 12, 15, 18, 21 and more than 21 base pair deletions in the crispants.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Visualization of the osteoblast using the osx:Kaede transgenic line. The four genes on the left are associated with the pathogenesis of osteoporosis, while the six genes on the right are linked to osteogenesis imperfecta. The presented image shows a representative image of the specific crispants. Images are taken with the Leica microscope and the osx:Kaede positive larvae are visualized from a ventral perspective. Scale bars = 500\u2009\u03bcm and 200 \u03bcm.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** Visualization of the osteoblast using the osx:Kaede transgenic line. The first four genes are associated with the pathogenesis of osteoporosis, while the last six are linked to osteogenesis imperfecta. The presented image shows a representative image of the specific crispants. Images are taken with the Leica microscope and the osx:Kaede-positive larvae are visualized from a ventral and lateral perspective. Scale bars = 1 mm.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** Visualization of the mineralization after ARS staining. The four genes on the left are associated with the pathogenesis of osteoporosis, while the six genes on the right are linked to osteogenesis imperfecta. The presented image shows a representative image of the specific crispants. Images are taken with the Leica microscope and the stained larvae are visualized from a ventral perspective. Scale bars = 200\u2009\u03bcm.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** Visualization of the mineralization after ARS staining. The first four genes are associated with the pathogenesis of osteoporosis, while the last six are linked to osteogenesis imperfecta. The presented image shows a representative image of the specific crispants. Images are taken with the Leica microscope and the stained larvae are visualized from a ventral and lateral perspective. Scale bars = 1 mm.\n\nAt 7 and 14 dpf, esr1 crispants exhibited a significant increase of the osteoblasts-positive surface area within the head (p\u22640.05; p\u22640.001) (Figure 1b and c). Additionally, ifitm5 crispants at 14 dpf also displayed a significant increase (p\u22640.01) in osteoblasts-positive surface area within the head. Finally, the increased osteoblasts-positive surface area was also observed in the opercle of both crispants at 14 dpf (esr1 p\u22640.001; ifitm5 p\u22640.01) and in the opercle of serpinf1 (p\u22640.01) and sparc (p\u22640.05) crispants.\n\nSubsequently, Alizarin Red S (ARS) staining was conducted on the same 7 and 14 dpf crispant zebrafish larvae in order to evaluate the degree of mineralization in the early skeletal structures. Ventral views were captured at 7 dpf, while both ventral and lateral views were obtained at 14 dpf. These lateral images at 14 dpf served a dual purpose: they facilitated measurement of the mineralized surface area of the opercle and allowed for quantification of the number of mineralized vertebrae. We quantified the mineralized surface areas of the total head, the notochord tip, and the opercle, as well as determined the number of vertebrae (Figure 1a; Figure 1\u2014figure supplement 4 and Figure 1\u2014figure supplement 5).\n\nAt 7dpf, the total head exhibited a significant reduction in mineralized surface in aldh7a1 (p\u22640.05) and sec24d crispants (p\u22640.0001), while the notochord tip displayed a significant increase in mineralized surface area in creb3l1 (p\u22640.05), ifitm5 (p\u22640.05), and serpinf1 (p\u22640.05) crispants (Figure 1b). At 14 dpf, a similar trend of reduced mineralized surface area of the total head was observed in aldh7a1 and sec24d crispants, albeit not reaching statistical significance. In contrast, the mineral surface are of the head was significantly increased in esr1 crispants (p\u22640.05). Furthermore, the increased mineralization of the notochord tip remained significant in ifitm5 crispants (p\u22640.01), while it normalized in creb3l1 and sec24d crispants. A novel increase emerged in esr1 crispants (p\u22640.05). Finally, at 14 dpf, sec24d crispants exhibited a significant decrease (p\u22640.001) in the mineralized surface area of the opercle and the number of mineralized vertebrae, whereas serpinf1 crispants showed a notable increase in the number of mineralized vertebrae (p\u22640.01; Figure 1c).\n\n### RT-qPCR expression analysis reveals differential expression of osteogenic markers bglap and col1a1a in a significant subset of crispants\n\nTo explore the expression level of different osteogenic markers throughout the set of crispants, RT-qPCR analysis was performed on whole larvae at 7 and 14 dpf. At 7 dpf, no significant differences were seen in the expression of runx2, an early pre-osteoblast marker, between the different crispants and corresponding controls. Osterix, also known as sp7, a runx2 downstream gene which plays a critical role for the differentiation of pre-osteoblasts into mature osteoblasts, was only upregulated in crispants for sparc (p\u22640.001). Osteocalcin, also known as bglap, which is mainly expressed in mature osteoblasts, was downregulated in almost all crispants, except in crispants for sost and sparc. Finally, col1a1a, encoding the \u03b11 chain of type 1 collagen, and marking extracellular matrix synthesis by both pre- and mature osteoblasts (Valenti et al., 2020), was upregulated in crispants for aldh7a1 (p\u22640.001), daam2 (p\u22640.05), esr1 (p\u22640.05) and sec24d (p\u22640.05; Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig2-v1.jpg)\n\n**Figure 2.:** The first four genes are associated with the pathogenesis of osteoporosis, while the last six are linked to osteogenesis imperfecta. Statistical significance is evaluated using the Mann-Whitney U test on non-normalized data and significant differences were visualized using an asterix (*=p \u2264 0.05; **=p \u2264 0.01; ***=p \u2264 0.001; ****=p \u2264 0.0001). Error bars show the standard deviation of non-normalized data.\n\nAt 14 dpf, the expression of runx2 remained unchanged in all crispants compared to control. The expression of sp7 was significantly increased in crispants for daam2 (p\u22640.05) and sec24d (p\u22640.05), decreased in esr1 crispants, while expression levels were normalized in sparc crispants relative to 7 dpf (p\u22640.05). The expression of bglap remained significantly downregulated in crispants for aldh7a1 (p\u22640.001), daam2 (p\u22640.01), esr1 (p\u22640.01) and creb3l1 (p\u22640.05) while it reverted to control levels in ifitm5, sec24d, and serpinf1 crispants. An upregulation in the expression of col1a1a was seen in all the crispants, except in crispants for sparc and for aldh7a1 and esr1 where expression levels normalized compared to 7 dpf (Figure 2b).\n\n### Assessment of the adult skeleton in FBD crispants reveals frequent morphological abnormalities and quantitative differences in vertebral bone parameters\n\nCrispants were further grown into adulthood (90 dpf) and subjected to whole-mount ARS staining for mineralized bone, in order to identify skeletal abnormalities. Crispants for both aldh7a1 and mbtps2 displayed early lethality. Survival analysis indicated that aldh7a1 crispants experienced increased lethality from 7 dpf onwards, with no survivors beyond 20 dpf, while mbtps2 crispants exhibited increased lethality from 17 dpf onwards, with only a very small number of fish surviving into adulthood (90 dpf; Figure 3). ARS staining of the skeleton of two surviving adult mbtps2 crispant fish revealed severe cranial malformations, including underdevelopment of the premaxilla, dentary, and articular. However, the vertebral column seemed to be only mildly affected.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig3-v1.jpg)\n\n**Figure 3.:** (a) ARS images of control fish and crispants for mbtps2, showing severe craniofacial abnormalities (arrows). (b) Survival curve of controls and crispants for mbtps2, showing a reduction in survival starting from 17 dpf. (c) Survival curve of controls and crispants for aldh7a1, showing a reduction in survival starting from 7 dpf.\n\nAmong the eight crispants that successfully matured into adulthood, none exhibited significant differences in standard length and head size (n=5 fish per crispant; Figure 4b). However, esr1 crispants were observed to have notably larger eye diameters (Figure 4b). All these crispants demonstrated various abnormalities in the caudal part of the vertebral column such as fusions, compressions, fractures, or arch malformations, except for daam2 crispants where no obvious abnormalities were detected (Figure 4a and c; Figure 4\u2014figure supplement 1). In creb3l1 crispants, the vertebral phenotype was relatively mild and primarily restricted to arch malformations.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig4-v1.jpg)\n\n**Figure 4.:** The first three genes are associated with the pathogenesis of osteoporosis, while the last five are linked to osteogenesis imperfecta. (a) Pictures of ARS-stained vertebral column of a control and three crispants (from left to right: esr1, ifitm5 and creb3l1), showing fractures (arrow), fusions and compressions (squared) and malformations in the arches (arrowhead). (b) Measurements of the standard length, the head size and the eye diameter of the crispants compared to their control. The standard length was measured from the snout tip to the tail base. The head size was measured from the snout tip to the supraoccipital bone and the eye diameter was measured from the lateral ethmoid to the hyomandibula. The data was normalized for easier visualization (normalization = individual value crispants (or controls) / mean control (n=5)). (c) Quantification of the number of fractures, fusions or compressions and malformations in the arches of crispants and the controls. For this quantification, twelve vertebrae were selected per fish and a total of 5 crispants per assay was evaluated. Statistical analysis was evaluated using the Mann-Whitney U -test on non-normalized data and significant differences were visualized using an asterix (*=p \u2264 0.05; **=p \u2264 0.01; ***=p \u2264 0.001; ****=p \u2264 0.0001). Error bars showed the standard deviation of non-normalized data. (d) Quantification of skeletal parameters by quantitative micro-computed tomography (\u03bcCT) analysis. In the graphical representation, the different crispants were listed. Statistically significant differences from the control values for a given crispant were depicted as red bars. Significance levels were determined through the global test analysis (Figure 4\u2014figure supplement 2).\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Visualization of the mineralization after ARS staining. The first three genes are associated with the pathogenesis of osteoporosis, while the last five are linked to osteogenesis imperfecta. The presented image shows a representative image of the specific crispants. Images are taken with the Leica microscope and the stained adults are visualized from a lateral perspective. Scale bars = 1 mm.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Whole-body \u03bcCT-scanning was performed for the evaluation of skeletal structures in the vertebral column. Different bone related parameters are visualized: Tissue Mineral Density (TMD), Volume (Vol), Thickness (Th), and Length (Le). (a) Results of crispants for daam2. (b) Results for crispants for esr1. (c) Results for crispants for sost. (d) Results for crispants for creb3l1. (e) Results for crispants for ifitm5. (f) Results for crispants for sec24d. (g) Results for crispants for serpinf1. (h) Results for crispants for sparc. The first three genes are associated with the pathogenesis of osteoporosis, while the last five are linked to osteogenesis imperfecta. Statistically significant differences were represented with a lighter color scheme for easy visualization.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/100060/elife-100060-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** Representative images of skeletal mineralization following Alizarin Red S (ARS) staining in a second clutch, demonstrating the consistency of the observed skeletal phenotype. The three genes on the left are associated with the pathogenesis of osteoporosis, while the last five genes on the right are linked to osteogenesis imperfecta. Images show specific crispants from a lateral view, captured using a Leica microscope. Scale bars = 1 mm.\n\nNext, the adult skeleton of the different crispants and sibling controls was visualized by microCT scanning and the data was quantified and further analyzed using FishCuT software (Hur et al., 2017). For each of the vertebral centra, the length, tissue mineral density (TMD), volume, and thickness were determined and tested for statistical differences between groups using a regression-based statistical test (Figure 4\u2014figure supplement 2). To quantify the extent of differences between crispants and their controls, the means of these parameters in the crispants\u2019 vertebral column, were normalized to the standard deviation of the controls, resulting in a z-score [z-score = (mean crispant \u2013 mean control) / SD control] (Gistelinck et al., 2018). A significant increase in centrum volume was observed in daam2 crispants compared to the controls (p<0.05, z=2.86; Figure 4d). Centrum TMD was significantly higher, and to a similar extent, in crispants for daam2 (p<0.05; z=1.54), esr1 (p<0.05; z=1.62), and sost (p<0.05; z=1.41), three genes likely involved in osteoporosis pathogenesis. Centrum thickness was increased in crispants for esr1 (p<0.05; z=4.26), ifitm5 (p<0.01; z=7.13), and sec24d (p<0.05; z=5.04) with the most pronounced increase observed in ifitm5 crispants. Centrum length was increased only in daam2 crispants (p<0.05; z=4.22).\n\n## Discussion\n\nThe generation of a diverse array of null alleles through CRISPR/Cas9-induced F0 mosaic (crispant) zebrafish offers specific advantages compared to stable knockout zebrafish lines, in particular for rapid screening of phenotypes (Naert et al., 2020). In this study, we tested the efficacy of a semi-high throughput zebrafish crispant analysis for rapid validation of candidate disease causing genes for skeletal disorders across a broad phenotypic spectrum. On one hand, we included genes for non-classical recessive OI, which is an early-onset monogenic skeletal syndrome with severe skeletal deformities. On the other hand, we screened a set of top candidate genes for osteoporosis, which is a rather late-onset multifactorial disease with little to no deformities. All selected genes show skeletal expression in both human and zebrafish. An overview of the selected genes with observed mutant phenotypes in human, mice and zebrafish is provided in Supplementary file 1a. It is important to note that this study focused on candidate genes for osteoporosis, not on the role of specific variants identified in GWAS studies. Non-coding variants for instance, which are often identified in GWAS studies, present significant challenges in terms of functional validation and interpretation. In this study we propose a crispant screening platform that combines various phenotypic and molecular assays at three key developmental and adult stages (7, 14 and 90 dpf). To obtain a general overview of the results for the selected crispants, all results were summarized in Table 2.\n\n**Table 2.**\n Overview of the different measurements in crispants at 7, 14, and 90 dpf.The first four genes are associated with the pathogenesis of osteoporosis, while the last six are linked to osteogenesis imperfecta. (-): downregulation or less, (+) upregulation or more, ns: not significant, asterix defines statistical significance (* = p \u2264 0.05; ** = p \u2264 0.01; *** = p \u2264 0.001; **** = p \u2264 0.0001).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>aldh7a1</th>\n      <th>daam 2</th>\n      <th>esr1</th>\n      <th>sost</th>\n      <th>creb3l1</th>\n      <th>ifitm 5</th>\n      <th>mbtps2</th>\n      <th>sec24d</th>\n      <th>serpinf1</th>\n      <th>sparc</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Osteoblast-positive surface area total head</td>\n      <td colspan=\"10\"></td>\n    </tr>\n    <tr>\n      <td>7 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>14 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)***</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)**</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Osteoblast-positive surface area operculum 14 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)***</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)**</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)**</td>\n      <td>(+)*</td>\n    </tr>\n    <tr>\n      <td>Mineralized surface area total head</td>\n      <td colspan=\"10\"></td>\n    </tr>\n    <tr>\n      <td>7 dpf</td>\n      <td>(\u2013)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(\u2013)****</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>14 dpf</td>\n      <td>(\u2013)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Mineralized surface area notochord tip</td>\n      <td colspan=\"10\"></td>\n    </tr>\n    <tr>\n      <td>7 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)*</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>14 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)**</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Mineralized surface area operculum 14 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(\u2013)**</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Number of mineralized vertebrae 14 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(\u2013)**</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>runx2 expression</td>\n      <td colspan=\"10\"></td>\n    </tr>\n    <tr>\n      <td>7 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>14 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>sp7 expression</td>\n      <td colspan=\"10\"></td>\n    </tr>\n    <tr>\n      <td>7 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)***</td>\n    </tr>\n    <tr>\n      <td>14 dpf</td>\n      <td>ns</td>\n      <td>(+)*</td>\n      <td>(\u2013)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>bglap expression</td>\n      <td colspan=\"10\"></td>\n    </tr>\n    <tr>\n      <td>7 dpf</td>\n      <td>(\u2013)*</td>\n      <td>(\u2013)*</td>\n      <td>(\u2013)*</td>\n      <td>ns</td>\n      <td>(\u2013)*</td>\n      <td>(\u2013)*</td>\n      <td>ns</td>\n      <td>(\u2013)**</td>\n      <td>(\u2013)*</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>14 dpf</td>\n      <td>(\u2013)***</td>\n      <td>(\u2013)**</td>\n      <td>(\u2013)**</td>\n      <td>ns</td>\n      <td>(\u2013)**</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>col1a1a expression</td>\n      <td colspan=\"10\"></td>\n    </tr>\n    <tr>\n      <td>7 dpf</td>\n      <td>(+)***</td>\n      <td>(+)*</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>14 dpf</td>\n      <td>ns</td>\n      <td>(+)****</td>\n      <td>ns</td>\n      <td>(+)***</td>\n      <td>(+)***</td>\n      <td>(+)*</td>\n      <td></td>\n      <td>(+)****</td>\n      <td>(+)*</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Standard length 90 dpf</td>\n      <td rowspan=\"6\"></td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td rowspan=\"6\"></td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Head size 90 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Diameter eye 90 dpf</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Centrum volume 90 dpf</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Centrum TMD 90 dpf</td>\n      <td>(+)*</td>\n      <td>(+)*</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Centrum thickness 90 dpf</td>\n      <td>ns</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>(+)*</td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n    <tr>\n      <td>Centrum Length 90 dpf</td>\n      <td></td>\n      <td>(+)*</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n      <td></td>\n      <td>ns</td>\n      <td>ns</td>\n      <td>ns</td>\n    </tr>\n  </tbody>\n</table>\n\nAt two distinct larval stages, 7 dpf and 14 dpf, diverse measurements of the early skeleton were conducted, including an assessment of both the osteoblast-positive and the mineralized surface areas located in the head region. The osteoblast-positive area represents the quantity of osteoblasts within a given structure and is a measure of the formation of bone matrix. Although a general tendency towards increased areas could be noted across different crispants at 14 dpf, only crispants for esr1 showed a consistent increase at both 7 and 14 dpf. Interestingly, Brett et al., 2021 extensively investigated esr1 mutations in the context of hormone receptor-positive breast cancer but did not evaluate the presence of osteoblasts. However, the depletion of estrogen in an osteoblastic cell line in vitro results in the stimulation of osteoblast differentiation (Schiavi et al., 2021).\n\nThe extent of mineralization of the head skeletal elements was found to be mostly not different compared to controls, although in the crispants where significant differences were detected at one of the studied time points, the mineralization of the head skeleton elements was mostly lower and of the notochord tip higher. Only crispants for sec24d, a gene critical for transporting extracellular matrix (ECM) proteins, exhibited reduced mineralization in different head structures both at 7 dpf and 14 dpf. These findings aligned with the observed malformations in bulldog zebrafish, where disrupted sec24d function leads to head abnormalities and growth delays in early larval stages (Sarmah et al., 2010). Although the measurements of osteoblast-positive and mineralized surface areas may be influenced by size differences among some of the crispants, normalization to size parameters was not conducted, as variations in growth were considered integral to the phenotypic outcome.\n\nDespite considerable variability in the measurements we conducted, a subtle trend emerged in the expression data for osteogenic markers during early stages. Specifically, the expression of bglap, a late osteoblast differentiation marker appeared to be consistently downregulated in near all crispants, except for crispants for sost, mbtps2, and sparc at 7 dpf. However, this downregulation became less pronounced at 14 dpf, affecting only crispants for aldh7a1, daam2, esr1, and creb3l1. Interestingly, most crispants for genes involved in the pathogenesis of osteoporosis exhibited this downregulation, except for sost, where the expression of bglap remained unaffected. In contrast, the expression of col1a1a showed an opposing trend. Initially, a modest upregulation of this marker was observed at 7 dpf, limited to just four crispants. However, this effect intensified over time, with nearly all crispants displaying upregulation at 14 dpf, except for aldh7a1, esr1, and sparc. The remarkable upregulation of col1a1 expression could potentially arise from an abundance of immature osteoblasts within the cranial skeleton, a phenomenon we frequently observed across the set of crispants (Amarasekara et al., 2021). These osteoblasts play an active role in the synthesis of the organic bone matrix, including the production of collagen type I fibers. Interestingly, the generally diminished expression of the late osteoblastic marker bglap corroborates the presence of less mature osteoblasts (Gavaia et al., 2006). As mainly mature osteoblasts engage in the deposition of calcium and phosphate ions, essential for the formation of hydroxyapatite crystals, bone mineralization can be expected to be reduced in the crispants, which results in increased formation of non-mineralized osteoid deposits. Indeed, we observed that despite often increased bone osteoblast-positive surfaces, mineralization-positive areas in the head skeleton were frequently found to be reduced (Salhotra et al., 2020). The differential expression profiles of the osteogenic markers bglap and col1a1a highlight their potential as biomarkers for osteoblast differentiation and bone formation in FBD crispant screens. However, it is important to note that the genes evaluated by RT-PCR are not exclusively expressed in bone tissue. Since whole-body samples were used for expression analysis, there is a possibility that the observed changes in gene expression may be influenced by other non-skeletal cell types.\n\nIn early stages of development, we observed that crispants, although presenting with a high indel frequency, showed a relatively high variability for the phenotypic parameters we tested (mineralization and osteoblast surface areas), which often prevented reaching statistical significance. Phenotypic variability in these zebrafish larvae can be attributed to several factors, including crispant mosaicism, allele heterogeneity, environmental factors, differences in genomic background and development, maternally-deposited RNAs, and slightly variable imaging positioning. In our study, for each crispant and corresponding controls, all experiments at different ages were conducted on zebrafish from the same clutch, allowing analysis of a developmental time series in animals with a relative genetically homogeneous background. Although increasing the number of biological replicates could potentially enhance statistical power, previous studies have not confirmed this (Winter et al., 2022). Enhancing out-of frame (OOF) rates by simultaneously targeting a single gene with multiple crRNAs could potentially increase the penetrance of phenotypic abnormalities observed in early crispants. By directing crRNAs to multiple loci within one gene, the likelihood of introducing frameshift mutations increases significantly. This is suggested to lead to a higher rate of biallelic knockout and reduce the chances of retaining the functional protein (Kroll et al., 2021). However, this also elevates the likelihood of off-target effects, increases double-strand breaks and toxicity, while simultaneously increasing costs (Wu et al., 2018). Furthermore, also in-frame indels affecting two or more amino acids, detected in a substantial proportion of NGS reads in our study, are likely to have a detrimental effect on protein function (Emond et al., 2020; Savino et al., 2022; Miton and Tokuriki, 2023). Therefore, and because we used highly efficient two-part guide RNAs Alt-R CRISPR-Cas9 system, we opted for single crRNA injections. While there remains a possibility of false negatives, the overall indel efficiency, as indicated by our NGS analysis, is high (>90%), thereby reducing the likelihood of having crispants with very low indel efficiency.\n\nIn adult crispants, the skeletal phenotype was generally more penetrant. All crispants showed malformed arches, a majority displayed vertebral fractures and fusions and some crispants exhibited distinct quantitative variations in vertebral body measurements. Additionally, these skeletal malformations were consistently observed in a second clutch of crispants (Figure 4\u2014figure supplement 3), underscoring the reproducibility of these phenotypic features across independent clutches. This confirmed the role of the selected genes in skeletal development and homeostasis and their involvement in skeletal disease and established the crispant approach as a valid approach for rapidly providing in vivo gene function data to support candidate gene identification.\n\nOsteoporosis is typically linked with symptoms that appear late in life. However, our results challenged this notion, by showing that in crispants for osteoporosis genes, skeletal abnormalities can manifest earlier and are not solely reflected in changes to bone mineral density (BMD). For instance, we found that aldh7a1 and esr1 crispants displayed significant skeletal anomalies already at larval stages, with aldh7a1 crispants showing early lethality. At adult stages, esr1 and sost crispants demonstrated various morphological abnormalities of the vertebral column such as fusions, compressions, and arch malformations. The more pronounced and earlier phenotypes in these zebrafish crispants are most likely attributed to the quasi knock-out state of the studied genes, while more common less impactful variants in the same genes result in typical late-onset osteoporosis (Laine et al., 2013). This phenomenon is also observed in knock-out mouse models for these genes (Melville et al., 2014; Coughlin et al., 2019).\n\nInterestingly, all adult crispants for osteoporosis genes demonstrated a substantial increase in centrum Tissue Mineral Density (TMD). TMD is quantitative measure of the actual mineral volume within bone tissue, computed as bone mineral content over the bone volume (mgHA/cm3) and obtained through mCT or pQCT. In human patients, reduced bone mineral density (aBMD), a measure for the bone mineral content in a projected bone area and assessed using dual energy X-ray absorptiometry (DXA), is frequently linked to osteoporosis. However, also TMD, or vBMD, can be evaluated in the trabecular and cortical bone. Knock-out mice lacking Sost showed an increase in TMD within the cortical bone, which is comparable to the bone present in the zebrafish vertebral column (Li et al., 2008). As for the other genes, for daam2, mutant mice with a hypomorphic Daam2 allele presented with reduced bone strength and increased cortical bone porosity (Morris et al., 2019). ER\u03b1 knockout mice presented with a decrease in cortical bone mineral density and increase in trabecular bone mineral density (Melville et al., 2014). Further studies are needed to better understand how high TMD values observed in these crispants relate to phenotypic changes observed in these mouse models. Finally, it is worthwhile to note that, osteoporosis typically correlates with low vBMD values. While neither the causal variant nor the biological direction of its effects on the target gene are known for BMD-associated loci harboring these genes, the increased TMD following gene knockdown in our models may help to assign the directionality of their effects, and puts forth the possibility that variants at these loci alter the expression of genes that converge on a common biological process in zebrafish, when disrupted results in the high TMD.\n\nConversely, crispants for genes involved in recessive forms of OI, an early-onset severe skeletal disorder, can intuitively be expected to exhibit pronounced skeletal abnormalities already in larval stages. Interestingly, during these early stages, the majority of the crispants do not exhibit consistent skeletal abnormalities. Although this could be partially explained by the above-discussed variability of the phenotypic outcomes we measured, also human OI subjects with these severe conditions, often experience disease onset during infancy only, with progressive worsening of the skeletal phenotype (Selina et al., 2023).\n\nThe phenomenon of genetic compensation could play a role in explaining why early phenotypes manifest differently in human patients compared to zebrafish. Genetic compensation ensures an organism to maintain its genetic robustness, even when genetic variation, possibly induced by mutations, occurs. This compensation mechanism can be triggered by the upregulation of compensating genes, often mediated through the regulation of nonsense-mediated decay (NMD) in combination with the epigenetic machinery in zebrafish (El-Brolosy and Stainier, 2017; Jakutis and Stainier, 2021). Crispants, in contrast to morphants, also undergo NMD although in a mosaic manner. In larval crispants, compensatory mechanisms may effectively mask the impact of gene loss. However, in adult crispants, the cumulative effect of this loss becomes more pronounced, leading to a later onset phenotype. Furthermore, specific tissues or cell types within the organism may activate compensatory pathways more efficiently, thereby influencing the overall manifestation of the phenotype. When a gene is disrupted in humans, the consequences can be more severe due to the complexity of human development and biology. Such disruptions may result in developmental abnormalities, leading to an early onset of phenotypic traits (Rouf et al., 2023).\n\nTo conclude, our study proposes a multifaceted gene-based approach to investigate zebrafish crispants associated with heritable FBDs, employing various techniques, and assessing different skeletal phenotypes and molecular profiles at distinct developmental stages. While this work represents a pioneering effort in establishing a screening platform for skeletal diseases, it offers opportunities for future improvement and refinement. For instance, analyzing different skeletal structures and cell types within various transgenic lines, increasing sample size, and incorporating a broader range of techniques, such as phenotypic scoring based on the type of malformations seen in the vertebral column or alcian blue staining for cartilage tissue evaluation, could enhance the comprehensiveness of the screening process and the skeletal phenotype. Moreover, to explore the underlying mechanisms contributing to disease phenotypes, it is essential to establish stable knockout mutants derived from the crispants. Nonetheless, our initial set-up demonstrates the feasibility of this approach to identify genes potentially implicated in the pathogenesis of skeletal disorders, as all studied crispants exhibit skeletal abnormalities in adult stages. These findings support the prospect of crispant screening as a promising tool for rapid functional assessment of candidate genes for skeletal disorders, providing valuable insights into the roles of these genes in skeletal biology.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (Danio rerio)</td>\n      <td>osx:Kaede transgenic line</td>\n      <td>Zebrafish Facility Ghent (ZFG) Core Facility</td>\n      <td>NA</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>RNeasy Mini Kit 250 reagentia</td>\n      <td>Qiagen</td>\n      <td>74106</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>iScript cDNA Synthesis Kit</td>\n      <td>Bio-rad</td>\n      <td>1708891</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SsoAdvanced Universal SYBR Green Supermix</td>\n      <td>Bio-rad</td>\n      <td>172\u20135274</td>\n      <td>NA</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Alizarin red S staining</td>\n      <td>Merck life sience bv</td>\n      <td>A5533-25G</td>\n      <td>NA</td>\n    </tr>\n  </tbody>\n</table>\n\n### Zebrafish maintenance and breeding\n\nThe zebrafish were incubated at 28 \u00b0C until 5 days post-fertilization (dpf). Then, they were reared in a rotifer/zebrafish polyculture system from 5dpf to 9dpf following the method of Lawrence et al., 2016. After 10dpf, they were transferred to 3.5 liter tanks in the Core Zebrafish Facility Ghent (ZFG) and housed in semi-closed recirculating systems (Tecniplast). The water parameters were maintained at 27 \u00b0C, pH 7.5, conductivity 550 \u03bcS, and a 14/10 light/dark cycle. The zebrafish were fed with Zebrafeed (Sparos) and Gemma Micro dry food (Inve) in the morning and Micro Artemia (Ocean Nutrition) in the afternoon. The osx:Kaede transgenic line was used for all experiments. Breeding and embryo collection were done according to standard protocols (Westerfield, 2000). All animal studies complied with EU Directive 2010/63/EU for animals, permit no. ECD 23/27 (Ghent University). Pain, distress, and discomfort were minimized as much as possible.\n\n### Generation of crispants through CRISPR/Cas9 genome editing\n\n#### Guide RNA design\n\nFor the generation of crispants we largely followed the methods described in Bek et al., 2020. In summary, two-part guide RNAs (gRNAs) were used which are functional gRNA duplexes made of a universal 67 mer trans-activating CRISPR-RNA (tracrRNA) and a target-specific CRISPR-RNA (crRNA) (Alt-R CRISPR-Cas9 System, IDT). A non-specific crRNA (GCAGGCAAAGAATCCCTGCC), referred to as the \u2018scrambled\u2019 sequence, was used to generate the controls (Wu et al., 2018).\n\nThe crRNAs corresponding to the genes of interest were designed with the web-based tool Benchling (https://benchling.com), using GRCz11 as a reference genome. With this tool, 20 bp crRNAs target sequences, that are followed by a \u2018NGG\u2019 PAM sequence, were listed. Further selection was based on a few specific criteria to minimize the risk of producing (partially) active truncated protein products and potential off-target effects. Specifically, crRNA target sequences located in exon 1, in the last exon, within the last 55 bp of the second-to-last exon or in exons consisting of (n) x 3 bp were excluded. Additionally, crRNAs with the highest possible scores for both on-target (Doench et al., 2016) and off-target (Hsu et al., 2013) were selected.\n\nFor the selected crRNA sequences, the Indelphi tool (https://indelphi.giffordlab.mit.edu) employing the mESC training set, was used to predict the DNA repair outcomes (mixture of indels) resulting from non-homologous end-joining (NHEJ) and microhomology-mediated end-joining (MMEJ) induced by CRISPR/Cas9 cleavage. The crRNAs that were predicted to result in high percentages of out-of-frame indels and a limited number of possible genotypes (high precision) were prioritized.\n\nEventually, 1 crRNA per gene was ordered from IDT (https://www.idtdna.com): aldh7a1 (AATTGTTCGACAGATTGGAG), daam2 (GATCTATTGCAGTAAGAAGA), esr1 (GCTCACGACAGAAACACAGC), sost (CTGCTCACTCCCGCACCCAG), creb3l1 (ACACAGTTACTCTCTCAGCG), ifitm5 (AGCGCAGGAATGCTCAGACA), mbtps2 (TTCCATATCAAGTGGCACAC), sec24d (GCCTATGGATCTCCAACACA), serpinf1 (CAGGTTGTAGCCAAAATCAG), sparc (AGAGGAGCCAGCTGTTGAAG).\n\nTo predict the potential off-target effects of the selected crRNAs, Crispor (http://crispor.tefor.net) was used. The cutting frequently determination (CFD) off-target score was used to predict the probability of off-target cleavage. The three targets with the highest CFD scores were selected and PCR-amplified (Supplementary file 1b). Next-generation sequencing using the Miseq platform was used to assess the frequency of the off-target effects (Concordet and Haeussler, 2018).\n\n#### Injection\n\nTo prepare gRNA duplexes for each assay, we mixed 200 \u00b5M crRNA and 200 \u00b5M tracrRNA, heated the mixture at 95 \u00b0C for 5 min, and then cooled it to room temperature. Next, we micro-injected one-cell-stage Tg(osx:Kaede) zebrafish embryos. The injection mix consisted of a 1.4 nL drop containing RNase-free water, KCl (2000 mM) and ribonucleoproteins (RNPs), consisting of 800 pg of both gRNA duplex and Cas9 (1000 ng/\u00b5l) (ToolGen, Seoul, South Korea; wild-type nuclease with nuclear localization signal) protein. For each crispant and each corresponding control, a total of 200 eggs, originating from the same clutch, were injected.\n\n### Next-generation sequencing analysis\n\nWe extracted DNA from 10 pooled embryos at one day after fertilization by adding 100 \u00b5l NaOH and incubating the samples at 95 \u00b0C for 20 min. We then added 10 \u00b5L Tris-HCl. We performed PCR amplification with the primers listed in Supplementary file 1c, using either \u2018FORD58\u2019 or \u2018FORD60\u2019 assays depending on the primer. The thermocycling conditions for the \u2018FORD58\u2019 assay were: 95 \u00b0C for 3 min, followed by 40 cycles of 95 \u00b0C for 15 s, 58 \u00b0C for 10 s, and 72 \u00b0C for 15 s, and a final extension at 72 \u00b0C for 10 min. The thermocycling conditions for the \u2018FORD60\u2019 assay were: 95 \u00b0C for 3 min, followed by 40 cycles of 95 \u00b0C for 15 s, 60 \u00b0C for 10 s, and 72 \u00b0C for 15 s, and a final extension at 72 \u00b0C for 10 min. We prepared the PCR amplicons for sequencing using the Nextera XT DNA Library Preparation Kit (Illumina, San Diego, CA, USA) and sequenced them on a MiSeq instrument (Illumina) using 2X250 bp cycles (Bek et al., 2020). We analyzed the NGS data with CRISPResso2 and determined the mean fraction of reads containing in-frame and out-of-frame indels over different samples, by exporting the allele frequency table, counting the number of reads with both in- and out-of-frame indels or out-of-frame indels only and dividing these numbers by the total number of mapped reads (Fiume et al., 2019). For both the indel and out-of-frame efficiency, the reads with sequencing errors and natural variants were excluded.\n\n### RNA extraction and RT-qPCR\n\nThe RNA extraction and qPCR protocol described by Bek et al., 2020 was followed, with minor modifications; for each crispant, RNA was extracted from 4 or 5 pools of 10 embryos at 7 dpf and 14 dpf using Trizol (Life Technologies Europe) and purified using the RNeasy Mini Kit (Qiagen) with on-column DNase I treatment (Qiagen). RNA concentrations were measured with the Little Lunatic (Unchained Labs) and cDNA was synthesized using the iScript cDNA synthesis kit (Bio-rad). Primers for skeletal marker genes were designed using NCBI Primer-BLAST (Supplementary file 1d) and primers for the housekeeping genes (elfa and bactin2) were obtained from literature (McCurley and Callard, 2008).\n\nThe qPCR reaction mixture was prepared with 2.5 \u00b5L of SsoAdvanced Universal SYBR Green Supermix (Bio-rad), 5 ng of cDNA, and 250 nM of each primer. The qPCR reaction was run on a LightCycler 480 instrument (Roche) in a white 384-well plate with the following thermocycling conditions: initial denaturation step at 95 \u00b0C for 2 min, followed by 44 cycles of denaturation at 95 \u00b0C for 5 s, annealing at 60 \u00b0C for 30 s, and extension at 72 \u00b0C for 1 s. Subsequently, a melting curve analysis was performed with a denaturation step at 95 \u00b0C for 5 s, followed by annealing at 60 \u00b0C for 1 min and gradual heating to 95 \u00b0C at a ramp-rate of 0.11 \u00b0C/s. Finally, the product was cooled to 37 \u00b0C for 3 min (Vanhauwaert et al., 2014). The data was analyzed using the qBase +software (Biogazelle).\n\n### Osteoblast imaging in transgenic osx:Kaede larvae\n\nTen zebrafish larvae (at 7 dpf and 14 dpf) with the transgenic osx:Kaede background were anesthetized using 1 x Tricaine. Imaging was performed using the Leica microscope M165FC and mounted camera (DFC450C) operated by LAS V4.3 software (Leica Microsystems, Wetzlar, Germany). Images of 7 dpf larvae were taken from the ventral side. Images of 14 dpf larvae were taken from both ventral and lateral perspectives to provide a more comprehensive view of the opercle\u2019s surface area.\n\nFiji software (version 2.14.0), powered by ImageJ, was employed for all measurements (Schindelin et al., 2012). Osteoblast-positive area of both the total head and opercle was quantified using thresholding, followed by measurement of the positive area. All measurements were performed in triplicate on blinded pictures. The presence of osteoblasts in the opercle was measured by hand using the polygon selection tool. Mann-Whitney U test was applied in GraphPad Prism (v.9.4.0), with p-values considered significant when \u22640.05.\n\n### Alizarin red staining and imaging of zebrafish larvae\n\nThe ten zebrafish larvae, that were previously used for osteoblast imaging at 7 dpf and 14 dpf, were euthanized using 25 x Tricaine. They were transferred to a cell strainer and washed with dH2O several times to remove the Tricaine. The strainers were placed in a 6-well plate and incubated in 4% PFA overnight at 4 \u00b0C. The plates were sealed with parafilm to prevent evaporation. The larvae were then washed with dH2O several times to remove the PFA and bleached for 30 min at room temperature using a solution containing 3% H2O2 and 2% KOH to remove pigmentation. Next, they were stained overnight at 4 \u00b0C using Alizarin Red S (0.005% in 1% KOH/2% Triton). The samples were washed with dH2O several times and transferred to increasing concentrations of glycerol (30-70\u2013100% for 5 min each) for storage (4 \u00b0C) and imaging. Zebrafish larvae stained with Alizarin red were then imaged using a Leica M165FC microscope and DFC450C camera with the LAS V4.3 software (Leica Microsystems). The ventral side of the larvae was captured at 7 dpf. Both ventral and lateral perspectives were captured at 14 dpf to provide a more comprehensive view of the opercle\u2019s surface area and the number of mineralized vertebrae.\n\nFiji software (version 2.14.0), powered by ImageJ, was employed for all measurements (Schindelin et al., 2012). The red stain in the head elements was assessed using thresholding, followed by quantification of the positive area. These measurements were conducted in triplicate on blinded pictures. The stained notochord tip and opercle was measured by hand using the polygon selection tool. The statistical analysis employed the Mann-Whitney U test in GraphPad Prism (v.9.4.0), with p-values considered significant when \u22640,05.\n\n### Micro-computed tomography (MicroCT) analysis in adult zebrafish\n\nAdult zebrafish (3 months post fertilization) were euthanized using a 25 x tricaine solution (4000 mg tricaine powder (Sigma), 979 ml distilled water, and 1 M Tris, adjusted to pH 7). Brightfield images of the zebrafish were taken using a Leica M165FC microscope and DFC450C camera with the LAS V4.3 software (Leica Microsystems). The standard lengths of the zebrafish were measured using the Fiji (ImageJ) software (ImageJ 1.52i) (Schindelin et al., 2012).\n\nThe fish were fixed for approximately one week in a fixative solution (4% paraformaldehyde, 5% triton X-100, and 1% potassium hydroxide). The solution was changed when it turned yellow. A maximum of five fish per 100 ml of fixative solution was used. After fixation, the fish were transferred to a 70% ethanol solution for storage until scanning.\n\nBefore scanning, three fish were transferred to a 15 ml Eppendorf tube and immobilized using paper towel soaked in 70% ethanol. The Eppendorf tubes were scanned at the custom-built HECTOR scanner of the Centre for X-ray Tomography (UGCT, https://www.ugent.be/we/ugct/en). A hardware filter of 0.5 mm Al was used to eliminate beam hardening artefacts, with the tube voltage at 90 kVp and target power of 10 W. During a 360\u00b0 rotation, 1201 radiographic images were acquired at 1 s acquisition time per image. The raw data was reconstructed using the Octopus Reconstruction software tool, resulting in a 3D volume of approximately 2800x1000 \u00d7 1000 voxels. Using geometrical magnification, a voxel size of 20\u00b3 \u00b5m\u00b3 was obtained (Masschaele et al., 2013).\n\nThe 3 fish in one tube were virtually separated from the scan, aligned and exported as 3 individual single tiff volume using VGStudioMAX (VolumeGraphics, Heidelberg, Germany). The generated volumes were analyzed using the FishCut software in Matlab described in Hur et al., 2017. The resulting plots were generated using R statistics and were color-coded to highlight significant differences. Significant differences were represented with a lighter color scheme.\n\n### Alizarin red staining and imaging of adult zebrafish\n\nThe fish used for microCT were reused for Alizarin Red staining for which the protocol has been described in Bek et al., 2020. In short, the fish were transferred to cassettes and the concentration of EtOH was gradually reduced from 70% to distilled water (70%\u201350%\u201330%-dH2O each 30 min). Then, the samples were enhanced, immersed into the bone-staining medium, stained with bone-staining solution and destained after removal of the scales with destaining solution. Finally, the samples were gradually (30-70\u2013100%) transferred to 100% glycerol for storage (4 \u00b0C) and imaging.\n\nAdult zebrafish were imaged using a Leica M165FC microscope and DFC450C camera with the LAS V4.3 software (Leica Microsystems). The DSR DsRed Dichroic Mirror filter was used to visualize the (red) fluorescent signal. Images were obtained from a lateral view to get a clear picture of the whole fish. Higher magnification was used to get detailed images of the vertebral column and the head. Images of the head were used to measure the head size, using the Fiji (ImageJ) software (Schindelin et al., 2012).\n",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "3c70b7bd-9909-4d2e-ab02-d57f76be72fc",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Weibin Zhou, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.100060.3.sa0](https://doi.org/10.7554/eLife.100060.3.sa0)\n\nThe paper presents a streamlined new approach for functional validation of genes known to underlie fragile bone disorders in a relatively high throughput, using CRISPR-mediated knockouts and a number of phenotypic assessments in zebrafish. Convincing data demonstrate the feasibility and validity of this approach, which presents an important tool for rapid functional validation of candidate gene(s) associated with heritable bone diseases identified from genetic studies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100060.3.sa1](https://doi.org/10.7554/eLife.100060.3.sa1)\n\nSummary:\n\nIn this work, a screening platform is presented for rapid and cost-effective screening of candidate genes involved in Fragile Bone Disorders. The authors validate the approach of using crispants, generating FO mosaic mutants, to evaluate the function of specific target genes in this particular condition. The design of the guide RNAs is convincingly described, while the effectiveness of the method is evaluated to 60% to 92% of the respective target genes being presumably inactivated. Thus, injected F0 larvae can be directly used to investigate the consequences of this inactivation.\n\nSkeletal formation is then evaluated at 7dpf and 14dpf, first using a transgenic reporter line revealing fluorescent osteoblasts, second using alizarin-red staining of mineralized structures. In general, it appears that the osteoblast-positive areas are more often affected in the crispants compared to the mineralized areas, an observation that appears to correlate with the observed reduced expression of bglap, a marker for mature osteoblasts, and the increased expression of col1a1a in more immature osteoblasts.\n\nFinally, the injected fish (except two lines that revealed a high mortality) are also analyzed at 90dpf, using alizarin red staining and micro-CT analysis, revealing an increased incidence of skeletal deformities in the vertebral arches, fractures, as well as vertebral fusions and compressions for all crispants except those for daam2. Finally, the Tissue Mineral Density (TMD) as determined by micro-CT is proposed as an important marker for investigating genes involved in osteoporosis.\n\nTaken together, this manuscript is well presented, the data are clear and well analyzed, and the methods well described. It makes a compelling case for using the crispant technology to screen the function of candidate genes in a specific condition, as shown here for bone disorders.\n\nStrengths:\n\nStrengths are the clever combination of existing technologies from different fields to build a screening platform. All the required methods are comprehensively described.\n\nWeaknesses:\n\nOne may have wished to bring one or two of the crispants to the stage of bona fide mutants, to confirm the results of the screening, however, this is done for some of the tested genes as laid out in the discussion.\n\nComments on latest version:\n\nAll my issues were resolved.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100060.3.sa2](https://doi.org/10.7554/eLife.100060.3.sa2)\n\nSummary:\n\nMore and more genes and genetic loci are being linked to bone fragility disorders like osteoporosis and osteogenesis imperfecta through GWAS and clinical sequencing. In this study, the authors seek to develop a pipeline for validating these new candidate genes using crispant screening in zebrafish. Candidates were selected based on GWAS bone density evidence (4 genes) or linkage to OI cases plus some aspect of bone biology (6 genes). NGS was performed on embryos injected with different gRNAs/Cas9 to confirm high mutagenic efficacy, and off-target cutting was verified to be low. Bone growth, mineralization, density, and gene expression levels were carefully measured and compared across crispants using a battery of assays at three different stages.\n\nStrengths:\n\n(1) The pipeline would be straightforward to replicate in other labs, and the study could thus make a real contribution towards resolving the major bottleneck of candidate gene validation.\n\n(2) The study is clearly written and extensively quantified.\n\n(3) The discussion attempts to place the phenotypes of different crispant lines into the context of what is already known about each gene's function.\n\n(4) There is added value in seeing the results for the different crispant lines side by side for each assay.\n\n(5) Caveats to the interpretability of crispant data and limitations of their gene-focused analyses and RT-PCR assays are discussed.\n\nWeaknesses:\n\n(1) The study uses only well-established methods and is strategy-driven rather question/hypothesis-driven. This is in line with the researchers' primary goal of developing a workflow for rapid in vivo functional screening of candidate genes. However, this means that less attention is paid to what the results obtained for a given gene may mean regarding potential disease mechanisms, and how contradictions with prior reports of mouse or fish null mutant phenotypes might be explained.\n\n(2) Normalization to body size was not performed. Measurements of surface area covered by osteoblasts or mineralized bone (Fig. 1) are typically normalized to body size - especially in larvae and juvenile fish - to rule out secondary changes due to delayed or accelerated overall growth. This was not done here; the authors argue that \"variations in growth were considered as part of the phenotypic outcome.\" This is reasonable, but because standard length was reported only for fish at 90 dpf (not significantly different in any line), the reader is not given the opportunity to consider whether earlier differences in, e.g. surface area covered by osteoblasts at 14 dpf, could be accounted for by delayed or accelerated overall growth. Images in Figure S5 were not taken at the same magnification, further confounding this effort.\n\nComments on latest version:\n\nThe authors have largely addressed my comments by making changes to the text.\n\nHowever, in response to one of my original comments (\"It would be helpful to note the grouping of candidates into OI vs. BMD GWAS throughout the figures\"), they added a sentence to this effect to the legends. However, because two of the lines were larval-lethal, the legends to Figs. S6-8 are now incorrect in referring to ten genes when only eight mutants are shown.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100060.3.sa3](https://doi.org/10.7554/eLife.100060.3.sa3)\n\nThe manuscript describes the use of CRISPR gene editing coupled with phenotyping mosaic zebrafish larvae to characterize functions of genes implicated in heritable fragile bone disorders (FBDs). Authors targeted six high-confident candidate genes implicated in severe recessive forms of FBDs and four Osteoporosis GWAS-implicated genes and observe varied developmental phenotypes across all crispants, in addition to adult skeletal phenotypes. While the study lacks insight on underlying mechanisms that contribute to disease phenotypes, a major strength of the paper is the streamlined method that produced significant phenotypes for all candidate genes tested. It also represents a significant increase in number of candidate genes tested using their crispant approach beyond the single mutant that was previously published.\n\nOne weakness was the variability of developmental phenotypes, addressed by authors in the Discussion. This might be a product of maternal transcripts not targeted by CRISPR or genetic compensation, which authors have not fully explored. Overall, the paper was well-written and easy to read.\n\nComments on latest version:\n\nThe authors have addressed many concerns in this revision. Figure 1 and Table 2 are much improved.\n\nWhile details of orthologous gene expression profiles of target genes is a welcome addition, other features of target genes remain unaddressed. For example, do genes with maternally deposited transcript exhibit dampened phenotypes? Or does genetic compensation impact certain genes more than others? Since authors state that the study represents a methods paper, it will be important for users to understand the caveats of gene selection to effectively implement and interpret results of the approach.\n",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "bb8c57a8-638c-44fa-9709-e38b3b8fa02b",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C1",
+      "claim": "Heritable fragile bone disorders (FBDs) are characterized by an elevated fracture risk.",
+      "claim_type": "EXPLICIT",
+      "source": "Heritable fragile bone disorders (FBDs), ranging from multifactorial to rare monogenic conditions, are characterized by an elevated fracture risk.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about FBDs presented in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "0ac89f97-c579-47c9-a49d-d29b7535518e",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C2",
+      "claim": "Six genes linked to severe recessive osteogenesis imperfecta (OI) were analyzed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Six genes linked to severe recessive osteogenesis imperfecta (OI) and four associated with bone mineral density (BMD) from genome-wide association studies were analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number and type of genes analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "31d445ad-0ad9-41a8-932a-50e261d33990",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C3",
+      "claim": "Four genes associated with bone mineral density (BMD) from genome-wide association studies were analyzed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Six genes linked to severe recessive osteogenesis imperfecta (OI) and four associated with bone mineral density (BMD) from genome-wide association studies were analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the number and type of genes analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "c6a66e67-8e53-4d2f-a306-fcaaa0687a77",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C4",
+      "claim": "CRISPR/Cas9-based crispant screening in F0 mosaic founder zebrafish achieved a mean indel efficiency of 88%.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CRISPR/Cas9-based crispant screening in F0 mosaic founder zebrafish, Next-generation sequencing confirmed high indel efficiency (mean 88%), mimicking stable knock-out models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "NGS data confirmed the indel efficiency across the crispants studied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "eca8b828-b9c8-4064-8eca-7acda50dcda1",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C5",
+      "claim": "Skeletal phenotyping was performed at 7, 14, and 90 days post-fertilization (dpf).",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal phenotyping at 7, 14, and 90 days post-fertilization (dpf) using microscopy, Alizarin Red S staining, and microCT was performed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract describes the experimental timeline for phenotyping.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "adb358ca-57fc-480d-84a3-0782a91c06ce",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C6",
+      "claim": "Adult crispants displayed consistent skeletal defects, including malformed neural and haemal arches, vertebral fractures and fusions, and altered bone volume and density.",
+      "claim_type": "EXPLICIT",
+      "source": "Larval crispants showed variable osteoblast and mineralization phenotypes, while adult crispants displayed consistent skeletal defects, including malformed neural and haemal arches, vertebral fractures and fusions, and altered bone volume and density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract summarizes the phenotypic findings in adult crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "86f41dee-a78a-4855-a9cf-9419f0e78b65",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C7",
+      "claim": "aldh7a1 and mbtps2 crispants experienced increased mortality due to severe skeletal deformities.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, aldh7a1 and mbtps2 crispants experienced increased mortality due to severe skeletal deformities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract explicitly states the mortality outcome for these specific crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "2f541d5a-5000-4f61-86c6-5e1012a05440",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C8",
+      "claim": "RT-qPCR revealed differential expression of osteogenic markers bglap and col1a1a.",
+      "claim_type": "EXPLICIT",
+      "source": "RT-qPCR revealed differential expression of osteogenic markers bglap and col1a1a, highlighting their biomarker potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract reports the molecular findings from RT-qPCR analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "dc77d250-8058-40b2-a9aa-77bd819bc1cc",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C9",
+      "claim": "Osteoporosis affects about 200 million people around the world.",
+      "claim_type": "EXPLICIT",
+      "source": "It affects about 200 million people around the world (Pouresmaeili et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited epidemiological statistic.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "f41f560f-089f-45ae-acc8-d2fbdec5d5dc",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C10",
+      "claim": "In Europe, 5.6% of the population aged over 50 is diagnosed with osteoporosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In Europe, 5.6% of the population aged over 50 is diagnosed with osteoporosis, making it a highly prevalent disease, especially in the elderly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an epidemiological statistic about osteoporosis prevalence in Europe.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "06a71887-7e95-4e3f-81f7-b91bbfc9a645",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C11",
+      "claim": "Low BMD and fractures are highly heritable risk factors, with heritability values ranging from 50% to 80%.",
+      "claim_type": "EXPLICIT",
+      "source": "Low BMD and fractures are highly heritable risk factors, with heritability values ranging from 50% to 80% (Richards et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited statement about the heritability of bone-related traits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "31bbc798-8ba3-49e8-9e5c-6433a8e0c42d",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C12",
+      "claim": "Genome-wide association studies (GWAS) in humans have unraveled hundreds of susceptible loci associated with BMD and other bone traits related to risk of osteoporotic fracture.",
+      "claim_type": "EXPLICIT",
+      "source": "Genome-wide association studies (GWAS) in humans have unraveled hundreds of susceptible loci associated with BMD and other bone traits related to risk of osteoporotic fracture (Zhu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited statement about GWAS findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "e575e63b-77b0-4446-8ecf-18049d419527",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C13",
+      "claim": "More than 70% of human protein-coding genes have zebrafish orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 70% of human protein-coding genes and 82% of human disease-related genes have zebrafish orthologs, including most of the genes involved in skeletogenesis (Howe et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited statement about genetic conservation between humans and zebrafish.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "b19875a6-df0b-4b00-bc2a-8197514646ee",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C14",
+      "claim": "82% of human disease-related genes have zebrafish orthologs.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 70% of human protein-coding genes and 82% of human disease-related genes have zebrafish orthologs, including most of the genes involved in skeletogenesis (Howe et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited statement about genetic conservation between humans and zebrafish.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "9fe174fd-8e41-4619-8bcb-24f02624deb1",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C15",
+      "claim": "Zebrafish share many of their skeletal features and ossification mechanisms with mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, zebrafish share many of their skeletal features and ossification mechanisms with mammals (Dietrich et al., 2021) and numerous zebrafish models for skeletal diseases have been established and investigated (Gistelinck et al., 2018; Daponte et al., 2023; Kague and Karasik, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited statement about skeletal similarities between zebrafish and mammals.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "0bda9e33-bd10-40f3-b166-ec84a7b2054d",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C16",
+      "claim": "Adult crispants have a shorter generation time (~3 months) than stable lines (6\u20139 months).",
+      "claim_type": "EXPLICIT",
+      "source": "Adult crispants have a shorter generation time (~3 months) than stable lines (6\u20139 months), which allows screening more genes in less time and at lower costs and resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison of generation times between crispants and stable lines.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "92f939c2-d628-44b6-a28c-0135e69008f4",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C17",
+      "claim": "The phenotypes and molecular profiles of a stable knockout line and a crispant for the osteoporosis gene lrp5 were found to be highly similar.",
+      "claim_type": "EXPLICIT",
+      "source": "We previously demonstrated the feasibility of this approach by comparing the phenotypes and molecular profiles of a stable knockout line and a crispant for the osteoporosis gene lrp5, and found them to be highly similar (Bek et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited finding from a previous study by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "9412b952-b586-45c6-a5d9-2bf781d50042",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C18",
+      "claim": "Comparison of crispants to homozygous germline mutants for bmp1a and plod2 revealed phenotypic convergence.",
+      "claim_type": "EXPLICIT",
+      "source": "In a study by Watson et al., 2020, comparison of crispants to homozygous germline mutants for bmp1a and plod2, two causal OI genes, revealed phenotypic convergence, suggesting that crispants faithfully recapitulate the biology of germline skeletal disease models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited finding from Watson et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "01b99fd0-f1e8-4268-a3ef-bc3b32c99f01",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C19",
+      "claim": "ALDH7A1, ESR1, DAAM2, and SOST were selected as top candidate genes with single zebrafish orthologs associated with bone density.",
+      "claim_type": "EXPLICIT",
+      "source": "We then identified the genes that harbored these variants and chose the top four candidates with single zebrafish orthologs: ALDH7A1, ESR1, DAAM2, and SOST.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text describes the gene selection process for osteoporosis-related genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "e403b4e4-aad9-4d5b-9b27-6949b8fcbdf9",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C20",
+      "claim": "Six genes associated with recessive forms of OI were selected: CREB3L1, MBTPS2, SPARC, SERPINF1, IFITM5, and SEC24D.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we selected six genes associated with recessive forms of OI associated with severe skeletal phenotypes, and involved in different aspects of bone formation, including osteoblast differentiation (CREB3L1, MBTPS2, and SPARC), bone mineralization (SERPINF1 and IFITM5) and collagen transport (SEC24D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text explicitly lists the OI genes selected for the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "fe4c495c-1377-486a-97d7-6377a96acbbe",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C21",
+      "claim": "The minimal indel efficiency across the different crispants was 71%.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the different crispants the minimal indel efficiency was 71%, while the OOF rate ranged between 49 and 73%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from NGS analysis reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "a4132126-6682-4789-96dd-611123a10b0b",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C22",
+      "claim": "The out-of-frame (OOF) rate ranged between 49 and 73% across different crispants.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the different crispants the minimal indel efficiency was 71%, while the OOF rate ranged between 49 and 73%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from NGS analysis reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "3266f80b-e33e-457b-9e67-e9b3308331bb",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C23",
+      "claim": "The accumulated percentage of reads with indels that likely cause loss-of-function of the respective protein fall within the range of 60% to 92%.",
+      "claim_type": "EXPLICIT",
+      "source": "The accumulated percentage of reads with indels that likely cause loss-of-function of the respective protein (OOF % + % in-frame indel \u22656 bp), fall within the range of 60% to 92%, although also reads with short in-frame indels (<6 bp) can affect protein function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from NGS analysis combining OOF and large in-frame deletions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "665c62e6-337f-4627-aa32-a577f2eaef69",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C24",
+      "claim": "In 20 out of the 30 examined off-target sites, no off-target mutations were identified.",
+      "claim_type": "EXPLICIT",
+      "source": "In 20 out of the 30 examined off-target sites, no off-target mutations were identified (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from off-target analysis reported in the Results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "9a684448-ed79-450e-a807-52ba6a2312fa",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C25",
+      "claim": "For the remaining off-target sites, the off-target rate ranged from 0.11% to 2.82%.",
+      "claim_type": "EXPLICIT",
+      "source": "For the remaining off-target sites, the off-target rate ranged from 0,11% to 2,82%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from off-target analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "53e6ea63-cd79-418d-ac9c-eae0c960432e",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C26",
+      "claim": "At 7 dpf and 14 dpf, esr1 crispants exhibited a significant increase of the osteoblasts-positive surface area within the head.",
+      "claim_type": "EXPLICIT",
+      "source": "At 7 and 14 dpf, esr1 crispants exhibited a significant increase of the osteoblasts-positive surface area within the head (p\u22640.05; p\u22640.001) (Figure 1b and c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from osteoblast imaging analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "3e49e3ed-6063-4c26-9798-d03b53189070",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C27",
+      "claim": "ifitm5 crispants at 14 dpf displayed a significant increase in osteoblasts-positive surface area within the head.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, ifitm5 crispants at 14 dpf also displayed a significant increase (p\u22640.01) in osteoblasts-positive surface area within the head.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from osteoblast imaging analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "a90fbb77-c406-4a6b-88f9-328abc31a7fb",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C28",
+      "claim": "At 7dpf, the total head exhibited a significant reduction in mineralized surface in aldh7a1 and sec24d crispants.",
+      "claim_type": "EXPLICIT",
+      "source": "At 7dpf, the total head exhibited a significant reduction in mineralized surface in aldh7a1 (p\u22640.05) and sec24d crispants (p\u22640.0001), while the notochord tip displayed a significant increase in mineralized surface area in creb3l1 (p\u22640.05), ifitm5 (p\u22640.05), and serpinf1 (p\u22640.05) crispants (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from Alizarin Red S staining analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "dd632b4a-fdbe-4bea-acba-208355f5ae22",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C29",
+      "claim": "At 7dpf, the notochord tip displayed a significant increase in mineralized surface area in creb3l1, ifitm5, and serpinf1 crispants.",
+      "claim_type": "EXPLICIT",
+      "source": "At 7dpf, the total head exhibited a significant reduction in mineralized surface in aldh7a1 (p\u22640.05) and sec24d crispants (p\u22640.0001), while the notochord tip displayed a significant increase in mineralized surface area in creb3l1 (p\u22640.05), ifitm5 (p\u22640.05), and serpinf1 (p\u22640.05) crispants (Figure 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from Alizarin Red S staining analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "e180a59b-7682-4c3e-a51a-adb7dcb16a7d",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C30",
+      "claim": "At 14 dpf, sec24d crispants exhibited a significant decrease in the mineralized surface area of the opercle and the number of mineralized vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, at 14 dpf, sec24d crispants exhibited a significant decrease (p\u22640.001) in the mineralized surface area of the opercle and the number of mineralized vertebrae, whereas serpinf1 crispants showed a notable increase in the number of mineralized vertebrae (p\u22640.01; Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from Alizarin Red S staining analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "29f76afb-918b-4fc8-b8b5-2ef186774672",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C31",
+      "claim": "At 14 dpf, serpinf1 crispants showed a notable increase in the number of mineralized vertebrae.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, at 14 dpf, sec24d crispants exhibited a significant decrease (p\u22640.001) in the mineralized surface area of the opercle and the number of mineralized vertebrae, whereas serpinf1 crispants showed a notable increase in the number of mineralized vertebrae (p\u22640.01; Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from Alizarin Red S staining analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "b5451c3d-3440-4193-ada3-fdd9db67b925",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C32",
+      "claim": "At 7 dpf, no significant differences were seen in the expression of runx2 between the different crispants and corresponding controls.",
+      "claim_type": "EXPLICIT",
+      "source": "At 7 dpf, no significant differences were seen in the expression of runx2, an early pre-osteoblast marker, between the different crispants and corresponding controls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RT-qPCR analysis at 7 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "eb5ab580-773e-46c0-b065-e91c1fe6907f",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C33",
+      "claim": "Osterix (sp7) was upregulated in crispants for sparc at 7 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Osterix, also known as sp7, a runx2 downstream gene which plays a critical role for the differentiation of pre-osteoblasts into mature osteoblasts, was only upregulated in crispants for sparc (p\u22640.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RT-qPCR analysis at 7 dpf with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "a56c47a2-037b-4228-84f9-2c8d89606a36",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C34",
+      "claim": "Osteocalcin (bglap) was downregulated in almost all crispants at 7 dpf, except in crispants for sost and sparc.",
+      "claim_type": "EXPLICIT",
+      "source": "Osteocalcin, also known as bglap, which is mainly expressed in mature osteoblasts, was downregulated in almost all crispants, except in crispants for sost and sparc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RT-qPCR analysis at 7 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "ab406ee0-048e-495f-a597-3404740f94b0",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C35",
+      "claim": "col1a1a was upregulated in crispants for aldh7a1, daam2, esr1 and sec24d at 7 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, col1a1a, encoding the \u03b11 chain of type 1 collagen, and marking extracellular matrix synthesis by both pre- and mature osteoblasts (Valenti et al., 2020), was upregulated in crispants for aldh7a1 (p\u22640.001), daam2 (p\u22640.05), esr1 (p\u22640.05) and sec24d (p\u22640.05; Figure 2a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RT-qPCR analysis at 7 dpf with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "d50f2fc6-47c1-4781-8a3d-20191ae661fb",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C36",
+      "claim": "At 14 dpf, the expression of runx2 remained unchanged in all crispants compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "At 14 dpf, the expression of runx2 remained unchanged in all crispants compared to control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RT-qPCR analysis at 14 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "67971649-e6bb-4a90-94dd-52dbcdbbafd6",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C37",
+      "claim": "At 14 dpf, the expression of sp7 was significantly increased in crispants for daam2 and sec24d.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of sp7 was significantly increased in crispants for daam2 (p\u22640.05) and sec24d (p\u22640.05), decreased in esr1 crispants, while expression levels were normalized in sparc crispants relative to 7 dpf (p\u22640.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RT-qPCR analysis at 14 dpf with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "c0c8a991-49e0-4f2f-a68c-822cdd047d3f",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C38",
+      "claim": "At 14 dpf, the expression of bglap remained significantly downregulated in crispants for aldh7a1, daam2, esr1 and creb3l1.",
+      "claim_type": "EXPLICIT",
+      "source": "The expression of bglap remained significantly downregulated in crispants for aldh7a1 (p\u22640.001), daam2 (p\u22640.01), esr1 (p\u22640.01) and creb3l1 (p\u22640.05) while it reverted to control levels in ifitm5, sec24d, and serpinf1 crispants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RT-qPCR analysis at 14 dpf with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "5c9ecac5-440b-483f-b2b8-d87ce3b2d116",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C39",
+      "claim": "An upregulation in the expression of col1a1a was seen in all the crispants at 14 dpf, except in crispants for sparc and for aldh7a1 and esr1 where expression levels normalized compared to 7 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "An upregulation in the expression of col1a1a was seen in all the crispants, except in crispants for sparc and for aldh7a1 and esr1 where expression levels normalized compared to 7 dpf (Figure 2b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from RT-qPCR analysis at 14 dpf.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "a6362be2-5211-4c7b-9b82-5693c98a84b8",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C40",
+      "claim": "Crispants for both aldh7a1 and mbtps2 displayed early lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "Crispants for both aldh7a1 and mbtps2 displayed early lethality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from survival analysis of adult crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "c333046e-dc44-4e8b-ab9c-4d54673ea474",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C41",
+      "claim": "aldh7a1 crispants experienced increased lethality from 7 dpf onwards, with no survivors beyond 20 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Survival analysis indicated that aldh7a1 crispants experienced increased lethality from 7 dpf onwards, with no survivors beyond 20 dpf, while mbtps2 crispants exhibited increased lethality from 17 dpf onwards, with only a very small number of fish surviving into adulthood (90 dpf; Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from survival analysis with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "1a686e15-e45d-4135-a81d-42b9196eaf49",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C42",
+      "claim": "mbtps2 crispants exhibited increased lethality from 17 dpf onwards, with only a very small number of fish surviving into adulthood (90 dpf).",
+      "claim_type": "EXPLICIT",
+      "source": "Survival analysis indicated that aldh7a1 crispants experienced increased lethality from 7 dpf onwards, with no survivors beyond 20 dpf, while mbtps2 crispants exhibited increased lethality from 17 dpf onwards, with only a very small number of fish surviving into adulthood (90 dpf; Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from survival analysis with reference to Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "33d7a859-4a40-4629-b2f2-079c5d2fcb3b",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C43",
+      "claim": "ARS staining of the skeleton of two surviving adult mbtps2 crispant fish revealed severe cranial malformations, including underdevelopment of the premaxilla, dentary, and articular.",
+      "claim_type": "EXPLICIT",
+      "source": "ARS staining of the skeleton of two surviving adult mbtps2 crispant fish revealed severe cranial malformations, including underdevelopment of the premaxilla, dentary, and articular.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ARS staining of adult mbtps2 crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "1a7213b5-cf33-4f1d-b7e9-0072281e37c2",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C44",
+      "claim": "Among the eight crispants that successfully matured into adulthood, none exhibited significant differences in standard length and head size.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the eight crispants that successfully matured into adulthood, none exhibited significant differences in standard length and head size (n=5 fish per crispant; Figure 4b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from morphometric analysis of adult crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "1c2659e4-9a1c-4cdf-9fe1-d4af8fbd436a",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C45",
+      "claim": "esr1 crispants were observed to have notably larger eye diameters.",
+      "claim_type": "EXPLICIT",
+      "source": "However, esr1 crispants were observed to have notably larger eye diameters (Figure 4b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from morphometric analysis of adult crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "ad87d962-66d1-4a3f-876c-36732b575caf",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C46",
+      "claim": "All adult crispants demonstrated various abnormalities in the caudal part of the vertebral column such as fusions, compressions, fractures, or arch malformations, except for daam2 crispants where no obvious abnormalities were detected.",
+      "claim_type": "EXPLICIT",
+      "source": "All these crispants demonstrated various abnormalities in the caudal part of the vertebral column such as fusions, compressions, fractures, or arch malformations, except for daam2 crispants where no obvious abnormalities were detected (Figure 4a and c; Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ARS staining and imaging of adult crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "58bcc505-2903-46b8-ad3a-84730c7eb12c",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C47",
+      "claim": "In creb3l1 crispants, the vertebral phenotype was relatively mild and primarily restricted to arch malformations.",
+      "claim_type": "EXPLICIT",
+      "source": "In creb3l1 crispants, the vertebral phenotype was relatively mild and primarily restricted to arch malformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from ARS staining and imaging of adult crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "769aba87-d20b-4a82-89ec-e4cb89ec915f",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C48",
+      "claim": "A significant increase in centrum volume was observed in daam2 crispants compared to the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "A significant increase in centrum volume was observed in daam2 crispants compared to the controls (p<0.05, z=2.86; Figure 4d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from microCT analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "f533bda0-f85c-4a0b-8c2a-6ef45cbd4129",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C49",
+      "claim": "Centrum TMD was significantly higher in crispants for daam2, esr1, and sost.",
+      "claim_type": "EXPLICIT",
+      "source": "Centrum TMD was significantly higher, and to a similar extent, in crispants for daam2 (p<0.05; z=1.54), esr1 (p<0.05; z=1.62), and sost (p<0.05; z=1.41), three genes likely involved in osteoporosis pathogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from microCT analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "4e1fc9c9-a702-4466-8017-bb8e87b3bac5",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C50",
+      "claim": "Centrum thickness was increased in crispants for esr1, ifitm5, and sec24d with the most pronounced increase observed in ifitm5 crispants.",
+      "claim_type": "EXPLICIT",
+      "source": "Centrum thickness was increased in crispants for esr1 (p<0.05; z=4.26), ifitm5 (p<0.01; z=7.13), and sec24d (p<0.05; z=5.04) with the most pronounced increase observed in ifitm5 crispants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from microCT analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "c1bd7ea2-6663-4211-88cf-a5aa6213020e",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C51",
+      "claim": "Centrum length was increased only in daam2 crispants.",
+      "claim_type": "EXPLICIT",
+      "source": "Centrum length was increased only in daam2 crispants (p<0.05; z=4.22).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from microCT analysis with statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "39aee015-e8a0-47bd-bfd4-6f042814566d",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C52",
+      "claim": "The depletion of estrogen in an osteoblastic cell line in vitro results in the stimulation of osteoblast differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the depletion of estrogen in an osteoblastic cell line in vitro results in the stimulation of osteoblast differentiation (Schiavi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited finding from Schiavi et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "7c84a8f7-0136-44cf-9375-69490485ca70",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C53",
+      "claim": "Disrupted sec24d function leads to head abnormalities and growth delays in early larval stages in bulldog zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings aligned with the observed malformations in bulldog zebrafish, where disrupted sec24d function leads to head abnormalities and growth delays in early larval stages (Sarmah et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited finding from Sarmah et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "5e5bd067-a7cf-42a4-ac2e-643b6d2775ed",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C54",
+      "claim": "Mature osteoblasts engage in the deposition of calcium and phosphate ions, essential for the formation of hydroxyapatite crystals.",
+      "claim_type": "EXPLICIT",
+      "source": "As mainly mature osteoblasts engage in the deposition of calcium and phosphate ions, essential for the formation of hydroxyapatite crystals, bone mineralization can be expected to be reduced in the crispants, which results in increased formation of non-mineralized osteoid deposits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge of osteoblast function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "e1fe3e5a-69ab-4af3-96e9-63ef2e3a5854",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C55",
+      "claim": "Knock-out mice lacking Sost showed an increase in TMD within the cortical bone.",
+      "claim_type": "EXPLICIT",
+      "source": "Knock-out mice lacking Sost showed an increase in TMD within the cortical bone, which is comparable to the bone present in the zebrafish vertebral column (Li et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited finding from Li et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "1f765339-8153-44ee-8f74-ef6b321586b2",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C56",
+      "claim": "Mutant mice with a hypomorphic Daam2 allele presented with reduced bone strength and increased cortical bone porosity.",
+      "claim_type": "EXPLICIT",
+      "source": "As for the other genes, for daam2, mutant mice with a hypomorphic Daam2 allele presented with reduced bone strength and increased cortical bone porosity (Morris et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited finding from Morris et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "ec789568-2c83-4089-9c51-e54b5f588c03",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C57",
+      "claim": "ER\u03b1 knockout mice presented with a decrease in cortical bone mineral density and increase in trabecular bone mineral density.",
+      "claim_type": "EXPLICIT",
+      "source": "ER\u03b1 knockout mice presented with a decrease in cortical bone mineral density and increase in trabecular bone mineral density (Melville et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited finding from Melville et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "e13f38ed-c532-4482-8869-c5b3da19e333",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C58",
+      "claim": "Genetic compensation can be triggered by the upregulation of compensating genes, often mediated through the regulation of nonsense-mediated decay (NMD) in combination with the epigenetic machinery in zebrafish.",
+      "claim_type": "EXPLICIT",
+      "source": "This compensation mechanism can be triggered by the upregulation of compensating genes, often mediated through the regulation of nonsense-mediated decay (NMD) in combination with the epigenetic machinery in zebrafish (El-Brolosy and Stainier, 2017; Jakutis and Stainier, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cited statement about genetic compensation mechanisms in zebrafish.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "779b58b3-11d6-45dd-b37d-ae24a0981ef0",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C59",
+      "claim": "Crispants undergo nonsense-mediated decay (NMD) although in a mosaic manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Crispants, in contrast to morphants, also undergo NMD although in a mosaic manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the molecular mechanisms in crispants.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "69f9a037-2850-4815-b6d0-2cf3a601b92e",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C60",
+      "claim": "The skeletal malformations in crispants were consistently observed in a second clutch, underscoring the reproducibility of these phenotypic features across independent clutches.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, these skeletal malformations were consistently observed in a second clutch of crispants (Figure 4\u2014figure supplement 3), underscoring the reproducibility of these phenotypic features across independent clutches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about reproducibility with reference to Figure 4\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "8cf245aa-abec-4275-a6bf-9cc07b4934a4",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C61",
+      "claim": "All studied crispants exhibit skeletal abnormalities in adult stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonetheless, our initial set-up demonstrates the feasibility of this approach to identify genes potentially implicated in the pathogenesis of skeletal disorders, as all studied crispants exhibit skeletal abnormalities in adult stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the findings across all crispants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "17f0c708-6119-4b3d-838a-413ff8160c98",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C62",
+      "claim": "The osx:Kaede transgenic line was used for all experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The osx:Kaede transgenic line was used for all experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail from the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "357ef87e-ee61-4cc4-a03f-05b6383c6b5c",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C63",
+      "claim": "Two-part guide RNAs (gRNAs) are functional gRNA duplexes made of a universal 67 mer trans-activating CRISPR-RNA (tracrRNA) and a target-specific CRISPR-RNA (crRNA).",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, two-part guide RNAs (gRNAs) were used which are functional gRNA duplexes made of a universal 67 mer trans-activating CRISPR-RNA (tracrRNA) and a target-specific CRISPR-RNA (crRNA) (Alt-R CRISPR-Cas9 System, IDT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the CRISPR system used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "48c3ad41-3232-4992-9b69-1b8bb266354c",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C64",
+      "claim": "A non-specific crRNA (GCAGGCAAAGAATCCCTGCC), referred to as the 'scrambled' sequence, was used to generate the controls.",
+      "claim_type": "EXPLICIT",
+      "source": "A non-specific crRNA (GCAGGCAAAGAATCCCTGCC), referred to as the 'scrambled' sequence, was used to generate the controls (Wu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the control generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "898a1995-aa3a-49d3-9dea-849e9b68c4ba",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C65",
+      "claim": "The injection mix consisted of a 1.4 nL drop containing RNase-free water, KCl (2000 mM) and ribonucleoproteins (RNPs), consisting of 800 pg of both gRNA duplex and Cas9 (1000 ng/\u00b5l) protein.",
+      "claim_type": "EXPLICIT",
+      "source": "The injection mix consisted of a 1.4 nL drop containing RNase-free water, KCl (2000 mM) and ribonucleoproteins (RNPs), consisting of 800 pg of both gRNA duplex and Cas9 (1000 ng/\u00b5l) (ToolGen, Seoul, South Korea; wild-type nuclease with nuclear localization signal) protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the injection protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "ca720fca-197a-4d11-82ad-3d72db5bdbff",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C66",
+      "claim": "For each crispant and each corresponding control, a total of 200 eggs, originating from the same clutch, were injected.",
+      "claim_type": "EXPLICIT",
+      "source": "For each crispant and each corresponding control, a total of 200 eggs, originating from the same clutch, were injected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "7ac60089-c75c-49c2-857f-eb55c32cfb99",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C67",
+      "claim": "DNA was extracted from 10 pooled embryos at one day after fertilization for NGS analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "We extracted DNA from 10 pooled embryos at one day after fertilization by adding 100 \u00b5l NaOH and incubating the samples at 95 \u00b0C for 20 min.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about DNA extraction for NGS.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "0f285efe-2e36-4fb4-93a6-3ba1d0694871",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C68",
+      "claim": "For each crispant, RNA was extracted from 4 or 5 pools of 10 embryos at 7 dpf and 14 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA extraction and qPCR protocol described by Bek et al., 2020 was followed, with minor modifications; for each crispant, RNA was extracted from 4 or 5 pools of 10 embryos at 7 dpf and 14 dpf using Trizol (Life Technologies Europe) and purified using the RNeasy Mini Kit (Qiagen) with on-column DNase I treatment (Qiagen).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about RNA extraction for RT-qPCR.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "e241b3b2-df98-427a-adf8-76ae513b1675",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C69",
+      "claim": "Ten zebrafish larvae with the transgenic osx:Kaede background were used for osteoblast imaging at 7 dpf and 14 dpf.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten zebrafish larvae (at 7 dpf and 14 dpf) with the transgenic osx:Kaede background were anesthetized using 1 x Tricaine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about the sample size for osteoblast imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "2feb9bad-effd-45b4-9243-6b88ab0adb83",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C70",
+      "claim": "Images of 7 dpf larvae were taken from the ventral side for osteoblast imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Images of 7 dpf larvae were taken from the ventral side.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about imaging orientation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "790ef977-803a-4d85-81f3-42dc7fb20775",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C71",
+      "claim": "Images of 14 dpf larvae were taken from both ventral and lateral perspectives for osteoblast imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Images of 14 dpf larvae were taken from both ventral and lateral perspectives to provide a more comprehensive view of the opercle's surface area.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about imaging orientation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "3bb1ed5f-c95c-4af6-89ce-84ae303b3b3c",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C72",
+      "claim": "All measurements for osteoblast-positive area were performed in triplicate on blinded pictures.",
+      "claim_type": "EXPLICIT",
+      "source": "All measurements were performed in triplicate on blinded pictures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about measurement protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "871c61c0-1f5a-4d17-a4b0-21e63f3074ef",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C73",
+      "claim": "Mann-Whitney U test was applied in GraphPad Prism (v.9.4.0), with p-values considered significant when \u22640.05.",
+      "claim_type": "EXPLICIT",
+      "source": "Mann-Whitney U test was applied in GraphPad Prism (v.9.4.0), with p-values considered significant when \u22640.05.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "60e038f5-2db2-4811-9d75-517b12e4713c",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C74",
+      "claim": "Adult zebrafish (3 months post fertilization) were euthanized using a 25 x tricaine solution for microCT analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Adult zebrafish (3 months post fertilization) were euthanized using a 25 x tricaine solution (4000 mg tricaine powder (Sigma), 979 ml distilled water, and 1 M Tris, adjusted to pH 7).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about sample preparation for microCT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "fa74d2c1-2713-4a61-91bf-7fb8e2255513",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C75",
+      "claim": "The fish were fixed for approximately one week in a fixative solution (4% paraformaldehyde, 5% triton X-100, and 1% potassium hydroxide) before microCT scanning.",
+      "claim_type": "EXPLICIT",
+      "source": "The fish were fixed for approximately one week in a fixative solution (4% paraformaldehyde, 5% triton X-100, and 1% potassium hydroxide).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about sample preparation for microCT.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "314b6149-3756-4904-a046-0d716428a0b3",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "claim_id": "C76",
+      "claim": "A voxel size of 20\u00b3 \u00b5m\u00b3 was obtained for microCT scanning using geometrical magnification.",
+      "claim_type": "EXPLICIT",
+      "source": "Using geometrical magnification, a voxel size of 20\u00b3 \u00b5m\u00b3 was obtained (Masschaele et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about microCT scanning parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6c3e421d-4e25-4a69-a2e6-f1a78e0dcc52",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study selected ten candidate genes for analysis: four genes (ALDH7A1, ESR1, DAAM2, SOST) associated with bone mineral density from GWAS studies and six genes (CREB3L1, MBTPS2, SPARC, SERPINF1, IFITM5, SEC24D) associated with recessive osteogenesis imperfecta.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C19, and C20 clearly describe the gene selection process and criteria. The selection is well-justified based on GWAS evidence for osteoporosis genes and known involvement in OI pathogenesis for the other genes, providing a rational basis for the screening platform.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "5e8a0ea9-bff8-48aa-b4af-34ee46cf2328",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CRISPR/Cas9-based crispant generation achieved high indel efficiency (mean 88%, minimum 71%) with out-of-frame rates between 49-73%, and accumulated loss-of-function mutations (OOF + in-frame \u22656bp) ranging from 60-92%. Off-target effects were minimal, with 20/30 sites showing no mutations and remaining sites showing 0.11-2.82% off-target rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C21-C25 provide comprehensive NGS validation data demonstrating high editing efficiency and specificity. The quantitative metrics are clearly stated with appropriate controls, and the off-target analysis demonstrates the specificity of the approach. The data support the technical validity of the crispant generation method.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "cd297cf3-89c0-42b0-8b94-670aa9574635",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "esr1 crispants showed significantly increased osteoblast-positive surface area in the head at both 7 dpf and 14 dpf, while ifitm5 crispants showed this increase only at 14 dpf.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26 and C27 report statistically significant findings from osteoblast imaging with appropriate p-values. The measurements were performed in triplicate on blinded samples (C72) with n=10 larvae per group (C69), providing adequate statistical power for these observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "e1f32e60-ca47-4749-b752-da0c311c8b68",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Larval crispants displayed variable mineralization phenotypes: aldh7a1 and sec24d showed reduced head mineralization at 7 dpf, while creb3l1, ifitm5, and serpinf1 showed increased notochord tip mineralization. At 14 dpf, sec24d crispants had reduced opercle mineralization and fewer mineralized vertebrae, while serpinf1 showed increased vertebrae number.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31 report statistically significant mineralization differences with appropriate p-values from Alizarin Red S staining. However, the authors acknowledge high variability in larval phenotypes and note that many measurements did not reach statistical significance, suggesting these findings should be interpreted cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "2c15216b-0834-49f1-9248-72a39a779290",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "RT-qPCR analysis revealed differential expression of osteogenic markers across developmental stages. At 7 dpf, bglap was downregulated in most crispants (except sost and sparc), while col1a1a was upregulated in aldh7a1, daam2, esr1, and sec24d. At 14 dpf, bglap downregulation persisted in aldh7a1, daam2, esr1, and creb3l1, while col1a1a upregulation became more widespread.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C39 report gene expression changes with statistical significance from RT-qPCR analysis using 4-5 biological replicates (C68). The authors appropriately note that whole-body samples were used, which may include non-skeletal contributions. The consistent pattern of bglap downregulation and col1a1a upregulation across multiple crispants suggests a common biological response.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "13454a9c-f0cc-4d63-881d-233aff672b50",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "aldh7a1 and mbtps2 crispants exhibited severe early lethality. aldh7a1 crispants showed increased mortality from 7 dpf with no survivors beyond 20 dpf, while mbtps2 crispants had increased mortality from 17 dpf with rare survivors to 90 dpf showing severe cranial malformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43 describe survival phenotypes with reference to survival curves (Figure 3). The severe lethality phenotypes are clearly documented and represent important functional validation of these genes' roles in skeletal development. The observation of cranial malformations in surviving mbtps2 crispants provides additional phenotypic detail.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "3d218672-e426-42d9-a9b3-9515e4f73a9a",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Adult crispants (90 dpf) showed no differences in standard length or head size, but esr1 crispants had larger eye diameters. All crispants except daam2 displayed vertebral column abnormalities including fusions, compressions, fractures, or arch malformations, with creb3l1 showing relatively mild phenotypes restricted to arch malformations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C47 describe morphological observations from adult crispants with n=5 fish per group. The consistent observation of vertebral abnormalities across most crispants (C60, C61) demonstrates reproducibility. However, the lack of statistical testing for some qualitative observations (e.g., vertebral abnormalities) limits the strength of these conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "c3536e36-4d58-4bf3-981a-a222b225d938",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MicroCT analysis revealed quantitative skeletal differences in adult crispants: daam2 showed increased centrum volume and length; daam2, esr1, and sost showed increased centrum TMD; and esr1, ifitm5, and sec24d showed increased centrum thickness, with ifitm5 showing the most pronounced increase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C51 report statistically significant microCT findings with p-values and z-scores. The use of regression-based statistical testing and z-score normalization (described in methods) provides appropriate quantitative analysis. The finding of increased TMD in osteoporosis-related genes is particularly notable and discussed in relation to mouse models.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "4cdc999d-8650-41d8-b79b-5a1de43e0811",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The osteogenic markers bglap and col1a1a showed differential expression patterns that highlight their potential as biomarkers: bglap (mature osteoblast marker) was consistently downregulated in most crispants, while col1a1a (collagen marker) showed upregulation, suggesting an abundance of immature osteoblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This result synthesizes the RT-qPCR findings (C8, C34, C35, C38, C39) with the authors' interpretation about biomarker potential. The opposing trends in bglap and col1a1a expression are consistent across multiple crispants and developmental stages, supporting their utility as markers of osteoblast differentiation state. However, the use of whole-body samples limits specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "9e9e7dae-2a4c-4681-8469-d25e23e46f41",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The skeletal malformations observed in crispants were reproducible across independent clutches, and all studied crispants exhibited skeletal abnormalities in adult stages, demonstrating the feasibility of this approach for identifying genes involved in skeletal disorder pathogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60 and C61 summarize the overall success of the screening platform. The reproducibility across clutches (C60, with reference to Figure 4\u2014figure supplement 3) and the universal observation of adult skeletal phenotypes (C61) support the validity of the crispant approach for functional gene screening.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "6c236f96-9939-489e-987a-53fdae9d7feb",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The observed crispant phenotypes align with findings from other model systems: esr1 depletion stimulates osteoblast differentiation in vitro; sec24d disruption causes head abnormalities in zebrafish; Sost knockout mice show increased cortical TMD; Daam2 hypomorphic mice have reduced bone strength; and ER\u03b1 knockout mice show altered bone mineral density.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C57 cite relevant literature to contextualize the findings. These comparisons to established models strengthen the interpretation of the crispant phenotypes and demonstrate consistency with prior knowledge. However, these are supporting citations rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "4e873f59-29b9-4c98-8b41-9a11c19ac82c",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Genetic compensation mechanisms involving nonsense-mediated decay (NMD) and epigenetic machinery may influence crispant phenotypes, as crispants undergo NMD in a mosaic manner, potentially explaining differences between larval and adult phenotype penetrance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C58 and C59 discuss potential mechanisms for phenotypic variability but do not provide direct experimental evidence for genetic compensation in these specific crispants. This represents a plausible hypothesis based on cited literature but remains speculative without validation experiments such as measuring compensatory gene expression.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "f5470e47-af34-423b-ae36-0ee39132b4ed",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study employed standardized methods including the osx:Kaede transgenic line, Alt-R CRISPR-Cas9 system with two-part gRNAs, injection of 200 eggs per condition from the same clutch, NGS analysis from pooled embryos, RT-qPCR from 4-5 pools of 10 embryos, imaging of 10 larvae with triplicate blinded measurements, Mann-Whitney U testing (p\u22640.05), and microCT scanning at 20\u00b3 \u00b5m\u00b3 voxel size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C76 describe comprehensive methodological details that are clearly stated and appropriate for the experimental design. The use of standardized protocols, adequate sample sizes, blinded measurements, and appropriate statistical tests supports the validity of the findings. However, some limitations exist, such as the use of whole-body samples for gene expression analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb",
+      "content_id": "a90b85a5-b251-4314-8a67-245acdc015b1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The study is grounded in established knowledge about fragile bone disorders, osteoporosis epidemiology, genetic heritability of bone traits, GWAS findings, zebrafish as a model organism for human disease, and prior validation of the crispant approach for skeletal gene screening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C18 provide background context through cited literature and established knowledge. These claims appropriately frame the rationale for the study and are well-supported by references. The prior validation of crispants for skeletal genes (C17, C18) provides important precedent for the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "13c4926d-8b7e-4006-952d-20ba6bd1af2b",
+      "content_id": "3c70b7bd-9909-4d2e-ab02-d57f76be72fc",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "CRISPR/Cas9-based crispant screening achieved high indel efficiency (mean 88%, minimum 71%) with out-of-frame rates of 49-73%, resulting in 60-92% of reads with likely loss-of-function indels. Off-target analysis showed no mutations in 20 of 30 sites examined, with remaining sites showing 0.11-2.82% off-target rates.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers affirmed the high mutagenic efficacy and technical validity of the CRISPR approach. Reviewer 1 stated 'the effectiveness of the method is evaluated to 60% to 92% of the respective target genes being presumably inactivated' and Reviewer 2 noted 'NGS was performed on embryos injected with different gRNAs/Cas9 to confirm high mutagenic efficacy, and off-target cutting was verified to be low.' No concerns were raised about these technical measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "a6aa84ff-f106-4f65-af2a-71a298007bd5",
+      "content_id": "3c70b7bd-9909-4d2e-ab02-d57f76be72fc",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Larval crispants at 7 and 14 dpf showed variable phenotypes in osteoblast-positive areas and mineralized surfaces. esr1 and ifitm5 crispants exhibited increased osteoblast-positive surface area, while aldh7a1 and sec24d showed reduced mineralized surface in the head. Several crispants showed altered mineralization at the notochord tip and opercle.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledged these findings but expressed concerns about their interpretation. Reviewer 2 noted that 'Measurements of surface area covered by osteoblasts or mineralized bone (Fig. 1) are typically normalized to body size...This was not done here' and that 'the reader is not given the opportunity to consider whether earlier differences in, e.g. surface area covered by osteoblasts at 14 dpf, could be accounted for by delayed or accelerated overall growth.' Reviewer 3 noted 'the variability of developmental phenotypes' as a weakness. The lack of normalization and high variability reduce confidence in these larval findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "204774e0-c0fd-4a81-9e0d-8947a12109ea",
+      "content_id": "3c70b7bd-9909-4d2e-ab02-d57f76be72fc",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "RT-qPCR analysis at 7 and 14 dpf revealed differential expression of osteogenic markers. runx2 remained unchanged across timepoints, while bglap was downregulated in most crispants at both timepoints. col1a1a was upregulated in several crispants at 7 dpf, with patterns persisting or normalizing by 14 dpf. sp7 showed gene-specific changes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the molecular findings as valid. Reviewer 1 noted that 'the osteoblast-positive areas are more often affected in the crispants compared to the mineralized areas, an observation that appears to correlate with the observed reduced expression of bglap, a marker for mature osteoblasts, and the increased expression of col1a1a in more immature osteoblasts.' The correlation between phenotypic and molecular data was viewed positively, though reviewers noted caveats about interpretation related to genetic compensation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "b612b9fb-4fac-4f3e-a34c-4060a3ba4191",
+      "content_id": "3c70b7bd-9909-4d2e-ab02-d57f76be72fc",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "aldh7a1 and mbtps2 crispants displayed early lethality. aldh7a1 crispants showed increased mortality from 7 dpf with no survivors beyond 20 dpf, while mbtps2 crispants exhibited increased lethality from 17 dpf with very few surviving to adulthood. Surviving mbtps2 adults showed severe cranial malformations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these mortality findings without challenge. Reviewer 1 noted 'the injected fish (except two lines that revealed a high mortality) are also analyzed at 90dpf' and Reviewer 2 acknowledged 'two of the lines were larval-lethal.' The severe phenotypes leading to lethality were treated as valid observations supporting the functional importance of these genes.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7",
+      "content_id": "3c70b7bd-9909-4d2e-ab02-d57f76be72fc",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Adult crispants (90 dpf) showed no differences in standard length and head size, except esr1 crispants with larger eye diameters. All crispants except daam2 displayed vertebral abnormalities including fusions, fractures, and arch malformations. MicroCT analysis revealed altered centrum volume, TMD, thickness, and length in specific crispants, with daam2, esr1, and sost showing increased TMD.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly affirmed the adult skeletal phenotypes. Reviewer 1 stated the study 'makes a compelling case for using the crispant technology to screen the function of candidate genes' and noted 'increased incidence of skeletal deformities in the vertebral arches, fractures, as well as vertebral fusions and compressions.' Reviewer 2 emphasized 'Convincing data demonstrate the feasibility and validity of this approach.' The adult phenotypes were viewed as the most robust and reproducible findings, with Reviewer 3 noting 'a major strength of the paper is the streamlined method that produced significant phenotypes for all candidate genes tested.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "13155738-c5f2-4d1b-9667-6fde60d26843",
+      "content_id": "3c70b7bd-9909-4d2e-ab02-d57f76be72fc",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Skeletal malformations in crispants were reproducible across independent clutches, and all studied crispants exhibited skeletal abnormalities in adult stages, demonstrating the feasibility of the crispant approach for identifying genes implicated in skeletal disorders.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirmed the reproducibility and overall success of the approach. Reviewer 1 stated 'All my issues were resolved' and noted the manuscript 'makes a compelling case for using the crispant technology.' Reviewer 2 emphasized the study 'presents an important tool for rapid functional validation of candidate gene(s)' and noted 'Convincing data demonstrate the feasibility and validity of this approach.' The reproducibility across clutches strengthened confidence in the methodology.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "117e0e3b-1109-402f-9fa4-404d281063d8",
+      "content_id": "3c70b7bd-9909-4d2e-ab02-d57f76be72fc",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Ten candidate genes were selected for analysis: six genes associated with recessive osteogenesis imperfecta (CREB3L1, MBTPS2, SPARC, SERPINF1, IFITM5, SEC24D) and four genes associated with bone mineral density from GWAS studies (ALDH7A1, ESR1, DAAM2, SOST).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers accepted the gene selection rationale, Reviewer 3 raised concerns about incomplete characterization of gene features that might affect crispant phenotypes: 'do genes with maternally deposited transcript exhibit dampened phenotypes? Or does genetic compensation impact certain genes more than others? Since authors state that the study represents a methods paper, it will be important for users to understand the caveats of gene selection to effectively implement and interpret results of the approach.' This suggests the gene selection criteria and their implications were not fully addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "6af4ea0f-4a83-4805-ab5b-9ac015aca224",
+      "content_id": "3c70b7bd-9909-4d2e-ab02-d57f76be72fc",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The crispant approach offers advantages over stable lines including shorter generation time (~3 months vs 6-9 months). Previous studies demonstrated that crispants for lrp5, bmp1a, and plod2 showed phenotypic similarity to stable knockout or germline mutant lines.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the rationale and validation of the crispant approach based on prior work. Reviewer 1 noted 'this is done for some of the tested genes as laid out in the discussion' when addressing the lack of germline validation in the current study. The cited precedents were not challenged, supporting the methodological foundation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "0ac89f97-c579-47c9-a49d-d29b7535518e",
+      "result_id": "6c3e421d-4e25-4a69-a2e6-f1a78e0dcc52"
+    },
+    {
+      "claim_id": "31d445ad-0ad9-41a8-932a-50e261d33990",
+      "result_id": "6c3e421d-4e25-4a69-a2e6-f1a78e0dcc52"
+    },
+    {
+      "claim_id": "01b99fd0-f1e8-4268-a3ef-bc3b32c99f01",
+      "result_id": "6c3e421d-4e25-4a69-a2e6-f1a78e0dcc52"
+    },
+    {
+      "claim_id": "e403b4e4-aad9-4d5b-9b27-6949b8fcbdf9",
+      "result_id": "6c3e421d-4e25-4a69-a2e6-f1a78e0dcc52"
+    },
+    {
+      "claim_id": "c6a66e67-8e53-4d2f-a306-fcaaa0687a77",
+      "result_id": "5e8a0ea9-bff8-48aa-b4af-34ee46cf2328"
+    },
+    {
+      "claim_id": "fe4c495c-1377-486a-97d7-6377a96acbbe",
+      "result_id": "5e8a0ea9-bff8-48aa-b4af-34ee46cf2328"
+    },
+    {
+      "claim_id": "a4132126-6682-4789-96dd-611123a10b0b",
+      "result_id": "5e8a0ea9-bff8-48aa-b4af-34ee46cf2328"
+    },
+    {
+      "claim_id": "3266f80b-e33e-457b-9e67-e9b3308331bb",
+      "result_id": "5e8a0ea9-bff8-48aa-b4af-34ee46cf2328"
+    },
+    {
+      "claim_id": "665c62e6-337f-4627-aa32-a577f2eaef69",
+      "result_id": "5e8a0ea9-bff8-48aa-b4af-34ee46cf2328"
+    },
+    {
+      "claim_id": "9a684448-ed79-450e-a807-52ba6a2312fa",
+      "result_id": "5e8a0ea9-bff8-48aa-b4af-34ee46cf2328"
+    },
+    {
+      "claim_id": "53e6ea63-cd79-418d-ac9c-eae0c960432e",
+      "result_id": "cd297cf3-89c0-42b0-8b94-670aa9574635"
+    },
+    {
+      "claim_id": "3e49e3ed-6063-4c26-9798-d03b53189070",
+      "result_id": "cd297cf3-89c0-42b0-8b94-670aa9574635"
+    },
+    {
+      "claim_id": "a90fbb77-c406-4a6b-88f9-328abc31a7fb",
+      "result_id": "e1f32e60-ca47-4749-b752-da0c311c8b68"
+    },
+    {
+      "claim_id": "dd632b4a-fdbe-4bea-acba-208355f5ae22",
+      "result_id": "e1f32e60-ca47-4749-b752-da0c311c8b68"
+    },
+    {
+      "claim_id": "e180a59b-7682-4c3e-a51a-adb7dcb16a7d",
+      "result_id": "e1f32e60-ca47-4749-b752-da0c311c8b68"
+    },
+    {
+      "claim_id": "29f76afb-918b-4fc8-b8b5-2ef186774672",
+      "result_id": "e1f32e60-ca47-4749-b752-da0c311c8b68"
+    },
+    {
+      "claim_id": "b5451c3d-3440-4193-ada3-fdd9db67b925",
+      "result_id": "2c15216b-0834-49f1-9248-72a39a779290"
+    },
+    {
+      "claim_id": "eb5ab580-773e-46c0-b065-e91c1fe6907f",
+      "result_id": "2c15216b-0834-49f1-9248-72a39a779290"
+    },
+    {
+      "claim_id": "a56c47a2-037b-4228-84f9-2c8d89606a36",
+      "result_id": "2c15216b-0834-49f1-9248-72a39a779290"
+    },
+    {
+      "claim_id": "ab406ee0-048e-495f-a597-3404740f94b0",
+      "result_id": "2c15216b-0834-49f1-9248-72a39a779290"
+    },
+    {
+      "claim_id": "d50f2fc6-47c1-4781-8a3d-20191ae661fb",
+      "result_id": "2c15216b-0834-49f1-9248-72a39a779290"
+    },
+    {
+      "claim_id": "67971649-e6bb-4a90-94dd-52dbcdbbafd6",
+      "result_id": "2c15216b-0834-49f1-9248-72a39a779290"
+    },
+    {
+      "claim_id": "c0c8a991-49e0-4f2f-a68c-822cdd047d3f",
+      "result_id": "2c15216b-0834-49f1-9248-72a39a779290"
+    },
+    {
+      "claim_id": "5c9ecac5-440b-483f-b2b8-d87ce3b2d116",
+      "result_id": "2c15216b-0834-49f1-9248-72a39a779290"
+    },
+    {
+      "claim_id": "a6362be2-5211-4c7b-9b82-5693c98a84b8",
+      "result_id": "13454a9c-f0cc-4d63-881d-233aff672b50"
+    },
+    {
+      "claim_id": "c333046e-dc44-4e8b-ab9c-4d54673ea474",
+      "result_id": "13454a9c-f0cc-4d63-881d-233aff672b50"
+    },
+    {
+      "claim_id": "1a686e15-e45d-4135-a81d-42b9196eaf49",
+      "result_id": "13454a9c-f0cc-4d63-881d-233aff672b50"
+    },
+    {
+      "claim_id": "33d7a859-4a40-4629-b2f2-079c5d2fcb3b",
+      "result_id": "13454a9c-f0cc-4d63-881d-233aff672b50"
+    },
+    {
+      "claim_id": "1a7213b5-cf33-4f1d-b7e9-0072281e37c2",
+      "result_id": "3d218672-e426-42d9-a9b3-9515e4f73a9a"
+    },
+    {
+      "claim_id": "1c2659e4-9a1c-4cdf-9fe1-d4af8fbd436a",
+      "result_id": "3d218672-e426-42d9-a9b3-9515e4f73a9a"
+    },
+    {
+      "claim_id": "ad87d962-66d1-4a3f-876c-36732b575caf",
+      "result_id": "3d218672-e426-42d9-a9b3-9515e4f73a9a"
+    },
+    {
+      "claim_id": "58bcc505-2903-46b8-ad3a-84730c7eb12c",
+      "result_id": "3d218672-e426-42d9-a9b3-9515e4f73a9a"
+    },
+    {
+      "claim_id": "769aba87-d20b-4a82-89ec-e4cb89ec915f",
+      "result_id": "c3536e36-4d58-4bf3-981a-a222b225d938"
+    },
+    {
+      "claim_id": "f533bda0-f85c-4a0b-8c2a-6ef45cbd4129",
+      "result_id": "c3536e36-4d58-4bf3-981a-a222b225d938"
+    },
+    {
+      "claim_id": "4e1fc9c9-a702-4466-8017-bb8e87b3bac5",
+      "result_id": "c3536e36-4d58-4bf3-981a-a222b225d938"
+    },
+    {
+      "claim_id": "c1bd7ea2-6663-4211-88cf-a5aa6213020e",
+      "result_id": "c3536e36-4d58-4bf3-981a-a222b225d938"
+    },
+    {
+      "claim_id": "2f541d5a-5000-4f61-86c6-5e1012a05440",
+      "result_id": "4cdc999d-8650-41d8-b79b-5a1de43e0811"
+    },
+    {
+      "claim_id": "a56c47a2-037b-4228-84f9-2c8d89606a36",
+      "result_id": "4cdc999d-8650-41d8-b79b-5a1de43e0811"
+    },
+    {
+      "claim_id": "ab406ee0-048e-495f-a597-3404740f94b0",
+      "result_id": "4cdc999d-8650-41d8-b79b-5a1de43e0811"
+    },
+    {
+      "claim_id": "c0c8a991-49e0-4f2f-a68c-822cdd047d3f",
+      "result_id": "4cdc999d-8650-41d8-b79b-5a1de43e0811"
+    },
+    {
+      "claim_id": "5c9ecac5-440b-483f-b2b8-d87ce3b2d116",
+      "result_id": "4cdc999d-8650-41d8-b79b-5a1de43e0811"
+    },
+    {
+      "claim_id": "69f9a037-2850-4815-b6d0-2cf3a601b92e",
+      "result_id": "9e9e7dae-2a4c-4681-8469-d25e23e46f41"
+    },
+    {
+      "claim_id": "8cf245aa-abec-4275-a6bf-9cc07b4934a4",
+      "result_id": "9e9e7dae-2a4c-4681-8469-d25e23e46f41"
+    },
+    {
+      "claim_id": "39aee015-e8a0-47bd-bfd4-6f042814566d",
+      "result_id": "6c236f96-9939-489e-987a-53fdae9d7feb"
+    },
+    {
+      "claim_id": "7c84a8f7-0136-44cf-9375-69490485ca70",
+      "result_id": "6c236f96-9939-489e-987a-53fdae9d7feb"
+    },
+    {
+      "claim_id": "5e5bd067-a7cf-42a4-ac2e-643b6d2775ed",
+      "result_id": "6c236f96-9939-489e-987a-53fdae9d7feb"
+    },
+    {
+      "claim_id": "e1fe3e5a-69ab-4af3-96e9-63ef2e3a5854",
+      "result_id": "6c236f96-9939-489e-987a-53fdae9d7feb"
+    },
+    {
+      "claim_id": "1f765339-8153-44ee-8f74-ef6b321586b2",
+      "result_id": "6c236f96-9939-489e-987a-53fdae9d7feb"
+    },
+    {
+      "claim_id": "ec789568-2c83-4089-9c51-e54b5f588c03",
+      "result_id": "6c236f96-9939-489e-987a-53fdae9d7feb"
+    },
+    {
+      "claim_id": "e13f38ed-c532-4482-8869-c5b3da19e333",
+      "result_id": "4e873f59-29b9-4c98-8b41-9a11c19ac82c"
+    },
+    {
+      "claim_id": "779b58b3-11d6-45dd-b37d-ae24a0981ef0",
+      "result_id": "4e873f59-29b9-4c98-8b41-9a11c19ac82c"
+    },
+    {
+      "claim_id": "17f0c708-6119-4b3d-838a-413ff8160c98",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "357ef87e-ee61-4cc4-a03f-05b6383c6b5c",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "48c3ad41-3232-4992-9b69-1b8bb266354c",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "898a1995-aa3a-49d3-9dea-849e9b68c4ba",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "ca720fca-197a-4d11-82ad-3d72db5bdbff",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "7ac60089-c75c-49c2-857f-eb55c32cfb99",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "0f285efe-2e36-4fb4-93a6-3ba1d0694871",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "e241b3b2-df98-427a-adf8-76ae513b1675",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "2feb9bad-effd-45b4-9243-6b88ab0adb83",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "790ef977-803a-4d85-81f3-42dc7fb20775",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "3bb1ed5f-c95c-4af6-89ce-84ae303b3b3c",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "871c61c0-1f5a-4d17-a4b0-21e63f3074ef",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "60e038f5-2db2-4811-9d75-517b12e4713c",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "fa74d2c1-2713-4a61-91bf-7fb8e2255513",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "314b6149-3756-4904-a046-0d716428a0b3",
+      "result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed"
+    },
+    {
+      "claim_id": "bb8c57a8-638c-44fa-9709-e38b3b8fa02b",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "dc77d250-8058-40b2-a9aa-77bd819bc1cc",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "f41f560f-089f-45ae-acc8-d2fbdec5d5dc",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "06a71887-7e95-4e3f-81f7-b91bbfc9a645",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "31bbc798-8ba3-49e8-9e5c-6433a8e0c42d",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "e575e63b-77b0-4446-8ecf-18049d419527",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "b19875a6-df0b-4b00-bc2a-8197514646ee",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "9fe174fd-8e41-4619-8bcb-24f02624deb1",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "0bda9e33-bd10-40f3-b166-ec84a7b2054d",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "92f939c2-d628-44b6-a28c-0135e69008f4",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "9412b952-b586-45c6-a5d9-2bf781d50042",
+      "result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb"
+    },
+    {
+      "claim_id": "c6a66e67-8e53-4d2f-a306-fcaaa0687a77",
+      "result_id": "13c4926d-8b7e-4006-952d-20ba6bd1af2b"
+    },
+    {
+      "claim_id": "fe4c495c-1377-486a-97d7-6377a96acbbe",
+      "result_id": "13c4926d-8b7e-4006-952d-20ba6bd1af2b"
+    },
+    {
+      "claim_id": "a4132126-6682-4789-96dd-611123a10b0b",
+      "result_id": "13c4926d-8b7e-4006-952d-20ba6bd1af2b"
+    },
+    {
+      "claim_id": "3266f80b-e33e-457b-9e67-e9b3308331bb",
+      "result_id": "13c4926d-8b7e-4006-952d-20ba6bd1af2b"
+    },
+    {
+      "claim_id": "665c62e6-337f-4627-aa32-a577f2eaef69",
+      "result_id": "13c4926d-8b7e-4006-952d-20ba6bd1af2b"
+    },
+    {
+      "claim_id": "9a684448-ed79-450e-a807-52ba6a2312fa",
+      "result_id": "13c4926d-8b7e-4006-952d-20ba6bd1af2b"
+    },
+    {
+      "claim_id": "53e6ea63-cd79-418d-ac9c-eae0c960432e",
+      "result_id": "a6aa84ff-f106-4f65-af2a-71a298007bd5"
+    },
+    {
+      "claim_id": "3e49e3ed-6063-4c26-9798-d03b53189070",
+      "result_id": "a6aa84ff-f106-4f65-af2a-71a298007bd5"
+    },
+    {
+      "claim_id": "a90fbb77-c406-4a6b-88f9-328abc31a7fb",
+      "result_id": "a6aa84ff-f106-4f65-af2a-71a298007bd5"
+    },
+    {
+      "claim_id": "dd632b4a-fdbe-4bea-acba-208355f5ae22",
+      "result_id": "a6aa84ff-f106-4f65-af2a-71a298007bd5"
+    },
+    {
+      "claim_id": "e180a59b-7682-4c3e-a51a-adb7dcb16a7d",
+      "result_id": "a6aa84ff-f106-4f65-af2a-71a298007bd5"
+    },
+    {
+      "claim_id": "29f76afb-918b-4fc8-b8b5-2ef186774672",
+      "result_id": "a6aa84ff-f106-4f65-af2a-71a298007bd5"
+    },
+    {
+      "claim_id": "b5451c3d-3440-4193-ada3-fdd9db67b925",
+      "result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea"
+    },
+    {
+      "claim_id": "eb5ab580-773e-46c0-b065-e91c1fe6907f",
+      "result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea"
+    },
+    {
+      "claim_id": "a56c47a2-037b-4228-84f9-2c8d89606a36",
+      "result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea"
+    },
+    {
+      "claim_id": "ab406ee0-048e-495f-a597-3404740f94b0",
+      "result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea"
+    },
+    {
+      "claim_id": "d50f2fc6-47c1-4781-8a3d-20191ae661fb",
+      "result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea"
+    },
+    {
+      "claim_id": "67971649-e6bb-4a90-94dd-52dbcdbbafd6",
+      "result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea"
+    },
+    {
+      "claim_id": "c0c8a991-49e0-4f2f-a68c-822cdd047d3f",
+      "result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea"
+    },
+    {
+      "claim_id": "5c9ecac5-440b-483f-b2b8-d87ce3b2d116",
+      "result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea"
+    },
+    {
+      "claim_id": "a6362be2-5211-4c7b-9b82-5693c98a84b8",
+      "result_id": "b612b9fb-4fac-4f3e-a34c-4060a3ba4191"
+    },
+    {
+      "claim_id": "c333046e-dc44-4e8b-ab9c-4d54673ea474",
+      "result_id": "b612b9fb-4fac-4f3e-a34c-4060a3ba4191"
+    },
+    {
+      "claim_id": "1a686e15-e45d-4135-a81d-42b9196eaf49",
+      "result_id": "b612b9fb-4fac-4f3e-a34c-4060a3ba4191"
+    },
+    {
+      "claim_id": "33d7a859-4a40-4629-b2f2-079c5d2fcb3b",
+      "result_id": "b612b9fb-4fac-4f3e-a34c-4060a3ba4191"
+    },
+    {
+      "claim_id": "1a7213b5-cf33-4f1d-b7e9-0072281e37c2",
+      "result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7"
+    },
+    {
+      "claim_id": "1c2659e4-9a1c-4cdf-9fe1-d4af8fbd436a",
+      "result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7"
+    },
+    {
+      "claim_id": "ad87d962-66d1-4a3f-876c-36732b575caf",
+      "result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7"
+    },
+    {
+      "claim_id": "58bcc505-2903-46b8-ad3a-84730c7eb12c",
+      "result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7"
+    },
+    {
+      "claim_id": "769aba87-d20b-4a82-89ec-e4cb89ec915f",
+      "result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7"
+    },
+    {
+      "claim_id": "f533bda0-f85c-4a0b-8c2a-6ef45cbd4129",
+      "result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7"
+    },
+    {
+      "claim_id": "4e1fc9c9-a702-4466-8017-bb8e87b3bac5",
+      "result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7"
+    },
+    {
+      "claim_id": "c1bd7ea2-6663-4211-88cf-a5aa6213020e",
+      "result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7"
+    },
+    {
+      "claim_id": "69f9a037-2850-4815-b6d0-2cf3a601b92e",
+      "result_id": "13155738-c5f2-4d1b-9667-6fde60d26843"
+    },
+    {
+      "claim_id": "8cf245aa-abec-4275-a6bf-9cc07b4934a4",
+      "result_id": "13155738-c5f2-4d1b-9667-6fde60d26843"
+    },
+    {
+      "claim_id": "0ac89f97-c579-47c9-a49d-d29b7535518e",
+      "result_id": "117e0e3b-1109-402f-9fa4-404d281063d8"
+    },
+    {
+      "claim_id": "31d445ad-0ad9-41a8-932a-50e261d33990",
+      "result_id": "117e0e3b-1109-402f-9fa4-404d281063d8"
+    },
+    {
+      "claim_id": "01b99fd0-f1e8-4268-a3ef-bc3b32c99f01",
+      "result_id": "117e0e3b-1109-402f-9fa4-404d281063d8"
+    },
+    {
+      "claim_id": "e403b4e4-aad9-4d5b-9b27-6949b8fcbdf9",
+      "result_id": "117e0e3b-1109-402f-9fa4-404d281063d8"
+    },
+    {
+      "claim_id": "0bda9e33-bd10-40f3-b166-ec84a7b2054d",
+      "result_id": "6af4ea0f-4a83-4805-ab5b-9ac015aca224"
+    },
+    {
+      "claim_id": "92f939c2-d628-44b6-a28c-0135e69008f4",
+      "result_id": "6af4ea0f-4a83-4805-ab5b-9ac015aca224"
+    },
+    {
+      "claim_id": "9412b952-b586-45c6-a5d9-2bf781d50042",
+      "result_id": "6af4ea0f-4a83-4805-ab5b-9ac015aca224"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "95c7e438-f3b7-4861-a775-32628a240184",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "5e8a0ea9-bff8-48aa-b4af-34ee46cf2328",
+      "peer_result_id": "13c4926d-8b7e-4006-952d-20ba6bd1af2b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the NGS validation and CRISPR mutagenic efficacy (C4, C21-C25) and reach the same SUPPORTED conclusion. OpenEval emphasizes quantitative metrics and off-target analysis, while peer reviewers highlight the 60-92% inactivation rates. Complete agreement on technical validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "eb854948-fdc9-48df-821c-f71ffe959c90",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "6c3e421d-4e25-4a69-a2e6-f1a78e0dcc52",
+      "peer_result_id": "117e0e3b-1109-402f-9fa4-404d281063d8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address gene selection criteria (C2, C3, C19, C20). OpenEval finds the selection well-justified and SUPPORTED, while peer reviewers rate it UNCERTAIN, raising concerns about incomplete characterization of gene features (maternal transcripts, genetic compensation) that could affect crispant phenotypes and interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "c60c6bc8-7668-466e-bbf8-241afa8bdeae",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2c15216b-0834-49f1-9248-72a39a779290",
+      "peer_result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate RT-qPCR gene expression findings (C32-C39) and reach SUPPORTED conclusions. OpenEval notes appropriate statistical methods and consistent patterns, while peer reviewers emphasize correlation between molecular and phenotypic data. Both acknowledge caveats about whole-body samples and genetic compensation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "a8eccb81-6729-46b9-85bd-affd23016700",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "13454a9c-f0cc-4d63-881d-233aff672b50",
+      "peer_result_id": "b612b9fb-4fac-4f3e-a34c-4060a3ba4191",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both assess survival/lethality phenotypes (C40-C43) and reach SUPPORTED conclusions. OpenEval describes severe lethality as important functional validation, while peer reviewers accept mortality findings without challenge, treating them as valid observations of gene functional importance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "6dc83dff-9486-443b-915a-4cff56650672",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "9e9e7dae-2a4c-4681-8469-d25e23e46f41",
+      "peer_result_id": "13155738-c5f2-4d1b-9667-6fde60d26843",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate overall reproducibility and platform success (C60, C61) with SUPPORTED conclusions. OpenEval emphasizes reproducibility across clutches and universal adult phenotypes, while peer reviewers strongly affirm the approach as compelling and feasible with convincing data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "566d77a5-01e4-4bce-a6b5-55cc9f014828",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "cd297cf3-89c0-42b0-8b94-670aa9574635",
+      "peer_result_id": "a6aa84ff-f106-4f65-af2a-71a298007bd5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address larval osteoblast imaging (C26, C27), but peer result R2 also includes mineralization data (C28-C31). OpenEval rates findings SUPPORTED with adequate statistical power, while peer reviewers rate UNCERTAIN due to lack of body size normalization and high variability affecting interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "2b6b7a15-b366-406b-a478-70104ada54d1",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "e1f32e60-ca47-4749-b752-da0c311c8b68",
+      "peer_result_id": "a6aa84ff-f106-4f65-af2a-71a298007bd5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R4 addresses mineralization findings (C28-C31) rating them SUPPORTED despite acknowledged high variability. Peer R2 covers these same claims plus osteoblast data (C26, C27) but rates UNCERTAIN due to normalization concerns and variability, showing disagreement on confidence level for larval phenotypes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "cb8445a8-0b58-41bc-b38d-c687fea7babc",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "3d218672-e426-42d9-a9b3-9515e4f73a9a",
+      "peer_result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address adult morphological observations (C44-C47). OpenEval rates SUPPORTED but notes lack of statistical testing for qualitative observations limits conclusions. Peer R5 also covers microCT data (C48-C51) and rates all adult phenotypes SUPPORTED, viewing them as the most robust findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "9433ba3f-0230-4ecc-a75e-fe4d76d7b8a1",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "c3536e36-4d58-4bf3-981a-a222b225d938",
+      "peer_result_id": "8fc8bd6e-fc1e-4ff2-8fa2-b43a1d9f82a7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R8 addresses microCT findings (C48-C51) rating them SUPPORTED with appropriate quantitative analysis. Peer R5 covers these claims along with morphological data (C44-C47) and strongly affirms adult skeletal phenotypes as SUPPORTED, emphasizing them as the most convincing and reproducible results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "76b51910-ac77-4138-9758-e231c817f502",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "4cdc999d-8650-41d8-b79b-5a1de43e0811",
+      "peer_result_id": "204774e0-c0fd-4a81-9e0d-8947a12109ea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R9 synthesizes RT-qPCR findings (C8, C34, C35, C38, C39) focusing on biomarker potential and rates SUPPORTED. Peer R3 covers the broader gene expression dataset (C32-C39) also rating SUPPORTED. Both note the correlation between molecular and phenotypic data, with overlapping claims showing agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "2797d5bb-5756-4787-8d22-40fcf7d5be84",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "ce376b56-e6eb-452d-8230-ee700a1cdcbb",
+      "peer_result_id": "6af4ea0f-4a83-4805-ab5b-9ac015aca224",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address background literature and crispant validation precedents (C16, C17, C18). OpenEval R14 covers broader background (C1, C9-C18) rating all SUPPORTED. Peer R8 focuses on prior crispant validation and rates SUPPORTED, accepting the methodological foundation without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "22d087a8-9d34-45f4-8841-d045fdc58f58",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "6c236f96-9939-489e-987a-53fdae9d7feb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R11 evaluates literature citations contextualizing findings (C52-C57) and rates SUPPORTED, noting these are supporting citations rather than novel findings. No corresponding peer review evaluation specifically addresses these literature comparison claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "d1c3636e-cc86-4f3d-a8ae-b3b74c802707",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "4e873f59-29b9-4c98-8b41-9a11c19ac82c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R12 addresses genetic compensation mechanisms (C58, C59) and rates UNCERTAIN due to lack of direct experimental evidence. While peer reviewers mention genetic compensation as a caveat in R3 and R7, no specific peer result focuses on evaluating these mechanistic claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    },
+    {
+      "id": "fb322204-ad91-47c8-9315-beadbdbcc667",
+      "submission_id": "995b5420-381c-4c2d-a570-e3a50b56b620",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "f5470e47-af34-423b-ae36-0ee39132b4ed",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R13 evaluates comprehensive methodological details (C62-C76) rating them SUPPORTED with appropriate protocols and statistical approaches. Peer reviewers discuss specific methodological concerns (e.g., normalization in R2) but no peer result systematically evaluates the full methods claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:13.491634Z"
+    }
+  ]
+}

@@ -1,0 +1,422 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The study generated four new high-quality, chromosome-level chiton genome assemblies (Deshayesiella sirenkoi, Callochiton septemvalvis, Acanthochitona discrepans, and A. rubrolineata) covering all three taxonomic orders of living chitons, using PacBio HiFi sequencing and Hi-C scaffolding. The assemblies achieved >97% BUSCO completeness (94% for C. septemvalvis) with chromosome numbers ranging from 8 to 13 across genera.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41-C51, and C134-C142 collectively describe the genomic data generation and quality metrics. The methods are clearly described with appropriate tools (PacBio HiFi, Hi-C, hifiasm, etc.), quality control steps (contamination removal, haplotig purging), and the resulting assemblies show high BUSCO completeness scores indicating good quality. The taxonomic coverage across all three chiton orders is documented with specimen collection locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Chiton species exhibit exceptionally high levels of heterozygosity, ranging from ~1% in Deshayesiella to 4.12% in Callochiton, with the latter exceeding the 2.95% reported as 'one of the highest' for Lepidoptera. This high heterozygosity is common in molluscs and presents challenges for genome assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C120-C122 are supported by the genomic data presented (Figure 1, Appendix 1\u2014figure 2) and comparative citation to Lepidoptera. The heterozygosity measurements are direct observations from the genome assemblies, and the comparison to Lepidoptera provides appropriate context. The statement about assembly challenges is well-established in genomics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Phylogenetic analysis using 58 mollusc genomes/transcriptomes and 4 additional metazoans confirms chitons as sister to monophyletic Conchifera and recovers the expected topology within Polyplacophora consistent with recent genomic and morphological studies. Within Conchifera, the topology confirms recent studies, though supplementary analyses recovered Scaphopoda sister to Gastropoda with lower support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C53-C56, and C143-C145 describe the phylogenetic analysis and results. The methods are appropriate (VEHoP for ortholog identification, IQ-TREE with model selection and bootstrapping), and the results are shown in Figure 2 and Appendix 1\u2014figure 3. The findings are consistent with prior work (cited), and the authors appropriately note lower support for alternative topologies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C57",
+      "C146",
+      "C147"
+    ],
+    "result": "The study reconstructed 20 ancient molluscan linkage groups (MLGs) based on 4,729 homologous genes identified across seven chromosome-level mollusc assemblies (one gastropod, one bivalve, and five chitons), representing the ancestral molluscan genome architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C57, C146-C147 describe the MLG reconstruction methodology and results. The approach is clearly described with specific numbers of genes (4,729 homologs) and genomes analyzed (7 assemblies). The results are visualized in Figure 2 and other figures. The reconstruction method follows established comparative genomic approaches for ancestral karyotype inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Molluscan linkage groups are relatively conserved in bivalve karyotypes, with species in the ancient clade Imparadentia (divergence ~430 Mya) showing almost no syntenic rearrangement despite being >150 My older than crown group Polyplacophora. Even in Pteriomorphia (origin ~485 Mya), members of Arcida and Pectinida show high similarity, though cultivated Ostreida species differ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C94-C100 describe the conservation of MLGs in bivalves with specific examples and divergence times from cited sources. The findings are shown in Appendix 1\u2014figures 7 and 8. The comparison provides important context for the chiton results by demonstrating that high rates of rearrangement are not universal in molluscs or simply a function of divergence time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C64",
+      "C65",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "In chitons, molluscan linkage groups are subject to extensive re-ordering, rearrangement, fusion, and partial duplication, varying even between congeneric species. Three fusion events (MLG 4+16+18, MLG 7+10, and MLG 8+9) are synapomorphies for Polyplacophora, but additional fusions and rearrangements differ in every species sampled. Chitons exhibit chromosome rearrangements at an almost unprecedented level, with changes found both within genera and across orders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C58-C59, C64-C65, and C129-C131 describe the extreme genomic rearrangement in chitons. The evidence is presented in Figures 3 and 4 and multiple appendix figures showing ancestral karyotype reconstructions and species-specific arrangements. The three synapomorphic fusions are clearly identified, and the variation across all taxonomic levels is documented. The characterization as 'almost unprecedented' is supported by comparisons to other animal groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The largest number of novel fusions (three) among chiton genomes occurs in the lepidopleuran Deshayesiella, representing the most plesiomorphic clade with a deep fossil record extending to the lower Carboniferous. This finding contradicts the expectation that gene arrangement would be relatively conserved in morphologically plesiomorphic lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C71-C74 describe the unexpected finding of maximum genomic rearrangement in the most morphologically conservative clade. The data are shown in Figure 4A, and the morphological and paleontological context is supported by citations (Ampuero et al., 2024; Sigwart, 2017). This represents a key finding that challenges assumptions about the relationship between morphological and genomic conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Within the genus Acanthochitona (divergence ~23 My), A. discrepans and A. rubrolineata each have eight haploid chromosomes resulting from two different fusions, while A. crinita has nine chromosomes\u2014representing three different syntenic arrangements within a single genus of morphologically and ecologically similar species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 document extreme genomic variation within a single genus over a relatively short evolutionary timeframe. The genomic data for A. discrepans and A. rubrolineata are from this study (Figures 1 and 4C), while data for A. crinita come from cited karyotype studies (Certain, 1951). The correction of previous misidentification (C68, supported by Von\u010dina et al., 2023) strengthens the reliability of the comparison. The divergence time is supported by fossil evidence (Dell'Angelo et al., 2020).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C76",
+      "C77",
+      "C109",
+      "C110"
+    ],
+    "result": "The chitonid Liolophura japonica has a partial genome duplication involving two linkage groups that were apparently fused first and then duplicated, extending the occurrence of large-scale gene duplication within Mollusca. This is most likely a duplication rather than fission given the conservation of MLG content across chitons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C76-C77, and C109-C110 describe the partial genome duplication in L. japonica. The evidence is shown in Figures 2 and 4B, and the inference that this represents duplication rather than fission (C110) is logically supported by the pattern of MLG conservation shown in Appendix 1\u2014figure 4. This finding adds chitons to the list of molluscan classes with documented genome duplications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "The study provides the first chromosome count data for a species in Lepidopleurida (Deshayesiella sirenkoi, 1n=11), which falls within the established range for Chitonida.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 represents a novel empirical finding from the genome assembly. The chromosome count is directly observable from the assembly (Figure 1), and the comparison to the known range for Chitonida (C60-C62, from cited sources) provides appropriate context. This is the first genomic data for this order.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Ancestral karyotype reconstruction shows no differences in arrangement between the ancestor of Chitonida sensu stricto and Chitonida sensu lato. The four species in Chitonida s.l. share a large fused chromosome (MLG 01+04+16+18), with part of this pattern (MLG 04+16+18) originating in the ancestral chiton karyotype and retained in lepidopleuran Deshayesiella.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 describe specific findings from ancestral state reconstruction. The evidence is presented in the genomic data and figures showing chromosome arrangements. The identification of shared fusions and their evolutionary origins is a direct result of the comparative analysis. The finding that Chitonida s.s. and s.l. ancestors are identical in arrangement is notable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The pattern of MLG conservation and rearrangement implies variable rates of intra-chromosomal rearrangement. The smallest two MLGs are most conserved across chiton genomes, with MLG20 being the only group remaining separate in all bivalve and chiton taxa. MLG20 is not duplicated in partial genome duplications in Neogastropoda but is duplicated in whole genome duplication in hermaphroditic terrestrial gastropods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C101-C104 describe patterns of differential MLG mobility and conservation. The data are presented in comparative genomic analyses (Figure 5, Appendix 1\u2014figure 5). The observation about MLG20 conservation is particularly interesting and suggests potential functional constraints. The duplication patterns in different gastropod lineages are documented in the genomic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C111"
+    ],
+    "result": "Earlier models predicted three whole genome duplication events in molluscs (Neogastropoda, Stylommatophora, coleoid cephalopods). Available genomes confirm whole genome duplication in Stylommatophora and large-scale gene duplications in Neogastropoda. In Nautilus, the hox-containing linkage group (MLG16) shows no co-occurrence with other MLGs. Whole or partial genome duplication is now known from four molluscan classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108, C111 synthesize findings about genome duplications across Mollusca. The confirmation of previous predictions (C105) with genomic data (C106-C107, shown in Appendix 1\u2014figure 6) strengthens confidence in the approach. The Nautilus finding (C108) is notable as it differs from the pattern in coleoid cephalopods. The synthesis (C111, Figure 5) provides important phylogenetic context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C148"
+    ],
+    "result": "Syntenic changes do not necessarily follow overall rates of translocation, which do not differ obviously among molluscs based on analysis of 25 genomes from four classes (2 scaphopods, 5 chitons, 8 bivalves, 10 gastropods) comparing non-syntenic rate of change divided by estimated divergence time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114 and C148 describe the translocation rate analysis. The methods are clearly described (C148), and the results are provided in Supplementary file 1, table S5. This finding is important because it shows that the extreme syntenic rearrangement in chitons is not simply due to higher overall translocation rates, suggesting different mechanisms or constraints are at play.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C126",
+      "C133"
+    ],
+    "result": "The extreme and dynamic genome rearrangements in chitons stand in contrast to most other animals, demonstrating that chitons have overcome evolutionary constraints acting on other animal groups. The apparently conservative phenome of chitons belies rapid and extensive genomic changes, with chitons being apparently equally variable to Lepidoptera as demonstrated through genetic rearrangement. This relationship provides new insights into potential mechanisms for speciation and diversification within Mollusca.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11, C126, and C133 represent the major conclusions of the study. These are well-supported by the extensive genomic data showing extreme rearrangement in chitons (C5, C58-C59, C65, C129-C131) contrasted with conservation in bivalves (C4, C94-C100) and the morphological conservation in chitons (C1, C23, C30). The comparison to Lepidoptera (C126) is supported by the genomic data and provides an interesting parallel. The implications for understanding speciation mechanisms (C133) are reasonable inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Changes in chromosome numbers are hypothesized to be an important driver of Lepidoptera diversification, with strong correlation between rates of chromosome number changes and speciation. This instability has been confirmed in genomic data and encompasses both neutral and adaptive evolution. However, the level of rearrangement in Lepidoptera may be less than in Polyplacophora.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 provide comparative context from Lepidoptera. The statements about Lepidoptera are supported by appropriate citations (de Vos et al., 2020; Chen et al., 2019; Lucek, 2018; Vershinina and Lukhtanov, 2017). The comparison to chitons (C87) is a reasonable inference based on the genomic data presented, though it is appropriately stated as tentative ('may be less').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Robertsonian translocations occur in ~1 out of 1000 live human births and have been speculated to explain chromosome loss in chitons. However, simple Robertsonian translocation is insufficient to explain several complex intrachromosomal rearrangements observed in chitons. While chromosome fusion does not present immediate reproductive barriers, chromosome rearrangements between sister species can act as Dobzhansky-Muller incompatibilities and generate reproductive isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 discuss mechanisms of chromosome rearrangement and their evolutionary consequences. The statements are supported by appropriate citations (Wilch and Morton, 2018; Odierna et al., 2008; de Vos et al., 2020). The observation that simple Robertsonian translocation is insufficient (C90) is supported by the complex rearrangement patterns shown in the genomic data (e.g., Figure 4, MLG 7+10). The discussion of reproductive isolation mechanisms is well-grounded in evolutionary genetics theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C40",
+      "C93",
+      "C118"
+    ],
+    "result": "Chromosome rearrangement presents an attractive speculative explanation for maintaining species boundaries in chitons, and chromosomal barriers may be speculatively advantageous for broadcast spawners. Fusion events may be more common in more recently derived chitons or connected to specific adaptations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40, C93, and C118 are explicitly labeled as speculation by the authors. While the speculation is reasonable given the data (chromosome variation between closely related species, broadcast spawning reproductive mode), these remain hypotheses that would require additional evidence to support. The authors appropriately present these as speculative ideas rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C22",
+      "C23",
+      "C25",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Chitons retain a body plan and general morphology apparently little changed since the Palaeozoic, with over 1000 living species possessing an eight-part shell armor unchanged since the Carboniferous (>300 Mya). Despite this morphological conservation, chitons have distinctive adaptations including fully innervated shells, iron-mineralized radula, and distribution across almost all bathymetric depths and latitudes. Species richness in chitons exceeds that of more morphologically diverse extant cephalopods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12, C22-C23, C25, C27-C30 establish the morphological and ecological context for chitons. These are well-established facts supported by appropriate citations (Sigwart, 2017; Wanninger and Wollesen, 2019) and general knowledge of molluscan diversity. The contrast between morphological conservation and species richness sets up the central paradox that the genomic data help explain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C112",
+      "C113",
+      "C115",
+      "C116"
+    ],
+    "result": "Despite molluscs playing a key role in early cytogenetic research, the phylum has lagged in genomic coverage. Prior work assumed constant rates of intra-chromosomal translocation within major groups, suggesting syntenic rearrangement could be a clocklike indicator of divergence times, but rates are not well known in molluscs and higher rates confound ancestral state reconstruction. Reconstructing genome evolution is more difficult for groups with high rearrangement rates, though synteny should persist longer than gene order. A focus on linkage group arrangements is promising for resolving deep molluscan phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21, C112-C113, C115-C116 establish the scientific context and rationale for the study. The statements about the state of molluscan genomics (C15) and assumptions about translocation rates (C17-C18) are supported by citations (Chen et al., 2025; Mackintosh et al., 2023). The challenges and opportunities discussed (C19-C21, C112-C113, C115-C116) are well-grounded in the literature (Farr\u00e9 et al., 2019; Muffato et al., 2023; Damas et al., 2022; Simakov et al., 2022) and provide appropriate framing for the study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C26",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The adaptations driving speciation in chitons remain an open question. Chitons are grazers, mostly not highly ecologically specialized, have separate sexes, are broadcast spawners, are not migratory, and cannot reasonably be subject to strong sexual selection. Many similar species co-occur in parapatric or sympatric radiations. Previously published karyotype data shows closely related species with overlapping ranges can have different chromosome numbers (e.g., A. discrepans 1n=8, A. crinita 1n=9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C31-C39 establish the biological and ecological context for chitons that makes chromosome rearrangement an attractive hypothesis for speciation. The biological characteristics are supported by appropriate citations (Sigwart and Schwabe, 2017; Kelly and Eernisse, 2008; Certain, 1951). The statement that speciation mechanisms remain unclear (C26) is honest about the state of knowledge and motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C75"
+    ],
+    "result": "Callochitonida is sister to Chitonida, and together these comprise two sister clades recognized as separate orders that could be considered Chitonida sensu lato.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 and C75 describe the phylogenetic relationships within chitons. These are supported by citation to Moles et al., 2021 and confirmed by the phylogenetic analysis in this study (C53-C54, Figure 2). The taxonomic interpretation is reasonable and clearly explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Previous work demonstrated variability in chiton karyotypes, with species in Chitonida having reported haploid numbers ranging from 6 to 16 with a mode of 11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 summarize prior karyotype data from the literature, supported by citations to Odierna et al., 2008 and Hallinan and Lindberg, 2011. This provides important context for interpreting the new genomic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C119",
+      "C123"
+    ],
+    "result": "The relatively small number of reference quality genomes for most molluscan groups is a temporary limitation to these analyses. Large-scale analyses based on genomics are equivocal about the drivers of genetic diversity, and further data from diverse clades must be included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119 and C123 acknowledge limitations and the need for additional data. These are honest assessments of the current state of the field and appropriate caveats for the study's conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C24",
+      "C117",
+      "C124",
+      "C125",
+      "C127",
+      "C128",
+      "C132"
+    ],
+    "result": "Chitons are increasingly important for bio-inspired design. Despite exceeding 1000 species in diverse ecological niches with a wide range of morphological adaptations, chitons are considered a 'minor' and 'neglected' clade. The group is taxonomically challenging due to supposed morphological stasis and high interspecific variability. Recognition of variability in genome and phenome is crucial for understanding and re-evaluating unbiased measures of diversity in overlooked groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C117, C124-C125, C127-C128, and C132 provide broader context about the perception and importance of chitons. The statements about bio-inspired design (C24) are supported by citations (Ampuero et al., 2024; Varney et al., 2021). The characterization of chitons as 'neglected' (C127) and taxonomically challenging (C128) reflects the state of the field. The broader implications for understanding diversity (C132) are reasonable conclusions from the study.",
+    "result_type": "MINOR"
+  }
+]

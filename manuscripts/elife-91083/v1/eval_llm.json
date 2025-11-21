@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C34",
+      "C35",
+      "C42"
+    ],
+    "result": "LRRK2 has a KM value (554 \u00b1 62 \u00b5M) that lies within the range of physiological GTP concentrations (~500 \u00b5M), similar to other Roco protein family members. This was determined using HPLC-based Michaelis-Menten kinetics and confirmed previous published data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C34, C35, and C42 collectively establish that LRRK2's KM is physiologically relevant. The experimental kinetic measurements (C42) are reproducible, confirm prior work, and the comparison to physiological GTP concentrations (C35) is well-cited. The conclusion that LRRK2 behaves like other Roco proteins (C34) is appropriately supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C43",
+      "C44",
+      "C79"
+    ],
+    "result": "The R1441G PD variant shows increased catalytic efficiency compared to wild-type LRRK2, with decreased KM (271 \u00b1 27 \u00b5M) and increased kcat. This increased efficiency correlates with the high penetrance of R1441 variants in PD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C43, and C44 provide direct experimental kinetic data showing R1441G has enhanced catalytic efficiency. Claim C79 appropriately connects this to clinical penetrance data with citation support. The kinetic measurements appear robust with error estimates provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C80"
+    ],
+    "result": "The G2019S PD variant shows increased KM (867 \u00b1 110 \u00b5M) with no significant change in kcat, resulting in reduced catalytic efficiency. This correlates with weaker Rab phosphorylation in cells compared to R1441G.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C45, and C46 provide consistent experimental kinetic data. The connection to cellular Rab phosphorylation (C80) is supported by citation. The interpretation of reduced catalytic efficiency is mathematically correct given the KM increase without kcat change.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The kinase-dead K1906M variant has a KM approximately three times lower than wild-type (181 \u00b1 58 \u00b5M), and MLi-2 kinase inhibitor treatment similarly lowers KM. This suggests an active kinase conformation provides negative feedback to the Roc domain, likely via autophosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 provide converging experimental evidence from both genetic (K1906M) and pharmacological (MLi-2) kinase inhibition showing opposite effects to G2019S. The inference of negative feedback (C51) is logical and well-supported. Claim C50 appropriately validates that GTPase, not kinase, drives GTP consumption in the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "ATP incubation of wild-type LRRK2 (enforced autophosphorylation) leads to approximately twofold increase in KM and twofold decrease in kcat, demonstrating that autophosphorylation negatively regulates GTPase activity. The kinase-dead K1906M control shows no change with ATP treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 provide direct experimental evidence with appropriate controls. The ATP incubation experiment is well-designed with the K1906M control ruling out protein degradation artifacts. The conclusion (C55) that autophosphorylation negatively regulates GTPase activity is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "T1343 in the Roc P-loop is critical for phosphoregulation of both KM and kcat. The T1343A mutant shows no increase in KM after ATP treatment, has reduced kcat, but does not produce unstable protein. In the RocCOR domain construct, T1343A is the only mutant that does not significantly affect GTPase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C56-C61 collectively identify T1343 as the critical regulatory phosphosite through systematic mutational analysis. The experimental data (C58) showing no ATP-induced KM change for T1343A is compelling. The observation about reduced kcat (C59) is acknowledged with appropriate caveats about structural neutrality, and protein stability is confirmed (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Autophosphorylation shifts the monomer/dimer equilibrium toward the monomeric form in wild-type LRRK2, but ATP incubation does not affect dimer percentage for T1343A. This suggests the negative feedback mechanism operates through increased monomerization mediated by T1343 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 provide mass photometry data showing differential effects of ATP on wild-type versus T1343A oligomerization. The mechanistic inference (C67) connecting phosphorylation-induced monomerization to reduced GTPase activity is logical and supported by the data, though the authors appropriately use cautious language ('might be mediated').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C68",
+      "C69",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "T1343A has similar increased kinase activity in cells as G2019S (~2-fold increase in Rab10 phosphorylation), and the double mutant T1343A/G2019S shows no further increase. T1343A has wild-type-level kinase activity in vitro. This demonstrates T1343 is crucial for negative feedback in the LRRK2 signaling cascade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C68-C73 provide converging evidence from in vitro kinase assays (C68-C69) and cell-based Rab10 phosphorylation assays (C71-C72). The lack of additivity in the double mutant (C7, C72) strongly supports that T1343 and G2019S act in the same pathway. The conclusion about negative feedback disruption (C8, C73) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C78"
+    ],
+    "result": "Different PD mutants alter GTPase kinetics differently, which combined with the negative feedback loop and physiological GTP concentrations (~500 \u00b5M), is expected to strongly perturb LRRK2 activity. This might partially explain differences in penetrance among PD mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9 and C78 make speculative connections between kinetic parameters and clinical penetrance. While the kinetic data are solid, the link to penetrance is correlative and acknowledged as speculative (C9 uses 'might'). No direct clinical or genetic data are provided to test this hypothesis, making it an interesting but unvalidated interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "MBP-RocCOR constructs (wt, R1441G, Y1699C) showed similar kinetic parameters with identical catalytic efficiency in the charcoal assay. The HPLC-based and charcoal assays produce comparable GTP hydrolysis rates for full-length LRRK2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 establish methodological validity. The comparison between assays (C41) is important for validating that results can be compared across methods. The RocCOR data (C39-C40) provide context but show that isolated domains may not recapitulate full-length behavior, which is appropriately addressed by focusing on full-length protein for key conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "AlphaFold3 modeling suggests phosphorylated T1343 is oriented inward, substituting for the gamma phosphate, consistent with MD simulations. This might hamper GTP hydrolysis by competing with GTP re-binding in multi-turnover conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85 present computational modeling results. While the AlphaFold3 model is mentioned and agrees with MD simulations (C84), the mechanistic interpretation (C85) is speculative. The model is not experimentally validated in this study, and AlphaFold3 predictions for post-translational modifications should be interpreted cautiously. This remains a plausible but unproven hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Multiple Rab proteins are phosphorylated at conserved P-loop residues (G1+2 position), including Rab24 which has a phosphorylatable tyrosine. Rab24 Y17A shows increased GTP hydrolysis rate, similar to LRRK2 T1343A, suggesting P-loop phosphorylation is a conserved regulatory mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C89 draw on database information and published studies to place LRRK2 findings in broader context. The parallel with Rab24 (C88) strengthens the generalizability of the mechanism. However, this is primarily a literature-based observation rather than new experimental data from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "A mechanistic model is proposed where GTP loading favors monomeric LRRK2, GTP hydrolysis leads to GDP-bound dimers, and kinase-mediated T1343 phosphorylation shifts equilibrium back to monomers. Recent CtRoco structures support a critical role for P-loop conformation in nucleotide-induced monomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 synthesize the experimental findings into a coherent mechanistic model. The model is supported by the authors' data on T1343 phosphorylation and oligomerization, and is strengthened by structural data from bacterial homologs (C93-C94). While some aspects remain inferential (C91-C92), the model is well-grounded in the experimental observations and appropriately uses cautious language.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "R1441G and I2020T PD mutations show approximately eightfold increase in Rab10 phosphorylation in cells, consistent with published data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 reports cell-based assay results that confirm published findings. The data are presented with appropriate citation and appear consistent with the literature. This serves as a positive control and validation of the cellular assay system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37",
+      "C38",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C81",
+      "C82",
+      "C96"
+    ],
+    "result": "Background information on LRRK2 structure, function, disease association, and prior work on GTPase activity, kinase activity, dimerization, and autophosphorylation. This includes limitations of previous studies and context from MAP-kinase signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C38, C74-C77, C81-C82, and C96 provide established background knowledge appropriately cited from the literature. These claims set the context for the current work and are not new findings from this study. The citations appear appropriate and the characterization of prior work limitations (C77) is fair.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "The study describes a novel intramolecular feedback mechanism where the kinase domain in its active conformation negatively regulates GTP hydrolysis through autophosphorylation, analogous to negative feedback in MAPK pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 represents the main conclusion synthesizing all major findings. The negative feedback mechanism is well-supported by multiple lines of evidence: kinase-dead and G2019S mutants showing opposite effects, ATP-induced changes in kinetics, identification of T1343 as the critical site, and effects on oligomerization. The analogy to MAPK pathways provides useful conceptual framing.",
+    "result_type": "MAJOR"
+  }
+]

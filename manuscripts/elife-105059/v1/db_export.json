@@ -1,0 +1,2485 @@
+{
+  "submission": {
+    "id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T18:48:04.045719Z",
+    "updated_at": "2025-11-21T18:48:04.045719Z"
+  },
+  "content": [
+    {
+      "id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "content_type": "manuscript",
+      "content_text": "# Food intake enhances hippocampal sharp wave-ripples\n\n## Authors\n\n- Ekin Kaya<sup>1</sup> ([ORCID: 0000-0001-9235-4954](https://orcid.org/0000-0001-9235-4954)) \u2020\n- Evan Wegienka<sup>1</sup>\n- Alexandra Akhtarzandi-Das<sup>1</sup>\n- Hanh Do<sup>1</sup>\n- Ada Eban-Rothschild<sup>1</sup> ([ORCID: 0000-0001-5816-1315](https://orcid.org/0000-0001-5816-1315))\n- Gideon Rothschild<sup>1</sup> ([ORCID: 0000-0002-9700-1020](https://orcid.org/0000-0002-9700-1020)) \u2020\n\n### Affiliations\n\n1. Department of Psychology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n2. Kresge Hearing Research Institute and Department of Otolaryngology, Head and Neck Surgery, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n\n\u2020 Corresponding author\n\n## Abstract\n\nEffective regulation of energy metabolism is critical for survival. Metabolic control involves various nuclei within the hypothalamus, which receive information about the body\u2019s energy state and coordinate appropriate responses to maintain homeostasis, such as thermogenesis, pancreatic insulin secretion, and food-seeking behaviors. It has recently been found that the hippocampus, a brain region traditionally associated with memory and spatial navigation, is also involved in metabolic regulation. Specifically, hippocampal sharp wave-ripples (SWRs), which are high-frequency neural oscillations supporting memory consolidation and foraging decisions, have been shown to reduce peripheral glucose levels. However, whether SWRs are enhanced by recent feeding\u2014when the need for glucose metabolism increases, and if so, whether feeding-dependent modulation of SWRs is communicated to other brain regions involved in metabolic regulation\u2014remains unknown. To address these gaps, we recorded SWRs from the dorsal CA1 region of the hippocampus of mice during sleep sessions before and after consumption of meals of varying caloric values. We found that SWRs occurring during sleep are significantly enhanced following food intake, with the magnitude of enhancement being dependent on the caloric content of the meal. This pattern occurred under both food-deprived and ad libitum feeding conditions. Moreover, we demonstrate that GABAergic neurons in the lateral hypothalamus, which are known to regulate food intake, exhibit a robust SWR-triggered increase in activity. These findings identify the satiety state as a factor modulating SWRs and suggest that hippocampal-lateral hypothalamic communication is a potential mechanism by which SWRs could modulate peripheral metabolism and food intake.\n\n## Introduction\n\nFor all organisms, from bacteria to humans, survival depends on searching for resources to maintain the internal environment in a desirable state. To obtain these resources, organisms perform stimulus-seeking behaviors wherein actions that improve bodily states are repeated while others are not. While even bacteria exhibit such coordination of behaviors based on the consequences of earlier actions (Keegstra et al., 2022), the evolution of the nervous system in more complex organisms has enabled the use of more sophisticated strategies to learn from the past, anticipate the future, and respond rapidly for efficient metabolic regulation.\n\nIn mammals, the hippocampus supports spatial navigation and the formation of episodic memories (O\u2019Keefe and Nadel, 1978; Scoville and Milner, 1957), which is crucial for finding and recalling the locations of food sources. At the neurophysiological level, the hippocampus encodes the trajectory leading to food via the sequential firing of hippocampal place cells (O\u2019Keefe and Nadel, 1978). During food consumption and subsequent resting periods, these same neurons replay the recent spatial trajectory in a temporally compressed manner during a highly synchronous oscillatory event called sharp wave-ripples (SWRs) (Buzs\u00e1ki, 1989; Diba and Buzs\u00e1ki, 2007; Joo and Frank, 2018; Skaggs and McNaughton, 1996; Wilson and McNaughton, 1994). SWRs communicate hippocampal activity patterns to the neocortex, supporting systems-level consolidation of memories (Brodt et al., 2023; Buzs\u00e1ki, 2015; Klinzing et al., 2019).\n\nIn addition to the neocortex, the hypothalamus, a key regulator of homeostasis, receives dense multi-synaptic hippocampal innervation via the lateral septum (LS) (Risold and Swanson, 1997; Tingley and Buzs\u00e1ki, 2020). Unlike the divergent hippocampo-cortical projections, the hippocampo-lateral septum projections are highly convergent, allowing the LS to detect only the magnitude of the SWR, but not the identity and temporal order of hippocampal neuronal spiking (Tingley and Buzs\u00e1ki, 2020). Thus, the propagation of SWRs to hypothalamic nuclei is better suited to serve homeostatic functions rather than memory consolidation (Buzs\u00e1ki and Tingley, 2023).\n\nWhile earlier lesion and stimulation studies provided evidence that the hippocampus influences peripheral physiology and homeostatic behaviors (Clifton et al., 1998; Seto et al., 1983), direct physiological evidence demonstrating that SWRs serve metabolic functions only emerged recently. By combining in vivo electrophysiology with continuous glucose monitoring in freely behaving rats, Tingley et al., 2021 found a negative relationship between SWR rates and subsequent peripheral glucose levels. Moreover, they showed that optogenetically induced SWRs effectively reduced peripheral glucose levels, while chemogenetic inhibition of the LS abolished the correlation between SWR rate and glucose levels. Thus, this study strongly suggests that hippocampal SWRs serve a metabolic function.\n\nThe hypothesis that hippocampal SWRs have a metabolic function raises testable predictions regarding the relationship between SWRs and food consumption. The levels of glucose, the body\u2019s primary energy source, are tightly regulated by the nervous system (L\u00f3pez-Gambero et al., 2019). Specifically, around meal times, neuronal systems involved in glucose metabolism proactively and reactively coordinate the bodily response to the postprandial spike in glucose levels (Chen et al., 2015; Steculorum et al., 2016; Woods et al., 2006). Given that SWRs reduce peripheral glucose levels (Tingley et al., 2021), we set out to test the hypothesis that SWRs are enhanced following meal times as part of the systems-level response to increased glucose levels.\n\n## Results\n\nTo determine whether food consumption modulates SWRs during subsequent sleep, we recorded the local field potential (LFP) from the dorsal CA1 region of the hippocampus, along with electroencephalographic (EEG) and electromyographic (EMG) signals, in food-restricted mice during sleep sessions before and after food intake (Figure 1A and B). Similar to previous studies investigating learning-dependent changes in hippocampal dynamics (Grosmark and Buzs\u00e1ki, 2016; Oliva et al., 2020; Rothschild et al., 2017), our experimental procedure consisted of three sessions: a 2-hour sleep session (\u2018Pre-sleep\u2019), a subsequent food consumption session of roughly 1 hour (\u2018Meal\u2019), and an additional 2-hour sleep session (\u2018Post-sleep\u2019). Within the sleep sessions, the ongoing sleep stages were determined (wake, rapid eye movement [REM], and non-rapid eye movement [NREM], see \u2018Materials and methods\u2019), and only NREM periods were included in further SWR analysis. There was no significant difference in the amount of time spent in NREM sleep in the pre and post sessions (p=0.1759, paired t-test, Figure 1\u2014figure supplement 1). During the Meal sessions, mice received varying amounts of chow (0.3\u20131.5 g) in their home cage without being subjected to any instructive learning paradigm. Given that mice typically consume 4\u20135 g of chow per day (Bachmanov et al., 2002), the largest amount corresponded to about one-third of their daily food intake. In the control condition, the Meal session was replaced with a waking session of similar duration with no food delivery (\u2018No-food\u2019). Each mouse was tested in the Meal condition 3\u201312 times with varying amounts of chow and at least once in the No-food condition.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig1-v1.jpg)\n\n**Figure 1.:** (A) Experimental design. (B) A representative recording showing broadband hippocampal local field potential (LFP) (black), ripple-filtered LFP (150\u2013250 Hz, green), ripple power (red), and detected SWRs (purple dots). (C\u2013E) The effect of chow intake on ripple power (C), ripple rate (D), and ripple duration (E). Red bars represent the changes observed following delivery of equal or more than 0.5 g of chow, while the green bars represent the changes observed following delivery of less than 0.5 g. (F\u2013I) Correlations between food amount and fold change in ripple power (F, R = 0.66, p<0.001), fold change in ripple rate (G, R = 0.44, p<0.001), fold change in ripple duration (H, NS) and fold change in delta power (I, R = 0.45, p<0.001). (J) Correlation between fold change in ripple power and fold change in delta power (R = 0.65. p<0.001). Panels (F\u2013J) include both the experimental and control animals\u2014the control animals appearing as having received 0 food amount. (K) A mediation analysis, indicating that the effect of food intake on ripple power was significant after accounting for sleep-dependent effects (correlation between the changes in delta power and ripple power: B = 0.16, SE = 0.03, p<0.001; the effect of meal size on the change in delta power: B = 0.28, SE = 0.07, p<0.001; the indirect effect of the change in delta power mediating the relationship between meal size and ripple power: B = 0.04, SE = 0.01, p<0.05, the direct effect of meal size on the change in ripple power: B = 0.10, SE = 0.02, p<0.001).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Included are all session pairs in which animals were food restricted and received 0\u20131.5 g chow between the pre and post sleep sessions. Depicted is the total amount of time spent in NREM sleep within the 2-hour sleep session (wake and REM sleep excluded, all NREM bouts concatenated). NREM sleep amounts did not significantly differ in the pre and post sessions (p=0.1759, paired t-test).\n\nTo assess whether food intake modulates SWRs, we calculated the fold change in SWR statistics from pre-sleep to post-sleep in paired sessions. We found that consuming larger meals (0.5\u20131.5 g) significantly increased the ripple power of SWRs in all 38 session pairs, whereas smaller meals and the No-food condition did not result in a similar effect (Figure 1C). We observed a similar modulation in ripple rate, which was increased in 31 of 38 sessions following consumption of larger meals (Figure 1D), but not in ripple duration (Figure 1E). Smaller meals and No-food condition did not induce a consistent change in ripple rate or duration (Figure 1D and E). We then examined whether there is a relationship between meal size and the magnitude of change in ripple attributes. We found that the magnitude of increase in ripple power and rate, but not duration, was positively correlated with meal size (Figure 1F\u2013H). These findings suggest that the power and rate of SWRs increase following feeding in a dose-dependent manner.\n\nSince the mice in the aforementioned experiments were food restricted, we wondered whether the observed increase in ripple power after large meals might be an indirect consequence of reduced sleep quality during hunger and its restoration following feeding (Goldstein et al., 2018). As a measure of NREM sleep quality, we quantified cortical EEG delta power, which is also associated with SWR occurrence (Goldstein et al., 2018; M\u00f6lle et al., 2006; Sirota et al., 2003). While delta power indeed increased after food intake in a dose-dependent manner (Figure 1I), and the change in delta power was correlated with the change in ripple power (Figure 1J), mediation analysis revealed that the effect of meal size on ripple power remained significant even after accounting for changes in delta power (Figure 1K). Thus, while food intake enhanced delta power during sleep, it also led to a significant increase in ripple power beyond this effect.\n\nTo further rule out the possibility that recovery from hunger accounts for the observed increased ripple power following feeding, we conducted an additional set of experiments under ad libitum feeding conditions to ensure that sleep quality in the pre-sleep session was not affected by hunger. To encourage eating during the Meal session under ad libitum conditions, we replaced the standard chow with chocolate (0.1\u20131 g) (Figure 2A). Consistent with our previous findings, we found that chocolate consumption increased ripple power in subsequent sleep, with larger amounts of chocolate leading to greater increases in ripple power (Figure 2B). Moreover, the correlation between chocolate consumption and change in delta power was not significant, nor was the correlation with ripple rate or duration (Figure 2C\u2013E). Further mediation analysis revealed that the change in delta power did not significantly mediate the relationship between chocolate amount and the change in ripple power (Figure 2F). Together, these results demonstrate that food intake enhances SWRs during sleep, even after accounting for the positive effect of food intake on sleep depth.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig2-v1.jpg)\n\n**Figure 2.:** (A) Experimental design. (B) Correlation between the amount of chocolate consumed and the degree of the increase in ripple power under ad libitum conditions (Nanimal = 9, Nsession = 39, R = 0.57, p=0.0001). (C\u2013E) correlations between amount of chocolate consumed and fold change in ripple rate (C, R = 0.1, p=0.53), ripple duration (D, R = \u20130.11, p=0.1), and delta power (E, R = 0.29, p=0.07). (F) A mediation analysis showed that the effect of chocolate intake on ripple power was significant after accounting for sleep-dependent effects (the indirect effect of the change in delta power mediating the relationship between meal size and ripple power: B = 0.01, SE = 0.01, p>0.05, the direct effect of meal size on the change in ripple power: B = 0.05, SE = 0.01, p<0.001).\n\nNext, we sought to uncover the mechanisms by which food intake modulates SWRs. Previous studies suggested that neural systems regulating food intake are responsive to both sensory and motor experiences related to feeding, such as food detection, chewing, and mechanical stretch of the gut, as well as humoral signals indicating energy availability (Bai et al., 2019; Chen et al., 2015; Thanarajah et al., 2019). To disentangle the factors underlying the meal enhancement of SWRs, we first tested the effects of the caloric content of meals on SWRs by comparing the effects of caloric (1 g of regular Jello) and non-caloric (1 g of sugar-free Jello, containing artificial sweeteners) foods with similar sensory qualities (Figure 3A). We reasoned that if their effects on SWRs differ, this would indicate a calorie dependency in the meal enhancement of SWRs, whereas no difference would suggest an experience dependency. We found that consumption of regular Jello, but not sugar-free Jello, resulted in an increase in ripple power and ripple rate compared to the No-food condition (Figure 3B and C). Additionally, the increase in ripple power, but not rate, was higher following consumption of regular Jello compared to sugar-free Jello (Figure 3B and C). No differences were found in ripple duration or cortical delta power across conditions (Figure 3D and E). These results suggest that the caloric content of meals, rather than the oro-/mechano-sensory experience of eating, underlies the post-meal enhancement in SWRs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig3-v1.jpg)\n\n**Figure 3.:** (A) Experimental design (Nregular = 7, Nsugar-free = 9, Nnofood = 10). (B) Consumption of regular Jello resulted in a greater increase in ripple power compared to non-caloric Jello (t(14) = 2.59, p=0.02) and the control condition (t(15) = 2.39, p=0.03), with no significant difference between sugar-free Jello and the control condition (p=0.38). (C) Regular Jello consumption increased SWR rate compared to the control condition (t(15) = 2.18, p=0.046), with no other significant differences across conditions (ps>0.05). No differences were detected in the SWR duration or delta power across conditions (D, E ps>0.05). Red lines indicate mean, and shaded red areas indicate standard error. Datapoints within each panel represent different animals.\n\nWe next tested whether feeding-associated hormones contribute to the meal enhancement of SWRs (Figure 4A). Ghrelin, a prominent gut hormone, rises during fasting (Toshinai et al., 2001) and promotes increases in glucose levels and food intake (Poher et al., 2018). In contrast, meals trigger the release of insulin, glucagon-like peptide-1 (GLP-1), and leptin, which lower glucose levels and induce satiety (Gutzwiller et al., 1999; Woods et al., 2006). To investigate whether changes in these hormone concentrations modulate SWRs, we administered GLP-1, leptin, insulin, and ghrelin to mice at different doses under ad libitum and food-restricted conditions. Administration of GLP-1, leptin, and insulin did not produce robust, consistent, and dose-dependent effects on SWR attributes (Figure 4B\u2013G). On the other hand, ghrelin administration resulted in a dose-dependent decrease in ripple rate under ad libitum conditions (Figure 4H) and a decrease in ripple power under food-restricted conditions (Figure 4I). While ghrelin administration also reduced cortical delta power, mediation analysis revealed that the effect of ghrelin on ripple power remained significant even after accounting for change in cortical delta power under food-restricted conditions (Figure 4Ii and ii). These results suggest that ghrelin has a dose-dependent negative effect on ripple rate and power, which exceeds its influence on sleep quality. In contrast, we did not find consistent modulation of SWRs following GLP-1, insulin, or leptin administration, despite their known effects on hippocampal memories and synaptic transmission (Abbas et al., 2009; McNay et al., 2010; Oomura et al., 2006). It is possible that specific aspects of our experimental design (e.g., focusing on the 2-hour post-sleep period, administering only one hormone at a time, or using subcutaneous delivery) may have occluded potential effects of these hormones on SWRs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig4-v1.jpg)\n\n**Figure 4.:** (A) Experimental design. No dose-dependent effects were detected in ripple power, rate, or duration following the administration of GLP-1 (B, C), leptin (D, E), or insulin (F) (ps>0.05), except a decrease in ripple rate following insulin administration under food-restricted conditions (G, R = \u20130.38, p=0.01). Ghrelin administration caused a dose-dependent decreased in SWR rate (R = \u20130.49, p=0.0008) and delta power (R = \u20130.42, p=0.005) under ad libitum conditions (H), and decreased ripple power (R = \u20130.64, p=0.0002), ripple rate (R = \u20130.63, p=0.0003), and delta power (R = \u20130.73, p=0.00014) under food-restricted conditions (I). Mediation analysis revealed that ghrelin\u2019s effect on ripple power remained significant after accounting for changes in cortical delta power under food-restricted conditions (Ii, Iii, direct effect of ghrelin on ripple power: B = \u20130.25, SE = 0.11, p<0.05).\n\nLastly, as our findings reveal that SWRs are modulated by food-related signals, we tested the hypothesis that SWRs can, in turn, influence brain regions involved in feeding regulation. Among the hypothalamic nuclei that participate in feeding regulation (Anand and Brobeck, 1951; Stuber and Wise, 2016), the lateral hypothalamus (LH) receives the densest di-synaptic input from the dorsal hippocampus via the lateral septum (Risold and Swanson, 1997; Tingley and Buzs\u00e1ki, 2020). To test whether SWRs affect neuronal activity in the LH, we combined LFP recordings from the hippocampus with optical recordings from GABAergic neurons in the LH using fiber photometry. We used Vgat-IRES-Cre mice (n = 5) and transduced LH neurons with the pGP-AAV5-syn-FLEX-jGCaMP8f-WPRE vector (Figure 5A and B). We found that LH GABAergic neurons exhibit a robust and consistent increase in activity, peaking approximately 320 ms after SWR onset (Figure 5C\u2013J, Figure 5\u2014figure supplement 1). These findings strongly suggest that SWRs, which we found to be modulated by feeding, are also associated with a consistent and robust increase in population activity in the LH, a central brain region for metabolic regulation.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig5-v1.jpg)\n\n**Figure 5.:** (A) Experimental design. (B) A representative recording showing broadband hippocampal local field potential (LFP) (black), ripple-filtered LFP (150\u2013250 Hz, green), ripple power (red), detected SWRs (purple dots), and the fiber photometry signal from lateral hypothalamus (LH) GABAergic neurons (FP, blue). (C) Example traces of LH GABAergic neuronal activity around SWRs. (D) Mean trace of peri-SWR LH GABAergic activity from one session. (E) Mean SWR-triggered LH GABAergic activity profiles per session. (F) The mean of the SWR-triggered LH GABAergic activity profiles across sessions. (G, H) Similar to (E, F) but for normalized traces. (I) Statistical significance of LH GABAergic activity within 0.5 s before and after SWRs per session. (J) Peak time of LH GABAergic activity relative to SWR onset. Shaded error bars (pink) indicate standard deviation.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/105059/elife-105059-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Integrated fluorescence immediately before (\u2018pre\u2019) and after (\u2018post\u2019) SWRs. Each gray line corresponds to fluorescence magnitudes before and after a single SWR. Black line and bars indicate the pre/post average (means and standard error of the mean). Panels correspond to single sleep session in different animals. The p-value in the title of each plot corresponds to the significance of the SWR-triggered increase (corresponding to the values in main Figure 5I). (B) The SWR-averaged activity before and after SWRs from all sessions (each gray line represents the SWR-averaged values from one session). There was a significant SWR-triggered increase in LH GABA activity across sessions (p=5.3337e-05, paired t-test).\n\n## Discussion\n\nRegulation of energy intake and expenditure is vital for animals. While food intake provides essential fuel for the organism, it can also elevate plasma glucose and other nutrient levels above optimal ranges for physiological functions. This elevation triggers coordinated neural and peripheral responses that lower glucose levels by promoting glucose uptake in peripheral tissues and inhibiting further food intake (Chen et al., 2015; L\u00f3pez-Gambero et al., 2019; Steculorum et al., 2016; Woods et al., 2006). Here, we show that hippocampal SWRs, previously linked to reductions in peripheral glucose levels (Tingley et al., 2021), are enhanced after food intake. Specifically, we compared SWRs occurring during sleep before and after meals and found a calorie-dependent increase in the ripple power and SWR rate. This enhancement exceeded the increase in sleep quality and was evident under both ad libitum and food-restricted conditions. Our caloric vs. non-caloric Jello experiments further revealed that the enhancement in SWRs was driven by caloric intake rather than the experience of eating. Moreover, we found that GABAergic neurons in the LH, a region implicated in the regulation of both food intake and peripheral metabolism (Anand and Brobeck, 1951; L\u00f3pez-Gambero et al., 2019; Shimazu, 1987), exhibit a robust and consistent SWR-triggered increase in activity.\n\nWe conducted our experiments during the light phase and focused our analyses on sleep because awake SWRs primarily occur during offline states (i.e., resting) (Buzs\u00e1ki, 2015), which are reduced under food restriction due to increasing physical activity (Chowdhury et al., 2015). However, a bidirectional relationship between hunger and sleep also exists (Danguir and Nicolaidis, 1979; Rechtschaffen and Bergmann, 1995), where hunger increases arousal and impairs sleep quality (Danguir and Nicolaidis, 1979; Goldstein et al., 2018). In line with this, we found that cortical delta power was enhanced following meals in previously food-restricted mice. Nonetheless, mediation analyses showed that food intake still had a significant effect on ripple power, even after accounting for the restoration of sleep quality. To further exclude the possibility that our results were a by-product of impaired sleep caused by prior food restriction, we performed additional experiments under ad libitum food access. Although we did not observe a change in ripple rate in these experiments, we found a dose-dependent increase in ripple power following chocolate consumption, replicating our earlier findings under food-restricted conditions. Notably, the extent of SWR modulation was weaker under ad libitum conditions, similar to the asymmetric hypothalamic response to food in sated versus fasted animals (Chen et al., 2015).\n\nConversely, a poor night\u2019s sleep leads to increased appetite and impaired metabolic regulation the subsequent day (Hogenkamp et al., 2013; Klingenberg et al., 2013; Schmid et al., 2015). Chronic sleep disturbances, on the other hand, elevate the risk of long-term conditions such as diabetes and metabolic syndrome (Knutson et al., 2007). Although the neural mechanisms underlying these processes remain largely unknown, a recent study linked stronger coupling of sleep spindles and cortical slow-wave activity to improved glucose metabolism regulation the subsequent day in humans (Vallat et al., 2023). Given that about 75% of SWRs occur during NREM sleep in rats (Tingley et al., 2021), and that SWRs are often triggered when slow waves and spindles are coupled (Sirota et al., 2003; Staresina et al., 2015), this suggests that SWRs can play a role in the connection between sleep and next-day metabolic regulation.\n\nThe hippocampus, which integrates environmental and interoceptive signals along with past experiences to support spatial navigation and memory, has also been shown to influence food intake (Kanoski and Grill, 2017; Stevenson and Francis, 2017). Notably, HM, a famous patient who lost the ability to form new memories after the removal of his hippocampi, also exhibited irregular eating habits and difficulties with interoceptive judgments (Hebben et al., 1985). Earlier rodent studies similarly showed that hippocampal lesions increase meal frequency in rats (Clifton et al., 1998). More recently, optogenetic inhibition of the hippocampus following meals was shown to decrease the latency to the next meal and increase its size (Hannapel et al., 2019). These findings suggest that hippocampal-dependent memories of recent meals may suppress appetite.\n\nAnother study identified dopamine-2 receptor neurons in the dorsal CA3 region of the hippocampus as being responsive to meals and food cues, with inhibition and activation of these neurons increasing and decreasing food intake, respectively (Azevedo et al., 2019). Additional research has highlighted the role of the hippocampus in utilizing peripheral signals related to energy balance for meal regulation (Davidson and Jarrard, 1993; Kanoski and Grill, 2017; Wee et al., 2024). For example, the administration of leptin into both the ventral and dorsal hippocampus (Kanoski et al., 2011), and exendin-4 (a GLP-1 agonist) into the ventral hippocampus (Hsu et al., 2015), have been shown to reduce feeding. Conversely, ghrelin signaling in the ventral hippocampus has been shown to increase meal size through a descending LH-hindbrain circuit (Suarez et al., 2020). A recent study found distinct neural populations in the dorsal hippocampus that show increased activity following the intake of either fats or sugars, and these populations were involved in memory for the location of the respective foods, as well as in food intake (Yang et al., 2025).\n\nWhile previous studies employing pharmacological and viral approaches have revealed the role of the hippocampus in the regulation of food intake, understanding at the physiological level has remained limited. Peripheral hormones that rise during the postprandial period, such as insulin, amylin and GLP-1, not only reduce plasma glucose levels but also act as satiety signals that inhibit food intake (Woods et al., 2006). Given this dual inhibitory effect of postprandial signals on both glucose levels and food intake, we propose that SWRs could also play an inhibitory role in regulating food intake. Future studies could explore this possibility by using closed-loop suppression of SWRs (Girardeau et al., 2009). This approach could also be used to test whether SWRs underlie the link between sleep loss and subsequent impairment in glucose metabolism and increase in appetite (Hogenkamp et al., 2013; Schmid et al., 2015; Klingenberg et al., 2013). While we did not find consistent modulation of SWRs following GLP-1, insulin, or leptin administration, we believe this is likely due to specific aspects of our experimental design, such as focusing on the 2-hour post-sleep period, administering only one hormone at a time, or the use of subcutaneous delivery of the hormones.\n\nWhile our focus was on metabolic factors affecting SWRs, our results may also have implications for the interaction between memory and metabolism. It is widely recognized that memory tasks guided by food reward enhance SWRs (Ambrose et al., 2016; Singer and Frank, 2009). This modulation, thought to support the consolidation of memory for the correct trajectory leading to food, could also be influenced by food intake and may modulate feeding-related processes. Our Jello experiments showed that the enhancement in SWRs following food intake is dependent on caloric content of meals rather than the experience of eating. However, one might argue that only salient experiences (i.e., consumption of food with calories, but not without) are consolidated, and thus the enhancement of SWRs following regular Jello consumption could reflect the memory consolidation of a salient experience. Previous studies have shown that animals can learn the nutrition content of different foods (Yamamoto and Ueji, 2011). Since our mice had been habituated to all foods before the experiments (regular Jello, sugar-free Jello, and chocolate), they might have anticipated that sugar-free Jello would not provide calories (i.e., a less salient experience) or raise glucose levels. However, the enhancement of SWRs for memory consolidation typically requires novel events. As our mice were well-habituated to both the experimental paradigm and the Jello, it is unlikely that the enhancement in SWRs reflects a memory consolidation process. One potential experiment to bypass mnemonic processes could involve direct gastric infusion of food. Further studies could also investigate whether food consumption after specific events enhances consolidation through the modulation of SWRs.\n\nWe found that the SWR property that was most strongly modulated by food is ripple power, followed by SWR rates, while SWR durations were unmodulated by feeding. This is interesting in light of prior studies showing that memory consolidation is linked to an increased rate (Eschenko et al., 2008) and duration (Fern\u00e1ndez-Ruiz et al., 2019) of SWRs or replay events (though reactivation strength also increases; Giri et al., 2019). Ripple power is strongly correlated with the degree of synchronized recruitment of hippocampal populations (Csicsvari et al., 1999; Schomburg et al., 2012). In contrast, increased SWR rates following learning allow repeated reactivation of recent experience (Eschenko et al., 2008; Giri et al., 2019), while long-duration SWRs have been proposed to facilitate replay of particularly long spatial trajectories (Fern\u00e1ndez-Ruiz et al., 2019). In alignment with the previous finding that replay content is not communicated to subcortical regions involved in metabolic regulation (Tingley and Buzs\u00e1ki, 2020), ripple power may be the key attribute relevant for homeostatic signaling, while replay content, manifesting in increased SWR rate and duration, underlies the mnemonic function of SWRs.\n\nWe propose that the temporal coordination between the onset of SWRs and the increase in LH population activity may represent a mechanism by which SWRs influence peripheral metabolism and food intake. GABAergic lateral septal neurons can facilitate the relay of SWRs to the LH by providing windows of disinhibition (Risold and Swanson, 1997; Tingley et al., 2021; Wong et al., 2016). While our fiber-photometry recordings from the LH provided a population-level activity signal, future studies could utilize single-cell resolution imaging methods to uncover network-level organization and dynamics (Aharoni et al., 2019; Lee and Rothschild, 2021; Vivaldo et al., 2023; Vogt, 2022). Furthermore, while our investigation of hippocampal-LH communication was limited to the timescale of seconds around SWRs, whether and how this communication changes across the timescale of hours following feeding remains to be determined. Finally, the causal relationship between SWRs and LH activity, as well as the functional significance of these interactions, remain to be investigated.\n\nIn summary, our study demonstrates that SWRs are sensitive to the body\u2019s hunger state and are modulated by food intake. Whether SWRs can, in turn, influence food intake and the specific mechanisms underlying this potential modulation remain to be elucidated.\n\n## Materials and methods\n\n### Animals\n\nAll experimental procedures followed the US National Institutes of Health Guide for the Care and Use of Laboratory Animals and were approved by the University of Michigan\u2019s Institutional Animal Care and Use Committee. We used C57BL/6 wild-type mice (n = 8, seven male and one female) and Vgat-IRES-Cre (n = 9 male mice; The Jackson laboratory, #016962) heterozygous mice bred in-house. The mice were housed under a 12:12 light-dark cycle.\n\n### Surgeries\n\nMice (7\u201316 weeks old) were anesthetized with a ketamine-xylazine mixture (100 and 10 mg/kg, respectively; administered via intraperitoneal injection [IP]) and received lidocaine and carprofen (4 mg/kg and 5 mg/kg, respectively) prior to being placed in a stereotaxic frame (David Kopf Instruments, Tujunga, CA). During the surgery, the mice were kept under isoflurane anesthesia (\u223c1% in O2).\n\nFor hippocampal electrophysiology recordings, an array of four tungsten wires (50 micron, California Fine Wire Company) were implanted in the CA1 region of the dorsal hippocampus (AP: \u20132 mm, ML: 1.5 mm, DV: \u20131.4 mm). Additionally, an EMG wire was inserted into the neck muscle and an EEG and a ground screw were placed above the parietal cortex and the cerebellum, respectively.\n\nFiber photometry procedures were done as described previously (Eban-Rothschild et al., 2020; Sotelo et al., 2024). Briefly, 400 nL of pGP-AAV-syn-FLEX-jGCaMP8f-WPRE (Addgene) (2.6e12 vg/mL) were injected into the LH (AP: \u20131.2 mm, ML: 1.15 mm, DV: \u20135 mm) and mono fiber optic probes (400 \u03bcm diameter, 0.48 NA, Doric Lenses, Inc, Quebec, Canada) were implanted just above the LH (AP: \u20131.5 mm, ML: 1.15 mm, DV: \u20134.6 mm).\n\nMice were given several days to recover from surgery. They were then habituated to handing and individually housed in custom Plexiglas recording cages (39.4 cm \u00d7 28.6 cm \u00d7 19.3 cm) with open tops to ensure that the LFP cable could reach the mice and allow them to be freely behaving without restricted movements. We recorded mice until 1 year of age.\n\n### Data processing, analyses, and sleep scoring\n\nElectrophysiological and optical recordings were conducted using the Tucker Davis Technology system, sampled at 3 kHz and 1 kHz respectively. Data was visualized with Synapse or SynapseLite software. Sleep scoring was done manually using the AccuSleep toolbox (https://github.com/zekebarger/AccuSleep; Barger and Frye, 2025) using the EEG and EMG signals. NREM periods were detected based on high EEG delta power and low EMG power, REM periods were detected based on high EEG theta power and low EMG power, and wake periods were detected based on high EMG power. Only NREM periods were included for subsequent SWR detection, quantification, and analyses (in particular, reported SWR rates reflect the number of SWRs per second of NREM sleep). Sessions with less than 30 minutes of sleep were excluded from further analyses.\n\nTo detect SWRs, we filtered the raw signal between 150 and 250 Hz and took an envelope of the squared filtered signal. We identified SWRs by identifying the events that reached at least 5 standard deviations above the mean and that were above 1 standard deviation for at least 40 ms. In case two events occurred within 40 ms or less, we discarded the second event. Ripple power threshold calculations were done together for pre-sleep and post-sleep. We calculated the delta power by taking the envelope of the squared filtered signal between 0.5 and 4 Hz on the EEG channel during NREM sleep.\n\nFor pre-sleep and post-sleep comparisons, we calculated average ripple power, ripple rate, ripple duration, and delta power for each pre and post session. Change from pre-sleep to post-sleep was calculated as change = mean (variablepostsleep)/mean(variablepresleep). Mediation analyses were done using the Mediation toolbox (https://github.com/canlab/MediationToolbox; Ashar et al., 2025).\n\nFor SWR-LH interaction analyses, we interpolated the fiber photometry signal to match its length to the length of the LFP. For each SWR, we extracted the surrounding 4 second windows of the fiber photometry signal and centered the fiber photometry signal at the ripple onset to zero. We detected the SWR-triggered peaks in fiber photometry signal within the 1 second following SWRs. For statistical comparisons, we calculated the integrals of the 0.5-second windows before and after each SWR and performed a paired t-test on these integrals. For the summary plots, we normalized each session by its own maximum value.\n\n### Food restriction and experimental procedures\n\nAll experiments were conducted during the light phase. Chow experiments were conducted under food-restricted conditions in which animals did not have access to food for 20\u201324 hours preceding the experiments. Experimental steps were as follows: mice were left to sleep for 2 hours (pre-sleep). Then they were woken up and given a piece of regular chow (Meal). The amount of chow varied between 0.3 and 1.5 g. To calculate the exact amount of consumption, we removed and weighed any remaining chow pieces before the start of the post-sleep session which lasted for another 2 hours. Each gram of chow contained 4.1 kcal. For chocolate experiments, mice went through the same experimental procedure except that they had ad libitum food access throughout the experiment and received varying amounts (0.1\u20131 g) of Reese\u2019s Peanut Butter Cups instead of chow. Each gram of chocolate contained 5 kcal.\n\nJello experiments were performed under food-restricted conditions by using regular or sugar-free strawberry flavored Jello. Each 10 g of Jell-O gelatin mix was dissolved in 13 mL water for regular Jello meals, and each 10 g of sugar-free strawberry flavored Jell-o gelatin mix was dissolved in 111 mL water for sugar-free meals. The mixtures were refrigerated (4\u00baC) until firm. 1 g of regular and sugar-free Jello meals contained 1.7 and 0 kcals, respectively. The sugar-free Jello contained artificial sweeteners (aspartame and acesulfame potassium). The Jello meals were given on plastic weighing boats and weighed before and after the trial to calculate the exact amount of consumption.\n\n### Hormone experiments\n\nThe experiments were conducted under 24-hour food restriction or ad libitum food access conditions. No food pieces were present in the cages during the recordings. Before pre-sleep sessions, mice received a subcutaneous injection of 0.1 mL saline. Before post-sleep sessions, they were administered with either 0.1 mL saline or various doses of hormones, including ghrelin (0.1, 0.167, or 0.5 mg/kg body weight, GenScript), leptin (0.3, 3, 6.67 mg/kg, Peprotech), insulin (0.5, 1, or 2 u/kg body weight, Sigma-Aldrich, I5500), or GLP-1 (0.33, 0.67, 1.67, or 2.67 mg/kg body weight, Tocris, Cat# 2082), all dissolved in 0.1 mL saline.\n",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Laura L Colgin, University of Texas at Austin United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.105059.3.sa0](https://doi.org/10.7554/eLife.105059.3.sa0)\n\nThis important study assessed the effects of food intake on sharp wave-ripples in the hippocampus of mice during subsequent sleep. Convincing evidence supports the conclusion that sharp wave-ripples are enhanced by food consumption. This work will likely interest researchers studying multiple functions, including memory, metabolism, and brain-body physiology.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105059.3.sa1](https://doi.org/10.7554/eLife.105059.3.sa1)\n\nSummary:\n\nThis manuscript by Kaya et al. studies the effect of food consumption on hippocampal sharp wave ripples (SWRs) in mice. The authors use multiple foods and forms of food delivery to show that the frequency and power of SWRs increase following food intake, and that this effect depends on the caloric content of food. The authors also studied the effects of administration of various food-intake-related hormones on SWRs during sleep, demonstrating that ghrelin negatively affects SWR rate and power, but not GLP-1, insulin, or leptin. Finally, the authors use fiber photometry to show that GABAergic neurons in the lateral hypothalamus, increase activity during a SWR event.\n\nStrengths:\n\nThe experiments in this study seem to be well performed, and the data are well presented, visually. The data support the main conclusions of the manuscript that food intake enhances hippocampal SWRs. Taken together, this study is likely to be impactful to the study of the impact of feeding on sleep behavior, as well as the phenomena of hippocampal SWRs in metabolism.\n\nWeaknesses:\n\nNone\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105059.3.sa2](https://doi.org/10.7554/eLife.105059.3.sa2)\n\nSummary:\n\nKaya et al uncover an intriguing relationship between hippocampal sharp wave-ripple production and peripheral hormone exposure, food intake, and lateral hypothalamic function. These findings significantly expand our understanding of hippocampal function beyond mnemonic processes and point a direction for promising future research.\n\nStrengths:\n\nSome of the relationships observed in this paper are highly significant. In particular, the inverse relationship between GLP1/Leptin and Insulin/Ghrelin are particularly compelling as this aligns well with opposing hormone functions on satiety.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.105059.3.sa3](https://doi.org/10.7554/eLife.105059.3.sa3)\n\nSummary:\n\nThe manuscript by Kaya et al. explores the effects of feeding on sharp wave-ripples (SWRs) in the hippocampus, which could reveal a better understanding of how metabolism is regulated by neural processes. Expanding on prior work that showed that SWRs trigger a decrease in peripheral glucose levels, the authors further tested the relationship between SWRs and meal consumption by recording LFPs from the dorsal CA1 region of the hippocampus before and after meal consumption. They found an increase in SWR magnitude during sleep after food intake, in both food-restricted and ad libitum fed conditions. Using fiber photometry to detect GABAergic neuron activity in the lateral hypothalamus, they found increased activity locked to the onset of SWRs. They conclude that the animal's satiety state modulates the amplitude and rate of SWRs, and that SWRs modulate downstream circuits involved in regulating feeding.\n\nThe authors have addressed prior requests for revision and clarification, and provide a convincing case for SWRs being modulated by satiety state. These experiments provide an important step forward in understanding how metabolism is regulated in the brain. The study will likely be of great interest in the field of learning and memory while carrying broader implications for understanding brain-body physiology.\n",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6f38b0a7-8f3f-4ce5-bbbb-caae6f891f42",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C1",
+      "claim": "The hippocampus is involved in metabolic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "It has recently been found that the hippocampus, a brain region traditionally associated with memory and spatial navigation, is also involved in metabolic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is stated in the abstract without specific data from this manuscript but is presented as an established finding from recent research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "fa6c982a-3915-4d15-9d40-0cd2ffb2dd89",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C2",
+      "claim": "Hippocampal sharp wave-ripples (SWRs) reduce peripheral glucose levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, hippocampal sharp wave-ripples (SWRs), which are high-frequency neural oscillations supporting memory consolidation and foraging decisions, have been shown to reduce peripheral glucose levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references prior research findings without presenting new data in this section.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "79e81be9-1dca-4906-a11c-200161e7412b",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C3",
+      "claim": "SWRs occurring during sleep are significantly enhanced following food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SWRs occurring during sleep are significantly enhanced following food intake, with the magnitude of enhancement being dependent on the caloric content of the meal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript comparing pre-sleep and post-sleep SWR measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "cd694ef9-9da4-4c06-a39e-58b560c4654a",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C4",
+      "claim": "The magnitude of SWR enhancement is dependent on the caloric content of the meal.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that SWRs occurring during sleep are significantly enhanced following food intake, with the magnitude of enhancement being dependent on the caloric content of the meal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by dose-response data showing correlation between meal size and SWR changes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "55cb90f9-c80e-4934-a5e6-e0cadc038fc2",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C5",
+      "claim": "The pattern of SWR enhancement following food intake occurred under both food-deprived and ad libitum feeding conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "This pattern occurred under both food-deprived and ad libitum feeding conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from two different feeding paradigms presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "07aaf44b-839b-45fb-b06c-4e6f7ee04c73",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C6",
+      "claim": "GABAergic neurons in the lateral hypothalamus exhibit a robust SWR-triggered increase in activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we demonstrate that GABAergic neurons in the lateral hypothalamus, which are known to regulate food intake, exhibit a robust SWR-triggered increase in activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by fiber photometry recordings showing temporal correlation between SWRs and LH GABAergic neuron activity.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "d612c920-0914-47b4-a9be-d8f42d7db664",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C7",
+      "claim": "The hippocampus supports spatial navigation and the formation of episodic memories.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, the hippocampus supports spatial navigation and the formation of episodic memories (O'Keefe and Nadel, 1978; Scoville and Milner, 1957), which is crucial for finding and recalling the locations of food sources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to foundational studies in hippocampal function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "a4ddffee-1e88-4413-8724-3f887b04c478",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C8",
+      "claim": "The hippocampus encodes the trajectory leading to food via the sequential firing of hippocampal place cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the neurophysiological level, the hippocampus encodes the trajectory leading to food via the sequential firing of hippocampal place cells (O'Keefe and Nadel, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to established research on place cell function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "8825f717-d2ee-4d79-a77f-21e8a2084697",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C9",
+      "claim": "During food consumption and subsequent resting periods, hippocampal neurons replay the recent spatial trajectory in a temporally compressed manner during sharp wave-ripples (SWRs).",
+      "claim_type": "EXPLICIT",
+      "source": "During food consumption and subsequent resting periods, these same neurons replay the recent spatial trajectory in a temporally compressed manner during a highly synchronous oscillatory event called sharp wave-ripples (SWRs) (Buzs\u00e1ki, 1989; Diba and Buzs\u00e1ki, 2007; Joo and Frank, 2018; Skaggs and McNaughton, 1996; Wilson and McNaughton, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to prior research on hippocampal replay.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "8dcf5436-c9c5-4b4f-8470-7ef584b30f8f",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C10",
+      "claim": "SWRs communicate hippocampal activity patterns to the neocortex, supporting systems-level consolidation of memories.",
+      "claim_type": "EXPLICIT",
+      "source": "SWRs communicate hippocampal activity patterns to the neocortex, supporting systems-level consolidation of memories (Brodt et al., 2023; Buzs\u00e1ki, 2015; Klinzing et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on memory consolidation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "13f8253a-ec80-4e1d-b223-e3da5a6b0e0e",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C11",
+      "claim": "The hypothalamus receives dense multi-synaptic hippocampal innervation via the lateral septum (LS).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the neocortex, the hypothalamus, a key regulator of homeostasis, receives dense multi-synaptic hippocampal innervation via the lateral septum (LS) (Risold and Swanson, 1997; Tingley and Buzs\u00e1ki, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "46d39ac9-587f-4c91-a453-3739b0cb51f3",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C12",
+      "claim": "The hippocampo-lateral septum projections are highly convergent, allowing the LS to detect only the magnitude of the SWR, but not the identity and temporal order of hippocampal neuronal spiking.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the divergent hippocampo-cortical projections, the hippocampo-lateral septum projections are highly convergent, allowing the LS to detect only the magnitude of the SWR, but not the identity and temporal order of hippocampal neuronal spiking (Tingley and Buzs\u00e1ki, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on hippocampal-septal connectivity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "587e36f5-ff02-4a93-8f47-007564b3a467",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C13",
+      "claim": "The propagation of SWRs to hypothalamic nuclei is better suited to serve homeostatic functions rather than memory consolidation.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the propagation of SWRs to hypothalamic nuclei is better suited to serve homeostatic functions rather than memory consolidation (Buzs\u00e1ki and Tingley, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the anatomical properties of hippocampal-hypothalamic connections, supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "19d22d5e-6aa7-49a1-936f-f19e52ca597f",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C14",
+      "claim": "Tingley et al., 2021 found a negative relationship between SWR rates and subsequent peripheral glucose levels.",
+      "claim_type": "EXPLICIT",
+      "source": "By combining in vivo electrophysiology with continuous glucose monitoring in freely behaving rats, Tingley et al., 2021 found a negative relationship between SWR rates and subsequent peripheral glucose levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes findings from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "f6487ebc-a3a4-4af5-9553-3f4507411caa",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C15",
+      "claim": "Optogenetically induced SWRs effectively reduced peripheral glucose levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, they showed that optogenetically induced SWRs effectively reduced peripheral glucose levels, while chemogenetic inhibition of the LS abolished the correlation between SWR rate and glucose levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes experimental findings from Tingley et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "65d157c3-c9fa-453c-a748-6417e1e62c3d",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C16",
+      "claim": "Chemogenetic inhibition of the LS abolished the correlation between SWR rate and glucose levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, they showed that optogenetically induced SWRs effectively reduced peripheral glucose levels, while chemogenetic inhibition of the LS abolished the correlation between SWR rate and glucose levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes experimental findings from Tingley et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "ea3455bb-48ef-4576-a062-50dd0de3c316",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C17",
+      "claim": "Glucose levels are tightly regulated by the nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "The levels of glucose, the body's primary energy source, are tightly regulated by the nervous system (L\u00f3pez-Gambero et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on glucose regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "b6918363-cd93-47be-b7b3-a9472bbad312",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C18",
+      "claim": "Around meal times, neuronal systems involved in glucose metabolism proactively and reactively coordinate the bodily response to the postprandial spike in glucose levels.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, around meal times, neuronal systems involved in glucose metabolism proactively and reactively coordinate the bodily response to the postprandial spike in glucose levels (Chen et al., 2015; Steculorum et al., 2016; Woods et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on metabolic regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "2e949073-2f6c-44aa-8847-a2d3e9b6f593",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C19",
+      "claim": "Consuming larger meals (0.5\u20131.5 g) significantly increased the ripple power of SWRs in all 38 session pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that consuming larger meals (0.5\u20131.5 g) significantly increased the ripple power of SWRs in all 38 session pairs, whereas smaller meals and the No-food condition did not result in a similar effect (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "b1893b27-47ce-4da7-8d78-cb9196a9287d",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C20",
+      "claim": "Smaller meals and the No-food condition did not result in increased ripple power.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that consuming larger meals (0.5\u20131.5 g) significantly increased the ripple power of SWRs in all 38 session pairs, whereas smaller meals and the No-food condition did not result in a similar effect (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "0d19b736-ef1f-4cce-89a8-932c2170f537",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C21",
+      "claim": "Ripple rate was increased in 31 of 38 sessions following consumption of larger meals.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a similar modulation in ripple rate, which was increased in 31 of 38 sessions following consumption of larger meals (Figure 1D), but not in ripple duration (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "94c83ed6-5d6f-4921-a90a-d89ebb46ff83",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C22",
+      "claim": "Ripple duration was not modulated by larger meals.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a similar modulation in ripple rate, which was increased in 31 of 38 sessions following consumption of larger meals (Figure 1D), but not in ripple duration (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "882e7af0-2648-4bf7-a3d6-433384a7cd27",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C23",
+      "claim": "The magnitude of increase in ripple power and rate, but not duration, was positively correlated with meal size.",
+      "claim_type": "EXPLICIT",
+      "source": "We then examined whether there is a relationship between meal size and the magnitude of change in ripple attributes. We found that the magnitude of increase in ripple power and rate, but not duration, was positively correlated with meal size (Figure 1F\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analyses shown in Figures 1F-H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "ef00a8bb-3b91-4020-bf75-daa393ac72e3",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C24",
+      "claim": "There was no significant difference in the amount of time spent in NREM sleep in the pre and post sessions (p=0.1759).",
+      "claim_type": "EXPLICIT",
+      "source": "There was no significant difference in the amount of time spent in NREM sleep in the pre and post sessions (p=0.1759, paired t-test, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis of sleep duration data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "2020eefd-9ce9-4c0a-8d37-0a223b4c1939",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C25",
+      "claim": "Delta power increased after food intake in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "While delta power indeed increased after food intake in a dose-dependent manner (Figure 1I), and the change in delta power was correlated with the change in ripple power (Figure 1J), mediation analysis revealed that the effect of meal size on ripple power remained significant even after accounting for changes in delta power (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "8116e9f9-25bf-47e5-b582-934e923d97d6",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C26",
+      "claim": "The change in delta power was correlated with the change in ripple power.",
+      "claim_type": "EXPLICIT",
+      "source": "While delta power indeed increased after food intake in a dose-dependent manner (Figure 1I), and the change in delta power was correlated with the change in ripple power (Figure 1J), mediation analysis revealed that the effect of meal size on ripple power remained significant even after accounting for changes in delta power (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "ff5301b1-4159-4f65-b76d-a75cbb5e02d5",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C27",
+      "claim": "The effect of meal size on ripple power remained significant even after accounting for changes in delta power.",
+      "claim_type": "EXPLICIT",
+      "source": "While delta power indeed increased after food intake in a dose-dependent manner (Figure 1I), and the change in delta power was correlated with the change in ripple power (Figure 1J), mediation analysis revealed that the effect of meal size on ripple power remained significant even after accounting for changes in delta power (Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mediation analysis shown in Figure 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "94740453-6059-4a73-9dc5-b63487fed713",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C28",
+      "claim": "Chocolate consumption increased ripple power in subsequent sleep under ad libitum conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous findings, we found that chocolate consumption increased ripple power in subsequent sleep, with larger amounts of chocolate leading to greater increases in ripple power (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "3837f57c-6402-4d95-bb42-db681ba75aaf",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C29",
+      "claim": "Larger amounts of chocolate led to greater increases in ripple power.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous findings, we found that chocolate consumption increased ripple power in subsequent sleep, with larger amounts of chocolate leading to greater increases in ripple power (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by dose-response data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "61ed8907-a6ce-4bb6-a5d9-7529335b1fa3",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C30",
+      "claim": "The correlation between chocolate consumption and change in delta power was not significant under ad libitum conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the correlation between chocolate consumption and change in delta power was not significant, nor was the correlation with ripple rate or duration (Figure 2C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "52588726-509f-496e-8388-9ccb45c74c8f",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C31",
+      "claim": "The change in delta power did not significantly mediate the relationship between chocolate amount and the change in ripple power under ad libitum conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Further mediation analysis revealed that the change in delta power did not significantly mediate the relationship between chocolate amount and the change in ripple power (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mediation analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "e526556d-fc15-40c5-847f-1292d7bda80a",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C32",
+      "claim": "Consumption of regular Jello, but not sugar-free Jello, resulted in an increase in ripple power compared to the No-food condition.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that consumption of regular Jello, but not sugar-free Jello, resulted in an increase in ripple power and ripple rate compared to the No-food condition (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data comparing different Jello conditions shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "aada2d15-5b1e-41ba-a884-d38956b9b9e9",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C33",
+      "claim": "The increase in ripple power, but not rate, was higher following consumption of regular Jello compared to sugar-free Jello.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the increase in ripple power, but not rate, was higher following consumption of regular Jello compared to sugar-free Jello (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data comparing regular and sugar-free Jello shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "11dc362f-d0bb-4553-9d0e-4834a802a2a1",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C34",
+      "claim": "No differences were found in ripple duration or cortical delta power across Jello conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "No differences were found in ripple duration or cortical delta power across conditions (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "d55808e9-39ee-4889-b891-361a04bf3e01",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C35",
+      "claim": "The caloric content of meals, rather than the oro-/mechano-sensory experience of eating, underlies the post-meal enhancement in SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that the caloric content of meals, rather than the oro-/mechano-sensory experience of eating, underlies the post-meal enhancement in SWRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on the differential effects of caloric vs. non-caloric Jello on SWRs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "21b6699b-c425-4071-9182-01f97d9a68e2",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C36",
+      "claim": "Administration of GLP-1, leptin, and insulin did not produce robust, consistent, and dose-dependent effects on SWR attributes.",
+      "claim_type": "EXPLICIT",
+      "source": "Administration of GLP-1, leptin, and insulin did not produce robust, consistent, and dose-dependent effects on SWR attributes (Figure 4B\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 4B-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "169b4743-a233-4311-a4b2-8488aa918d43",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C37",
+      "claim": "Ghrelin administration resulted in a dose-dependent decrease in ripple rate under ad libitum conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, ghrelin administration resulted in a dose-dependent decrease in ripple rate under ad libitum conditions (Figure 4H) and a decrease in ripple power under food-restricted conditions (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "d4a0ee7b-5dd5-4066-b144-97e5d9d97e7c",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C38",
+      "claim": "Ghrelin administration resulted in a decrease in ripple power under food-restricted conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, ghrelin administration resulted in a dose-dependent decrease in ripple rate under ad libitum conditions (Figure 4H) and a decrease in ripple power under food-restricted conditions (Figure 4I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "925b1439-57d6-4706-91da-5393f6bfaacb",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C39",
+      "claim": "The effect of ghrelin on ripple power remained significant even after accounting for change in cortical delta power under food-restricted conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "While ghrelin administration also reduced cortical delta power, mediation analysis revealed that the effect of ghrelin on ripple power remained significant even after accounting for change in cortical delta power under food-restricted conditions (Figure 4Ii and ii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mediation analysis shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "9c263a0d-1984-4761-b391-fa2c4004c6e5",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C40",
+      "claim": "LH GABAergic neurons exhibit a robust and consistent increase in activity, peaking approximately 320 ms after SWR onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LH GABAergic neurons exhibit a robust and consistent increase in activity, peaking approximately 320 ms after SWR onset (Figure 5C\u2013J, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fiber photometry data shown in Figures 5C-J and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "a4426072-35a4-4662-b8de-bdd9c6dea404",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C41",
+      "claim": "Hunger increases arousal and impairs sleep quality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a bidirectional relationship between hunger and sleep also exists (Danguir and Nicolaidis, 1979; Rechtschaffen and Bergmann, 1995), where hunger increases arousal and impairs sleep quality (Danguir and Nicolaidis, 1979; Goldstein et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to prior research on hunger and sleep.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "a325de20-213b-48de-9d89-ea5dc578dc4d",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C42",
+      "claim": "About 75% of SWRs occur during NREM sleep in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that about 75% of SWRs occur during NREM sleep in rats (Tingley et al., 2021), and that SWRs are often triggered when slow waves and spindles are coupled (Sirota et al., 2003; Staresina et al., 2015), this suggests that SWRs can play a role in the connection between sleep and next-day metabolic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to Tingley et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "02351181-ed74-4900-8601-d9cd66a03f03",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C43",
+      "claim": "SWRs are often triggered when slow waves and spindles are coupled.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that about 75% of SWRs occur during NREM sleep in rats (Tingley et al., 2021), and that SWRs are often triggered when slow waves and spindles are coupled (Sirota et al., 2003; Staresina et al., 2015), this suggests that SWRs can play a role in the connection between sleep and next-day metabolic regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on sleep oscillations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "342d2f45-0493-4fd5-a5b5-2a95e5e1c395",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C44",
+      "claim": "HM, a patient who lost the ability to form new memories after the removal of his hippocampi, exhibited irregular eating habits and difficulties with interoceptive judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, HM, a famous patient who lost the ability to form new memories after the removal of his hippocampi, also exhibited irregular eating habits and difficulties with interoceptive judgments (Hebben et al., 1985).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to a case study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "f61a383f-762d-4c4c-80b7-cae08e3ffc63",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C45",
+      "claim": "Hippocampal lesions increase meal frequency in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier rodent studies similarly showed that hippocampal lesions increase meal frequency in rats (Clifton et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to animal research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "c2b509ce-c640-4f61-885a-c23dff856afa",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C46",
+      "claim": "Optogenetic inhibition of the hippocampus following meals decreased the latency to the next meal and increased its size.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, optogenetic inhibition of the hippocampus following meals was shown to decrease the latency to the next meal and increase its size (Hannapel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to optogenetic research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "935efb59-7b25-4ccc-bba4-76252e32bb29",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C47",
+      "claim": "Dopamine-2 receptor neurons in the dorsal CA3 region of the hippocampus are responsive to meals and food cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Another study identified dopamine-2 receptor neurons in the dorsal CA3 region of the hippocampus as being responsive to meals and food cues, with inhibition and activation of these neurons increasing and decreasing food intake, respectively (Azevedo et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on hippocampal dopamine receptors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "680e845a-d064-4bab-b7c8-6717833d3a17",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C48",
+      "claim": "Administration of leptin into both the ventral and dorsal hippocampus reduces feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the administration of leptin into both the ventral and dorsal hippocampus (Kanoski et al., 2011), and exendin-4 (a GLP-1 agonist) into the ventral hippocampus (Hsu et al., 2015), have been shown to reduce feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to pharmacological research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "dd5200d5-ebba-4516-96d4-9558f0526fd0",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C49",
+      "claim": "Exendin-4 (a GLP-1 agonist) administration into the ventral hippocampus reduces feeding.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the administration of leptin into both the ventral and dorsal hippocampus (Kanoski et al., 2011), and exendin-4 (a GLP-1 agonist) into the ventral hippocampus (Hsu et al., 2015), have been shown to reduce feeding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to pharmacological research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "ef1bc403-8368-46d8-a81c-45a452525000",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C50",
+      "claim": "Ghrelin signaling in the ventral hippocampus increases meal size through a descending LH-hindbrain circuit.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, ghrelin signaling in the ventral hippocampus has been shown to increase meal size through a descending LH-hindbrain circuit (Suarez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to circuit-level research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "418d04e0-0968-4044-8d48-81b3d0f43a9b",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C51",
+      "claim": "Distinct neural populations in the dorsal hippocampus show increased activity following the intake of either fats or sugars.",
+      "claim_type": "EXPLICIT",
+      "source": "A recent study found distinct neural populations in the dorsal hippocampus that show increased activity following the intake of either fats or sugars, and these populations were involved in memory for the location of the respective foods, as well as in food intake (Yang et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to recent research on hippocampal food-responsive neurons.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "8fadc13c-5a42-49e7-b8f5-7c343473362d",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C52",
+      "claim": "Peripheral hormones that rise during the postprandial period, such as insulin, amylin and GLP-1, not only reduce plasma glucose levels but also act as satiety signals that inhibit food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Peripheral hormones that rise during the postprandial period, such as insulin, amylin and GLP-1, not only reduce plasma glucose levels but also act as satiety signals that inhibit food intake (Woods et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on metabolic hormones.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "2884fa7e-a0d9-45d7-ac31-978253c408da",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C53",
+      "claim": "Memory tasks guided by food reward enhance SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is widely recognized that memory tasks guided by food reward enhance SWRs (Ambrose et al., 2016; Singer and Frank, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on learning and SWRs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "fdf845b5-723b-4023-9f90-5d04b586d462",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C54",
+      "claim": "Memory consolidation is linked to an increased rate and duration of SWRs or replay events.",
+      "claim_type": "EXPLICIT",
+      "source": "This is interesting in light of prior studies showing that memory consolidation is linked to an increased rate (Eschenko et al., 2008) and duration (Fern\u00e1ndez-Ruiz et al., 2019) of SWRs or replay events (though reactivation strength also increases; Giri et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on memory consolidation and SWR properties.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "e126c372-cec2-4c50-8781-937237a4188a",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C55",
+      "claim": "Ripple power is strongly correlated with the degree of synchronized recruitment of hippocampal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Ripple power is strongly correlated with the degree of synchronized recruitment of hippocampal populations (Csicsvari et al., 1999; Schomburg et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on ripple power and neuronal synchronization.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "7992a36f-87f4-4573-9189-19c7d157474c",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C56",
+      "claim": "Increased SWR rates following learning allow repeated reactivation of recent experience.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, increased SWR rates following learning allow repeated reactivation of recent experience (Eschenko et al., 2008; Giri et al., 2019), while long-duration SWRs have been proposed to facilitate replay of particularly long spatial trajectories (Fern\u00e1ndez-Ruiz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on SWR rates and memory reactivation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "458d1f83-d0d4-4d3e-9b88-357d70aacdcd",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C57",
+      "claim": "Long-duration SWRs have been proposed to facilitate replay of particularly long spatial trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, increased SWR rates following learning allow repeated reactivation of recent experience (Eschenko et al., 2008; Giri et al., 2019), while long-duration SWRs have been proposed to facilitate replay of particularly long spatial trajectories (Fern\u00e1ndez-Ruiz et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on SWR duration and trajectory replay.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "8833b5a2-f5ac-4cf0-a07e-43db171f2a9b",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C58",
+      "claim": "Replay content is not communicated to subcortical regions involved in metabolic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "In alignment with the previous finding that replay content is not communicated to subcortical regions involved in metabolic regulation (Tingley and Buzs\u00e1ki, 2020), ripple power may be the key attribute relevant for homeostatic signaling, while replay content, manifesting in increased SWR rate and duration, underlies the mnemonic function of SWRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on hippocampal-subcortical communication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "acb1155d-151c-4fde-becb-c6af1f580080",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C59",
+      "claim": "GABAergic lateral septal neurons can facilitate the relay of SWRs to the LH by providing windows of disinhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "GABAergic lateral septal neurons can facilitate the relay of SWRs to the LH by providing windows of disinhibition (Risold and Swanson, 1997; Tingley et al., 2021; Wong et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on lateral septal function.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "86b18029-6ecd-472c-ac96-f466332ccbb1",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C60",
+      "claim": "Mice typically consume 4\u20135 g of chow per day.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that mice typically consume 4\u20135 g of chow per day (Bachmanov et al., 2002), the largest amount corresponded to about one-third of their daily food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on mouse feeding behavior.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "4ac72b38-2696-4e58-9273-0d3b6ea8a934",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C61",
+      "claim": "Each gram of chow contained 4.1 kcal.",
+      "claim_type": "EXPLICIT",
+      "source": "Each gram of chow contained 4.1 kcal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "d54ef628-c270-4872-a556-ac29c094e282",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C62",
+      "claim": "Each gram of chocolate contained 5 kcal.",
+      "claim_type": "EXPLICIT",
+      "source": "Each gram of chocolate contained 5 kcal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "5b726cbd-71d1-49b6-a554-ca9b5b91a4a6",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C63",
+      "claim": "1 g of regular Jello contained 1.7 kcals.",
+      "claim_type": "EXPLICIT",
+      "source": "1 g of regular and sugar-free Jello meals contained 1.7 and 0 kcals, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "cf60f465-526b-4065-990d-e6ce06a227b4",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C64",
+      "claim": "1 g of sugar-free Jello contained 0 kcals.",
+      "claim_type": "EXPLICIT",
+      "source": "1 g of regular and sugar-free Jello meals contained 1.7 and 0 kcals, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "2b069385-6049-46df-990f-dfb9b6b903f6",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C65",
+      "claim": "The sugar-free Jello contained artificial sweeteners (aspartame and acesulfame potassium).",
+      "claim_type": "EXPLICIT",
+      "source": "The sugar-free Jello contained artificial sweeteners (aspartame and acesulfame potassium).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a factual statement about the experimental materials used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "fdb8347e-6380-4bb1-b0e6-6c0013d2706e",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C66",
+      "claim": "SWRs could play an inhibitory role in regulating food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Given this dual inhibitory effect of postprandial signals on both glucose levels and food intake, we propose that SWRs could also play an inhibitory role in regulating food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors based on their findings and prior knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "0b188bed-2cd9-4797-a112-68edcf7d528e",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C67",
+      "claim": "The temporal coordination between the onset of SWRs and the increase in LH population activity may represent a mechanism by which SWRs influence peripheral metabolism and food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that the temporal coordination between the onset of SWRs and the increase in LH population activity may represent a mechanism by which SWRs influence peripheral metabolism and food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors based on their fiber photometry findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "4813cadb-b1b1-4cb7-8af5-8f3d9c875e55",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C68",
+      "claim": "Hippocampal-lateral hypothalamic communication is a potential mechanism by which SWRs could modulate peripheral metabolism and food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings identify the satiety state as a factor modulating SWRs and suggest that hippocampal-lateral hypothalamic communication is a potential mechanism by which SWRs could modulate peripheral metabolism and food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis suggested by the authors based on their findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "f8f043e5-c2d1-4ec3-b500-956b481b549f",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C69",
+      "claim": "The satiety state is a factor modulating SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings identify the satiety state as a factor modulating SWRs and suggest that hippocampal-lateral hypothalamic communication is a potential mechanism by which SWRs could modulate peripheral metabolism and food intake.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the experimental findings showing food-dependent modulation of SWRs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "9ce7373a-2bcf-48df-a00a-bb253f450045",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C70",
+      "claim": "Ripple power may be the key attribute relevant for homeostatic signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "In alignment with the previous finding that replay content is not communicated to subcortical regions involved in metabolic regulation (Tingley and Buzs\u00e1ki, 2020), ripple power may be the key attribute relevant for homeostatic signaling, while replay content, manifesting in increased SWR rate and duration, underlies the mnemonic function of SWRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a hypothesis proposed by the authors based on their findings and prior research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "d56458f6-6f69-4e8d-83db-d49ed30def3e",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C71",
+      "claim": "Replay content, manifesting in increased SWR rate and duration, underlies the mnemonic function of SWRs.",
+      "claim_type": "EXPLICIT",
+      "source": "In alignment with the previous finding that replay content is not communicated to subcortical regions involved in metabolic regulation (Tingley and Buzs\u00e1ki, 2020), ripple power may be the key attribute relevant for homeostatic signaling, while replay content, manifesting in increased SWR rate and duration, underlies the mnemonic function of SWRs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is an inference based on prior research and the authors' findings.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "959578c1-988a-4ea8-9592-eec0f3282d8a",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C72",
+      "claim": "Chronic sleep disturbances elevate the risk of long-term conditions such as diabetes and metabolic syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic sleep disturbances, on the other hand, elevate the risk of long-term conditions such as diabetes and metabolic syndrome (Knutson et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to epidemiological research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "31be44f1-0115-4b8b-b4e9-d4771658b531",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C73",
+      "claim": "A poor night's sleep leads to increased appetite and impaired metabolic regulation the subsequent day.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, a poor night's sleep leads to increased appetite and impaired metabolic regulation the subsequent day (Hogenkamp et al., 2013; Klingenberg et al., 2013; Schmid et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on sleep and metabolism.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "70835eaf-b9ef-48a7-97e6-81dc7bace69e",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C74",
+      "claim": "Stronger coupling of sleep spindles and cortical slow-wave activity is linked to improved glucose metabolism regulation the subsequent day in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the neural mechanisms underlying these processes remain largely unknown, a recent study linked stronger coupling of sleep spindles and cortical slow-wave activity to improved glucose metabolism regulation the subsequent day in humans (Vallat et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to recent human research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "3bc29bc9-1e71-4663-a299-42e0f645b638",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C75",
+      "claim": "The extent of SWR modulation was weaker under ad libitum conditions compared to food-restricted conditions.",
+      "claim_type": "IMPLICIT",
+      "source": "Notably, the extent of SWR modulation was weaker under ad libitum conditions, similar to the asymmetric hypothalamic response to food in sated versus fasted animals (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from comparing the results under different feeding conditions and is explicitly stated in the discussion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "c0786223-3cef-458b-bad4-946fca9608e3",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C76",
+      "claim": "The hypothalamic response to food is asymmetric in sated versus fasted animals.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the extent of SWR modulation was weaker under ad libitum conditions, similar to the asymmetric hypothalamic response to food in sated versus fasted animals (Chen et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on hypothalamic function.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "3a139f98-ca01-40a2-9eeb-31eea704b01a",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C77",
+      "claim": "Ghrelin rises during fasting.",
+      "claim_type": "EXPLICIT",
+      "source": "Ghrelin, a prominent gut hormone, rises during fasting (Toshinai et al., 2001) and promotes increases in glucose levels and food intake (Poher et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on ghrelin.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "7ca6696c-4cac-4472-83cc-3b93779300ea",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C78",
+      "claim": "Ghrelin promotes increases in glucose levels and food intake.",
+      "claim_type": "EXPLICIT",
+      "source": "Ghrelin, a prominent gut hormone, rises during fasting (Toshinai et al., 2001) and promotes increases in glucose levels and food intake (Poher et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to research on ghrelin function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "6e06af75-6326-4249-aed6-f7790f67099f",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C79",
+      "claim": "Meals trigger the release of insulin, glucagon-like peptide-1 (GLP-1), and leptin.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, meals trigger the release of insulin, glucagon-like peptide-1 (GLP-1), and leptin, which lower glucose levels and induce satiety (Gutzwiller et al., 1999; Woods et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on postprandial hormones.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "5f952db6-549c-4b4f-b02d-bb71426572df",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C80",
+      "claim": "Insulin, GLP-1, and leptin lower glucose levels and induce satiety.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, meals trigger the release of insulin, glucagon-like peptide-1 (GLP-1), and leptin, which lower glucose levels and induce satiety (Gutzwiller et al., 1999; Woods et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on hormone function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "9dd97dbf-7fea-455b-83b9-c6d3ae981173",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C81",
+      "claim": "Ghrelin has a dose-dependent negative effect on ripple rate and power.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that ghrelin has a dose-dependent negative effect on ripple rate and power, which exceeds its influence on sleep quality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a conclusion drawn from the ghrelin administration experiments and mediation analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "380a4125-039a-4d7f-9c54-033f17ed3c35",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C82",
+      "claim": "GLP-1, insulin, and leptin have known effects on hippocampal memories and synaptic transmission.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, we did not find consistent modulation of SWRs following GLP-1, insulin, or leptin administration, despite their known effects on hippocampal memories and synaptic transmission (Abbas et al., 2009; McNay et al., 2010; Oomura et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on hormone effects on the hippocampus.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "2fb7774d-88a7-4222-8bd4-a1b9d584821e",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C83",
+      "claim": "The lateral hypothalamus (LH) receives the densest di-synaptic input from the dorsal hippocampus via the lateral septum.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the hypothalamic nuclei that participate in feeding regulation (Anand and Brobeck, 1951; Stuber and Wise, 2016), the lateral hypothalamus (LH) receives the densest di-synaptic input from the dorsal hippocampus via the lateral septum (Risold and Swanson, 1997; Tingley and Buzs\u00e1ki, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to anatomical studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "988a65b2-39a1-47c2-bca4-6befd762effb",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C84",
+      "claim": "LH GABAergic neurons exhibit a robust and consistent increase in activity peaking approximately 320 ms after SWR onset.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that LH GABAergic neurons exhibit a robust and consistent increase in activity, peaking approximately 320 ms after SWR onset (Figure 5C\u2013J, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fiber photometry data shown in Figures 5C-J and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "c0a8d061-51fa-4fe0-8994-09aae9d7f8d6",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C85",
+      "claim": "There was a significant SWR-triggered increase in LH GABA activity across sessions (p=5.3337e-05).",
+      "claim_type": "EXPLICIT",
+      "source": "There was a significant SWR-triggered increase in LH GABA activity across sessions (p=5.3337e-05, paired t-test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 5\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "f406b61b-b8ca-4556-9d74-16095387924e",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C86",
+      "claim": "Neural systems regulating food intake are responsive to both sensory and motor experiences related to feeding, such as food detection, chewing, and mechanical stretch of the gut, as well as humoral signals indicating energy availability.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies suggested that neural systems regulating food intake are responsive to both sensory and motor experiences related to feeding, such as food detection, chewing, and mechanical stretch of the gut, as well as humoral signals indicating energy availability (Bai et al., 2019; Chen et al., 2015; Thanarajah et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to research on feeding regulation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "6e42d763-5a67-49da-a2ec-b038c2ce2908",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C87",
+      "claim": "Consumption of regular Jello resulted in a greater increase in ripple power compared to non-caloric Jello (t(14) = 2.59, p=0.02).",
+      "claim_type": "EXPLICIT",
+      "source": "Consumption of regular Jello resulted in a greater increase in ripple power compared to non-caloric Jello (t(14) = 2.59, p=0.02) and the control condition (t(15) = 2.39, p=0.03), with no significant difference between sugar-free Jello and the control condition (p=0.38).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "c54350b7-99d6-48ae-8f15-20bf8bef7a3c",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C88",
+      "claim": "Regular Jello consumption increased SWR rate compared to the control condition (t(15) = 2.18, p=0.046).",
+      "claim_type": "EXPLICIT",
+      "source": "Regular Jello consumption increased SWR rate compared to the control condition (t(15) = 2.18, p=0.046), with no other significant differences across conditions (ps>0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "d7abb8f1-e570-4025-bbd2-95322c44bf4f",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C89",
+      "claim": "Insulin administration caused a dose-dependent decrease in ripple rate under food-restricted conditions (R = \u20130.38, p=0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "No dose-dependent effects were detected in ripple power, rate, or duration following the administration of GLP-1 (B, C), leptin (D, E), or insulin (F) (ps>0.05), except a decrease in ripple rate following insulin administration under food-restricted conditions (G, R = \u20130.38, p=0.01).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "78be48ad-939c-4ddb-9c6c-1685c0d6544e",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C90",
+      "claim": "Ghrelin administration caused a dose-dependent decrease in SWR rate (R = \u20130.49, p=0.0008) and delta power (R = \u20130.42, p=0.005) under ad libitum conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ghrelin administration caused a dose-dependent decreased in SWR rate (R = \u20130.49, p=0.0008) and delta power (R = \u20130.42, p=0.005) under ad libitum conditions (H), and decreased ripple power (R = \u20130.64, p=0.0002), ripple rate (R = \u20130.63, p=0.0003), and delta power (R = \u20130.73, p=0.00014) under food-restricted conditions (I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analyses shown in Figure 4H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "c8097775-b471-49d8-a3ad-1980d6efb0e2",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C91",
+      "claim": "Ghrelin administration decreased ripple power (R = \u20130.64, p=0.0002), ripple rate (R = \u20130.63, p=0.0003), and delta power (R = \u20130.73, p=0.00014) under food-restricted conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Ghrelin administration caused a dose-dependent decreased in SWR rate (R = \u20130.49, p=0.0008) and delta power (R = \u20130.42, p=0.005) under ad libitum conditions (H), and decreased ripple power (R = \u20130.64, p=0.0002), ripple rate (R = \u20130.63, p=0.0003), and delta power (R = \u20130.73, p=0.00014) under food-restricted conditions (I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analyses shown in Figure 4I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "1287ee24-5ae9-44ec-8c18-18c8b4f45eb2",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C92",
+      "claim": "The correlation between food amount and fold change in ripple power was R = 0.66, p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "(F\u2013I) Correlations between food amount and fold change in ripple power (F, R = 0.66, p<0.001), fold change in ripple rate (G, R = 0.44, p<0.001), fold change in ripple duration (H, NS) and fold change in delta power (I, R = 0.45, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "a18d1b5b-169a-473c-ac33-7b5f1ba67ed2",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C93",
+      "claim": "The correlation between food amount and fold change in ripple rate was R = 0.44, p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "(F\u2013I) Correlations between food amount and fold change in ripple power (F, R = 0.66, p<0.001), fold change in ripple rate (G, R = 0.44, p<0.001), fold change in ripple duration (H, NS) and fold change in delta power (I, R = 0.45, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "7ec3f2d3-b0e5-481b-a84d-e50905c52d59",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C94",
+      "claim": "The correlation between food amount and fold change in delta power was R = 0.45, p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "(F\u2013I) Correlations between food amount and fold change in ripple power (F, R = 0.66, p<0.001), fold change in ripple rate (G, R = 0.44, p<0.001), fold change in ripple duration (H, NS) and fold change in delta power (I, R = 0.45, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 1I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "21743d05-d6e7-46a7-ac6c-154c6d7773fa",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C95",
+      "claim": "The correlation between fold change in ripple power and fold change in delta power was R = 0.65, p<0.001.",
+      "claim_type": "EXPLICIT",
+      "source": "(J) Correlation between fold change in ripple power and fold change in delta power (R = 0.65. p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "3bd6d5a0-6a61-4ae8-a5bf-e55833d03d09",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C96",
+      "claim": "The correlation between the amount of chocolate consumed and the degree of the increase in ripple power under ad libitum conditions was R = 0.57, p=0.0001.",
+      "claim_type": "EXPLICIT",
+      "source": "(B) Correlation between the amount of chocolate consumed and the degree of the increase in ripple power under ad libitum conditions (Nanimal = 9, Nsession = 39, R = 0.57, p=0.0001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by correlation analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "0c64ad6b-63c6-4cdb-b89c-fbb3ae2d379e",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C97",
+      "claim": "The mediation analysis showed that the effect of food intake on ripple power was significant after accounting for sleep-dependent effects (the direct effect of meal size on the change in ripple power: B = 0.10, SE = 0.02, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "(K) A mediation analysis, indicating that the effect of food intake on ripple power was significant after accounting for sleep-dependent effects (correlation between the changes in delta power and ripple power: B = 0.16, SE = 0.03, p<0.001; the effect of meal size on the change in delta power: B = 0.28, SE = 0.07, p<0.001; the indirect effect of the change in delta power mediating the relationship between meal size and ripple power: B = 0.04, SE = 0.01, p<0.05, the direct effect of meal size on the change in ripple power: B = 0.10, SE = 0.02, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mediation analysis shown in Figure 1K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "681a805d-44c7-4b37-a172-6e34e6f79da6",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C98",
+      "claim": "The mediation analysis showed that the effect of chocolate intake on ripple power was significant after accounting for sleep-dependent effects (the direct effect of meal size on the change in ripple power: B = 0.05, SE = 0.01, p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "(F) A mediation analysis showed that the effect of chocolate intake on ripple power was significant after accounting for sleep-dependent effects (the indirect effect of the change in delta power mediating the relationship between meal size and ripple power: B = 0.01, SE = 0.01, p>0.05, the direct effect of meal size on the change in ripple power: B = 0.05, SE = 0.01, p<0.001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mediation analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "f8cde137-ab9b-4290-b73f-a75f670b54e3",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "claim_id": "C99",
+      "claim": "Mediation analysis revealed that ghrelin's effect on ripple power remained significant after accounting for changes in cortical delta power under food-restricted conditions (direct effect of ghrelin on ripple power: B = \u20130.25, SE = 0.11, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "Mediation analysis revealed that ghrelin's effect on ripple power remained significant after accounting for changes in cortical delta power under food-restricted conditions (Ii, Iii, direct effect of ghrelin on ripple power: B = \u20130.25, SE = 0.11, p<0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by mediation analysis shown in Figure 4Ii and Iii.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6fc422c4-7abe-4ec1-909f-405ce4317eea",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Food intake enhances hippocampal SWRs in a dose-dependent manner under food-restricted conditions. Larger meals (\u22650.5g) significantly increased ripple power in all 38 session pairs and ripple rate in 31/38 sessions, with the magnitude of increase positively correlated with meal size (ripple power: R=0.66, p<0.001; ripple rate: R=0.44, p<0.001). Ripple duration was not modulated, and NREM sleep duration did not differ between pre- and post-sleep sessions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C4, C19-C24, C92-C93 provide converging evidence from multiple experimental sessions showing consistent, dose-dependent increases in ripple power and rate following food intake. The statistical analyses are appropriate (correlations, paired comparisons), sample sizes are adequate (38 session pairs), and the control condition (no food) shows no effect. The lack of change in NREM duration (C24) strengthens the conclusion that effects are specific to SWR properties rather than sleep amount.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "431df1d5-0666-43db-b483-38f52922e5ed",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The effect of food intake on ripple power is independent of sleep quality changes under food-restricted conditions. While delta power increased dose-dependently with meal size (R=0.45, p<0.001) and correlated with ripple power changes (R=0.65, p<0.001), mediation analysis showed that meal size had a significant direct effect on ripple power (B=0.10, SE=0.02, p<0.001) after accounting for delta power changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C27, C94-C95, C97 demonstrate appropriate use of mediation analysis to disentangle sleep quality effects from direct food effects on SWRs. The statistical approach is sound, showing both an indirect effect through delta power and a significant direct effect. This addresses a key confound (hunger-induced poor sleep) and strengthens the interpretation that food intake directly modulates SWRs beyond simply improving sleep quality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "0fb88761-0e3c-4963-a1b3-7a25f31879f6",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Food intake enhances ripple power under ad libitum feeding conditions, though the effect is weaker than under food restriction. Chocolate consumption (0.1-1g) increased ripple power dose-dependently (R=0.57, p=0.0001) without significant effects on delta power, ripple rate, or duration. Mediation analysis confirmed the direct effect of chocolate on ripple power (B=0.05, SE=0.01, p<0.001) was independent of delta power changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C31, C75, C96, C98 provide critical evidence that SWR enhancement is not merely a recovery from hunger-induced sleep impairment. The ad libitum experiments show similar dose-dependent effects on ripple power, though weaker in magnitude (C75), which is consistent with known asymmetric hypothalamic responses to food in different satiety states. The lack of delta power correlation (C30) and mediation results (C31, C98) further support independence from sleep quality effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "f6ee7951-397c-46c0-b127-b577dbe137ef",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Caloric content, rather than sensory experience of eating, drives SWR enhancement. Regular Jello (1.7 kcal/g) increased ripple power compared to both sugar-free Jello (0 kcal, containing artificial sweeteners) and no-food controls (p=0.02 and p=0.03, respectively), with no difference between sugar-free Jello and controls. No effects were observed on ripple duration or delta power across conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35, C63-C65, C87-C88 provide strong evidence through a well-designed control experiment comparing isocaloric sensory experiences. The use of artificial sweeteners (C65) controls for taste while eliminating calories, and the differential effects on ripple power (C87) support the caloric hypothesis. Statistical comparisons are appropriate with adequate controls. This is a key mechanistic finding distinguishing metabolic from sensory/behavioral effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Ghrelin, but not GLP-1, leptin, or insulin, shows dose-dependent modulation of SWRs. Ghrelin administration decreased ripple rate under ad libitum conditions (R=-0.49, p=0.0008) and ripple power under food-restricted conditions (R=-0.64, p=0.0002), with effects remaining significant after accounting for delta power changes. GLP-1, leptin, and insulin showed no consistent dose-dependent effects except a modest insulin effect on ripple rate (R=-0.38, p=0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C39, C81, C89-C91, C99 show clear ghrelin effects but negative results for other hormones. While ghrelin data are convincing with appropriate mediation analyses, the authors acknowledge limitations in experimental design (subcutaneous delivery, single hormone administration, 2-hour observation window) that may have obscured effects of satiety hormones. The negative findings for GLP-1, leptin, and insulin cannot definitively rule out their involvement, making the overall mechanistic picture incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "724a657d-ad5a-4405-9cb9-b8be6f5420c8",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "LH GABAergic neurons exhibit robust SWR-triggered increases in activity, peaking approximately 320ms after SWR onset. Fiber photometry recordings showed significant increases in LH GABA activity following SWRs across sessions (p=5.3337e-05, paired t-test), demonstrating temporal coordination between hippocampal SWRs and lateral hypothalamic activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C40, C84-C85 provide direct physiological evidence of hippocampal-hypothalamic communication using appropriate methodology (fiber photometry with genetic targeting). The statistical significance is strong (p<0.0001), and the consistent temporal relationship across sessions supports reliability. However, this is correlational data showing temporal association, not causal evidence that SWRs drive LH activity. The ~320ms delay is plausible for di-synaptic transmission via lateral septum.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "b8aef2a3-7339-440b-bdf8-da42216a2e68",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that satiety state modulates SWRs and that hippocampal-lateral hypothalamic communication may mediate SWR effects on metabolism and food intake. They hypothesize that ripple power, rather than replay content (rate/duration), is the key attribute for homeostatic signaling, while replay content underlies mnemonic functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C66-C70 are explicitly speculative hypotheses (\"propose,\" \"may represent,\" \"could play\") based on the presented data and prior literature. While C69 (satiety modulates SWRs) is supported by the food intake experiments, claims C66-C68 and C70 require additional causal experiments (e.g., closed-loop SWR suppression, manipulation of LH activity) to be validated. These are reasonable interpretations but remain untested predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background on hippocampal function and prior evidence for metabolic roles of SWRs. The hippocampus supports spatial navigation and memory through place cell activity and SWR-mediated replay. Anatomically, the hippocampus projects to the hypothalamus via the lateral septum, with convergent connectivity suited for homeostatic rather than mnemonic signaling. Prior work (Tingley et al., 2021) demonstrated that SWRs reduce peripheral glucose levels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C16 accurately represent established knowledge and prior findings, supported by appropriate citations to foundational and recent literature. These provide essential context for the current study. The anatomical claims (C11-C13) are well-established, and the Tingley et al. findings (C14-C16) are accurately described and provide the key motivation for the current experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "f7031abd-a198-4843-bea1-4fb1973460f4",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background on metabolic regulation, sleep-metabolism interactions, and hormone functions. Glucose levels are tightly regulated by the nervous system, with coordinated responses to postprandial glucose spikes. Bidirectional relationships exist between hunger and sleep. Various hormones (ghrelin, insulin, GLP-1, leptin) have known roles in glucose regulation and food intake, with some affecting hippocampal function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18, C41-C43, C52, C72-C74, C76-C80, C82, C86 accurately represent established physiological knowledge supported by appropriate citations. These provide necessary background on metabolic regulation and hormone functions that contextualize the experimental manipulations and interpretations. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior evidence for hippocampal involvement in food intake regulation. Patient HM showed irregular eating habits after hippocampal removal. Rodent studies demonstrate that hippocampal lesions, optogenetic inhibition, and specific neuronal populations affect meal frequency, size, and food intake. Hippocampal hormone signaling (leptin, GLP-1, ghrelin) modulates feeding behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C51 accurately cite relevant prior literature establishing hippocampal roles in feeding regulation. The citations span human case studies, lesion work, optogenetics, and pharmacology, providing comprehensive background. These claims appropriately contextualize the current findings within the broader literature on hippocampal-metabolic interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "6135c7f1-2778-4453-b038-902a96eb77d1",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background on SWR properties and their functional significance. Memory tasks with food reward enhance SWRs. Memory consolidation is linked to increased SWR rate and duration. Ripple power correlates with synchronized hippocampal recruitment. Different SWR attributes (power vs. rate/duration) may serve distinct functions (homeostatic vs. mnemonic), with replay content not communicated to subcortical metabolic regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C58, C71 accurately represent prior literature on SWR properties and functions, supported by appropriate citations. These provide essential background for interpreting the differential effects on ripple power vs. rate/duration observed in the current study. The distinction between homeostatic and mnemonic functions (C58, C71) is based on cited anatomical work and provides a framework for the authors' interpretations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "32d64688-3e05-4554-84ca-8e76c9d1c151",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Anatomical basis for hippocampal-hypothalamic communication. The lateral hypothalamus receives dense di-synaptic input from the dorsal hippocampus via the lateral septum. GABAergic lateral septal neurons can facilitate SWR relay to the LH through disinhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59 and C83 accurately represent established anatomical connectivity supported by appropriate citations. These provide the anatomical framework for interpreting the fiber photometry results showing SWR-triggered LH activity. The claims are well-supported by prior tracing and functional studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "7c495c4e-2783-4651-b429-5c1f938fd5ec",
+      "content_id": "0c4cbe66-3455-4c4c-b727-41896bbc7b6a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Experimental materials and caloric content specifications. Mice typically consume 4-5g chow daily. Chow contained 4.1 kcal/g, chocolate 5 kcal/g, regular Jello 1.7 kcal/g, and sugar-free Jello 0 kcal/g. Sugar-free Jello contained artificial sweeteners (aspartame and acesulfame potassium).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C65 provide essential methodological details about experimental materials. The caloric content specifications are factual and necessary for interpreting dose-response relationships. The citation for typical mouse food consumption (C60) is appropriate. These details enable replication and proper interpretation of the dose-dependent effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "90e04f37-6edd-4efe-8b01-c99c6b78d465",
+      "content_id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Food intake enhances hippocampal SWRs in a dose-dependent manner under food-restricted conditions. Larger meals (0.5\u20131.5 g) significantly increased ripple power and rate, but not duration, with the magnitude of enhancement positively correlated with meal size (R=0.66 for power, R=0.44 for rate). This pattern occurred under both food-deprived and ad libitum feeding conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this finding. The editor states 'Convincing evidence supports the conclusion that sharp wave-ripples are enhanced by food consumption.' Reviewer 1 notes 'The data support the main conclusions of the manuscript that food intake enhances hippocampal SWRs.' Reviewer 3 states the authors 'provide a convincing case for SWRs being modulated by satiety state.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "0f165af4-c40c-41ce-80ca-08b2785c0000",
+      "content_id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The effect of meal size on ripple power is independent of sleep depth changes. While delta power increased after food intake in a dose-dependent manner and correlated with ripple power changes, mediation analysis revealed that the direct effect of meal size on ripple power remained significant (B=0.10, p<0.001) even after accounting for changes in delta power.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this mediation analysis or the independence of the food effect from sleep depth. The finding is presented as part of the well-performed experiments that Reviewer 1 notes are 'well presented, visually' with data that 'support the main conclusions.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "ec01781d-0a9c-499b-a035-e83d82ebebd7",
+      "content_id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Under ad libitum feeding conditions, chocolate consumption increased ripple power in a dose-dependent manner (R=0.57, p=0.0001), with weaker modulation compared to food-restricted conditions. Delta power changes did not significantly mediate this relationship, and the direct effect remained significant (B=0.05, p<0.001).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding as part of the overall demonstration that SWRs are modulated by food intake across different feeding paradigms. Reviewer 3 explicitly states the authors demonstrate that 'the animal's satiety state modulates the amplitude and rate of SWRs' across conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "c4cfe2d5-a9e7-4c97-bad4-5ade53af84ec",
+      "content_id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Caloric content, rather than sensory experience of eating, drives SWR enhancement. Regular Jello (1.7 kcal/g) increased ripple power and rate compared to both sugar-free Jello (0 kcal) and no-food controls, while sugar-free Jello showed no significant difference from controls, with no changes in ripple duration or delta power across conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question this critical control experiment distinguishing caloric from sensory effects. Reviewer 1 notes the authors 'use multiple foods and forms of food delivery to show that the frequency and power of SWRs increase following food intake, and that this effect depends on the caloric content of food.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "4c14402d-8acc-4d67-ad88-dc5383207633",
+      "content_id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Ghrelin negatively affects SWR properties in a dose-dependent manner, while GLP-1, leptin, and insulin show no consistent effects. Ghrelin administration decreased ripple rate under ad libitum conditions (R=-0.49, p=0.0008) and ripple power under food-restricted conditions (R=-0.64, p=0.0002), with effects remaining significant after accounting for delta power changes. Other hormones showed no robust, consistent, dose-dependent effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm these hormone findings. Reviewer 1 states the authors demonstrate 'that ghrelin negatively affects SWR rate and power, but not GLP-1, insulin, or leptin.' Reviewer 2 notes 'the inverse relationship between GLP1/Leptin and Insulin/Ghrelin are particularly compelling as this aligns well with opposing hormone functions on satiety.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "cbf16cbf-1608-4b92-aff2-71eaf0de00d6",
+      "content_id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "GABAergic neurons in the lateral hypothalamus show SWR-triggered activity increases. LH GABAergic neurons exhibit a robust and consistent increase in activity peaking approximately 320 ms after SWR onset, with significant increases across sessions (p=5.3337e-05).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this fiber photometry finding without challenge. Reviewer 1 notes the authors 'use fiber photometry to show that GABAergic neurons in the lateral hypothalamus, increase activity during a SWR event.' Reviewer 3 similarly states they 'found increased activity locked to the onset of SWRs.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "68c85f00-a3d5-4d17-978c-5dcc48ed0508",
+      "content_id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "NREM sleep duration did not differ between pre- and post-meal sessions (p=0.1759), indicating that changes in SWR properties were not due to differences in total sleep time.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question this control analysis. The finding is accepted as part of the well-performed experimental design that Reviewer 1 characterizes as having data that are 'well presented, visually.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "34d3aea5-d651-4cad-a192-f1ac4654cd81",
+      "content_id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Satiety state is identified as a factor modulating SWRs, based on the experimental findings showing food-dependent modulation across different feeding paradigms and caloric conditions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly endorse this conclusion. Reviewer 3 states the authors 'provide a convincing case for SWRs being modulated by satiety state' and that they 'conclude that the animal's satiety state modulates the amplitude and rate of SWRs.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "f03c5e32-64be-41cc-b2e0-1f47331b4ac0",
+      "content_id": "9ac8b305-f7f8-4b21-86a8-cacf46a324a5",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors propose mechanistic hypotheses: that SWRs may play an inhibitory role in regulating food intake, that temporal coordination between SWRs and LH activity represents a mechanism for metabolic influence, and that ripple power (rather than replay content) may be the key attribute for homeostatic signaling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these as reasonable interpretations and future directions. Reviewer 2 states the findings 'point a direction for promising future research,' and Reviewer 3 notes the authors 'conclude that...SWRs modulate downstream circuits involved in regulating feeding' without challenging these proposed mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "79e81be9-1dca-4906-a11c-200161e7412b",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "cd694ef9-9da4-4c06-a39e-58b560c4654a",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "55cb90f9-c80e-4934-a5e6-e0cadc038fc2",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "2e949073-2f6c-44aa-8847-a2d3e9b6f593",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "b1893b27-47ce-4da7-8d78-cb9196a9287d",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "0d19b736-ef1f-4cce-89a8-932c2170f537",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "94c83ed6-5d6f-4921-a90a-d89ebb46ff83",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "882e7af0-2648-4bf7-a3d6-433384a7cd27",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "ef00a8bb-3b91-4020-bf75-daa393ac72e3",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "1287ee24-5ae9-44ec-8c18-18c8b4f45eb2",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "a18d1b5b-169a-473c-ac33-7b5f1ba67ed2",
+      "result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea"
+    },
+    {
+      "claim_id": "2020eefd-9ce9-4c0a-8d37-0a223b4c1939",
+      "result_id": "431df1d5-0666-43db-b483-38f52922e5ed"
+    },
+    {
+      "claim_id": "8116e9f9-25bf-47e5-b582-934e923d97d6",
+      "result_id": "431df1d5-0666-43db-b483-38f52922e5ed"
+    },
+    {
+      "claim_id": "ff5301b1-4159-4f65-b76d-a75cbb5e02d5",
+      "result_id": "431df1d5-0666-43db-b483-38f52922e5ed"
+    },
+    {
+      "claim_id": "7ec3f2d3-b0e5-481b-a84d-e50905c52d59",
+      "result_id": "431df1d5-0666-43db-b483-38f52922e5ed"
+    },
+    {
+      "claim_id": "21743d05-d6e7-46a7-ac6c-154c6d7773fa",
+      "result_id": "431df1d5-0666-43db-b483-38f52922e5ed"
+    },
+    {
+      "claim_id": "0c64ad6b-63c6-4cdb-b89c-fbb3ae2d379e",
+      "result_id": "431df1d5-0666-43db-b483-38f52922e5ed"
+    },
+    {
+      "claim_id": "94740453-6059-4a73-9dc5-b63487fed713",
+      "result_id": "0fb88761-0e3c-4963-a1b3-7a25f31879f6"
+    },
+    {
+      "claim_id": "3837f57c-6402-4d95-bb42-db681ba75aaf",
+      "result_id": "0fb88761-0e3c-4963-a1b3-7a25f31879f6"
+    },
+    {
+      "claim_id": "61ed8907-a6ce-4bb6-a5d9-7529335b1fa3",
+      "result_id": "0fb88761-0e3c-4963-a1b3-7a25f31879f6"
+    },
+    {
+      "claim_id": "52588726-509f-496e-8388-9ccb45c74c8f",
+      "result_id": "0fb88761-0e3c-4963-a1b3-7a25f31879f6"
+    },
+    {
+      "claim_id": "3bc29bc9-1e71-4663-a299-42e0f645b638",
+      "result_id": "0fb88761-0e3c-4963-a1b3-7a25f31879f6"
+    },
+    {
+      "claim_id": "3bd6d5a0-6a61-4ae8-a5bf-e55833d03d09",
+      "result_id": "0fb88761-0e3c-4963-a1b3-7a25f31879f6"
+    },
+    {
+      "claim_id": "681a805d-44c7-4b37-a172-6e34e6f79da6",
+      "result_id": "0fb88761-0e3c-4963-a1b3-7a25f31879f6"
+    },
+    {
+      "claim_id": "e526556d-fc15-40c5-847f-1292d7bda80a",
+      "result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef"
+    },
+    {
+      "claim_id": "aada2d15-5b1e-41ba-a884-d38956b9b9e9",
+      "result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef"
+    },
+    {
+      "claim_id": "11dc362f-d0bb-4553-9d0e-4834a802a2a1",
+      "result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef"
+    },
+    {
+      "claim_id": "d55808e9-39ee-4889-b891-361a04bf3e01",
+      "result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef"
+    },
+    {
+      "claim_id": "5b726cbd-71d1-49b6-a554-ca9b5b91a4a6",
+      "result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef"
+    },
+    {
+      "claim_id": "cf60f465-526b-4065-990d-e6ce06a227b4",
+      "result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef"
+    },
+    {
+      "claim_id": "2b069385-6049-46df-990f-dfb9b6b903f6",
+      "result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef"
+    },
+    {
+      "claim_id": "6e42d763-5a67-49da-a2ec-b038c2ce2908",
+      "result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef"
+    },
+    {
+      "claim_id": "c54350b7-99d6-48ae-8f15-20bf8bef7a3c",
+      "result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef"
+    },
+    {
+      "claim_id": "21b6699b-c425-4071-9182-01f97d9a68e2",
+      "result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69"
+    },
+    {
+      "claim_id": "169b4743-a233-4311-a4b2-8488aa918d43",
+      "result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69"
+    },
+    {
+      "claim_id": "d4a0ee7b-5dd5-4066-b144-97e5d9d97e7c",
+      "result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69"
+    },
+    {
+      "claim_id": "925b1439-57d6-4706-91da-5393f6bfaacb",
+      "result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69"
+    },
+    {
+      "claim_id": "9dd97dbf-7fea-455b-83b9-c6d3ae981173",
+      "result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69"
+    },
+    {
+      "claim_id": "d7abb8f1-e570-4025-bbd2-95322c44bf4f",
+      "result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69"
+    },
+    {
+      "claim_id": "78be48ad-939c-4ddb-9c6c-1685c0d6544e",
+      "result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69"
+    },
+    {
+      "claim_id": "c8097775-b471-49d8-a3ad-1980d6efb0e2",
+      "result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69"
+    },
+    {
+      "claim_id": "f8cde137-ab9b-4290-b73f-a75f670b54e3",
+      "result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69"
+    },
+    {
+      "claim_id": "07aaf44b-839b-45fb-b06c-4e6f7ee04c73",
+      "result_id": "724a657d-ad5a-4405-9cb9-b8be6f5420c8"
+    },
+    {
+      "claim_id": "9c263a0d-1984-4761-b391-fa2c4004c6e5",
+      "result_id": "724a657d-ad5a-4405-9cb9-b8be6f5420c8"
+    },
+    {
+      "claim_id": "988a65b2-39a1-47c2-bca4-6befd762effb",
+      "result_id": "724a657d-ad5a-4405-9cb9-b8be6f5420c8"
+    },
+    {
+      "claim_id": "c0a8d061-51fa-4fe0-8994-09aae9d7f8d6",
+      "result_id": "724a657d-ad5a-4405-9cb9-b8be6f5420c8"
+    },
+    {
+      "claim_id": "fdb8347e-6380-4bb1-b0e6-6c0013d2706e",
+      "result_id": "b8aef2a3-7339-440b-bdf8-da42216a2e68"
+    },
+    {
+      "claim_id": "0b188bed-2cd9-4797-a112-68edcf7d528e",
+      "result_id": "b8aef2a3-7339-440b-bdf8-da42216a2e68"
+    },
+    {
+      "claim_id": "4813cadb-b1b1-4cb7-8af5-8f3d9c875e55",
+      "result_id": "b8aef2a3-7339-440b-bdf8-da42216a2e68"
+    },
+    {
+      "claim_id": "f8f043e5-c2d1-4ec3-b500-956b481b549f",
+      "result_id": "b8aef2a3-7339-440b-bdf8-da42216a2e68"
+    },
+    {
+      "claim_id": "9ce7373a-2bcf-48df-a00a-bb253f450045",
+      "result_id": "b8aef2a3-7339-440b-bdf8-da42216a2e68"
+    },
+    {
+      "claim_id": "6f38b0a7-8f3f-4ce5-bbbb-caae6f891f42",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "fa6c982a-3915-4d15-9d40-0cd2ffb2dd89",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "d612c920-0914-47b4-a9be-d8f42d7db664",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "a4ddffee-1e88-4413-8724-3f887b04c478",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "8825f717-d2ee-4d79-a77f-21e8a2084697",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "8dcf5436-c9c5-4b4f-8470-7ef584b30f8f",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "13f8253a-ec80-4e1d-b223-e3da5a6b0e0e",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "46d39ac9-587f-4c91-a453-3739b0cb51f3",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "587e36f5-ff02-4a93-8f47-007564b3a467",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "19d22d5e-6aa7-49a1-936f-f19e52ca597f",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "f6487ebc-a3a4-4af5-9553-3f4507411caa",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "65d157c3-c9fa-453c-a748-6417e1e62c3d",
+      "result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9"
+    },
+    {
+      "claim_id": "ea3455bb-48ef-4576-a062-50dd0de3c316",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "b6918363-cd93-47be-b7b3-a9472bbad312",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "a4426072-35a4-4662-b8de-bdd9c6dea404",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "a325de20-213b-48de-9d89-ea5dc578dc4d",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "02351181-ed74-4900-8601-d9cd66a03f03",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "8fadc13c-5a42-49e7-b8f5-7c343473362d",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "959578c1-988a-4ea8-9592-eec0f3282d8a",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "31be44f1-0115-4b8b-b4e9-d4771658b531",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "70835eaf-b9ef-48a7-97e6-81dc7bace69e",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "c0786223-3cef-458b-bad4-946fca9608e3",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "3a139f98-ca01-40a2-9eeb-31eea704b01a",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "7ca6696c-4cac-4472-83cc-3b93779300ea",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "6e06af75-6326-4249-aed6-f7790f67099f",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "5f952db6-549c-4b4f-b02d-bb71426572df",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "380a4125-039a-4d7f-9c54-033f17ed3c35",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "f406b61b-b8ca-4556-9d74-16095387924e",
+      "result_id": "f7031abd-a198-4843-bea1-4fb1973460f4"
+    },
+    {
+      "claim_id": "342d2f45-0493-4fd5-a5b5-2a95e5e1c395",
+      "result_id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710"
+    },
+    {
+      "claim_id": "f61a383f-762d-4c4c-80b7-cae08e3ffc63",
+      "result_id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710"
+    },
+    {
+      "claim_id": "c2b509ce-c640-4f61-885a-c23dff856afa",
+      "result_id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710"
+    },
+    {
+      "claim_id": "935efb59-7b25-4ccc-bba4-76252e32bb29",
+      "result_id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710"
+    },
+    {
+      "claim_id": "680e845a-d064-4bab-b7c8-6717833d3a17",
+      "result_id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710"
+    },
+    {
+      "claim_id": "dd5200d5-ebba-4516-96d4-9558f0526fd0",
+      "result_id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710"
+    },
+    {
+      "claim_id": "ef1bc403-8368-46d8-a81c-45a452525000",
+      "result_id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710"
+    },
+    {
+      "claim_id": "418d04e0-0968-4044-8d48-81b3d0f43a9b",
+      "result_id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710"
+    },
+    {
+      "claim_id": "2884fa7e-a0d9-45d7-ac31-978253c408da",
+      "result_id": "6135c7f1-2778-4453-b038-902a96eb77d1"
+    },
+    {
+      "claim_id": "fdf845b5-723b-4023-9f90-5d04b586d462",
+      "result_id": "6135c7f1-2778-4453-b038-902a96eb77d1"
+    },
+    {
+      "claim_id": "e126c372-cec2-4c50-8781-937237a4188a",
+      "result_id": "6135c7f1-2778-4453-b038-902a96eb77d1"
+    },
+    {
+      "claim_id": "7992a36f-87f4-4573-9189-19c7d157474c",
+      "result_id": "6135c7f1-2778-4453-b038-902a96eb77d1"
+    },
+    {
+      "claim_id": "458d1f83-d0d4-4d3e-9b88-357d70aacdcd",
+      "result_id": "6135c7f1-2778-4453-b038-902a96eb77d1"
+    },
+    {
+      "claim_id": "8833b5a2-f5ac-4cf0-a07e-43db171f2a9b",
+      "result_id": "6135c7f1-2778-4453-b038-902a96eb77d1"
+    },
+    {
+      "claim_id": "d56458f6-6f69-4e8d-83db-d49ed30def3e",
+      "result_id": "6135c7f1-2778-4453-b038-902a96eb77d1"
+    },
+    {
+      "claim_id": "acb1155d-151c-4fde-becb-c6af1f580080",
+      "result_id": "32d64688-3e05-4554-84ca-8e76c9d1c151"
+    },
+    {
+      "claim_id": "2fb7774d-88a7-4222-8bd4-a1b9d584821e",
+      "result_id": "32d64688-3e05-4554-84ca-8e76c9d1c151"
+    },
+    {
+      "claim_id": "86b18029-6ecd-472c-ac96-f466332ccbb1",
+      "result_id": "7c495c4e-2783-4651-b429-5c1f938fd5ec"
+    },
+    {
+      "claim_id": "4ac72b38-2696-4e58-9273-0d3b6ea8a934",
+      "result_id": "7c495c4e-2783-4651-b429-5c1f938fd5ec"
+    },
+    {
+      "claim_id": "d54ef628-c270-4872-a556-ac29c094e282",
+      "result_id": "7c495c4e-2783-4651-b429-5c1f938fd5ec"
+    },
+    {
+      "claim_id": "5b726cbd-71d1-49b6-a554-ca9b5b91a4a6",
+      "result_id": "7c495c4e-2783-4651-b429-5c1f938fd5ec"
+    },
+    {
+      "claim_id": "cf60f465-526b-4065-990d-e6ce06a227b4",
+      "result_id": "7c495c4e-2783-4651-b429-5c1f938fd5ec"
+    },
+    {
+      "claim_id": "2b069385-6049-46df-990f-dfb9b6b903f6",
+      "result_id": "7c495c4e-2783-4651-b429-5c1f938fd5ec"
+    },
+    {
+      "claim_id": "79e81be9-1dca-4906-a11c-200161e7412b",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "cd694ef9-9da4-4c06-a39e-58b560c4654a",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "55cb90f9-c80e-4934-a5e6-e0cadc038fc2",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "2e949073-2f6c-44aa-8847-a2d3e9b6f593",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "b1893b27-47ce-4da7-8d78-cb9196a9287d",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "0d19b736-ef1f-4cce-89a8-932c2170f537",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "94c83ed6-5d6f-4921-a90a-d89ebb46ff83",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "882e7af0-2648-4bf7-a3d6-433384a7cd27",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "1287ee24-5ae9-44ec-8c18-18c8b4f45eb2",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "a18d1b5b-169a-473c-ac33-7b5f1ba67ed2",
+      "result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465"
+    },
+    {
+      "claim_id": "2020eefd-9ce9-4c0a-8d37-0a223b4c1939",
+      "result_id": "0f165af4-c40c-41ce-80ca-08b2785c0000"
+    },
+    {
+      "claim_id": "8116e9f9-25bf-47e5-b582-934e923d97d6",
+      "result_id": "0f165af4-c40c-41ce-80ca-08b2785c0000"
+    },
+    {
+      "claim_id": "ff5301b1-4159-4f65-b76d-a75cbb5e02d5",
+      "result_id": "0f165af4-c40c-41ce-80ca-08b2785c0000"
+    },
+    {
+      "claim_id": "7ec3f2d3-b0e5-481b-a84d-e50905c52d59",
+      "result_id": "0f165af4-c40c-41ce-80ca-08b2785c0000"
+    },
+    {
+      "claim_id": "21743d05-d6e7-46a7-ac6c-154c6d7773fa",
+      "result_id": "0f165af4-c40c-41ce-80ca-08b2785c0000"
+    },
+    {
+      "claim_id": "0c64ad6b-63c6-4cdb-b89c-fbb3ae2d379e",
+      "result_id": "0f165af4-c40c-41ce-80ca-08b2785c0000"
+    },
+    {
+      "claim_id": "94740453-6059-4a73-9dc5-b63487fed713",
+      "result_id": "ec01781d-0a9c-499b-a035-e83d82ebebd7"
+    },
+    {
+      "claim_id": "3837f57c-6402-4d95-bb42-db681ba75aaf",
+      "result_id": "ec01781d-0a9c-499b-a035-e83d82ebebd7"
+    },
+    {
+      "claim_id": "61ed8907-a6ce-4bb6-a5d9-7529335b1fa3",
+      "result_id": "ec01781d-0a9c-499b-a035-e83d82ebebd7"
+    },
+    {
+      "claim_id": "52588726-509f-496e-8388-9ccb45c74c8f",
+      "result_id": "ec01781d-0a9c-499b-a035-e83d82ebebd7"
+    },
+    {
+      "claim_id": "3bc29bc9-1e71-4663-a299-42e0f645b638",
+      "result_id": "ec01781d-0a9c-499b-a035-e83d82ebebd7"
+    },
+    {
+      "claim_id": "3bd6d5a0-6a61-4ae8-a5bf-e55833d03d09",
+      "result_id": "ec01781d-0a9c-499b-a035-e83d82ebebd7"
+    },
+    {
+      "claim_id": "681a805d-44c7-4b37-a172-6e34e6f79da6",
+      "result_id": "ec01781d-0a9c-499b-a035-e83d82ebebd7"
+    },
+    {
+      "claim_id": "e526556d-fc15-40c5-847f-1292d7bda80a",
+      "result_id": "c4cfe2d5-a9e7-4c97-bad4-5ade53af84ec"
+    },
+    {
+      "claim_id": "aada2d15-5b1e-41ba-a884-d38956b9b9e9",
+      "result_id": "c4cfe2d5-a9e7-4c97-bad4-5ade53af84ec"
+    },
+    {
+      "claim_id": "11dc362f-d0bb-4553-9d0e-4834a802a2a1",
+      "result_id": "c4cfe2d5-a9e7-4c97-bad4-5ade53af84ec"
+    },
+    {
+      "claim_id": "d55808e9-39ee-4889-b891-361a04bf3e01",
+      "result_id": "c4cfe2d5-a9e7-4c97-bad4-5ade53af84ec"
+    },
+    {
+      "claim_id": "6e42d763-5a67-49da-a2ec-b038c2ce2908",
+      "result_id": "c4cfe2d5-a9e7-4c97-bad4-5ade53af84ec"
+    },
+    {
+      "claim_id": "c54350b7-99d6-48ae-8f15-20bf8bef7a3c",
+      "result_id": "c4cfe2d5-a9e7-4c97-bad4-5ade53af84ec"
+    },
+    {
+      "claim_id": "21b6699b-c425-4071-9182-01f97d9a68e2",
+      "result_id": "4c14402d-8acc-4d67-ad88-dc5383207633"
+    },
+    {
+      "claim_id": "169b4743-a233-4311-a4b2-8488aa918d43",
+      "result_id": "4c14402d-8acc-4d67-ad88-dc5383207633"
+    },
+    {
+      "claim_id": "d4a0ee7b-5dd5-4066-b144-97e5d9d97e7c",
+      "result_id": "4c14402d-8acc-4d67-ad88-dc5383207633"
+    },
+    {
+      "claim_id": "925b1439-57d6-4706-91da-5393f6bfaacb",
+      "result_id": "4c14402d-8acc-4d67-ad88-dc5383207633"
+    },
+    {
+      "claim_id": "9dd97dbf-7fea-455b-83b9-c6d3ae981173",
+      "result_id": "4c14402d-8acc-4d67-ad88-dc5383207633"
+    },
+    {
+      "claim_id": "d7abb8f1-e570-4025-bbd2-95322c44bf4f",
+      "result_id": "4c14402d-8acc-4d67-ad88-dc5383207633"
+    },
+    {
+      "claim_id": "78be48ad-939c-4ddb-9c6c-1685c0d6544e",
+      "result_id": "4c14402d-8acc-4d67-ad88-dc5383207633"
+    },
+    {
+      "claim_id": "c8097775-b471-49d8-a3ad-1980d6efb0e2",
+      "result_id": "4c14402d-8acc-4d67-ad88-dc5383207633"
+    },
+    {
+      "claim_id": "f8cde137-ab9b-4290-b73f-a75f670b54e3",
+      "result_id": "4c14402d-8acc-4d67-ad88-dc5383207633"
+    },
+    {
+      "claim_id": "07aaf44b-839b-45fb-b06c-4e6f7ee04c73",
+      "result_id": "cbf16cbf-1608-4b92-aff2-71eaf0de00d6"
+    },
+    {
+      "claim_id": "9c263a0d-1984-4761-b391-fa2c4004c6e5",
+      "result_id": "cbf16cbf-1608-4b92-aff2-71eaf0de00d6"
+    },
+    {
+      "claim_id": "988a65b2-39a1-47c2-bca4-6befd762effb",
+      "result_id": "cbf16cbf-1608-4b92-aff2-71eaf0de00d6"
+    },
+    {
+      "claim_id": "c0a8d061-51fa-4fe0-8994-09aae9d7f8d6",
+      "result_id": "cbf16cbf-1608-4b92-aff2-71eaf0de00d6"
+    },
+    {
+      "claim_id": "ef00a8bb-3b91-4020-bf75-daa393ac72e3",
+      "result_id": "68c85f00-a3d5-4d17-978c-5dcc48ed0508"
+    },
+    {
+      "claim_id": "f8f043e5-c2d1-4ec3-b500-956b481b549f",
+      "result_id": "34d3aea5-d651-4cad-a192-f1ac4654cd81"
+    },
+    {
+      "claim_id": "fdb8347e-6380-4bb1-b0e6-6c0013d2706e",
+      "result_id": "f03c5e32-64be-41cc-b2e0-1f47331b4ac0"
+    },
+    {
+      "claim_id": "0b188bed-2cd9-4797-a112-68edcf7d528e",
+      "result_id": "f03c5e32-64be-41cc-b2e0-1f47331b4ac0"
+    },
+    {
+      "claim_id": "4813cadb-b1b1-4cb7-8af5-8f3d9c875e55",
+      "result_id": "f03c5e32-64be-41cc-b2e0-1f47331b4ac0"
+    },
+    {
+      "claim_id": "9ce7373a-2bcf-48df-a00a-bb253f450045",
+      "result_id": "f03c5e32-64be-41cc-b2e0-1f47331b4ac0"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "eaf5625b-fa8c-47be-891d-9247263ff630",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea",
+      "peer_result_id": "90e04f37-6edd-4efe-8b01-c99c6b78d465",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations find the core finding SUPPORTED that food intake enhances hippocampal SWRs with dose-dependent effects. OpenEval emphasizes statistical rigor and experimental design details (38 session pairs, appropriate controls), while peer reviewers focus on overall convincingness. OpenEval includes C24 and C92-C93 which peer review addresses separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "65460c09-304c-46c7-b544-95241377b67a",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "431df1d5-0666-43db-b483-38f52922e5ed",
+      "peer_result_id": "0f165af4-c40c-41ce-80ca-08b2785c0000",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on SUPPORTED status for mediation analysis claims (C25-C27, C94-C95, C97). Both recognize the importance of disentangling sleep quality from direct food effects. OpenEval provides more technical detail about the statistical approach, while peer reviewers accept the finding without challenge as part of well-performed experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "b8ef453e-f22c-4aac-8779-01f7fb8e170c",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0fb88761-0e3c-4963-a1b3-7a25f31879f6",
+      "peer_result_id": "ec01781d-0a9c-499b-a035-e83d82ebebd7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on SUPPORTED status for ad libitum feeding experiments (C28-C31, C75, C96, C98). Both recognize this demonstrates SWR enhancement is not merely recovery from hunger-induced impairment. OpenEval discusses asymmetric hypothalamic responses; peer reviewers accept as part of overall satiety modulation demonstration.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "aa7eaf94-d9e9-43a4-9cb3-e4ce0ccafebd",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "f6ee7951-397c-46c0-b127-b577dbe137ef",
+      "peer_result_id": "c4cfe2d5-a9e7-4c97-bad4-5ade53af84ec",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both find SUPPORTED for the critical caloric vs. sensory control experiment. OpenEval covers C32-C35, C63-C65, C87-C88 while peer review addresses C32-C35, C87-C88. OpenEval emphasizes this as a key mechanistic finding; peer reviewers note it demonstrates caloric content dependence without questioning the design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "2cfc320c-f445-4082-87cb-8c6b9c19b319",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "b841175c-4fb5-463b-bef0-17c8cbdc0d69",
+      "peer_result_id": "4c14402d-8acc-4d67-ad88-dc5383207633",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of hormone experiments (C36-C39, C81, C89-C91, C99). OpenEval rates UNCERTAIN due to acknowledged experimental limitations that may have obscured satiety hormone effects, making mechanistic picture incomplete. Peer reviewers rate SUPPORTED, finding the ghrelin effects and negative results for other hormones compelling and aligned with hormone functions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "4671a34c-1332-453d-a12d-700003cc9458",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "724a657d-ad5a-4405-9cb9-b8be6f5420c8",
+      "peer_result_id": "cbf16cbf-1608-4b92-aff2-71eaf0de00d6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both find SUPPORTED for fiber photometry evidence of hippocampal-hypothalamic communication (C6, C40, C84-C85). OpenEval notes strong statistical significance but emphasizes this is correlational, not causal evidence. Peer reviewers accept the finding without challenge as part of the overall experimental demonstration.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "a8001129-c9d1-43e4-ae26-327a5edcd5de",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "b8aef2a3-7339-440b-bdf8-da42216a2e68",
+      "peer_result_id": "f03c5e32-64be-41cc-b2e0-1f47331b4ac0",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations of speculative mechanistic claims (C66-C68, C70). OpenEval rates UNCERTAIN, explicitly noting these are untested predictions requiring additional causal experiments. Peer reviewers rate SUPPORTED, accepting these as reasonable interpretations and promising future research directions. OpenEval also includes C69 which peer review addresses separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "91ce32a0-b257-4987-a921-5f7e3ae31072",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "6fc422c4-7abe-4ec1-909f-405ce4317eea",
+      "peer_result_id": "68c85f00-a3d5-4d17-978c-5dcc48ed0508",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both find SUPPORTED for the control finding that NREM duration does not change with food intake (C24). OpenEval includes this with the main food intake findings (R1), emphasizing it strengthens specificity to SWR properties. Peer reviewers address it separately as an accepted control analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "19113257-41f9-4c4d-bf43-0de9f3461ce5",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "b8aef2a3-7339-440b-bdf8-da42216a2e68",
+      "peer_result_id": "34d3aea5-d651-4cad-a192-f1ac4654cd81",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the conclusion that satiety state modulates SWRs (C69). OpenEval rates UNCERTAIN as part of broader speculative claims requiring causal validation. Peer reviewers rate SUPPORTED, explicitly endorsing this as a convincing conclusion from the data. This represents a key difference in how directly the data support this interpretive claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "8ffc400e-e1cf-4857-a419-08df728b1038",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "b16db9ca-b01a-4563-aff9-0bf6d0fad3c9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background/context claims (C1-C2, C7-C16) about established knowledge and prior findings as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as peer reviewers typically focus on novel findings rather than literature review accuracy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "e5aede55-42ff-4b03-8cc3-0108790e88f8",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "f7031abd-a198-4843-bea1-4fb1973460f4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims (C17-C18, C41-C43, C52, C72-C74, C76-C80, C82, C86) about metabolic regulation and hormone functions as SUPPORTED. No corresponding peer review evaluation found, as these are contextual knowledge claims rather than novel experimental findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "eef8b3e9-d900-4559-92e8-1a79f5592ad9",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "3e45a19b-ae3e-46f3-9ffb-ae986dce2710",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates literature review claims (C44-C51) about hippocampal roles in feeding regulation as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as peer reviewers do not separately assess background literature accuracy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "e5d81b64-4c81-41a4-a244-e2771072a7f9",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "6135c7f1-2778-4453-b038-902a96eb77d1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims (C53-C58, C71) about SWR properties and functions as SUPPORTED. No corresponding peer review evaluation found, as these provide context rather than novel findings requiring peer assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "d7c1b449-1bf3-4d75-9435-6c577c08c03d",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "32d64688-3e05-4554-84ca-8e76c9d1c151",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates anatomical connectivity claims (C59, C83) as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as these are established anatomical facts providing framework for interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    },
+    {
+      "id": "4cbf28b4-3bd7-4ae4-a180-9d830c2ef4ae",
+      "submission_id": "5fa3b81e-5af7-48cc-ae38-1b48d9755b46",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "7c495c4e-2783-4651-b429-5c1f938fd5ec",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates methodological details about experimental materials (C60-C65) as SUPPORTED. No corresponding peer review evaluation found, as peer reviewers do not separately assess factual material specifications, though these claims overlap with R4's caloric control experiment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:04.045719Z"
+    }
+  ]
+}

@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C68"
+    ],
+    "result": "RTE expression does not correlate with chronological age across multiple datasets and platforms. This finding was consistent across microarray data (MESA, GARP, GTP cohorts), single-cell RNA-seq data (young vs. old PBMCs), and bulk RNA-seq data (healthy PBMCs aged 20-74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C26, and C68 collectively demonstrate no significant correlation between RTE expression and chronological age across multiple independent cohorts, different cell types, and different measurement platforms (microarray, scRNA-seq, bulk RNA-seq). The consistency across datasets and methodologies provides strong support for this negative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C69"
+    ],
+    "result": "LINE and LTR expression positively correlates with biological age-related (BAR) gene signature scores, while SINE expression shows inverse or no correlation. The strongest positive correlations were observed for SASP and senescence signatures, particularly with L1, ERVK, and ERVL families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C27-C32, and C69 are supported by correlation analyses across multiple cohorts (Figure 2) showing consistent positive correlations between LINE/LTR expression and BAR scores, contrasted with inverse correlations for SINEs in PBMCs. The differential expression analysis (C31-C32) further validates these associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C71",
+      "C72"
+    ],
+    "result": "SINE expression is associated with upregulated DNA repair pathways in multiple cohorts. This pattern is distinct from LINE and LTR, suggesting SINEs may contribute to aging through genome instability rather than inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4 and C35-C38 are supported by GSVA analysis (Figure 3), but claims C71-C72 are explicitly labeled as speculation by the authors. The mechanistic interpretation linking SINE expression to DNA damage requires additional validation beyond the correlative pathway analysis presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C74"
+    ],
+    "result": "LINE and LTR expression is associated with upregulated inflammatory response pathways, while this upregulation is less common in SINE. This finding aligns with previous studies in humans and model organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C74 are supported by GSVA analysis (Figure 3a) showing consistent upregulation of inflammatory pathways in high LINE/LTR expression groups across MESA and GARP cohorts. The consistency with prior literature (C74) strengthens this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C80"
+    ],
+    "result": "DNA methylation levels of RTEs decrease with chronological age across all RTE classes and families in whole blood and monocytes. This demethylation trend is consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C44, and C80 are supported by methylation analysis across multiple cohorts (MESA, GMPWAR, BSGS, SATSA) shown in Figure 4a-b. The inverse correlation between methylation and age is consistent across all RTE classes and is corroborated by prior literature (C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C81"
+    ],
+    "result": "RTE expression inversely correlates with methylation levels in LINE and LTR but not in SINE. DNA methylation appears dispensable for SINE silencing, consistent with histone modification-based regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C45-C48, and C81 are supported by correlation analysis between methylation and expression (Figure 4c-d). The distinct pattern for SINEs versus LINE/LTR is consistent across analyses and aligns with known regulatory mechanisms (C51-C52, C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C89"
+    ],
+    "result": "Plasma cells uniquely show elevated RTE expression associated with high SASP, inflammatory chemokines, and inflammaging gene signature scores. Among 25 cell types analyzed, only plasma cells demonstrated this consistent association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C53-C56, and C89 are supported by single-cell RNA-seq analysis (Figure 5a-f). The specificity to plasma cells among 25 cell types and consistency across multiple BAR signatures (SASP, inflammatory chemokines, inflammaging) provides strong evidence, though C55 notes some associations were not statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C64",
+      "C91"
+    ],
+    "result": "Supercentenarians show decreased RTE expression across most immune cell types (NK cells, B-cells, T-cells, monocytes, dendritic cells) compared to normal-aged controls, with specific patterns in different T cell subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C64, and C91 are supported by single-cell RNA-seq analysis of supercentenarians versus controls (Figure 5g). The consistent decrease in RTE expression across multiple immune cell types provides strong evidence for this association with healthy aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C92",
+      "C93"
+    ],
+    "result": "Despite decreased RTE expression, supercentenarians show increased BAR signature scores (senescence, SASP) in NK cells and inflammatory activity in cytotoxic T cells, suggesting these aging markers are not associated with RTE activation in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 and C92-C93 are supported by single-cell analysis (Figure 5g and supplements 5-6). The dissociation between RTE expression and BAR signatures in supercentenarians contrasts with findings in normal aging cohorts, though C93 represents an inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "IFN-I signature scores significantly correlate with LINE and LTR expression but not with SINE or Alu expression in RNA-seq PBMC data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by correlation analysis in RNA-seq data (Figure 2\u2014figure supplement 6). This finding reinforces the distinct regulatory patterns between SINE and LINE/LTR classes observed in other analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "SINE contributes to aging via genome instability rather than inflammation, in contrast to LINE and LTR activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 is explicitly labeled as an inference based on GSVA results. While the pathway analysis shows differential regulation of DNA repair versus inflammatory pathways, this mechanistic interpretation requires direct experimental validation beyond the correlative evidence presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C85"
+    ],
+    "result": "DNA methylation plays a dispensable role in SINE silencing in monocytes, with SINEs primarily regulated by histone modifications rather than DNA methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C85 combine data-driven inference (C51) with established literature (C52, C85). The lack of correlation between SINE methylation and expression (Figure 4d) supports this interpretation and is consistent with prior mechanistic studies cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "In osteoarthritis patients, SINE expression inversely correlates with BAR scores in PBMCs but positively correlates in monocytes, with discrepant upregulation of DNA repair pathways in specific RTE families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by analysis of the GARP cohort (osteoarthritis patients). The tissue-specific differences (PBMCs vs. monocytes) and the upregulation of DNA repair pathways in L2, ERV1, Alu, and MIR provide insights into RTE behavior in age-related disease contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The study utilized multiple large cohorts with appropriate sample sizes and age ranges, employing both expression and methylation microarrays with adequate probe coverage for RTE analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C105 describe the datasets and methodology. The cohort descriptions are factual, and the probe coverage information (Figure 1\u2014figure supplement 1) demonstrates adequate technical quality for the analyses performed, though limitations are acknowledged (C87-C88).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Expression microarray can be used to study RTE expression, but probe design limitations necessitate analysis at class and family levels rather than subfamily levels to ensure sufficient statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 acknowledge both the utility and limitations of microarray technology for RTE analysis. The methodological decision to analyze at class/family levels (C88) is justified by probe availability (Figure 1\u2014figure supplement 1), representing appropriate adaptation to technical constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C65",
+      "C66",
+      "C67",
+      "C73",
+      "C75",
+      "C76",
+      "C82",
+      "C83",
+      "C84",
+      "C90"
+    ],
+    "result": "Background claims establishing the biological context of RTEs in aging, including their classification, silencing mechanisms, reactivation with age, and roles in inflammation, genome instability, and cellular senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C21, C65-C67, C73, C75-C76, C82-C84, and C90 are primarily literature-based background claims supported by appropriate citations. These establish the scientific context and novelty of the current study but do not represent new findings from the presented data.",
+    "result_type": "MINOR"
+  }
+]

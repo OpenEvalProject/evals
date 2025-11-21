@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C48",
+      "C49"
+    ],
+    "result": "The Pro-PRIME model was applied in a two-round design process to engineer a VHH antibody with enhanced alkali resistance, thermal stability, and affinity. The first round used a zero-shot approach for 45 single-point mutations, while the second round employed fine-tuning to predict 20 multi-point mutations, requiring only 65 experimental validations over 2 months.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirmed this work as 'important' and praised the 'impressive' use of 'AI combined with limited experimental validation to achieve such significant enhancements in protein performance.' The methodology and two-round design strategy are described as 'solid' and 'convincing,' with no concerns raised about the approach or efficiency claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C50",
+      "C54"
+    ],
+    "result": "In the first round, 15 of 45 single-point mutants (33%) showed improved alkali resistance, 35 (78%) showed higher thermal stability, and 8 showed improved affinity. Six mutants exhibited improvements in all three properties simultaneously.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers found the evidence 'convincing' and noted the work demonstrates 'significant enhancements in protein performance.' The success rates and multi-property improvements are presented as part of the solid experimental validation that reviewers accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C55",
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "In the second round, five multi-point mutants surpassed the best single-point mutant in alkali resistance (67.7% improvement vs. 44.7% for single-point). All 20 multi-point mutants showed improved thermal stability (100% success rate), with the best achieving a 10\u00b0C increase in Tm. Some mutants also maintained or exceeded wild-type affinity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers described the evidence as 'convincing' and highlighted the 'impressive' achievements. The multi-objective optimization capability and success in the second round are implicitly endorsed through the reviewers' positive assessment of the overall methodology and results, with no concerns raised about these specific findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C106"
+    ],
+    "result": "The Pro-PRIME model demonstrated the ability to capture epistatic interactions, including 'double negative yields positive' phenomena where combining individually deleterious mutations (e.g., A57D;P29T, P29T;G134R) produced mutants with superior properties. This showcases the model's capacity to leverage negative mutations in multi-point combinations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praised 'the model's capacity to capture epistatic interactions through multi-point mutations' as highlighting 'the strength of deep learning methods over traditional approaches.' This finding is treated as a key contribution demonstrating the advantages of the AI-guided approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C69",
+      "C71",
+      "C107"
+    ],
+    "result": "The Pro-PRIME model demonstrates advantages over traditional rational design by exploring the global fitness landscape, avoiding local optima, and incorporating negative mutations that experts might overlook. This enables discovery of mutants that rational design approaches would miss due to their tendency to trap in local optima.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly stated that 'its success in finding the global optimum within the protein fitness landscape highlights the strength of deep learning methods over traditional approaches.' This comparative advantage is treated as a central finding and strength of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Four mutants (L49V, A15P, W112F, R20T) showed higher affinity than wild-type after 24h alkali treatment, all with improved thermal stability. However, the correlation between thermal stability and alkali resistance was weak (Spearman correlation -0.29), indicating these properties are largely independent.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are part of the experimental results that reviewers found 'convincing' with 'solid methodology.' The weak correlation observation is presented as data-driven analysis that reviewers implicitly accepted through their overall positive assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The zero-shot approach for multi-point mutants yielded poor predictions with a Spearman correlation of -0.71 between predictions and experimental results, demonstrating the necessity of fine-tuning for multi-point mutation design.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological finding is part of the 'solid methodology' that reviewers endorsed. The negative result justifies the two-strategy approach and is presented transparently as part of the experimental validation process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Mass spectrometry identified 13 specific breakage sites in the wild-type antibody after alkali treatment. While 4 of the top 10 Pro-PRIME mutations occurred at these sites, effective mutations like P29T and A15P were found at non-breakage sites. Multi-point mutants reduced degradation from 61.1% to as low as 13.6%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These mechanistic insights are part of the 'convincing' evidence package that reviewers accepted. The analysis demonstrates both alignment with rational design principles and the model's ability to identify non-obvious beneficial mutations, supporting the overall narrative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Some critical mutations (P29T, L49V) aligned with consensus sequence methods, but others (A15P, R20T) contradicted rational design principles by reducing hydrogen bonds or replacing residues typically favorable for stability, yet still improved alkali resistance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This analysis is part of the systematic evaluation that reviewers found convincing. It demonstrates that the model 'can yield more valuable predictive outcomes while remaining consistent with rational design principles' while also going beyond them, as reviewers noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Molecular dynamics simulations of the A57D;P29T mutant revealed increased structural rigidity (lower RMSD), reduced fluctuations at key residues, and more hydrogen bonds, though overall structure remained similar to wild-type. Enhanced alkali resistance appears to result from overall stability increase rather than dramatic conformational changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These computational analyses support the experimental findings and are part of the 'solid methodology' that reviewers endorsed. The mechanistic insights are presented as supporting evidence for the observed improvements and are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Selected mutants (A57D;P29T, A15P;R20T) demonstrated broad stress resistance including acid and salt tolerance in addition to alkali and thermal resistance, while maintaining affinity suitable for industrial applications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This multi-stress resistance is part of the experimental validation that reviewers found convincing. It demonstrates the practical utility and multi-objective optimization capability that reviewers praised as 'impressive.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In dynamic binding capacity tests, wild-type retained only 15.2% capacity after 24h alkali treatment and failed after 60 cycles, while designed mutants retained 50%+ capacity after 24h treatment and maintained activity for over 140 cycles without significant decline.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly noted 'the successful application of the designed antibody in industrial settings demonstrates the practical and economic relevance of the study.' These performance metrics directly support the industrial application claims that reviewers endorsed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C21",
+      "C22",
+      "C105",
+      "C109"
+    ],
+    "result": "The selected mutant has been deployed in mass production at 5000L scale, represents the first LLM-designed protein in mass production, maintains activity for over 100 cycles, and reduced production costs by over $1 million annually.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly stated 'the successful application of the designed antibody in industrial settings demonstrates the practical and economic relevance of the study.' The industrial deployment and economic impact are treated as validated outcomes, though the 'first LLM-designed protein' claim is accepted based on authors' knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C47",
+      "C97",
+      "C108"
+    ],
+    "result": "The Pro-PRIME model demonstrates excellent multi-objective optimization capability, can complete the design process within 2 months using limited experimental data, and holds promise for broader industrial protein applications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers found the work 'impressive' in achieving 'significant enhancements' with 'limited experimental validation' and noted it has 'broad implications for future AI-guided protein engineering efforts.' The efficiency and multi-objective capabilities are central to the positive assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C16",
+      "C110",
+      "C111"
+    ],
+    "result": "This work demonstrates for the first time that AI models trained on natural proteins can successfully design mutants for extreme unnatural environments (pH >13, concentrated salt) that are largely absent from training datasets, expanding AI applications beyond thermostability and activity to harsh industrial conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers characterized this as 'important work' that 'establish[es] a foundation for further exploration of LLM-assisted protein engineering.' The ability to design for extreme conditions not well-represented in training data is implicitly endorsed as a novel and significant contribution through the overall positive assessment.",
+    "result_type": "MAJOR"
+  }
+]

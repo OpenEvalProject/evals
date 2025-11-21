@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "RiboD-PETRI substantially enhances mRNA detection rates compared to standard PETRI-seq, achieving up to 92% mRNA detection in S. aureus, 81% in E. coli, and 54% in C. crescentus, while maintaining transcriptome profile consistency with non-depleted samples (r=0.93) and bulk RNA-seq (r=0.84).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10-C12 demonstrate substantial improvements in mRNA detection across multiple bacterial species with specific quantitative data from Figure 1B. Claims C19-C20 show improved cell recovery and UMI counts. Claims C21-C22 validate that the method preserves transcriptome profiles through strong correlations. The convergence of multiple independent measurements across different species provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C66",
+      "C67"
+    ],
+    "result": "RiboD-PETRI achieves high transcriptome coverage (>99%) and robust single-cell resolution across multiple bacterial species and growth conditions, with median UMI counts ranging from 102 to 182 per cell and sequencing saturation >90%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 provide detailed quantitative data on cell recovery, transcriptome coverage, and UMI counts across three bacterial species (E. coli, S. aureus, C. crescentus) in different growth phases. Claim C32 confirms adequate sequencing depth. The consistency of high performance metrics across diverse conditions strongly supports the method's robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C42",
+      "C43",
+      "C44",
+      "C88",
+      "C89"
+    ],
+    "result": "RiboD-PETRI successfully identifies distinct subpopulations within bacterial cultures, including rare subpopulations (1.2-10.5%) characterized by specific marker genes in exponential and stationary phase cultures, and a rare cell envelope-associated subpopulation (2.1-2.6%) in biofilms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 demonstrate identification of subpopulations across three bacterial species with specific percentages and marker genes. Claims C42-C44 show reproducible identification of a rare biofilm subpopulation across replicates. The consistency across multiple species and conditions, supported by clustering analysis and marker gene identification, validates the method's ability to detect heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PdeI functions as a membrane-associated c-di-GMP synthetase rather than a phosphodiesterase, containing both an intact EAL domain and a divergent GGDEF domain, with a CHASE sensory domain, and elevates c-di-GMP levels approximately 11-fold when overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 establish PdeI's dual-domain structure. Claims C48-C51 provide multiple lines of evidence (microscopy, single-cell monitoring, HPLC-MS/MS) demonstrating PdeI's function as a c-di-GMP synthetase. Claim C53 provides negative control data with the G412S mutant. The convergence of structural, localization, and functional data strongly supports this unexpected finding that contradicts the initial prediction in C45.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C56",
+      "C57",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "PdeI-high cells, localized at the biofilm bottom, produce significantly higher ratios of persister cells (~7.3% vs ~0.6% in whole biofilm) that survive antibiotic treatment through dormancy and can resuscitate upon antibiotic removal, linking elevated c-di-GMP levels to persister formation in early biofilm development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 establish spatial localization of PdeI-high cells. Claims C59-C63 provide multiple lines of evidence (antibiotic killing assays, flow cytometry sorting, time-lapse imaging) demonstrating the persister phenotype. Claim C60 provides critical negative controls. The integration of spatial, functional, and temporal data strongly supports the connection between PdeI, c-di-GMP, and persister formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "RiboD-PETRI demonstrates low multiplet frequencies (1.16-3.35%) and consistent technical performance across biofilm replicates with recovery rates of 26-28% and read-UMI correlations of 0.87-0.90.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 establishes single-cell capture efficiency through Poisson distribution analysis. Claims C39-C41 demonstrate reproducibility across biofilm replicates with consistent technical metrics. These quality control measures support the method's reliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Existing bacterial scRNA-seq methods achieve mRNA detection rates ranging from 5% (PETRI-seq) to 65% (M3-seq), with various rRNA depletion strategies showing different efficiencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 cite published literature for comparative mRNA detection rates of existing methods. These citations provide appropriate context for evaluating RiboD-PETRI's performance, though the accuracy depends on the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C87"
+    ],
+    "result": "RiboD-PETRI is substantially more economical ($0.0049 per cell) than original PETRI-seq ($0.056 per cell) and offers a cost-effective, equipment-free, high-throughput solution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C87 present cost analysis data from Supplementary file 6. The specific cost comparison is quantitative and verifiable, supporting the economic advantage claim. However, the 'equipment-free' claim may be overstated given the requirement for standard molecular biology equipment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The RiboD method uses species-specific probe sets with 3'-ends reverse complementary to r-cDNA sequences and 5'-ends complementary to biotin-labeled universal primers for selective rRNA depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 describe the technical design principles of the RiboD method. The probe design is clearly explained and illustrated in Figure 1A, with species-specific probe sets designed for E. coli, C. crescentus, and S. aureus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C83"
+    ],
+    "result": "A G412S point mutation in PdeI's GGDEF domain in a strain lacking PdeH (the major E. coli phosphodiesterase) results in decreased c-di-GMP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C83 cite Reinders et al., 2016 for prior work on PdeI and PdeH. This provides important context for interpreting the current findings about PdeI's function, though the evaluation depends on the accuracy of the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C84"
+    ],
+    "result": "BFP-only control strains show uniform distribution throughout biofilms, indicating that PdeI-BFP localization is not affected by BFP labeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C84 provide critical negative control data from confocal microscopy (Figure 4G). The uniform distribution of BFP alone contrasts with the specific localization of PdeI-BFP, supporting that the observed localization is PdeI-specific.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Other marker genes co-expressed with PdeI in cluster 2 do not significantly impact biofilm formation or directly relate to c-di-GMP or PdeI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 states that other marker genes lack significant impact, but no experimental data is provided to test the function of these co-expressed genes. This appears to be an inference from the analysis rather than experimentally validated, making the claim uncertain without additional functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Elevated c-di-GMP levels may contribute to antibiotic tolerance through modulation of cellular metabolism or stress response pathways, and PdeI may be crucial in initial biofilm formation stages by responding to surface-associated cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85 and C86 are explicitly speculative ('may involve', 'may be especially crucial', 'potentially responding'). While the speculation is reasonable based on the observed data, no direct mechanistic evidence is provided. These represent hypotheses for future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Bacterial cells lack mRNA polyadenylated tails, with mRNA comprising ~5% and rRNA ~95% of total RNA, necessitating alternative approaches for mRNA isolation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C6-C8 state established knowledge about bacterial RNA composition. These are well-documented facts in bacterial molecular biology, appropriately cited (C6 cites Maynard et al., 2020), and provide necessary background for understanding the technical challenge addressed by RiboD-PETRI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C90"
+    ],
+    "result": "Biofilms are complex ecosystems contributing to ~80% of chronic infections, characterized by heterogeneity influenced by multiple factors, with existing scRNA-seq methods facing challenges in transcript recovery due to abundant rRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C75-C82, and C90 provide background context supported by multiple literature citations. These establish the biological importance of biofilms, the challenge of studying heterogeneity, and the limitations of existing methods. The claims appropriately frame the research problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Specific marker genes were identified for distinct clusters in exponential phase E. coli (cluster 2: yfgM, glpG, scpA, elyC, ptsA, carB, actP, pgpB), stationary phase S. aureus (cluster 4: KQ76-13335, KQ76-00740, KQ76-11725), and stationary phase C. crescentus (cluster 3: CCNA-00259, CCNA-03402, CCNA-02361, CCNA-03119).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 list marker genes identified through differential expression analysis for specific clusters across three bacterial species. These are supported by data in Figures 2G and supplementary figures, representing standard bioinformatic outputs from the scRNA-seq analysis.",
+    "result_type": "MINOR"
+  }
+]

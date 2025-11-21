@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C38",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study developed a de novo AMP design framework combining a GAN generator trained on 3280 AMP sequences with AMPredictor, a graph-encoding activity regressor. The GAN successfully generated diverse peptide sequences with low similarity (~0.35 identity) to existing AMPs while maintaining similar physicochemical properties to real AMPs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this methodological approach, with one stating 'The de novo AMP design framework combines a generative adversarial network (GAN) with an AMP predictor (AMPredictor), which is a novel approach in the field.' Another reviewer notes the method is 'based on deep learning, using a GAN generator and a regression tasked to predict antimicrobial activity' and describes it as 'methodologically robust and a major stride in computational biology.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "AMPredictor, a GCN-based regression model using graph representations with ESM embeddings and contact maps, achieved strong performance with RMSE of 0.5348 and Pearson correlation of 0.7072 on the test set, outperforming baseline methods (MLP, CNN, GRU, LSTM, Transformer).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the performance of AMPredictor without challenge. One reviewer describes 'the introduction of a GAN for generation and a GCN-based AMPredictor for MIC predictions is methodologically robust.' The editor notes 'the experimental evidence supporting the conclusions is solid,' implicitly accepting the computational validation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Experimental validation of 24 generated peptides demonstrated effective antibacterial capability against six strains including three MDR species, with several peptides achieving MIC values below 1 \u03bcM. The study identified 13 bifunctional AMPs (6 from generator v1, 7 from generator v2), demonstrating that antiviral features are naturally encoded in AMP sequences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly support this finding. One states 'the authors have addressed each major comment through new experiments, particularly by validating 24 peptides' and notes these 'additions have strengthened the manuscript.' Another reviewer emphasizes 'The in vitro and in vivo experimental validations of the AMPs provide strong evidence to support the computational predictions.' The editor confirms 'the experimental evidence supporting the conclusions is solid, with 24 validated peptides.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C95",
+      "C96"
+    ],
+    "result": "Three lead peptides (P001, P002, P076) exhibited potent bactericidal properties with MICs ranging from 0.20 to 15.18 \u03bcM. P076 showed exceptional potency against multidrug-resistant A. baumannii with MIC of 0.21 \u03bcM, while P001 demonstrated broad-spectrum activity and P002 showed preference for Gram-positive bacteria.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm these findings. One notes 'The discovery of effective peptides, such as P076, which demonstrates potent bactericidal activity against multidrug-resistant A. baumannii with low cytotoxicity, is noteworthy.' Another states 'Experimental validation in vitro and in animal models, notably with the highly potent P076 against a multidrug-resistant bacterium...underpins the strength of their evidence.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Toxicity assessment revealed that P001 and P002 displayed dose-dependent hemolysis exceeding 50% at 20 \u03bcM, while P076 showed minimal hemolysis (<1% at 70 \u03bcM) and CC50 values well above 30 \u03bcM for three mammalian cell lines (35.5-66.8 \u03bcM range for P076).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the toxicity data without challenge. One reviewer specifically mentions 'P076, which demonstrates potent bactericidal activity against multidrug-resistant A. baumannii with low cytotoxicity' as a strength. The safety profile is implicitly supported through reviewers' acceptance of the overall experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "In vivo mouse models demonstrated that P076 outperformed polymyxin B in both safety and efficacy. P076 showed threefold lower toxicity (LD50 80 mg/kg vs 26 mg/kg for PB), no pathological changes in organs, 50% survival in peritoneal infection models, and 25-fold reduction in bacterial colonization compared to PBS controls.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly support the animal model data. One states 'Experimental validation in vitro and in animal models, notably with the highly potent P076 against a multidrug-resistant bacterium...underpins the strength of their evidence.' Another notes 'The successful inhibition of a spectrum of pathogens in vitro and in animal models gives credibility to the claims.' The editor acknowledges 'only a fraction of these studies demonstrated animal results,' implicitly recognizing this as a strength of the current work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "P002 demonstrated broad-spectrum antiviral activity against five enveloped viruses (CHIKV, HTNV, DENV-2, HSV-1, SARS-CoV-2), nearly abolishing all viral infections at 12.5 \u03bcM with EC50 values ranging from 0.37 \u03bcM (CHIKV) to 2.08 \u03bcM (HTNV). Additional peptides P135 and P244 showed significant inhibition of DENV-2 with EC50 of 0.09 \u03bcM.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the antiviral findings. One states 'P002's broad-spectrum viral inhibition, underpins the strength of their evidence.' Another notes 'The demonstrated activity of the peptides against both bacterial and viral pathogens suggests that the discovered AMPs have a wide therapeutic potential.' The bifunctional nature is recognized as a key contribution: 'The development of de novo antimicrobial peptides (AMPs) with the novelty of being bifunctional (antimicrobial and antiviral activity).'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C77"
+    ],
+    "result": "The study tested the hypothesis that dual antibacterial/antiviral function could be encoded in single peptide sequences by training two generators (v1 on AMPs only, v2 on AMPs plus AVPs) and using ensemble AVP classification. Surprisingly, generator v2 did not show higher antiviral passing rates, suggesting antiviral features are naturally encoded in AMP sequences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer expresses concern about this finding: 'I missed the justification for combined antiviral and antibacterial activities. As the authors responded, less than 10% of the training data has antiviral activity. Therefore, I do not understand how the high percentage of antiviral activities was achieved. Especially reading that the antiviral filtering did not have an influence on the number of antiviral peptides obtained.' This indicates the mechanistic explanation remains unclear despite experimental validation of bifunctional peptides.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Molecular dynamics simulations and binding assays revealed differential membrane interactions: P076 showed strongest binding to lipid A (KD 56.1 nM) and Gram-negative bacterial membranes (\u0394Gbind -465.79 kJ/mol), with stronger membrane penetration than P001 and P002. All peptides showed weaker binding to viral envelopes than bacterial membranes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the mechanistic studies. The computational and biophysical characterization is implicitly accepted as part of the overall 'solid' experimental evidence noted by the editor. One reviewer mentions the work demonstrates 'a replicable means to rapidly develop new antimicrobials,' suggesting acceptance of the mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The computational framework utilized 3280 AMP sequences from PepVAE (E. coli-specific, <40 amino acids, no cysteines) for training, with GAN architecture employing WGAN-GP strategy to avoid mode collapse, and AMPredictor using ESM embeddings, Morgan fingerprints, and contact maps with optimized hyperparameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the methodological details without substantive critique. One reviewer requests 'briefly describe any steps taken to mitigate GAN pathologies (such as mode collapse),' suggesting the WGAN-GP approach should be more clearly presented but not questioning its validity. The 'Novel, combined approach to AMP activity prediction from their amino acid sequence' is recognized as a strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Experimental methods included solid-phase peptide synthesis with mass spectrometry verification, standardized MIC determination using broth microdilution (70% turbidity reduction threshold), authenticated cell lines for viral propagation, approved animal protocols, BLI for binding kinetics, and all-atom MD simulations using GROMACS with CHARMM36 force field.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about experimental methods. The editor notes 'the experimental evidence supporting the conclusions is solid,' and reviewers emphasize the strength of the experimental validation. One reviewer states 'The in vitro and in vivo experimental validations of the AMPs provide strong evidence to support the computational predictions.'",
+    "result_type": "MINOR"
+  }
+]

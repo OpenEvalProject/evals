@@ -1,0 +1,2296 @@
+{
+  "submission": {
+    "id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:50:47.513147Z",
+    "updated_at": "2025-11-21T21:50:47.513147Z"
+  },
+  "content": [
+    {
+      "id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "content_type": "manuscript",
+      "content_text": "# The sperm hook as a functional adaptation for migration and self-organized behavior\n\n## Authors\n\n- Heungjin Ryu<sup>1</sup> ([ORCID: 0000-0003-1048-9519](https://orcid.org/0000-0003-1048-9519)) \u2020\n- Kibum Nam<sup>1</sup>\n- Byeong Eun Lee<sup>3</sup>\n- Yundon Jeong<sup>1</sup>\n- Seunghun Lee<sup>1</sup>\n- Jeongmo Kim<sup>1</sup>\n- Young-Min Hyun<sup>4</sup> ([ORCID: 0000-0002-0567-2039](https://orcid.org/0000-0002-0567-2039))\n- Jae-Ick Kim<sup>3</sup> ([ORCID: 0000-0001-9705-0394](https://orcid.org/0000-0001-9705-0394)) \u2020\n- Jung-Hoon Park<sup>1</sup> ([ORCID: 0000-0001-5316-1690](https://orcid.org/0000-0001-5316-1690)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Engineering, Ulsan National Institute of Science and Technology Ulsan Republic of Korea ([ROR:017cjz748](https://ror.org/017cjz748))\n2. Department of Social Informatics, Kyoto University Kyoto Japan ([ROR:02kpeqv85](https://ror.org/02kpeqv85))\n3. Department of Biological Sciences, Ulsan National Institute of Science and Technology Ulsan Republic of Korea ([ROR:017cjz748](https://ror.org/017cjz748))\n4. Department of Anatomy, Yonsei University College of Medicine Seoul Republic of Korea ([ROR:01wjejq96](https://ror.org/01wjejq96))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn most murine species, spermatozoa exhibit a falciform apical hook at the head end. The function of the sperm hook is not yet clearly understood. In this study, we investigate the role of the sperm hook in the migration of spermatozoa through the female reproductive tract in Mus musculus (C57BL/6), using a deep tissue imaging custom-built two-photon microscope. Through live reproductive tract imaging, we found evidence indicating that the sperm hook aids in the attachment of spermatozoa to the epithelium and facilitates interactions between spermatozoa and the epithelium during migration in the uterus and oviduct. We also observed synchronized sperm beating, which resulted from the spontaneous unidirectional rearrangement of spermatozoa in the uterus. Based on live imaging of spermatozoa-epithelium interaction dynamics, we propose that the sperm hook plays a crucial role in successful migration through the female reproductive tract by providing anchor-like mechanical support and facilitating interactions between spermatozoa and the female reproductive tract in the house mouse.\n\n## Introduction\n\nSince the pioneering work by Parker, 1970, postcopulatory sexual selection has been recognized as an important driving force that shapes male sperm and female reproductive track characteristics. Post-copulatory sperm competition over gamete and cryptic female choice are equivalent to male-male competition and female choice in the pre-copulatory sexual selection. Sperm competition occurs when spermatozoa from more than one male coincide within the female reproductive tract in a time window where they have a chance to fertilize the same egg (Parker, 1970). The evolutionary consequences of the sperm competition for the male traits, including baculum complexity, sperm shape and behavior, are demonstrated in a wide range of animals from insects to mammals (Anderson et al., 2005; Lange et al., 2013; Andr\u00e9 et al., 2020). Such male adaptations secure sperm delivery to the female reproductive tract and influence the sequential mating of the already-mated female with other males. Cryptic female choice is a more complicated process to define as it is achieved at the various stages of the post-mating fertilization process that also occurs inside the female reproductive tract. However, post-copulatory cryptic female choice is evident where a female can exert an influence on ejaculates or even fertilized eggs that can influence the male\u2019s reproductive success (Eberhard, 1996; Firman et al., 2017; Roberts et al., 2012).\n\nPostcopulatory sexual selection results in the co-evolution of the male and female traits that impact the reproductive strategies of the opposite sex (Eberhard and Lehmann, 2019; Greff and Parker, 2000). For example, copulatory plugs formed by male semen hinder the sequential mating of the female with a second male and diminish the reproductive outcome of the second male (Mangels et al., 2016; Sutter and Lindholm, 2016). Females, on the other hand, by removing the copulatory plug, can counteract the male strategy (Koprowski, 1992). When fluid in female reproductive tract is spermicidal, male seminal fluid neutralises the spermicidal medium and secures sperm survival inside the female reproductive tract (Holman and Snook, 2008; Holman and Snook, 2006).\n\nAmong mammals, rodent species exhibit various sperm morphological and behavioral characteristics. A notable morphological feature of murine sperm is the apical hook resulting in an asymmetrical falciform head shape that is found in most of the murine rodents (Breed, 2004; Roldan et al., 1992). The functional significance of the sperm hook that causes head asymmetry is still under debate in the field of mouse reproductive ecology. Currently, two main hypotheses attempt to explain the function of the sperm hook. One is that the sperm hook plays a crucial role in sperm competition by aiding sperm linkage (sperm train formation) that enhances straighter and faster sperm forward progression \u2013 the sperm cooperation hypothesis (Fisher and Hoekstra, 2010; Moore et al., 2002). The other hypothesis is that the sperm hook facilitates sperm-epithelium interactions in the female reproductive tract, playing a significant role in sperm migration \u2013 the migration hypothesis (Smith and Yanagimachi, 1990; Firman and Simmons, 2009). The sperm cooperation hypothesis is supported by the pioneering discovery of sperm linkage known as sperm trains (Moore et al., 2002) and suggests that sperm trains facilitate faster or straighter sperm swimming (Fisher and Hoekstra, 2010; Moore et al., 2002). However, other studies could not find supporting evidence of sperm cooperation by the sperm train or morphological changes in sperm hooks concerning the degree of sperm competition (Firman and Simmons, 2009; Hook et al., 2021). These researchers rather suggest that the sperm hook plays a crucial role in sperm migration by interacting with epithelia in the female reproductive tract.\n\nSince thick muscle layers comprise the outer part of the rodent female reproductive tract, direct observation of spermatozoa inside the female reproductive tract is a challenging feat. Therefore, previous studies focused on the oviduct where muscle layers are thin and transparent, using brightfield, fluorescence or confocal microscopy (Ishikawa et al., 2016; Qu et al., 2021; Suarez, 1987). In this study, we developed an ex-vivo observation system based on a custom-built two-photon microscope (Figure 1\u2014figure supplement 1). This system enables the observation of spermatozoa and their behavior inside the live female reproductive tract. While two-photon microscopy is currently the method of choice for live imaging of deep tissues (Helmchen and Denk, 2005; Benninger and Piston, 2013; Keller, 2013), it has seldom been used for studying animal reproductive ecology. Here, we demonstrate high-resolution deep-tissue imaging that allows us to observe and track sperm movement inside the female reproductive tract, including the uterus, to realise real-time tracking of spermatozoa and their migration.\n\nUsing this technology, we report newly discovered sperm behavior and aggregation patterns that suggest various roles of the sperm hook in sperm migration inside the female reproductive tract. Based on live imaging of sperm dynamics inside the live female reproductive tract, we provide new observations and insights that suggest functions of the sperm hook that help sperm migration and cooperation. With our new observation system and results, we hope to contribute to the field of postcopulatory sexual selection in rodents by advancing methodological progress and stimulating discussion and future research on the function of sperm hook in murine rodents.\n\n## Results\n\nTo observe mouse sperm behavior in the female reproductive tract, we mated wild-type Mus musculus (C57BL/6) females with transgenic male mice (Supplementary file 1a, b) that express DsRed at the sperm mid-piece (mitochondria) and eGFP in the sperm acrosome (Hasuwa et al., 2010). The female mice were euthanized between 0.5- and 3 hr post-mating, and their reproductive tract along with the copulatory plug was excised and transferred to a sterilized Petri dish. We then conducted ex-vivo imaging of the live reproductive tract using our two-photon microscope (Figure 1\u2014figure supplement 1). Figure 1A is a diagram of the female reproductive tract that labels the name of each part of the tract. All observations were typically completed within 3 hr and did not exceed 6 hr post-euthanasia. Despite this observation period being longer than recommended for conventional rat transplantation surgery (D\u00edaz-Garc\u00eda et al., 2013), we noted live uterine movements throughout the entire observation period. When samples were transferred to incubators preheated to 37\u00b0C with 5% CO2 following observation, uterine movement persisted even 24 hr post-excision. We used Fiji (Schindelin et al., 2012) and R 4.3.3 (R Development Core Team, 2024) for image processing and statistical analysis.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig1-v1.jpg)\n\n**Figure 1.:** (A) An illustration of the female reproductive tract and sperm migration direction (arrows in orange colour) inside the tract. Ova (egg cells) are in the ampulla. (B) Spermatozoa alter their travel direction based on their head orientation upon reaching the uterine wall (sperm hook functions as a pivot, Figure 1\u2014video 2A). Left image shows a sperm trajectory exhibiting a pro-wall-hook direction, and the right image shows an anti-wall-hook direction. The trajectory is depicted in colors representing different time points. Dashed lines are guides to the eye to visualize the uterus wall. Scale bar: 50 \u00b5m. (C) Sperm moving direction changes over time when they reach the uterine epithelia. Numbers indicate sequences of sperm movement. (1) During sperm migration, they reach the uterine wall. (2) After reaching the uterine wall, they beat several times while facing their head towards the uterine wall. (3) Sperm beating results in a change in sperm orientation (1\u20133\u2032: pro-wall-hook, 1\u20133\u2033: anti-wall-hook). The pro-wall-hook orientation coincides with sperm travelling along the wall and the anti-wall-hook orientation coincides with sperm moving away from the wall. (D) When spermatozoa reach the uterine wall, their trajectories predominantly follow the pro-wall-hook direction, where the sperm hook is directed towards the uterine wall. (E) The sperm hook assists a spermatozoon in anchoring to the epithelia (hook as an anchor). This anchoring facilitates sperm attachment to the uterine and utero-tubal junction (UTJ) epithelium and prevents spermatozoa from being swept away by internal flow caused by peristaltic movement. (F) The sperm hook and thin sperm head aid spermatozoa in squeezing through the sperm-crowded UTJ entrance (colliculus tubarius, CT) and attaching to the epithelium by acting as an anchor (Figure 1\u2014video 3). Note that in our experiments, we do not observe the principal and terminal pieces of spermatozoa due to a lack of fluorescence in our animal model. The observed acrosome and midpiece are shown coloured in the schematic figures.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** DsRed and eGFP were excited nonlinearly using a tunable high peak power femtosecond laser (Chameleon discovery/Coherent) and a water-immersion objective lens (CFI75 LWD 16 X W/Nikon). The fluorescence emitted was collected by the same objective lens and detected by a pair of GaAsP photomultiplier tubes (PMT, H10770PA-40/Hamamatsu). Dichroic mirrors and filters; DM1(T735lpxrxt-UF3/Chroma), DM2(T565lxr/Chroma), BF(ET720SP-2P8/Chroma), F1(ET605/70 m/Chroma), and F2(ET525/70 m/Chroma) were used to split the excitation beam and emission light. A resonant-galvo scanner (RESCAN-GEN/Sutter instrument) enabled real-time fluorescence imaging of sperm behavior at a speed of 30 frames per second for 512 pixels per line acquisition. A Pockels cell (M350-80-LA-02 KDP/Conoptics) allowed for rapid control of the laser beam intensity, homogenising the illumination across the field of view, and applying varying laser power per tissue depth. The sample position in all three dimensions was controlled by a Piezo-driven objective scanner (P-725.4CA/PI) and a motorized 3-axes stage (3DMS/Sutter instrument). A small animal heating plate (HP-4M/Physitemp) maintained the warmth of the mouse female reproductive tract at body temperatures.\n\n### The role of sperm hook in migration inside the uterus\n\nWe first observed sperm movement in the uterus, where most ejaculated spermatozoa are located and initial sperm selection occurs. In the uterus, we observed vigorous fluid flow caused by uterine contraction and relaxation. Consequently, most spermatozoa in the uterus were carried by this flow, adhering to the inherent flow dynamics within the uterus (Figure 1\u2014video 1A). However, when the flow temporarily ceased, spermatozoa located near the uterine wall exhibited greater activity (Figure 1\u2014video 1B, C). When a spermatozoon encounters the uterine wall (epithelium) during migration, the sperm hook interacted with the wall and acts as a pivot (Yu et al., 2023) that influences the direction of sperm travel (Figure 1B and C). Figure 1\u2014video 2A shows two distinct types of sperm movement when transitioning from the uterus volume to the uterine wall: pro-wall-hook and anti-wall-hook directional movement (Figure 1C). Upon reaching the uterine wall, instead of randomly deflecting in various directions, sperm preferentially altered their heading direction such that their apical hook would face the uterine wall (pro-wall-hook direction).\n\nTo test whether the hook influences the direction of migration, we tracked spermatozoa that travelled from the uterus volume to the wall in sequentially acquired images. We found that 52 out of 63 spermatozoa (82.54%) changed their migration direction towards the pro-wall-hook direction after reaching the uterine wall (Figure 1D). The remaining 11 spermatozoa followed the anti-wall-hook direction. A binomial test confirmed that this tendency was statistically significant (one-tailed, p<0.001, 95% CI: 0.73, 1.00). Furthermore, when spermatozoa migrated along the uterine wall, they exhibited a tapping-like behavior in which spermatozoa tapped their hook against the epithelium when oriented in a pro-wall-hook direction (Figure 1\u2014video 2B). In contrast, when the sperm hook faces the luminal space, spermatozoa could not migrate along the wall and their migration trajectories followed the anti-wall-hook direction, resulting in the movement away from the wall (Figure 1D; Figure 1\u2014video 2A). In addition to the advantage of straighter trajectories, fluid flows are slower at the wall than at the centre of the lumen in the uterus (Zaferani et al., 2019). Therefore, migration along the uterine wall will help spermatozoa to reach the entrance of the intramural utero-tubal junction (UTJ), also called colliculus tubarius (CT), where one of the most important sperm selection processes takes place (Nakanishi et al., 2004; Qu et al., 2021).\n\n### Sperm anchoring and migration kinetics in the uterus\n\nWe observed that the sperm head was attaching to the epithelium of the CT and uterus (Figure 1\u2014video 3A, B) when spermatozoa reached the CT. The sperm hook was affixed to the epithelium, thereby securing the spermatozoa on the epithelia. We defined this securing of the spermatozoa on the epithelia by the sperm hook as an anchor-like function of the hook (Figure 1\u2014video 3A, B). This anchoring also helped prevent spermatozoa from being swept away by mucosal flow (Figure 1E; Figure 1\u2014video 3B). When spermatozoa are attached to the CT and squeezed through other spermatozoa by hooking, the apical hook always faces the epithelium (Figure 1F; Figure 1\u2014video 3A). Once spermatozoa successfully clung onto the CT, anchoring to the epithelia prevented them from being pushed out by competing spermatozoa or from being swept away by fluid flow (Figure 1\u2014video 3B).\n\nTo compare sperm migration kinetics during sperm swimming relative to their distance from the uterine wall, we tracked sperm migration trajectories by employing the TrackMate plugin in ImageJ (Ershov et al., 2022; Tinevez et al., 2017). In total, we were able to track 694 sperm trajectories. After successful tracking using the customized tracking option in TrackMate, we computed various sperm kinetic parameters. These parameters included the curvilinear velocity (VCL), straight-line velocity (VSL), and linearity of forward progression (LIN), which are commonly used in computer-assisted sperm analysis, CASA (Amann and Waberski, 2014). Briefly, VCL was calculated as the total distance travelled divided by total travel time, VSL as the distance between initial and final positions of the sperm trajectory divided by total travel time, and LIN as the ratio of VSL to VCL, which can range from 0 to 100%, with 100% representing a perfectly straight line. We also introduced a new kinetic parameter called straight line-to-sideward movement ratio (SWR), defined as track displacement of a sperm trajectory divided by maximum sideward movement distance. Refer to Figure 2\u2014figure supplement 1 for our definition of the uterus wall and a schematic description of the sperm migration kinetic parameters, as well as Methods for more details.\n\nOur sperm tracking analysis revealed that spermatozoa located close to the uterine wall moved faster, exhibiting higher VCL and VSL (Figure 2A; Supplementary file 1c; Figure 1\u2014video 1B, C). However, LIN and SWR did not significantly vary depending on the sperm\u2019s distance from the uterus wall (Figure 2B). In contrast to the non-significant changes in LIN and SWR relative to the distance from the uterine wall, when spermatozoa swam parallel to the wall, they not only moved faster (higher VCL and VSL; Figure 2A), but also followed a straighter path (higher LIN and SWR; Figure 2B). Given that the internal fluid flow around the uterine wall is slower (Zaferani et al., 2019), and considering the hydrodynamic factors that attract spermatozoa to the wall when swimming near it (Alvarez et al., 2014; Elgeti et al., 2010), migration along the wall would be an efficient strategy for sperm movement within the uterus. We also examined the impact of both individual males (coded as \u2018Male ID\u2019) and females (coded as \u2018Date\u2019) on the sperm kinetic parameters in all models by visualizing the effects of these two random variables (Figure 2\u2014figure supplement 2). We confirmed that the effects of the two random variables were consistent across all significant models, indicating the validity of our model estimations.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig2-v1.jpg)\n\n**Figure 2.:** (A) Both curvilinear velocity (VCL) (top) and straight-line velocity (VSL) (bottom) decreased with an increase in the distance between the sperm trajectory and the uterine wall. Similarly, VCL and VSL decreased as the angle between the sperm trajectory and uterine wall increased. (B) The distance between the sperm trajectory and uterine wall did not significantly affect linearity of forward progression (LIN) (top left) and SWR (bottom left). However, both LIN and straight line-to-sideward movement ratio (SWR) decreased when the angle between the sperm trajectory and uterine wall increased. The total number of sperm trajectories is 694. Data from different males are represented in different colors and shapes. The dotted lines indicate regression lines from simple regressions to aid visual interpretation. Check model estimates for more details and precise interpretation of the models (Supplementary file 1). The y-axis of each figure is displayed in the log-scale except for LIN. Images for sperm tracking were acquired around the area labeled as \u2018Wall\u2019 in the uterus in Figure 1A. Sperm trajectories used in this analysis are presented in Figure 1\u2014video 1B. The effect of the two random variables (males and females) are visualized in Figure 2\u2014figure supplement 2. ***: p < 0.001, **: p < 0.01, *: p < 0.05, ns: not significant.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Areas along the uterine wall that were relatively straight were selected. The boundary of these areas was identified using the object selection tool in Adobe Photoshop CC (23.1.0 version). (B) The uterine wall was approximated as a linear line using linear regression (1). The distance between a spermatozoon and the uterine wall was defined as the minimum distance between the midpoint of the track displacement and a sperm trajectory (2). The angle between sperm trajectories and the uterine wall was calculated as the angle (in radians) between the uterine wall (approximated line) and the straight line that connected the first and last points of a sperm trajectory\u2013track displacement line (3). The maximum sideward movement was determined as the greatest distance between the parallel lines that aligned with the track displacement line at the positions of the sperm trajectory (4). Straight line-to-sideward movement ratio (SWR) was then computed by dividing the track displacement by the maximum sideward movement.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The model-fitted lines, separated by male ID and date (female), in the non-significant models, indicated as \u2018ns\u2019, show non-significant effects of the distance (straight line-to-sideward movement ratio, SWR) or an inconsistent effect of the distance (Linearity) on the kinetic parameters. ***: p < 0.001, **: p < 0.01, *: p < 0.05, ns: not significant.\n\n### Structure of UTJ and sperm behavior at the entrance of intramural UTJ (CT)\n\nUpon sacrificing and optical clearing the tissue, we confirmed that the entrance to the intramural UTJ (CT) in the uterus consists of nearly closed narrow gaps between mucosal folds (Figure 3A). These narrow gaps extended to about 100 \u00b5m deeper from the entrance (Figure 3\u2014video 1A, B), and only a few spermatozoa could pass through a gap at a time (Figure 3A; Figure 3\u2014video 1C). We were not able to find evidence of passive sperm carriage, such as upsuck-like sperm carriage (Baker and Bellis, 1993), caused by peristaltic movement from the uterus into the UTJ in real-time live images (Figure 3\u2014video 2A). Therefore, we concluded that fluid flow induced by uterine and oviduct contraction is not a major driving force for sperm entry to the UTJ through the CT.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig3-v1.jpg)\n\n**Figure 3.:** (A) The upper three images are the vertical view of the colliculus tubarius (CT) (entrance to the UTJ) of the intramural UTJ from an unmated female. The bottom right image is a horizontal view of the intramural UTJ. There are only a few small gaps, indicated by arrows, between mucosal folds, which control sperm migration into the UTJ from the uterus (Figure 3\u2014video 1). Illustrations at upper and lower right conners indicate imaging planes (blue rectangles) and the intramural UTJ (orange cylindrical structure) with the CT (black tilde). Scale bar: 100 \u00b5m, Arrow line thickness: 10 \u00b5m for top three images, 5 \u00b5m right bottom image. (B) Asynchronized movement of mucosal folds (sliding against each other) at the CT due to uterine and UTJ contractions enables spermatozoa to slide into the intramural UTJ from the uterus (Figure 3\u2014video 2). Two dashed arrows (in blue) indicate the direction of sperm migration from the uterus to the UTJ, and the dashed arrow in the centre (in orange) indicates the direction of sperm sliding in the intramural UTJ. The two curved black arrows indicate a asynchronized (opposite) movement of confronting mucosal folds in the intramural UTJ.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The upper left inset represents a uterine horn that moves to the left or right due to muscle contraction (exaggerated for visualization). The five subfigures with numbering represent the zoom-in of the two red square frames in the inset. When the uterine horn moves from the centre to the right (1 to 2), two facing surfaces between the two mucosal folds slide against each other. This sliding results in an opening space where sperm can ascend \u2013 note that the sperm moves from cell 1 to cell 2 of the right mucosal fold (2). When the uterine horn moves from right to left (3), the two surfaces between the mucosal folds slide in opposite directions where the sperm can now reach cell 4 of the left mucosal fold. If sperm can turn over, its head can be attached to cell 4 of the left mucosal fold (4 to 5). Repetition of these procedures will make the sperm finally pass the colliculus tubarius (CT) and migrate through narrow gaps between mucosal folds in intramural UTJ. This process appears to be as if sperm may slide through the space between mucosal folds when the space is too small for normal beating (Figure 3\u2014video 2C).\n\nThis conclusion raises a question about how spermatozoa enter the UTJ through the CT if the UTJ entrance is nearly closed. We found head-directional sliding of spermatozoa in the almost closed inter-luminal spaces between the uterus and intramural UTJ (Figure 3\u2014video 2B). We did not observe any sliding of spermatozoa that were directs to the tail direction. This one-directional head-forward sliding in a very narrow inter-luminal space suggests the role of the sperm hook as an anchor that prevents backwards slipping by the squeezing movement from the contraction of the uterus. Such one-directional sliding is also a plausible way of sperm migration from the uterus to UTJ through the narrow gap at the CT. We also observed that when muscle contraction and relaxation occurred at the uterus and oviduct, the surfaces of two confronting mucosal folds in intramural UTJ slid against each other in opposite directions (Figure 3B; Figure 3\u2014video 2B). Such an opposite directional movement of mucosal folds, for example, will occur when the uterus bends to the left due to muscle contraction on its left side and relaxation of its right side (Figure 3\u2014figure supplement 1). As shown in Figure 3\u2014video 2, the opposite movement of mucosal folds makes space between mucosal folds at the CT, providing an opportunity for nearby attached spermatozoa to enter the intramural UTJ (Figure 3\u2014figure supplement 1). Although the application of further experimental approaches will be necessary, occasional fluctuations in the size of the luminal space between mucosal folds, caused by peristaltic movements, together with the head-directional sliding of the spermatozoa, may provide an opportunity for spermatozoa to pass through the CT.\n\nWe also observed unidirectional sperm clustering as a result of spontaneous sperm re-arrangement during sperm beating along the uterine wall (Figure 4A and Figure 4\u2014video 1A, B). Such unidirectional sperm clustering and their successive beating resulted in synchronized sperm beating on some occasions (sperm self-organising behavior). We also found such self-organized sperm behavior on a large scale at the CT in which most of the clustered spermatozoa at the entrance of the intramural UTJ (CT) exhibited synchronized beating (Figure 4B; Figure 4\u2014video 2). The synchronized sperm beating was observed to generate fluid flows strong enough to prevent other spermatozoa from attaching to the CT or directly pushing out other spermatozoa, thereby preventing other spermatozoa from entering the UTJ (Figure 4\u2014video 1; S7).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig4-v1.jpg)\n\n**Figure 4.:** (A) The apical shape of the sperm head, due to the sperm hook, results in head asymmetry. This asymmetrical falciform head shape may facilitate sperm re-arrangement and clustering at a uterine wall (Figure 4\u2014video 1). The circle highlights spermatozoa undergoing unidirectional re-arrangement over time. The elapsed time after the first frame is shown in the upper left of the images. The right lower zoom-in inset shows an instant of synchronized motion and unidirectional re-arrangement. Scale bar: 50 \u00b5m. (B) Unidirectional sperm clustering at the entrance of the intramural utero-tubal junction (UTJ) (CT, indicated by a dashed line) is marked with arrows. Such large sperm clustering resulted in synchronized sperm beating at the CT (Figure 4\u2014video 2). Scale bar: 200 \u00b5m. Note that due to a lack of fluorescence, the principal and terminal pieces of sperm tails are not seen in the images.\n\n### Sperm linkage and their migration kinetics\n\nUnlike the sperm trains found in wood mice (Apodemus sylvaticus; Moore et al., 2002) and deer mice (Peromyscus maniculatus; Fisher and Hoekstra, 2010), most of the spermatozoa in this study did not form functional sperm trains (linked spermatozoa) (Figure 5A; Figure 5\u2014video 1). Active sperm linkage or clusters were indeed observed but were rare (only three identifiable cases during over 100 hr of imaging). For the house mouse, the observed sperm trains did not move faster or slower than unlinked single spermatozoa (Figure 5B; Figure 5\u2014video 1). Their VCL, VSL, and LIN were not faster nor higher than those of unlinked single spermatozoa as shown in Figure 5B. Although their SWR may be higher than that of unlinked single spermatozoa, due to the rare number of observed events, further experiments will be necessary to clarify whether the sperm train formation is advantageous in the house mouse.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig5-v1.jpg)\n\n**Figure 5.:** (A) The projected images, comprising 60 frames, depict the trajectories of sperm trains and unlinked single spermatozoa. Each of the images in the lower left corner shows a sperm train that was traced. Figure 5\u2014video 1 shows how the three traced sperm trains are moving. The colour bar located at the bottom centre represents the VCL of each sperm trajectory, with blue indicating slower speeds and red indicating faster speeds. (B) The boxplots, which include individual data points, represent the kinetic parameters of the sperm trains and unlinked single spermatozoa. The parameters, including curvilinear velocity (VCL), straight-line velocity (VSL), linearity of forward progression (LIN), and straight line-to-sideward movement ratio (SWR), were computed using images of 100x100 pixels that contained a sperm train. The three sperm trains that were traced did not exhibit a faster VCL or VSL, nor a higher LIN. However, it is still possible that the SWR is higher in the sperm train. The lines within the boxes represent the medians, the whiskers represent 1.5 times the interquartile ranges, and the symbols show the individual data points.\n\n### Sperm migration and accumulation in the oviduct\n\nAfter entering the UTJ, spermatozoa continued migration through the narrow UTJ lumen. In the UTJ, spermatozoa interact with epithelia with their hook and penetrate their thin head into a narrow space (Figure 6\u2014video 1A). Contraction of the UTJ reduced the width of the UTJ lumen and prevented sperm migration (Figure 6\u2014video 1B). However, some spermatozoa could pass through the narrow luminal space by putting their thin hook (Figure 6A and B; Figure 6\u2014video 1B). During UTJ lumen contraction, both swimming and beating of spermatozoa therein were physically suppressed. When the UTJ lumen dilates, the suppressed spermatozoa started beating and swimming again (Figure 6C; Figure 6\u2014video 1B). We also found sperm accumulations in the oviduct, including UTJ and isthmus (Figure 6D). However, as these sperm accumulations were arranged irregularly and consisted of spermatozoa that were mostly acrosome reacted and inactive, they were considered inactive entangled spermatozoa rather than actively linked spermatozoa (or sperm trains). These entangled spermatozoa filled the narrow oviductal lumen, creating an obstruction for the migration of other spermatozoa (Figure 6\u2014video 1C). If sperm hook facilitates such entanglement of inactive spermatozoa in the UTJ and isthmus, it can play a role in sperm competition by obstructing migration of the other spermatozoa including those from a second male.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/96582/elife-96582-fig6-v1.jpg)\n\n**Figure 6.:** (A, B) Spermatozoa can penetrate narrow spaces with their thin head and anchor their hook when they pass through the narrow gaps between mucosal folds during migration in the UTJ (Figure 6\u2014video 1A). Scale bar: 50 \u00b5m. (C) Spermatozoa can only migrate through the UTJ when the luminal space is extended due to oviductal contraction and relaxation in the UTJ. (D) Entangled spermatozoa in the oviduct, including the UTJ and isthmus, were predominantly made up of inactive acrosome-reacted spermatozoa. These entangled spermatozoa obstruct the migration of other active spermatozoa and can cause damage to live spermatozoa. Scale bar: 50 \u00b5m.\n\nSperm beating rates of the epithelia-attached spermatozoa were observed to change over time according to the changes in widths of the UTJ lumen (Figure 6\u2014video 2). Although such a change in beating rates may simply reflect luminal flow speed or luminal width related to physical space for beating, it may also assist in attaching spermatozoa to the epithelium by providing propulsive forces (Kantsler et al., 2014). Fluid flow in the UTJ and isthmus can damage unattached spermatozoa, particularly when they get entangled with inactive entangled spermatozoa that are moving back and forth by the flow (Figure 6\u2014video 1C). If such beating prevents epithelium-attached spermatozoa from being swept away by the flow, sperm beating corresponding to the fluid flow will be advantageous. The oviductal fluid gradually flows upward while continuously repeating back-and-forth directional changes and such flow is assumed to aid sperm migration from UTJ to ampulla (Hino and Yanagimachi, 2019). However, given our observation of the resistant (anchoring) behavior of spermatozoa to the flow in the UTJ, passive sperm transfer may not always be beneficial for healthy spermatozoa. Additionally, such passive transfer can cause physical damage to the spermatozoa by the collision with other entangled spermatozoa or epithelia of the narrow lumen. Further experiments will be necessary to clarify the role of the rapid upward flow in the oviduct in the fertilization process in mice.\n\n## Discussion\n\nOur real-time deep tissue imaging enabled by two-photon microscopy shows that the mouse sperm hook (i) facilitates sperm interaction with the epithelium for better navigation and (ii) provides an anchor-like role that assists the attachment of sperm to the epithelium. These results suggest that the sperm hook in house mice functions to facilitate sperm migration by interacting with the female reproductive tract (Firman and Simmons, 2009; Suarez, 1987; Tourmente et al., 2016). We also showed that when spermatozoa swim along the uterine wall, their apical hook interacts with the epithelia and determines sperm travelling direction upon encountering uterine epithelium. This finding implies that the sperm hook functions as a pivot when spermatozoa reach the uterine epithelium, and help spermatozoa migrate along the uterine wall by assisting in pro-wall-hook sperm orientation. Additionally, the sperm hook plays an important role in resisting endogenous fluid flow in the female reproductive tract by providing an anchor-like function. We did not observe a linkage of spermatozoa (sperm trains) that enables faster and straighter swimming of the sperm train in the uterus or oviduct. Instead, we found instances of the entanglement of inactive spermatozoa in the oviduct. Such aggregates of inactive spermatozoa appear to obstruct the migration of other spermatozoa. However, the role that these entangled spermatozoa play in sperm competition within the oviduct is a subject that necessitates further investigation.\n\nPrevious studies using various murine rodents suggest that acquiring the ability to form sperm train is a relatively rare evolutionary event in this taxon (Tourmente et al., 2016; Varea-S\u00e1nchez et al., 2016). Instead of finding evidence that the sperm hook aids in sperm train formation, those studies showed that variations in the length of the sperm hook, and asymmetry of sperm head influenced by the sperm hook are two important variables that reflect the degree of the sperm competition in murine rodents. One study even suggested that the sperm train formation (sperm linkage) is independent of the existence of sperm hook (Tourmente et al., 2016). Therefore, it is questionable whether acquiring the sperm hook in the murine rodents has evolved in general for a better sperm linkage. In line with the previous studies, our current study also showed that sperm hook plays a pivotal role in sperm-epithelium interactions by aiding sperm attachment to the uterine and oviductal epithelium and influencing sperm orientation during migration inside the female reproductive tract (Figure 1E and F; Figure 1\u2014video 3A, B). Such a role of the sperm hook suggests that the hook facilitates interactions between sperm and epithelia of the female reproductive tract and supports the migration hypothesis.\n\nAs we did not observe any passive sperm transfer by the internal fluid flow from the uterus to intramural UTJ through the CT, it is puzzling how spermatozoa enter the intramural UTJ. Although we proposed a hypothetical model of sperm passage through the CT in which the sperm hook plays an important role by providing an anchor-like role that prevents backward movement but allows head-forward sliding, further investigation with new experimental and observational tools will be necessary. Nevertheless, our findings suggest that the CT is a key female anatomical structure that controls sperm entry to the UTJ and influences sperm competition. If sperm passage through the CT is too easy, associated risks such as polyspermy or pathogen transmission that incur fitness costs for females also increase (Firman and Simmons, 2013; Mahabir et al., 2008). Therefore, the number of sperm passing through the CT should be balanced by the conflict between the two sexes depending on species-specific mating systems and the degree of promiscuity. This conflict then gives rise to an evolutionary arms race, with the male\u2019s sperm fertilization ability on one side, which includes aspects such as sperm swimming speed, and the female\u2019s sperm selection process on the other, which encompasses elements like physio-chemical barriers in the female reproductive tract (Firman et al., 2017; L\u00fcpold and Pitnick, 2018; Simmons and Wedell, 2020). Therefore, species variations in the length of the sperm hook and head asymmetry in rodents suggested in the previous studies (Tourmente et al., 2016; Varea-S\u00e1nchez et al., 2016) will also reflect the mechanical and structural characteristics of the CT and lumen in the intramural UTJ.\n\nIn the current study, we could not confirm evidence of sperm cooperation via sperm train formation that aids faster sperm swimming. Instead, we discovered a new form of potential sperm cooperation \u2013 synchronized sperm beating that resulted from spontaneous unidirectional sperm clustering. Based on these observations, we propose that the asymmetry of the mouse sperm head with an apical hook plays a crucial role in synchronized sperm beating (sperm cooperation) by facilitating unidirectional sperm re-arrangement at the uterine wall. The asymmetrical head shape in the house mouse, therefore, may have evolved not only to facilitate sperm migration but also to facilitate such sperm self-organized behaviors including unidirectional clustering and following beating synchrony. Under this scenario, sperm cooperation in house mice is not only mediated by sperm train formation as in some rodent species (Fisher and Hoekstra, 2010; Moore et al., 2002), but mediated by the synchronized sperm beating that obstructs migration of other spermatozoa in the uterus. Unidirectional sperm clustering and its potential role in sperm migration were also suggested in a previous study using fixed and tissue-cleared samples with in-vitro live sperm analysis (Qu et al., 2021). We could not find any supporting evidence that such clustering helps sperm passage through the CT. However, our observations regarding self-organized sperm behavior provide insights into the evolution of the asymmetrical structure of the sperm head in rodent species. These findings present an opportunity to reconcile two hypotheses: the cooperation hypothesis (Fisher and Hoekstra, 2010; Immler et al., 2007; Moore et al., 2002) and the migration hypothesis (Firman and Simmons, 2009; Smith and Yanagimachi, 1990).\n\nThe evolution of sperm characteristics, including the sperm hook, is a complex process influenced by several factors. For instance, sperm competition between ejaculates is a significant driving force influencing sperm head morphology and behavior in rodents (Fisher et al., 2014; Immler et al., 2007; Tourmente et al., 2016; Varea-S\u00e1nchez et al., 2016). Cryptic female choice also plays a crucial role in the evolution of sperm head shape and sperm kinetic characteristics (Birkhead, 1998; Eberhard and Lehmann, 2019; Firman et al., 2017). Further investigation of sperm behavior inside the female reproductive tract or tissue mimicking microfluidic devices with real-time deep tissue imaging as in the current study, will provide valuable opportunities for a more comprehensive examination of both sperm-sperm and sperm-epithelium interactions in the female reproductive tract. While we have focused on observing sperm interactions for only naturally healthy mice in this study, future works employing specifically targeted genetically modified knockout animal models will further elucidate and confirm the exact genetic and functional mechanisms that guide these interactions. This will help us better understand not only sperm competition and cryptic female choice in mice, but also those in other animals, including humans. While current assessments of sperm health generally involve measuring sperm count, movement, and shape, the current study suggests that analysing interactions between spermatozoa and the female reproductive tract is important and warrants further exploration. Given the significance of sperm health for fertility, this work not only highlights the importance of interactions between male sperm and female reproductive tract in successful migration, but also opens new avenues for understanding different causes of infertility and possible targets for treatment.\n\n## Materials and methods\n\n### Custom-built two-photon microscope\n\nTo observe sperm behavior in the female mouse reproductive organ, we built a video rate (30 frames/second at 512 x 512-pixel resolution) Two-Photon Laser Scanning Fluorescence Microscope (2PLSM; Figure 1\u2014figure supplement 1). A tunable femtosecond pulse laser (Chameleon, Discovery) was tuned to a choice of wavelengths from 960, 970, 980, and 1000 nm to simultaneously excite GFP and DsRed for sperm imaging and for autofluorescence imaging of the reproductive tract. Imaging quality was found to be similar for these wavelength ranges. All images were taken using a water dipping low magnification high NA objective lens (Nikon 16 X, 0.8NA). Video-rate imaging was achieved using a resonant Galvo scanning mirror system oscillating at 8 kHz. The laser power was actively controlled using a Pockels cell. Synchronization between the Galvos, sample/objective stages, Pockels cell, photomultiplier tubes (PMTs), and the data acquisition systems were controlled using ScanImage, ver. SI2021.1.0 (Pologruto et al., 2003).\n\n### Mice preparation and mating\n\nWe used two male transgenic mice lines for mating experiments. We purchased B6D2-Tg(CAG/Su9-DsRed2, Acr3-EGFP)RBGS002Osb male mice that express DsRed in the mitochondria at sperm midpiece and EGFP in the sperm acrosome from Riken BRC, Japan, depositor: M. Ikawa (Hasuwa et al., 2010). We then conducted in vitro fertilization to produce specific pathogen-free (SPF) F1 mice. The fertilized eggs (2 cell stage embryos) were then artificially inseminated into SPF wild-type C57BL/6 J females. After we confirmed the successful production of transgenic F1 male mice by PCR, we confirmed the SPF status and formed two breeding colonies with the transgenic F1 males under the SPF condition. One breeding colony comprised two wild-type C57BL/6 J females to better reproduce F2 generation. We also made breeding colonies that consisted of a transgenic C57BL/6 J female, Cx3cr1tm2.1(cre/ERT2)Litt/WganJ (JAX stock #021160, Cx3cr1 female) that expresses EYFP in microglia (Parkhurst et al., 2013) to test whether sperm functionality changes in other mice including double-transgenic mice. When F2 mice got older than 6 weeks, they were transferred to another room where mating experiments were conducted. After transfer, each male mouse for mating experiments was single-caged. We used the F2 males that derived from both colonies that had the two genes (CAG/Su9-DsRed2 and Acr3-EGFP; RBGS male) or three genes (CAG/Su9-DsRed2, Acr3-EGFP, and Cx3cr1; RBGS-Cx3cr1 male) for mating experiments. We could not find any phenotypic difference in the sperm of the two strains \u2013 sperm from both strains expressed red fluorescence at the midpiece and green fluorescence at the acrosome at the head. We confirmed that both strains of F2 males were fertile, and their sperm also successfully migrated through the female reproductive tract, from the uterus to the ampulla.\n\nIn total, we used 3 males that successfully mated with females due to space limits in the experimental room (Supplementary file 1a). The 3 males were used repeatedly for all mating experiments in the current study except one vasectomized RBGS-Cx3cr1 male that was used only once for comparison of the CT structure for virgin and non-virgin female mice (Supplementary file 1b). All mice were kept under a housing condition that allows free access to food and water with 12 hr of light and dark cycle (lighting from 6 to 18 o\u2019clock, dark from 18 to 6 o\u2019clock). Mating experiments were done under light conditions from 9 am to 12 pm for 3 hr. Oestrus was induced by exposing male bedding materials (wood shavings) that consisted of male excretion to females older than 8 weeks. Three to seven days after exposure to the bedding materials, oestrus was checked daily following previously established protocols (Byers et al., 2012). When we found oestrous females, we relocated one or two females to a single-caged male. When males showed no interest in the female (no mounting attempts) or the female rejected the male\u2019s mounting attempt for the first 10 min, we returned the female to its original cage. The returned females were not exposed to other males until the next mating trial on the next day or one week later. All females in the experiments had no birth records before successful copulatory plug-confirmed mating. However, some of them probably had multiple oestrous cycles given our multiple oestrus-inducing trials. We did not limit the age of females and males for our experiments to minimize the number of sacrificed animals. We observed the male\u2019s mating until we could observe ejaculation. To confirm male ejaculation, we checked the copulatory plug from the female genitalia after we observed ejaculatory behavior \u2013 the male stops thrusting and holds the female for about 5\u201310 s when it ejaculates. After this ejaculatory behavior, we waited for 2 min and if the male did not exhibit further mounting, we checked the copulatory plug from the female genitalia. When the male ejaculated, we kept them together for up to 3 hr then took out the female for imaging experiments.\n\n### Ex vivo imaging with two-photon microscopy\n\nFemale mice were sacrificed by cervical dislocation after anaesthesia using 2% isoflurane inhalation which usually took less than 5 min. After euthanasia, the female reproductive tract with the copulatory plug was excised and washed with Dulbecco\u2019s modified Eagle\u2019s medium (Tayama et al., 2006) (DMEM; GibcoTM, cat. No. 21063029). After washing, the reproductive tract was attached to a tissue culture dish with tissue adhesive (3 M Vetbond 1469 SB). After attachment, we filled the dish with 37\u00b0C preheated medium that contained an equal amount of DMEM and modified human tubal fluid (mHTF; Fujifilm Irvine Scientific, cat. ID. 90126) medium. All media were stored for at least 1 hr in a 37\u00b0C preheated incubator with 5% of CO2 concentration before use. The culture dish was then placed on the 37\u00b0C preheated metal mount of the two-photon microscope and imaged with varying laser power for different depths. Most of the images were taken with 512\u00d7512 pixel image size at 30 fps (262,144 pixels per frame). Multicolour imaging was performed where each frame of the image has two colour channels (red and green). If needed, we could increase the frame rate up to 110 fps or higher by reducing the acquired image size to 128x128 (16,384 pixels per frame). We conducted observation for about 3\u20136 hr. During our observation, the uterus continued contraction and relaxation cycles.\n\nTo image the entire depth of the reproductive tract, we applied tissue clearing to investigate the structure of the UTJ entrance (or colliculus tubarius, CT) using the C-Match solution (RI = 1.46, Crayon technologies, Korea). In brief, the tissue was first washed three times in PBS and fixed in 4% paraformaldehyde for 3 hr at 4\u00b0C in a refrigerator. After fixation, we washed the tissue three times with PBS and the absorbed residual PBS using paper towels. We then added C-Match to the sample waited overnight and imaged it on the next day with the sample submerged in C-Match. We imaged three cleared samples from three different females. In one sample (Figure 3A), only the intramural UTJ part was excised from one unmated transgenic C57BL/6 J female mouse \u2013 a hybrid female that was delivered from Cx3cr1 female and Thy1 male (JAX stock #030526) called Tg(Thy1-jRGECO1a)GP8.31Dkim (Dana et al., 2018). Another sample was from a female that was mated with a vasectomized RBGS-Cx3cr1 male. In this sample, the whole female reproductive tract was excised with the copulatory plug, so the intramural UTJ was covered by the uterus. This sample was used to compare the UTJ for virgin and non-virgin females. The final sample was from a wild-type female that was mated with an RBGS-Cx3cr1 male. For cleared tissue imaging, we acquired 3D volume images with 2 um Z-axis step size while averaging 20 (first sample) or 30 images (second sample) per slice to increase the signal-to-noise ratio using autofluorescence of the reproductive tract tissue.\n\n### Sperm tracking and speed measurement\n\nWe used Fiji (Schindelin et al., 2012) to process acquired images and its plugin, called TrackMate (Ershov et al., 2022; Tinevez et al., 2017) to track sperm trajectory in the uterus. We extracted trajectories from 60 sequential images (duration 2 s) for sperm tracking when uterus movement was the smallest. We also used Turboreg (Th\u00e9venaz et al., 1998), an ImageJ plugin, to realign the images when there was a shift between images due to uterine movement. Additionally, out of eight stacked images, we cropped three to obtain a straight view of the uterine wall. After preparing the images, we targeted the sperm head to track sperm as the sperm head expressed EGFP which was easy to track. We used Thresholding Detector to select sperm heads and LAP Tracker to trace sperm trajectories using the TrackMate plugin. We also adjusted parameter values in the plugin to better select sperm trajectories. Our final parameter values are as follows: head radius (>0.75 \u00b5m), frame-to-frame linking (10~11 \u00b5m), track segment gap closing (max distance: 10~11 \u00b5m, max frame gap: 2), number of spots in track (>6), and max distance travel (2.5 \u00b5m). When there were artificial trajectories that were not from sperm, we manually removed the track. If the original parameters could not detect well or had too many false tracks, we adjusted two parameters; frame-to-frame linking (up to 12 \u00b5m), and track segment gap closing (only max distance up to 12 \u00b5m). We also tracked the trajectories of sperm trains using the same parameters and settings. However, to reduce computation time and prevent mis-tracking of non-sperm cells, we cropped the images and utilized 100\u00d7100 pixel images that contain the entire trajectory of each sperm train as well as other unlinked single spermatozoa.\n\nTo calculate sperm speed in relation to the distance from the uterine wall, we need to define the uterine wall. To define the uterine wall, we first selected images with a straighter uterine wall and projected the extracted 60 sequential images into one plane by taking the maximum intensity projection with some adjustment of brightness and contrast using Fiji. For some images taken at a low magnification level that contained curved uterine walls, we used parts of the field of view that contained straight walls appropriate for our analysis. Next, we used the object selection tool of Adobe Photoshop CC (23.1.0 version) to automatically select the walls from the projected images. We then extracted the uterine wall image layer and pasted it to a blank image with white background. Finally, we extracted the wall coordinates by selecting the non-zero-valued pixels that formed the boundary of the uterine wall (blue-coloured area in Figure 2\u2014figure supplement 1). The boundary coordinates were converted to a micrometre scale based on the magnification and image resolution to normalize the units between different images obtained with different magnification factors. We fitted the uterine wall coordinates using linear regression. The fitted linear regression line was considered the uterine wall of each female ((1) in Figure 2\u2014figure supplement 1) and used to calculate the distance and angle (radian) between sperm and the wall.\n\nWe measured the distance between sperm and the uterine wall by calculating the minimum distance between the mid-point of each sperm trajectory and the fitted line of the uterine wall ((2) in Figure 2\u2014figure supplement 1). The angle between a sperm trajectory and the uterine wall was calculated by measuring the angle between the fitted line and a straight line that passed the first and last spots of the trajectory ((3) in Figure 2\u2014figure supplement 1). We then computed sperm progression speed parameters used in CASA (Amann and Waberski, 2014) using our sperm tracking data using the TrackMate plug-in. We first calculated curvilinear velocity, VCL by dividing the total distance travelled (\u00b5m) by total track time \u2013 the time (second) taken from the first point (spot) to the last point in a sperm trajectory. The straight line velocity, VSL was calculated by dividing the track displacement \u2013 the distance between the first and last spots of a sperm trajectory \u2013 by the total track time (second). We also calculated the linearity of forward progression, and LIN of sperm by dividing VSL by VCL (range 0\u20131). Along with the above CASA-used parameters, we defined a new parameter, the SWR to estimate sperm migration linearity by comparing forward and sideward moving distances. SWR was calculated by dividing the track displacement (\u00b5m) of a sperm trajectory by the maximum sideward movement distance (\u00b5m) \u2013 the maximum distance between two parallel lines passing each point (spot) that parallel to the track displacement line ((4) in Figure 2\u2014figure supplement 1). Further information on the terms and parameters of the TrackMate plug-in used in the current paper is also described in a paper and manual by the developers (Ershov et al., 2022; Tinevez et al., 2017).\n\n### Statistical analysis\n\nAll statistical analyses were done using R, version 4.3.0 (R Development Core Team, 2023). To estimate sperm swimming speed and linearity in relation to the uterine wall, we used data from eight copulation experiments between eight females and three males. We ran four generalized linear mixed models to test whether sperm move faster and straighter when they migrate along the uterine wall. We used log-transformed VCL, VSL, LIN, and SWR as response variables in each model. In all models, we included the angle and distance between the wall and sperm trajectories as explanatory variables. We also included whether we cropped the image or not (O or X) to check the effect of image cropping on the analysis. Male IDs and the date of experiments were included as random effects in all models to control possible individual variations in sperm and reproductive tract properties. All models did not violate assumptions. All full models were also compared with null models that only included random effect and all full models were significantly better than the null models. All variance influencing factors (VIFs) were less than 1.1 which indicates no serious drawback from collinearity.\n",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "6d0dcbe6-92ae-4039-82d5-2187cf382022",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Erika A Bach, NYU Grossman School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.96582.4.sa0](https://doi.org/10.7554/eLife.96582.4.sa0)\n\nThis study uses ex vivo live imaging of uteri post-mating to test the role of the sperm hook in the house mouse sperm in sperm movement that would be interesting to evolutionary biologists. The significance of the work is useful as live imaging can reveal information not seen in fixed images. The strength of evidence is incomplete as they cannot directly test the role of the sperm hook in facilitating movement along the uterine wall.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96582.4.sa1](https://doi.org/10.7554/eLife.96582.4.sa1)\n\nSummary:\n\nThe authors want to determine the role of the sperm hook of the house mouse sperm in movement through the uterus. They use transgenic lines with fluorescent labels to sperm proteins, and they cross these males to C57BL/6 females in pathogen-free conditions. They use 2-photon microscopy on ex vivo uteri within 3 hours of mating and the appearance of a copulation plug. There are a total of 10 post-mating uteri that were imaged with 3 different males. They provide 10 supplementary movies that form that basis for some of the quantitative analysis in the main body figures. Their data suggest that the role of the sperm hook is to facilitate movement along the uterine wall.\n\nStrengths:\n\nEx vivo live imaging of fluorescently labeled sperm with 2-photon microscopy is a powerful tool for studying the behavior of sperm.\n\nWeaknesses:\n\nThe paper is descriptive and the data are correlations.\n\nThe authors cannot directly test their proposed function of the sperm hook in sliding and preventing backward slipping.\n",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0e516c80-dc93-40f3-9c83-2f0bbb2fc134",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C1",
+      "claim": "In most murine species, spermatozoa exhibit a falciform apical hook at the head end.",
+      "claim_type": "EXPLICIT",
+      "source": "In most murine species, spermatozoa exhibit a falciform apical hook at the head end.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the abstract without specific experimental data from this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "72d350f2-d313-4420-8af0-3b737960e69c",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C2",
+      "claim": "The sperm hook aids in the attachment of spermatozoa to the epithelium during migration in the uterus and oviduct.",
+      "claim_type": "EXPLICIT",
+      "source": "Through live reproductive tract imaging, we found evidence indicating that the sperm hook aids in the attachment of spermatozoa to the epithelium and facilitates interactions between spermatozoa and the epithelium during migration in the uterus and oviduct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by direct observations from live imaging experiments conducted in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "32bbecb0-f31f-4bb0-aa27-426ec2e451ff",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C3",
+      "claim": "Synchronized sperm beating resulted from the spontaneous unidirectional rearrangement of spermatozoa in the uterus.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed synchronized sperm beating, which resulted from the spontaneous unidirectional rearrangement of spermatozoa in the uterus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observations from live imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "57969e4f-8982-46a6-bc8c-552d795374b1",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C4",
+      "claim": "The sperm hook plays a crucial role in successful migration through the female reproductive tract by providing anchor-like mechanical support.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on live imaging of spermatozoa-epithelium interaction dynamics, we propose that the sperm hook plays a crucial role in successful migration through the female reproductive tract by providing anchor-like mechanical support and facilitating interactions between spermatozoa and the female reproductive tract in the house mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging data and observations presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "36a4d7e4-d377-4fe2-b47c-e3bd85aa5365",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C5",
+      "claim": "Postcopulatory sexual selection has been recognized as an important driving force that shapes male sperm and female reproductive track characteristics since the pioneering work by Parker, 1970.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the pioneering work by Parker, 1970, postcopulatory sexual selection has been recognized as an important driving force that shapes male sperm and female reproductive track characteristics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Parker's 1970 work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "69479178-a65d-49aa-8317-6c5918d07ed5",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C6",
+      "claim": "Sperm competition occurs when spermatozoa from more than one male coincide within the female reproductive tract in a time window where they have a chance to fertilize the same egg.",
+      "claim_type": "EXPLICIT",
+      "source": "Sperm competition occurs when spermatozoa from more than one male coincide within the female reproductive tract in a time window where they have a chance to fertilize the same egg (Parker, 1970).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This definition is supported by citation to Parker, 1970.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "198c0e7a-751f-4193-ac1d-bd5c3fc94ef1",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C7",
+      "claim": "The evolutionary consequences of sperm competition for male traits, including baculum complexity, sperm shape and behavior, are demonstrated in a wide range of animals from insects to mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "The evolutionary consequences of the sperm competition for the male traits, including baculum complexity, sperm shape and behavior, are demonstrated in a wide range of animals from insects to mammals (Anderson et al., 2005; Lange et al., 2013; Andr\u00e9 et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "fc895dd3-537e-4ec4-b933-653d10f0917e",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C8",
+      "claim": "A notable morphological feature of murine sperm is the apical hook resulting in an asymmetrical falciform head shape that is found in most of the murine rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable morphological feature of murine sperm is the apical hook resulting in an asymmetrical falciform head shape that is found in most of the murine rodents (Breed, 2004; Roldan et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "f92bacdc-fc07-4a47-a2a4-6481e45a188f",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C9",
+      "claim": "The sperm cooperation hypothesis suggests that the sperm hook plays a crucial role in sperm competition by aiding sperm linkage (sperm train formation) that enhances straighter and faster sperm forward progression.",
+      "claim_type": "EXPLICIT",
+      "source": "One is that the sperm hook plays a crucial role in sperm competition by aiding sperm linkage (sperm train formation) that enhances straighter and faster sperm forward progression \u2013 the sperm cooperation hypothesis (Fisher and Hoekstra, 2010; Moore et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is described with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "ae2e670b-af76-4d78-a225-43c16123eae9",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C10",
+      "claim": "The migration hypothesis suggests that the sperm hook facilitates sperm-epithelium interactions in the female reproductive tract, playing a significant role in sperm migration.",
+      "claim_type": "EXPLICIT",
+      "source": "The other hypothesis is that the sperm hook facilitates sperm-epithelium interactions in the female reproductive tract, playing a significant role in sperm migration \u2013 the migration hypothesis (Smith and Yanagimachi, 1990; Firman and Simmons, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This hypothesis is described with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "b34dc3a2-6063-4595-863b-c37940f03534",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C11",
+      "claim": "Some studies could not find supporting evidence of sperm cooperation by the sperm train or morphological changes in sperm hooks concerning the degree of sperm competition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, other studies could not find supporting evidence of sperm cooperation by the sperm train or morphological changes in sperm hooks concerning the degree of sperm competition (Firman and Simmons, 2009; Hook et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "d3e95f06-c92d-4754-90d2-4d0174883131",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C12",
+      "claim": "Two-photon microscopy is currently the method of choice for live imaging of deep tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "While two-photon microscopy is currently the method of choice for live imaging of deep tissues (Helmchen and Denk, 2005; Benninger and Piston, 2013; Keller, 2013), it has seldom been used for studying animal reproductive ecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "fb36bab0-b23a-44db-9828-5f7e925ffa0c",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C13",
+      "claim": "Two-photon microscopy has seldom been used for studying animal reproductive ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "While two-photon microscopy is currently the method of choice for live imaging of deep tissues (Helmchen and Denk, 2005; Benninger and Piston, 2013; Keller, 2013), it has seldom been used for studying animal reproductive ecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an observation about the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "af3b7746-7429-4bff-8508-26bd585f1e9f",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C14",
+      "claim": "When a spermatozoon encounters the uterine wall during migration, the sperm hook interacts with the wall and acts as a pivot that influences the direction of sperm travel.",
+      "claim_type": "EXPLICIT",
+      "source": "When a spermatozoon encounters the uterine wall (epithelium) during migration, the sperm hook interacted with the wall and acts as a pivot (Yu et al., 2023) that influences the direction of sperm travel (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by observations from the study and reference to figures, with a citation to Yu et al., 2023.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "78b47257-b52f-483f-94d6-72c5df7193ca",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C15",
+      "claim": "52 out of 63 spermatozoa (82.54%) changed their migration direction towards the pro-wall-hook direction after reaching the uterine wall.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that 52 out of 63 spermatozoa (82.54%) changed their migration direction towards the pro-wall-hook direction after reaching the uterine wall (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from tracking experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "6b5d7041-eaf1-4d7b-ba6e-022057ad9c3b",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C16",
+      "claim": "The tendency for spermatozoa to change direction towards the pro-wall-hook direction after reaching the uterine wall is statistically significant.",
+      "claim_type": "EXPLICIT",
+      "source": "A binomial test confirmed that this tendency was statistically significant (one-tailed, p<0.001, 95% CI: 0.73, 1.00).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical analysis result from the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "fcf5df29-ea0c-4bdb-b642-2b7f6938f52c",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C17",
+      "claim": "When spermatozoa migrated along the uterine wall, they exhibited a tapping-like behavior in which spermatozoa tapped their hook against the epithelium when oriented in a pro-wall-hook direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, when spermatozoa migrated along the uterine wall, they exhibited a tapping-like behavior in which spermatozoa tapped their hook against the epithelium when oriented in a pro-wall-hook direction (Figure 1\u2014video 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "d01f6566-d39c-467f-adf1-5f753d4d013d",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C18",
+      "claim": "Fluid flows are slower at the wall than at the centre of the lumen in the uterus.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the advantage of straighter trajectories, fluid flows are slower at the wall than at the centre of the lumen in the uterus (Zaferani et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "d3ee8558-0d05-428c-b48f-6fa1e580d58d",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C19",
+      "claim": "The sperm head was attaching to the epithelium of the CT and uterus when spermatozoa reached the CT.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the sperm head was attaching to the epithelium of the CT and uterus (Figure 1\u2014video 3A, B) when spermatozoa reached the CT.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "98ccb83d-7dca-4b67-ab3d-76b59eeb11a3",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C20",
+      "claim": "The sperm hook was affixed to the epithelium, thereby securing the spermatozoa on the epithelia.",
+      "claim_type": "EXPLICIT",
+      "source": "The sperm hook was affixed to the epithelium, thereby securing the spermatozoa on the epithelia.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "e30b3ade-1880-4a24-9db1-377578ec6406",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C21",
+      "claim": "Anchoring helped prevent spermatozoa from being swept away by mucosal flow.",
+      "claim_type": "EXPLICIT",
+      "source": "This anchoring also helped prevent spermatozoa from being swept away by mucosal flow (Figure 1E; Figure 1\u2014video 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "1bef700b-ae4c-4389-bd2b-93c032446216",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C22",
+      "claim": "When spermatozoa are attached to the CT and squeezed through other spermatozoa by hooking, the apical hook always faces the epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "When spermatozoa are attached to the CT and squeezed through other spermatozoa by hooking, the apical hook always faces the epithelium (Figure 1F; Figure 1\u2014video 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "0f9d1008-129e-4d22-adff-d0607312f5a9",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C23",
+      "claim": "Spermatozoa located close to the uterine wall moved faster, exhibiting higher VCL and VSL.",
+      "claim_type": "EXPLICIT",
+      "source": "Our sperm tracking analysis revealed that spermatozoa located close to the uterine wall moved faster, exhibiting higher VCL and VSL (Figure 2A; Supplementary file 1c; Figure 1\u2014video 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "311a8259-930a-41ee-93f1-8af0e6380d22",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C24",
+      "claim": "LIN and SWR did not significantly vary depending on the sperm's distance from the uterus wall.",
+      "claim_type": "EXPLICIT",
+      "source": "However, LIN and SWR did not significantly vary depending on the sperm's distance from the uterus wall (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a statistical result from the tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "76f5b046-6ddd-41e1-b300-44c8b3f46f0a",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C25",
+      "claim": "When spermatozoa swam parallel to the wall, they not only moved faster (higher VCL and VSL), but also followed a straighter path (higher LIN and SWR).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the non-significant changes in LIN and SWR relative to the distance from the uterine wall, when spermatozoa swam parallel to the wall, they not only moved faster (higher VCL and VSL; Figure 2A), but also followed a straighter path (higher LIN and SWR; Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "70f503f8-80d9-4913-926d-09f6420e14f7",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C26",
+      "claim": "The entrance to the intramural UTJ (CT) in the uterus consists of nearly closed narrow gaps between mucosal folds.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon sacrificing and optical clearing the tissue, we confirmed that the entrance to the intramural UTJ (CT) in the uterus consists of nearly closed narrow gaps between mucosal folds (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from cleared tissue imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "2a7a3756-9fb5-4e8b-879d-53daecd64c75",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C27",
+      "claim": "The narrow gaps at the CT extended to about 100 \u00b5m deeper from the entrance.",
+      "claim_type": "EXPLICIT",
+      "source": "These narrow gaps extended to about 100 \u00b5m deeper from the entrance (Figure 3\u2014video 1A, B), and only a few spermatozoa could pass through a gap at a time (Figure 3A; Figure 3\u2014video 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative observation from imaging data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "8f2df746-1a98-47af-8bcc-be4fc098d78b",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C28",
+      "claim": "Only a few spermatozoa could pass through a gap at the CT at a time.",
+      "claim_type": "EXPLICIT",
+      "source": "These narrow gaps extended to about 100 \u00b5m deeper from the entrance (Figure 3\u2014video 1A, B), and only a few spermatozoa could pass through a gap at a time (Figure 3A; Figure 3\u2014video 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "2ca942fe-24ed-44cc-825e-67e2e27e1dbd",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C29",
+      "claim": "The authors were not able to find evidence of passive sperm carriage, such as upsuck-like sperm carriage, caused by peristaltic movement from the uterus into the UTJ in real-time live images.",
+      "claim_type": "EXPLICIT",
+      "source": "We were not able to find evidence of passive sperm carriage, such as upsuck-like sperm carriage (Baker and Bellis, 1993), caused by peristaltic movement from the uterus into the UTJ in real-time live images (Figure 3\u2014video 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a negative result from the imaging experiments, with a citation to Baker and Bellis, 1993.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "8c8123a0-46c7-4263-859a-93dc3924c826",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C30",
+      "claim": "Fluid flow induced by uterine and oviduct contraction is not a major driving force for sperm entry to the UTJ through the CT.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we concluded that fluid flow induced by uterine and oviduct contraction is not a major driving force for sperm entry to the UTJ through the CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the negative observation of passive sperm carriage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "e5ffb78a-64a3-444b-afa1-ee0d336dbd1d",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C31",
+      "claim": "Head-directional sliding of spermatozoa was found in the almost closed inter-luminal spaces between the uterus and intramural UTJ.",
+      "claim_type": "EXPLICIT",
+      "source": "We found head-directional sliding of spermatozoa in the almost closed inter-luminal spaces between the uterus and intramural UTJ (Figure 3\u2014video 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "0f7c49f1-9aaa-4ed6-9c89-1b78b0234c18",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C32",
+      "claim": "No sliding of spermatozoa that were directed to the tail direction was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any sliding of spermatozoa that were directs to the tail direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative observation from the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "931f1ea4-3efa-47db-a9a7-7df1509ee13a",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C33",
+      "claim": "One-directional head-forward sliding in a very narrow inter-luminal space suggests the role of the sperm hook as an anchor that prevents backwards slipping by the squeezing movement from the contraction of the uterus.",
+      "claim_type": "EXPLICIT",
+      "source": "This one-directional head-forward sliding in a very narrow inter-luminal space suggests the role of the sperm hook as an anchor that prevents backwards slipping by the squeezing movement from the contraction of the uterus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed sliding behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "1933ce58-c6e7-460b-89ff-557b4543dae1",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C34",
+      "claim": "When muscle contraction and relaxation occurred at the uterus and oviduct, the surfaces of two confronting mucosal folds in intramural UTJ slid against each other in opposite directions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed that when muscle contraction and relaxation occurred at the uterus and oviduct, the surfaces of two confronting mucosal folds in intramural UTJ slid against each other in opposite directions (Figure 3B; Figure 3\u2014video 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "cddc3d09-e349-4fb3-affa-641be95ba2f9",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C35",
+      "claim": "The opposite movement of mucosal folds makes space between mucosal folds at the CT, providing an opportunity for nearby attached spermatozoa to enter the intramural UTJ.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 3\u2014video 2, the opposite movement of mucosal folds makes space between mucosal folds at the CT, providing an opportunity for nearby attached spermatozoa to enter the intramural UTJ (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "71f0ff66-66c1-4295-9c16-54275fc02ed1",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C36",
+      "claim": "Unidirectional sperm clustering resulted from spontaneous sperm re-arrangement during sperm beating along the uterine wall.",
+      "claim_type": "EXPLICIT",
+      "source": "We also observed unidirectional sperm clustering as a result of spontaneous sperm re-arrangement during sperm beating along the uterine wall (Figure 4A and Figure 4\u2014video 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "4ade40f4-bfc9-4034-aa3d-9645d2bf972c",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C37",
+      "claim": "Unidirectional sperm clustering and their successive beating resulted in synchronized sperm beating on some occasions.",
+      "claim_type": "EXPLICIT",
+      "source": "Such unidirectional sperm clustering and their successive beating resulted in synchronized sperm beating on some occasions (sperm self-organising behavior).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "77b0198a-ed8e-4d9c-8a27-0251303cc126",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C38",
+      "claim": "Self-organized sperm behavior was found on a large scale at the CT in which most of the clustered spermatozoa at the entrance of the intramural UTJ exhibited synchronized beating.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found such self-organized sperm behavior on a large scale at the CT in which most of the clustered spermatozoa at the entrance of the intramural UTJ (CT) exhibited synchronized beating (Figure 4B; Figure 4\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "546b89b2-d698-4697-890f-cb2728b18460",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C39",
+      "claim": "The synchronized sperm beating was observed to generate fluid flows strong enough to prevent other spermatozoa from attaching to the CT or directly pushing out other spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "The synchronized sperm beating was observed to generate fluid flows strong enough to prevent other spermatozoa from attaching to the CT or directly pushing out other spermatozoa, thereby preventing other spermatozoa from entering the UTJ (Figure 4\u2014video 1; S7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "33c5c809-5103-4bb6-8eba-cab4b3aa17be",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C40",
+      "claim": "Most of the spermatozoa in this study did not form functional sperm trains (linked spermatozoa).",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the sperm trains found in wood mice (Apodemus sylvaticus; Moore et al., 2002) and deer mice (Peromyscus maniculatus; Fisher and Hoekstra, 2010), most of the spermatozoa in this study did not form functional sperm trains (linked spermatozoa) (Figure 5A; Figure 5\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from the study, with citations to previous research on other species.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "3d28e5a9-232c-47ac-a6e1-a337237471ae",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C41",
+      "claim": "Active sperm linkage or clusters were observed but were rare (only three identifiable cases during over 100 hr of imaging).",
+      "claim_type": "EXPLICIT",
+      "source": "Active sperm linkage or clusters were indeed observed but were rare (only three identifiable cases during over 100 hr of imaging).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "70fe6509-2507-4b6e-9405-a8f44363b9c2",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C42",
+      "claim": "For the house mouse, the observed sperm trains did not move faster or slower than unlinked single spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "For the house mouse, the observed sperm trains did not move faster or slower than unlinked single spermatozoa (Figure 5B; Figure 5\u2014video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "c13f98d7-50b1-4d56-bb7d-c407e29e0344",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C43",
+      "claim": "The VCL, VSL, and LIN of sperm trains were not faster nor higher than those of unlinked single spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Their VCL, VSL, and LIN were not faster nor higher than those of unlinked single spermatozoa as shown in Figure 5B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "a150e82e-e73a-4a77-818d-a35fbf4458b3",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C44",
+      "claim": "The SWR of sperm trains may be higher than that of unlinked single spermatozoa, but further experiments will be necessary to clarify this.",
+      "claim_type": "EXPLICIT",
+      "source": "Although their SWR may be higher than that of unlinked single spermatozoa, due to the rare number of observed events, further experiments will be necessary to clarify whether the sperm train formation is advantageous in the house mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a tentative observation with acknowledgment of limited data.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "c1cad0ed-abd5-4a8a-a0ba-cb6edee7595e",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C45",
+      "claim": "Sperm accumulations were found in the oviduct, including UTJ and isthmus.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found sperm accumulations in the oviduct, including UTJ and isthmus (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "3a86b81e-c579-4679-8cc6-e731d9b50e89",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C46",
+      "claim": "Sperm accumulations in the oviduct were arranged irregularly and consisted of spermatozoa that were mostly acrosome reacted and inactive.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as these sperm accumulations were arranged irregularly and consisted of spermatozoa that were mostly acrosome reacted and inactive, they were considered inactive entangled spermatozoa rather than actively linked spermatozoa (or sperm trains).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observations and interpretation of the imaging data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "6c9a97e1-23d9-40d9-a766-431ccb490b59",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C47",
+      "claim": "Entangled spermatozoa filled the narrow oviductal lumen, creating an obstruction for the migration of other spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "These entangled spermatozoa filled the narrow oviductal lumen, creating an obstruction for the migration of other spermatozoa (Figure 6\u2014video 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "e458df61-9974-4f01-84d3-31327db77cb3",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C48",
+      "claim": "If sperm hook facilitates entanglement of inactive spermatozoa in the UTJ and isthmus, it can play a role in sperm competition by obstructing migration of the other spermatozoa including those from a second male.",
+      "claim_type": "EXPLICIT",
+      "source": "If sperm hook facilitates such entanglement of inactive spermatozoa in the UTJ and isthmus, it can play a role in sperm competition by obstructing migration of the other spermatozoa including those from a second male.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed entanglement.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "5e9643b3-cf84-4a26-9b25-316d20fcf63a",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C49",
+      "claim": "Sperm beating rates of the epithelia-attached spermatozoa were observed to change over time according to the changes in widths of the UTJ lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Sperm beating rates of the epithelia-attached spermatozoa were observed to change over time according to the changes in widths of the UTJ lumen (Figure 6\u2014video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "8f80afd3-9b1c-4aed-a77a-bb155147eada",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C50",
+      "claim": "The mouse sperm hook facilitates sperm interaction with the epithelium for better navigation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our real-time deep tissue imaging enabled by two-photon microscopy shows that the mouse sperm hook (i) facilitates sperm interaction with the epithelium for better navigation and (ii) provides an anchor-like role that assists the attachment of sperm to the epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "c7eb37a6-a8d8-4841-b84a-123276757c3b",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C51",
+      "claim": "The mouse sperm hook provides an anchor-like role that assists the attachment of sperm to the epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Our real-time deep tissue imaging enabled by two-photon microscopy shows that the mouse sperm hook (i) facilitates sperm interaction with the epithelium for better navigation and (ii) provides an anchor-like role that assists the attachment of sperm to the epithelium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the imaging data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "2bdb8a5a-1794-4016-9b48-31b1d9020a54",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C52",
+      "claim": "The sperm hook functions as a pivot when spermatozoa reach the uterine epithelium, and helps spermatozoa migrate along the uterine wall by assisting in pro-wall-hook sperm orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding implies that the sperm hook functions as a pivot when spermatozoa reach the uterine epithelium, and help spermatozoa migrate along the uterine wall by assisting in pro-wall-hook sperm orientation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the observed sperm behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "fb1cfbb1-3195-4325-9342-efbf14a0bd4b",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C53",
+      "claim": "The authors did not observe a linkage of spermatozoa (sperm trains) that enables faster and straighter swimming of the sperm train in the uterus or oviduct.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe a linkage of spermatozoa (sperm trains) that enables faster and straighter swimming of the sperm train in the uterus or oviduct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the imaging experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "5e935c25-7754-4b31-8b21-8e5153ed2f58",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C54",
+      "claim": "Aggregates of inactive spermatozoa appear to obstruct the migration of other spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, we found instances of the entanglement of inactive spermatozoa in the oviduct. Such aggregates of inactive spermatozoa appear to obstruct the migration of other spermatozoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "b6f69efd-3d4c-4a11-983b-049a31f7b609",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C55",
+      "claim": "Acquiring the ability to form sperm train is a relatively rare evolutionary event in murine rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies using various murine rodents suggest that acquiring the ability to form sperm train is a relatively rare evolutionary event in this taxon (Tourmente et al., 2016; Varea-S\u00e1nchez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "014d31c8-4cc3-482a-91c8-4b18027bb302",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C56",
+      "claim": "Variations in the length of the sperm hook, and asymmetry of sperm head influenced by the sperm hook are two important variables that reflect the degree of the sperm competition in murine rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead of finding evidence that the sperm hook aids in sperm train formation, those studies showed that variations in the length of the sperm hook, and asymmetry of sperm head influenced by the sperm hook are two important variables that reflect the degree of the sperm competition in murine rodents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on previous studies mentioned in the discussion.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "c96132c1-6e8f-4080-8932-8e67895e066a",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C57",
+      "claim": "One study suggested that the sperm train formation (sperm linkage) is independent of the existence of sperm hook.",
+      "claim_type": "EXPLICIT",
+      "source": "One study even suggested that the sperm train formation (sperm linkage) is independent of the existence of sperm hook (Tourmente et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "17eed097-de7c-4b48-ab9d-770d995162cb",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C58",
+      "claim": "The CT is a key female anatomical structure that controls sperm entry to the UTJ and influences sperm competition.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, our findings suggest that the CT is a key female anatomical structure that controls sperm entry to the UTJ and influences sperm competition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the observations in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "1d15583c-f27a-4279-afde-67bd16517194",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C59",
+      "claim": "If sperm passage through the CT is too easy, associated risks such as polyspermy or pathogen transmission that incur fitness costs for females also increase.",
+      "claim_type": "EXPLICIT",
+      "source": "If sperm passage through the CT is too easy, associated risks such as polyspermy or pathogen transmission that incur fitness costs for females also increase (Firman and Simmons, 2013; Mahabir et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "f549e4ca-ab5a-47d0-826d-b58491474dfa",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C60",
+      "claim": "Species variations in the length of the sperm hook and head asymmetry in rodents will reflect the mechanical and structural characteristics of the CT and lumen in the intramural UTJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, species variations in the length of the sperm hook and head asymmetry in rodents suggested in the previous studies (Tourmente et al., 2016; Varea-S\u00e1nchez et al., 2016) will also reflect the mechanical and structural characteristics of the CT and lumen in the intramural UTJ.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the study's findings and previous research.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "aa565f1f-e6f5-41b4-bbcc-e714c874b8ef",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C61",
+      "claim": "The asymmetry of the mouse sperm head with an apical hook plays a crucial role in synchronized sperm beating (sperm cooperation) by facilitating unidirectional sperm re-arrangement at the uterine wall.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these observations, we propose that the asymmetry of the mouse sperm head with an apical hook plays a crucial role in synchronized sperm beating (sperm cooperation) by facilitating unidirectional sperm re-arrangement at the uterine wall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the observations in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "efebc2cb-11db-416d-977b-2f0d94b4a48c",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C62",
+      "claim": "The asymmetrical head shape in the house mouse may have evolved not only to facilitate sperm migration but also to facilitate sperm self-organized behaviors including unidirectional clustering and following beating synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetrical head shape in the house mouse, therefore, may have evolved not only to facilitate sperm migration but also to facilitate such sperm self-organized behaviors including unidirectional clustering and following beating synchrony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative evolutionary interpretation of the observed behaviors.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "e1edd21e-2446-409b-9c56-58dcb777dd3e",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C63",
+      "claim": "Sperm cooperation in house mice is not only mediated by sperm train formation as in some rodent species, but mediated by the synchronized sperm beating that obstructs migration of other spermatozoa in the uterus.",
+      "claim_type": "EXPLICIT",
+      "source": "Under this scenario, sperm cooperation in house mice is not only mediated by sperm train formation as in some rodent species (Fisher and Hoekstra, 2010; Moore et al., 2002), but mediated by the synchronized sperm beating that obstructs migration of other spermatozoa in the uterus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed mechanism based on the observations in the study, with citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "0bbed73d-cb3e-4d8e-b071-50b64f7b5cd6",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C64",
+      "claim": "Unidirectional sperm clustering and its potential role in sperm migration were suggested in a previous study using fixed and tissue-cleared samples with in-vitro live sperm analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Unidirectional sperm clustering and its potential role in sperm migration were also suggested in a previous study using fixed and tissue-cleared samples with in-vitro live sperm analysis (Qu et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "572aa5ba-f4b5-411f-adcd-0ccf9bb1cd34",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C65",
+      "claim": "The authors could not find any supporting evidence that clustering helps sperm passage through the CT.",
+      "claim_type": "EXPLICIT",
+      "source": "We could not find any supporting evidence that such clustering helps sperm passage through the CT.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a negative result from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "b77df31d-fec3-4529-9ade-f52e1a5d4b9a",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C66",
+      "claim": "Sperm competition between ejaculates is a significant driving force influencing sperm head morphology and behavior in rodents.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, sperm competition between ejaculates is a significant driving force influencing sperm head morphology and behavior in rodents (Fisher et al., 2014; Immler et al., 2007; Tourmente et al., 2016; Varea-S\u00e1nchez et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "9e519207-db41-4d79-aacb-60930ccce6b7",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C67",
+      "claim": "Cryptic female choice plays a crucial role in the evolution of sperm head shape and sperm kinetic characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryptic female choice also plays a crucial role in the evolution of sperm head shape and sperm kinetic characteristics (Birkhead, 1998; Eberhard and Lehmann, 2019; Firman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "bdf2de35-3b70-4c9b-8d11-233f071bb248",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C68",
+      "claim": "Live uterine movements were noted throughout the entire observation period despite the observation period being longer than recommended for conventional rat transplantation surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this observation period being longer than recommended for conventional rat transplantation surgery (D\u00edaz-Garc\u00eda et al., 2013), we noted live uterine movements throughout the entire observation period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments, with a citation to previous research for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "3c032c1a-a323-4650-8ad7-d864da2a29f6",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C69",
+      "claim": "When samples were transferred to incubators preheated to 37\u00b0C with 5% CO2 following observation, uterine movement persisted even 24 hr post-excision.",
+      "claim_type": "EXPLICIT",
+      "source": "When samples were transferred to incubators preheated to 37\u00b0C with 5% CO2 following observation, uterine movement persisted even 24 hr post-excision.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "268566c5-2c9e-4e87-8ba3-424e94954b4e",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C70",
+      "claim": "In the uterus, most ejaculated spermatozoa were carried by vigorous fluid flow caused by uterine contraction and relaxation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the uterus, we observed vigorous fluid flow caused by uterine contraction and relaxation. Consequently, most spermatozoa in the uterus were carried by this flow, adhering to the inherent flow dynamics within the uterus (Figure 1\u2014video 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "3ac04fe1-6895-407a-b144-65a04f325823",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C71",
+      "claim": "When the flow temporarily ceased, spermatozoa located near the uterine wall exhibited greater activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the flow temporarily ceased, spermatozoa located near the uterine wall exhibited greater activity (Figure 1\u2014video 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "2b185df5-c40a-49d9-86f5-ba4711e76012",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C72",
+      "claim": "Spermatozoa in the UTJ interact with epithelia with their hook and penetrate their thin head into a narrow space.",
+      "claim_type": "EXPLICIT",
+      "source": "In the UTJ, spermatozoa interact with epithelia with their hook and penetrate their thin head into a narrow space (Figure 6\u2014video 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "55d23352-a119-4bd2-aa7a-454e2660e933",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C73",
+      "claim": "Contraction of the UTJ reduced the width of the UTJ lumen and prevented sperm migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Contraction of the UTJ reduced the width of the UTJ lumen and prevented sperm migration (Figure 6\u2014video 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "a55a9327-3897-4a22-a59d-6755d4a58e1a",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C74",
+      "claim": "Some spermatozoa could pass through the narrow luminal space by putting their thin hook during UTJ lumen contraction.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some spermatozoa could pass through the narrow luminal space by putting their thin hook (Figure 6A and B; Figure 6\u2014video 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "48892958-d3c6-4403-9801-413e69d99f07",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C75",
+      "claim": "During UTJ lumen contraction, both swimming and beating of spermatozoa therein were physically suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "During UTJ lumen contraction, both swimming and beating of spermatozoa therein were physically suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on direct observations from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "35f41d40-1696-498c-85ea-c9435a4a6314",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C76",
+      "claim": "When the UTJ lumen dilates, the suppressed spermatozoa started beating and swimming again.",
+      "claim_type": "EXPLICIT",
+      "source": "When the UTJ lumen dilates, the suppressed spermatozoa started beating and swimming again (Figure 6C; Figure 6\u2014video 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on direct observations from video imaging.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "d226ff10-8751-495e-871e-7580a51f5e20",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C77",
+      "claim": "The oviductal fluid gradually flows upward while continuously repeating back-and-forth directional changes and such flow is assumed to aid sperm migration from UTJ to ampulla.",
+      "claim_type": "EXPLICIT",
+      "source": "The oviductal fluid gradually flows upward while continuously repeating back-and-forth directional changes and such flow is assumed to aid sperm migration from UTJ to ampulla (Hino and Yanagimachi, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "7c6ec338-6d1a-45f7-84e4-c7388c4ede75",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C78",
+      "claim": "Given the observation of the resistant (anchoring) behavior of spermatozoa to the flow in the UTJ, passive sperm transfer may not always be beneficial for healthy spermatozoa.",
+      "claim_type": "EXPLICIT",
+      "source": "However, given our observation of the resistant (anchoring) behavior of spermatozoa to the flow in the UTJ, passive sperm transfer may not always be beneficial for healthy spermatozoa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the observed anchoring behavior.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "8c8afa24-610e-4791-9765-365e96e7828e",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C79",
+      "claim": "Passive transfer can cause physical damage to the spermatozoa by the collision with other entangled spermatozoa or epithelia of the narrow lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, such passive transfer can cause physical damage to the spermatozoa by the collision with other entangled spermatozoa or epithelia of the narrow lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observations of entangled spermatozoa and narrow luminal spaces.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "90232a19-4fa6-4d31-ba4e-8f78813f1787",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C80",
+      "claim": "Hydrodynamic factors attract spermatozoa to the wall when swimming near it.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the internal fluid flow around the uterine wall is slower (Zaferani et al., 2019), and considering the hydrodynamic factors that attract spermatozoa to the wall when swimming near it (Alvarez et al., 2014; Elgeti et al., 2010), migration along the wall would be an efficient strategy for sperm movement within the uterus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "f46f6b34-e18a-4b3f-a9b0-44f78bd759c8",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C81",
+      "claim": "Migration along the wall would be an efficient strategy for sperm movement within the uterus.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the internal fluid flow around the uterine wall is slower (Zaferani et al., 2019), and considering the hydrodynamic factors that attract spermatozoa to the wall when swimming near it (Alvarez et al., 2014; Elgeti et al., 2010), migration along the wall would be an efficient strategy for sperm movement within the uterus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from cited research and the study's observations.",
+      "evidence_type": "[\"CITATION\", \"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "9bc533cc-0bb4-448e-8faf-7cc27b4db337",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C82",
+      "claim": "The custom-built two-photon microscope enables the observation of spermatozoa and their behavior inside the live female reproductive tract.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we developed an ex-vivo observation system based on a custom-built two-photon microscope (Figure 1\u2014figure supplement 1). This system enables the observation of spermatozoa and their behavior inside the live female reproductive tract.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the technical capability developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "0a61d5b9-4109-42df-bfe5-4bd186522062",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C83",
+      "claim": "The custom-built two-photon microscope allows real-time tracking of spermatozoa and their migration inside the female reproductive tract, including the uterus.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrate high-resolution deep-tissue imaging that allows us to observe and track sperm movement inside the female reproductive tract, including the uterus, to realise real-time tracking of spermatozoa and their migration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical capability demonstrated in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "7d35acc3-84a3-4022-a9ff-b8cd7b676cf8",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C84",
+      "claim": "694 sperm trajectories were successfully tracked in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, we were able to track 694 sperm trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the tracking analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "4a48dfed-1c4c-4642-b877-5aa41785d9a0",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "claim_id": "C85",
+      "claim": "The effects of the two random variables (males and females) were consistent across all significant models, indicating the validity of the model estimations.",
+      "claim_type": "EXPLICIT",
+      "source": "We confirmed that the effects of the two random variables were consistent across all significant models, indicating the validity of our model estimations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "4fb1c581-bae5-45eb-b8cd-8dc034cfa9c4",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a custom-built two-photon microscope system that enables real-time observation and tracking of spermatozoa inside the live female reproductive tract, successfully tracking 694 sperm trajectories.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C84 describe the technical development and capability of the imaging system. The methodology section provides detailed specifications of the microscope setup, and the quantitative tracking result (694 trajectories) demonstrates successful implementation. This represents a significant methodological advance for studying sperm behavior in vivo.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "ad5d81a4-38aa-426e-8623-265bf7515a3c",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The sperm hook acts as a pivot when spermatozoa encounter the uterine wall, with 82.54% of spermatozoa (52/63) changing direction toward the pro-wall-hook orientation, a statistically significant tendency (p<0.001). This pivot function helps spermatozoa migrate along the uterine wall through tapping-like behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C17 and C52 provide converging evidence for the pivot function. The quantitative tracking data (C15), statistical validation (C16), and direct behavioral observations (C17) strongly support this conclusion. The sample size of 63 tracked spermatozoa is modest but adequate for the binomial test, and the effect size (82.54%) is substantial.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "8109938e-9ad9-440c-b799-82008d2d3af5",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The sperm hook provides an anchor-like function by affixing to the epithelium at the CT and uterus, securing spermatozoa and preventing them from being swept away by mucosal flow. The hook always faces the epithelium when spermatozoa squeeze through crowded areas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 and C51 are based on direct video observations showing consistent anchoring behavior. The observations are qualitative but systematic across multiple imaging sessions. The consistent orientation of the hook toward the epithelium (C22) provides strong support for the anchoring function, though quantification of anchoring strength would strengthen the claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "353cd323-98c5-4fda-a055-13238312236e",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Spermatozoa near the uterine wall moved faster (higher VCL and VSL) and those swimming parallel to the wall also followed straighter paths (higher LIN and SWR). Distance from the wall did not significantly affect LIN and SWR. Statistical models accounting for male and female variation confirmed these effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C25 and C85 present quantitative kinetic analysis from 694 tracked trajectories with appropriate mixed-effects models. The distinction between distance effects (affecting speed but not linearity) and angle effects (affecting both) is well-supported. The validation of random effects (C85) strengthens confidence in the model estimates. However, Figure 2\u2014figure supplement 2 shows some inconsistency in the linearity model, which the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "16e4e08e-148f-4b89-a348-d629ddb64014",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The entrance to the intramural UTJ (CT) consists of nearly closed narrow gaps between mucosal folds extending about 100 \u00b5m from the entrance, with only a few spermatozoa able to pass through at a time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C28 are based on optical clearing and imaging of tissue samples. The structural observations are direct and quantitative (100 \u00b5m depth measurement). Three cleared samples were examined, providing adequate replication for this anatomical characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "7b6f7501-93bc-46af-a5f5-afa7a6949d18",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "No evidence of passive sperm carriage (upsuck-like mechanism) from the uterus into the UTJ was found in real-time imaging, leading to the conclusion that fluid flow from uterine/oviduct contraction is not a major driving force for sperm entry through the CT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C29-C30 present a negative result and draw a strong conclusion from absence of evidence. While the authors did not observe passive carriage in their imaging sessions, the temporal and spatial sampling may be insufficient to rule out this mechanism entirely. The conclusion (C30) may be overstated given that passive transport could occur at time scales or locations not captured in the imaging protocol.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "13c27577-b6fc-4818-9621-a572bcbb04b2",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Head-directional sliding of spermatozoa occurs in narrow inter-luminal spaces between uterus and UTJ, with no tail-directed sliding observed. This unidirectional sliding suggests the sperm hook acts as an anchor preventing backward slipping. Opposite directional movement of mucosal folds creates space for sperm entry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C31-C35 describe an interesting mechanism, but the evidence is primarily qualitative video observations. The proposed mechanism (C33) is inferential and lacks direct experimental validation (e.g., manipulation of the hook structure or mechanical measurements). The model in Figure 3\u2014figure supplement 1 is speculative. While the observations are intriguing, the mechanistic interpretation requires additional experimental support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "413f6e27-010e-4bb5-822c-a1369f88df05",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Unidirectional sperm clustering results from spontaneous rearrangement along the uterine wall, leading to synchronized beating on some occasions. Large-scale synchronized beating at the CT generates fluid flows that prevent other spermatozoa from entering the UTJ. The authors propose this represents a form of sperm cooperation mediated by the asymmetrical head shape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36-C39 describe observed behaviors, but C61-C63 make strong mechanistic and evolutionary claims that are speculative. The observations of clustering and synchronized beating are qualitative without quantification of frequency, duration, or effectiveness. The proposed cooperative function (blocking other sperm) is inferential and lacks direct experimental validation. The evolutionary interpretation (C62) is highly speculative without comparative or genetic evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "fe87f088-4a90-48ed-bd92-564d1aeb53af",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Most spermatozoa did not form functional sperm trains, with only three identifiable cases in over 100 hours of imaging. The observed sperm trains did not move faster or straighter than single spermatozoa (VCL, VSL, LIN not significantly different), though SWR may be higher but requires further investigation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 and C53 present negative results with appropriate caveats. The rarity of sperm trains (3 cases in 100+ hours) is clearly documented. The kinetic comparisons (C42-C43) are appropriately cautious given the small sample size, and the authors acknowledge uncertainty about SWR (C44). This negative result is important for the field but the small sample size of trains limits statistical power.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "15bfdda4-0896-4c78-8b8e-867bde190e64",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sperm accumulations in the oviduct (UTJ and isthmus) consist of irregularly arranged, mostly acrosome-reacted and inactive spermatozoa that obstruct migration of other spermatozoa. If the sperm hook facilitates this entanglement, it could play a role in sperm competition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C45-C47 describe observations of entangled spermatozoa, but C48 and C54 make speculative inferences about competitive function. The characterization of these accumulations as inactive and obstructive is based on qualitative observations. The proposed role in sperm competition (C48) is conditional and speculative, lacking experimental validation of whether the hook actually facilitates entanglement or whether this obstruction affects competitive outcomes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "1a2102e5-1b41-4c57-bcfc-6b5f199742a9",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In the UTJ, spermatozoa interact with epithelia using their hook and penetrate narrow spaces with their thin head. UTJ contraction reduces lumen width and suppresses sperm swimming and beating, but some spermatozoa can pass through by inserting their thin hook. When the lumen dilates, suppressed spermatozoa resume beating and swimming.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C76 are based on direct video observations of sperm behavior during UTJ contraction cycles. The observations are systematic and describe dynamic interactions between sperm and the changing luminal environment. The mechanical interpretation is reasonable given the visual evidence, though quantitative measurements of forces or pressures would strengthen the claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "9165293c-311d-421e-af0c-42e42ab293cc",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The sperm hook aids in attachment to the epithelium and facilitates sperm-epithelium interactions during migration in the uterus and oviduct, playing a crucial role in successful migration by providing anchor-like mechanical support.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C4, C50, and C51 represent the main conclusions of the study, synthesizing multiple lines of evidence from the imaging experiments. The convergence of observations regarding pivot function (C14-C17), anchoring (C19-C22), and navigation assistance (C23-C25) provides strong support for these conclusions. However, the claims are somewhat inferential as direct manipulation of the hook structure was not performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "94626ce4-769f-4f14-900e-61a94da4b2ec",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Synchronized sperm beating resulted from spontaneous unidirectional rearrangement of spermatozoa in the uterus, with large-scale synchronized beating observed at the CT entrance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C36-C38 describe observed self-organized behaviors. The video evidence shows clear examples of clustering and synchronized beating. However, the observations are qualitative without quantification of synchronization metrics, frequency of occurrence, or duration. The causal link between rearrangement and synchronization is inferential but reasonable given the observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "57c0f0f6-ee17-4013-a7e1-1e2861e8cc90",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Sperm beating rates of epithelia-attached spermatozoa change according to UTJ lumen width changes. Given the observed anchoring behavior, passive sperm transfer may not always be beneficial and could cause physical damage through collisions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C49 describes an observation, but C78-C79 make inferential claims about the benefits and risks of passive transfer. The observation of beating rate changes is qualitative without quantification. The inferences about damage (C79) are speculative without direct evidence of sperm damage or measurements of collision forces. These claims require experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "90291ef2-273d-4a37-bded-d01eb2920a1a",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The CT is a key female anatomical structure controlling sperm entry to the UTJ and influencing sperm competition. Species variations in sperm hook length and head asymmetry will reflect the mechanical and structural characteristics of the CT and intramural UTJ lumen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 is a reasonable inference from the structural observations (C26-C28) and behavioral data, but C60 makes a broad evolutionary prediction without comparative data. The proposed relationship between hook morphology and CT structure across species is speculative and would require comparative anatomical and morphological studies to validate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "1923cb69-76be-4b3a-9e66-759b18098a8f",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Live uterine movements persisted throughout the observation period (up to 6 hours post-euthanasia) and continued for 24 hours post-excision when samples were incubated at 37\u00b0C with 5% CO2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C69 describe methodological observations validating the ex vivo system. The persistence of tissue viability is important for interpreting the behavioral observations. These are straightforward observational claims with appropriate comparison to previous work (C68 cites rat transplantation surgery timelines).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "38450906-4e9c-4d72-8743-7b0fae42b520",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Most spermatozoa in the uterus were carried by vigorous fluid flow from uterine contraction and relaxation. When flow ceased, spermatozoa near the uterine wall exhibited greater activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C71 describe direct observations from video imaging. The distinction between passive transport in the lumen and active swimming near the wall is clearly documented. These observations provide context for understanding the importance of wall-associated migration strategies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "598da140-8f56-45e3-8971-7bb9fc305ace",
+      "content_id": "1cfed32c-1110-47de-a559-991e02e165e4",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "No supporting evidence was found that sperm clustering helps sperm passage through the CT.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C65 is a straightforward negative result. The authors appropriately report the absence of evidence for a specific mechanism (clustering aiding CT passage) while acknowledging that clustering may have other functions. This is an honest reporting of what was not observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "5289b533-2d20-4df8-ba88-49d87291aee2",
+      "content_id": "6d0dcbe6-92ae-4039-82d5-2187cf382022",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The sperm hook facilitates sperm-epithelium interactions and provides anchor-like mechanical support during migration. Live imaging showed that 82.54% of spermatozoa changed direction toward the pro-wall-hook orientation upon encountering the uterine wall (statistically significant, p<0.001), the hook acts as a pivot influencing travel direction, spermatozoa exhibit tapping behavior against the epithelium, and the hook anchors sperm to prevent being swept away by mucosal flow.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the live imaging data as a strength but note that 'the strength of evidence is incomplete as they cannot directly test the role of the sperm hook in facilitating movement along the uterine wall.' The paper is described as 'descriptive and the data are correlations,' and reviewers state 'the authors cannot directly test their proposed function of the sperm hook in sliding and preventing backward slipping.' While observations are accepted, the mechanistic conclusions are considered insufficiently supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "7151ba23-e826-451d-8c3c-6ae2b6819547",
+      "content_id": "6d0dcbe6-92ae-4039-82d5-2187cf382022",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Spermatozoa near the uterine wall moved faster (higher VCL and VSL) and, when swimming parallel to the wall, also followed straighter paths (higher LIN and SWR), though LIN and SWR did not vary significantly with distance from the wall alone.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These quantitative tracking results from the imaging data are not specifically challenged by reviewers. The reviewers acknowledge the power of the ex vivo live imaging approach and do not question these specific kinematic measurements, treating them as descriptive observations from the methodology.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf",
+      "content_id": "6d0dcbe6-92ae-4039-82d5-2187cf382022",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The entrance to the intramural UTJ consists of narrow gaps (~100 \u00b5m deep) between mucosal folds through which only a few spermatozoa can pass at a time. No evidence of passive upsuck-like sperm carriage was found; instead, unidirectional head-forward sliding was observed, suggesting the sperm hook acts as an anchor preventing backward slipping during uterine contractions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers do not explicitly challenge these anatomical observations, they emphasize that 'the authors cannot directly test their proposed function of the sperm hook in sliding and preventing backward slipping.' The interpretation of the hook's anchoring role is considered correlative rather than causally demonstrated, consistent with the overall critique that the paper is 'descriptive and the data are correlations.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "c356d537-9997-49e4-80e2-6211f71d09ee",
+      "content_id": "6d0dcbe6-92ae-4039-82d5-2187cf382022",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Synchronized sperm beating resulted from spontaneous unidirectional sperm rearrangement along the uterine wall. Large-scale synchronized beating at the CT entrance was observed to generate fluid flows that prevented other spermatozoa from attaching or entering the UTJ. The authors propose this represents a form of sperm cooperation mediated by the asymmetrical head shape facilitating unidirectional clustering.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These observations of synchronized beating are part of the descriptive imaging data. However, reviewers note the work is 'descriptive and the data are correlations,' and the mechanistic interpretation linking the sperm hook to this cooperative behavior cannot be directly tested. The proposed evolutionary and functional interpretations go beyond what the correlative data can definitively support.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "95eeed54-6e16-4380-8f1f-3f4dcc3c14ce",
+      "content_id": "6d0dcbe6-92ae-4039-82d5-2187cf382022",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Functional sperm trains (linked spermatozoa) were rare in house mice (only 3 cases in >100 hours of imaging) and did not move faster or straighter than single spermatozoa, with no significant differences in VCL, VSL, or LIN.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This negative result regarding sperm train formation is accepted as a descriptive observation from the imaging data. Reviewers do not challenge these findings, which contrast with other murine species and are presented as quantitative tracking results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "347e1f98-de8f-47fd-ab7a-36107bed774a",
+      "content_id": "6d0dcbe6-92ae-4039-82d5-2187cf382022",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Sperm accumulations in the oviduct (UTJ and isthmus) consisted of mostly inactive, acrosome-reacted, irregularly arranged entangled spermatozoa that filled the narrow lumen and created obstructions to migration of other spermatozoa, potentially playing a role in sperm competition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The observation of entangled spermatozoa is descriptive data from imaging. However, the interpretation that this represents a competitive mechanism is speculative. Reviewers emphasize the work is 'descriptive and the data are correlations,' and the proposed functional role in sperm competition cannot be directly tested with the available evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "067c6125-4e78-42fc-a38d-144f0961c3a0",
+      "content_id": "6d0dcbe6-92ae-4039-82d5-2187cf382022",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "A custom-built two-photon microscope system was developed enabling ex vivo observation and real-time tracking of spermatozoa inside the live female reproductive tract, successfully tracking 694 sperm trajectories.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledge this as a strength, stating 'Ex vivo live imaging of fluorescently labeled sperm with 2-photon microscopy is a powerful tool for studying the behavior of sperm' and noting 'the significance of the work is useful as live imaging can reveal information not seen in fixed images.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "7f1b3d50-2533-438b-9d54-306167d8b8af",
+      "content_id": "6d0dcbe6-92ae-4039-82d5-2187cf382022",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "In the uterus, most spermatozoa were carried by vigorous fluid flow from uterine contractions, but spermatozoa near the wall exhibited greater activity when flow ceased. In the UTJ, contraction reduced lumen width and prevented migration, though some spermatozoa could pass through by inserting their thin hook, and sperm beating was physically suppressed during contraction but resumed upon dilation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are descriptive observations from the live imaging experiments that reviewers do not specifically challenge. They represent direct observations of sperm behavior in different flow and contraction conditions within the reproductive tract.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "9bc533cc-0bb4-448e-8faf-7cc27b4db337",
+      "result_id": "4fb1c581-bae5-45eb-b8cd-8dc034cfa9c4"
+    },
+    {
+      "claim_id": "0a61d5b9-4109-42df-bfe5-4bd186522062",
+      "result_id": "4fb1c581-bae5-45eb-b8cd-8dc034cfa9c4"
+    },
+    {
+      "claim_id": "7d35acc3-84a3-4022-a9ff-b8cd7b676cf8",
+      "result_id": "4fb1c581-bae5-45eb-b8cd-8dc034cfa9c4"
+    },
+    {
+      "claim_id": "af3b7746-7429-4bff-8508-26bd585f1e9f",
+      "result_id": "ad5d81a4-38aa-426e-8623-265bf7515a3c"
+    },
+    {
+      "claim_id": "78b47257-b52f-483f-94d6-72c5df7193ca",
+      "result_id": "ad5d81a4-38aa-426e-8623-265bf7515a3c"
+    },
+    {
+      "claim_id": "6b5d7041-eaf1-4d7b-ba6e-022057ad9c3b",
+      "result_id": "ad5d81a4-38aa-426e-8623-265bf7515a3c"
+    },
+    {
+      "claim_id": "fcf5df29-ea0c-4bdb-b642-2b7f6938f52c",
+      "result_id": "ad5d81a4-38aa-426e-8623-265bf7515a3c"
+    },
+    {
+      "claim_id": "2bdb8a5a-1794-4016-9b48-31b1d9020a54",
+      "result_id": "ad5d81a4-38aa-426e-8623-265bf7515a3c"
+    },
+    {
+      "claim_id": "d3ee8558-0d05-428c-b48f-6fa1e580d58d",
+      "result_id": "8109938e-9ad9-440c-b799-82008d2d3af5"
+    },
+    {
+      "claim_id": "98ccb83d-7dca-4b67-ab3d-76b59eeb11a3",
+      "result_id": "8109938e-9ad9-440c-b799-82008d2d3af5"
+    },
+    {
+      "claim_id": "e30b3ade-1880-4a24-9db1-377578ec6406",
+      "result_id": "8109938e-9ad9-440c-b799-82008d2d3af5"
+    },
+    {
+      "claim_id": "1bef700b-ae4c-4389-bd2b-93c032446216",
+      "result_id": "8109938e-9ad9-440c-b799-82008d2d3af5"
+    },
+    {
+      "claim_id": "c7eb37a6-a8d8-4841-b84a-123276757c3b",
+      "result_id": "8109938e-9ad9-440c-b799-82008d2d3af5"
+    },
+    {
+      "claim_id": "0f9d1008-129e-4d22-adff-d0607312f5a9",
+      "result_id": "353cd323-98c5-4fda-a055-13238312236e"
+    },
+    {
+      "claim_id": "311a8259-930a-41ee-93f1-8af0e6380d22",
+      "result_id": "353cd323-98c5-4fda-a055-13238312236e"
+    },
+    {
+      "claim_id": "76f5b046-6ddd-41e1-b300-44c8b3f46f0a",
+      "result_id": "353cd323-98c5-4fda-a055-13238312236e"
+    },
+    {
+      "claim_id": "4a48dfed-1c4c-4642-b877-5aa41785d9a0",
+      "result_id": "353cd323-98c5-4fda-a055-13238312236e"
+    },
+    {
+      "claim_id": "70f503f8-80d9-4913-926d-09f6420e14f7",
+      "result_id": "16e4e08e-148f-4b89-a348-d629ddb64014"
+    },
+    {
+      "claim_id": "2a7a3756-9fb5-4e8b-879d-53daecd64c75",
+      "result_id": "16e4e08e-148f-4b89-a348-d629ddb64014"
+    },
+    {
+      "claim_id": "8f2df746-1a98-47af-8bcc-be4fc098d78b",
+      "result_id": "16e4e08e-148f-4b89-a348-d629ddb64014"
+    },
+    {
+      "claim_id": "2ca942fe-24ed-44cc-825e-67e2e27e1dbd",
+      "result_id": "7b6f7501-93bc-46af-a5f5-afa7a6949d18"
+    },
+    {
+      "claim_id": "8c8123a0-46c7-4263-859a-93dc3924c826",
+      "result_id": "7b6f7501-93bc-46af-a5f5-afa7a6949d18"
+    },
+    {
+      "claim_id": "e5ffb78a-64a3-444b-afa1-ee0d336dbd1d",
+      "result_id": "13c27577-b6fc-4818-9621-a572bcbb04b2"
+    },
+    {
+      "claim_id": "0f7c49f1-9aaa-4ed6-9c89-1b78b0234c18",
+      "result_id": "13c27577-b6fc-4818-9621-a572bcbb04b2"
+    },
+    {
+      "claim_id": "931f1ea4-3efa-47db-a9a7-7df1509ee13a",
+      "result_id": "13c27577-b6fc-4818-9621-a572bcbb04b2"
+    },
+    {
+      "claim_id": "1933ce58-c6e7-460b-89ff-557b4543dae1",
+      "result_id": "13c27577-b6fc-4818-9621-a572bcbb04b2"
+    },
+    {
+      "claim_id": "cddc3d09-e349-4fb3-affa-641be95ba2f9",
+      "result_id": "13c27577-b6fc-4818-9621-a572bcbb04b2"
+    },
+    {
+      "claim_id": "71f0ff66-66c1-4295-9c16-54275fc02ed1",
+      "result_id": "413f6e27-010e-4bb5-822c-a1369f88df05"
+    },
+    {
+      "claim_id": "4ade40f4-bfc9-4034-aa3d-9645d2bf972c",
+      "result_id": "413f6e27-010e-4bb5-822c-a1369f88df05"
+    },
+    {
+      "claim_id": "77b0198a-ed8e-4d9c-8a27-0251303cc126",
+      "result_id": "413f6e27-010e-4bb5-822c-a1369f88df05"
+    },
+    {
+      "claim_id": "546b89b2-d698-4697-890f-cb2728b18460",
+      "result_id": "413f6e27-010e-4bb5-822c-a1369f88df05"
+    },
+    {
+      "claim_id": "aa565f1f-e6f5-41b4-bbcc-e714c874b8ef",
+      "result_id": "413f6e27-010e-4bb5-822c-a1369f88df05"
+    },
+    {
+      "claim_id": "efebc2cb-11db-416d-977b-2f0d94b4a48c",
+      "result_id": "413f6e27-010e-4bb5-822c-a1369f88df05"
+    },
+    {
+      "claim_id": "e1edd21e-2446-409b-9c56-58dcb777dd3e",
+      "result_id": "413f6e27-010e-4bb5-822c-a1369f88df05"
+    },
+    {
+      "claim_id": "33c5c809-5103-4bb6-8eba-cab4b3aa17be",
+      "result_id": "fe87f088-4a90-48ed-bd92-564d1aeb53af"
+    },
+    {
+      "claim_id": "3d28e5a9-232c-47ac-a6e1-a337237471ae",
+      "result_id": "fe87f088-4a90-48ed-bd92-564d1aeb53af"
+    },
+    {
+      "claim_id": "70fe6509-2507-4b6e-9405-a8f44363b9c2",
+      "result_id": "fe87f088-4a90-48ed-bd92-564d1aeb53af"
+    },
+    {
+      "claim_id": "c13f98d7-50b1-4d56-bb7d-c407e29e0344",
+      "result_id": "fe87f088-4a90-48ed-bd92-564d1aeb53af"
+    },
+    {
+      "claim_id": "a150e82e-e73a-4a77-818d-a35fbf4458b3",
+      "result_id": "fe87f088-4a90-48ed-bd92-564d1aeb53af"
+    },
+    {
+      "claim_id": "fb1cfbb1-3195-4325-9342-efbf14a0bd4b",
+      "result_id": "fe87f088-4a90-48ed-bd92-564d1aeb53af"
+    },
+    {
+      "claim_id": "c1cad0ed-abd5-4a8a-a0ba-cb6edee7595e",
+      "result_id": "15bfdda4-0896-4c78-8b8e-867bde190e64"
+    },
+    {
+      "claim_id": "3a86b81e-c579-4679-8cc6-e731d9b50e89",
+      "result_id": "15bfdda4-0896-4c78-8b8e-867bde190e64"
+    },
+    {
+      "claim_id": "6c9a97e1-23d9-40d9-a766-431ccb490b59",
+      "result_id": "15bfdda4-0896-4c78-8b8e-867bde190e64"
+    },
+    {
+      "claim_id": "e458df61-9974-4f01-84d3-31327db77cb3",
+      "result_id": "15bfdda4-0896-4c78-8b8e-867bde190e64"
+    },
+    {
+      "claim_id": "5e935c25-7754-4b31-8b21-8e5153ed2f58",
+      "result_id": "15bfdda4-0896-4c78-8b8e-867bde190e64"
+    },
+    {
+      "claim_id": "2b185df5-c40a-49d9-86f5-ba4711e76012",
+      "result_id": "1a2102e5-1b41-4c57-bcfc-6b5f199742a9"
+    },
+    {
+      "claim_id": "55d23352-a119-4bd2-aa7a-454e2660e933",
+      "result_id": "1a2102e5-1b41-4c57-bcfc-6b5f199742a9"
+    },
+    {
+      "claim_id": "a55a9327-3897-4a22-a59d-6755d4a58e1a",
+      "result_id": "1a2102e5-1b41-4c57-bcfc-6b5f199742a9"
+    },
+    {
+      "claim_id": "48892958-d3c6-4403-9801-413e69d99f07",
+      "result_id": "1a2102e5-1b41-4c57-bcfc-6b5f199742a9"
+    },
+    {
+      "claim_id": "35f41d40-1696-498c-85ea-c9435a4a6314",
+      "result_id": "1a2102e5-1b41-4c57-bcfc-6b5f199742a9"
+    },
+    {
+      "claim_id": "72d350f2-d313-4420-8af0-3b737960e69c",
+      "result_id": "9165293c-311d-421e-af0c-42e42ab293cc"
+    },
+    {
+      "claim_id": "57969e4f-8982-46a6-bc8c-552d795374b1",
+      "result_id": "9165293c-311d-421e-af0c-42e42ab293cc"
+    },
+    {
+      "claim_id": "8f80afd3-9b1c-4aed-a77a-bb155147eada",
+      "result_id": "9165293c-311d-421e-af0c-42e42ab293cc"
+    },
+    {
+      "claim_id": "c7eb37a6-a8d8-4841-b84a-123276757c3b",
+      "result_id": "9165293c-311d-421e-af0c-42e42ab293cc"
+    },
+    {
+      "claim_id": "32bbecb0-f31f-4bb0-aa27-426ec2e451ff",
+      "result_id": "94626ce4-769f-4f14-900e-61a94da4b2ec"
+    },
+    {
+      "claim_id": "71f0ff66-66c1-4295-9c16-54275fc02ed1",
+      "result_id": "94626ce4-769f-4f14-900e-61a94da4b2ec"
+    },
+    {
+      "claim_id": "4ade40f4-bfc9-4034-aa3d-9645d2bf972c",
+      "result_id": "94626ce4-769f-4f14-900e-61a94da4b2ec"
+    },
+    {
+      "claim_id": "77b0198a-ed8e-4d9c-8a27-0251303cc126",
+      "result_id": "94626ce4-769f-4f14-900e-61a94da4b2ec"
+    },
+    {
+      "claim_id": "5e9643b3-cf84-4a26-9b25-316d20fcf63a",
+      "result_id": "57c0f0f6-ee17-4013-a7e1-1e2861e8cc90"
+    },
+    {
+      "claim_id": "7c6ec338-6d1a-45f7-84e4-c7388c4ede75",
+      "result_id": "57c0f0f6-ee17-4013-a7e1-1e2861e8cc90"
+    },
+    {
+      "claim_id": "8c8afa24-610e-4791-9765-365e96e7828e",
+      "result_id": "57c0f0f6-ee17-4013-a7e1-1e2861e8cc90"
+    },
+    {
+      "claim_id": "17eed097-de7c-4b48-ab9d-770d995162cb",
+      "result_id": "90291ef2-273d-4a37-bded-d01eb2920a1a"
+    },
+    {
+      "claim_id": "f549e4ca-ab5a-47d0-826d-b58491474dfa",
+      "result_id": "90291ef2-273d-4a37-bded-d01eb2920a1a"
+    },
+    {
+      "claim_id": "bdf2de35-3b70-4c9b-8d11-233f071bb248",
+      "result_id": "1923cb69-76be-4b3a-9e66-759b18098a8f"
+    },
+    {
+      "claim_id": "3c032c1a-a323-4650-8ad7-d864da2a29f6",
+      "result_id": "1923cb69-76be-4b3a-9e66-759b18098a8f"
+    },
+    {
+      "claim_id": "268566c5-2c9e-4e87-8ba3-424e94954b4e",
+      "result_id": "38450906-4e9c-4d72-8743-7b0fae42b520"
+    },
+    {
+      "claim_id": "3ac04fe1-6895-407a-b144-65a04f325823",
+      "result_id": "38450906-4e9c-4d72-8743-7b0fae42b520"
+    },
+    {
+      "claim_id": "572aa5ba-f4b5-411f-adcd-0ccf9bb1cd34",
+      "result_id": "598da140-8f56-45e3-8971-7bb9fc305ace"
+    },
+    {
+      "claim_id": "72d350f2-d313-4420-8af0-3b737960e69c",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "57969e4f-8982-46a6-bc8c-552d795374b1",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "af3b7746-7429-4bff-8508-26bd585f1e9f",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "78b47257-b52f-483f-94d6-72c5df7193ca",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "6b5d7041-eaf1-4d7b-ba6e-022057ad9c3b",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "fcf5df29-ea0c-4bdb-b642-2b7f6938f52c",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "d3ee8558-0d05-428c-b48f-6fa1e580d58d",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "98ccb83d-7dca-4b67-ab3d-76b59eeb11a3",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "e30b3ade-1880-4a24-9db1-377578ec6406",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "1bef700b-ae4c-4389-bd2b-93c032446216",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "8f80afd3-9b1c-4aed-a77a-bb155147eada",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "c7eb37a6-a8d8-4841-b84a-123276757c3b",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "2bdb8a5a-1794-4016-9b48-31b1d9020a54",
+      "result_id": "5289b533-2d20-4df8-ba88-49d87291aee2"
+    },
+    {
+      "claim_id": "0f9d1008-129e-4d22-adff-d0607312f5a9",
+      "result_id": "7151ba23-e826-451d-8c3c-6ae2b6819547"
+    },
+    {
+      "claim_id": "311a8259-930a-41ee-93f1-8af0e6380d22",
+      "result_id": "7151ba23-e826-451d-8c3c-6ae2b6819547"
+    },
+    {
+      "claim_id": "76f5b046-6ddd-41e1-b300-44c8b3f46f0a",
+      "result_id": "7151ba23-e826-451d-8c3c-6ae2b6819547"
+    },
+    {
+      "claim_id": "70f503f8-80d9-4913-926d-09f6420e14f7",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "2a7a3756-9fb5-4e8b-879d-53daecd64c75",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "8f2df746-1a98-47af-8bcc-be4fc098d78b",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "2ca942fe-24ed-44cc-825e-67e2e27e1dbd",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "8c8123a0-46c7-4263-859a-93dc3924c826",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "e5ffb78a-64a3-444b-afa1-ee0d336dbd1d",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "0f7c49f1-9aaa-4ed6-9c89-1b78b0234c18",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "931f1ea4-3efa-47db-a9a7-7df1509ee13a",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "1933ce58-c6e7-460b-89ff-557b4543dae1",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "cddc3d09-e349-4fb3-affa-641be95ba2f9",
+      "result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf"
+    },
+    {
+      "claim_id": "32bbecb0-f31f-4bb0-aa27-426ec2e451ff",
+      "result_id": "c356d537-9997-49e4-80e2-6211f71d09ee"
+    },
+    {
+      "claim_id": "71f0ff66-66c1-4295-9c16-54275fc02ed1",
+      "result_id": "c356d537-9997-49e4-80e2-6211f71d09ee"
+    },
+    {
+      "claim_id": "4ade40f4-bfc9-4034-aa3d-9645d2bf972c",
+      "result_id": "c356d537-9997-49e4-80e2-6211f71d09ee"
+    },
+    {
+      "claim_id": "77b0198a-ed8e-4d9c-8a27-0251303cc126",
+      "result_id": "c356d537-9997-49e4-80e2-6211f71d09ee"
+    },
+    {
+      "claim_id": "546b89b2-d698-4697-890f-cb2728b18460",
+      "result_id": "c356d537-9997-49e4-80e2-6211f71d09ee"
+    },
+    {
+      "claim_id": "aa565f1f-e6f5-41b4-bbcc-e714c874b8ef",
+      "result_id": "c356d537-9997-49e4-80e2-6211f71d09ee"
+    },
+    {
+      "claim_id": "efebc2cb-11db-416d-977b-2f0d94b4a48c",
+      "result_id": "c356d537-9997-49e4-80e2-6211f71d09ee"
+    },
+    {
+      "claim_id": "e1edd21e-2446-409b-9c56-58dcb777dd3e",
+      "result_id": "c356d537-9997-49e4-80e2-6211f71d09ee"
+    },
+    {
+      "claim_id": "33c5c809-5103-4bb6-8eba-cab4b3aa17be",
+      "result_id": "95eeed54-6e16-4380-8f1f-3f4dcc3c14ce"
+    },
+    {
+      "claim_id": "3d28e5a9-232c-47ac-a6e1-a337237471ae",
+      "result_id": "95eeed54-6e16-4380-8f1f-3f4dcc3c14ce"
+    },
+    {
+      "claim_id": "70fe6509-2507-4b6e-9405-a8f44363b9c2",
+      "result_id": "95eeed54-6e16-4380-8f1f-3f4dcc3c14ce"
+    },
+    {
+      "claim_id": "c13f98d7-50b1-4d56-bb7d-c407e29e0344",
+      "result_id": "95eeed54-6e16-4380-8f1f-3f4dcc3c14ce"
+    },
+    {
+      "claim_id": "a150e82e-e73a-4a77-818d-a35fbf4458b3",
+      "result_id": "95eeed54-6e16-4380-8f1f-3f4dcc3c14ce"
+    },
+    {
+      "claim_id": "fb1cfbb1-3195-4325-9342-efbf14a0bd4b",
+      "result_id": "95eeed54-6e16-4380-8f1f-3f4dcc3c14ce"
+    },
+    {
+      "claim_id": "c1cad0ed-abd5-4a8a-a0ba-cb6edee7595e",
+      "result_id": "347e1f98-de8f-47fd-ab7a-36107bed774a"
+    },
+    {
+      "claim_id": "3a86b81e-c579-4679-8cc6-e731d9b50e89",
+      "result_id": "347e1f98-de8f-47fd-ab7a-36107bed774a"
+    },
+    {
+      "claim_id": "6c9a97e1-23d9-40d9-a766-431ccb490b59",
+      "result_id": "347e1f98-de8f-47fd-ab7a-36107bed774a"
+    },
+    {
+      "claim_id": "e458df61-9974-4f01-84d3-31327db77cb3",
+      "result_id": "347e1f98-de8f-47fd-ab7a-36107bed774a"
+    },
+    {
+      "claim_id": "5e935c25-7754-4b31-8b21-8e5153ed2f58",
+      "result_id": "347e1f98-de8f-47fd-ab7a-36107bed774a"
+    },
+    {
+      "claim_id": "9bc533cc-0bb4-448e-8faf-7cc27b4db337",
+      "result_id": "067c6125-4e78-42fc-a38d-144f0961c3a0"
+    },
+    {
+      "claim_id": "0a61d5b9-4109-42df-bfe5-4bd186522062",
+      "result_id": "067c6125-4e78-42fc-a38d-144f0961c3a0"
+    },
+    {
+      "claim_id": "7d35acc3-84a3-4022-a9ff-b8cd7b676cf8",
+      "result_id": "067c6125-4e78-42fc-a38d-144f0961c3a0"
+    },
+    {
+      "claim_id": "268566c5-2c9e-4e87-8ba3-424e94954b4e",
+      "result_id": "7f1b3d50-2533-438b-9d54-306167d8b8af"
+    },
+    {
+      "claim_id": "3ac04fe1-6895-407a-b144-65a04f325823",
+      "result_id": "7f1b3d50-2533-438b-9d54-306167d8b8af"
+    },
+    {
+      "claim_id": "2b185df5-c40a-49d9-86f5-ba4711e76012",
+      "result_id": "7f1b3d50-2533-438b-9d54-306167d8b8af"
+    },
+    {
+      "claim_id": "55d23352-a119-4bd2-aa7a-454e2660e933",
+      "result_id": "7f1b3d50-2533-438b-9d54-306167d8b8af"
+    },
+    {
+      "claim_id": "a55a9327-3897-4a22-a59d-6755d4a58e1a",
+      "result_id": "7f1b3d50-2533-438b-9d54-306167d8b8af"
+    },
+    {
+      "claim_id": "48892958-d3c6-4403-9801-413e69d99f07",
+      "result_id": "7f1b3d50-2533-438b-9d54-306167d8b8af"
+    },
+    {
+      "claim_id": "35f41d40-1696-498c-85ea-c9435a4a6314",
+      "result_id": "7f1b3d50-2533-438b-9d54-306167d8b8af"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "da93dd2a-8487-4e6b-b2ee-82674c0d624b",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "4fb1c581-bae5-45eb-b8cd-8dc034cfa9c4",
+      "peer_result_id": "067c6125-4e78-42fc-a38d-144f0961c3a0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C82-C84 regarding the imaging methodology. Both evaluations recognize this as a significant technical achievement and strength of the study. OpenEval rates as SUPPORTED, peer review also rates as SUPPORTED, acknowledging the power of the ex vivo live imaging approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "7c9eef2a-c3d9-4697-8e36-e77affee5186",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "fe87f088-4a90-48ed-bd92-564d1aeb53af",
+      "peer_result_id": "95eeed54-6e16-4380-8f1f-3f4dcc3c14ce",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C40-C44, C53 regarding sperm train rarity. Both evaluations accept these negative results as valid descriptive observations from the imaging data. OpenEval rates as SUPPORTED with appropriate caveats about sample size, peer review also rates as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "b37e609b-0ec7-471d-9e76-20733e5dfb5e",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "15bfdda4-0896-4c78-8b8e-867bde190e64",
+      "peer_result_id": "347e1f98-de8f-47fd-ab7a-36107bed774a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C45-C48, C54 on entangled spermatozoa. OpenEval rates as UNCERTAIN noting speculative inferences about competitive function lacking experimental validation. Peer review also rates as UNCERTAIN, emphasizing the work is descriptive/correlational and the proposed competitive mechanism cannot be directly tested.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "c8c11cd3-4022-40e1-a97a-1296065cd496",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "413f6e27-010e-4bb5-822c-a1369f88df05",
+      "peer_result_id": "c356d537-9997-49e4-80e2-6211f71d09ee",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C36-C39, C61-C63 on synchronized beating and clustering. OpenEval rates as UNCERTAIN, noting qualitative observations without quantification and speculative evolutionary claims. Peer review also rates as UNCERTAIN, stating the mechanistic interpretation linking the hook to cooperative behavior cannot be directly tested and goes beyond correlative data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "fca69246-165d-4b1f-a473-d3dfc127fea1",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "353cd323-98c5-4fda-a055-13238312236e",
+      "peer_result_id": "7151ba23-e826-451d-8c3c-6ae2b6819547",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C23-C25 on kinetic analysis. OpenEval rates as SUPPORTED, noting appropriate quantitative methods with 694 trajectories and mixed-effects models, while acknowledging some model inconsistency. Peer review also rates as SUPPORTED, treating these as valid descriptive kinematic measurements from the methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "2ba2d92e-bf54-4d9d-a0f8-0d1872168b84",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "1a2102e5-1b41-4c57-bcfc-6b5f199742a9",
+      "peer_result_id": "7f1b3d50-2533-438b-9d54-306167d8b8af",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C72-C76 on sperm behavior during UTJ contractions. OpenEval rates as SUPPORTED based on systematic video observations, though notes quantitative measurements would strengthen claims. Peer review also rates as SUPPORTED, accepting these as direct descriptive observations from live imaging.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "95c69737-5f2a-442a-a426-862dce0d6277",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ad5d81a4-38aa-426e-8623-265bf7515a3c",
+      "peer_result_id": "5289b533-2d20-4df8-ba88-49d87291aee2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on claims C14-C17, C52 regarding pivot function. OpenEval rates as SUPPORTED, noting converging evidence with substantial effect size (82.54%) and adequate statistical validation. Peer review rates as UNCERTAIN, stating the mechanistic conclusions are insufficiently supported, describing the work as descriptive/correlational without ability to directly test the hook's role.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "4f699eab-b5b0-4d72-8e50-6f83aa31cfba",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "8109938e-9ad9-440c-b799-82008d2d3af5",
+      "peer_result_id": "5289b533-2d20-4df8-ba88-49d87291aee2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C19-C22, C51 regarding anchoring function. OpenEval rates as SUPPORTED based on systematic qualitative observations and consistent orientation patterns. Peer review rates as UNCERTAIN, emphasizing the interpretation is correlative rather than causally demonstrated and cannot directly test the proposed anchoring function.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "3e00a59a-f964-45fb-9df1-77170f2fee4e",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "9165293c-311d-421e-af0c-42e42ab293cc",
+      "peer_result_id": "5289b533-2d20-4df8-ba88-49d87291aee2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Major disagreement on main conclusions C2, C4, C50, C51. OpenEval rates as SUPPORTED, noting convergence of multiple lines of evidence from imaging experiments, though acknowledges inferential nature. Peer review rates as UNCERTAIN, stating 'strength of evidence is incomplete' and authors 'cannot directly test the role of the sperm hook,' describing conclusions as correlational.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "0b6f2396-1bb3-4988-83cc-580e7a1309d7",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "13c27577-b6fc-4818-9621-a572bcbb04b2",
+      "peer_result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C31-C35 on hook mechanism. OpenEval rates as UNCERTAIN, noting primarily qualitative observations with inferential mechanism lacking direct experimental validation. Peer review also rates as UNCERTAIN within broader context, emphasizing the proposed hook function in sliding/preventing backward slipping is correlative and cannot be directly tested.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "e8a304c4-4a33-44f5-ac09-c1c5d6fd3c48",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "16e4e08e-148f-4b89-a348-d629ddb64014",
+      "peer_result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C26-C28 on anatomical structure. OpenEval rates as SUPPORTED based on direct quantitative observations from optical clearing. Peer review does not explicitly challenge these anatomical observations but includes them in UNCERTAIN evaluation, emphasizing broader concern that interpretations are correlative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "3745f75c-52ae-44d6-85e7-0d8540558996",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "94626ce4-769f-4f14-900e-61a94da4b2ec",
+      "peer_result_id": "c356d537-9997-49e4-80e2-6211f71d09ee",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C3, C36-C38 on self-organized behaviors. OpenEval rates as SUPPORTED for the observations but notes lack of quantification. Peer review rates as UNCERTAIN, accepting the descriptive observations but questioning mechanistic interpretations that go beyond correlative data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "1e87fba1-c421-41e0-bade-701d1ce5c673",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "38450906-4e9c-4d72-8743-7b0fae42b520",
+      "peer_result_id": "7f1b3d50-2533-438b-9d54-306167d8b8af",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C70-C71 on passive transport vs. active swimming. OpenEval rates as SUPPORTED, noting clear documentation of the distinction. Peer review also rates as SUPPORTED, accepting these as direct descriptive observations from live imaging.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "155bcc0a-ee49-4adc-8f27-afaa88b9525f",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "7b6f7501-93bc-46af-a5f5-afa7a6949d18",
+      "peer_result_id": "8a4d08ac-8ce4-4580-9ecf-86013406a5cf",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C29-C30 on passive carriage. OpenEval rates as UNCERTAIN, noting the conclusion may be overstated given limited temporal/spatial sampling. Peer review includes these in broader UNCERTAIN evaluation emphasizing correlative nature of interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "8504bd48-eeff-460d-af01-9b5d3b7731e9",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "57c0f0f6-ee17-4013-a7e1-1e2861e8cc90",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claims C49, C78-C79 on passive transfer benefits/risks, rating as UNCERTAIN due to qualitative observations and speculative inferences about damage lacking experimental validation. No corresponding peer review evaluation found for these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "d5ce46f0-d00b-4397-947d-aeb955c64703",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "90291ef2-273d-4a37-bded-d01eb2920a1a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claims C58, C60 on evolutionary predictions about hook morphology and CT structure across species, rating as UNCERTAIN due to lack of comparative data. No corresponding peer review evaluation found for these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "dc48b194-2163-49ac-bf47-2aa237f70af2",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "1923cb69-76be-4b3a-9e66-759b18098a8f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claims C68-C69 on tissue viability validation, rating as SUPPORTED as straightforward methodological observations. No corresponding peer review evaluation found for these specific claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    },
+    {
+      "id": "788b5497-55e4-4a0a-9099-acdd4824ea5c",
+      "submission_id": "b3536a83-f89e-4849-a0ca-c715eecc5679",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "598da140-8f56-45e3-8971-7bb9fc305ace",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses claim C65 on absence of clustering aiding CT passage, rating as SUPPORTED as appropriate negative result reporting. No corresponding peer review evaluation found for this specific claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:50:47.513147Z"
+    }
+  ]
+}

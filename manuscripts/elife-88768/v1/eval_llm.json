@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C57"
+    ],
+    "result": "Global genetic correlation analysis replicated previously reported correlations between ALS and other neuropsychiatric traits. ALS showed nominally significant correlations with schizophrenia (p=0.045), PD (p=0.013), and AD (p=0.006), consistent with prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 report specific correlation estimates with p-values from LDSC analysis (Figure 2), and C57 confirms these replicate prior findings. The statistical approach is standard and appropriate for the data type, though nominal significance without multiple testing correction is noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Local genetic correlation analysis identified 26 significant associations (FDR<0.05) across 605 tests, with the majority occurring in the HLA region. All five traits were implicated in at least one HLA association, with two comparisons passing stringent Bonferroni correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 provide specific counts and statistical thresholds supported by Figure 3 and Table 2. The FDR correction is appropriate for multiple testing, and the concentration of findings in the HLA region is well-documented. The data presentation is clear and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C95",
+      "C96"
+    ],
+    "result": "Colocalisation analysis identified strong evidence for a shared causal variant between ALS and AD in the HLA region (Chr6:32.63-32.68 Mb), with posterior probability of 0.90 for the shared variant hypothesis. The lead SNP rs9275477 near MTCO3P1 had the highest probability of being implicated in both traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46, C95-C96 are supported by Table 3 and Figure 4, showing high local correlation (0.974) and colocalisation posterior probability (0.90). C47 demonstrates robustness through sensitivity analysis. The statistical framework is appropriate and the evidence converges across multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C48",
+      "C53",
+      "C54"
+    ],
+    "result": "Colocalisation analyses for other trait pairs predominantly suggested distinct causal variants rather than shared variants. For PD and schizophrenia at Chr17:43.46-44.87 Mb, analysis indicated independent variants (H3) despite overlapping credible sets, with robust sensitivity analysis support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C48, C53-C54 are supported by Table 3 and supplementary data showing low H4 posterior probabilities for most comparisons. The finding of distinct variants is consistent with the colocalisation framework, though C55-C56 appropriately note methodological limitations in regions with extensive LD.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Fine-mapping identified 95% credible sets for both traits in 7 of 27 comparisons, with only positive local genetic correlations observed where credible sets were identified for both traits. Stronger absolute correlations and variant associations characterized positively correlated loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are supported by Table 3 and Figure 3 supplement 1. The observation that fine-mapping success correlates with positive correlations and stronger signals is logical and well-documented. The statistical framework using SuSiE is appropriate for identifying credible sets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The current analysis provided stronger support for ALS-AD colocalisation (H4=0.90) compared to a previous study (H4~0.50) by Van Rheenen et al. This improvement is attributed to analyzing a smaller LD-defined region (475 SNPs in ~50kb) versus an arbitrary \u00b1100kb window (>2000 SNPs), which is methodologically superior given the exponential scaling of H3 with variant number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide a well-reasoned comparison with prior work. C71 correctly cites the mathematical property of colocalisation methods, and C72's inference about methodological superiority is justified. The LD-based region definition is more principled than arbitrary windows, supporting the conclusion to favor current findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Regions with strong genetic correlations often resulted from adjacent but trait-specific signals, likely reflecting LD block overlaps. Correlations in regions with weaker GWAS associations likely reflect shared polygenic trends rather than discrete causal variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 present reasonable interpretations of the data patterns supported by Table 2 and citations. The distinction between discrete variant effects and polygenic trends is appropriate given the fine-mapping results. However, these are interpretive claims with some inferential uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Fine-mapping of PD and schizophrenia at Chr17:43.46-44.87 Mb identified large credible sets spanning many genes including MAPT and CRHR1, previously implicated in these traits. The expansive credible sets reflect strong LD making signal localization difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by data and appropriate citations for prior gene implications. The interpretation that large credible sets reflect strong LD is correct and well-supported by Figure 4 supplement 2F. The limitation in fine-mapping resolution is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The wide-spanning LD at Chr17:43.46-44.87 Mb may have obstructed identification of shared variants between PD and schizophrenia due to the colocalisation method's exponential preference for H3 with increasing variant numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 is speculative and acknowledges uncertainty with 'may have obstructed.' While C55 correctly notes the methodological property, whether a true shared variant exists but was missed versus truly independent variants cannot be definitively determined from these data alone. This represents an important limitation but remains unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C23",
+      "C24",
+      "C26",
+      "C28"
+    ],
+    "result": "The study employed standard GWAS summary statistics processing, filtering to 1000 Genomes European reference SNPs with MAF\u22650.005. LDSC estimated global heritability and correlations, LAVA performed local correlation analysis across 2495 LD blocks with Bonferroni-corrected heritability filtering (p<2.004\u00d710\u207b\u2075), and susieR/coloc conducted fine-mapping and colocalisation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20, C23-C24, C26, C28 describe standard, well-established methodological approaches appropriately applied. The filtering criteria, statistical thresholds, and software choices are reasonable and well-justified. The methods are sufficiently detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C80"
+    ],
+    "result": "While fine-mapping ideally uses LD matrices from GWAS samples and is sensitive to LD misspecification, diagnostic tests confirmed that 1000 Genomes European reference LD matrices were suitable for the data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C80 appropriately acknowledge a known limitation (use of reference LD) while documenting quality control steps. The diagnostic tests from susieR are appropriate validation measures. However, this remains a limitation for generalization to non-European populations (C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "AD is associated with variants around HLA-DQA1 and HLA-DRB1, with SNPs in the non-coding region between them shown to modulate expression. The SNP rs9271247, which has a demonstrated regulatory role, had the highest probability of being causal for AD in the fine-mapped credible set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 appropriately cite prior literature for the gene associations and regulatory mechanisms, and C64 connects this to the current fine-mapping results. This represents a meaningful integration of functional knowledge with statistical findings, though experimental validation in this study is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "MTCO3P1 is one of the most pleiotropic genes in the GWAS catalog. HLA-DQB1 and HLA-DQB2 are upregulated in ALS spinal cord, and HLA class II complexes are upregulated in multiple AD brain regions, supporting biological relevance of the identified shared variant region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by appropriate citations to prior literature. These provide biological context for the colocalisation finding between ALS and AD, though they represent prior knowledge rather than new findings from this study. The integration strengthens interpretation of the statistical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C27",
+      "C83",
+      "C84"
+    ],
+    "result": "The fine-mapping and colocalisation analysis pipeline has been implemented as an open-access resource on GitHub that produces HTML reports and detailed analysis summaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C83-C84 describe a methodological contribution with documented availability. This represents good scientific practice for reproducibility, though the pipeline itself is a tool rather than a scientific finding. The availability statement is clear and verifiable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Future work should validate findings in non-European populations and integrate functional/multi-omics data to gain mechanistic insights and facilitate treatment discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are appropriate recommendations for future research that acknowledge study limitations (European-only analysis) and logical next steps. These are reasonable suggestions supported by citations, though they represent future directions rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C76",
+      "C77"
+    ],
+    "result": "Local genetic correlation analysis enables targeted investigation of genomic regions with trait overlap, and combining colocalisation with fine-mapping allows testing associations without conflating independent nearby signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C76-C77 describe methodological capabilities demonstrated by the study's successful application. The approach is well-established (C9, C12-C13) and the study demonstrates its utility. However, these are statements about method capabilities rather than novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C21",
+      "C22",
+      "C25",
+      "C55",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The introduction and discussion appropriately cite prior literature establishing: genetic pleiotropy between neuropsychiatric diseases, GWAS data sharing trends, limitations of global correlation approaches, capabilities of local correlation and fine-mapping methods, LD effects on GWAS, HLA region pleiotropy, and colocalisation method properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C15, C21-C22, C25, C55, C59-C61 represent appropriate citations to prior work that establish context and justify methodological choices. C14's novelty claim is reasonable given cited prior work focused on global rather than local correlations. These contextual claims are well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Population lifetime risks and liability-scale heritabilities were reported for all five traits: AD (1/10 risk, h\u00b2=0.093), ALS (1/350, h\u00b2=0.0277), FTD (1/742, h\u00b2=0.0329), PD (1/37, h\u00b2=0.0506), and schizophrenia (1/250, h\u00b2=0.1761).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 present descriptive statistics from Table 1. Lifetime risks are appropriately cited from prior literature, and heritability estimates from LDSC analysis are reported with standard errors. These provide necessary context for interpreting genetic correlation results, though they are not primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Several associated regions contained genes with known relevance for the studied traits, such as KIF5A, MAPT, and CRHR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by the fine-mapping results (C49) and established knowledge about these genes' disease associations. This represents appropriate integration of findings with prior knowledge, though it is a summary observation rather than a novel discovery.",
+    "result_type": "MINOR"
+  }
+]

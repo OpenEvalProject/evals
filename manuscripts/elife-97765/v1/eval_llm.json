@@ -1,0 +1,341 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Audiovisual temporal recalibration exhibits nonlinearity (plateauing with increasing adapter SOA) and asymmetry (greater recalibration for auditory-leading vs. visual-leading adapter SOAs in most participants). These effects were observed experimentally across nine sessions with varying adapter SOAs ranging from -0.7 to 0.7 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C40, C41, and C42 collectively demonstrate both nonlinearity and asymmetry in recalibration effects through experimental data (Figure 2B, Appendix 2). The findings are statistically supported (8/9 participants showed significant asymmetry) and consistent with prior literature. The experimental design with multiple adapter SOAs and repeated measures provides robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C56"
+    ],
+    "result": "Bayesian model comparison revealed that a causal-inference model with modality-specific precision best explains audiovisual temporal recalibration. This model outperformed five alternative models including asynchrony-contingent and asynchrony-correction models, with both modality-independent and modality-specific precision variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C51, C52, and C56 are supported by rigorous Bayesian model comparison using model evidence (Figure 4A). The causal-inference model with modality-specific precision consistently showed the strongest evidence at both group and individual levels. The model comparison methodology (variational Bayesian Monte Carlo) is appropriate and the results are clearly presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The causal-inference model with modality-specific precision accurately predicted both the nonlinearity of recalibration across adapter SOAs and the asymmetry between auditory-leading and visual-leading conditions. The model outperformed the asynchrony-contingent model by predicting non-zero recalibration at large adapter SOAs (\u00b10.7 s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, and C55 are supported by model predictions compared to empirical data (Figure 4B). The causal-inference model's superior performance is demonstrated quantitatively through its ability to capture features that alternative models missed, particularly non-zero recalibration at extreme SOAs and asymmetry patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Model simulations revealed that the prior belief in a common cause and sensory precision are critical determinants of recalibration magnitude. Strong common-cause priors or low sensory precision lead to greater recalibration, including non-zero effects at large adapter SOAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 are supported by systematic model simulations (Figure 5A-B) that demonstrate how model parameters influence recalibration patterns. The simulations provide mechanistic insight into the causal-inference model's behavior and explain counterintuitive findings (recalibration at large SOAs). The relationships are theoretically coherent and empirically grounded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C81"
+    ],
+    "result": "Differences in arrival-time precision between auditory and visual modalities explain the asymmetry in temporal recalibration. Recalibration is attenuated when the more precise modality lags during exposure, as observers are more likely to attribute asynchrony to separate causes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, C65, and C81 are supported by model simulations (Figure 5C) and consistent with empirical observations. The mechanism is theoretically sound: higher precision in one modality increases the likelihood of separate-cause attribution when that modality lags. This explains individual differences in asymmetry patterns (C82) and aligns with prior work on sensory noise (C83, C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Audiovisual temporal recalibration relies on the same causal-inference processes that govern cross-modal perception. This conclusion extends findings from spatial recalibration to the temporal domain and suggests unified mechanisms across sensory features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C67, C68, C69, and C70 represent the main theoretical conclusion, supported by the model comparison results (C8, C51) and consistency with prior work on spatial recalibration. The inference is justified by the superior performance of the causal-inference model and alignment with established literature on multisensory integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The asynchrony-contingent model failed to capture non-zero recalibration at large adapter SOAs because it scales recalibration by the likelihood of simultaneity, which approaches zero for large SOAs. In contrast, the causal-inference model accounts for this through the persistent influence of the common-cause scenario.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by model predictions and simulations (Figures 4B, 5A-B). The explanation for the asynchrony-contingent model's failure is mechanistically clear and the causal-inference model's advantage is demonstrated both theoretically and empirically. This represents an important discriminative test between models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The asynchrony-correction model predicts patterns contrary to observations, suggesting that recalibration is not simply triggered by detecting asynchrony and attempting to correct it. The causal-inference model better captures the plateau in recalibration effects through increasing separate-cause probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C77, and C78 are supported by model comparison results showing the asynchrony-correction model performed worst (Figure 4A). The theoretical explanation for its failure is sound: it predicts monotonic increase in recalibration with SOA magnitude, contradicting the observed plateau. This provides strong evidence against simple correction mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The models assume that arrival times for auditory and visual modalities are independent and exponentially distributed, with a constant offset (audiovisual bias). This results in a double-exponential measurement distribution for SOA that is asymmetric when modality-specific precision differs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 describe core model assumptions supported by prior work (Garc\u00eda-P\u00e9rez & Alcal\u00e1-Quintana, 2012) and mathematical derivation (Appendix 3). The double-exponential distribution is a well-established model for temporal perception. The assumptions are reasonable and the mathematical consequences are correctly derived (Figure 3A-B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The models define recalibration as accumulated updates to audiovisual temporal bias during exposure, with the shift persisting through the post-test. The bias resets to the same initial value across sessions, reflecting temporal bias stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, and C50 describe modeling assumptions that are theoretically justified and supported by prior work (C50 cites Grabot & van Wassenhove, 2017). These assumptions are necessary for fitting the pre-test and post-test data jointly and are consistent with the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Three process models were formulated: (1) causal-inference model updating bias based on perceived vs. measured SOA, (2) asynchrony-contingent model scaling updates by simultaneity likelihood, and (3) asynchrony-correction model adjusting bias when measured SOA exceeds simultaneity criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C7, C26, C27, and C28 describe the theoretical frameworks of the three competing models. These are clearly formalized in the Methods section with mathematical specifications (Figure 3C, Equations in text). The models represent distinct theoretical positions and are appropriate for testing the role of causal inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Most participants showed greater recalibration for auditory-leading adapter SOAs, consistent with prior work, though some showed the opposite pattern. Individual differences in sensory precision likely contribute to these idiosyncratic asymmetries, supported by neural correlates of sensory noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C80, C82, C83, C84, and C85 are supported by experimental data and comparison to literature. The individual differences are acknowledged and explained through the model framework. The connection to neural correlates (C84) strengthens the interpretation, though this relies on cited work rather than direct measurement in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Nine participants completed nine sessions with varying adapter SOAs (-0.7 to 0.7 s) in randomized order. One participant was excluded as an outlier. The study was ethically approved and participants had normal or corrected vision.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, C110, C111, C112, and C113 describe the experimental design and participant characteristics. These are straightforward methodological details that are clearly reported. The sample size (n=9 after exclusion) is modest but appropriate for the intensive within-subjects design with extensive model fitting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The fixed audiovisual bias shifts the recalibration function laterally but does not affect asymmetry, determining the adapter SOA at which no recalibration occurs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by model simulations (Appendix 7\u2014figure 1B). This represents an important control analysis showing that the fixed bias parameter affects the location but not the shape of the recalibration function, clarifying the distinct roles of different model parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The proposed model is compatible with alternative implementations including shifts in simultaneity criteria or sensitivity changes. Neural population models with SOA-tuned neurons could implement recalibration through selective gain reduction, but would require inhomogeneous tuning curves to capture asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 discuss relationships to alternative models and neural implementations. These are supported by simulations (Appendix 8) and citations to prior work. The discussion appropriately acknowledges that the computational-level model is compatible with multiple implementation-level mechanisms, while noting constraints on neural models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Causal inference may function as a credit-assignment mechanism in recalibration, analogous to sensorimotor adaptation where errors attributed to the motor system are corrected. This framework could explain persistent temporal biases despite recalibration ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93, C94, C95, C96, and C97 present speculative interpretations about the functional role of causal inference and connections to sensorimotor adaptation. While theoretically plausible and supported by citations to related work, these claims extend beyond the direct evidence from this study. The connection to persistent biases (C97) is particularly speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Cross-modal temporal recalibration maintains perceptual synchrony despite changing delays across modalities and environments. Prior work established that recalibration shifts the PSS and exhibits nonlinearity and asymmetry, but existing models did not fully capture these characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10-C17 establish the background and motivation for the study through citations to extensive prior literature. These claims accurately represent the state of the field and identify the gap that the current work addresses. The characterization of prior models' limitations (C15) is supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Causal inference, the process of determining whether multisensory signals share a common source, has been successfully applied to spatial multisensory integration and some temporal integration scenarios. Intuition and prior work suggest it should play a role in temporal recalibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C25 establish the theoretical foundation for applying causal inference to temporal recalibration through extensive citations to prior work. The claims accurately represent the literature on causal inference in multisensory perception and provide strong motivation for the current study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "While latency differences between modalities could explain temporal biases, they would not produce asymmetric recalibration across adapter SOAs. The authors hypothesized that modality-specific precision of arrival times, rather than fixed latencies, drives recalibration asymmetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 present the rationale for focusing on precision rather than latency differences as the source of asymmetry. The logic is sound: fixed latencies would shift all conditions equally (C33), while precision differences could produce asymmetry (C34, C35). The hypothesis (C35) is clearly stated and subsequently tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Temporal biases shaped by early experience appear resistant to recalibration, contradicting simple correction models. The causal-inference framework resolves this by assuming recalibration eliminates discrepancies between measured and inferred asynchrony, both influenced by biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 present an interesting theoretical point about persistent biases, but the evidence is indirect. The resistance to recalibration (C99) is stated as observation rather than demonstrated in this study. The proposed resolution (C101) is theoretically plausible but not directly tested. This represents a speculative extension of the model's implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Prior studies show mixed results on whether spatial and featural cues influence temporal recalibration. Recent work suggests causal inference may be feature-specific, with task-relevant spatial and temporal information playing critical roles in recalibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 review prior work on factors influencing recalibration, accurately representing the mixed findings in the literature. The claims are well-supported by citations and provide context for understanding the complexity of recalibration mechanisms. The conclusion (C109) appropriately synthesizes the literature.",
+    "result_type": "MINOR"
+  }
+]

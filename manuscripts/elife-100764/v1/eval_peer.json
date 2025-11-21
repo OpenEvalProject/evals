@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C35",
+      "C36",
+      "C52",
+      "C117"
+    ],
+    "result": "ChIP-seq and ChEC-seq2 reveal strikingly different patterns of RNAPII enrichment in yeast. ChIP-seq shows strong enrichment over transcribed regions with little signal at promoters and UASs, while ChEC-seq2 shows strong enrichment at promoters, UASs, and terminators with little signal over transcribed regions. The authors conclude that ChIP-seq is unable to detect functionally important RNAPII interactions at promoters and UASs that are detected by ChEC-seq2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm this core finding. The editor states that 'ChEC-seq2 captures distinct regulatory events associated with active transcription missed by ChIP-seq.' Reviewer 1 notes 'pol II ChIP and ChEC give complementary patterns' with ChIP strongest in coding regions and ChEC strongest at promoters and terminators. Reviewer 2 confirms 'ChIP-seq shows RNAPII enrichment mainly over transcribed regions, ChEC-seq2 highlights RNAPII binding at promoters and upstream activating sequences.' No concerns are raised about this central observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C38",
+      "C39",
+      "C5"
+    ],
+    "result": "ChEC-seq2 enrichment of RNAPII over promoters correlates with nascent transcription (SLAM-seq) and with ChIP-seq enrichment over coding regions, suggesting it reflects active RNAPII. Different regions correlate best with transcription for each method: promoter enrichment for ChEC-seq2 versus transcribed region enrichment for ChIP-seq.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these correlation findings without challenge. Reviewer 1 notes 'ChIP signal correlates well with transcription (rho = 0.62)' and 'pol II ChEC signals are strongest at promoters (rho = 0.52).' The editor describes the study as providing 'convincing new insights' and reviewers praise the 'carefully crafted study' and 'thoughtfully done' modeling, implicitly accepting the correlation data supporting the biological relevance of ChEC-seq2 signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C103"
+    ],
+    "result": "RNAPII association with UAS regions is strongest for genes that recruit coactivators (STM genes), is dependent on sequence-specific transcription factors, and is independent of TFIIB. TFIIB depletion experiments show that RNAPII recruitment to promoters requires TFIIB while UAS recruitment does not.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings about UAS-associated RNAPII. Reviewer 1 notes 'Weaker upstream ChEC signals are also observed at the STM class genes where biochemical studies have suggested a form of Pol (and maybe other general factors) is recruited to UAS sites.' The TFIIB depletion data showing differential effects on promoter versus UAS recruitment is not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ChEC-seq2 with RNAPII subunits and general transcription factors (TFIIA, TFIIE) produces cleavage patterns that reflect the spatial arrangement of these factors within the preinitiation complex (PIC) at promoters, with specific peaks relative to TATA boxes matching known structural arrangements. The data suggest ordered PIC assembly with TFIIA binding before RNAPII and TFIIE.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these structural mapping claims. Reviewer 1 states 'ChEC of TFIIA and TFIIE give promoter-specific ChEC signals as expected,' accepting the technical validity. Reviewer 2 notes the study is 'carefully crafted' with 'transgenic MNase fusions with endogenous Rpb1 and Rpb3 subunits carefully performed,' supporting confidence in the spatial resolution data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C118"
+    ],
+    "result": "Modeling of RNAPII occupancy using published dwell times and elongation rates predicts that 21 of 24 parameter combinations produce higher occupancy at promoters than transcribed regions, consistent with ChEC-seq2 but not ChIP-seq patterns. Only very short promoter dwell times (<1 s) can produce ChIP-seq-like patterns, which are inconsistent with published measurements (5-20 s).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the modeling framework and its implications. The editor describes the modeling as providing 'convincing new insights into transcription regulation.' Reviewer 2 states 'The kinetic modeling appears to be thoughtfully done.' Reviewer 1 notes 'Modeling studies are shown where adjustment of kinetic parameters agree well with ChEC data,' though requests validation (see below). The core conclusion that ChEC-seq2 patterns are consistent with known kinetics while ChIP-seq patterns are not is not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C130"
+    ],
+    "result": "The authors developed a stochastic kinetic model for RNAPII transcription using ChEC-seq2 occupancy data, modeling STM and TFO gene classes separately with distinct recruitment mechanisms. The models show excellent agreement with ChEC-seq2 data (cosine similarity >0.995) but cannot reproduce ChIP-seq patterns within reasonable parameter ranges.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the modeling approach. The editor states the authors 'use ChEC-seq2 data to build a stochastic model of RNAPII kinetics, providing convincing new insights.' Reviewer 2 notes 'The kinetic modeling appears to be thoughtfully done.' Reviewer 1 observes 'adjustment of kinetic parameters agree well with ChEC data' but notes 'no tests were performed to see if the predictions could be validated by other means,' indicating the modeling itself is accepted but requesting additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ChEC-seq2 with elongation-associated factors Kin28, Ctk1, and Spt5 shows maximum cleavage over promoters of active genes rather than transcribed regions. Kin28 shows enrichment over UAS regions of STM genes, while Ctk1 is primarily localized to promoters and Spt5 shows enrichment over both promoters and transcribed regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 expresses concern about these unexpected findings: 'Extending this work to elongation factors Ctk1 and Spt5 unexpectedly give strong signals near the PIC location and little signals over the coding region. This, and mapping CTD S2 and S5 phosphorylation by ChEC suggests to me that, for some reason, ChEC isn't optimal for detecting components of the elongation complex over coding regions.' This indicates the reviewer questions whether the promoter-localized signals for elongation factors reflect biology or a technical limitation of ChEC-seq2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ChEC-seq2 using mintbodies recognizing phosphorylated Ser5 and Ser2 of the RNAPII CTD shows patterns similar to their respective kinases, with Ser5p enriched over promoters and UAS regions and Ser2p more evident in transcribed regions. Relative levels differ by genomic region, with Ser2p lower than Ser5p at UAS/promoter but higher in transcripts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the CTD phosphorylation mapping data. The patterns are consistent with known biology (Ser5p associated with initiation, Ser2p with elongation), and the technical approach using mintbodies is not questioned. Reviewer 1's concern about elongation factors applies more to the unexpected promoter localization rather than the phosphorylation patterns themselves.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "ChEC-seq2 with RNAPII, Kin28, Ctk1, and CTD phosphorylation marks captures transcriptional changes upon ethanol stress, showing increased enrichment at induced genes (e.g., HSP104) and decreased enrichment at repressed ribosomal protein genes. Induced genes show higher enrichment at 3' ends, especially for Ser2p and Ctk1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these perturbation experiments. Reviewer 1 states 'Examples are also presented where perturbations of transcription can be measured by ChEC,' affirming the method's utility for detecting transcriptional changes. The ethanol stress data is not specifically critiqued, and the overall assessment is that ChEC-seq2 successfully captures dynamic changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C92",
+      "C93",
+      "C132"
+    ],
+    "result": "TFIIB depletion causes decreased RNAPII occupancy at promoters of active genes but not at repressed genes or UAS regions, indicating TFIIB is required for promoter-associated RNAPII but not UAS recruitment. Modeling suggests TFIIB depletion affects both RNAPII recruitment and increases non-productive dissociation from the UAS or promoter.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the TFIIB depletion findings. Reviewer 1 notes 'Modeling studies are shown where adjustment of kinetic parameters agree well with ChEC data and that these models can be used to estimate which steps in transcription are affected by various perturbations,' implicitly including the TFIIB experiments. The mechanistic interpretation from modeling is accepted as plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C94",
+      "C133"
+    ],
+    "result": "Inhibition of Kin28 (TFIIH kinase) leads to decreased RNAPII occupancy over promoters, transcribed regions, and 3'UTRs, with associated decreases in Ser5 and Ser2 phosphorylation. Modeling suggests Kin28 inhibition causes both decreased initiation and increased dissociation from promoter/UAS.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the Kin28 inhibition data and modeling. Reviewer 1's general statement about modeling applies here: 'adjustment of kinetic parameters agree well with ChEC data.' The expected decrease in CTD phosphorylation upon Kin28 inhibition serves as an internal control supporting the validity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C32",
+      "C97",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C129"
+    ],
+    "result": "A mutation in Gcn4 (gcn4-pd) that blocks interaction with the nuclear pore complex (NPC) causes decreased RNAPII occupancy specifically at promoters but not at UAS regions of Gcn4 target genes. Modeling suggests the NPC stabilizes promoter-associated RNAPII without affecting UAS recruitment, supporting a role for the NPC in enhancer function.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 expresses reservation: 'Finally, the role of nuclear pore binding by Gcn4 is explored, although the effects are small and this proposal should be explored more completely in future studies.' This indicates the reviewer finds the evidence suggestive but not conclusive. The editor's summary mentions this finding as part of 'convincing new insights,' but Reviewer 1's specific concern about the magnitude of effects and need for further exploration indicates uncertainty about the strength of this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C131",
+      "C134"
+    ],
+    "result": "The kinetic modeling suggests that transcriptional perturbations often have multiple effects on the transcription cycle, and that the preinitiation complex (PIC) is unstable, with perturbations causing RNAPII to dissociate non-productively.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these general conclusions from the modeling. Reviewer 2 states 'The kinetic modeling appears to be thoughtfully done,' and the editor describes 'convincing new insights into transcription regulation.' The concept of PIC instability is consistent with cited literature and not challenged by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "For sequence-specific transcription factors, nuclear pore proteins, coactivators, Mediator, and PIC components, ChEC-seq2 gives results very similar to ChIP-seq or ChIP-exo, showing general agreement between methods for proteins that bind directly to DNA.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this characterization of method concordance for direct DNA-binding proteins. Reviewer 2 notes 'The validation of ChEC-seq2 and its comparison with ChIP-seq is highly valuable technical information for the community,' affirming the comparative analysis. The contrast with RNAPII (where methods differ) makes the agreement for other factors more notable and credible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "ChEC captures important regulatory events associated with transcription that are missed by ChIP. The mechanistic differences between methods\u2014ChEC detecting both direct and indirect DNA interactions while ChIP favors direct interactions, and differential performance in nucleosome-depleted versus nucleosome-rich regions\u2014explain the divergent results.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this overarching conclusion. The editor states 'ChEC-seq2 captures distinct regulatory events associated with active transcription missed by ChIP-seq.' Reviewer 1 concludes 'the authors show that pol II ChEC is a valuable and complementary method for investigating transcription mechanisms and slow steps at the initiation and termination regions.' Reviewer 2 calls the comparison 'highly valuable technical information for the community.'",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors successfully generated three distinct eIF3 subunit knockdowns (eIF3d, eIF3e, eIF3h) in HeLa cells using siRNA, achieving 16-32 fold mRNA reduction and corresponding protein depletion. eIF3eKD resulted in co-depletion of eIF3d, eIF3k, and eIF3l, while eIF3hKD depleted eIF3h, eIF3k, and eIF3l. Both eIF3dKD and eIF3eKD strongly reduced cell proliferation and polysome formation, while eIF3hKD had only moderate effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C43 are well-supported by multiple complementary experimental approaches including qPCR (C40), western blotting (C37, C38, C41), polysome profiling (C42, C43), and growth curves (C39). The data consistently demonstrate successful knockdown with expected phenotypic consequences that align with prior work (Wagner et al., 2016).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Ribo-seq and RNA-seq libraries were of high quality with expected characteristics. Differential expression analysis identified 21 DTEGs in eIF3hKD, 1180 in eIF3eKD, and 1971 in eIF3dKD. The number of DTEGs correlated with phenotype severity, with eIF3hKD showing the mildest impact on the translatome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 are supported by comprehensive quality control metrics (read length distribution, 3nt periodicity, CDS enrichment) and PCA/clustering analysis. The differential expression analysis using DESeq2 with padj<0.05 threshold is appropriate, and the correlation between DTEG counts and phenotype severity is logically consistent with polysome and growth data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "There is substantial overlap in DTEGs between knockdowns: 923 DTEGs are shared between eIF3dKD and eIF3eKD, all 21 eIF3hKD DTEGs are found in eIF3dKD, and only 257 DTEGs are unique to eIF3eKD. The eIF3 subcomplex in eIF3eKD lacks subunits e, k, l and partially eIF3d.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by Venn diagram analysis (Figure 2F) and western blot data (Figure 1\u2014figure supplement 1C). The overlap patterns are consistent with the known structural relationships between eIF3 subunits and provide internal validation of the experimental approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Upregulated DTEGs in eIF3dKD and eIF3eKD showed strongest enrichment in KEGG 'Lysosome' and 'Protein processing in endoplasmic reticulum' pathways, with >70% being translationally regulated. eIF3e appears primarily involved in controlling balanced ribosome production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 are supported by KEGG enrichment analysis (Figure 3A-C) and classification of DTEGs into 'translation only' groups. The finding is corroborated by independent work (Lin et al., 2020, C59) showing increased lysosomal load in eIF3e-depleted cells, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "eIF3eKD resulted in 32 ribosomal proteins with significantly changed TE (vs. 16 in eIF3dKD), with cytoplasmic RPs upregulated solely at the translational level. Western blotting confirmed increased RP protein levels in both knockdowns. The 60S/40S ratio remained balanced, but total ribosome content increased in eIF3eKD and eIF3dKD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by Ribo-seq analysis, western blotting (Figure 3E-F), qPCR (Figure 3\u2014figure supplement 1C), and polysome profiling with EDTA (Figure 3G-H). The data consistently demonstrate increased RP production without disrupting ribosome stoichiometry, though the discrepancy between Ribo-seq and western blot results for eIF3eKD vs eIF3dKD requires further investigation (acknowledged in C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "TOP mRNAs (encoding ribosomal proteins and translational machinery) were significantly translationally activated in eIF3dKD and eIF3eKD but not eIF3hKD. Non-TOP mTORC1-sensitive transcripts were predominantly translationally buffered. This suggests eIF3e and eIF3d temper TOP mRNA translation under normal conditions independently of mTORC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 are supported by ECDF analysis of TOP mRNAs (Figure 4A-C) and mTORC1-sensitive transcripts (Figure 4\u2014figure supplement 1A-C). The differential effects on TOP vs. non-TOP mTORC1-sensitive transcripts provide strong evidence for an mTORC1-independent mechanism, though the molecular basis requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "eIF3dKD affected multiple MAPK pathway components (Grb2, Sos, c-Raf, MEK1, Erk2, MNK1, Rsk2, CREB, Rac1, PAK1) at the translational level. Western blotting confirmed decreased protein levels for most tested proteins (AKT1, GRB2, MEK1, PAK1, RSK1, RSK2, RAF1, SOS1) in eIF3dKD and eIF3eKD. More than half of downregulated MAPK pathway DTEGs were translationally buffered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by KEGG enrichment analysis, differential expression data, and western blot validation (Figure 5C-D). The exception of c-Jun (C77) showing increased protein despite unchanged TE is well-documented and adds nuance to the findings. The translational buffering pattern (C75) is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C106"
+    ],
+    "result": "Despite reduced MAPK/ERK pathway protein levels, ERK1/2 phosphorylation at Thr202/Tyr204 was increased in all three knockdowns. c-Jun was activated by phosphorylation at Ser63 and accumulated in the nucleus. This indicates MAPK/ERK pathway activation is a general consequence of compromised eIF3 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 and C106 are strongly supported by western blot data (Figure 5E-F) showing increased ERK1/2 and c-Jun phosphorylation across all three knockdowns. The observation that eIF3hKD also shows increased ERK phosphorylation despite unaffected MAPK protein levels (C106) provides compelling evidence that pathway activation is independent of protein level changes and represents a compensatory response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "MDM2 and ATF4 were identified as key DTEGs downregulated in all three knockdowns. MDM2 protein levels were reduced in all knockdowns. ATF4 is among the top 10 most significant DTEGs, and stress-mediated ATF4 induction was almost abolished in eIF3dKD/eIF3eKD and strongly decreased in eIF3hKD. An intact eIF3 complex is required for proper ATF4 translational control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by KEGG enrichment analysis (Figure 6A), western blotting (Figure 6C-D), and volcano plots (Figure 2B, D). The ATF4 stress induction experiment (C86) provides functional validation. The conclusion about intact eIF3 requirement (C87) is well-supported by the data and consistent with prior literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Footprint analysis revealed increased accumulation at the 5' Start-stop element of ATF4 in eIF3dKD/eIF3eKD, suggesting both subunits are required to clear Start-stop-trapped ribosomes. For MDM2, footprint coverage increased specifically at uORF1 in all three knockdowns, consistent with its stronger inhibitory role.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are supported by footprint coverage analysis (Figure 6E-F). The ATF4 Start-stop accumulation pattern is consistent with prior observations (Rendleman et al., 2023; Wagner et al., 2020), and the MDM2 uORF1 accumulation aligns with known regulatory mechanisms (Jin et al., 2003). The data provide mechanistic insight into eIF3's role in reinitiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Changes in translation efficiency correlated with mRNA features: negative correlation with 5'/3' UTR length and uORF presence (p<1\u00d710\u207b\u2074\u2075), positive correlation with GC content in CDS and 3' UTRs. Downregulated DTEGs had longer 5' UTRs and lower GC content, while upregulated DTEGs had shorter 5' UTRs and higher GC content. Downregulated 'translation only' DTEGs strongly tend to contain AUG-initiated uORFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C99 are supported by Spearman correlation analysis (Figure 7A) with highly significant p-values, box plot analysis (Figure 7B-C), and uORF frequency analysis (Figure 7D-E). The statistical significance is robust, and the findings are internally consistent. The conclusion about eIF3's role in translating uORF-containing mRNAs (C99) is well-supported and aligns with known eIF3 functions in reinitiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "More DTEGs were identified in eIF3dKD than eIF3eKD despite eIF3dKD not affecting eIF3 integrity. eIF3d levels were more dramatically reduced in eIF3dKD than eIF3eKD. The authors hypothesize that eIF3d may remain partially operational without eIF3e due to its peripheral location and multiple attachment points to the octamer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 are supported by DTEG counts, western blot data (Figure 1\u2014figure supplement 1C), and structural information from prior work. However, C103-C104 represent hypotheses rather than demonstrated findings. While the speculation is reasonable given the structural data, alternative explanations (e.g., eIF3d having functions outside the complex, or being a target of signaling pathways) are acknowledged but not tested. Further experiments are needed to distinguish between these possibilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The effects of DAP5 depletion on the translatome were comparable to eIF3d-depleted cells, with similar patterns in FP coverage. Since similar effects were observed with eIF3eKD and eIF3hKD, the DAP5-dependent mechanism may rely on the entire eIF3 complex, not just eIF3d.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by comparative analysis shown in Figure 6\u2014figure supplement 2A-C. The observation that all three eIF3 knockdowns show similar effects to DAP5 KD provides evidence for eIF3 complex involvement beyond just eIF3d, though the molecular details of this interaction require further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "Comparison with Lin et al. (2020) data showed significant overlap: 446 genes between eIF3e-dependent mRNAs and eIF3dKD upregulated DTEGs (p<1\u00d710\u207b\u2075\u00b3). KEGG enrichment of Lin et al. eIF3e-dependent mRNAs revealed the same top 2 pathways (Lysosome and Protein processing in ER) as the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 are supported by cross-study comparison with appropriate statistical testing. The convergence of findings between independent studies using different cell lines (HeLa vs. MCF-10A) strengthens confidence in the biological significance of the lysosome and ER protein processing pathways, despite methodological differences noted in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "Cross-referencing with Lee et al. (2015) data on eIF3-binding mRNAs showed that 92 of 402 transcripts with putative eIF3 binding sites had significantly altered TE in eIF3dKD, and 65 in eIF3eKD (51 common to both).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C124 is supported by cross-referencing analysis shown in Figure 7\u2014figure supplement 1B. The notable overlap between transcripts with eIF3 binding sites and those with altered TE provides validation of the screening approach and suggests direct regulatory relationships, though the overlap is modest (~23% for eIF3dKD).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "PRRC2A was significantly upregulated in all three knockdowns. PRRC2 proteins affect translation initiation by promoting leaky scanning and their depletion decreases TE of uORF-containing mRNAs. The authors speculate that increased PRRC2 expression represents a compensatory mechanism for ineffective translation of uORF-containing mRNAs. All PRRC2 proteins have highly translated overlapping-uORFs, suggesting autoregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 is supported by differential expression data. C128 is supported by citation to Bohlen et al., 2023. However, C129 is explicitly speculative and lacks direct experimental validation. C130 is an observation that leads to speculation about autoregulation without testing. While the hypothesis is plausible, it requires experimental validation through PRRC2 manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The introduction provides established background on protein synthesis, translation initiation, eIF3 structure and function, MAPK signaling pathways, and their roles in cancer. This includes the modular assembly of eIF3, interconnected expression of eIF3 subunits, and the regulatory relationships between MAPK pathways and translation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 represent well-established knowledge in the field, supported by appropriate citations to primary literature and reviews. These background claims provide necessary context for interpreting the experimental results and are not contested findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C110",
+      "C129",
+      "C134"
+    ],
+    "result": "The authors speculate that when translation is compromised, cells attempt to compensate by (1) producing more ribosomes and (2) activating MAPK signaling. They also speculate that targeting eIF3 may hold promise for overcoming intratumor heterogeneity in cancer therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110, C129, and C134 are explicitly speculative and represent hypotheses rather than demonstrated findings. While the speculation is reasonable given the observed data (increased ribosome production and MAPK activation), the proposed compensatory mechanisms and therapeutic implications lack direct experimental validation. These represent important directions for future research but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

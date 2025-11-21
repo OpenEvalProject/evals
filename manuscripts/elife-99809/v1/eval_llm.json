@@ -1,0 +1,343 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C71"
+    ],
+    "result": "The authors designed and synthesized a novel isobaric crosslinker called Q2linker with an optimal extended distance of ~10 \u00c5 that uses MS2 reporter ions (126.128 and 127.131) for relative quantification of crosslinker-modified peptides. The two isobaric Q2linkers (C1q2 and C2q2) were synthesized from 1-13C and 2-13C bromoacetic acid respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C71 describe the design features and synthesis of the Q2linker. The design specifications are clearly stated and the synthesis approach is documented in the methods section with supporting figures showing the chemical structures and synthesis scheme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Analysis of 83,242 mass spectra from BS3 crosslinked yeast Mediator complex showed minimal interference at the reporter ion m/z values, with only 0.17% of spectra containing 126.128 ions and 0.02% containing 127.131 ions within 40 ppm mass tolerance, demonstrating that these reporter ions can be used for accurate quantification with little interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 provide experimental validation that the chosen reporter ion m/z values have minimal background interference. The data from 83,242 spectra provides strong statistical support for the low interference claim, which is critical for the quantification strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C72",
+      "C73"
+    ],
+    "result": "Validation experiments using pol I crosslinked at known mixing ratios showed that measured log2 ratios from both monolink and crosslink spectra were strongly correlated with expected ratios (slopes close to 1), with average measured ratios slightly lower than expected (intercept ~-0.4) and standard deviations around \u00b10.25 for 1:1 to 2:1 ratios, increasing to \u00b10.42 and \u00b10.78 for 5:1 and 10:1 ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C72, and C73 demonstrate the quantitative accuracy of the Q2linker approach through systematic validation experiments. The strong correlation with expected ratios and documented standard deviations provide clear evidence of quantification performance, though the authors acknowledge increased variability at extreme ratios.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C74"
+    ],
+    "result": "In a control experiment with pol II in the presence and absence of \u03b1-amanitin (where no major structural rearrangements are known to occur), 98% of log2 ratios for monolinked, intralinked, and interlinked peptides fell within \u00b10.5, with distributions centered around 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, and C74 provide a negative control demonstrating that the Q2linker approach does not produce false positive signals when no conformational changes are expected. The tight distribution of ratios around 0 validates the method's specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Q2linker analysis of maltose binding protein (MBP) detected a conformational change upon maltose binding, with one monolinked peptide (306SYEEELAK*DPR316) showing fivefold higher abundance in maltose-containing samples. Structural analysis revealed that K313 can form a salt bridge with E310 in the open conformation that is broken in the closed conformation, likely limiting NHS ester-based modification of K313 in the open state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 and C77-C80 demonstrate successful detection of a conformational change in MBP using Q2linkers. The fivefold abundance change is substantial and reproducible across two crosslinker-swapping experiments. The structural interpretation linking the salt bridge to differential modification is well-reasoned and supported by distance measurements from crystal structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C81",
+      "C82"
+    ],
+    "result": "Q2linker analysis of calmodulin (CaM) detected conformational changes upon calcium and CBP binding, with one crosslinked peptide (Lys78-Lys95) showing fivefold reduced abundance in the presence of CBP and CaCl2. Monolinked peptides at these sites showed slightly increased abundances, indicating the reduction was not due to limited accessibility but rather to CBP binding between these residues causing steric hindrance or decreased flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C81-C82 demonstrate detection of conformational changes in CaM. The complementary monolink data (showing increased modification) strengthens the interpretation that reduced crosslinking is due to CBP interference rather than reduced accessibility. The structural interpretation is consistent with known CaM-CBP structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Q2linker analysis of TBP/TFIIA/TFIIB complexes identified 61 interlinks and 202 intralinks, with most showing no significant changes between binary and ternary complexes. However, the largest changes involved crosslinks between TFIIA1 and TFIIB (only observed in ternary complex) and between the N-terminal region of TBP and central linker region of TFIIB, suggesting that TFIIA addition induces conformational changes in the TFIIB linker region and potentially in the TBP N-terminal domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C31 and C87-C93 describe detection of structural changes during TFIIA/TBP/TFIIB complex formation. While the crosslinking data showing changes in TFIIB linker region is clear, the interpretation involves speculation (C31, C92) about functional implications. The experiment was performed once without replicates, and the structural changes involve disordered regions not resolved in crystal structures, making validation difficult.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Q2linker analysis comparing holo-pol II (12 subunits) to \u0394Rpb4-pol II (10 subunits) identified 101 interlinks in both experiments, with 47 and 116 identified only in experiments I and II respectively. Most crosslinks identified in only one experiment showed no significant abundance change, suggesting undersampling rather than true absence. Among interlinks identified in both experiments, there was rough anti-correlation (R\u00b2 = 0.5) between the two experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C43 describe the experimental design and data quality for the pol II study. The crosslinker-swapping design and observation that most single-experiment identifications show no abundance change provides strong evidence that undersampling is the main issue. The R\u00b2 = 0.5 anti-correlation for interlinks supports reproducibility of the quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C94",
+      "C95"
+    ],
+    "result": "Q2linker analysis detected conformational changes in pol II Switch 2 region (Rpb1:328-346), with crosslinks involving Rpb1:332, Rpb1:1102, and Rpb2:507 showing increased abundance in holo-pol II. This region undergoes a conformational change where the helix flips out to contact DNA and is accompanied by stabilization of Rpb2 forkloop 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C94, and C95 identify specific conformational changes in the Switch 2 region that are consistent with known structural differences between open and closed pol II states. The crosslinking data showing increased proximity of these residues in the closed state aligns with structural knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Q2linker analysis revealed that crosslinks involving Rpb1:K15, Rpb6:K76, and Rpb6:K72 are more abundant in the open (\u0394Rpb4-pol II) state. Structural analysis showed that in core pol II, Rpb1:K15 forms a salt bridge with Rpb1:D1442 (3.8 \u00c5 distance) that is broken in holo-pol II (6.7 \u00c5 distance) due to Switch 5 bending, likely impeding NHS ester-based modification of K15 in the closed state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 provide a mechanistic explanation for differential crosslinking based on salt bridge formation affecting lysine reactivity. The structural distances are precisely measured and the interpretation is consistent with the chemistry of NHS ester reactions. This demonstrates the method can detect subtle conformational changes affecting residue reactivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Analysis of intralinks in the pol II study identified 287 in both experiments and 124/143 in only one experiment, with weaker anti-correlation (R\u00b2 = 0.3) than interlinks. Several intralinks showed abundance changes including Rpb5:161-171 (enriched in \u0394Rpb4-pol II) and Rpb1:689-728 (enriched in holo-pol II), though structural analysis revealed minimal backbone changes, suggesting intralinks are less informative for probing conformational changes in this system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C102-C107 document the intralink data and acknowledge its limitations for this particular study. The authors appropriately recognize that intralinks are less informative when backbone structures are similar, and provide structural analysis to support their interpretations of specific changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C108",
+      "C109"
+    ],
+    "result": "Analysis of monolinks in the pol II study identified 191 in both experiments and 10/11 in only one experiment. Some Rpb5 monolinks and intralinks were enriched in \u0394Rpb4-pol II despite no large structural rearrangement, possibly because Rpb4/7 stabilizes the Rpb1/Rpb6/Rpb5 region making it more rigid and less reactive in holo-pol II. Overall, monolinks were less informative for probing conformational changes in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C57 and C108-C109 describe monolink data and propose a speculative explanation (C57) for Rpb5 enrichment based on rigidity changes. While the observation is clear, the mechanistic explanation is not directly tested and represents speculation about how Rpb4/7 affects local dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Several crosslink abundance changes in pol II could not be easily explained by structural analysis, including Rpb1:1246-Rpb9:77 (possibly reflecting disorder-to-loop transition), Rpb10:68-Rpb2:191 (no obvious structural difference), Rpb1:129-Rpb5:171 (slight orientation difference), and Rpb11:37-Rpb1:129 (possibly false positive as distance exceeds Q2linker range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C101 acknowledge limitations in interpreting some crosslinking changes. The authors appropriately identify C101 as a possible false positive and provide speculative explanations (C97, C100) for others. This demonstrates scientific rigor in acknowledging unexplained observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Isobaric crosslinkers offer several advantages over other approaches: samples can be combined immediately after crosslinking avoiding processing artifacts, isotope labeling-based quantification is more accurate than label-free methods, MS1 complexity is not increased improving sensitivity, qCLMS is performed under near-physiological conditions unlike cryo-EM/crystallography, and can provide information about flexible/disordered regions difficult to obtain by high-resolution methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 and C64-C66 describe methodological advantages that are well-established in the field (supported by C59 citation) or follow logically from the experimental design. These represent valid comparisons to alternative approaches, though some advantages (like improved sensitivity from reduced MS1 complexity) are stated as possibilities rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "In the pol II experiments, 32-53% of interlinks and 30-33% of intralinks were identified in only one experiment, but most showed no significant abundance change, indicating undersampling rather than true differences. Interlinks are more informative than intralinks and monolinks for inferring structural changes in large complexes as they provide information about proximities of modified amino acids and their associated domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 provide important insights about data interpretation in complex qCLMS experiments. The observation about undersampling is well-supported by the quantitative data, and the conclusion about interlinks being more informative is demonstrated by the pol II results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Important experimental considerations for qCLMS include having most ratios close to 1:1 to facilitate interpretation, avoiding sample processing artifacts such as loss of small proteins during SP3 enrichment, and using 1% SDC for protein denaturation which gave the best results for peptide recovery and crosslinked peptide identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 provide practical methodological insights gained from the authors' experience. The recommendation for 1:1 ratios and use of 1% SDC are supported by their experimental observations, though these represent empirical findings rather than systematic optimization studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C110"
+    ],
+    "result": "The Q2linker approach provided quantitative crosslinking data that pinpointed key conformational and structural changes in biosensors (MBP and CaM), binary and ternary complexes of transcription factors (TBP, TFIIA, TFIIB), and RNA polymerase II complexes (holo-pol II vs \u0394Rpb4-pol II).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C110 summarize the overall findings from all application studies. The claim is supported by the collective evidence from the MBP, CaM, TFIIA/TBP/TFIIB, and pol II experiments, each of which detected conformational or structural changes consistent with known or expected biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "A limitation of residue-specific quantitative CLMS methods is that reactive residues must be available near the region of interest and the modified peptides must be identifiable by MS, as demonstrated by the inability to detect changes near the \u03b1-amanitin binding site in pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 acknowledges an important limitation of the method, supported by the negative result from the \u03b1-amanitin experiment. This represents appropriate scientific transparency about methodological constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The authors expect that this novel strategy for studying conformational and structural changes in proteins and complexes will be easily adopted for routine use by the community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is a speculative statement about future adoption of the method. While the method shows promise, actual adoption by the community depends on many factors beyond the scope of this manuscript including ease of synthesis, cost, availability of reagents, and comparison to competing methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Background claims establish that protein structure is determined by amino acid sequence, proteins can assume multiple conformations induced by post-translational modifications or molecular interactions, disease-causing mutations often alter conformational landscapes, and existing crosslinkers (BS3, EDC/DMTMM) have defined distance constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide background context supported by appropriate citations to established literature. These are not novel findings but rather set the stage for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C90"
+    ],
+    "result": "Background on transcription initiation establishes that TBP, TFIIA, and TFIIB play central roles in PIC formation, with TFIIA stabilizing TBP-DNA complexes, TFIIB interacting with both TBP and pol II, and the TFIIB linker region interacting with pol II clamp and protrusion loops. The structure of the TFIIB linker has only been observed in complexes containing pol II.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 and C90 provide background on transcription factor biology supported by appropriate citations. These establish the biological context for interpreting the crosslinking results.",
+    "result_type": "MINOR"
+  }
+]

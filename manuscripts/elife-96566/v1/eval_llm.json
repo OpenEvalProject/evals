@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Reshaped RP models, which optimize the projection coefficients (a_ij) while keeping \u03bb_i fixed, outperform standard RP models in accuracy and efficiency. These models achieve higher log-likelihood with fewer projections, exhibit lower firing rates and correlations between projection neurons, and sigmoid nonlinearity outperforms step functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23, C31, C32, C33, and C34 collectively demonstrate that Reshaped RP models are superior to standard RP models. The evidence includes comparative log-likelihood data (Figure 1D), firing rate measurements (Figure 1E), and correlation analyses (Figure 1F) across multiple model configurations and neuron populations. The data consistently shows improved performance with fewer projections and more efficient neural representations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Incorporating homeostatic synaptic normalization (fixing total incoming synaptic weights) during reshaping produces models that are more accurate and efficient than both standard RP models and bounded synaptic weight models. Homeostatic models outperform bounded models across a wide range of synaptic budgets and show lower firing rates and correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24, C39, C40, C41, and C42 are strongly supported by comparative data in Figures 2B-F. The homeostatic constraint consistently produces superior models across 100 different initializations (Figure 2D), with better performance-to-cost ratios and more efficient neural codes. The mechanistic advantages (lower firing rates, lower correlations) align with efficient coding principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Homeostatic synaptic normalization during reshaping produces homeostasis in firing rates of projection neurons. Different normalization values lead to convergence to similar average firing rates despite different initial conditions, with tighter normalization producing narrower firing rate distributions and smaller changes during learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C46-C50 are supported by data in Figure 3A-E showing convergence of firing rates across different normalization conditions. The evidence demonstrates that synaptic normalization regulates firing rates homeostically while maintaining model performance, validating the biological relevance of the mechanism. The cumulative distribution of firing rate changes (Figure 3E) confirms smaller perturbations with normalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Random sparse connectivity performs as well as ground-truth connectivity for homeostatic reshaped RP models, while fully connected models are inferior except at very high synaptic budgets. There exists an optimal in-degree that depends on synaptic budget, with an optimal ratio between total resources and number of synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by synthetic data experiments (Figure 4C-G). The surprising equivalence of random and true connectivity (Figure 4C) is robustly demonstrated, as are the firing rates and correlations (Figures 4D-E). The optimal in-degree analysis (Figure 4F-G) shows systematic relationships between connectivity and performance. However, the synthetic data approach limits generalizability to real neural systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Three different homeostatic mechanisms (input normalization, output normalization, and circuit-wide normalization) produce similar model performance in terms of likelihood, but result in different reshaped projections as measured by rotation angles. All three variants show similar minimal mean rotation angles at the same synaptic cost value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by data in Figures 5B and 5E, and Figure 5\u2014figure supplement 1. The similar performance across homeostatic variants (Figure 5B) is clearly demonstrated, while the different rotation angles (Figure 5D-E) show mechanistic differences. The convergence to similar minimal rotation angles is intriguing but the mechanistic explanation for this convergence is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Sparse homeostatic reshaped RP models outperform fully connected neural network models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 is stated in the abstract but the manuscript primarily compares sparse homeostatic models to fully connected reshaped models (Figure 4C), not to standard fully connected neural networks trained with backpropagation. The comparison shown is limited to models within the RP framework, making the broader claim about fully connected neural networks inadequately supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Synaptic normalization has a dual functional role: maintaining homeostasis of firing rates and synaptic weights while optimizing network performance and efficiency. This suggests a universal computational role for homeostatic mechanisms in neural circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C60, C61, and C62 represent interpretive conclusions drawn from the experimental results. The dual role is supported by the combined evidence of homeostasis (Figure 3) and improved efficiency (Figure 2). The universality claim (C61) is supported by the similarity across different homeostatic mechanisms (Figure 5B). However, these are inferences from computational models rather than direct biological observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C37"
+    ],
+    "result": "Optimizing projection thresholds has minimal effect on model performance, and the optimal value of \u03bb depends on the number of projections, with high \u03bb values better for few projections and low \u03bb values better for many projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C37 are supported by data in Figure 1\u2014figure supplement 2A-B. The threshold optimization shows small effects on likelihood, and the \u03bb-dependent performance shows clear trends. However, the manuscript does not provide strong theoretical justification for why \u03bb=1 is chosen as the default value for most analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The Reshaped RP model is biologically plausible due to its shallow architecture (avoiding multi-layer backpropagation), local learning rules, and robustness to connectivity and homeostatic mechanism choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 represent inferences about biological plausibility based on model properties. The shallow architecture is inherent to the model design, locality of learning is demonstrated by the reshaping rule (Equation 3), and robustness is shown in Figures 4 and 5. However, a key limitation remains unaddressed: the feedback signal from the readout neuron to intermediate neurons, which is acknowledged but not resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Lower correlations between projection neurons in reshaped models are consistent with efficient coding principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 connects the observed decorrelation (Figures 1F, 2F) to established efficient coding theory via citations to Barlow (1961) and Olshausen & Field (1997). This interpretation is reasonable and well-supported by prior theoretical work, though the manuscript does not provide independent validation of coding efficiency beyond correlation measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "The homeostatic mechanism is a form of 'hard' L1 regularization on the sum of weights, and may be beneficial for artificial neural network architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is a valid mathematical interpretation of the normalization constraint. Claim C67 is explicitly labeled as a hypothesis and is appropriately speculative. The connection to artificial networks is supported by citation to Zhong et al. (2022), but no direct experiments on artificial architectures are performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27"
+    ],
+    "result": "Background claims about prior work on neural population models, including RP models, GLMs, maximum entropy models, auto-encoders, and biological mechanisms like homeostatic plasticity and divisive normalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C22, C26, and C27 are background claims supported by appropriate citations to prior literature. These establish the context for the current work and are generally accurate representations of the cited work. The mathematical property of maximum entropy distributions (C26) is correct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C76"
+    ],
+    "result": "Methodological details including neural circuit architecture, experimental data sources, data preprocessing, and synthetic data generation procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C68-C71, and C76 describe methodological details that are clearly stated and appropriately documented. The data source (Kiani et al., 2014) is properly cited, preprocessing steps are explicit, and the synthetic data generation method is described. These provide adequate information for reproducibility.",
+    "result_type": "MINOR"
+  }
+]

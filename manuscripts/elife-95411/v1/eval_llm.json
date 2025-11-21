@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The manuscript establishes the epidemiological and genetic context for childhood obesity, citing that obesity prevalence is rising globally, especially in children, with heritability estimates of 40-70% and associations with chronic diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C15-C23 provide well-cited background knowledge about obesity prevalence, heritability, and health consequences. These are supported by multiple published references and represent established epidemiological facts that contextualize the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Prior GWAS identified 19 independent childhood obesity signals, but the functional mechanisms remain unclear, motivating the current study's approach to predict effector genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 reference prior work by the authors, while C24-C26 cite published literature establishing the knowledge gap. This provides appropriate motivation for the current study and is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C27",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study integrated childhood obesity GWAS summary statistics (8.6M European ancestry variants) with 3D genomic datasets (Capture-C/Hi-C, ATAC-seq, RNA-seq) across 57 cell types using stratified LD score regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C27, C111-C113 describe the study design and data sources. The methodology is clearly described with appropriate citations to the EGG consortium GWAS and details about data processing. The approach is sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "LD score regression analysis revealed pancreatic alpha cells showed the most statistically significant enrichment for childhood obesity SNP heritability when using putative cREs, though significance was lost with expanded window definitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C31-C37 describe heritability enrichment results with specific p-value thresholds (p<0.05) and cell type counts. Figure 1B provides visual support. The finding that significance depends on window definition is appropriately reported, showing analytical rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Variant-to-gene mapping identified 94 proxies within cREs clustering at 13 loci, with TMEM18 (46 proxies) and ADCY3 (21 proxies) being most abundant, though variant number did not correlate with genes or cell types implicated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 present specific quantitative findings from the mapping analysis with references to Figure 2. The numbers are internally consistent and the observation about lack of correlation (C42) shows appropriate data interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The variant-to-gene mapping implicated 111 candidate effector genes total, with 45 cell-type-specific genes and 9 genes consistently implicated across all four categories (metabolic, neural, immune, other), including BDNF appearing in 42 cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 provide specific gene counts with references to Table 1 and Figure 3. The quantitative results are clearly presented and internally consistent. BDNF's widespread implication (C47) is a notable finding appropriately highlighted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C58",
+      "C59",
+      "C86",
+      "C87"
+    ],
+    "result": "ALKAL2 was identified as a novel effector gene at the TMEM18 locus across multiple immune cell types, with SNPs rs35796073 and rs35142762 contacting the ALKAL2 promoter and showing colocalization with ALKAL2 expression in GTEx data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C58-C59, C86-C87 describe the ALKAL2 finding with both chromatin contact mapping and independent eQTL colocalization support (cond.PP.H4=0.78). The convergence of two independent methods strengthens this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C13",
+      "C14",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "ALKAL2 is characterized as an inflammation-responsive gene in nociceptors that has been previously implicated in childhood BMI and obesity-related traits, supporting inflammatory and neurologic components in childhood obesity pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C13-C14, C60-C68 provide extensive literature support for ALKAL2's biological functions and prior associations with obesity-related traits. Multiple citations support each aspect, though C14 represents an interpretive conclusion that extends beyond the direct data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "EndoC-BH1 and myotubes implicated the most effector genes (38 and 42 respectively), with EndoC-BH1 consistently ranking high in heritability estimates despite average cRE numbers, while pancreatic alpha cells showed only 6 implicated genes despite highest heritability significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 present specific quantitative findings with references to Figures 1 and 3. The observation about discordance between heritability enrichment and gene implication (C73) is appropriately noted and represents an important nuance in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Pathway analysis using pathfindR (60 KEGG terms, 13 genes) and customized SPIA (39 KEGG terms, 10 genes) identified 20 overlapping pathways driven by ADCY3, ADCY9, CREBBP, MMP2, and NCOA1, with natural killer cells prominently involved and BDNF driving four signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 describe pathway analysis results with specific numbers and references to Figure 4 and supplementary files. The use of two complementary methods strengthens the findings, though the limited gene sets reflect the stringent mapping approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Colocalization analysis identified 114 high-probability colocalizations (cond.PP.H4\u22650.8) involving 44 genes and 41 tissues, with 21 SNP-gene pairs consistent with variant-to-gene mapping, including rs7132908 at FAIM2 and 15 SNPs at ADCY3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85, C88-C95 present colocalization results with specific posterior probability thresholds and quantitative findings. The convergence with physical mapping (C85) provides orthogonal validation. Specific examples with high probabilities (>0.95) strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "ADCY3 has been previously reported with missense mutations in obesity contexts, and ADCY5 has been implicated in metabolic traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 provide appropriate literature context for the ADCY3 findings with specific citations. This supports the biological plausibility of the current study's implication of ADCY3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Transcription factor binding prediction identified rs7132908 as disrupting 12 TF binding sites, with SREBF1 being the only TF with literature support for regulating AQP2 and FAIM2 at the same enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 describe TF binding predictions with reference to Figure 6A and citation to supporting literature (Kikuchi et al., 2021). The authors appropriately note that only one of 12 predictions has literature support, showing critical evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C106",
+      "C107"
+    ],
+    "result": "The study confirmed FTO locus signals contact IRX3 and IRX5 in adipocytes (as previously reported) and newly identified distal chromatin contacts in myotubes, consistent with evidence for temporal and cell-state-dependent effector gene activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100, C106-C107 appropriately cite prior work and present new findings for myotubes. The distinction between confirming prior findings and reporting novel observations is clear and appropriately supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "LRRIQ3 at the TNNI3K locus was contacted by two SNPs in NTERA2 cells only, with published associations to depression and opioid use, and shares an overlapping promoter with FPGT-TNNI3K previously associated with BMI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 present a specific cell-type-restricted finding with appropriate citations to prior associations. The observation about overlapping promoters adds biological context and is well-supported by literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The chromatin contact-based approach yielded 94 candidate causal variants mapped to putative effector genes and cell types, uncovering new variant-to-gene combinations in immune cell types that confirm immune system involvement in early-life obesity pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C29 present the main quantitative outcome, but C30's conclusion about 'confirming' immune involvement is interpretive. While the immune cell findings are novel, 'confirmation' implies validation beyond what the correlative mapping provides. Functional validation would be needed to confirm causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The BDNF, ADCY3, TMEM18, and FTO loci yielded the most abundant candidate variants and target genes in skeletal muscle myotubes and EndoC-BH1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 summarizes a key finding from the fine-mapping analysis. This is supported by the detailed quantitative results presented in subsequent claims (C40-C41, C70) and referenced figures, making it a well-supported summary statement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The manuscript establishes biological context linking chronic inflammation, immune cells in adipose tissue, stress-induced hormonal responses, and voluntary feeding behaviors to obesity pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 provide established biological knowledge with appropriate citation (C57 to Dallman, 2010). This contextualizes the immune and neural findings but represents background rather than novel results from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The enrichment of pancreatic alpha and beta cell 3D genomic features for childhood obesity GWAS signals demonstrates a bidirectional relationship between obesity and the pancreas, with cRE regions more involved in gene regulation than disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C105 mix established knowledge (C101, C103-C104) with interpretations of the current results (C102, C105). While the enrichment data support pancreatic involvement, the claim of 'bidirectional relationship' (C102) and interpretation about regulation vs. disruption (C105) extend beyond what the correlative enrichment data directly demonstrate.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,150 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C85",
+      "C86"
+    ],
+    "result": "RNNs trained with varying levels of noise and firing rate regularization exhibit different representational strategies. Networks with low noise and low regularization represent all stimuli including irrelevant ones (C30-C31), while networks with medium noise and medium regularization employ a minimal representational strategy that weakly represents irrelevant stimuli (C33). Statically irrelevant stimuli (width) are more strongly suppressed than dynamically irrelevant stimuli (color) across all parameter settings (C39).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this as a valuable contribution. The editor states the work 'provides a valuable analysis of the effect of two commonly used hyperparameters, noise amplitude and firing rate regularization, on the representations of relevant and irrelevant stimuli.' Reviewer 2 notes 'The article provides a valuable analysis of the effect of two parameters on representations of irrelevant stimuli in trained RNNs.' Reviewer 3 states 'The analyses of the activity of the network model are neat and thorough and provide a clear demonstration of how noise and metabolic costs may affect the information coding in the brain.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Neural recordings from primate PFC show that over learning, XOR (task-relevant) decodability increases (C45), while color decodability during the color period (when dynamically irrelevant) and width decodability (statically irrelevant) both decrease (C48-C49). The strength of relevant coding increases while irrelevant coding decreases (C68-C69), consistent with a minimal representational strategy (C4).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these neural recording findings without challenge. Reviewer 1 notes 'The neural data showed systematic changes in the representations of these features and of the expected reward as the learning progressed.' The editor acknowledges the work is 'based on comparisons to previously published data from the same lab.' No reviewer questions the validity of these learning-related changes in PFC activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Medium noise-medium regularization RNNs show learning-related changes qualitatively similar to PFC: XOR decodability increases (C52), color decodability during the color period decreases (C54), and width decodability decreases (C55), while shape and color decodability during the shape period remain stable (C53).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concerns about the model-data match. The editor states 'The evidence indicating that the mechanisms identified in the RNNs are the same ones operating in PFC was considered incomplete.' Reviewer 1 notes 'The match between the real PFC and the model networks is highly qualitative' and 'comparisons only make sense in terms of *changes* between early and late learning. The time scales, activity levels, and decoding accuracies involved are all different.' Reviewer 2 states 'The change in dynamics of 'color' representations in the prefrontal cortex only qualitatively matches RNN dynamics and may arise from other causes.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The mechanism for suppressing dynamically irrelevant stimuli involves activity-silent, sub-threshold dynamics (C5). In medium noise-medium regularization networks, color inputs drive sub-threshold activity into the negative quadrant during the color period, producing zero firing rate activity (C78) and representing color information in an activity-silent state (C79-C80).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express substantial concerns about this mechanistic claim. Reviewer 2 states 'The mechanism for suppressing dynamically relevant stimuli appears to be incomplete and does not explain clearly enough how representations of 'color' which are suppressed through negative input weights become un-suppressed in the presence of the second variable 'shape'.' Reviewer 3 notes 'There is no way to say that the 2-neuron models are in any way informative of what happens in brain neurons, or even larger artificial networks' and 'because the firing patterns are not shown for large networks, it is not clear if some non-coding artificial neurons will become broadly inhibitory but maintain a relatively high firing rate.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In PFC recordings, firing rates decreased significantly over learning in all task periods (C81), with the decrease most substantial during fixation and color periods. After learning, firing rates during the color period were not significantly higher than fixation (C82), but increased significantly during the shape period (C83).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These firing rate findings from neural recordings are not challenged by reviewers. They are presented as empirical observations that support the metabolic cost interpretation, though reviewers question whether the interpretation is the only possible explanation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mathematical analyses show that maximizing task performance requires strong relevant coding, weak irrelevant coding, and small overlap (C58), while reducing metabolic cost requires both relevant and irrelevant coding to be weak (C59). The analyses predict how noise (\u03c3) and regularization (\u03bb) affect performance, metabolic cost, and coding strength (C60-C66), predictions confirmed by RNN simulations (C67).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the mathematical analyses without challenge. Reviewer 3 states 'The mathematical analyses are rigorous and nicely documented.' Reviewer 1 notes 'The simulations and theoretical calculations indicated that the changes in PFC activity...can be understood as an attempt by the circuitry to use an efficient representational strategy.' No reviewer questions the validity of the mathematical framework itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Differences between model and PFC data may arise from fundamentally different ways brains encode sensory information upstream of PFC compared to abstract sensory inputs in models (C57, C101). Width was very strongly represented in early learning in PFC (C105-C106), possibly because it is a more potent sensory feature (C104). Studying changes in decoding over learning rather than absolute levels helps focus on learning-related features independent of upstream representations (C107).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept this explanation for model-data differences. Reviewer 1 explicitly notes this limitation: 'The match between the real PFC and the model networks is highly qualitative, and as noted by the authors, comparisons only make sense in terms of *changes* between early and late learning.' This acknowledgment by reviewers indicates acceptance of the authors' reasoning about why absolute comparisons are problematic.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Metabolic cost was operationalized through L2 firing rate regularization (C108-C109), which penalizes high overall firing rates. Although L2 is generally weaker than L1 regularization, it still encouraged purely sub-threshold activity (C111). Alternative operationalizations like L1 regularization, weight regularization, or sub-threshold activity regularization are also biologically plausible (C110, C112-C113).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 directly challenges the metabolic cost interpretation: 'Interpretation of results in terms of the effect of metabolic cost on cortical dynamics is not backed up by the presented data/analyses. The change in dynamics of 'color' representations in the prefrontal cortex only qualitatively matches RNN dynamics and may arise from other causes.' This indicates the reviewers are uncertain whether the L2 regularization truly captures metabolic constraints or whether other factors could explain the results.",
+    "result_type": "MINOR"
+  }
+]

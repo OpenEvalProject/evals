@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C91",
+      "C92"
+    ],
+    "result": "Action potentials annihilate at collision sites and produce a distinct monophasic extracellular potential spike, a phenomenon observed across multiple experimental systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30, C91, and C92 collectively establish that AP annihilation produces a local discharge with a characteristic monophasic extracellular signature. This is supported by direct experimental measurements (C2, C30, C91) and corroborated by historical observations across systems (C92). The experimental data in Figures 1 and 3 clearly show the transition from biphasic to monophasic potentials at collision sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C72",
+      "C75",
+      "C36",
+      "C95"
+    ],
+    "result": "The Tasaki-Matsumoto (TM) model accurately predicts the discharge from annihilating action potentials, while the Hodgkin-Huxley (HH) model fails to capture both the magnitude and temporal dynamics of this discharge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C72, and C75 are directly supported by quantitative comparisons shown in Figure 3, where the TM model shows excellent agreement with experimental discharge measurements while the HH model significantly underestimates the effect. Claims C36 and C95 provide literature support for known limitations of the HH model in describing rapid membrane dynamics. The experimental validation is rigorous with multiple recording sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C41",
+      "C42",
+      "C90"
+    ],
+    "result": "AP annihilation at axon terminals generates a nonzero discharge that acts as a strong local current injection, producing inhomogeneous electric fields that drive ephaptic coupling between neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13, C41, C42, and C90 form a coherent mechanistic explanation supported by both experimental measurements and theoretical modeling. The discharge mechanism is demonstrated experimentally (C2, related result), and the theoretical framework linking discharge to ephaptic coupling through inhomogeneous fields is well-established through cable equation analysis. Figure 3 provides quantitative support for the discharge magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The TM/RTM models predict geometry-dependent ephaptic coupling effects, including strong inhibition in end-to-shaft configurations and amplified coupling with boutons, with depolarization occurring approximately 1 \u03bcm from target tips in end-to-end geometries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47, C58, C59, and C60 describe specific predictions from computational simulations shown in Figure 4. The models make clear, testable predictions about spatial patterns of excitation and inhibition. While these are computational predictions rather than direct experimental validations, they follow logically from the validated TM/RTM framework and are internally consistent with cable equation physics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C77",
+      "C80",
+      "C81",
+      "C52"
+    ],
+    "result": "The RTM model predictions for Basket cell-Purkinje cell ephaptic coupling show partial agreement with experimental data from Blot and Barbour 2014, with full agreement achieved when incorporating non-excitable terminal segments representing the Pinceau structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C77, C80, C81, and C52 describe the comparison with established experimental data. Figure 5 shows that the basic model predicts about half the observed modulation (C80), but incorporating known anatomical features (non-excitable Pinceau segments, C81) brings predictions into close agreement with experimental observations. The biphasic modulation is consistent with the RTM framework (C52). This represents strong validation against independent data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C37",
+      "C38"
+    ],
+    "result": "The TM model provides a minimal three-parameter framework sufficient to describe ephaptic coupling between neurons through the cable equation, which applies to both source and target cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C26, C37, and C38 establish the theoretical foundation for using the TM model to predict ephaptic coupling. The cable equation framework is well-established (C37, C38), and the experimental validation of the TM model for AP propagation and annihilation (other results) supports its sufficiency for describing ephaptic coupling (C25, C26). The three-parameter simplicity is a strength demonstrated throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The boundary condition of zero axial current at collision sites is experimentally accessible and theoretically equivalent to the boundary condition at axon terminals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 establish the methodological foundation for using collision experiments to study terminal behavior. C27 is supported by multiple citations and the experimental design shown in Figure 1. C28 is a theoretical statement about cable models supported by citation (Spach and Kootsey, 1985) and is physically sound based on symmetry arguments. This equivalence is central to the experimental strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The magnitude of delayed depolarization in ephaptic coupling depends on AP repolarization time course at the source, potentially providing a mechanism for presynaptic modulation of postsynaptic activity through AP width variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 is supported by simulations in Figures 4C and 5, showing that RTM predictions vary with repolarization time constant. However, C50 and C52 involve speculation about mechanisms, and C51 references experimental observations that could have alternative explanations. The authors acknowledge this requires further investigation. The computational predictions are sound, but experimental validation of the proposed mechanism is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Previous numerical computations of ephaptic coupling have relied on the HH model, which is unsuitable for predicting effects of AP annihilation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by the demonstrated failure of the HH model to predict discharge magnitude (C75, Figure 3D) and by the authors' analysis showing that virtually all prior computational work used HH-based approaches. This represents a critical assessment of the field that is justified by the experimental evidence presented. However, the claim about 'virtually all' computations could benefit from more systematic literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C79"
+    ],
+    "result": "Propagating action potentials produce balanced positive and negative currents that cause minimal modulation in parallel target neurons, first hyperpolarizing then depolarizing the target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C79 describe the effects of propagating (non-annihilating) APs. C40 is based on theoretical considerations of current conservation, while C79 provides computational evidence from Figure 5A showing minute modulation. This serves as an important control demonstrating that annihilation is necessary for strong ephaptic coupling. The physics is sound and the simulations are consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The earthworm ventral nerve cord contains two giant fibers (MGF and LGF) that can be distinguished by stimulation threshold and propagation velocity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C69 describe basic anatomical and methodological facts about the experimental preparation. C68 is established anatomical knowledge, and C69 describes the experimental approach for fiber identification. These are standard methods for working with this preparation and are adequately described in the Materials and methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Individual ephaptic coupling events produce small (tens of \u03bcV) depolarizations, but synchronized input from thousands of dendrites could produce mV-range signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 makes a reasonable inference about cumulative effects based on linear summation, but this extrapolation from single-synapse simulations to thousands of inputs lacks direct experimental validation. The assumption of linear summation may not hold for large numbers of inputs, and spatial and temporal integration complexities are not addressed. This represents plausible speculation rather than demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Endogenous electric fields from ephaptic coupling might influence molecular processes, structural changes, neural plasticity, and synapse formation through mechanisms like dielectrophoresis and Hebbian-like interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53 and C54 cite established knowledge about electric field effects on cells and molecules, but claims C55, C56, and C57 are explicitly speculative (evidence_type includes SPECULATION). While the speculation is grounded in known phenomena, there is no direct experimental evidence linking the measured ephaptic coupling to these proposed long-term effects. These represent interesting hypotheses for future work rather than supported conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C65"
+    ],
+    "result": "Bidirectional AP propagation and collisions may be more common than previously assumed and could serve computational functions, with similarities to delay-line processing in auditory neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61 and C62 are speculative (supported by citations but marked as SPECULATION in evidence_type). Claim C65 draws an intriguing parallel to MSO neuron data, but this comparison is qualitative and the similarity could be coincidental. While the speculation is interesting and grounded in the authors' findings, it lacks direct experimental support for the proposed computational roles of collisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "Despite decades of knowledge about ephaptic coupling, a quantitative physical description has been missing, even though the phenomenon is ubiquitous and may contribute broadly to neural communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C16 accurately identifies a gap in the literature that the current work addresses. Claim C17 about ubiquity is partially speculative but reasonable given the universal presence of axon terminals. The authors successfully provide the missing quantitative framework through their TM/RTM modeling approach, as demonstrated by other results. This contextualizes the significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Ephaptic coupling is ubiquitous and can span spectacular spatial scales, bridging up to hundreds of microns in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C67 are supported by citations to experimental observations (Kriebel, 1968; Chiang et al., 2019; Shivacharan et al., 2019). While C66 makes a broad claim about ubiquity, this is reasonable given that all neurons have axon terminals where APs annihilate. The spatial extent claim (C67) is directly supported by cited experimental work. These claims contextualize the potential importance of the phenomenon.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "\u03bcGUIDE is a general Bayesian framework that uses a novel deep learning architecture combining an MLP module for automatic feature selection and an NPE module using normalizing flows to estimate posterior distributions of tissue microstructure parameters from any biophysical model without acquisition constraints.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm the framework's novelty and generalizability. The editor states it is 'an important novel deep-learning framework' with 'convincing evidence for generalizing the method to use data from different protocol acquisitions and work with models of varying complexity.' Reviewer 1 confirms the framework 'has two modules' and notes its promise. Reviewer 2 highlights that 'the whole framework allows the user to avoid manually defining summary statistics' and validates it across 'three different biophysical models.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C19",
+      "C37",
+      "C38",
+      "C39",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "\u03bcGUIDE bypasses the computational expense of conventional Bayesian approaches like MCMC, being approximately 1500 times faster (0.02s vs 29.3s per voxel), enabling efficient posterior distribution estimation through its amortized nature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly notes 'superior performance to conventional Bayesian approaches,' and Reviewer 1 states 'By using the NPE module, the repetitive evaluation of the forward model is avoided, thus making the framework computationally efficient.' The timing comparisons and computational advantages are accepted without challenge by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C80",
+      "C82"
+    ],
+    "result": "\u03bcGUIDE successfully identifies and highlights model degeneracies that increase with model complexity, with the Ball&Stick model showing no degeneracy, the Standard Model showing some degeneracy at tissue boundaries, and the extended-SANDI model showing the highest degeneracy in complex white matter regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'The results show the framework has promise in identifying degeneracy,' and Reviewer 2 emphasizes that 'The methodology allows the quantification of the inherent model's degeneration' as a main contribution. Reviewer 2 further notes the work 'promotes tackling, analyzing, and considering the degenerated nature of the most used models in brain microstructure estimation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C40",
+      "C41",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C42"
+    ],
+    "result": "\u03bcGUIDE produces sharper, less biased posterior estimations compared to MCMC and manually defined summary statistics, with the MLP module extracting additional information that results in 5.2-fold lower bias, 2.6-fold lower uncertainty, and 2.7-fold lower ambiguity, generalizing the method of Jallais et al. 2022 to any forward model and acquisition protocol.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor confirms 'superior performance to conventional Bayesian approaches,' and Reviewer 1 states 'The results show that the MLP module can capture additional information compared to manually defined summary statistics.' Reviewer 2 validates that 'The authors validated their method well with the state-of-the-art' and highlights the improvement over Jallais et al. (2022) as a main contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C67"
+    ],
+    "result": "In the epilepsy participant data, axonal signal fraction estimates within the lesion show low uncertainty and high confidence, while orientation dispersion index estimates show high uncertainty suggesting low confidence, demonstrating how uncertainty quantification can help clinicians interpret microstructure changes in diseased tissue.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While no reviewer explicitly discusses the epilepsy example in detail, Reviewer 2 acknowledges the authors 'tested the proposal by tackling three different biophysical models for brain tissue and using data with characteristics commonly used by the diffusion-MR-microstructure research community,' implicitly accepting the clinical application. The clinical utility claim is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "\u03bcGUIDE was validated using numerical simulations on three biophysical models (Ball&Stick, Standard Model, extended-SANDI) of increasing complexity and applied to dMRI data from healthy volunteers and epilepsy participants acquired on a Connectome 3T scanner with specific acquisition parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'The authors tested the proposal by tackling three different biophysical models for brain tissue and using data with characteristics commonly used by the diffusion-MR-microstructure research community' and 'The authors validated their method well with the state-of-the-art.' The methodological details are accepted without critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "\u03bcGUIDE does not rely on acquisition constraints and can be extended to different organs and imaging modalities, though it remains model-dependent and requires predetermined feature numbers (typically matching the number of parameters).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly notes 'convincing evidence for generalizing the method to use data from different protocol acquisitions,' and Reviewer 2 states the framework 'capable of automatically learning feature selection from different acquisition protocols.' The limitations are stated by the authors and not challenged by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "\u03bcGUIDE outputs three measures from posterior distributions: Maximum A Posteriori (MAP) as the most likely estimate, an uncertainty measure quantifying dispersion using interquartile range, and an ambiguity measure using Full Width at Half Maximum, with degeneracy identified by multiple local maxima.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges the framework provides 'rich probabilistic information (uncertainty and degeneracy) on the parameters,' and Reviewer 2 highlights 'The methodology allows the quantification of the inherent model's degeneration' as a contribution. The specific measures are accepted without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The use of simulation-based inference methods for posterior distributions in dMRI was first introduced by Jallais et al. 2022 for grey matter, with recent application to crossing fibers by Karimi et al. 2024; this work and Jallais et al. use MAFs while Karimi et al. use MDNs, with MAFs showing superior performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledges 'The authors improve the work of Jallais et al. (2022)' as context for the contribution. The historical context and methodological comparisons are presented with citations and not disputed by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Uncertainty quantification from \u03bcGUIDE can be used in large population studies for group statistics and outlier detection, and can guide acquisition optimization, with noise and inadequate acquisition parameters being sources of variance that decrease confidence in estimates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about potential applications and sources of uncertainty are presented as discussion points and implications. Reviewer 2 notes the work 'showed the utility of their proposal by computing complex parameter descriptors automatically,' implicitly accepting the utility claims. No reviewer challenges these forward-looking statements.",
+    "result_type": "MINOR"
+  }
+]

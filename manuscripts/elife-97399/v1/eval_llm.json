@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C8",
+      "C42",
+      "C64"
+    ],
+    "result": "Patch-walking, a novel approach where one pipette is cleaned and reused while maintaining others, theoretically enables 80-92% more probed connections for experiments with 10-100 cells and 2-8 pipettes compared to traditional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mathematical modeling (C8, C42) provides theoretical support showing 80-92% improvement, which is derived from explicit equations comparing traditional and patch-walking methods. The core methodological innovation (C2, C3) is clearly described and the theoretical advantage (C64) follows logically from the mathematical framework presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The coordinated dual-patching robot achieved 71 successful whole cell recordings from 136 attempts (52.2% success rate) across 7 animals over 7 days, with success rates comparable to previous automated and manual patch clamp systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data (C4, C5, C46, C47) directly reports sample sizes and success rates. Comparisons to literature (C48, C49) appropriately contextualize performance. The conclusion that coordination does not deteriorate success rate (C50) is supported by comparison with uncoordinated experiments (C44, C45), though the sample sizes differ (33 vs 136 attempts).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Using patch-walking, 29 paired recordings (58 bidirectional probed connections) were obtained at an average intersomatic distance of 91 \u03bcm, yielding 3 synaptic connections, which represents 9 more paired recordings than would have been achieved with traditional methods for the same 71 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data (C6, C7, C55, C58) directly reports the number of connections found and recordings obtained. The comparison to traditional methods (C56, C57) uses straightforward arithmetic. The probabilistic analysis (C59, C60, C61) appropriately contextualizes the findings using published connection probabilities, though the actual number found (3) is lower than predicted, which the authors acknowledge (C77, C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Paired patch clamp recordings were achieved in an average of 12.6\u00b17.5 minutes at an average intersomatic distance of 91.6\u00b10.2 \u03bcm, with cells held in whole cell configuration for up to 45 minutes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are direct experimental measurements (C52, C53, C54) reported with appropriate statistics. The data is consistent with the experimental design and provides important performance metrics for the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C62",
+      "C63"
+    ],
+    "result": "Recordings were performed in somatosensory and visual cortices (L2/3, L4, L5), with one representative connection found between cells 1 and 2, though cell 7 showed decreased health likely due to experimental duration and tissue disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The brain regions (C51) and connection data (C63) are directly reported from experiments. The observation about cell 7 (C62) includes both data and speculation about causation, which is appropriately qualified as 'likely due to' rather than definitively stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "In an initial dual-patch throughput experiment without coordination, 33 patching attempts yielded success rates of 44.4% (pipette 1) and 46.7% (pipette 2), similar to manual and automated patch clamp systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental data (C44) directly reports attempts and success rates. The comparison to literature (C45) appropriately contextualizes the performance. This serves as a baseline for evaluating the coordinated system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Patch-walking is recommended for searching local synaptic connections with small numbers of pipettes, offering advantages including reduced tissue damage, time savings, and enabling more recordings before cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These recommendations and advantages (C65-C68) logically follow from the methodological approach and experimental results. The reduced tissue damage (C66) and time savings (C67) are reasonable inferences from the method requiring fewer pipette insertions and movements. The claim about more recordings before cell death (C68) is a logical consequence of the efficiency improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The number of connections found (3 out of 29 paired recordings) was lower than predicted by Perin and Markram 2013, hypothesized to be due to biological variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the comparison to predictions (C77) is appropriate, the explanation (C78) is explicitly speculative. No additional data or analysis is provided to support the biological variation hypothesis over other potential explanations such as methodological factors, tissue quality, or the effects of the patch-walking procedure itself on connection detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Tissue deformation from pipette maneuvering often disturbs pipettes in whole cell configuration, presenting a challenge for scaling beyond two pipettes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is presented as an observed technical challenge (C79) based on experimental experience. It provides important context for the limitations of the method and is consistent with the observation of decreased cell health in longer experiments (C62).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Scaling patch-walking beyond two pipettes requires careful consideration of pipette collisions and cell-pipette assignments, with recommendations for optimal route-planning algorithms and inter-cell distance thresholds (<200 \u03bcm for \u226510% connection probability).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cautions about scaling (C69) are reasonable based on the experimental experience. The suggestion for route-planning algorithms (C70) is appropriate future work. The distance threshold recommendation (C71) is appropriately based on cited literature (Perin et al., 2011).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C76",
+      "C86"
+    ],
+    "result": "Patch-walking can make multi-pipette patch-clamp electrophysiology more accessible to laboratories, offering throughput improvements especially for paired recordings, and serving as a useful tool for researchers new to single-cell electrophysiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about accessibility and utility (C72, C76, C86) are reasonable conclusions based on the demonstrated performance improvements. The specific example (C73) appropriately cites relevant work, though the claim about reducing time from 'months to days' is somewhat speculative without direct comparison data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Future applications of patch-walking could include channelrhodopsin-assisted circuit mapping, fluorescent-targeted cells, deep cell patching with secondary pipettes, manual implementation, morphological studies, and integration with machine learning for cell type detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriately presented as speculative future directions (C80-C85) rather than demonstrated capabilities. The suggestions are reasonable extensions of the method and some are supported by relevant citations (C80, C85). These represent appropriate forward-looking discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A dual-pipette automated patch clamp apparatus was constructed with standard electrophysiology equipment, custom pressure control system, automated manipulators, DIC microscopy, and machine vision-based calibration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The apparatus description (C43, C87-C105) provides comprehensive technical details with appropriate equipment specifications and citations to prior work. The design rationale (C98, C103) is clearly explained. This represents adequate methodological documentation for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Brain slice preparation followed standard protocols using male C57BL/6 mice (P19-P36), with recordings performed in visual and somatosensory cortices using borosilicate pipettes and K-gluconate-based intracellular solution, with ethical approval from Georgia Tech IACUC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methods (C106-C118) provide comprehensive details of animal procedures, slice preparation, solutions, and recording conditions. Ethical approval is documented (C106). The protocols are standard and appropriately detailed for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The patch-walking algorithm assigns cells to pipettes based on distance from home positions, maintains one pipette in whole cell while the other attempts new recordings, and includes automated protocols for neuron hunting, gigasealing, break-in, and whole cell recording.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The algorithmic description (C119-C139) provides comprehensive details of the patch-walking procedure with appropriate citations to prior work for established techniques. The cell assignment strategy (C124-C127) and coordination logic (C128-C133) are clearly described and consistent with the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Terminology is defined: paired recording (simultaneous patch clamp of two cells), probed connections (twice the paired recordings for bidirectional testing), and possible connections (theoretical upper limit), with probed connections practically less than possible connections due to 30-80% patch clamp yield.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The definitions (C140-C143) are clear and appropriate for the study. The relationship between probed and possible connections (C143) is explained with realistic success rate ranges based on experimental experience.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Recording quality criteria included access resistance <40 M\u03a9 (stopped if >50 M\u03a9), with connectivity testing performed bidirectionally using current clamp stimulation (5 action potentials at 20 Hz) and voltage clamp recording (-70 mV), following protocols similar to Perin et al. 2011 and the Allen Institute.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quality control criteria (C144-C146) are appropriate and consistent with cited literature. The connectivity testing protocol (C147-C151) is adequately described and appropriately references established methods. The manual cable switching (C148, C151) is a practical limitation clearly documented.",
+    "result_type": "MINOR"
+  }
+]

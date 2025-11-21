@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "TIPE interacts with PKM2 and promotes its dimerization and nuclear translocation. Co-IP/MS identified PKM2 as a TIPE-binding partner (C37), confirmed by multiple interaction assays (C38-C41). Domain mapping showed that TIPE amino acids 1-100 and 101-198 interact with PKM2 domains NA1BA2, A1BA2, and NA1B (C42-C43). TIPE did not affect PKM2 expression levels (C44) but increased dimeric PKM2 formation (C45-C46) and promoted PKM2 nuclear translocation (C47-C49), which was blocked by the PKM2 dimer suppressor TEPP-46.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The interaction between TIPE and PKM2 is well-supported by multiple orthogonal approaches including Co-IP/MS, GST-pulldown, Duolink proximity ligation, and domain mapping (C37-C43). The functional consequence\u2014PKM2 dimerization and nuclear translocation\u2014is demonstrated by BN-PAGE and fractionation experiments (C45-C49), with pharmacological validation using TEPP-46. The data converge to support the central mechanistic claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "TIPE specifically promotes PKM2 phosphorylation at Ser37 in an ERK-dependent manner. TIPE manipulation altered PKM2 Ser37 but not Tyr105 phosphorylation (C62-C64). The S37A mutation blocked TIPE-PKM2 interaction and PKM2-HIF-1\u03b1 interaction (C65-C67). The ERK inhibitor U0126 prevented TIPE-induced PKM2 Ser37 phosphorylation (C70), consistent with prior knowledge that PKM2 Ser37 phosphorylation is ERK1/2-dependent (C69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim that TIPE promotes PKM2 Ser37 phosphorylation via ERK is supported by western blot data showing phosphorylation changes with TIPE manipulation (C62-C64), mutagenesis studies demonstrating functional importance of Ser37 (C65-C67), and pharmacological inhibition with U0126 (C70). However, the claim that TIPE 'phosphorylates' PKM2 is imprecise\u2014TIPE does not directly phosphorylate PKM2 but rather activates ERK signaling, which then phosphorylates PKM2. This mechanistic detail is acknowledged in the discussion but the abstract wording could be misleading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "TIPE promotes HIF-1\u03b1 transcriptional activation in a PKM2-dependent manner. RNA-seq showed TIPE upregulated glycolysis and HIF-1\u03b1 pathway genes (C31). TIPE increased HIF-1\u03b1 expression (C35) and dramatically activated HRE reporter activity (C36, C53), especially when combined with PKM2, and this was reversed by PKM2 knockdown (C54). TIPE upregulated HIF-1\u03b1 target genes LDHA and SLC2A1 in a PKM2-dependent manner (C55). TIPE enhanced PKM2-HIF-1\u03b1 interaction in the nucleus (C56-C59) and increased PKM2 binding to LDHA and SLC2A1 promoters in a dimeric PKM2-dependent manner (C71-C72). The S37A mutation blocked TIPE's effects on HRE activation and target gene expression (C73-C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim is well-supported by multiple lines of evidence including transcriptomics (C31), luciferase reporter assays (C36, C53-C54, C73), qPCR (C55, C74), proximity ligation and Co-IP assays (C56-C59), and ChIP-qPCR (C71-C72). The PKM2-dependence is demonstrated by knockdown and pharmacological experiments, and the requirement for Ser37 phosphorylation is shown by mutagenesis. The data converge to support the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "TIPE promotes melanoma tumorigenesis and glycolysis in a dimeric PKM2-dependent manner. TIPE promoted melanoma growth in vitro and in vivo (C30). Pyridoxine (PKM2 dimer inducer) rescued TIPE knockdown effects on proliferation (C75), while TEPP-46 (PKM2 dimer suppressor) reversed TIPE overexpression effects (C76). Similar results were observed for colony formation (C77) and xenograft growth (C78). ECAR measurements showed that Pyridoxine antagonized TIPE knockdown effects on glycolysis (C79), while TEPP-46 reversed TIPE overexpression effects (C80). Rescue experiments with HIF-1\u03b1 overexpression demonstrated that TIPE promotes proliferation and glycolysis via dimeric PKM2-dependent HIF-1\u03b1 activation (C81-C82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dimeric PKM2-dependence of TIPE's effects is well-supported by pharmacological experiments using Pyridoxine and TEPP-46 (C75-C80) and genetic rescue experiments with HIF-1\u03b1 (C81-C82). The data are internally consistent across multiple assays (proliferation, colony formation, xenografts, ECAR). The use of both gain-of-function (Pyridoxine) and loss-of-function (TEPP-46) approaches strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "TIPE promotes cancer stem cell (CSC) properties in melanoma via dimeric PKM2-dependent HIF-1\u03b1 activation. TIPE increased expression of CSC markers (NANOG, NOTCH, POU5F1, SOX2, BMI-1) and neural crest stem cell markers (NES, SOX10) (C84-C85). TIPE enhanced migration, sphere formation (C86), and chemoresistance to sorafenib (C87). Limiting dilution assays showed TIPE knockdown reduced CSC frequency (C88). TIPE increased CD44+ subpopulations (C89). TEPP-46 reversed TIPE-induced sphere formation and CD44+ populations, and these effects were rescued by HIF-1\u03b1 overexpression (C90-C91).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CSC phenotype is supported by multiple complementary assays including qPCR for stem cell markers (C84-C85), functional assays (C86-C87), limiting dilution xenografts (C88), and FACS analysis (C89). The dimeric PKM2 and HIF-1\u03b1 dependence is demonstrated by rescue experiments (C90-C91). The limiting dilution assay provides strong quantitative evidence for changes in CSC frequency. However, the chemoresistance claim (C87) states TIPE 'increased' chemosensitivity, which appears to be a typographical error given the context\u2014this should likely read 'decreased' sensitivity (increased resistance).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "TIPE expression correlates with PKM2 Ser37 phosphorylation and CSC markers in clinical melanoma samples. TIPE expression was elevated in melanoma compared to benign skin tumors (C92) and higher in metastatic versus primary melanoma (C93). TIPE expression positively correlated with PKM2 Ser37, Ki67, and LDH in tissue microarrays (C94). In xenografts, TIPE, PKM2 Ser37, LDH, and CD44 were coordinately regulated (C95). TCGA analysis showed positive correlations between TIPE and CSC markers BMI1, NANOG, NOTCH1, and POU5F1 (C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clinical correlations are supported by IHC analysis of tissue microarrays (C92-C94), xenograft analysis (C95), and TCGA dataset analysis (C96). The correlations are consistent with the mechanistic findings. However, correlations do not establish causation, and the tissue microarray lacks survival data. Notably, TCGA survival analysis (C115) shows a paradoxical result where higher TIPE expression associates with better prognosis, which contradicts the proposed oncogenic role and is acknowledged but not explained by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C107"
+    ],
+    "result": "TIPE expression correlates with hypoxia score in melanoma. TCGA analysis showed that hypoxia score was significantly related to TIPE expression (C60), and the TIPE higher expression group had a higher hypoxia score than the lower expression group (C61, C107).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between TIPE and hypoxia score is supported by TCGA dataset analysis (C60-C61). This is consistent with the proposed mechanism involving HIF-1\u03b1 activation. However, this is a correlative finding from a single dataset and does not establish causation. The biological significance is unclear given that the experiments were performed under normoxic conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "TIPE expression varies across melanoma cell lines, and TIPE promotes melanoma tumorigenesis. A375 and A875 cells had higher TIPE expression than G361 and MM96L cells (C29). TIPE promoted melanoma tumorigenesis both in vitro and in vivo (C30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential expression across cell lines (C29) is supported by western blot (Figure 1\u2014figure supplement 1a). The tumorigenic effects (C30) are supported by CCK8, colony formation, and xenograft experiments (Figure 1\u2014figure supplement 2). These are foundational observations for the study's experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The TIPE/PKM2/HIF-1\u03b1 signaling pathway plays a pivotal role in promoting CSC properties by facilitating glycolysis and represents a promising therapeutic target for melanoma. This is the main conclusion synthesizing all experimental findings (C113-C114).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overall mechanistic model is well-supported by the convergent evidence from multiple experimental approaches. However, the therapeutic potential (C114) is speculative and not directly tested. The paradoxical survival data from TCGA (C115) raises questions about the clinical relevance. Additionally, the authors acknowledge limitations including lack of isotope tracing experiments to definitively track glucose metabolism and absence of patient survival data from their tissue microarray.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Elevated TIPE expression is associated with more favorable prognosis in melanoma patients according to TCGA dataset analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This survival analysis result (C115) directly contradicts the proposed oncogenic role of TIPE demonstrated throughout the manuscript. The authors acknowledge this paradox but provide no mechanistic explanation. This could reflect dataset-specific biases, differences between in vitro/xenograft models and human disease, or context-dependent functions of TIPE. The discrepancy undermines confidence in the clinical relevance of the findings and requires further investigation.",
+    "result_type": "MAJOR"
+  }
+]

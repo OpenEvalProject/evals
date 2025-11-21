@@ -1,0 +1,219 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes that while classic supervised learning models predict integration when stimuli share outcomes, recent empirical studies show that pairing stimuli with shared associates can cause differentiation in the hippocampus, challenging supervised learning theories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C10 collectively establish the empirical challenge to supervised learning models through multiple cited studies (Favila et al., 2016; Schlichting et al., 2015; and others). The claims accurately represent both the theoretical predictions and the contradictory empirical findings, supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The Nonmonotonic Plasticity Hypothesis (NMPH) proposes a U-shaped relationship between neural activity and synaptic weight change, predicting no change at low competitor activity, differentiation at moderate activity, and integration at high activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 describe the theoretical framework of the NMPH with appropriate citations (BCM learning rule, Norman et al., 2006). The U-shaped function is clearly articulated with specific predictions for different activity levels, supported by Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors constructed a neural network model using only unsupervised U-shaped learning (not supervised learning) with four layers (category, item, hidden, output) with bidirectional connections and recurrent connections in the hidden layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 provide a clear description of the model architecture and design choices. The model construction is explicitly documented with appropriate citations (Emergent framework, Aisa et al., 2008), and the architectural details are consistent throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The model implements inhibitory oscillations through a sinusoidal function to modulate competitor activity, allowing competitors to activate when inhibition is lowered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 describe a key mechanism of the model with appropriate citations to prior theoretical work (Norman et al., 2006, 2007; Singh et al., 2022). The implementation is clearly described and is central to the model's ability to produce differentiation and integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The model qualitatively replicates the key findings from Chanales et al., 2021, showing that low color similarity leads to accurate recall, moderate similarity (24\u00b0) produces repulsion, and high similarity (6\u00b0) eliminates repulsion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 accurately describe both the empirical findings from Chanales et al., 2021 (C30-C32) and the model's ability to replicate these patterns (C33). The model results are supported by Figure 4A showing the U-shaped relationship between similarity and representational change.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "In the model simulation of Chanales et al., 2021, the repulsion effect in the 2/6 overlap condition is asymmetric, with one pairmate anchoring in place while the other shifts its representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 describes a novel prediction from the model, supported by Figure 4B and 4E showing asymmetric distortion patterns. The asymmetry is a consistent finding across model runs and represents an important mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The model predicts that differentiation requires a high learning rate and, when it occurs, happens abruptly rather than gradually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 describe key boundary conditions for differentiation in the model, supported by Figure 6A-B. The abruptness of differentiation is demonstrated by the rapid transition between epochs when learning rate is sufficient, and this prediction is supported by empirical data from Wanjia et al., 2021 (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "In the model, when differentiation occurs on individual runs, it manifests as anticorrelated representations between pairmates, with aggregate differentiation effects reflecting the proportion of runs showing anticorrelation versus integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 describes an important mechanistic prediction from the model, supported by Figure 6B showing bimodal distributions. The anticorrelation arises from the severing of shared units and represents a testable prediction, though the authors acknowledge challenges in measuring this empirically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The model successfully accounts for the Favila et al., 2016 findings, where scenes paired with different faces showed orthogonalized hippocampal representations, while scenes paired with the same face showed differentiation (less similar to each other than to non-pairmates).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 accurately describe the empirical findings from Favila et al., 2016 (C38-C40) and demonstrate that the model replicates these patterns (C41). The model results are supported by Figure 8A showing differentiation in the same-face condition, with the mechanism explained through shared associate-mediated competitor activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The model replicates the Schlichting et al., 2015 findings, showing that interleaved learning leads to differentiation while blocked learning leads to integration, with different brain regions showing different patterns based on their inhibitory dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 accurately describe the empirical findings from Schlichting et al., 2015 (C42-C45) and show that the model captures the key pattern where learning curriculum affects representational change (C46). Figure 10A-D demonstrates how the model accounts for regional differences through modulation of oscillation amplitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The model predicts that differentiation will be more evident in hippocampus than neocortex due to higher hippocampal learning rates, a prediction supported by numerous empirical studies, though some studies have found neocortical differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 present a testable prediction from the model (C47) that is well-supported by cited empirical evidence (C48), while acknowledging exceptions (C49). The prediction follows logically from the model's finding that differentiation requires high learning rates, combined with established knowledge about hippocampal versus neocortical learning rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The model predicts that within the hippocampus, subregions with sparser activity (dentate gyrus, CA3) will be more prone to differentiation, a prediction supported by multiple empirical studies showing greater differentiation in DG/CA3 than CA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 present a mechanistic prediction from the model (C50) that is well-supported by multiple cited empirical studies (C51-C52). The prediction follows from the model's sensitivity to competitor activity levels, with sparser coding limiting competitor activation and promoting differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Wanjia et al., 2021 found that differentiation was not evident before participants could confidently discriminate pairmates but was clearly evident after, supporting the model's prediction of abrupt differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 describes an empirical finding that directly supports the model's prediction about abrupt differentiation (C36). This represents strong convergent evidence for the model's predictions, though it is a single study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The U-shaped plasticity function is supported by three lines of evidence: neurophysiological studies showing activity-dependent bidirectional plasticity, human neuroscience studies relating memory activation to subsequent memory, and fMRI studies showing U-shaped relationships between similarity and representational change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56 provide empirical support for the core NMPH learning rule from multiple methodological approaches (neurophysiology, fMRI/EEG pattern classification, fMRI similarity analysis). Each line of evidence is supported by appropriate citations, providing convergent support for the U-shaped function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The model makes novel predictions that differentiation driven by NMPH will be rapid, asymmetric, and give rise to anticorrelated representations in the source brain region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 summarize the key novel predictions from the model. These predictions are supported by the simulation results presented throughout the manuscript (Figures 4, 6, 8, 10) and represent testable hypotheses for future empirical work. The predictions follow logically from the model's mechanisms.",
+    "result_type": "MAJOR"
+  }
+]

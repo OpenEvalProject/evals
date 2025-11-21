@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The authors determined cryo-EM structures of CBC (3.38 \u00c5) and CBC-ALYREF (3.22 \u00c5) complexes, revealing that the RRM domain of ALYREF directly contacts both NCBP1 and NCBP2 subunits of the CBC through specific molecular interfaces involving 16, 18, and 6 residues of mALYREF2, NCBP1, and NCBP2, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 establish the resolution of both structures. Claims C8, C38, C43-C51 provide detailed structural characterization of the CBC-ALYREF interface with specific residue interactions. The cryo-EM data quality metrics (C117-C118) and model validation statistics in Table 1 support the structural conclusions. The structures are validated by FSC curves, 3DFSC analysis, and comparison to prior crystal structures (C37).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C33",
+      "C56",
+      "C57",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Biochemical validation demonstrates that ALYREF directly interacts with the CBC, primarily through the RRM domain binding to NCBP1, with mutations in key interface residues (mut-1 and mut-2) reducing CBC binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C33 show direct interaction by GST pull-down. Claims C56-C57, C61 demonstrate that the RRM domain is necessary but not sufficient for full binding strength. Claims C62-C65 establish NCBP1 as the major binding partner through both structural (C62) and biochemical (C63-C64) evidence. The mutagenesis data (C61) validates the structural interface observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C79",
+      "C80"
+    ],
+    "result": "Structural comparison reveals that viral proteins HSV-1 ICP27 and HVS ORF57 target the RRM domain of ALYREF with interfaces incompatible with CBC binding, suggesting a mechanism where viruses hijack host mRNA export while disrupting CBC-ALYREF interaction, though ALYREF may retain CBC binding through the WxHD motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by structural overlays shown in Figure 5B and Figure 5\u2014figure supplement 1, demonstrating steric incompatibility. Claim C79 is an inference supported by in vivo data (C78) showing ORF57 can form complexes with both ALYREF and CBC. The proposed dual hijacking/disruption mechanism (C80) is a reasonable inference from the structural data, though direct functional validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C103"
+    ],
+    "result": "The CBC and EJC recognize ALYREF through mutually exclusive binding sites involving both the WxHD motif and RRM domain, suggesting that EJC-ALYREF complex formation occurs after ALYREF dissociates from the CBC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 is supported by structural overlay data in Figure 6B showing incompatible interfaces between CBC-ALYREF and EJC-ALYREF. Claim C95 provides biochemical evidence from prior literature. Claims C96 and C103 synthesize the structural and biochemical data to propose a sequential binding model. The mutually exclusive binding is well-supported by structural data, though the temporal sequence (C96) is an inference rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Structural overlay shows no steric hindrance between SRSF1 and ALYREF on the CBC, suggesting potential for coordinated function in mRNA export, where SRSF1 deposited on exons after splicing interacts with NXF1-NXT1 in a phosphorylation-regulated manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is directly supported by structural overlay in Figure 6A. Claims C89-C93 are supported by citations to prior literature establishing SRSF1 function and regulation. However, the manuscript does not provide direct experimental evidence for the existence or function of a CBC-ALYREF-SRSF1 ternary complex in vivo, which the authors acknowledge requires further study. The structural compatibility is demonstrated, but functional coordination remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Mouse ALYREF2 (mALYREF2, residues 1-155) exhibits better solubility than human ALYREF while maintaining nearly identical conserved motifs (UBMs, WxHD, RRM domain), making it suitable for structural studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by experimental observations of protein behavior during purification. Claim C32 is validated by sequence alignment data in Figure 1\u2014figure supplement 1. The functional equivalence is further supported by C33 showing mALYREF2 directly interacts with CBC. This methodological choice is well-justified and validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The WxHD motif (residues 87-90) in the N-terminal region of ALYREF may represent a second CBC binding site, as its mutation reduces CBC interaction, though this interface remains structurally uncharacterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is factual (sequence location). Claim C59 is supported by citation to prior literature (Gromadzka et al., 2016). However, claim C60 is explicitly speculative ('may represent') and the authors acknowledge this interface 'remains to be characterized.' The N-terminal region including the WxHD motif showed no traceable density in the cryo-EM structure (C39), preventing direct structural validation of this proposed second binding site.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The CBC may function as a landing pad for ALYREF recruitment to the 5' end of mRNA, after which ALYREF could transfer to other sites along the mRNA, with NXF1-NXT1 loading likely occurring after DDX39B dissociation from ALYREF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 is an inference based on absence of electron density. Claim C71 is an inference from yeast data (C70) that may not directly apply to human system. Claims C72-C73 are speculative models supported by citation (C72) but lacking direct experimental validation in this study. While these models are reasonable interpretations of the structural data and prior literature, they represent hypotheses rather than demonstrated mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Cancer-associated mutations in CBC residues that interface with ALYREF (K330N in NCBP1, R105C and I110M in NCBP2) could reduce ALYREF interaction and dysregulate mRNA export, while ALYREF is frequently upregulated in cancerous tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is supported by citations to cancer databases. Claim C101 is supported by citation to prior literature. However, claim C100 is explicitly speculative ('could reduce') with no experimental validation of the functional effects of these mutations on ALYREF binding or mRNA export. The structural data provides a plausible mechanism, but the causal link to cancer pathogenesis remains undemonstrated and requires future studies as the authors acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "The positively charged surface on mALYREF2 near the m7G site could serve as an RNA binding site for nucleotides following the cap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is explicitly speculative ('Conceivably...could serve') based on structural features (C54). While the presence of a positively charged surface is demonstrated, no RNA binding experiments or structural data with RNA are provided to validate this proposed function. This remains a hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "In yeast, Yra1 (ALYREF ortholog) is enriched at the 5' region of mRNA, raising the possibility that Yra1 localization could be mediated by the CBC despite lacking a WxHD motif.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C106 is supported by citation to prior transcriptome-wide mapping study. However, claim C107 is explicitly speculative ('raising the possibility') and contradicts the established differences between yeast and human systems (C104-C105). No experimental evidence is provided to support CBC-mediated Yra1 recruitment in yeast. This remains an untested hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10"
+    ],
+    "result": "In eukaryotes, RNA Pol II transcripts are modified with a 5' m7G cap recognized by the CBC (NCBP1/NCBP2), which regulates gene expression at multiple levels including transcription, splicing, and export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established scientific knowledge about eukaryotic RNA processing and CBC function, supported by the evidence_type of KNOWLEDGE and CITATION. They provide essential background context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C66",
+      "C67"
+    ],
+    "result": "The CBC promotes mRNA export through interaction with ALYREF, which links the TREX complex to the 5' end of mRNA via direct interactions with DDX39B, with this pathway being conserved from yeast to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are primarily supported by citations to prior literature (evidence_type: CITATION) and represent established knowledge about the CBC-ALYREF-TREX pathway. While this provides important context for the structural work, these are not novel findings from this manuscript. The current work provides the first structural basis for these previously known interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C75",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "ALYREF and associated export machinery are targeted by various viral proteins including herpesvirus ICP27/ORF57, influenza A virus NS1/NP, and SARS-CoV-2 Nsp1, representing a common viral strategy to hijack host mRNA export.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to prior literature (evidence_type: CITATION, KNOWLEDGE) and provide important context for understanding the biological significance of the CBC-ALYREF structure. However, they represent established knowledge rather than novel findings from this study. The novel contribution is the structural explanation for how these viral proteins might disrupt CBC-ALYREF interaction (covered in a separate result).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Protein constructs were expressed in insect cells (CBC) or E. coli (ALYREF variants), and cryo-EM data were collected on a Glacios microscope with Falcon 4i detector, yielding 5858 movies processed with cryoSPARC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims describe the experimental methods used and are directly supported by the Materials and Methods section. They represent standard methodological details necessary for reproducibility but are not scientific findings.",
+    "result_type": "MINOR"
+  }
+]

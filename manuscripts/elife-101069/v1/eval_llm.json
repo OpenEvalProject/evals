@@ -1,0 +1,266 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "\u03bcGUIDE is a general Bayesian framework that combines a Multi-Layer Perceptron (MLP) for automatic feature extraction with a Neural Posterior Estimator (NPE) using normalizing flows to estimate posterior distributions of tissue microstructure parameters from any biophysical model without acquisition constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C18, C22, C23, C24, and C25 collectively describe the core architecture and generalizability of \u03bcGUIDE. The framework is demonstrated on three models of increasing complexity (C20), applied to real data (C21), and the architectural components are clearly defined with appropriate citations. The claim of generalizability (C22) is supported by the demonstrated applicability across multiple models without model-specific summary statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C37",
+      "C38",
+      "C39",
+      "C60",
+      "C61"
+    ],
+    "result": "\u03bcGUIDE is approximately 1500 times faster than MCMC (0.02s vs 29.3s per voxel), bypassing the high computational cost of conventional Bayesian approaches through its amortized inference approach where training is performed once and posterior estimation is then efficient for all voxels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, and C39 provide specific timing comparisons with MCMC showing the ~1500-fold speedup. Claims C60 and C61 explain the amortized nature that enables this efficiency. However, the comparison uses different GPU hardware (GT 710 for MCMC vs RTX 4090 for \u03bcGUIDE in some experiments), which could affect the fairness of the comparison, though the magnitude of difference suggests a genuine computational advantage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The MLP-based automatic feature extraction in \u03bcGUIDE extracts additional information compared to manually defined summary statistics, resulting in 5.2-fold lower bias, 2.6-fold lower uncertainty, 2.7-fold lower ambiguity, and 6.4-fold lower dispersion in posterior distributions across three models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C41, C51, C52, C53, C54, and C55 provide quantitative comparisons showing the superiority of automatic feature extraction over manual summary statistics. Figure 4 visually demonstrates this improvement. The comparison is methodologically sound as it uses the same NPE architecture with only the feature extraction method differing. The quantitative improvements are substantial and consistent across multiple metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "\u03bcGUIDE highlights model degeneracies and quantifies uncertainty and ambiguity through three measures: MAP (most likely estimate), uncertainty (interquartile range relative to prior), and ambiguity (FWHM relative to prior). Degeneracy increases with model complexity, with Ball&Stick showing no degeneracy, Standard Model showing some, and extended-SANDI showing the most.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C30, C31, C32, and C33 define the measures used to quantify posterior distributions. Claims C43, C44, C45, C46, C47, and C48 demonstrate the relationship between model complexity and degeneracy with specific examples from three models. Figure 5 and Tables 1-2 provide visual and quantitative evidence. The degeneracy detection method (C33) is clearly defined using Gaussian fitting criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "\u03bcGUIDE produces sharper, less biased, and more accurate posterior distributions compared to MCMC on the Standard Model with SNR=50.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, and C36 are supported by Figure 3 showing visual comparison of posterior distributions and histograms of bias. The comparison uses 200 simulations with the same noise model (SNR=50) and acquisition protocol. However, the evaluation is limited to one model (Standard Model) and one noise level, which somewhat limits the generalizability of this specific comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C67"
+    ],
+    "result": "In an epilepsy participant, axonal signal fraction estimates within the lesion showed low uncertainty and ambiguity (high confidence), while orientation dispersion index estimates showed high uncertainty and ambiguity (low confidence), demonstrating how \u03bcGUIDE can guide clinical interpretation by identifying which parameters are reliably estimated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C50, and C67 describe the application to epilepsy data shown in Figure 7. The differential confidence levels for different parameters within the same lesion demonstrate the practical utility of uncertainty quantification. However, this is a single case example without validation against histology or other ground truth, limiting the strength of the clinical interpretation claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C99",
+      "C100",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "\u03bcGUIDE was validated on three biophysical models (Ball&Stick, Standard Model, extended-SANDI) using 1 million simulations per model with 5% validation set, and applied to dMRI data from healthy volunteers and epilepsy participants acquired on a Connectome 3T scanner with specific acquisition parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C21, C99, C100, C102, C103, C104, C105, C106, C107, and C108 describe the experimental validation approach. The training procedure is clearly specified with appropriate sample sizes. The three models represent increasing complexity as stated. The acquisition parameters are fully specified. The methodology is reproducible based on the provided details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "\u03bcGUIDE does not rely on acquisition-specific summary statistics and can potentially be extended to other organs and imaging modalities, though it remains model-dependent and requires predetermined number of features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C4 about not relying on acquisition constraints is supported by the automatic feature extraction. Claim C56 about extensibility to other modalities is speculative with examples cited but not demonstrated. Claims C57, C58, and C59 acknowledge limitations. The generalizability claim (C56) requires empirical validation beyond the dMRI brain applications shown, making this result uncertain despite the theoretical framework supporting it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C68",
+      "C79"
+    ],
+    "result": "\u03bcGUIDE enables processing of very large datasets (e.g., 10k dMRI datasets in ~6 months) and can guide acquisition optimization and group statistics by quantifying uncertainty, though these applications are proposed rather than demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C62, C68, and C79 describe potential applications of \u03bcGUIDE for large-scale studies and acquisition optimization. The timing estimate for 10k datasets (C62) is extrapolated from single-voxel timing but not empirically validated at scale. The applications to group statistics (C68) and acquisition optimization (C79) are speculative and not demonstrated in the manuscript. These represent promising future directions but lack empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "\u03bcGUIDE builds on prior work using simulation-based inference in dMRI (Jallais et al., 2022; Karimi et al., 2024), employing Masked Autoregressive Flows (MAFs) which have shown superior performance compared to Mixture Density Networks (MDNs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C64, C65, and C66 accurately cite and contextualize prior work in the field. The citations to comparative studies (C66) support the choice of MAFs over MDNs. This appropriately positions \u03bcGUIDE within the existing literature and justifies methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript provides background on dMRI microstructure imaging, limitations of point estimate methods (hiding degeneracy), importance of uncertainty quantification, and computational challenges of traditional Bayesian methods like MCMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C17 provide well-cited background establishing the problem context. The citations are appropriate and support the stated limitations of existing methods. This background effectively motivates the need for \u03bcGUIDE.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Existing uncertainty quantification methods (gradient descent confidence measures, tensor shape, bootstrapping, multi-initialization fitting) have various limitations, while Bayesian methods offer more complete characterization of degeneracies and uncertainties through full posterior distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 review alternative approaches to uncertainty quantification with appropriate citations describing their limitations. The comparison appropriately positions Bayesian approaches as more comprehensive, though the characterization of limitations could be more nuanced (e.g., bootstrapping can work well with sufficient samples).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Variance in posterior distributions arises from noise, acquisition parameters, and model complexity. \u03bcGUIDE can provide insights into the balance between model realism and invertibility as models become increasingly sophisticated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 discuss sources of uncertainty and the relationship between model complexity and degeneracy. These are supported by the demonstrated results showing increasing degeneracy with model complexity (Tables 1-2). The discussion appropriately contextualizes the results within the broader challenge of model selection in microstructure imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The manuscript provides methodological background on limitations of point estimates for degenerate models, intractability of likelihood functions for implicit models, and the rationale for using Sequential Neural Posterior Estimation (SNPE-C) with Masked Autoregressive Flows and automatic feature extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C97 provide technical background with appropriate citations justifying the methodological choices. The progression from problem (intractable likelihoods) to solution (neural density estimators) to implementation (MAFs, automatic features) is logical and well-supported by citations to the machine learning literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "\u03bcGUIDE takes as input an observed data vector and a biophysical model definition, and outputs posterior distributions of model parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C27 describe the basic input-output structure of \u03bcGUIDE as shown in Figure 1. This is a straightforward description of the framework's interface.",
+    "result_type": "MINOR"
+  }
+]

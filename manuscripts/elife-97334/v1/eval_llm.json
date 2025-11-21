@@ -1,0 +1,278 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study used four male Long-Evans rats housed under controlled conditions with multi-tetrode recordings from hippocampal CA1 during circular track exploration. Data acquisition and spike sorting methods are described, yielding 488 place cells for analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C62-C71 provide comprehensive methodological details about subjects, housing, behavioral paradigm, surgical procedures, data acquisition parameters, and spike sorting criteria. These are standard neuroscience methods that are well-documented and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "A subgroup of hippocampal place cells (23.2%, 113/488 cells) exhibited significant phase-locking to fast gamma rhythms (FG-cells), with preferred phases around the peak of fast gamma cycles. This phase-locking was stable across trials with significantly higher mean vector length than non-phase-locked cells (NFG-cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C8 present clear quantitative findings with appropriate statistical tests (repeated measures ANOVA with reported F-statistics, p-values, and effect sizes). The proportion of gamma phase-locked cells (24.6%) is consistent with prior literature (C51 cites 32% from Senior et al., 2008), and the stability analysis across trials is methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "FG-cells showed a higher proportion of neurons with significant theta phase precession compared to NFG-cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by statistical analysis (Chi-squared test, p = 2.1 \u00d7 10\u207b\u2074) with reference to supplementary Figure 2\u2014figure supplement 3. The effect size (Cramer V = 0.2) indicates a small to moderate association, which is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Excluding FG-cells from theta sequence decoding significantly disrupted the sequential structure compared to excluding NFG-cells. During early development, both exclusion types showed low weighted correlation, but during late development, excluding FG-cells resulted in significantly lower weighted correlation than excluding NFG-cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C14-C16 are supported by appropriate statistical analyses (generalized linear mixed model, repeated measures ANOVA, paired t-tests) with reported statistics and effect sizes. The experimental design of comparing exFG-sequences to exNFG-sequences while controlling for spike counts (C23) addresses potential confounds. The findings are internally consistent across early and late development phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Theta sequences developed with exploration experience across trials, and this development could not be attributed to changes in behavioral parameters (running speed and head direction remained stable).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 are supported by statistical analyses (repeated measures ANOVA for sequence development, Watson-Williams test for head direction) and cite consistent prior work (Feng et al., 2015; Wang et al., 2020). The control for behavioral confounds strengthens the interpretation that sequence development reflects neural rather than behavioral changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The contribution of FG-cells to theta sequence development was dose-dependent: excluding a high percentage (~35%) of FG-cells significantly disrupted sequence structure during late development, and the weighted correlation difference between exFG- and exNFG-sequences was positively correlated with the fraction of excluded cells during late but not early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 demonstrate a dose-response relationship with appropriate statistical tests (Pearson's correlation). The finding that early development shows no correlation (Corr = 0.1, p = 0.7) while late development shows significant correlation (Corr = 0.6, p = 0.03) is internally consistent with the overall narrative of FG-cell importance in sequence development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "FG-cells and NFG-cells exhibited similar spatial properties (place field distribution, center of mass distribution, place field size, and spatial information), though FG-cells had significantly higher mean firing rates. Importantly, theta sequence decoding excluded similar numbers of spikes from both cell types, controlling for decoder quality differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 provide important controls demonstrating that differences in sequence development are not due to basic spatial coding differences between cell types. Statistical tests are appropriate (Kolmogorov-Smirnov test, t-tests) with reported effect sizes. The control for spike counts (C23) is critical for validating the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Slow gamma phases shifted across successive slow gamma cycles within theta sequences. During early development, phase shifting occurred without phase precession (phases in Cycle 0 similar to Cycle -1, then dispersed in Cycle 1), while during late development, significant slow gamma phase precession was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are supported by appropriate statistical tests (multi-sample Mardia-Watson-Wheeler test with post hoc comparisons) and are consistent with prior work (C26 cites Zheng et al., 2016). The distinction between phase shifting and phase precession during early vs. late development is clearly demonstrated with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Slow gamma phase difference was significantly negative (indicating phase precession) across active slow gamma cycles. This phase precession was absent in the first lap but emerged from lap 2 onwards, as demonstrated by comparison with surrogate data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 are supported by appropriate statistical tests (t-tests, permutation tests with 95% confidence intervals). The use of surrogate data provides a rigorous control for testing the significance of phase precession. The emergence of phase precession from lap 2 is consistent with the sequence development timeline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "FG-cells exhibited stable slow gamma phase precession across all trials independent of learning experience, while NFG-cells showed experience-dependent slow gamma phase precession that emerged from lap 2 onwards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 demonstrate a key distinction between FG-cells and NFG-cells with appropriate statistical comparisons to surrogate data across laps. The finding that FG-cells show phase precession from lap 1 (p = 0.007) while NFG-cells do not (p = 0.9) until lap 2 is statistically robust and central to the paper's main hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Theta sequences with negative slow gamma phase difference and positive weighted correlation (Quadrant 1) were significantly dominant. FG-cell sequences showed this bias during both early and late development, while NFG-cell sequences showed this bias only during late development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 demonstrate the relationship between slow gamma phase precession and sequence structure with appropriate statistical tests (permutation tests comparing to shuffled data). The differential timing of this relationship for FG-cells (early and late) vs. NFG-cells (late only) is consistent with the overall findings and supports the main hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Detailed methods for gamma episode detection, phase-locking analysis, theta phase precession analysis, Bayesian decoding, theta sequence detection, weighted correlation calculation, and slow gamma phase shift analysis are provided.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C83 provide comprehensive methodological details with appropriate citations to established methods (e.g., Morlet wavelet transform, Bayesian decoding, circular-linear fit). The methods are standard in the field and sufficiently detailed for replication. The use of z-scored power thresholds and specific time windows is clearly specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study's main findings are that FG-cells are crucial for theta sequence development, exhibiting slow gamma phase precession that correlates with sweep-ahead structure, particularly during early development. This dynamic network modulation by fast and slow gamma may facilitate memory encoding and retrieval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86, C88, C94-C96 summarize the main findings from the Abstract, Introduction, and Discussion. These summary claims are supported by the detailed experimental results (C10-C37) and are internally consistent. The interpretation linking to memory encoding and retrieval (C86) is appropriately qualified as speculative ('may further facilitate').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The Introduction and Discussion provide extensive background on hippocampal function, theta sequences, theta phase precession, fast and slow gamma rhythms, and their roles in memory encoding and retrieval, citing numerous prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C61 represent background knowledge and citations to prior work. These are appropriately cited and consistent with established neuroscience literature. The citations are relevant and support the study's motivation and interpretation. However, the accuracy of these prior work claims cannot be fully verified without examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The Discussion interprets the findings in the context of prior work, proposing that FG-cells act as receivers of novel information, exhibit dual modulation by fast and slow gamma, and may function like memory engram-like representations. The interpretation emphasizes the balance between encoding and retrieval mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C112 represent interpretations and speculations in the Discussion. While these interpretations are consistent with the data presented, many are explicitly speculative (using terms like 'may', 'likely', 'possibility'). The interpretations are reasonable but go beyond what is directly demonstrated. Some claims (e.g., C97, C98, C111) make connections to concepts like 'engram-like representations' that are not directly tested in this study. The speculative nature is appropriately acknowledged by the authors.",
+    "result_type": "MAJOR"
+  }
+]

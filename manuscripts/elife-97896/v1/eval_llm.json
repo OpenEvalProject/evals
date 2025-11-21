@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "CIP (Pmk1) and SAP (Sty1) MAPK pathways, but not PSP (Spk1), are required for proper spindle assembly checkpoint (SAC) function in fission yeast. Deletion or inactivation of pmk1 or sty1 causes TBZ sensitivity and compromised SAC activation/maintenance, while constitutive activation of these pathways delays SAC inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide converging evidence from multiple complementary assays (TBZ sensitivity, nda3-mediated SAC activation/inactivation kinetics, Mad2 overexpression) demonstrating that CIP and SAP pathways regulate SAC function. The data consistently show that loss-of-function mutants compromise SAC while gain-of-function mutants enhance it, with appropriate controls (spk1\u0394 showing no effect).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "CIP and SAP pathways regulate APC/C activity through distinct mechanisms: SAP (Wis1DD) enhances MCC-APC/C association, while CIP (Pek1DD) reduces Slp1Cdc20 protein levels post-transcriptionally. CIP signaling has negligible effect on Slp1Cdc20 levels when SAC is not activated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 demonstrate a division of labor between the two MAPK pathways using co-IP (C6, C7), immunoblotting (C8, C9), and RT-qPCR (C10) data. The observation that CIP effects are SAC-dependent (C11) is supported by cdc25-22 background experiments. The mechanistic distinction between the two pathways is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Pmk1 directly binds Slp1Cdc20 through two N-terminal basic-residue patches (19-KKR-21 and 47-KR-48) that serve as Pmk1-docking sites. Mutations disrupting this interaction phenocopy pmk1\u0394 in elevated Slp1Cdc20 levels and defective SAC function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 establish the physical interaction using in vitro binding assays (C12) and systematically map the interaction interface through mutagenesis (C13, C14). The functional relevance is demonstrated by in vivo phenotypes of docking-site mutants (C15) and rescue experiments with heterologous docking sequences (C16). The convergence of biochemical and genetic evidence strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18"
+    ],
+    "result": "Pmk1 phosphorylates Slp1Cdc20 at Thr480 in vitro and in vivo upon SAC activation. This phosphorylation site was identified by mass spectrometry and validated using phospho-specific antibodies and kinase assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 establish Thr480 as a Pmk1 phosphorylation site through multiple complementary approaches: in vitro kinase assays (C17), mass spectrometry identification (C18), phospho-specific antibody validation (C18), and demonstration of Pmk1-dependence in vivo (C18). The convergence of these independent methods provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Cdk1 phosphorylates Slp1Cdc20 at Ser28 and Thr31 both in vitro and in vivo, as demonstrated by phospho-specific antibodies and analog-sensitive Cdk1 inhibition experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C19 provides comprehensive evidence for Cdk1-mediated phosphorylation using in vitro kinase assays with purified Cdk1 complexes, analog-sensitive Cdk1 inhibition with 1-NM-PP1, phospho-specific antibodies, and site-directed mutagenesis. The multiple lines of evidence converge to support this phosphorylation event.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Phosphorylation of Slp1Cdc20 at Thr480 by Pmk1 promotes its degradation and is required for proper SAC function. The phospho-deficient Slp1T480A mutant shows elevated protein levels, compromised SAC activation, and reverses the inhibitory effects of pek1DD on APC/C activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 establish the functional consequences of Thr480 phosphorylation through analysis of phospho-deficient mutants. The data show consistent effects on protein stability (C20), SAC function (C21), and epistasis with pek1DD (C22), demonstrating that this phosphorylation event is functionally important for the CIP pathway's regulation of APC/C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Deletion of apc15 suppresses the effects of pek1DD on Slp1Cdc20 levels and SAC activation, indicating that Pmk1-mediated regulation of Slp1Cdc20 stability requires Apc15-dependent autoubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 demonstrate genetic epistasis between apc15 and pek1DD using immunoblotting (C23) and SAC activation assays (C24). The suppression of pek1DD phenotypes by apc15\u0394 supports the model that Pmk1 promotes Apc15-dependent Slp1Cdc20 degradation. This is consistent with prior knowledge about Apc15's role in Cdc20 autoubiquitylation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "K479 and K472 in Slp1Cdc20 are ubiquitylation sites that regulate its stability and SAC function. Mutation of these residues to arginine stabilizes Slp1Cdc20 and compromises SAC activation, with double mutants showing additive effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 identify ubiquitylation sites through mass spectrometry (C25) and demonstrate their functional importance through mutagenesis. The K479R and K472R mutants show increased protein stability (C26, C28) and defective SAC (C27), with additive effects in the double mutant (C29), supporting the conclusion that both residues contribute to Slp1Cdc20 ubiquitylation and turnover.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Pmk1-mediated phosphorylation of Slp1Cdc20 promotes its ubiquitylation. TUBE pull-down assays show that ubiquitylation is reduced in pmk1\u0394 cells, enhanced in pek1DD cells, and dependent on Pmk1 phosphorylation sites (T480, S76) and docking sites, but not on Cdk1 phosphorylation sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 establish the coupling between Pmk1 phosphorylation and ubiquitylation using TUBE pull-down assays. The data show that ubiquitylation levels correlate with Pmk1 activity (C31, C32) and require Pmk1 phosphorylation sites but not Cdk1 sites (C33), demonstrating that Pmk1 phosphorylation specifically promotes ubiquitylation. The K472R/K479R mutations reduce ubiquitylation (C30), confirming these as the relevant ubiquitylation sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Environmental stresses (osmotic stress via KCl or cell wall damage via caspofungin) activate Pmk1 and/or Sty1 and correlate with rapid Slp1Cdc20 downregulation. SAC activation per se does not trigger CIP pathway activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 demonstrate that environmental stresses activate MAPKs and reduce Slp1Cdc20 levels using immunoblotting with phospho-specific antibodies (C34, C35). The observation that SAC activation alone does not activate Pmk1 (C36) is important for establishing that stress-induced MAPK activation is distinct from SAC-induced MAPK activation. The data support the model that environmental stress provides an additional layer of regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Pmk1 is required for sustained SAC activation under environmental stress conditions. Pmk1 deletion or mutations in Slp1Cdc20 that prevent Pmk1 binding or phosphorylation partially suppress stress-induced SAC maintenance and restore Slp1Cdc20 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 demonstrate that Pmk1 regulates SAC under stress using co-IP (C37), SAC activation assays (C38, C39), and immunoblotting (C40). The observation that caspofungin does not alter MCC-APC/C interaction (C37) suggests Pmk1 acts primarily through Slp1Cdc20 degradation rather than MCC assembly under this stress. The genetic evidence from pmk1\u0394 and Slp1 phospho-mutants supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "pmk1\u0394 cells show increased chromosome segregation defects (lagging chromosomes and mis-segregation) when exposed to environmental stresses (KCl or caspofungin) compared to unstressed pmk1\u0394 cells or stressed wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 demonstrates the physiological consequence of Pmk1-mediated SAC regulation under stress using quantitative microscopy of chromosome segregation. The increased segregation defects in stressed pmk1\u0394 cells validate the importance of this regulatory mechanism for maintaining genome integrity under adverse conditions. The appropriate controls (unstressed pmk1\u0394 and stressed wild-type) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Background information on fission yeast MAPK pathways and their known roles in cell cycle regulation, including regulation of mitotic entry and cytokinesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 provide established background information about fission yeast MAPK pathways, citing appropriate literature. These claims accurately represent prior knowledge and provide context for the current study. The citations support the statements made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Prior studies in Xenopus have shown that MAPK is required for spindle checkpoint activation and APC/C inhibition, with phosphorylation of SAC components (Cdc20, Mps1, Bub1) by MAPK serving as regulatory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 accurately summarize prior work in Xenopus systems, citing appropriate literature. These claims provide important context for the current study by establishing that MAPK regulation of SAC is evolutionarily conserved, though the specific mechanisms may differ between organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Background information on Cdc20/Slp1Cdc20 function and regulation, including its dual role as APC/C activator and inhibitor, MCC composition in fission yeast, Apc15-mediated autoubiquitylation, and the importance of checkpoint protein abundance for checkpoint robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 provide established background information about Cdc20/Slp1Cdc20 biology, citing appropriate literature. These claims accurately represent prior knowledge and provide essential context for understanding the significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Background information on Cdc20 regulation and cancer relevance, including ubiquitylation sites in human Cdc20, Cdc20 upregulation in cancers, ERK-mediated Cdc20 regulation in pancreatic cancer, and therapeutic strategies targeting APC/CCdc20.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 provide relevant background on Cdc20 in human cancer biology, citing appropriate recent literature. These claims establish the translational relevance of the findings and suggest that MAPK-mediated Cdc20 regulation may be conserved in humans and relevant to cancer biology.",
+    "result_type": "MINOR"
+  }
+]

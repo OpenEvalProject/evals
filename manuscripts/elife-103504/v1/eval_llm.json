@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes the background context for studying spinal cord injury effects on locomotion. Locomotion is controlled by spinal circuits interacting with supraspinal drives and sensory feedback (C1), which are disrupted following spinal cord injury (C2). A lateral hemisection is an experimental model of incomplete SCI that abolishes connections on one side (C3, C12, C13, C14), resulting in asymmetric locomotor patterns (C15), though the underlying mechanisms remain poorly understood (C16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish well-accepted background knowledge supported by appropriate citations. The claims accurately describe the hemisection model and its known effects on locomotion, providing necessary context for the study. The identification of a knowledge gap (C16) appropriately motivates the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C34",
+      "C38",
+      "C103",
+      "C104"
+    ],
+    "result": "The computational model used in this study was previously published and describes spinal circuits that can operate in different regimes (state-machine, flexor-driven, classical half-center) depending on speed and available inputs. The model includes bilateral rhythm generators with commissural interactions and sensory feedback pathways. To simulate hemisection, only the right-side supraspinal drives were set to zero without changing other parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model description is well-supported by citation to the previous publication (C4, C17) and detailed architectural descriptions (C21-C31). The modeling approach for hemisection is clearly stated (C103, C104, C38) and represents a straightforward manipulation of the intact model. The claim that no other parameters were changed is important for model validity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The central hypothesis is that following hemisection, the contralesional (intact, left) side is mostly controlled by supraspinal drives while the ipsilesional (hemisected, right) side is mostly controlled by somatosensory feedback. This differential control arises because removing supraspinal drives on one side enhances the role of somatosensory feedback on that side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This hypothesis is logically derived from the model architecture (C35-C37) and represents the core conceptual framework of the study. The hypothesis is testable through both simulation and experiment, and the subsequent results are organized around testing this prediction. The mechanistic basis is clearly explained through the model's presynaptic inhibition mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "During tied-belt locomotion, both simulations and experiments show that the contralesional side exhibits speed-dependent changes similar to intact conditions, while the ipsilesional side shows increased swing duration. Cycle duration decreased with speed in both hindlimbs with no significant difference between intact and hemisected states. Stance duration was longer after hemisection for the left contralesional hindlimb (p=0.045) but not the right ipsilesional hindlimb (p=0.278). Swing duration became significantly longer in the right ipsilesional hindlimb after hemisection (p=0.033).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental results (C52-C61) are supported by appropriate statistical tests with reported p-values. The qualitative agreement between simulations (C39, C40) and experiments (C59, C60) is clearly demonstrated. However, there is a noted discrepancy: simulations predicted decreased stance duration on the ipsilesional side, which was not observed experimentally (C61). Despite this discrepancy, the overall pattern of results supports the main findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In the Left slow/Right fast split-belt condition (ipsilesional hindlimb on fast belt), simulations and experiments show that the contralesional side maintains relatively constant cycle and phase durations, while the ipsilesional side shows pronounced speed-dependent reduction in stance and increase in swing durations. Swing duration became longer than stance duration at speeds \u22650.7 m/s (duty factor <50%), increasing asymmetry between sides. Experimental results confirmed these predictions with appropriate statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation predictions (C42-C46) are well-supported by experimental data (C62-C72) with appropriate statistical tests. The key finding that swing exceeds stance duration at higher speeds on the ipsilesional side (C68, C71) is clearly demonstrated in both model and experiment. The one discrepancy noted (C73) regarding stance duration does not undermine the overall pattern. The increased asymmetry (C72) is a major finding with clinical implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "In the Left fast/Right slow split-belt condition (ipsilesional hindlimb on slow belt), both simulations and experiments show that cycle and phase durations on both sides remain similar to the intact state, with only a small increase in swing duration in the ipsilesional hindlimb. Cycle duration decreased with increasing left belt speed with no significant difference between intact and hemisected states (p=0.283 and p=0.212 for left and right hindlimbs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation predictions (C47, C48) are confirmed by experimental results (C74-C79) with appropriate statistical support. The key finding that having the ipsilesional hindlimb on the slow belt reduces hemisection effects (C80) is well-supported by both simulation and experimental data. This represents an important discovery with potential rehabilitation implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C81",
+      "C82",
+      "C83",
+      "C89",
+      "C90",
+      "C101"
+    ],
+    "result": "The computational model successfully predicted many effects of hemisection on cat locomotion across tied-belt and split-belt conditions. The model qualitatively matched experimental data and made predictions without parameter adjustments. Critically, having the ipsilesional hindlimb step on the slow belt substantially reduced hemisection effects compared to having it step on the fast belt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims are well-supported by the detailed results presented throughout the manuscript. The qualitative agreement between model and experiment (C81, C101) is demonstrated across multiple conditions. The key finding about belt configuration effects (C8, C89, C90) is supported by both simulation and experimental data. The model's predictive power without parameter adjustment (C83) strengthens its validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C87",
+      "C88",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The model provides mechanistic explanations for observed changes: increased ipsilesional swing duration results from greater SF-E1 feedback influence due to loss of presynaptic inhibition (C84); increased contralesional stance duration may result from increased crossed inhibition (C85); greater load-related feedback on the slow belt increases extensor activity (C87, C88); and the ipsilesional hindlimb must increase support when on the slow belt to enable split-belt locomotion (C91-C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While these mechanistic explanations are logically derived from the model architecture, they represent inferences rather than directly tested hypotheses. Some explanations are presented as possibilities (C85 uses \"could be\") or proposals (C91 uses \"we propose\"). The explanation for increased support on the slow belt (C91-C93) is reasonable but speculative. These mechanisms would require additional experimental validation to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C102"
+    ],
+    "result": "The study suggests that split-belt locomotion with the affected limb on the slow belt might be useful for rehabilitation following lateralized neurological injuries, and that modeling sensorimotor interactions can serve as a tool to guide rehabilitation efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims represent speculative clinical applications based on the study findings. While the observation that slow belt placement reduces asymmetry is well-supported, the translation to rehabilitation efficacy requires clinical trials. The claim about modeling as a rehabilitation tool (C102) is aspirational rather than demonstrated. These represent reasonable future directions but are not directly supported by the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The study acknowledges several limitations: the model does not include forelimb-hindlimb interactions or musculoskeletal properties (C95, C96); lack of plasticity may explain quantitative discrepancies (C97); future studies should consider neuroplastic changes (C98); comparisons were only made at 7-8 weeks post-injury (C99); and perfect hemisections are difficult to achieve surgically (C100).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations are appropriately acknowledged and represent honest assessment of the study's scope. The identified limitations (C95-C97) are reasonable given the model's purpose and complexity. The recommendations for future work (C98) are well-supported by citations. The experimental limitations (C99, C100) are practical constraints that are honestly reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The experimental methods involved recording cycle and phase durations from cats before and after right-side T5-T6 lateral hemisection during tied-belt (0.4-1.0 m/s) and split-belt locomotion. Nine cats were used initially, with 5 retained for tied-belt and 6 for split-belt analysis based on ability to step at 1.0 m/s at 7-8 weeks post-injury. Lesion extent ranged from 40.7-66.4%. Data were analyzed using two-factor repeated-measure ANOVA with significance at p<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental methods are clearly described with appropriate detail. Ethical approval is documented (C105), sample sizes are reported (C49-C51, C106), and inclusion criteria are specified (C51). The lesion characterization (C114) provides important validation. Statistical methods (C115, C116) are appropriate for the experimental design. The methodology is reproducible and follows appropriate guidelines (C107).",
+    "result_type": "MINOR"
+  }
+]

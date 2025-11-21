@@ -1,0 +1,2382 @@
+{
+  "submission": {
+    "id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:51:31.461216Z",
+    "updated_at": "2025-11-21T21:51:31.461216Z"
+  },
+  "content": [
+    {
+      "id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "content_type": "manuscript",
+      "content_text": "# Sequential replacement of PSD95 subunits in postsynaptic supercomplexes is slowest in the cortex\n\n## Authors\n\n- Katie Morris<sup>1</sup> ([ORCID: 0000-0002-8944-2264](https://orcid.org/0000-0002-8944-2264))\n- Edita Bulovaite<sup>2</sup> ([ORCID: 0000-0003-2565-1371](https://orcid.org/0000-0003-2565-1371))\n- Takeshi Kaizuka<sup>2</sup> ([ORCID: 0000-0002-5253-1896](https://orcid.org/0000-0002-5253-1896))\n- Sebastian Schnorrenberg<sup>3</sup> ([ORCID: 0000-0002-8076-2237](https://orcid.org/0000-0002-8076-2237))\n- Candace T Adams<sup>1</sup> ([ORCID: 0009-0001-9442-5661](https://orcid.org/0009-0001-9442-5661))\n- Noboru Komiyama<sup>2</sup>\n- Lorena Mendive-Tapia<sup>4</sup>\n- Seth GN Grant<sup>2</sup> ([ORCID: 0000-0001-8732-8735](https://orcid.org/0000-0001-8732-8735)) \u2020\n- Mathew H Horrocks<sup>1</sup> ([ORCID: 0000-0001-5495-5492](https://orcid.org/0000-0001-5495-5492)) \u2020\n\n### Affiliations\n\n1. EaStCHEM School of Chemistry, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n2. Genes to Cognition Program, Centre for Clinical Brain Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n3. EMBL Imaging Centre, European Molecular Biology Laboratory Heidelberg Germany ([ROR:03mstc592](https://ror.org/03mstc592))\n4. IRR Chemistry Hub, Institute for Regeneration and Repair, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n5. Simons Initiative for the Developing Brain (SIDB), Centre for Discovery Brain Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01gghaa40](https://ror.org/01gghaa40))\n6. The Patrick Wild Centre for Research into Autism, Fragile X Syndrome & Intellectual Disabilities, Centre for Discovery Brain Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n7. Centre for Inflammation Research, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe concept that dimeric protein complexes in synapses can sequentially replace their subunits has been a cornerstone of Francis Crick\u2019s 1984 hypothesis, explaining how long-term memories could be maintained in the face of short protein lifetimes. However, it is unknown whether the subunits of protein complexes that mediate memory are sequentially replaced in the brain and if this process is linked to protein lifetime. We address these issues by focusing on supercomplexes assembled by the abundant postsynaptic scaffolding protein PSD95, which plays a crucial role in memory. We used single-molecule detection, super-resolution microscopy and MINFLUX to probe the molecular composition of PSD95 supercomplexes in mice carrying genetically encoded HaloTags, eGFP, and mEoS2. We found a population of PSD95-containing supercomplexes comprised of two copies of PSD95, with a dominant 12.7 nm separation. Time-stamping of PSD95 subunits in vivo revealed that each PSD95 subunit was sequentially replaced over days and weeks. Comparison of brain regions showed subunit replacement was slowest in the cortex, where PSD95 protein lifetime is longest. Our findings reveal that protein supercomplexes within the postsynaptic density can be maintained by gradual replacement of individual subunits providing a mechanism for stable maintenance of their organization. Moreover, we extend Crick\u2019s model by suggesting that synapses with slow subunit replacement of protein supercomplexes and long-protein lifetimes are specialized for long-term memory storage and that these synapses are highly enriched in superficial layers of the cortex where long-term memories are stored.\n\n## Introduction\n\nSynapses in the central nervous system allow the transmission of information between neurons and are the site at which memories are formed and stored. The vast majority of synapses in the mammalian brain employ glutamate as the neurotransmitter, which is released from the presynaptic terminal on axons and diffuses onto the postsynaptic terminal on dendrites where it binds glutamate receptors (Kandel et al., 2021). Activating glutamate receptors triggers the biochemical changes in the postsynaptic terminal that ultimately encode memories. The proteome of the postsynaptic termini of excitatory synapses is highly complicated and comprises over 1000 proteins representing many structural and functional classes of molecules (Sorokina et al., 2021). Biochemical studies show that all these proteins are organized into supramolecular assemblies of complexes and supercomplexes (complexes of complexes) (Collins et al., 2006; Collins and Grant, 2007; Fern\u00e1ndez et al., 2017; Fern\u00e1ndez et al., 2009; Frank and Grant, 2017; Frank et al., 2016; Husi et al., 2000; Husi and Grant, 2001; Nithianantharajah et al., 2013; Pocklington et al., 2006). The best described complexes are the ionotropic glutamate receptors known as NMDA (N-methyl-D-aspartate) and AMPA (\u03b1-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid) receptors, which are formed from four membrane-spanning subunits that together produce a ligand-gated ion channel (Greger et al., 2017; Hansen et al., 2018). Major supercomplexes are those formed by the scaffolding protein PSD95 (Cho et al., 1992), which can assemble various complexes including NMDA and AMPA receptors, other ion channels, adhesion proteins, and signaling proteins (Fern\u00e1ndez et al., 2009; Frank and Grant, 2017; Frank et al., 2016; Husi et al., 2000). Mice and humans carrying mutations in PSD95 show profound learning and memory deficits (Migaud et al., 1998; Nithianantharajah et al., 2013), indicating that the formation and function of supercomplexes is crucial for storage of information in the brain.\n\nAlthough it is widely accepted that rapid biochemical changes in the postsynaptic termini of excitatory synapses underlie the initial encoding of memories, the mechanisms that control the duration of memories and rate of forgetting remain poorly understood. There has been a long-standing quest to identify molecular changes that could persist for the duration of the memory. This became a central issue in memory research in 1984 as a result of an influential article by Crick, 1984. He reasoned that the biochemical changes in synapses would be erased by protein turnover, and that because some memories must have a longer lifetime than synaptic proteins, he postulated that there must be molecular mechanisms that perpetuated the initial biochemical changes. Toward this, he posited that dimeric complexes of proteins may be modified during learning and gradually replace their subunits in a way that would allow the \u2018molecular memory\u2019 in a preexisting subunit to be transferred to the new subunit in a mixed complex of old and new subunits. As a result of this, much attention has focused on the enzymatic complex known as calcium/calmodulin-dependent protein kinase II (CamKII), which is comprised of multiple subunits that have the capacity for autophosphorylation and persistent activation (Bayer and Schulman, 2019; Bhattacharyya et al., 2016; Hell, 2014; Stratton et al., 2013). Experiments using recombinant proteins in vitro show that holoenzymes of CamKII can exchange subunits, which in principle could be a mechanism for perpetuation of molecular memories (Bhattacharyya et al., 2020; Bhattacharyya et al., 2016; Singh and Bhalla, 2018; Stratton et al., 2013). However, it is unknown if old subunits are sequentially replaced by new subunits in vivo in CamkII complexes, or indeed any other complexes in synapses.\n\nPSD95 affords an opportunity to revisit Crick\u2019s hypotheses for several reasons. First, biochemical studies of PSD95 supercomplexes isolated from the mouse brain reveal there is a family of supercomplexes where members all appear to comprise two copies of PSD95 and different combinations of interacting proteins (Frank and Grant, 2017; Frank et al., 2016). Second, excitatory synapses show high diversity arising from the differential distribution of protein complexes (Cizeron et al., 2020; Zhu et al., 2018) and differential lifetimes of PSD95 (Bulovaite et al., 2022). Those synapses with longest PSD95 lifetimes were referred to as long-protein lifetime synapses, and a brainwide analysis of their distribution showed they were most highly enriched in the cortex where long-term memories are stored. These findings raise the following questions: are the two copies of PSD95 in supercomplexes sequentially replaced, or does the dimeric complex degrade and rebuild from two new copies of PSD95? Secondly, if there is a sequential replacement of PSD95 subunits in supercomplexes, is the rate of this replacement related to the protein lifetime?\n\nTo address these questions, we have used single-molecule imaging of PSD95-containing supercomplexes isolated directly from the mouse brain. Using lines of mice that contain genetically encoded tags fused to the carboxyl terminus of endogenous PSD95 (Broadhead et al., 2016; Bulovaite et al., 2022; Zhu et al., 2018), we prepared protein extracts from the brain and imaged supercomplexes using total internal reflection fluorescence (TIRF) microscopy. We counted the number of PSD95 copies in each supercomplex, and found that the majority contain two units. We next measured the mean distance between the labels using MINFLUX, which has a spatial resolution of 1\u20135 nm, and showed that the average distance between the fluorophores is 12.7 nm. Using mice that express HaloTag fused to PSD95 (Bulovaite et al., 2022), we injected a fluorescent ligand into the tail vein, which efficiently labels PSD95 in brain synapses, and by extracting supercomplexes at time points after injection, we show that individual PSD95 subunits are sequentially replaced, in line with Crick\u2019s hypothesis. Finally, we ask if the rate of subunit exchange is influenced by PSD95 protein lifetime by comparing brain regions with different PSD95 lifetimes. We found that the rate of exchange is slowest in the cortex where the protein lifetime is longest. Our results, which are the first visualization of individual synaptic supercomplexes and their constituent proteins, show that synaptic scaffold proteins that play a crucial role in memory are organized as dimers in supercomplexes, and are maintained by sequential replacement of individual subunits over extended periods of time, and that this process is linked to the rate of protein turnover in the regions of the brain involved with long-term memory storage.\n\n## Results\n\n### Imaging individual PSD95 supercomplexes isolated from mouse brain\n\nSingle-molecule and super-resolution (SR) approaches enable the heterogeneity in molecular complexes and supercomplexes to be distinguished (Jain et al., 2011; Saleeb et al., 2023; Szymborska et al., 2013), and therefore provide an invaluable tool for studying synaptic molecular supercomplexes isolated from brain homogenate. Forebrains from PSD95-eGFP homozygous mice were dissected and homogenized as described (Fern\u00e1ndez et al., 2009) (Materials and methods) (Figure 1a). The supercomplexes were subsequently diluted and immobilized on a glass coverslip, and imaged on a TIRF microscope (Figure 1bi) (Materials and methods). Although this technique is diffraction-limited, the number of fluorescent proteins present in each supercomplex can be quantified by the stepwise photobleaching of each fluorophore (Dalton et al., 2016; Leake et al., 2006). The number of photobleaching steps per diffraction-limited spot was determined for a population of >6000 supercomplexes across three biological repeats (Figure 1bii, with examples of one-step and multi-step photobleaching traces presented in Figure 1biii). On average, there were 1.6 PSD95 proteins per PSD95-containing supercomplex; however, taking advantage of our ability to characterize individual supercomplexes, we found that 63% contained one PSD95 protein, 24% two PSD95 proteins, and 13% more than two PSD95 proteins. Given that not all eGFP will fold correctly (typical in vitro refolding yields for GFP are 50\u201360% Battistutta et al., 2000; Reid and Flynn, 1997; Ward and Bokman, 1982), this suggests that there is an abundant population of PSD95 supercomplexes that contain two PSD95 proteins. We validated our approach using purified eGFP, demonstrating that the vast majority of eGFP was monomeric (Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig1-v1.jpg)\n\n**Figure 1.:** (a) Brain containing either endogenously tagged PSD95-eGFP or PSD95-mEoS2 was extracted from the genetically modified mouse, and the forebrain was homogenized to solubilize PSD95-containing supercomplexes. PSD95 supercomplexes were immobilized on glass coverslips and imaged using single-molecule and super-resolution approaches. (bi) Individual PSD95-eGFP supercomplexes (boxed) were imaged using total internal reflection fluorescence (TIRF) microscopy. Scale bar = 5 \u00b5m, inset scale bar = 500 nm. Photobleaching step counting revealed a distribution of PSD95 stoichiometries (bii) (10,178 PSD95-eGFP photobleaching steps were counted across 6461 supercomplexes). Representative intensity traces with fits shown in biii. (ci) Example photoactivated localization microscopy (PALM) images of individual PSD95 supercomplexes. Scale bar = 500 nm, inset scale bar = 50 nm. (cii) Subsequent analysis revealed that PSD95 exists at a range of stoichiometries within the supercomplexes (132,929 PSD95-mEoS2 molecules were detected in 82,501 individual supercomplexes). Plots show mean \u00b1 SD, n = 3 biological repeats. (ciii) Class averaging of the dimer population shows a distinct separation between the PSD95 proteins within the supercomplexes (class average of 9743 supercomplexes). (di) Example MINFLUX images of PSD95 supercomplexes. Scale bar = 100 nm, inset scale bar = 10 nm. (dii) Analysis of the supercomplexes containing two PSD95 molecules (1011 supercomplexes) showed a distribution of PSD95 separation distances. (diii) Class averaging of this population revealed two peaks separated by 12.7 nm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Stoichiometries of eGFP determined using the same approach as that for eGFP-tagged PSD95. (b) Example intensity trace with fitting.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Homogenate extracted from wild-type mice was processed using the same procedure as that for PSD95-eGFP mice. It was subsequently diluted 1:1000 and 100 \u00b5l of this solution was incubated on a plasma-cleaned coverslip for 30 min. The coverslip was washed three times with phosphate-buffered saline (PBS) and a mix of 2.5 pM AF647-tagged and 2.5 pM ATTO488-tagged FluoTag-X2 anti-PSD95 nanobody (NanoTag Biotechnologies) was added to the coverslip (total volume 100 \u00b5l) and incubated for 30 min. Following washing three times with PBS, the sample was imaged on the total internal reflection fluorescence (TIRF) microscope with 638 and 488 nm excitation. Coincident spots represent supercomplexes containing multiple PSD95 units. Scale bar = 2 \u00b5m, inset scale bar = 250 nm.\n\nTo further verify the PSD95 stoichiometry in supercomplexes, we generated brain homogenate from PSD95-mEos2 heterozygous mice, and following immobilization, we imaged the supercomplexes using photoactivated localization microscopy (PALM) (Betzig et al., 2006). Each PSD95-mEos2 molecule within the supercomplexes was localized with a mean precision of 21.8 \u00b1 6.5 nm (mean \u00b1 SD, n = 132,929 localizations across three biological repeats). Fourier ring correlation (Nieuwenhuizen et al., 2013) revealed that the acquired images had a mean resolution of 30 \u00b1 4 nm (mean \u00b1 SD, n = 3 biological repeats). This enabled the spatial relationship between individual PSD95 molecules to be deduced. Examples of super-resolved supercomplexes are shown in Figure 1ci. The number of PSD95 molecules per supercomplex was quantified using custom-written code (Materials and methods), and the distribution of stoichiometries is shown in Figure 1cii. Over 130,000 PSD95-mEoS2 proteins were localized in 82,501 supercomplexes across three biological repeats. 76 \u00b1 2% of the supercomplexes contained only one PSD95-mEoS2 protein, 12 \u00b1 1% contained two PSD95-mEoS2 proteins, and the remainder (12 \u00b1 2%) of the clusters contained more than two PSD95-mEoS2 proteins. Given that only half of the PSD95 proteins are fused to mEoS2 in heterozygous mice, and that not all mEoS2 will fold correctly, these results confirm the findings from the photobleaching analysis, suggesting that supercomplexes contain PSD95 protein at a range of stoichiometries, with the majority containing two or fewer. We also identified multimers in wild-type PSD95 supercomplexes using a mix of orthogonally labeled PSD95 nanobodies (Figure 1\u2014figure supplement 2).\n\nWe next determined the mean distance between PSD95 molecules by class averaging the 9,743 supercomplexes that contained two PSD95-mEoS2 proteins, revealing one dominant separation with a mean distance of 37.8 nm between PSD95 molecules (Figure 1ciii). As this separation distance is close to the spatial resolution that we were able to achieve using PALM, we further analyzed the supercomplexes using MINFLUX, which can attain a spatial resolution of 1\u20135 nm. We immobilized supercomplexes from brain homogenate containing PSD95-eGFP and added a GFP-nanobody tagged with Alexa Fluor 647 (Materials and methods. Details of MINFLUX imaging sequences are provided in Table 1). Example MINFLUX images are shown in Figure 1di. We were able to detect PSD95 within the supercomplexes at a range of stoichiometries, and selected for measurement those that contained two units of PSD95 (1011 supercomplexes). Class averaging the distribution of individual distances measured between two PSD95 molecules in the supercomplexes (Figure 1dii) shows two clear peaks separated by 12.7 nm (Figure 1diii).\n\n**Table 1.**\n MINFLUX iterations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>1st</th>\n      <th>2nd</th>\n      <th>3rd</th>\n      <th>4th</th>\n      <th>5th</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>L size [nm]</td>\n      <td>300</td>\n      <td>300</td>\n      <td>150</td>\n      <td>75</td>\n      <td>40</td>\n    </tr>\n    <tr>\n      <td>TCP \u2013 pattern</td>\n      <td>Hexagon</td>\n      <td>Hexagon</td>\n      <td>Hexagon</td>\n      <td>Hexagon</td>\n      <td>Hexagon</td>\n    </tr>\n    <tr>\n      <td>Minimum number of collected photons</td>\n      <td>100</td>\n      <td>150</td>\n      <td>100</td>\n      <td>100</td>\n      <td>150</td>\n    </tr>\n    <tr>\n      <td>Laser power factor</td>\n      <td>1x</td>\n      <td>1x</td>\n      <td>2x</td>\n      <td>4x</td>\n      <td>6x</td>\n    </tr>\n    <tr>\n      <td>TCP dwell time [ms]</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td>CFR</td>\n      <td>x</td>\n      <td>0.5</td>\n      <td>x</td>\n      <td>0.8</td>\n      <td>x</td>\n    </tr>\n    <tr>\n      <td>Background threshold [kHz]</td>\n      <td>15</td>\n      <td>15</td>\n      <td>15</td>\n      <td>15</td>\n      <td>15</td>\n    </tr>\n  </tbody>\n</table>\n\n### Sequential replacement of PSD95 within supercomplexes\n\nWe have previously measured the rate of PSD95 turnover across the mouse brain at single-synapse resolution, demonstrating that excitatory synapses have a wide range of protein lifetimes extending from a few hours to several months (Bulovaite et al., 2022). These findings led us to ask whether protein turnover could occur within individual intact molecular supercomplexes, or if the whole supercomplex needs to be replaced with new protein.\n\nInjecting the cell- and blood\u2013brain barrier-permeable fluorescent ligand Silicon-Rhodamine-Halo (SiR-Halo) into the tail vein of 3-month-old PSD95-HaloTag homozygous mice labels all of the PSD95-HaloTag (Figure 2a; Bulovaite et al., 2022). Because SiR-Halo forms a covalent bond with the PSD95-HaloTag, the persistence of labeling over time after injection reports whether PSD95 has been replaced in individual supercomplexes. Brain tissue was obtained at 6 hr (day-0) or 7 days (day-7) post SiR-Halo injection. The homogenized forebrain tissue from each mouse was then incubated with a second HaloTag ligand, Alexa Fluor 488-Halo (AF488-Halo), to label any new PSD95-HaloTag protein generated after the earlier SiR-Halo injection. This allowed us to quantify the levels of PSD95 protein turned over in 7 days. Supercomplexes containing only SiR-Halo represent those in which no PSD95 replacement had occurred, whereas those with only AF488-Halo are either new supercomplexes or those in which all PSD95 has been replaced. A coincident signal of SiR-Halo and AF488-Halo represents supercomplexes in which a proportion of the PSD95 has been replaced (Figure 2a).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig2-v1.jpg)\n\n**Figure 2.:** (a) PSD95-HaloTag homozygous mice were injected with SiR-Halo ligand and culled 6 hr (day-0) or 7 days (day-7) post injection. The forebrains were homogenized and post hoc stained with AF488-Halo ligand to saturate remaining binding sites. At day-0, the vast majority of PSD95 is labeled with SiR-Halo only. After 7 days of protein turnover, three populations of supercomplex are possible: SiR-Halo only, AF488-Halo only, and both fluorophores. (b) Images of supercomplexes from homogenate at day-0 and day-7, showing increased AF488-Halo:SiR-Halo ratios at day-7, with increased coincidence. Scale bar is 5 \u03bcm and 500 nm in the zoom. (c) Quantified percentages of supercomplexes labeled only with SiR-Halo, AF488-Halo, or both. At day-0, 96% of supercomplexes were labeled with SiR-Halo only, indicating saturation of PSD95-HaloTag binding sites by injection. At day-7, this had decreased to 56%, with expansion of the AF488-Halo and co-labeled populations, indicating that PSD95 protein turnover had occurred over the 7 days.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Number of labeled supercomplexes at day-0 and day-7 containing only SiR-labeled \u2018old\u2019 protein (SIR), AF488-labeled \u2018new\u2019 protein (AF488), or both \u2018mixed\u2019. In total, 13,710 supercomplexes were analyzed at day-0 and 15,391 supercomplexes were analyzed at day-7.\n\nExample diffraction-limited images of the labeled PSD95 supercomplexes at the two time points are shown in Figure 2b. Most of the supercomplexes observed at day-0 contain only SiR-Halo, with few having AF488-Halo, and negligible coincidence. At day-7, fewer SiR-Halo supercomplexes were observed, indicating that some of the PSD95 protein present at the time of injection was degraded. An increase in the number of AF488-Halo-labeled supercomplexes indicates that the degraded protein has been replaced with new, label-free protein. An increase in coincidence can be seen in the merge of the two images. These results are shown quantitatively in Figure 2c (see also Figure 2\u2014figure supplement 1). Approximately 40% of the old PSD95 protein is replaced by new protein between day-0 and day-7. Of the 13,710 supercomplexes analyzed at day-0, 96% of the supercomplexes were labeled with only SiR-Halo, indicating that the HaloTag binding sites were saturated by injection. At day-7, 56% of the 15,391 supercomplexes analyzed were labeled with only SiR-Halo. 32% of the supercomplexes were labeled with only AF488-Halo, indicating all copies of PSD95 within these supercomplexes had been turned over in the 7-day period. Interestingly, 12% of the supercomplexes were labeled with both AF488-Halo and SiR-Halo, indicating that some supercomplexes (hereafter referred to as \u2018mixed supercomplexes\u2019) contain both old and new protein. This indicates that supercomplexes can exchange old copies of PSD95 for new.\n\n### Comparison of synaptic PSD95 with total PSD95\n\nPSD95 is synthesized in the neuronal cytosol and transported into synapses where it is concentrated in the postsynaptic density. We asked whether the exchange of PSD95 in supercomplexes differs between the synapse and the cytosol by comparing the synaptic (synaptosome) and total forebrains of mice injected with SiR-Halo at day-7 (Materials and methods). Supercomplexes were extracted from either the synaptosome fraction or the whole forebrain of SiR-Halo-injected mice and incubated with AF488-Halo and imaged using TIRF microscopy (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig3-v1.jpg)\n\n**Figure 3.:** (a) SiR-Halo ligand was injected into the tail vein of three 3-month-old PSD95-HaloTag knock-in mice. Seven days later, the forebrain was extracted and synaptosomes isolated. AF488-HaloTag ligand was incorporated during the homogenization process. DOC, deoxycholate. (b) Comparison of populations of PSD95 supercomplexes in the total forebrain and synaptic fraction.\n\nWhereas the level of SiR-Halo-only supercomplexes is similar for both the total forebrain and synaptic fractions (56% and 52%, respectively), the percentage of AF488-Halo-only supercomplexes is lower in the synaptic fraction (21% versus 32% in the total forebrain homogenate) and there is a greater fraction of mixed supercomplexes (27% versus 12% in the total forebrain homogenate) (Figure 3b). This suggests that while the overall rate of PSD95 turnover is similar in synapses compared with the overall forebrain, there is a greater fraction of supercomplexes that retain at least one old PSD95 protein, underlying their importance in maintaining the overall molecular state of the postsynaptic density.\n\n### Slowest exchange of PSD95 in supercomplexes from the cortex\n\nBecause the lifetime of PSD95 is longer in cortical regions than other brain regions (Bulovaite et al., 2022), we hypothesized that this region may have different rates of exchange of PSD95 within supercomplexes. The brains from six 3-month-old PSD95-HaloTag mice, culled 7 days after SiR-HaloTag ligand injection, were dissected into five major regions (isocortex, hippocampus, olfactory bulb, cerebellum, and subcortex), and homogenized to extract the supercomplexes. After incubation with AF488-HaloTag ligand, to label new PSD95-Halo proteins, they were imaged using TIRF microscopy (Figure 4a).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig4-v1.jpg)\n\n**Figure 4.:** (a) Mouse brains were dissected into five broad regions. (b) The percentage of total PSD95 imaged contained in SiR-labeled (i), AF488-labeled (ii), and mixed (iii) supercomplexes. Error bars show the SD of 6 biological repeats. (c) The percentage of SiR-labeled (i), AF488-labeled (ii), and mixed (iii) PSD95 supercomplexes in each region of the brain. ANOVA tests for differences between the five brain region means was carried out for plots bi, bii, and biii. The ANOVA tests returned p-values of 0.71, 0.23, and 5.5 \u00d7 10\u22128, respectively. This indicates that there is no statistical significance in plots bi and bii, but there are statistical differences between some of the means in plot biii. Post hoc t-tests were carried out to identify the source of the significance. The p-values for comparisons between all regions are shown in Table 2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Key showing the five dissected brain regions (i). Percentage of total PSD95 proteins in old-only (ii), new-only (iii), and mixed (iv) supercomplexes (mean \u00b1 SD, n = 3). (b) Mouse brain region heatmaps showing the same data as in a ii\u2013iv.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/99303/elife-99303-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The percentage of complexes that contain (a) old-only, (b) new-only, or (c) mixed old and new PSD95 (mean \u00b1 SD for % PSD95, and \u00b1 95% CI for half-life, n = 3). There is no statistically significant correlation in a or b. However, R = 0.9536 and p = 0.01 from a Pearson\u2019s correlation test, indicating a significant positive correlation between the percentage of PSD95 in mixed supercomplexes and PSD95 puncta half-life.\n\nIn total, 60,798 supercomplexes were analyzed in the isocortex, 15,842 in the hippocampus, 3148 in the olfactory bulb, 36,126 in the cerebellum, and 28,339 in the subcortical areas. Strikingly, the isocortex contained the highest percentage of mixed supercomplexes (19 \u00b1 3%, mean \u00b1 SD), and the olfactory bulb the lowest (4 \u00b1 3%, mean \u00b1 SD) (Figure 4b, c). Correspondingly, the region with the highest percentage of new complexes was the olfactory bulb (40 \u00b1 16%, mean \u00b1 SD), whereas the isocortex had one of the lowest percentages (27 \u00b1 8%, mean \u00b1 SD) (Figure 4b, c) (statistical significances shown in Table 2). This pattern was also seen in 3-week-old mice (Materials and methods, Figure 4\u2014figure supplement 1).\n\n**Table 2.**\n Post hoc t-tests to locate the source of significance between the means of the mixed supercomplexes in the five brain regions analyzed.Only p-values less than 0.05 are shown. There are high levels of significance between the means of the isocortex and all other regions.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Isocortex</th>\n      <th>Hippocampus</th>\n      <th>Olfactory bulb</th>\n      <th>Cerebellum</th>\n      <th>Subcortex</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Isocortex</td>\n      <td></td>\n      <td>6.4 \u00d7 10\u22124</td>\n      <td>3.8 \u00d7 10\u22126</td>\n      <td>1.5 \u00d7 10\u22125</td>\n      <td>3.1 \u00d7 10\u22123</td>\n    </tr>\n    <tr>\n      <td>Hippocampus</td>\n      <td></td>\n      <td></td>\n      <td>3.8 \u00d7 10\u22123</td>\n      <td>1.0 \u00d7 10\u22122</td>\n      <td>N.S.</td>\n    </tr>\n    <tr>\n      <td>Olfactory bulb</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>N.S.</td>\n      <td>9.3 \u00d7 10\u22123</td>\n    </tr>\n    <tr>\n      <td>Cerebellum</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>N.S.</td>\n    </tr>\n    <tr>\n      <td>Subcortex</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\nThe correlation between the percentage of PSD95 proteins contained in old, new, and mixed supercomplexes in each brain region was compared with the previously published half-life of PSD95 in the same regions (Materials and methods, Figure 4\u2014figure supplement 2; Bulovaite et al., 2022). Although there is limited correlation between the percentage of PSD95 proteins contained in old or new supercomplexes and the half-lives of PSD95 puncta in each region, there is a statistically significant correlation for mixed supercomplexes, with a Pearson\u2019s correlation test value of R = 0.95 at a significance level of p = 0.01.\n\n## Discussion\n\nThe application of single-molecule detection, SR microscopy, and MINFLUX to study genetically encoded fluorescently tagged PSD95 has enabled us to reveal the structure of individual postsynaptic supercomplexes at the nanometer length scale. Although we have previously used biochemical approaches to demonstrate that, on average, two copies of PSD95 exist in supercomplexes in bulk protein extracts (Frank and Grant, 2017), this study represents the first direct observation of PSD95 in these megadalton supercomplexes at single-molecule resolution. Using multiple single-molecule and SR microscopy techniques to image the brain homogenate from three mouse models (PSD95-HaloTag, PSD95-eGFP, and PSD95-mEos2), we have robustly cross-validated our approach for studying the organization of PSD95 in individual supercomplexes. Unlike ensemble averaging techniques, a major advantage of our approach is the ability to observe and quantify hundreds of thousands of PSD95 molecules in tens of thousands of individual supercomplexes, allowing the stoichiometry in each one to be determined, as well as the distances between the PSD95 molecules. Furthermore, by tagging PSD95-HaloTag with specific Halo ligands in vivo, followed by imaging at different time points, our approach allows the lifetime of PSD95 in individual supercomplexes to be measured. Dissection of brain regions prior to homogenization and imaging also enables our methods to be deployed for generating maps of structure and lifetime of supercomplexes in different brain areas.\n\nPSD95 is one of the most abundant synaptic proteins and is localized beneath the postsynaptic membrane of excitatory synapses in a structure known as the postsynaptic density. Nanoscale imaging of PSD95 in synapses using PALM and STED reveals individual synapses differ in their PSD95 content and spatial organization. For example, in the mouse hippocampus and cortex there are populations of synapses with single or multiple 40 nm \u2018nanoclusters\u2019 and larger contiguous structures (Broadhead et al., 2016; Masch et al., 2018). Receptors, including AMPARs have also been shown to distribute into such nanoclusters (MacGillavry et al., 2013) and these have been shown to align to clusters at the presynapse via \u2018nanocolumns\u2019, demonstrating their functional role (Tang et al., 2016). Bulk protein extracts reveal that all PSD95 is assembled into 1\u20133 MDa supercomplexes (Frank and Grant, 2017; Frank et al., 2016; Husi et al., 2000) indicating that they are the building blocks of the nanoscale structures observed with SR techniques. We now show that this synaptic heterogeneity extends to the individual supercomplex level, and demonstrate that while the majority of supercomplexes contain two or fewer PSD95 molecules, others contain more. With the enhanced resolution of MINFLUX, we were able to measure the distances between individual PSD95 molecules within the supercomplexes and find that, rather than being fixed, there is considerable variation; however, class averaging showed a dominant separation distance of 12.7 nm. This could reflect a difference in the molecular make-up of each supercomplex. Indeed, supercomplexes are composed of dozens of proteins (Collins et al., 2006; Fern\u00e1ndez et al., 2009; Frank and Grant, 2017; Husi et al., 2000) and biochemical characterization of their composition from different brain regions show different supercomplexes populate synapses in different regions (Frank and Grant, 2017). Moreover, brainwide synaptome mapping of the proteins in individual synapses show synapse diversity arises from their constituent complexes and supercomplexes (Cizeron et al., 2020; Tomas-Roca et al., 2022; Zhu et al., 2018). Two recent studies have provided insights into the spacing between PSD95 molecules. MINFLUX revealed a mean nearest neighbor distance of approximately 7 nm (G\u00fcrth et al., 2023), while one-step nanoscale expansion microscopy found a preferred spacing of 8\u20139 nm (Shaib et al., 2023). These measurements, taken within the PSD, may represent distances between neighboring supercomplexes rather than within a single supercomplex, as reported here. Furthermore, in our study, the slightly larger measurements may be due to the size of the eGFP molecules (~3 nm) and the nanobodies used, which could contribute to an increased observed separation between PSD95 molecules.\n\nThe maintenance of synaptic structure at the molecular level is necessary to maintain physiological stability of brain circuits. Brainwide mapping of the spatial distribution of PSD95-expressing synapses across the lifespan shows that between 3 and 9 months of age the remarkable synapse diversity and its organization into the synaptome architecture is very stable (Cizeron et al., 2020). However, when we measured the lifetime of PSD95 during this age window, we found that the vast majority of PSD95 is replaced every few weeks (Bulovaite et al., 2022). Thus, the synaptome architecture, which is comprised of molecularly diverse synapses, is stable despite its constituent proteins being replaced. Our present findings offer an explanation for how this stability can be maintained: the protein supercomplexes which are the building blocks of the synaptome architecture are not removed and replaced in toto, but are maintained by the sequential replacement of constituents including core scaffolding proteins.\n\n### Memory maintenance by sequential subunit replacement and protein lifetime\n\nIn the synaptome theory of behavior (Grant, 2018; Zhu et al., 2018), representations, memories, and behavioral programs are encoded in the synaptome architecture, and thus its stability is required to maintain these functional outputs. The stability conferred on the synaptome architecture by the sequential replacement of subunits in supercomplexes offers a stability mechanism. However, it is also necessary to have plasticity to learn new things and to forget unnecessary information. We propose that synapse diversity resolves this dilemma: there are some synapses that are very stable, and others that are less stable and more plastic. Our present findings indicate that the most stable synapses are those with long-protein lifetime in the cortex, and that these synapses undergo slow replacement of their supercomplex subunits. The processes of subunit replacement and protein turnover are synergistic mechanisms that produce stability of supramolecular entities, which together with synapse diversity can result in synapses with a range of memory durations and plasticity potential.\n\nThis model fits with Crick\u2019s basic framework in that it involves dimeric proteins that sequentially exchange their subunits. Our findings extend his model in that we show a link between the protein lifetime and the rate of subunit exchange. At the time Crick made his postulate, the rate of protein turnover in the brain and synapses was unknown, and until recently, there was no evidence that synapses might differ in their protein lifetime. The surprising finding that some synapses can maintain copies of PSD95 for months draws into question Crick\u2019s assumption that protein lifetimes are much shorter than memories, because most memories are forgotten within a short period (days to weeks) in mice.\n\nIt is interesting to speculate how the exchange of PSD95 subunits could lead to the perpetuation of a molecular and behavioral memory. There are families of PSD95 supercomplexes that contain different proteins and particular interacting proteins may be well-suited to modifying the newly arrived subunit and altering its properties. The concentration of PSD95 supercomplexes is highest in the postsynaptic terminal and this environment may facilitate exchange of subunits between supercomplexes, consistent with our results. Some synapses such as the long-protein lifetime synapses that are enriched in the cortex may be better suited to the exchange process and transmission of modifications. Indeed, it may be that the environment of these synapses facilitates other complexes and supercomplexes (such as CamKII holoenzymes) to exchange and/or replace subunits and that our observations with PSD95 reflect a more widespread and general phenomenon. Our findings and approaches provide a platform for addressing these issues as well as providing a new model of memory duration.\n\n## Materials and methods\n\n### Preparation of mouse brain homogenates\n\nHomogenates were prepared from dissected brains or whole mouse forebrains, as described previously (Frank et al., 2016). Deoxycholate (DOC) extraction buffer (1% sodium deoxycholate, 50 mM tris(hydroxymethyl)aminomethane (tris) pH 9.0, 50 mM sodium fluoride, 20 \u00b5M zinc chloride, 1 mM sodium ortho-vanadate, 2 mM 4-(2-aminoethyl)-benzene-sulfonyl fluoride, and 1 Complete Protease Inhibitor Cocktail tablet (Roche, Germany) per 50 ml) was prepared and stored on ice prior to homogenization.\n\nFor whole brain homogenization, each forebrain was added to 5 ml DOC buffer and homogenized using 20 strokes with a 5-ml capacity Teflon homogenizer. The homogenate was stored on ice for 1 hr, homogenizing again using 20 strokes at 30 min. The homogenate was centrifuged at 50,000 \u00d7 g for 30 min at 4\u00b0C. The supernatant was separated from the pellet and contained the PSD95 supercomplexes.\n\nFor dissected brain homogenization, each dissected brain region was added to 0.6 ml DOC buffer. Homogenization and centrifugation were performed as above for whole brain specimens, except that pellet pestles (Fisher Scientific) were used instead of a Teflon homogenizer to homogenize the tissue.\n\n### Preparation of synaptosome fractions\n\nAdult (5-month-old) homozygous PSD95-HaloTag mice were injected with HaloTag ligand conjugated with SiR as described previously (Bulovaite et al., 2022). Seven days after injection, the mice were sacrificed with cervical dislocation and the forebrain was dissected, briefly rinsed with ice-cold phosphate-buffered saline (PBS), frozen with liquid nitrogen, and stored at \u221280\u00b0C before use. For synaptosome preparation, homogenization of tissue was performed by 12 strokes with Teflon-glass homogenizer in Homogenization buffer (0.32 M sucrose, 1 mM 4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid (HEPES) pH 7.4, and Complete EDTA-free Protease Inhibitor Cocktail (Merck)). Brain homogenate was centrifuged at 1400 \u00d7 g for 10 min at 4\u00b0C to obtain the pellet and the supernatant fraction. The pellet fraction was resuspended in Homogenization buffer with three strokes of the homogenizer and centrifuged at 700 \u00d7 g for 10 min at 4\u00b0C. The supernatant of the first and second centrifugation was pooled as an S1 fraction and subjected to centrifugation at 14,000 \u00d7 g for 10 min at 4\u00b0C. The resulting pellet was resuspended with Homogenization buffer (P2 fraction) and centrifuged in a sucrose density gradient (0.85/1.0/1.2 M) for 2 hr at 82,500 \u00d7 g. The fraction between 1.0 and 1.2 M was collected and used as synaptosome.\n\n### Dissection of mouse brain regions\n\nMice were culled by cervical dislocation and decapitated. The brains were removed from the skull and quickly washed with ice-cold PBS. Brains were dissected on ice, on a plastic plate covered with 3 MM filter paper soaked in ice-cold PBS. The cerebellum and olfactory bulbs were removed first, then the hippocampus and cortex were isolated from the rest of the brain. Brain samples were snap frozen in liquid nitrogen and stored at \u221280\u00b0C.\n\n### Protein turnover measurements\n\nFor the protein turnover experiments, homozygous PSD95HaloTag/HaloTag knock-in mice were injected with 200 \u00b5l 1.5 mM SiR-Halo ligand diluted in saline and Pluronic F-127 (20% in dimethyl sulfoxide (DMSO)). As a control, some injected mice were culled 6 hr post injection to provide a 0 day time point with maximum saturation. The remainder of the mice were culled 7 days post injection. Their brains were extracted and prepared as forebrain or region-specific homogenates as described above. Prior to imaging, the turnover homogenates were incubated with 10 \u00b5M AF488-Halo ligand in a 1:1 volumetric ratio for 1 hr at 4\u00b0C.\n\n### TIRF microscopy\n\nAll diffraction-limited and PALM experiments were conducted on a home-built TIRF microscope described previously (de Moliner et al., 2023). Briefly, collimated laser light at 405 nm (Cobolt MLD 405-250 Diode Laser System, Cobalt, Sweden), 488 nm (Cobolt Fandango-300 DPSS Laser System, Cobalt, Sweden), 561 nm (Cobolt DPL561-100 DPSS Laser System, Cobalt, Sweden), and 638 nm (Cobolt MLD Series 638-140 Diode Laser System, Cobolt AB, Solna, Sweden) was aligned and directed parallel to the optical axis at the edge of a 1.49 NA TIRF objective (CFI Apochromat TIRF 60XC Oil), mounted on an inverted Nikon TI2 microscope. The microscope was fitted with a perfect focus system to auto-correct the z-stage drift during imaging. Fluorescence collected by the same objective was separated from the returning TIR beam by a dichroic mirror Di01-R405/488/561/635 (Semrock, Rochester, NY, USA), and was passed through appropriate filters (488 nm: BLP01-488R-25, FF01-525/30-25; 561 nm: LP02-568RS, FF01-587/35; 638 nm: FF01-432/515/595/730-25, LP02-647RU-25, Semrock, Rochester, NY, USA). Fluorescence was then passed through a 2.5\u00d7 beam expander and recorded on an EMCCD camera (Delta Evolve 512, Photometrics) operating in frame transfer mode (EMGain = 11.5 e\u2212/ADU and 250 ADU/photon). Each pixel was 103 nm in length. Images were recorded with an exposure time of 50 ms. The microscope was automated using the open-source microscopy platform Micromanager. Borosilicate glass coverslips (20 \u00d7 20 mm, VWR International) were cleaned using an Ar plasma cleaner (Zepto, Diener) for 30 min to remove any fluorescent residues. Frame-Seal slide chambers (9 \u00d7 9 mm2, Bio-Rad) were affixed to the glass to create a well in which samples (100 \u00b5l) were added. All samples in the wells were washed three times with PBS prior to imaging.\n\nFor diffraction-limited photobleaching analysis of eGFP, the neat homogenate was diluted 1:100 in PBS and irradiated and imaged with 488 nm (68 W cm\u22122, 25 s), ensuring all molecules were photobleached. For diffraction-limited photobleaching analysis of SiR and AF488, whole forebrain homogenate and DOC-treated synaptosomes were diluted 1:100 in PBS. Homogenates from dissected brain regions were diluted 1:1000 to 1:10,000 in PBS. The samples were first irradiated and imaged with 638 nm light (850 W cm\u22122, 25 s), followed by 488 nm light (110 W cm\u22122, 25 s), ensuring all molecules were photobleached. For PALM imaging, the samples were diluted 1:100 in PBS and illuminated with 15 cycles of 405 nm (75 W cm\u22122, 1 s) and 561 nm (1500 W cm\u22122, 10 s) irradiation until all molecules were photobleached. In preparation for imaging, samples were incubated on the glass surface for 30 s prior to washing three times with 0.02 \u00b5m filtered PBS.\n\n### Coincidence analysis\n\nCoincidence analysis was carried out using a custom-written MATLAB script. Initially, all spots in the diffraction-limited images were detected using the Find Maxima function in ImageJ. The prominences used varied depending upon the fluorophores and the power of the lasers, but generally were ~500\u20131000. The locations of all spots in both channels were loaded into MATLAB. The distances between the nth spot in the first channel and all spots in the second channel were calculated. Any spots with a separation distance less than the channel offset parameter (2 pixels in this work) were classed as being \u2018coincident\u2019. Finally, the number of spots in the first channel, the number of spots in the second channel, and the number of coincident spots were output by the script.\n\nAll scripts used in this analysis are available at: https://doi.org/10.5281/zenodo.8059239; Morris, 2023b.\n\n### Photobleaching analysis\n\nPhotobleaching data were collected using the TIRF microscope described above, and analyzed using a published approach (Chappard et al., 2023; Choi et al., 2022). The intensity of the emitted fluorescence from all molecules was tracked over a period of 25 s. The intensity traces from each molecule were extracted by finding spots in the first frame of the image stack using the ImageJ Find Maxima function. The intensity at each spot location was then measured in all frames of the stack using a custom-written ImageJ macro. Chung\u2013Kennedy filtering was performed on the resulting intensity traces using a custom-written MATLAB script, with a shuttling window size of 12. The Chung\u2013Kennedy filter (Chung and Kennedy, 1991) shuttles two windows along the dataset either side of each data point. The output of the Chung\u2013Kennedy filter is a weighted average of the mean of the two windows. The weighting shifts the output value toward the mean of the window with the lowest variance such that noise is reduced, but discontinuities in the data do not become blurred during the filtering process.\n\nTo detect photobleaching steps in the filtered traces, an approximate differential of the filtered data was calculated. Peaks in the differentiated intensity traces indicated a sharp change in gradient in the intensity trace and thus the position of the photobleaching steps. A peak threshold of 75 was applied to the differentiated intensity traces to extract the location of the steps. The validity of each of the steps was determined by calculating the ratio of individual step height to the local regional variance. This calculation returned a t-statistic for each potential step. A t-threshold of 0.1 was applied to distinguish true steps from false steps. True steps have large ratios of step height to local regional variance and thus larger t-statistics. False steps have smaller ratios of step height to local regional variance and thus smaller t-statistics. Once the location of each step was known and the validity confirmed, a step function was generated as a fit to the raw step data.\n\nAll scripts used in this analysis are available at: https://doi.org/10.5281/zenodo.8059239; Morris, 2022.\n\n### PALM analysis\n\nThe data were preliminarily analyzed using the Peak Fit function of the GDSC SMLM ImageJ plugin to output super-resolved localizations of the blinking fluorophores. A signal strength threshold of 20 was used, along with a precision threshold of 40 nm. Following this, the drift was corrected for using the Drift Calculator function in the GDSC SMLM ImageJ plugin. Once the localizations were extracted, a custom-written MATLAB clustering script was used. The clustering script sorted all localizations by precision from low precision to high precision. To correct for multiple blinks emanating from the same fluorophore, the script consolidated all localizations within the precision of another localization into one object. The distances between all objects were then calculated. Objects separated by less than 160 nm were grouped into clusters. The number of objects in each cluster was counted. Clusters containing one object were defined as \u2018monomeric\u2019, clusters containing two objects were defined as \u2018dimeric\u2019, etc. Information pertaining to the clusters (number of objects, x\u2013y position of objects, average precision) was output as a text file.\n\nClass averaging was performed on the class of clusters containing two objects by another custom-written MATLAB script. The script aligns all dimeric clusters parallel to the x-axis and centers them about the midpoint between the two objects. The objects are plotted as width = precision, and the resulting density at each x\u2013y position is calculated to give the surface plot showing the class average.\n\nAll scripts used in this analysis are available at: https://doi.org/10.5281/zenodo.8059239; Morris, 2023a.\n\n### MINFLUX\n\nMINFLUX imaging was conducted on an Abberior 3D-MINFLUX microscope (Abberior Instruments, G\u00f6ttingen, Germany) equipped with a 100\u00d7 oil immersion objective lens (UPL SAPO100XO/1.4, Olympus, Tokyo, Japan). MINFLUX imaging of Alexa 647 was performed using a 642-nm CW excitation laser at 22.6 \u00b5W/cm2 in the first MINLUX iteration. Laser powers were measured at the position of the objective lens back focal plane using a Thorlabs PM100D power meter equipped with a S120C sensor head. Fluorescence signal from Alexa 647 was detected using two avalanche photodiodes (SPCM-AQRH-13, Excelitas Technologies, Mississauga, Canada) with a detection range of 650\u2013685 nm for the first detector and 685\u2013760 nm for the second detector channel (detected photons were summed). The pinhole was set to a size corresponding to 0.78 airy units for all imaging experiments. The microscope was operated by Abberior Imspector software (version 16.3.13924-m2112). The build-in stabilization system was used to minimize drift of the sample for the duration of the measurement. Therefore, scattering from 200 nm gold nanoparticles (Nanopartz, Cat# A11-200-CIT-DIH-1-10, USA) which were deposited on the coverslip surface was used as a positional reference for the active sample stabilization.\n\nFor MINFLUX imaging of PSD95-GFP, borosilicate glass coverslips (No. 1.5H, round, 24 mm diameter, product # 117640, Marienfeld, Germany) were Ar plasma cleaned for 15 min to remove any fluorescent residues. Next, coverslips were incubated with PSD95 protein lysate (1:100 in PBS) at room temperature for 1 hr. After three washing steps with PBS, coverslips were incubated with 200 nm goldparticles (Nanopartz, Cat# A11-200-CIT-DIH-1-10, USA) diluted 1:10 in PBS for 10 min. To remove goldparticles which did not attach, coverslips were washed three times with PBS and subsequently blocked using 0.5% bovine serum albumin (BSA) in PBS for 20 min at room temperature. Next, PSD95GFP was stained using an anti-GFP nanobody coupled with Alexa 647 (FluoTag-X4 anti-GFP-A647, Nanotag, Germany) diluted 1:100 in 0.5% BSA in PBS and incubated overnight at 4\u00b0C. Next day, the sample was washed three times with PBS and mounted in GLOX buffer (50 mM Tris, 10 mM NaCl, 10% glucose (wt/vol), 500 \u00b5g/ml glucose oxidase, 40 \u00b5g/ml catalase, pH 8.0) supplemented with 20 mM2-Mercaptoethylamine on cavity slides and sealed using Twinsil (Picodent, Germany). For 2D-MINFLUX imaging of PSD95-GFP, the MINFLUX sequence with five iterations was used (Table 1).\n",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Nils Brose, Max Planck Institute of Experimental Medicine Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99303.3.sa0](https://doi.org/10.7554/eLife.99303.3.sa0)\n\nThis important study explores how cells maintain subcellular structures in the face of constant protein turnover, focusing on neurons, whose synapses must be kept stable over long periods of time for memory storage. Using proteins from knock-in mice expressing tagged variants of the synaptic scaffold protein PSD95, nanobodies, and multiple imaging methods, there is compelling evidence that PSD95 proteins form complexes at synapses in which single protein copies are sequentially replaced over time. This happens at different rates in different synapse types and is slowest in areas where PSD95 lifetime is the longest and long-term memories are stored. While of general relevance to cell biology, these findings are of particular interest to neuroscientists because they support the hypothesis put forward by Francis Crick that stable synapses, and hence stable long-term memories, can be maintained in the face of short protein lifetimes by sequential replacement of individual subunits in synaptic protein complexes.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99303.3.sa1](https://doi.org/10.7554/eLife.99303.3.sa1)\n\nThe present study explored the principles that allow cells to maintain complex subcellular proteinaceous structures despite the limited lifetimes of the individual protein components. This is particularly critical in the case of neurons, where the size and protein composition of synapses define synaptic strength and encode memory.\n\nPSD95 is an abundant synapse protein that acts as a scaffold in the recruitment of transmitter receptors and other signaling proteins and is required for memory formation. The authors used super-resolution microscopy to study PSD95 super-complexes isolated from the brains of mice expressing tagged PSD variants (Halo-Tag, mEos, GFP). Their results show compellingly that a large fraction (~25%) of super-complexes contains two PSD95 copies about 13 nm apart, that there is substantial turnover of PSD95 proteins in super-complexes over a period of seven days, and that ~5-20% of the super-complexes contain new and old PSD95 molecules. This percentage is higher in synaptic fractions as compared to total brain lysates, and highest in isocortex samples (~20%). These important findings support the hypothesis put forward by Crick that sequential subunit replacement gives synaptic super-complexes long lifetimes and thus aids in memory maintenance. Overall, this is a very interesting study that provides key insights into how synaptic protein complexes are formed and maintained. On the other hand, the actual role of these PSD95 super-complexes in long-term memory storage remains unknown. Specifically, a direct correlation between PSD95 stability and memory formation remains hypothetical - but the present findings indicate important new directions for studying the mechanisms that control postsynaptic protein organisation and the maintenance of postsynaptic proteinaceous substructures.\n\nStrengths\n\n(1) The study employed an appropriate and validated methodology.\n\n(2) Large numbers of PSD95 super-complexes from three different mouse models were imaged and analyzed, providing adequately powered sample sizes.\n\n(3) State-of-the-art super-resolution imaging techniques (PALM and MINFLUX) were used, providing a robust, high-quality, cross-validated analysis of PSD95 protein complexes that is useful for the community.\n\n(4) The result that PSD95 proteins in dimeric complexes are on average 12.7 nm apart is useful and has implications for studies on the nanoscale organization of PSD95 at synapses.\n\n(5) The finding that postsynaptic protein complexes can continue to exist while individual components are being renewed is important for our understanding of synapse maintenance and stability.\n\n(6) The data on the turnover rate of PSD95 in super-complexes from different brain regions provide a first indication of potentially meaningful differences in the lifetime of super-complexes between brain regions.\n\nWeaknesses\n\n(1) The manuscript emphasizes the hypothesis that stable super-complexes, maintained through sequential replacement of subunits, might underlie the long-term storage of memory. While an interesting idea, this notion requires considerably more research. The presented experimental data are indeed consistent with this notion, but there is no evidence that these complexes are causally related to memory storage.\n\n(2) Much of the presented work is performed on biochemically isolated protein complexes. The biochemical isolation procedures rely on physical disruption and detergents that are known to alter the composition and structure of complexes in certain cases. Thus, it remains unclear how the protein complexes described in this study relate to PSD95 complexes in intact synapses.\n\n(3) Because not all GFP molecules mature and fold correctly in vitro and the PSD95-mEos mice used were heterozygous, the interpretation of the corresponding quantifications is not straightforward.\n\n(4) It was not tested whether different numbers of PSD95 molecules per super-complex might contribute to different retention times of PSD95, e.g. in synaptic vs. total-forebrain super-complexes.\n\n(5) The conclusion that the population of 'mixed' synapses is higher in the isocortex than in other brain regions is not supported by statistical analysis.\n\n(6) The validity of conclusions regarding PSD95 degradation based on relative changes in the occurrence of SiR-Halo-positive puncta is limited.\n",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "86ae62bd-aa3f-4086-ac3c-5c632ac33237",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C1",
+      "claim": "Dimeric protein complexes in synapses can sequentially replace their subunits according to Francis Crick's 1984 hypothesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The concept that dimeric protein complexes in synapses can sequentially replace their subunits has been a cornerstone of Francis Crick's 1984 hypothesis, explaining how long-term memories could be maintained in the face of short protein lifetimes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Referenced to Crick's 1984 hypothesis",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e1b9aa26-76c7-4f9b-8a7f-51d1441f3622",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C2",
+      "claim": "It is unknown whether the subunits of protein complexes that mediate memory are sequentially replaced in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unknown whether the subunits of protein complexes that mediate memory are sequentially replaced in the brain and if this process is linked to protein lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "df5dd057-14dd-41d5-bcc1-b0bbf34538d5",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C3",
+      "claim": "PSD95 plays a crucial role in memory.",
+      "claim_type": "EXPLICIT",
+      "source": "We address these issues by focusing on supercomplexes assembled by the abundant postsynaptic scaffolding protein PSD95, which plays a crucial role in memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established role of PSD95 in memory",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "b1868293-dd36-4bc1-b00b-e8b1cdc0677a",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C4",
+      "claim": "A population of PSD95-containing supercomplexes is comprised of two copies of PSD95.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a population of PSD95-containing supercomplexes comprised of two copies of PSD95, with a dominant 12.7 nm separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct experimental observation using single-molecule detection",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "26004d4f-218d-4343-86c6-a4fc100d4624",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C5",
+      "claim": "The dominant separation between PSD95 subunits in supercomplexes is 12.7 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "We found a population of PSD95-containing supercomplexes comprised of two copies of PSD95, with a dominant 12.7 nm separation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Measured using MINFLUX microscopy",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "184d350d-71a0-4c82-8a41-29a2c7bbd846",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C6",
+      "claim": "Each PSD95 subunit is sequentially replaced over days and weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Time-stamping of PSD95 subunits in vivo revealed that each PSD95 subunit was sequentially replaced over days and weeks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Time-stamping experiments in vivo",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "d435c950-eb02-4c2b-aeb5-805a50c3830d",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C7",
+      "claim": "Subunit replacement is slowest in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of brain regions showed subunit replacement was slowest in the cortex, where PSD95 protein lifetime is longest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison across brain regions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "daa5ff1e-3fce-4acf-81f7-624176004254",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C8",
+      "claim": "PSD95 protein lifetime is longest in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparison of brain regions showed subunit replacement was slowest in the cortex, where PSD95 protein lifetime is longest.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Regional comparison of protein lifetime",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "7951d06f-f631-4d8b-9aac-28d3467a4b20",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C9",
+      "claim": "Protein supercomplexes within the postsynaptic density can be maintained by gradual replacement of individual subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings reveal that protein supercomplexes within the postsynaptic density can be maintained by gradual replacement of individual subunits providing a mechanism for stable maintenance of their organization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental observations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e524bd16-873d-4a8d-8dd6-8a8c4b59672c",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C10",
+      "claim": "Synapses with slow subunit replacement of protein supercomplexes and long-protein lifetimes are specialized for long-term memory storage.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we extend Crick's model by suggesting that synapses with slow subunit replacement of protein supercomplexes and long-protein lifetimes are specialized for long-term memory storage and that these synapses are highly enriched in superficial layers of the cortex where long-term memories are stored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of experimental findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e1e4482e-4384-43bc-8d2f-4fb14907e7b6",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C11",
+      "claim": "Synapses specialized for long-term memory storage are highly enriched in superficial layers of the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, we extend Crick's model by suggesting that synapses with slow subunit replacement of protein supercomplexes and long-protein lifetimes are specialized for long-term memory storage and that these synapses are highly enriched in superficial layers of the cortex where long-term memories are stored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation combining experimental data with known cortical function",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "6725e282-dd6d-40c0-b32b-f5a3346220d3",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C12",
+      "claim": "The vast majority of synapses in the mammalian brain employ glutamate as the neurotransmitter.",
+      "claim_type": "EXPLICIT",
+      "source": "The vast majority of synapses in the mammalian brain employ glutamate as the neurotransmitter, which is released from the presynaptic terminal on axons and diffuses onto the postsynaptic terminal on dendrites where it binds glutamate receptors (Kandel et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Kandel et al., 2021",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "6bb4c700-b4bd-4ba9-962c-a7b7e846c4d0",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C13",
+      "claim": "Activating glutamate receptors triggers biochemical changes in the postsynaptic terminal that ultimately encode memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Activating glutamate receptors triggers the biochemical changes in the postsynaptic terminal that ultimately encode memories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established neuroscience knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "365463d5-fc0c-4d8f-bb13-138f7ebd066d",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C14",
+      "claim": "The proteome of the postsynaptic termini of excitatory synapses comprises over 1000 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The proteome of the postsynaptic termini of excitatory synapses is highly complicated and comprises over 1000 proteins representing many structural and functional classes of molecules (Sorokina et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Sorokina et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "8f84859f-0638-44a8-8e4c-6a0e7386e2a2",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C15",
+      "claim": "All postsynaptic proteins are organized into supramolecular assemblies of complexes and supercomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Biochemical studies show that all these proteins are organized into supramolecular assemblies of complexes and supercomplexes (complexes of complexes) (Collins et al., 2006; Collins and Grant, 2007; Fern\u00e1ndez et al., 2017; Fern\u00e1ndez et al., 2009; Frank and Grant, 2017; Frank et al., 2016; Husi et al., 2000; Husi and Grant, 2001; Nithianantharajah et al., 2013; Pocklington et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple biochemical studies cited",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e8ec8231-b2fe-4aab-afcb-99ee907aba10",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C16",
+      "claim": "NMDA and AMPA receptors are formed from four membrane-spanning subunits that together produce a ligand-gated ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The best described complexes are the ionotropic glutamate receptors known as NMDA (N-methyl-D-aspartate) and AMPA (\u03b1-amino-3-hydroxy-5-methyl-4-isoxazolepropionic acid) receptors, which are formed from four membrane-spanning subunits that together produce a ligand-gated ion channel (Greger et al., 2017; Hansen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Greger et al., 2017 and Hansen et al., 2018",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "d9f7832b-3ed3-490e-8f9d-8c372a788f69",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C17",
+      "claim": "PSD95 can assemble various complexes including NMDA and AMPA receptors, other ion channels, adhesion proteins, and signaling proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Major supercomplexes are those formed by the scaffolding protein PSD95 (Cho et al., 1992), which can assemble various complexes including NMDA and AMPA receptors, other ion channels, adhesion proteins, and signaling proteins (Fern\u00e1ndez et al., 2009; Frank and Grant, 2017; Frank et al., 2016; Husi et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple studies cited",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "7ee7cb84-acb3-4cd2-b086-e9b51c0a042a",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C18",
+      "claim": "Mice and humans carrying mutations in PSD95 show profound learning and memory deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice and humans carrying mutations in PSD95 show profound learning and memory deficits (Migaud et al., 1998; Nithianantharajah et al., 2013), indicating that the formation and function of supercomplexes is crucial for storage of information in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Migaud et al., 1998 and Nithianantharajah et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "0c1d9c05-0fa1-4291-bfaa-dd5af708d07c",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C19",
+      "claim": "The formation and function of supercomplexes is crucial for storage of information in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice and humans carrying mutations in PSD95 show profound learning and memory deficits (Migaud et al., 1998; Nithianantharajah et al., 2013), indicating that the formation and function of supercomplexes is crucial for storage of information in the brain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from mutation studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "a87d7034-04c7-4f67-be89-4a764a57484d",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C20",
+      "claim": "Rapid biochemical changes in the postsynaptic termini of excitatory synapses underlie the initial encoding of memories.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is widely accepted that rapid biochemical changes in the postsynaptic termini of excitatory synapses underlie the initial encoding of memories, the mechanisms that control the duration of memories and rate of forgetting remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Widely accepted scientific knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "09cb06d3-e418-48ad-9804-51f8c14eedfc",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C21",
+      "claim": "The mechanisms that control the duration of memories and rate of forgetting remain poorly understood.",
+      "claim_type": "EXPLICIT",
+      "source": "Although it is widely accepted that rapid biochemical changes in the postsynaptic termini of excitatory synapses underlie the initial encoding of memories, the mechanisms that control the duration of memories and rate of forgetting remain poorly understood.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "d2962371-cd10-46ac-9c92-1819cfb45536",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C22",
+      "claim": "Crick reasoned that biochemical changes in synapses would be erased by protein turnover.",
+      "claim_type": "EXPLICIT",
+      "source": "He reasoned that the biochemical changes in synapses would be erased by protein turnover, and that because some memories must have a longer lifetime than synaptic proteins, he postulated that there must be molecular mechanisms that perpetuated the initial biochemical changes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to Crick's reasoning",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "5edfe270-4d22-4098-a2c6-e4b1ec6b2548",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C23",
+      "claim": "Crick postulated that dimeric complexes of proteins may be modified during learning and gradually replace their subunits to transfer molecular memory.",
+      "claim_type": "EXPLICIT",
+      "source": "Toward this, he posited that dimeric complexes of proteins may be modified during learning and gradually replace their subunits in a way that would allow the 'molecular memory' in a preexisting subunit to be transferred to the new subunit in a mixed complex of old and new subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reference to Crick's hypothesis",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "5f4ccf32-459b-4fdc-9052-79b35f1cc3e1",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C24",
+      "claim": "CamKII is comprised of multiple subunits that have the capacity for autophosphorylation and persistent activation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result of this, much attention has focused on the enzymatic complex known as calcium/calmodulin-dependent protein kinase II (CamKII), which is comprised of multiple subunits that have the capacity for autophosphorylation and persistent activation (Bayer and Schulman, 2019; Bhattacharyya et al., 2016; Hell, 2014; Stratton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple citations provided",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "dcf49e02-5c1a-4376-8e8a-3548b612f5a7",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C25",
+      "claim": "Holoenzymes of CamKII can exchange subunits in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments using recombinant proteins in vitro show that holoenzymes of CamKII can exchange subunits, which in principle could be a mechanism for perpetuation of molecular memories (Bhattacharyya et al., 2020; Bhattacharyya et al., 2016; Singh and Bhalla, 2018; Stratton et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "In vitro experiments cited",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "cf0fe2c8-2c95-41be-bbac-d7d2aa38342a",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C26",
+      "claim": "It is unknown if old subunits are sequentially replaced by new subunits in vivo in CamkII complexes or any other complexes in synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, it is unknown if old subunits are sequentially replaced by new subunits in vivo in CamkII complexes, or indeed any other complexes in synapses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of knowledge gap",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "48c31c6e-c4f1-447b-81aa-ccd327aed43e",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C27",
+      "claim": "Biochemical studies of PSD95 supercomplexes isolated from the mouse brain reveal there is a family of supercomplexes where members all appear to comprise two copies of PSD95 and different combinations of interacting proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "First, biochemical studies of PSD95 supercomplexes isolated from the mouse brain reveal there is a family of supercomplexes where members all appear to comprise two copies of PSD95 and different combinations of interacting proteins (Frank and Grant, 2017; Frank et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited biochemical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "9c20acd7-c97b-414b-bf34-563bdbd0c27e",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C28",
+      "claim": "Excitatory synapses show high diversity arising from the differential distribution of protein complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, excitatory synapses show high diversity arising from the differential distribution of protein complexes (Cizeron et al., 2020; Zhu et al., 2018) and differential lifetimes of PSD95 (Bulovaite et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Multiple studies cited",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "6671d05e-7727-49c6-97bf-22478b7e36c6",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C29",
+      "claim": "Excitatory synapses show high diversity arising from differential lifetimes of PSD95.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, excitatory synapses show high diversity arising from the differential distribution of protein complexes (Cizeron et al., 2020; Zhu et al., 2018) and differential lifetimes of PSD95 (Bulovaite et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bulovaite et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "184c4fdf-15c9-4687-85c7-25f79b141215",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C30",
+      "claim": "Synapses with longest PSD95 lifetimes are most highly enriched in the cortex where long-term memories are stored.",
+      "claim_type": "EXPLICIT",
+      "source": "Those synapses with longest PSD95 lifetimes were referred to as long-protein lifetime synapses, and a brainwide analysis of their distribution showed they were most highly enriched in the cortex where long-term memories are stored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Brainwide analysis of synapse distribution",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "9e32711b-6e68-4c91-991b-150934151227",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C31",
+      "claim": "On average, there are 1.6 PSD95 proteins per PSD95-containing supercomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, there were 1.6 PSD95 proteins per PSD95-containing supercomplex; however, taking advantage of our ability to characterize individual supercomplexes, we found that 63% contained one PSD95 protein, 24% two PSD95 proteins, and 13% more than two PSD95 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Photobleaching analysis of >6000 supercomplexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e5437518-2efb-4295-bdb3-967caea692d6",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C32",
+      "claim": "63% of PSD95-containing supercomplexes contain one PSD95 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, there were 1.6 PSD95 proteins per PSD95-containing supercomplex; however, taking advantage of our ability to characterize individual supercomplexes, we found that 63% contained one PSD95 protein, 24% two PSD95 proteins, and 13% more than two PSD95 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Photobleaching step counting analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "02ef51e0-72b3-4db0-bde3-2fb87f5e8223",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C33",
+      "claim": "24% of PSD95-containing supercomplexes contain two PSD95 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, there were 1.6 PSD95 proteins per PSD95-containing supercomplex; however, taking advantage of our ability to characterize individual supercomplexes, we found that 63% contained one PSD95 protein, 24% two PSD95 proteins, and 13% more than two PSD95 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Photobleaching step counting analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "6a8664ca-d5e4-4857-b3a2-f10da95f5172",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C34",
+      "claim": "13% of PSD95-containing supercomplexes contain more than two PSD95 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "On average, there were 1.6 PSD95 proteins per PSD95-containing supercomplex; however, taking advantage of our ability to characterize individual supercomplexes, we found that 63% contained one PSD95 protein, 24% two PSD95 proteins, and 13% more than two PSD95 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Photobleaching step counting analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "87c1a635-bcca-48cb-997e-92572cdfe33d",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C35",
+      "claim": "Not all eGFP will fold correctly, with typical in vitro refolding yields for GFP being 50-60%.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that not all eGFP will fold correctly (typical in vitro refolding yields for GFP are 50\u201360% Battistutta et al., 2000; Reid and Flynn, 1997; Ward and Bokman, 1982), this suggests that there is an abundant population of PSD95 supercomplexes that contain two PSD95 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple studies on GFP folding",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "2ab5fb58-fe6f-449f-801a-4be999073ec7",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C36",
+      "claim": "There is an abundant population of PSD95 supercomplexes that contain two PSD95 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that not all eGFP will fold correctly (typical in vitro refolding yields for GFP are 50\u201360% Battistutta et al., 2000; Reid and Flynn, 1997; Ward and Bokman, 1982), this suggests that there is an abundant population of PSD95 supercomplexes that contain two PSD95 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from photobleaching data corrected for GFP folding efficiency",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "16ae5cd9-545a-4476-a2a7-1820e228ca23",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C37",
+      "claim": "The vast majority of eGFP is monomeric.",
+      "claim_type": "EXPLICIT",
+      "source": "We validated our approach using purified eGFP, demonstrating that the vast majority of eGFP was monomeric (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Validation experiment with purified eGFP",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "79a3e5aa-19b3-4ede-b551-8450cad1f592",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C38",
+      "claim": "76 \u00b1 2% of PSD95-mEoS2 supercomplexes contain only one PSD95-mEoS2 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "76 \u00b1 2% of the supercomplexes contained only one PSD95-mEoS2 protein, 12 \u00b1 1% contained two PSD95-mEoS2 proteins, and the remainder (12 \u00b1 2%) of the clusters contained more than two PSD95-mEoS2 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "PALM analysis of 82,501 supercomplexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "60bb071d-da09-4ea9-9a5d-ee3b2d0954cc",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C39",
+      "claim": "12 \u00b1 1% of PSD95-mEoS2 supercomplexes contain two PSD95-mEoS2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "76 \u00b1 2% of the supercomplexes contained only one PSD95-mEoS2 protein, 12 \u00b1 1% contained two PSD95-mEoS2 proteins, and the remainder (12 \u00b1 2%) of the clusters contained more than two PSD95-mEoS2 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "PALM analysis of 82,501 supercomplexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "953dc73a-669c-4108-8280-b7311bf330bb",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C40",
+      "claim": "12 \u00b1 2% of PSD95-mEoS2 supercomplexes contain more than two PSD95-mEoS2 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "76 \u00b1 2% of the supercomplexes contained only one PSD95-mEoS2 protein, 12 \u00b1 1% contained two PSD95-mEoS2 proteins, and the remainder (12 \u00b1 2%) of the clusters contained more than two PSD95-mEoS2 proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "PALM analysis of 82,501 supercomplexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "5b24897a-be66-4df2-a09d-0f54cdc08518",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C41",
+      "claim": "Only half of the PSD95 proteins are fused to mEoS2 in heterozygous mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that only half of the PSD95 proteins are fused to mEoS2 in heterozygous mice, and that not all mEoS2 will fold correctly, these results confirm the findings from the photobleaching analysis, suggesting that supercomplexes contain PSD95 protein at a range of stoichiometries, with the majority containing two or fewer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Genetic property of heterozygous mice",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "4824764d-f87c-4322-bb8d-fca1d53d70b9",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C42",
+      "claim": "Class averaging of supercomplexes containing two PSD95-mEoS2 proteins reveals one dominant separation with a mean distance of 37.8 nm between PSD95 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "We next determined the mean distance between PSD95 molecules by class averaging the 9,743 supercomplexes that contained two PSD95-mEoS2 proteins, revealing one dominant separation with a mean distance of 37.8 nm between PSD95 molecules (Figure 1ciii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Class averaging of 9,743 supercomplexes using PALM",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "5d2f489f-fdbf-409a-9e88-e312cc50b536",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C43",
+      "claim": "MINFLUX can attain a spatial resolution of 1-5 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "As this separation distance is close to the spatial resolution that we were able to achieve using PALM, we further analyzed the supercomplexes using MINFLUX, which can attain a spatial resolution of 1\u20135 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Technical capability of MINFLUX",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e4b311fa-367d-4e12-93f7-9bd258d82172",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C44",
+      "claim": "Class averaging of MINFLUX measurements shows two clear peaks separated by 12.7 nm between PSD95 molecules in supercomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Class averaging the distribution of individual distances measured between two PSD95 molecules in the supercomplexes (Figure 1dii) shows two clear peaks separated by 12.7 nm (Figure 1diii).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "MINFLUX analysis of 1011 supercomplexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "84471195-96b7-405b-b277-891b2950a77f",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C45",
+      "claim": "Excitatory synapses have a wide range of protein lifetimes extending from a few hours to several months.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously measured the rate of PSD95 turnover across the mouse brain at single-synapse resolution, demonstrating that excitatory synapses have a wide range of protein lifetimes extending from a few hours to several months (Bulovaite et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bulovaite et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "a658a856-664b-41ee-b144-493c2c1d8334",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C46",
+      "claim": "SiR-Halo forms a covalent bond with the PSD95-HaloTag.",
+      "claim_type": "EXPLICIT",
+      "source": "Because SiR-Halo forms a covalent bond with the PSD95-HaloTag, the persistence of labeling over time after injection reports whether PSD95 has been replaced in individual supercomplexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Chemical property of SiR-Halo ligand",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "819314d9-1f04-4fd0-807d-722a3e26d769",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C47",
+      "claim": "Approximately 40% of the old PSD95 protein is replaced by new protein between day-0 and day-7.",
+      "claim_type": "EXPLICIT",
+      "source": "Approximately 40% of the old PSD95 protein is replaced by new protein between day-0 and day-7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Quantification from dual-labeling experiment",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "07556b64-492a-4c7c-b5c2-f7b4982d70bd",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C48",
+      "claim": "At day-0, 96% of supercomplexes were labeled with only SiR-Halo, indicating that the HaloTag binding sites were saturated by injection.",
+      "claim_type": "EXPLICIT",
+      "source": "Of the 13,710 supercomplexes analyzed at day-0, 96% of the supercomplexes were labeled with only SiR-Halo, indicating that the HaloTag binding sites were saturated by injection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of 13,710 supercomplexes at day-0",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "ba19ecee-3d82-4119-9605-139c360f2fbb",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C49",
+      "claim": "At day-7, 56% of supercomplexes were labeled with only SiR-Halo.",
+      "claim_type": "EXPLICIT",
+      "source": "At day-7, 56% of the 15,391 supercomplexes analyzed were labeled with only SiR-Halo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of 15,391 supercomplexes at day-7",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "a57e0ef8-7e4a-4a8e-b317-d756759c1de9",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C50",
+      "claim": "At day-7, 32% of supercomplexes were labeled with only AF488-Halo, indicating all copies of PSD95 within these supercomplexes had been turned over in the 7-day period.",
+      "claim_type": "EXPLICIT",
+      "source": "32% of the supercomplexes were labeled with only AF488-Halo, indicating all copies of PSD95 within these supercomplexes had been turned over in the 7-day period.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of day-7 supercomplexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "5bf0d1f5-1ba9-46ef-a591-ebbd55702357",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C51",
+      "claim": "At day-7, 12% of supercomplexes were labeled with both AF488-Halo and SiR-Halo, indicating that some supercomplexes contain both old and new protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, 12% of the supercomplexes were labeled with both AF488-Halo and SiR-Halo, indicating that some supercomplexes (hereafter referred to as 'mixed supercomplexes') contain both old and new protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Analysis of day-7 supercomplexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "cdf7cbd2-07dd-4cf2-8bb7-ef5e80c9c57d",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C52",
+      "claim": "Supercomplexes can exchange old copies of PSD95 for new.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that supercomplexes can exchange old copies of PSD95 for new.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from mixed supercomplex observation",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "449a0180-ee30-4743-8cb2-d8c0832ccd26",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C53",
+      "claim": "PSD95 is synthesized in the neuronal cytosol and transported into synapses where it is concentrated in the postsynaptic density.",
+      "claim_type": "EXPLICIT",
+      "source": "PSD95 is synthesized in the neuronal cytosol and transported into synapses where it is concentrated in the postsynaptic density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge of PSD95 biology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "13dc63d5-e80b-4ab4-9022-57ec5cfa9317",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C54",
+      "claim": "The level of SiR-Halo-only supercomplexes is similar for both the total forebrain and synaptic fractions (56% and 52%, respectively).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the level of SiR-Halo-only supercomplexes is similar for both the total forebrain and synaptic fractions (56% and 52%, respectively), the percentage of AF488-Halo-only supercomplexes is lower in the synaptic fraction (21% versus 32% in the total forebrain homogenate) and there is a greater fraction of mixed supercomplexes (27% versus 12% in the total forebrain homogenate) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of synaptosome and total forebrain fractions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "7d81eb7f-5b1b-4866-875e-a1a5d2eba18f",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C55",
+      "claim": "The percentage of AF488-Halo-only supercomplexes is lower in the synaptic fraction (21%) compared to total forebrain homogenate (32%).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the level of SiR-Halo-only supercomplexes is similar for both the total forebrain and synaptic fractions (56% and 52%, respectively), the percentage of AF488-Halo-only supercomplexes is lower in the synaptic fraction (21% versus 32% in the total forebrain homogenate) and there is a greater fraction of mixed supercomplexes (27% versus 12% in the total forebrain homogenate) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of synaptosome and total forebrain fractions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "3b1b7bbb-d995-4893-9ff6-f0df13c67144",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C56",
+      "claim": "There is a greater fraction of mixed supercomplexes in the synaptic fraction (27%) compared to total forebrain homogenate (12%).",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas the level of SiR-Halo-only supercomplexes is similar for both the total forebrain and synaptic fractions (56% and 52%, respectively), the percentage of AF488-Halo-only supercomplexes is lower in the synaptic fraction (21% versus 32% in the total forebrain homogenate) and there is a greater fraction of mixed supercomplexes (27% versus 12% in the total forebrain homogenate) (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Comparison of synaptosome and total forebrain fractions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "b520ecb4-bad1-4e65-b955-bf496ded23c9",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C57",
+      "claim": "The overall rate of PSD95 turnover is similar in synapses compared with the overall forebrain.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that while the overall rate of PSD95 turnover is similar in synapses compared with the overall forebrain, there is a greater fraction of supercomplexes that retain at least one old PSD95 protein, underlying their importance in maintaining the overall molecular state of the postsynaptic density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from comparison of synaptic and total fractions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "b818be3d-5472-4c61-946d-a5abe800a64f",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C58",
+      "claim": "There is a greater fraction of supercomplexes in synapses that retain at least one old PSD95 protein, underlying their importance in maintaining the overall molecular state of the postsynaptic density.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that while the overall rate of PSD95 turnover is similar in synapses compared with the overall forebrain, there is a greater fraction of supercomplexes that retain at least one old PSD95 protein, underlying their importance in maintaining the overall molecular state of the postsynaptic density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from higher mixed supercomplex fraction in synapses",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "3611cb07-84a7-431f-adfb-9e77de13f11e",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C59",
+      "claim": "The lifetime of PSD95 is longer in cortical regions than other brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the lifetime of PSD95 is longer in cortical regions than other brain regions (Bulovaite et al., 2022), we hypothesized that this region may have different rates of exchange of PSD95 within supercomplexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bulovaite et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "29605610-2937-405d-b547-0f260e819213",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C60",
+      "claim": "The isocortex contains the highest percentage of mixed supercomplexes (19 \u00b1 3%, mean \u00b1 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the isocortex contained the highest percentage of mixed supercomplexes (19 \u00b1 3%, mean \u00b1 SD), and the olfactory bulb the lowest (4 \u00b1 3%, mean \u00b1 SD) (Figure 4b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of 60,798 supercomplexes in isocortex",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "010cd45e-166d-45e8-803c-38c28bcf1315",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C61",
+      "claim": "The olfactory bulb contains the lowest percentage of mixed supercomplexes (4 \u00b1 3%, mean \u00b1 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the isocortex contained the highest percentage of mixed supercomplexes (19 \u00b1 3%, mean \u00b1 SD), and the olfactory bulb the lowest (4 \u00b1 3%, mean \u00b1 SD) (Figure 4b, c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Analysis of 3,148 supercomplexes in olfactory bulb",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "22d315c1-0d44-4d7e-bd85-60f04c38ba30",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C62",
+      "claim": "The olfactory bulb has the highest percentage of new complexes (40 \u00b1 16%, mean \u00b1 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, the region with the highest percentage of new complexes was the olfactory bulb (40 \u00b1 16%, mean \u00b1 SD), whereas the isocortex had one of the lowest percentages (27 \u00b1 8%, mean \u00b1 SD) (Figure 4b, c) (statistical significances shown in Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Regional analysis of supercomplexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "5b3ec348-fbf3-4f06-a537-e5e53aff9948",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C63",
+      "claim": "The isocortex has one of the lowest percentages of new complexes (27 \u00b1 8%, mean \u00b1 SD).",
+      "claim_type": "EXPLICIT",
+      "source": "Correspondingly, the region with the highest percentage of new complexes was the olfactory bulb (40 \u00b1 16%, mean \u00b1 SD), whereas the isocortex had one of the lowest percentages (27 \u00b1 8%, mean \u00b1 SD) (Figure 4b, c) (statistical significances shown in Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Regional analysis of supercomplexes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e68a276e-27cd-47ed-8d16-670fca5d73ad",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C64",
+      "claim": "There is a statistically significant correlation between the percentage of PSD95 proteins contained in mixed supercomplexes and the half-lives of PSD95 puncta in each region, with a Pearson's correlation test value of R = 0.95 at a significance level of p = 0.01.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is limited correlation between the percentage of PSD95 proteins contained in old or new supercomplexes and the half-lives of PSD95 puncta in each region, there is a statistically significant correlation for mixed supercomplexes, with a Pearson's correlation test value of R = 0.95 at a significance level of p = 0.01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "bef86b39-a71a-4d9a-b751-75eac6e4514c",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C65",
+      "claim": "There is limited correlation between the percentage of PSD95 proteins contained in old or new supercomplexes and the half-lives of PSD95 puncta in each region.",
+      "claim_type": "EXPLICIT",
+      "source": "Although there is limited correlation between the percentage of PSD95 proteins contained in old or new supercomplexes and the half-lives of PSD95 puncta in each region, there is a statistically significant correlation for mixed supercomplexes, with a Pearson's correlation test value of R = 0.95 at a significance level of p = 0.01.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "57bd8c00-57c4-46df-bda3-36fa87df96e1",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C66",
+      "claim": "This study represents the first direct observation of PSD95 in megadalton supercomplexes at single-molecule resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Although we have previously used biochemical approaches to demonstrate that, on average, two copies of PSD95 exist in supercomplexes in bulk protein extracts (Frank and Grant, 2017), this study represents the first direct observation of PSD95 in these megadalton supercomplexes at single-molecule resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison with previous biochemical studies",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "739bba05-deeb-4d07-9214-58049ac89795",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C67",
+      "claim": "A major advantage of the single-molecule approach is the ability to observe and quantify hundreds of thousands of PSD95 molecules in tens of thousands of individual supercomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike ensemble averaging techniques, a major advantage of our approach is the ability to observe and quantify hundreds of thousands of PSD95 molecules in tens of thousands of individual supercomplexes, allowing the stoichiometry in each one to be determined, as well as the distances between the PSD95 molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of methodological advantage",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "d048dd11-2265-452c-861a-9762b86d8a96",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C68",
+      "claim": "PSD95 is one of the most abundant synaptic proteins and is localized beneath the postsynaptic membrane of excitatory synapses in a structure known as the postsynaptic density.",
+      "claim_type": "EXPLICIT",
+      "source": "PSD95 is one of the most abundant synaptic proteins and is localized beneath the postsynaptic membrane of excitatory synapses in a structure known as the postsynaptic density.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge of PSD95 localization",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "3aa83abd-4842-4e75-a149-a1735e24653a",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C69",
+      "claim": "In the mouse hippocampus and cortex there are populations of synapses with single or multiple 40 nm 'nanoclusters' and larger contiguous structures.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the mouse hippocampus and cortex there are populations of synapses with single or multiple 40 nm 'nanoclusters' and larger contiguous structures (Broadhead et al., 2016; Masch et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Broadhead et al., 2016 and Masch et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "14593c4f-9960-4e97-9146-9cbb9cfeff8f",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C70",
+      "claim": "AMPARs distribute into nanoclusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptors, including AMPARs have also been shown to distribute into such nanoclusters (MacGillavry et al., 2013) and these have been shown to align to clusters at the presynapse via 'nanocolumns', demonstrating their functional role (Tang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from MacGillavry et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "bc840c22-25d1-4030-bcad-66a704eed262",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C71",
+      "claim": "Nanoclusters align to clusters at the presynapse via 'nanocolumns', demonstrating their functional role.",
+      "claim_type": "EXPLICIT",
+      "source": "Receptors, including AMPARs have also been shown to distribute into such nanoclusters (MacGillavry et al., 2013) and these have been shown to align to clusters at the presynapse via 'nanocolumns', demonstrating their functional role (Tang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Tang et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "69d90951-1122-4161-ad11-c2a587adf8f7",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C72",
+      "claim": "All PSD95 is assembled into 1-3 MDa supercomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk protein extracts reveal that all PSD95 is assembled into 1\u20133 MDa supercomplexes (Frank and Grant, 2017; Frank et al., 2016; Husi et al., 2000) indicating that they are the building blocks of the nanoscale structures observed with SR techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple biochemical studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "5388d32d-c183-4e49-9d84-7a13f0bd55db",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C73",
+      "claim": "PSD95 supercomplexes are the building blocks of the nanoscale structures observed with SR techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "Bulk protein extracts reveal that all PSD95 is assembled into 1\u20133 MDa supercomplexes (Frank and Grant, 2017; Frank et al., 2016; Husi et al., 2000) indicating that they are the building blocks of the nanoscale structures observed with SR techniques.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from biochemical and imaging studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "618daa9d-c508-4534-ba78-53ce8a8639c1",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C74",
+      "claim": "Synaptic heterogeneity extends to the individual supercomplex level.",
+      "claim_type": "EXPLICIT",
+      "source": "We now show that this synaptic heterogeneity extends to the individual supercomplex level, and demonstrate that while the majority of supercomplexes contain two or fewer PSD95 molecules, others contain more.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Findings from current study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "2d27840b-e988-4208-80fa-e9932ef0d33a",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C75",
+      "claim": "Supercomplexes are composed of dozens of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, supercomplexes are composed of dozens of proteins (Collins et al., 2006; Fern\u00e1ndez et al., 2009; Frank and Grant, 2017; Husi et al., 2000) and biochemical characterization of their composition from different brain regions show different supercomplexes populate synapses in different regions (Frank and Grant, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "39d485f8-996b-4da0-80d8-5e0c535845f6",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C76",
+      "claim": "Different supercomplexes populate synapses in different brain regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, supercomplexes are composed of dozens of proteins (Collins et al., 2006; Fern\u00e1ndez et al., 2009; Frank and Grant, 2017; Husi et al., 2000) and biochemical characterization of their composition from different brain regions show different supercomplexes populate synapses in different regions (Frank and Grant, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Frank and Grant, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "16fb6e6e-6dc5-48fd-9d70-76883382556c",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C77",
+      "claim": "Synapse diversity arises from their constituent complexes and supercomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, brainwide synaptome mapping of the proteins in individual synapses show synapse diversity arises from their constituent complexes and supercomplexes (Cizeron et al., 2020; Tomas-Roca et al., 2022; Zhu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from multiple synaptome mapping studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "0709d61e-5dd5-4e69-a546-13fa1aade6da",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C78",
+      "claim": "MINFLUX revealed a mean nearest neighbor distance of approximately 7 nm between PSD95 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Two recent studies have provided insights into the spacing between PSD95 molecules. MINFLUX revealed a mean nearest neighbor distance of approximately 7 nm (G\u00fcrth et al., 2023), while one-step nanoscale expansion microscopy found a preferred spacing of 8\u20139 nm (Shaib et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from G\u00fcrth et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "425f7b9c-3ca5-4642-b9e5-cbdc866bbd59",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C79",
+      "claim": "One-step nanoscale expansion microscopy found a preferred spacing of 8-9 nm between PSD95 molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "Two recent studies have provided insights into the spacing between PSD95 molecules. MINFLUX revealed a mean nearest neighbor distance of approximately 7 nm (G\u00fcrth et al., 2023), while one-step nanoscale expansion microscopy found a preferred spacing of 8\u20139 nm (Shaib et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Shaib et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "cec2a147-4fca-4f1b-a007-244e5c8e7052",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C80",
+      "claim": "Measurements of 7-9 nm spacing may represent distances between neighboring supercomplexes rather than within a single supercomplex.",
+      "claim_type": "EXPLICIT",
+      "source": "These measurements, taken within the PSD, may represent distances between neighboring supercomplexes rather than within a single supercomplex, as reported here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of differences between studies",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "f3666eb3-dd51-40dc-8335-4e2026378f74",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C81",
+      "claim": "The slightly larger measurements in this study may be due to the size of the eGFP molecules (~3 nm) and the nanobodies used.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in our study, the slightly larger measurements may be due to the size of the eGFP molecules (~3 nm) and the nanobodies used, which could contribute to an increased observed separation between PSD95 molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Consideration of methodological factors",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "420f9c4c-02d1-4d04-8c40-530f51aa28ef",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C82",
+      "claim": "The maintenance of synaptic structure at the molecular level is necessary to maintain physiological stability of brain circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "The maintenance of synaptic structure at the molecular level is necessary to maintain physiological stability of brain circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General principle of neuroscience",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "b553fed7-8570-4edc-bba8-2b6c358cb92f",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C83",
+      "claim": "Between 3 and 9 months of age the synapse diversity and its organization into the synaptome architecture is very stable.",
+      "claim_type": "EXPLICIT",
+      "source": "Brainwide mapping of the spatial distribution of PSD95-expressing synapses across the lifespan shows that between 3 and 9 months of age the remarkable synapse diversity and its organization into the synaptome architecture is very stable (Cizeron et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Cizeron et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "c457f9c9-2429-4183-8411-6376583b38f6",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C84",
+      "claim": "The vast majority of PSD95 is replaced every few weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when we measured the lifetime of PSD95 during this age window, we found that the vast majority of PSD95 is replaced every few weeks (Bulovaite et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Bulovaite et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e8db6ae5-4370-43cc-9b59-72ce92ec08d9",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C85",
+      "claim": "The synaptome architecture is stable despite its constituent proteins being replaced.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the synaptome architecture, which is comprised of molecularly diverse synapses, is stable despite its constituent proteins being replaced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Synthesis of findings from multiple studies",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "40c77315-9992-454d-8cc3-a978803cff2d",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C86",
+      "claim": "The protein supercomplexes which are the building blocks of the synaptome architecture are maintained by the sequential replacement of constituents including core scaffolding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Our present findings offer an explanation for how this stability can be maintained: the protein supercomplexes which are the building blocks of the synaptome architecture are not removed and replaced in toto, but are maintained by the sequential replacement of constituents including core scaffolding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from current study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "d29bbbd7-02cd-4f7c-96e8-530b8c51999a",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C87",
+      "claim": "In the synaptome theory of behavior, representations, memories, and behavioral programs are encoded in the synaptome architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "In the synaptome theory of behavior (Grant, 2018; Zhu et al., 2018), representations, memories, and behavioral programs are encoded in the synaptome architecture, and thus its stability is required to maintain these functional outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Grant, 2018 and Zhu et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "dd67cae4-3ede-44e7-94c4-483d090624b5",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C88",
+      "claim": "The stability of the synaptome architecture is required to maintain representations, memories, and behavioral programs.",
+      "claim_type": "EXPLICIT",
+      "source": "In the synaptome theory of behavior (Grant, 2018; Zhu et al., 2018), representations, memories, and behavioral programs are encoded in the synaptome architecture, and thus its stability is required to maintain these functional outputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cited from Grant, 2018 and Zhu et al., 2018",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e65fd423-c682-4652-b460-b66a01f6c5d5",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C89",
+      "claim": "The stability conferred on the synaptome architecture by the sequential replacement of subunits in supercomplexes offers a stability mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "The stability conferred on the synaptome architecture by the sequential replacement of subunits in supercomplexes offers a stability mechanism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of findings in context of synaptome theory",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "291a7cf3-48e3-4bb3-803c-36f4e0ee0291",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C90",
+      "claim": "The most stable synapses are those with long-protein lifetime in the cortex, and these synapses undergo slow replacement of their supercomplex subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that synapse diversity resolves this dilemma: there are some synapses that are very stable, and others that are less stable and more plastic. Our present findings indicate that the most stable synapses are those with long-protein lifetime in the cortex, and that these synapses undergo slow replacement of their supercomplex subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from regional comparison data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "3c2536c3-38c1-428f-9a7f-e25429ac87ac",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C91",
+      "claim": "The processes of subunit replacement and protein turnover are synergistic mechanisms that produce stability of supramolecular entities.",
+      "claim_type": "EXPLICIT",
+      "source": "The processes of subunit replacement and protein turnover are synergistic mechanisms that produce stability of supramolecular entities, which together with synapse diversity can result in synapses with a range of memory durations and plasticity potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical model based on findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "42dbaded-70d1-4bad-ba46-f82baa1ccf8f",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C92",
+      "claim": "Synapse diversity together with subunit replacement and protein turnover can result in synapses with a range of memory durations and plasticity potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The processes of subunit replacement and protein turnover are synergistic mechanisms that produce stability of supramolecular entities, which together with synapse diversity can result in synapses with a range of memory durations and plasticity potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Theoretical model based on findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "c3d95b7f-7268-4e12-a368-5a416454a0cb",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C93",
+      "claim": "The findings extend Crick's model by showing a link between the protein lifetime and the rate of subunit exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "This model fits with Crick's basic framework in that it involves dimeric proteins that sequentially exchange their subunits. Our findings extend his model in that we show a link between the protein lifetime and the rate of subunit exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of findings with Crick's hypothesis",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "7baa6cf6-7e20-49f7-80b2-97c372915a9c",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C94",
+      "claim": "At the time Crick made his postulate, the rate of protein turnover in the brain and synapses was unknown.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time Crick made his postulate, the rate of protein turnover in the brain and synapses was unknown, and until recently, there was no evidence that synapses might differ in their protein lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical context of Crick's hypothesis",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "9406ad18-a92d-453b-b9dc-b31829bfd5dd",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C95",
+      "claim": "Until recently, there was no evidence that synapses might differ in their protein lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "At the time Crick made his postulate, the rate of protein turnover in the brain and synapses was unknown, and until recently, there was no evidence that synapses might differ in their protein lifetime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Historical context of research field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "c20c14bb-7762-4293-9c0c-cf278c4164b3",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C96",
+      "claim": "Some synapses can maintain copies of PSD95 for months.",
+      "claim_type": "EXPLICIT",
+      "source": "The surprising finding that some synapses can maintain copies of PSD95 for months draws into question Crick's assumption that protein lifetimes are much shorter than memories, because most memories are forgotten within a short period (days to weeks) in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from previous study",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "9a771fa9-26b7-40f0-8bfd-a6cbf991ce10",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C97",
+      "claim": "Most memories are forgotten within a short period (days to weeks) in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The surprising finding that some synapses can maintain copies of PSD95 for months draws into question Crick's assumption that protein lifetimes are much shorter than memories, because most memories are forgotten within a short period (days to weeks) in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established knowledge of mouse memory",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "5d7c8deb-17e5-4156-afc6-06e9b0075f30",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C98",
+      "claim": "The finding that some synapses can maintain PSD95 for months draws into question Crick's assumption that protein lifetimes are much shorter than memories.",
+      "claim_type": "EXPLICIT",
+      "source": "The surprising finding that some synapses can maintain copies of PSD95 for months draws into question Crick's assumption that protein lifetimes are much shorter than memories, because most memories are forgotten within a short period (days to weeks) in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Comparison of findings with Crick's assumptions",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "d64aa616-046e-4744-9b71-fe6b8b09ad41",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C99",
+      "claim": "The concentration of PSD95 supercomplexes is highest in the postsynaptic terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of PSD95 supercomplexes is highest in the postsynaptic terminal and this environment may facilitate exchange of subunits between supercomplexes, consistent with our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Known localization of PSD95",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "76e4e4e5-1506-4ca0-97a3-282aad9a3f52",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C100",
+      "claim": "The postsynaptic terminal environment may facilitate exchange of subunits between supercomplexes.",
+      "claim_type": "EXPLICIT",
+      "source": "The concentration of PSD95 supercomplexes is highest in the postsynaptic terminal and this environment may facilitate exchange of subunits between supercomplexes, consistent with our results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on findings",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "8d2e2c93-25d7-47d9-8d05-9b88b24103e5",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C101",
+      "claim": "Long-protein lifetime synapses that are enriched in the cortex may be better suited to the exchange process and transmission of modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Some synapses such as the long-protein lifetime synapses that are enriched in the cortex may be better suited to the exchange process and transmission of modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation based on regional differences",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "683d5f08-cd6a-4301-959e-bf12e5ee38b3",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C102",
+      "claim": "The environment of long-protein lifetime synapses may facilitate other complexes and supercomplexes (such as CamKII holoenzymes) to exchange and/or replace subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it may be that the environment of these synapses facilitates other complexes and supercomplexes (such as CamKII holoenzymes) to exchange and/or replace subunits and that our observations with PSD95 reflect a more widespread and general phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about broader implications",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "cd12667c-e1ff-4f7a-895c-9ecf1b1c0ad0",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C103",
+      "claim": "Observations with PSD95 may reflect a more widespread and general phenomenon of subunit exchange in synaptic complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it may be that the environment of these synapses facilitates other complexes and supercomplexes (such as CamKII holoenzymes) to exchange and/or replace subunits and that our observations with PSD95 reflect a more widespread and general phenomenon.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculation about generalizability of findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "fced60ca-5dd7-48eb-aec0-d07847ec04ed",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C104",
+      "claim": "Over 130,000 PSD95-mEoS2 proteins were localized in 82,501 supercomplexes across three biological repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "Over 130,000 PSD95-mEoS2 proteins were localized in 82,501 supercomplexes across three biological repeats.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of PALM dataset size",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "2b7d27c7-d542-4f57-8e2d-d691f1d3aa0b",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C105",
+      "claim": "Each PSD95-mEos2 molecule within the supercomplexes was localized with a mean precision of 21.8 \u00b1 6.5 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Each PSD95-mEos2 molecule within the supercomplexes was localized with a mean precision of 21.8 \u00b1 6.5 nm (mean \u00b1 SD, n = 132,929 localizations across three biological repeats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "PALM localization precision measurement",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "908ea5e0-16b2-4a17-aa4e-11dfaa4451c7",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C106",
+      "claim": "Fourier ring correlation revealed that the acquired PALM images had a mean resolution of 30 \u00b1 4 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Fourier ring correlation (Nieuwenhuizen et al., 2013) revealed that the acquired images had a mean resolution of 30 \u00b1 4 nm (mean \u00b1 SD, n = 3 biological repeats).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Resolution measurement using Fourier ring correlation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "9a3f56b8-f9e7-4dce-9e82-3298c893de60",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C107",
+      "claim": "In total, 60,798 supercomplexes were analyzed in the isocortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 60,798 supercomplexes were analyzed in the isocortex, 15,842 in the hippocampus, 3148 in the olfactory bulb, 36,126 in the cerebellum, and 28,339 in the subcortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sample size for regional analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "f663721d-fa56-46c1-a3cf-69ca0ab2db3d",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C108",
+      "claim": "15,842 supercomplexes were analyzed in the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 60,798 supercomplexes were analyzed in the isocortex, 15,842 in the hippocampus, 3148 in the olfactory bulb, 36,126 in the cerebellum, and 28,339 in the subcortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sample size for regional analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "a9518e1f-7f04-4d60-8cf3-e3c0697eb1b8",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C109",
+      "claim": "3,148 supercomplexes were analyzed in the olfactory bulb.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 60,798 supercomplexes were analyzed in the isocortex, 15,842 in the hippocampus, 3148 in the olfactory bulb, 36,126 in the cerebellum, and 28,339 in the subcortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sample size for regional analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "3f009072-b7a3-409d-92e5-ef4f362437ee",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C110",
+      "claim": "36,126 supercomplexes were analyzed in the cerebellum.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 60,798 supercomplexes were analyzed in the isocortex, 15,842 in the hippocampus, 3148 in the olfactory bulb, 36,126 in the cerebellum, and 28,339 in the subcortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sample size for regional analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "59a29cf3-779d-4959-bfb1-58e1c25da19d",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "claim_id": "C111",
+      "claim": "28,339 supercomplexes were analyzed in the subcortical areas.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 60,798 supercomplexes were analyzed in the isocortex, 15,842 in the hippocampus, 3148 in the olfactory bulb, 36,126 in the cerebellum, and 28,339 in the subcortical areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Sample size for regional analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8a8f7478-e23a-4abd-b076-6836af6e0278",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "PSD95 supercomplexes contain predominantly two copies of PSD95 with a dominant separation of 12.7 nm. Using photobleaching analysis of >6000 supercomplexes, 63% contained one PSD95, 24% contained two, and 13% contained more than two. PALM analysis of 82,501 supercomplexes confirmed this distribution (76\u00b12% one, 12\u00b11% two, 12\u00b12% more than two). MINFLUX imaging with 1-5 nm resolution revealed a dominant separation of 12.7 nm between PSD95 molecules in dimeric supercomplexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Multiple orthogonal techniques (photobleaching, PALM, MINFLUX) with large sample sizes (>6000, 82,501, and 1011 supercomplexes respectively) converge on consistent stoichiometry distributions. The authors appropriately account for fluorophore folding efficiency (50-60% for GFP) and validate their approach with purified eGFP controls. The 12.7 nm separation measurement is supported by high-resolution MINFLUX data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "PSD95 subunits within supercomplexes are sequentially replaced over days and weeks in vivo. Using dual HaloTag labeling (SiR-Halo at day 0, AF488-Halo at day 7), approximately 40% of PSD95 was replaced over 7 days. Critically, 12% of supercomplexes at day 7 contained both old and new PSD95 (mixed supercomplexes), demonstrating that supercomplexes can exchange individual subunits rather than being replaced entirely.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The time-stamping approach using covalent HaloTag labeling is methodologically sound. The observation of mixed supercomplexes (containing both old SiR-labeled and new AF488-labeled PSD95) at day 7 provides direct evidence for sequential subunit replacement. The 96% saturation at day 0 validates complete initial labeling. Analysis of 13,710 and 15,391 supercomplexes at the two timepoints provides statistical robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Subunit replacement rate varies by brain region and correlates with PSD95 protein lifetime. The isocortex showed the highest percentage of mixed supercomplexes (19\u00b13%) and lowest percentage of new complexes (27\u00b18%), while the olfactory bulb showed the opposite pattern (4\u00b13% mixed, 40\u00b116% new). There was a statistically significant correlation between mixed supercomplex percentage and PSD95 half-life across regions (R=0.95, p=0.01).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The regional analysis examined large numbers of supercomplexes (60,798 in isocortex, 15,842 in hippocampus, 3,148 in olfactory bulb, 36,126 in cerebellum, 28,339 in subcortical areas). The strong correlation (R=0.95, p=0.01) between mixed supercomplex percentage and previously published PSD95 half-life data provides compelling evidence linking subunit replacement rate to protein lifetime. Statistical testing (ANOVA and post-hoc t-tests) appropriately identifies significant regional differences.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "56e1c1ab-2046-47be-a873-2f803b0a81b6",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Synaptic fractions show enrichment for mixed supercomplexes compared to total forebrain. While SiR-only supercomplexes were similar between synaptic and total fractions (52% vs 56%), synaptic fractions had fewer AF488-only supercomplexes (21% vs 32%) and more mixed supercomplexes (27% vs 12%).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between synaptosome and total forebrain fractions is methodologically appropriate. The enrichment of mixed supercomplexes in synaptic fractions (27% vs 12%) supports the interpretation that sequential subunit replacement is particularly important at synapses. However, the inference that this underlies maintenance of postsynaptic density molecular state, while reasonable, extends slightly beyond the direct data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "17eb57c4-dde5-46f1-90d1-e14639eac625",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose that protein supercomplexes are maintained by gradual replacement of individual subunits, providing a mechanism for stable maintenance of synaptic organization. They suggest that synapses with slow subunit replacement and long protein lifetimes (enriched in cortex) are specialized for long-term memory storage, and that subunit replacement and protein turnover are synergistic mechanisms producing stability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the data clearly demonstrate sequential subunit replacement and regional variation, the mechanistic link to memory storage is speculative. The authors provide no direct memory/behavior experiments. The proposal that cortical synapses with slow replacement are specialized for long-term memory is a reasonable hypothesis based on correlative evidence (cortex is where long-term memories are stored), but causality is not established. This represents an interpretive framework rather than a directly tested result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "7483d2cf-5712-4e59-8e1a-b385b458debc",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The findings extend Crick's 1984 hypothesis by demonstrating a link between protein lifetime and subunit exchange rate, and suggesting that cortical synapses with slow replacement are specialized for long-term memory. The authors note this challenges Crick's assumption that protein lifetimes are much shorter than memories, since some synapses maintain PSD95 for months while most mouse memories are forgotten within days to weeks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The extension of Crick's model is conceptually interesting but involves significant speculation. While the data support sequential replacement and regional variation in replacement rates, the connection to memory duration and the challenge to Crick's assumptions require behavioral/memory experiments that were not performed. The apparent paradox (long protein lifetimes vs. short memory durations) is noted but not resolved experimentally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "ae8eedbf-0b28-4003-af5e-000889f63470",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "This study represents the first direct observation of PSD95 in megadalton supercomplexes at single-molecule resolution, revealing heterogeneity in supercomplex stoichiometry at the individual complex level.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claim of first direct single-molecule observation is supported by comparison with previous biochemical ensemble studies (C27, C72). The methodological advantage of observing hundreds of thousands of individual molecules in tens of thousands of supercomplexes is clearly demonstrated. The heterogeneity finding (range of stoichiometries) is directly shown by the data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "11651d3f-f50c-40c6-8219-42a9481f4d48",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors compare their 12.7 nm intra-supercomplex spacing measurement with recent studies reporting 7-9 nm spacing, suggesting those measurements may represent inter-supercomplex rather than intra-supercomplex distances, and noting that their measurements may be slightly larger due to the size of eGFP and nanobodies used.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison with prior literature is appropriate and the interpretation that different measurements may reflect different spatial relationships (within vs. between supercomplexes) is reasonable. The acknowledgment of potential methodological contributions to the observed distance (eGFP size ~3 nm, nanobody size) shows appropriate consideration of technical factors.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "1fa613e5-d309-4f8a-b7e1-f00ee9343db2",
+      "content_id": "d99f7f14-8983-4f67-b101-9cba353c9fe5",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that the postsynaptic terminal environment may facilitate subunit exchange, that cortical long-protein lifetime synapses may be better suited to exchange processes, and that the phenomenon may extend to other synaptic complexes like CamKII.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are explicitly speculative claims (using language like 'may be' and 'it may be that') that extend beyond the experimental data. While reasonable hypotheses for future work, they are not tested in this study. The speculation about CamKII and other complexes is particularly uncertain as only PSD95 was examined.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "05480999-a43d-447c-8883-fa3f8d1fe5b7",
+      "content_id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "PSD95 supercomplexes contain two copies of PSD95 separated by 12.7 nm. Using photobleaching and PALM analysis, the authors found that approximately 24% of supercomplexes contain two PSD95 proteins, with a dominant separation of 12.7 nm measured by MINFLUX microscopy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding as a strength, stating 'The result that PSD95 proteins in dimeric complexes are on average 12.7 nm apart is useful and has implications for studies on the nanoscale organization of PSD95 at synapses.' The editor's summary also notes 'compelling evidence that PSD95 proteins form complexes at synapses.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "2c6b355b-61ee-48a1-9b79-892ef06c994b",
+      "content_id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "PSD95 subunits are sequentially replaced over days and weeks, with approximately 40% of old PSD95 replaced by new protein between day 0 and day 7. At day 7, 12% of supercomplexes contained both old and new PSD95 (mixed supercomplexes), indicating that supercomplexes can exchange old copies of PSD95 for new ones.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this as a key finding, stating 'there is substantial turnover of PSD95 proteins in super-complexes over a period of seven days, and that ~5-20% of the super-complexes contain new and old PSD95 molecules.' They also note 'The finding that postsynaptic protein complexes can continue to exist while individual components are being renewed is important for our understanding of synapse maintenance and stability.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "83cd3f30-6445-4104-a885-51b035da6314",
+      "content_id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Synaptic fractions show a greater fraction of mixed supercomplexes (27%) compared to total forebrain homogenate (12%), while the percentage of new-only supercomplexes is lower in synaptic fractions (21% vs 32%). This suggests that supercomplexes in synapses retain at least one old PSD95 protein more frequently, which is important for maintaining the molecular state of the postsynaptic density.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this finding, noting 'This percentage is higher in synaptic fractions as compared to total brain lysates.' This result is treated as supporting evidence for the sequential replacement mechanism in synapses specifically.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc",
+      "content_id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Subunit replacement is slowest in the cortex where PSD95 protein lifetime is longest. The isocortex contains the highest percentage of mixed supercomplexes (19\u00b13%), while the olfactory bulb has the lowest (4\u00b13%). There is a statistically significant correlation (R=0.95, p=0.01) between the percentage of mixed supercomplexes and PSD95 half-lives across brain regions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge 'The data on the turnover rate of PSD95 in super-complexes from different brain regions provide a first indication of potentially meaningful differences,' they also explicitly state a weakness: 'The conclusion that the population of 'mixed' synapses is higher in the isocortex than in other brain regions is not supported by statistical analysis.' This indicates the reviewers found the evidence insufficient or the statistical support inadequate.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "9ce54306-e424-4804-8140-449ed20cd462",
+      "content_id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Protein supercomplexes within the postsynaptic density can be maintained by gradual replacement of individual subunits, providing a mechanism for stable maintenance of their organization. This sequential replacement of constituents maintains the synaptome architecture without removing and replacing supercomplexes in toto.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this conclusion, stating 'The finding that postsynaptic protein complexes can continue to exist while individual components are being renewed is important for our understanding of synapse maintenance and stability.' The editor's summary also notes this provides 'compelling evidence' for the mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "bb1416df-b3aa-4932-9365-d704c89ced38",
+      "content_id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Synapses with slow subunit replacement and long protein lifetimes are specialized for long-term memory storage and are highly enriched in superficial layers of the cortex. The findings extend Crick's model by linking protein lifetime to the rate of subunit exchange, suggesting that synapse diversity with different replacement rates can produce synapses with a range of memory durations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express significant reservations about the memory storage claims, stating 'The manuscript emphasizes the hypothesis that stable super-complexes, maintained through sequential replacement of subunits, might underlie the long-term storage of memory. While an interesting idea, this notion requires considerably more research. The presented experimental data are indeed consistent with this notion, but there is no evidence that these complexes are causally related to memory storage.' This indicates the data support the mechanism but not the functional memory claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "c158a494-b3b9-498e-b711-800e6d95f13c",
+      "content_id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Not all fluorescent proteins fold correctly (typical GFP refolding yields are 50-60% in vitro), and only half of PSD95 proteins are fused to fluorescent tags in heterozygous mice. These factors affect the interpretation of stoichiometry measurements.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers explicitly identify this as a weakness: 'Because not all GFP molecules mature and fold correctly in vitro and the PSD95-mEos mice used were heterozygous, the interpretation of the corresponding quantifications is not straightforward.' This indicates concern about how these technical limitations affect the reliability of stoichiometry conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "8a043bd4-0b1a-4de9-a887-9e3152123937",
+      "content_id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "This study represents the first direct observation of PSD95 in megadalton supercomplexes at single-molecule resolution, analyzing over 130,000 PSD95 molecules in 82,501 supercomplexes with mean localization precision of 21.8\u00b16.5 nm and image resolution of 30\u00b14 nm.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the methodological strength, stating 'The study employed an appropriate and validated methodology' and 'State-of-the-art super-resolution imaging techniques (PALM and MINFLUX) were used, providing a robust, high-quality, cross-validated analysis of PSD95 protein complexes that is useful for the community.' They also note 'Large numbers of PSD95 super-complexes from three different mouse models were imaged and analyzed, providing adequately powered sample sizes.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "a1dc4e6d-8967-4f20-bf57-a7ed2d80a3a5",
+      "content_id": "db574f7c-9b35-46aa-8cd3-b57fc75b922f",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Biochemical studies show that PSD95 supercomplexes comprise two copies of PSD95 with different combinations of interacting proteins, and all PSD95 is assembled into 1-3 MDa supercomplexes that are the building blocks of nanoscale structures observed with super-resolution techniques.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raise concerns about the biochemical isolation approach: 'Much of the presented work is performed on biochemically isolated protein complexes. The biochemical isolation procedures rely on physical disruption and detergents that are known to alter the composition and structure of complexes in certain cases. Thus, it remains unclear how the protein complexes described in this study relate to PSD95 complexes in intact synapses.' This indicates uncertainty about whether the isolated complexes accurately represent in vivo structures.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b1868293-dd36-4bc1-b00b-e8b1cdc0677a",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "26004d4f-218d-4343-86c6-a4fc100d4624",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "9e32711b-6e68-4c91-991b-150934151227",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "e5437518-2efb-4295-bdb3-967caea692d6",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "02ef51e0-72b3-4db0-bde3-2fb87f5e8223",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "6a8664ca-d5e4-4857-b3a2-f10da95f5172",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "87c1a635-bcca-48cb-997e-92572cdfe33d",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "2ab5fb58-fe6f-449f-801a-4be999073ec7",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "16ae5cd9-545a-4476-a2a7-1820e228ca23",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "79a3e5aa-19b3-4ede-b551-8450cad1f592",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "60bb071d-da09-4ea9-9a5d-ee3b2d0954cc",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "953dc73a-669c-4108-8280-b7311bf330bb",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "5b24897a-be66-4df2-a09d-0f54cdc08518",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "4824764d-f87c-4322-bb8d-fca1d53d70b9",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "e4b311fa-367d-4e12-93f7-9bd258d82172",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "fced60ca-5dd7-48eb-aec0-d07847ec04ed",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "2b7d27c7-d542-4f57-8e2d-d691f1d3aa0b",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "908ea5e0-16b2-4a17-aa4e-11dfaa4451c7",
+      "result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278"
+    },
+    {
+      "claim_id": "184d350d-71a0-4c82-8a41-29a2c7bbd846",
+      "result_id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025"
+    },
+    {
+      "claim_id": "a658a856-664b-41ee-b144-493c2c1d8334",
+      "result_id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025"
+    },
+    {
+      "claim_id": "819314d9-1f04-4fd0-807d-722a3e26d769",
+      "result_id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025"
+    },
+    {
+      "claim_id": "07556b64-492a-4c7c-b5c2-f7b4982d70bd",
+      "result_id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025"
+    },
+    {
+      "claim_id": "ba19ecee-3d82-4119-9605-139c360f2fbb",
+      "result_id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025"
+    },
+    {
+      "claim_id": "a57e0ef8-7e4a-4a8e-b317-d756759c1de9",
+      "result_id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025"
+    },
+    {
+      "claim_id": "5bf0d1f5-1ba9-46ef-a591-ebbd55702357",
+      "result_id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025"
+    },
+    {
+      "claim_id": "cdf7cbd2-07dd-4cf2-8bb7-ef5e80c9c57d",
+      "result_id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025"
+    },
+    {
+      "claim_id": "d435c950-eb02-4c2b-aeb5-805a50c3830d",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "daa5ff1e-3fce-4acf-81f7-624176004254",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "3611cb07-84a7-431f-adfb-9e77de13f11e",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "29605610-2937-405d-b547-0f260e819213",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "010cd45e-166d-45e8-803c-38c28bcf1315",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "22d315c1-0d44-4d7e-bd85-60f04c38ba30",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "5b3ec348-fbf3-4f06-a537-e5e53aff9948",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "e68a276e-27cd-47ed-8d16-670fca5d73ad",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "bef86b39-a71a-4d9a-b751-75eac6e4514c",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "9a3f56b8-f9e7-4dce-9e82-3298c893de60",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "f663721d-fa56-46c1-a3cf-69ca0ab2db3d",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "a9518e1f-7f04-4d60-8cf3-e3c0697eb1b8",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "3f009072-b7a3-409d-92e5-ef4f362437ee",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "59a29cf3-779d-4959-bfb1-58e1c25da19d",
+      "result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03"
+    },
+    {
+      "claim_id": "13dc63d5-e80b-4ab4-9022-57ec5cfa9317",
+      "result_id": "56e1c1ab-2046-47be-a873-2f803b0a81b6"
+    },
+    {
+      "claim_id": "7d81eb7f-5b1b-4866-875e-a1a5d2eba18f",
+      "result_id": "56e1c1ab-2046-47be-a873-2f803b0a81b6"
+    },
+    {
+      "claim_id": "3b1b7bbb-d995-4893-9ff6-f0df13c67144",
+      "result_id": "56e1c1ab-2046-47be-a873-2f803b0a81b6"
+    },
+    {
+      "claim_id": "b520ecb4-bad1-4e65-b955-bf496ded23c9",
+      "result_id": "56e1c1ab-2046-47be-a873-2f803b0a81b6"
+    },
+    {
+      "claim_id": "b818be3d-5472-4c61-946d-a5abe800a64f",
+      "result_id": "56e1c1ab-2046-47be-a873-2f803b0a81b6"
+    },
+    {
+      "claim_id": "7951d06f-f631-4d8b-9aac-28d3467a4b20",
+      "result_id": "17eb57c4-dde5-46f1-90d1-e14639eac625"
+    },
+    {
+      "claim_id": "40c77315-9992-454d-8cc3-a978803cff2d",
+      "result_id": "17eb57c4-dde5-46f1-90d1-e14639eac625"
+    },
+    {
+      "claim_id": "e65fd423-c682-4652-b460-b66a01f6c5d5",
+      "result_id": "17eb57c4-dde5-46f1-90d1-e14639eac625"
+    },
+    {
+      "claim_id": "291a7cf3-48e3-4bb3-803c-36f4e0ee0291",
+      "result_id": "17eb57c4-dde5-46f1-90d1-e14639eac625"
+    },
+    {
+      "claim_id": "3c2536c3-38c1-428f-9a7f-e25429ac87ac",
+      "result_id": "17eb57c4-dde5-46f1-90d1-e14639eac625"
+    },
+    {
+      "claim_id": "42dbaded-70d1-4bad-ba46-f82baa1ccf8f",
+      "result_id": "17eb57c4-dde5-46f1-90d1-e14639eac625"
+    },
+    {
+      "claim_id": "e524bd16-873d-4a8d-8dd6-8a8c4b59672c",
+      "result_id": "7483d2cf-5712-4e59-8e1a-b385b458debc"
+    },
+    {
+      "claim_id": "e1e4482e-4384-43bc-8d2f-4fb14907e7b6",
+      "result_id": "7483d2cf-5712-4e59-8e1a-b385b458debc"
+    },
+    {
+      "claim_id": "c3d95b7f-7268-4e12-a368-5a416454a0cb",
+      "result_id": "7483d2cf-5712-4e59-8e1a-b385b458debc"
+    },
+    {
+      "claim_id": "5d7c8deb-17e5-4156-afc6-06e9b0075f30",
+      "result_id": "7483d2cf-5712-4e59-8e1a-b385b458debc"
+    },
+    {
+      "claim_id": "57bd8c00-57c4-46df-bda3-36fa87df96e1",
+      "result_id": "ae8eedbf-0b28-4003-af5e-000889f63470"
+    },
+    {
+      "claim_id": "739bba05-deeb-4d07-9214-58049ac89795",
+      "result_id": "ae8eedbf-0b28-4003-af5e-000889f63470"
+    },
+    {
+      "claim_id": "618daa9d-c508-4534-ba78-53ce8a8639c1",
+      "result_id": "ae8eedbf-0b28-4003-af5e-000889f63470"
+    },
+    {
+      "claim_id": "0709d61e-5dd5-4e69-a546-13fa1aade6da",
+      "result_id": "11651d3f-f50c-40c6-8219-42a9481f4d48"
+    },
+    {
+      "claim_id": "425f7b9c-3ca5-4642-b9e5-cbdc866bbd59",
+      "result_id": "11651d3f-f50c-40c6-8219-42a9481f4d48"
+    },
+    {
+      "claim_id": "cec2a147-4fca-4f1b-a007-244e5c8e7052",
+      "result_id": "11651d3f-f50c-40c6-8219-42a9481f4d48"
+    },
+    {
+      "claim_id": "f3666eb3-dd51-40dc-8335-4e2026378f74",
+      "result_id": "11651d3f-f50c-40c6-8219-42a9481f4d48"
+    },
+    {
+      "claim_id": "76e4e4e5-1506-4ca0-97a3-282aad9a3f52",
+      "result_id": "1fa613e5-d309-4f8a-b7e1-f00ee9343db2"
+    },
+    {
+      "claim_id": "8d2e2c93-25d7-47d9-8d05-9b88b24103e5",
+      "result_id": "1fa613e5-d309-4f8a-b7e1-f00ee9343db2"
+    },
+    {
+      "claim_id": "683d5f08-cd6a-4301-959e-bf12e5ee38b3",
+      "result_id": "1fa613e5-d309-4f8a-b7e1-f00ee9343db2"
+    },
+    {
+      "claim_id": "cd12667c-e1ff-4f7a-895c-9ecf1b1c0ad0",
+      "result_id": "1fa613e5-d309-4f8a-b7e1-f00ee9343db2"
+    },
+    {
+      "claim_id": "b1868293-dd36-4bc1-b00b-e8b1cdc0677a",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "26004d4f-218d-4343-86c6-a4fc100d4624",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "9e32711b-6e68-4c91-991b-150934151227",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "e5437518-2efb-4295-bdb3-967caea692d6",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "02ef51e0-72b3-4db0-bde3-2fb87f5e8223",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "6a8664ca-d5e4-4857-b3a2-f10da95f5172",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "2ab5fb58-fe6f-449f-801a-4be999073ec7",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "79a3e5aa-19b3-4ede-b551-8450cad1f592",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "60bb071d-da09-4ea9-9a5d-ee3b2d0954cc",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "953dc73a-669c-4108-8280-b7311bf330bb",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "4824764d-f87c-4322-bb8d-fca1d53d70b9",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "e4b311fa-367d-4e12-93f7-9bd258d82172",
+      "result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7"
+    },
+    {
+      "claim_id": "184d350d-71a0-4c82-8a41-29a2c7bbd846",
+      "result_id": "2c6b355b-61ee-48a1-9b79-892ef06c994b"
+    },
+    {
+      "claim_id": "819314d9-1f04-4fd0-807d-722a3e26d769",
+      "result_id": "2c6b355b-61ee-48a1-9b79-892ef06c994b"
+    },
+    {
+      "claim_id": "07556b64-492a-4c7c-b5c2-f7b4982d70bd",
+      "result_id": "2c6b355b-61ee-48a1-9b79-892ef06c994b"
+    },
+    {
+      "claim_id": "ba19ecee-3d82-4119-9605-139c360f2fbb",
+      "result_id": "2c6b355b-61ee-48a1-9b79-892ef06c994b"
+    },
+    {
+      "claim_id": "a57e0ef8-7e4a-4a8e-b317-d756759c1de9",
+      "result_id": "2c6b355b-61ee-48a1-9b79-892ef06c994b"
+    },
+    {
+      "claim_id": "5bf0d1f5-1ba9-46ef-a591-ebbd55702357",
+      "result_id": "2c6b355b-61ee-48a1-9b79-892ef06c994b"
+    },
+    {
+      "claim_id": "cdf7cbd2-07dd-4cf2-8bb7-ef5e80c9c57d",
+      "result_id": "2c6b355b-61ee-48a1-9b79-892ef06c994b"
+    },
+    {
+      "claim_id": "13dc63d5-e80b-4ab4-9022-57ec5cfa9317",
+      "result_id": "83cd3f30-6445-4104-a885-51b035da6314"
+    },
+    {
+      "claim_id": "7d81eb7f-5b1b-4866-875e-a1a5d2eba18f",
+      "result_id": "83cd3f30-6445-4104-a885-51b035da6314"
+    },
+    {
+      "claim_id": "3b1b7bbb-d995-4893-9ff6-f0df13c67144",
+      "result_id": "83cd3f30-6445-4104-a885-51b035da6314"
+    },
+    {
+      "claim_id": "b520ecb4-bad1-4e65-b955-bf496ded23c9",
+      "result_id": "83cd3f30-6445-4104-a885-51b035da6314"
+    },
+    {
+      "claim_id": "b818be3d-5472-4c61-946d-a5abe800a64f",
+      "result_id": "83cd3f30-6445-4104-a885-51b035da6314"
+    },
+    {
+      "claim_id": "d435c950-eb02-4c2b-aeb5-805a50c3830d",
+      "result_id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc"
+    },
+    {
+      "claim_id": "daa5ff1e-3fce-4acf-81f7-624176004254",
+      "result_id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc"
+    },
+    {
+      "claim_id": "3611cb07-84a7-431f-adfb-9e77de13f11e",
+      "result_id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc"
+    },
+    {
+      "claim_id": "29605610-2937-405d-b547-0f260e819213",
+      "result_id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc"
+    },
+    {
+      "claim_id": "010cd45e-166d-45e8-803c-38c28bcf1315",
+      "result_id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc"
+    },
+    {
+      "claim_id": "22d315c1-0d44-4d7e-bd85-60f04c38ba30",
+      "result_id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc"
+    },
+    {
+      "claim_id": "5b3ec348-fbf3-4f06-a537-e5e53aff9948",
+      "result_id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc"
+    },
+    {
+      "claim_id": "e68a276e-27cd-47ed-8d16-670fca5d73ad",
+      "result_id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc"
+    },
+    {
+      "claim_id": "7951d06f-f631-4d8b-9aac-28d3467a4b20",
+      "result_id": "9ce54306-e424-4804-8140-449ed20cd462"
+    },
+    {
+      "claim_id": "40c77315-9992-454d-8cc3-a978803cff2d",
+      "result_id": "9ce54306-e424-4804-8140-449ed20cd462"
+    },
+    {
+      "claim_id": "e65fd423-c682-4652-b460-b66a01f6c5d5",
+      "result_id": "9ce54306-e424-4804-8140-449ed20cd462"
+    },
+    {
+      "claim_id": "e524bd16-873d-4a8d-8dd6-8a8c4b59672c",
+      "result_id": "bb1416df-b3aa-4932-9365-d704c89ced38"
+    },
+    {
+      "claim_id": "e1e4482e-4384-43bc-8d2f-4fb14907e7b6",
+      "result_id": "bb1416df-b3aa-4932-9365-d704c89ced38"
+    },
+    {
+      "claim_id": "184c4fdf-15c9-4687-85c7-25f79b141215",
+      "result_id": "bb1416df-b3aa-4932-9365-d704c89ced38"
+    },
+    {
+      "claim_id": "291a7cf3-48e3-4bb3-803c-36f4e0ee0291",
+      "result_id": "bb1416df-b3aa-4932-9365-d704c89ced38"
+    },
+    {
+      "claim_id": "3c2536c3-38c1-428f-9a7f-e25429ac87ac",
+      "result_id": "bb1416df-b3aa-4932-9365-d704c89ced38"
+    },
+    {
+      "claim_id": "42dbaded-70d1-4bad-ba46-f82baa1ccf8f",
+      "result_id": "bb1416df-b3aa-4932-9365-d704c89ced38"
+    },
+    {
+      "claim_id": "c3d95b7f-7268-4e12-a368-5a416454a0cb",
+      "result_id": "bb1416df-b3aa-4932-9365-d704c89ced38"
+    },
+    {
+      "claim_id": "87c1a635-bcca-48cb-997e-92572cdfe33d",
+      "result_id": "c158a494-b3b9-498e-b711-800e6d95f13c"
+    },
+    {
+      "claim_id": "5b24897a-be66-4df2-a09d-0f54cdc08518",
+      "result_id": "c158a494-b3b9-498e-b711-800e6d95f13c"
+    },
+    {
+      "claim_id": "57bd8c00-57c4-46df-bda3-36fa87df96e1",
+      "result_id": "8a043bd4-0b1a-4de9-a887-9e3152123937"
+    },
+    {
+      "claim_id": "739bba05-deeb-4d07-9214-58049ac89795",
+      "result_id": "8a043bd4-0b1a-4de9-a887-9e3152123937"
+    },
+    {
+      "claim_id": "fced60ca-5dd7-48eb-aec0-d07847ec04ed",
+      "result_id": "8a043bd4-0b1a-4de9-a887-9e3152123937"
+    },
+    {
+      "claim_id": "2b7d27c7-d542-4f57-8e2d-d691f1d3aa0b",
+      "result_id": "8a043bd4-0b1a-4de9-a887-9e3152123937"
+    },
+    {
+      "claim_id": "908ea5e0-16b2-4a17-aa4e-11dfaa4451c7",
+      "result_id": "8a043bd4-0b1a-4de9-a887-9e3152123937"
+    },
+    {
+      "claim_id": "48c31c6e-c4f1-447b-81aa-ccd327aed43e",
+      "result_id": "a1dc4e6d-8967-4f20-bf57-a7ed2d80a3a5"
+    },
+    {
+      "claim_id": "69d90951-1122-4161-ad11-c2a587adf8f7",
+      "result_id": "a1dc4e6d-8967-4f20-bf57-a7ed2d80a3a5"
+    },
+    {
+      "claim_id": "5388d32d-c183-4e49-9d84-7a13f0bd55db",
+      "result_id": "a1dc4e6d-8967-4f20-bf57-a7ed2d80a3a5"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "06716042-1048-4ca7-93b4-a9d0b990e051",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "8a8f7478-e23a-4abd-b076-6836af6e0278",
+      "peer_result_id": "05480999-a43d-447c-8883-fa3f8d1fe5b7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the PSD95 supercomplex stoichiometry and spatial organization findings (C4, C5, C31-C44). OpenEval emphasizes the methodological rigor with large sample sizes and multiple techniques. Peer reviewers affirm this as a strength, particularly the 12.7 nm separation measurement. However, peer R7 raises concerns about GFP maturation/folding (C35, C41) affecting stoichiometry interpretation, which OpenEval addresses but peer reviewers view as a limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "7a1eab13-f149-4433-b013-13554f1568b9",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "604f6a86-9766-47ce-ab3f-e6cfebb5f025",
+      "peer_result_id": "2c6b355b-61ee-48a1-9b79-892ef06c994b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the sequential subunit replacement mechanism (C6, C47-C52). OpenEval highlights the methodological soundness of the time-stamping approach and statistical robustness. Peer reviewers affirm this as important for understanding synapse maintenance and stability, treating it as a key finding with compelling evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "90533407-362f-4634-902d-7406adc7d332",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "56e1c1ab-2046-47be-a873-2f803b0a81b6",
+      "peer_result_id": "83cd3f30-6445-4104-a885-51b035da6314",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the synaptic enrichment of mixed supercomplexes (C54-C58). OpenEval finds the comparison methodologically appropriate and notes the enrichment supports the sequential replacement interpretation. Peer reviewers acknowledge this finding as supporting evidence for the mechanism in synapses specifically.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "3a95e632-9552-4404-8061-741a54adf5c0",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "5de6d4d3-19f0-40f7-a1cc-a6f60d701e03",
+      "peer_result_id": "e1c9fa79-68a1-441d-b5df-1eb4e501a4fc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Major disagreement on regional variation claims (C7, C8, C59-C64). OpenEval rates as SUPPORTED, emphasizing large sample sizes, strong correlation (R=0.95), and appropriate statistical testing. Peer reviewers rate as UNCERTAIN, explicitly stating 'the conclusion that the population of mixed synapses is higher in the isocortex than in other brain regions is not supported by statistical analysis,' indicating inadequate statistical support despite acknowledging potentially meaningful differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "bf5d592a-ab19-4193-a2bd-4b29840e4c67",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "17eb57c4-dde5-46f1-90d1-e14639eac625",
+      "peer_result_id": "9ce54306-e424-4804-8140-449ed20cd462",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both agree on UNCERTAIN/limited support for synapse maintenance mechanism (C9, C86, C89). OpenEval notes the mechanism is demonstrated but the link to memory storage is speculative without behavioral experiments. Peer reviewers affirm the sequential replacement finding as important for synapse maintenance and stability, treating the mechanism itself as supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "975a15b5-db69-48d3-a11a-b5c0737ce9ec",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "7483d2cf-5712-4e59-8e1a-b385b458debc",
+      "peer_result_id": "bb1416df-b3aa-4932-9365-d704c89ced38",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on UNCERTAIN status for memory storage claims (C10, C11, C90-C93). Both note the extension of Crick's model and memory duration hypotheses are speculative. OpenEval states causality is not established and behavioral experiments were not performed. Peer reviewers explicitly state 'there is no evidence that these complexes are causally related to memory storage' despite data being consistent with the notion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "e6dc6981-4f4c-43d8-943c-f5086771728b",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ae8eedbf-0b28-4003-af5e-000889f63470",
+      "peer_result_id": "8a043bd4-0b1a-4de9-a887-9e3152123937",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address methodological novelty (C66, C67, C104-C106). OpenEval rates as SUPPORTED, emphasizing first direct single-molecule observation and methodological advantages. Peer reviewers also rate as SUPPORTED, affirming 'state-of-the-art super-resolution imaging techniques' and 'robust, high-quality, cross-validated analysis' with adequately powered sample sizes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "2864cf9e-1bce-4585-99b1-5aa2b21223fa",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "11651d3f-f50c-40c6-8219-42a9481f4d48",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates comparison with prior literature on PSD95 separation distances (C78-C81) as SUPPORTED, noting reasonable interpretation of different spatial relationships and appropriate consideration of technical factors. No corresponding peer review evaluation found for these specific comparison claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "15025b93-b3ef-49b1-855b-9bd1659f63f5",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "1fa613e5-d309-4f8a-b7e1-f00ee9343db2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates speculative claims about CamKII and other complexes (C100-C103) as UNCERTAIN, noting they are explicitly speculative and extend beyond experimental data. No corresponding peer review evaluation found for these specific speculative extension claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    },
+    {
+      "id": "86e21c1c-70c5-4109-8e0c-1ba5a089aa51",
+      "submission_id": "04b36ca4-5da1-4f81-8d01-5fef32a5c2a7",
+      "comparison_id": "CMP10",
+      "openeval_result_id": null,
+      "peer_result_id": "a1dc4e6d-8967-4f20-bf57-a7ed2d80a3a5",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": null,
+      "peer_result_type": "MINOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers raise concerns (UNCERTAIN) about biochemical isolation procedures (C27, C72, C73), questioning whether isolated complexes accurately represent in vivo structures due to physical disruption and detergents. OpenEval does not separately evaluate these methodological concerns about the isolation approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:51:31.461216Z"
+    }
+  ]
+}

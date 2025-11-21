@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C19",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C63"
+    ],
+    "result": "HGT promotes bistability in two-species populations when MGEs only affect growth rates. Increasing HGT rate enlarges the bistability region, creating bistability in systems that would otherwise be monostable. This effect is more evident between species with smaller growth rate differences and is robust to variations in initialization numbers and interaction strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C19, C24-C28, and C63 collectively demonstrate through mathematical modeling and numerical simulations (Figures 1B-D) that HGT promotes bistability when MGEs affect only growth rates. The robustness checks (C25, C26) and boundary conditions (C27, C28) strengthen this conclusion. The evidence is based on systematic parameter exploration with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C72"
+    ],
+    "result": "Nonzero cell death or dilution rate is essential for bistability in two-species populations, and promoting competition strength enlarges the multistability region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, and C72 are supported by numerical simulations (Figure 1\u2014figure supplement 2) showing that when death rate equals zero, MGEs affecting only growth rates have no effect on bistability. This identifies a critical parameter requirement for the main result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C68"
+    ],
+    "result": "The effect of HGT in promoting multistability is stronger in populations with intense competition and between species with similar growth rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C68 are supported by numerical simulations (Figure 1\u2014figure supplement 3, Figure 2\u2014figure supplement 10) showing that HGT effects are context-dependent. The simulations systematically vary competition strength and growth rate differences to establish these boundary conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C39"
+    ],
+    "result": "In multi-species communities, increasing HGT rate reshapes the stability landscape by creating additional stable states, each characterized by a different dominant species. This effect is generally applicable across communities with different numbers of species and interaction strengths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 and C39 are supported by numerical simulations (Figure 2A-C, supplementary figures 5-7) showing that HGT increases the number of stable states in communities of 5, 8, and 10 species. The generality is demonstrated through systematic variation of species numbers and interaction parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Multistability is more feasible when the growth rate effects of MGEs are small, but the qualitative relationship between HGT and community multistability is independent of the range of growth rate effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C43 are supported by simulations (Figure 2\u2014figure supplement 10) testing different ranges of \u03bb values. The analysis distinguishes between quantitative effects (feasibility) and qualitative relationships (directionality), which is methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "HGT promotes multistability in communities with niche structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by simulations (Figure 2\u2014figure supplement 11B-D) extending the model to include niche structure. This demonstrates that the main finding is not an artifact of the fully-connected interaction network assumption.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "When MGEs modify interspecies interactions, the effect of HGT on multistability depends on whether MGEs promote or reduce competition. The number of stable states increases with HGT when MGEs promote competition but decreases when MGEs reduce competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47 and C48 are supported by simulations (Figure 3E-F) using an extended model that accounts for MGE effects on competition strength. The opposing effects under different \u03b4 values are clearly demonstrated, though the biological relevance of specific parameter ranges is not fully established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "MGE epistasis modulates HGT's effect on bistability. With magnitude epistasis, HGT still promotes bistability, but with sign epistasis, HGT reduces bistability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C53 are supported by simulations (Figure 4A-D) testing different epistasis scenarios. The model appropriately distinguishes between magnitude and sign epistasis, and the results show clear opposing effects. However, the biological frequency of sign epistasis in natural systems is not discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C58",
+      "C59"
+    ],
+    "result": "Under strong antibiotic selection, HGT enables and promotes bistability and multistability. Increasing HGT rate enlarges the bistability area in two-species populations and increases the number of stable states in multi-species communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, C58, and C59 are supported by simulations (Figure 5C-F, supplement 1) using a model adapted for strong selection where only MGE-carrying cells survive. The robustness across different interaction strengths and growth rate ranges is demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C65",
+      "C66"
+    ],
+    "result": "In metacommunities, HGT creates spatial heterogeneity of species compositions across patches and increases regional diversity while local diversity remains low. Without HGT, metacommunities exhibit spatial homogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C65, and C66 are supported by metacommunity simulations (Figure 5\u2014figure supplement 2B-C) showing that HGT-driven multistability creates regional diversity through spatial heterogeneity. The use of Shannon index to quantify diversity is appropriate, and the distinction between local and regional scales is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Multistability is more feasible for communities with high neutrality (growth rate similarities among competitors).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by numerical simulations examining the relationship between growth rate similarity and multistability. This finding complements the main results by identifying another key parameter affecting multistability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The simulated systems reached steady states within 1000 hours and did not exhibit limit cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C96 are supported by simulation data (Figure 2\u2014figure supplements 1-2). These are important methodological validations ensuring that the identified stable states are genuine equilibria rather than oscillatory dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "At local scales, HGT-driven multistability undermines global stability, making systems less resilient to perturbations and creating opportunities for regime shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C64 is an interpretation of the findings but lacks direct empirical support. While the emergence of multiple stable states logically implies reduced global stability, the manuscript does not present simulations explicitly testing resilience to perturbations or quantifying regime shift probabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "For MGEs with sign epistasis or MGEs that relax interspecies competition, HGT might reduce the number of stable states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by the simulations in C48 and C53, which demonstrate reduced multistability under these conditions. This caveat appropriately qualifies the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The relative importance of HGT in promoting multistability is context-dependent: more prominent in high-density environments with abundant MGEs (like mammalian gut) and less important in low-density environments with slow gene transfer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C71 are supported by the analysis of HGT rate thresholds (Figure 2\u2014figure supplement 6) showing that effects become significant above 10^-2 hr^-1. The biological interpretation relating this to cell density is reasonable, though the manuscript acknowledges this is an inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The results provide a plausible explanation for the large number of community types observed in natural populations, such as the >32 stable state combinations in human gut bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74 and C75 connect the modeling results to natural observations, but this remains speculative. While the model can generate multiple stable states, the manuscript does not demonstrate that HGT is the primary mechanism in natural gut communities, nor does it exclude other mechanisms like environmental gradients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C81"
+    ],
+    "result": "HGT might contribute to unhealthy stable states in gut microbiomes associated with diseases, and modulating MGE spread using small molecules could offer therapeutic opportunities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C76-C78 and C81 are speculative applications of the modeling results. While C76 and C78 cite prior work establishing disease associations and HGT prevalence, C77 and C81 are predictions without experimental validation. The therapeutic potential is interesting but requires substantial additional work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background on multistability in microbial communities: alternative stable states exist in similar environments, transitions between states can be triggered by perturbations, and these regime shifts have important functional consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3-C10 establish the background and motivation for the study through citations to prior work. These are well-supported by the literature and provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Prior work has identified mechanisms for multistability (mutual inhibition, nutrient stoichiometry), and HGT is prevalent in microbial communities, but the interplay between HGT and multistability has not been rigorously examined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C18 establish the knowledge gap addressed by this study through citations to prior work. The gap identification is appropriate and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Definitions and modeling framework: bistability means two distinct stable states coexist; the model accounts for plasmid transfer allowing partial exchange of growth benefits/disadvantages between competitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C22 and C86-C89 provide definitions and describe the modeling framework. These are clearly stated and illustrated (Figure 1A). The modeling assumptions are explicit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C94"
+    ],
+    "result": "Background on mechanisms: unsaturated fatty acids can inhibit plasmid conjugation by binding TrwD, and mobile gene sharing can promote niche overlapping and increase competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C80, and C94 cite prior work on specific mechanisms. These provide biological context for the modeling assumptions and potential applications.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "S1P-related genes show cell-type-specific expression patterns in the chick retina that are dynamically regulated following NMDA-induced retinal damage. S1PR1 is highly expressed in resting M\u00fcller glia (MG) and rapidly downregulated after damage, while S1PR3 is upregulated in proliferating MG-derived progenitor cells (MGPCs). Genes encoding S1P synthesis and degradation enzymes (SPHK1, SGPL1, ASAH1, CERS5, CERS6) show dynamic changes in expression across multiple retinal cell types following damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C50 are well-supported by scRNA-seq data presented in Figure 1 and validated by FISH in Figure 2. The expression patterns are documented across multiple cell types and time points, with statistical significance determined using appropriate methods (Wilcoxon rank sum with Bonferroni correction). The dynamic regulation is demonstrated through temporal analysis at 3, 12, 24, 48, and 72 hours post-injury.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "FISH validation confirms the scRNA-seq findings for S1PR1, S1PR3, and SPHK1 expression patterns in MG. S1PR1 is associated with 100% of Sox2+ MG nuclei in undamaged retinas, rapidly decreases at 3 hours post-injury (HPI), and increases again at 48-72 HPI in delaminating MG. S1PR3 shows minimal expression in undamaged retinas but is detected in some MG nuclei at 48 HPI. SPHK1 is present in resting MG and increases in delaminating MG at 48 HPI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57 are supported by FISH data in Figure 2 that validates the scRNA-seq findings. The spatial and temporal patterns are clearly documented with representative images and quantification. The consistency between scRNA-seq and FISH strengthens confidence in the expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Exogenous S1P treatment activates Jak/Stat (pSTAT3) and mTOR (pS6) signaling pathways in MG but does not affect MAPK (pERK1/2) or immediate early gene (cFos) expression. S1P treatment increases microglia accumulation at the inner limiting membrane without recruiting additional macrophages to the retina. The microglial response is likely indirect through S1PRs on MG, as S1P receptor transcripts are not highly expressed in microglia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C66 are supported by immunofluorescence data in Figure 3 showing significant increases in pS6 and pSTAT3 in MG (p=0.0041 and p=0.0002, respectively) with paired t-tests. The lack of effect on pERK1/2 and cFos is documented, and microglia accumulation is quantified. The inference about indirect effects (C66) is reasonable given the expression data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C79",
+      "C80"
+    ],
+    "result": "Pharmacological manipulation of S1P signaling bidirectionally regulates MGPC proliferation in damaged retinas. S1PR1 activation (SEW2871) or increased S1P levels (SGPL1 inhibition with S1PL-in-31) suppress MGPC formation, while S1PR1 inhibition (MT1303, NIBR0213) or decreased S1P levels (SPHK1 inhibition with PF543, SKI-II) enhance MGPC proliferation. These effects are confirmed by multiple markers including EdU incorporation, Sox9, neurofilament, and pHisH3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C67-C80 are well-supported by experimental data in Figure 4 using multiple pharmacological agents with complementary mechanisms of action. The use of paired t-tests with individual animals as biological replicates is appropriate. Multiple independent markers (EdU, Sox9, neurofilament, pHisH3) provide convergent evidence. The bidirectional effects with agonists vs. antagonists strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "S1P pathway manipulation does not significantly affect microglia proliferation in NMDA-damaged retinas. Most S1P-targeting drugs do not affect cell death, with the exception of S1PR1 antagonist MT1303, which significantly reduces TUNEL-positive cells in the inner INL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by data in Figure 4 supplements showing no significant effects on CD45+ microglia proliferation across treatments. The selective neuroprotective effect of MT1303 is documented with appropriate statistics. These negative results are important controls demonstrating specificity of effects on MG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Inhibition of ceramide synthase with Ceranib-2 does not affect cell death, microglia reactivity, or MGPC proliferation in damaged retinas, suggesting that ceramide accumulation may not impact cell survival or MG responses to retinal damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 are supported by data in Figure 4 supplement 3 showing no significant differences across multiple parameters. While negative results, they are important for understanding the specificity of S1P effects versus broader sphingolipid metabolism. The inference in C83 is appropriately cautious ('may not').",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "SPHK1 expression and function differ between central and peripheral retina in mature chicks. SPHK1 expression is low in central retina but high in peripheral retina at 48 HPI. S1PR1 inhibition increases MGPCs in central retina, but SPHK1 inhibition has no effect centrally, suggesting that mature MG in central regions lose the ability to upregulate SPHK1 in response to damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 are supported by FISH and functional data in Figure 4 supplement 4. The regional differences are documented both at the expression level and functionally. The inference about MG maturation (C88) is reasonable given the known central-to-peripheral gradient of retinal development and the cited prior work on regional differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "SPHK1 inhibition decreases ATF3, pS6 (mTOR), and pSmad1/5/9 levels in MG in damaged retinas without affecting pERK1/2 or cFos. LC/MS analysis confirms that SPHK1 inhibitor (PF543) decreases S1P levels in undamaged retinas and that S1P levels increase after NMDA treatment. However, SPHK1 inhibitor treatment does not reduce elevated S1P levels in NMDA-damaged retinas, while SGPL1 inhibitor robustly increases S1P levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C95 are supported by immunofluorescence data in Figure 5a-d and LC/MS data in Figure 5e-f. The signaling pathway analysis uses appropriate paired t-tests. The LC/MS validation is critical and uses proper internal standards and quantification methods. The unexpected finding that SPHK1 inhibitor doesn't reduce S1P in damaged retinas (C93) is honestly reported and discussed in terms of drug pharmacokinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Inhibition of S1P receptors or S1P synthesis after NMDA damage does not affect MGPC proliferation but significantly enhances neuronal differentiation of MGPC progeny into HuC/D+ amacrine-like neurons. This enhanced differentiation does not include calretinin+ or Ap2a+ amacrine cell subtypes, and EdU+ progeny that migrate to the ONL do not express the photoreceptor marker visinin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C96-C101 are supported by experimental data in Figure 6 showing that S1P pathway inhibitors applied after NMDA (when MGPCs have already formed) selectively enhance HuC/D+ neuron formation without affecting proliferation. The specificity for HuC/D+ cells but not other neuronal markers is clearly documented. The timing of drug application is critical and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Microglia ablation with clodronate significantly diminishes S1PR1 expression in undamaged retinas and upregulates CERS6 in MG and other retinal cells. In neuronal cells, many S1P-related genes (including SGPL1) that are normally upregulated with NMDA show diminished expression when microglia are absent, indicating that microglial reactivity drives S1P metabolism in retinal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C105-C109 are supported by scRNA-seq analysis of microglia-depleted retinas in Figure 7. The statistical analysis uses appropriate methods (Wilcoxon rank sum with Bonferroni correction). The differential effects on MG versus neurons are clearly documented. The inference about microglial regulation (C109) is well-supported by the data showing reduced neuronal S1P gene expression in the absence of microglia.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C121"
+    ],
+    "result": "Inhibition of S1PR1 or SPHK1 partially rescues MGPC proliferation in microglia-depleted damaged retinas, though numbers remain significantly lower than in NMDA-treated retinas with intact microglia. S1PR1 inhibitor MT1303 reduces cell death in microglia-depleted retinas, while NIBR0213 increases cell death, suggesting different specificities or toxicities between the two S1PR1 inhibitors. SPHK1 inhibition also reduces cell death compared to clodronate/NMDA controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C110-C121 are supported by experimental data in Figure 8 showing partial rescue of MGPC formation with appropriate statistical comparisons across three groups. The differential effects of the two S1PR1 inhibitors on cell death (C116-C118) are documented, and the speculation about different specificities (C118) is appropriately cautious. The partial rescue demonstrates that S1P signaling is one of multiple microglial signals regulating MG reprogramming.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "TGF\u03b2/Smad3 signaling maintains S1PR1 expression in resting MG. Treatment with the Smad3 inhibitor SIS3 significantly reduces S1PR1 FISH puncta in the INL of undamaged retinas. This suggests that TGF\u03b2/Smad3 signaling between microglia and MG maintains high S1PR1 levels, and the proliferation-inducing effects of Smad3 inhibition may be partially mediated by downregulation of S1P signaling in MG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C125-C127 are supported by FISH data in Figure 9 showing significant reduction in S1PR1 puncta with SIS3 treatment (p=0.006, paired t-test). The connection to prior work on TGF\u03b2/Smad3 and MGPC proliferation is appropriate. The mechanistic speculation in C127 is cautious ('may, in part') and reasonable given the data, though it remains to be directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Comparative analysis of S1P-related gene expression across vertebrate species shows that S1PR1 is expressed by resting MG in human and zebrafish retinas, similar to chick. In human retinas, S1PR1 and S1PR3 are detected in putative resting and activated MG, respectively. In zebrafish, s1pr1 is high in resting MG and downregulated in MGPCs, with expression also observed in differentiating amacrine cells. The conservation of S1PR1 expression patterns in resting MG across vertebrate classes suggests potentially conserved functions of S1P signaling in the vertebrate retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C145 are supported by analysis of published snRNA-seq datasets from human (Li et al., 2023) and zebrafish (Lyu et al., 2023) retinas shown in Figure 10. The comparative analysis appropriately identifies similarities and differences across species. The inference about conserved function (C145) is appropriately speculative ('possibly') given that only expression patterns, not function, are compared across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "S1PR1, highly expressed in resting MG and non-neurogenic MGPCs, plays a significant role in suppressing damage-dependent MGPC proliferation and neuronal differentiation. Inhibition of S1PR1 promotes MGPC cell-cycle re-entry and enhances regenerated amacrine-like cells. Inhibition of S1P synthesis produces similar effects to S1PR1 inhibition in promoting MGPC formation, while inhibiting S1P degradation produces similar effects to S1PR1 activation in suppressing MGPC formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 are summary statements well-supported by the collective experimental data from Figures 4-6. These represent the major conclusions of the study, integrating expression patterns, pharmacological manipulations, and functional outcomes. The bidirectional effects with complementary approaches (receptor vs. ligand manipulation) provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C120"
+    ],
+    "result": "S1P signaling is dynamically regulated in MG and MGPCs in the chick retina, and activation of S1P signaling depends, in part, on signals produced by reactive microglia. S1P signaling is regulated by signals produced by microglia, and inhibition of S1P signaling partially rescues MGPC proliferation and reduces cell death in microglia-depleted retinas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C120 are overarching conclusions supported by the integrated findings from expression analysis (Figures 1-2), microglia ablation experiments (Figures 7-8), and TGF\u03b2/Smad3 studies (Figure 9). The dynamic regulation is demonstrated temporally, and the microglial dependence is shown through multiple complementary approaches. The qualifier 'in part' appropriately acknowledges that microglia are not the sole regulators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C81",
+      "C84",
+      "C85",
+      "C102",
+      "C103",
+      "C104",
+      "C114",
+      "C115",
+      "C122",
+      "C123",
+      "C124",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Background claims establishing prior knowledge about NF\u03baB signaling, S1P signaling, MG reprogramming, microglia function, and technical methods in the chick retina model system. These claims provide context for the current study and are supported by citations to previous literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C29, C81, C84-C85, C102-C104, C114-C115, C122-C124, C150-C155 are background/contextual claims supported by appropriate citations to prior literature. These establish the rationale for the current study and provide necessary context. The citations appear appropriate and the claims accurately represent prior work based on the descriptions provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Established biochemical knowledge about S1P metabolism and signaling. S1P is produced by sphingosine kinases (SPHK1 and SPHK2) and degraded by SGPL1. SPHK2 does not directly contribute to secreted S1P levels and is not annotated in the chick genome. S1P can be exported by transporters or converted to sphingosine by phosphatases. Sphingosine levels are regulated by ASAH1 and CERS enzymes. S1P activates G-protein-coupled receptors S1PR1-S1PR5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 represent established biochemical knowledge about S1P metabolism and signaling pathways. C17 is supported by citation, and C18 is verifiable regarding genome annotation. These foundational claims are necessary for interpreting the experimental results and are appropriately presented as established knowledge.",
+    "result_type": "MINOR"
+  }
+]

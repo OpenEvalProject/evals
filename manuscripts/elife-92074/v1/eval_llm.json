@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors used CITE-seq to analyze 14,274 Lin-CD34+ cells from nine CML patients with >40 surface markers, mapping cells to a normal bone marrow reference of 4,696 cells from two healthy donors that contained 11 distinct cell clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 describe the core methodology and reference dataset. The approach is well-documented with appropriate sample sizes, clear description of the analytical pipeline using Scarf projection, and validation through figures. The methodology is sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38"
+    ],
+    "result": "Each CML patient harbored a unique composition of stem and progenitor cells at diagnosis, with all reference clusters represented but remarkable heterogeneity in relative abundance across patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C38 are supported by the CITE-seq analysis and label transfer approach shown in Figures 2A and 3A. The finding of inter-patient heterogeneity is clearly demonstrated through individual UMAPs and quantification of cluster proportions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Treatment failure patients had a fourfold higher abundance of molecularly defined primitive cells at diagnosis compared to optimal responders, while optimal responders had approximately threefold higher MEP and erythroid clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C39-C41 present quantitative comparisons between treatment groups supported by Figure 3B. The fourfold and threefold differences are explicitly stated and visually demonstrated. However, statistical testing details and sample sizes (n=4 optimal, n=2 failures) are limited, which could affect generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Deconvolution of an independent bulk gene expression dataset from 59 CML patients showed >threefold statistically significant enrichment of primitive cells in non-responders, with primitive cells rarely detected in peripheral blood compared to bone marrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by computational deconvolution using CIBERSORTx on an independent dataset (GSE14671), providing external validation. The tissue-specific distribution finding strengthens the biological interpretation. Statistical significance is stated though detailed p-values are not provided in the text.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CML patients were enriched for basophil/mast cell, MEP, and MkP clusters and depleted for primitive and MPP clusters compared to normal bone marrow. A pan-CML signature of 71 genes (50 up-regulated, 21 down-regulated) was identified across all clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe differential cluster abundance and gene expression patterns supported by Figures 2B and 2D. The pan-CML signature approach of identifying genes consistently changed across all clusters is methodologically sound and avoids bias from numerically dominant clusters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Analysis of 6,779 Lin-CD34+CD38-/low cells from 8 CML patients revealed that BCR::ABL1+ LSCs and BCR::ABL1- HSCs were distinctly separated in UMAP space, with LSCs forming a continuum with progenitors while HSCs formed isolated clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe the stem cell-enriched fraction analysis supported by Figure 4B and supplementary figures. The distinct spatial separation and biological interpretation are well-supported by the multiomic data and consistent with cited literature on hematopoietic hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Differential gene expression analysis identified 244 genes upregulated in BCR::ABL1+ primitive cells (including IL2RA/CD25, DPP4/CD26, IL1RAP, LEPR) and 180 genes upregulated in BCR::ABL1- cells (including CRHBP and CXCR4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by Figure 4C and differential expression analysis. The identification of known CML markers in the BCR::ABL1+ signature provides validation, while the BCR::ABL1- signature includes known HSC-related genes, supporting biological validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Among 28 surface markers differentially expressed between BCR::ABL1+ and BCR::ABL1- primitive cells, CD26 and CD25 were consistent markers of LSCs across all patients, while CD35 with ~fourfold elevated expression was the only consistent marker of HSCs across all patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 describe systematic ADT analysis supported by Figures 4B and 5A. The identification of CD35 as a consistent HSC marker is particularly novel and well-supported. The quantification of marker consistency across patients strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "BCR::ABL1+ LSCs can be distinctly separated as CD26+CD35- (capturing >95% of BCR::ABL1+ primitive cells) and BCR::ABL1- HSCs as CD26-CD35+ (capturing ~50% of BCR::ABL1- primitive cells) with no contamination between populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C62-C66 present the key methodological advance supported by Figure 5D-E. The high capture efficiency and purity are well-documented through ADT gating analysis. This represents a novel and practical approach for separating these populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "qPCR validation confirmed that CD26+CD35- cells showed strong BCR::ABL1 expression while CD26-CD35+ cells were BCR::ABL1low/negative, and CD26+CD35- cells maintained GAS2 expression at diagnosis and after 3 months of Bosutinib therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 provide orthogonal validation of the CITE-seq findings using qPCR, supported by Figure 6A-B. The validation at both diagnosis and post-treatment strengthens confidence in the marker combination. GAS2 expression provides additional molecular validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C80"
+    ],
+    "result": "The LSC/HSC ratio was substantially higher in treatment failures compared to optimal responders at diagnosis and after 3 months of TKI therapy. After treatment, optimal responders were dominated by healthy HSCs while failure patients retained CD26+CD35- LSCs without HSC re-establishment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C73-C76, C80 link the CD26/CD35 markers to treatment outcomes, supported by Figure 6C-E. The longitudinal analysis strengthens the clinical relevance. However, sample sizes are limited (n=6 optimal, n=5 failures) and statistical details could be more comprehensive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "LSC and HSC populations were indistinguishably deeply quiescent with average times to first division of 80-100 hours in culture, with no distinct difference in cell cycle status between BCR::ABL1+ LSCs and BCR::ABL1- HSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 are supported by in vitro division kinetics experiments and cell cycle analysis of CITE-seq data shown in supplementary figures. The finding that both populations are similarly quiescent is important for understanding TKI resistance mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "CD26, CD25, and CD93 displayed 2-8 fold elevated expression in BCR::ABL1+ primitive cells compared to BCR::ABL1- cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 provides quantitative validation of known CML markers in the BCR::ABL1+ population using ADT data. The fold-change range is clearly stated and supports the use of these markers for LSC identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Established CML stem cell markers CD25, CD26, and CD93 could only capture a fraction of the primitive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by Figure 3\u2014figure supplement 2C showing incomplete capture of primitive cells by these markers. This finding motivates the need for the CD26/CD35 combination approach and highlights limitations of existing markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The primitive fraction in CML patients is a mixture of molecularly distinct BCR::ABL1+ LSCs and BCR::ABL1- HSCs in variable ratio across patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 summarizes a key finding supported by the multiomic analysis shown in Figures 4 and 5. The variable ratio across patients is demonstrated through individual patient UMAPs and quantification, highlighting inter-patient heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "CD62L and CD10 were present on BCR::ABL1- HSCs in 6/8 and 5/8 patients respectively. CD35 expression divided CD26- BCR::ABL1- primitive cells into CD35+ and CD35- fractions, with CD26-CD35- likely representing non-leukemic MPPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94, C96-C97 describe additional surface marker patterns and hierarchical relationships. The interpretation of CD26-CD35- cells as MPPs (C96) is reasonable based on the HSC hierarchy literature cited, though this remains somewhat inferential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims about CML biology, LSC persistence, treatment challenges, and limitations of current monitoring methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C11-C20 present established knowledge about CML supported by appropriate citations. These provide context for the study but are not novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C60",
+      "C61",
+      "C70",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C95"
+    ],
+    "result": "Prior work from the authors and others on CML LSC heterogeneity, CD26+ cells, CD35+ HSCs, and various molecular markers and mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26, C60-C61, C70, C77-C95 cite prior work that provides foundation for the current study. The citations appear appropriate and accurate. These claims establish the rationale and build on previous findings but are not novel results from this manuscript.",
+    "result_type": "MINOR"
+  }
+]

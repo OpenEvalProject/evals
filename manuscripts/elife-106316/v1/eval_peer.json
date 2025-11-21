@@ -1,0 +1,145 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C56",
+      "C78"
+    ],
+    "result": "The computational model shows that the zebrafish segmentation clock is broadly robust to variations in cell ingression position (Random, DP, DP+LV) and motility profiles, with only minor effects on synchrony and no effects on frequency in most scenarios. DP+LV ingression creates a minor decrease in anterior synchrony, but the evolution of motility profile and cell ingression position are not constrained by one another with respect to clock dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers accept the modeling results showing robustness to cell ingression and motility. Reviewer 1 states 'the presented results support the conclusion' and the manuscript is 'clearly written.' Reviewer 2 notes 'the key conclusion...stems directly from the modeling results appropriately presented' and that parameters are 'well explained.' Reviewer 3 acknowledges the findings but suggests methodological improvements that do not challenge the core results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C41",
+      "C79",
+      "C69"
+    ],
+    "result": "The robustness of the segmentation clock to morphogenetic changes is determined by PSM length, cell density, the rate of cell mixing, and the strength of clock phase coupling. Density and length can independently confer robustness, though length has a stronger relative effect.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as appropriately demonstrated by the model. Reviewer 2 states the conclusions about PSM length and density 'stem directly from the modeling results appropriately presented.' Reviewer 3 requests more detailed parameter exploration (a 2D phase diagram) but does not challenge the validity of the findings, suggesting the results are incomplete rather than incorrect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C42",
+      "C92"
+    ],
+    "result": "For much of somitogenesis in zebrafish, the clock is not majorly impacted by compaction-extension of the tissue. This is supported by the observation that density and length co-vary after the 16-somite stage and that somitogenesis dynamics are consistent across individuals at late stages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this finding. Reviewer 2 notes that the model 'achieves its proposed goal of evaluating the potential robustness of the embryo clock to changes in (some) morphogenetic processes,' which includes compaction-extension. The supporting citations are not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C47",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "Clock synchrony is negatively impacted by mitosis throughout the PSM, but this effect is rescued when mitosis is confined to the posterior PSM. There exists a point along the AP axis posterior to which cell division can occur without affecting anterior clock dynamics. This is based on known biology that M-phase arrests clock gene expression for ~15 min, affecting ~8% of cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these mitosis findings. Reviewer 1 notes the manuscript 'confirms that the synchronization of the segmentation clock is robust by careful simulations.' Reviewer 2 states the model 'achieves its proposed goal' and that parameters are 'well explained.' The biological parameters cited (Horikawa et al., 2006; Kanki and Ho, 1997) are not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C55",
+      "C51",
+      "C61"
+    ],
+    "result": "The robustness of the segmentation clock to morphogenetic changes is mediated by the combination of cell-cell coupling delay and coupling strength. With coupling delay (\u03c4=21 min), synchronous oscillations cannot be achieved for DP+LV ingression for any tested parameter pairs, and coupling strength and delay strongly constrain the evolvability of cell ingression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly requested analysis of coupling delay effects, noting 'several previous studies...suggested the presence of coupling delays in Delta-Notch signaling.' The authors' inclusion of this analysis and the resulting findings are implicitly accepted as the reviewer states the manuscript 'confirms that the synchronization of the segmentation clock is robust by careful simulations.' Reviewer 2 and 3 do not challenge these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C57",
+      "C64",
+      "C65",
+      "C66",
+      "C70",
+      "C80"
+    ],
+    "result": "The clock and morphogenesis of the PSM exhibit developmental modularity. Clock dynamics are robust to changes in morphogenesis (cell ingression, division, motility, compaction-extension), and since PSM morphogenesis is independent of clock function, these two processes comprise modular components of somitogenesis that can evolve independently.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accept the modularity conclusion. The editor states the authors 'use convincing arguments to support the idea' of evolvability. Reviewer 1 notes 'the presented results support the conclusion' and acknowledges the authors 'bring a concept of modularity and evolvability to the field of the vertebrate segmentation clock, which is new.' Reviewer 2 states 'the key conclusion...stems directly from the modeling results appropriately presented.' Reviewer 3 notes the manuscript 'answers some important questions' though requests more complete analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C11"
+    ],
+    "result": "The modularity of the clock and morphogenesis may have contributed to the evolution of broad diversity in vertebrate segment number and represents a present source of evolvability. This modularity permits synergy between clock and morphogenesis that heightens the evolvability of segment number.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly endorses this evolutionary interpretation, stating the manuscript uses 'convincing arguments to support the idea that this would allow the evolution of flexible body plans and a variable number of segments.' Reviewer 1 notes the authors 'bring a concept of modularity and evolvability to the field...which is new.' Reviewer 2 states the work 'provides theoretical insight to support a conceptual advance in the field of evolutionary vertebrate embryology.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C83"
+    ],
+    "result": "Incoming progenitor cells do not appear to show clock gene expression, based on citation to Mara et al., 2007.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly questions this assumption, noting 'there are several lines of evidence (in chick and mouse), that some oscillatory clock genes are already being expressed as early as in the gastrulation phase (so prior to PSM ingression)' and asks 'Is this also true in zebrafish?' The reviewer suggests the 2007 citation may be outdated and that if clock genes are expressed at ingression, 'the cell addition should have random clock gene periods when they enter the PSM.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C72",
+      "C74"
+    ],
+    "result": "The 3D computational model is parameterized for zebrafish and can quantitatively recapture rates of cell mixing in the PSM. The model uses an abstract phase-oscillator description of the clock and experimentally derived parameters. Cells are modeled as point particles subject to mixing, repulsion, and boundary forces in a horseshoe-shaped domain.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 directly challenges the necessity of the 3D model, stating 'I am not convinced with this justification of using a 3D model. None of the effects the authors explore in this manuscript requires a three dimensional model...A one-dimensional model...can incorporate all the physics authors described...as well as significantly computationally cheap.' However, Reviewers 1 and 2 accept the model choice, with Reviewer 2 noting 'parameters are well explained, and seem reasonable assumptions' and 'the model comprises some strong assumptions, however all have been clearly explained.'",
+    "result_type": "MINOR"
+  }
+]

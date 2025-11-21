@@ -1,0 +1,139 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors report successful in vivo recording of \u03b3-secretase activity in individual neurons in living mouse brains using the NIR C99 720-670 biosensor and NIR confocal microscopy. The biosensor was delivered via AAV to the somatosensory cortex, and fluorescence was detected from the brain surface to approximately 100 \u03bcm depth, demonstrating the feasibility of NIR confocal microscopy for monitoring biological events in live mouse brains.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Multiple reviewers acknowledge the technical achievement but express serious concerns about validation. Reviewer 1 states the approach 'requires further validation' and the 'current evidence provided is inadequate to support the conclusions.' Reviewer 2 describes this as 'only a proof of concept' and 'a technical note' rather than a research paper. Reviewer 3 notes the sensor has 'a relatively modest \u0394F' which is 'an additional challenge for its use in vivo,' making the data 'fully dependent on post-capture processing and computational analyses.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C54",
+      "C55",
+      "C56",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors report that \u03b3-secretase activity is heterogeneously regulated among individual neurons in vivo, with neighboring neurons exhibiting similar 720/670 ratios (clustering). Statistical analysis showed significant positive correlations between the 720/670 ratio in each neuron and the average ratio in neighboring neurons (2, 5, or 10 closest neurons, or within 20 \u03bcm radius) across three independent mice.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers strongly challenge this finding. Reviewer 2 states 'from these images one cannot conclude 'by eye' any clustering event' and notes 'all neurons in the field show variable activity and a clustering is not really evident.' The reviewer emphasizes 'very low r values' and that 'even within a cluster, there is variability.' Reviewer 3 raises fundamental concerns about interpretation, noting 'the dynamic range of the sensor previously reported in vitro is in the range of 20-30% change whereas the range of FR detected in vivo is between cells is significantly larger,' which 'raises considerable doubts for specific detection of cellular activity.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors conclude that \u03b3-secretase activity may influence the activity of \u03b3-secretase in neighboring neurons, suggesting a potential 'cell non-autonomous' regulation of \u03b3-secretase in mouse brains. This conclusion is based on the observed spatial correlations in \u03b3-secretase activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers reject this interpretation due to lack of validation and physiological relevance. Reviewer 2 states 'there is still no physiological relevance for this observation' and argues that experiments in disease models (fadPSEN1 KI or PSEN1cKO) would be needed to investigate this claim. The reviewer also notes 'they only monitor activity in cell bodies, and miss all info on g-sec activity in neurites and synapses' and questions 'what is the relevance of the cell body associated g-sec?' The editor summarizes that 'further validation of the approach is required, as the current evidence provided is inadequate to support the conclusions.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "DAPT administration dose-dependently increased APP CTFs (confirming \u03b3-secretase inhibition) but unexpectedly decreased 720/670 ratios in vivo by 22.1%, opposite to the increase observed in cultured cells. The authors interpret this as indicating that orientation plays a significant role in the biosensor and that FRET response depends on cell types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers identify this as a critical validation failure that undermines the entire approach. Reviewer 2 notes this is 'opposite to their own in vitro data (in primary neurons)' and states this 'doesn't really confer high confidence and may hinder other groups in using this sensor reliably.' Reviewer 3 emphasizes this is a fundamental problem: 'without any ground truth, it is impossible to assess and interpret what FR measurements of this sensor in vivo mean' and concludes 'the use of this approach as a way to study g-sec activity in vivo seems premature.' Reviewer 4 states mechanistically 'it is unclear how this could occur with this type of sensor' since 'the major contributing FRET factor is expected to be distance, not orientation,' and suggests the sensor 'would benefit from a control that is insensitive to gamma-secretase activity.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The authors report that DAPT administration abolished the spatial correlation between neuronal \u03b3-secretase activities, suggesting the positive correlation is dependent on \u03b3-secretase activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While this control experiment is acknowledged, reviewers question its interpretation given the fundamental validation issues with the DAPT response. Reviewer 3 states 'based on their own data, there is no way to interpret this quantification. If DAPT reduces FR, does this mean we should now interpret the results of higher FR corresponds to higher g-sec activity?' The loss of correlation after DAPT could support the claim, but the contradictory DAPT response undermines confidence in this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Immunohistochemical analysis showed that approximately 40% of NeuN-positive neurons express the C99 720-670 biosensor, and almost all biosensor-expressing cells are NeuN-positive but GFAP or Iba-1-negative, confirming neuronal expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges the immunohistochemical characterization of biosensor expression. This technical validation of cell-type specificity is accepted as demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors found that biosensor expression (miRFP670 intensity) positively correlates with expression in neighboring neurons (indicating uneven AAV transduction), but the 720/670 ratio is not correlated with biosensor expression level, suggesting the expression pattern did not impact \u03b3-secretase recording capability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 acknowledges 'the authors now confirm that expression levels are indeed variable but are independent from the ratio measurements,' but this does not resolve the reviewer's concerns about the overall approach. The lack of correlation between expression and ratio is noted but does not address the fundamental validation issues raised by all reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors developed an automated image processing and analysis pipeline involving background subtraction, median filtering, 3D iterative thresholding, morphological filtering, and exclusion of autofluorescent objects (720/670 ratio <1.5) to segment individual neurons and quantify FRET ratios.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 notes 'the data is fully dependent on post-capture processing and computational analyses. This can unintentionally introduce biases but is not an insurmountable issue with the proper controls that the authors have performed here.' However, Reviewer 2 questions whether the processing can reliably identify clustering, stating one 'cannot conclude 'by eye' any clustering event' from the processed images. The methodology is described in detail but its reliability for the biological conclusions is questioned.",
+    "result_type": "MINOR"
+  }
+]

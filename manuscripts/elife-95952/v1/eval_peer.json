@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors developed a novel RNA-seq-based high-throughput screening assay using isogenic cell lines with engineered truncating mutations in STAG2 and TP53 to identify NMD inhibitors. The assay employs a ratiometric output comparing mutant to wild-type transcript levels, minimizing confounders and allowing detection of NMD inhibitors regardless of effects on protein translation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers praised the screening method as 'novel,' 'elegant,' and representing 'an important advance.' Reviewer 1 stated 'The RNA-seq based NMD analysis, using isogenic cell lines with specific NMD-inducing mutations, represents a novel approach for the high-throughput identification of potential NMD modulators.' The editor affirmed the assay was 'successfully' executed and the conclusions are 'supported by convincing evidence.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The screen of 2658 compounds identified eight hits that increased mutant transcript expression, including the known NMD inhibitor anisomycin (validating the screen) and LY3023414, which was selected as the lead compound based on its consistently stronger effect over other hits like halofuginone across multiple cell lines and assays.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the screening results and validation. Reviewer 1 noted 'The effectiveness of this method is exemplified by the identification of a new activity of AKT1/mTOR inhibitor LY3023414 in inhibiting NMD.' The identification of anisomycin as a hit provided independent validation. However, Reviewer 3 noted the screen 'was ultimately a failure as it didn't reveal a useful lead compound that could be further optimized' due to LY3023414's toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C44",
+      "C53",
+      "C54",
+      "C55",
+      "C57",
+      "C101"
+    ],
+    "result": "LY3023414, originally developed as a PI3K/AKT1/mTOR inhibitor, was identified as inhibiting NMD and shown to increase mutant transcript expression in vitro and in vivo xenograft models. However, severe toxicity including weight loss and inactivity precluded its use in longer-term in vivo studies in immunocompetent mice.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raised concerns about the claim that LY3023414 targets SMG1. Reviewer 1 stated 'The results from the SMG1/UPF1 knockdown and SMG1i-11 experiments...do not conclusively establish SMG1 as the direct target of LY3023414 in NMD inhibition. An epistatic analysis with LY3023414 and SMG1-knockdown is needed.' Reviewer 3 noted 'the authors claim that they were able to show that LY3023414 inhibited the SMG1 kinase, which is not true' without direct evidence like UPF1 phosphorylation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Treatment with LY3023414 increased expression of mutant alleles in 42-67% of heterozygous out-of-frame indel mutations and one-third of nonsense mutations in NCI-H358 and LS180 cells, while single base pair substitutions were unaffected. This was confirmed by targeted RNA-seq and western blotting showing truncated mutant proteins for EXOC1 and SPTAN1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge these specific findings about LY3023414's effects on transcript and protein levels. The data demonstrating selective upregulation of NMD-targeted transcripts and proteins was accepted as part of the characterization of LY3023414's NMD inhibitory activity, though concerns remained about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C100",
+      "C103"
+    ],
+    "result": "siRNA knockdown experiments of various kinases showed that only SMG1 knockdown resulted in significant changes in truncating mutant transcript levels across all genes tested. UPF1 knockdown produced similar effects, consistent with SMG1's role as the gatekeeper of UPF1 activity. The authors concluded SMG1 is the ideal target for NMD pathway disruption.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the siRNA knockdown data identifying SMG1 as a key target. However, Reviewer 3 disagreed with the conclusion that the screen was necessary to identify SMG1, stating 'They argue it helped them define in an unbiased way SMG1 as the ideal target for NMD disruption. I would counterargue that this has been known in the field for quite a while.' The data itself was not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C102"
+    ],
+    "result": "Treatment with the previously reported SMG1 inhibitor SMG1i-11 increased transcripts and proteins from genes with truncating mutations similar to LY3023414. However, SMG1i-11 was highly insoluble and could not be administered in vivo despite numerous formulation attempts, which may explain the lack of peer-reviewed reports of its in vivo activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the SMG1i-11 data and solubility issues. Reviewer 3 initially questioned why variant 11j was used instead of the more commonly used 11e variant, but this was addressed in revisions. The insolubility problem was acknowledged as a limitation that motivated development of KVS0001.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C104"
+    ],
+    "result": "The authors developed KVS0001, a novel SMG1 inhibitor based on SMG1i-11 and the SMG1 structure, which showed improved solubility while preserving SMG1 inhibitory activity. KVS0001 demonstrated high specificity for SMG1 over 246 other kinases at concentrations up to 1 \u00b5M, was bioactive in the nanomolar range, decreased phosphorylated UPF1 levels, and achieved near-total NMD blockade at 600 nM.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers praised KVS0001 as a significant advance. The editor stated it is 'a new and very promising NMD inhibitor drug' and 'an important advance for the field, as previous NMD inhibitors were not specific, lacked efficacy, or were very toxic.' Reviewer 1 noted 'The properties of KVS0001...suggest its potential as a lead compound.' Reviewer 3 called it 'a novel and - judging from the presented data - very promising NMD inhibiting drug.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C71",
+      "C72",
+      "C88",
+      "C118",
+      "C120"
+    ],
+    "result": "KVS0001 was well-tolerated in vivo, with only transient weight loss observed at therapeutic doses (30 mg/kg). It increased transcript levels of genes with truncating mutations in xenograft tumors without affecting genes with SNPs. The limited toxicity suggests NMD inhibition may have acceptable tolerability in developed animals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the tolerability data. Reviewer 3 noted 'KVS0001, though it was soluble and could be administered to animals for at least a month, was not entirely non-toxic, causing transient weight loss in some of the mice.' The authors' inference about acceptable toxicity was not challenged, though reviewers noted the need for continued monitoring of on-target off-tissue toxicity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C16",
+      "C74",
+      "C75",
+      "C105"
+    ],
+    "result": "Treatment with KVS0001 increased levels of neoantigens on cell surfaces, with 45-90-fold increases in EXOC1- and RAB14-derived neoantigens and 2-fold increase in ZDHHC16-derived neoantigen detected by quantitative HPLC-MS. This was consistent with re-expression of mutant transcripts and proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the neoantigen presentation data. Reviewer 1 stated 'Treatment with KVS0001 caused NMD inhibition and increased presentation of neoantigens on MHC-I molecules.' The mass spectrometry data demonstrating increased neoantigen levels was not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C106"
+    ],
+    "result": "A bispecific antibody (KVS-BI043) targeting a TP53 peptide-HLA-A24 complex and CD3 was developed. Treatment of NCI-H716_A24 cells with KVS0001 plus KVS-BI043 in the presence of T-cells caused significant IFN-\u03b3 release and cancer cell killing, which required both T-cells and HLA-24 expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the bispecific antibody data. Reviewer 1 noted 'A bispecific antibody targeting T cells to a specific antigen-HLA complex led to increased IFN-gamma release and killing of cancer cells expressing this antigen-HLA complex when they were treated with KVS0001.' The demonstration of T-cell-dependent and HLA-dependent killing was not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C17",
+      "C86",
+      "C87",
+      "C89",
+      "C107",
+      "C108",
+      "C111",
+      "C112"
+    ],
+    "result": "In syngeneic mouse models, KVS0001 significantly slowed tumor growth in immunocompetent mice bearing LLC and RENCA tumors with high numbers of truncating mutations, but had no effect in immunodeficient mice. The immune-dependence supports that tumor growth inhibition was due to neoantigen recognition, and there appeared to be a correlation with truncating mutation burden.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the in vivo efficacy data and immune-dependence. Reviewer 1 stated 'The results of the in vitro cell killing assay and in vivo xenograft experiments in both immuno-proficient and immune-deficient mice indicate that inhibiting NMD could be a viable therapeutic strategy for certain cancers.' The editor noted the work 'slows tumor growth of cancer cell lines possessing a significant number of out-of-frame indel mutations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Among seven syngeneic mouse models tested, none of the three with moderate or low truncating mutation numbers responded to KVS0001 (EMT6, B16-F10, M3 Melanoma). Of four models with higher mutation numbers, two (LLC and RENCA) responded significantly while two (CT26, MC38) failed to reach significance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these findings showing variable responses across tumor models. The data supported the correlation between mutation burden and response, though the imperfect correlation was acknowledged as a limitation similar to checkpoint inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C116",
+      "C117"
+    ],
+    "result": "The authors acknowledged several limitations: they do not understand why KVS0001 increases expression of many but not all genes with truncating mutations; changes to splicing when NMD is disrupted were not systematically addressed; and treatment led to decreased tumor growth but not tumor regressions meeting RECIST criteria.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers appreciated the authors' acknowledgment of limitations. Reviewer 1 had specifically requested that 'The authors did not address the potential effects of NMD/SMG1 inhibitors on RNA splicing' as a weakness, which the authors acknowledged in their discussion. The lack of complete tumor regressions was noted but understood in the context of pre-clinical models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Different NMD inhibitors caused re-expression of different knockout clones to different extents. The authors speculated this may be related to differences in mechanism of action (e.g., protein synthesis inhibition-based versus targeted NMD pathway inhibition).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This observation was noted during the review process but not extensively discussed by reviewers. The authors acknowledged 'It is not clear to us why this occurred' and offered speculation about mechanisms. This represents an unexplained finding that warrants further investigation.",
+    "result_type": "MINOR"
+  }
+]

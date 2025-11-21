@@ -1,0 +1,166 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C34",
+      "C35",
+      "C58",
+      "C65",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors developed a deep learning pipeline (U-NetCellDivision) based on ResNet34 modified into a U-Net structure that accurately detects cell divisions in time-lapse movies of epithelial tissues in vivo. The 10-frame model (U-NetCellDivision10) achieved a dice score above 0.95 with over 80% reduction in false positives and false negatives compared to the 3-frame model, and using two independent fluorescent channels increased model accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the methodological contribution. Reviewer 1 states the methods 'achieve the goals set by the authors and are a very helpful addition to the toolbox of developmental biologists.' Reviewer 2 notes 'the evidence for the impact of wounds on cell division is compelling,' implicitly accepting the detection method. Reviewer 3 raises concerns about generalizability and documentation but does not challenge the model's performance on the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C85",
+      "C86",
+      "C88",
+      "C89",
+      "C91"
+    ],
+    "result": "The deep learning pipeline determines division axis orientation, revealing that in unwounded tissue there is a small orientation bias at 45\u00b0 to the proximal/distal axis, but daughter cells undergo post-division 'shuffling' movements (shifting orientations by 14.8\u00b0 on average) so that final daughter cell orientations align with the P/D axis (shifting by 8.5\u00b0 to align with global tension). Global tension has a small influence on division orientation, but only after shuffling of daughter cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these findings about division orientation in unwounded tissue. Reviewer 1 states 'the evidence for the impact of wounds on cell division is compelling,' and Reviewer 2 notes the methods 'achieve the goals set by the authors,' implicitly accepting the orientation analysis. No reviewer challenges the shuffling observation or the tension-related conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C109"
+    ],
+    "result": "The authors found that wound-induced cell divisions show a rather unbiased orientation with no significant shift in cell orientations post-shuffling following wounding. Local tension from the wound does not have a detectable effect on division orientation, and there is no apparent bias in orientation of cell divisions following wounding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings without challenge. Reviewer 1 describes the study as providing 'solid evidence that epithelial wounding triggers bursts of cell division at a characteristic distance away from the wound,' which encompasses the orientation findings. No reviewer questions the lack of orientation bias in wound-induced divisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C37",
+      "C38",
+      "C39",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Wounding triggers a synchronised burst of cell divisions at 100 min post-wounding in a ring of epithelial tissue beginning several cell diameters back from the wound edge (but not oriented). For large wounds, there is initially a reduction in cell divisions that reaches its low point at 60-70 min post-wounding, while small wounds do not exhibit this reduction. The proliferative burst is double that of unwounded tissue at peak, and the ring becomes broader with increased wound size.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm these findings. Reviewer 1 explicitly states the authors 'provide solid evidence that epithelial wounding triggers bursts of cell division at a characteristic distance away from the wound.' Reviewer 2 notes 'they identify a burst of cell division after healing of a wound...These division events happen a characteristic time after and a characteristic distance away from the wound. These characteristic quantities depend on the size of the wound.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C73",
+      "C74"
+    ],
+    "result": "In unwounded developing pupal epithelium, cell division density decreases linearly with time, and cells are more likely to divide close to and soon after previous divisions (high correlation within a 30-\u03bcm radius and temporally within 40 min).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'They confirm a linear decrease of the division density with time,' accepting this finding. The spatial-temporal correlation of divisions is not challenged by any reviewer, and Reviewer 1's statement that 'the evidence for the impact of wounds on cell division is compelling' suggests acceptance of the baseline unwounded characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C87"
+    ],
+    "result": "The deep learning pipeline determines shape changes of cells before and after division using U-NetBoundary, which leads to a much better dice score than using a single focal plane without deep learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the U-NetBoundary model or its performance. Reviewer 2 states 'The methods developed in this work achieve the goals set by the authors,' which encompasses the boundary detection capability. No concerns are raised about the cell shape analysis component.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The data support that cell migration and cell division largely occur in separate epidermal domains following wounding. Large wounds show a clear reduction in cell divisions near the leading edge where cells are actively migrating, but cell migration is not absolutely dependent on this 'shut down' because small wounds show no cessation of division during closure. The divisions are unlikely to be a major driver of wound closure but likely help repopulate the tissue to restore cell numbers and tissue structure.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These interpretations are not challenged by reviewers. Reviewer 1 states the authors 'provide solid evidence' for the wound-induced division dynamics, and Reviewer 2 notes 'the evidence for the impact of wounds on cell division is compelling.' The mechanistic interpretations about the role of divisions in wound healing are accepted without objection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The authors provide a napari plugin to run their model for detecting cell divisions and make available all training/testing data and analysis data on Zenodo.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raises significant concerns about the accessibility and documentation of the computational tools, stating 'we are far from the coding practice of what a well-documented and accessible tool should be.' They note the plugin is not on Napari hub or PyPI, documentation is minimal, and express doubt that 'a biologist who does not have a strong computational background will manage adapting the method.' However, Reviewer 1 states 'the documentation provided by the authors should allow other scientists to readily apply these methods,' creating mixed assessments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C30",
+      "C57"
+    ],
+    "result": "Standard methods for tracking nuclei (such as TrackMate) failed to cope with the constraints of the in vivo imaging data, and many existing models for detecting cell divisions are not accurate enough for biologists to analyse complex in vivo data. Particle tracking algorithms are inappropriate for this tissue because dividing daughter nuclei would frequently be mistakenly linked to neighboring nuclei.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept these limitations of existing methods as motivation for the new approach. Reviewer 1 notes the methods are 'particularly appropriate where unsupervised machine-learning algorithms have difficulties,' acknowledging the limitations of alternative approaches. No reviewer challenges the characterization of existing method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The synchronised surge in cell proliferation in a band of cells back from the leading edge is potentially related to the strong correlation in the timing of cell divisions by close neighbours in unwounded tissue, and this 'community effect' might be mediated by short-range chemical signals or local mechanical signals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These speculative mechanistic interpretations are not challenged by reviewers. They are presented as potential explanations rather than definitive conclusions, and reviewers focus their evaluation on the empirical findings rather than these mechanistic speculations.",
+    "result_type": "MINOR"
+  }
+]

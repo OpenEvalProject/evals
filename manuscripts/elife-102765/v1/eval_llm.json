@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C66"
+    ],
+    "result": "The Connectase recognition sequence can be modified by substituting proline with alanine, serine, or cysteine while maintaining moderate to high ligation rates, whereas substitutions with most other amino acids drastically reduce activity. Amino acids with a \u03b2-carbon but lacking a \u03b3-carbon can substitute for proline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 present experimental data from Figure 2 showing differential ligation rates with various amino acid substitutions. Claim C66 provides a structural interpretation consistent with the observed pattern. The data directly support the conclusion that specific amino acids can replace proline in the recognition sequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C84",
+      "C86",
+      "C88"
+    ],
+    "result": "BcPAP (Bacillus coagulans proline aminopeptidase) was successfully produced in E. coli and characterized as a serine protease that acts exclusively on N-terminal proline residues, with activity suppressible by serine protease inhibitors PMSF and AEBSF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 report production yields, C84 confirms specificity with LC-MS data (99.8% proline removal), and C86-C88 demonstrate inhibitor sensitivity consistent with serine protease classification. The convergent evidence from production, activity assays, and inhibitor studies supports the characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C82"
+    ],
+    "result": "The Connectase-BcPAP system achieves 98-100% conversion in protein-protein and protein-peptide ligations without side products. Reactions reach ~90-95% completion in 1-2 hours at standard conditions and remain effective at low substrate concentrations (10 \u00b5M) and low temperatures (10\u00b0C), though with reduced rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 present systematic SDS-PAGE data across multiple substrate pairs and conditions (Figures 3A-E). Claim C82 provides orthogonal LC-MS validation showing 99.6% product formation. The consistency across methods and conditions strongly supports near-complete conversion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Two strategies prevent N-terminal alanine acetylation in substrates: TEV protease cleavage of precursors (which can be performed in parallel with conjugation) or addition of an N-terminal proline that BcPAP removes during the reaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 describe the TEV protease approach with supporting data in Figure 3F, while C81 presents the proline protection strategy with data in Appendix 1-figure 2B. Both methods are experimentally demonstrated and address a practical limitation of the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The method achieves 97% labeling efficiency for antibody-peptide conjugation, with HC2LC2 assemblies showing 83% complete conjugation (4 peptides), 15% with 3 peptides, and 2% with 2 peptides. Heavy chains label faster than light chains, and HC2/HC2LC1 assemblies show 100% complete conjugation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 describe experimental setup and SDS-PAGE results (Figure 4A-B), while C100-C104 provide detailed LC-MS quantification (Figure 4C). The convergent evidence from gel electrophoresis and mass spectrometry supports the high labeling efficiency, though the 97% value is calculated rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Antibody-ubiquitin conjugation achieves 98% labeling efficiency, with 95% of HC2LC2 assemblies conjugated to 4 ubiquitin molecules. HC2 and HC2LC1 assemblies show 100% complete conjugation, demonstrating the method's effectiveness for generating near-homogeneous antibody conjugates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C108 present LC-MS data (Figure 4C) showing the distribution of conjugation states, with C109 providing the overall conclusion. The data demonstrate high but not perfect homogeneity (95% vs 100% for smaller assemblies), consistent with the 'near-homogeneous' characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "Antibody conjugation products remained stable for several days in blood plasma at various temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 references Appendix 1-figure 7, which shows stability data. While the manuscript provides limited detail in the main text, the claim is explicitly stated with figure support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Ubiquitin cyclization proceeds through linear polymer intermediates that convert to circular assemblies. At 10 \u00b5M, the reaction yields 80% Ub-C2 and 20% Ub-C3; at 100 \u00b5M, it produces larger circles (37% C2, 45% C3, 9% C4, 6% C5, 2% C6). Single ubiquitin molecules do not efficiently circularize, suggesting N- and C-termini are too distant without additional linkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C119 present time-course SDS-PAGE and LC-MS data (Figure 5) showing concentration-dependent assembly distributions. Claims C120-C122 provide mechanistic interpretation consistent with the absence of monomeric circles. The data support both the empirical observations and the structural interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The conjugation method enables efficient protein circularization with yields of specific assemblies controllable by reaction conditions (substrate concentration) and substrate design (linker length), though parameters require testing for each substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 summarize the cyclization results with C125 noting the need for substrate-specific optimization. The conclusion is well-supported by the ubiquitin data (Figure 5) showing concentration-dependent assembly distributions, though generalizability to other proteins requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "The Connectase recognition sequence can be altered so that BcPAP specifically inactivates the peptide byproduct, enabling fast, simple, specific, and complete 1:1 fusion of proteins and/or peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 summarizes the main finding combining sequence modification (C61-C66) with BcPAP activity (C67-C88). Claim C127 characterizes the method's properties, supported by the protein-protein and antibody conjugation data (C69-C109). The claims accurately reflect the demonstrated capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The method replaces one sequence with the fusion partner rather than simply joining molecules. This enables affinity tag removal during conjugation and subsequent purification of homogeneous product in a single step when enzymes carry the same affinity tag.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 describe the replacement mechanism and its advantages, while C131 presents a specific purification strategy with supporting data in Figure 6. The mechanism is inherent to Connectase function and the purification strategy is experimentally demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The replacement mechanism enables reversible conjugation and potential re-conjugation to exchange fusion partners, which would require developing methods to specifically remove different N-terminal amino acids and could enable applications like on-demand protein release or fluorophore coupling/decoupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C132-C137 describe potential applications of re-conjugation, but these are largely speculative (C136-C137 are marked as SPECULATION). While the underlying mechanism (C132-C133) is sound, the re-conjugation capability (C134-C135) is not experimentally demonstrated. The claims represent promising future directions rather than validated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "The main limitation of Connectase is its long recognition sequence (13 N-terminal, 19 C-terminal amino acids) plus linkers (1 and 5 amino acids), resulting in a 19-25 amino acid conjugation scar. This is comparable to SpyTag/KTag (23 amino acids) but longer than Sortase (7-9 amino acids). The employed linkers have proven sufficient for 44 constructs from 19 proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C150 accurately describe the sequence requirements with supporting data (Appendix 1-figure 8) and compare to other methods with appropriate citations. Claim C146 provides empirical evidence for linker sufficiency across multiple proteins. The characterization is balanced and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Long linker sequences can potentially interfere with protein folding, be susceptible to proteases, or be immunogenic, though these problems have not been encountered with Connectase. The method is primarily useful where longer scars can be tolerated, with engineering shorter recognition sequences as a future goal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C151-C153 identify potential concerns with long linkers (general knowledge), while C154 notes these haven't been observed (supported by the successful applications). Claims C155-C156 appropriately frame current limitations and future directions. The evaluation is balanced and acknowledges both current capabilities and areas for improvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "A related Sortase A method was recently published that increases fusion yields but remains most efficient for C-terminal protein-peptide conjugations at high concentrations. Protein-protein conjugations with Sortase A remain relatively inefficient with high hydrolysis side products.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 discuss a competing method (Arnott et al., 2024) with appropriate citation. The characterization of Sortase A limitations is consistent with earlier claims (C31-C39) and provides context for the Connectase method's advantages. The comparison is fair and well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Connectase is a protein ligase with greater substrate specificity, higher catalytic efficiency, and no side reactions compared to other protein ligases, but its reversible reaction yields only 50% fusion product from equimolar educts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C1-C4 make broad comparative statements about Connectase superiority that are not directly demonstrated in this manuscript but rely on prior work (Fuchs et al., 2021). Claims C5-C6 about the 50% equilibrium are well-established. The comparative claims require more rigorous head-to-head comparisons to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The presented method reliably obtains 100% fusion product in 1:1 conjugation reactions for protein-protein and protein-peptide fusions at N- or C-termini, enables defined antibody conjugates, and works with short incubation times, small enzyme amounts, low substrate concentrations, and low temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These abstract claims (C7-C13) are validated by the detailed experimental results throughout the manuscript. The '100%' claim is supported by 98-100% conversion data (C69), antibody conjugation achieves 97-98% efficiency (C104, C108), and effectiveness under various conditions is demonstrated (C74-C76). The claims accurately summarize the demonstrated capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C157"
+    ],
+    "result": "The combination of simplicity, substrate specificity, efficiency, completeness, compatibility with biological or chemical substrates, and absence of side reactions is unmatched by other chemical or enzymatic methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C157 makes a sweeping comparative statement that is not rigorously demonstrated through systematic head-to-head comparisons with other methods. While the individual properties are well-supported by the experimental data, the claim that this combination is 'unmatched' requires more comprehensive comparative analysis. The statement represents the authors' interpretation rather than demonstrated fact.",
+    "result_type": "MINOR"
+  }
+]

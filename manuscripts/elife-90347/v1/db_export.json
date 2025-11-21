@@ -1,0 +1,2081 @@
+{
+  "submission": {
+    "id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T19:35:59.504193Z",
+    "updated_at": "2025-11-21T19:35:59.504193Z"
+  },
+  "content": [
+    {
+      "id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "content_type": "manuscript",
+      "content_text": "# ThermoMaze behavioral paradigm for assessing immobility-related brain events in rodents\n\n## Authors\n\n- Mih\u00e1ly V\u00f6r\u00f6slakos<sup>1</sup> ([ORCID: 0000-0002-1022-1355](https://orcid.org/0000-0002-1022-1355))\n- Yunchang Zhang<sup>1</sup> ([ORCID: 0000-0003-3294-7373](https://orcid.org/0000-0003-3294-7373))\n- Kathryn McClain<sup>1</sup>\n- Roman Husz\u00e1r<sup>1</sup>\n- Aryeh Rothstein<sup>1</sup>\n- Gy\u00f6rgy Buzs\u00e1ki<sup>1</sup> ([ORCID: 0000-0002-3100-4800](https://orcid.org/0000-0002-3100-4800)) \u2020\n\n### Affiliations\n\n1. Neuroscience Institute, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n2. Princeton Neuroscience Institute, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n3. Department of Neurology, School of Medicine, New York University New York United States ([ROR:0190ak572](https://ror.org/0190ak572))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBrain states fluctuate between exploratory and consummatory phases of behavior. These state changes affect both internal computation and the organism\u2019s responses to sensory inputs. Understanding neuronal mechanisms supporting exploratory and consummatory states and their switching requires experimental control of behavioral shifts and collecting sufficient amounts of brain data. To achieve this goal, we developed the ThermoMaze, which exploits the animal\u2019s natural warmth-seeking homeostatic behavior. By decreasing the floor temperature and selectively heating unmarked areas, we observed that mice avoided the aversive state by exploring the maze and finding the warm spot. In its design, the ThermoMaze is analogous to the widely used water maze but without the inconvenience of a wet environment and, therefore, allows the collection of physiological data in many trials. We combined the ThermoMaze with electrophysiology recording, and report that spiking activity of hippocampal CA1 neurons during sharp-wave ripple events encode the position of mice. Thus, place-specific firing is not confined to locomotion and associated theta oscillations but persist during waking immobility and sleep at the same location. The ThermoMaze will allow for detailed studies of brain correlates of immobility, preparatory\u2013consummatory transitions, and open new options for studying behavior-mediated temperature homeostasis.\n\n## Introduction\n\nAll behaviors can be considered as parts of a sequence of action\u2013rest transition (Buzs\u00e1ki and Tingley, 2023). Brain states in vertebrates fall into dichotomous categories, and correspond roughly to what early behavioral research referred to as \u2018preparatory\u2019 (or \u2018exploratory\u2019) and \u2018consummatory\u2019 (or \u2018terminal\u2019) classes (Greaves and Barnett, 1977). In mammals, these two fundamental brain states can be readily identified by basic electrophysiological monitoring of various brain structures (Vanderwolf, 1969). They are also referred to as voluntary and non-voluntary or conscious and non-conscious brain states (Vanderwolf, 1969). Switching between these states is correlated with high and low release of subcortical neuromodulators (Buzsaki et al., 1988; Devilbiss and Waterhouse, 2004; Dringenberg and Vanderwolf, 1997; Harris and Thiele, 2011; Metherate et al., 1992; McCormick et al., 2020). Consummatory/terminal behaviors include feeding and drinking, resting and its extreme form, non-rapid eye movement (NREM) sleep, while preparatory/exploratory behaviors include locomotion and other movements that are a result of a general tendency to sample environmental stimulus. Preparatory and consummatory behaviors in the hippocampus are associated with theta oscillations and sharp-wave ripples (SPW-Rs), respectively (Buzs\u00e1ki et al., 1983).\n\nDeciphering the physiological underpinnings of these categories and revealing the significance of brain state transitions for cognition requires sufficient sampling of the relevant brain states. This is usually achieved by extended repeated recordings or, when possible, recording large numbers of neurons simultaneously. Prolongation of exploratory behavior can be readily achieved by placing the animal in novel environments, by food or water deprivation or by introducing delays in choice behavior tasks (Carandini and Churchland, 2013; Pisula and Siegel, 2005). Recently, the honeycomb maze paradigm was introduced to extend the observation periods of exploratory deliberation (Ormond and O\u2019Keefe, 2022).\n\nIn contrast, the experimental control of consummatory behavioral classes is more difficult. Sleep provides an opportunity for long recordings. Comparison of sleep before and after learning is a standard paradigm to examine experience-induced brain plasticity (Kay and Frank, 2019; Wilson and McNaughton, 1994). Consummatory brain states associated with eating, drinking, and sex change rapidly with satiety and require prolonged periods of deprivation (Allen et al., 2019; Toth and Gardiner, 2000; Hughes et al., 1994; Collier and Levitsky, 1967). Controlling periods of awake immobility is most difficult (Malvache et al., 2016; Foster and Wilson, 2006; Kay et al., 2016), mainly because forced immobilization of the animal is stressful (McEwen et al., 2012) and is accompanied by altered physiological states (Foster et al., 1989).\n\nHere, we introduce the ThermoMaze, a behavioral paradigm that allows for the collection of large amounts of physiological data while the animal rests at distinct experimenter-controlled locations. In standard laboratory environments (20\u201324\u00b0C) (Garber et al., 1996), both housing and data collection take place below the thermoneutral zone of mice (26\u201334\u00b0C) (\u0160kop et al., 2020; Maloney et al., 2014; Gordon, 1993). The ThermoMaze exploits the animal\u2019s behavioral thermoregulation mechanisms (Gaskill et al., 2009; Kanosue et al., 1998) and promotes thermotaxis (i.e., movement in response to environmental temperature) (Gaskill et al., 2011). Searching for a warmer environment, social crowding, and nest building are natural behavioral components of heat homeostasis (Gaskill et al., 2011; Gordon et al., 1998; Chen et al., 1998). The ThermoMaze allows the experimenter to guide small rodents to multiple positions in a two-dimensional environment. Decreasing the maze floor temperature induces heat-seeking behavior and after finding a warm spot, the animal stays immobile at that spot for extended periods of time, allowing for recording large amounts of neurophysiological data in immobility-related brain states. We report on both behavioral control and hippocampal electrophysiological correlates of heat-seeking activity to illustrate the versatile utility of the ThermoMaze.\n\n## Results\n\n### Design and construction of the ThermoMaze\n\nThe ThermoMaze is designed to guide small rodents to warm spatial locations in a two-dimensional cold environment, consisting of a box (width, length, and height: 20, 20, and 40 cm, respectively) made from an acrylic plexiglass sheet (Figure 1A, top). The floor of the maze is constructed from 25 Peltier elements (40 \u00d7 40 \u00d7 3.6 mm) that are attached to aluminum water-cooling block heatsinks (40 \u00d7 40 \u00d7 12 mm, n = 25) with heat-conductive epoxy and are insulated from each other by wood epoxy (Figure 1A, dashed inset). Each Peltier element is controlled by an electrically operated switch (relay) that opens and closes high-current circuits by receiving transistor\u2013transistor-logic (TTL) signals from outside sources (Figure 1B). Peltier elements can be heated individually up to 30\u00b0C to provide a \u2018warm spot\u2019 for the animal when other regions of the floor are under cooling (Figure 1B, active heating of one Peltier element is shown). The ambient temperature of the maze is controlled by water circulated from the water tank through the water-cooling blocks. We set the floor temperature to either ~25\u00b0C (room temperature) or to ~10\u00b0C (cooling, Figure 1, Figure 1\u2014figure supplement 1), but a range of ambient temperatures (5\u201330\u00b0C) could be employed. The water temperature is monitored by a K-type thermocouple placed inside the water tank (Figure 1A, bottom). The floor temperature of the ThermoMaze is monitored using a thermal camera (FLIR C5) providing continuous registration of real-time temperature changes (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the ThermoMaze. The floor was built using 25 Peltier elements attached to water-cooling block heatsinks (building block). The position of the animal and the temperature of the ThermoMaze can be recorded using a video camera and an infrared camera positioned above the box, respectively. An \u2018X\u2019 was taped inside the maze as an external cue below the camera synchronizing light-emitting diode (LED). Water circulates through the water-cooling heatsinks using a water pump submerged in a water tank (one row of heatsinks is attached to one pump). The temperature of the water tank is monitored and recorded using a thermocouple (white symbol inside water tank, DAQ \u2013 analog input of the data acquisition system). Peltier elements are connected to a power supply (red and blue dots represent the anode and cathode connection). (B) Circuit diagram and schematic of Peltier elements (n = 25), viewed from the top. TTL pulses generated by an AVR-based microcontroller board (Arduino Mega 2560) close a relay switch connected to a variable voltage power source. Each Peltier element can be independently heated (surface temperature depends on applied voltage and temperature difference between hot and cold plate of Peltier element). (C) Schematic of the water circulation cooling system, viewed from the bottom of the floor (each Peltier element has its own water-cooling aluminum heatsink, shown in silver, n = 25). Five submerging DC pumps are used to circulate water across 25 heatsinks (dashed lines show the Peltier elements connected to one pump). The temperature of the heatsink is transferred to the Peltier element passively through the silver epoxy resulting in passive cooling of the floor of the ThermoMaze.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Schematic of water coolers (each Peltier element has its own water cooler, n = 25). (B) Photograph of ThermoMaze with all Peltier elements attached to a 3D-printed frame (bottom view). One row of water coolers (n = 5) is also attached to Peltier elements. (C) Photograph of the bottom view of the ThermoMaze showing 25 water coolers without tubing attached. (D) Schematic of water circulation system. (E) Ice-cold water circulating through the water tubes and between five water coolers and Peltier elements (turned off) can passively reduce the surface of the Peltier element to 0.8\u00b0C. The temperature is measured by a K-type thermocouple attached to the surface of the last Peltier element in a row.\n\nPrior to the experiments, the thermal camera, which continuously measures the surface temperature of the floor of the ThermoMaze is calibrated by thermocouples placed directly on Peltier elements (Figure 2). The accuracy of the FLIR 5C infrared camera is \u00b13\u00b0C. With proper calibration and attention to emissivity (an object\u2019s ability to emit rather than reflect infrared energy) the margin of error can be less than 1\u00b0C (FLIR, 2016).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig2-v1.jpg)\n\n**Figure 2.:** (A) Side view of the ThermoMaze. Prior to animal experiments, we calibrated the heating and cooling performance of the Peltier elements and temperature measurement. We attached thermocouples (white symbols) to the surface of the Peltier elements serving as the ground-truth for calibrating the infrared camera placed above the ThermoMaze. Different voltage levels were used for the calibration (2.2, 2.4, 2.6, 2.8, and 3 V) while the water tank temperature was kept constant. (B) Top: four Peltier elements used in later experiments are chosen for calibration (four corners). Bottom: 1-min heating was repeated four times at each voltage level. (C) Simultaneously recorded temperature by thermocouples (left) and infrared camera (right). Increasing voltages induced increased heating (n = 4 trials per intensity, mean \u00b1 SD are shown). While the temporal dynamics yielded similar results between the two systems, we found ~4\u00b0C offset between infrared and thermocouple-measured signals. (D) Temperature changes of four Peltier elements used during an emulated behavioral session (without any animal subject) tracked by thermocouples. (E) Temporal dynamics of temperature changes at the four Peltier elements during active heating and following passive cooling. The temperature reaches steady state within 31 \u00b1 10.3 s (mean \u00b1 SD, n = 4 trials across 4 Peltier elements).\n\n### Mice seek out hidden warm spots in the ThermoMaze\n\nTo illustrate the novel advantages of the ThermoMaze on behavior and brain activity, we tested 11 mice (n = 3 male and 8 female mice) with silicon probe recordings from the hippocampus (Supplementary file 1a). One wall was marked by a prominent visual cue (black tape and blinking light-emitting diode) to provide a distinct spatial cue in the box (Figure 1A; Muller and Kubie, 1987). On each experimental day, the mouse was placed in the ThermoMaze and allowed to explore it for 10 min at room temperature (\u2018Pre-cooling\u2019 sub-session; Figure 3A). Next, the ThermoMaze temperature was decreased to around 14\u00b0C for 80 min and four Peltier elements (\u2018warm spots\u2019; typically, in the corners) were sequentially and repeatedly turned on and heated up to 30\u00b0C. One Peltier element was turned on for 5 min in a sequential order (1\u20132\u20133\u20134) and the sequence was repeated four times (\u2018Cooling\u2019 sub-session; Figure 3B). The Cooling sub-session was divided into 5 min \u2018warm spot epochs\u2019 for analysis. The daily experimental session ended with a \u2018Post-cooling\u2019 sub-session (free exploration at room temperature for 10 min). In addition, all mice were recorded in the home cage both before and after the experimental session (Figure 3A). During Pre- and Post-cooling sub-sessions, the animal explored the maze relatively evenly with a moderate movement speed (Figure 3B\u2013D), although thigmotaxis was the dominant pattern, with corners as highly preferred sites of both movement and immobility (Figure 3\u2014figure supplement 1). The animals readily found the location of the warm spot after a few training sessions (median = 3). Changing the warm spot locations during Cooling induced locomotion until the mouse found another warm spot and stayed on it for prolonged periods (Figure 3B, C, n = 17 sessions in 7 mice, Video 1). Duration spent on the warm spot roughly followed a bimodal distribution with a median = 2.85 min (Figure 3\u2014figure supplement 1A). Compared to Pre and Post sub-sessions, during Cooling, mice spent a smaller proportion of time in locomotion (Pre: 40 \u00b1 19%, Post: 34 \u00b1 16%, Cooling: 23 \u00b1 12%, mean \u00b1 SD, defined as speed >2.5 cm/s, n = 20 sessions from 7 mice; Figure 3D) and more time in immobility (Pre: 59 \u00b1 19%, Post: 66 \u00b1 16%, Cooling: 76.74 \u00b1 12.41%, mean \u00b1 SD, defined as speed \u22642.5 cm/s; n = 20 sessions from 7 mice; Figure 3D). The mice spent most of the time in the corners of the ThermoMaze where heat was provided (Figure 3\u2014figure supplement 1B), compared to Pre- and Post-cooling (Figure 3C). Once the heating of the Peltier element was turned off, the animal quickly left the warm spot (median duration = 12.99 s, n = 20 sessions from 7 mice; Figure 3E) and searched for a new source of warmth. Mice increased their speed from 0 to 2.5 cm/s within 12.28 s after a warm spot was turned off (median, n = 20 sessions from 7 mice; Figure 3F) and found the new warm spot within 23.45 s (median, n = 20 sessions from 7 mice; Figure 3G). In two additional male mice, we examined brain temperature changes during the Cooling sub-session by implanting a thermistor in the hippocampus (Figure 3\u2014figure supplement 2A). In support of previous findings, we found brain state-dependent fluctuation of brain temperature (Figure 3\u2014figure supplement 2B; Petersen et al., 2022; Moser et al., 1993; Kiyatkin, 2010). However, cooling the environment per se did not correlate with brain temperature changes (Figure 3\u2014figure supplement 2C\u2013E), confirmation that brain temperature is strongly regulated and is largely independent of the ambient temperature (Kiyatkin, 2010). The ThermoMaze provides an affordance for mice to select their environmental temperature through the activation of behavioral thermoregulation (Gordon, 1985). We also quantified the changes in local field potential (LFP) (1\u201340 Hz) to test whether the brain state of the animal was similar in the ThermoMaze and home cage during wakeful periods. We did not find significant changes in these frequencies (Figure 3\u2014figure supplement 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig3-v1.jpg)\n\n**Figure 3.:** (A) Five sub-sessions (epochs) constituted a daily recording session: (1) rest epoch in the home cage, (2) pre-cooling exploration epoch (Pre), (3) Cooling, (4) post-cooling exploration epoch (Post), and (5) another rest in the home cage. (B) Schematic of temperature landscape changes when the animal is in the ThermoMaze (top) and example animal trajectory (below). During Cooling, one Peltier element always provided a warm spot for the animal (four Peltier elements in the four corners were used in this experiment). Each Peltier element was turned on for 5 min in a sequential order (1\u20132\u20133\u20134) and the sequence was repeated four times. (C) Session-averaged duration of immobility (speed \u22642.5 cm/s) that the animal spent at each location in the ThermoMaze; color code: temporal duration of immobility (s); white lines divide the individual Peltier elements; n = 17 session in 7 mice. (D) Cumulative distribution of animal speed in the ThermoMaze during three sub-sessions from seven mice. Median, Kruskal\u2013Wallis test: H = 139304.10, d.f. = 2, p < 0.001. (E) Animal\u2019s distance from the previously heated Peltier element site. (F) Speed of the animal centered around warm spot transitions. (G) Animal\u2019s distance from the target warm spot as a function of time (red curve: median; time 0 = onset of heating). In all panels, box chart displays the median, the lower and upper quartiles (see Supplementary file 1b for exact p-values and multiple comparisons).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Top: histogram of proportion of time spent on the warm spot during each warm spot epoch when it was providing heat. 0 indicates that the animal did not occupy the warm spot when it was turned on, and 1 indicates that the animal was staying on the warm spot for the entire warm spot epoch. Bottom: cumulative distribution of the proportion of time animal spent on the warm spot during a warm spot epoch (median = 0.57; in other word, median = 2.85 min per 5 min warm spot transition epoch). Therefore, in over 50% of the warm spot epochs, mice found and stayed on the warm spot for over 57% of the time (n = 20 sessions in n = 7 animals). (B) Box plot of the proportion of time that the animal spent in any of the four warm spot corners in the ThermoMaze. Median, Kruskal\u2013Wallis test: H = 19.69, d.f. = 2, p = 5.29 \u00d7 10\u22125. The proportion of time spent in corners in pre and post and significantly different from cool (Pre vs. Cooling: p = 0.0004; Cooling vs. Post: p = 0.0003), while that of pre and post are not significantly different (Pre vs. Post: p = 0.9996). Dots (females) and diamonds (males) between the boxes represent the individual sessions and the same color represents sessions from the same animal. *p < 0.05, **p < 0.01, ***p < 0.001.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Schematic of implantation of the thermistor. Mice were implanted and tungsten recording wires. (B) Brain temperature variation over time during ThermoMaze behavior (Pre, Cooling, and Post) and post homecage sleep. Note, that the temperature of the environment was reduced to 10\u00b0C during cooling (yellow line). Brain state classification is shown above the temperature curves (awake, non-rapid eye movement [NREM], and REM; black, blue, and red lines, respectively) (O\u2019Neill et al., 2006). (C) Probability mass function of brain temperature distributions across 10 recording sessions in 2 mice. Cooling and room temperature sub-sessions are shown in blue and orange, respectively. (D) Median brain temperature during cooling and no cooling (room temperature) sessions (not significant, Kolmogorov\u2013Smirnov test). (E) There is no correlation between brain temperature fluctuation and environmental temperature (linear regression, R = 0.03, p = 0.384; see also Petersen et al., 2022).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** (A) Time-power analysis of hippocampal local field potentials (LFPs). LFP from the CA1 region of the hippocampus was used to calculate the time-resolved fast Fourier transform-based power spectrum (one recording site of a 64-channel silicon probe). Bottom: z-scored motion estimate based on electromyogram (EMG) activity extracted from the intracranially recorded signals (Schomburg et al., 2014). (B) Power spectra of the hippocampal LFP (1\u201340 Hz) were not altered in the ThermoMaze (TM) compared to homecage (HC) during wakefulness (2500 s in homecage and ThermoMaze, n = 17 sessions in 7 mice, p > 0.05, Wilcoxon rank sum test). (C) Awake\u2013non-rapid eye movement (NREM) transitions (\u00b130 s around the transition) triggered power spectrum (n = 7 and 8 transitions in homecage and ThermoMaze, respectively). (D) Both delta (1\u20134 Hz) and theta (4\u20138 Hz) powers were higher in the ThermoMaze following Awake\u2013NREM transitions (n = 7 sessions in 4 mice, p > 0.05, ANOVA paired test).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Top: immobility duration map of an example session in which the animal was in the ThermoMaze under 25\u00b0C room temperature condition (Mouse_07; Immobility spatial distribution deviation from uniform score: 1.36); bottom: SPW-R counts map of the same session (SPW-R spatial distribution deviation from uniform score: 1.53). The lower spatial distribution deviation from uniform score indicates that the variable (duration/counts) is more uniformly distributed in the ThermoMaze. (B) An example Cooling sub-session (same plots as in (A), Mouse_09; Immobility spatial distribution deviation from uniform score: 1.22; SPW-R spatial distribution deviation from uniform score: 1.43). (C) Left: immobility durations within an 80-min period of free exploration of the ThermoMaze either under room temperature or during the Cooling sub-session in two groups of mice (room temperature n = 3; Cooling n = 20; p = 0.49). Right: deviation of spatial distributions of immobility epochs from a uniform distribution (p = 0.08). (D) Same plots as in (C) but for total SPW-R counts and the degree to which their spatial distributions deviates from uniform distribution (left: p = 0.62; right: p = 0.04, one-sided Wilcoxon rank sum tests). *p < 0.05, **p < 0.01, ***p < 0.001.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) During Cooling, one of the Peltier elements provided a warm spot for the animal (four Peltier elements, two in the corners and two close to the corners were used). Each Peltier element was turned on for 5 min in a sequential order (1\u20132\u20133\u20134, n = 4 trials). (B) Animal speed in the ThermoMaze during Pre-cooling (Pre), Cooling, and Post-cooling (Post) sub-sessions (n = 3 sessions from n = 2 mice). (C) Session-averaged duration of immobility (n = 3 sessions in n = 2 mice, speed \u22642.5 cm/s) that the animal spent at each location in the ThermoMaze (x and y: animal location (20 \u00d7 20 cm); color: temporal duration of immobility (s); white lines represent boundaries of individual Peltier elements). (D) Left: median (curve) and first to third quartile (shaded region) across sessions of distance to the next warm spot (left panel), and distance from the previous hotspot (middle panel). Right: speed across sessions centered upon warm spot transition times (time 0).\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) Spatial firing rate maps of three example pyramidal neurons constructed in the three sub-sessions: Pre-cooling (Pre), Cooling, and Post-cooling (Post). X and Y: ThermoMaze dimensions; color: firing rate in Hz (color scale is the same across conditions for each cell). (B) Box plots of Pearson correlation coefficients between spatial firing rate maps constructed in Pre, Cooling, and Post. Median, Kruskal\u2013Wallis test: H = 307.8880, d.f. = 3, p = 0 (n = 1150 pyramidal cells from 7 mice). *p < 0.05, **p < 0.01, ***p < 0.001.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig3-figsupp7-v1.jpg)\n\n**Figure 3\u2014figure supplement 7.:** (A) An example neuron showing stable place fields within and across the three sub-sessions. (B\u2013D) Box plot of size (cm2), mean firing rate (Hz), and peak firing rate (Hz) of the identified place fields within all individual sub-sessions. The box plot shows the median (center blue line), the lower and upper quartiles (upper and lower blue lines), and the minimum and maximum values that are not outliers (upper and lower black lines). (E) Box plot of spatial information (in bits/spike) of place cells identified within all sub-sessions.\n\n![Video 1.](https://cdn.elifesciences.org/articles/90347/elife-90347-video1.mp4.jpg)\n\n**Video 1.:** The animal\u2019s behavior was recorded with a Basler camera and an infrared thermal camera placed above the ThermoMaze. Four Peltier elements were subsequently heated (one in each corner). Infrared image is overlaid on the raw video. The second half of the video is 10 times faster than real time (10\u00d7 speed legend in the video).\n\nOne of the objectives in developing the ThermoMaze was to induce immobility at several locations repeatedly and for extended periods. To confirm that this objective was achieved, we ran control sessions with the same duration as the Cooling sub-session but at room temperature (80 min; Figure 3\u2014figure supplement 4). Under room temperature conditions (three sessions in three mice), mice first explored the ThermoMaze and settled in one of the corners for an extended period. Although mice spent a similar total amount of time immobile under both conditions, the spatial distribution of immobility durations was more uniform in the Cooling sub-session (Figure 3\u2014figure supplement 4) because the ThermoMaze paradigm forced the animals to leave their chosen spot and move to the experimenter-designated locations, that is, the new warm spots away from the corner (Figure 3\u2014figure supplement 5, Video 2).\n\n![Video 2.](https://cdn.elifesciences.org/articles/90347/elife-90347-video2.mp4.jpg)\n\n**Video 2.:** The animal\u2019s behavior was recorded with an infrared thermal camera placed above the ThermoMaze (thermal image is in grayscale). In this video, a Peltier element in the inner part of the floor was heated. The speed of the video is 10 times faster than real time.\n\n### Firing rate maps of hippocampal neurons in the ThermoMaze\n\nCompared to spatial learning and memory paradigms such as the Morris water maze (Morris, 1984), the ThermoMaze has a non-aqueous environment and thus allows for an easy setup of electrophysiological recording. We recorded neurons from the CA1 hippocampal region by multi-shank silicon probes and separated them into putative pyramidal cells and interneurons (Methods \u2013 Unit isolation and classification section). We separated behavioral states (movement or immobility) based on movement speed (speed \u22672.5 cm/s = movement and speed <2.5 cm/s = immobility).\n\nTo construct spike-count maps for comparing sub-sessions, the ThermoMaze was divided into 25 \u00d7 25 bins and the number of spikes emitted by a neuron in each bin was counted and normalized by the time the mouse spent in each spatial bin. The impact of cooling during movement (theta state) was compared by calculating the correlation coefficients between Pre and Post, Pre and Cooling, and Cooling and Post spike-count maps (Figure 3\u2014figure supplement 6A). The correlation coefficients decreased significantly across all sub-sessions, with the largest change observed between Pre- and Post-cooling spike-count maps in the experimental mice (Figure 3\u2014figure supplement 6B). Thus, the Cooling sub-session in the ThermoMaze induced a moderate decorrelation of pyramidal cells\u2019 rate maps, potentially explained by place field remapping upon changing environmental sensory cues (here, temperature gradient) (Leutgeb et al., 2005). Such observation constrained our ability to decode spatial information from the spiking activity during SWP-Rs in the Cooling sub-session using firing rate maps constructed during Pre- and Post-cooling sub-sessions (Zhang et al., 1998), because the Bayesian decoding approaches have an underlying assumption that the spatial representation (tuning functions, or rate maps) is temporally stable.\n\nBecause the ThermoMaze is a relatively small enclosure, one possibility is that CA1 neurons encode less spatial information and only a small number of place cells could be found. Therefore, we identified place cells in each sub-session separately (see more details in the Method section for place cell definition, Figure 3\u2014figure supplement 7). We found 40.90%, 45.32%, and 41.26% of pyramidal cells to have place fields in the Pre-cooling, Cooling, and Post-cooling sub-sessions, respectively. Furthermore, we found that, on average, 17.36% of pyramidal neurons passed the place field criteria in all three sub-sessions in a daily session. Therefore, the decorrelation of spatial firing maps across sub-sessions cannot be explained by poor recording quality or weak neuronal encoding of spatial information but is potentially due to changes in environmental cues.\n\nIn principle, comparison of place maps during the first and last 10 min of a 100-min session at room temperature should serve as controls. However, at room temperature mice \u2018designate\u2019 one of the corners as home base after a few minutes of exploration and stay in that corner for the rest of the session (Figure 3\u2014figure supplement 4A). Thus, exploration of the maze at the end of the session was not available.\n\n### Place-selective neuronal firing during SPW-Rs at experimenter-designated locations\n\nAs expected, SPW-Rs occurred predominantly in the corners (Figure 4A), where the mice spent most of their time resting (Figure 3C). Compared to room temperature control sessions where animals spent most of their time in one corner, the spatial distribution of SPW-Rs in the Cooling sub-session was more uniform (Figure 3\u2014figure supplement 4A\u2013D), indicating that the ThermoMaze paradigm successfully biased where SPW-Rs were generated. The duration and amplitude of SPW-Rs were comparable in the ThermoMaze and the home cage (Figure 4B, C), whereas the mean peak frequency of SPW-Rs was significantly lower (Figure 4D). This decrease can be explained by the lower brain temperate during sleep, a state in which the animals spent most of their time in the home cage (Petersen et al., 2022).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig4-v1.jpg)\n\n**Figure 4.:** (A) Spatial map of the number of SPW-Rs during the Cooling sub-session averaged across all sessions (color code: average number of SPW-Rs per session at each location). Session-average number of SPW-Rs during Cooling was 627.3 (corresponding to 0.136 Hz). (B\u2013D) Box plots of SPW-R properties in ThermoMaze and in the home cage (n = 19 sessions in n = 7 mice). (B) Mean ripple duration in seconds (s; p = 0.108). (C) Mean ripple amplitude in \u03bcV (p = 0.9). (D) Mean ripple peak frequency in Hz (p < 0.001). Dots (females) and diamonds (males) of the same color represent the same animal. *p < 0.05, **p < 0.01, ***p < 0.001.\n\nTo quantify spatial tuning features of neuronal firing during SPW-Rs in the ThermoMaze during the Cooling sub-session, we defined a metric referred to as \u2018spatial tuning score\u2019 (STS). We first binned the floor of the ThermoMaze into four quadrants (2 \u00d7 2). For each neuron, we calculated its average firing rate within SPW-Rs in each quadrant. STS was then defined by the firing rate in the quadrant with the highest within-SPW-R firing rate divided by the sum of the within-SPW-R firing rates in all four quadrants (yielding a value between 0 and 1; Figure 5A). To test the significance of STS, we compared the STS values with their shuffled versions by randomly assigning one of the four quadrants to each SPW-R. The distribution of the STS in actual SPW-Rs was significantly higher compared to shuffled controls (Figure 5B). Additionally, pyramidal cells exhibited higher STSs compared to interneurons (medians: pyramidal cells = 0.3432; interneurons = 0.2934; one-sided Wilcoxon rank sum test, p < 0.001). In summary, both excitatory and inhibitory neuronal populations exhibit place-selective firing during SPW-Rs, while the excitatory neurons demonstrate a stronger place-specific firing.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig5-v1.jpg)\n\n**Figure 5.:** (A) Within-SPW-R firing rate maps (ThermoMaze divided into four quadrants) of six example cells with high within-SPW-R spatial tuning score (STS; from left to right, top to bottom, STS = 0.458, 0.639, 0.592, 0.672, 0.655, and 0.660, respectively). Color represents within-SPW-R firing rate (in Hz) of the neuron in each quadrant of the ThermoMaze. (B) Cumulative distribution of STSs of pyramidal neurons (top; n = 1150; p < 0.001) and interneurons (bottom; n = 288; p < 0.001) during SPW-Rs. Chance levels were calculated by shuffling the quadrant identity of the SPW-Rs. One-sided Wilcoxon rank sum tests. (C) Bayesian decoding of the mouse\u2019s location (quadrant of the ThermoMaze) from spike content of SPW-Rs in an example session (blue: actual ripple location; green: decoded locations; red: locations of the warm spot; session decoding accuracy = 0.65; chance level = 0.26). (D) Histogram of session Bayesian decoding accuracies of ripple locations using spiking rate maps constructed during ripples as templates (with a uniform prior and a 100-fold cross-validation; p < 0.001). One-sample t-test. (E) Firing rate ratios of pyramidal cells constructed during SPW-Rs and movement are positively correlated (Pearson\u2019s r = 0.321, p < 0.001). The firing rate ratio measures the firing rate of a cell in one quadrant versus the sum of its firing rates in all four quadrants under a specific condition (within-ripple or during movement). (F) Matrix of the pairwise correlation coefficient between each pair of firing rate ratio population vectors constructed during SPW-Rs and movements in different quadrants (x and y axes). Color represents Pearson\u2019s r. *p < 0.05, **p < 0.01, ***p < 0.001.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Pyramidal neurons increase their firing rates during SPW-R and movement in their preferred quadrant. Median, Kruskal\u2013Wallis test: H = 992.8856, d.f. = 7, p = 4.1 \u00d7 10\u2212210. During SPW-Rs, pyramidal neuron firing rate is significantly higher inside their preferred quadrant (median firing rate = 1.99 Hz) than outside (median = 1.24 Hz), as expected from our definition. This increase in firing rate during SPW-R is also observed when conditioned on inside (median = 1.61 Hz) or outside (median = 1.31 Hz) the cell\u2019s preferred quadrant defined during movement. Firing rate during SPW-R is significantly higher than that during non-ripple (asterisk is omitted in the figure for simplicity; median = 0.67, 0.73, 0.70, and 0.71 Hz for firing rate inside or outside preferred quadrant during ripple or movement, respectively). No significant difference in median is observed among the four conditions for firing rate during non-ripple. (B) Same as panel (A) but for interneurons. From left to right, median firing rate is 5.26, 4.11, 4.46, 4.14, 4.43, 4.36, 4.39, and 4.34 Hz, respectively. Median, Kruskal\u2013Wallis test: H = 7.1594, d.f. = 7, p = 0.41. *p < 0.05, **p < 0.01, ***p < 0.001.\n\nTo quantify how well CA1 neurons encode spatial information during SPW-Rs at the population level, we carried out a Bayesian decoding analysis to read out the current position of the animal from spiking activity (Zhang et al., 1998). We constructed firing rate map templates using spikes within SPW-Rs in the training dataset and determined animal positions that maximized the likelihood of observing the spike train during SPW-Rs in the testing dataset (see Method). Spiking activity during SPW-Rs reliably identified the quadrant that the animal was in above chance level (Figure 5C, D) irrespective of whether we incorporated the spatial distribution priors into the decoder in an example session (Figure 5C) or used a uniform prior (Figure 5D).\n\nTo relate the spatial content of spikes during SPW-Rs and locomotion, we examined whether the same or different groups of neurons contributed to the place-specific firing during SPW-R and locomotion by calculating the firing rate ratios within the preferred quadrant versus all quadrants. These ratios during SPW-Rs and movement were positively correlated (Figure 5E; n = 1150 pyramidal cells in 20 sessions from 7 mice), suggesting that place cells (O\u2019Keefe and Nadel, 1978) during movement preserved their spatial properties during SPW-Rs (see also Figure 5\u2014figure supplement 1 for further analysis and findings on interneurons).\n\nFinally, we tested whether the preservation of spatial features of neuronal spiking also holds at the population level by constructing population vectors separately during movement and SPW-Rs. We then computed the pairwise correlation coefficients between these two conditions. As was the case for individual pyramidal cells, population vectors for the same quadrant during movement were similar to those during SPW-Rs (Figure 5F). Overall, these findings support and extend the observation that spiking activity during SPW-Rs continues to be influenced by the animal\u2019s current position (O\u2019Neill et al., 2006).\n\nTo test specifically whether perceptual sensing of environmental features is critical in position-specific firing of neurons during SPW-Rs, we prolonged the duration of warm spots. After the Pre-cooling sub-session, the ThermoMaze temperature was decreased to 16\u00b0C for 80 min and two Peltier elements were heated alternately to 30\u00b0C for 20 min (Figure 6A). As expected, mice spent most of the time immobile on the warm spots (Figure 6A, B). Similar to the 5-min protocol (Figure 4A), SPW-Rs occurred predominantly on the warm spots (Figure 6C). The increased duration of stay on the warm spot facilitated the occurrence of sleep, as quantified by our brain state scoring algorithm (Figure 6D, SPW-Rs). REM sleep was not detected since REM state typically emerges after 20\u201330 min of NREM episodes (Watson et al., 2016). Mice spent a higher fraction of their time in sleep during the 20 min, compared to the 5 min sub-session (p = 0.003, n = 19 sessions in 7 mice and n = 7 sessions in 4 mice, Supplementary file 1a). The average inter-NREM interval was 1000s (Figure 6F, n = 7 sessions in 4 mice). Comparing the population vector similarity of waking SPW-Rs versus NREM SPW-Rs to movement versus waking SPW-Rs and movement versus NREM SPW-Rs, we found that place-specific coding during SPW-Rs persists into sleep, and we observed the highest correlation when comparing SPW-Rs during different brain states than when comparing SPW-Rs and movement (Figure 6G). These findings further support the view that sensory inputs during waking SPW-Rs can affect the spiking content of SPW-Rs.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90347/elife-90347-fig6-v1.jpg)\n\n**Figure 6.:** (A) Schematic of ThermoMaze with warm spot locations (top) and the trajectory of an example animal (bottom; red rectangles correspond to the location of warm spots). During Cooling, one Peltier element was turned on for 20 min followed by another (1\u20132) and the sequence was repeated two times. (B) Session-averaged duration of immobility (speed \u22642.5 cm/s) at each location in the ThermoMaze; white lines divide the individual Peltier elements (n = 7 sessions, n = 4 mice). (C) Spatial distribution of SPW-R occurrences (color code: average number of SPW-Rs per session at each location, n = 7 sessions, n = 4 mice). Session-average of SPW-Rs during Cooling was 775 (corresponding to 0.16 Hz). (D) Long duration of heating allowed for non-rapid eye movement (NREM) sleep occurrence during Cooling sub-session in an example session. Brain state changes (Watson et al., 2016) are shown together with SPW-Rs (green ticks). Note that NREM sleep occurs in the second half of the 20-min warming. (E) Mice spent a larger fraction of time in NREM during 20-min Cooling sub-session compared to the 5-min task variant (**p = 0.003, n = 19 sessions in 7 mice and n = 7 sessions in 4 mice). (F). Mice typically spent ~1000 s awake between NREM epochs. (G) Box charts of Pearson\u2019s correlation coefficients between population vectors of CA1 pyramidal neurons constructed during awake SPW-Rs, movement, and NREM SPW-Rs. Median, Kruskal\u2013Wallis test: H = 20.7, d.f. = 2, p < 0.001 (pairwise comparison: *p = 0.037 and ***p = 1.6 \u00d7 10\u221205).\n\nSince sleep occurred on the warm spots during the prolonged stays, we also tested our hypothesis that the difference in the mean ripple peak frequency (Figure 4D) between the home cage and ThermoMaze was due to the sleep versus non-sleep states. We compared the ripple peak frequency that occurred during wakefulness and NREM epochs in the home cage and ThermoMaze (n = 7 sessions in 4 mice). We found that the peak frequency of the awake ripples was higher compared to both home cage and ThermoMaze NREM sleep (one-way ANOVA with Tukey\u2019s posthoc test; ripple frequencies were: 171.63 \u00b1 11.69, 172.21 \u00b1 11.86, 168.19 \u00b1 11.10, and 168.26 \u00b1 11.08 Hz, mean \u00b1 SD for home cage awake, ThermoMaze awake, home cage NREM, and ThermoMaze NREM conditions, p < 0.001 between awake and NREM states).\n\n## Discussion\n\nTo investigate the importance of brain state transitions in a controlled manner, we developed the ThermoMaze, a behavioral paradigm that allows for the collection of large amounts of physiological data while the animal rests at distinct experimenter-controlled locations. Since the paradigm exploits natural behavior, no extensive training or handling is necessary. We demonstrate that mice regularly explore a cold environment until a warm spot is identified. They spend most of the time in a warm spot and even fall asleep, thus exhibiting a high degree of comfort. We exploited the long immobility epochs following exploration and showed how neurons active during hippocampal SPW-Rs replay waking experience. The ThermoMaze will allow for detailed studies of brain correlates of preparatory\u2013consummatory transitions and open new options for studying temperature homeostasis.\n\n### Warmth-seeking homeostatic behavior\n\nThere is a renewed interest in exploiting natural learning patterns, as opposed to training animals for performing complex arbitrary signal\u2013action associations (Breland and Breland, 1961; Buzs\u00e1ki, 1982; Seligman, 1970; Boakes et al., 1978; Green et al., 2022; Krakauer et al., 2017; Brette, 2019; Cisek, 2019). In poikilotherm animals (species whose internal temperature varies with environmental temperature), energy homeostasis is one of the most fundamental homeostatic processes. Heat homeostasis involves multiple levels of coordination from cellular to systems, from peripheral to central (Morrison and Nakamura, 2019; Tansey and Johnson, 2015). To maintain core body temperature, thermogenic tissues rapidly increase glucose utilization by brown adipose tissue and shivering by skeletal muscle (Vallerand et al., 1987; Maickel et al., 1967). The hypothalamic preoptic area (POA) is regarded as the most important thermoregulatory \u2018center\u2019 in the brain (Harding et al., 2018; Song et al., 2016). Connecting this area of research to learning, the POA is bidirectionally connected with the limbic system and multiple cortical areas which assist both online maintenance of body temperature and preparing the body for future expected changes (allostasis) (McEwen et al., 2012; Sterling and Eyer, 1988; Sterling, 2004). These allostatic mechanisms induce exploratory behavior, searching for a warmer environment (Schulkin and Sterling, 2019; Tan and Knight, 2018). A location that provides a warm shelter needs to be remembered and generalized for future strategies. Our paradigm offers means to investigate exploratory\u2013consummatory transitions, wake\u2013sleep continuity in the same physical location and, in the reverse direction, the physiological processes that evaluate discomfort levels, motivate behavioral transition from rest to exploration, and the circuit mechanisms that give rise to overt behaviors.\n\nMice, and rodents in general, are acrophobic and agoraphobic and tend to avoid open areas. Instead, they tend to move close to the wall and spend most of their non-exploration time in corners (Steimer, 2011). Thus, while we were able to train mice to seek out and stay in warm spots in the center of the maze after extensive training, their evolutionary \u2018counter-preparedness\u2019 (Seligman, 1970) to stay in predator-prone open areas competed with the reward of warming. While these trained mice did stay transiently in the central warm spot, they spent more time returning to the corners. Our mice were on a normal day\u2013light schedule thus their training during the day coincided with their sleep cycle. This explains why after 5\u201310 min spent on the safe and temperature-comfortable corner warm spots they regularly fell asleep. Yet, we noticed that mice did not simply transition from walking to immobility but, instead, even after finding the warm spot they regularly and repeatedly explored the rest of the maze before returning to the newly identified home base. By changing the temperature difference between the environment and the warm spot, it will be possible to generate psychophysical curves to quantify the competition between homeostatic and exploratory drives in future experiments. These measures, in turn, could be used to study the impact of perturbing peripheral and central energy-regulating mechanisms.\n\nFor several applications, there is no need to tile the entire floor of the maze with Peltier elements. For example, a radial-arm maze with cooled floors or placed in a cold box can be equipped with heating Peltier elements at the ends of maze arms and center, allowing the experimenter to induce ambulation in the one-dimensional arms, followed by extended immobility and sleep at designated areas. In a way, the ThermoMaze is analogous to the water maze (Morris, 1984), also an avoidance task, but many more trials can be achieved in a single session and without the inconvenience of a wet environment.\n\n### SPW-R spiking content is biased by current position of the animal and depends on brain state\n\nWe demonstrate the utility of the ThermoMaze for addressing long-standing questions in hippocampal physiology. Preparatory and consummatory behaviors in the hippocampus are associated with theta oscillations and SPW-Rs, respectively (Buzs\u00e1ki et al., 1983). SPW-Rs also occur during NREM sleep but studying the differences between waking and sleep SPW-Rs has been hampered by the paucity of SPW-Rs in typical learning paradigms (Foster and Wilson, 2006; Kay et al., 2016; Diba and Buzs\u00e1ki, 2007; Dupret et al., 2010; Silva et al., 2015; Pfeiffer and Foster, 2013). Neural activity during SPW-Rs has been shown to replay activity patterns observed during previous spatial navigation experiences (Foster and Wilson, 2006; O\u2019Neill et al., 2006; Diba and Buzs\u00e1ki, 2007) and can even be predictive of activity during future experiences (Davidson et al., 2009; Gupta et al., 2010; Karlsson and Frank, 2009). However, the extent to which SWP-R spiking context is biased by the current position of the animal is less known, as systematic control of position during rest/sleep has posed difficulty. The ThermoMaze enables the experimenter to control the animal\u2019s position during SWP-R states. In agreement with previous studies (O\u2019Neill et al., 2006; Dupret et al., 2010; Pfeiffer and Foster, 2013), we found that neurons whose place fields overlapped with the quadrant of the maze had a higher participation probability in SPW-Rs occurring at that location compared to other neurons. This observation supports the notion that waking replay events can be biased by perceiving features of the surrounding environment (O\u2019Neill et al., 2006). However, when the mouse fell asleep at the same location this relationship was weakened but did not disappear. Another potential explanation for the decreased correlation between sleep SPW-R and waking exploration is the deterioration of replay as the function of time (Wilson and McNaughton, 1994). Alternatively, the persisting significant correlation between sleep SPW-Rs and previous exploration may also indicate that factors other than the perception of the animal\u2019s vicinity are responsible for sleep replay (Karlsson and Frank, 2009; Dragoi and Tonegawa, 2011; Grosmark and Buzs\u00e1ki, 2016). Continuity of waking experience replay in waking and sleep SPW-Rs have been hypothesized previously but not yet tested (Jarosiewicz and Skaggs, 2004). Using the ThermoMaze, this and other related questions can now be addressed quantitatively.\n\n## Materials and methods\n\n### Animals and surgery\n\nAll experiments were approved by the Institutional Animal Care and Use Committee at New York University Langone Medical Center (Protocol number: IA15-01466). Animals were handled daily and accommodated to the experimenter and the ThermoMaze before the surgery and electrophysiological recordings. Mice (adult female n = 8, 22 g and male n = 5, 26 g, C57/Bl6, Strain #:000664, The Jackson Laboratory) were kept in a vivarium on a 12-hr light/dark cycle and were housed two per cage before surgery and individually after it. Atropine (0.05 \u2009mg/kg, s.c.) was administered after isoflurane anesthesia induction to reduce saliva production. The body temperature was monitored and kept constant at 36\u201337\u00b0C with a DC temperature controller (TCAT-LV; Physitemp, Clifton, NJ). Stages of anesthesia were maintained by confirming the lack of a nociceptive reflex. The skin of the head was shaved, and the surface of the skull was cleaned by hydrogen peroxide (2%). A custom 3D-printed baseplate (V\u00f6r\u00f6slakos et al., 2021a) (Form2 printer, FormLabs, Somerville, MA) was attached to the skull using C&B Metabond dental cement (Parkell, Edgewood, NY). The location of the craniotomy was marked and a stainless-steel ground screw was placed above the cerebellum. Silicon probe (Supplementary file 1a) attached to a metal microdrive (V\u00f6r\u00f6slakos et al., 2021b) was implanted into the dorsal CA1 of the hippocampus (2 mm posterior from Bregma and 1.5 mm lateral to midline) and a copper mesh protective cap was built around the probe. Animals received ketoprofen (5.2 mg/kg, s.c.) at the end of the surgery and on the following 2 days. Each animal recovered at least 5 days prior to experiments. The electrophysiology data were digitized at 20,000 samples/s using an RHD2000 recording system (Intan Technologies, Los Angeles, CA). The number of recorded sessions from each animal is summarized in Supplementary file 1a.\n\n### Construction of ThermoMaze\n\nThe ThermoMaze is a box (width, length, and height: 20, 20, and 40 cm, respectively), made from acrylic plexiglass sheet (8505K743, McMaster, Elmhurst, IL). The floor of the maze was constructed from 25 Peltier elements (40, 40, and 3.6 mm, Model: TEC1-12706, voltage: 12 V, Umax (V): 15 V, Imax (A): 5.8 A, \u0394Tmax (Qc = 0): up to 65\u00b0C). Each Peltier element was glued inside a custom 3D-printed frame (file can be downloaded from here) using dental cement (Unifast LC, GC America, Alsip, IL) and wood epoxy (Quick-Cure, product number: BSI201, Bob Smith Industries, Atascadero, CA). Once Peltier elements were secured in the 3D-printed frame, an aluminum water-cooling block heatsink (40, 40, and 12 mm; a19112500ux0198, Amazon.com) was attached to each Peltier element using heat-conductive epoxy (8349TFM, MG Chemicals, Ontario, Canada). A variable voltage source (E36102A Power Supply, Keysight Technologies, Santa Rosa, CA) was attached to four Peltier elements using a relay system (4-Channel Relay Module, product number: 101-70-101, SainSmart, Lenexa, KS). The relays were controlled by an Arduino Mega (Arduino Mega 2560 Rev3) running a custom written code. Five aluminum water-cooling block heatsinks were connected together using silicon tubes (5/16\u2033 ID \u00d7 7/16\u2033 OD, product number: 5233K59, McMaster, Elmhurst, IL). One of the five heatsinks was connected to a mini submersible electric brushless water pump (240L/H, 3.6W, Ledgle, ASIN: B085NQ5VVJ) using silicon tubes and another one was routed to the water tank. We used 5 water pumps to circulate water through the 25 cooling blocks. The water pumps were placed inside a water tank (40, 40, and 60 cm acrylic box) and were powered using a DC power supply (E3620A, Keysight Technologies, Santa Rosa, CA). The temperature of the water tank was monitored by a K-type thermocouple (5SC-TT-K-40-72, Omega, Norwalk, CT) attached to a handheld thermometer (HH800, Omega, Norwalk, CT) and recorded by a K-type thermocouple (5SC-TT-K-40-72, Omega, Norwalk, CT) attached to an AD595 interface chip (1528-1407-ND, Digi-Key, Thief River Falls, MN) connected to an analog input of the RHD2000 USB Eval system (Intan Technologies, Los Angeles, CA). To monitor the floor temperature of the ThermoMaze, a thermal camera (C5, Flir, Thousand Oaks, CA) was used.\n\n### Behavior\n\nThe ThermoMaze setup provides a customized temperature landscape, which the animal can freely explore and choose where to settle. Without any training or shaping, a mouse will search and find the unmarked warm spot and stay on it for extended periods due to thermotaxis (movement toward locations with preferred temperature around 26\u201329\u00b0C; Figure 3; Gaskill et al., 2009; Kanosue et al., 1998). When the heating Peltier element is turned off, the animal quickly leaves the spot and explores the maze again until it finds another warm spot.\n\nOn each experimental day, the mouse is taken from the animal facility during their light cycle. The animal is first recorded in its home cage for 1\u20132 hr (pre-home). It is then transferred into the ThermoMaze under room temperature to freely explore for 10 min (Pre-cooling). During the Pre-cooling sub-session, the water circulation system is circulating room temperature water, and the Peltier elements are not activated. After the Pre-cooling sub-session, 4 kg of ice and two ice packs (25201, Igloo) are added into the water tank while the animal remains in the ThermoMaze. Within 1 min, the temperature of the water in the tank stabilizes at 10\u201313\u00b0C. We then turn on the pump to cool down the ThermoMaze setup (it takes ~120 s to cool down the floor to 10\u201313\u00b0C). At the same time, the Arduino-controlled Peltier element heating system is turned on to heat one of the four 4 \u00d7 4 cm2 for 5 min, followed by another Peltier device in a fixed sequence (Figure 2). Such sequence is repeated four times (total of 80 min) during a Cooling sub-session. After the sub-session, the animal explores again at room temperature for 10 min (Post-cooling sub-session). To increase the temperature back to ~20\u00b0C, the ice packs are removed, and 6.5 l of 55\u00b0C water is added into the tank. The temperature in the ThermoMaze returns to room temperature within 2 min. After the Post sub-session, recording of electrophysiological activity continues in the home cage for an additional 1\u20132 hr (post-home cage; Figure 3A).\n\nTo quantify the behavior of the animal within the ThermoMaze, video is recorded using a Basler camera (a2A2590-60ucBAS Basler ACE2) using the mp4 format with a framerate of 25 Hz. TTL pulses are sent from the camera to the Intan recording system to synchronize the video and the electrophysiological recordings. The animal\u2019s location is detected within a 25 \u00d7 25 cm region of interest (ROI), using a custom-trained DeepLabCut neural network (Mathis et al., 2018). Detections with a likelihood below 0.5 are discarded. The occasionally missing trajectory detections are filled using MATLAB function \u2018fillmissing\u2019 with method \u2018pchip\u2019 which is a shape-preserving piecewise cubic spline interpolation and are then smoothed using a seventh-order one-dimensional median filter \u2018medfilt1\u2019. The detection quality is visually examined by superimposing the detected animal location in each frame on the video.\n\n### Brain temperature measurement\n\nTo examine the effects of changing environmental temperature on brain temperature homeostasis, we implanted one male and one female wild-type mice (C57Bl6, 28 g, Strain #:000664, The Jackson Laboratory) with a thermistor (Semitec, 223Fu3122-07U015) in the hippocampus (2 mm posterior from bregma and 1.5 mm lateral to midline) (Petersen et al., 2022). After 5 days of postsurgical recovery, the animal was placed inside the ThermoMaze and brain temperature and behavior were monitored (n = 5 sessions, each session consisted of pre-home cage, Pre, Cooling, Post, and post-home cage epochs).\n\n### Quantification and statistical analysis\n\n#### SPW-R detection and properties\n\nSPW-Rs were detected as described previously from manually selected channels located in the center of the CA1 pyramidal layer (here). Broadband LFP was bandpass-filtered between 130 and 200 Hz using a third-order Chebyshev filter, and the normalized squared signal was calculated. SPW-R peaks were detected by thresholding the normalized squared signal at 5\u00d7 SDs above the mean, and the surrounding SPW-R begin, and end times were identified as crossings of 2\u00d7SDs around this peak. SPW-R duration limits were set to be between 20 and 200 ms. An exclusion criterion was provided by manually designating a \u2018noise\u2019 channel (no detectable SPW-Rs in the LFP), and events detected on this channel were interpreted as false positives (e.g., electromyogram [EMG] artifacts). The ripple detection quality was visually examined by superimposing the detected timestamps on the raw LFP traces in NeuroScope2 software suite (Petersen et al., 2021).\n\n#### Sleep state scoring and LFP analysis\n\nBrain state scoring was performed as described in the study by Watson et al., 2016. In short, spectrograms were constructed with a 1-s sliding 10-s window fast Fourier transform of 1250 Hz data at log-spaced frequencies between 1 and 100 Hz. Three types of signals were used to score states: broadband LFP, narrowband high-frequency LFP and EMG calculated from the LFP. For broadband LFP signal, principal component analysis was applied to the Z-transformed (1\u2013100 Hz) spectrogram. The first principal component in all cases was based on power in the low (32 Hz) frequencies. Dominance was taken to be the ratio of the power at 5\u201310 and 2\u201316 Hz from the spectrogram. All states were inspected and curated manually, and corrections were made when discrepancies between automated scoring and user assessment occurred.\n\nTo quantify the changes in LFP (Figure 3\u2014figure supplement 3A, B), we detected wakeful periods in both the home cage and the ThermoMaze environments. Average LFP power and coherence spectra were calculated with Welch\u2019s power spectral density method. We used a 4096-point fast Fourier transform, applied to data during wakefulness (non-continuous 2500s in both environments). To compare immobility periods on the ThermoMaze and the home cage, we detected rest epochs that lasted at least 2 s during wakefulness in both environments. This analysis was performed on a subset of animals (n = 17 sessions in 7 mice) that had accelerometer signal available (home cage behavior was not monitored by video). Using these behavior transition timepoints, we calculated the event triggered power spectra for delta and theta bands (\u00b12 s around the transition time).\n\n#### Unit isolation and classification\n\nA concatenated signal file was prepared by merging all recordings from a single animal from a single day. Putative single units were first sorted using Kilosort (Pachitariu et al., 2016) and then manually curated using Phy (https://phy-contrib.readthedocs.io/). After extracting timestamps of each putative single unit activity, the spatial tuning properties, identification of 2D place cells and place fields, and participation in SPW-Rs events were analyzed using customized MATLAB (Mathworks, Natick, MA) scripts.\n\nIn the processing pipeline, cells were classified into three putative cell types: narrow interneurons, wide interneurons, and pyramidal cells. Interneurons were selected by two separate criteria; narrow interneurons were assigned if the waveform trough-to-peak latency was less than 0.425 ms. Wide interneuron was assigned if the waveform trough-to-peak latency was more than 0.425 ms and the rise time of the autocorrelation histogram was more than 6 ms. The remaining cells were assigned as pyramidal cells (Petersen et al., 2021). We have isolated 1438 putative single units from 7 animals in 20 sessions (n = 1150 putative pyramidal cells, n = 288 putative interneurons) during the ThermoMaze behavior. We also collected 228 putative pyramidal cells from 2 animals in 3 control sessions (Figure 3\u2014figure supplement 4) and 434 putative single units from 4 mice in 7 sessions using the 20-min warmth paradigm (Figure 6).\n\n#### Pyramidal cells firing and SPW-R rate maps\n\nTo visualize and compare the spatial tuning properties of neurons across sub-sessions (Pre, Cooling, and Post) during movement (speed \u22652.5 cm/s), we first binned the ThermoMaze ROI into 25 by 25 bins (each with size 1 \u00d7 1 cm) and counted the number of spikes of a neuron that occurred in each bin when the animal was actively moving (movement spike-count map). Next, we summed the total duration of time (in seconds) that the animal spent moving in each spatial bin to construct the \u2018movement occupancy map\u2019. The sub-session rate map of a cell during movement was computed by dividing the spike-count map by the occupancy map bin-wise. Similarly, we computed the SPW-R rate map within a sub-session by dividing the number of ripples that occurred in each bin by the total duration of immobility (speed <2.5 cm/s) that the animal spent in each bin. Both firing and SPW-R rate maps were spatially smoothed using a 2-bin smoothing window (see here).\n\n#### Spatial tuning of spikes during SPW-Rs\n\nTo quantify the spatial tuning of neurons during SPW-Rs (Figure 5), we defined a metric called \u2018within-ripple spatial tuning score\u2019 which is a value between 0 and 1. The higher score indicates stronger spatial tuning of a neuron during SPW-Rs. We first binned the ThermoMaze ROI into four quadrants (2 \u00d7 2) and determined the firing rate of the neuron in each quadrant within SPW-Rs (i.e., total number of spikes of the cell divided by the total duration of SPW-R in that quadrant). For each SPW-R, a 300-ms time window surrounding the ripple\u2019s power peak time was taken and the temporal overlaps between SPW-Rs were removed. Next, the within-SPW-R firing rate ratio in a given quadrant (e.g., in quadrant A), is defined to be the firing rate of the neuron during SPW-Rs in quadrant A divided by the sum of the within-SPW-R firing rate in all four quadrants. Finally, the within-ripple STS (Figure 5) of a neuron is defined to be the maximum within-SPW-R firing rate ratio of the cell among all quadrants. To test the hypothesis that such spatial tuning exists beyond chance level, we generated shuffled within-SPW-R firing rate maps by randomly assigning one of the four quadrants to each SPW-R. Specifically, we randomly permuted the location of the SPW-Rs so that the number of SPW-Rs per quadrant was kept fixed for the shuffled condition.\n\n#### Bayesian decoding of the animal position\n\nBayesian decoding of the animal\u2019s position was based on the method provided by Zhang et al., 1998. In short, we utilized the spatial firing rate maps constructed to find the location that maximally explains the observation of spiking within a certain time window. Because SPW-Rs occurred mainly in the corners where the warm spots were, we simplified the analysis and binned the ThermoMaze into 2 \u00d7 2 quadrants, which yielded four maze areas. We constructed the firing rate map templates fi(x) of each neuron during SPW-Rs (300-ms time window surrounding the peak of each SPW-R) within the Cooling sub-session. The decoded position was then determined to be the quadrant that maximizes the posterior likelihood given the observed spike counts:\n\n$$\nP(x|n)=C(\\tau,n)P(x)(\\prodi=1Nf_{i}(x)^{n_{i}})exp(\u2212r\\sumi=1Nf_{i}(x))\n$$\n\nwhere x was the quadrant index, n was the spike-count vector observed surrounding the frame time, \u03c4 was the time window size and equals 300 ms, C(\u03c4,n) was a normalization factor and was taken to be 1, P(x) was the prior probability distribution of animal location and was taken to be 1 in the case of Figure 5D, i was the index of each cell, fi(x) was the average firing rate of cell i at position x, and N was the total number of pyramidal cells recorded in the session. For the purpose of cross-validation, we divided the SPW-Rs in each session into 100 folds. For each fold (testing dataset), the firing rate map templates were constructed using SPW-Rs from the other 99 folds (training dataset), and the decoding accuracy for the omitted fold was computed as the proportion of SPW-Rs whose corresponding quadrant was correctly decoded over the total number of SPW-Rs in the fold. For each session, we report the average decoding accuracy of test datasets.\n\n### Comparison of spatial tuning during SPW-Rs and movement\n\nTo quantify the similarity between spatial tuning of neurons during SPW-R and movement (theta oscillation), we calculated the firing rate ratios during movement in a similar way as we calculated the within-SPW-R firing rate ratios (see section \u2018Spatial tuning during SPW-Rs\u2019). The ThermoMaze ROI was again binned into quadrants and firing rate maps (2 \u00d7 2) of each neuron during movement were calculated. The firing rate ratio of a neuron in each quadrant during movement was defined as the quadrant with the actual firing rate in that quadrant divided by its mean firing rate in all quadrants. Next, the Pearson correlation between the firing rate ratios during SPW-Rs and movement in each quadrant for each cell within the Cooling sub-sessions were calculated.\n\nWe also studied the correlation between pyramidal cells\u2019 spatial tuning during SPW-Rs and movement at a population level (Figure 6G). In each session, we first constructed population vectors in each quadrant by concatenating the firing rate ratio of each cell in a quadrant into a vector during SPW-R or movement. We then computed the pairwise correlation coefficients among the four population vectors between each condition in the correlation matrix and took the average across sessions.\n\n### Place cells identification\n\nData recorded in the ThermoMaze were used for analyzing the spatial tuning of spiking activity. Each session was split into three sub-sessions and all the criteria described below were independently applied to each sub-session. Putative pyramidal units with peak firing rates lower than 0.4 Hz and spatial information content (Mizuseki et al., 2012; Skaggs et al., 1992) lower than 0.25 bits/spike were not considered place cells (Roux et al., 2017). We further computed the chance-level spatial information distribution by generating 100 shuffle datasets (by parsing spike trains and the mouse position during running into 5 s blocks and randomly shuffling the temporal correspondence between the spiking and position bins). If the z-scored spatial information (according to the chance-level spatial information distribution) is smaller than 1.65 (p-value >0.05 in a one-sided test), the cell was not considered to be a place cell (Roux et al., 2017; Markus et al., 1994). In the end, a pyramidal neuron is determined to be a place cell throughout the entire session if it meets the criteria in all three individual sub-sessions.\n\n### Data and code availability\n\nMatlab codes used for analyzing the data are available at https://github.com/buzsakilab/buzcode (copy archived at Levenstein et al., 2025). The dataset is available at https://zenodo.org/records/11235921.\n",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Emilio Kropff, Fundaci\u00f3n Instituto Leloir Argentina\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90347.3.sa0](https://doi.org/10.7554/eLife.90347.3.sa0)\n\nThe ThermoMaze represents a valuable tool to control the rest/exploration states of an animal. The data, collected and analyzed using solid and validated methodology, demonstrate its use in addressing previously elusive questions. This will facilitate future work with more in-depth analysis of place cell activity to further support for some of the claims.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90347.3.sa1](https://doi.org/10.7554/eLife.90347.3.sa1)\n\nSummary:\n\nThis manuscript introduced a new behavioral apparatus to regulate the animal's behavioral state naturally. It is a thermal maze where different sectors of the maze can be set to different temperatures; once the rest area of the animal is cooled down, it will start searching for a warmer alternative region to settle down again. They recorded with silicon probes from the hippocampus in the maze and found that the incidence of SWRs was higher at the rest areas and place cells representing a rest area were preferentially active during rest-SWRs as well but not during non-REM sleep.\n\nStrengths:\n\nThe maze can have many future applications, e.g., see how the duration of waking immobility can influence learning, future memory recall, or sleep reactivation. It represents an out-of-the-box thinking to study and control less-studies aspects of the animals' behavior.\n\nWeaknesses:\n\nThe impact is only within behavioral research and hippocampal electrophysiology.\n",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c2243141-8bef-4aa9-a3e7-5af0a0b6a9ee",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C1",
+      "claim": "Brain states fluctuate between exploratory and consummatory phases of behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain states fluctuate between exploratory and consummatory phases of behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about brain states presented in the abstract without specific experimental data from this study, but draws on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "188eae8e-324d-4f04-adf9-79c5d35173ec",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C2",
+      "claim": "State changes affect both internal computation and the organism's responses to sensory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "These state changes affect both internal computation and the organism's responses to sensory inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the effects of brain state changes, drawing on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "2399ba29-713e-4f7b-b54b-b0dcfa204a99",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C3",
+      "claim": "The ThermoMaze exploits the animal's natural warmth-seeking homeostatic behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "To achieve this goal, we developed the ThermoMaze, which exploits the animal's natural warmth-seeking homeostatic behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the design principle of the ThermoMaze apparatus developed in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "83f0c6cb-7b2f-4bd6-a8eb-5c844d9121c9",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C4",
+      "claim": "By decreasing the floor temperature and selectively heating unmarked areas, mice avoided the aversive state by exploring the maze and finding the warm spot.",
+      "claim_type": "EXPLICIT",
+      "source": "By decreasing the floor temperature and selectively heating unmarked areas, we observed that mice avoided the aversive state by exploring the maze and finding the warm spot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct observation from the experiments conducted in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "ed3caf54-4bde-45b8-88f9-636854ec0b4f",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C5",
+      "claim": "The ThermoMaze is analogous to the widely used water maze but without the inconvenience of a wet environment.",
+      "claim_type": "EXPLICIT",
+      "source": "In its design, the ThermoMaze is analogous to the widely used water maze but without the inconvenience of a wet environment and, therefore, allows the collection of physiological data in many trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison made by the authors based on the design features of their apparatus.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "32146f07-b752-4bbf-a8cf-f3201bf9ec31",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C6",
+      "claim": "Spiking activity of hippocampal CA1 neurons during sharp-wave ripple events encode the position of mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We combined the ThermoMaze with electrophysiology recording, and report that spiking activity of hippocampal CA1 neurons during sharp-wave ripple events encode the position of mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the electrophysiological recordings conducted in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "bb791495-63a1-45e7-8618-8b477fb728b5",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C7",
+      "claim": "Place-specific firing is not confined to locomotion and associated theta oscillations but persist during waking immobility and sleep at the same location.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, place-specific firing is not confined to locomotion and associated theta oscillations but persist during waking immobility and sleep at the same location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental data on neuronal firing patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "d93faab8-0060-40f2-a419-163becea34bb",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C8",
+      "claim": "Brain states in vertebrates fall into dichotomous categories, corresponding roughly to 'preparatory' (or 'exploratory') and 'consummatory' (or 'terminal') classes.",
+      "claim_type": "EXPLICIT",
+      "source": "Brain states in vertebrates fall into dichotomous categories, and correspond roughly to what early behavioral research referred to as 'preparatory' (or 'exploratory') and 'consummatory' (or 'terminal') classes (Greaves and Barnett, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "83079c47-9487-4960-a2bd-5188583d7b3e",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C9",
+      "claim": "These two fundamental brain states can be readily identified by basic electrophysiological monitoring of various brain structures in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "In mammals, these two fundamental brain states can be readily identified by basic electrophysiological monitoring of various brain structures (Vanderwolf, 1969).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "3e19bde7-bdeb-48ad-ab72-0ff202ffcbe8",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C10",
+      "claim": "Switching between brain states is correlated with high and low release of subcortical neuromodulators.",
+      "claim_type": "EXPLICIT",
+      "source": "Switching between these states is correlated with high and low release of subcortical neuromodulators (Buzsaki et al., 1988; Devilbiss and Waterhouse, 2004; Dringenberg and Vanderwolf, 1997; Harris and Thiele, 2011; Metherate et al., 1992; McCormick et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "3ef9c8a7-7d01-4858-b10a-b37be1f08277",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C11",
+      "claim": "Preparatory and consummatory behaviors in the hippocampus are associated with theta oscillations and sharp-wave ripples (SPW-Rs), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Preparatory and consummatory behaviors in the hippocampus are associated with theta oscillations and sharp-wave ripples (SPW-Rs), respectively (Buzs\u00e1ki et al., 1983).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "16688c00-0ba3-41ba-a5f2-6c7fbd3b7f26",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C12",
+      "claim": "Standard laboratory environments (20\u201324\u00b0C) for both housing and data collection take place below the thermoneutral zone of mice (26\u201334\u00b0C).",
+      "claim_type": "EXPLICIT",
+      "source": "In standard laboratory environments (20\u201324\u00b0C) (Garber et al., 1996), both housing and data collection take place below the thermoneutral zone of mice (26\u201334\u00b0C) (\u0160kop et al., 2020; Maloney et al., 2014; Gordon, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "c1c877bb-f0dc-4b31-8d9f-6e604762ef38",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C13",
+      "claim": "The ThermoMaze floor is constructed from 25 Peltier elements attached to aluminum water-cooling block heatsinks.",
+      "claim_type": "EXPLICIT",
+      "source": "The floor of the maze is constructed from 25 Peltier elements (40 \u00d7 40 \u00d7 3.6 mm) that are attached to aluminum water-cooling block heatsinks (40 \u00d7 40 \u00d7 12 mm, n = 25) with heat-conductive epoxy and are insulated from each other by wood epoxy (Figure 1A, dashed inset).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the construction details of the apparatus, supported by Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "69932b82-e918-482e-8d8f-a8d117134959",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C14",
+      "claim": "Each Peltier element is controlled by an electrically operated switch (relay) that opens and closes high-current circuits by receiving transistor\u2013transistor-logic (TTL) signals from outside sources.",
+      "claim_type": "EXPLICIT",
+      "source": "Each Peltier element is controlled by an electrically operated switch (relay) that opens and closes high-current circuits by receiving transistor\u2013transistor-logic (TTL) signals from outside sources (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the control mechanism of the apparatus, supported by Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "4ba21f47-0ca5-496e-b281-dc16809520a8",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C15",
+      "claim": "Peltier elements can be heated individually up to 30\u00b0C to provide a 'warm spot' for the animal when other regions of the floor are under cooling.",
+      "claim_type": "EXPLICIT",
+      "source": "Peltier elements can be heated individually up to 30\u00b0C to provide a 'warm spot' for the animal when other regions of the floor are under cooling (Figure 1B, active heating of one Peltier element is shown).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the heating capability of the apparatus, supported by Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "b5f0efea-eb6b-4360-a6a8-bf5483257718",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C16",
+      "claim": "The floor temperature was set to either ~25\u00b0C (room temperature) or to ~10\u00b0C (cooling).",
+      "claim_type": "EXPLICIT",
+      "source": "We set the floor temperature to either ~25\u00b0C (room temperature) or to ~10\u00b0C (cooling, Figure 1, Figure 1\u2014figure supplement 1), but a range of ambient temperatures (5\u201330\u00b0C) could be employed.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental temperature settings used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "2ce6db59-09d0-4ef4-89cd-20cd316b9499",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C17",
+      "claim": "The accuracy of the FLIR 5C infrared camera is \u00b13\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "The accuracy of the FLIR 5C infrared camera is \u00b13\u00b0C.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specification of the measurement equipment used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "d7f88f84-4dc5-4ad2-bedc-f76419a4e02b",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C18",
+      "claim": "With proper calibration and attention to emissivity, the margin of error can be less than 1\u00b0C.",
+      "claim_type": "EXPLICIT",
+      "source": "With proper calibration and attention to emissivity (an object's ability to emit rather than reflect infrared energy) the margin of error can be less than 1\u00b0C (FLIR, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to technical documentation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "1835b561-0e2d-4eb2-913c-e61afef50021",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C19",
+      "claim": "The temperature reaches steady state within 31 \u00b1 10.3 s (mean \u00b1 SD, n = 4 trials across 4 Peltier elements).",
+      "claim_type": "EXPLICIT",
+      "source": "The temperature reaches steady state within 31 \u00b1 10.3 s (mean \u00b1 SD, n = 4 trials across 4 Peltier elements).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a measurement from calibration experiments, as shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "bc0e8498-1788-4b1a-b42c-c4aa79bdf97c",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C20",
+      "claim": "11 mice (n = 3 male and 8 female mice) were tested with silicon probe recordings from the hippocampus.",
+      "claim_type": "EXPLICIT",
+      "source": "To illustrate the novel advantages of the ThermoMaze on behavior and brain activity, we tested 11 mice (n = 3 male and 8 female mice) with silicon probe recordings from the hippocampus (Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental subjects used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "94e0d43f-a0d5-4ba0-a2c6-8450132b72fd",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C21",
+      "claim": "The animals readily found the location of the warm spot after a few training sessions (median = 3).",
+      "claim_type": "EXPLICIT",
+      "source": "The animals readily found the location of the warm spot after a few training sessions (median = 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a behavioral observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "1f57eee0-c81d-452a-90d3-49673f180c40",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C22",
+      "claim": "During Cooling, mice spent a smaller proportion of time in locomotion (Pre: 40 \u00b1 19%, Post: 34 \u00b1 16%, Cooling: 23 \u00b1 12%, mean \u00b1 SD, defined as speed >2.5 cm/s, n = 20 sessions from 7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to Pre and Post sub-sessions, during Cooling, mice spent a smaller proportion of time in locomotion (Pre: 40 \u00b1 19%, Post: 34 \u00b1 16%, Cooling: 23 \u00b1 12%, mean \u00b1 SD, defined as speed >2.5 cm/s, n = 20 sessions from 7 mice; Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative behavioral measurement from the experiments, supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "868386da-e871-4001-8834-28d75ca53cc1",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C23",
+      "claim": "During Cooling, mice spent more time in immobility (Pre: 59 \u00b1 19%, Post: 66 \u00b1 16%, Cooling: 76.74 \u00b1 12.41%, mean \u00b1 SD, defined as speed \u22642.5 cm/s; n = 20 sessions from 7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "and more time in immobility (Pre: 59 \u00b1 19%, Post: 66 \u00b1 16%, Cooling: 76.74 \u00b1 12.41%, mean \u00b1 SD, defined as speed \u22642.5 cm/s; n = 20 sessions from 7 mice; Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative behavioral measurement from the experiments, supported by Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "7d34e200-f434-40c2-bc18-55f1eb1a5c02",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C24",
+      "claim": "Duration spent on the warm spot roughly followed a bimodal distribution with a median = 2.85 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Duration spent on the warm spot roughly followed a bimodal distribution with a median = 2.85 min (Figure 3\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative behavioral measurement from the experiments, supported by Figure 3\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "ad355437-1a97-491c-b991-272963844925",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C25",
+      "claim": "Once the heating of the Peltier element was turned off, the animal quickly left the warm spot (median duration = 12.99 s, n = 20 sessions from 7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Once the heating of the Peltier element was turned off, the animal quickly left the warm spot (median duration = 12.99 s, n = 20 sessions from 7 mice; Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative behavioral measurement from the experiments, supported by Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "83dcdc29-bc56-44d8-96af-1ca04a3c0470",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C26",
+      "claim": "Mice increased their speed from 0 to 2.5 cm/s within 12.28 s after a warm spot was turned off (median, n = 20 sessions from 7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Mice increased their speed from 0 to 2.5 cm/s within 12.28 s after a warm spot was turned off (median, n = 20 sessions from 7 mice; Figure 3F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative behavioral measurement from the experiments, supported by Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "63f9e8ff-1f4b-4d91-8f88-2e762c08ac60",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C27",
+      "claim": "Mice found the new warm spot within 23.45 s (median, n = 20 sessions from 7 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "and found the new warm spot within 23.45 s (median, n = 20 sessions from 7 mice; Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative behavioral measurement from the experiments, supported by Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "496a3f45-e2c0-465f-955a-e1dc1635d8c1",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C28",
+      "claim": "Cooling the environment per se did not correlate with brain temperature changes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, cooling the environment per se did not correlate with brain temperature changes (Figure 3\u2014figure supplement 2C\u2013E), confirmation that brain temperature is strongly regulated and is largely independent of the ambient temperature (Kiyatkin, 2010).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from brain temperature measurements, supported by Figure 3\u2014figure supplement 2C\u2013E and a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "b9d375bf-9ba7-4464-8f81-8ca2c797626c",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C29",
+      "claim": "Brain temperature is strongly regulated and is largely independent of the ambient temperature.",
+      "claim_type": "EXPLICIT",
+      "source": "confirmation that brain temperature is strongly regulated and is largely independent of the ambient temperature (Kiyatkin, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research and confirmed by data in this study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "f91a4354-bb29-4913-9772-7e151ba19f32",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C30",
+      "claim": "There were no significant changes in local field potential (LFP) (1\u201340 Hz) between the ThermoMaze and home cage during wakeful periods.",
+      "claim_type": "EXPLICIT",
+      "source": "We also quantified the changes in local field potential (LFP) (1\u201340 Hz) to test whether the brain state of the animal was similar in the ThermoMaze and home cage during wakeful periods. We did not find significant changes in these frequencies (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from electrophysiological analysis, supported by Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "596f5295-b1f5-4a16-8716-e0c5b3f6fdd0",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C31",
+      "claim": "The correlation coefficients between Pre and Post, Pre and Cooling, and Cooling and Post spike-count maps decreased significantly across all sub-sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "The correlation coefficients decreased significantly across all sub-sessions, with the largest change observed between Pre- and Post-cooling spike-count maps in the experimental mice (Figure 3\u2014figure supplement 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from neuronal firing analysis, supported by Figure 3\u2014figure supplement 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "38d41798-8960-40fc-9b65-8f02cb829d4f",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C32",
+      "claim": "The Cooling sub-session in the ThermoMaze induced a moderate decorrelation of pyramidal cells' rate maps, potentially explained by place field remapping upon changing environmental sensory cues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the Cooling sub-session in the ThermoMaze induced a moderate decorrelation of pyramidal cells' rate maps, potentially explained by place field remapping upon changing environmental sensory cues (here, temperature gradient) (Leutgeb et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data supported by a citation to previous research on place field remapping.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "aaee7588-bebb-4121-adf4-d446f32c6eb9",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C33",
+      "claim": "40.90%, 45.32%, and 41.26% of pyramidal cells had place fields in the Pre-cooling, Cooling, and Post-cooling sub-sessions, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "We found 40.90%, 45.32%, and 41.26% of pyramidal cells to have place fields in the Pre-cooling, Cooling, and Post-cooling sub-sessions, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from place cell analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "6ba787cb-9ae2-4ba8-a469-e28d9129d55f",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C34",
+      "claim": "On average, 17.36% of pyramidal neurons passed the place field criteria in all three sub-sessions in a daily session.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that, on average, 17.36% of pyramidal neurons passed the place field criteria in all three sub-sessions in a daily session.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from place cell analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "84be90fc-d957-44b0-a94a-e17cf5224712",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C35",
+      "claim": "SPW-Rs occurred predominantly in the corners where the mice spent most of their time resting.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, SPW-Rs occurred predominantly in the corners (Figure 4A), where the mice spent most of their time resting (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from electrophysiological recordings, supported by Figures 4A and 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "2bd19a76-8c3f-4d15-b94b-4e327b11ac37",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C36",
+      "claim": "The spatial distribution of SPW-Rs in the Cooling sub-session was more uniform compared to room temperature control sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to room temperature control sessions where animals spent most of their time in one corner, the spatial distribution of SPW-Rs in the Cooling sub-session was more uniform (Figure 3\u2014figure supplement 4A\u2013D), indicating that the ThermoMaze paradigm successfully biased where SPW-Rs were generated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing experimental and control conditions, supported by Figure 3\u2014figure supplement 4A\u2013D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "32267bcc-0718-4fc8-9573-a5ce00cd714a",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C37",
+      "claim": "The duration and amplitude of SPW-Rs were comparable in the ThermoMaze and the home cage.",
+      "claim_type": "EXPLICIT",
+      "source": "The duration and amplitude of SPW-Rs were comparable in the ThermoMaze and the home cage (Figure 4B, C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing SPW-R properties across conditions, supported by Figures 4B and 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "6b359d4e-5156-49f3-8178-b1b58fae6001",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C38",
+      "claim": "The mean peak frequency of SPW-Rs was significantly lower in the ThermoMaze compared to the home cage.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the mean peak frequency of SPW-Rs was significantly lower (Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from comparing SPW-R properties across conditions, supported by Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "e52dbf14-9651-45a3-93e7-cdcd577ce3d6",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C39",
+      "claim": "The decrease in mean peak frequency of SPW-Rs can be explained by the lower brain temperature during sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease can be explained by the lower brain temperate during sleep, a state in which the animals spent most of their time in the home cage (Petersen et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the data supported by a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "60993191-1e4a-46e1-b5ef-1a1d6196bf46",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C40",
+      "claim": "The distribution of the spatial tuning score (STS) in actual SPW-Rs was significantly higher compared to shuffled controls.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of the STS in actual SPW-Rs was significantly higher compared to shuffled controls (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from statistical analysis of spatial tuning, supported by Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "d1bdadd3-fb74-4f98-9e4e-c9a81253f415",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C41",
+      "claim": "Pyramidal cells exhibited higher STSs compared to interneurons (medians: pyramidal cells = 0.3432; interneurons = 0.2934; one-sided Wilcoxon rank sum test, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, pyramidal cells exhibited higher STSs compared to interneurons (medians: pyramidal cells = 0.3432; interneurons = 0.2934; one-sided Wilcoxon rank sum test, p < 0.001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical comparison of cell types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "a8facb22-425b-4c6b-8604-12dc6884d2db",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C42",
+      "claim": "Both excitatory and inhibitory neuronal populations exhibit place-selective firing during SPW-Rs, while the excitatory neurons demonstrate a stronger place-specific firing.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, both excitatory and inhibitory neuronal populations exhibit place-selective firing during SPW-Rs, while the excitatory neurons demonstrate a stronger place-specific firing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the spatial tuning analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "a937edd3-ef8d-4fa0-9b7f-ae55fa5cb18c",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C43",
+      "claim": "Spiking activity during SPW-Rs reliably identified the quadrant that the animal was in above chance level.",
+      "claim_type": "EXPLICIT",
+      "source": "Spiking activity during SPW-Rs reliably identified the quadrant that the animal was in above chance level (Figure 5C, D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from Bayesian decoding analysis, supported by Figures 5C and 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "675501ce-8d11-4ba8-b4ef-bce696decd1c",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C44",
+      "claim": "Firing rate ratios during SPW-Rs and movement were positively correlated (Pearson's r = 0.321, p < 0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "These ratios during SPW-Rs and movement were positively correlated (Figure 5E; n = 1150 pyramidal cells in 20 sessions from 7 mice)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from correlation analysis, supported by Figure 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "bd984e3c-cf20-4c38-9e29-d38ec87851d1",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C45",
+      "claim": "Place cells during movement preserved their spatial properties during SPW-Rs.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that place cells (O'Keefe and Nadel, 1978) during movement preserved their spatial properties during SPW-Rs",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the correlation data, with a citation to foundational place cell research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "bc80b61d-1d7e-47da-8529-ccbe5c9e8693",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C46",
+      "claim": "Population vectors for the same quadrant during movement were similar to those during SPW-Rs.",
+      "claim_type": "EXPLICIT",
+      "source": "As was the case for individual pyramidal cells, population vectors for the same quadrant during movement were similar to those during SPW-Rs (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from population-level analysis, supported by Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "6804c461-a79f-43d4-a263-e0199325d582",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C47",
+      "claim": "Spiking activity during SPW-Rs continues to be influenced by the animal's current position.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, these findings support and extend the observation that spiking activity during SPW-Rs continues to be influenced by the animal's current position (O'Neill et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the data analysis, supported by a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "18aff061-d6e8-4de4-893e-46bc19164a4a",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C48",
+      "claim": "Mice spent a higher fraction of their time in sleep during the 20 min, compared to the 5 min sub-session (p = 0.003, n = 19 sessions in 7 mice and n = 7 sessions in 4 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "Mice spent a higher fraction of their time in sleep during the 20 min, compared to the 5 min sub-session (p = 0.003, n = 19 sessions in 7 mice and n = 7 sessions in 4 mice, Supplementary file 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from comparing different experimental protocols.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "ac1efab6-afeb-4c02-9a5b-b6cc4228f0e7",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C49",
+      "claim": "The average inter-NREM interval was 1000s (n = 7 sessions in 4 mice).",
+      "claim_type": "EXPLICIT",
+      "source": "The average inter-NREM interval was 1000s (Figure 6F, n = 7 sessions in 4 mice).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative measurement from sleep analysis, supported by Figure 6F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "922487b0-9e43-46ad-a18b-fa242f49a290",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C50",
+      "claim": "Place-specific coding during SPW-Rs persists into sleep.",
+      "claim_type": "EXPLICIT",
+      "source": "we found that place-specific coding during SPW-Rs persists into sleep",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing waking and sleep SPW-Rs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "b9063fd7-b0a8-44e8-834d-4b98c2ae1692",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C51",
+      "claim": "The highest correlation was observed when comparing SPW-Rs during different brain states than when comparing SPW-Rs and movement.",
+      "claim_type": "EXPLICIT",
+      "source": "and we observed the highest correlation when comparing SPW-Rs during different brain states than when comparing SPW-Rs and movement (Figure 6G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from correlation analysis, supported by Figure 6G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "2892e161-fb11-416a-acd5-0108d6a374e2",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C52",
+      "claim": "Sensory inputs during waking SPW-Rs can affect the spiking content of SPW-Rs.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings further support the view that sensory inputs during waking SPW-Rs can affect the spiking content of SPW-Rs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings on place-specific coding persistence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "87c16f5d-ba42-4339-96bf-8397ceb72168",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C53",
+      "claim": "The peak frequency of the awake ripples was higher compared to both home cage and ThermoMaze NREM sleep (p < 0.001 between awake and NREM states).",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the peak frequency of the awake ripples was higher compared to both home cage and ThermoMaze NREM sleep (one-way ANOVA with Tukey's posthoc test; ripple frequencies were: 171.63 \u00b1 11.69, 172.21 \u00b1 11.86, 168.19 \u00b1 11.10, and 168.26 \u00b1 11.08 Hz, mean \u00b1 SD for home cage awake, ThermoMaze awake, home cage NREM, and ThermoMaze NREM conditions, p < 0.001 between awake and NREM states).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative finding from statistical analysis of ripple frequencies across conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "44f6791f-cc4a-4180-9d26-891c8ef96c58",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C54",
+      "claim": "The ThermoMaze exploits natural behavior, requiring no extensive training or handling.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the paradigm exploits natural behavior, no extensive training or handling is necessary.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical advantages of the ThermoMaze paradigm.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "e5a95635-dd75-45ff-a4fa-beb93c71994e",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C55",
+      "claim": "Mice regularly explore a cold environment until a warm spot is identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that mice regularly explore a cold environment until a warm spot is identified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a behavioral observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "d21ba9c8-ed1d-4462-b96c-8faf9ea5ef30",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C56",
+      "claim": "Mice spend most of the time in a warm spot and even fall asleep, thus exhibiting a high degree of comfort.",
+      "claim_type": "EXPLICIT",
+      "source": "They spend most of the time in a warm spot and even fall asleep, thus exhibiting a high degree of comfort.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a behavioral observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "fa387bb0-50fe-4a2d-8333-db01f586a571",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C57",
+      "claim": "Neurons active during hippocampal SPW-Rs replay waking experience.",
+      "claim_type": "EXPLICIT",
+      "source": "We exploited the long immobility epochs following exploration and showed how neurons active during hippocampal SPW-Rs replay waking experience.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the electrophysiological analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "19f48a7e-d36b-4512-bb82-998c55a28e1f",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C58",
+      "claim": "The hypothalamic preoptic area (POA) is regarded as the most important thermoregulatory 'center' in the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The hypothalamic preoptic area (POA) is regarded as the most important thermoregulatory 'center' in the brain (Harding et al., 2018; Song et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "4ea7cdbb-1d65-450b-a039-eeb528d80d64",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C59",
+      "claim": "The POA is bidirectionally connected with the limbic system and multiple cortical areas which assist both online maintenance of body temperature and preparing the body for future expected changes (allostasis).",
+      "claim_type": "EXPLICIT",
+      "source": "Connecting this area of research to learning, the POA is bidirectionally connected with the limbic system and multiple cortical areas which assist both online maintenance of body temperature and preparing the body for future expected changes (allostasis) (McEwen et al., 2012; Sterling and Eyer, 1988; Sterling, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "a93b4438-3997-4c6a-97ec-1f4fb94eb5b8",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C60",
+      "claim": "Allostatic mechanisms induce exploratory behavior, searching for a warmer environment.",
+      "claim_type": "EXPLICIT",
+      "source": "These allostatic mechanisms induce exploratory behavior, searching for a warmer environment (Schulkin and Sterling, 2019; Tan and Knight, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "d38e4cd0-1b79-40b4-9c99-96cbccc8d221",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C61",
+      "claim": "Mice are acrophobic and agoraphobic and tend to avoid open areas.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice, and rodents in general, are acrophobic and agoraphobic and tend to avoid open areas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about rodent behavior drawing on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "6df3497a-032a-45ca-b2e4-4b44b0ca8efe",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C62",
+      "claim": "Rodents tend to move close to the wall and spend most of their non-exploration time in corners.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, they tend to move close to the wall and spend most of their non-exploration time in corners (Steimer, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "2bfa9054-06b2-4339-901e-3aacfed03d2a",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C63",
+      "claim": "Neural activity during SPW-Rs has been shown to replay activity patterns observed during previous spatial navigation experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural activity during SPW-Rs has been shown to replay activity patterns observed during previous spatial navigation experiences (Foster and Wilson, 2006; O'Neill et al., 2006; Diba and Buzs\u00e1ki, 2007)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "70d3bad1-0d28-4e89-897b-55dd840f5afd",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C64",
+      "claim": "Neural activity during SPW-Rs can even be predictive of activity during future experiences.",
+      "claim_type": "EXPLICIT",
+      "source": "and can even be predictive of activity during future experiences (Davidson et al., 2009; Gupta et al., 2010; Karlsson and Frank, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "47cedff8-f3fc-4abb-8556-27fb378c6919",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C65",
+      "claim": "Neurons whose place fields overlapped with the quadrant of the maze had a higher participation probability in SPW-Rs occurring at that location compared to other neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with previous studies (O'Neill et al., 2006; Dupret et al., 2010; Pfeiffer and Foster, 2013), we found that neurons whose place fields overlapped with the quadrant of the maze had a higher participation probability in SPW-Rs occurring at that location compared to other neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the data analysis, supported by citations to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "44bc9d7d-3ae4-4284-ab4d-87aeb29c5b8c",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C66",
+      "claim": "Waking replay events can be biased by perceiving features of the surrounding environment.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation supports the notion that waking replay events can be biased by perceiving features of the surrounding environment (O'Neill et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the findings, supported by a citation to previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "e3e89524-43e9-4eab-ac7e-c6e8de4cce0f",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C67",
+      "claim": "When the mouse fell asleep at the same location, the relationship between neuronal firing and location was weakened but did not disappear.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the mouse fell asleep at the same location this relationship was weakened but did not disappear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from comparing waking and sleep SPW-Rs.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "d0409ec2-055b-4164-9b8b-41a80e7443ac",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C68",
+      "claim": "The decreased correlation between sleep SPW-R and waking exploration may indicate the deterioration of replay as a function of time.",
+      "claim_type": "EXPLICIT",
+      "source": "Another potential explanation for the decreased correlation between sleep SPW-R and waking exploration is the deterioration of replay as the function of time (Wilson and McNaughton, 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings, supported by a citation to previous research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "cafcf650-1cb8-459a-901b-ec6ff4baa28b",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C69",
+      "claim": "The persisting significant correlation between sleep SPW-Rs and previous exploration may indicate that factors other than the perception of the animal's vicinity are responsible for sleep replay.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, the persisting significant correlation between sleep SPW-Rs and previous exploration may also indicate that factors other than the perception of the animal's vicinity are responsible for sleep replay (Karlsson and Frank, 2009; Dragoi and Tonegawa, 2011; Grosmark and Buzs\u00e1ki, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the findings, supported by citations to previous research.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "2c6ee56b-7113-4555-8dd1-b661853f3609",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C70",
+      "claim": "Continuity of waking experience replay in waking and sleep SPW-Rs have been hypothesized previously but not yet tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Continuity of waking experience replay in waking and sleep SPW-Rs have been hypothesized previously but not yet tested (Jarosiewicz and Skaggs, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "4fa250e2-1f87-4d03-be5d-4c0798997483",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C71",
+      "claim": "All experiments were approved by the Institutional Animal Care and Use Committee at New York University Langone Medical Center (Protocol number: IA15-01466).",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were approved by the Institutional Animal Care and Use Committee at New York University Langone Medical Center (Protocol number: IA15-01466).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval for the research.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "9393fa17-d51a-47b1-a89b-aa3477339cbb",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C72",
+      "claim": "Mice were kept in a vivarium on a 12-hr light/dark cycle and were housed two per cage before surgery and individually after it.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice (adult female n = 8, 22 g and male n = 5, 26 g, C57/Bl6, Strain #:000664, The Jackson Laboratory) were kept in a vivarium on a 12-hr light/dark cycle and were housed two per cage before surgery and individually after it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the animal housing conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "aa007b48-38c7-4b1b-9308-70015b879eba",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C73",
+      "claim": "The ThermoMaze is a box (width, length, and height: 20, 20, and 40 cm, respectively), made from acrylic plexiglass sheet.",
+      "claim_type": "EXPLICIT",
+      "source": "The ThermoMaze is a box (width, length, and height: 20, 20, and 40 cm, respectively), made from acrylic plexiglass sheet (8505K743, McMaster, Elmhurst, IL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the construction details of the apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "58df7eb7-77bf-4890-9ed5-e4dfbbe40565",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C74",
+      "claim": "1438 putative single units were isolated from 7 animals in 20 sessions (n = 1150 putative pyramidal cells, n = 288 putative interneurons) during the ThermoMaze behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "We have isolated 1438 putative single units from 7 animals in 20 sessions (n = 1150 putative pyramidal cells, n = 288 putative interneurons) during the ThermoMaze behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative summary of the neuronal recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "7921d707-4bca-4dc6-a9a5-9c28047edf3d",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C75",
+      "claim": "228 putative pyramidal cells were collected from 2 animals in 3 control sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "We also collected 228 putative pyramidal cells from 2 animals in 3 control sessions (Figure 3\u2014figure supplement 4)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative summary of the control recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "15b5b703-1c52-4bc4-a895-c483d8ee2cdb",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "claim_id": "C76",
+      "claim": "434 putative single units were collected from 4 mice in 7 sessions using the 20-min warmth paradigm.",
+      "claim_type": "EXPLICIT",
+      "source": "and 434 putative single units from 4 mice in 7 sessions using the 20-min warmth paradigm (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative summary of the recordings from the extended warmth protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed the ThermoMaze apparatus consisting of 25 individually controlled Peltier elements that can create spatial temperature gradients (10-30\u00b0C) with temperature reaching steady state within 31\u00b110.3 seconds and measurement accuracy of \u00b13\u00b0C (potentially <1\u00b0C with calibration).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C19 and C73 provide detailed technical specifications with quantitative measurements from calibration experiments (Figure 2). The apparatus design is well-documented with construction details, control mechanisms, and validated temperature dynamics. This represents solid engineering work with appropriate characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Mice readily learned to find unmarked warm spots in a cold environment (median 3 training sessions), spending significantly more time immobile during cooling (76.74\u00b112.41%) compared to pre-cooling (59\u00b119%) and post-cooling (66\u00b116%), with rapid departure from warm spots when heating ceased (median 12.99s) and quick location of new warm spots (median 23.45s).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C27 provide quantitative behavioral data with appropriate sample sizes (n=20 sessions from 7 mice) and statistical comparisons. The behavioral responses are consistent, reproducible, and supported by trajectory data (Figure 3). The paradigm successfully exploits natural thermotactic behavior without extensive training, as claimed in C54-C56.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "10e9157c-13f9-4583-ba6c-15dc79d26ae9",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Environmental cooling did not correlate with brain temperature changes, confirming that brain temperature is strongly regulated and independent of ambient temperature. Local field potential (1-40 Hz) showed no significant changes between ThermoMaze and home cage during wakefulness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C30 are supported by direct brain temperature measurements (n=2 mice, Figure 3\u2014figure supplement 2) and LFP analysis (Figure 3\u2014figure supplement 3). The findings are consistent with cited prior work (Kiyatkin, 2010) and demonstrate that the behavioral paradigm does not induce confounding physiological changes in brain state or temperature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "fbb9eeb6-5c2d-494a-8917-8f9b817b6e10",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The cooling sub-session induced moderate decorrelation of pyramidal cell rate maps across sub-sessions, potentially due to place field remapping from temperature gradient changes. However, 40-45% of pyramidal cells maintained place fields across all sub-sessions, with 17.36% showing stable place fields throughout.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C34 present quantitative analysis of spatial firing patterns with appropriate statistical testing (Figure 3\u2014figure supplement 6). The decorrelation is interpreted as remapping due to environmental cue changes, supported by citation to Leutgeb et al., 2005. The substantial proportion of place cells (40-45%) demonstrates adequate spatial encoding despite the small arena size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "6754c17f-a2aa-4dd2-8cde-53da3105f1f1",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "SPW-Rs occurred predominantly in corners during rest, with more uniform spatial distribution during cooling compared to room temperature controls. SPW-R duration and amplitude were comparable between ThermoMaze and home cage, but peak frequency was significantly lower in ThermoMaze, explained by lower brain temperature during sleep.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C39 provide quantitative SPW-R characterization with appropriate comparisons (Figures 4A-D, Figure 3\u2014figure supplement 4). The spatial distribution analysis demonstrates successful experimental control over SPW-R locations. The frequency difference interpretation (C39) is supported by citation to Petersen et al., 2022, though this remains somewhat speculative without direct simultaneous brain temperature measurements during all SPW-Rs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Hippocampal CA1 neurons during SPW-Rs encode the animal's current position, with pyramidal cells showing significantly higher spatial tuning scores than interneurons (medians: 0.3432 vs 0.2934, p<0.001). Bayesian decoding reliably identified the animal's quadrant above chance level, and firing rate ratios during SPW-Rs and movement were positively correlated (r=0.321, p<0.001), indicating that place-specific firing persists during waking immobility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C7, and C40-C47 present comprehensive analysis of spatial coding during SPW-Rs with appropriate statistical tests, shuffle controls, and population-level analyses (Figure 5). The findings extend prior work (O'Neill et al., 2006) with quantitative evidence. Sample size is substantial (n=1150 pyramidal cells, 20 sessions, 7 mice). The correlation between movement and SPW-R firing patterns is modest (r=0.321) but statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "a46aec86-57cd-43a0-b303-15ccec848548",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using prolonged warm spot duration (20 min vs 5 min), mice spent significantly more time in sleep (p=0.003). Place-specific coding during SPW-Rs persisted into sleep, with highest correlation observed when comparing SPW-Rs across different brain states rather than comparing SPW-Rs to movement. Awake ripple peak frequency was significantly higher than NREM ripples (p<0.001).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 provide quantitative comparison between protocols with appropriate statistical testing (Figure 6). The persistence of spatial coding into sleep (C50-C51) is a novel finding, though the weakening of correlation compared to waking (C67) suggests complexity. The interpretation that sensory inputs affect SPW-R content (C52) is reasonable but somewhat speculative. Sample size for 20-min protocol is smaller (n=7 sessions, 4 mice) than main experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Neurons active during SPW-Rs replay waking experience, with neurons whose place fields overlapped with the maze quadrant showing higher participation probability in SPW-Rs at that location. When mice fell asleep at the same location, this relationship weakened but did not disappear, supporting the view that waking replay can be biased by environmental perception while sleep replay may involve additional factors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C57 and C65-C67 present findings consistent with prior literature (C63-C64, C70). However, the interpretations regarding mechanisms (C66, C68-C69) are speculative with competing explanations offered. The weakening of correlation during sleep (C67) is observed but the underlying cause\u2014time-dependent deterioration (C68) vs. different replay mechanisms (C69)\u2014cannot be distinguished with the current data. This represents an important observation requiring further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "852fa542-c8f0-4746-93c0-db28639ccca5",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Brain states fluctuate between exploratory (preparatory) and consummatory phases, affecting internal computation and sensory responses. In mammals, these states can be identified electrophysiologically and are associated with differential neuromodulator release. In hippocampus, preparatory and consummatory behaviors correspond to theta oscillations and sharp-wave ripples, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C8-C11 provide established background knowledge supported by multiple citations to prior literature. These claims frame the scientific context appropriately and are well-supported by the neuroscience literature, though they represent prior knowledge rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "d3f77428-7e19-49f0-b66e-63d495b2b503",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The ThermoMaze is analogous to the Morris water maze but without the inconvenience of a wet environment, allowing collection of physiological data in many trials.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C5 makes a reasonable comparison between paradigms. Both involve spatial navigation motivated by aversive stimuli (cold vs. water), but ThermoMaze avoids water-related confounds and allows extended recording sessions. The analogy is appropriate though the learning mechanisms may differ (thermotaxis vs. escape behavior).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "efeac8e3-2b01-4680-ae1f-8773e87e4073",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Standard laboratory temperatures (20-24\u00b0C) are below the thermoneutral zone of mice (26-34\u00b0C). The hypothalamic preoptic area serves as the thermoregulatory center, connected to limbic and cortical areas for allostatic temperature regulation. Allostatic mechanisms induce exploratory behavior for warmer environments. Mice are acrophobic and agoraphobic, preferring corners and walls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12 and C58-C62 provide relevant background on thermoregulation and rodent behavior, all supported by appropriate citations. These establish the biological rationale for the ThermoMaze paradigm and explain why the approach exploits natural behavior. This represents well-established prior knowledge appropriately applied.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "56e2bc5a-bb8f-40f9-aaf6-ce7e18295dca",
+      "content_id": "6dfe6fff-ec8d-48e3-a76c-9a618e1da2cd",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "All experiments were approved by IACUC (Protocol IA15-01466). A total of 1438 putative single units were isolated from 7 animals in 20 sessions during ThermoMaze behavior, with additional control recordings (228 cells from 2 animals in 3 sessions) and extended protocol recordings (434 units from 4 mice in 7 sessions).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72 and C74-C76 document ethical approval and provide quantitative summary of experimental subjects and recordings. Sample sizes are appropriate for electrophysiological studies. The inclusion of control sessions (C75) and extended protocol (C76) strengthens the experimental design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4",
+      "content_id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The ThermoMaze is a novel behavioral apparatus that exploits mice's natural warmth-seeking behavior by using 25 Peltier elements to create temperature-controlled zones. The apparatus can cool the floor to ~10\u00b0C and selectively heat unmarked areas to ~30\u00b0C, with temperature reaching steady state within 31\u00b110.3 seconds, allowing mice to explore and find warm spots without extensive training.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirmed the ThermoMaze as 'a valuable tool to control the rest/exploration states of an animal' and noted it 'represents an out-of-the-box thinking to study and control less-studied aspects of the animals' behavior.' The methodology for apparatus construction and temperature control was described as 'solid and validated,' with no concerns raised about the technical specifications or design principles.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf",
+      "content_id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Behavioral experiments with 11 mice showed that animals readily learned to find warm spots (median 3 training sessions), spent more time immobile during cooling (76.74\u00b112.41% vs 59\u00b119% pre-cooling), quickly left when heating stopped (median 12.99s), and found new warm spots within 23.45s. Mice spent most time on warm spots and even fell asleep, demonstrating comfort.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledged the behavioral data without critique, noting the apparatus successfully demonstrates 'how mice regularly explore a cold environment until a warm spot is identified' and 'spend most of the time in a warm spot and even fall asleep.' The quantitative behavioral measurements were collected using 'solid and validated methodology' according to reviewers.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "a7fd1fae-6725-44a5-ba46-fc1a70205e05",
+      "content_id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Electrophysiological recordings showed that SPW-Rs occurred predominantly in corners where mice rested, with more uniform spatial distribution during cooling compared to control sessions. SPW-R duration and amplitude were comparable between ThermoMaze and home cage, but mean peak frequency was significantly lower in ThermoMaze, potentially due to lower brain temperature during sleep.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirmed that 'the incidence of SWRs was higher at the rest areas' and the data were 'collected and analyzed using solid and validated methodology.' No concerns were raised about the SPW-R characterization or the comparison between ThermoMaze and home cage conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "98f72171-bfcf-482c-93f3-2813f8fadee5",
+      "content_id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Spatial tuning analysis revealed that spiking activity during SPW-Rs encoded the animal's position, with pyramidal cells showing higher spatial tuning scores than interneurons (0.3432 vs 0.2934, p<0.001). Bayesian decoding reliably identified the animal's quadrant above chance level, and firing rate ratios during SPW-Rs and movement were positively correlated (r=0.321, p<0.001), indicating place cells preserved spatial properties during SPW-Rs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers noted the data 'demonstrate its use in addressing previously elusive questions,' they also stated 'this will facilitate future work with more in-depth analysis of place cell activity to further support for some of the claims.' This suggests the reviewers found the spatial encoding results promising but requiring additional analysis to fully support the conclusions about place cell properties during SPW-Rs.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "de5d9ea4-80da-46f3-99b2-98176e6a0275",
+      "content_id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Place-specific firing during SPW-Rs persisted from waking into sleep at the same location, with the highest correlation observed when comparing SPW-Rs during different brain states rather than comparing SPW-Rs to movement. This supports that waking replay events can be biased by perceiving features of the surrounding environment, and that sensory inputs during waking SPW-Rs affect their spiking content.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledged that 'place cells representing a rest area were preferentially active during rest-SWRs as well but not during non-REM sleep,' indicating some acceptance of the persistence finding. However, the statement that findings 'will facilitate future work with more in-depth analysis' suggests the evidence for continuity of place-specific coding across brain states requires further support.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "8fd64a0f-71a5-4305-a07d-761e90a05b50",
+      "content_id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Control analyses showed that cooling the environment did not correlate with brain temperature changes, confirming brain temperature is strongly regulated and independent of ambient temperature. Local field potential (LFP) analysis (1-40 Hz) showed no significant changes between ThermoMaze and home cage during wakeful periods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These control findings were presented as part of the 'solid and validated methodology' according to reviewers, with no concerns raised about the brain temperature measurements or LFP comparisons. The data support that the ThermoMaze does not artificially alter brain states through temperature effects on neural activity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "e2d60dde-521a-4e2e-b70e-fb119730de87",
+      "content_id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Place field analysis revealed moderate decorrelation of pyramidal cell rate maps during cooling, with correlation coefficients decreasing significantly across sub-sessions. Approximately 40-45% of pyramidal cells had place fields in each sub-session, with 17.36% maintaining place fields across all three sub-sessions, potentially explained by place field remapping upon changing environmental sensory cues.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not raise concerns about the place field stability analysis, and the data were collected using methodology they described as 'solid and validated.' The interpretation of remapping due to temperature gradient changes aligns with established literature and was not challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "c31a3076-41c3-44da-963a-a3c1ee25276d",
+      "content_id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Extended warmth protocol experiments (20 min vs 5 min) showed mice spent higher fraction of time in sleep during longer sessions (p=0.003), with average inter-NREM interval of 1000s. Peak frequency of awake ripples was higher compared to NREM sleep in both home cage and ThermoMaze (p<0.001).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings on sleep patterns and ripple frequency differences between awake and NREM states were not questioned by reviewers and represent standard characterizations using established methods. The data support the apparatus's ability to induce natural sleep in the experimental context.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "10753b4f-d42d-4ce8-b50a-2ee0c8105145",
+      "content_id": "264a33e3-a670-4ea9-86fe-183ba33f2959",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The decreased correlation between sleep SPW-Rs and waking exploration may indicate deterioration of replay as a function of time, or alternatively that factors other than perception of the animal's vicinity are responsible for sleep replay. Continuity of waking experience replay in waking and sleep SPW-Rs has been hypothesized previously but not yet tested.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are explicitly speculative interpretations ('potential explanation,' 'may also indicate') offered by the authors. Reviewers' comment that 'future work with more in-depth analysis of place cell activity' is needed 'to further support for some of the claims' suggests these mechanistic interpretations remain uncertain and require additional investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2399ba29-713e-4f7b-b54b-b0dcfa204a99",
+      "result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7"
+    },
+    {
+      "claim_id": "c1c877bb-f0dc-4b31-8d9f-6e604762ef38",
+      "result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7"
+    },
+    {
+      "claim_id": "69932b82-e918-482e-8d8f-a8d117134959",
+      "result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7"
+    },
+    {
+      "claim_id": "4ba21f47-0ca5-496e-b281-dc16809520a8",
+      "result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7"
+    },
+    {
+      "claim_id": "b5f0efea-eb6b-4360-a6a8-bf5483257718",
+      "result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7"
+    },
+    {
+      "claim_id": "2ce6db59-09d0-4ef4-89cd-20cd316b9499",
+      "result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7"
+    },
+    {
+      "claim_id": "d7f88f84-4dc5-4ad2-bedc-f76419a4e02b",
+      "result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7"
+    },
+    {
+      "claim_id": "1835b561-0e2d-4eb2-913c-e61afef50021",
+      "result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7"
+    },
+    {
+      "claim_id": "aa007b48-38c7-4b1b-9308-70015b879eba",
+      "result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7"
+    },
+    {
+      "claim_id": "83f0c6cb-7b2f-4bd6-a8eb-5c844d9121c9",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "bc0e8498-1788-4b1a-b42c-c4aa79bdf97c",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "94e0d43f-a0d5-4ba0-a2c6-8450132b72fd",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "1f57eee0-c81d-452a-90d3-49673f180c40",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "868386da-e871-4001-8834-28d75ca53cc1",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "7d34e200-f434-40c2-bc18-55f1eb1a5c02",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "ad355437-1a97-491c-b991-272963844925",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "83dcdc29-bc56-44d8-96af-1ca04a3c0470",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "63f9e8ff-1f4b-4d91-8f88-2e762c08ac60",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "44f6791f-cc4a-4180-9d26-891c8ef96c58",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "e5a95635-dd75-45ff-a4fa-beb93c71994e",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "d21ba9c8-ed1d-4462-b96c-8faf9ea5ef30",
+      "result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf"
+    },
+    {
+      "claim_id": "496a3f45-e2c0-465f-955a-e1dc1635d8c1",
+      "result_id": "10e9157c-13f9-4583-ba6c-15dc79d26ae9"
+    },
+    {
+      "claim_id": "b9d375bf-9ba7-4464-8f81-8ca2c797626c",
+      "result_id": "10e9157c-13f9-4583-ba6c-15dc79d26ae9"
+    },
+    {
+      "claim_id": "f91a4354-bb29-4913-9772-7e151ba19f32",
+      "result_id": "10e9157c-13f9-4583-ba6c-15dc79d26ae9"
+    },
+    {
+      "claim_id": "596f5295-b1f5-4a16-8716-e0c5b3f6fdd0",
+      "result_id": "fbb9eeb6-5c2d-494a-8917-8f9b817b6e10"
+    },
+    {
+      "claim_id": "38d41798-8960-40fc-9b65-8f02cb829d4f",
+      "result_id": "fbb9eeb6-5c2d-494a-8917-8f9b817b6e10"
+    },
+    {
+      "claim_id": "aaee7588-bebb-4121-adf4-d446f32c6eb9",
+      "result_id": "fbb9eeb6-5c2d-494a-8917-8f9b817b6e10"
+    },
+    {
+      "claim_id": "6ba787cb-9ae2-4ba8-a469-e28d9129d55f",
+      "result_id": "fbb9eeb6-5c2d-494a-8917-8f9b817b6e10"
+    },
+    {
+      "claim_id": "84be90fc-d957-44b0-a94a-e17cf5224712",
+      "result_id": "6754c17f-a2aa-4dd2-8cde-53da3105f1f1"
+    },
+    {
+      "claim_id": "2bd19a76-8c3f-4d15-b94b-4e327b11ac37",
+      "result_id": "6754c17f-a2aa-4dd2-8cde-53da3105f1f1"
+    },
+    {
+      "claim_id": "32267bcc-0718-4fc8-9573-a5ce00cd714a",
+      "result_id": "6754c17f-a2aa-4dd2-8cde-53da3105f1f1"
+    },
+    {
+      "claim_id": "6b359d4e-5156-49f3-8178-b1b58fae6001",
+      "result_id": "6754c17f-a2aa-4dd2-8cde-53da3105f1f1"
+    },
+    {
+      "claim_id": "e52dbf14-9651-45a3-93e7-cdcd577ce3d6",
+      "result_id": "6754c17f-a2aa-4dd2-8cde-53da3105f1f1"
+    },
+    {
+      "claim_id": "32146f07-b752-4bbf-a8cf-f3201bf9ec31",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "bb791495-63a1-45e7-8618-8b477fb728b5",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "60993191-1e4a-46e1-b5ef-1a1d6196bf46",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "d1bdadd3-fb74-4f98-9e4e-c9a81253f415",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "a8facb22-425b-4c6b-8604-12dc6884d2db",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "a937edd3-ef8d-4fa0-9b7f-ae55fa5cb18c",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "675501ce-8d11-4ba8-b4ef-bce696decd1c",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "bd984e3c-cf20-4c38-9e29-d38ec87851d1",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "bc80b61d-1d7e-47da-8529-ccbe5c9e8693",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "6804c461-a79f-43d4-a263-e0199325d582",
+      "result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4"
+    },
+    {
+      "claim_id": "18aff061-d6e8-4de4-893e-46bc19164a4a",
+      "result_id": "a46aec86-57cd-43a0-b303-15ccec848548"
+    },
+    {
+      "claim_id": "ac1efab6-afeb-4c02-9a5b-b6cc4228f0e7",
+      "result_id": "a46aec86-57cd-43a0-b303-15ccec848548"
+    },
+    {
+      "claim_id": "922487b0-9e43-46ad-a18b-fa242f49a290",
+      "result_id": "a46aec86-57cd-43a0-b303-15ccec848548"
+    },
+    {
+      "claim_id": "b9063fd7-b0a8-44e8-834d-4b98c2ae1692",
+      "result_id": "a46aec86-57cd-43a0-b303-15ccec848548"
+    },
+    {
+      "claim_id": "2892e161-fb11-416a-acd5-0108d6a374e2",
+      "result_id": "a46aec86-57cd-43a0-b303-15ccec848548"
+    },
+    {
+      "claim_id": "87c16f5d-ba42-4339-96bf-8397ceb72168",
+      "result_id": "a46aec86-57cd-43a0-b303-15ccec848548"
+    },
+    {
+      "claim_id": "fa387bb0-50fe-4a2d-8333-db01f586a571",
+      "result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1"
+    },
+    {
+      "claim_id": "2bfa9054-06b2-4339-901e-3aacfed03d2a",
+      "result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1"
+    },
+    {
+      "claim_id": "70d3bad1-0d28-4e89-897b-55dd840f5afd",
+      "result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1"
+    },
+    {
+      "claim_id": "47cedff8-f3fc-4abb-8556-27fb378c6919",
+      "result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1"
+    },
+    {
+      "claim_id": "44bc9d7d-3ae4-4284-ab4d-87aeb29c5b8c",
+      "result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1"
+    },
+    {
+      "claim_id": "e3e89524-43e9-4eab-ac7e-c6e8de4cce0f",
+      "result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1"
+    },
+    {
+      "claim_id": "d0409ec2-055b-4164-9b8b-41a80e7443ac",
+      "result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1"
+    },
+    {
+      "claim_id": "cafcf650-1cb8-459a-901b-ec6ff4baa28b",
+      "result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1"
+    },
+    {
+      "claim_id": "2c6ee56b-7113-4555-8dd1-b661853f3609",
+      "result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1"
+    },
+    {
+      "claim_id": "c2243141-8bef-4aa9-a3e7-5af0a0b6a9ee",
+      "result_id": "852fa542-c8f0-4746-93c0-db28639ccca5"
+    },
+    {
+      "claim_id": "188eae8e-324d-4f04-adf9-79c5d35173ec",
+      "result_id": "852fa542-c8f0-4746-93c0-db28639ccca5"
+    },
+    {
+      "claim_id": "d93faab8-0060-40f2-a419-163becea34bb",
+      "result_id": "852fa542-c8f0-4746-93c0-db28639ccca5"
+    },
+    {
+      "claim_id": "83079c47-9487-4960-a2bd-5188583d7b3e",
+      "result_id": "852fa542-c8f0-4746-93c0-db28639ccca5"
+    },
+    {
+      "claim_id": "3e19bde7-bdeb-48ad-ab72-0ff202ffcbe8",
+      "result_id": "852fa542-c8f0-4746-93c0-db28639ccca5"
+    },
+    {
+      "claim_id": "3ef9c8a7-7d01-4858-b10a-b37be1f08277",
+      "result_id": "852fa542-c8f0-4746-93c0-db28639ccca5"
+    },
+    {
+      "claim_id": "ed3caf54-4bde-45b8-88f9-636854ec0b4f",
+      "result_id": "d3f77428-7e19-49f0-b66e-63d495b2b503"
+    },
+    {
+      "claim_id": "16688c00-0ba3-41ba-a5f2-6c7fbd3b7f26",
+      "result_id": "efeac8e3-2b01-4680-ae1f-8773e87e4073"
+    },
+    {
+      "claim_id": "19f48a7e-d36b-4512-bb82-998c55a28e1f",
+      "result_id": "efeac8e3-2b01-4680-ae1f-8773e87e4073"
+    },
+    {
+      "claim_id": "4ea7cdbb-1d65-450b-a039-eeb528d80d64",
+      "result_id": "efeac8e3-2b01-4680-ae1f-8773e87e4073"
+    },
+    {
+      "claim_id": "a93b4438-3997-4c6a-97ec-1f4fb94eb5b8",
+      "result_id": "efeac8e3-2b01-4680-ae1f-8773e87e4073"
+    },
+    {
+      "claim_id": "d38e4cd0-1b79-40b4-9c99-96cbccc8d221",
+      "result_id": "efeac8e3-2b01-4680-ae1f-8773e87e4073"
+    },
+    {
+      "claim_id": "6df3497a-032a-45ca-b2e4-4b44b0ca8efe",
+      "result_id": "efeac8e3-2b01-4680-ae1f-8773e87e4073"
+    },
+    {
+      "claim_id": "4fa250e2-1f87-4d03-be5d-4c0798997483",
+      "result_id": "56e2bc5a-bb8f-40f9-aaf6-ce7e18295dca"
+    },
+    {
+      "claim_id": "9393fa17-d51a-47b1-a89b-aa3477339cbb",
+      "result_id": "56e2bc5a-bb8f-40f9-aaf6-ce7e18295dca"
+    },
+    {
+      "claim_id": "58df7eb7-77bf-4890-9ed5-e4dfbbe40565",
+      "result_id": "56e2bc5a-bb8f-40f9-aaf6-ce7e18295dca"
+    },
+    {
+      "claim_id": "7921d707-4bca-4dc6-a9a5-9c28047edf3d",
+      "result_id": "56e2bc5a-bb8f-40f9-aaf6-ce7e18295dca"
+    },
+    {
+      "claim_id": "15b5b703-1c52-4bc4-a895-c483d8ee2cdb",
+      "result_id": "56e2bc5a-bb8f-40f9-aaf6-ce7e18295dca"
+    },
+    {
+      "claim_id": "2399ba29-713e-4f7b-b54b-b0dcfa204a99",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "83f0c6cb-7b2f-4bd6-a8eb-5c844d9121c9",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "ed3caf54-4bde-45b8-88f9-636854ec0b4f",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "c1c877bb-f0dc-4b31-8d9f-6e604762ef38",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "69932b82-e918-482e-8d8f-a8d117134959",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "4ba21f47-0ca5-496e-b281-dc16809520a8",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "b5f0efea-eb6b-4360-a6a8-bf5483257718",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "1835b561-0e2d-4eb2-913c-e61afef50021",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "44f6791f-cc4a-4180-9d26-891c8ef96c58",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "aa007b48-38c7-4b1b-9308-70015b879eba",
+      "result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4"
+    },
+    {
+      "claim_id": "bc0e8498-1788-4b1a-b42c-c4aa79bdf97c",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "94e0d43f-a0d5-4ba0-a2c6-8450132b72fd",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "1f57eee0-c81d-452a-90d3-49673f180c40",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "868386da-e871-4001-8834-28d75ca53cc1",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "7d34e200-f434-40c2-bc18-55f1eb1a5c02",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "ad355437-1a97-491c-b991-272963844925",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "83dcdc29-bc56-44d8-96af-1ca04a3c0470",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "63f9e8ff-1f4b-4d91-8f88-2e762c08ac60",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "e5a95635-dd75-45ff-a4fa-beb93c71994e",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "d21ba9c8-ed1d-4462-b96c-8faf9ea5ef30",
+      "result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf"
+    },
+    {
+      "claim_id": "32146f07-b752-4bbf-a8cf-f3201bf9ec31",
+      "result_id": "a7fd1fae-6725-44a5-ba46-fc1a70205e05"
+    },
+    {
+      "claim_id": "84be90fc-d957-44b0-a94a-e17cf5224712",
+      "result_id": "a7fd1fae-6725-44a5-ba46-fc1a70205e05"
+    },
+    {
+      "claim_id": "2bd19a76-8c3f-4d15-b94b-4e327b11ac37",
+      "result_id": "a7fd1fae-6725-44a5-ba46-fc1a70205e05"
+    },
+    {
+      "claim_id": "32267bcc-0718-4fc8-9573-a5ce00cd714a",
+      "result_id": "a7fd1fae-6725-44a5-ba46-fc1a70205e05"
+    },
+    {
+      "claim_id": "6b359d4e-5156-49f3-8178-b1b58fae6001",
+      "result_id": "a7fd1fae-6725-44a5-ba46-fc1a70205e05"
+    },
+    {
+      "claim_id": "e52dbf14-9651-45a3-93e7-cdcd577ce3d6",
+      "result_id": "a7fd1fae-6725-44a5-ba46-fc1a70205e05"
+    },
+    {
+      "claim_id": "60993191-1e4a-46e1-b5ef-1a1d6196bf46",
+      "result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5"
+    },
+    {
+      "claim_id": "d1bdadd3-fb74-4f98-9e4e-c9a81253f415",
+      "result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5"
+    },
+    {
+      "claim_id": "a8facb22-425b-4c6b-8604-12dc6884d2db",
+      "result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5"
+    },
+    {
+      "claim_id": "a937edd3-ef8d-4fa0-9b7f-ae55fa5cb18c",
+      "result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5"
+    },
+    {
+      "claim_id": "675501ce-8d11-4ba8-b4ef-bce696decd1c",
+      "result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5"
+    },
+    {
+      "claim_id": "bd984e3c-cf20-4c38-9e29-d38ec87851d1",
+      "result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5"
+    },
+    {
+      "claim_id": "bc80b61d-1d7e-47da-8529-ccbe5c9e8693",
+      "result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5"
+    },
+    {
+      "claim_id": "6804c461-a79f-43d4-a263-e0199325d582",
+      "result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5"
+    },
+    {
+      "claim_id": "47cedff8-f3fc-4abb-8556-27fb378c6919",
+      "result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5"
+    },
+    {
+      "claim_id": "bb791495-63a1-45e7-8618-8b477fb728b5",
+      "result_id": "de5d9ea4-80da-46f3-99b2-98176e6a0275"
+    },
+    {
+      "claim_id": "922487b0-9e43-46ad-a18b-fa242f49a290",
+      "result_id": "de5d9ea4-80da-46f3-99b2-98176e6a0275"
+    },
+    {
+      "claim_id": "b9063fd7-b0a8-44e8-834d-4b98c2ae1692",
+      "result_id": "de5d9ea4-80da-46f3-99b2-98176e6a0275"
+    },
+    {
+      "claim_id": "2892e161-fb11-416a-acd5-0108d6a374e2",
+      "result_id": "de5d9ea4-80da-46f3-99b2-98176e6a0275"
+    },
+    {
+      "claim_id": "fa387bb0-50fe-4a2d-8333-db01f586a571",
+      "result_id": "de5d9ea4-80da-46f3-99b2-98176e6a0275"
+    },
+    {
+      "claim_id": "44bc9d7d-3ae4-4284-ab4d-87aeb29c5b8c",
+      "result_id": "de5d9ea4-80da-46f3-99b2-98176e6a0275"
+    },
+    {
+      "claim_id": "e3e89524-43e9-4eab-ac7e-c6e8de4cce0f",
+      "result_id": "de5d9ea4-80da-46f3-99b2-98176e6a0275"
+    },
+    {
+      "claim_id": "496a3f45-e2c0-465f-955a-e1dc1635d8c1",
+      "result_id": "8fd64a0f-71a5-4305-a07d-761e90a05b50"
+    },
+    {
+      "claim_id": "b9d375bf-9ba7-4464-8f81-8ca2c797626c",
+      "result_id": "8fd64a0f-71a5-4305-a07d-761e90a05b50"
+    },
+    {
+      "claim_id": "f91a4354-bb29-4913-9772-7e151ba19f32",
+      "result_id": "8fd64a0f-71a5-4305-a07d-761e90a05b50"
+    },
+    {
+      "claim_id": "596f5295-b1f5-4a16-8716-e0c5b3f6fdd0",
+      "result_id": "e2d60dde-521a-4e2e-b70e-fb119730de87"
+    },
+    {
+      "claim_id": "38d41798-8960-40fc-9b65-8f02cb829d4f",
+      "result_id": "e2d60dde-521a-4e2e-b70e-fb119730de87"
+    },
+    {
+      "claim_id": "aaee7588-bebb-4121-adf4-d446f32c6eb9",
+      "result_id": "e2d60dde-521a-4e2e-b70e-fb119730de87"
+    },
+    {
+      "claim_id": "6ba787cb-9ae2-4ba8-a469-e28d9129d55f",
+      "result_id": "e2d60dde-521a-4e2e-b70e-fb119730de87"
+    },
+    {
+      "claim_id": "18aff061-d6e8-4de4-893e-46bc19164a4a",
+      "result_id": "c31a3076-41c3-44da-963a-a3c1ee25276d"
+    },
+    {
+      "claim_id": "ac1efab6-afeb-4c02-9a5b-b6cc4228f0e7",
+      "result_id": "c31a3076-41c3-44da-963a-a3c1ee25276d"
+    },
+    {
+      "claim_id": "87c16f5d-ba42-4339-96bf-8397ceb72168",
+      "result_id": "c31a3076-41c3-44da-963a-a3c1ee25276d"
+    },
+    {
+      "claim_id": "d0409ec2-055b-4164-9b8b-41a80e7443ac",
+      "result_id": "10753b4f-d42d-4ce8-b50a-2ee0c8105145"
+    },
+    {
+      "claim_id": "cafcf650-1cb8-459a-901b-ec6ff4baa28b",
+      "result_id": "10753b4f-d42d-4ce8-b50a-2ee0c8105145"
+    },
+    {
+      "claim_id": "2c6ee56b-7113-4555-8dd1-b661853f3609",
+      "result_id": "10753b4f-d42d-4ce8-b50a-2ee0c8105145"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "6ce3e7c8-7d77-43a9-9b46-dc6625a9e1a2",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "10e9157c-13f9-4583-ba6c-15dc79d26ae9",
+      "peer_result_id": "8fd64a0f-71a5-4305-a07d-761e90a05b50",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C28-C30 regarding brain temperature and LFP measurements. Both evaluations find these control experiments SUPPORTED with solid methodology, confirming no confounding physiological changes from the behavioral paradigm.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "c5027186-a19f-4a85-83b2-979af59dde66",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "fbb9eeb6-5c2d-494a-8917-8f9b817b6e10",
+      "peer_result_id": "e2d60dde-521a-4e2e-b70e-fb119730de87",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C31-C34 regarding place field stability and remapping. Both evaluations find the spatial firing pattern analysis SUPPORTED with appropriate statistical testing and interpretation consistent with established literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "e2ed1201-6073-41f4-95d5-67d9115eeece",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "7cab8aba-f9a6-4cca-b7cf-181428b4f1cf",
+      "peer_result_id": "f8a705d3-c4fc-43c5-ade3-4cbed0e924cf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on behavioral data (C20-C27, C55-C56). Both evaluations find the quantitative behavioral measurements SUPPORTED with solid methodology. OpenEval additionally addresses C4, C54 which peer review includes in R1.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "c9cf07a0-dafe-4012-9eec-0f8efcf2c09d",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "6754c17f-a2aa-4dd2-8cde-53da3105f1f1",
+      "peer_result_id": "a7fd1fae-6725-44a5-ba46-fc1a70205e05",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on SPW-R characterization (C35-C39). Both evaluations find the data SUPPORTED with solid methodology. Both acknowledge the spatial distribution analysis and frequency differences, though OpenEval notes the frequency interpretation remains somewhat speculative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "845555ad-3197-477a-a7e0-a3600fa83bcf",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "e015bd22-2e44-492d-a4f9-8b1b226c82f4",
+      "peer_result_id": "98f72171-bfcf-482c-93f3-2813f8fadee5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on spatial coding during SPW-Rs (C40-C47). OpenEval finds claims SUPPORTED with comprehensive analysis, while peer review rates UNCERTAIN, suggesting additional analysis needed to fully support conclusions about place cell properties during SPW-Rs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "aa8c3be8-8d11-45d9-9403-2a10ec809043",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "0919d2f0-9cc3-4857-8e3b-68ba56f221f7",
+      "peer_result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on ThermoMaze apparatus design and validation (C13-C19, C73, C3). Both evaluations find the technical specifications and construction SUPPORTED. Peer review additionally includes behavioral claims C4-C5, C54 in this result, while OpenEval addresses these separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "ab5ab67d-a54b-4775-8832-fd19502ec331",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "a46aec86-57cd-43a0-b303-15ccec848548",
+      "peer_result_id": "c31a3076-41c3-44da-963a-a3c1ee25276d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on sleep characterization (C48-C49, C53). Both find these basic sleep pattern observations SUPPORTED. However, OpenEval's R7 also addresses C50-C52 about spatial coding persistence, which peer review evaluates separately in R5 as UNCERTAIN.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "4beeee8a-e1d6-4474-a8fe-c97ee4cf5e3a",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1",
+      "peer_result_id": "10753b4f-d42d-4ce8-b50a-2ee0c8105145",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on mechanistic interpretations (C68-C70). Both evaluations rate these speculative explanations as UNCERTAIN, acknowledging they represent competing hypotheses requiring further investigation. OpenEval's R8 also includes C57, C63-C67 which peer review addresses in R5.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "90919db6-59fb-4335-99b4-e14d1a9e7f92",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "a46aec86-57cd-43a0-b303-15ccec848548",
+      "peer_result_id": "de5d9ea4-80da-46f3-99b2-98176e6a0275",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on spatial coding persistence (C50-C52). OpenEval finds these claims SUPPORTED despite smaller sample size, while peer review rates UNCERTAIN, suggesting the evidence for continuity across brain states requires further support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "6f8efae8-0349-4eb6-b2f2-170ed548b7f5",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d2b790ff-b3bd-4be0-a6e4-4462aad3b7f1",
+      "peer_result_id": "de5d9ea4-80da-46f3-99b2-98176e6a0275",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C57, C66-C67 regarding weakening correlations during sleep. OpenEval rates UNCERTAIN due to competing mechanistic explanations, while peer review also rates UNCERTAIN, emphasizing need for more in-depth analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "8ec74549-81b7-4953-96d9-978f66ab3ff5",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "d3f77428-7e19-49f0-b66e-63d495b2b503",
+      "peer_result_id": "5c295f89-a04a-4cd6-b9bb-36df302dfce4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval separately evaluates the ThermoMaze-Morris water maze comparison (C5) as SUPPORTED, while peer review includes this claim within their broader apparatus validation result R1, also rated SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "eaa4bcb4-c81d-471f-9ebe-1f0d7e15606b",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "852fa542-c8f0-4746-93c0-db28639ccca5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims C1-C2, C8-C11 as SUPPORTED prior knowledge. No corresponding peer review result found, as reviewers focused on novel findings rather than background literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "a4eab39c-b589-4145-aec8-6454055caf03",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "efeac8e3-2b01-4680-ae1f-8773e87e4073",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates thermoregulation background claims C12, C58-C62 as SUPPORTED prior knowledge. No corresponding peer review result found, as reviewers did not separately assess background literature claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    },
+    {
+      "id": "4fe23647-3021-4d4c-ba81-34efdd178ec3",
+      "submission_id": "5065a1ca-5aa5-4442-86d9-b1fb5a8e2197",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "56e2bc5a-bb8f-40f9-aaf6-ce7e18295dca",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates methodological documentation claims C71-C72, C74-C76 regarding ethics approval and sample sizes as SUPPORTED. No corresponding peer review result found, as reviewers did not separately assess these procedural claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:35:59.504193Z"
+    }
+  ]
+}

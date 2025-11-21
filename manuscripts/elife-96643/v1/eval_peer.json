@@ -1,0 +1,130 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "PPI-hotspotID outperforms FTMap and SPOTONE in detecting PPI-hot spots, achieving higher sensitivity (0.67 vs. 0.07/0.10) and F1 scores (0.71 vs. 0.13/0.17). The methods show substantial overlap in true positives, with FTMap sharing 23/30 and SPOTONE sharing 34/40 true positives with PPI-hotspotID.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenge the comparison with FTMap, stating that 'the authors misinterpret the article they refer to' and that 'FTMap identifies hot spots that bind small molecular ligands,' not the PPI-hot spots defined by the authors. The reviewer concludes 'the comparison of the FTMap is invalid,' directly refuting the claimed superior performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C69",
+      "C72",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PPI-hotspotID is presented as a novel method using free protein structures, validated on the largest dataset of experimentally confirmed PPI-hot spots (414 hot spots, 504 non-hot spots). The method uses four key features: conservation, amino acid type, SASA, and gas-phase energy, with the gas-phase energy being a novel feature introduced in this study.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the web server as 'a potentially useful contribution,' they challenge the novelty claim, stating 'this approach has been used in the literature for more than a decade' and citing 'dozens of papers that describe such a methodology.' The validation dataset size is not directly questioned, but the fundamental novelty of the approach is disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Experimental validation on eukaryotic elongation factor 2 (eEF2) confirmed PPI-hotspotID predictions. The F794A mutation, predicted with highest probability (0.67), abolished eEF2-CPEB2 binding and selectively increased HIF-1\u03b1 levels without affecting general protein synthesis, demonstrating specific effects on CPEB2-targeted translation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the experimental validation results for eEF2. The experimental data in Figure 2 showing the F794A mutation effects are presented without reviewer criticism, suggesting implicit acceptance of these findings as valid experimental support for the method's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "PPI-hotspotID can identify noninterface PPI-hot spots that lack direct contact with binding partners. Among 243 true PPI-hot spots in 74 proteins with complex structures, 67 (27.6%) lacked hydrogen bonds or vdW contacts across the interface. PPI-hotspotID predicted 43 of these noninterface hot spots, while SPOTONE identified only 5 and FTMap identified none.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data on noninterface hot spots is not directly challenged, the comparison with FTMap is invalidated by reviewers who state that FTMap 'identifies hot spots that bind small molecular ligands' rather than PPI-hot spots. This undermines the comparative claims about detecting noninterface residues, though the underlying observation about noninterface hot spots may still be valid.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Combining PPI-hotspotID with AlphaFold-Multimer-predicted interface residues improved performance over either method alone for 48 unsolved complex structures, achieving sensitivity of 0.70 and F1 score of 0.72 compared to 0.58/0.66 for PPI-hotspotID alone and 0.41/0.54 for AlphaFold-Multimer alone.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the AlphaFold-Multimer comparison or the combined approach results. The data in Table 2 showing improved performance when combining methods is presented without reviewer criticism, suggesting acceptance of this complementary analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PPI-hotspotID correctly predicted all four experimentally known GCP60 PPI-hot spots, including F19 and Y46 which do not form hydrogen bonds across the interface with PI4K-\u03b2 but maintain the binding scaffold through van der Waals contacts with interface residues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the GCP60 example or the structural analysis shown in Figure 3. This case study demonstrating detection of noninterface hot spots is presented without reviewer criticism, suggesting acceptance of this illustrative example.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "PPI-hotspotID predicted G128 as a PPI-hot spot in CRADD, which is not apparent from the complex structure as it lacks direct PIDD contacts. Structural analysis suggests the G128R mutation disrupts the CRADD-CRADD interface, and experimental data confirms this mutant fails to co-immunoprecipitate PIDD and is associated with non-syndromic mental retardation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the CRADD/PIDD example or the mechanistic interpretation shown in Figure 4. This case study demonstrating the method's ability to identify non-obvious hot spots is presented without reviewer criticism, suggesting acceptance of this analysis.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,269 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Loss of Foxg1 in cortical progenitors at E14.5 or E15.5 causes premature astrogliogenesis, with mutant cells expressing astrocyte markers (ALDH1L1) instead of neuronal markers (NEUN). However, loss of Foxg1 at E13.5 does not impede neurogenesis, suggesting a temporal window for this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 provide quantitative data from multiple timepoints (E13.5, E14.5, E15.5) showing that Foxg1 loss at E14.5/E15.5 results in premature gliogenesis (56% ALDH1L1+ vs 16% in controls), while E13.5 loss does not. The temporal specificity and quantitative measurements support this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The premature gliogenesis upon Foxg1 loss results from a cell fate switch in progenitors rather than overproliferation of astrocytes or neuronal death. MADM experiments show that Foxg1 mutant progenitors produce 83.3% glia vs 38.1% in controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 provide multiple lines of evidence: no difference in KI67 (proliferation) or Cleaved Caspase 3 (cell death), increased NFIA (gliogenic marker), decreased TBR2 (neurogenic marker), and MADM lineage tracing showing altered cell fate ratios. These converging data support a fate switch mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Fgfr3 is identified as a novel FOXG1 target that is suppressed by FOXG1 to maintain neurogenesis. Loss of Foxg1 leads to upregulation of Fgfr3 and activation of the MAPK/ERK pathway, with increased nuclear phospho-ERK1/2 levels. Endogenous FOXG1 levels decrease from E15.5 to E18.5, suggesting a mechanism for gliogenesis initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 provide multimodal evidence: RNA-seq showing Fgfr3 upregulation, ChIP-seq showing FOXG1 binding at Fgfr3 regulatory regions, epigenetic marks indicating bivalent chromatin, KEGG pathway analysis identifying MAPK/ERK, and immunohistochemistry confirming increased FGFR3 and nuclear pERK1/2. The convergence of transcriptomic, epigenomic, and protein-level data strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "FOXG1 overexpression is sufficient to cell-autonomously suppress FGF8-induced premature gliogenesis. While FGF8 alone induces 85% of cells to become astrocytes, co-expression with Foxg1 partially rescues neuronal fate (74% NEUN+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 provide gain-of-function experiments showing that Foxg1 overexpression can counteract FGF8-induced gliogenesis. The quantitative data (85% glia with FGF8 alone vs 74% neurons with Foxg1+FGF8) demonstrate FOXG1's sufficiency to suppress FGF signaling effects. This is consistent with the loss-of-function data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "FOXG1 in postmitotic neurons regulates expression of gliogenic cues (including Fgf18) that non-autonomously enhance gliogenesis in progenitors via FGF-ERK signaling. NexCre-driven loss of Foxg1 in neurons increases SOX9 levels in ventricular zone progenitors and nuclear pERK1/2, effects that are abolished by FGF inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 provide evidence for a non-autonomous role: transcriptomic analysis showing Fgf18 upregulation in neurons lacking Foxg1, increased SOX9 and pERK1/2 in progenitors when neurons lack Foxg1, and pharmacological rescue with FGF inhibitor. The combination of cell-type-specific genetic manipulation and pharmacological validation supports this non-autonomous mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C85",
+      "C86"
+    ],
+    "result": "Attenuation of FGF signaling in Foxg1 null progenitors does not restore neurogenesis but instead causes premature oligodendrocyte production. Co-electroporation of sFgfr3c with Cre in Foxg1lox/lox embryos shifts cell fate toward OLIG2+/PDGFRA+ OPCs rather than neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 and C85-C86 demonstrate that reducing FGF signaling in Foxg1 mutant progenitors produces OPCs instead of restoring neurogenesis. The data show that FOXG1 is essential for neuronal production regardless of FGF levels, and that the progenitor fate depends on both FOXG1 and FGF signaling levels. The pERK1/2 measurements confirm functional FGF pathway modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C68",
+      "C69",
+      "C70",
+      "C89",
+      "C90"
+    ],
+    "result": "Loss of FOXG1 transitions progenitors to a gliogenic state, producing either astrocytes or oligodendrocytes depending on FGF signaling levels. FOXG1 integrates production and receptivity to extrinsic FGF signals to regulate sequential generation of neurons, astrocytes, and oligodendrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C68-C70, C89-C90 synthesize the major findings into a unified model. The experimental data from multiple approaches (loss-of-function, gain-of-function, FGF manipulation, cell-type-specific deletions) converge to support this integrative model of FOXG1 function in coordinating cell-intrinsic and cell-extrinsic mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C87",
+      "C88"
+    ],
+    "result": "Prolonged Foxg1 expression extends the neurogenic potential of progenitors at the expense of gliogenesis. Overexpression of Foxg1 at E15.5 increases neuronal production to 98% compared to 67% in controls, and FOXG1 is necessary and sufficient for neuronal fate regardless of FGF signaling levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C87-C88 provide gain-of-function data showing that Foxg1 overexpression enhances neurogenesis and suppresses gliogenesis. Combined with the loss-of-function and FGF manipulation experiments, these data establish FOXG1 as both necessary and sufficient for maintaining neuronal fate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Foxg1 mutant progenitors undergo a switch to producing astroglia rather than simply accelerating to the next neuronal subtype. The temporal competence of progenitors is stage-dependent, as E13.5 progenitors do not show premature gliogenesis upon Foxg1 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 interpret the experimental findings to distinguish between acceleration of normal developmental progression versus a class switch. The observation that E14.5/E15.5 progenitors produce glia (not just different neuronal subtypes) and that E13.5 progenitors do not respond similarly supports the concept of temporal competence windows.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "In the developing vertebrate CNS, neurons and glia arise sequentially from common progenitors, with the temporal sequence of neurogenesis, astrogliogenesis, and oligogenesis conserved in the mammalian neocortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C12 establish the background knowledge supported by citations to previous literature. These are well-established facts in the field that provide context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Pro-gliogenic mechanisms include cell-intrinsic transcription factors (Nr2f1/2, Zbtb20, Sox9, Nfia, Sox10), the Notch pathway, and cell-extrinsic cues (interleukins, growth factors including FGFs) acting via Jak/Stat or Mek/Mapk signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 summarize established knowledge from the literature about pro-gliogenic mechanisms. These are well-supported by citations and provide the scientific context for investigating FOXG1's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C71"
+    ],
+    "result": "FOXG1 plays a fundamental role in cerebral cortex development and is a well-established regulator of sequential neuronal subtype production. Foxg1 haploinsufficiency in humans causes FOXG1 syndrome, an autism spectrum disorder, and dysregulation has been implicated in glioblastoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 and C71 establish the known roles of FOXG1 from previous literature. These are well-documented facts supported by citations that motivate the current investigation into FOXG1's role in gliogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C72",
+      "C73"
+    ],
+    "result": "Previous studies showed that FOXG1 overexpression in vitro decreases gliogenesis, but Foxg1 knockdown did not cause significant gliogenesis, leaving the endogenous role unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C72-C73 accurately describe limitations of previous studies based on cited literature. This establishes the gap in knowledge that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Cortical progenitors express Fgfr1/2/3 from early stages with increasing levels during gliogenesis. FGF signaling has roles in cortical patterning, axon guidance, neurogenesis, and neuronal migration. Postmitotic neurons provide feedback cues to progenitors, and Foxg1 expression is dynamically downregulated in migrating neuronal precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 and C80-C84 summarize established knowledge from the literature about FGF signaling and neuron-progenitor interactions. These are well-supported by citations and provide context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "A decline in FGFs available to progenitors may initiate OPC production in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C91 is explicitly labeled as speculation in the evidence. While consistent with the experimental findings showing that reduced FGF in Foxg1 mutants leads to OPC production, this represents a hypothesis about the endogenous mechanism rather than a directly demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "FOXG1 syndrome results from gain- or loss-of-function mutations and includes microcephaly, seizures, and potential glioblastoma or myelination deficits. The current findings offer mechanistic insights into potentially novel deficits underlying FOXG1 syndrome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 are supported by citations, but C94 is speculative about clinical implications. While the experimental findings provide mechanistic insights into FOXG1 function, the direct relevance to human FOXG1 syndrome pathophysiology requires further validation.",
+    "result_type": "MINOR"
+  }
+]

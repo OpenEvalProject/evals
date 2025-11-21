@@ -1,0 +1,350 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "CLA treatment significantly increased triglyceride (TG) content and decreased total cholesterol (TC) content in longissimus dorsi muscle (LDM) of Heigai pigs, with increased lipid droplet accumulation confirmed by immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence from biochemical assays (C1, C2) and immunofluorescence imaging (C3) showing CLA effects on lipid content. The data are internally consistent and support the conclusion that CLAs increase intramuscular fat deposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Single-nucleus RNA-seq analysis of 25,507 cells identified eight cell types in pig muscle, with CLA treatment increasing proportions of FAPs/fibroblasts, ECs, adipocytes, myeloid-derived cells, and pericytes while decreasing myofiber proportion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C11 describe the snRNA-seq experimental design and cell type identification with marker genes (C5), followed by quantitative changes in cell proportions (C6-C11). The methodology appears sound and the proportional changes are internally consistent, though statistical significance testing is not explicitly mentioned for all comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "CLA treatment upregulated expression of mature adipocyte genes (ADIPOQ, FABP4, PLIN1, LIPE), adipogenic markers (PPARG, PPARA, CEBPA, CEBPB), and lipid metabolism genes (LPL, ELOVL4, ACAA2, HACD2) in pig muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 report gene expression changes from snRNA-seq data shown in violin plots. The upregulation of multiple adipogenic and lipid metabolism genes is consistent with the observed increase in lipid deposition, providing molecular support for the phenotypic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Six myofiber subtypes were identified (I, IIA, IIX, IIB, MTJ, NMJ), with CLA treatment increasing proportions of type I and IIA myofibers while decreasing IIX, IIB, MTJ, and NMJ proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15-C21 describe myofiber subtype identification and proportional changes. However, the dramatic decreases in MTJ (6.41% to 0.28%) and NMJ (5.32% to 0.09%) proportions are unexpectedly large and may reflect technical artifacts in cell isolation or classification rather than biological effects. The authors describe these as 'tendencies' without statistical testing, raising concerns about reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "CLA treatment increased expression of myofiber-type markers (MYH7, MYH2, MYH1, MYH4), transformation-related genes (PPARGC1A, STK11, HDAC1), and oxidation-related genes (COX5A, COX5B, COX8A) while decreasing glycolysis genes (PFKM, HK2, LDHC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 report gene expression changes from snRNA-seq and qPCR validation. The coordinated upregulation of oxidative metabolism genes and downregulation of glycolytic genes is consistent with a shift toward oxidative fiber types, though this appears contradictory to claim C29.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "KEGG pathway analysis revealed enrichment of metabolic pathways, oxidative phosphorylation, and thermogenesis in type I myofibers, and calcium, cGMP-PKG, and MAPK signaling in type IIB myofibers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 report pathway enrichment results that are biologically plausible given the known metabolic differences between slow oxidative (type I) and fast glycolytic (type IIB) muscle fibers. The analysis appears appropriate for the data type.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "CLAs promote slow oxidative myofibers to switch into fast glycolytic myofibers in pig muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C29 contradicts the data presented in C16-C26, which show increases in type I and IIA (oxidative) fibers and upregulation of oxidative metabolism genes. The claim appears to be a typographical error stating the opposite of what the data support. The evidence actually suggests CLAs promote fast-to-slow fiber type transformation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Three adipocyte subpopulations were identified (SCD+/DGAT2+, FABP5+/SIAH1+, PDE4D+/PDE7B+), with CLA treatment increasing SCD+/DGAT2+ adipocyte proportion from 79.37% to 82.31% and decreasing PDE4D+/PDE7B+ proportion from 14.81% to 11.19%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 describe adipocyte subpopulation identification and proportional changes. The relatively modest changes in proportions (2.94% increase and 3.62% decrease) are plausible, though statistical significance and biological relevance of these small shifts could be better established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "CLA treatment increased expression of SCD+/DGAT2+ markers (SCD, ARHGAP31) and FABP5+/SIAH1+ markers (SIAH1, COX1) while decreasing PDE4D expression, confirmed by qPCR and immunofluorescence showing increased SCD1+ adipocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 provide converging evidence from snRNA-seq, qPCR, and immunofluorescence for marker gene expression changes. The multi-modal validation strengthens confidence in the findings, though the simultaneous increase in both SCD+/DGAT2+ and FABP5+/SIAH1+ markers while decreasing PDE4D+ markers is consistent with the proposed differentiation trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C46",
+      "C47"
+    ],
+    "result": "RNA velocity analysis indicates that PDE4D+/PDE7B+ and FABP5+/SIAH1+ adipocytes can differentiate into SCD+/DGAT2+ adipocytes, with FABP5+/SIAH1+ also serving as an intermediate state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C39, C46, C47 describe differentiation trajectories inferred from RNA velocity analysis. While RNA velocity is a useful computational tool, it provides predictions rather than direct evidence of differentiation. The claims would be strengthened by lineage tracing experiments or time-course studies to validate the proposed trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49"
+    ],
+    "result": "Analysis of high IMF Laiwu pigs confirmed higher proportions of SCD+/DGAT2+ adipocytes and lower PDE4D+/PDE7B+ adipocytes, with pseudotemporal trajectory showing PDE4D+/PDE7B+ cells differentiate into both SCD+/DGAT2+ and FABP5+/SIAH1+ lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C49 use an independent pig model to validate the adipocyte subpopulation findings. The consistency between Heigai and Laiwu pig models strengthens the generalizability of the results. The enrichment of preadipocyte markers in PDE4D+/PDE7B+ cells (C44) and mature markers in other populations (C45) supports the proposed differentiation hierarchy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Cell-cell communication analysis revealed that adipocytes interact primarily with FAPs/fibroblasts, ECs, and pericytes through pathways including LRP6, FGFR1, COL4A2 (Heigai pigs) and COL6A3, LAMC1, THBS1 (Laiwu pigs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 report cell-cell interaction analysis using CellPhoneDB. The identification of FAPs/fibroblasts as key interaction partners is biologically plausible given their role as adipocyte progenitors. However, the different pathways identified in the two pig models (C51 vs C53) may reflect breed-specific differences or technical variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Three FAP/fibroblast subpopulations were identified (FAPs, fibroblasts, PDE4D+/PDE7B+), with CLA treatment showing altered proportions among these populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C56-C58 contain contradictory statements about proportional changes. C56 states FAPs increased from 70.40% to 37.06% (actually a decrease), C57 states PDE4D+/PDE7B+ increased from 4.11% to 2.18% (actually a decrease), and C58 states fibroblasts decreased from 25.49% to 60.76% (actually an increase). These appear to be errors in claim extraction or manuscript text, making the results uninterpretable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PDE4D+/PDE7B+ FAP subclusters showed enrichment of calcium and cGMP-PKG signaling pathways, while CLA treatment upregulated preadipocyte markers (CD38, CD34), adipogenic genes (ADIPOQ, FABP4, PLIN1, LIPE, CEBPA), and lipid metabolism genes (LPL, ELOVL4, ACAA2, HACD2) in FAPs/fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe pathway enrichment and gene expression changes in FAP populations. The upregulation of both preadipocyte and mature adipocyte markers suggests CLA promotes adipogenic differentiation of FAPs, consistent with the overall study conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Pseudotemporal trajectory and in vitro differentiation studies show FAPs differentiate into PDE4D+/PDE7B+ preadipocytes, with expression of FABP4, ADIPOQ, SCD, DGAT2 increasing and PDE4D decreasing during adipogenic differentiation, while FABP5 and SIAH1 show transient upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 combine computational trajectory analysis with in vitro validation experiments. The temporal expression patterns of marker genes during FAP differentiation (C65-C67) provide strong support for the proposed differentiation trajectory, with the transient FABP5/SIAH1 expression (C67) suggesting an intermediate state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "In vitro experiments demonstrate that CLA treatment promotes FAP adipogenic differentiation after 8 days, with increased expression of SCD, SIAH1, and adipogenic genes (FABP4, PPARG, FASN) at mRNA and protein levels, while decreasing PDE4D expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 provide in vitro validation of CLA effects on FAP differentiation using multiple assays (Nile Red staining, OD490, qPCR, western blot). The multi-modal approach and consistency across measurements strengthen confidence in the pro-adipogenic effect of CLAs on FAPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "MAPK signaling pathways are enriched in SCD+/DGAT2+ adipocytes, with CLA treatment decreasing JNK phosphorylation during FAP differentiation. JNK activator anisomycin reverses CLA-induced adipogenic differentiation, suggesting CLAs promote FAP differentiation into SCD+/DGAT2+ adipocytes via JNK pathway inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 establish a mechanistic link between CLA treatment and adipogenic differentiation through JNK signaling. The pathway enrichment (C74), decreased JNK phosphorylation (C75), and rescue experiments with anisomycin (C76-C80) provide strong evidence for the proposed mechanism. However, the specificity of anisomycin effects and potential off-target effects are not addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Background claims establish that IMF deposition affects meat quality, multiple cell types contribute to muscle lipid deposition, nutritional strategies can regulate muscle lipid accumulation, pigs serve as models for human biology, and prior work showed CLAs increase IMF content in pigs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C99 provide literature context and cite appropriate references. These background claims establish the rationale for the study and are generally well-supported by the cited literature, though the accuracy of individual citations was not independently verified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background on muscle fiber types and CLA effects: slow fibers have higher oxidative metabolism while fast fibers have higher glycolytic activity; prior studies show CLAs can increase oxidative fiber types and prevent sarcopenia; PGC1\u03b1 regulates muscle fiber-type transformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 provide relevant background on muscle fiber biology and prior CLA studies, appropriately cited. These claims establish context for interpreting the myofiber results in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Background on FAPs and signaling: FAPs are major sources of IMF cells and serve as cellular interaction hubs; trans-10,cis-12 CLAs inhibit C2C12 and 3T3-L1 differentiation; CLAs upregulate Scd1 in mouse muscle; SCD1 is modulated by mTOR; JNK negatively regulates adipogenic differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 provide relevant mechanistic background appropriately cited. The prior findings on JNK's negative regulation of adipogenesis (C112) directly support the mechanistic hypothesis tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Experimental design: 56 Heigai pigs (85.58\u00b110.39 kg) were randomly divided into control (1% soybean oil) and CLA (1% CLAs) groups for 40 days (5 days pre-feeding, 35 days formal test).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 describe the experimental design clearly. The sample size (n=56 total, presumably 28 per group), randomization, and treatment duration are appropriate for this type of study. However, the number of animals used for each specific analysis is not always clearly stated.",
+    "result_type": "MINOR"
+  }
+]

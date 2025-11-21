@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "NPCs cultured for several passages (up to passage 7) showed increased expression of neural markers Pax6 and Sox1 and loss of pluripotent marker Oct4, confirming successful differentiation from hPSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C14 are supported by Western blot data shown in Figure 1C. The data demonstrate expected marker changes during neural differentiation, providing validation of the NPC model system used in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Early NPC differentiation (2 hr treatment) results in a global increase in protein synthesis as measured by puromycin incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 are supported by Western blot data in Figure 1D and supplementary figures showing significantly increased puromycin incorporation in differentiated vs undifferentiated NPCs. This establishes the translational burst that is central to the study's focus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "eIF3 crosslinks to highly similar sets of mRNAs in differentiated and undifferentiated NPCs (449 of top 500 in common), enriched for neurologically-relevant processes, but with minimal overlap with previous studies in HEK293T and Jurkat cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 are supported by computational analysis of Quick-irCLIP data and STRING database analysis (Figure 1I and Figure 1\u2014figure supplement 2). The cell-type specificity is well-documented, though the lack of overlap may be partially confounded by different crosslinking methods (Quick-irCLIP vs PAR-CLIP).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "In NPCs, eIF3 predominantly crosslinks to mRNAs (>90%) and primarily interacts with 3'-UTRs rather than CDS or 5'-UTRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 are supported by Quick-irCLIP data shown in Figures 1J and 1K. This represents a key finding that differs from canonical eIF3 function at 5'-UTRs and forms the basis for subsequent mechanistic investigations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "eIF3 crosslinks at 3'-UTR termini adjacent to poly(A) tails and polyadenylation signals (PAS), with 55-58% of 3'-UTR crosslinks mapping to regions enriched in the canonical AAUAAA PAS sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are supported by Quick-irCLIP data (Figure 2A-B) and HOMER motif analysis (Figure 2C). The enrichment of AAUAAA motifs at crosslinking sites provides strong evidence for eIF3 localization near polyadenylation sites, though the mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C43",
+      "C49"
+    ],
+    "result": "eIF3 crosslinking peaks in 3'-UTRs colocalize with APA-Seq peaks at 3'-UTR termini of multiple mRNA isoforms, upstream of poly(A) tails.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40, C43, and C49 are supported by comparison of Quick-irCLIP and APA-Seq data (Figure 2D). The colocalization provides strong evidence that eIF3 binds near polyadenylation sites, validating the interpretation of irCLIP peaks as 3'-UTR termini.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "eIF3 exhibits differential crosslinking levels to 3'-UTR termini of various isoforms with similar expression levels, showing isoform-specific binding preferences (e.g., preferential binding to distal S100B isoform vs proximal APP isoform).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by integrated Quick-irCLIP and APA-Seq data (Figure 2D). This suggests eIF3 binding may be regulated beyond simple abundance, though the molecular basis for isoform selectivity is not explored and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "eIF3 interacts with ID2 mRNA 3'-UTR terminus only upon NPC differentiation, suggesting eIF3 3'-UTR interactions correlate with active translation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 is supported by Quick-irCLIP data (Figure 3A), and C52 is a citation. However, C53 is an inference that requires validation. While the correlation is suggestive, causality and mechanism are not established. The hypothesis needs testing through ribosome profiling or other direct translation measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "ID2 shows one of the highest increases in both RPFs and mRNA levels upon NPC differentiation (>5-fold RPF increase, ~15-fold mRNA increase), with increased eIF3 crosslinking to its 3'-UTR terminus correlating with this translational activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by ribosome profiling data (Figure 3B-C), Western blots (Figure 3D), and Quick-irCLIP data. The correlation between eIF3 3'-UTR binding and translation is well-documented for ID2, though the large increase in mRNA levels complicates interpretation of translational vs transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "At a global level, mRNAs with higher eIF3 crosslinking at 3'-UTR termini exhibit higher ribosome occupancy in both differentiated and undifferentiated NPCs, with the most actively translated mRNAs (e.g., EEF1A, ACTB) showing highest eIF3 crosslinking levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62, C82-C84 are supported by integrated Quick-irCLIP and ribosome profiling data (Figures 3E-F). The positive correlation (Spearman Rho ~0.485-0.495) between 3'-UTR eIF3 binding and ribosome occupancy is statistically significant and reproducible across conditions, supporting a general role for eIF3 in translation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "eIF3 3'-UTR crosslinking correlates with overall protein synthesis levels but correlates less well with translational efficiency (TE).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63 and C64 are supported by DESeq2 analysis (Figures 3G and Figure 3\u2014figure supplement 4B). The weak correlation with TE (Rho ~-0.01 to -0.091) vs strong correlation with RPF suggests eIF3 3'-UTR binding reflects absolute translation levels rather than efficiency, consistent with a general rather than regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "eIF3 only interacts with 3'-UTR termini of polyadenylated mRNAs, as demonstrated by absence of crosslinks in non-polyadenylated canonical histones (H2AC11, H3C1, H4-16) but presence in polyadenylated variant histones (H3-3B, H2AZ1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by Quick-irCLIP and APA-Seq data on histone mRNAs (Figure 4A and supplements) and statistical analysis showing positive association between eIF3 crosslinking and polyadenylation (Fisher's exact test p=9.993\u00d710\u207b\u2074\u00b3). This provides strong evidence for polyadenylation-dependence of eIF3 3'-UTR binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "eIF3 engagement with 3'-UTR termini is independent of interactions with poly(A)-binding proteins PAIP1 and PABPC1, as these proteins do not co-immunoprecipitate with eIF3 even after DSP crosslinking in NPCs and HEK293T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by immunoprecipitation data (Figure 4B and supplements). The absence of PAIP1/PABPC1 in eIF3 IPs even with protein-protein crosslinking suggests eIF3's 3'-UTR terminus localization is independent of direct PABP interactions, contrasting with prior HeLa cell studies. However, this doesn't rule out indirect interactions or other bridging proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C99",
+      "C100"
+    ],
+    "result": "eIF3's presence at 3'-UTR termini of highly translated mRNAs supports the mRNA circularization model and suggests eIF3 plays a general role in translation by facilitating communication between 5' and 3' mRNA ends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C99, and C100 represent the main conclusions integrating all experimental data. The evidence for eIF3 at 3'-UTR termini is strong, and the correlation with active translation is well-documented. However, the circularization model is inferred rather than directly demonstrated\u2014no structural or functional evidence for actual mRNA looping is provided. The conclusion is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The eIF3 3'-UTR termini crosslinking pattern was not observed in previous PAR-CLIP studies, potentially due to different UV wavelengths (254 nm for Quick-irCLIP vs 365 nm for PAR-CLIP) leading to different crosslinking chemistries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 are supported by comparison with prior literature and methodological knowledge. This represents an important caveat for interpreting differences between studies, though it also raises questions about whether the 3'-UTR binding is an artifact of the crosslinking method or a genuine biological phenomenon not captured by PAR-CLIP.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Some eIF3 5'-UTR crosslinks in NPCs overlap with previous HEK293T PAR-CLIP data (e.g., CCND2, TUBB), but the pan-mRNA pattern observed in Jurkat cells is not seen in NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 are supported by comparative analysis (Figure 1\u2014figure supplement 3). This provides some validation that Quick-irCLIP can detect known eIF3 binding sites while also revealing the novel 3'-UTR pattern, though the different methods complicate direct comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "eIF3 irCLIP peaks within mRNA coding regions colocalize with APA-Seq peaks, indicating expression of different protein isoforms in NPCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is supported by Quick-irCLIP and APA-Seq data for NES mRNA (Figure 2\u2014figure supplement 2A). This represents an interesting observation about alternative polyadenylation within coding sequences, though it is peripheral to the main findings about 3'-UTR binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The combined eIF3 irCLIP and APA-Seq datasets could potentially be used to determine active translation levels at mRNA isoform level, which cannot be determined by ribosome profiling alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C85 is a speculative proposal for future applications. While the logic is sound given the correlation between eIF3 3'-UTR binding and translation, this approach has not been validated and would require systematic comparison with orthogonal methods to establish its utility for isoform-specific translation measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background on eIF3 structure, canonical functions, and cell-type-specific regulatory roles from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are all citations from prior literature providing context for the study. These are appropriately referenced and establish the rationale for investigating eIF3 in NPCs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "NPCs are more committed to neural lineage than NSCs, likely present higher protein synthesis levels, but maintain self-renewal and multipotent characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 combine citations (C10, C11) with general knowledge (C12) to justify the use of NPCs as a model system. This provides appropriate context for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C41",
+      "C52"
+    ],
+    "result": "Background information on 3'-UTR isoforms in neurons, alternative polyadenylation in the nervous system, S100B as a glial marker, and ID2's role in NPC differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, C41, and C52 are citations providing biological context for interpreting the experimental findings. These are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Canonical histone mRNAs are non-polyadenylated due to cell-cycle dependency, while variant histone mRNAs are polyadenylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 represent general knowledge about histone mRNA biology that provides the rationale for using histones to test polyadenylation-dependence of eIF3 binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Background on mRNA circularization models, closed-loop translation, and prior studies on eIF3-PABP interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 are citations providing context for interpreting eIF3's 3'-UTR localization in the framework of mRNA circularization. These appropriately frame the discussion of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Stem cells exhibit low protein synthesis in quiescence but show global increases upon differentiation; translation initiation is the rate-limiting step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 combine citations (C101) with general knowledge (C102, C103) to establish the biological context and rationale for studying translation initiation factors during NPC differentiation.",
+    "result_type": "MINOR"
+  }
+]

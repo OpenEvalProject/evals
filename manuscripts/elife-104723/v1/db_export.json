@@ -1,0 +1,2106 @@
+{
+  "submission": {
+    "id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T18:51:14.895246Z",
+    "updated_at": "2025-11-21T18:51:14.895246Z"
+  },
+  "content": [
+    {
+      "id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "content_type": "manuscript",
+      "content_text": "# Numb provides a fail-safe mechanism for intestinal stem cell self-renewal in adult Drosophila midgut\n\n## Authors\n\n- Mengjie Li<sup>1</sup> ([ORCID: 0000-0001-7924-5331](https://orcid.org/0000-0001-7924-5331))\n- Aiguo Tian<sup>1</sup> ([ORCID: 0000-0001-5011-6034](https://orcid.org/0000-0001-5011-6034))\n- Jin Jiang<sup>1</sup> ([ORCID: 0000-0002-5951-372X](https://orcid.org/0000-0002-5951-372X)) \u2020\n\n### Affiliations\n\n1. Department of Molecular Biology, University of Texas Southwestern Medical Center at Dallas Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))\n2. Department of Pharmacology, University of Texas Southwestern Medical Center at Dallas Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))\n\n\u2020 Corresponding author\n\n## Abstract\n\nStem cell self-renewal often relies on asymmetric fate determination governed by niche signals and/or cell-intrinsic factors but how these regulatory mechanisms cooperate to promote asymmetric fate decision remains poorly understood. In adult Drosophila midgut, asymmetric Notch (N) signaling inhibits intestinal stem cell (ISC) self-renewal by promoting ISC differentiation into enteroblast (EB). We have previously shown that epithelium-derived Bone Morphogenetic Protein (BMP) promotes ISC self-renewal by antagonizing N pathway activity (Tian and Jiang, 2014). Here, we show that loss of BMP signaling results in ectopic N pathway activity even when the N ligand Delta (Dl) is depleted, and that the N inhibitor Numb acts in parallel with BMP signaling to ensure a robust ISC self-renewal program. Although Numb is asymmetrically segregated in about 80% of dividing ISCs, its activity is largely dispensable for ISC fate determination under normal homeostasis. However, Numb becomes crucial for ISC self-renewal when BMP signaling is compromised. Whereas neither Mad RNA interference nor its hypomorphic mutation led to ISC loss, inactivation of Numb in these backgrounds resulted in stem cell loss due to precocious ISC-to-EB differentiation. Furthermore, we find that numb mutations resulted in stem cell loss during midgut regeneration in response to epithelial damage that causes fluctuation in BMP pathway activity, suggesting that the asymmetrical segregation of Numb into the future ISC may provide a fail-save mechanism for ISC self-renewal by offsetting BMP pathway fluctuation, which is important for ISC maintenance in regenerative guts.\n\n## Introduction\n\nAdult organs such as intestine rely on resident stem cells to replenish damaged tissues during homeostasis and regeneration (Biteau et al., 2011; Jiang and Edgar, 2012). Drosophila midgut, an equivalent of mammalian small intestine, has emerged as a powerful system to study stem cell biology in adult tissue homeostasis and regeneration (Casali and Batlle, 2009; Jiang and Edgar, 2011; Jiang et al., 2016). Intestinal stem cells (ISCs) in adult midguts are localized at the basal side of the gut epithelium where they can undergo asymmetric cell division to produce renewed ISCs and enteroblasts (EBs) that differentiate into enterocytes (ECs) (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006). At low frequency, an ISC daughter is fated to preEE/EEP that differentiates into two enteroendocrine (EE) cells after another round of cell division (Biteau and Jasper, 2014; Beehler-Evans and Micchelli, 2015; Zeng and Hou, 2015; Chen et al., 2018). About 20% ISCs undergo symmetric cell division to produce two ISCs or two EBs (O\u2019Brien et al., 2011; Goulas et al., 2012; Tian and Jiang, 2014). The decision between ISC self-renewal and differentiation into EB lineage is controlled by Notch (N) signaling whereby N activation drives ISC differentiation into EB (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006; Ohlstein and Spradling, 2007; Bardin et al., 2010). The asymmetric N signaling between ISC and EB is influenced by Par/integrins-directed asymmetric cell division and differential BMP signaling (Goulas et al., 2012; Tian and Jiang, 2014). EC-produced BMP ligands containing Decapentaplegic (Dpp) and Glass bottom boat (Gbb) heterodimers are secreted basally and concentrated on the basement membrane aligning the basal side of the gut epithelium (Tian and Jiang, 2014). After asymmetric cell division of ISCs, basally localized daughter cells transduce higher levels of BMP signaling activity than the apically localized daughter cells and the differential BMP signaling promotes ISC self-renewal by antagonizing N pathway activity through an unknown mechanism (Tian and Jiang, 2014; Tian and Jiang, 2017).\n\nThe N pathway inhibitor Numb plays a decisive role in asymmetric cell fate determination in Drosophila peripheral and central nervous systems whereby Numb segregates asymmetrically into one daughter during division of a neuronal precursor cell and confers distinct fates to the two daughter cells (Uemura et al., 1989; Rhyu et al., 1994; Spana et al., 1995). The mammalian homologs of Numb are also critical for asymmetric fate determination during neurogenesis and myogenesis (Zhong et al., 1996; Conboy and Rando, 2002; Petersen et al., 2002; Shen et al., 2002; Petersen et al., 2004). Previous studies showed that, during asymmetric division of an ISC in Drosophila adult midgut, Numb was preferentially segregated into the basally localized daughter that becomes future ISC (Goulas et al., 2012; Sall\u00e9 et al., 2017); however, many numb mutant clones retained ISC after many rounds of cell division although they failed to produce EE (Bardin et al., 2010; Sall\u00e9 et al., 2017). Given the well-established role of Numb in blocking N pathway activity and the observation that Numb is asymmetrically segregated into the future ISC, it is surprising and puzzling that loss of Numb does not lead to ectopic N pathway activation that drives ISC-to-EB differentiation. We speculate that BMP signaling may play a more dominant role in ISC self-renewal than Numb and that the BMP signaling gradient could generate differential N signaling between the apical and basal pair of ISC daughters to generate ISC/EB binary fates even when Numb is depleted (Tian and Jiang, 2017). Accordingly, attenuating BMP signaling may unmask the role of Numb in ISC self-renewal.\n\nTo test this hypothesis, we employed RNA interference (RNAi) and genetic mutations to inactivate Numb in otherwise wild-type background or in midguts defective in BMP signaling due to RNAi or genetic mutation of mothers against decapentaplegic (mad), which encodes a signal transducer in BMP signaling pathway (Sekelsky et al., 1995; Newfeld et al., 1997). Consistent with our previous findings (Tian and Jiang, 2014), neither mad RNAi nor its hypomorphic mutation led to ISC loss. However, inactivation of Numb in these backgrounds resulted in stem cell loss due to precocious ISC-to-EB differentiation. By carefully examining mutant clones for multiple numb alleles, we also observed an increased number of numb clones that lack ISCs compared with wild-type control clones. Interestingly, the stem cell loss phenotype was exacerbated by feeding flies with bleomycin, which resulted in EC damage and fluctuation of BMP signaling (Amcheslavsky et al., 2009; Tian et al., 2017), underscoring an important role of Numb in ISC maintenance during gut regeneration.\n\n## Results\n\n### Loss of BMP signaling results in ectopic N pathway activity even when Dl is depleted\n\nOur previous study showed that depleting the type II receptor Punt (Put) for BMP in progenitor cells (ISC/EB) resulted in precocious ISC-to-EB differentiation, leading to stem cell loss (Tian and Jiang, 2014). In Put deficient progenitor cells, the N pathway was activated in the absence of detectable N ligand Delta (Dl). Progenitor cells deficient for both Put and N failed to differentiate to EBs and formed stem cell-like tumors (Tian and Jiang, 2014). These observations imply that inactivation of Put may unleash a ligand-independent N pathway activity that drives precocious ISC-to-EB differentiation, leading to stem cell depletion. However, it remains possible that a trace amount of Dl that is beyond the detection by immunostaining might activate N in Put deficient progenitor cells.\n\nTo further explore the relationship between the BMP and N pathways, we carried out genetic epistatic experiments to determine the functional relationship between Put and Dl. We depleted Put and Dl either individually or in combination via RNAi in midgut progenitor cells using the esg-Gal4 tub-Gal80ts (esgts) system, in which Gal4 is under the control of a temperature sensitive Gal80 (McGuire et al., 2004). UAS-GFP was included in the esgts system to mark all precursor cells whereas Su(H)-lacZ (also called Su(H)GBE-lacZ), a transcriptional reporter of N signaling, was used to monitor N pathway activity and mark the EBs. Three- to five-day-old adult females expressing UAS-Put-RNAi and UAS-Dl-RNAi individually or in combination via esgts were shifted to 29\u00b0C for 10 days prior to dissection, followed by immunostained with the corresponding antibodies. For quantification, we focused on the posterior region (R4) of the midguts to minimize the variation (Buchon et al., 2013). In control guts, most pairs of esg>GFP + precursor cells, which may represent two recently divided ISC daughters, contained only one Su(H)-lacZ positive cell, indicating that these ISCs divided asymmetrically to produce one ISC and one EB (Figure 1A, B\u2013B\u2019\u2019, F). In line with our previous findings, most esg>GFP + precursor pairs from the Put RNAi guts expressed Su(H)-lacZ in both ISC daughters, suggesting that ISCs underwent symmetric cell division to produce two EBs when Put was depleted (Figure 1C\u2013C\u2019\u2019, F). By contrast, esg>GFP+ cells in Dl RNAi guts formed ISC-like tumor clusters that were negative for Su(H)-lacZ (Figure 1D\u2013D\u2019\u2019, F), similar to the ISC-like tumor clusters in guts containing Dl or N mutant clones (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006; Ohlstein and Spradling, 2007; Siudeja et al., 2015), suggesting that in Dl RNAi guts, N pathway activity was diminished. Put and Dl double RNAi suppressed the formation of ISC-like clusters (Figure 1E). In these guts, esg-GFP+ cells exhibited Su(H)-lacZ expression (Figure 1E\u2013E\u2019\u2019, F), suggesting that they activate the N pathway and differentiate into EBs. Hence, loss of BMP signaling resulted in ectopic N pathway activity that drives ISC-to-EB differentiation even when Dl was depleted.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig1-v1.jpg)\n\n**Figure 1.:** (A) A scheme for the ISC lineage in Drosophila midgut. (B-E\u2019\u2019) Representative images of Control guts (B\u2013B\u2019\u2019), midguts expressing UAS-Put-RNAi (C\u2013C\u2019\u2019), UAS-Dl-RNAi (D\u2013D\u2019\u2019), or UAS-Put-RNAi+UAS-Dl-RNAi (E\u2013E\u2019\u2019) with esg-Gal4ts, UAS-GFP at 29\u00b0C for 10 days and immunostained for Su(H)-lacZ (gray or red) and GFP (green). Su(H)-lacZ is used as a marker for enteroblast (EB). DAPI (blue) staining indicates nuclei. Compared with control guts (B\u2013B\u2019\u2019), Put knockdown (C\u2013C\u2019\u2019) in precursor cells (green) caused an increase of EB pairs. Dl knockdown induced stem cell-like tumor. Put and Dl double knockdown induced a dramatic increase of EBs. (F) Quantification of percentage of EB cells of each genotype. Data are mean \u00b1 SD from three independent experiments. *p<0.05, ****p < 0.0001. One-way ANOVA was performed for statistical comparisons. Scale bar (20 \u03bcm) is shown in B.\n\n### Numb is important for ISC maintenance when BMP pathway activity is attenuated\n\nOur previous study showed that partial loss of BMP pathway activity in several genetic backgrounds including Mad RNAi and mad1-2, a hypomorphic allele of mad, did not lead to ISC loss whereas more complete loss of BMP signaling in Put RNAi guts or put mutant ISC-lineage clones resulted in ISC loss. It is possible that a backup mechanism for ISC self-renewal may exist, which could compensate for the partial loss of BMP signaling to prevent ectopic N pathway activation that drives differentiation. During an asymmetric ISC division, the N inhibitor Numb is segregated into the basally localized daughter that becomes the future ISC (Goulas et al., 2012; Sall\u00e9 et al., 2017). We hypothesized that the asymmetric distribution of Numb may provide such a backup mechanism to ensure that the basally localized ISC daughter has lower N pathway activity than the apically localized one when differential BMP signaling is compromised so that the differential N signaling between the apical and basal is still sufficient to drive asymmetric fate determination. To test this hypothesis, we inactivated Numb and Mad either individually or in combination using two independent approaches: (1) RNAi and (2) genetic mutations. For the RNAi experiments, 3- to 5-day-old females expressing UAS-Numb-RNAi, UAS-Mad-RNAi, or UAS-Numb-RNAi + UAS-Mad-RNAi under the control of esgts were transferred to 29\u00b0C for 14 days. The guts were then dissected out for immunostaining to detect the expression of esg>GFP, Dl-lacZ (ISC marker), E(spl)m\u03b2-CD2 (EB marker) and Pros (EE marker). Because preEE expressed both Dl-lacZ and Pros and Dl-lacZ signals could be found in some EBs due to its perdurance, we counted Dl-lacZ+ m\u03b2-CD2\u2212 Pros\u2212 cells as ISCs and m\u03b2-CD2+ cells as EBs. Compared with control guts (Figure 2A\u2013A\u2019\u2019), Mad (Figure 2B\u2013B\u2019\u2019), or Numb (Figure 2C\u2013C\u2019\u2019) single RNAi guts contained comparable number of Dl-lacZ+ m\u03b2-CD2\u2212 Pros\u2212 cells and E(spl)m\u03b2-CD2+ cells (Figure 2E\u2013G). By contrast, in Numb and Mad double RNAi guts (Figure 2D\u2013D\u2019\u2019), there was a significant decrease in the number of precursor cells (Figure 2E) and Dl-lacZ+ m\u03b2-CD2\u2212 Pros\u2212 cells (Figure 2F), and a simultaneous increase in the number of E(spl)m\u03b2-CD2+ cells (Figure 2G), suggesting that inactivation of both Mad and Numb results in stem cell loss, likely due to precocious ISC-to-EB differentiation.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig2-v1.jpg)\n\n**Figure 2.:** (A-D\u2019\u2019) Representative images of adult midguts expressing UAS-mCherry-RNAi (Control) (A\u2013A\u2019\u2019), UAS-Mad-RNAi (B\u2013B\u2019\u2019), UAS-Numb-RNAi (C\u2013C\u2019\u2019), and UAS-Mad-RNAi+UAS-Numb-RNAi (D\u2013D\u2019\u2019) with esg-Gal4ts, UAS-GFP at 30\u00b0C for 14 days and immunostained for Dl-lacZ (red), E(spl)m\u03b2-CD2 (cytoplasmic magenta), and Pros (nuclear magenta), which are markers for ISC, enteroblast (EB), and enteroendocrine (EE), respectively. DAPI (blue) staining indicates nuclei. Yellow arrows indicate ISCs (Dl-lacZ+ E(spl)m\u03b2-CD2\u2212 Pros\u2212), white arrowheads indicate EBs (E(spl)m\u03b2-CD2+), and white arrows indicate EEs (Pros+) in Control, Mad, or Numb single knockdown guts. Red arrow indicated a Dl-lacZ+, E(spl) m\u03b2-CD2+ cells in Mad and Numb double knockdown guts. Scale bar (20 \u03bcm) is presented in (A). (E\u2013G) Quantification of number of precursor cells (E), percentage of ISC cells (F), and percentage of EB cells (G) of each genotype. Data are mean \u00b1 SD from three independent experiments. *p < 0.05, ****p < 0.0001. One-way ANOVA was performed for statistical comparisons.\n\nIn the second approach, we generated guts that carried mad1-2 or numb4 single mutant clones or mad1-2, numb4 double mutant clones using the MARCM system that positively mark the clones with GFP expression. Three- to five-day-old females of appropriate genotypes were heat-shocked for 1 hr for clonal induction and kept at 18\u00b0C for 14 days prior to dissection. ISCs were identified as Dl+ cells or m\u03b2-CD2\u2212 Pros\u2212 cells containing small nuclei. ISC-containing clones (ISC+) and clones without ISCs (ISC\u2212) were quantified for each genotype. We also quantified the size of ISC-lineage clones for each genotype by counting GFP+ cells in individual clones. Consistent with previous findings (Tian and Jiang, 2014; Sall\u00e9 et al., 2017), the average size of mad1-2 clones is significantly larger than the control clones (Figure 3A\u2013A\u2019, B\u2013B\u2019, E\u2013E\u2019, F\u2013F\u2019, K) whereas numb4 clones had similar clone size distribution compared with control clones (Figure 3C\u2013C\u2019, G\u2013G\u2019, K). In addition, most of mad1-2 or numb4 clones contained at least one ISC similar to control clones (Figure 3K). However, the average size of mad1-2 numb4 clones is significantly smaller than that of control clones (Figure 3D\u2013D\u2019, H\u2013H\u2019, K). More importantly, a much larger fraction of mad1-2 numb4 clones (~40%; n = 252) did not contain ISC (Figure 3L), many of which only contained ECs with large nuclei and stained positive for Pdm1 (Figure 3I\u2013J\u2019). Taken together, these results suggest mad1-2 numb4 double mutation leads to ISC loss.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig3-v1.jpg)\n\n**Figure 3.:** (A-H\u2019) Representative images of adult midguts containing MARCM clones (green) of FRT40 (Control) (A, A\u2019, E, E\u2019), mad1-2 (B, B\u2019, F, F\u2019), numb4 (C, C\u2019, G, G\u2019), and mad1-2, numb4 (D, D\u2019, H, H\u2019) and immunostained for GFP (green) and Dl (red in A\u2013D\u2019) or E(spl)m\u03b2-CD2 and Pros (red in E\u2013H\u2019) at 14 days (grown at 18\u00b0C) after clone induction. GFP marks the clones. DAPI (blue) staining indicates nuclei. ISCs inside and outside the clones are indicated by yellow and white arrows, respectively. (I) Representative images of adult midguts containing MARCM clones (green) of control (I, I\u2019) or mad1-2, numb4 (J, J\u2019) immunostained for GFP (green), E(spl)m\u03b2-CD2 and Pros (red), and Pdm1 (magenta and gray). Scale bar (20 \u03bcm) is presented in (A). (K) Quantification of clone size for the indicated genotypes 14 days after clone induction. (L) Quantification of numbers of clones with or without ISCs. Data are mean \u00b1 SD from three independent experiments. **p < 0.01, ****p < 0.0001. \u1d612 test was performed for statistical comparisons.\n\n### Inactivation of Numb and Mad leads to precocious ISC-to-EB differentiation\n\nWe employed a two-color lineage tracing system called RGT (Tian and Jiang, 2014; Tian et al., 2017) to determine whether simultaneous inactivation of Numb and Mad would change the outcome of an ISC division. In this system, FLP/FRT-mediated mitotic recombination in individual dividing ISCs will generate two distinctly labeled clones that express either RFP (red) or GFP (green) (Figure 4A). As shown schematically in Figure 4B, asymmetric ISC division (ISC/EB) will generate one clone with multiple cells and a twin spot that contains only one EC. Symmetric self-renewing division (ISC/ISC) will produce two multiple-cell clones whereas symmetric differentiation division (EB/EB) will produce two clones each of which contains one EC. Control or RNAi expressing adult flies containing hs-FLP FRT19A ubi-GFPnls/FRT19A ubi-mRFPnls; esgts were grown at 29\u00b0C for 8 days (for Mad-RNAi only) or 14 days (for control, Numb-RNAi, and Numb-RNAi + Mad-RNAi) before clone induction by heat shock at 37\u00b0C for 1 hr. After clone induction, the flies were incubated at 18\u00b0C for another 4 days before guts were dissected out for analysis (Figure 4C). The frequencies of ISC/EB, ISC/ISC, and EB/EB divisions in control guts were 69%, 15%, and 16%, respectively (n = 119) (Figure 4D\u2013F, P). Mad RNAi guts had higher frequency of ISC/ISC (30%), and lower frequency of EB/EB (5%) division compared to control guts (n = 73) (Figure 4G\u2013I, P). The increase in symmetric self-renewing division in Mad RNAi guts is likely due to an increase in BMP ligand production in these guts because BMP signaling in EC inhibits BMP ligand expression (Tian et al., 2017). The frequencies of different ISC division classes in Numb RNAi guts are comparable to those of control guts (ISC/EB: 73%, ISC/ISC: 18%, EB/EB: 9%, n = 127) (Figure 4J\u2013L, P). By contrast, Mad and Numb double RNAi guts had lower frequency of ISC/ISC division (11%) and much higher EB/EB division (37%) than control guts (n = 54) (Figure 4M\u2013P). Thus, inactivation of Numb in backgrounds where BMP signaling was compromised altered the ISC division outcome that favors symmetric differentiation division leading to ISC loss.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig4-v1.jpg)\n\n**Figure 4.:** (A) Scheme of an ISC division that produces differentially labeled daughter cells (RFP+ GFP\u2212 and RFP\u2212 GFP+) through FRT-mediated mitotic recombination. Adapted from Tian and Jiang, 2014. (B) Scheme of differentially labeled twin clones generated by FLP/FRT-mediated mitotic recombination of dividing ISCs. Adapted from Tian and Jiang, 2014. (C) Scheme of twin-spot experiments. Three- to five-day-old adult flies of indicated genotype are grown at 29\u00b0C for 14 days before heat shock to induce clones. After 1-day recovery at 29\u00b0C, the flies are raised at 18\u00b0C for 4 days prior to analysis. (D\u2013O) Representative images of twin-spot clones from adult midguts of the indicated genotypes. Scale bar 20 \u03bcm is shown in (D). (P) Quantification of twin spots of different classes from guts of the indicated genotypes. Data are mean \u00b1 SD from three independent experiments. *p < 0.05, **p < 0.01. \u1d612 test was performed for statistical comparisons.\n\n### Numb mutant clones exhibit weak ISC loss phenotype\n\nWhen we examined adult midguts containing numb4 clones, we noticed a slight increase in the frequency of ISC\u2212 clones compared to the control guts even though the average clone size of numb4 clones was comparable to that of the control clones (Figure 3K, L), suggesting that numb mutation may result in a mild stem cell loss phenotype. To verify this result, we examined another numb allele, numb15. By immunostaining for Dl expression that marks ISC, we found that both numb4 and numb15 clones contained similarly higher frequencies of Dl\u2212 clones than the control clones (Figure 5A\u2013C\u2019, E). Consistent with previous findings (Bardin et al., 2010; Sall\u00e9 et al., 2017), most numb15 clones grew into large size similar to the control clones (Figure 5D), suggesting that many ISC\u2212 numb clones lost ISC at late stages during their clonal growth. We also examined Pros expression and found that numb mutant clones did not contain Pros+ cells (Figure 5\u2014figure supplement 1A\u2013C\u2019), which is consistent with a previous study showing that numb is required for EE fate regulation (Sall\u00e9 et al., 2017).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig5-v1.jpg)\n\n**Figure 5.:** (A-C\u2019) Representative images of adult midguts containing MARCM clone (green) of FRT40 (Control) (A, A\u2019), numb4 (B, B\u2019), and numb15 (C, C\u2019) and immunostained for Dl (red), GFP (green), and DAPI (blue) at 14 days after clone induction. GFP marks the clones. Intestinal stem cells (ISCs) inside and outside the clones are indicated by yellow and white arrows, respectively. Scale bar (20 \u03bcm) is shown in (A). (D) Quantification of clone size distribution for the indicated genotypes at 14 days after clone induction. (E) Quantification of numbers of clones with or without ISC. Data are mean \u00b1 SD from three independent experiments. *p < 0.05, **p < 0.01. \u1d612 test was performed for statistical comparisons.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A-C\u2019) MARCM clone (green) of control (A, A\u2019), numb4 (B, B\u2019), and numb15 (C, C\u2019) are stained for Pros (red) at 14 days after clone induction. Representative clone in control guts (A, A\u2019) contains EE cells (Pros positive), as indicated with yellow arrows. Representative clones in numb4 (B, B\u2019) and numb15 (C, C\u2019) guts do not contain any EE cells. Scale bar (20 \u03bcm) is presented in (A).\n\n### Numb is important for ISC maintenance during regeneration\n\nThe weak ISC loss phenotype associated with numb mutant clones could be due to fluctuation in BMP pathway activity under normal homeostasis because the expression of two BMP ligands Dpp and Gbb is uneven in homeostatic guts (Tian and Jiang, 2014). If so, the stem cell loss phenotype caused by numb mutations could be enhanced under conditions where tissue damage causes more dramatic and widespread fluctuation in BMP signaling activity in regenerative guts. To test this possibility, we fed adult female flies carrying either control or numb clones in the guts with sucrose (mock), bleomycin, or dextran sodium sulfate (DSS). In mock-treated control guts, approximately 12% (n = 178) of the clones did not contain Dl+ cell, while 21% (n = 216) of the numb4 and 24% (n = 219) of the numb15 clones were void of stem cells (Figure 6A\u2013A\u2019, D\u2013D\u2019, G\u2013G\u2019, J). Previous studies showed that bleomycin treatment caused EC damage and enhanced the fluctuation in BMP ligand production whereas DSS affected basement membrane organization but did not increase the fluctuation in BMP ligand production (Amcheslavsky et al., 2009; Tian et al., 2017). In guts treated with bleomycin, 12% (n = 160) of control clones did not contain Dl+ cells (Figure 6B\u2013B\u2019, J). However, bleomycin feeding resulted in a dramatic increase of Dl\u2212 ISC-lineage clones in guts containing numb mutant clones as Dl+ cells were absent in 43% (n = 149) of numb4 and 45% (n = 213) of numb15 clones (Figure 6E\u2013E\u2019, H\u2013H\u2019, J). By contrast, DSS feeding did not increase the frequency of Dl\u2212 clones in guts containing numb mutant clones, as the frequencies of Dl\u2212 clones in control, numb4 and numb15 clonal guts were 10% (n = 167), 24% (n = 165), and 21% (n = 141), respectively (Figure 6C\u2013C\u2019, F\u2013F\u2019, I\u2013I\u2019 J). Bleomycin also resulted in a reduction in numb mutant clone size, as compared with the mock treatment (Figure 6K). Taken together, these results suggest that Numb plays an important role in ISC maintenance in regenerative guts in response to bleomycin-induced tissue damage.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig6-v1.jpg)\n\n**Figure 6.:** (A\u2013I\u2019) Adult flies of indicated genotype were treated with sucrose, bleomycin, or dextran sodium sulfate (DSS) for 24 hr at 14 days after clone induction and recovered for another 4 days before dissection. Guts containing MARCM clones of the indicated genotype were stained for GFP (green) and Dl (red). GFP marks the clones. DAPI (blue) staining indicates the nuclei. Stem cells inside and outside the clones are indicated by yellow and white arrows, respectively. Scale bar (20 \u03bcm) is shown in (A). (J) Quantification of the percentage of clones with or without ISCs. (K) Quantification of clone size distribution for the indicated genotypes. Data are mean \u00b1 SD from three independent experiments. *p < 0.05, **p < 0.01, ****p < 0.0001. \u1d612 test was performed for statistical comparisons.\n\n## Discussion\n\nDespite the prominent role of Numb in asymmetric cell fate decision in the nervous system and the observation that Numb is asymmetrically segregated in dividing ISCs, whether Numb plays any role in ISC fate determination has remained a mystery. Here, we demonstrated that Numb is important for ISC self-renewal during regeneration. We found that Numb is largely dispensable for homeostatic ISC self-renewal due to the predominant role of BMP signaling in this context. Indeed, we found that Numb becomes critical for ISC self-renewal under conditions where BMP signaling is compromised.\n\nPrevious studies did not score a stem cell loss phenotype associated with numb mutant clones because the majority of numb mutant ISC-lineage clones could grow into large size comparable to control clones (Figures 3 and 5; Bardin et al., 2010; Goulas et al., 2012; Sall\u00e9 et al., 2017). Instead, Sall\u00e9 et al. showed that numb mutant clones lacked EEs, suggesting that Numb is important for EE fate determination (Sall\u00e9 et al., 2017), which we confirmed in this study (Figure S1). However, by carefully examining ISC/EB markers associated with numb mutant clones, we noticed an increase in the fraction of numb mutant clones that lack ISCs compared with the control clones (Figures 3 and 5). By introducing mad mutation (mad1-2) into the numb mutant background, we found that numb4 mad1-2 double mutant clones had a much higher frequency to lose ISCs than numb4 clones even though mad1-2 single mutant clones showed no ISC loss phenotype compared with control clones (Figure 3).\n\nOur previous study showed that immediately after bleomycin treatment, there was an increase in the ISC population size due to a transient surge in BMP ligand production (Tian et al., 2017). However, during regeneration, BMP ligand production was downregulated due to the autoinhibition of BMP ligand expression by BMP signaling in ECs (Tian et al., 2017). The reduction in BMP ligand production promoted ISC-to-EB differentiation to reset the ISC population size back to the homeostatic level after regeneration (Tian et al., 2017). It is likely that asymmetric distribution of Numb in dividing ISCs may prevent excessive ISC-to-EB differentiation that could otherwise lead to a decreased ISC population during regeneration. Indeed, we observed an increase in the frequency of numb mutant clones lacking ISCs in response to bleomycin treatment, suggesting that Numb becomes critical for ISC maintenance during gut regeneration in response to tissue damage.\n\nBased on our findings in current and previous studies, we propose the following working model to account for the cooperation between Numb and BMP signaling in the regulation of ISC self-renewal under homeostatic and tissue regeneration (Figure 7). Under homeostatic conditions, most ISCs divide basally so that the basally localized ISC daughters inherit Numb and transducing higher levels of BMP signaling activity than the apically situated daughter cells, the combined differential activities in BMP signaling and Numb drive robust asymmetric division outcomes to produce ISC/EB pairs (Figure 7A). In the numb mutant background, differential BMP signaling activities between the apical and basal daughter cells suffice to drive asymmetric division outcomes in most cases (Figure 7B). In the mad mutant background, the BMP signaling activity gradient becomes shallower but differential Numb activity between the apical and basal daughter cells can compensate for the compromised BMP signaling gradient to drive asymmetric division outcomes (Figure 7C). However, in numb mad double mutant background or in numb mutant guts damaged by bleomycin feeding, the compromised BMP signaling activity gradient alone is often insufficient to drive asymmetric division outcomes, leading to ISC loss due to symmetric EB/EB division outcomes (Figure 7D). One interesting question is why asymmetric Numb activity is unable to drive asymmetric ISC division outcome in the absence of BMP signaling as seen in put mutant background. One possibility is that the Numb level is too low in midgut ISCs so that the asymmetric Numb inheritance during ISC division is not robust enough to ensure asymmetric N signaling in the absence of BMP signaling. Indeed, previous studies indicate that endogenous Numb was undetectable using Numb antibodies (Goulas et al., 2012; Couturier et al., 2013; Sall\u00e9 et al., 2017). Another non-mutually exclusive possibility is that Numb may not be able to counter the ligand-independent N pathway activity unleashed in put mutant backgrounds. Future study is needed to test these possibilities and to determine the precise mechanism by which BMP signaling inhibits N pathway activity.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/104723/elife-104723-fig7-v1.jpg)\n\n**Figure 7.:** (A) During asymmetric ISC division, the basal ISC daughter transduces higher level of BMP signaling and inherits higher level of Numb activity than the apical one. Inhibition of N by BMP signaling and Numb promotes ISC fate. (B) In numb mutant background, differential BMP signaling between the basal and apical ISC daughters is sufficient to generate differential N pathway activities to drive asymmetric fate decision. (C) In mad mutant background, the shallow BMP activity gradient acts in conjunction with the asymmetric Numb activity to generate differential N pathway activities between the basal and apical ISC daughters to drive asymmetric fate decision. (D) In numb mad double mutant background or in guts containing numb mutant clones and injured by bleomycin (Bleo) feeding, the shallow BMP activity gradient is often insufficient to generate asymmetric N pathway activation, leading to precocious ISC-to-EB differentiation. BM: basement membrane; Bleo: bleomycin; thin and dashed lines indicate weak inhibition.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>esg-Gal4</td>\n      <td>Jiang et al., 2009</td>\n      <td>FLYB: FBti0013268</td>\n      <td>FlyBase symbol: P{GawB}NP5130</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Dl-lacZ</td>\n      <td>Zeng et al., 2010</td>\n      <td>FLYB: FBti0004778</td>\n      <td>FlyBase symbol: P{PZ}Delta[05151]</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Su(H)-lacZ</td>\n      <td>Zeng et al., 2010</td>\n      <td>FLYB: FBtp0014034</td>\n      <td>FlyBase symbol: P{Ddc.E(spl)m8-HLH-lacZ.Gbe}</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>E(spl)m\u03b2CD2</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 83353FLYB: FBst0083353RRID:BDSC_83353</td>\n      <td>FlyBase symbol: w[*]; l(2)*[*]/CyO, P{ry[+t7.2]=en1}wg[en11]; P{w[+mC]=E(spl)mbeta-HLH-CD2.dC}T6</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Tub-Gal80ts</td>\n      <td>Jiang et al., 2009</td>\n      <td>FLYB: FBti0027796</td>\n      <td>FlyBase symbol: P{tubP-GAL80ts}</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Put RNAi</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>VDRC 107071FLYB: FBst0478894RRID:Flybase_FBst0473060</td>\n      <td>FlyBase symbol: P{KK102676}VIE-260B</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Dl RNAi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 28032FLYB: FBst0028032RRID:BDSC_28032</td>\n      <td>FlyBase symbol: y (1) v(1); P{TRiP.JF02867}attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Mad RNAi</td>\n      <td>Vienna Drosophila Resource Center</td>\n      <td>VDRC 12635FLYB:FBst0450590RRID:Flybase_FBst0450590</td>\n      <td>FlyBase symbol: w1118; P{GD4121}v12635</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-Numb RANi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 35045FLYB: FBst0035045 RRID:BDSC_35045</td>\n      <td>FlyBase symbol: y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=TRiP.HMS01459}attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-mCherry RANi</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 35785FLYB: FBst0035785RRID:BDSC_35785</td>\n      <td>FlyBase symbol: y(1) sc[*] v(1) sev(21); P{y[+t7.7] v[+t1.8]=VALIUM20-mCherry.RNAi}attP2</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>numb4</td>\n      <td>Skeath and Doe, 1998</td>\n      <td>FLYB: FBal0090215</td>\n      <td>FlyBase symbol: numb(4)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>numb15</td>\n      <td>Sall\u00e9 et al., 2017</td>\n      <td>FLYB: FBal0146969</td>\n      <td>FlyBase symbol: numb(15)</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>mad1-2</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 7323FLYB: FBst0007323RRID:BDSC_7323</td>\n      <td>FlyBase symbol: w*; Mad(; 1-2) P{neoFRT}40A/CyO</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>FRT 40A</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 8212FLYB: FBst0008212RRID:BDSC_8212</td>\n      <td>FlyBase symbol: w[1118]; P{ry[+t7.2]=neoFRT}40A/CyO; P{ry[+t7.2]=ey-FLP.N}6, ry[506]</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>yw, hs-FLP</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 1929FLYB: FBst0001929RRID:BDSC_1929</td>\n      <td>FlyBase symbol: P{ry[+t7.2]=hsFLP}12, y(1) w[*]; sna[Sco]/CyO</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>FRT 40A, tub-GAL80</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 5192FLYB: FBst0005192RRID:BDSC_5192</td>\n      <td>FlyBase symbol: y(1) w[*]; P{w[+mC]=tubP-GAL80}LL10 P{ry[+t7.2]=neoFRT}40A/CyO</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>UAS-GFP</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 5130FLYB: FBst0005130RRID:BDSC_5130</td>\n      <td>FlyBase symbol: y(1) w[*]; betaTub60D[Pin-Yt]/CyO; P{w[+mC]=UAS-mCD8::GFP.L}LL6</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>FRT 19A</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 1709FLYB: FBst0001709RRID:BDSC_1709</td>\n      <td>FlyBase symbol: P{ry[+t7.2]=neoFRT}19A; ry[506]</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>Ubi-GFPnls</td>\n      <td>Chen and Sch\u00fcpbach, 2006</td>\n      <td>FLYB: FBti0015575</td>\n      <td>FlyBase symbol: P{Ubi-GFP(S65T)nls}X</td>\n    </tr>\n    <tr>\n      <td>Genetic reagent (D. melanogaster)</td>\n      <td>FRT 19A, ubi-mRFPnls</td>\n      <td>Bloomington Drosophila Stock Center</td>\n      <td>BDSC 31418FLYB: FBst0031418RRID:BDSC_31418</td>\n      <td>FlyBase symbol: P{w[+mC]=Ubi-mRFP.nls}1, w[*], P{ry[+t7.2]=hsFLP}12P{ry[+t7.2]=neoFRT}19A</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-GFP (chicken polyclonal)</td>\n      <td>Abcam</td>\n      <td>Cat#: ab13970; RRID:AB_300798</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-\u03b2-Galactosidase (rabbit polyclonal)</td>\n      <td>MP Biomedicals</td>\n      <td>Cat#: 08559761RRID:AB_3675281</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Rat CD2 (mouse monoclonal)</td>\n      <td>Bio-Rad</td>\n      <td>Cat#: MCA154GARRID:AB_566608</td>\n      <td>IF (1:2000) (Formerly AbD Serotec)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Dl extracellular domain (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat#: c594.9bRRID:AB_528194</td>\n      <td>IF (1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Prospero (mouse monoclonal)</td>\n      <td>DSHB</td>\n      <td>Cat#: ProsperoRRID:AB_528440</td>\n      <td>IF (1:20)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Pdm1(rabbit polyclonal)</td>\n      <td>Dr. Xiaohang Yang</td>\n      <td></td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Chicken Alexa Fluor 488 (goat polyclonal secondary)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#: A-11039RRID:AB_2534096</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Mouse Alexa Flour 546 (goat polyclonal secondary)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#: A-11030RRID:AB_2737024</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Rabbit Alexa Flour 546 (goat polyclonal secondary)</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat#: A-11035RRID:AB_2534093</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Mouse Cy5 (goat polyclonal)</td>\n      <td>Jackson ImmunoResearch Labs</td>\n      <td>Cat#: 115-175-166RRID:AB_2338714</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>anti-Rabbit Cy5 (goat polyclonal)</td>\n      <td>Jackson ImmunoResearch Labs</td>\n      <td>Cat#: 111-175-144RRID:AB_2338013</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI (4\u2032,6-diamidino-2-phenylindole, dihydrochloride)</td>\n      <td>Invitrogen</td>\n      <td>Cat#: D1306</td>\n      <td>IF (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DSS (dextran sulfate sodium)</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: 42867</td>\n      <td>5% solution</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bleomycin sulfate from Streptomyces verticillus</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat#: B8416</td>\n      <td>25 \u03bcg/ml</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sucrose</td>\n      <td>Fisher Bioreagent</td>\n      <td>Cat#: BP220-212</td>\n      <td>5% solution</td>\n    </tr>\n  </tbody>\n</table>\n\n### Drosophila genetics and transgenes\n\nFlies were maintained on cornmeal at 25\u00b0C. Transgenic lines and mutants include: UAS-Put-RNAi (VDRC #107071); UAS-Dl-RNAi (BL#28032); UAS-Mad-RNAi (VDRC #12635); UAS-Numb-RNAi (BL #35045); UAS-mCherry-RNAi (BL #35785); tub-Gal80ts, esg-Gal4, Su(H) Gbe-lacZ (Su(H)-lacZ); E(spl)m\u03b2-CD2 (BL#83353); numb4 is a strong allele, numb15 is a null allele, and mad1-2 is a hypomorphic allele (Flybase). yw hs-FLP UAS-GFP; tub-Gal80 FRT40A was used for MARCM clonal analysis. yw hs-FLP FRT19A ubi-GFPnls and yw FRT19A ubi-mRFPnls were used for twin-spot clone analysis. For experiments involving tubGal80ts, crosses were set up and cultured at 18\u00b0C to restrict Gal4 activity. Two- to three-day-old progenies were shifted to 29\u00b0C for the indicated periods of time to inactivate Gal80ts, allowing Gal4 to activate UAS transgenes in all experiments, only the female posterior midguts were analyzed.\n\n### Genotypes for Drosophila used in each figure\n\n#### Figure 1\n\n#### Figure 2\n\n#### Figure 3\n\n#### Figure 4\n\n#### Figure 5, Figure 5\u2014figure supplement 1\n\n#### Figure 6\n\n### MARCM clone analysis\n\nFor MARCM clone induction, crosses were set up and cultured at 18\u00b0C to avoid spontaneous clones. 2-to-3-day-old females were subjected to heat shock at 37\u00b0C for 1 hr and then kept at 18\u00b0C for another 14 days before dissection. Flies were transferred to new vials with fresh food every 2 days. The sizes of the clones were quantified from at least 10 midguts for each genotype.\n\n### Twin-spot clone analysis\n\nFor twin-spot clone generation, 2- to 3-day-old flies were kept at 29\u00b0C for 14 days and heat-shocked at 37\u00b0C for 1 hr and then raised at 29\u00b0C for another 4 days before dissection. Flies were transferred to new vials with fresh food every 2 days.\n\n### Feeding experiments\n\nFlies were cultured in an empty vial containing a piece of 2.5 \u00d7 3.75 cm chromatography paper (Fisher) wet with 5% sucrose (MP Biomedicals) solution as feeding medium (mock treatment) or with 25 \u03bcg/ml bleomycin (Sigma-Aldrich) or 5% DSS (40 kDa; MP Biomedicals) for 1 day at 30\u00b0C. After treatment, flies were recovered on normal food at 18\u00b0C for another 4 days before dissection.\n\n### Immunostaining\n\nFemale flies were used for gut immunostaining in all experiments. The entire gastrointestinal tract was taken and fixed in 1\u00d7 PBS plus 8% EM grade formaldehyde (Polysciences) for 2 hr. Samples were washed and incubated with primary and secondary antibodies in a solution containing 1\u00d7 PBS, 0.5% goat serum (Thermo Fisher), and 0.1% Triton X-100 (Bio-rad). The following primary antibodies were used: mouse anti-Delta (DSHB), 1:10; rabbit anti-LacZ (MP Biomedicals), 1:1000; mouse anti-CD2 (Thermo Fisher), 1:1000; chicken anti-GFP (Abcam), 1:1000; mouse anti-Pros (DSHB), 1:10; rabbit anti-Pdm1 (from Dr. Xiaohang Yang), 1:1000; Alexa Fluor-conjugated secondary antibodies were used at 1:1000 (Invitrogen). DAPI (4\u2032,6-diamidino-2-phenylindole) is a nuclear dye (Thermo Fisher). Guts were mounted in 70% glycerol and imaged with a Zeiss confocal microscope (Zeiss LSM 710 inverted confocal) using \u00d740 oil objectives (imaging medium: Zeiss Immersol 518F). The acquisition and processing software was Zeiss LSM Image Browser, and image processing was done in Adobe Photoshop.\n\n### Quantification and statistical analysis\n\nFor Figures 1 and 2, cell number of the indicated cell types was counted per ROI (region of interest) on images taken using LEICA DFC345 FX camera on a LEICA DMI 400 B microscope, equipped with a \u00d740 objective lens. For each genotype, 8\u201312 guts were analyzed. In each gut, three ROIs were randomly selected in R4 of midguts for quantification. One-way ANOVA was performed for statistical comparisons. For Figures 3\u20146, all GFP+ clone cells (\u22652) in midguts were counted individually. For each genotype, at least 10 guts were calculated. \u1d612 test was performed for statistical comparisons. All statistical significances were calculated in Prism 10 (GraphPad Software, Inc). *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001; n.s., not significant.\n",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Erika A Bach, NYU Grossman School of Medicine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.104723.3.sa0](https://doi.org/10.7554/eLife.104723.3.sa0)\n\nThe authors examine the role of Numb, a Notch inhibitor, in intestinal stem cell self-renewal in Drosophila during homeostasis and regeneration. The significance is important as the authors demonstrate the ISC maintenance is reduced when both BMP signaling and Numb expression is reduced. The strength of evidence is convincing as large sample sizes and statistical analyses are provided.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104723.3.sa1](https://doi.org/10.7554/eLife.104723.3.sa1)\n\nSummary:\n\nBy way of background, the Jiang lab has previously shown that loss of the type II BMP receptor Punt (Put) from intestinal progenitors (ISCs and EBs) caused them to differentiate into EBs, with a concomitant loss of ISCs (Tian and Jiang, eLife 2014). The mechanism by which this occurs was activation of Notch in Put-deficient progenitors. How Notch was upregulated in Put-deficient ISCs was not established in this prior work. In the current study, the authors test whether a very low level of Dl was responsible. But co-depletion of Dl and Put led to a similar phenotype as depletion of Put alone. This result suggested that Dl was not the mechanism. They next investigate genetic interactions between BMP signaling and Numb, an inhibitor of Notch signaling. Prior work from Bardin, Schweisguth and other labs has shown that Numb is not required for ISC self-renewal. But the authors wanted to know whether loss of both the BMP signal transducer Mad and Numb would cause ISC loss. This result was observed for RNAi depletion from progenitors and for mad, numb double mutant clones. Of note, ISC loss was observed in 40% of mad, numb double mutant clones, whereas 60% of these clones had an ISC. They then employed a two-color tracing system called RGT to look at the outcome of ISC divisions (asymmetric (ISC/EB) or symmetric (ISC/ISC or EB/EB)). Control clones had 69%, 15% and 16%, respectively, whereas mad, numb double mutant clones had much lower ISC/ISC (11%) and much higher EB/EB (37%). They conclude that loss of Numb in moderate BMP loss of function mutants increased symmetric differentiation which lead caused ISC loss. They also reported that numb15 and numb4 clones had a moderate but significant increase in ISC-lacking clones compared to control clones, supporting the model that Numb plays a role in ISC maintenance. Finally, they investigated the relevance of these observation during regeneration. After bleomycin treatment, there was a significant increase in ISC-lacking clones and a significant decrease in clone size in numb4 and numb15 clones compared to control clones. Because bleomycin treatment has been shown to cause variation in BMP ligand production, the authors interpret the numb clone under bleomycin results as demonstrating an essential role of Numb in ISC maintenance during regeneration.\n\nStrengths\n\ni. Data are quantified with statistical analysis\n\nii. Experiments have appropriate controls and large numbers of samples\n\niii. Results demonstrate an important role of Numb in maintaining ISC number during regeneration and a genetic interaction between Mad and Numb during homeostasis.\n\nWeaknesses\n\nNone noted in the revised manuscript.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104723.3.sa2](https://doi.org/10.7554/eLife.104723.3.sa2)\n\nSummary:\n\nThis work assesses the genetic interaction between the Bmp signaling pathway and the factor Numb, which can inhibit Notch signalling. It follows up on the previous studies of the group (Tian, eLife, 2014; Tian, PNAS, 2014) regarding BMP signaling in controlling stem cell fate decision as well as on the work of another group (Sall\u00e9, EMBO, 2017) that investigated the function of Numb on enteroendocrine fate in the midgut. This is an important study providing evidence of a Numb-mediated back up mechanism for stem cell maintenance.\n\nStrengths:\n\n(1) Experiments are consistent with these previous publications while also extending our understanding of how Numb functions in the ISC.\n\n(2) Provides an interesting model of a \"back up\" protection mechanism for ISC maintenance.\n\nWeaknesses:\n\n(1) Aspects of the experiments could be better controlled or annotated:\n\n(a) As they \"randomly chose\" the regions analyzed, it would be better to have all from a defined region (R4 or R2, for example) or to at least note the region as there are important regional differences for some aspects of midgut biology.\n\n(b) It is not clear to me why MARCM clones were induced and then flies grown at 18{degree sign}C? It would help to explain why they used this unconventional protocol.\n\n(2) There are technical limitations with trying to conclude from double-knockdown experiments in the ISC lineage, such as those in Figure 1 where Dl and put are both being knocked down: depending on how fast both proteins are depleted, it may be that only one of them (put, for example) is inactivated and affects the fate decision prior to the other one (Dl) being depleted. Therefore, it is difficult to definitively conclude that the decision is independent of Dl ligand.\n\n(3) Additional quantification of many phenotypes would be desired.\n\n(a) It would be useful to see esg-GFP cells/total cells and not just field as the density might change (2E for example).\n\n(b) Similarly, for 2F and 2G, it would be nice to see the % of ISC/ total cell and EB/total cell and not only per esgGFP+ cell.\n\n(c) Fig1: There is no quantification - specifically it would be interesting to know how many esg+ are su(H)lacZ positive in Put- Dl- condition compared to WT or Put- alone. What is the n?\n\n(d) Fig2: Pros + cells are not seen in the image? Are they all DllacZ+?\n\n(e) Fig3: it would be nice to have the size clone quantification instead of the distribution between groups of 2 cell 3 cells 4 cell clones.\n\n(f) How many times were experiments performed?\n\n(4) The authors do not comment on the reduction of clone size in DSS treatment in Figure 6K. How do they interpret this? Does it conflict with their model of Bleo vs DSS?\n\n(5) There is probably a mistake on sentence line 314 -316 \"Indeed, previous studies indicate that endogenous Numb was not undetectable by Numb antibodies that could detect Numb expression in the nervous system\".\n\nComments on revisions:\n\nThe authors have by and large addressed my main points.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.104723.3.sa3](https://doi.org/10.7554/eLife.104723.3.sa3)\n\nSummary:\n\nThe authors provide an in-depth analysis of the function of Numb in adult Drosophila midgut. Based on RNAi combinations and double mutant clonal analyses, they propose that Numb has a function in inhibiting Notch pathway to maintain intestinal stem cells, and is a backup mechanism with BMP pathway in maintaining midgut stem cell mediated homeostasis.\n\nStrengths:\n\nOverall, this is a carefully constructed series of experiments, and the results and statistical analyses provides believable evidence that Numb has a role, albeit weak compared to other pathways, in sustaining ISC and in promoting regeneration especially after damage by bleomycin, which may damage enterocytes and therefore disrupt BMP pathway more. The results overall support their claim.\n\nThe data are highly coherent, and support a genetic function of Numb, in collaborating with BMP signaling, to maintain the number and proliferative function of ISCs in adult midguts. The authors used appropriate and sophisticated genetic tools of double RNAi, mutant clonal analysis and dual marker stem cell tracing approaches to ensure the results are reproducible and consistent. The statistical analyses provide confidence that the phenotypic changes are reliable albeit weaker than many other mutants previously studied.\n\nWeaknesses:\n\nIn the absence of Numb itself, the midgut has a weak reduction of ISC number (Fig. 3 and 5), as well as weak albeit not statistically significant reduction of ISC clone size/proliferation. I think the authors published similar experiments with BMP pathway mutants. The mad1-2 allele used here as stated below may not be very representative of other BMP pathway mutants. Therefore, it could be beneficial to compare the number of ISC number and clone sizes between other BMP experiments to provide the readers a clearer picture how these two pathways individually contribute (stronger/weaker effects) to the ISC number and gut homeostasis.\n\nThe main weakness of this manuscript is the analysis of the BMP pathway components, especially the mad1-2 allele. The mad RNAi and mad1-2 alleles (P insertion) are supposed to be weak alleles and that might be suitable for genetic enhancement assays here together with numb RNAi. However, the mad1-2 allele, and sometime the mad RNAi, showed weakly increased ISC clone size. This is kind of counter-intuitive that they should have a similar ISC loss and ISC clone size reduction.\n\nA much stronger phenotype was observed when numb mutants were subject to treatment of tissue damaging agents Bleomycin, which causes damage in different ways than DSS. Bleomycin as previously shown to be causing mainly enterocyte damage, and therefore disrupt BMP signaling from ECs more likely. Therefore, this treatment together with loss of numb led to highly significant reduction of ISC in clones and reduction of clone size/proliferation. One improvement is that it is not clear whether the authors discussed the nature of the two numb mutant alleles used in this study and the comparison to the strength of the RNAi allele. Because the phenotypes are weak, and more variable, the use of specific reagents is important.\n\nFurthermore, the use of possible activating alleles of either or both pathways to test genetic enhancement or synergistic activation will provide strong support for the claims.\n\nFor the revision, the authors have provided detailed responses, comments, and a revised manuscript that together satisfactorily answer all my questions. The manuscript read well and the flow of information is quite clear. I do not have further concerns and support the manuscript moving forward.\n",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "6d8bdf7d-2a91-4dc1-ae24-cb3dc95e0a44",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C1",
+      "claim": "Asymmetric Notch (N) signaling inhibits intestinal stem cell (ISC) self-renewal by promoting ISC differentiation into enteroblast (EB) in adult Drosophila midgut.",
+      "claim_type": "EXPLICIT",
+      "source": "In adult Drosophila midgut, asymmetric Notch (N) signaling inhibits intestinal stem cell (ISC) self-renewal by promoting ISC differentiation into enteroblast (EB).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established finding in the field, supported by citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "1a66e71d-7c65-4872-9ea5-e582d1794eaa",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C2",
+      "claim": "Epithelium-derived Bone Morphogenetic Protein (BMP) promotes ISC self-renewal by antagonizing N pathway activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We have previously shown that epithelium-derived Bone Morphogenetic Protein (BMP) promotes ISC self-renewal by antagonizing N pathway activity (Tian and Jiang, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to previous work by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "e32e6b4f-00c0-48b8-bbe4-2cf22f106dc3",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C3",
+      "claim": "Loss of BMP signaling results in ectopic N pathway activity even when the N ligand Delta (Dl) is depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that loss of BMP signaling results in ectopic N pathway activity even when the N ligand Delta (Dl) is depleted",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in Figure 1 showing N pathway activation in Put and Dl double RNAi guts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "6c5c41a1-6f90-4abf-857a-ec671ee38f13",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C4",
+      "claim": "The N inhibitor Numb acts in parallel with BMP signaling to ensure a robust ISC self-renewal program.",
+      "claim_type": "EXPLICIT",
+      "source": "the N inhibitor Numb acts in parallel with BMP signaling to ensure a robust ISC self-renewal program.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing that Numb becomes crucial when BMP signaling is compromised.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "8d907bf9-6552-4a84-afff-5379f9dbb2a4",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C5",
+      "claim": "Numb is asymmetrically segregated in about 80% of dividing ISCs.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Numb is asymmetrically segregated in about 80% of dividing ISCs, its activity is largely dispensable for ISC fate determination under normal homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "9e8bc571-0811-423a-8350-6ae5a8201d35",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C6",
+      "claim": "Numb activity is largely dispensable for ISC fate determination under normal homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Numb is asymmetrically segregated in about 80% of dividing ISCs, its activity is largely dispensable for ISC fate determination under normal homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by data showing that numb mutant clones can retain ISCs under homeostatic conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "0c6adf0b-20ef-4c75-a681-ddc19beb05db",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C7",
+      "claim": "Numb becomes crucial for ISC self-renewal when BMP signaling is compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Numb becomes crucial for ISC self-renewal when BMP signaling is compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing ISC loss in mad numb double mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "68921f96-20e1-480c-b530-530fa4511c39",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C8",
+      "claim": "Neither Mad RNA interference nor its hypomorphic mutation led to ISC loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas neither Mad RNA interference nor its hypomorphic mutation led to ISC loss",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "1f787098-104a-4c25-a1a9-ccb251bb6203",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C9",
+      "claim": "Inactivation of Numb in Mad RNAi or mad hypomorphic mutation backgrounds resulted in stem cell loss due to precocious ISC-to-EB differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "inactivation of Numb in these backgrounds resulted in stem cell loss due to precocious ISC-to-EB differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figures 2, 3, and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "11b66340-e3b7-422d-8700-6d1f3b5da261",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C10",
+      "claim": "Numb mutations resulted in stem cell loss during midgut regeneration in response to epithelial damage that causes fluctuation in BMP pathway activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we find that numb mutations resulted in stem cell loss during midgut regeneration in response to epithelial damage that causes fluctuation in BMP pathway activity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Figure 6 showing increased ISC loss in numb mutants after bleomycin treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "606de2e7-79dd-4338-abb3-b4f2ea79da89",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C11",
+      "claim": "The asymmetrical segregation of Numb into the future ISC may provide a fail-save mechanism for ISC self-renewal by offsetting BMP pathway fluctuation.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that the asymmetrical segregation of Numb into the future ISC may provide a fail-save mechanism for ISC self-renewal by offsetting BMP pathway fluctuation, which is important for ISC maintenance in regenerative guts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "432328f7-2285-4523-abb3-52c11657ee92",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C12",
+      "claim": "Drosophila midgut is an equivalent of mammalian small intestine.",
+      "claim_type": "EXPLICIT",
+      "source": "Drosophila midgut, an equivalent of mammalian small intestine, has emerged as a powerful system to study stem cell biology in adult tissue homeostasis and regeneration (Casali and Batlle, 2009; Jiang and Edgar, 2011; Jiang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in the field, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "7147df52-ded2-4209-8bb2-6600f07af085",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C13",
+      "claim": "Intestinal stem cells (ISCs) in adult midguts are localized at the basal side of the gut epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "Intestinal stem cells (ISCs) in adult midguts are localized at the basal side of the gut epithelium where they can undergo asymmetric cell division to produce renewed ISCs and enteroblasts (EBs) that differentiate into enterocytes (ECs) (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "faf4dda1-9d37-4a96-b470-1b55d9ad0822",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C14",
+      "claim": "ISCs can undergo asymmetric cell division to produce renewed ISCs and enteroblasts (EBs) that differentiate into enterocytes (ECs).",
+      "claim_type": "EXPLICIT",
+      "source": "Intestinal stem cells (ISCs) in adult midguts are localized at the basal side of the gut epithelium where they can undergo asymmetric cell division to produce renewed ISCs and enteroblasts (EBs) that differentiate into enterocytes (ECs) (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "1337aa6c-ec4d-4b2a-8fb3-26f81106585c",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C15",
+      "claim": "At low frequency, an ISC daughter is fated to preEE/EEP that differentiates into two enteroendocrine (EE) cells after another round of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "At low frequency, an ISC daughter is fated to preEE/EEP that differentiates into two enteroendocrine (EE) cells after another round of cell division (Biteau and Jasper, 2014; Beehler-Evans and Micchelli, 2015; Zeng and Hou, 2015; Chen et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "da76ee78-6938-4feb-b3a3-489d26ac9f7a",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C16",
+      "claim": "About 20% ISCs undergo symmetric cell division to produce two ISCs or two EBs.",
+      "claim_type": "EXPLICIT",
+      "source": "About 20% ISCs undergo symmetric cell division to produce two ISCs or two EBs (O'Brien et al., 2011; Goulas et al., 2012; Tian and Jiang, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "b8999e2f-7e0c-4375-a785-231fa412c274",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C17",
+      "claim": "The decision between ISC self-renewal and differentiation into EB lineage is controlled by Notch (N) signaling whereby N activation drives ISC differentiation into EB.",
+      "claim_type": "EXPLICIT",
+      "source": "The decision between ISC self-renewal and differentiation into EB lineage is controlled by Notch (N) signaling whereby N activation drives ISC differentiation into EB (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006; Ohlstein and Spradling, 2007; Bardin et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "9b7676b8-0174-4159-94bc-cd0baa0ae089",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C18",
+      "claim": "The asymmetric N signaling between ISC and EB is influenced by Par/integrins-directed asymmetric cell division and differential BMP signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "The asymmetric N signaling between ISC and EB is influenced by Par/integrins-directed asymmetric cell division and differential BMP signaling (Goulas et al., 2012; Tian and Jiang, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "2a43d300-d724-4ed5-9c86-756891fe92a5",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C19",
+      "claim": "EC-produced BMP ligands containing Decapentaplegic (Dpp) and Glass bottom boat (Gbb) heterodimers are secreted basally and concentrated on the basement membrane aligning the basal side of the gut epithelium.",
+      "claim_type": "EXPLICIT",
+      "source": "EC-produced BMP ligands containing Decapentaplegic (Dpp) and Glass bottom boat (Gbb) heterodimers are secreted basally and concentrated on the basement membrane aligning the basal side of the gut epithelium (Tian and Jiang, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "9e11b8c5-b9ec-44ef-a15c-c5dd6ab11c90",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C20",
+      "claim": "After asymmetric cell division of ISCs, basally localized daughter cells transduce higher levels of BMP signaling activity than the apically localized daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "After asymmetric cell division of ISCs, basally localized daughter cells transduce higher levels of BMP signaling activity than the apically localized daughter cells and the differential BMP signaling promotes ISC self-renewal by antagonizing N pathway activity through an unknown mechanism (Tian and Jiang, 2014; Tian and Jiang, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "002d6ed0-5818-4655-9ec8-ab641daed5ec",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C21",
+      "claim": "The differential BMP signaling promotes ISC self-renewal by antagonizing N pathway activity through an unknown mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "After asymmetric cell division of ISCs, basally localized daughter cells transduce higher levels of BMP signaling activity than the apically localized daughter cells and the differential BMP signaling promotes ISC self-renewal by antagonizing N pathway activity through an unknown mechanism (Tian and Jiang, 2014; Tian and Jiang, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous work and acknowledges the mechanism is unknown.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "ea119bde-0556-45f1-8267-efa3a283973d",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C22",
+      "claim": "The N pathway inhibitor Numb plays a decisive role in asymmetric cell fate determination in Drosophila peripheral and central nervous systems.",
+      "claim_type": "EXPLICIT",
+      "source": "The N pathway inhibitor Numb plays a decisive role in asymmetric cell fate determination in Drosophila peripheral and central nervous systems whereby Numb segregates asymmetrically into one daughter during division of a neuronal precursor cell and confers distinct fates to the two daughter cells (Uemura et al., 1989; Rhyu et al., 1994; Spana et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "ec5a2f16-6372-49c4-974f-820d235ab0a9",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C23",
+      "claim": "Numb segregates asymmetrically into one daughter during division of a neuronal precursor cell and confers distinct fates to the two daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The N pathway inhibitor Numb plays a decisive role in asymmetric cell fate determination in Drosophila peripheral and central nervous systems whereby Numb segregates asymmetrically into one daughter during division of a neuronal precursor cell and confers distinct fates to the two daughter cells (Uemura et al., 1989; Rhyu et al., 1994; Spana et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "4ccd708e-bf4b-4125-b389-67298210c386",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C24",
+      "claim": "The mammalian homologs of Numb are critical for asymmetric fate determination during neurogenesis and myogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The mammalian homologs of Numb are also critical for asymmetric fate determination during neurogenesis and myogenesis (Zhong et al., 1996; Conboy and Rando, 2002; Petersen et al., 2002; Shen et al., 2002; Petersen et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "63907000-2c82-4eed-99fb-f4eca456d192",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C25",
+      "claim": "During asymmetric division of an ISC in Drosophila adult midgut, Numb was preferentially segregated into the basally localized daughter that becomes future ISC.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that, during asymmetric division of an ISC in Drosophila adult midgut, Numb was preferentially segregated into the basally localized daughter that becomes future ISC (Goulas et al., 2012; Sall\u00e9 et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "3fefe723-a759-4b43-8b25-747b5e11177a",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C26",
+      "claim": "Many numb mutant clones retained ISC after many rounds of cell division although they failed to produce EE.",
+      "claim_type": "EXPLICIT",
+      "source": "however, many numb mutant clones retained ISC after many rounds of cell division although they failed to produce EE (Bardin et al., 2010; Sall\u00e9 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "15c8f343-b6b3-45ff-a330-285df3eec433",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C27",
+      "claim": "In control guts, most pairs of esg>GFP + precursor cells contained only one Su(H)-lacZ positive cell, indicating that these ISCs divided asymmetrically to produce one ISC and one EB.",
+      "claim_type": "EXPLICIT",
+      "source": "In control guts, most pairs of esg>GFP + precursor cells, which may represent two recently divided ISC daughters, contained only one Su(H)-lacZ positive cell, indicating that these ISCs divided asymmetrically to produce one ISC and one EB (Figure 1A, B\u2013B'', F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "b89db395-df13-4798-8c63-f521ec652954",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C28",
+      "claim": "Most esg>GFP + precursor pairs from the Put RNAi guts expressed Su(H)-lacZ in both ISC daughters, suggesting that ISCs underwent symmetric cell division to produce two EBs when Put was depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with our previous findings, most esg>GFP + precursor pairs from the Put RNAi guts expressed Su(H)-lacZ in both ISC daughters, suggesting that ISCs underwent symmetric cell division to produce two EBs when Put was depleted (Figure 1C\u2013C'', F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "8782043d-b55d-4ea6-b407-f8a365d1a308",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C29",
+      "claim": "esg>GFP+ cells in Dl RNAi guts formed ISC-like tumor clusters that were negative for Su(H)-lacZ.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, esg>GFP+ cells in Dl RNAi guts formed ISC-like tumor clusters that were negative for Su(H)-lacZ (Figure 1D\u2013D'', F)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "8930d235-b6c9-476d-b44f-7645138a5b4f",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C30",
+      "claim": "In Dl RNAi guts, N pathway activity was diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "similar to the ISC-like tumor clusters in guts containing Dl or N mutant clones (Micchelli and Perrimon, 2006; Ohlstein and Spradling, 2006; Ohlstein and Spradling, 2007; Siudeja et al., 2015), suggesting that in Dl RNAi guts, N pathway activity was diminished.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the similarity to previously characterized mutants and supported by citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "b7e86afc-bcd0-44c2-98d3-4575673d8767",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C31",
+      "claim": "Put and Dl double RNAi suppressed the formation of ISC-like clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "Put and Dl double RNAi suppressed the formation of ISC-like clusters (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "e871adfe-4d49-4d39-84e8-bde6768eeb1f",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C32",
+      "claim": "In Put and Dl double RNAi guts, esg-GFP+ cells exhibited Su(H)-lacZ expression, suggesting that they activate the N pathway and differentiate into EBs.",
+      "claim_type": "EXPLICIT",
+      "source": "In these guts, esg-GFP+ cells exhibited Su(H)-lacZ expression (Figure 1E\u2013E'', F), suggesting that they activate the N pathway and differentiate into EBs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "15c9948f-ce20-4030-9a37-4c155e8395ec",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C33",
+      "claim": "Compared with control guts, Mad or Numb single RNAi guts contained comparable number of Dl-lacZ+ m\u03b2-CD2\u2212 Pros\u2212 cells and E(spl)m\u03b2-CD2+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared with control guts (Figure 2A\u2013A''), Mad (Figure 2B\u2013B''), or Numb (Figure 2C\u2013C'') single RNAi guts contained comparable number of Dl-lacZ+ m\u03b2-CD2\u2212 Pros\u2212 cells and E(spl)m\u03b2-CD2+ cells (Figure 2E\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "790293dc-7ae5-4310-b4ef-c5b1987e7865",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C34",
+      "claim": "In Numb and Mad double RNAi guts, there was a significant decrease in the number of precursor cells and Dl-lacZ+ m\u03b2-CD2\u2212 Pros\u2212 cells, and a simultaneous increase in the number of E(spl)m\u03b2-CD2+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, in Numb and Mad double RNAi guts (Figure 2D\u2013D''), there was a significant decrease in the number of precursor cells (Figure 2E) and Dl-lacZ+ m\u03b2-CD2\u2212 Pros\u2212 cells (Figure 2F), and a simultaneous increase in the number of E(spl)m\u03b2-CD2+ cells (Figure 2G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "e2de485f-de2b-48e8-9af5-a42813c5847d",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C35",
+      "claim": "Inactivation of both Mad and Numb results in stem cell loss, likely due to precocious ISC-to-EB differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that inactivation of both Mad and Numb results in stem cell loss, likely due to precocious ISC-to-EB differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing decreased ISCs and increased EBs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "c8f955a6-bde3-461b-b22a-a168da73977c",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C36",
+      "claim": "The average size of mad1-2 clones is significantly larger than the control clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Tian and Jiang, 2014; Sall\u00e9 et al., 2017), the average size of mad1-2 clones is significantly larger than the control clones (Figure 3A\u2013A', B\u2013B', E\u2013E', F\u2013F', K)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3 and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "6ab6c093-ea22-4806-a459-d09fc476b4ce",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C37",
+      "claim": "numb4 clones had similar clone size distribution compared with control clones.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas numb4 clones had similar clone size distribution compared with control clones (Figure 3C\u2013C', G\u2013G', K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "07d80417-d9dc-4650-8805-3191d829456d",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C38",
+      "claim": "Most of mad1-2 or numb4 clones contained at least one ISC similar to control clones.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, most of mad1-2 or numb4 clones contained at least one ISC similar to control clones (Figure 3K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "dedae324-7b25-4ea2-aa41-29a827653f70",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C39",
+      "claim": "The average size of mad1-2 numb4 clones is significantly smaller than that of control clones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the average size of mad1-2 numb4 clones is significantly smaller than that of control clones (Figure 3D\u2013D', H\u2013H', K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "9f3dfbea-346d-4963-8763-87cea06fab3e",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C40",
+      "claim": "A much larger fraction of mad1-2 numb4 clones (~40%; n = 252) did not contain ISC.",
+      "claim_type": "EXPLICIT",
+      "source": "More importantly, a much larger fraction of mad1-2 numb4 clones (~40%; n = 252) did not contain ISC (Figure 3L)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "0e2ee26a-de8a-4d39-9f92-5bdf9484fcac",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C41",
+      "claim": "Many mad1-2 numb4 clones only contained ECs with large nuclei and stained positive for Pdm1.",
+      "claim_type": "EXPLICIT",
+      "source": "many of which only contained ECs with large nuclei and stained positive for Pdm1 (Figure 3I\u2013J').",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "46814ac1-d620-40f7-b9cc-40870f3eff3e",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C42",
+      "claim": "mad1-2 numb4 double mutation leads to ISC loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest mad1-2 numb4 double mutation leads to ISC loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing reduced clone size and increased ISC-negative clones.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "cba1990c-3614-4a02-91e2-dcc59ef81c22",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C43",
+      "claim": "The frequencies of ISC/EB, ISC/ISC, and EB/EB divisions in control guts were 69%, 15%, and 16%, respectively (n = 119).",
+      "claim_type": "EXPLICIT",
+      "source": "The frequencies of ISC/EB, ISC/ISC, and EB/EB divisions in control guts were 69%, 15%, and 16%, respectively (n = 119) (Figure 4D\u2013F, P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "cb01fb62-5a7a-4575-9c57-1f359660de18",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C44",
+      "claim": "Mad RNAi guts had higher frequency of ISC/ISC (30%), and lower frequency of EB/EB (5%) division compared to control guts (n = 73).",
+      "claim_type": "EXPLICIT",
+      "source": "Mad RNAi guts had higher frequency of ISC/ISC (30%), and lower frequency of EB/EB (5%) division compared to control guts (n = 73) (Figure 4G\u2013I, P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "bdd7368b-af52-452e-a048-b27e920378bb",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C45",
+      "claim": "The increase in symmetric self-renewing division in Mad RNAi guts is likely due to an increase in BMP ligand production in these guts because BMP signaling in EC inhibits BMP ligand expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The increase in symmetric self-renewing division in Mad RNAi guts is likely due to an increase in BMP ligand production in these guts because BMP signaling in EC inhibits BMP ligand expression (Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data and supported by a citation to previous work.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "8857b855-5a59-4b39-890a-11b3198cf023",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C46",
+      "claim": "The frequencies of different ISC division classes in Numb RNAi guts are comparable to those of control guts (ISC/EB: 73%, ISC/ISC: 18%, EB/EB: 9%, n = 127).",
+      "claim_type": "EXPLICIT",
+      "source": "The frequencies of different ISC division classes in Numb RNAi guts are comparable to those of control guts (ISC/EB: 73%, ISC/ISC: 18%, EB/EB: 9%, n = 127) (Figure 4J\u2013L, P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "d3cf3939-471d-4dba-b20b-0e886a427f70",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C47",
+      "claim": "Mad and Numb double RNAi guts had lower frequency of ISC/ISC division (11%) and much higher EB/EB division (37%) than control guts (n = 54).",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, Mad and Numb double RNAi guts had lower frequency of ISC/ISC division (11%) and much higher EB/EB division (37%) than control guts (n = 54) (Figure 4M\u2013P).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "cad9e7f4-991d-465d-9279-50db3dfabc2c",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C48",
+      "claim": "Inactivation of Numb in backgrounds where BMP signaling was compromised altered the ISC division outcome that favors symmetric differentiation division leading to ISC loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, inactivation of Numb in backgrounds where BMP signaling was compromised altered the ISC division outcome that favors symmetric differentiation division leading to ISC loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing increased EB/EB divisions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "330d1e03-a767-45a4-ad9e-459e73a64a04",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C49",
+      "claim": "Both numb4 and numb15 clones contained similarly higher frequencies of Dl\u2212 clones than the control clones.",
+      "claim_type": "EXPLICIT",
+      "source": "By immunostaining for Dl expression that marks ISC, we found that both numb4 and numb15 clones contained similarly higher frequencies of Dl\u2212 clones than the control clones (Figure 5A\u2013C', E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "eae9859b-0db1-49b6-9b26-30965881b734",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C50",
+      "claim": "Most numb15 clones grew into large size similar to the control clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous findings (Bardin et al., 2010; Sall\u00e9 et al., 2017), most numb15 clones grew into large size similar to the control clones (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5 and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "0409ba92-73db-4d8a-acc5-a63f3fa5ad36",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C51",
+      "claim": "Many ISC\u2212 numb clones lost ISC at late stages during their clonal growth.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that many ISC\u2212 numb clones lost ISC at late stages during their clonal growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that numb clones can grow large but have higher frequencies of ISC-negative clones.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "66c7c43f-bba0-44ea-ad9c-d3c5d7f240ac",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C52",
+      "claim": "numb mutant clones did not contain Pros+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also examined Pros expression and found that numb mutant clones did not contain Pros+ cells (Figure 5\u2014figure supplement 1A\u2013C')",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "1c8631d1-91fa-4fd9-93b4-357866ddc012",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C53",
+      "claim": "numb is required for EE fate regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "which is consistent with a previous study showing that numb is required for EE fate regulation (Sall\u00e9 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "08e2f990-ac61-45bd-934d-ad36c42ee6d6",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C54",
+      "claim": "In mock-treated control guts, approximately 12% (n = 178) of the clones did not contain Dl+ cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In mock-treated control guts, approximately 12% (n = 178) of the clones did not contain Dl+ cell, while 21% (n = 216) of the numb4 and 24% (n = 219) of the numb15 clones were void of stem cells (Figure 6A\u2013A', D\u2013D', G\u2013G', J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "080dbbdb-cb38-4196-bfa0-676c4b7b1816",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C55",
+      "claim": "In mock-treated guts, 21% (n = 216) of the numb4 and 24% (n = 219) of the numb15 clones were void of stem cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In mock-treated control guts, approximately 12% (n = 178) of the clones did not contain Dl+ cell, while 21% (n = 216) of the numb4 and 24% (n = 219) of the numb15 clones were void of stem cells (Figure 6A\u2013A', D\u2013D', G\u2013G', J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "ce1070d2-ba6c-497f-8856-cfd3c6460225",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C56",
+      "claim": "Bleomycin treatment caused EC damage and enhanced the fluctuation in BMP ligand production.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that bleomycin treatment caused EC damage and enhanced the fluctuation in BMP ligand production whereas DSS affected basement membrane organization but did not increase the fluctuation in BMP ligand production (Amcheslavsky et al., 2009; Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "b3b60d98-b729-4a51-aafe-8c35f7efbd76",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C57",
+      "claim": "DSS affected basement membrane organization but did not increase the fluctuation in BMP ligand production.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies showed that bleomycin treatment caused EC damage and enhanced the fluctuation in BMP ligand production whereas DSS affected basement membrane organization but did not increase the fluctuation in BMP ligand production (Amcheslavsky et al., 2009; Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "99b53e27-066a-42fa-af2d-7e89ce439b1f",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C58",
+      "claim": "In guts treated with bleomycin, 12% (n = 160) of control clones did not contain Dl+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In guts treated with bleomycin, 12% (n = 160) of control clones did not contain Dl+ cells (Figure 6B\u2013B', J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "9368895c-cc23-405f-a996-c7a7bca3e8e5",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C59",
+      "claim": "Bleomycin feeding resulted in a dramatic increase of Dl\u2212 ISC-lineage clones in guts containing numb mutant clones as Dl+ cells were absent in 43% (n = 149) of numb4 and 45% (n = 213) of numb15 clones.",
+      "claim_type": "EXPLICIT",
+      "source": "However, bleomycin feeding resulted in a dramatic increase of Dl\u2212 ISC-lineage clones in guts containing numb mutant clones as Dl+ cells were absent in 43% (n = 149) of numb4 and 45% (n = 213) of numb15 clones (Figure 6E\u2013E', H\u2013H', J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "93aabbdd-198b-49c1-96ba-7165eacda184",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C60",
+      "claim": "DSS feeding did not increase the frequency of Dl\u2212 clones in guts containing numb mutant clones, as the frequencies of Dl\u2212 clones in control, numb4 and numb15 clonal guts were 10% (n = 167), 24% (n = 165), and 21% (n = 141), respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, DSS feeding did not increase the frequency of Dl\u2212 clones in guts containing numb mutant clones, as the frequencies of Dl\u2212 clones in control, numb4 and numb15 clonal guts were 10% (n = 167), 24% (n = 165), and 21% (n = 141), respectively (Figure 6C\u2013C', F\u2013F', I\u2013I' J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "2f441132-0961-4c54-84b3-7be06061773e",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C61",
+      "claim": "Bleomycin resulted in a reduction in numb mutant clone size, as compared with the mock treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Bleomycin also resulted in a reduction in numb mutant clone size, as compared with the mock treatment (Figure 6K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "1b4f5b42-d470-4439-b6a8-5834d60c651a",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C62",
+      "claim": "Numb plays an important role in ISC maintenance in regenerative guts in response to bleomycin-induced tissue damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that Numb plays an important role in ISC maintenance in regenerative guts in response to bleomycin-induced tissue damage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing increased ISC loss in numb mutants after bleomycin treatment.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "8f9f6253-6377-48c4-bd69-4197b4932eb8",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C63",
+      "claim": "Numb is important for ISC self-renewal during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we demonstrated that Numb is important for ISC self-renewal during regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing increased ISC loss in numb mutants during regeneration.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "018cad84-2f08-4ff0-8f62-df97f8197331",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C64",
+      "claim": "Numb is largely dispensable for homeostatic ISC self-renewal due to the predominant role of BMP signaling in this context.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that Numb is largely dispensable for homeostatic ISC self-renewal due to the predominant role of BMP signaling in this context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental data showing that numb mutants have mild phenotypes under homeostatic conditions.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "18d41124-1885-4911-b4f5-c1da18689398",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C65",
+      "claim": "Numb becomes critical for ISC self-renewal under conditions where BMP signaling is compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we found that Numb becomes critical for ISC self-renewal under conditions where BMP signaling is compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing ISC loss in mad numb double mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "0f8d1896-71f0-491c-a478-4fbe8f6c0347",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C66",
+      "claim": "Immediately after bleomycin treatment, there was an increase in the ISC population size due to a transient surge in BMP ligand production.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study showed that immediately after bleomycin treatment, there was an increase in the ISC population size due to a transient surge in BMP ligand production (Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "9de6c1b1-c2a7-4438-8327-c62d76eb4f0a",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C67",
+      "claim": "During regeneration, BMP ligand production was downregulated due to the autoinhibition of BMP ligand expression by BMP signaling in ECs.",
+      "claim_type": "EXPLICIT",
+      "source": "However, during regeneration, BMP ligand production was downregulated due to the autoinhibition of BMP ligand expression by BMP signaling in ECs (Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "551ac171-885f-4b17-995c-447c3d19683c",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C68",
+      "claim": "The reduction in BMP ligand production promoted ISC-to-EB differentiation to reset the ISC population size back to the homeostatic level after regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduction in BMP ligand production promoted ISC-to-EB differentiation to reset the ISC population size back to the homeostatic level after regeneration (Tian et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "ec41233a-308d-4deb-929c-ad5cde8bd06f",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C69",
+      "claim": "Asymmetric distribution of Numb in dividing ISCs may prevent excessive ISC-to-EB differentiation that could otherwise lead to a decreased ISC population during regeneration.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that asymmetric distribution of Numb in dividing ISCs may prevent excessive ISC-to-EB differentiation that could otherwise lead to a decreased ISC population during regeneration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the experimental findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "185ea4ba-b0b0-453f-98c7-5bf118b44f26",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C70",
+      "claim": "Under homeostatic conditions, most ISCs divide basally so that the basally localized ISC daughters inherit Numb and transducing higher levels of BMP signaling activity than the apically situated daughter cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Under homeostatic conditions, most ISCs divide basally so that the basally localized ISC daughters inherit Numb and transducing higher levels of BMP signaling activity than the apically situated daughter cells, the combined differential activities in BMP signaling and Numb drive robust asymmetric division outcomes to produce ISC/EB pairs (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "fa4be963-df6f-45a8-b687-9c4e12c068c6",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C71",
+      "claim": "The combined differential activities in BMP signaling and Numb drive robust asymmetric division outcomes to produce ISC/EB pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "Under homeostatic conditions, most ISCs divide basally so that the basally localized ISC daughters inherit Numb and transducing higher levels of BMP signaling activity than the apically situated daughter cells, the combined differential activities in BMP signaling and Numb drive robust asymmetric division outcomes to produce ISC/EB pairs (Figure 7A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "99ba0fb8-4df5-4625-aa01-bb2e17cb798d",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C72",
+      "claim": "In the numb mutant background, differential BMP signaling activities between the apical and basal daughter cells suffice to drive asymmetric division outcomes in most cases.",
+      "claim_type": "EXPLICIT",
+      "source": "In the numb mutant background, differential BMP signaling activities between the apical and basal daughter cells suffice to drive asymmetric division outcomes in most cases (Figure 7B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "88ecdb76-6575-4cf0-937b-585f2a6eb220",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C73",
+      "claim": "In the mad mutant background, the BMP signaling activity gradient becomes shallower but differential Numb activity between the apical and basal daughter cells can compensate for the compromised BMP signaling gradient to drive asymmetric division outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the mad mutant background, the BMP signaling activity gradient becomes shallower but differential Numb activity between the apical and basal daughter cells can compensate for the compromised BMP signaling gradient to drive asymmetric division outcomes (Figure 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "6ec7f011-ed9f-4ec0-8982-a42068a3e738",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C74",
+      "claim": "In numb mad double mutant background or in numb mutant guts damaged by bleomycin feeding, the compromised BMP signaling activity gradient alone is often insufficient to drive asymmetric division outcomes, leading to ISC loss due to symmetric EB/EB division outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in numb mad double mutant background or in numb mutant guts damaged by bleomycin feeding, the compromised BMP signaling activity gradient alone is often insufficient to drive asymmetric division outcomes, leading to ISC loss due to symmetric EB/EB division outcomes (Figure 7D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a model proposed based on the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "cf1f298c-708b-4b8f-981b-e674b4fd3c1f",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C75",
+      "claim": "Endogenous Numb was undetectable using Numb antibodies.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, previous studies indicate that endogenous Numb was undetectable using Numb antibodies (Goulas et al., 2012; Couturier et al., 2013; Sall\u00e9 et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "75f095ab-6562-4936-94f2-73dd66a8abfb",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C77",
+      "claim": "In Put deficient progenitor cells, the N pathway was activated in the absence of detectable N ligand Delta (Dl).",
+      "claim_type": "EXPLICIT",
+      "source": "In Put deficient progenitor cells, the N pathway was activated in the absence of detectable N ligand Delta (Dl).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on previous observations by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "093f7c3d-c478-4c46-8be8-6948330688ce",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C78",
+      "claim": "Progenitor cells deficient for both Put and N failed to differentiate to EBs and formed stem cell-like tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Progenitor cells deficient for both Put and N failed to differentiate to EBs and formed stem cell-like tumors (Tian and Jiang, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "c7c1d486-6ac5-4fc0-9128-8078c5f40252",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C79",
+      "claim": "Partial loss of BMP pathway activity in several genetic backgrounds including Mad RNAi and mad1-2 did not lead to ISC loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous study showed that partial loss of BMP pathway activity in several genetic backgrounds including Mad RNAi and mad1-2, a hypomorphic allele of mad, did not lead to ISC loss",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "88d702d3-f1a1-4b7c-a0a3-5b4c01309bc2",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "claim_id": "C80",
+      "claim": "More complete loss of BMP signaling in Put RNAi guts or put mutant ISC-lineage clones resulted in ISC loss.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas more complete loss of BMP signaling in Put RNAi guts or put mutant ISC-lineage clones resulted in ISC loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Loss of BMP signaling results in ectopic Notch pathway activity even when the Notch ligand Delta is depleted. Put and Dl double RNAi guts showed Su(H)-lacZ expression in esg-GFP+ cells, indicating N pathway activation and EB differentiation despite absence of detectable Dl.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C27-C32 provide converging experimental evidence from Figure 1 showing that Put/Dl double RNAi suppresses ISC-like tumor formation and activates N pathway markers. This demonstrates ligand-independent N activation when BMP signaling is lost, supporting the epistatic relationship between BMP and N pathways.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Numb acts in parallel with BMP signaling to ensure robust ISC self-renewal. While Mad or Numb single RNAi/mutations do not cause ISC loss, combined inactivation of Mad and Numb results in significant stem cell depletion due to precocious ISC-to-EB differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C33-C35 are supported by RNAi data in Figure 2 showing decreased ISCs and increased EBs only in double knockdown conditions. Claims C36-C42 provide genetic confirmation using MARCM clones in Figure 3, demonstrating ~40% of mad numb double mutant clones lack ISCs. The parallel pathway model is well-supported by converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "3e776e2a-54d9-40de-87ec-53f8f66626e3",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MARCM clonal analysis reveals that mad1-2 numb4 double mutant clones are significantly smaller than control clones and ~40% lack ISCs, containing only differentiated ECs. In contrast, mad1-2 or numb4 single mutant clones maintain ISCs comparably to controls.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C42 are directly supported by quantitative data in Figure 3K-L showing clone size distributions and ISC presence/absence. The use of two independent genetic approaches (RNAi and MARCM) strengthens the conclusion that Numb and Mad act redundantly to maintain ISCs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "278caf6f-0f77-4b0e-951f-a6927eb3a59e",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Twin-spot lineage tracing demonstrates that Mad and Numb double RNAi alters ISC division outcomes, increasing symmetric differentiation (EB/EB: 37% vs 16% control) and decreasing symmetric self-renewal (ISC/ISC: 11% vs 15% control), leading to ISC loss.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C48 are supported by quantitative twin-spot data in Figure 4P showing statistically significant shifts in division outcomes. The RGT system provides direct evidence of altered fate decisions. However, sample sizes vary (n=54-127), and the mechanism linking division outcomes to ISC loss could be more directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Numb is largely dispensable for ISC fate determination under normal homeostasis. numb mutant clones can grow to large sizes comparable to controls, though they show modestly increased frequencies of ISC-negative clones (21-24% vs 12% control).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C37-C38, C49-C51 are supported by data in Figures 3 and 5 showing that most numb clones retain ISCs and grow normally. The mild ISC loss phenotype (statistically significant but modest) supports the conclusion that Numb is not essential under homeostatic conditions, consistent with BMP signaling playing the dominant role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "054e7f4b-a897-4fa6-a643-00f28029b45d",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Numb is critical for ISC maintenance during regeneration. Bleomycin treatment, which causes BMP pathway fluctuation, dramatically increases ISC loss in numb mutant clones (43-45% ISC-negative vs 12% control), while DSS treatment does not enhance the phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C62 are strongly supported by Figure 6 data showing specific enhancement of ISC loss with bleomycin but not DSS treatment. The differential effects of bleomycin vs DSS (C56-C57, supported by citations) provide mechanistic insight linking BMP fluctuation to Numb requirement. Statistical significance is demonstrated with large sample sizes (n=141-219).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "71df7f1b-b552-4e5b-b533-e3f18cd23cf7",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "numb mutant clones lack Prospero-positive enteroendocrine (EE) cells, confirming that numb is required for EE fate regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by immunostaining data in Figure 5\u2014figure supplement 1 and citation to Sall\u00e9 et al., 2017. This is a confirmatory finding consistent with prior work, demonstrating technical validity of the numb alleles used.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "95863d19-fe73-4e24-8d37-2841de69156a",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose a model where asymmetric Numb segregation provides a fail-safe mechanism for ISC self-renewal by compensating for BMP pathway fluctuations. Under homeostasis, differential BMP signaling and Numb activity cooperate; when either is compromised, the other can compensate; but loss of both leads to ISC depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11, C69-C74 represent a mechanistic model synthesizing the experimental findings. The model is well-supported by the genetic interaction data (Figures 2-4) and regeneration experiments (Figure 6). However, these are interpretive claims based on inference rather than direct mechanistic demonstration. The model is internally consistent and parsimonious but remains speculative regarding molecular mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims establishing the Drosophila midgut ISC system, including roles of Notch signaling in ISC differentiation, BMP signaling in ISC self-renewal, asymmetric cell division, and Numb function in other systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C12-C25 are established knowledge supported by multiple citations to prior work. These provide necessary context but are not novel findings of this study. The citations appear appropriate and accurately represent prior work in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "f8557046-b18c-4eb6-964e-93268388d431",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Numb is asymmetrically segregated in about 80% of dividing ISCs, though endogenous Numb protein is undetectable by antibody staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C75 are supported by citations to previous studies (Goulas et al., 2012; Sall\u00e9 et al., 2017). The low detectability of endogenous Numb (C75) is relevant for interpreting why asymmetric Numb may be insufficient to drive asymmetric outcomes without BMP signaling. These are contextual claims from prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "1879ade6-1477-4398-8a2c-c137298aa97b",
+      "content_id": "4c7d08ca-84f9-4aaf-a16d-9ad8856aa34f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "During regeneration, BMP ligand production initially surges then is downregulated through autoinhibition, promoting ISC-to-EB differentiation to reset ISC population size.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by citation to Tian et al., 2017. These provide mechanistic context for understanding why Numb becomes important during regeneration when BMP signaling fluctuates. This is prior work by the same authors establishing the regeneration context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "9a54d39b-06ad-4290-9d5d-3fde54c768ca",
+      "content_id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Loss of BMP signaling (Put RNAi) results in ectopic Notch pathway activity even when the Notch ligand Delta (Dl) is depleted. The authors show that Put and Dl double RNAi suppresses ISC-like tumor formation but still activates Notch signaling in progenitor cells, suggesting Notch activation is independent of Delta ligand when BMP signaling is lost.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raises a technical limitation, noting that 'depending on how fast both proteins are depleted, it may be that only one of them (put, for example) is inactivated and affects the fate decision prior to the other one (Dl) being depleted. Therefore, it is difficult to definitively conclude that the decision is independent of Dl ligand.' This critique questions the interpretation of the double knockdown experiment, though the data itself is not disputed.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "47a01000-a32d-4e56-b9d4-d610ff703290",
+      "content_id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Neither Mad RNAi nor Numb RNAi alone leads to ISC loss, but combined Mad and Numb double RNAi results in significant decrease in ISC numbers and increase in enteroblasts, suggesting stem cell loss due to precocious differentiation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers accept this finding. Reviewer 1 states the results 'demonstrate an important role of Numb in maintaining ISC number during regeneration and a genetic interaction between Mad and Numb during homeostasis.' Reviewer 3 notes 'the results and statistical analyses provides believable evidence' for the genetic interaction. No concerns were raised about these RNAi experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1",
+      "content_id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "mad1-2 numb4 double mutant clones are significantly smaller than control clones, with ~40% lacking ISCs entirely and many containing only differentiated enterocytes. In contrast, mad1-2 or numb4 single mutant clones retain ISCs similar to controls.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the clonal analysis data showing genetic interaction. Reviewer 1 notes 'ISC loss was observed in 40% of mad, numb double mutant clones, whereas 60% of these clones had an ISC' and raises no concerns. Reviewer 3 acknowledges the data are 'highly coherent' though notes the phenotypes are 'weaker than many other mutants previously studied,' which is a contextual observation rather than a critique of validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "28e9d4f8-a1f6-427b-b833-189294debb39",
+      "content_id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Using the RGT two-color tracing system, the authors show that Mad and Numb double RNAi guts have much lower ISC/ISC symmetric division (11%) and much higher EB/EB symmetric differentiation division (37%) compared to controls, while single knockdowns show minimal changes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly describes this result: 'They then employed a two-color tracing system called RGT to look at the outcome of ISC divisions... mad, numb double mutant clones had much lower ISC/ISC (11%) and much higher EB/EB (37%).' The reviewer concludes this demonstrates that 'loss of Numb in moderate BMP loss of function mutants increased symmetric differentiation which lead caused ISC loss.' No concerns were raised about this analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "a0cb6a7e-2b0c-447f-8784-86cc7350c2df",
+      "content_id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "numb mutant clones (both numb4 and numb15 alleles) show moderately increased frequencies of ISC-lacking clones compared to controls under homeostatic conditions, though most clones can grow to large sizes and retain ISCs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding as demonstrating a mild homeostatic role for Numb. Reviewer 1 states the authors 'reported that numb15 and numb4 clones had a moderate but significant increase in ISC-lacking clones compared to control clones, supporting the model that Numb plays a role in ISC maintenance.' Reviewer 3 notes 'a weak reduction of ISC number' in numb mutants, which is consistent with the authors' interpretation that Numb is largely dispensable under homeostasis.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "c0106421-14e1-4284-a105-e3e9b8797153",
+      "content_id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Bleomycin treatment, which causes fluctuation in BMP ligand production, results in dramatic increase in ISC-lacking clones (43-45%) and reduced clone size in numb mutants. DSS treatment, which does not affect BMP fluctuation, shows no such increase.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers strongly support this regeneration finding. Reviewer 1 states 'After bleomycin treatment, there was a significant increase in ISC-lacking clones and a significant decrease in clone size in numb4 and numb15 clones compared to control clones' and concludes the results demonstrate 'an essential role of Numb in ISC maintenance during regeneration.' Reviewer 3 notes 'A much stronger phenotype was observed when numb mutants were subject to treatment of tissue damaging agents Bleomycin' and that this 'led to highly significant reduction of ISC in clones.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "1f359ee2-81ec-4e51-9e35-8597a7e4811c",
+      "content_id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Numb acts in parallel with BMP signaling as a backup mechanism: Numb is largely dispensable under normal homeostasis due to predominant BMP signaling, but becomes critical for ISC self-renewal when BMP signaling is compromised.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This interpretive model is accepted by all reviewers. Reviewer 2 states the study 'provides an interesting model of a \"back up\" protection mechanism for ISC maintenance' and notes 'Experiments are consistent with these previous publications while also extending our understanding of how Numb functions in the ISC.' The editor summarizes that 'the authors demonstrate the ISC maintenance is reduced when both BMP signaling and Numb expression is reduced,' supporting the parallel pathway model.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "405fb305-f0e6-4517-b0ba-57abb386c033",
+      "content_id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose a model where asymmetric Numb segregation provides a fail-safe mechanism for ISC self-renewal by offsetting BMP pathway fluctuation. Under homeostasis, combined differential BMP and Numb activities drive asymmetric divisions, but when both are compromised, symmetric differentiation divisions lead to ISC loss.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this mechanistic model as a reasonable interpretation of the data. Reviewer 2 states the study 'provides an interesting model of a \"back up\" protection mechanism for ISC maintenance' with no objections to the proposed mechanism. Reviewer 3 notes 'the results overall support their claim' regarding the backup mechanism. The model is presented as speculative interpretation (Figure 7) and reviewers treat it as such without challenging its logic given the experimental evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "8d8985a9-6132-48e3-84be-e9e21b0ef788",
+      "content_id": "d67965f0-d11e-4bd1-ac78-869d32d5b6ba",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "numb mutant clones do not contain Pros+ enteroendocrine cells, consistent with previous findings that numb is required for EE fate regulation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is accepted without comment from reviewers, consistent with established literature. The authors cite previous work (Sall\u00e9 et al., 2017) and reviewers do not question this observation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "e32e6b4f-00c0-48b8-bbe4-2cf22f106dc3",
+      "result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b"
+    },
+    {
+      "claim_id": "15c8f343-b6b3-45ff-a330-285df3eec433",
+      "result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b"
+    },
+    {
+      "claim_id": "b89db395-df13-4798-8c63-f521ec652954",
+      "result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b"
+    },
+    {
+      "claim_id": "8782043d-b55d-4ea6-b407-f8a365d1a308",
+      "result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b"
+    },
+    {
+      "claim_id": "8930d235-b6c9-476d-b44f-7645138a5b4f",
+      "result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b"
+    },
+    {
+      "claim_id": "b7e86afc-bcd0-44c2-98d3-4575673d8767",
+      "result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b"
+    },
+    {
+      "claim_id": "e871adfe-4d49-4d39-84e8-bde6768eeb1f",
+      "result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b"
+    },
+    {
+      "claim_id": "75f095ab-6562-4936-94f2-73dd66a8abfb",
+      "result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b"
+    },
+    {
+      "claim_id": "093f7c3d-c478-4c46-8be8-6948330688ce",
+      "result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b"
+    },
+    {
+      "claim_id": "6c5c41a1-6f90-4abf-857a-ec671ee38f13",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "0c6adf0b-20ef-4c75-a681-ddc19beb05db",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "68921f96-20e1-480c-b530-530fa4511c39",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "1f787098-104a-4c25-a1a9-ccb251bb6203",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "15c9948f-ce20-4030-9a37-4c155e8395ec",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "790293dc-7ae5-4310-b4ef-c5b1987e7865",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "e2de485f-de2b-48e8-9af5-a42813c5847d",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "18d41124-1885-4911-b4f5-c1da18689398",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "c7c1d486-6ac5-4fc0-9128-8078c5f40252",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "88d702d3-f1a1-4b7c-a0a3-5b4c01309bc2",
+      "result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9"
+    },
+    {
+      "claim_id": "c8f955a6-bde3-461b-b22a-a168da73977c",
+      "result_id": "3e776e2a-54d9-40de-87ec-53f8f66626e3"
+    },
+    {
+      "claim_id": "6ab6c093-ea22-4806-a459-d09fc476b4ce",
+      "result_id": "3e776e2a-54d9-40de-87ec-53f8f66626e3"
+    },
+    {
+      "claim_id": "07d80417-d9dc-4650-8805-3191d829456d",
+      "result_id": "3e776e2a-54d9-40de-87ec-53f8f66626e3"
+    },
+    {
+      "claim_id": "dedae324-7b25-4ea2-aa41-29a827653f70",
+      "result_id": "3e776e2a-54d9-40de-87ec-53f8f66626e3"
+    },
+    {
+      "claim_id": "9f3dfbea-346d-4963-8763-87cea06fab3e",
+      "result_id": "3e776e2a-54d9-40de-87ec-53f8f66626e3"
+    },
+    {
+      "claim_id": "0e2ee26a-de8a-4d39-9f92-5bdf9484fcac",
+      "result_id": "3e776e2a-54d9-40de-87ec-53f8f66626e3"
+    },
+    {
+      "claim_id": "46814ac1-d620-40f7-b9cc-40870f3eff3e",
+      "result_id": "3e776e2a-54d9-40de-87ec-53f8f66626e3"
+    },
+    {
+      "claim_id": "cba1990c-3614-4a02-91e2-dcc59ef81c22",
+      "result_id": "278caf6f-0f77-4b0e-951f-a6927eb3a59e"
+    },
+    {
+      "claim_id": "cb01fb62-5a7a-4575-9c57-1f359660de18",
+      "result_id": "278caf6f-0f77-4b0e-951f-a6927eb3a59e"
+    },
+    {
+      "claim_id": "bdd7368b-af52-452e-a048-b27e920378bb",
+      "result_id": "278caf6f-0f77-4b0e-951f-a6927eb3a59e"
+    },
+    {
+      "claim_id": "8857b855-5a59-4b39-890a-11b3198cf023",
+      "result_id": "278caf6f-0f77-4b0e-951f-a6927eb3a59e"
+    },
+    {
+      "claim_id": "d3cf3939-471d-4dba-b20b-0e886a427f70",
+      "result_id": "278caf6f-0f77-4b0e-951f-a6927eb3a59e"
+    },
+    {
+      "claim_id": "cad9e7f4-991d-465d-9279-50db3dfabc2c",
+      "result_id": "278caf6f-0f77-4b0e-951f-a6927eb3a59e"
+    },
+    {
+      "claim_id": "9e8bc571-0811-423a-8350-6ae5a8201d35",
+      "result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1"
+    },
+    {
+      "claim_id": "3fefe723-a759-4b43-8b25-747b5e11177a",
+      "result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1"
+    },
+    {
+      "claim_id": "6ab6c093-ea22-4806-a459-d09fc476b4ce",
+      "result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1"
+    },
+    {
+      "claim_id": "07d80417-d9dc-4650-8805-3191d829456d",
+      "result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1"
+    },
+    {
+      "claim_id": "330d1e03-a767-45a4-ad9e-459e73a64a04",
+      "result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1"
+    },
+    {
+      "claim_id": "eae9859b-0db1-49b6-9b26-30965881b734",
+      "result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1"
+    },
+    {
+      "claim_id": "0409ba92-73db-4d8a-acc5-a63f3fa5ad36",
+      "result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1"
+    },
+    {
+      "claim_id": "018cad84-2f08-4ff0-8f62-df97f8197331",
+      "result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1"
+    },
+    {
+      "claim_id": "11b66340-e3b7-422d-8700-6d1f3b5da261",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "08e2f990-ac61-45bd-934d-ad36c42ee6d6",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "080dbbdb-cb38-4196-bfa0-676c4b7b1816",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "ce1070d2-ba6c-497f-8856-cfd3c6460225",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "b3b60d98-b729-4a51-aafe-8c35f7efbd76",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "99b53e27-066a-42fa-af2d-7e89ce439b1f",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "9368895c-cc23-405f-a996-c7a7bca3e8e5",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "93aabbdd-198b-49c1-96ba-7165eacda184",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "2f441132-0961-4c54-84b3-7be06061773e",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "1b4f5b42-d470-4439-b6a8-5834d60c651a",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "8f9f6253-6377-48c4-bd69-4197b4932eb8",
+      "result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d"
+    },
+    {
+      "claim_id": "66c7c43f-bba0-44ea-ad9c-d3c5d7f240ac",
+      "result_id": "71df7f1b-b552-4e5b-b533-e3f18cd23cf7"
+    },
+    {
+      "claim_id": "1c8631d1-91fa-4fd9-93b4-357866ddc012",
+      "result_id": "71df7f1b-b552-4e5b-b533-e3f18cd23cf7"
+    },
+    {
+      "claim_id": "606de2e7-79dd-4338-abb3-b4f2ea79da89",
+      "result_id": "95863d19-fe73-4e24-8d37-2841de69156a"
+    },
+    {
+      "claim_id": "ec41233a-308d-4deb-929c-ad5cde8bd06f",
+      "result_id": "95863d19-fe73-4e24-8d37-2841de69156a"
+    },
+    {
+      "claim_id": "185ea4ba-b0b0-453f-98c7-5bf118b44f26",
+      "result_id": "95863d19-fe73-4e24-8d37-2841de69156a"
+    },
+    {
+      "claim_id": "fa4be963-df6f-45a8-b687-9c4e12c068c6",
+      "result_id": "95863d19-fe73-4e24-8d37-2841de69156a"
+    },
+    {
+      "claim_id": "99ba0fb8-4df5-4625-aa01-bb2e17cb798d",
+      "result_id": "95863d19-fe73-4e24-8d37-2841de69156a"
+    },
+    {
+      "claim_id": "88ecdb76-6575-4cf0-937b-585f2a6eb220",
+      "result_id": "95863d19-fe73-4e24-8d37-2841de69156a"
+    },
+    {
+      "claim_id": "6ec7f011-ed9f-4ec0-8982-a42068a3e738",
+      "result_id": "95863d19-fe73-4e24-8d37-2841de69156a"
+    },
+    {
+      "claim_id": "6d8bdf7d-2a91-4dc1-ae24-cb3dc95e0a44",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "1a66e71d-7c65-4872-9ea5-e582d1794eaa",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "432328f7-2285-4523-abb3-52c11657ee92",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "7147df52-ded2-4209-8bb2-6600f07af085",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "faf4dda1-9d37-4a96-b470-1b55d9ad0822",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "1337aa6c-ec4d-4b2a-8fb3-26f81106585c",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "da76ee78-6938-4feb-b3a3-489d26ac9f7a",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "b8999e2f-7e0c-4375-a785-231fa412c274",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "9b7676b8-0174-4159-94bc-cd0baa0ae089",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "2a43d300-d724-4ed5-9c86-756891fe92a5",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "9e11b8c5-b9ec-44ef-a15c-c5dd6ab11c90",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "002d6ed0-5818-4655-9ec8-ab641daed5ec",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "ea119bde-0556-45f1-8267-efa3a283973d",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "ec5a2f16-6372-49c4-974f-820d235ab0a9",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "4ccd708e-bf4b-4125-b389-67298210c386",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "63907000-2c82-4eed-99fb-f4eca456d192",
+      "result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd"
+    },
+    {
+      "claim_id": "8d907bf9-6552-4a84-afff-5379f9dbb2a4",
+      "result_id": "f8557046-b18c-4eb6-964e-93268388d431"
+    },
+    {
+      "claim_id": "cf1f298c-708b-4b8f-981b-e674b4fd3c1f",
+      "result_id": "f8557046-b18c-4eb6-964e-93268388d431"
+    },
+    {
+      "claim_id": "0f8d1896-71f0-491c-a478-4fbe8f6c0347",
+      "result_id": "1879ade6-1477-4398-8a2c-c137298aa97b"
+    },
+    {
+      "claim_id": "9de6c1b1-c2a7-4438-8327-c62d76eb4f0a",
+      "result_id": "1879ade6-1477-4398-8a2c-c137298aa97b"
+    },
+    {
+      "claim_id": "551ac171-885f-4b17-995c-447c3d19683c",
+      "result_id": "1879ade6-1477-4398-8a2c-c137298aa97b"
+    },
+    {
+      "claim_id": "e32e6b4f-00c0-48b8-bbe4-2cf22f106dc3",
+      "result_id": "9a54d39b-06ad-4290-9d5d-3fde54c768ca"
+    },
+    {
+      "claim_id": "15c8f343-b6b3-45ff-a330-285df3eec433",
+      "result_id": "9a54d39b-06ad-4290-9d5d-3fde54c768ca"
+    },
+    {
+      "claim_id": "b89db395-df13-4798-8c63-f521ec652954",
+      "result_id": "9a54d39b-06ad-4290-9d5d-3fde54c768ca"
+    },
+    {
+      "claim_id": "8782043d-b55d-4ea6-b407-f8a365d1a308",
+      "result_id": "9a54d39b-06ad-4290-9d5d-3fde54c768ca"
+    },
+    {
+      "claim_id": "8930d235-b6c9-476d-b44f-7645138a5b4f",
+      "result_id": "9a54d39b-06ad-4290-9d5d-3fde54c768ca"
+    },
+    {
+      "claim_id": "b7e86afc-bcd0-44c2-98d3-4575673d8767",
+      "result_id": "9a54d39b-06ad-4290-9d5d-3fde54c768ca"
+    },
+    {
+      "claim_id": "e871adfe-4d49-4d39-84e8-bde6768eeb1f",
+      "result_id": "9a54d39b-06ad-4290-9d5d-3fde54c768ca"
+    },
+    {
+      "claim_id": "68921f96-20e1-480c-b530-530fa4511c39",
+      "result_id": "47a01000-a32d-4e56-b9d4-d610ff703290"
+    },
+    {
+      "claim_id": "15c9948f-ce20-4030-9a37-4c155e8395ec",
+      "result_id": "47a01000-a32d-4e56-b9d4-d610ff703290"
+    },
+    {
+      "claim_id": "790293dc-7ae5-4310-b4ef-c5b1987e7865",
+      "result_id": "47a01000-a32d-4e56-b9d4-d610ff703290"
+    },
+    {
+      "claim_id": "e2de485f-de2b-48e8-9af5-a42813c5847d",
+      "result_id": "47a01000-a32d-4e56-b9d4-d610ff703290"
+    },
+    {
+      "claim_id": "c8f955a6-bde3-461b-b22a-a168da73977c",
+      "result_id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1"
+    },
+    {
+      "claim_id": "6ab6c093-ea22-4806-a459-d09fc476b4ce",
+      "result_id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1"
+    },
+    {
+      "claim_id": "07d80417-d9dc-4650-8805-3191d829456d",
+      "result_id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1"
+    },
+    {
+      "claim_id": "dedae324-7b25-4ea2-aa41-29a827653f70",
+      "result_id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1"
+    },
+    {
+      "claim_id": "9f3dfbea-346d-4963-8763-87cea06fab3e",
+      "result_id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1"
+    },
+    {
+      "claim_id": "0e2ee26a-de8a-4d39-9f92-5bdf9484fcac",
+      "result_id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1"
+    },
+    {
+      "claim_id": "46814ac1-d620-40f7-b9cc-40870f3eff3e",
+      "result_id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1"
+    },
+    {
+      "claim_id": "cba1990c-3614-4a02-91e2-dcc59ef81c22",
+      "result_id": "28e9d4f8-a1f6-427b-b833-189294debb39"
+    },
+    {
+      "claim_id": "cb01fb62-5a7a-4575-9c57-1f359660de18",
+      "result_id": "28e9d4f8-a1f6-427b-b833-189294debb39"
+    },
+    {
+      "claim_id": "bdd7368b-af52-452e-a048-b27e920378bb",
+      "result_id": "28e9d4f8-a1f6-427b-b833-189294debb39"
+    },
+    {
+      "claim_id": "8857b855-5a59-4b39-890a-11b3198cf023",
+      "result_id": "28e9d4f8-a1f6-427b-b833-189294debb39"
+    },
+    {
+      "claim_id": "d3cf3939-471d-4dba-b20b-0e886a427f70",
+      "result_id": "28e9d4f8-a1f6-427b-b833-189294debb39"
+    },
+    {
+      "claim_id": "cad9e7f4-991d-465d-9279-50db3dfabc2c",
+      "result_id": "28e9d4f8-a1f6-427b-b833-189294debb39"
+    },
+    {
+      "claim_id": "330d1e03-a767-45a4-ad9e-459e73a64a04",
+      "result_id": "a0cb6a7e-2b0c-447f-8784-86cc7350c2df"
+    },
+    {
+      "claim_id": "eae9859b-0db1-49b6-9b26-30965881b734",
+      "result_id": "a0cb6a7e-2b0c-447f-8784-86cc7350c2df"
+    },
+    {
+      "claim_id": "0409ba92-73db-4d8a-acc5-a63f3fa5ad36",
+      "result_id": "a0cb6a7e-2b0c-447f-8784-86cc7350c2df"
+    },
+    {
+      "claim_id": "08e2f990-ac61-45bd-934d-ad36c42ee6d6",
+      "result_id": "a0cb6a7e-2b0c-447f-8784-86cc7350c2df"
+    },
+    {
+      "claim_id": "080dbbdb-cb38-4196-bfa0-676c4b7b1816",
+      "result_id": "a0cb6a7e-2b0c-447f-8784-86cc7350c2df"
+    },
+    {
+      "claim_id": "ce1070d2-ba6c-497f-8856-cfd3c6460225",
+      "result_id": "c0106421-14e1-4284-a105-e3e9b8797153"
+    },
+    {
+      "claim_id": "b3b60d98-b729-4a51-aafe-8c35f7efbd76",
+      "result_id": "c0106421-14e1-4284-a105-e3e9b8797153"
+    },
+    {
+      "claim_id": "99b53e27-066a-42fa-af2d-7e89ce439b1f",
+      "result_id": "c0106421-14e1-4284-a105-e3e9b8797153"
+    },
+    {
+      "claim_id": "9368895c-cc23-405f-a996-c7a7bca3e8e5",
+      "result_id": "c0106421-14e1-4284-a105-e3e9b8797153"
+    },
+    {
+      "claim_id": "93aabbdd-198b-49c1-96ba-7165eacda184",
+      "result_id": "c0106421-14e1-4284-a105-e3e9b8797153"
+    },
+    {
+      "claim_id": "2f441132-0961-4c54-84b3-7be06061773e",
+      "result_id": "c0106421-14e1-4284-a105-e3e9b8797153"
+    },
+    {
+      "claim_id": "1b4f5b42-d470-4439-b6a8-5834d60c651a",
+      "result_id": "c0106421-14e1-4284-a105-e3e9b8797153"
+    },
+    {
+      "claim_id": "8f9f6253-6377-48c4-bd69-4197b4932eb8",
+      "result_id": "c0106421-14e1-4284-a105-e3e9b8797153"
+    },
+    {
+      "claim_id": "6c5c41a1-6f90-4abf-857a-ec671ee38f13",
+      "result_id": "1f359ee2-81ec-4e51-9e35-8597a7e4811c"
+    },
+    {
+      "claim_id": "0c6adf0b-20ef-4c75-a681-ddc19beb05db",
+      "result_id": "1f359ee2-81ec-4e51-9e35-8597a7e4811c"
+    },
+    {
+      "claim_id": "018cad84-2f08-4ff0-8f62-df97f8197331",
+      "result_id": "1f359ee2-81ec-4e51-9e35-8597a7e4811c"
+    },
+    {
+      "claim_id": "18d41124-1885-4911-b4f5-c1da18689398",
+      "result_id": "1f359ee2-81ec-4e51-9e35-8597a7e4811c"
+    },
+    {
+      "claim_id": "606de2e7-79dd-4338-abb3-b4f2ea79da89",
+      "result_id": "405fb305-f0e6-4517-b0ba-57abb386c033"
+    },
+    {
+      "claim_id": "ec41233a-308d-4deb-929c-ad5cde8bd06f",
+      "result_id": "405fb305-f0e6-4517-b0ba-57abb386c033"
+    },
+    {
+      "claim_id": "185ea4ba-b0b0-453f-98c7-5bf118b44f26",
+      "result_id": "405fb305-f0e6-4517-b0ba-57abb386c033"
+    },
+    {
+      "claim_id": "fa4be963-df6f-45a8-b687-9c4e12c068c6",
+      "result_id": "405fb305-f0e6-4517-b0ba-57abb386c033"
+    },
+    {
+      "claim_id": "99ba0fb8-4df5-4625-aa01-bb2e17cb798d",
+      "result_id": "405fb305-f0e6-4517-b0ba-57abb386c033"
+    },
+    {
+      "claim_id": "88ecdb76-6575-4cf0-937b-585f2a6eb220",
+      "result_id": "405fb305-f0e6-4517-b0ba-57abb386c033"
+    },
+    {
+      "claim_id": "6ec7f011-ed9f-4ec0-8982-a42068a3e738",
+      "result_id": "405fb305-f0e6-4517-b0ba-57abb386c033"
+    },
+    {
+      "claim_id": "66c7c43f-bba0-44ea-ad9c-d3c5d7f240ac",
+      "result_id": "8d8985a9-6132-48e3-84be-e9e21b0ef788"
+    },
+    {
+      "claim_id": "1c8631d1-91fa-4fd9-93b4-357866ddc012",
+      "result_id": "8d8985a9-6132-48e3-84be-e9e21b0ef788"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "89a8ea42-dd9b-437a-9f91-eb7d39913beb",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "3e776e2a-54d9-40de-87ec-53f8f66626e3",
+      "peer_result_id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C36-C42 regarding MARCM clonal analysis. Both evaluate as SUPPORTED, with OpenEval emphasizing quantitative data strength and peer reviewers accepting the findings while noting phenotypes are weaker than other mutants.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "71d14158-91aa-4b1b-8495-945cb20b15cb",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "278caf6f-0f77-4b0e-951f-a6927eb3a59e",
+      "peer_result_id": "28e9d4f8-a1f6-427b-b833-189294debb39",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C43-C48 regarding twin-spot RGT analysis of division outcomes. Both evaluate as SUPPORTED. OpenEval notes varying sample sizes and suggests mechanism could be more direct, while peer reviewers accept the findings without concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "d5b6446c-964f-4967-865c-8952194c4ac3",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "71df7f1b-b552-4e5b-b533-e3f18cd23cf7",
+      "peer_result_id": "8d8985a9-6132-48e3-84be-e9e21b0ef788",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C52-C53 regarding Numb asymmetric segregation. Both evaluate as SUPPORTED, treating this as confirmatory data consistent with prior literature (Sall\u00e9 et al., 2017).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "53ec3d35-6662-40c0-b690-90aae3a206ff",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "95863d19-fe73-4e24-8d37-2841de69156a",
+      "peer_result_id": "405fb305-f0e6-4517-b0ba-57abb386c033",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C11, C69-C74 regarding the mechanistic model. Both evaluate as SUPPORTED. OpenEval notes the model is interpretive and speculative regarding molecular mechanisms, while peer reviewers accept it as a reasonable 'back up' protection mechanism interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "8af459e2-69cd-4b8b-a47b-c4037473bec1",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "8a572ed2-0aa4-49b0-9830-a10ca84dc30b",
+      "peer_result_id": "9a54d39b-06ad-4290-9d5d-3fde54c768ca",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C3, C27-C32 regarding Put/Dl double RNAi and ligand-independent Notch activation. OpenEval evaluates as SUPPORTED, while peer review evaluates as UNCERTAIN due to Reviewer 2's concern about temporal depletion kinetics affecting interpretation of ligand independence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "c9582dc1-a701-41df-b0b7-5eb0d0cb5e59",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d",
+      "peer_result_id": "c0106421-14e1-4284-a105-e3e9b8797153",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C56-C63 regarding bleomycin-induced regeneration revealing Numb requirement. Both evaluate as SUPPORTED with high confidence. OpenEval emphasizes differential effects of bleomycin vs DSS and large sample sizes, while peer reviewers describe this as demonstrating an essential role during regeneration.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "fa36a946-8990-42a8-9bc4-0fa4063fd505",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9",
+      "peer_result_id": "47a01000-a32d-4e56-b9d4-d610ff703290",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address RNAi data showing genetic interaction (claims C8, C33-C35). Both evaluate as SUPPORTED. OpenEval also includes claims C4, C7, C9, C65, C79, C80 and mentions Figure 3 MARCM data, while peer review focuses specifically on the RNAi experiments without concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "88420603-7c39-4e2a-8a28-44d3d2dd8634",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1",
+      "peer_result_id": "a0cb6a7e-2b0c-447f-8784-86cc7350c2df",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address mild homeostatic phenotype of numb mutants (claims C49-C51). Both evaluate as SUPPORTED. OpenEval includes additional claims C6, C26, C37-C38, C64 and emphasizes BMP dominance, while peer review focuses on the moderate ISC loss phenotype.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "1b9aa55b-492d-4e1c-aafc-964dab5ae841",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "7cac9664-b9b5-4827-a5cc-12cc22f056c9",
+      "peer_result_id": "1f359ee2-81ec-4e51-9e35-8597a7e4811c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C4, C7, C65 regarding parallel pathway model interpretation. OpenEval evaluates experimental data as SUPPORTED, while peer review R7 evaluates the interpretive model itself as SUPPORTED, with reviewers accepting the 'back up' mechanism concept.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "4d483990-8784-440b-bc51-0dea88aca69d",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "7cd94c1a-e8db-4d73-9c75-3e4f7dfb90c1",
+      "peer_result_id": "d1504d06-f8b4-4a84-9357-cb5f8ce0e3b1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on claims C37-C38 regarding clone analysis. Both evaluate as SUPPORTED. OpenEval R5 focuses on mild phenotype under homeostasis, while peer R3 addresses the full MARCM clonal analysis dataset.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "711bc99e-978d-4706-8552-3c539786e9ff",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "054e7f4b-a897-4fa6-a643-00f28029b45d",
+      "peer_result_id": "a0cb6a7e-2b0c-447f-8784-86cc7350c2df",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minor overlap on claims C54-C55 regarding numb mutant phenotypes. OpenEval R6 evaluates regeneration context as SUPPORTED, while peer R5 evaluates homeostatic context as SUPPORTED, reflecting different experimental conditions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "906e49cb-bf65-4231-9ab4-87daad436bcc",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "47f9cc97-e1c7-4b07-9ff1-abb3997aa5bd",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R9 addresses claims C1-C2, C12-C25 as established background knowledge from prior literature, evaluated as SUPPORTED. No corresponding peer review evaluation found, as reviewers typically do not comment on background citations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "77ca0ed0-21bb-40d5-8ced-2fe4940949c7",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "f8557046-b18c-4eb6-964e-93268388d431",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R10 addresses claims C5, C75 regarding low Numb detectability from prior work (Goulas et al., 2012; Sall\u00e9 et al., 2017), evaluated as SUPPORTED. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    },
+    {
+      "id": "0006f9bf-562d-445e-a0b0-e838877dbc66",
+      "submission_id": "07166a79-3c6e-427e-b6bd-3122e971e6fb",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "1879ade6-1477-4398-8a2c-c137298aa97b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R11 addresses claims C66-C68 regarding BMP fluctuation during regeneration from prior work (Tian et al., 2017), evaluated as SUPPORTED. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:51:14.895246Z"
+    }
+  ]
+}

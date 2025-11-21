@@ -1,0 +1,261 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "The manuscript provides background epidemiological and economic data on tuberculosis (TB), citing that approximately 10 million people are infected annually with 1.6 million deaths in 2021, global spending exceeds $6.4 billion, and drug-resistant TB accounts for a quarter of antimicrobial resistance deaths.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are all supported by appropriate citations to WHO reports and peer-reviewed literature (Furin et al., 2019; Bagcchi, 2023; Global tuberculosis report 2023). These are standard epidemiological facts used to establish the study's context and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior literature demonstrates that intestinal microbiota dysbiosis affects respiratory diseases via the gut-lung axis, with specific alterations in bacterial phyla (Bacteroidetes, Firmicutes) observed in TB patients and animal models, and risk factors like alcohol, smoking, HIV, and diabetes causing gut dysbiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 appropriately cite prior work establishing the gut-lung axis concept and associations between gut microbiota alterations and TB. These citations provide the scientific rationale for the current study. All claims are supported by appropriate peer-reviewed references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Clindamycin treatment in mice significantly increased Mycobacterium smegmatis (MS) colonization in lungs, caused cecum dilation, elevated serum i-FABP and LPS levels indicating increased gut permeability, and resulted in more lung inflammation without obvious intestinal epithelial damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 are supported by experimental data shown in Figure 1 with appropriate statistical significance markers. The experimental design is clearly described, controls are present, and the measurements (CFU counts, ELISA, histology) are standard methods. The conclusion that clindamycin increases gut permeability and MS colonization is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Clindamycin treatment significantly altered gut bacterial and fungal microbiome diversity and composition, decreasing bacterial \u03b1-diversity while increasing fungal \u03b1-diversity, with significant changes in phylum-level abundances (decreased Bacteroidota, increased Firmicutes/Proteobacteria for bacteria; increased Basidiomycota for fungi) and genus-level composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 are supported by comprehensive 16S rRNA and ITS2 sequencing data shown in Figure 2 with appropriate statistical tests (p-values reported). The \u03b1-diversity (Chao1, inverse Simpson) and \u03b2-diversity (PCoA with R and p-values) analyses follow standard microbiome analysis protocols. Sample sizes (n=8 per group) are adequate for microbiome studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Clindamycin treatment disrupted the balance between bacteria and fungi (increased ITS/16S ratio, altered Firmicutes/Bacteroidota and Ascomycota/Basidiomycota ratios), dramatically decreased trans-kingdom network complexity (fewer nodes and edges, reduced connectedness), and increased fungi-fungi interactions relative to bacteria-fungi interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 are supported by network analysis data in Figure 3 and Table 1. The ITS/16S ratio analysis is a valid approach to assess bacteria-fungi balance. The trans-kingdom network analysis shows clear quantitative differences (154 vs 110 nodes, 810 vs 357 edges, connectedness 5.26 vs 3.25) with appropriate statistical significance. The shift in interaction patterns (fungi-fungi from 7.53% to 52.10%) is substantial and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Fecal microbiota transplantation (FMT) from clindamycin-treated donors successfully transferred gut microbiome dysbiosis characteristics to recipient mice, with 85.11% of bacterial genera and 52.38% of fungal genera from CL donors transferred, showing similar \u03b1-diversity changes, \u03b2-diversity separation, altered fungi/bacteria ratios, and reduced trans-kingdom network complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C52 demonstrate successful FMT model establishment with appropriate controls and comprehensive microbiome characterization. The transfer efficiency data (C48-C51) shows substantial colonization success. The recipient mice recapitulate key features of the donor dysbiosis (\u03b1-diversity, \u03b2-diversity, network complexity), validating the FMT approach. Sample sizes (n=6 per group) are adequate for FMT studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "FMT recipients receiving microbiota from clindamycin-treated donors showed significantly higher MS lung colonization, elevated serum i-FABP and LPS levels indicating increased intestinal permeability, but no significant cecum size differences or intestinal epithelial damage, demonstrating that gut microbiota dysbiosis enhances MS susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by experimental data in Figure 4 and supplements. The MS colonization data (C53) with statistical significance establishes causality between gut dysbiosis and lung infection susceptibility. The i-FABP and LPS measurements (C55-C56) provide mechanistic insight into increased gut permeability. The lack of cecum dilation (C54) and epithelial damage (C57) distinguishes FMT effects from direct antibiotic effects, strengthening the microbiota-specific conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Transcriptomic analysis of lung tissue revealed extensive differential gene expression in both clindamycin-treated and FMT recipient mice, with 98 commonly upregulated/downregulated genes enriched in immune and inflammatory response pathways, including tuberculosis-related pathways, with Nos2 being prominently enriched in both GO and KEGG analyses and validated by RT-qPCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C73 are supported by comprehensive RNA-seq analysis with appropriate statistical thresholds (FDR <0.05, FC >1). The identification of 98 common DEGs between CL and CL-FMT groups (C61) strengthens the conclusion that these changes are microbiota-driven. GO and KEGG enrichment analyses (C62-C66) follow standard protocols. RT-qPCR validation (C71) of key genes including Nos2 confirms RNA-seq reliability (C72). The focus on Nos2 is well-justified by its enrichment in multiple analyses (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Nos2 overexpression in A549 cells significantly increased MS colonization at multiple time points (6, 12, 24 hr), elevated NO levels, decreased ROS concentration, and reduced Defb1 expression, demonstrating that Nos2 disrupts the intracellular antimicrobial environment to enhance MS colonization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C80 are supported by in vitro experimental data in Figure 6. The Nos2 overexpression is confirmed (C74), and MS colonization increases are shown at multiple time points with statistical significance (C75). The mechanistic measurements of NO (C77), ROS (C78), and Defb1 (C79) provide a coherent molecular explanation. However, the study would be strengthened by protein-level validation of Nos2 and additional mechanistic experiments (e.g., Nos2 inhibition, rescue experiments).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The discussion contextualizes findings within existing literature on gut-lung axis, Bacteroidota dysbiosis in TB, clindamycin effects, fungal pathogens, microbial networks, FMT colonization patterns, and the complex dual role of NO/Nos2 in bacterial infections, citing both protective and growth-promoting effects depending on concentration and context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C101 appropriately cite relevant literature to contextualize the study's findings. The discussion acknowledges the complexity and apparent contradictions in the NO/Nos2 literature (C96-C101), which is scientifically appropriate. All claims are supported by appropriate citations to peer-reviewed literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The authors speculate that intracellular NO synthesized by Nos2 has dual roles: bactericidal at high concentrations and promoting bacterial growth at low concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is explicitly speculative and not directly tested in this study. While the speculation is reasonable given the cited literature showing contradictory effects of NO, the current study does not measure NO concentrations in vivo or test dose-dependent effects. This hypothesis requires future experimental validation with dose-response studies and in vivo NO measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The discussion reviews literature on ROS antimicrobial activity, NO-ROS interactions, and Defb1 antimicrobial properties, noting that the study found negative correlation between Defb1 expression and MS colonization in A549 cells, consistent with Defb1's known antimycobacterial activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C113 appropriately cite literature on ROS (C103-C108) and Defb1 (C109-C112). The negative correlation between Defb1 and MS colonization (C113) is inferred from the experimental data showing Nos2 overexpression reduces Defb1 and increases MS colonization, which is a reasonable inference but would benefit from direct correlation analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study concludes that gut microbiome dysbiosis induced by clindamycin disturbs bacteria-fungi equilibrium, alters lung transcriptome, increases Nos2 expression, and enhances MS pulmonary colonization through Nos2-NO, Nos2-ROS, and Nos2-Defb1 pathways, suggesting that regulating gut microbiome balance may be a potential TB prevention strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are well-supported by the comprehensive experimental evidence from the clindamycin model, FMT experiments, transcriptomics, and in vitro mechanistic studies. The proposed pathways (Nos2-NO, Nos2-ROS, Nos2-Defb1) are supported by the data, though the study acknowledges limitations (use of MS instead of Mtb, lack of macrophage studies, gene-level rather than protein-level analysis). Claim C116 is appropriately framed as a potential strategy requiring further validation.",
+    "result_type": "MAJOR"
+  }
+]

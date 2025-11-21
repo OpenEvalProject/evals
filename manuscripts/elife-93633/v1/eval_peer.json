@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "AMATERAS-2 is a volumetric trans-scale imaging system with an ultra-large field-of-view (1.5\u00d71.0 cm\u00b2) and high spatial resolution (~1.1 \u00b5m transverse), built using a custom-made giant lens system (NA=0.25, \u00d72 magnification) and high-megapixel CMOS cameras. The system's optical invariant (2.75) and space-bandwidth product (4.3\u00d710\u2078) significantly outperform previously reported large-FOV imaging methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes this as an 'important study' that 'established a large-scale objective and integrated multiple optical microscopy systems.' Reviewers acknowledge the authors 'have accomplished building such a system, with a field of view of 1.5x1.0 cm2 and a resolution of up to 1.2 um,' confirming the core technical specifications and performance metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "AMATERAS-2 achieves measured transverse resolutions of 1.24\u00b10.12 \u00b5m (120-megapixel camera) and 1.12\u00b10.072 \u00b5m (250-megapixel camera), with depth of field measurements of 15.6\u00b11.3 \u00b5m and 14.8\u00b11.1 \u00b5m respectively. This represents approximately two-fold improvement in transverse resolution and more than four-fold improvement in longitudinal resolution compared to AMATERAS-1, enabling clearer visualization of intracellular filamentous structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge the system's resolution achievements, stating the authors 'enhanced the system's resolution and sensitivity by increasing the numerical aperture (NA) of the lens.' The editor notes the 'convincing imaging data' across applications. No concerns were raised about the resolution measurements themselves.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The 3D resolving capability was achieved through optical sectioning using a custom-designed multipoint-scanning confocal system with a pinhole array disk (6 \u00b5m pinhole size, 24 \u00b5m spacing). The pinhole-array disk dramatically suppressed background light from outside the focal plane, achieving longitudinal FWHM of approximately 16 \u00b5m (\u00d71 relay) and 14 \u00b5m (\u00d72 relay), though these values exceed the ideal ~9.5 \u00b5m due to relatively loose focusing and non-negligible pinhole size.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises significant concerns: 'To be used as a volumetric imaging technique, the authors only showcase the implementation of multi-focal confocal sectioning. On the other hand, most of the real biological samples were acquired under the wide-field illumination.' Reviewer 3 notes 'the manuscript lacks a direct comparison for computational sectioning and does not provide a clear evaluation of axial resolution before and after applying computational sectioning,' requesting more direct visual demonstrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "A computational sectioning method was developed that estimates out-of-focus contributions by iteratively applying low-pass filtering, assuming higher spatial frequency in the focal plane. After computational sectioning, the distribution of cellular structures in each z-layer is clearly visualized, and clear images were obtained even in areas with strong background light. The method is effective when fluorescent molecules are localized or exhibit filament-like structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 expresses concern that 'sometimes I felt that the images were oversharpened and the quantitative nature of these fluorescence images may be perturbed.' Reviewer 3 specifically requests 'more direct visual demonstrations of computational sectioning, along with comparisons of axial resolution before and after applying computational sectioning' and notes 'the manuscript lacks a direct comparison for computational sectioning.' The validation approach is questioned as insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "AMATERAS-2 successfully performed volumetric imaging of a 1.5-mm-thick mouse brain coronal section using tissue-clearing (CUBIC), acquiring 378 layers in less than 10 minutes. Cell detection using ELEPHANT achieved 99.4% precision and 97.6% recall, yielding a cell density of 1.18\u00d710\u2075 cells/mm\u00b3 that matches previous reports. The method can significantly reduce acquisition time compared to light-sheet imaging and block-face serial microscopy tomography.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes the 'convincing imaging data' covering 'mouse brains' among other applications. Reviewers acknowledge the system was 'demonstrated...on samples such as organoids, brain sections, and embryos.' While concerns exist about computational sectioning validation, the successful application to brain imaging itself is not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Time-lapse 3D imaging of quail embryo vascular development was performed for 25 hours, acquiring z-stacks every 7.5 minutes (21 layers, 12 \u00b5m spacing) with 1 s exposure at 113 mW/cm\u00b2 excitation. The embryo developed normally without phototoxicity. Approximately 4.5\u00d710\u2076 cells were detected and 4.0\u00d710\u2075 cells were tracked across 200 time points, representing the first demonstration of extensive vascular network dynamics throughout the quail embryo at single-cell level.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor notes the work 'will appeal to biologists and imaging technologists focused on long-term imaging of large fields.' However, Reviewer 3 identifies a critical gap: 'The manuscript currently omits critical details about the method's volume imaging rate. In the description of the quail embryo imaging experiment, key parameters such as exposure time and imaging speed are missing.' The reviewer emphasizes 'volume imaging rate is an essential factor for biological researchers to evaluate the applicability of the technique.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C80"
+    ],
+    "result": "The imaging system enables observation of subcellular structures such as myofibrils in large-area cell sheets, and the improved transverse resolution enables clearer visualization of intracellular filamentous structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor notes the work demonstrates 'potential for long-term imaging of the developmental process' with 'convincing imaging data.' Reviewers acknowledge the system's performance on biological samples including organoids. The capability to resolve subcellular structures is implicitly accepted through the acknowledgment of the resolution improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Based on the doubled NA (0.25 vs 0.12), AMATERAS-2 in principle achieves over twice the spatial resolution in the transverse direction, more than four times the resolution in the longitudinal direction, and over four times the brightness compared to AMATERAS-1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge 'the authors enhanced the system's resolution and sensitivity by increasing the numerical aperture (NA) of the lens.' The theoretical improvements based on NA are standard optical principles and are not challenged. The measured improvements (C78-C81) confirm these theoretical predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Alternative 3D imaging approaches were considered but deemed unsuitable: light-sheet microscopy struggles with uniform illumination over centimeter-scale FOV, light-field microscopy involves incompatible trade-offs between spatial resolution and 3D capability, and two-photon microscopy requires further innovations in laser power and scanning for wide FOV application.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These justifications for the chosen approach are presented with supporting citations and are not challenged by reviewers. The rationale for selecting the confocal approach is implicitly accepted through the reviewers' focus on implementation details rather than the fundamental choice of method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The raw data for 3D imaging of mouse brain section and time-lapse 3D imaging of quail embryo amounted to approximately 100 GB and 500 GB respectively, with single experimental measurements resulting in several terabytes after multiple image processing and analysis steps.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These data volume descriptions are factual statements about the experimental outputs and are not disputed by reviewers. The large data volumes are consistent with the high-resolution, large-FOV nature of the system that reviewers acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C89"
+    ],
+    "result": "Background and motivation claims establishing the scientific context: multicellular systems are complex and heterogeneous, requiring simultaneous observation of all components; conventional microscopy methods have difficulty determining distribution and synchronicity across entire systems; previous large-FOV methods focused mainly on neuroscience; AMATERAS-1 had limitations including insufficient NA (0.12) for volumetric observation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are background and contextual claims supported by citations. Reviewer 3 notes 'this paper is just a minor improvement of the authors' previous work,' implicitly acknowledging the prior AMATERAS-1 system and its limitations. The scientific motivation is not challenged by reviewers.",
+    "result_type": "MINOR"
+  }
+]

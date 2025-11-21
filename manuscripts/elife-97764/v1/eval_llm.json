@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C72",
+      "C74"
+    ],
+    "result": "The authors created a single-cell RNA sequencing atlas of Gulf pipefish embryos at late organogenesis, comprising 35,785 cells from two biological replicates that formed 38 cell clusters. The atlas represents early craniofacial skeleton development and is one of the first developmental scRNAseq atlases created to understand derived traits in a non-model organism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C34-C39, and C72 provide detailed quantitative data about the atlas construction including cell numbers, cluster counts, and developmental stage. The technical execution appears sound with two biological replicates and appropriate cell numbers for scRNAseq. Claim C74 about novelty is supported by the context of limited developmental atlases in non-model organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Three cell clusters (8, 10, and 16) were identified as possible neural, muscle, and connective tissue progenitor cells based on enriched KEGG terms for cell division pathways and lowest CytoTRACE scores indicating undifferentiated states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide converging evidence from multiple analytical approaches (KEGG pathway analysis showing cell cycle enrichment and CytoTRACE analysis showing low differentiation scores) to support the progenitor cell classification. The use of complementary methods strengthens this inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "WGCNA analysis produced 43 gene modules from 3000 variable genes, revealing module-cluster associations including Module 6 associated with connective tissue cells and Module 21 associated with progenitor clusters containing cell cycle genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe the WGCNA results with specific module numbers and their biological interpretations. The network analysis complements the cluster-based KEGG analysis (C45 explicitly notes this support), providing additional validation of cell type identities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C75",
+      "C76"
+    ],
+    "result": "Osteochondrogenic mesenchymal cells in the elongating face express regulatory genes bmp4, sfrp1a, and prdm16, with conserved signaling pathways (MAPK, Wnt, TGF-beta) active during craniofacial development. Comparative analysis with stickleback revealed both conserved (fgf22 in fins and craniofacial tissues) and divergent (bmp4 specificity) expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C46-C53 provide spatial expression data from in situ hybridization validating scRNAseq findings. The comparative analysis with stickleback (C48, C51, C53) strengthens interpretations by identifying pipefish-specific versus conserved expression patterns. However, C76 is speculative about evolutionary importance and should be tested further.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C54",
+      "C55",
+      "C56",
+      "C77"
+    ],
+    "result": "No evidence for tooth primordia cells was found in the atlas or spatial expression analysis, with tooth development genes expressed diffusely rather than in punctate patterns characteristic of tooth primordia. The authors propose genetic changes early in tooth development led to tooth loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C54-C56 provide multiple lines of negative evidence: absence of tooth primordium clusters, lack of co-expression of tooth markers in >10% of cells, and diffuse rather than punctate spatial expression. However, C77 is speculative and the atlas represents only one developmental stage, so transient tooth primordia at other stages cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Gulf pipefish retain some scpp genes (scpp1, spp1) that are expressed in bone cells (54.5% and 24% respectively) and all developing bones. Analysis of the blue spotted cornetfish revealed several scpp gene losses (scpp4, scpp7, scpp9) and a pseudogene (scpp5) in a tooth-bearing syngnathid relative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 provide expression data and comparative genomic evidence. The finding that scpp gene losses occur in tooth-bearing relatives (C59) challenges the simple hypothesis that scpp losses alone explain tooth loss in syngnathids. The data support pleiotropic constraint as an explanation for retention of some scpp genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C78"
+    ],
+    "result": "Osteoblast genetic networks are re-deployed in developing dermal armor, with genes pitx2 and dlx3b expressed in tissues underlying dermal armor primordia, and osteoblast genes scpp1 and ifitm5 expressed at the onset of dermal armor mineralization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 provide spatial expression evidence showing bone development genes in dermal armor. The expression of osteoblast-specific genes (scpp1, ifitm5) in mineralizing dermal armor supports the re-deployment hypothesis. However, C78 is speculative about the exclusion of tooth gene networks and requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C79"
+    ],
+    "result": "Epidermal cells expressed 106 enriched genes in the endocytosis pathway and four metabolism pathways, along with 14 C-type lectin genes specific to epidermis. Comparative analysis showed zebrafish epidermal cells lack significant endocytosis pathway enrichment and do not express C-type lectin genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C71 provide KEGG pathway analysis and comparative data with zebrafish showing pipefish-specific enrichment of endocytosis and lectin genes in epidermis. The comparison strengthens the interpretation that these features may be adaptations for the brood pouch environment (C79), though this remains speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Syngnathids (seahorses, pipefishes, seadragons) comprise over 300 species with distinctive traits including male pregnancy, elongated toothless snouts specialized for zooplankton capture, dermal bony armor, lack of ribs and pelvic fins, and expanded vertebrae numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 and C16-C25 describe established knowledge about syngnathid biology supported by appropriate citations. These provide essential background context for the study but represent prior knowledge rather than new findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The developmental genetic basis of syngnathid traits is largely unknown, though recent genome assemblies revealed gene losses including fgf3 (pharyngeal arch development), fgf3/fgf4/eve1/Scpp genes (tooth development), tbx4 (fin development), and MHC components (immune function).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C26-C30 accurately summarize the state of knowledge and cite appropriate prior genomic studies. These claims establish the knowledge gap and rationale for the current study, supported by published literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The Gulf pipefish (Syngnathus scovelli) is an attractive model for studying syngnathid development due to its high-quality NCBI-annotated reference genome and amenability to laboratory culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe the rationale for model organism selection with appropriate citations. The availability of genomic resources and laboratory culture methods are well-documented prerequisites for the scRNAseq approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "The examined pipefish evolutionary innovations are composed of recognizable cell types, suggesting that derived features originate from changes within existing gene networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C14 is supported by the identification of cell types using known markers, but C15 is highly speculative. The inference that innovations arise from changes within existing networks rather than novel cell types or networks requires more rigorous testing and cannot be definitively concluded from cell type recognition alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "Developmental single-cell atlases have elucidated cell identities and genetic pathways in model organisms such as zebrafish, mice, and chick.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 accurately summarizes prior work in developmental scRNAseq with appropriate citations, providing context for the novelty of applying this approach to a non-model organism with derived traits.",
+    "result_type": "MINOR"
+  }
+]

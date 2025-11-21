@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C34",
+      "C152"
+    ],
+    "result": "The authors applied spatial transcriptomics (Molecular Cartography) to create the first high-throughput smFISH-based SRT dataset of the adult fly, using a selected gene panel to pinpoint the locations of 150 mRNA species (100 in head, 50 in body), with data visualized at https://spatialfly.aertslab.org/.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this is 'an important study' that 'presents a method to visualize the location of the cell types discovered through single-cell RNA sequencing' and note 'the data are convincing and appropriate.' The methodological approach is validated as 'in line with the current state-of-the-art.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C163"
+    ],
+    "result": "Spatial transcriptomics enabled mapping of unknown clusters identified in the Fly Cell Atlas to their spatial locations in the fly brain, including localization of clusters 120 (Fer1), 122 (AstC), 30/62 (otp), and 20 (vg) to specific brain regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers state the study 'allowed the authors to build spatial tissue atlases of the fly head and body, and to identify the location of previously unknown cell types.' This is described as a key strength and the data are deemed 'convincing and appropriate.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C59",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C70",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C86",
+      "C87",
+      "C180",
+      "C181",
+      "C183",
+      "C185",
+      "C188"
+    ],
+    "result": "Spatial transcriptomics discovered novel principles of mRNA localization and transcriptional diversity within muscle cells, including three main types of mRNA localization in IFMs: nuclei-enriched patterns (sls), complementary striped bands (Act88F vs TpnC4/Mhc), and concentrations at terminal nuclei near muscle-tendon junctions, suggesting heterogeneous nuclear transcription and mRNA transport mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the study 'allowed them to build spatial tissue atlases' and identify 'the subcellular localization of different transcripts.' The data are described as 'convincing and appropriate,' and the validation methodology is 'in line with the current state-of-the-art.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C158"
+    ],
+    "result": "The specificity of the Molecular Cartography method was validated, with 99.1% of TpnC4 and 99.7% of Act88F mRNA spots detected in expected regions with negligible off-target signal, demonstrating >99% specificity for flight muscle markers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state 'the authors validate the methodology in line with the current state-of-the-art' and describe the data as 'convincing and appropriate,' supporting the technical validation claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C95",
+      "C156"
+    ],
+    "result": "Gene-gene correlations between SRT and snRNA-seq data show significant concordance (r=0.69 for body, r=0.68 for brain, p<1e-100), demonstrating high agreement between the spatial and single-cell modalities.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note the study demonstrates integration of 'snRNA-seq data from the Fly Cell Atlas with their spatially resolved transcriptomics (SRT) data' and describe the overall data as 'convincing and appropriate.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "HCR-FISH validation partially confirmed MC observations, with some differences observed: sls enrichment at muscle-tendon junctions was confirmed, Act88F striped patterns were consistent, but TpnC4 and Mhc showed some discrepancies, suggesting the main MC observations are reliable but systematic validation is recommended.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers state 'the authors validate the methodology in line with the current state-of-the-art,' acknowledging the validation efforts. The partial confirmation and recommendation for systematic validation align with the reviewers' acceptance of the methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C121",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Three computational approaches for integrating SRT with scRNA-seq data were compared (grid rasterization, neighborhood embedding, nuclei segmentation with Lasso/Tangram/SpaGE), showing that grid-based methods perform comparably to computationally intensive approaches, while nuclei segmentation is limited by dense brain nuclei, and a consensus approach is recommended.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge a key weakness: 'Combining single-nuclei sequencing (snRNA-seq) data with spatially resolved transcriptomics (SRT) data is challenging, and the methods used by the authors in this study cannot reliably distinguish between cells, especially in brain regions where the processes of different neurons are clustered, such as neuropils.' This directly challenges the reliability of the integration methods, particularly in dense brain regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C126",
+      "C147",
+      "C168",
+      "C171",
+      "C173"
+    ],
+    "result": "Dense nuclei regions in the fly brain (average size 5 cubic micrometers) are very difficult to segment with normal imaging techniques due to strong overlap of cells and different cell types, and nuclei-segmentation leads to loss of information compared to nuclei-unaware techniques.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly note this limitation: 'the dense nuclei regions at the edge of the OL and CB are very difficult to segment' and 'the methods used by the authors in this study cannot reliably distinguish between cells, especially in brain regions where the processes of different neurons are clustered.' This validates the authors' acknowledgment of this technical challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C154",
+      "C155",
+      "C162"
+    ],
+    "result": "Gene panel selection (50 genes for body, 100 genes for head) covering a wide range of expression levels was sufficient to identify all major cell types in the adult fly and locate rare cell populations, including specific neuronal cell types like peptidergic neurons and Kenyon cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers state the authors 'identified 100 transcripts for head samples and 50 transcripts for fly body samples allowing identification of every unique cell type discovered through the Fly Cell Atlas' and describe this as a key strength of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C160"
+    ],
+    "result": "LanB1 (LamininB1) is widely produced in various cell types beyond hemocytes, with only 15.5% co-expressing with Hml in hemocytes, while most overlaps with epithelial cells (13.4% grh, 28.0% pain) or muscle cells (40.9% Mlp84B, 25.4% Mp20).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the study's ability to identify 'the subcellular localization of different transcripts' and describe the data as 'convincing and appropriate,' supporting these unexpected expression pattern findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C181",
+      "C182"
+    ],
+    "result": "Different trypsin isoforms (\u03b1-Trypsin and \u03b2-Trypsin) show distinct spatial patterns in gut enterocytes, with \u03b2-Trypsin localized to the inner side and \u03b1-Trypsin more distal, suggesting subcellular localization to apical or basal regions, representing apical-basal mRNA transport processes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note the study successfully demonstrates 'the subcellular localization of different transcripts' and the data are 'convincing and appropriate,' supporting these localization findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C119",
+      "C166"
+    ],
+    "result": "SRT can serve as a bridge between scRNA-seq studies and morphology-based studies (including connectomics), potentially linking transcriptional atlases with spatial information to identify cell types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers describe this as a key contribution, noting the manuscript 'constitutes a proof-of-principle study to map the location of the cells identified by ever-growing single-cell transcriptomics datasets' and can 'serve as a potential link between morphology data and single-cell data.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C11",
+      "C24"
+    ],
+    "result": "Single-nuclei sequencing results in loss of information about the spatial location of cells in the body and possible subcellular localization of mRNAs within cells, which the FCA lacks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly support this by emphasizing the value of the spatial approach, stating the study 'presents a method to visualize the location of the cell types discovered through single-cell RNA sequencing,' addressing this known limitation.",
+    "result_type": "MINOR"
+  }
+]

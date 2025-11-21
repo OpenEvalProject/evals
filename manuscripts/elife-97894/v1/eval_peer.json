@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C44",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors modified the PBWM model to accommodate continuous representations (using population codes for color) and introduced an adaptive chunking mechanism via a 'chunking layer' that receives both sensory input and top-down feedback from PFC, allowing the network to learn whether to store raw sensory input or chunked representations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this methodological innovation. Reviewer 1 states the 'addition of the chunking mechanism tailors the original model for continuous visual stimuli' and that the 'chunk-stripe mechanisms contribute to the resource aspect.' Reviewer 2 notes this 'methodological innovation provides a better explanation for the limited capacity of working memory.' The editors describe it as implementing 'adaptive resource allocation in working memory.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C85",
+      "C86",
+      "C89",
+      "C90",
+      "C100",
+      "C101"
+    ],
+    "result": "The chunk-augmented PBWM model outperforms no-chunk control models across various set sizes, showing reduced guessing, more precise recall, and better performance even when control models have greater allocated capacity (e.g., 8 stripes vs. 2 stripes for the chunk model).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers unanimously support these findings. The editors note 'convincing evidence for the superiority of the model in improving effective capacity, optimizing resource management, and reducing error rates.' Reviewer 1 states 'the performance of the chunk-augmented PBWM model surpass the no-chunk control model' with 'improvements evident in enhanced effective capacity, optimized resource management, and reduced error rates.' Reviewer 2 confirms 'the effectiveness of the model has been validated through computational simulation experiments.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C97",
+      "C99",
+      "C106",
+      "C107",
+      "C131"
+    ],
+    "result": "The performance advantage of chunking stems from mitigating a credit assignment problem in reinforcement learning: chunking allows repeated use and reinforcement of the same stripe, limiting the solution space and making learning more efficient than models with more stripes but obligatory independent gating.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this mechanistic explanation. Reviewer 1 notes that 'the retention of these benefits, even with increased capacity allocation, suggests that working memory limitations are due to a combination of factors, including the efficient credit assignment that are learned flexibly through reinforcement learning.' The editors emphasize the model implements 'adaptive resource allocation' where 'gating strategies for storage are adjusted by reinforcement learning,' implicitly supporting the credit assignment mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C136"
+    ],
+    "result": "Analysis of stripe usage reveals that as set size exceeds capacity, no-chunk models decrease stripe usage and sometimes leave stripes empty (akin to 'giving up'), while chunk models more effectively manage resources by repeatedly using the chunk stripe and adaptively adjusting input stripe usage.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm these findings about resource management. Reviewer 1 states the model demonstrates 'optimized resource management' and that the findings show 'the efficient management of access to and from working memory.' The editors note the model's superiority in 'optimizing resource management.' No reviewer questions the stripe usage analysis or the 'giving up' interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C137"
+    ],
+    "result": "The model's performance depends critically on the balance of dopamine burst and dip gains: optimal performance at set size 2 requires symmetrical gains, but as set size increases, models require larger burst than dip gain to avoid 'giving up' due to excessive negative reward prediction errors punishing useful gating strategies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers support these dopamine-related findings. Reviewer 1 explicitly states 'Further examination of how reward prediction error signals, both positive and negative, collaborate to refine gating strategies reveals the crucial role of reward feedback' and notes 'Assessing the impact of a healthy balance of dopaminergic RPE signals on information manipulation holds implications for patients.' No reviewer challenges the dopamine parameter sweep results or their interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The model reproduces recency effects observed in human working memory, with errors increasing monotonically with the number of intervening trials, resulting from increased propensity to update earlier items and chunking of earlier items rather than passive decay.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this result. Reviewer 1 states 'Reviewer 2 made a very constructive suggestion: Can related cognitive functions or phenomena emerge from the model? The newly added analysis and results highlighting the recency effect directly address this question and significantly strengthen the paper.' This indicates the recency effect analysis was added in revision and successfully addresses reviewer concerns about emergent cognitive phenomena.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The simulations suggest WM capacity limitations arise from computational constraints in learning proper gating strategies rather than anatomical limits in the number of available stripes, providing a normative rationale for why capacity is limited and emphasizing the importance of resource management over raw capacity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this theoretical interpretation. Reviewer 2 states the study 'suggests that the limited capacity of working memory arises from the computational characteristics of the neural system, rather than anatomical constraints.' Reviewer 1 notes the work 'addresses fundamental questions related to a computational working memory limitation.' The editors describe it as addressing 'adaptive resource allocation in working memory,' consistent with computational rather than anatomical limits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The augmented PBWM model synthesizes slot and resource theories of WM: it operates as a slot-like system with discrete stripes but exhibits resource-like behavior through adaptive chunking, addressing limitations of previous neural models where chunking was obligatory and could not be optimized based on task demands.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers strongly support this theoretical synthesis. Reviewer 1 states 'The adaptive chunking mechanism is particularly well-suited to the VWM tasks involving continuous stimuli and elegantly integrates the slot and resource theories of working memory constraints. The chunk-augmented PBWM operates as a slot-like system with resource-like limitations.' Reviewer 2 notes 'The neural network model utilized in this paper effectively integrates perspectives from both slot models and resource models (i.e., resource-like constraints within a slot-like system).' The editors describe it as a 'neural network model of interactions between the prefrontal cortex and basal ganglia to implement adaptive resource allocation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C129"
+    ],
+    "result": "The model learns appropriate input and output gating policies through dopaminergic reinforcement learning in the basal ganglia, using reward prediction errors to modulate synaptic plasticity in Go and NoGo units, with eligibility traces flagging previous gating decisions for credit assignment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the reinforcement learning mechanism. Reviewer 1 states 'The implementation of a dopaminergic reinforcement learning protocol, as opposed to a hard-wired design, leads to the emergence of strategic gating mechanisms that enhance the network's computational flexibility and adaptability.' The editors note 'gating strategies for storage are adjusted by reinforcement learning.' Reviewer 2 confirms the model 'demonstrates how to optimize working memory storage and retrieval strategies through reinforcement learning.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The model's findings regarding dopamine balance and adaptive gating have implications for understanding working memory deficits in patient populations with altered striatal dopamine signaling, including Parkinson's disease, schizophrenia, ADHD, and conditions involving repetitive negative thinking.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these clinical implications. Reviewer 1 explicitly states the work 'has implications for conditions such as Parkinson's disease, ADHD and schizophrenia' and notes 'Assessing the impact of a healthy balance of dopaminergic RPE signals on information manipulation holds implications for patients with altered striatal dopaminergic signaling.' Reviewer 2 states the model 'provides new explanations for the working memory difficulties observed in patients with Parkinson's disease and other disorders.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C65",
+      "C66",
+      "C67",
+      "C76",
+      "C77",
+      "C78",
+      "C82"
+    ],
+    "result": "The model is implemented in the Leabra framework using biologically-inspired point neurons with conductance-based dynamics, building on the established PBWM architecture with superficial and deep PFC layers, basal ganglia gating modules, and role-addressable memory binding, trained for 500 epochs across at least 80 random seeds per condition.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the methodological details. Reviewer 1 states 'In the revised version, the authors have thoroughly addressed all the questions raised in my previous review. They have clarified the model architecture, provided detailed explanations of the training process, and elaborated on the convergence of the optimization.' This indicates the methodological claims were scrutinized and found satisfactory after revision.",
+    "result_type": "MINOR"
+  }
+]

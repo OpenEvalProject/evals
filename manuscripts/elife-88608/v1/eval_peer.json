@@ -1,0 +1,175 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes the empirical context that classic supervised learning models predict integration when stimuli share outcomes, but recent studies have shown differentiation can occur instead, particularly in the hippocampus. This includes the key finding from Favila et al., 2016 showing similarity reversal where similar scenes linked to the same face became less similar than unrelated stimuli.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accept this empirical background without challenge. Reviewer 2 explicitly states the model addresses 'an important computational problem' explaining why 'shared associations can sometimes cause differentiation' when 'classic supervised learning models predict that shared associations should cause memories to integrate.' The reviewers treat these empirical findings as established facts motivating the modeling work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The model implements a nonmonotonic plasticity hypothesis (NMPH) with a U-shaped learning rule where inactive competitors are not modified, moderately active competitors lead to weakening (differentiation), and highly active competitors lead to strengthening (integration). The model uses only unsupervised learning, viewed as supplementary to error-driven learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm the model's core mechanism. Reviewer 1 states the authors 'provide convincing evidence that simple unsupervised learning in a neural network model, which critically weakens connections of units that are moderately activated by multiple memories, can account for three empirical findings.' Reviewer 2 notes 'the authors succeed in demonstrating that unsupervised learning with a simple u-shaped rule can produce results that are qualitatively in line with the empirical reports.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The model architecture includes four layers (category, item, hidden, output) with bidirectional connections and recurrent connections in the hidden layer. Inhibitory oscillations implemented through a sinusoidal function allow competitor activation by lowering and raising inhibition during trials.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the model architecture and implementation details without criticism. Reviewer 2 notes 'the paper is very clearly written; the authors do a good job of both formally describing their model as well as giving readers a high level sense of how many of their critical model components work.' Reviewer 4 states 'the relatively simple architecture of the model makes its dynamics accessible to the human mind.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The model replicates the Chanales et al., 2021 findings showing a U-shaped relationship between color similarity and repulsion effects: accurate recall at low similarity (48\u00b0), repulsion at moderate similarity (24\u00b0), and elimination of repulsion at high similarity (6\u00b0). The model shows this repulsion is asymmetric with one pairmate anchoring while the other shifts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this simulation result. Reviewer 2 states 'In each of the three models, the authors manipulate stimulus similarity (following Chanales et al.)...the authors are able to produce model representations that fit the empirical results.' Reviewer 1 notes the model can 'account for three empirical findings of differentiation in the literature,' and reviewers identify no concerns with this specific simulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The model demonstrates that differentiation requires a high learning rate and when it occurs, it happens abruptly and produces anticorrelated representations in some model runs, creating a bimodal distribution across runs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly highlight this as a key contribution. Reviewer 1 states 'A few of their key findings are that differentiation requires a high learning rate and low inhibitory oscillations, and is virtually always asymmetric in nature.' Reviewer 2 notes 'Of particular value are their demonstrations that when differentiation occurs, it occurs very quickly and asymmetrically and results in anti-correlated representations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The model successfully simulates the Favila et al., 2016 study where similar scenes paired with different faces showed orthogonalization, but scenes paired with the same face showed differentiation (less similar to each other than to non-pairmates).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this simulation without challenge. Reviewer 2 confirms 'In each of the three models...the authors manipulate...shared vs distinct associations (following Favila et al.)...the authors are able to produce model representations that fit the empirical results.' This is treated as one of the three successful empirical replications demonstrating the model's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The model replicates aspects of Schlichting et al., 2015 showing that interleaved learning leads to differentiation while blocked learning leads to integration, matching the pattern observed in some brain regions (e.g., right anterior hippocampus).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this simulation. Reviewer 2 states the model manipulates 'learning strength (a stand-in for blocked versus interleaved learning schedule; following Schlichting et al.)' and successfully produces fitting representations. However, Reviewer 2 notes 'with hand-tuning of additional parameters' the model achieves these fits, acknowledging some parameter sensitivity while still accepting the qualitative match.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The model predicts differentiation will be more evident in hippocampus than neocortex due to higher learning rates, and within hippocampus, sparser regions (dentate gyrus, CA3) will show more differentiation. These predictions are supported by existing empirical studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these predictions and their empirical support. Reviewer 1 notes the paper 'makes new predictions for future empirical work,' treating the predictions as valuable contributions. The claims about existing empirical support (C48, C51, C52) are citation-based and not challenged by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "The model's prediction of rapid differentiation is supported by Wanjia et al., 2021, which found differentiation was not evident before participants could confidently recall correct associates but was clearly evident after that point.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this empirical support for the model's predictions. Reviewer 2 acknowledges 'the work is very thorough' and notes the authors 'investigate many different aspects of the learning dynamics,' implicitly accepting the connections drawn between model predictions and empirical findings like this one.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The U-shaped learning rule is supported by three lines of evidence: neurophysiological studies showing moderate depolarization causes weakening and high depolarization causes strengthening; human neuroscience studies showing a U-shaped relationship between memory activation and subsequent memory; and Wammes et al., 2022 showing a U-shaped function relating visual similarity to hippocampal representational change.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 notes a significant limitation: 'Though the u-shaped learning rule is essential to this framework, the paper doesn't do any formal investigation of this learning rule or comparison with other learning rules.' While acknowledging 'the authors do have a strong theoretical interest in this rule as well as experimental precedent,' the reviewer states 'a stronger argument in support of the non monotonic plasticity hypothesis could have been made by comparing this learning rule to alternatives.' This indicates the evidence is accepted but not as thoroughly validated as it could be.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "The model predicts that differentiation driven by the NMPH will be rapid, asymmetric, and give rise to anticorrelated representations in the brain region that is the source of differentiation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly highlight these predictions as important contributions. Reviewer 1 states the paper 'makes new predictions for future empirical work.' Reviewer 2 emphasizes 'Of particular value are their demonstrations that when differentiation occurs, it occurs very quickly and asymmetrically and results in anti-correlated representations,' treating these as key insights from the model.",
+    "result_type": "MAJOR"
+  }
+]

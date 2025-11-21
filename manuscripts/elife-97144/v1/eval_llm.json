@@ -1,0 +1,346 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "PLP1 is the most sensitive and specific marker for enteric glia in the gut mucosa across mouse and human tissues. In both species, PLP1 and SOX10 show high cell-type specificity for glia, while S100B is also expressed in non-glial cells and GFAP shows limited expression in mucosal glia. In mouse ileum, PLP1+ cells in crypts rarely co-express GFAP, whereas villus PLP1+ cells frequently do.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 collectively establish PLP1 as a broad and specific marker for mucosal glia through convergent evidence from scRNAseq (C1-C3, C7, C12-C13), immunohistochemistry (C4-C5, C16-C18), and validation in reporter mice (C15-C17). The data consistently show PLP1's superior sensitivity and specificity compared to other glial markers across multiple tissue types and disease states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Genetic depletion of PLP1+ enteric glia in male mice causes minimal and region-specific transcriptional changes in the intestine. At 11 days post-tamoxifen (11dpt), no genes reached significance threshold (padj<0.05) in duodenum or ileum, while only 5 genes were differentially expressed in colon. Most differentially expressed genes (at p<0.05) were region-specific, with only 2 genes (Igkv4-91 and Ighv1-58) shared across all three intestinal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C31 are well-supported by RNA-seq data (C24-C25, C28-C30) and DiVenn analysis (C27-C31) showing minimal transcriptional changes upon glial depletion. The experimental design is appropriate with validated glial depletion model (C21-C23) and male mice to avoid confounding from dysmotility. The finding of region-specific effects is robustly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In the colon of glial-depleted mice, Lyz1 (encoding lysozyme) was the top upregulated gene, and pathway analysis highlighted Paneth cell-associated genes including defensins and antimicrobial peptides. However, no ectopic Paneth cells were detected by immunohistochemistry for LYZ1 or DEFA5 proteins, suggesting transcriptional dysregulation without corresponding protein changes or ectopic cell formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C39 demonstrate a discordance between transcript upregulation (C32, C34-C35) and protein detection (C38), which is appropriately acknowledged by the authors (C39). The validation by qPCR (C34) and pathway analysis (C35) strengthen the transcriptional findings. The negative IHC results (C38) are important controls that prevent overinterpretation of the RNA-seq data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In the ileal epithelium of glial-depleted mice, no genes reached significance threshold (padj<0.05) for differential expression, but GSEA revealed significant enrichment of Paneth cell gene signatures (p<0.001, FDR<0.001). Despite this transcriptional enrichment, immunostaining showed no differences in the densities of Paneth cells or other epithelial cell types (Lgr5+, goblet, enteroendocrine, M cells) between control and glial-depleted mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C46 are supported by RNA-seq (C42), GSEA analysis (C44-C45), and quantitative immunostaining/flow cytometry (C46). The use of cell-type-specific gene signatures from published scRNAseq data (C44-C45) is methodologically sound. The finding that Paneth cell signatures are enriched without changes in cell number suggests altered cell state rather than altered differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Glial depletion caused specific morphological abnormalities in Paneth cells while other epithelial cell types appeared normal. Paneth cells in glial-depleted mice exhibited heterogeneous, dysmorphic secretory granules that appeared giant, fused, or irregular by light and electron microscopy, along with globular cell morphology and loss of polarity. In contrast, neighboring intestinal stem cells, enteroendocrine cells, and goblet cells showed no morphological changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C54 are strongly supported by convergent morphological evidence from UEA-I lectin staining (C50), transmission electron microscopy (C51-C52), and comparative analysis of other cell types (C53). The specificity of the phenotype to Paneth cells (C47, C53-C54) is well-demonstrated. The ultrastructural analysis provides definitive evidence of granule abnormalities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Glial depletion disrupts Paneth cell secretion. Pathway analysis showed enrichment of 'extracellular' and 'secretory' compartments among differentially expressed Paneth cell genes. A novel explant-based lysozyme activity assay demonstrated that ileal explants from glial-depleted mice secreted significantly less active lysozyme than controls, with assay specificity validated by dithizone treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 are well-supported by pathway analysis (C58), development and validation of a functional assay (C59), and demonstration of reduced lysozyme secretion (C60). The explant assay is a strength as it preserves tissue architecture and glial-epithelial relationships. The dithizone control (C59) validates assay specificity for Paneth cell-derived lysozyme.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Paneth cells in glial-depleted mice retain responsiveness to cholinergic stimulation despite baseline secretory defects. mAChR3 expression was unchanged by glial loss, and Paneth cells remained capable of degranulation and lysozyme secretion in response to carbachol stimulation, indicating that the secretory machinery remains functional but baseline secretion is impaired.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 are supported by RNA-seq data (C65), carbachol stimulation experiments (C66-C67), and appropriate citations to prior literature (C62-C64). The finding that stimulated secretion is preserved while baseline secretion is reduced (C68) is an important mechanistic insight that helps distinguish between different potential mechanisms of glial regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Unlike in skin, enteric glia are not required for maintaining epithelial innervation. Glial depletion did not affect the density of crypt innervation or the presentation of cholinergic nerve terminals (VAChT+) surrounding epithelial crypts. Most crypt-innervating fibers are cholinergic and tightly associate with glia, and cholinergic neurons are likely most relevant to Paneth cell function given receptor expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 are supported by quantitative analysis of innervation density (C70), immunohistochemistry for cholinergic markers (C71, C74), and appropriate comparison to skin (C69). The conclusion that Paneth cell defects do not result from denervation (C75-C76) is well-justified by the data. This is an important negative result that constrains mechanistic interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Glial depletion alters gut microbiome composition in a manner consistent with reduced lysozyme secretion. Both \u03b1- and \u03b2-diversity were significantly altered at 11dpt, with reduced abundance of Lactobacilli (L. murinus and L. animalis) and increased Bacteroidetes. These changes mirror those observed in Lyz1-/- mice and are consistent with reduced antimicrobial peptide secretion. Bacterial FISH showed no microbial invasion into crypts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C89 are well-supported by 16S rDNA sequencing (C81-C82, C84-C87), FISH analysis (C79-C80), and comparison to published models of Paneth cell disruption (C88). The microbiome changes are consistent with the functional lysozyme secretion defect and provide important in vivo validation. The specificity of the microbial changes (matching Lyz1 models) strengthens the mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study establishes that PLP1+ enteric glia do not broadly regulate intestinal epithelial transcription or cell composition but have a specific role in regulating Paneth cell secretion and gut microbial ecology. Unlike in skin, enteric glia are not required for maintaining epithelial innervation. This represents a working model where glia regulate Paneth cell secretory function to modulate microbiome composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 represent the main conclusions of the study, which are well-supported by the collective evidence from transcriptional profiling (C92), Paneth cell morphology and function (C93), microbiome analysis (C93-C94), and innervation studies (C95). The working model (C94-C95) is appropriately qualified and consistent with all presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Prior studies using different methods to deplete or disrupt enteric glia reached conflicting conclusions about epithelial effects. Chemical gliotoxins showed no major deficits, while a GFAP promoter-based model showed severe inflammation. More recent targeted genetic models (Plp1, Sox10, Gfap) found no major epithelial defects at steady state, though all showed deficits in other ENS functions like motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 accurately summarize prior literature through appropriate citations. This contextualizes the current study's findings within the field and explains apparent contradictions. The authors appropriately note that different targeting strategies may affect different glial populations or non-glial cells (particularly with GFAP promoters).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The literature establishes that enteric glia are located both in the myenteric plexus (where they regulate neuronal functions) and in the mucosa (where they closely appose epithelial cells). Glia secrete factors that can alter epithelial proliferation and adhesion in vitro, but none of these factors are made exclusively by glia in the intestine, raising questions about their in vivo significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 provide appropriate background context through citations to published literature. The distinction between myenteric and mucosal glia (C103-C106) motivates the study's focus. The observation that glial factors are not exclusive (C108) appropriately frames the uncertainty about in vivo relevance that the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Prior work has established that enteric glia exhibit region-specific functions along the GI tract, regulating colonic but not small intestinal motility, controlling secretomotor responses in the large intestine but not upper GI tract, and exerting different immunomodulatory roles in small versus large intestines. The current study's finding of region-specific transcriptional effects is consistent with this functional specialization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 appropriately cite prior literature to establish the concept of regional specialization of glial function. This provides important context for interpreting the region-specific transcriptional changes observed in the current study (C31, C112). The consistency between prior functional studies and current transcriptional data strengthens both.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The study's findings have potential translational relevance given strong genetic associations between Paneth cells and IBD, and the established involvement of the microbiome in human disorders. Identifying mechanisms of glial regulation of Paneth cells might reveal therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C113-C114 are supported by appropriate citations establishing clinical relevance. However, C115 is speculative about future therapeutic applications. While the speculation is reasonable given the data, it represents a hypothesis for future work rather than a demonstrated result. The translational potential is plausible but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "WNT signaling is a potential mechanism for glial regulation of Paneth cells, as WNT proteins regulate Paneth cell development and function and are expressed by enteric glial subpopulations. However, Paneth cell phenotypes in WNT signaling disruption models differ from those in glial-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C118 are supported by appropriate citations but represent discussion of potential mechanisms rather than tested hypotheses. The observation that WNT disruption phenotypes differ from glial depletion phenotypes (C118) suggests WNT may not be the primary mechanism, but this is not definitively established. This represents speculation for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Colonic Paneth-like cells (PLCs) exist in mice and humans and can express LYZ1 in humans, which may be relevant to the observed colonic Lyz1 upregulation in glial-depleted mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by appropriate citations to published literature. This provides context for interpreting the colonic Lyz1 upregulation observed in the study, though the authors appropriately note that the cellular source of upregulated Lyz1 transcripts remains unclear since no LYZ1+ cells were detected by IHC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The microbiome changes observed in glial-depleted mice (reduced L. murinus and L. animalis, increased Bacteroidales) closely parallel those in constitutive models of Paneth cell disruption (Lyz1-/- and ZnT2-deficient mice), supporting a functional link between glial depletion, reduced lysozyme secretion, and altered microbiome composition. These changes occurred independently of motility effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 are well-supported by microbiome data (C121) and appropriate comparison to published models (C123-C124). The inference of a functional link (C125) is reasonable given the convergent evidence from multiple independent models. The observation that changes occur in both sexes despite different motility phenotypes (C122) strengthens the conclusion that microbiome effects are not secondary to motility changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Cholinergic signaling regulates Paneth cell secretion, and pharmacological or surgical disruption of cholinergic input causes granule accumulation and altered secretion. The authors speculate that neurotransmission across the neuroepithelial interface may be compromised in glial-depleted mice despite intact innervation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 are well-supported by citations to published literature. However, C128 is speculation about mechanism that is not directly tested. While the speculation is reasonable given that innervation is intact but secretion is reduced, alternative mechanisms (e.g., direct glial-epithelial signaling) are not excluded. This represents a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "Autophagy is important for Paneth cell secretion, and glial-derived signals could potentially modulate secretory autophagy indirectly through cytokines like IL-22. Paneth cells express IL-22 receptors, and IL-22 production is stimulated by glial-derived neurotrophic factors. However, autophagy-related pathways were not transcriptionally enriched in glial-deficient mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129, C132-C135 are supported by appropriate citations establishing the biological plausibility of autophagy-mediated mechanisms. However, C130 shows that autophagy pathways were not enriched in the transcriptional data, and C131 is speculation about indirect mechanisms. This represents a potential mechanism that is not supported by the current data but could be investigated in future work.",
+    "result_type": "MINOR"
+  }
+]

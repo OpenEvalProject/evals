@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C28",
+      "C29",
+      "C63",
+      "C64",
+      "C106"
+    ],
+    "result": "The study demonstrates that in randomly connected feedforward networks with ~100,000 neurons using hippocampal and cortical statistics, clustered convergence of 3-4 inputs from co-active ensembles is statistically likely, with stimulus-driven (partially mixed) groups being up to two orders of magnitude more likely than fully mixed groups. This convergence leads to representation of arbitrary input combinations in at least 10 target neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this core finding, stating 'the simple analytical calculations and computer simulations provide solid support for the main arguments' and praising the 'back-of-envelope reasoning' that provides 'fast and valuable intuition.' The reviewers note the authors 'have made the effort to connect the model parameters with measured values,' supporting the biological plausibility of these probability calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Sequential convergence of 3-5 inputs from temporally ordered ensembles is likely with larger ensembles (~1000 neurons), with gap-fill sequences constituting the major fraction. The hippo-elec configuration shows the best signal-to-noise ratio for sequence detection, followed by cortex-elec and hippo-CICR.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as part of the 'valuable quantitative insights' provided by the study. The transparent presentation of results across multiple spatiotemporal scales is praised, with reviewers noting the authors 'take a balanced look at conditions that help/hinder clustering, rather than just focus on a particular regime that works.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C40",
+      "C41",
+      "C42",
+      "C57",
+      "C71"
+    ],
+    "result": "Dendritic clusters result in somatic selectivity and enhanced neuronal activation under specific conditions: strong dendritic nonlinearities, low background activity/noise, and high co-activity in upstream neurons. Background activity plays a pivotal role in determining network ability to extract information, with hippocampal configurations better suited than cortical ones for both grouped and sequential computations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support these findings, noting that 'many of the computed cluster probabilities are vanishingly small, and noise is found to be quite detrimental in several cases. This is important to know.' The reviewers appreciate that the authors identify conditions that both help and hinder clustering, calling the approach 'refreshingly transparent and objective.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Different dendritic mechanisms operate at distinct spatiotemporal scales with varying computational utility: electrical mechanisms (~50-100 \u03bcm, <50 ms) work well for grouped computations but are sensitive to ectopic inputs in sequences; chemical mechanisms (~10 \u03bcm, seconds) are vulnerable to background noise and more suited for plasticity than ongoing computation; CICR (~10 \u03bcm, 100-1000 ms) could influence both computation and plasticity, showing stronger selectivity than electrical mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly endorse this multi-scale analysis, stating 'this paper is also a timely reminder that synaptic clusters and sequences can exist on multiple spatial and temporal scales.' They specifically highlight that 'the simulations in Figure 5, extending those from Bhalla (2017), are unique in this area' and note that 'the role of chemical signaling in neural computation is understudied theoretically.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Despite strong dendritic selectivity (~0.8), neurons receiving perfect sequential connectivity show weak somatic selectivity (0.05-0.08) when accounting for all inputs across the dendritic arbor, due to elevated baseline activation from background and non-sequential ensemble inputs (~160 background + ~200 ensemble inputs). Precise excitatory-inhibitory balance can improve conversion of dendritic to somatic selectivity (to 0.13-0.22), but sequence selectivity operates best under low noise conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as part of the study's balanced assessment. They note approvingly that 'many of the computed cluster probabilities are vanishingly small, and noise is found to be quite detrimental in several cases,' indicating acceptance of both positive and negative results. The transparent reporting of weak somatic selectivity aligns with the reviewers' praise for the 'objective' approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Ectopic inputs differentially affect sequence selectivity depending on mechanism and sequence length. For chemical sequences, selectivity is strongly affected when ectopic inputs arrive within the stimulus zone but minimally affected beyond two diffusion length constants; short sequences (M<5) show 65-81% selectivity reduction while long sequences (M\u22656) show only 20-30% reduction. For electrical sequences, selectivity is maximum at 2-4 \u03bcm/ms velocities, with ectopic inputs degrading selectivity particularly when delivered at the distal end; mid-length sequences show 27-53% drops while longer sequences show 16-18% drops.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These detailed simulation results are implicitly supported through the reviewers' endorsement of the 'simple analytical calculations and computer simulations' that 'provide solid support for the main arguments.' The reviewers specifically praise the chemical signaling simulations (Figure 5) as 'unique in this area,' indicating acceptance of these mechanistic findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Application to the olfactory system predicts that piriform cortex pyramidal neurons are likely to receive grouped projections from 3-4 different glomeruli pairs onto individual dendritic branches with random connectivity, potentially triggering NMDA spikes for odor discrimination. The study makes testable predictions for optogenetic stimulation experiments showing clustered glutamate release and nonlinear summation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly support this application by praising how 'the authors have made the effort to connect the model parameters with measured values' and noting that 'an approximate understanding of cluster probability can direct theory and experiments towards promising directions.' The testable predictions align with the reviewers' appreciation for the study's practical implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C72"
+    ],
+    "result": "Redundancy in input representation via large presynaptic ensembles yields diverse postsynaptic selectivity types (pure, partially mixed, fully mixed), with partially mixed selectivity far more likely than pure or fully mixed. Even with strong nonlinearities, neurons receiving fully mixed groups cannot be distinguished from partially mixed/homogeneous groups based on single pattern responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers support these findings through their endorsement of the study's comprehensive analysis. The statement that 'assumptions are stated clearly about the model and statistics of different circuits' and the appreciation for examining 'conditions that help/hinder clustering' indicates acceptance of these nuanced selectivity findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "An integrated multiscale model demonstrates that three forms of selectivity (electrical, grouped Ca-CaM, and chemical sequence) coexist and show nonlinear selectivity with respect to synaptic spacing and weights, separated by stimulus pattern timescales (~100 ms, ~1 s, and ~10 s respectively).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly endorse the multi-scale approach, stating 'this paper is also a timely reminder that synaptic clusters and sequences can exist on multiple spatial and temporal scales.' The integration of mechanisms across scales aligns with the reviewers' appreciation for the comprehensive treatment of dendritic computation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C107",
+      "C108"
+    ],
+    "result": "The study concludes that dendritic clustered and sequence computation is pervasive, but its expression as somatic selectivity requires confluence of physiology, background activity, and connectomics. Random connectivity is sufficient without requiring additional mechanisms for activity or proximity-driven axonal targeting, providing a substrate for downstream networks to decode arbitrary input patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers support this synthesis conclusion, noting the study 'can lead to a more detailed understanding of how dendrites contribute to the computation of neuronal networks.' The acceptance of random connectivity as sufficient is implicit in the reviewers' praise for the 'back-of-envelope reasoning' and the finding that clustering can occur 'by chance (i.e. without special rules for axon guidance or structural plasticity).'",
+    "result_type": "MAJOR"
+  }
+]

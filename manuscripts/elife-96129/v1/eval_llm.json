@@ -1,0 +1,303 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C37",
+      "C40"
+    ],
+    "result": "Pairs of flapping swimmers passively self-organize into stable equilibrium formations (inline, diagonal, or side-by-side) through flow interactions alone, independent of scale and fluid model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C37, and C40 are well-supported by simulation data across multiple Reynolds numbers and dissipation times (Figure 1 and supplements). The emergence of equilibria in time-forward simulations provides evidence of stability, and consistency across CFD and VS models demonstrates robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C52"
+    ],
+    "result": "Flow-coupled flapping swimmers exhibit a universal linear phase-distance relationship that is preserved across different geometries, material properties, flapping kinematics, and fluid models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C22, and C52 are strongly supported by the authors' simulations (Figure 3B) and extensive literature compilation (Table 1). The relationship holds across biological and robotic systems, 2D and 3D models, and various experimental conditions, demonstrating universality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C47",
+      "C111"
+    ],
+    "result": "In side-by-side inphase formations, swimmers experience reduced cost of locomotion with nearly equal distribution of hydrodynamic benefits between members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C47, and C111 are directly supported by cost of transport data in Figure 3A showing energy savings and equal distribution. The reciprocal nature of flow coupling in side-by-side configurations (C46) provides the mechanistic basis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C112"
+    ],
+    "result": "Side-by-side swimmers flapping antiphase experience increased cost of locomotion compared to solitary swimming, contrary to common assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48, and C112 are supported by cost of transport data in Figure 3A showing increased energy expenditure. This contradicts prior hypotheses (C17) and is an important finding, though the mechanism could be explained more thoroughly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C44",
+      "C45",
+      "C124"
+    ],
+    "result": "In inline and diagonal formations, flow coupling is non-reciprocal with hydrodynamic benefits (up to 60% power savings) granted entirely to trailing swimmers while leaders receive no benefit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C44, C45, and C124 are well-supported by cost of transport data (Figure 3A, 7C) and flow field analysis (Figure 1 supplements). The non-reciprocal nature is explained by the physics of 2D vortex-induced forces and demonstrated in flow visualizations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C113",
+      "C114"
+    ],
+    "result": "Equilibrium locations and energetic benefits in pairwise formations can be predicted entirely from the wake of a solitary leader using a flow agreement parameter, without considering two-way coupling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C61, C113-C114 are strongly supported by the analysis in Figures 4 and 5, showing remarkable agreement between predictions based on solitary wakes and actual pairwise equilibria. This demonstrates the primarily non-reciprocal nature of hydrodynamic coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Larger values of the flow agreement parameter indicate greater power savings and reduced cost of transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is supported by the comparison in Figure 5B showing consistent trends between flow agreement parameter values and actual power savings across models. The correlation validates the predictive utility of this metric.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C117"
+    ],
+    "result": "Inline formations lose cohesion beyond a critical number of swimmers (typically 3-4), with trailing swimmers separating from the group, while side-by-side formations remain stable and scale to arbitrary numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24 and C74-C79, C117 are well-supported by simulation data in Figures 7 and 8 showing systematic splitting of inline formations at specific group sizes. The contrast with stable side-by-side formations is clearly demonstrated across multiple group sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C118"
+    ],
+    "result": "The loss of cohesion in inline formations can be predicted by analyzing the wake of leading swimmers, which shows weakened flow agreement regions that prevent additional swimmers from gaining hydrodynamic benefits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, and C118 are supported by flow agreement parameter analysis in Figure 9 showing enhanced regions behind two swimmers but weakened regions behind three swimmers. This mechanistic explanation is consistent with observed splitting behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C93",
+      "C94",
+      "C97"
+    ],
+    "result": "The critical number of swimmers that maintain cohesive inline formation is not universal but depends on flow regime (Reynolds number, dissipation time) and model properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C93-C94, C97 are supported by simulations at different dissipation times (Figure 8) and CFD at Re=1645 (Figure 9 supplement 1), showing that more swimmers remain cohesive at higher dissipation times. Comparison with Peng et al. 2018 (C95-C96) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Active phase control applied to a trailing swimmer can stabilize inline formations but provides no hydrodynamic benefit to that swimmer due to fundamental physical limitations of the oncoming wake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by simulation results in Figure 10A showing stable formation with phase control but 100% increased power expenditure for swimmer 4. The explanation based on non-reciprocal flow coupling and lack of favorable wake structure is mechanistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109"
+    ],
+    "result": "Lateral offset of swimmers can passively stabilize formations in multiple ways, with diamond formations providing the highest overall energy savings but unequal distribution of benefits among members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C107 and C109 are supported by simulation results in Figure 10D showing various stable configurations with different energetic profiles. The finding that diamond formations are optimal but provide unequal benefits contrasts with theoretical predictions for infinite lattices.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Swimmers can vary their phase substantially without compromising average energy savings as long as they maintain close lateral distance to neighbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by the parametric study in Figure 6B showing that power savings remain above 20% across all phase lags when lateral offset is \u22640.25L, but decrease significantly at larger lateral distances.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Side-by-side formations in larger groups provide nearly equal hydrodynamic benefits to all members (up to 55% power savings for middle swimmers), except edge swimmers which benefit less, and remain stable across group sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by simulation data in Figure 7B-C and Figure 7 supplement 2. The consistency with experimental observations (Ashraf et al. 2017) and robustness across group sizes strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "Although many emergent formations do not globally optimize savings for the entire school, they offer individuals numerous opportunities for varying levels of energetic savings, potentially creating competition for advantageous positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is an interpretation based on the authors' findings about unequal benefit distribution. While the data on unequal benefits is solid, the speculation about competition is not directly tested and remains a hypothesis for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C127"
+    ],
+    "result": "When not challenged by strong currents, fish position themselves without consideration for equal benefit sharing, but cooperation is forced when challenged to swim at high speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C122 and C127 are interpretations of experimental observations (Ashraf et al. 2017, Lombana and Porfiri 2022) based on the authors' simulation findings. While the interpretation is plausible, it remains speculative without direct experimental validation of the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C126",
+      "C128",
+      "C129"
+    ],
+    "result": "Flow physics may create a connection between hydrodynamic resources and social traits (greed vs. cooperation), potentially acting as selective pressure in the evolution of aquatic animal groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C123, C126, C128-C129 are speculative hypotheses about evolutionary and behavioral implications. While the hydrodynamic findings are solid, the connection to social behavior and evolution is not tested and represents interesting but unvalidated speculation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Direct energetic measurements in moving animals are difficult and unreliable, and animal groups do not conform to regular patterns with individuals dynamically changing positions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 are well-supported by multiple citations to existing literature documenting these challenges. This provides important context for why computational approaches are valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "Flapping hydrofoils share many hydrodynamic aspects with swimming fish, including alternating vorticity patterns in wakes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by extensive citations to literature demonstrating similarities between hydrofoils and fish. This validates the modeling approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Vortex phase matching is an outcome of passive flow interactions rather than an active strategy, and side-by-side formations can be predicted from symmetry arguments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by the demonstration that the linear phase-distance relationship emerges from passive flow coupling alone (C21, C52). The hypothesis challenges prior interpretations (C10) and is well-grounded in the simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "The findings highlight non-reciprocal flow coupling in leader-follower configurations and provide efficient diagnostic tools applicable to computational and experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by the demonstrated predictive capability of the flow agreement parameter approach (Figures 4-5). The practical utility and broad applicability are clear strengths of the methodology.",
+    "result_type": "MAJOR"
+  }
+]

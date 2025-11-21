@@ -1,0 +1,1873 @@
+{
+  "submission": {
+    "id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:57:23.187097Z",
+    "updated_at": "2025-11-21T22:57:23.187097Z"
+  },
+  "content": [
+    {
+      "id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "content_type": "manuscript",
+      "content_text": "# When and why does motor preparation arise in recurrent neural network models of motor control?\n\n## Authors\n\n- Marine Schimel<sup>1</sup> ([ORCID: 0000-0002-6937-011X](https://orcid.org/0000-0002-6937-011X)) \u2020\n- Ta-Chu Kao<sup>2</sup>\n- Guillaume Hennequin<sup>1</sup>\n\n### Affiliations\n\n1. Computational and Biological Learning Lab, Department of Engineering, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))\n2. Meta Reality Labs Burlingame United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nDuring delayed ballistic reaches, motor areas consistently display movement-specific activity patterns prior to movement onset. It is unclear why these patterns arise: while they have been proposed to seed an initial neural state from which the movement unfolds, recent experiments have uncovered the presence and necessity of ongoing inputs during movement, which may lessen the need for careful initialization. Here, we modeled the motor cortex as an input-driven dynamical system, and we asked what the optimal way to control this system to perform fast delayed reaches is. We find that delay-period inputs consistently arise in an optimally controlled model of M1. By studying a variety of network architectures, we could dissect and predict the situations in which it is beneficial for a network to prepare. Finally, we show that optimal input-driven control of neural dynamics gives rise to multiple phases of preparation during reach sequences, providing a novel explanation for experimentally observed features of monkey M1 activity in double reaching.\n\n## Introduction\n\nDuring the production of ballistic movements, the motor cortex is thought to operate as a dynamical system whose state trajectories trace out the appropriate motor commands for downstream effectors (Shenoy et al., 2013; Miri et al., 2017; Russo et al., 2018). The extent to which these cortical dynamics are controlled by exogenous inputs before and/or during movement is the subject of ongoing study.\n\nOn the one hand, several experimental and modeling studies point to a potential role for exogenous inputs in motor preparation. First, cortical state trajectories are empirically well described by a low-dimensional dynamical system evolving near-autonomously during movement (Churchland et al., 2012; Pandarinath et al., 2018; Schimel et al., 2022), such that there is a priori no reason to suspect that inputs are required for motor production. Rather, inputs would be required during preparation to bring the state of the cortical network into a suitable initial condition. This input-driven seeding process is corroborated by observations of movement-specific primary motor cortex (M1) activity arising well before movement initiation (Lara et al., 2018; Kaufman et al., 2014; Churchland et al., 2012; Meirhaeghe et al., 2023; Figure 1A), and associated models demonstrate the critical role of preparatory inputs therein (Sussillo et al., 2015; Hennequin et al., 2014; Kao et al., 2021).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89131/elife-89131-fig1-v1.jpg)\n\n**Figure 1.:** (A) Trial-averaged firing rate of two representative monkey primary motor cortex (M1) neurons, across eight different movements, separately aligned to target onset (left) and movement onset (right). Neural activity starts separating across movements well before the animal starts moving. (B) Top: a recurrent neural network (RNN) model of M1 dynamics receives external inputs $u(t)$ from a higher-level controller, and outputs control signals for a biophysical two-jointed arm model. Inputs are optimized for the correct production of eight center-out reaches to targets regularly positioned around a circle. Bottom: firing rate of a representative neuron in the RNN model for each reach, under two extreme control strategies. In the first strategy (left, solid lines), the external inputs $u(t)$ are optimized while being temporally confined to the preparatory period. In the second strategy (right, dashed lines), they are optimized while confined to the movement period. Although slight differences in hand kinematics can be seen (compare corresponding solid and dashed hand trajectories), both control policies lead to successful reaches. These introductory simulations are shown for illustration purposes; the particular choice of network connectivity and the way the control inputs were found are described in the Results section.\n\nOn the other hand, recent studies in mice have shown that the motor cortex receives critical pattern-generating input from the thalamus during movement production (Sauerbrei et al., 2020), and recurrent neural network (RNN)-based modeling of the motor feedback loop involved in reaching movements suggests that sensory feedback may also contribute significantly to the observed dynamics of M1 (Kalidindi et al., 2021). Moreover, most published network models of delayed reaches are able to perform the task just as well without preparatory inputs, i.e., with external inputs forcefully confined to the movement epoch \u2013 an illustratory example is shown in Figure 1B. Thus, the relative contributions of preparatory vs. movement-epoch inputs to the dynamics implemented by M1 (potentially as part of a broader set of areas) remain unclear.\n\nIn addition to the specific form that inputs to cortical dynamics might take, one may ask more broadly about the computational role of motor preparation. Motor preparation is known to benefit behavior (e.g. by shortening reaction times and enabling more accurate execution Riehle and Requin, 1989; Churchland and Shenoy, 2007; Michaels et al., 2015) and may facilitate motor learning (Sheahan et al., 2016; Sun et al., 2022). However, from the perspective of cortical dynamics, preparation also introduces additional constraints.\n\nSpecifically, the high density of M1 neurons projecting directly to the spinal cord (Dum and Strick, 1991) suggests that motor cortical outputs control lower-level effectors with little intermediate processing. For preparatory processes to avoid triggering premature movement, any pre-movement activity in the motor and dorsal premotor (PMd) cortices must therefore engage the pyramidal tract neurons in a way that ensures their activity patterns will not lead to any movement.\n\nWhile this can be achieved by constraining neural activity to evolve in a nullspace of the motor output (Kaufman et al., 2014), the question nevertheless arises: what advantage is there to having neural dynamics begin earlier in a constrained manner, rather than unfold freely just in time for movement production?\n\nHere, we sought a normative explanation for motor preparation at the level of motor cortex dynamics: we asked whether preparation arises in RNNs performing delayed-reaching tasks, and what factors lead to more or less preparation.\n\nSuch an explanation could not be obtained from previous network models of delayed reaches, as they typically assume from the get-go that the cortical network receives preparatory inputs during a fixed time window preceding the go cue (Sussillo et al., 2015; Kao et al., 2021). In this case, pre-movement activity is by designing a critical determinant of the subsequent behavior (Sussillo et al., 2015; Kao et al., 2021; Zimnik and Churchland, 2021). In this work, we removed this modeling assumption and studied models in which the correct behavior could in principle be obtained without explicit motor preparation.\n\nTo study the role of motor preparation, and that of exogenous inputs in this process, we followed an optimal control approach (Harris and Wolpert, 1998; Todorov and Jordan, 2002; Yeo et al., 2016). We considered the dynamics of an RNN model of M1 coupled to a model arm (Todorov and Li, 2003), and used a standard control cost functional to quantify and optimize performance in a delayed-reaching task. We used the iterative linear quadratic regulator algorithm (iLQR) algorithm (Li and Todorov, 2004) to find the spatiotemporal patterns of network inputs that minimize this cost functional, for any given network connectivity. Critically, these inputs could arise both before and during movement; thus, our framework allowed for principled selection among a continuum of motor strategies, going from purely autonomous motor generation following preparation, to purely input-driven unprepared dynamics.\n\nWe considered an inhibition-stabilized network \u2013 which was shown previously to capture prominent aspects of monkey M1 activity (Hennequin et al., 2014; Kao et al., 2021) \u2013 and found that optimal control of the model requires preparation, with optimal inputs arising well before movement begins. To understand what features of network connectivity lead to optimal preparatory control strategies, we first turned to low-dimensional models, which could be more easily dissected. We then generalized insights from those systems back to high-dimensional networks using tools from control theory, and found that preparation can be largely explained by two quantities summarizing the dynamical response properties of the network.\n\nFinally, we studied the optimal control of movement sequences. Consistent with recent experimental findings (Zimnik and Churchland, 2021), we observed that optimal control of compound reaches leads to input-driven preparatory activity in a dedicated activity subspace prior to each movement.\n\nOverall, our results show that preparatory neural activity patterns arise from optimal control of reaching movements at the level of motor cortical circuits, thus providing a possible explanation for a number of observed experimental findings.\n\n### Model\n\n#### A model of cortical dynamics for reaching movements\n\nWe considered a simple reaching task, in which the hand must move from a resting location to one of eight radially located targets in a 2D plane as fast as possible (Figure 1). The target had to be reached within 600 ms of a go cue that follows a delay period of varying (but known) duration. We modeled the trajectory of the hand via a two-jointed model arm (Li and Todorov, 2004; Kao et al., 2021), driven into motion by a pair of torques $m(t)$ (Methods). We further assumed that these torques arise as a linear readout of the momentary firing rates $r(t)$ of a population of M1 neurons,\n\n$$\nm(t)=Cr(t)\n$$\n\nwhere $C$ was a randomly generated readout matrix, projecting the neural activity into the output space. We modeled the dynamics of $N=200$ M1 neurons using a standard rate equation,\n\n$$\n\\tau\\frac{dx(t)}{dt}=\u2212x(t)+Wr(t)+h+u(t)\n$$\n\n\n\n$$\nr(t)=\u03d5[x(t)],\n$$\n\nwhere the momentary population firing rate vector $r(t)$ was obtained by passing a vector of internal neuronal activations $x(t)$ through a rectified linear function $\u03d5[\u22c5]$, element-wise. In Equation 2, $h$ is a constant input that establishes a baseline firing rate of 5 Hz on average, with a standard deviation of 5 Hz across neurons, $u(t)$ is a task-dependent control input (see below), and $W$ denotes the matrix of recurrent connection weights. Throughout most of this work, we considered inhibition-stabilized M1 dynamics (Hennequin et al., 2014; Methods), which have previously been shown to produce activity resembling that of M1 during reaching (Kao et al., 2021).\n\nThus, our model can be viewed as a two-level controller, with the arm being controlled by M1, and M1 being controlled by external inputs. Note that each instantiation of our model corresponds to a set of $W$, $C$, and $h$, none of which are specifically optimized for the task.\n\n#### To prepare or not to prepare?\n\nPrevious experimental (Churchland et al., 2012; Shenoy et al., 2013) and modeling (Hennequin et al., 2014; Sussillo et al., 2015; Pandarinath et al., 2018) work suggests that fast ballistic movements rely on strong dynamics, which are observed in M1 and well modeled as near-autonomous (although the underlying dynamical system may not be anatomically confined to M1, as we discuss later). Network-level models of ballistic control thus rely critically on a preparation phase during which they are driven into a movement-specific state that seeds their subsequent autonomous dynamics (Kao et al., 2021; Sussillo et al., 2015). However, somewhat paradoxically, the same recurrent neural network models can also solve the task in a completely different regime, in which task-related inputs arise during movement only, with no preparatory inputs whatsoever. We illustrate this dichotomy in Figure 1. The same center-out reach can be produced with control inputs to M1 that arise either prior to movement only (full lines), or during movement only (dashed lines). In the latter case, no reach-specific preparatory activity is observed, making the model inconsistent with experimental findings. But what rationale is there in preparing for upcoming movements, then?\n\nTo address this question, we formulated delayed reaching as an optimal control problem, and asked what external inputs are required, and at what time, to drive the hand into the desired position with minimum control effort. Specifically, we sought inputs that were as weak as possible yet accurately drove the hand to the target within an allotted time window. We also penalized inputs that caused premature movement before the go cue.\n\nThus, we solved for spatiotemporal input trajectories that minimized a cost functional capturing the various task requirements. Our cost was composed of three terms: $J_{target}$ penalizes deviations away from the target, with an \u2018urgency\u2019 weight that increases quadratically with time, thus capturing the implicit incentive for animals to perform fast reaches in such experiments (which are normally conducted in sessions of fixed duration).\n\n$J_{null}$ penalizes premature movement during preparation, as measured by any deviation in position, speed, and acceleration of the hand. Finally, $J_{effort}$ penalizes control effort in the form of input magnitude throughout the whole trial, thus promoting energy-efficient control solutions among a typically infinite set of possibilities (Kao et al., 2021; Sterling and Laughlin, 2015). Note that $J_{effort}$ can be viewed as a standard regularization term, and must be included to ensure the control problem is well defined. The total objective thus had the following form:\n\n$$\nJ[u(t)]=\\int_{0}^{T}\u2016\\theta(t)\u2212\\theta^{\u22c6}\u2016^{2}\\frac{t^{2}}{T^{2}}\\frac{dt}{T}\u23dfJ_{target}+\\alpha_{null}\\int_{\u2212\u0394_{prep}}^{0}(\u2016\\theta(t)\u2212\\theta_{0}\u2016^{2}+\u2016\\theta\u02d9(t)\u2016^{2}+\u2016m(t)\u2016^{2})\\frac{dt}{T}\u23dfJ_{null}+\\alpha_{effort}\\int_{\u2212\u0394_{prep}}^{T}\u2016u(t)\u2016^{2}\\frac{dt}{NT}\u23dfJ_{effort},\n$$\n\nwhere $\\theta$ and $\\theta\u02d9$ denote the position and velocity of the hand in angular space, $\u0394_{prep}$ was the duration of the delay period, and $T$ that of the movement period. As $J_{target}$ and $J_{null}$ depend on $u(t)$ implicitly through Equations 1 and 2, $J$ is a function of $u$ only.\n\nImportantly, we allowed for inputs within a time window beginning $\u0394_{prep}$ ms before, and ending $T$ ms after the go cue (set at $t=0$). Therefore, both preparation-only and movement-only input strategies (Figure 1) could potentially arise, as well as anything in-between.\n\nNote that this control objective assumes that the delay duration ($\u0394_{prep}$) is known ahead of time, an assumption that does not hold for many delayed-reaching tasks in monkeys where the delay is uncertain. We make this assumption for computational tractability and later discuss extensions to the uncertain case (Discussion).\n\nHere, we solved for the optimal control inputs using the iLQR (Li and Todorov, 2004), an efficient trajectory optimization algorithm that is well suited for handling the nonlinear nature of both the arm\u2019s and the network\u2019s dynamics. As our primary goal was to assess the role of preparation in a normative way, we did not study the putative circuit dynamics upstream of M1 that might lead to the computation of these optimal inputs.\n\nWe balanced the various components of our cost functional by choosing $\\alpha_{null}$ and $\\alpha_{effort}$ to qualitatively match the behavioral requirements of a typical reach-and-hold task. Specifically, we tuned them jointly so as to ensure (i) stillness during preparation and (ii) reach duration of approximately \u223c400 ms, with the hand staying within 0.5 cm of the target for \u223c200 ms after the end of the reach. We ensured that the main qualitative features of the solution, i.e., the results presented below, were robust to the choice of hyperparameter values within the fairly large range in which the above soft-constraints are satisfied (Appendix 1).\n\n## Results\n\n### Preparation arises as an optimal control strategy\n\nUsing the above control framework, we assessed whether the optimal way of performing a delayed reach involves preparation.\n\nMore concretely, does the optimal control strategy of the model described in Equation 2 involve any preparatory inputs during the delay period? For any single optimally performed reach, we found that network activity began changing well before the go cue (Figure 2B, bottom), and that this was driven by inputs that arose early (Figure 2B, middle). Thus, although preparatory network activity cancels in the readout (such that the hand remains still; Figure 2B, top) and therefore does not contribute directly to movement, it still forms an integral part of the optimal reach strategy.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89131/elife-89131-fig2-v1.jpg)\n\n**Figure 2.:** (A) Illustration of the different terms in the control cost function, designed to capture the different requirements of the task. \u2018Tgt\u2019 marks the time of target onset, \u2018Go\u2019 that of the go cue (known in advance), and \u2018End\u2019 the end of the trial. (B) Time course of the hand velocity (top), optimal control inputs (middle; 10 example neurons), and firing rates (bottom, same neurons) during a delayed reach to one of the eight targets shown in Figure 1A. Here, the delay period was set to $\u0394_{prep}=300$ ms. Note that inputs arise well before the go cue, even though they have no direct effect on behavior at that stage. (C) Dependence of the different terms of the cost function on preparation time. All costs are normalized by the total cost at $\u0394_{prep}=0$ ms. The inset shows the time course of the hand\u2019s average distance to the relevant target when no preparation is allowed (blue) and when preparation is allowed (red). Although the target is eventually reached for all values of $\u0394_{prep}$, the hand gets there faster with longer preparation times, causing a decrease in $J_{tgt}$ \u2013 and therefore also in $J_{tot}$. Another part of the decrease in $J_{tot}$ is due to a progressively lower input energy cost $J_{effort}$. On the other hand, the cost of staying still before the go cue increases slightly with $\u0394_{prep}$. (D) We define the preparation index as the ratio of the norms of the external inputs during preparation and during movement (see text). The preparation index measures how much the optimal strategy relies on the preparatory period. As more preparation time is allowed, this is used by the optimal controller and more inputs are given during preparation. For longer preparation times, this ratio increases sub-linearly, and eventually settles.\n\nTo quantify how much the optimal control strategy relied on inputs prior to movement, we defined the preparation index as the ratio of input magnitude during the delay period to that during the remainder of the trial:\n\n$$\nprep. index=\\sqrt{\\frac{\\int_{\u2212\u0394_{prep}}^{0}\u2016u(t)\u2016^{2}dt}{\\int_{0}^{T}\u2016u(t)\u2016^{2}dt}}.\n$$\n\nWe found that the preparation index rose sharply as we increased the delay period, and eventually plateaued at \u223c1.3 for delay periods longer than 300 ms (Figure 2C).\n\nSimilarly, the total cost of the task was highest in the absence of preparation, and decreased until it also reached a plateau at $\u0394_{prep}\u223c300$ ms (Figure 2C, black). This appears somewhat counterintuitive, as having a larger $\u0394_{prep}$ means that both $J_{effort}$ and $J_{null}$ are accumulated over a longer period. To resolve this paradox, we examined each component of the cost function. We found that the overall decrease in cost with increasing preparation time was driven by a concurrent decrease in both $J_{tgt}$ and $J_{effort}$. The former effect was due to the model producing faster reaches (Figure 2C inset; hand position for a reach with [red] and without [blue] preparation) while the latter arose from smaller control inputs being necessary when preparation was allowed. Together, these results suggest that the presence of a delay period changes the optimal control strategy for reaching, and increases performance in the task.\n\nThe results above show that delaying the reach beyond \u223c300 ms brings little benefit; in particular, all components of the cost stabilize past that point (Figure 2C). We thus wondered what features the optimally controlled dynamics would display as $\u0394_{prep}$ increased beyond 300 ms. Would the network defer preparation to a last minute surge, or prepare more gently over the entire preparatory window?\n\nWould the network produce the same neural activity patterns? We found that the optimal controller made very little use of any preparation time available up to 300 ms before the go cue: with longer preparation times, external input continued to arise just a couple of hundred milliseconds before movement initiation, and single neuron firing rates remained remarkably similar (Figure 3A). This was also seen in PCA projections of the firing rates, which traced out similar trajectories irrespective of the delay period (Figure 3B). We hypothesized that this behavior is due to the network dynamics having a certain maximum characteristic timescale, such that inputs that arrive too early end up being \u2018forgotten\u2019 \u2013 they increase $J_{effort}$ and possibly $J_{null}$ without having a chance to influence $J_{tgt}$. We confirmed this by varying the characteristic time constant ($\\tau$ in Equation 2). For a fixed $\u0394_{prep}$, we found that for larger (resp. lower) values of $\\tau$, the optimal control inputs started rising earlier (resp. later) and thus occupied more (resp. less) of the alloted preparatory period (Appendix 1\u2014figure 3).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89131/elife-89131-fig3-v1.jpg)\n\n**Figure 3.:** (A) Optimal control inputs to 10 randomly chosen neurons in the model recurrent neural network (RNN) (left) and their corresponding firing rates (right) for different preparation times $\u0394_{prep}$ (ranging from 0 to 800 ms; c.f. labels). (B) Projection of the movement-epoch population activity for each of the eight reaches (panels) and each value of $\u0394_{prep}$ shown in A (darker to lighter colors). These population trajectories are broadly conserved across delay times, and become more similar for larger delays.\n\n### Understanding optimal control in simplified models\n\nHaving established that the inhibition-stabilized network (ISN) model of M1 relies on preparatory inputs to solve the delayed-reaching task, we next tried to understand why it does so.\n\nTo further unravel the interplay between the structure of the network and the optimal control strategy, i.e., what aspects of the dynamics of the network warrant preparation, we turned to simpler, two-dimensional (2D) models of cortical dynamics. These 2D models are small enough to enable detailed analysis (Appendix 1\u2014figure 2), yet rich enough to capture the two dominant dynamical phenomena that arise in ISN dynamics: nonnormal amplification (Murphy and Miller, 2009; Goldman, 2009; Hennequin, 2012) and oscillations (Brunel, 2000; Dayan and Abbott, 2001). Specifically, networks of E and I neurons have been shown to embed two main motifs of effective connectivity which are revealed by appropriate orthogonal changes of basis: (i) feedforward (\u2018nonnormal\u2019) connectivity whereby a \u2018source mode\u2019 of E-I imbalance feeds into a \u2018sink mode\u2019 in which balance is restored, and (ii) anti-symmetric connectivity that causes the two populations to oscillate.\n\nTo study the impact of each of these prototypical connectivity motifs on movement preparation, we implemented them separately, i.e., as two small networks of two units each, with an overall connectivity scale parameter $w$ which we varied (Figure 4A and D; Methods). As both nonnormal and oscillatory dynamics arise from linear algebraic properties of the connectivity matrix, we considered linear network dynamics for this analysis ($\u03d5(x)=x$ in Equation 3). Moreover, to preserve the existence of an output nullspace in which preparation could in principle occur without causing premature movement, we reduced the dimensionality of the motor readout from 2D (where there would be no room left for a nullspace) to 1D (leaving a 1D nullspace), and adapted the motor task so that the network now had to move the hand position along a single dimension (Figure 4B and E, top). Analogous to the previous arm model, we assumed that the hand\u2019s acceleration along this axis was directly given by the 1D network readout.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89131/elife-89131-fig4-v1.jpg)\n\n**Figure 4.:** (A) Activity flow field (10 example trajectories) of the nonnormal network, in which a \u2018source\u2019 unit (orange) drives a \u2018sink\u2019 unit (brown). We consider two opposite readout configurations, where it is either the sink (left) or the source (right) that drives the acceleration of the hand. (B) Temporal evolution of the hand position (top; the dashed horizontal line indicates the reach target), hand acceleration (middle), and optimal control inputs to the two units (bottom; colors matching panel A), under optimal control given each of the two readout configurations shown in A (left vs. right). The dashed vertical line marks the go cue, and the gray bar indicates the delay period. While the task can be solved successfully in both cases, preparatory inputs are only useful when the sink is read out. (C) Network activity trajectories under optimal control. Each trajectory begins at the origin, and the end of the delay period is shown with a black cross. (D\u2013F) Same as (A\u2013C), for the oscillatory network. (G\u2013H) Preparation index (top) and total amount of preparatory inputs (bottom) as a function of the scale parameter $w$ of the network connectivity, for various readout configurations (color-coded as shown in the top inset). The nonnormal network (top) prepares more when the readout is aligned to the most controllable mode, while the amount of preparation in the oscillatory network (bottom) is independent of the readout direction. The optimal strategy must balance the benefits from preparatory inputs which allow to exploit the intrinsic network dynamics, with the constraint to remain still. This is more difficult when the network dynamics are strong and pushing activity out of the readout-null subspace, explaining the decrease in preparation index for large values of $w$ in the oscillatory network.\n\nWe found that optimal control of both dynamical motifs generally led to preparatory dynamics, with inputs arising before the go cue (Figure 4B and E, bottom). In the feedforward motif, the amount of preparatory inputs appeared to depend critically on the orientation of the readout. When the readout was aligned with the sink (brown) mode (Figure 4B, left), the controller prepared the network by moving its activity along the source (orange) mode (Figure 4C, left). This placed the network in a position from which it had a natural propensity to generate large activity transients along the readout dimension (c.f. flow field in Figure 4A); here, these transients were exploited to drive the fast upstroke in hand acceleration and throw the hand toward the target location. Note that this strategy reduces the amount of input the controller needs to deliver during the movement, because the network itself does most of the work.\n\nNevertheless, in this case the network\u2019s own impulse response was not rich enough to accommodate the phase reversal required to subsequently slow the hand down and terminate the movement. Optimal control therefore also involved inputs during the movement epoch, leading to a preparatory index of \u223c0.54 (Figure 4G, dark blue).\n\nWhen it was instead the source mode that was read out (Figure 4B, right), the only dimension along which the system could prepare without moving was the sink mode. Preparing this way is of no benefit, because the flow field along the sink mode has no component along the source (readout) mode.\n\nThus, here the optimal strategy was to defer control to the movement epoch, during which the transient growth of network activity along the readout rested entirely on adequate control inputs. This led to a preparation index of \u223c0 (Figure 4G, pale green). Although the network did react with large activity excursions along the sink mode (Figure 4C, right), these were inconsequential for the movement. Importantly, of the two extreme readout configurations discussed above, the first one yielded a smaller overall optimal control cost (by a factor of \u223c1.5). Thus, at a meta-control level, ideal downstream effectors would read out the sink mode, not the source mode. Note that while increasing the connectivity strength initially led to more preparation (Figure 4H), a plateau was eventually reached for $w\\geq4$. Indeed, while stronger dynamics initially make preparation more beneficial, they also make it more difficult for preparatory activity to remain in the readout nullspace.\n\nWe obtained similar insights for oscillatory network dynamics (Figure 4D\u2013F). A key difference however was that the flow field was rotationally symmetric such that no distinction could be made between \u2018source\u2019 and \u2018sink\u2019 units \u2013 indeed the optimal control strategy yielded the same results (up to a rotation of the state space) irrespective of which of the two units was driving the hand\u2019s acceleration (compare left and right panels in Figure 4D\u2013F). Nevertheless, the optimal controller consistently moved the network\u2019s activity along the output-null axis during preparation, in such a way as to engage the network\u2019s own rotational flow immediately after the go cue (Figure 4F). This rotational flow drove a fast rise and decay of activity in the readout unit, thus providing the initial segment of the required hand acceleration. The hand was subsequently slowed down by modest movement-epoch control inputs which eventually receded, leading to a preparation index of \u223c0.58. Interestingly, the preparation index showed a decrease for very large $w$ (Figure 4G), which did not reflect smaller preparatory inputs (Figure 4H) but rather reflected the larger inputs that were required during movement to cancel the fast oscillations naturally generated by the network.\n\nThe above results highlight how the optimal control strategy is shaped by the dynamical motifs present in the network. Crucially, we found that the optimal way to control the movement depends not only on the strength and flow of the internal network dynamics, but also on their interactions with the readout.\n\n### Control-theoretic properties predict the amount of preparation\n\nOur investigation of preparation in a low-dimensional system allowed us to isolate the impact of core dynamical motifs, and highlighted how preparation depends on the geometry of the flow field, and its alignment to the readout. However, these intuitions remain somewhat qualitative, making them difficult to generalize to our high-dimensional ISN model.\n\nTo quantify the key criteria that appear important for preparation, we turned to tools from control theory. We reasoned that, for a network to be able to benefit from preparation and thus exhibit a large preparation index, there must be some advantage to using early inputs that do not immediately cause movement, relative to using later inputs that do. We hypothesized that this advantage could be broken down into two criteria. First, there must exist activity patterns that are momentarily output-null (i.e. do not immediately cause movement) yet seed output-potent dynamics that subsequently move the arm. The necessity of this criterion was obvious in the 2D nonnormal network, which did not display any preparation when its nullspace was aligned with its \u2018sink\u2019 mode. In the language of control theory, this criterion implies that the nullspace of the readout must be sufficiently \u2018observable\u2019 \u2013 we captured this in a scalar quantity \u03b1 (Methods; Kao and Hennequin, 2019; Skogestad, 2007). Second, there must be a sizeable cost to performing the movement in an entirely input-driven manner without relying on preparation. In other words, the network should be hard to steer along the readout direction, i.e., the readout must be of limited \u2018controllability\u2019 \u2013 we captured this in another scalar quantity \u03b2 (Methods).\n\nWe illustrate the meaning of these two metrics in Figure 5A and B for a 2D example network that combines nonnormality and oscillations. We show two extreme choices of readout direction (Figure 5A, dashed black): the one that maximizes \u03b1 (top) and the one that minimizes it (bottom). In the first case, the readout nullspace (dashed orange) is very observable, i.e., trajectories that begin in the nullspace evolve to produce large transients along the readout (solid orange and inset). In the second case, the opposite is true. For each case, we also assessed the controllability of the readout (\u03b2). The controllability of a direction corresponds to how much variance activity trajectories exhibit along that direction, when they are randomly and isotropically initialized (Figure 5B). In other words, a very controllable direction is one along which network trajectories have a natural tendency to evolve.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89131/elife-89131-fig5-v1.jpg)\n\n**Figure 5.:** (A) Illustration of the observability of the output nullspace in a synthetic two-dimensional system. The observability of a direction is characterized by how much activity (integrated squared norm) is generated along the readout by a unit-norm initial condition aligned with that direction. The top and bottom panels show the choices of readout directions (dotted black) for which the corresponding nullspace (dotted orange) is most (maximum \u03b1) and least (minimum \u03b1) observable, respectively. Trajectories initialized along the null direction are shown in solid orange, and their projections onto the readout are shown in the inset. (B) Illustration of the controllability of the readout in the same 2D system as in (A). To compute controllability, the distribution of activity patterns collected along randomly initialized trajectories is estimated (heatmap); the controllability of a given direction then corresponds to how much variance it captures in this distribution. Here, the network has a natural propensity to generate activity patterns aligned with the dashed white line (\u2018most controllable\u2019 direction). The readout directions are repeated from panel A (dotted black). The largest (resp. smallest) value of \u03b2 would by definition be obtained when the readout is most (resp. least) controllable. Note the tradeoff in this example: the choice of readout that maximizes \u03b1 (top) does not lead to the smallest \u03b2. (C) The values of \u03b1 and \u03b2 accurately predict the preparation index ($R^{2}=0.93$) for a range of high-dimensional inhibition-stabilized networks (ISNs) (maroon dots) with different connectivity strengths and characteristic timescales (Methods). The best fit (after z-scoring) is given by $\u00a0f(\\alpha,\\beta)=(16.94\\pm0.02)\\alpha\u2212(15.97\\pm0.02)\\beta$ (mean \u00b1 s.e.m. were evaluated by boostrapping). This confirms our hypothesis that optimal control relies more on preparation when $\\alpha$ is large and \u03b2 is small. Note that \u03b1 and \u03b2 alone only account for 34.8% and 30.4% of the variance in the preparation index, respectively (inset). Thus, \u03b1 and \u03b2 provide largely complementary information about the networks\u2019 ability to use inputs, and can be combined into a very good predictor of the preparation index. Importantly, even though this fit was obtained using ISNs only, it still captures 69% of preparation index variance across networks from other families (blue dots; Methods).\n\nWe then assessed how well $\\alpha$ and $\\beta$ could predict the preparation index of individual networks. In 2D networks, we found that a simple function that grows with $\\alpha$ and decreases with $\\beta$ could accurately predict preparation across thousands of networks (Appendix 1 - Section 3 \u2018Additional results in the 2D system\u2019). To assess whether these insights carried over to high-dimensional networks, we then generated a range of large ISNs with parameterically varied connectivity strengths and decay timescales (Methods). We then regressed the preparation index against the values of $\\alpha$ and $\\beta$ computed for each of these networks (as controllability and observability are only defined for linear networks, we set $\u03d5(x)=x$ for this investigation). We found that a simple linear mapping, $prep.\\ index=k_{0}+k_{\\alpha}\\alpha+k_{\\beta}\\beta$, with parameters fitted to one half of the ISNs, accurately predicted the preparation indices of the other half (Figure 5C; $R^{2}=0.93$, fivefold cross-validated). Interestingly, we observed that although $\\alpha$ and $\\beta$ (which are both functions of the network connectivity) were highly correlated across different networks, discarding either variable in our linear regression led to a significant drop in $R^{2}$ (Figure 5C, inset). Importantly, it was their difference that best predicted the preparation index ($k_{\\alpha}>0$ and $k_{\\beta}<0$), consistent with our hypothesis that the preparation index is a relative quantity which increases as the nullspace becomes more observable, but decreases as readout dimensions become more controllable.\n\nWe were able to confirm the generality of this predictive model by generating networks with other types of connectivity (oscillatory networks, and networks with unstructured random weights), which displayed dynamics very different from the ISNs (see Appendix 1\u2014figure 6). Interestingly, despite the different distribution of $\\alpha$ and $\\beta$ parameters in those networks, we could still capture a large fraction of the variance in their preparation index ($R^{2}=0.69$) using the linear fit obtained from the ISNs alone.\n\nThis confirms that $\\alpha$ and $\\beta$ can capture information about the networks\u2019 dynamics in a universal manner.\n\nNote that we do not make any claims about the specific functional form of the relationship between $\\alpha$, $\\beta$, and the preparation index. Rather, we claim that there should be a broad trend for the preparation index to increase with $\\alpha$ and decrease with $\\beta$, and we acknowledge that this relationship could in general be nonlinear. Indeed, in 2D networks, we found that the preparation index was in fact better predicted by the ratio of $\\alpha$ over $\\beta$ than by their difference (Appendix 1\u2014figure 5).\n\nFinally, as the above results highlight that the amount of preparation depends on the alignment between internal dynamics and readout, one may wonder how much our conclusions depend on our use of a random unstructured readout matrix. First, we note that the effect of the alignment on preparation index is greatly amplified in the low-dimensional networks (Figure 4G). In high-dimensional networks, the null space of a random readout matrix $C$ will have some overlap with the most observable directions of the dynamics, thus encouraging preparation. Second, we performed additional simulations where we meta-optimized the readout so as to minimize the average optimal cost per movement. The resulting system is more observable overall (as it allows the network to solve the task at a lower cost) but relies just as much on preparation (Appendix 1\u2014figure 7).\n\n### Modeling movement sequences\n\nHaving gained a better understanding of what features lead a network to prepare, we next set out to assess whether optimal control could also explain the neural preparatory processes underlying the generation of movement sequences. We revisited the experimental studies of Zimnik and Churchland, 2021, where monkeys were trained to perform two consecutive reaches. Each trial started with the display of both targets, followed by an explicitly enforced delay period before the onset of the first reach. A distinction was made between \u2018double\u2019 reaches in which a pause was enforced between reaches, and \u2018compound\u2019 reaches in which no pause was required. This study concluded that, rather than the whole movement sequence unrolling from a single preparatory period, each reach was instead successively seeded by its own preparatory activity.\n\nHere, we asked whether such an independent, successive preparation strategy would arise as an optimal control solution, in the same way that single-reach preparation did. Importantly, we could not answer this question by directly examining network inputs as we did for single reaches. Indeed, any network input observed before the second reach could be contributing either to the end of the first movement, or to the preparation of the next. In fact, the issue of teasing apart preparatory vs. movement-related activity patterns also arose in the analysis of the monkey data. To address this, Zimnik and Churchland, 2021, exploited the fact that monkey M1 activity just before and during single reaches is segregated into two distinct subspaces. Thus, momentary activity patterns (during either single or double reaches) can be unambiguously labeled as preparatory or movement-related depending on which of the two subspaces they occupied. We performed a similar analysis (Methods) and verified that preparatory and movement activity patterns in the model were also well segregated in their respective subspaces in the single-reach task (Figure 6A and B). We then assessed the occupancy of the preparatory subspace during double reaching in the model, and took this measure as a signature of preparation.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89131/elife-89131-fig6-v1.jpg)\n\n**Figure 6.:** (A) Hand velocity during one of the reaches, with the corresponding hand trajectory shown in the inset. (B\u2013C) We identified two six-dimensional orthogonal subspaces, capturing 79% and 85% of total activity variance during single-reach preparation and movement respectively. (B) First principal component of the model activity for the eight different reaches projected into the subspaces identified using preparatory (top) and movement-epoch (bottom) activity. (C) Occupancy (total variance captured across movements) of the orthogonalized preparatory and movement subspaces, in the model (top) and in monkey motor cortical activity (bottom; reproduced from Lara et al., 2018, for monkey Ax). We report mean \u00b1 s.e.m., where the error is computed by bootstrapping from the neural population as in Lara et al., 2018. We normalize each curve separately to have a maximum mean value of 1. To align the model and monkey temporally, we re-defined the model\u2019s \u2018movement onset\u2019 time to be 120 ms after the model\u2019s hand velocity crossed a threshold \u2013 this accounts for cortico-spinal delays and muscle inertia in the monkey. Consistent with Lara et al., 2018\u2019s monkey primary motor cortex (M1) recordings, preparatory subspace occupancy in the model peaks shortly before movement onset, rapidly dropping thereafter to give way to pronounced occupancy of the movement subspace. Conversely, there is little movement subspace occupancy during preparation. (D) Behavioral (top) and neural (middle) correlates of the delayed reach for one example of a double reach with an enforced pause of 0.6 s. The optimal strategy relies on preparatory inputs preceding each movement. (E) Same as (C), for double reaches. The onsets of the monkey\u2019s two reaches are separately aligned to the model\u2019s using the same convention as in (C). The preparatory subspace displays two clear peaks of occupancy. This double occupancy peak is also observed in monkey neural activity (bottom; reproduced from Zimnik and Churchland, 2021, with the first occupancy peak aligned to that of the model). (F) Same as (D), for compound reaches with no enforced pause in-between. Even though the sequence could be viewed as a single long movement, the control strategy relies on two periods of preparation. Here, inputs before the second reach are used to reinject energy into the system after slowing down at the end of the first reach. (G) Even though no explicit delay period is enforced in-between reaches during the compound movement, the preparatory occupancy rises twice, before the first reach and once again before the second reach. This is similar to observations in neural data (bottom; reproduced from Zimnik and Churchland, 2021).\n\nTo model optimal control of a double reach, we modified our cost functional to account for the presence of two consecutive targets (see Methods). We considered the same set of eight targets as in our single-reach task, and modeled all possible combinations of two targets (one example shown in Figure 6). We set the hyper-parameters of the cost function such that both targets could be reached by the resulting optimal controller, in a way that matched important qualitative aspects of the monkeys\u2019 behavior (in particular, such that both reaches were performed at similar velocities, with the second reach lasting slightly longer on average; Figure 6B and C, top).\n\nWe projected the network activity onto preparatory and movement subspaces identified using single and double reaches activity (Methods). For double reaches with a long (600 ms) pause, the preparatory subspace was transiently occupied twice, with the two peaks occurring just before the onset of each movement in the sequence (Figure 6B, bottom).\n\nNotably, the occupancy during the \u2018compound\u2019 reach (without pause; Figure 6C) also started rising prior to the first movement before decaying very slightly and peaking again before the second reach, indicating two independent preparatory events. This is somewhat surprising, given that a movement sequence can also be viewed as a single \u2018compound\u2019 movement, for which we have shown previously a unique preparatory phase is sufficient (Figure 2). In our model, this behavior can be understood to arise from the requirement that the hand stop briefly at the first target. To produce the second reach, the hand needs to accelerate again, which requires transient re-growth of activity in the network. Given that the network\u2019s dynamical repertoire exhibits limited timescales, this is most easily achieved by reinjecting inputs into the system.\n\nIn summary, our results suggest that the \u2018independent\u2019 preparation strategy observed in monkeys is consistent with the optimal control of a two-reach sequence. While Zimnik and Churchland, 2021, showed that RNNs trained on this task used this \u2018independent\u2019 strategy, this was by design as the network was only cued for the second reach after the first one had started. In addition to replicating this proof of concept that it is possible to prepare while moving, our model also shows how and why independent preparation might arise as an optimal control solution.\n\n## Discussion\n\nIn this work, we proposed a model for the dynamics of motor cortex during a delayed-reaching task in non-human primates. Unlike previous work, we treated M1 as an input-driven nonlinear dynamical system, with generic connectivity not specifically optimized for the task, but with external inputs assumed to be optimal for each reach.\n\nMotivated by a large body of evidence suggesting that preparation is useful before delayed reaches (Churchland et al., 2010; Lara et al., 2018; Afshar et al., 2011; Shenoy et al., 2013), but also evidence for thalamic inputs being necessary for accurate movement execution (Sauerbrei et al., 2020), we used this model to investigate whether and why neural circuits might rely on motor preparation during delayed-reaching tasks. Interestingly, preparation arose as an optimal control strategy in our model, with the optimal solution to the task relying strongly on inputs prior to movement onset. Moreover, the benefits of preparation were dependent on the network connectivity, with preparation being more prevalent in networks whose rich internal dynamics can be advantageously seeded by early external inputs. We were able to quantify this intuition with a predictive model relating the dynamical response properties of a network to the amount of preparation it exhibits when controlled optimally.\n\nFinally, we found that prominent features of the monkeys\u2019 neural activity during sequential reaches arose naturally from optimal control assumptions. Specifically, optimally controlled networks relied on two phases of preparation when executing sequences of two reaches, corroborating recent experimental observations in monkey M1 (Zimnik and Churchland, 2021). Together, our results provide a normative explanation for the emergence of preparatory activity in both single and sequential reaching movements.\n\nIn recent years, task-optimized RNNs have become a very popular tool to model neural circuit dynamics. Classically, those models incorporate only those inputs that directly reflect task-related stimuli (e.g. motor target, go cue, etc.). This requires assumptions about the form of the inputs, such as modeling them as simple step functions active during specific task epochs. However, as local neural circuits are part of a wider network of brain areas, a large portion of their inputs come from other brain areas at intermediate stages of the computation and may therefore not be directly tied to task stimuli. Thus, it is not always obvious what assumptions can reasonably be made about the inputs that drive the circuit\u2019s dynamics.\n\nOur optimization framework, which does not require us to make any specific assumptions about when and how inputs enter the network (although it does allow to incorporate prior information in the form of constraints), allows to bypass this problem and to implicitly model unobserved inputs from other areas. Importantly, our framework allows to ask questions \u2013 such as \u2018why prepare\u2019 \u2013 that are difficult to phrase in standard input-driven RNN models. We note, however, that in the investigation we have presented here, the lack of imposed structure for the inputs also implied that the model could not make use of mechanisms known to contribute certain aspects of preparatory neural activity. For example, our model did not exhibit the usual visually driven response to the target input, nor did it have to use the delay epoch to keep such a transient sensory input in memory (Guo et al., 2014; Li et al., 2015).\n\nThe main premise of our approach is that one can somehow delineate the dynamical system which M1 implements, and attribute any activity patterns that it cannot autonomously generate to external inputs. Just where the anatomical boundary of \u2018M1 dynamics\u2019 lie \u2013 and therefore where \u2018external inputs\u2019 originate \u2013 is unclear, and our results must be interpreted with this limitation in mind. Operationally, previous works in reaching monkeys have shown that M1 data can be mathematically well described by a dynamical system that appears largely autonomous during movement. These works have emphasized that those abstract dynamics, while inferred from M1 data alone, may not be anatomically confined to M1 itself. Instead, they may involve interactions between multiple brain areas, and even possibly parts of the body through delayed sensory feedback. Here, we too tend to think of our M1 models in this way, and therefore attribute external input to brain areas that are one step removed from this potentially broad motor-generating network. Nevertheless, a more detailed multi-area model of the motor-generating circuitry including, e.g., spinal networks (Prut and Fetz, 1999) could enable more detailed comparisons to multi-region neural data. In a similar vein, our model makes no distinction between external inputs that drive movement-specific planning computations, and other types of movement-unspecific inputs that might drive the transition from planning to execution (e.g. \u2018trigger\u2019 inputs, Kaufman et al., 2016). Incorporating such distinctions (e.g. by temporally modulating the cost in individual input channels depending on specific task events, or by having separate channels for movement-unspecific inputs) might allow to ask more targeted questions about the role and provenance of external inputs.\n\nA major limitation of our study is the specific choice of a quadratic penalty on the external input in our control objective. While there are possible justifications for such a cost (e.g. regularization of the dynamics to promote robustness of the control solution), its use here is mainly motivated by mathematical tractability. Other costs might be conceivably more relevant and might affect our results. For example, studies of motor cortex have long thought of its dynamics as converting relatively simple inputs reflecting high-level, temporally stable plans, into detailed, temporally varying motor commands. Thus, a potentially relevant form of a penalty for external inputs would be their temporal complexity. Such a penalty would have the advantage of encouraging a clearer separation between the inputs and the RNN activations; indeed, in our current model, we find that the optimal controls themselves have a temporal structure, part of which could be generated by a dynamical system and thus potentially absorbed into our \u2018M1 dynamics\u2019. To address this, we note that our optimization framework can be adjusted to penalize the magnitude of the temporal derivative of the external input $\u2016u\u02d9\u2016^{2}$, instead of $\u2016u\u2016^{2}$. We experimented with this extension and found qualitatively different optimal inputs and M1 firing rates, which evolved more slowly and plateaued for sufficiently long preparation (Appendix 1\u2014figure 8A-D) \u2013 this is in fact more consistent with monkey M1 data (e.g. Elsayed et al., 2016). Despite these qualitative difference in the specific form of preparation, our main conclusion stands that input-driven preparation continues to arise as an optimal solution (Appendix 1\u2014figure 8E-F).\n\nAnother important assumption we have made is that the optimal controller is aware of the duration of the delay period. While this made solving for the optimal control inputs easier, it made our task more akin to a self-initiated reach (Lara et al., 2018) than to a typical delayed reach with unpredictable, stochastic delay durations. Future work could revisit this assumption. As a first step toward this, we now briefly outline pilot experiments in this direction. We used an exponential distribution of delays (with mean 300 ms) and devised two modified versions of our model that dealt with the resulting uncertainty in two different ways. In the first strategy, at any time during preparation, the model would estimate the most probable time-to-go-cue given that it hadn\u2019t arrived yet (in this case, this is always 300 ms in the future) and would plan an optimal sequence of inputs accordingly. In the second strategy, the network would prudently assume the earliest possible go cue (i.e. the next time step) and plan accordingly. In both cases, only the first input in the optimal input sequence would be used at each step, and complete replanning would follow in the next step, as the model re-assesses the situation given new information (i.e. whether the actual go cue arrived or not; this is a form of \u2018model predictive control\u2019, Rawlings et al., 2017). Preparatory inputs arose in both settings, but we found that only the latter strategy led to activity patterns that plateaued early during preparation (see Appendix 1\u2014figure 9).\n\nThroughout the main text, we have referred to $\u0394_{prep}$ as the task-enforced delay period. However, a more accurate description may be that it corresponds to a delay period determined by an internally set go signal, which can lag behind the external go cue. While we would not expect a large difference between those two signals, the way in which we define $\u0394_{prep}$ becomes important as it approaches 0 ms (limit of a quasi-automatic reach; Lara et al., 2018). Indeed, in this limit, our model exhibits almost no activity in the preparatory subspace (as defined in Figure 6 \u2013 see further analyses in Appendix 1\u2014figure 10). In contrast, monkey M1 activity was found to transiently occupy the preparatory subspace even in this case (Lara et al., 2018). Evidence for a delay between the earliest possible response to sensory cues and the trigger of movement was also observed in Kaufman et al., 2016, as well as in human behavioral studies (Haith et al., 2016). Thus, one may wish to explicitly incorporate this additional delay in the model in order to make it more realistic. Note however that Haith et al., 2016, showed that this internal delay could be shortened without affecting movement accuracy, suggesting that part of the processing that empirically occurs in-between the internal and external go cues may not be necessary, but rather reflect a decoupling between the end of preparation and the trigger of movement. This may be important to consider when attempting to compare the model to, e.g., reaction times from behavioral experiments.\n\nDynamical systems have a longstanding history as models of neural populations (Dayan and Abbott, 2001). However, understanding how neural circuits can perform various computations remains a challenging question.\n\nRecently, there has been increased interest in trying to understand the role of inputs in shaping cortical dynamics. This question has been approached both from a data-driven perspective (Malonis et al., 2021; Soldado-Magraner et al., 2023) and in modeling work with, e.g., Driscoll et al., 2022, showing how a single network can perform different tasks by reorganizing its dynamics under the effect of external inputs and Dubreuil et al., 2021, relating network structure to the ability to process contextual inputs. To better understand how our motor system can generate flexible behaviors (Logiaco et al., 2021; Stroud et al., 2018), and to characterize learning on short timescales (Sohn et al., 2021; Heald et al., 2023), it is important to study how network dynamics can be modulated by external signals that allow rapid adaptation to new contexts without requiring extensive modifications of the network\u2019s connectivity. The optimal control approach we proposed here offers a way to systematically perform such evaluations, in a variety of tasks and under different assumptions regarding how inputs are allowed to impact the dynamics of the local circuit of interest. While our model\u2019s predictions will depend on, e.g., the choice of connectivity or the design of the cost function, an exciting direction for future work will be to obtain those parameters in a data-driven manner, for instance using recently developed methods to infer dynamics from data (Pandarinath et al., 2018; Schimel et al., 2022), and advances in inverse reinforcement learning and differentiable control (Amos et al., 2018) to infer the cost function that behavior optimizes. These could additionally be combined with more biomechanically realistic effectors, such as the differentiable arm models from Codol et al., 2023.\n\n## Methods\n\n### Experimental model and subject details\n\nIn Figure 1, we showed data from two primate datasets that were made available to us by Mark Churchland, Matthew Kaufman, and Krishna Shenoy. Details of animal care, surgery, electrophysiological recordings, and behavioral task have been reported previously in Churchland et al., 2012; Kaufman et al., 2014 (see in particular the details associated with the J and N \u2018array\u2019 datasets). The subjects of this study, J and N, were two adult male macaque monkeys (Macaca mulatta). The animal protocols were approved by the Stanford University Institutional Animal Care and Use Committee. Both monkeys were trained to perform a delayed-reaching task on a fronto-parallel screen. At the beginning of each trial, they fixated on the center of the screen for some time, after which a target appeared on the screen. After a variable delay period (0\u20131000 ms), a go cue appeared instructing the monkeys to reach toward the target. Recordings were made in the PMd cortex and in the M1 using a pair of implanted 96-electrode arrays. In Figure 6, we also reproduced data from Lara et al., 2018, and Zimnik and Churchland, 2021. Details of animal care, surgery, electrophysiological recordings, and behavioral task for those data can be found in the Methods section of the respective papers.\n\n### Arm model\n\nTo simulate reaching movements, we used the planar two-link arm model described in Li and Todorov, 2004. The two links have lengths $L_{1}$ and $L_{2}$, masses $M_{1}$ and $M_{2}$, and moments of inertia $I_{1}$ and $I_{2}$, respectively. The lower arm\u2019s center of mass is located a distance $D_{2}$ from the elbow. By considering the geometry of the upper and lower limb, the position of the hand and elbow can be written as vectors $y_{h}(t)$ and $y_{e}$ given by\n\n$$\ny_{h}=(L_{1}cos\u2061\\theta_{1}+L_{2}cos\u2061(\\theta_{1}+\\theta_{2})L_{1}sin\u2061\\theta_{1}+L_{2}sin\u2061(\\theta_{1}+\\theta_{2}))\u00a0and\u00a0y_{e}=(L_{1}cos\u2061\\theta_{1}L_{1}sin\u2061\\theta_{1}).\n$$\n\nThe joint angles $\\theta=(\\theta_{1};\\theta_{2})^{T}$ evolve dynamically according to the differential equation\n\n$$\nm(t)=M(\\theta)\\theta\u00a8+X(\\theta,\\theta\u02d9)+B\\theta\u02d9,\n$$\n\nwhere $m(t)$ is the momentary torque vector, $M$ is the matrix of inertia, $X$ accounts for the centripetal and Coriolis forces, and $B$ is a damping matrix representing joint friction. These parameters are given by\n\n$$\nM(\\theta)=(a_{1}+2a_{2}cos\u2061\\theta_{2}a_{3}+a_{2}cos\u2061\\theta_{2}a_{3}+a_{2}cos\u2061\\theta_{2}a_{3})\n$$\n\n\n\n$$\nX(\\theta,\\theta\u02d9)=a_{2}sin\u2061\\theta_{2}(\u2212\\theta_{2}\u02d9(2\\theta_{1}\u02d9+\\theta_{2}\u02d9)\\theta_{1}\u02d9^{2})\n$$\n\n\n\n$$\nB=(0.050.0250.0250.05)\n$$\n\nwith $a_{1}=I_{1}+I_{2}+M_{2}L_{1}^{2}$, $a_{2}=M_{2}L_{1}D_{2}$, and $a_{3}=I_{2}$.\n\n### iLQR algorithm\n\nThroughout this work, we used the iLQR algorithm (Li and Todorov, 2004) to find the locally optimal inputs that minimize our cost function. iLQR is a trajectory optimization algorithm that can handle nonlinear dynamics and non-quadratic costs. iLQR works in an iterative manner, by linearizing the dynamics and performing a quadratic approximation of the cost at each iteration, thus turning the control problem into a local linear quadratic problem whose unique solution is found using LQR (Kalman, 1960). The LQR solver uses a highly efficient dynamic programming approach that exploits the sequential structure of the problem. Our implementation of iLQR (Schimel et al., 2021) followed from Li and Todorov, 2004, with the difference that we performed regularization of the local curvature matrix as recommended by Tassa, 2011.\n\n### Generation of the high-dimensional readouts and networks\n\n#### Generation of inhibitory-stabilized networks\n\nSimulations in Figures 1, 3, 5, and 6 were conducted using ISNs. Those were generated according to the procedure described in Hennequin et al., 2014, with minor adjustments. In brief, we initialized strongly connected chaotic networks with sparse and log-normally distributed excitatory weights, and stabilized them through progressive $H_{2}$-optimal adjustments of the inhibitory weights until the spectral abscissa of the connectivity matrix fell below 0.8. This yielded strongly connected but stable networks with a strong degree of nonnormality. When considering a larger range of ISNs (Figure 5), we independently varied both the variance of the distribution of initial excitatory weights and the spectral abscissa below which we stopped optimizing the inhibitory weights.\n\n#### Generation of additional networks in Figure 5\n\nTo assess the generality of our findings in Figure 5, we additionally generated randomly connected networks by sampling each weight from a Gaussian distribution with $\\sigma=R/\\sqrt{N}$, where the spectral radius $R$ was varied between 0 and 0.99. We also sampled skew-symmetric networks by drawing a random network $S$ as above, and setting $W=(S\u2212S^{T})/2$. We varied the radius $R$ of the $S$ matrices between 0 and 5. Moreover, we considered diagonally shifted skew-symmetric networks $W=(S\u2212S^{T})/2+\\lambdaI$, where $\\lambda$ denotes the real part of all the eigenvalues and was varied between 0 and 0.8.\n\nThe elements of the readout matrix $C$ mapping neural activity onto torques were drawn from a normal distribution with zero mean and standard deviation $\\sigma_{C}=0.05/\\sqrt{N}$. This was chosen to ensure that firing rates of standard deviation on the order of 30 Hz would be decoded into torques of standard deviation \u223c2 N/m, which is the natural variation required for the production of the reaches we considered.\n\n### Details of Figure 4\n\nTo more easily dissect the phenomena leading to the presence or absence of preparation, we turned to 2D linear networks in Figure 4. We modeled nonnormal networks with a connectivity $W=[00w0]$ and oscillatory networks with connectivity $W=[0\u2212ww0]$. The activity of the two units evolved as\n\n$$\n\\taux\u02d9(t)=\u2212x(t)+Wx(t)+u(t)\n$$\n\nand directly influenced the acceleration of a 1D output $y(t)$ according to\n\n$$\ny\u00a8(t)=C_{i}x(t)\n$$\n\nwhere $C_{i}=[cos\u2061\\theta_{C}sin\u2061\\theta_{C}]$ was a row matrix reading the activity of the network along an angle $\\theta_{C}$ from the horizontal (first unit). Our setup aimed to mirror the reaching task studied in this work. We thus optimized inputs to minimize the following cost function:\n\n$$\nJ[u]=:\\int_{0}^{T}\u2016y(t)\u2212y^{\u22c6}\u2016^{2}\\frac{t^{2}}{T^{2}}\\frac{dt}{T}\u23dfJ_{target}+\\alpha_{null}\\int_{\u2212\u0394_{prep}}^{0}(\u2016y(t)\u2016^{2}+\u2016y\u02d9(t)\u2016^{2}+\u2016y\u00a8\u2016^{2})\\frac{dt}{T}\u23dfJ_{null}+\\alpha_{effort}\\int_{\u2212\u0394_{prep}}^{T}\u2016u(t)\u2016^{2}\\frac{dt}{2T}\u23dfJ_{effort}.\n$$\n\nwhere $y^{\u22c6}=20$ was the target position.\n\n### Computing networks\u2019 controllability and observability to predict preparation in Figure 5\n\nAs part of our attempt to predict how much a network will prepare given its intrinsic properties only, we computed the prospective potency of the nullspace \u03b1, and the controllability of the readout \u03b2. For a stable linear dynamical system described by\n\n$$\n\\frac{dx}{dt}=Ax(t)+Bu(t)\n$$\n\n\n\n$$\ny(t)=C_{x}(t)\n$$\n\nthe system\u2019s observability Gramian $Q$ can be computed as the unique positive-definite solution of the Lyapunov equation\n\n$$\nA^{T}Q+QA+C^{T}C=0.\n$$\n\nThe prospective potency of the nullspace $C^{\u22a5}$ is then defined as\n\n$$\n\\alpha\u225c\\frac{Tr(C^{\u22a5}QC^{\u22a5}^{T})}{N\u22122}\n$$\n\nNote that this measure $\\alpha$ is invariant to the specific choice of basis for the nullspace $C^{\u22a5}$. Similarly, to assess the controllability of the readout, we first computed the controllability Gramian of the system $P$, which is the solution of\n\n$$\nAP+PA^{T}+BB^{T}=0,\n$$\n\nwith $B=I$ in our system. We then defined the controllability of the readout as\n\n$$\n\\beta\u225c\\frac{Tr(CPC^{T})}{2}.\n$$\n\n### Details of Figure 6\n\n#### Cost function\n\nWe modeled sequences of reaches by modifying our cost functional to account for the presence of two targets, as\n\n$$\nJ[u]=\\int_{0}^{\u0394_{move}^{(1)}+\\tau}\u2016\\theta(t)\u2212\\theta_{1}^{\u22c6}\u2016^{2}\\frac{t^{2}}{T^{2}}dt\u23dfJ_{target}^{(1)}+\\alpha_{pause}\\int_{\u0394_{move}^{(1)}}^{\u0394_{move}^{(1)}+\\tau}\u2016\\theta\u02d9(t)\u2016^{2}dt\u23dfJ_{pause}\n$$\n\n\n\n$$\n+\\int_{\u0394_{move}^{(1)}+\\tau}^{T}\u2016\\theta(t)\u2212\\theta_{2}^{\u22c6}\u2016^{2}\\frac{(t\u2212\u0394_{move}^{(1)}\u2212\\tau)^{2}}{T^{2}}dt\u23dfJ_{target}^{(2)}+\\alpha_{null}\\int_{\u2212\u0394_{prep}}^{0}\u2016\\theta(t)\u2212\\theta_{0}\u2016^{2}+\u2016\\theta\u02d9(t)\u2016^{2}+\u2016m(t)\u2016^{2}dt\u23dfJ_{null}+\\alpha_{effort}\\int_{\u2212\u0394_{prep}}^{T}\u2016u(t)\u2016^{2}dt\u23dfJ_{effort}\n$$\n\nwhere $\\tau$ describes how long the monkey\u2019s hands had to stay on the intermediate target before performing its second reach. We used $\\tau=600ms$ and $\\alpha_{pause}=100$ for the double reaches in which a pause was explicitly enforced during the experiment. For compound reaches, the experiment did not require monkeys to stop for any specific duration. However, to ensure that the hand stopped on the target in the model (as it does in experiments when monkeys touch the screen) rather than fly through it, we set $\\tau=6ms$ and $\\alpha_{pause}=100$ when modeling compound reaches.\n\n#### Preparatory subspace analysis\n\nLara et al., 2018, proposed an analysis to identify preparatory and movement-related subspaces. This analysis allows to assess when the neural activity enters those subspaces, independently of whether it is delay-period or post-go-cue activity.\n\nThe method identifies a set of preparatory dimensions and a set of movement dimensions, constrained to be orthogonal to one another, as in Elsayed et al., 2016. These are found in the following manner: the trial-averaged neural activity is split between preparatory and movement-related epochs, yielding two matrices of size $N\\timesMT$, where $N$ is the number of neurons, $T$ is the number of time bins, and $M$ is the number of reaches. One then optimizes the $W_{prep}\\inR^{N\\timesd_{prep}}$ and $W_{mov}\\inR^{N\\timesd_{mov}}$ (where $d_{prep}$ and $d_{mov}$ are the predefined dimensions of the two subspaces) such that the subspaces respectively capture most variance in the preparatory and movement activities, while being orthogonal to one another. This is achieved by maximizing the following objective:\n\n$$\nC(W_{prep},W_{mov})=\\frac{1}{2}(\\frac{Tr(W_{prep}^{T}C_{prep}W_{prep})}{Z_{prep}(d_{prep})}+\\frac{Tr(W_{mov}^{T}C_{mov}W_{mov})}{Z_{mov}(d_{mov})})\n$$\n\nwhere $C_{prep/mov}$ are the covariance matrices of the neural activity during the preparatory and movement epochs, respectively. The normalizing constant $Z_{prep}(d_{prep})$ denotes the maximum amount of variance in preparatory activity that can be captured by any subspace of dimension $d_{prep}$ (this is found via SVD), and similarly for $Z_{mov}(d_{mov})$. The objective is maximized under the constraints $W_{prep}^{T}W_{mov}=0$, $W_{prep}^{T}W_{prep}=I$, and $W_{mov}^{T}W_{mov}=I$. We set subspace dimensions $d_{prep}=d_{mov}=6$, although our results were robust to this choice.\n\nThe occupancy of the preparatory subspace was defined as\n\n$$\noccupancy^{prep}(t)=\\sumk=1d_{prep}var_{\\theta}(x_{k}^{prep}(t,\\theta))\n$$\n\nand that of the movement subspace was defined as\n\n$$\noccupancy^{mov}(t)=\\sumk=1d_{mov}var_{\\theta}(x_{k}^{mov}(t,\\theta)).\n$$\n\nFor single reaches, we defined preparatory epoch responses as the activity in a 300 ms window before the end of the delay period, and movement-epoch responses as the activity in a 300 ms window starting 50 ms after the go cue. We normalized all neural activity traces using the same procedure as Churchland et al., 2012; Elsayed et al., 2016. For double reaches, we followed Zimnik and Churchland, 2021, and used neural activity traces from both single reaches and the first reach of double-reach sequences. Note that we did not include any activity from the second reaches in the sequence, or from compound reaches, when defining the subspaces.\n\n### Parameter table\n\nParameters used for the various simulations.\n\n<table>\n  <thead>\n    <tr>\n      <th>Symbol</th>\n      <th>Figure 1</th>\n      <th>Figure 2</th>\n      <th>Figure 3</th>\n      <th>Figure 5</th>\n      <th>Figure 4</th>\n      <th>Figure 6</th>\n      <th>Unit</th>\n      <th>Description</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>L1</td>\n      <td colspan=\"4\">30</td>\n      <td>\u2013</td>\n      <td>30</td>\n      <td>cm</td>\n      <td>Length of the upper arm in model</td>\n    </tr>\n    <tr>\n      <td>L2</td>\n      <td colspan=\"4\">30</td>\n      <td>-</td>\n      <td>30</td>\n      <td>cm</td>\n      <td>Length of the forearm in model</td>\n    </tr>\n    <tr>\n      <td>I1</td>\n      <td colspan=\"4\">0.025</td>\n      <td>\u2013</td>\n      <td>0.025</td>\n      <td>kg/m\u20132</td>\n      <td>Inertia of upper arm</td>\n    </tr>\n    <tr>\n      <td>I2</td>\n      <td colspan=\"4\">0.045</td>\n      <td>-</td>\n      <td>0.045</td>\n      <td>kg/m\u20132</td>\n      <td>Inertia of forearm</td>\n    </tr>\n    <tr>\n      <td>M1</td>\n      <td colspan=\"4\">1.4</td>\n      <td>\u2013</td>\n      <td>1.4</td>\n      <td>kg</td>\n      <td>Mass of upper arm</td>\n    </tr>\n    <tr>\n      <td>M2</td>\n      <td colspan=\"4\">1.0</td>\n      <td>-</td>\n      <td>1.0</td>\n      <td>kg</td>\n      <td>Mass of forearm</td>\n    </tr>\n    <tr>\n      <td>D2</td>\n      <td colspan=\"4\">16</td>\n      <td>\u2013</td>\n      <td>16</td>\n      <td>cm</td>\n      <td>Elbow to lower arm center of mass distance</td>\n    </tr>\n    <tr>\n      <td>r</td>\n      <td colspan=\"4\">12</td>\n      <td>20</td>\n      <td>12</td>\n      <td>cm</td>\n      <td>Radius of the target reach</td>\n    </tr>\n    <tr>\n      <td>\u03bch</td>\n      <td colspan=\"4\">20</td>\n      <td>0</td>\n      <td>\u2013</td>\n      <td>mV</td>\n      <td>Mean baseline firing rate</td>\n    </tr>\n    <tr>\n      <td>\u03c3h</td>\n      <td colspan=\"4\">5</td>\n      <td>0</td>\n      <td>-</td>\n      <td>mV</td>\n      <td>s.t.d of the baseline firing rate</td>\n    </tr>\n    <tr>\n      <td>\u03b1effort</td>\n      <td colspan=\"4\">5E-7</td>\n      <td>1E-5</td>\n      <td>5E-7</td>\n      <td>\u2013</td>\n      <td>Coeff. of input cost</td>\n    </tr>\n    <tr>\n      <td>\u03b1null</td>\n      <td colspan=\"4\">1</td>\n      <td>1</td>\n      <td>10</td>\n      <td>-</td>\n      <td>Coeff. of cost of moving during the delay</td>\n    </tr>\n    <tr>\n      <td>\u03b1pause</td>\n      <td colspan=\"5\">-</td>\n      <td>100</td>\n      <td>\u2013</td>\n      <td>Coeff. of costof moving between reaches</td>\n    </tr>\n    <tr>\n      <td>\u03c4</td>\n      <td colspan=\"6\">150</td>\n      <td>ms</td>\n      <td>Single-neuron time constant</td>\n    </tr>\n    <tr>\n      <td>\u0394move(1)</td>\n      <td colspan=\"5\">\u2013</td>\n      <td>300</td>\n      <td>ms</td>\n      <td>Duration of the first reach</td>\n    </tr>\n    <tr>\n      <td>\u0394prep</td>\n      <td>500</td>\n      <td>300</td>\n      <td>-</td>\n      <td colspan=\"2\">300</td>\n      <td>500</td>\n      <td>ms</td>\n      <td>Delay period time</td>\n    </tr>\n    <tr>\n      <td>T</td>\n      <td>1100</td>\n      <td>900</td>\n      <td>\u2013</td>\n      <td colspan=\"2\">900</td>\n      <td>2000\u20141406</td>\n      <td>ms</td>\n      <td>Total movement duration</td>\n    </tr>\n    <tr>\n      <td>N</td>\n      <td colspan=\"4\">200</td>\n      <td>-</td>\n      <td>200</td>\n      <td>-</td>\n      <td>Number of neurons</td>\n    </tr>\n    <tr>\n      <td>pcon</td>\n      <td colspan=\"4\">0.2</td>\n      <td>\u2013</td>\n      <td>0.2</td>\n      <td>\u2013</td>\n      <td>Connection probability (E neurons)</td>\n    </tr>\n    <tr>\n      <td>pE</td>\n      <td colspan=\"4\">80</td>\n      <td>-</td>\n      <td>80</td>\n      <td>-</td>\n      <td>Percentage of E neurons</td>\n    </tr>\n    <tr>\n      <td>pI</td>\n      <td colspan=\"4\">20</td>\n      <td>\u2013</td>\n      <td>20</td>\n      <td>\u2013</td>\n      <td>Percentage ofI neurons</td>\n    </tr>\n  </tbody>\n</table>\n",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- J\u00f6rn Diedrichsen, Western University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89131.4.sa0](https://doi.org/10.7554/eLife.89131.4.sa0)\n\nThis important study provides a new perspective on why preparatory activity occurs before the onset of movement. The authors report that when there is a cost on the inputs, the optimal inputs should start before the desired network output for a wide variety of recurrent networks. The authors present compelling evidence by combining mathematically tractable analyses in linear networks and numerical simulation in nonlinear networks.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89131.4.sa1](https://doi.org/10.7554/eLife.89131.4.sa1)\n\nIn this work, the authors investigate an important question - under what circumstances should a recurrent neural network optimised to produce motor control signals receive preparatory input before the initiation of a movement, even though it is possible to use inputs to drive activity just-in-time for movement?\n\nThis question is important because many studies across animal models have shown that preparatory activity is widespread in neural populations close to motor output (e.g. motor cortex / M1), but it isn't clear under what circumstances this preparation is advantageous for performance, especially since preparation could cause unwanted motor output during a delay.\n\nThey show that networks optimised under reasonable constraints (speed, accuracy, lack of pre-movement) will use the input to seed the state of the network before movement and that these inputs reduce the need for ongoing input during the movement. By examining many different parameters in simplified models they identify a strong connection between the structure of the network and the amount of preparation that is optimal for control - namely, that preparation has the most value when nullspaces are highly observable relative to the readout dimension and when the controllability of readout dimensions is low. They conclude by showing that their model predictions are consistent with the observation in monkey motor cortex that even when a sequence of two movements is known in advance, preparatory activity only arises shortly before movement initiation.\n\nOverall, this study provides valuable theoretical insight into the role of preparation in neural populations that generate motor output, and by treating input to motor cortex as a signal that is optimised directly this work is able to sidestep many of the problematic questions relating to estimating the potential inputs to motor cortex.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89131.4.sa2](https://doi.org/10.7554/eLife.89131.4.sa2)\n\nThis work clarifies neural mechanisms that can lead to a phenomenology consistent with motor preparation in its broader sense. In this context, motor preparation refers to activity that occurs before the corresponding movement. Another property often associated with preparatory activity is a correlation with global movement characteristics such as reach speed (Churchland et al., Neuron 2006), reach angle (Sun et al., Nature 2022), or grasp type (Meirhaeghe et al., Cell Reports 2023). Such activity has notably been observed in premotor and primary motor cortices, and it has been hypothesized to serve as an input to a motor execution circuit. The timing and mechanisms by which such 'preparatory' inputs are made available to motor execution circuits remain however unclear in general, especially in light of the presence of a 'trigger-like' signal that appears to relate to the transition from preparatory dynamics to execution activity (Kaufman et al. eNeuron 2016, Iganaki et al., Cell 2022, Zimnik and Churchland, Nature Neuroscience 2021).\n\nThe preparatory inputs have been hypothesized to fulfill one or several (non-mutually-exclusive) possible objectives. Two notable hypotheses are that these inputs could be shaped to maximize output accuracy under regularization of the input magnitude; or that they may help the flexible re-use of the neural machinery involved in the control of movements in different contexts.\n\nHere, the authors investigate in detail how the former hypothesis may be compatible with the presence of early inputs in recurrent network models driving arm movements, and compare models to data.\n\nStrengths:\n\nThe authors are able to deploy an in-depth evaluation of inputs that are optimized for producing an accurate output at a pre-defined time while using a regularization term on the input magnitude, in the case of movements that are thought to be controlled in a quasi-open loop fashion such as reaches.\n\nFirst, the authors have identified that optimal control theory is a great framework to study this question as it provides methods to find and analyze exact solutions to this cost function in the case of models with linear dynamics. The authors not only use this framework to get an exact assessment of how much pre-movement input arises in large recurrent networks, but also give insight into the mechanisms by which it happens by dissecting in detail low-dimensional networks. The authors find that two key network properties - observability of the readout's nullspace and limited controllability - give rise to optimal inputs that are large before the start of the movement (while the corresponding network activity lies in the nullspace of the readout). Further, the authors numerically investigate the timing of optimized inputs in models with nonlinear dynamics, and find that pre-movement inputs can also arise in these more general networks. The authors also explore how some variations on their model's constraints - such as penalizing the input roughness or changing task contingencies about the go cue timing - affect their results. Finally, the authors point out some coarse-grained similarities between the pre-movement activity driven by the optimized inputs in some of the models they studied, and the phenomenology of preparation observed in the brain during single reaches and reach sequences. Overall, the authors deploy an impressive arsenal of tools and a very in-depth analysis of their models.\n\nOustanding questions that could lead to interesting follow-up work:\n\nLike all great pieces of research, this article makes it clear where current limitations lie and therefore opens up opportunities for future work.\n\n(1) Though the optimal control theory framework is ideal for determining inputs that minimize output error while regularizing the input norm or other simple input features, it cannot easily account for some other varied types of objectives - especially those that may lead to a complex optimization landscape. For instance, the reusability of parts of the circuit, sparse use of additional neurons when learning many movements, and ease of planning (especially under uncertainty about when to start the movement), may be alternative or additional reasons that could help explain the preparatory activity observed in the brain. It is interesting to note that inputs that optimize the objective chosen by the authors arguably lead to a trade-off in terms of other desirable objectives. Specifically, the inputs the authors derive are time-dependent, so a recurrent network would be needed to produce them and it may not be easy to interpolate between them to drive new movement variants. In addition, these inputs depend on the desired time of output and therefore make it difficult to plan, e.g. in circumstances when timing should be decided depending on sensory signals. Finally, these inputs are specific to the full movement chain that will unfold, so they do not permit reuse of the inputs e.g. in movement sequences of different orders. Of note, the authors have pointed out in the discussion how their framework may be extended in future work to account for some additional objectives, such as inputs' temporal smoothness or some strategies for dealing with go cue timing uncertainty.\n\n(2) Relatedly, if the motor circuits were to balance different types of objectives, the activity and inputs occurring before each movement may be broken down into different categories that may each specialize into their own objective. For instance, previous work (Kaufman et al. eNeuron 2016, Iganaki et al., Cell 2022, Zimnik and Churchland, Nature Neuroscience 2021) has suggested that inputs occurring before the movement could be broken down into preparatory inputs 'stricto sensu' - relating to the planned characteristics of the movement - and a trigger signal, relating to the transition from planning to execution - irrespective of whether the movement is internally timed or triggered by an external event. The current work does not address which type(s) of early input may be labeled as 'preparatory' or may be thought of as a part of 'planning' computations, or whether these inputs may come from several different source circuits. Future research could investigate these questions using a different approach, for instance, by including structural constraints from brain architecture into a neural network model.\n\n(3) While the authors rightly point out some similarities between the inputs that they derive and observed preparatory activity in the brain, notably during motor sequences, there are also some differences. For instance, while both the derived inputs and the data show two peaks during sequences, the data reproduced from Zimnik and Churchland show preparatory inputs that have a very asymmetric shape that really plummets before the start of the next movement, whereas the derived inputs have larger amplitude during the movement period - especially for the second movement of the sequence. In addition, the data show trigger-like signals before each of the two reaches. Finally, while the data show a very high correlation between the pattern of preparatory activity of the second reach in the double reach and compound reach conditions, the derived inputs appear to be more different between the two conditions. Note that the data would be consistent with separate planning of the two reaches even in the compound reach condition, as well as the re-use of the preparatory input between the compound and double reach conditions. Therefore, different motor sequence datasets - notably, those that would show even more coarticulation between submovements - may be more promising for finding a tight match between the data and the author's inputs. In the future, further analyses in these datasets could help determine whether the coarticulation could be due to simple filtering by the circuits and muscles downstream of M1, planning of movements with adjusted curvature to mitigate the work performed by the muscles while permitting some amount of re-use across different sequences, or - as suggested by the authors - inputs fully tailored to one specific movement sequence that maximize accuracy and minimize the M1 input magnitude.\n\n(4) Though iLQR is a powerful optimization method to find inputs optimizing the author's cost function, it also has some limitations. First, given that it relies on a linearization of the dynamics at each timestep, it has a limited ability to leverage potential advantages of nonlinearities in the dynamics. Second, the iLQR algorithm is not a biologically plausible learning rule and does not account for biological constraints affecting the circuits that produce and process these inputs. Therefore, it might be difficult for the brain to learn to produce the inputs that it finds. Consequently, when observing differences between model and data, this can confound the question of whether it comes from a difference of assumed objective or a difference of optimization procedure or circuit implementation. It remains unclear whether using alternative algorithms with different limitations - for instance, using variants of BPTT to train a separate RNN to produce the inputs in question - could impact some of the results.\n\n(5) Under the objective considered by the authors, the amount of input occurring before the movement might be impacted by the presence of online sensory signals for closed-loop control. Even if the inputs include some sensory activity and/or the RNN activity could represent all general variables (e.g. sensory) whose states can be decoded from M1, the model does not currently include mechanisms that process imperfect (delayed, noisy) sensory feedback to adapt the output in a trial-specific manner. The information related to such sensory feedback cannot be anticipated, and therefore the related input would have to reach the motor cortex after preparation. Thus, it is an open question whether the objective and network characteristics suggested by the authors could also explain the presence of large preparatory activity before e.g. grasping movements that are thought to be more sensory-feedback-driven (Meirhaeghe et al., Cell Reports 2023).\n\n(6) More broadly, with the type of objectives that the authors assume the inputs fulfill, some M1 properties that lead to strong preparation - notably, limited readout controllability - may not be favorable for control in general, so it would be interesting if other objectives and assumptions could robustly lead to strong preparation under more general M1 properties.'\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89131.4.sa3](https://doi.org/10.7554/eLife.89131.4.sa3)\n\nI remain enthusiastic about this study. The manuscript is well-written, logical, and conceptually clear. To my knowledge, no prior modeling study has tackled the question of 'why prepare before executing, why not just execute?' Prior studies have simply assumed, to emulate empirical findings, that preparatory inputs precede execution. They never asked why. The authors show that, when there are constraints on inputs, preparation becomes a natural strategy. In contrast, with no constraint on inputs, there is no need for preparation as one could get anything one liked just via the inputs during movement. For the sake of tractability, the authors use a simple magnitude constraint: the cost function punishes the integral of the squared inputs. Thus, if small inputs before movement can reduce the size of the inputs needed during movement, preparation is a good strategy. This occurs if (and only if) the network has strong dynamics (otherwise feeding it preparatory activity would not produce anything interesting). All of this is sensible and clarifying.\n\nAs discussed in the prior round of reviews, the central constraint that the authors use is a mathematically tractable stand-in for a range of plausible (but often trickier to define and evaluate) constraints, such as simplicity of inputs (or inputs being things that other areas could provide). The manuscript now embraces this fact more explicitly and also gives some results showing that other constraints (such as on the derivative of activity, which is one component of complexity) can have the same effect. The manuscript also now discusses and addresses a modest weakness of the previous manuscript: the preparatory activity in their simulations is often overly complex temporally, lacking the (rough) plateau typically seen for data. Depending on your point of view, this is simply 'window dressing', but from my perspective it was important to know that their approach could yield more realistic-looking preparatory activity.\n\nThe most recent version of the manuscript also has a useful section in the Discussion on the topic of preparation when there is no external delay, which I found helpful given prior behavioral and physiological studies arguing that preparation can (1) be very brief, but (2) is always present. These findings mesh nicely with the authors' central result that preparation is a good network strategy, and that it would thus be normative for there to be at least a brief interval of preparation even when not imposed externally.\n",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "30770fe2-f38c-430d-a354-6690c0b1f4a1",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C1",
+      "claim": "During delayed ballistic reaches, motor areas consistently display movement-specific activity patterns prior to movement onset.",
+      "claim_type": "EXPLICIT",
+      "source": "During delayed ballistic reaches, motor areas consistently display movement-specific activity patterns prior to movement onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established observation in the abstract and introduction, supported by citations to experimental work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "8cc7d014-3cc6-4381-99bd-442ac2ce55cd",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C2",
+      "claim": "Movement-specific activity patterns have been proposed to seed an initial neural state from which the movement unfolds.",
+      "claim_type": "EXPLICIT",
+      "source": "while they have been proposed to seed an initial neural state from which the movement unfolds",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis from prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "ec00a55f-3412-486d-bd3e-cc7cd623baa7",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C3",
+      "claim": "Recent experiments have uncovered the presence and necessity of ongoing inputs during movement.",
+      "claim_type": "EXPLICIT",
+      "source": "recent experiments have uncovered the presence and necessity of ongoing inputs during movement",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to recent experimental findings, supported by citations in the introduction.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "d0438ab2-013a-4399-bcd3-53deb0c0ecfb",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C4",
+      "claim": "Delay-period inputs consistently arise in an optimally controlled model of M1.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that delay-period inputs consistently arise in an optimally controlled model of M1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by the modeling results presented in Figures 2-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "25fc19ef-661c-4fc2-a0d0-a0946dc98fb2",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C5",
+      "claim": "Optimal input-driven control of neural dynamics gives rise to multiple phases of preparation during reach sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that optimal input-driven control of neural dynamics gives rise to multiple phases of preparation during reach sequences",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the modeling results in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "bc92fc29-d4bc-429c-90e3-4debc359657a",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C6",
+      "claim": "The motor cortex is thought to operate as a dynamical system whose state trajectories trace out the appropriate motor commands for downstream effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "During the production of ballistic movements, the motor cortex is thought to operate as a dynamical system whose state trajectories trace out the appropriate motor commands for downstream effectors (Shenoy et al., 2013; Miri et al., 2017; Russo et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as an established theoretical framework, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "d38c2d33-571d-4477-84cb-1fa1744dc04b",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C7",
+      "claim": "Cortical state trajectories are empirically well described by a low-dimensional dynamical system evolving near-autonomously during movement.",
+      "claim_type": "EXPLICIT",
+      "source": "First, cortical state trajectories are empirically well described by a low-dimensional dynamical system evolving near-autonomously during movement (Churchland et al., 2012; Pandarinath et al., 2018; Schimel et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an empirical observation from prior studies, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "1ff071fb-ef36-463c-93fd-7f7e134782ab",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C8",
+      "claim": "Movement-specific primary motor cortex (M1) activity arises well before movement initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "This input-driven seeding process is corroborated by observations of movement-specific primary motor cortex (M1) activity arising well before movement initiation (Lara et al., 2018; Kaufman et al., 2014; Churchland et al., 2012; Meirhaeghe et al., 2023; Figure 1A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to experimental studies and by Figure 1A showing neural data.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "010051ba-d8d8-4a11-8f30-11f18959c64b",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C9",
+      "claim": "The motor cortex receives critical pattern-generating input from the thalamus during movement production.",
+      "claim_type": "EXPLICIT",
+      "source": "recent studies in mice have shown that the motor cortex receives critical pattern-generating input from the thalamus during movement production (Sauerbrei et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a finding from recent experimental work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "78a4a116-42eb-4e33-af17-b62ca7b578b8",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C10",
+      "claim": "Most published network models of delayed reaches are able to perform the task just as well without preparatory inputs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, most published network models of delayed reaches are able to perform the task just as well without preparatory inputs, i.e., with external inputs forcefully confined to the movement epoch \u2013 an illustratory example is shown in Figure 1B.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by the authors' own modeling work shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "e4e457f6-a2b3-407e-b322-f08ed8dc8cd7",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C11",
+      "claim": "Motor preparation is known to benefit behavior by shortening reaction times and enabling more accurate execution.",
+      "claim_type": "EXPLICIT",
+      "source": "Motor preparation is known to benefit behavior (e.g. by shortening reaction times and enabling more accurate execution Riehle and Requin, 1989; Churchland and Shenoy, 2007; Michaels et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge, supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "a02c2e82-4f0d-49f9-b3b5-6ab311521535",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C12",
+      "claim": "Motor preparation may facilitate motor learning.",
+      "claim_type": "EXPLICIT",
+      "source": "and may facilitate motor learning (Sheahan et al., 2016; Sun et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a hypothesis from prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "cc3da6f0-ff51-4879-b0a8-3ba45c4559d8",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C13",
+      "claim": "The high density of M1 neurons projecting directly to the spinal cord suggests that motor cortical outputs control lower-level effectors with little intermediate processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the high density of M1 neurons projecting directly to the spinal cord (Dum and Strick, 1991) suggests that motor cortical outputs control lower-level effectors with little intermediate processing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on anatomical observations cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "e493fff1-9823-4155-81c8-156acfa9afef",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C14",
+      "claim": "For preparatory processes to avoid triggering premature movement, any pre-movement activity in the motor and dorsal premotor cortices must engage the pyramidal tract neurons in a way that ensures their activity patterns will not lead to any movement.",
+      "claim_type": "EXPLICIT",
+      "source": "For preparatory processes to avoid triggering premature movement, any pre-movement activity in the motor and dorsal premotor (PMd) cortices must therefore engage the pyramidal tract neurons in a way that ensures their activity patterns will not lead to any movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the anatomical constraint mentioned previously.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "a929c14a-f30b-4726-aad8-8a65e78b71d3",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C15",
+      "claim": "Preparatory activity can be constrained to evolve in a nullspace of the motor output.",
+      "claim_type": "EXPLICIT",
+      "source": "While this can be achieved by constraining neural activity to evolve in a nullspace of the motor output (Kaufman et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a mechanism from prior work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "e83fafac-9d22-45f4-83a5-3e1ab9d7f65e",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C16",
+      "claim": "Previous network models of delayed reaches typically assume that the cortical network receives preparatory inputs during a fixed time window preceding the go cue.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an explanation could not be obtained from previous network models of delayed reaches, as they typically assume from the get-go that the cortical network receives preparatory inputs during a fixed time window preceding the go cue (Sussillo et al., 2015; Kao et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characteristic of prior modeling approaches, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "60270ec3-07b8-45c3-aa99-d6bc592def98",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C17",
+      "claim": "In previous models, pre-movement activity is by design a critical determinant of the subsequent behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, pre-movement activity is by designing a critical determinant of the subsequent behavior (Sussillo et al., 2015; Kao et al., 2021; Zimnik and Churchland, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a consequence of the modeling assumptions in prior work, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "b7457c16-080f-45a1-9fe3-f1b2a9a6f8e6",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C18",
+      "claim": "The authors modeled the motor cortex as an input-driven dynamical system and used optimal control to find spatiotemporal patterns of network inputs that minimize a cost functional.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered the dynamics of an RNN model of M1 coupled to a model arm (Todorov and Li, 2003), and used a standard control cost functional to quantify and optimize performance in a delayed-reaching task. We used the iterative linear quadratic regulator algorithm (iLQR) algorithm (Li and Todorov, 2004) to find the spatiotemporal patterns of network inputs that minimize this cost functional, for any given network connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach of the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "4a0a1bfd-9a4e-4ec2-be33-7069d928a43c",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C19",
+      "claim": "The authors considered an inhibition-stabilized network which was shown previously to capture prominent aspects of monkey M1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We considered an inhibition-stabilized network \u2013 which was shown previously to capture prominent aspects of monkey M1 activity (Hennequin et al., 2014; Kao et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the choice of network model, justified by prior work cited.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "ac8b48b3-ff43-46fe-80d7-13d185c06f15",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C20",
+      "claim": "Optimal control of the inhibition-stabilized network model requires preparation, with optimal inputs arising well before movement begins.",
+      "claim_type": "EXPLICIT",
+      "source": "and found that optimal control of the model requires preparation, with optimal inputs arising well before movement begins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study, supported by modeling results in Figures 2-3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "46039c76-9a9d-4c45-afaa-d01589cc49ef",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C21",
+      "claim": "Preparation can be largely explained by two quantities summarizing the dynamical response properties of the network.",
+      "claim_type": "EXPLICIT",
+      "source": "We then generalized insights from those systems back to high-dimensional networks using tools from control theory, and found that preparation can be largely explained by two quantities summarizing the dynamical response properties of the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by the analysis in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "1ad1daa6-9eac-405c-9f80-9fe121aee52b",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C22",
+      "claim": "Optimal control of compound reaches leads to input-driven preparatory activity in a dedicated activity subspace prior to each movement.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with recent experimental findings (Zimnik and Churchland, 2021), we observed that optimal control of compound reaches leads to input-driven preparatory activity in a dedicated activity subspace prior to each movement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the study, supported by modeling results in Figure 6 and consistent with cited experimental work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "71539853-cf26-4d18-8768-edcd9ffac254",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C23",
+      "claim": "The target had to be reached within 600 ms of a go cue that follows a delay period of varying (but known) duration.",
+      "claim_type": "EXPLICIT",
+      "source": "The target had to be reached within 600 ms of a go cue that follows a delay period of varying (but known) duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a task constraint in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "e4fc59f9-56a0-4d9c-af4b-8bfb9ef09fd8",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C27",
+      "claim": "Network activity began changing well before the go cue for any single optimally performed reach.",
+      "claim_type": "EXPLICIT",
+      "source": "For any single optimally performed reach, we found that network activity began changing well before the go cue (Figure 2B, bottom)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "7262008d-5672-4b5b-8364-c1c54752e874",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C28",
+      "claim": "Network activity changes before the go cue were driven by inputs that arose early.",
+      "claim_type": "EXPLICIT",
+      "source": "and that this was driven by inputs that arose early (Figure 2B, middle).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "c5aefe36-052e-4087-8c28-11ccef5812c5",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C29",
+      "claim": "Preparatory network activity cancels in the readout such that the hand remains still.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, although preparatory network activity cancels in the readout (such that the hand remains still; Figure 2B, top)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated in the modeling results shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "0a2d9178-ab9a-4613-abdf-2d8357d8c2a3",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C30",
+      "claim": "The preparation index rose sharply as the delay period increased, and eventually plateaued at approximately 1.3 for delay periods longer than 300 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the preparation index rose sharply as we increased the delay period, and eventually plateaued at \u223c1.3 for delay periods longer than 300 ms (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "11904a58-f05d-41d5-b88e-b3d7596ca454",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C33",
+      "claim": "The decrease in target cost was due to the model producing faster reaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The former effect was due to the model producing faster reaches (Figure 2C inset; hand position for a reach with [red] and without [blue] preparation)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an explanation of the modeling results shown in Figure 2C inset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "fd167363-162a-4c69-b8ea-8243f07bd3d8",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C34",
+      "claim": "The decrease in effort cost arose from smaller control inputs being necessary when preparation was allowed.",
+      "claim_type": "EXPLICIT",
+      "source": "while the latter arose from smaller control inputs being necessary when preparation was allowed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of the modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "3f168276-8b62-445f-9ff0-7018c807971f",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C35",
+      "claim": "The presence of a delay period changes the optimal control strategy for reaching, and increases performance in the task.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the presence of a delay period changes the optimal control strategy for reaching, and increases performance in the task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "716ec629-d737-491a-b0cc-2075e4f92ca6",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C36",
+      "claim": "Delaying the reach beyond approximately 300 ms brings little benefit, with all components of the cost stabilizing past that point.",
+      "claim_type": "EXPLICIT",
+      "source": "The results above show that delaying the reach beyond \u223c300 ms brings little benefit; in particular, all components of the cost stabilize past that point (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "d6413cfe-90aa-4189-a971-c9216f4cdc56",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C37",
+      "claim": "The optimal controller made very little use of any preparation time available up to 300 ms before the go cue.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the optimal controller made very little use of any preparation time available up to 300 ms before the go cue",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "72c4e8b2-466c-4555-a11a-8c4a6168c986",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C38",
+      "claim": "With longer preparation times, external input continued to arise just a couple of hundred milliseconds before movement initiation.",
+      "claim_type": "EXPLICIT",
+      "source": "with longer preparation times, external input continued to arise just a couple of hundred milliseconds before movement initiation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "b3ec715a-5255-4808-a603-ace84441e5e6",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C39",
+      "claim": "Single neuron firing rates remained remarkably similar irrespective of the delay period.",
+      "claim_type": "EXPLICIT",
+      "source": "and single neuron firing rates remained remarkably similar (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "ecd8d023-36e8-4198-9715-8d0f4f5e667b",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C40",
+      "claim": "PCA projections of the firing rates traced out similar trajectories irrespective of the delay period.",
+      "claim_type": "EXPLICIT",
+      "source": "This was also seen in PCA projections of the firing rates, which traced out similar trajectories irrespective of the delay period (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "fd284a33-cb8f-4f0d-8df2-648780d000f9",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C43",
+      "claim": "Networks of E and I neurons embed two main motifs of effective connectivity: feedforward ('nonnormal') connectivity and anti-symmetric connectivity that causes oscillations.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, networks of E and I neurons have been shown to embed two main motifs of effective connectivity which are revealed by appropriate orthogonal changes of basis: (i) feedforward ('nonnormal') connectivity whereby a 'source mode' of E-I imbalance feeds into a 'sink mode' in which balance is restored, and (ii) anti-symmetric connectivity that causes the two populations to oscillate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about network dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "b927b11c-a47a-4704-97f4-492e47b359c1",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C44",
+      "claim": "Optimal control of both nonnormal and oscillatory dynamical motifs generally led to preparatory dynamics, with inputs arising before the go cue.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that optimal control of both dynamical motifs generally led to preparatory dynamics, with inputs arising before the go cue (Figure 4B and E, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 4B and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "dd4c3074-0ca7-4cfc-bd43-5429fd563410",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C45",
+      "claim": "In the feedforward motif, the amount of preparatory inputs appeared to depend critically on the orientation of the readout.",
+      "claim_type": "EXPLICIT",
+      "source": "In the feedforward motif, the amount of preparatory inputs appeared to depend critically on the orientation of the readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "08a8e2bc-0739-4259-bf51-372d9db80cac",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C46",
+      "claim": "When the readout was aligned with the sink mode, the controller prepared the network by moving its activity along the source mode.",
+      "claim_type": "EXPLICIT",
+      "source": "When the readout was aligned with the sink (brown) mode (Figure 4B, left), the controller prepared the network by moving its activity along the source (orange) mode (Figure 4C, left).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 4B-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "9f9e0a02-d7a1-4324-b6a0-e102271e3cdd",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C47",
+      "claim": "When the source mode was read out, the optimal strategy was to defer control to the movement epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, here the optimal strategy was to defer control to the movement epoch, during which the transient growth of network activity along the readout rested entirely on adequate control inputs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "b85bcb78-1b7e-4e93-9226-4b8fd1b8ae60",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C48",
+      "claim": "Of the two extreme readout configurations in the nonnormal network, reading out the sink mode yielded a smaller overall optimal control cost.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, of the two extreme readout configurations discussed above, the first one yielded a smaller overall optimal control cost (by a factor of \u223c1.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the modeling results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "89acd3d5-b44e-4c48-a8d5-9be0ac58b4e3",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C49",
+      "claim": "In the oscillatory network, the optimal control strategy yielded the same results irrespective of which unit was driving the hand's acceleration.",
+      "claim_type": "EXPLICIT",
+      "source": "A key difference however was that the flow field was rotationally symmetric such that no distinction could be made between 'source' and 'sink' units \u2013 indeed the optimal control strategy yielded the same results (up to a rotation of the state space) irrespective of which of the two units was driving the hand's acceleration (compare left and right panels in Figure 4D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 4D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "7f097ee3-c210-49cb-ae57-b84b355c04ef",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C50",
+      "claim": "The optimal controller consistently moved the network's activity along the output-null axis during preparation in the oscillatory network.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, the optimal controller consistently moved the network's activity along the output-null axis during preparation, in such a way as to engage the network's own rotational flow immediately after the go cue (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "6e68d21b-cd36-4e4b-8a4a-9923dabfb1c5",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C52",
+      "claim": "The optimal way to control the movement depends not only on the strength and flow of the internal network dynamics, but also on their interactions with the readout.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, we found that the optimal way to control the movement depends not only on the strength and flow of the internal network dynamics, but also on their interactions with the readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "7e9ee15a-c445-47d1-a22d-95780aa7c397",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C53",
+      "claim": "For a network to benefit from preparation, there must exist activity patterns that are momentarily output-null yet seed output-potent dynamics that subsequently move the arm.",
+      "claim_type": "EXPLICIT",
+      "source": "First, there must exist activity patterns that are momentarily output-null (i.e. do not immediately cause movement) yet seed output-potent dynamics that subsequently move the arm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "4a4ff8a2-4974-413d-8fd0-0cf560ce3101",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C54",
+      "claim": "The nullspace of the readout must be sufficiently 'observable' for a network to benefit from preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the language of control theory, this criterion implies that the nullspace of the readout must be sufficiently 'observable' \u2013 we captured this in a scalar quantity \u03b1 (Methods; Kao and Hennequin, 2019; Skogestad, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis formalized using control theory concepts.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "526838c0-305c-469d-bd79-378e09eacc4d",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C55",
+      "claim": "There must be a sizeable cost to performing the movement in an entirely input-driven manner without relying on preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, there must be a sizeable cost to performing the movement in an entirely input-driven manner without relying on preparation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "9db9fea4-3f3c-4dee-9776-4e1aef29bcf9",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C56",
+      "claim": "The readout must be of limited 'controllability' for a network to benefit from preparation.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the network should be hard to steer along the readout direction, i.e., the readout must be of limited 'controllability' \u2013 we captured this in another scalar quantity \u03b2 (Methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis formalized using control theory concepts.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "82a3b69d-5ff4-446b-a59d-ba2fb095ee6a",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C62",
+      "claim": "Zimnik and Churchland (2021) concluded that each reach in a sequence was successively seeded by its own preparatory activity.",
+      "claim_type": "EXPLICIT",
+      "source": "This study concluded that, rather than the whole movement sequence unrolling from a single preparatory period, each reach was instead successively seeded by its own preparatory activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a conclusion from prior experimental work, supported by citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "ee381dc2-b5fc-4e06-861b-79aef0e0596a",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C63",
+      "claim": "Preparatory and movement activity patterns in the model were well segregated in their respective subspaces in the single-reach task.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed a similar analysis (Methods) and verified that preparatory and movement activity patterns in the model were also well segregated in their respective subspaces in the single-reach task (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 6A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "15f7e6ab-5597-42a6-96fc-50396b17a3e8",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C64",
+      "claim": "For double reaches with a long pause, the preparatory subspace was transiently occupied twice, with the two peaks occurring just before the onset of each movement in the sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "For double reaches with a long (600 ms) pause, the preparatory subspace was transiently occupied twice, with the two peaks occurring just before the onset of each movement in the sequence (Figure 6B, bottom).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "e6a706da-1381-48f3-abdc-0f7a3be83434",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C65",
+      "claim": "The occupancy during the 'compound' reach started rising prior to the first movement before decaying very slightly and peaking again before the second reach, indicating two independent preparatory events.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the occupancy during the 'compound' reach (without pause; Figure 6C) also started rising prior to the first movement before decaying very slightly and peaking again before the second reach, indicating two independent preparatory events.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the modeling results shown in Figure 6C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "31830eb3-e173-443d-b36f-0e8ceecf0f0f",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C66",
+      "claim": "The behavior of two preparatory phases in compound reaches arises from the requirement that the hand stop briefly at the first target.",
+      "claim_type": "EXPLICIT",
+      "source": "In our model, this behavior can be understood to arise from the requirement that the hand stop briefly at the first target.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation proposed for the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "90d8721c-736d-40a9-83fe-e27192f37d95",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C67",
+      "claim": "To produce the second reach, the hand needs to accelerate again, which requires transient re-growth of activity in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "To produce the second reach, the hand needs to accelerate again, which requires transient re-growth of activity in the network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation for the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "69c671cd-754b-4c64-a545-1b5b84a84144",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C68",
+      "claim": "Given that the network's dynamical repertoire exhibits limited timescales, re-growth of activity is most easily achieved by reinjecting inputs into the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the network's dynamical repertoire exhibits limited timescales, this is most easily achieved by reinjecting inputs into the system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation for the modeling results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "5393d103-899f-42a0-a410-e4075903c362",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C69",
+      "claim": "The 'independent' preparation strategy observed in monkeys is consistent with the optimal control of a two-reach sequence.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our results suggest that the 'independent' preparation strategy observed in monkeys is consistent with the optimal control of a two-reach sequence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the modeling results in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "b51268bf-6f5a-48c8-8112-a0530b22e8b8",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C70",
+      "claim": "Preparatory neural activity patterns arise from optimal control of reaching movements at the level of motor cortical circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results show that preparatory neural activity patterns arise from optimal control of reaching movements at the level of motor cortical circuits, thus providing a possible explanation for a number of observed experimental findings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by the modeling results throughout.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "f4c1cb98-465e-4255-853d-c5db65eaa789",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C71",
+      "claim": "The animal protocols were approved by the Stanford University Institutional Animal Care and Use Committee.",
+      "claim_type": "EXPLICIT",
+      "source": "The animal protocols were approved by the Stanford University Institutional Animal Care and Use Committee.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fact about the experimental procedures.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "ff003f85-3491-4246-b656-0ed72cd77f24",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C72",
+      "claim": "Both monkeys were trained to perform a delayed-reaching task on a fronto-parallel screen.",
+      "claim_type": "EXPLICIT",
+      "source": "Both monkeys were trained to perform a delayed-reaching task on a fronto-parallel screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental task used in the cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "3ff4ba00-c32e-49f9-9892-1a30780c1eeb",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C73",
+      "claim": "Recordings were made in the PMd cortex and in the M1 using a pair of implanted 96-electrode arrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Recordings were made in the PMd cortex and in the M1 using a pair of implanted 96-electrode arrays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods used in the cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "933a8d2f-3637-44dc-812a-7aedc2c588bc",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C74",
+      "claim": "The authors used the planar two-link arm model described in Li and Todorov, 2004.",
+      "claim_type": "EXPLICIT",
+      "source": "To simulate reaching movements, we used the planar two-link arm model described in Li and Todorov, 2004.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the arm model used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "08958926-9961-46c8-b518-0f943f60736d",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C75",
+      "claim": "The authors used the iterative linear quadratic regulator (iLQR) algorithm to find the locally optimal inputs that minimize the cost function.",
+      "claim_type": "EXPLICIT",
+      "source": "Throughout this work, we used the iLQR algorithm (Li and Todorov, 2004) to find the locally optimal inputs that minimize our cost function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the optimization method used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "9f70d293-88da-4777-9ce1-edc2aa341093",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C76",
+      "claim": "iLQR is a trajectory optimization algorithm that can handle nonlinear dynamics and non-quadratic costs.",
+      "claim_type": "EXPLICIT",
+      "source": "iLQR is a trajectory optimization algorithm that can handle nonlinear dynamics and non-quadratic costs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the properties of the iLQR algorithm.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "61e8b439-46b0-48bb-b087-66addfa32acf",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C77",
+      "claim": "iLQR works by linearizing the dynamics and performing a quadratic approximation of the cost at each iteration.",
+      "claim_type": "EXPLICIT",
+      "source": "iLQR works in an iterative manner, by linearizing the dynamics and performing a quadratic approximation of the cost at each iteration, thus turning the control problem into a local linear quadratic problem whose unique solution is found using LQR (Kalman, 1960).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the iLQR algorithm works.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "7aeab8b4-faef-45a9-889f-d34a6fec4424",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C78",
+      "claim": "Inhibition-stabilized networks were generated according to the procedure described in Hennequin et al., 2014.",
+      "claim_type": "EXPLICIT",
+      "source": "Those were generated according to the procedure described in Hennequin et al., 2014, with minor adjustments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method for generating the network models.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "95f4f688-6103-4320-a400-95628cf1d7ef",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "claim_id": "C80",
+      "claim": "The procedure for generating inhibition-stabilized networks yielded strongly connected but stable networks with a strong degree of nonnormality.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded strongly connected but stable networks with a strong degree of nonnormality.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the properties of the generated networks.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c1fa4a68-7201-45ec-890f-0cbfa9813628",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Prior work has established that motor areas display movement-specific preparatory activity before movement onset, which has been proposed to seed initial neural states. Recent experiments have also revealed the presence and necessity of ongoing inputs during movement, including critical pattern-generating input from the thalamus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C3, C8, and C9 accurately summarize established findings from prior experimental work, supported by appropriate citations. These claims provide the empirical and theoretical context for the current study and are well-documented in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In an optimally controlled inhibition-stabilized network model of M1, delay-period inputs consistently arise before movement onset. Network activity begins changing well before the go cue, driven by early inputs that cancel in the readout to keep the hand still. The preparation index plateaus at ~1.3 for delays >300 ms, with preparation enabling faster reaches and reducing control effort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C20, C27-C30, C33-C36 describe the main findings from the optimal control modeling (Figures 2-3). The results are internally consistent and supported by the presented data showing preparatory inputs, preparation index dynamics, and cost function components. The modeling framework and results are clearly documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "6167e67a-1f36-42cd-8407-3a64811b28fb",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "When preparation time exceeds ~300 ms, the optimal controller does not utilize the additional early time. Instead, external inputs continue to arise just a couple hundred milliseconds before movement initiation, with firing rates and PCA trajectories remaining similar across different delay periods.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C40 describe findings from Figure 3 showing that preparation timing is constrained by network timescales. The data clearly demonstrate that longer delays do not lead to earlier preparation, supporting the interpretation that network dynamics have characteristic timescales that limit the utility of very early inputs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In simplified 2D networks with nonnormal or oscillatory dynamics, optimal control generally produces preparatory inputs, but the amount depends critically on readout orientation. In nonnormal networks, reading out the sink mode yields lower cost and more preparation than reading out the source mode. In oscillatory networks, preparation is independent of readout direction but consistently moves activity along the output-null axis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C50, C52 describe systematic analyses of 2D networks (Figure 4) that isolate the effects of specific dynamical motifs. The results are clearly presented and logically consistent, demonstrating how network structure and readout geometry interact to determine optimal preparation strategies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "1537479c-d60d-46bf-9f8e-bf90a3ebffa4",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Two control-theoretic quantities\u2014observability of the nullspace (\u03b1) and controllability of the readout (\u03b2)\u2014largely explain preparation in networks. For preparation to be beneficial, the nullspace must be sufficiently observable and the readout must have limited controllability. These quantities predict preparation across diverse network architectures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21, C53-C56 present the theoretical framework linking network properties to preparation (Figure 5). The linear regression achieves R\u00b2=0.93 for ISNs and R\u00b2=0.69 for other network types, providing strong quantitative support. The control-theoretic formalization is mathematically sound and generalizes across network families.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Optimal control of sequential reaches produces two phases of preparation, one before each movement, consistent with experimental observations in monkeys. In the model, this arises because the network's limited timescales require reinjection of inputs to produce the transient activity growth needed for the second reach after the hand stops at the first target.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C63-C69 describe modeling of sequential reaches (Figure 6) that reproduces key experimental findings from Zimnik and Churchland (2021). The preparatory subspace analysis shows two clear peaks of occupancy before each reach, and the mechanistic explanation based on network timescales is logically consistent with the model's dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "e88cf9f7-0780-4c4b-98c3-83448b4b34b8",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Most published network models of delayed reaches can perform the task equally well without preparatory inputs, with inputs confined to the movement epoch.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C10 is demonstrated by the authors' own modeling (Figure 1B) showing that the same reach can be produced with movement-only inputs. This observation motivates the central question of the paper and is clearly illustrated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "49162308-82dd-474a-a40e-453b273da48d",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Prior theoretical and modeling work has established that motor cortex operates as a dynamical system with near-autonomous evolution during movement, that preparation benefits behavior and may facilitate learning, and that previous models typically assume preparatory inputs by design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C11-C17 accurately summarize established theoretical frameworks and prior modeling approaches, supported by appropriate citations. These claims provide important context for understanding the novelty of the current approach, which does not assume preparatory inputs a priori.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "004adeda-e580-4532-a8d8-b99b73cf7ea6",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors modeled M1 as an input-driven RNN coupled to a two-link arm model, using iLQR to find optimal control inputs that minimize a cost functional. They employed inhibition-stabilized networks previously shown to capture M1 dynamics, with reaches required within 600 ms of a go cue following a known delay period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19, C23, C74-C78, C80 describe the methodological framework. The approach is clearly documented with appropriate citations to established methods (Li and Todorov 2004, Hennequin et al. 2014). The iLQR algorithm is appropriate for this nonlinear optimal control problem.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "36eddd64-03f7-44f0-8bba-123685a49382",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Preparatory neural activity patterns arise from optimal control of reaching movements at the level of motor cortical circuits, providing a normative explanation for experimental findings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 represents the main conclusion of the study, which is well-supported by the comprehensive modeling results (C4, C20-C22, C27-C40, C44-C56, C63-C69). The optimal control framework successfully reproduces key experimental observations and provides mechanistic insights into why preparation emerges.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "3411ca7c-e67f-4b2d-88d4-ee36528e26f6",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Networks of excitatory and inhibitory neurons embed two main connectivity motifs: feedforward (nonnormal) connectivity and anti-symmetric connectivity causing oscillations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 accurately describes established knowledge about E-I network dynamics, appropriately cited. This provides the theoretical basis for the 2D network analyses in Figure 4.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "bfb41cad-afbf-4292-8f4d-2b40c2494384",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Zimnik and Churchland (2021) concluded that each reach in a sequence is successively seeded by its own preparatory activity rather than the whole sequence unrolling from a single preparatory period.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 accurately summarizes the key finding from the cited experimental study, providing the empirical motivation for the sequential reach modeling in Figure 6.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "8d03d427-f56a-4d19-91c6-5cf6021cef96",
+      "content_id": "2aad43a7-4c10-4bf0-b39b-d12cb05fb7e7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The experimental data shown in Figure 1 came from two monkeys trained on delayed reaching tasks, with recordings from PMd and M1 using 96-electrode arrays, under protocols approved by Stanford IACUC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C73 describe the source of experimental data used for comparison. These are factual statements about previously published datasets with appropriate citations to the original studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "b394ed94-d6e4-4e49-b675-fad2dac0465f",
+      "content_id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "In an optimally controlled inhibition-stabilized network model of M1, delay-period inputs consistently arise well before movement begins. Network activity changes before the go cue, driven by early inputs that cancel in the readout to keep the hand still. The preparation index plateaus at ~1.3 for delays >300 ms, and preparation changes the optimal control strategy, improving task performance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this core finding. Reviewer 1 states the authors 'report that when there is a cost on the inputs, the optimal inputs should start before the desired network output.' Reviewer 2 notes 'They show that networks optimised under reasonable constraints...will use the input to seed the state of the network before movement.' Reviewer 4 confirms 'the authors show that, when there are constraints on inputs, preparation becomes a natural strategy.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "6d2a7494-181d-4ec3-b683-47bebd834147",
+      "content_id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "With varying delay periods, the optimal controller makes little use of preparation time beyond ~300 ms before the go cue. External inputs continue to arise just a couple hundred milliseconds before movement initiation regardless of longer preparation times, and single neuron firing rates and PCA trajectories remain remarkably similar across different delay periods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings without challenge. Reviewer 4 notes the manuscript 'has a useful section in the Discussion on the topic of preparation when there is no external delay' and that 'preparation can (1) be very brief, but (2) is always present,' which aligns with these timing results. No reviewer questions the delay period analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "3da985b7-dbd9-48d5-b303-157e1778b531",
+      "content_id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Preparation can be largely explained by two control-theoretic quantities: observability of the readout's nullspace (\u03b1) and limited controllability of the readout (\u03b2). For a network to benefit from preparation, there must exist output-null activity patterns that seed output-potent dynamics, the nullspace must be sufficiently observable, and there must be sizeable cost to input-driven movement without preparation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly affirms this theoretical contribution: 'they identify a strong connection between the structure of the network and the amount of preparation that is optimal for control - namely, that preparation has the most value when nullspaces are highly observable relative to the readout dimension and when the controllability of readout dimensions is low.' No reviewer challenges this mechanistic explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "ecc69c4f-c090-4579-9bc6-894b71241409",
+      "content_id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "In simplified 2-unit networks with feedforward (nonnormal) and oscillatory motifs, optimal control generally leads to preparatory dynamics. In the feedforward motif, preparation depends critically on readout orientation\u2014reading out the sink mode yields lower cost and more preparation than reading out the source mode. In the oscillatory network, the controller consistently moves activity along the output-null axis during preparation to engage rotational flow after the go cue.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 affirms the authors 'present compelling evidence by combining mathematically tractable analyses in linear networks and numerical simulation in nonlinear networks.' Reviewer 3 praises 'the mechanisms by which it happens by dissecting in detail low-dimensional networks.' No reviewer questions these simplified network analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "27450fab-59af-4bdf-b167-e6df10196e1c",
+      "content_id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Optimal control of compound reaches leads to input-driven preparatory activity in a dedicated subspace prior to each movement, consistent with experimental findings. For double reaches with pauses, the preparatory subspace is occupied twice; for compound reaches without pauses, occupancy rises before the first movement, decays slightly, then peaks again before the second reach. This arises from the requirement that the hand stop briefly at the first target, necessitating activity re-growth via input reinjection.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 notes the model 'predictions are consistent with the observation in monkey motor cortex' regarding sequential preparation. However, Reviewer 3 identifies significant discrepancies: 'the data reproduced from Zimnik and Churchland show preparatory inputs that have a very asymmetric shape that really plummets before the start of the next movement, whereas the derived inputs have larger amplitude during the movement period.' Reviewer 3 also notes differences in trigger signals and correlation patterns between conditions, suggesting only partial consistency with data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "d8f62c91-3330-4561-9f44-a0c4a76075a2",
+      "content_id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Most published network models of delayed reaches can perform the task just as well without preparatory inputs, with external inputs confined to the movement epoch, as demonstrated in Figure 1B.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 4 explicitly confirms this motivation: 'Prior studies have simply assumed, to emulate empirical findings, that preparatory inputs precede execution. They never asked why.' This validates the authors' demonstration that previous models don't require preparation, establishing the novelty of the current work's approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "d2eb122b-aa5b-4cc0-ba0e-7b6f6b7acc8e",
+      "content_id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors modeled motor cortex as an input-driven dynamical system using an inhibition-stabilized network coupled to a model arm, and used the iLQR algorithm to find optimal spatiotemporal input patterns that minimize a cost functional combining target accuracy and input effort.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 affirms the approach 'provides valuable theoretical insight' and that 'treating input to motor cortex as a signal that is optimised directly...is able to sidestep many...problematic questions.' However, Reviewer 3 raises significant methodological concerns: 'iLQR...has a limited ability to leverage potential advantages of nonlinearities' and 'is not a biologically plausible learning rule,' noting this 'can confound the question of whether [differences] come from a difference of assumed objective or a difference of optimization procedure.' Reviewer 4 acknowledges the 'simple magnitude constraint' is 'a mathematically tractable stand-in for a range of plausible...constraints.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "1c546a20-3e20-4d9d-b9e0-bcd6b547d976",
+      "content_id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The decrease in target cost with preparation was due to the model producing faster reaches, while the decrease in effort cost arose from smaller control inputs being necessary when preparation was allowed.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 4 summarizes this mechanism: 'if small inputs before movement can reduce the size of the inputs needed during movement, preparation is a good strategy. This occurs if (and only if) the network has strong dynamics.' No reviewer challenges this explanation of the cost reduction.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "1b7fac9a-209b-4cec-bd5e-ddf8347ca789",
+      "content_id": "e7284fca-aa82-4b71-887a-3dbeba67a88a",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Preparatory neural activity patterns arise from optimal control of reaching movements at the level of motor cortical circuits, providing a possible explanation for observed experimental findings.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 calls this 'an important study' that 'provides a new perspective on why preparatory activity occurs.' Reviewer 2 states it 'provides valuable theoretical insight into the role of preparation.' However, Reviewer 3 extensively discusses limitations, noting the framework 'cannot easily account for some other varied types of objectives' such as 'reusability of parts of the circuit, sparse use of additional neurons...and ease of planning.' Reviewer 3 also questions whether the model can explain preparation in 'more sensory-feedback-driven' movements and notes that 'some M1 properties that lead to strong preparation...may not be favorable for control in general.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "30770fe2-f38c-430d-a354-6690c0b1f4a1",
+      "result_id": "c1fa4a68-7201-45ec-890f-0cbfa9813628"
+    },
+    {
+      "claim_id": "8cc7d014-3cc6-4381-99bd-442ac2ce55cd",
+      "result_id": "c1fa4a68-7201-45ec-890f-0cbfa9813628"
+    },
+    {
+      "claim_id": "ec00a55f-3412-486d-bd3e-cc7cd623baa7",
+      "result_id": "c1fa4a68-7201-45ec-890f-0cbfa9813628"
+    },
+    {
+      "claim_id": "1ff071fb-ef36-463c-93fd-7f7e134782ab",
+      "result_id": "c1fa4a68-7201-45ec-890f-0cbfa9813628"
+    },
+    {
+      "claim_id": "010051ba-d8d8-4a11-8f30-11f18959c64b",
+      "result_id": "c1fa4a68-7201-45ec-890f-0cbfa9813628"
+    },
+    {
+      "claim_id": "d0438ab2-013a-4399-bcd3-53deb0c0ecfb",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "ac8b48b3-ff43-46fe-80d7-13d185c06f15",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "e4fc59f9-56a0-4d9c-af4b-8bfb9ef09fd8",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "7262008d-5672-4b5b-8364-c1c54752e874",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "c5aefe36-052e-4087-8c28-11ccef5812c5",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "0a2d9178-ab9a-4613-abdf-2d8357d8c2a3",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "11904a58-f05d-41d5-b88e-b3d7596ca454",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "fd167363-162a-4c69-b8ea-8243f07bd3d8",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "3f168276-8b62-445f-9ff0-7018c807971f",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "716ec629-d737-491a-b0cc-2075e4f92ca6",
+      "result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66"
+    },
+    {
+      "claim_id": "d6413cfe-90aa-4189-a971-c9216f4cdc56",
+      "result_id": "6167e67a-1f36-42cd-8407-3a64811b28fb"
+    },
+    {
+      "claim_id": "72c4e8b2-466c-4555-a11a-8c4a6168c986",
+      "result_id": "6167e67a-1f36-42cd-8407-3a64811b28fb"
+    },
+    {
+      "claim_id": "b3ec715a-5255-4808-a603-ace84441e5e6",
+      "result_id": "6167e67a-1f36-42cd-8407-3a64811b28fb"
+    },
+    {
+      "claim_id": "ecd8d023-36e8-4198-9715-8d0f4f5e667b",
+      "result_id": "6167e67a-1f36-42cd-8407-3a64811b28fb"
+    },
+    {
+      "claim_id": "b927b11c-a47a-4704-97f4-492e47b359c1",
+      "result_id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9"
+    },
+    {
+      "claim_id": "dd4c3074-0ca7-4cfc-bd43-5429fd563410",
+      "result_id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9"
+    },
+    {
+      "claim_id": "08a8e2bc-0739-4259-bf51-372d9db80cac",
+      "result_id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9"
+    },
+    {
+      "claim_id": "9f9e0a02-d7a1-4324-b6a0-e102271e3cdd",
+      "result_id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9"
+    },
+    {
+      "claim_id": "b85bcb78-1b7e-4e93-9226-4b8fd1b8ae60",
+      "result_id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9"
+    },
+    {
+      "claim_id": "89acd3d5-b44e-4c48-a8d5-9be0ac58b4e3",
+      "result_id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9"
+    },
+    {
+      "claim_id": "7f097ee3-c210-49cb-ae57-b84b355c04ef",
+      "result_id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9"
+    },
+    {
+      "claim_id": "6e68d21b-cd36-4e4b-8a4a-9923dabfb1c5",
+      "result_id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9"
+    },
+    {
+      "claim_id": "7e9ee15a-c445-47d1-a22d-95780aa7c397",
+      "result_id": "1537479c-d60d-46bf-9f8e-bf90a3ebffa4"
+    },
+    {
+      "claim_id": "4a4ff8a2-4974-413d-8fd0-0cf560ce3101",
+      "result_id": "1537479c-d60d-46bf-9f8e-bf90a3ebffa4"
+    },
+    {
+      "claim_id": "526838c0-305c-469d-bd79-378e09eacc4d",
+      "result_id": "1537479c-d60d-46bf-9f8e-bf90a3ebffa4"
+    },
+    {
+      "claim_id": "9db9fea4-3f3c-4dee-9776-4e1aef29bcf9",
+      "result_id": "1537479c-d60d-46bf-9f8e-bf90a3ebffa4"
+    },
+    {
+      "claim_id": "46039c76-9a9d-4c45-afaa-d01589cc49ef",
+      "result_id": "1537479c-d60d-46bf-9f8e-bf90a3ebffa4"
+    },
+    {
+      "claim_id": "1ad1daa6-9eac-405c-9f80-9fe121aee52b",
+      "result_id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571"
+    },
+    {
+      "claim_id": "ee381dc2-b5fc-4e06-861b-79aef0e0596a",
+      "result_id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571"
+    },
+    {
+      "claim_id": "15f7e6ab-5597-42a6-96fc-50396b17a3e8",
+      "result_id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571"
+    },
+    {
+      "claim_id": "e6a706da-1381-48f3-abdc-0f7a3be83434",
+      "result_id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571"
+    },
+    {
+      "claim_id": "31830eb3-e173-443d-b36f-0e8ceecf0f0f",
+      "result_id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571"
+    },
+    {
+      "claim_id": "90d8721c-736d-40a9-83fe-e27192f37d95",
+      "result_id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571"
+    },
+    {
+      "claim_id": "69c671cd-754b-4c64-a545-1b5b84a84144",
+      "result_id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571"
+    },
+    {
+      "claim_id": "5393d103-899f-42a0-a410-e4075903c362",
+      "result_id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571"
+    },
+    {
+      "claim_id": "78a4a116-42eb-4e33-af17-b62ca7b578b8",
+      "result_id": "e88cf9f7-0780-4c4b-98c3-83448b4b34b8"
+    },
+    {
+      "claim_id": "bc92fc29-d4bc-429c-90e3-4debc359657a",
+      "result_id": "49162308-82dd-474a-a40e-453b273da48d"
+    },
+    {
+      "claim_id": "d38c2d33-571d-4477-84cb-1fa1744dc04b",
+      "result_id": "49162308-82dd-474a-a40e-453b273da48d"
+    },
+    {
+      "claim_id": "e4e457f6-a2b3-407e-b322-f08ed8dc8cd7",
+      "result_id": "49162308-82dd-474a-a40e-453b273da48d"
+    },
+    {
+      "claim_id": "a02c2e82-4f0d-49f9-b3b5-6ab311521535",
+      "result_id": "49162308-82dd-474a-a40e-453b273da48d"
+    },
+    {
+      "claim_id": "cc3da6f0-ff51-4879-b0a8-3ba45c4559d8",
+      "result_id": "49162308-82dd-474a-a40e-453b273da48d"
+    },
+    {
+      "claim_id": "e493fff1-9823-4155-81c8-156acfa9afef",
+      "result_id": "49162308-82dd-474a-a40e-453b273da48d"
+    },
+    {
+      "claim_id": "a929c14a-f30b-4726-aad8-8a65e78b71d3",
+      "result_id": "49162308-82dd-474a-a40e-453b273da48d"
+    },
+    {
+      "claim_id": "e83fafac-9d22-45f4-83a5-3e1ab9d7f65e",
+      "result_id": "49162308-82dd-474a-a40e-453b273da48d"
+    },
+    {
+      "claim_id": "60270ec3-07b8-45c3-aa99-d6bc592def98",
+      "result_id": "49162308-82dd-474a-a40e-453b273da48d"
+    },
+    {
+      "claim_id": "b7457c16-080f-45a1-9fe3-f1b2a9a6f8e6",
+      "result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6"
+    },
+    {
+      "claim_id": "4a0a1bfd-9a4e-4ec2-be33-7069d928a43c",
+      "result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6"
+    },
+    {
+      "claim_id": "71539853-cf26-4d18-8768-edcd9ffac254",
+      "result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6"
+    },
+    {
+      "claim_id": "933a8d2f-3637-44dc-812a-7aedc2c588bc",
+      "result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6"
+    },
+    {
+      "claim_id": "08958926-9961-46c8-b518-0f943f60736d",
+      "result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6"
+    },
+    {
+      "claim_id": "9f70d293-88da-4777-9ce1-edc2aa341093",
+      "result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6"
+    },
+    {
+      "claim_id": "61e8b439-46b0-48bb-b087-66addfa32acf",
+      "result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6"
+    },
+    {
+      "claim_id": "7aeab8b4-faef-45a9-889f-d34a6fec4424",
+      "result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6"
+    },
+    {
+      "claim_id": "95f4f688-6103-4320-a400-95628cf1d7ef",
+      "result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6"
+    },
+    {
+      "claim_id": "b51268bf-6f5a-48c8-8112-a0530b22e8b8",
+      "result_id": "36eddd64-03f7-44f0-8bba-123685a49382"
+    },
+    {
+      "claim_id": "fd284a33-cb8f-4f0d-8df2-648780d000f9",
+      "result_id": "3411ca7c-e67f-4b2d-88d4-ee36528e26f6"
+    },
+    {
+      "claim_id": "82a3b69d-5ff4-446b-a59d-ba2fb095ee6a",
+      "result_id": "bfb41cad-afbf-4292-8f4d-2b40c2494384"
+    },
+    {
+      "claim_id": "f4c1cb98-465e-4255-853d-c5db65eaa789",
+      "result_id": "8d03d427-f56a-4d19-91c6-5cf6021cef96"
+    },
+    {
+      "claim_id": "ff003f85-3491-4246-b656-0ed72cd77f24",
+      "result_id": "8d03d427-f56a-4d19-91c6-5cf6021cef96"
+    },
+    {
+      "claim_id": "3ff4ba00-c32e-49f9-9892-1a30780c1eeb",
+      "result_id": "8d03d427-f56a-4d19-91c6-5cf6021cef96"
+    },
+    {
+      "claim_id": "d0438ab2-013a-4399-bcd3-53deb0c0ecfb",
+      "result_id": "b394ed94-d6e4-4e49-b675-fad2dac0465f"
+    },
+    {
+      "claim_id": "ac8b48b3-ff43-46fe-80d7-13d185c06f15",
+      "result_id": "b394ed94-d6e4-4e49-b675-fad2dac0465f"
+    },
+    {
+      "claim_id": "e4fc59f9-56a0-4d9c-af4b-8bfb9ef09fd8",
+      "result_id": "b394ed94-d6e4-4e49-b675-fad2dac0465f"
+    },
+    {
+      "claim_id": "7262008d-5672-4b5b-8364-c1c54752e874",
+      "result_id": "b394ed94-d6e4-4e49-b675-fad2dac0465f"
+    },
+    {
+      "claim_id": "c5aefe36-052e-4087-8c28-11ccef5812c5",
+      "result_id": "b394ed94-d6e4-4e49-b675-fad2dac0465f"
+    },
+    {
+      "claim_id": "0a2d9178-ab9a-4613-abdf-2d8357d8c2a3",
+      "result_id": "b394ed94-d6e4-4e49-b675-fad2dac0465f"
+    },
+    {
+      "claim_id": "3f168276-8b62-445f-9ff0-7018c807971f",
+      "result_id": "b394ed94-d6e4-4e49-b675-fad2dac0465f"
+    },
+    {
+      "claim_id": "716ec629-d737-491a-b0cc-2075e4f92ca6",
+      "result_id": "b394ed94-d6e4-4e49-b675-fad2dac0465f"
+    },
+    {
+      "claim_id": "d6413cfe-90aa-4189-a971-c9216f4cdc56",
+      "result_id": "6d2a7494-181d-4ec3-b683-47bebd834147"
+    },
+    {
+      "claim_id": "72c4e8b2-466c-4555-a11a-8c4a6168c986",
+      "result_id": "6d2a7494-181d-4ec3-b683-47bebd834147"
+    },
+    {
+      "claim_id": "b3ec715a-5255-4808-a603-ace84441e5e6",
+      "result_id": "6d2a7494-181d-4ec3-b683-47bebd834147"
+    },
+    {
+      "claim_id": "ecd8d023-36e8-4198-9715-8d0f4f5e667b",
+      "result_id": "6d2a7494-181d-4ec3-b683-47bebd834147"
+    },
+    {
+      "claim_id": "46039c76-9a9d-4c45-afaa-d01589cc49ef",
+      "result_id": "3da985b7-dbd9-48d5-b303-157e1778b531"
+    },
+    {
+      "claim_id": "7e9ee15a-c445-47d1-a22d-95780aa7c397",
+      "result_id": "3da985b7-dbd9-48d5-b303-157e1778b531"
+    },
+    {
+      "claim_id": "4a4ff8a2-4974-413d-8fd0-0cf560ce3101",
+      "result_id": "3da985b7-dbd9-48d5-b303-157e1778b531"
+    },
+    {
+      "claim_id": "526838c0-305c-469d-bd79-378e09eacc4d",
+      "result_id": "3da985b7-dbd9-48d5-b303-157e1778b531"
+    },
+    {
+      "claim_id": "9db9fea4-3f3c-4dee-9776-4e1aef29bcf9",
+      "result_id": "3da985b7-dbd9-48d5-b303-157e1778b531"
+    },
+    {
+      "claim_id": "b927b11c-a47a-4704-97f4-492e47b359c1",
+      "result_id": "ecc69c4f-c090-4579-9bc6-894b71241409"
+    },
+    {
+      "claim_id": "dd4c3074-0ca7-4cfc-bd43-5429fd563410",
+      "result_id": "ecc69c4f-c090-4579-9bc6-894b71241409"
+    },
+    {
+      "claim_id": "08a8e2bc-0739-4259-bf51-372d9db80cac",
+      "result_id": "ecc69c4f-c090-4579-9bc6-894b71241409"
+    },
+    {
+      "claim_id": "9f9e0a02-d7a1-4324-b6a0-e102271e3cdd",
+      "result_id": "ecc69c4f-c090-4579-9bc6-894b71241409"
+    },
+    {
+      "claim_id": "b85bcb78-1b7e-4e93-9226-4b8fd1b8ae60",
+      "result_id": "ecc69c4f-c090-4579-9bc6-894b71241409"
+    },
+    {
+      "claim_id": "89acd3d5-b44e-4c48-a8d5-9be0ac58b4e3",
+      "result_id": "ecc69c4f-c090-4579-9bc6-894b71241409"
+    },
+    {
+      "claim_id": "7f097ee3-c210-49cb-ae57-b84b355c04ef",
+      "result_id": "ecc69c4f-c090-4579-9bc6-894b71241409"
+    },
+    {
+      "claim_id": "6e68d21b-cd36-4e4b-8a4a-9923dabfb1c5",
+      "result_id": "ecc69c4f-c090-4579-9bc6-894b71241409"
+    },
+    {
+      "claim_id": "1ad1daa6-9eac-405c-9f80-9fe121aee52b",
+      "result_id": "27450fab-59af-4bdf-b167-e6df10196e1c"
+    },
+    {
+      "claim_id": "82a3b69d-5ff4-446b-a59d-ba2fb095ee6a",
+      "result_id": "27450fab-59af-4bdf-b167-e6df10196e1c"
+    },
+    {
+      "claim_id": "ee381dc2-b5fc-4e06-861b-79aef0e0596a",
+      "result_id": "27450fab-59af-4bdf-b167-e6df10196e1c"
+    },
+    {
+      "claim_id": "15f7e6ab-5597-42a6-96fc-50396b17a3e8",
+      "result_id": "27450fab-59af-4bdf-b167-e6df10196e1c"
+    },
+    {
+      "claim_id": "e6a706da-1381-48f3-abdc-0f7a3be83434",
+      "result_id": "27450fab-59af-4bdf-b167-e6df10196e1c"
+    },
+    {
+      "claim_id": "31830eb3-e173-443d-b36f-0e8ceecf0f0f",
+      "result_id": "27450fab-59af-4bdf-b167-e6df10196e1c"
+    },
+    {
+      "claim_id": "90d8721c-736d-40a9-83fe-e27192f37d95",
+      "result_id": "27450fab-59af-4bdf-b167-e6df10196e1c"
+    },
+    {
+      "claim_id": "69c671cd-754b-4c64-a545-1b5b84a84144",
+      "result_id": "27450fab-59af-4bdf-b167-e6df10196e1c"
+    },
+    {
+      "claim_id": "5393d103-899f-42a0-a410-e4075903c362",
+      "result_id": "27450fab-59af-4bdf-b167-e6df10196e1c"
+    },
+    {
+      "claim_id": "78a4a116-42eb-4e33-af17-b62ca7b578b8",
+      "result_id": "d8f62c91-3330-4561-9f44-a0c4a76075a2"
+    },
+    {
+      "claim_id": "b7457c16-080f-45a1-9fe3-f1b2a9a6f8e6",
+      "result_id": "d2eb122b-aa5b-4cc0-ba0e-7b6f6b7acc8e"
+    },
+    {
+      "claim_id": "4a0a1bfd-9a4e-4ec2-be33-7069d928a43c",
+      "result_id": "d2eb122b-aa5b-4cc0-ba0e-7b6f6b7acc8e"
+    },
+    {
+      "claim_id": "08958926-9961-46c8-b518-0f943f60736d",
+      "result_id": "d2eb122b-aa5b-4cc0-ba0e-7b6f6b7acc8e"
+    },
+    {
+      "claim_id": "9f70d293-88da-4777-9ce1-edc2aa341093",
+      "result_id": "d2eb122b-aa5b-4cc0-ba0e-7b6f6b7acc8e"
+    },
+    {
+      "claim_id": "61e8b439-46b0-48bb-b087-66addfa32acf",
+      "result_id": "d2eb122b-aa5b-4cc0-ba0e-7b6f6b7acc8e"
+    },
+    {
+      "claim_id": "11904a58-f05d-41d5-b88e-b3d7596ca454",
+      "result_id": "1c546a20-3e20-4d9d-b9e0-bcd6b547d976"
+    },
+    {
+      "claim_id": "fd167363-162a-4c69-b8ea-8243f07bd3d8",
+      "result_id": "1c546a20-3e20-4d9d-b9e0-bcd6b547d976"
+    },
+    {
+      "claim_id": "b51268bf-6f5a-48c8-8112-a0530b22e8b8",
+      "result_id": "1b7fac9a-209b-4cec-bd5e-ddf8347ca789"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "e35ce4a0-1e8d-4620-b4a9-280c5ef392d2",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "6167e67a-1f36-42cd-8407-3a64811b28fb",
+      "peer_result_id": "6d2a7494-181d-4ec3-b683-47bebd834147",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C37-C40 regarding preparation timing constraints from network timescales. Both evaluations find these claims supported by the data, with peer reviewers noting the manuscript's useful discussion of preparation timing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "8201a015-8f6f-4657-9705-96020ed2111a",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0ca8204b-0d5e-49b7-b28a-f818d6c17ae9",
+      "peer_result_id": "ecc69c4f-c090-4579-9bc6-894b71241409",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C44-C50, C52 regarding 2D network analyses. Both evaluations support these findings, with peer reviewers praising the mathematically tractable analyses and detailed dissection of low-dimensional networks.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "dcb030d0-95db-4253-a7b7-3298737f93e9",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1537479c-d60d-46bf-9f8e-bf90a3ebffa4",
+      "peer_result_id": "3da985b7-dbd9-48d5-b303-157e1778b531",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C21, C53-C56 regarding the theoretical framework linking network properties to preparation. Both evaluations support the mechanistic explanation, with peer reviewers explicitly affirming the connection between network structure and optimal preparation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "6db841f4-61ae-47e1-b452-d8fa11c5acea",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "e88cf9f7-0780-4c4b-98c3-83448b4b34b8",
+      "peer_result_id": "d8f62c91-3330-4561-9f44-a0c4a76075a2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claim C10 demonstrating that movement can be produced without preparatory inputs. Both evaluations support this as valid motivation for the study, with peer reviewers confirming this establishes the novelty of asking why preparation occurs.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "36389d5b-3326-4041-b80d-d22b409b4189",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "36eddd64-03f7-44f0-8bba-123685a49382",
+      "peer_result_id": "1b7fac9a-209b-4cec-bd5e-ddf8347ca789",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on claim C70 (main conclusion). OpenEval finds it well-supported by comprehensive modeling results. Peer reviewers acknowledge valuable theoretical insight but express uncertainty due to limitations in accounting for other objectives, applicability to feedback-driven movements, and questions about generalizability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "40fa0263-0dc2-4c55-b9e6-731c824dd7f0",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66",
+      "peer_result_id": "b394ed94-d6e4-4e49-b675-fad2dac0465f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C4, C20, C27-C30, C35-C36 regarding core findings from optimal control modeling. Both evaluations support these claims, with all peer reviewers explicitly affirming that preparation emerges naturally under input constraints.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "00e49a81-f93d-4be4-8903-423fef08dd02",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "0d7547ac-e749-4d1a-ba4b-7da8ae5e6571",
+      "peer_result_id": "27450fab-59af-4bdf-b167-e6df10196e1c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on claims C22, C63-C69 regarding sequential reach modeling. OpenEval finds claims supported with clear reproduction of experimental findings. Peer reviewers express uncertainty, noting consistency with some observations but identifying significant discrepancies in input shape, timing, and correlation patterns compared to actual data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "79f875bd-a2e3-44b3-ab61-7e9e1f582347",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "004adeda-e580-4532-a8d8-b99b73cf7ea6",
+      "peer_result_id": "d2eb122b-aa5b-4cc0-ba0e-7b6f6b7acc8e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on claims C18-C19, C75-C77 regarding methodological framework. OpenEval finds the approach clearly documented and appropriate. Peer reviewers express uncertainty, acknowledging theoretical value but raising concerns about iLQR's limited ability to leverage nonlinearities, biological implausibility, and potential confounding of objectives with optimization procedures.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "820f11e2-3e13-4040-abd2-f922deb8bc89",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "3c6e0644-3594-4b25-b6c0-7bad0bc4af66",
+      "peer_result_id": "1c546a20-3e20-4d9d-b9e0-bcd6b547d976",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C33-C34 regarding cost reduction mechanism. OpenEval supports these as part of broader modeling findings. Peer reviewers explicitly affirm this mechanism, noting that preparation reduces input costs when networks have strong dynamics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "252b48a3-83a8-4b6e-b19f-7dadb62c0a93",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "bfb41cad-afbf-4292-8f4d-2b40c2494384",
+      "peer_result_id": "27450fab-59af-4bdf-b167-e6df10196e1c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claim C62 (experimental finding from Zimnik and Churchland). OpenEval finds it accurately summarizes the cited study. Peer reviewers note consistency with some observations but identify discrepancies in the model's reproduction of these findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "2bdf63d7-d0e2-410d-9424-5128f6a86a2e",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "c1fa4a68-7201-45ec-890f-0cbfa9813628",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C1-C3, C8-C9 (established findings from prior work) well-supported by appropriate citations. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "ab7519d3-049f-4e07-9930-98583e6cc2b6",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "49162308-82dd-474a-a40e-453b273da48d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C6-C7, C11-C17 (theoretical frameworks and prior modeling approaches) accurately summarize established work with appropriate citations. No corresponding peer review evaluation found for these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "8d622eed-fc3c-4c6e-ba4d-d1b22302222e",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "3411ca7c-e67f-4b2d-88d4-ee36528e26f6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claim C43 (E-I network dynamics) accurately describes established knowledge with appropriate citation. No corresponding peer review evaluation found for this background claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    },
+    {
+      "id": "1e79691a-1265-4040-9f57-f881d96a5697",
+      "submission_id": "eaab48fd-886c-4022-abc0-61ea2c74d66d",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "8d03d427-f56a-4d19-91c6-5cf6021cef96",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C71-C73 (source of experimental data) are factual statements with appropriate citations. No corresponding peer review evaluation found for these methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:57:23.187097Z"
+    }
+  ]
+}

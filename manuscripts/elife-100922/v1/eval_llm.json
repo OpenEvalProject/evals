@@ -1,0 +1,384 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Intraperitoneal BCG vaccination induces heterologous protection against Salmonella Typhimurium in the spleen, accompanied by expansion of the myeloid compartment, emergence of a CXCL9+ trained classical monocyte subset (CM-T), and depletion of resident red pulp macrophages (RPM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by CFU measurements (C1), flow cytometry data (C2, C4), and single-cell RNA-seq analysis (C3). The data demonstrate a 4-5 fold reduction in S.Tm load, increased CD11b+ cells, decreased RPM, and identification of a distinct CM-T subset with elevated STAT1-regulated genes. These findings are internally consistent and provide converging evidence for the protective phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "BCG training upregulates STAT1 and downstream targets including SCA-1 (Ly6a) across multiple myeloid cell types, with SCA-1+ monocytes exhibiting pro-inflammatory characteristics during infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 are directly supported by scRNA-seq data showing elevated STAT1 and Ly6a expression across myeloid populations. Claims C7-C8 rely on cited literature to establish the STAT1-SCA-1 regulatory relationship and pro-inflammatory phenotype. While the current study does not directly test these mechanisms, the cited literature provides established support for these relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10"
+    ],
+    "result": "BCG training downregulates CCR2, S100A8/9, and NGP in trained classical monocytes, with CCR2 downregulation mediated by IFN\u03b3-induced mRNA instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 is supported by differential gene expression analysis from scRNA-seq data. Claim C10 relies on cited literature to explain the mechanism of CCR2 downregulation. The downregulation is demonstrated in the current data, while the mechanistic explanation is appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Protection against S.Tm persists for 2 months post-BCG vaccination but wanes over time. BCG is not detected in bone marrow but is present in the spleen at all time points, declining sharply by day 14.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by CFU measurements at multiple time points showing persistent but waning protection (C11), absence of BCG in bone marrow (C12), and presence with decline in spleen (C13). The data challenge prior findings that bone marrow localization is required for training, which is appropriately acknowledged with citations to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Classical monocytes and CM-T subsets show early recruitment kinetics (days 3-14) that are transient, while SCA-1 expression in NCMs persists for at least 60 days. CM-T response to S.Tm challenge is lost by day 60, coinciding with diminished protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 are supported by flow cytometry data across multiple time points showing distinct temporal dynamics for different cell populations. The correlation between loss of CM-T response and diminished protection (C18) is observational but consistent. The data demonstrate clear differences in kinetics between transient (CM-T) and persistent (SCA-1+ NCM) training signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "RPM are depleted by day 14 post-BCG training and express increased levels of CXCL9, indicating STAT1-mediated training signatures in tissue-resident macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are supported by flow cytometry data showing decreased RPM percentages and elevated CXCL9 expression at day 14. This demonstrates that training signatures are not limited to bone marrow-derived cells but also occur in tissue-resident populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Bulk RNA-seq reveals greatest transcriptional changes at days 14 and 30, with day 14 characterized by enrichment of IFN\u03b3 response, IFN\u03b1 response, and IL6-JAK-STAT signaling pathways. STAT1 and downstream targets show biphasic dynamics with initial reduction after 2 weeks followed by sustained upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24, C29-C31 are supported by bulk RNA-seq data and gene set enrichment analysis. The temporal expression patterns are clearly demonstrated, with specific genes showing distinct kinetics (e.g., Cxcl9 peaks at day 14, Ly6a sustained at day 60). The biphasic STAT1 dynamics are well-documented in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The STAT1-dependent program includes upregulation of GBPs (antimicrobial activity and inflammasome activation), IFITM3 (antiviral response), and SOCS3 (necessary for mycobacterial infection control).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 combine current expression data with cited literature describing gene functions. The upregulation of these genes is demonstrated in the current study (C24), while their functional roles are appropriately attributed to prior work. This integration of expression data with established functional knowledge is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28"
+    ],
+    "result": "IRG1 upregulation is limited to day 14, potentially reflecting that IRG1 induction requires bacterial phagocytosis and activation of the TLR-2/MYD88/NFKB axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C28 is supported by temporal expression data showing IRG1 upregulation only at day 14, combined with cited literature on IRG1 induction mechanisms. The inference that transient expression reflects dependence on bacterial phagocytosis is reasonable given the temporal correlation with BCG presence in the spleen.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Day 30 post-BCG vaccination is characterized by enrichment of E2F targets, G2M checkpoint, and heme metabolism pathways, potentially reflecting RPM repopulation given their role in iron homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 is supported by gene set enrichment analysis at day 30. However, the connection to RPM repopulation (C33) is speculative. While RPM do play a role in iron homeostasis (supported by cited literature), the direct link between heme metabolism enrichment and RPM repopulation is not experimentally demonstrated. Additional experiments tracking RPM numbers and phenotype at day 30 would strengthen this inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "SCA-1 expression in NCMs can be maintained through progenitor programming alone, as demonstrated by bone marrow transplant experiments, while CM-Ts are undetectable after transplant, consistent with their transient nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 are supported by bone marrow transplant experiments showing SCA-1+ NCMs derived from trained progenitors in naive hosts, while CM-Ts are absent. This demonstrates that at least some training signatures can be maintained through progenitor programming. The experimental design appropriately tests the contribution of progenitor programming versus local tissue signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Lineage tracing reveals that approximately 16% of RPM are bone marrow-derived under steady-state conditions, with this fraction increasing after BCG training. BCG training also increases labeled monocytes, suggesting lineage bias towards GMPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 are supported by lineage tracing data using MS4A3Tdtm reporter mice. The finding that ~16% of RPM are BM-derived at steady state challenges the assumption of complete self-renewal. The increased labeling after BCG demonstrates active replenishment from bone marrow. The inference of GMP lineage bias (C38) is reasonable given the MS4A3 expression pattern, though additional progenitor analysis would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Training-associated genes are differentially expressed across all sorted cell types (Tdtm+ RPMs, Tdtm- RPMs, Tdtm+ CM and NCM), with distinct gene clusters showing cell-type-specific enrichment patterns including MHCII genes in NCM/RPM, STAT1-regulated genes across all trained subsets, and tissue damage response genes in trained RPM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by bulk RNA-seq analysis of sorted populations showing differential gene expression across all cell types with distinct clustering patterns. Claims C43-C44 appropriately cite literature to describe the functions of AIF1 and FPR1. The clustering analysis effectively demonstrates both shared and cell-type-specific training signatures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "IFN\u03b3 response is enriched in CM, NCM, and Tdtm+ RPM following BCG training, with BM-derived RPM (Tdtm+) showing stronger IFN\u03b3 signatures than tissue-resident RPM (Tdtm-), though both populations upregulate training-associated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C47-C48 are supported by gene set enrichment analysis and gene expression comparisons across sorted populations. Claim C46 is an inference from the data showing stronger IFN\u03b3 response in Tdtm+ RPM, which is reasonable but not directly tested. The data demonstrate that both BM-derived and tissue-resident RPM can be trained, with quantitative differences in response magnitude.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "BCG can reprogram populations and generate training via two routes: recruitment of trained progenitors and monocytes that differentiate within the vacant niche, and direct activation of tissue-resident RPM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C49 is a synthesis of the lineage tracing and gene expression data (C36-C48) demonstrating both BM-derived and tissue-resident contributions to training. This dual-route model is well-supported by the converging evidence from multiple experimental approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "STAT1 knockout mice show complete absence of CXCL9 and SCA-1 expression across myeloid populations following BCG vaccination, and RPM are preserved rather than depleted, suggesting STAT1-mediated pathways are involved in RPM depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 are supported by flow cytometry data from STAT1-KO mice showing loss of training markers and preserved RPM. The inference that STAT1 pathways are involved in RPM depletion (C51) is reasonable given the phenotype, though the specific mechanism (cellular death processes) is not directly tested. The alignment with prior IFN\u03b3R-/- data strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Fedratinib (JAK2 inhibitor) but not Deucravacitinib (TYK2 inhibitor) blocks STAT1-mediated TI signatures when administered early after BCG vaccination, including ablation of CXCL9+ CM-T population and suppression of LSK+ HSC expansion in bone marrow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 are supported by bulk RNA-seq and flow cytometry data from inhibitor-treated mice. The differential effects of Fedratinib versus Deucravacitinib demonstrate that IFN\u03b3-JAK2-STAT1 signaling, but not IFN\u03b1/\u03b2-TYK2-STAT1/2 signaling, is critical for training in this model. The effects on both tissue and bone marrow demonstrate systemic impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Early STAT1 inhibition with Fedratinib blocks TI-mediated protection against S.Tm, reduces BCG-induced splenocyte expansion and spleen size, normalizes monocyte ratios, reduces CXCL9 expression in CM-Ts and RPMs, and prevents BCG-induced RPM depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by CFU measurements, spleen size measurements, and flow cytometry data from Fedratinib-treated mice. The comprehensive phenotypic characterization demonstrates that early STAT1 inhibition blocks multiple aspects of the training response, including the functional protective phenotype. The lack of effect in control mice (C56) is an important control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "IFN\u03b3 response is the most significantly affected pathway due to JAK2 inhibition by Fedratinib, including downregulation of STAT1 and key STAT1-regulated trained immunity genes (Cxcl9/10, Irf1, Gbp2, Irg1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 is supported by gene set enrichment analysis of bulk RNA-seq data from Fedratinib-treated mice showing IFN\u03b3 response as the top affected pathway. The specific genes mentioned are consistent with the STAT1-regulated program identified throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Early \u03b1-IFN\u03b3 antibody treatment completely ablates STAT1-regulated TI signatures in CM and RPM without affecting viable BCG levels in the spleen at 2 weeks post-vaccination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by bulk RNA-seq data from sorted cells and CFU measurements. The finding that \u03b1-IFN\u03b3 treatment blocks training signatures without affecting BCG levels demonstrates that IFN\u03b3 signaling, rather than BCG presence per se, is critical for establishing training. This complements the Fedratinib experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "The acquisition of TI in the tissue occurs within a critically narrow temporal window early after BCG vaccination, as demonstrated by the effectiveness of 5-day inhibitor treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is supported by the experimental design showing that transient early inhibition (5 days) is sufficient to block training signatures measured at 2 weeks. This demonstrates a critical early window for training establishment, though the minimal duration required is not precisely defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Intraperitoneal BCG vaccination can elicit training without BCG localization to the bone marrow, suggesting that BCG-initiated signaling can act in trans to affect system-wide changes. This is supported by findings that training in alveolar macrophages can occur through subcutaneous BCG administration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is supported by the combination of CFU data showing no BCG in bone marrow (C12) and evidence of LSK+ expansion and training signatures. The inference that signaling acts in trans is reasonable given these observations. Claim C66 cites supporting literature for alternative routes of BCG-induced training, strengthening the plausibility of trans-acting mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "IFN\u03b3-STAT1 pathway is a key driver in establishing trained immunity by replenishment of resident MPs with trained recruited and local immune populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is a synthesis of all experimental data showing STAT1 requirement for training signatures (C50-C63), protection (C56), and both BM-derived and tissue-resident contributions (C36-C49). This conclusion is well-supported by the comprehensive experimental evidence demonstrating STAT1's central role in multiple aspects of training.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Trained immunity is defined as the capacity of innate immune cells to recall and modulate responses following prior exposure to diverse stimuli. These changes are antigen-agnostic, involve metabolic, transcriptional, and epigenetic reprogramming, and the transient lifespan of monocytes/macrophages is insufficient to explain sustained protection lasting months to years.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 are background knowledge claims appropriately supported by cited literature. These establish the conceptual framework and rationale for investigating progenitor and tissue-resident contributions to sustained training. The logical inference in C71 about cell lifespan versus protection duration is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "BCG vaccine facilitates nonspecific heterologous protection across species. Intravenous BCG drives expansion of LSK+ HSCs and MPPs in bone marrow, with biased differentiation towards myelopoiesis driven by IFN\u03b3-STAT1-IRF1 signaling, resulting in cells with enhanced microbicidal properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are background knowledge claims supported by cited literature. These establish the prior understanding of BCG-induced training mechanisms, particularly the central role of bone marrow progenitor reprogramming via IFN\u03b3-STAT1 signaling. This provides important context for the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Most tissues harbor long-lived resident macrophages capable of self-renewal that originate from embryonic progenitors. These can undergo in-situ training and maintain altered phenotypes over extended periods, with mechanisms including CX3CR1+ T cell-mediated reprogramming via IFN\u03b3 release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are background knowledge claims supported by cited literature. These establish the prior understanding of tissue-resident macrophage biology and in-situ training mechanisms, particularly in alveolar macrophages. This provides important context for investigating similar mechanisms in splenic RPM.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The study demonstrates that intraperitoneal BCG rapidly delivers bacteria to the spleen, induces depletion of resident RPM followed by repopulation by both recruited trained monocytes and local self-renewing populations, and that early STAT1 inhibition reduces both RPM loss and monocyte recruitment, suggesting a critical temporal window for STAT1-dependent activation of resident cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 are summary claims synthesizing the major findings of the study. These are well-supported by the comprehensive experimental evidence including lineage tracing (C36-C49), inhibitor studies (C50-C64), and temporal analyses (C11-C31). The conclusions appropriately integrate multiple lines of evidence.",
+    "result_type": "MAJOR"
+  }
+]

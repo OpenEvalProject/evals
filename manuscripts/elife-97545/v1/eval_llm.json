@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "GABA concentrations in hMT+ (but not glutamate or GABA in V1) significantly correlate with both BDT scores and suppression index (SI). The correlation between hMT+ GABA and BDT (r=0.39, p=0.03) remains significant after controlling for age (rpartial=0.426, p=0.02). Similarly, hMT+ GABA correlates with SI (r=0.44, p=0.01). No such correlations were found for glutamate in either region or for GABA in V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 provide converging evidence with appropriate statistical tests, control analyses (V1 as control region, glutamate as control neurotransmitter), and age correction. The specificity to hMT+ GABA (not V1 GABA or glutamate in either region) strengthens the conclusion. Sample sizes are adequate (n=31 for hMT+, n=28 for V1) and statistical thresholds are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Behavioral measures of motion perception correlate with visuo-spatial intelligence. SI significantly correlates with BDT (r=0.59, p=0.0002), as does duration threshold for small gratings (r=-0.43, p=0.016), but not for large gratings. These correlations remain significant after age correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 demonstrate appropriate behavioral validation with significant correlations and proper controls (large vs. small gratings). The differential effect of grating size aligns with prior literature (C24 cites Melnick et al., 2013). Statistical tests are appropriate and age is controlled as a covariate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Functional connectivity between hMT+ and frontal-parietal regions correlates with visuo-spatial intelligence and suppression index. Brain regions showing significant FC-BDT correlations include canonical FPN regions (BAs 6, 9, 10, 46, 47) and parietal regions (BAs 7, 39, 40). FC-SI analysis identified three frontal regions (right BA4/6, left BA6, right BA46) with significant correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 present appropriate neuroimaging analyses with proper multiple comparison correction (AlphaSim). The identification of FPN regions is consistent with prior intelligence literature. However, the manuscript would benefit from reporting effect sizes for these connectivity-behavior correlations and clarifying whether the same regions emerge in both a priori (frontal) and whole-brain searches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C43"
+    ],
+    "result": "Two specific functional connections show significant correlations with hMT+ GABA levels: hMT+-BA46 (negative correlation, r=-0.56, p=0.02 FDR corrected) and hMT+-BA6 (positive correlation, r=0.69, p=0.002 FDR corrected). These connections do not correlate with glutamate levels. The hMT+-BA46 connection represents the overlap between connectivity-BDT-GABA and connectivity-SI-GABA analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, and C43 demonstrate appropriate statistical rigor with FDR correction for multiple comparisons. The specificity to GABA (not glutamate) and the convergence of multiple analyses (connectivity-BDT, connectivity-SI, connectivity-GABA) strengthen the findings. The opposite directionality of BA46 vs. BA6 correlations is intriguing but requires mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33",
+      "C34"
+    ],
+    "result": "Serial mediation analysis reveals that hMT+ GABA predicts BDT through a pathway involving hMT+-BA46 functional connectivity and suppression index. The indirect effect (hMT+ GABA \u2192 FC of hMT+-BA46 \u2192 SI \u2192 BDT) is significant (\u03b2=2.28, 95% CI=[0.03, 5.94]), accounting for 34% of variance in BDT. This supports the interpretation that higher GABAergic inhibition in hMT+ relates to stronger negative FC with BA46, enhanced surround suppression, and more efficient 3D visual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, C33, and C34 present a coherent mediation model with appropriate bootstrapped confidence intervals. The 95% CI barely excludes zero ([0.03, 5.94]), suggesting the effect is at the threshold of significance. The model accounts for a reasonable proportion of variance (34%). However, alternative models should be more thoroughly tested, and the causal interpretation of mediation analysis should be tempered given the cross-sectional design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The hMT+-BA6 functional connectivity fully mediates the relationship between hMT+ GABA and BDT in a separate mediation model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 describes a mediation model but lacks the statistical details provided for the BA46 model (no beta values, confidence intervals, or variance explained). The manuscript states this is a 'total mediation' but does not provide evidence that the direct effect becomes non-significant. More complete reporting is needed to evaluate this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "GABA and glutamate concentrations show significant positive correlations in both hMT+ (r=0.62, p=0.0002) and V1 (r=0.56, p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 reports expected correlations between excitatory and inhibitory neurotransmitters, consistent with prior work (Song et al., 2021). The correlations are significant and of similar magnitude in both regions. This serves as a validation of the MRS measurements and is consistent with excitation-inhibition balance principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "GABAergic inhibition in hMT+ couples with distinct functional connectivity patterns: negative correlation with hMT+-BA46 and positive correlation with hMT+-BA6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 summarizes the differential connectivity patterns reported in C28. The opposite directionality is intriguing and discussed in relation to different reasoning phases (validation vs. integration) and different types of frontal modulation (delayed DLPFC modulation vs. motor coherence). However, the mechanistic interpretation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Both local (within BA18) and global (hMT+ to frontal) functional connectivity contribute to suppression index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by data in Supplementary file 3. This finding challenges the view that SI is purely a local hMT+ function and suggests integration of local circuits with long-range connectivity. However, the relative contributions of local vs. global connectivity are not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C52",
+      "C53"
+    ],
+    "result": "The study demonstrates that GABAergic inhibition mechanisms in hMT+ (but not glutamate) relate to 3D visuo-spatial ability, and that the network between hMT+ and frontal cortex, coupled with hMT+ GABA, contributes to visuo-spatial intelligence. This provides evidence that hMT+ functions as an intellectual hub integrating biochemistry, connectivity, and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C52, and C53 represent the main conclusions of the study, synthesizing findings from multiple levels of analysis. These conclusions are well-supported by the convergent evidence from MRS, fMRI connectivity, behavioral measures, and mediation analyses. The specificity to GABA (not glutamate) and hMT+ (not V1) strengthens the conclusions. However, the causal language should be tempered given the correlational nature of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C61"
+    ],
+    "result": "The study included 36 healthy subjects (18 female, mean age 23.6\u00b12.1 years) with normal vision, no psychotropic medication, and right-handedness. After quality control, 31/36 hMT+ and 28/36 V1 MRS datasets were analyzed. Sample size was determined by statistical requirements for Pearson correlation (n=30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C54-C57, and C61 provide adequate methodological details about participants. The sample size justification (n=30 for correlation) is reasonable but simplistic\u2014power analysis considering effect sizes and multiple comparisons would be more rigorous. The attrition rate for MRS data (14-22%) is substantial but explained by quality control criteria.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C71",
+      "C72"
+    ],
+    "result": "hMT+ VOIs were placed using anatomical landmarks, with fMRI validation in 14 subjects. Only left hMT+ was scanned based on prior evidence of stronger perceptual effects. V1 VOIs were placed on the calcarine sulcus using anatomical landmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C71-C72 describe appropriate VOI placement methods. The use of both anatomical landmarks and functional validation (in subset) is rigorous. The choice to scan only left hMT+ is justified by citation but limits generalizability. The lack of functional localization for all subjects is a minor limitation but acceptable given the anatomical consistency of hMT+.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Suppression index was calculated as the log difference between large and small grating thresholds. Block design task was administered per WAIS-IV manual, with scores ranging 0-66 points indicating perceptual reasoning ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 describe standard, well-validated behavioral measures. The SI calculation follows established methods (Schallmo et al., 2018; Tadin et al., 2003). The BDT is a standardized subtest with known psychometric properties. These measures are appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "MRS data were acquired at 7T using STEAM sequence (TE/TM/TR=6/32/7100ms) with VAPOR water suppression and FASTMAP shimming. Data were processed using LCModel with water scaling for absolute quantification. Quality control excluded spectra with Cramer-Rao lower bound >20%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70, C73-C74, C76-C77 describe state-of-the-art MRS methodology. The use of 7T, short TE, and appropriate processing pipeline (LCModel) is rigorous. Quality control criteria (CRLB<20%) are standard. Water T2 correction value (47ms) is appropriately cited. The methods are sufficient for reliable GABA and glutamate quantification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Resting-state fMRI was analyzed using DPABI/SPM12 with standard preprocessing. Seed-based connectivity used left hMT+ coordinates from functional localizer. Mediation analyses used PROCESS v3.4 with age as covariate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 describe appropriate fMRI and statistical analysis methods. The preprocessing pipeline is standard. The use of functionally-defined seed coordinates is rigorous. Mediation analysis with PROCESS is appropriate, and controlling for age is important given its known effects on intelligence. Methods are adequately described for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The introduction establishes theoretical background: general fluid intelligence (gF) shows individual differences, visuo-spatial intelligence is a key high-g-loading component, the neuro-efficiency hypothesis proposes that suppressing irrelevant information leads to efficient processing, and prior work links motion suppression in hMT+ to block design performance. The study uses 7T MRS to measure GABA/glutamate in hMT+ (3D processing) and V1 (2D processing) as control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 appropriately cite prior literature to establish the theoretical framework. The citations appear accurate and relevant. The rationale for studying hMT+ (3D processing, motion suppression) and using V1 as control (2D processing) is sound. The choice of 7T MRS for neurotransmitter quantification is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The discussion contextualizes findings within prior literature on attention gating visual cortex, excitation-inhibition balance underlying suppression, frontal-MT interactions during reasoning and motion tasks, and divisive normalization models. Brief stimulus duration (~100ms) in motion discrimination precludes most top-down attention, though sustained attention predicts performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C47 appropriately integrate findings with prior literature from monkey electrophysiology, human MEG/fMRI, and computational modeling. The citations appear accurate. However, some interpretations are speculative\u2014the relationship between resting-state FC and task-based modulation requires careful interpretation, and the brief stimulus duration argument (C45) may not fully exclude attentional effects given the sustained attention findings cited in the same claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The discussion proposes that hMT+ may be central to the multi-demand (MD) system, which encompasses working memory, mathematics, language, and reasoning. Prior work shows hMT+ function correlates with multiple cognitive domains, and hMT+ represents sensory flows including visual and auditory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C51 propose an interesting extension of the findings to the broader MD system. However, this remains speculative as the current study only examined visuo-spatial intelligence (BDT). The citations to Melnick et al. (2013) and Fedorenko et al. (2013) provide some support, but the claim that hMT+ is 'central' to MD requires additional evidence across multiple cognitive domains. The authors appropriately note this as a direction for future research.",
+    "result_type": "MINOR"
+  }
+]

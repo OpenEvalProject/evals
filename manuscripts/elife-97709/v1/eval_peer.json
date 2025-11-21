@@ -1,0 +1,197 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors generated ~62 \u03bcs of apo \u03b1-synuclein simulations by running 23 separate 1-4 \u03bcs simulations starting from different conformations, claiming these simulations adequately sample the conformational space comparable to the 1500 \u03bcs fasudil-bound simulation based on overlapping Rg distributions and similar structural features.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 explicitly challenges the comparability of these simulation datasets, stating 'these two extremely different simulation datasets (1500 microsecond unbiased MD for a-synuclein + fasudil, 23 separate 1-4 microsecond simulations of apo a-synuclein) are directly comparable for the purposes of building MSMs' is not convincingly demonstrated. The reviewer emphasizes that 'simulations of 1-4 microseconds are almost certainly far too short to see a meaningful sampling of conformational transitions of a highly entangled 140-residue IDP beyond a very local relaxation of the starting structures.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors employed a \u03b2-variational autoencoder (\u03b2-VAE) for dimensionality reduction of conformational data, claiming it performs better than tICA at identifying slower collective variables based on higher VAMP2 scores.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors present VAMP2 score comparisons, Reviewer 3 expresses concern that 'without convincingly demonstrating reasonable statistics of conformational changes from the very small apo simulation dataset analyzed here, it seems highly likely the apparent validity of the apo MSM results from learning a VAE latent space that groups structurally and kinetically distinct conformations into similar states, creating the spurious appearance of transitions between states.' The reviewer questions whether the VAE latent space is kinetically meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C25",
+      "C4"
+    ],
+    "result": "The MSM analysis reveals that \u03b1-synuclein populates 3 metastable states in water but 6 metastable states in the presence of fasudil, indicating that fasudil binding leads to an increase in the number of metastable states through an ensemble-expansion mechanism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 fundamentally challenges the validity of the MSM, stating 'The additional analyses do not demonstrate that there are sufficient conformational transitions among kinetically metastable states observed in 23 separate 1-4 microsecond simulations of apo a-synuclein to build a valid MSM.' The reviewer concludes that 'the kinetics and thermodynamics of the resulting MSM are likely to be relatively meaningless, and comparisons with an MSM for a-synuclein in the presence of fasudil are likely to be meaningless.' The editor summarizes that 'the simulations and analyses in their present form are inadequate.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The authors validated their finding by building an MSM using only 60 \u03bcs of the fasudil trajectory (10-70 \u03bcs segment), which also showed 6 states, arguing this demonstrates the increase in metastable states is due to fasudil interaction rather than longer trajectory length.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 dismisses this validation attempt, stating 'The additional analyses do not convincingly demonstrate that these two extremely different simulation datasets...are directly comparable for the purposes of building MSMs.' The fundamental issue of insufficient conformational transitions in the short apo simulations remains unaddressed by this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C27",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors characterize the structural features of each macrostate using contact maps and secondary structure analysis, validated using a denoising convolutional VAE (DCVAE) that shows distinct patterns among metastable states with high SSIM values.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural characterization methods appear sound, Reviewer 3's fundamental concerns about the validity of the MSM itself cast doubt on whether these macrostates are meaningful. The reviewer notes that 'without convincingly demonstrating reasonable statistics of conformational changes...it seems highly likely the apparent validity of the apo MSM results from learning a VAE latent space that groups structurally and kinetically distinct conformations into similar states.' If the macrostates are artifacts, their structural characterization, while technically executed, may not represent true metastable states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C80",
+      "C26",
+      "C5",
+      "C84"
+    ],
+    "result": "The authors report that fasudil exhibits differential, conformation-dependent interactions with each macrostate of \u03b1-synuclein, with preferential binding to the C-terminal region but also significant interactions with N-terminal and NAC regions depending on the state.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The contact probability analysis itself is a standard method, but Reviewer 3's concerns about the validity of the underlying macrostates make these interaction patterns uncertain. Reviewer 2 notes the authors 'generally do not quantify the results/effects data,' suggesting the interaction differences may not be adequately quantified. If the macrostates are not valid kinetic states, the differential binding patterns may not be meaningful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C6"
+    ],
+    "result": "The authors calculate water entropy for each macrostate and conclude that fasudil has an insignificant impact on water entropy, with values marginally reduced from bulk water but comparable between apo and fasudil-bound systems.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The water entropy calculations use established methods (DoSPT), but the analysis is based on single structures from each macrostate with only 20 ps simulations. Given Reviewer 3's concerns about the validity of the macrostates themselves, and Reviewer 2's comment that the authors 'do not quantify the results/effects data,' the significance of these marginal differences in water entropy is questionable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The authors report that fasudil binding modulates \u03b1-synuclein by tuning protein backbone entropy, with fasudil-bound states showing a broader range of entropy values (-70 to -86 J mol\u207b\u00b9 K\u207b\u00b9) compared to apo states (-72 to -75 J mol\u207b\u00b9 K\u207b\u00b9), with decreased backbone entropy at fasudil binding hotspots in specific states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While the entropy calculation methods are established, Reviewer 3's fundamental critique undermines these conclusions: 'the kinetics and thermodynamics of the resulting MSM are likely to be relatively meaningless.' The entropy analysis depends entirely on the validity of the macrostates, which reviewers question. Reviewer 2 notes the authors 'do not quantify the results/effects data,' and without valid macrostates, the entropy differences and their interpretation as evidence of fasudil-induced modulation are not supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Mean first passage time analysis shows transitions to the most populated state occur on longer timescales for the fasudil system (74-766.5 \u03bcs) compared to apo (29.8-37.4 \u03bcs), with a strong correlation between state entropy and transition times, suggesting fasudil traps conformations and leads to entropy expansion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states that 'any kinetics and thermodynamics modeled by an MSM will be inherently meaningless' if the simulations are too short to see conformational transitions, which is 'likely to be the case with the apo a-synuclein dataset analyzed in this investigation.' The MFPT analysis and its interpretation regarding entropy expansion depend entirely on the validity of the MSM, which reviewers fundamentally question. The editor's summary that 'the simulations and analyses in their present form are inadequate' directly challenges this central conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C128"
+    ],
+    "result": "The authors conclude that their observations conform with the entropy-expansion model, where small molecule interactions promote exploration of new conformations with discernible probability, thereby expanding the conformational entropy of the ensemble.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "This is the central mechanistic conclusion of the paper, but it is directly challenged by the reviewers. Reviewer 3 states that 'comparisons with an MSM for a-synuclein in the presence of fasudil are likely to be meaningless' due to fundamental flaws in the simulation design and analysis. The editor notes 'the results suggest that entropic expansion can explain such binding. However, the simulations and analyses in their present form are inadequate.' Without valid MSMs and thermodynamic analysis, the entropy-expansion mechanism is not supported.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,215 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study analyzed 13,489 UK Biobank participants with prediabetes (defined by HbA1c 5.7-6.4%) at baseline, using NMR-based metabolomics to quantify 168 directly measured metabolic biomarkers spanning lipids, lipoproteins, fatty acids, amino acids, ketone bodies, and glycolysis metabolites. The metabolomics platform demonstrated high reproducibility with CVs below 5% for most biomarkers and absence of batch effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirmed the study design and methodology. Reviewers stated the study was 'well-performed' and used 'current state-of-the-art methods' with data and analyses that 'support the claims.' No concerns were raised about the study population, metabolomics platform, or data quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C63",
+      "C64"
+    ],
+    "result": "Among 13,489 participants with prediabetes (mean age 59.6 years, 45.7% male), 2,525 (18.7%) progressed to diabetes during a median follow-up of 13.6 years. Participants who developed diabetes were more likely to be male, non-White, less educated, more deprived, smokers, have family history of diabetes, comorbidities (CVD, hypertension, dyslipidemia, CLD), and higher BMI, WC, and HC.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these baseline characteristics and outcome data without question. The study was described as using a 'prospective cohort' design, and reviewers affirmed that 'the data and analyses support the claims,' indicating acceptance of the reported demographics and diabetes progression rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "After adjusting for covariates and multiple testing correction, 94 of 168 metabolic biomarkers were significantly associated with incident diabetes risk. Key findings included: VLDL particles (especially larger VLDL) and triglycerides in all lipoprotein subclasses showed strong positive associations; larger HDL particles and their composition showed inverse associations; larger HDL and LDL particle sizes were protective while larger VLDL size increased risk; monounsaturated and saturated fatty acids were positively associated while docosahexaenoic acid and fatty acid unsaturation were protective; among amino acids, alanine, tyrosine, and BCAAs (leucine, valine) increased risk while glutamine and glycine were protective; ketone bodies showed no association.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly stated the 'findings are convincing' and that the study successfully 'assessed the value of nuclear magnetic resonance measured metabolites as predictors of progression to diabetes.' The comprehensive metabolite associations were accepted as part of the core findings without any critique or request for additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "From the 94 significantly associated metabolites, priority-Lasso selected 17 metabolites, and the intersection of top 20 important predictors from three machine-learning algorithms (SVM, XGBoost, RF) identified 9 key metabolites: cholesteryl esters in large HDL, cholesteryl esters in medium VLDL, triglycerides in very large VLDL, average diameter for LDL particles, triglycerides in IDL, glycine, tyrosine, glucose, and docosahexaenoic acid.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirmed that the study 'combines prospective cohort, metabolomics and machine learning to identify a panel of nine circulating metabolites' and described this as using 'current state-of-the-art methods.' The machine learning approach to metabolite selection was accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C65"
+    ],
+    "result": "The CPH and RSF models built on 9 selected metabolites and 10 clinical variables showed no obvious difference in AUROC performance (CPH: 1-year 0.823, 5-year 0.830, 10-year 0.801; RSF: 1-year 0.828, 5-year 0.820, 10-year 0.802). The CPH model was chosen as the final model due to its simplicity and interpretability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers stated the study used 'current state-of-the-art methods' and that 'the data and analyses support the claims.' The model comparison and selection of CPH over RSF was not questioned, indicating acceptance of this methodological choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C75"
+    ],
+    "result": "Adding the 9 selected metabolites to the basic model with conventional clinical variables significantly improved diabetes risk prediction across all time points. AUROC increased from 0.759 to 0.823 (1-year), 0.798 to 0.830 (5-year), and 0.776 to 0.801 (10-year), all p<0.05. Continuous NRI and absolute IDI also demonstrated significant improvement in risk prediction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirmed this core finding. They stated the metabolites 'improved the ability in risk prediction of progression from prediabetes to diabetes' and that the findings are 'convincing' with data and analyses that 'support the claims.' This represents the primary conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Model calibration was not significantly improved with the addition of metabolites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about this limitation. They affirmed the overall findings were 'convincing' despite the lack of calibration improvement, suggesting they accepted this as a minor limitation that did not undermine the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C84"
+    ],
+    "result": "Decision curve analysis showed that including metabolites provided higher net benefit across threshold probabilities of 0-0.35 for 5-year and 0-0.55 for 10-year diabetes risk prediction, indicating increased clinical value and potential benefit for guiding management in individuals with prediabetes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirmed the study 'provides insights into the integration of these metabolites into clinical and public health practice,' indicating acceptance of the clinical utility findings. The DCA results supporting clinical value were not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C76"
+    ],
+    "result": "Risk stratification based on predicted values revealed distinct cumulative diabetes risk. High-risk participants had significantly higher cumulative risk than low-risk (log-rank p<0.0001), with similar patterns when stratified into tertiles (low/medium/high risk groups). Results remained consistent when accounting for competing risk from death (Fine-Gray p<0.0001). Predicted risk at 1, 5, and 10 years was significantly higher among participants who progressed to diabetes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers stated that 'categorization of participants according to the predicted value thresholds revealed distinct cumulative risk of diabetes' and affirmed this as part of the convincing findings. The risk stratification capability was accepted as demonstrating clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C68"
+    ],
+    "result": "The value of selected metabolic biomarkers was confirmed in participants with normoglycemia, with AUROC improvements from 0.821 to 0.868 (1-year), 0.790 to 0.811 (5-year), and 0.791 to 0.806 (10-year) after adding metabolites to the basic model.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not specifically comment on this secondary analysis, but their overall statement that 'the data and analyses support the claims' and that findings are 'convincing' indicates acceptance of this supporting evidence for broader applicability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C77",
+      "C78",
+      "C85"
+    ],
+    "result": "The study concludes that integrating metabolite markers with conventional risk factors is a promising approach for advancing effective screening strategies and precise interventions for high-risk prediabetes individuals. Early detection would advance targeted screening, health management, interventions, and rational allocation of medical resources. Even modest improvements in prediction have substantial clinical and public health implications given the epidemic proportion of prediabetes worldwide.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly endorsed these conclusions, stating the findings 'provide insights into the integration of these metabolites into clinical and public health practice' and that the study supports 'use of the metabolite markers to help determine individuals with prediabetes who are at high risk' and 'provide a new approach to identifying those at high risk of developing diabetes.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C69"
+    ],
+    "result": "The NMR-based metabolome profiling platform provides consistent results over time and across spectrometers with minimal sample preparation, resulting in highly repeatable measurements. The platform offers relatively lower costs and better reproducibility. Non-fasting samples were used, but fasting duration accounts for only a small proportion of variation in metabolite concentrations, so the impact on findings would be minor.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirmed the study used 'current state-of-the-art methods' and described it as 'well-performed,' indicating acceptance of the metabolomics platform and methodological choices including use of non-fasting samples. No concerns were raised about these technical aspects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "The final model exhibited relatively high performance for 1-, 5-, and 10-year diabetes risk prediction with stable performance across short- and long-term timeframes, indicating the validity of single measurements of metabolic biomarkers for risk prediction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers stated the findings are 'convincing' and that 'the data and analyses support the claims,' which encompasses acceptance of the model's performance characteristics. The stable long-term prediction capability was not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Study limitations include: the Nightingale platform primarily focused on lipids and lipoprotein sub-fractions (other metabolites warrant further research with untargeted metabolomics); some undiagnosed diabetes cases may have been missed, which would underestimate observed associations; participants were mostly White, which may limit generalizability to other populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise additional concerns beyond those acknowledged by the authors. Their statement that the study is 'well-performed' and findings are 'convincing' suggests they found the acknowledged limitations acceptable and not undermining the main conclusions.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "A 7-day oral toxicology study in rats demonstrated that JNK-IN-5A at doses up to 300 mg/kg/day was well tolerated, with no significant changes in body weight or hematological parameters, though higher doses decreased sodium levels in females and elevated phosphate in both sexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 collectively demonstrate acceptable tolerability of JNK-IN-5A in the acute toxicity study. The data show no major adverse effects on body weight or hematology, with only minor electrolyte changes at higher doses. Sample sizes (n=3/sex/group) are small but adequate for preliminary toxicology screening.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C4",
+      "C5"
+    ],
+    "result": "JNK-IN-5A treatment significantly reduced plasma triglycerides, AST, and LDH levels in rats consuming sucrose-sweetened water, with the lower dose (JNK_D1, 30 mg/kg/day) showing the most consistent effects across all biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 and C4-C5 are well-supported by plasma biochemistry data with appropriate statistical testing (p<0.05 thresholds). The dose-response relationship is documented, though JNK_D1 appears more effective than JNK_D2 for some parameters. Sample sizes (n=11/group) are adequate for detecting these effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "JNK-IN-5A-treated rats exhibited no evidence of anxiety or behavioral disorders based on passive avoidance, locomotor activity, and elevated plus maze tests.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by multiple behavioral assays showing no significant differences between treatment groups. This addresses an important safety concern given JNK3's expression in the brain. However, the manuscript does not provide detailed statistical results for these behavioral tests in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "JNK isoforms show tissue-specific expression patterns, with Mapk8 and Mapk9 highly expressed across liver, vWAT, skeletal muscle, and brain, while Mapk10 is brain-specific. JNK_D1 treatment significantly reduced JNK1 expression in liver and both JNK1 and JNK2 expression in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 are supported by RNA-seq data with appropriate statistical testing (adjusted p-values provided). The tissue-specific expression patterns align with known biology (C17). The finding that JNK-IN-5A affects gene expression of JNK isoforms is notable, though the mechanism is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Plasma triglyceride levels are significantly correlated with JNK2 gene expression in skeletal muscle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by correlation analysis shown in Figure 2d-e. This finding suggests a potential mechanistic link between skeletal muscle JNK2 and systemic lipid metabolism, though causality cannot be inferred from correlation alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C6",
+      "C7",
+      "C52"
+    ],
+    "result": "Sucrose consumption induced extensive transcriptional changes primarily in liver (2771 DEGs, 14%) and vWAT (2724 DEGs, 13.8%), affecting fatty acid and oxidative metabolism pathways. JNK_D1 treatment largely corrected these gene expression profiles toward healthy control patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C6-C7, and C52 are well-supported by comprehensive transcriptomic analysis with appropriate statistical thresholds (adjusted p<0.01). PCA analysis demonstrates clear separation and correction of expression profiles. The pathway enrichment analysis provides mechanistic insights into metabolic dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C8",
+      "C56"
+    ],
+    "result": "JNK_D1 treatment reversed a substantial proportion of sucrose-induced transcriptional changes in liver (60.7% of upregulated, 22% of downregulated genes) and vWAT (42.2% and 31.4%), particularly affecting pathways related to carbon metabolism, fatty acid metabolism, protein processing, and oxidative phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43, C8, and C56 are strongly supported by differential expression analysis with hypergeometric testing showing highly significant overlaps (p\u22480). The pathway enrichment analysis identifies specific metabolic processes affected. The asymmetry in reversal percentages between up- and down-regulated genes is interesting but not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C9"
+    ],
+    "result": "Skeletal muscle exhibited minimal transcriptional response to sucrose consumption, with only 257 DEGs (1.3%) compared to extensive changes in liver and adipose tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44 and C9 are supported by differential expression analysis and PCA showing minimal variance in skeletal muscle in response to sucrose. This tissue-specific response pattern is well-documented and contrasts sharply with liver and adipose tissue responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C10",
+      "C47",
+      "C48",
+      "C57"
+    ],
+    "result": "JNK_D1 treatment induced substantial transcriptional changes in skeletal muscle (4159 DEGs, 20.9%), with upregulated genes enriched in immune-related pathways (hematopoietic cell lineage, osteoclast differentiation, chemokine signaling) and downregulated genes involved in oxidative phosphorylation, thermogenesis, TCA cycle, and insulin signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48, C10, and C57 are well-supported by comprehensive transcriptomic analysis. The finding that 97-99% of DEGs are treatment-specific (not sucrose-responsive) is striking. However, the biological interpretation of immune pathway upregulation in skeletal muscle requires further investigation, as acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C58"
+    ],
+    "result": "Transcriptional changes in JNK_D1-treated skeletal muscle showed strong correlations with changes in liver, vWAT, and brain (86%, 69% concordance respectively), with shared DEGs involved in cholesterol metabolism, bile acid biosynthesis, and energy homeostasis, suggesting coordinated inter-tissue metabolic adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 and C58 are supported by correlation analysis of log2FC values across tissues. The high Spearman correlations (0.78, 0.54) and functional annotation of shared genes provide evidence for inter-tissue coordination. However, the mechanistic basis for this coordination remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C53"
+    ],
+    "result": "Sucrose consumption downregulated genes related to fatty acid metabolism and uptake in adipose tissue, showing opposite regulation compared to liver, consistent with the known phenomenon that chronic overnutrition downregulates adipose lipogenesis leading to ectopic lipid accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by differential expression analysis showing tissue-specific patterns. Claim C53 provides literature context (Jeon et al., 2023) supporting the interpretation. The complementary regulation between liver and adipose tissue is well-documented in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Genome-scale metabolic modeling predicted that sucrose consumption altered 2840 and 4170 metabolic reactions in liver and vWAT respectively, with 89.2% and 88.3% of these reactions reversed by JNK_D1 treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by Compass metabolic modeling analysis with appropriate statistical testing (Wilcoxon test, adjusted p<0.05). The high reversal percentages align with transcriptomic findings. However, the validation of these computational predictions with metabolomic data would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Gene co-expression network analysis revealed that Mapk9 is a member of skeletal muscle module SkM.M0, which shows significant correlations with liver module Liver.M0 (R=0.67, padj=0.006) and vWAT module vWAT.M3 (R=0.58, padj=0.03), suggesting JNK-mediated inter-tissue metabolic coordination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by co-expression network analysis with appropriate statistical testing. The presence of Mapk9 in a module that correlates across tissues provides mechanistic insight into JNK's role in inter-tissue communication. The correlation coefficients are moderate but statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11"
+    ],
+    "result": "Extrahepatic metabolism, particularly in adipose tissue and skeletal muscle, plays a critical role in the development of diet-induced steatosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C11 is supported by the comprehensive multi-tissue transcriptomic analysis showing substantial changes in adipose tissue and skeletal muscle, inter-tissue correlations, and the reversal of metabolic dysfunction through JNK inhibition affecting multiple tissues. This represents a key conceptual conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C65",
+      "C66"
+    ],
+    "result": "Background claims establishing the context for MAFLD, sucrose consumption, JNK pathway biology, and prior evidence for JNK inhibition as a therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C12-C21, C59-C62, C65-C66) represent background knowledge and literature citations that provide context for the study. They are appropriately cited and represent established knowledge in the field. These are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "A total of 19,780 protein-coding genes in the rat genome were analyzed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is a methodological statement about the scope of the transcriptomic analysis. This is appropriately documented and represents standard practice for RNA-seq analysis.",
+    "result_type": "MINOR"
+  }
+]

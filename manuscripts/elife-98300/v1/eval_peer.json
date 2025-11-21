@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37"
+    ],
+    "result": "Deep learning-based variant callers (Clair3 and DeepVariant) significantly outperform traditional methods and exceed Illumina accuracy when applied to ONT's super-high accuracy (sup) basecalling model, achieving SNP F1 scores of 99.99% and indel F1 scores of 99.53-99.61% for sup simplex data, compared to Illumina's median best SNP and indel F1 scores of 99.45% and 95.76%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this finding. The editor states the work 'shows how a combination of the latest generation of Oxford Nanopore Technology long reads with state-of-the art variant callers enables bacterial variant discovery at an accuracy that matches or exceeds the current \"gold standard\" with short reads.' Reviewer 1 describes 'compelling data showing ONT superiority when using deep learning-based variant callers, such as Clair3, compared to Illumina sequencing.' Reviewer 2 confirms 'superior performance of deep learning over conventional variant callers when Nanopore reads were basecalled with the most accurate...model, even exceeding Illumina in some cases.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C95"
+    ],
+    "result": "ONT's superior performance is attributed to its ability to overcome Illumina's errors in repetitive and variant-dense genomic regions. Illumina shows a bimodal distribution of variant density for false negatives with a peak at 20 variants per 100 bp, and its F1 score increases from 99.3% to 99.7% when repetitive regions are masked, while Clair3 shows only a 0.003% increase, indicating ONT reads can align in regions where Illumina reads struggle.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly confirms this finding, stating the authors 'identified lower recall with Illumina short read data, particularly from repetitive regions and regions with high variant density, as the driver' of ONT's surprisingly higher performance. The editor notes the evidence 'supports the claims of the authors convincingly.' No reviewer challenges this mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C67",
+      "C96"
+    ],
+    "result": "The use of high-performing variant callers with ONT's super-high accuracy data mitigates ONT's traditional errors in homopolymers. While the fast model often miscalculates homopolymer lengths by 1-2 bp, the sup model significantly reduced false indel calls, matching Illumina's error profile, with only 8 false indel calls by Clair3 on sup data (5 homopolymers).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'The authors provide evidence that homopolymeric regions, a systematic and problematic issue with ONT data, are no longer a concern in ONT sequencing.' Reviewer 2 confirms 'Combining the most accurate Nanopore basecalling method with a deep learning variant caller resulted in low error rates in homopolymer regions, similar to Illumina data. This is remarkable, as homopolymer regions are (or, were) traditionally challenging for Nanopore sequencing.' No concerns are raised about this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "10\u00d7 depth of ONT super-accuracy simplex or duplex hac/sup data can achieve precision and recall comparable to or better than full-depth Illumina sequencing. At 5\u00d7 depth, F1 scores are generally lower than Illumina, though SNP precision remains above Illumina with duplex reads for most methods. The authors recommend a minimum of 25\u00d7 depth for optimal clinical and public health applications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly confirms 'Hall et al. provided useful information on the required Nanopore read depth, which is surprisingly low' and notes the authors 'show that high accuracy is achievable at reduced read depths of 10\u00d7.' Reviewer 1 states the authors 'provide recommendations for read sequencing depth.' The editor affirms 'the evidence as it is supports the claims of the authors convincingly.' No reviewer challenges these depth recommendations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C66"
+    ],
+    "result": "ONT R10.4.1 pore with different basecalling models achieved varying read accuracies: duplex sup had the highest median read identity of 99.93% (Q32), followed by duplex hac (99.79%, Q27), simplex sup (99.26%, Q21), simplex hac (98.31%, Q18), and simplex fast (94.09%, Q12), with read accuracies greater than 99.0% (Q20) and 99.9% (Q30) for simplex and duplex reads, respectively.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 implicitly accepts these basecalling accuracy measurements as foundational data for the study, noting the comparison between different basecalling models throughout. No reviewer questions these read accuracy measurements. The editor's statement that 'the evidence as it is supports the claims of the authors convincingly' encompasses these technical measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Traditional variant callers (Longshot, BCFtools, and FreeBayes) match or slightly exceed Illumina for SNP calls with hac and sup data. FreeBayes matches Illumina for indel calls, but BCFtools shows reduced indel accuracy across all models and read types. Fast model ONT data has lower F1 scores than Illumina, only achieving parity in the best case for SNPs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 confirms the overall pattern, noting 'Not surprisingly, Nanopore underperformed compared to Illumina when basecalled with the fastest (but computationally much less demanding) method with the lowest accuracy.' The comparative performance of traditional callers is implicitly accepted as part of the comprehensive benchmarking that reviewers praise. No specific concerns are raised about these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Computational resource requirements vary across variant callers: DeepVariant was the slowest (median 5.7 s/Mbp) and most memory-intensive (median 8 GB), while Clair3 had a median memory usage of 1.6 GB and runtime of 0.86 s/Mbp. Most methods run in less than 40 min and use less than 8 GB of memory. Basecalling with a single GPU using the super-accuracy model required a median runtime of 0.77 s/Mbp.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledges this contribution, stating 'To comprehensively guide users through the computational resources required for basecalling and variant calling, the authors provide runtime benchmarks assuming GPU access.' Reviewer 1 notes the authors 'provide recommendations for...computational requirements when performing variant calling.' No concerns are raised about these measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study developed a novel strategy for generating benchmark variant truthsets by projecting variations from donor genomes (selected at ~99.5% ANI) onto gold standard reference genomes, creating biologically realistic distributions of SNPs and indels. Ground truth reference assemblies were generated for each sample using ONT and Illumina reads.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 describes the methodology approvingly: 'To establish a common ground for comparison, the authors first generated a variant truthset for each sample and then projected this set to the reference sequence of the sample to obtain a mutated reference.' The editor states 'the evidence as it is supports the claims of the authors convincingly.' No methodological concerns are raised about the truthset generation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The study has three acknowledged limitations: (1) only small variants were assessed, ignoring structural variants; (2) a diverse range of ANI values was not used for selecting variant donor genomes; (3) Illumina sequencing was performed on different models (NextSeq 500 for three samples, NextSeq 2000 for the rest).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly identifies the first limitation as 'a major limitation of the current manuscript,' stating 'The authors did not investigate large structural variation' and noting 'It will be very interesting to see a follow-up study covering this much more challenging type of variation.' The editor notes 'the inclusion of a larger number of reference genomes would have enabled an even more fine-grained analysis,' addressing the second limitation. Reviewer 1 mentions 'The study is limited in the number of samples included,' which relates to the scope limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C18",
+      "C20",
+      "C21",
+      "C27",
+      "C28"
+    ],
+    "result": "The study analyzed 14 samples from different bacterial species spanning a wide range of GC content (30-66%) with varying SNP counts (2102-57887) but consistent indel numbers. The same DNA extractions were used for both Illumina and ONT sequencing. Seven variant callers were benchmarked on ONT data, with Illumina data called using Snippy for comparison.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes 'The study is limited in the number of samples included, even though it covers different species with divergent genome sequences, likely covering major evolutionary changes,' which acknowledges the sample diversity while suggesting more would be beneficial. Reviewer 2 describes the study as 'comprehensive' in its comparison. The editor states 'the evidence as it is supports the claims of the authors convincingly.' The experimental design is accepted by all reviewers.",
+    "result_type": "MINOR"
+  }
+]

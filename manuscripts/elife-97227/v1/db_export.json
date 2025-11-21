@@ -1,0 +1,2524 @@
+{
+  "submission": {
+    "id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:59:15.170395Z",
+    "updated_at": "2025-11-21T20:59:15.170395Z"
+  },
+  "content": [
+    {
+      "id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "content_type": "manuscript",
+      "content_text": "# CTFFIND5 provides improved insight into quality, tilt, and thickness of TEM samples\n\n## Authors\n\n- Johannes Elferich<sup>1</sup> ([ORCID: 0000-0002-9911-706X](https://orcid.org/0000-0002-9911-706X)) \u2020\n- Lingli Kong<sup>1</sup> ([ORCID: 0000-0002-5808-2649](https://orcid.org/0000-0002-5808-2649))\n- Ximena Zottig<sup>1</sup> ([ORCID: 0000-0002-2344-5163](https://orcid.org/0000-0002-2344-5163))\n- Nikolaus Grigorieff<sup>1</sup> ([ORCID: 0000-0002-1506-909X](https://orcid.org/0000-0002-1506-909X)) \u2020\n\n### Affiliations\n\n1. RNA Therapeutics Institute, University of Massachusetts Chan Medical School Worcester United States ([ROR:0464eyp60](https://ror.org/0464eyp60))\n2. Howard Hughes Medical Institute, University of Massachusetts Chan Medical School Worcester United States ([ROR:006w34k90](https://ror.org/006w34k90))\n\n\u2020 Corresponding author\n\n## Abstract\n\nImages taken by transmission electron microscopes are usually affected by lens aberrations and image defocus, among other factors. These distortions can be modeled in reciprocal space using the contrast transfer function (CTF). Accurate estimation and correction of the CTF is essential for restoring the high-resolution signal in cryogenic electron microscopy (cryoEM). Previously, we described the implementation of algorithms for this task in the cisTEM software package (Grant et al., 2018). Here we show that taking sample characteristics, such as thickness and tilt, into account can improve CTF estimation. This is particularly important when imaging cellular samples, where measurement of sample thickness and geometry derived from accurate modeling of the Thon ring pattern helps judging the quality of the sample. This improved CTF estimation has been implemented in CTFFIND5, a new version of the cisTEM program CTFFIND. We evaluated the accuracy of these estimates using images of tilted aquaporin crystals and eukaryotic cells thinned by focused ion beam milling. We estimate that with micrographs of sufficient quality CTFFIND5 can measure sample tilt with an accuracy of 3\u00b0 and sample thickness with an accuracy of 5 nm.\n\n## Introduction\n\nTransmission electron microscopy of biological specimens at cryogenic temperatures (cryoEM) has become a widely used method to image biomolecules at high resolution, both in solution and within the cell. To retrieve the high-resolution signal, the cryoEM images have to be corrected for the contrast transfer function (CTF) of the microscope. Common parameters used to describe the CTF include an astigmatic defocus, the spherical aberration of the objective lens, and if appropriate, a phase shift introduced by a phase plate. The defocus and phase shift parameters are commonly estimated by fitting the Thon ring pattern (Thon, 1971) in the power spectrum of micrographs to a modeled power spectrum. The program CTFFIND4 (Rohou and Grigorieff, 2015) has been developed for this task and the model and conventions to describe the CTF are widely adopted in the field.\n\nA limitation of CTFFIND4 is that it considers the whole imaged sample to be at the same objective defocus, which is a reasonable assumption for flat and thin samples, as is common in single-particle cryoEM. However, the increased thickness of cryoEM samples of cells may introduce additional modulations in the Thon ring pattern (Tichelaar et al., 2020) that can lead to errors in the CTF modeling when not accounted for. Furthermore, samples of cells are often tilted with respect to the optical axis of the microscope, either unintentionally due to thinning methods such as cryogenic focused ion beam (FIB) milling, or intentionally during electron cryo-tomography imaging. In both cases the effects are strongest at high resolution, where the Thon rings are more tightly spaced.\n\nHere, we describe new features of CTFFIND5 that can fit the modulations of the Thon ring patterns and determine sample thickness and tilt using an extended CTF model with additional parameters. This not only increases the fidelity of the fit, as Thon rings at higher resolution can now be fitted reliably, but also gives valuable insight into the geometry of the sample that can aid the experimentalist.\n\n## Methods\n\n### Tilt estimation algorithm\n\nTilt estimation in CTFFIND5 follows a strategy that is similar to the implementation in CTFTILT (Mindell and Grigorieff, 2003). The tilt axis direction $\u03d5$ and tilt angle $\\theta$ are determined by fitting Thon ring patterns locally, calculated from 128\u00d7128 pixel tiles that form a regular grid covering the micrograph (Figure 1a). In this model, $\u03d5$ has a positive value ranging from 0\u00b0 to 360\u00b0 and describes the angle of the tilt axis to the x-axis of the micrograph in the counterclockwise direction. The tilt angle $\\theta$ has positive values ranging from 0\u00b0 to 90\u00b0 and describes the rotation of the sample around the tilt axis in a counterclockwise direction. It is assumed that the defocus variation across the sample can be described by a tilted plane. Fits are evaluated using correlation coefficients between modeled CTFs and Thon ring patterns. Initially, the micrograph pixel size is adjusted (binned) by Fourier cropping to match the resolution limit of the fit set by the user and the micrograph is cropped to be square in order to speed up computation. A power spectrum is calculated from this binned and cropped image, a smooth background is calculated using a box convolution (Mindell and Grigorieff, 2003) and subtracted, the power spectrum is further binned to the tile size (128\u00d7128 pixels), and the fit of the tilted Thon ring patterns across the micrograph is initialized by fitting this highly binned power spectrum with a non-astigmatic CTF. This fit is then refined using a two-dimensional CTF with astigmatism. Rough values for the tilt axis and angle are then determined in a systematic search in 10\u00b0 and 5\u00b0 steps, respectively, using the locally fitted Thon ring patterns to score each pair of tilt axis and angle, followed by local refinement of tilt axis, angle, and average defocus.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig1-v1.jpg)\n\n**Figure 1.:** (a) Power spectra are calculated in 128\u00d7128 pixel patches as indicated on a representative micrograph. The dots represent the locations of the patches and the box indicates patch size. (b) A model of the expected power spectrum in each patch given an average defocus $\u0394f$, tilt angle $\\theta$, and tilt axis $\u03d5$ is compared to the actual power spectra of tiles. After an optimal set of $\\theta$ and $\u03d5$ has been found a corrected power spectrum is calculated by summing the tile power spectra, scaled to correct for the defocus difference. Power spectra shown are an exaggerated example. The convention of $\u03d5$ as a counterclockwise rotation from the x-axis is indicated. (c) Comparison of the original power spectrum (EPA, solid line, blue) to the tilt-corrected power spectrum (solid line, black). The tilt-corrected power spectrum exhibits clear peaks at higher spatial resolution than the uncorrected power spectrum, as evident by the 'goodness-of-fit' scores (dashed lines). The estimated contrast transfer function (CTF) parameters are $\u0394f_{1}=10603\u00c5,\u0394f_{2}=10193\u00c5,\\alpha=85.9^{\u2218}$ for the uncorrected power spectrum and $\u0394f_{1}=10492\u00c5,\u0394f_{2}=10342\u00c5,\\alpha=81.2^{\u2218},\\theta=12.3^{\u2218},\u03d5=261.6^{\u2218}$ for the tilt-corrected power spectrum. The fit resolution is 5.9 \u00c5 for the uncorrected power spectrum (dashed line, blue) and 4.6 \u00c5 for the tilt-corrected spectrum (dashed line, black).\n\nFinally, an average tilt-corrected power spectrum at a tile size requested by the user (usually 512\u00d7512 pixels) is calculated for diagnostic purposes and for further refinement of CTF parameters. The tilt correction is designed to remove most of the Thon ring blurring due to the defocus variation across the image. To minimize ring blurring, the power spectrum from each tile is adjusted according to its local average defocus, $\u0394f_{average}$, by magnifying it by a factor $m$ with\n\n$$\nm=\\sqrt{\u0394f_{local}/\u0394f_{average}}\n$$\n\nSince $\u0394f_{local}$ will assume values across the image that are both smaller and larger than $\u0394f_{average}$, $m$ will assume values smaller and larger than 1. The magnification/demagnification of the power spectrum compensates for the contraction/expansion of the Thon rings due to the local defocus change and produces approximately constant Thon ring patterns that can be averaged without losing the pattern (Figure 1b). The compensation will have a small error if the spherical aberration is not zero. However, this error is sufficiently small to not visibly affect the Thon rings in the average (Figure 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig2-v1.jpg)\n\n**Figure 2.:** (a) Estimated tilt angle and axis of 40 micrographs of a tilt series taken on a focused ion beam (FIB)-milled biological specimen. For each image the tilt angle (dots, top plot) and tilt axis direction (crosses, second plot) are plotted as a function of the nominal stage angle. The data were fitted to a model of the specimen tilt and constant stage tilt axis before tilting the stage (red dashed line in first and second plot). The estimated stage tilt axis has an angle of 178.2\u00b0 and the estimated specimen pre-tilt is 20.6\u00b0 with a tilt axis of 171.8\u00b0, which is consistent with the FIB-milling angle of 20\u00b0 and manual alignment of the milling direction to the goniometer tilt axis. The third plot shows the fit residuals for tilt angle and axis are plotted. The fourth and fifth plots show a plot of the estimated defocus value and fit resolution for each tilt image, as derived from CTFFIND4 (red) or CTFFIND5 (black). (b) Data for another tilt series plotted as described for (a). The estimated stage tilt axis is 179.8\u00b0, the estimated specimen pre-tilt is \u201321.9\u00b0 with a tilt axis of 183.8\u00b0. This is consistent with this grid being inserted in the opposite orientation as the grid shown in (a), but still with a rough alignment of milling direction and tilt axis.\n\n### Verification of tilt estimation using tilted aquaporin crystals\n\nTo test the robustness and accuracy of the new fitting algorithm, the defocus and sample tilts of aquaporin 2D crystals (Murata et al., 2000) were estimated using a search range from 5000 \u00c5 to 50000 \u00c5 and a 100 \u00c5 step, low- and high-resolution limits of 30 \u00c5 to 5 \u00c5, respectively, and a box size for the final power spectrum of 512 pixels. The estimated tilt angle $\\theta$ and axis direction $\u03d5$ were compared with the values obtained by 2D crystallographic processing (Mindell and Grigorieff, 2003).\n\n### Verification of tilt estimation using tilt series\n\nLamellae prepared from ER-HoxB8 cells were imaged using a Titan Krios 300 keV TEM controlled by SerialEM (Mastronarde, 2005). For each dataset, an initial exposure was taken with a magnification of 64,000, resulting in a pixel size of 1.6 \u00c5 and an exposure of 30 e-/\u00c52. This was followed by the acquisition of a tilt series at a magnification of 48,000, resulting in a pixel size of 2.087 \u00c5. A total of 35 tilt images at a tilt interval of 3\u00b0 were collected from \u201351\u00b0 to 51\u00b0, relative to the milling angle, using a grouped dose-symmetric scheme (Hagen et al., 2017). The exposure per tilt was 3 e-/\u00c52, resulting in a total exposure of 105 e-/\u00c52.\n\nLamellae prepared by FIB milling usually exhibit a pre-tilt with respect to the grid surface due to the stage tilt in the FIB instrument. In the microscope, the direction of this pre-tilt will generally not line up with the goniometer tilt axis. For the alignment of a tomogram recorded from such a lamella, the relative orientation of these two axes will have to be determined, together with the precise amount of pre-tilt. We wrote a new cisTEM (Grant et al., 2018) program, called fit_tilt_model, to read the tilt angles and axes determined for each image in a tomographic tilt series and fit them to a model incorporating a pre-tilt and a single tomographic tilt axis. Using a rotation matrix $R_{0}$ to represent the pre-tilt and rotation matrices $R_{tom}^{i}$ to represent the tomographic tilt angles and axis read from the microscope, the overall sample orientations are given by\n\n$$\nR^{i}=R_{tom}^{i}\\timesR_{0}\n$$\n\n$R_{0}$ and $R_{tom}^{i}$ are calculated from the tilt angles $\\theta$ and axes $\u03d5$ as\n\n$$\nR=[cos\u2061(\u03d5)^{2}+sin\u2061(\u03d5)^{2}cos\u2061(\\theta)cos\u2061(\u03d5)sin\u2061(\u03d5)(1\u2212cos\u2061(\\theta))sin\u2061(\u03d5)sin\u2061(\\theta)cos\u2061(\u03d5)sin\u2061(\u03d5)(1\u2212cos\u2061(\\theta))cos\u2061(\u03d5)^{2}cos\u2061(\\theta)+sin\u2061(\u03d5)^{2}\u2212cos\u2061(\u03d5)sin\u2061(\\theta)\u2212sin\u2061(\u03d5)sin\u2061(\\theta)cos\u2061(\u03d5)sin\u2061(\\theta)cos\u2061(\\theta)]\n$$\n\nUsing the tilt information obtained with CTFFIND5, we now have a set of rotation matrices $R^{i}$, and together with the rotation matrices read from the microscope, $R_{tom}^{i}$, we can calculate a set of pre-tilt estimates $R_{0}^{i}$ from Equation 2. To determine the best overall pre-tilt $R_{0}$, we determine the plane-normal vectors $V_{norm}^{i}=[x,y,z]^{T}$ of the sample by applying $R_{0}^{i}$ to the vector $[0,0,1]^{T}$ (z-coordinate along the beam direction), followed by calculating their mean $V_{norm}^{mean}=[x_{o},y_{0},z_{0}]^{T}$ as the normal vector of the best overall pre-tilt estimate. By calculating the root mean squared deviation of the normal vectors $V_{norm}^{i}$, outliers can be identified and excluded to further refine $V_{norm}^{mean}$. The pre-tilt can then be determined as:\n\n$$\n\\theta_{0}={cos^{\u22121}\u2061(z_{0})x_{0}\\geq0\u2212cos^{\u22121}\u2061(z_{0})x_{0}<0\u03d5_{0}={tan^{\u22121}\u2061(\u2212\\frac{x_{0}}{y_{0}})y_{0}\\neq0,\u03d5_{0}\\in[0^{\u2218},180^{\u2218}]90^{\u2218}y_{0}=0\n$$\n\nTo generate more reliable defocus and tilt estimates, the defocus search range and resolution fitting range can be adjusted according to the experimental tilt range and image quality. For our cryoEM samples, the low- and high-resolution limits were set to 50 \u00c5 to 10 \u00c5, respectively, and the defocus search interval was set to be between \u00b110,000 and \u00b120,000 \u00c5 from the nominal defocus set during data collection.\n\n### Sample thickness estimation\n\nIn CTFFIND5 we implemented a new $CTF_{t}$ model function, based on the $CTF$ function implemented in CTFFIND4 (Rohou and Grigorieff, 2015) and extended by the formula described by McMullan et al., 2015:\n\n$$\nCTF_{t}(\\lambda,g,\u0394f,C_{s},\u0394\\phi,\\omega_{2},t)=\\frac{1}{2}(1\u2212sinc(\u03be(\\lambda,g,t))cos(2\u03c7(\\lambda,|g|,\u0394f,C_{s},\u0394\\phi,\\omega_{2})))\n$$\n\nwhere $\u03c7$ denotes the phase shift as a function of the electron wavelength $\\lambda$, the spatial frequency vector $g$, the objective defocus $\u0394f$, the spherical aberration $C_{s}$, the additional phase shift $\u0394\\phi$, and the fraction of amplitude contrast $\\omega_{2}$. The modulation of the CTF due to sample thickness $t$ is described by the function $sinc\u03be$ with $\u03be$ defined as:\n\n$$\n\u03be(\\lambda,g,t)=\\pi\\lambdag^{2}t\n$$\n\nThis sinc modulation envelope (Figure 3a) attenuates the amplitude of the Thon rings with increasing spatial frequencies and produces nodes where the apparent amplitude is zero (Tichelaar et al., 2020). After the first node the Thon rings appear 'inverted' compared to the CTFFIND4 CTF model, with maxima in the Thon rings appearing where the CTF model is 0. This causes the quality of fit indicator to rapidly decrease at the first node in CTFFIND4. The location of the first node is marked with a # in Figure 3a.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig3-v1.jpg)\n\n**Figure 3.:** (a) Comparison of the contrast transfer function (CTF) model used in CTFFIND4, and after applying the modulation function (right) described by McMullan et al., 2015. A star symbol (*) denotes the position of the first zero in the CTF and a pound symbol (#) denotes the position of the first node. (b\u2013d) Representative examples of Thon ring fitting in micrographs without (top-left graph) and with (bottom-left graph) thickness estimation. The micrograph is shown to the right. Each graph shows that equiphase averaging (EPA) of the power spectrum in solid black lines, the fitted CTF model in dashed red lines, and the goodness of fit indicator as a dotted blue lines. (b) Thon ring fitting of a micrograph taken from a focused ion beam (FIB) milling-derived lamella. The tilt of the specimen was estimated to be 12.3\u00b0. When fitting without thickness estimation the estimated parameters were $\u0394f_{1}=10492\u00c5,\u0394f_{2}=10342\u00c5,\\alpha=81.2^{\u2218}$. When taking sample thickness into account the estimated parameters were $\u0394f_{1}=10481\u00c5,\u0394f_{2}=10286\u00c5,\\alpha=69.6^{\u2218},t=969\u00c5$. The estimated fit resolution was $4.6\u00c5$ and $3.4\u00c5$ without and with sample thickness estimation, respectively. (c) Thon ring fitting of a micrograph taken from a FIB milling-derived lamella. The tilt of the specimen was estimated to be 6.7\u00b0. When fitting without thickness estimation the estimated parameters were $\u0394f_{1}=8002\u00c5,\u0394f_{2}=7717\u00c5,\\alpha=73.4^{\u2218}$. When taking sample thickness into account the estimated parameters were $\u0394f_{1}=8549\u00c5,\u0394f_{2}=8343\u00c5,\\alpha=63.3^{\u2218},t=2017\u00c5$. The estimated fit resolution was $4.3\u00c5$ and $4.2\u00c5$ without and with sample thickness estimation, respectively. (d) Thon ring fitting of a micrograph taken from plunge frozen rotavirus double-layered particles (Grant and Grigorieff, 2015). When fitting without thickness estimation the estimated parameters were $\u0394f_{1}=7027\u00c5,\u0394f_{2}=6808\u00c5,\\alpha=\u221220.3^{\u2218}$. When taking sample thickness into account the estimated parameters were $\u0394f_{1}=7027\u00c5,\u0394f_{2}=6808\u00c5,\\alpha=\u221222.9^{\u2218},t=850\u00c5$. The estimated fit resolution was $4.2\u00c5$ and $3.2\u00c5$ without and with sample thickness estimation, respectively.\n\nIf a user requests sample thickness estimation, the program will first fit the $CTF$ model function as implemented in CTFFIND4. If the user also requested tilt estimation the tilt-corrected power spectrum will be used for all subsequent steps. Initially, the 'goodness-of-fit' resolution $g_{GoF}$ will be used as an estimate for the frequency of the first node of the $CTF_{t}$ function, which occurs when the sinc term in Equation 5 becomes 0 for the first time at $\u03be=\\pi$ . By setting $\u03be=\\pi$ in Equation 6, we can obtain an estimate of the sample thickness $t$, from $g_{GoF}$:\n\n$$\nt=\\frac{1}{\\lambdag_{GoF}^{2}}\n$$\n\nIf the option 'Brute-force 1D fit' is selected, CTFFIND5 will further refine $t$ and $\u0394f$ by calculating the normalized cross-correlation between the radial average of the power spectrum, corrected for astigmatism by equiphase averaging (EPA) as described in Zhang, 2016, and $CTF_{t}$, searching systematically for the best combination of $t$ in the range of 50\u2013400 nm in 10 nm steps, and $\u0394f$ in the range of \u00b1200 nm from the previously fitted value, also in 10 nm steps.\n\nFinally, if the option '2D-refinement' is selected, CTFFIND5 will optimize $t$, $\u0394f_{1}$, $\u0394f_{2}$, and $\\omega$ using the same conjugate gradient algorithm used in CTFFIND4 and the normalized cross-correlation between $CTF_{t}$ and the 2D power spectrum as a scoring function.\n\nAfter the optimal values for $t$ and $\u0394f$ have been obtained the 'goodness-of-fit' cross-correlation is recalculated using $CTF_{t}$, with a frequency window that is 1.5 times larger than in CTFFIND4 to avoid the drop-off in the node regions of $CTF_{t}$. For visualization, the astigmatism-corrected 1D power spectrum is displayed as oscillating around 0.5, as opposed to the default procedure in CTFFIND4, where the minima are scaled to 0. This is done to allow a better visual comparison to the $CTF_{t}$ model.\n\n### Verification of sample thickness estimation using the Beer-Lambert law\n\nWe used 655 micrographs collected from one lamella of ER-HoxB8 cells (dataset Lamella $\u200b_{EUC}1$ from Elferich et al., 2022). For each micrograph we calculated $ln\\frac{I}{I_{0}}$, where $I$ was the sum of all pixels in the illuminated area of the movie and $I_{0}$ was the average of this sum for 45 micrographs collected over vacuum with the same energy filter settings. This value is expected to have a linear relationship with the thickness of the sample consistent with the Beer-Lambert law (Rice et al., 2018; Yan et al., 2015):\n\n$$\nln(\\frac{I}{I_{0}})=\\frac{1}{\u03ba}t\n$$\n\nwhere $\u03ba$ is the apparent mean free path for inelastic scattering.\n\nWe then used CTFFIND5 to estimate the thickness $t$ of each micrograph using the 'Brute-force 1D fit' and '2D-refinement' setting, low- and high-resolution limits set to 30 \u00c5 and 5 \u00c5, defocus search range set between 500 nm and 5000 nm, and low- and high-resolution limits for thickness estimation set to 10 \u00c5 and 3 \u00c5. We used a 'RANSAC' algorithm as implemented by the scikit-learn Python package (Pedregosa et al., 2011) to fit a linear model to the relationship of $ln\\frac{I}{I_{0}}$ and $t$, while rejecting outliers. We then manually inspected every outlier of the model fit and categorized the reason for the discrepancy into 'occluded beam' (either from contamination or the edges of the lamella), 'low image signal' (in most cases exposures containing no cellular features), 'carbon/platinum', and 'lipid droplet' (see Figure 4).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig4-v1.jpg)\n\n**Figure 4.:** An estimation of the linear relationship using the RANSAC algorithm results in a slope of 1/316.6 nm and an x-axis intercept at \u201314 nm (red dashed line). Data points that were labeled as outliers by the RANSAC algorithm were manually inspected and color-coded according to visual inspection of the micrographs.\n\n### Verification of sample thickness estimation using tomography\n\nThe same tilts series described in the section 'Verification of tilt estimation using tilt series' were used here. For tomographic reconstruction, tilt movie frame motion correction was performed using SerialEM (Mastronarde, 2005), and tilt series were aligned using the IMOD software package (version 4.11, Mastronarde and Held, 2017). For coarse alignment, a high-frequency cutoff radius of 0.15 was used. A fiducial model was generated using patch tracking with patches of 450\u00d7450 pixels and a fractional overlap of patches of 0.33\u00d70.33. High-tilt frames were omitted while generating the fiducial model. Robust fitting with a tuning factor of 1 was used for fine alignment. After computing the alignment, the fiducial model was edited by removing unreliable patches, and then alignments were re-computed. The edited models with the lowest residual mean errors and standard deviations were used for fine alignment. Tomogram positioning was used to correct the tilt angle offset. Fully aligned stacks were generated with a binning factor of 4, resulting in a tomogram pixel size of 8.3 \u00c5. Tomograms were reconstructed using the SIRT-like filtering option in IMOD (Mastronarde, 1997; Mastronarde and Held, 2017) and manually inspected. The tomograms were back-projected along the y-axis using a homemade script, generating a small set of XZ projections. Thickness measurements on the projected central slices were performed using the display program included with the cisTEM software package (Grant et al., 2018).\n\n### CTF correction of medium-magnification lamella images\n\nThe CTF of the representative medium-magnification image with a pixel size of 40 \u00c5 was estimated using CTFFIND5 with the following parameters: defocus range: 1,000,000\u20134,000,000 \u00c5; search step 50,000 \u00c5; low- and high-resolution limits: 400 \u00c5 and 80 \u00c5. We then used the program apply_ctf, included with cisTEM, to flip the phases according to the estimated CTF. We furthermore implemented the Wiener-like filter described in Tegunov and Cramer, 2019, in apply_ctf to produce the image shown in Figure 6d.\n\n### Benchmarking CTFFIND5 runtimes\n\nCTFFIND5 runtimes were measured using three representative micrographs (Table 2). As a baseline measurement, CTFFIND5 was run without estimation of tilt and sample thickness enabled. Then runtime was measured enabling either one of these options or both. Every test was repeated four times and the average and standard deviation of the last three runs are reported, to minimize the contribution of hard-drive speed. The tests were performed on a single core of an Intel Core i9-12900KF CPU.\n\n## Results\n\n### Tilt estimation\n\nWe tested the tilt correction for the Thon rings on a representative micrograph taken from a cryo-FIB-milled lamella. As expected, the correction results in the observation of Thon rings at higher spatial resolution (Figure 1c). In this example, correcting for the estimated moderate tilt of 12.3\u00b0 improved the highest resolution at which a reasonable fit could be obtained from 5.9 \u00c5 to 4.6 \u00c5. The power spectrum also appears less noisy, which can be attributed to some low-pass filtering that occurs with the interpolation of the Thon ring patterns of individual tiles to perform the tilt correction.\n\nTo test the performance of the new CTFFIND5 sample tilt estimation, we used a dataset of images of tilted aquaporin crystals that were also used to benchmark the original CTFTILT implementation (Mindell and Grigorieff, 2003; Murata et al., 2000). Table 1 compares the tilt information of the samples obtained from crystallographic analysis and the estimates obtained using CTFFIND5. Overall, the results of CTFFIND5 agree well with the aquaporin crystals information. The average discrepancy was 1.9\u00b0 for the tilt axis direction and 1.5\u00b0 for the tilt angle.\n\n**Table 1.**\n Comparison of CTFFIND5 estimation of sample tilt with crystallographic analysis.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Image</th>\n      <th colspan=\"3\">Axis angle \u03c6</th>\n      <th></th>\n      <th colspan=\"3\">Tilt angle \u03b8</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td>Crystallog.</td>\n      <td>CTFFIND5</td>\n      <td>\u2206\u03c6</td>\n      <td></td>\n      <td>Crystallog.</td>\n      <td>CTFFIND5</td>\n      <td>\u2206\u03b8</td>\n    </tr>\n    <tr>\n      <td>530394</td>\n      <td>93.28</td>\n      <td>94.98</td>\n      <td>\u20131.7</td>\n      <td></td>\n      <td>19.6</td>\n      <td>20.69</td>\n      <td>\u20131.09</td>\n    </tr>\n    <tr>\n      <td>530419</td>\n      <td>109.78</td>\n      <td>106.51</td>\n      <td>3.27</td>\n      <td></td>\n      <td>18.66</td>\n      <td>16.04</td>\n      <td>2.62</td>\n    </tr>\n    <tr>\n      <td>530430</td>\n      <td>104.38</td>\n      <td>101.13</td>\n      <td>3.25</td>\n      <td></td>\n      <td>21.32</td>\n      <td>20.37</td>\n      <td>0.95</td>\n    </tr>\n    <tr>\n      <td>530444</td>\n      <td>98.39</td>\n      <td>97.62</td>\n      <td>0.77</td>\n      <td></td>\n      <td>20.72</td>\n      <td>20.88</td>\n      <td>\u20130.16</td>\n    </tr>\n    <tr>\n      <td>660027</td>\n      <td>99.68</td>\n      <td>102.34</td>\n      <td>\u20132.66</td>\n      <td></td>\n      <td>19.4</td>\n      <td>22.39</td>\n      <td>\u20132.99</td>\n    </tr>\n    <tr>\n      <td>540149</td>\n      <td>94.45</td>\n      <td>85.84</td>\n      <td>8.61</td>\n      <td></td>\n      <td>43.08</td>\n      <td>44.59</td>\n      <td>\u20131.51</td>\n    </tr>\n    <tr>\n      <td>540291</td>\n      <td>96.16</td>\n      <td>98.1</td>\n      <td>\u20131.94</td>\n      <td></td>\n      <td>45.11</td>\n      <td>40.68</td>\n      <td>4.43</td>\n    </tr>\n    <tr>\n      <td>540302</td>\n      <td>93.98</td>\n      <td>93.39</td>\n      <td>0.59</td>\n      <td></td>\n      <td>44.7</td>\n      <td>44.21</td>\n      <td>0.49</td>\n    </tr>\n    <tr>\n      <td>540313</td>\n      <td>95.34</td>\n      <td>95.13</td>\n      <td>0.21</td>\n      <td></td>\n      <td>44.03</td>\n      <td>46.49</td>\n      <td>\u20132.46</td>\n    </tr>\n    <tr>\n      <td>660183</td>\n      <td>97.69</td>\n      <td>97.27</td>\n      <td>0.42</td>\n      <td></td>\n      <td>48.13</td>\n      <td>48.99</td>\n      <td>\u20130.86</td>\n    </tr>\n    <tr>\n      <td>550069</td>\n      <td>90.08</td>\n      <td>92.55</td>\n      <td>\u20132.47</td>\n      <td></td>\n      <td>60.46</td>\n      <td>60.83</td>\n      <td>\u20130.37</td>\n    </tr>\n    <tr>\n      <td>550089</td>\n      <td>91.48</td>\n      <td>92.04</td>\n      <td>\u20130.56</td>\n      <td></td>\n      <td>60.5</td>\n      <td>60.72</td>\n      <td>\u20130.22</td>\n    </tr>\n    <tr>\n      <td>660291</td>\n      <td>93.23</td>\n      <td>92.19</td>\n      <td>1.04</td>\n      <td></td>\n      <td>57.59</td>\n      <td>59.19</td>\n      <td>\u20131.60</td>\n    </tr>\n    <tr>\n      <td>660421</td>\n      <td>89.32</td>\n      <td>89.06</td>\n      <td>0.26</td>\n      <td></td>\n      <td>61.36</td>\n      <td>60.01</td>\n      <td>1.35</td>\n    </tr>\n    <tr>\n      <td>680341</td>\n      <td>89.67</td>\n      <td>90.02</td>\n      <td>\u20130.35</td>\n      <td></td>\n      <td>58.68</td>\n      <td>59.62</td>\n      <td>\u20130.94</td>\n    </tr>\n    <tr>\n      <td>530345</td>\n      <td>N/A</td>\n      <td>108.6</td>\n      <td></td>\n      <td></td>\n      <td>0</td>\n      <td>0.84</td>\n      <td>\u20130.84</td>\n    </tr>\n    <tr>\n      <td>530356</td>\n      <td>N/A</td>\n      <td>231.17</td>\n      <td></td>\n      <td></td>\n      <td>0</td>\n      <td>1.93</td>\n      <td>\u20131.93</td>\n    </tr>\n    <tr>\n      <td>530358</td>\n      <td>N/A</td>\n      <td>56.58</td>\n      <td></td>\n      <td></td>\n      <td>0</td>\n      <td>1.29</td>\n      <td>\u20131.29</td>\n    </tr>\n    <tr>\n      <td>530375</td>\n      <td>N/A</td>\n      <td>3.21</td>\n      <td></td>\n      <td></td>\n      <td>0</td>\n      <td>0.79</td>\n      <td>\u20130.79</td>\n    </tr>\n    <tr>\n      <td>530378</td>\n      <td>N/A</td>\n      <td>67.6</td>\n      <td></td>\n      <td></td>\n      <td>0</td>\n      <td>2.17</td>\n      <td>\u20132.17</td>\n    </tr>\n  </tbody>\n</table>\n\nTo test whether CTFFIND5 would be able to correctly assign tilt axis and angle for tilt series data, we analyzed two tilt series from different grids of lamellae prepared by cryo-FIB milling from mouse neutrophil-like cells (Elferich et al., 2022). We then plotted the estimated values for tilt axis and angle as a function of nominal stage tilt (Figure 2). The estimated tilt angle shows a roughly linear relationship with the nominal stage tilt, but since CTFFIND5 reports only positive tilt angles the overall plot has a V-shape. The estimated tilt axis angle is approximately constant at high tilts but changes by about 180\u00b0 at 0\u00b0 estimated tilt, again due to the convention enforced by CTFFIND5. Notably, in both examples there is an offset of about 20\u00b0 between nominal and estimated tilts, which is due to the pre-tilt of the specimen caused by FIB milling at a shallow angle. To quantify and delineate both the tilt axis direction of the microscope and the pre-tilt of the specimen we fit all values to a model as described in Methods (Figure 2). The fitting resulted in an estimated tilt axis angle of 178.2\u00b0 and 179.8\u00b0, respectively, which is consistent with the SerialEM calibration of 178.4\u00b0 and 176.3\u00b0 for the stage tilt axis. The estimated pre-tilt values were 20.6 \u00b0and \u201321.9\u00b0, consistent with a FIB-milling angle of 20\u00b0 and opposite orientation of the grids relative to the milling direction. The pre-tilt axis angles were estimated as 171.8\u00b0 and 183.8\u00b0, which is consistent with the error expected from manually aligning the milling direction when inserting grids into the microscope.\n\nTo estimate the accuracy of the tilt estimation in tilt series, we calculated the mean absolute difference between the tilt and axis-angle estimates and the fitted model, excluding the axis-angle estimates at tilt angles under 5\u00b0. For the first tilt series we obtained accuracy estimates of 2.08\u00b0 and 2.58\u00b0 for tilt and axis angles, respectively. In the second tilt series the accuracy estimates were 3.95\u00b0 and 9.47\u00b0. In both cases the accuracy was lower than for the tilted aquaporin crystals, presumably due to the relatively short exposure of each micrograph in the tilt series. However, the substantially higher mean differences in the second tilt series suggest that the accuracy is highly dependent on the quality of the underlying data.\n\n### Sample thickness estimation\n\nEven after correcting for sample tilt we found that for FIB-milled samples we often could observe Thon ring-like modulation in the power spectrum at higher resolution than suggested by the goodness-of-fit estimate (Figure 3b, top plot). These modulations are out of phase with the predicted modulations, as described by McMullan et al., 2015, and Tichelaar et al., 2020. We therefore implemented an extension of the CTF model as described by McMullan et al., 2015; Figure 3a. For some images we found that the thickness could be well estimated by assuming that the goodness-of-fit resolution estimate obtained using the old model implemented in CTFFIND4 corresponds to the first node in the modulation function, according to Equation 7. With our new model, estimated CTF parameters were very similar to those from CTFFIND4, but the fit in CTFFIND5 extended to higher resolution (Figure 3b).\n\nIn other images, mostly with defocus values under 1 \u00b5m and with a sample thickness over 200 nm, CTFFIND4 could fit the power spectrum before and after the first node using the old CTF model, with some deviations between the fit and the power spectrum (Figure 3c). Fitting the power spectrum with the new model in CTFFIND5 resulted in substantially different estimated CTF parameters and an improved fit, even though the goodness-of-fit estimation did not change. We also found that for some single-particle datasets of large particles, such as the rotavirus double-layered particle (Grant and Grigorieff, 2015), we could use CTFFIND5 to estimate the thickness of the sample, which resulted in CTF fits to higher resolution (Figure 3d).\n\nBased on these results we conclude that CTFFIND5 will provide more accurate CTF parameters for images of thick samples, such as those generated from FIB milling. In addition, the fit provides a direct readout of the specimen thickness, which is important for judging specimen quality and the potential for high-resolution information that can be recovered from these images.\n\n### Estimating the accuracy of sample thickness estimation using the Beer-Lambert law on energy filtered data\n\nCryoEM is frequently performed using an energy filter to remove inelastically scattered electrons. The fraction of inelastically scattered electrons can be described by the Beer-Lambert law, which states that the fraction of electrons removed from the image is proportional to the thickness of the sample. The apparent mean free path for electron scattering has been experimentally determined for common cryoEM conditions (Rice et al., 2018). To test whether thickness estimation in CTFFIND5 is consistent with this method, we used a dataset of 655 exposures of a lamella of ER-HoxB8 cells collected using the DeCo-LACE approach (Elferich et al., 2022). We used CTFFIND5 to estimate the thickness $t$ of every exposure and plotted $\u2212ln\\frac{I}{I_{0}}$ against $t$ (Figure 4). Fitting the data to a linear model described in Methods (Equation 8), we found that 568 out of 655 exposures followed closely a linear relationship with a mean free path $\u03ba$ of 317 nm. Manual inspection of images that did not follow this linear relationship revealed that they either contained visible ice contamination, platinum deposits, or they were collected over ice without cellular features and displayed weak Thon rings. The value of $\u03ba$ is consistent with the value found by Rice et al., 2018, even though our dataset was collected without an objective aperture. The x-axis intercept of the linear model was \u201314.1 nm, meaning that the node position systematically predicts a smaller thickness than predicted by the Beer-Lambert law. This discrepancy is further discussed in the next section. To estimate the accuracy of the sample thickness determined by CTFFIND5, we calculated the mean absolute difference to the linear model, which was 4.8 nm. These data suggest that sample thickness determination using node fitting is an alternative to using the Beer-Lambert law that has the advantage of not relying on the constant $\u03ba$ and the intensity $I_{0}$, both of which might not be readily available. Also, the two approaches are complementary as they rely on orthogonal mechanisms.\n\n### Estimating the accuracy of sample thickness estimation using tomography\n\nWe used a dataset of seven micrographs collected from lamellae of ER-HoxB8 cells together with tilt series collected afterward from the same locations to verify the accuracy of the thickness estimates obtained using CTFFIND5. We used CTFFIND5 to estimate the thickness ($t_{CTFFIND}$) for every location and compared it with the thickness estimated from the tomogram reconstructed from the tilt series ($t_{TOMO}$). We measured $t_{TOMO}$ by manually estimating the distance between the surfaces of the lamella in three different positions. When we plotted $t_{CTFFIND}$ against $t_{TOMO}$ we found that the values were highly correlated, but $t_{TOMO}$ was consistently smaller than $t_{CTFFIND}$ (Figure 5). A linear fit revealed a slope of 0.95 and a y-axis intercept of 0.12 nm. This means that the CTFFIND5 thickness estimate is on average 1.05\u00d7 higher than the thickness estimated by tomography. Tichelaar et al., 2020, also report that estimating the thickness from the CTF nodes resulted in values roughly 1.1\u00d7 higher than estimated by tomography. The reasons for the systematic discrepancies between thicknesses estimated by CTFFIND5 and estimates based on the Beer-Lambert law and tomography are unclear, but since they are small and CTFFIND5 estimates lie in between the other two estimates, they will provide comparable information.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig5-v1.jpg)\n\n**Figure 5.:** The distribution of thickness measurements in seven tomograms are shown as box plots with the median indicated by a red line. For each tomogram, the thickness was measured in three different places. The position on the x-axis corresponds to the thickness estimate by CTFFIND5. The black dashed line indicates identity. The red dashed line indicates the result of a linear fit.\n\n### CTF estimation and correction assists biological interpretation of intermediate-magnification lamella images\n\nDuring data collection of cryoEM data in cells, the operator frequently relies on images taken at low magnification to select areas of interest and establish their biological context. The pixel size of these images is usually about 40 \u00c5, with a defocus of about 200 \u00b5m. This produces strong contrast from biological membranes but can sometimes also lead to substantial fringes near these membranes (Figure 6a). We found that a simple CTF correction based on CTFFIND defocus estimates obtained from the overview images can reduce these fringes (Figure 6b). A simple CTF correction can be done using the program apply_ctf, included with cisTEM, by phase flipping according to the fitted CTF (Figure 6c). However, we found that including a Wiener filter-based amplitude correction described by Tegunov and Cramer, 2019, produces a more naturally looking image that might be best suited to recognize cellular features (Figure 6d).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/97227/elife-97227-fig6-v1.jpg)\n\n**Figure 6.:** (a) Representative area of a micrograph of a cellular sample at a pixel size of 40 \u00c5 without CTF correction. (b) Fit of the power spectrum of the micrograph shown in panel (a) CTF model. (c\u2013d) The same micrograph as shown in panel (a) after CTF correction by phase flipping (c) or with a Wiener-like filter (d). The custom fall-off parameter was set to 1.3 and the custom strength parameter was set to 0.7.\n\n### CTFFIND5 runtimes\n\nTo gauge the ability of CTFFIND5 to provide real-time feedback during cryoEM data collection, we measured its runtime on three representative micrographs (Table 2). Without estimation of tilt or sample thickness CTFFIND5 performed CTF estimation roughly within a second. Estimation of the sample thickness adds roughly half a second to the runtime, therefore allowing CTF estimation within a timeframe comparable to typical exposure times. Estimation of the tilt on the other hand increased runtimes substantially to the order of several minutes, due to the exhaustive search of potential tilts over hundreds of power spectra. While these runtimes are substantially slower than cryoEM data acquisition, near real-time estimation can be achieved by using multiple CPU cores. Furthermore, optimization of the number of tiles used, better search algorithms, or implementations employing GPUs could increase the speed to the point where real-time estimation is more feasible.\n\n**Table 2.**\n Runtime of CTFFIND5 on representative micrographs.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Micrograph</th>\n      <th></th>\n      <th></th>\n      <th>1</th>\n      <th>2</th>\n      <th>3</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td colspan=\"2\">Image properties</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Image size</td>\n      <td></td>\n      <td></td>\n      <td>4070\u00d72892</td>\n      <td>2880\u00d72046</td>\n      <td>4746\u00d73370</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Pixel size (\u00c5)</td>\n      <td>1.5</td>\n      <td>4.175</td>\n      <td>2.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Runtime (s)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Tilt</td>\n      <td colspan=\"2\">Thickness</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>\u2013</td>\n      <td></td>\n      <td>0.9\u00b10.1</td>\n      <td>0.7\u00b10.1</td>\n      <td>1.7\u00b10.1</td>\n    </tr>\n    <tr>\n      <td>+</td>\n      <td>\u2013</td>\n      <td></td>\n      <td>39.0\u00b10.2</td>\n      <td>208\u00b11</td>\n      <td>173.4\u00b10.1</td>\n    </tr>\n    <tr>\n      <td>\u2013</td>\n      <td>+</td>\n      <td></td>\n      <td>1.4\u00b10.1</td>\n      <td>1.3\u00b10.1</td>\n      <td>2.4\u00b10.1</td>\n    </tr>\n    <tr>\n      <td>+</td>\n      <td>+</td>\n      <td></td>\n      <td>39.5\u00b10.1</td>\n      <td>209\u00b11</td>\n      <td>173.0\u00b10.1</td>\n    </tr>\n  </tbody>\n</table>\n\n### Conclusion\n\nThe new features implemented in CTFFIND5 improve CTF estimation from the power spectra of cryoEM micrographs where assumptions made in its predecessor, CTFFIND4, namely a thin and untilted sample, do not hold. The tilt of the sample is estimated by fitting the CTF to the power spectra calculated from small patches across the image, similar to other software including CTFTilt (Mindell and Grigorieff, 2003), Ctfplotter (Mastronarde, 2024; Xiong et al., 2009), goCTF (Su, 2019), Bsoft (Heymann and Belnap, 2007), and Warp (Tegunov and Cramer, 2019). After estimation of the sample tilt, a tilt-corrected power spectrum is produced that exhibits stronger Thon rings at higher resolution.\n\nTo take into account the modulation of the power spectra by thick samples (McMullan et al., 2015; Tichelaar et al., 2020), we fit a modified CTF model, which increases the resolution of the fitted regions of the spectra and provides a readout of the sample thickness. While the low exposures (3\u20135 e-/\u00c52) typically used in electron cryo-tomography often preclude fitting of sample thickness from power spectra of individual images in the tilt series, we demonstrate that this works reliably for higher exposures (~30 e-/\u00c52) typically used for 2D template matching (2DTM) (Lucas et al., 2021; Rickgauer et al., 2017) and in situ single-particle analysis (Cheng et al., 2023).\n\nWe mainly developed these improvements for 2DTM applied to in situ samples, e.g., prepared by cryo-FIB milling. Since the sample thickness and sample tilt are apparent from a single exposure, as opposed to a reconstructed tomogram, CTFFIND5 made it possible to quantify these parameters for every exposure. This is important information to judge the quality of the lamella before performing time-intensive further processing (Lucas and Grigorieff, 2023; Tuijtel et al., 2024). Furthermore, since the quality-of-fit estimation of CTFFIND5 goes to higher resolution in tilted and thick samples (Figures 1c and 3b\u2013d), it is a better indicator of micrograph quality than the same metric in CTFFIND4.\n\nEven though we used tilt series data to benchmark tilt estimation in CTFFIND5, there are certain drawbacks in its use for tilt series data. In contrast to software optimized for tilt series data, such as Ctfplotter (Mastronarde, 2024), CTFFIND5 uses no prior information for tilt axis angle and sample tilt, resulting in reduced performance and also potential lower accuracy. Furthermore, there is no option to pool data from several tilt angles to provide a more accurate defocus or astigmatism estimation. However, this also means that CTFFIND5 together with fit_tilt_model might be useful in troubleshooting angle conventions in tilt series data. Also, existing pipelines using CTFFIND4 might benefit from the tilt correction in the power spectrum calculation introduced in CTFFIND5, which results in more robust defocus estimation at high tilt (Figure 2).\n\nWhile most single-particle samples are thin and flat and therefore do not benefit from CTFFIND5, there might be some samples, such as viral particles (Figure 3d), where direct estimation of the ice thickness is valuable. However, even in these cases the defocus reported by CTFFIND5 is an average for the whole micrograph and per-particle CTF refinement, as implemented in cisTEM (Grant et al., 2018), RELION (Zivanov et al., 2018), or CryoSPARC (Punjani et al., 2017; Zivanov et al., 2020), will still be required to actually recover high-resolution information during averaging. The ability to measure sample tilt might be useful for approaches where a tilted stage is used to overcome preferred particle orientation (Tan et al., 2017), as initial per particle defocus values can be derived from the tilt as reported by CTFFIND5 and the particle positions.\n\nIn summary, the improvements implemented in CTFFIND5 result in more accurate CTF estimation of thick and tilted samples and provide valuable information about the samples to the microscopist.\n",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sjors HW Scheres, MRC Laboratory of Molecular Biology United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97227.3.sa0](https://doi.org/10.7554/eLife.97227.3.sa0)\n\nThis valuable work presents the latest version of CTFFIND, which is the most popular software for determination of the contrast transfer function (CTF) in cryo-electron microscopy. CTFFIND5 estimates and considers acquisition geometry and sample thickness, which leads to improved CTF determination. The paper describes compelling evidence that CTFFIND5 finds better CTF parameters than previous methods, in particular for tilted samples (e.g. for cryo-electron tomography) or where thickness is an issue (e.g. cellular samples, or electron microscopy at low voltages).\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97227.3.sa1](https://doi.org/10.7554/eLife.97227.3.sa1)\n\nThis work presents CTFFIND5, a new version of the software for determination of the Contrast Transfer Function (CTF) that models the distortions introduced by the microscope in cryoEM images. CTFFIND5 can take acquisition geometry and sample thickness into consideration to improve CTF estimation.\n\nTo estimate tilt (tilt angle and tilt axis), the input image is split into tiles and correlation coefficients are computed between their power spectra and a local CTF model that includes the defocus variation according to a tilted plane. As a final step, by applying a rescaling factor to the power spectra of the tiles, an average tilt-corrected power spectrum is obtained used for diagnostic purposes and estimate the goodness of fit. This global procedure and the rescaling factor resemble those used in Bsoft, Warp, etc, with determination of the tilt parameters being a feature specific of CTFFIND5 (and formerly CTFTILT). The performance of the algorithm is evaluated with tilted 2D crystals and tilt-series, demonstrating accurate tilt estimation in general.\n\nCTFFIND5 represents the first CTF determination tool that considers the thickness-related modulation envelope of the CTF firstly described by McMullan et al. (2015) and experimentally confirmed by Tichelaar et al. (2020). To this end, CTFFIND5 uses a new CTF model that takes the sample thickness into account. CTFFIND5 thus provides more accurate CTF estimation and, furthermore, gives an estimation of the sample thickness, which may be a valuable resource to judge the potential for high resolution. To evaluate the accuracy of thickness estimation in CTFFIND5, the authors use the Lambert-Beer law on energy-filtered data and also tomographic data, thus demonstrating that the estimates are reasonable for images with exposure around 30 e/A2. While consideration of sample thickness in CTF determination sounds ideally suited for cryoET, practical application under the standard acquisition protocols in cryoET (exposure of 3-5 e/A2 per image) is still limited. In this regard, the authors are precise in the conclusions and clearly identify the areas where thickness-aware CTF determination will be valuable at present: in situ single particle analysis and in vitro single particle cryoEM of large specimens (e.g. viral particles).\n\nIn conclusion, the manuscript introduces novel methods inside CTFFIND5 that improve CTF estimation, namely acquisition geometry and sample thickness. The evaluation demonstrates the performance of the new tool, with fairly accurate estimates of tilt axis, tilt angle and sample thickness and improved CTF estimation. The manuscript critically defines the current range of application of the new methods in cryoEM.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97227.3.sa2](https://doi.org/10.7554/eLife.97227.3.sa2)\n\nThis paper describes the latest version of the most popular program for CTF estimation for cryo-EM images: CTFFIND5. New features in CTFFIND5 are the estimation of tilt geometry, including for samples, like FIB-milled lamellae, that are pre-tilted along a different axis than the tilt axis of the tomographic experiment, plus the estimation of sample thickness from the expanded CTF model described by McMullan et al (2015). The results convincingly show the added value of the program for thicker and tilted images, such as are common in modern cryo-ET experiments. The program will therefore have a considerable impact on the field.\n\nComments on revised version:\n\nMy comments have been addressed adequately.\n",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "101b21ed-2d50-4e6a-ab72-c9775a187f89",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C1",
+      "claim": "Images taken by transmission electron microscopes are usually affected by lens aberrations and image defocus.",
+      "claim_type": "EXPLICIT",
+      "source": "Images taken by transmission electron microscopes are usually affected by lens aberrations and image defocus, among other factors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a general property of TEM imaging.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "65642ef6-26ac-432d-a20b-6e209aa9f709",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C2",
+      "claim": "Distortions from lens aberrations and defocus can be modeled in reciprocal space using the contrast transfer function (CTF).",
+      "claim_type": "EXPLICIT",
+      "source": "These distortions can be modeled in reciprocal space using the contrast transfer function (CTF).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as an established method in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "d90672fe-9343-44c2-a725-3f8ea711eefe",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C3",
+      "claim": "Accurate estimation and correction of the CTF is essential for restoring the high-resolution signal in cryogenic electron microscopy (cryoEM).",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate estimation and correction of the CTF is essential for restoring the high-resolution signal in cryogenic electron microscopy (cryoEM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a fundamental requirement in cryoEM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "2c62b8be-21d1-470f-83d6-e85a4c44765e",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C4",
+      "claim": "Algorithms for CTF estimation were previously described in the cisTEM software package.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we described the implementation of algorithms for this task in the cisTEM software package (Grant et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references prior work by the authors with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "4ef98ddb-01b8-49b1-9bf8-ea5d2003d87a",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C5",
+      "claim": "Taking sample characteristics such as thickness and tilt into account can improve CTF estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here we show that taking sample characteristics, such as thickness and tilt, into account can improve CTF estimation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary claim of the manuscript supported by the data presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "29b0ec96-3b81-4fbb-a1c9-cfd8659af411",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C6",
+      "claim": "Measurement of sample thickness and geometry is particularly important when imaging cellular samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This is particularly important when imaging cellular samples, where measurement of sample thickness and geometry derived from accurate modeling of the Thon ring pattern helps judging the quality of the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a specific application and importance of the method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "9dc3c1b7-abd8-4064-9ac6-c4ef0052796a",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C7",
+      "claim": "The improved CTF estimation has been implemented in CTFFIND5.",
+      "claim_type": "EXPLICIT",
+      "source": "This improved CTF estimation has been implemented in CTFFIND5, a new version of the cisTEM program CTFFIND.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the software implementation of the method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "fda390a0-e0dd-4126-b75f-515980a15bea",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C8",
+      "claim": "The accuracy of CTF estimates was evaluated using images of tilted aquaporin crystals and eukaryotic cells thinned by focused ion beam milling.",
+      "claim_type": "EXPLICIT",
+      "source": "We evaluated the accuracy of these estimates using images of tilted aquaporin crystals and eukaryotic cells thinned by focused ion beam milling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the validation approach used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "24dd1811-1dab-4381-a35e-3a989c68b7dd",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C9",
+      "claim": "CTFFIND5 can measure sample tilt with an accuracy of 3\u00b0 with micrographs of sufficient quality.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that with micrographs of sufficient quality CTFFIND5 can measure sample tilt with an accuracy of 3\u00b0 and sample thickness with an accuracy of 5 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the validation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "75bf3cd9-f254-434e-b005-3ebbb0220cdf",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C10",
+      "claim": "CTFFIND5 can measure sample thickness with an accuracy of 5 nm with micrographs of sufficient quality.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that with micrographs of sufficient quality CTFFIND5 can measure sample tilt with an accuracy of 3\u00b0 and sample thickness with an accuracy of 5 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the validation studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "a8a5339c-d7f2-4431-91e0-077d211dd23b",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C11",
+      "claim": "CryoEM has become a widely used method to image biomolecules at high resolution, both in solution and within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Transmission electron microscopy of biological specimens at cryogenic temperatures (cryoEM) has become a widely used method to image biomolecules at high resolution, both in solution and within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "589a9356-ee2e-49a8-8962-9757b208abc9",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C12",
+      "claim": "CryoEM images have to be corrected for the contrast transfer function (CTF) of the microscope to retrieve the high-resolution signal.",
+      "claim_type": "EXPLICIT",
+      "source": "To retrieve the high-resolution signal, the cryoEM images have to be corrected for the contrast transfer function (CTF) of the microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a necessary processing step in cryoEM.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "f06fb35c-26fe-435d-85cf-9d6251498f87",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C13",
+      "claim": "Common parameters used to describe the CTF include astigmatic defocus, spherical aberration of the objective lens, and phase shift introduced by a phase plate.",
+      "claim_type": "EXPLICIT",
+      "source": "Common parameters used to describe the CTF include an astigmatic defocus, the spherical aberration of the objective lens, and if appropriate, a phase shift introduced by a phase plate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This lists standard CTF parameters used in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "80623ddf-6aa1-4676-a484-1859b64842b8",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C14",
+      "claim": "Defocus and phase shift parameters are commonly estimated by fitting the Thon ring pattern in the power spectrum of micrographs to a modeled power spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "The defocus and phase shift parameters are commonly estimated by fitting the Thon ring pattern (Thon, 1971) in the power spectrum of micrographs to a modeled power spectrum.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the standard method for CTF parameter estimation with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "17f65095-2476-4bf7-9b62-a59ed2d2f135",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C15",
+      "claim": "The program CTFFIND4 has been developed for CTF parameter estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "The program CTFFIND4 (Rohou and Grigorieff, 2015) has been developed for this task and the model and conventions to describe the CTF are widely adopted in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references prior software development with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "e670c719-124d-454a-9faf-45550122dc1a",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C16",
+      "claim": "The CTF model and conventions used in CTFFIND4 are widely adopted in the field.",
+      "claim_type": "EXPLICIT",
+      "source": "The program CTFFIND4 (Rohou and Grigorieff, 2015) has been developed for this task and the model and conventions to describe the CTF are widely adopted in the field.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the acceptance of CTFFIND4 in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "5de45493-56a0-4b81-ba89-bf2aea95eb00",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C17",
+      "claim": "CTFFIND4 considers the whole imaged sample to be at the same objective defocus.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of CTFFIND4 is that it considers the whole imaged sample to be at the same objective defocus, which is a reasonable assumption for flat and thin samples, as is common in single-particle cryoEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific limitation of the previous software version.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "58f8ec31-f6a0-478d-bc37-206df7aa8fe7",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C18",
+      "claim": "The assumption of uniform defocus is reasonable for flat and thin samples common in single-particle cryoEM.",
+      "claim_type": "EXPLICIT",
+      "source": "A limitation of CTFFIND4 is that it considers the whole imaged sample to be at the same objective defocus, which is a reasonable assumption for flat and thin samples, as is common in single-particle cryoEM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This justifies when the CTFFIND4 assumption is valid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "f90ff2c7-1312-4a86-b8a7-c7533d45d475",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C19",
+      "claim": "The increased thickness of cryoEM samples of cells may introduce additional modulations in the Thon ring pattern.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increased thickness of cryoEM samples of cells may introduce additional modulations in the Thon ring pattern (Tichelaar et al., 2020) that can lead to errors in the CTF modeling when not accounted for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a problem with thick samples, supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "3d559577-4a41-4799-9321-28fb6182fc86",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C20",
+      "claim": "Additional modulations in the Thon ring pattern from thick samples can lead to errors in CTF modeling when not accounted for.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the increased thickness of cryoEM samples of cells may introduce additional modulations in the Thon ring pattern (Tichelaar et al., 2020) that can lead to errors in the CTF modeling when not accounted for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the consequence of not accounting for sample thickness.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "6a457185-8589-43f0-bec4-751710b13a7d",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C21",
+      "claim": "Samples of cells are often tilted with respect to the optical axis of the microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, samples of cells are often tilted with respect to the optical axis of the microscope, either unintentionally due to thinning methods such as cryogenic focused ion beam (FIB) milling, or intentionally during electron cryo-tomography imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a common characteristic of cellular cryoEM samples.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "22a5bf27-76c0-41c1-9cce-a4ca91cf14fa",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C22",
+      "claim": "Sample tilt can occur unintentionally due to thinning methods such as cryogenic focused ion beam (FIB) milling.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, samples of cells are often tilted with respect to the optical axis of the microscope, either unintentionally due to thinning methods such as cryogenic focused ion beam (FIB) milling, or intentionally during electron cryo-tomography imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes one source of sample tilt.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "e0d72a35-6252-4b2b-a6b8-b023dfe36cc3",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C23",
+      "claim": "Sample tilt can occur intentionally during electron cryo-tomography imaging.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, samples of cells are often tilted with respect to the optical axis of the microscope, either unintentionally due to thinning methods such as cryogenic focused ion beam (FIB) milling, or intentionally during electron cryo-tomography imaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another source of sample tilt.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "f4b9c07e-ce83-439f-b5fd-314adb0014a0",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C24",
+      "claim": "The effects of sample tilt and thickness are strongest at high resolution, where the Thon rings are more tightly spaced.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases the effects are strongest at high resolution, where the Thon rings are more tightly spaced.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the effects are most pronounced.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "14f8baf6-3691-408f-aeb8-2d9fe3ed2ada",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C25",
+      "claim": "CTFFIND5 can fit the modulations of the Thon ring patterns and determine sample thickness and tilt using an extended CTF model with additional parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe new features of CTFFIND5 that can fit the modulations of the Thon ring patterns and determine sample thickness and tilt using an extended CTF model with additional parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the main capabilities of the new software.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "be106518-23aa-42e5-9bf5-ec906f137c21",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C26",
+      "claim": "CTFFIND5 increases the fidelity of the fit, as Thon rings at higher resolution can now be fitted reliably.",
+      "claim_type": "EXPLICIT",
+      "source": "This not only increases the fidelity of the fit, as Thon rings at higher resolution can now be fitted reliably, but also gives valuable insight into the geometry of the sample that can aid the experimentalist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a benefit of the new method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "0332100c-cdcf-4f28-ac90-0eea598af81c",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C27",
+      "claim": "CTFFIND5 gives valuable insight into the geometry of the sample that can aid the experimentalist.",
+      "claim_type": "EXPLICIT",
+      "source": "This not only increases the fidelity of the fit, as Thon rings at higher resolution can now be fitted reliably, but also gives valuable insight into the geometry of the sample that can aid the experimentalist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another benefit of the new method.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "76b930f4-27ea-4eb4-b14e-46fb66cb4137",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C28",
+      "claim": "Tilt estimation in CTFFIND5 follows a strategy similar to the implementation in CTFTILT.",
+      "claim_type": "EXPLICIT",
+      "source": "Tilt estimation in CTFFIND5 follows a strategy that is similar to the implementation in CTFTILT (Mindell and Grigorieff, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodological approach with a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "738e25ec-f6dc-49ad-a817-38ca9acea113",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C32",
+      "claim": "It is assumed that the defocus variation across the sample can be described by a tilted plane.",
+      "claim_type": "EXPLICIT",
+      "source": "It is assumed that the defocus variation across the sample can be described by a tilted plane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a key assumption of the tilt model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "7dde557e-6a02-4ba8-a553-f5592c7214bb",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C33",
+      "claim": "Fits are evaluated using correlation coefficients between modeled CTFs and Thon ring patterns.",
+      "claim_type": "EXPLICIT",
+      "source": "Fits are evaluated using correlation coefficients between modeled CTFs and Thon ring patterns.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the scoring method for the fits.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "7de4dba8-6ad6-44f3-b254-b4c2732c7101",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C34",
+      "claim": "Tilt correction results in the observation of Thon rings at higher spatial resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the correction results in the observation of Thon rings at higher spatial resolution (Figure 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result demonstrated in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "e9c2b04e-578c-4ba4-9f38-daf28f53f5f8",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C35",
+      "claim": "Correcting for an estimated moderate tilt of 12.3\u00b0 improved the highest resolution at which a reasonable fit could be obtained from 5.9 \u00c5 to 4.6 \u00c5 in a representative micrograph.",
+      "claim_type": "EXPLICIT",
+      "source": "In this example, correcting for the estimated moderate tilt of 12.3\u00b0 improved the highest resolution at which a reasonable fit could be obtained from 5.9 \u00c5 to 4.6 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a specific quantitative result from a representative example.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "37d1aabe-ea13-4d09-941f-8d02899e6da1",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C36",
+      "claim": "The power spectrum appears less noisy after tilt correction, which can be attributed to some low-pass filtering that occurs with the interpolation of the Thon ring patterns of individual tiles.",
+      "claim_type": "EXPLICIT",
+      "source": "The power spectrum also appears less noisy, which can be attributed to some low-pass filtering that occurs with the interpolation of the Thon ring patterns of individual tiles to perform the tilt correction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains an observed effect of the tilt correction procedure.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "c53441ba-c6f5-4bcf-8554-96f2c6cb6f64",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C37",
+      "claim": "The results of CTFFIND5 agree well with aquaporin crystal tilt information from crystallographic analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the results of CTFFIND5 agree well with the aquaporin crystals information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the validation results using aquaporin crystals.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "48c92ff5-7bf4-4769-a106-5b43e38a5384",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C38",
+      "claim": "The average discrepancy between CTFFIND5 and crystallographic analysis was 1.9\u00b0 for the tilt axis direction and 1.5\u00b0 for the tilt angle in aquaporin crystal images.",
+      "claim_type": "EXPLICIT",
+      "source": "The average discrepancy was 1.9\u00b0 for the tilt axis direction and 1.5\u00b0 for the tilt angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the aquaporin crystal validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "40ca236b-1e5f-4fbf-a91a-0295640c4e49",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C39",
+      "claim": "The estimated tilt angle shows a roughly linear relationship with the nominal stage tilt in tilt series data.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated tilt angle shows a roughly linear relationship with the nominal stage tilt, but since CTFFIND5 reports only positive tilt angles the overall plot has a V-shape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the relationship observed in tilt series analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "8fd4db75-3a2e-4909-93af-0f5906145388",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C40",
+      "claim": "In both tilt series examples there is an offset of about 20\u00b0 between nominal and estimated tilts, which is due to the pre-tilt of the specimen caused by FIB milling at a shallow angle.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, in both examples there is an offset of about 20\u00b0 between nominal and estimated tilts, which is due to the pre-tilt of the specimen caused by FIB milling at a shallow angle.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains an observed systematic offset in the tilt series data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "217200b5-a7bf-4220-a429-4db501e5c892",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C41",
+      "claim": "The estimated tilt axis angles of 178.2\u00b0 and 179.8\u00b0 are consistent with the SerialEM calibration of 178.4\u00b0 and 176.3\u00b0 for the stage tilt axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The fitting resulted in an estimated tilt axis angle of 178.2\u00b0 and 179.8\u00b0, respectively, which is consistent with the SerialEM calibration of 178.4\u00b0 and 176.3\u00b0 for the stage tilt axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares CTFFIND5 estimates with independent calibration values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "74e76984-917b-4b9b-83e2-a872a817b9c0",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C42",
+      "claim": "The estimated pre-tilt values of 20.6\u00b0 and \u201321.9\u00b0 are consistent with a FIB-milling angle of 20\u00b0 and opposite orientation of the grids relative to the milling direction.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated pre-tilt values were 20.6 \u00b0and \u201321.9\u00b0, consistent with a FIB-milling angle of 20\u00b0 and opposite orientation of the grids relative to the milling direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This validates the pre-tilt estimates against known experimental parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "d2524783-58ac-450f-afad-074c64ad7c4b",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C43",
+      "claim": "The pre-tilt axis angles of 171.8\u00b0 and 183.8\u00b0 are consistent with the error expected from manually aligning the milling direction when inserting grids into the microscope.",
+      "claim_type": "EXPLICIT",
+      "source": "The pre-tilt axis angles were estimated as 171.8\u00b0 and 183.8\u00b0, which is consistent with the error expected from manually aligning the milling direction when inserting grids into the microscope.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains the observed variation in pre-tilt axis angles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "a8c70013-a0af-4093-ab18-ed4dd587053d",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C44",
+      "claim": "For the first tilt series, accuracy estimates were 2.08\u00b0 and 2.58\u00b0 for tilt and axis angles, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For the first tilt series we obtained accuracy estimates of 2.08\u00b0 and 2.58\u00b0 for tilt and axis angles, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative accuracy measurement from tilt series validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "efe467e6-5312-43c7-9d32-7eacfdf4c2ee",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C45",
+      "claim": "In the second tilt series the accuracy estimates were 3.95\u00b0 and 9.47\u00b0 for tilt and axis angles, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the second tilt series the accuracy estimates were 3.95\u00b0 and 9.47\u00b0.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative accuracy measurement from tilt series validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "863cec92-7dc8-4e78-ad68-fe8121ad1acf",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C46",
+      "claim": "The accuracy of tilt estimation in tilt series was lower than for tilted aquaporin crystals, presumably due to the relatively short exposure of each micrograph in the tilt series.",
+      "claim_type": "EXPLICIT",
+      "source": "In both cases the accuracy was lower than for the tilted aquaporin crystals, presumably due to the relatively short exposure of each micrograph in the tilt series.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This compares accuracy across different datasets and provides an explanation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "56ac1e88-f8bb-4dd6-9c60-6abb175879a1",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C47",
+      "claim": "The substantially higher mean differences in the second tilt series suggest that the accuracy is highly dependent on the quality of the underlying data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the substantially higher mean differences in the second tilt series suggest that the accuracy is highly dependent on the quality of the underlying data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from comparing the two tilt series results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "4f02bc8e-f94f-4534-9e9e-bf76b2405faf",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C48",
+      "claim": "For FIB-milled samples, Thon ring-like modulation can be observed in the power spectrum at higher resolution than suggested by the goodness-of-fit estimate, even after correcting for sample tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "Even after correcting for sample tilt we found that for FIB-milled samples we often could observe Thon ring-like modulation in the power spectrum at higher resolution than suggested by the goodness-of-fit estimate (Figure 3b, top plot).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an observation from FIB-milled samples shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "69cff3b4-b9d7-4283-ad96-4323d62ca508",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C49",
+      "claim": "The modulations observed at higher resolution in FIB-milled samples are out of phase with the predicted modulations, as described by McMullan et al., 2015, and Tichelaar et al., 2020.",
+      "claim_type": "EXPLICIT",
+      "source": "These modulations are out of phase with the predicted modulations, as described by McMullan et al., 2015, and Tichelaar et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the nature of the observed modulations with citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "91ef1760-b006-4ffc-89c8-3346ce87c072",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C50",
+      "claim": "An extension of the CTF model as described by McMullan et al., 2015 was implemented in CTFFIND5.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore implemented an extension of the CTF model as described by McMullan et al., 2015; Figure 3a.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the implementation of a model from the literature.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "a26e5316-cba1-4a77-a7e8-65471bd28fd5",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C51",
+      "claim": "For some images, the thickness could be well estimated by assuming that the goodness-of-fit resolution estimate obtained using the old model corresponds to the first node in the modulation function.",
+      "claim_type": "EXPLICIT",
+      "source": "For some images we found that the thickness could be well estimated by assuming that the goodness-of-fit resolution estimate obtained using the old model implemented in CTFFIND4 corresponds to the first node in the modulation function, according to Equation 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a method for initial thickness estimation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "e7c5abc9-a785-400b-a6c6-275f46c184fe",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C52",
+      "claim": "With the new model in CTFFIND5, estimated CTF parameters were very similar to those from CTFFIND4, but the fit extended to higher resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "With our new model, estimated CTF parameters were very similar to those from CTFFIND4, but the fit in CTFFIND5 extended to higher resolution (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This compares results between CTFFIND4 and CTFFIND5, shown in Figure 3b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "59823203-1a9b-458d-b342-ec8ca2f27ad5",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C53",
+      "claim": "In images with defocus values under 1 \u00b5m and sample thickness over 200 nm, CTFFIND4 could fit the power spectrum before and after the first node using the old CTF model, with some deviations between the fit and the power spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "In other images, mostly with defocus values under 1 \u00b5m and with a sample thickness over 200 nm, CTFFIND4 could fit the power spectrum before and after the first node using the old CTF model, with some deviations between the fit and the power spectrum (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes CTFFIND4 behavior under specific conditions, shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "61b6e54b-5d4b-441b-9250-f59b3d40db26",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C54",
+      "claim": "Fitting the power spectrum with the new model in CTFFIND5 resulted in substantially different estimated CTF parameters and an improved fit for images with defocus under 1 \u00b5m and thickness over 200 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "Fitting the power spectrum with the new model in CTFFIND5 resulted in substantially different estimated CTF parameters and an improved fit, even though the goodness-of-fit estimation did not change.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the improvement achieved with CTFFIND5 for specific image types.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "b0af3366-17ee-4a9c-8210-ed443950f033",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C55",
+      "claim": "For some single-particle datasets of large particles, such as the rotavirus double-layered particle, CTFFIND5 can be used to estimate the thickness of the sample, which resulted in CTF fits to higher resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that for some single-particle datasets of large particles, such as the rotavirus double-layered particle (Grant and Grigorieff, 2015), we could use CTFFIND5 to estimate the thickness of the sample, which resulted in CTF fits to higher resolution (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an application to single-particle data with a citation and reference to Figure 3d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "3603c5ac-dfe8-450b-976b-c5b4bbb33baf",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C56",
+      "claim": "CTFFIND5 will provide more accurate CTF parameters for images of thick samples, such as those generated from FIB milling.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results we conclude that CTFFIND5 will provide more accurate CTF parameters for images of thick samples, such as those generated from FIB milling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "3eb9bcc9-5613-4f3c-bb1b-330deda24c22",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C57",
+      "claim": "The fit in CTFFIND5 provides a direct readout of the specimen thickness, which is important for judging specimen quality and the potential for high-resolution information.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the fit provides a direct readout of the specimen thickness, which is important for judging specimen quality and the potential for high-resolution information that can be recovered from these images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a practical benefit of the thickness estimation feature.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "d9bb24d8-f43b-4922-8b81-2f2f957df70f",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C58",
+      "claim": "The fraction of inelastically scattered electrons can be described by the Beer-Lambert law.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of inelastically scattered electrons can be described by the Beer-Lambert law, which states that the fraction of electrons removed from the image is proportional to the thickness of the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of a physical law used for validation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "0b1bc3fb-1f7d-4fb1-920c-7fcf45110510",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C59",
+      "claim": "The Beer-Lambert law states that the fraction of electrons removed from the image is proportional to the thickness of the sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The fraction of inelastically scattered electrons can be described by the Beer-Lambert law, which states that the fraction of electrons removed from the image is proportional to the thickness of the sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of a physical law.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "b592d9f4-78cd-4e9c-bd94-a3bc8952b4c3",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C60",
+      "claim": "The apparent mean free path for electron scattering has been experimentally determined for common cryoEM conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent mean free path for electron scattering has been experimentally determined for common cryoEM conditions (Rice et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references prior experimental work with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "455c5588-ee96-44d1-b5e1-07fee885ccf0",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C62",
+      "claim": "Images that did not follow the linear relationship either contained visible ice contamination, platinum deposits, or they were collected over ice without cellular features and displayed weak Thon rings.",
+      "claim_type": "EXPLICIT",
+      "source": "Manual inspection of images that did not follow this linear relationship revealed that they either contained visible ice contamination, platinum deposits, or they were collected over ice without cellular features and displayed weak Thon rings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This explains outliers in the Beer-Lambert law validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "2b3b669c-e1d6-4b9e-a029-ec2b7c3c840a",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C64",
+      "claim": "The x-axis intercept of the linear model was \u201314.1 nm, meaning that the node position systematically predicts a smaller thickness than predicted by the Beer-Lambert law.",
+      "claim_type": "EXPLICIT",
+      "source": "The x-axis intercept of the linear model was \u201314.1 nm, meaning that the node position systematically predicts a smaller thickness than predicted by the Beer-Lambert law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a systematic discrepancy between the two methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "809a2ebb-4539-4d5d-93b4-08a97b93df92",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C65",
+      "claim": "The mean absolute difference between CTFFIND5 thickness estimates and the linear model was 4.8 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "To estimate the accuracy of the sample thickness determined by CTFFIND5, we calculated the mean absolute difference to the linear model, which was 4.8 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative accuracy measurement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "55b0ee20-064c-4910-b081-f51b94537f58",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C67",
+      "claim": "The two approaches (node fitting and Beer-Lambert law) are complementary as they rely on orthogonal mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the two approaches are complementary as they rely on orthogonal mechanisms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the relationship between the two methods.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "77e1360f-7a46-4388-a6be-2e55ee0a4c23",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C69",
+      "claim": "A linear fit of CTFFIND5 vs tomography thickness revealed a slope of 0.95 and a y-axis intercept of 0.12 nm.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear fit revealed a slope of 0.95 and a y-axis intercept of 0.12 nm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the tomography validation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "150950c8-30e9-4b4e-a858-edeab8857d85",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C70",
+      "claim": "The CTFFIND5 thickness estimate is on average 1.05\u00d7 higher than the thickness estimated by tomography.",
+      "claim_type": "EXPLICIT",
+      "source": "This means that the CTFFIND5 thickness estimate is on average 1.05\u00d7 higher than the thickness estimated by tomography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is derived from the linear fit results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "8d8b29a7-50b4-48db-8557-3157ca6d9ecb",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C71",
+      "claim": "Tichelaar et al., 2020, also report that estimating the thickness from the CTF nodes resulted in values roughly 1.1\u00d7 higher than estimated by tomography.",
+      "claim_type": "EXPLICIT",
+      "source": "Tichelaar et al., 2020, also report that estimating the thickness from the CTF nodes resulted in values roughly 1.1\u00d7 higher than estimated by tomography.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This cites prior work that found a similar systematic difference.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "2f31198b-272e-4c60-9483-0c3af7fb4104",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C72",
+      "claim": "The reasons for the systematic discrepancies between thicknesses estimated by CTFFIND5 and estimates based on the Beer-Lambert law and tomography are unclear.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasons for the systematic discrepancies between thicknesses estimated by CTFFIND5 and estimates based on the Beer-Lambert law and tomography are unclear, but since they are small and CTFFIND5 estimates lie in between the other two estimates, they will provide comparable information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This acknowledges an unexplained systematic difference.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "270214af-ff06-4b8a-af12-15a980e6c949",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C73",
+      "claim": "Since the systematic discrepancies are small and CTFFIND5 estimates lie in between the other two estimates, they will provide comparable information.",
+      "claim_type": "EXPLICIT",
+      "source": "The reasons for the systematic discrepancies between thicknesses estimated by CTFFIND5 and estimates based on the Beer-Lambert law and tomography are unclear, but since they are small and CTFFIND5 estimates lie in between the other two estimates, they will provide comparable information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion about the practical utility despite systematic differences.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "be64afa9-22c9-4764-a11c-482c3b0c8f54",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C74",
+      "claim": "A simple CTF correction based on CTFFIND defocus estimates obtained from overview images can reduce fringes near biological membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that a simple CTF correction based on CTFFIND defocus estimates obtained from the overview images can reduce these fringes (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an application of CTF correction to overview images, shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "9c95e36b-11f0-4120-ac93-e1120fc4076f",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C75",
+      "claim": "Including a Wiener filter-based amplitude correction produces a more naturally looking image that might be best suited to recognize cellular features.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we found that including a Wiener filter-based amplitude correction described by Tegunov and Cramer, 2019, produces a more naturally looking image that might be best suited to recognize cellular features (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a method for improving image appearance with a citation, shown in Figure 6d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "44ce43eb-5773-417d-8af0-fe2f861cb440",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C76",
+      "claim": "Without estimation of tilt or sample thickness, CTFFIND5 performed CTF estimation roughly within a second.",
+      "claim_type": "EXPLICIT",
+      "source": "Without estimation of tilt or sample thickness CTFFIND5 performed CTF estimation roughly within a second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a runtime measurement from benchmarking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "f6ad5bbb-300c-4476-aeac-827e4a36e290",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C77",
+      "claim": "Estimation of the sample thickness adds roughly half a second to the runtime.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimation of the sample thickness adds roughly half a second to the runtime, therefore allowing CTF estimation within a timeframe comparable to typical exposure times.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a runtime measurement from benchmarking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "d7d0b0f7-230d-4456-b134-e6ca1a3cbc5d",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C78",
+      "claim": "Estimation of the tilt increased runtimes substantially to the order of several minutes, due to the exhaustive search of potential tilts over hundreds of power spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "Estimation of the tilt on the other hand increased runtimes substantially to the order of several minutes, due to the exhaustive search of potential tilts over hundreds of power spectra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a runtime measurement with an explanation for the increase.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "ea4951c0-0e5c-411d-8437-890597bf5b13",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C79",
+      "claim": "Near real-time tilt estimation can be achieved by using multiple CPU cores.",
+      "claim_type": "EXPLICIT",
+      "source": "While these runtimes are substantially slower than cryoEM data acquisition, near real-time estimation can be achieved by using multiple CPU cores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This suggests a practical solution to the runtime issue.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "484fcbc2-4c26-4b67-8c7c-0b89180b056e",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C80",
+      "claim": "Optimization of the number of tiles used, better search algorithms, or implementations employing GPUs could increase the speed to the point where real-time estimation is more feasible.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, optimization of the number of tiles used, better search algorithms, or implementations employing GPUs could increase the speed to the point where real-time estimation is more feasible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This speculates about potential future improvements.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "5bf0f567-c6ff-4156-b489-726997145a42",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C81",
+      "claim": "The improvements implemented in CTFFIND5 result in more accurate CTF estimation of thick and tilted samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the improvements implemented in CTFFIND5 result in more accurate CTF estimation of thick and tilted samples and provide valuable information about the samples to the microscopist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "34e93cdf-0624-4d0d-b438-dde6bd036f6f",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C82",
+      "claim": "CTFFIND5 provides valuable information about the samples to the microscopist.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the improvements implemented in CTFFIND5 result in more accurate CTF estimation of thick and tilted samples and provide valuable information about the samples to the microscopist.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion of the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "7b2b5b04-02cb-4c5e-a058-e06ccc7218e4",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C83",
+      "claim": "The new features implemented in CTFFIND5 improve CTF estimation from the power spectra of cryoEM micrographs where assumptions made in CTFFIND4 do not hold.",
+      "claim_type": "EXPLICIT",
+      "source": "The new features implemented in CTFFIND5 improve CTF estimation from the power spectra of cryoEM micrographs where assumptions made in its predecessor, CTFFIND4, namely a thin and untilted sample, do not hold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion statement summarizing the main contribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "3fb6c19e-92fa-4a2f-ae11-ecb976d07d65",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C84",
+      "claim": "The tilt of the sample is estimated by fitting the CTF to the power spectra calculated from small patches across the image, similar to other software including CTFTilt, Ctfplotter, goCTF, Bsoft, and Warp.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt of the sample is estimated by fitting the CTF to the power spectra calculated from small patches across the image, similar to other software including CTFTilt (Mindell and Grigorieff, 2003), Ctfplotter (Mastronarde, 2024; Xiong et al., 2009), goCTF (Su, 2019), Bsoft (Heymann and Belnap, 2007), and Warp (Tegunov and Cramer, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the method and compares it to other software with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "2256dae1-9434-4773-8286-62056f24294b",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C85",
+      "claim": "After estimation of the sample tilt, a tilt-corrected power spectrum is produced that exhibits stronger Thon rings at higher resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "After estimation of the sample tilt, a tilt-corrected power spectrum is produced that exhibits stronger Thon rings at higher resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a result of the tilt estimation procedure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "5eee99a0-fbf2-4a82-a765-c4285b5a09d9",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C86",
+      "claim": "Fitting a modified CTF model that accounts for sample thickness increases the resolution of the fitted regions of the spectra and provides a readout of the sample thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "To take into account the modulation of the power spectra by thick samples (McMullan et al., 2015; Tichelaar et al., 2020), we fit a modified CTF model, which increases the resolution of the fitted regions of the spectra and provides a readout of the sample thickness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the benefit of the thickness estimation feature with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "d8cade85-ea1d-4174-a854-7d73796e5494",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C87",
+      "claim": "The low exposures (3\u20135 e-/\u00c52) typically used in electron cryo-tomography often preclude fitting of sample thickness from power spectra of individual images in the tilt series.",
+      "claim_type": "EXPLICIT",
+      "source": "While the low exposures (3\u20135 e-/\u00c52) typically used in electron cryo-tomography often preclude fitting of sample thickness from power spectra of individual images in the tilt series, we demonstrate that this works reliably for higher exposures (~30 e-/\u00c52) typically used for 2D template matching (2DTM) (Lucas et al., 2021; Rickgauer et al., 2017) and in situ single-particle analysis (Cheng et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of the method for low-dose imaging with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "64d14704-7c82-418a-8035-20246dee507c",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C88",
+      "claim": "Thickness fitting works reliably for higher exposures (~30 e-/\u00c52) typically used for 2D template matching and in situ single-particle analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "While the low exposures (3\u20135 e-/\u00c52) typically used in electron cryo-tomography often preclude fitting of sample thickness from power spectra of individual images in the tilt series, we demonstrate that this works reliably for higher exposures (~30 e-/\u00c52) typically used for 2D template matching (2DTM) (Lucas et al., 2021; Rickgauer et al., 2017) and in situ single-particle analysis (Cheng et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes where the method works well with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "e3858045-15c5-4c1c-89cf-aef7405ab742",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C89",
+      "claim": "These improvements were mainly developed for 2DTM applied to in situ samples prepared by cryo-FIB milling.",
+      "claim_type": "EXPLICIT",
+      "source": "We mainly developed these improvements for 2DTM applied to in situ samples, e.g., prepared by cryo-FIB milling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the primary motivation for the development.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "4f31a54a-19b9-4e53-aa97-aab9305348ca",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C90",
+      "claim": "CTFFIND5 made it possible to quantify sample thickness and tilt parameters for every exposure, which is important information to judge the quality of the lamella before performing time-intensive further processing.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the sample thickness and sample tilt are apparent from a single exposure, as opposed to a reconstructed tomogram, CTFFIND5 made it possible to quantify these parameters for every exposure. This is important information to judge the quality of the lamella before performing time-intensive further processing (Lucas and Grigorieff, 2023; Tuijtel et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a practical benefit of the method with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "36cc4630-8faa-4c18-b0c2-3152c9e92d00",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C91",
+      "claim": "The quality-of-fit estimation of CTFFIND5 goes to higher resolution in tilted and thick samples, making it a better indicator of micrograph quality than the same metric in CTFFIND4.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, since the quality-of-fit estimation of CTFFIND5 goes to higher resolution in tilted and thick samples (Figures 1c and 3b\u2013d), it is a better indicator of micrograph quality than the same metric in CTFFIND4.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes an improvement in quality assessment with references to figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "6c0e72ae-d831-4283-a5fd-3bc9eff1554d",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C92",
+      "claim": "In contrast to software optimized for tilt series data, CTFFIND5 uses no prior information for tilt axis angle and sample tilt, resulting in reduced performance and potentially lower accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to software optimized for tilt series data, such as Ctfplotter (Mastronarde, 2024), CTFFIND5 uses no prior information for tilt axis angle and sample tilt, resulting in reduced performance and also potential lower accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation of CTFFIND5 for tilt series with a citation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "b227fa42-51ba-4f33-bfe3-0096c894ec18",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C93",
+      "claim": "There is no option in CTFFIND5 to pool data from several tilt angles to provide a more accurate defocus or astigmatism estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there is no option to pool data from several tilt angles to provide a more accurate defocus or astigmatism estimation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes another limitation for tilt series applications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "f1856a39-808a-4c32-8e2d-cbd38605b8d0",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C94",
+      "claim": "CTFFIND5 together with fit_tilt_model might be useful in troubleshooting angle conventions in tilt series data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this also means that CTFFIND5 together with fit_tilt_model might be useful in troubleshooting angle conventions in tilt series data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This suggests a potential use case for the software.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "27e6999a-f06a-41b7-9939-99caf9c23a26",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C95",
+      "claim": "Existing pipelines using CTFFIND4 might benefit from the tilt correction in the power spectrum calculation introduced in CTFFIND5, which results in more robust defocus estimation at high tilt.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, existing pipelines using CTFFIND4 might benefit from the tilt correction in the power spectrum calculation introduced in CTFFIND5, which results in more robust defocus estimation at high tilt (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This suggests a benefit for existing workflows with reference to Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "55f3020c-a152-4a76-bc26-852669afe114",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C96",
+      "claim": "Most single-particle samples are thin and flat and therefore do not benefit from CTFFIND5.",
+      "claim_type": "EXPLICIT",
+      "source": "While most single-particle samples are thin and flat and therefore do not benefit from CTFFIND5, there might be some samples, such as viral particles (Figure 3d), where direct estimation of the ice thickness is valuable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the limited applicability to single-particle samples.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "3fe120ad-2369-4217-8141-c921a6af10db",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C97",
+      "claim": "For some single-particle samples, such as viral particles, direct estimation of the ice thickness is valuable.",
+      "claim_type": "EXPLICIT",
+      "source": "While most single-particle samples are thin and flat and therefore do not benefit from CTFFIND5, there might be some samples, such as viral particles (Figure 3d), where direct estimation of the ice thickness is valuable.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes a potential application to certain single-particle samples with reference to Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "0221d775-7d92-4974-8c2a-bd3a9ef1e1ad",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C98",
+      "claim": "Even for thick single-particle samples, the defocus reported by CTFFIND5 is an average for the whole micrograph and per-particle CTF refinement will still be required to recover high-resolution information during averaging.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even in these cases the defocus reported by CTFFIND5 is an average for the whole micrograph and per-particle CTF refinement, as implemented in cisTEM (Grant et al., 2018), RELION (Zivanov et al., 2018), or CryoSPARC (Punjani et al., 2017; Zivanov et al., 2020), will still be required to actually recover high-resolution information during averaging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a limitation and the need for further refinement with citations.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "a9ca675e-57f0-41ec-9d21-899aeb1b3697",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C99",
+      "claim": "The ability to measure sample tilt might be useful for approaches where a tilted stage is used to overcome preferred particle orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ability to measure sample tilt might be useful for approaches where a tilted stage is used to overcome preferred particle orientation (Tan et al., 2017), as initial per particle defocus values can be derived from the tilt as reported by CTFFIND5 and the particle positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This suggests a potential application with a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "b382a739-b5f1-4259-b786-7ebda965d69a",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C100",
+      "claim": "Power spectra are calculated in 128\u00d7128 pixel patches across the micrograph for tilt estimation.",
+      "claim_type": "EXPLICIT",
+      "source": "Power spectra are calculated in 128\u00d7128 pixel patches as indicated on a representative micrograph.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "934618e6-341b-4228-974d-c9ba1556b209",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C103",
+      "claim": "The tilt-corrected power spectrum exhibits clear peaks at higher spatial resolution than the uncorrected power spectrum.",
+      "claim_type": "EXPLICIT",
+      "source": "The tilt-corrected power spectrum exhibits clear peaks at higher spatial resolution than the uncorrected power spectrum, as evident by the 'goodness-of-fit' scores (dashed lines).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "e774d788-9e16-406a-9897-22f45e3943d2",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "claim_id": "C104",
+      "claim": "The fit resolution improved from 5.9 \u00c5 for the uncorrected power spectrum to 4.6 \u00c5 for the tilt-corrected spectrum in the example shown.",
+      "claim_type": "EXPLICIT",
+      "source": "The fit resolution is 5.9 \u00c5 for the uncorrected power spectrum (dashed line, blue) and 4.6 \u00c5 for the tilt-corrected spectrum (dashed line, black).",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background that TEM images are affected by lens aberrations and defocus, which can be modeled using the CTF. Accurate CTF estimation and correction is essential for high-resolution cryoEM, and CTFFIND4 has been the standard tool for this purpose.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C11-C16) provide well-established background knowledge about cryoEM and CTF estimation, supported by appropriate citations to prior work. They accurately describe the field's current understanding and the role of CTFFIND4.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "2bae9b07-17e2-4f42-a983-67d521c81bf7",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CTFFIND4 has limitations when applied to thick and tilted cellular samples, as it assumes uniform defocus across the sample. Thick samples introduce additional modulations in Thon ring patterns, and cellular samples are often tilted due to FIB milling or tomography, with effects most pronounced at high resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C24 accurately identify limitations of CTFFIND4 and describe problems with thick/tilted samples, supported by appropriate citations (Tichelaar et al., 2020). These establish the motivation for the new method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "98ba8375-8853-4c87-bf96-06b1aac3a857",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CTFFIND5 improves CTF estimation by accounting for sample thickness and tilt using an extended CTF model, which increases fit fidelity at higher resolution and provides valuable geometric information about the sample, particularly important for cellular samples.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C25-C27, C81-C83 describe the main contribution of CTFFIND5. The improvements are demonstrated through multiple validation experiments (aquaporin crystals, tilt series, FIB-milled samples) showing quantitative improvements in fit resolution and accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "c33839c5-2a9a-43fb-88a2-aa75ee3a63ad",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "CTFFIND5 estimates sample tilt by fitting CTF to power spectra from 128\u00d7128 pixel patches across the micrograph, assuming defocus variation can be described by a tilted plane, and evaluating fits using correlation coefficients. This approach is similar to CTFTILT and other software.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C32-C33, C84, C100 describe the tilt estimation methodology with appropriate citations to similar approaches. The method is clearly described and follows established principles in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Validation using tilted aquaporin crystals shows CTFFIND5 can measure sample tilt with 3\u00b0 accuracy and improves fit resolution from 5.9 \u00c5 to 4.6 \u00c5 after tilt correction. CTFFIND5 estimates agree well with crystallographic analysis, with average discrepancies of 1.9\u00b0 for tilt axis and 1.5\u00b0 for tilt angle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10, C34-C38, C103-C104 present quantitative validation results using aquaporin crystals as a ground truth. The accuracy estimates are well-supported by comparison to crystallographic analysis (Table 1), and the improvement in fit resolution is demonstrated in Figure 1c.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Validation using two tilt series from FIB-milled lamellae shows CTFFIND5 correctly estimates tilt angles with a linear relationship to nominal stage tilt, identifies ~20\u00b0 pre-tilt from FIB milling, and achieves accuracy of 2.08-3.95\u00b0 for tilt and 2.58-9.47\u00b0 for axis angles. Accuracy is lower than for aquaporin crystals and depends on data quality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C47 present tilt series validation with quantitative accuracy measurements. The results are internally consistent, showing expected pre-tilt from FIB milling and agreement with SerialEM calibration. The acknowledgment that accuracy depends on data quality is appropriate given the observed differences between the two tilt series.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CTFFIND5 implements an extended CTF model based on McMullan et al. 2015 to account for sample thickness effects. For FIB-milled samples and some thick single-particle samples, this model extends fits to higher resolution and provides direct thickness readout, with particularly substantial improvements for images with defocus <1 \u03bcm and thickness >200 nm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C57, C86 describe the thickness estimation feature with appropriate citations and demonstrate improvements through multiple examples (Figure 3b-d). The model is based on established theory (McMullan et al., 2015) and shows clear improvements in fit quality and resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "4e7eee1d-cda5-485a-9350-06f8aadb4c0f",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Validation using the Beer-Lambert law on 655 energy-filtered micrographs shows CTFFIND5 thickness estimates follow a linear relationship with electron scattering (\u03ba=317 nm), with mean absolute accuracy of 4.8 nm. The methods are complementary as they rely on orthogonal mechanisms, though there is a systematic -14.1 nm offset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C60, C62, C64-C65, C67 present validation against an independent physical method. The linear relationship (568/655 images) and accuracy estimate are well-supported by Figure 4. The systematic offset is acknowledged but not explained, which is appropriate given current understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "510c1152-cbe5-4ed8-aa55-943b47640202",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Validation using tomography from seven locations shows CTFFIND5 thickness estimates are 1.05\u00d7 higher than tomography measurements (slope=0.95, intercept=0.12 nm). This is consistent with prior work (Tichelaar et al., 2020) showing 1.1\u00d7 overestimation. The reasons for systematic discrepancies are unclear, but estimates provide comparable information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 present tomography validation with quantitative results (Figure 5). The systematic overestimation is acknowledged and consistent with prior literature (C71). The conclusion that estimates are still useful despite unexplained systematic differences is reasonable given the small magnitude of discrepancies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "a85a7306-69be-4a8d-bec9-80c507e2428e",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CTF correction using CTFFIND5 defocus estimates can reduce fringes in medium-magnification overview images of cellular samples. A Wiener filter-based amplitude correction produces more natural-looking images suited for recognizing cellular features.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 describe a practical application demonstrated in Figure 6. The improvement is visually apparent in the figures, and the Wiener filter approach is appropriately cited (Tegunov and Cramer, 2019).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "15668911-c7cd-4e1b-ac81-323f08d6d8a3",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "CTFFIND5 runtime is ~1 second without tilt/thickness estimation, ~1.5 seconds with thickness estimation, and several minutes with tilt estimation due to exhaustive search. Near real-time tilt estimation can be achieved with multiple CPU cores, and further optimization is possible.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C80 present runtime benchmarking (Table 2) with clear measurements and appropriate caveats. The suggestion of future optimizations (C80) is reasonable speculation based on the identified computational bottleneck.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "044898bf-76bf-4775-80c6-e9921f1bed3e",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CTFFIND5 thickness estimation works reliably for higher exposures (~30 e-/\u00c5\u00b2) used in 2DTM and in situ single-particle analysis, but not for low exposures (3-5 e-/\u00c5\u00b2) in tomography. The method enables quality assessment of lamellae before time-intensive processing and provides better quality-of-fit indicators than CTFFIND4.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C91 appropriately describe the scope and limitations of the method with citations to relevant applications. The practical benefits for workflow optimization are well-justified by the demonstrated improvements in fit resolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "271170c1-1511-4d67-a727-7bc85b161aa2",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "CTFFIND5 has limitations for tilt series compared to specialized software (e.g., Ctfplotter) as it uses no prior information and cannot pool data across tilt angles. However, it may be useful for troubleshooting angle conventions and provides more robust defocus estimation at high tilt for existing CTFFIND4 pipelines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C95 appropriately acknowledge limitations while identifying potential use cases. The comparison to specialized software is fair, and the suggested benefits for existing workflows are supported by Figure 2 results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "1b9b337f-1510-462d-8d9d-6a1e2e6c46d4",
+      "content_id": "93d0ed45-240f-41db-9234-a71ef6ce821e",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Most single-particle samples do not benefit from CTFFIND5, but some thick samples (e.g., viral particles) may benefit from thickness estimation. However, per-particle CTF refinement is still required for high-resolution averaging. Tilt measurement might be useful for tilted-stage approaches to overcome preferred orientation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C96-C99 appropriately scope the applicability to single-particle cryoEM. The limitation that per-particle refinement is still needed (C98) is important and well-supported by citations to relevant software. The suggested application to preferred orientation (C99) is reasonable speculation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "02788256-698f-43cf-b048-db7698a1ba9f",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "CTFFIND5 improves CTF estimation by accounting for sample thickness and tilt, leading to more accurate CTF parameters and providing valuable information about sample geometry. The software implements an extended CTF model that increases the fidelity of fits and allows Thon rings at higher resolution to be fitted reliably.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm these core claims. The editor states CTFFIND5 'leads to improved CTF determination' and describes 'compelling evidence that CTFFIND5 finds better CTF parameters than previous methods.' Reviewer 1 confirms 'the manuscript introduces novel methods inside CTFFIND5 that improve CTF estimation' and Reviewer 2 states 'the results convincingly show the added value of the program.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "0fed851c-f171-4b54-b131-2ca1a97f14b7",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "CTFFIND5 can measure sample tilt with an accuracy of approximately 3\u00b0 and sample thickness with an accuracy of 5 nm. Validation using tilted aquaporin crystals showed average discrepancies of 1.9\u00b0 for tilt axis direction and 1.5\u00b0 for tilt angle. Tilt series validation showed lower accuracy (2-4\u00b0 for tilt, 2.6-9.5\u00b0 for axis angles), with accuracy dependent on data quality.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states 'the evaluation demonstrates the performance of the new tool, with fairly accurate estimates of tilt axis, tilt angle and sample thickness.' The editor notes the evidence is 'compelling' for tilted samples. No reviewer challenges the accuracy measurements or validation approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "252a9930-ac6f-41fb-b2de-83e629f2dd7d",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Tilt correction results in observation of Thon rings at higher spatial resolution. In a representative example, correcting for 12.3\u00b0 tilt improved the fit resolution from 5.9 \u00c5 to 4.6 \u00c5, with the tilt-corrected power spectrum exhibiting clearer peaks at higher resolution.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes that CTFFIND5 'provides more accurate CTF estimation' and the editor emphasizes 'compelling evidence' for improved performance with tilted samples. The specific quantitative improvements shown in Figure 1c are not challenged by any reviewer.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "CTFFIND5 implements an extended CTF model accounting for sample thickness based on McMullan et al. (2015), which allows fitting of modulations in thick samples. This results in CTF fits extending to higher resolution and provides direct readout of specimen thickness, particularly valuable for FIB-milled samples.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states 'CTFFIND5 represents the first CTF determination tool that considers the thickness-related modulation envelope' and confirms 'CTFFIND5 thus provides more accurate CTF estimation.' Reviewer 2 notes 'the results convincingly show the added value of the program for thicker and tilted images.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Validation of thickness estimates using Beer-Lambert law and tomography showed systematic discrepancies: CTFFIND5 estimates were 14.1 nm lower than Beer-Lambert predictions (mean absolute difference 4.8 nm) and 1.05\u00d7 higher than tomography estimates. The reasons for these discrepancies are unclear, but the differences are small and CTFFIND5 estimates lie between the other two methods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'the authors use the Lambert-Beer law on energy-filtered data and also tomographic data, thus demonstrating that the estimates are reasonable.' The systematic discrepancies are acknowledged but not challenged by reviewers, who accept the validation approach and conclusions about practical utility.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "21c8fe35-4077-4c92-9087-24d56c8ad1d7",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Thickness fitting works reliably for higher exposures (~30 e-/\u00c5\u00b2) used in 2D template matching and in situ single-particle analysis, but low exposures (3-5 e-/\u00c5\u00b2) typical of cryo-tomography often preclude reliable thickness fitting. Most single-particle samples do not benefit from CTFFIND5, though some large particles like viral particles may benefit from ice thickness estimation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly acknowledges this limitation: 'While consideration of sample thickness in CTF determination sounds ideally suited for cryoET, practical application under the standard acquisition protocols in cryoET (exposure of 3-5 e/A2 per image) is still limited.' The reviewer confirms 'the authors are precise in the conclusions and clearly identify the current range of application.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "308d99c9-1558-4fa7-af37-e8f2758968a6",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "In tilt series analysis, estimated tilt angles show a roughly linear relationship with nominal stage tilt, with a ~20\u00b0 offset due to FIB milling pre-tilt. Estimated tilt axis angles (178.2\u00b0 and 179.8\u00b0) are consistent with SerialEM calibration (178.4\u00b0 and 176.3\u00b0), and pre-tilt values (20.6\u00b0 and -21.9\u00b0) match the 20\u00b0 FIB-milling angle.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'the performance of the algorithm is evaluated with tilted 2D crystals and tilt-series, demonstrating accurate tilt estimation in general.' The specific validation against known experimental parameters is not challenged by any reviewer.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "3053c159-4ee2-442e-b726-e8f0a999be4b",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "CTFFIND5 can estimate thickness for some single-particle datasets of large particles (e.g., rotavirus), resulting in CTF fits to higher resolution. The quality-of-fit estimation extends to higher resolution in tilted and thick samples, making it a better indicator of micrograph quality than CTFFIND4.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes that thickness estimation 'may be a valuable resource to judge the potential for high resolution' and confirms application to 'in vitro single particle cryoEM of large specimens (e.g. viral particles).' The improved quality metrics are not challenged.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "0f6c1ef1-fa6e-4ce9-ad73-94f7963f609e",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "CTFFIND5 performs CTF estimation in roughly one second without tilt/thickness estimation. Thickness estimation adds ~0.5 seconds, while tilt estimation increases runtime to several minutes due to exhaustive search. Near real-time estimation can be achieved using multiple CPU cores, and further optimization could improve speed.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer challenges the runtime measurements or raises concerns about computational performance. The practical implications are implicitly accepted as the reviewers focus on the scientific value and accuracy of the results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "bf40e4db-a3a3-4fff-9e68-1c038bb9c82e",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "CTFFIND5 has limitations for tilt series applications: it uses no prior information for tilt axis angle and sample tilt (unlike specialized software like Ctfplotter), resulting in reduced performance and potentially lower accuracy. There is no option to pool data from multiple tilt angles. However, it may be useful for troubleshooting angle conventions and existing pipelines may benefit from tilt correction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 implicitly acknowledges these limitations by noting the method is valuable for specific applications rather than all cryo-ET workflows. The authors' transparent discussion of limitations is not challenged, and reviewers accept the defined scope of application.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "b85665d4-786c-4146-8e48-d5c2d9e6593e",
+      "content_id": "188a2d5a-59d6-4c82-b7fc-42f6eb127157",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "CTF correction based on CTFFIND5 defocus estimates can reduce fringes near biological membranes in overview images. Including Wiener filter-based amplitude correction produces more naturally looking images suited for recognizing cellular features.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This application to overview images is presented as a practical benefit and is not challenged by any reviewer. It is treated as a supporting finding demonstrating the utility of the improved CTF estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "101b21ed-2d50-4e6a-ab72-c9775a187f89",
+      "result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb"
+    },
+    {
+      "claim_id": "65642ef6-26ac-432d-a20b-6e209aa9f709",
+      "result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb"
+    },
+    {
+      "claim_id": "d90672fe-9343-44c2-a725-3f8ea711eefe",
+      "result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb"
+    },
+    {
+      "claim_id": "a8a5339c-d7f2-4431-91e0-077d211dd23b",
+      "result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb"
+    },
+    {
+      "claim_id": "589a9356-ee2e-49a8-8962-9757b208abc9",
+      "result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb"
+    },
+    {
+      "claim_id": "f06fb35c-26fe-435d-85cf-9d6251498f87",
+      "result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb"
+    },
+    {
+      "claim_id": "80623ddf-6aa1-4676-a484-1859b64842b8",
+      "result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb"
+    },
+    {
+      "claim_id": "17f65095-2476-4bf7-9b62-a59ed2d2f135",
+      "result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb"
+    },
+    {
+      "claim_id": "e670c719-124d-454a-9faf-45550122dc1a",
+      "result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb"
+    },
+    {
+      "claim_id": "5de45493-56a0-4b81-ba89-bf2aea95eb00",
+      "result_id": "2bae9b07-17e2-4f42-a983-67d521c81bf7"
+    },
+    {
+      "claim_id": "58f8ec31-f6a0-478d-bc37-206df7aa8fe7",
+      "result_id": "2bae9b07-17e2-4f42-a983-67d521c81bf7"
+    },
+    {
+      "claim_id": "f90ff2c7-1312-4a86-b8a7-c7533d45d475",
+      "result_id": "2bae9b07-17e2-4f42-a983-67d521c81bf7"
+    },
+    {
+      "claim_id": "3d559577-4a41-4799-9321-28fb6182fc86",
+      "result_id": "2bae9b07-17e2-4f42-a983-67d521c81bf7"
+    },
+    {
+      "claim_id": "6a457185-8589-43f0-bec4-751710b13a7d",
+      "result_id": "2bae9b07-17e2-4f42-a983-67d521c81bf7"
+    },
+    {
+      "claim_id": "22a5bf27-76c0-41c1-9cce-a4ca91cf14fa",
+      "result_id": "2bae9b07-17e2-4f42-a983-67d521c81bf7"
+    },
+    {
+      "claim_id": "e0d72a35-6252-4b2b-a6b8-b023dfe36cc3",
+      "result_id": "2bae9b07-17e2-4f42-a983-67d521c81bf7"
+    },
+    {
+      "claim_id": "f4b9c07e-ce83-439f-b5fd-314adb0014a0",
+      "result_id": "2bae9b07-17e2-4f42-a983-67d521c81bf7"
+    },
+    {
+      "claim_id": "4ef98ddb-01b8-49b1-9bf8-ea5d2003d87a",
+      "result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857"
+    },
+    {
+      "claim_id": "29b0ec96-3b81-4fbb-a1c9-cfd8659af411",
+      "result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857"
+    },
+    {
+      "claim_id": "9dc3c1b7-abd8-4064-9ac6-c4ef0052796a",
+      "result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857"
+    },
+    {
+      "claim_id": "14f8baf6-3691-408f-aeb8-2d9fe3ed2ada",
+      "result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857"
+    },
+    {
+      "claim_id": "be106518-23aa-42e5-9bf5-ec906f137c21",
+      "result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857"
+    },
+    {
+      "claim_id": "0332100c-cdcf-4f28-ac90-0eea598af81c",
+      "result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857"
+    },
+    {
+      "claim_id": "5bf0f567-c6ff-4156-b489-726997145a42",
+      "result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857"
+    },
+    {
+      "claim_id": "34e93cdf-0624-4d0d-b438-dde6bd036f6f",
+      "result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857"
+    },
+    {
+      "claim_id": "7b2b5b04-02cb-4c5e-a058-e06ccc7218e4",
+      "result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857"
+    },
+    {
+      "claim_id": "76b930f4-27ea-4eb4-b14e-46fb66cb4137",
+      "result_id": "c33839c5-2a9a-43fb-88a2-aa75ee3a63ad"
+    },
+    {
+      "claim_id": "738e25ec-f6dc-49ad-a817-38ca9acea113",
+      "result_id": "c33839c5-2a9a-43fb-88a2-aa75ee3a63ad"
+    },
+    {
+      "claim_id": "7dde557e-6a02-4ba8-a553-f5592c7214bb",
+      "result_id": "c33839c5-2a9a-43fb-88a2-aa75ee3a63ad"
+    },
+    {
+      "claim_id": "3fb6c19e-92fa-4a2f-ae11-ecb976d07d65",
+      "result_id": "c33839c5-2a9a-43fb-88a2-aa75ee3a63ad"
+    },
+    {
+      "claim_id": "b382a739-b5f1-4259-b786-7ebda965d69a",
+      "result_id": "c33839c5-2a9a-43fb-88a2-aa75ee3a63ad"
+    },
+    {
+      "claim_id": "fda390a0-e0dd-4126-b75f-515980a15bea",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "24dd1811-1dab-4381-a35e-3a989c68b7dd",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "75bf3cd9-f254-434e-b005-3ebbb0220cdf",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "7de4dba8-6ad6-44f3-b254-b4c2732c7101",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "e9c2b04e-578c-4ba4-9f38-daf28f53f5f8",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "37d1aabe-ea13-4d09-941f-8d02899e6da1",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "c53441ba-c6f5-4bcf-8554-96f2c6cb6f64",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "48c92ff5-7bf4-4769-a106-5b43e38a5384",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "934618e6-341b-4228-974d-c9ba1556b209",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "e774d788-9e16-406a-9897-22f45e3943d2",
+      "result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4"
+    },
+    {
+      "claim_id": "40ca236b-1e5f-4fbf-a91a-0295640c4e49",
+      "result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb"
+    },
+    {
+      "claim_id": "8fd4db75-3a2e-4909-93af-0f5906145388",
+      "result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb"
+    },
+    {
+      "claim_id": "217200b5-a7bf-4220-a429-4db501e5c892",
+      "result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb"
+    },
+    {
+      "claim_id": "74e76984-917b-4b9b-83e2-a872a817b9c0",
+      "result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb"
+    },
+    {
+      "claim_id": "d2524783-58ac-450f-afad-074c64ad7c4b",
+      "result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb"
+    },
+    {
+      "claim_id": "a8c70013-a0af-4093-ab18-ed4dd587053d",
+      "result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb"
+    },
+    {
+      "claim_id": "efe467e6-5312-43c7-9d32-7eacfdf4c2ee",
+      "result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb"
+    },
+    {
+      "claim_id": "863cec92-7dc8-4e78-ad68-fe8121ad1acf",
+      "result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb"
+    },
+    {
+      "claim_id": "56ac1e88-f8bb-4dd6-9c60-6abb175879a1",
+      "result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb"
+    },
+    {
+      "claim_id": "4f02bc8e-f94f-4534-9e9e-bf76b2405faf",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "69cff3b4-b9d7-4283-ad96-4323d62ca508",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "91ef1760-b006-4ffc-89c8-3346ce87c072",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "a26e5316-cba1-4a77-a7e8-65471bd28fd5",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "e7c5abc9-a785-400b-a6c6-275f46c184fe",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "59823203-1a9b-458d-b342-ec8ca2f27ad5",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "61b6e54b-5d4b-441b-9250-f59b3d40db26",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "b0af3366-17ee-4a9c-8210-ed443950f033",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "3603c5ac-dfe8-450b-976b-c5b4bbb33baf",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "3eb9bcc9-5613-4f3c-bb1b-330deda24c22",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "5eee99a0-fbf2-4a82-a765-c4285b5a09d9",
+      "result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc"
+    },
+    {
+      "claim_id": "d9bb24d8-f43b-4922-8b81-2f2f957df70f",
+      "result_id": "4e7eee1d-cda5-485a-9350-06f8aadb4c0f"
+    },
+    {
+      "claim_id": "0b1bc3fb-1f7d-4fb1-920c-7fcf45110510",
+      "result_id": "4e7eee1d-cda5-485a-9350-06f8aadb4c0f"
+    },
+    {
+      "claim_id": "b592d9f4-78cd-4e9c-bd94-a3bc8952b4c3",
+      "result_id": "4e7eee1d-cda5-485a-9350-06f8aadb4c0f"
+    },
+    {
+      "claim_id": "455c5588-ee96-44d1-b5e1-07fee885ccf0",
+      "result_id": "4e7eee1d-cda5-485a-9350-06f8aadb4c0f"
+    },
+    {
+      "claim_id": "2b3b669c-e1d6-4b9e-a029-ec2b7c3c840a",
+      "result_id": "4e7eee1d-cda5-485a-9350-06f8aadb4c0f"
+    },
+    {
+      "claim_id": "809a2ebb-4539-4d5d-93b4-08a97b93df92",
+      "result_id": "4e7eee1d-cda5-485a-9350-06f8aadb4c0f"
+    },
+    {
+      "claim_id": "55b0ee20-064c-4910-b081-f51b94537f58",
+      "result_id": "4e7eee1d-cda5-485a-9350-06f8aadb4c0f"
+    },
+    {
+      "claim_id": "77e1360f-7a46-4388-a6be-2e55ee0a4c23",
+      "result_id": "510c1152-cbe5-4ed8-aa55-943b47640202"
+    },
+    {
+      "claim_id": "150950c8-30e9-4b4e-a858-edeab8857d85",
+      "result_id": "510c1152-cbe5-4ed8-aa55-943b47640202"
+    },
+    {
+      "claim_id": "8d8b29a7-50b4-48db-8557-3157ca6d9ecb",
+      "result_id": "510c1152-cbe5-4ed8-aa55-943b47640202"
+    },
+    {
+      "claim_id": "2f31198b-272e-4c60-9483-0c3af7fb4104",
+      "result_id": "510c1152-cbe5-4ed8-aa55-943b47640202"
+    },
+    {
+      "claim_id": "270214af-ff06-4b8a-af12-15a980e6c949",
+      "result_id": "510c1152-cbe5-4ed8-aa55-943b47640202"
+    },
+    {
+      "claim_id": "be64afa9-22c9-4764-a11c-482c3b0c8f54",
+      "result_id": "a85a7306-69be-4a8d-bec9-80c507e2428e"
+    },
+    {
+      "claim_id": "9c95e36b-11f0-4120-ac93-e1120fc4076f",
+      "result_id": "a85a7306-69be-4a8d-bec9-80c507e2428e"
+    },
+    {
+      "claim_id": "44ce43eb-5773-417d-8af0-fe2f861cb440",
+      "result_id": "15668911-c7cd-4e1b-ac81-323f08d6d8a3"
+    },
+    {
+      "claim_id": "f6ad5bbb-300c-4476-aeac-827e4a36e290",
+      "result_id": "15668911-c7cd-4e1b-ac81-323f08d6d8a3"
+    },
+    {
+      "claim_id": "d7d0b0f7-230d-4456-b134-e6ca1a3cbc5d",
+      "result_id": "15668911-c7cd-4e1b-ac81-323f08d6d8a3"
+    },
+    {
+      "claim_id": "ea4951c0-0e5c-411d-8437-890597bf5b13",
+      "result_id": "15668911-c7cd-4e1b-ac81-323f08d6d8a3"
+    },
+    {
+      "claim_id": "484fcbc2-4c26-4b67-8c7c-0b89180b056e",
+      "result_id": "15668911-c7cd-4e1b-ac81-323f08d6d8a3"
+    },
+    {
+      "claim_id": "d8cade85-ea1d-4174-a854-7d73796e5494",
+      "result_id": "044898bf-76bf-4775-80c6-e9921f1bed3e"
+    },
+    {
+      "claim_id": "64d14704-7c82-418a-8035-20246dee507c",
+      "result_id": "044898bf-76bf-4775-80c6-e9921f1bed3e"
+    },
+    {
+      "claim_id": "e3858045-15c5-4c1c-89cf-aef7405ab742",
+      "result_id": "044898bf-76bf-4775-80c6-e9921f1bed3e"
+    },
+    {
+      "claim_id": "4f31a54a-19b9-4e53-aa97-aab9305348ca",
+      "result_id": "044898bf-76bf-4775-80c6-e9921f1bed3e"
+    },
+    {
+      "claim_id": "36cc4630-8faa-4c18-b0c2-3152c9e92d00",
+      "result_id": "044898bf-76bf-4775-80c6-e9921f1bed3e"
+    },
+    {
+      "claim_id": "6c0e72ae-d831-4283-a5fd-3bc9eff1554d",
+      "result_id": "271170c1-1511-4d67-a727-7bc85b161aa2"
+    },
+    {
+      "claim_id": "b227fa42-51ba-4f33-bfe3-0096c894ec18",
+      "result_id": "271170c1-1511-4d67-a727-7bc85b161aa2"
+    },
+    {
+      "claim_id": "f1856a39-808a-4c32-8e2d-cbd38605b8d0",
+      "result_id": "271170c1-1511-4d67-a727-7bc85b161aa2"
+    },
+    {
+      "claim_id": "27e6999a-f06a-41b7-9939-99caf9c23a26",
+      "result_id": "271170c1-1511-4d67-a727-7bc85b161aa2"
+    },
+    {
+      "claim_id": "55f3020c-a152-4a76-bc26-852669afe114",
+      "result_id": "1b9b337f-1510-462d-8d9d-6a1e2e6c46d4"
+    },
+    {
+      "claim_id": "3fe120ad-2369-4217-8141-c921a6af10db",
+      "result_id": "1b9b337f-1510-462d-8d9d-6a1e2e6c46d4"
+    },
+    {
+      "claim_id": "0221d775-7d92-4974-8c2a-bd3a9ef1e1ad",
+      "result_id": "1b9b337f-1510-462d-8d9d-6a1e2e6c46d4"
+    },
+    {
+      "claim_id": "a9ca675e-57f0-41ec-9d21-899aeb1b3697",
+      "result_id": "1b9b337f-1510-462d-8d9d-6a1e2e6c46d4"
+    },
+    {
+      "claim_id": "4ef98ddb-01b8-49b1-9bf8-ea5d2003d87a",
+      "result_id": "02788256-698f-43cf-b048-db7698a1ba9f"
+    },
+    {
+      "claim_id": "9dc3c1b7-abd8-4064-9ac6-c4ef0052796a",
+      "result_id": "02788256-698f-43cf-b048-db7698a1ba9f"
+    },
+    {
+      "claim_id": "14f8baf6-3691-408f-aeb8-2d9fe3ed2ada",
+      "result_id": "02788256-698f-43cf-b048-db7698a1ba9f"
+    },
+    {
+      "claim_id": "be106518-23aa-42e5-9bf5-ec906f137c21",
+      "result_id": "02788256-698f-43cf-b048-db7698a1ba9f"
+    },
+    {
+      "claim_id": "0332100c-cdcf-4f28-ac90-0eea598af81c",
+      "result_id": "02788256-698f-43cf-b048-db7698a1ba9f"
+    },
+    {
+      "claim_id": "5bf0f567-c6ff-4156-b489-726997145a42",
+      "result_id": "02788256-698f-43cf-b048-db7698a1ba9f"
+    },
+    {
+      "claim_id": "34e93cdf-0624-4d0d-b438-dde6bd036f6f",
+      "result_id": "02788256-698f-43cf-b048-db7698a1ba9f"
+    },
+    {
+      "claim_id": "7b2b5b04-02cb-4c5e-a058-e06ccc7218e4",
+      "result_id": "02788256-698f-43cf-b048-db7698a1ba9f"
+    },
+    {
+      "claim_id": "24dd1811-1dab-4381-a35e-3a989c68b7dd",
+      "result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7"
+    },
+    {
+      "claim_id": "75bf3cd9-f254-434e-b005-3ebbb0220cdf",
+      "result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7"
+    },
+    {
+      "claim_id": "c53441ba-c6f5-4bcf-8554-96f2c6cb6f64",
+      "result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7"
+    },
+    {
+      "claim_id": "48c92ff5-7bf4-4769-a106-5b43e38a5384",
+      "result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7"
+    },
+    {
+      "claim_id": "a8c70013-a0af-4093-ab18-ed4dd587053d",
+      "result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7"
+    },
+    {
+      "claim_id": "efe467e6-5312-43c7-9d32-7eacfdf4c2ee",
+      "result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7"
+    },
+    {
+      "claim_id": "863cec92-7dc8-4e78-ad68-fe8121ad1acf",
+      "result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7"
+    },
+    {
+      "claim_id": "56ac1e88-f8bb-4dd6-9c60-6abb175879a1",
+      "result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7"
+    },
+    {
+      "claim_id": "7de4dba8-6ad6-44f3-b254-b4c2732c7101",
+      "result_id": "252a9930-ac6f-41fb-b2de-83e629f2dd7d"
+    },
+    {
+      "claim_id": "e9c2b04e-578c-4ba4-9f38-daf28f53f5f8",
+      "result_id": "252a9930-ac6f-41fb-b2de-83e629f2dd7d"
+    },
+    {
+      "claim_id": "2256dae1-9434-4773-8286-62056f24294b",
+      "result_id": "252a9930-ac6f-41fb-b2de-83e629f2dd7d"
+    },
+    {
+      "claim_id": "934618e6-341b-4228-974d-c9ba1556b209",
+      "result_id": "252a9930-ac6f-41fb-b2de-83e629f2dd7d"
+    },
+    {
+      "claim_id": "e774d788-9e16-406a-9897-22f45e3943d2",
+      "result_id": "252a9930-ac6f-41fb-b2de-83e629f2dd7d"
+    },
+    {
+      "claim_id": "4f02bc8e-f94f-4534-9e9e-bf76b2405faf",
+      "result_id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1"
+    },
+    {
+      "claim_id": "69cff3b4-b9d7-4283-ad96-4323d62ca508",
+      "result_id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1"
+    },
+    {
+      "claim_id": "91ef1760-b006-4ffc-89c8-3346ce87c072",
+      "result_id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1"
+    },
+    {
+      "claim_id": "e7c5abc9-a785-400b-a6c6-275f46c184fe",
+      "result_id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1"
+    },
+    {
+      "claim_id": "61b6e54b-5d4b-441b-9250-f59b3d40db26",
+      "result_id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1"
+    },
+    {
+      "claim_id": "3603c5ac-dfe8-450b-976b-c5b4bbb33baf",
+      "result_id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1"
+    },
+    {
+      "claim_id": "3eb9bcc9-5613-4f3c-bb1b-330deda24c22",
+      "result_id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1"
+    },
+    {
+      "claim_id": "5eee99a0-fbf2-4a82-a765-c4285b5a09d9",
+      "result_id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1"
+    },
+    {
+      "claim_id": "2b3b669c-e1d6-4b9e-a029-ec2b7c3c840a",
+      "result_id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb"
+    },
+    {
+      "claim_id": "809a2ebb-4539-4d5d-93b4-08a97b93df92",
+      "result_id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb"
+    },
+    {
+      "claim_id": "77e1360f-7a46-4388-a6be-2e55ee0a4c23",
+      "result_id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb"
+    },
+    {
+      "claim_id": "150950c8-30e9-4b4e-a858-edeab8857d85",
+      "result_id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb"
+    },
+    {
+      "claim_id": "8d8b29a7-50b4-48db-8557-3157ca6d9ecb",
+      "result_id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb"
+    },
+    {
+      "claim_id": "2f31198b-272e-4c60-9483-0c3af7fb4104",
+      "result_id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb"
+    },
+    {
+      "claim_id": "270214af-ff06-4b8a-af12-15a980e6c949",
+      "result_id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb"
+    },
+    {
+      "claim_id": "d8cade85-ea1d-4174-a854-7d73796e5494",
+      "result_id": "21c8fe35-4077-4c92-9087-24d56c8ad1d7"
+    },
+    {
+      "claim_id": "64d14704-7c82-418a-8035-20246dee507c",
+      "result_id": "21c8fe35-4077-4c92-9087-24d56c8ad1d7"
+    },
+    {
+      "claim_id": "55f3020c-a152-4a76-bc26-852669afe114",
+      "result_id": "21c8fe35-4077-4c92-9087-24d56c8ad1d7"
+    },
+    {
+      "claim_id": "3fe120ad-2369-4217-8141-c921a6af10db",
+      "result_id": "21c8fe35-4077-4c92-9087-24d56c8ad1d7"
+    },
+    {
+      "claim_id": "40ca236b-1e5f-4fbf-a91a-0295640c4e49",
+      "result_id": "308d99c9-1558-4fa7-af37-e8f2758968a6"
+    },
+    {
+      "claim_id": "8fd4db75-3a2e-4909-93af-0f5906145388",
+      "result_id": "308d99c9-1558-4fa7-af37-e8f2758968a6"
+    },
+    {
+      "claim_id": "217200b5-a7bf-4220-a429-4db501e5c892",
+      "result_id": "308d99c9-1558-4fa7-af37-e8f2758968a6"
+    },
+    {
+      "claim_id": "74e76984-917b-4b9b-83e2-a872a817b9c0",
+      "result_id": "308d99c9-1558-4fa7-af37-e8f2758968a6"
+    },
+    {
+      "claim_id": "d2524783-58ac-450f-afad-074c64ad7c4b",
+      "result_id": "308d99c9-1558-4fa7-af37-e8f2758968a6"
+    },
+    {
+      "claim_id": "b0af3366-17ee-4a9c-8210-ed443950f033",
+      "result_id": "3053c159-4ee2-442e-b726-e8f0a999be4b"
+    },
+    {
+      "claim_id": "36cc4630-8faa-4c18-b0c2-3152c9e92d00",
+      "result_id": "3053c159-4ee2-442e-b726-e8f0a999be4b"
+    },
+    {
+      "claim_id": "44ce43eb-5773-417d-8af0-fe2f861cb440",
+      "result_id": "0f6c1ef1-fa6e-4ce9-ad73-94f7963f609e"
+    },
+    {
+      "claim_id": "f6ad5bbb-300c-4476-aeac-827e4a36e290",
+      "result_id": "0f6c1ef1-fa6e-4ce9-ad73-94f7963f609e"
+    },
+    {
+      "claim_id": "d7d0b0f7-230d-4456-b134-e6ca1a3cbc5d",
+      "result_id": "0f6c1ef1-fa6e-4ce9-ad73-94f7963f609e"
+    },
+    {
+      "claim_id": "ea4951c0-0e5c-411d-8437-890597bf5b13",
+      "result_id": "0f6c1ef1-fa6e-4ce9-ad73-94f7963f609e"
+    },
+    {
+      "claim_id": "484fcbc2-4c26-4b67-8c7c-0b89180b056e",
+      "result_id": "0f6c1ef1-fa6e-4ce9-ad73-94f7963f609e"
+    },
+    {
+      "claim_id": "6c0e72ae-d831-4283-a5fd-3bc9eff1554d",
+      "result_id": "bf40e4db-a3a3-4fff-9e68-1c038bb9c82e"
+    },
+    {
+      "claim_id": "b227fa42-51ba-4f33-bfe3-0096c894ec18",
+      "result_id": "bf40e4db-a3a3-4fff-9e68-1c038bb9c82e"
+    },
+    {
+      "claim_id": "f1856a39-808a-4c32-8e2d-cbd38605b8d0",
+      "result_id": "bf40e4db-a3a3-4fff-9e68-1c038bb9c82e"
+    },
+    {
+      "claim_id": "27e6999a-f06a-41b7-9939-99caf9c23a26",
+      "result_id": "bf40e4db-a3a3-4fff-9e68-1c038bb9c82e"
+    },
+    {
+      "claim_id": "be64afa9-22c9-4764-a11c-482c3b0c8f54",
+      "result_id": "b85665d4-786c-4146-8e48-d5c2d9e6593e"
+    },
+    {
+      "claim_id": "9c95e36b-11f0-4120-ac93-e1120fc4076f",
+      "result_id": "b85665d4-786c-4146-8e48-d5c2d9e6593e"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "37abc255-ce4e-4530-9bff-9cfd81c76619",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "98ba8375-8853-4c87-bf96-06b1aac3a857",
+      "peer_result_id": "02788256-698f-43cf-b048-db7698a1ba9f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the core claims about CTFFIND5's improvements (C5, C7, C25-C27, C81-C83). OpenEval emphasizes quantitative validation through multiple experiments, while peer reviewers highlight the compelling evidence and novel methods. Both conclude the improvements are well-demonstrated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "0a3aa8d9-d5da-45fb-880e-78fca4c69b8e",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "a85a7306-69be-4a8d-bec9-80c507e2428e",
+      "peer_result_id": "b85665d4-786c-4146-8e48-d5c2d9e6593e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C74-C75 regarding application to overview images. Both support the practical utility demonstrated in Figure 6, with OpenEval noting visual improvements and appropriate citations, while peer reviewers accept this as a supporting finding without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "99c48be7-a906-4d1a-81fc-909744f14f7c",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "15668911-c7cd-4e1b-ac81-323f08d6d8a3",
+      "peer_result_id": "0f6c1ef1-fa6e-4ce9-ad73-94f7963f609e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on runtime benchmarking claims C76-C80. Both accept the measurements and caveats. OpenEval explicitly validates the benchmarking methodology and future optimization suggestions, while peer reviewers implicitly accept by not raising computational concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "4b163f93-3667-41fa-95ec-0218a6e72c4e",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "271170c1-1511-4d67-a727-7bc85b161aa2",
+      "peer_result_id": "bf40e4db-a3a3-4fff-9e68-1c038bb9c82e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on limitation claims C92-C95. Both support the authors' transparent scoping of applicability. OpenEval notes appropriate acknowledgment of limitations with fair comparisons, while peer reviewers explicitly praise the precision in defining the range of application.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "8f1c6b95-9332-45df-b5a1-39c76eb3cca4",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc",
+      "peer_result_id": "5192a07b-3bc4-4846-afef-086d2c5bd7b1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on thickness estimation claims (C48-C50, C52, C54, C56-C57, C86). Both support the novel contribution and improvements. OpenEval emphasizes theoretical grounding and quantitative improvements, while peer reviewers highlight this as the first tool to consider thickness-related modulation envelope.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "03381fa7-75e4-4a4e-be01-950f18df74e2",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "510c1152-cbe5-4ed8-aa55-943b47640202",
+      "peer_result_id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on tomography validation claims C69-C73. Both accept the validation approach and acknowledge systematic discrepancies without challenging conclusions. OpenEval and peer reviewers agree the estimates remain useful despite unexplained systematic differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "23f08c3c-04be-4c43-a803-421ba19df46b",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb",
+      "peer_result_id": "308d99c9-1558-4fa7-af37-e8f2758968a6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on tilt series validation claims C39-C43. Both support accurate tilt estimation. OpenEval emphasizes internal consistency and agreement with SerialEM calibration, while peer reviewers confirm accurate tilt estimation in general without challenging specific measurements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "ad8cdf4d-1995-4094-b0f9-b084b50b30c9",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4",
+      "peer_result_id": "252a9930-ac6f-41fb-b2de-83e629f2dd7d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support aquaporin crystal validation (C34-C35, C103-C104), though OpenEval covers broader claim set (C8-C10, C36-C38). Both emphasize quantitative validation and improved fit resolution. Peer reviewers note compelling evidence for tilted samples specifically.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "5360bcad-84ec-489d-a9dd-6f7b8c6e3062",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "5b6d2e7d-7738-4d1c-bf36-620f6bc140e4",
+      "peer_result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on accuracy claims (C9-C10, C37-C38). Both support the validation methodology. OpenEval focuses on aquaporin ground truth validation, while peer reviewers (R2) emphasize fairly accurate estimates across multiple validation types including tilt measurements (C44-C47).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "e072694d-0ca7-4ed4-91d6-e6e48ab5b125",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "bb44dc07-0514-4a77-9732-69f9fa2e5aeb",
+      "peer_result_id": "0fed851c-f171-4b54-b131-2ca1a97f14b7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on tilt series accuracy (C44-C47). Both support the quantitative measurements. OpenEval (R6) covers broader tilt series claims including pre-tilt observations, while peer reviewers focus on overall accuracy demonstration across validation approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "d3ad214b-5258-481d-bd65-2c0cb982ce2e",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1b9b337f-1510-462d-8d9d-6a1e2e6c46d4",
+      "peer_result_id": "21c8fe35-4077-4c92-9087-24d56c8ad1d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address scope limitations for single-particle cryoEM (C96-C97). OpenEval covers additional claims about per-particle refinement needs (C98-C99), while peer reviewers emphasize the limited practical application in standard cryoET protocols and praise transparent conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "a5b8cbad-0580-49df-96a6-378058b6340c",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "044898bf-76bf-4775-80c6-e9921f1bed3e",
+      "peer_result_id": "21c8fe35-4077-4c92-9087-24d56c8ad1d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on scope and application claims (C87-C88). Both support the defined applicability. OpenEval emphasizes workflow optimization benefits, while peer reviewers focus on limitations in cryoET applications and acknowledge precise conclusions about application range.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "21c42007-6521-4e78-9574-bbf0718b3a54",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "4e7eee1d-cda5-485a-9350-06f8aadb4c0f",
+      "peer_result_id": "6de3dbd5-8952-42a8-b1d9-0644e2ee7dfb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on thickness validation (C64-C65). OpenEval focuses on EELS validation with linear relationships and systematic offsets, while peer reviewers (R5) emphasize Lambert-Beer law validation and tomographic data, accepting reasonable estimates despite discrepancies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "4d7f6cff-4606-43b4-a17e-9abff76d4056",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "044898bf-76bf-4775-80c6-e9921f1bed3e",
+      "peer_result_id": "3053c159-4ee2-442e-b726-e8f0a999be4b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on practical applications (C91). OpenEval discusses workflow optimization and quality assessment benefits, while peer reviewers note thickness estimation value for judging high-resolution potential in specific applications like viral particles.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "a2b172a8-e9a8-4dca-be08-2325c7da61f2",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "b1e19dc4-73a4-4e8c-85fa-1e3e14a8c7bc",
+      "peer_result_id": "3053c159-4ee2-442e-b726-e8f0a999be4b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on thickness claims (C55). OpenEval covers comprehensive thickness estimation methodology and validation, while peer reviewers briefly note practical value for resolution assessment and application to large specimens.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "cb7c75ef-2078-4095-b044-47189c65eb9c",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "036a4c0c-7f4e-474a-97b7-9c5de19fc1bb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background and motivation claims (C1-C3, C11-C16) about cryoEM and CTF estimation field context. No corresponding peer review evaluation found - peer reviewers focus on novel contributions rather than background material.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "c026c078-a0d5-4e71-9ed7-16d84129ceab",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "2bae9b07-17e2-4f42-a983-67d521c81bf7",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims about CTFFIND4 limitations (C17-C24) that motivate the new method. No corresponding peer review evaluation found - peer reviewers accept the motivation implicitly by focusing on the improvements demonstrated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    },
+    {
+      "id": "4dbf0f0b-0ecd-4d5f-8721-94c89f56ce4b",
+      "submission_id": "15efcb18-a564-466b-9ee9-5d4d10411e76",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "c33839c5-2a9a-43fb-88a2-aa75ee3a63ad",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates tilt estimation methodology claims (C28, C32-C33, C84, C100) with focus on technical approach and citations. No corresponding peer review evaluation found - peer reviewers focus on validation results rather than methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:59:15.170395Z"
+    }
+  ]
+}

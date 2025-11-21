@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Hyperoxia-treated mice (75% O2, P0-P10) develop alveolar simplification characterized by enlarged airspaces, increased lung compliance, decreased elastance, and increased total lung capacity, consistent with an emphysematous phenotype without fibrosis or scarring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are well-supported by histological data (Figure 1B) and lung physiology measurements (Figure 1C). The physiologic changes align with the histological observations and are consistent with emphysematous lungs as noted by the authors with appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Tgfbr2F/F;Nkx2.1-cre mice (lacking TGF\u03b2 signaling in lung epithelium) develop alveolar simplification in normoxia and worse disease with hyperoxia exposure, demonstrating that epithelial TGF\u03b2 signaling is required for normal alveologenesis and plays a protective role in hyperoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C43 are supported by histological data (Figure 1D-E) and lung physiology measurements (Figure 1F). The finding that these mice develop worse disease with hyperoxia (C42) contradicts prior work (C98), which the authors acknowledge and discuss. The data clearly support the protective role of epithelial TGF\u03b2 signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Both hyperoxia treatment and loss of epithelial TGF\u03b2 signaling (Tgfbr2F/F;Nkx2.1-cre) cause a substantial reduction in PDGFR\u03b1+ fibroblasts as measured by flow cytometry at P10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by flow cytometry data (Figure 2B-D). The reduction in PDGFR\u03b1+ cells is consistent with earlier studies (C47), providing external validation. The data clearly show both percentage and absolute number reductions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Single-cell RNA sequencing reveals a significant loss of alveolar and ductal myofibroblast clusters in both hyperoxia and Tgfbr2F/F;Nkx2.1-cre injury models, validated by re-analysis of two independent published datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 are supported by scRNA-seq data (Figure 3C-E) and external validation through re-analysis of published datasets (Figure 3\u2014figure supplement 3). The identification of seven mesenchymal clusters and the consistent loss of myofibroblasts across multiple studies strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C5"
+    ],
+    "result": "IPA analysis of myofibroblasts from both injury models identified 32 shared predicted upstream regulators, including pathways for TGF\u03b2 signaling, cell cycle inhibition, and Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C5 are supported by IPA analysis shown in Figure 3F. The identification of shared pathways across both injury models provides mechanistic insight into myofibroblast dysfunction. The analysis appropriately filters for upregulated pathways (z-score >1.5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "NicheNet analysis predicts increased TGF\u03b2 signaling and decreased Pdgfa-Pdgfra and Shh-Hhip signaling from epithelium to myofibroblasts in both injury models, suggesting epithelial dysfunction causes myofibroblast defects through loss of supportive signals and gain of inhibitory signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 are supported by NicheNet analysis (Figure 4B-C). The predicted reduction in Pdgfra signaling aligns with flow cytometry data showing reduced PDGFR\u03b1 expression (C55). However, NicheNet predictions are computational and require experimental validation for definitive conclusions about causality (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Pan-TGF\u03b2 blocking antibody (1D11) treatment worsens hyperoxia-induced alveolar simplification at all doses tested, while only the highest dose causes disease in normoxia, demonstrating that TGF\u03b2 signaling plays a homeostatic rather than pathologic role in both normal development and hyperoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 and C6-C8 are well-supported by histology (Figure 5B) and lung physiology data (Figure 5C). The dose-response experiment is well-designed to test the hypothesis. The conclusion that TGF\u03b2 inhibition worsens disease contradicts the initial hypothesis but is clearly supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Validation studies show that Gli1-CreERT2 haploinsufficiency does not affect alveolar development in normoxia or hyperoxia, while Pdgfra-CreERT2 haploinsufficiency causes worse disease with hyperoxia but not in normoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by data in Figure 6\u2014figure supplement 1. These important control experiments validate the use of Gli1-CreERT2 for both conditions but caution against using Pdgfra-CreERT2 in hyperoxia studies. This is a critical methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Tgfbr2F/F;Gli1-CreERT2 mice (lacking TGF\u03b2 signaling in lung mesenchyme) develop alveolar simplification in normoxia and worse disease with hyperoxia, demonstrating that mesenchymal TGF\u03b2 signaling is required for normal development and protective in hyperoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by data in Figure 6\u2014figure supplement 2A-B. The results parallel those from epithelial TGF\u03b2 deletion and 1D11 treatment, providing convergent evidence that TGF\u03b2 signaling is protective rather than pathologic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C75"
+    ],
+    "result": "Itgb6F/F;Nkx2.1-cre mice (lacking epithelial \u03b1v\u03b26 integrin) undergo normal alveolar development and show no difference in disease severity with hyperoxia, indicating that epithelial \u03b1v\u03b26 does not play a role in TGF\u03b2 activation during normal development or neonatal hyperoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 and C75 are supported by data in Figure 6\u2014figure supplement 2C-D. This negative result is important for understanding TGF\u03b2 activation mechanisms and contrasts with the role of \u03b1v\u03b26 in other lung injury models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "ItgavF/F;Gli1-CreERT2 mice (lacking mesenchymal \u03b1v-integrins) develop spontaneous alveolar simplification in normoxia with emphysematous physiology and worse disease with hyperoxia, demonstrating that mesenchymal \u03b1v-integrins are required for normal development and protective in hyperoxia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 and C76 are supported by histology (Figure 6B) and lung physiology data (Figure 6C). These results identify mesenchymal \u03b1v-integrins as the key TGF\u03b2 activators during alveologenesis and in hyperoxia response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C9"
+    ],
+    "result": "Hyperoxia causes a proliferative defect in PDGFR\u03b1+ cells as early as P4 (preceding cell number decrease at P8), which persists through P10 and even after 4 days of normoxic recovery, suggesting impaired proliferation contributes to decreased cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 and C9 are supported by EdU incorporation and flow cytometry data (Figure 7A-C). The temporal analysis showing proliferation defects preceding cell loss strengthens the causal inference. However, other mechanisms (apoptosis, differentiation) could also contribute and are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Both Tgfbr2F/F;Nkx2.1-cre mice and 1D11-treated mice show reduced PDGFR\u03b1+ cells and decreased proliferation, providing functional validation of IPA predictions and suggesting impaired proliferation may be a conserved feature of developmental lung injuries causing alveolar simplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C84 are supported by EdU and flow cytometry data (Figure 8A-D). The consistency across models strengthens the conclusion. However, C85 is speculative and requires validation in additional injury models and human BPD samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C10",
+      "C100"
+    ],
+    "result": "Ect2F/F;Pdgfra-CreERT2 mice (with impaired PDGFR\u03b1+ cell proliferation) show reduced PDGFR\u03b1+ cells at P14, develop alveolar simplification and emphysematous physiology by P40, demonstrating that impaired PDGFR\u03b1+ cell proliferation alone is sufficient to cause alveolar simplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93, C10, and C100 are supported by flow cytometry (Figure 9A-B), histology (Figure 9C), and lung physiology data (Figure 9D). The control showing no effect in heterozygotes (C91) strengthens the conclusion. This is a key causal experiment demonstrating sufficiency of impaired proliferation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Pdgfra expression (measured by mean fluorescence intensity) is significantly reduced in PDGFR\u03b1+ cells across all injury models analyzed, consistent with prior correlations between Pdgfra expression and fibroblast proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by flow cytometry data (Figure 9\u2014figure supplement 1). The consistency across multiple injury models strengthens the observation. The correlation with proliferation (C88) is from prior work and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Myofibroblasts are depleted during neonatal lung injury due to impaired proliferation, and increased TGF\u03b2 signaling in myofibroblasts represents a failed compensatory mechanism rather than a central driver of disease pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 are summary inferences supported by the totality of experimental results. The conclusion about TGF\u03b2 as compensatory rather than pathologic is well-supported by multiple approaches (1D11, genetic deletions) all showing worsening disease with TGF\u03b2 inhibition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C96"
+    ],
+    "result": "Background claims about BPD clinical characteristics, epidemiology, and pathophysiology, including the distinction between 'old' and 'new' BPD phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C19, and C96 are background knowledge claims supported by appropriate citations. These establish the clinical context for the study and are generally accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background claims about TGF\u03b2 signaling and myofibroblasts in BPD pathogenesis and lung development, including prior evidence for increased TGF\u03b2 in BPD and the role of myofibroblasts in alveologenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C33 are background knowledge claims supported by appropriate citations. These establish the scientific rationale for investigating TGF\u03b2 and myofibroblasts in BPD models. C33 appropriately notes controversy in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C68",
+      "C71",
+      "C97",
+      "C98"
+    ],
+    "result": "Background claims about TGF\u03b2 signaling requirements, integrin-mediated TGF\u03b2 activation, and mouse lung development timeline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C68, C71, C97, and C98 are background knowledge claims supported by appropriate citations. These provide context for the experimental approaches and interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Summary claims that PDGFR\u03b1+ cells undergo robust proliferation during normal alveologenesis, are sensitive to injury, require TGF\u03b2 signaling, and their proliferation is essential for normal alveolar development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99, C101-C103 are summary inferences supported by the experimental data presented throughout the manuscript. C99 is directly supported by EdU data (Figure 7C), while C101-C103 integrate findings from multiple experiments.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors successfully generated Fshr-ZsGreen reporter mice using CRISPR-Cas9 technology by inserting a P2A-ZsGreen cassette before the stop codon of the Fshr gene. The P2A peptide enables bicistronic expression, allowing ZsGreen to report Fshr promoter activity without disrupting endogenous Fshr expression. The correct insertion was validated by PCR, sequencing, and Southern blotting in F0 and F1 generations, and the mice showed normal fertility and behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 provide comprehensive molecular and genetic validation of the reporter construct through multiple independent methods (PCR, sequencing, Southern blotting). The P2A system design (C37-C38, C129-C131) is well-established technology cited appropriately. Claim C42 confirms no obvious phenotypic abnormalities. The validation is thorough and the reporter design is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C55",
+      "C56",
+      "C132",
+      "C158"
+    ],
+    "result": "The Fshr-ZsGreen reporter provides a reliable readout of endogenous Fshr expression at single-cell resolution. Validation by ddRT-PCR showed that Fshr expression levels in testes and ovaries were similar between Fshr-ZsGreen and wild-type B6 mice, confirming that the P2A-ZsGreen insertion did not disrupt endogenous Fshr expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide direct experimental validation using ddRT-PCR (Figure 2G) showing no significant difference in Fshr expression between reporter and wild-type mice in reproductive tissues. This is critical validation that the reporter faithfully reflects endogenous expression without disruption. The single-cell resolution capability (C5) is demonstrated throughout the imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Fshr-ZsGreen expression was observed throughout ovarian follicles at different developmental stages (primordial to corpus luteum), including oocytes, granulosa cells, theca cells, and ciliated epithelial cells in the oviduct. Colocalization with Stra8 confirmed expression in reproductive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are supported by comprehensive imaging data in Figure 2A showing Fshr-ZsGreen expression across multiple ovarian cell types and developmental stages. The colocalization with Stra8 (C46), a validated reproductive cell marker, provides independent confirmation of cell identity. The imaging is clear and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Fshr is expressed in testicular Leydig cells, with strong expression demonstrated by Fshr-ZsGreen reporter, immunofluorescence with Set marker, and RNA-smFISH. This finding is consistent with previous reports in fish, rats, dogs, and humans, and is supported by scRNA-seq databases and functional studies showing Fshr deficiency affects Leydig cell development. TM3 Leydig cell line showed much lower Fshr expression than primary Leydig cells in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 provide multiple independent lines of evidence for Fshr expression in Leydig cells: reporter expression (Figure 2B), colocalization with Set marker (C49-C50), and RNA-smFISH validation (C52). Claims C139-C141 appropriately cite supporting literature from multiple species. The TM3 cell line observation (C143-C144) is supported by ddRT-PCR data (C58, Figure 2G) showing 145-fold lower expression than in vivo. This is a major finding challenging traditional views.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C57",
+      "C58"
+    ],
+    "result": "The TM3 Leydig cell line exhibited much lower Fshr expression (145-fold lower than testes, 3.6-fold lower than ovaries) compared to primary Leydig cells in vivo, with the majority of cells showing low Fshr staining and some nuclear localization observed. Fshr expression was significantly higher (40-fold) in testes compared to ovaries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by immunofluorescence data (Figure 2E), and C57-C58 are supported by quantitative ddRT-PCR data (Figure 2G). The nuclear localization observation (C54) is interesting but not extensively characterized. The low expression in TM3 cells is well-documented and may explain poor FSH responsiveness noted in C144.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C125",
+      "C124"
+    ],
+    "result": "FSHR expression in human Leydig cells was detected in single-cell RNA-seq databases (DISCO and BioGPS), and multiple scRNA-seq databases support the widespread expression pattern of Fshr across tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C125 are supported by database queries shown in Appendix 1-figure 3. Claim C124 references four different scRNA-seq databases. While database evidence is supportive, it relies on external data quality and annotation accuracy. The consistency across multiple databases strengthens the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C145",
+      "C146"
+    ],
+    "result": "Fshr is expressed in multiple bone cell types including osteoblasts, osteoclasts, osteocytes, bone lining cells, and skeletal stem/progenitor cells. Expression was observed throughout the osteoblast lineage from progenitors to mature osteocytes embedded in bone matrix. Osteoclasts and osteoblasts were confirmed by colocalization with Trap and osteocalcin markers, respectively. Stem/progenitor cells were identified using CD34 and CD133 markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 are extensively supported by imaging data in Figure 3A-C with appropriate cell-type specific markers (osteocalcin for osteoblasts, Trap for osteoclasts, CD34/CD133 for stem cells). The observation of Fshr in osteoblast lineage cells (C146) is novel and well-documented. Previous reports only showed osteoclast expression (C145), making the osteoblast lineage finding particularly significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C148"
+    ],
+    "result": "Osteocyte-specific conditional knockout of Fshr (using DMP1-CreERT2) significantly reduced Fshr expression in osteocytes and increased cortical bone thickness, providing functional evidence for Fshr expression and activity in osteocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by immunofluorescence data in Figure 3D showing reduced Fshr expression and increased cortical thickness in cKO mice. This provides functional validation of Fshr expression in osteocytes. However, C148 mentions unpublished data on bone mass and fat mass changes, which cannot be fully evaluated. The presented data on cortical thickness is clear and convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C156"
+    ],
+    "result": "Fshr-ZsGreen is expressed in white and brown adipose tissues, including adipocyte membranes and cytoplasm, arterioles, and peripheral neural fibers. In WAT, Fshr colocalized with Ucp1 in two distinct adipocyte populations. In BAT, Fshr was expressed in brown adipocytes and peripheral nerve fibers (TH+ and Peri+), including nodes of Ranvier. Expression patterns were confirmed by Fshr antibody staining in B6 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C79 are comprehensively supported by imaging data in Figures 4A-G with multiple markers (Ucp1, TH, Peri). The identification of two Fshr+ adipocyte populations (C71) and expression in peripheral nerves (C75-C78) is well-documented. Independent validation with Fshr antibody in B6 mice (C79, C156) strengthens the findings. Consistent with prior literature (C156).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C150"
+    ],
+    "result": "Fshr is expressed in cardiovascular tissues including cardiomyocytes, endothelial cells, and smooth muscle cells of the heart and large arteries. Expression was observed in all three layers of blood vessels (tunica intima, media, and adventitia), with particularly bright expression in large arteries like the ascending aorta. Colocalization with \u03b1-SMA and EMCN confirmed cell identities. Brown adipose tissue and neural fiber clusters were also observed around cardiac vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C93 are extensively supported by detailed imaging in Figures 5A-D using multiple markers (\u03b1-SMA, EMCN). The systematic examination of different vessel types and layers is thorough. The observation of differential \u03b1-SMA staining intensity in different smooth muscle layers (C90) adds detail. Expression in endothelial cells (C8) is a major finding given the widespread vasculature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C121",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Fshr shows the highest expression in lung epithelial cells, particularly in bronchial and bronchiole ciliated epithelium, bronchial glands, and alveolar type I and II cells. This was confirmed by both fluorescence microscopy and ddRT-PCR showing lung as the highest expressing tissue. Colocalization with PD-L1 confirmed respiratory cell identity. The functional role of this high expression remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C98 are supported by extensive imaging in Figure 6A with PD-L1 colocalization. Claims C121 and C152 provide quantitative validation by ddRT-PCR (Figure 14B) showing lung has the highest Fshr expression among all tissues examined. The acknowledgment that functional significance is unknown (C154) is appropriate. This is a striking and novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C121",
+      "C155"
+    ],
+    "result": "Fshr shows the second highest expression in kidney, with high expression in proximal and distal convoluted tubule epithelial cells but weak expression in glomerular capillaries. Expression was also observed in arteriolar endothelium. This was confirmed by ddRT-PCR showing kidney as the second highest expressing tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C102 are supported by imaging data in Figure 6B with Col1a1 colocalization. The differential expression between tubules (high) and glomeruli (weak) is clearly shown. Claims C121 and C155 provide quantitative validation by ddRT-PCR. The kidney finding is well-documented and represents a major discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Fshr-ZsGreen is expressed in liver hepatocytes and arteries, with colocalization with Col1a1 and CD31. Expression was observed in peripheral nerve fibers, being weak in large nerve fibers but strong in small neural fibers colocalizing with KCNMA1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 are supported by imaging data in Figures 7A-C with appropriate markers. The differential expression in large versus small nerve fibers (C104) is an interesting detail. The liver findings are adequately documented though less extensively characterized than other organs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C157"
+    ],
+    "result": "Fshr-ZsGreen is expressed in pancreatic acinar cells and islets of Langerhans, including both \u03b1-cells and \u03b2-cells, confirmed by colocalization with NG3, insulin, and glucagon markers. Recent reports support Fshr expression in \u03b2-cells regulating glucose-stimulated insulin secretion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by comprehensive imaging in Figures 8A-C with multiple cell-type specific markers. The identification of expression in both \u03b1- and \u03b2-cells is well-documented. Claim C157 appropriately cites recent supporting literature. The pancreatic findings are thorough and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Fshr-ZsGreen is expressed in thyroid follicular cells and parafollicular cells (C-cells). Follicular cells showed positive nuclear staining for Tshr, confirming cell identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by imaging data in Figure 9 with Tshr colocalization. The identification of both follicular and parafollicular cell expression is clear. The nuclear Tshr staining pattern is noted but not extensively discussed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Fshr-ZsGreen is expressed in skin including hair follicles, sweat glands, dermal and hypodermal fibroblasts, and epidermal keratinocytes. CD34+ stem/progenitor cells in the hair follicle bulge, dermal papilla, and epidermis colocalized with Fshr-ZsGreen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by imaging data in Figures 10A-B. The colocalization with CD34 (C111) identifies stem/progenitor cell populations in multiple skin compartments. The skin findings are adequately documented with appropriate markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Fshr-ZsGreen is expressed in skeletal muscle fibers (with heterogeneous expression levels), satellite cells (colocalized with \u03b1-SMA and PAX7), and peripheral nerve fibers around vascular structures (identified by TH staining).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by imaging data in Figure 11 with multiple markers. The identification of satellite cells using both \u03b1-SMA and PAX7 is thorough. The observation of heterogeneous expression in muscle fibers (C112) is noted but not extensively characterized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Fshr is expressed in immune cells of the spleen and bone marrow, including myeloid-lineage cells (monocytes/macrophages, neutrophils, eosinophils, basophils), lymphoid cells (NK cells, B-cells, T-cells), identified by colocalization with CD11b, CD3, and F4/80 markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by imaging data in Figures 12A-C with appropriate immune cell markers. The identification of multiple immune cell types is comprehensive. The use of CD11b, CD3, and F4/80 markers is appropriate for the claimed cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "Fshr is expressed in brain cells including astrocytes, microglia, and neurons, as well as neuronal fibers (synapses or projections), demonstrated in olfactory bulbs, pallidum, and hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by imaging data in Figure 13 showing colocalization with GFAP (astrocytes), Iba1 (microglia), and NeuN (neurons). The brain expression is documented in multiple regions. This represents an important finding for extragonadal Fshr expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Fshr expression was validated across all examined tissues by immunofluorescence with Fshr antibody showing colocalization with Fshr-ZsGreen, and by ddRT-PCR demonstrating Fshr mRNA in all tissues with three expression level categories: high (lung, kidney), moderate (bone, liver, muscle, etc.), and low (adipose, brain, pancreas, etc.).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 provide comprehensive validation using two independent methods: Fshr antibody IF (Figure 14A) and ddRT-PCR (Figure 14B). The quantitative categorization of expression levels (C121-C123) is supported by the ddRT-PCR data. This validation across multiple tissues strengthens all tissue-specific findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C159"
+    ],
+    "result": "Fshr expression is not limited to reproductive tissues but is widely expressed throughout the body, particularly in lung, kidney, heart, Leydig cells, osteoblast lineage cells, endothelial cells, and epithelial cells in multiple organs, challenging previous understanding of Fshr localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126 and C159 represent the major conclusion synthesizing all experimental findings. These summary claims are well-supported by the comprehensive tissue survey using multiple validation methods (reporter expression, IF, ddRT-PCR, RNA-smFISH, scRNA-seq databases). The widespread expression pattern is convincingly demonstrated across reproductive and non-reproductive tissues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Conventional methods for examining FSHR expression have limitations due to antibody non-specificity concerns and quick turnover/rapid degradation of Fshr transcripts. A GFP reporter driven by endogenous Fshr promoter can overcome these limitations by enabling visualization of low-abundance transcripts in more accurate and context-specific ways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by appropriate citations discussing methodological limitations in the field. Claim C35 is supported by citations on GFP reporter advantages. Claim C3 is an inference that appropriately motivates the study design. The rationale for developing the reporter system is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Using the endogenous Fshr promoter to drive reporter expression ensures faithful representation of native gene expression patterns, captures spatial and temporal dynamics, minimizes perturbations to gene regulation, and avoids fixation artifacts compared to other methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C138 describe well-established advantages of endogenous promoter-driven reporters. These are appropriately presented as inferences about the methodological approach. The advantages are validated by the experimental data showing no disruption of endogenous Fshr expression (C55-C56).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C147",
+      "C142"
+    ],
+    "result": "The observation of Fshr expression in both osteoclasts and osteoblast lineage cells suggests that FSH may regulate both bone resorption and bone formation. Fshr expression in Leydig cells indicates FSH-FSHR plays a role in steroid production in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C147 and C142 are functional inferences based on expression patterns. While the expression data is solid, these claims about functional roles are speculative without direct functional studies. The conditional knockout data (C148) provides some functional support for osteocytes, but broader functional validation would be needed to fully support these mechanistic claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C160"
+    ],
+    "result": "The Fshr-ZsGreen reporter line is a powerful tool for detecting Fshr expression location but has limitations in defining individual transcript isoforms and detecting their turnover, which requires specific antibodies and measurement of transcription and RNA degradation rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C160 appropriately acknowledges the limitations of the reporter system. This is a fair assessment that the reporter indicates promoter activity and protein localization but cannot distinguish between transcript isoforms or measure mRNA dynamics. The acknowledgment of limitations is scientifically appropriate.",
+    "result_type": "MINOR"
+  }
+]

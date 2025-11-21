@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C102"
+    ],
+    "result": "The authors developed a HaloTag-based quantification method combining SDS-PAGE densitometry with epifluorescence microscopy to measure absolute Myo10 molecule numbers in U2OS cells. Wildtype U2OS cells produce few filopodia but exogenous Myo10 expression induces abundant filopodia, indicating Myo10 is limiting. The median number of Myo10 molecules per cell is 1,000,000 in fixed cells and 450,000 in live cells. Both N-terminal and C-terminal labeling show identical patterns, and wildtype U2OS cells express undetectable endogenous Myo10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 and C102 collectively establish a robust quantification method with appropriate controls. The use of HaloTag standard protein for calibration (C23, C24), validation of labeling strategies (C22), and confirmation that wildtype cells lack endogenous Myo10 (C102) provide strong methodological support. The observation that Myo10 expression induces filopodia (C20, C21) is well-documented with imaging data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C25",
+      "C26",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Only a median of 5.4% of total intracellular Myo10 localizes to filopodia despite cells containing ~1 million Myo10 molecules and producing 12-116 filopodia per cell (median 55). The authors propose that most cytosolic Myo10 remains in an inactive, autoinhibited state, potentially limited by available PIP3 for activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C25, C26, and C58 present quantitative measurements that are well-supported by the experimental data. The inference that most Myo10 is autoinhibited (C59) is reasonable given the observation that <20% enters filopodia despite sufficient time for diffusion. However, the speculation about PIP3 limitation (C60) lacks direct experimental evidence and represents a hypothesis rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Higher Myo10 filopodial signal correlates with more filopodia (~100\u00d7 more Myo10 boosts filopodia by 3\u00d7), and higher total intracellular Myo10 also correlates with more filopodia, supporting that Myo10 limits filopodial production in U2OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28 and C29 are supported by correlation analysis shown in the figures. The power law relationships demonstrate quantitative associations between Myo10 levels and filopodia number. However, correlation does not establish causation, and the ~100\u00d7 to 3\u00d7 relationship suggests diminishing returns that warrant further mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C68",
+      "C69"
+    ],
+    "result": "Myo10 is not uniformly distributed but concentrates in cellular zones at opposing sides of the cell, creating a periodic high-low-high-low pattern of punctum density. High Myo10 sectors have more filopodia but similar Myo10 per filopodium. Some cells contain membrane regions completely devoid of filopodia and Myo10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C30-C35, C68-C69 describe spatial patterning supported by rose plot analysis and imaging data. The angular sectioning analysis (Figure 2E-F) provides quantitative evidence for the periodic distribution pattern. The observation that Myo10 per filopodium remains constant despite varying puncta density (C34) is particularly interesting and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C64",
+      "C65"
+    ],
+    "result": "Hundreds of Myo10 molecules are present in a typical filopodium (median 730 molecules), with a vast range from as few as 10 molecules to over 80,000. The distribution across filopodia is log-normal rather than normal, which is commonly associated with growth processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C38, C39, and C64 are strongly supported by quantitative measurements and statistical analysis including QQ plots (Figure 3\u2014figure supplement 1D-E). The log-normal distribution is well-characterized. Claims C36-C37 about dim puncta are supported by careful analysis distinguishing true puncta from artifacts. The interpretation linking log-normal distributions to growth processes (C65) is reasonable but represents general knowledge rather than a novel finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C40",
+      "C41",
+      "C42",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Some filopodial tips contain more Myo10 (up to 560 \u03bcM) than the estimated ~96 \u03bcM of accessible actin binding sites. This excess Myo10 continues to enter filopodia even when tips are overfilled, indicating no shutoff mechanism at the base and suggesting Myo10 does not pack in an orderly fashion at tips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C40, C42, and C73 are supported by comparison of measured Myo10 concentrations with calculated available actin sites (C41). The calculations rely on published models and reasonable assumptions about filopodial geometry. The inferences about lack of shutoff mechanisms (C75) and disorderly packing (C76) are logical conclusions from the excess Myo10 observation. However, the actin availability calculation involves multiple assumptions that could affect the precise threshold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C78",
+      "C79",
+      "C104"
+    ],
+    "result": "Excess Myo10 at filopodial tips may remain docked on the plasma membrane through PH domains even when not attached to actin. Calculations indicate sufficient membrane area exists for tip-localized Myo10, even with relatively large footprint estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43, C79, and C104 are speculative proposals about membrane-docked Myo10 that lack direct experimental evidence. While the membrane area calculations (C44, C78) are supported by geometric modeling (Figure 3F, Figure 3\u2014figure supplement 3), the actual state of excess Myo10 (membrane-bound vs. actin-bound vs. free) cannot be determined from the fluorescence data alone. This remains a plausible hypothesis requiring validation through additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C105"
+    ],
+    "result": "Fragmented, frayed, or disorganized actin filament ends at filopodial tips might support more actin-bound Myo10 than orderly bundles. Excess Myo10 could compete with actin crosslinkers and promote fraying.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C84, and C105 are speculative alternative explanations for excess Myo10 observations. While the authors cite literature showing disorganized actin in some systems (C80-C82), they provide no direct evidence that fraying occurs in their U2OS system. This represents a reasonable hypothesis but lacks experimental support in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C85",
+      "C86"
+    ],
+    "result": "Filopodial initiation begins with a dense cluster of Myo10 molecules at the plasma membrane, with a median of 160 molecules and minimum of 52 molecules. These quantities correspond to approximately 5 and 2 molecules per actin filament at a nascent filopodium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C45, C85 are supported by quantitative analysis of live-cell imaging data (Figure 4A). The minimum value of 52 molecules (C46) is presented as potentially representing the lower limit for initiation, though this interpretation is somewhat speculative. The calculation of molecules per actin filament (C86) relies on assumptions about filament number but is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C89"
+    ],
+    "result": "Second-phase filopodial elongation involves a median of 290 Myo10 molecules, approximately double the number involved in nascent elongation (160 molecules).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C48, and C89 are supported by quantitative analysis of live-cell imaging showing distinct puncta emerging from existing filopodia (Figure 4B, Figure 4\u2014figure supplement 1). The comparison between initiation and second-phase numbers is straightforward and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C92",
+      "C93"
+    ],
+    "result": "During filopodial growth, Myo10 continues to accumulate in puncta (initial puncta accumulate mean 95 molecules, second-phase puncta accumulate 307 molecules). However, accumulation ceases when retraction begins, with retracting puncta remaining relatively constant (mean -73 molecules).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C50-C53, and C92-C93 are supported by time-lapse imaging and statistical analysis with appropriate t-tests and confidence intervals. The differential behavior between growing and retracting filopodia is well-documented (Figure 4D-F). The statistical significance is properly reported with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Retracting filopodia frequently have immediate neighbors that are not retracting, indicating the switching mechanism that stops Myo10 traffic must be highly focused to single filopodia and must operate at the filopodial base.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 present logical inferences from live-cell observations. The observation that neighboring filopodia behave differently (C94) is supported by the imaging data. The inferences about the switching mechanism (C95-C96) are reasonable deductions, though the actual molecular mechanism remains unknown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C54",
+      "C97",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Rates of filopodial elongation, second-phase elongation, and retraction are all inversely related to Myo10 quantities. Median speeds are 160 nm/s for elongation, 110 nm/s for second-phase elongation, and 110 nm/s for retraction, consistent with published values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C54, C97 are supported by correlation analysis with Spearman's \u03c1 values and statistical significance (Figure 4G-I). The measured speeds (C55-C57) are consistent with prior literature. The inverse relationship between Myo10 quantity and speed is well-documented across all three phases, though the mechanistic basis requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "In reconstituted motility systems, mechanically coupled motors move more slowly than uncoupled motors due to strain-sensitive coupling. Recent work with Myo3 (a slower motor than Myo10) shows filopodial elongation rate correlates with motor speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 accurately cite prior literature to provide context for the observed inverse relationship between Myo10 quantity and speed. These are well-established findings from other studies that support the interpretation of the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C60",
+      "C61",
+      "C67",
+      "C70",
+      "C90"
+    ],
+    "result": "The authors propose several speculative mechanisms: limited Myo10 activation signal relieves autoinhibition, PIP3 availability limits activation, slow activation allows accumulation in puncta, and local PIP3 generation might dock and activate Myo10 in focused membrane regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27, C60, C67, C70, and C90 are explicitly speculative proposals lacking direct experimental evidence in this study. While these hypotheses are reasonable and cite supporting literature (C61), they represent interpretations and future directions rather than demonstrated results. The speculation about PIP3 (C60, C70) is particularly prominent but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The authors propose a model where incoming Myo10 releases upon encountering traffic jams while jammed Myo10 is 'pushed off' by new arrivals. Newly formed actin is rapidly occupied by standby Myo10, but fascin can outcompete Myo10 due to high avidity and essentially irreversible binding. This dynamic Myo10 association/dissociation with subsequent fascin binding may be essential for filopodial elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C112 present an integrated speculative model for Myo10-fascin dynamics at filopodial tips. While the model is logical and incorporates known binding properties (C111 cites prior work), it lacks direct experimental validation in this study. The proposal represents reasonable speculation based on the excess Myo10 observations but requires future experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background information on myosin motor proteins, Myo10's role in filopodia formation, and disease relevance including genomic instability and cancer aggressiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C11-C18 provide established background knowledge supported by appropriate citations to prior literature. These are not novel findings but necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C71",
+      "C72",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C87",
+      "C88",
+      "C91",
+      "C103",
+      "C106"
+    ],
+    "result": "Comparison with prior literature on Myo10 quantification, expression timing effects, single-molecule observations, myosin discrimination of actin properties, endogenous Myo10 localization, actin bundle structure in different systems, and filopodial dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63, C71-C72, C77, C80-C82, C87-C88, C91, C103, and C106 accurately cite and contextualize prior literature. These comparisons strengthen the interpretation of the current results and are appropriately referenced.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,267 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C37",
+      "C38",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Loss of TEDC1 or TEDC2 phenocopies loss of delta-tubulin or epsilon-tubulin. TEDC1-/- and TEDC2-/- cells exhibit a futile cycle of centriole formation and disintegration, with centrioles forming in S-phase and disintegrating in M-phase. These mutant centrioles lack compound microtubules, contain only singlet microtubules, and remain immature (SASS6-positive, CEP164-negative).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C37-C51 collectively demonstrate that TEDC1-/- and TEDC2-/- mutants phenocopy TUBD1-/- and TUBE1-/- mutants through multiple lines of evidence: immunofluorescence showing centriole number distributions across cell cycle stages (C43, C45, C46), maturation markers (C47, C48), TEM showing singlet microtubules (C49), and presence of cartwheels/pinheads but absence of A-C linkers (C50, C51). The phenotypes are fully rescued by tagged constructs (C44), confirming specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "TEDC1 and TEDC2 localize to centrosomes, specifically to procentrioles and the proximal ends of parental centrioles. Both proteins are enriched at centrosomes in S/G2 phase, colocalize with SASS6 but not centrin, and overlap with centriolar microtubules at these regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C53-C57 are well-supported by multiple imaging approaches including immunofluorescence (Figure 2A, B), super-resolution microscopy (Figure 2\u2014figure supplement 1A, B), and U-ExM (Figure 2C, D). The colocalization patterns with SASS6 but not centrin (C54) provide strong evidence for the specific localization to procentrioles and proximal ends of parental centrioles (C55, C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "TEDC1 and TEDC2 are mutually dependent on each other and on delta-tubulin and epsilon-tubulin for centrosomal localization. TEDC1 and TEDC2 are not downstream effectors of TUBD1 and TUBE1, as overexpression does not rescue centriole phenotypes in other mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C58-C61 are supported by immunofluorescence data in Figure 3A and 3B showing loss of TEDC1 or TEDC2 centrosomal localization in various mutant backgrounds. The lack of rescue by overexpression (C60) provides strong evidence that these proteins function together in a complex rather than in a linear pathway (C61).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "TEDC1, TEDC2, TUBD1, and TUBE1 physically interact in a complex. TEDC1 and TEDC2 can form a subcomplex in the absence of the tubulins, but interactions with the tubulins require all four proteins to be present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C62-C67 are supported by co-immunoprecipitation experiments in Figure 3C and 3D. The data show that TEDC1-TEDC2 can interact independently of tubulins (C8, C65), but TEDC1 or TEDC2 cannot interact with either tubulin in the absence of the other tubulin or the other TEDC protein (C62-C64, C66, C67). This demonstrates a tetrameric complex with specific interaction requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "AlphaFold-Multimer predicts a high-confidence tetrameric structure for TEDC1, TEDC2, TUBD1, and TUBE1. The model predicts TUBD1 and TUBE1 form a heterodimer similar to alpha/beta-tubulin, with TEDC1 and TEDC2 alpha-helices interacting with each other and forming an interaction surface with TUBD1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71, C73 are supported by computational predictions shown in Figure 3E-G with high confidence pLDDT and PAE scores at the TEDC1-TEDC2-TUBD1 interface. The prediction is consistent across species (Xenopus, C73) and with experimental pulldown data showing TEDC1-TEDC2 can form a subcomplex. However, these are computational predictions that require experimental validation of the predicted structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Mutant centrioles elongate to approximately the same length as control centrioles in G2 phase but remain narrow. In S-phase, centrioles are short in all conditions, but in G2-phase, mutant centrioles reach similar lengths to controls while maintaining reduced width.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C76-C78 are supported by U-ExM length measurements in Figure 4A showing statistically significant elongation from S to G2 phase in all conditions (p<0.0001), with mutant centrioles reaching similar lengths to controls. Width measurements in Figure 4\u2014figure supplement 5 confirm mutant centrioles remain narrow (C78), consistent with prior work (Wang et al., 2017).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C113"
+    ],
+    "result": "Mutant centrioles fail to recruit central core scaffold proteins POC5 and WDR90, indicating that compound microtubules are required for proper formation of the helical inner scaffold. Mutant centrioles with singlet microtubules likely fail to build or stabilize the inner junction between A- and B-tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C39, C84-C88, C113 are supported by U-ExM data in Figure 4Ei and 4Eii showing absence of POC5 and WDR90 in mutant centrioles. The inference that compound microtubules are required for inner scaffold formation (C85, C113) is well-supported by the data. The proposed mechanism involving failure to build the inner junction (C87, C88) is a reasonable inference based on WDR90's known role at the A-B junction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C40",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C99"
+    ],
+    "result": "Mutant centrioles have an expanded proximal region with elongated localization of multiple proximal end proteins (SASS6, CEP135, STIL, CPAP, CEP44). In control centrioles, these proteins are restricted to the proximal end in G2-phase, but in mutant centrioles they extend throughout the entire centriole length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C40, C90-C94, C99 are supported by U-ExM data in Figure 4F-I and supplementary figures showing elongated localization of multiple proximal end proteins in G2-phase mutant centrioles. The phenotype is consistent across multiple proteins (C93) and is not due to increased protein expression (C95, Figure 4\u2014figure supplement 2). This represents a novel architectural defect in mutant centrioles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C126"
+    ],
+    "result": "During mitosis, mutant centrioles undergo a stereotyped progression of changes: elongation in prometaphase with an elongated proximal end and CP110-positive cap connected by weak monoE staining, followed by fragmentation and complete loss in late mitosis. Centriole loss is correlated with loss of the SASS6 cartwheel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C103-C106, C126 are supported by U-ExM data in Figure 5 showing the progression of centriole changes through mitosis. The prometaphase elongation (C103, C104) and subsequent fragmentation (C105) are clearly documented. The correlation with SASS6 loss (C126) provides insight into the mechanism of centriole disintegration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "Centrioles formed de novo are very similar to procentrioles formed by templated centriole duplication in composition and architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C41 is supported by comparative U-ExM data throughout Figure 4 showing similar protein localization patterns between de novo centrioles and control procentrioles for multiple markers including acetylated tubulin, glutamylation, POC5, WDR90, and proximal end proteins. This addresses a gap in knowledge about de novo centriole architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Mutant centrioles with only singlet A-tubules can be acetylated and mono-glutamylated. GT335 antibody stains both control and mutant centrioles, but polyE antibody does not label control procentrioles or de novo centrioles in the first cell cycle, suggesting glutamylation is a multi-step process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C75, C80-C83 are supported by U-ExM data in Figure 4B and 4C showing acetylated tubulin and GT335 staining of mutant centrioles. The inference that A-tubules alone can be acetylated and mono-glutamylated (C75, C81) is well-supported. The multi-step glutamylation model (C83) is consistent with prior work (Sullenberger et al., 2020) and the differential staining patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C121",
+      "C122"
+    ],
+    "result": "Many aspects of centriole architecture are unaffected in mutant centrioles, including distal tip formation, centriole length regulation prior to mitosis, acquisition of post-translational modifications, and establishment of proximal-distal polarity. Proteins regulating these processes can act on the A-tubule independently of B- and C-tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98, C121-C122 are supported by U-ExM data throughout Figure 4 showing normal localization of distal end proteins (CETN2, CP110), CEP120, CEP295, and maintenance of proximal-distal polarity in mutant centrioles. This demonstrates that many centriole assembly processes are independent of compound microtubule formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C125"
+    ],
+    "result": "CEP295 is properly localized in mutant centrioles in both S- and G2-phases, indicating that centriole loss in mutants is unlikely due to loss of CEP295 localization and may be independent of centriole-to-centrosome conversion. TEDC1, TEDC2, TUBD1, and TUBE1 are likely part of a different pathway required for centriole stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102, C125 are supported by U-ExM data in Figure 4\u2014figure supplement 1F showing normal CEP295 localization in mutant centrioles. The inference that centriole loss occurs through a different mechanism than CEP295-dependent centriole-to-centrosome conversion (C101, C102, C125) is reasonable given the data, though the exact mechanism remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "The authors propose that the absence of the inner scaffold arises from loss of B- and C-tubules, which may serve to anchor WDR90 and/or other inner scaffold proteins. The B-tubule may be required to recruit or stabilize WDR90 at the inner junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107, C108, C110 are explicitly stated as speculation ('we propose', 'may serve', 'speculate') based on the absence of WDR90 in mutant centrioles. While the model is consistent with the data and WDR90's known role at the A-B junction (C109), these are mechanistic hypotheses that require direct experimental testing to be considered supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C118",
+      "C120"
+    ],
+    "result": "The authors speculate that triplet microtubules, the inner scaffold, and/or the TUBD1/TUBE1/TEDC1/TEDC2 complex might act to limit the length of the proximal end. The height of the cartwheel may be regulated by triplet microtubules through interdependent assembly with centriolar microtubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114, C118, C120 are explicitly stated as speculation ('it is possible', 'may be regulated') about mechanisms regulating proximal end length. While the elongated proximal end phenotype is well-documented, these mechanistic hypotheses require additional experiments to test. The comparison with POC1A-/- centrioles (C117) provides some support but is insufficient to confirm the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The authors speculate about possible structural roles for the TEDC1/TEDC2/TUBD1/TUBE1 complex, including formation of A-C linkers, pinheads, or triplet base. It is unclear whether loss of A-C linkers is due to direct or indirect roles of these proteins. The complex may interact transiently with centrioles or only some proteins may form structural components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C145-C149 are explicitly stated as speculation ('it is possible', 'it is not clear', 'we note') about the structural role of the complex. While DepMap co-dependencies with A-C linker components (C146) provide some support, the authors acknowledge uncertainty about direct vs. indirect roles (C147) and alternative models (C148, C149). These hypotheses require additional structural and functional studies.",
+    "result_type": "MINOR"
+  }
+]

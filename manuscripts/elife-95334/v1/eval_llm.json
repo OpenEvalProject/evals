@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors provide background on BRAFV600E as a cancer driver, the mechanism of RAF signaling, and the development and limitations of current RAF inhibitors including monomer-selective, dimer-selective, and equipotent inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 establish well-documented background knowledge about BRAF mutations, RAF signaling pathways, and the development of RAF inhibitors. These claims are supported by appropriate citations to established literature and represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors describe the structural features of BRAF including the kinase domain architecture, the \u03b1C helix and DFG motif conformations, and the dimer interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C37 describe established structural features of BRAF kinase domain based on known kinase structures and are supported by reference to Figure 1 and established structural biology knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Co-crystal structure analysis reveals that monomer-selective inhibitors bind in \u03b1C-out/DFG-in conformations without occupying BP-III, while dimer-compatible inhibitors bind in \u03b1C-in/DFG-out conformations, occupy BP-III, and uniquely form hydrogen bonds with \u03b1C-Glu501.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C65 are supported by systematic analysis of published co-crystal structures (referenced in Supplementary file 1A) and interaction fingerprint analysis shown in Figure 2b. The structural observations are well-documented with specific PDB IDs and consistent patterns across multiple inhibitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Experimental ERK phosphorylation assays in melanoma cell lines confirm that PHI1 is dimer-selective (IC50 256 nM vs 1.5 \u03bcM), LY is equipotent (27 nM vs 15 nM), and VEM is monomer-selective (35 nM vs 3 \u03bcM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by experimental data from ERK phosphorylation assays shown in Figure 2c-d using two cell lines expressing monomeric (SKMEL239) or dimeric (SKMEL239-C4) BRAFV600E. The IC50 values clearly demonstrate the selectivity patterns, with error bars indicating n=3 replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CpHMD simulations determined that His477 is protonated (HIP state) and His510 is neutral (HIE state) at pH 7.5 in the BRAFV600E dimer interface, which is critical for dimer stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 are supported by CpHMD simulation data shown in Figure 1\u2014figure supplements 2 and 3. The preliminary simulation with neutral histidines showed dimer dissociation (C75), validating the importance of proper protonation states. The CpHMD method is appropriate for determining protonation states and convergence is demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "MD simulations reveal that dimerization of BRAFV600E restrains and shifts the \u03b1C helix inward by ~1 \u00c5 (from 23.2 to 22.0 \u00c5) and increases Glu501-Lys483 salt bridge probability two-fold (from ~12% to ~25%), while increasing DFG motif flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85 are supported by extensive MD simulation data (3 replicates \u00d7 5 \u03bcs each) presented in Figure 3a-c and Figure 3\u2014figure supplement 1. The probability distributions clearly show the restraint and inward shift of \u03b1C helix and increased DFG flexibility upon dimerization. Statistical analysis with error bars from replicates is provided in Supplementary file 1B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "PHI1 and LY binding further restrain the \u03b1C helix and shift it inward by at least 2.7 \u00c5 relative to apo dimer, with PHI1 inducing a larger shift (18.3 \u00c5) than LY (19.3 \u00c5). PHI1 completely locks the Glu501-Lys483 salt bridge while LY promotes it to 60%. Both inhibitors shift the DFG pseudo dihedral outward by 80\u00b0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C91 are supported by MD simulation data from holo dimer simulations presented in Figure 3d-f and Figure 3\u2014figure supplement 2. The quantitative differences between PHI1 and LY are clearly shown in the probability distributions and salt bridge analysis, with statistical support from triplicate simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "In dimer simulations, the PHI1-Glu501 h-bond is stable (centered at 2.9 \u00c5) while the LY-Glu501 h-bond is weaker (maxima at 3.4 and 4.5 \u00c5). In monomer simulations, the PHI1-Glu501 interaction can be completely disrupted (up to 12 \u00c5) with \u03b1C shifting out, while the LY-Glu501 interaction remains stable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C97 are supported by density plot analysis in Figure 3g-j and time series data in Figure 3\u2014figure supplements 3 and 4. The differential stability of h-bonds between PHI1 and LY in monomer vs dimer contexts is clearly demonstrated and provides mechanistic insight into dimer selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Previous MD simulations showed that dimer-selective regorafenib has increased RMSD in monomer vs dimer simulations, while equipotent LY maintains the same RMSD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by citation to Adamopoulos et al., 2021, which provides independent validation of the current findings using different force fields. This strengthens the conclusions about differential behavior of dimer-selective vs equipotent inhibitors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The mechanism of dimer compatibility involves conformational selection enabled by dimerization-induced \u03b1C helix pre-organization. Dimer-selective inhibitors form stronger h-bonds with Glu501, shifting \u03b1C further inward, which incurs a larger entropic penalty for monomer binding compared to equipotent inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C104 present mechanistic interpretations based on simulation data (C6-C97). While the conformational observations are well-supported, the entropic penalty explanation (C104, C11) is speculative and not directly measured. Free energy calculations or other quantitative thermodynamic analyses would be needed to validate the entropic penalty hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Difference contact network analysis shows that both PHI1 and LY increase interprotomer contact probability by 0.3 in holo vs apo simulations, ruling out differential dimer stabilization as the basis for dimer selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are supported by difference contact network analysis presented in Figure 4. The analysis appropriately uses established methods (Yao et al., 2018) and shows that both inhibitors have similar effects on dimer interface contacts, supporting the conclusion that dimer selectivity is not due to differential dimer stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Mixed dimer simulations reveal that PHI1 binding in one protomer allosterically shifts the \u03b1C helix of the apo protomer inward by 1 \u00c5 and shifts the \u03b1C of the first PHI1-bound protomer outward by ~1 \u00c5 relative to holo dimer. Binding of the second PHI1 shifts both protomers' \u03b1C helices further inward and DFG motifs further outward by 30\u00b0. LY shows no such allosteric effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C120 are supported by MD simulation data from mixed dimer simulations presented in Figure 5a-b and Figure 5\u2014figure supplement 1. The allosteric effects are clearly demonstrated through comparison of \u03b1C positions and DFG dihedrals across apo, mixed, and holo dimer states, providing mechanistic insight into PHI1's positive cooperativity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The authors propose that inhibitors stabilizing \u03b1C-in states are dimer compatible while those that cannot are monomer selective. A h-bond donor interacting with Glu501 is key for dimer compatibility because Glu501 is centrally located on \u03b1C helix and h-bonding is synergistic with Lys483-Glu501 salt bridge formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C129 synthesize the mechanistic understanding from simulation data (C78-C120) and co-crystal structure analysis (C38-C65). The proposed mechanism is well-supported by converging evidence from multiple analyses, though the synergistic effect (C127) is inferred rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The authors propose that h-bond stability with Glu501 determines dimer selectivity, which can be assessed from co-crystal structures by examining deviation in \u03b1C position and K-E distance between protomers. Identical values suggest dimer selectivity (e.g., LXH254, RAF709, Sorafenib, Belvarafenib), while deviations suggest equipotency (e.g., GDC0879, Tovorafenib).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C130-C137 propose an empirical assessment method based on co-crystal structure analysis. While the predictions for GDC0879 and Tovorafenib match experimental data (C136-C137), the method is based on limited examples and the threshold for 'identical' vs 'deviated' values is not rigorously defined. The authors acknowledge this is not intended to replace more rigorous tests, but more validation would strengthen the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors propose three empirical rules for assessing RAF inhibitor selectivity from co-crystal structures: (1) lack of h-bond with Glu501 indicates monomer selectivity; (2) h-bond with Glu501 but inconsistent \u03b1C position/K-E distance indicates equipotency; (3) h-bond with Glu501 and identical \u03b1C position/K-E distance indicates likely dimer selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C138-C140 formalize the empirical assessment method. While based on systematic analysis of multiple co-crystal structures, the rules require more extensive validation across a larger set of inhibitors with known selectivity profiles. The authors appropriately note this is not intended to replace rigorous testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The authors summarize that upon dimerization, \u03b1C helix becomes restrained and shifts inward; first PHI1 binding restricts \u03b1C/DFG motion and primes the apo protomer; second PHI1 binding shifts both protomers' \u03b1C further inward and DFG further outward, explaining PHI1's positive cooperativity through allosteric modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 synthesize the key findings from the simulation studies (C78-C120) as summarized in Figure 6. The mechanistic model is well-supported by the extensive MD simulation data showing progressive conformational changes through apo, mixed, and holo states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "A recently published biophysical experiment suggested that first inhibitor binding dominates allosteric coupling between type II inhibitor binding and BRAF dimerization, consistent with the simulation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C146 cites independent experimental validation (Rasmussen et al., 2023) that supports the simulation findings about the importance of first inhibitor binding, strengthening the conclusions about cooperativity mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "PHI1 extends Ponatinib's headgroup to interact with Asn500 next to Glu501, shows positive cooperativity in inhibiting the BRAFV600E dimer, and stabilizes a slightly different \u03b1C-in conformation. Previous work hypothesized the Asn500 interaction is key to dimer selectivity and that \u03b1C helix restriction differentiates dimer-selective from equipotent inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 describe prior work on PHI1 from Gavathiotis and coworkers (Cotto-Rios et al., 2020) and Poulikakos and coworkers (Adamopoulos et al., 2021). These claims are appropriately cited and provide context for the current study's investigation of the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The mechanism of dimer selectivity is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 represents the knowledge gap that motivates the study. This assessment is reasonable given that while dimer-selective inhibitors had been developed, the detailed molecular mechanism distinguishing them from equipotent inhibitors was not fully elucidated.",
+    "result_type": "MINOR"
+  }
+]

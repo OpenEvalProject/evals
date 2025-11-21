@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C28",
+      "C30",
+      "C111"
+    ],
+    "result": "Rab10 depletion at DIV0 using shRNA#9 and shRNA#11 reduces Rab10 expression by 75-95% and significantly reduces dendrite and axon length in mouse hippocampal neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C30, and C111 are supported by western blot data (Figure 1A) showing effective knockdown and morphological analysis (Figure 1) demonstrating reduced neurite outgrowth. The results are consistent with prior literature (C29) and include appropriate rescue controls (C39).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C4",
+      "C126"
+    ],
+    "result": "Rab10 depletion does not affect synaptogenesis or synaptic vesicle exocytosis under intense stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 are supported by Syp1 immunofluorescence (Figure 1E-F) and SypHy imaging data (Figure 1I-K) showing no changes in synapse density, SV fusion fraction, or endocytosis. This selective effect distinguishes DCV from SV exocytosis and is consistent across multiple measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C102",
+      "C3"
+    ],
+    "result": "Rab10 depletion significantly inhibits DCV exocytosis by 50-65% in mature hippocampal neurons without affecting DCV biogenesis, transport, or cargo loading.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by NPY-pHluorin imaging showing reduced DCV fusion events and fusion fraction (Figures 2, 2-supplement 1). The DIV7 infection strategy (C40-C47) controls for developmental effects. Rescue experiments (C39, C44) confirm specificity. Transport and cargo loading analyses (C45-C47) rule out trafficking defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Rab10 does not typically co-transport with DCVs and is not required for DCV trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C120 are supported by co-transport analysis (Figure 2-supplement 3) showing only 10% co-localization. Claims C121-C123 are supported by multiple negative results for DCV size, transport velocity, and distance (Figure 2-supplement 2). This distinguishes Rab10 from Rab3 (C119) and supports an indirect mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C6"
+    ],
+    "result": "Rab10 depletion causes major proteome dysregulation affecting 19% of proteins, with notable alterations in synaptic transmission and protein synthesis pathways, including upregulation of all ribosomal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by comprehensive mass spectrometry proteomics (Figure 3A) identifying ~5400 proteins with rigorous statistical thresholds. GO analysis (ClueGO and SynGO, Figures 3B-E) confirms enrichment in translation and synaptic processes. The selective upregulation of ribosomal proteins (C60) contrasts with downregulation of other protein classes, suggesting compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C7"
+    ],
+    "result": "ER proteins are substantially dysregulated upon Rab10 depletion, with differential effects on rough ER components and a 50% reduction in SERCA2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by selective proteomics analysis (Figure 3H) showing differential regulation of ER proteins. The SERCA2 reduction (C66, C7) is confirmed by western blot (Figure 5A-B). The pattern of dysregulation (SEC61A1 up, SEC61G down, tubular ER proteins down) suggests specific ER remodeling rather than general ER dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C8"
+    ],
+    "result": "Rab10 depletion causes modest alterations in ER morphology including reduced tubular ER abundance and diameter, with minimal effects on synapse ultrastructure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by electron microscopy (Figure 4A-I) showing 10% reduction in active zone/PSD length, 24% reduction in synaptic ER, and 15% reduction in rER diameter. The modest magnitude of changes (10-24%) contrasts with the severe functional deficits in DCV exocytosis, suggesting morphological changes alone cannot fully explain the phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Rab10 depletion reduces ER-resident protein levels, alters ER distribution, and impairs ER dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by immunofluorescence showing 25-35% reduction in RTN4 and KDEL intensity (Figure 4-supplement 1) and FRAP experiments showing 50% vs 80% recovery (Figure 4-supplement 2C). The reduced neurite/soma ratio suggests altered ER trafficking. These results complement the EM data and proteomics findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C9",
+      "C90"
+    ],
+    "result": "Rab10 depletion causes ER Ca2+ depletion (50% reduction in soma) and impaired Ca2+ refilling, likely due to reduced SERCA2 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by ER-GCaMP6 imaging (Figure 5C-D) showing reduced [Ca2+]ER, caffeine-induced Ca2+ release assays (Figure 5-supplement 1), and ER Ca2+ refilling experiments (Figure 5G-H). The 50% reduction in SERCA2 (C80) provides a mechanistic explanation. Rescue with knockdown-resistant Rab10 (C83) confirms specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C104",
+      "C10"
+    ],
+    "result": "Rab10 depletion impairs AP-induced Ca2+ responses in soma (40% reduction) and presynaptic terminals (20% reduction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by Fluo5F imaging in soma (Figure 6C) and Synaptophysin-GCaMP6 imaging at synapses (Figure 6F). The smaller effect at synapses (20%) compared to soma (40%) and ER Ca2+ depletion suggests spatial heterogeneity in Ca2+ dysregulation. However, the magnitude of Ca2+ deficits is modest compared to DCV exocytosis deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C11",
+      "C105",
+      "C140",
+      "C141"
+    ],
+    "result": "Ionomycin-induced DCV exocytosis is reduced by 45% in Rab10 KD neurons, suggesting Ca2+ dysregulation explains only a minor fraction of the DCV exocytosis deficit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by ionomycin experiments (Figure 7) showing 45% reduction compared to 65% with AP stimulation. The 20% difference (C93, C141) suggests Ca2+ homeostasis deficits contribute but do not fully explain the phenotype. This is a critical control experiment that redirects the mechanistic interpretation toward protein synthesis deficits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C107"
+    ],
+    "result": "Rab10 depletion reduces global protein synthesis by 30%, which is rescued by leucine supplementation and mimicked by Rab10T23N overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by SUnSET assays (Figure 8A-B) showing reduced puromycin incorporation. Leucine rescue (C95) and Rab10T23N phenocopy (C96) confirm specificity. The lack of pS6K1 phosphorylation changes (C97, Figure 8-supplement 1) rules out mTORC1 dysregulation, suggesting alternative mechanisms involving ER/ribosome dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C12",
+      "C101",
+      "C108",
+      "C152",
+      "C153"
+    ],
+    "result": "Leucine supplementation largely rescues DCV exocytosis deficits (80% rescue) in Rab10-depleted neurons without affecting control neurons or ER morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims are supported by DCV fusion assays with leucine treatment (Figure 8C-F) showing 80% rescue of exocytosis. The lack of effect in control neurons (C99) and failure to rescue ER morphology (C100, Figure 8-supplement 2) suggest protein synthesis deficits are downstream of ER alterations and are the primary cause of DCV exocytosis impairment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C13",
+      "C109",
+      "C142"
+    ],
+    "result": "The effect of Rab10 on DCV exocytosis is attributed to two ER-dependent processes: impaired protein synthesis (major contributor) and dysregulated Ca2+ dynamics (minor contributor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C5, C13, C109, C142) is supported by the combined evidence from ionomycin experiments (45% vs 65% reduction) and leucine rescue (80% restoration). The quantitative dissection of contributions is logical and well-supported, though the exact percentages involve some interpretation of overlapping effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C127",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "DCV exocytosis is more dependent on acute protein synthesis than synaptic vesicle exocytosis, possibly due to different secretion properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C14 is inferred from differential effects on DCV vs SV exocytosis and leucine rescue, but direct comparison of protein synthesis dependence between DCVs and SVs is not experimentally tested. Claims C129-C131 are speculative (marked as SPECULATION in evidence_type). While plausible, this conclusion requires additional experiments comparing leucine effects on SV exocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C147"
+    ],
+    "result": "ER stress is limited in Rab10 KD neurons as ATF4 levels are unaffected, though depleted ER Ca2+ could potentially induce ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C148 is supported by ATF4 immunofluorescence (Figure 4-supplement 3) showing no increase compared to tunicamycin-treated controls. This negative result is important for ruling out ER stress as a major contributor to protein synthesis deficits. Claim C147 is speculative but appropriately qualified by the ATF4 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C146"
+    ],
+    "result": "Impaired ER morphology and upregulated ribosomal proteins upon Rab10 depletion may represent a compensatory response to altered ER structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C143 is supported by EM and proteomics data (Figures 3-4). However, claims C144 and C146 are speculative interpretations. The upregulation of ribosomal proteins could be compensatory, but could also reflect dysregulation. The causal relationship between ER morphology changes and ribosomal protein upregulation is not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Dysregulation of ER Ca2+ dynamics may not directly explain DCV exocytosis deficits but could act indirectly through effects on voltage-gated Ca2+ channels via STIM1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C137 is an inference based on negative results from unpublished data (C135) and prior work (C136). Claim C139 is speculation based on literature (C138). While the indirect mechanism via STIM1 is plausible and supported by citation, it is not directly tested in this study. The ionomycin experiments (C140-C141) provide some support but do not definitively test the STIM1 hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Impaired TrkB transport may contribute to impaired protein translation in Rab10 KD neurons through effects on CREB/mTOR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C149-C151 are based on literature citations but are not experimentally tested in this study. While Rab10's role in TrkB transport is established (C149), the contribution to protein synthesis deficits in this context is speculative (C151). This represents a plausible alternative mechanism but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C157",
+      "C158"
+    ],
+    "result": "Leucine can rescue protein synthesis and neuropeptide release deficits, providing a potential treatment for disorders associated with neuropeptide abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C157 is supported by experimental data (Figure 8). However, claim C158 about therapeutic potential is speculative (marked as SPECULATION). The leap from in vitro neuronal culture rescue to clinical treatment for depression and anxiety is substantial and requires extensive additional validation including in vivo studies, disease models, and clinical trials.",
+    "result_type": "MINOR"
+  }
+]

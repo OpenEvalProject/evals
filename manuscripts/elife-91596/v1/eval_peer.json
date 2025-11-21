@@ -1,0 +1,167 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C90",
+      "C92"
+    ],
+    "result": "MChIP-C is a novel MNase-based proximity ligation method that combines the genome-wide throughput of HiChIP with the exceptional resolution and sensitivity of MCC, allowing measurement of protein-mediated chromatin interactions at single-nucleosome resolution on a genome-wide scale.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm the technological advance. The editor states 'the evidence presented in this manuscript is convincing, and the technological advancements will be valuable.' Reviewer 2 notes 'the new method significantly increases the resolution of Micro-C' and 'the paper represented a significant technological advance.' Reviewer 3 states 'Methods appear to hold promise to improve both the sensitivity and resolution of protein-centered chromatin capture approaches.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C77",
+      "C81"
+    ],
+    "result": "MChIP-C demonstrates greatly improved resolution and sensitivity compared to restriction endonuclease-based C-methods (PLAC-seq, Hi-C) and outperforms standard whole-genome Micro-C when applied to study H3K4me3 promoter-centered interactions in K562 cells, with superior recall (60.7% vs 14.0% PLAC-seq, 19.9% Micro-C, 2.2% Hi-C) for detecting CRISPRi-verified E-P pairs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 requests that the authors 'should show at least 2-3 cases' where MChIP-C detects E-P interactions not identified by other C-methods, indicating the comparative claims need more specific validation. Reviewer 1 also notes the comparison is 'not convincing since they only compared their data to one dataset. More datasets from other cell lines should be included.' While reviewers acknowledge the method's promise, they question the sufficiency of the comparative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C66",
+      "C67",
+      "C68",
+      "C71",
+      "C72",
+      "C73",
+      "C120"
+    ],
+    "result": "EP300 histone acetyltransferase and the SWI/SNF remodeling complex are identified as potential candidates for establishing and/or maintaining enhancer-promoter interactions, outperforming other enhancer-associated factors (RNA polymerase II, mediator complex, YY1, BRD4) in predictive power for MChIP-C signal.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly requests 'More explanation is needed for this point since they're previously suggested to be associated with E-P interactions' regarding why EP300 and SWI/SNF are identified over other candidates. This indicates the reviewers find the evidence and reasoning insufficient to fully support the claim that EP300 and SWI/SNF are the key mediators, particularly given prior literature on other factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C76",
+      "C88",
+      "C89",
+      "C109"
+    ],
+    "result": "Most functionally verified enhancers (60.7% of CRISPRi-verified E-P pairs) physically interact with their cognate promoters as detected by MChIP-C, supporting the enhancer-promoter looping model, with this fraction likely underestimated due to technical factors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states 'it's intriguing to see whether the MChIP-C could indeed detect the E-P interactions which were not identified by C-methods as they mentioned' and requests specific examples, indicating the main conclusion needs stronger validation. Reviewer 1 also questions 'The reasons to choose Chen's data and CRISPRi screens should be provided since there are so many out there,' suggesting concerns about the generalizability of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C96"
+    ],
+    "result": "Four biological replicates of MChIP-C on K562 cells yielded ~3.5B read pairs with high reproducibility, identifying 112,087 P-P and 128,986 P-PIR interactions, though only ~4% of reads are informative, requiring significant sequencing depth.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes 'Downsampling analysis gives a better idea of the strengths of the approach' and acknowledges the technical sophistication. Reviewer 2 states 'the authors have addressed all my concerns and comments,' suggesting the experimental execution and data quality are accepted. The limitation of sequencing depth is acknowledged by reviewers as a technical consideration rather than a fundamental flaw.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Promoters preferentially interact with CTCF-bound sites when CTCF motifs are oriented towards the promoter (79% towards vs 21% away), suggesting possible involvement of loop extrusion mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges these findings about CTCF orientation bias. The mechanistic interpretations are presented as possibilities consistent with loop extrusion models, and reviewers do not question this analysis or interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Hierarchical clustering of PIR-overlapping DHSs identified four major clusters: clusters 1-2 enriched in CTCF/cohesin (structural interactions), and cluster 3 enriched in CRISPRi-confirmed enhancers and transcription factors but lacking cohesin (7,214 regulatory interactions), suggesting cohesin may not be involved in maintaining regulatory interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges the clustering analysis or the characterization of different interaction types. The findings about cohesin absence in regulatory interactions are consistent with recent literature cited by the authors, and reviewers do not dispute this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Analysis of cases where CRISPRi-verified E-P pairs lack MChIP-C interactions reveals technical factors (low coverage, imprecise enhancer localization, indirect effects, CTCF interference) that likely lead to underestimation of the true E-P interaction rate.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this analysis of missed interactions. The discussion of technical limitations and factors affecting detection is presented as a reasonable interpretation of the data, and no reviewer disputes these explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "MChIP-C avoids biotin enrichment to yield highly complex libraries, but full realization of the method's potential requires significant sequencing depth due to the small fraction of informative reads (~4%), though further optimizations could increase yield.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 requests 'The limitations of the method should be discussed.' Reviewer 3 notes 'it remains technically sophisticated and for some labs may not be worth the additional effort for the increase in information,' acknowledging both the method's strengths and practical limitations. The authors' discussion of limitations appears to satisfy reviewer concerns.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,160 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C21"
+    ],
+    "result": "The SR-EV model is an extension of the self-returning random walk (SRRW) that incorporates excluded volume constraints while maintaining stochastic return rules. The model uses a unit length of 10 nm representing nucleosomes and includes only connectivity, excluded volume, and confinement as physical interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly acknowledge the model development as convincing. Reviewer 1 states 'The developed methodology is convincing' and the first reviewer notes the framework 'can recapitulate at the same time local density and large-scale contact structural properties.' The extension from SRRW to include excluded volume is recognized as an improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C22",
+      "C57",
+      "C58"
+    ],
+    "result": "The SR-EV model generates conformationally defined packing domains and produces a corrugated chromatin structure with dense and dilute regions that resembles bi-continuous phase separation. High-frequency short returns lead to domain formation while low-frequency large steps create intermediate-scale structure allowing genomic accessibility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the model's ability to capture structural properties. The first reviewer states the framework 'can recapitulate at the same time local density and large-scale contact structural properties observed experimentally.' Reviewer 1 notes it allows 'investigation of the role of excluded volume locally' and finds the methodology convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C61"
+    ],
+    "result": "The SR-EV model predicts linker DNA lengths of 39.6 base pairs on average (ranging from 36.3 to 44.4 bp), which agrees with widely reported experimental values of 35-45 bp.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this finding. The first reviewer notes the work 'provides solid evidence that such a framework can be used, is reliable in describing chromatin organization at multiple scales.' The agreement with established experimental values is implicitly accepted as part of the model's validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C35"
+    ],
+    "result": "The SR-EV model produces chromatin density distributions that qualitatively resemble experimental ChromSTEM and ChromEMT data, with CVC distributions covering nearly identical ranges.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the first reviewer acknowledges the model 'can recapitulate' experimental observations, Reviewer 1 specifically notes a weakness: 'Comparisons with experiments are solid but are not clearly quantified.' This indicates acceptance of qualitative agreement but concern about the lack of quantitative validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C37",
+      "C45"
+    ],
+    "result": "Both SR-EV parameters (\u03a6 and \u03b1) influence CVC distributions, with the peak increasing as \u03b1 increases. Chromatin packing domain organization is strongly associated with local volume concentrations rather than return probability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as part of the model's ability to capture density properties. The first reviewer states the framework is 'reliable in describing chromatin organization at multiple scales' and Reviewer 1 notes the methodology is 'convincing,' implicitly supporting these parameter relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C60"
+    ],
+    "result": "The SR-EV model intrinsically generates population heterogeneity and can capture both ensemble properties and individual chromosome behavior through its stochastic framework.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly recognizes this as a strength, stating the model 'may offer an alternative - less computationally demanding - framework to investigate the single-cell and population structural properties of 3D genome organization at multiple scales.' The stochastic nature enabling heterogeneity is affirmed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C5"
+    ],
+    "result": "The SR-EV model predicts that chromatin packing domains persist after RAD21 depletion with ~80% retention and minimal changes in properties. Experimental validation confirms this prediction, showing maintained domain organization and minimal impact on chromatin population diversity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'They perform some experiments to compare with model predictions and show consistency between the two.' The RAD21 depletion experiments are part of this experimental validation that reviewers acknowledge as supporting the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Stochastic returns in the model represent multiple possible biochemical processes (not solely cohesin-mediated loop extrusion), providing a failsafe mechanism to maintain organizational integrity when any single mechanism is lost.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation is implicitly supported by reviewers' acceptance of the RAD21 depletion results. The first reviewer notes the framework represents 'an interesting alternative to standard molecular dynamics simulations,' acknowledging the different mechanistic interpretation. No reviewer challenges this conceptual framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C54",
+      "C56"
+    ],
+    "result": "The SR-EV model predicts that connectivity-based methods (Hi-C) would be insensitive to volume concentration changes while density-based methods (ChromEM, super-resolution) would show profound changes. Domain organization arises directly from chromatin concentration and nuclear size.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The first reviewer acknowledges the model can address 'large-scale contact structural properties' alongside local density. While Reviewer 1 notes limitations in capturing specific mechanisms, they do not challenge these predictions about methodological sensitivities, which are accepted as part of the model's framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "The bi-continuous topology predicted by SR-EV offers functional advantages: large surface area exposing significant genome fraction and continuity of dilute phase allowing crowder migration throughout the nucleus.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these functional interpretations. The first reviewer states the work is 'valuable for the community' and provides 'solid evidence,' implicitly accepting the structural and functional implications of the bi-continuous organization as reasonable inferences from the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C67"
+    ],
+    "result": "The current SR-EV implementation spans spatial scales from ~10 nm to ~1 \u03bcm and is comparable to human chromosome 16 in size, though it could be expanded. The model already captures many key chromatin properties.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the first reviewer states the framework is 'reliable in describing chromatin organization at multiple scales,' Reviewer 1 notes significant limitations: 'The model currently cannot fully account for specific mechanisms that may shape the heterogeneous, complex organization of chromosomes (TAD at specific positions, A/B compartmentalization, promoter-enhancer loops, etc.)' and 'excluded volume only impacts locally.' This indicates the model's scope is more limited than claimed.",
+    "result_type": "MINOR"
+  }
+]

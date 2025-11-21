@@ -1,0 +1,172 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C28",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Using a customized BLAST-based bioinformatics pipeline with manual curation, the authors identified 12 previously unknown class IIb microcins across seven Enterobacteriaceae species. This includes three novel clades (MccW, MccX, MccZ) and eight new variants of the five known class IIb microcins, expanding the known distribution beyond E. coli and K. pneumoniae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bioinformatic discovery is well-supported by detailed methodology (C73-C79), phylogenetic analysis (C34, Figure 1B-C), sequence similarity data (C35, Table 1), and genomic organization (C32, C37-C38, Figure 1A). The identification of novel clades is supported by sequence divergence data (C39-C42) and their co-localization with known microcin biosynthesis genes (C43). The failure of antiSMASH to detect these microcins (C36) validates the need for the custom approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Through heterologous expression in E. coli optimized for enterobactin conjugation, 11 of 12 newly discovered microcins demonstrated antimicrobial activity in iron-depleted conditions. This includes the first experimental validation of Kp G492 activity, previously known only from genetic sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The antimicrobial activity is well-documented through static inhibition assays (C44, C7, Figure 2A) with appropriate controls showing iron-dependence (C45, Figure 2B-C). The heterologous expression system is clearly described (C80-C81) and the validation of Kp G492 (C47, C82) represents a novel contribution. The variable activity spectrum (C46) is consistent with the data shown in Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C71"
+    ],
+    "result": "Two newly discovered microcins (Ps G492 and Se G492) exhibit activity against ESKAPE pathogens A. baumannii and P. aeruginosa, providing the first evidence that class IIb microcins can target bacteria outside the Enterobacteriaceae family. Se G492 shows 256-fold greater potency against A. baumannii compared to K. pneumoniae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The activity against ESKAPE pathogens is clearly demonstrated through static inhibition assays and MIC data (C49-C50, Figure 2B-C). The quantitative potency differences (C51-C53) are supported by MIC dilution data in Figure 2B. This represents a significant expansion of the known target range for class IIb microcins (C48), though the mechanism underlying this broader activity is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Several class IIb microcins demonstrated activity against plant pathogen genera Brenneria, Gibbsiella, and Rahnella. The microcin-producing strains B. goodwinii and G. quercinecans are associated with acute oak decline and show synergistic growth with upregulation of iron transporters during co-culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The activity against plant pathogens is supported by experimental data (C64, Figure 2A) and citations to the pathogenic nature of these organisms. The ecological context (C60-C62) is well-supported by citations to prior work. However, the speculation about native target spectrum (C63) is appropriately qualified as uncertain and represents a hypothesis rather than demonstrated fact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C54",
+      "C55",
+      "C70"
+    ],
+    "result": "Class IIb microcin genes are more prevalent in Enterobacteriaceae genomes than previously recognized, potentially impacting ecological dynamics more broadly than previously thought, including effects on Pseudomonadales species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increased prevalence is directly supported by the discovery of 12 new microcins across seven species (C4, C10, C54). The claim of creating the most comprehensive library (C70) is reasonable given the expansion from 5 to 17 characterized microcins. However, the broader ecological impact (C55) is speculative and based on limited evidence of activity against P. aeruginosa, requiring further validation in natural environments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C72"
+    ],
+    "result": "Synthetic hybrid microcins created through heterologous expression with enterobactin conjugation represent a viable tool for targeting drug-resistant pathogens, with potential applications against enteric bacteria, ESKAPE pathogens, and plant diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the antimicrobial activity is demonstrated (C11, C71), several important caveats limit the strength of this conclusion. The authors acknowledge that native activity spectrums may differ (C57), static assays have lower sensitivity than MIC assays (C58-C59), and the activity depends on the heterologous enterobactin system rather than native siderophore production. The therapeutic potential (C65, C67, C68-C69, C72) is largely speculative and requires in vivo validation and optimization beyond the scope of this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Genes encoding microcin posttranslational modifications are highly conserved between E. coli and K. pneumoniae, while toxin and immunity genes show greater variability, consistent with accelerated coevolution driven by target specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential conservation is clearly demonstrated through sequence comparison (C26-C27, Figure 1\u2014figure supplement 1). The evolutionary hypothesis (C29-C30) is appropriately supported by citation to coevolutionary theory and is consistent with the observed data. The genomic organization principle (C31) is well-established and correctly applied in the bioinformatic search strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C66"
+    ],
+    "result": "Background context on class IIb microcins and their role in microbial ecology, including their characteristics as ribosomally synthesized siderophore-conjugated bacteriocins that mediate Enterobacteriaceae dynamics and can be imported by bacteria outside this family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are appropriately supported by citations to prior work (C1-C2, C12-C25, C66). The mechanistic understanding of siderophore-mediated import (C18-C21) and the prior therapeutic proposals (C22) provide essential background for interpreting the current findings. All statements are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

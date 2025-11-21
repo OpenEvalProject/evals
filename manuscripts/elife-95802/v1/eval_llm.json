@@ -1,0 +1,446 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C16",
+      "C18",
+      "C19",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Common fiber photometry analysis strategies reduce the detection of effects by condensing within-trial signals into summary measures and discarding trial-level information through trial-averaging. These approaches may dilute important patterns related to individual animal differences and signal evolution across trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C16, C18-C19, C43-C45 collectively establish that current photometry analysis methods have significant limitations. The characterization is based on field knowledge and is well-supported by the literature review and examples provided (C21-C26). The authors demonstrate these limitations empirically through Figure 1 and subsequent reanalyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47"
+    ],
+    "result": "Existing photometry-specific analysis methods have critical limitations: encoding models lack time-point-specific inference and reduced power from single-animal fitting; permutation methods are restricted to two-condition comparisons; standard GLMs/correlations require trial-averaging; and the Lee et al. 2019 method is overly conservative and sampling-rate dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C42, C46-C47 provide a comprehensive critique of existing methods with appropriate citations. The limitations are logically argued based on statistical principles (e.g., C35, C37, C39-C42). The authors later empirically validate the Lee et al. critique through direct comparison (C130-C132).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The proposed FLMM framework enables hypothesis testing at every trial time-point using trial-level signals without averaging, compares timing and magnitude across conditions while accounting for between-animal differences, and produces joint 95% confidence intervals that improve effect detection over standard multiple comparison corrections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10, C48-C54 describe the core capabilities of FLMM. These are well-supported by the methodological development (C55-C79), empirical demonstrations on real data (C94-C129), and simulation validation (C133-C141). The framework successfully addresses the limitations identified in existing methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "FLMM combines linear mixed models and functional regression to extract information both across and within trials, modeling covariates at trial, session, and animal levels while using functional random-effects to capture between-animal variability. Joint confidence intervals exploit autocorrelation to enable interpretation across time intervals rather than single time-points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C73 describe the technical foundation of FLMM with appropriate citations (C60, C69). The methodological approach is clearly explained and builds on established statistical methods. The joint CI construction is a key innovation that is validated in simulations (C134-C141).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors extended the FLMM framework to enable joint 95% CIs for general random-effects specifications, including nested models. This extension substantially improved model fits in the neuroscience experiments analyzed and addresses a gap in existing methodological implementations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C142-C144 describe a genuine methodological contribution. The extension is properly motivated by the gap in existing methods (C74, C143) and validated through improved model fits (C75, C144). The derivation is based on established statistical approaches (C76) and detailed in Appendix 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "FLMM reanalysis of the Jeong et al. 2022 IRI-dopamine association revealed two distinct temporal components: a rapid component peaking before lick-onset (possibly reflecting motivation/reward detection) and a slower component after lick-onset (possibly tracking consumption). Standard AUC analysis averaged across these components, obscuring their distinct dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C94-C104 demonstrate FLMM's ability to reveal effects obscured by summary measures. The finding is supported by Figure 4 showing the IRI-DA association throughout the time window [-0.5, 1.5] sec (C97). The interpretation of two components (C98-C102) is reasonable given the temporal dynamics, though speculative elements are appropriately qualified (C100, C102).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "FLMM reanalysis revealed that the Reward Number-dopamine association is negative within-session but positive across-sessions, contradicting the original Jeong et al. 2022 finding of a positive correlation. This discrepancy represents Simpson's paradox caused by pooling data without accounting for hierarchical structure. DA increases across sessions during reward anticipation but decreases within-session during consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C119 identify a critical reanalysis finding with major implications. The Simpson's paradox explanation (C113-C114) is well-supported by Figure 5A showing opposing within-session and across-session slopes. The FLMM properly accounts for nested structure (C110), and the temporal dynamics (C115-C118) provide mechanistic insight. This directly contradicts the original paper's interpretation regarding RPE vs. ANCCR models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "FLMM detected a significant reduction in mean dopamine during the falling portion of the cue-elicited response (1-2.5 sec after cue-onset) when delay was lengthened from 3 to 9 seconds, an effect that was obscured in the original Jeong et al. 2022 AUC analysis because opposing effects in different time windows canceled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C129 demonstrate FLMM's ability to detect subtle temporal effects missed by AUC analysis. The finding is supported by Figure 6H showing the specific time window of the effect. The explanation for why AUC missed this effect (C127) is logical - the significant reduction in interval (2) was diluted by the non-significant increase in interval (1). This exemplifies the value of time-point-specific analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Simulation experiments based on realistic photometry data characteristics demonstrated that FLMM achieves nominal joint and pointwise 95% CI coverage across sample sizes, substantially improves statistical power over standard methods (LMM, t-test, permutation), and commits Type I errors at nominal levels, indicating it is not overly susceptible to trial-level noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C141, C173-C176 provide rigorous validation of FLMM's statistical properties. The simulations incorporated realistic data characteristics (C133) and compared against appropriate alternatives. Figure 7 shows FLMM achieves ~95% joint coverage (C134) while permutation methods do not (C135), and FLMM has superior power (C138). The nominal Type I error rate (C175) addresses concerns about analyzing trial-level data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "FLMM's proportion of significant time-points is stable across sampling rates, while the Lee et al. 2019 approach shows inconsistent and often low (conservative) proportions across sampling rates, demonstrating the advantage of modeling signals as functions and exploiting temporal correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C132 provide empirical validation of the critique of the Lee et al. 2019 method (C38-C42). The comparison directly demonstrates the sampling-rate dependence problem predicted theoretically (C41). This is referenced to Appendix 2 for full details, and the interpretation (C132) logically follows from the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Alternative explanations for the within-session dopamine decreases include photobleaching, satiation/habituation, learning about reward-delivery mechanism cues, or elevated indicator expression. However, the ability to detect both within-session increases (to cues) and decreases (to rewards) on the same trials argues against photobleaching as the sole explanation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C123, C150-C157 appropriately acknowledge alternative explanations for the reanalysis findings. The photobleaching argument (C121-C123) is logical but relies on additional analyses in Appendix 4.3. Other explanations (C150-C155) are speculative and cannot be definitively ruled out. The authors appropriately qualify these as possibilities rather than conclusions. Personal communication with original authors (C123) adds credibility but is not peer-reviewed evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C158",
+      "C159",
+      "C160",
+      "C166",
+      "C167",
+      "C168",
+      "C169"
+    ],
+    "result": "The reanalysis findings have implications for competing models (RPE vs. ANCCR) of dopamine's role in reward learning, but adjudicating between these models is beyond the scope of the current work. The authors suggest that modeling trial-level dopamine as a vector or function may improve theories for its role in reward learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C149, C158-C160, C166-C169 appropriately acknowledge the theoretical implications while recognizing the limitations of the current work. The authors correctly note that model predictions depend on specific implementations (C149, C167) and that their findings suggest future work is needed (C166). The suggestion about functional modeling (C168-C169) is reasonable speculation supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The Jeong et al. 2022 dataset exhibits common photometry data characteristics including nested longitudinal structure, high within-animal correlations across sessions and trials, between-animal variability in covariate-signal associations, and missing data with varying sample sizes. FLMM can model these characteristics through functional random-effects and accommodates missing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C93 characterize the dataset and justify FLMM's design choices. The data characteristics are demonstrated in Figure 3 (C84-C85, C89, C93). The capabilities of FLMM to handle these characteristics (C86-C87, C90-C92) are logical consequences of the mixed-effects framework and are validated through successful model fitting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Reanalysis of a second study (Coddington et al. 2023) measuring calcium dynamics demonstrated FLMM's applicability to different photometry sensors and additional capabilities including modeling how signal dynamics early in training predict later behavior and estimating covariate interactions across trial time-points and sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C170-C172 demonstrate generalizability of FLMM beyond dopamine sensors. The reanalysis is detailed in Appendix 6 and shows additional capabilities. This strengthens the case for FLMM as a general framework, though the appendix location suggests these are supporting rather than primary results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C202",
+      "C207"
+    ],
+    "result": "The authors provide the fastFMM package (first to provide joint CIs for functional mixed models with nested random-effects), which is fast, maintains low memory footprint, can fit generalized models with count distributions, and allows non-linear covariate-signal relationships using splines or basis functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C200, C202, C207 describe the software implementation. The claim of being 'first' (C196) is qualified with 'to our knowledge' and supported by the literature review (C74, C143). Performance claims (C200) are supported by a timing example in the Methods. The capabilities (C202, C207) are standard extensions of the framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "FLMM may reduce biases from summary statistics by preserving temporal resolution to disentangle neural sub-populations, makes model misspecification easier to identify through visual inspection, and may improve reproducibility by incorporating pre-processing steps into the model framework with explicit uncertainty quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177-C194 describe potential benefits of FLMM for scientific practice. The bias reduction argument (C177-C180) is logical given photometry measures aggregate activity. The model misspecification claim (C181) is supported by the authors' experience. The reproducibility argument (C183-C194) is well-reasoned - incorporating pre-processing into the model makes assumptions explicit and quantifies uncertainty. These are appropriately framed as potential benefits rather than proven advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C195",
+      "C201",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C208"
+    ],
+    "result": "FLMM is applicable to a wide range of experimental settings and may extend to other techniques like electrophysiology and calcium imaging. The method can be extended to model time-varying covariates, enabling analysis of simultaneously recorded signals from different brain regions and trials with variable lengths, though flexibility-interpretability tradeoffs must be considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195, C201, C203-C208 describe the scope and potential extensions of FLMM. The broad applicability (C195) is supported by the range of analyses demonstrated. Extensions to other techniques (C201) and time-varying covariates (C203-C205) are reasonable given the framework's generality. The caution about complexity (C208) is appropriate for a method designed for inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Photometry signals from a Pavlovian reward learning task (Coddington et al. 2023) exhibit considerable heterogeneity across animals, conditions within-animal, trials within-session, and sessions. Averaging across trials can obscure behavior-signal associations, and AUC summarization can fail to distinguish signals with different dynamics but similar summary values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C26 are supported by Figure 1 showing data from Coddington et al. 2023. The heterogeneity is visually apparent in panels A-D. The inferences about averaging and AUC (C25-C26) logically follow from the observed variability. This motivates the need for FLMM but is not a primary result of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "FLMM is well-suited to assess dopamine backpropagation questions by testing signal timing evolution within and across sessions. Reanalysis results align with Jeong et al. 2022 but contrast with Amo et al. 2022. Initial exploration suggests between-animal variability in backpropagation timing may require explicit modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C161-C165 discuss the backpropagation hypothesis with reference to Appendix 4.4. The argument for FLMM's suitability (C161) is logical. However, the 'initial exploration' (C164) and recommendation for future work (C165) suggest this analysis is incomplete. The contrast with Amo et al. (C163) is noted but not resolved. This appears to be preliminary work requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Linear mixed models can analyze trial-level summary measures without trial-averaging but still require condensing signals into scalars. Functional regression can test associations at each time-point but most methods require trial-averaging. Both approaches have complementary strengths and limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 provide background on the component methods underlying FLMM. These are accurate characterizations of LMM and functional regression based on established statistical knowledge. The limitations identified (C57, C59) motivate the need to combine these approaches in FLMM (C60). This is pedagogical background rather than a novel result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C17",
+      "C20"
+    ],
+    "result": "Fiber photometry quantifies bulk fluorescence from biosensors with high specificity, has increased in popularity nearly exponentially since development, and enables chronic implantation for longitudinal experiments. Common analysis procedures were adapted from other fields rather than designed specifically for photometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C17, C20 provide accurate background on fiber photometry with appropriate citations. The exponential growth claim (C15) is supported by Appendix 1-figure 1. The historical development (C17) and chronic implantation capability (C20) are well-established facts. This is standard background material.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C209"
+    ],
+    "result": "Research on statistical methods for fiber photometry is necessary given the widespread use of the technique and variability of analysis procedures across labs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C209 is a concluding statement supported by the entire paper. The widespread use is documented (C15), the variability in analysis approaches is demonstrated through the literature review (C16-C42), and the need for better methods is established through the limitations identified and improvements demonstrated. This is a well-supported conclusion.",
+    "result_type": "MINOR"
+  }
+]

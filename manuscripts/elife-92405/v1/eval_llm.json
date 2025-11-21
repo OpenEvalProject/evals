@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors sampled teosinte from six locations and maize from five sympatric locations across the native range in Mexico, with 10 individuals per population (except Palmar Chico with 55 maize and 50 teosinte, down-sampled to 10). All 195 individuals were sequenced at 20-25\u00d7 coverage and aligned to the Z. mays B73 v5 reference genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C23 provide a clear and well-documented sampling and sequencing strategy. The sampling design is appropriate for population genetic analysis, with adequate coverage depth and alignment to a standard reference genome. The use of previously published Palmar Chico samples (C19-C20) with proper citation adds rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Phylogenetic analysis revealed clear divergence between maize and teosinte clades, with different relationships among geographic locations between subspecies. Within subspecies, populations were genetically distinct with minimal admixture (only 2 of 195 individuals showed mixed ancestry).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 are well-supported by phylogenetic reconstruction (Treemix) and admixture analysis (NGSadmix), with visual support from Figure 1A-D. The findings are consistent with prior work (Buckler and Holtsford 1996; Hufford et al. 2012) and demonstrate clear population structure within the study system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C30"
+    ],
+    "result": "F4 tests revealed evidence for gene flow between maize and teosinte populations, but there was little evidence of increased gene flow between sympatric pairs compared to allopatric pairs. Z-scores were sensitive to the specific combinations of populations included in each test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28 and C30 present gene flow evidence but acknowledge sensitivity to test configuration (Appendix 2). While F4 tests are appropriate, the lack of increased gene flow in sympatric pairs is surprising and the sensitivity to population combinations raises questions about the robustness of specific inferences. Additional validation or alternative approaches would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Maize had lower average genome-wide diversity than teosinte, consistent with domestication bottlenecks. Teosinte populations with lower diversity (El Rodeo and San Lorenzo) showed the most substantial bottlenecks and historical inbreeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by nucleotide diversity estimates (Figure 2A) and demographic inference (Figure 2C). The pattern is consistent with established domestication theory and prior work (Doebley 1990; Hufford et al. 2012). The connection between low diversity and inferred bottlenecks in specific teosinte populations provides internal consistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C70",
+      "C71"
+    ],
+    "result": "All populations showed signatures of a bottleneck starting approximately 10,000 generations ago, coinciding with maize domestication (~9000 years ago). The severity of the bottleneck varied considerably across populations, particularly for teosinte.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C70-C71 are supported by demographic inference using mushi (Figure 2E) with appropriate mutation rate assumptions (Clark et al. 2005). The timing coincides with known domestication dates (Piperno et al. 2009). However, the authors acknowledge that finding bottlenecks in teosinte populations is unexpected and may reflect anthropogenic land use changes rather than direct domestication effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Both subspecies show low inbreeding coefficients (mean F = 0.017\u00b10.001 for maize, 0.033\u00b10.001 for teosinte), consistent with outcrossing mating systems and prior estimates. This suggests relatively little recent inbreeding in either subspecies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C40 are well-supported by inbreeding coefficient estimates using ngsrelate (Figure 2E) and HBD analysis (Figure 2D). The values are consistent with prior estimates (Hufford et al. 2011) and with the known biology of teosinte and traditional maize farming practices. The validation using simulations under inferred demography adds rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The proportion of mutations fixed by natural selection (\u03b1) varied between 0.097 (teosinte San Lorenzo) and 0.282 (teosinte Palmar Chico), with more variation among teosinte populations than maize populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by asymptotic MK test analysis (Figure 3) using a Bayesian mixed-effects model. The range of \u03b1 values is reasonable and the greater variation in teosinte is consistent with their more diverse evolutionary histories. However, the authors acknowledge that \u03b1 estimates assume no contribution from positively selected polymorphisms, which may make estimates conservative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Using replicate samples from Palmar Chico, the proportion of sweeps shared between replicates was estimated to be 0.67 for maize and 0.80 for teosinte after optimizing RAiSD hyperparameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 provides an empirical estimate of sweep detection accuracy using independent replicates, which is a rigorous approach. The values suggest moderate to high reproducibility, though they also indicate non-trivial false positive and false negative rates. This validation is critical for interpreting the sweep sharing results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Sympatric population pairs did not show more sweep sharing than allopatric pairs in hypergeometric tests, and no population pair showed more sharing than expected by chance. Zero sweeps were exclusive to sympatric pairs; shared sweeps between sympatric pairs always included at least one allopatric population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 are supported by hypergeometric tests accounting for sweep detection accuracy (Figure 4). The finding that sympatric pairs do not share more sweeps than expected contradicts the initial hypothesis but is clearly demonstrated. The absence of sweeps exclusive to sympatric pairs is a strong negative result that challenges simple models of local adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Of 101 shared sweeps, convergence occurred via independent mutations (1), migration (50), or standing variation (40), with 10 inferred as neutral. Migration had the highest average selection coefficient. For sweeps shared between subspecies, no single population was the most frequent source, but for maize-exclusive sweeps, Crucero Lagunitas was the dominant source.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by rdmc analysis (Figure 5). The predominance of migration and standing variation over independent mutations is consistent with evolutionary theory given ongoing gene flow and short timescales. The identification of Crucero Lagunitas as a major source for maize-exclusive sweeps is intriguing and consistent with F4 test results, though the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "For convergent sweeps via standing variation in maize or shared between subspecies, the distribution of standing times was bimodal with both long and short durations. The single teosinte-exclusive sweep showed longer standing time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C57 describes a bimodal pattern in standing times (Figure 5E), but the interpretation is complicated by small sample sizes and potential confounding with ancestral population structure. Claim C58 is based on a single observation, making it difficult to draw general conclusions. The authors acknowledge these limitations and suggest more comprehensive sampling could help resolve patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The most likely migration rate was 10\u207b\u00b9 for most sweeps shared between subspecies and maize-exclusive sweeps. For teosinte-exclusive sweeps, the lowest migration rate (10\u207b\u00b3) was always most likely, though only five instances were observed, suggesting convergence via migration exclusive to teosinte is rare.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by migration rate inference from rdmc (Figure 5F). The differential migration rates between subspecies-shared and teosinte-exclusive sweeps suggest different dynamics of allele movement. However, the small number of teosinte-exclusive migration events (5) limits the strength of conclusions about this category.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Many alleles are adaptive in both maize and teosinte genomic backgrounds, and adaptive alleles are commonly shared between subspecies, but distinct patterns emerge depending on whether maize populations share the signature of adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 synthesize the convergence analysis results and represent major conclusions. The evidence from sweep sharing patterns, convergence modes, and migration rates collectively supports these claims. The distinction between patterns with and without maize involvement is well-documented through the source population and migration rate analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Maize had a higher proportion of sweeps shared with other populations, likely due to shared domestication history. Teosinte had more unique sweeps, suggesting local adaptation played a greater role in their evolutionary history, consistent with their untended growth and lack of domestication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C75 are supported by sweep sharing analysis (Figure 4) and represent well-reasoned interpretations. The connection between shared sweeps in maize and domestication history is logical and supported by citation (Stitzer and Ross-Ibarra 2018). The contrast with teosinte's higher proportion of unique sweeps fits with their independent evolutionary trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Convergent adaptation is common among populations and subspecies, suggesting many mutations are beneficial in multiple populations. Convergence via independent mutations was the least frequent mode, consistent with prior work and expected given ongoing gene flow, short evolutionary timescales, and low probability of independent fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are well-supported by convergence analysis (Figures 4-5) and consistent with prior studies (Hufford et al. 2012; Wang et al. 2021). The rarity of independent mutations is expected under population genetic theory and the specific conditions of this system. The reasoning connecting gene flow, timescales, and drift is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Migration was the most common mode of convergent adaptation and frequently occurred between geographically disparate populations. This is consistent with evidence that maize and teosinte can hybridize and prior findings of long-distance gene flow in maize and between maize and Z. mays mexicana.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by convergence mode analysis and well-grounded in prior literature (Wilkes 1967; Ellstrand et al. 2007; Ross-Ibarra et al. 2009; Calfee et al. 2021; Wang et al. 2021). The finding of frequent long-distance migration is surprising but consistent with human-mediated movement of maize and opportunities for hybridization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The authors hypothesize that beneficial alleles for teosinte may have originated in other populations and moved via gene flow with maize. Supporting this, few shared sweeps are exclusive to teosinte, teosinte-exclusive migration sweeps show the lowest migration rate (10\u207b\u00b3), while subspecies-shared and maize-exclusive sweeps show higher rates (10\u207b\u00b9), indicating alleles beneficial only in teosinte move more slowly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C91 present an intriguing hypothesis about maize facilitating teosinte adaptation. While the differential migration rates (C89-C91) and low number of teosinte-exclusive shared sweeps (C88) are data-supported, the mechanistic interpretation (C86) remains speculative. The small number of teosinte-exclusive migration events limits confidence, and alternative explanations are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Maize from Crucero Lagunitas was a major source population for maize-exclusive sweeps. Geographically widespread varieties like Celaya (Crucero Lagunitas) may have played a prominent role in transporting beneficial alleles. However, teosinte populations were often the source for sweeps shared between subspecies and may have commonly provided adaptive variation to both teosinte and maize.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by source population analysis (Figure 5D) and F4 test results. The prominence of Crucero Lagunitas is well-documented, and the connection to geographically widespread varieties (Orozco-Ram\u00edrez et al. 2017) is reasonable. The bidirectional nature of adaptive allele exchange between subspecies is an important finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Signatures of local adaptation are frequently exclusive to individual populations (more so in teosinte than maize), but sweeps are also frequently shared among populations and between subspecies, most often via migration. Teosinte has been a continued source of beneficial alleles for maize post-domestication, and maize has facilitated teosinte adaptation by moving alleles across the landscape. Local adaptation operates at an intermediate geographic scale, larger than individual populations but smaller than the species range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 represent the major conclusions of the study and are well-supported by the collective evidence from \u03b1 estimation, sweep detection, sharing analysis, and convergence mode inference. The finding of intermediate-scale adaptation challenges simple models of local adaptation and provides new insights into the evolutionary dynamics of maize and teosinte. The bidirectional exchange of adaptive alleles is a novel and important result.",
+    "result_type": "MAJOR"
+  }
+]

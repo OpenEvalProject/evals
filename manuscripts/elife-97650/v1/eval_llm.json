@@ -1,0 +1,187 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C12",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "An optogenetic system using caged cyclofen (cCYC) was developed to control KRASG12V oncogene expression in a transgenic zebrafish line. The system uses light-activated uncaging of cCYC to release CRE-ERT from cytoplasmic chaperones, enabling spatially and temporally controlled Cre/loxP recombination to switch expression from EOS to KRASG12V and H2B-mTFP. The system shows no spontaneous activation without illumination and maintains stable expression after activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C12, C78-C85 collectively describe a well-established optogenetic approach with appropriate controls and validation. The system is supported by citations to prior work (Sinha et al., 2010; Zhang et al., 2018; Feng et al., 2017), detailed methods, and figures showing spatial specificity and stable expression. The lack of spontaneous activation (C6) is validated by prior studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Whole-body activation of KRASG12V alone at 1 dpf does not cause tumorigenesis, but co-activation with reprogramming factors (Ventx, Nanog, or Oct4) reproducibly induces hyperplasic outgrowths in multiple tissues with cancer-associated features including pERK activity, altered gene expression (upregulation of pluripotency/stemness genes, downregulation of tumor suppressors), histopathological changes, and reduced survival (20% at 2 weeks).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 and C70-C77 provide converging evidence from multiple experimental approaches (immunohistochemistry, H&E staining, RT-qPCR, survival analysis) with appropriate controls showing that only the combination of KRASG12V and reprogramming factors induces tumors. The gene expression data (C70-C74) shows statistically significant changes consistent with malignant transformation. Sample sizes are stated (n=24 for qPCR, multiple larvae for other assays).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Single-cell activation of KRASG12V in the zebrafish brain (achieved with ~50% probability in an ~80 \u03bcm illumination zone) followed by transient Ventx activation leads to deterministic malignant transformation. At 1 dpi, ~50% of induced cells divided and expanded ~3-fold, while the other 50% remained undivided. By 3-5 dpi, all larvae (n=30) developed tumors with short-range dispersal followed by tumor mass formation and metastasis to distant organs. Controls without Ventx activation showed cell disappearance without proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C24 describe a well-controlled single-cell induction experiment with clear temporal progression, appropriate controls (C15, C24), and quantitative data (C13, C17, C18, C19). The sample size (n=30) is stated, and the 100% tumor development rate is remarkable. The spatial specificity (C14) and clonal origin of metastases (C23) are logically supported by experimental design (no cCYC after initial activation). Multiple figures document the progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "All larvae (N=30) with 1-6 cells expressing KRASG12V plus transient Ventx activation developed tumors within 5 dpi, yielding a tumor development frequency F1=1. Statistical analysis estimates the probability of tumor development from a single KR+VX cell to be P1>80% (\u03c7\u00b2=3.75; df=1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C27 present quantitative tumor development data, but the statistical analysis (C27) is problematic. The chi-squared test with \u03c7\u00b2=3.75 and df=1 yields p\u22480.053, which is marginally non-significant at \u03b1=0.05. The claim of P1>80% based on this test is questionable. Additionally, the analysis doesn't account for the variable number of initially activated cells (1-6), making it difficult to definitively estimate single-cell transformation probability. More rigorous statistical modeling accounting for the initial cell number distribution would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Single cells isolated from KR+VX-induced hyperplasic tissue and transplanted into na\u00efve host zebrafish led to tumor development in 31/52 hosts (60%), with integration, migration, colonization, and pERK activity. This transplantation efficiency is consistent with prior zebrafish studies. Control cells expressing KRASG12V alone without Ventx activation did not form tumors and disappeared within days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C31 provide definitive functional validation of malignant transformation through the gold-standard transplantation assay. The 60% efficiency (C29) is appropriately compared to literature (Campbell et al., 2021), and the control experiment (C31) demonstrates the necessity of Ventx activation. The operational definition of malignancy (C30) is reasonable, though the claim that this is 'to the best of our knowledge' the definition is somewhat informal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors propose that aberrant reactivation of Epi-Driver genes (VENTX/NANOG, POU5/OCT4) involved in reprogramming/pluripotency, in cooperation with oncogenic mutations (Mut-Drivers like KRASG12V), drives irreversible malignant transformation. This supports a two-step 'Vogelgram' model where Mut-Drivers act as permissive but insufficient initiators, and Epi-Driver reactivation (possibly during tissue renewal/regeneration) promotes deterministic transformation, overcoming surveillance mechanisms like cell competition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C46 present a mechanistic model well-supported by the experimental data (C1-C31) and extensive literature citations. The model logically integrates observations of deterministic transformation upon Epi-Driver activation with known roles of reprogramming factors in cancer (C34, C58-C59) and prior studies in BRAF/p53 mutant cells (C37). The hypothesis about tissue renewal (C45-C46) is strengthened by citation to Tomasetti & Vogelstein 2015. However, these remain interpretive claims requiring further mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The results are compatible with the 'ground state theory of cancer initiation' (Jassim et al., 2023), where malignant transformation occurs upon a change in functional/epigenetic state of a cell harboring oncogenic mutations. The transient activation of reprogramming factors may synergize with oncogenes to alter cellular state. This may explain why tissue-wide KRASG12V activation yields stochastic tumor development over weeks, potentially due to stochastic Epi-Driver reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 appropriately connect the experimental findings to existing theoretical frameworks with proper citations. The compatibility with ground state theory (C47-C49) is logical given the experimental demonstration of state-dependent transformation. The explanation for discrepancies with prior studies (C50-C51) is reasonable and supported by recent findings on transient epigenetic perturbations (Parreno et al., 2024).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The progeny of the cell(s) of origin display short-range dispersal during early tumorigenesis prior to tumor mass appearance, corroborating theoretical models predicting early dispersal to explain heterogeneity and therapeutic resistance. The optogenetic approach enables predictable, noninvasive control of single-cell malignant transformation in an unaltered microenvironment, opening new avenues for studying the cell of origin of cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are well-supported by the imaging data showing early cell dispersal (Figures 2, 3, supplementary figures) and appropriately linked to theoretical predictions (Waclaw et al., 2015). The claim about the novelty of the approach (C53) appears justified as the first demonstration of predictable single-cell transformation in vivo with spatial and temporal control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript provides extensive background on cancer biology, including the prevalence of KRAS mutations (27% all cancers, 45% colorectal, 90% pancreatic), the role of Epi-Drivers in late-stage cancer, limitations of current approaches that activate drivers in many cells leading to stochastic tumor development, and the rarity of single-cell transformation events. The study addresses the gap in single-cell tracking of early tumorigenesis and demonstrates that synergy between KRASG12V and reprogramming factors increases single-cell carcinogenesis probability by orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C69 provide well-cited background establishing the significance of the study. The statistics on KRAS prevalence (C54-C57) are from appropriate databases (COSMIC) and literature. The description of current limitations (C61-C66) accurately reflects the field. The summary claim (C67) is supported by the experimental results. These background claims are appropriately supported by extensive citations.",
+    "result_type": "MINOR"
+  }
+]

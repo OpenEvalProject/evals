@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C108",
+      "C140"
+    ],
+    "result": "The authors generated a comprehensive single-nucleus RNA sequencing atlas of the periosteum at steady state and during early fracture repair (days 3, 5, and 7 post-fracture), providing the first complete dataset of early bone regeneration stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21, C22, C108, and C140 collectively establish that the authors successfully generated a comprehensive snRNAseq dataset covering uninjured periosteum and multiple early time points post-fracture. The experimental design is clearly described, sample sizes are reported, and the data are made publicly available. This represents a well-documented technical achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C110",
+      "C111"
+    ],
+    "result": "The uninjured periosteum contains eight distinct cell populations, including a single SSPC population (Pi16+ Ly6a/SCA1+ cells) localized to the fibrous layer that represents the most undifferentiated state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32, C110, and C111 are supported by clustering analysis, marker gene expression, CytoTrace scoring, and spatial localization data shown in Figures 1-2. The identification of cell populations is based on established marker genes and computational analysis of 1189 nuclei. The convergence of multiple analytical approaches (clustering, differentiation scoring, spatial analysis) provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Functional validation demonstrates that Prrx1-GFP+ SCA1+ cells have higher colony-forming potential than SCA1- cells and only SCA1+ cells form cartilage after fracture, confirming their stem/progenitor properties with osteochondrogenic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C35 are supported by in vitro CFU assays (Figure 2F-G) and in vivo cell grafting experiments (Figure 2H). The CFU data show statistically significant differences, and the grafting experiments provide direct functional evidence. However, sample sizes are modest (n=3-5) and statistical tests are not fully detailed for the grafting experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C113",
+      "C114"
+    ],
+    "result": "Previously described SSPC markers (Ctsk, Gli1, Acta2, Mx1) are not specific to a single cell cluster, suggesting these markers may label heterogeneous cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C113, and C114 are supported by marker expression analysis shown in Figure 2\u2014figure supplement 1. The data demonstrate that these commonly used markers are expressed across multiple cell clusters, challenging the specificity of these markers. This is an important negative result that refines understanding of periosteal cell heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C115"
+    ],
+    "result": "Integration of datasets from uninjured periosteum and days 3, 5, and 7 post-fracture reveals dramatic compositional changes: SSPCs decrease, IIFCs progressively increase, chondrocytes and osteoblasts appear from day 3, and immune cells peak at day 3 before declining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 and C115 are supported by integrated analysis of 6213 nuclei across time points, with clear visualization in Figures 3D-E. The temporal dynamics are well-documented and consistent with expected healing progression. The integration methodology is standard (Seurat), and the compositional changes are quantified and visualized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Spatial analysis reveals that Pi16+ SSPCs localize to the fibrous layer at steady state, are absent at day 3 post-fracture when POSTN+ IIFCs and immune cells dominate, and by days 5-7 the callus contains fibrotic tissue with IIFCs, cartilage with SOX9+ chondrocytes, and new bone with OSX+ osteoblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C53 are extensively supported by immunofluorescence, RNAscope, and histological analyses shown in Figure 4 and supplements. The spatial organization is documented across multiple time points with appropriate markers. The integration of spatial and transcriptomic data strengthens the conclusions. Sample sizes (n=3 per group) are adequate for descriptive spatial analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C124"
+    ],
+    "result": "Pseudotime trajectory analysis reveals that periosteal SSPCs differentiate through three stages: starting from Pi16+ Ly6a+ SSPCs, transitioning through an injury-induced fibrogenic stage (IIFCs expressing ECM genes like Postn and Aspn), and finally differentiating into either chondrocytes or osteoblasts, with this fibrogenic stage being common to both lineages and independent of final fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59, C118-C122, and C124 are supported by monocle3 pseudotime analysis (Figure 5) showing clear trajectories from SSPCs through IIFCs to differentiated cells. The parallel between pseudotime and actual time points (C58) validates the trajectory. However, pseudotime analysis is computational inference and does not prove causality\u2014the trajectory represents the most likely path but alternative interpretations exist. The conclusion would be strengthened by lineage tracing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Functional validation confirms the SSPC\u2192IIFC\u2192osteoblast/chondrocyte trajectory: grafted GFP+ SSPCs form POSTN+ IIFCs at day 5, grafted GFP+ IIFCs form bone and cartilage at day 14, and progressive increases in SOX9 and OSX are observed in IIFCs at transition zones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by cell grafting experiments (Figure 6) and immunofluorescence showing transition zones (Figure 6A). The grafting experiments provide direct functional evidence for the differentiation trajectory. However, sample sizes are modest (n=3-4), and the experiments track population-level behavior rather than single-cell fate. The results strongly support but do not definitively prove the trajectory at the single-cell level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "IIFCs are characterized by upregulation of genes related to tissue development, ECM (including collagens, Postn, Aspn), cell signaling, migration, differentiation, and proliferation, with only a small subset undergoing apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 are supported by Gene Ontology analysis (Figure 7A), gene expression analysis (Figure 7B-C), and apoptosis scoring (Figure 7\u2014figure supplement 2). The characterization is comprehensive and uses standard analytical approaches. The low apoptosis rate supports the conclusion that IIFCs are maintained and differentiate rather than being eliminated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Gene regulatory network analysis identified 280 activated regulons, with SSPCs showing the highest number (most stable), IIFCs showing the lowest (most transient), and cell-type-specific regulons including stemness-related (Hoxa10, Klf4) and immune-related (Stat6, Fiz1) regulons in SSPCs, 21 IIFC-specific regulons (fibro-core), and lineage-specific regulons (Sp7 for osteoblasts, Sox9 for chondrocytes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C76 are supported by SCENIC analysis (Figure 7D-I). The GRN analysis is methodologically sound and identifies biologically plausible regulons. The interpretation that regulon number reflects stability (C71-C72) is reasonable but represents one possible interpretation. The fibro-core identification is novel and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C128"
+    ],
+    "result": "Notch signaling is specifically increased in the IIFC stage and is crucial during this phase prior to osteochondral commitment, consistent with prior findings that Notch inactivation at early stages leads to bone non-union.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 and C128 are supported by Reactome pathway analysis and Notch signaling scoring (Figure 7J). The data show clear enrichment of Notch-related terms in IIFC-specific TFs and increased Notch signaling in IIFCs. The integration with prior literature (C126-C127) strengthens the interpretation. However, the study does not functionally test Notch's role\u2014the conclusion relies on correlative data and literature integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C131",
+      "C132",
+      "C135"
+    ],
+    "result": "Chondrogenesis is regulated by two regulon cores: chondro-core 1 (9 regulons including circadian clock regulators Npas2 and Arntl) is transiently activated during IIFC-to-chondrocyte transition, while chondro-core 2 (14 regulons) is specific to differentiated chondrocytes, suggesting circadian clock genes play key regulatory roles in chondrogenesis during bone repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C88, C131-C132, and C135 are supported by regulon analysis and STRING network analysis (Figure 8A-D). The temporal dynamics are well-documented, showing transient chondro-core 1 activation preceding sustained chondro-core 2 activation. The identification of circadian clock regulons is novel and supported by literature on Bmal1's role in cartilage (C133-C134). However, the functional role is inferred rather than tested\u2014the study identifies correlation but does not demonstrate causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C129",
+      "C130"
+    ],
+    "result": "Osteogenesis is regulated by an osteo-core of 8 regulons (including Tcf7, Bcl11b, Tbx2) that interact with Wnt signaling genes, with osteo-core activity gradually increasing and being maintained in osteogenic cells, confirming Wnt's crucial role in osteogenesis and revealing its specific activation after Notch in IIFCs engaging in osteogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93, C129-C130 are supported by regulon analysis, STRING network analysis, and activity scoring (Figure 8E-H). The data show clear enrichment of Wnt-related genes among osteo-core interactors and progressive increase in osteo-core activity during osteogenesis. The temporal relationship with Notch activation is supported by the data. However, as with chondrogenesis, functional causation is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C136"
+    ],
+    "result": "CellChat analysis reveals that IIFCs are the predominant source of outgoing signals and important receivers during bone repair, with strongest interactions with SSPCs and other IIFCs, while endothelial cells mostly receive signals and chondrocytes/osteoblasts/immune cells show reduced interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 and C136 are supported by CellChat analysis (Figure 9A-B and supplements). The computational analysis is methodologically appropriate and identifies biologically plausible interaction patterns. However, CellChat predicts interactions based on ligand-receptor expression and does not prove functional interactions occur in vivo. The conclusions about IIFCs' central role are well-supported by the computational analysis but would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "IIFCs secrete multiple paracrine factors (POSTN, BMPs, PTN, TGF\u03b2s, PDGFs, ANGPTLs) with distinct temporal dynamics (TGF\u03b2 peaks at day 3, others at day 5), with ligand expression increased during the IIFC phase while receptors are expressed in both SSPCs and IIFCs from steady state, indicating IIFCs produce factors that regulate SSPCs and contribute to SSPC recruitment and their own maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107, C137-C139 are supported by ligand-receptor analysis and temporal expression profiling (Figure 9C-G). The identification of secreted factors is based on established ligand-receptor databases and expression data. The temporal dynamics are well-documented. However, the functional consequences (C107, C139) are inferred from expression patterns and interaction predictions rather than directly tested. The conclusions are reasonable but represent computational predictions rather than experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study addresses a significant knowledge gap: while bone regeneration is known to be mediated by periosteal SSPCs with both osteogenic and chondrogenic potential, the composition of the periosteum and the steps of SSPC activation and differentiation have remained poorly understood, with few single-cell studies investigating early fracture healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C20 establish the background and rationale for the study. These claims are supported by appropriate citations to prior literature and accurately represent the state of knowledge in the field. The identification of the knowledge gap is well-justified and provides clear motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Single-nucleus transcriptomics provides results equivalent to single-cell transcriptomics but with better cell type representation and reduced digestion-induced stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is supported by multiple citations to prior literature (Machado et al., 2021; Selewa et al., 2020; Ding et al., 2020; Wen et al., 2022). This represents established knowledge that justifies the methodological choice. The authors do not independently validate this claim but appropriately cite supporting literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "Prior studies demonstrated the periosteum's unique potential to form both bone and cartilage after fracture, but it remained unknown whether this reflects a bipotent SSPC population or multiple populations with distinct potentials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 accurately represent prior knowledge (supported by citations) and identify a specific unresolved question that the current study addresses. This provides clear motivation for the trajectory analysis performed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "In skeletal muscle, an early transient fibrogenic response is required for regeneration, supporting muscle stem cell activation and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is supported by citation to Wosczyna et al., 2019. This represents established knowledge from another tissue system that provides context for interpreting the fibrogenic response observed in bone repair. The parallel is appropriate and strengthens the biological plausibility of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Previous studies reported that Notch inactivation at early stages of repair leads to bone non-union, while Notch inactivation in chondrocytes and osteoblasts does not significantly affect healing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by appropriate citations to prior literature. These claims accurately represent prior findings and provide important context for interpreting the current study's identification of Notch signaling in IIFCs. The integration of prior knowledge with current findings strengthens the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Bmal1 was previously shown to regulate cartilage differentiation in bone development and homeostasis, with its inactivation leading to chondrocyte apoptosis and disruption of signaling involved in cartilage formation (TGF\u03b2, Ihh, HIF1\u03b1, NFAT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 are supported by appropriate citations to prior literature (Chen et al., 2020; Dudek et al., 2023; Dudek et al., 2016; Ma et al., 2019; Takarada et al., 2012). These claims accurately represent established knowledge about Bmal1's role in cartilage, providing important context for the identification of circadian clock regulons in chondro-core 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C94",
+      "C141",
+      "C142"
+    ],
+    "result": "The study identifies a novel SSPC activation pattern involving coordinated temporal dynamics: periosteal SSPCs (Pi16+ Ly6a/SCA1+) respond to fracture by adopting an IIFC fate prior to osteogenesis or chondrogenesis, with distinct gene cores (involving Notch, Wnt, and circadian clock signaling) regulating IIFC differentiation, and IIFCs serving as the main source of paracrine signals, representing a transient population playing essential roles in early bone repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8, C23-C26, C94, C141-C142 represent the major integrated conclusions of the study. These are well-supported by the convergence of multiple lines of evidence: transcriptomic profiling, pseudotime analysis, functional validation through cell grafting, spatial analysis, GRN analysis, and cell-cell interaction analysis. The identification of the IIFC stage as a common intermediate is novel and well-supported. However, some aspects remain correlative (e.g., paracrine function) rather than causally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "A deeper understanding of IIFC regulation will be crucial as they represent the ideal target to enhance bone healing and potentially treat bone repair defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C143 is speculative about future applications and therapeutic potential. While the identification of IIFCs as a key intermediate stage provides a logical therapeutic target, the study does not test whether manipulating IIFCs actually enhances healing or treats repair defects. This represents a reasonable hypothesis for future work but is not supported by data in the current study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1763 @@
+{
+  "submission": {
+    "id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:21:38.352163Z",
+    "updated_at": "2025-11-21T20:21:38.352163Z"
+  },
+  "content": [
+    {
+      "id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "content_type": "manuscript",
+      "content_text": "# Multisensory integration operates on correlated input from unimodal transient channels\n\n## Authors\n\n- Cesare V Parise<sup>1</sup> ([ORCID: 0009-0000-6092-561X](https://orcid.org/0009-0000-6092-561X)) \u2020\n- Marc O Ernst<sup>1</sup> \u2020\n\n### Affiliations\n\n1. Cognitive Neuroscience Department, University of Bielefeld (DE) Bielefeld Germany ([ROR:02hpadn98](https://ror.org/02hpadn98))\n2. Department of Psychology, University of Liverpool Liverpool United Kingdom ([ROR:04xs57h96](https://ror.org/04xs57h96))\n3. Applied Cognitive Psychology, University of Ulm (DE) Ulm Germany ([ROR:032000t02](https://ror.org/032000t02))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAudiovisual information reaches the brain via both sustained and transient input channels, representing signals\u2019 intensity over time or changes thereof, respectively. To date, it is unclear to what extent transient and sustained input channels contribute to the combined percept obtained through multisensory integration. Based on the results of two novel psychophysical experiments, here we demonstrate the importance of the transient (instead of the sustained) channel for the integration of audiovisual signals. To account for the present results, we developed a biologically inspired, general-purpose model for multisensory integration, the multisensory correlation detectors, which combines correlated input from unimodal transient channels. Besides accounting for the results of our psychophysical experiments, this model could quantitatively replicate several recent findings in multisensory research, as tested against a large collection of published datasets. In particular, the model could simultaneously account for the perceived timing of audiovisual events, multisensory facilitation in detection tasks, causality judgments, and optimal integration. This study demonstrates that several phenomena in multisensory research that were previously considered unrelated, all stem from the integration of correlated input from unimodal transient channels.\n\n## Introduction\n\nAudiovisual stimuli naturally unfold over time, and their structures alternate intervals during which the signals remain relatively constant (such as the steady luminance of a light bulb) to sudden moments of change (when the bulb lights up). To efficiently process the temporal structure of incoming signals, the sensory systems of mammals (and other animal classes) rely on separate channels, encoding stimulus intensity through either sustained or transient responses (Benucci et al., 2007; Kim et al., 2011; Breitmeyer and Ganz, 1976; Qin et al., 2007; Recanzone, 2000; Ikeda and Wright, 1972). These channels are known to originate early in the processing hierarchy (Recanzone, 2000; Ikeda and Wright, 1972), with sustained ones responding with constant neural firing to static input intensity, whereas transient channels respond with increased firing to any variations in input intensity (i.e., both increments and decrements, Figure 1a). On a functional level, the response of sustained and transient channels represents distinct dynamic stimulus information. Specifically, sustained responses represent the intensity of the stimulus, while transient responses represent changes in stimulus intensity. In terms of frequency response, sustained channels can be characterized as low-pass temporal filters (Equation 10), highlighting the low-frequency signal components. Transient channels, on the other hand, have a higher spectral tuning and can be characterized as band-pass temporal filters (Equation 1), signaling events, or moments of stimulus change (Stigliani et al., 2017).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig1-v1.jpg)\n\n**Figure 1.:** (a) Responses of sustained and transient channels to onset and offset step stimuli, and periodic signals comprising sequences of onsets and offsets. Note that while the sustained channels closely follow the intensity profile of the input stimuli, transient channels only respond to changes in stimulus intensity, and such a response is always positive, irrespective of whether stimulus intensity increases or decreases. Therefore, when presented with periodic signals, while the sustained channels respond at the same frequency as the input stimulus (frequency following), transient channels respond at a frequency that is twice that of the input (frequency doubling). (b) Synchrony as measured from cross-correlation between pairs of step stimuli, as seen through sustained (top) and transient (bottom) channels (transient and sustained channels are simulated using Equations 1; 10, respectively). Note how synchrony (i.e., correlation) for sustained channels peaks at zero lag when the intensity of the input stimuli changes in the same direction, whereas it is minimal at zero lag when the steps have opposite polarities (negatively correlated stimuli). Conversely, being insensitive to the polarity of intensity changes, synchrony for transient channels always peaks at zero lag. (c) Synchrony (i.e., cross-correlation) of periodic onsets and offset stimuli as seen from sustained and transient channels. While synchrony peaks once (at zero phase shift) for sustained channels, it peaks twice for transient channels (at zero and pi radians phase shift), as a consequence of its frequency-doubling response characteristic. (d) Experimental apparatus: participants sat in front of a black cardboard panel with a circular opening, through which audiovisual stimuli were delivered by a white LED and a loudspeaker. (e) Predicted effects of experiments 1 and 2 depending on whether audiovisual integration relies on transient or sustained input channels. The presence of the effects of interest in both experiments or the lack thereof indicates an inconclusive result, not interpretable in the light of our hypotheses.\n\nChanging information over time is also critical for multisensory perception (Stein, 2012): when two signals from different modalities are caused by the same underlying event, they usually covary over time (like firecrackers\u2019 pops and blazes). A growing body of literature has now investigated human sensitivity and adaptation to temporal lags across the senses (Vroomen and Keetels, 2010), and it is well established that both multisensory illusions (Sekuler et al., 1997; Samad et al., 2018; van Wassenhove et al., 2007) and Bayesian-optimal cue integration (e.g., Parise et al., 2012) critically depend on synchrony and temporal correlation across the senses. However, multisensory integration does not operate on the raw physical signals; these are systematically transformed during transduction and early neural processing. Therefore to understand multisensory integration, it is critical to figure out how unisensory signals are processed before feeding into the integration stage. Surprisingly, this fundamental question has received little attention in multisensory research.\n\nCurrent evidence, however, suggests a prominence of transient channels in the percept resulting from multisensory integration. For example, Andersen and Mamassian, 2008 found that task-irrelevant increments or decrements in sound intensity equally facilitated the detection of both increments and decrements in the lightness of a visual display. Critically, such an effect only occurred when changes in the two modalities occurred in approximate temporal synchrony. Based on the independence of polarity of this crossmodal facilitation, where intensity increments and decrements produced similar perceptual benefits, the authors concluded that audiovisual integration relies primarily on unsigned transient stimulus information. The role of transient channels in audiovisual perception is further supported by fMRI evidence: Werner and Noppeney, 2011 found that audiovisual interactions in the human brain only occurred during stimulus transitions and demonstrated that transient onset and offset responses could be dissociated both anatomically and functionally (see also Herdener et al., 2009). While these studies demonstrate the dominance of transient over sustained temporal channels in, for example, detection tasks as studied by Andersen and Mamassian, 2008, or the pattern of neural responses during passive observation of audiovisual stimuli as in Herdener et al., 2009, to date, it is still unknown to what extent transient and sustained channels affect the perceived timing of audiovisual events \u2013 such as the subjective synchrony of visual and auditory signals, which is arguably the primary determinant of multisensory integration.\n\nTo understand the effect of transient versus sustained channels in multisensory perception, we must first focus on the difference between their unimodal responses. For that, we can consider stimuli consisting of steps in stimulus intensity (e.g., Andersen and Mamassian, 2008). A schematic representation is shown in Figure 1a: while onset and offset step stimuli trigger identical unsigned transient responses, sustained responses differ across conditions. That is, given that sustained channels represent the magnitude of the stimulus, responses to onset and offset stimuli are negatively correlated. In signal processing, Pearson correlation is commonly used to assess the synchrony of two related signals, with a higher correlation representing higher synchrony (and similarity, Wei, 2006). Therefore, we can hypothesize that if multisensory time perception relies on sustained input channels, positively correlated audiovisual stimuli (e.g., onset or offset stimuli in both modalities) should be perceived as more synchronous than negatively correlated stimuli (i.e., onset in one modality, offset in the other). Conversely, if audiovisual synchrony relies on unsigned transients, positively and negatively correlated stimuli should appear equally synchronous (Figure 1b).\n\nThis hypothesis will be tested in experiment 1, where systematic differences in perceived synchrony based on whether audiovisual signals are positively or negatively correlated would provide evidence for a dominant role of sustained input channels in audiovisual temporal processing. A lack of systematic differences driven by stimulus correlation, however, would not necessarily imply a transient nature of audiovisual temporal processing: this would require additional evidence from an inverse experiment, one in which the transient hypothesis predicts an effect that the sustained hypothesis does not (Figure 1e). For that, we can consider audiovisual stimuli consisting of periodic onsets and offsets (e.g., square-wave amplitude modulation, see Figure 1c). While sustained channels respond at the same rate as the input, transient responses have a rate double that of the input signals. This phenomenon, known as frequency doubling, is commonly considered a hallmark of the contribution of transient channels in sensory neuroscience (e.g., Kim et al., 2011).\n\nFrequency doubling, therefore, is a handle to assess the contribution of transient and sustained channels in audiovisual perception. Consider audiovisual stimuli defined by square-wave amplitude modulations with a parametric manipulation of crossmodal phase shift (Figure 1c). If audiovisual temporal integration relies on the correlation between sustained input channels, we can predict perceived audiovisual synchrony (i.e., correlation, Wei, 2006) to peak just once: at zero phase shifts. Conversely, if multisensory temporal integration relies on transient channels, perceived audiovisual synchrony should peak twice: at 0 and 180\u00b0. phase lag (Figure 1c). Such a frequency-doubling phenomenon can be easily assessed psychophysically by measuring reported simultaneity as a function of audiovisual lags. Therefore, in a second psychophysical study, we rely on frequency doubling in audiovisual synchrony perception to assess whether multisensory integration relies on transient or sustained input channels.\n\n## Results\n\n### Experiment 1: Step stimuli\n\nTo probe the effect of the correlation between unimodal step stimuli on the perceived timing of audiovisual events, eight participants (age range 22\u201335 years, four females) observed audiovisual signals consisting of lightness and acoustic intensity increments (on-step) and decrements (off-step). On-steps and off-steps were paired in all possible combinations, giving rise to four experimental conditions (both modalities on, both off, vision on with audio off, and vision off with audio on, see Figure 1b). The lag between visual and acoustic step events was parametrically manipulated using the method of constant stimuli (15 steps, between \u20130.4 and 0.4 s). After the stimulus presentation, participants performed a temporal order judgment (TOJ, which event came first, sound or light?) or a simultaneity judgment (SJ, were the stimuli synchronous or not?). TOJ and SJ tasks were run in different sessions occurring on different days. Although our original hypotheses (see, Figure 1b\u2013e) do not make specific predictions for the TOJ task, for completeness we run such an experiment anyway, as its inclusion provides a more stringent test for our model (see \u2018Modeling\u2019 section).\n\nThe audiovisual display used to deliver the stimuli consisted of a white LED in an on- (high-luminance) and off-state (low-luminance), and acoustic white noise, also in either on- (quiet) or off-state (loud). Sounds came from a speaker located behind the LED, and both the speaker and the LED were controlled using an audio interface to minimize system delay (Figure 1d, see Parise and Ernst, 2016). A white, sound transparent cloth was placed in front of the LED so that when the light was on, participants saw a white disk of 13\u00b0 in diameter. Overall, each participant provided 600 responses in the TOJ task (15 lags, 10 repetitions, and 4 conditions) and additional 600 responses in the SJ task (again, 15 lags, 10 repetitions, and 4 conditions). The experiment was run in a dark, sound-attenuated booth, and the position of participants\u2019 heads was controlled using a chin- and a headrest. Participants were paid 8 euros/hr. The experimental procedure was approved by the ethics committee of the University of Bielefeld (ref. no. 2015-136) and was conducted in accordance with the Declaration of Helsinki.\n\n### Results\n\nTo assess whether different combinations of on-step and off-step stimuli (and correlation thereof) elicit measurable psychophysical effects, we estimated both the point and the window of subjective simultaneity (PSS and WSS, i.e., the delay at which audiovisual stimuli appear simultaneous, and the width of the window of simultaneity). For that, we fitted psychometric curves to both TOJ and SJ data, independently for each condition. Specifically, following standard procedures (Parise and Spence, 2009), TOJs were statistically modeled as cumulative Gaussians, with four free parameters (intercept, slope, and two asymptotes, Figure 2a). The PSS was calculated as the lag at which TOJs were at chance level, whereas the WSS was calculated as the half-difference between the lags eliciting 0.75 and 0.25 probability of audio-first responses. The SJs data, instead, were modeled as the difference of two cumulative Gaussians (Yarrow et al., 2011), leading to asymmetric bell-shaped psychometric functions (Figure 2b). The PSS was calculated as the lag at which perceived simultaneity was maximal, whereas the WSS was calculated as the half-width at half-maximum. Results are summarized in Figure 2c and d (see Figure 2\u2014figure supplement 1 for individual data, and \u2018Materials and methods\u2019 for a correlation analysis of the PSS and WSS measured from TOJs vs. SJs).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig2-v1.jpg)\n\n**Figure 2.:** (a) Responses in the temporal order judgment (TOJ) task and psychometric fits (averaged across participants) for the four experimental conditions. (b) Responses in the simultaneity judgment (SJ) task and psychometric fits (averaged across participants) for the four experimental conditions. Each dot in (a, b) corresponds to 80 trials. (c) Window of subjective simultaneity for each condition and task. (d) Point of subjective simultaneity for each condition and task.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data from different observers are represented in different rows. (a) represents the data of the temporal order judgment (TOJ) task. (b) represents the data of the simultaneity judgment (SJ) task. The icons on top represent the different conditions. Each dot corresponds to 10 trials. (c) represents the scatterplot of the point of subjective simultaneity (PSS) measured with the TOJ plotted against the PSS measured with the SJ. (d) represents the scatterplot of the window of subjective simultaneity (WSS) measured with the TOJ plotted against the PSS measured with the SJ. Each dot in (c, d) represents the PSS or WSS from one condition and observer (i.e., there are four dots for each observer, one per condition); datapoints from the same participant are linked by a gray line.\n\nTo assess whether the four experimental conditions differ in the PSS and WSS, we run both nonparametric Friedman tests, with Bonferroni correction for multiple testing, and Bayesian repeated-measures ANOVA. Neither PSS nor WSS statistically differed across conditions, and this was true for both the TOJ and SJ data. Results are summarized in Appendix 1\u2014table 2.\n\n### Conclusion\n\nThe lack of a difference across conditions found in experiment 1 implies that the on-step and off-step stimuli induced similar perceptual responses. Based on our original hypothesis, the present results argue against the dominance of sustained input channels in the perception of audiovisual events, as the synchrony (i.e., Pearson correlation, Wei, 2006) of sustained signals would otherwise have been affected by the crossmodal combination of on-step and off-step stimuli. As previously mentioned, while a lack of difference across conditions in experiment 1 is necessary to infer a dominance of transient channels in audiovisual time perception, this evidence is not sufficient on its own. For that, we would need additional evidence in the form of the presence of systematic effects, which are predicted from the operating principles of the transient channels, but not for sustained ones. Experiment 2 was designed to fulfill such a requirement as it predicts a frequency-doubling effect in perceived synchrony for transient but not for sustained input channels.\n\n### Experiment 2: Periodic stimuli\n\nParticipants observed a periodic audiovisual stimulus consisting of a square-waved intensity envelope and performed a force-choice SJ task. The carrier visual and auditory stimuli consisted of pink noise, delivered by a speaker and an LED (Figure 1d), which were switched on and off periodically in a square-wave fashion with a period of 2 s for a total duration of 6 s (so that three full audiovisual cycles were presented on each trial, Figure 3a). To prevent participants from just focusing on the start and endpoint of the signals, during the intertrial interval, the visual and auditory stimuli were set to a pedestal intensity level, so that during the trial the square-wave modulation was gradually ramped on and off, following a raised cosine profile with a duration of 6 s (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig3-v1.jpg)\n\n**Figure 3.:** (a) Schematic representation of the periodic stimuli. (b) Frequency domain representation of the psychometric function: note the amplitude peak at two cycles per period. Errorbars represent the 99% CIs. The inset represents the phase angle of the two cycles per period frequency component for each participant (thin lines) and the average phase (arrow). (c) Results of experiment 2 and psychometric fit, averaged across all participants. Each dot corresponds to 75 trials.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Data from different observers are represented in different rows. The first four columns represent the data in polar coordinates, whereas the second column represent the same dataset in Cartesian coordinates. The counter-clockwise rotation of the polar psychometric functions indicates that maximum perceived synchrony across the senses occurs when vision changes slightly before audition. Each dot corresponds to 15 trials. The last column represents the psychometric curve in the frequency domain: note the peak at 2 cpp in every participant, indicating the frequency-doubling effect. The errorbars in the last column represent the 99% CIs.\n\nThe lag across the sensory signals consisted of relative phase shifts of the two square waves, while the raised cosine window remained constant (and synchronous across the senses). Audiovisual phase shift was manipulated according to the method of constant stimuli, and a full cycle was sampled in 40 steps. Each lag was presented 15 times to yield a total of 600 trials per participant. Besides the relative phase shifts across the multisensory signals, also the phase offset of the stimulus as a whole varied pseudorandomly across trials (spanning a full period sampled in 15 steps, one per repetition). Therefore, each time a given lag (phase shift) was tested, also the phase offset of the signals changed. Given that we expect the frequency-doubling effect to be strong in size (i.e., synchrony at pi-phase shift should approach 0 under the sustained hypothesis, and 1 under the transient hypothesis), and that we collected a large number of responses (n = 600 per observer), a pool of five participants (age range 25\u201335 years, three females) was large enough to reliably assess its presence or lack thereof. Participants were paid 8 euros/hr, and the experimental procedure was approved by the ethics committee of the University of Bielefeld and was conducted in accordance with the Declaration of Helsinki.\n\n### Results\n\nDue to the periodic nature of the stimuli and hence of the experimental manipulation of lag, the resulting psychometric functions are also expected to be periodic, with an alternation of phase shifts yielding higher and lower reported synchrony. In this context, the evidence of frequency doubling can be measured from the number of oscillations in perceived simultaneity for a full cycle of phase shifts between the audiovisual stimuli.\n\nGiven the periodicity of the stimuli, it is natural to analyze the psychometric functions in the frequency domain. Therefore, to get a nonparametric and assumption-free estimate of the frequency of oscillations in the data, we ran a Fourier analysis on the empirical psychometric curves. If human responses are driven by transient input channels, we predict a peak at two cycles per period (cpp., i.e., frequency doubling), otherwise, there should be a peak at 1 cpp. The power spectrum of the psychometric functions shows a sharp peak at a frequency of 2 cpp in all observers, thereby indicating the presence of the hypothesized frequency-doubling effect (Figure 3b, Figure 3\u2014figure supplement 1). To assess whether the amplitude at 1 and 2 cpp is statistically different at the individual observer level, we used a bootstrap procedure to estimate the CIs of the response spectrum. For that, we used the binomial distribution and simulated 50,000 psychometric functions, on which we performed a frequency analysis to obtain the 99% CIs of the amplitudes. The results for both the aggregate observer and the individual data show a clear separation between the CIs of the amplitude at the frequencies of 1 and 2 cpp and demonstrate that the 2 cpp is indeed the dominant frequency, whereas the amplitude at 1 cpp is close to 0 and it is no different from the background noise (i.e., higher harmonics; see Figure 3b, Figure 3\u2014figure supplement 1).\n\nGiven that the frequency analyses revealed a 2 cpp peak for all participants, we used this information to fit a sinusoidal psychometric function to the psychophysical data. Under the assumption of late Gaussian noise, the psychometric function can be written as\n\n$$\np(synch\u2228\u03d5)=normcdf(\\alpha+\\beta\u22c5sin(f\u22c5\u03d5+\\theta)),\n$$\n\nwhere normcdf represents the cumulative normal distribution function, the parameter $\\alpha$ is the bias term, $\\beta$ the sensitivity, $\u03d5$ the phase-lag (range = [0, 2$\\pi$]), f the frequency of oscillations, and $\\theta$ is the phase offset (this shifts peak synchrony toward either positive or negative phases). Based on the Fourier analyses, we fixed the frequency ($f$) to 2 cpp, $\\theta$ to \u20130.441 radians, and kept the linear coefficients \u2013 $\\alpha$ and $\\beta$ \u2013 as free parameters, which were fitted to the psychophysical data using an adaptive Bayesian algorithm (Acerbi and Ma, 2017).\n\nOverall, the fitted psychometric curves match the empirical data with a high goodness of fit (median r2 = 0.9321). Such an agreement between psychometric curves and empirical data achieved with the frequency parameter constrained by the Fourier analyses further indicates a reliable frequency-doubling effect in all our participants.\n\n### Conclusion\n\nThe results of experiment 2 clearly demonstrate the existence of a frequency-doubling effect in the perceived simultaneity of periodic audiovisual stimuli. Given that the frequency-doubling effect is only expected to occur if audiovisual synchrony is computed over unsigned transient input channels, the present results support a dominance of transient input channels in multisensory time perception. These results complement the conclusions of experiment 1 and together demonstrate the key role of transient input channels in audiovisual integration.\n\n### Modeling\n\nTo account for multisensory integration, we have previously proposed a computational model, the multisensory correlation detector (MCD, Parise and Ernst, 2016) that exploits the temporal correlation between the senses to solve the correspondence problem, detect simultaneity and lag across the senses, and perform Bayesian-optimal multisensory integration. Based on the Hassenstein\u2013Reichardt motion detector (Hassenstein and Reichardt, 1956; Fujisaki and Nishida, 2005; Fujisaki and Nishida, 2007), the core of the MCD is composed of two mirror-symmetric subunits, each multiplying visual and auditory input after applying a low-pass filter to each of them. As a consequence of this asymmetric filtering, each subunit is selectively tuned to different temporal order of the signals (i.e., vision vs. audition lead). The outputs of the two subunits are then combined in different ways to detect the correlation and lag of multisensory signals, respectively. Specifically, correlation is calculated by multiplying the outputs of the subunits, hence producing an output ($MCD_{Corr}$) whose magnitude represents the correlation between the signals (Figure 4c). Temporal lag is instead detected by subtracting the outputs of the subunits, like in the classic Hassenstein\u2013Reichardt detector (Hassenstein and Reichardt, 1956). This yields an output ($MCD_{Lag}$) with a sign that represents the temporal order of the signals (Figure 4b). While a single MCD unit can only perform temporal integration of multisensory input, a population of MCD units, each receiving input from spatially tuned receptive fields (Figure 4d), followed by divisive normalization (Figure 4e, see Ohshiro et al., 2011), can perform Bayesian-optimal spatial cue integration (e.g., see Alais and Burr, 2004) for audiovisual source localization (Figure 4f, see Parise and Ernst, 2016, for details).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig4-v1.jpg)\n\n**Figure 4.:** (a) Model schematics: the impulse-response functions of the channels are represented in the small boxes, and call-outs represent the transfer functions. (b) Lag detector step responses as a function of the lag between visual and acoustic steps. (c) Correlation detector responses as a function of the lag between visual and acoustic steps. (d) Population of MCD units, each receiving input from spatiotopic receptive fields. (e) Normalization, where the output of each unit is divided by the sum of the activity of all units. (f) Optimal integration of audiovisual spatial cues, as achieved using a population of MCDs with divisive normalization. Lines represent the likelihood functions for the unimodal and bimodal stimuli; dots represent the response of the MCD model, which is indistinguishable from the bimodal likelihood function.\n\nIn its original form, the input to the MCD consisted of sustained unimodal channels, modeled as low-pass temporal filters (see also, Burr et al., 2009; Yarrow et al., 2011). Although such a model could successfully account for the integration of trains of audiovisual impulses, the MCD cannot replicate the present results: for that, we first need to feed the model with unsigned transient unimodal input channels. Therefore, we replaced the front-end low-pass filters with band-pass temporal filters (to detect transients) followed by a squaring non-linearity (to get the unsigned transient; Stigliani et al., 2017), and tested the model against the results of both experiments 1 and 2, plus a variety of previously published psychophysical studies.\n\nThe equations of the revised MCD model are reported in the \u2018Materials and methods\u2019. Just like the original version, the revised MCD model has three free parameters, representing the time constants of the two band-pass filters (one per modality) and that of the low-pass temporal filters of the subunits of the detector. Given that the tuning of the time constants of the model depends on the temporal profile of the input stimuli (see Pesnot et al., 2022), here we used the data from experiments 1 and 2 to constrain the temporal constants for the simulation of datasets consisting of either step stimuli or variations thereof (e.g., periodic stimuli), while for the simulation of experiments relying on stimuli with faster temporal rates, we constrained the temporal constants using data from Parise and Ernst, 2016. Details on parameter fitting are reported in the \u2018Materials and methods\u2019. Given that in a previous study (Parise and Ernst, 2016) we have already shown that alternative models for audiovisual integration are not flexible enough to reproduce the wide gamut of psychophysical data successfully accounted for by our model, here we only consider the MCD model (in its revised form). A MATLAB script with the full implementation of the revised MCD model is available in the \u2018Materials and methods\u2019.\n\n#### Simulation of experiments 1 and 2\n\nTo test whether an MCD that receives input from unimodal transient channels could replicate the results of experiments 1 and 2, we fed the stimuli to the detector and used the $MCD_{corr}\u00af$ (Equation 8) output to model SJs, and the $MCD_{lag}\u00af$ (Equation 9) for the TOJs (see Parise and Ernst, 2016). Given that the psychophysical data consisted of response probabilities (i.e., probability of \u2018synchronous\u2019 responses for the SJ and probability of \u2018audio first\u2019 responses in the TOJ), whereas the outputs of the model are continuous variables expressed in arbitrary units, we used a GLM with a probit link function to transform the output of the MCD into probabilities (Figure 5a, see also Parise and Ernst, 2016 for a detailed description of the approach). The linear coefficients (i.e., slope and intercept) were fitted separately for each condition and task so that each psychometric curve had two free parameters for the GLM. The three parameters defining the temporal constants of the MCD model, instead, were fitted using all data from experiments 1 and 2 combined using an adaptive Bayesian algorithm (Acerbi and Ma, 2017).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig5-v1.jpg)\n\n**Figure 5.:** (a) Schematics of the observer model, which receives input from one MCD unit to generate a behavioral response. The output of the MCD unit is integrated over a given temporal window (whose width depends on the duration of the stimuli) and corrupted by late additive noise before being compared to an internal criterion to generate a binary response. Such a perceptual decision-making process is modeled using a generalized linear model (GLM), depending on the task, the predictors of the GLM were either $MCD_{corr}\u00af$ (Equation 8) or $MCD_{lag}\u00af$ (Equation 9). (b) Responses for the temporal order judgment (TOJ) task of experiment 1 (dots) and model responses (red curves). (c) Responses for the simultaneity judgment (SJ) task of experiment 1 (dots) and model responses (blue curves). (d) Experiment 2 human (dots) and model responses (blue curve). (e) Scatterplot of human vs. model responses for both experiments.\n\nOverall, the model could tightly replicate the results of our experiments (Figure 5b\u2013d): the Pearson correlation between the psychophysical data and model responses computed across all conditions and participants was 0.99 for the SJ task of experiment 1, 0.99 for the TOJ task of experiment 1, and 0.97 for experiment 2 (Figure 5e, see Appendix 1\u2014table 1). For comparison, the correlation between the data and the psychometric fits for experiment 1 (i.e., cumulative Gaussians for the TOJs and difference of two cumulative Gaussians for the SJ) was 0.97 and 0.98 for experiment 2; however, the psychometric fits required nearly twice as many free parameters compared to the model fits and do not account for the generative process that give rise to the observed data. Importantly, just like human responses, the responses of the revised MCD model were nearly identical across all conditions in experiment 1, whereas in experiment 2 they displayed a clear frequency-doubling effect. Furthermore, unlike the psychometric fits, which require to specify a priori the shape of the fitting function (e.g., sigmoid, bell, or periodic), the MCD model provides an output without specifying a priori any shape for the psychometric function. As shown in Figure 5b\u2013d, the model naturally captures the shape of the psychometric data. For instance, the same $MCD_{corr}\u00af$ output could generate bell-shaped response distributions in experiment 1 and sinusoidal responses in experiment 2, purely based on the features of the input signals (such as its periodicity, or lack thereof). Therefore, taken together, the present simulations demonstrate that multisensory perception does indeed operate on correlated input from unimodal transient channels.\n\n### Validation of the MCD through simulation of published results\n\nAlthough the simulations of experiments 1 and 2 demonstrate that an MCD unit that receives input from transient unimodal channels is capable of reproducing the present psychophysical results, it is important to assess the generalizability of this approach. Therefore, we relied on the previous literature on multisensory perception of correlation, simultaneity, and lag, as well as on the performance on crossmodal detection tasks, to validate our computational framework and assess its generalizability (by comparing the MCD responses against human performance on tasks not originally designed around our model). To this end, we selected a series of studies that employed parametric manipulations of the temporal structure of the signals, simulated the stimuli, and used the MCD model to predict human performance. If an MCD unit that receives input from transient unimodal channels is indeed the elementary computational unit for multisensory temporal processing, we should be able to reproduce all of the earlier findings on multisensory perception with our revised MCD model. A summary of our simulations, listing the sample size, number of observers, and Pearson correlation of MCD and human responses, is reported in Appendix 1\u2014table 1.\n\n#### Causality and temporal order judgments for random sequences of audiovisual impulses\n\nWhen we first proposed the MCD model (Parise and Ernst, 2016), we tested it against a psychophysical experiment in which participants were presented with a random sequence of five clicks and five flashes over an interval of 1 s (Figure 6\u2014figure supplement 1a), and had to report whether the signals appeared to share a common cause (causality judgments) and which modality came first (TOJ). To test whether the revised MCD model could also account for these previous findings, we fed the same stimuli to the model and used the $MCD_{corr}\u00af$ (Equation 8) output to simulate causality judgments, and $MCD_{lag}\u00af$ (Equation 9) to simulate TOJs. Given that the stimuli in this experiment had a much higher temporal rate than the stimuli used in experiments 1 and 2, the temporal constants of the MCD were set as free parameters that we fitted to the experimental data. Due to the stochastic nature of the stimuli, we analyzed the data using reverse correlation (Figure 6\u2014figure supplement 1b). The temporal constants of the MCD were fitted to maximize the Pearson correlation between the empirical and simulated responses, for both causality and TOJs (for details on modeling and reverse correlation analyses, see Figure 6\u2014figure supplement 1b and Parise and Ernst, 2016).\n\nOverall, the model faithfully reproduced the experimental data, and the Pearson correlation between empirical and simulated classification images was 0.99 (Figure 6a and b). This result closely replicates the original simulations (Parise and Ernst, 2016) performed with a version of the MCD that instead received input from sustained unimodal temporal channels (not transient as the current model). Given the differences between transient and sustained temporal channels, it may seem surprising that the two models are in such close agreement in the current simulation. However, it is important to remember that the stimuli in these experiments consisted of impulses (clicks and flashes), and the impulse response function of the sustained and transient channels as modeled in this study is indeed very similar. Therefore, such an agreement between the responses of the original and the revised versions of the MCD is indeed expected. Besides proving that the revised model can replicate previous results, this simulation allowed us to estimate the temporal constants of the MCD for trains of clicks and flashes, which was necessary for the next simulations.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig6-v1.jpg)\n\n**Figure 6.:** (a) Results of the causality judgment task of Parise and Ernst, 2016. The left panel represents the empirical classification image (gray) and the one obtained using the MCD model (blue). The right panel represents the output of the model plotted against human responses. Each dot corresponds to 315 responses. (b) Results of the temporal order judgment task of Parise and Ernst, 2016. The left panel represents the empirical classification image (gray) and the one obtained using the MCD model (red). The right panel represents the output of the model plotted against human responses. Each dot corresponds to 315 responses. (c) Results of the causality judgment task of Locke and Landy, 2017. The left panel represents the empirical classification image (gray) and the one obtained using the MCD model (blue). The right panel represents the effect of maximum audiovisual lag on perceived causality. Each dot represents on average 876 trials (range = [540, 1103]). (d) Results of the temporal order judgment task of Wen et al., 2020. Squares represent the onset condition, whereas circles represent the offset condition. Each dot represents \u2248745 trials. (e) Results of the detection task of Andersen and Mamassian, 2008, showing auditory facilitation of visual detection task. Each dot corresponds to 336 responses. (f) Results of the audiovisual amplitude modulation detection task of Nidiffer et al., 2018, where the audiovisual correlation was manipulated by varying the frequency and phase of the modulation signals. Each dot represents \u2248140 trials. The datapoint represented by a star corresponds to the stimuli displayed in Figure 6\u2014figure supplement 5.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) represents three pairs of audiovisual stimuli (left) and their cross-correlation (right). (b) shows a schematic representation of the reverse correlation analyses. Adapted from Figure 2 of Parise and Ernst, 2016.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** Three example pairs of audiovisual stimuli, and their cross-correlogram. Note how the stimuli vary in both terms of temporal rate (i.e., total number of clicks and flashes) and audiovisual correlation (with the bottom one being fully correlated).\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** Stimuli consisted of rectangular temporal envelopes, with a variable audiovisual lag either at the onset (top) or offset (bottom). The amount of audiovisual lag varied across trials, following a staircase procedure.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** Stimuli consisted of on-steps, with a parametrical manipulation of the lag between vision and audition, determined using the method of constant stimuli.\n\n![Figure 6\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig6-figsupp5-v1.jpg)\n\n**Figure 6\u2014figure supplement 5.:** Stimuli consisted of a sinusoidal amplitude modulation over a pedestal intensity (a). The pedestal had a 10 ms linear ramp at onset and offset. While the visual sinusoidal amplitude modulation was constant throughout the experiment (frequency = 6 Hz, zero phase offset), the auditory amplitude modulation varied in both frequency (from 6 Hz to 7 Hz, in five steps) and phase offset (from 0 to 360\u00b0, in eight steps). Next to each pair of stimuli, we represent the scatterplot of the visual and auditory envelopes, which highlight the audiovisual correlation. The call-out boxes zoom in on the correlation between the audiovisual sinusoidal amplitude modulation (excluding the linear onset and offset ramps), whereas the main scatterplots also display the ramps. (b) represents the audiovisual Pearson correlation for all the stimuli used by Nidiffer et al. The left panel shows the total audiovisual correlation, which was calculated while also including the onset and offset ramps; the right panel represents the partial correlation, calculated by only considering the sinusoidal amplitude modulation (i.e., the area inside the call-outs in a) without considering the onset and offset linear ramps as done in Nidiffer et al., 2018. Note that once the ramps are included in the analyses, all audiovisual stimuli are strongly correlated (with only minor differences across conditions). The stars in the correlation matrices mark the cells corresponding to the four stimuli represented in (a), and the datapoints represented by a star in Figure 5f. (c) displays a comparison between the stimuli used by Nidiffer et al., 2018 and our experiment 2. Both the time axis (abscissa) and the intensity envelope (ordinate) are here drawn to scale. Although both experiments consist of stimuli with periodic amplitude modulations, there are key important differences. First off, while between two consecutive trials the visual and auditory stimuli were completely off in Nidiffer, in our study the pedestal was always present (without any interruptions across consecutive trials). That introduces transients in Nidiffer\u2019s study both at the beginning and the end of each stimulus, which are absent in our stimuli. The relative magnitude of such transients to the comparatively low depth of amplitude modulation (of the sinusoidal component) is the ultimate reason for the absence of frequency doubling in Nidiffer et al., 2018. In our study, transients at the beginning and end of each trial are prevented by playing a constant pedestal stimulus level across trials, and by applying a Gaussian envelope to the depth of our square-wave modulation. Additionally, it is important to stress the obvious difference in the duration and frequency of the stimuli used in the two studies. Specifically, our stimuli were 12 times longer than the stimuli of Nidiffer, but the frequency of amplitude modulation of our study was about 12 times lower (varying depending on the various conditions of Nidiffer et al.). Finally, note the difference in the depth of amplitude modulation across the two experiments.\n\n![Figure 6\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/90841/elife-90841-fig6-figsupp6-v1.jpg)\n\n**Figure 6\u2014figure supplement 6.:** (a) represents the simplified model, with a single biphasic temporal filter. (b) represents the full model, with unimodal temporal filters in quadrature pairs.\n\n#### Causality judgments for random sequences of audiovisual impulses with high temporal rates\n\nTo identify the temporal features of the stimuli that promote audiovisual integration, Locke and Landy, 2017, experiment (2) ran a psychophysical experiment that was very similar to the causality judgment task described in the previous section. Although the stimuli in the two studies were nearly identical, the temporal sequences used by Locke and Landy, 2017 had a considerably higher temporal rate (range 8\u201314 impulses/s), longer duration (2 s), and a more controlled temporal structure (Figure 6\u2014figure supplement 2). Participants observed the stimuli and performed a causality judgment task, whose results demonstrated that the perception of a common cause depended both on the correlation in the temporal structure of auditory and visual sequences (Figure 5c, left) and the maximum lag between individual clicks and flashes (Figure 5c, right).\n\nGiven the similarity of this study with the causality judgment of Parise and Ernst, 2016, we followed the same logic described above to perform reverse correlation analyses (without smoothing the cross-correlograms). Moreover, the MCD simulations were performed with the same temporal constants used for the simulations of Parise and Ernst, 2016, so that this experiment is simulated with a fully constrained model, with zero free parameters. Unlike our previous experiment, however, the stimuli used by Locke and Landy, 2017 varied in temporal rate, and hence also the number of clicks and flashes differed across trials. Given that the MCD is sensitive to the total stimulus energy, we normalized the model responses by dividing the $MCD_{corr}\u00af$ (Equation 8) output by the rate of the stimuli.\n\nReverse correlation analyses were performed at the single subject level using both participants and model responses (see Parise and Ernst, 2016 for details on how the continuous model output of the MCD was discretized into a dichotomous variable), and the average data is shown in Figure 6c (left panel). Overall, the MCD model could near-perfectly predict the empirical classification image (Pearson correlation >0.99). Besides the reverse correlation analyses, Locke and Landy, 2017 measured how the maximum lag between individual clicks and flashes affected the perceived common cause of audiovisual sequences. The results, shown in Figure 6c (right panel), demonstrate that the perception of a common cause decreased with increasing maximum audiovisual lag. Once again, the MCD model accurately predicts this finding (Pearson correlation = 0.98) without any free parameters. Taken together, the present simulations demonstrate that the MCD model can account for the perception of a common cause between stochastic audiovisual sequences, even when the stimuli have a high temporal rate, and highlight the importance of both similarity in the temporal structure and crossmodal lag in audiovisual integration.\n\n#### Temporal order judgment for onset and offset stimuli\n\nTo investigate the perceived timing of auditory and visual on- and offsets, Wen et al., 2020 presented continuous audiovisual noise stimuli with step on- and offsets (Figure 6\u2014figure supplement 3). The authors parametrically manipulated the audiovisual lag between either of the onset or the offset of the audiovisual stimulus and asked participants to report the perceived temporal order of the corresponding on- or offset, respectively. Despite large variability across participants, the point of subjective simultaneity systematically differed across conditions, with acoustic stimuli more likely appearing to change before the visual stimuli in the onset compared to the offset condition.\n\nTo test whether the model could replicate this finding, we generated audiovisual signals with the same temporal manipulations of audiovisual lag and fed them to the MCD. To minimize the number of free parameters, we ran the simulation using the temporal constants of the filters fitted using the data from experiments 1 and 2 (see above). Moreover, to test whether the MCD alone could predict the PSS shift between the onset and offset condition, we combined the data from all participants and used a single GLM to link $MCD_{lag}\u00af$ (Equation 9) to the TOJ data, irrespective of condition. Therefore, this simulation consisted of just two free parameters (i.e., the slope and intercept of the GLM). Overall, the responses of the MCD were in excellent agreement with the empirical data (Pearson correlation = 0.97) and successfully captured the difference across onset and offset condition (Figure 6d). For comparison, the Pearson correlation between the data and the psychometric functions (modeled as cumulative Gaussians, fitted independently for onset and offset conditions) was also 0.97, but required twice as many free parameters (two per condition), and it does not account for the underlying sensory information processing.\n\n#### Acoustic facilitation of visual transients\u2019 detection\n\nTo study the temporal dynamic of audiovisual integration of unimodal transients, Andersen and Mamassian, 2008, experiment (2) asked participants to detect a visual transient (i.e., a luminance increment) presented slightly before or after a task-irrelevant acoustic transient (i.e., a sound intensity increment, Figure 6\u2014figure supplement 3). The task consisted of a two-interval forced-choice, with the visual stimuli set at 75% detection threshold, and the asynchrony between visual and acoustic transients parametrically manipulated using the method of constant stimuli.\n\nTo simulate this experiment, we fed the stimuli to the MCD model and used a GLM to link the $MCD_{corr}\u00af$ (Equation 8) responses to the proportion of correct responses. The temporal constants of the model were constrained based on the results of experiments 1 and 2, so that this simulation had two free parameters: the slope and the intercept of the GLM. Overall, the MCD could reproduce the data of Andersen and Mamassian, 2008, and the Pearson correlation between data and model responses was 0.91 (Figure 6e).\n\n#### Detection of sinusoidal amplitude modulation\n\nTo test whether audiovisual amplitude modulation detection depends on the correlation between the senses, Nidiffer et al., 2018, experiment (2) asked the participants to detect audiovisual amplitude modulation. Stimuli consisted of a pedestal intensity to which (in some trials) the authors added a near-threshold sinusoidal amplitude modulation (Figure 6\u2014figure supplement 4a). To manipulate audiovisual correlation, the authors varied the frequency and phase of the sinusoidal modulation signal. Specifically, the frequency of auditory amplitude modulation varied between 6 Hz and 7 Hz (five steps), while the phase shift varied between 0 and 360\u00b0 (eight steps). The frequency and phase shift of visual amplitude modulation were instead constant and set to 6 Hz and 0\u00b0, respectively.\n\nBoth phase and frequency systematically affected participants\u2019 sensitivity; however, the results do not show any evidence of a frequency-doubling effect. This may appear as a surprising finding: given the analogy between this study and our experiment 2, a frequency-doubling effect should be intuitively expected (if, as we claim, correlation detection relied on transient input channels; though see Figure 6\u2014figure supplement 5, for a visualization of the difference between these studies). In theory, when the amplitude modulations in the two modalities are 180\u00b0 out of phase, the modulation signals are negatively correlated, and negatively correlated signals become positively correlated once fed to unsigned transient channels (Figure 6\u2014figure supplement 4a, bottom-left stimuli). When calculating the Pearson correlation of pairs of audiovisual signals, however, we should consider the whole stimuli: including the pedestal, not just the amplitude modulations. Indeed, the stimuli used by Nidiffer et al., 2018 also consisted of linear ramps at onset and offset and a pedestal intensity level, compared with which the depth of the amplitude modulation was barely noticeable (i.e., the modulation depth was about 6% of the pedestal level, see Figure 6\u2014figure supplement 5). Therefore, once the audiovisual correlation is computed while also considering the ramps (and pedestals, see scatterplots in Figure 6\u2014figure supplement 5a), the lack of a frequency-doubling effect becomes apparent: all stimuli used by Nidiffer et al., 2018 are strongly positively correlated, though such a correlation slightly varied across conditions (being 1 when amplitude modulation had the same frequency in both modalities and zero phase shift, and 0.8 in the least correlated condition, see Figure 6\u2014figure supplement 4a and b).\n\nTo simulate the experiment of Nidiffer et al., 2018, we fed the stimuli to the model and used the $MCD_{corr}\u00af$ (Equation 8) output and a GLM to obtain the hit rate for the detection task. Given that neither the temporal constants of the MCD optimized for the experiments 1 and 2, nor those optimized for Parise and Ernst, 2016, provided a good fit for Nidiffer\u2019s data, we set both the temporal constants of the MCD and the slope and intercept of the GLM as free parameters. Hence, the model could replicate the results of Nidiffer et al., 2018, and the Pearson correlation between the model and human responses was 0.89.\n\n## Discussion\n\nTaken together, the present results demonstrate the dominance of transient over sustained channels in audiovisual integration. Based on the assumption that perceived synchrony across the senses depends on the (Pearson) correlation of the unimodal signals (Wei, 2006), we generated specific hypotheses for perceived audiovisual synchrony\u2014depending on whether such a correlation is computed over transient or sustained inputs. Such hypotheses were then tested against the results of two novel psychophysical experiments, jointly showing that Pearson correlation between transient input signals systematically determines the perceived timing of audiovisual events. Based on that, we revised a general model for audiovisual integration, the MCD, to selectively receive input from unimodal transient instead of sustained channels. Inspired by the motion detectors originally proposed for insect vision, such a biologically plausible model integrates audiovisual signals through correlation detection and could successfully account for the results of our psychophysical experiments along with a variety of recent findings in multisensory research. Specifically, once fed with transient input channels, the model could replicate human TOJs, SJs, causality judgments and crossmodal signal detection under a broad manipulation of input signals (i.e., step stimuli, trains of impulses, sinusoidal envelopes, etc.).\n\nPrevious research has already proposed a dominance of transient over sustained channels in audiovisual perception, with evidence coming from both psychophysical detection tasks and neuroimaging studies (Andersen and Mamassian, 2008; Werner and Noppeney, 2011). However, the role of transient and sustained channels on the perceived timing of audiovisual events (arguably the primary determinant of multisensory integration) has never been previously addressed, let alone computationally framed within a general model of multisensory integration. This study fills this obvious gap and explains all such previous findings in terms of the response dynamics of the MCD model, thereby comprehensively demonstrating that audiovisual integration relies on correlated input from unimodal transient channels. Recent research, however, criticized the MCD model for its alleged inability to either process audiovisual stimuli with a high temporal rate or detect signal correlation for short temporal intervals (Locke and Landy, 2017; Colonius and Diederich, 2020). By receiving inputs from transient unimodal channels, this revised version of the model fully addresses such criticisms. Indeed, the new MCD can near perfectly predict human performance in a causality judgment task with stimuli with a high temporal rate (up to 18 Hz) using the same set of parameters optimized for stimuli with a much lower rate (5 Hz), with a Pearson correlation coefficient of 0.99. Interestingly, recent results Parise, 2024 demonstrate that a population of spatially tuned MCD units can also account for the integration of ecological audiovisual stimuli over time and space, thereby replicating phenomena such as the McGurk Illusion, the Ventriloquist Illusion and even attentional orienting.\n\nWhile MCD simulations could replicate the shape of the empirical psychometric curves, standard psychometric functions can also fit the same datasets, sometimes with even higher goodness of fit. Hence, one might wonder what the advantage of the current modeling approach is. When comparing MCD simulations with psychometric fits, it is important to focus on the differences between these two modeling approaches. Psychometric functions usually relate some physical parameter (the independent variable) to a measure of performance (the dependent variable) based on statistical considerations regarding the stimuli and the underlying perceptual decision-making process. For example, based on assumptions on the nature of the bell-shaped distribution of audiovisual SJs, Yarrow and colleagues proposed a model for SJs that fits the SJ data of our experiment 1 just as well as the MCD model (though with a larger number of free parameters). Psychometric curves for SJs, however, are not always bell-shaped: for example, in experiment 2, they are sinusoidal. This finding is naturally captured by the MCD model but not by models that enforce some specific shape for the psychometric functions. The reason is that statistical approaches to psychometric curve fitting are usually blind to the stimuli and agnostic as to how the raw input signals are transformed into evidence for perceptual decision-making. Indeed, while the inputs for psychometric fits are some parameters of the stimuli (e.g., the amount of audiovisual lag), the inputs for the MCD simulations are the actual stimuli themselves. That is, the MCD extracts from the raw signal the evidence that is then fed into the perceptual decision-making process (i.e., the observer model, Figure 5a). By making explicit all the processing steps that link the input stimuli to a button press, the MCD model can tailor its predictions to any input stimuli, with the shape of the psychometric curves being unconstrained in principle, yet fully predictable based only on the input signals and the experimental task. This is why the same MCD model can predict bell-shaped psychometric functions in the SJ task of experiment 1, sigmoidal functions in the TOJ task of experiment 1, and sinusoidal functions in experiment 2, whereas three different functions were necessary for the psychometric fits of the same experiments. Moreover, unlike psychometric fits, the MCD model is a biologically inspired neural model; as such, it not only allows one to account for behavioral responses, but also for neurophysiological data, as recently shown through magnetoencephalography (Pesnot et al., 2022).\n\nPrevious research attributed the multisensory benefits on perceptual decision-making tasks to \u2018late\u2019, post-sensory changes occurring at the level of the decision dynamics, with evidence stemming from EEG activity in brain regions commonly considered to be involved in \u2018high-level\u2019, decision-making (Franzen et al., 2020). While the present study cannot directly address such neurophysiological considerations, the computational framework proposed here, however, challenges any post-sensory interpretations. Indeed, the model proposed in this study can be divided into two separate components: the MCD, which handles the \u2018early\u2019 sensory processing stage, and a \u2018late\u2019 observer model, which receives input from the MCD and uses this information (along with the task demands) to generate a perceptual classification response (i.e., a button-press). In this context, it is important to note how multisensory benefits in detection tasks critically depend on the correlation and timing of audiovisual events: namely, the two factors that mostly affect the responses of the MCD model (e.g., see Figure 5e and f). Therefore, it is not surprising to see that the current framework can account for the effects of stimulus timing on performance purely based on the dynamics of the MCD responses, with no need for ad hoc adjustments in the perceptual decision-making process. Further studies will hopefully reconcile such discrepant interpretations on the origins of multisensory benefits on perceptual decision-making tasks, possibly through a better understanding of the computations underlying the electrophysiological correlates recorded with modern imaging techniques.\n\nAlthough the present study unequivocally supports a dominance of transient channels in multisensory integration, it is still necessary to consider which role, if any, sustained channels may play in crossmodal perception. Indeed, earlier studies have shown that sustained information, such as the intensity of visual and acoustic stimuli, does indeed systematically affect performance in behavioral tasks (Stein et al., 1996; Odgaard et al., 2004), and can even elicit phenomena known as crossmodal correspondences (Parise and Spence, 2013). The mapping of intensity between vision and audition, however, is a somewhat peculiar one as it is not obvious whether increasing intensity in one modality is mapped to higher or lower intensity in the other (i.e.,, an obvious mapping between acoustic and lightness intensity, rooted in natural scene statistics, has not been reported, yet). A perhaps more profound mapping between sustained audiovisual information relates to redundant cues, that is, properties or a physical stimulus that can be jointly estimated via two or more senses; such as the size of an object, which can be simultaneously estimated through vision and touch (Ernst and Banks, 2002; van Dam et al., 2014). This is a particularly prominent aspect of multisensory perception, and the estimated size of an object is arguably sustained, rather than transient stimulus information. While the present study cannot directly address such a question, we propose that the correlation between visual and tactile transients, like those occurring when we reach and make contact with an object, is what the brain needs to solve the correspondence problem, and that hence let us infer that what we see and touch are indeed coming from the same distal stimulus. Then, once made sure that the spatial cues that we get from vision and touch are redundant, size information can be optimally integrated. Testing such a hypothesis is surely a fertile subject for future research.\n\nFinally, it is important to consider what the advantages of transient over sustained stimulus information for multisensory perception are. An obvious one is parsimony as dropping information that does not change over time entails lower transmission bandwidth by minimizing redundancy through efficient input coding (Barlow, 1961). Therefore, by only representing input variations, transient channels operate as event detectors, signaling the system of potentially relevant changes in the surrounding. Interestingly, a similar approach has grown in popularity in novel technological applications, such as neuromorphic circuits and event cameras. Indeed, while traditional sensors operate on a frame-based approach, whereby inputs are periodically sampled based on an internal clock, event cameras only respond to external changes in brightness as they occur, thereby reducing transmission bandwidth and maximizing dynamic range. Interestingly, recent work has even successfully exploited Hassenstein\u2013Reichardt detectors as a biologically inspired solution for detecting motion with event cameras (D\u2019Angelo et al., 2020). Hence, considering the mathematical equivalence of the MCD and the Hassenstein\u2013Reichardt detectors, the present study suggests the intriguing possibility of using the revised MCD model as a biologically inspired solution for sensory fusion in future multimodal neuromorphic systems.\n\n## Materials and methods\n\n### The MCD model\n\nThe modified MCD model closely resembles the original model, but it takes input from unimodal transient (instead of sustained) input channels. That is, rather than being simply low-pass filtered, time-varying visual and auditory signals ($S_{V}t$, $S_{A}t$) are independently filtered by band-pass filters ($f$). Following Adelson and Bergen, 1985, band-pass filters are modeled as biphasic impulse response functions defined as follows:\n\n$$\nf_{mod}(t)=\\frac{t}{\\tau_{mod}}\u22c5e^{\\frac{\u2212t}{\\tau_{mod}}}\u22c5(1\u2212\\frac{t^{2}}{\\tau_{mod}^{2}}\u22c5n!)\n$$\n\nIn this equation, $\\tau_{mod}$ is the modality-dependent temporal constant of the filter (mod = [a,v]). Based on the previous results of experiments 1 and 2, we set these constants to be  $\\tau_{V}$ = 0.070 s and  $\\tau_{A}$ = 0.055 s for the visual and auditory filters, respectively. In line with Adelson and Bergen, 1985, the parameter $n$ (which controls the negative lobe of the impulse response) is set to 3.\n\nAs in the original implementation of the MCD model, the low-pass temporal filter of the correlation unit was\n\n$$\nf_{av}(t)=\\frac{t}{\\tau_{av}}\u22c5e^{\\frac{\u2212t}{\\tau_{av}}}\n$$\n\nThe temporal constant $\\tau_{av}$ was set to 0.674 s. Although the bimodal temporal constant $\\tau_{av}$ has a broad temporal tuning, the unimodal temporal constants $\\tau_{V}$ and $\\tau_{A}$ have systematic effects on the goodness of fit of the MCD model to our new psychophysical data. Therefore, in Figure 6\u2014figure supplement 6 we show how the correlation between the MCD model and empirical data varies as a function of the temporal tuning of the visual and auditory transient detectors.\n\nThe filtered unisensory stimuli $Sf_{mod}t$ feeding into the correlation unit were obtained as follows:\n\n$$\nSf_{mod}(t)=[S_{mod}(t)\u2217f_{mod}(t)]^{2}\n$$\n\nwhere (*) represents the convolution operator. Filtered signals are squared before being summed to render the responses insensitive to the polarity of changes in intensity (Stigliani et al., 2017).\n\nLike in the original MCD model, each subunit ($u_{1}$, $u_{2}$) of the detector independently combines filtered visual and auditory signals as follows:\n\n$$\nu_{1}(t)=Sf_{v}(t).[Sf_{a}(t)\u2217f_{av}(t)]\n$$\n\n\n\n$$\nu_{2}(t)=Sf_{a}(t).[Sf_{v}(t)\u2217f_{av}(t)]\n$$\n\nTo this end, the signals are convolved (*) with the low-pass temporal filters. The response of the subunits is eventually multiplied or subtracted.\n\n$$\nMCD_{corr}(t)=\\sqrt{u_{1}(t)\u22c5u_{2}(t)}\n$$\n\n\n\n$$\nMCD_{corr}(t)=u_{2}(t)\u2212u_{1}(t)\n$$\n\nThe resulting time-varying responses represent the local temporal correlation ($MCD_{Corr}$) and lag ($MCD_{Lag}$) across the signals. To reduce such time-varying responses into a single summary variable representing the total amount of evidence from each trial, we simply averaged the output of the detectors over a given temporal window of N samples:\n\n$$\nMCD_{corr}\u00af=\\frac{1}{N}\\sumt=1NMCD_{corr}(t)\n$$\n\n\n\n$$\nMCD_{lag}\u00af=\\frac{1}{N}\\sumt=1NMCD_{lag}(t)\n$$\n\nIn the present simulations, the width of the temporal window varies across experiments due to the variable duration of the audiovisual stimuli. The output of the MCD model is eventually transformed into probabilities using a general linear model with a probit link function (assuming additive Gaussian noise; see Parise and Ernst, 2016, for a similar approach).\n\n### Modeling sustained input channels\n\nIn line with previous work (Burr et al., 2009; Stigliani et al., 2017; Parise and Ernst, 2016), here we model sustained input channels as low-pass temporal filters with the following impulse response function:\n\n$$\nf_{mod}(t)=\\frac{t}{\\tau_{mod}}\u22c5e^{\\frac{\u2212t}{\\tau_{mod}}}\n$$\n\nwhere $\\tau_{mod}$ is the modality-dependent temporal constant of the filter (mod = [a,v]). Such a low-pass filter has the same shape as the bimodal filters of the MCD (Equation 2) and of the unimodal filter of the original MCD model (Parise and Ernst, 2016).\n\n### Experiment 1: The relationship between the PSS and WSS measured using TOJs vs. SJs\n\nTOJs and SJs are the two main psychophysical tasks to measure sensitivity to lags across the senses. With both tasks it is possible to estimate the PSS and WSS; however, when measured on the same subjects, the PSS and WSS measured from the two tasks are often not correlated (Garc\u00eda-P\u00e9rez and Alcal\u00e1-Quintana, 2012; Linares and Holcombe, 2014; Machulla et al., 2016). This finding has been sometimes considered evidence for independent underlying neural mechanisms. Given that in experiment 1 we estimated the PSS and WSS with both TOJs and SJs, we can repeat the same analyses on our dataset. Figure 2\u2014figure supplement 1 shows the scatterplot of the PSS measured with the TOJ against the PSS measured with the SJ, and Figure S1D the scatterplot of the WSS measured with the TOJ against the SJ. Each point corresponds to one psychometric function in Figure 2\u2014figure supplement 1a. As in previous studies, the PSS and WSS measured with the two tasks are not significantly correlated (PSS: r = \u22120.16, p=0.38; WSS: r = 0.16, p=0.39).\n\nWhile such a finding intuitively suggests the existence of independent mechanisms underlying the two tasks, our model clearly suggests otherwise. Indeed, the MCD model provides two outputs: one representing the decision variable for the SJ (Equation 8) and the other for the TOJ (Equation 9). Therefore, we propose that TOJs and SJs share a common mechanism for sensory processing: the MCD model (Equations 1\u20137). However, the following decision-making processes (see Figure 5a) are independent across the two tasks, hence the lack of correlation between the PSS and WSS estimated using SJs vs. TOJs.\n\n### Sample size\n\nTo properly substantiate our claims and quantitatively test our model, this study relies on a large collection of three novel psychophysical datasets and six previously published ones. These consisted of behavioral responses from a variety of tasks such as TOJs, SJs, causality judgments and detection tasks for a total of 68,693 trials. Our experiments 1 and 2 alone consisted of 12,600 trials (4800 for the TOJ task in experiment 1, 4800 for the SJ task in experiment 1, and 3000 for experiment 2). Given the nature of the present study, we were especially interested in determining the shapes of the psychometric functions, hence we prioritized collecting a large number of trials per observer (over a large pool of observers). Considering that we expected both large effect sizes (see Figure 1b and c) and low individual variability, the sample size of our new experiments is more than sufficient to draw reliable conclusions. Single-subject analyses (Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1) show consistent behavior across participants support our original assumptions.\n\nNevertheless, it is important to stress that our psychophysical experiments only represent a small fraction of the overall dataset used in this study to assess and model the contribution of transient and sustained channels in multisensory integration. Indeed, when calculating the sample size of this study, we must also include all the previously published datasets that were reanalyzed and simulated with the MCD model. Hence, our conclusions are supported by a large-scale analysis and computational modeling of a vast set of behavioral data, consisting of 68,693 trials from a sample of 110 observers, collectively providing strong converging evidence for the dominance of transient over sustained input channels in multisensory integration (see Appendix 1\u2014table 1).\n\nThe data from experiments 1 and 2 are available as Figure 2\u2014source data 1, Figure 2\u2014source data 2, and Figure 3\u2014source data 1.\n\n### The quadrature MCD model\n\nThe MCD units used so far receive input from unimodal transient channels modeled as a single biphasic temporal filter followed by squaring nonlinearities. In the original version of Adelson and Bergen, 1985, however, such a transient detection unit consisted of two biphasic temporal filters applied in parallel to the input, and the resulting signals are then squared and summed to each other. Although for the present simulations such a simplified version of the transient detector was sufficient, this may not be the case for different and more complex sets of stimuli. Hence, for completeness, here we also describe the full transient detector model.\n\nJust like the simplified transient detector (Equations 1 and 3), also the full transient detector consists of biphasic temporal filters. However, instead of passing the signal through a single biphasic filter, the full transient detector consists of two biphasic temporal filters 90\u00b0 out of phase, applied in parallel to the incoming signals. Following Adelson and Bergen, these quadrature filters are modeled as follows:\n\n$$\nf_{n}t=\\frac{t}{\\tau_{bp}}^{n}\u2219e^{\\frac{\u2212t}{\\tau_{bp}}}\u2219\\frac{1}{n!}\u2212\\frac{1}{n+2!}\u2219\\frac{t}{\\tau_{bp}}^{2}\n$$\n\nThe phase of the filter is determined by $n$, which, based on Emerson et al., 1992 takes the values of 6 for the fast filter and 9 for the slow one. The temporal constant of the filters is determined by the parameter $\\tau_{bp}$.\n\nFast and slow filters are applied to each unimodal input signal and the two resulting signals are squared and then summed. Then, a compressive nonlinearity (square root) is applied to the output to constrain it within a reasonable range. Therefore, the output of each unimodal unit feeding into the correlation detector takes the following form:\n\n$$\nSf_{mod}t=\\sqrt{S_{mod}t\u2217f_{6}t^{2}+S_{mod}t\u2217f_{9}t^{2}}\n$$\n\nwhere $mod=vid,aud$ represents the sensory modality and * is the convolution operator. These filtered signals are then multiplied in the two subunits of the MCD following the same logic as the simplified model (Equations 4\u20139).\n\nFigure 6\u2014figure supplement 6 displays how the temporal tuning of the unimodal temporal filter in the quadrature model affects the goodness of fit of the simulation of our experiments 1 and 2. Clearly, the temporal tuning of the unimodal filters strongly affects the goodness of fit of the model: although overall a tuning below 0.06 s is required for a good fit, the resulting landscape is highly irregular and overall favors slightly faster temporal constants for audition than vision. The parameter defining the low-pass temporal filter of the MCD subunits, instead, is less sensitive to the exact tuning. Hence, for this figure its value is arbitrarily set to 0.674 s. The psychometric functions generated by the full quadrature model are very similar to the ones generated by the simplified model (Figure 5). A MATLAB implementation is available as Source code 1.\n",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "a6989604-5918-4d0d-be1e-fd14ce34b992",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer M Groh, Duke University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.90841.3.sa0](https://doi.org/10.7554/eLife.90841.3.sa0)\n\nThis important study evaluates a model for multisensory correlation detection, focusing on the detection of correlated transients in visual and auditory stimuli. Overall, the experimental design is sound and the evidence is compelling. The synergy between the experimental and theoretical aspects of the article is strong, and the work will be of interest to both neuroscientists and psychologists working in the domain of sensory processing and perception.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90841.3.sa1](https://doi.org/10.7554/eLife.90841.3.sa1)\n\nThe authors present a model for multisensory correlation detection that is based on the neurobiologically plausible Hassenstein Reichardt detector (Parise & Ernst, 2016). They demonstrate that this model can account for human behaviour in synchrony or temporal order judgements and related temporal tasks in two new data sets (acquired in this study) and a range of previous data sets. While the current study is limited to the model assessment for relatively simple audiovisual signals, in future communications, the authors demonstrate that the model can also account for audiovisual integration of complex naturalistic signals such as speech and music.\n\nThe significance of this work lies in its ability to explain multisensory perception using fundamental neural mechanisms previously identified in insect motion processing.\n\nStrengths:\n\n(1) The model goes beyond descriptive models such as cumulative Gaussians for TOJ and differences in cumulative Gaussians for SJ tasks by providing a mechanism that builds on the neurobiologically plausible Hassenstein-Reichardt detector.\n\n(2) This model can account for results from two new experiments that focus on the detection of correlated transients and frequency doubling. The model also accounts for several behavioural results from experiments including stochastic sequences of A/V events and sine wave modulations (and naturalistic Av signals such as speech and music as shown in future communications).\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.90841.3.sa2](https://doi.org/10.7554/eLife.90841.3.sa2)\n\nSummary:\n\nThis is an interesting and well-written manuscript that seeks to detail performance on two human psychophysical experiments designed to look at the relative contributions of transient and sustained components of a multisensory (i.e., audiovisual) stimulus to their integration. The work is framed within the context of a model previously developed by the authors and now somewhat revised to better incorporate the experimental findings. The major takeaway from the paper is that transient signals carry the vast majority of the information related to the integration of auditory and visual cues, and that the Multisensory Correlation Detector (MCD) model not only captures the results of the current study, but is also highly effective in capturing the results of prior studies focused on temporal and causal judgments.\n\nStrengths:\n\nOverall the experimental design is sound and the analyses well performed. The extension of the MCD model to better capture transients make a great deal of sense in the current context, and it is very nice to see the model applied to a variety of previous studies.\n\nComments on the revised version:\n\nIn the revised manuscript, the authors have done an excellent job of responding to the prior critiques. I have no additional concerns or comments.\n",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dca4a9a2-39e7-4868-9486-ad2414085f6e",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C1",
+      "claim": "Audiovisual information reaches the brain via both sustained and transient input channels, representing signals' intensity over time or changes thereof, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Audiovisual information reaches the brain via both sustained and transient input channels, representing signals' intensity over time or changes thereof, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about sensory processing in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "cdbc233f-6a4c-4ac7-bfb8-ecc5232e908c",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C2",
+      "claim": "Multisensory integration operates on correlated input from unimodal transient channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the results of two novel psychophysical experiments, here we demonstrate the importance of the transient (instead of the sustained) channel for the integration of audiovisual signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by experimental data from experiments 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "2cec36f9-6a21-4dc9-af21-8b9f6a79fbc1",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C3",
+      "claim": "The multisensory correlation detector (MCD) model can quantitatively replicate several recent findings in multisensory research.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides accounting for the results of our psychophysical experiments, this model could quantitatively replicate several recent findings in multisensory research, as tested against a large collection of published datasets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The model was tested against published datasets and shown to replicate findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "bc8fd2ee-096a-4d38-91e0-554cf92dbc8b",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C4",
+      "claim": "The MCD model can simultaneously account for the perceived timing of audiovisual events, multisensory facilitation in detection tasks, causality judgments, and optimal integration.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the model could simultaneously account for the perceived timing of audiovisual events, multisensory facilitation in detection tasks, causality judgments, and optimal integration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The model was tested against multiple types of tasks and shown to account for all of them.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "d2e9f960-0da1-442f-a5a8-512fc01de094",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C5",
+      "claim": "Sensory systems of mammals rely on separate channels encoding stimulus intensity through either sustained or transient responses.",
+      "claim_type": "EXPLICIT",
+      "source": "To efficiently process the temporal structure of incoming signals, the sensory systems of mammals (and other animal classes) rely on separate channels, encoding stimulus intensity through either sustained or transient responses (Benucci et al., 2007; Kim et al., 2011; Breitmeyer and Ganz, 1976; Qin et al., 2007; Recanzone, 2000; Ikeda and Wright, 1972).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "a3fad50f-4cd6-4c33-947b-871bdd0efc2e",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C6",
+      "claim": "Sustained and transient channels originate early in the processing hierarchy.",
+      "claim_type": "EXPLICIT",
+      "source": "These channels are known to originate early in the processing hierarchy (Recanzone, 2000; Ikeda and Wright, 1972), with sustained ones responding with constant neural firing to static input intensity, whereas transient channels respond with increased firing to any variations in input intensity (i.e., both increments and decrements, Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "a56a120d-5458-49b5-9802-b0131c64b957",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C7",
+      "claim": "Sustained responses represent the intensity of the stimulus, while transient responses represent changes in stimulus intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, sustained responses represent the intensity of the stimulus, while transient responses represent changes in stimulus intensity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a functional characterization based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "2a49cc91-594e-4af8-a1bc-5f9c8ca1683b",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C8",
+      "claim": "Sustained channels can be characterized as low-pass temporal filters.",
+      "claim_type": "EXPLICIT",
+      "source": "In terms of frequency response, sustained channels can be characterized as low-pass temporal filters (Equation 10), highlighting the low-frequency signal components.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization based on signal processing theory and the model equations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "1e27cc44-6a47-48ba-b026-8b7a3c8eb7dd",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C9",
+      "claim": "Transient channels can be characterized as band-pass temporal filters.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient channels, on the other hand, have a higher spectral tuning and can be characterized as band-pass temporal filters (Equation 1), signaling events, or moments of stimulus change (Stigliani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a characterization based on signal processing theory, the model equations, and a citation.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "3a65de8d-2ea1-48d9-b5cc-f4073496dd3b",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C10",
+      "claim": "Changing information over time is critical for multisensory perception.",
+      "claim_type": "EXPLICIT",
+      "source": "Changing information over time is also critical for multisensory perception (Stein, 2012): when two signals from different modalities are caused by the same underlying event, they usually covary over time (like firecrackers' pops and blazes).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and an example.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "54d0f60c-a211-46d7-929a-99ee482ee90a",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C11",
+      "claim": "Multisensory illusions and Bayesian-optimal cue integration critically depend on synchrony and temporal correlation across the senses.",
+      "claim_type": "EXPLICIT",
+      "source": "it is well established that both multisensory illusions (Sekuler et al., 1997; Samad et al., 2018; van Wassenhove et al., 2007) and Bayesian-optimal cue integration (e.g., Parise et al., 2012) critically depend on synchrony and temporal correlation across the senses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "672c90eb-4228-4fe6-a296-e9353578a8f4",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C12",
+      "claim": "Task-irrelevant increments or decrements in sound intensity equally facilitated the detection of both increments and decrements in the lightness of a visual display.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, Andersen and Mamassian, 2008 found that task-irrelevant increments or decrements in sound intensity equally facilitated the detection of both increments and decrements in the lightness of a visual display.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "9eedcf6d-8f23-4cef-bf2b-a959e5a797f7",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C13",
+      "claim": "Crossmodal facilitation only occurred when changes in the two modalities occurred in approximate temporal synchrony.",
+      "claim_type": "EXPLICIT",
+      "source": "Critically, such an effect only occurred when changes in the two modalities occurred in approximate temporal synchrony.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the Andersen and Mamassian study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "6c7f54fb-b8ed-4bc8-b357-cba03d8ccbae",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C14",
+      "claim": "Audiovisual integration relies primarily on unsigned transient stimulus information.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the independence of polarity of this crossmodal facilitation, where intensity increments and decrements produced similar perceptual benefits, the authors concluded that audiovisual integration relies primarily on unsigned transient stimulus information.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the Andersen and Mamassian study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "67a06911-75cc-48fd-818b-0cde1f409cfe",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C15",
+      "claim": "Audiovisual interactions in the human brain only occurred during stimulus transitions.",
+      "claim_type": "EXPLICIT",
+      "source": "Werner and Noppeney, 2011 found that audiovisual interactions in the human brain only occurred during stimulus transitions and demonstrated that transient onset and offset responses could be dissociated both anatomically and functionally (see also Herdener et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from cited fMRI studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "1175edbb-5a3a-4488-8b76-e62f51fd0055",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C16",
+      "claim": "Onset and offset step stimuli trigger identical unsigned transient responses.",
+      "claim_type": "EXPLICIT",
+      "source": "while onset and offset step stimuli trigger identical unsigned transient responses, sustained responses differ across conditions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 1a and described in the text.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "104c09d6-57fa-4660-baa3-776f237fbf85",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C17",
+      "claim": "Sustained responses to onset and offset stimuli are negatively correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, given that sustained channels represent the magnitude of the stimulus, responses to onset and offset stimuli are negatively correlated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the properties of sustained channels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "a12193b1-d9f7-4008-9e53-0202907e7612",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C18",
+      "claim": "Transient responses have a rate double that of the input signals when presented with periodic onsets and offsets.",
+      "claim_type": "EXPLICIT",
+      "source": "While sustained channels respond at the same rate as the input, transient responses have a rate double that of the input signals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is described in the text and shown in Figure 1c.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "7d5c210f-8961-445c-8e05-ace7632b91e2",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C19",
+      "claim": "Frequency doubling is a hallmark of the contribution of transient channels in sensory neuroscience.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenomenon, known as frequency doubling, is commonly considered a hallmark of the contribution of transient channels in sensory neuroscience (e.g., Kim et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "83a9e66c-fefe-4825-b9d7-b9e326aceb30",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C20",
+      "claim": "In experiment 1, neither PSS nor WSS statistically differed across conditions for both TOJ and SJ data.",
+      "claim_type": "EXPLICIT",
+      "source": "Neither PSS nor WSS statistically differed across conditions, and this was true for both the TOJ and SJ data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from experiment 1, supported by statistical tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "0a9a0491-1a2d-498f-82c0-8019f2b7bfb4",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C21",
+      "claim": "The lack of difference across conditions in experiment 1 argues against the dominance of sustained input channels in the perception of audiovisual events.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our original hypothesis, the present results argue against the dominance of sustained input channels in the perception of audiovisual events, as the synchrony (i.e., Pearson correlation, Wei, 2006) of sustained signals would otherwise have been affected by the crossmodal combination of on-step and off-step stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "cd9563b5-6fd8-4f90-b8a2-37aec4f7f491",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C22",
+      "claim": "The power spectrum of the psychometric functions shows a sharp peak at a frequency of 2 cycles per period in all observers in experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The power spectrum of the psychometric functions shows a sharp peak at a frequency of 2 cpp in all observers, thereby indicating the presence of the hypothesized frequency-doubling effect (Figure 3b, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from experiment 2, shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "8d17b2c2-5d75-4cb8-b0fd-ed13175f12f4",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C23",
+      "claim": "The results of experiment 2 clearly demonstrate the existence of a frequency-doubling effect in the perceived simultaneity of periodic audiovisual stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "The results of experiment 2 clearly demonstrate the existence of a frequency-doubling effect in the perceived simultaneity of periodic audiovisual stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from experiment 2 results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "360ee965-15cd-40b5-8157-f6faf06da984",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C24",
+      "claim": "The frequency-doubling effect is only expected to occur if audiovisual synchrony is computed over unsigned transient input channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that the frequency-doubling effect is only expected to occur if audiovisual synchrony is computed over unsigned transient input channels, the present results support a dominance of transient input channels in multisensory time perception.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the theoretical framework and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "30e9d8f8-82dd-415b-82d3-6c2889faeb20",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C25",
+      "claim": "The revised MCD model could tightly replicate the results of experiments 1 and 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the model could tightly replicate the results of our experiments (Figure 5b\u2013d): the Pearson correlation between the psychophysical data and model responses computed across all conditions and participants was 0.99 for the SJ task of experiment 1, 0.99 for the TOJ task of experiment 1, and 0.97 for experiment 2 (Figure 5e, see Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations, with quantitative correlation values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "937df0c2-3d15-45da-bb58-075a799d5d6f",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C26",
+      "claim": "The MCD model could near-perfectly predict human performance in a causality judgment task with stimuli with a high temporal rate using the same set of parameters optimized for stimuli with a much lower rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the new MCD can near perfectly predict human performance in a causality judgment task with stimuli with a high temporal rate (up to 18 Hz) using the same set of parameters optimized for stimuli with a much lower rate (5 Hz), with a Pearson correlation coefficient of 0.99.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations of published data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "523ad0d7-9eb0-4774-9f02-f86756c7cff9",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C27",
+      "claim": "The MCD model could accurately predict the finding that the perception of a common cause decreased with increasing maximum audiovisual lag.",
+      "claim_type": "EXPLICIT",
+      "source": "Once again, the MCD model accurately predicts this finding (Pearson correlation = 0.98) without any free parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations of Locke and Landy's data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "ed9efd4c-f323-4c48-a486-af9aa04a705a",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C28",
+      "claim": "The MCD model successfully captured the difference across onset and offset conditions in temporal order judgments.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the responses of the MCD were in excellent agreement with the empirical data (Pearson correlation = 0.97) and successfully captured the difference across onset and offset condition (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations of Wen et al.'s data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "848c3d33-3795-475b-9a87-441ad9a09ae8",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C29",
+      "claim": "The MCD could reproduce the data of Andersen and Mamassian, 2008, with a Pearson correlation of 0.91.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the MCD could reproduce the data of Andersen and Mamassian, 2008, and the Pearson correlation between data and model responses was 0.91 (Figure 6e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "d7f27bcc-41e1-4d1f-9927-230de9c1e991",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C30",
+      "claim": "The model could replicate the results of Nidiffer et al., 2018, with a Pearson correlation of 0.89.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, the model could replicate the results of Nidiffer et al., 2018, and the Pearson correlation between the model and human responses was 0.89.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from model simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "8fbc8f46-82e3-4d30-8eea-5f5e63a12d57",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C31",
+      "claim": "Several phenomena in multisensory research that were previously considered unrelated all stem from the integration of correlated input from unimodal transient channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This study demonstrates that several phenomena in multisensory research that were previously considered unrelated, all stem from the integration of correlated input from unimodal transient channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, based on the experimental and modeling results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "ac78cb28-6c95-4b97-8667-d9c55fafd43b",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C32",
+      "claim": "Multisensory benefits in detection tasks critically depend on the correlation and timing of audiovisual events.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, it is important to note how multisensory benefits in detection tasks critically depend on the correlation and timing of audiovisual events: namely, the two factors that mostly affect the responses of the MCD model (e.g., see Figure 5e and f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the model's behavior and previous research.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "1de8aba3-6cab-4574-aa1a-24d26f80ad84",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C33",
+      "claim": "An obvious mapping between acoustic and lightness intensity, rooted in natural scene statistics, has not been reported.",
+      "claim_type": "EXPLICIT",
+      "source": "The mapping of intensity between vision and audition, however, is a somewhat peculiar one as it is not obvious whether increasing intensity in one modality is mapped to higher or lower intensity in the other (i.e.,, an obvious mapping between acoustic and lightness intensity, rooted in natural scene statistics, has not been reported, yet).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the lack of evidence in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "7bf8f02e-ce8c-4cc2-9f16-579ec993c621",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C34",
+      "claim": "By only representing input variations, transient channels operate as event detectors, signaling the system of potentially relevant changes in the surrounding.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, by only representing input variations, transient channels operate as event detectors, signaling the system of potentially relevant changes in the surrounding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the functional properties of transient channels.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "ada54c3e-4c14-4756-9d29-9dbaf056a8dc",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C35",
+      "claim": "Event cameras only respond to external changes in brightness as they occur, thereby reducing transmission bandwidth and maximizing dynamic range.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, while traditional sensors operate on a frame-based approach, whereby inputs are periodically sampled based on an internal clock, event cameras only respond to external changes in brightness as they occur, thereby reducing transmission bandwidth and maximizing dynamic range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of event camera technology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "9c423dd7-2e2f-4c7f-a4ed-747e31ff90fa",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C36",
+      "claim": "Recent work has successfully exploited Hassenstein\u2013Reichardt detectors as a biologically inspired solution for detecting motion with event cameras.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, recent work has even successfully exploited Hassenstein\u2013Reichardt detectors as a biologically inspired solution for detecting motion with event cameras (D'Angelo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "9a520028-d18c-407a-ac1c-25427f4a97e7",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C37",
+      "claim": "The MCD model is mathematically equivalent to the Hassenstein\u2013Reichardt detectors.",
+      "claim_type": "IMPLICIT",
+      "source": "Hence, considering the mathematical equivalence of the MCD and the Hassenstein\u2013Reichardt detectors, the present study suggests the intriguing possibility of using the revised MCD model as a biologically inspired solution for sensory fusion in future multimodal neuromorphic systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a basis for the inference about neuromorphic applications.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "389cbc6f-dd20-4b4b-a20a-f8a84c23b865",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C38",
+      "claim": "Eight participants (age range 22\u201335 years, four females) participated in experiment 1.",
+      "claim_type": "EXPLICIT",
+      "source": "To probe the effect of the correlation between unimodal step stimuli on the perceived timing of audiovisual events, eight participants (age range 22\u201335 years, four females) observed audiovisual signals consisting of lightness and acoustic intensity increments (on-step) and decrements (off-step).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "f79e65a2-7ba8-4c4e-8402-3c2eb96d7921",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C39",
+      "claim": "Five participants (age range 25\u201335 years, three females) participated in experiment 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that we expect the frequency-doubling effect to be strong in size (i.e., synchrony at pi-phase shift should approach 0 under the sustained hypothesis, and 1 under the transient hypothesis), and that we collected a large number of responses (n = 600 per observer), a pool of five participants (age range 25\u201335 years, three females) was large enough to reliably assess its presence or lack thereof.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "2052844a-0b8d-44ef-877f-2e88d760947d",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C40",
+      "claim": "Each participant in experiment 1 provided 600 responses in the TOJ task and 600 responses in the SJ task.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, each participant provided 600 responses in the TOJ task (15 lags, 10 repetitions, and 4 conditions) and additional 600 responses in the SJ task (again, 15 lags, 10 repetitions, and 4 conditions).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "1cb11655-2fb8-4438-843e-31da24cc49a5",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C41",
+      "claim": "Each participant in experiment 2 provided 600 responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Audiovisual phase shift was manipulated according to the method of constant stimuli, and a full cycle was sampled in 40 steps. Each lag was presented 15 times to yield a total of 600 trials per participant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "9b112eef-da2a-4fae-8017-6824eeb6ab98",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C42",
+      "claim": "The experimental procedure was approved by the ethics committee of the University of Bielefeld (ref. no. 2015-136) and was conducted in accordance with the Declaration of Helsinki.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental procedure was approved by the ethics committee of the University of Bielefeld (ref. no. 2015-136) and was conducted in accordance with the Declaration of Helsinki.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "a4d938d8-de8f-4fd0-abf0-805504d62a14",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C43",
+      "claim": "The PSS and WSS measured with TOJ and SJ tasks are often not correlated when measured on the same subjects.",
+      "claim_type": "EXPLICIT",
+      "source": "With both tasks it is possible to estimate the PSS and WSS; however, when measured on the same subjects, the PSS and WSS measured from the two tasks are often not correlated (Garc\u00eda-P\u00e9rez and Alcal\u00e1-Quintana, 2012; Linares and Holcombe, 2014; Machulla et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "9c431bd9-4c0d-4074-86a4-d8a09626b86a",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C44",
+      "claim": "In experiment 1, the PSS and WSS measured with the two tasks are not significantly correlated (PSS: r = \u22120.16, p=0.38; WSS: r = 0.16, p=0.39).",
+      "claim_type": "EXPLICIT",
+      "source": "As in previous studies, the PSS and WSS measured with the two tasks are not significantly correlated (PSS: r = \u22120.16, p=0.38; WSS: r = 0.16, p=0.39).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical result from experiment 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "31013bf5-1ad0-46c8-9153-92c108772ecf",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C45",
+      "claim": "TOJs and SJs share a common mechanism for sensory processing: the MCD model.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose that TOJs and SJs share a common mechanism for sensory processing: the MCD model (Equations 1\u20137). However, the following decision-making processes (see Figure 5a) are independent across the two tasks, hence the lack of correlation between the PSS and WSS estimated using SJs vs. TOJs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the model structure and experimental results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "e2b13da5-f7b7-47a7-9c7d-456838baa78f",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C46",
+      "claim": "This study relies on a large collection of three novel psychophysical datasets and six previously published ones, consisting of behavioral responses from a variety of tasks for a total of 68,693 trials.",
+      "claim_type": "EXPLICIT",
+      "source": "To properly substantiate our claims and quantitatively test our model, this study relies on a large collection of three novel psychophysical datasets and six previously published ones. These consisted of behavioral responses from a variety of tasks such as TOJs, SJs, causality judgments and detection tasks for a total of 68,693 trials.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the overall dataset used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "31580794-34e9-49e3-a3de-ecf49f32167a",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C47",
+      "claim": "The conclusions are supported by a large-scale analysis and computational modeling of a vast set of behavioral data, consisting of 68,693 trials from a sample of 110 observers.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, our conclusions are supported by a large-scale analysis and computational modeling of a vast set of behavioral data, consisting of 68,693 trials from a sample of 110 observers, collectively providing strong converging evidence for the dominance of transient over sustained input channels in multisensory integration (see Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement about the evidence supporting the conclusions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "43ba6756-3194-4466-bfea-6da537c91168",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C48",
+      "claim": "The MCD model provides two outputs: one representing the decision variable for the SJ and the other for the TOJ.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the MCD model provides two outputs: one representing the decision variable for the SJ (Equation 8) and the other for the TOJ (Equation 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "681ff169-a51a-4fb2-b0ea-66aebad574c5",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C49",
+      "claim": "Band-pass filters are modeled as biphasic impulse response functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Following Adelson and Bergen, 1985, band-pass filters are modeled as biphasic impulse response functions defined as follows:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model implementation, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "502f0c9f-3b36-40f7-ad9f-80da3f5b07da",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C50",
+      "claim": "The temporal constants for the visual and auditory filters were set to \u03c4V = 0.070 s and \u03c4A = 0.055 s, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the previous results of experiments 1 and 2, we set these constants to be  \u03c4V = 0.070 s and  \u03c4A = 0.055 s for the visual and auditory filters, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "These are parameter values determined from experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "5379f03e-6774-4b58-b37a-5a77705fb971",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C51",
+      "claim": "The temporal constant \u03c4av was set to 0.674 s.",
+      "claim_type": "EXPLICIT",
+      "source": "The temporal constant \u03c4av was set to 0.674 s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter value used in the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "5d21bbed-9a0c-4863-9d52-e7941aff580d",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C52",
+      "claim": "Filtered signals are squared before being summed to render the responses insensitive to the polarity of changes in intensity.",
+      "claim_type": "EXPLICIT",
+      "source": "Filtered signals are squared before being summed to render the responses insensitive to the polarity of changes in intensity (Stigliani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model implementation, supported by a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "13a11ead-5e4c-4054-89cc-584210cd80f5",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "claim_id": "C53",
+      "claim": "Sustained input channels are modeled as low-pass temporal filters.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with previous work (Burr et al., 2009; Stigliani et al., 2017; Parise and Ernst, 2016), here we model sustained input channels as low-pass temporal filters with the following impulse response function:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model implementation, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "85bf2ea2-0cb3-434d-9eb2-2b3a175d8f66",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Experiment 1 tested whether audiovisual integration relies on sustained or transient channels by measuring perceived synchrony of on-step and off-step stimuli. Neither the point of subjective simultaneity (PSS) nor the window of subjective simultaneity (WSS) differed across conditions combining on-steps and off-steps in vision and audition, arguing against dominance of sustained channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20 and C21 are well-supported by statistical tests showing no significant differences across conditions (C20) and the logical inference that sustained channels would have produced different correlations for positively vs. negatively correlated stimuli (C21). The experimental design appropriately tests the hypothesis with adequate sample size (8 participants, 600 responses each in TOJ and SJ tasks).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "ca0efcec-1899-45ce-89c3-263de09cb440",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experiment 2 demonstrated a frequency-doubling effect in perceived audiovisual simultaneity using periodic stimuli. The power spectrum of psychometric functions showed a sharp peak at 2 cycles per period in all observers, supporting the hypothesis that audiovisual synchrony is computed over unsigned transient input channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C24 are strongly supported by Fourier analysis showing a clear 2 cpp peak (C22), with 99% confidence intervals separating this from the 1 cpp amplitude (C23). The inference that this frequency doubling indicates transient channel dominance (C24) is logically sound given the theoretical framework. Sample size (5 participants, 600 trials each) is justified given the expected large effect size.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "448376ee-2aa1-4156-a2f0-c8f5e0977b7a",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study demonstrates that multisensory integration operates on correlated input from unimodal transient channels, unifying several previously unrelated phenomena in multisensory research under a single computational framework.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2 and C31 represent the main conclusion, supported by converging evidence from experiments 1 and 2, plus successful model simulations of multiple published datasets (68,693 trials from 110 observers total). The breadth of phenomena accounted for (timing perception, detection, causality judgments, optimal integration) provides strong support for this unifying claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "2f1e1132-d91b-40d5-a92d-9e1a5e0756e4",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The revised MCD model with transient input channels accurately replicated the results of experiments 1 and 2, with Pearson correlations of 0.99 for both TOJ and SJ tasks in experiment 1, and 0.97 for experiment 2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C25 is well-supported by quantitative model-data correlations. The model has only 3 temporal constants plus 2 GLM parameters per psychometric curve, providing parsimony. The high correlations across diverse task types (TOJ, SJ, periodic stimuli) demonstrate the model's generalizability and support the transient channel hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "393b2a5d-2d5b-4fc8-bdd6-7ff41b3eef6c",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The revised MCD model successfully replicated findings from six published studies across diverse paradigms, including causality judgments (r=0.99, 0.98), temporal order judgments (r=0.97), detection tasks (r=0.91), and amplitude modulation detection (r=0.89).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 demonstrate strong model generalization with high correlations across diverse datasets. The model used constrained or zero free parameters for several simulations (C26, C27), strengthening the evidence. The successful replication of high temporal rate stimuli (up to 18 Hz, C26) addresses previous criticisms of the original MCD model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "ab00c58d-ddf1-4952-96f5-148c040bf1ef",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The MCD model can quantitatively replicate several recent findings in multisensory research and simultaneously account for perceived timing, multisensory facilitation, causality judgments, and optimal integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3 and C4 are supported by the comprehensive model validation against published datasets (C26-C30) and the new experiments. The model's ability to account for multiple phenomena with a single computational framework and consistent parameters provides strong evidence for its validity and the underlying transient channel hypothesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "05673dbe-fa93-41a6-91d4-8034c4417f29",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "PSS and WSS measured with TOJ and SJ tasks were not significantly correlated in experiment 1 (PSS: r=-0.16, p=0.38; WSS: r=0.16, p=0.39), but the authors propose both tasks share a common sensory processing mechanism (MCD) with independent decision-making processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by statistical tests showing no correlation. Claim C45 provides a reasonable theoretical explanation consistent with the model architecture (two outputs from one MCD unit). This reconciles the lack of correlation with a shared sensory mechanism, though the proposal is somewhat speculative and would benefit from additional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "3f72cd4e-1210-4a1e-be24-881e550116ec",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Audiovisual information reaches the brain via sustained and transient channels that originate early in the processing hierarchy. Sustained channels respond to stimulus intensity (low-pass filters), while transient channels respond to changes in intensity (band-pass filters).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5-C9 describe established knowledge about sensory processing, supported by multiple citations to prior work. These claims provide the necessary theoretical foundation for the study's hypotheses. The characterizations are consistent with signal processing theory and neuroscience literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "db080952-ab7d-403b-8956-2cdf3e558c22",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior research has established that temporal correlation and synchrony are critical for multisensory perception, with evidence from illusions, optimal integration, detection tasks, and neuroimaging showing that audiovisual integration relies on transient stimulus information.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C15 accurately summarize prior literature with appropriate citations. These claims establish the context and motivation for the current study. The authors correctly attribute findings to cited studies (Andersen & Mamassian 2008, Werner & Noppeney 2011), providing a solid foundation for their hypotheses.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "abe40b12-39a0-490b-bb17-389ddc0177fb",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Onset and offset step stimuli trigger identical unsigned transient responses but negatively correlated sustained responses. With periodic stimuli, transient channels exhibit frequency doubling (responding at twice the input rate), a hallmark of transient channel contribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 describe theoretical predictions that form the basis for the experimental hypotheses. These are supported by signal processing theory, model simulations (Figure 1), and citations to prior work on frequency doubling. The logic is sound and provides clear testable predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "55c3eb69-d1b5-4253-87c4-74b10f6c3e0d",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Experiment 1 included 8 participants (age 22-35, 4 females) providing 1200 responses each. Experiment 2 included 5 participants (age 25-35, 3 females) providing 600 responses each. Both experiments were ethically approved and conducted according to the Declaration of Helsinki.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C42 describe methodological details that are clearly stated and appropriate. Sample sizes are justified based on expected effect sizes and number of trials. Ethical approval is documented. These are standard methodological claims that are adequately supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "473ef0d5-45c2-4b6e-b742-9344def1466a",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The study analyzed 68,693 trials from 110 observers across three novel and six published datasets, including TOJs, SJs, causality judgments, and detection tasks, providing large-scale evidence for transient channel dominance in multisensory integration.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46 and C47 accurately describe the scope of the analysis. The large sample size across diverse paradigms strengthens the conclusions. However, it should be noted that the published datasets were not collected specifically to test the transient vs. sustained hypothesis, which could introduce some limitations in interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "ab4c3054-9e94-44fb-a1e1-b0ba672e3c23",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The MCD model architecture includes two outputs (for SJ and TOJ), uses biphasic band-pass filters for transient channels and low-pass filters for sustained channels, with specific temporal constants (\u03c4V=0.070s, \u03c4A=0.055s, \u03c4av=0.674s) and squaring nonlinearities to achieve polarity insensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 describe the model implementation with appropriate technical detail and citations. The parameter values (C50, C51) were determined from experimental data. The model architecture is biologically plausible and mathematically well-defined. These technical specifications are necessary for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "e029810a-d95e-4acf-9933-289a617d1fd8",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Multisensory benefits in detection tasks critically depend on the correlation and timing of audiovisual events, which are the primary factors affecting MCD model responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C32 is supported by the model simulations showing that correlation and timing systematically affect MCD output, and by the successful replication of detection task data (C29). This provides a mechanistic explanation for multisensory facilitation effects without requiring post-sensory adjustments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "d3008931-478b-40ae-b0cb-bb3baeb758b6",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "No obvious mapping between acoustic and lightness intensity rooted in natural scene statistics has been reported. Transient channels operate as event detectors by representing only input variations, signaling potentially relevant changes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C33 accurately notes a gap in the literature regarding intensity mappings. Claim C34 provides a functional interpretation of transient channels that is consistent with their computational properties and supported by the study's findings. These claims contextualize the results within broader perceptual theory.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "43cb71dc-8aef-459c-8c26-b257262ebba5",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Event cameras respond only to brightness changes (like transient channels), reducing bandwidth and maximizing dynamic range. The MCD model's mathematical equivalence to Hassenstein-Reichardt detectors suggests potential applications in multimodal neuromorphic systems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35 and C36 accurately describe event camera technology and its biological inspiration. However, claim C37 about mathematical equivalence between MCD and Hassenstein-Reichardt detectors is stated but not demonstrated in the manuscript. The proposed neuromorphic application (C37) is speculative and would require validation. The connection is plausible but not rigorously established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "4e3352b3-7bcb-4c58-8a73-c099bc80b27d",
+      "content_id": "dddfc45f-1a58-408e-8833-1ffa7cb9c72c",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "PSS and WSS measured with TOJ and SJ tasks are often not correlated when measured on the same subjects, as reported in previous studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by multiple citations to prior research. This establishes the context for the authors' finding of no correlation in their own data (C44) and their theoretical explanation (C45). The claim accurately represents the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "ee69a1a7-a878-40fd-adaa-2f628f7b89c0",
+      "content_id": "a6989604-5918-4d0d-be1e-fd14ce34b992",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study demonstrates through two psychophysical experiments that multisensory integration operates primarily on transient rather than sustained channels. Experiment 1 showed no difference in PSS or WSS across on-step and off-step conditions, arguing against sustained channel dominance. Experiment 2 demonstrated a frequency-doubling effect in perceived simultaneity of periodic audiovisual stimuli, which only occurs if synchrony is computed over unsigned transient channels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm the experimental design and findings. The editor states 'the experimental design is sound and the evidence is compelling,' while Reviewer 2 notes 'the model can account for results from two new experiments that focus on the detection of correlated transients and frequency doubling.' Reviewer 3 confirms 'Overall the experimental design is sound and the analyses well performed.' No concerns were raised about these core experimental findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6",
+      "content_id": "a6989604-5918-4d0d-be1e-fd14ce34b992",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The revised MCD model successfully replicated results from the authors' experiments (correlations 0.97-0.99) and accurately predicted human performance across six previously published datasets covering causality judgments, temporal order judgments, and detection tasks (correlations 0.89-0.99). The model simultaneously accounts for perceived timing, multisensory facilitation, causality judgments, and optimal integration.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise the model's performance. Reviewer 2 states 'This model can account for results from two new experiments...The model also accounts for several behavioural results from experiments including stochastic sequences of A/V events and sine wave modulations.' Reviewer 3 notes 'it is very nice to see the model applied to a variety of previous studies' and confirms no additional concerns after revision. The quantitative fits are not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "fe40eada-99d3-4ee7-8500-059119242294",
+      "content_id": "a6989604-5918-4d0d-be1e-fd14ce34b992",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The study concludes that several previously unrelated phenomena in multisensory research all stem from integration of correlated input from unimodal transient channels, with multisensory benefits critically depending on correlation and timing of audiovisual events.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly highlights 'The significance of this work lies in its ability to explain multisensory perception using fundamental neural mechanisms previously identified in insect motion processing,' directly supporting the unifying framework claim. The editor emphasizes 'The synergy between the experimental and theoretical aspects of the article is strong,' affirming the integrative conclusion. No reviewer challenges this overarching interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "3878893b-c58a-4320-9e15-f307a31fa7ac",
+      "content_id": "a6989604-5918-4d0d-be1e-fd14ce34b992",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The manuscript establishes theoretical background on sustained and transient sensory channels, their properties as low-pass and band-pass filters respectively, and their differential responses to stimulus changes. This includes the frequency-doubling phenomenon as a hallmark of transient channel contribution.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are treated as established knowledge by reviewers. Reviewer 2 notes the model 'builds on the neurobiologically plausible Hassenstein-Reichardt detector,' implicitly accepting the theoretical framework. No reviewer questions the characterization of sustained vs. transient channels or their filtering properties, suggesting acceptance of this foundational material.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "4dc2059e-88c8-4463-9287-4f1a61f0b60e",
+      "content_id": "a6989604-5918-4d0d-be1e-fd14ce34b992",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The study proposes that TOJs and SJs share a common sensory processing mechanism (the MCD model) but have independent decision-making processes, explaining why PSS and WSS from the two tasks are not significantly correlated (as found in experiment 1 and previous literature).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly praises that 'The model goes beyond descriptive models such as cumulative Gaussians for TOJ and differences in cumulative Gaussians for SJ tasks by providing a mechanism.' This mechanistic account of both tasks is accepted without challenge. Reviewer 3 confirms 'no additional concerns' after revision, suggesting acceptance of this theoretical framework.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "c13d2a66-6c32-451a-a07e-255d0bd6c81a",
+      "content_id": "a6989604-5918-4d0d-be1e-fd14ce34b992",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The manuscript discusses the mathematical equivalence of the MCD model to Hassenstein-Reichardt detectors and proposes potential applications to neuromorphic systems, drawing parallels to event camera technology.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 specifically highlights 'The significance of this work lies in its ability to explain multisensory perception using fundamental neural mechanisms previously identified in insect motion processing,' directly affirming the connection to Hassenstein-Reichardt detectors. The neuromorphic application discussion is not challenged by any reviewer.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "ebe95184-2425-414c-bd2e-a5f02265cb2d",
+      "content_id": "a6989604-5918-4d0d-be1e-fd14ce34b992",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The study's methodological approach involved 8 participants in experiment 1 and 5 in experiment 2, with 600 responses per participant, and overall analyzed 68,693 trials from 110 observers across new and published datasets with appropriate ethical approval.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states 'the experimental design is sound' and Reviewer 3 confirms 'the experimental design is sound and the analyses well performed.' No reviewer questions sample sizes, trial numbers, or ethical procedures. The large-scale dataset is implicitly accepted as adequate given the lack of methodological critique.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "7f306714-7c42-4502-94a1-647d57cc1537",
+      "content_id": "a6989604-5918-4d0d-be1e-fd14ce34b992",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The MCD model implementation uses biphasic impulse response functions for band-pass filters and low-pass filters for sustained channels, with specific temporal constants (\u03c4V = 0.070 s, \u03c4A = 0.055 s, \u03c4av = 0.674 s) and squaring operations to achieve polarity insensitivity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 notes the model 'builds on the neurobiologically plausible Hassenstein-Reichardt detector,' accepting the implementation approach. Reviewer 3 states 'The extension of the MCD model to better capture transients make a great deal of sense in the current context,' affirming the model architecture. No technical concerns about implementation details were raised.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "83a9e66c-fefe-4825-b9d7-b9e326aceb30",
+      "result_id": "85bf2ea2-0cb3-434d-9eb2-2b3a175d8f66"
+    },
+    {
+      "claim_id": "0a9a0491-1a2d-498f-82c0-8019f2b7bfb4",
+      "result_id": "85bf2ea2-0cb3-434d-9eb2-2b3a175d8f66"
+    },
+    {
+      "claim_id": "cd9563b5-6fd8-4f90-b8a2-37aec4f7f491",
+      "result_id": "ca0efcec-1899-45ce-89c3-263de09cb440"
+    },
+    {
+      "claim_id": "8d17b2c2-5d75-4cb8-b0fd-ed13175f12f4",
+      "result_id": "ca0efcec-1899-45ce-89c3-263de09cb440"
+    },
+    {
+      "claim_id": "360ee965-15cd-40b5-8157-f6faf06da984",
+      "result_id": "ca0efcec-1899-45ce-89c3-263de09cb440"
+    },
+    {
+      "claim_id": "cdbc233f-6a4c-4ac7-bfb8-ecc5232e908c",
+      "result_id": "448376ee-2aa1-4156-a2f0-c8f5e0977b7a"
+    },
+    {
+      "claim_id": "8fbc8f46-82e3-4d30-8eea-5f5e63a12d57",
+      "result_id": "448376ee-2aa1-4156-a2f0-c8f5e0977b7a"
+    },
+    {
+      "claim_id": "30e9d8f8-82dd-415b-82d3-6c2889faeb20",
+      "result_id": "2f1e1132-d91b-40d5-a92d-9e1a5e0756e4"
+    },
+    {
+      "claim_id": "937df0c2-3d15-45da-bb58-075a799d5d6f",
+      "result_id": "393b2a5d-2d5b-4fc8-bdd6-7ff41b3eef6c"
+    },
+    {
+      "claim_id": "523ad0d7-9eb0-4774-9f02-f86756c7cff9",
+      "result_id": "393b2a5d-2d5b-4fc8-bdd6-7ff41b3eef6c"
+    },
+    {
+      "claim_id": "ed9efd4c-f323-4c48-a486-af9aa04a705a",
+      "result_id": "393b2a5d-2d5b-4fc8-bdd6-7ff41b3eef6c"
+    },
+    {
+      "claim_id": "848c3d33-3795-475b-9a87-441ad9a09ae8",
+      "result_id": "393b2a5d-2d5b-4fc8-bdd6-7ff41b3eef6c"
+    },
+    {
+      "claim_id": "d7f27bcc-41e1-4d1f-9927-230de9c1e991",
+      "result_id": "393b2a5d-2d5b-4fc8-bdd6-7ff41b3eef6c"
+    },
+    {
+      "claim_id": "2cec36f9-6a21-4dc9-af21-8b9f6a79fbc1",
+      "result_id": "ab00c58d-ddf1-4952-96f5-148c040bf1ef"
+    },
+    {
+      "claim_id": "bc8fd2ee-096a-4d38-91e0-554cf92dbc8b",
+      "result_id": "ab00c58d-ddf1-4952-96f5-148c040bf1ef"
+    },
+    {
+      "claim_id": "9c431bd9-4c0d-4074-86a4-d8a09626b86a",
+      "result_id": "05673dbe-fa93-41a6-91d4-8034c4417f29"
+    },
+    {
+      "claim_id": "31013bf5-1ad0-46c8-9153-92c108772ecf",
+      "result_id": "05673dbe-fa93-41a6-91d4-8034c4417f29"
+    },
+    {
+      "claim_id": "dca4a9a2-39e7-4868-9486-ad2414085f6e",
+      "result_id": "3f72cd4e-1210-4a1e-be24-881e550116ec"
+    },
+    {
+      "claim_id": "d2e9f960-0da1-442f-a5a8-512fc01de094",
+      "result_id": "3f72cd4e-1210-4a1e-be24-881e550116ec"
+    },
+    {
+      "claim_id": "a3fad50f-4cd6-4c33-947b-871bdd0efc2e",
+      "result_id": "3f72cd4e-1210-4a1e-be24-881e550116ec"
+    },
+    {
+      "claim_id": "a56a120d-5458-49b5-9802-b0131c64b957",
+      "result_id": "3f72cd4e-1210-4a1e-be24-881e550116ec"
+    },
+    {
+      "claim_id": "2a49cc91-594e-4af8-a1bc-5f9c8ca1683b",
+      "result_id": "3f72cd4e-1210-4a1e-be24-881e550116ec"
+    },
+    {
+      "claim_id": "1e27cc44-6a47-48ba-b026-8b7a3c8eb7dd",
+      "result_id": "3f72cd4e-1210-4a1e-be24-881e550116ec"
+    },
+    {
+      "claim_id": "3a65de8d-2ea1-48d9-b5cc-f4073496dd3b",
+      "result_id": "db080952-ab7d-403b-8956-2cdf3e558c22"
+    },
+    {
+      "claim_id": "54d0f60c-a211-46d7-929a-99ee482ee90a",
+      "result_id": "db080952-ab7d-403b-8956-2cdf3e558c22"
+    },
+    {
+      "claim_id": "672c90eb-4228-4fe6-a296-e9353578a8f4",
+      "result_id": "db080952-ab7d-403b-8956-2cdf3e558c22"
+    },
+    {
+      "claim_id": "9eedcf6d-8f23-4cef-bf2b-a959e5a797f7",
+      "result_id": "db080952-ab7d-403b-8956-2cdf3e558c22"
+    },
+    {
+      "claim_id": "6c7f54fb-b8ed-4bc8-b357-cba03d8ccbae",
+      "result_id": "db080952-ab7d-403b-8956-2cdf3e558c22"
+    },
+    {
+      "claim_id": "67a06911-75cc-48fd-818b-0cde1f409cfe",
+      "result_id": "db080952-ab7d-403b-8956-2cdf3e558c22"
+    },
+    {
+      "claim_id": "1175edbb-5a3a-4488-8b76-e62f51fd0055",
+      "result_id": "abe40b12-39a0-490b-bb17-389ddc0177fb"
+    },
+    {
+      "claim_id": "104c09d6-57fa-4660-baa3-776f237fbf85",
+      "result_id": "abe40b12-39a0-490b-bb17-389ddc0177fb"
+    },
+    {
+      "claim_id": "a12193b1-d9f7-4008-9e53-0202907e7612",
+      "result_id": "abe40b12-39a0-490b-bb17-389ddc0177fb"
+    },
+    {
+      "claim_id": "7d5c210f-8961-445c-8e05-ace7632b91e2",
+      "result_id": "abe40b12-39a0-490b-bb17-389ddc0177fb"
+    },
+    {
+      "claim_id": "389cbc6f-dd20-4b4b-a20a-f8a84c23b865",
+      "result_id": "55c3eb69-d1b5-4253-87c4-74b10f6c3e0d"
+    },
+    {
+      "claim_id": "f79e65a2-7ba8-4c4e-8402-3c2eb96d7921",
+      "result_id": "55c3eb69-d1b5-4253-87c4-74b10f6c3e0d"
+    },
+    {
+      "claim_id": "2052844a-0b8d-44ef-877f-2e88d760947d",
+      "result_id": "55c3eb69-d1b5-4253-87c4-74b10f6c3e0d"
+    },
+    {
+      "claim_id": "1cb11655-2fb8-4438-843e-31da24cc49a5",
+      "result_id": "55c3eb69-d1b5-4253-87c4-74b10f6c3e0d"
+    },
+    {
+      "claim_id": "9b112eef-da2a-4fae-8017-6824eeb6ab98",
+      "result_id": "55c3eb69-d1b5-4253-87c4-74b10f6c3e0d"
+    },
+    {
+      "claim_id": "e2b13da5-f7b7-47a7-9c7d-456838baa78f",
+      "result_id": "473ef0d5-45c2-4b6e-b742-9344def1466a"
+    },
+    {
+      "claim_id": "31580794-34e9-49e3-a3de-ecf49f32167a",
+      "result_id": "473ef0d5-45c2-4b6e-b742-9344def1466a"
+    },
+    {
+      "claim_id": "43ba6756-3194-4466-bfea-6da537c91168",
+      "result_id": "ab4c3054-9e94-44fb-a1e1-b0ba672e3c23"
+    },
+    {
+      "claim_id": "681ff169-a51a-4fb2-b0ea-66aebad574c5",
+      "result_id": "ab4c3054-9e94-44fb-a1e1-b0ba672e3c23"
+    },
+    {
+      "claim_id": "502f0c9f-3b36-40f7-ad9f-80da3f5b07da",
+      "result_id": "ab4c3054-9e94-44fb-a1e1-b0ba672e3c23"
+    },
+    {
+      "claim_id": "5379f03e-6774-4b58-b37a-5a77705fb971",
+      "result_id": "ab4c3054-9e94-44fb-a1e1-b0ba672e3c23"
+    },
+    {
+      "claim_id": "5d21bbed-9a0c-4863-9d52-e7941aff580d",
+      "result_id": "ab4c3054-9e94-44fb-a1e1-b0ba672e3c23"
+    },
+    {
+      "claim_id": "13a11ead-5e4c-4054-89cc-584210cd80f5",
+      "result_id": "ab4c3054-9e94-44fb-a1e1-b0ba672e3c23"
+    },
+    {
+      "claim_id": "ac78cb28-6c95-4b97-8667-d9c55fafd43b",
+      "result_id": "e029810a-d95e-4acf-9933-289a617d1fd8"
+    },
+    {
+      "claim_id": "1de8aba3-6cab-4574-aa1a-24d26f80ad84",
+      "result_id": "d3008931-478b-40ae-b0cb-bb3baeb758b6"
+    },
+    {
+      "claim_id": "7bf8f02e-ce8c-4cc2-9f16-579ec993c621",
+      "result_id": "d3008931-478b-40ae-b0cb-bb3baeb758b6"
+    },
+    {
+      "claim_id": "ada54c3e-4c14-4756-9d29-9dbaf056a8dc",
+      "result_id": "43cb71dc-8aef-459c-8c26-b257262ebba5"
+    },
+    {
+      "claim_id": "9c423dd7-2e2f-4c7f-a4ed-747e31ff90fa",
+      "result_id": "43cb71dc-8aef-459c-8c26-b257262ebba5"
+    },
+    {
+      "claim_id": "9a520028-d18c-407a-ac1c-25427f4a97e7",
+      "result_id": "43cb71dc-8aef-459c-8c26-b257262ebba5"
+    },
+    {
+      "claim_id": "a4d938d8-de8f-4fd0-abf0-805504d62a14",
+      "result_id": "4e3352b3-7bcb-4c58-8a73-c099bc80b27d"
+    },
+    {
+      "claim_id": "cdbc233f-6a4c-4ac7-bfb8-ecc5232e908c",
+      "result_id": "ee69a1a7-a878-40fd-adaa-2f628f7b89c0"
+    },
+    {
+      "claim_id": "83a9e66c-fefe-4825-b9d7-b9e326aceb30",
+      "result_id": "ee69a1a7-a878-40fd-adaa-2f628f7b89c0"
+    },
+    {
+      "claim_id": "0a9a0491-1a2d-498f-82c0-8019f2b7bfb4",
+      "result_id": "ee69a1a7-a878-40fd-adaa-2f628f7b89c0"
+    },
+    {
+      "claim_id": "cd9563b5-6fd8-4f90-b8a2-37aec4f7f491",
+      "result_id": "ee69a1a7-a878-40fd-adaa-2f628f7b89c0"
+    },
+    {
+      "claim_id": "8d17b2c2-5d75-4cb8-b0fd-ed13175f12f4",
+      "result_id": "ee69a1a7-a878-40fd-adaa-2f628f7b89c0"
+    },
+    {
+      "claim_id": "360ee965-15cd-40b5-8157-f6faf06da984",
+      "result_id": "ee69a1a7-a878-40fd-adaa-2f628f7b89c0"
+    },
+    {
+      "claim_id": "2cec36f9-6a21-4dc9-af21-8b9f6a79fbc1",
+      "result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6"
+    },
+    {
+      "claim_id": "bc8fd2ee-096a-4d38-91e0-554cf92dbc8b",
+      "result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6"
+    },
+    {
+      "claim_id": "30e9d8f8-82dd-415b-82d3-6c2889faeb20",
+      "result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6"
+    },
+    {
+      "claim_id": "937df0c2-3d15-45da-bb58-075a799d5d6f",
+      "result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6"
+    },
+    {
+      "claim_id": "523ad0d7-9eb0-4774-9f02-f86756c7cff9",
+      "result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6"
+    },
+    {
+      "claim_id": "ed9efd4c-f323-4c48-a486-af9aa04a705a",
+      "result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6"
+    },
+    {
+      "claim_id": "848c3d33-3795-475b-9a87-441ad9a09ae8",
+      "result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6"
+    },
+    {
+      "claim_id": "d7f27bcc-41e1-4d1f-9927-230de9c1e991",
+      "result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6"
+    },
+    {
+      "claim_id": "8fbc8f46-82e3-4d30-8eea-5f5e63a12d57",
+      "result_id": "fe40eada-99d3-4ee7-8500-059119242294"
+    },
+    {
+      "claim_id": "ac78cb28-6c95-4b97-8667-d9c55fafd43b",
+      "result_id": "fe40eada-99d3-4ee7-8500-059119242294"
+    },
+    {
+      "claim_id": "dca4a9a2-39e7-4868-9486-ad2414085f6e",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "d2e9f960-0da1-442f-a5a8-512fc01de094",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "a3fad50f-4cd6-4c33-947b-871bdd0efc2e",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "a56a120d-5458-49b5-9802-b0131c64b957",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "2a49cc91-594e-4af8-a1bc-5f9c8ca1683b",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "1e27cc44-6a47-48ba-b026-8b7a3c8eb7dd",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "3a65de8d-2ea1-48d9-b5cc-f4073496dd3b",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "54d0f60c-a211-46d7-929a-99ee482ee90a",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "1175edbb-5a3a-4488-8b76-e62f51fd0055",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "104c09d6-57fa-4660-baa3-776f237fbf85",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "a12193b1-d9f7-4008-9e53-0202907e7612",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "7d5c210f-8961-445c-8e05-ace7632b91e2",
+      "result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac"
+    },
+    {
+      "claim_id": "a4d938d8-de8f-4fd0-abf0-805504d62a14",
+      "result_id": "4dc2059e-88c8-4463-9287-4f1a61f0b60e"
+    },
+    {
+      "claim_id": "9c431bd9-4c0d-4074-86a4-d8a09626b86a",
+      "result_id": "4dc2059e-88c8-4463-9287-4f1a61f0b60e"
+    },
+    {
+      "claim_id": "31013bf5-1ad0-46c8-9153-92c108772ecf",
+      "result_id": "4dc2059e-88c8-4463-9287-4f1a61f0b60e"
+    },
+    {
+      "claim_id": "43ba6756-3194-4466-bfea-6da537c91168",
+      "result_id": "4dc2059e-88c8-4463-9287-4f1a61f0b60e"
+    },
+    {
+      "claim_id": "9a520028-d18c-407a-ac1c-25427f4a97e7",
+      "result_id": "c13d2a66-6c32-451a-a07e-255d0bd6c81a"
+    },
+    {
+      "claim_id": "7bf8f02e-ce8c-4cc2-9f16-579ec993c621",
+      "result_id": "c13d2a66-6c32-451a-a07e-255d0bd6c81a"
+    },
+    {
+      "claim_id": "ada54c3e-4c14-4756-9d29-9dbaf056a8dc",
+      "result_id": "c13d2a66-6c32-451a-a07e-255d0bd6c81a"
+    },
+    {
+      "claim_id": "9c423dd7-2e2f-4c7f-a4ed-747e31ff90fa",
+      "result_id": "c13d2a66-6c32-451a-a07e-255d0bd6c81a"
+    },
+    {
+      "claim_id": "389cbc6f-dd20-4b4b-a20a-f8a84c23b865",
+      "result_id": "ebe95184-2425-414c-bd2e-a5f02265cb2d"
+    },
+    {
+      "claim_id": "f79e65a2-7ba8-4c4e-8402-3c2eb96d7921",
+      "result_id": "ebe95184-2425-414c-bd2e-a5f02265cb2d"
+    },
+    {
+      "claim_id": "2052844a-0b8d-44ef-877f-2e88d760947d",
+      "result_id": "ebe95184-2425-414c-bd2e-a5f02265cb2d"
+    },
+    {
+      "claim_id": "1cb11655-2fb8-4438-843e-31da24cc49a5",
+      "result_id": "ebe95184-2425-414c-bd2e-a5f02265cb2d"
+    },
+    {
+      "claim_id": "9b112eef-da2a-4fae-8017-6824eeb6ab98",
+      "result_id": "ebe95184-2425-414c-bd2e-a5f02265cb2d"
+    },
+    {
+      "claim_id": "e2b13da5-f7b7-47a7-9c7d-456838baa78f",
+      "result_id": "ebe95184-2425-414c-bd2e-a5f02265cb2d"
+    },
+    {
+      "claim_id": "31580794-34e9-49e3-a3de-ecf49f32167a",
+      "result_id": "ebe95184-2425-414c-bd2e-a5f02265cb2d"
+    },
+    {
+      "claim_id": "681ff169-a51a-4fb2-b0ea-66aebad574c5",
+      "result_id": "7f306714-7c42-4502-94a1-647d57cc1537"
+    },
+    {
+      "claim_id": "502f0c9f-3b36-40f7-ad9f-80da3f5b07da",
+      "result_id": "7f306714-7c42-4502-94a1-647d57cc1537"
+    },
+    {
+      "claim_id": "5379f03e-6774-4b58-b37a-5a77705fb971",
+      "result_id": "7f306714-7c42-4502-94a1-647d57cc1537"
+    },
+    {
+      "claim_id": "5d21bbed-9a0c-4863-9d52-e7941aff580d",
+      "result_id": "7f306714-7c42-4502-94a1-647d57cc1537"
+    },
+    {
+      "claim_id": "13a11ead-5e4c-4054-89cc-584210cd80f5",
+      "result_id": "7f306714-7c42-4502-94a1-647d57cc1537"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "82e52fe1-24c7-48df-9a53-8ac7f454fa5b",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "ab4c3054-9e94-44fb-a1e1-b0ba672e3c23",
+      "peer_result_id": "7f306714-7c42-4502-94a1-647d57cc1537",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the model implementation claims (C48-C53). OpenEval provides detailed technical validation of the model architecture and parameters, while peer reviewers affirm the neurobiological plausibility and accept the implementation without technical concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "9f958dc6-b415-40a7-81e1-e1b7eebf1bbf",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "43cb71dc-8aef-459c-8c26-b257262ebba5",
+      "peer_result_id": "c13d2a66-6c32-451a-a07e-255d0bd6c81a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on C37. OpenEval rates these claims as UNCERTAIN, noting the mathematical equivalence between MCD and Hassenstein-Reichardt detectors is stated but not demonstrated. Peer reviewers rate SUPPORTED, explicitly praising the connection to insect motion processing mechanisms without questioning the equivalence claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "b804d4e5-8750-4ecf-bb77-640db8b55743",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "55c3eb69-d1b5-4253-87c4-74b10f6c3e0d",
+      "peer_result_id": "ebe95184-2425-414c-bd2e-a5f02265cb2d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support methodological claims (C38-C42, C46-C47). OpenEval validates sample sizes, trial numbers, and ethical documentation as adequate. Peer reviewers affirm the experimental design is sound and analyses well-performed without methodological critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "cdc930d6-8ec0-4115-b03f-6c2df713fa00",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "393b2a5d-2d5b-4fc8-bdd6-7ff41b3eef6c",
+      "peer_result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on model generalization (C26-C30). OpenEval highlights high correlations and constrained parameters as evidence. Peer reviewers explicitly praise the model's ability to account for diverse behavioral results across multiple experiments and paradigms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "931fd2a0-da3c-4638-9ed1-39cd4e1d8ae9",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "ca0efcec-1899-45ce-89c3-263de09cb440",
+      "peer_result_id": "ee69a1a7-a878-40fd-adaa-2f628f7b89c0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support frequency doubling findings (C22-C24). OpenEval validates the Fourier analysis and statistical confidence intervals. Peer reviewers affirm the experimental design is sound and evidence compelling, with no concerns raised about these core findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "a9a72989-15c2-4071-ad4d-b51891bb4497",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "85bf2ea2-0cb3-434d-9eb2-2b3a175d8f66",
+      "peer_result_id": "ee69a1a7-a878-40fd-adaa-2f628f7b89c0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support correlation experiment claims (C20-C21). OpenEval validates statistical tests and experimental design with adequate sample size. Peer reviewers confirm the experimental design is sound and evidence compelling for these findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "a1d5ca49-d85e-4fbd-a6c8-a516f3206bdc",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "05673dbe-fa93-41a6-91d4-8034c4417f29",
+      "peer_result_id": "4dc2059e-88c8-4463-9287-4f1a61f0b60e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support claims about TOJ/SJ correlation (C44-C45). OpenEval notes C45 is somewhat speculative but reasonable. Peer reviewers praise the mechanistic account of both tasks, accepting the theoretical framework without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "cf2d0b0e-09b6-4c59-b480-f8d7509a21b6",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "3f72cd4e-1210-4a1e-be24-881e550116ec",
+      "peer_result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support foundational background claims (C1, C5-C9). OpenEval validates these as established knowledge with appropriate citations. Peer reviewers implicitly accept the theoretical framework of sustained vs. transient channels without questioning these characterizations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "26053139-b8b2-4d72-9556-0eaac535f3f8",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "abe40b12-39a0-490b-bb17-389ddc0177fb",
+      "peer_result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support theoretical predictions (C16-C19). OpenEval validates these as sound signal processing theory with clear testable predictions. Peer reviewers treat these as established knowledge within the accepted theoretical framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "af89e8c2-2c39-4565-ad2c-a7cc07d65b32",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "db080952-ab7d-403b-8956-2cdf3e558c22",
+      "peer_result_id": "3878893b-c58a-4320-9e15-f307a31fa7ac",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support literature review claims (C10-C11). OpenEval validates accurate summarization with appropriate citations. Peer reviewers implicitly accept this foundational material as part of the established theoretical framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "ae70902a-6e3e-4f73-990d-646dd2d2ff21",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "448376ee-2aa1-4156-a2f0-c8f5e0977b7a",
+      "peer_result_id": "fe40eada-99d3-4ee7-8500-059119242294",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the main unifying conclusion (C2, C31). OpenEval emphasizes converging evidence from multiple experiments and large sample sizes. Peer reviewers explicitly highlight the significance of explaining multisensory perception through fundamental neural mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "62d8c00e-0a2c-4f4d-b151-6a134c9625ea",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ab00c58d-ddf1-4952-96f5-148c040bf1ef",
+      "peer_result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support model validity claims (C3-C4, C25). OpenEval validates comprehensive model performance and parsimony. Peer reviewers praise the model's ability to account for diverse results and confirm no concerns about quantitative fits.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "d864ae17-378a-40b0-88f3-8b6cdaa3fe49",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "2f1e1132-d91b-40d5-a92d-9e1a5e0756e4",
+      "peer_result_id": "9040f95b-3036-498d-ae9c-a2e6468b8cd6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support model-data correlation claims (C25). OpenEval validates high correlations and parsimony across diverse tasks. Peer reviewers explicitly affirm the model's performance without questioning quantitative fits.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "0dbc84b4-ddc5-4ab1-a1c1-4bffd556465d",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "e029810a-d95e-4acf-9933-289a617d1fd8",
+      "peer_result_id": "fe40eada-99d3-4ee7-8500-059119242294",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the multisensory facilitation mechanism (C32). OpenEval validates the mechanistic explanation through model simulations. Peer reviewers affirm the integrative conclusion and synergy between experimental and theoretical aspects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "946c58d6-3d3f-4d47-b104-f068a6fbabe6",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "4e3352b3-7bcb-4c58-8a73-c099bc80b27d",
+      "peer_result_id": "4dc2059e-88c8-4463-9287-4f1a61f0b60e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support literature claims about TOJ/SJ correlation (C43). OpenEval validates accurate representation of prior research. Peer reviewers accept the mechanistic framework that addresses both tasks.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "3a20eeb8-7322-4010-a614-1ca67902055b",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "d3008931-478b-40ae-b0cb-bb3baeb758b6",
+      "peer_result_id": "c13d2a66-6c32-451a-a07e-255d0bd6c81a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support functional interpretation claims (C33-C34). OpenEval validates the contextualization within perceptual theory. Peer reviewers affirm the connection to fundamental neural mechanisms without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    },
+    {
+      "id": "e8e4fd27-5ea5-4b9a-890e-8fc8361686c7",
+      "submission_id": "86394364-6508-4d2a-9c9f-63a58e6e8dc3",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "473ef0d5-45c2-4b6e-b742-9344def1466a",
+      "peer_result_id": "ebe95184-2425-414c-bd2e-a5f02265cb2d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support scope of analysis claims (C46-C47). OpenEval notes the large sample size strengthens conclusions but mentions a limitation about dataset origins. Peer reviewers affirm the experimental design and methodology without raising this concern.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:21:38.352163Z"
+    }
+  ]
+}

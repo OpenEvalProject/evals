@@ -1,0 +1,2385 @@
+{
+  "submission": {
+    "id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:28:23.998445Z",
+    "updated_at": "2025-11-21T20:28:23.998445Z"
+  },
+  "content": [
+    {
+      "id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "content_type": "manuscript",
+      "content_text": "# Outer hair cells stir cochlear fluids\n\n## Authors\n\n- Choongheon Lee<sup>1</sup> ([ORCID: 0000-0002-3080-681X](https://orcid.org/0000-0002-3080-681X))\n- Mohammad Shokrian<sup>2</sup> ([ORCID: 0000-0003-0360-323X](https://orcid.org/0000-0003-0360-323X))\n- Kenneth S Henry<sup>1</sup> ([ORCID: 0000-0003-1364-318X](https://orcid.org/0000-0003-1364-318X))\n- Laurel H Carney<sup>3</sup> ([ORCID: 0000-0002-4729-5702](https://orcid.org/0000-0002-4729-5702))\n- J Christopher Holt<sup>1</sup> ([ORCID: 0000-0001-7908-083X](https://orcid.org/0000-0001-7908-083X))\n- Jong-Hoon Nam<sup>2</sup> ([ORCID: 0000-0002-7477-5453](https://orcid.org/0000-0002-7477-5453)) \u2020\n\n### Affiliations\n\n1. Department of Otolaryngology, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n2. Department of Mechanical Engineering, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n3. Department of Biomedical Engineering, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n4. Department of Neuroscience, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n5. Department of Electrical and Computer Engineering, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWe hypothesized that active outer hair cells drive cochlear fluid circulation. The hypothesis was tested by delivering the neurotoxin, kainic acid, to the intact round window of young gerbil cochleae while monitoring auditory responses in the cochlear nucleus. Sounds presented at a modest level significantly expedited kainic acid delivery. When outer-hair-cell motility was suppressed by salicylate, the facilitation effect was compromised. A low-frequency tone was more effective than broadband noise, especially for drug delivery to apical locations. Computational model simulations provided the physical basis for our observation, which incorporated solute diffusion, fluid advection, fluid\u2013structure interaction, and outer-hair-cell motility. Active outer hair cells deformed the organ of Corti like a peristaltic tube to generate apically streaming flows along the tunnel of Corti and basally streaming flows along the scala tympani. Our measurements and simulations coherently suggest that active outer hair cells in the tail region of cochlear traveling waves drive cochlear fluid circulation.\n\n## Introduction\n\nThe inner-ear labyrinth is filled with two lymphatic fluids, the perilymph and endolymph. An electrochemical potential difference between the two lymphatic fluids drives hair-cell mechano-transduction (Fettiplace and Kim, 2014). Although the inner-ear fluid system is connected to the cerebrospinal fluid of the brain through the cochlear and vestibular aqueducts and to the vascular system across the blood\u2013labyrinth barrier, inner-ear fluid is virtually isolated from other body-fluid systems (Salt et al., 1986; Ohyama et al., 1988). Consequently, intervening in hearing health by delivering substances to the inner-ear fluid through the systemic circulation is challenging. The maintenance of inner-ear fluid composition is achieved locally by the secretion and absorption of ions and molecules through inner-ear epithelial cells (Wangemann and Marcus, 2017). As inner-ear fluid homeostasis is maintained locally, longitudinal electro-chemical gradients, including the endocochlear potential, may vary along the cochlear length (Schulte and Schmiedt, 1992; Sadanaga and Morimitsu, 1995; Hirose and Liberman, 2003).\n\nThe inner-ear fluid has been reported to be stationary, unlike other lymphatic fluids in the body (Salt and Hirose, 2018a). Thus, it is considered that substance transport in the inner-ear fluid is governed by diffusion (Salt and Plontke, 2005). Diffusion is an effective mechanism for a substance to travel along sub-micrometer distances (Berg, 1993). For instance, considering the diffusion speed of small molecules in water, it takes microseconds for neurotransmitters to diffuse across a 20 nm synaptic gap. In contrast, diffusion is inefficient for travel on the centimeter scale. It takes days for a drug applied at the round window to travel 30 mm to the apical end of the human cochlea. In practice, the substance would not reach the apex because it would be resorbed before traveling this distance. Studies on inner-ear drug delivery confirm this principle of physics: longitudinal mass transport along the inner-ear labyrinth is challenging (Salt et al., 2016; Lukashkin et al., 2020).\n\nThe two membranous openings of the inner ear, the oval and round windows, are sites for noninvasive local delivery of substances into the inner ear. Intratympanic injections of antibiotics and anti-inflammatory drugs have been attempted to manage inner-ear disorders despite limited efficacy (Lavigne et al., 2016; Salt and Plontke, 2018b). Releasing a substance at the end of a long, closed tube forms a steep gradient of concentration. Consequently, the substance does not reach distant regions (Salt and Hirose, 2018a), whereas, in the vicinity of drug release, the concentration is much higher than desired. One remedy is to inject fluid by making two perforations in the inner ear\u2014one for intruding and the other for extruding (Borkholder et al., 2014; Tandon et al., 2016; Talaei et al., 2019). Such an invasive approach is often associated with the injection of a substantial fluid volume, larger than the entire perilymph in the inner ear (Szeto et al., 2020).\n\nThe tube-shaped organ of Corti (OoC) is lined with motile outer hair cells that are activated systematically with a large phase velocity (greater than a few m/s) toward the apex (Olson et al., 2012). A previous study suggests that outer-hair-cell motility can cause oscillatory fluid motion along the triangular fluid channel within the OoC (Karavitaki and Mountain, 2007). Recent measurements of OoC vibrations provide a possible explanation for how this longitudinal fluid flow is generated: outer hair cells operate like an area motor by deforming the OoC cross-sectional area (Jabeen et al., 2020; Guinan, 2022; Lin et al., 2024). Outer hair cells boost the OoC vibrations over the entire span of the traveling waves (Lee et al., 2016; Cooper et al., 2018; He et al., 2018; Fallah et al., 2019). In theory, peristaltic deformation of the OoC could induce non-oscillatory streaming along the tunnel of Corti (Shokrian et al., 2020). This peristaltic motion of the OoC has not been explored experimentally.\n\nWe hypothesized that outer hair cells agitated by sounds could induce advection of the cochlear fluids. To test this hypothesis, the transport of a neurotoxin along the scala tympani was measured. Kainic acid irreversibly damages afferent synapses with inner hair cells (Sun et al., 2001). Importantly, kainic acid does not affect the hair cells, unlike other popular substances used for inner-ear drug-delivery experiments, such as streptomycin and salicylate (Salt et al., 2016; Lukashkin et al., 2020). Kainic acid (10 mM) was administered at the round-window niche in young gerbils. Multichannel electrodes were inserted into the anteroventral cochlear nucleus (AVCN) to monitor drug effect along the tonotopic axis. The relation between the drug\u2019s effect time and location was obtained while controlling sound and activity of outer hair cells, two factors that have not been considered in previous drug-delivery studies. To provide theoretical support for experimental observations, computer models were used to simulate inner-ear drug delivery in three steps: the virtual cochlea simulated OoC vibrations due to sound (Zhou and Nam, 2019) the Navier\u2013Stokes equation including a nonlinear convective term was solved to obtain the drift of the Corti and scala fluids (Shokrian et al., 2020) and the diffusion-advection equation was solved to simulate the spatiotemporal change of kainic acid concentration in the cochlear fluids.\n\n## Results\n\nOuter-hair-cell motility and sound properties, such as frequency, level, and bandwidth, were the parameters that we hypothesized to affect drug delivery. Testing these quantities and their combinations requires an extensive series of experiments. In this study, we present a control case and four test cases to focus on two major questions: whether sounds and outer-hair-cell motility affect inner-ear drug delivery. The control experiment was the drug delivery in near silence (\u2018Silence\u2019). The test cases included (1) broadband sounds (0.1\u201312 kHz, 60 or 75 dB sound pressure level [SPL]) presented during drug delivery (\u2018Sound\u2019), (2) the same broadband sounds presented, but with salicylic acid administered before kainic acid application (\u2018post-SA\u2019), or an 80 dB SPL pure-tone at either (3) 0.5 kHz (\u2018LF-tone\u2019), or (4) 3\u20136 kHz (\u2018MF-tone\u2019).\n\n### Sounds affect inner-ear drug delivery\n\nBefore applying 10 mM kainic acid to the intact round window, the characteristic frequencies (CFs) of probing locations were identified (Figure 1A and D). Distortion product otoacoustic emissions (DPOAEs) were measured before and after drug delivery to confirm no change in outer-hair-cell motility during the experiment (Figure 1C and F). When pre- and post-delivery DPOAEs changed more than 5 dB at any frequency between 0.1 and 10 kHz, the results were excluded (four animals). In one set of experiments, over 90% of stimulus intervals were kept silent (approximately 55 s per minute, Figure 1A\u2013C). In the other experiments, broadband sounds at a modest level (0.1\u201312 kHz, 60\u201375 dB SPL) were played during over 90% of the stimulus intervals (Figure 1D\u2013F). Approximately 8% of time (4.6 s per minute) were used to acquire background neural activity and to measure responses to 30\u201340 dB SPL probe tones at three CFs. Under our experimental condition (4 \u00b5L of 10 mM kainic acid applied at the intact round window), neural responses were abolished after a few to several hundred minutes (Figure 1B and E). The effect time was defined as the latency following exposure at which the neural response dropped below 75% of its baseline value (tE, Figure 1B). The drug effect was tonotopic, with higher CF locations being affected earlier (Figure 1G). In Figure 1H, the sound- and the silence-case response curves from similar CF locations (between 4.5 and 6.5 kHz) were averaged for comparison. Figure 1I presents the drug delivery data as the effect time (tE) versus CF location. We acquired 34 data points from 13 gerbils for the sound protocol and 48 data points from 18 animals for the silence protocol. The trend line (broken curve) was obtained by fitting a curve to the silence-case data points with the 1D diffusion equation (Berg, 1993).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/101943/elife-101943-fig1-v1.jpg)\n\n**Figure 1.:** Kainic acid was applied to the round window of young gerbils under different acoustic conditions\u2014in silence or with 60\u201375 dB sound pressure level (SPL) sounds. (A) Tuning curves at 30 dB SPL. The characteristic frequencies (CFs) of the three probing channels are 9.0, 3.8, and 1.8 kHz. (B) Normalized neural responses in the anteroventral cochlear nucleus (AVCN) versus the time of drug application. The drug effect time, tE, was defined at the 75 percentiles of normalized curves. In this measurement, it took 54 min to affect the 3.8 kHz CF location (green dashed line and arrow). (C) Distortion product otoacoustic emissions (DPOAEs) were measured before and after the kainic acid delivery. Two stimulating tones were at 40 dB SPL, and the frequency ratio was 1.1. The x-axis is the f1 frequency. (A\u2013C) Example of drug delivered in silence (\u2018Silence\u2019 case). (D\u2013F) Example of drug delivery during the presentation of broadband noise at 75 dB SPL (\u2018Sound\u2019 case). (G) Response curves with colors representing CFs. Basal (higher frequency) responses decay earlier. Out of 82 measurements, 48 silence-case curves are from 18 animals and 34 sound-case curves are from 13 animals. (H) Mean responses of sound and silence cases at similar locations (CF = 4.5\u20136.5 kHz); n = 19 for Silence, and n = 13 for Sound. (I) Effect time versus CF location. The shaded frequency range corresponds to the data in (H). The broken curve (\u2018Trend\u2019 line) was obtained by fitting a curve to the silence data using 1D diffusion theory. (J) Effect time in dB with respect to the trend line. tE in dB = 20log10(tE/tTrend). (K) Two-tailed t-tests between the effect times of sound and silence cases for the entire CF range (whole, n = 48, 34 for silence and sound), low-CF locations (<4.5 kHz, n = 24, 16 for silence and sound), and high-CF locations (>4.5 kHz, n = 24, 18 for silence and sound). Throughout this article, the symbols and range bars indicate the mean and the 95% CI, respectively. When an individual data set was presented as an example, the subject identities are indicated as G###, where ### is a three-digit number.\n\nTo compare the effect times of the sound and silence cases despite varying delivery distances, the effect time was normalized by the trend values at respective CF locations and represented in dB (tE in dB = 20log10(tE/tTrend), Figure 1J). Average tE over the entire CF range was significantly faster for the sound protocol than for the silent case (p=0.0045). Subsequent analyses of low- (<4.5 kHz) and mid-frequency (>4.5 kHz) regions further showed that broadband sound exposure increased the speed of drug delivery in the mid-CF region (>4.5 kHz, p<0.001) but not the low-CF region (<4.5 kHz, = 0.55; Figure 1K).\n\n### Outer-hair-cell motility was required for the sound effect\n\nMotile outer hair cells boost cochlear responses to sounds. If the sound effect on cochlear drug delivery depends on fluid agitation from outer-hair-cell motility, inhibiting the motility should produce effect times similar to the silent condition. To test this hypothesis, before delivering kainic acid, salicylic acid was administered intraperitoneally (200 mg/kg) to inhibit outer-hair-cell motility (Figure 2A). DPOAEs were recorded before and after the salicylic acid application to confirm its effect (Figure 2B and E). After salicylate injection, neural responses decayed for 20\u201330 min to reach a steady state (Figure 2C and F). Because the salicylate effect raised the hearing threshold, the probe-tone level was increased by 15\u201320 dB prior to kainic acid application (typically from 30 to 50 dB SPL; the discontinuity in the response curve near 70 min was due to this increase in the probe tone level). The red-dashed vertical lines of Figure 2C and F indicate the timing of kainic acid application. Figure 2D and G present only the kainic acid application responses (the time span after the dashed vertical lines in panels B and E). Note that 75 dB SPL broadband sounds were played in the post-SA protocol. The two examples in Figure 2B\u2013G also demonstrate the variance of the salicylate effect. In one case, DPOAEs decreased by <10 dB (re: 40 dB stimulation) and the neural responses to 30 dB SPL sound decreased by 40% (Figure 2C). In the other case, DPOAEs decreased by approximately 20 dB, and the neural responses to 30 dB SPL sound decreased to the noise floor (Figure 2F). For the post-SA protocol, we acquired 24 data points from eight animals. The post-kainate response decay of salicylate-treated ears followed the trend of the silence case despite use of the sound protocol (Figure 2H). Despite the sound stimulation, the effect time of the post-SA case was not different from the silence case (p=0.096) and was greater than the sound case (p<0.001, Figure 2J). Like the silence versus sound protocols comparison, the statistical difference was from the mid-CF locations, not from low-CF locations (Figure 2J). The post-SA results support the hypothesis that outer-hair-cell motility is required for faster inner-ear drug delivery with sound exposure.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/101943/elife-101943-fig2-v1.jpg)\n\n**Figure 2.:** (A) Under the \u2018post-SA\u2019 protocol, salicylic acid (SA, 200 mg/kg) was administered IP before applying kainic acid (KA) at the round window. Broadband noise at 75 dB sound pressure level (SPL) was played during experiments. (B) Distortion product otoacoustic emissions (DPOAEs) before and after SA and KA delivery. (C) Overall response curves. IP SA was administered at t = 0. The red vertical line indicates when KA was applied to the round window. The arrows indicate the application spans of SA and KA. (D) Normalized neural responses after kainic acid application (the curves after the red line in B). (E\u2013G) Another example of the post-SA protocol. (H) Effect time versus CF location of post-SA measurements (n = 22 from eight animals). The silence-case trend line is the same as Figure 1. (I) The effect time in dB with respect to the trend line. (J) Two-tailed t-tests between the effect times of sound, silence, and post-SA cases for the entire CF range (whole), low-CF locations (<4.5 kHz, n = 12 for the post-SA case), and high-CF locations (>4.5 kHz, n = 10 for the post-SA case).\n\n### Low-frequency tones were more effective\n\nIf the sound effect on cochlear drug delivery were due to fluid agitation, other sounds might be more effective than random noise. Vibrations along the cochlear partition propagate with decaying phase velocity toward the apex, before stalling shortly after reaching the sound\u2019s CF location. The advective flow of the cochlear fluid is shaped by the vibration frequency and amplitude and by the phase velocity of traveling waves (Lighthill, 1992; Shokrian et al., 2020). To test the hypothesis that the type of sound stimulus impacts the effectiveness of drug delivery, especially in low-frequency regions, pure-tones at 80 dB SPL were played during inner-ear drug delivery, instead of broadband noise. In choosing the frequency of the pure tone, we considered the nature of cochlear traveling waves, guided by fluid-dynamics simulations (Zhou and Nam, 2019; Shokrian et al., 2020). The frequency of 0.5 kHz was chosen close to the low bound of the gerbil\u2019s audible frequency range. The mid-frequency was selected from between 3 and 6 kHz to match the CF location of one of the electrode probes. High frequencies were not tested because they would not affect drug delivery to the apex of the cochlea (i.e., the traveling waves stop near the CF location.) If the sound facilitation were most prominent near the peak of traveling waves, the low-frequency tone would be inefficient in facilitating drug delivery to high- to mid-CF locations. Whereas, if the phase velocity were crucial for fluid agitation, the low-frequency sound should be advantageous because of its long tail region with high phase velocity. If the traveling wave pattern set the cochlear fluid flow, the sound-facilitation effect could stall at one location, similar to the traveling waves.\n\nWith the pure-tone protocol, 45 data points were acquired from 15 gerbils. In two example cases, the effect time at low-CF locations (CFs near 2 kHz) was 15 min for the case of the 0.5 kHz tone (Figure 3A) and 100 min for the 3.5 kHz tone (Figure 3B). In the mid-CF locations, the effect time did not differ for different tone frequencies: the effect time ranged between 8 and 12 min for CF locations between 5.9 and 6.3 kHz (red curves of Figure 3A and B). In some cases, especially toward the low-CF locations, the response curve had bimodal decay patterns (e.g., the cyan curve in Figure 3B), resulting in a broader distribution in the effect time. The overall plots of effect time versus location (Figure 3C and D) show that most data points are below the trend line of the control (silence) case. That is, the pure-tone stimulation facilitated the delivery throughout the cochlea. According to the statistical analysis of effect time differences between the silence and the pure-tone protocols (Figure 3E), low-frequency tones facilitated the drug delivery for both low- (p<0.001) and mid-CF locations (p=0.011). Mid-frequency tones facilitated for mid-CF locations (p<0.001) but not significantly for low-CF locations (p=0.084). Low-frequency tones were more effective than broadband noise especially at the apical low-CF locations (Figure 3F, p<0.0005 for all CF locations, p<0.00001 for apical locations with CF <4.5 kHz).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/101943/elife-101943-fig3-v1.jpg)\n\n**Figure 3.:** (A) Drug delivery during presentation of a tone at low-frequency (0.5 kHz 80 dB sound pressure level [SPL]) or (B) mid-frequency (3.5 kHz 80 dB SPL). (C) Effect time of drug delivery under the low- and mid-frequency tones. The trendline of the silence case is the same as Figure 1I. n = 18 from six animals for LF tone. n = 22 from eight animals for MF tone. (D) Normalized effect time. (E) Statistical comparison between the three cases (silence, low-, and mid-frequency-tone protocols). The two-tailed t-tests were performed on all CF locations, low-CF (<4.5 kHz, n = 12, 9 for MF- and LF-tone), and high-CF (>4.5 kHz, n = 10, 8 for MF- and LF-tone) locations. (F) Normalized effect time under three sound conditions compared: broadband noise, mid-frequency tone, and low-frequency-tone.\n\nFigure 4 summarizes our findings for all four cases\u2013control (delivery in silence, Figure 4A and B), sound (broadband noise at 60 or 75 dB SPL, Figure 4C and D), post-SA sound (SA applied intraperitoneally [IP] or to the round window 30\u201340 min before kainic acid application, broadband noise at 75 dB SPL, Figure 4E and F), and pure-tone sound (either 0.5 kHz or 3\u20136 kHz at 80 dB SPL, Figure 4G and H). The broken trend lines shown in all panels are the same, obtained by a curve fit to the control (silence) data using the 1D diffusion equation. Broadband sounds decreased the effect time in the mid-CF locations (CF > 4.5 kHz) but had little effect in the low-CF locations (CF < 4.5 kHz, Figure 4C and D). While measurements at two levels (60 and 75 dB SPL) were pooled in Figure 1, they are distinguished in Figure 4C and D. Although the mean effect time of the 75 dB SPL data was smaller than for 60 dB SPL in the mid-CF region, supporting the sound-facilitation hypothesis, a larger sample number will be required to confirm the effect of sound level. The sound effect disappeared after inhibiting outer-hair-cell motility with salicylate (Figure 4E and F). In Figure 2, only IP-administered data of the post-SA case are presented. Figure 4E and F include additional data on the local (round window) application of salicylate before applying a solution containing 10 mM kainic acid and 100 mM salicylic acid. While the local delivery case reduced the mean effect time in the mid-CF region, the effect times of both post-SA cases were not significantly different from the control case. For the mid-CF region, the difference in mean effect time between the two post-SA cases was ascribed to the incomplete inhibition of outer hair cells in the local delivery case. The most prominent effect was observed when the drug was delivered while playing a low-frequency tone. For instance, 17 out of 18 effect times for the LF-tone case (red square symbols, Figure 4G and H) were below the trend line of the control (silence) case.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/101943/elife-101943-fig4-v1.jpg)\n\n**Figure 4.:** Summary of the effects of different acoustic and physiological conditions on inner-ear drug delivery. The y-axes represent absolute effect time in minutes (top) and relative effect time in dB w.r.t the trend line (bottom). The same trend line (broken lines, obtained from the control case) is presented for all panels. (A, B) Effect time in silence. (C, D) Effect time under 60 or 75 dB sound pressure level (SPL) broadband (0.1\u201312 kHz) sounds. (E, F) Effect time when outer-hair-cell motility was suppressed by salicylate. Before kainic acid application, the salicylic acid solution was administered systemically (intraperitoneally [IP], 200 mg/kg) or locally (round window [RW], 10 mM). (G, H) Effect time under 80 dB SPL pure tones. A 0.5 kHz (low-frequency [LF]) or 3\u20136 kHz (mid-frequency [MF]) tone was presented during drug delivery. The mid-frequency tone was chosen to match one of the probe frequencies.\n\nThe mechanism of sound facilitation for drug delivery was investigated with computer model simulations. Our computer model is distinguished from most cochlear mechanics models in three aspects. First, it incorporates the interactions between the Corti fluid and OoC structures. Second, the nonlinear advection term in the Navier\u2013Stokes equation was not neglected. Finally, both diffusion and fluid advection were considered. Our simulated results support the hypothesis that the cross-sectional area change of the OoC performs like a peristaltic pump (i.e., active outer hair cells are the fluid pumps) (Shokrian et al., 2020). Figure 5 shows half of the cochlear fluid space\u2014the scala tympani and the OoC fluid spaces (omitting the scala media and scala vestibuli). We simulated two cases: in the silence case, the drug delivery was purely governed by diffusion (Figure 5A). In the LF-tone case, both diffusive and advective mass transports contributed (Figure 5B\u2013D). For the LF-tone case, a 1 kHz tone at 80 dB SPL sound was played continuously. The contours in Figure 5A and B represent the concentration of the substance at 30 min after the onset of delivery. As expected from Fick\u2019s law and the log-scale plots of Figure 4, the gradient over distance decays logarithmically. That is, contour lines in Figure 5A have similar spacings in the log scale. However, such a logarithmic gradient was apparently disturbed between the 0.1 and 0.01 mM contour lines in Figure 5B. The contour line is stretched toward the right (red double-headed arrow) in the top Corti fluid layer and to the left (blue arrow) in the bottom scala fluid layer. This stretched contour line was due to the advective flow. In Figure 5C and D, the contour lines represent the streamlines (i.e., particles would drift along the contour lines). The red and blue colors indicate clockwise and counterclockwise circulation, respectively. Figure 5D presents the fluid streaming near the peak of the traveling wave (6\u20139.5 mm from the base, Corti fluid and top 120-\u00b5m-thick scala fluid). The maximum streaming velocity is as substantial as a few mm/s. Our simulation shows that active outer hair cells generate a strong stream toward the apex along the tunnel of Corti. The displaced fluid in the apex flows toward the base along the bottom of the scala tympani. The strong advection takes place in the tail of the traveling wave, over a few mm.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/101943/elife-101943-fig5-v1.jpg)\n\n**Figure 5.:** Inner-ear drug delivery was simulated using a computational model. (A) Drug delivery due to diffusion. The concentration profile over the cochlear length at 30 min after drug application to the round window. (B) Drug delivery with 80 dB sound pressure level (SPL), 1 kHz sound. The black contour line demonstrates how advection affects drug delivery. (C) Steady-state drift flow of the cochlear fluids. Red and blue curves represent the clockwise and counterclockwise streamlines. (D) The region with the fastest advection. The drift velocity (green color contour) is as large as a few mm/s.\n\n## Discussion\n\nWe showed that sound exposure increases drug delivery from the round window to apical cochlear locations. Sound-facilitated drug delivery was compromised when outer-hair-cell motility was inhibited. Low-frequency tones were more effective than broadband noise in delivering substances to the apex of the cochlea. These results not only highlight new strategies for improving drug delivery throughout the cochlear spiral, but reveal a new function of outer hair cells, beyond sound amplification.\n\nNeural responses near CF are amplified, showing enhanced tuning. In contrast, outer hair cells boost the vibrations in the OoC non-selectively (Cooper et al., 2018; He et al., 2018; Fallah et al., 2019). To reconcile the nonselective input (untuned OoC vibrations) and the selective output (tuned neural signals), previous studies suggest that outer hair cells accumulate their power along cochlear traveling waves, referred to as global amplification (Zagadou and Mountain, 2012; He et al., 2022). However, experimental evidence is incongruent with the global amplification theory (Fisher et al., 2012; Versteegh and van der Heijden, 2013; Dewey et al., 2019). According to the two-tone suppression experiment of Dewey et al., 2019, the suppression of outer hair cells far basal from the CF location does not affect the response at the CF location. Available evidence shows that the amplification due to outer-hair-cell action occurs between a location one half-octave basal to the peak and the peak location (Dong and Olson, 2013; Fallah et al., 2019). The present study provides new insights into the nonselective outer hair cell action.\n\nBroadband action of outer hair cells helps cochlear-fluid circulation. Our pure-tone experiments (Figure 3) and simulation (Figure 5) show that the region of sound-facilitated drug delivery spanned regions far basal to the CF location of a given sound frequency. Such sound facilitation disappeared when outer-hair-cell motility was suppressed (Figure 2), which implied that active outer hair cells are the stirrers in the cochlea that drive lymphatic-fluid circulation. From an evolutionary perspective, mammals stretched their hearing organ to encode broader bandwidth with good frequency resolution. The longer cochlea might have entailed a challenge: maintaining the freshness of the stationary lymph along a long and narrow tube is nontrivial. For instance, a local failure in homeostasis could cascade along the cochlea, making the system vulnerable to disturbance or trauma. The OoC in the basal cochlea suffers from a maintenance burden: a greater influx of potassium (greater MET current) and a smaller clearance surface. We hypothesize that the longitudinal circulation of lymphatic fluid serves as a protective mechanism for the fluid homeostasis of the mammalian cochlea. One potential implication is that an acoustically rich environment could be beneficial in maintaining healthy hearing as well as recovering from damaged hearing.\n\nOur study complements existing studies regarding cochlear fluid homeostasis and differs from previous studies in several ways. The intrastrial fluids (extracellular fluids in the stria vascularis) have been more thoroughly investigated because the three layers in the stria vascularis (marginal, intermediate, and basal cells) maintain the endocochlear potential (Wangemann, 2006). Equilibrium in the Corti fluid has been sparsely investigated because its electrochemical gradient is modest compared to that of the intrastrial fluids (Johnstone et al., 1989; Zidanic and Brownell, 1990). Local electrochemical balance in the cochlear fluids has been considered within a radial section (Quraishi and Raphael, 2008; Patuzzi, 2011; Nin et al., 2012). Our study is focused on the longitudinal (global) equilibrium along the cochlear coil and did not consider the equilibrium across the stria vascularis cell layers. To examine whether the longitudinal fluid flow driven by outer hair cells is strong enough to affect cochlear fluid homeostasis, future studies should measure the K+ equilibrium and recycling along the length of the Corti fluid under sound and silence conditions.\n\nThe nature of the streaming pattern supports the feasibility of targeted inner-ear drug delivery. Two characteristics implicated in the pure-tone experiments (Figure 3) became apparent in the model simulations (Figure 5): the advection caused by active outer hair cells created a \u2018fast track\u2019 and a \u2018stalling point\u2019 for mass transport. For instance, the span between locations 5.5 and 9 mm is the fast track of mass transport (the arrows of concentration contours in Figure 5B and the clockwise advective flow in Figure 5C). In this fast track, the distance between contour lines is much larger than the other regions or the pure diffusion case. The contour line in the fast track (black curve, Figure 5B) is stretched toward the apex in and near the Corti fluid and toward the base at the bottom of the scala tympani, indicating longitudinal fluid circulation. In contrast to the fast-track region, there was a stalling point where the transport stopped. The stacking contours near 10 mm in Figure 5B are caused by the countering circulation loops at 9 mm in Figure 5C. Taking advantage of these \u2018fast tracks\u2019 and \u2018stalling points\u2019, one could design a sequence of sounds to deliver a substance from the round window to a targeted location in the cochlea.\n\nFurther work is needed before our findings can be used to address practical problems. Although we showed that low-frequency tone is superior to a high-frequency tone or a broadband sound in facilitating inner-ear drug delivery, we have not identified the optimal delivery scheme. While the gerbil cochlea is a better model to study longitudinal mass transport compared to the shorter mouse cochlea (12 mm versus 6 mm), substantial extrapolation is inevitable to predict drug delivery in the 34-mm-long human cochlea out of the present results. Extensive experiments would be needed to examine different SPLs at different frequencies and their combinations in a longer cochlea. Guidance from reliable theoretical models will help to design more efficient experiments and to interpret measured data more rigorously. Our present computer model incorporated the nonlinearity in advection-diffusion dynamics but did not implement the compressive nonlinearity of the sensitive cochlea. To analyze cochlear mass transport under stimulation by complex sounds, a model must address a long list of physical and physiological problems: deformable OoC, Corti fluid dynamics, nonlinear hair cell mechano-transduction, outer-hair-cell motility, permeable basilar membrane, nonlinear fluid dynamics including advection, diffusion solved simultaneously with advection, and the electrochemical equilibrium across the OoC. Our present model includes the essential components of these, but some are extensively simplified (e.g., outer-hair-cell motility, basilar membrane permeability), and some are absent (e.g., hair-cell nonlinearity, electrochemical equilibrium). Fortunately, there are other theoretical models that represent these aspects of cochlear physics and physiology that are lacking in our present study.\n\n## Materials and methods\n\n### Experimental approach\n\n#### Animal preparation\n\nSixty-four Mongolian gerbils (Meriones unguiculatus, 25 males and 39 females, Charles River Laboratories) of 2\u20133 months of age were used in the study. All experimental procedures were in accordance with NIH guidelines and approved by the University of Rochester Animal Care and Use Committee (protocol # 101066). Animals were anesthetized with an IP injection of ketamine (140 mg/kg) and xylazine (6 mg/kg) and placed on a closed-loop heating pad to maintain body temperature at 37 \u00b1 0.5\u00b0C. Ketamine and xylazine were then administered continuously through a subcutaneous catheter at a baseline rate of 85 and 3.5 mg/kg/hr, respectively, and adjusted as needed to maintain an areflexic state. Supplemental IP injections of ketamine and xylazine were occasionally administered as required. A tracheotomy and intubation ensured an open airway. Breathing rate was monitored using a thermistor placed in front of the trach tube. The right pinna was removed, and the bulla was exposed. A hole made in the dorsal and caudal bulla allowed access to the temporal bone and round window. After securing the skull using dental acrylic, customized headpost and ear bars, and a stereotaxic frame (Kopf Instruments, Model 900), a craniotomy was made in the temporal bone for electrode penetration through the dura to the AVCN (for details, Frisina et al., 1982). The head was oriented with the nose pitching downward at 45\u00b0 so that the round window niche faced upward to better contain the pharmaceutical solution.\n\n#### Drugs used\n\nPharmacological agents included the kainic receptor agonist kainic acid (Abcam and Tocris) and sodium salicylate (Sigma-Aldrich). A 10 mM kainic acid solution (volume of 4 \u00b5L) was applied at intact round window niche. The kainic acid solution was prepared in Hank\u2019s balanced salt solution (HBSS, Sigma-Aldrich). No discernible effects of different solvents on the AVCN responses were observed (data not shown). Sodium salicylate was dissolved in HBSS for local round window delivery at a concentration of 100 mM (volume of 4 \u00b5L) or dissolved in saline for IP injection at a dose of 200 mg/kg (volume of 0.3 mL).\n\n#### Measurement protocol\n\nAll experiments were performed in a soundproof chamber. A pair of speakers and a microphone (ER-2 and ER-10, Etymotic) were plugged and sealed into the ear canals through a coupler. The SPL in the ear canal was calibrated between 0.1 and 16 kHz. A reference electrode was inserted into the muscles of the back of the neck. A multichannel electrode (Q1x4-10mm-100-177-EIB, Neuronexus or ASSY-37 Fb Acute 32 channel, Cambridge Neurotech) was advanced 2\u20133 mm into the AVCN using a hydraulic microdrive (Model 640, Kopf Instruments), with a rostro-caudal angle between 60 and 65\u00b0 and lateral angle between 40 and 50\u00b0 with respect to the interaural line. The CFs of the four multiunit channels were identified using tones. Typically, three channels were identified showing well-defined frequency tuning and distinct CFs (Figure 1A and D). Neural responses were amplified and bandpass filtered between 0.75 and 10 kHz, then sampled (National Instruments PCIe-6251, 50 kHz or Intan RHD 2000, 30 kHz) for storage on a computer hard drive. Neural recordings were transformed with a Teager energy operator to enhance spiking activity (Choi et al., 2006), and the average value of the Teager-transformed response waveform was taken as a measure of the neural response amplitude. Typical time courses of neural signals are shown in Figure 1C and F (kainic acid was administered at t = 0). Experiments lasted between 1 and 3 hr.\n\nDrug solutions were applied either at the intact round window niche using a 100 \u03bcL Hamilton syringe or through IP injection. After experiments, it was confirmed that the solution was still contained in the round window niche. While kainic acid diffused into the cochlea, the neural signals from the AVCN were recorded under three acoustical conditions: for the \u2018Sound\u2019 protocol, 1.1 s noise pips (60 or 75 dB SPL, 0.1\u201312 kHz bandwidth, 0.8 s duration including 0.15 s onset/offset ramps) were presented continually. After 48 noise pips, one 1.1 s silent pause and three CF tone pips followed (a total of 51 pips and a pause make a 57.2 s sequence). The CF tone pips were presented at the level of 35 dB SPL to monitor neural responses. The silence pause was to monitor spontaneous neural responses. The sequence was repeated until neural signals at the lowest CF site were completely abolished. The neural responses presented in this study are the \u2018driven responses\u2019 obtained by subtracting the spontaneous responses from the responses to the 35 dB CF tones. For the \u2018Silence\u2019 or \u2018Pure-tone\u2019 protocol, the noise pips of the Sound protocol were replaced with either silence pauses or a pure tone at 80 dB SPL. The pure tone frequency was either 0.5 kHz or a frequency between 3 and 6 kHz matching one of the mid-frequency probe channels. Stimuli were generated in MATLAB (50 kHz sampling frequency), converted to analog (National Instruments PCIe-6251), adjusted to the desired level using analog attenuation (PA5; Tucker Davis Technologies, Alachua, FL), and presented using a headphone buffer amplifier (HB7; Tucker Davis Technologies).\n\n#### Distortion product otoacoustic emissions (DPOAEs)\n\nDPOAEs before and after the kainic acid delivery measurement were used to confirm that outer hair cell function did not change (Figure 1C and F). DPOAEs were recorded in response to swept primary tones, f1 and f2, with f2 increasing linearly from 0.5 to 10 kHz over 4 s, and f2 = 1.25 f1. Primary tones (4.05 s duration including 25 ms raised-cosine on/off ramps, with 300 ms inter-stimulus intervals) were presented from separate earphones with equal sound levels, from 40 to 70 dB in 10 dB steps. DPOAEs were amplified by 40 dB prior to sampling and were averaged across 10 stimulus presentations. DPOAE level at 2f1- f2 was estimated using a least-squares fitting procedure (Long et al., 2008) in MATLAB, based on a 100 ms Hann window shifted in 20 ms steps (Wong et al., 2019). The same analysis was applied to a \u2018null\u2019 response, computed as the difference between average even and odd-numbered stimulus presentations, to determine the noise floor.\n\n### Modeling approach\n\nCochlear fluid dynamics were divided into three sequential stages. Different assumptions were used in each stage to represent the relevant physics appropriately and to make the computational analyses affordable. First, OoC vibration due to sound stimulation was estimated by solving fluid\u2013structure interactions between scala fluids, the Corti fluid (extracellular fluid in the OoC) and the OoC. The active feedback from outer-hair-cell motility was incorporated into OoC mechanics. Second, the drift velocity of the fluids in the OoC and the scala tympani in response to OoC vibrations was computed. Drift velocity originates from the nonlinear convective term in the governing equations for the incompressible flow (Shokrian et al., 2020). The spatial resolution required to evaluate the drift velocity made this stage computationally costly. Unlike the first stage, the advective component of fluid motion was incorporated. The OoC vibrations obtained at the first stage were given as kinematic boundary conditions in this second stage. The fluid motion within the OoC, as well as in the scala tympani, was computed. Third, the spatiotemporal pattern of substance concentration due to advection and diffusion was obtained. The drift velocity field obtained in the second stage was the input for this third stage. The first and second stages were simulated using custom-written MATLAB programs, while the third stage was solved using commercially available software (COMSOL multiphysics).\n\n#### OoC vibrations\n\nThe OoC complex structures were discretized into 3-D finite elements reflecting anatomical details. For instance, each hair bundle, hair cell, Deiters cell, or pillar cell was represented by a fully deformable beam. The tectorial and basilar membranes were presented by a meshwork of beams. Their mechanical properties were determined either by using known values or by comparing them with existing mechanical measurements (Nam and Fettiplace, 2010; Liu et al., 2017; Marnell et al., 2018). Mechano-transduction kinetics of hair bundle and outer-hair-cell electromotility were incorporated with the OoC finite-element model (Nam and Fettiplace, 2012; Nam, 2014). The scala-fluid domain was discretized into linear quadrilateral elements. The scala-fluid pressure was determined by two vibrating boundaries\u2014one is the oval window, and the other is the OoC complex. In turn, the OoC structures vibrate due to differential pressure across the OoC.\n\n#### Drift velocity of fluids\n\nFrom the round window to the inner hair cell, kainic acid molecules travel (drift) across two fluid spaces separated by the basilar membrane: (1) the Corti fluid and (2) the scala-tympani fluid. The Corti fluid includes the fluid in the tunnel of Corti, Nuel\u2019s space, gaps between outer hair cells, and the outer tunnel. These sub-spaces are interconnected to one another by a few micrometer gaps. For simplicity, the 3-D fluid spaces were reduced to 2-D after reducing the radial dimension. The top boundary of the 2-D Corti fluid was modeled as a deforming wall while the bottom surface shared with scala tympani was implemented as a permeable boundary representing the basilar membrane. The OoC deformation was represented by the relative motion between the top and bottom surfaces of the Corti fluid. The pressure ($p$) and velocity ($u$) of the incompressible fluid were determined by the Navier\u2013Stokes and continuity equations.\n\n$$\n\\frac{\u2202u}{\u2202t}+u\u22c5\u2207u=\u2212\\frac{1}{\u03c1}\u2207p+\u03bd\u2207^{2}u\n$$\n\n\n\n$$\n\u2207\u22c5u=0,\n$$\n\nwhere $\u03bd$ and $\u03bd$ are the kinematic viscosity (70 \u00d7 10\u20136 m2/s) and density (1 g/cm3). Note that this viscosity value is a hundred times the value of the water after Prodanovic et al., 2019. The second term in Equation 1 representing advection renders this equation nonlinear. This term has been neglected in cochlear mechanics studies because it hardly contributes to forming the cochlear traveling waves. However, for the purpose of this work (to investigate cochlear mass transport due to advection), this term had to be incorporated despite the increased computational cost. The basilar membrane was considered to have finite permeability using Darcy\u2019s law. The fluid velocity passing through the basilar membrane ($u_{p}$) is proportional to the transmembrane pressure difference ($\u0394p$), or\n\n$$\nu_{p}=\u2212K\u0394p.\n$$\n\nThe value of the permeability coefficient, $K$, of 1 $m/(sPa)$ was empirically determined so that the Corti-fluid pressure level was not excessive (less than a few Pa). Preliminary simulation results showed that drift velocities were not sensitive to the chosen value of $K$, even over an order of magnitude from the chosen value. Because of the basilar membrane\u2019s permeability, in general, the fluid velocity just above or below the basilar membrane ($u_{f}$) is different from the basilar membrane velocity ($u_{m}$) by $u_{p}$, or\n\n$$\nu_{f}=u_{m}+u_{p}.\n$$\n\nWhen periodic stimulation was applied, the resulting fluid motion was also periodic. Albeit much smaller than oscillatory motion, there existed nonperiodic fluid motion that made fluid particles drift over time. When fluid motion is integrated over a period, $T$, the oscillatory component cancels out, leaving only drift. The drift velocity $u_{D}$ at position $x_{p}$ and time $t+0.5T$ was computed as\n\n$$\nu_{D}(x_{p},t+0.5T)=\\frac{1}{T}\\int_{t}^{t+T}u_{E}(x_{p},\\tau)d\\tau,\n$$\n\nwhere $u_{E}$ is the Eulerian velocity obtained as a solution of the Navier\u2013Stokes equations.\n\n#### Diffusion\n\nMass transport is governed by the advection-diffusion equation.\n\n$$\n\\frac{\u2202C}{\u2202t}=D\u2207^{2}C\u2212u_{D}\u22c5\u2207C,\n$$\n\nwhere $C$ is the concentration of the transported substance and $D$ is the diffusion coefficient. The whole fluid domain is impermeable (or $\u2202C/\u2202n=0$, $n$ is the vector normal to the surface) except for the round window and the basilar membrane. At the round window, the concentration level was constant at 10 mM. The effect time at a specific location was defined as the time to reach 1% of the round window concentration (100 \u00b5M).\n\n#### Computation\n\nThe mesh for the fluid dynamics model (the first stage, Equations 1 and 2) consisted of approximately 25,000 second-order quadrilateral elements with the same degrees of freedom for both velocity and pressure. The grid size of the mesh was determined considering the boundary layer thickness of $(\u03bd/\\omega)^{0.5}$, where $\\omega$ was the highest frequency component of stimulation. The time integration was carried out using the second-order Crank\u2013Nicolson method. The least-squares finite element approach was used with a reduced-order integration to ensure stability. The time-step size was 10 \u00b5s, and the problem was solved in the time domain for 5 ms (sufficient time to reach a periodical steady state). This time length was long enough to arrive at the periodic steady state. The mesh resolution for diffusion analysis was approximately 1 \u00b5m, resulting in about 225,000 first-order triangular elements. The initial time step was equal to the period of the stimulating frequency (1 ms) and was increased adaptively based on the convergence rate.\n",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Catherine Emily Carr, University of Maryland United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.101943.4.sa0](https://doi.org/10.7554/eLife.101943.4.sa0)\n\nAlthough others have proposed that OHC electromotility subserves cochlear amplification by acting as a \u2018fluid pump\u2019, and evidence for this has been found using electrical stimulation of excised cochleae, this fundamental study substantially advances our understanding of cochlear homeostasis. This is the first report to test the pumping effect in vivo and consider its implications for cochlear homeostasis and drug delivery. The manuscript provides compelling evidence for OHC-based fluid flow within the cochlea.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101943.4.sa1](https://doi.org/10.7554/eLife.101943.4.sa1)\n\nSummary:\n\nThe authors test the \"OHC-fluid-pump\" hypothesis by assaying the rates of kainic acid dispersal both in quiet and in cochleae stimulated by sounds of different levels and spectral content. The main result is that sound (and thus, presumably, OHC contractions and expansions) result in faster transport along the duct. OHC involvement is corroborated using salicylate, which yielded results similar to silence. Especially interesting is the fact that some stimuli (e.g., tones) seem to provide better/faster pumping than others (e.g., noise), ostensibly due to the phase profile of the resulting cochlear traveling-wave response.\n\nStrengths:\n\nThe experiments appear well controlled and the results are novel and interesting. Some elegant cochlear modeling that includes coupling between the organ of Corti and the surrounding fluid as well as advective flow supports the proposed mechanism.\n\nThe current limitations and future directions of the study, including possible experimental tests, extensions of the modeling work, and practical applications to drug delivery, are thoughtfully discussed.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101943.4.sa2](https://doi.org/10.7554/eLife.101943.4.sa2)\n\nAlthough recent cochlear micromechanical measurements in living animals have shown that outer hair cells drive broadband vibration of the reticular lamina, the role of this vibration in cochlear fluid circulation remains unclear. The authors hypothesized that motile outer hair cells facilitate cochlear fluid circulation. To test this, they investigated the effects of acoustic stimuli and salicylate on kainic acid-induced changes in the cochlear nucleus activities. The results reveal that low-frequency tones accelerate the effect of kainic acid, while salicylate reduces the impact of acoustic stimuli, indicating that outer hair cells actively drive cochlear fluid circulation.\n\nThe major strengths of this study lie in its high significance and the synergistic use of both electrophysiological recording and computational modeling. Recent in vivo observations of the broadband reticular lamina vibration challenge the traditional view of frequency-specific cochlear amplification. Furthermore, there is currently no effective noninvasive method to deliver the drugs or genes to the cochlea. This study addresses these important questions by observing outer hair cells' roles in the cochlear transport of kainic acid. The author utilized a well-established electrophysiological method to produce valuable new data and a custom-developed computational model to enhanced the interpretation of their experimental results.\n\nThe authors successfully validated their hypothesis, showing through the experimental and modeling results that active outer hair cells enhance cochlear fluid circulation in the living cochlea.\n\nThese findings have significant implications for advancing our understanding of cochlear amplification and offer promising clinical applications for treating hearing loss by accelerating cochlear drug delivery.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.101943.4.sa3](https://doi.org/10.7554/eLife.101943.4.sa3)\n\nSummary:\n\nThis study reveals that sound exposure enhances drug delivery to the cochlea through the non-selective action of outer hair cells. The efficiency of sound-facilitated drug delivery is reduced when outer hair cell motility is inhibited. Additionally, low-frequency tones were found to be more effective than broadband noise for targeting substances to the cochlear apex. Computational model simulations support these findings.\n\nStrengths:\n\nThe study provides compelling evidence that the broad action of outer hair cells is crucial for cochlear fluid circulation, offering a novel perspective on their function beyond frequency-selective amplification. Furthermore, these results could offer potential strategies for targeting and optimizing drug delivery throughout the cochlear spiral.\n",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "432a2606-0439-45ac-a525-094491f1b375",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C1",
+      "claim": "An electrochemical potential difference between perilymph and endolymph drives hair-cell mechano-transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "An electrochemical potential difference between the two lymphatic fluids drives hair-cell mechano-transduction (Fettiplace and Kim, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Fettiplace and Kim, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "d79d83e2-01c0-4b73-a53a-765dab9af71a",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C2",
+      "claim": "Inner-ear fluid is virtually isolated from other body-fluid systems despite connections to cerebrospinal fluid and vascular system.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the inner-ear fluid system is connected to the cerebrospinal fluid of the brain through the cochlear and vestibular aqueducts and to the vascular system across the blood\u2013labyrinth barrier, inner-ear fluid is virtually isolated from other body-fluid systems (Salt et al., 1986; Ohyama et al., 1988).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Salt et al., 1986 and Ohyama et al., 1988",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "cb250a90-6acf-4557-8098-d9152eecbce4",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C3",
+      "claim": "Intervening in hearing health by delivering substances to the inner-ear fluid through systemic circulation is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, intervening in hearing health by delivering substances to the inner-ear fluid through the systemic circulation is challenging.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from the isolation of inner-ear fluid from other body-fluid systems",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "43631ceb-b410-4432-8d13-a3dcc9f3f191",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C4",
+      "claim": "Maintenance of inner-ear fluid composition is achieved locally by secretion and absorption of ions and molecules through inner-ear epithelial cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The maintenance of inner-ear fluid composition is achieved locally by the secretion and absorption of ions and molecules through inner-ear epithelial cells (Wangemann and Marcus, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wangemann and Marcus, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "4cdae43b-dfd7-4b61-bb38-7fc3fda40ce6",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C5",
+      "claim": "Longitudinal electro-chemical gradients, including the endocochlear potential, may vary along the cochlear length.",
+      "claim_type": "EXPLICIT",
+      "source": "As inner-ear fluid homeostasis is maintained locally, longitudinal electro-chemical gradients, including the endocochlear potential, may vary along the cochlear length (Schulte and Schmiedt, 1992; Sadanaga and Morimitsu, 1995; Hirose and Liberman, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schulte and Schmiedt, 1992; Sadanaga and Morimitsu, 1995; Hirose and Liberman, 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "89a8d6e6-8905-4a99-b5af-9775ef7ac6b7",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C6",
+      "claim": "Inner-ear fluid has been reported to be stationary, unlike other lymphatic fluids in the body.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner-ear fluid has been reported to be stationary, unlike other lymphatic fluids in the body (Salt and Hirose, 2018a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Salt and Hirose, 2018a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "bc382010-c0b1-4a35-95df-1e01e31bf412",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C7",
+      "claim": "Substance transport in the inner-ear fluid is governed by diffusion.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is considered that substance transport in the inner-ear fluid is governed by diffusion (Salt and Plontke, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Salt and Plontke, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "2089db64-2848-4e3d-b5ce-688cabc4893c",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C8",
+      "claim": "Diffusion is an effective mechanism for a substance to travel along sub-micrometer distances.",
+      "claim_type": "EXPLICIT",
+      "source": "Diffusion is an effective mechanism for a substance to travel along sub-micrometer distances (Berg, 1993).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Berg, 1993",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "a215cf63-a4ed-49c0-b278-44fb5e1ed94f",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C9",
+      "claim": "It takes microseconds for neurotransmitters to diffuse across a 20 nm synaptic gap.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, considering the diffusion speed of small molecules in water, it takes microseconds for neurotransmitters to diffuse across a 20 nm synaptic gap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of diffusion physics and synaptic dimensions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "0b8ef87b-69c7-452c-8355-39c4db5fc495",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C10",
+      "claim": "Diffusion is inefficient for travel on the centimeter scale.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, diffusion is inefficient for travel on the centimeter scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of diffusion physics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "841f119b-396f-49c5-aed0-da5d683ad67d",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C11",
+      "claim": "It takes days for a drug applied at the round window to travel 30 mm to the apical end of the human cochlea.",
+      "claim_type": "EXPLICIT",
+      "source": "It takes days for a drug applied at the round window to travel 30 mm to the apical end of the human cochlea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of diffusion physics applied to cochlear dimensions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "fdb08a05-64f8-49b9-8f8c-942298d960aa",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C12",
+      "claim": "In practice, a substance applied at the round window would not reach the apex because it would be resorbed before traveling this distance.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, the substance would not reach the apex because it would be resorbed before traveling this distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from diffusion physics and resorption processes",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "482f0955-ebd3-42fe-95b8-4f528c45c4fd",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C13",
+      "claim": "Longitudinal mass transport along the inner-ear labyrinth is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Studies on inner-ear drug delivery confirm this principle of physics: longitudinal mass transport along the inner-ear labyrinth is challenging (Salt et al., 2016; Lukashkin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Salt et al., 2016 and Lukashkin et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "0ccb321e-4783-4508-b0af-2af64dfd81d6",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C14",
+      "claim": "The oval and round windows are sites for noninvasive local delivery of substances into the inner ear.",
+      "claim_type": "EXPLICIT",
+      "source": "The two membranous openings of the inner ear, the oval and round windows, are sites for noninvasive local delivery of substances into the inner ear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established anatomical and clinical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "6c4418d6-ca72-4c08-8683-8b3f1e3767c5",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C15",
+      "claim": "Intratympanic injections of antibiotics and anti-inflammatory drugs have been attempted to manage inner-ear disorders despite limited efficacy.",
+      "claim_type": "EXPLICIT",
+      "source": "Intratympanic injections of antibiotics and anti-inflammatory drugs have been attempted to manage inner-ear disorders despite limited efficacy (Lavigne et al., 2016; Salt and Plontke, 2018b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lavigne et al., 2016 and Salt and Plontke, 2018b",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "2b973528-6505-45d6-aa42-e4517bce6cdc",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C16",
+      "claim": "Releasing a substance at the end of a long, closed tube forms a steep gradient of concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Releasing a substance at the end of a long, closed tube forms a steep gradient of concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of diffusion physics",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "3b21cf38-e43f-4567-9211-4160f4bd74e9",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C17",
+      "claim": "A substance released at the end of a long, closed tube does not reach distant regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, the substance does not reach distant regions (Salt and Hirose, 2018a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Salt and Hirose, 2018a",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "13127804-3831-4289-8135-b704485feddc",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C18",
+      "claim": "In the vicinity of drug release, the concentration is much higher than desired.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas, in the vicinity of drug release, the concentration is much higher than desired.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Logical inference from steep concentration gradient",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "30de7816-c80f-40c4-a989-0f4c36a3489a",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C19",
+      "claim": "One remedy for drug delivery is to inject fluid by making two perforations in the inner ear\u2014one for intruding and the other for extruding.",
+      "claim_type": "EXPLICIT",
+      "source": "One remedy is to inject fluid by making two perforations in the inner ear\u2014one for intruding and the other for extruding (Borkholder et al., 2014; Tandon et al., 2016; Talaei et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Borkholder et al., 2014; Tandon et al., 2016; Talaei et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "a11d89b4-a93e-4adf-9fc7-6d64b3e2eb27",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C20",
+      "claim": "The invasive approach of making two perforations is often associated with the injection of a substantial fluid volume, larger than the entire perilymph in the inner ear.",
+      "claim_type": "EXPLICIT",
+      "source": "Such an invasive approach is often associated with the injection of a substantial fluid volume, larger than the entire perilymph in the inner ear (Szeto et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Szeto et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "0c476516-0862-457f-be60-7e1eb8db7d91",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C21",
+      "claim": "The tube-shaped organ of Corti is lined with motile outer hair cells that are activated systematically with a large phase velocity (greater than a few m/s) toward the apex.",
+      "claim_type": "EXPLICIT",
+      "source": "The tube-shaped organ of Corti (OoC) is lined with motile outer hair cells that are activated systematically with a large phase velocity (greater than a few m/s) toward the apex (Olson et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Olson et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "6e20e638-e6df-4a83-a1af-917bf317b0d3",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C22",
+      "claim": "Outer-hair-cell motility can cause oscillatory fluid motion along the triangular fluid channel within the organ of Corti.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous study suggests that outer-hair-cell motility can cause oscillatory fluid motion along the triangular fluid channel within the OoC (Karavitaki and Mountain, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Karavitaki and Mountain, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "735417c8-7cf9-4303-ac1a-fad41c440913",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C23",
+      "claim": "Recent measurements of organ of Corti vibrations provide a possible explanation for how longitudinal fluid flow is generated: outer hair cells operate like an area motor by deforming the organ of Corti cross-sectional area.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent measurements of OoC vibrations provide a possible explanation for how this longitudinal fluid flow is generated: outer hair cells operate like an area motor by deforming the OoC cross-sectional area (Jabeen et al., 2020; Guinan, 2022; Lin et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Jabeen et al., 2020; Guinan, 2022; Lin et al., 2024",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "72f76048-74e8-49c2-93fe-9da03ccdf185",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C24",
+      "claim": "Outer hair cells boost the organ of Corti vibrations over the entire span of the traveling waves.",
+      "claim_type": "EXPLICIT",
+      "source": "Outer hair cells boost the OoC vibrations over the entire span of the traveling waves (Lee et al., 2016; Cooper et al., 2018; He et al., 2018; Fallah et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Lee et al., 2016; Cooper et al., 2018; He et al., 2018; Fallah et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "d75cde0e-7942-4992-8a31-f139894320e4",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C25",
+      "claim": "In theory, peristaltic deformation of the organ of Corti could induce non-oscillatory streaming along the tunnel of Corti.",
+      "claim_type": "EXPLICIT",
+      "source": "In theory, peristaltic deformation of the OoC could induce non-oscillatory streaming along the tunnel of Corti (Shokrian et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Shokrian et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "08d72b1c-3a4e-4634-ba48-b5c169dd6ba3",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C26",
+      "claim": "The peristaltic motion of the organ of Corti has not been explored experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "This peristaltic motion of the OoC has not been explored experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about the state of research",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "3498da2d-e417-4cec-8887-7c4172a45290",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C27",
+      "claim": "Outer hair cells agitated by sounds could induce advection of the cochlear fluids.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that outer hair cells agitated by sounds could induce advection of the cochlear fluids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the hypothesis being tested in the study",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "71bb6042-6d97-4843-8c5f-1363ec1fb329",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C28",
+      "claim": "Kainic acid irreversibly damages afferent synapses with inner hair cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Kainic acid irreversibly damages afferent synapses with inner hair cells (Sun et al., 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sun et al., 2001",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "65a87be1-8df2-472f-9321-b61415b8e78e",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C29",
+      "claim": "Kainic acid does not affect the hair cells, unlike other popular substances used for inner-ear drug-delivery experiments, such as streptomycin and salicylate.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, kainic acid does not affect the hair cells, unlike other popular substances used for inner-ear drug-delivery experiments, such as streptomycin and salicylate (Salt et al., 2016; Lukashkin et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Salt et al., 2016 and Lukashkin et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "30ca61ff-f248-4182-a078-cb024b4bc235",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C30",
+      "claim": "Sounds presented at a modest level significantly expedited kainic acid delivery.",
+      "claim_type": "EXPLICIT",
+      "source": "Sounds presented at a modest level significantly expedited kainic acid delivery.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "7e908485-56be-4287-a622-4cacbfc8fffd",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C31",
+      "claim": "When outer-hair-cell motility was suppressed by salicylate, the facilitation effect was compromised.",
+      "claim_type": "EXPLICIT",
+      "source": "When outer-hair-cell motility was suppressed by salicylate, the facilitation effect was compromised.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "962e4a55-4c94-4e4c-b942-4205d3e0ad59",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C32",
+      "claim": "A low-frequency tone was more effective than broadband noise, especially for drug delivery to apical locations.",
+      "claim_type": "EXPLICIT",
+      "source": "A low-frequency tone was more effective than broadband noise, especially for drug delivery to apical locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "e0c2b735-19f4-45b0-9b78-67c2a2c063fa",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C33",
+      "claim": "Active outer hair cells deformed the organ of Corti like a peristaltic tube to generate apically streaming flows along the tunnel of Corti and basally streaming flows along the scala tympani.",
+      "claim_type": "EXPLICIT",
+      "source": "Active outer hair cells deformed the organ of Corti like a peristaltic tube to generate apically streaming flows along the tunnel of Corti and basally streaming flows along the scala tympani.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from computational model simulations presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "1b6c8729-b409-4988-a584-b83955bdc299",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C34",
+      "claim": "Active outer hair cells in the tail region of cochlear traveling waves drive cochlear fluid circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our measurements and simulations coherently suggest that active outer hair cells in the tail region of cochlear traveling waves drive cochlear fluid circulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion drawn from both experimental measurements and computational simulations",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "ad55291c-ce99-42bc-a247-0785b5c75689",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C35",
+      "claim": "The drug effect was tonotopic, with higher CF locations being affected earlier.",
+      "claim_type": "EXPLICIT",
+      "source": "The drug effect was tonotopic, with higher CF locations being affected earlier (Figure 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 1G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "3d9ce11f-7ab9-4ee6-a08f-247982a4333a",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C36",
+      "claim": "Average effect time over the entire CF range was significantly faster for the sound protocol than for the silent case (p=0.0045).",
+      "claim_type": "EXPLICIT",
+      "source": "Average tE over the entire CF range was significantly faster for the sound protocol than for the silent case (p=0.0045).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "d4df8b59-f9f9-4abc-8201-130c3a3b4112",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C37",
+      "claim": "Broadband sound exposure increased the speed of drug delivery in the mid-CF region (>4.5 kHz, p<0.001) but not the low-CF region (<4.5 kHz, p=0.55).",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent analyses of low- (<4.5 kHz) and mid-frequency (>4.5 kHz) regions further showed that broadband sound exposure increased the speed of drug delivery in the mid-CF region (>4.5 kHz, p<0.001) but not the low-CF region (<4.5 kHz, = 0.55; Figure 1K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of experimental data shown in Figure 1K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "5a243574-c21f-4ad7-b9e1-1b6c9d565a8e",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C38",
+      "claim": "The effect time of the post-SA case was not different from the silence case (p=0.096) and was greater than the sound case (p<0.001).",
+      "claim_type": "EXPLICIT",
+      "source": "The post-kainate response decay of salicylate-treated ears followed the trend of the silence case despite use of the sound protocol (Figure 2H). Despite the sound stimulation, the effect time of the post-SA case was not different from the silence case (p=0.096) and was greater than the sound case (p<0.001, Figure 2J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of experimental data shown in Figures 2H and 2J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "6e8414f1-16fc-49ca-9f4c-fc379a73377e",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C39",
+      "claim": "Outer-hair-cell motility is required for faster inner-ear drug delivery with sound exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "The post-SA results support the hypothesis that outer-hair-cell motility is required for faster inner-ear drug delivery with sound exposure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the post-SA experimental results",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "f8979c1b-53c1-408a-846b-554666899e6a",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C40",
+      "claim": "Low-frequency tones facilitated the drug delivery for both low- (p<0.001) and mid-CF locations (p=0.011).",
+      "claim_type": "EXPLICIT",
+      "source": "According to the statistical analysis of effect time differences between the silence and the pure-tone protocols (Figure 3E), low-frequency tones facilitated the drug delivery for both low- (p<0.001) and mid-CF locations (p=0.011).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of experimental data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "58a3e614-e953-409f-840a-589a8c5a59b1",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C41",
+      "claim": "Mid-frequency tones facilitated drug delivery for mid-CF locations (p<0.001) but not significantly for low-CF locations (p=0.084).",
+      "claim_type": "EXPLICIT",
+      "source": "Mid-frequency tones facilitated for mid-CF locations (p<0.001) but not significantly for low-CF locations (p=0.084).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statistical analysis of experimental data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "ca50c23a-2674-46b6-a2ab-90fd796d1c8d",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C42",
+      "claim": "Low-frequency tones were more effective than broadband noise especially at the apical low-CF locations (p<0.0005 for all CF locations, p<0.00001 for apical locations with CF <4.5 kHz).",
+      "claim_type": "EXPLICIT",
+      "source": "Low-frequency tones were more effective than broadband noise especially at the apical low-CF locations (Figure 3F, p<0.0005 for all CF locations, p<0.00001 for apical locations with CF <4.5 kHz).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Statistical analysis of experimental data shown in Figure 3F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "9f108c17-aba4-4a95-8724-0f1f98af1ca7",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C43",
+      "claim": "Sound exposure increases drug delivery from the round window to apical cochlear locations.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that sound exposure increases drug delivery from the round window to apical cochlear locations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "c9185b90-a97f-4478-a7dd-3fe424786c86",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C44",
+      "claim": "Sound-facilitated drug delivery was compromised when outer-hair-cell motility was inhibited.",
+      "claim_type": "EXPLICIT",
+      "source": "Sound-facilitated drug delivery was compromised when outer-hair-cell motility was inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "7efaa4f9-0d82-4dd7-97ff-12ea5a62993a",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C45",
+      "claim": "Low-frequency tones were more effective than broadband noise in delivering substances to the apex of the cochlea.",
+      "claim_type": "EXPLICIT",
+      "source": "Low-frequency tones were more effective than broadband noise in delivering substances to the apex of the cochlea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary of experimental findings",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "78f113d1-377b-40de-8078-eda433ac31aa",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C46",
+      "claim": "These results highlight new strategies for improving drug delivery throughout the cochlear spiral.",
+      "claim_type": "EXPLICIT",
+      "source": "These results not only highlight new strategies for improving drug delivery throughout the cochlear spiral, but reveal a new function of outer hair cells, beyond sound amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's implications",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "fe609a01-d780-400c-b722-dad5446a4fdf",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C47",
+      "claim": "These results reveal a new function of outer hair cells, beyond sound amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "These results not only highlight new strategies for improving drug delivery throughout the cochlear spiral, but reveal a new function of outer hair cells, beyond sound amplification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's implications",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "5f96c76d-ebd3-4712-9c9d-b991bc6f6994",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C48",
+      "claim": "Neural responses near CF are amplified, showing enhanced tuning.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural responses near CF are amplified, showing enhanced tuning.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of cochlear physiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "66fcf02a-925c-4ac3-b60f-21203cbebecd",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C49",
+      "claim": "Outer hair cells boost the vibrations in the organ of Corti non-selectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, outer hair cells boost the vibrations in the OoC non-selectively (Cooper et al., 2018; He et al., 2018; Fallah et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Cooper et al., 2018; He et al., 2018; Fallah et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "22f192f4-6b07-41d2-bf5a-fe4e116b67e0",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C50",
+      "claim": "Previous studies suggest that outer hair cells accumulate their power along cochlear traveling waves, referred to as global amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "To reconcile the nonselective input (untuned OoC vibrations) and the selective output (tuned neural signals), previous studies suggest that outer hair cells accumulate their power along cochlear traveling waves, referred to as global amplification (Zagadou and Mountain, 2012; He et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Zagadou and Mountain, 2012; He et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "d9910985-7d0d-4a25-8ade-b2a37ed000fa",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C51",
+      "claim": "Experimental evidence is incongruent with the global amplification theory.",
+      "claim_type": "EXPLICIT",
+      "source": "However, experimental evidence is incongruent with the global amplification theory (Fisher et al., 2012; Versteegh and van der Heijden, 2013; Dewey et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Fisher et al., 2012; Versteegh and van der Heijden, 2013; Dewey et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "cd956cc5-15ae-4f72-bb55-32870e9644d2",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C52",
+      "claim": "According to the two-tone suppression experiment of Dewey et al., 2019, the suppression of outer hair cells far basal from the CF location does not affect the response at the CF location.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the two-tone suppression experiment of Dewey et al., 2019, the suppression of outer hair cells far basal from the CF location does not affect the response at the CF location.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dewey et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "f7f2351d-d9dd-4e87-b9b2-abc1a1b0fb46",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C53",
+      "claim": "Available evidence shows that the amplification due to outer-hair-cell action occurs between a location one half-octave basal to the peak and the peak location.",
+      "claim_type": "EXPLICIT",
+      "source": "Available evidence shows that the amplification due to outer-hair-cell action occurs between a location one half-octave basal to the peak and the peak location (Dong and Olson, 2013; Fallah et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Dong and Olson, 2013; Fallah et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "104d0a73-0598-49da-94ee-4c050a562bec",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C54",
+      "claim": "The present study provides new insights into the nonselective outer hair cell action.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study provides new insights into the nonselective outer hair cell action.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the study's contribution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "7a451db6-0c82-42d4-aa8d-fdccb49e2ab8",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C55",
+      "claim": "Broadband action of outer hair cells helps cochlear-fluid circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Broadband action of outer hair cells helps cochlear-fluid circulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from the study's findings",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "a8fdecaa-fd7e-4b0b-9354-cce34bf095a6",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C56",
+      "claim": "The region of sound-facilitated drug delivery spanned regions far basal to the CF location of a given sound frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "Our pure-tone experiments (Figure 3) and simulation (Figure 5) show that the region of sound-facilitated drug delivery spanned regions far basal to the CF location of a given sound frequency.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 3 and simulation results in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "df4324dd-ffd1-4aa0-8ecf-66d210ddfa6e",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C57",
+      "claim": "Sound facilitation disappeared when outer-hair-cell motility was suppressed.",
+      "claim_type": "EXPLICIT",
+      "source": "Such sound facilitation disappeared when outer-hair-cell motility was suppressed (Figure 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "6b953421-5599-4700-b950-7c201f64b42f",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C58",
+      "claim": "Active outer hair cells are the stirrers in the cochlea that drive lymphatic-fluid circulation.",
+      "claim_type": "EXPLICIT",
+      "source": "which implied that active outer hair cells are the stirrers in the cochlea that drive lymphatic-fluid circulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from experimental results",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "d0685b2f-9a2b-4e2b-b700-72436aa25089",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C59",
+      "claim": "Mammals stretched their hearing organ to encode broader bandwidth with good frequency resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "From an evolutionary perspective, mammals stretched their hearing organ to encode broader bandwidth with good frequency resolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of mammalian auditory evolution",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "16fe4636-0b24-4d59-81af-b6ab58308a6b",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C60",
+      "claim": "The longer cochlea might have entailed a challenge: maintaining the freshness of the stationary lymph along a long and narrow tube is nontrivial.",
+      "claim_type": "EXPLICIT",
+      "source": "The longer cochlea might have entailed a challenge: maintaining the freshness of the stationary lymph along a long and narrow tube is nontrivial.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about evolutionary challenges",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "d7180a7f-6e29-4aa5-8660-bb16e95ede07",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C61",
+      "claim": "A local failure in homeostasis could cascade along the cochlea, making the system vulnerable to disturbance or trauma.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a local failure in homeostasis could cascade along the cochlea, making the system vulnerable to disturbance or trauma.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative reasoning about cochlear vulnerability",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "5fefd752-e403-4ea1-842b-b0a29b19eaa0",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C62",
+      "claim": "The organ of Corti in the basal cochlea suffers from a maintenance burden: a greater influx of potassium (greater MET current) and a smaller clearance surface.",
+      "claim_type": "EXPLICIT",
+      "source": "The OoC in the basal cochlea suffers from a maintenance burden: a greater influx of potassium (greater MET current) and a smaller clearance surface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of cochlear physiology",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "65c7ce45-a397-42a8-9031-fc8fd5cc3e2e",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C63",
+      "claim": "The longitudinal circulation of lymphatic fluid serves as a protective mechanism for the fluid homeostasis of the mammalian cochlea.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the longitudinal circulation of lymphatic fluid serves as a protective mechanism for the fluid homeostasis of the mammalian cochlea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Hypothesis proposed based on study findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "478e4031-28db-4667-b67d-2d7df78347e0",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C64",
+      "claim": "An acoustically rich environment could be beneficial in maintaining healthy hearing as well as recovering from damaged hearing.",
+      "claim_type": "EXPLICIT",
+      "source": "One potential implication is that an acoustically rich environment could be beneficial in maintaining healthy hearing as well as recovering from damaged hearing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative implication of the study's findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "93b86869-9578-420a-83b0-81a9b546b688",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C65",
+      "claim": "The intrastrial fluids have been more thoroughly investigated because the three layers in the stria vascularis maintain the endocochlear potential.",
+      "claim_type": "EXPLICIT",
+      "source": "The intrastrial fluids (extracellular fluids in the stria vascularis) have been more thoroughly investigated because the three layers in the stria vascularis (marginal, intermediate, and basal cells) maintain the endocochlear potential (Wangemann, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Wangemann, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "ade08302-0d18-4fdd-8f61-4a55006116ef",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C66",
+      "claim": "Equilibrium in the Corti fluid has been sparsely investigated because its electrochemical gradient is modest compared to that of the intrastrial fluids.",
+      "claim_type": "EXPLICIT",
+      "source": "Equilibrium in the Corti fluid has been sparsely investigated because its electrochemical gradient is modest compared to that of the intrastrial fluids (Johnstone et al., 1989; Zidanic and Brownell, 1990).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Johnstone et al., 1989; Zidanic and Brownell, 1990",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "257c2a4c-8b58-41b8-bc29-d1ee6d4ccf98",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C67",
+      "claim": "Local electrochemical balance in the cochlear fluids has been considered within a radial section.",
+      "claim_type": "EXPLICIT",
+      "source": "Local electrochemical balance in the cochlear fluids has been considered within a radial section (Quraishi and Raphael, 2008; Patuzzi, 2011; Nin et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Quraishi and Raphael, 2008; Patuzzi, 2011; Nin et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "0b2942cb-16bc-4da2-8b08-7cd7464aa759",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C68",
+      "claim": "The advection caused by active outer hair cells created a 'fast track' and a 'stalling point' for mass transport.",
+      "claim_type": "EXPLICIT",
+      "source": "Two characteristics implicated in the pure-tone experiments (Figure 3) became apparent in the model simulations (Figure 5): the advection caused by active outer hair cells created a 'fast track' and a 'stalling point' for mass transport.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data in Figure 3 and simulation results in Figure 5",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "668a53f2-1e3a-40df-a65d-a0a77aa7fe2d",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C69",
+      "claim": "The maximum streaming velocity is as substantial as a few mm/s.",
+      "claim_type": "EXPLICIT",
+      "source": "The maximum streaming velocity is as substantial as a few mm/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from computational model simulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "1f3355d0-a2a7-4a4a-91f5-e295e5ba634f",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C70",
+      "claim": "Active outer hair cells generate a strong stream toward the apex along the tunnel of Corti.",
+      "claim_type": "EXPLICIT",
+      "source": "Our simulation shows that active outer hair cells generate a strong stream toward the apex along the tunnel of Corti.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from computational model simulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "37edc5aa-c635-43a5-a7be-0a862423f233",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C71",
+      "claim": "The displaced fluid in the apex flows toward the base along the bottom of the scala tympani.",
+      "claim_type": "EXPLICIT",
+      "source": "The displaced fluid in the apex flows toward the base along the bottom of the scala tympani.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from computational model simulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "91366d04-58c1-4abc-bd4d-5e027bee938b",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C72",
+      "claim": "The strong advection takes place in the tail of the traveling wave, over a few mm.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong advection takes place in the tail of the traveling wave, over a few mm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Result from computational model simulation",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "e947d397-79e7-4bbc-b9a7-9cdb53792a3e",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C73",
+      "claim": "One could design a sequence of sounds to deliver a substance from the round window to a targeted location in the cochlea.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking advantage of these 'fast tracks' and 'stalling points', one could design a sequence of sounds to deliver a substance from the round window to a targeted location in the cochlea.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative application of the study's findings",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "21a7b1b2-405f-4936-8cbf-69523f6850ba",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C74",
+      "claim": "Sixty-four Mongolian gerbils (25 males and 39 females, 2\u20133 months of age) were used in the study.",
+      "claim_type": "EXPLICIT",
+      "source": "Sixty-four Mongolian gerbils (Meriones unguiculatus, 25 males and 39 females, Charles River Laboratories) of 2\u20133 months of age were used in the study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental subjects",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "aaab14c0-9828-4e71-9f69-bd4ed2c95ce5",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C75",
+      "claim": "A 10 mM kainic acid solution (volume of 4 \u00b5L) was applied at intact round window niche.",
+      "claim_type": "EXPLICIT",
+      "source": "A 10 mM kainic acid solution (volume of 4 \u00b5L) was applied at intact round window niche.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "f4dd4ae6-759a-444f-915d-7cadfbf4b643",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C76",
+      "claim": "Sodium salicylate was dissolved in HBSS for local round window delivery at a concentration of 100 mM (volume of 4 \u00b5L) or dissolved in saline for IP injection at a dose of 200 mg/kg (volume of 0.3 mL).",
+      "claim_type": "EXPLICIT",
+      "source": "Sodium salicylate was dissolved in HBSS for local round window delivery at a concentration of 100 mM (volume of 4 \u00b5L) or dissolved in saline for IP injection at a dose of 200 mg/kg (volume of 0.3 mL).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental protocol",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "ce1556a2-4b6b-47a6-aad2-f8a7b0495d78",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "claim_id": "C77",
+      "claim": "The computational model incorporated solute diffusion, fluid advection, fluid\u2013structure interaction, and outer-hair-cell motility.",
+      "claim_type": "EXPLICIT",
+      "source": "Computational model simulations provided the physical basis for our observation, which incorporated solute diffusion, fluid advection, fluid\u2013structure interaction, and outer-hair-cell motility.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of computational model components",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "54294867-4ef9-4cdf-8782-8d73f9ee0442",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Sound exposure at modest levels (60-75 dB SPL broadband noise) significantly expedited kainic acid delivery to the cochlea, with the effect being significant in mid-CF regions (>4.5 kHz, p<0.001) but not in low-CF regions (<4.5 kHz, p=0.55). Overall, the average effect time across all CF locations was significantly faster with sound compared to silence (p=0.0045).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C36, C37, and C43 are well-supported by experimental data with appropriate statistical tests and clear p-values. The tonotopic pattern of drug delivery (C35) and the frequency-dependent effects are documented with sufficient sample sizes (n=48 for silence, n=34 for sound). The statistical analyses appropriately distinguish between different CF regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "3de7e567-b985-4802-adc2-25c2f34f5c1a",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "When outer-hair-cell motility was suppressed by salicylate (administered either intraperitoneally at 200 mg/kg or locally at 100 mM), the sound-facilitation effect on drug delivery was compromised. The effect time in the post-salicylate condition was not significantly different from silence (p=0.096) but was significantly greater than the sound-only condition (p<0.001), demonstrating that outer-hair-cell motility is required for sound-facilitated drug delivery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C38, C39, C44, and C57 are supported by experimental data with appropriate controls and statistical analyses (n=24 from 8 animals for post-SA). The use of DPOAEs to confirm outer-hair-cell inhibition strengthens the conclusion. However, the incomplete inhibition in some local delivery cases (noted in the manuscript) introduces some variability that is appropriately acknowledged.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "4c5a17f9-733a-4188-83e7-1bc190c9d904",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Low-frequency pure tones (0.5 kHz at 80 dB SPL) were more effective than broadband noise in facilitating drug delivery, particularly to apical low-CF locations (p<0.00001 for CF<4.5 kHz). Low-frequency tones facilitated delivery to both low-CF (p<0.001) and mid-CF locations (p=0.011), while mid-frequency tones (3-6 kHz) were effective for mid-CF locations (p<0.001) but not significantly for low-CF locations (p=0.084).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C40, C41, C42, and C45 are well-supported by experimental data with appropriate statistical comparisons (n=18 for LF tone, n=22 for MF tone from 15 animals total). The frequency-specific effects align with the hypothesis about traveling wave patterns and phase velocity. The statistical tests appropriately compare different sound conditions and CF regions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "dc382647-1a4b-4386-a83b-a9c87f237c24",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Computational model simulations incorporating fluid-structure interaction, outer-hair-cell motility, and nonlinear advection-diffusion dynamics demonstrated that active outer hair cells deform the organ of Corti like a peristaltic tube, generating apically streaming flows along the tunnel of Corti (with maximum velocities of a few mm/s) and basally streaming flows along the scala tympani. This advection occurs in the tail region of traveling waves over a few millimeters, creating 'fast tracks' and 'stalling points' for mass transport.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33, C34, C55, C58, C68-C72 are supported by computational simulations that incorporate appropriate physics (Navier-Stokes equations with nonlinear convective terms, fluid-structure interaction, diffusion-advection). The model results are consistent with experimental observations. However, the model includes simplifications (e.g., simplified outer-hair-cell motility, absent hair-cell nonlinearity) that are acknowledged by the authors, and the viscosity value used (100\u00d7 water) requires justification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "51da3cf1-807b-4d15-b9cd-fc1d6b388d1e",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The drug effect was tonotopic, with higher characteristic frequency (CF) locations being affected earlier than lower CF locations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C35 is supported by experimental data shown in Figure 1G, demonstrating a clear spatial gradient in drug effect time that follows the tonotopic organization of the cochlea. This is consistent with diffusion from the round window at the base toward the apex.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "130f2369-1c4a-468e-ade9-4587d03d7bf1",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The results highlight new strategies for improving drug delivery throughout the cochlear spiral and reveal a new function of outer hair cells beyond sound amplification, providing new insights into nonselective outer hair cell action.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46, C47, and C54 represent reasonable interpretations of the experimental and computational findings. The demonstration that outer hair cells can drive fluid circulation is novel and well-supported by the data. However, these are interpretive claims about the broader significance rather than direct experimental results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "446c5170-a872-42c6-b569-383c41cc2997",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The region of sound-facilitated drug delivery spanned regions far basal to the characteristic frequency location of a given sound frequency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C56 is supported by both experimental data (Figure 3) and simulation results (Figure 5), showing that the facilitation effect extends beyond the CF location. This is consistent with the traveling wave tail region being responsible for fluid advection.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "64565502-0078-48d8-ac1c-09348689f2d2",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors hypothesize that longitudinal circulation of lymphatic fluid serves as a protective mechanism for cochlear fluid homeostasis, with potential implications that an acoustically rich environment could be beneficial for maintaining and recovering hearing health. They also suggest that sequences of sounds could be designed for targeted drug delivery.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63, C64, and C73 are speculative hypotheses and potential applications based on the findings. While they are reasonable extrapolations, they lack direct experimental support. The authors appropriately present these as hypotheses and potential implications rather than established findings. Further work would be needed to validate these proposals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "a6249b99-3b17-4359-b726-8d2624cc3878",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The introduction establishes background knowledge about inner-ear fluid physiology, including that inner-ear fluid is virtually isolated from other body systems, maintained locally by epithelial cells, and that substance transport is governed by diffusion. Diffusion is effective at sub-micrometer scales but inefficient at centimeter scales, making longitudinal drug delivery along the cochlea challenging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C18 represent established background knowledge supported by appropriate citations. These claims provide the scientific context and rationale for the study. The physics of diffusion and the challenges of inner-ear drug delivery are well-established in the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "397562cc-adf2-4d42-8181-6a205b381420",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Previous approaches to inner-ear drug delivery include invasive methods with two perforations, which require substantial fluid volumes. Outer hair cells are motile and can cause oscillatory fluid motion, and recent evidence suggests they operate like an area motor. Theoretical work suggests peristaltic deformation could induce streaming, but this has not been explored experimentally.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C26 accurately represent prior work and the gap in knowledge that motivates the current study. The citations are appropriate and the characterization of previous findings appears accurate. Claim C26 correctly identifies the lack of experimental exploration of peristaltic motion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "edb5b70e-1e17-42a8-9976-f439c2149c63",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors hypothesized that outer hair cells agitated by sounds could induce advection of cochlear fluids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C27 clearly states the central hypothesis being tested in the study. This hypothesis is well-motivated by the background literature and is appropriately tested through the experimental and computational approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "a41601e3-1771-47a7-bbd6-2e5624e82de0",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Kainic acid was chosen as the test substance because it irreversibly damages afferent synapses with inner hair cells but does not affect the hair cells themselves, unlike other commonly used substances such as streptomycin and salicylate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28 and C29 are supported by appropriate citations and provide sound methodological justification for the choice of kainic acid as the test substance. This choice is critical for isolating the drug delivery mechanism from confounding effects on hair cell function.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "89b6dc57-8ab2-403d-ae0a-1de2a4aba219",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The discussion contextualizes the findings within the debate about outer hair cell function, noting that while neural responses show enhanced tuning, outer hair cells boost organ of Corti vibrations non-selectively. Previous 'global amplification' theories are incongruent with experimental evidence, and available evidence suggests amplification occurs within a limited region near the peak.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 accurately represent the current state of knowledge and controversy in the field, supported by appropriate citations. The authors correctly identify inconsistencies between global amplification theory and experimental evidence, providing context for their findings about nonselective outer hair cell action.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "f110d9dc-bd34-4467-8fe0-8eb0ce7a1698",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "From an evolutionary perspective, the elongated mammalian cochlea may have created challenges for maintaining fluid homeostasis along a long, narrow tube. The basal cochlea faces particular maintenance burdens due to greater potassium influx and smaller clearance surface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C62 present speculative evolutionary reasoning that, while plausible, lacks direct experimental support. The physiological facts about the basal cochlea (C62) are established, but the evolutionary interpretation (C59-C61) is speculative. These claims provide interesting context but are not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "a835fc83-9343-49b3-909e-bbecf718efa5",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The study complements existing work on cochlear fluid homeostasis by focusing on longitudinal equilibrium rather than radial equilibrium. Previous studies have focused more on intrastrial fluids and radial sections, while Corti fluid equilibrium has been less investigated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 accurately characterize the relationship between this study and prior work, supported by appropriate citations. The distinction between longitudinal and radial perspectives is valid and helps position the contribution of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "9a256cec-610c-432c-bc7d-190e5de239b7",
+      "content_id": "48ff77ed-5881-4c85-954c-a3486ddaf5e4",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The experimental methods involved 64 Mongolian gerbils (2-3 months old), application of 10 mM kainic acid (4 \u00b5L) at the round window, salicylate administration (100 mM locally or 200 mg/kg IP), and computational modeling incorporating diffusion, advection, fluid-structure interaction, and outer-hair-cell motility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C77 accurately describe the experimental and computational methods. The sample sizes are adequate, the drug concentrations and volumes are clearly specified, and the computational model components are appropriately described. The methods appear sound and reproducible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "4d8a2558-8491-4c6e-9b02-f9999e66c936",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Sound exposure at modest levels significantly expedited kainic acid delivery to the cochlea, with broadband sound increasing delivery speed in mid-CF regions (>4.5 kHz, p<0.001) but not low-CF regions (<4.5 kHz, p=0.55). Overall, the average effect time was significantly faster with sound (p=0.0045).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this core finding. Reviewer 1 states the manuscript provides 'compelling evidence for OHC-based fluid flow,' Reviewer 2 describes the experiments as 'well controlled' with 'novel and interesting' results showing 'sound...result in faster transport,' and Reviewer 3 confirms the authors 'successfully validated their hypothesis' that sound enhances drug delivery.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "884fa1ba-32b5-4cbe-b8e9-bdfe3810a086",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "When outer-hair-cell motility was suppressed by salicylate, the sound-facilitation effect on drug delivery was compromised, with effect times not differing from silence (p=0.096) but being significantly greater than the sound-only case (p<0.001).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support this finding. Reviewer 2 notes 'OHC involvement is corroborated using salicylate, which yielded results similar to silence,' and Reviewer 3 states 'salicylate reduces the impact of acoustic stimuli, indicating that outer hair cells actively drive cochlear fluid circulation.' No concerns are raised about this experimental control.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "b0961d4f-3f56-4623-bc90-51cd1ea1cea0",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Low-frequency tones were more effective than broadband noise for drug delivery, especially to apical low-CF locations (p<0.00001 for CF <4.5 kHz). Low-frequency tones facilitated delivery to both low-CF (p<0.001) and mid-CF locations (p=0.011), while mid-frequency tones only significantly facilitated mid-CF delivery (p<0.001).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this finding without critique. Reviewer 2 finds it 'especially interesting...that some stimuli (e.g., tones) seem to provide better/faster pumping than others (e.g., noise), ostensibly due to the phase profile of the resulting cochlear traveling-wave response.' Reviewer 4 confirms 'low-frequency tones were found to be more effective than broadband noise.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "b934c05b-b5ae-4538-88c5-6d94d490b3a1",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Computational modeling showed that active outer hair cells deform the organ of Corti like a peristaltic tube, generating apically streaming flows along the tunnel of Corti (with maximum velocities of a few mm/s) and basally streaming flows along the scala tympani. This advection occurs in the tail region of traveling waves and creates 'fast tracks' and 'stalling points' for mass transport.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly support the modeling work. Reviewer 2 describes 'elegant cochlear modeling that includes coupling between the organ of Corti and the surrounding fluid as well as advective flow' that 'supports the proposed mechanism.' Reviewer 3 notes the 'synergistic use of both electrophysiological recording and computational modeling' as a major strength, and Reviewer 4 states 'computational model simulations support these findings.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "576569a1-a661-4610-9f0b-3b67f907d726",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The study reveals a new function of outer hair cells beyond sound amplification: their broadband action drives cochlear fluid circulation, which has implications for improving drug delivery strategies throughout the cochlear spiral.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers unanimously recognize this as a major contribution. Reviewer 1 states this is 'the first report to test the pumping effect in vivo' and 'substantially advances our understanding of cochlear homeostasis.' Reviewer 3 emphasizes the findings 'offer a novel perspective on their function beyond frequency-selective amplification' and have 'significant implications for advancing our understanding of cochlear amplification.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "502add17-1c77-41f3-99e8-699f774e41f2",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors hypothesized that outer hair cells agitated by sounds could induce advection of cochlear fluids.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the hypothesis was successfully tested. Reviewer 2 states 'the authors test the \"OHC-fluid-pump\" hypothesis' with well-controlled experiments, and Reviewer 3 explicitly states 'the authors successfully validated their hypothesis, showing through the experimental and modeling results that active outer hair cells enhance cochlear fluid circulation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "e4cf329e-4bad-479c-9c6c-3eed837c9bd8",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The drug effect was tonotopic, with higher CF locations being affected earlier.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is implicitly accepted by all reviewers as part of the overall experimental results. No reviewer questions the tonotopic pattern of drug delivery, and it is consistent with the accepted findings about frequency-dependent effects.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "7296d4b7-7638-4a3d-ad41-bc48fd94fdbb",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The region of sound-facilitated drug delivery spanned regions far basal to the CF location of a given sound frequency.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly notes this as 'especially interesting,' stating that the 'phase profile of the resulting cochlear traveling-wave response' explains why certain stimuli provide better pumping. This spatial pattern is accepted as part of the validated mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "9c1b24f9-3fe8-4f2e-8610-852106e4801d",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Kainic acid was chosen as the test substance because it irreversibly damages afferent synapses with inner hair cells but does not affect the hair cells themselves, unlike other substances used in drug-delivery experiments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers implicitly accept this methodological choice. Reviewer 3 notes the study 'utilized a well-established electrophysiological method to produce valuable new data,' and no reviewer questions the use of kainic acid as the tracer substance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "9d750a53-085e-48c9-afe9-9a471ea0ea30",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The experimental methods involved 64 Mongolian gerbils, application of 10 mM kainic acid at the round window, salicylate treatment for OHC motility suppression, and computational modeling incorporating diffusion, advection, fluid-structure interaction, and OHC motility.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the methodological approach. Reviewer 2 states 'the experiments appear well controlled,' and Reviewer 3 praises the 'synergistic use of both electrophysiological recording and computational modeling' with a 'custom-developed computational model to enhanced the interpretation of their experimental results.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "9596d858-50d9-494c-823f-c655c5bd990d",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Background claims about inner-ear fluid physiology, isolation from systemic circulation, challenges of drug delivery, diffusion limitations, and existing invasive approaches to drug delivery.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are implicitly accepted by all reviewers as established context. Reviewer 3 explicitly notes 'there is currently no effective noninvasive method to deliver the drugs or genes to the cochlea,' affirming the clinical motivation. No reviewer questions these foundational claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "22527d7b-0adb-4f84-9a74-42813f97d037",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Background claims about outer hair cell motility, organ of Corti vibrations, peristaltic deformation theory, and the lack of prior experimental exploration of peristaltic motion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these as established background. Reviewer 3 notes 'recent in vivo observations of the broadband reticular lamina vibration challenge the traditional view of frequency-specific cochlear amplification,' acknowledging the context. Reviewer 1 mentions 'others have proposed that OHC electromotility subserves cochlear amplification by acting as a \"fluid pump\"' but emphasizes this study is 'the first report to test the pumping effect in vivo.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "cc63b973-90b6-4378-81b0-563396b1060a",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "Discussion claims about the relationship between nonselective OHC vibrations and selective neural tuning, global amplification theory, and evidence about the spatial extent of OHC amplification effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These discussion points are implicitly accepted as part of the broader interpretation. Reviewer 3 explicitly notes the findings 'offer a novel perspective on their function beyond frequency-selective amplification,' indicating acceptance of the discussion about OHC function beyond traditional amplification models.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "639d7f31-a70b-408c-b8ca-82686000adf1",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "Speculative claims about evolutionary implications, homeostasis challenges in the mammalian cochlea, the protective role of fluid circulation, and potential benefits of acoustically rich environments for hearing health.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these as reasonable implications. Reviewer 1 states the study 'substantially advances our understanding of cochlear homeostasis' and is 'the first report to...consider its implications for cochlear homeostasis.' Reviewer 2 notes the authors 'thoughtfully discussed' limitations and future directions including 'practical applications to drug delivery.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "13502c1a-c63c-4d51-bb8f-a899662fd53c",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R15",
+      "result_category": "peer",
+      "result": "Background claims about intrastrial fluids, Corti fluid investigation, and the traditional focus on radial rather than longitudinal electrochemical balance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are implicitly accepted as established context for understanding cochlear fluid dynamics. No reviewer questions these foundational statements about the state of research in cochlear fluid homeostasis.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "9b82b59b-cb8a-4b63-b3c5-2952848e21a6",
+      "content_id": "e8d2e50e-0a92-473d-9465-25c07333bda3",
+      "result_id": "R16",
+      "result_category": "peer",
+      "result": "Speculative claim that one could design a sequence of sounds to deliver substances to targeted cochlear locations by exploiting 'fast tracks' and 'stalling points.'",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this as a reasonable future application. Reviewer 2 notes the authors discuss 'practical applications to drug delivery' and Reviewer 4 states the results 'could offer potential strategies for targeting and optimizing drug delivery throughout the cochlear spiral.' This speculative application is treated as a logical extension of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "30ca61ff-f248-4182-a078-cb024b4bc235",
+      "result_id": "54294867-4ef9-4cdf-8782-8d73f9ee0442"
+    },
+    {
+      "claim_id": "3d9ce11f-7ab9-4ee6-a08f-247982a4333a",
+      "result_id": "54294867-4ef9-4cdf-8782-8d73f9ee0442"
+    },
+    {
+      "claim_id": "d4df8b59-f9f9-4abc-8201-130c3a3b4112",
+      "result_id": "54294867-4ef9-4cdf-8782-8d73f9ee0442"
+    },
+    {
+      "claim_id": "9f108c17-aba4-4a95-8724-0f1f98af1ca7",
+      "result_id": "54294867-4ef9-4cdf-8782-8d73f9ee0442"
+    },
+    {
+      "claim_id": "7e908485-56be-4287-a622-4cacbfc8fffd",
+      "result_id": "3de7e567-b985-4802-adc2-25c2f34f5c1a"
+    },
+    {
+      "claim_id": "5a243574-c21f-4ad7-b9e1-1b6c9d565a8e",
+      "result_id": "3de7e567-b985-4802-adc2-25c2f34f5c1a"
+    },
+    {
+      "claim_id": "6e8414f1-16fc-49ca-9f4c-fc379a73377e",
+      "result_id": "3de7e567-b985-4802-adc2-25c2f34f5c1a"
+    },
+    {
+      "claim_id": "c9185b90-a97f-4478-a7dd-3fe424786c86",
+      "result_id": "3de7e567-b985-4802-adc2-25c2f34f5c1a"
+    },
+    {
+      "claim_id": "df4324dd-ffd1-4aa0-8ecf-66d210ddfa6e",
+      "result_id": "3de7e567-b985-4802-adc2-25c2f34f5c1a"
+    },
+    {
+      "claim_id": "962e4a55-4c94-4e4c-b942-4205d3e0ad59",
+      "result_id": "4c5a17f9-733a-4188-83e7-1bc190c9d904"
+    },
+    {
+      "claim_id": "f8979c1b-53c1-408a-846b-554666899e6a",
+      "result_id": "4c5a17f9-733a-4188-83e7-1bc190c9d904"
+    },
+    {
+      "claim_id": "58a3e614-e953-409f-840a-589a8c5a59b1",
+      "result_id": "4c5a17f9-733a-4188-83e7-1bc190c9d904"
+    },
+    {
+      "claim_id": "ca50c23a-2674-46b6-a2ab-90fd796d1c8d",
+      "result_id": "4c5a17f9-733a-4188-83e7-1bc190c9d904"
+    },
+    {
+      "claim_id": "7efaa4f9-0d82-4dd7-97ff-12ea5a62993a",
+      "result_id": "4c5a17f9-733a-4188-83e7-1bc190c9d904"
+    },
+    {
+      "claim_id": "e0c2b735-19f4-45b0-9b78-67c2a2c063fa",
+      "result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24"
+    },
+    {
+      "claim_id": "1b6c8729-b409-4988-a584-b83955bdc299",
+      "result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24"
+    },
+    {
+      "claim_id": "7a451db6-0c82-42d4-aa8d-fdccb49e2ab8",
+      "result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24"
+    },
+    {
+      "claim_id": "6b953421-5599-4700-b950-7c201f64b42f",
+      "result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24"
+    },
+    {
+      "claim_id": "0b2942cb-16bc-4da2-8b08-7cd7464aa759",
+      "result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24"
+    },
+    {
+      "claim_id": "668a53f2-1e3a-40df-a65d-a0a77aa7fe2d",
+      "result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24"
+    },
+    {
+      "claim_id": "1f3355d0-a2a7-4a4a-91f5-e295e5ba634f",
+      "result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24"
+    },
+    {
+      "claim_id": "37edc5aa-c635-43a5-a7be-0a862423f233",
+      "result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24"
+    },
+    {
+      "claim_id": "91366d04-58c1-4abc-bd4d-5e027bee938b",
+      "result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24"
+    },
+    {
+      "claim_id": "ad55291c-ce99-42bc-a247-0785b5c75689",
+      "result_id": "51da3cf1-807b-4d15-b9cd-fc1d6b388d1e"
+    },
+    {
+      "claim_id": "78f113d1-377b-40de-8078-eda433ac31aa",
+      "result_id": "130f2369-1c4a-468e-ade9-4587d03d7bf1"
+    },
+    {
+      "claim_id": "fe609a01-d780-400c-b722-dad5446a4fdf",
+      "result_id": "130f2369-1c4a-468e-ade9-4587d03d7bf1"
+    },
+    {
+      "claim_id": "104d0a73-0598-49da-94ee-4c050a562bec",
+      "result_id": "130f2369-1c4a-468e-ade9-4587d03d7bf1"
+    },
+    {
+      "claim_id": "a8fdecaa-fd7e-4b0b-9354-cce34bf095a6",
+      "result_id": "446c5170-a872-42c6-b569-383c41cc2997"
+    },
+    {
+      "claim_id": "65c7ce45-a397-42a8-9031-fc8fd5cc3e2e",
+      "result_id": "64565502-0078-48d8-ac1c-09348689f2d2"
+    },
+    {
+      "claim_id": "478e4031-28db-4667-b67d-2d7df78347e0",
+      "result_id": "64565502-0078-48d8-ac1c-09348689f2d2"
+    },
+    {
+      "claim_id": "e947d397-79e7-4bbc-b9a7-9cdb53792a3e",
+      "result_id": "64565502-0078-48d8-ac1c-09348689f2d2"
+    },
+    {
+      "claim_id": "432a2606-0439-45ac-a525-094491f1b375",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "d79d83e2-01c0-4b73-a53a-765dab9af71a",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "cb250a90-6acf-4557-8098-d9152eecbce4",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "43631ceb-b410-4432-8d13-a3dcc9f3f191",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "4cdae43b-dfd7-4b61-bb38-7fc3fda40ce6",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "89a8d6e6-8905-4a99-b5af-9775ef7ac6b7",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "bc382010-c0b1-4a35-95df-1e01e31bf412",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "2089db64-2848-4e3d-b5ce-688cabc4893c",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "a215cf63-a4ed-49c0-b278-44fb5e1ed94f",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "0b8ef87b-69c7-452c-8355-39c4db5fc495",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "841f119b-396f-49c5-aed0-da5d683ad67d",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "fdb08a05-64f8-49b9-8f8c-942298d960aa",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "482f0955-ebd3-42fe-95b8-4f528c45c4fd",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "0ccb321e-4783-4508-b0af-2af64dfd81d6",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "6c4418d6-ca72-4c08-8683-8b3f1e3767c5",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "2b973528-6505-45d6-aa42-e4517bce6cdc",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "3b21cf38-e43f-4567-9211-4160f4bd74e9",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "13127804-3831-4289-8135-b704485feddc",
+      "result_id": "a6249b99-3b17-4359-b726-8d2624cc3878"
+    },
+    {
+      "claim_id": "30de7816-c80f-40c4-a989-0f4c36a3489a",
+      "result_id": "397562cc-adf2-4d42-8181-6a205b381420"
+    },
+    {
+      "claim_id": "a11d89b4-a93e-4adf-9fc7-6d64b3e2eb27",
+      "result_id": "397562cc-adf2-4d42-8181-6a205b381420"
+    },
+    {
+      "claim_id": "0c476516-0862-457f-be60-7e1eb8db7d91",
+      "result_id": "397562cc-adf2-4d42-8181-6a205b381420"
+    },
+    {
+      "claim_id": "6e20e638-e6df-4a83-a1af-917bf317b0d3",
+      "result_id": "397562cc-adf2-4d42-8181-6a205b381420"
+    },
+    {
+      "claim_id": "735417c8-7cf9-4303-ac1a-fad41c440913",
+      "result_id": "397562cc-adf2-4d42-8181-6a205b381420"
+    },
+    {
+      "claim_id": "72f76048-74e8-49c2-93fe-9da03ccdf185",
+      "result_id": "397562cc-adf2-4d42-8181-6a205b381420"
+    },
+    {
+      "claim_id": "d75cde0e-7942-4992-8a31-f139894320e4",
+      "result_id": "397562cc-adf2-4d42-8181-6a205b381420"
+    },
+    {
+      "claim_id": "08d72b1c-3a4e-4634-ba48-b5c169dd6ba3",
+      "result_id": "397562cc-adf2-4d42-8181-6a205b381420"
+    },
+    {
+      "claim_id": "3498da2d-e417-4cec-8887-7c4172a45290",
+      "result_id": "edb5b70e-1e17-42a8-9976-f439c2149c63"
+    },
+    {
+      "claim_id": "71bb6042-6d97-4843-8c5f-1363ec1fb329",
+      "result_id": "a41601e3-1771-47a7-bbd6-2e5624e82de0"
+    },
+    {
+      "claim_id": "65a87be1-8df2-472f-9321-b61415b8e78e",
+      "result_id": "a41601e3-1771-47a7-bbd6-2e5624e82de0"
+    },
+    {
+      "claim_id": "5f96c76d-ebd3-4712-9c9d-b991bc6f6994",
+      "result_id": "89b6dc57-8ab2-403d-ae0a-1de2a4aba219"
+    },
+    {
+      "claim_id": "66fcf02a-925c-4ac3-b60f-21203cbebecd",
+      "result_id": "89b6dc57-8ab2-403d-ae0a-1de2a4aba219"
+    },
+    {
+      "claim_id": "22f192f4-6b07-41d2-bf5a-fe4e116b67e0",
+      "result_id": "89b6dc57-8ab2-403d-ae0a-1de2a4aba219"
+    },
+    {
+      "claim_id": "d9910985-7d0d-4a25-8ade-b2a37ed000fa",
+      "result_id": "89b6dc57-8ab2-403d-ae0a-1de2a4aba219"
+    },
+    {
+      "claim_id": "cd956cc5-15ae-4f72-bb55-32870e9644d2",
+      "result_id": "89b6dc57-8ab2-403d-ae0a-1de2a4aba219"
+    },
+    {
+      "claim_id": "f7f2351d-d9dd-4e87-b9b2-abc1a1b0fb46",
+      "result_id": "89b6dc57-8ab2-403d-ae0a-1de2a4aba219"
+    },
+    {
+      "claim_id": "d0685b2f-9a2b-4e2b-b700-72436aa25089",
+      "result_id": "f110d9dc-bd34-4467-8fe0-8eb0ce7a1698"
+    },
+    {
+      "claim_id": "16fe4636-0b24-4d59-81af-b6ab58308a6b",
+      "result_id": "f110d9dc-bd34-4467-8fe0-8eb0ce7a1698"
+    },
+    {
+      "claim_id": "d7180a7f-6e29-4aa5-8660-bb16e95ede07",
+      "result_id": "f110d9dc-bd34-4467-8fe0-8eb0ce7a1698"
+    },
+    {
+      "claim_id": "5fefd752-e403-4ea1-842b-b0a29b19eaa0",
+      "result_id": "f110d9dc-bd34-4467-8fe0-8eb0ce7a1698"
+    },
+    {
+      "claim_id": "93b86869-9578-420a-83b0-81a9b546b688",
+      "result_id": "a835fc83-9343-49b3-909e-bbecf718efa5"
+    },
+    {
+      "claim_id": "ade08302-0d18-4fdd-8f61-4a55006116ef",
+      "result_id": "a835fc83-9343-49b3-909e-bbecf718efa5"
+    },
+    {
+      "claim_id": "257c2a4c-8b58-41b8-bc29-d1ee6d4ccf98",
+      "result_id": "a835fc83-9343-49b3-909e-bbecf718efa5"
+    },
+    {
+      "claim_id": "21a7b1b2-405f-4936-8cbf-69523f6850ba",
+      "result_id": "9a256cec-610c-432c-bc7d-190e5de239b7"
+    },
+    {
+      "claim_id": "aaab14c0-9828-4e71-9f69-bd4ed2c95ce5",
+      "result_id": "9a256cec-610c-432c-bc7d-190e5de239b7"
+    },
+    {
+      "claim_id": "f4dd4ae6-759a-444f-915d-7cadfbf4b643",
+      "result_id": "9a256cec-610c-432c-bc7d-190e5de239b7"
+    },
+    {
+      "claim_id": "ce1556a2-4b6b-47a6-aad2-f8a7b0495d78",
+      "result_id": "9a256cec-610c-432c-bc7d-190e5de239b7"
+    },
+    {
+      "claim_id": "30ca61ff-f248-4182-a078-cb024b4bc235",
+      "result_id": "4d8a2558-8491-4c6e-9b02-f9999e66c936"
+    },
+    {
+      "claim_id": "3d9ce11f-7ab9-4ee6-a08f-247982a4333a",
+      "result_id": "4d8a2558-8491-4c6e-9b02-f9999e66c936"
+    },
+    {
+      "claim_id": "d4df8b59-f9f9-4abc-8201-130c3a3b4112",
+      "result_id": "4d8a2558-8491-4c6e-9b02-f9999e66c936"
+    },
+    {
+      "claim_id": "9f108c17-aba4-4a95-8724-0f1f98af1ca7",
+      "result_id": "4d8a2558-8491-4c6e-9b02-f9999e66c936"
+    },
+    {
+      "claim_id": "7e908485-56be-4287-a622-4cacbfc8fffd",
+      "result_id": "884fa1ba-32b5-4cbe-b8e9-bdfe3810a086"
+    },
+    {
+      "claim_id": "5a243574-c21f-4ad7-b9e1-1b6c9d565a8e",
+      "result_id": "884fa1ba-32b5-4cbe-b8e9-bdfe3810a086"
+    },
+    {
+      "claim_id": "6e8414f1-16fc-49ca-9f4c-fc379a73377e",
+      "result_id": "884fa1ba-32b5-4cbe-b8e9-bdfe3810a086"
+    },
+    {
+      "claim_id": "c9185b90-a97f-4478-a7dd-3fe424786c86",
+      "result_id": "884fa1ba-32b5-4cbe-b8e9-bdfe3810a086"
+    },
+    {
+      "claim_id": "df4324dd-ffd1-4aa0-8ecf-66d210ddfa6e",
+      "result_id": "884fa1ba-32b5-4cbe-b8e9-bdfe3810a086"
+    },
+    {
+      "claim_id": "962e4a55-4c94-4e4c-b942-4205d3e0ad59",
+      "result_id": "b0961d4f-3f56-4623-bc90-51cd1ea1cea0"
+    },
+    {
+      "claim_id": "f8979c1b-53c1-408a-846b-554666899e6a",
+      "result_id": "b0961d4f-3f56-4623-bc90-51cd1ea1cea0"
+    },
+    {
+      "claim_id": "58a3e614-e953-409f-840a-589a8c5a59b1",
+      "result_id": "b0961d4f-3f56-4623-bc90-51cd1ea1cea0"
+    },
+    {
+      "claim_id": "ca50c23a-2674-46b6-a2ab-90fd796d1c8d",
+      "result_id": "b0961d4f-3f56-4623-bc90-51cd1ea1cea0"
+    },
+    {
+      "claim_id": "7efaa4f9-0d82-4dd7-97ff-12ea5a62993a",
+      "result_id": "b0961d4f-3f56-4623-bc90-51cd1ea1cea0"
+    },
+    {
+      "claim_id": "e0c2b735-19f4-45b0-9b78-67c2a2c063fa",
+      "result_id": "b934c05b-b5ae-4538-88c5-6d94d490b3a1"
+    },
+    {
+      "claim_id": "1b6c8729-b409-4988-a584-b83955bdc299",
+      "result_id": "b934c05b-b5ae-4538-88c5-6d94d490b3a1"
+    },
+    {
+      "claim_id": "0b2942cb-16bc-4da2-8b08-7cd7464aa759",
+      "result_id": "b934c05b-b5ae-4538-88c5-6d94d490b3a1"
+    },
+    {
+      "claim_id": "668a53f2-1e3a-40df-a65d-a0a77aa7fe2d",
+      "result_id": "b934c05b-b5ae-4538-88c5-6d94d490b3a1"
+    },
+    {
+      "claim_id": "1f3355d0-a2a7-4a4a-91f5-e295e5ba634f",
+      "result_id": "b934c05b-b5ae-4538-88c5-6d94d490b3a1"
+    },
+    {
+      "claim_id": "37edc5aa-c635-43a5-a7be-0a862423f233",
+      "result_id": "b934c05b-b5ae-4538-88c5-6d94d490b3a1"
+    },
+    {
+      "claim_id": "91366d04-58c1-4abc-bd4d-5e027bee938b",
+      "result_id": "b934c05b-b5ae-4538-88c5-6d94d490b3a1"
+    },
+    {
+      "claim_id": "78f113d1-377b-40de-8078-eda433ac31aa",
+      "result_id": "576569a1-a661-4610-9f0b-3b67f907d726"
+    },
+    {
+      "claim_id": "fe609a01-d780-400c-b722-dad5446a4fdf",
+      "result_id": "576569a1-a661-4610-9f0b-3b67f907d726"
+    },
+    {
+      "claim_id": "104d0a73-0598-49da-94ee-4c050a562bec",
+      "result_id": "576569a1-a661-4610-9f0b-3b67f907d726"
+    },
+    {
+      "claim_id": "7a451db6-0c82-42d4-aa8d-fdccb49e2ab8",
+      "result_id": "576569a1-a661-4610-9f0b-3b67f907d726"
+    },
+    {
+      "claim_id": "6b953421-5599-4700-b950-7c201f64b42f",
+      "result_id": "576569a1-a661-4610-9f0b-3b67f907d726"
+    },
+    {
+      "claim_id": "3498da2d-e417-4cec-8887-7c4172a45290",
+      "result_id": "502add17-1c77-41f3-99e8-699f774e41f2"
+    },
+    {
+      "claim_id": "ad55291c-ce99-42bc-a247-0785b5c75689",
+      "result_id": "e4cf329e-4bad-479c-9c6c-3eed837c9bd8"
+    },
+    {
+      "claim_id": "a8fdecaa-fd7e-4b0b-9354-cce34bf095a6",
+      "result_id": "7296d4b7-7638-4a3d-ad41-bc48fd94fdbb"
+    },
+    {
+      "claim_id": "71bb6042-6d97-4843-8c5f-1363ec1fb329",
+      "result_id": "9c1b24f9-3fe8-4f2e-8610-852106e4801d"
+    },
+    {
+      "claim_id": "65a87be1-8df2-472f-9321-b61415b8e78e",
+      "result_id": "9c1b24f9-3fe8-4f2e-8610-852106e4801d"
+    },
+    {
+      "claim_id": "21a7b1b2-405f-4936-8cbf-69523f6850ba",
+      "result_id": "9d750a53-085e-48c9-afe9-9a471ea0ea30"
+    },
+    {
+      "claim_id": "aaab14c0-9828-4e71-9f69-bd4ed2c95ce5",
+      "result_id": "9d750a53-085e-48c9-afe9-9a471ea0ea30"
+    },
+    {
+      "claim_id": "f4dd4ae6-759a-444f-915d-7cadfbf4b643",
+      "result_id": "9d750a53-085e-48c9-afe9-9a471ea0ea30"
+    },
+    {
+      "claim_id": "ce1556a2-4b6b-47a6-aad2-f8a7b0495d78",
+      "result_id": "9d750a53-085e-48c9-afe9-9a471ea0ea30"
+    },
+    {
+      "claim_id": "432a2606-0439-45ac-a525-094491f1b375",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "d79d83e2-01c0-4b73-a53a-765dab9af71a",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "cb250a90-6acf-4557-8098-d9152eecbce4",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "43631ceb-b410-4432-8d13-a3dcc9f3f191",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "4cdae43b-dfd7-4b61-bb38-7fc3fda40ce6",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "89a8d6e6-8905-4a99-b5af-9775ef7ac6b7",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "bc382010-c0b1-4a35-95df-1e01e31bf412",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "2089db64-2848-4e3d-b5ce-688cabc4893c",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "a215cf63-a4ed-49c0-b278-44fb5e1ed94f",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "0b8ef87b-69c7-452c-8355-39c4db5fc495",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "841f119b-396f-49c5-aed0-da5d683ad67d",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "fdb08a05-64f8-49b9-8f8c-942298d960aa",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "482f0955-ebd3-42fe-95b8-4f528c45c4fd",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "0ccb321e-4783-4508-b0af-2af64dfd81d6",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "6c4418d6-ca72-4c08-8683-8b3f1e3767c5",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "2b973528-6505-45d6-aa42-e4517bce6cdc",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "3b21cf38-e43f-4567-9211-4160f4bd74e9",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "13127804-3831-4289-8135-b704485feddc",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "30de7816-c80f-40c4-a989-0f4c36a3489a",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "a11d89b4-a93e-4adf-9fc7-6d64b3e2eb27",
+      "result_id": "9596d858-50d9-494c-823f-c655c5bd990d"
+    },
+    {
+      "claim_id": "0c476516-0862-457f-be60-7e1eb8db7d91",
+      "result_id": "22527d7b-0adb-4f84-9a74-42813f97d037"
+    },
+    {
+      "claim_id": "6e20e638-e6df-4a83-a1af-917bf317b0d3",
+      "result_id": "22527d7b-0adb-4f84-9a74-42813f97d037"
+    },
+    {
+      "claim_id": "735417c8-7cf9-4303-ac1a-fad41c440913",
+      "result_id": "22527d7b-0adb-4f84-9a74-42813f97d037"
+    },
+    {
+      "claim_id": "72f76048-74e8-49c2-93fe-9da03ccdf185",
+      "result_id": "22527d7b-0adb-4f84-9a74-42813f97d037"
+    },
+    {
+      "claim_id": "d75cde0e-7942-4992-8a31-f139894320e4",
+      "result_id": "22527d7b-0adb-4f84-9a74-42813f97d037"
+    },
+    {
+      "claim_id": "08d72b1c-3a4e-4634-ba48-b5c169dd6ba3",
+      "result_id": "22527d7b-0adb-4f84-9a74-42813f97d037"
+    },
+    {
+      "claim_id": "5f96c76d-ebd3-4712-9c9d-b991bc6f6994",
+      "result_id": "cc63b973-90b6-4378-81b0-563396b1060a"
+    },
+    {
+      "claim_id": "66fcf02a-925c-4ac3-b60f-21203cbebecd",
+      "result_id": "cc63b973-90b6-4378-81b0-563396b1060a"
+    },
+    {
+      "claim_id": "22f192f4-6b07-41d2-bf5a-fe4e116b67e0",
+      "result_id": "cc63b973-90b6-4378-81b0-563396b1060a"
+    },
+    {
+      "claim_id": "d9910985-7d0d-4a25-8ade-b2a37ed000fa",
+      "result_id": "cc63b973-90b6-4378-81b0-563396b1060a"
+    },
+    {
+      "claim_id": "cd956cc5-15ae-4f72-bb55-32870e9644d2",
+      "result_id": "cc63b973-90b6-4378-81b0-563396b1060a"
+    },
+    {
+      "claim_id": "f7f2351d-d9dd-4e87-b9b2-abc1a1b0fb46",
+      "result_id": "cc63b973-90b6-4378-81b0-563396b1060a"
+    },
+    {
+      "claim_id": "d0685b2f-9a2b-4e2b-b700-72436aa25089",
+      "result_id": "639d7f31-a70b-408c-b8ca-82686000adf1"
+    },
+    {
+      "claim_id": "16fe4636-0b24-4d59-81af-b6ab58308a6b",
+      "result_id": "639d7f31-a70b-408c-b8ca-82686000adf1"
+    },
+    {
+      "claim_id": "d7180a7f-6e29-4aa5-8660-bb16e95ede07",
+      "result_id": "639d7f31-a70b-408c-b8ca-82686000adf1"
+    },
+    {
+      "claim_id": "5fefd752-e403-4ea1-842b-b0a29b19eaa0",
+      "result_id": "639d7f31-a70b-408c-b8ca-82686000adf1"
+    },
+    {
+      "claim_id": "65c7ce45-a397-42a8-9031-fc8fd5cc3e2e",
+      "result_id": "639d7f31-a70b-408c-b8ca-82686000adf1"
+    },
+    {
+      "claim_id": "478e4031-28db-4667-b67d-2d7df78347e0",
+      "result_id": "639d7f31-a70b-408c-b8ca-82686000adf1"
+    },
+    {
+      "claim_id": "93b86869-9578-420a-83b0-81a9b546b688",
+      "result_id": "13502c1a-c63c-4d51-bb8f-a899662fd53c"
+    },
+    {
+      "claim_id": "ade08302-0d18-4fdd-8f61-4a55006116ef",
+      "result_id": "13502c1a-c63c-4d51-bb8f-a899662fd53c"
+    },
+    {
+      "claim_id": "257c2a4c-8b58-41b8-bc29-d1ee6d4ccf98",
+      "result_id": "13502c1a-c63c-4d51-bb8f-a899662fd53c"
+    },
+    {
+      "claim_id": "e947d397-79e7-4bbc-b9a7-9cdb53792a3e",
+      "result_id": "9b82b59b-cb8a-4b63-b3c5-2952848e21a6"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2882a7c0-2689-49af-9ec2-fd82fc785984",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "54294867-4ef9-4cdf-8782-8d73f9ee0442",
+      "peer_result_id": "4d8a2558-8491-4c6e-9b02-f9999e66c936",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C30, C36, C37, C43. Both evaluations find the tonotopic pattern and frequency-dependent effects well-supported by experimental data with appropriate statistical tests. Reviewers explicitly affirm 'compelling evidence' for the core finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "d566321a-4d94-4562-b701-61d9a80faee4",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3de7e567-b985-4802-adc2-25c2f34f5c1a",
+      "peer_result_id": "884fa1ba-32b5-4cbe-b8e9-bdfe3810a086",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C31, C38, C39, C44, C57. Both evaluations support the salicylate control experiments demonstrating OHC involvement. OpenEval notes incomplete inhibition variability while peer reviewers find the control 'corroborates' OHC involvement without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "3bafb49e-5b53-4dfe-9a94-da050f472ec7",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "4c5a17f9-733a-4188-83e7-1bc190c9d904",
+      "peer_result_id": "b0961d4f-3f56-4623-bc90-51cd1ea1cea0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C32, C40, C41, C42, C45. Both evaluations affirm frequency-specific effects with tones being more effective than noise. Peer reviewers find this 'especially interesting' due to traveling-wave phase profiles.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "cbf3e74b-372f-4991-801d-9621159c43c1",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "dc382647-1a4b-4386-a83b-a9c87f237c24",
+      "peer_result_id": "b934c05b-b5ae-4538-88c5-6d94d490b3a1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on computational modeling claims C33, C34, C68-C72. Both find the modeling work supports the proposed mechanism. OpenEval notes model simplifications requiring justification while peer reviewers describe the modeling as 'elegant' without raising concerns about limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "e5617ffb-bac1-4fb0-8d8f-57636384d5c6",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "51da3cf1-807b-4d15-b9cd-fc1d6b388d1e",
+      "peer_result_id": "e4cf329e-4bad-479c-9c6c-3eed837c9bd8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claim C35. Both evaluations support the tonotopic pattern of drug delivery. OpenEval explicitly references Figure 1G while peer reviewers implicitly accept this as part of overall experimental results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "1fc77866-4d59-45a1-ae9c-324858ec627b",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "130f2369-1c4a-468e-ade9-4587d03d7bf1",
+      "peer_result_id": "576569a1-a661-4610-9f0b-3b67f907d726",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C46, C47, C54 about OHC-driven fluid circulation as a novel finding. OpenEval rates as SUPPORTED but notes these are interpretive claims about broader significance. Peer reviewers unanimously recognize this as a major contribution and 'first report to test the pumping effect in vivo.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "2588b7e6-29c7-42c4-b771-6b4fd65fd42d",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "446c5170-a872-42c6-b569-383c41cc2997",
+      "peer_result_id": "7296d4b7-7638-4a3d-ad41-bc48fd94fdbb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claim C56. Both evaluations support the finding that facilitation extends beyond CF location. Peer reviewers find the spatial pattern 'especially interesting' and accept it as part of the validated mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "85233bc8-187d-413d-ad4a-41bdd1d4ca9a",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "64565502-0078-48d8-ac1c-09348689f2d2",
+      "peer_result_id": "639d7f31-a70b-408c-b8ca-82686000adf1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on speculative claims C63, C64, C73. OpenEval rates as UNCERTAIN, noting these are reasonable extrapolations lacking direct experimental support. Peer reviewers rate as SUPPORTED, accepting these as reasonable implications and logical extensions, with one noting 'thoughtfully discussed' future applications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "d5897b8e-1957-4d3a-823b-89e6897827e2",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "64565502-0078-48d8-ac1c-09348689f2d2",
+      "peer_result_id": "9b82b59b-cb8a-4b63-b3c5-2952848e21a6",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claim C73 about drug delivery applications. OpenEval rates as UNCERTAIN due to lack of direct experimental support. Peer reviewers rate as SUPPORTED, treating it as a reasonable future application and logical extension of findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "77402fbe-5c10-4263-9122-550a8a820ae7",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "a6249b99-3b17-4359-b726-8d2624cc3878",
+      "peer_result_id": "9596d858-50d9-494c-823f-c655c5bd990d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on background claims C1-C18 (OpenEval) overlapping with C1-C20 (peer review). Both evaluations support these as established context with appropriate citations. Peer reviewers explicitly affirm clinical motivation regarding lack of noninvasive drug delivery methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "858eae40-fbc8-4ec1-a22f-8b8256deb27c",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "397562cc-adf2-4d42-8181-6a205b381420",
+      "peer_result_id": "22527d7b-0adb-4f84-9a74-42813f97d037",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on prior work claims C19-C26. Both evaluations support these as established background and appropriate characterization of the knowledge gap. Peer reviewers emphasize this is 'the first report to test the pumping effect in vivo.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "46082659-2a5a-4590-b4d5-612a16e4e8bb",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "edb5b70e-1e17-42a8-9976-f439c2149c63",
+      "peer_result_id": "502add17-1c77-41f3-99e8-699f774e41f2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claim C27 (central hypothesis). Both evaluations support that the hypothesis was well-motivated and successfully tested. Peer reviewers explicitly state 'the authors successfully validated their hypothesis.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "e72a1928-c009-4f02-b2aa-7a4eff987361",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "a41601e3-1771-47a7-bbd6-2e5624e82de0",
+      "peer_result_id": "9c1b24f9-3fe8-4f2e-8610-852106e4801d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C28, C29 regarding kainic acid methodology. Both evaluations support this methodological choice with appropriate justification. Peer reviewers implicitly accept by noting 'well-established electrophysiological method.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "d5238011-8006-43d8-890d-bb8d1fe1c3f7",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "89b6dc57-8ab2-403d-ae0a-1de2a4aba219",
+      "peer_result_id": "cc63b973-90b6-4378-81b0-563396b1060a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C48-C53 about current knowledge and controversy. Both evaluations support these as accurate representation of the field with appropriate citations. Peer reviewers accept the discussion about OHC function beyond traditional amplification models.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "538fbff5-dbe7-497c-9d76-de72516ce5b9",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "f110d9dc-bd34-4467-8fe0-8eb0ce7a1698",
+      "peer_result_id": "639d7f31-a70b-408c-b8ca-82686000adf1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on evolutionary/speculative claims C59-C62. OpenEval rates as UNCERTAIN, noting evolutionary reasoning is plausible but lacks direct experimental support. Peer reviewers rate as SUPPORTED, accepting these as reasonable implications for cochlear homeostasis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "63f0e885-e073-4269-b75e-7a55d83cc335",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "a835fc83-9343-49b3-909e-bbecf718efa5",
+      "peer_result_id": "13502c1a-c63c-4d51-bb8f-a899662fd53c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C65-C67 about relationship to prior work. Both evaluations support these as accurate characterization with appropriate citations. Peer reviewers implicitly accept as established context for cochlear fluid dynamics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    },
+    {
+      "id": "8fc61bce-6b0e-4b94-b74b-2ccac239b29c",
+      "submission_id": "7e7096bc-a7dc-43ba-a5d3-e0b16b7b4339",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "9a256cec-610c-432c-bc7d-190e5de239b7",
+      "peer_result_id": "9d750a53-085e-48c9-afe9-9a471ea0ea30",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on methodological claims C74-C77. Both evaluations affirm the experimental and computational methods are sound with adequate sample sizes. Peer reviewers praise the 'synergistic use' of electrophysiology and computational modeling.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:28:23.998445Z"
+    }
+  ]
+}

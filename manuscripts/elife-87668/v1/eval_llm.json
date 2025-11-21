@@ -1,0 +1,310 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C113",
+      "C114"
+    ],
+    "result": "Rough-legged buzzards exhibit a distinct migration pattern consisting of alternating quick and slow phases. After a rapid ~1500 km fall migration from the Arctic to mid-latitudes (ending ~Oct 12), birds continue moving slowly southwest for ~1000 km over ~121 days, reaching their southernmost point in early February. They then return northeast over ~66 days before beginning spring migration (~Apr 27). The quick phases are ~8 times faster (104 vs 12 km/day) and shorter in duration (15 vs 100 days) than the slow phases, with significantly different directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C44-C58, C113-C114 provide comprehensive GPS tracking data (n=43 birds over 10 years) with statistical support (p<0.001) for all key parameters. The data clearly demonstrate the alternating quick-slow migration pattern with quantified differences in distance, duration, speed, and direction. Figures 1a-c visually confirm these patterns. The sample sizes are adequate and statistical tests appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C71",
+      "C72"
+    ],
+    "result": "During quick migration phases, Rough-legged buzzards cross unfavorable taiga/forest zones (44.5% forest cover), while during slow phases they remain within favorable grassland (65.1%) and cropland (26.9%) zones. All vegetation types differed significantly between phases (p<0.001) except urban lands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63, C71-C72 are supported by GPS data annotated with MODIS land cover data and analyzed with appropriate linear mixed-effects models. The vegetation preferences align logically with the species' known hunting requirements (open areas for rodent hunting). Figure 2 provides clear visual confirmation. Statistical significance is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C136"
+    ],
+    "result": "Snow cover dynamics drive the slow-phase movements. Birds experienced 4.8-85.2% snow cover during actual movements. If they had remained at fall migration endpoints, they would have experienced 99.5% snow cover (14.4% more than actual). If they had flown directly southwest, they would have experienced 25.7% less snow cover overall. Complete snow cover makes hunting impossible, and southern areas remain favorable throughout winter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68, C74-C78, C136 are supported by GPS data annotated with MODIS snow cover data. The hypothetical scenarios are clearly defined and statistically tested (p<0.001). Figure 3 effectively illustrates the relationship between movement and snow cover. The ecological interpretation (C76 - complete snow cover prevents hunting) is well-established. However, C69 shows movement distance did NOT correlate with snow cover extent or difference (p=0.45, p=0.36), suggesting the relationship is more complex than simple threshold-based responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "The distance between consecutive monthly MCPs during over-wintering did not depend on snow cover extent (p=0.45) or snow cover difference (p=0.36).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by appropriate statistical analysis shown in Figure 3\u2014figure supplement 1. This negative result is important as it indicates birds do not simply respond to local snow cover thresholds but follow a more complex seasonal pattern. The finding is properly reported with non-significant p-values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C79",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C137",
+      "C138"
+    ],
+    "result": "The authors characterize this migration pattern as 'foxtrot migration' - an extension of migration at slower pace during over-wintering, representing a trade-off between remaining close to breeding grounds and finding suitable conditions. They propose 'dynamic range' to describe over-wintering ranges of species exhibiting foxtrot migration or itinerancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C79, C125-C128, C137-C138 present a novel conceptual framework supported by the empirical data. The terminology is justified through comparison with existing strategies (residency, itinerancy) and the observed pattern clearly differs from both. The trade-off interpretation (C79) is reasonable given the data on snow cover and distance to breeding grounds. The introduction of new terminology is appropriate for describing a distinct phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C134",
+      "C135"
+    ],
+    "result": "The study distinguishes foxtrot migration from two previously described over-wintering strategies: 'residency' (birds remain at over-wintering sites with minor movements) and 'itinerancy' (birds move between discrete sites 10-100s km apart, spending 1-2 months at each). Unlike itinerant species, Rough-legged buzzards move gradually and continuously in one direction then return.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124, C134-C135 appropriately cite prior work (Moreau 1972, Strandberg et al. 2009, Schlaich et al. 2023) and clearly distinguish the observed pattern from existing classifications. The comparison is well-supported by the continuous movement data (Figure 1a) versus the discrete site-switching of itinerant species. The distinction is conceptually clear and empirically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Individual and regional variation exists in over-wintering strategies. One tracked bird exhibited residency rather than foxtrot migration. African-Palearctic migrants show a continuum between strategies. North American Rough-legged buzzards show regional variation (more slow movements in east, less in west), likely due to different snow cover dynamics. Western Palearctic populations may show more residency where snow dynamics are less pronounced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C89 acknowledge important variation. C80 is supported by data (Figure 1\u2014figure supplement 1). C82-C83 appropriately cite prior work on African migrants. C86-C89 cite personal communication (Neil Paprocki) for North American patterns, which is acceptable for comparative context. C85 is speculative but reasonable extrapolation. The recognition of variation strengthens rather than weakens the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C115",
+      "C116"
+    ],
+    "result": "Single mid-winter surveys (Christmas counts in North America, IWC counts in Europe) may yield inaccurate range maps for species with dynamic ranges. For Rough-legged buzzards, mid-winter surveys would overestimate southwestern range importance and underestimate northeastern range importance. The authors recommend representing temporal heterogeneity as distinct zones on distribution maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C101, C115-C116 present important practical implications supported by the empirical findings. The critique of single-survey approaches is valid given the demonstrated 1000 km range shifts. The specific example for Rough-legged buzzards (C100-C101) follows logically from the tracking data. The recommendation for improved mapping (C116) is constructive. Figure 5a effectively illustrates the problem.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors recommend continuous year-round GPS tracking to accurately map dynamic ranges, representing temporal heterogeneity as distinct zones showing when species are abundant in different areas, and including dynamic over-wintering ranges in descriptions for foxtrot migratory and itinerant species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 present reasonable methodological recommendations based on the study's findings. The recommendations follow logically from the demonstrated limitations of single-survey approaches. These are practical suggestions for improving conservation assessments, though their implementation would require additional resources and coordination.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Declines in abundance within specific portions of over-wintering range may indicate changes in range dynamics rather than population declines. Climate change may reduce snow cover in northern regions, causing species to remain further north. A reported decline in Dutch Rough-legged buzzard counts over 40 years may reflect such range shifts rather than true population decline, supported by observations that peak migration follows heavy snowfall in northern Europe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105-C111 present an alternative interpretation of observed declines. C108 appropriately cites the Dutch study (Hornman and Boele 2022). C110-C111 cite supporting evidence (Vansteelant et al. 2011). However, C106-C107, C109 are speculative about climate change effects. While the alternative explanation is plausible and important to consider, the study does not provide direct evidence that climate change has caused range shifts or that the Dutch decline is NOT a true population decline. This remains a hypothesis requiring further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "The foxtrot migration pattern is expected to be observed in many migratory species with distinct seasonal cycles in over-wintering ranges, particularly in mid-latitude regions where snow cover significantly determines food availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90-C91 are speculative extrapolations beyond the study's data. While the reasoning is logical (other species face similar snow cover constraints), the study only documented this pattern in Rough-legged buzzards. The generalization requires empirical testing in other species. The claims are appropriately framed as expectations rather than established facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "There was no significant difference between migration distances of male and female Rough-legged buzzards.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 is supported by appropriate statistical analysis (Supplementary file 1h). However, the sample is heavily skewed (35 females, 8 males), which may limit power to detect sex differences. The finding is properly reported as non-significant rather than claiming no difference exists.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The study tracked 43 adult Rough-legged buzzards (35 females, 8 males) with solar GPS-GSM loggers over 10 years (2013-2019) from four Arctic study sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 accurately describes the study's methodology. The sample size is adequate for the analyses performed. The sex ratio is skewed but this is acknowledged. The tracking technology and duration are appropriate for studying annual migration patterns. Methods are described in sufficient detail with reference to prior work (Curk et al. 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C92",
+      "C112",
+      "C117",
+      "C118"
+    ],
+    "result": "The introduction establishes that tracking technologies have improved understanding of bird migration, that population trends are typically assessed in breeding areas but Arctic species must be assessed in over-wintering ranges, that over-wintering movements in mid-latitudes remain poorly understood despite their importance for population assessment, and that snow cover dynamics significantly affect food availability in mid-latitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7, C17-C33, C92, C112, C117-C118 provide appropriate background context supported by citations to prior work. These claims establish the knowledge gap and rationale for the study. The citations are appropriate and the logical flow from general principles to specific research need is clear. These are standard introductory claims that frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The introduction establishes that Rough-legged buzzards are Arctic-breeding, mid-latitude wintering raptors that feed on small rodents, prefer open areas for hunting, nest in tundra, overwinter in wooded fields, and must cross unsuitable taiga during migration. Deep snow in northeastern wintering areas hinders hunting, while Arctic migrants prefer to winter close to breeding grounds to extend breeding season.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 provide species-specific background appropriately supported by citations (Ferguson-Lees and Christie 2001, Bechard and Swem 2002, Tast et al. 2010, Pokrovsky et al. 2014, Walker et al. 2005, Sundell et al. 2004, Sonerud 1986, Vansteelant et al. 2011, Terraube et al. 2015, Curk et al. 2020, Berthold et al. 2013). This background establishes the ecological context for understanding the observed migration pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The discussion addresses terminology, arguing that behavioral pattern names should aid understanding and avoid confusion. The authors cite work on Montagu's harriers arguing that generalizing migration and wintering hampers understanding, and that site functions (wintering vs. refueling) should be explicitly considered. Examples are given of cuckoos using stopovers for both foraging and refueling, while Montagu's harriers show negligible refueling due to short distances and efficient flight.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C133 appropriately engage with relevant literature (Schlaich et al. 2023, Thorup et al. 2017, Trierweiler et al. 2013) to justify the introduction of new terminology. The discussion of site functions and comparison with other species strengthens the argument for distinguishing foxtrot migration from itinerancy. The reasoning is logical and well-supported by citations.",
+    "result_type": "MINOR"
+  }
+]

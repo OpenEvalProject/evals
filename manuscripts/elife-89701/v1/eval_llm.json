@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "TimiRGeN bioinformatic analysis of longitudinal chondrogenesis data identified miR-199a-5p and miR-199b-5p as pro-chondrogenic regulators. Eight signaling pathways were enriched in at least three of five timepoints, with miR-140-5p being the most positively changing miRNA in seven pathways and miR-199b-5p being the second most positively changing in six pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25, C26, and C27 are supported by the TimiRGeN bioinformatic analysis shown in Figure 1. The analysis used appropriate differential expression methods (limma) and pathway enrichment approaches. The identification of miR-199b-5p as a key regulator is well-documented with specific pathway associations and statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C60"
+    ],
+    "result": "Experimental manipulation of miR-199a-5p or miR-199b-5p expression led to significant inverse modulation of key chondrogenic genes (ACAN, COL2A1, SOX9) and extracellular matrix production (GAG levels). Overexpression of miR-199a-5p increased these markers, while inhibition of either miR-199a-5p or miR-199b-5p decreased them, with combined inhibition showing more consistent reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C28-C32, and C60 are well-supported by experimental data in Figure 2 showing both gain- and loss-of-function experiments. The experiments used appropriate controls (non-targeting miRNA), multiple timepoints (days 0, 1, 3, 7), biological replicates (N=3-4 donors, n=4-6 replicates per donor), and statistical testing (paired two-tailed Student's t-test). The inverse relationship between miRNA expression and chondrogenic markers is consistently demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "RNAseq analysis identified FZD6, ITGA3, and CAV1 as targets of miR-199a/b-5p during chondrogenesis. Inhibition of miR-199a-5p or miR-199b-5p resulted in hundreds of differentially expressed genes at day 0 and day 1, with significant overlap suggesting shared target repertoires. Twenty-one potential mRNA targets were predicted to be targeted by both miRNAs, with FZD6, ITGA3, CAV1, and MYH9 being significantly downregulated during chondrogenesis in multiple studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C34-C46 are supported by comprehensive RNAseq analysis using appropriate methods (DESeq2, miRNAtap, GO term analysis). The identification of differentially expressed genes is statistically rigorous (adjusted p-values <0.05), and the chi-square tests support the conclusion that miR-199a-5p and miR-199b-5p share functional targets. The integration with SkeletalVis data provides additional validation across multiple studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C70"
+    ],
+    "result": "FZD6, ITGA3, and CAV1 were verified as direct targets of miR-199a/b-5p through luciferase assays and inhibition experiments. Inhibition of miR-199a-5p or miR-199a/b-5p led to significant upregulation of these targets, with no consistent improvement from combined inhibition. Luciferase assays demonstrated that FZD6 and ITGA3 3'UTRs contain repressive elements, and mutation of the miR-199-5p seed sequence reduced miRNA-mediated inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C47-C50, C52-C54, and C70 are well-supported by experimental data in Figure 4. The luciferase assays provide direct evidence of miRNA-target interactions, with appropriate controls (empty vector, non-targeting miRNA, seed sequence mutations). The inhibition experiments show consistent upregulation of targets with statistical significance. The combination of luciferase validation and functional inhibition experiments provides strong evidence for direct targeting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Kinetic modeling of the miR-199a/b-5p-chondrogenesis system was developed, with an initial model showing 15/18 objects with MSE <3 (average MSE 15.96) and an enhanced model showing 14/18 objects with MSE >3 (average MSE 12.08), indicating improvement in capturing experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C58 present modeling results, but there are concerns about the evaluation. First, C57 states that 14/18 objects had MSE >3, which would indicate worse fit, yet the text claims this 'still captured much of the experimental data.' This is contradictory. Second, the average MSE improved from 15.96 to 12.08, but without knowing the scale of the data or what constitutes a 'good' MSE, it's difficult to assess model quality. The manuscript lacks validation against independent data or cross-validation approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "This work represents the first multi-miRNA model of a chondrogenesis-based system, highlighting complex relationships between regulatory miRNAs and their target mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C7 asserts novelty but provides no systematic literature review or citation to support that this is indeed the first multi-miRNA model of chondrogenesis. While the model may be novel, the claim of being 'first' requires more rigorous documentation of prior work in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "miR-199b-5p inhibition leads to greater effects on chondrogenesis than miR-199a-5p inhibition, with greater decreases in GAG levels and greater increases in FZD6, ITGA3, and CAV1 levels. This is attributed to miR-199b-5p increasing by a greater magnitude during chondrogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 are supported by experimental data in Figures 2 and 4 showing differential effects of miR-199a-5p versus miR-199b-5p inhibition. The interpretation that miR-199b-5p increases by greater magnitude is reasonable based on the observed functional effects, though direct quantification of the magnitude of increase would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims establishing the biological context of chondrogenesis, osteoarthritis, and miRNA function, including the role of SOX9 as master transcription factor, the importance of COL2A1 and ACAN in cartilage ECM, and the contribution of cartilage loss to OA development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8-C20 are well-established background knowledge supported by appropriate citations to the literature. These claims provide necessary context for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Prior work has established miR-140 and miR-455 as important regulators of chondrogenesis and cartilage health, with miR-140 deletion affecting skeletal development in humans and mice. The MIR199 family has been identified as pro-chondrogenic in mouse cells, and miR-199a and miR-199b are vertebrate-specific miRNAs associated with mesenchymal tissues and skeleton.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C59, C61-C64, C96-C98 accurately represent prior work in the field with appropriate citations. These claims establish the scientific context and rationale for studying miR-199a/b-5p but do not represent novel findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C65",
+      "C66",
+      "C67",
+      "C69",
+      "C73",
+      "C74",
+      "C75",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C89",
+      "C90"
+    ],
+    "result": "Literature-based claims about known miRNA-target interactions and signaling pathways relevant to chondrogenesis, including CAV1 as a target of miR-199a-5p, FZD6 as a target of miR-140-5p, TGFB signaling mechanisms, and the roles of integrins and Wnt signaling in cartilage biology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C65-C67, C69, C73-C75, C80, C82-C84, C89-C90 are supported by appropriate citations to the literature. These claims provide mechanistic context for interpreting the experimental findings but represent prior knowledge rather than novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C77",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C91"
+    ],
+    "result": "Speculative and inferential claims about mechanisms and importance of identified targets, including FZD6 being highly important in chondrogenesis, CAV1's role in early versus late chondrogenesis, unclear mechanisms between ITGA3 and SOX9, and potential contributions of other miR-199a/b-5p targets like MYH9 and NECTIN2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68, C77, C85-C88, C91 represent reasonable inferences and speculation based on the data, but lack direct experimental validation. These are appropriately presented as hypotheses or interpretations rather than definitive conclusions, but would benefit from additional experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C76",
+      "C78",
+      "C79"
+    ],
+    "result": "Model design and parameterization details, including use of TGFB3 to initiate chondrogenesis, relationships between model components, and incorporation of literature data on regulatory interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72, C76, C78-C79 accurately describe the model design and are supported by the methods and Figure 5. These are methodological details that support the modeling approach but do not represent primary biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Methodological details and established biological facts, including FZD6 function, miRNA seed sequences, and experimental design parameters (donor characteristics, cell passages, replication).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C99-C102 represent either established biological knowledge (C81, C99) or accurate descriptions of experimental methods (C100-C102). These provide necessary methodological transparency but do not represent novel findings.",
+    "result_type": "MINOR"
+  }
+]

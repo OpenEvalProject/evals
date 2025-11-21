@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The HiExM device was engineered to deliver small volumes (~230 nL) of gel solution to 96-well plates through reticulated grooves that form pendant droplets, creating toroidal gels that enable isotropic expansion within well constraints. The device incorporates variable post lengths and a flexible spine with notches to ensure reproducible contact with well surfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 and C49-C52 collectively describe the device design, mechanism, and functional advantages. The volume measurement (C13), toroidal geometry (C14), and design features (C49-C51) are supported by data in Figure 1 and supplementary figures. The mechanical design rationale is clearly explained and demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C24",
+      "C53"
+    ],
+    "result": "Photoinitiation with Irgacure 2959 enabled reproducible gel formation and expansion in HiExM, with markedly lower spatial errors compared to APS/TEMED polymerization chemistry, and allowed one-step polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 and C24 are supported by comparative data in Figure 1 animations and Figure 2\u2014figure supplement 3 showing superior performance of photoinitiation. The observation that APS/TEMED resulted in inconsistent polymerization (C16) and that Irgacure 2959 performed better (C17, C24) is well-documented with visual and quantitative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C42"
+    ],
+    "result": "CF dyes are robust against bleaching in HiExM while photoinitiation with Irgacure caused fluorophore-dependent signal loss, with AlexaFluor dyes showing bleaching.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C42 are supported by photobleaching data in Figure 1\u2014figure supplement 4 showing differential effects on various fluorophores. The observation is quantified with histograms showing peak pixel values before and after UV exposure, and is cited to Jiang et al., 2021 for CF dye robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C59"
+    ],
+    "result": "Optimal signal retention in HiExM for A549 cells was achieved at 50 \u00b5g/mL AcX and 1 U/mL ProteinaseK concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C59 are supported by titration data in Figure 1\u2014figure supplement 5 showing signal-to-noise ratios across different concentrations. This represents a methodological optimization specific to the cell type tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "HiExM achieved an average expansion factor of 4.16\u00b10.394 across three plates, with high reproducibility within individual gels but statistically significant variability between plates, attributed to gel size making them vulnerable to evaporation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C29 are supported by quantitative measurements in Figure 2g-h. The within-gel uniformity (C27, R\u00b2<<0.001) and between-plate variability (C28, ANOVA) are statistically demonstrated. The proposed mechanism for variability (C29) is reasonable but remains speculative. The expansion factor is consistent with published proExM methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C25",
+      "C47",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "HiExM showed average expansion error of 3.68% across plates, comparable to slide-based ExM, with no correlation between error and distance from gel center (R\u00b2=0.003). Cell confluency did not affect distortion, and only rare outliers were observed (<2 per gel).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C25, C47, and C67-C70 are supported by non-rigid registration analysis in Figure 2d-f. The lack of spatial correlation (C22), consistency across plates (C23), and independence from cell density (C25) are quantitatively demonstrated. The low frequency of outliers (C67, C70) and proposed mechanism (C69) are reasonable, though the mechanism remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C45"
+    ],
+    "result": "HiExM achieved a resolution of ~115 nm using the Opera Phenix system with a 63\u00d7 water immersion objective (1.15 NA), compared to ~463 nm for unexpanded samples, as measured by decorrelation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C45 are supported by resolution measurements in Figure 2\u2014figure supplement 1 using decorrelation analysis (Descloux et al., 2019). The ~4-fold improvement in resolution is consistent with the ~4\u00d7 expansion factor and represents a key technical achievement of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C44",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C81"
+    ],
+    "result": "HiExM is compatible with autonomous high-throughput imaging using the Opera Phenix system and PreciScan plugin, enabling acquisition of thousands of cells within 3-64 hours per 96-well plate depending on parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C44, and C62-C65 describe the automated imaging workflow that is demonstrated throughout the Results section. The time requirements (C81) are clearly stated. The integration with commercial high-content screening systems represents a significant practical advantage, though the wide time range (3-64 hr) indicates substantial parameter-dependent variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "HiExM revealed dose-dependent changes in nuclear DNA organization in cardiomyocytes treated with doxorubicin, showing increased Hoechst intensity peaks and gradient slopes at the nuclear periphery at concentrations as low as 10 nM, which were not detectable in unexpanded cells. These changes are consistent with known pro-apoptotic effects of doxorubicin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C35, and C74-C76 are supported by quantitative analysis in Figure 3. The detection of significant changes at 10 nM doxorubicin post-expansion (C33-C34) but not pre-expansion demonstrates improved sensitivity. The statistical analysis using t-tests (C88) supports significance claims. However, the mechanistic interpretation (C74) relies on inference from literature rather than direct demonstration, and the biphasic response at higher concentrations (C35) adds complexity to the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "Cardiomyocytes treated with H2O2 did not show similar dose-dependent changes in Hoechst patterns as observed with doxorubicin treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by control experiment data in Figure 3\u2014figure supplement 5. This negative control strengthens the specificity of the doxorubicin findings, though the manuscript notes this is a different cellular stressor, limiting direct comparability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "Commonly used doxorubicin concentrations in in vitro cardiotoxicity studies range from 0.1-10 \u00b5M, with changes in nuclear morphology and DNA damage typically observed at concentrations >200 nM using conventional microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by multiple literature citations (Maillet et al., 2016; Yu et al., 2020; Zhao and Zhang, 2017; Stefanova et al., 2023; Gewirtz, 1999). These establish the context for the doxorubicin experiments and justify the concentration range tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C43",
+      "C55",
+      "C56"
+    ],
+    "result": "HiExM is compatible with Photo-ExM chemistry, which does not require CF dyes or an anoxic environment and enables use of additional fluorophores including Alexa 647.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C55-C56 are supported by data in Figure 3\u2014figure supplement 6 and citations to Blatchley et al., 2022 and G\u00fcnay et al., 2023. This demonstrates the platform's flexibility and potential for broader applications, though this represents preliminary validation rather than comprehensive characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37",
+      "C39",
+      "C40",
+      "C41",
+      "C73",
+      "C77",
+      "C80"
+    ],
+    "result": "HiExM is a simple, inexpensive, and accessible platform that combines parallel sample processing with automated imaging in standard 96-well plates, fabricated using widely available CNC milling or injection molding, and adaptable to other plate formats including 24-well plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C39-C41, C73, C77, and C80 describe the accessibility and versatility of the platform. The fabrication methods (C39-C40) and adaptability to different formats (C41, Figure 1\u2014figure supplement 7) are demonstrated. However, claims about simplicity and low cost are somewhat subjective and not quantitatively benchmarked against alternatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "HiExM could achieve significantly greater resolution by employing microscopes with higher numerical aperture objectives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C46 is a prediction based on optical principles but lacks experimental validation. While theoretically sound, the actual achievable resolution would depend on multiple factors including the expansion uniformity, sample preparation quality, and optical aberrations in the expanded samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "Residual Hoechst signal from incompletely removed digested cells was occasionally observed underneath expanded cells but does not impact result interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by observation in Figure 1\u2014figure supplement 6. The assessment that this artifact does not impact interpretation (C58) is reasonable given its infrequent occurrence and distinct spatial location, though this represents author judgment rather than systematic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Gels did not maintain fixed positions between pre- and post-expansion imaging, requiring manual alignment of orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by the description of the image analysis workflow and represents a practical limitation of the method. This necessitates the time-consuming manual curation step mentioned in the Methods, which could limit throughput for certain applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Image analysis employed established methods including non-rigid registration using custom MATLAB pipelines, TurboReg for coarse alignment, B-spline registration, manual nuclear midplane selection, and two-sample t-tests for statistical significance (p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 describe the computational and analytical methods used, which are supported by appropriate citations (Chen et al., 2015; Jiang et al., 2021; Descloux et al., 2019). The methods are standard in the field, though the manual curation steps (C86-C87) introduce potential for bias and limit scalability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C71",
+      "C72"
+    ],
+    "result": "Expansion microscopy enables nanoscale imaging through physical specimen expansion, offering an inexpensive alternative to super-resolution methods like SIM, STORM, and STED, which require specialized expertise and costly equipment. However, both ExM and super-resolution methods currently suffer from limited throughput due to time-consuming manual processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C8, C71-C72 establish the background and motivation for the work. These are well-supported by citations to foundational papers (Chen et al., 2015; Gustafsson, 2000; Hell and Wichmann, 1994; Rust et al., 2006) and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C38",
+      "C78",
+      "C79"
+    ],
+    "result": "Recent related work includes other scalable ExM methods requiring custom microplates and manual imaging (Xie et al., 2023), microplate-based protocols maintaining hydrogel geometry (Seehra et al., 2023), and micropatterned expandable grids for local expansion measurement (Damstra et al., 2023) that could potentially be adapted to HiExM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C78-C79 accurately describe related work with appropriate citations. The comparison to Xie et al., 2023 (C38) highlights HiExM's advantages (standard plates, automated imaging), while C79 represents speculation about future applications rather than demonstrated capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C48",
+      "C54",
+      "C60",
+      "C61"
+    ],
+    "result": "HiExM gels cover ~1.1 mm\u00b2 of well surface and work with commercially available 96-well plates. The vertical expansion increases sample depth requiring more z-slices, while lateral expansion decreases effective field-of-view, necessitating more images to analyze equivalent cell numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C54, C60-C61 describe practical aspects and limitations of the method. The gel coverage area (C48) is stated and shown in Figure 1g. The imaging implications (C60-C61) are logical consequences of 3D expansion and represent important practical considerations for experimental design.",
+    "result_type": "MINOR"
+  }
+]

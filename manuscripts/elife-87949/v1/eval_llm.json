@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C34",
+      "C35",
+      "C58",
+      "C65",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors developed a deep learning pipeline (U-NetCellDivision10) that accurately detects cell divisions in dense, dynamic epithelial tissue in vivo. The model uses a ResNet34 backbone modified into a U-Net structure, incorporates 10 frames from two fluorescent channels (Histone2Av-mRFP and E-cadherin-GFP), and achieves a Dice score above 0.95, representing an over 80% reduction in false positives and false negatives compared to the initial 3-frame model (U-NetCellDivision3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C33-C35, C58, C65, C68-C72 collectively demonstrate the development and validation of the deep learning model. The model architecture is clearly described (C58, C65), training data is specified (C68, C69), and performance metrics show significant improvement from the 3-frame to 10-frame model (C70-C72, Table 1). The Dice score of >0.95 for U-NetCellDivision10 provides strong quantitative support for the claim of high accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The deep learning pipeline determines division orientation and reveals that in unwounded tissue, divisions show a small bias at 45\u00b0 to the proximal/distal (P/D) axis, but daughter cells subsequently shuffle to align with the P/D axis (shifting by 8.5\u00b0 on average). Global tissue tension influences division orientation only after this post-division shuffling, while local spatial-temporal correlation of division orientation is absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C85-C91 are supported by the U-NetOrientation model (Figure 4A-C, Figure 4\u2014figure supplement 1) and quantitative measurements. The initial 45\u00b0 bias (C85), post-division shuffling (C86, C88, C89), lack of spatial-temporal correlation (C90), and conclusion about global tension effects (C91) are all supported by data. The U-NetBoundary model (C87) enables accurate cell tracking for these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C37",
+      "C38",
+      "C39",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Wounding triggers a synchronized burst of cell divisions at 100 min post-wounding, occurring in a ring beginning several cell diameters back from the wound edge. Large wounds initially suppress divisions (reaching a minimum at 60-70 min post-wounding) across a broader spatial domain than small wounds, but both wound sizes exhibit a proliferative surge that is double the unwounded division density at its peak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C37-C39, C75-C83 are strongly supported by quantitative data in Figure 3C, E, F. The temporal dynamics (C37, C75-C79), spatial patterns (C38, C39, C80-C83), and wound-size-dependent differences are all documented with heatmaps and density measurements. The synchronization at 100 min and the spatial restriction of the proliferative burst are clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C109"
+    ],
+    "result": "Cell division orientation following wounding is unbiased and not significantly influenced by local wound-induced tension changes. Division orientations are uniformly distributed with respect to the wound, and post-division shuffling does not alter this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95, C109 are supported by data in Figure 4D-I showing uniform distributions of division orientations relative to wounds and no significant shift after post-division shuffling. The mean orientation around 45\u00b0 (Figure 4E) and uniform distributions (Figure 4F-I) support the conclusion that local wound tension does not detectably influence division orientation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "In unwounded tissue, cells exhibit a 'community effect' where they are more likely to divide close to and soon after previous divisions, with high correlation within a 30-\u03bcm radius and 40-min temporal window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by the space-time correlation analysis shown in Figure 3B. The heatmap clearly demonstrates positive correlation at short spatial and temporal distances, providing quantitative evidence for the community effect in cell divisions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36"
+    ],
+    "result": "In unwounded developing pupal epithelium, cell division density decreases linearly with time, consistent with previous observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by Figure 3A showing a linear decrease in division density over time in unwounded tissue, and is consistent with the cited prior work (Etournay et al., 2015). The linear model fits the data well.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C87"
+    ],
+    "result": "The U-NetBoundary model accurately segments cell boundaries from multi-focal plane confocal data, achieving a Dice score of 0.931 compared to 0.780 for single focal plane analysis, enabling tracking of cell shape changes before and after division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C87 are supported by Table 2 showing quantitative improvement in segmentation accuracy using U-NetBoundary. The model enables the analysis of daughter cell shuffling and shape changes described in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Cell migration and cell division occur in separate spatial domains following wounding. Large wounds show reduced divisions near the leading edge where cells migrate, but small wounds do not show this suppression. The proliferative surge occurs 5-cell diameters back from the leading edge and is unlikely to drive wound closure since closure rates are constant before and after the surge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are supported by the spatial analysis in Figure 3E-F and are consistent with cited mammalian studies (C96). The observation that small wounds lack division suppression (C99) and that divisions occur after peak closure (C101-C102) support the interpretation that divisions are not the primary driver of closure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The wound-induced proliferative surge likely serves to repopulate tissue and restore cell numbers and tissue structure to pre-wound levels. This synchronized proliferation may be related to the community effect observed in unwounded tissue and could be mediated by short-range chemical or mechanical signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C105 are speculative interpretations (as indicated by 'likely' and 'might' in the text). While the observations of synchronized proliferation and community effects are well-supported, the mechanistic explanations and functional interpretations require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Standard cell tracking methods (e.g., TrackMate) fail to accurately detect cell divisions in dense, dynamic in vivo tissue, confusing divisions with immune cells and missing clear mitotic events. Previous automated methods have been developed primarily for lower-density in vitro tissues and lack sufficient accuracy for complex in vivo data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 establish the motivation for developing new methods. C27 is supported by the authors' empirical testing and citation. C29-C32 are supported by multiple citations characterizing the limitations of existing approaches. These claims provide important context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The Drosophila pupal wing epithelium was chosen as the model system due to its optical translucency, genetic tractability, and suitability for high-resolution confocal imaging. The experimental setup involved imaging at 2-min intervals for 3 hours, with wounds ranging from 9-30 \u03bcm radius. Wounding creates imaging challenges including tissue movement, reduced E-cadherin-GFP signal, debris accumulation, and immune cell recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C56, C114-C117 describe the experimental system, methods, and challenges. These are well-documented with citations (C40, C41, C44, C114) and clear descriptions of imaging parameters (C45-C48, C115-C117) and wound-associated complications (C49-C54). The rationale for methodological choices (e.g., 2-min intervals, C55-C56) is clearly explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Particle tracking algorithms are inappropriate for tracking cell divisions in densely packed pupal epithelium because daughter nuclei would be mistakenly linked to neighboring nuclei rather than to the parental cell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is a logical inference based on the described tissue characteristics (dense packing, C24) and the known limitations of distance-based tracking algorithms. This reasoning is sound and provides justification for the deep learning approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66",
+      "C67"
+    ],
+    "result": "The model architecture leverages ResNet34 (a widely-used CNN with residual layers that enable training of deep networks) modified into a U-Net structure (designed for image segmentation). The Dynamic U-Net approach allows swapping of different backbone classifiers for improved performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C67 describe established deep learning architectures and their properties, supported by appropriate citations (He et al., 2016; Ronneberger et al., 2015). These are accurate descriptions of the technical approach and provide necessary methodological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "The authors provide a napari plugin for running their cell division detection model and have deposited all training, testing, and analysis data on Zenodo, facilitating reproducibility and broader application of their methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113 describe resources provided by the authors with specific URLs/repositories. These represent important contributions to reproducibility and community access to the tools and data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The dataset was split into training (979 clips from 11 videos), validation (356 clips from 4 videos), and testing (445 clips from 5 videos) sets, containing 4206 total divisions. Model architectures range from ~41 million parameters (U-NetCellDivision models) to ~319 million parameters (U-NetBoundary).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 provide specific quantitative details about data splits and model architectures. These are clearly stated in the methods and are important for assessing the scale and computational requirements of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Cell division is fundamental to tissue growth, rate-limiting in wound repair and cancer progression, and requires integration of many individual events. Accurately detecting and quantifying multiple features of large numbers of divisions over time is particularly difficult.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 represent established biological knowledge that provides context for the study. These are general principles supported by the broader literature and accurately frame the biological importance and technical challenges addressed by the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Recent advances in confocal microscopy enable collection of large time-lapse datasets from living tissues, creating a need for new analytical methods. Deep learning has progressed significantly and is particularly useful for analyzing noisy biological data, though applications to microscopy have focused mainly on static images rather than dynamic time-lapse videos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23 provide background on imaging technology and deep learning, supported by appropriate citations. These accurately describe the state of the field and establish the context and motivation for applying deep learning to dynamic tissue imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The Drosophila pupal epithelium is densely packed with nuclei, undergoes rapid dispersed cell divisions (each lasting several minutes), and is prone to photo-bleaching, limiting imaging frequency while maintaining tissue health.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe key characteristics of the biological system that create technical challenges for analysis. These are accurate descriptions that justify the need for sophisticated computational approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "The wound-associated reduction in E-cadherin-GFP levels might result from loosening of junctions in the migratory wound epithelium, as previously reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C51 is explicitly speculative ('might be a consequence') and cites prior work on junction loosening. While the observation of reduced E-cadherin-GFP is supported (C50), the mechanistic explanation requires additional validation beyond the scope of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "Previous studies in mammalian and Drosophila systems have shown that tissue tension can influence cell division orientation, with global division rates regulated by tissue-level stress while orientation is controlled more locally. The authors observe divisions with no specific P/D bias initially, and most wound-associated divisions occur distant from the main tension source (the actomyosin purse-string) and after wound closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96, C106-C108, C110-C111 integrate prior knowledge (supported by citations) with current observations. The comparison to previous work provides important context for interpreting the current findings, and the observations about division timing and location (C110-C111) are supported by the data.",
+    "result_type": "MINOR"
+  }
+]

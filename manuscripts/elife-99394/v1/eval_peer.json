@@ -1,0 +1,188 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "ChIP-seq analysis identified 4205 SMA-3 peaks and 7065 SMA-9 peaks at the L2 stage. Analysis of inter-centroid distances showed that 73.7% of SMA-3 peaks and 43.9% of SMA-9 peaks overlap (3101 peaks), with a midpoint inter-centroid distance of 788 bp (versus 8211 bp for randomized positions). The authors interpret close proximity (\u2264100 bp) as evidence that SMA-3 and SMA-9 frequently bind as subunits in a complex or in close vicinity along DNA.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the ChIP-seq data as valuable but explicitly challenge the interpretation that close binding indicates physical complex formation. One reviewer states that 'by using distances between SMA-3 and SMA-9 ChIP peaks, they claim that when the peaks are close these two TFs likely act as complexes. In the absence of proof that SMA-3 and SMA-9 physically interact (e.g. that they co-immunoprecipitate - as they do in Drosophila), this is an unfounded claim.' The revised manuscript acknowledges this limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "RNA-seq identified 1093 downregulated and 774 upregulated DEGs in sma-3 mutants, and 412 downregulated and 371 upregulated DEGs in sma-9 mutants. BETA analysis identified 367 direct targets for SMA-3 (all downregulated) and 332 for SMA-9 (46% upregulated, 53% downregulated). The authors conclude that SMA-3 functions primarily as a transcriptional activator, while SMA-9 acts as either activator or repressor depending on genomic context.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding. One reviewer states 'They show that all SMA-3-controlled targets are positively controlled by SMA-3 binding, while SMA-9-controlled targets can be either up- or downregulated by SMA-9.' Another notes 'the role of SMA-3 as a transcriptional activator appears to be quite straightforward' and acknowledges the data showing SMA-9's dual function, though noting 'the function of SMA-9 in the BMP signaling remains obscure.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Luperchio Overlap Analysis identified 882 shared DEGs between sma-3 and sma-9 datasets. BETA/LOA analysis identified 129 co-regulated direct targets (114 activated by both, 15 with reversed regulation), 238 SMA-3-exclusive targets, and 279 SMA-9-exclusive targets (129 activated, 150 inhibited). For shared activated targets, loss of SMA-3 caused greater fold changes than loss of SMA-9.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge these findings without challenge. One reviewer summarizes: '129 direct targets were shared by SMA-3 and SMA-9, and, curiously, the expression of 15 of them was activated by SMA-3 but repressed by SMA-9.' The analysis is described as 'valuable' and 'extremely useful' for the community, indicating acceptance of the integrated ChIP-seq and RNA-seq approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Analysis of HOT sites (regions bound by many transcription factors) showed that less than 25% of all SMA-3 or SMA-9 sites were associated with HOT sites. Restricting to functional SMA-9 sites reduced HOT association to 15%, while 40% of SMA-9 sites overlapping with SMA-3 (co-regulated) were associated with HOT sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this HOT site analysis. The data is presented as part of the broader ChIP-seq characterization that reviewers describe as 'valuable' and 'useful for the community,' with no specific critiques raised about the HOT site findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The sma-3; sma-9 double mutant showed an intermediate body size phenotype (not additive or more severe than single mutants), suggesting SMA-9 acts as both positive and negative regulator. For target gene C54E4.5 and five other genes with opposing regulation, expression in the double mutant matched the sma-9 single mutant, indicating sma-9 is epistatic to sma-3 for these targets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this genetic interaction data without challenge. One reviewer notes 'In case of such opposing effects, the SMA-9 appears to act epistatically to SMA-3,' directly affirming the epistasis finding. The intermediate phenotype is accepted as evidence for SMA-9's dual regulatory role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Gene Ontology analysis showed that SMA-3 and SMA-9 direct targets shared annotation clusters including fatty acid metabolism, collagens, and one-carbon metabolism. SMA-3-exclusive targets were enriched for ribosome biogenesis, mitochondrial proteins, and ER chaperones. SMA-9-exclusive targets showed enrichment for oxidation-reduction/cytochrome P450s (activated) and innate immunity factors (repressed).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge these GO findings. One states 'They also shed light on the mechanism of the BMP-dependent body size control by identifying SMA-3 target genes regulating cuticle collagen synthesis.' The GO analysis is treated as part of the valuable dataset characterization, with no challenges to the enrichment findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C72"
+    ],
+    "result": "Functional screening of target genes by RNAi identified 17 genes showing significant body size reduction (effect size \u22651) in both wild-type and lon-2 backgrounds. Among tested genes, dpy-11 (encoding a protein-disulfide reductase) showed the most severe body length reduction. dpy-11 is regulated by SMA-3 but not SMA-9. Previously identified targets fat-6 and fat-7 showed no significant body size effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this functional validation. One states 'dpy-11 encodes an enzyme important for cuticle development, and it is a differentially expressed direct target of SMA-3.' The functional screening is treated as supporting evidence for the transcriptional target identification, with no challenges to the RNAi body size data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Analysis of ROL-6::wrmScarlet collagen reporter showed that while total protein levels were not significantly reduced in mutants, cuticular fluorescence was reduced and ROL-6 accumulated intracellularly in sma-3 and sma-9 mutants. Super-resolution microscopy revealed ROL-6 becomes trapped in and accumulates at the hypodermal ER in sma-3 mutants, with ER structures appearing thinner and less branched. RNAi of dpy-11 severely disrupted both intracellular and cuticular ROL-6 deposition.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding. One states 'Vora et al. provide compelling evidence that this defect is likely to be due to problems with the BMP signaling-dependent collagen secretion necessary for cuticle formation.' Another notes 'The authors provide compelling evidence that the BMP-dependent body size effect could be due to defects in cuticle collagen secretion.' The microscopy data showing ER accumulation is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Tunicamycin treatment (which inhibits glycan biosynthesis and disrupts ER-mediated secretion) phenocopied the ROL-6 subcellular distribution defects seen in sma-3 and sma-9 mutants and caused strong body size reduction. RNAi of genes involved in ER-derived vesicle production and transport (C54H2.5, F41C3.4, Y25C1A.5, Y113G7A.3) similarly increased intracellular ROL-6 accumulation and left empty patches in the cuticle.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this as compelling evidence for the ER secretion mechanism. One reviewer states the authors 'provide compelling evidence that this defect is likely to be due to problems with the BMP signaling-dependent collagen secretion.' The tunicamycin and vesicle transport experiments are treated as strong supporting evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C97"
+    ],
+    "result": "The authors conclude that DBL-1/BMP signaling promotes body size growth by promoting ER-specific processes involved in collagen maturation, transport, and secretion into the cuticular ECM. Smads and SMA-9/Schnurri have complex genetic and genomic regulatory interactions that regulate secretion of extracellular components like collagen to mediate body size regulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this mechanistic conclusion. One states 'The authors provide compelling evidence that the BMP-dependent body size effect could be due to defects in cuticle collagen secretion, a finding of interest to those studying organismal growth and epidermal function.' Another notes 'Vora et al. provide compelling evidence that this defect is likely to be due to problems with the BMP signaling-dependent collagen secretion necessary for cuticle formation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The GFP-tagged transgenes for SMA-3 and SMA-9 are functional (rescue mutant phenotypes) and were used for ChIP-seq at the L2 stage, when Smad reporters are highly active and body size differences first appear. Previously identified targets like fat-6 and zip-10 were found in RNA-seq datasets, confirming experimental effectiveness.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the experimental design or validation. The ChIP-seq and RNA-seq datasets are described as 'valuable' and 'extremely useful for the community,' implicitly accepting the experimental approach and validation. The finding of previously known targets is treated as appropriate validation.",
+    "result_type": "MINOR"
+  }
+]

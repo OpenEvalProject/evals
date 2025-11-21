@@ -1,0 +1,447 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The proteome-wide thermal shift assay, particularly PISA, is a powerful and efficient tool for interrogating compound mechanism of action. PISA measures changes in protein solubility (\u0394SM) as a surrogate for changes in melting temperature (\u0394TM), with strong correlation between the two, and offers an eightfold theoretical improvement in throughput compared to TPP and CETSA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6-C11 establish the methodological foundation and advantages of PISA. The strong correlation between \u0394TM and \u0394SM (C10) is supported by citations to prior work (Gaetani et al., 2019; Li et al., 2020), and the throughput advantage (C11) is explicitly stated. The description of PISA methodology (C8-C9) is clear and consistent with the figures provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The study quantified over one million thermal stability measurements in response to 96 compounds in living K562 cells, comprising 70 kinase inhibitors and 26 other compounds, with approximately 6,800 proteins quantified per treatment, totaling 871,120 measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C21 describe the scale and composition of the cell-based screen. The numbers are explicitly stated in the text and supported by figures (Figure 1A, Figure 1\u2014figure supplement 3A-B). The experimental design is clearly documented with appropriate detail regarding compound concentrations, treatment duration, and technical replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C23",
+      "C24",
+      "C39",
+      "C40"
+    ],
+    "result": "Approximately 80% of compounds with quantifiable targets caused a significant change in the thermal stability of an annotated target. Using stringent filtering criteria (|log2 fold change| > 0.2 and |nSD| > 3.5), 3,156 putative hits were identified from 871,120 measurements, with 71% of compounds (56/79) inducing changes in known targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C22-C24, C39-C40 present the primary outcome of the cell-based screen. The statistical test (Wilcoxon rank sum test, p=3.56\u00d710\u207b\u00b9\u2077, C22) supports that annotated targets had significantly different thermal stability. The filtering criteria (C23) are clearly defined and empirically derived. The percentages (C3, C40) are consistent and well-documented in Figure 2A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C31",
+      "C33",
+      "C34"
+    ],
+    "result": "The screen revealed evidence of off-target engagement for many compounds. For example, OTS167 caused significant changes in 154 proteins including off-target kinases, while volasertib resulted in the most changes (435). The median number of filtered changes per compound was 14.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C27, C31, C33-C34 document off-target effects. The OTS167 findings (C25-C27) are supported by specific quantitative data and corroborated by prior literature (Giuliano et al., 2018). The distribution of changes across compounds (C33-C34) is clearly presented in Figure 1D. The data provide strong evidence for widespread off-target engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "K562 cells were selected for PISA experiments using a 48-58\u00b0C thermal window. Treatment with CDK4/6 inhibitors (ribociclib, abemaciclib, palbociclib) caused statistically significant changes in CDK4/6 thermal stability and induced thermal destabilization of RB1, likely due to inhibition of RB1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 establish the experimental system and provide proof-of-concept data. The cell line choice (C12) is justified with citations. The temperature range selection (C13) is empirically validated and referenced to prior work (Jarzab et al., 2020). The CDK4/6 inhibitor data (C14-C16) demonstrate both on-target and secondary effects, with the RB1 interpretation supported by known biology (Narasimha et al., 2014).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "GSK-LSD1 treatment caused thermal stabilization of its primary target KDM1A (log2 fold change: 1.726; nSD: 26.825) and affected KDM1A complex partners (GSE1, RCOR1/3). The allosteric AKT inhibitor MK-2206 induced large changes in AKT1 solubility, while the ATP-competitive inhibitor CCT128930 had no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 provide specific examples of compound-target engagement. The quantitative data for GSK-LSD1 (C28) are explicitly stated and supported by Figure 1C. The observation of complex partner effects (C29) is consistent with expected biology. The differential effects of allosteric vs. ATP-competitive AKT inhibitors (C30) are clearly documented in Figure 1\u2014figure supplement 4A-B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The dual PLK1/BRD4 inhibitors volasertib and BI 2536 showed correlated PISA profiles (rspearman = 0.49, p<1.0\u00d710\u207b\u00b9\u2075). PF-3758309 treatment affected 102 proteins with significant enrichment of spliceosome subunits, consistent with prior reports of its effects on pre-mRNA splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 demonstrate the ability of PISA to identify related compounds and biological pathways. The correlation between volasertib and BI 2536 (C35) is statistically significant and biologically meaningful given their shared targets. The spliceosome enrichment for PF-3758309 (C37) is supported by prior literature (Shi et al., 2020, C38), providing independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Compound treatment more commonly resulted in thermal stabilization of known targets, though thermal destabilization was also observed (e.g., PLK1). Both positive and negative log2 fold changes represent evidence of target engagement, and the maximal ligand-induced change in thermal stability is target-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C45 characterize the nature of thermal stability changes. The observation that both stabilization and destabilization indicate engagement (C44) is supported by prior studies (Sabatier et al., 2022). The target-specific nature of maximal changes (C45) is consistent with previous observations (Savitski et al., 2014; Becher et al., 2016) and explains the wide range of fold changes observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Palbociclib and NVP-TAE-226 impacted PLK1 solubility similarly to the PLK1 inhibitors BI 2536 and volasertib, but with lower potency. Dose-response PISA and western blot validation of PLK1 activity (TCTP phosphorylation) confirmed that palbociclib and NVP-TAE-226 are weak PLK1 inhibitors, with BI 2536 being ~100-fold more potent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 identify and validate off-target PLK1 inhibition. The dose-response PISA data (C47-C49) are clearly presented in Figure 2E. The western blot validation (C50-C51) provides orthogonal confirmation and closely mirrors the PISA data (C52). The conclusion that palbociclib and NVP-TAE-226 are weak PLK1 inhibitors (C53) is supported by both PISA and functional assays, and is consistent with prior literature (Hafner et al., 2019).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Structural modeling revealed that BI 2536 exhibits steric clashing with the CDK6 active site at three points, while both palbociclib and BI 2536 can bind to the PLK1 active site without steric interference, explaining the differential selectivity observed in PISA experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 provide structural rationalization for the observed selectivity. The modeling approach is appropriate and the conclusions are consistent with the PISA data showing that BI 2536 engages PLK1 but not CDK6, while palbociclib engages both. However, the modeling is computational and would benefit from experimental structural validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "A lysate-based PISA screen of 70 compounds quantified an average of 7,840 proteins per treatment, resulting in 627,176 total thermal stability measurements. After applying the same filtering criteria as the cell-based screen, 2,176 protein solubility changes were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 describe the lysate-based screen. The experimental design (C57-C59) is clearly documented with appropriate detail. The quantification results (C60-C62) are explicitly stated and supported by figures (Figure 3A-B, Figure 3\u2014figure supplement 1A-B). The use of identical filtering criteria enables direct comparison with the cell-based screen.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "In lysate-based experiments, MK-2206 increased the solubility of AKT1/2 and additional kinases (RPS6K, PI3K subunits), while GSK-LSD1 increased KDM1A solubility and affected KDM1A binding partners, echoing observations from cell-based experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 demonstrate that lysate-based PISA can identify both on-target and off-target engagement. The data are clearly presented in Figure 3C. The observation that GSK-LSD1 affects KDM1A binding partners in both cells and lysates (C66) provides internal consistency and suggests these are direct effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The lysate-based screen yielded fewer significant changes (2,176) than the cell-based screen (3,156), as expected since lysate-based changes stem almost exclusively from direct ligand binding. The median number of changes in lysates was 66% of those in cells (9.5 vs. 14.5 proteins).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 compare the two screening approaches. The expectation of fewer changes in lysates (C67) is well-supported by prior literature (Savitski et al., 2014; Franken et al., 2015; Huber et al., 2015; Becher et al., 2016). The quantitative comparison (C68, C70) is clearly documented. The note that three compounds contribute 55% of lysate changes (C69) appropriately flags potential artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The combined application of cell- and lysate-based assays increased the on-target hit rate from ~72% (for each approach individually) to ~82% (49/60 compounds), demonstrating that combining the two approaches increases the chances of finding compound targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C71-C73 demonstrate the complementarity of the two approaches. The quantitative comparison (C71-C72) is clearly presented in Figure 3E and Figure 3\u2014figure supplement 2A. The conclusion that combining approaches improves target identification (C73) is well-supported by the data. This is a key finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Certain protein targets showed differential thermal stability responses in cells vs. lysates. GSK-1070916 and MK-2206 increased target solubility in both settings, while sotrastaurin caused PRKCA stabilization in lysates but destabilization in cells. BRD4 inhibitors caused larger changes in cells than lysates, while BRAF inhibitors affected BRAF in lysates but not cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 characterize target-specific differences between experimental settings. The examples are clearly documented in Figure 4A-D. The interpretation that certain targets are more prone to changes in one setting (C79) is supported by prior literature (Huber et al., 2015). The sotrastaurin/PRKCA example (C75-C76) suggests complex biophysical rearrangements in cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Four compounds (GSK-2656167, GSK-2606414, tozasertib, AZD-5438) significantly increased RIPK1 solubility in both cells and lysates. AZD-5438 had not been previously reported as a RIPK1 inhibitor. Dose-response PISA and western blot validation confirmed all four compounds inhibit RIPK1 autophosphorylation, with necrostatin-2 and GSK-2606414 being more potent than AZD-5438 and tozasertib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C87 identify a novel off-target activity for AZD-5438. The observation that AZD-5438 affects RIPK1 in both cells and lysates (C80, C83) provides strong evidence for direct engagement. The dose-response PISA (C84) and western blot validation (C85) are consistent and demonstrate that thermal stability measurements correlate with compound potency (C86). This is a significant finding demonstrating the power of combining cell and lysate data (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Necrostatin-2 showed greater specificity for RIPK1 than GSK-2606414, affecting only RIPK1 in lysates, while GSK-2606414 engaged other kinases (CSK, LIMK1, TBK1). AZD-5438 and tozasertib were less potent and less specific for RIPK1 than necrostatin-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 characterize the specificity of RIPK1 inhibitors. The data are clearly presented in Figure 4\u2014figure supplement 1C-F. The conclusion that necrostatin-2 is more specific (C88-C89) is well-supported by the lysate data showing it only affects RIPK1. The comparison of potency and specificity (C91) is consistent with both PISA and western blot data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Cell-based experiments can identify secondary changes in protein thermal stability independent of direct ligand binding. CDK4/6 inhibitors induced thermal destabilization of RB1 in cells but not lysates, attributed to changes in RB1 phosphorylation due to upstream CDK4/6 inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 demonstrate the ability to distinguish primary and secondary effects. The general principle (C92-C93) is well-supported by multiple citations. The RB1 example (C94-C96) is clearly documented in Figure 5A and Figure 1\u2014figure supplement 1C. The interpretation that the cell-specific effect is due to phosphorylation changes is biologically plausible and consistent with known RB1 biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "PF-3758309 caused significantly more changes in cells (102) than lysates (21), driven by spliceosome subunits that were affected in cells but not lysates. This supports the interpretation that the spliceosome thermal destabilization results from secondary changes rather than direct ligand binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 provide another example of distinguishing primary and secondary effects. The quantitative difference (C97) is clearly documented in Figure 5\u2014figure supplement 1A. The interpretation that spliceosome effects are secondary (C98-C99) is well-supported by the absence of effects in lysates and is consistent with prior literature showing PF-3758309 affects splicing (Shi et al., 2020).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "BCR-ABL-targeted compounds did not affect BCR-ABL thermal stability but caused cell-specific thermal destabilization of the BCR-ABL substrates CRKL and CRK. Compounds that decreased CRKL solubility also inhibited CRKL Y207 phosphorylation, demonstrating that thermal stability measurements can reveal kinase-substrate relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C105 demonstrate the utility of PISA for identifying kinase-substrate relationships. The observation that BCR-ABL inhibitors don't affect BCR-ABL thermal stability (C100) is consistent with prior reports (Savitski et al., 2014). The cell-specific CRKL effects (C101-C102) and correlation with phosphorylation (C103-C104) are clearly documented in Figure 5B-C. This is a valuable application of the method (C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The CHEK1 inhibitor AZD-7762 caused thermal destabilization of CRKL, but two other CHEK1 inhibitors did not, suggesting off-target engagement. Lysate-based screening and dose-response PISA revealed AZD-7762 engages many tyrosine kinases (FER, LYN, CSK, YES1). Phosphoproteomic profiling confirmed AZD-7762 inhibits tyrosine phosphorylation, suggesting it is a highly promiscuous kinase inhibitor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C113 identify extensive off-target activity for AZD-7762. The logic that differential effects among CHEK1 inhibitors suggest off-target engagement (C106-C108) is sound. The lysate data (C109-C111) provide strong evidence for direct engagement of tyrosine kinases. The phosphoproteomic validation (C112-C113) provides orthogonal confirmation and demonstrates the functional consequences of the off-target engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "A network-based approach was implemented to identify correlated thermal stability changes across the proteome. The all-by-all correlation of proteins in the cell-based dataset was mapped, filtered to the top ~5% of correlations (rspearman >0.35), and focused on 396 human kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C117 describe the network analysis approach. The methodology is clearly described and appropriate for identifying proteins with correlated responses to compound treatment. The filtering criteria (C116) are reasonable for focusing on the strongest correlations. The focus on kinases (C117) is justified given the composition of the compound library.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Highly correlated solubility profiles were observed for RPS6KA1, RPS6KA2, and RPS6KA3, which generally decreased in cells but increased in lysates following compound treatment. PRKCA solubility changes were significantly correlated with PRKCB and PRKCQ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C120 identify correlated responses within kinase families. The RPS6K correlation (C118) is clearly shown in Figure 6B. The differential behavior in cells vs. lysates (C119) is interesting and may reflect complex cellular regulation. The PRKC correlation (C120) is documented in Figure 6\u2014figure supplement 1A-B. These observations demonstrate the utility of the network approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Correlated solubility changes were observed within and between kinase families. For example, p38\u03b1/MAPK14 (CMGC kinase) showed correlated profiles with MAPKAPK2/3 (CAMK kinases), which both increased in solubility with the p38 inhibitor doramapimod. These proteins are known to act as p38 substrates and form complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 demonstrate that the network analysis can identify known biological relationships. The p38/MAPKAPK correlation (C122-C123) is clearly shown in Figure 6C-D. The observation is consistent with known biology (C124), providing validation of the approach. This demonstrates that correlated thermal stability changes can reflect protein-protein interactions and kinase-substrate relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "AGC kinases, including AKT1/2 and ROCK1/2, were particularly well correlated. The AKT1/AKT2 correlation was driven in part by their solubility change in response to the AKT inhibitor MK-2206.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 identify correlations within the AGC kinase family. The data are clearly presented in Figure 6F-G. The observation that the AKT1/AKT2 correlation is driven by MK-2206 (C126) is expected given that MK-2206 targets both isoforms. This demonstrates that the network analysis can identify proteins with shared compound sensitivities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Strong correlations were observed for non-protein kinases, including PIP4K2A, PIP4K2B, and PIP4K2C, which were highly correlated in both cells and lysates. The PLK1 inhibitor BI 2536 increased the solubility of all three PIP4K proteins, with larger magnitude changes in cells than lysates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 extend the network analysis to non-protein kinases. The PIP4K correlation (C128) is documented in Figure 6\u2014figure supplement 1C-E. The observation that BI 2536 affects PIP4K proteins (C129) is a novel finding. The larger magnitude in cells (C130) is attributed to loss of membranes and metabolites in lysates, which is a reasonable interpretation supported by prior literature (Sridharan et al., 2019b).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C131",
+      "C132"
+    ],
+    "result": "Significant correlations were observed for SRPK1, SRPK2, and RIOK2 (correlations of 0.95 and 0.77), despite these proteins not being called as hits due to large numbers of effects (SRPK1/2) or small magnitude changes (RIOK2). This suggests the initial filtering criteria may mask some real protein-compound engagements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132 identify a limitation of the hit-calling approach. The high correlations (C132) provide strong evidence that these proteins respond consistently to compound treatment. The interpretation that the filtering criteria may be overly conservative (C132) is reasonable and highlights the value of the network analysis for identifying consistent but subtle effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Strong correlations were observed between CDK16, GSK3A, and GSK3B. CDK inhibitors have been reported as active for GSK3 kinases due to structural conservation. AZD-5438 showed dual efficacy for GSK3A and CDK16. Multiple kinase inhibitors and the PARP inhibitor rucaparib increased the solubility of both GSKs and CDK16, while some compounds showed GSK3-specific effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C138 identify correlations between CDK16 and GSK3 kinases. The correlation (C133) is shown in Figure 6A. The observation is consistent with prior literature on CDK/GSK3 cross-reactivity (C134). The identification of multiple compounds affecting both CDK16 and GSK3 (C136) is a novel finding. The observation of differential responses (C137-C138) suggests the network analysis can provide insights into compound specificity.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,308 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5"
+    ],
+    "result": "Plectin expression is elevated in HCC tissues compared to non-tumor liver tissues in both human patients and mouse models, and higher plectin expression correlates with poor recurrence-free survival in HCC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C5 provide converging evidence from multiple independent datasets (17 human HCC datasets, 19 patient tissue samples, and DEN-induced mouse model) demonstrating elevated plectin in HCC. Claim C2 establishes clinical significance through survival analysis with appropriate statistical testing (log-rank test p<0.05). The consistency across human and mouse data strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "Poorly differentiated mesenchymal-like HCC cell lines display elevated plectin levels and higher migration speed compared to well-differentiated HCC cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is supported by immunoblot analysis and migration assays across multiple HCC cell lines (Figure 1D and E). The correlation between plectin levels, differentiation status (E-cadherin/vimentin markers), and migration speed is clearly demonstrated, though the mechanistic link requires further validation provided in subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Genetic ablation of plectin in hepatocytes (Plec\u0394Alb mice) significantly reduces tumor burden in DEN-induced HCC as measured by MRI and macroscopic analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 demonstrate reduced tumor number and volume in Plec\u0394Alb mice using two independent cohorts with appropriate statistical testing (t-test p<0.05, p<0.001). MRI provides quantitative longitudinal data (32 and 44 weeks), and macroscopic confirmation at 44 weeks strengthens the finding. Sample sizes appear adequate (N=5-8 mice per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Plectin inactivation reduces anchorage-independent growth in soft agar assays and subcutaneous xenograft formation of human HCC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C9 demonstrate reduced tumorigenic potential through two complementary assays. Soft agar data (C8) shows reduced colony formation with both genetic (KO, \u0394IFBD) and pharmacological (PST) plectin inactivation (p<0.01, p<0.001). Xenograft data (C9) confirms reduced tumor growth in vivo with appropriate statistical analysis (two-way ANOVA). The consistency across multiple approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "MS-based proteomic and phosphoproteomic analysis reveals that plectin inactivation significantly alters cytoskeleton-related signaling pathways including RhoA, actin cytoskeleton, integrin, FAK, and ILK signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 present comprehensive (phospho)proteomic data with appropriate statistical thresholds (FDR<0.05, s0=0.01) identifying 265 proteins (C10) and 313 phosphosites (C12) regulated by plectin ablation, and 1214 proteins/326 phosphoproteins (C13) altered by PST treatment. IPA analysis (C11) provides pathway-level interpretation. The overlap between genetic and pharmacological approaches validates the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Plectin inactivation alters expression and phosphorylation of key integrin-mediated adhesion signaling components including FAK, Akt, Erk1/2, ILK, PI3K, and focal adhesion proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 validate proteomic findings through targeted immunoblot analysis across multiple conditions (WT, KO, \u0394IFBD, PST) in two HCC cell lines. Statistical significance is demonstrated (Figure 3D, N=9 experiments). While not all changes are consistent across both cell lines (acknowledged by authors), the overall pattern supports plectin-dependent regulation of mechanosensitive signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Plectin inactivation disrupts vimentin intermediate filament networks and actin stress fiber organization in HCC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 demonstrate cytoskeletal disruption through quantitative immunofluorescence microscopy using micropattern-seeded cells to control for morphological variability. Vimentin network disruption (C16, C17) and altered actin stress fiber distribution (C18) are quantified with appropriate statistics (t-test p<0.001). The use of micropatterns and quantitative metrics strengthens the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "Plectin knockout cells exhibit reduced F-actin content and decreased cellular stiffness as measured by AFM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C20 provide functional readouts of cytoskeletal disruption through F-actin fluorescence intensity (C19) and AFM-based stiffness measurements (C20) in both Huh7 and SNU-475 cells. Statistical significance is demonstrated (t-test p<0.001, N=3, n=20 cells for AFM). The citation to prior work (Na et al., 2009) appropriately contextualizes AFM as a readout for cytoskeletal integrity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Plectin inactivation causes focal adhesion redistribution to cell interior, reduces FA number, increases FA size, and decreases contractile force transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 comprehensively characterize FA alterations through immunofluorescence (C21, C22) and traction force microscopy (C23). Quantitative metrics include FA localization, number, area, length, and contractile energy with appropriate statistics (t-test p<0.01-0.001). The functional consequence (reduced force transmission, C23) directly links structural changes to mechanical dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Plectin-disabled HCC cells exhibit reduced migration speed, more cohesive epithelial-like collective migration, and reduced leader cell polarization in scratch wound assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 demonstrate altered migration behavior through scratch wound assays in two cell lines. Quantitative speed measurements (C24, t-test p<0.001) and leader cell quantification (C26, t-test p<0.001) support the conclusions. The qualitative observation of cohesive migration (C25) is consistent with the quantitative data but represents a more descriptive finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Plectin inactivation reduces mesenchymal cell morphology in 2D and 3D environments and decreases expression of mesenchymal markers N-cadherin and vimentin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 demonstrate a shift toward epithelial phenotype through cell shape analysis (C27, Figure 5C) and molecular marker expression (C28, immunoblot with t-test p<0.05, p<0.01, N=8). The consistency between morphological and molecular changes supports an epithelial shift, though the mechanistic connection to plectin's cytoskeletal functions could be more direct.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Plectin inactivation impairs directed cell migration by reducing processivity, trajectory linearity, and the ability to form stable protrusions in the direction of chemotactic motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 provide detailed characterization of migration defects through single-cell tracking and morphodynamic analysis. Reduced processivity (C29, t-test p<0.01, p<0.001), less linear trajectories (C30), altered protrusion frequency (C31), and impaired directional protrusion stability (C32) are quantified with appropriate statistics. The morphodynamic analysis (C32) is particularly rigorous, distinguishing random from directed migration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Plectin inactivation significantly reduces 3D invasion capacity of HCC cells in both transwell and spheroid assays, accompanied by defects in ECM degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 demonstrate reduced invasion through complementary 3D assays (transwell and spheroid) with appropriate statistics (t-test p<0.01, p<0.001). The gelatin degradation assay (C34) provides mechanistic insight into reduced invasion, though the connection between cytoskeletal disruption and matrix degradation could involve multiple pathways beyond direct mechanical effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C66"
+    ],
+    "result": "High PLEC expression is associated with advanced TNM stages in HCC patients, underscoring plectin's prognostic value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35 and C66 analyze a large patient cohort (n=978) demonstrating association between PLEC expression and TNM staging (Wilcoxon rank-sum test p<0.05, p<0.01). This complements the survival analysis (C2) and strengthens the clinical relevance. The large sample size and appropriate non-parametric statistics support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Plectin inactivation (genetic and pharmacological) reduces metastatic outgrowth in the lung and prolongs survival in a tail vein injection model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 demonstrate reduced metastatic capacity through survival analysis (C36, log-rank test p<0.05) and quantification of lung metastases using lattice light sheet microscopy (C37, t-test p<0.05-0.001). The use of advanced imaging for 3D quantification of metastatic burden is rigorous. PST treatment mimics genetic ablation, supporting therapeutic potential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Both genetic and pharmacological plectin inactivation reduce tumor burden in the Myc;sgTp53 HCC model without affecting proliferation or apoptosis rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 demonstrate reduced tumor number, incidence, and liver/body weight ratio through MRI and macroscopic analysis (t-test p<0.05). Claim C40 shows comparable Ki67 and TUNEL staining across conditions, suggesting mechanisms other than proliferation/apoptosis. This is consistent with the migration/invasion defects demonstrated earlier, though alternative mechanisms warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C65"
+    ],
+    "result": "Plectin expression correlates with oncogenic signaling pathways (PI3K/Akt, FAK, Erk, integrin) and aggressive cancer traits in HCC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42, and C65 translate findings from cell lines and mouse models to human patients through analysis of large cohorts (n=1268 for C42). GSEA analysis (C41) and correlation analysis (C42) with appropriate statistics link plectin to mechanosensitive signaling pathways. Association with aggressive traits (C65) strengthens clinical relevance. The consistency across experimental systems and patient data is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48"
+    ],
+    "result": "Plectin plays a crucial role in HCC development and metastasis through control of cytoskeletal architecture and mechanosensitive oncogenic signaling (FAK, MAPK/Erk, PI3K/Akt).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C48 represent the main conclusions synthesizing results from multiple experimental approaches. The evidence chain from cytoskeletal disruption (C48) through signaling pathway attenuation (C46) to reduced tumor growth (C44) and metastasis (C45) is well-supported by the individual results. The mechanistic link between plectin, cytoarchitecture, and oncogenic signaling is demonstrated across cell lines, mouse models, and patient data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C47",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The plectin inhibitor plecstatin-1 (PST) is well-tolerated and effectively mimics genetic plectin ablation in inhibiting HCC progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C72-C74 establish PST as a potential therapeutic through demonstration of tolerability (C72, with comparison to other ruthenium drugs), phenotypic similarity to genetic ablation (C73, C74), and efficacy in multiple models (C47). The consistency between PST and genetic approaches throughout the study (soft agar, xenografts, mouse models, signaling) provides strong validation. However, C75 appropriately acknowledges potential pleiotropic effects requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C49",
+      "C75"
+    ],
+    "result": "Pharmacological disruption of mechanical homeostasis through plectin inhibition may represent a new therapeutic strategy for HCC, though pleiotropic effects cannot be ruled out.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C49 proposes a therapeutic strategy based on the study's findings, while C75 acknowledges important limitations. The therapeutic potential is supported by PST efficacy data, but C75 correctly notes that despite high selectivity, pleiotropic effects in the liver cannot be excluded and further mechanistic studies are needed. The speculative nature of C49 and the acknowledged limitations in C75 make this conclusion uncertain pending additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Background and context claims establishing the role of tissue mechanics in cancer, plectin's function, HCC epidemiology, and current therapeutic limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C71 provide established background knowledge supported by appropriate citations to prior literature. These claims contextualize the study within existing knowledge of mechanobiology (C51-C55), plectin function (C56-C61, C67-C68), HCC epidemiology (C50, C62-C63), and therapeutic challenges (C69-C71). The citations appear appropriate and the statements represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

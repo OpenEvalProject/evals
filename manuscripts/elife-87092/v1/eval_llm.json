@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "IL-6/JAK/STAT signaling pathway components are upregulated in human tendinopathic tendons. GSEA shows positive enrichment of the IL-6/JAK/STAT pathway (q=0.003), with significant upregulation of IL6, IL6ST, ADAM10, ADAM17, STAT3, and IL11 transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C5-C8 provide converging evidence from GSEA (q=0.003) and individual transcript analysis with appropriate statistical testing (p<0.05). The microarray analysis includes proper controls (18 normal vs 18 tendinopathic samples) and multiple analytical approaches (differential expression, pathway enrichment) that consistently support IL-6 pathway activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "IL6RA transcript expression trends toward downregulation in tendinopathic tendons with effect size -0.423 and p=0.116.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C4 reports a trend that does not reach statistical significance (p=0.116). While the effect size is moderate, the lack of statistical significance means this finding cannot be definitively supported. The authors acknowledge this as a trend rather than a significant finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Collagen transcripts COL1A1, COL1A2, and COL18A1 are significantly upregulated in human tendinopathic tendons, consistent with aberrant matrix turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 show statistically significant upregulation of collagen genes (p<0.05 for all) with moderate to large effect sizes (0.523-1.112). These findings align with established tendinopathy hallmarks and are supported by appropriate statistical testing of microarray data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Gene sets related to tendinopathy hallmarks including angiogenesis, hypercellularity, wound healing, and fibroblast signatures are enriched in human tendinopathic tendons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 are supported by GSEA and GO overrepresentation analysis showing enrichment of pathways consistent with known tendinopathy features. The analysis uses established gene set databases (MSigDB) and appropriate statistical methods (FDR-adjusted p-values), with results visualized in Figures 1C-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CD90+ and IL-6R+ cells are significantly increased in human tendinopathic tendons compared to controls, while IL-6+ cells show only slight increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 are based on quantitative immunofluorescence microscopy with appropriate sample sizes (N=7-8) and statistical testing. CD90+ cells (median 45.6% vs 4.3%, p<0.01) and IL-6R+ cells (median 37.5% vs 5.3%, p<0.05) show significant increases, while IL-6+ cells show non-significant trends. The spatial proximity-based quantification method is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "In tendinopathic tendons, IL-6 and IL-6R co-localize predominantly with CD90+ fibroblasts rather than CD68+ macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 demonstrate significant preferential co-localization using spatial proximity analysis with statistical testing (N=7-8 samples). IL-6+ cells are 50.2% CD90+ vs 5.02% CD68+ (p<0.05), and IL-6R+ cells are 95.0% CD90+ vs 37.0% CD68+ (p<0.01). The methodology appropriately addresses cellular sources of IL-6 signaling components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "IL-6 is secreted by core explants but not by extrinsic fibroblasts in the assembloid model, and IL-6R is present on CD45+ cells from core explants but not on extrinsic fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by secretome analysis (Figure 4\u2014supplement 3A) and flow cytometry (Figure 4\u2014supplement 3B) with appropriate controls (N=6 for secretome, N=3 for flow cytometry). These findings establish the directionality of IL-6 signaling in the assembloid model and support the trans-signaling hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "IL-6 signaling from core explants activates extrinsic fibroblasts, promoting gene expression changes related to cellularity and ECM turnover. IL-6 KO cores show 256 upregulated and 98 downregulated genes in surrounding fibroblasts, with enrichment of processes linked to tendinopathy hallmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 are supported by bulk RNA-seq analysis (N=6 biological replicates) with appropriate statistical methods (adjusted p<0.05). The directional analysis showing IL-6 positively correlates with cellularity and ECM turnover processes is well-supported by GO enrichment and GSEA data (Figure 5 and supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "IL-6 signaling promotes fibroblast proliferation and core-directed migration in assembloids. WT cores show higher total cell numbers and ScxGFP cell recruitment than KO cores. Tocilizumab reduces these effects, while recombinant IL-6 rescues proliferation but not migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 are supported by quantitative fluorescence microscopy (N=12 biological replicates) with appropriate statistical testing (p<0.05 or p<0.01). The differential rescue of proliferation vs migration by recombinant IL-6 (C29-C30) suggests gradient-dependent mechanisms. The experimental design includes proper controls and pharmacological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31"
+    ],
+    "result": "IL-6 knockout does not detectably alter ScxGFP cell distribution in acutely damaged Achilles tendons 14 days post-tenotomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C31 is supported by fluorescence microscopy analysis of in vivo tenotomy samples (N=4 per group). While negative results require cautious interpretation, the authors appropriately acknowledge high variability and the acute (rather than chronic) nature of the 14-day timepoint. The result is clearly stated as observational with no detectable differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Extrinsic fibroblasts induce tendinopathy-associated gene expression changes in core explants, including upregulation of ECM turnover genes (Col3a1, Mmp13, Mmp3) and fibroblast markers (Scx, Sox9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 are supported by bulk RNA-seq analysis (N=4 biological replicates) showing 446 upregulated and 217 downregulated genes. The specific genes highlighted show strong statistical significance (p<0.001 for most) and align with known tendinopathy markers. The enrichment of fibroblast signatures and ECM remodeling processes is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C69"
+    ],
+    "result": "IL-6 KO in core explants reduces fibroblast-induced tendinopathy hallmarks, with 276 upregulated and 192 downregulated genes. About one-third of fibroblast-enriched processes are also affected by IL-6 KO, particularly those related to cellularity and ECM turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 and C69 are supported by RNA-seq analysis (N=4) with appropriate statistical methods. The Venn diagram analysis (Figure 9E) quantitatively demonstrates overlap between fibroblast effects and IL-6 signaling. The directional analysis showing decreased cellularity and ECM turnover in KO cores provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C70"
+    ],
+    "result": "IL-6 signaling accelerates mechanical deterioration of core explants. WT core assembloids with fibroblasts show the greatest decrease in linear elastic modulus over 21 days, while KO and devitalized cores show less degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C70 are supported by mechanical testing (N=8) showing differential degradation rates. While statistical significance is not reported between groups (stated as n.s. in Figure 9F), the trends are consistent with RNA-seq data on ECM turnover. The connection to catabolic processes is appropriately inferred from combined mechanical and transcriptomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The analyzed microarray dataset contains 18 normal and 18 tendinopathic non-sheathed human tendon samples after excluding sheathed tendons, with 240 upregulated and 474 downregulated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 accurately describe the dataset composition and filtering rationale. The exclusion of sheathed tendons is justified by PCA analysis (Figure 1\u2014supplement 1) showing distinct clustering. The differential expression analysis follows standard methods with appropriate statistical thresholds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "IL-6 spatial distribution differs between normal and tendinopathic tendons, being confined to the extrinsic compartment in controls but more evenly distributed in tendinopathic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are based on visual observation and quantification of immunofluorescence images (Figure 2B). While the compartment identification relies on morphological features (cell shape), the spatial distribution differences are clearly documented. The quantification (Table 2) shows only slight increases in IL-6+ cells, consistent with redistribution rather than massive upregulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors speculate that IL6RA transcript downregulation with IL-6R protein upregulation indicates increased trans-signaling, with IL-6R potentially transferred from CD68+ cells to CD90+ fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C63 are explicitly speculative interpretations of the transcript-protein mismatch and co-localization data. While the speculation is reasonable and supported by citations to trans-signaling mechanisms, these remain hypotheses requiring direct experimental validation. The authors appropriately acknowledge uncertainty with phrases like 'we speculate' and 'could be.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "The differential rescue of proliferation vs migration by recombinant IL-6 suggests gradient-dependent mechanisms or IL-6's role as an energy allocator, supported by upregulation of oxidative stress/hypoxia processes in KO conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 present mechanistic interpretations of experimental observations. While the differential rescue (C30) is well-documented, the proposed mechanisms (gradient necessity, energy allocation) are speculative. The oxidative stress/hypoxia enrichment (C66) supports metabolic involvement but doesn't definitively establish causality. These interpretations require further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C71"
+    ],
+    "result": "The authors speculate that compensatory mechanisms in IL-6 KO mice and reduced fibroblast presence may explain some observations, and that decelerated ECM turnover could explain delayed wound healing in IL-6 KO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 and C71 are explicitly speculative, attempting to reconcile in vitro findings with in vivo observations and prior literature. While the speculation is reasonable and acknowledges limitations, these remain hypotheses. The connection to delayed wound healing (C71) cites prior work (Lin et al., 2006) but the mechanistic link requires direct testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Background claims establishing tendinopathy prevalence, IL-6 signaling mechanisms, and the role of IL-6 in other tissues are supported by appropriate citations to established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C55 provide essential background context supported by multiple citations to peer-reviewed literature. These claims establish the scientific foundation for the study's hypotheses. While the accuracy of cited work is assumed, the citations appear appropriate and the claims represent accepted knowledge in the field.",
+    "result_type": "MINOR"
+  }
+]

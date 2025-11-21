@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The Eco-HAB system is an automated experimental setup using RFID tracking to monitor cohorts of 10-15 mice in four connected compartments over 10 days with 12-hour light-dark cycles. The system employs 125 kHz antennas at tunnel ends to track individual mice tagged with unique RFID tags.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the Eco-HAB system, with one stating it 'demonstrates that the Eco-HAB can be used for high throughput, standardized and automated tests.' The editor describes the work as investigating 'mice living together in a system of multiple connected cages,' confirming acceptance of the experimental setup description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C43",
+      "C71",
+      "C74"
+    ],
+    "result": "Maximum entropy models applied to co-localization patterns reveal that pairwise interactions among mice are sufficient to describe collective behavior in the Eco-HAB, disentangling individual preferences from social interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states the work 'provides solid evidence for a statistical approach capturing changes in social interactions,' and a reviewer describes 'the quantitative approach to analyzing social interactions' as 'laudable.' Both reviewers accept the pairwise interaction model without questioning its sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C102"
+    ],
+    "result": "Models with triplet interactions show signs of overfitting under cross-validation, indicating that even for the largest datasets, including triplet interactions increases model complexity beyond what the data allows.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not directly challenge this finding, one notes that 'the Eco-HAB provides coarser spatial information compared to some other approaches, which may influence the conclusions.' This suggests the reviewer recognizes that spatial resolution limitations could affect the assessment of higher-order interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C38",
+      "C45"
+    ],
+    "result": "The statistics of inferred interaction strength capture social structure, with measurements of location preference and in-cohort sociability remaining stable over time. Individual locomotor activity shows greater variability across mice than day-to-day variability within individuals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these stability findings or the characterization of individual differences. The editor's statement that the work provides 'solid evidence for a statistical approach' implicitly accepts these foundational observations about behavioral stability and individual characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C62",
+      "C63",
+      "C72"
+    ],
+    "result": "Altering neuronal plasticity in the prelimbic cortex via TIMP-1 injection does not eliminate social interactions but makes social information transmission more challenging. TIMP-1 treatment increases individual compartment preferences and model predictability, with effects returning to baseline after 5 days consistent with TIMP-1 release kinetics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor states the work shows 'changes in social interactions after manipulating prefrontal cortical plasticity,' but a reviewer raises a critical concern: 'A demonstration of TIMP-1 impairing neural plasticity specifically in the prelimbic cortex of the treated animals would greatly strengthen the biological conclusions.' This indicates the mechanistic link between TIMP-1 and plasticity changes is not fully validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C64",
+      "C68"
+    ],
+    "result": "The control cohort (M4) injected with BSA-loaded nanoparticles shows an increase in food compartment preference that does not return to baseline after 5 days, suggesting injection procedure effects independent of neuronal plasticity changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the control experiment findings. The inclusion of BSA controls is implicitly accepted as appropriate, and no concerns are raised about the interpretation that injection procedures contribute to behavioral changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C65",
+      "C66",
+      "C76",
+      "C77"
+    ],
+    "result": "Sex-specific differences emerge in response to TIMP-1 treatment: males show increased individual preferences while females show increased pairwise interaction contributions. Both sexes demonstrate increased competitive pairwise interactions, but with different patterns of change in mutual information and conditional likelihood.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the sex-specific findings. The observation of differential responses between male and female cohorts is presented as data without methodological concerns raised by reviewers, suggesting implicit acceptance of these sex differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "The model prediction for in-state probabilities matches observed data, demonstrating that the model provides unbiased estimates of individual mouse positions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this validation result. The statement that the work provides 'solid evidence for a statistical approach' from the editor encompasses acceptance of model validation procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Despite non-zero sociability, the precise position of individual mice at any single moment is difficult to predict from the network, with average mutual information of 0.0323 \u00b1 0.0151 bits for cohort M1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question this finding about the limits of predictability. The low mutual information values are presented as a quantitative measure without methodological concerns raised.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C83"
+    ],
+    "result": "The Eco-HAB combined with maximum entropy modeling provides a generalizable toolbox to quantify sociability in mice across different strains and behavioral phenotypes, offering a balance between semi-natural environment and controllability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "A reviewer explicitly states the study 'demonstrates that the Eco-HAB can be used for high throughput, standardized and automated tests of the effects of brain manipulations on social structure in large groups of mice,' directly supporting the claim of generalizability and utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24"
+    ],
+    "result": "The prelimbic cortex (PL) is crucial for sociability, playing key roles in processing social information, maintaining social hierarchy, and demonstrating dynamic neuronal plasticity. Sustained TIMP-1 release impedes updating of neuronal connectivity in the PL.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the editor accepts that the work involves 'manipulating prefrontal cortical plasticity,' a reviewer specifically requests 'a demonstration of TIMP-1 impairing neural plasticity specifically in the prelimbic cortex of the treated animals,' indicating that the direct evidence for TIMP-1's effects on PL plasticity in this study is insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Unlike Shemesh et al. who found triplet interactions necessary, this study finds pairwise models sufficient. Differences may arise from experimental arena design, spatial resolution of data (coarse-grained vs. precise), or group size (10-15 vs. 4 mice).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "A reviewer notes 'the Eco-HAB provides coarser spatial information compared to some other approaches, which may influence the conclusions,' directly acknowledging that methodological differences could explain the discrepancy with Shemesh et al. This suggests the reviewer views the comparison as uncertain rather than definitively resolved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Mice are often found co-localized in the same compartment, especially during light phases, corresponding to the ethological behavior of sleeping in a pile to keep warm.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question this basic behavioral observation. The description of co-localization patterns is accepted as part of the foundational data for the statistical modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The current model is purely static, describing concurrent positions without modeling cohort dynamics. Future work will require dynamic models to capture behaviors like dominant mice chasing others.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this acknowledged limitation. The authors' recognition of the static nature of their model and need for future dynamic approaches is accepted without critique.",
+    "result_type": "MINOR"
+  }
+]

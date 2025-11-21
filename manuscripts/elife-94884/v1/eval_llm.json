@@ -1,0 +1,224 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "A novel doxycycline-inducible CRISPR activation system (iSAM) was developed and validated in multiple cell types. The system demonstrates dose-dependent, DOX-inducible gene activation that translates to protein expression. A modified gRNA backbone (2.1) with a capture sequence enables detection during scRNAseq without altering activation efficiency. Transgene silencing in undifferentiated iPSCs was overcome using sodium butyrate treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C9, C54-C66 provide comprehensive experimental validation of the iSAM system across multiple cell types (HeLa, hESCs, iPSCs) with appropriate controls. The dose-response relationships (C62-C64, C66), specificity controls (C65), and technical validation of the gRNA modification (C9) are well-documented with quantitative data. The sodium butyrate rescue of transgene silencing (C55-C60) is supported by flow cytometry and does not affect cell viability (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C35",
+      "C36",
+      "C38"
+    ],
+    "result": "Comparative transcriptomic analysis between in vitro-derived and in vivo AGM haemogenic endothelium identified nine transcription factors (RUNX1T1, NR4A1, GATA2, SMAD7, ZNF124, SOX6, ZNF33A, NFAT5, TFDP2) expressed at lower levels in vitro. Five of these genes had prior associations with haematopoiesis, while four (ZNF124, ZNF33A, NFAT5, TFDP2) represent novel candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C7, C35-C36, C38 are supported by comparative scRNAseq analysis with appropriate in vivo and in vitro datasets (Zeng et al., 2019; Fidanza et al., 2020). The identification pipeline is clearly described and validated across multiple AGM datasets (C2). The distinction between previously known (C35) and novel candidates (C36) is appropriately made with citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "iCRISPRa activation of the nine target transcription factors resulted in successful activation of eight genes (all except ZNF124) and led to a 3.33\u00b10.73-fold expansion of CD34+DLL4+ arterial endothelial cells. ScRNAseq analysis confirmed significant overrepresentation of the arterial cluster in DOX-treated iSAM-AGM cells compared to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C10, C50-C53 are well-supported by multiple complementary approaches including scRNAseq (C50-C53) and flow cytometry (C10). The quantitative expansion of arterial cells is validated with appropriate controls (iSAM_NT) and statistical analysis. The failure to activate ZNF124 (C50) is transparently reported. Pan-endothelial marker expression patterns (C52) are consistent with expected EHT biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C33"
+    ],
+    "result": "Activation of target transcription factors increased CFU-E and CFU-GM colonies while reducing CFU-M in iSAM-AGM samples treated with DOX, with no significant DOX effect in control samples. This demonstrates that activation of the nine target genes leads to expansion of arterial cells and increased progenitor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C33 are supported by colony-forming unit assays with appropriate controls. The differential effects on colony types (increased CFU-E and CFU-GM, decreased CFU-M) suggest specific functional changes rather than general proliferation. The lack of DOX effect in control samples (C11) strengthens the conclusion that effects are specific to target gene activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "IGFBP2 was identified as the most upregulated gene in arterial cells upon target gene activation. RUNX1T1-specific gRNAs were significantly enriched in arterial cells from DOX-treated iSAM_AGM, suggesting IGFBP2 expression may be downstream of RUNX1T1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C12-C14 identify IGFBP2 as the most upregulated gene (C12, supported by scRNAseq) and show enrichment of RUNX1T1 gRNAs in arterial cells (C13). However, the causal link between RUNX1T1 and IGFBP2 (C14) is speculative and based on correlation. The manuscript acknowledges this is inferential and that RUNX1T1 lacks a DNA binding domain (C41), requiring cofactors (C42). Direct mechanistic validation is absent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C21"
+    ],
+    "result": "Exogenous IGFBP2 treatment significantly increased total haematopoietic CFU colonies and expanded CD34+ and CD43+ cell populations without affecting DLL4+ arterial cell production. This indicates IGFBP2 acts through a mechanism distinct from the gene activation-mediated arterial expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C19, C21 are supported by colony-forming assays and flow cytometry with appropriate controls. The observation that IGFBP2 increases progenitors (C15, C19) without increasing arterial cells (C16) is well-documented and supports the inference of distinct mechanisms (C17). Multiple independent experiments validate increased haematopoietic production (C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C22",
+      "C40"
+    ],
+    "result": "IGFBP2 is highly expressed in the human AGM niche, with highest expression in endothelial cells both in vivo and in vitro. Previous studies reported IGFBP2 expression in the AGM at CS14 when HSCs emerge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C22, C40 are supported by analysis of published in vivo scRNAseq data (Calvanese et al., 2022) and the authors' in vitro data. The expression pattern across cell types in the AGM niche (C20) is clearly shown. The inference that endothelial cells are the likely source (C22) is reasonable given the expression data. Prior literature (C40) provides additional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C30"
+    ],
+    "result": "IGFBP2 induced transcriptome changes specifically at day 13 of differentiation. A cluster of endothelial cells enriched for growth factor binding genes showed arterial identity (GJA4+) with reduced DLL4 and increased RUNX1 expression in IGFBP2-treated cells, suggesting IGFBP2 supports acquisition of haemogenic capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26, C30 are supported by time-course scRNAseq analysis. The temporal specificity (day 13, C23, C30) is validated by comparing day 10 and day 13 samples. The identification of a specific endothelial cluster (C24) with coordinated changes in arterial (DLL4 down) and haemogenic (RUNX1 up) markers (C25) provides mechanistic insight. The inference about haemogenic capacity (C26) is reasonable given the marker expression patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C34"
+    ],
+    "result": "IGFBP2 treatment upregulated oxidative phosphorylation genes and induced a metabolic shift from glycolysis to mitochondrial respiration. IGFBP2-treated cells showed reduced glycolytic ATP production, increased mitochondrial ATP contribution, and downregulation of glycolytic enzymes at day 13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C34 are supported by multiple complementary approaches: KEGG pathway analysis (C27), Seahorse ATP production measurements (C28), and gene expression analysis (C29). The metabolic shift is quantitatively demonstrated with appropriate controls and is temporally specific to day 13. The integration of transcriptomic and functional metabolic data strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "IGFBP2 treatment did not alter cell cycle distribution of haematopoietic progenitors, indicating the increased progenitor production is not due to enhanced proliferation. The effect of IGFBP2 occurs prior to or during EHT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C32 are supported by cell cycle analysis using DAPI staining and flow cytometry. The absence of cell cycle changes (C31) combined with increased progenitor numbers provides evidence that IGFBP2 acts during cell fate specification rather than proliferation. The inference about timing (C32) is logical given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18"
+    ],
+    "result": "CD34+DLL4+ and CD34+DLL4- cells showed different capacities to generate suspension cells on OP9, with DLL4- cells containing the largest progenitor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C18 is supported by sorted cell population experiments. This result provides important context for understanding the relationship between arterial identity and progenitor potential, supporting the interpretation that EHT involves downregulation of arterial markers like DLL4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C37",
+      "C39",
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C54",
+      "C61"
+    ],
+    "result": "The manuscript provides background knowledge about haematopoietic development, including the role of haemogenic endothelium, EHT process, metabolic switches, RUNX1T1 structure, IGFBP2 function in mice, and the AAVS1 locus properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C37, C39, C41, C43-C46, C54, C61 represent established knowledge from the literature, appropriately cited. These provide necessary context for interpreting the experimental results. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C42",
+      "C48",
+      "C49"
+    ],
+    "result": "The manuscript discusses future directions and limitations, including the need for further studies on novel candidate genes, identification of RUNX1T1 cofactors, broader applicability of the method, and challenges with gRNA detection in long differentiation protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C42, C48-C49 appropriately acknowledge limitations and speculate about future applications. The recognition that novel candidates require further validation (C36), that RUNX1T1 mechanism needs elucidation (C42), and that technical limitations exist (C49) demonstrates appropriate scientific caution. The speculation about broader applicability (C48) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "The study demonstrates that combining CRISPR-mediated activation with single-cell transcriptomic analysis in differentiating hPSCs is a powerful approach to alter cell fate and study gene function during human development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 is a reasonable conclusion drawn from the experimental results. The successful application of the integrated approach (iCRISPRa + scRNAseq) to identify IGFBP2 and characterize its effects validates this methodological claim. However, broader validation across other developmental processes would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  }
+]

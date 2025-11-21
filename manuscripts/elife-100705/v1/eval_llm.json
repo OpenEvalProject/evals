@@ -1,0 +1,403 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Histological analysis confirms the spatiotemporal location of embryos/oocytes in the oviduct during preimplantation development. Fertilized eggs are in the ampulla at 0.5 dpc, two-cell embryos in the isthmus at 1.5 dpc, 8-cell to morula stage embryos at the UTJ at 2.5 dpc, and all embryos have transited to the uterus by 3.5 dpc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by histological H&E staining data shown in Figure 1A. The observations are consistent with established knowledge of embryo transit through the oviduct and provide necessary validation for the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The IA and IU regions of the oviduct exhibit distinct transcriptional profiles, with the IU region showing more dynamic changes during preimplantation development. PCA analysis reveals that 0.5 dpc samples segregate distinctly from 1.5-3.5 dpc samples along PC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by bulk RNA-seq PCA analysis (Figure 1B) and heatmap clustering (Figure 1C, D). The regional differences are consistent with prior work (Harwalkar et al., 2021), and the temporal segregation at 0.5 dpc is clearly demonstrated. Sample size (n=3/region/timepoint) is adequate for transcriptomic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C22",
+      "C23"
+    ],
+    "result": "At 0.5 dpc, the IU region shows enrichment of pro-inflammatory biological processes including neutrophil migration, cytokine response, and inflammatory response when sperm are present. Simultaneously, metabolic pathways related to pyruvate and glucose metabolism are upregulated, suggesting preparation for embryo metabolic needs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20, C22-C23 are supported by gene ontology analysis of bulk RNA-seq data (Figure 1\u2014figure supplement 2). The enrichment of both inflammatory and metabolic pathways at 0.5 dpc in the IU region is statistically significant and biologically coherent. The comparison between 0.5 dpc and 0.5 dpp (presence vs. absence of sperm) strengthens the conclusion that sperm drive these responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "TNF signaling pathway genes are upregulated at 0.5 dpc compared to 0.5 dpp in the IU region, but most of these upregulated genes become downregulated by 1.5 dpc, suggesting suppression of inflammatory responses once sperm are cleared to create a conducive environment for embryo survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 are supported by KEGG pathway analysis (Figure 1\u2014figure supplement 3A, B). The temporal dynamics showing upregulation at 0.5 dpc followed by downregulation at 1.5 dpc provide strong evidence for the proposed model of inflammatory response suppression. However, C26 is somewhat inferential and would benefit from additional functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "scRNA-seq analysis identifies all previously reported cell types in the oviduct with minimal overlap between IA and IU regions. Two unique clusters are identified: an Ephx2+ cluster present only at SO 0.5 dpc and SO estrus, and a neutrophil cluster (Ly6g+) present only at SO 0.5 dpc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 are supported by scRNA-seq analysis (Figure 1E-G). The identification of cell types is consistent with prior work (McGlade et al., 2021), and the regional segregation is clearly demonstrated. The temporal specificity of the Ephx2+ and neutrophil clusters is notable, though the functional significance of the Ephx2+ cluster remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "MAPK signaling pathway genes are dynamically regulated during preimplantation development, with upregulation at SO 0.5 and SO 1.5 dpc. Dusp5 expression is significantly higher at 0.5 dpc compared to 0.5 dpp, while Mapk14 (p38\u03b1) is upregulated at 1.5 dpc compared to 0.5 dpc, suggesting MAPK pathway involvement in inflammatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C63-C65 are supported by scRNA-seq analysis (Figure 1\u2014figure supplement 3C, D) and qPCR validation (Figure 1\u2014figure supplement 3E, F). The qPCR validation strengthens the scRNA-seq findings. The connection to MAPK pathway involvement in inflammation is supported by cited literature (Arthur and Ley, 2013; Kaminska, 2005), though the mechanistic link could be more directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C4"
+    ],
+    "result": "Secretory epithelial cells are identified as the key modulators responsible for regulating pro- and anti-inflammatory responses during pregnancy establishment, as demonstrated by cell-type specific gene ontology enrichment analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C4 are supported by scRNA-seq gene ontology analysis comparing secretory and ciliated cells (Figure 1H, I). Secretory cells show significantly stronger enrichment for inflammatory pathways compared to ciliated cells. This is a novel finding that identifies the specific cellular source of inflammatory mediators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Oviductal luminal proteomics are dynamic during preimplantation development. Proteins from 0.5 dpc segregate from other timepoints, and superovulation stimulates production of more abundant and unique proteins compared to natural fertilization. Hundreds of differentially abundant proteins are identified at each timepoint comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by LC-MS/MS proteomic analysis (Figure 2A-F). The segregation of 0.5 dpc samples is consistent with transcriptomic data. The quantification of differentially abundant proteins is clearly presented. However, the use of pooled samples (n=3 mice pooled per timepoint) limits statistical power and the ability to assess biological variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "A subset of 100 shared proteins between estrus vs. 0.5 dpc and 0.5 dpc vs. 1.5 dpc are enriched for pro-inflammatory Reactome pathways including neutrophil degranulation and innate immune system. Superovulation conditions exacerbate pro-inflammatory protein expression compared to natural fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 are supported by Reactome pathway analysis of proteomic data (Figure 2G, I). The enrichment of inflammatory pathways at the protein level corroborates the transcriptomic findings. The observation that SO exacerbates inflammation is important for interpreting ART outcomes, though the mechanistic basis is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C72",
+      "C73"
+    ],
+    "result": "In situ hybridization validates the presence of inflammatory markers in the oviduct at 0.5 dpc. Tlr2 expression is significantly increased at 0.5 dpc compared to 0.5 dpp in the isthmus and UTJ. Ptprc+ and Ly6g+ signals are present in stromal and epithelial layers but not in the luminal space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C72-C73 are supported by RNAScope in situ hybridization (Figure 3A, B). The spatial localization of inflammatory markers provides important validation of the transcriptomic and proteomic findings. The absence of Ly6g+ cells in the luminal space is notable and suggests that neutrophils are recruited to the tissue but do not enter the lumen. Sample size (n=3) is adequate for this type of analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C45",
+      "C77"
+    ],
+    "result": "NF\u03baB fluorescent signal is significantly greater at 0.5 dpc compared to 1.5 dpc or 0.5 dpp, indicating conditions favorable for pro-inflammation at 0.5 dpc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C77 are supported by immunofluorescent staining (Figure 3C, D). The quantification method using FIJI software is appropriate, and the statistical significance is clearly demonstrated (n=30 measurements per timepoint from 3 mice). This provides additional validation of the pro-inflammatory state at 0.5 dpc.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The p-p38:total p38 ratio is significantly increased at 0.5 dpp compared to 0.5 dpc, suggesting that mating itself induces an inflammatory response regardless of sperm exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by immunoblotting analysis (Figure 3E, F). However, this finding appears contradictory to other results showing stronger inflammatory responses in the presence of sperm (0.5 dpc vs. 0.5 dpp). The interpretation that mating alone induces inflammation is plausible but requires reconciliation with the broader dataset. Sample size (n=3) is minimal for this type of analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "IL1\u03b2 protein levels show no significant difference between timepoints as measured by ELISA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by ELISA data (Figure 3G). This negative result is important as it suggests that not all pro-inflammatory cytokines are elevated at 0.5 dpc, or that IL1\u03b2 may not be a primary mediator in this context. The lack of difference could also reflect technical limitations of the assay or tissue sampling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "An innate immune response occurs at 0.5 dpc in the isthmus and UTJ regions, with some responses induced by seminal plasma regardless of sperm presence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by the combined analysis of multiple markers (Tlr2, Ptprc, Ly6g, NF\u03baB, p38). The distinction between sperm-specific and seminal plasma-induced responses is important but somewhat uncertain given the mixed results (e.g., p38 phosphorylation higher at 0.5 dpp). Additional experiments with isolated sperm vs. seminal plasma would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C101",
+      "C102"
+    ],
+    "result": "A transformer-based machine learning model effectively predicts protein abundance from bulk RNA-seq data and identifies influential transcription factors. The model predictions recapitulate the temporal progression observed in empirical multi-omics data, showing pro-inflammatory conditions at 0.5 dpc, ciliogenesis at 1.5 dpc, and cellular homeostasis at 2.5 dpc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51-C52, C101-C102 describe the development and application of a transformer model. While the model is described as effective with 'high accuracy,' critical details are missing: (1) quantitative performance metrics are relegated to a supplementary file not provided in the main text, (2) the validation approach using only 2.5 dpc data is limited, (3) the biological interpretation of 'influential transcription factors' based on attention weights requires validation, and (4) the claim that the model 'recapitulates' biological processes is inferential and not directly demonstrated. The approach is novel and promising but requires more rigorous validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Comparison of mouse sperm-induced inflammation with human hydrosalpinx samples reveals differences in inflammatory cell types. Mouse oviducts show neutrophil-mediated acute inflammation, while human hydrosalpinx displays chronic inflammation involving macrophages and NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C56, C95-C97 are based on reanalysis of publicly available human scRNA-seq data. While some sperm-induced genes are upregulated in hydrosalpinx (C53), the differential expression appears marginal (C54). The comparison between acute (mouse) and chronic (human) inflammation is reasonable but confounded by: (1) different inflammatory contexts (sperm exposure vs. pathological hydrosalpinx), (2) species differences, and (3) limited overlap in the genes/pathways examined. The conclusion that findings may not translate between species is valid but the evidence is insufficient to definitively characterize the differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C66",
+      "C87",
+      "C103"
+    ],
+    "result": "The oviduct is an adaptive, immuno-dynamic organ that responds to gametes and embryos in a spatiotemporal manner. Sperm are key mediators of inflammatory responses at 0.5 dpc, which transition to epithelial barrier integrity and cellular homeostasis at 1.5-2.5 dpc. The oviduct provides metabolic support tailored to embryonic developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C66, C87, C103 represent the major integrative conclusions of the study. These are well-supported by the convergent evidence from bulk RNA-seq, scRNA-seq, proteomics, and validation experiments. The temporal dynamics of inflammatory responses, the role of sperm, and the metabolic support functions are all substantiated by multiple lines of evidence. However, some aspects remain inferential (e.g., the functional consequences of these responses for embryo development).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "Ciliated epithelial cells in the ampulla create circular motion of cumulus-oocyte complexes, and scRNA-seq analysis suggests these cells are functionally active when COCs are present, as indicated by suppressed expression of cilia assembly genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 is supported by citation to Wang and Larina, 2021. Claim C61 is an inference from scRNA-seq data showing suppressed cilia assembly gene expression when COCs are present. However, this interpretation is counterintuitive\u2014suppressed cilia assembly genes would suggest reduced ciliary function, not increased activity. The authors may be confusing assembly with function, or there may be a more complex regulatory mechanism. This requires clarification or additional functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Tlr2 is proposed to play a dual role: participating in immune responses and facilitating epithelial barrier integrity and remodeling. A model is suggested where Tlr2 expression increases at 0.5 dpc in response to sperm, then induces epithelial remodeling at 1.5 and 2.5 dpc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 are supported by citations to prior work. Claim C76 is explicitly described as a suggested model and is speculative. While the temporal pattern of Tlr2 expression is demonstrated (C42, C73), the functional consequences for epithelial integrity and remodeling are not directly tested. This is a reasonable hypothesis that requires experimental validation through functional studies (e.g., Tlr2 knockout mice).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The IU region shows enrichment of energy metabolism pathways at 0.5 dpc, including pyruvate metabolism and glycolysis, which are subsequently downregulated at 1.5-3.5 dpc. This suggests the IU region primes the environment to provide metabolic substrates matching embryonic developmental needs as embryos transition from pyruvate to glucose utilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 establish the background knowledge about oviductal nutrients and embryo metabolism (supported by citations). Claims C91-C93 are supported by gene ontology analysis of RNA-seq data showing enrichment and subsequent downregulation of metabolic pathways specifically in the IU region. Claim C94 is an inference that is biologically plausible and consistent with the data, though direct measurement of metabolite levels in the oviductal fluid would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Sperm migration through the UTJ and formation of a reservoir in the isthmus is an established phenomenon. 'Fit' sperm display membrane proteins that allow UTJ passage and epithelial binding, and must evade phagocytosis from innate immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by citations to historical and recent literature. Claim C71 is inferred from the in situ hybridization data showing immune cell markers in the presence of sperm. This inference is reasonable given the demonstrated presence of phagocytic markers (Ptprc+) and the historical observations of sperm phagocytosis (C69). The integration of historical knowledge with new molecular data is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The oviduct provides a hostile response to sperm at 0.5 dpc, similar to the uterine response. This finding conflicts with in vitro bovine studies showing anti-inflammatory responses to sperm, potentially due to differences between in vivo vs. in vitro models and murine vs. bovine species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by citations. Claim C80 is inferred from the inflammatory response data and is reasonable. Claim C81 describes conflicting prior findings (supported by citations). Claim C82 offers speculative explanations for the discrepancy. The authors appropriately acknowledge the conflict with prior work and offer plausible explanations, though the true reasons for the discrepancy remain unclear. This highlights important species and model system differences in reproductive biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "Superovulation induces an exacerbated pro-inflammatory state with greater dysregulation of inflammatory pathways and epithelial cell remodeling compared to natural fertilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is supported by proteomic analysis comparing natural and SO conditions (Figure 2). The observation of more differentially abundant proteins and stronger pathway enrichment in SO conditions is clearly demonstrated. This has important implications for assisted reproductive technologies, suggesting that superovulation may create a suboptimal oviductal environment. However, the functional consequences for embryo development are not directly assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Oviductal transcriptional profiles at 1.5-3.5 dpc are similar to each other but distinct from 0.5 dpc, suggesting a critical transcriptional transition coinciding with embryo presence in the oviduct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are supported by RNA-seq analysis (PCA and heatmaps in Figure 1). The temporal segregation of 0.5 dpc from later timepoints is clearly demonstrated. Claim C86 is an inference that is reasonable given the data and the known timing of embryo transit (C85, supported by citations). This represents an important observation about oviductal adaptation to embryo presence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Superovulation increases the number of mature follicles, ovulated eggs, and follicular fluid.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 is stated as established knowledge about superovulation effects. This is well-documented in the literature and is the basis for using SO in the experimental design. No issues with this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The transcriptomic and proteomic landscape of the oviduct is dynamic during natural fertilization, pseudopregnancy, and superovulation across four preimplantation timepoints, as demonstrated by three independent analytical techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is a summary statement supported by the entire multi-omics dataset (bulk RNA-seq, scRNA-seq, and LC-MS/MS proteomics). The integration of multiple techniques provides robust evidence for the dynamic nature of the oviductal environment. This is the overarching conclusion of the study and is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "The findings and techniques could facilitate development of proper microenvironments for in vitro embryo development and assist in establishing standard protocols at laboratory, agricultural, and clinical levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C104 is speculative about potential applications. While the findings provide valuable insights into the oviductal environment, the translation to practical applications for in vitro culture systems is not demonstrated. This is a reasonable statement of potential impact but should be recognized as speculative rather than a supported result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Inflammation in the oviduct may differ between mice and humans, and findings from murine models may not accurately translate to human inflammatory conditions due to distinct immune dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are speculative but reasonable conclusions based on the observed differences between mouse sperm-induced inflammation and human hydrosalpinx (C53-C56, C95-C97). The authors appropriately acknowledge the limitations of cross-species comparisons and the potential for species-specific immune responses. This is an important caveat for translational interpretation of the findings.",
+    "result_type": "MINOR"
+  }
+]

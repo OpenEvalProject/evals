@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study analyzed 33 lung cancer samples from 26 patients treated with ICIs, with 14 core samples from 11 patients used for clinical outcome evaluation. Clinical outcomes included 4 PR, 2 SD, and 5 PD patients, with patients classified as responders (PR) or non-responders (SD and PD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C69-C75 provide consistent and explicit documentation of the study cohort, sample collection, clinical outcomes, and ethical approvals. The methodology is clearly described with appropriate IRB approval and informed consent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C29",
+      "C32",
+      "C56"
+    ],
+    "result": "ICI non-responders exhibited significantly higher presence of CD4+ regulatory T cells, resident memory T cells (TRM), and TH17 cells compared to responders (p<0.01). These cell types may interfere with ICI response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C29, C32, and C56 consistently demonstrate enrichment of specific CD4+ T cell subsets in non-responders with statistical significance (p<0.01). The finding is supported by multiple analytical approaches including subclustering and comparative analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C30",
+      "C31",
+      "C33",
+      "C55"
+    ],
+    "result": "ICI responders showed diverse activated CD8+ T cells, particularly CD8+ TEM cells (GZMK, CXCR4 expression), with more prominent clonal expansion in cytotoxic CD8+ T cells compared to CD4+ Tregs. CD8+ T cell activation (TEM, TEMRA/TEFF, TEX), mature NK cells, and CXCL10+ Mo-Mac cells support ICI response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C30, C31, C33, and C55 provide converging evidence from transcriptional profiling, TCR clonotype analysis, and comparative analysis showing CD8+ T cell activation in responders. The modest p-value (p=0.06) for C30 is acknowledged but supported by additional evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C39",
+      "C40",
+      "C63",
+      "C64"
+    ],
+    "result": "Tumor cells in non-responders showed heightened transcriptional activity in NF-\u03baB and STAT3 pathways, suggesting potential inherent resistance to ICI therapy. These pathways are known to regulate PD-L1, T cell activation, Th17 differentiation, and immunosuppressive characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C39-C40, C63-C64 demonstrate consistent findings about pathway activation in non-responders with appropriate citation support for the biological roles of these pathways. The interpretation of inherent resistance is reasonable given the known functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C65",
+      "C66"
+    ],
+    "result": "Integration of immune cell profiles and tumor molecular signatures achieved discriminative power (AUC) exceeding 95% in identifying patient responses to ICI treatment. The ability to predict ICI response based on tumor signatures was as accurate as predictions based on immune cell behavior, and integrating both enhanced discriminative power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C47-C50, C65-C66 report high discriminative power (AUC >95%), but critical concerns exist: (1) very small sample size (n=11 core patients), (2) no independent validation cohort, (3) potential overfitting given the high dimensionality of features relative to sample size, (4) lack of cross-validation details, and (5) adjusted p-values in Figure 5c suggest some combinations may not be significant after multiple testing correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C67",
+      "C68"
+    ],
+    "result": "Most samples were obtained from metastatic lymph nodes rather than original tumor tissues, but the immune microenvironment within metastatic lymph nodes closely resembles that of lung tumor tissues and can predict ICI response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C67-C68 acknowledge a study limitation while providing evidence from prior work (Kim et al., 2020) and supplementary data showing similarity between metastatic lymph node and primary tumor immune landscapes. The authors appropriately address this potential confounding factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "There is a moderate correlation between low levels of copy number alterations (CNA) and positive responses to ICI, consistent with previous genetic association studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 report a moderate correlation with appropriate citation support (Liu et al., 2019). The analysis used indirect inference of CNA from scRNA-seq expression patterns, which is a validated approach, though the authors acknowledge limitations of mutation analysis with 10x chromium data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Differentially expressed genes in poor response groups were linked to regulation of cell death, cell motility, and cell activation. Responder-specific gene signatures showed associations with transcription factors RFXANK, RFXAP, and RFX5, which form the RFX protein complex that has emerged as a positive biomarker for immune response in diverse cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 describe DEG analysis findings with appropriate functional annotation and citation support (Lapuente-Santana et al., 2021) for the biological significance of the RFX complex. The analysis pipeline is clearly described in methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Low growth factor/type I interferon response signaling (low PC2.neg scores) in tumor cells is a positive predictor of ICI response, while high levels may present intrinsic resistance. Type I interferon has dual roles: driving anti-tumor effects but also inducing CD8+ T cell exhaustion and upregulating immune-suppressive genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 present PCA-derived signatures with appropriate biological interpretation supported by citation (Fenton et al., 2021). The dual role of type I interferon is well-established in the literature, providing context for the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Tumor cell signatures had modest influence on ICI response in melanoma and did not demonstrate prognostic value for LUAD or LUSC in TCGA data, indicating these signatures are specifically linked to ICI response rather than general prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 appropriately test the specificity of identified signatures in independent datasets (melanoma ICI cohorts and TCGA). The lack of prognostic value in TCGA (Table 2) supports the interpretation that these are ICI-response specific rather than general prognostic markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The role of Tregs and TRM cells in ICI response is context-dependent. Previous studies showed contrasting results: increased Tregs in post-treatment blood of responders, TRM cells associated with better outcomes in NSCLC, but recent findings suggest pre-existing TRM-like cells may promote immune evasion. Similarly, TH17 cells exhibit context-dependent roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 appropriately discuss the complexity and context-dependence of immune cell roles with extensive citation support. The authors acknowledge apparent contradictions with prior work and provide reasonable explanations based on differences in timing, tissue source, and cellular resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Background literature review establishing the clinical context for ICI therapy in NSCLC, including PD-L1 as a companion diagnostic, other biomarkers (TMB, gene expression), the role of various immune cell types, and the importance of both tumor- and T cell-intrinsic factors in ICI response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C27 and C51-C54 provide appropriate literature review with citations supporting each statement. These establish the scientific rationale and context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Detailed methodology for scRNA-seq library preparation, sequencing, read mapping, SNP genotyping, quality control, batch correction, and variable gene selection using standard bioinformatics tools and appropriate parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C86 provide explicit methodological details with specific reagent kits, software versions, and parameters. The methods follow standard practices for scRNA-seq analysis including appropriate quality control (mitochondrial <20%, gene count >200), doublet removal (Scrublet), and batch correction (Harmony).",
+    "result_type": "MINOR"
+  }
+]

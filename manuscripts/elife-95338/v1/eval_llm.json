@@ -1,0 +1,282 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript analyzes two high-resolution spatially-resolved datasets from hepatocellular carcinomas: Ling et al., 2015 (285 samples from a 2D section, 23 whole-exome sequenced) and Li et al., 2022 (169 and 160 samples from two 3D tumors, with subset whole-genome sequenced). The authors reanalyzed the data with their own filtering, identifying 217 mutated loci in Ling et al. and 563/259 mutations in Li et al. T1/T2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C12 provide detailed descriptions of the datasets used, including sample numbers, sequencing methods, and filtering results. These are primarily descriptive claims about data provenance and processing, which are well-documented and internally consistent. The reanalysis is described with reference to methods in appendices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Using the distribution of direction angles (angle between tumor center-to-parent and parent-to-offspring vectors), the authors distinguish volume growth (uniform, isotropic division) from surface growth (radially outward division). The empirical data from both Ling et al. and Li et al. show uniform distributions of direction angles, consistent with volume growth and inconsistent with surface growth. This is corroborated by mutation counts as a function of distance from tumor center.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 present a novel spatial metric (direction angles) with clear theoretical predictions for each growth mode. The empirical data (Figure 2B) show a flat distribution matching volume growth simulations (Figure 2D) rather than the peaked distribution from surface growth simulations (Figure 2C). The metric is model-independent and the results are consistent across two independent datasets and multiple analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors address a discrepancy with Lewinsohn et al., 2023, which found surface growth signals in the same data. The authors show that Lewinsohn et al.'s findings are compatible with volume growth and that their algorithm produces spurious surface growth signals when applied to simulated volume growth data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C25 critique prior work, but the evidence is relegated to appendices not provided in the main text. Without access to the detailed reanalysis and simulation tests, it's difficult to fully evaluate whether the Lewinsohn et al. algorithm genuinely produces false positives or whether there are legitimate methodological differences. This requires careful examination of the appendix materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors define a dispersion parameter \u03c3 that quantifies spatial scattering of mutations. In the Ling et al. data, the average dispersion is ~3.5 (up to 9 for individual mutations). The distribution of \u03c3 values matches volume growth simulations (KS statistic 1.13) better than surface growth simulations (KS statistic 5.74). Similar patterns are found in the Li et al. 3D dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C32 introduce a quantitative metric for spatial dispersion with clear definition (C26). The empirical measurements (C28-C29, Figure 3B) are compared to simulations using Kolmogorov-Smirnov statistics (C30-C31), providing statistical support. The consistency across datasets (C32) strengthens the finding, though the authors note limitations in 3D sampling resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors propose that volume growth causes mutation dispersion through a mechanical pushing mechanism: as new cells are born, they displace neighboring cells, causing initially adjacent cells sharing a mutation to be pushed apart. This amplification mechanism generates high dispersion values and explains clonal mixing observed in prior studies. Under surface growth, cells don't push each other apart, leading to lower dispersion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C43 provide a mechanistic explanation for the observed dispersion patterns, linking tissue mechanics (C39, well-established in prior work) to genetic observations (C40-C41, clonal mixing). The mechanism is logically consistent with the off-lattice model used and explains why volume growth produces higher dispersion than surface growth. The argument that selection cannot spuriously create high dispersion (C38) is reasonable but could benefit from more rigorous demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Cell migration due to volume growth affects multi-region sampling efficiency. About 75% of mutations can be detected with only 5 samples from the 23 whole-exome samples. When removing mutations that migrated from elsewhere (present at higher frequency in other samples), only ~20% of mutations are detected with 5 samples, consistent with the sampling fraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 demonstrate a practical consequence of cell dispersion for sampling strategies. The analysis (Figure 4A) shows clear differences between detecting all mutations versus only non-migrated mutations. The interpretation that migration increases apparent sampling efficiency is logical and well-supported by the data, providing practical implications for multi-region sequencing studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Using clone and clade turnover metrics, the authors infer a high cell death rate (relative death rate 0.975, 90% CI [0.83, 0.995]) nearly balancing the birth rate, and an exome-wide mutation rate of 0.015 per cell division (90% CI [0.002, 0.1]). This indicates the tumor was precariously balanced between growth and extinction during early stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C47-C49 present parameter inference with confidence intervals (Figure 4C-D), but the methods rely on analytical relationships derived elsewhere (Angaji et al., 2021) and described in appendices. The very high death rate (97.5% of birth rate) is a striking finding but the wide confidence intervals and reliance on specific model assumptions raise questions about robustness. The biological interpretation (C48) is reasonable given the inferred parameters, but independent validation would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The authors address a discrepancy with Werner et al., 2020, which found low cell death rates. They argue that widely different death rates can be compatible with the same distribution of pairwise mutational distances, explaining the discrepancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 identify a conflict with prior work but the resolution is relegated to Appendix 6. Without seeing the detailed analysis, it's difficult to evaluate whether the pairwise distance metric is genuinely non-informative about death rates or whether there are other methodological differences. This is an important point that deserves more transparent presentation in the main text.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The tumor mutation rate was enhanced by a factor of 5 compared to healthy human fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 compares tumor mutation rates to normal tissue, but this comparison depends on the effective genome size calculation and the choice of reference normal tissue (fibroblasts vs. hepatocytes). The authors acknowledge uncertainty about this estimate, and the comparison across different cell types and measurement methods introduces additional uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mutational signature analysis reveals SBS22 (associated with aristolochic acid exposure) as the dominant signature in all three tumors. In the Ling et al. tumor, SBS22 dominates clonal (early) mutations but is absent in subclonal (late) mutations (p<10^-4), suggesting cessation of exposure. The Li et al. tumors maintain similar signatures over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C64 present mutational signature analysis (Figure 5) showing clear temporal heterogeneity in the Ling et al. tumor. The statistical significance (C64, p<10^-4) supports the conclusion that SBS22 cessation is not due to sampling noise. The biological interpretation linking this to discontinued aristolochic acid exposure is reasonable given the patients' location (C60) and the known association of SBS22 with this mutagen (C58). The contrast with Li et al. tumors (C61) provides an internal control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Using the relationship between mutation frequency and population size at mutation origin (f=1/N under neutral evolution), the authors estimate that detectable mutations arose when tumors were ~80,000 cells (high spatial resolution data) or ~7,000 cells (whole-exome data), defining the temporal window captured by the analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 apply established population genetics theory (C65, citing Durrett 2013) to estimate the temporal scope of the analysis. The logic is sound: lower frequency detection limits allow inference of mutations from earlier (smaller) population sizes. The distinction between different sampling resolutions (C67 vs C68) is appropriate. However, the estimates assume neutral evolution and neglect stochastic fluctuations, as acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The main conclusions are: (1) tumors evolved under uniform volume growth without spatial constraints causing radial outward growth, (2) substantial cell turnover with death rate comparable to division rate, (3) early-stage tumors were precariously balanced between growth and extinction, and (4) the analysis captures dynamics up to ~80,000 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 summarize the major findings. The volume growth conclusion (C74) is well-supported by multiple independent lines of evidence (direction angles, dispersion, mutation-distance relationships). The high cell death rate (C75) is supported by the turnover analysis, though with caveats about model assumptions. The biological interpretation about precarious balance (C76-C77) follows logically from the inferred parameters. The temporal scope (C78) is appropriately qualified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The authors suggest that future higher-resolution spatial genomics techniques will enable characterization of later-stage evolutionary changes including angiogenesis, microenvironment effects, and genetic instability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are forward-looking statements about future possibilities. These are reasonable extrapolations given the demonstrated utility of spatial resolution for early-stage inference, but they are speculative by nature. The claims are appropriately framed as future possibilities rather than current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The direction angle metric is model-independent, not relying on specific models of cell dynamics, population dynamics, or sampling, and is robust against selected subclones growing isotropically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 describe important properties of the direction angle metric. The model-independence (C81) is valid in that the metric directly measures spatial patterns without assuming specific growth mechanisms. The robustness to selection (C82) is logically argued: isotropic growth of a selected clone would still produce uniform angles. These properties strengthen the reliability of the volume growth conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors use an off-lattice cell-based model where cells are spheres that can push each other during growth, with division rates potentially dependent on local cell density. Volume growth (\u03c1c=\u221e) has constant division rates; surface growth has density-dependent rates. The model includes Poisson-distributed mutations and can simulate tens of thousands of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C98 describe the computational model in detail. The off-lattice approach is well-established in tissue mechanics (C84, with appropriate citations). The model components (C85-C88, C92-C96) are clearly defined. The distinction between volume and surface growth modes (C93-C95) is explicit and tunable. The computational limitations (C97-C98) are honestly stated. The model is appropriate for testing the spatial predictions of different growth modes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors contextualize their work within prior studies showing that phylogenetic analysis has elucidated metastasis dynamics, multi-region sampling has established intra-tumor heterogeneity and found both neutral evolution and selection, and growth mode affects genetic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 provide appropriate context by citing relevant prior work. These are accurate summaries of the literature with proper citations. The claims establish the background for why spatial analysis of growth modes is important and how it relates to existing knowledge about tumor evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The honey-comb structure of samples in the Ling et al. data is due to the tumor slice being cut into four quadrants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 explains a technical detail about the spatial arrangement visible in Figure 1A. This is a straightforward descriptive claim about sample collection methodology with appropriate citation to the original study's supplementary materials.",
+    "result_type": "MINOR"
+  }
+]

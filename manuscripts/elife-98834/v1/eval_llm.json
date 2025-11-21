@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Chemical ischemia induces duration-dependent bidirectional changes in synaptic transmission. Short durations (2 min) lead to transient suppression followed by potentiation of postsynaptic responses, while longer durations (5 min) result in persistent postsynaptic failure. Axonal fiber volleys recover fully regardless of duration, and the severity of metabolic failure (measured by extracellular K+ increase) correlates with postsynaptic failure likelihood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C22 provide converging evidence from electrophysiological recordings (Figure 1) showing clear duration-dependent effects. The data demonstrate robust recovery of axonal function across all durations tested, while postsynaptic responses show bidirectional changes. The correlation with extracellular K+ provides mechanistic insight. Sample sizes are adequate (n=6-11 per condition) with appropriate statistical analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Glutamate imaging with iGluSnFR reveals that short chemical ischemia leading to synaptic potentiation is associated with increased glutamate transients (\u0394F/F0), while longer chemical ischemia with postsynaptic failure shows a transient surge in resting fluorescence (F0) during stress and reduced glutamate transients after recovery. The increased glutamate transients after short ischemia reflect genuine increases in extracellular glutamate, not artifacts from reduced F0 or increased axonal excitability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 are well-supported by iGluSnFR imaging data (Figure 2) combined with appropriate controls. The authors systematically rule out alternative explanations (F0 reduction, fiber volley changes) and validate that iGluSnFR responses to saturating glutamate are unaffected (Figure 2\u2014supplement 3). The observation that 3/9 experiments lost iGluSnFR signal is transparently reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Chemical ischemia with postsynaptic failure is accompanied by decreased extracellular space (ECS) fraction and decreased effective diffusion coefficient, consistent with previous reports. However, chemical ischemia without postsynaptic failure does not show these changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by TMA iontophoresis measurements (Figure 2\u2014supplement 4) with appropriate methodology validated against known standards. The findings are consistent with cited literature (Sykov\u00e1 and Nicholson, 2008). The differential effects between conditions with and without postsynaptic failure are clearly demonstrated, ruling out ECS restriction as the cause of increased glutamate transients after short ischemia.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C76"
+    ],
+    "result": "Glutamate uptake remains surprisingly resilient after chemical ischemia, as evidenced by unchanged iGluSnFR decay time constants after both single-pulse and high-frequency stimulation. Pharmacological inhibition of glutamate uptake with DL-TBOA increases decay time constants by 10-20 fold, confirming the sensitivity of the assay.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 and C76 are well-supported by systematic analysis of iGluSnFR decay kinetics (Figure 3). The positive control with DL-TBOA demonstrates the assay's sensitivity to detect impaired uptake. Sample sizes are adequate (n=9-12 for paired-pulse, n=25-29 cells for high-frequency stimulation). The conclusion that glutamate uptake is resilient is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Chemical ischemia increases peak glutamate concentration in the synaptic cleft, as demonstrated by competitive antagonism experiments with \u03b3-DGG. After chemical ischemia, significantly higher percentages of fEPSP slopes and EPSC amplitudes remain after \u03b3-DGG application compared to controls, indicating increased synaptic glutamate release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 and C77-C79 are supported by well-designed competitive antagonism experiments (Figure 4B-C). The \u03b3-DGG approach is validated by appropriate citations (Liu et al., 1999; Christie and Jahr, 2006). The simultaneous recording of field potentials and whole-cell currents strengthens the conclusions. Statistical significance is demonstrated (p<0.0001 for EPSC, p=0.014 for fEPSP).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Computational modeling of vesicular glutamate loading shows that conditions typical of metabolic failure (decreased cytosolic pH, increased Na+ and Cl-, decreased K+, decreased extracellular pH, reduced vesicular ATPase activity) all decrease the number of glutamate molecules in synaptic vesicles. These simulations indicate that altered vesicular loading cannot explain the observed increase in glutamate release after chemical ischemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 and C114-C116 are supported by computational modeling using a previously validated model (Kolen et al., 2023). The simulations systematically test relevant parameters and consistently show decreased vesicular glutamate under ischemic conditions. The control simulation with increased pH shows the expected opposite effect. The conclusion that vesicular loading changes cannot explain increased release is logically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C59",
+      "C60"
+    ],
+    "result": "After chemical ischemia without postsynaptic failure, the fiber volley is significantly broadened by ~20% without changes in amplitude or delay. This broadening could indicate presynaptic action potential widening, which would increase presynaptic Ca2+ influx and glutamate release. This mechanism is supported by prior studies showing that pharmacological action potential prolongation increases synaptic responses at CA3-CA1 synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50, C59-C60 are supported by fiber volley analysis (Figure 4E) showing significant broadening (p=0.026) without amplitude changes. The mechanistic interpretation is supported by appropriate citations (Wheeler et al., 1996; Qian and Saggau, 1999). However, C60 is speculative about K+ channel inactivation, appropriately acknowledged by the authors. The alternative explanation of desynchronized firing is also mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study reveals a graded vulnerability of synaptic compartments to transient metabolic failure: postsynaptic neurons are least resilient, followed by presynaptic glutamate release, then axonal action potential firing. Glutamate clearance (primarily astrocytic uptake) is most resilient, remaining mostly unaffected even after long durations of chemical ischemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 and C12-C14 synthesize findings from multiple experiments (Figures 1-4) to establish a hierarchy of vulnerability. The conclusion is well-supported by converging evidence: postsynaptic failure at 4-5 min, partial recovery of glutamate release even with postsynaptic failure, full recovery of axonal firing, and preserved glutamate uptake. This represents a major conceptual advance in understanding differential vulnerability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Astrocytes show greater resilience to transient ischemia than neurons. In experiments with prolonged chemical ischemia and postsynaptic failure, glutamate uptake was preserved in two-thirds of cases. This resilience is consistent with reports that astrocytes experience smaller ATP decreases and Na+ increases compared to neurons, partly due to differential expression of NMDA receptors and TRPV4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and C68-C73 are supported by experimental observations (Figures 2-3) and appropriate citations (Meyer et al., 2022; Pape and Rose, 2023). The authors appropriately acknowledge that transient impairment during ischemia cannot be ruled out (C71-C72). The conclusion about lasting effects being insignificant compared to presynaptic changes is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The time courses of glutamate release potentiation and postsynaptic response potentiation are nearly identical, suggesting that increased presynaptic release directly causes postsynaptic potentiation. This ischemic LTP may share mechanisms with physiological LTP, as they can occlude each other, though the current experiments suggest at least partial presynaptic contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by temporal correlation analysis (Figure 2D) and appropriate citations about LTP occlusion (Hsu and Huang, 1997; Stein et al., 2015). The authors appropriately acknowledge that a mix of pre- and postsynaptic mechanisms cannot be ruled out. The inference about direct causation from temporal correlation is reasonable but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "If individual peri-infarct depolarizations (PIDs) lead to similar potentiation of glutamate release as observed with short chemical ischemia, this could promote excitotoxic damage in peri-infarct tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 is speculative about translating in vitro findings to in vivo PIDs. While the speculation is reasonable given the experimental findings, it remains untested. The authors appropriately frame this as a conditional statement ('if...could'), but no direct evidence links the observed potentiation to PID-induced damage. This represents an important hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background claims establish that ischemia causes dysregulation of glutamate homeostasis and excitotoxicity, that peri-infarct depolarizations are associated with metabolic burden and transient glutamate increases, and that brief anoxia/aglycemia can induce persistent synaptic potentiation (ischemic LTP) in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 represent well-established background knowledge supported by appropriate citations (Dirnagl et al., 1999; Lauritzen et al., 2011; Rakers and Petzold, 2017; Mies and Paschen, 1984; Cr\u00e9pel et al., 1993; and others). These claims provide necessary context for the current study and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C75",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The chemical ischemia protocol reliably induces rapid and reversible ATP decline. Postsynaptic failure coincides with surges of extracellular glutamate and potassium, likely driven by neuronal depolarization and Ca2+ accumulation. This is consistent with previous reports of irreversible ATP depletion and persistent depolarization after similar durations of metabolic stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C80-C86 are supported by appropriate citations (Pape and Rose, 2023; Tanaka et al., 1997; Hershkowitz et al., 1993) and experimental data (Figures 1F, 1I, 2E). The mechanistic interpretation about neuronal depolarization driving glutamate/K+ surges is reasonable and supported by cited work (Passlick et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "Paired-pulse ratio (PPR) analysis may not be sufficiently sensitive to detect moderate presynaptic increases in glutamate release, as even manifold presynaptic increases produce relatively small PPR changes at CA3-CA1 synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 are supported by citation to recent work (D\u00fcrst et al., 2022) and explain why PPR analysis (Figure 4\u2014supplement 1) did not reveal clear changes. This appropriately acknowledges a limitation of the PPR approach and justifies the use of alternative methods (\u03b3-DGG competition).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The study was performed exclusively on male mice, leaving questions about sex-dependent effects unanswered. This is a limitation since glutamate signaling can depend on sex and estrous cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 accurately report the experimental design limitation and cite relevant literature (Giacometti and Barker, 2020). The authors appropriately acknowledge this as a limitation that should be addressed in future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Detailed methodological claims describe animal housing, viral expression of iGluSnFR in astrocytes, slice preparation, recording conditions, chemical ischemia induction, imaging parameters, and ion-sensitive electrode construction and validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C113 provide detailed methodological information that is internally consistent and follows standard practices. Validation experiments (C112-C113) confirm that TMA measurements yield expected values in agarose gel and match previous measurements in brain slices. The methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Presynaptic glutamate release recovers to some extent even when postsynaptic neurons remain unresponsive, masking the recovery in electrophysiological recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by iGluSnFR imaging data (Figure 2E) showing gradual recovery of glutamate transients despite persistent postsynaptic failure. This highlights the value of combining imaging with electrophysiology to reveal processes masked in conventional recordings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Glutamate uptake is mostly mediated by astrocytes and driven by their transmembrane Na+ gradient and membrane potential, which are maintained by the Na+/K+-ATPase. This makes glutamate uptake an indirect measure of astrocytic metabolic status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 represent established knowledge supported by appropriate citations (Danbolt, 2001; Rossi et al., 2007; Passlick et al., 2021). This provides important context for interpreting the glutamate uptake measurements as indicators of astrocytic function.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Disease modifying therapies (DMTs) have revolutionized treatment of relapsing-remitting MS but are less effective for progressive MS and brain atrophy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C12-C14 establish the clinical context for MS treatment based on established knowledge and cited literature. These are well-accepted facts in the MS field supported by appropriate citations (Reich et al., 2018; Faissner et al., 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C82",
+      "C83"
+    ],
+    "result": "Leptomeningeal inflammation (LMI) is associated with cortical gray matter pathology in MS, which causes cognitive impairment and depression, but the mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C15-C26, C82-C83 establish the relationship between LMI and gray matter pathology based on well-cited prior literature (Howell et al., 2011; Absinta et al., 2015; Wicken et al., 2018; Geurts and Barkhof, 2008; B\u00f8 et al., 2003a,b; Magliozzi et al., 2010; Mainero et al., 2015; van Horssen et al., 2007; Pikor et al., 2015). This provides appropriate background and identifies the knowledge gap the study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Prior studies have identified specific cytokines, chemokines, and signaling pathways associated with meningeal inflammation and gray matter pathology in MS and animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 summarize prior mechanistic studies with appropriate citations (Magliozzi et al., 2018, 2019; Storch et al., 2006; Merkler et al., 2006; Brink et al., 2005). These establish the state of knowledge regarding potential mechanisms linking LMI to gray matter damage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The SJL mouse EAE model exhibits meningeal inflammation with adjacent parenchymal pathology, providing a suitable model for studying LMI mechanisms with spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 establish the rationale for using the SJL EAE model and cite prior characterization work (Magliozzi et al., 2004; Bhargava et al., 2021). The identification of the methodological gap (lack of spatially resolved data, C32) justifies the current approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "SJL mice developed characteristic relapsing EAE with stable meningeal lesions detected by MRI at weeks 6, 8, and 10, with tissue collected at week 11 for spatial transcriptomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C107-C111 describe the experimental timeline and disease course, supported by data in Figures 1B-D and Figure 1\u2014figure supplement 1A-B. The behavioral data, MRI imaging, and lesion quantification provide appropriate characterization of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C97"
+    ],
+    "result": "CFA alone does not produce lasting glial reactivity or LMI formation, validating the use of na\u00efve controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C97 address a potential confound by demonstrating that CFA alone does not induce the pathology of interest. This is supported by immunofluorescence data (Figure 1\u2014figure supplement 1C-E) showing no difference in GFAP, IBA1, or CD68 between na\u00efve and CFA-only animals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Spatial transcriptomic data from all samples were of high quality with appropriate anatomic variability and no batch effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46, C112-C115 describe quality control metrics supported by extensive supplementary data (Figure 1\u2014figure supplement 2A-J). The methods describe appropriate filtering, normalization (SCTransform), and validation that sample/slide effects do not confound the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C116"
+    ],
+    "result": "Numerous genes associated with complement, immune infiltration, antigen presentation, and astrocyte activation were differentially expressed between EAE and na\u00efve samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C116 describe differential expression analysis using DESeq2 on pseudobulked samples, shown in Figure 1F, Figure 1\u2014figure supplement 2K-L, and Supplementary file 1. The use of pseudobulking and DESeq2 is appropriate for spatial transcriptomics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C118"
+    ],
+    "result": "Inflammatory pathways (TNF, JAK-STAT, NF\u03baB) were upregulated in EAE with peak activity at meningeal inflammation sites, while Trail and PI3K pathways were downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52, C118 describe pathway analysis using PROGENy, shown in Figure 2. The spatial distribution of pathway activities and statistical comparisons between groups are clearly presented. PROGENy is an established method for pathway activity estimation from transcriptomics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Unbiased clustering identified cluster 11 (C11) as EAE-specific, representing 1-5% of spots, overlapping with MRI-identified meningeal inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 describe the identification of meningeal inflammation regions through unbiased clustering, supported by UMAP plots (Figure 3A-D) and spatial correlation with MRI (Figure 3E, Figure 3\u2014figure supplement 1B-D). The inference that C11 represents meningeal inflammation (C58) is reasonable given the spatial overlap with MRI enhancement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Cluster 11 showed enrichment of inflammation-related genes (Cd74, C3, Gfap) and gene sets related to antigen processing/presentation, complement activation, lymphocyte activation, and cytokine signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C66 characterize the transcriptional signature of meningeal inflammation, supported by differential expression analysis (Figure 3F-G, Supplementary file 2) and gene set enrichment analysis (Figure 3H, Supplementary file 3). The interpretation regarding Gfap (C62) acknowledges the spatial resolution limitation. The comparison to human data (C64) is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "EAE-specific subclusters (1_3, 1_4, 2_6) were identified in thalamus and hypothalamus regions, with subcluster 2_6 significantly closer to meningeal inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 describe subclustering analysis identifying regions of inflamed parenchyma adjacent to LMI, supported by UMAP plots (Figure 4A-B), spatial plots (Figure 4C), and distance analysis (Figure 4D). The statistical comparison of proximity to C11 is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C117"
+    ],
+    "result": "EAE-specific subclusters showed enrichment of pathways related to inflammation, antigen processing/presentation, humoral immunity, neuron death, and cellular stress, with 31 pathways conserved between meningeal inflammation and adjacent parenchyma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74, C117 characterize the transcriptional programs in inflamed parenchyma using gene set enrichment analysis (Figure 4E-I, Supplementary files 4-6). The identification of conserved pathways (C73-C74) provides insight into which inflammatory signals penetrate from meninges into parenchyma. The spatial variability in apoptotic pathways (C72) is an interesting observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C119"
+    ],
+    "result": "Trajectory analysis revealed variable penetration of inflammatory gene sets from meninges into parenchyma, with antigen processing/presentation, cell killing, IL-6, and IFN\u03b3 response showing gradual decline, while C3 declined more rapidly than B2m.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78, C119 describe trajectory modeling using SPATA2 to quantify how inflammatory signals decay with distance from LMI (Figure 5A-F). The comparison of residual AUC for different decay patterns provides quantitative assessment of penetration depth. This is a novel analytical approach for spatial transcriptomics data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C120"
+    ],
+    "result": "RNAscope validation in an independent cohort confirmed differential penetration patterns, with C3 showing steeper exponential decline (b=-1.13) than B2m (b=-0.59) with distance from LMI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81, C120 describe orthogonal validation using RNAscope in a separate cohort (Figure 5G-J, Figure 5\u2014figure supplement 1, Supplementary file 7). The exponential regression analysis quantifies decay rates and confirms the spatial transcriptomics findings. This validation strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The spatial resolution of ~55 \u03bcm per spot means multiple cells are captured in each spot, limiting cellular resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 acknowledge a key technical limitation of the 10x Visium platform. This is an accurate description of the technology and appropriately discussed as a limitation. The authors correctly note that single-cell deconvolution would improve interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Prior work supports roles for B cells and IFN\u03b3 signaling in MS neurodegeneration through multiple mechanisms including cytokine production, antibody-mediated toxicity, and upregulation of antigen presentation on glia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 discuss the biological interpretation of findings in the context of prior literature, with appropriate citations (Lisak et al., 2017; Benjamins et al., 2019; Bhargava et al., 2022; Arellano et al., 2015; Kirby et al., 2019; Schirmer et al., 2019; Falc\u00e3o et al., 2018; J\u00e4kel et al., 2019; Langseth et al., 2023; Kukanja et al., 2024; Lerma-Martin et al., 2022). This contextualizes the current findings within the broader field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "LMI in SJL EAE predominantly affects deep gray matter (thalamus/hypothalamus) rather than cortex, though similar surface-in gradients of pathology occur in human MS thalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 acknowledge important differences between the mouse model and human disease, supported by the experimental observations and citations to human studies (Azevedo et al., 2018; Magliozzi et al., 2022; Bhargava et al., 2021; Gupta et al., 2023). This is an appropriate discussion of model limitations and translatability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "This is the first spatial transcriptomic characterization of a mouse LMI model, contributing a publicly available dataset, with future applications possible using FFPE tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C106 discuss novelty and future directions. While the claim of being 'first' (C104) cannot be fully verified without comprehensive literature review, the approach appears novel. The statement about data availability (C105) is verifiable. The discussion of FFPE applications (C106) is appropriately cited but represents future potential rather than current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "Multiple comparison correction was performed using the Benjamini-Hochberg method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C121 describes the statistical correction method with appropriate citation (Benjamini and Hochberg, 1995). This is a standard and appropriate method for controlling false discovery rate in multiple testing scenarios common in transcriptomics studies.",
+    "result_type": "MINOR"
+  }
+]

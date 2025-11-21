@@ -1,0 +1,611 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "SIMR-1, ENRI-2, ENRI-1, and NRDE-3 show physical interactions by immunoprecipitation-mass spectrometry in published studies, with varying detection frequencies across replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 report IP-mass spec interaction data from published studies (Chen and Phillips, 2024a; Lewis et al., 2020) showing that SIMR-1 interacts with NRDE-3 (2/3 replicates), ENRI-2 interacts with SIMR-1 (3/3) and NRDE-3 (2/5), and ENRI-1 interacts with NRDE-3 (5/5). The data are appropriately cited and summarized in Figure 1A, providing evidence for physical interactions among these proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "SIMR-1 forms cytoplasmic granules in somatic cells during embryogenesis with temporal dynamics peaking at ~100 cell stage, and the Tudor domain is required for granule assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 are supported by quantitative live imaging data (Figure 1B-C) showing SIMR-1 granule dynamics across embryonic stages, and by mutant analysis (Figure 1\u2014figure supplement 2B) demonstrating that the Tudor domain mutant SIMR-1(R159C) fails to form granules. The temporal pattern is well-documented with statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "ENRI-2 colocalizes with SIMR-1 in embryonic somatic granules but not in germ granules, ENRI-1 shows no prominent localization, NRDE-3 is consistently nuclear in embryos, and NRDE-3 and SIMR-1 do not colocalize in the adult germline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 are supported by live imaging data (Figure 1B, Figure 1\u2014figure supplement 2A, 2C) showing distinct localization patterns for each protein. The observations are consistent across multiple embryos and developmental stages, with appropriate citations to previous work where relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "NRDE-3 nuclear localization is not affected by loss of simr-1, enri-2, enri-1, or enri-1; enri-2 double mutant at any developmental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is supported by live imaging data (Figure 2\u2014figure supplement 1A) showing NRDE-3 localization in various mutant backgrounds across developmental stages. This establishes that these proteins are not required for NRDE-3 nuclear localization when NRDE-3 is bound to small RNAs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Unloaded NRDE-3 (in eri-1, rde-3 mutants or NRDE-3(HK-AA)) associates with somatic granules with similar spatiotemporal dynamics to SIMR-1, peaking at ~100 cell stage, and unloaded NRDE-3 protein levels are similar to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C18 are supported by live imaging (Figure 2A) and quantification (Figure 2B-C) showing NRDE-3 granule dynamics in mutant backgrounds, and by western blot data (Figure 2\u2014figure supplement 1B) showing similar protein levels between wild-type and NRDE-3(HK-AA). The contrast with HRDE-1 (C18) is appropriately cited. The data demonstrate that small RNA binding, not protein stability, determines NRDE-3 localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "SIMR-1 colocalizes with unloaded NRDE-3 in embryonic granules, SIMR granule dynamics are unaffected by nrde-3(HK-AA), and NRDE-3(HK-AA) does not form granules in germ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by live imaging data (Figure 2D, Figure 2\u2014figure supplement 1C-E) showing colocalization in embryos and quantification (Figure 2\u2014figure supplement 1D) showing normal SIMR-1 dynamics in the nrde-3(HK-AA) mutant. The tissue-specific differences in NRDE-3(HK-AA) localization are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "NRDE-3 remains nuclear in early embryos and primordial germ cells of eri-1 and rde-3 mutants but becomes cytoplasmic in somatic cells of late embryos, suggesting different small RNAs are bound by NRDE-3 in early vs. late embryos, produced independently of ERI-1 and RDE-3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 are supported by live imaging data (Figure 2A) showing differential NRDE-3 localization patterns across developmental stages and cell types in different mutant backgrounds. The inference (C25-C26) that different small RNAs are bound in early vs. late embryos is reasonable given the localization data, though direct small RNA sequencing is needed for confirmation (which is provided later in the manuscript).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "SIMR-1 and ENRI-2 are required for recruitment of unloaded NRDE-3 to cytoplasmic granules, as NRDE-3(HK-AA) granules disappear in simr-1 and enri-2 mutants without affecting NRDE-3 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 are supported by live imaging data (Figure 3A) showing loss of NRDE-3(HK-AA) granule localization in simr-1 and enri-2 mutants, and by western blot data (Figure 3\u2014figure supplement 1A) showing that protein levels are unaffected. This establishes a functional requirement for SIMR-1 and ENRI-2 in NRDE-3 granule recruitment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "SIMR-1 functions upstream of ENRI-2 for granule assembly, as ENRI-2 granules are lost in simr-1 mutants while SIMR-1 granules persist in enri-2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 are supported by live imaging data (Figure 3B) showing the differential requirement for SIMR-1 and ENRI-2 in each other's granule localization. The inference of an upstream-downstream relationship (C33) is reasonable based on the genetic epistasis data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ENRI-1 is not required for NRDE-3 granule localization, as NRDE-3(HK-AA) granules persist in enri-1 mutants and the enri-1; enri-2 double mutant phenocopies the enri-2 single mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by live imaging data (Figure 3\u2014figure supplement 1B) showing NRDE-3(HK-AA) granule localization in enri-1 and enri-1; enri-2 mutants. The conclusion (C36) that ENRI-1 is not required is well-supported by the genetic data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SIMR-1 and NRDE-3 cytoplasmic granules do not colocalize with the P body marker CGH-1, indicating that embryonic SIMR granules are not P bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by live imaging data (Figure 4\u2014figure supplement 1A-B) showing lack of colocalization between SIMR-1/NRDE-3 and CGH-1. The inference (C39) that SIMR granules are not P bodies is reasonable based on the lack of colocalization with a core P body component.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "RSD-2 and HRDE-2 do not localize to embryonic granules and SIMR-1 granules are unaffected by hrde-2 loss, indicating that embryonic SIMR granules and germline SIMR foci are distinct compartments with unique protein compositions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are supported by live imaging data (Figure 4\u2014figure supplement 1C-E) showing lack of RSD-2 and HRDE-2 granule localization in embryos and normal SIMR-1 granules in hrde-2 mutants. The inference (C43) of distinct compartments is reasonable given the differential protein composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "SIMR-1 does not colocalize with previously characterized embryonic granule markers including RDE-12, RSD-6, ZNFX-1, or tubulin-marked peri-centrosomal foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C48 are supported by live imaging data (Figure 4\u2014figure supplement 1F-I) showing lack of colocalization between SIMR-1 and multiple granule markers. This systematic analysis establishes that SIMR granules represent a distinct type of embryonic granule.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "RDE-3 and RRF-1 colocalize with SIMR-1 in embryonic somatic granules, both require SIMR-1 for granule localization (RRF-1) or assembly (RDE-3), and MUT-16 functions upstream of SIMR-1 to mediate cytoplasmic granule assembly while not affecting germline SIMR foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C55 are supported by live imaging and colocalization data (Figure 4A-E, Figure 4\u2014figure supplement 1J-K) showing that RDE-3 and RRF-1 colocalize with SIMR-1, require SIMR-1 for localization, and that MUT-16 is required for somatic but not germline SIMR granule assembly. The data establish a hierarchy of granule assembly with MUT-16 upstream of SIMR-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In mut-16 mutants, SIMR-1 associates with mitotic spindles instead of cytoplasmic granules, and the differential requirement for MUT-16 in somatic vs. germline SIMR granules highlights distinct compositions of these compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 are supported by live imaging data (Figure 4E) showing SIMR-1 spindle localization in mut-16 mutants, with appropriate citation to similar NRDE-3 localization. The inference (C58) about distinct compartment compositions is reasonable based on the differential MUT-16 requirement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "CSR-1 forms cytoplasmic granules in embryos with temporal dynamics distinct from SIMR-1 and NRDE-3(HK-AA) granules, appearing earlier and peaking at 28 cell stage vs. 100 cell stage for SIMR granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by live imaging (Figure 4F) and quantification (Figure 4G) showing CSR-1 granule dynamics across embryonic development, with appropriate comparison to SIMR-1 and NRDE-3(HK-AA) dynamics (Figures 1C, 2C). The temporal differences are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "EGO-1 colocalizes with CSR-1 in somatic CSR granules, neither CSR-1 nor EGO-1 fully colocalizes with SIMR-1 (though occasional adjacency is observed), and EGO-1 localizes to granules independently of SIMR-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 are supported by live imaging and colocalization data (Figure 4B, H, I, Figure 4\u2014figure supplement 1L) showing EGO-1/CSR-1 colocalization and lack of full colocalization with SIMR-1, and by imaging in simr-1 mutants (Figure 4D) showing EGO-1 granule localization persists. This establishes distinct CSR and SIMR granule compartments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "RRF-1 and EGO-1 localize to different cytoplasmic granules that colocalize with NRDE-3 and CSR-1 respectively, suggesting spatial and temporal compartmentalization of WAGO-class and CSR-class 22G-RNA biogenesis and loading in embryonic somatic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by the combined colocalization data showing RRF-1 with SIMR-1/NRDE-3 and EGO-1 with CSR-1, along with the distinct temporal dynamics of these granules. The speculation (C66) about compartmentalized RNA biogenesis is reasonable based on the spatial and temporal organization observed, though direct functional evidence would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Autophagy regulates P granule removal from somatic blastomeres, and lgg-1 RNAi leads to ectopic PGL-1 expression in somatic foci during mid to late embryogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 are supported by citations to previous work (Zhang et al., 2009) and by live imaging data (Figure 5A) confirming ectopic PGL-1 expression following lgg-1 RNAi. This establishes the role of autophagy in P granule regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "lgg-1 RNAi increases SIMR granule numbers at 100 cell stage and causes persistence of SIMR granules and associated proteins (ENRI-2, RDE-3, RRF-1, unloaded NRDE-3) in somatic cells at comma stage, indicating autophagy regulates SIMR granule removal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are supported by live imaging (Figure 5A) and quantification (Figure 5B) showing increased SIMR granule numbers following lgg-1 RNAi, and by colocalization data (Figure 5\u2014figure supplement 1A-B) showing persistence of SIMR granule-associated proteins. The inference (C73) that autophagy regulates SIMR granule removal is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Autophagy regulates the spatial-temporal expression of multiple embryonic granule-associated proteins (PGL-1, SIMR-1, ZNFX-1, CSR-1), which display varied configurations following lgg-1 RNAi and are removed at different developmental timepoints, suggesting additional regulatory mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 are supported by live imaging data (Figure 5C-D) showing increased granule numbers and varied spatial configurations for multiple granule proteins following lgg-1 RNAi. The inference (C77) about additional regulatory mechanisms is reasonable given the different temporal dynamics of granule removal (Figures 1C, 4G).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "NRDE-3 remains nuclear in early embryos of eri-1 and rde-3 mutants while NRDE-3(HK-AA) is cytoplasmic, indicating small RNA binding is critical for nuclear import at this stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by live imaging data (Figure 2A) showing differential NRDE-3 localization in mutants vs. the small RNA binding-defective mutant. The inference (C79) about the requirement for small RNA binding is well-supported by the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "NRDE-3 binds predominantly CSR-class 22G-RNAs in early embryos, which become progressively less enriched during development, while ERGO-dependent 22G-RNAs become progressively more enriched and predominate by young adulthood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 are supported by small RNA sequencing data (Figure 6B-D) showing the developmental switch in NRDE-3-bound small RNA classes. The data are from IP-sRNA seq experiments with appropriate controls and replicates, providing strong evidence for the temporal switch in NRDE-3 small RNA partners.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "NRDE-3 binds CSR-class 22G-RNAs in early embryos of eri-1 mutants when it localizes to the nucleus, indicating CSR-class 22G-RNA production is independent of eri-1 and these RNAs are likely sufficient for NRDE-3 nuclear entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are supported by small RNA sequencing data (Figure 6\u2014figure supplement 2A) and live imaging data (Figure 2A) showing NRDE-3 binds CSR-class 22G-RNAs and remains nuclear in eri-1 mutants. The inference (C84) that CSR-class 22G-RNAs are sufficient for nuclear entry is reasonable based on the combined localization and sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "NRDE-3 switches from binding CSR-class 22G-RNAs in early embryos to ERGO-dependent 22G-RNAs in late embryos/adults, suggesting two separable functions at distinct developmental timepoints, and this switch coincides with SIMR granule dynamics, suggesting a potential role for SIMR-1 and ENRI-2 in promoting the switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is well-supported by the small RNA sequencing data (Figure 6B-D) showing the developmental switch. Claim C86 is speculative but reasonable given the temporal correlation between SIMR granule dynamics and the small RNA switch. However, the speculation requires further experimental validation to establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ERGO-dependent small RNAs are depleted in eri-1 mutants (consistent with ERI-1's role in 26G-RNA and downstream 22G-RNA production) but not substantially depleted in simr-1 or enri-2 mutants, indicating RRF-1 can synthesize ERGO-dependent 22G-RNAs without SIMR granules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by small RNA sequencing data (Figure 6E, Figure 6\u2014figure supplement 2A) showing differential depletion of ERGO-dependent small RNAs in different mutants. The inference (C89) that RRF-1 can function without SIMR granules is reasonable based on the lack of depletion in simr-1/enri-2 mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "In eri-1 mutants, NRDE-3 shows reduced binding to ERGO-dependent small RNAs and increased binding to CSR-class small RNAs in late embryos, indicating some NRDE-3 remains associated with CSR-class small RNAs into late embryogenesis when ERGO-dependent small RNAs are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by small RNA sequencing data (Figure 6F-G, Figure 6\u2014figure supplement 2A) showing the shift in NRDE-3-bound small RNAs in eri-1 mutants. The inference (C91) is reasonable based on the sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "In simr-1 and enri-2 mutants, NRDE-3 shows increased binding to CSR-class 22G-RNAs in late embryos without significant reduction in ERGO-dependent small RNA binding, indicating SIMR-1 and ENRI-2 are not required for ERGO-dependent small RNA production but may be required for efficient switching from CSR-class to ERGO-dependent 22G-RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 are supported by small RNA sequencing data (Figure 6F-G, Figure 6\u2014figure supplement 2B) showing increased CSR-class 22G-RNA binding in simr-1/enri-2 mutants without depletion of ERGO-dependent small RNAs. The inference (C94) about the role of SIMR-1/ENRI-2 in promoting efficient switching is reasonable based on the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "NRDE-3 targets in early embryos substantially overlap with CSR-1 targets, with the highest abundance CSR-1-bound small RNAs also showing highest NRDE-3-bound small RNA abundance, and this enrichment is specific to embryos not adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by Venn diagram analysis (Figure 7A) and small RNA abundance comparisons (Figure 7B, Figure 7\u2014figure supplement 1A) showing substantial overlap and correlation between NRDE-3 and CSR-1 targets in embryos. The data include appropriate citations to published CSR-1 datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Both NRDE-3 and CSR-1 are enriched for small RNAs from 3' ends of CSR-target genes in embryos, while adult CSR-1 additionally shows enrichment from gene bodies. This pattern suggests both bind CSR-1 catalytic activity-independent CSR-class 22G-RNAs in early embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 are supported by density plot analysis (Figure 7C) showing small RNA distribution along CSR-target genes, with appropriate citation to previous work (C100) on two types of CSR-class 22G-RNAs. The inference (C101) is reasonable based on the 3' UTR enrichment pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "NRDE-3 shows distinct small RNA distribution patterns for ERGO vs. CSR targets, preferentially binds early-degraded transcripts, and targets mRNAs that decrease (CSR targets) or increase (ERGO targets) in expression across development, revealing that NRDE-3 binds the same group of small RNAs as CSR-1 in early embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C106 are supported by density plot analysis (Figure 7\u2014figure supplement 1B), small RNA enrichment analysis (Figure 7\u2014figure supplement 1C), and mRNA expression analysis (Figure 7\u2014figure supplement 1D). The conclusion (C106) that NRDE-3 binds the same small RNAs as CSR-1 in early embryos is well-supported by the combined data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Loss of NRDE-3 enhances CSR-1 fertility defects, as the csr-1::degron; nrde-3(HK-AA) double mutant shows more severe sterility and embryonic lethality than the csr-1::degron single mutant on auxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 are supported by quantitative fertility data (Figure 7D, Figure 7\u2014figure supplement 1E) showing significantly reduced embryo production and increased sterility in the double mutant compared to the single mutant. The inference (C109) of genetic enhancement is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R33",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "NRDE-3 deposits H3K9me3 at ERGO-target genes (which show high H3K9me3 levels reduced in nrde-3 mutants) but not at CSR targets in early embryos (which show no H3K9me3 enrichment or change in nrde-3 mutants).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 are supported by ChIP-seq data analysis (Figure 7E) showing differential H3K9me3 levels on NRDE-3 targets in wild-type and nrde-3 mutants, with appropriate citation to previous work (C112). The data establish that NRDE-3 functions differently on CSR vs. ERGO targets with respect to H3K9me3 deposition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R34",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "NRDE-3 localizes to oocyte nuclei in eri-1 and rde-3 mutants but is cytoplasmic in nrde-3(HK-AA) mutants, demonstrating that NRDE-3 nuclear localization in oocytes depends on small RNA binding but not ERGO-dependent 22G-RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 are supported by live imaging data (Figure 8A) showing NRDE-3 localization in oocytes of different mutant backgrounds. The inference (C116) is reasonable based on the genetic data and is consistent with the early embryo localization patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R35",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "NRDE-3 remains nuclear in germ cells and early embryos upon EGO-1 depletion (though some cytoplasmic granules appear), indicating NRDE-3 either does not exclusively bind CSR-class 22G-RNAs in the germline or can bind other small RNAs when CSR-class 22G-RNAs are absent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C119 are supported by live imaging data (Figure 8B) showing NRDE-3 localization following EGO-1 depletion. The inference (C118) about alternative small RNA binding is reasonable given the persistent nuclear localization despite CSR-class 22G-RNA depletion. However, the appearance of some cytoplasmic granules (C119) suggests partial unloading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R36",
+    "claim_ids": [
+      "C120",
+      "C121"
+    ],
+    "result": "NRDE-3 loses nuclear localization in germline and early embryos when both WAGO-class and CSR-class 22G-RNAs are depleted (rde-3; ego-1::degron on auxin), indicating NRDE-3 likely binds CSR-class 22G-RNAs but can additionally bind WAGO-class 22G-RNAs when CSR-class 22G-RNAs are depleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121 are supported by live imaging data (Figure 8B) showing NRDE-3 localization in the double depletion condition. The inference (C121) about NRDE-3's capacity to bind multiple small RNA classes is reasonable based on the combined genetic data from single and double depletions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R37",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "NRDE-3 is loaded with CSR-class 22G-RNAs in the parental germline and transmitted to early embryos, as somatic transcription does not initiate until the 4 cell stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 are supported by citation to previous work on transcription timing (C122) and by the combined localization and sequencing data showing NRDE-3 binds CSR-class 22G-RNAs in early embryos before somatic transcription begins. The inference (C123) is well-supported by the temporal logic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R38",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "NRDE-3 contributes to global transcriptional repression in oocytes by repressing RNA Pol II, as PSer2 signal intensity is increased and elongating Pol II stays associated with DNA longer in nrde-3(HK-AA) mutants, consistent with previous observations in set-25 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 are supported by quantitative immunofluorescence data (Figure 8C-E) showing increased PSer2 signal and altered localization patterns in nrde-3(HK-AA) mutants, with appropriate citation to previous work (C127). The inference (C128) about NRDE-3's role in transcriptional repression is well-supported by the Pol II data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R39",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "C. elegans has 19 functional Argonaute proteins, which is greatly expanded compared to 8 in mammals, 5 in Drosophila melanogaster, and 1 in Schizosaccharomyces pombe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 are supported by citations to previous work characterizing Argonaute proteins across species. These are well-established facts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R40",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "RNAi serves as an antiviral defense mechanism in plants and worms (which lack adaptive immunity), nematodes have specialized dsRNA transporters for environmental sensing, and Argonaute diversity may be linked to nematode environmental plasticity and parasitism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 are supported by citations to previous work on RNAi function, immunity, and evolution in different organisms. These provide appropriate context for the expanded Argonaute family in C. elegans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R41",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "WAGO-clade Argonaute proteins bind 22G-RNAs synthesized by RdRPs, with each of the 11 WAGO proteins showing specificity for unique 22G-RNA groups and distinct expression patterns. Examples include WAGO-1 (silences transposons/pseudogenes in germline cytoplasm), CSR-1 (clears maternal mRNA/licenses genes), SAGO-1/2 (somatic function), and HRDE-1/NRDE-3 (nuclear, required for RNAi inheritance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C144 are supported by citations to previous work characterizing WAGO-clade Argonaute proteins and their functions. These provide essential background for understanding NRDE-3's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R42",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Six germ granule sub-compartments have been identified in C. elegans (P granules, Z granules, Mutator foci, SIMR foci, E granules, D granules), P-bodies associate with germ granules, and P4 division into Z2/Z3 at ~100 cell stage coincides with germ granule reorganization and transcription initiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C148 are supported by citations to previous work on germ granule organization and embryonic development. These provide essential context for the current study of embryonic SIMR granules.",
+    "result_type": "MINOR"
+  }
+]

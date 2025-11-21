@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C8",
+      "C21",
+      "C22",
+      "C29",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Actin depolymerization in matrix-detached epithelial cells induces formation of a giant unilocular vacuole (GUVac) through accumulation and fusion of large vacuoles. Treatment with actin polymerization inhibitors (LatB, CytoD) or overexpression of SpvB toxin induces gradual GUVac formation in suspended cells, with nascent vacuoles appearing at ~2-6 hr that subsequently enlarge and fuse into a single giant vacuole by 12-24 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C8, C21-C22, C29, C32-C34 provide converging evidence from multiple experimental approaches (pharmacological inhibition, genetic manipulation, time-lapse imaging, TEM) demonstrating that actin depolymerization specifically induces GUVac formation. The temporal progression is well-documented with quantitative data across multiple time points and cell lines. Controls with actin stabilizers and other cytoskeletal inhibitors appropriately demonstrate specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "GUVac formation is specific to actin depolymerization and does not occur with other cytoskeletal perturbations. Treatment with jasplakinolide (actin stabilizer), nocodazole (microtubule inhibitor), blebbistatin (myosin inhibitor), or inhibitors of Rho GTPases (Y-27632, EHT 1864, ML 141) does not induce GUVac formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 provide appropriate negative controls demonstrating specificity of the GUVac phenotype to actin depolymerization. The panel of inhibitors targeting different aspects of cytoskeletal regulation strengthens the conclusion that actin depolymerization specifically drives this process. Quantitative data in Figure 1F supports these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31"
+    ],
+    "result": "GUVac formation in response to actin stress is specific to epithelial cells from secretory tissues (gastric, thyroid, pancreatic, mammary) and does not occur in cells from non-secretory tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 demonstrate tissue-specific competence for GUVac formation across multiple cell lines. The observation is supported by systematic testing of cells from different tissue origins (Figure 1C, E, I and supplements). However, the mechanistic basis for this tissue specificity is not explored, and the sample of non-secretory cell types tested is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Matrix attachment suppresses GUVac formation. Adherent cells or suspended cells cultured with Matrigel do not form GUVacs when treated with actin depolymerization agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 demonstrate that matrix attachment is a critical contextual requirement for GUVac formation. The experiments with adherent cells and Matrigel-supplemented suspension cultures provide appropriate controls. However, C36 involves an inferential step that could benefit from additional mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C101"
+    ],
+    "result": "GUVac formation occurs through a macropinocytosis-like process characterized by inwardly curved plasma membrane invaginations (>500 nm diameter) that pinch off to form large vacuoles. This process is inhibited by EIPA and involves uptake of high-molecular-weight dextran (70 kDa), but differs from conventional macropinocytosis by relying on actin depolymerization rather than polymerization and exhibiting inward rather than outward membrane curvature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40-C49, C101 provide strong multi-modal evidence (TEM, super-resolution live imaging, pharmacological inhibition, dextran uptake) for a macropinocytosis-like mechanism. The characterization of membrane curvature direction and size is well-documented. The distinction from conventional macropinocytosis based on actin dependence is compelling. Live imaging directly demonstrates plasma membrane invagination and vesicle formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C102"
+    ],
+    "result": "Septin proteins, particularly septin 6, are recruited to inwardly curved plasma membranes during GUVac formation via their amphipathic helix (AH) domain and are required for the process. Inhibition of septin function (FCF treatment) or depletion of septin 2 and 9 suppresses GUVac formation, and a septin 6 mutant lacking the AH domain fails to localize to curved membranes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C57, C102 provide converging evidence from localization studies (super-resolution imaging), pharmacological inhibition, genetic depletion, and domain deletion experiments. The role of the AH domain in membrane curvature sensing is well-established in cited literature and confirmed here. The quantitative analysis of septin structures and GUVac formation provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Dynamin 2 is required for GUVac formation. Knockdown of dynamin 2, expression of dominant-negative dynamin 2 (K44A), or treatment with dynamin inhibitors (Dynasore, Dynole 34-2, OctMAB, MitMAB) significantly inhibits GUVac formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 demonstrate dynamin requirement through multiple complementary approaches (siRNA knockdown, dominant-negative expression, multiple pharmacological inhibitors). The consistency across different experimental strategies strengthens the conclusion. This is consistent with dynamin's established role in membrane fission during endocytosis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C103"
+    ],
+    "result": "PI(3)P produced by class II PI3K (PI3K-C2\u03b1) and class III PI3K (VPS34), but not class I PI3K, is required specifically for the vacuole fusion step during GUVac formation. Inhibition or knockout of VPS34 or PI3K-C2\u03b1 prevents vacuole fusion but not initial vacuole formation, and vacuoles are positive for PI(3)P but not PI(3,4)P2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C73, C103 provide comprehensive evidence through pharmacological inhibition (class-specific inhibitors), siRNA knockdown, CRISPR/Cas9 knockout, and lipid probe localization. The distinction between class I, II, and III PI3K is well-controlled. The temporal analysis (TEM and SIM at multiple time points) elegantly demonstrates that PI3K inhibition blocks fusion but not initial vacuole formation. PI(3)P-specific probe localization confirms the lipid identity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C74",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C86",
+      "C87"
+    ],
+    "result": "GUVac formation confers anoikis resistance to matrix-detached epithelial cells. Cells with GUVacs induced by LatB treatment survive under conditions that normally trigger anoikis (EDTA treatment blocking cell-cell adhesion), do not show cleaved caspase-3, exhibit activation of survival signaling (AKT, BCL2), and are protected from cell death. Genetic suppression of GUVac formation (PI3K-C2\u03b1 KO, VPS34 KO) restores susceptibility to anoikis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C74, C76-C80, C82-C83, C86-C87 provide strong evidence for the functional significance of GUVac formation in cell survival. Multiple complementary assays (cleaved caspase-3 immunostaining, trypan blue exclusion, survival signaling markers) demonstrate protection from anoikis. The genetic loss-of-function experiments (PI3K-C2\u03b1 and VPS34 KO) provide critical evidence that GUVac formation is necessary for survival under these conditions. The temporal analysis shows protection is sustained over 72 hr.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C93"
+    ],
+    "result": "GUVac formation protects cells from extrinsic apoptosis induced by sFasL. Prior GUVac formation (24 hr LatB pretreatment) prevents sFasL-induced cell death, while simultaneous treatment does not, suggesting GUVacs must form before death signaling to confer protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82, C93 demonstrate protection from extrinsic apoptosis pathway through temporal ordering experiments. The distinction between simultaneous vs. sequential treatment is important and well-controlled. However, the mechanism by which GUVacs block FasL-induced apoptosis is not explored. The sample sizes appear adequate (n>600 cells per condition).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "GUVac formation is reversible upon matrix reattachment. When GUVac-containing cells are returned to adherent conditions, the GUVac gradually breaks up into smaller vacuoles that are eventually eliminated as cells adopt normal adherent morphology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 demonstrate reversibility through time-lapse imaging of reattachment (Figure 5J). The observation that GUVacs resolve upon return to normal conditions is important for understanding this as a transient adaptive response. However, the molecular mechanisms of GUVac breakdown are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Early vacuoles (1 hr) exhibit markers of early endosomes (EEA1, Rab5) and take up dextran, transitioning to late endosomal markers (LysoTracker) by 6 hr. The mature GUVac membrane shows heterogeneous distribution of endosomal markers but even distribution of Transferrin receptor (TfR).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 characterize the endosomal identity of vacuoles through marker analysis. The temporal progression from early to late endosomal markers is consistent with macropinocytosis. However, the heterogeneous distribution of markers on mature GUVacs makes definitive organelle classification difficult. The even TfR distribution suggests plasma membrane origin, consistent with the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "In suspended MCF-10A cells without treatment, 43.66% show entotic vacuole formation and 2.35% show GUVac formation after 24 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 provide baseline quantification of vacuole types in control conditions. The data (n=772 cells) shows that GUVac formation occurs at low frequency without actin perturbation, while entosis is more common. This establishes that actin depolymerization dramatically increases GUVac frequency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "GUVacs differ from entotic vacuoles in that they do not contain cells (no cell-in-cell structures).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 distinguishes GUVacs from entotic vacuoles based on morphological criteria. This is supported by microscopy observations throughout the manuscript. The distinction is important for establishing GUVacs as a distinct phenomenon from previously described entosis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C104",
+      "C105"
+    ],
+    "result": "The authors speculate that GUVac formation might function as a mechanism of immune evasion in circulating tumor cells (CTCs) and that surviving CTCs might induce GUVac formation to maintain viability under hemodynamic shear stress, with potential reversibility after seeding metastatic niches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C104-C105 are explicitly speculative and extrapolate from the in vitro findings to potential clinical relevance. While the speculation is reasonable given the connection between F-actin disruption, shear stress, and CTC survival from cited literature, no direct evidence is provided that CTCs actually form GUVacs in vivo or that this occurs during metastasis. These remain hypotheses requiring future investigation.",
+    "result_type": "MINOR"
+  }
+]

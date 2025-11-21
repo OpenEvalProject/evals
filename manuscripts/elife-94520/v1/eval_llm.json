@@ -1,0 +1,445 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes the biological context that E/I balance is essential for brain function, GABAergic disruptions are common in neurological disorders including ASD, and PTEN mutations are associated with ASD and neurodevelopmental defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C9-C12 are well-supported by established scientific knowledge and multiple literature citations. These claims provide the foundational context for the study and represent consensus views in the field based on prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "C. elegans neuromuscular system is established as an appropriate model system for studying E/I balance, with conserved PI3K/Akt pathway components and proven utility for investigating neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 are supported by multiple citations to prior work demonstrating the utility of C. elegans for studying neurotransmission and neurodevelopmental disorders. The conservation of the PI3K/Akt pathway is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "daf-18/PTEN and daf-16/FOXO mutants show hypersensitivity to cholinergic drugs (aldicarb and levamisole), with no additive effects in double mutants, indicating they act in the same genetic pathway to affect neuromuscular signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 and C31-C33 are directly supported by experimental data in Figure 1B-C showing drug hypersensitivity phenotypes. The lack of additive effects in double mutants (C32-C33) provides strong genetic evidence for epistasis. Statistical analysis appears appropriate with multiple replicates (n=25-30 per trial, at least 4 trials).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Loss-of-function mutations in other PI3K pathway components (age-1, pdk-1, akt-1, akt-2) do not show drug hypersensitivity, but gain-of-function pdk-1 does, supporting that low DAF-16/FOXO activity causes hypersensitivity. TOR pathway mutants show no phenotype, suggesting CeTOR is not involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are supported by data in Figure 1D-E. The differential effects of loss-of-function versus gain-of-function pdk-1 mutations provide strong evidence for the pathway model. However, the inability to test akt-1/akt-2 double mutants due to dauer arrest (acknowledged in text) represents a limitation in fully testing redundancy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "daf-18/PTEN and daf-16/FOXO mutants show mild body shortening after touch stimulation, less severe than complete GABAergic loss (unc-25), with no additive effects in double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 are supported by quantitative data in Figure 2B with appropriate sample sizes (n=50-70) and statistical analysis (Kruskal-Wallis with Dunn's post-test). The comparison to unc-25 provides important context for interpreting the severity of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "daf-18/PTEN mutants show reduced closed omega turns during escape response (53% vs 91% in wild-type), phenocopied by daf-16/FOXO mutants with no additive effects in double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 are supported by quantitative behavioral data in Figure 2C with appropriate replication (6-7 trials, n=20 per trial). The omega turn assay is a well-established behavioral readout in C. elegans. Statistical analysis (one-way ANOVA with Tukey's test) is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Optogenetic experiments reveal that daf-18/PTEN and daf-16/FOXO mutants have reduced GABAergic neuron function (decreased elongation upon activation) but hypercontraction upon cholinergic activation, indicating specific GABAergic defects while excitatory neurons remain functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by optogenetic data in Figure 2D-E with good sample sizes (n=40-55). The validation of the automated measurement system (Figure 2F-G) strengthens confidence in the quantification. The reciprocal experiments (GABAergic vs cholinergic activation) provide strong evidence for selective GABAergic dysfunction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "daf-18/PTEN mutants exhibit increased GABAergic commissure defects (guidance errors, branching, incomplete outgrowth) but no cholinergic defects. Defects are present at early L1 stage and increase by L4 stage. daf-16/FOXO mutants show similar GABAergic defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by morphological analysis in Figures 3B-E with appropriate replication (at least 3 trials, n=20-25 per trial). The developmental time course (Figure 3\u2014figure supplement 3) provides important evidence that defects arise during development rather than from degeneration. The selective GABAergic vulnerability is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Cell-specific rescue experiments show that expressing daf-18/PTEN specifically in GABAergic neurons rescues both behavioral (omega turn) and morphological (commissure) defects, demonstrating cell-autonomous action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by rescue experiment data in Figure 3F-G. The cell-specific rescue provides strong evidence for cell autonomy. However, the text mentions 'at least three independent transgenic lines' but only shows data from one representative line, which is acceptable but could be strengthened by showing consistency across lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "The manuscript concludes that daf-18/PTEN and daf-16/FOXO mutations cause developmental defects specifically in GABAergic neurons through hyperactivation of the PI3K pathway and DAF-16/FOXO inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 represent summary conclusions supported by the collective evidence from genetic epistasis (C32-C33), optogenetics (C50-C53), morphology (C54-C59), and rescue experiments (C60-C62). The inference about PI3K pathway hyperactivation is well-supported by the genetic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "\u03b2HB induces DAF-16/FOXO activity in daf-18/PTEN mutants, as demonstrated by increased sod-3 expression (a DAF-16 target gene) in daf-18 but not daf-16 mutants or daf-18;daf-16 double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 are supported by the sod-3::GFP reporter data in Figure 4\u2014figure supplement 1 with appropriate sample sizes (n=40-90) and statistical analysis (Mann-Whitney test). The genetic specificity (no effect in daf-16 or double mutants) provides strong evidence that \u03b2HB acts through DAF-16/FOXO.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "\u03b2HB supplementation throughout development rescues behavioral phenotypes in daf-18/PTEN mutants (reduced drug hypersensitivity, rescued body shortening, increased closed omega turns) but not in daf-16/FOXO or double mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 are supported by behavioral data in Figure 4A-D with appropriate replication and statistical analysis. The DAF-16-dependence of the rescue (no effect in daf-16 mutants) provides strong mechanistic evidence. Sample sizes and statistical tests are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "\u03b2HB treatment improves GABAergic function in daf-18/PTEN mutants as shown by increased elongation upon GABAergic activation and reduced hypercontraction upon cholinergic activation, suggesting rebalancing of E/I signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 are supported by optogenetic data in Figure 4E-J with appropriate sample sizes (n=25-35). The bidirectional improvement (enhanced GABAergic response and reduced cholinergic hypercontraction) provides strong evidence for functional rescue of the E/I imbalance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "\u03b2HB supplementation reduces GABAergic commissure defects in daf-18/PTEN mutants but not in daf-16/FOXO or double mutants, demonstrating morphological rescue dependent on DAF-16/FOXO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by morphological data in Figure 4K with appropriate replication (at least 3 trials, n~20 per trial). The DAF-16-dependence of the morphological rescue parallels the behavioral rescue, providing consistent evidence for the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "\u03b2HB does not rescue AIY neurite outgrowth or HSN migration defects in daf-18/PTEN mutants, possibly because these embryonic events occur before \u03b2HB can penetrate the eggshell.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by negative data in Figure 4\u2014figure supplement 2. The speculation about eggshell impermeability (C82) is reasonable given the citation to Sato et al., 2006 and is consistent with the developmental timing experiments in Figure 5D. This negative result is important for defining the scope of \u03b2HB's effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Critical period experiments show that \u03b2HB exposure during early L1 stage (18 hr from egg laying) is sufficient to rescue behavioral and morphological defects, while later exposure is less effective. Exposure limited to embryonic development (first 9 hr) has no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 are supported by developmental timing experiments in Figure 5B-D with appropriate replication (4-6 trials, n=20-25 per trial). The critical period analysis is well-designed and provides important mechanistic insight. The lack of effect during embryonic-only exposure (C86) is consistent with the eggshell impermeability hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The study's main conclusions are that daf-18/PTEN mutations cause GABAergic-specific neurodevelopmental defects through reduced DAF-16/FOXO activity, and that \u03b2HB-enriched diet during early development mitigates these defects in a DAF-16/FOXO-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 represent the primary conclusions of the study, supported by the collective evidence from all experimental results. The genetic epistasis, cell-specific rescue, optogenetic functional analysis, morphological characterization, and \u03b2HB rescue experiments with critical period analysis provide strong, converging evidence for these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The defects in daf-18/PTEN mutants affect the entire GABAergic system (both DD and VD neurons) and are not specific to DD neuron remodeling, as evidenced by defects present before DD rewiring and similar defects in VD neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C95 are supported by the developmental analysis showing defects at early L1 (before DD rewiring) and the observation of defects in both DD and VD neurons (Figure 3\u2014figure supplement 2). This addresses an important alternative explanation and strengthens the developmental interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The discussion proposes that GABAergic-specific defects in daf-18/PTEN mutants may involve integrin signaling, based on parallels with ina-1 mutants and known interactions between PI3K/Akt/FOXO and integrin pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C98 are supported by citations to prior work, but C99 is explicitly speculative. No experimental data in this manuscript directly tests integrin involvement. This represents a reasonable hypothesis for future work but is not demonstrated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The discussion notes that other genes (eel-1, Anaphase-Promoting Complex subunits) also cause GABAergic-specific defects, suggesting possible compensatory mechanisms in cholinergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by citations to prior work. C102 is speculative but represents a reasonable interpretation of the selective vulnerability pattern. This contextualizes the findings within broader patterns of neuronal selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "The study contrasts its findings with mammalian PTEN studies, noting that while mammalian PTEN defects typically involve mTOR, the C. elegans neuromuscular defects involve DAF-16/FOXO rather than TOR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "C103 is supported by citations to mammalian studies. C104 is supported by the genetic data showing no TOR pathway involvement (Figure 1E) and strong DAF-16/FOXO involvement (Figures 1-3). This represents an important distinction between systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The discussion contextualizes DAF-16/FOXO's role in GABAergic development within the broader literature on FOXO function in neurodevelopment, including conservation across species and cell-autonomous action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 are supported by citations to prior work. C110 is supported by the rescue experiments in Figure 3F-G. C111 is supported by citation to Byrne et al., 2014. This effectively places the findings in broader context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "The discussion contextualizes the \u03b2HB findings within clinical use of ketogenic diets for epilepsy and ASD, noting correlations with increased GABA signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 are supported by citations to clinical and mechanistic studies. C115 summarizes the experimental findings. This provides important translational context for the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The discussion proposes that \u03b2HB may act through HDAC inhibition to upregulate DAF-16/FOXO transcription, based on prior work showing \u03b2HB inhibits HDACs and induces FOXO expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C118 are supported by citations to prior work. However, C119 is explicitly speculative ('may upregulate'). The manuscript does not directly test HDAC involvement or measure DAF-16 transcription levels. This represents a reasonable mechanistic hypothesis but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The discussion proposes an alternative mechanism where \u03b2HB may inhibit insulin signaling to activate DAF-16/FOXO, supported by prior work showing \u03b2HB reduces Akt activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C120-C122 are supported by citations to prior work. C123 is supported by the experimental data showing DAF-16-dependent effects. However, the manuscript does not directly measure insulin signaling or Akt activity in response to \u03b2HB. This represents another plausible mechanism that requires testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The critical period findings are discussed in the context of developmental sensitive periods, with the conclusion that DAF-16/FOXO is more important for GABAergic development than maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 are supported by citations to prior work. C126 is supported by the developmental timing experiments in Figure 5. C127 represents a reasonable inference from the critical period data, though it could be tested more directly by examining adult-stage interventions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The discussion speculates that \u03b2HB may have preventive effects on VD neuron development and may act through long-lasting epigenetic modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C128 is explicitly speculative based on the timing of VD neuron development. C129 is supported by citation to He et al., 2023 but represents speculation about the mechanism in this system. These are reasonable hypotheses but lack direct experimental support in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The discussion proposes that there is a critical developmental period when low insulin/PI3K pathway activity is required for proper GABAergic development, and that this regulation is conserved across animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 are supported by citations to prior work. C134-C136 summarize the experimental findings. C137 represents a synthesis of the data into a developmental model. The model is well-supported by the genetic and developmental timing data, though direct measurement of pathway activity during development would strengthen it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The discussion proposes that the findings may have translational relevance to gestational diabetes and suggests \u03b2HB supplementation as a potential therapeutic strategy for neurodevelopmental pathologies associated with hyperinsulinemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C138-C139 are supported by citations to prior work on insulin signaling and gestational diabetes. However, C140 is explicitly speculative ('could constitute'). While the C. elegans findings are compelling, extrapolation to mammalian therapeutic applications requires substantial additional validation. This represents an interesting hypothesis for future work.",
+    "result_type": "MINOR"
+  }
+]

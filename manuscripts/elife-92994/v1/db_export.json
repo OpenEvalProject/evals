@@ -1,0 +1,2206 @@
+{
+  "submission": {
+    "id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:44:36.163269Z",
+    "updated_at": "2025-11-21T22:44:36.163269Z"
+  },
+  "content": [
+    {
+      "id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "content_type": "manuscript",
+      "content_text": "# Peptidoglycan-Chi3l1 interaction shapes gut microbiota in intestinal mucus layer\n\n## Authors\n\n- Yan Chen<sup>1</sup>\n- Ruizhi Yang<sup>1</sup>\n- Bin Qi<sup>1</sup> ([ORCID: 0000-0003-2261-1550](https://orcid.org/0000-0003-2261-1550)) \u2020\n- Zhao Shan<sup>1</sup> ([ORCID: 0000-0001-5064-1023](https://orcid.org/0000-0001-5064-1023)) \u2020\n\n### Affiliations\n\n1. Southwest United Graduate School, Yunnan Key Laboratory of Cell Metabolism and Diseases, State Key Laboratory of Conservation and Utilization of Bio-resources in Yunnan, Center for Life Sciences, School of Life Sciences, Yunnan University Kunming China ([ROR:0040axw97](https://ror.org/0040axw97))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe balanced gut microbiota in intestinal mucus layer plays an instrumental role in the health of the host. However, the mechanisms by which the host regulates microbial communities in the mucus layer remain largely unknown. Here, we discovered that the host regulates bacterial colonization in the gut mucus layer by producing a protein called Chitinase 3-like protein 1 (Chi3l1). Intestinal epithelial cells are stimulated by the gut microbiota to express Chi3l1. Once expressed, Chi3l1 is secreted into the mucus layer where it interacts with the gut microbiota, specifically through a component of bacterial cell walls called peptidoglycan. This interaction between Chi3l1 and bacteria is beneficial for the colonization of bacteria in the mucus, particularly for Gram-positive bacteria like Lactobacillus. Moreover, a deficiency of Chi3l1 leads to an imbalance in the gut microbiota, which exacerbates colitis induced by dextran sodium sulfate. By performing fecal microbiota transplantation from Villin-cre mice or replenishing Lactobacillus in IEC\u2206Chil1 mice, we were able to restore their colitis to the same level as that of Villin-cre mice. In summary, this study shows a \u2018scaffold model\u2019 for microbiota homeostasis by interaction between intestinal Chi3l1 and bacteria cell wall interaction, and it also highlights that an unbalanced gut microbiota in the intestinal mucus contributes to the development of colitis.\n\n## Introduction\n\nIntestinal homeostasis is crucial for maintaining human health (Lozupone et al., 2012). Alterations in gut microbiota composition have been linked to various diseases including cancer, obesity, and neurological disorders (B\u00e4umler and Sperandio, 2016; Charbonneau et al., 2016; Honda and Littman, 2016; Sonnenburg and B\u00e4ckhed, 2016; Thaiss et al., 2016). Dysbiosis, which refers to an imbalance in gut microbiota, is characterized by decreased microbial diversity, the presence of harmful microbes, or absence of beneficial ones (Petersen and Round, 2014). Therefore, understanding the factors that influence gut microbiota is a fundamental goal in microbiome research (McDonald et al., 2020). Growing evidence suggests that colonization of the gut mucus layer can affect the susceptibility and progression of intestinal diseases like inflammatory bowel disease (IBD), irritable bowel syndrome, and celiac disease (Gordon, 2012). IBDs, such as Crohn\u2019s disease (CD) and ulcerative colitis (UC), are characterized by chronic inflammation of the intestinal mucosa. Although the cause of the IBD is unclear, mouse models lacking the key components of the mucus are predisposed to colitis, accompanied by dysbiosis in mucosa (Fu et al., 2011; Johansson et al., 2008), which is in accordance with increased epithelial-adherent microbial communities in biopsies from patients with IBD (Johansson et al., 2014; Swidsinski et al., 2005). Furthermore, there were significant differences in the gut microbiota of CD patients compared with healthy controls, and these differences were only present in mucus samples (not stool samples), suggesting that bacteria in the mucus layer may be more important for the development of IBD (Gevers et al., 2014). Donaldson et al. discovered that the intestinal flora utilizes host immunoglobulin A (IgA) for mucus colonization, indicating that the host may secrete certain factors to maintain intestinal flora homeostasis in the mucus (Donaldson et al., 2018). However, the mechanisms regulating gut microbiota colonization in the mucus layer remain largely unknown. We aim to investigate the regulation of microbial communities in gut mucus and its implications in intestinal diseases.\n\nChitinase 3-like protein 1 (Chi3l1, also known as YKL-40 in humans) is a secreted protein that belongs to the glycosylhydrolase 18 family (Lee et al., 2011). Despite its name, Chi3l1 can bind to chitin but does not have chitinase activity (Houston et al., 2003). In our investigation, we noticed that chitin and peptidoglycan (PGN), a major component of bacterial cell walls, have similar structures (Fulde et al., 2018). Based on this information, we speculate that Chi3l1 might also interact with PGN and, therefore, interact with bacteria. Interestingly, Chi3l1 is expressed in intestinal epithelial cells (IECs) and the lamina propria. We hypothesize that Chi3l1 may be secreted by IECs and regulate the gut microbiota through its interaction with PGN in the mucus layer. In our study, we discovered that gut microbiota induced the expression of Chi3l1 in epithelial cells. Once expressed, Chi3l1 is secreted into the mucosa and interacts with bacteria, particularly with the bacterial cell wall component PGN. This interaction promotes bacterial colonization, especially of beneficial bacteria such as Lactobacillus. As a result, mice with higher levels of Chi3l1 are less susceptible to colitis.\n\n## Results\n\n### Intestinal epithelial cells express Chi3l1 induced by gut microbiota\n\nThe gut microbiota\u2019s composition is shaped by host factors, including IgA (Donaldson et al., 2018), RegIII\u03b3 (Vaishnava et al., 2011), and TLR-5 (Fulde et al., 2018). Yet, specific host factors which maintain the homeostasis of the microbiota remain largely undefined. Drawing on the theory of co-evolution between the host and microbiota (Groussin et al., 2020), we propose that host factors, which are induced by bacteria in the gut, could play a pivotal role in regulating bacterial colonization and composition. In a previous study, it was observed that both live Escherichia coli and heat-killed E. coli treatment resulted in a significant increase in the expression of the gene encoding Chi3l1 in human intestinal organoids (Hill et al., 2017). To verify this finding, we conducted immunohistochemical staining on intestinal tissue sections of germ-free and specific pathogen free (SPF) C57BL/6J wildtype mice. We observed a substantial increase of Chi3l1 expression in SPF mice compared to germ-free mice (Figure 1A). The intestinal epithelium comprises various cell types, including intestinal cells, goblet cells, endoentercrine cells, Tuft cells, Paneth cells, M cells, and others (Johansson et al., 2014). To identify the cellular sources of Chi3l1, we performed co-staining with markers for specific cell types, including chromogranin A (ChgA) for enteroendocrine cells, Ulex europaeus Agglutinin I (UEA-1) for goblet cells and Paneth cells, and double cortin-like kinase 1 (DCLK1) for tuft cells. Our results revealed that Chi3l1 is primarily expressed in enteroendocrine cells in the ileum and goblet or Paneth cells in the colon (Figure 1B). However, Chi3l1 expression was not observed in tuft cells (Figure 1\u2014figure supplement 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig1-v1.jpg)\n\n**Figure 1.:** (A) Immunohistochemical (IHC) staining to detect Chi3l1 in both ileum and colon from germ-free and wildtype mice. Ctrl (wildtype mice without application of first antibody), WT (wildtype C57B/6J mice). Red arrows indicate Chi3l1-expressing cells. Scale bars, 50 \u03bcm (Ctrl, Germ-free, WT). The number of Chi3l1-positive cells in each field of view (FOV) was analyzed. (B) Ileum and colon were collected from wildtype mice and stained with ChgA (green), Chi3l1(red), and nuclear DAPI (blue) in ileum and UEA-1 (green), Chi3l1 (red), and nuclear DAPI (blue) in colon. Scale bars, 50 \u03bcm. Ctrl (without application of first antibody), WT (wildtype C57BL/6J mice). (C) Western blot to detect Chi3l1 protein expression in DLD-1 cells after bacteria mix infection for 12 hr. Bacteria mix are total bacteria extracted from feces of wildtype mice. (D) Western blot to detect Chi3l1 protein expression in DLD-1 cells after Staphylococcus sciuri and E. coli infection for 12 hr. Staphylococcus sciuri and E. coli are isolated from bacteria mix and verified by 16S rRNA sequencing. Three independent experimental results are showed. (E) Western blot to detect Chi3l1 protein expression in DLD-1 cells after treatment with heat-killed E. coli for 12 hr. Three independent experimental results are showed. (F) Western blot to detect Chi3l1 protein expression in DLD-1 cells after treatment with 100 pg/mL lipopolysaccharides (LPS) for 12 hr. Three independent experimental results are showed. (G) Immunofluorescence to detect Chi3l1 protein expression in DLD-1 cells after treatment with 100 pg/mL LPS for 12 hr. Scale bars, 20 \u03bcm. The presence of cells in the untreated sample is annotated using white dashed lines based on the overexposure. All data above represent at least three independent experiments. Representative images are shown in (A, B), n = 3 mice/group. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: no significant difference, error bar indicates SEM.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Ileum and colon were collected from Chil1-EGFP reporter mice and stained with DCLK1 (red), Chi3l1 (green), and nuclear DAPI (blue). Scale bars, 20 \u03bcm. Representative images are shown, n = 3 mice/group. (B) The construction, genotyping strategy, and genotyping results of Chil1-EGFP reporter mice. P: positive control; Wt: wildtype control; Neg: Blank control (ddH2O); M: DNA Ladder.\n\nFurthermore, we isolated total bacteria from wildtype mouse feces and treated DLD-1 cells (a colorectal adenocarcinoma cell line) with the bacterial extract for 12 hr. We found that the bacterial extract directly induced Chi3l1 expression in DLD-1 cells (Figure 1C). To examine whether the induction of Chi3l1 expression requires a specific bacteria strain, we further identified the bacterial extract using 16S rRNA sequencing. Our results revealed that E. coli specifically stimulated Chi3l1 expression in DLD-1 cells, while Staphylococcus sciuri did not have the same effect (Figure 1D). Although our data are limited to these two bacterial strains, it suggests that not all bacteria can induce the expression of Chi3l1. Next, we wondered what component of bacteria can induce Chi3l1 expression. We tried heat-killed E. coli, which maintains bacterial cell wall integrity. We found that treatment of DLD-1 cells with heat-killed E. coli also led to an induction of Chi3l1 expression (Figure 1E). These findings suggest that the induction of Chi3l1 expression does not necessarily require live bacteria and that bacterial components alone are sufficient to induce this response.\n\nGiven that E. coli is Gram-negative and S. sciuri is Gram-positive, we hypothesized that the difference in their ability to induce Chi3l1 expression might be due to variations between Gram-negative and Gram-positive bacteria, such as the presence of lipopolysaccharides (LPS). To test this hypothesis, we used LPS to induce Chi3l1 expression. Consistent with our hypothesis, LPS successfully induced Chi3l1 expression (Figure 1F and G). Collectively, these findings provide evidence that the gut microbiota can induce Chi3l1 expression in IECs. Collectively, these findings provide evidence that the gut microbiota can induce Chi3l1 expression in IECs.\n\n### Chi3l1 interact with bacteria via peptidoglycan\n\nChi3l1 belongs to a group of proteins called non-enzymatic chitinase-like proteins, which are known to bind chitin. Chitin is a polysaccharide present in the exoskeleton of arthropods and the cell walls of fungi (Zhao et al., 2020). By comparing the structure of chitin with that of PGN, a component of bacterial cell walls, we observed that they have similar structures (Figure 2A). Based on this observation, we hypothesized that Chi3l1 may interact with gut bacteria through PGN. To test our hypothesis, we conducted co-incubation experiments where we mixed recombinant mouse Chi3l1 (rmChi3l1) with either Gram-positive or Gram-negative bacteria and then precipitated the bacteria through centrifugation. We found that rmChi3l1 was present in the pellet obtained from both Gram-positive and Gram-negative bacteria (Figure 2B), suggesting that Chi3l1 can directly interact with bacteria.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig2-v1.jpg)\n\n**Figure 2.:** (A) Structural comparison between chitin and PGN. Both chitin and PGN contain N-acetylglucosamine (GlcNAc) and have \u03b2\u20131,4-glycosidic bonds in their structures. However, chitin is purely a polysaccharide, while PGN includes a peptide component that forms cross-links between chains (Zhou et al., 2022). (B) Gram-positive bacteria (E. faecalis, S. saprophyticus) and Gram-negative bacteria (E. coli) were incubated with 1 \u03bcg of recombinant mouse Chi3l1 protein (rmChi3l1), respectively. Proteins bound to indicated bacteria were precipitated by centrifugation. Western blot was used to detect rmChi3l1 in Pellet, Supernatant (unbound proteins) and Last Wash (last wash unbound proteins). (C) Insoluble PGN were incubated with either recombinant mouse Chi3l1 protein (rmChi3l1) or bovine serum albumin (BSA). Proteins bound to PGN were precipitated by centrifugation. Silver staining was used to detect rmChi3l1 in Input, Supernatant (unbound proteins), Pellet and Last Wash (last wash unbound proteins). (D) Insoluble PGN were incubated with recombinant human Chi3l1 protein (rhChi3l1). Proteins bound to PGN were precipitated by centrifugation. Silver staining was used to detect rhChi3l1 in Input, Supernatant (unbound proteins), Pellet and Last Wash (last wash unbound proteins). All data above represent at least three independent experiments. (E) Insoluble PGN or chitin was incubated with rmChi3l1. Chi3l1 bound to PGN (upper panel) and chitin (lower panel) was precipitated and detected by silver staining. The supernatant represents the last wash, and the pellet contains proteins precipitated by either PGN or chitin. (F) Relative DLD-1 bacterial binding preference after treatment with K12 or GlmM, a PGN synthesis-deficient mutant. Colony-forming units (CFU) were counted, and GlmM CFU were normalized to 1. (G) Relative K12 bacterial adhesion preference after DLD-1 cells were transfected without (Mock), or with scramble shRNA (shCK), or with shChil1. CFU were counted, and the Mock group were normalized to 1. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: no significant difference, error bar indicates SEM.\n\nTo further investigate the interaction between Chi3l1 and PGN, we also co-incubated PGN with rmChi3l1 and precipitated the PGN through centrifugation. PGN is an insoluble substance and hence can be precipitated by centrifugation. Consistent with our previous results, we observed that rmChi3l1 was present in the pellet obtained from PGN but not in the pellet obtained from bovine serum albumin (BSA), which served as a negative control (Figure 2C). Furthermore, we also examined the interaction between PGN and recombinant human Chi3l1 (rhChi3l1) and obtained similar results (Figure 2D). These findings indicate that Chi3l1 interacts with bacteria through PGN.\n\nTo better characterize the binding between Chi3l1 and PGN, we compared the binding affinities of Chi3l1 to both PGN and chitin. We incubated chitin and PGN with rmChi3l1 in increasing doses (25, 50, 100 \u03bcg) and detected the precipitated rmChi3l1 by either chitin or PGN. Our results indicate that Chi3l1 interacts with PGN in a dose-dependent manner (Figure 2E). In contrast, the binding between Chi3l1 and chitin did not exhibit dose dependency (Figure 2E). These findings suggest a specific and distinct binding mechanism for Chi3l1 with PGN compared to chitin.\n\nTo investigate whether the Chi3l1-PGN interaction could facilitate the colonization of Gram-positive bacteria, we conducted adhesion experiments using DLD-1 cells and bacteria. We employed a GlmM mutant (PGN synthesis-deficient) and K12 bacteria (a wildtype E. coli strain used as a control) to assess their adhesion capabilities. The results showed that the adhesion ability of the GlmM mutant to cells significantly decreased (Figure 2F). Additionally, after knocking down Chi3l1 in DLD-1 cells (knockdown efficiency over 50%), we observed a decrease in bacterial adhesion (Figure 2G). These findings suggest that the Chi3l1-PGN interaction plays a crucial role in bacterial adhesion.\n\n### Intestinal bacteria are disordered in IEC\u2206Chil1 mice, especially Gram-positive bacteria\n\nTo gain initial insights into how the expression of Chi3l1 in IECs affects the colonization of gut microbiota, we created mice with a specific deficiency of Chi3l1 in IECs (referred to as IEC\u0394Chil1 mice) (Figure 3\u2014figure supplement 1). We then conducted bacterial 16S rRNA sequencing analysis of the colon contents of both Villin-cre and IEC\u0394Chil1 littermates. Our analysis of alpha diversity revealed that the bacterial population was relatively lower in IEC\u0394Chil1 littermates compared to Villin-cre littermates (Figure 3A). This finding was further confirmed by conducting universal bacterial 16S rRNA qPCR analysis of the feces and ileum contents of IEC\u0394Chil1 and Villin-cre littermates, which also showed lower bacterial enrichment in IEC\u0394Chil1 mice (Figure 3B). Furthermore, principal component analysis demonstrated significant differences in bacterial diversity between Villin-cre and IEC\u0394Chil1 littermates (Figure 3C).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig3-v1.jpg)\n\n**Figure 3.:** (A, C, D, G) Female Villin-cre and IEC\u2206Chil1 littermates continue to cage together after weaning for 8 weeks. Microbial communities in feces and intestinal lumen were characterized by 16S rRNA sequencing. n = 7 or 10/group. (A) Alpha diversity analysis of colon contents between Villin-cre and IEC\u2206Chil1 littermates. (B) qPCR analysis of total bacteria in the feces and ileum, colon luminal microbial communities of Villin-cre and IEC\u2206Chil1 littermates. Values for each bacterial group are expressed relative to total 16S rRNA levels. n = 5\u201310/group. (C) Principal component analysis of weighed UniFrac distances of 16S community profiles of Villin-cre and IEC\u2206Chil1 littermates feces (binary-jaccard). (D) Relative abundance of Gram-positive and Gram-negative bacteria in colon contents of Villin-cre and IEC\u2206Chil1 littermates are shown. (E) Lipoteichoic acid (LTA) (green) was detected by immunofluorescence in colon sections of Villin-cre and IEC\u2206Chil1 littermates. Nuclei were detected with DAPI. Scale bars, 50 \u03bcm. The average fluorescence intensity in each field of view (FOV) was analyzed. (F) Fluorescence in situ hybridization (FISH) detection of Gram-positive bacteria (red) in the colon of Villin-cre and IEC\u2206Chil1 littermates, nuclei were detected with DAPI (blue). Scale bars, 50 \u03bcm. The average fluorescence intensity in each FOV was analyzed. (G) Relative abundance of Gram-positive bacteria genera in colon lumen of Villin-cre and IEC\u2206Chil1 littermates. (H) Female wildtype and Chil1-/- littermates continue to cage together after weaning for 8 weeks. Microbial communities in feces were characterized by 16S rRNA sequencing. n = 3 mice/group. Representative images are shown in (E, F), n = 4\u20135/3-6 mice/group. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: no significant difference, error bar indicates SEM.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) The construction, genotyping strategy and genotyping results of Chil1-/- mice. P: positive control; Wt: wildtype control; Neg: Blank control(ddH2O); M: DNA Ladder. (B) The construction, genotyping strategy and genotyping results of IEC\u2206Chil1 mice. P: positive control; Wt: wildtype control; Neg: Blank control (ddH2O); M: DNA Ladder. PCR\u2460 and \u2461 implicated flox, \u2462implicated cre.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) qPCR analysis of Turicibacter in the feces of Villin-cre and IEC\u2206Chil1 is shown. Values for each bacterial group are expressed relative to total 16S rRNA levels. p-Vaule is indicated, error bar indicates SEM.\n\nWhen we examined the relative abundance of Gram-positive and Gram-negative bacteria between Villin-cre and IEC\u0394Chil1 littermates, we observed that Gram-positive bacteria were significantly reduced in IEC\u0394Chil1 mice, while there was no notable difference in Gram-negative bacteria (Figure 3D). This result was further validated by staining lipoteichoic acid (LTA), a component present on Gram-positive bacteria, which revealed a lower abundance of Gram-positive bacteria in IEC\u0394Chil1 compared to Villin-cre littermates (Figure 3E). Moreover, visualization of Firmicutes by bacteria fluorescence in situ hybridization (FISH) staining, a dominant group of Gram-positive bacteria in the gut, also showed reduced levels of Firmicutes in the colon lumen of IEC\u0394Chil1 mice compared to Villin-cre mice (Figure 3F). Analysis of the relative abundance of specific Gram-positive bacterial species demonstrated a significant reduction in Lactobacillus in IEC\u0394Chil1 mice compared to Villin-cre mice (Figure 3G). Similar results were observed in Chil1-/- mice compared to wildtype mice (Figure 3H). Consist with the 16S rRNA sequencing analysis data, qPCR results showed that Turicibacter was more abundant in IEC\u0394Chil1 mice than Villin-cre mice (Figure 3\u2014figure supplement 2). These findings suggest that Chi3l1 plays a role in regulating the colonization of Gram-positive bacteria, particularly Lactobacillus, in the murine gut.\n\n### Chi3l1 promotes the colonization of Gram-positive bacteria in intestinal mucus\n\nChi3l1 was found in secretory cells like goblet cells and Paneth cells, suggesting that it may be secreted into the intestinal lumen (Figure 1B). Immunohistochemistry staining of Chi3l1 in the colon revealed a large amount of Chi3l1 signals in the mucus layer (Figure 4A). Immunofluorescence co-staining of Chi3l1 with UEA-1 in the colon yielded similar results (Figure 4B). Furthermore, Chi3l1 was also detected in the ileum and colonic tissues and mucus layer (Figure 4C and D). These findings indicate that mouse Chi3l1 is specifically expressed in intestinal secretory epithelial cells and secreted into the intestinal lumen. Since large amounts of Chi3l1 is secreted into the mucus and Chi3l1 interact with bacteria, we hypothesize that Chi3l1 may regulate the colonization of Gram-positive bacteria in the mucus layer. To test this hypothesis, we isolated bacterial DNA from the ileum and colon mucus of both wildtype and Chil1-/- mice. Quantification of Gram-positive bacteria and Lactobacillus using qPCR revealed that both the ileum and colon mucus of Chil1-/- mice had significantly lower levels of Gram-positive bacteria and Lactobacillus compared to that of wildtype mice (Figure 4E and F).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig4-v1.jpg)\n\n**Figure 4.:** (A) Immunohistochemical (IHC) staining to detect Chi3l1 in colon mucus layer from wildtype mice. Ctrl (without application of ant-Chi3l1 antibody), WT (wildtype C57BL/6J mice). Black dotted line outlines mucus layer. Scale bars, 50 \u03bcm (Ctrl, WT). (B) Colons were collected from wildtype mice and stained with UEA-1 (green), Chi3l1 (red), and nuclear DAPI (blue). Ctrl (without application of first antibody), WT (wildtype C57BL/6J mice). Scale bars, 50 \u03bcm (Ctrl, WT). (C) Stool, ileum, and colon tissues were collected from wildtype mice. Western blot was used to detect Chi3l1 expression in these samples. n = 3 mice/sample. (D) Both luminal and mucus-associated proteins of either ileum or colon were extracted. Western blot was used to detect Chi3l1 expression in these samples. lumen (luminal proteins), and mucus (mucus-associated proteins). n = 3 mice/sample. (E, F) qPCR analysis of specific bacteria in the ileum and colon mucus microbial communities of wildtype and Chil1-/- littermates. (E) qPCR analysis of Gram-positive bacteria is shown. (F) qPCR analysis of Gram-positive bacteria is shown. Values for each bacterial group are expressed relative to total 16S rRNA levels. WT (wildtype C57BL/6J mice). n = 6\u20138/group. (G) Rectal injection of both wildtype and Chil1-/- mice with FDAA-labeled E. faecalis (a Gram-positive bacteria strain) for 4 hr. Colon sections were collected and colonization of E. faecalis was examined under microscope. Nuclei were stained with DAPI. Scale bars, 50 \u03bcm (WT, Chil1-/-). Representative images are shown in (A, B, G), n = 3 mice/group. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: no significant difference, error bar indicates SEM.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Rectal injection of both wildtype and Chil1-/- mice with mCherry-OP50 (a strain of E. coli expressing mCherry) for 4 hr. Colon sections were collected and colonization of OP50 was examined under microscope. Nuclei were stained with DAPI. n = 3\u20134 mice/group. The average fluorescence intensity in each field of view (FOV) was analyzed. (B) Periodic acid\u2013Schiff and Alcian blue (AB-PAS) staining in the colons of WT and Chil1-/- littermates. Scale bars, 100 \u03bcm. The mean width of mucus layer in each FOV was analyzed. (C) Immunofluorescence staining to detect Mucin 2 (green) and nuclear DAPI (blue) in colon from WT and Chil1-/- littermates. Scale bars, 50 \u03bcm. Representative images are shown in (C, D), n = 4 mice/group. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: no significant difference, error bar indicates SEM.\n\nTo further validate these results, we labeled a Gram-positive bacteria strain, Enterococcus faecalis, with fluorescent D-amino acids (FDAA), which can metabolically label bacterial PGNs (Wang et al., 2019). We then performed rectal injection of both wildtype and Chil1-/- mice with FDAA-labeled E. faecalis. The data demonstrated that Chil1-/- mice had much lower colonization of E. faecalis compared to wildtype mice (Figure 4G). Besides Gram-positive bacteria, we also performed rectal injection of both wildtype and Chil1-/- mice with mCherry-OP50 (a strain of E. coli that expresses mCherry), we found Chil1-/- mice had much higher colonization of E. coli compared to wildtype mice (Figure 4\u2014figure supplement 1A). Based on these findings, we conclude that Chi3l1 promotes the colonization of Gram-positive bacteria, particularly Lactobacillus, in the intestinal mucus. Additionally, we also observed that the deletion of Chi3l1 significantly reduced mucus layer thickness, which may be attributed to the disrupted colonization of Gram-positive bacteria in the intestinal mucus layer (Figure 4\u2014figure supplement 1B and C).\n\n### Disordered intestinal bacteria in IEC\u2206Chil1 mice contribute to colitis\n\nFrom the above data, it is evident that Chi3l1 is secreted into the intestinal mucus to influence the colonization of Gram-positive bacteria, particularly Lactobacillus. We are now interested in understanding the role of Chi3l1-regulated microbiota in a pathological condition. We observed a significant increase in Chil1 mRNA expression in the colon tissues of patients with either CD or UC compared to normal tissues (Figure 5A). To investigate further, we created a colitis mouse model by subjecting Villin-cre and IEC\u2206Chil1 mice to a 2% dextran sodium sulfate (DSS) diet for 7 days (Figure 5B). The severity of colitis was assessed based on weight loss, colon length, and tissue damage. Without the DSS challenge, the colon length and structure were similar between Villin-cre and IEC\u2206Chil1 mice (Figure 5D and E). However, upon DSS challenge, the IEC\u2206Chil1 mice showed significantly shorter colon length, faster body weight loss, and more severe inflammation compared to the Villin-cre mice (Figure 5C\u2013E).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig5-v1.jpg)\n\n**Figure 5.:** (A) Chil1 mRNA relative expression in colon tissues of patients without gut disease (controls, n = 35) or with Crohn\u2019s disease (CD, n = 40), ulcerative colitis (UC, n = 40) (GEO datasets: SRP303290). (B) Schematic model of the experimental design. Both Villin-cre and IEC\u2206Chil1 littermates were fed with 2% dextran sodium sulfate (DSS) in drinking water to induce colitis. (C) Weight change of Villin-cre and IEC\u2206Chil1 littermates during DSS feeding. Weight change (%) = Current weight/Initial weight. (D) Representative colonic length from Normal and DSS-treated Villin-cre and IEC\u2206Chil1 littermates (left) and the statistics of colonic length (right). (E) H&E staining of mice colon from Normal and DSS-treated Villin-cre and IEC\u2206Chil1 littermates. The inflamed areas are outlined by white dotted line, scale bars = 100 \u03bcm. (F) Schematic of the experimental design. First, antibiotics were used to eliminate gut microbiota for 10 days, and then either fecal microbiota from Villin-cre mice (FMT) or Lactobacillus reuteri were transplanted back to IEC\u2206Chil1 mice orally every day for 2 weeks. Finally, colitis mouse model was constructed by 2% DSS feeding in drinking water for another 7 days. (G\u2013I) Villin-cre and IEC\u2206Chil1 were only fed with 2% DSS in drinking water for 7 days. IEC\u2206Chil1 + FMT(Villin-cre), and IEC\u2206Chil1 + Lactobacillus were constructed as described in (F). (G) Weight change of Villin-cre, IEC\u2206Chil1, IEC\u2206Chil1 + FMT(Villin-cre), and IEC\u2206Chil1 + Lactobacillus mice during DSS feeding. (H) Representative colonic length from Villin-cre, IEC\u2206Chil1, IEC\u2206Chil1 + FMT(Villin-cre), and IEC\u2206Chil1 + Lactobacillus mice (left) and the statistics of colonic length (right). n = 3\u20136/group. (I) H&E staining of mice colon from Villin-cre, IEC\u2206Chil1, IEC\u2206Chil1 + FMT(Villin-cre), and IEC\u2206Chil1 + Lactobacillus mice after DSS treatment. The inflamed area is outlined by black dotted line, scale bars = 100 \u03bcm. Representative images are shown in (C, E, H, I), n = 3\u20138 mice/group. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: no significant difference, error bar indicates SEM.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Schematic model of the experimental design. Both Villin-cre and IEC\u2206Chil1 littermates were fed with 2% dextran sodium sulfate (DSS) in drinking water to induce colitis after elimination of gut microbiota by antibiotics for 10 days. (B) qPCR analysis of total bacteria in the feces of Villin-cre and IEC\u2206Chil1 littermates. Values for each bacterial group are expressed relative to total 16S rRNA levels. n = 3/group. (C) Weight change of Villin-cre and IEC\u2206Chil1 mice during DSS feeding. (D) Representative colonic length from colitis Villin-cre and IEC\u2206Chil1 mice (left) and the statistics of colonic length (right). (E) H&E staining of colitis mice colon from Villin-cre and IEC\u2206Chil1. The inflamed area is outlined by black dotted lines, scale bars = 100 \u03bcm. n = 4\u20136 mice/group. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, ns: no significant difference, error bar indicates SEM.\n\nTo rule out the effects of Chi3l1 on the host contributed to colitis, we pretreated the mice with antibiotics to eliminate gut microbiota before inducing colitis (Figure 5\u2014figure supplement 1A). The universal bacterial 16S rRNA qPCR data indicated that the majority of gut microbiota were eliminated after antibiotics treatment (Figure 5\u2014figure supplement 1B). However, the IEC\u2206Chil1 mice exhibited a milder colitis phenotype, including slower body weight loss, longer colon length, and less inflammation compared to the Villin-cre mice (Figure 5\u2014figure supplement 1C\u2013E). We believe that this could be due to the relationship between Chi3l1 and inflammation. Based on these findings, it is apparent that Chi3l1\u2019s effects on gut microbiota play a more significant role in colitis.\n\nTo further elucidate the role of Chi3l1-regulated gut microbiota in colitis, we conducted fecal microbiota transplantation (FMT) and Lactobacillus reuteri transplantation experiments. We first eliminated gut microbiota through a 10-day course of antibiotics and then performed FMT from Villin-cre mice or administered oral gavage of L. reuteri to IEC\u2206Chil1 mice for 2 weeks, followed by a 7-day period of 2% DSS feeding (Figure 5F). FMT partially restored the colon length of IEC\u2206Chil1 mice to that of Villin-cre mice after the DSS challenge, but did not have an impact on body weight loss or the level of inflammation in the gut (Figure 5G\u2013I). IEC\u2206Chil1 mice transplanted with Lactobacillus displayed a similar colitis phenotype as Villin-cre mice, characterized by similar weight loss, colon length reduction, and gut inflammation (Figure 5G\u2013I). These findings further validate the notion that Chi3l1-regulated gut microbiota, especially Lactobacillus, offers protection against colitis.\n\n## Discussion\n\nThe intricate relationship between gut bacteria and their host organisms is crucial for health, maintained through co-evolution and co-speciation. Understanding how the host influences these bacterial communities is critical to understand the complex interplay between host and gut bacteria. In this study, we discovered that Chi3l1 interacts with gut microbiota via PGN, aiding the mucus colonization of beneficial bacteria like Lactobacillus, which protects against colitis (Figure 6). Our \u2018scaffold model\u2019 demonstrates that Chi3l1 binds to bacterial PGN, helping anchor and organize bacteria within the mucus layer. This interaction promotes the colonization of beneficial bacteria, enhancing gut health.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/92994/elife-92994-fig6-v1.jpg)\n\n**Figure 6.:** Intestinal epithelial cells are stimulated by the gut microbiota to express Chi3l1. Once expressed, Chi3l1 is secreted into the mucus layer where it interacts with the gut microbiota, specifically through a component of bacterial cell walls called peptidoglycan. This interaction between Chi3l1 and bacteria is beneficial for the colonization of bacteria in the mucus, particularly for Gram-positive bacteria like Lactobacillus. Moreover, a deficiency of Chi3l1 leads to an imbalance in the gut microbiota, which exacerbates colitis induced by dextran sodium sulfate (DSS).\n\nSeveral studies have suggested a potential correlation between Chi3l1 and bacteria. For instance, it has been demonstrated that Chi3l1 is produced by IECs in enteritis disease and aids in the elimination of pathogenic bacteria in the gut by neutrophils (Deutschmann et al., 2019). Another study observed an increase in Chi3l1 expression in mammary tissues of dairy cows infected with pathogenic E. coli, which promoted the recruitment of neutrophils (Breyne et al., 2018). Furthermore, Chi3l1 was found to be induced during Streptococcus pneumoniae infection, where it enhanced bacterial elimination by preventing the death of lung macrophages and improving host tolerance (Dela Cruz et al., 2012). One study demonstrated that Chi3l1 contributes to the pathogenesis of colitis, possibly by facilitating the adhesion and invasion of bacteria onto colonic epithelial cells. However, we observed the presence of the Gram-negative bacterium Salmonella typhimurium in the mice used in their study (Mizoguchi, 2006). According to standard for SPF-grade mice, Salmonella should not be present in laboratory mice, and it was also not detected by our 16S RNA sequencing. However, if mice are inadvertently infected with Salmonella in the context of IBD, it could likely exacerbate the development of IBD. Our data also demonstrate that Chi3l1 can bind to Gram-negative bacteria (Figure 2B). Therefore, the role of Chi3l1 on microbiota or IBD is heavily dependent on the environmental context. Another study found that caffeine treatment reduce Chi3l1 RNA expression levels, alleviate colitis, and decrease bacterial translocation (Lee et al., 2014). However, previous research suggested that caffeine can directly inhibit inflammasome activation by suppressing MAPK/NF-\u03baB signaling pathways (Vargas-Pozada et al., 2022). Therefore, caffeine treatment may directly reduce colitis by inhibiting inflammation. Moreover, an additional control group of mice with Chi3l1 specifically knocked out in the gut is needed to examine the role of caffeine in the alleviation of colitis. However, the detailed mechanism of the interaction between Chi3l1 and the gut microbiota remains incompletely understood, partly due to the absence of Chi3l1-specific knockout mice and variations in mouse husbandry conditions. Here, by using intestinal Chi3l1-specific knockout mice, we demonstrated a new function of Chi3l1 in gut, which shapes bacterial colonization through direct interaction with bacterial cell wall component, PGN. Moreover, Chi3l1-regulated gut microbiota, especially Lactobacillus, offers protection against colitis.\n\nThe bacterial cell wall is a complex structure mainly composed of PGN, but it may also contain other components such as teichoic acids and LTA in Gram-positive bacteria, or an outer membrane containing various polysaccharides, lipids, and proteins in Gram-negative bacteria (Zhou et al., 2022). Our findings indicated that LPS, a component of the bacterial cell wall, can slightly increase Chi3l1 expression (Figure 1F and G), but higher levels of LPS do not further enhance Chi3l1 expression (data not shown). This suggests that there might be other components of the cell wall that can induce Chi3l1 expression in IECs. Given the structural similarity between chitin and PGN (Figure 2A), it is likely that Chi3l1 binds to the polysaccharide chains rather than the tetrapeptide in PGN. Previous studies have investigated the crystal structure of human Chi3l1 in complex with chitin, revealing a binding groove with different subsites for chitin fragments (Fusetti et al., 2003). Other studies have also identified specific amino acids in chitinases that play a key role in the interaction with chitin (Ferrandon et al., 2003; Ranok et al., 2015). Nevertheless, further investigation is necessary to better understand the binding sites in Chi3l1 for PGN.\n\nIn the colon, there are two distinct parts of the mucus layer. The inner layer is attached and has a low number of microbes, while the outer layer is looser and densely populated by microorganisms. (Johansson et al., 2011). The diversity of bacteria in the mucus layer is similar to that found in the gut lumen (Hu et al., 2021). It has to be noted that not all Gram-positive bacteria were reduced in Chil1-/- mice, as we found an increase in Turicibacter in the colon (Figure 3G) and feces (data not shown). We believe this may be due to a combined effect of the host and gut microbiota. Another important factor for microbial growth in the colon is the integrity of the mucus barrier (Johansson et al., 2008). We noticed a thinning of the mucus barrier in the mice lacking Chi3l1 compared to normal mice (Figure 4\u2014figure supplement 1B and C). However, we did not observe an increase in mucin-degrading bacteria such as Bacteroides or Allobaculum (Glover et al., 2022; Raimondi et al., 2021) or a decrease in mucin-producing cells in these mice. We think that there may be bacteria that aid in the formation of the gut mucus, and these bacteria are decreased in mice lacking Chi3l1. Recent studies have introduced an \u2018ncapsulation model\u2019 regarding the nature of mucus in the colon. According to this model, the mucus in the proximal colon forms a primary encapsulation barrier around fecal material, while the mucus in the distal colon forms a secondary barrier (Bergstrom et al., 2020). Our findings indicate that Chi3l1 is expressed throughout the entire colon, including the proximal, middle, and distal sections (data not shown). This suggests that Chi3l1 likely promotes bacterial colonization across the entire colon. Despite most mucus being expelled with feces, the constant production of mucus and the minimal presence of Chi3l1 in feces (Figure 4C) indicate that Chi3l1 continuously plays a role in promoting the colonization of microbiota.\n\nIn patients with IBD, the density and diversity of the microbial community in the intestines are reduced. Specifically, there is a decrease in Firmicutes and an increase in Bacteroides and facultative anaerobic bacteria like Enterobacteriaceae (Qin et al., 2010). However, the cause of colitis in IBD is still a subject of debate. Our data suggest that disruptions in the gut microbiota contribute to colitis. In summary, our study demonstrates that bacterial challenge induces the expression of Chi3l1 in IECs. Once produced, Chi3l1 is released into the mucus layer where it interacts with the gut microbiota, particularly through PGN, a primary component of bacterial cell walls. This interaction is beneficial for the colonization of bacteria, especially Gram-positive bacteria like Lactobacillus, in the mucus layer. Dysbiosis resulting from a lack of Chi3l1 exacerbates DSS-induced colitis, highlighting the role of dysbiosis as a contributing factor to colitis.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>DLD-1 cells</td>\n      <td>ATCC</td>\n      <td>CCL-221</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>PLKO.1-Puro (plasmid)</td>\n      <td>Addgene</td>\n      <td>RRID:Addgene_10878</td>\n      <td>Pol III-based shRNA backbone</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>shChil1 (constructed from pLKO.1 \u2013 TRC)</td>\n      <td>This paper</td>\n      <td>Constructed from RRID:Addgene_10878</td>\n      <td>Lentiviral construct to transfect and express the shRNA</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Staphylococcus saprophyticus)</td>\n      <td>Staphylococcus saprophyticus</td>\n      <td>ATCC</td>\n      <td>15305</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Enterococcus faecalis)</td>\n      <td>E. faecalis</td>\n      <td>ATCC</td>\n      <td>33186</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Lactobacillus reuteri)</td>\n      <td>Lactobacillus reuteri</td>\n      <td>ATCC</td>\n      <td>23272</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>K12</td>\n      <td>Dharmacon</td>\n      <td>Cat# OEC5042</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>OP50</td>\n      <td>CGC</td>\n      <td>RRID:WB-STRAIN:WBStrain00041969</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>OP50-mCherry</td>\n      <td>Provided by Bin Qi Lab; He et al., 2023</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (Staphylococcus sciuri)</td>\n      <td>Staphylococcus sciuri</td>\n      <td>Identified from C57BL/6J wildtype mice stools</td>\n      <td>This paper</td>\n      <td>This strain is used in Figure 1D</td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>E. coli</td>\n      <td>Identified from C57BL/6J wildtype mice stools (this paper)</td>\n      <td>This paper</td>\n      <td>This strain is used in Figure 1D</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Chi3l1 (rabbit polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>PA5-95897RRID:AB_2807699</td>\n      <td>IHC (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Chi3l1 (rabbit polyclonal)</td>\n      <td>Abcam</td>\n      <td>ab180569RRID:AB_2891040</td>\n      <td>IF (1:400)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-UEA-1-FITC (Ulex europaeus)</td>\n      <td>GeneTeX</td>\n      <td>GTX01512</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Cha-A (mouse monoclonal)</td>\n      <td>Santa Cruz</td>\n      <td>sc-393941RRID:AB_2801371</td>\n      <td>IF (1:200)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-mouse Chi3l1 Purified Rat monoclonal IgG (rat monoclonal)</td>\n      <td>R&amp;D</td>\n      <td>MAB2649RRID:AB_2081263</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-MUC2 (rabbit polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>PA5-103083RRID:AB_2852453</td>\n      <td>IF (1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Gram-positive bacteria LTA (mouse monoclonal)</td>\n      <td>Invitrogen</td>\n      <td>MA1-7402RRID:AB_1017302</td>\n      <td>IF (1:50)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>488-conjugated Affinipure Goat Anti-Rabbit (goat polyclonal)</td>\n      <td>Jackson</td>\n      <td>111-545-003RRID:AB_2338046</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Immunoresearch AlexaFluor 594 AffiniPure Goat Anti-Mouse IgG (H+L) (goat polyclonal)</td>\n      <td>Jackson</td>\n      <td>115-585-003RRID:AB_2338046</td>\n      <td>IF (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Rabbit IgG (H+L) Secondary Antibody-Biotin (goat polyclonal)</td>\n      <td>Invitrogen</td>\n      <td>65-6140RRID:AB_2533969</td>\n      <td>IHC (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Horseradish peroxidase conjugate antibody</td>\n      <td>Invitrogen</td>\n      <td>A2664RRID:AB_2764530</td>\n      <td>IHC (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Rabbit anti-Chi3l1 antibody</td>\n      <td>Proteintech</td>\n      <td>12036-1-APRRID:AB_2877819</td>\n      <td>IF (1:200)WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Rabbit IgG (goat polyclonal)</td>\n      <td>Jackson ImmunoResearch</td>\n      <td>111-035-0030</td>\n      <td>WB (1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-alpha-Actinin (mouse IgG1)</td>\n      <td>Cell Signaling</td>\n      <td>69758S</td>\n      <td>WB (1:1000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-Rat-IgG (goat)</td>\n      <td>Cell Signaling</td>\n      <td>7077S</td>\n      <td>WB (1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-mouse</td>\n      <td>Invitrogen</td>\n      <td>62-6520RRID:AB_2533947</td>\n      <td>WB (1:10,000)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-\u03b1-tubulin antibody (mouse monoclonal)</td>\n      <td>Sigma</td>\n      <td>T5168RRID:AB_477579</td>\n      <td>WB (1:2000)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Dextran sodium sulfate salt</td>\n      <td>MP</td>\n      <td>CAS:9011-18-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Hematoxylin</td>\n      <td>Servicebio</td>\n      <td>G1004</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Eosin</td>\n      <td>Biosharp</td>\n      <td>BL703b</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Tris</td>\n      <td>Solarbio</td>\n      <td>77-86-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium chloride</td>\n      <td>Solarbio</td>\n      <td>7647-14-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Disodium salt dihydrate (EDTA)</td>\n      <td>Sangon Biotech</td>\n      <td>6381-92-6</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium dodecyl sulfate (SDS)</td>\n      <td>BBI</td>\n      <td>A601336-0500</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Egtazic acid, glycol ether diamine tetraacetic acid (EGTA)</td>\n      <td>BBI</td>\n      <td>67-42-5</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TritonX-100</td>\n      <td>BBI</td>\n      <td>9002-93-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Citric acid</td>\n      <td>Sangon Biotech</td>\n      <td>77-92-9</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Vancomycin</td>\n      <td>Solarbio</td>\n      <td>V8050</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Ampicillin-sodium salt</td>\n      <td>Solarbio</td>\n      <td>A8180</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Metronidazole</td>\n      <td>Solarbio</td>\n      <td>M8060</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Neomyein sulfate</td>\n      <td>Solarbio</td>\n      <td>N8090</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>MRS broth</td>\n      <td>Solarbio</td>\n      <td>M8540</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Goat serum</td>\n      <td>Solarbio</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>AB-PAS staining kit</td>\n      <td>Solarbio</td>\n      <td>G1285</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>EIANamp stool DNA kit</td>\n      <td>TIANGEN</td>\n      <td>DP328-02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>PAGE Gel Fast Preparation Kit</td>\n      <td>Shanghai Epizyme biotechnology</td>\n      <td>PG113</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Gel extraction kit</td>\n      <td>Omega</td>\n      <td>D2500-02</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>DAB Substrate Kit</td>\n      <td>ZSGB-BIO</td>\n      <td>zli-9018</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>SYBR Green kit</td>\n      <td>Thermo Fisher</td>\n      <td>A25742</td>\n      <td>Using for qPCR</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>FDAA</td>\n      <td>5TAMRA; CHINESE PEPTIDE</td>\n      <td>CS-11-00433</td>\n      <td>Using for label E. faecalis</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Antifade mounting medium</td>\n      <td>Vectashield</td>\n      <td>H-1000-10</td>\n      <td>Using for IF staining</td>\n    </tr>\n  </tbody>\n</table>\n\n### Animal experiments and procedures\n\nC57BL/6J (strain no. N000013), germ-free (strain no. N000295), Chil1fl/fl (strain no. T013652), and Chil1-/- (strain no. T014402) mice were purchased from GemPharmatech. Villin-cre mice were provided by Dr. Qun Lu (Yunnan University, China). All mouse colonies were maintained at the animal core facility of Yunnan University. C57BL/6J was used as wildtype control since Chil1-/- mice are on the C57BL/6J background, as determined by PCR (data not shown). The animal studies described have been approved by the Yunnan University Institutional Animal Care and Use Committee (IACUC, approval no. YNU20220256). Female mice aged 8\u201310 weeks old were used in most studies.\n\n#### Genotyping\n\nTail clippings were placed in 1.5 mL tubes with 75 \u00b5L of master mix solution (60 \u00b5L H2O, 7.5 \u00b5L 250 mM NaOH, 7.5 \u00b5L 2 mM EDTA) and incubated at 98\u00b0C for 1 hr. After cooling to 15\u00b0C, 75 \u00b5L of neutralization buffer (40 mM Tris\u2013HCl, pH 5.5) was added, and the samples were centrifuged at 4000 rpm for 3 min. A 1:10 dilution was prepared by mixing 2 \u00b5L of supernatant with 18 \u00b5L of water for genotyping PCR. A 25 \u00b5L PCR reaction mix was prepared with 12.5 \u00b5L of 2\u00d7 Taq Master Mix (Dye Plus, Vazyme P112-03), 1 \u00b5L of each primer, 2 \u00b5L of template, and water. PCR was conducted using a Bio-Rad machine with the following program: 95\u00b0C for 5 min; 98\u00b0C for 30 s; 65\u00b0C with a 0.5\u00b0C decrement per cycle for 30 s; 72\u00b0C for 45 s, repeating steps 2\u20134 for 20 cycles; 98\u00b0C for 30 s; 55\u00b0C for 30 s; 72\u00b0C for 45 s, repeating steps 5\u20137 for 20 cycles; 72\u00b0C for 5 min; and hold at 10\u00b0C. Primer sequences are listed in Supplementary file 1.\n\n#### Rectal administration of FDAA-labeled E. faecalis\n\nFor FDAA-labeled E. faecalis, E. faecalis were grown in LB media until reaching mid-exponential phase, approximately 4 hr. FDAA was then added to the culture media to a final concentration of about 17 \u00b5M. The E. faecalis continued to grow for 4 hr and were then harvested by centrifugation (5000 \u00d7 g for 10 min), washed, and resuspended in PBS at a density of 5 \u00d7 109 CFU/mL. For rectal administration, wildtype and Chil1-/- mice were fasted overnight (5:00 pm to 9:00 am) before intraperitoneally (i.p.) injecting them with 400 mg/kg tribromoethanol (Nanjing AIBI BioTechnology, M2910), followed by rectal injection of 1 \u00d7 109 FDAA-labeled E. faecalis in 200 \u03bcL PBS via a flexible catheter. The catheter was inserted into the anus to a depth of 4.5 cm, and the E. faecalis were injected slowly to avoid overflow. The mice were then kept upside down for approximately 2 min. After 4 hr of rectal injection, the mice\u2019s colons were collected and immediately embedded in OTC embedding medium for observation on 5-\u03bcm-thick frozen sections. OP50-mCherry (1 \u00d7 109 CFU/mice) were treated same as E. faecalis.\n\n#### DSS-induced mouse colitis\n\nVillin-cre and IEC\u2206Chil1 mice were fed a 2% DSS (MP, 9011-18-1) solution in their drinking water for 7 days. The mice\u2019s body weight was monitored daily during the feeding period. After the 7-day DSS treatment, the mice were sacrificed. Colons were collected, and their length was measured from the cecum to the rectum. Colon paraffin sections were harvested, and H&E staining was performed to examine gut inflammation.\n\n#### Antibiotics treatment\n\nIEC\u2206Chil1 mice were fed an antibiotics mixture containing 0.5 mg/mL of metronidazole (Solarbio, M8060), 1 mg/mL of vancomycin (Solarbio, V8050), 1 mg/mL of ampicillin (Solarbio, A8180), and 0.5 mg/mL of neomycin sulfate (Solarbio, N8090) in their drinking water for 7 days (approximately 5 mL per mouse per day). After the 7-day antibiotics treatment, the mice were orally gavaged with 200 \u03bcL of the antibiotics mixture for another 3 days. Microbiota depletion was examined in feces using 16S rRNA qPCR on the tenth day of antibiotics feeding.\n\n#### Fecal microbiota transplantation (FMT)\n\nFresh feces were collected from 8- to 10-week-old Villin-cre mice and immediately snap-frozen in liquid nitrogen. On the experimental day, feces were resuspended in PBS to a concentration of 200 mg/mL and centrifuged at 350 \u00d7 g for 5 min to collect the supernatant. Antibiotics pre-treated IEC\u2206Chil1 mice were orally gavaged with 10 \u03bcL of the dissolved feces per gram of mouse weight for 14 days.\n\n#### Oral gavage of Lactobacillus reuteri\n\nL. reuteri was grown in MRS broth at 37\u00b0C for 48 hr under anaerobic conditions. The bacteria were harvested by centrifugation (5000 \u00d7 g for 10 min), washed, and resuspended in PBS at a density of OD605 = 1.2\u20131.3/mL. Antibiotics pre-treated IEC\u2206Chil1 mice were orally gavaged with 200 \u03bcL of the dissolved L. reuteri per mouse for 14 days.\n\n### Bacterial speciesidentification\n\nFresh feces were collected from 8-week-old wildtype mice and dissolved in LB culture medium. The dissolved feces were then cultured at 37\u00b0C for 12 hr and plated onto LB agar plates. The grown colonies were picked using sterile pipette tips and resuspended in 20 \u03bcL of sterile water. A PCR reaction was performed using 2 \u03bcL of the bacterial suspension as template DNA and universal bacterial 16S rRNA primers (27F, 5\u2019-AGAGTTTGATCCTGGCTCAG-3\u2019 and 1492R, 5\u2019-GGTTACCTTGTTACGACTT-3\u2019) with reaction conditions: 95\u00b0C for 5 min followed by 35 cycles of 95\u00b0C for 30 s, 55\u00b0C for 30 s, 72\u00b0C for 2 min and then 72\u00b0C for 20 min. The amplicons were then sequenced, and the resulting sequences were analyzed using BLASTN and the NCBI database for species identification.\n\n### Treatment of DLD-1 cells with live, heat-killed bacteria or LPS\n\nBacteria harvested from mouse feces or specific strains were grown in LB medium at 37\u00b0C for 12 hr under aerobic conditions. The bacteria were then collected by centrifugation (5000 \u00d7 g for 10 min), washed, and resuspended in PBS at a density of 1.2 \u00d7 1010 CFU/mL. Live bacteria were used directly, while heat-killed bacteria required further heating at 80\u00b0C for 30 min. DLD-1 cells were grown in DMEM supplemented with 10% FBS. Prior to treatment, the cells were replated and allowed to reach 80% confluency. Either live or heat-killed bacteria were added to the cells at a multiplicity of infection (MOI) of 20 each well, and 100 pg/mL LPS treatment (Sigma, L4392; diluted in PBS) was also performed. After 12 hr incubation, cellular proteins were extracted for western blot analysis or the cells were subjected to immunofluorescent staining.\n\n### Cell culture and bacterial adhesion assay\n\nDLD-1 cells (ATCC CCL-221) were cultured in six-well plates until they reached approximately 80% confluency per well. The cells were then washed three times with PBS to remove any residual antibiotics. Fresh DMEM supplemented with 10% FBS (without antibiotics) was added to the cells. Absence of mycoplasma contamination was confirmed using PCR. E. coli strains were introduced to each well at an MOI of 20 and incubated for 2.5 hr at 37\u00b0C. After incubation, the cells were washed three times with PBS. For the adhesion assays, the cells were lysed with 1 mL of 1% Triton-X100 (BBI, 9002-93-1) in deionized water for 30 min. The cell lysates were then plated onto Luria broth (LB) agar plates at various dilutions and incubated overnight at 37\u00b0C. The following day, colonies were counted and calculated as CFU/mL.\n\n### shRNA lentivirus packaging and transfection\n\nFor the packaging of shRNA lentivirus, shRNA control and Chi3l1 shRNA1 lentiviruses were packaged in 293T cells. The cell culture medium containing the virus was collected and stored at \u201380\u00b0C. For transfection of DLD-1 cells, the cells were cultured in six-well plates until they reached approximately 80% confluency. The cell culture medium was then replaced with a mixture of culture medium containing the virus and fresh cell culture medium in a 1:1 ratio. Following transfection, the bacterial adhesion assay was performed as described above.\n\n### Bacterial or peptidoglycan binding assay\n\nDifferent bacteria strains were grown in LB medium at 37\u00b0C for 12 hr under aerobic conditions. The bacteria were collected by centrifugation (5000 \u00d7 g for 10 min), washed, and resuspended in MES buffer (25 mM MES, 25 mM NaCl, pH = 6.0) at a density of 5 \u00d7 109 CFU/mL. 1 \u03bcg recombinant mouse Chi3l1 (rmChi3l1) was added to the bacterial suspension and incubated at 4\u00b0C under rotation overnight. Supernatant, wash fractions, and bacterial-bound fractions were collected and analyzed using western blot analysis. For the PGN binding assay, 1 \u03bcg rmChi3l1 or recombinant human Chi3l1 (rhChi3l1) and BSA was incubated with 100 \u03bcg PGN. The incubation and wash procedure were similar to the bacterial binding assay, and the proteins in each fraction were analyzed using silver staining or western blot.\n\n### Hematoxylin/eosin (H&E) and Periodic acid\u2013Schiff and Alcian blue (AB-PAS) staining\n\nTissues were fixed with buffered 10% paraformaldehyde (BI, E672001-0500) overnight at 4\u00b0C and embedded in paraffin. Ultra-thin tissue slices (5 \u03bcm) were prepared and deparaffinized. H&E staining was performed on the tissue sections, and slides were examined under a microscope (Leica). For AB-PAS staining, tissues were fixed in Carnoy\u2019s solution (60% ethanol, 30% chloroform, 10% acetic acid) for 24 hr at 4\u00b0C and embedded in paraffin. AB-PAS staining (Solarbio, G1285) was performed according to the manufacturer\u2019s protocol. The staining was visualized under the microscope (Leica).\n\n### Immunohistochemical (IHC) and immunofluorescent (IF) staining\n\nTissue paraffin sections were prepared as previously described for H&E staining. Antigen retrieval was performed by treating the sections with citric acid (pH 6.0) at 95\u00b0C for 15 min, followed by cooling to room temperature. The sections were then washed with PBS and ddH2O. To block any nonspecific binding, a blocking buffer containing 5% goat serum, 3% BSA, and 0.1% Triton X-100 in PBS was applied to the sections for 1 hr at room temperature in a humidity chamber. The sections were then incubated with anti-Chi3l1 primary antibodies (Invitrogen, PA5-95897, 1:200), followed by staining with Goat anti-Rabbit IgG (H+L) Secondary Antibody-Biotin (Invitrogen, 65-6140, 1:2000). Finally, the sections were stained with Horseradish Peroxidase conjugate antibody (Invitrogen, A2664, 1:2000) and developed with DAB for 10 min. The slides were examined under a microscope (Leica).\n\nImmunofluorescent staining was also performed on paraffin sections using specific primary antibodies. These included anti-MUC2 (Invitrogen, PA5-103083, 1:50), anti-Chi3l1 (Abcam, ab180569, 1:400; antigen retrieval with Tris-EDTA at pH 9.0), anti-ChgA (Santa Cruz, sc-393941, 1:200; antigen retrieval with citrate at pH 6.0), anti-UEA-1-FITC (GeneTeX, GTX01512, 1:200; antigen retrieval with citrate at pH 6.0), and anti-LTA (Invitrogen, MA1-7402, 1:50). The secondary antibodies used were 488-conjugated Affinipure Goat Anti-Rabbit IgG(H+L) (Jackson ImmunoResearch, 111-545-003, 1:1000) and 594-conjugated Goat Anti-Mouse IgG (H+L) (Jackson ImmunoResearch, 115-585-003, 1:1000). Slides were washed and mounted with antifade medium (Vectashield, H-1000-10). Nuclei were stained with DAPI (Beyotime, c1006, prediluted). Images were captured using a fluorescence microscope (Leica, 2084 DP-80).\n\nFor immunofluorescent staining on DLD-1 cells, cells were seeded on coverslips in 12-well plate and challenged with 100 pg/mL LPS (Sigma, L4391; diluted in PBS) for 12 hr. Cells were washed with cold PBS twice gently, then fixed with 2% paraformaldehyde in PBS at room temperature for 10 min. After removal of fixation buffer and wash twice with cold PBS, cells were blocked with blocking buffer (3% BSA, 0.5% Triton-X-100 in PBS) for 1 hr in humidity chamber at room temperature. Rabbit anti-Chi3l1 antibody (Proteintech, 12036-1-AP; 1:200) was applied at room temperature for 1 hr. After wash with 1\u00d7 TBST three times, secondary antibody AlexaFluor 488 (Jackson ImmunoResearch, 111-545-003, 1:1000) was applied for another 1 hr at room temperature in a humidified chamber under darkness. Finally, cells were counterstained with DAPI (Beyotime, C1006) and mounted onto slides. Images were captured using an Olympus BX53F2 microscope.\n\n### Fluorescence in situ hybridization (FISH)\n\nMurine intestinal paraffin sections were prepared according to the previously described method for H&E staining. The tissues sections were rehydrated using a graded ethanol series and then washed with distilled water. The Gram-positive bacterial probe, consisting of three different sequences (/5Alex550N/TGGAAGATTCCCTACTGC/3AlexF550N/, /5Alex550N/CGGAAGATTCCCTACTGC/3AlexF550N/, /5Alex550N/CCGAAGATTCCCTACTGC/3AlexF550N/), or the control nonspecific probe (/5Alex550N/ACTCCTACGGGAGGCAGC/3AlexF550N/), was diluted to a concentration of 100 nM in FISH hybridization buffer (containing 20 mM Tris pH 7.2, 0.9 M NaCl, and 0.1% SDS) and applied to the slides. The slides were then incubated overnight at 56\u00b0C in a humidified chamber. Following incubation, the slides were washed and the nuclei were counterstained with DAPI. The images were captured using a fluorescence microscope (Leica, 2084 DP-80).\n\n### Immunoblot and silver staining\n\nProtein extraction from cultured cells involved lysing the cells in 2% SDS lysis buffer, which is prepared by dissolving 2 g of SDS powder in 100 mL of sterilized ddH2O. Bacteria or PGN precipitates were resuspended in MES buffer, which contained 25 mM MES, 25 mM NaCl, and had a pH of 6.0. For protein extraction from mice ileum and colon tissues, 30 mg of snap-frozen tissues were homogenized in 1 mL of RIPA buffer, which contained 10 mM Tris\u2013HCl (pH 8.0), 1 mM EDTA, 0.5 mM EGTA, 1% TritonX-100, 0.1% sodium deoxycholate, 0.1% SDS, 140 mM NaCl, 1 mM PMSF, and a proteinase inhibitor. The lysates were then supplemented with 5\u00d7 SDS loading buffer to a final concentration of 1\u00d7. The resulting mixture was subsequently boiled at 100\u00b0C for 10 min and centrifuged at 4\u00b0C and 12,000 rpm for 10 min. The supernatants were collected for western blot analysis. The supernatants were separated using a 10% SDS-PAGE gel and then transferred to a polyvinylidene fluoride membrane. The membranes were blocked with 5% nonfat milk in TBST buffer (containing 0.1% Tween-20 in Tris-buffered saline) and sequentially incubated with primary antibodies and appropriate horseradish peroxidase (HRP)-conjugated secondary antibodies. Protein bands were detected using enhanced chemiluminescence (ECL) reagent with a Minichemi Chemiluminescence Imaging System. The primary antibodies used included anti-Chi3l1 (RD, MAB2649, 1:2000), anti-alpha-Actinin (Cell Signaling, 69758S, 1:1000), rabbit anti-Chi3l1 antibody (Proteintech, 12036-1-AP, 1:2000), and mouse anti-\u03b1-tubulin antibody (Sigma, T5168, 1:2000). The secondary antibodies used were goat anti-Rat-IgG (Cell Signaling, 7077S, 1:10,000), goat anti-mouse (Invitrogen, 62-6520, 1:10,000) and Goat anti-Rabbit IgG (Jackson ImmunoResearch, 111-035-0030, 1:10,000). For silver staining, the PAGE gel was subjected to silver staining using a fast-silver staining kit (Beyotime, P0017S) following the manufacturer\u2019s instructions.\n\n### DNA extraction for 16S rRNA analysis\n\nFor isolation of luminal contents from murine ileum and colon, a 9 cm section of ileum and 3 cm section of colon were cut open longitudinally, and luminal contents were scratched off into a pre-weighed 2 mL sterile freezing vial. The weight of the contents was recorded for further processing. For isolation of mucus from murine ileum and colon, tissues were flushed with 2 mL of ice-cold PBS into a pre-weighed 2 mL sterile freezing vial after removal of the liminal contents. The mucus was then pelleted by centrifugation at 10,000 \u00d7 g for 10 min, and the supernatant was removed. For feces isolation, fresh murine feces were collected into a sterile freezing vial weighing 2 mL and immediately snap-frozen in liquid nitrogen. For bacterial DNA extraction, DNA was extracted and purified following the manufacture\u2019s protocol using the EIANamp stool DNA kit (TIANGEN, DP328-02).\n\n### Microbiota 16S rRNA gene sequencing\n\nFecal samples, ileum contents, and colon contents were collected from wildtype, Chil1-/- littermates, or Villin-cre, IEC\u2206Chil1 littermates and immediately frozen in liquid nitrogen. The microbial genomic DNA was extracted and 16S rRNA sequencing was performed by Biomarker Technologies. The hypervariable regions V3 and V4 of the bacterial 16S rRNA gene were sequenced using universal primers that flank these regions V3 (338F 5'-ACTCCTACGGGAGGCAGCA-3') and V4 (806R 5'- GGACTACHVGGGTWTCTAAT-3\u2019). The sequencing was done using the IIIumina Sequencing platform. The resulting 16S rRNA gene sequences were analyzed using scripts from the BMK Cloud platform (https://www.biocloud.net/). The microbial classification was performed using the SILVA138 and hierarchical clustering algorithms. The OTUs were determined by clustering the sequences with 97% similarity and were classified into different taxonomic ranks. The relative abundance of each bacterial species was visualized using R software. The raw 16S rRNA gene sequencing data can be accessed on the BMKCloud platform under the project ID Microbial_updateReport_20211221092022313.\n\n### 16S qPCR analysis\n\nQuantitative PCR was performed using SYBR green master mix (Thermo Fisher, A25742) in triplicates. This was done on a Real-Time PCR QuatStudio1 with accompanying software, following the instructions provided by the manufacturer (Life Technologies, Grand Island, NY). The abundance of specific bacterial groups in the intestine was determined using qPCR with either universal or bacteria-specific 16S rRNA gene primers. Standard curves were constructed with E. coli OP50 16S rRNA gene, which was amplified using conserved 16S rRNA primers. It should be noted that qPCR measures the number of 16S gene copies per sample, not the actual bacterial numbers or colony forming units. Primer sequences are provided in Supplementary file 1.\n\n### Statistical analysis\n\nData were presented as mean \u00b1 SEM. Statistical analyses were carried out using GraphPad Prism (GraphPad Software). Comparisons between two groups were carried out using unpaired Student\u2019s t-test. Comparisons among multiple groups (n \u2265 3) were carried out using one-way or two-way ANOVA. Data are presented as mean \u00b1 SEM, and p<0.05 was considered a significant difference, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, \u2018ns\u2019 represents no significant difference.\n",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Huihui Li, Icahn School of Medicine at Mount Sinai United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.92994.3.sa0](https://doi.org/10.7554/eLife.92994.3.sa0)\n\nSupported by convincing data, this valuable study demonstrates that the Chitinase 3-like protein 1 (Chi3l1) interacts with gut microbiota and protects animals from intestinal injury in laboratory colitis model. The revised article sufficiently addressed the reviewers' comments. The work will be of interest to scientists studying crosstalk between gut microbiota and inflammatory diseases.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92994.3.sa1](https://doi.org/10.7554/eLife.92994.3.sa1)\n\nThe manuscript by Chen et al. investigated the interaction between CHI3L1, a chitinase-like protein in the 18 glycosyl hydrolase family, and gut bacteria in the mucosal layers. The authors provided evidence to document the direct interaction between CHI3L1 and peptidoglycan, a major component of bacterial cell wall. Doing so, Chi3l1 produced by gut epithelial cells regulates the balance of gut microbiome and diminishes DSS-induced colitis, potentially through the colonization of protective gram-positive bacteria such as lactobacillus.\n\nThe study is the first to systemically document the interactions between Chi3L1 and microbiome. Convincing data were shown to characterize the imbalance of gram-positive bacteria in the newly generated gut epithelial-specific Chi3L1 deficient mice. Comprehensive FMT experiments were performed to demonstrate the contributions of gut microbiome using the mouse colitis model. The manuscript is strengthened by additional mechanistic studies concerning the binding between Chi3l1 and peptidoglycan, and discussions on existing body of literature demonstrating that detrimental roles of Chi3l1 in mouse IBD model, which conflict with the current study.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.92994.3.sa2](https://doi.org/10.7554/eLife.92994.3.sa2)\n\nChen et al. investigated the regulatory mechanism of bacterial colonization in the intestinal mucus layer in mice and its implications to intestinal diseases. They demonstrated that Chi3l1 is a protein produced and secreted by intestinal epithelial cells into the mucus layer upon response to the gut microbiota, which has a turnover effect on facilitating the colonization of gram-positive bacteria in the mucosa. The data also indicate that Chi3l1 interacts with the peptidoglycan of the bacteria cell wall, supporting the colonization of beneficial bacteria strains such as Lactobacillus, and that deficiency in Chi3l1 predisposes mice to colitis. The inclusion of a small but pertinent piece of human data added to solidify their findings in mice.\n\nOverall, the experiments were appropriately designed and executed with precision. The revised manuscript represents a significant improvement over the initial version. The inclusion of new, higher-resolution images provides stronger support for the conclusions drawn. Additionally, statistical analyses of the imaging data, as recommended, have been integrated. The authors have effectively addressed the majority of the reviewers' suggestions and criticisms, making this version well-suited for publication.\n",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7ae54cc-aa90-46db-9370-40678e49a3d7",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C1",
+      "claim": "Chi3l1 expression is substantially increased in SPF mice compared to germ-free mice in intestinal tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a substantial increase of Chi3l1 expression in SPF mice compared to germ-free mice (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemical staining data shown in Figure 1A and described in the text.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "5a116999-256e-400b-bf21-685d3d2f565d",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C2",
+      "claim": "Chi3l1 is primarily expressed in enteroendocrine cells in the ileum.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed that Chi3l1 is primarily expressed in enteroendocrine cells in the ileum and goblet or Paneth cells in the colon (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-staining experiments with cell-type specific markers shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "03ec98b9-62fa-41ef-9baf-2960b5a9c2ae",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C3",
+      "claim": "Chi3l1 is primarily expressed in goblet or Paneth cells in the colon.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed that Chi3l1 is primarily expressed in enteroendocrine cells in the ileum and goblet or Paneth cells in the colon (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-staining experiments with cell-type specific markers shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "a9af3531-bd83-47b9-9dc3-d19d90c3eb1b",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C4",
+      "claim": "Chi3l1 expression was not observed in tuft cells.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Chi3l1 expression was not observed in tuft cells (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-staining data with DCLK1, a tuft cell marker, shown in Figure 1\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "7b890208-75cf-47b1-9257-8da665d8e14c",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C5",
+      "claim": "Bacterial extract from wildtype mouse feces directly induces Chi3l1 expression in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the bacterial extract directly induced Chi3l1 expression in DLD-1 cells (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot analysis shown in Figure 1C after treating DLD-1 cells with bacterial extract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "b1aa7d4c-126c-4af1-b1a9-990b24d75d30",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C6",
+      "claim": "E. coli specifically stimulates Chi3l1 expression in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed that E. coli specifically stimulated Chi3l1 expression in DLD-1 cells, while Staphylococcus sciuri did not have the same effect (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot analysis comparing E. coli and S. sciuri treatment shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "fa1e7675-1a85-461c-b20d-dc43139062e7",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C7",
+      "claim": "Staphylococcus sciuri does not stimulate Chi3l1 expression in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed that E. coli specifically stimulated Chi3l1 expression in DLD-1 cells, while Staphylococcus sciuri did not have the same effect (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot analysis comparing E. coli and S. sciuri treatment shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "b4e57faf-db4b-44c8-8c3d-834c428e4cf2",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C8",
+      "claim": "Heat-killed E. coli induces Chi3l1 expression in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that treatment of DLD-1 cells with heat-killed E. coli also led to an induction of Chi3l1 expression (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot analysis shown in Figure 1E after treating DLD-1 cells with heat-killed E. coli.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "d41a235b-b1bf-47d3-b9b8-59f7ba05c0b3",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C9",
+      "claim": "The induction of Chi3l1 expression does not necessarily require live bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the induction of Chi3l1 expression does not necessarily require live bacteria and that bacterial components alone are sufficient to induce this response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that heat-killed E. coli can induce Chi3l1 expression.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "db01c6d0-339b-4a34-b486-55e58edc12f5",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C10",
+      "claim": "LPS successfully induces Chi3l1 expression in DLD-1 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our hypothesis, LPS successfully induced Chi3l1 expression (Figure 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot and immunofluorescence data shown in Figures 1F and 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "774ab1a2-7591-4add-ab0c-0e09bd4ecbc7",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C11",
+      "claim": "Chitin and peptidoglycan have similar structures.",
+      "claim_type": "EXPLICIT",
+      "source": "By comparing the structure of chitin with that of PGN, a component of bacterial cell walls, we observed that they have similar structures (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by structural comparison shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "0380ad37-b38f-430b-b2e1-5d2abcd28659",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C12",
+      "claim": "Both chitin and PGN contain N-acetylglucosamine (GlcNAc) and have \u03b2\u20131,4-glycosidic bonds in their structures.",
+      "claim_type": "EXPLICIT",
+      "source": "Both chitin and PGN contain N-acetylglucosamine (GlcNAc) and have \u03b2\u20131,4-glycosidic bonds in their structures.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "The claim is stated in the caption of Figure 2A describing the structural comparison.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "e1f9272f-26dc-45db-aec6-ad06dfff928e",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C13",
+      "claim": "rmChi3l1 can directly interact with Gram-positive bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that rmChi3l1 was present in the pellet obtained from both Gram-positive and Gram-negative bacteria (Figure 2B), suggesting that Chi3l1 can directly interact with bacteria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-incubation and precipitation experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "d4479512-4688-4169-a788-e4e948578eac",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C14",
+      "claim": "rmChi3l1 can directly interact with Gram-negative bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that rmChi3l1 was present in the pellet obtained from both Gram-positive and Gram-negative bacteria (Figure 2B), suggesting that Chi3l1 can directly interact with bacteria.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-incubation and precipitation experiments shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "954a1fa4-b61e-42a2-84c7-dac61c7b6213",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C15",
+      "claim": "rmChi3l1 interacts with PGN.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with our previous results, we observed that rmChi3l1 was present in the pellet obtained from PGN but not in the pellet obtained from bovine serum albumin (BSA), which served as a negative control (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-incubation and precipitation experiments shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "34c2a0e5-4ce8-48d7-bdaf-4a5f667cea04",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C16",
+      "claim": "rhChi3l1 interacts with PGN.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we also examined the interaction between PGN and recombinant human Chi3l1 (rhChi3l1) and obtained similar results (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by co-incubation and precipitation experiments shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "a43e26a1-5b80-482c-b76b-c23982733909",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C17",
+      "claim": "Chi3l1 interacts with bacteria through PGN.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that Chi3l1 interacts with bacteria through PGN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Chi3l1 binds to both bacteria and PGN.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "3e37bba9-5c0f-4cd5-9d9e-09bef00ab829",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C18",
+      "claim": "Chi3l1 interacts with PGN in a dose-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicate that Chi3l1 interacts with PGN in a dose-dependent manner (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by dose-response experiments shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "4e8cfe3d-9ebe-44b6-a8e1-f8f4a395f6b3",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C19",
+      "claim": "The binding between Chi3l1 and chitin does not exhibit dose dependency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the binding between Chi3l1 and chitin did not exhibit dose dependency (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by dose-response experiments shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "b8776f8c-6e0f-4f81-b341-aa9bcdbf8a71",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C20",
+      "claim": "The adhesion ability of the GlmM mutant (PGN synthesis-deficient) to DLD-1 cells significantly decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the adhesion ability of the GlmM mutant to cells significantly decreased (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial adhesion assay data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "35e637ab-ac24-469c-9a3f-fdafcdc2dad5",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C21",
+      "claim": "Knocking down Chi3l1 in DLD-1 cells decreases bacterial adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, after knocking down Chi3l1 in DLD-1 cells (knockdown efficiency over 50%), we observed a decrease in bacterial adhesion (Figure 2G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial adhesion assay data after Chi3l1 knockdown shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "afeba7ec-3baa-4d22-b262-d1668ff02279",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C22",
+      "claim": "The Chi3l1-PGN interaction plays a crucial role in bacterial adhesion.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the Chi3l1-PGN interaction plays a crucial role in bacterial adhesion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observations that PGN-deficient mutants and Chi3l1 knockdown both reduce bacterial adhesion.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "2c5c0232-cb8e-4478-82fd-3ea4a3b521fe",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C23",
+      "claim": "The bacterial population is relatively lower in IEC\u0394Chil1 littermates compared to Villin-cre littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis of alpha diversity revealed that the bacterial population was relatively lower in IEC\u0394Chil1 littermates compared to Villin-cre littermates (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by alpha diversity analysis of 16S rRNA sequencing data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "73fccdcc-a574-4546-89bb-18cbbcc717f4",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C24",
+      "claim": "IEC\u0394Chil1 mice show lower bacterial enrichment in feces and ileum contents compared to Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding was further confirmed by conducting universal bacterial 16S rRNA qPCR analysis of the feces and ileum contents of IEC\u0394Chil1 and Villin-cre littermates, which also showed lower bacterial enrichment in IEC\u0394Chil1 mice (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "2996f180-cb73-451a-a2a4-8ece1a195544",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C25",
+      "claim": "There are significant differences in bacterial diversity between Villin-cre and IEC\u0394Chil1 littermates.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, principal component analysis demonstrated significant differences in bacterial diversity between Villin-cre and IEC\u0394Chil1 littermates (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by principal component analysis shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "434427c2-1269-4d5f-b216-d715328edf1a",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C26",
+      "claim": "Gram-positive bacteria are significantly reduced in IEC\u0394Chil1 mice compared to Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the relative abundance of Gram-positive and Gram-negative bacteria between Villin-cre and IEC\u0394Chil1 littermates, we observed that Gram-positive bacteria were significantly reduced in IEC\u0394Chil1 mice, while there was no notable difference in Gram-negative bacteria (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 16S rRNA sequencing analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "d4d39c07-28b3-4660-85cd-5fc60719cc67",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C27",
+      "claim": "There is no notable difference in Gram-negative bacteria between IEC\u0394Chil1 and Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "When we examined the relative abundance of Gram-positive and Gram-negative bacteria between Villin-cre and IEC\u0394Chil1 littermates, we observed that Gram-positive bacteria were significantly reduced in IEC\u0394Chil1 mice, while there was no notable difference in Gram-negative bacteria (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 16S rRNA sequencing analysis shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "1d8d52e1-9f4c-4ac4-af17-d9f6de4512e9",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C28",
+      "claim": "IEC\u0394Chil1 mice have lower abundance of Gram-positive bacteria compared to Villin-cre mice as shown by LTA staining.",
+      "claim_type": "EXPLICIT",
+      "source": "This result was further validated by staining lipoteichoic acid (LTA), a component present on Gram-positive bacteria, which revealed a lower abundance of Gram-positive bacteria in IEC\u0394Chil1 compared to Villin-cre littermates (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining of LTA shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "c11db011-8d5d-4fe3-b938-9338c66a8173",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C29",
+      "claim": "Firmicutes levels are reduced in the colon lumen of IEC\u0394Chil1 mice compared to Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, visualization of Firmicutes by bacteria fluorescence in situ hybridization (FISH) staining, a dominant group of Gram-positive bacteria in the gut, also showed reduced levels of Firmicutes in the colon lumen of IEC\u0394Chil1 mice compared to Villin-cre mice (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FISH staining data shown in Figure 3F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "73ec30e6-683e-49b0-8f9e-9e2a994c43fe",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C30",
+      "claim": "Lactobacillus is significantly reduced in IEC\u0394Chil1 mice compared to Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of the relative abundance of specific Gram-positive bacterial species demonstrated a significant reduction in Lactobacillus in IEC\u0394Chil1 mice compared to Villin-cre mice (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 16S rRNA sequencing analysis shown in Figure 3G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "9e4d11ac-87b1-47a6-932f-48d1ed9b49ee",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C31",
+      "claim": "Similar reductions in Lactobacillus were observed in Chil1-/- mice compared to wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were observed in Chil1-/- mice compared to wildtype mice (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by 16S rRNA sequencing analysis shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "9afb2ea6-90ed-46e8-93ca-6d77d5fb6753",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C32",
+      "claim": "Turicibacter is more abundant in IEC\u0394Chil1 mice than Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Consist with the 16S rRNA sequencing analysis data, qPCR results showed that Turicibacter was more abundant in IEC\u0394Chil1 mice than Villin-cre mice (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "49b5f53b-b45c-4630-b03f-97d9976ec7cf",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C33",
+      "claim": "Chi3l1 plays a role in regulating the colonization of Gram-positive bacteria, particularly Lactobacillus, in the murine gut.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that Chi3l1 plays a role in regulating the colonization of Gram-positive bacteria, particularly Lactobacillus, in the murine gut.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that Chi3l1 deficiency leads to reduced Gram-positive bacteria and Lactobacillus.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "59c6eab6-3867-4210-b138-28e0158f80ce",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C34",
+      "claim": "Mouse Chi3l1 is specifically expressed in intestinal secretory epithelial cells and secreted into the intestinal lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings indicate that mouse Chi3l1 is specifically expressed in intestinal secretory epithelial cells and secreted into the intestinal lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from immunohistochemistry and immunofluorescence data showing Chi3l1 in secretory cells and mucus layer.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "9dd4ccba-e257-4b28-888c-58fc200d31da",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C35",
+      "claim": "A large amount of Chi3l1 signals are present in the mucus layer of the colon.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemistry staining of Chi3l1 in the colon revealed a large amount of Chi3l1 signals in the mucus layer (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunohistochemistry staining shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "e03d314d-573e-48b5-a94b-683289066c19",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C36",
+      "claim": "Chi3l1 is detected in the ileum and colonic tissues and mucus layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, Chi3l1 was also detected in the ileum and colonic tissues and mucus layer (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by western blot analysis shown in Figures 4C and 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "f6bd72fa-1342-4080-94db-2215a8f6d72c",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C37",
+      "claim": "The ileum mucus of Chil1-/- mice has significantly lower levels of Gram-positive bacteria compared to wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of Gram-positive bacteria and Lactobacillus using qPCR revealed that both the ileum and colon mucus of Chil1-/- mice had significantly lower levels of Gram-positive bacteria and Lactobacillus compared to that of wildtype mice (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "c8013d07-4c84-4e0c-a591-3d49a1472b75",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C38",
+      "claim": "The colon mucus of Chil1-/- mice has significantly lower levels of Gram-positive bacteria compared to wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of Gram-positive bacteria and Lactobacillus using qPCR revealed that both the ileum and colon mucus of Chil1-/- mice had significantly lower levels of Gram-positive bacteria and Lactobacillus compared to that of wildtype mice (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR analysis shown in Figure 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "5e5dfb7e-bb8b-40fd-917d-a75f3c419c33",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C39",
+      "claim": "The ileum mucus of Chil1-/- mice has significantly lower levels of Lactobacillus compared to wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of Gram-positive bacteria and Lactobacillus using qPCR revealed that both the ileum and colon mucus of Chil1-/- mice had significantly lower levels of Gram-positive bacteria and Lactobacillus compared to that of wildtype mice (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "6fd7956a-3b07-4289-9472-d9277a732a62",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C40",
+      "claim": "The colon mucus of Chil1-/- mice has significantly lower levels of Lactobacillus compared to wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantification of Gram-positive bacteria and Lactobacillus using qPCR revealed that both the ileum and colon mucus of Chil1-/- mice had significantly lower levels of Gram-positive bacteria and Lactobacillus compared to that of wildtype mice (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qPCR analysis shown in Figure 4F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "921e1121-a88f-410b-ad68-0a84dd68dcde",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C41",
+      "claim": "Chil1-/- mice have much lower colonization of E. faecalis compared to wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "The data demonstrated that Chil1-/- mice had much lower colonization of E. faecalis compared to wildtype mice (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rectal injection experiments with FDAA-labeled E. faecalis shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "96668fbf-f44f-44c6-b7ef-830c52680eeb",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C42",
+      "claim": "Chil1-/- mice have much higher colonization of E. coli compared to wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides Gram-positive bacteria, we also performed rectal injection of both wildtype and Chil1-/- mice with mCherry-OP50 (a strain of E. coli that expresses mCherry), we found Chil1-/- mice had much higher colonization of E. coli compared to wildtype mice (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by rectal injection experiments with mCherry-OP50 shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "d258d263-d33c-48da-b512-91235fd77dad",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C43",
+      "claim": "Chi3l1 promotes the colonization of Gram-positive bacteria, particularly Lactobacillus, in the intestinal mucus.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, we conclude that Chi3l1 promotes the colonization of Gram-positive bacteria, particularly Lactobacillus, in the intestinal mucus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple experiments showing reduced Gram-positive bacteria and Lactobacillus in Chi3l1-deficient mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "dcc7e7e9-946d-4cea-9c72-af3e27df02ea",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C44",
+      "claim": "The deletion of Chi3l1 significantly reduces mucus layer thickness.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we also observed that the deletion of Chi3l1 significantly reduced mucus layer thickness, which may be attributed to the disrupted colonization of Gram-positive bacteria in the intestinal mucus layer (Figure 4\u2014figure supplement 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by AB-PAS staining and Mucin 2 immunofluorescence shown in Figure 4\u2014figure supplement 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "dd4d2b62-dddf-44d9-a586-98022a41d1f8",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C45",
+      "claim": "There is a significant increase in Chil1 mRNA expression in the colon tissues of patients with CD compared to normal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant increase in Chil1 mRNA expression in the colon tissues of patients with either CD or UC compared to normal tissues (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of GEO datasets shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "439d0625-6f1c-43f6-abc5-1fff865a9d58",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C46",
+      "claim": "There is a significant increase in Chil1 mRNA expression in the colon tissues of patients with UC compared to normal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant increase in Chil1 mRNA expression in the colon tissues of patients with either CD or UC compared to normal tissues (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis of GEO datasets shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "7528ba7f-cff8-40ca-b128-96c3ec495d56",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C47",
+      "claim": "Without DSS challenge, the colon length is similar between Villin-cre and IEC\u2206Chil1 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Without the DSS challenge, the colon length and structure were similar between Villin-cre and IEC\u2206Chil1 mice (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colon length measurements and H&E staining shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "844e603a-49c6-40de-9a2a-0ca3429e80c7",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C48",
+      "claim": "Without DSS challenge, the colon structure is similar between Villin-cre and IEC\u2206Chil1 mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Without the DSS challenge, the colon length and structure were similar between Villin-cre and IEC\u2206Chil1 mice (Figure 5D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colon length measurements and H&E staining shown in Figures 5D and 5E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "5c707f0f-b2b0-4e8f-90ad-d7195966a1cf",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C49",
+      "claim": "Upon DSS challenge, IEC\u2206Chil1 mice show significantly shorter colon length compared to Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon DSS challenge, the IEC\u2206Chil1 mice showed significantly shorter colon length, faster body weight loss, and more severe inflammation compared to the Villin-cre mice (Figure 5C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colon length measurements shown in Figures 5C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "5eed5a96-48a8-4445-be8d-2b3e38a2eda3",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C50",
+      "claim": "Upon DSS challenge, IEC\u2206Chil1 mice show faster body weight loss compared to Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon DSS challenge, the IEC\u2206Chil1 mice showed significantly shorter colon length, faster body weight loss, and more severe inflammation compared to the Villin-cre mice (Figure 5C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by body weight measurements shown in Figures 5C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "fc9b14e4-9177-4d59-a79a-a2172bb1ceda",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C51",
+      "claim": "Upon DSS challenge, IEC\u2206Chil1 mice show more severe inflammation compared to Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, upon DSS challenge, the IEC\u2206Chil1 mice showed significantly shorter colon length, faster body weight loss, and more severe inflammation compared to the Villin-cre mice (Figure 5C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by H&E staining shown in Figures 5C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "a292f527-21ef-49a6-824e-fe49402c1fe6",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C52",
+      "claim": "After antibiotics treatment to eliminate gut microbiota, IEC\u2206Chil1 mice exhibit a milder colitis phenotype compared to Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the IEC\u2206Chil1 mice exhibited a milder colitis phenotype, including slower body weight loss, longer colon length, and less inflammation compared to the Villin-cre mice (Figure 5\u2014figure supplement 1C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by colitis measurements after antibiotics treatment shown in Figure 5\u2014figure supplement 1C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "e119f3d9-7808-4db8-8367-bac0aa822c59",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C53",
+      "claim": "Chi3l1's effects on gut microbiota play a more significant role in colitis than its direct effects on the host.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these findings, it is apparent that Chi3l1's effects on gut microbiota play a more significant role in colitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that microbiota depletion reverses the colitis phenotype in IEC\u2206Chil1 mice.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "be5fdae0-2b6a-4257-b5d7-d53caadd8b58",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C54",
+      "claim": "FMT from Villin-cre mice partially restores the colon length of IEC\u2206Chil1 mice after DSS challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "FMT partially restored the colon length of IEC\u2206Chil1 mice to that of Villin-cre mice after the DSS challenge, but did not have an impact on body weight loss or the level of inflammation in the gut (Figure 5G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FMT experiments shown in Figures 5G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "82b38317-4342-4ec9-bb6f-8a5b89c0876f",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C55",
+      "claim": "FMT from Villin-cre mice does not impact body weight loss in IEC\u2206Chil1 mice after DSS challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "FMT partially restored the colon length of IEC\u2206Chil1 mice to that of Villin-cre mice after the DSS challenge, but did not have an impact on body weight loss or the level of inflammation in the gut (Figure 5G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FMT experiments shown in Figures 5G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "bdcf4d2e-f7a7-4586-9b61-b0ecbb14e9bb",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C56",
+      "claim": "FMT from Villin-cre mice does not impact the level of inflammation in IEC\u2206Chil1 mice after DSS challenge.",
+      "claim_type": "EXPLICIT",
+      "source": "FMT partially restored the colon length of IEC\u2206Chil1 mice to that of Villin-cre mice after the DSS challenge, but did not have an impact on body weight loss or the level of inflammation in the gut (Figure 5G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by FMT experiments shown in Figures 5G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "956c0a12-0a20-41cf-b083-4a7d36275f17",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C57",
+      "claim": "IEC\u2206Chil1 mice transplanted with Lactobacillus display a similar colitis phenotype as Villin-cre mice.",
+      "claim_type": "EXPLICIT",
+      "source": "IEC\u2206Chil1 mice transplanted with Lactobacillus displayed a similar colitis phenotype as Villin-cre mice, characterized by similar weight loss, colon length reduction, and gut inflammation (Figure 5G\u2013I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Lactobacillus transplantation experiments shown in Figures 5G-I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "6f03d8e6-3bec-471c-8fb3-0f59183c0c6f",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C58",
+      "claim": "Chi3l1-regulated gut microbiota, especially Lactobacillus, offers protection against colitis.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings further validate the notion that Chi3l1-regulated gut microbiota, especially Lactobacillus, offers protection against colitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from FMT and Lactobacillus transplantation experiments showing restoration of colitis phenotype.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "31e8d981-1cde-4eda-bf9c-8d47c25ec03f",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C59",
+      "claim": "Chi3l1 binds to bacterial PGN, helping anchor and organize bacteria within the mucus layer.",
+      "claim_type": "EXPLICIT",
+      "source": "Our 'scaffold model' demonstrates that Chi3l1 binds to bacterial PGN, helping anchor and organize bacteria within the mucus layer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary interpretation of the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "71ab34e3-e528-46f8-bdf3-f512aa42c0ea",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C60",
+      "claim": "Chi3l1 interaction with bacteria promotes the colonization of beneficial bacteria, enhancing gut health.",
+      "claim_type": "EXPLICIT",
+      "source": "This interaction promotes the colonization of beneficial bacteria, enhancing gut health.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a summary interpretation of the experimental findings presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "f3801938-43c2-4f81-b31d-bbb1147bd878",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C61",
+      "claim": "Chi3l1 belongs to the glycosylhydrolase 18 family.",
+      "claim_type": "EXPLICIT",
+      "source": "Chitinase 3-like protein 1 (Chi3l1, also known as YKL-40 in humans) is a secreted protein that belongs to the glycosylhydrolase 18 family (Lee et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lee et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "34f97a09-dac3-477c-b070-30c72e086310",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C62",
+      "claim": "Chi3l1 can bind to chitin but does not have chitinase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite its name, Chi3l1 can bind to chitin but does not have chitinase activity (Houston et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Houston et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "c0aa2b36-a2c8-4501-82fb-e97ecc2dd440",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C63",
+      "claim": "Alterations in gut microbiota composition have been linked to cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations in gut microbiota composition have been linked to various diseases including cancer, obesity, and neurological disorders (B\u00e4umler and Sperandio, 2016; Charbonneau et al., 2016; Honda and Littman, 2016; Sonnenburg and B\u00e4ckhed, 2016; Thaiss et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "a51eb31a-6eba-4d72-b7ec-8f074c17ad89",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C64",
+      "claim": "Alterations in gut microbiota composition have been linked to obesity.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations in gut microbiota composition have been linked to various diseases including cancer, obesity, and neurological disorders (B\u00e4umler and Sperandio, 2016; Charbonneau et al., 2016; Honda and Littman, 2016; Sonnenburg and B\u00e4ckhed, 2016; Thaiss et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "5dd6fe56-8bdd-4aea-abfb-0e20766bde4a",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C65",
+      "claim": "Alterations in gut microbiota composition have been linked to neurological disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Alterations in gut microbiota composition have been linked to various diseases including cancer, obesity, and neurological disorders (B\u00e4umler and Sperandio, 2016; Charbonneau et al., 2016; Honda and Littman, 2016; Sonnenburg and B\u00e4ckhed, 2016; Thaiss et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "a5780fa1-d639-4982-b2ac-3de986c885dc",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C66",
+      "claim": "Dysbiosis is characterized by decreased microbial diversity, the presence of harmful microbes, or absence of beneficial ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Dysbiosis, which refers to an imbalance in gut microbiota, is characterized by decreased microbial diversity, the presence of harmful microbes, or absence of beneficial ones (Petersen and Round, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Petersen and Round, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "60c19586-9a9c-4cd6-9bc9-16f8938b2375",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C67",
+      "claim": "Mouse models lacking key components of the mucus are predisposed to colitis, accompanied by dysbiosis in mucosa.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the cause of the IBD is unclear, mouse models lacking the key components of the mucus are predisposed to colitis, accompanied by dysbiosis in mucosa (Fu et al., 2011; Johansson et al., 2008), which is in accordance with increased epithelial-adherent microbial communities in biopsies from patients with IBD (Johansson et al., 2014; Swidsinski et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Fu et al., 2011 and Johansson et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "cb46c895-eb44-4b01-b6df-718ef1e1a19c",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C68",
+      "claim": "Increased epithelial-adherent microbial communities are found in biopsies from patients with IBD.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the cause of the IBD is unclear, mouse models lacking the key components of the mucus are predisposed to colitis, accompanied by dysbiosis in mucosa (Fu et al., 2011; Johansson et al., 2008), which is in accordance with increased epithelial-adherent microbial communities in biopsies from patients with IBD (Johansson et al., 2014; Swidsinski et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Johansson et al., 2014 and Swidsinski et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "8e9ee9b7-d012-4e0f-9d7e-2ce378335d96",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C69",
+      "claim": "Significant differences in gut microbiota of CD patients compared with healthy controls are only present in mucus samples, not stool samples.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there were significant differences in the gut microbiota of CD patients compared with healthy controls, and these differences were only present in mucus samples (not stool samples), suggesting that bacteria in the mucus layer may be more important for the development of IBD (Gevers et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gevers et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "55f5642b-c17c-4f11-bf12-cd85c0222017",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C70",
+      "claim": "The intestinal flora utilizes host immunoglobulin A (IgA) for mucus colonization.",
+      "claim_type": "EXPLICIT",
+      "source": "Donaldson et al. discovered that the intestinal flora utilizes host immunoglobulin A (IgA) for mucus colonization, indicating that the host may secrete certain factors to maintain intestinal flora homeostasis in the mucus (Donaldson et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Donaldson et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "bd97bce1-0dc3-4ab7-a6f7-aaade1ca1ca4",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C71",
+      "claim": "Both live Escherichia coli and heat-killed E. coli treatment result in a significant increase in the expression of the gene encoding Chi3l1 in human intestinal organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "In a previous study, it was observed that both live Escherichia coli and heat-killed E. coli treatment resulted in a significant increase in the expression of the gene encoding Chi3l1 in human intestinal organoids (Hill et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hill et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "b0f1a6d2-8f10-499f-96f6-24c6671aaa4b",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C72",
+      "claim": "The gut microbiota's composition is shaped by host factors, including IgA.",
+      "claim_type": "EXPLICIT",
+      "source": "The gut microbiota's composition is shaped by host factors, including IgA (Donaldson et al., 2018), RegIII\u03b3 (Vaishnava et al., 2011), and TLR-5 (Fulde et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Donaldson et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "15d2a113-55f5-4b4d-a764-490c0ed28ccc",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C73",
+      "claim": "The gut microbiota's composition is shaped by host factors, including RegIII\u03b3.",
+      "claim_type": "EXPLICIT",
+      "source": "The gut microbiota's composition is shaped by host factors, including IgA (Donaldson et al., 2018), RegIII\u03b3 (Vaishnava et al., 2011), and TLR-5 (Fulde et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Vaishnava et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "371eba07-6382-43c3-aa4b-f0842d951377",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C74",
+      "claim": "The gut microbiota's composition is shaped by host factors, including TLR-5.",
+      "claim_type": "EXPLICIT",
+      "source": "The gut microbiota's composition is shaped by host factors, including IgA (Donaldson et al., 2018), RegIII\u03b3 (Vaishnava et al., 2011), and TLR-5 (Fulde et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Fulde et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "b134e83d-6c53-43bb-a9f0-644f664dc638",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C75",
+      "claim": "Intestinal homeostasis is crucial for maintaining human health.",
+      "claim_type": "EXPLICIT",
+      "source": "Intestinal homeostasis is crucial for maintaining human health (Lozupone et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lozupone et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "6f324dd7-b6a8-4e9b-9555-79700ef187f8",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C76",
+      "claim": "Colonization of the gut mucus layer can affect the susceptibility and progression of intestinal diseases like inflammatory bowel disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Growing evidence suggests that colonization of the gut mucus layer can affect the susceptibility and progression of intestinal diseases like inflammatory bowel disease (IBD), irritable bowel syndrome, and celiac disease (Gordon, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gordon, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "c2c31c84-9ffe-4dc7-88a6-a230a749cb29",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C77",
+      "claim": "Colonization of the gut mucus layer can affect the susceptibility and progression of irritable bowel syndrome.",
+      "claim_type": "EXPLICIT",
+      "source": "Growing evidence suggests that colonization of the gut mucus layer can affect the susceptibility and progression of intestinal diseases like inflammatory bowel disease (IBD), irritable bowel syndrome, and celiac disease (Gordon, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gordon, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "f5734c10-3b72-48d5-8611-9225d3ec4e1f",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "claim_id": "C78",
+      "claim": "Colonization of the gut mucus layer can affect the susceptibility and progression of celiac disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Growing evidence suggests that colonization of the gut mucus layer can affect the susceptibility and progression of intestinal diseases like inflammatory bowel disease (IBD), irritable bowel syndrome, and celiac disease (Gordon, 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Gordon, 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "739700e4-223f-4e09-b2f2-8ec747c005b7",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Chi3l1 is expressed in intestinal epithelial cells in response to gut microbiota, specifically in enteroendocrine cells in the ileum and goblet/Paneth cells in the colon, but not in tuft cells. Chi3l1 is secreted into the intestinal lumen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C4 provide direct experimental evidence from immunohistochemistry and co-staining experiments showing Chi3l1 expression patterns in SPF vs. germ-free mice and specific cell types. C34 appropriately summarizes these findings. The data from Figures 1A-B and supplementary figures provide clear visual and quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "e65ecf0f-7e18-402e-ac41-dac182d8c601",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bacterial components, particularly from E. coli and LPS, directly induce Chi3l1 expression in intestinal epithelial cells. Live bacteria are not required for this induction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C10 present a logical progression of in vitro experiments using DLD-1 cells showing that bacterial extracts, specific bacterial strains (E. coli but not S. sciuri), heat-killed bacteria, and LPS all induce Chi3l1 expression. Western blot and immunofluorescence data (Figures 1C-G) support these claims. However, the conclusion is limited to two bacterial strains and one cell line.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "637e99ea-54be-4dd2-8297-1f74f05fab3a",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Chi3l1 directly interacts with both Gram-positive and Gram-negative bacteria through peptidoglycan (PGN), which shares structural similarity with chitin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C17 establish the structural basis (C11-C12) and experimental evidence (C13-C16) for Chi3l1-PGN interaction. Co-precipitation experiments with both mouse and human Chi3l1 (Figures 2B-D) demonstrate binding to bacteria and PGN. The use of BSA as negative control strengthens the specificity claim. The inference in C17 is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "ccb50a93-7a03-45c8-854d-dc3a892575f5",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Chi3l1 binds to PGN in a dose-dependent manner, but binding to chitin does not show dose dependency.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C19 are supported by dose-response experiments shown in Figure 2E. This differential binding pattern suggests distinct binding mechanisms and specificities for PGN versus chitin, which is important for understanding Chi3l1 function. The experimental design with increasing doses (25, 50, 100 \u03bcg) is appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "283cb3ac-e4d1-4687-a2f0-248b433585ca",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The Chi3l1-PGN interaction is functionally important for bacterial adhesion to intestinal epithelial cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C22 provide functional validation through two complementary approaches: using PGN-deficient bacterial mutants (GlmM) and Chi3l1 knockdown in cells (Figures 2F-G). Both approaches show reduced bacterial adhesion, supporting the functional importance of Chi3l1-PGN interaction. The knockdown efficiency (>50%) is adequate though not optimal.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Intestinal epithelial cell-specific deletion of Chi3l1 leads to reduced bacterial diversity and specifically decreases Gram-positive bacteria, particularly Lactobacillus, while Gram-negative bacteria remain unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C33 present comprehensive microbiome analysis using multiple complementary methods: 16S rRNA sequencing (alpha diversity, PCA, relative abundance), qPCR, LTA staining, and FISH. The consistency across methods and validation in both IEC\u0394Chil1 and Chil1-/- mice strengthens the conclusions. The increase in Turicibacter (C32) adds nuance showing not all Gram-positive bacteria are reduced.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "3669f988-e120-4d90-931f-d50b8e7d1f50",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Chi3l1 is secreted into the intestinal mucus layer where it promotes colonization of Gram-positive bacteria, particularly Lactobacillus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35-C40 and C43 demonstrate Chi3l1 localization in mucus (IHC, IF, Western blot in Figures 4A-D) and its functional role in bacterial colonization in the mucus layer (qPCR in Figure 4E-F). The data show consistent reductions in Gram-positive bacteria and Lactobacillus in both ileum and colon mucus of Chil1-/- mice. C43 appropriately summarizes these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "885c3d51-b256-4c33-852a-cc5e7b8ee2cf",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Chi3l1 deficiency reduces colonization of Gram-positive bacteria (E. faecalis) but increases colonization of Gram-negative bacteria (E. coli) in vivo.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42 are supported by rectal injection experiments with fluorescently labeled bacteria (FDAA-labeled E. faecalis and mCherry-OP50) shown in Figures 4G and 4\u2014figure supplement 1A. This differential effect on Gram-positive vs. Gram-negative bacteria is consistent with the PGN-binding specificity and strengthens the mechanistic model.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "fd2a545e-dcdc-43ae-81a4-a615d9e841be",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Chi3l1 deletion reduces mucus layer thickness.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C44 is supported by AB-PAS staining and Mucin 2 immunofluorescence (Figure 4\u2014figure supplement 1B-C). However, the authors acknowledge this may be secondary to disrupted bacterial colonization rather than a direct effect. The mechanism linking Chi3l1 to mucus thickness requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "9c3c1d62-6ebd-4295-8cc5-7a24a94c5b48",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Chi3l1 mRNA expression is significantly increased in colon tissues of IBD patients (both Crohn's disease and ulcerative colitis) compared to normal tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C46 are supported by analysis of GEO datasets (Figure 5A). This provides clinical relevance for the mouse studies. However, the analysis is limited to mRNA expression from public datasets without validation in an independent cohort or protein-level confirmation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "90d0a04a-e940-4d65-bde3-88544af89f72",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "IEC\u0394Chil1 mice show normal colon morphology at baseline but develop more severe DSS-induced colitis compared to control mice, characterized by shorter colon length, greater weight loss, and increased inflammation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 are well-supported by the DSS colitis model data (Figures 5C-E). The baseline similarity (C47-C48) is important for establishing that the phenotype is specific to the inflammatory challenge. The multiple parameters measured (colon length, weight loss, histology) provide robust characterization of disease severity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "24bafe36-2a24-4165-ab46-b57ca7d8f835",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Antibiotic-mediated depletion of gut microbiota reverses the colitis phenotype in IEC\u0394Chil1 mice, demonstrating that Chi3l1's effects on colitis are primarily mediated through gut microbiota rather than direct host effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53 are supported by experiments showing that microbiota depletion leads to milder colitis in IEC\u0394Chil1 mice compared to controls (Figure 5\u2014figure supplement 1C-E). This is a critical experiment that distinguishes microbiota-mediated from direct host effects. However, complete microbiota elimination is difficult to achieve, and residual bacteria may still contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "dd8fd935-1514-455f-bca3-4f7e2079677b",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Fecal microbiota transplantation from control mice partially rescues colitis in IEC\u0394Chil1 mice (colon length only), while Lactobacillus supplementation fully rescues the colitis phenotype.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C58 are supported by FMT and Lactobacillus transplantation experiments (Figures 5G-I). The partial rescue by FMT (colon length only) versus complete rescue by Lactobacillus is interesting and suggests Lactobacillus is a key mediator. However, the FMT experiment has limitations: only one donor genotype was used, and the partial rescue raises questions about engraftment efficiency or whether other factors are involved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "99d4421e-9ce3-4768-a1aa-49d9fb73aaaa",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The 'scaffold model' proposes that Chi3l1 binds bacterial PGN to anchor and organize bacteria in the mucus layer, promoting colonization of beneficial bacteria and enhancing gut health.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C60 represent the authors' integrative model synthesizing the experimental findings. The model is well-supported by the collective evidence: Chi3l1 binds PGN (C13-C17), is secreted into mucus (C35-C36), promotes bacterial colonization (C37-C43), and protects against colitis (C49-C58). This is an appropriate synthesis of the major findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "342591f4-e0ab-4c34-8eab-22506dde93c7",
+      "content_id": "f782151b-bdc2-452e-93df-4b9d7427fc72",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing prior knowledge about Chi3l1, gut microbiota, dysbiosis, IBD, and host factors regulating microbiota composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C78 are background/context claims supported by appropriate citations to published literature. These establish the scientific foundation and rationale for the current study. The citations appear appropriate and the claims represent accepted knowledge in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "21e085b7-1825-4cf0-84c1-30120de54bcf",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Chi3l1 expression is substantially increased in SPF mice compared to germ-free mice and is specifically expressed in secretory epithelial cells (enteroendocrine cells in the ileum, goblet or Paneth cells in the colon, but not tuft cells), and is secreted into the intestinal lumen.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding, stating the study demonstrates 'Chi3l1 is a protein produced and secreted by intestinal epithelial cells into the mucus layer upon response to the gut microbiota.' The revised manuscript includes 'new, higher-resolution images' that 'provide stronger support for the conclusions drawn,' and reviewers note the data is 'convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "6886af10-07e4-486c-8e9d-fc76da5c30a4",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Bacterial components, including bacterial extracts, E. coli (but not S. sciuri), heat-killed E. coli, and LPS, directly induce Chi3l1 expression in DLD-1 cells, indicating that live bacteria are not required for this induction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the data as 'convincing' and note that the study demonstrates Chi3l1 responds to gut microbiota. The experiments showing bacterial induction of Chi3l1 are part of the 'appropriately designed and executed with precision' experimental framework that reviewers affirm.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "29a00da2-5982-435e-917e-e2af53d7e39f",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Chi3l1 directly interacts with both Gram-positive and Gram-negative bacteria through peptidoglycan (PGN), which shares structural similarity with chitin (both contain N-acetylglucosamine and \u03b2-1,4-glycosidic bonds). This interaction is dose-dependent for PGN but not for chitin.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this mechanistic finding, stating 'the authors provided evidence to document the direct interaction between CHI3L1 and peptidoglycan, a major component of bacterial cell wall.' They note the manuscript is 'strengthened by additional mechanistic studies concerning the binding between Chi3l1 and peptidoglycan.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "2bf4b335-2408-4cc9-86b2-c77bcf9c63fd",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The Chi3l1-PGN interaction plays a crucial role in bacterial adhesion, as demonstrated by reduced adhesion in PGN synthesis-deficient mutants (GlmM) and after Chi3l1 knockdown in DLD-1 cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the mechanistic studies, noting the manuscript is strengthened by 'additional mechanistic studies concerning the binding between Chi3l1 and peptidoglycan.' The adhesion experiments are part of the 'convincing data' that support the overall conclusions about Chi3l1-bacteria interactions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "91bf8c5e-204c-4eb3-943a-8833a04b7932",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "IEC\u0394Chil1 and Chil1-/- mice show reduced bacterial diversity, lower bacterial enrichment, and specifically reduced Gram-positive bacteria (particularly Lactobacillus and Firmicutes) compared to control mice, while Gram-negative bacteria remain unchanged. This indicates Chi3l1 regulates colonization of Gram-positive bacteria in the murine gut.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding, stating 'Convincing data were shown to characterize the imbalance of gram-positive bacteria in the newly generated gut epithelial-specific Chi3L1 deficient mice.' They note the study demonstrates Chi3l1 'facilitating the colonization of gram-positive bacteria in the mucosa.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "340c454c-7678-4fab-93b7-c90cf48b0293",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Chi3l1 is present in the mucus layer of the ileum and colon, and Chi3l1 deficiency leads to significantly lower levels of Gram-positive bacteria and Lactobacillus in the mucus, reduced colonization of E. faecalis, increased colonization of E. coli, and reduced mucus layer thickness.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm these findings as part of the overall demonstration that Chi3l1 'facilitating the colonization of gram-positive bacteria in the mucosa' and 'supporting the colonization of beneficial bacteria strains such as Lactobacillus.' The data is described as 'convincing' and 'appropriately designed and executed with precision.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "e6ad65e5-2fba-43c0-b742-2f1c54b6c736",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Chil1 mRNA expression is significantly increased in colon tissues of patients with Crohn's disease (CD) and ulcerative colitis (UC) compared to normal tissues.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note 'The inclusion of a small but pertinent piece of human data added to solidify their findings in mice,' indicating acceptance of this human data as supporting evidence for the clinical relevance of the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Without DSS challenge, IEC\u0394Chil1 mice are phenotypically similar to controls, but upon DSS challenge they show significantly worse colitis (shorter colon, faster weight loss, more severe inflammation). After antibiotic treatment to eliminate microbiota, IEC\u0394Chil1 mice exhibit milder colitis than controls, indicating Chi3l1's effects on gut microbiota play a more significant role in colitis than direct host effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding, stating the study 'demonstrates that the Chitinase 3-like protein 1 (Chi3l1) interacts with gut microbiota and protects animals from intestinal injury in laboratory colitis model.' They describe the data as 'convincing' and note 'Comprehensive FMT experiments were performed to demonstrate the contributions of gut microbiome using the mouse colitis model.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "f21204c0-58d8-4d12-b1f4-ec5bcbfa7072",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Fecal microbiota transplantation (FMT) from Villin-cre mice partially restores colon length but not body weight loss or inflammation in IEC\u0394Chil1 mice after DSS challenge. However, Lactobacillus transplantation fully restores the colitis phenotype to that of Villin-cre mice, validating that Chi3l1-regulated gut microbiota, especially Lactobacillus, offers protection against colitis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm these experiments, stating 'Comprehensive FMT experiments were performed to demonstrate the contributions of gut microbiome using the mouse colitis model.' They describe the overall data as 'convincing' and note the experiments were 'appropriately designed and executed with precision.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "27aabd14-064d-4e03-8071-bb3427be6070",
+      "content_id": "4aea3521-5260-4f01-b3d7-e0e9977ce363",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The 'scaffold model' proposes that Chi3l1 binds to bacterial PGN, helping anchor and organize bacteria within the mucus layer, promoting colonization of beneficial bacteria and enhancing gut health.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm this interpretive model, stating the study demonstrates Chi3l1 'interacts with the peptidoglycan of the bacteria cell wall, supporting the colonization of beneficial bacteria strains such as Lactobacillus.' The overall conclusions are described as supported by 'convincing data.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c7ae54cc-aa90-46db-9370-40678e49a3d7",
+      "result_id": "739700e4-223f-4e09-b2f2-8ec747c005b7"
+    },
+    {
+      "claim_id": "5a116999-256e-400b-bf21-685d3d2f565d",
+      "result_id": "739700e4-223f-4e09-b2f2-8ec747c005b7"
+    },
+    {
+      "claim_id": "03ec98b9-62fa-41ef-9baf-2960b5a9c2ae",
+      "result_id": "739700e4-223f-4e09-b2f2-8ec747c005b7"
+    },
+    {
+      "claim_id": "a9af3531-bd83-47b9-9dc3-d19d90c3eb1b",
+      "result_id": "739700e4-223f-4e09-b2f2-8ec747c005b7"
+    },
+    {
+      "claim_id": "59c6eab6-3867-4210-b138-28e0158f80ce",
+      "result_id": "739700e4-223f-4e09-b2f2-8ec747c005b7"
+    },
+    {
+      "claim_id": "7b890208-75cf-47b1-9257-8da665d8e14c",
+      "result_id": "e65ecf0f-7e18-402e-ac41-dac182d8c601"
+    },
+    {
+      "claim_id": "b1aa7d4c-126c-4af1-b1a9-990b24d75d30",
+      "result_id": "e65ecf0f-7e18-402e-ac41-dac182d8c601"
+    },
+    {
+      "claim_id": "fa1e7675-1a85-461c-b20d-dc43139062e7",
+      "result_id": "e65ecf0f-7e18-402e-ac41-dac182d8c601"
+    },
+    {
+      "claim_id": "b4e57faf-db4b-44c8-8c3d-834c428e4cf2",
+      "result_id": "e65ecf0f-7e18-402e-ac41-dac182d8c601"
+    },
+    {
+      "claim_id": "d41a235b-b1bf-47d3-b9b8-59f7ba05c0b3",
+      "result_id": "e65ecf0f-7e18-402e-ac41-dac182d8c601"
+    },
+    {
+      "claim_id": "db01c6d0-339b-4a34-b486-55e58edc12f5",
+      "result_id": "e65ecf0f-7e18-402e-ac41-dac182d8c601"
+    },
+    {
+      "claim_id": "774ab1a2-7591-4add-ab0c-0e09bd4ecbc7",
+      "result_id": "637e99ea-54be-4dd2-8297-1f74f05fab3a"
+    },
+    {
+      "claim_id": "0380ad37-b38f-430b-b2e1-5d2abcd28659",
+      "result_id": "637e99ea-54be-4dd2-8297-1f74f05fab3a"
+    },
+    {
+      "claim_id": "e1f9272f-26dc-45db-aec6-ad06dfff928e",
+      "result_id": "637e99ea-54be-4dd2-8297-1f74f05fab3a"
+    },
+    {
+      "claim_id": "d4479512-4688-4169-a788-e4e948578eac",
+      "result_id": "637e99ea-54be-4dd2-8297-1f74f05fab3a"
+    },
+    {
+      "claim_id": "954a1fa4-b61e-42a2-84c7-dac61c7b6213",
+      "result_id": "637e99ea-54be-4dd2-8297-1f74f05fab3a"
+    },
+    {
+      "claim_id": "34c2a0e5-4ce8-48d7-bdaf-4a5f667cea04",
+      "result_id": "637e99ea-54be-4dd2-8297-1f74f05fab3a"
+    },
+    {
+      "claim_id": "a43e26a1-5b80-482c-b76b-c23982733909",
+      "result_id": "637e99ea-54be-4dd2-8297-1f74f05fab3a"
+    },
+    {
+      "claim_id": "3e37bba9-5c0f-4cd5-9d9e-09bef00ab829",
+      "result_id": "ccb50a93-7a03-45c8-854d-dc3a892575f5"
+    },
+    {
+      "claim_id": "4e8cfe3d-9ebe-44b6-a8e1-f8f4a395f6b3",
+      "result_id": "ccb50a93-7a03-45c8-854d-dc3a892575f5"
+    },
+    {
+      "claim_id": "b8776f8c-6e0f-4f81-b341-aa9bcdbf8a71",
+      "result_id": "283cb3ac-e4d1-4687-a2f0-248b433585ca"
+    },
+    {
+      "claim_id": "35e637ab-ac24-469c-9a3f-fdafcdc2dad5",
+      "result_id": "283cb3ac-e4d1-4687-a2f0-248b433585ca"
+    },
+    {
+      "claim_id": "afeba7ec-3baa-4d22-b262-d1668ff02279",
+      "result_id": "283cb3ac-e4d1-4687-a2f0-248b433585ca"
+    },
+    {
+      "claim_id": "2c5c0232-cb8e-4478-82fd-3ea4a3b521fe",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "73fccdcc-a574-4546-89bb-18cbbcc717f4",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "2996f180-cb73-451a-a2a4-8ece1a195544",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "434427c2-1269-4d5f-b216-d715328edf1a",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "d4d39c07-28b3-4660-85cd-5fc60719cc67",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "1d8d52e1-9f4c-4ac4-af17-d9f6de4512e9",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "c11db011-8d5d-4fe3-b938-9338c66a8173",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "73ec30e6-683e-49b0-8f9e-9e2a994c43fe",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "9e4d11ac-87b1-47a6-932f-48d1ed9b49ee",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "9afb2ea6-90ed-46e8-93ca-6d77d5fb6753",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "49b5f53b-b45c-4630-b03f-97d9976ec7cf",
+      "result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e"
+    },
+    {
+      "claim_id": "9dd4ccba-e257-4b28-888c-58fc200d31da",
+      "result_id": "3669f988-e120-4d90-931f-d50b8e7d1f50"
+    },
+    {
+      "claim_id": "e03d314d-573e-48b5-a94b-683289066c19",
+      "result_id": "3669f988-e120-4d90-931f-d50b8e7d1f50"
+    },
+    {
+      "claim_id": "f6bd72fa-1342-4080-94db-2215a8f6d72c",
+      "result_id": "3669f988-e120-4d90-931f-d50b8e7d1f50"
+    },
+    {
+      "claim_id": "c8013d07-4c84-4e0c-a591-3d49a1472b75",
+      "result_id": "3669f988-e120-4d90-931f-d50b8e7d1f50"
+    },
+    {
+      "claim_id": "5e5dfb7e-bb8b-40fd-917d-a75f3c419c33",
+      "result_id": "3669f988-e120-4d90-931f-d50b8e7d1f50"
+    },
+    {
+      "claim_id": "6fd7956a-3b07-4289-9472-d9277a732a62",
+      "result_id": "3669f988-e120-4d90-931f-d50b8e7d1f50"
+    },
+    {
+      "claim_id": "d258d263-d33c-48da-b512-91235fd77dad",
+      "result_id": "3669f988-e120-4d90-931f-d50b8e7d1f50"
+    },
+    {
+      "claim_id": "921e1121-a88f-410b-ad68-0a84dd68dcde",
+      "result_id": "885c3d51-b256-4c33-852a-cc5e7b8ee2cf"
+    },
+    {
+      "claim_id": "96668fbf-f44f-44c6-b7ef-830c52680eeb",
+      "result_id": "885c3d51-b256-4c33-852a-cc5e7b8ee2cf"
+    },
+    {
+      "claim_id": "dcc7e7e9-946d-4cea-9c72-af3e27df02ea",
+      "result_id": "fd2a545e-dcdc-43ae-81a4-a615d9e841be"
+    },
+    {
+      "claim_id": "dd4d2b62-dddf-44d9-a586-98022a41d1f8",
+      "result_id": "9c3c1d62-6ebd-4295-8cc5-7a24a94c5b48"
+    },
+    {
+      "claim_id": "439d0625-6f1c-43f6-abc5-1fff865a9d58",
+      "result_id": "9c3c1d62-6ebd-4295-8cc5-7a24a94c5b48"
+    },
+    {
+      "claim_id": "7528ba7f-cff8-40ca-b128-96c3ec495d56",
+      "result_id": "90d0a04a-e940-4d65-bde3-88544af89f72"
+    },
+    {
+      "claim_id": "844e603a-49c6-40de-9a2a-0ca3429e80c7",
+      "result_id": "90d0a04a-e940-4d65-bde3-88544af89f72"
+    },
+    {
+      "claim_id": "5c707f0f-b2b0-4e8f-90ad-d7195966a1cf",
+      "result_id": "90d0a04a-e940-4d65-bde3-88544af89f72"
+    },
+    {
+      "claim_id": "5eed5a96-48a8-4445-be8d-2b3e38a2eda3",
+      "result_id": "90d0a04a-e940-4d65-bde3-88544af89f72"
+    },
+    {
+      "claim_id": "fc9b14e4-9177-4d59-a79a-a2172bb1ceda",
+      "result_id": "90d0a04a-e940-4d65-bde3-88544af89f72"
+    },
+    {
+      "claim_id": "a292f527-21ef-49a6-824e-fe49402c1fe6",
+      "result_id": "24bafe36-2a24-4165-ab46-b57ca7d8f835"
+    },
+    {
+      "claim_id": "e119f3d9-7808-4db8-8367-bac0aa822c59",
+      "result_id": "24bafe36-2a24-4165-ab46-b57ca7d8f835"
+    },
+    {
+      "claim_id": "be5fdae0-2b6a-4257-b5d7-d53caadd8b58",
+      "result_id": "dd8fd935-1514-455f-bca3-4f7e2079677b"
+    },
+    {
+      "claim_id": "82b38317-4342-4ec9-bb6f-8a5b89c0876f",
+      "result_id": "dd8fd935-1514-455f-bca3-4f7e2079677b"
+    },
+    {
+      "claim_id": "bdcf4d2e-f7a7-4586-9b61-b0ecbb14e9bb",
+      "result_id": "dd8fd935-1514-455f-bca3-4f7e2079677b"
+    },
+    {
+      "claim_id": "956c0a12-0a20-41cf-b083-4a7d36275f17",
+      "result_id": "dd8fd935-1514-455f-bca3-4f7e2079677b"
+    },
+    {
+      "claim_id": "6f03d8e6-3bec-471c-8fb3-0f59183c0c6f",
+      "result_id": "dd8fd935-1514-455f-bca3-4f7e2079677b"
+    },
+    {
+      "claim_id": "31e8d981-1cde-4eda-bf9c-8d47c25ec03f",
+      "result_id": "99d4421e-9ce3-4768-a1aa-49d9fb73aaaa"
+    },
+    {
+      "claim_id": "71ab34e3-e528-46f8-bdf3-f512aa42c0ea",
+      "result_id": "99d4421e-9ce3-4768-a1aa-49d9fb73aaaa"
+    },
+    {
+      "claim_id": "f3801938-43c2-4f81-b31d-bbb1147bd878",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "34f97a09-dac3-477c-b070-30c72e086310",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "c0aa2b36-a2c8-4501-82fb-e97ecc2dd440",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "a51eb31a-6eba-4d72-b7ec-8f074c17ad89",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "5dd6fe56-8bdd-4aea-abfb-0e20766bde4a",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "a5780fa1-d639-4982-b2ac-3de986c885dc",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "60c19586-9a9c-4cd6-9bc9-16f8938b2375",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "cb46c895-eb44-4b01-b6df-718ef1e1a19c",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "8e9ee9b7-d012-4e0f-9d7e-2ce378335d96",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "55f5642b-c17c-4f11-bf12-cd85c0222017",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "bd97bce1-0dc3-4ab7-a6f7-aaade1ca1ca4",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "b0f1a6d2-8f10-499f-96f6-24c6671aaa4b",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "15d2a113-55f5-4b4d-a764-490c0ed28ccc",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "371eba07-6382-43c3-aa4b-f0842d951377",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "b134e83d-6c53-43bb-a9f0-644f664dc638",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "6f324dd7-b6a8-4e9b-9555-79700ef187f8",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "c2c31c84-9ffe-4dc7-88a6-a230a749cb29",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "f5734c10-3b72-48d5-8611-9225d3ec4e1f",
+      "result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7"
+    },
+    {
+      "claim_id": "c7ae54cc-aa90-46db-9370-40678e49a3d7",
+      "result_id": "21e085b7-1825-4cf0-84c1-30120de54bcf"
+    },
+    {
+      "claim_id": "5a116999-256e-400b-bf21-685d3d2f565d",
+      "result_id": "21e085b7-1825-4cf0-84c1-30120de54bcf"
+    },
+    {
+      "claim_id": "03ec98b9-62fa-41ef-9baf-2960b5a9c2ae",
+      "result_id": "21e085b7-1825-4cf0-84c1-30120de54bcf"
+    },
+    {
+      "claim_id": "a9af3531-bd83-47b9-9dc3-d19d90c3eb1b",
+      "result_id": "21e085b7-1825-4cf0-84c1-30120de54bcf"
+    },
+    {
+      "claim_id": "59c6eab6-3867-4210-b138-28e0158f80ce",
+      "result_id": "21e085b7-1825-4cf0-84c1-30120de54bcf"
+    },
+    {
+      "claim_id": "7b890208-75cf-47b1-9257-8da665d8e14c",
+      "result_id": "6886af10-07e4-486c-8e9d-fc76da5c30a4"
+    },
+    {
+      "claim_id": "b1aa7d4c-126c-4af1-b1a9-990b24d75d30",
+      "result_id": "6886af10-07e4-486c-8e9d-fc76da5c30a4"
+    },
+    {
+      "claim_id": "fa1e7675-1a85-461c-b20d-dc43139062e7",
+      "result_id": "6886af10-07e4-486c-8e9d-fc76da5c30a4"
+    },
+    {
+      "claim_id": "b4e57faf-db4b-44c8-8c3d-834c428e4cf2",
+      "result_id": "6886af10-07e4-486c-8e9d-fc76da5c30a4"
+    },
+    {
+      "claim_id": "d41a235b-b1bf-47d3-b9b8-59f7ba05c0b3",
+      "result_id": "6886af10-07e4-486c-8e9d-fc76da5c30a4"
+    },
+    {
+      "claim_id": "db01c6d0-339b-4a34-b486-55e58edc12f5",
+      "result_id": "6886af10-07e4-486c-8e9d-fc76da5c30a4"
+    },
+    {
+      "claim_id": "774ab1a2-7591-4add-ab0c-0e09bd4ecbc7",
+      "result_id": "29a00da2-5982-435e-917e-e2af53d7e39f"
+    },
+    {
+      "claim_id": "0380ad37-b38f-430b-b2e1-5d2abcd28659",
+      "result_id": "29a00da2-5982-435e-917e-e2af53d7e39f"
+    },
+    {
+      "claim_id": "e1f9272f-26dc-45db-aec6-ad06dfff928e",
+      "result_id": "29a00da2-5982-435e-917e-e2af53d7e39f"
+    },
+    {
+      "claim_id": "d4479512-4688-4169-a788-e4e948578eac",
+      "result_id": "29a00da2-5982-435e-917e-e2af53d7e39f"
+    },
+    {
+      "claim_id": "954a1fa4-b61e-42a2-84c7-dac61c7b6213",
+      "result_id": "29a00da2-5982-435e-917e-e2af53d7e39f"
+    },
+    {
+      "claim_id": "34c2a0e5-4ce8-48d7-bdaf-4a5f667cea04",
+      "result_id": "29a00da2-5982-435e-917e-e2af53d7e39f"
+    },
+    {
+      "claim_id": "a43e26a1-5b80-482c-b76b-c23982733909",
+      "result_id": "29a00da2-5982-435e-917e-e2af53d7e39f"
+    },
+    {
+      "claim_id": "3e37bba9-5c0f-4cd5-9d9e-09bef00ab829",
+      "result_id": "29a00da2-5982-435e-917e-e2af53d7e39f"
+    },
+    {
+      "claim_id": "4e8cfe3d-9ebe-44b6-a8e1-f8f4a395f6b3",
+      "result_id": "29a00da2-5982-435e-917e-e2af53d7e39f"
+    },
+    {
+      "claim_id": "b8776f8c-6e0f-4f81-b341-aa9bcdbf8a71",
+      "result_id": "2bf4b335-2408-4cc9-86b2-c77bcf9c63fd"
+    },
+    {
+      "claim_id": "35e637ab-ac24-469c-9a3f-fdafcdc2dad5",
+      "result_id": "2bf4b335-2408-4cc9-86b2-c77bcf9c63fd"
+    },
+    {
+      "claim_id": "afeba7ec-3baa-4d22-b262-d1668ff02279",
+      "result_id": "2bf4b335-2408-4cc9-86b2-c77bcf9c63fd"
+    },
+    {
+      "claim_id": "2c5c0232-cb8e-4478-82fd-3ea4a3b521fe",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "73fccdcc-a574-4546-89bb-18cbbcc717f4",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "2996f180-cb73-451a-a2a4-8ece1a195544",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "434427c2-1269-4d5f-b216-d715328edf1a",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "d4d39c07-28b3-4660-85cd-5fc60719cc67",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "1d8d52e1-9f4c-4ac4-af17-d9f6de4512e9",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "c11db011-8d5d-4fe3-b938-9338c66a8173",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "73ec30e6-683e-49b0-8f9e-9e2a994c43fe",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "9e4d11ac-87b1-47a6-932f-48d1ed9b49ee",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "9afb2ea6-90ed-46e8-93ca-6d77d5fb6753",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "49b5f53b-b45c-4630-b03f-97d9976ec7cf",
+      "result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932"
+    },
+    {
+      "claim_id": "9dd4ccba-e257-4b28-888c-58fc200d31da",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "e03d314d-573e-48b5-a94b-683289066c19",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "f6bd72fa-1342-4080-94db-2215a8f6d72c",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "c8013d07-4c84-4e0c-a591-3d49a1472b75",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "5e5dfb7e-bb8b-40fd-917d-a75f3c419c33",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "6fd7956a-3b07-4289-9472-d9277a732a62",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "921e1121-a88f-410b-ad68-0a84dd68dcde",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "96668fbf-f44f-44c6-b7ef-830c52680eeb",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "d258d263-d33c-48da-b512-91235fd77dad",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "dcc7e7e9-946d-4cea-9c72-af3e27df02ea",
+      "result_id": "340c454c-7678-4fab-93b7-c90cf48b0293"
+    },
+    {
+      "claim_id": "dd4d2b62-dddf-44d9-a586-98022a41d1f8",
+      "result_id": "e6ad65e5-2fba-43c0-b742-2f1c54b6c736"
+    },
+    {
+      "claim_id": "439d0625-6f1c-43f6-abc5-1fff865a9d58",
+      "result_id": "e6ad65e5-2fba-43c0-b742-2f1c54b6c736"
+    },
+    {
+      "claim_id": "7528ba7f-cff8-40ca-b128-96c3ec495d56",
+      "result_id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6"
+    },
+    {
+      "claim_id": "844e603a-49c6-40de-9a2a-0ca3429e80c7",
+      "result_id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6"
+    },
+    {
+      "claim_id": "5c707f0f-b2b0-4e8f-90ad-d7195966a1cf",
+      "result_id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6"
+    },
+    {
+      "claim_id": "5eed5a96-48a8-4445-be8d-2b3e38a2eda3",
+      "result_id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6"
+    },
+    {
+      "claim_id": "fc9b14e4-9177-4d59-a79a-a2172bb1ceda",
+      "result_id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6"
+    },
+    {
+      "claim_id": "a292f527-21ef-49a6-824e-fe49402c1fe6",
+      "result_id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6"
+    },
+    {
+      "claim_id": "e119f3d9-7808-4db8-8367-bac0aa822c59",
+      "result_id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6"
+    },
+    {
+      "claim_id": "be5fdae0-2b6a-4257-b5d7-d53caadd8b58",
+      "result_id": "f21204c0-58d8-4d12-b1f4-ec5bcbfa7072"
+    },
+    {
+      "claim_id": "82b38317-4342-4ec9-bb6f-8a5b89c0876f",
+      "result_id": "f21204c0-58d8-4d12-b1f4-ec5bcbfa7072"
+    },
+    {
+      "claim_id": "bdcf4d2e-f7a7-4586-9b61-b0ecbb14e9bb",
+      "result_id": "f21204c0-58d8-4d12-b1f4-ec5bcbfa7072"
+    },
+    {
+      "claim_id": "956c0a12-0a20-41cf-b083-4a7d36275f17",
+      "result_id": "f21204c0-58d8-4d12-b1f4-ec5bcbfa7072"
+    },
+    {
+      "claim_id": "6f03d8e6-3bec-471c-8fb3-0f59183c0c6f",
+      "result_id": "f21204c0-58d8-4d12-b1f4-ec5bcbfa7072"
+    },
+    {
+      "claim_id": "31e8d981-1cde-4eda-bf9c-8d47c25ec03f",
+      "result_id": "27aabd14-064d-4e03-8071-bb3427be6070"
+    },
+    {
+      "claim_id": "71ab34e3-e528-46f8-bdf3-f512aa42c0ea",
+      "result_id": "27aabd14-064d-4e03-8071-bb3427be6070"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "1045ce78-5236-4e37-a73c-72f5535055c4",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "739700e4-223f-4e09-b2f2-8ec747c005b7",
+      "peer_result_id": "21e085b7-1825-4cf0-84c1-30120de54bcf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C1-C4, C34 regarding Chi3l1 expression patterns in SPF vs. germ-free mice and specific cell types. Both evaluations find the immunohistochemistry and co-staining data convincing and supportive. Peer reviewers specifically note the revised manuscript includes higher-resolution images that strengthen support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "b97f696e-dd26-4877-8916-4847b18e0d32",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "e65ecf0f-7e18-402e-ac41-dac182d8c601",
+      "peer_result_id": "6886af10-07e4-486c-8e9d-fc76da5c30a4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C5-C10 regarding bacterial induction of Chi3l1 in vitro. Both evaluations find the data convincing. OpenEval notes the limitation to two bacterial strains and one cell line, while peer reviewers affirm the experiments are 'appropriately designed and executed with precision.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "623da5ab-dfce-4cc7-8f16-5923f4e78286",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "637e99ea-54be-4dd2-8297-1f74f05fab3a",
+      "peer_result_id": "29a00da2-5982-435e-917e-e2af53d7e39f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on Chi3l1-PGN interaction (C11-C17). OpenEval addresses C11-C17 while peer review addresses C11-C19 (including dose-response claims). Both find the mechanistic evidence convincing. Peer reviewers specifically note the manuscript is strengthened by these mechanistic studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "845d43fd-fc7e-45f0-b3e1-22100ac62156",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "ccb50a93-7a03-45c8-854d-dc3a892575f5",
+      "peer_result_id": "29a00da2-5982-435e-917e-e2af53d7e39f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses dose-response differential binding (C18-C19) separately, while peer review groups these with broader Chi3l1-PGN interaction claims (C11-C19). Both evaluations support the findings, with peer reviewers affirming the mechanistic evidence as strengthening the manuscript.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "24221989-eef2-49ad-9569-1a7a13c98f6a",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "283cb3ac-e4d1-4687-a2f0-248b433585ca",
+      "peer_result_id": "2bf4b335-2408-4cc9-86b2-c77bcf9c63fd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C20-C22 regarding functional validation through PGN-deficient mutants and Chi3l1 knockdown. Both find the adhesion experiments convincing. OpenEval notes knockdown efficiency is adequate though not optimal, while peer reviewers describe the mechanistic studies as strengthening the manuscript.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "8a4b431d-1400-4547-a588-9e55e5a85190",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "c31e7585-ea55-4999-ac54-83dff5c9bc3e",
+      "peer_result_id": "91bf8c5e-204c-4eb3-943a-8833a04b7932",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C23-C33 regarding microbiome analysis showing Gram-positive bacterial imbalance. Both evaluations find the comprehensive multi-method approach (16S rRNA, qPCR, LTA staining, FISH) convincing. Peer reviewers explicitly affirm the characterization of imbalance in gut epithelial-specific Chi3l1 deficient mice.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "468cd83b-1489-4022-ae41-6af483fcb85d",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "3669f988-e120-4d90-931f-d50b8e7d1f50",
+      "peer_result_id": "340c454c-7678-4fab-93b7-c90cf48b0293",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on Chi3l1 localization in mucus and bacterial colonization role (C35-C40, C43). OpenEval addresses these claims specifically, while peer review groups them with C41-C42, C44 in a broader evaluation of mucus colonization findings. Both find the data convincing and appropriately designed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "41280a7c-96f5-47d3-8a8d-de25c9aedc1a",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "885c3d51-b256-4c33-852a-cc5e7b8ee2cf",
+      "peer_result_id": "340c454c-7678-4fab-93b7-c90cf48b0293",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses rectal injection experiments with labeled bacteria (C41-C42) separately, while peer review groups these with broader mucus colonization findings (C35-C44). Both evaluations support the differential effect on Gram-positive vs. Gram-negative bacteria as part of convincing evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "d65be560-4f98-4c88-8502-1e2f0b10526f",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "fd2a545e-dcdc-43ae-81a4-a615d9e841be",
+      "peer_result_id": "340c454c-7678-4fab-93b7-c90cf48b0293",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses mucus thickness findings (C44) separately with some caution about mechanism, while peer review groups this with broader mucus colonization claims (C35-C44). Both evaluations ultimately support the findings as part of the overall convincing data package.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "d0ab3d85-c204-4856-945e-5d5b83dd3b4f",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "9c3c1d62-6ebd-4295-8cc5-7a24a94c5b48",
+      "peer_result_id": "e6ad65e5-2fba-43c0-b742-2f1c54b6c736",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C45-C46 regarding human data showing Chi3l1 downregulation in IBD. Both evaluations support this as providing clinical relevance. OpenEval notes limitations (mRNA only, no independent validation), while peer reviewers describe it as 'a small but pertinent piece of human data' that solidifies the mouse findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "5f892c9a-bb45-42a6-8f23-abccd848f5ee",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "90d0a04a-e940-4d65-bde3-88544af89f72",
+      "peer_result_id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on DSS colitis model findings (C47-C51). OpenEval addresses these claims specifically, while peer review groups them with C52-C53 in broader colitis protection evaluation. Both find the data convincing, with peer reviewers noting comprehensive experimental design and execution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "045a0d7e-4c14-4a7a-b53a-b256ad643078",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "24bafe36-2a24-4165-ab46-b57ca7d8f835",
+      "peer_result_id": "7b2a8f03-d79f-467c-a413-9b0fc840aaa6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses microbiota depletion experiments (C52-C53) separately as critical for distinguishing microbiota-mediated from host effects, while peer review groups these with broader colitis findings (C47-C53). Both evaluations support the findings, with peer reviewers affirming the comprehensive approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "14702dd5-8515-42ab-aa34-c192b599109c",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "dd8fd935-1514-455f-bca3-4f7e2079677b",
+      "peer_result_id": "f21204c0-58d8-4d12-b1f4-ec5bcbfa7072",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C54-C58 regarding FMT and Lactobacillus transplantation experiments. Both evaluations find the data convincing. OpenEval notes the partial rescue by FMT raises questions about engraftment, while peer reviewers describe the FMT experiments as 'comprehensive' and 'appropriately designed and executed with precision.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "373a3689-c644-41d4-96a1-dd636eb864ec",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "99d4421e-9ce3-4768-a1aa-49d9fb73aaaa",
+      "peer_result_id": "27aabd14-064d-4e03-8071-bb3427be6070",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C59-C60 representing the integrative model of Chi3l1 function. Both evaluations affirm this synthesis is well-supported by the collective evidence. OpenEval describes it as appropriate synthesis of major findings, while peer reviewers affirm the model is supported by convincing data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    },
+    {
+      "id": "f3bf78dd-ba9a-40c4-ba60-979f196fc049",
+      "submission_id": "7dc2c7fb-2d35-4952-aa5d-a0189a7a18cc",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "342591f4-e0ab-4c34-8eab-22506dde93c7",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background/context claims C61-C78 as supported by appropriate literature citations. No corresponding peer review evaluation found, as peer reviewers typically focus on novel experimental findings rather than background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:44:36.163269Z"
+    }
+  ]
+}

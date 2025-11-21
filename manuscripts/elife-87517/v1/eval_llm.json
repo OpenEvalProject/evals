@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SPRAWL is a novel statistical framework for detecting RNA subcellular localization patterns from multiplexed imaging datasets. The method assigns interpretable scores at single-cell resolution, aggregates these scores across cell-types with FDR control, and identifies peripheral, central, radial, and punctate localization patterns using rank-based and permutation-based statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C39 collectively describe the SPRAWL method's design, implementation, and statistical foundations. The method is well-documented with mathematical formulations (C37, C38, C39), demonstrates appropriate statistical rigor using the Lyapunov CLT, and is publicly available (C36). The approach is transparent and addresses key confounders like cell size and expression level (C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C51",
+      "C119",
+      "C122"
+    ],
+    "result": "SPRAWL demonstrates high reproducibility and specificity across biological replicates in multiple datasets. Median gene/cell-type scores show significant positive correlations (Pearson r > 0.47) between replicates, while permuted negative controls show no significant correlations and zero false positives after multiple testing correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C46, C51, C119, and C122 provide strong convergent evidence for SPRAWL's reproducibility and specificity. The correlation analysis (C40), permutation controls (C41-C42), cell boundary sensitivity analysis (C46), and consistency metrics (C51) collectively demonstrate robust performance. The perfect specificity on negative controls (C42, C122) is particularly compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C123"
+    ],
+    "result": "SPRAWL identifies extensive cell-type specific subcellular RNA localization across multiple mouse tissues. In the MOp dataset, 72-76% of gene/cell-type pairs show significant spatial patterning across all four metrics. Similar high percentages (51-88%) are observed in Vizgen Brainmap and Liver datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C60 and C123 provide comprehensive quantitative evidence across three independent datasets (MOp, Brainmap, Liver) showing pervasive subcellular localization. The consistency across datasets, metrics, and biological replicates (C58) strengthens the findings. Statistical corrections are appropriately applied (BH correction at \u03b1=0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C43",
+      "C44",
+      "C63",
+      "C64"
+    ],
+    "result": "RNA molecules show a strong general tendency toward punctate and radial clustering, with >99% of significant gene/cell-type groups having positive scores for these metrics. In contrast, peripheral and central localization patterns are more balanced, with 45-56% showing positive directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 and C43-C44 demonstrate a clear asymmetry between clustering metrics (punctate/radial) and boundary-relative metrics (peripheral/central). The >99% positive rate for punctate/radial patterns (C61) compared to ~50% for peripheral/central (C63-C64) is striking and well-documented. However, the authors acknowledge that imaging artifacts (calling one RNA as two) could inflate these scores.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "SPRAWL identifies 112 genes (44.4%) with globally consistent punctate and radial localization across all cell-types, including Cldn5 and Flt1 with extreme scores (>0.83). These genes encode proteins with known membrane localization functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 identify specific genes with consistent spatial patterns and provide biological context. The high SPRAWL scores for Cldn5 (0.84-0.85) and Flt1 (0.83) are well-documented (C66-C67), and the biological functions cited (C68-C71) are appropriately referenced. However, the functional significance of the RNA localization patterns themselves remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "SPRAWL detects cell-type dependent subcellular localization patterns, with 36-38% of genes showing opposite-directionality for peripheral/central metrics and ~55% showing cell-type dependent but not opposite-directionality patterning for these metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C77 quantify the extent of cell-type specific regulation. The percentages are clearly stated and based on statistical analysis of the BICCN dataset. The low percentages for radial (1%) and punctate (4%) opposite-directionality (C74-C75) are consistent with the general positive bias observed for these metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Integration of SPRAWL with ReadZS identifies 26 genes with significant correlations between 3' UTR length and subcellular localization (FDR 0.05), representing a twofold enrichment over chance. No significant correlations were found in the CZB kidney/liver dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C78-C80 describe the integration analysis and its results. The twofold enrichment (C79) provides evidence that the correlations are not random. However, the failure to detect correlations in the CZB dataset (C80) suggests the approach may have limited sensitivity or that the effect is dataset-specific. The statistical correction is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Slc32a1 shows significant negative correlation (R=-0.94, p<<0.05) between centrality score and 3' UTR length across cell-types. Slc32a1 is a GABAergic neuron marker encoding a synaptic vesicle membrane protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C81-C84 provide a specific example of 3' UTR-localization correlation. The correlation coefficient is very high (R=-0.94) and statistically significant (C81). The biological context (C82-C84) is well-documented with appropriate citations. The differential central localization is consistent with the protein's known synaptic vesicle localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Cxcl14 shows significant positive correlation (R=0.9, p<<0.05) between radial score and 3' UTR length. ReadZS predicts an unannotated shorter 3' UTR (~600 bp shorter) that is less radially clustered than the full-length isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C85-C91 document the Cxcl14 example with strong correlation (R=0.9) and identification of a novel 3' UTR isoform (C87). The biological context for Cxcl14 function is well-documented (C88-C91). The prediction of differential radial clustering based on 3' UTR length is a testable hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Nxph1 shows significant positive correlation (R=0.9, p<<0.05) between punctate score and 3' UTR length. Nxph1 is a secreted protein expressed in inhibitory neurons that binds to Nrxn1 at synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C92-C94 provide another example of 3' UTR-localization correlation with strong statistical support (R=0.9, p<<0.05). The biological context is appropriately cited (C93-C94). The authors note that neither differential 3' UTR lengths nor subcellular localization have been previously described for Nxph1, highlighting the discovery potential of SPRAWL.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Timp3 shows the largest variation in 3' UTR length between cell-types in the BICCN data, with significant negative correlation (R=-0.68, p<<0.05) between peripheral localization and 3' UTR length. The longer annotated isoform is less peripherally localized than shorter unannotated isoforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C95-C104 provide extensive documentation of Timp3 as a key example. The correlation is statistically significant (C103) though weaker than Slc32a1 or Cxcl14. The identification of unannotated but conserved 3' UTR isoforms (C7, C96) is well-supported by ReadZS analysis. The biological context (C97-C100) establishes relevance to disease.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Timp3 3' UTR regulation is conserved between mouse and human (96.2% similarity) and extends beyond brain to lung tissue. In human lung culture, Timp3 3' UTRs shorten over time, predicting a shift toward more peripheral localization based on the observed correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C113 extend the Timp3 analysis across species and tissues. The sequence conservation (C105-C106) and detection in human lung (C107-C108) strengthen the biological relevance. The prediction of peripheral shift during culture (C110) is a logical inference from the correlation data, though it remains untested in the lung system. The high conservation near alternative 3' UTR regions (C113) suggests functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "In human brain pericyte culture, Timp3 protein secretion remains constant (~350 molecules/cell/hour) while the ratio of distal to proximal 3' UTR RNA decreases 1.5-fold from 24-48 hours, indicating increased usage of the shorter 3' UTR isoform over time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 provide experimental validation of the Timp3 3' UTR shift hypothesis in a different cell type. The qPCR measurements (C116-C117) show clear temporal changes in 3' UTR isoform ratios. The constant protein secretion (C114) despite changing RNA levels suggests post-transcriptional regulation. However, the manuscript notes technical issues with qPCR primer efficiency and potential confounding from incomplete reverse transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C120"
+    ],
+    "result": "SPRAWL detects extensive cell-type specific subcellular RNA localization in mouse brain and to a lesser extent in mouse liver, demonstrating abundant cell-type specific RNA localization regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C120 summarize the main findings across tissues. The extensive localization in brain is well-documented by the detailed results (C47-C60). The lesser extent in liver (C4) is supported by the lower percentages of significant genes in some metrics (e.g., 51.4% radial in liver vs. 73.8% in MOp). This represents a major conclusion of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C121"
+    ],
+    "result": "SPRAWL predicts that 3' UTR regulation of subcellular localization may be more pervasive than currently known, based on the detection of differential patterning dependent on 3' UTR isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C121 represent a predictive conclusion based on the extensive findings. The prediction is reasonable given the 26 genes with significant correlations (C78) and the identification of novel 3' UTR isoforms (C7). However, this remains a hypothesis requiring further experimental validation. The authors appropriately acknowledge limitations including potential technical artifacts and incomplete annotation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work has established that subcellular RNA localization is necessary for cellular functions and is regulated by 3' UTR sequences, but the general importance and pervasiveness of RNA localization remains poorly understood despite case studies showing functional consequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C21 provide background context from prior literature. These are appropriately cited and establish the motivation for the study. The claims accurately represent the state of the field, noting both established examples (Actb, Cd47) and gaps in knowledge (C10, C18). This background supports the novelty and significance of the SPRAWL approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Existing approaches for detecting subcellular localization from high-throughput spatial datasets rely on co-stains, arbitrary thresholds, or compartment discretization without statistical formalism. No prior study has tested whether isoform regulation explains subcellular localization in multiplexed FISH datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 establish the limitations of prior methods and the novelty of SPRAWL. The criticisms of existing approaches (arbitrary thresholds in C25, discretization in C28) are well-founded and appropriately cited. The claim of novelty (C29) appears accurate based on the literature review. This establishes the methodological gap that SPRAWL addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "More than 96% of genes are alternatively spliced in mice and humans, and UTR regulation is pervasive but poorly annotated, making the identification of functional 3' UTR isoforms of high interest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C125 provide important context for the significance of the 3' UTR-localization correlations. The statistics are appropriately cited to recent work (Olivieri et al., 2021; 2022). This establishes why the SPRAWL findings have broad potential impact beyond the specific genes studied.",
+    "result_type": "MINOR"
+  }
+]

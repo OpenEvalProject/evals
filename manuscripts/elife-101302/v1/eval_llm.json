@@ -1,0 +1,229 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C12",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C67"
+    ],
+    "result": "Chronic heat exposure (90 min/day for 21 days at 38\u00b12\u00b0C) induces negative emotional valence and hyperarousal states in mice without causing depression-like behaviors or thermoregulatory dysfunction. Chronic heat-exposed mice exhibited increased stress (less time in open arms of elevated plus maze), decreased sociability (reduced interest in unfamiliar male mouse), decreased innate motivation (less engagement with female mouse), elevated aggression (decreased attack latency, increased attack duration), and exaggerated acoustic startle response. These behavioral changes were specific to chronic exposure, as acute heat exposure (90 min) did not produce similar effects when measured 1 day later. Body temperature remained normal, but body weight gain and food consumption were reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C17-C27, and C67 collectively demonstrate robust behavioral phenotyping across multiple validated tests (EPM, three-chamber, female encounter, resident-intruder, ASR) with appropriate controls. The distinction between acute and chronic exposure (C26) strengthens the conclusion. Statistical significance is reported for behavioral measures, and the absence of depression-like behaviors (C27) and thermoregulatory dysfunction (C17) appropriately delimits the phenotype. Sample sizes (n=10 per group) are adequate for behavioral studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C13",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C65",
+      "C72"
+    ],
+    "result": "Heat-responsive POA neurons project monosynaptically to pPVT via both excitatory and inhibitory innervations. Acute heat treatment (90 min) significantly increased c-Fos expression in both POA and pPVT neurons. Rabies virus retrograde tracing revealed that 84% of retrogradely labeled POA neurons overlapped with heat-induced c-Fos expression, and 93% of POA recipient pPVT neurons were activated by heat. Electrophysiological recordings demonstrated that 34.9% of pPVT neurons received both excitatory and inhibitory inputs from POA, 52.4% received only inhibitory inputs, and 12.7% received only excitatory inputs. These connections were confirmed as monosynaptic using TTX and 4-AP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C35, C65, and C72 provide converging anatomical and functional evidence using complementary techniques (c-Fos immunostaining, rabies virus tracing, optogenetics, and electrophysiology). The monosynaptic nature is rigorously demonstrated with TTX/4-AP experiments (C35). Quantification of overlap percentages (C29, C30) and proportions of connection types (C32-C34) is precise. The integration of anatomical tracing with functional activation (c-Fos) strengthens the conclusion that heat-responsive POA neurons specifically target pPVT.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C14",
+      "C68"
+    ],
+    "result": "POA recipient pPVT neurons exhibit persistent increases in baseline neural activity following chronic but not acute heat exposure. Fiber photometry recordings showed that both frequency and amplitude of calcium events increased during heat exposure on days 1 and 21 compared to pre-heat baseline. However, these increases disappeared the day after acute heat exposure (day 2), indicating transience. After 21 days of chronic heat exposure, the increased frequency of calcium events persisted even without heat exposure (day 22), while there were no differences in calcium event parameters between day 1 and day 21 during heat exposure itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39, C14, and C68 demonstrate longitudinal in vivo calcium imaging with appropriate temporal controls. The distinction between transient (acute) and persistent (chronic) activity changes is clearly established through repeated measurements at multiple timepoints. The finding that activity increases persist after chronic but not acute exposure (C37 vs C38) is critical for establishing long-term plasticity. Sample size (n=5 mice) is adequate for fiber photometry studies, and the stability of GCaMP signals over 21 days was validated (Figure 3\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C73"
+    ],
+    "result": "Chronic optogenetic activation of POA excitatory terminals in pPVT is sufficient to induce negative emotional valence and hyperarousal states. Acute optogenetic activation of this pathway induced aversive emotional valence (real-time place avoidance) and increased arousal (pupil dilation) without affecting locomotion. Chronic optogenetic activation (2 min on/2 min off, 20 min/day for 21 days) recapitulated the behavioral phenotype of chronic heat exposure, including increased stress, decreased sociability, decreased innate motivation, elevated aggression, and heightened acoustic startle response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48 and C73 provide strong causal evidence through optogenetic gain-of-function experiments. The chronic activation protocol appropriately mimics the temporal pattern of chronic heat exposure. The behavioral phenotype closely matches that observed with chronic heat (comparing Figure 4 to Figure 1), supporting sufficiency. Acute activation experiments (C40-C42) provide mechanistic insight into the pathway's function. Controls with EGFP-expressing mice are included. The pupil dilation data (C42) provides an objective measure of arousal state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C78"
+    ],
+    "result": "Optogenetic inhibition of POA recipient pPVT neurons during chronic heat exposure is necessary to prevent chronic heat-induced behavioral changes. Inhibition of these neurons (using eNpHR3.0, 3 min on/3 min off during 90 min heat exposure for 21 days) prevented the development of increased anxiety, decreased sociability, decreased innate motivation, elevated aggression, and heightened arousal state that normally result from chronic heat exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C78 provide strong causal evidence through optogenetic loss-of-function experiments during chronic heat exposure. The rescue of all major behavioral phenotypes (anxiety, sociability, motivation, aggression, arousal) establishes necessity. The experimental design appropriately targets the specific neuronal population (POA recipient pPVT neurons) using Cre-dependent inhibition. Controls with Dio-EGFP are included. Sample sizes (n\u22656) are adequate. This result, combined with the sufficiency data (C43-C48), establishes both necessity and sufficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C15",
+      "C55",
+      "C56",
+      "C57",
+      "C71",
+      "C84"
+    ],
+    "result": "POA recipient pPVT neurons exhibit exaggerated responses to stressful situations after chronic heat exposure, suggesting increased susceptibility to anxiety rather than persistent hyperarousal. In the elevated plus maze, chronic heat-exposed mice showed reduced entries into open arms, more frequent pausing at the center before returning to closed arms, higher probability of running (vs. walking) back to closed arms, and increased running speed. POA recipient pPVT neurons showed significantly larger calcium activity peaks when mice ran back to closed arms after chronic heat exposure. Context-dependent hyperactivity was observed when mice were reintroduced to the heat chamber but not in a novel chamber, with calcium activity correlated with fast running in the heat-associated context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C57, C15, C71, and C84 provide detailed behavioral analysis combined with simultaneous calcium imaging to link neural activity with specific behavioral states. The finding that heightened neural responses are context-dependent and associated with anxiety-related behaviors (running to closed arms) rather than general hyperlocomotion supports the interpretation of increased susceptibility. The comparison between heat-associated and novel chambers (C57) is a critical control. The correlation between calcium peaks and specific anxiety behaviors (C54, C56) provides mechanistic insight. This result refines the interpretation from persistent hyperarousal to increased susceptibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Chronic heat exposure induces both pre- and postsynaptic changes in pPVT neurons that enhance excitability. Both acute and chronic heat exposure increased mIPSC amplitude (but not frequency), suggesting enhanced postsynaptic inhibitory responses potentially as compensatory feedback. Chronic (but not acute) heat exposure specifically increased mEPSC frequency, indicating enhanced presynaptic excitatory transmission. Chronic heat-exposed pPVT neurons showed increased excitability (more action potentials in response to 30-70 pA current injections) and reduced rheobase for action potential generation. The net effect is increased excitation that surpasses compensatory inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62, C79-C81 provide comprehensive electrophysiological characterization of synaptic and intrinsic properties. The distinction between acute and chronic effects on mEPSCs (C60) is critical for understanding the specific adaptations to chronic heat. The interpretation of increased mIPSC amplitude as compensatory feedback (C79) is reasonable but speculative. The increased excitability (C61-C62) provides a cellular mechanism for the heightened neural activity observed in vivo. Sample sizes are adequate (n=16-20 neurons from 3-4 mice per group). The lack of changes in other intrinsic properties (Figure 6\u2014figure supplement 1) suggests specific adaptations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C16",
+      "C69",
+      "C82"
+    ],
+    "result": "The POA-pPVT excitatory pathway exhibits saturated neuroplasticity after chronic heat exposure, occluding further LTP induction. High-frequency optogenetic stimulation (30 Hz, three episodes at 20 s intervals) successfully induced LTP at POA-pPVT synapses in control mice (150\u00b118% of baseline lasting \u226530 min). However, the same protocol failed to induce LTP in chronic heat-exposed mice, suggesting the pathway was already potentiated to saturation during chronic heat exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64, C16, C69, and C82 provide strong evidence for long-term synaptic plasticity using an optogenetic LTP protocol. The occlusion of LTP induction after chronic heat exposure is a classic demonstration of pathway saturation. This result provides a mechanistic explanation for the increased excitatory transmission (C60) and heightened neural activity (C14, C38). The interpretation that the pathway was potentiated during chronic heat exposure (C82) is well-supported by the occlusion data. Sample sizes are adequate (14 neurons from 5 control mice, 18 neurons from chronic heat mice). The use of optogenetic stimulation allows specific targeting of the POA-pPVT pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C83"
+    ],
+    "result": "Long-term aberration in the POA to pPVT pathway offers a neurobiological mechanism for emotional and behavioral changes during extended periods of hot weather like heatwaves. The heightened activities of POA recipient pPVT neurons are critically involved in chronic heat-exposure-mediated negative emotional valence and hyperarousal states, rendering mice more susceptible to entering anxiety-like states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C83 represent the main conclusions synthesizing all experimental findings. The evidence from anatomical connectivity (C13, C31), activity changes (C14, C38), optogenetic manipulations (C43-C49), behavioral correlations (C54, C56), and synaptic plasticity (C64, C82) collectively support this mechanistic model. The interpretation appropriately integrates multiple levels of analysis from circuits to behavior. The translational relevance to heatwaves is reasonable given the experimental design mimicking extended heat exposure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Prior literature establishes that heatwaves are increasing in frequency and intensity, with documented effects on both physical and mental health. While heat acclimation can have beneficial effects, heatwaves are correlated with increased mortality and mental health problems. Current understanding focuses on HPA axis dysregulation and altered neurotransmitter levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 accurately summarize relevant prior literature with appropriate citations. These claims provide context for the study but do not represent new findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Prior literature establishes that the PVT is an integrative node for emotional processing that receives inputs from multiple brain regions including the POA, a known thermoregulatory center. The pPVT specifically receives projections from POA warm-sensitive neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 accurately summarize relevant prior literature on PVT and POA function with appropriate citations. These claims provide the rationale for investigating the POA-pPVT pathway but do not represent new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The chronic heat exposure protocol (90 min/day for 21 days at 38\u00b12\u00b0C) did not impact thermoregulatory function in mice, as body temperature remained normal the day after exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is supported by body temperature measurements (Figure 1\u2014figure supplement 1A-B) showing no differences between control and chronic heat groups. This is an important control demonstrating that the behavioral effects are not due to thermoregulatory dysfunction. However, the measurement was only taken the day after exposure, not during exposure, which limits interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Prior studies have shown that long-term heat exposure renders POA neurons tonically active, PVT neurons show stronger activation after repeated stress, acute stress-mediated disinhibition of pPVT induces anxiety, and inhibition of stress-activated neurons prevents abnormal behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 accurately cite relevant prior literature that supports the current findings. These claims provide context for interpreting the results but do not represent new findings from this study.",
+    "result_type": "MINOR"
+  }
+]

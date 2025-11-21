@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "HpARI1 and HpARI2 bind DNA while HpARI3 does not, with HpARI1 showing reduced DNA-binding ability (50% binding) compared to HpARI2. HpARI2 suppresses IL-33 release via DNA tethering, while HpARI1 shows a non-significant trend and HpARI3 lacks this ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C40-C43 are supported by EMSA experiments (Figure 1D-E) and western blot analysis (Figure 1C). The differential DNA-binding abilities are clearly demonstrated with quantification showing HpARI1 binds only 50% of DNA. The IL-33 tethering function correlates with DNA binding, though HpARI1's effect did not reach statistical significance in the experiment shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C44",
+      "C45",
+      "C47"
+    ],
+    "result": "DNA-binding ability is localized to the CCP1 domain and can be transferred through domain-swapped chimeras between HpARI2 and HpARI3. HpARI3:2 (with HpARI3 CCP1) lacks DNA binding while HpARI2:3 (with HpARI2 CCP1) shows DNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C44, C45, C47 are well-supported by domain-swap experiments shown in Figure 1F-G. The EMSA data clearly demonstrate that DNA binding follows the source of the CCP1 domain, providing strong evidence that this domain is both necessary and sufficient for DNA binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "IL-33 tethering does not correlate with suppression of IL-33-induced responses at 24 hours. HpARI2:3 amplifies IL-33 responses despite tethering IL-33, while HpARI3:2 suppresses responses despite lacking tethering ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by comparing IL-33 tethering at 15 min (Figure 2B) with downstream responses at 24 hr (Figure 2D-H). This unexpected finding challenges the DNA tethering model and is a critical observation that led to the investigation of alternative mechanisms (HS binding). The data are internally consistent and statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "HpARI2 retains suppressive activity when administered 3 days prior to allergen, while HpARI3:2 only suppresses when administered 24 hr prior. The in vivo half-life is controlled by the CCP1 domain, with HpARI3 CCP1 conferring shorter half-life than HpARI2 CCP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by time-course experiments in Figure 3B-E showing differential persistence of activity. The data demonstrate that HpARI2 maintains activity at day -3 while HpARI3:2 loses activity, directly supporting the conclusion that CCP1 domain controls in vivo half-life. Statistical significance is shown for multiple readouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "HpARI1 and HpARI2 bind to heparan sulphate (HS) while HpARI3 does not. This is demonstrated by gel filtration, heparin-agarose pull-down, and cell binding assays showing HpARI1/2 bind to CD45-negative stromal cells but HpARI3 does not bind any lung cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C68-C71, C73-C75 are supported by multiple orthogonal binding assays (Figure 4A-C). The gel filtration shows differential elution, pull-down assays show selective binding, and cell-binding assays demonstrate interaction with stromal cells. The convergence of multiple independent methods provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "HpARI1 has an affinity for HS of 9.6 \u03bcM, HpARI2 has an affinity of 4.2 \u03bcM, and no binding could be detected between HpARI3 and HS by isothermal calorimetry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by isothermal calorimetry experiments (Figure 4D-F) that provide quantitative binding affinities. The Kd values are clearly reported with stoichiometry (N) values near 1, indicating specific binding. The lack of binding for HpARI3 is also clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "HpARI1 and HpARI2 contain a strongly positively charged surface in their CCP1 domains formed by five arginine residues, which acts as a non-specific binding site for negatively charged molecules including DNA and HS. HpARI3 lacks this charged surface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C79-C83 are supported by AlphaFold2 structural modeling and electrostatic surface analysis (Figure 5A) combined with molecular docking experiments (Figure 5B-C). The structural predictions are consistent with the experimental binding data. However, these are computational predictions rather than experimentally determined structures, which introduces some uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C92"
+    ],
+    "result": "A pentaR mutant of HpARI2 lacking five arginine residues retains IL-33 suppressive activity but loses DNA and HS binding, and has a shorter in vivo half-life than wild-type HpARI2. This demonstrates that the positively charged patch lengthens half-life via binding to DNA and HS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87, C92 are supported by experiments with the HpARI2_pentaR mutant (Figure 6). The mutant shows identical IL-33 binding (Figure 6A) but lacks DNA/HS binding (Figure 6B-C) and has reduced in vivo activity at day -3 (Figure 6D-H). This structure-function analysis provides strong causal evidence linking the charged patch to half-life extension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C88",
+      "C89",
+      "C114"
+    ],
+    "result": "Extracellular matrix binding through HS interactions extends the in vivo half-life of HpARI2 at the site of administration, representing a novel mechanism for controlling protein persistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C88, C89, C114 represent the main conclusion supported by the convergence of multiple lines of evidence: HS binding assays (Figure 4), domain-swap experiments (Figure 3), and pentaR mutant analysis (Figure 6). The data consistently show that HS binding correlates with extended half-life.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "HpARI2:3 and HpARI3:2 fusion proteins retain the IL-33 modulation activities of their CCP2/3 domains, with small alterations in potency when CCP1 domains are swapped (HpARI2:3 EC50=21.5 ng/ml vs HpARI3 EC50=1.2 ng/ml; HpARI3:2 IC50=1.1 ng/ml vs HpARI2 IC50=1.9 ng/ml).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 are supported by in vitro ILC2 assays (Figure 2A) showing dose-response curves with calculated EC50/IC50 values. The fusion proteins retain their expected activities based on CCP2/3 domains, with modest changes in potency. The data are quantitative and reproducible across three biological replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "HpARI2 and HpARI2:3 tether IL-33 and reduce its release when co-administered with Alternaria, while HpARI3 and HpARI3:2 slightly increase IL-33 levels in BAL, possibly due to stabilization of soluble cytokine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by western blot analysis (Figure 2B) showing differential IL-33 levels at 15 min. The tethering by HpARI2/HpARI2:3 is consistent with DNA binding, while the slight increase with HpARI3/HpARI3:2 is speculative but reasonable given their IL-33 binding without DNA tethering.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "HpARI1 has lower affinity for DNA and HS compared to HpARI2, binding only 50% of DNA in EMSA assays. This may allow HpARI1 to remain partially in solution and diffuse further from the site of deposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is supported by EMSA (Figure 1E) and ITC data (Figure 4D-E) showing weaker binding. However, claim C103 about functional significance is purely speculative without experimental evidence of differential diffusion or spatial activity patterns. The hypothesis is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C91",
+      "C93",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The authors propose a model where HpARI1/2 have long-lasting effects due to HS/DNA binding that prevents diffusion and maintains local concentration, while HpARI3 lacks these interactions and diffuses freely to amplify IL-33 responses at distal sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15, C16, C91, C93, C107-C109 represent a proposed mechanistic model based on the experimental data. While the model is consistent with the observations (HS binding correlates with half-life), direct evidence for spatial localization, prevention of diffusion, or distal effects is lacking. The model is plausible but requires further validation, particularly regarding HpARI3's proposed role in amplifying distal regulatory responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Background claims establishing that H. polygyrus bakeri secretes the HpARI family of CCP domain proteins that bind IL-33 with opposing effects (HpARI1/2 suppress, HpARI3 amplifies), and that IL-33 is a pleiotropic cytokine with context-dependent pro-allergic or anti-inflammatory activities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C17-C37 are background information supported by previous publications (Osbourn et al., 2017; Jamwal et al., 2023; Colomb et al., 2024) and established knowledge about IL-33 biology. These provide essential context for the current work and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "HpARI2 dose-dependently suppresses ILC2 responses in vitro while HpARI3 amplifies them, as measured by IL-5 production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by in vitro ILC2 assays (Figure 2A) and previous work (Colomb et al., 2024). The dose-response curves clearly show opposing effects with appropriate controls and replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "The authors hypothesized that altered activity of fusion proteins could be due to their effective half-life in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 represents a hypothesis that was subsequently tested and supported by experiments in Figure 3. This hypothesis-driven approach led to the key findings about CCP1 domain control of half-life.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C72"
+    ],
+    "result": "Background claims about extracellular DNA levels, HS localization, and precedent for CCP domain protein interactions with HS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C72 are supported by cited literature (Curren et al., 2023; Mark et al., 2006; Schmidt et al., 2008; Xu and Esko, 2014) and provide rationale for investigating HS binding by HpARI proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Discussion claims comparing HpARI2 to therapeutic antibodies, citing precedent for HS binding by cytokines and therapeutic proteins, and speculating about broader applicability to other helminth immunomodulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C95-C101, C111-C113 are discussion points that place the findings in broader context. Claims C95-C98, C100, C112 are supported by cited literature. However, claims C94, C99, C111 are speculative comparisons or extrapolations without direct experimental support. These are reasonable interpretations but represent hypotheses rather than demonstrated facts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C90",
+      "C104",
+      "C105",
+      "C106",
+      "C110"
+    ],
+    "result": "Discussion claims about evolutionary selection of Hp-TGM proteins, context-dependent IL-33 effects in parasitic infection, and technical limitations of nematode transgenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C104-C106, C110 are supported by cited literature and provide context for interpreting the HpARI family's diverse functions. These are well-established concepts in the field.",
+    "result_type": "MINOR"
+  }
+]

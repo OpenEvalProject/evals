@@ -1,0 +1,318 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Cesium (Cs+) effectively blocks Ih current in pyloric neurons at both 11\u00b0C and 21\u00b0C, with 93\u00b130% reduction at 11\u00b0C and 78\u00b120% reduction at 21\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C42 provide direct voltage clamp measurements with appropriate statistical tests (paired Student's t-test, p<0.05) demonstrating significant Ih reduction by Cs+ at both temperatures. The measurements include appropriate sample sizes (4-5 cells) and are consistent with the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C38",
+      "C39"
+    ],
+    "result": "Under control conditions, pyloric rhythm frequency increases monotonically with temperature from 11\u00b0C to 21\u00b0C while maintaining constant phase relationships of PD, LP, and PY neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C38, and C39 are supported by experimental data shown in Figure 1 and are consistent with prior literature (Tang et al., 2010; Soofi et al., 2014). The monotonic frequency increase and phase constancy are well-documented baseline behaviors of the pyloric rhythm.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Blocking Ih with Cs+ reduces the temperature sensitivity of pyloric frequency, decreasing Q10 from ~1.75 to ~1.35, with the effect becoming more pronounced at higher temperatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C43-C49 are supported by systematic measurements across temperatures with appropriate statistical tests (paired Student's t-test, p<0.001). Control experiments with consecutive saline temperature changes (C46-C49) rule out sequential temperature change artifacts. The data in Figure 1 clearly demonstrate the diminished frequency-temperature sensitivity in Cs+.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In Cs+, pyloric frequency exhibits non-monotonic 'jag' dynamics during temperature transitions: frequency decreases during temperature increases (31.4\u00b115% of cycles) and increases during temperature stability (27.6\u00b16% of cycles), with the decrease due to elongation of the depolarizing phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C50-C54 are supported by detailed analysis of frequency dynamics during temperature transitions (Figures 2 and 3) with appropriate statistical tests (paired Student's t-test, N=21, p<0.001). The mechanistic insight about depolarizing phase elongation (C51) is supported by aligned cycle analysis in Figure 2C. This is a novel finding not previously reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "When the pacemaker is isolated by picrotoxin (Cs++PTX), frequency jags persist but the temperature-induced frequency increase recovers to control levels, indicating that jags originate from pacemaker intrinsic properties while the diminished frequency increase requires follower neuron feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C12, C56-C62 are supported by systematic comparison of three conditions (control, Cs+, Cs++PTX) with appropriate statistical tests (one-way repeated measures ANOVA, N=6, p<0.01). Figure 4 clearly demonstrates the differential effects on jags versus steady-state frequency increase. The experimental design appropriately isolates pacemaker from network effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Cs+ application at 11\u00b0C phase advances PD offset, LP onset, and LP offset, with LP advancing more than expected from PD offset alone. LP duty cycle is preserved while PY phase remains unchanged. In period-matched samples, LP fires 91\u00b168 ms earlier in Cs+ while PD burst duration is only 51\u00b130 ms shorter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C63-C74 are supported by detailed phase analysis with appropriate statistical tests (paired Student's t-test, Wilcoxon signed-rank test, N=21, p<0.05). Figure 5 and Table 1 provide comprehensive phase measurements. The period-matched analysis (C71-C74) strengthens the conclusion that LP advance is not simply due to period changes. However, the mechanism remains unclear (acknowledged in C125).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "LP phase further advances with increasing temperature in Cs+ (LP ON: 0.05\u00b10.05 per 10\u00b0C; LP OFF: 0.14\u00b10.09 per 10\u00b0C), while PD and PY phase constancy is maintained. In control, only LP OFF modestly advances (0.07\u00b10.07 per 10\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C75-C79 are supported by systematic phase measurements across temperatures with appropriate statistical tests (Wilcoxon signed-rank test, N=21, p<0.01, Bonferroni-adjusted). Figure 6 clearly demonstrates the temperature-dependent phase changes. The finding that LP is most sensitive to temperature and further advances in Cs+ is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C80",
+      "C81",
+      "C82",
+      "C100",
+      "C111",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Ih plays dual roles in temperature response: transiently, it prevents non-monotonic jags through intrinsic neuronal properties; persistently, it maintains temperature-induced frequency increases through network feedback mechanisms. Without Ih, the pyloric network cannot reliably produce typical smooth frequency responses to temperature changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C14, C80-C82, C100, C111, C134-C136 represent the main conclusions synthesized from all experimental observations. The dual role of Ih (transient vs. persistent, intrinsic vs. network) is well-supported by the Cs++PTX experiments that dissociate these effects. The conclusions appropriately integrate data from frequency dynamics, phase analysis, and network manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The frequency jags may result from differential temperature sensitivities of IA channel state transitions (activation, inactivation, deinactivation), with Ih normally obscuring these dynamics. The ~30-60 second timescale suggests longer-timescale processes than previously recognized, possibly from interactions between multiple channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83, C85-C96 present mechanistic hypotheses about IA involvement and timescale processes. While the timescale observation (C86) is supported by data in Figures 2 and 4, the IA mechanism (C89-C93) is explicitly stated as a hypothesis without direct experimental validation. The speculation is reasonable given IA's known properties and correlations with Ih, but requires future experimental testing (voltage clamp of IA, modeling studies).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The non-monotonic frequency response in Cs+ represents a 'non-minimum phase dynamic' from control theory, which biological systems typically avoid to ensure robust responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 appropriately apply control theory concepts to interpret the experimental observations. The citations to control theory literature (Franklin and Powell, 2002; Khammash, 2016) support the theoretical framework. This provides valuable conceptual context for understanding why Ih may have evolved to prevent such dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The larger effect of Cs+ at higher temperatures is consistent with temperature-dependent Ih increase. The pacemaker kernel can increase frequency with temperature without Ih, but follower neuron feedback limits this increase when Ih is blocked, potentially through LP phase advance effects on phase response curves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C110 present mechanistic interpretations of the Cs++PTX results. While the observations are well-supported (C104, C105), the mechanistic explanations involving PRC shifts (C106-C110) are speculative and rely on indirect evidence from prior studies. The proposed mechanism is plausible but requires direct PRC measurements in Cs+ conditions for validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "LP phase advance in Cs+ exceeds expectations from PD offset advance and period changes, persisting even in period-matched samples. This contradicts predictions from phase constancy models and differs from prior studies in Panulirus interruptus. The mechanism remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C125 document a puzzling observation that contradicts existing models. The experimental evidence (period-matched analysis, C116) is solid, and the authors appropriately acknowledge the limitation (C125). The discussion of synaptic depression (C117-C118) and phase constancy models (C121-C124) demonstrates thorough consideration of alternative explanations. This represents an important unresolved finding requiring future investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "While Cs+ can block other channels, the effects observed in this preparation are primarily attributable to Ih block based on lack of frequency increase or depolarization that would indicate effects on other K+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 appropriately address potential confounds of Cs+ specificity. The reasoning is sound: voltage-dependent block (C128), lack of expected effects from K+ channel block (C129), and prior work in this preparation (C127, Zhu et al., 2016) support the conclusion. However, this remains a limitation as more specific Ih blockers (e.g., ZD7288) were not used.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Substantial animal-to-animal variability in Cs+ effects likely stems from degeneracy in current combinations that produce the pyloric pattern, with some combinations relying more on Ih for temperature responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C133 acknowledge and interpret the observed variability. The explanation based on degeneracy is well-supported by extensive prior literature (Alonso and Marder, 2019; Schulz et al., 2006; Prinz et al., 2004). This represents an honest assessment of biological variability and its implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40"
+    ],
+    "result": "Background context on motor systems, Ih function, pyloric rhythm organization, and prior temperature studies establishes the rationale for investigating Ih's role in temperature responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C40 provide appropriate background context supported by extensive citations to prior literature. These establish the biological relevance of the study and identify the knowledge gap (C40: whether Ih increase is necessary for normal temperature responses). The background is accurate and well-integrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Methodological details including animal source, age, acquisition dates, temperature control equipment, and spike sorting software are documented.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C142 provide essential methodological details for reproducibility. The use of biological replicates (C140), specific equipment models (C141), and validated spike sorting software (C142, Crabsort) are appropriate. These details support the rigor of the experimental approach.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2275 @@
+{
+  "submission": {
+    "id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T19:55:08.608819Z",
+    "updated_at": "2025-11-21T19:55:08.608819Z"
+  },
+  "content": [
+    {
+      "id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "content_type": "manuscript",
+      "content_text": "# Wide transition-state ensemble as key component for enzyme catalysis\n\n## Authors\n\n- Gabriel E Jara<sup>1</sup> ([ORCID: 0000-0002-5831-1392](https://orcid.org/0000-0002-5831-1392))\n- Francesco Pontiggia<sup>2</sup>\n- Renee Otten<sup>2</sup>\n- Roman V Agafonov<sup>2</sup>\n- Marcelo A Mart\u00ed<sup>3</sup> ([ORCID: 0000-0002-7911-9340](https://orcid.org/0000-0002-7911-9340)) \u2020\n- Dorothee Kern<sup>2</sup> ([ORCID: 0000-0002-7631-8328](https://orcid.org/0000-0002-7631-8328)) \u2020\n\n### Affiliations\n\n1. Departamento de Qu\u00edmica Inorga\u0301nica, Anal\u00edtica y Qu\u00edmica-F\u00edsica (INQUIMAE-CONICET), Universidad de Buenos Aires Buenos Aires Argentina ([ROR:0081fs513](https://ror.org/0081fs513))\n2. Howard Hughes Medical Institute, Department of Biochemistry, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))\n3. Departamento de Qu\u00edmica Biol\u00f3gica (IQUIBICEN-CONICET), Facultad de Ciencias Exactas y Naturales, Universidad de Buenos Aires Buenos Aires Argentina ([ROR:0081fs513](https://ror.org/0081fs513))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransition-state (TS) theory has provided the theoretical framework to explain the enormous rate accelerations of chemical reactions by enzymes. Given that proteins display large ensembles of conformations, unique TSs would pose a huge entropic bottleneck for enzyme catalysis. To shed light on this question, we studied the nature of the enzymatic TS for the phosphoryl-transfer step in adenylate kinase by quantum-mechanics/molecular-mechanics calculations. We find a structurally wide set of energetically equivalent configurations that lie along the reaction coordinate and hence a broad transition-state ensemble (TSE). A conformationally delocalized ensemble, including asymmetric TSs, is rooted in the macroscopic nature of the enzyme. The computational results are buttressed by enzyme kinetics experiments that confirm the decrease of the entropy of activation predicted from such wide TSE. TSEs as a key for efficient enzyme catalysis further boosts a unifying concept for protein folding and conformational transitions underlying protein function.\n\n## Introduction\n\nUnderstanding the underlying physical mechanism of the impressive rate accelerations achieved by enzymes has been a central question in biology. Transition-state (TS) theory has provided the fundamental framework since the rate of a reaction is dictated by the free-energy difference between the ground state and TS (Truhlar, 2015). A wealth of research has led to the general notion that enzymatic rate acceleration is due to the enzymes\u2019 much higher affinity to the TS relative to its substrates. This idea has been supported experimentally by the high affinities measured for transition-state analogs (TSA) relative to substrates, leading to the design of TSA as high-affine enzyme inhibitors (Lienhard, 1973; Schramm, 2007). Since the TS represents a maximum in the free-energy landscape, its structure cannot be determined directly due to its low probability and ephemeral nature, TSA-bound species have been extensively used as structural proxies.\n\nThe classic TS theory and structural visualization of enzyme/TSA complexes lead to a current view of quite unique structures on the dividing surface at the maximum in the free-energy landscape. In contrast, it is now generally accepted that proteins are large ensembles of conformations, a concept rooted in pioneering work by Frauenfelder and coworkers for protein function, in analogy to the ensemble/funnel concept of protein folding (Frauenfelder and Wolynes, 1985). Consequently, enzyme\u2013substrate (ES) complexes \u2013 experimentally accessible as minima in the free-energy landscape \u2013 are composed of a vast ensemble of molecular configurations due to their macromolecular nature. Hence, catalysis by pathing through exclusive TS\u2019s would pose a huge entropic bottleneck/energy barrier for enzyme-catalyzed reactions.\n\nMotivated by this consideration, together with the marginal outcomes in current enzyme design relative to the catalytic power of naturally evolved enzymes, we set out to investigate the atomistic nature of TSs of the chemical step in an enzymatic cycle and its implication for rate acceleration by combining quantum-mechanics/molecular-mechanics (QM/MM) calculations and experiments. We take advantage of the groundbreaking work on TS theory by QM simulation developed in the field (Kamerlin et al., 2013; Masgrau and Truhlar, 2015; Warshel and Bora, 2016; Zinovjev and Tu\u00f1\u00f3n, 2017), well summarized in several reviews (Cui, 2016; Senn and Thiel, 2009; van der Kamp and Mulholland, 2013). We chose a phosphoryl-transfer (P-transfer) reaction due to its impressive enzymatic rate acceleration, as the uncatalyzed reactions have extremely high-energy barriers (Kerns et al., 2015; Lassila et al., 2011). The chemical rationale for these high barriers and reasons as to why P-transfer reactions are ubiquitous in living organisms and are involved in almost all essential biological processes is elegantly discussed in a fundamental paper by Westheimer in 1987: \u2018Why nature chose phosphates\u2019 (Westheimer, 1987). The central role of enzyme-catalyzed P-transfer reactions in biology (i.e., genetic code, energy storage, signaling, and compartmentalization) has led to extensive discussions and controversies of how enzymes catalyze these vital reactions so efficiently (Allen and Dunaway-Mariano, 2016; Kamerlin et al., 2013; Kerns et al., 2015; Lassila et al., 2011; Pabis et al., 2016; Westheimer, 1987). Here, we combine QM/MM calculations with experimental temperature- and pH-dependent kinetic studies and X-ray crystallography of adenylate kinase (Adk) to shed light on the question of TS structures for the chemical step in its catalytic cycle. While QM/MM methods have been extensively applied to study enzymatic reactions, yielding accurate and detailed descriptions of the molecular events during catalysis (Acevedo and Jorgensen, 2010; Cheng et al., 2005; Dinner et al., 2001; Hahn et al., 2015; Hirvonen et al., 2020; Karplus and Kuriyan, 2005; Lai and Cui, 2020a; L\u00f3pez-Canut et al., 2011; Mones et al., 2013; Palermo et al., 2015; Rosta et al., 2014; Roston et al., 2018; Roston and Cui, 2016; Schwartz and Schramm, 2009; Senn and Thiel, 2009; Turjanski et al., 2009), we test here the reaction free-energy profiles (FEPs) from simulations subsequently by designed experiments. We deliver a revised notion of TS stabilization by the enzyme through our discovery of a structurally broad transition-state ensemble (TSE).\n\n## Results\n\nAdk is an extensively studied phosphotransferase that catalyzes the reversible, roughly isoenergetic conversion of two ADP molecules into ATP and AMP (Figure 1A, B), thereby maintaining the cellular concentrations of these nucleotides (Dzeja and Terzic, 2009). It is an essential enzyme found in every cell and organism. Extensive structural, dynamic, and kinetic studies led to a comprehensive picture of the overall Adk reaction mechanism and its underlying energy landscape (Figure 1A; Beckstein et al., 2009; Berry et al., 1994; Berry et al., 2006; Henzler-Wildman et al., 2007; Kerns et al., 2015; M\u00fcller et al., 1996; M\u00fcller and Schulz, 1992; Wolf-Watz et al., 2004). The conformational change of the AMP- and ATP-lids closing and opening is crucial in the enzymatic cycle: Lid-closing positions the two substrates and the active-site residues for efficient chemistry (i.e., P-transfer) and prohibits the alternative, energetically favorable reaction of phosphoryl hydrolysis (Kerns et al., 2015). Lid-opening, essential for product release, and not P-transfer is the rate-limiting step in the catalytic cycle and Mg2+ accelerates both steps (Kerns et al., 2015). Here, we investigate the actual P-transfer step computationally, followed by experimental testing of our computational results. This chemical step would take about 7000 years without the enzyme (Stockbridge and Wolfenden, 2009) compared to >5000 s\u22121 with the enzyme (Kerns et al., 2015).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-v1.jpg)\n\n**Figure 1.:** (A) Complete reaction scheme with corresponding illustrative free-energy landscape highlighting the chemical phosphoryl-transfer step (modified from Kerns et al., 2015). Protein structures shown are apo Adk in the open conformation and Adk in the closed conformation with two bound ADP molecules and one Mg2+ atom (active-site arginine side chains are shown in stick representation). (B) Phosphoryl-transfer step is drawn with corresponding distances used to define the reaction coordinate as used in panels D, E. (C) Free-energy profiles for the Adk-catalyzed interconversion of ADP\u2013ADP into ATP\u2013AMP in the absence (blue) and presence of Mg2+ (orange) from QM/MM calculations. AD(T)P is fully charged for the reaction with Mg2+, and singly protonated on one ADP \u03b2-oxygen for reaction without Mg2+. The reaction coordinate is defined as the difference between the distance of the leaving oxygen to the transferring phosphorus d(Oleaving \u2212 P) and the distance of the attacking oxygen to the transferring phosphorus d(Oattacking \u2212 P). Distance between acceptor and leaving oxygens along the reaction coordinate in the presence (E) and in the absence (D) of Mg2+. The transition-state regions in C\u2013E are highlighted in orange and gray, respectively.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** The QM subsystem is shown in CPK representation and the MM subsystem is in lines representation.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Comparison of ADPs, main amino acids and Mg2+ ion in the active site against the crystallographic model in green (starting structure for QM/MM as ball and stick), (B) zoom-in showing Mg2+ ion coordinated by water molecules and the phosphates, and (C) the Adk backbone of the starting model (cyan) and the crystallographic structure (green) with a backbone RMSD of 0.98 \u00c5.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Free-energy profile (FEP) for the forward (solid gray line) and backward (solid blue line) reactions for the nonprotonated system in the presence of Mg2+.The dashed lines are the standard deviation for the forward and backward reactions in gray and blue, respectively. Works profiles obtained for the forward (B) and backward (C) reactions.\n\n![Figure 1\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp4-v1.jpg)\n\n**Figure 1\u2014figure supplement 4.:** (A) Free-energy profile for the forward (solid gray line) and backward (solid blue line) reactions for the monoprotonated system with Mg2+.The dashed lines are the standard deviation for the forward and backward reactions in gray and blue, respectively. Works profiles obtained for the forward (B) and backward (C) reactions.\n\n![Figure 1\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp5-v1.jpg)\n\n**Figure 1\u2014figure supplement 5.:** (A) Free-energy profile for the forward (solid gray line) and backward (solid blue line) reactions for the monoprotonated system without Mg2+.The dashed lines are the standard deviation for the forward and backward reactions in gray and blue, respectively. Works profiles obtained for the forward (B) and backward (C) reactions.\n\n![Figure 1\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig1-figsupp6-v1.jpg)\n\n**Figure 1\u2014figure supplement 6.:** Reaction coordinate is the same as in Figure 1. (A) Superposition of the forward and backward free-energy profiles. (B) The free-energy profile as result of the combination of the forward and backward free-energy profiles. The transparent pink region shows the transition-state region. (C) Distance between acceptor and leaving oxygens along the reaction coordinate in the presence of Mg2+. The transition-state region is highlighted in pink. (D, E) Diagram of (Jencks, 1972; O\u2019Ferrall, 1970) from the simulations, plotting the two P\u2013O distances involved in the P-transfer for the reaction with Mg2+, using DFT level at the quantum-mechanics (QM) region (PT for transferring phosphate). The theoretical transition pathways for a tight, synchronous, and loose transition state are shown in E (as defined in Roston and Cui, 2016).\n\n### QM/MM calculations of the P-transfer step in Adk\n\nIn order to shed light on the mechanism by which Adk from Aquifex aeolicus catalyzes the phosphoryl-transfer reaction by more than 12 orders of magnitude (Kerns et al., 2015), we performed QM/MM simulations starting with two ADP molecules and Mg2+ bound in the active site. The starting structures for the simulations were prepared using the X-ray structure of Adk in complex with Ap5A (P1,P5-Di(adenosine-5\u2032) pentaphosphate) and coordinated to Zn2+ (2RGX; Henzler-Wildman et al., 2007). ADP\u2013ADP coordinates were built using Ap5A as a template and Zn2+ was replaced by Mg2+. For the QM/MM simulations, the QM region was defined as the diphosphate moiety of both ADP molecules, the Mg2+ ion, plus the four coordinating water molecules. The rest of the system was described at molecular-mechanics level using the AMBER ff99sb force field (Hornak et al., 2006) and was solvated with TIP3P water molecules (Figure 1\u2014figure supplement 1).\n\nThe equilibrated starting structures agree well with the X-ray structures of the enzyme bound to Mg2+/ADP (4CF7; Kerns et al., 2015; Figure 1\u2014figure supplement 2). Steered molecular dynamics simulations were run in both the forward (ADP/ADP to ATP/AMP) and reverse direction (ATP/AMP to ADP/ADP) with Mg2+ present in the active site (Figure 1\u2014figure supplement 3). Since it is unknown whether the fully charged or monoprotonated nucleotide (on one \u03b2-ADP oxygen) state is the more reactive configuration, we performed QM/MM simulations for both cases. FEPs of the P-transfer were determined using Multiple Steered Molecular Dynamics and Jarzynski\u2019s Relationship (Crespo et al., 2005; Jarzynski, 1997; Ram\u00edrez et al., 2014; Figure 1C, Figure 1\u2014figure supplements 3\u20135). The results reveal a much smaller free energy of activation for the fully charged nucleotide state (\u0394fG\u2021 of 13 \u00b1 0.9 kcal/mol) relative to monoprotonated state (\u0394fG\u2021 of 23 \u00b1 0.9 kcal/mol) (Table 1); hence, we conclude that this is the most reactive enzyme configuration.\n\n**Table 1.**\n Free-energy profile estimates of the free-energy parameters of the reaction, using self-consistent charge-density functional tight-binding (SCC-DFTB) (all values in kcal/mol).\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>With Mg2+</th>\n      <th>Without Mg2+</th>\n      <th>With Mg2+, ADP monoprotonated</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>\u0394G*</td>\n      <td>\u22126 (1.7)</td>\n      <td>+4 (2.5)</td>\n      <td>+6 (1.9)</td>\n    </tr>\n    <tr>\n      <td>\u0394fG\u2020</td>\n      <td>13 (0.9)</td>\n      <td>34 (1.6)</td>\n      <td>23 (0.9)</td>\n    </tr>\n    <tr>\n      <td>\u0394bG\u2020</td>\n      <td>20 (0.8)</td>\n      <td>30 (0.9)</td>\n      <td>18 (0.9)</td>\n    </tr>\n    <tr>\n      <td>\u03be(TS)</td>\n      <td>\u22120.5 to 0.7 \u20210.0 to 0.2</td>\n      <td>\u22120.2 to 0 \u2021\u22120.1</td>\n      <td>\u22120.3 to \u22120.1 \u2021Not calculated</td>\n    </tr>\n    <tr>\n      <td>\u03b6(TS)</td>\n      <td>165 to 190</td>\n      <td>165 to 180</td>\n      <td>170 to 180</td>\n    </tr>\n  </tbody>\n</table>\n\n_\u03be(TS) is the range of the reaction coordinate in the TSE (in \u00c5); \u03b6(TS) is the improper dihedral angle of the transferring phosphate in the TS. The estimated errors of the free energies are in parenthesis and are computed as described in Materials and methods.*overall reaction free energy.\u2020activation free energy of the forward reaction; activation free energy of the backward reaction.\u2021Values were analyzed by a visual analysis of the multiple steered molecular dynamics (MSMD) trajectories, no committor distribution were calculated._\n\nWhen the calculations were repeated in the absence of Mg2+ (with the nucleotide monoprotonated, since the fully charged nucleotide state prohibited the reaction), a large increase in the free-energy activation barrier was observed relative to the Mg2+-bound system (Figure 1C, Figure 1\u2014figure supplement 5, \u0394fG\u2021 of 34 \u00b1 1.6 kcal/mol), in agreement with expectations from experiments (Kerns et al., 2015). We note that only a lower limit for the overall acceleration by Mg2+ (>105-fold) could be estimated from published results (Kerns et al., 2015), since the P-transfer was too fast to be measured experimentally in the presence of Mg2+.\n\nDuring revision, we tested the accuracy and robustness of our results from our original QM/MM level of theory by employing higher-level pure DFT(PBE) free-energy calculations similar to the approaches used by Ganguly et al., 2020; Figure 1\u2014figure supplement 6. The results are in excellent agreement with the FEPs obtained before (Figure 1C, E; Figure 2A, C) thus further supporting the computational results.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig2-v1.jpg)\n\n**Figure 2.:** Diagram of (Jencks, 1972; O\u2019Ferrall, 1970) from the quantum-mechanics/molecular-mechanics (QM/MM) simulations, plotting the two P\u2013O distances involved in the P-transfer for the reaction (A, C) with Mg2+ and (B, D) without Mg2+ (PT for transferring phosphate). The theoretical transition pathways for a tight, synchronous, and loose transition state are shown in C, D (as defined in Roston and Cui, 2016).\n\n### The TSE \u2013 transferring phosphoryl group delocalized\n\nThe nature of the TS of enzyme-catalyzed P-transfer reaction with respect to its associative and dissociative character has been of significant interest and heated debate (Kamerlin et al., 2013; Kamerlin and Wilkie, 2007; Lassila et al., 2011; Roston and Cui, 2016). The definition as well as theoretical and experimental approaches to distinguish between them are rooted in elegant and fundamental work on nonenzymatic P-transfer reactions (Duarte et al., 2015; Hengge, 2002; Hou et al., 2012; Hou and Cui, 2012; Kamerlin et al., 2013; Kerns et al., 2015; Kirby and Nome, 2015; Stockbridge and Wolfenden, 2009). For Adk, a concerted mechanism is observed with no intermediates (Figures 1 and 2). Instead of using the classification of associative versus dissociative character (Lassila et al., 2011), we rather apply the clear definition by Cui and coworkers of a tight versus loose TS for concerted P-transfer reactions as they are unambiguously related to the bond-order in the TS (Lai and Cui, 2020a; Lai and Cui, 2020b; Roston et al., 2018; Roston and Cui, 2016). For Adk, a contraction of the active site is observed while passing through the TSE, as captured by the decrease in the distance between acceptor and leaving group during the transition (Figure 1D, E). In the absence of Mg2+, the acceptor and donor need to be within 4 \u00c5 for the reaction to occur (Figure 1D) whereas in the presence of Mg2+ an acceptor\u2013donor distance of 4.5 \u00c5 is sufficient (Figure 1E). The character of the TSE can best be seen from the widely used Moore-O\u2019Ferrall\u2013Jencks diagram (Jencks, 1972; O\u2019Ferrall, 1970) that plots the distance from the transferring phosphate to the oxygen of the donor and acceptor, respectively (Figure 2). The TSE changes from tight/synchronous without Mg2+ (meaning high bond-order for both bonds between transferring phosphate to the leaving group and the attacking nucleophile) into loose with Mg2+ (lower bond-order for these two bonds; Figures 2 and 3; Lai and Cui, 2020a; Lai and Cui, 2020b; Roston et al., 2018; Roston and Cui, 2016).\n\nImportantly, from these two-dimensional (Figure 2) and the one-dimensional (Figure 1C) free-energy plots, we noticed a novel striking feature: a large ensemble of conformations in the TS region with vast differences in the position of the transferring phosphate but equal values in free energy for the enzyme with Mg2+ (light blue dots in Figure 2, yellow area in Figure 1C). In other words, the enzyme seems to operate with a wide TSE. In contrast, without Mg2+ fewer conformations seem to comprise the TSE. To dive more into this unexpected computational result and better visualize the TSE, we show zoom-ins of representative TSE snapshots and their superposition (Figure 3, Figure 3\u2014figure supplement 1). Notably, the TSE conformations are distributed along the reaction coordinate. The difference in position of the transferring phosphate along the reaction coordinate within the TSE (about 1 \u00c5 with Mg2+; Figure 1c, Figure 2 and Figure 3b) implies that the TSE contains many highly asymmetric conformations, meaning that the transferring phosphate can be much closer to the leaving oxygen than the attacking oxygen and vice versa (Figure 3D). This asymmetry is logically tied with nonplanar configurations of the transferring phosphate (Figure 3D and Table 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-v1.jpg)\n\n**Figure 3.:** (A) Representative snapshots for structure of reactants, transition states, and products in the adenylate kinase (Adk) active site in the presence and absence of magnesium. d(Oattacking \u2212 P) and d(Oleaving \u2212 P) are shown. Labels in black indicate the length of the bonds involved in the phosphate transfer and in green, the dihedral angle of the phosphoryl group. Superposition of the TSEs reveals a wider TSE with Mg2+ (B) relative to the one without the cation (C) with mean rmsd (\u00b1 SD) of distances of the central P atom from its \u2018average\u2019 position of 0.30 \u00b1 0.11 \u00c5 (B) and 0.13 \u00b1 0.06 \u00c5 (C). The TSEs are superimposed with the X-ray structure solved with a transition-state analog in green (AMP, AlF4\u2212, and ADP) reported in Kerns et al., 2015 (PDB ID: 3SR0). (D) Superposition of two extreme structures out of the large TSE for the enzyme with Mg2+, one where the phosphoryl group is closest to the donor oxygen (blue) and the other closest to the acceptor oxygen (red) highlighting the asymmetric character of TSE members. (E, F) Superposition of most symmetric snapshot from TSE of quantum-mechanics/molecular-mechanics (QM/MM) calculations (ball and stick representation in cyan) with the X-ray structure of transition-state analog (green, PDB ID: 3SR0 Kerns et al., 2015 including coordinating water molecules in F). (G) Zoom into the active site to display the broad TSE in the presence of Mg2+ aided by flexible Arg and Lys side chains in the active site.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The labels in black describe the distances that are part of the phosphate transfer and the label in green shows the dihedral angle. Label of the phosphates in orange.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The superposition is showed for: the main active site\u2019s residues the atoms taking part of the reaction and backbone of the adenylate kinase (Adk).\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The change in geometrical parameters along the reaction coordinate is shown for (A) forward and (B) backward reactions. Parameters: distance Oleaving \u2013 Ptransferring (red), distance Oattacking \u2013 Ptransferring (black), transferring phosphate dihedral angle (light blue), distance Mg2+ \u2013 O from transferring phosphate (blue), and distance Mg2+ \u2013 O from beta-phosphate of ADPATP-lid (orange). The charge (mulliken charge) variation of different moieties involved in the reaction are shown for (C) forward and (D) backward reactions: Mg2+ (green), alpha-phosphate of ADPATP-lid (red), alpha-phosphate of ADPAMP-lid (orange), beta-phosphate of ADPATP-lid (black), and transferring phosphate (blue). Note that a proton is transiently transferred from one water molecule coordinating the Mg2+ to an oxygen of P\u03b1 in ADPAMP-lid (leaving group). In all plots, the free-energy profile (FEP) is shown in the background as light gray dashed line.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The change in different geometrical parameters along the reaction coordinate is shown for (A) forward and (B) backward reactions. Parameters shown: distance Oleaving \u2013 Ptransferring (red), distance Oattacking \u2013 Ptransferring (black), and transferring phosphate dihedral angle (light blue). The charge (mulliken charge) variation of different moieties involved in the reaction are shown for (C) forward and (D) backward reactions: alpha-phosphate of ADPATP-lid (red), alpha-phosphate of ADPAMP-lid (orange), beta-phosphate of ADPATP-lid (black), and transferring phosphate (blue). The distances involving the proton transfer are shown for (E) forward and (F) backward reactions: H \u2013 Oattacking (black), H \u2013 O of transferring phosphate (red), and H \u2013 O of alpha-phosphate of ADPAMP-lid (green). In all plots, the free-energy profile (FEP) is shown in the background as light gray dashed line.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The change in different geometrical parameters along the reaction coordinate is shown for (A) forward and (B) backward reactions. Parameters shown: distance Oleaving \u2013 Ptransferring (red), distance Oattacking \u2013 Ptransferring (black), transferring phosphate dihedral angle (light blue), distance Mg2+ \u2013 O from transferring phosphate (blue), and distance Mg \u2013 O from beta-phosphate of ADPATP-lid (orange). The charge (mulliken charge) variation of different moieties involved in the reaction with Mg2+are shown for (C) forward and (D) backward reactions: Mg2+ (green), alpha-phosphate of ADPATP-lid (red), alpha-phosphate of ADPAMP-lid (orange), beta-phosphate of ADPATP-lid (black), and transferring phosphate (blue). The distances involving the proton transfer are shown for (E) forward and (F) backward reactions: H \u2013 Oattacking (black), H \u2013 O of transferring phosphate (red), and H \u2013 O of alpha-phosphate of ADPAMP-lid (green). In all plots, the free-energy profile (FEP) is shown in the background as light gray dashed line.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** The main interactions between the phosphate moieties of the nucleotides and the amino acid side chains in the active site are shown (in gray dashed lines).\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp7-v1.jpg)\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp8-v1.jpg)\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig3-figsupp9-v1.jpg)\n\n**Figure 3\u2014figure supplement 9.:** RC equal to 0.0, 0.1, and 0.2 \u00c5 with Mg2+ have a transition state (TS)-like ensemble distribution, whereas only RC equal to \u22120.1 \u00c5 has a TS-like ensemble distribution without Mg2+.\n\nComparison of the TSE snapshots for the fully active, Mg2+-bound enzyme obtained from QM/MM with an X-ray structure of the same enzyme in complex with the TSA (ADP\u2013Mg2+\u2013AlF4\u2014AMP) (Kerns et al., 2015) serves as an initial experimental validation of our simulations (Figure 3C, F, Figure 3\u2014figure supplement 2). At the same time, this comparison highlights the power of the QM/MM simulations to investigate the catalytic mechanism, as the TSA-bound X-ray structure seems to imply quite a unique TS conformation, in sharp contrast to the broad TSE discovered in our simulations.\n\nA detailed analysis of the pathways with and without Mg2+ reveals well-known features from other P-transfer enzymes, such as coordinated changes of the Mulliken charge populations coupled with proton transfers (Figure 3\u2014figure supplements 3\u20135). Mg2+ achieves its catalytic effect on the chemical step playing several roles. It enables the donor and acceptor phosphates to come close enough to react, thus achieving a reactive conformation. In the absence of Mg2+, a proton must bridge the terminal phosphates to prevent the strong electrostatic repulsion between the two nucleotides. In addition, Mg2+ stabilizes the charge of the transferring phosphate and thereby lowering the enthalpic barrier. Most interestingly, the presence of a cation seems to result in a wide TSE. Structures of the TSE show that Mg2+ is optimally coordinated to the transferring phosphates and water molecules (Figure 3G).\n\nBesides the multifaceted role of Mg2+, our simulations provide insights into the function of the fully conserved arginine residues in the active site for lowering the activation barrier for this chemical reaction (Figure 3\u2014figure supplements 6\u20138). R85 appears to arrange the beta-phosphates of the ADPs in the proper position for the reaction to be started. R150 and R161 are involved in anchoring ATP and AMP residues in the backward reaction. These last two residues and R85 interact with the P\u03b1 of AMP, stabilizing its negative charge. R36 is near to the alpha-phosphate of AD(M)P along the entire catalytic reaction, stabilizing both the TS and products. Overall, interactions between these arginine side chains and several backbone amides and the Mg2+ with the phosphates of the substrate make up a well-organized, asymmetric active site enabling efficient reversible P-transfer with a wide TSE (Figure 3G).\n\n### Umbrella sampling and committor analysis buttress wide TSE for Adk with Mg2+\n\nTo verify our computational finding of a wide TSE in the fully assembled enzyme with Mg2+ in contrast to a narrower TSE without a divalent metal, we performed QM/MM umbrella sampling and a committor analysis as described in methods. The umbrella sampling FEPs (Figure 4a\u2013d) corroborate the key difference in the range of the TSE. Noteworthy, the activation free energies are smaller for the umbrella sampling when compared to the multiple steered molecular dynamics (MSMD). The largest difference being that for the reaction in the absence of Mg (Figure 1C). Higher barriers when comparing the results using Jarzynski\u2019s to those obtained with umbrella sampling is not totally unexpected. It is well known that exponential averaging tends to overestimate free-energy barriers, and particularly when they are too high (Park et al., 2003).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig4-v1.jpg)\n\n**Figure 4.:** (A) Free-energy profiles obtained by umbrella sampling for reactions with and without Mg2+. (B) Comparison of the TSE from multiple steered molecular dynamics (MSMD) and umbrella sampling for runs in the presence of Mg2+. The TSE structures were aligned by atoms of the P\u03b1 and O3\u03b1 atoms from AD(M)P and P\u03b2 and O3\u03b2 atoms from AD(T)P. (C) First principal component (PC1) and second principal component (PC2) obtained from principal component analysis (PCA) for b. The PCA was calculated using the transferring phosphate atoms, Mg2+ ion, P\u03b1 and O3\u03b1 atoms from AD(M)P and P\u03b2 and O3\u03b2 atoms from AD(T)P. The TSE structures aligned by atoms of the P\u2013Oleaving and P\u2013Oattacking (see method for details). (D) Commitment plot with the committor probability to products (ATP + AMP) for the reaction with and without Mg2+.\n\nNotably, the calculated difference in activation barriers with and without Mg from these umbrella simulations of about 9.5 kcal/mol is in good agreement with the experimentally determined ones of \u226511 kcal/mol (P-transfer with Mg is >500 s\u22121 (Kerns et al., 2015) compared to 7.5 \u00d7 10\u22124 s\u22121 measured here).\n\nA consequent comparative commitment analysis that calculates the probability of reaching either reactants or products displays a very shallow change along the reaction coordinate in the presence of Mg2+, further corroborating a wide TSE for the P-transfer step in the fully active enzyme, in stark contrast to a narrow and steep change in the committors indicative of a narrower TSE without Mg2+ (Figure 4d). The TSE is defined in function of the committor distribution (Figure 3\u2014figure supplement 9), showing the TSE is at \u22120.1 \u00c5 of the reaction coordinate for the reaction without Mg2+. In contrast, the TSE is wider for the reaction with Mg2+ (reaction coordinate values in the range from 0.0 to 0.2 \u00c5; Figure 3\u2014figure supplement 9 and Table 1).\n\n### Experimental characterization of the activation parameters of the P-transfer step\n\nWe felt the need to additionally experimentally test our major new finding from the QM/MM simulations: a delocalized TSE for the fully active enzyme. This feature would result in a lowering of the entropic barrier for the chemical step, thereby contributing to the enzyme-catalyzed rate enhancement. To avoid the issues of accuracy of QM/MM simulations that are well documented (Acevedo and Jorgensen, 2010; Elstner, 2007; Gaus et al., 2014; Roston et al., 2018), our system has the advantage of comparing the exact same reaction coordinate with the only difference being the presence/absence of a single atom, Mg2+, thereby studying differences rather than absolute values. Since the reaction with Mg2+ (fully active enzyme) revealed a more pronounced delocalization than the reaction in its absence, the divalent cation is predicted to lower the activation entropy. To test this prediction, we experimentally determined the enthalpic and entropic contributions to the chemical reaction barrier in Adk by measuring its temperature dependence in the presence and absence of Ca2+. The experimental trick of replacing Mg2+ with Ca2+ was used since the chemical step with Mg2+ is too fast to be experimentally measured, and previous studies showed that Ca2+ is an appropriate mimic to selectively probe the chemical step (Kerns et al., 2015).\n\nThe resulting Eyring plots for the two experiments (Figure 5A) deliver the enthalpic (\u0394H\u2021 of 15.3 \u00b1 0.5 and 16.7 \u00b1 1 kcal/mol) and entropic (\u0394S\u2021 = \u22125.7 \u00b1 1.6 and \u221219.1 \u00b1 3.1 cal/mol/K) contributions to the chemical reaction barrier in the presence and absence of Ca2+, respectively. The presence of Ca2+ reduces both barriers considerably. The decrease in the enthalpic barrier by Ca2+, which is even more pronounced with the optimal Mg2+ ion, is not new and has been well established in the literature for P-transfer reactions, including the Adk chemical reaction (Kerns et al., 2015; P\u00e9rez-Gallegos et al., 2017; Rosta et al., 2014; Yang et al., 2012). The striking new result, central to this work, is the large decrease in the entropic barrier in the presence of a divalent cation, thereby strongly supporting our key finding of a broader TSE from the QM/MM simulations.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/93099/elife-93099-fig5-v1.jpg)\n\n**Figure 5.:** (A, B) Turnover rate constants that represent the chemical step (kchem) under these conditions were measured with 8 mM ADP/Mg2+ by HPLC detection of build-up of ATP and AMP. (A) Temperature dependence of the phosphoryl-transfer step measured in presence of calcium and in absence of divalent any cations, plotted as Eyring plots. Fits to the Eyring equation (dashed lines) result in \u0394H\u2021 = 16.7 \u00b1 1 kcal/mol and \u0394S\u2021 = \u221219.1 \u00b1 3.1 cal/mol/K without metal, and \u0394H\u2021 = 15.3 \u00b1 0.5 kcal/mol and \u0394S\u2021 = \u22125.7 \u00b1 1.6 cal/mol/K with Ca2+. (B) pH dependence of kchem measured in the presence of calcium and in absence of any divalent cation.\n\nWe were able to further test our QM/MM simulations with a second designed set of experiments by measuring the pH dependence of the P-transfer step. We find that the reaction rate increases with higher pH in the presence of Ca2+, whereas without a metal the opposite trend is observed (Figure 5B). These experimental results match the simulation results: the fully charged nucleotides state was the most reactive in the presence of the metal, whereas the monoprotonated state had a much higher free-energy barrier. In contrast, without metal only the monoprotonated nucleotides were reactive. Notably, at low pH (pH 5), the P-transfer step becomes rate limiting even with Mg2+, allowing for an estimate of the rate enhancement of Mg2+ versus Ca2+ of 24-fold.\n\nFinally, we measured the forward and backward reaction rate constants of several arginine mutants that were identified as important for the P-transfer from the QM/MM simulations: R36K, R85K, R124K, R150K, and R161K (Table 2). The large decrease in the catalytic rate for each single Arg to Lys mutation further highlights the notion of a highly choreographed active site for a well-coordinated P-transfer (Figure 3G), in which arginine residues that are not even directly coordinated to the transferring phosphate play an equally important role.\n\n**Table 2.**\n Experimentally determined observed rate constants of the forward and backward chemical reactions for mutant forms of adenylate kinase (Adk) in the presence of Mg2+.Note that the corresponding rate constants for the phosphoryl transfer in the wild-type protein are too fast to be directly measured and have been estimated to be more than three orders of magnitude faster than in the mutants (Kerns et al., 2015).\n\n\n<table>\n  <thead>\n    <tr>\n      <th>AAdk mutant</th>\n      <th>Rate constant (s\u22121)2 ADP \u2192 ATP + AMP</th>\n      <th>Rate constant (s\u22121)ATP + AMP \u2192 2 ADP</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>R124K</td>\n      <td>4.6 \u00b1 0.5</td>\n      <td>1.6 \u00b1 0.4</td>\n    </tr>\n    <tr>\n      <td>R150K</td>\n      <td>1.3 \u00b1 0.3</td>\n      <td>1.1 \u00b1 0.3</td>\n    </tr>\n    <tr>\n      <td>R161K</td>\n      <td>0.4 \u00b1 0.1</td>\n      <td>0.5 \u00b1 0.2</td>\n    </tr>\n    <tr>\n      <td>R85K</td>\n      <td>0.3 \u00b1 0.1</td>\n      <td>1.6 \u00b1 0.2</td>\n    </tr>\n    <tr>\n      <td>R36K</td>\n      <td>0.8 \u00b1 0.2</td>\n      <td>14 \u00b1 2</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nAdk is an impressively efficient enzyme, being able to accelerate the P-transfer reaction over a billion times. Previous work showed the complexity of the Adk free-energy landscape for this two-substrate, two-product reaction (Figure 1A), providing direct experimental evidence for the widely accepted concept of a multidimension free-energy landscape with multiple intermediates and transitions states for the full enzymatic cycle, already described and demonstrated by Benkovic and Hammes-Schiffer (Benkovic et al., 2008). Full lid-closure results in an excellent preorientation of the donor and acceptor groups of the two bound nucleotides and the aiding active-site residues in the enzyme/substrate complex, in agreement with the general view of necessary pre-organization in enzyme catalysis. Lid-opening had been identified as the rate-limiting step in the enzymatic cycle (Kerns et al., 2015), and the corresponding TSE for this conformational change (Stiller et al., 2019) and the high-resolution structure of next intermediate, the EP complex before product dissociation, recently been described (Stiller et al., 2022).\n\nFor a comprehensive understanding of the complete free-energy landscape of Adk catalysis, we here investigate the key step, catalyzing the actual chemical step of P-transfer. While ES and EP complexes such as Adk bound to ADP/Mg2+ can be structurally characterized by traditional experimental methods as they represent a minimum in the free-energy landscape, the reaction path from substrate to product involving breaking and forming covalent bonds (chemical step) and traversing the crucial TS can only be \u2018visualized\u2019 by quantum mechanics-based molecular simulations. The power of such simulations to examine the chemical steps in enzymes, including P-transfer reactions, has been extensively documented (Jin et al., 2017; Lai and Cui, 2020b; Mokrushina et al., 2020; P\u00e9rez-Gallegos et al., 2015; P\u00e9rez-Gallegos et al., 2017; Roston and Cui, 2016; Valiev et al., 2007). The focus in the literature has been on the comparison of the enzyme-catalyzed and uncatalyzed reaction with respect to the bond character at the transitions state (i.e., associate versus dissociative or tight versus loose) (Admiraal and Herschlag, 1995; Hengge, 2002; Kamerlin et al., 2013; Lassila et al., 2011). QM calculations for uncatalyzed reactions have been well documented in the literature showing narrow and symmetric TSE (Kl\u00e4hn et al., 2006: Wang et al., 2015).\n\nHere, we uncover a central new result that provokes a modified TS theory. Enzymes, due to their macromolecular nature, provide a fundamentally different, advantageous way to catalyze these chemical reactions compared to the uncatalyzed reaction by employing a broad TSE. Many different molecular configurations can be accommodated in the TS region with comparable energies via collective motions, spanning a 1-\u00c5 range along the reaction coordinate for the transferring phosphate that travels a total distance of only 2 \u00c5 during the P-transfer. This features resemblance the now well-established conformational sampling of proteins in ground states such as ES complexes. Our findings explain why enzymes do not face an entropic bottleneck for catalysis. Furthermore, as enzyme active sites are asymmetric in contrast to the symmetric nature of the solvent for uncatalyzed reactions, we find that the TSE comprises also highly asymmetric conformations. Our findings help to resolve the controversy about the nature of the TS in enzyme-catalyzed P-transfer reactions between theory and experiments (Lassila et al., 2011). The complex nature of the active site of enzymes, in contrast to simple solvent, results in different mechanisms in the enzyme-catalyzed reaction.\n\nWe note that a previous QM/MM minimum energy path calculations for a different Adk enzyme, E. coli Adk, using a semiempirical method had proposed a different mechanism with a stable metaphosphate intermediate, reporting an even lower energy for this metaphosphate intermediate than the ES and EP complexes (Shibanuma et al., 2020). In complex systems, such as enzymes, it is possible to observe artificial local minima when using minimum energy path searching strategies due to inadequate sampling (Mendieta-Moreno, 2015; Quesne et al., 2016). From our experimental NMR and X-ray data, we know that such a stable metaphosphate does not exist in Adk-catalyzed reactions, highlighting the importance of experimental verification of simulations as performed here, and the use of extensive sampling with proper thermodynamic treatment.\n\nMore recently, another group performed QM/MM simulations for E. coli Adk using the semiempirical AM1/d-phoT method (Nam et al., 2007) and umbrella sampling, and measured and computed rate reduction in the chemical step by similar Arg mutants as reported here (Ojeda-May et al., 2021; Dulko-Smith et al., 2023). In contrast to the paper described above (Shibanuma et al., 2020), their results are in agreement with our data. First, the experimentally measured rate reductions in Ojeda-May et al., 2021; Dulko-Smith et al., 2023 are in full agreement with our results. Second, our activation barriers from umbrella sampling are qualitatively similar to their values, with the obvious differences in the enzyme species (we study the thermophilic Aquifex Adk), and their choice of analyzing the QM/MM simulations in the opposite direction ATP/AMP to 2 ADP molecules. The latter lead them to singly protonate one oxygen on ATP, since this \u2018back reaction\u2019 is faster for the monoprotonated state, in agreement with our simulations. This nice agreement in both experiments and computation by our two groups strengthens the validity of reported results.\n\nIntriguingly, the Nam/Wolf-Watz team (Ojeda-May et al., 2021; Dulko-Smith et al., 2023) and our group focus on completely different interpretations of the data! Nam/Wolf-Watz propose an interconnection, synchronization, between the chemical step and lid-opening. This language can be misleading since it can imply that the chemical step directly effects the opening, which of course cannot be the case. There is no \u2018memory\u2019 of the chemical step, the energy from the closing/opening step is dissipated within picoseconds. Lid-opening/closing is an energetically fully independent step from the P-transfer step, see our Figure 1A. We agree with the obvious result/interpretation by the authors that the Arg residues in the active site are important for both the P-transfer and the consequent lid-opening, but there is no synchronization between these independent steps. In contrast, we discover here a fundamental concept for rate enhancement by an optimal enzyme, the reduction in the activation entropy by a wide TSE. New experiments were triggered by our finding that then delivered experimental validation of this concept.\n\nA wide TSE agrees with the definition of the TS being a surface on the potential energy surface instead of a saddle as elegantly discussed in a theoretical paper by Nussinov and colleagues (Ma et al., 2000). Our results deliver concrete evidence for this fundamental concept from QM/MM calculations and commitment analysis on Adk that were further buttressed by the consequently designed experiments. Although we have only quantitatively demonstrated this TSE concept here for Adk-catalyzed P-transfer, we hypothesize such mechanism to be more general for enzyme catalysis as it is rooted in the macroscopic nature of proteins. A conformationally spread-out TSE is likely one reason why enzymes are much bigger than a few active-site residues: On the one hand residues remote from the site of the chemical action allow for conformational flexibility without the protein unfolding, on the other hand they allow for increasing the probability of highly choreographed motions along the reaction coordinate (Hammes-Schiffer and Benkovic, 2006; Klinman and Kohen, 2013; Saen-Oon et al., 2008; Schramm and Schwartz, 2018) while reducing excursions into unproductive conformations (Otten et al., 2020). The latter mechanism is directly demonstrated here in the TSE, as the configurations seen in the simulations are along the P-transfer reaction coordinate. We note that we focus here on equilibrium effects and an atomistic description of the TSE, this is not related to the fundamental work on dynamical effects manifested in transmission coefficients due to barrier recrossing (Antoniou and Schwartz, 2016; Zinovjev and Tu\u00f1\u00f3n, 2017). The latter has been quantitatively demonstrated to play a minor role.\n\nA question often being asked is why would nature evolve a conformational step to be rate limiting, as the lid-opening step for Adk? We propose that this is the \u2018price\u2019 the enzyme pays for stabilizing the ES complex to enable efficient rate acceleration of the chemical step, and for suppressing detrimental alternate reactions such as phosphate hydrolysis. Release of product requires disassembly of such closed, low-energy structure. These principles have now been directly revealed on an atomic scale for Adk: extensive electrostatic interactions of five Arg and one Lys with the phosphoryl groups to efficiently accelerate the P-transfer step, which then need to be broken for lid-opening to allow product release. The effect of different Arg mutations on the lid-opening has been recently nicely demonstrated (Ojeda-May et al., 2021; Dulko-Smith et al., 2023).\n\nAs long as the rate of this conformational transition (kopen) and hence kcat is not limiting for organismal fitness, there is no evolutionary pressure to further enhance it.\n\nThe importance of TSE including multiple transition pathways for protein folding (Frauenfelder et al., 2006; Royer, 2008), and more recently for protein conformational transitions within the folded state (Pontiggia et al., 2015; Stiller et al., 2019; Tsai and Nussinov, 2014) has been well documented. TSE in enzyme catalysis of chemical steps where covalent bonds are broken and formed as demonstrated here further promotes a unifying concept of protein folding and function, as the same principal concept of TSE is seen for these different types of conformational changes. Consequently, protein folding and function is embedded in a unifying energy landscape which is simply altered by ligands and solvent.\n\n## Materials and methods\n\n### Computational setup of the system\n\nThe crystal structure of Adk from A. aeolicus in complex with Ap5A coordinated to Zn2+ (PDB ID 2RGX; Henzler-Wildman et al., 2007) was used as model. The Zn2+ ion was replaced by Mg2+ and the ADPs structures were built by modifying the structure of Ap5A, keeping the crystallographic coordination of the cation (2 oxygens from ADPs and 4 waters). For the simulation in low pH and without the magnesium ion, the nucleophilic oxygen of AD(T)P was protonated. Standard protonation states were assigned to all titratable residues (aspartate and glutamate residues are negatively charged, lysines and arginines residues are positively charged). Histidine protonation was assigned favoring formation of hydrogen bonds in the crystal structure. Each protein was immersed in a truncated octahedral box of TIP3P water (Jorgensen et al., 1983) and neutralized with Na+ ions (3\u20135 ions, depending on the system).\n\n### Classical simulation parameters\n\nThe parameters used for all protein residues were those corresponding to AMBER force field ff99sb (Hornak et al., 2006). For the non-protein residues, such as ADP and Mg2+, parameters were taken from Meagher et al., 2003; Alln\u00e9r et al., 2012. All simulations were performed with periodic boundary conditions. Pressure and temperature were kept constant with the Berendsen barostat and thermostat, respectively (Berendsen et al., 1984). The SHAKE algorithm (Ryckaert et al., 1977) was used to keep hydrogen atoms at their equilibrium bond distances, and a 2-fs time step was employed, except for the system without Mg2+ for which it was set to 1 fs. The ADP\u2013ADP system was initially subjected to a classical equilibration protocol, followed by QM/MM equilibration and production simulations. Starting from the classically equilibrated ADP\u2013ADP, the monoprotonated systems with ADPH\u2013ADP was built, by adding the H+and removing a Na+ from the solvent, and subsequently the system without Mg2+ was built by removing the ion and adding two Na+ to the solvent. Each of these systems was again equilibrated classically and then used for forward QM/MM simulations. The backward simulations were equilibrated just using QM/MM simulations because the starting point was the product of the forward SMD simulation with the lowest work at product RC. Classical equilibration followed consisted of: first, 2000 steps of conjugate gradient optimization, followed by 100 ps MD simulation at NVT condition, where the system\u2019s temperature was slowly raised to 300 K; the third step consisted of 100 ps MD simulation at NPT conditions to equilibrate the system\u2019s density. During the temperature and density equilibration process, the protein \u03b1-carbon atoms were restrained by a 1 kcal/mol harmonic potential. Finally, non-restrained classical simulation was performed at least for 1 ns at NPT conditions to obtain an equilibrated structure to be used as the QM/MM input.\n\nQM/MM simulations were performed using a 1-fs time step without SHAKE (Ryckaert et al., 1977). To equilibrate the system with the QM/MM hamiltonian, we performed first a conjugate gradient QM/MM optimization, followed by a 50-ps QM/MM MD equilibration process at NVT condition, subsequently each production simulation was performed at NVT condition (at least 100 ps saving coordinates every 1 ps). QM/MM calculations were performed using the additive scheme implemented in the sander module of the AMBER program suite (Case et al., 2005). The quantum (QM) region was treated with the self-consistent charge-density functional tight-binding (SCC-DFTB) approach (Elstner, 2007), usually considered a semiempirical QM method, as implemented in Sander (de M Seabra et al., 2007; Walker et al., 2008). The SCC-DFTB parameter set involving carbon, hydrogen, oxygen, nitrogen, phosphate, and magnesium was employed throughout this study (Cai et al., 2007; Yang et al., 2008). All the other atoms were described with AMBER ff99SB force field (Hornak et al., 2006). The interface between the QM and MM portions of the system was treated with the scaled position-link atom method. The electrostatic interactions between the QM and MM regions were treated using electrostatic embedding using a simple mulliken charge\u2013restrained electrostatic potential (RESP) charge interaction. In the case of the van der Waals interactions, these were calculated classically.\n\nThe QM region of the complete system consists of the diphosphate moiety of both ADP molecules, one Mg2+ ion, and the four water molecules that coordinate the metal ion in the crystal structure (Figure 1\u2014figure supplement 1).\n\n### Free-energy determination strategy using MSMD and Jarzynski\u2019s equation\n\nThe FEPs were constructed by performing constant velocity MSMD simulations (i.e., stiff string approximation), and using Jarzynski\u2019s equality (Jarzynski, 1997), which relates equilibrium free-energy values with the irreversible work performed over the system along a user defined reaction coordinate that drives the system from reactants to products. In the present study, the reaction coordinate (\u03be) was chosen as:\n\n$$\n\u03be=d(O_{leaving}\u2212P)\u2212d(O_{attacking}\u2212P)\n$$\n\nCalculations were performed using a force constant of 300 kcal/mol/\u00c5 and pulling velocities of 0.05 \u00c5 ps\u22121. To reconstruct the FEP of the phosphate transfer reaction, two sets of at least 10 SMD runs were performed starting from equilibrated QM/MM MD structures corresponding to either the system in (1) the Adk/ADP\u2013ADP state (presently defined as forward reaction), and (2) the Adk/ATP\u2013AMP state (backward reaction). Each set of work profiles was used to obtain the corresponding forward and backward FEPs with Jarzynski\u2019s equality (Jarzynski, 1997), and finally the two profiles were combined to obtain the complete curve. Since when using MSMD in combination with Jarzynski\u2019s inequality, the system starts from equilibrium conditions and is driven along the RC further from equilibrium as the reaction proceeds, and therefore the FEP estimate increasingly overestimates the real FEP. The best way to combine forward and backward reactions is performed by keeping the initial segment (and thus lower) FEP of each forward and backward reaction estimates. This strategy was successfully used to obtain enzymatic reaction FEPs in previous works (Crespo et al., 2005; Defelipe et al., 2015).\n\nAlong the present work, the ADP in the ATP-lid will be called as AD(T)P and the other, in the AMP-lid, as AD(M)P. The reaction involves the two P\u2013O bonds, one forming and the another breaking, the two bonds sharing the same phosphorus atom from the transferring phosphate (Figure 1B). In the former, an oxygen atom of the AD(T)P reacts and we will name it as Oattacking. The breaking bond is described by the oxygen atom for the AD(M)P and it will be called Oleaving.\n\n### Higher-level DFT(PBE) free-energy calculations\n\nThe FEP of the ADK with Mg2+ was also computed using a higher level of theory. Here, the QM system was described with PBE functional (Perdew et al., 1996) using a DZVP basis set as implemented in the GPU-based code LIO that works with amber (Nitsche et al., 2014). To take advantage of previous DFTB sampling, five lowest work versus RC profiles of the forward and backward reactions were selected, and segmented in 10 windows or stages. For each window, the FEP at the DFT(PBE) level was computed using SMD with a steering velocity of 0.05 \u00c5/ps. Windows were combined to obtain both forward and backward FEP and the final profile was obtained by joining them. Details of the staged strategy can be found in references (Ozer et al., 2010; Ozer et al., 2012; Ganguly et al., 2020).\n\n### Commitment analysis\n\nTo verify the true nature of the observed TS we performed a commitment analysis. We first selected 20 structures for each of 11 points along the RC in the TS region (every 0.1 \u212b from \u22120.6 to 0.6 \u212b on the RC). Structures were equilibrated at the corresponding RC position for 5 ps using a harmonic restrain potential of 300 kcal/mol/\u00c5. From the final equilibrated structure, we used the modified Berendsen thermostat (Bussi et al., 2007) to assign random initial velocities, and performed 10 non-restrained simulations. Each simulation was followed and determined whether it reached the reactants or products. Finally, the resulting probability (estimated from the observed frequency) to reach product for each point along the RC was computed.\n\n### Umbrella sampling simulations\n\nFinally, to avoid possible bias due to the use of MSMD to obtain the FEP, we also computed the corresponding profile using umbrella sampling. The initial structures for each window were randomly selected from the lowest work MSMD trajectories along the RC. The force constant for the harmonic restraint was set to 300 kcal/mol/\u212b2, ensuring sufficient confinement without inducing artificial behavior. Windows were separated every 0.1 \u212b along the whole RC. Each window simulation started with a equilibration run of 60 ps at NPT condition, followed by sampling over a production run of 40 ps, with coordinates recorded at 1 ps intervals and the reaction coordinate values every 1 fs. Simulations were performed at the previously described SCC-DFTB level of theory. The weighted histogram analysis method was employed to reconstruct the free-energy landscape from the individual window simulations (Kumar et al., 1992; Grossfield, 2010).\n\n### Principal component analysis\n\nOne single trajectory containing the TSE structures of MSMD and umbrella sampling was created by aligning the atoms of the P\u2013Oleaving and P\u2013Oattacking to a reference. The reference was the reactant structure (ADP/ADP). This was done in order to compare the TSEs using the same coordinate system. The principal component analysis was calculated over the transferring phosphate atoms, Mg2+ ion, P\u03b1 and O3\u03b1 atoms from AD(M)P and P\u03b2 and O3\u03b2 atoms from AD(T)P. Those atoms were selected because they are directly involved in the chemical reaction.\n\n### Steady-state kinetics measurements\n\nSteady-state kinetics measurements for A. aeolicus Adk (Adk) were performed at different pH values in the absence of divalent metals (using 50 mM of EDTA) and the presence of Mg2+ or Ca2+. In all cases, the reaction was started by the addition of 8 mM ADP and saturating metal concentrations were used if applicable (32 mM at pH 5 and 8 mM at pH 7 and 9, respectively). The enzyme concentration varied between 30 nM and 200 \u03bcM depending on the rate of interconversion; measurements were collected at 25\u00b0C. The amount of product was quantified with high-pressure liquid chromatography (HPLC). Protein precipitated by quench (30% Trichloroacetic acid,TCA, + 6 M HCl mixture) was separated with Spin-X centrifugal tube filters (Costar), filtered supernatant was diluted to avoid HPLC detector saturation, and the pH was brought to 6.0 to achieve optimal separation. The samples were analyzed on an HPLC system (Agilent Infinity 1260) with a high-precision autosampler (injection error <0.1 \u03bcl) and analytical HPLC column ACE (i.d. 2.4 mm, length 250 mm, C18-AR, 5 \u00c5 pore size) and separated with isocratic elution with potassium phosphate mobile phase (100 mM, pH 6.1). The observed rate constants were determined from 8 to 15 data points for each temperature and/or pH value using initial rate analysis. The values and uncertainties (SD) shown in Figure 5 and Table 2 were determined from least-squares linear regression. Similarly, values and uncertainties (SD) of \u0394H\u2021 and \u0394S\u2021 were extracted from linear regression of the data points presented in Figure 5A.\n\n### Temperature dependence of catalysis and mutant activity\n\nExperiments were essentially performed as described previously (Kerns et al., 2015) and above. In short, the steady-state kinetics measurements were collected at temperatures between 20 and 60\u00b0C for the temperature dependency and at 25\u00b0C for the mutants. For the temperature dependence, the samples contained 4 mM ADP and equimolar (with nucleotide) concentrations of calcium or 50 mM EDTA. The enzyme concentration was varied between 50 nM to 1 \u03bcM (with Ca2+) and 100 to 200 \u03bcM (with EDTA); buffer was 100 mM HEPES, pH 7.0, and 80 mM KCl. The amount of product produced over time (10\u201316 min) was quantified with HPLC and observed rates were extracted as described above. A similar approach was used for the Arg-to-Lys Aadk mutants, where the reaction was measured in both directions starting with either 4 mM ADP or ATP/AMP and equimolar (with nucleotide) concentrations of Mg2+.\n",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Qiang Cui, Boston University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93099.4.sa0](https://doi.org/10.7554/eLife.93099.4.sa0)\n\nIn this potentially important study, the authors report results of QM/MM simulations and kinetic measurements for the phosphoryl-transfer step in adenylate kinase. The results point to the mechanistic proposal that the transition state ensemble is broader in the most efficient form of the enzyme (i.e., in the presence of Mg2+ in the active site) and thus a different activation entropy. With a broad set of computations and experimental analyses, the level of evidence is considered solid by some reviewers. On the other hand, there remain limitations in the computational analyses, especially regarding free energy profiles using different methodologies (shape of free energy profiles with DFTB vs. PBE QM/MM, and barriers with steered MD and umbrella sampling) and the activation entropy, leading some reviewers to the evaluation that the level of evidence is incomplete.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93099.4.sa1](https://doi.org/10.7554/eLife.93099.4.sa1)\n\nSummary:\n\nThis study investigated the phosphoryl transfer mechanism of the enzyme adenylate kinase, using SCC-DFTB quantum mechanical/molecular mechanical (QM/MM) simulations, along with kinetic studies exploring the temperature and pH dependence of the enzyme's activity, as well as the effects of various active site mutants. Based on a broad free energy landscape near the transition state, the authors proposed the existence of wide transition states (TS), characterized by the transferring phosphoryl group adopting a meta-phosphate-like geometry with asymmetric bond distances to the nucleophilic and leaving oxygens. In support of this finding, kinetic experiments were conducted with Ca2+ ions at different temperatures and pH, which revealed a reduced entropy of activation and unique pH-dependence of the catalyzed reaction.\n\nStrengths:\n\nA combined application of simulation and experiments is a strength.\n\nWeaknesses:\n\nThe conclusion that the enzyme-catalyzed reaction involves a wide transition state is not sufficiently clarified with some concerns about the determined free energy profiles compared to the experimental estimate. (See Recommendations for the authors.)\n\nComments on revisions:\n\nWhile the authors have made some improvements in clarifying the manuscript, questions still remain about their conclusion regarding the wide-TS, which appears this may be a misinterpretation of the simulation results. Also, they should clearly point out the large discrepancies between DFTB QM/MM and PBE QM/MM results (shape of free energy files) and also between steered MD and umbrella sampling results (barriers). Another question is the large change in activation entropy (between the reaction with and without divalent cations). This difference may be difficult to attribute sorely to the difference in the reaction geometries near TS.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93099.4.sa2](https://doi.org/10.7554/eLife.93099.4.sa2)\n\nSummary:\n\nThe authors report results of QM/MM simulations and kinetic measurements for the phosphoryl-transfer step in adenylate kinase. The main assertion of the paper is that a wide transition state ensemble is a key concept in enzyme catalysis as a strategy to circumvent entropic barriers. This assertion is based on observation of a \"structurally wide\" set of energetically equivalent configurations that lie along the reaction coordinate in QM/MM simulations, together with kinetic measurements that suggest a decrease of the entropy of activation.\n\nStrengths:\n\nThe study combines theoretical calculations and supporting experiments.\n\nWeaknesses:\n\nThe current paper hypothesizes a \"wide\" transition state ensemble as a catalytic strategy and key concept in enzyme catalysis. Overall, it is not clear the degree to which this hypothesis is fully supported by the data. The reasons are as follows:\n\n(1) Enzyme catalysis reflects a rate enhancement with respect to a baseline reaction in solution. In order to assert that something is part of a catalytic strategy of an enzyme, it would be necessary to demonstrate from simulations that the activation entropy for the baseline reaction is indeed greater and the transition state ensemble less \"wide\". Alternatively stated, when indicating there is a \"wide transition state ensemble\" for the enzyme system - one needs to indicate that is with respect to the non-enzymatic reaction. However, these simulations were not performed and the comparisons not demonstrated. The authors state \"This chemical step would take about 7000 years without the enzyme\" making it impossible to measure; nonetheless, the simulations of the nonenzymatic reaction would be fairly straightforward to perform in order to demonstrate this key concept that is central to the paper. Rather, the authors examine the reaction in the absence of a catalytically important Mg ion.\n\n(2) The observation of a \"wide conformational ensemble\" is not a quantitative measure of entropy. In order to make a meaningful computational prediction of the entropic contribution to the activation free energy, one would need to perform free energy simulations over a range of temperatures (for the enzymatic and non-enzymatic systems). Such simulations were not performed, and the entropy of activation was thus not quantified by the computational predictions. The authors instead use a wider TS ensemble as a proxy for larger entropy, and miss an opportunity to compare directly to the experimental measurements.\n\nComments on revisions:\n\nOverall, I do not think the authors have been able to quantitatively support their conclusion, and the qualitative support is somewhat weak. This makes the interpretation of the computational results somewhat speculative. Nonetheless, comparison was made for models with and without divalent ions, and the experimental data is valuable.\n",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8bf2894e-bd69-4244-810e-e3c3a0ead25d",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C1",
+      "claim": "Transition-state (TS) theory has provided the theoretical framework to explain the enormous rate accelerations of chemical reactions by enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "Transition-state (TS) theory has provided the theoretical framework to explain the enormous rate accelerations of chemical reactions by enzymes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the established role of TS theory in explaining enzyme catalysis, supported by citation to Truhlar, 2015 in the full text.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "7a4a6e3c-191e-4d3a-8821-dbaf11898c98",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C2",
+      "claim": "Proteins display large ensembles of conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that proteins display large ensembles of conformations, unique TSs would pose a huge entropic bottleneck for enzyme catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in protein science, referenced in the context of the manuscript's argument.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "09e490c7-dc99-494a-a4e3-eaa6accae06b",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C3",
+      "claim": "Unique transition states would pose a huge entropic bottleneck for enzyme catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that proteins display large ensembles of conformations, unique TSs would pose a huge entropic bottleneck for enzyme catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference based on the ensemble nature of proteins and thermodynamic principles.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "019ca2e5-16ca-4620-85d3-367338466548",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C4",
+      "claim": "A structurally wide set of energetically equivalent configurations lie along the reaction coordinate for the phosphoryl-transfer step in adenylate kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a structurally wide set of energetically equivalent configurations that lie along the reaction coordinate and hence a broad transition-state ensemble (TSE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the QM/MM calculations presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "f4cfa748-b4de-4311-8082-06859d42d774",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C5",
+      "claim": "A broad transition-state ensemble exists for the phosphoryl-transfer step in adenylate kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a structurally wide set of energetically equivalent configurations that lie along the reaction coordinate and hence a broad transition-state ensemble (TSE).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly stated as a finding from the computational studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "26aa31c3-670e-4f4e-855e-4770310aff8f",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C6",
+      "claim": "A conformationally delocalized ensemble, including asymmetric TSs, is rooted in the macroscopic nature of the enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "A conformationally delocalized ensemble, including asymmetric TSs, is rooted in the macroscopic nature of the enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the computational results presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "e21272b5-8fea-4c3d-8f06-e1e4cb758838",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C7",
+      "claim": "Enzyme kinetics experiments confirm the decrease of the entropy of activation predicted from a wide TSE.",
+      "claim_type": "EXPLICIT",
+      "source": "The computational results are buttressed by enzyme kinetics experiments that confirm the decrease of the entropy of activation predicted from such wide TSE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to experimental measurements of activation parameters presented in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "5d2c3901-3414-439e-8a81-46fa3c41ad3a",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C8",
+      "claim": "Enzymatic rate acceleration is due to the enzymes' much higher affinity to the TS relative to its substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "A wealth of research has led to the general notion that enzymatic rate acceleration is due to the enzymes' much higher affinity to the TS relative to its substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established concept in enzymology, supported by citations to Lienhard, 1973 and Schramm, 2007.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "2f97e715-51b7-4dc1-8685-b4bc0e4f967b",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C9",
+      "claim": "High affinities measured for transition-state analogs relative to substrates support the idea of TS stabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "This idea has been supported experimentally by the high affinities measured for transition-state analogs (TSA) relative to substrates, leading to the design of TSA as high-affine enzyme inhibitors (Lienhard, 1973; Schramm, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental evidence cited in the literature (Lienhard, 1973; Schramm, 2007).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "8c887031-f90e-4ba1-910a-bee52532dc56",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C10",
+      "claim": "The uncatalyzed phosphoryl-transfer reaction would take about 7000 years.",
+      "claim_type": "EXPLICIT",
+      "source": "This chemical step would take about 7000 years without the enzyme (Stockbridge and Wolfenden, 2009) compared to >5000 s\u22121 with the enzyme (Kerns et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Stockbridge and Wolfenden, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "8217879d-d64f-4698-b4a2-b7417ee9cb9b",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C11",
+      "claim": "The enzyme-catalyzed phosphoryl-transfer reaction in adenylate kinase occurs at a rate >5000 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "This chemical step would take about 7000 years without the enzyme (Stockbridge and Wolfenden, 2009) compared to >5000 s\u22121 with the enzyme (Kerns et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kerns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "e615df38-ad0a-49cf-9a83-63376b28fcfc",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C12",
+      "claim": "Adenylate kinase catalyzes the reversible conversion of two ADP molecules into ATP and AMP.",
+      "claim_type": "EXPLICIT",
+      "source": "Adk is an extensively studied phosphotransferase that catalyzes the reversible, roughly isoenergetic conversion of two ADP molecules into ATP and AMP (Figure 1A, B), thereby maintaining the cellular concentrations of these nucleotides (Dzeja and Terzic, 2009).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a well-established fact about Adk function, supported by citation and shown in Figure 1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "6ad53a12-92bf-47b8-a917-9d5b9e3cc014",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C13",
+      "claim": "The conversion of two ADP molecules into ATP and AMP by adenylate kinase is roughly isoenergetic.",
+      "claim_type": "EXPLICIT",
+      "source": "Adk is an extensively studied phosphotransferase that catalyzes the reversible, roughly isoenergetic conversion of two ADP molecules into ATP and AMP (Figure 1A, B), thereby maintaining the cellular concentrations of these nucleotides (Dzeja and Terzic, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the text and supported by citation to Dzeja and Terzic, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "53650b24-ee17-4025-8264-b2bee63bb66f",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C14",
+      "claim": "Adenylate kinase maintains cellular concentrations of adenine nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Adk is an extensively studied phosphotransferase that catalyzes the reversible, roughly isoenergetic conversion of two ADP molecules into ATP and AMP (Figure 1A, B), thereby maintaining the cellular concentrations of these nucleotides (Dzeja and Terzic, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known biological function of Adk, cited from Dzeja and Terzic, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "1cf84da8-9cd1-4ffa-b6fd-45fa4ad1842e",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C15",
+      "claim": "Lid-closing positions the two substrates and the active-site residues for efficient chemistry in adenylate kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Lid-closing positions the two substrates and the active-site residues for efficient chemistry (i.e., P-transfer) and prohibits the alternative, energetically favorable reaction of phosphoryl hydrolysis (Kerns et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kerns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "7ee840c8-cb53-4847-acb0-ec542ae830c6",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C16",
+      "claim": "Lid-closing prohibits the alternative, energetically favorable reaction of phosphoryl hydrolysis in adenylate kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Lid-closing positions the two substrates and the active-site residues for efficient chemistry (i.e., P-transfer) and prohibits the alternative, energetically favorable reaction of phosphoryl hydrolysis (Kerns et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kerns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "c9cc7214-6154-46f4-8457-d36df660bbfe",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C17",
+      "claim": "Lid-opening, not P-transfer, is the rate-limiting step in the adenylate kinase catalytic cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Lid-opening, essential for product release, and not P-transfer is the rate-limiting step in the catalytic cycle and Mg2+ accelerates both steps (Kerns et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kerns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "d01764a9-1eff-44f7-90ea-9440501d951f",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C18",
+      "claim": "Mg2+ accelerates both lid-opening and P-transfer steps in adenylate kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Lid-opening, essential for product release, and not P-transfer is the rate-limiting step in the catalytic cycle and Mg2+ accelerates both steps (Kerns et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kerns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "3842df98-a94c-48f8-a3be-ab10de8abf4a",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C19",
+      "claim": "The free-energy activation barrier for the fully charged nucleotide state is \u0394fG\u2021 of 13 \u00b1 0.9 kcal/mol in the presence of Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reveal a much smaller free energy of activation for the fully charged nucleotide state (\u0394fG\u2021 of 13 \u00b1 0.9 kcal/mol) relative to monoprotonated state (\u0394fG\u2021 of 23 \u00b1 0.9 kcal/mol) (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the QM/MM calculations presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "912ca630-95cd-4ecf-859a-b4c3a7de955d",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C20",
+      "claim": "The free-energy activation barrier for the monoprotonated nucleotide state is \u0394fG\u2021 of 23 \u00b1 0.9 kcal/mol in the presence of Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reveal a much smaller free energy of activation for the fully charged nucleotide state (\u0394fG\u2021 of 13 \u00b1 0.9 kcal/mol) relative to monoprotonated state (\u0394fG\u2021 of 23 \u00b1 0.9 kcal/mol) (Table 1)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the QM/MM calculations presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "fde20af3-d568-440d-982a-b48b0a3e299f",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C21",
+      "claim": "The fully charged nucleotide state is the most reactive enzyme configuration for adenylate kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "The results reveal a much smaller free energy of activation for the fully charged nucleotide state (\u0394fG\u2021 of 13 \u00b1 0.9 kcal/mol) relative to monoprotonated state (\u0394fG\u2021 of 23 \u00b1 0.9 kcal/mol) (Table 1); hence, we conclude that this is the most reactive enzyme configuration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational data comparing activation barriers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "573a9d47-0ccd-4f22-94c7-9b4b211b9aaa",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C22",
+      "claim": "The free-energy activation barrier without Mg2+ is \u0394fG\u2021 of 34 \u00b1 1.6 kcal/mol for the monoprotonated nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "When the calculations were repeated in the absence of Mg2+ (with the nucleotide monoprotonated, since the fully charged nucleotide state prohibited the reaction), a large increase in the free-energy activation barrier was observed relative to the Mg2+-bound system (Figure 1C, Figure 1\u2014figure supplement 5, \u0394fG\u2021 of 34 \u00b1 1.6 kcal/mol)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct result from the QM/MM calculations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "1af416a6-86ac-4f3e-ac0e-f3c87154c83c",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C23",
+      "claim": "Mg2+ provides an overall acceleration of >105-fold for the phosphoryl-transfer reaction in adenylate kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "We note that only a lower limit for the overall acceleration by Mg2+ (>105-fold) could be estimated from published results (Kerns et al., 2015), since the P-transfer was too fast to be measured experimentally in the presence of Mg2+.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kerns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "b3d32acb-12fb-44bf-a861-5cd5057535f5",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C24",
+      "claim": "A contraction of the active site is observed while passing through the TSE in adenylate kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "For Adk, a contraction of the active site is observed while passing through the TSE, as captured by the decrease in the distance between acceptor and leaving group during the transition (Figure 1D, E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the QM/MM simulations and shown in Figure 1D, E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "f813d61d-80eb-403f-b9fb-991c8d7016f2",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C25",
+      "claim": "In the absence of Mg2+, the acceptor and donor need to be within 4 \u00c5 for the reaction to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Mg2+, the acceptor and donor need to be within 4 \u00c5 for the reaction to occur (Figure 1D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the QM/MM simulations and shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "fd2030f8-9a7a-4dbb-8cd4-9c2374b52033",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C26",
+      "claim": "In the presence of Mg2+, an acceptor\u2013donor distance of 4.5 \u00c5 is sufficient for the reaction to occur.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas in the presence of Mg2+ an acceptor\u2013donor distance of 4.5 \u00c5 is sufficient (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the QM/MM simulations and shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "dd4cf0cc-b26d-418e-bb7e-15d26d10cd83",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C27",
+      "claim": "The TSE changes from tight/synchronous without Mg2+ into loose with Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The TSE changes from tight/synchronous without Mg2+ (meaning high bond-order for both bonds between transferring phosphate to the leaving group and the attacking nucleophile) into loose with Mg2+ (lower bond-order for these two bonds; Figures 2 and 3; Lai and Cui, 2020a; Lai and Cui, 2020b; Roston et al., 2018; Roston and Cui, 2016).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the QM/MM simulations shown in Figures 2 and 3, and is consistent with definitions from cited literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "5f33dafb-758b-4105-8cb6-2c2a6ce6a951",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C28",
+      "claim": "The enzyme operates with a wide TSE in the presence of Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "In other words, the enzyme seems to operate with a wide TSE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the computational observations of multiple conformations with equal free energy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "b90d759b-f1fb-43fe-ae95-b83e8ea504e8",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C29",
+      "claim": "Without Mg2+, fewer conformations comprise the TSE.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, without Mg2+ fewer conformations seem to comprise the TSE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the computational simulations comparing reactions with and without Mg2+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "6a9babc7-a727-4514-b5f0-96db01049074",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C30",
+      "claim": "The difference in position of the transferring phosphate along the reaction coordinate within the TSE is about 1 \u00c5 with Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in position of the transferring phosphate along the reaction coordinate within the TSE (about 1 \u00c5 with Mg2+; Figure 1c, Figure 2 and Figure 3b)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured from the computational simulations and shown in the figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "f4301748-1d41-4eea-bd16-83970e49c0ea",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C31",
+      "claim": "The TSE contains many highly asymmetric conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference in position of the transferring phosphate along the reaction coordinate within the TSE (about 1 \u00c5 with Mg2+; Figure 1c, Figure 2 and Figure 3b) implies that the TSE contains many highly asymmetric conformations",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the computational data showing the range of phosphate positions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "8742b35f-d956-4658-98aa-16f7e08655e7",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C32",
+      "claim": "The asymmetry in the TSE is tied with nonplanar configurations of the transferring phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "This asymmetry is logically tied with nonplanar configurations of the transferring phosphate (Figure 3D and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the computational results in Figure 3D and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "1c3f4e5b-0669-40fa-9f2c-9bea7f7ceb5f",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C33",
+      "claim": "Mg2+ enables the donor and acceptor phosphates to come close enough to react.",
+      "claim_type": "EXPLICIT",
+      "source": "It enables the donor and acceptor phosphates to come close enough to react, thus achieving a reactive conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the QM/MM simulations comparing reactions with and without Mg2+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "a92554d1-423a-476c-812e-8f6837ff483c",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C34",
+      "claim": "In the absence of Mg2+, a proton must bridge the terminal phosphates to prevent strong electrostatic repulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of Mg2+, a proton must bridge the terminal phosphates to prevent the strong electrostatic repulsion between the two nucleotides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the QM/MM simulations without Mg2+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "9261a082-c99e-4711-9935-c905cf5d35a4",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C35",
+      "claim": "Mg2+ stabilizes the charge of the transferring phosphate and thereby lowers the enthalpic barrier.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Mg2+ stabilizes the charge of the transferring phosphate and thereby lowering the enthalpic barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the QM/MM simulations and charge analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "08d2fdb4-7abd-42b8-85ab-414b47839964",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C36",
+      "claim": "The presence of a cation results in a wide TSE.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, the presence of a cation seems to result in a wide TSE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from comparing computational results with and without Mg2+.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "e83f1218-08d1-4163-b7c4-cb6a65daba76",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C37",
+      "claim": "R85 arranges the beta-phosphates of the ADPs in the proper position for the reaction to be started.",
+      "claim_type": "EXPLICIT",
+      "source": "R85 appears to arrange the beta-phosphates of the ADPs in the proper position for the reaction to be started.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the QM/MM simulations analyzing the role of active site residues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "9d9dbd86-b6ff-4175-a48f-935cac6e4c3c",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C38",
+      "claim": "R150 and R161 are involved in anchoring ATP and AMP residues in the backward reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "R150 and R161 are involved in anchoring ATP and AMP residues in the backward reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the QM/MM simulations analyzing the role of active site residues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "1873187f-e4e5-4631-8a42-fc82199512ae",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C39",
+      "claim": "R36 is near to the alpha-phosphate of AD(M)P along the entire catalytic reaction, stabilizing both the TS and products.",
+      "claim_type": "EXPLICIT",
+      "source": "R36 is near to the alpha-phosphate of AD(M)P along the entire catalytic reaction, stabilizing both the TS and products.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the QM/MM simulations analyzing the role of active site residues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "6dedc06f-8253-44df-9b90-b37382a4acc0",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C40",
+      "claim": "The calculated difference in activation barriers with and without Mg from umbrella simulations is about 9.5 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the calculated difference in activation barriers with and without Mg from these umbrella simulations of about 9.5 kcal/mol is in good agreement with the experimentally determined ones of \u226511 kcal/mol",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the umbrella sampling simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "492e1207-5240-4a1a-a5a2-18a4b4cc2912",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C41",
+      "claim": "The experimentally determined difference in activation barriers with and without divalent cation is \u226511 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the calculated difference in activation barriers with and without Mg from these umbrella simulations of about 9.5 kcal/mol is in good agreement with the experimentally determined ones of \u226511 kcal/mol (P-transfer with Mg is >500 s\u22121 (Kerns et al., 2015) compared to 7.5 \u00d7 10\u22124 s\u22121 measured here).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is determined from experimental kinetics measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "5cda8d43-28c4-4a3c-a029-02e6d0403748",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C42",
+      "claim": "P-transfer rate with Mg is >500 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "P-transfer with Mg is >500 s\u22121 (Kerns et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kerns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "cad057da-6190-49b8-9040-83bfd25da85d",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C43",
+      "claim": "P-transfer rate without Mg is 7.5 \u00d7 10\u22124 s\u22121.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to 7.5 \u00d7 10\u22124 s\u22121 measured here",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured experimentally in this study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "b7b03ea4-b98e-4bfe-8ebe-eecbf066aa9a",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C44",
+      "claim": "A delocalized TSE for the fully active enzyme results in a lowering of the entropic barrier for the chemical step.",
+      "claim_type": "EXPLICIT",
+      "source": "This feature would result in a lowering of the entropic barrier for the chemical step, thereby contributing to the enzyme-catalyzed rate enhancement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on the computational findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "7d008b8b-7e0d-40bc-af57-a35656cefd44",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C45",
+      "claim": "The divalent cation is predicted to lower the activation entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the reaction with Mg2+ (fully active enzyme) revealed a more pronounced delocalization than the reaction in its absence, the divalent cation is predicted to lower the activation entropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the computational results showing a wider TSE with Mg2+.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "6ccf78dc-1726-4ca7-9753-5928686a6f4b",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C46",
+      "claim": "The enthalpic contribution to the chemical reaction barrier in the presence of Ca2+ is \u0394H\u2021 of 15.3 \u00b1 0.5 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting Eyring plots for the two experiments (Figure 5A) deliver the enthalpic (\u0394H\u2021 of 15.3 \u00b1 0.5 and 16.7 \u00b1 1 kcal/mol) and entropic (\u0394S\u2021 = \u22125.7 \u00b1 1.6 and \u221219.1 \u00b1 3.1 cal/mol/K) contributions to the chemical reaction barrier in the presence and absence of Ca2+, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "a640b639-4ef9-47e9-8101-6c347f3d56d7",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C47",
+      "claim": "The enthalpic contribution to the chemical reaction barrier in the absence of divalent cation is \u0394H\u2021 of 16.7 \u00b1 1 kcal/mol.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting Eyring plots for the two experiments (Figure 5A) deliver the enthalpic (\u0394H\u2021 of 15.3 \u00b1 0.5 and 16.7 \u00b1 1 kcal/mol) and entropic (\u0394S\u2021 = \u22125.7 \u00b1 1.6 and \u221219.1 \u00b1 3.1 cal/mol/K) contributions to the chemical reaction barrier in the presence and absence of Ca2+, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "abbc5bb1-b444-474a-a7fb-0bd03391162b",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C48",
+      "claim": "The entropic contribution to the chemical reaction barrier in the presence of Ca2+ is \u0394S\u2021 = \u22125.7 \u00b1 1.6 cal/mol/K.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting Eyring plots for the two experiments (Figure 5A) deliver the enthalpic (\u0394H\u2021 of 15.3 \u00b1 0.5 and 16.7 \u00b1 1 kcal/mol) and entropic (\u0394S\u2021 = \u22125.7 \u00b1 1.6 and \u221219.1 \u00b1 3.1 cal/mol/K) contributions to the chemical reaction barrier in the presence and absence of Ca2+, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "2431f828-06c5-48d4-959b-367429ce0eb8",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C49",
+      "claim": "The entropic contribution to the chemical reaction barrier in the absence of divalent cation is \u0394S\u2021 = \u221219.1 \u00b1 3.1 cal/mol/K.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting Eyring plots for the two experiments (Figure 5A) deliver the enthalpic (\u0394H\u2021 of 15.3 \u00b1 0.5 and 16.7 \u00b1 1 kcal/mol) and entropic (\u0394S\u2021 = \u22125.7 \u00b1 1.6 and \u221219.1 \u00b1 3.1 cal/mol/K) contributions to the chemical reaction barrier in the presence and absence of Ca2+, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally and shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "4aead171-8ef3-4be2-a217-069168103a10",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C50",
+      "claim": "The presence of Ca2+ reduces both enthalpic and entropic barriers considerably.",
+      "claim_type": "EXPLICIT",
+      "source": "The presence of Ca2+ reduces both barriers considerably.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the experimental measurements comparing reactions with and without Ca2+.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "086a8263-61ce-4328-9ef9-348f80cf2f67",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C51",
+      "claim": "There is a large decrease in the entropic barrier in the presence of a divalent cation.",
+      "claim_type": "EXPLICIT",
+      "source": "The striking new result, central to this work, is the large decrease in the entropic barrier in the presence of a divalent cation, thereby strongly supporting our key finding of a broader TSE from the QM/MM simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the experimental measurements and supports the computational predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "caf9d38c-05d9-4402-a0f9-3e915044f118",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C52",
+      "claim": "The reaction rate increases with higher pH in the presence of Ca2+.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the reaction rate increases with higher pH in the presence of Ca2+, whereas without a metal the opposite trend is observed (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "b2a7c78d-b614-4ee3-8013-a5ea31778b44",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C53",
+      "claim": "Without a metal, the reaction rate decreases with higher pH.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the reaction rate increases with higher pH in the presence of Ca2+, whereas without a metal the opposite trend is observed (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally and shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "7482222b-3596-4876-9374-1fb09d865f62",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C54",
+      "claim": "At low pH (pH 5), the P-transfer step becomes rate limiting even with Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, at low pH (pH 5), the P-transfer step becomes rate limiting even with Mg2+, allowing for an estimate of the rate enhancement of Mg2+ versus Ca2+ of 24-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from experimental measurements at different pH values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "9aab8398-1c88-4743-b688-4859e1eeb26c",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C55",
+      "claim": "The rate enhancement of Mg2+ versus Ca2+ is 24-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, at low pH (pH 5), the P-transfer step becomes rate limiting even with Mg2+, allowing for an estimate of the rate enhancement of Mg2+ versus Ca2+ of 24-fold.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is estimated from experimental measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "bbe36ba6-831f-4db7-9479-cc55f05addf0",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C56",
+      "claim": "Single Arg to Lys mutations show large decreases in the catalytic rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The large decrease in the catalytic rate for each single Arg to Lys mutation further highlights the notion of a highly choreographed active site for a well-coordinated P-transfer (Figure 3G)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is measured experimentally for mutants R36K, R85K, R124K, R150K, and R161K as shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "584e2295-24fb-4995-828b-42148ee094c2",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C57",
+      "claim": "Full lid-closure results in excellent preorientation of the donor and acceptor groups of the two bound nucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Full lid-closure results in an excellent preorientation of the donor and acceptor groups of the two bound nucleotides and the aiding active-site residues in the enzyme/substrate complex, in agreement with the general view of necessary pre-organization in enzyme catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from the structural and computational analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "6273c578-65df-48b6-8dc0-b33324ca9e31",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C58",
+      "claim": "Enzymes provide a fundamentally different, advantageous way to catalyze chemical reactions compared to the uncatalyzed reaction by employing a broad TSE.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we uncover a central new result that provokes a modified TS theory. Enzymes, due to their macromolecular nature, provide a fundamentally different, advantageous way to catalyze these chemical reactions compared to the uncatalyzed reaction by employing a broad TSE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the central conclusion of the manuscript based on computational and experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "d6701417-f3dd-47a3-9e5b-2dc629331738",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C59",
+      "claim": "Many different molecular configurations can be accommodated in the TS region with comparable energies via collective motions.",
+      "claim_type": "EXPLICIT",
+      "source": "Many different molecular configurations can be accommodated in the TS region with comparable energies via collective motions, spanning a 1-\u00c5 range along the reaction coordinate for the transferring phosphate that travels a total distance of only 2 \u00c5 during the P-transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the QM/MM simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "8ec83b26-b08e-4c4e-bd33-ba3d5da22f94",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C60",
+      "claim": "The transferring phosphate travels a total distance of only 2 \u00c5 during the P-transfer.",
+      "claim_type": "EXPLICIT",
+      "source": "Many different molecular configurations can be accommodated in the TS region with comparable energies via collective motions, spanning a 1-\u00c5 range along the reaction coordinate for the transferring phosphate that travels a total distance of only 2 \u00c5 during the P-transfer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is measured from the QM/MM simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "6b10e0eb-aa53-4a3d-bc7e-82c9b9d8b732",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C61",
+      "claim": "The findings explain why enzymes do not face an entropic bottleneck for catalysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings explain why enzymes do not face an entropic bottleneck for catalysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the discovery of the wide TSE.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "d2f41258-4bed-4507-bee6-9f1f418f2df7",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C62",
+      "claim": "The TSE comprises highly asymmetric conformations due to the asymmetric nature of enzyme active sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as enzyme active sites are asymmetric in contrast to the symmetric nature of the solvent for uncatalyzed reactions, we find that the TSE comprises also highly asymmetric conformations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the QM/MM simulations and is a logical consequence of active site structure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "1ac09400-46f4-4501-8469-d2073adf532c",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C63",
+      "claim": "A conformationally spread-out TSE is likely one reason why enzymes are much bigger than a few active-site residues.",
+      "claim_type": "EXPLICIT",
+      "source": "A conformationally spread-out TSE is likely one reason why enzymes are much bigger than a few active-site residues",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed based on the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "2bf25059-fddd-4261-a8b6-b25ee600a425",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C64",
+      "claim": "Residues remote from the site of chemical action allow for conformational flexibility without the protein unfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "On the one hand residues remote from the site of the chemical action allow for conformational flexibility without the protein unfolding",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation for enzyme size based on the TSE concept.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "14f66347-ab06-4d29-9b22-4fb46c6635ae",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C66",
+      "claim": "Remote residues reduce excursions into unproductive conformations.",
+      "claim_type": "EXPLICIT",
+      "source": "while reducing excursions into unproductive conformations (Otten et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Otten et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "9d1c7303-1c41-47c9-b487-42db8a94e8bc",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C67",
+      "claim": "The configurations seen in the simulations are along the P-transfer reaction coordinate.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter mechanism is directly demonstrated here in the TSE, as the configurations seen in the simulations are along the P-transfer reaction coordinate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the QM/MM simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "72172eda-e01b-481f-bba1-861e6d61e75a",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C68",
+      "claim": "Nature evolves a conformational step to be rate limiting as the 'price' the enzyme pays for stabilizing the ES complex.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that this is the 'price' the enzyme pays for stabilizing the ES complex to enable efficient rate acceleration of the chemical step, and for suppressing detrimental alternate reactions such as phosphate hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposed explanation for why lid-opening is rate limiting.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "edf36240-1678-4787-9da3-ce62eb9dbcfd",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C69",
+      "claim": "Extensive electrostatic interactions of five Arg and one Lys with the phosphoryl groups efficiently accelerate the P-transfer step.",
+      "claim_type": "EXPLICIT",
+      "source": "These principles have now been directly revealed on an atomic scale for Adk: extensive electrostatic interactions of five Arg and one Lys with the phosphoryl groups to efficiently accelerate the P-transfer step, which then need to be broken for lid-opening to allow product release.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed from the QM/MM simulations and mutational studies.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "8c38a8a1-20dd-4b7f-8e83-4e31953b9319",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C70",
+      "claim": "The importance of TSE for protein folding has been well documented.",
+      "claim_type": "EXPLICIT",
+      "source": "The importance of TSE including multiple transition pathways for protein folding (Frauenfelder et al., 2006; Royer, 2008), and more recently for protein conformational transitions within the folded state (Pontiggia et al., 2015; Stiller et al., 2019; Tsai and Nussinov, 2014) has been well documented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "8def4eca-eb3a-47dc-8900-ad3034b9a647",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C72",
+      "claim": "Protein folding and function is embedded in a unifying energy landscape which is simply altered by ligands and solvent.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, protein folding and function is embedded in a unifying energy landscape which is simply altered by ligands and solvent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual conclusion about protein energy landscapes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "71171721-c4b8-4a98-8336-98ef4beee770",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C73",
+      "claim": "The X-ray structure of Adk in complex with Ap5A coordinated to Zn2+ (2RGX) was used as the starting structure for QM/MM simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "The starting structures for the simulations were prepared using the X-ray structure of Adk in complex with Ap5A (P1,P5-Di(adenosine-5\u2032) pentaphosphate) and coordinated to Zn2+ (2RGX; Henzler-Wildman et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "0c32fb44-6591-466d-80f4-87def8ca5de6",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C74",
+      "claim": "The QM region was defined as the diphosphate moiety of both ADP molecules, the Mg2+ ion, plus the four coordinating water molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "For the QM/MM simulations, the QM region was defined as the diphosphate moiety of both ADP molecules, the Mg2+ ion, plus the four coordinating water molecules.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the computational methodology used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "588868fa-2657-4b21-9e8b-7068be6193b6",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C75",
+      "claim": "The equilibrated starting structures agree well with the X-ray structures of the enzyme bound to Mg2+/ADP (4CF7).",
+      "claim_type": "EXPLICIT",
+      "source": "The equilibrated starting structures agree well with the X-ray structures of the enzyme bound to Mg2+/ADP (4CF7; Kerns et al., 2015; Figure 1\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validates the computational setup by comparison with experimental structures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "d215bc93-c25c-497b-a725-da5840513118",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C76",
+      "claim": "Higher-level pure DFT(PBE) free-energy calculations are in excellent agreement with the FEPs obtained from SCC-DFTB calculations.",
+      "claim_type": "EXPLICIT",
+      "source": "During revision, we tested the accuracy and robustness of our results from our original QM/MM level of theory by employing higher-level pure DFT(PBE) free-energy calculations similar to the approaches used by Ganguly et al., 2020; Figure 1\u2014figure supplement 6. The results are in excellent agreement with the FEPs obtained before (Figure 1C, E; Figure 2A, C) thus further supporting the computational results.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This validates the computational results by using a higher level of theory.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "63b01cba-2cb4-4170-b1f0-a96b67696de5",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C77",
+      "claim": "A concerted mechanism is observed with no intermediates for the phosphoryl-transfer in Adk.",
+      "claim_type": "EXPLICIT",
+      "source": "For Adk, a concerted mechanism is observed with no intermediates (Figures 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed from the QM/MM simulations shown in Figures 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "4ff85c58-5ad7-4103-af68-e84815aa5ac1",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C78",
+      "claim": "Umbrella sampling FEPs corroborate the key difference in the range of the TSE.",
+      "claim_type": "EXPLICIT",
+      "source": "The umbrella sampling FEPs (Figure 4a\u2013d) corroborate the key difference in the range of the TSE.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by the umbrella sampling calculations in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "41a76d11-40c1-4113-8492-0c749a5c3fc0",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C79",
+      "claim": "The activation free energies are smaller for the umbrella sampling when compared to the multiple steered molecular dynamics (MSMD).",
+      "claim_type": "EXPLICIT",
+      "source": "Noteworthy, the activation free energies are smaller for the umbrella sampling when compared to the multiple steered molecular dynamics (MSMD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed by comparing the results from the two computational methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "44962d4f-b4ff-481d-a1fa-703c6166a53c",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C80",
+      "claim": "Exponential averaging tends to overestimate free-energy barriers.",
+      "claim_type": "EXPLICIT",
+      "source": "It is well known that exponential averaging tends to overestimate free-energy barriers, and particularly when they are too high (Park et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Park et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "2df2072e-6c76-4d7f-90d9-9b312ca3d463",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C81",
+      "claim": "The commitment analysis displays a very shallow change along the reaction coordinate in the presence of Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "A consequent comparative commitment analysis that calculates the probability of reaching either reactants or products displays a very shallow change along the reaction coordinate in the presence of Mg2+, further corroborating a wide TSE for the P-transfer step in the fully active enzyme",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown by the commitment analysis in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "be3c2ac2-d349-42df-95c1-2f103bcf2174",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C82",
+      "claim": "The commitment analysis shows a narrow and steep change in the committors without Mg2+, indicative of a narrower TSE.",
+      "claim_type": "EXPLICIT",
+      "source": "in stark contrast to a narrow and steep change in the committors indicative of a narrower TSE without Mg2+ (Figure 4d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown by the commitment analysis in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "7d589295-1b25-4ce3-91d0-282fac116ebb",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C83",
+      "claim": "Ca2+ is an appropriate mimic to selectively probe the chemical step in place of Mg2+.",
+      "claim_type": "EXPLICIT",
+      "source": "The experimental trick of replacing Mg2+ with Ca2+ was used since the chemical step with Mg2+ is too fast to be experimentally measured, and previous studies showed that Ca2+ is an appropriate mimic to selectively probe the chemical step (Kerns et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is cited from Kerns et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "301c31af-2230-48a8-abc5-d3198b91b1a0",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C84",
+      "claim": "The fully charged nucleotides state was the most reactive in the presence of the metal.",
+      "claim_type": "EXPLICIT",
+      "source": "These experimental results match the simulation results: the fully charged nucleotides state was the most reactive in the presence of the metal, whereas the monoprotonated state had a much higher free-energy barrier.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the pH-dependent kinetics experiments matching the computational predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "7099a101-9d6f-46ac-9941-3661b9de91d7",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "claim_id": "C85",
+      "claim": "Without metal, only the monoprotonated nucleotides were reactive.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, without metal only the monoprotonated nucleotides were reactive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the pH-dependent kinetics experiments matching the computational predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "QM/MM simulations reveal a structurally wide transition-state ensemble (TSE) for the phosphoryl-transfer step in adenylate kinase with Mg2+, spanning ~1 \u00c5 along the reaction coordinate and comprising many asymmetric conformations. Without Mg2+, the TSE is narrower. This finding is corroborated by umbrella sampling and committor analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6, C28-C32, C59-C60, C62, C78, C81-C82 collectively demonstrate a wide TSE with Mg2+ versus a narrow TSE without Mg2+ through multiple computational approaches (MSMD, umbrella sampling, committor analysis). The computational data consistently show a ~1 \u00c5 range for the transferring phosphate position in the TSE with Mg2+, asymmetric conformations, and validation through multiple independent methods (Figures 1-4, Table 1).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "34ec88fb-8339-41dd-97f0-efc91af3b9b8",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "QM/MM calculations show that the fully charged nucleotide state has a much lower activation barrier (\u0394fG\u2021 = 13 \u00b1 0.9 kcal/mol) than the monoprotonated state (\u0394fG\u2021 = 23 \u00b1 0.9 kcal/mol) with Mg2+, and that Mg2+ lowers the barrier by ~9.5-11 kcal/mol compared to the reaction without Mg2+ (\u0394fG\u2021 = 34 \u00b1 1.6 kcal/mol). Higher-level DFT calculations validate these results.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22, C40-C41, C76 provide consistent computational and experimental evidence for the activation barriers. The calculated difference (~9.5 kcal/mol) agrees well with experimental measurements (\u226511 kcal/mol), and validation with higher-level DFT(PBE) calculations (C76) strengthens confidence in the results. The agreement between multiple computational methods and experimental data supports these quantitative findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "bc36d9a8-cd82-4410-b902-afe8a89b7109",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Experimental temperature-dependent kinetics measurements show that Ca2+ (as a Mg2+ mimic) significantly reduces both the enthalpic barrier (from 16.7 to 15.3 kcal/mol) and especially the entropic barrier (from -19.1 to -5.7 cal/mol/K) for the phosphoryl-transfer step, confirming the computational prediction of a broader TSE with divalent cations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C51, C7 present experimental validation of the key computational prediction. The large decrease in activation entropy (\u0394\u0394S\u2021 \u2248 13.4 cal/mol/K) with Ca2+ directly supports the computational finding of a wider TSE with divalent cations. The Eyring plot analysis (Figure 5A) provides rigorous thermodynamic evidence, and the experimental design appropriately uses Ca2+ as a measurable proxy for Mg2+ (C83).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "b43a0dfb-b9aa-46c2-a7f0-7523b2d56100",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "pH-dependent kinetics experiments show that the reaction rate increases with pH in the presence of Ca2+ but decreases with pH without metal, confirming that the fully charged nucleotide state is most reactive with metal while the monoprotonated state is required without metal.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C53, C84-C85 provide experimental validation of the computational predictions about protonation states. The opposite pH dependencies with and without metal (Figure 5B) directly confirm the QM/MM predictions about which nucleotide protonation states are reactive under different conditions. This represents a clear experimental test of a specific computational prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "d3ff0ade-9c02-4b93-a801-1b6fe6986a73",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mg2+ plays multiple catalytic roles: it enables donor and acceptor phosphates to approach closely enough to react, eliminates the need for a bridging proton to prevent electrostatic repulsion, stabilizes the charge of the transferring phosphate to lower the enthalpic barrier, and results in a wide TSE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C36 describe the mechanistic roles of Mg2+ observed in QM/MM simulations. These are directly supported by computational data showing structural changes, charge distributions, and TSE characteristics with and without Mg2+ (Figures 1-3, Figure 3\u2014figure supplements 3-5). The multiple roles are consistent with the observed activation barrier differences and structural features.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "d7f1b8ae-adcd-4cc3-a1fd-f3c8bb9eb621",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Active site arginine residues (R36, R85, R124, R150, R161) play critical roles in positioning substrates and stabilizing the transition state, as demonstrated by QM/MM simulations and confirmed by large rate decreases (>1000-fold) in Arg-to-Lys mutants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39, C56, C69 combine computational predictions with experimental validation. The QM/MM simulations identify specific roles for each arginine (Figure 3, Figure 3\u2014figure supplements 6-8), and the mutational analysis (Table 2) confirms their importance with dramatic rate reductions. The convergence of computational and experimental evidence strongly supports these claims about active site organization.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "e6c90cc4-3ff1-4d84-b45e-f70986c8973b",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The TSE changes from tight/synchronous without Mg2+ to loose with Mg2+, with active site contraction during the transition. Without Mg2+, acceptor and donor must be within 4 \u00c5, while with Mg2+ a distance of 4.5 \u00c5 is sufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C27 describe the geometric and electronic character of the TSE from QM/MM simulations. These are directly observed in the Moore-O'Ferrall-Jencks diagrams (Figure 2) and distance plots (Figure 1D-E), and are consistent with established definitions from the cited literature (Roston and Cui, 2016). The characterization is well-supported by the computational data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "f1742d62-9d54-45ea-8a1e-dfc01c31e1e6",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The QM/MM computational setup uses appropriate starting structures, QM region definitions, and force fields, with validation against X-ray structures and higher-level DFT calculations. A concerted mechanism with no intermediates is observed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C73-C77 describe the computational methodology and validation. The starting structures agree well with experimental X-ray structures (C75, Figure 1\u2014figure supplement 2), the QM region is appropriately defined (C74), and higher-level DFT calculations validate the results (C76, Figure 1\u2014figure supplement 6). The concerted mechanism (C77) is clearly shown in the free energy profiles. These methodological details are well-documented and validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "fa260551-fc78-4078-8254-65d75305d86b",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "At low pH (pH 5), the P-transfer step becomes rate limiting even with Mg2+, allowing estimation of a 24-fold rate enhancement of Mg2+ versus Ca2+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 report an experimental observation and rate comparison. This is a straightforward experimental measurement that provides additional quantitative information about metal ion effects. The claim is directly supported by the experimental data presented.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "3ad921d6-d5e3-49f7-a693-5b32f54667ce",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Activation free energies from umbrella sampling are smaller than from MSMD, consistent with the known tendency of exponential averaging to overestimate barriers, especially high ones.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 compare two computational methods and explain the difference. The observation is directly stated (C79) and the explanation is supported by citation to established knowledge (C80, Park et al., 2003). This is a methodological observation that helps interpret the computational results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "3f3a40c9-9507-4f95-89a1-2c0d40a61b91",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The wide TSE provides a fundamentally different catalytic mechanism that lowers the entropic barrier and explains why enzymes do not face an entropic bottleneck, representing a modified transition-state theory for enzyme catalysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C45, C58, C61 present the central conceptual conclusion of the manuscript. These interpretations are well-supported by the convergence of computational predictions (wide TSE) and experimental validation (reduced activation entropy). The logic connecting the wide TSE to reduced entropic barriers is sound, and the experimental confirmation of reduced \u0394S\u2021 with divalent cations directly supports this interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "18ba4ee1-113d-4271-b927-59caa8854f25",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "A conformationally spread-out TSE may explain why enzymes are much larger than just active-site residues, as remote residues allow conformational flexibility without unfolding while reducing unproductive conformations, with TSE configurations lying along the reaction coordinate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C63-C64, C66-C67 propose broader implications of the TSE concept. While C67 is directly demonstrated by the simulations, C63-C64 are explicitly speculative hypotheses about enzyme size. C66 is supported by citation but the connection to the current findings is indirect. These represent interesting hypotheses that extend beyond what is directly demonstrated in this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "b31023c7-00e7-40e0-8ca3-43aaad8d87a8",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The rate-limiting lid-opening step represents the 'price' the enzyme pays for stabilizing the ES complex to enable efficient rate acceleration and suppress detrimental alternate reactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C68 proposes an evolutionary/mechanistic explanation for why lid-opening is rate-limiting. While this is a reasonable hypothesis consistent with the data, it is explicitly presented as a proposal ('We propose that...') and represents speculation about evolutionary optimization rather than a directly tested result. The underlying observations about ES stabilization and rate acceleration are supported, but the teleological interpretation is speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "c8593c43-a782-425a-a858-1dd492d76bc2",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background and context claims about transition-state theory, protein ensembles, adenylate kinase function, and prior experimental results establish the foundation for the current study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C8-C18, C23, C42, C70, C72, C83 provide background information, cite established knowledge, and reference prior experimental work. These are appropriately cited and represent accurate statements of established concepts and prior results. They provide necessary context but are not novel findings of this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "4ba834c9-b810-4287-96dc-829b89ceaaaa",
+      "content_id": "4c82bb03-70ad-4e85-bd75-094db55fd2fa",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Full lid-closure results in excellent preorientation of donor and acceptor groups and active-site residues in the enzyme/substrate complex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C57 describes a conclusion from structural and computational analysis about substrate positioning. This is supported by the QM/MM simulations showing the organized active site (Figure 3) and is consistent with general principles of enzyme catalysis. The claim is well-supported by the computational data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "22815567-2416-41d0-8471-cdc41160be29",
+      "content_id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors claim that adenylate kinase operates with a broad, conformationally delocalized transition-state ensemble (TSE) in the presence of Mg2+, spanning ~1 \u00c5 along the reaction coordinate and including asymmetric conformations. This wide TSE is proposed as a fundamental catalytic strategy that avoids entropic bottlenecks.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Multiple reviewers express significant concerns about this central claim. One reviewer states the conclusion 'appears this may be a misinterpretation of the simulation results' and notes 'questions still remain about their conclusion regarding the wide-TS.' Another reviewer indicates 'it is not clear the degree to which this hypothesis is fully supported by the data' and notes the interpretation is 'somewhat speculative.' The editor summarizes that 'there remain limitations in the computational analyses' leading to 'the level of evidence is incomplete.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "c053a2fb-087c-45a1-8061-bc53c808d2eb",
+      "content_id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The QM/MM simulations report specific activation free energy barriers: 13\u00b10.9 kcal/mol for fully charged nucleotides with Mg2+, 23\u00b10.9 kcal/mol for monoprotonated with Mg2+, and 34\u00b11.6 kcal/mol without Mg2+. Higher-level DFT(PBE) calculations are claimed to be in excellent agreement with SCC-DFTB results, though umbrella sampling gives lower barriers than steered MD.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raise concerns about the computational methodology and consistency. One reviewer explicitly states authors 'should clearly point out the large discrepancies between DFTB QM/MM and PBE QM/MM results (shape of free energy files) and also between steered MD and umbrella sampling results (barriers).' Another notes 'concerns about the determined free energy profiles compared to the experimental estimate.' These methodological inconsistencies undermine confidence in the specific barrier values reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "92fe95c9-e6a1-44f5-b26e-973e2122f027",
+      "content_id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Experimental kinetics measurements show a large decrease in activation entropy with divalent cation (\u0394S\u2021 = -5.7\u00b11.6 cal/mol/K with Ca2+ vs -19.1\u00b13.1 cal/mol/K without), which the authors claim confirms the computational prediction of a wider TSE with metal ion present.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the experimental data is valuable, they question the interpretation. One reviewer states 'Another question is the large change in activation entropy (between the reaction with and without divalent cations). This difference may be difficult to attribute sorely to the difference in the reaction geometries near TS.' Another notes that 'The observation of a \"wide conformational ensemble\" is not a quantitative measure of entropy' and that authors 'miss an opportunity to compare directly to the experimental measurements' by not performing temperature-dependent simulations. The connection between TSE width and entropy is questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1",
+      "content_id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The simulations show that Mg2+ enables a looser TSE with longer acceptor-donor distances (4.5 \u00c5 vs 4 \u00c5), changes the mechanism from tight/synchronous to loose, stabilizes the transferring phosphate charge, and eliminates the need for a bridging proton.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These mechanistic details from the simulations are not specifically challenged by reviewers. The editor notes 'a broad set of computations and experimental analyses' and one reviewer acknowledges 'A combined application of simulation and experiments is a strength.' The specific geometric and electronic changes with Mg2+ appear accepted as computational observations, though their interpretation regarding TSE width remains contested.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "3fb67e71-8662-469f-bef6-becacda476fc",
+      "content_id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "pH-dependent kinetics experiments show opposite trends with and without metal: reaction rate increases with pH in presence of Ca2+ but decreases without metal. This matches computational predictions that fully charged nucleotides are most reactive with metal while monoprotonated state is required without metal.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these experimental observations or their consistency with simulations. One reviewer notes 'the experimental data is valuable' and another acknowledges the study 'combines theoretical calculations and supporting experiments.' The pH-dependence data appears to be accepted as supporting evidence for the protonation state predictions from simulations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "a7b1b890-86bd-4635-a4dd-541e0886ff54",
+      "content_id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Active site arginine residues (R36, R85, R124, R150, R161) play specific roles in positioning substrates and stabilizing the transition state, with single Arg-to-Lys mutations causing large decreases in catalytic rate.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These findings about active site residues and mutational effects are not questioned by reviewers. The mutagenesis data provides experimental validation of computational predictions about residue roles. Reviewers acknowledge the combination of computational and experimental approaches without raising concerns about these specific claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "3e660eb0-1d30-4d22-9de4-87d26b8345aa",
+      "content_id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "At low pH (pH 5), P-transfer becomes rate limiting even with Mg2+, allowing estimation of a 24-fold rate enhancement of Mg2+ versus Ca2+.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This experimental observation is not challenged by reviewers and provides useful comparative data on metal ion effects. It represents a straightforward kinetic measurement that supports the general importance of metal ions without being central to the disputed TSE width claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "d972ec1f-d833-4b6e-9aa2-85ef2985539e",
+      "content_id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Umbrella sampling and commitment analysis show a shallow change in committor probability along the reaction coordinate with Mg2+, versus a steep change without Mg2+, corroborating a wider TSE with metal ion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While these computational analyses are presented as supporting evidence, reviewers' concerns about 'large discrepancies between DFTB QM/MM and PBE QM/MM results' and between 'steered MD and umbrella sampling results' extend to these analyses. The commitment analysis interpretation depends on the validity of the underlying free energy surfaces, which reviewers question.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "e8af000a-c21e-4496-a80a-0027f1c911a8",
+      "content_id": "eac8224f-f9e4-47a1-aeb8-80abb0b8ef62",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors propose that employing a broad TSE represents a fundamentally different catalytic strategy compared to uncatalyzed reactions, modifying transition-state theory for enzymes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers explicitly challenge this broad claim. One states 'In order to assert that something is part of a catalytic strategy of an enzyme, it would be necessary to demonstrate from simulations that the activation entropy for the baseline reaction is indeed greater and the transition state ensemble less \"wide\"... However, these simulations were not performed.' Another notes the authors 'miss an opportunity' to make proper comparisons. The fundamental claim requires comparison to non-enzymatic reaction that was not performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "019ca2e5-16ca-4620-85d3-367338466548",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "f4cfa748-b4de-4311-8082-06859d42d774",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "26aa31c3-670e-4f4e-855e-4770310aff8f",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "5f33dafb-758b-4105-8cb6-2c2a6ce6a951",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "b90d759b-f1fb-43fe-ae95-b83e8ea504e8",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "6a9babc7-a727-4514-b5f0-96db01049074",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "f4301748-1d41-4eea-bd16-83970e49c0ea",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "8742b35f-d956-4658-98aa-16f7e08655e7",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "d6701417-f3dd-47a3-9e5b-2dc629331738",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "8ec83b26-b08e-4c4e-bd33-ba3d5da22f94",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "d2f41258-4bed-4507-bee6-9f1f418f2df7",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "4ff85c58-5ad7-4103-af68-e84815aa5ac1",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "2df2072e-6c76-4d7f-90d9-9b312ca3d463",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "be3c2ac2-d349-42df-95c1-2f103bcf2174",
+      "result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f"
+    },
+    {
+      "claim_id": "3842df98-a94c-48f8-a3be-ab10de8abf4a",
+      "result_id": "34ec88fb-8339-41dd-97f0-efc91af3b9b8"
+    },
+    {
+      "claim_id": "912ca630-95cd-4ecf-859a-b4c3a7de955d",
+      "result_id": "34ec88fb-8339-41dd-97f0-efc91af3b9b8"
+    },
+    {
+      "claim_id": "fde20af3-d568-440d-982a-b48b0a3e299f",
+      "result_id": "34ec88fb-8339-41dd-97f0-efc91af3b9b8"
+    },
+    {
+      "claim_id": "573a9d47-0ccd-4f22-94c7-9b4b211b9aaa",
+      "result_id": "34ec88fb-8339-41dd-97f0-efc91af3b9b8"
+    },
+    {
+      "claim_id": "6dedc06f-8253-44df-9b90-b37382a4acc0",
+      "result_id": "34ec88fb-8339-41dd-97f0-efc91af3b9b8"
+    },
+    {
+      "claim_id": "492e1207-5240-4a1a-a5a2-18a4b4cc2912",
+      "result_id": "34ec88fb-8339-41dd-97f0-efc91af3b9b8"
+    },
+    {
+      "claim_id": "d215bc93-c25c-497b-a725-da5840513118",
+      "result_id": "34ec88fb-8339-41dd-97f0-efc91af3b9b8"
+    },
+    {
+      "claim_id": "6ccf78dc-1726-4ca7-9753-5928686a6f4b",
+      "result_id": "bc36d9a8-cd82-4410-b902-afe8a89b7109"
+    },
+    {
+      "claim_id": "a640b639-4ef9-47e9-8101-6c347f3d56d7",
+      "result_id": "bc36d9a8-cd82-4410-b902-afe8a89b7109"
+    },
+    {
+      "claim_id": "abbc5bb1-b444-474a-a7fb-0bd03391162b",
+      "result_id": "bc36d9a8-cd82-4410-b902-afe8a89b7109"
+    },
+    {
+      "claim_id": "2431f828-06c5-48d4-959b-367429ce0eb8",
+      "result_id": "bc36d9a8-cd82-4410-b902-afe8a89b7109"
+    },
+    {
+      "claim_id": "4aead171-8ef3-4be2-a217-069168103a10",
+      "result_id": "bc36d9a8-cd82-4410-b902-afe8a89b7109"
+    },
+    {
+      "claim_id": "086a8263-61ce-4328-9ef9-348f80cf2f67",
+      "result_id": "bc36d9a8-cd82-4410-b902-afe8a89b7109"
+    },
+    {
+      "claim_id": "e21272b5-8fea-4c3d-8f06-e1e4cb758838",
+      "result_id": "bc36d9a8-cd82-4410-b902-afe8a89b7109"
+    },
+    {
+      "claim_id": "caf9d38c-05d9-4402-a0f9-3e915044f118",
+      "result_id": "b43a0dfb-b9aa-46c2-a7f0-7523b2d56100"
+    },
+    {
+      "claim_id": "b2a7c78d-b614-4ee3-8013-a5ea31778b44",
+      "result_id": "b43a0dfb-b9aa-46c2-a7f0-7523b2d56100"
+    },
+    {
+      "claim_id": "301c31af-2230-48a8-abc5-d3198b91b1a0",
+      "result_id": "b43a0dfb-b9aa-46c2-a7f0-7523b2d56100"
+    },
+    {
+      "claim_id": "7099a101-9d6f-46ac-9941-3661b9de91d7",
+      "result_id": "b43a0dfb-b9aa-46c2-a7f0-7523b2d56100"
+    },
+    {
+      "claim_id": "1c3f4e5b-0669-40fa-9f2c-9bea7f7ceb5f",
+      "result_id": "d3ff0ade-9c02-4b93-a801-1b6fe6986a73"
+    },
+    {
+      "claim_id": "a92554d1-423a-476c-812e-8f6837ff483c",
+      "result_id": "d3ff0ade-9c02-4b93-a801-1b6fe6986a73"
+    },
+    {
+      "claim_id": "9261a082-c99e-4711-9935-c905cf5d35a4",
+      "result_id": "d3ff0ade-9c02-4b93-a801-1b6fe6986a73"
+    },
+    {
+      "claim_id": "08d2fdb4-7abd-42b8-85ab-414b47839964",
+      "result_id": "d3ff0ade-9c02-4b93-a801-1b6fe6986a73"
+    },
+    {
+      "claim_id": "e83f1218-08d1-4163-b7c4-cb6a65daba76",
+      "result_id": "d7f1b8ae-adcd-4cc3-a1fd-f3c8bb9eb621"
+    },
+    {
+      "claim_id": "9d9dbd86-b6ff-4175-a48f-935cac6e4c3c",
+      "result_id": "d7f1b8ae-adcd-4cc3-a1fd-f3c8bb9eb621"
+    },
+    {
+      "claim_id": "1873187f-e4e5-4631-8a42-fc82199512ae",
+      "result_id": "d7f1b8ae-adcd-4cc3-a1fd-f3c8bb9eb621"
+    },
+    {
+      "claim_id": "bbe36ba6-831f-4db7-9479-cc55f05addf0",
+      "result_id": "d7f1b8ae-adcd-4cc3-a1fd-f3c8bb9eb621"
+    },
+    {
+      "claim_id": "edf36240-1678-4787-9da3-ce62eb9dbcfd",
+      "result_id": "d7f1b8ae-adcd-4cc3-a1fd-f3c8bb9eb621"
+    },
+    {
+      "claim_id": "b3d32acb-12fb-44bf-a861-5cd5057535f5",
+      "result_id": "e6c90cc4-3ff1-4d84-b45e-f70986c8973b"
+    },
+    {
+      "claim_id": "f813d61d-80eb-403f-b9fb-991c8d7016f2",
+      "result_id": "e6c90cc4-3ff1-4d84-b45e-f70986c8973b"
+    },
+    {
+      "claim_id": "fd2030f8-9a7a-4dbb-8cd4-9c2374b52033",
+      "result_id": "e6c90cc4-3ff1-4d84-b45e-f70986c8973b"
+    },
+    {
+      "claim_id": "dd4cf0cc-b26d-418e-bb7e-15d26d10cd83",
+      "result_id": "e6c90cc4-3ff1-4d84-b45e-f70986c8973b"
+    },
+    {
+      "claim_id": "71171721-c4b8-4a98-8336-98ef4beee770",
+      "result_id": "f1742d62-9d54-45ea-8a1e-dfc01c31e1e6"
+    },
+    {
+      "claim_id": "0c32fb44-6591-466d-80f4-87def8ca5de6",
+      "result_id": "f1742d62-9d54-45ea-8a1e-dfc01c31e1e6"
+    },
+    {
+      "claim_id": "588868fa-2657-4b21-9e8b-7068be6193b6",
+      "result_id": "f1742d62-9d54-45ea-8a1e-dfc01c31e1e6"
+    },
+    {
+      "claim_id": "d215bc93-c25c-497b-a725-da5840513118",
+      "result_id": "f1742d62-9d54-45ea-8a1e-dfc01c31e1e6"
+    },
+    {
+      "claim_id": "63b01cba-2cb4-4170-b1f0-a96b67696de5",
+      "result_id": "f1742d62-9d54-45ea-8a1e-dfc01c31e1e6"
+    },
+    {
+      "claim_id": "7482222b-3596-4876-9374-1fb09d865f62",
+      "result_id": "fa260551-fc78-4078-8254-65d75305d86b"
+    },
+    {
+      "claim_id": "9aab8398-1c88-4743-b688-4859e1eeb26c",
+      "result_id": "fa260551-fc78-4078-8254-65d75305d86b"
+    },
+    {
+      "claim_id": "41a76d11-40c1-4113-8492-0c749a5c3fc0",
+      "result_id": "3ad921d6-d5e3-49f7-a693-5b32f54667ce"
+    },
+    {
+      "claim_id": "44962d4f-b4ff-481d-a1fa-703c6166a53c",
+      "result_id": "3ad921d6-d5e3-49f7-a693-5b32f54667ce"
+    },
+    {
+      "claim_id": "b7b03ea4-b98e-4bfe-8ebe-eecbf066aa9a",
+      "result_id": "3f3a40c9-9507-4f95-89a1-2c0d40a61b91"
+    },
+    {
+      "claim_id": "7d008b8b-7e0d-40bc-af57-a35656cefd44",
+      "result_id": "3f3a40c9-9507-4f95-89a1-2c0d40a61b91"
+    },
+    {
+      "claim_id": "6273c578-65df-48b6-8dc0-b33324ca9e31",
+      "result_id": "3f3a40c9-9507-4f95-89a1-2c0d40a61b91"
+    },
+    {
+      "claim_id": "6b10e0eb-aa53-4a3d-bc7e-82c9b9d8b732",
+      "result_id": "3f3a40c9-9507-4f95-89a1-2c0d40a61b91"
+    },
+    {
+      "claim_id": "1ac09400-46f4-4501-8469-d2073adf532c",
+      "result_id": "18ba4ee1-113d-4271-b927-59caa8854f25"
+    },
+    {
+      "claim_id": "2bf25059-fddd-4261-a8b6-b25ee600a425",
+      "result_id": "18ba4ee1-113d-4271-b927-59caa8854f25"
+    },
+    {
+      "claim_id": "14f66347-ab06-4d29-9b22-4fb46c6635ae",
+      "result_id": "18ba4ee1-113d-4271-b927-59caa8854f25"
+    },
+    {
+      "claim_id": "9d1c7303-1c41-47c9-b487-42db8a94e8bc",
+      "result_id": "18ba4ee1-113d-4271-b927-59caa8854f25"
+    },
+    {
+      "claim_id": "72172eda-e01b-481f-bba1-861e6d61e75a",
+      "result_id": "b31023c7-00e7-40e0-8ca3-43aaad8d87a8"
+    },
+    {
+      "claim_id": "8bf2894e-bd69-4244-810e-e3c3a0ead25d",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "7a4a6e3c-191e-4d3a-8821-dbaf11898c98",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "09e490c7-dc99-494a-a4e3-eaa6accae06b",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "5d2c3901-3414-439e-8a81-46fa3c41ad3a",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "2f97e715-51b7-4dc1-8685-b4bc0e4f967b",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "8c887031-f90e-4ba1-910a-bee52532dc56",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "8217879d-d64f-4698-b4a2-b7417ee9cb9b",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "e615df38-ad0a-49cf-9a83-63376b28fcfc",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "6ad53a12-92bf-47b8-a917-9d5b9e3cc014",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "53650b24-ee17-4025-8264-b2bee63bb66f",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "1cf84da8-9cd1-4ffa-b6fd-45fa4ad1842e",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "7ee840c8-cb53-4847-acb0-ec542ae830c6",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "c9cc7214-6154-46f4-8457-d36df660bbfe",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "d01764a9-1eff-44f7-90ea-9440501d951f",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "1af416a6-86ac-4f3e-ac0e-f3c87154c83c",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "5cda8d43-28c4-4a3c-a029-02e6d0403748",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "8c38a8a1-20dd-4b7f-8e83-4e31953b9319",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "8def4eca-eb3a-47dc-8900-ad3034b9a647",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "7d589295-1b25-4ce3-91d0-282fac116ebb",
+      "result_id": "c8593c43-a782-425a-a858-1dd492d76bc2"
+    },
+    {
+      "claim_id": "584e2295-24fb-4995-828b-42148ee094c2",
+      "result_id": "4ba834c9-b810-4287-96dc-829b89ceaaaa"
+    },
+    {
+      "claim_id": "019ca2e5-16ca-4620-85d3-367338466548",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "f4cfa748-b4de-4311-8082-06859d42d774",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "26aa31c3-670e-4f4e-855e-4770310aff8f",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "5f33dafb-758b-4105-8cb6-2c2a6ce6a951",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "b90d759b-f1fb-43fe-ae95-b83e8ea504e8",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "6a9babc7-a727-4514-b5f0-96db01049074",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "f4301748-1d41-4eea-bd16-83970e49c0ea",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "8742b35f-d956-4658-98aa-16f7e08655e7",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "08d2fdb4-7abd-42b8-85ab-414b47839964",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "6273c578-65df-48b6-8dc0-b33324ca9e31",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "d6701417-f3dd-47a3-9e5b-2dc629331738",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "6b10e0eb-aa53-4a3d-bc7e-82c9b9d8b732",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "d2f41258-4bed-4507-bee6-9f1f418f2df7",
+      "result_id": "22815567-2416-41d0-8471-cdc41160be29"
+    },
+    {
+      "claim_id": "3842df98-a94c-48f8-a3be-ab10de8abf4a",
+      "result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb"
+    },
+    {
+      "claim_id": "912ca630-95cd-4ecf-859a-b4c3a7de955d",
+      "result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb"
+    },
+    {
+      "claim_id": "fde20af3-d568-440d-982a-b48b0a3e299f",
+      "result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb"
+    },
+    {
+      "claim_id": "573a9d47-0ccd-4f22-94c7-9b4b211b9aaa",
+      "result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb"
+    },
+    {
+      "claim_id": "6dedc06f-8253-44df-9b90-b37382a4acc0",
+      "result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb"
+    },
+    {
+      "claim_id": "492e1207-5240-4a1a-a5a2-18a4b4cc2912",
+      "result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb"
+    },
+    {
+      "claim_id": "d215bc93-c25c-497b-a725-da5840513118",
+      "result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb"
+    },
+    {
+      "claim_id": "41a76d11-40c1-4113-8492-0c749a5c3fc0",
+      "result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb"
+    },
+    {
+      "claim_id": "b7b03ea4-b98e-4bfe-8ebe-eecbf066aa9a",
+      "result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027"
+    },
+    {
+      "claim_id": "7d008b8b-7e0d-40bc-af57-a35656cefd44",
+      "result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027"
+    },
+    {
+      "claim_id": "6ccf78dc-1726-4ca7-9753-5928686a6f4b",
+      "result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027"
+    },
+    {
+      "claim_id": "a640b639-4ef9-47e9-8101-6c347f3d56d7",
+      "result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027"
+    },
+    {
+      "claim_id": "abbc5bb1-b444-474a-a7fb-0bd03391162b",
+      "result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027"
+    },
+    {
+      "claim_id": "2431f828-06c5-48d4-959b-367429ce0eb8",
+      "result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027"
+    },
+    {
+      "claim_id": "4aead171-8ef3-4be2-a217-069168103a10",
+      "result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027"
+    },
+    {
+      "claim_id": "086a8263-61ce-4328-9ef9-348f80cf2f67",
+      "result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027"
+    },
+    {
+      "claim_id": "e21272b5-8fea-4c3d-8f06-e1e4cb758838",
+      "result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027"
+    },
+    {
+      "claim_id": "b3d32acb-12fb-44bf-a861-5cd5057535f5",
+      "result_id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1"
+    },
+    {
+      "claim_id": "f813d61d-80eb-403f-b9fb-991c8d7016f2",
+      "result_id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1"
+    },
+    {
+      "claim_id": "fd2030f8-9a7a-4dbb-8cd4-9c2374b52033",
+      "result_id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1"
+    },
+    {
+      "claim_id": "dd4cf0cc-b26d-418e-bb7e-15d26d10cd83",
+      "result_id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1"
+    },
+    {
+      "claim_id": "1c3f4e5b-0669-40fa-9f2c-9bea7f7ceb5f",
+      "result_id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1"
+    },
+    {
+      "claim_id": "a92554d1-423a-476c-812e-8f6837ff483c",
+      "result_id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1"
+    },
+    {
+      "claim_id": "9261a082-c99e-4711-9935-c905cf5d35a4",
+      "result_id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1"
+    },
+    {
+      "claim_id": "caf9d38c-05d9-4402-a0f9-3e915044f118",
+      "result_id": "3fb67e71-8662-469f-bef6-becacda476fc"
+    },
+    {
+      "claim_id": "b2a7c78d-b614-4ee3-8013-a5ea31778b44",
+      "result_id": "3fb67e71-8662-469f-bef6-becacda476fc"
+    },
+    {
+      "claim_id": "301c31af-2230-48a8-abc5-d3198b91b1a0",
+      "result_id": "3fb67e71-8662-469f-bef6-becacda476fc"
+    },
+    {
+      "claim_id": "7099a101-9d6f-46ac-9941-3661b9de91d7",
+      "result_id": "3fb67e71-8662-469f-bef6-becacda476fc"
+    },
+    {
+      "claim_id": "e83f1218-08d1-4163-b7c4-cb6a65daba76",
+      "result_id": "a7b1b890-86bd-4635-a4dd-541e0886ff54"
+    },
+    {
+      "claim_id": "9d9dbd86-b6ff-4175-a48f-935cac6e4c3c",
+      "result_id": "a7b1b890-86bd-4635-a4dd-541e0886ff54"
+    },
+    {
+      "claim_id": "1873187f-e4e5-4631-8a42-fc82199512ae",
+      "result_id": "a7b1b890-86bd-4635-a4dd-541e0886ff54"
+    },
+    {
+      "claim_id": "bbe36ba6-831f-4db7-9479-cc55f05addf0",
+      "result_id": "a7b1b890-86bd-4635-a4dd-541e0886ff54"
+    },
+    {
+      "claim_id": "edf36240-1678-4787-9da3-ce62eb9dbcfd",
+      "result_id": "a7b1b890-86bd-4635-a4dd-541e0886ff54"
+    },
+    {
+      "claim_id": "7482222b-3596-4876-9374-1fb09d865f62",
+      "result_id": "3e660eb0-1d30-4d22-9de4-87d26b8345aa"
+    },
+    {
+      "claim_id": "9aab8398-1c88-4743-b688-4859e1eeb26c",
+      "result_id": "3e660eb0-1d30-4d22-9de4-87d26b8345aa"
+    },
+    {
+      "claim_id": "4ff85c58-5ad7-4103-af68-e84815aa5ac1",
+      "result_id": "d972ec1f-d833-4b6e-9aa2-85ef2985539e"
+    },
+    {
+      "claim_id": "2df2072e-6c76-4d7f-90d9-9b312ca3d463",
+      "result_id": "d972ec1f-d833-4b6e-9aa2-85ef2985539e"
+    },
+    {
+      "claim_id": "be3c2ac2-d349-42df-95c1-2f103bcf2174",
+      "result_id": "d972ec1f-d833-4b6e-9aa2-85ef2985539e"
+    },
+    {
+      "claim_id": "6273c578-65df-48b6-8dc0-b33324ca9e31",
+      "result_id": "e8af000a-c21e-4496-a80a-0027f1c911a8"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f4567d17-c8c0-42c0-bc20-85f7f05801f4",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f",
+      "peer_result_id": "22815567-2416-41d0-8471-cdc41160be29",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the central claim about wide TSE with Mg2+ (C4-C6, C28-C32, C59, C62). OpenEval finds the computational evidence SUPPORTED across multiple methods. Peer reviewers rate this UNCERTAIN, stating it 'may be a misinterpretation' and that 'questions still remain about their conclusion regarding the wide-TS.' This represents the most significant disagreement in the evaluations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "27cf0eaf-49ef-496c-bbbe-8170d82d0f94",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "34ec88fb-8339-41dd-97f0-efc91af3b9b8",
+      "peer_result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate activation barrier calculations (C19-C22, C40-C41, C76, C79). OpenEval finds the computational-experimental agreement SUPPORTED. Peer reviewers rate UNCERTAIN, citing 'large discrepancies between DFTB QM/MM and PBE QM/MM results' and between different computational methods, undermining confidence in specific barrier values.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "5bd0dcdf-e859-4405-8d8e-bfb474043586",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "bc36d9a8-cd82-4410-b902-afe8a89b7109",
+      "peer_result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address experimental entropy measurements (C46-C51, C7). OpenEval finds the experimental validation SUPPORTED. Peer reviewers rate UNCERTAIN, questioning whether the entropy change can be 'attributed sorely to the difference in the reaction geometries near TS' and noting that 'wide conformational ensemble is not a quantitative measure of entropy.' The connection between TSE width and measured entropy is disputed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "1a465953-ee7f-4000-9a32-652b300381b7",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b43a0dfb-b9aa-46c2-a7f0-7523b2d56100",
+      "peer_result_id": "3fb67e71-8662-469f-bef6-becacda476fc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate pH-dependence experiments validating protonation states (C52-C53, C84-C85). Both OpenEval and peer reviewers rate this SUPPORTED. Agreement that experimental data validates computational predictions about protonation states.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "3a2e6457-c50d-4a5a-bc78-b5c9e490f141",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "d7f1b8ae-adcd-4cc3-a1fd-f3c8bb9eb621",
+      "peer_result_id": "a7b1b890-86bd-4635-a4dd-541e0886ff54",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address arginine roles and mutational validation (C37-C39, C56, C69). Both OpenEval and peer reviewers rate this SUPPORTED. Agreement that computational predictions about active site residues are validated by mutagenesis experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "31404b94-bfb5-4731-8383-af780a6387b2",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "fa260551-fc78-4078-8254-65d75305d86b",
+      "peer_result_id": "3e660eb0-1d30-4d22-9de4-87d26b8345aa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate experimental metal ion comparison (C54-C55). Both OpenEval and peer reviewers rate this SUPPORTED. Agreement that this straightforward kinetic measurement is valid.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "e637d853-47b1-420a-b805-96e75f5573e3",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "e6c90cc4-3ff1-4d84-b45e-f70986c8973b",
+      "peer_result_id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address geometric/electronic TSE characterization (C24-C27) and mechanistic Mg2+ roles (C33-C35 in peer R4). OpenEval rates SUPPORTED as computational observations. Peer reviewers also rate SUPPORTED, accepting these as valid simulation results without challenging the mechanistic details, though interpretation regarding TSE width remains contested elsewhere.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "e5cd80bf-2883-4f38-ad6b-8d9520e63dc6",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "d3ff0ade-9c02-4b93-a801-1b6fe6986a73",
+      "peer_result_id": "4b1f5e4b-237b-4e4e-bd69-ac3bbaebe7e1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R5 addresses mechanistic Mg2+ roles (C33-C36) rated SUPPORTED. Peer R4 includes C33-C35 and rates SUPPORTED. Partial overlap with agreement on mechanistic details from simulations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "05843812-959e-4aa4-80f0-b0acbeafa2f4",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "3f3a40c9-9507-4f95-89a1-2c0d40a61b91",
+      "peer_result_id": "e8af000a-c21e-4496-a80a-0027f1c911a8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "OpenEval R11 addresses the central conceptual conclusion about TSE and entropic barriers (C44-C45, C58, C61) rated SUPPORTED. Peer R9 addresses C58 specifically and rates UNSUPPORTED, stating that demonstrating this as a 'catalytic strategy' requires comparison to non-enzymatic reaction that was not performed. Major disagreement on the fundamental claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "848bcd15-65fc-46cd-b7f7-3ef0bf0bb6c0",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "3f3a40c9-9507-4f95-89a1-2c0d40a61b91",
+      "peer_result_id": "92fe95c9-e6a1-44f5-b26e-973e2122f027",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R11 includes C44-C45 about TSE-entropy connection rated SUPPORTED. Peer R3 includes C44-C45 rated UNCERTAIN, questioning the interpretation of entropy changes. Disagreement on whether computational TSE width validly explains experimental entropy measurements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "03bf7f06-ecb2-44af-9baa-e797427516e3",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "ca2cbe04-1bc8-4323-a56c-e42be2f41a1f",
+      "peer_result_id": "d972ec1f-d833-4b6e-9aa2-85ef2985539e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R1 includes committor analysis claims (C78, C81-C82) as part of SUPPORTED evidence for wide TSE. Peer R8 rates these UNCERTAIN, noting that concerns about 'large discrepancies' between methods extend to commitment analysis, which depends on validity of underlying free energy surfaces.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "271a57be-ce4e-4212-ab33-4168ecd60e9f",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "3ad921d6-d5e3-49f7-a693-5b32f54667ce",
+      "peer_result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R10 addresses methodological comparison between computational methods (C79-C80) rated SUPPORTED. Peer R2 includes C79 and rates the broader computational methodology UNCERTAIN due to discrepancies between methods. Peer reviewers see the discrepancies as problematic while OpenEval treats the explanation as adequate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "e32bed07-b302-4c9d-9be2-6f7a5c647502",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "f1742d62-9d54-45ea-8a1e-dfc01c31e1e6",
+      "peer_result_id": "c053a2fb-087c-45a1-8061-bc53c808d2eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R8 addresses computational methodology validation including C76 (higher-level DFT validation) rated SUPPORTED. Peer R2 includes C76 but rates UNCERTAIN due to methodological inconsistencies. Disagreement on whether validation efforts are sufficient.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "a9617d5f-6789-43c6-ba6a-f35637ef9f8c",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "18ba4ee1-113d-4271-b927-59caa8854f25",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R12 addresses broader implications about TSE concept and enzyme size (C63-C64, C66-C67) rated UNCERTAIN as speculative hypotheses. No corresponding peer review evaluation found for these specific speculative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "e5e8809e-564e-4d0c-b398-57a8f76efe8e",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "b31023c7-00e7-40e0-8ca3-43aaad8d87a8",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R13 addresses evolutionary explanation for rate-limiting lid-opening (C68) rated UNCERTAIN as speculation. No corresponding peer review evaluation found for this specific claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "feeba8fb-a240-4242-a115-038a8c45636b",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "c8593c43-a782-425a-a858-1dd492d76bc2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R14 addresses background information and established knowledge (C1-C3, C8-C18, C23, C42, C70, C72, C83) rated SUPPORTED. No corresponding peer review evaluation as these are contextual claims rather than novel findings requiring evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    },
+    {
+      "id": "22efbbf1-cabb-41b7-9466-4a75937151f5",
+      "submission_id": "44ddb824-5f17-4045-aa25-6133bc7f4325",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "4ba834c9-b810-4287-96dc-829b89ceaaaa",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R15 addresses substrate positioning conclusions (C57) rated SUPPORTED. No corresponding peer review evaluation found for this specific structural claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:55:08.608819Z"
+    }
+  ]
+}

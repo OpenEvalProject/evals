@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C56",
+      "C57",
+      "C98",
+      "C105",
+      "C106"
+    ],
+    "result": "The PPA mouse model exhibits reduced GnRH pulse generator activity. PPA mice showed significant weight gain and complete acyclicity, with ARNKISS neuron synchronization event (SE) frequency approximately half that of controls and significantly increased SE intervals. The dynamics of individual SEs remained unchanged. This indicates the PPA model does not replicate the elevated pulse generator activity characteristic of PCOS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 provide consistent experimental evidence showing reduced SE frequency and increased intervals in PPA mice (Figures 1C-D, p=0.0159). Claims C56 and C98 appropriately conclude that PPA mice have lower pulse generator frequency. The interpretation is well-supported by the data, though C57's mechanistic speculation about androgen feedback is reasonable but not directly tested. Sample sizes (n=4-5) are modest but statistical significance is achieved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C59"
+    ],
+    "result": "The PNA mouse model exhibits characteristic PCOS phenotypic features. PNA mice showed significantly increased anogenital distance, normal body weight, and highly disordered estrous cycles with persistent diestrus (71\u00b13%), rarely entering estrus and never showing proestrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 present consistent phenotypic characterization with appropriate statistical tests (Mann-Whitney U, p<0.001 for anogenital distance; Figure 2A-E). C59 correctly notes these features are consistent with prior literature. The phenotypic characterization is well-documented and reproducible across studies, providing a solid foundation for subsequent mechanistic investigations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Circulating testosterone levels in PNA mice remain unclear and potentially normal. ELISA measurements showed no difference between PNA and control mice, and LC-MS measurements found all samples below detection limits (<0.01 ng/mL). The literature shows inconsistent findings regarding testosterone elevation in PNA mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36-C38 present negative findings with appropriate methods (ELISA and LC-MS), but the inability to detect testosterone even with gold-standard LC-MS (C38) limits definitive conclusions. C63 appropriately acknowledges this uncertainty. The discrepancy between studies (C61) and methodological concerns (C62) are well-documented, but the current data cannot resolve whether testosterone is truly normal or simply below detection limits at the time points measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Neuropeptide expression in ARNKISS neurons is largely unchanged in PNA mice. Only a modest elevation in kisspeptin immunofluorescence in rostral ARN was detected (p=0.0187), with no changes in NKB or dynorphin. This is consistent with normal estradiol levels, which is the principal determinant of these neuropeptides' expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C40 provide immunohistochemical data (Figure 2\u2014figure supplement 1) showing minimal changes. C66 appropriately interprets the inconsistent literature findings as indicating subtle effects. C67 provides mechanistic context linking normal estradiol to normal neuropeptide expression. The modest kisspeptin increase in rostral ARN only is appropriately characterized as not functionally significant given the lack of changes elsewhere and in other neuropeptides.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C99",
+      "C100"
+    ],
+    "result": "Overall ARNKISS neuron SE frequency and LH pulsatility are not significantly different between randomly-sampled PNA and control mice. When measured without accounting for pulse generator cycling, SE frequency, intervals, and profiles showed no significant differences, and LH pulse frequency and amplitude were also unchanged despite elevated mean LH levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 present negative findings with appropriate statistics (Mann-Whitney U tests, Figure 3E-J). Claims C5-C6 and C100 correctly summarize these findings. However, the high variability noted (C5) and subsequent machine learning analysis revealing cyclical activity suggests these null findings reflect methodological limitations rather than true absence of differences. The claims are technically accurate but the interpretation requires the context of claims about cyclical activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C49",
+      "C101"
+    ],
+    "result": "Machine learning analysis revealed that ARNKISS neurons in acyclic PNA mice continue to exhibit cyclical patterns of activity similar to normal mice. K-means clustering identified that PNA mice spend similar proportions of time in different activity clusters (Cluster_0: 21% both groups; Cluster_1: PNA 44%, control 42%) despite being reproductively acyclic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C49, and C101 present a novel finding using k-means clustering on 5 parameters of SE activity (Figure 5). The methodology is clearly described and the proportions of time in each cluster are remarkably similar between groups. This is a striking finding that challenges assumptions about pulse generator dysfunction in PCOS models. The analysis was performed blind to estrous stage (Methods), strengthening the validity. However, sample sizes are modest (n=4-5) and statistical comparisons show non-significant trends.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C50",
+      "C51",
+      "C99"
+    ],
+    "result": "When analyzed during algorithm-identified 'diestrous-like' activity patterns, PNA mice exhibit significantly increased ARNKISS neuron SE frequency. SE frequency was 48% greater in PNA mice compared to controls (p=0.0029) with significantly lower inter-SE intervals (p=0.0047).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 provide clear statistical evidence (Mann-Whitney U tests, Figure 6C-D) for increased pulse generator frequency when comparing equivalent pulse generator states. This is a key finding that reconciles the variable literature on LH pulse frequency in PNA mice (C69-C70). The use of machine learning to identify comparable physiological states is methodologically sound. C99 appropriately summarizes this as a major finding. Sample sizes (n=6-7) are adequate and p-values are robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ARNKISS neuron SEs maintain a perfect correlation with LH pulses in PNA mice, with SE peaks preceding LH peaks by 6.6\u00b10.4 min. Mean LH levels were significantly elevated in PNA mice (p=0.0205) but LH pulse frequency and amplitude were unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44 demonstrate the maintained SE-LH relationship with simultaneous photometry and blood sampling (Figure 4A-D). The perfect correlation strengthens confidence in using SE frequency as a proxy for LH pulsatility. Claims C45-C46 show elevated mean LH but unchanged pulse parameters, which appears contradictory but is explained by the variable pulse generator cycling (C71). The temporal relationship (6.6 vs 7.7 min) is not significantly different (p=0.190), appropriately reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C9",
+      "C47",
+      "C48",
+      "C52",
+      "C53"
+    ],
+    "result": "PNA mice exhibit impaired progesterone negative feedback on ARNKISS neurons and reduced pituitary gonadotroph sensitivity to GnRH. Progesterone caused marked SE suppression in controls but inconsistent, non-significant effects in PNA mice. GnRH-evoked LH release was significantly lower in PNA mice (p=0.0028).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 show clear differential progesterone responses (Figure 7, control p<0.001 vs PNA p=0.196). Claims C47-C48 demonstrate reduced GnRH responsiveness (Figure 4J-K, p=0.0028). However, sample sizes for progesterone experiments are very small (n=3 per group), limiting statistical power. The reduced GnRH response is well-supported with larger n (control n=7, PNA n=11). These findings identify deficits at multiple levels of the HPG axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Pituitary gonadotroph sensitivity to GnRH is blunted in PNA mice, but this does not model the elevated LH response to GnRH seen in women with PCOS. The reduced gonadotroph sensitivity might explain reduced LH rise following ovariectomy observed in other studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C47-C48, and C95 consistently show reduced GnRH responsiveness with appropriate statistics. C97 correctly notes this is opposite to human PCOS (supported by citations C97). C96 offers a reasonable speculative explanation for prior findings, though this is not directly tested. The interpretation that PNA mice do not model this aspect of human PCOS is well-supported and important for understanding model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C80",
+      "C81"
+    ],
+    "result": "ARNKISS neuron pulse generator activity is identical in ovariectomized PNA and control mice. No significant differences were detected in SE frequency, intervals, or profiles, indicating that perinatal DHT exposure does not fundamentally alter ARNKISS neuron synchronization behavior in the absence of gonadal steroids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 present clear negative findings with appropriate statistics (Mann-Whitney U tests, Figure 8C-H, n=4 per group). C80-C81 appropriately interpret this as indicating the PNA phenotype requires gonadal steroid feedback. This is an important control experiment demonstrating that the increased pulse generator frequency in intact PNA mice (C50) arises from altered steroid feedback rather than intrinsic pulse generator dysfunction. The logic is sound and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C71",
+      "C72",
+      "C75",
+      "C102"
+    ],
+    "result": "The anovulatory phenotype of PNA mice arises from a complex, multi-level dysfunction of the HPG axis rather than simple pulse generator failure. The pulse generator continues to cycle despite reproductive acyclicity, making it impossible to define pulse generator stage at any given time point, which explains the variable LH pulse frequency reported in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C75, and C102 provide appropriate interpretations of the collective findings. C71 offers a logical explanation for literature inconsistencies based on the cyclical pulse generator activity (C7, C49). C72 reasonably suggests the model may partially replicate human PCOS. The interpretation is well-supported by the data showing: (1) cyclical pulse generator activity (C7), (2) increased frequency during diestrous-like states (C50), (3) reduced progesterone feedback (C52-C53), and (4) reduced gonadotroph sensitivity (C47-C48). This represents a sophisticated understanding of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "The increased pulse generator frequency in 'diestrous-like' PNA mice likely arises from altered gonadal steroid feedback rather than intrinsic pulse generator changes. Since gonadal steroid levels are normal, perinatal DHT exposure likely programs long-term changes in steroid receptor-dependent effectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C83 provide reasonable mechanistic speculation based on the OVX data (C54-C55, C80) showing normal pulse generator activity without steroids. However, this interpretation is speculative (C83 explicitly states 'likely') and not directly tested. The normal steroid levels (C37) combined with altered feedback (C52-C53) support altered receptor signaling, but the specific mechanisms remain unknown (C88). Alternative explanations (indirect effects, other factors) are not excluded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "The dynamics of individual ARNKISS neuron SEs remain unchanged in PNA mice under all conditions, suggesting the fundamental synchronization mechanism and number of contributing neurons is not altered. This is consistent with unchanged ARNKISS neuron firing activity in acute brain slices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 is supported by data showing no differences in SE profiles (C31, C42, C55, Figures 1G-H, 3H-J, 8F-H). C74 provides supporting evidence from prior literature (Gibson et al., 2021). The interpretation that the synchronization mechanism is intact is reasonable given the preserved SE dynamics across all conditions (intact, OVX, control, PNA). This suggests the PNA phenotype arises from altered regulation rather than intrinsic neuronal dysfunction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C94"
+    ],
+    "result": "The GnRH pulse generator and surge generator may continue to cycle in women with PCOS, similar to PNA mice. The wide range of LH pulse frequency in anovulatory women with PCOS suggests this intriguing possibility, and the GnRH surge generator may be operational but masked by abnormal downstream signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C94 are explicitly speculative extrapolations from mouse to human. While the mouse data (C7, C49, C101) clearly show cyclical pulse generator activity in acyclic PNA mice, and C78 correctly cites variable LH pulse frequency in women with PCOS, direct evidence for cyclical pulse generator activity in women is lacking. The speculation is reasonable and hypothesis-generating but not supported by human data. C94 regarding the surge generator is even more speculative, based only on indirect evidence (C92-C93).",
+    "result_type": "MINOR"
+  }
+]

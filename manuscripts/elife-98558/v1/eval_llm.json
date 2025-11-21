@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "PASMC and PAAF display distinct molecular profiles in healthy donor cells. PCA analysis shows clear separation between cell types at both transcriptomic and proteomic levels, with PASMC showing higher interpersonal heterogeneity. Cell-type-specific markers (RGS5, IGFBP5 for PASMC; ADH1C, SCARA5, CFD for PAAF) localize to appropriate tissue compartments. Functional enrichment analysis reveals PASMC enrichment in vascular development and ECM organization, while PAAF shows enrichment in mitochondrial metabolism and lipid homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 are well-supported by multiple lines of evidence including PCA analysis (Figure 1B), immunofluorescent staining and in situ hybridization (Figures 1D-E), and GSEA/overrepresentation analysis (Figures 1F-G). The data consistently demonstrate distinct molecular profiles between cell types with appropriate validation methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "PASMC and PAAF exhibit distinct metabolic profiles. PASMC can equally utilize glucose/pyruvate and fatty acids for oxidative metabolism, while PAAF shows stronger dependence on fatty acid oxidation. PAAF displays lower OCR and ECAR, higher OCR/ECAR ratio indicating preference for oxidative phosphorylation, and lower glycolytic capacity and mitochondrial proton leak compared to PASMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 are supported by Seahorse metabolic analyzer measurements (Figures 1H-I and Figure 1\u2014figure supplement 2). The data show consistent metabolic differences between cell types with appropriate statistical comparisons (n=6). The findings align with the transcriptomic enrichment for mitochondrial processes in PAAF.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C11",
+      "C12"
+    ],
+    "result": "PASMC and PAAF retain their core cellular identities while acquiring distinct disease-associated states in IPAH. PCA shows cell type as a stronger discriminant than disease state. OPLS-DA modeling finds significant separation based on cell type but not disease state alone; only transcriptomic data shows significant separation when considering both factors simultaneously. Cell-type-specific markers remain localized to appropriate compartments in IPAH tissue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C11-C12 are supported by PCA and OPLS-DA analyses (Figures 2A-C) and immunofluorescent validation (Figures 2D-E). The statistical modeling appropriately demonstrates that cell lineage identity is preserved despite disease-associated transcriptional changes. This is further corroborated by single-cell RNA-seq data and citations to fate-mapping studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C5",
+      "C6",
+      "C46",
+      "C47"
+    ],
+    "result": "IPAH-PASMC display a synthetic phenotype characterized by upregulation of biosynthetic processes (nucleotide-sugar, lipid biosynthesis, Golgi transport, ER stress) and downregulation of contractile machinery (cytoskeletal components, p53 signaling). This is accompanied by increased glycosaminoglycan production in IPAH pulmonary arteries, with enhanced medial and neointimal staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43, C5-C6, C46-C47 are supported by GO analysis (Figure 3A), biochemical GAG quantification (Figure 3B, n=7-8), and histological staining with quantitative image analysis (Figures 3C-D, n=10). The multiple complementary approaches provide strong evidence for the synthetic phenotype of IPAH-PASMC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C7",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "IPAH-PAAF display a hyperproliferative phenotype with upregulation of cell cycle and DNA repair processes, and downregulation of NF-\u03baB pathway components. IPAH-PAAF show higher proliferative capacity than donor-PAAF in both stimulated and unstimulated conditions, while IPAH-PASMC show lower proliferation than donor-PASMC. This phenotypic effect is strongest in early passage and progressively lost with passaging. In situ, PCNA+ fibroblasts are frequently observed in IPAH adventitia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C7, C48-C51 are supported by GO analysis (Figure 3A), [3H]thymidine incorporation assays (Figure 3E, n=5-6), cell counting across passages (Figure 3F), and immunofluorescent staining (Figure 3G). The convergence of in vitro and in situ data strengthens the conclusion about the hyperproliferative IPAH-PAAF phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C17"
+    ],
+    "result": "Early-passage cultured cells partially retain disease-specific phenotypic features observed in fresh cells. IPAH-PASMC retain enrichment for biosynthetic and ECM processes in early passage, while both early and late-passage IPAH-PAAF display enrichment for cell cycle processes. However, there are prominent inverse enrichments for inflammatory/NF-\u03baB signaling between fresh and cultured IPAH-PAAF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C17 are supported by GSEA comparing fresh, early-passage, and late-passage cells (Figure 3H) using published datasets. The analysis appropriately identifies both preserved and lost features with culture, though the inverse enrichment for inflammatory processes in PAAF represents a significant limitation of the culture system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C3",
+      "C4",
+      "C58",
+      "C59"
+    ],
+    "result": "IPAH-PASMC and IPAH-PAAF share limited common molecular perturbations (47 co-directionally regulated genes/proteins) that converge on immuno-inflammatory and survival-apoptosis pathways. Both cell types share mitochondrial dysfunction characterized by reduced mitochondrial content under starvation and hyperpolarized mitochondrial membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C3-C4, C58-C59 are supported by differential expression analysis (Figure 4A), STRING network analysis (Figure 4C), BioPlanet pathway enrichment (Figure 4D), and TMRM staining measurements (Figures 4E-F). The convergence on mitochondrial dysfunction as a shared feature is well-documented, though the functional consequences appear cell-type specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Only IPAH-PASMC significantly upregulate ROS production upon PDGF-BB stimulation, despite both cell types showing mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 is supported by CellRox measurements (Figure 4G) with appropriate sample sizes and statistical testing. This demonstrates cell-type-specific downstream consequences of shared mitochondrial dysfunction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "PASMC and PAAF acquire divergent disease-cell states in IPAH. PASMC show more pronounced changes with downregulated molecules primarily from PASMC-enriched healthy state genes, while upregulated molecules come from both cell types. IPAH-regulated molecules in PAAF trace back to both cell types. GO analysis reveals PASMC harbor ECM-related changes while PAAF show cell cycle/replication enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C66 are supported by differential expression analysis (Figure 5B), STRING network analysis with cell-type origin overlay (Figure 5B), and GO analysis (Figure 5C). The data demonstrate clear cell-type-specific disease trajectories with appropriate bioinformatic approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C8"
+    ],
+    "result": "ECM composition (laminin vs. collagen) elicits cell-type and cell-state specific phenotypic responses. Cells on collagen show spread-out morphology while laminin inhibits spreading. PASMC (both donor and IPAH) attach less efficiently to laminin than collagen, while only donor-PAAF show this preference. PAAF show faster gap closure than PASMC on both substrates. These findings support laminin and collagen as PAAF-derived regulators of PASMC phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73, C8 are supported by microscopy observations (Figure 6C), attachment assays (Figure 6D, n=5-6), and gap closure assays (Figure 6E, n=2-6). The data demonstrate functional consequences of ECM composition changes, though some comparisons lack statistical significance (C71) and sample sizes vary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Integrin receptor expression profiles differ between PASMC and PAAF. High-affinity collagen and laminin receptor subunits show higher expression in cultured PASMC compared to PAAF with minimal disease-state changes. In fresh cells, IPAH-PAAF display increased expression of alpha2 and alpha6 integrin subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by gene expression data from cultured cells (Figure 6F) and single-cell transcriptomics from fresh cells (Figure 6G). The data provide molecular basis for differential ECM responses, though the discrepancy between cultured and fresh cell patterns warrants consideration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Complement activation induces cell-type-specific proteoglycan expression. Both VCAN and DCN show higher expression in IPAH cells. Only donor-PAAF respond to C3a and C5a stimulation with IPAH-state-like DCN expression levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 are supported by gene expression measurements after complement stimulation (Figures 6H-I, n=4-6). The data demonstrate an autocrine feedback loop in PAAF linking complement activation to ECM production, though statistical significance is not clearly indicated for all comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "IPAH-PAAF modulate PASMC phenotype through secreted factors. CellChat analysis reveals skewed PAAF-to-PASMC signaling toward secreted ligands in IPAH. Co-culture of donor-PASMC with IPAH-PAAF leads to partial loss of healthy state markers (CNN1, RHOA) without affecting disease-state markers, while donor-PAAF markers are unaffected by IPAH-PASMC co-culture. Bulk RNA-Seq shows upregulated genes in PASMC mediate inflammatory processes, apoptosis, and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C82 are supported by CellChat analysis (Figure 7A), combined CellChat/NicheNet analysis (Figure 7B), qRT-PCR from co-cultures (Figure 7D, n=3), and bulk RNA-Seq with GSEA (Figure 7E). The directional nature of PAAF-to-PASMC signaling is well-demonstrated, though the mild effect size required model correction for paired samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C83",
+      "C84"
+    ],
+    "result": "PTX3 and HGF are PAAF-derived regulators of PASMC phenotype with opposing effects. PTX3 (downregulated in IPAH-PAAF) preserves contractile marker expression in donor-PASMC but not IPAH-PASMC. HGF (upregulated in IPAH-PAAF) downregulates contractile markers in donor-PASMC and increases disease-state marker VCAN in IPAH-PASMC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C83-C84 are supported by secretome analysis (Figures 7F-G) and gene expression measurements after ligand stimulation (Figure 7H, n=6). The identification of PTX3 and HGF as opposing regulators is well-supported, though the differential response of donor vs. IPAH-PASMC to PTX3 requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "Pulmonary vascular remodeling is characterized by functional alterations in PASMC and PAAF, with distinct phenotypic shifts during disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 represent the overarching findings of the study, supported by the comprehensive transcriptomic, proteomic, and phenotypic characterization presented throughout. These summary claims are well-supported by the totality of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior studies establish that vascular cells retain lineage identity during remodeling while acquiring altered expression profiles and functional changes. Previous work by the authors showed skewed cellular communication in pulmonary vascular disease, and cultured cells from remodeled arteries display metabolic and inflammatory reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16, C18-C20 are supported by appropriate citations to published literature. These claims establish the scientific context and prior knowledge foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "The study used early-passage PASMC and PAAF isolated from the same pulmonary artery of healthy donors or IPAH patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 describes the experimental design, which is clearly documented in the methods section and Figure 1A. This represents appropriate experimental design for source-matched comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Background knowledge claims about molecular functions: SCARA5 mediates iron uptake, CFD activates complement, ADH1C metabolizes lipid peroxidation products, RGS5 modulates G protein signaling, hexosamine pathway generates amino-sugars, proteoglycans withstand pressure and regulate complement, mitochondrial hyperpolarization links to ROS production, SOD2 clears mitochondrial ROS, integrins function as ECM receptors with specific signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C98 represent established biological knowledge supported by appropriate citations. These provide necessary context for interpreting the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "Upregulation of HGF/cMet pathway in endothelial cells upon Sox17 loss was associated with PAH promotion in a prior study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 is supported by citation to Park et al., 2022. This provides relevant context for the HGF findings in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "Restoring SOD2 expression is proposed as a viable therapeutic target for pulmonary vascular disease based on the common mitochondrial dysfunction observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C99 is inferred from the mitochondrial dysfunction findings and supported by citations to therapeutic studies. However, the current study does not directly test SOD2 restoration, and the lack of detectable apoptosis in situ (Figure 4H) raises questions about the functional significance of the observed mitochondrial changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "A proposed model suggests laminins and collagens act as PAAF-secreted ligands regulating PASMC behavior through integrin receptors, with PASMC susceptibility traced to enriched integrin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 represent a mechanistic model inferred from the ECM response data, integrin expression patterns, and functional assays. The model is reasonable given the supporting data, though direct mechanistic validation would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The removal of PAAF from their native immunomodulatory environment and hydrocortisone in culture media could explain inverse enrichment of inflammatory processes in cultured versus fresh PAAF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C102 is speculation about the cause of observed culture-induced changes. While plausible, this hypothesis is not directly tested and represents a limitation acknowledgment rather than a supported finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C103"
+    ],
+    "result": "A potential exploratory clinical trial could combine recombinant PTX3 and HGF blocking antibody or c-Met inhibitor for pulmonary vascular disease treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C103 is a speculative therapeutic proposal based on the PTX3 and HGF findings. While the rationale is supported by the data, this represents a future direction rather than a tested conclusion. The proposal lacks consideration of potential off-target effects and the complexity of in vivo systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "The identified PAAF-derived factors likely represent a fraction of ligands in the pulmonary artery compartment, and the influence of endothelial and inflammatory cells requires further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 appropriately acknowledge study limitations and identify gaps for future research. These represent reasonable caveats given the focused scope on PASMC-PAAF interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C106"
+    ],
+    "result": "Low case number and end-stage disease samples represent study limitations that must be considered before generalizing findings to the entire PAH patient population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106 is an explicit and appropriate acknowledgment of study limitations. The sample size (n=4 per group for omics) is indeed limited, and the use of end-stage disease samples may not reflect earlier disease stages.",
+    "result_type": "MINOR"
+  }
+]

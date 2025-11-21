@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Ankle2 physically interacts with PP2A through its Ankyrin domain. Co-purification experiments from both D-Mel cells and embryos show that PP2A-29B (structural subunit) and Mts (catalytic subunit) specifically associate with Ankle2. GST pulldown assays mapped the interaction to the Ankyrin domain region (residues 227-400), and deletion of this domain (\u0394ANK, residues 232-415) abolishes the interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches (C29-C31: mass spectrometry from cells and embryos; C33-C35: GST pulldowns and co-purification with domain deletions) consistently demonstrate the Ankle2-PP2A interaction and map it to the Ankyrin domain. The reciprocal co-purifications and domain mapping provide strong converging evidence. The conservation between Drosophila and humans (C32) is appropriately supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C38",
+      "C39",
+      "C40",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Ankle2 functions as a novel regulatory subunit of PP2A. Competition assays show that the known regulatory subunit Tws competes with Ankle2 for binding to PP2A (C38). Ankle2 co-purifies with PP2A-29B and Mts without other known regulatory subunits (C80). AlphaFold3 modeling predicts that Ankle2 occupies an overlapping position with Tws in the PP2A complex (C39-C40), consistent with mutually exclusive binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competition assay (C38, Figure 2B) provides direct experimental evidence for mutually exclusive binding. The absence of known regulatory subunits in Ankle2 co-purifications (C80) and the structural modeling (C39-C40) provide strong supporting evidence. While the modeling is computational, it is consistent with experimental data and provides mechanistic insight. The conclusion that Ankle2 is a regulatory subunit is well-supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C81",
+      "C87"
+    ],
+    "result": "Ankle2 is required for BAF dephosphorylation. Phosphoproteomic analysis shows that BAF becomes hyperphosphorylated at Thr4 and Ser5 upon Ankle2 depletion (C36). This confirms that BAF dephosphorylation depends on Ankle2 in Drosophila, as previously shown in C. elegans (C81). The simplest interpretation is that loss of Ankle2 causes BAF hyperphosphorylation by preventing PP2A-dependent dephosphorylation (C87).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphoproteomic data (C36, Figure 2A) directly demonstrates BAF hyperphosphorylation upon Ankle2 depletion, validating the approach since BAF is the only previously reported Ankle2-dependent substrate. The interpretation (C87) is appropriately cautious, acknowledging alternative possibilities while presenting the most parsimonious explanation. The conservation with C. elegans (C81) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Ankle2 interacts with the ER protein Vap33. Mass spectrometry identified Vap33 as the most abundant Ankle2 interactor (C41). Co-localization was observed in both D-Mel cells (C42) and syncytial embryos (C43) throughout the cell cycle. Reciprocal co-purification confirmed the interaction (C44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent approaches (mass spectrometry C41, live imaging C42-C43, co-purification C44) consistently demonstrate the Ankle2-Vap33 interaction. The co-localization throughout the cell cycle in both cells and embryos provides strong spatial and temporal evidence for a functional interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Ankle2 interacts with Vap33 through FFAT motifs. GST pulldown assays mapped the interaction to the C-terminal region of Ankle2 (residues 910-1174) (C45). Mutations in the MSP domain of Vap33 (K89D, M91D) abolish the interaction (C46). Ankle2 contains two redundant FFAT motifs that mediate binding to Vap33's MSP domain (C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The domain mapping (C45), MSP domain mutation (C46), and FFAT motif mutagenesis (C47, Figure 4E) provide systematic evidence for the interaction mechanism. The identification of redundant FFAT motifs explains why single mutations only partially reduce binding. The data are internally consistent and follow established principles of VAP-FFAT interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C49",
+      "C50"
+    ],
+    "result": "Vap33 is required for Ankle2 localization at the reassembling nuclear envelope during telophase and at the ER in interphase. Live imaging of embryos expressing Ankle2 with mutated FFAT motifs (Ankle2Fm+FL1m-GFP) showed that this mutant fails to localize to the ER in interphase and is not retained at membranes during NE reassembly in telophase (C49-C50, Figure 4G).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The live imaging experiments (Figure 4G, Video 3) directly demonstrate the requirement for Vap33 interaction in Ankle2 localization. The use of FFAT motif mutations specifically disrupts the Ankle2-Vap33 interaction while preserving other Ankle2 functions, providing a clean test of the hypothesis. The temporal dynamics are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C93"
+    ],
+    "result": "The Ankle2-PP2A interaction is essential for nuclear reassembly. Depletion of Ankle2 causes nuclear defects including dispersed/aggregated Lamin, fragmented nuclei, and hypercondensed DNA (C55). Wild-type Ankle2-GFP rescues these defects and BAF hyperphosphorylation (C56), but Ankle2\u0394ANK-GFP (lacking the PP2A-binding domain) cannot rescue (C57). This demonstrates that the Ankyrin domain and PP2A interaction are essential for Ankle2 function in BAF dephosphorylation and nuclear reassembly (C58, C93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The rescue experiments (Figure 5) provide strong genetic evidence for the requirement of the Ankle2-PP2A interaction. The inability of Ankle2\u0394ANK to rescue, despite being expressed, demonstrates that PP2A binding is essential. The experiments control for expression levels and RNAi specificity. The conclusion is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C59",
+      "C60",
+      "C64",
+      "C65",
+      "C94"
+    ],
+    "result": "The Ankle2-Vap33 interaction promotes but is not essential for nuclear reassembly in cultured cells, but contributes to BAF recruitment in embryos. Ankle2Fm+FL1m-GFP (with mutated FFAT motifs) rescues nuclear defects and BAF hyperphosphorylation in D-Mel cells (C59-C60), but BAF recruitment is delayed in embryos expressing this mutant (C64-C65, C94).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential requirements in cells versus embryos are clearly demonstrated by the rescue experiments (Figures 5-6). The ability of Ankle2Fm+FL1m to rescue in cells but show delayed BAF recruitment in embryos suggests context-dependent importance. The quantitative analysis of BAF recruitment dynamics (Figure 6C) provides rigorous support for the delay. The distinction between essential and promoting roles is appropriately made.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The Ankyrin domain is necessary for timely BAF recruitment and NE reassembly in embryos. Live imaging of embryos expressing Ankle2\u0394ANK-GFP showed strongly diminished and delayed RFP-BAF recruitment to reassembling nuclei (C61). The recruitment of Ankle2\u0394ANK-GFP itself to the core region was also delayed (C62), suggesting that delayed BAF recruitment causes delayed NE reassembly (C63).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The live imaging and quantification (Figure 6A, C, D) provide direct temporal evidence for the requirement of the Ankyrin domain in BAF recruitment. The parallel delay in both Ankle2\u0394ANK and BAF recruitment supports the mechanistic interpretation. The quantitative analysis strengthens the conclusions beyond qualitative observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The Ankle2-PP2A interaction is essential for embryonic development, while the Ankle2-Vap33 interaction is dispensable. Maternal Ankle2 knockdown does not affect egg laying (C66) but causes complete embryonic lethality (C67). Wild-type Ankle2-GFP fully rescues hatching (C68), but Ankle2\u0394ANK-GFP shows strongly abrogated rescue (C69), demonstrating that the PP2A interaction is essential for development (C70). In contrast, Ankle2Fm+FL1m-GFP fully rescues hatching, showing the Vap33 interaction is dispensable for embryo development (C71).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The in vivo rescue experiments (Figure 7A-B) provide definitive genetic evidence for the differential requirements of the two interactions. The complete embryonic lethality and rescue patterns clearly distinguish essential from dispensable interactions. Controls for expression levels and RNAi specificity are included. The conclusions are strongly supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The Ankle2-PP2A interaction is essential for wing development, while the Ankle2-Vap33 interaction promotes but is not essential for this process. Ankle2 RNAi in wing discs causes wingless adults. Ankle2-GFP and Ankle2Fm+FL1m-GFP rescue wing development, but Ankle2\u0394ANK-GFP does not (C72-C73). Single mutant alleles of Vap33 enhance the small wing phenotype caused by partial Ankle2 depletion (C74-C75), indicating that the Ankle2-Vap33 interaction promotes Ankle2 function during wing development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The wing development assays (Figure 7C-D) provide clear in vivo evidence for the requirements of both interactions. The genetic interaction between Vap33 mutations and Ankle2 depletion (C74-C75) elegantly demonstrates a promoting but non-essential role. The quantification of wing sizes provides objective measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C92"
+    ],
+    "result": "Ankle2 can simultaneously interact with Vap33 and PP2A, and this complex can be detected biochemically. AlphaFold3 modeling predicts that Ankle2 can bind Vap33, PP2A-29B, and Mts without steric clash (C51). A complex comprising all four proteins was detected by co-purification from embryos (C52, C92). Overexpression of Ankle2-RFP enhances complex formation between Vap33-Myc and PP2A-29B-GFP (C53) and causes PP2A-29B-GFP enrichment at the NE (C54).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The structural modeling (C51) provides a plausible mechanism for simultaneous binding. The detection of the quaternary complex (C52, C92) and the overexpression experiments (C53-C54) provide biochemical and cellular evidence. While the complex detection is variable in cells (as noted by authors), the convergent evidence from multiple approaches supports the conclusion that simultaneous binding can occur.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C91",
+      "C95"
+    ],
+    "result": "The ER provides localized enzymatic activity during nuclear reassembly. The authors propose a model where Vap33 targets the PP2A-Ankle2 holoenzyme to ER membranes, promoting BAF dephosphorylation and recruitment in a localized manner during nuclear reassembly (C91). This suggests the ER is more than a passive source of membranes but also provides localized enzymatic activity (C13, C95).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a conceptual model (C91, C95) inferred from the experimental findings rather than directly demonstrated. While the localization of Ankle2-PP2A to the ER via Vap33 is well-supported, direct evidence that this localization provides functionally important localized phosphatase activity (as opposed to simply concentrating the enzyme) is not provided. The model is plausible and consistent with the data, but requires additional experiments to definitively demonstrate localized enzymatic activity is functionally important.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background information on nuclear reassembly, BAF function, and Ankle2. These claims establish the biological context including: nuclear breakdown in animal mitosis (C1-C2), the requirement for Ankle2 in nuclear reassembly (C3), BAF's role in chromosome cross-bridging and membrane recruitment (C6-C7, C20-C21), the regulation of BAF by phosphorylation/dephosphorylation (C17-C18, C22-C23), and the importance of ANKLE2 in human development (C26-C27).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are appropriately supported by citations to previous research (C3, C6-C7, C14-C28) or represent established knowledge (C1-C2). They provide necessary context for the current work. The authors correctly cite prior work and do not misrepresent the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C37",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "Comparison of Ankle2 function across species and discussion of BAF as the critical substrate. The authors note differences between Drosophila and human Ankle2, including the absence of LEM domain-BAF interaction (C83-C84) and VRK1 kinase interaction (C85-C86) in Drosophila. They propose BAF is the most critical substrate of PP2A-Ankle2 based on genetic rescue experiments (C88-C89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The species comparisons are appropriately supported by citations and the authors' own negative data (C84, C86). The interpretation that BAF is the most critical substrate (C88) is appropriately cautious and supported by cited genetic evidence (C89). The discussion acknowledges limitations and alternative interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The Ankle2-VAP interaction may be conserved in humans. The identification of putative FFAT motifs in human Ankle2 suggests the interaction with VAP family proteins may be conserved (C90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate inference based on the identification of FFAT motifs in human Ankle2 (cited) and the experimental demonstration of the interaction in Drosophila. The claim is appropriately tentative ('may be conserved').",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,184 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C22",
+      "C30",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C54",
+      "C55",
+      "C56",
+      "C72",
+      "C73",
+      "C78",
+      "C79"
+    ],
+    "result": "The manuscript presents background knowledge about lung cancer epidemiology, the tumor microenvironment, and the dual role of cancer-associated fibroblasts (CAFs) as both tumor promoters and suppressors through mechanical and biochemical mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these background claims, which are presented as established knowledge supported by citations. The reviewers acknowledge the manuscript addresses 'an extremely important issue regarding tumor growth' and that fibroblasts create conditions that affect immune cell infiltration, implicitly accepting the biological context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C43",
+      "C50"
+    ],
+    "result": "The authors measured fibroblast composition and tumor-stroma ratios in LUSC and LUAD patient samples using immunohistochemistry, finding that FAP+\u03b1SMA+ fibroblasts line tumors where T-cells are excluded, while their absence correlates with T-cell infiltration.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the experimental data from patient samples. One reviewer notes the model 'takes into account' these measurements, and another states the authors 'do a convincing job of analyzing possible behaviors and attempting to relate these to experimental observations,' indicating acceptance of the immunohistochemistry findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The manuscript reports cell size measurements showing lung cancer cells (13-18 \u03bcm), fibroblasts (~16 \u03bcm), and T-cells (5-10 \u03bcm) have significantly different diameters, with T-cells having volumes 10 times smaller than the other cell types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These measurements are cited from literature and used to inform the model. Reviewers do not challenge these values, and they are treated as established parameters for model construction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C39",
+      "C40",
+      "C44",
+      "C51",
+      "C52"
+    ],
+    "result": "The dynamical system model identifies that tumor growth is controlled by two mechanisms: competition for resources and space, and T-cell response efficiency, with outcomes (invasion, persistence, or eradication) depending on patient-specific parameters representing the interplay between cancer cell growth, T-cell cytotoxicity, and fibroblast activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the model provides 'significant insights into the critical factors which determine how fibroblasts might affect tumor growth.' One reviewer states the model 'explores non-trivial scenarios' and another notes 'the results presented are convincing and follow logically from the model's assumptions,' supporting these mechanistic conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C53",
+      "C63",
+      "C64"
+    ],
+    "result": "Spatial model simulations demonstrate that activated fibroblasts create a fibrotic barrier (20-30% mass fraction) that excludes T-cells from tumors even when T-cells are efficient, while absence of CAF transformation allows T-cell-mediated tumor elimination, reproducing the dual role of CAFs in limiting both tumor expansion and immune response.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly state the model 'takes into account the increased ECM production of cancer-associated fibroblasts' and that 'these fibres trap the cancer but also protect it from immune system cells.' The editor notes the model provides 'insights into how fibroblast activation can influence tumor progression,' affirming these simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Simulations of tumor nest coalescence show that CAF presence causes slow coalescence into solid tumors, T-cell activity reduces coalescence ability, and absence of T-cell chemotaxis leads to unrestricted growth, with anisotropic tumor shapes and slower relaxation in fibrotic tumors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these simulation results. One reviewer notes the authors 'do an excellent job of analyzing the behavior of their model' in both full and simplified forms, implicitly accepting these coalescence dynamics as valid model outputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "The model predicts that fiber orientation strongly affects tumor outcomes, with cancer cell flux much higher when fibers are oriented normal to the tumor surface compared to parallel orientation, affecting both immune response and cancer escape.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the authors 'have now addressed' the issue of ECM organization and anisotropy by discussing nematic order parameters, one reviewer previously noted 'the organization of the ECM (for example, its anisotropy) could be playing a much more essential role than is given credit for here,' suggesting this aspect remains somewhat exploratory rather than fully validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The manuscript discusses discrepancies in fibroblast detection between immunohistochemistry and scRNA-seq methods, attributing low scRNA-seq detection to tissue digestion, incomplete stroma extraction, and lower 10X system efficiency for fibroblasts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological discussion is not challenged by reviewers and addresses known technical limitations. The explanation is presented as speculative but reasonable, and reviewers do not dispute this interpretation of measurement discrepancies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C57",
+      "C59",
+      "C62",
+      "C76",
+      "C77"
+    ],
+    "result": "The spatial model is based on Onsager's variational principle, considers four cell types with different properties, treats NAF-to-CAF transformation as irreversible, represents ECM through friction rather than as a separate component, and focuses on early tumor growth prior to angiogenesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge these modeling choices but express concerns about the assumptions. One reviewer notes 'models of the form being studied here rely on a large number of assumptions regarding cellular behavior' and questions 'the degree to which close-to-equilibrium assumptions...can be taken as reliable predictors of the obviously active dynamics of biological cells.' However, reviewers also state the authors 'provide justification for their work as a meaningful step towards more comprehensive modeling approaches.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The authors propose that classification and quantitative characterization of TME outcomes could help monitor treatment in real-time according to TME evolution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the model's potential applications, noting it 'opens up new possibilities for studying fibroblast-driven effects in diverse settings, which is crucial for understanding potential tumor microenvironment manipulations that could enhance immunotherapy efficacy.' This supports the proposed clinical utility.",
+    "result_type": "MINOR"
+  }
+]

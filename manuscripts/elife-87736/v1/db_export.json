@@ -1,0 +1,1983 @@
+{
+  "submission": {
+    "id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:53:38.577696Z",
+    "updated_at": "2025-11-21T21:53:38.577696Z"
+  },
+  "content": [
+    {
+      "id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "content_type": "manuscript",
+      "content_text": "# Running modulates primate and rodent visual cortex differently\n\n## Authors\n\n- John P Liska<sup>1</sup>\n- Declan P Rowley<sup>1</sup>\n- Trevor Thai Kim Nguyen<sup>1</sup> ([ORCID: 0009-0005-3277-9535](https://orcid.org/0009-0005-3277-9535))\n- Jens-Oliver Muthmann<sup>1</sup> ([ORCID: 0000-0002-0439-9704](https://orcid.org/0000-0002-0439-9704))\n- Daniel A Butts<sup>3</sup> ([ORCID: 0000-0002-0158-5317](https://orcid.org/0000-0002-0158-5317))\n- Jacob Yates<sup>4</sup> ([ORCID: 0000-0001-8322-5982](https://orcid.org/0000-0001-8322-5982)) \u2020\n- Alexander C Huk<sup>1</sup> ([ORCID: 0000-0003-1430-6935](https://orcid.org/0000-0003-1430-6935))\n\n### Affiliations\n\n1. Departments of Neuroscience and Psychology, Center for Perceptual Systems, Institute for Neuroscience, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))\n2. Departments of Ophthalmology and Psychiatry & Biobehavioral Sciences, Fuster Laboratory for Cognitive Neuroscience, UCLA Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))\n3. Department of Biology and Program in Neuroscience and Cognitive Science, University of Maryland College Park United States ([ROR:047s2c258](https://ror.org/047s2c258))\n4. Herbert Wertheim School of Optometry and Vision Science, University of California, Berkeley Berkeley United States ([ROR:01an7q238](https://ror.org/01an7q238))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWhen mice run, activity in their primary visual cortex (V1) is strongly modulated. This observation has altered conceptions of a brain region assumed to be a passive image processor. Extensive work has followed to dissect the circuits and functions of running-correlated modulation. However, it remains unclear whether visual processing in primates might similarly change during locomotion. We therefore measured V1 activity in marmosets while they viewed stimuli on a treadmill. In contrast to mouse, running-correlated modulations of marmoset V1 were small and tended to be slightly suppressive. Population-level analyses revealed trial-to-trial fluctuations of shared gain across V1 in both species, but while strongly correlated with running in mice, gain modulations were smaller and more often negatively correlated with running in marmosets. Thus, population-wide fluctuations of V1 may reflect a common feature of mammalian visual cortical function, but important quantitative differences point to distinct consequences for the relation between vision and action in primates versus rodents.\n\n## Introduction\n\nSensation and action are traditionally thought to involve separate brain circuits serving distinct functions: activity in early sensory areas is driven nearly exclusively by the corresponding sensory input, whereas activity in motor areas is exclusively related to movement. Recent work in mice, a major mammalian model system in neuroscience, has called for a re-evaluation of this distinction, given recent demonstrations that activity in mouse primary visual cortex (V1) depends as much on whether the mouse is running or stationary as on what visual stimulus is shown (Niell and Stryker, 2010). Neurons in V1 of virtually all mammals are selective for simple image features, a presumably critical early step of image processing that continues throughout a hierarchy of visual brain areas (Rosa and Krubitzer, 1999; Felleman and Van Essen, 1991), and this is true of mice as well (Niell and Stryker, 2008). The observation that running modulates (mouse) V1 of a comparable magnitude to the visually driven activity has motivated substantial effort in the field to understand the biological mechanisms and functional consequences of this powerful interaction between sensation and action (Keller et al., 2012; Vinck et al., 2015; Bennett et al., 2013; Saleem et al., 2013; Erisken et al., 2014; Reimer et al., 2014; Pakan et al., 2016; Polack et al., 2013; Fu et al., 2014; Mineault et al., 2016; Ayaz et al., 2013; Christensen and Pillow, 2022; Dipoppa et al., 2018).\n\nHowever, these observations have all been made in rodents; similar measurements have not been made in primates. Although rodents certainly rely on vision for important behaviors (Hoy et al., 2016; Yilmaz and Meister, 2013), primates are more fundamentally visual organisms, with exquisite acuity and specialized functional characteristics such as foveas and corresponding high-resolution representations of the central visual field in V1 (Land and Fernald, 1992), in addition to a larger network of areas involved in vision (Felleman and Van Essen, 1991). While experiments that allow subjects to run while viewing visual stimuli may now be commonplace in mice, analogous experiments in nonhuman primates have remained technically daunting. It has thus remained unclear whether the large effect of running on early visual processing is a general property of mammalian brains revealed by work in mice or whether the early stages of primate visual processing are less affected by nonvisual factors. Here, we fill this major gap in cross-species understanding by taking advantage of the relatively small size and peaceable nature of the common marmoset (Callithrix jacchus), which allowed us to have animals on a custom-designed treadmill and to use high-channel-count electrode arrays, including Neuropixels. Our comparative study fits into a larger emerging enterprise to assess whether substantial signals due to animal movements affect sensory processing similarly in rodents and primates (Talluri et al., 2023; Stringer et al., 2019; Musall et al., 2019).\n\n## Results\n\nWe tested for running-based modulations in V1 of the common marmoset, a highly visual new world primate. Marmosets were head-fixed, placed on a wheel-based treadmill suited to their arboreal nature (Figure 1a), and alternated between running and not running while we presented various visual stimuli designed to assess the properties and responsiveness of V1 neurons (Figure 1b). We recorded from foveal and parafoveal neurons in two marmosets (using chronically implanted N-Form 3D electrode arrays), and in one marmoset were also able to simultaneously record from both foveal and peripheral V1 (using Neuropixels 1.0 probes). To support precise comparison to rodent V1, we used the same analysis pipeline on a publicly available mouse dataset that used matching stimuli in a treadmill paradigm (https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels). This let us perform direct quantitative and statistical comparisons of the effects of running on V1 activity in a rodent and a primate.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87736/elife-87736-fig1-v1.jpg)\n\n**Figure 1.:** (a) Apparatus for recording from marmoset V1 while presenting visual stimuli on a high-resolution display, monitoring gaze using an eye tracker, on a toroidal treadmill that allowed the marmoset to run or not run. (b) Schematic example of variables of interest. Visual stimuli were presented (top row). Rasters show activity from a V1 array (second row). Gaze was monitored (third row, x and y time series plotted in black and gray), saccades were detected (red), and pupil size was also measured (fourth row). Running speed was measured using a rotary encoder attached to the treadmill (fifth row). (c) Before the main experiments, receptive fields (RFs) were mapped using sparse noise (Yates et al., 2021). The array of pseudocolor images shows three examples of V1 RFs (two foveal and one peripheral neuron). (d) Main experiment involved presenting full-field sinusoidal gratings that drifted in one of 12 directions (top row), at a variety of spatial frequencies (vertical axis at left). Rasters show example V1 activity during stimulus presentations when running (red) or stationary (black). (e) Summary of RF locations in the mouse dataset (orange, top), and (f) our data from marmosets (blue and green, bottom). In both marmosets, we recorded from a portion of V1 accessible at the dorsal surface of the brain using chronically implanted arrays, which yielded neurons with foveal RFs (green RFs). We also recorded from one marmoset using Neuropixels arrays, allowing us to simultaneously access both peripheral and foveal V1 (blue RFs; peripheral units are analyzed later/separately, see text). (g) Examples of mouse V1 orientation tuning curves, for cells with weak, moderate, and strong orientation tuning. (h) Same, for marmoset V1. (i, j) Histograms of orientation-selectivity indices (OSIs) for mice (i) and marmosets (j). Marmoset OSIs, likely lower than previously reported because we used full-field stimuli not optimized to the spatial frequency tuning of each neuron, and which likely recruited surround suppression. Regardless, the marmoset V1 neurons had strong visual responses and qualitatively conventional tuning. (k, l) Running speeds in mice (k) and marmosets (l). Marmosets were acclimated to the treadmill and motivated to run with fluid rewards yoked to traveling a criterion distance.\n\nFirst, we mapped the receptive fields of marmoset V1 neurons using reverse-correlation techniques adapted to free-viewing (Yates et al., 2021) while we measured gaze using a video-based eyetracker (Figure 1c). In V1 of both marmosets, we found receptive fields within the central few degrees of vision, with sizes expected at those eccentricities (1\u20135\u00b0, Figure 1f, blue and green; these can be compared to those in mouse, Figure 1e). As expected for primary visual cortex, marmoset V1 (both well-isolated single units and well-tuned multi-unit clusters) responded robustly to oriented gratings and exhibited orientation- (and sometimes direction-) selectivity (Yu and Rosa, 2014; Sengpiel et al., 1996), similar to that in the mouse V1 dataset (Figure 1g and h). Orientation tuning spanned a range from weak to strong tuning, with many units exhibiting strong and conventional tuning curves (Figure 1i and j).\n\nAs a first test for effects of running on V1 activity, we assessed whether running speed was correlated with aggregate V1 activity by comparing the time series of these variables throughout each session. In the mouse, such modulations are easily visually evident when inspecting the time series of neural activity and running: when the mouse runs, V1 spiking often increases substantially. Figure 2a and b shows example sessions with the maximal and median amounts of correlation between the time series of running speed and a generic low-dimensional representation of the population activity (the first principal component [PC] of the simultaneously recorded V1 trial spike counts, see \u2018Materials and methods\u2019). This correlation could be seen when running/not running alternated on slow (Figure 2a) or fast (Figure 2b) time scales.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87736/elife-87736-fig2-v1.jpg)\n\n**Figure 2.:** (a) Mice show visually compelling correlations between V1 trial spike counts and running speed. Example session with the highest correlation between running and V1 activity. Raster at top shows spiking activity of all mouse V1 neurons recorded. Population activity is summarized below the raster as the first principal component of the V1 array activity (\u2018First Neural PC\u2019, orange trace); running speed is plotted underneath it on the same time axis (gray trace). Clearly, the two curves are highly similar. (b) Same, for an example mouse session chosen to have the median correlation between running and V1 activity. In this example, the modulations of running speed and neural activity rise and fall together on a faster time scale than in the example in (a). (c, d) Marmosets show smaller, and typically negative, correlations between V1 spiking activity and running speed. Format same as the mouse data in (a, b), with example sessions chosen to show the maximal and the median correlations between V1 activity and running speed. The (anti-correlated) similarity between V1 activity (First Neural PC) and Running Speed curves is harder to discern in the marmoset. (e, f) Correlations between V1 activity and running in the mouse (e) had a median >0 (median = 0.407, p=$9.04\\times10^{\u22125}$, stat = 308, n = 25, Mann\u2013Whitney U test), and many individual sessions had significant correlations with running (filled bars), and all such significant sessions had positive correlations (with significance determined via permutation to remove effects of autocorrelation; Harris, 2021). In the marmosets (f), the distributions of correlations were slightly but reliably negative (median = \u22120.033, p=0.034, stat = 101, n = 27, Mann\u2013Whitney U test), and all significantly modulated individual sessions exhibited negative correlations (5/27).\n\nA starkly different impression comes from visual inspection of the relationship between running and the activity of marmoset V1 neurons representing the central visual field. Any relation between V1 activity and running appears considerably smaller. In examples showing the maximal and median relationships between running and V1 activity (Figure 2c and d), V1 activity did not track running speed as clearly, although the activity did tend to increase when the monkey stopped running, explaining the modest negative correlations.\n\nWe then quantified the relationship between the timecourses of aggregate V1 activity and running across all experiments on a session-by-session basis, in both species. For mice, this confirmed a strong positive correlation (Figure 2e; median = 0.407, n = 25, p=$9.04\\times10^{\u22125}$, stat = 308, Mann\u2013Whitney U test). For marmosets, the distribution of correlations between V1 activity and running was subtly but reliably negative (Figure 2f, median = \u22120.033, p=0.034, stat = 101, n = 27, Mann\u2013Whitney U test). Most importantly, the correlation between V1 activity and running was significantly different between the two species (p=$6.93\\times10^{\u22127}$, stat = 934, Mann\u2013Whitney U test). This session-level analysis confirmed that running modulations in mice are large and mostly reflect increases in response. In contrast, running modulations in marmoset foveal V1 are small, and if anything, reflect slight reductions in activity.\n\nTo perform additional quantitative tests at the level of individual V1 units, we divvied up each unit\u2019s spiking responses to drifting gratings based on whether or not the animal was running (Figure 3). This analysis confirmed, in mouse, a tendency for large response increases during running to both the preferred orientation stimulus (Figure 3a, geometric mean ratio [running/stationary] = 1.523, 95% CI [1.469, 1.579], n = 743 tuned units) and to all visual stimuli (Figure 3b, 1.402 [1.365, 1.440], n = 1168). Many individual units had significant running modulations and were more often increases rather than decreases (803/1168 [69%] increased firing rate and 115/1168 [10%] decreased, bootstrapped t-test). In marmoset V1, there was again a modest decrease evident in the response to the preferred stimulus (Figure 3c; geometric mean ratio [running/stationary] = 0.899, 95% CI [0.851, 0.949], n = 228 tuned units). Not even modest suppression was evident in responses aggregated across all stimuli (Figure 3d, 1.011 [0.995, 1.027], n = 786). The number of significantly modulated units was relatively small and was more balanced between decreases and increases in firing rate (172/786 [22%] increased and 161/786 [20%] decreased, bootstrapped t-test). Because we performed quantitative comparisons on subsets of the data for which the stimuli were nearly identical across species, and used the same data analysis code to calculate response metrics, these analyses solidly confirm a substantial difference between the form of running modulations of V1 activity in mouse versus marmoset (log ratio of running:stationary was significantly different between mouse and marmoset for all units: p=$6.62\\times10^{\u221299}$, stat = 1399874, Mann\u2013Whitney U test, and tuned units: p=$4.69\\times10^{\u221257}$, stat = 4030135). Thus, the overall impacts of running on V1 units again appear large and positive in mice, and much smaller (and perhaps slightly negative) in marmoset.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87736/elife-87736-fig3-v1.jpg)\n\n**Figure 3.:** Mouse data points are plotted in orange and marmoset data in blue. (a) Scatterplot (log-log) shows firing rate to preferred stimulus for tuned units (orientation-selectivity indices [OSI] > 0.2), during running (y-axis) and stationary (x-axis). Histogram summarizes the projections onto the line of unity and shows a clear shift indicating increases in response during running (geometric mean ratio [running/stationary] = 1.523 [1.469, 1.579], n = 743). Dark-shaded symbols indicate individually significant units. Dashed lines indicate doubling (2\u00d7) and halving (0.5\u00d7) of response. (b) Same format, but now showing the response aggregated over all stimuli, for all units (geometric mean ratio [running/stationary] = 1.402 [1.365, 1.440], n = 1168). A similar pattern reflecting primarily large increases is evident. (c, d) V1 units in marmoset show a very different pattern. Responses of tuned units to preferred stimuli (c) cluster more closely to the line of unity, with a small but significant shift indicating a subtle decrease in response (geometric mean ratio [running/stationary] = 0.899 [0.851, 0.949], n = 228). Responses to all stimuli for all units (d) show even less running-related modulation (geometric mean ratio [running/stationary] = 1.011 [0.995, 1.027], n = 786).\n\nGiven these apparently categorical differences between the two species at the levels of both experimental sessions (Figure 2) and individual units (Figure 3), a key question is whether mouse and marmoset visual cortices are modulated by non-visual input in fundamentally different ways. To answer this, we employed more powerful model-based neuronal population analyses that inferred trial-to-trial variations in shared gain modulations across V1 (Figure 4a and d; Whiteway et al., 2019), in a manner totally agnostic to running (or any other aspect of behavior). This shared-gain model improved descriptions of the population data over simpler models that only took the stimulus (and slow drifts in baseline firing rate) into account for all sessions (Figure 4b and c; marmoset p=$1.52\\times10^{\u221282}$, stat = 27174, n = 754, Wilcoxon signed-rank test; mouse p=$4.64\\times10^{\u2212181}$, stat = 25966, n = 1257). This was true in both species, bolstering the emerging notion that population-level gain modulations are a general principle of mammalian V1 function (Whiteway et al., 2019; Lin et al., 2015; Arandia-Romero et al., 2016; Goris et al., 2014; Ferguson and Cardin, 2020). This shared gain term modulated more strongly in mice compared to marmosets (Figure 4e, std. dev. in mouse = 2.170 [2.106, 2.245], marmoset = 1.188 [1.072, 1.274], p<$1\\times10\u22129$, stat = 1013202, Mann\u00d7Whitney U test). Furthermore, in the mouse, shared gain was higher for running than stationary as estimated during stimulus presentations (mean difference 0.970 [0.761, 1.225], p~0, stat 8.017, t-test), demonstrating that a substantial portion of modulations of mouse V1 can be explained by a shared gain term that increases with running (Figure 4f, orange point). In marmoset, shared gain was slightly but reliably lower when running (mean difference = \u22120.125 [-0.203, -0.059], p=0.002, stat = \u22123.360, t-test, Figure 4f, blue point), a quantitatively very different relation to running than in mouse (p=$8.77\\times10^{\u22129}$, stat = 6.615, two-sample t-test). Thus, a common mechanism (shared gain) can describe running modulations in both species, but with quantitatively different correlations with behavior that make for potentially distinct downstream impacts on perception and action.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87736/elife-87736-fig4-v1.jpg)\n\n**Figure 4.:** (a) Structure of shared modulator model. In addition to the effects of the stimulus (and slow drift in responsiveness, not rendered), the model allows for a shared gain/multiplicative term (green). Each simultaneously recorded neuron is fitted with a weight to the latent gain term. (b) The resulting model provides a better account of both mouse and marmoset V1 responses compared to a simple model that only fits stimulus and slow drift terms. Points show variance explained ($r^{2}$) on test data for each session under each of the two models, plotted against one another. (c) Variance explained for individual units was significantly improved in both species (marmoset: gain model [median  $r^{2}$ = 0.2504] significantly higher than stim + drift [median  $r^{2}$ = 0.1220], p=$1.52\\times10^{\u221282}$, stat = 27174, Wilcoxon signed-rank test; mouse: gain model [median  $r^{2}$ = 0.4420] significantly better than stim + drift [median  $r^{2}$ = 0.1697], p=$4.64\\times10^{\u2212181}$, stat = 25966, Wilcoxon signed-rank test). (d) Example of relationship between neural responses (top raster, blue), the shared gain (green), and running speed (black trace). Visual inspection similar to that in Figure 2 can be performed. (e) Gain modulations span a larger range in mice than in marmosets. Orange, gain term from each mouse session; blue, gain term from each marmoset session. Triangles indicate medians (mouse = 2.17 [2.11, 2.25], marmoset = 1.19 [1.07, 1.27]). (f) Shared gain term is larger during running for mouse data, but is slightly smaller during running for marmoset data (difference is plotted on y-axis; mouse = 0.970 [0.761, 1.225], p=$4.73\\times10^{\u22129}$, stat 8.017, one-sample t-test; marmoset = \u22120.125 [\u22120.203, \u22120.059], p=0.002, stat = \u22123.360, one-sample t-test).\n\nAlthough our marmoset dataset focused on V1 neurons representing the central portion of the visual field, we were also able to record simultaneously from neurons with peripheral and central (foveal) receptive fields by advancing a Neuropixels probe into both the superficial portion of V1 (foveal/central) and the calcarine sulcus (peripheral), resulting in simultaneous recordings of 110 and 147 (stimulus-driven) units representing the central and peripheral portions of the visual field, respectively. Analyzing neurons with peripheral receptive fields separately revealed a difference in running modulations between these retinotopically distinct portions of V1: peripheral neurons had slightly higher stimulus-driven responses during running (aggregating over all stimuli, geometric mean ratio [running/stationary] = 1.129 [1.068, 1.194], n = 147; difference with the central units was significant, p=2.100e-03, stat = 12376, Mann\u2013Whitney U test), and the two sessions in which we were able to perform these measurements had higher positive correlations than any sessions in our entire foveal V1 dataset (assessed by correlating running speed either with the First Neural PC or with a shared gain term). Although the foveal representation in V1 (accessible in marmosets on the dorsal surface of the brain) is slightly suppressed by running, it appears that quantitative differences exist in the peripheral representation (which we recorded from in the calcarine sulcus). This initial set of recordings suggests that subtle increases in response might occur in the peripheral representation in marmoset V1. This finding calls for a larger-scale study of how such modulations might differ across portions of the retinotopic map, and for further consideration of the implications for cross-species comparisons. An intriguing conjecture is that the primate foveal representation might be functionally unique, but that the primate peripheral representation might be more functionally similar to that of mouse V1 (Horrocks et al., 2022).\n\nAlthough this is an interesting potential distinction that further work will investigate more systematically, we emphasize that the main result described earlier still holds: the effects of running are small in marmoset V1. Even though there are slightly positive modulations in the peripheral representation (and hence, are of the same sign as those in mouse), the magnitude of whatever running-correlated modulations we could measure in marmoset V1 are still small relative to those in mouse V1 (median spike rate modulation by running significantly different between mouse and marmoset calcarine/peripheral recordings: p=$7.639\\times10^{\u221211}$, stat = 7967825, Mann\u2013Whitney U test).\n\nFinally, we assessed whether the modest running-correlated modulations we observed in marmoset V1 might be explained by eye movements. If eye movements differed when the animal ran versus when it did not run, that would mean that the retinal input differed between the two conditions (Horrocks et al., 2022). In that case, running modulations would not reflect a direct effect of running (a fundamentally non-visual effect), but rather a consequence of changes in the patterns of retinal stimulation (which we already know affects V1 responses). To test this possibility, we quantified the number of saccades per stimulus presentation, as well as saccade size (vector magnitude), and then assessed whether these eye movement metrics differed as a function of running.\n\nWe found that eye movements were quite similar between running and stationary periods, although subtle quantitative differences were revealed (Figure 5). In short, saccades were slightly more frequent and larger during running (saccade frequency during running: 2.653 Hz, 95% CI [2.600, 2.697]; stationary/not running: 2.525 Hz [2.475, 2.573]; saccade magnitude during running: 9.261\u00b0 [9.140, 9.374]; stationary/not running: 8.337\u00b0 [8.190, 8.470]). This result motivated us to then assess whether these running-correlated eye movement differences might quantitatively explain the running-correlated modulations of V1 response. Our initial analyses found that differences in retinal stimulation due to differences in eye movements are unlikely to explain running-correlated suppression of V1 activity. We used linear regression to estimate the relationship between number of saccades and the firing rate of each unit in each trial. This enabled us to predict how much change in firing rate we should expect given the differences in saccade rate between the running and stationary conditions. The response change predicted from saccades was much less than the already-small running-correlated changes in response we observed in our experiment. On the aggregate, saccades slightly increased activity (predicted spike rate increase during running based on saccades = 0.05 Hz; expressed as gain, <1%), and thus cannot explain the sign or magnitude of the subtle decreases we observed. In short, the decreases in V1 activity we saw in our main dataset are not likely to be explained by differential patterns of eye movements. (Likewise, the distinction we saw between running-correlated modulations in foveal versus peripheral V1 is unlikely attributable to eye movements, as we recorded simultaneously from both parts of the retinotopic map, meaning that the eye movements were the same despite the difference in modulations.)\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87736/elife-87736-fig5-v1.jpg)\n\n**Figure 5.:** (a) Each panel shows overlapping histograms of a measurement made on trials when the animal was running (blue) or stationary (red). (a) Saccade rate (in Hz) is slightly higher during running. (b) Saccade magnitude (in degrees of visual angle) is also slightly higher during running. The slight differences in saccade frequency and size did not quantitatively explain the differences in neural activity during running versus stationary periods; see main text for analysis. (c) Pupil size (expressed as % of mean size during stationary) is 8% larger during running (see main text for additional quantification).\n\nRegrettably, the mouse dataset with which we compared our marmoset recordings did not reliably have eye video with quality required to do precise gaze estimation (at least for many of the sessions), so we could not perform a definitive analysis in mouse. However, the degree to which movement-correlated modulations of sensory processing contain a retinal contribution is an important issue (Horrocks et al., 2022), and one that we hope to tackle more directly in future cross-species studies wherein eyetracking and knowledge of individual receptive fields is highly, and equally, prioritized in mice and marmosets.\n\nWe also analyzed the pupil size from our eyetracking videos. Pupil size was \u223c8% larger during running. This finding is consistent with the idea that the marmosets were in a higher arousal state during running. Such a result is at least loosely consistent with effects seen in mice (although in that literature, there is some degree of dissociation between modulations due to arousal and those due to running per se; Vinck et al., 2015). Thus, the changes in pupil size we detected do suggest that when a marmoset runs, it is likely in a higher arousal state, similar to that in mice. However, more work would be required to perform cross-species calibrations to understand how the magnitude of changes in pupil size corresponds to changes in levels of arousal. At this point, we can conclude that the differences we see in the size (and sometimes, sign) of V1 modulations across species are unlikely due to a categorical difference in a link between running and arousal in mice versus marmosets, but possible quantitative distinctions deserve further consideration.\n\n## Discussion\n\nIn short, running does not affect V1 activity in marmosets like it does in mouse. The large, typically positive correlations between running and V1 activity often found in mice are simply not evident in marmosets. Although we matched our experimental protocol to mouse experiments and used the same metrics and analysis pipeline, the difference in results across species was stark. We hypothesize that this distinction holds at the level of taxonomic order, distinguishing how much behavioral state interacts with early stages of visual processing in primates versus rodents.\n\nDiving deeper into the pattern of results, we did detect small (but statistically nonzero) modulations of marmoset V1 response correlated with running. In the foveal representation in V1 \u2013 where we made the majority of our recordings \u2013 responses on average were slightly smaller during running; in the peripheral representation, responses were slightly larger.\n\nDespite the main result of this study being that running-correlated modulations in marmoset V1 are small, and hence quantitatively different than that in mouse V1, our population-level analyses did point towards a possible cross-species generalization. The same shared-gain model improved accounts of both mouse and marmoset V1 activity. These population-level gain modulations likely reflect modulatory inputs associated with behavioral state and arousal. This commonality connects with mechanistic knowledge of how V1 activity is modulated. The primate-rodent difference in the magnitude and sign of V1 gain modulations we observed is in fact consistent with known differences in neuromodulatory inputs related to arousal in rodent and primate V1 (Disney and Robert, 2019; Coppola and Disney, 2018). In primates, the locations of ACh receptors allow cholinergic inputs to increase the activity of the majority of GABAergic neurons and hence suppress net activity via inhibition (Disney et al., 2007; Lien and Scanziani, 2013), but pharmacologically and anatomically distinct cholinergic influences in rodent likely exert more complex effects on net activity, including disinhibition which can increase net activity (Pakan et al., 2016; Fu et al., 2014; Pfeffer et al., 2013). Our population-level analyses also lay groundwork for connections to indirect and aggregate measures of neural activity made in humans under related conditions (Chen et al., 2022; Cao et al., 2020; Benjamin et al., 2018), as well as the typically small modulations seen in primate visual cortices elicited by carefully controlled attentional tasks, which are more clear when population-level modulations are considered (Mitchell et al., 2009; Cohen and Maunsell, 2009; Rabinowitz et al., 2015).\n\nWe also performed an analysis of whether eye movements might contribute to differential visual (retinal) stimulation, which in turn could differentially modulate visually driven activity in V1 during running versus stationary periods. We found that there were subtle increases in eye movement frequency and saccade amplitude during running. However, saccades on average slightly increased V1 activity, so it seems unlikely that eye-movement-mediated changes in retinal stimulation explain the modest decreases we observed during running. We found that analysis of eye movements was difficult in some of the mouse datasets. Because receptive fields in mouse V1 can be very large, uncontrolled (and/or uncharacterized) eye movements can not only create visual modulations of the stimulus on the screen, but can also hit the edges of the monitor under some viewing conditions. A related study Talluri et al., 2023 found that eye movements (or, their effects on retinal stimulation) explained all of the modulations of V1 activity that were correlated with facial/body movements in seated macaques. Further work will be needed to understand how much eye movements play a role in both running-correlated and movement-correlated modulations in the mouse. This will require monitoring eye movements and dissecting the ensuing retinal effects from those of other (body and face) movements (Musall et al., 2019); all of these types of motor activity (and subsequent \u2018sensory reafference\u2019) may be partially correlated.\n\nOur results (as well as those of Talluri et al., 2023) reveal a number of additional issues that should be addressed in follow-up work to even more tightly relate work across the two species. In our study, we attempted to match the overall treadmill apparatus and the visual stimuli used in the mouse studies. Even that required species-specific customization of the treadmill, as well as taking into account the higher spatial acuity of primate vision (which is why our study used much higher spatial frequencies in our set of drifting gratings). We describe how additional unresolved issues could be addressed for improved cross-species integration.\n\nFirst, we analyzed pupil size and found that it was larger when the marmosets ran. At first glance, this suggests that running does indicate a more aroused internal state in the marmosets, as it likely does in mice (Vinck et al., 2015). However, it is less clear whether the magnitude of pupil size changes in marmosets corresponds to the same amount of arousal change that occurs in mice. Relative calibration of the dynamic range of pupil size (and measuring other biomarkers of arousal) may make for more satisfying inferences about internal states across species, as it has been shown that some (but not all) of running-correlated modulations are likely due to arousal (Vinck et al., 2015; Lee et al., 2014).\n\nSecond, although we found only small effects (relative to mouse) at the aggregate level, our results call for more specific investigations of modulations at the level of cell types and subcircuits (Niell and Stryker, 2010; Pakan et al., 2016; Bennett et al., 2013; Polack et al., 2013). Such investigations may reveal more nuanced effects in primate V1, using tools that can better unpack the circuitry associated with factors such as cholinergic modulation, which are known to differ in important ways across rodent and monkey (Coppola and Disney, 2018; Disney and Robert, 2019). Additionally, differences in feedback circuits also exist across the visual field representation within primate V1 (Wang et al., 2022). This \u2013 and the proposition that mouse V1 may be a better model of primate peripheral vision (Horrocks et al., 2022) \u2013 has motivated us to perform more systematic and larger-scale recordings to compare the foveal and peripheral representations.\n\nThird, our results call for additional study across other visual areas. In mice, the large effects on V1 activity are likely to affect all subsequent stages of processing (Christensen and Pillow, 2022), but in marmosets, the small effects are less likely to have pronounced downstream effects. That said, running may directly and more strongly interact with later stages of visual processing in primates. This would be consistent with differences in where canonical computations occur across species with different numbers of visual areas (Felleman and Van Essen, 1991; Garrett et al., 2014; Scholl et al., 2013). Such measurements in primate extrastriate visual areas are already in progress in our laboratory.\n\nFinally, larger effects of behavioral state may still be found in primate V1: other behaviors that more directly recruit active vision may reveal stronger modulations. In mice, running may have a more direct functional relation to visual processing. Marmosets may instead wish to recruit head or body movements that are not realizable in the head-fixed preparation that we used for eye-movement and neural recording. These questions will be addressed in freely moving and head-free subjects.\n\nAlthough our main result is simply that running-correlated modulations in marmoset V1 are small relative to those in mouse, we did find evidence for behaviorally correlated population-level gain modulations in both species. This sort of commonality may support further cross-species generalizations that transcend simpler observations of empirical similarity or dissimilarity (Niell and Scanziani, 2021; Priebe and McGee, 2014). Further work explicating how shared basic mechanisms may ultimately result in rather different patterns of interaction between vision and action will be critical for linking our understanding of cortical function between currently preferred model organisms and across taxonomic orders. The results in this report reflect just the starting point for a larger comparative inquiry.\n\n## Materials and methods\n\nWe performed electrophysiological recordings in V1 of two common marmosets (one male, \u2018marmoset G\u2019, and one female, \u2018marmoset B\u2019, both aged 2 years). Both subjects had chronically implanted N-form arrays (Modular Bionics, Modular Bionics, Berkeley, CA) inserted into left V1. Implantations were performed with standard surgical procedures for chronically implanted arrays in primates. Additional recordings were also performed using Neuropixels 1.0 probes (Jun et al., 2017) acutely inserted into small craniotomies (procedure described below). All experimental protocols were approved by The University of Texas Institutional Animal Care and Use Committee and in accordance with National Institute of Health standards for care and use of laboratory animals.\n\nSubjects perched quadrupedally on a 12\u2033 diameter wheel while head-fixed facing a 24\u2033 LCD (BenQ) monitor (resolution = 1920 \u00d7 1080 pixels, refresh rate = 120 Hz) corrected to have a linear gamma function, at a distance of 36 cm (pixels per degree = 26.03) in a dark room. Eye position was recorded via an Eyelink 1000 eye tracker (SR Research) sampling at 1 kHz. A syringe pump-operated reward line was used to deliver liquid reward to the subject. Timing events were generated using a Datapixx I/O box (VPixx) for precise temporal registration. All of these systems were integrated in and controlled by MarmoView. Stimuli were generated using MarmoView, custom code based on the PLDAPS (Eastman and Huk, 2012) system using Psychophysics Toolbox (Brainard, 1997) in MATLAB (MathWorks). For the electrophysiology data gathered from the N-Form arrays, neural responses were recorded using two Intan C3324 headstages attached to the array connectors which sent output to an Open Ephys acquisition board and GUI on a dedicated computer. In electrophysiology data gathered using Neuropixels probes, data was sent through Neuropixels headstages to a Neuropixels PXIe acquisition card within a PXIe chassis (National Instruments). The PXIe chassis sent outputs to a dedicated computer running Open Ephys with an Open Ephys acquisition board additionally attached to record timing events sent from the Datapixx I/O box. Spike sorting on data acquired using N-Form arrays was performed using in-house code to track and merge data from identified single units across multiple recording sessions (Muthmann et al., 2021). Spike sorting for data acquired using Neuropixels probes was performed using Kilosort 2.5.\n\n### Chronic N-Form array recordings\n\nChronic array recordings were performed using 64-channel chronically implanted 3D N-Form arrays consisting of 16 shanks arrayed in a 4 \u00d7 4 grid with shanks evenly spaced 0.4 mm apart (Modular Bionics, Berkeley). Iridium oxide electrodes are located at 1, 1.125, 1.25, and 1.5 mm (tip) along each shank, forming a 4 \u00d7 4 \u00d7 4 grid of electrodes. Arrays were chronically inserted into the left dorsal V1 of marmosets G and B at 1.5 and 4\u00b0 eccentric in the visual field, respectively (confirmed via post hoc spatial RF mapping). Well-isolated single units were detectable on the arrays in excess of 6 months after the initial implantation procedure.\n\n### Acute Neuropixels recordings\n\nAcute Neuropixels recordings were performed using standard Neuropixels 1.0 electrodes (IMEC, Leuven, Belgium). Each probe consists of 384 recording channels that can individually be configured to record signals from 960 selectable sites along a 10 mm long, 70 \u00d7 24 \u00b5m cross-sectional straight shank. Probes were lowered into right dorsal V1 of marmoset G via one of three burr holes spaced irregularly along the AP axis 4\u20135 mm from the midline for a single session of experiments. Natural images were played to provide visual stimulus as well as occupy the subject and keep them awake during insertion and probe settling. The temporary seal on the burr hole was removed, the intact dura nicked with a thin needle and the burr hole filled with saline. The probe was then lowered through the dural slit at 500 \u00b5m/min, allowing 5 min for settling every 1000 \u00b5m of total insertion. The whole-probe LFP visualization was monitored during insertion for the characteristic banding of increased LFP amplitude that characterizes cortical tissue. The probe was inserted until this banding was visible on the electrodes nearest the tip of the probe, indicating that the probe tip itself had passed through the dorsal cortex and was within the white matter. The probe was then advanced until a second band became visible on the electrodes nearest the tip, indicating the tip of the probe had exited through the cortex of the calcarine sulcus. The probe was then advanced slightly until the entirety of the second LFP band was visible to ensure that electrodes covered the full depth of the calcarine cortex and the tip of the probe was located confidently within the CSF of the sulcus. The probe was then allowed to settle for 10 min. Active electrode sites on the probe were configured to subtend both dorsal and calcarine cortex simultaneously. Post hoc receptive field recreation confirmed that visually driven, tuned, V1 neurons were recorded at both foveal and peripheral eccentricities.\n\n### Mouse dataset from Allen Institute\n\nMouse data were downloaded from the publicly available Visual Coding database at https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels. We used the same analysis code to analyze these data and the marmoset data we collected.\n\n### General experimental procedure\n\nMarmoset recording sessions began with eyetracking calibration. Once calibration was completed, the wheel was unlocked and the subject was allowed to locomote freely, head-fixed, while free-viewing stimuli. Trials for all stimuli were 20 s long with a 500 ms ITI and a 20-s-long natural image interleaved every fifth trial to keep the subject engaged. Stimuli were shown in blocks of 10 min and a typical recording session consisted of 50 trials of calibration followed by one or two blocks of a drifting grating stimulus and one block each of the two mapping stimuli. To elicit sufficiently reliable and frequent running behavior, subjects were rewarded at set locomotion distance intervals unrelated to the stimulus or gaze behavior (typical rewards were 50\u201370 \u00b5L and distance required to achieve a reward usually varied between 20 and 75 cm; reward amounts and intervals were adjusted daily to maximally motivate the subject).\n\n### Eyetracking calibration\n\nWhile the wheel was locked, subjects were allowed to free-view a sequence of patterns of marmoset faces. Marmosets naturally direct their gaze towards the faces of other marmosets when allowed to free-view with little-to-no training, allowing for the experimenter to adjust the calibration offset and gain manually between pattern presentations. Faces were 1.5\u00b0 in diameter and were presented for 3 s with a 2 s ISI between patterns. A portion of presented patterns were asymmetrical across both the X and Y axes of the screen to allow for disambiguation in the case of axis sign flips in the calibration. Fifty trials were presented before each recording session to verify and refine the calibration. Calibration drift between sessions was minimal, requiring minor (<1\u00b0) adjustments over the course of 1\u20132 months of recordings.\n\n### Drifting grating stimuli\n\nThe primary stimulus consisted of full-field drifting gratings. Gratings were optimized to drive marmoset V1 with 3 separate spatial frequencies (one, two, and four cycles per degree), 2 drift speeds (1 or 2\u00b0 per second), and 12 orientations (evenly spaced 30\u00b0 intervals). Each trial consisted of multiple grating presentations, each with a randomized spatial frequency, drift speed, and orientation. Gratings were displayed for 833 ms followed by a 249\u2013415 ms randomly jittered inter-stimulus interval. After each 20 s trial, there was a longer 500 ms inter-trial interval. Every fifth trial was replaced with a natural image to keep subjects engaged and allow for visual assessment of calibration stability on the experimenter\u2019s display.\n\n### Mapping of receptive fields\n\nA spatiotemporal receptive field mapping stimulus, consisting of sparse dot noise, was shown during each recording session. One hundred 1\u00b0 white and black dots were presented at 50% contrast at random points on the screen. Dots had a lifetime of two frames (16.666 ms). Marmosets freely viewed the stimulus, and we corrected for eye position offline to estimate the spatial receptive fields using forward correlation (Yates et al., 2021).\n\n### Necessary differences between mouse and marmoset experiments\n\nAlthough we sought to perform experiments in marmosets that were as similar as possible to mouse experiments, some differences in their visual systems and behavior made for differences. Because the spatial frequency tunings of marmoset and mouse V1 neurons are starkly different, we used stimuli with considerably higher spatial frequencies than in the mouse experiments. Relatedly, marmoset V1 receptive fields are much smaller than in mouse. Because we used full-field stimuli (to match mouse experiments), responses in marmoset V1 were likely affected by substantial amounts of surround suppression, which would reduce overall responses. We also learned that, although the marmosets were comfortable perched on the wheel treadmill, they did not naturally run enough for our experimental purposes. We therefore incorporated a reward scheme to motivate the subjects to run more frequently. Finally, the mouse dataset we analyzed comprised a large number of mice with a small number of sessions per mouse; as is required of work with nonhuman primates, we were limited to a smaller number of subjects (N = 2) and ran many experimental sessions with each animal.\n\n### Session and cell inclusion criteria\n\nFor the analyses shown in Figure 2, sessions were included if they contained more than 250 trials and a proportion of trials running was not less than 10% or greater than 90%. For the mouse dataset, this yielded 25/32 sessions. For the marmoset dataset, this yielded 27/34 sessions. For the unit-wise analyses in Figure 3, super-sessioned units were included for analysis if they had more than 300 trials of data and a mean firing rate of >1 spike/s. This yielded 1168/2015 units in mouse and 786/1837 units in marmoset.\n\nFor the analyses shown in Figure 4, sessions were included using the same trial and running criterion as in Figure 2. Only units that were well fit by the stimulus + slow drift model (i.e., cross-validated better than the null, see \u2018Shared modulator model\u2019) were included and sessions were excluded if fewer than 10 units met this criterion. This resulted in 31/32 sessions for mouse and 28/34 sessions for marmoset.\n\n### Analysis of tuning\n\nWe counted spikes between the 50 ms after grating onset and 50 ms after grating offset and divided by the interval to generate a trial spike rate. To calculate orientation tuning curves, we computed the mean firing rate of each orientation and spatial frequency. Because we were limited by the animal\u2019s behavior to determine the number of trials in each condition (i.e., running or not), we computed orientation tuning as a weighted average across spatial frequencies with weights set by the spatial frequency tuning. We used these resulting curves for all analyses of tuning. We confirmed that the results did not change qualitatively if we either used only the best spatial frequency or marginalized across spatial frequency.\n\nOrientation selectivity index was calculated using the following equation:\n\n$$\nOSI=\\frac{\\sqrt{[r^{T}sin\u2061(2\\theta)]^{2}+[r^{T}cos\u2061(2\\theta)]^{2}}}{\\sum(r)}\n$$\n\nwhere $\\theta$ is the orientation and $r$ is the baseline-subtracted vector of rates across orientations.\n\n### Analysis of eye movement effects on neural response\n\nTo assess whether and how eye movements might differ between running and stationary periods (and perhaps account for some or all of the running-correlated modulations of V1 response), we started by counting the number of saccades within a bin corresponding to each stimulus presentation (from 0.2 s before stimulus onset to 0.1 after offset), as well as calculating the average saccade size (vector magnitude) of those saccades. We then regressed these terms against the spike count in each bin, allowing us to estimate the effect of eye movements in units of spike rate (Hz). (We also analyzed the variance of the eye position signal and got similar results.) For the analysis of pupil size, we used the values returned by our Eyelink eyetracker, averaged in the same bins as for the saccade analyses.\n\n### Shared modulator model\n\nTo capture shared modulator signals in an unsupervised manner, we fit our neural populations with a latent variable model (Whiteway and Butts, 2019). The goal of our latent variable model was to summarize population activity with low-dimensional shared signal that operates as a gain on the stimulus processing (e.g., Goris et al., 2014; Lin et al., 2015). In this model, the response of an individual neuron, $\ud835\udc2b_{i}$ on trial t is given by\n\n$$\nr_{i}(t)=f_{i}[s(t)]g_{i}(t)+b_{i}\n$$\n\nwhere the stimulus response $f_{i}[s(t)]$ is given by the tuning curve, $g_{i}(t)$ is a neuron-specific gain on the stimulus response, and $b_{i}$ is the baseline firing rate. Similar models have been employed to describe the population response in V1 in several species (Goris et al., 2014; Lin et al., 2015; Arandia-Romero et al., 2016; Whiteway et al., 2019).\n\nBecause the gain signal is shared across neurons, we fit this model to all $n$ neurons in a given recording at the same time. To capture the stimulus tuning curves, we represented the stimulus on each trial $s(t)$ as an m-dimensional \u2018one-hot\u2019 vector, where $m$ is the number of possible conditions (Orientation \u00d7 Spatial Frequency) and on each trial all elements are zero, except for the condition shown. Thus, $f[s(t)]$ becomes a linear projection of the stimulus on the tuning curves, $As(t)$, where $A$ is an $n\\timesm$ matrix of tuning weights. We decomposed the gain for each neuron on each trial into a rank 1 matrix that was rectified and offset by one, $g(t)=ReLU[1+z(t)w]$, where $w$ is an n-dimensional vector of loadings that map the one-dimensional trial latent $z(t)$ to a population-level signal, $z(t)\ud835\udc30$. This signal is offset by 1 and rectified such that it is always positive and a loading weight of zero equals a gain of 1.0.\n\nTo capture any unit-specific slow drifts in firing rate, we further parameterized $\ud835\udc1b$ as a linear combination of five b0-splines evenly spaced across the experiment (Quinn et al., 2021). Thus, the baseline firing rate for each neuron, $i$, was a linear combination of five \u2018tent\u2019 basis functions spaced evenly across the experiment, $\ud835\udc1b_{i}(t)=\\sumjb_{j}\u03d5_{j}(t)$.\n\nThus, the full model describes the population response as\n\n$$\nr(t)=As(t)ReLU[1+z(t)w]+b(t)\n$$\n\nThe parameters of the model are the stimulus tuning parameters $\ud835\udc00$, the shared gain, $z$, the gain loadings, $\ud835\udc30$, and the \u2018tent\u2019 basis weights, $b_{i,j}$\u2019s.\n\nWe first fit a baseline model with only stimulus and baseline parameters\n\n$$\nr(t)=As(t)+b(t)\n$$\n\nFollowing Whiteway and Butts, 2017, we initialized $\ud835\udc00$ and $\ud835\udc1b$ using fits from a model without latent variables and initialized the latent variable, $z$, and loadings, $\ud835\udc30$, using an Autoencoder (Bengio et al., 2013; Whiteway and Butts, 2017). We then fit the gain, loadings, and stimulus parameters using iterative optimization with L-BFGS, by minimizing the mean squared error (MSE) between the observed spikes and the model rates. The model parameters were regularized with a modest amount of L2-penalty and the amount was set using cross-validation on the training set. The latent variables were penalized with a small squared derivative penalty to impose some smoothness across trials. This was set to be small and the same value across all sessions. We reverted the model to the autoencoder initialization if the MSE on a validation set did not improve during fitting.\n\nWe cross-validated the model using a speckled holdout pattern (Williams et al., 2018) whereby some fraction of neurons were withheld on each trial with probability p=0.25. We further divided the withheld data into a validation set and a test set by randomly assigning units to either group on each trial with probability 0.5. The validation loss was used to stop the optimization during the iterative fitting and the test set was used to evaluate the models.\n\n### Sign of latent variables\n\nWe anchored the sign of all latent variables to the average firing rate of the population, such that positive means increases in the average firing rate. In general, for both the principal components analysis (Figure 2) and the shared population modulation model (Figure 4), the sign of the latent variable is arbitrary and only becomes a signed effect once multiplied by the loading weight for each unit. Thus, to interpret these values, we used the loadings to flip the sign of the latent to be positive for increases in the average firing rate. Specifically, we took the largest eigenvector, $u$, of the covariance matrix across neurons and modified the sign such that the average sign was positive: $\ud835\udc2e=\ud835\udc2e\\timessign(\\sumisign(\ud835\udc2e(i)))$, where $sign(x)$ is 1 for $x\\geq0$ and \u20131 for $x<0$. We then projected the mean-subtracted firing rates on (the sign-corrected) $u$. This gives a \u20181st PC\u2019 with an interpretable sign. For analyses of shared gain (Figure 4), we projected back to the population space and then averaged the per-unit gain.\n",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "93568163-4876-4171-8ab1-44d656129314",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Kristine Krug, Otto-von-Guericke University Magdeburg Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87736.3.sa0](https://doi.org/10.7554/eLife.87736.3.sa0)\n\nThis important work advances our understanding of the differences in locomotion-induced modulation in primate and rodent visual cortexes and underlines the significant contribution cross-species comparisons make to investigating brain function. The evidence in support of these differences across species is convincing. This work will be of broad interest to neuroscientists.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87736.3.sa1](https://doi.org/10.7554/eLife.87736.3.sa1)\n\nMore than ten years ago, it was shown that activity in the primary visual cortex of mice substantially increases when mice are running compared to when they are sitting still. This finding 'revolutionised' our thinking about visual cortex, turning away from it being a passive image processor and highlighting the influence of non-visual factors. The current study now for the first time repeats this experiment in marmosets. The authors find that in contrast to mice, marmoset V1 activity is slightly suppressed during running, and they relate this to differences in gain modulations of V1 activity between the two species.\n\nStrengths\n\n- Replication in primates of the original finding in mice partly took so long, because of the inherent difficulties with recording from the brain of a running primate. In fact one recent, highly related study on macaques looked at spontaneous limb movements as the macaque was sitting. The treadmill for the marmosets in the current study is a very elegant solution to the problem of running in primates. It allows for true replication of the 'running vs stationary' experiment and undoubtedly opens up many possibilities for other experiments recording from a head-fixed but active marmoset.\n\n- In addition to their own data in marmoset, the authors run their analyses on a publicly available data set in mouse. This allows them to directly compare mouse and marmoset findings, which significantly strengthens their conclusions.\n\n- Marmoset vision is fundamentally different from mouse vision as they have a fovea and make goal-directed eye movements. In this revised version of their paper, the authors acknowledge this and investigate the possible effect of eye movements and pupil size on the differences they find between running and stationary. They conclude that eye input does not explain all these differences.\n\nSignificance\n\nThe paper provides interesting new evidence to the ongoing discussion about the influence of non-visual factors in general, and running in particular, on visual cortex activity. As such, it helps to pull this discussion out of the rodent field mainly and into the field of primate research. The bigger question of *why* there are differences between rodents and primates remains still unanswered, but the authors do their best to provide possible explanations. The elegant experimental set-up of the marmoset on a treadmill will certainly add new findings to this issue also in the years to come.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87736.3.sa2](https://doi.org/10.7554/eLife.87736.3.sa2)\n\nThis work aims at answering whether activity in primate visual cortex is modulated by locomotion, as was reported for mouse visual cortex. The finding that the activity in mouse visual cortex is modulated by running has changed the concept of primary sensory cortical areas. However, it was an open question whether this modulation generalizes to primates.\n\nTo answer this fundamental question the authors established a novel paradigm in which a head-fixed marmoset was able to run on a treadmill while watching a visual stimulus on a display. In addition, eye movements and running speed were monitored continuously and extracellular neuronal activity in primary visual cortex recorded using high-channel-count electrode arrays. This paradigm uniquely permitted to investigate whether locomotion modulates sensory evoked activity in visual cortex of marmoset. Moreover, to directly compare the responses in marmoset visual cortex to responses in mouse visual cortex the authors made use of a publicly-available mouse dataset from the Allen Institute. In this dataset the mouse was also running on a treadmill and observing a set of visual stimuli on a display. The authors took extra care to have the marmoset and mouse paradigms as comparable as possible.\n\nTo characterize the visually driven activity the authors present a series of moving gratings and estimate receptive fields with sparse noise. To estimate the gain modulation by running the authors split the dataset into epochs of running and non-running which allowed them to estimate the visually evoked firing rates in both behavioral states.\n\nStrengths:\n\nThe novel paradigm of head-fixed marmosets running on a treadmill while being presented with a visual stimulus is unique and ideally tailored to answering the question that the authors aimed to answer. Moreover, the authors took extra care to ensure that the paradigm in marmoset matched as closely as possible to the conditions in the mouse experiments such that the results can be directly compared. To directly compare their data the authors re-analyzed publicly available data from visual cortex of mice recorded at the Allen Institute. Such a direct comparison, and reuse of existing datasets, is another strong aspect of the work. Finally, the presented new marmoset dataset appears to be of high quality, the comparison between mouse and marmoset visual cortex is well done and the results and interpretation straightforward.\n\nWeaknesses:\n\nIt is known that the locomotion gain modulation varies with layer in mouse visual cortex, with neurons in the infragranular layers expressing a diversity of modulations (Erisken et al. 2014 Current Biology). However, for the marmoset dataset the layer information was unfortunately not recorded, leaving this point open for future studies.\n\nNonetheless, the aim of comparing the locomotion induced modulation of activity in primate and mouse primary visual cortex was convincingly achieved by the authors. The results shown in the figures support the conclusion that locomotion modulates the activity in primate and mouse visual cortex differently. While mice show a profound gain increase, neurons in primate visual cortex show little modulation or even a reduction in response strength.\n\nThis work will have a strong impact on the field of visual neuroscience but also on neuroscience in general. It revives the debate of whether results obtained in the mouse model system can be simply generalized to other mammalian model systems, such as non-human primates. Based on the presented results, the comparison between the mouse and primate visual cortex is not as straightforward as previously assumed. This will likely trigger more comparative studies between mice and primates in the future, which is important and absolutely needed to advance our understanding of the mammalian brain.\n\nMoreover, the reported finding that neurons in primary visual cortex of marmosets do not increase their activity during running is intriguing, as it makes you wonder why neurons in the mouse visual cortex do so. The authors discuss a few ideas in the paper which can be addressed in future experiments. In this regard it is worth noting that the authors report an interesting difference between the foveal and peripheral part of the visual cortex in marmoset. It will be interesting to investigate these differences in more detail in future studies. Likewise, while running might be an important behavioral state for mice, other behavioral states might be more relevant for marmosets and do modulate the activity of primate visual cortex more profoundly. Future work could leverage the opportunities that the marmoset model system offers to reveal new insights about behavioral related modulation in the primate brain.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87736.3.sa3](https://doi.org/10.7554/eLife.87736.3.sa3)\n\nPrior studies have shown that locomotion (e.g., running) modulates mouse V1 activity to a similar extent as visual stimuli. However, it's unclear if these findings hold in species with more specialized and advanced visual systems such as nonhuman primates. In this work, Liska et al. leverage population and single neuron analyses to investigate potential differences and similarities in how running modulates V1 activity in marmosets and mice. Specifically, they discovered that although a shared gain model could describe well the trial-to-trial variations of population-level neural activity for both species, locomotion more strongly modulated V1 population activity in mice. Furthermore, they found that at the level of individual units, marmoset V1 neurons, unlike mice V1 neurons, experience suppression of their activity during running.\n\nA major strength of this work is the introduction and completion of primate electrophysiology recordings during locomotion. Data of this kind were previously limited, and this work moves the field forward in terms of data collection in a domain previously inaccessible in primates. Another core strength of this work is that it adds to a limited collection of cross-species data collection and analysis of neural activity at the single-unit and population level, attempting to standardize analysis and data collection to be able to make inferences across species. In particular, the findings on how the primate peripheral and foveal V1 representations functionally relate to and differ from the mice V1 representations speak to the power of these cross-species comparisons.\n\nHowever, there are still some lingering potential extensions to this work, largely acknowledged by the authors. One of these extensions involves more detailed eye movement analysis within species, such as microsaccades in marmosets and the potential impact on marmoset V1 activity. In the mouse data, similar eye-related analyses were not possible, in part due to instability in the eye recordings of many mouse sessions that made it challenging to replicate partnered analyses for the marmosets. We agree with the authors' assessment that these analyses can be targeted in future work and still believe that the marmoset eye-movement findings provide novel insights that will inform future cross-species comparisons of the visual system. Furthermore, another important issue not fully explored is the possible effects of the reward scheme during marmoset locomotion on V1 activity. The authors note that, unlike their mice counterparts, the marmosets were encouraged to run via liquid rewards, given after subjects traversed a specific distance. While the authors discuss the changes in arousal present when marmosets were running, there are still some unanswered questions on how their reward scheme may affect biomarkers (e.g., pupil sizes) and marmoset V1 activity.\n\nOverall, the methods and data support the work's main claims. Single neuron and population level approaches demonstrate that the activity of V1 in mice and marmoset are categorically different. Since primate V1 is so diverse and differs from mouse V1, this presents important limitations on direct inferences from mouse V1 to primate V1. This work is a great step forward in the field, especially with the novel methodology of collecting neural activity from running primates.\n",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "37403d6c-1ee7-4626-bc11-48a120f7e1fc",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C1",
+      "claim": "When mice run, activity in their primary visual cortex (V1) is strongly modulated.",
+      "claim_type": "EXPLICIT",
+      "source": "When mice run, activity in their primary visual cortex (V1) is strongly modulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement in the abstract that is supported by citations throughout the manuscript and by data presented in the figures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "0120edb3-5d27-4787-bdd6-6d93089bdea1",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C2",
+      "claim": "Running-correlated modulations of marmoset V1 were small and tended to be slightly suppressive.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to mouse, running-correlated modulations of marmoset V1 were small and tended to be slightly suppressive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding stated in the abstract and supported by experimental data shown in Figures 2, 3, and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "2f0372e8-99e7-4317-b543-ad0bf34c3b4e",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C3",
+      "claim": "Population-level gain modulations were strongly correlated with running in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-level analyses revealed trial-to-trial fluctuations of shared gain across V1 in both species, but while strongly correlated with running in mice, gain modulations were smaller and more often negatively correlated with running in marmosets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the shared gain model analysis presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "9367cbd9-c732-4e22-ac0e-7969d3059499",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C4",
+      "claim": "Gain modulations in marmosets were smaller and more often negatively correlated with running.",
+      "claim_type": "EXPLICIT",
+      "source": "Population-level analyses revealed trial-to-trial fluctuations of shared gain across V1 in both species, but while strongly correlated with running in mice, gain modulations were smaller and more often negatively correlated with running in marmosets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the shared gain model analysis presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "b0e94df9-a30d-47af-b989-e9001a3e5cb3",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C5",
+      "claim": "Activity in mouse primary visual cortex (V1) depends as much on whether the mouse is running or stationary as on what visual stimulus is shown.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent work in mice, a major mammalian model system in neuroscience, has called for a re-evaluation of this distinction, given recent demonstrations that activity in mouse primary visual cortex (V1) depends as much on whether the mouse is running or stationary as on what visual stimulus is shown (Niell and Stryker, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Niell and Stryker, 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "e0e5a791-7a6b-4bda-b41d-a8205e84085e",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C6",
+      "claim": "Neurons in V1 of virtually all mammals are selective for simple image features.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons in V1 of virtually all mammals are selective for simple image features, a presumably critical early step of image processing that continues throughout a hierarchy of visual brain areas (Rosa and Krubitzer, 1999; Felleman and Van Essen, 1991), and this is true of mice as well (Niell and Stryker, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Rosa and Krubitzer, 1999; Felleman and Van Essen, 1991; and Niell and Stryker, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "cc240d60-7ac3-4b8a-b9ad-77ffd657af59",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C7",
+      "claim": "Primates are more fundamentally visual organisms than rodents, with exquisite acuity and specialized functional characteristics such as foveas.",
+      "claim_type": "EXPLICIT",
+      "source": "Although rodents certainly rely on vision for important behaviors (Hoy et al., 2016; Yilmaz and Meister, 2013), primates are more fundamentally visual organisms, with exquisite acuity and specialized functional characteristics such as foveas and corresponding high-resolution representations of the central visual field in V1 (Land and Fernald, 1992), in addition to a larger network of areas involved in vision (Felleman and Van Essen, 1991).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Hoy et al., 2016; Yilmaz and Meister, 2013; Land and Fernald, 1992; and Felleman and Van Essen, 1991.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "0940c669-2e00-4704-a2aa-4a7a5851743e",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C8",
+      "claim": "Marmosets were head-fixed, placed on a wheel-based treadmill suited to their arboreal nature.",
+      "claim_type": "EXPLICIT",
+      "source": "Marmosets were head-fixed, placed on a wheel-based treadmill suited to their arboreal nature (Figure 1a), and alternated between running and not running while we presented various visual stimuli designed to assess the properties and responsiveness of V1 neurons (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a description of the experimental methods, supported by Figure 1a showing the apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "8b7eda1d-17b6-4b2f-9957-4167aa4e3129",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C9",
+      "claim": "Receptive fields were mapped in marmoset V1 within the central few degrees of vision, with sizes expected at those eccentricities (1\u20135\u00b0).",
+      "claim_type": "EXPLICIT",
+      "source": "In V1 of both marmosets, we found receptive fields within the central few degrees of vision, with sizes expected at those eccentricities (1\u20135\u00b0, Figure 1f, blue and green; these can be compared to those in mouse, Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the receptive field mapping data shown in Figure 1c and 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "f6f21d7c-d572-4f68-b5a8-268299b7146c",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C10",
+      "claim": "Marmoset V1 neurons responded robustly to oriented gratings and exhibited orientation- (and sometimes direction-) selectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for primary visual cortex, marmoset V1 (both well-isolated single units and well-tuned multi-unit clusters) responded robustly to oriented gratings and exhibited orientation- (and sometimes direction-) selectivity (Yu and Rosa, 2014; Sengpiel et al., 1996), similar to that in the mouse V1 dataset (Figure 1g and h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by the orientation tuning data shown in Figure 1h and citations to Yu and Rosa, 2014; Sengpiel et al., 1996.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "b7e806eb-7af3-43b0-8c8f-ab8cf9a7ed80",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C12",
+      "claim": "In marmosets, the distribution of correlations between V1 activity and running was subtly but reliably negative (median = \u22120.033, p=0.034, n=27).",
+      "claim_type": "EXPLICIT",
+      "source": "For marmosets, the distribution of correlations between V1 activity and running was subtly but reliably negative (Figure 2f, median = \u22120.033, p=0.034, stat = 101, n = 27, Mann\u2013Whitney U test).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from statistical analysis of the data shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "22618394-dfd2-45b0-8f92-2c8a05cba180",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C14",
+      "claim": "In mouse V1, the geometric mean ratio of firing rate during running versus stationary for responses to preferred stimuli was 1.523 (95% CI [1.469, 1.579], n=743 tuned units).",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis confirmed, in mouse, a tendency for large response increases during running to both the preferred orientation stimulus (Figure 3a, geometric mean ratio [running/stationary] = 1.523, 95% CI [1.469, 1.579], n = 743 tuned units)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from analysis of the data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "6fe6d3f7-2317-488b-b87e-d33f70c06594",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C15",
+      "claim": "In mouse V1, 69% of units (803/1168) showed increased firing rate during running and 10% (115/1168) showed decreased firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Many individual units had significant running modulations and were more often increases rather than decreases (803/1168 [69%] increased firing rate and 115/1168 [10%] decreased, bootstrapped t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from statistical analysis of individual units in mouse V1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "4f91dcc0-b070-4fdb-8345-17cd6d5df282",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C16",
+      "claim": "In marmoset V1, there was a modest decrease in response to the preferred stimulus during running (geometric mean ratio = 0.899, 95% CI [0.851, 0.949], n=228 tuned units).",
+      "claim_type": "EXPLICIT",
+      "source": "In marmoset V1, there was again a modest decrease evident in the response to the preferred stimulus (Figure 3c; geometric mean ratio [running/stationary] = 0.899, 95% CI [0.851, 0.949], n = 228 tuned units).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from analysis of the data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "12fe3ce2-4862-4215-aa0a-3e5331478681",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C17",
+      "claim": "In marmoset V1, 22% of units (172/786) showed increased firing rate during running and 20% (161/786) showed decreased firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of significantly modulated units was relatively small and was more balanced between decreases and increases in firing rate (172/786 [22%] increased and 161/786 [20%] decreased, bootstrapped t-test).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from statistical analysis of individual units in marmoset V1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "8cb7a338-3da0-499e-9534-ef63776d5ee2",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C21",
+      "claim": "In mice, shared gain was higher during running than stationary (mean difference 0.970 [0.761, 1.225], p~0).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, in the mouse, shared gain was higher for running than stationary as estimated during stimulus presentations (mean difference 0.970 [0.761, 1.225], p~0, stat 8.017, t-test), demonstrating that a substantial portion of modulations of mouse V1 can be explained by a shared gain term that increases with running (Figure 4f, orange point).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from analysis of the shared gain model shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "5ebd7b45-f0fd-42d5-a391-135ab3e6930f",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C22",
+      "claim": "In marmosets, shared gain was slightly but reliably lower when running (mean difference = \u22120.125 [\u22120.203, \u22120.059], p=0.002).",
+      "claim_type": "EXPLICIT",
+      "source": "In marmoset, shared gain was slightly but reliably lower when running (mean difference = \u22120.125 [-0.203, -0.059], p=0.002, stat = \u22123.360, t-test, Figure 4f, blue point)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a quantitative result from analysis of the shared gain model shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "3a92de3f-320b-412a-bbcd-6e94e6840d2f",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C24",
+      "claim": "Population-level gain modulations are likely a general principle of mammalian V1 function.",
+      "claim_type": "EXPLICIT",
+      "source": "This was true in both species, bolstering the emerging notion that population-level gain modulations are a general principle of mammalian V1 function (Whiteway et al., 2019; Lin et al., 2015; Arandia-Romero et al., 2016; Goris et al., 2014; Ferguson and Cardin, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the shared gain model results in both species and citations to previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "f202f122-4960-4f31-a5c3-ffb3c12104ce",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C25",
+      "claim": "Peripheral marmoset V1 neurons had slightly higher stimulus-driven responses during running (geometric mean ratio = 1.129 [1.068, 1.194], n=147).",
+      "claim_type": "EXPLICIT",
+      "source": "Analyzing neurons with peripheral receptive fields separately revealed a difference in running modulations between these retinotopically distinct portions of V1: peripheral neurons had slightly higher stimulus-driven responses during running (aggregating over all stimuli, geometric mean ratio [running/stationary] = 1.129 [1.068, 1.194], n = 147; difference with the central units was significant, p=2.100e-03, stat = 12376, Mann\u2013Whitney U test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from analysis of peripheral V1 neurons in marmoset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "6379ff87-d6bd-49ae-aafb-7e4bc9cb659c",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C26",
+      "claim": "The difference in running modulation between peripheral and central marmoset V1 units was significant (p=2.100e-03).",
+      "claim_type": "EXPLICIT",
+      "source": "peripheral neurons had slightly higher stimulus-driven responses during running (aggregating over all stimuli, geometric mean ratio [running/stationary] = 1.129 [1.068, 1.194], n = 147; difference with the central units was significant, p=2.100e-03, stat = 12376, Mann\u2013Whitney U test)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statistical comparison between peripheral and central V1 neurons in marmoset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "e5b28109-65f3-4df3-8b8b-5be3a624d592",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C28",
+      "claim": "Saccades were slightly more frequent during running in marmosets (2.653 Hz [2.600, 2.697]) compared to stationary (2.525 Hz [2.475, 2.573]).",
+      "claim_type": "EXPLICIT",
+      "source": "In short, saccades were slightly more frequent and larger during running (saccade frequency during running: 2.653 Hz, 95% CI [2.600, 2.697]; stationary/not running: 2.525 Hz [2.475, 2.573]; saccade magnitude during running: 9.261\u00b0 [9.140, 9.374]; stationary/not running: 8.337\u00b0 [8.190, 8.470]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from analysis of eye movements shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "dc3cf621-77ec-459f-b9a4-97d56f42897c",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C29",
+      "claim": "Saccade magnitude was larger during running in marmosets (9.261\u00b0 [9.140, 9.374]) compared to stationary (8.337\u00b0 [8.190, 8.470]).",
+      "claim_type": "EXPLICIT",
+      "source": "In short, saccades were slightly more frequent and larger during running (saccade frequency during running: 2.653 Hz, 95% CI [2.600, 2.697]; stationary/not running: 2.525 Hz [2.475, 2.573]; saccade magnitude during running: 9.261\u00b0 [9.140, 9.374]; stationary/not running: 8.337\u00b0 [8.190, 8.470]).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from analysis of eye movements shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "82d246af-2242-4774-96c7-4c80b11e9b9f",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C30",
+      "claim": "Differences in retinal stimulation due to differences in eye movements are unlikely to explain running-correlated suppression of V1 activity in marmosets.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial analyses found that differences in retinal stimulation due to differences in eye movements are unlikely to explain running-correlated suppression of V1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the analysis of eye movements and their predicted effects on neural activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "b2371e1f-6dde-4f6f-a188-df08138463c4",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C31",
+      "claim": "The predicted spike rate increase during running based on saccades was 0.05 Hz (<1% gain), which cannot explain the observed decreases in V1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "On the aggregate, saccades slightly increased activity (predicted spike rate increase during running based on saccades = 0.05 Hz; expressed as gain, <1%), and thus cannot explain the sign or magnitude of the subtle decreases we observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from regression analysis of saccade effects on neural activity.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "07c26776-3f03-49e0-b1f8-056d9e955c18",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C32",
+      "claim": "Pupil size was approximately 8% larger during running in marmosets.",
+      "claim_type": "EXPLICIT",
+      "source": "Pupil size was \u223c8% larger during running.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from analysis of pupil size shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "c9456cfb-113c-45d6-b8d8-565666670545",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C33",
+      "claim": "The finding that pupil size is larger during running is consistent with the idea that marmosets were in a higher arousal state during running.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is consistent with the idea that the marmosets were in a higher arousal state during running.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the pupil size data based on established knowledge about pupil size and arousal.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "3160c7f4-087d-4fbf-990e-d94943fa391a",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C34",
+      "claim": "The primate-rodent difference in the magnitude and sign of V1 gain modulations is consistent with known differences in neuromodulatory inputs related to arousal in rodent and primate V1.",
+      "claim_type": "EXPLICIT",
+      "source": "The primate-rodent difference in the magnitude and sign of V1 gain modulations we observed is in fact consistent with known differences in neuromodulatory inputs related to arousal in rodent and primate V1 (Disney and Robert, 2019; Coppola and Disney, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim connects the observed differences to mechanistic knowledge from cited literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "bce5a852-35d4-4c32-b415-94fa3a7d3a9b",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C35",
+      "claim": "In primates, the locations of ACh receptors allow cholinergic inputs to increase the activity of the majority of GABAergic neurons and hence suppress net activity via inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "In primates, the locations of ACh receptors allow cholinergic inputs to increase the activity of the majority of GABAergic neurons and hence suppress net activity via inhibition (Disney et al., 2007; Lien and Scanziani, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Disney et al., 2007 and Lien and Scanziani, 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "ad0857ea-15d9-4d19-b529-ddadfca9088a",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C36",
+      "claim": "Pharmacologically and anatomically distinct cholinergic influences in rodent likely exert more complex effects on net activity, including disinhibition which can increase net activity.",
+      "claim_type": "EXPLICIT",
+      "source": "but pharmacologically and anatomically distinct cholinergic influences in rodent likely exert more complex effects on net activity, including disinhibition which can increase net activity (Pakan et al., 2016; Fu et al., 2014; Pfeffer et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Pakan et al., 2016; Fu et al., 2014; and Pfeffer et al., 2013.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "07db8dd6-f6e5-4a8b-8cea-d4d55005ae61",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C37",
+      "claim": "Running does not affect V1 activity in marmosets like it does in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "In short, running does not affect V1 activity in marmosets like it does in mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by all the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "06a83c11-5ca9-4d3e-84f1-e86b77d88b36",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C38",
+      "claim": "The large, typically positive correlations between running and V1 activity often found in mice are simply not evident in marmosets.",
+      "claim_type": "EXPLICIT",
+      "source": "The large, typically positive correlations between running and V1 activity often found in mice are simply not evident in marmosets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement supported by the comparative data in Figures 2, 3, and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "3e8c2bd8-4c6e-439f-83d0-5c485dc2c7ff",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C39",
+      "claim": "In the foveal representation in marmoset V1, responses on average were slightly smaller during running.",
+      "claim_type": "EXPLICIT",
+      "source": "In the foveal representation in V1 \u2013 where we made the majority of our recordings \u2013 responses on average were slightly smaller during running",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings for foveal V1 based on the data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "b7e8f412-6e30-4d0a-981e-16e8635d6da5",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C40",
+      "claim": "In the peripheral representation of marmoset V1, responses were slightly larger during running.",
+      "claim_type": "EXPLICIT",
+      "source": "in the peripheral representation, responses were slightly larger.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the findings for peripheral V1 based on the Neuropixels recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "46916255-1068-4ef7-bea6-ede3d091037c",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C41",
+      "claim": "The same shared-gain model improved accounts of both mouse and marmoset V1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "The same shared-gain model improved accounts of both mouse and marmoset V1 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the model comparison results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "a85df75b-e75c-471b-a9e5-4cda91b7cd7c",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C42",
+      "claim": "Population-level gain modulations likely reflect modulatory inputs associated with behavioral state and arousal.",
+      "claim_type": "EXPLICIT",
+      "source": "These population-level gain modulations likely reflect modulatory inputs associated with behavioral state and arousal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the shared gain model results based on established knowledge.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "714b9865-eed7-499a-ad28-74bfd1d741e9",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C43",
+      "claim": "The primate foveal representation might be functionally unique, but the primate peripheral representation might be more functionally similar to that of mouse V1.",
+      "claim_type": "EXPLICIT",
+      "source": "An intriguing conjecture is that the primate foveal representation might be functionally unique, but that the primate peripheral representation might be more functionally similar to that of mouse V1 (Horrocks et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the differences between foveal and peripheral V1 in marmosets, with a citation to Horrocks et al., 2022.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "469675bf-a972-4c2f-8b9d-dacaca9ed64a",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C44",
+      "claim": "Experiments were performed on two common marmosets (one male, 'marmoset G', and one female, 'marmoset B', both aged 2 years).",
+      "claim_type": "EXPLICIT",
+      "source": "We performed electrophysiological recordings in V1 of two common marmosets (one male, 'marmoset G', and one female, 'marmoset B', both aged 2 years).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental subjects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "c9f8b775-3149-429c-8c45-062f5464a46a",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C45",
+      "claim": "Both marmoset subjects had chronically implanted N-form arrays inserted into left V1.",
+      "claim_type": "EXPLICIT",
+      "source": "Both subjects had chronically implanted N-form arrays (Modular Bionics, Modular Bionics, Berkeley, CA) inserted into left V1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the recording method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "a7c82d8c-f3ee-4c40-91ee-6c1ab4c9774f",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C46",
+      "claim": "Additional recordings were performed using Neuropixels 1.0 probes acutely inserted into small craniotomies.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional recordings were also performed using Neuropixels 1.0 probes (Jun et al., 2017) acutely inserted into small craniotomies (procedure described below).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an additional recording method, with a citation to Jun et al., 2017.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "33ecf08b-613d-4011-b346-62491314a810",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C47",
+      "claim": "The monitor used in the experiments had a resolution of 1920 \u00d7 1080 pixels and a refresh rate of 120 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Subjects perched quadrupedally on a 12\u2033 diameter wheel while head-fixed facing a 24\u2033 LCD (BenQ) monitor (resolution = 1920 \u00d7 1080 pixels, refresh rate = 120 Hz) corrected to have a linear gamma function, at a distance of 36 cm (pixels per degree = 26.03) in a dark room.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental apparatus.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "71627f0b-d200-4ed1-bd08-830c0ec244ea",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C48",
+      "claim": "Eye position was recorded via an Eyelink 1000 eye tracker sampling at 1 kHz.",
+      "claim_type": "EXPLICIT",
+      "source": "Eye position was recorded via an Eyelink 1000 eye tracker (SR Research) sampling at 1 kHz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the eye tracking method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "923a6139-7f80-4eb8-835f-d272deba12e5",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C49",
+      "claim": "Spike sorting on data acquired using N-Form arrays was performed using in-house code to track and merge data from identified single units across multiple recording sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike sorting on data acquired using N-Form arrays was performed using in-house code to track and merge data from identified single units across multiple recording sessions (Muthmann et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis method, with a citation to Muthmann et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "a63f4846-04a1-441e-97fe-2fa599cfd07b",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C50",
+      "claim": "Spike sorting for data acquired using Neuropixels probes was performed using Kilosort 2.5.",
+      "claim_type": "EXPLICIT",
+      "source": "Spike sorting for data acquired using Neuropixels probes was performed using Kilosort 2.5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data analysis method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "05b3b7a9-46fa-4e08-95bb-eab7cb4b85e2",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C51",
+      "claim": "Chronic N-Form arrays consisted of 16 shanks arrayed in a 4 \u00d7 4 grid with shanks evenly spaced 0.4 mm apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Chronic array recordings were performed using 64-channel chronically implanted 3D N-Form arrays consisting of 16 shanks arrayed in a 4 \u00d7 4 grid with shanks evenly spaced 0.4 mm apart (Modular Bionics, Berkeley).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the recording electrode array.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "2b48e0e1-d6d8-4151-82f3-245a8dd06df1",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C52",
+      "claim": "Well-isolated single units were detectable on the N-Form arrays in excess of 6 months after the initial implantation procedure.",
+      "claim_type": "EXPLICIT",
+      "source": "Well-isolated single units were detectable on the arrays in excess of 6 months after the initial implantation procedure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the longevity of the chronic recordings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "609e540e-d79a-43ef-b8ca-92662d4413e7",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C53",
+      "claim": "Neuropixels 1.0 probes consist of 384 recording channels that can individually be configured to record signals from 960 selectable sites along a 10 mm long, 70 \u00d7 24 \u00b5m cross-sectional straight shank.",
+      "claim_type": "EXPLICIT",
+      "source": "Acute Neuropixels recordings were performed using standard Neuropixels 1.0 electrodes (IMEC, Leuven, Belgium). Each probe consists of 384 recording channels that can individually be configured to record signals from 960 selectable sites along a 10 mm long, 70 \u00d7 24 \u00b5m cross-sectional straight shank.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the Neuropixels probe specifications.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "50151144-b7a8-4453-adfe-cc2ba9d73698",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C54",
+      "claim": "Mouse data were downloaded from the publicly available Visual Coding database at https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels.",
+      "claim_type": "EXPLICIT",
+      "source": "Mouse data were downloaded from the publicly available Visual Coding database at https://portal.brain-map.org/explore/circuits/visual-coding-neuropixels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the source of the mouse data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "22fddbb0-dd6d-40f2-9cad-04d633111fc7",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C55",
+      "claim": "The same analysis code was used to analyze mouse and marmoset data.",
+      "claim_type": "EXPLICIT",
+      "source": "We used the same analysis code to analyze these data and the marmoset data we collected.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the analysis methodology to ensure comparability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "f04de373-f844-427d-afc2-9e245b03bd87",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C56",
+      "claim": "Trials for all stimuli were 20 s long with a 500 ms inter-trial interval.",
+      "claim_type": "EXPLICIT",
+      "source": "Trials for all stimuli were 20 s long with a 500 ms ITI and a 20-s-long natural image interleaved every fifth trial to keep the subject engaged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental protocol.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "000b2beb-825f-4657-9c00-e9070604eda3",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C57",
+      "claim": "Marmosets were rewarded at set locomotion distance intervals to elicit sufficiently reliable and frequent running behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "To elicit sufficiently reliable and frequent running behavior, subjects were rewarded at set locomotion distance intervals unrelated to the stimulus or gaze behavior (typical rewards were 50\u201370 \u00b5L and distance required to achieve a reward usually varied between 20 and 75 cm; reward amounts and intervals were adjusted daily to maximally motivate the subject).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the behavioral training method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "a3677f15-ab97-42c2-b931-6a87c3440516",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C58",
+      "claim": "Marmosets naturally direct their gaze towards the faces of other marmosets when allowed to free-view with little-to-no training.",
+      "claim_type": "EXPLICIT",
+      "source": "Marmosets naturally direct their gaze towards the faces of other marmosets when allowed to free-view with little-to-no training, allowing for the experimenter to adjust the calibration offset and gain manually between pattern presentations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about marmoset behavior used for eyetracking calibration.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "562d4281-477e-4423-aaed-f66588f1f7ca",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C59",
+      "claim": "The primary stimulus consisted of full-field drifting gratings optimized to drive marmoset V1 with 3 separate spatial frequencies, 2 drift speeds, and 12 orientations.",
+      "claim_type": "EXPLICIT",
+      "source": "The primary stimulus consisted of full-field drifting gratings. Gratings were optimized to drive marmoset V1 with 3 separate spatial frequencies (one, two, and four cycles per degree), 2 drift speeds (1 or 2\u00b0 per second), and 12 orientations (evenly spaced 30\u00b0 intervals).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the visual stimuli used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "7e24a3bc-b9ae-42e6-bae0-7930c2d182db",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C60",
+      "claim": "A spatiotemporal receptive field mapping stimulus, consisting of sparse dot noise, was shown during each recording session.",
+      "claim_type": "EXPLICIT",
+      "source": "A spatiotemporal receptive field mapping stimulus, consisting of sparse dot noise, was shown during each recording session. One hundred 1\u00b0 white and black dots were presented at 50% contrast at random points on the screen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the receptive field mapping method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "0593bf1d-134c-4ca3-b682-fa79a738d08a",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C61",
+      "claim": "Marmosets freely viewed the sparse noise stimulus, and receptive fields were estimated using forward correlation correcting for eye position offline.",
+      "claim_type": "EXPLICIT",
+      "source": "Marmosets freely viewed the stimulus, and we corrected for eye position offline to estimate the spatial receptive fields using forward correlation (Yates et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the receptive field estimation method, with a citation to Yates et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "e23c0d4d-46bd-40c8-b5a2-b165c82643c5",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C62",
+      "claim": "Stimuli with considerably higher spatial frequencies were used for marmosets than for mice because the spatial frequency tunings of marmoset and mouse V1 neurons are starkly different.",
+      "claim_type": "EXPLICIT",
+      "source": "Because the spatial frequency tunings of marmoset and mouse V1 neurons are starkly different, we used stimuli with considerably higher spatial frequencies than in the mouse experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation of a methodological difference based on known differences in visual systems.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "bf059f7f-a679-4bdc-983d-c1609c9a4051",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C63",
+      "claim": "Marmoset V1 receptive fields are much smaller than in mouse.",
+      "claim_type": "EXPLICIT",
+      "source": "Relatedly, marmoset V1 receptive fields are much smaller than in mouse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a known difference between the species.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "1535e718-e852-43ef-9994-6b42162ae615",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C64",
+      "claim": "Responses in marmoset V1 were likely affected by substantial amounts of surround suppression because full-field stimuli were used.",
+      "claim_type": "EXPLICIT",
+      "source": "Because we used full-field stimuli (to match mouse experiments), responses in marmoset V1 were likely affected by substantial amounts of surround suppression, which would reduce overall responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the effects of the stimulus choice on neural responses.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "2fc2d074-7765-4813-abef-1046f0affe35",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C65",
+      "claim": "A reward scheme was incorporated to motivate marmoset subjects to run more frequently.",
+      "claim_type": "EXPLICIT",
+      "source": "We therefore incorporated a reward scheme to motivate the subjects to run more frequently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a methodological adaptation for marmosets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "fe102de5-a1a4-420c-92df-86696f7f9176",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C66",
+      "claim": "For the analyses in Figure 2, sessions were included if they contained more than 250 trials and a proportion of trials running was not less than 10% or greater than 90%.",
+      "claim_type": "EXPLICIT",
+      "source": "For the analyses shown in Figure 2, sessions were included if they contained more than 250 trials and a proportion of trials running was not less than 10% or greater than 90%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "f4573637-b672-4abc-89da-dbc394f46c47",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C67",
+      "claim": "For the mouse dataset, the inclusion criteria yielded 25/32 sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "For the mouse dataset, this yielded 25/32 sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result of applying the inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "9cf08059-be8b-4da5-a40c-8c6146dca574",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C68",
+      "claim": "For the marmoset dataset, the inclusion criteria yielded 27/34 sessions.",
+      "claim_type": "EXPLICIT",
+      "source": "For the marmoset dataset, this yielded 27/34 sessions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result of applying the inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "dc7d82e9-1366-465e-86ae-aa5dffe5b967",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C69",
+      "claim": "For unit-wise analyses in Figure 3, super-sessioned units were included if they had more than 300 trials of data and a mean firing rate of >1 spike/s.",
+      "claim_type": "EXPLICIT",
+      "source": "For the unit-wise analyses in Figure 3, super-sessioned units were included for analysis if they had more than 300 trials of data and a mean firing rate of >1 spike/s.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the unit inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "395248ba-8665-473d-9e31-4c4dce8b30e9",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C70",
+      "claim": "The unit inclusion criteria yielded 1168/2015 units in mouse and 786/1837 units in marmoset.",
+      "claim_type": "EXPLICIT",
+      "source": "This yielded 1168/2015 units in mouse and 786/1837 units in marmoset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result of applying the unit inclusion criteria.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "9f30a478-984c-484b-b3ce-a4a23ba8fa20",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C72",
+      "claim": "To assess eye movement effects, the number of saccades and average saccade size were calculated for each stimulus presentation and regressed against spike count.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess whether and how eye movements might differ between running and stationary periods (and perhaps account for some or all of the running-correlated modulations of V1 response), we started by counting the number of saccades within a bin corresponding to each stimulus presentation (from 0.2 s before stimulus onset to 0.1 after offset), as well as calculating the average saccade size (vector magnitude) of those saccades. We then regressed these terms against the spike count in each bin, allowing us to estimate the effect of eye movements in units of spike rate (Hz).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the analysis method for eye movement effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "cbc436ca-a12c-4b09-9142-398e931f813f",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C74",
+      "claim": "Similar shared-gain models have been employed to describe the population response in V1 in several species.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar models have been employed to describe the population response in V1 in several species (Goris et al., 2014; Lin et al., 2015; Arandia-Romero et al., 2016; Whiteway et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to previous work using similar models.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "7ce6eb17-1491-483b-a0ce-8ab233542fbd",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C76",
+      "claim": "The model was cross-validated using a speckled holdout pattern whereby some fraction of neurons were withheld on each trial with probability p=0.25.",
+      "claim_type": "EXPLICIT",
+      "source": "We cross-validated the model using a speckled holdout pattern (Williams et al., 2018) whereby some fraction of neurons were withheld on each trial with probability p=0.25.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the cross-validation method, with a citation to Williams et al., 2018.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "c3c73de8-082a-4d96-abe0-dd81d02f4e11",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "claim_id": "C77",
+      "claim": "The sign of all latent variables was anchored to the average firing rate of the population, such that positive means increases in the average firing rate.",
+      "claim_type": "EXPLICIT",
+      "source": "We anchored the sign of all latent variables to the average firing rate of the population, such that positive means increases in the average firing rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a methodological choice for interpreting the latent variables.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "412e89f8-66b4-493e-b3a5-1d8cc40dd5f6",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "In mice, running strongly modulates V1 activity with large positive correlations. The geometric mean ratio of firing rate during running versus stationary was 1.523 for preferred stimuli, 69% of units showed increased firing, and shared gain was significantly higher during running (mean difference 0.970, p~0).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C5, C14, C15, and C21 collectively demonstrate strong, positive running-correlated modulations in mouse V1 through multiple converging analyses (session-level correlations, unit-level firing rates, and population-level shared gain modeling). The quantitative results are statistically significant with appropriate sample sizes and consistent across analytical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "db722701-70f9-4803-878a-0c114daf39a6",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In marmoset foveal V1, running-correlated modulations were small and slightly suppressive. The median correlation was -0.033 (p=0.034), geometric mean ratio for preferred stimuli was 0.899, and shared gain was slightly lower during running (mean difference -0.125, p=0.002).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C4, C12, C16, C17, C22, C37, C38, and C39 provide consistent evidence across multiple analytical levels (session correlations, unit firing rates, shared gain) that marmoset foveal V1 shows small, slightly negative running modulations. Statistical tests are appropriate and results are internally consistent, though effect sizes are small.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "2ad180c7-4049-4c47-9702-60727fc4e10b",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Population-level gain modulations are a general principle of mammalian V1 function. The shared-gain model improved descriptions of population data in both mice and marmosets, though the correlation with running differed between species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24, C41, C42, and C74 demonstrate that shared gain modeling improves fit in both species (Figure 4b,c with significant p-values), supporting a common computational principle. The interpretation is strengthened by citations to prior work in multiple species, though the functional interpretation (C42) remains somewhat inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "7cf60538-5342-43d6-995f-7ae75e39ccf2",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Peripheral marmoset V1 neurons showed slightly higher responses during running (geometric mean ratio 1.129) compared to foveal neurons, suggesting retinotopic differences in running modulation within marmoset V1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C25 and C26 provide statistically significant evidence for peripheral-foveal differences, but this is based on limited data (only 2 sessions with simultaneous recordings, n=147 peripheral units). Claim C43 acknowledges this is speculative. The small sample size and lack of systematic retinotopic mapping limit confidence in this result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "3bd31f12-e197-4e0c-a98e-948b002e9055",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Eye movements differed slightly between running and stationary periods in marmosets (higher saccade frequency and magnitude during running), but these differences cannot explain the observed V1 suppression. Regression analysis predicted only 0.05 Hz increase (<1% gain) from saccades.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28, C29, C30, C31, and C72 provide quantitative evidence that eye movements differ during running but predict effects opposite in sign to observed V1 modulations. The regression analysis appropriately tests whether eye movements could be a confound. However, the analysis is limited by inability to perform comparable analysis in mouse data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "d10bb427-addc-4abc-bda5-b86263dd9df7",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pupil size was approximately 8% larger during running in marmosets, consistent with higher arousal state during running.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32 and C33 provide quantitative pupil size measurements and reasonable interpretation based on established pupil-arousal relationships. However, the authors acknowledge that cross-species calibration of pupil size to arousal levels remains uncertain, limiting stronger conclusions about arousal state equivalence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "f1131885-537d-4bdb-8411-af81b7e84d89",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The primate-rodent differences in V1 gain modulations are consistent with known species differences in neuromodulatory circuitry. In primates, cholinergic inputs suppress activity via GABAergic neurons, while in rodents, cholinergic effects include disinhibition that can increase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34, C35, and C36 connect the observed functional differences to mechanistic knowledge from cited literature. The interpretation is reasonable and well-supported by citations, though it remains correlative rather than causally demonstrated in this study. The mechanistic explanation is plausible but not directly tested.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "2ea34233-0012-43d0-bd66-f45c7540887e",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The experimental methods included head-fixed marmosets on a custom treadmill with high-resolution visual stimuli, eye tracking, and electrophysiological recordings using both chronic N-Form arrays and acute Neuropixels probes. Mouse data from a public database were analyzed with the same code for direct comparison.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C9, C10, C44-C48, C51-C55 describe the experimental apparatus and methods. These are well-documented with appropriate technical specifications and citations. The use of identical analysis code for both species (C55) strengthens cross-species comparisons. Methods appear sound and appropriately detailed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "9cb8312c-8146-47ca-905f-23b309d70607",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Visual stimuli and behavioral protocols were adapted for marmosets to match mouse experiments while accounting for species differences in visual acuity and behavior. Full-field drifting gratings at higher spatial frequencies were used, and reward schemes motivated running behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C65 describe necessary methodological adaptations for cross-species comparison. The rationale for differences (higher spatial frequencies due to better acuity, rewards to motivate running) is sound. Claim C64 appropriately acknowledges that full-field stimuli likely induced surround suppression in marmosets, which could affect response magnitudes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "6838c597-0d96-49ca-9061-c51b5e175a10",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Data inclusion criteria were applied consistently across species. For session-level analyses, 25/32 mouse sessions and 27/34 marmoset sessions met criteria. For unit-level analyses, 1168/2015 mouse units and 786/1837 marmoset units were included.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C70 document clear, consistent inclusion criteria applied to both species. The criteria (minimum trial numbers, running proportion ranges, firing rate thresholds) are reasonable and transparently reported. Sample sizes are adequate for the statistical tests performed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "8e482ad6-01e4-4dda-a9fe-ddd0ee9e2f78",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The shared gain model was cross-validated using speckled holdout (p=0.25) and latent variable signs were anchored to population average firing rate for interpretability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76 and C77 describe appropriate model validation and interpretation methods. The speckled holdout approach is cited to prior work and is suitable for population models. Sign anchoring (C77) is a reasonable methodological choice to make latent variables interpretable, though it is somewhat arbitrary.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "49d86573-5202-49cc-a2a1-c99df64bfb6b",
+      "content_id": "da15ca73-ac1b-4c43-bb13-82b31e424431",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Neurons in V1 of virtually all mammals are selective for simple image features, and primates are more fundamentally visual organisms than rodents with specialized features like foveas.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C7 represent established knowledge in the field, supported by multiple citations to foundational literature. These provide important context for the study but are not novel findings. The claims accurately represent current understanding of mammalian visual systems.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "23140cce-fec8-4c85-9fe6-7970a8d719af",
+      "content_id": "93568163-4876-4171-8ab1-44d656129314",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The core finding is that locomotion (running) strongly modulates mouse V1 activity with predominantly positive correlations and increased firing rates, whereas marmoset V1 shows small, slightly suppressive modulations during running. This species difference is evident at both population and single-unit levels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this central finding. Reviewer 1 states 'the evidence in support of these differences across species is convincing.' Reviewer 2 notes 'the results shown in the figures support the conclusion that locomotion modulates the activity in primate and mouse visual cortex differently.' Reviewer 3 confirms 'Single neuron and population level approaches demonstrate that the activity of V1 in mice and marmoset are categorically different.' No reviewer questions the validity or interpretation of this core result.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "057b0d03-21e2-48f0-9c14-74061f71c134",
+      "content_id": "93568163-4876-4171-8ab1-44d656129314",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Population-level analyses using a shared gain model revealed that trial-to-trial fluctuations in shared gain occur in both species, but gain is strongly positively correlated with running in mice (mean difference 0.970) and slightly negatively correlated with running in marmosets (mean difference -0.125). This supports the notion that population-level gain modulations are a general principle of mammalian V1 function, though their relationship to behavior differs across species.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the shared gain modeling results without critique. Reviewer 3 specifically notes 'a shared gain model could describe well the trial-to-trial variations of population-level neural activity for both species' and that 'locomotion more strongly modulated V1 population activity in mice.' The model comparison and cross-validation approach are not questioned, and the interpretation that gain modulations reflect behavioral state is treated as reasonable.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "89459e50-c2ba-4e46-9172-c8e4ca1fc5db",
+      "content_id": "93568163-4876-4171-8ab1-44d656129314",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Peripheral marmoset V1 neurons showed slightly higher stimulus-driven responses during running (geometric mean ratio 1.129), significantly different from central/foveal neurons. This suggests functional differences between foveal and peripheral V1 representations in marmosets, with peripheral V1 potentially being more similar to mouse V1.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly highlight this finding as important. Reviewer 2 states 'it is worth noting that the authors report an interesting difference between the foveal and peripheral part of the visual cortex in marmoset' and that 'It will be interesting to investigate these differences in more detail in future studies.' Reviewer 3 notes 'the findings on how the primate peripheral and foveal V1 representations functionally relate to and differ from the mice V1 representations speak to the power of these cross-species comparisons.' The data supporting this claim are accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "e0031445-f226-4283-8663-5246715595f2",
+      "content_id": "93568163-4876-4171-8ab1-44d656129314",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The experimental setup successfully established head-fixed marmosets running on a wheel-based treadmill while V1 neurons were recorded. Marmoset V1 neurons showed expected properties: receptive fields in central vision (1-5\u00b0), robust responses to oriented gratings, and orientation/direction selectivity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers unanimously praise the experimental approach. Reviewer 1 calls the treadmill 'a very elegant solution to the problem of running in primates' that 'allows for true replication of the running vs stationary experiment.' Reviewer 2 describes the paradigm as 'unique and ideally tailored to answering the question' and notes 'the presented new marmoset dataset appears to be of high quality.' The basic V1 characterization is not questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "5d3ac523-7aec-40ba-9bce-d292b7f262bf",
+      "content_id": "93568163-4876-4171-8ab1-44d656129314",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Eye movement analyses showed saccades were slightly more frequent (2.653 vs 2.525 Hz) and larger (9.261\u00b0 vs 8.337\u00b0) during running, and pupil size was ~8% larger during running. However, the predicted effect of saccades on neural activity was minimal (<1% gain increase), insufficient to explain the observed suppression. Larger pupils suggest higher arousal during running.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge these analyses but express reservations about completeness. Reviewer 1 notes the authors 'investigate the possible effect of eye movements and pupil size' and 'conclude that eye input does not explain all these differences,' implicitly accepting the conclusion is partial. Reviewer 3 states 'more detailed eye movement analysis within species, such as microsaccades in marmosets and the potential impact on marmoset V1 activity' remains unexplored, and notes 'unanswered questions on how their reward scheme may affect biomarkers (e.g., pupil sizes) and marmoset V1 activity.' The data are not rejected but are seen as incomplete.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "b6163437-49fc-44aa-9ddc-1bd5276234e6",
+      "content_id": "93568163-4876-4171-8ab1-44d656129314",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The observed species differences in V1 gain modulations are consistent with known differences in neuromodulatory inputs: in primates, cholinergic inputs increase GABAergic neuron activity leading to net suppression, while in rodents, cholinergic influences include disinhibition that can increase net activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers treat this mechanistic interpretation as reasonable speculation supported by literature. Reviewer 1 notes 'the authors do their best to provide possible explanations' for why differences exist. Reviewer 2 states 'The authors discuss a few ideas in the paper which can be addressed in future experiments,' treating these as plausible hypotheses rather than definitive conclusions. No reviewer challenges the cited mechanistic literature or the logic connecting it to the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1",
+      "content_id": "93568163-4876-4171-8ab1-44d656129314",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Methodological details include: two marmosets with chronic N-form arrays and acute Neuropixels recordings; mouse data from Allen Institute analyzed with identical code; visual stimuli optimized for each species' spatial frequency tuning; reward scheme to motivate marmoset running; eye tracking and spike sorting procedures; session and unit inclusion criteria; and shared gain model cross-validation approach.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers consistently praise the methodological rigor. Reviewer 2 emphasizes 'the authors took extra care to ensure that the paradigm in marmoset matched as closely as possible to the conditions in the mouse experiments' and that 'Such a direct comparison, and reuse of existing datasets, is another strong aspect of the work.' Reviewer 3 notes 'the methods and data support the work's main claims.' The only noted limitation is lack of layer information in marmosets (Reviewer 2), but this is framed as a future direction rather than a flaw undermining current conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "ca193978-2737-427a-8c2b-f5b3b3ba6b5c",
+      "content_id": "93568163-4876-4171-8ab1-44d656129314",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Background context establishes that mouse V1 activity depends as much on running state as visual stimuli, that V1 neurons across mammals are selective for simple image features, and that primates have more specialized visual systems than rodents with features like foveas and higher acuity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established facts from cited literature that reviewers do not question. Reviewer 1 references the original mouse finding as having 'revolutionised our thinking about visual cortex.' Reviewer 2 notes 'The finding that the activity in mouse visual cortex is modulated by running has changed the concept of primary sensory cortical areas.' These background claims frame the motivation for the study and are universally accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "2c77923e-c436-417d-a37a-4eabf6de9996",
+      "content_id": "93568163-4876-4171-8ab1-44d656129314",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "In the foveal representation of marmoset V1 (where most recordings were made), responses were on average slightly smaller during running.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This summary statement is directly supported by the quantitative data in claims C12, C16, C17 and is not questioned by reviewers. It is treated as part of the core finding distinguishing marmoset from mouse V1.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "37403d6c-1ee7-4626-bc11-48a120f7e1fc",
+      "result_id": "412e89f8-66b4-493e-b3a5-1d8cc40dd5f6"
+    },
+    {
+      "claim_id": "b0e94df9-a30d-47af-b989-e9001a3e5cb3",
+      "result_id": "412e89f8-66b4-493e-b3a5-1d8cc40dd5f6"
+    },
+    {
+      "claim_id": "22618394-dfd2-45b0-8f92-2c8a05cba180",
+      "result_id": "412e89f8-66b4-493e-b3a5-1d8cc40dd5f6"
+    },
+    {
+      "claim_id": "6fe6d3f7-2317-488b-b87e-d33f70c06594",
+      "result_id": "412e89f8-66b4-493e-b3a5-1d8cc40dd5f6"
+    },
+    {
+      "claim_id": "8cb7a338-3da0-499e-9534-ef63776d5ee2",
+      "result_id": "412e89f8-66b4-493e-b3a5-1d8cc40dd5f6"
+    },
+    {
+      "claim_id": "0120edb3-5d27-4787-bdd6-6d93089bdea1",
+      "result_id": "db722701-70f9-4803-878a-0c114daf39a6"
+    },
+    {
+      "claim_id": "9367cbd9-c732-4e22-ac0e-7969d3059499",
+      "result_id": "db722701-70f9-4803-878a-0c114daf39a6"
+    },
+    {
+      "claim_id": "b7e806eb-7af3-43b0-8c8f-ab8cf9a7ed80",
+      "result_id": "db722701-70f9-4803-878a-0c114daf39a6"
+    },
+    {
+      "claim_id": "4f91dcc0-b070-4fdb-8345-17cd6d5df282",
+      "result_id": "db722701-70f9-4803-878a-0c114daf39a6"
+    },
+    {
+      "claim_id": "12fe3ce2-4862-4215-aa0a-3e5331478681",
+      "result_id": "db722701-70f9-4803-878a-0c114daf39a6"
+    },
+    {
+      "claim_id": "5ebd7b45-f0fd-42d5-a391-135ab3e6930f",
+      "result_id": "db722701-70f9-4803-878a-0c114daf39a6"
+    },
+    {
+      "claim_id": "07db8dd6-f6e5-4a8b-8cea-d4d55005ae61",
+      "result_id": "db722701-70f9-4803-878a-0c114daf39a6"
+    },
+    {
+      "claim_id": "06a83c11-5ca9-4d3e-84f1-e86b77d88b36",
+      "result_id": "db722701-70f9-4803-878a-0c114daf39a6"
+    },
+    {
+      "claim_id": "3e8c2bd8-4c6e-439f-83d0-5c485dc2c7ff",
+      "result_id": "db722701-70f9-4803-878a-0c114daf39a6"
+    },
+    {
+      "claim_id": "2f0372e8-99e7-4317-b543-ad0bf34c3b4e",
+      "result_id": "2ad180c7-4049-4c47-9702-60727fc4e10b"
+    },
+    {
+      "claim_id": "3a92de3f-320b-412a-bbcd-6e94e6840d2f",
+      "result_id": "2ad180c7-4049-4c47-9702-60727fc4e10b"
+    },
+    {
+      "claim_id": "46916255-1068-4ef7-bea6-ede3d091037c",
+      "result_id": "2ad180c7-4049-4c47-9702-60727fc4e10b"
+    },
+    {
+      "claim_id": "a85df75b-e75c-471b-a9e5-4cda91b7cd7c",
+      "result_id": "2ad180c7-4049-4c47-9702-60727fc4e10b"
+    },
+    {
+      "claim_id": "cbc436ca-a12c-4b09-9142-398e931f813f",
+      "result_id": "2ad180c7-4049-4c47-9702-60727fc4e10b"
+    },
+    {
+      "claim_id": "f202f122-4960-4f31-a5c3-ffb3c12104ce",
+      "result_id": "7cf60538-5342-43d6-995f-7ae75e39ccf2"
+    },
+    {
+      "claim_id": "6379ff87-d6bd-49ae-aafb-7e4bc9cb659c",
+      "result_id": "7cf60538-5342-43d6-995f-7ae75e39ccf2"
+    },
+    {
+      "claim_id": "b7e8f412-6e30-4d0a-981e-16e8635d6da5",
+      "result_id": "7cf60538-5342-43d6-995f-7ae75e39ccf2"
+    },
+    {
+      "claim_id": "714b9865-eed7-499a-ad28-74bfd1d741e9",
+      "result_id": "7cf60538-5342-43d6-995f-7ae75e39ccf2"
+    },
+    {
+      "claim_id": "e5b28109-65f3-4df3-8b8b-5be3a624d592",
+      "result_id": "3bd31f12-e197-4e0c-a98e-948b002e9055"
+    },
+    {
+      "claim_id": "dc3cf621-77ec-459f-b9a4-97d56f42897c",
+      "result_id": "3bd31f12-e197-4e0c-a98e-948b002e9055"
+    },
+    {
+      "claim_id": "82d246af-2242-4774-96c7-4c80b11e9b9f",
+      "result_id": "3bd31f12-e197-4e0c-a98e-948b002e9055"
+    },
+    {
+      "claim_id": "b2371e1f-6dde-4f6f-a188-df08138463c4",
+      "result_id": "3bd31f12-e197-4e0c-a98e-948b002e9055"
+    },
+    {
+      "claim_id": "9f30a478-984c-484b-b3ce-a4a23ba8fa20",
+      "result_id": "3bd31f12-e197-4e0c-a98e-948b002e9055"
+    },
+    {
+      "claim_id": "07c26776-3f03-49e0-b1f8-056d9e955c18",
+      "result_id": "d10bb427-addc-4abc-bda5-b86263dd9df7"
+    },
+    {
+      "claim_id": "c9456cfb-113c-45d6-b8d8-565666670545",
+      "result_id": "d10bb427-addc-4abc-bda5-b86263dd9df7"
+    },
+    {
+      "claim_id": "3160c7f4-087d-4fbf-990e-d94943fa391a",
+      "result_id": "f1131885-537d-4bdb-8411-af81b7e84d89"
+    },
+    {
+      "claim_id": "bce5a852-35d4-4c32-b415-94fa3a7d3a9b",
+      "result_id": "f1131885-537d-4bdb-8411-af81b7e84d89"
+    },
+    {
+      "claim_id": "ad0857ea-15d9-4d19-b529-ddadfca9088a",
+      "result_id": "f1131885-537d-4bdb-8411-af81b7e84d89"
+    },
+    {
+      "claim_id": "0940c669-2e00-4704-a2aa-4a7a5851743e",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "8b7eda1d-17b6-4b2f-9957-4167aa4e3129",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "f6f21d7c-d572-4f68-b5a8-268299b7146c",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "469675bf-a972-4c2f-8b9d-dacaca9ed64a",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "c9f8b775-3149-429c-8c45-062f5464a46a",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "a7c82d8c-f3ee-4c40-91ee-6c1ab4c9774f",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "33ecf08b-613d-4011-b346-62491314a810",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "71627f0b-d200-4ed1-bd08-830c0ec244ea",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "05b3b7a9-46fa-4e08-95bb-eab7cb4b85e2",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "2b48e0e1-d6d8-4151-82f3-245a8dd06df1",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "609e540e-d79a-43ef-b8ca-92662d4413e7",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "50151144-b7a8-4453-adfe-cc2ba9d73698",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "22fddbb0-dd6d-40f2-9cad-04d633111fc7",
+      "result_id": "2ea34233-0012-43d0-bd66-f45c7540887e"
+    },
+    {
+      "claim_id": "f04de373-f844-427d-afc2-9e245b03bd87",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "000b2beb-825f-4657-9c00-e9070604eda3",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "a3677f15-ab97-42c2-b931-6a87c3440516",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "562d4281-477e-4423-aaed-f66588f1f7ca",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "7e24a3bc-b9ae-42e6-bae0-7930c2d182db",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "0593bf1d-134c-4ca3-b682-fa79a738d08a",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "e23c0d4d-46bd-40c8-b5a2-b165c82643c5",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "bf059f7f-a679-4bdc-983d-c1609c9a4051",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "1535e718-e852-43ef-9994-6b42162ae615",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "2fc2d074-7765-4813-abef-1046f0affe35",
+      "result_id": "9cb8312c-8146-47ca-905f-23b309d70607"
+    },
+    {
+      "claim_id": "fe102de5-a1a4-420c-92df-86696f7f9176",
+      "result_id": "6838c597-0d96-49ca-9061-c51b5e175a10"
+    },
+    {
+      "claim_id": "f4573637-b672-4abc-89da-dbc394f46c47",
+      "result_id": "6838c597-0d96-49ca-9061-c51b5e175a10"
+    },
+    {
+      "claim_id": "9cf08059-be8b-4da5-a40c-8c6146dca574",
+      "result_id": "6838c597-0d96-49ca-9061-c51b5e175a10"
+    },
+    {
+      "claim_id": "dc7d82e9-1366-465e-86ae-aa5dffe5b967",
+      "result_id": "6838c597-0d96-49ca-9061-c51b5e175a10"
+    },
+    {
+      "claim_id": "395248ba-8665-473d-9e31-4c4dce8b30e9",
+      "result_id": "6838c597-0d96-49ca-9061-c51b5e175a10"
+    },
+    {
+      "claim_id": "7ce6eb17-1491-483b-a0ce-8ab233542fbd",
+      "result_id": "8e482ad6-01e4-4dda-a9fe-ddd0ee9e2f78"
+    },
+    {
+      "claim_id": "c3c73de8-082a-4d96-abe0-dd81d02f4e11",
+      "result_id": "8e482ad6-01e4-4dda-a9fe-ddd0ee9e2f78"
+    },
+    {
+      "claim_id": "e0e5a791-7a6b-4bda-b41d-a8205e84085e",
+      "result_id": "49d86573-5202-49cc-a2a1-c99df64bfb6b"
+    },
+    {
+      "claim_id": "cc240d60-7ac3-4b8a-b9ad-77ffd657af59",
+      "result_id": "49d86573-5202-49cc-a2a1-c99df64bfb6b"
+    },
+    {
+      "claim_id": "37403d6c-1ee7-4626-bc11-48a120f7e1fc",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "0120edb3-5d27-4787-bdd6-6d93089bdea1",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "2f0372e8-99e7-4317-b543-ad0bf34c3b4e",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "9367cbd9-c732-4e22-ac0e-7969d3059499",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "b7e806eb-7af3-43b0-8c8f-ab8cf9a7ed80",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "22618394-dfd2-45b0-8f92-2c8a05cba180",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "6fe6d3f7-2317-488b-b87e-d33f70c06594",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "4f91dcc0-b070-4fdb-8345-17cd6d5df282",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "12fe3ce2-4862-4215-aa0a-3e5331478681",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "07db8dd6-f6e5-4a8b-8cea-d4d55005ae61",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "06a83c11-5ca9-4d3e-84f1-e86b77d88b36",
+      "result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af"
+    },
+    {
+      "claim_id": "8cb7a338-3da0-499e-9534-ef63776d5ee2",
+      "result_id": "057b0d03-21e2-48f0-9c14-74061f71c134"
+    },
+    {
+      "claim_id": "5ebd7b45-f0fd-42d5-a391-135ab3e6930f",
+      "result_id": "057b0d03-21e2-48f0-9c14-74061f71c134"
+    },
+    {
+      "claim_id": "3a92de3f-320b-412a-bbcd-6e94e6840d2f",
+      "result_id": "057b0d03-21e2-48f0-9c14-74061f71c134"
+    },
+    {
+      "claim_id": "46916255-1068-4ef7-bea6-ede3d091037c",
+      "result_id": "057b0d03-21e2-48f0-9c14-74061f71c134"
+    },
+    {
+      "claim_id": "a85df75b-e75c-471b-a9e5-4cda91b7cd7c",
+      "result_id": "057b0d03-21e2-48f0-9c14-74061f71c134"
+    },
+    {
+      "claim_id": "f202f122-4960-4f31-a5c3-ffb3c12104ce",
+      "result_id": "89459e50-c2ba-4e46-9172-c8e4ca1fc5db"
+    },
+    {
+      "claim_id": "6379ff87-d6bd-49ae-aafb-7e4bc9cb659c",
+      "result_id": "89459e50-c2ba-4e46-9172-c8e4ca1fc5db"
+    },
+    {
+      "claim_id": "b7e8f412-6e30-4d0a-981e-16e8635d6da5",
+      "result_id": "89459e50-c2ba-4e46-9172-c8e4ca1fc5db"
+    },
+    {
+      "claim_id": "714b9865-eed7-499a-ad28-74bfd1d741e9",
+      "result_id": "89459e50-c2ba-4e46-9172-c8e4ca1fc5db"
+    },
+    {
+      "claim_id": "0940c669-2e00-4704-a2aa-4a7a5851743e",
+      "result_id": "e0031445-f226-4283-8663-5246715595f2"
+    },
+    {
+      "claim_id": "8b7eda1d-17b6-4b2f-9957-4167aa4e3129",
+      "result_id": "e0031445-f226-4283-8663-5246715595f2"
+    },
+    {
+      "claim_id": "f6f21d7c-d572-4f68-b5a8-268299b7146c",
+      "result_id": "e0031445-f226-4283-8663-5246715595f2"
+    },
+    {
+      "claim_id": "e5b28109-65f3-4df3-8b8b-5be3a624d592",
+      "result_id": "5d3ac523-7aec-40ba-9bce-d292b7f262bf"
+    },
+    {
+      "claim_id": "dc3cf621-77ec-459f-b9a4-97d56f42897c",
+      "result_id": "5d3ac523-7aec-40ba-9bce-d292b7f262bf"
+    },
+    {
+      "claim_id": "82d246af-2242-4774-96c7-4c80b11e9b9f",
+      "result_id": "5d3ac523-7aec-40ba-9bce-d292b7f262bf"
+    },
+    {
+      "claim_id": "b2371e1f-6dde-4f6f-a188-df08138463c4",
+      "result_id": "5d3ac523-7aec-40ba-9bce-d292b7f262bf"
+    },
+    {
+      "claim_id": "07c26776-3f03-49e0-b1f8-056d9e955c18",
+      "result_id": "5d3ac523-7aec-40ba-9bce-d292b7f262bf"
+    },
+    {
+      "claim_id": "c9456cfb-113c-45d6-b8d8-565666670545",
+      "result_id": "5d3ac523-7aec-40ba-9bce-d292b7f262bf"
+    },
+    {
+      "claim_id": "3160c7f4-087d-4fbf-990e-d94943fa391a",
+      "result_id": "b6163437-49fc-44aa-9ddc-1bd5276234e6"
+    },
+    {
+      "claim_id": "bce5a852-35d4-4c32-b415-94fa3a7d3a9b",
+      "result_id": "b6163437-49fc-44aa-9ddc-1bd5276234e6"
+    },
+    {
+      "claim_id": "ad0857ea-15d9-4d19-b529-ddadfca9088a",
+      "result_id": "b6163437-49fc-44aa-9ddc-1bd5276234e6"
+    },
+    {
+      "claim_id": "469675bf-a972-4c2f-8b9d-dacaca9ed64a",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "c9f8b775-3149-429c-8c45-062f5464a46a",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "a7c82d8c-f3ee-4c40-91ee-6c1ab4c9774f",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "33ecf08b-613d-4011-b346-62491314a810",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "71627f0b-d200-4ed1-bd08-830c0ec244ea",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "923a6139-7f80-4eb8-835f-d272deba12e5",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "a63f4846-04a1-441e-97fe-2fa599cfd07b",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "05b3b7a9-46fa-4e08-95bb-eab7cb4b85e2",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "2b48e0e1-d6d8-4151-82f3-245a8dd06df1",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "609e540e-d79a-43ef-b8ca-92662d4413e7",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "50151144-b7a8-4453-adfe-cc2ba9d73698",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "22fddbb0-dd6d-40f2-9cad-04d633111fc7",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "f04de373-f844-427d-afc2-9e245b03bd87",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "000b2beb-825f-4657-9c00-e9070604eda3",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "a3677f15-ab97-42c2-b931-6a87c3440516",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "562d4281-477e-4423-aaed-f66588f1f7ca",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "7e24a3bc-b9ae-42e6-bae0-7930c2d182db",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "0593bf1d-134c-4ca3-b682-fa79a738d08a",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "e23c0d4d-46bd-40c8-b5a2-b165c82643c5",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "bf059f7f-a679-4bdc-983d-c1609c9a4051",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "1535e718-e852-43ef-9994-6b42162ae615",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "2fc2d074-7765-4813-abef-1046f0affe35",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "fe102de5-a1a4-420c-92df-86696f7f9176",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "f4573637-b672-4abc-89da-dbc394f46c47",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "9cf08059-be8b-4da5-a40c-8c6146dca574",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "dc7d82e9-1366-465e-86ae-aa5dffe5b967",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "395248ba-8665-473d-9e31-4c4dce8b30e9",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "9f30a478-984c-484b-b3ce-a4a23ba8fa20",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "cbc436ca-a12c-4b09-9142-398e931f813f",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "7ce6eb17-1491-483b-a0ce-8ab233542fbd",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "c3c73de8-082a-4d96-abe0-dd81d02f4e11",
+      "result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1"
+    },
+    {
+      "claim_id": "b0e94df9-a30d-47af-b989-e9001a3e5cb3",
+      "result_id": "ca193978-2737-427a-8c2b-f5b3b3ba6b5c"
+    },
+    {
+      "claim_id": "e0e5a791-7a6b-4bda-b41d-a8205e84085e",
+      "result_id": "ca193978-2737-427a-8c2b-f5b3b3ba6b5c"
+    },
+    {
+      "claim_id": "cc240d60-7ac3-4b8a-b9ad-77ffd657af59",
+      "result_id": "ca193978-2737-427a-8c2b-f5b3b3ba6b5c"
+    },
+    {
+      "claim_id": "3e8c2bd8-4c6e-439f-83d0-5c485dc2c7ff",
+      "result_id": "2c77923e-c436-417d-a37a-4eabf6de9996"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "de6d511e-e65b-46bc-a76b-dab5fe42176e",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "7cf60538-5342-43d6-995f-7ae75e39ccf2",
+      "peer_result_id": "89459e50-c2ba-4e46-9172-c8e4ca1fc5db",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Perfect agreement on peripheral-foveal differences in marmoset V1 (C25, C26, C40, C43). OpenEval rates as UNCERTAIN due to limited sample size (2 sessions, n=147 units) and speculative nature. Peer reviewers rate as SUPPORTED and highlight this as an important finding worth future investigation, accepting the data despite limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "33fd6428-244b-440a-a0b0-3c2285cbb917",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "f1131885-537d-4bdb-8411-af81b7e84d89",
+      "peer_result_id": "b6163437-49fc-44aa-9ddc-1bd5276234e6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on mechanistic interpretation (C34, C35, C36). Both evaluations rate as SUPPORTED. OpenEval notes the interpretation is reasonable but correlative rather than causally demonstrated. Peer reviewers treat this as plausible speculation supported by cited literature, framing it as hypothesis for future work rather than definitive conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "12c64404-c51f-4a9b-bcdd-ba692a9ec9cd",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "412e89f8-66b4-493e-b3a5-1d8cc40dd5f6",
+      "peer_result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address core species differences in V1 running modulation. OpenEval R1 focuses on mouse positive modulations (C1, C5, C14, C15, C21) while Peer R1 encompasses both species' findings (C1-C4, C12, C14-C17, C37-C38). Both rate as SUPPORTED with strong agreement on the validity of cross-species differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "0654d9b6-4797-4c8b-9918-c9d2a6b33130",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "db722701-70f9-4803-878a-0c114daf39a6",
+      "peer_result_id": "23140cce-fec8-4c85-9fe6-7970a8d719af",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Substantial overlap on marmoset foveal V1 findings. OpenEval R2 covers marmoset-specific claims (C2, C4, C12, C16, C17, C22, C37-C39) rated SUPPORTED. Peer R1 includes many of these claims (C2, C4, C12, C16, C17, C37-C38) as part of broader cross-species comparison, also SUPPORTED. Both affirm small, slightly negative running modulations in marmoset.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "e5d9868c-a3af-45e2-af32-30cecb8cf799",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "2ad180c7-4049-4c47-9702-60727fc4e10b",
+      "peer_result_id": "057b0d03-21e2-48f0-9c14-74061f71c134",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address shared gain modeling (C24, C41, C42). OpenEval R3 includes C3 and C74, rates as SUPPORTED with note that functional interpretation remains inferential. Peer R2 adds C21 and C22, rates as SUPPORTED without critique of the modeling approach. Both accept that shared gain describes population activity in both species.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "88749691-8ffb-4590-b95d-af813bf543b0",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "3bd31f12-e197-4e0c-a98e-948b002e9055",
+      "peer_result_id": "5d3ac523-7aec-40ba-9bce-d292b7f262bf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate eye movement and pupil analyses. OpenEval R5 covers eye movements (C28-C31, C72) rated SUPPORTED, noting inability to perform comparable mouse analysis. Peer R5 includes eye movements and pupil (C28-C33) rated UNCERTAIN, expressing reservations about completeness and noting unexplored aspects like microsaccades and reward effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "a80763b0-13b3-43cf-8ca3-61206f891bb2",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "d10bb427-addc-4abc-bda5-b86263dd9df7",
+      "peer_result_id": "5d3ac523-7aec-40ba-9bce-d292b7f262bf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R6 addresses pupil size measurements (C32, C33) rated SUPPORTED with caveat about cross-species arousal calibration uncertainty. Peer R5 includes these claims within broader UNCERTAIN evaluation of confound analyses, noting unanswered questions about reward scheme effects on pupil and V1 activity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "3c3c642e-009e-49ce-822c-e5af6447d987",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "2ea34233-0012-43d0-bd66-f45c7540887e",
+      "peer_result_id": "e0031445-f226-4283-8663-5246715595f2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate experimental apparatus and basic methods. OpenEval R8 covers extensive methodological claims (C8-C10, C44-C48, C51-C55) rated SUPPORTED. Peer R4 focuses on apparatus (C8-C10) rated SUPPORTED with unanimous praise for the treadmill solution and experimental approach quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "8a43343e-261d-4104-b2e4-138aa13e1205",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "2ea34233-0012-43d0-bd66-f45c7540887e",
+      "peer_result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Substantial overlap on methodological details. OpenEval R8 includes C44-C48, C51-C55 among other claims. Peer R7 encompasses broader methodological scope (C44-C77) all rated SUPPORTED, emphasizing rigor in matching paradigms across species and reuse of existing datasets.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "69e97629-51cf-436b-9142-2fef0037e2bd",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "9cb8312c-8146-47ca-905f-23b309d70607",
+      "peer_result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R9 addresses cross-species methodological adaptations (C56-C65) rated SUPPORTED with sound rationale for differences. Peer R7 includes these claims within comprehensive methodological evaluation, praising efforts to match paradigms across species while acknowledging lack of layer information as future direction.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "59ece893-bcbf-4357-b8e2-c135aac1cc02",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "6838c597-0d96-49ca-9061-c51b5e175a10",
+      "peer_result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R10 evaluates inclusion criteria (C66-C70) rated SUPPORTED with transparent reporting. Peer R7 includes these claims in broader methodological assessment, treating criteria as part of overall rigorous approach without specific critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "0c2c1f89-24f7-4b0c-a636-07410a81a46e",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "8e482ad6-01e4-4dda-a9fe-ddd0ee9e2f78",
+      "peer_result_id": "3c3b8d3f-6691-4f36-a1c8-3b163599bdb1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R11 addresses model validation methods (C76, C77) rated SUPPORTED with appropriate techniques. Peer R7 includes these claims within comprehensive methodological evaluation, accepting validation approach without question.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "95c6d1ae-7fc9-4daf-afec-b8d59bc86844",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "49d86573-5202-49cc-a2a1-c99df64bfb6b",
+      "peer_result_id": "ca193978-2737-427a-8c2b-f5b3b3ba6b5c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address established background knowledge. OpenEval R12 covers C6-C7 rated SUPPORTED as foundational literature providing context. Peer R8 includes C5-C7 rated SUPPORTED, with reviewers referencing original mouse findings as revolutionary and framing study motivation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "396aef96-bec8-401c-955c-6602e81fd117",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "db722701-70f9-4803-878a-0c114daf39a6",
+      "peer_result_id": "2c77923e-c436-417d-a37a-4eabf6de9996",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R2 includes C39 (summary of marmoset findings) within broader marmoset evaluation rated SUPPORTED. Peer R9 specifically highlights C39 as summary statement rated SUPPORTED, treating it as core finding distinguishing marmoset from mouse without question.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    },
+    {
+      "id": "194cd2f1-55d7-4445-a13f-cfae5cfb3cc6",
+      "submission_id": "edd02a7a-1ed5-4a4d-ab17-0174e5bca170",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "412e89f8-66b4-493e-b3a5-1d8cc40dd5f6",
+      "peer_result_id": "ca193978-2737-427a-8c2b-f5b3b3ba6b5c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on C5. OpenEval R1 includes C5 in mouse running modulation findings rated SUPPORTED. Peer R8 includes C5 as established background fact about mouse V1 running modulation, accepted without question as motivation for study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:53:38.577696Z"
+    }
+  ]
+}

@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Task-optimized recurrent neural networks exhibit a range of representational strategies depending on noise level (\u03c3) and firing rate regularization (\u03bb). Networks with low noise and low regularization show maximal representation (high decodability of all stimuli including irrelevant width), while networks with medium noise and medium regularization show minimal representation (weak decodability of irrelevant stimuli). Statically irrelevant stimuli (width) are more strongly suppressed than dynamically irrelevant stimuli (color) across all parameter regimes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C41 provide comprehensive computational evidence from systematic parameter sweeps (Figure 2) showing how noise and regularization affect stimulus decodability. The grid search over parameter values (C34-C38) demonstrates robust patterns, and the asymmetry between static and dynamic irrelevance (C39) is well-documented. The observation that pure chance-level decoding is never achieved (C40-C41) is appropriately noted as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C119",
+      "C120"
+    ],
+    "result": "Neural recordings from primate lateral PFC over the course of learning show that representations change in line with a minimal representational strategy. XOR decodability significantly increased during the shape period, while color decodability significantly decreased during the color period (when irrelevant) and width decodability significantly decreased during the shape period. Recordings spanned the entire learning process from first exposure to the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49 provide direct experimental evidence from 376 neurons across 27 sessions in two monkeys (C42). The key strength is that recordings commenced from first task exposure (C43), allowing genuine learning-related changes to be observed. Statistical significance is reported for the critical changes in irrelevant stimulus coding (C48, C49), supporting the minimal representational strategy interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Networks trained with medium noise and medium regularization (\u03c3_m, \u03bb_m) show learning-related changes in stimulus decodability that closely match the experimental PFC data. XOR decodability significantly increased after shape onset, color decodability significantly decreased during the color period, and width decodability significantly decreased during the shape period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 demonstrate that the \u03c3_m, \u03bb_m parameter regime produces the best qualitative match to experimental data (Figure 3b). The parallel structure of changes across XOR, color, and width decodability between model and data provides strong support. However, the evaluation notes some quantitative differences (C57, C100-C101) that are appropriately discussed as limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Mathematical analysis of a simplified linear model reveals that maximizing task performance requires strong relevant coding, weak irrelevant coding, and small overlap, while minimizing metabolic cost requires both relevant and irrelevant coding to be weak. Performance decreases with both noise (\u03c3) and regularization (\u03bb), while relevant coding strength shows a non-monotonic relationship with \u03c3. These theoretical predictions are confirmed by recurrent neural network simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 present a coherent theoretical framework (Appendix 1, Figure 4) that is validated by computational simulations (Figure 4e-g). The mathematical analysis provides mechanistic insight into the trade-offs between performance and metabolic cost. The confirmation of theoretical predictions in full RNN simulations (C67) strengthens the conclusions, though the simplified model necessarily omits some complexities of the full task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Both in lPFC recordings and optimized recurrent networks (\u03c3_m, \u03bb_m regime), the strength of relevant (XOR) coding increased significantly over learning while irrelevant (width) coding decreased significantly. Relevant and irrelevant directions remained strongly orthogonal throughout learning with no significant change in overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 provide convergent evidence from both experimental data and computational models (Figure 4h-i) for the key geometric properties of neural representations. The statistical tests show significant changes in coding strength but not in orthogonality. The parallel findings across data and model strengthen the conclusions, though the lack of change in overlap (C70-C71) may reflect the specific stimulus structure used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The suppression of dynamically irrelevant stimuli (color during the color period) is achieved through activity-silent, sub-threshold dynamics. In medium noise-medium regularization networks, color inputs drive neural activity into the rectified (negative) part of the ReLU nonlinearity during the color period, resulting in zero firing rates and no metabolic cost, while still allowing the information to be used later in the trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C80 provide a mechanistic explanation for dynamic irrelevance suppression through detailed analysis of two-neuron networks (Figure 5a-d). The mechanism is clearly demonstrated: color inputs become negative (driving activity below threshold) in \u03c3_m, \u03bb_m networks but not in \u03c3_l, \u03bb_l networks. This explains both the weak early color decoding and the zero metabolic cost during the color period. The mechanism is biologically plausible and computationally verified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In lPFC recordings, firing rates decreased significantly over learning in all task periods, with the largest decreases during fixation and color periods. After learning, firing rates during the color period were not significantly higher than during fixation, but increased significantly during the shape period compared to fixation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 provide experimental validation of the activity-silent mechanism predicted by the models (Figure 5f). The pattern of firing rate changes\u2014particularly the lack of increase from fixation to color period after learning\u2014is consistent with sub-threshold dynamics during the dynamically irrelevant color period. Statistical significance is reported for the key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Different settings of biologically relevant hyperparameters (noise and metabolic cost) yield qualitatively different dynamical regimes. Increasing noise and regularization leads to greater filtering of irrelevant information, consistent with known PFC properties and findings in other brain regions including motor cortex and grid cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C94 synthesize the main findings and place them in broader context through extensive citations (C87, C89, C91-C94). The generalization to other brain regions is supported by prior literature showing similar effects of regularization in motor cortex and spatial navigation systems. However, the predictions about generalization (C88, C90) remain to be directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The experimental task consists of fixation, color, shape, and reward periods. Reward is delivered according to an XOR relationship between color and shape. Width is a statically irrelevant stimulus dimension (never predictive of reward), while color is dynamically irrelevant (irrelevant during the color period but relevant during the shape period).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 clearly describe the task structure (Figure 1a-b). The distinction between static irrelevance (width) and dynamic irrelevance (color) is well-defined and central to the study's design. The task structure is straightforward and the definitions are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Two adult male rhesus macaques performed the task with neural recordings from ventral and dorsal lPFC commencing from first task exposure. The dataset comprised 376 neurons across 27 sessions, with trials containing fixation errors excluded. Firing rates were computed by convolving spike trains with a 50ms Gaussian kernel.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C136 provide essential methodological details about the experimental dataset. The key strength is that recordings began from first exposure (C131), which is critical for studying learning-related changes. Sample sizes and data processing steps are clearly specified. The note that the experiment was performed once in two animals (C136) is an important limitation for generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Cognitive flexibility requires encoding task-relevant and ignoring task-irrelevant stimuli, but mechanisms for ignoring irrelevant stimuli remain poorly understood. Complex tasks involve multiple stimulus types including statically irrelevant stimuli (always irrelevant) and dynamically irrelevant stimuli (relevant at some times but not others). How these should be represented for optimal performance remains an open question.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 establish the scientific context and motivation. These are well-supported by citations to prior literature (C6, C8, C9) and represent accurate characterizations of the field's current understanding. The definitions of static vs. dynamic irrelevance are clear and well-grounded in previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Neural noise and metabolic costs affect stimulus representations in neural circuits, but models typically explore only a limited range of these biologically relevant parameters. This limited exploration may mean we are recovering only a few of many possible representational strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are well-supported by extensive citations (C14-C17) and provide important motivation for the systematic parameter exploration conducted in this study. The critique of limited hyperparameter exploration in prior work (C17-C18) is fair and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Metabolic cost was operationalized through L2 firing rate regularization, which penalizes high overall firing rates. Although L2 regularization is generally considered weaker than L1, it still encouraged networks to use sub-threshold activity. Alternative operationalizations exist, including L1 regularization (promoting sparsity) and synaptic weight regularization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 clearly describe the modeling choices with appropriate citations (C108, C110, C112-C113). The observation that L2 regularization produced sub-threshold dynamics (C111) is an interesting empirical finding. The discussion of alternatives (C110, C112-C113) appropriately acknowledges other possible approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "High-dimensional representations enable flexible behavior by allowing many behavioral readouts, while low-dimensional representations are more robust to noise and allow generalization. Prolonged exposure to tasks with limited stimulus conditions may encourage low-dimensional dynamics, while tasks with rich, varied stimuli may lead to high-dimensional representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 present reasonable hypotheses supported by citations (C95-C96), but the predictions about task structure effects (C97-C98) are speculative. While the logic is sound, these claims about how task structure determines dimensionality require direct experimental testing across different task types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Some differences between model and data (e.g., shape decodability decreasing while color decodability increased during the shape period) may reflect fundamental differences in how brains encode sensory information upstream of PFC compared to the abstract inputs used in models. Width was very strongly represented in early learning and maintained high cross-generalized decoding even after learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C107 appropriately acknowledge limitations in the model-data correspondence. The speculation about upstream sensory encoding differences (C101-C102, C104) is reasonable and supported by neuroscience literature (C102). The observation about width's strong representation (C105-C106) is data-driven. The methodological point about focusing on changes rather than absolute levels (C107) is a reasonable approach to these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121"
+    ],
+    "result": "Previous studies of learning-related changes in PFC typically used reversal-learning paradigms where animals were already task-proficient. Studies in mice and rats showed that PFC neurons adjust selectivity to suppress currently irrelevant information. In monkeys, PFC dimensionality increased as novel stimulus values were learned, but representations only distinguished stimuli after values were learned, not upon first exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C121 accurately characterize prior work through appropriate citations (C114-C118). The distinction between the current study (recordings from first exposure) and prior work (recordings after proficiency) is important and well-articulated (C114, C121). These claims provide appropriate context for understanding the novelty of the current approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Recent studies have examined how different hyperparameter settings affect network solutions, including effects of weight regularization on sequential dynamics, effects of nonlinearity saturation on functional clustering, and effects of noise and regularization on grid cell-like properties. Various hyperparameters including nonlinearity type and weight initialization affect representational strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 provide comprehensive context about related computational work through extensive citations (C123-C126). The synthesis across different domains (working memory, path integration, motor control) strengthens the argument that hyperparameter effects are a general phenomenon. The conclusion about the importance of studying learning-biological constraint interactions (C127) follows logically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Currently irrelevant stimuli may become relevant in future tasks, and it's unclear whether dynamically irrelevant stimuli should be suppressed since the information is ultimately needed. Stimuli may be strongly represented a priori if previously important, and representing a stimulus may be prerequisite for learning its relevance. Studying changes over learning (rather than post-learning snapshots) provides insights into how tasks affect representational strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C22 present logical inferences about learning and representation (C11-C12, C19-C20) supported by citations where appropriate (C20, C22). The characterization of limitations in prior experimental approaches (C21) is accurate. These claims effectively motivate the study's focus on learning-related changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "For stimuli more similar than the XOR and width features studied here, the overlap between relevant and irrelevant features may decrease over learning rather than remaining small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C71 is pure speculation about what might happen with different stimulus types. While the hypothesis is reasonable, there is no data in the current study to support or refute it. This represents an interesting direction for future work but cannot be evaluated as supported or unsupported based on the current evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88"
+    ],
+    "result": "The results should generalize to richer, more complex cognitive tasks requiring context switching or working memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C88 is a prediction about generalization that, while supported by citations showing irrelevant information filtering in such tasks (C89), has not been directly tested in this study. The prediction is reasonable but remains speculative until tested with actual context-switching or working memory tasks.",
+    "result_type": "MINOR"
+  }
+]

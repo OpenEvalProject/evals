@@ -1,0 +1,412 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C20"
+    ],
+    "result": "Fiber photometry is a popular technique for measuring neural activity in vivo with high specificity, but there is little consensus on analysis strategies, and common approaches have grown organically from other fields.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge the popularity and utility of fiber photometry, with one stating 'Fiber photometry has become a very popular tool in recording neuronal activity in freely behaving animals.' The characterization of the field and lack of standardized analysis is accepted without challenge across all reviews.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C19",
+      "C25",
+      "C26",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Common photometry analysis strategies condense within-trial signals into summary measures and discard trial-level information by averaging across trials, which can reduce the detection of effects and dilute important patterns in the data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly agree with this characterization. One reviewer states 'most of the data analyses confine to simple measurements of averaged activity and by doing so, erase valuable information encoded in the data.' Another notes that the study 'highlights how summary statistics as opposed to trial-by-trial analysis can obscure or even change the direction of statistical results.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The proposed FLMM framework enables hypothesis testing at every trial time-point using trial-level signals without averaging, compares timing and magnitude of signals across conditions while accounting for between-animal differences, and produces interpretable plots with joint 95% confidence intervals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm the framework's capabilities. One states 'The framework the authors present is solid and well explained.' Another notes 'The statistical framework described provides a powerful way to analyze photometry data' and that 'Modeling the entire trial (function regression) removes the need to choose appropriate summary statistics.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C51",
+      "C52",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "The FLMM methodology yields joint 95% confidence intervals that exploit signal autocorrelation, account for inspecting effects across the entire trial, and improve detection of event-related signal changes over common multiple comparisons correction strategies. The authors extended existing methods to enable joint CIs for general random-effects specifications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly recognize this as a key methodological contribution. One reviewer states the novelty lies in 'the introduction of joint 95% confidence intervals for statistical testing of functional mixed models with nested random-effects.' The technical advancement is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "FLMM reanalysis of Jeong et al., 2022 data revealed significant effects obscured by standard approaches, including identification of two dopamine components with distinct temporal dynamics in response to reward delivery (one rising rapidly before lick-onset possibly reflecting motivation/movement/reward detection, and another beginning after lick-onset possibly tracking sucrose consumption).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm these findings. One states 'the reanalysis of two studies using summary statistics on photometry data (Jeong et al., 2022; Coddington et al., 2023) highlights how trial-by-trial analysis at each time-point on the trial can reveal information obscured by averaging across trials.' Another notes 'the re-analysis of Jeong et al., 2022, in which the AUC measures presented masked important details about how the photometry signal was changing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "FLMM reanalysis found that the Reward Number\u2013DA association is negative within-session (contrary to the positive correlation reported by Jeong et al., 2022), with the discrepancy arising from pooling trials across sessions without considering hierarchical structure (Simpson's paradox). DA increases across sessions in response to reward anticipation but decreases within-session during reward consumption.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this finding. One states 'this work also exemplifies how session and subject variability can lead to different conclusions when not considered.' The identification of Simpson's paradox and the opposing within- vs. between-session effects are accepted as valid findings from the reanalysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "FLMM estimated that mean DA was significantly lower in the latter parts of the cue-elicited DA response (approximately 1\u20132.5 sec after cue-onset) on long- compared to short-delay trials, an effect that may have been occluded in the original analysis because the AUC averaged over opposing effects. This demonstrates FLMM's ability to detect subtle effects difficult to identify by eye.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this as a demonstration of FLMM's capabilities. One reviewer notes 'Modeling the entire trial (function regression) removes the need to choose appropriate summary statistics, removing the opportunity to introduce bias, for example in searching for optimal windows in which to calculate the AUC.' The delay-change finding is treated as evidence of the method's sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "In simulation experiments incorporating realistic photometry data characteristics, FLMM achieved joint 95% CI coverage at roughly nominal levels, improved statistical power over common analysis approaches (LMM, t-test, permutation methods), achieved nominal pointwise coverage, and committed type I errors at roughly nominal levels, demonstrating it is not overly susceptible to trial-level noise or spurious correlations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the simulation results. One states 'through simulation, they demonstrate the superiority of their approach compared to other common methods.' Another notes 'The evidence supporting the benefits of the presented functional mixed-effect modeling analysis as opposed to (1) summary statistics and (2) other pointwise regression models is convincing with a thorough comparison with other methods and datasets.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C88",
+      "C89"
+    ],
+    "result": "Photometry signals exhibit considerable heterogeneity across animals, conditions, trials within-session, and sessions. The Jeong et al., 2022 dataset exhibited nested longitudinal structure with high within-animal correlations across sessions and trials, and between-animal variability in covariate-signal associations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these data characteristics as motivation for the method. One states the work demonstrates 'trial-by-trial temporal analysis, taking also into account variability within the dataset.' The characterization of photometry data complexity is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C86",
+      "C87",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "FLMM combines benefits of linear mixed models and functional regression to extract information both across- and within-trials, estimates effects of covariates varying between trial/session/animal, adjusts for between-animal differences through functional random-effects, and can accommodate missing data and different sample sizes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm these capabilities. One states 'The authors' use of linear mixed methods, allows for the estimation of random effects, which are an important consideration given the repeated-measures design of most photometry studies.' The technical capabilities are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Comparison with the Lee et al., 2019 approach showed that FLMM's proportion of significant time-points is stable across sampling rates, while the Lee et al. approach is inconsistent and often highly conservative. This illustrates advantages of modeling trial signals as functions and using information across the entire trial.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge this comparison. One states 'This study also showcases the statistical robustness of FLMM by comparing this method to fitting pointwise linear mixed models and performing t-test and Benjamini-Hochberg correction as performed by Lee et al. (2019).' The comparative advantage is accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C75"
+    ],
+    "result": "The authors extended the FLMM framework to enable parameter estimation with pointwise and joint 95% CIs for general random-effect specifications, filling a gap in previous implementations. Nested random-effects specifications substantially improved model fits in the reanalyzed experiments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly recognize this as a technical contribution. One states the novelty lies in 'the introduction of joint 95% confidence intervals for statistical testing of functional mixed models with nested random-effects.' The methodological extension is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C128"
+    ],
+    "result": "FLMM allows direct comparison and testing of differences in signal time-courses between conditions and can reveal significant effects that were tested but obscured by summary measure analyses, including subtle effects difficult to identify by eye.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this capability. One states 'the reanalysis of two studies using summary statistics on photometry data (Jeong et al., 2022; Coddington et al., 2023) highlights how trial-by-trial analysis at each time-point on the trial can reveal information obscured by averaging across trials.' The demonstrated capability is accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Reanalysis of a second study (Coddington et al., 2023) measuring calcium dynamics demonstrated FLMM's applicability to different photometry sensors and additional capabilities to model how signal dynamics early in training predict behavior later in training and estimate covariate interactions across trial time-points and sessions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the breadth of application. One states 'The evidence supporting the benefits of the presented functional mixed-effect modeling analysis as opposed to (1) summary statistics and (2) other pointwise regression models is convincing with a thorough comparison with other methods and datasets.' The second reanalysis is accepted as supporting evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C200"
+    ],
+    "result": "The authors provide an analysis guide and open source package (fastFMM), the first to provide joint CIs for functional mixed models with nested random-effects. The package is fast and maintains a low memory footprint even for complex models and large datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise the software contribution. One states 'The open-source package in R using a similar syntax as lme4 package for the implementation of this framework, the high fitting speed and the low memory footprint, even in complex models, enhance the accessibility and usage by other researchers.' Another calls it 'a great service to the wider neuroscience community.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C46",
+      "C47"
+    ],
+    "result": "Despite photometry data complexity, there are few analysis methods developed specifically for photometry. Existing methods (encoding models, Jean-Richard-Dit-Bressel et al. 2020, standard GLMs/correlations, pointwise methods) have various limitations including not testing associations at each time-point, not pooling across subjects, not adjusting for multiple comparisons, or not exploiting correlation across time-points.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this characterization of the field. One states 'there are currently no standardized ways to analyze the data produced' and 'most of the data analyses confine to simple measurements of averaged activity.' The critique of existing methods is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Linear mixed models can analyze trial-level summary measures preventing loss from trial-averaging but still require condensing signals into scalar measures. Functional regression can test associations at each time-point but most methods require trial averaging, discarding trial-level information.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this as background establishing the need for FLMM. The characterization of LMM and functional regression limitations is not challenged and serves as motivation for the combined approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C166",
+      "C167"
+    ],
+    "result": "The authors discuss alternative interpretations of the reanalysis findings, including that observed DA changes may be inconsistent with RPE or ANCCR models depending on specifications, and that satiation, habituation, learning about reward-delivery cues, or indicator expression changes may contribute to observed effects. Adjudicating between theoretical models is beyond the scope of the paper.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the discussion of alternative interpretations. One notes 'There is an appropriate level of discussion of the interpretation of the reanalyzed data that highlights the pitfalls of other methods and the usefulness of their methods.' The acknowledgment of interpretive limitations is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "FLMM may reduce biases from summary statistics, help disentangle signal components from different neural sub-populations, make model misspecification easier to identify, and improve reproducibility by eliminating some pre-processing steps or making their effects clearer. The method provides a systematic framework to model signal components and quantify uncertainty from modeling choices.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these potential benefits. One states 'More in depth analysis, more variables taken into account, better statistical power all lead to higher quality science.' The discussion of broader implications is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C195",
+      "C198",
+      "C199",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206",
+      "C207",
+      "C208",
+      "C209"
+    ],
+    "result": "FLMM is applicable in a wide range of experimental settings and may extend to other techniques like electrophysiology and calcium imaging. The package allows modeling of non-linear covariate-signal relationships and can be extended to model time-varying covariates. Research on statistical methods for fiber photometry is necessary given widespread use and variability of analysis procedures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm broad applicability. One states 'This work will be of great interest to researchers using not only fiber photometry, but other time-series data such as calcium imaging or electrophysiology data.' Another notes 'These methods should have wide applicability to those who use photometry or similar methods.'",
+    "result_type": "MINOR"
+  }
+]

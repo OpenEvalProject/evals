@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The authors analyzed published datasets from Ling et al. (2015) and Li et al. (2022), describing the sampling methodology, sequencing approaches, and data processing for hepatocellular carcinomas.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm the use of published data and the proposed model. Reviewer 1 states 'the paper uses published data and the proposed model,' Reviewer 2 notes the use of 'real patient data from liver cancer,' and Reviewer 3 confirms 'the paper uses published data.' No concerns were raised about the datasets or their processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21",
+      "C22"
+    ],
+    "result": "Analysis of direction angles of mutant clones shows uniform distribution in empirical data from Ling et al. and Li et al., consistent with volume growth rather than surface growth. Simulations confirm that volume growth produces flat distributions while surface growth produces peaked distributions centered at \u03b8=0.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding as a key result. Reviewer 2 states 'tumors don't just spread from their edges as previously believed. Instead, they expand both from within and the edges simultaneously,' and Reviewer 3 notes 'the authors are able to compare the metric of interest (here, the direction angle of a new mutant clone)' with 'a rigorous analysis.' All reviewers describe the results as 'convincing' or 'solid.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "The number of mutations as a function of distance from the tumor center in the Ling et al. data is compatible with volume growth, not showing the increase expected under surface growth.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is implicitly accepted as part of the overall volume growth conclusion. Reviewer 3 states 'the authors performed a rigorous analysis' and reviewers collectively affirm the volume growth findings without questioning this specific metric.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors reconcile their volume growth findings with Lewinsohn et al. (2023)'s surface growth signal, showing that Lewinsohn's algorithm produces spurious surface growth signals on simulated volume growth data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this reanalysis. The overall acceptance of the volume growth conclusion and the statement that results are 'convincing' (Reviewer 1) and show 'thorough analysis' (Reviewers 1 and 3) implicitly supports this reconciliation of conflicting prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The dispersion parameter \u03c3 quantifies spatial scattering of mutations. Empirical data show high dispersion values (average ~3.5, up to 9), which match volume growth simulations (KS=1.13) but not surface growth (KS=5.74).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this analysis. Reviewer 2 highlights 'external forces may play a role in cancer cells dispersion within the tumor' and Reviewer 3 states 'the authors are able to compare the metric of interest...the dispersion of mutants throughout the tumour' with appropriate methodology. The finding is described as part of the 'convincing' and 'solid' results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Volume growth provides a mechanistic explanation for mutation dispersion through cell displacement and pushing, leading to clonal mixing. This differs from surface growth where cells don't push each other apart.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly notes this mechanism: 'external forces may play a role in cancer cells dispersion within the tumor.' Reviewer 3 affirms 'the particularly nice and tractable cell-based model' enables understanding of these mechanisms. No reviewer challenges the mechanistic interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Cell migration under volume growth causes single samples to capture a larger share of genetic variability than expected from their volume fraction. About 75% of mutations can be detected with only 5 samples, but only ~20% without migrated mutations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is implicitly accepted as part of the overall analysis. Reviewers describe the work as showing 'thorough analysis' (Reviewers 1 and 3) without raising concerns about this consequence of volume growth and dispersion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Inference from the data reveals high cell death rates (relative death rate 0.975, 90% CI [0.83, 0.995]), indicating the tumor was precariously balanced between growth and extinction in early stages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly highlights this as a key finding: 'their research hints at an intriguing phenomenon - the high death rate of progenitor cells and extremely slow pace in growth in the initial phase of tumor expansion. Understanding this dynamic could significantly impact our comprehension of cancer development.' This is treated as an important discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C56"
+    ],
+    "result": "The inferred exome-wide mutation rate is 0.015 per cell division (90% CI [0.002, 0.1]), representing a 5-fold enhancement compared to healthy human fibroblasts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the parameter inference methodology. Reviewer 3 notes 'the authors have also used inference methods to identify model parameters based on the data observed' as part of the rigorous analysis. No concerns are raised about mutation rate estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The high death rate finding contrasts with Werner et al. (2020), but the authors show that widely different death rates are compatible with the same distribution of pairwise distances between samples.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This reconciliation is implicitly accepted as reviewers do not challenge the high death rate finding or the explanation for discrepancy with prior work. The overall acceptance of results as 'convincing' supports this interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Mutational signature analysis reveals SBS22 (associated with aristolochic acid exposure) dominates clonal mutations in Ling et al. but is absent in subclonal mutations (p<10^-4), suggesting exposure ceased during tumor evolution. Li et al. tumors maintain similar signatures over time.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the mutational signature analysis. The finding is accepted as part of the comprehensive analysis that reviewers describe as 'thorough' and 'rigorous.' No concerns are raised about this temporal pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C78"
+    ],
+    "result": "Using the relationship between mutation frequency and population size under neutral evolution, the authors estimate that analyzed mutations arose when tumors consisted of ~7,000-80,000 cells, defining the temporal scope of the analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this inference as part of understanding 'the early stages of tumour development' (Reviewers 1 and 3). Reviewer 2 notes the work provides insight into 'the initial phase of tumor expansion,' implicitly accepting the temporal scope estimates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "The main conclusion is that the tumor evolved under uniform volume growth with no evidence of spatial constraints leading to radially outward growth.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this central finding. Reviewer 1 states 'the results are convincing,' Reviewer 2 describes the finding that 'tumors don't just spread from their edges as previously believed' as 'interesting,' and Reviewer 3 calls the results 'solid' with 'rigorous analysis.' This is the paper's primary conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "The authors propose that future higher-resolution sequencing techniques will enable characterization of later-stage evolutionary changes like angiogenesis and genetic instability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept these forward-looking statements. Reviewer 2 notes the work 'opens up exciting avenues for comprehending the evolution of cancers,' and Reviewer 3 states it will 'further assist in disease treatment and quantification,' supporting the proposed future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The direction angle distribution is presented as a model-independent metric that is robust against selected subclones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly praises 'a particularly nice job of the discussion and decision of their \"metrics of interest\"' and notes the metrics were 'chosen in an appropriate manner.' This affirms the methodological choices regarding metric properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The authors use an off-lattice cell-based model where cells are represented as spheres that can push each other, with division rates dependent on local density to simulate volume vs. surface growth modes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly affirm the modeling approach. Reviewer 3 states 'Due to the particularly nice and tractable cell-based model, the authors are able to perform a thorough analysis' and notes it enables appropriate comparison between growth mechanisms. Reviewer 2 praises the 'blend of computer simulations and real patient data.'",
+    "result_type": "MAJOR"
+  }
+]

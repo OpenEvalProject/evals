@@ -1,0 +1,456 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C27",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors generated a single-cell RNA sequencing dataset of 39,463 cranial cells from mouse embryos at six consecutive developmental stages (E7.5-E9.0), spanning pre-closure, early closure, and late closure stages of cranial neural tube development, with high library depth (>42,000 UMIs/cell and >5900 genes/cell).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C27, C39-C44 collectively describe the experimental design and dataset quality metrics. The dataset composition, staging criteria, sample numbers, and quality metrics are clearly documented and internally consistent. The high library depth and gene detection indicate good technical quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "PhenoGraph clustering identified 29 transcriptionally distinct clusters representing 7 major cell types in the cranial region (neural plate, mesoderm, neural crest, non-neural ectoderm, endoderm, notochord, and blood cells), with the neural plate containing 17,695 cells that were further subdivided into 15 clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 describe the clustering analysis and cell type identification. The use of known markers for cell type assignment (C46) and the comprehensive coverage of major cranial cell populations (C47) support the validity of the clustering approach. The reclustering of neural plate cells (C48) is a standard analytical refinement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The cranial neural plate clusters lacked markers of neuronal or radial glial cells, consistent with the pre-neurogenic state at these developmental stages, though modest expression of neuron-specific cytoskeletal regulators was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe the absence of mature neuronal markers and provide a biological interpretation supported by citation (C50). The observation of modest cytoskeletal regulator expression (C51) is consistent with cells preparing for but not yet undergoing neurogenesis. This is biologically plausible for the E7.5-E9.0 timeframe.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Transcriptional profiles in the cranial neural plate strongly correlated with both embryonic stage and anterior-posterior location. The cranial neural plate was computationally divided into four populations (forebrain, midbrain/r1, hindbrain, and ventral midline) based on region-specific markers, and diffusion component analysis revealed that DC0 correlated with embryo stage, enabling temporal analysis of gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 describe the spatial and temporal organization of the data and the analytical approach. The correlation of DC0 with embryo stage (C56) is validated by the cadherin switch analysis (C58-C62), providing biological validation of the computational approach. The division into four populations based on known markers (C54) is a standard and appropriate method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "E-cadherin (Cdh1) transcript levels decreased and N-cadherin (Cdh2) transcript levels increased relative to DC0 in each cranial neural plate region, correlating with stage-specific changes in the corresponding proteins observed by immunofluorescence. This demonstrates that DC0 captures the known temporal shift in cadherin expression and that this transition is associated with a global change in transcriptional state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64 provide strong validation of the DC0 temporal ordering through correlation with a well-established developmental transition (the E-cadherin to N-cadherin switch). The transcript-level changes (C58-C59) are validated by protein-level observations (C60, C63-C64), and the interpretation is supported by citations to prior literature (C61). This multi-level validation strengthens confidence in the temporal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "During E7.5-E9.0 development, genes associated with pluripotency, epithelial identity, and mitochondrial regulation were downregulated, while genes associated with neurogenesis, cell division, and neural tube closure were upregulated, indicating a transition from a pluripotent to a pro-neurogenic and morphogenetically active state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe temporal gene expression changes and provide a biological interpretation. The specific genes mentioned are appropriate markers for the claimed cellular states, and the interpretation (C67) is a reasonable inference from the observed expression patterns. This is consistent with known developmental biology of neural plate maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Region-specific transcriptional regulators and cell-cell communication genes were identified as upregulated in the forebrain, midbrain/r1, and hindbrain, consistent with the emergence of region-specific cell identities along the anterior-posterior axis of the E7.5-E9.0 cranial neural plate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C77 describe region-specific gene expression patterns. The specific genes mentioned are well-established markers of the respective brain regions, and the interpretation (C77) is supported by citations to prior literature. The identification of both transcriptional regulators and signaling molecules provides a comprehensive view of regional specification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "In pooled E8.5-9.0 cranial neural plate cells, DC0 reproduced the anterior-posterior order of known markers for forebrain, midbrain/r1, and hindbrain regions, including markers of refined transcriptional domains such as telencephalon, diencephalon, midbrain-hindbrain boundary, and rhombomeres 2-5. DC1 also displayed anterior-posterior signatures, separating midbrain/r1 genes from forebrain and hindbrain genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 describe the spatial ordering analysis. The validation against known markers (C79, C81) demonstrates that the computational approach correctly captures spatial organization. The identification of both broad (DC0) and refined (DC1) anterior-posterior patterns (C82-C84) shows the method captures multiple scales of spatial organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C89"
+    ],
+    "result": "483 genes in 11 clusters were predicted to be patterned along the anterior-posterior axis of the cranial neural plate, with clusters assigned to forebrain, midbrain/r1, and hindbrain regions. This reveals that hundreds of genes are expressed in discrete domains corresponding to the metameric organization of these brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86, C89 describe the identification and classification of anterior-posterior patterned genes. The assignment of clusters to specific brain regions (C86) is based on comparison with known markers (as described in C79-C81), and the conclusion about modular organization (C89) is a reasonable inference from the clustering results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Of 483 genes predicted to be patterned along the anterior-posterior axis, 141 of 162 genes (87%) with published expression data matched the predicted patterns. The remaining 21 genes were expressed in the predicted domains plus additional regions, likely due to higher sensitivity of in situ hybridization compared to scRNA-seq. This validated the predictions for 141 known genes and predicted patterns for 321 previously uncharacterized genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 describe the validation of spatial predictions against published data. The 87% agreement rate (C91) is strong validation, and the explanation for the remaining 13% (C92) is reasonable and supported by citation. The validation approach is appropriate, though it relies on literature curation which could introduce some subjectivity in pattern matching.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "123 transcription factors were predicted to be spatially regulated along the anterior-posterior axis, including known regulators of forebrain (Foxg1, Hesx1, Rax, Six3), midbrain/r1 (En1, En2, Fgf8, Gbx2, Pax2, Pax5), and overall brain development (Otx2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 describe the identification of spatially patterned transcription factors. The specific genes mentioned are well-established regulators of the respective brain regions, as supported by the citations in C95-C97. This provides functional context for the spatial patterning analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "DC2 was positively correlated with laterally expressed genes and negatively correlated with ventral midline markers, enabling ordering of genes along the mediolateral axis. 253 genes in 7 clusters were identified as mediolaterally patterned, with four clusters predicted to have increased expression in the midline and two in lateral domains. DC2 primarily captures mediolateral pattern in the midbrain/r1 region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 describe the mediolateral spatial analysis. The correlation of DC2 with known mediolateral markers (C101) validates the approach, similar to the DC0 validation. The clustering results (C103-C105) and the interpretation that DC2 primarily captures midbrain/r1 mediolateral pattern (C106) are reasonable inferences from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "Of 222 genes predicted to be patterned along DC2, 56 of 65 genes (86%) with published expression data were consistent with predictions, validating 56 known genes and predicting mediolateral patterns for 157 previously uncharacterized genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 describe validation of mediolateral predictions. The 86% agreement rate is comparable to the anterior-posterior validation (87%), providing consistent evidence for the reliability of the spatial prediction approach. The validation methodology is the same as for anterior-posterior patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "78 transcriptional regulators were predicted to be patterned along the mediolateral axis of the midbrain/r1 region, including medial effectors of SHH signaling (Foxa2, Nkx6-1, Nkx2-2, Nkx2-9) and lateral factors that promote dorsal cell fates (Msx1, Msx2), suppress neuronal differentiation (Hes1, Hes3), and regulate neural tube closure (Gli3, Sp8, Zic2, Zic5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 describe mediolaterally patterned transcription factors with functional annotations supported by citations. The genes mentioned are well-established regulators of mediolateral patterning, particularly in the context of SHH signaling (C110) and dorsal-ventral specification (C111).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Nearly one-third of genes clustered relative to DC0 and nearly two-thirds of genes clustered relative to DC2 were also patterned along the orthogonal axis, suggesting a high degree of overlap between anterior-posterior and mediolateral patterning systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 describe the overlap between anterior-posterior and mediolateral patterning. The quantification of overlap (C113-C114) is straightforward from the data, and the inference about integration of patterning systems (C115) is reasonable. This sets up the rationale for the multiscale analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "A multiscale spatial analysis using all 10 diffusion components identified 870 genes with high mutual information content with respect to anterior-posterior and mediolateral axes. This approach integrates multiple cartesian axes and captures more fine-grained spatial patterns than single-axis analysis, including genes whose expression patterns reflect inputs from a combination of anterior-posterior and mediolateral spatial cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C119 describe the multiscale spatial analysis. The identification of 870 genes (C116) includes genes from single-axis analyses plus additional genes (C118), and the interpretation that these reflect combined spatial inputs (C119) is a reasonable inference. The methodological explanation (C117) is clear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Hierarchical clustering at varying stringency levels (D=10, D=6, D=4) distinguished genes with different two-dimensional expression patterns, from broad anterior-posterior and mediolateral features (D=10, 15 clusters) to refined spatial domains like telencephalon, diencephalon, and rhombomere 1 (D=6), to rhombomere-specific patterns (D=4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C125 describe the multiscale clustering approach. The ability to distinguish patterns at different spatial resolutions by varying clustering stringency (C121-C124) is demonstrated with specific examples of known markers. The conclusion that this provides an effective strategy (C125) is supported by the validation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Of 29 spinal cord neural precursor genes, 19 of 20 expressed in the midbrain/r1 region were predicted to be spatially patterned, with 17 expressed in mediolateral domains roughly analogous to their spinal cord positions. The majority were patterned along both mediolateral and anterior-posterior axes, suggesting that neural precursor transcripts arrayed along a one-dimensional axis in the spinal cord are often patterned in two dimensions in the cranial neural plate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 compare cranial and spinal cord patterning. The comparison is based on published spinal cord data (C126, citation provided), and the observation that most genes show two-dimensional patterning in the cranial neural plate (C130-C131) is a reasonable inference from the data. This provides biological context for the complexity of cranial patterning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "194 secreted or transmembrane proteins were predicted to be spatially patterned in the cranial neural plate, including known ligands and receptors with patterning or morphogenetic functions (Shh/Ptch1, Wnt ligands/Frizzled receptors, Fgf ligands/receptors, Ephrin/Eph receptors) and genes required for neural tube closure (Celsr1, Vangl1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 describe spatially patterned signaling molecules. The identification of known signaling pathways (C137) and neural tube closure genes (C138, with citations) validates the approach and provides functional context. This extends the spatial analysis beyond transcription factors to cell-cell communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "scRNA-seq analysis of embryos treated with the Smoothened agonist SAG (which activates SHH signaling) for 12 hours between E8.0 and E8.5 showed lateral expansion of SHH target genes (Foxa2, Nkx6-1) and disrupted neural fold elevation. The analysis obtained 1,619 control and 1,401 SAG-treated neural plate cells and identified 166 significantly upregulated and 199 significantly downregulated genes in at least one cranial neural plate region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C151 describe the SAG treatment experiment and dataset. The experimental design is appropriate for studying SHH signaling effects, the phenotypic observations (C147-C148) are consistent with increased SHH activity (supported by citation), and the dataset quality and differential expression analysis are clearly described. The statistical thresholds (FDR<0.001, MAST hurdle >0.24) are reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "SAG treatment deregulated known SHH pathway genes, including upregulation of Ptch1 (a top upregulated gene in all regions), Gli1, and Foxa2, and downregulation of genes negatively regulated by SHH (Cdon, Gas1, Gli3) and the SHH secretion modulator Scube2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156 describe changes in known SHH pathway components. The upregulation of positive targets (C153-C154) and downregulation of negative regulators (C155) are consistent with activated SHH signaling. All genes mentioned are well-established SHH pathway components, as supported by the citations. This validates that SAG treatment effectively activated the SHH pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Over 40% of the 365 SAG-modulated genes were also predicted to be spatially regulated in wild-type, consistent with a strong effect of SHH on spatial patterning. SAG treatment upregulated medially-expressed genes and downregulated laterally-expressed genes, similar to SHH effects in the spinal cord. Partially distinct transcripts were upregulated in different anterior-posterior domains, suggesting strong convolution between anterior-posterior and mediolateral patterning systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C161 connect the SAG treatment results to the spatial analysis. The overlap between SAG-responsive and spatially patterned genes (C157) is quantified and interpreted (C158). The medial/lateral effects (C159) are consistent with known SHH function (supported by citations), and the region-specific responses (C160-C161) provide evidence for integration of patterning systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "SAG treatment showed region-specific transcriptional responses, with specific genes upregulated in the forebrain (Foxd1, Hesx1, Maf), forebrain and midbrain/r1 (Foxb1), or midbrain/r1 and hindbrain (Nkx6-1, Nkx6-2). Downregulated genes included both broadly expressed lateral transcripts (Msx1, Pax3, Pax7, Zic2, Zic5) and region-specific lateral transcripts (Pax8 in midbrain/r1, Msx3 in hindbrain, Zic1 in both).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C166 provide specific examples of region-specific SAG responses. These observations support the conclusion about integration of anterior-posterior and mediolateral patterning (C161, C167-C168). The specific genes mentioned are consistent with their known expression patterns and functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C167",
+      "C168"
+    ],
+    "result": "The region-specific transcriptional changes induced by activated SHH signaling are consistent with the spatial analysis results, indicating that many genes are responsive to both anterior-posterior and mediolateral inputs, suggesting significant cross-regulation between the mechanisms that define anterior-posterior and mediolateral cell identities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C168 provide an integrative interpretation of the SAG treatment and spatial analysis results. The conclusion about cross-regulation between patterning systems is supported by the region-specific responses to SAG treatment (C160-C166) and the overlap between SAG-responsive and spatially patterned genes (C157).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175"
+    ],
+    "result": "SAG treatment affected genes in other signaling pathways, including retinoic acid signaling (Crabp2, Cyp26b1) and WNT signaling. Several WNT ligands (Wnt7b, Wnt8b in forebrain; Wnt1, Wnt5a in midbrain/r1) and effectors (Axin2, Fzd10 in midbrain/r1) were downregulated, while the WNT inhibitor Sfrp1 was upregulated in the hindbrain, suggesting SHH could antagonize WNT signaling by both inhibiting pathway components and enhancing pathway repressor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C175 describe effects on other signaling pathways. The downregulation of WNT pathway components (C172-C173) and upregulation of a WNT inhibitor (C174) are consistent with known antagonism between SHH and WNT (C171, supported by citations). The mechanistic interpretation (C175) is a reasonable inference, though it is speculative and would require additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C176"
+    ],
+    "result": "SAG-treated embryos displayed downregulation of transcripts associated with neuronal function, including genes associated with neurodevelopmental disorders (Irf2bpl), epilepsy and autism spectrum disorders (Cntnap2), epilepsy and ataxia (Kcna1), and GABAergic neuron development (Tal2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C176 describes downregulation of neuronal function genes with disease associations. The specific genes mentioned are supported by citations linking them to the stated disorders. This observation is consistent with the pre-neurogenic state of the tissue and suggests potential connections between SHH signaling and disease (C178).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C185",
+      "C186"
+    ],
+    "result": "The spatial patterns predicted by the analysis displayed >85% agreement with prior gene expression studies, indicating that this approach can be used to predict the expression of previously unexplored genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C186 summarize the validation results from both anterior-posterior (C91: 87%) and mediolateral (C107: 86%) analyses. The conclusion that the approach can predict expression of unexplored genes (C186) is supported by the high validation rates, though it assumes that the 85% accuracy will hold for genes without prior characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Computational ordering of transcriptional profiles predicted spatially regulated expression of 870 genes along the anterior-posterior and mediolateral axes of the cranial neural plate, including 687 genes whose expression had not previously been characterized, and reproduced known expression patterns with over 85% accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C32-C34 are summary claims that are supported by the detailed validation results (C91: 87% for anterior-posterior, C107: 86% for mediolateral). The identification of 870 genes (C32) corresponds to the multiscale analysis (C116), and the claim about 687 previously uncharacterized genes (C33) is the sum of 321 anterior-posterior genes (C93) and 157 mediolateral genes (C108), plus genes from the multiscale analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C37",
+      "C38"
+    ],
+    "result": "scRNA-seq of embryos with activated SHH signaling revealed distinct SHH-regulated transcriptional programs in the developing forebrain, midbrain, and hindbrain, suggesting a complex interplay between anterior-posterior and mediolateral patterning systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C37-C38 are summary claims about the SAG treatment experiment. The distinct regional transcriptional programs (C9, C37) are supported by the specific examples in C162-C166, and the interpretation about interplay between patterning systems (C10, C38) is supported by the region-specific responses (C160-C161) and the overlap with spatially patterned genes (C157-C158).",
+    "result_type": "MAJOR"
+  }
+]

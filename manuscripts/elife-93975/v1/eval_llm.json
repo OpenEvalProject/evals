@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "BPS exposure induces dose-dependent epimutations and gene expression changes in iPSCs. All three doses tested (1, 50, and 100 \u03bcM) induced DMCs, DMRs, and DEGs, with the extent of epimutagenesis correlated with BPS dose. Notably, 1 \u03bcM BPS (below the EPA safe limit for BPA) was sufficient to induce widespread DMCs and DEGs across all chromosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 collectively demonstrate dose-dependent effects with appropriate statistical thresholds (p-value and FDR \u22640.05). The data show correlation between DMCs in promoter regions and differential gene expression (C21), and the finding that 1 \u03bcM BPS induces effects despite being below regulatory limits (C23-C24) is well-documented with genome-wide data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Different cell types show distinct susceptibility patterns to BPS-induced epimutagenesis. iPSCs showed the highest number of DMCs, followed by Sertoli and granulosa cells, then PGCLCs. Somatic and pluripotent cells showed predominantly hypomethylated DMCs, while PGCLCs showed predominantly hypermethylated DMCs. BPS-induced DMCs were enriched in enhancer regions in somatic and pluripotent cells but in promoter regions in PGCLCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 present quantitative comparisons across cell types with data in Table 2 and Figure 2. The differential hypo- vs hypermethylation patterns (C26) are explained by baseline methylation differences in PGCs (C27). The genomic location differences (C29) are supported by annotation analysis, though only 11.05% overlap between cell types (C28) suggests cell-type-specific responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Expression of estrogen receptors correlates with susceptibility to BPS-induced epimutagenesis, but is not absolutely required. Somatic cells express both ER\u03b1 and ER\u03b2, pluripotent cells express only ER\u03b2, and PGCLCs/PGCs express neither receptor. Cells expressing at least one ER showed higher DMC incidence, but PGCLCs still developed epimutations despite lacking ERs and other tested endocrine receptors (AR, PPAR\u03b3, RXR\u03b1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C36 are supported by immunocytochemistry data and are consistent with prior literature (C33). The correlation between ER expression and DMC incidence (C34) is documented in Table 2, while the finding that PGCLCs develop DMCs without ER expression (C35-C36) demonstrates that canonical hormone receptor signaling is not the sole mechanism of EDC-induced epimutagenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C42",
+      "C43"
+    ],
+    "result": "BPS-induced epimutations show enrichment near estrogen response elements (EREs) in a cell-type-specific manner. Analysis of public ChIP-seq data revealed ERE half-sites (rather than full consensus sequences) are more biologically relevant. ERE half-sites were enriched within 500 bp of DMCs in all cell types but notably lower in germ cells. ERE half-sites occur nearly fourfold more frequently in enhancers than promoters genome-wide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C42-C43 are supported by analysis of public ChIP-seq data and genome-wide ERE mapping (Table 3, Figure 3). The identification of ERE half-sites rather than full consensus sequences (C37) is a novel finding. The enrichment patterns correlate with the genomic locations of DMCs (enhancers vs promoters) and ER expression patterns across cell types, providing mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The majority of BPS-induced epimutations occur at CpGs showing inherent cell-type-specific methylation variation. Of 297,415 CpGs interrogated, >240,000 showed cell-type-specific differential methylation. Over 95% of BPS-induced epimutations in somatic and pluripotent cells, and ~89% in germ cells, occurred at these cell-fate-specific CpGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 present quantitative findings from the Infinium array analysis (Figure 4a). The high percentage of BPS-induced epimutations occurring at cell-type-specific CpGs suggests that EDC exposure preferentially disrupts regions already subject to cell-fate-specific epigenetic regulation. The data are clearly presented with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "BPS exposure induces cell-type-specific patterns of gene dysregulation that correlate with proximity of epimutations to promoters. PGCLCs showed the highest number of DEGs despite having the fewest DMCs, while somatic cells showed three orders of magnitude fewer DEGs than pluripotent or germ cells. The number of DEGs inversely correlated with median distance between DMCs and promoters across all cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by RNA-seq data (Tables 2 and 4, Figure 5). The inverse correlation between DMC-promoter distance and DEG number (C47) is statistically significant. The interpretation that PGCLCs show higher DEGs due to more promoter-proximal DMCs (C48) and decondensed chromatin (C49) is reasonable, though C49 relies partly on established knowledge about germ cell chromatin states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "BPS induces epimutations through both canonical and non-canonical endocrine signaling pathways. Gene ontology analysis identified genes with promoter DMCs lacking nearby EREs that are associated with ubiquitin-like protease and PI3K/AKT pathways. In PGCLCs lacking ER expression, differential expression of phosphatidylinositol-4 phosphatase pathway genes and G-protein-coupled receptors (Gprc5a, Gprc5b, Gpr89, Gpr107, Gpr161) was observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by GO analysis (Figure 6) and RNA-seq data. The identification of ubiquitin-protease pathways (C50) and PI3K/AKT signaling (C52-C53) provides mechanistic insight. The observation of differentially expressed GPCRs (C54) that bind BPA or estradiol in rat models (C55) suggests potential non-canonical signaling mechanisms, though direct functional validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C56",
+      "C57",
+      "C59",
+      "C60"
+    ],
+    "result": "During iPSC to PGCLC differentiation, the prevalence of BPS-induced epimutations and DEGs is largely retained, but >90% of specific epimutations and DEGs are replaced by novel ones. PGCLCs derived from BPS-exposed iPSCs showed 28,168 DMCs and 1437 DEGs compared to 38,105 DMCs and 1637 DEGs in exposed iPSCs. Only 3.7% of DMCs and 8.4% of DEGs were conserved, while 26,752 novel DMCs and 1299 novel DEGs appeared de novo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C56-C57, C59-C60 present the most striking finding of the study, supported by EM-seq and RNA-seq data (Figure 7). The quantitative data clearly show that while the overall burden of epimutations persists through germline reprogramming, the specific sites are largely replaced. This suggests disruption of the underlying chromatin landscape rather than simple inheritance of specific marks. The statistical thresholds are appropriate (p\u22640.05, FDR\u22640.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Among the 138 DEGs conserved from BPS-exposed iPSCs to derived PGCLCs, 12.32% are involved in cell cycle and apoptosis pathways potentially linked to cancer development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is supported by pathway analysis of the conserved DEGs (Figure 7\u2014figure supplement 1). The identification of specific genes (Cdkn1a, Ccnd2, Plk2, etc.) in cancer-related pathways is documented. However, the link to cancer is speculative without functional validation or disease outcome data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Differential incidences of BPS-induced epimutations and DEGs correlate with differential expression of hormone receptors, with epimutations occurring near hormone response elements in somatic and pluripotent, but not germ cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 summarize major findings that are supported by the detailed analyses in claims C30-C43. The correlation between receptor expression and epimutagenesis (C4) is demonstrated through immunocytochemistry and methylation analysis. The differential enrichment near EREs (C5) is supported by genomic annotation and proximity analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61"
+    ],
+    "result": "Prior studies suggest that EDC exposure disrupts not only epigenetic modifications but also the underlying chromatin landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C61 accurately references recent in vivo studies (Chamorro-Garc\u00eda et al., 2021; Chang et al., 2022) that support the authors' interpretation of their findings. This provides important context for understanding the mechanism of transgenerational epigenetic inheritance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The similarity between XX granulosa cells and XY Sertoli cells suggests that sex chromosome constitution may not affect cellular responses to EDC exposure in cell types with established X-inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is based on limited data comparing only two cell types (granulosa vs Sertoli). While the authors note similarities in responses, this is insufficient to conclude that XX and XY cells respond identically to EDCs. The caveat about X-inactivation is appropriate, but more comprehensive comparisons would be needed to support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C70",
+      "C71"
+    ],
+    "result": "Cell culture purity and differentiation efficiency were validated using established markers. Sertoli cells were >80% pure, granulosa cells >90% pure, and PGCLC differentiation yielded 2-3% PGCLCs that were isolated by FACS for FUT4/ITGB3 double-positive cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68, C70-C71 describe quality control measures supported by immunocytochemistry (Figure 2\u2014figure supplement 2) and FACS data (Figure 2\u2014figure supplement 3). These validation steps are appropriate and meet standard practices for cell culture studies. The purity estimates are based on established cell-type-specific markers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C80",
+      "C83"
+    ],
+    "result": "Statistical thresholds for identifying DMCs and DEGs required both p-value and FDR \u22640.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C83 describe appropriate statistical criteria for identifying significant changes in methylation and gene expression. The dual requirement of both p-value and FDR correction is conservative and reduces false positives. This is standard practice for genome-wide studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C23",
+      "C27",
+      "C33",
+      "C51",
+      "C52",
+      "C55",
+      "C66"
+    ],
+    "result": "Background knowledge and prior research establish that EDCs disrupt endocrine signaling and induce transgenerational epimutations, though molecular mechanisms remain poorly understood. Previous in vitro studies demonstrated EDC-induced epimutagenesis but used cancer cell lines rather than physiologically relevant cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C10, C12-C17, C23, C27, C33, C51-C52, C55, C66 accurately represent established knowledge and prior research, supported by appropriate citations. These claims provide essential context for the study's rationale and interpretation. The historical perspective (C8) and assessment of current knowledge gaps (C10) appropriately frame the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C63",
+      "C64",
+      "C65",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Detailed experimental methods describe cell culture, BPS exposure protocols, and analytical approaches including Infinium array, RNA-seq, and EM-seq with appropriate bioinformatics pipelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C63-C65, C69, C72-C79, C81-C82, C84-C87 provide comprehensive methodological details. The BPS exposure protocol (C74-C76) includes appropriate controls and recovery periods. The use of established protocols (C66, C69) and validated analytical pipelines (C85-C87) supports reproducibility. The dose selection (C11) is justified relative to EPA limits.",
+    "result_type": "MINOR"
+  }
+]

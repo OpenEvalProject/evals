@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors successfully derived 13 of 16 monosomic yeast strains (M1-M16, excluding M7, M12, M13). Monosomic strains showed visible growth defects and were regularly invaded by fast-growing revertants. Three chromosomes (VII, XII, XIII) could not be maintained as stable monosomies, likely due to rapid endoreduplication or recombination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 provide converging evidence from phenotypic observations (growth defects, colony morphology), DNA sequencing (Figure 1B), and experimental screening. The inability to derive M7, M12, and M13 is well-documented with plausible mechanistic explanations (endoreduplication, recombination hotspot). The experimental approach is rigorous with appropriate validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Combining fitness effects of 468 haploinsufficient single-gene deletions predicted lethality for several monosomies, but all viable monosomic strains showed large positive epistasis. Some monosomics (especially M4) were predicted to have negative growth rates but remained viable, with most predicted mutational load canceled by epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35-C39 are supported by systematic fitness measurements (Figure 2A-B) comparing predicted versus observed growth rates. The multiplicative fitness model is mathematically justified (Appendix 2), and the large positive epistasis is quantitatively demonstrated. However, potential compensatory evolution in single-deletion strains (C55-C56) suggests the epistasis magnitude may be underestimated, strengthening rather than weakening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Monosomic chromosomes showed no compensatory upregulation of gene expression. Average transcription intensity was halved on monosomic chromosomes, and fitness effects of single-gene deletions did not correlate with expression changes in monosomic strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C40-C42 are directly supported by transcriptome data (Figures 3A-B). The lack of correlation between haploinsufficiency and expression changes is statistically demonstrated. RNA-seq methodology is appropriate, though the analysis is limited to 8 of 13 monosomic strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C60"
+    ],
+    "result": "All monosomic strains showed universal upregulation of ribosomal protein genes and downregulation of proteasome genes, with simultaneous upregulation of protein-folding chaperones and downregulation of protein-degradation chaperones. This response was indiscriminate and did not correspond to altered gene dosage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C43-C46, C60 are supported by consistent transcriptome patterns across all analyzed monosomic strains (Figure 4A). The uniformity of response despite different chromosomal losses is compelling evidence. The interpretation that upregulation is indiscriminate is justified by the lack of dosage-specific compensation shown in C40-C42.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Monosomic strains showed no classical stress response signatures. Instead, they exhibited downregulation of mitochondrial proteins and antioxidant machinery, with variable responses in specific regulons (cAMP-PKA, NCR, GAAC, Msn2up) across different monosomic strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C47-C49 are supported by transcriptome analysis (Figure 4A-B). The absence of stress markers (typically upregulated proteolysis and downregulated ribosomal proteins) is notable and contradicts prior reports. The variable regulon responses are well-documented, though their functional significance remains somewhat unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The transcriptional response failed to restore stoichiometry required for efficient biosynthesis, which likely became growth-limiting. Protein synthesis apparatus genes were most frequently haploinsufficient, and their predicted damage was sufficient to account for observed growth defects in monosomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11-C13 involve substantial speculation (marked as SPECULATION in evidence_type). While C62-C64 provide supporting data from GO analysis (Table 1) showing enrichment of protein synthesis apparatus genes among haploinsufficient genes, the causal link between failed stoichiometry restoration and growth limitation (C12-C13) is inferred rather than directly demonstrated. The hypothesis is plausible but requires additional experimental validation such as direct measurement of ribosome assembly efficiency or protein synthesis rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors propose that cellular modularity leads to fragmentation of mutational load, where defects outside growth-limiting modules lose relevance, producing positive epistasis as an epiphenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14-C16 are entirely theoretical interpretations (marked as INFERENCE/SPECULATION). While this modular bottleneck model provides an elegant explanation for the observed positive epistasis, it lacks direct experimental validation. The model would require testing through targeted perturbations of specific modules or demonstration that epistasis magnitude correlates with module-specific damage. The hypothesis is well-reasoned but remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Spike-in RNA analysis revealed decreased absolute mRNA levels in monosomic strains, though monosomic cells were larger (60% longer axis, several-fold larger volume). The decreased RNA density is consistent with known relationships between RNA content and growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by spike-in experiments (Figure 5) and morphological measurements. The interpretation in C53 is supported by appropriate citations. However, the analysis is limited to only 3 monosomic strains (M1-M3), and the relationship between per-cell versus per-volume RNA content introduces some ambiguity in interpretation. The caveat about cell volume is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C56"
+    ],
+    "result": "The ability to tolerate extensive mutational burdens is not limited to specific gene combinations and would apply broadly. The measured positive epistasis may be underestimated because single-deletion strains had undergone compensatory evolution that was absent in newly derived monosomics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is a reasonable inference from successful derivation of 13 diverse monosomic strains. Claim C56 is supported by citation to Puddu et al., 2019 showing compensatory evolution in deletion collections. The logic that this would strengthen rather than weaken the epistasis claim is sound, though the magnitude of this effect is not quantified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors selected 468 haploinsufficient genes by combining two prior studies (Deutschbauer et al.: 184 genes; Marek and Korona reanalysis: 404 genes). The overlap of 112 genes was significantly higher than the 14.3 expected by chance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 describe the methodological approach for gene selection. The statistical comparison of overlap is appropriate and demonstrates non-random concordance between studies. The reanalysis using FDR 0.15 is reasonable, though this relatively permissive threshold may include false positives. The approach is transparent and adequately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "In yeast, mRNA changes generally reflect corresponding shifts in translation and protein composition, though with some attenuation in disomics. Proteome-level compensation is less pronounced in laboratory strains (especially BY) compared to wild aneuploids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by appropriate citations to establish that transcriptome analysis is a reasonable proxy for proteome changes in the BY laboratory strain used. This justifies the authors' reliance on RNA-seq data. The distinction between laboratory and wild strains is important context for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Background claims establishing that chromosome loss halves gene dosage and reduces fitness, that human cells carry ~100 inactive genes, that yeast has ~5000 genes across 16 chromosomes, and that monosomy mimics sudden partial inactivation of numerous randomly assembled genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C17-C20 provide established background knowledge and logical framing for the study. C1-C2 are well-established principles of aneuploidy. C17-C18 are supported by appropriate citations. C19 is accurate knowledge about yeast genome organization. C20 is a logical inference that motivates the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Prior literature context: wild monosomics are rare and limited to short chromosomes; ~20% of yeast gene deletions are lethal or slow growth in haploids/homozygotes; heterozygous deletions rarely affect growth rate substantially under optimal conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 provide literature context supported by appropriate citations (Peter et al., 2018; Sui et al., 2020; Zhu et al., 2014; Giaever et al., 2002; Deutschbauer et al., 2005; Marek and Korona, 2016; Ohnuki and Ohya, 2018). These establish the novelty and significance of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Summary claims that monosomic strains remained viable despite predictions, grew as if mutation damage had disappeared, and revealed large positive epistasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 are high-level summaries of the main findings that are substantiated by the detailed results in other claim groups (particularly C21-C28 for viability and C35-C39 for epistasis). These are appropriately supported by the experimental data.",
+    "result_type": "MAJOR"
+  }
+]

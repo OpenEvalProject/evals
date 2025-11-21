@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors developed an invertible computational tool based on phototransduction models that can design light stimuli to predictably alter rod and cone photocurrents, including compensating for nonlinear properties like light adaptation. This tool permits separation of phototransduction nonlinearities from downstream circuit nonlinearities.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this core contribution. Reviewer 1 states the paper 'provides an important method' and 'compelling evidence that this approach can disentangle the effects of photoreceptor nonlinearities.' Reviewer 2 calls the approach 'impressive' and 'convincing,' noting it 'should be a powerful tool for future investigations.' Reviewer 3 describes the approach as 'simple and elegant' with data that 'support the authors conclusions.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C54"
+    ],
+    "result": "Existing phototransduction models with optimized parameters (4 free parameters for rods, 5 for cones) accurately capture photoreceptor responses across diverse stimuli in both mouse and primate. Consensus models captured >80% of response variance for individual cells and ~90% on average, generalizing well across stimuli and to held-out cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently praise the model's performance. Reviewer 2 states 'the ability to capture responses to stimuli as different as white noise with varying mean intensity and flashes with a common set of model parameters across cells is impressive' and notes the presentation is 'thorough and convincing.' Reviewer 3 describes the recordings as 'impressive.' The only noted weakness is that the model is 'not perfect, including some small systematic differences' (Reviewer 2), which the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The phototransduction model can be mathematically inverted because it consists of invertible linear elements, static nonlinear elements, and a time-dependent nonlinear element. The inversion procedure exactly recovers stimuli used to generate test currents, producing estimates in real units (isomerizations per second).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the mathematical invertibility without challenge. Reviewer 3 specifically notes 'the biophysical modeling approach is well described.' Reviewer 2 appreciates 'the clear exposition' that facilitates application by other labs. No reviewer questions the mathematical validity of the inversion procedure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Stimulus estimates based on model inversion from measured photoreceptor responses closely approximate actual stimuli, capturing the majority of stimulus variance and accurately recovering rapid fluctuations at low temporal frequencies (up to ~30 Hz for primate cones, ~10 Hz for mouse cones, ~2-3 Hz for rods).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these validation results. Reviewer 2 notes the examples of model application are 'convincing' and that models 'generalized well across stimuli.' Reviewer 3 states 'the authors demonstrate through additional experiments that their proposed approach works.' The frequency-dependent performance is presented as data without reviewer objection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Modified stimuli designed via model inversion successfully linearize photoreceptor responses to sinusoidal inputs. Responses to modified stimuli were much closer to sinusoidal than responses to original sinusoidal stimuli, with substantially reduced asymmetries between increments/decrements and faster/slower transitions, as quantified by lower MSE in sinusoidal fits.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these results without criticism. Reviewer 2 describes the examples as 'convincing' and notes they 'corroborate, for example, previous findings that adaptation to ambient light in the primate retina...mostly originates in photoreceptors.' Reviewer 3 confirms 'the authors demonstrate through additional experiments that their proposed approach works and is useful for offering insights into retinal computation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Modified stimuli designed to compensate for photoreceptor adaptation successfully reduced gain changes produced by background light. For control stimuli, flash responses decreased ~twofold at higher mean light levels, but modified stimuli produced similar flash response amplitudes at low and high mean light levels across all photoreceptor types tested on held-out cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm these adaptation compensation results. Reviewer 1 specifically mentions the approach can 'disentangle the effects of photoreceptor nonlinearities including light adaptation from downstream nonlinear processing.' Reviewer 2 notes the examples 'corroborate...previous findings that adaptation to ambient light in the primate retina...mostly originates in photoreceptors.' No concerns are raised about these experimental demonstrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Model inversion can predictably alter response kinetics, slowing or speeding photoreceptor responses. Speeding responses by 20-30% is achievable, and measured time-to-peak changes closely follow model predictions for both slowing and speeding manipulations in rods and cones.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these kinetic manipulation results. Reviewer 2 describes the approach as allowing manipulation of 'visual stimuli in such a way that photoreceptor signals are linear or have reduced or altered adaptation,' implicitly including kinetic alterations. Reviewer 3 notes the approach 'works' based on additional experiments. The quantitative agreement between predictions and measurements is presented without reviewer objection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Modified stimuli that negate cone adaptation effectively eliminated most adaptation in downstream horizontal cells and On parasol ganglion cells. Compensating for phototransduction nonlinearities revealed additional, largely time-independent nonlinear processes in horizontal and bipolar cell responses, demonstrating the approach can disentangle contributions of phototransduction versus post-transduction processes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly support this application. Reviewer 1 states the authors 'provide compelling evidence that this approach can disentangle the effects of photoreceptor nonlinearities including light adaptation from downstream nonlinear processing, thus facilitating future studies of the higher visual system.' Reviewer 2 calls this 'thought-provoking' and notes it 'should be a powerful tool for future investigations of retinal circuit function.' Reviewer 3 confirms the approach is 'useful for offering insights into retinal computation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The model's accuracy depends on its quality, but systematic differences between predicted and measured responses were relatively small when consensus models were tested on held-out cells from different retinas. Most differences appear to reflect cell-to-cell variability rather than systematic model failures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly notes this as a weakness: 'The model is impressive, but not perfect, including some small systematic differences between model predictions and measurements from held-out cells. The deviations likely (partly) reflect differences between cells used for parameter optimization and test cells, as stated in the text (though this is not fully proven), which has to be kept in mind when applying the model.' This indicates the generalization is good but imperfect, with uncertainty about the source of remaining errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The model describes photocurrents rather than synaptic output and does not include photopigment bleaching/regeneration. It is limited to light levels <50,000 R*/s for cones (though covers most of the rod operating range), as experiments required pigment epithelium removal and minimized bleaching.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge these limitations without criticism. Reviewer 2 states: 'The model is limited to describing photoreceptor responses at the level of photocurrents, as opposed to the output of the cell, which takes into account voltage-dependent mechanisms, horizontal cell feedback, etc., as the authors acknowledge. It could be interesting to expand the model in the future to include factors that affect photoreceptor output beyond the stage of the photocurrent.' This is presented as a recognized scope limitation rather than a flaw.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A biochemical model architecture was chosen for its mechanistic connection to phototransduction and exact invertibility. The 11-parameter model was reduced to 4-5 free parameters through constraints and prior measurements, with parameters optimized separately for each photoreceptor type.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the modeling choices. Reviewer 3 specifically states 'the biophysical modeling approach is well described.' Reviewer 2 notes 'the presentation of the model is thorough and convincing' and appreciates 'the clear exposition and the listing of obtained optimal parameter values.' No reviewer questions the parameter reduction strategy or model architecture choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Rods were recorded with suction electrodes allowing comprehensive stimulus sets per cell, while cones were recorded with whole-cell patch clamp with shorter stability requiring single stimulus types per cell due to internal dialysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the experimental approach. Reviewer 3 states 'the authors collected an impressive set of recordings from mouse and primate photoreceptors, which is very challenging to obtain.' The methodological differences between rod and cone recordings are presented as technical constraints without reviewer criticism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Linear models of photoreceptor responses deviated considerably more from measured responses than the biochemical model, specifically overpredicting responses at high mean light levels and underpredicting at low mean light levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this comparison. Reviewer 2 notes the model's ability to capture responses 'is impressive' compared to simpler alternatives. The superiority of the nonlinear biochemical model over linear approximations is presented as supporting evidence for the approach without reviewer objection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Stimulus frequency content was limited to frequencies photoreceptors can encode (0-60 Hz primate cones, 0-30 Hz mouse cones, 0-15 Hz rods) and power spectra were matched to reduce noise amplification at high frequencies where photoreceptors poorly encode signals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these methodological constraints without criticism. The frequency limitations are presented as reasonable technical considerations given photoreceptor encoding properties, and no reviewer questions this approach to managing noise in the inversion procedure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Speeding responses is particularly difficult because it requires amplifying high temporal frequencies, and the ability to speed is limited by the physical constraint that light intensities cannot be negative. Low-contrast stimuli can be sped more than high-contrast stimuli.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these technical limitations. The constraints are presented as logical consequences of the physics of light stimulation and signal processing requirements. No reviewer questions why speeding is more limited than slowing or other kinetic manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Model prediction accuracy depends critically on accurate light calibrations, but with consistent calibrations the approach should translate directly across laboratories and to in vivo physiological or perceptual studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers support generalizability. Reviewer 2 states 'Ideally, the present results would generalize to the work in other labs and possibly other sensory systems. The authors do provide evidence that a photocurrent model constructed from data in one set of cells can be used in a second set of cells.' Reviewer 3 notes the approach 'may be useful in vivo.' The calibration requirement is presented as a standard experimental consideration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The photoreceptor models can serve as a front end for empirical models of downstream processing, potentially improving predictions of retinal responses across light levels and decoding performance. Hybrid models with phototransduction front ends show improved performance in predicting ganglion cell responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers view this positively. Reviewer 1 states the approach will facilitate 'future studies of the higher visual system.' Reviewer 2 calls it 'thought-provoking' and 'a powerful tool for future investigations of retinal circuit function.' The citation to improved hybrid model performance (Idrees et al., 2024) is presented without reviewer challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C126",
+      "C127"
+    ],
+    "result": "The stimulus design approach could be used with genetic manipulations to restore normal kinetics or provides an alternative that allows specific functional manipulations without requiring genetic access. It permits testing how photoreceptor asymmetries contribute to On/Off differences in downstream responses and generally isolates photoreceptor versus post-photoreceptor circuit effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers support these potential applications. Reviewer 1 emphasizes the approach 'can disentangle the effects of photoreceptor nonlinearities...from downstream nonlinear processing, thus facilitating future studies.' Reviewer 2 notes it addresses 'a long-standing problem in the field: determining the location of nonlinearities within a complex circuit.' Reviewer 3 confirms it is 'useful for offering insights into retinal computation.'",
+    "result_type": "MINOR"
+  }
+]

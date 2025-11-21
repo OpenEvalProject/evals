@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript describes a collection of 3060 adult and 1373 larval split-GAL4 lines resulting from screening over 77,000 split hemidriver combinations, with 1644 lines previously published and 1416 newly reported or in preparation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C20-C21 provide consistent quantitative data about the collection size and composition. The numbers are internally consistent (1644 + 1416 = 3060) and the screening scale is clearly documented. The data represents a straightforward enumeration of the resource.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "All 3060 lines were rescreened using a standardized UAS-CsChrimson-mVenus reporter at attP18, with at least one male and one female CNS imaged per line, revealing sexual dimorphism in 109 lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 describe a systematic validation approach with clear methodology. The rescreening protocol is well-defined, and the observation of sex differences in 109/3060 lines (~3.6%) is a quantifiable outcome. The use of a standardized reporter and genomic location enhances reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Lines were qualitatively scored into quality levels, with 1767 lines showing specific expression in a single cell type (level 1), 1232 in two cell types (level 2), 26 in three or more cell types (level 3), and 34 with weak/variable expression (level 4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide a quality classification system with clear counts totaling 3059 lines (1767+1232+26+34), which is close to the 3060 total with one line unaccounted for. The classification is supported by representative images in Figure 2. However, the qualitative nature of scoring introduces subjectivity, though two-observer validation is mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Distribution analysis shows extensive CNS coverage with 96% of voxels having expression from \u22655 lines, 90% from \u226510 lines, and 66% from \u226520 lines, with prominent labeling in fan-shaped body, lobula, and superior medial protocerebrum, but rare labeling in antennal lobe.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C40 present quantitative spatial distribution data from 3029 lines analyzed. The methodology is described (C76-C79) with image alignment, segmentation, and filtering steps. The decreasing percentages (96%\u219290%\u219266%) for increasing line thresholds are logically consistent. Regional observations are supported by heat map visualization in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Sex-specific expression differences were observed, with more female expression in epaulette and abdominal ganglion, and more male expression in antennal mechanosensory and motor center and mushroom body regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 describe sex-specific regional differences from subtraction analysis (Figure 3C-D). However, the authors acknowledge potential artifacts in male images from background segmentation and 'sparse-T' neurons. The biological interpretation is confounded by technical issues, making these observations uncertain without additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The raw image collection comprises 46,653 IS/SS combinations from ~77,000 IS crosses screened, including 36,033 IS samples and 8,273 SS lines, totaling 129,665 samples, 612,124 3D image stacks, and 192 TB of data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 provide comprehensive quantitative documentation of the imaging resource. The numbers are internally consistent (e.g., ~10% of IS crosses became SS lines as stated in C53). The scale is substantial and well-documented. The authors appropriately note this data has not undergone the same validation level as the curated collection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The larval collection includes 982 split-GAL4 lines, 31 Gen1 GAL4 lines, and 353 Gen1 LexA lines selected for specific expression in third-instar larval CNS, with selection criteria limiting expression to \u22642 neurons per brain hemisphere or VNC hemisegment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 clearly describe the larval collection composition and selection criteria. The rationale for the \u22642 neuron criterion is well-justified for imaging and functional studies. The total of 1373 larval lines (C3) is consistent with 982+31+353+7 (dual expression lines from C59).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Distribution analysis used 3029 lines with images aligned to JRC2018 Unisex template and segmented using DSLT, producing 19,313 brain and 18,860 VNC objects, filtered to 10,778 brain and 9,310 VNC objects after removing non-neuronal elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe the computational pipeline for distribution analysis. The methodology is well-documented with appropriate citations (Bogovic et al., 2020; Kawase et al., 2015). The substantial reduction from initial segmentation (~38,000 objects) to filtered dataset (~20,000 objects) indicates rigorous quality control, though the specific filtering criteria could be more transparent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Historical context establishes that GAL4/UAS system was limited by broad enhancer trap expression (hundreds of cells), leading to Generation 1 collection of 6,650 genomic fragments with 3,850 adult brain lines having 20-5,000 labeled neurons, but <1% with single cell-type specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C11 provide well-cited historical background (Fischer et al., 1988; Brand and Perrimon, 1993; Pfeiffer et al., 2008; Jenett et al., 2012) establishing the motivation for split-GAL4 development. The progression from broad enhancer traps to sparser Gen1 patterns to the need for intersectional approaches is logically presented with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The split-GAL4 approach, developed by Luan et al. (2006) and optimized by Pfeiffer et al. (2010), uses AD and DBD domains that dimerize when co-expressed, yielding sparser patterns in 5-10% of crosses and single cell-type specificity in 1-2% of intersections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 accurately describe the split-GAL4 mechanism with appropriate citations and provide empirical success rates from the screening process. The 1-2% single cell-type success rate is consistent with the quality level 1 proportion (1767/3060 = 58%), suggesting iterative refinement improved outcomes beyond initial screening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Early efforts targeted optic lobes and mushroom bodies with success for majority of cell types, facilitated by computational search tools for neuronal morphologies and comprehensive EM-based cell-type inventories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe the project evolution with extensive citations (Tuthill et al., 2013; Nern et al., 2015; Wu et al., 2016; Aso et al., 2014; Otsuna et al., 2018; Scheffer et al., 2020, etc.). The integration of computational approaches and EM data represents important methodological advances that enabled systematic targeting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Representative lines demonstrate diverse CNS targeting including central complex neurons (SS52577), dopaminergic neurons (MB043C), VNC neurons (SS40265, SS60203, SS47938), sexually dimorphic neurons (SS36564), and descending neurons (SS72207).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide specific examples with appropriate citations and Figure 1 documentation. These serve as proof-of-concept for the collection's utility across different brain regions and cell types. Each example is well-supported by prior publications or current imaging data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C55",
+      "C61"
+    ],
+    "result": "The collection and associated data are publicly available through Bloomington Drosophila Stock Center (until at least August 31, 2026), splitgal4.janelia.org, neuronbridge.janelia.org, flylight-raw.janelia.org, and Virtual Fly Brain for larval lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45, C55, C61 document comprehensive data and reagent availability through multiple established repositories. The specific end date for stock availability (August 31, 2026) provides transparency about resource sustainability. Multiple access points enhance usability for different research needs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "The FlyLight Project Team has contributed 540,000 3D images of 230,000 CNS samples total, with stocks distributed 300,000 times to thousands of groups in over 50 countries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 provide impressive quantitative metrics of project impact and community usage. These numbers are consistent with Table 2 data and demonstrate broad adoption. The distribution statistics validate the resource's utility to the research community.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Important caveats include off-target expression in many lines, variability across effectors and insertion sites, potential transvection effects, and developmental changes in expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide appropriate caveats with supporting citations (Pfeiffer et al., 2010; Aso et al., 2014; Mellert and Truman, 2012; Harris et al., 2015; Baird et al., 2000). These limitations are honestly acknowledged and consistent with Figure 2 showing quality levels 2-4 with off-target expression. The recommendation for multi-line validation is sound practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The collection has limitations including incomplete cell-type annotations, biological variability within cell types, incomplete CNS coverage, exclusion of peripheral nervous system, and estimated success rates of precise lines for only one-third of cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 provide honest assessment of collection limitations. The one-third success rate estimate (C73) is consistent with quality level 1 representing 58% of the curated collection, acknowledging that many cell types remain without specific lines. The limitation to ~50% of biological enhancers (C72) is a reasonable inference about coverage gaps.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "Split-GAL4 driver lines enable specific targeting of cell types in Drosophila melanogaster and other species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 is a general statement about split-GAL4 capability that is well-established in the literature and demonstrated throughout this manuscript. The entire collection serves as evidence for this capability, though the 'other species' aspect is not directly demonstrated in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "300,000 new 3D images of other split-GAL4 lines are made available beyond the curated collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by the detailed documentation in C46-C54 showing 612,124 total 3D image stacks in the raw collection. The 300,000 figure represents images beyond the curated collection lines, providing additional resource value for understudied regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Flies were raised at 21-25\u00b0C with 50% humidity and dissected at 1-5 days old for rescreening, 1-8 days for non-MCFO crosses, and 3-8 days for MCFO imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 document standardized experimental conditions. These parameters are appropriate for Drosophila work and the age ranges are reasonable for the different imaging modalities. Standardization enhances reproducibility across the large-scale effort.",
+    "result_type": "MINOR"
+  }
+]

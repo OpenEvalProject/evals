@@ -1,0 +1,380 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Metagenomic sequencing and assembly of apple rhizosphere samples yielded approximately 2 billion quality reads, 1.4-2 million contigs, 296-433 high-quality MAGs per treatment, which were de-replicated to 395 unique MAGs with 30-36% of reads mapping to the MAG collection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide a coherent pipeline from sequencing through assembly, binning, and de-replication with specific quantitative metrics at each step. The data are internally consistent and cite the source study (Berihu et al., 2023). The read mapping percentage (30-36%) is reasonable for MAG-based analysis and is appropriately compared to non-binned contigs (61-71%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Taxonomic classification of the 395 MAGs showed varying resolution across taxonomic levels (395 at phylum, 394 at order, 237 at genus, 3 at species), with Proteobacteria, Acidobacteria, Actinobacteria, and Bacteroidetes as dominant phyla, and MAGs classified into 143 genera compared to ~3000 genera by gene-centric approaches and ~1000 by amplicon sequencing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 present taxonomic classification results using GTDB-Tk with appropriate citations. The decreasing resolution at lower taxonomic levels is expected for environmental samples with many uncharacterized species. The comparison across methods (MAGs: 143 genera vs gene-centric: ~3000 vs amplicon: ~1000) appropriately demonstrates that MAG-based approaches capture fewer but higher-quality taxonomic units representing abundant community members.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Functional analysis revealed that the 10 most frequent categories involved primary metabolism, with amino acid biosynthetic pathway prevalence ranging from 99.5% (glycine) to 21% (tyrosine), suggesting most bacterial soil species rely on external supply of at least some nutritional demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 present functional characterization with specific quantitative data on pathway prevalence. The wide range in pathway completeness (99.5% to 21%) supports the inference in C11 about nutritional dependencies. However, the conclusion is somewhat speculative as incomplete pathways could also reflect annotation gaps or alternative biosynthetic routes not captured by the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Construction of 395 GSMMs followed by quality filtering yielded 243 stoichiometrically consistent models averaging 1924 reactions, 203 exchange reactions, and 1312 metabolites, with the full set containing 5152 unique reactions, 597 exchange reactions, and 2671 compounds, comparable to recent large-scale reconstructions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 describe GSMM construction and validation with specific metrics. The use of MEMOTE for quality control (C13) is appropriate, though 152 models (38%) failing consistency checks is notable. The comparison to published studies (C16) provides context, though the manuscript acknowledges limitations of automatic reconstruction. The metrics are internally consistent and reasonable for automated GSMM construction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Growth simulations showed higher performance on poor medium supplemented with exudates compared to poor medium alone but lower than rich medium, with growth patterns not phylogenetically conserved and selective effects of exudates differing between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 present growth simulation results with appropriate comparisons across media types. The expected ordering (rich > poor+exudates > poor) validates the simulation approach. The lack of phylogenetic conservation (C18) and selective effects (C19) are supported by citations to previous experimental work, though these are computational predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The MCSM iterative simulation in a rhizosphere environment (60 inorganic compounds + 33 root exudates) supported growth of 27 GSMMs in iteration 1, followed by 33 additional species in iteration 2 (after adding 145 secreted compounds), and 11 more in iteration 3, totaling 71 species across three iterations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 describe the iterative MCSM simulation with specific numbers at each step. The progressive growth pattern (27\u219260\u219271) demonstrates trophic dependencies. The numbers are internally consistent and the approach is methodologically sound. However, the simulation depends on FVA parameters (fraction of optimum = 0.9) and the assumption that secreted compounds are available at optimal fluxes, which may not reflect in vivo conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Addition of 31 organic phosphorus compounds in iteration 4 supported growth of 9 additional GSMMs, followed by 4 more in iteration 5, ultimately connecting 84 of 243 GSMMs via trophic exchanges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 extend the MCSM simulation by addressing phosphorus limitation. The addition of organic P compounds is justified as P is typically limiting in soil. The final count of 84/243 (35%) growing GSMMs is reasonable given that the simulation uses a single exudate profile and excludes other community members (fungi, archaea). The manuscript appropriately acknowledges these limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "First iteration growers (27 species) represented 14 of 17 phyla with similar distribution to the full community, dominated by Acidobacteriota, Proteobacteria, and Bacteroidota, identified as primary beneficiaries of root exudates consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 characterize the phylogenetic distribution of first iteration growers. The maintenance of phylogenetic diversity (14/17 phyla) and dominance of specific phyla is consistent with cited literature (Zhalnina et al., 2018). The agreement with previous experimental work strengthens confidence in the simulation results, though this remains a computational prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Species from Elusimicrobiota, Chlamydiota, and Fibrobacterota phyla grew in iteration 2 but not iteration 1, while Sphingomonadales grew in iteration 1 but Rhizobiales and Burkholderiales grew in iterations 2 and 3 respectively, indicating metabolic dependencies on other community members.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe differential growth timing across iterations with appropriate biological interpretation. The delayed growth of certain taxa is consistent with their known metabolic dependencies (C34 cites specialized dependencies of Elusimicrobiota). The inference about metabolic dependencies (C36) is reasonable given the iterative simulation design, though experimental validation would be needed to confirm these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "MCSM simulation resulted in secretion of 158 organic compounds (12 overlapping with exudates), including siderophores, vitamins, coenzymes, and 11 amino acids, all known exchange compounds in microbial communities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 characterize secreted compounds with specific examples and appropriate citations. The identification of known exchange compounds (siderophores, vitamins, amino acids) provides face validity for the simulation. However, the predictions depend on the accuracy of the GSMMs and FVA parameters, and experimental metabolomics would be needed to validate these predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The community exchange network comprised 84 GSMM nodes and 203 metabolite nodes connected by 9773 edges, containing 45,972 PM paths and 571,605 PMM paths, with GSMM participation ranging from 272-896 in PM paths and 398-50,628 (position 1) or 1388-19,738 (position 2) in PMM paths, showing negative correlation between positions (Pearson = -0.279, p = 0.009).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe network structure with specific quantitative metrics. The large number of paths reflects the combinatorial nature of the network. The negative correlation between positions (C44) is statistically significant and biologically interpretable as trophic specialization. However, the p-value is modest (0.009) and the correlation is weak (r = -0.279), suggesting the relationship, while significant, explains limited variance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "S-classified GSMMs initiated significantly more PMM sub-networks than NA and H-classified GSMMs, suggesting non-beneficial bacteria may have broader utilization potential of root-secreted carbon sources compared to plant-beneficial bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 present a key finding linking network topology to soil health classification. The statistical significance (C45, Figure 6A) supports the observation, and the interpretation (C46) is reasonable. However, the classification into H/S/NA is based on differential abundance in treated vs untreated soils, which may not directly reflect beneficial vs detrimental effects. The interpretation requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Three root exudates were significantly associated with H-classified PM paths and six with S-classified paths, including gallic acid and caffeic acid (phenylpropanoids secreted following pathogen exposure) in S-paths, with high phenolic levels hypothesized to have autotoxic effects and genes for caffeic acid production upregulated in ARD-infected roots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 link specific exudates to soil health status with literature support. The identification of phenylpropanoids in S-paths (C49) is consistent with cited studies on ARD (C51). However, C50 is explicitly labeled as speculation, and the causal relationship between these compounds and disease remains uncertain. The hypergeometric test provides statistical support for the associations, but experimental validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "79 unique microbial-secreted compounds were significantly overrepresented in either S (42) or H (41) classified PM paths, with L-sorbose and phenylacetaladehyde over-represented in H paths and shown to inhibit fungal pathogens and have nematicidal qualities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 identify secreted compounds associated with soil health with literature support for their functions. The even split between H and S compounds (41 vs 42) is notable. The cited functions of specific compounds (C53-C54) provide biological plausibility, though these are literature-based associations rather than direct experimental validation in this system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The PM path 4-hydroxybenzoate \u2192 GSMM_091 \u2192 catechol was identified, with catechol being a precursor of catecholamines shown to increase apple ARD tolerance, leading to the testable prediction that 4-hydroxybenzoate can serve as a selective enhancer of catecholamine-synthesizing bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 present a specific example of how the framework generates testable hypotheses. The pathway is clearly defined (C55), the biological relevance is supported by citations (C56), and the prediction (C57) is appropriately framed as testable. This exemplifies the framework's utility, though the prediction requires experimental validation. The claim appropriately combines data, inference, and speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The framework combines metagenomics with constraint-based modeling, using CarveMe for GSMM construction without gap filling to avoid masking co-dependencies, and MCSM using FVA (fraction of optimum = 0.9) rather than FBA to determine exchange fluxes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe the methodological framework with appropriate justifications. The choice to avoid gap filling (C60) is justified to preserve co-dependencies, though this may reduce model completeness. The use of FVA over FBA (C61) is appropriate for capturing the range of possible exchange fluxes. The parameter choice (0.9 optimality, C62) is reasonable but somewhat arbitrary and could affect results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Metabolomics data from Geneva 935 or Malling 26 rootstock cultivars were used to specify apple root-derived compounds, with the list consistent with other reported plant root exudate profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 describe the source of exudate data with appropriate citations. The consistency with other studies (C64) provides validation. However, the manuscript acknowledges that the metabolomics data are from related but different rootstock genotypes (G935/M26 vs G210/M26), which introduces potential bias. This limitation is appropriately discussed in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The experimental design included six soil/rootstock treatments with five replicates each, using two rootstocks (M26 ARD-susceptible, G210 ARD-tolerant) in three treatments (B. napus amendment, B. juncea/S. alba amendment, no-treatment control), with MAGs classified as healthy (H), sick (S), or not-associated (NA) based on differential abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 describe the experimental design with appropriate detail and citations. The design with multiple rootstocks, treatments, and replicates is sound. The classification scheme (H/S/NA) based on differential abundance is reasonable, though it assumes that differential abundance reflects functional importance. The use of seed meal amendments to create disease-suppressive vs conducive conditions is supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "MAG processing included gene annotation with MetaWRAP, pathway completeness with KEGG Decoder, quality assessment with CheckM, phylogenomic analysis with GTDB-Tk, and de-replication with dRep, yielding 395 high-quality genomes (\u226590% completeness, <5% contamination).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 describe standard bioinformatics methods with appropriate tool citations. The quality thresholds (90% completeness, <5% contamination) follow community standards (Bowers et al., 2017). The 99% ANI threshold for de-replication is stringent and appropriate for distinguishing strains. The methods are well-documented and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "GSMM analysis used Cplex solver and COBRApy, with rich medium defined as all exchange reactions, poor medium as minimal compounds for growth (0.1 biomass/hour), exudates aligned with BIGG database, and growth rates calculated using FBA for biomass maximization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 describe computational methods with appropriate tool citations. The definitions of rich and poor media are clear and standard. The growth rate threshold (0.1 biomass/hour) for poor medium is reasonable. The use of BIGG database for compound alignment is appropriate. The methods are sufficiently detailed for reproduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "FVA gathers the full range of exchange fluxes satisfying the objective function, with secreted compounds set to optimal fluxes in subsequent iterations, flux boundaries set to 1000 mmol/gDW hour, and metabolites classified using BRITE annotations or manually.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 describe MCSM implementation details. The choice to use optimal fluxes (C96) is justified to focus on metabolite presence rather than quantity, though this may not reflect in vivo conditions. The flux boundary (1000 mmol/gDW hour, C97) is high and essentially non-limiting, which is appropriate for the analysis goals. The classification approach (C98) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Network analysis used networkx with Kamada-kawai layout, paths extracted using all_shortest_paths function, PMM distributions compared using ANOVA followed by Tukey test, and metabolites associated with H/S/NA paths using one-sided hypergeometric test.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 describe network and statistical analysis methods with appropriate tool citations. The use of shortest paths (C101) is reasonable for identifying direct trophic connections. The statistical methods (ANOVA/Tukey for C102, hypergeometric test for C103) are appropriate for the data types. The methods are sufficiently detailed for reproduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The rhizosphere is characterized as a hotspot for interactions from root exudate secretion to microbial uptake, forming complex metabolic exchange networks impacting plant health, with targeted exudate secretion fundamental to rhizobiome assembly and each plant having unique exudate profiles guiding specialized rhizobiome formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 present established knowledge about rhizosphere biology with appropriate citations. These claims provide context and justification for the study but do not represent novel findings. The characterizations are well-supported by the cited literature and represent current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Constraint-based modeling allows simulation of bacterial metabolic activity based on genome constraints, with recent advances in sequencing and automatic GSMM construction promoting increased use for complex communities, though most studies use 16S-based genome imputation rather than MAGs which enable genuine in situ metabolic views.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C75 present background on CBM and MAG-based approaches with extensive citations. These claims establish the rationale for the study's approach and position it within the field. The distinction between 16S-based imputation and MAG-based approaches (C73-C75) justifies the methodological choices. These are well-supported contextual claims rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study recovered 395 unique MAGs from apple rhizosphere metagenomes in ARD-affected soil with/without Brassicaceae seed meal amendment, with the framework providing means for capturing trophic interactions and formulating testable hypotheses applicable to different environments and biological landscapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 summarize the study scope and framework utility. The recovery of 395 MAGs (C76) and experimental design (C77) are supported by earlier claims. The framework utility claims (C78-C79) are appropriately framed as capabilities rather than validated outcomes. The broad applicability claim (C79) is somewhat speculative but reasonable given the general nature of the approach.",
+    "result_type": "MAJOR"
+  }
+]

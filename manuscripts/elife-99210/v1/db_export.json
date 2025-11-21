@@ -1,0 +1,1776 @@
+{
+  "submission": {
+    "id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T18:49:47.946921Z",
+    "updated_at": "2025-11-21T18:49:47.946921Z"
+  },
+  "content": [
+    {
+      "id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "content_type": "manuscript",
+      "content_text": "# Trade-offs in modeling context dependency in complex trait genetics\n\n## Authors\n\n- Eric Weine<sup>1</sup> ([ORCID: 0009-0001-7809-1649](https://orcid.org/0009-0001-7809-1649))\n- Samuel Pattillo Smith<sup>1</sup> ([ORCID: 0000-0002-6269-0276](https://orcid.org/0000-0002-6269-0276))\n- Rebecca Kathryn Knowlton<sup>4</sup>\n- Arbel Harpak<sup>1</sup> ([ORCID: 0000-0002-3655-748X](https://orcid.org/0000-0002-3655-748X)) \u2020\n\n### Affiliations\n\n1. Department of Integrative Biology, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))\n2. Department of Population Health, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))\n3. Department of Human Genetics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))\n4. Department of Statistics and Data Sciences, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))\n\n\u2020 Corresponding author\n\n## Abstract\n\nGenetic effects on complex traits may depend on context, such as age, sex, environmental exposures, or social settings. However, it remains often unclear if the extent of context dependency, or gene-by-environment interaction (GxE), merits more involved models than the additive model typically used to analyze data from genome-wide association studies (GWAS). Here, we suggest considering the utility of GxE models in GWAS as a trade-off between bias and variance parameters. In particular, we derive a decision rule for choosing between competing models for the estimation of allelic effects. The rule weighs the increased estimation noise when context is considered against the potential bias when context dependency is ignored. In the empirical example of GxSex in human physiology, the increased noise of context-specific estimation often outweighs the bias reduction, rendering GxE models less useful when variants are considered independently. However, for complex traits, we argue that the joint consideration of context dependency across many variants mitigates both noise and bias. As a result, polygenic GxE models can improve both estimation and trait prediction. Finally, we exemplify (using GxDiet effects on longevity in fruit flies) how analyses based on independently ascertained \u2018top hits\u2019 alone can be misleading, and that considering polygenic patterns of GxE can improve interpretation.\n\n## Introduction\n\nIn organisms and study systems where the environment can be tractably manipulated, gene-by-environment interactions (GxE) are the rule, not the exception (El Soda et al., 2014; Vieira et al., 2000; Des Marais et al., 2013; Smith and Kruglyak, 2008; Paaby and Rockman, 2014). Yet, in complex (polygenic) human traits, there are but a few cases in which models that incorporate GxE explain data\u2014such as genome-wide association study (GWAS) data\u2014better than parsimonious models that assume additive contributions of genetic and environmental factors (Munaf\u00f2 et al., 2014; Kraft and Aschard, 2015; Sella and Barton, 2019). This is true for both physical environments but also for other definitions of \u2018E\u2019, broadly construed to be any context that modifies genetic effects, such as age, sex, or social setting (Zhu et al., 2023; Schwaba et al., 2023; Elgart et al., 2022; Duncan and Keller, 2011; Gibson and Lacek, 2020; Brown et al., 2016; Ge et al., 2017; Balliu et al., 2021). GWAS commonly estimate marginal additive effects of an allele on a trait. The estimand here can be thought of as the average effect of the allele over a distribution of multidimensional contexts (Veller et al., 2023). With this view, some differences in allelic effects across contexts are likely omnipresent, but may very well be small, such that the cost of including additional parameters (for context-specific effects) outweighs the benefit of measuring heterogeneous effects. Here, we consider this problem and its connection to the currently underwhelming utility of GxE models in GWAS. First, we rigorously describe the statistical trade-off involved in estimating context specificity at the level of a single variant. Then, we highlight ways in which this trade-off might change as we consider GxE in complex traits, involving numerous genetic variants simultaneously. We begin by framing the problem of estimating context specificity at an individual variant as a bias-variance trade-off. For example, consider the estimation of an allelic effect on lung cancer risk that depends on smoking status. When the allelic effect is estimated from a sample without considering smoking status, the estimate would be biased with respect to the true effect in smokers. We can estimate the effect separately in smokers and non-smokers to eliminate the bias, but the consideration of the additional parameters\u2014smoking status-specific effects\u2014has an associated cost of increasing the estimation variance, compared to an estimator that ignores smoking status. This bias-variance trade-off is closely related to the \u2018signal-to-noise\u2019 ratio, where the signal of interest is the true difference in context-specific allelic effects. To demonstrate this trade-off in real data, we consider sex-specific effects on physiological traits in humans. We show that for the majority of traits, it is typically unhelpful to model sex dependency for individual sites since the increase in noise vastly outweighs the signal. We then consider the extension to GxE in complex traits. Complex trait variation is primarily due to numerous genetic variants of small effects distributed throughout the genome (Fisher, 1930; Falconer and Mackay, 1996; Yengo et al., 2022; Zwick et al., 2000). Simultaneously considering GxE across multiple variants may decrease estimation noise if the extent and mode of context specificity is similar across numerous variants. This would tilt the scale in favor of context-dependent estimation. In addition, we show how conventional approaches for detecting and characterizing GxE, which focus on the most significant associations, may lead to erroneous conclusions. Finally, we discuss implications for complex trait prediction (with polygenic scores). We suggest a future focus on prediction methods that empirically learn the extent and nature of context dependency by simultaneously considering GxE across many variants.\n\n## Results and discussion\n\n### Modeling context-dependent effect estimation as a bias-variance trade-off\n\n#### The problem setup\n\nWe consider a sample of $n+m$ individuals characterized as being in one of two contexts, A or B of the individuals are in context A with the remaining $m$ individuals in context B. We measure a continuous trait for each individual, denoted by\n\n$$\ny_{1},\u2026,y_{n}\u23deA,y_{n+1},\u2026,y_{n+m}\u23deB.\n$$\n\nWe begin by considering the estimation of the effect of a single variant on the continuous trait. We assume a generative model of the form\n\n$$\ny_{i}\u223c{N(\\alpha_{A}+\\beta_{A}g_{i},\\sigma_{A}^{2})if\u00a0i\\in{1,\u2026,n}N(\\alpha_{B}+\\beta_{B}g_{i},\\sigma_{B}^{2})if\u00a0i\\in{n+1,\u2026,n+m},\n$$\n\nwhere $\\beta_{A}$ and $\\beta_{B}$ are fixed, context-specific effects of a reference allele at a biallelic, autosomal variant $i$, $g_{i}\\in{0,1,2}$ is the observed reference allele count. $\\alpha_{A}$ and $\\alpha_{B}$ are the context-specific intercepts, corresponding to the mean trait for individuals with zero reference alleles in context $A$ and $B$, respectively. $\\sigma_{A}^{2}$ and $\\sigma_{B}^{2}$ are context-specific observation variances. We would like to estimate the allelic effects $\\beta_{A}$ and $\\beta_{B}$.\n\n#### Estimation approaches\n\nWe compare two approaches to this estimation problem. The first approach, which we refer to as GxE estimation, is to stratify the sample by context and separately perform an ordinary least squares (OLS) regression in each sample. This approach yields two estimates, $\\beta^_{A}$ and $\\beta^_{B}$, the OLS estimates of $\\beta_{A}$ and $\\beta_{B}$ of the generative model in Equation 1, respectively. This estimation model is equivalent to a linear model with a term for the interaction between context and reference allele count, in the sense that context-specific allelic effect estimators have the same maximum likelihood estimators in the two models (see Appendix 1). The second approach, which we refer to as additive estimation, is to perform an OLS regression on the entire sample and use the allelic effect estimate to estimate both $\\beta_{A}$ and $\\beta_{B}$. We denote this estimator as $\\beta^_{A\u222aB}$, to emphasize that the regression is run on all individuals from context $A$ and context $B$. This estimation model posits that for $i=1,\u2026,n+m$,\n\n$$\ny_{i}\u223cN(\\alpha_{A\u222aB}+\\beta_{A\u222aB}g_{i},\\sigma_{A\u222aB}^{2}),\n$$\n\nwhere $\\alpha_{A\u222aB}$ is the mean trait value for an individual with zero reference alleles, $\\beta_{A\u222aB}$ is the additive allelic effect and $\\sigma_{A\u222aB}^{2}$ is the observation variance which is independent of context. Notably, this model differs from the generative model assumed above: $\\beta_{A\u222aB}$ may not equal $\\beta_{A}$ and $\\beta_{B}$; in addition, this model ignores heteroskedasticity across contexts.\n\n#### Error analysis\n\nWe focus on the mean squared error (MSE) of the additive and GxE estimators for the allelic effect in context $A$. The estimator minimizing the MSE may differ between contexts A and B, but the analysis for context $B$ is analogous. When selecting between these two estimation approaches, a bias-variance decomposition of the MSE is useful. Based on OLS theory (Casella and Berger, 2021, Theorem 11.3.3), under the model specified above, we have\n\n$$\n\\beta^_{A}\u223cN(\\beta_{A},V_{A}),\n$$\n\nwhere $V_{A}=\\frac{\\sigma_{A}^{2}}{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}$ and $g\u00af_{A}$ is the mean genotype of individuals in context $A$. The unbiasedness of the GxE estimator implies\n\n$$\nMSE(\\beta^_{A},\\beta_{A})=V_{A},\n$$\n\nwhere $MSE(\\beta^_{A},\\beta_{A})$ is the mean squared error of estimating $\\beta_{A}$ with $\\beta^_{A}$. The case of the additive estimator, $\\beta^_{A\u222aB}$, is a bit more involved. As we show in the Methods section, we can write\n\n$$\n\\beta^_{A\u222aB}=\\omega_{A}\\beta^_{A}+\\omega_{B}\\beta^_{B}\n$$\n\nfor non-negative weights $\\omega_{A}$ and $\\omega_{B}$ (that need not sum to 1). Further, we show in Equation 7 of the Methods section that $\\omega_{A}\u221dnH_{A}$ and $\\omega_{B}\u221dmH_{B}$, where $H_{A}$ and $H_{B}$ are the sample heterozygosities in contexts $A$ and $B$, respectively. Using Equation 3, we may write\n\n$$\nMSE(\\beta^_{A\u222aB},\\beta_{A})=Bias^{2}(\\beta^_{A\u222aB},\\beta_{A})+Var(\\beta^_{A\u222aB})=((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}+\\omega_{A}^{2}V_{A}+\\omega_{B}^{2}V_{B},\n$$\n\nwhere $V_{B}$ is defined analogously to $V_{A}$. Thus, with MSE as our metric for comparison, we prefer the GxE estimator in context $A$ when\n\n$$\nMSE(\\beta^_{A\u222aB},\\beta_{A})>MSE(\\beta^_{A},\\beta_{A}),\n$$\n\nor, if and only if\n\n$$\n((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}+\\omega_{A}^{2}V_{A}+\\omega_{B}^{2}V_{B}>V_{A}.\n$$\n\nWe refer to Equation 4 as the \u2018decision rule\u2019, since it guides us on the more accurate estimator; to minimize the MSE, we will use the context-specific estimator if and only if the inequality is satisfied. To gain some intuition about the important parameters here, we first consider the case of equal allele frequencies (and hence equal heterozygosities) in both contexts and equal estimation variance in both contexts. In this case, the GxE estimator is advantaged by larger context specificity (larger $|\\beta_{A}\u2212\\beta_{B}|$) and disadvantaged by larger estimation noise (larger $V_{A}=V_{B}$) (Figure 1). In fact, the decision boundary (i.e. the point at which the two models have equal MSE) can be written as a linear combination of $|\\beta_{A}\u2212\\beta_{B}|$ and $\\sqrt{V_{A}}$ (Figure 1C). In this special case, we show in the Methods section that Equation 4 is an equality when\n\n$$\n\\sqrt{\\frac{m}{2n}}|\\beta_{A}\u2212\\beta_{B}|\u2212\\sqrt{V_{A}}=0.\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99210/elife-99210-fig1-v1.jpg)\n\n**Figure 1.:** The x-axis shows the difference in context-specific effects, while the y-axis shows the standard deviation of the context-specific estimators\u2014both in raw measurement units. The color on the plot indicates the difference between the additive and gene-by-environment interaction (GxE) estimators in bias (A), variance (B), or mean squared error (MSE) (C). (A) Only the additive estimator is potentially biased. The bias is proportional to the difference in context-specific effects and independent of the estimation noise. (B) The difference in variance is proportional to context-specific estimation noise and independent of the difference of context-specific effects. (C) The decision boundary is linear in both the estimation noise and the difference between context-specific effects.\n\nMore generally, in the case where $H_{A}=H_{B}$ but $V_{A}\\neqV_{B}$, we show in the Methods section that we can write Equation 4 as\n\n$$\n\\frac{(\\beta_{A}\u2212\\beta_{B})^{2}}{V_{A}}>\\frac{1+\\omega_{A}}{1\u2212\\omega_{A}}\u2212\\frac{V_{B}}{V_{A}}.\n$$\n\nThis dimensionless re-parameterization of the decision rule makes explicit its dependence on three factors. $\\frac{(\\beta_{A}\u2212\\beta_{B})^{2}}{V_{A}}$ can be viewed as the \u2018signal-to-noise\u2019 ratio: it captures the degree of context specificity (the signal) relative to the estimation noise in the focal context, A $\\frac{1+\\omega_{A}}{1\u2212\\omega_{A}}$ is the relative contribution to heterozygosity, which equals the relative contribution to variance in the independent variable of the OLS regression of Equation 2. $\\frac{V_{B}}{V_{A}}$ is the ratio of context-specific estimation noises. In Appendix 1, we extend the decision rule for the case of a continuous context variable. For a given trait and context, we can consider the behavior of the decision rule across variants with variable allele frequencies and allelic effects. The ratio of estimation noises, $r:=\\frac{V_{A}}{V_{B}}$, will not be constant. However, in some cases, considering a fixed $r$ across variants is a good approximation. In GWAS of complex traits, each variant often explains a small fraction of trait variance. As a result, the estimation noise is effectively a matter of trait variance and heterozygosity alone. If per-site heterozygosity is similar in strata $A$ and $B$, as it is, for example, for autosomal variants in biological males and females, $r$ is approximately fixed across variants (Zhu et al., 2023). Figure 2 illustrates the linearity of the decision boundary under the assumption that $r$ is fixed across variants. It also shows that the slope of the decision boundary changes as a function of $r$. Intuitively, we are less likely to prefer GxE estimation for the noisier context. In fact, for sufficiently small values of $r$ (e.g. $r<\\frac{1}{3}$ for $\\omega_{A}=\\frac{1}{2}$), $\\frac{1+\\omega_{A}}{1\u2212\\omega_{A}}\u2212\\frac{V_{B}}{V_{A}}$ will be negative. This corresponds to the situation where $V_{A}\u226aV_{B}$, in which case the additive estimator is never preferable to the GxE estimator in estimating $\\beta_{A}$, as the signal-to-noise ratio is always non-negative. Typically, this will also imply that the additive estimator is greatly preferable for estimating $\\beta_{B}$, as $\\beta^_{B}$ will be extremely noisy.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99210/elife-99210-fig2-v1.jpg)\n\n**Figure 2.:** In all panels, the heterozygosity of the variant is assumed to be equal across contexts. The x and y axes are the same as in Figure 1. (A) Estimation noise in the focal context, $A$, is half that of the other context, $B$. (B) Estimation noise is equal in both contexts. (C) Estimation noise in focal context is double that of the other context.\n\nIt is natural to ask where the decision rule of Equation 4 falls with respect to empirical GWAS data. We considered the example of biological sex as the context (GxSex), and examined sex-stratified GWAS data across 27 continuous physiological traits in the UK Biobank (Bycroft et al., 2018; Zhu et al., 2023). For each of 9 million variants, we estimated the difference in sex-specific effects and the variance of each marginal effect estimator in males. Then, using an estimate of the ratio of sex-specific trait variances as a proxy for the ratio of estimation variances of males and females, we approximated the linear decision boundary between the additive and GxE estimators (Figure 3A and B; Appendix 1\u2014figure 2, Appendix 1\u2014figure 3). To demonstrate the accuracy of our decision rule, we employed a data-splitting technique where we estimate the MSE difference between estimators in a training set and evaluate the accuracy in a holdout set (Appendix 1\u2014figure 1). For almost all traits examined, very few allelic effects in males are expected to be more accurately estimated using the male-specific estimator (usually between 0% and 0.1%). Notable exceptions to this rule are testosterone, sex hormone binding globulin (SHBG), and waist-to-hip ratio adjusted for body mass index, for which roughly 0.5% of allelic effects are expected to be better estimated with the GxE model (Figure 3B). However, when considering only SNPs that are genome-wide significant in males (marginal p-value $<5\\times10^{\u22128}$ in males), many traits show a much larger proportion of effects that would be better estimated by the GxE model. At an extreme, for testosterone, all genome-wide significant SNPs are expected to be better estimated by the GxE model. In addition, a large fraction of genome-wide significant effects are better estimated with the GxE model for creatinine (62%), arm fat-free mass (24%), waist-to-hip ratio (19%), and SHBG (18%) as well (Figure 3D).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/99210/elife-99210-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) The x-axis shows the estimated absolute difference between the effect of variants in males and females. The y-axis shows the measured standard error for each variant in males, the focal context here. The dashed line shows the decision boundary for effect estimation in males. The difference in mean squared error (MSE) between estimation methods increases linearly with distance from the dashed line, as in Figure 2. If a variant falls above (below) the line, the additive (gene-by-environment interaction [GxE]) estimator has a lower MSE. (A) shows a random sample of 15K single nucleotide variants whereas (B) shows only variants with a marginal p-value less than $5\\times10^{\u22128}$ in males. (C, D) The percent of effects in males which would be better estimated by the GxE estimator, across continuous physiological traits. (Note the difference in scale between the two panels.) To estimate these percentages, one single nucleotide variant is sampled from each of 1700 approximately independent autosomal linkage blocks, and this procedure is repeated 10 times. Shown are average percentages across the 10 iterations.\n\nThe decision rule we derived could potentially guide more accurate allelic effect estimation approaches. However, the consideration of GxE pattern sharing across many variants (polygenic GxE) can alter both bias and variance and therefore the trade-off. In our discussion of complex traits that follows, we therefore expand on the rule through qualitative consequences of polygenic GxE, and no longer stick to the analytical single variant rule.\n\n### Context dependency in complex traits\n\nAt the single variant level, and specifically when variants are considered independently from one another, we have discussed how the accurate estimation of allelic effects can be boiled down to a bias-variance trade-off. For complex traits, genetic variance is often dominated by the contribution of numerous variants of small effects that are best understood when analyzed jointly (Sella and Barton, 2019; Sinnott-Armstrong et al., 2021; Shi et al., 2016; Boyle et al., 2017; Liu et al., 2019; Wray et al., 2018; Yengo et al., 2022). It stands to reason that to evaluate context dependence in complex traits, we would also want to jointly consider polygenic patterns, rather than just the patterns at the loci most strongly associated with a trait (Urbut et al., 2019; Gibson and Lacek, 2020; Zhang et al., 2021; Paaby and Gibson, 2016; Aschard et al., 2017; Des Marais et al., 2013). Motivated by this rationale, we recently inferred polygenic GxSex patterns in human physiology (Zhu et al., 2023). One pattern that emerged as a common mode of GxSex across complex physiological traits is \u2018amplification\u2019: a systematic difference in the magnitude of genetic effects between the sexes. Moving beyond sex and considering any context, amplification can happen if, for example, many variants regulate a shared pathway that is moderated by a factor\u2014and that factor varies in its distribution among contexts. Amplification is but one possible mode of polygenic GxE, but can serve as a guiding example for ways in which GxE may be pervasive but difficult to characterize with existing approaches (Zhu et al., 2023; Gibson and Dworkin, 2004; Miao et al., 2022; Balliu et al., 2021). In what follows, we will therefore use the example of pervasive amplification (across causal effects) to illustrate the interpretive advantage of considering context dependency across variants jointly, rather than independently.\n\n#### A focus on \u2018top hits\u2019 may lead to mischaracterization of polygenic GxE\n\nA common approach to the analysis of context dependency involves two steps. First, categorization of context dependency (or lack thereof) is performed for each variant independently. Second, variants falling under each category are counted and annotated across the genome. Some recent examples of this approach toward the characterization of GxE in complex traits include studies of GxSex effects on flight performance in Drosophila (Spierer et al., 2021), GxSex effects on various traits in humans (Traglia et al., 2022; Bernabeu et al., 2021), and GxDietxAge effects on body weight in mice (Wright et al., 2022). Characterizing polygenic trends by summarizing many independent hypothesis tests may miss GxE signals that are subtle and statistically undetectable at each individual variant, yet pervasive and substantial cumulatively across the genome. To characterize polygenic GxE based on just the \u2018top hits\u2019 may lead to ascertainment biases, with respect to both the pervasiveness and the mode of GxE across the genome. Much like the heritability of complex traits is thought to be due to the contribution of many small (typically sub-significant) effects (Boyle et al., 2017; Sinnott-Armstrong et al., 2021), when GxE is pervasive we may expect that the sum of many small differences in context-specific effects accounts for the majority of GxE variation. For concreteness, we consider in more depth one recent study characterizing GxDiet effects on longevity in Drosophila melanogaster (Pallares et al., 2023). In this study, Pallares et al. tracked caged fly populations given one of two diets: a \u2018control\u2019 diet and a \u2018high-sugar\u2019 diet. Across 271K single nucleotide variants, the authors tested for association between alleles and their survival to a sampling point (thought of as a proxy for \u2018lifespan\u2019 or \u2018longevity\u2019) under each diet independently. Then, they classified variants according to whether or not their associations with survivorship were significant under each diet as follows:\n\nThis authors\u2019 choice of four categories a variant may fall into may be motivated by the wish to test for the presence of \u2018cryptic genetic variation\u2019\u2014genetic variation that is maintained in a context where it is functionally neutral but carries large effects in a new or stressful context (Gibson and Dworkin, 2004; Paaby and Rockman, 2014; Young et al., 2016; Des Marais et al., 2013). Indeed, of the variants Pallares et al. classified as having an effect (one-hundredth of variants tested), approximately 31% were high-sugar specific, while the remaining 69% of the variants were shared. Fewer than 1% were labeled as having control-specific effects. They concluded that high-sugar-specific effects on longevity are pervasive, compatible with the hypothesis of widespread cryptic genetic variation for longevity. This characterization of GxE, based on \u2018top hits\u2019, places an emphasis on the context(s) in which trait associations are statistically significant, rather than on estimating how the context-specific effects covary. In addition, this particular classification system also does not cover all possible ways in which context-specific effects may differ. In Appendix 1, we discuss these interpretation difficulties further.\n\nWe next show that a generative model that differs qualitatively from the cryptic genetic variation model yields results that are highly similar to those observed by Pallares et al. We simulated data under pervasive amplification. Specifically, we sampled from a mixture of 40% of variants having no effect under either diet and 60% of variants having an effect under both diets\u2014but exactly 1.4\u00d7 larger under a high-sugar diet. We then simulated the noisy estimation of these effects and employed the classification approach of Pallares et al. to the simulated data (Methods). The patterns of allelic effects in the control compared to high-sugar contexts were qualitatively similar in the experimental data and our pervasive amplification simulation. This is true both genome-wide (Figure 4A compared to Figure 4B) and for the set of variants classified as significant with their classification approach (Figure 4C compared to Figure 4D). The similarity of ascertained variants further highlights caveats of interpretation based on the classification of \u2018top hits\u2019: despite the fact that we did not simulate any variants that only have an effect under the high-sugar diet, approximately 36% of significant variants were classified as specific to the high-sugar diet (green points in Figure 4D), comparable to the 31% of variants classified as high-sugar specific in the experimental data (Figure 4C). These variants simply have sub-significant associations in the control group and significant associations in the high-sugar group. In addition, every variant in the shared category (blue points in Figure 4D) in fact has a larger effect in the high-sugar diet than in the control diet, which cannot be captured by the classification system itself but represents the only mode of GxE in our simulation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/99210/elife-99210-fig4-v1.jpg)\n\n**Figure 4.:** (A) Data from an experiment measuring allelic effects on longevity in caged flies given one of two diets, \u2018control\u2019 and \u2018high sugar\u2019. Shown are allelic effect estimates under each diet for a random sample of approximately 12K variants. (B) Simulated data where all true allelic effects are exactly 1.4 times larger under a high-sugar diet. The effects are estimated with sampling noise mimicking the Pallares et al. data. (C) Allelic effect estimates of variants ascertained as significant and classified as \u2018diet-specific\u2019 or \u2018shared\u2019 by Pallares et al. (D) Simulated effects ascertained as significant and classified using a similar procedure to that applied in (C). While the generative mode of GxE we used in our simulations was not considered by Pallares et al., the simulation results (left panels) closely match the patterns observed in their data (right panels) across all effects (top panels) and as reflected via their classification approach (bottom panels).\n\nTo recap, we simulated a mode of GxE that is not considered in Pallares et al. (i.e. pervasive amplification) and that is at odds with their conclusions about evidence for a large discrete class of SNPs with diet-specific effects (i.e. cryptic genetic variation). The close match of our simulation to the empirical results of Pallares et al. therefore illustrates that the characterization of GxE via hypothesis testing and classification at each variant independently may lead to erroneous interpretation when applied to empirical complex trait data as well. In Appendix 1, we show that a reanalysis of the Pallares et al. data that is based on estimating the covariance of allelic effects is directly consistent with pervasive amplification as well (Appendix 1\u2014figure 4). In conclusion, the classification of \u2018top hits\u2019 alone may not be representative of the extent of GxE nor of the most pervasive modes of GxE.\n\n#### The utility of modeling GxE for complex trait prediction\n\nModeling context dependency of genetic effects may hold the potential for constructing polygenic scores that are more accurate or improve their portability across contexts (Patel et al., 2022; Miao et al., 2022; Turley et al., 2018; Spence et al., 2022; Wang et al., 2024; Smith et al., 2025). Evidence for the utility of GxE models in polygenic score prediction, however, has been underwhelming and GxE models are still rarely applied (Zhu et al., 2023; Schwaba et al., 2023). A key reason behind this apparent discrepancy is the bias-variance trade-off for individual variants discussed above. If context-specific effects are similar\u2014a likely possibility for highly polygenic traits with the majority of heritability owing to small causal effects\u2014then additive models will tend to outperform (Fisher, 1930; Falconer and Mackay, 1996; Hill et al., 2008; Young, 2019). This is because the unbiasedness of GxE estimation does not make up for the cost of additional estimator variance, resulting from sample stratification by context or the addition of explicit interaction terms (Schwaba et al., 2023). We exemplify the relative importance of variance compared to bias in polygenic scoring using simulations. We continue with the generative model of pervasive amplification as an example. Namely, we simulated a GWAS of a continuous trait with independent effects in 2500 variants (50% of variants included in the GWAS). Effects were either the same in two contexts, $A$ and $B$, or $1.4$ times larger in context $B$. The GWAS is conducted with either a small sample size or a large sample size, conferring low or high statistical power, respectively. We then constructed polygenic scores using 833 variants (corresponding to one-third of the causal variants), which were ascertained as most significantly associated with the trait according to either the additive model (orange and red in Figure 5) in or context-specific hypothesis tests (green and blue in Figure 5).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/99210/elife-99210-fig5-v1.jpg)\n\n**Figure 5.:** In each simulation, a genome-wide association study (GWAS) is performed on 5000 biallelic variants, half of which have no effect in either context. Of the other half, some percent of the variants (indicated on the x-axis) had effects 1.4\u00d7 larger in one of contexts and the remaining SNPs had equal effects in both contexts. The broad sense heritability was set to $0.4$ in all simulations. The y-axis shows the average, over $11,000$ simulations, of the out-of-sample Pearson correlation between polygenic score and trait value. (A) Results with a GWAS sample size of 1000 individuals. (B) Results with a GWAS size of $50,000$ individuals.\n\nEven in settings with pervasive GxE, additive polygenic scores (red lines in Figure 5) outperformed context-specific scores (green lines in Figure 5). The advantage of the additive model is manifested in two ways: more accurate estimation, as discussed above, but also better identification of true associations with the trait. We considered the two advantages separately. It is sometimes better to ascertain variants using the lower variance approach and estimate effects using the lower-bias approach. In our simulations, this strategy (orange lines in Figure 5) was preferable to using the GxE model for both ascertainment and estimation (green line). It was not preferable to using the additive model (red line) for both approaches, but it was the preferable strategy under a slightly different parametric regime, corresponding to more GxE (Appendix 1\u2014figure 5). Finally, we considered a polygenic GxE approach, as implemented in \u2018multivariate adaptive shrinkage\u2019 (mash) (Urbut et al., 2019), a method to estimate context-specific effects by leveraging common patterns of effect covariance between contexts observed across the genome. mash models the underlying distribution of effects in all contexts as a mixture of zero-centered multivariate normal distributions with different covariance structures (as well as the null matrix, to induce additional shrinkage). After estimating this distribution via maximum likelihood, mash uses it as a prior to obtain posterior effect estimates for each variant in each context. As a result, posterior effect estimates across contexts regress toward commonly observed patterns of covariance of allelic effects across contexts. In our simulations, in the presence of substantial amplification, the polygenic adaptive shrinkage approach outperformed all other methods as long as the study was adequately powered (Figure 5B). This is thanks to the unique ability (compared to the three other approaches) to leverage the sharing of signals across variants, including the extent and nature of context dependency. With low power, however, the additive model performed best (Figure 5A). We attribute this to the variance cost associated with the polygenic adaptive shrinkage approach\u2014driven by the estimation of additional parameters for capturing the genome-wide covariance relationships.\n\n### Conclusion\n\nWhen genetic variants are considered independently, the estimation of their effects in different contexts can be boiled down to a bias-variance trade-off. For complex traits, we show through example that further considering polygenic patterns of GxE can be key for understanding context-dependent genetic architecture and to aid in prediction. The notion that complex trait analyses should combine observations at top associated loci alongside polygenic trends has gained traction with additive models of trait variation; it may be similarly important in our understanding of context dependency.\n\n## Methods\n\n### Expressing the additive estimator as a linear combination of GxE estimators\n\nIn this section, we prove the result of Equation 3, stating that\n\n$$\n\\beta^_{A\u222aB}=\\omega_{A}\\beta^_{A}+\\omega_{B}\\beta^_{B}\n$$\n\nfor some non-negative weights $\\omega_{A}$ and $\\omega_{B}$. To do this, we will need some additional notation. Let $g\u00af_{A}$ denote the average number of effect alleles in individuals in context $A$, and let $g\u00af_{A\u222aB}$ denote the average effect allele count across all individuals. Similarly, let $y\u00af_{A}$ denote the average trait value in context $A$, and let $y\u00af_{A\u222aB}$ denote the average trait value across all individuals. As an OLS estimator, the context-specific estimator is defined as\n\n$$\n\\beta^_{A}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})(y_{i}\u2212y\u00af_{A})}{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})y_{i}\u2212\\sumi=1n(g_{i}\u2212g\u00af_{A})y\u00af_{A}}{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})y_{i}\u2212y\u00af_{A}\\sumi=1n(g_{i}\u2212g\u00af_{A})}{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})y_{i}}{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}},\u00a0since\u00a0\\sumi=1n(g_{i}\u2212g\u00af_{A})=0.\n$$\n\nSimilarly, the additive estimator can be written as\n\n$$\n\\beta^_{A\u222aB}=\\frac{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})(y_{i}\u2212y\u00af_{A\u222aB})}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}=\\frac{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}\u00a0(by the same logic as above)=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A\u222aB})y_{i}+\\sumi=n+1n+m(g_{i}\u2212g\u00af_{A\u222aB})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}.\n$$\n\nWe will show that the weights in Equation 3 depend on the effect allele frequency in the two contexts, $f_{A}$ and $f_{B}$. We will assume mean-centered traits, such that $\\sumi=1ny_{i}=0$ and $\\sumi=n+1n+my_{i}=0$. We note that mean-centering is inconsequential for effect estimation. We can then write\n\n$$\n\\beta^_{A\u222aB}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A\u222aB})y_{i}+\\sumi=n+1n+m(g_{i}\u2212g\u00af_{A\u222aB})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A\u222aB})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}+\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{A\u222aB})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A}+(g\u00af_{A}\u2212g\u00af_{A\u222aB}))y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}+\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B}+(g\u00af_{B}\u2212g\u00af_{A\u222aB}))y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})y_{i}+\\sumi=1n(g\u00af_{A}\u2212g\u00af_{A\u222aB})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}+\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})y_{i}+\\sumi=n+1n+m(g\u00af_{B}\u2212g\u00af_{A\u222aB})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})y_{i}+(g\u00af_{A}\u2212g\u00af_{A\u222aB})\\sumi=1ny_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}+\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})y_{i}+(g\u00af_{B}\u2212g\u00af_{A\u222aB})\\sumi=n+1n+my_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}+\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}\u00a0(by our assumption of mean centered traits)=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}\u22c5\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}+\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})y_{i}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}\u22c5\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})^{2}}{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})y_{i}}{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}\u22c5\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}+\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})y_{i}}{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})^{2}}\u22c5\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})^{2}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}\\beta^_{A}+\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})^{2}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}\\beta^_{B}.\n$$\n\nThus, $\\omega_{A}=\\frac{\\sumi=1n(g_{i}\u2212g\u00af_{A})^{2}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}$ and $\\omega_{B}=\\frac{\\sumi=n+1n+m(g_{i}\u2212g\u00af_{B})^{2}}{\\sumi=1n+m(g_{i}\u2212g\u00af_{A\u222aB})^{2}}$ in Equation 3. We note that the numerator of $\\omega_{A}$ is $n$ times the sample heterozygosity in context A, and the numerator of $\\omega_{B}$ is $m$ times the sample heterozygosity in context B. Thus, we have shown that\n\n$$\n\\omega_{A}\u221dnH_{A}\u00a0and\u00a0\\omega_{B}\u221dmH_{B},\n$$\n\nwhere $H_{A}$ and $H_{B}$ are the sample heterozygosities in context A and B, respectively. And, in the special case where $f_{A}=f_{B}$, because this implies that the sample heterozygosities will be approximately equal across contexts, we have that\n\n$$\n\\omega_{A}\u221dnH_{A}\u00a0and\u00a0\\omega_{B}\u221dmH_{B}.\n$$\n\n### Linearity of the decision rule\n\nIn Equation 5, under the assumption that $V_{A}=V_{B}$ and $H_{A}=H_{B}$, the decision boundary is expressed as a linear function of $|\\beta_{A}\u2212\\beta_{B}|$ and $\\sqrt{V_{A}}$ as\n\n$$\n\\sqrt{\\frac{m}{2n}}|\\beta_{A}\u2212\\beta_{B}|>\\sqrt{V_{A}}.\n$$\n\nHere, we prove that the linearity of the decision rule holds in the more general case where $\\frac{V_{A}}{V_{B}}=r$ for some fixed value of $r$. Equation 5 then follows as a special case of this fact when $r=1$. Starting from Equation 4, we prefer the GxE estimator to the additive estimator when estimating $\\beta_{A}$ if\n\n$$\nV_{A}<\\omega_{A}^{2}V_{A}+\\omega_{B}^{2}V_{B}+((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}\u27faV_{A}<\\omega_{A}^{2}V_{A}+\\frac{\\omega_{B}^{2}}{r}V_{A}+((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}\u27faV_{A}\u2212\\omega_{A}^{2}V_{A}\u2212\\frac{\\omega_{B}^{2}}{r}V_{A}<((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}\u27fa(1\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r})V_{A}<((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}\u27faV_{A}<\\frac{((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}}{1\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}}\u00a0(assuming\u00a01\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}>0)\u27fa\\sqrt{V_{A}}<\\frac{|(\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B}|}{\\sqrt{1\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}}}\u00a0(again assuming\u00a01\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}>0)\n$$\n\nIf our assumption that $1\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}>0$ does not hold, we note that the GxE model is always preferable and technically speaking there exists no decision rule between the two models. Now, when heterozygosities (and thus minor allele frequencies) are equal across contexts, then Equation 8 implies $\\omega_{A}+\\omega_{B}=1$. Therefore, we may write the decision rule as\n\n$$\n\\sqrt{V_{A}}<\\frac{|(1\u2212\\omega_{B}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B}|}{\\sqrt{1\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}}}\u27fa\\sqrt{V_{A}}<\\frac{|\\omega_{B}(\\beta_{B}\u2212\\beta_{A})|}{\\sqrt{1\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}}}\u27fa\\sqrt{V_{A}}<\\frac{\\omega_{B}}{\\sqrt{1\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}}}|\\beta_{A}\u2212\\beta_{B}|\u00a0(by properties of the absolute value)\u27fa\\sqrt{V_{A}}<\\frac{1\u2212\\omega_{A}}{\\sqrt{1\u2212\\omega_{A}^{2}\u2212\\frac{(1\u2212\\omega_{A})^{2}}{r}}}|\\beta_{A}\u2212\\beta_{B}|.\n$$\n\nHere, we see that for any fixed $r$ the decision rule is linear with a slope determined by $r$ (Figure 2). Now, in the special case where $r=1$, we have\n\n$$\n\\sqrt{V_{A}}<\\frac{1\u2212\\omega_{A}}{\\sqrt{1\u2212\\omega_{A}^{2}\u2212(1\u2212\\omega_{A})^{2}}}|\\beta_{A}\u2212\\beta_{B}|\u27fa\\sqrt{V_{A}}<\\frac{1\u2212\\omega_{A}}{\\sqrt{1\u2212\\omega_{A}^{2}\u22121\u2212\\omega_{A}^{2}+2\\omega_{A}}}|\\beta_{A}\u2212\\beta_{B}|\u27fa\\sqrt{V_{A}}<\\frac{1\u2212\\omega_{A}}{\\sqrt{2\\omega_{A}(1\u2212\\omega_{A})}}|\\beta_{A}\u2212\\beta_{B}|\u27fa\\sqrt{V_{A}}<\\sqrt{\\frac{1\u2212\\omega_{A}}{2\\omega_{A}}}|\\beta_{A}\u2212\\beta_{B}|\n$$\n\nNow, substituting the definitions of $\\omega_{A}$ and $\\omega_{B}$ in the case of equal minor allele frequencies given in Equation 8, we can write\n\n$$\n\\sqrt{V_{A}}<\\sqrt{\\frac{1}{2}}\\sqrt{\\frac{1\u2212\\frac{n}{n+m}}{\\frac{n}{n+m}}}|\\beta_{A}\u2212\\beta_{B}|\u27fa\\sqrt{V_{A}}<\\sqrt{\\frac{1}{2}}\\sqrt{\\frac{\\frac{m}{n+m}}{\\frac{n}{n+m}}}|\\beta_{A}\u2212\\beta_{B}|\u27fa\\sqrt{V_{A}}<\\sqrt{\\frac{m}{2n}}|\\beta_{A}\u2212\\beta_{B}|.\n$$\n\nThis inequality is instead an equality under the conditions stated in Equation 5. Finally, again using the definition of $\\omega_{A}$ and $\\omega_{B}$ given in Equation 8, we note that our assumption that $1\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}>0$ will always hold in the case of equal minor allele frequencies and $r=1$, as\n\n$$\n1\u2212\\omega_{A}^{2}\u2212\\frac{\\omega_{B}^{2}}{r}=1\u2212\\frac{n^{2}}{(n+m)^{2}}\u2212\\frac{m^{2}}{(n+m)^{2}}=\\frac{(n+m)^{2}\u2212n^{2}\u2212m^{2}}{(n+m)^{2}}=\\frac{2nm}{(n+m)^{2}},\n$$\n\nwhich is strictly positive.\n\n### Re-parameterized decision rule in terms of unitless quantities\n\nIn Equation 6, under the assumption that $H_{A}=H_{B}$, we re-state the decision rule in terms of the signal-to-noise ratio. Here, we prove this result. From Equation 4, we have that we should select the GxE model to estimate $\\beta_{A}$ if and only if\n\n$$\nV_{A}<\\omega_{A}^{2}V_{A}+\\omega_{B}^{2}V_{B}+((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}\u27fa1<\\omega_{A}^{2}+\\omega_{B}^{2}\\frac{V_{B}}{V_{A}}+\\frac{((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}}{V_{A}}\u27fa1\u2212\\omega_{A}^{2}<\\omega_{B}^{2}\\frac{V_{B}}{V_{A}}+\\frac{((\\omega_{A}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}}{V_{A}}.\n$$\n\nNow, because $H_{A}=H_{B}$, we know by Equation 8 that $\\omega_{A}+\\omega_{B}=1$. Then, we may write the decision rule as\n\n$$\n1\u2212\\omega_{A}^{2}<\\omega_{B}^{2}\\frac{V_{B}}{V_{A}}+\\frac{((1\u2212\\omega_{B}\u22121)\\beta_{A}+\\omega_{B}\\beta_{B})^{2}}{V_{A}}\u27fa1\u2212\\omega_{A}^{2}<\\omega_{B}^{2}\\frac{V_{B}}{V_{A}}+\\frac{(\\omega_{B}(\\beta_{B}\u2212\\beta_{A}))^{2}}{V_{A}}\u27fa1\u2212\\omega_{A}^{2}<\\omega_{B}^{2}\\frac{V_{B}}{V_{A}}+\\omega_{B}^{2}\\frac{(\\beta_{A}\u2212\\beta_{B})^{2}}{V_{A}}\u27fa\\frac{1\u2212\\omega_{A}^{2}}{\\omega_{B}^{2}}<\\frac{V_{B}}{V_{A}}+\\frac{(\\beta_{A}\u2212\\beta_{B})^{2}}{V_{A}}\u27fa\\frac{1\u2212\\omega_{A}^{2}}{(1\u2212\\omega_{A})^{2}}<\\frac{V_{B}}{V_{A}}+\\frac{(\\beta_{A}\u2212\\beta_{B})^{2}}{V_{A}}\u27fa\\frac{1\u2212\\omega_{A}^{2}}{(1\u2212\\omega_{A})^{2}}\u2212\\frac{V_{B}}{V_{A}}<\\frac{(\\beta_{A}\u2212\\beta_{B})^{2}}{V_{A}}\u27fa\\frac{(1\u2212\\omega_{A})(1+\\omega_{A})}{(1\u2212\\omega_{A})^{2}}\u2212\\frac{V_{B}}{V_{A}}<\\frac{(\\beta_{A}\u2212\\beta_{B})^{2}}{V_{A}}\u27fa\\frac{1+\\omega_{A}}{1\u2212\\omega_{A}}\u2212\\frac{V_{B}}{V_{A}}<\\frac{(\\beta_{A}\u2212\\beta_{B})^{2}}{V_{A}}\n$$\n\nas is stated in Equation 6.\n\n### Simulation of GxDiet effects on longevity in Drosophila\n\nIn Figure 4, we compare the effect estimates of Pallares et al. to ones we got in simulations of pervasive amplification. Here, we detail the simulation approach. We first generated true effects under each diet. For variants $j=1,\u2026,50,000$, we sampled a true effect under the high-sugar diet ($\\beta_{h_{j}}$) and under the control diet ($\\beta_{c_{j}}$). A random 60% of variants were set to have no effect under either diet, with the effects of the remaining 40% of variants sampled as\n\n$$\n[\\beta_{c_{j}}\\beta_{h_{j}}]\u223cN([\u22120.125\u22120.15],0.01\u22c5[11.41.41.96]).\n$$\n\nThis corresponds to a systematic amplification of $1.4\\times$ in the high-sugar compared to the control diet. We selected these parameters based on inspection of the resulting distribution of effects and their correspondence to the Pallares et al. data. We then simulated the effect estimation. For each variant, the effect estimate was simulated as normally distributed with mean equal to the true effect and standard deviation equal to a randomly sampled (with replacement) standard error from the effect estimates of Pallares et al. That is, given the simulated values of the true effect estimates $\\beta_{c_{j}}$ and $\\beta_{h_{j}}$, we simulated effect estimates as\n\n$$\n[\\beta^_{c_{j}}\\beta^_{h_{j}}]\u223cN([\\beta_{c_{j}}\\beta_{h_{j}}],[s^_{c_{k}}^{2}00s^_{h_{k}}^{2}]),\n$$\n\nwhere $k$ represents the index of a randomly selected variant from the empirical data of Pallares et al. and $s^_{c_{k}}$ and $s^_{h_{k}}$ are the corresponding estimated standard errors for the effect estimates in the control and high-sugar groups, respectively. This process yielded vectors of estimated effects in the high-sugar group and control group, $\\beta^_{h}$ and $\\beta^_{c}$, respectively, and vectors of estimated standard errors in the high-sugar group and control group, $s^_{h}$ and $s^_{c}$, respectively. We then performed a Z-test for each variant under each diet, yielding two vectors of p-values, $p_{h}$ and $p_{c}$, corresponding to the high-sugar and control diets, respectively. Using these p-values, we followed a similar approach to Pallares et al. to classify the variants (Figure 4D). First, as in Pallares et al., we computed q-values separately for each diet (Storey, 2003), yielding $q_{h}$ and $q_{c}$, corresponding to the q-values of non-zero effects in the high-sugar and control diets, respectively. Then, we employed the following classification scheme for each variant $j=1,\u2026,50,000$:\n\nWe note that p-value and q-value cutoffs used are nominally different than those used in the Pallares et al. study.\n\n### Polygenic score simulations\n\nIn Figure 5, we show the results of multiple simulations where we compute polygenic scores in each of two contexts under amplification. Here, we detail the generation of data in the simulations and the methods for constructing polygenic scores. As in Results and discussion, we assumed that we have $n+m$ observations of a continuous trait, where the first $n$ individuals are observed in context $A$ and the final $m$ are observed in context $B$. For convenience, in this case we assumed $n=m$. Now, for variants $j=1,\u2026,p$ we generated true effects in contexts $A$ and $B$ independently from the mixture model\n\n$$\n[\\beta_{A_{j}}\\beta_{B_{j}}]\u223c\\pi_{0}\\delta_{0}+(1\u2212\\pi_{0})(\\alphaN([00],[1111]))+(1\u2212\\alpha)N([00],[\\frac{3}{2}11\\frac{2}{3}])),\n$$\n\nwhere $\\pi_{0}$ (which we set to $0.5$) represents the proportion of SNPs with null effects in both contexts, $\\alpha$ represents the proportion of non-null SNPs which have exactly equal effects in both contexts, and $1\u2212\\alpha$ is the proportion of non-null SNPs which are generated as perfectly correlated but with $1.5\\times$ the standard deviation in context A. Let $\\beta\u2192_{A}$ and $\\beta\u2192_{B}$ represent the resulting p-vectors of true effects for contexts $A$ and $B$, respectively. Next, we generated genotype counts for each of the $n+m$ individuals at all $p$ variants. Specifically, we independently generated genotypes as\n\n$$\nf_{j}\u223c\\frac{1}{2}Beta(s_{1},s_{2})\u00a0for\u00a0j=1,\u2026,p\n$$\n\n\n\n$$\ng_{ij}\u223cBinomial(2,f_{j})\u00a0for\u00a0i=1,\u2026,n+m,\n$$\n\nwhere $f_{j}$ is the minor allele frequency at variant $j$ in the population, $s_{1}$ and $s_{2}$ are parameters controlling the distribution of minor allele frequencies in the population, and $g_{ij}$ is the observed genotype for individual $i$ at variant $j$. Here, we set $s_{1}=1$ and $s_{2}=5$. Let $G_{A}$ and $G_{B}$ represent the generated $n\\timesp$ matrices of genotypes in contexts A and B, respectively. Finally, we generated the observed continuous traits for context A ($y\u2192_{A}$) and context B ($y\u2192_{B}$) as $y\u2192_{A}\u223cN(G_{A}\\beta\u2192_{A},\\sigma_{A}^{2}I_{n})$$y\u2192_{B}\u223cN(G_{B}\\beta\u2192_{B},\\sigma_{B}^{2}I_{m}),$\n\n$$\ny\u2192A\u223cN(G_{A}\\beta\u2192_{A},\\sigma_{A}^{2}I_{n})y\u2192B\u223cN(G_{B}\\beta\u2192_{B},\\sigma_{B}^{2}I_{m}),\n$$\n\nwhere $\\sigma_{A}^{2}$ and $\\sigma_{B}^{2}$ are the observation variances in contexts A and B, respectively, and $I_{w}$ is the $w\\timesw$ identity matrix. In our simulations, we set $\\sigma_{A}^{2}$ and $\\sigma_{B}^{2}$ such that the narrow sense heritability is 40% in each context. So that we may later test the accuracy of our polygenic scores, we generated both a training set (consisting of $n$ individuals in each context, where n=1000 in the low power simulation and $n=50,000$ in the high power simulation) for effect estimation and a test set (consisting of 3000 individuals in each context) using the above distributions. Figure 5 compares four distinct approaches for constructing polygenic scores, derived from three allelic effect estimation approaches: additive estimation with shrinkage, GxE estimation with shrinkage, and mash. First, the additive and GxE estimates are derived independently for each variant as described in Results and discussion. Let $\\beta^_{A}$ and $\\beta^_{B}$ be the p-vectors of GxE estimates of effects in context $A$ and $B$, respectively. Similarly, let $s^_{A}$ and $s^_{B}$ be the p-vectors of the standard errors of GxE estimates of effects in context A and B, respectively. Finally, let $\\beta^_{A\u222aB}$ be the p-vector of estimated effects from the additive model and $s^_{A\u222aB}$ be the p-vector of standard errors of estimated effects from the additive model. Using the GxE estimates, we also constructed estimates of the effects in each context using mash. Specifically, we ran mash on the $n\\times2$ matrices $[\\beta^_{A}\\beta^_{B}]$ (of effects) and $[s^_{A}s^_{B}]$ (of standard errors). mash then yields $p(\\beta\u2192_{A}|\\beta^_{A},s^_{A})$ and $p(\\beta\u2192_{B}|\\beta^_{B},s^_{B})$, the posterior distributions of the effects in contexts $A$ and $B$, respectively. To construct each polygenic score, we made two choices. First, a choice between the three sets of p-values (or pseudo p-values, see below) for thresholding\u2014we include the 833 (corresponding to one-third of the causal variants) most significant variants in the polygenic score. The second choice was between the three sets of effect estimates to be used as weights in the polygenic score (Figure 5). For instance, when the GxE model was used for ascertainment, we selected the set of variants $\u03a9_{A}\u2282{1,\u2026,p}$ consisting of the variants with the 833 smallest p-values and $\u03a9_{B}\u2282{1,\u2026,p}$ consisting of the variants with the 833 smallest p-values (derived from $\\beta^_{B}$ and $s^_{B}$). Then, we predicted trait values (out of sample) by multiplying the effect estimates of our chosen \u2018estimation method\u2019 (for mash we use the posterior mean) by the effect allele count at each of the selected variants for the individual in question.\n",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- George H Perry, Pennsylvania State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99210.3.sa0](https://doi.org/10.7554/eLife.99210.3.sa0)\n\nIt is known from model organisms that genes' effects on traits are often modulated by environmental variables, but similar gene-by-environment (GxE) interactions have been difficult to detect using statistical analyses of genomic data, e.g., in humans. This study introduces a new framework to estimate gene-by-environment effects, treating it as a bias-variance tradeoff problem. The authors convincingly show that greater statistical power can be achieved in detecting GxE if an underlying model of polygenic GxE is assumed. This polygenic amplification model is a truly novel view with fundamental promise for the detection of GxE in genomic datasets, especially with continued development to detect more complex signals of amplification.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99210.3.sa1](https://doi.org/10.7554/eLife.99210.3.sa1)\n\nExperiments in model organisms have revealed that the effects of genes on heritable traits are often mediated by environmental factors -- so-called gene-by-environment (or GxE) interactions. In human genetics, however, where indirect statistical approaches must be taken to detect GxE, limited evidence has been found for pervasive GxE interactions. The present manuscript argues that the failure of statistical methods to detect GxE may be due to how GxE is modelled (or not modelled) by these methods.\n\nThe authors show, via re-analysis of an existing dataset in Drosophila, that a polygenic 'amplification' model can parsimoniously explain patterns of differential genetic effects across environments. (Work from the same lab had previously shown that the amplification model is consistent with differential genetic effects across the sexes for a number of traits in humans.) The parsimony of the amplification model allows for powerful detection of GxE in scenarios in which it pertains, as the authors show via simulation.\n\nBefore the authors consider polygenic models of GxE, however, they present a very clear analysis of a related question around GxE: When one wants to estimate the effect of an individual allele in a particular environment, when is it better to stratify one's sample by environment (reducing sample size, and therefore increasing the variance of the estimator) versus using the entire sample (including individuals not in the environment of interest, and therefore biasing the estimator away from the true effect specific to the environment of interest)? Intuitively, the sample-size cost of stratification is worth paying if true allelic effects differ substantially between the environment of interest and other environments (i.e., GxE interactions are large), but not worth paying if effects are similar across environments. The authors quantify this trade-off in a way that is both mathematically precise and conveys the above intuition very clearly. They argue on its basis that, when allelic effects are small (as in highly polygenic traits), single-locus tests for GxE may be substantially underpowered.\n\nThe paper is an important further demonstration of the plausibility of the amplification model of GxE, which, given its parsimony, holds substantial promise for the detection and characterization of GxE in genomic datasets. However, the empirical and simulation examples considered in the paper (and previous work from the same lab) are somewhat \"best-case\" scenarios for the amplification model, with only two environments and with these environments amplifying equally the effects of only a single set of genes. It would be an important step forward to demonstrate the possibility of detecting amplification in more complex scenarios, with multiple environments each differentially modulating the effects of multiple sets of genes. This could be achieved via simulations similar to those presented in the current manuscript.\n\nComments on revisions:\n\nThe authors have (with reasonable justification) said that my main recommendations for strengthening the conclusions of the paper are beyond its scope, and they have thoughtfully responded to my (and the other reviewer's) other comments. The paper is now more clearly written---in particular, the connection between the single-locus bias-variance tradeoff calculations and the polygenic results is much more transparent than before. Given that the authors have (again, with fair justification) chosen not to address my major comment, my broad assessment of the paper is unchanged---I think it is an important contribution to a critical topic---and I have no further comments for its improvement (though I note an issue with figure referencing in the captions of Supplementary Figs S2 and S3).\n",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8b063f92-e616-43c7-9751-c2158b855c85",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C1",
+      "claim": "Genetic effects on complex traits may depend on context, such as age, sex, environmental exposures, or social settings.",
+      "claim_type": "EXPLICIT",
+      "source": "Genetic effects on complex traits may depend on context, such as age, sex, environmental exposures, or social settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the nature of genetic effects, drawing on established scientific understanding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "95bc7ac9-8683-438d-8c8d-b9f76cc09bf3",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C2",
+      "claim": "It remains often unclear if the extent of context dependency, or gene-by-environment interaction (GxE), merits more involved models than the additive model typically used to analyze data from genome-wide association studies (GWAS).",
+      "claim_type": "EXPLICIT",
+      "source": "However, it remains often unclear if the extent of context dependency, or gene-by-environment interaction (GxE), merits more involved models than the additive model typically used to analyze data from genome-wide association studies (GWAS).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects the current state of uncertainty in the field regarding model selection.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "3e466a09-e454-46d1-a18e-78aeef418828",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C3",
+      "claim": "The utility of GxE models in GWAS can be considered as a trade-off between bias and variance parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we suggest considering the utility of GxE models in GWAS as a trade-off between bias and variance parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main theoretical framework proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "c7f37a80-1ed4-46e7-ad90-6ed0d590074b",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C4",
+      "claim": "A decision rule can be derived for choosing between competing models for the estimation of allelic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we derive a decision rule for choosing between competing models for the estimation of allelic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The authors state they derive this rule, which is presented mathematically in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "196c2768-ce40-472f-959b-3b1123d1b327",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C5",
+      "claim": "The decision rule weighs the increased estimation noise when context is considered against the potential bias when context dependency is ignored.",
+      "claim_type": "EXPLICIT",
+      "source": "The rule weighs the increased estimation noise when context is considered against the potential bias when context dependency is ignored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the components of the derived decision rule.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "c0fdbe8c-85a1-4a31-8e78-4354aa8d3309",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C6",
+      "claim": "In the empirical example of GxSex in human physiology, the increased noise of context-specific estimation often outweighs the bias reduction, rendering GxE models less useful when variants are considered independently.",
+      "claim_type": "EXPLICIT",
+      "source": "In the empirical example of GxSex in human physiology, the increased noise of context-specific estimation often outweighs the bias reduction, rendering GxE models less useful when variants are considered independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "0fadc94b-2676-405b-bf63-8c47f2ecce0b",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C7",
+      "claim": "For complex traits, the joint consideration of context dependency across many variants mitigates both noise and bias.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for complex traits, we argue that the joint consideration of context dependency across many variants mitigates both noise and bias.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument made by the authors based on their theoretical and empirical analyses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "05f36f89-5142-4c2f-a0a3-eab81805f85b",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C8",
+      "claim": "Polygenic GxE models can improve both estimation and trait prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, polygenic GxE models can improve both estimation and trait prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion follows from the authors' simulations and theoretical framework.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "48db262c-c4d9-4223-91a3-deeb1d089bde",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C9",
+      "claim": "Analyses based on independently ascertained 'top hits' alone can be misleading.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we exemplify (using GxDiet effects on longevity in fruit flies) how analyses based on independently ascertained 'top hits' alone can be misleading, and that considering polygenic patterns of GxE can improve interpretation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the authors' reanalysis of Pallares et al. data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "4afc9c33-2626-4d61-aada-d8b7fb22609e",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C10",
+      "claim": "Considering polygenic patterns of GxE can improve interpretation.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we exemplify (using GxDiet effects on longevity in fruit flies) how analyses based on independently ascertained 'top hits' alone can be misleading, and that considering polygenic patterns of GxE can improve interpretation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the authors' reanalysis and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "77064dcc-6025-4808-92b0-bc8e02264a2c",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C11",
+      "claim": "In organisms and study systems where the environment can be tractably manipulated, gene-by-environment interactions (GxE) are the rule, not the exception.",
+      "claim_type": "EXPLICIT",
+      "source": "In organisms and study systems where the environment can be tractably manipulated, gene-by-environment interactions (GxE) are the rule, not the exception (El Soda et al., 2014; Vieira et al., 2000; Des Marais et al., 2013; Smith and Kruglyak, 2008; Paaby and Rockman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "6ad14633-a36d-4f12-abfc-6d90f6a0ba9d",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C12",
+      "claim": "In complex (polygenic) human traits, there are but a few cases in which models that incorporate GxE explain data better than parsimonious models that assume additive contributions of genetic and environmental factors.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, in complex (polygenic) human traits, there are but a few cases in which models that incorporate GxE explain data\u2014such as genome-wide association study (GWAS) data\u2014better than parsimonious models that assume additive contributions of genetic and environmental factors (Munaf\u00f2 et al., 2014; Kraft and Aschard, 2015; Sella and Barton, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "0dd4e090-a200-4c7b-a9e2-67e689d3b169",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C13",
+      "claim": "GWAS commonly estimate marginal additive effects of an allele on a trait.",
+      "claim_type": "EXPLICIT",
+      "source": "GWAS commonly estimate marginal additive effects of an allele on a trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes standard practice in GWAS.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "ccf991cf-2e96-497c-b400-bae36c10e254",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C14",
+      "claim": "The estimand in GWAS can be thought of as the average effect of the allele over a distribution of multidimensional contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimand here can be thought of as the average effect of the allele over a distribution of multidimensional contexts (Veller et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This interpretation is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "4fdfbb40-0d92-4aef-8606-7e9c68f74857",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C15",
+      "claim": "Some differences in allelic effects across contexts are likely omnipresent, but may very well be small.",
+      "claim_type": "EXPLICIT",
+      "source": "With this view, some differences in allelic effects across contexts are likely omnipresent, but may very well be small, such that the cost of including additional parameters (for context-specific effects) outweighs the benefit of measuring heterogeneous effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration about the nature of GxE.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "505aa6cb-c226-4d1a-8860-6a16613d9266",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C16",
+      "claim": "The cost of including additional parameters for context-specific effects may outweigh the benefit of measuring heterogeneous effects.",
+      "claim_type": "EXPLICIT",
+      "source": "With this view, some differences in allelic effects across contexts are likely omnipresent, but may very well be small, such that the cost of including additional parameters (for context-specific effects) outweighs the benefit of measuring heterogeneous effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration about model selection.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "110b0026-11c5-4340-a9ac-7732bc5f5641",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C17",
+      "claim": "Complex trait variation is primarily due to numerous genetic variants of small effects distributed throughout the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Complex trait variation is primarily due to numerous genetic variants of small effects distributed throughout the genome (Fisher, 1930; Falconer and Mackay, 1996; Yengo et al., 2022; Zwick et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established principle in quantitative genetics, supported by multiple citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "87da6279-f16a-4edc-990b-2873d1c48b7c",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C18",
+      "claim": "Simultaneously considering GxE across multiple variants may decrease estimation noise if the extent and mode of context specificity is similar across numerous variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously considering GxE across multiple variants may decrease estimation noise if the extent and mode of context specificity is similar across numerous variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction made by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "d76d5a82-e3ed-4828-9d1a-ca61c1efc85e",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C19",
+      "claim": "Conventional approaches for detecting and characterizing GxE, which focus on the most significant associations, may lead to erroneous conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we show how conventional approaches for detecting and characterizing GxE, which focus on the most significant associations, may lead to erroneous conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the authors' reanalysis of Pallares et al. data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "cf0eb9a4-fc30-4e6f-9100-75f1fbabf95e",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C20",
+      "claim": "When the allelic effect is estimated from a sample without considering smoking status, the estimate would be biased with respect to the true effect in smokers.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, consider the estimation of an allelic effect on lung cancer risk that depends on smoking status. When the allelic effect is estimated from a sample without considering smoking status, the estimate would be biased with respect to the true effect in smokers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothetical example illustrating the concept of bias in estimation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "9e0e264f-d98b-4ed6-9c20-7985543f06b8",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C21",
+      "claim": "The consideration of additional parameters\u2014smoking status-specific effects\u2014has an associated cost of increasing the estimation variance, compared to an estimator that ignores smoking status.",
+      "claim_type": "EXPLICIT",
+      "source": "We can estimate the effect separately in smokers and non-smokers to eliminate the bias, but the consideration of the additional parameters\u2014smoking status-specific effects\u2014has an associated cost of increasing the estimation variance, compared to an estimator that ignores smoking status.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration about the variance of estimators.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "c88276f0-a488-4130-9f7b-412fb68494c1",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C22",
+      "claim": "The bias-variance trade-off is closely related to the 'signal-to-noise' ratio, where the signal of interest is the true difference in context-specific allelic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "This bias-variance trade-off is closely related to the 'signal-to-noise' ratio, where the signal of interest is the true difference in context-specific allelic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conceptual connection made by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "2ef02cfc-4090-412b-8fa5-7327c0ad4b14",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C23",
+      "claim": "For the majority of traits in the UK Biobank, it is typically unhelpful to model sex dependency for individual sites since the increase in noise vastly outweighs the signal.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that for the majority of traits, it is typically unhelpful to model sex dependency for individual sites since the increase in noise vastly outweighs the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "a0b0287e-b4af-41b8-b846-8bfeb18b59aa",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C24",
+      "claim": "The GxE estimator is unbiased.",
+      "claim_type": "IMPLICIT",
+      "source": "The unbiasedness of the GxE estimator implies",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This follows from standard OLS theory applied to the context-specific model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "44ff6a15-048d-4ab5-b41d-64b6fc3d3ff0",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C26",
+      "claim": "The weights in the additive estimator are proportional to sample size times heterozygosity in each context.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, we show in Equation 7 of the Methods section that \u03c9A\u221dnHA and \u03c9B\u221dmHB, where HA and HB are the sample heterozygosities in contexts A and B, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result derived by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "9bd90f89-7dfd-4c7d-8c25-018011404bd4",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C29",
+      "claim": "For autosomal variants in biological males and females, per-site heterozygosity is similar.",
+      "claim_type": "EXPLICIT",
+      "source": "If per-site heterozygosity is similar in strata A and B, as it is, for example, for autosomal variants in biological males and females, r is approximately fixed across variants (Zhu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "df99b165-4c17-4960-a4ab-3d8b09a5a4d4",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C30",
+      "claim": "For almost all traits examined in the UK Biobank, very few allelic effects in males are expected to be more accurately estimated using the male-specific estimator (usually between 0% and 0.1%).",
+      "claim_type": "EXPLICIT",
+      "source": "For almost all traits examined, very few allelic effects in males are expected to be more accurately estimated using the male-specific estimator (usually between 0% and 0.1%).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "ace87d9b-d3cb-4ad8-bc6b-d15f9ee62289",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C31",
+      "claim": "For testosterone, sex hormone binding globulin (SHBG), and waist-to-hip ratio adjusted for body mass index, roughly 0.5% of allelic effects are expected to be better estimated with the GxE model.",
+      "claim_type": "EXPLICIT",
+      "source": "Notable exceptions to this rule are testosterone, sex hormone binding globulin (SHBG), and waist-to-hip ratio adjusted for body mass index, for which roughly 0.5% of allelic effects are expected to be better estimated with the GxE model (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' analysis of UK Biobank data, shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "393d9bf2-62c8-460a-be33-4481134cd8cf",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C32",
+      "claim": "When considering only SNPs that are genome-wide significant in males, many traits show a much larger proportion of effects that would be better estimated by the GxE model.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when considering only SNPs that are genome-wide significant in males (marginal p-value <5\u00d710\u22128 in males), many traits show a much larger proportion of effects that would be better estimated by the GxE model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "cfcffef9-d19d-4d94-80c5-7c83bf677050",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C33",
+      "claim": "For testosterone, all genome-wide significant SNPs are expected to be better estimated by the GxE model.",
+      "claim_type": "EXPLICIT",
+      "source": "At an extreme, for testosterone, all genome-wide significant SNPs are expected to be better estimated by the GxE model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of UK Biobank data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "6f6dadac-6272-4a17-94e4-c75a495bca06",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C34",
+      "claim": "A large fraction of genome-wide significant effects are better estimated with the GxE model for creatinine (62%), arm fat-free mass (24%), waist-to-hip ratio (19%), and SHBG (18%).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, a large fraction of genome-wide significant effects are better estimated with the GxE model for creatinine (62%), arm fat-free mass (24%), waist-to-hip ratio (19%), and SHBG (18%) as well (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' analysis of UK Biobank data, shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "74b34032-78f1-4eb5-b77e-4d509fd0ec5b",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C35",
+      "claim": "Genetic variance in complex traits is often dominated by the contribution of numerous variants of small effects that are best understood when analyzed jointly.",
+      "claim_type": "EXPLICIT",
+      "source": "At the single variant level, and specifically when variants are considered independently from one another, we have discussed how the accurate estimation of allelic effects can be boiled down to a bias-variance trade-off. For complex traits, genetic variance is often dominated by the contribution of numerous variants of small effects that are best understood when analyzed jointly (Sella and Barton, 2019; Sinnott-Armstrong et al., 2021; Shi et al., 2016; Boyle et al., 2017; Liu et al., 2019; Wray et al., 2018; Yengo et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "1325ace5-dbaf-4364-8afe-71d018a86611",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C36",
+      "claim": "To evaluate context dependence in complex traits, we should jointly consider polygenic patterns, rather than just the patterns at the loci most strongly associated with a trait.",
+      "claim_type": "EXPLICIT",
+      "source": "It stands to reason that to evaluate context dependence in complex traits, we would also want to jointly consider polygenic patterns, rather than just the patterns at the loci most strongly associated with a trait (Urbut et al., 2019; Gibson and Lacek, 2020; Zhang et al., 2021; Paaby and Gibson, 2016; Aschard et al., 2017; Des Marais et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument made by the authors, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "7a46f33d-e8c4-4155-9c26-54df0735ad81",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C37",
+      "claim": "Amplification is a common mode of GxSex across complex physiological traits.",
+      "claim_type": "EXPLICIT",
+      "source": "One pattern that emerged as a common mode of GxSex across complex physiological traits is 'amplification': a systematic difference in the magnitude of genetic effects between the sexes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "d6160804-c4fb-43eb-b572-b4d33a9c16d6",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C38",
+      "claim": "Amplification can happen if many variants regulate a shared pathway that is moderated by a factor that varies in its distribution among contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Moving beyond sex and considering any context, amplification can happen if, for example, many variants regulate a shared pathway that is moderated by a factor\u2014and that factor varies in its distribution among contexts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic explanation proposed by the authors.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "0b47e9aa-a3cb-482f-930d-5323ded5518b",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C39",
+      "claim": "Characterizing polygenic trends by summarizing many independent hypothesis tests may miss GxE signals that are subtle and statistically undetectable at each individual variant, yet pervasive and substantial cumulatively across the genome.",
+      "claim_type": "EXPLICIT",
+      "source": "Characterizing polygenic trends by summarizing many independent hypothesis tests may miss GxE signals that are subtle and statistically undetectable at each individual variant, yet pervasive and substantial cumulatively across the genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical consideration about the limitations of certain analytical approaches.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "95d28fed-1547-4e05-87aa-309f6d803949",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C40",
+      "claim": "The heritability of complex traits is thought to be due to the contribution of many small (typically sub-significant) effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Much like the heritability of complex traits is thought to be due to the contribution of many small (typically sub-significant) effects (Boyle et al., 2017; Sinnott-Armstrong et al., 2021), when GxE is pervasive we may expect that the sum of many small differences in context-specific effects accounts for the majority of GxE variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "75970dd4-fb4f-4a07-9ae6-c0aaaf15b777",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C41",
+      "claim": "When GxE is pervasive, the sum of many small differences in context-specific effects may account for the majority of GxE variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Much like the heritability of complex traits is thought to be due to the contribution of many small (typically sub-significant) effects (Boyle et al., 2017; Sinnott-Armstrong et al., 2021), when GxE is pervasive we may expect that the sum of many small differences in context-specific effects accounts for the majority of GxE variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction made by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "cc3657ec-22e1-494a-a939-a7fa3bed0112",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C42",
+      "claim": "Pallares et al. tracked caged fly populations given one of two diets: a 'control' diet and a 'high-sugar' diet.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, Pallares et al. tracked caged fly populations given one of two diets: a 'control' diet and a 'high-sugar' diet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design of Pallares et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "4721c571-ad5b-40df-97a5-a84dee72273c",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C43",
+      "claim": "Pallares et al. tested for association between alleles and survival to a sampling point across 271K single nucleotide variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Across 271K single nucleotide variants, the authors tested for association between alleles and their survival to a sampling point (thought of as a proxy for 'lifespan' or 'longevity') under each diet independently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the analytical approach of Pallares et al.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "65a447a7-bb9b-4064-9fff-9e491776920b",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C44",
+      "claim": "Of the variants Pallares et al. classified as having an effect, approximately 31% were high-sugar specific, while the remaining 69% of the variants were shared.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, of the variants Pallares et al. classified as having an effect (one-hundredth of variants tested), approximately 31% were high-sugar specific, while the remaining 69% of the variants were shared.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Pallares et al. as reported by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "37f2ce8e-ed39-47d6-a522-55e377f00bc0",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C45",
+      "claim": "Fewer than 1% of variants classified by Pallares et al. were labeled as having control-specific effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer than 1% were labeled as having control-specific effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from Pallares et al. as reported by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "d1d03067-8624-40eb-b13e-61f2bba8abe6",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C46",
+      "claim": "Pallares et al. concluded that high-sugar-specific effects on longevity are pervasive, compatible with the hypothesis of widespread cryptic genetic variation for longevity.",
+      "claim_type": "EXPLICIT",
+      "source": "They concluded that high-sugar-specific effects on longevity are pervasive, compatible with the hypothesis of widespread cryptic genetic variation for longevity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the conclusion of Pallares et al. as reported by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "930f30dc-360f-45f3-aedf-0938fcbd7448",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C47",
+      "claim": "A generative model of pervasive amplification yields results that are highly similar to those observed by Pallares et al.",
+      "claim_type": "EXPLICIT",
+      "source": "We next show that a generative model that differs qualitatively from the cryptic genetic variation model yields results that are highly similar to those observed by Pallares et al.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated through the authors' simulations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "3e0d13aa-3d51-4f4a-9e28-d49e1974021f",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C48",
+      "claim": "In the authors' simulation of pervasive amplification, approximately 36% of significant variants were classified as specific to the high-sugar diet, comparable to the 31% of variants classified as high-sugar specific in the experimental data.",
+      "claim_type": "EXPLICIT",
+      "source": "The similarity of ascertained variants further highlights caveats of interpretation based on the classification of 'top hits': despite the fact that we did not simulate any variants that only have an effect under the high-sugar diet, approximately 36% of significant variants were classified as specific to the high-sugar diet (green points in Figure 4D), comparable to the 31% of variants classified as high-sugar specific in the experimental data (Figure 4C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' simulations, shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "a29dcb41-5cfc-40da-9976-338320004983",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C49",
+      "claim": "Every variant in the shared category in the authors' simulation has a larger effect in the high-sugar diet than in the control diet.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, every variant in the shared category (blue points in Figure 4D) in fact has a larger effect in the high-sugar diet than in the control diet, which cannot be captured by the classification system itself but represents the only mode of GxE in our simulation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' simulations, shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "2de2f069-8e69-45a9-8bf0-bf2b085dff25",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C50",
+      "claim": "A reanalysis of the Pallares et al. data based on estimating the covariance of allelic effects is directly consistent with pervasive amplification.",
+      "claim_type": "EXPLICIT",
+      "source": "In Appendix 1, we show that a reanalysis of the Pallares et al. data that is based on estimating the covariance of allelic effects is directly consistent with pervasive amplification as well (Appendix 1\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' reanalysis, shown in Appendix 1\u2014figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "ddf053a9-013a-49db-9ad3-88cfdf5a5bb4",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C51",
+      "claim": "The classification of 'top hits' alone may not be representative of the extent of GxE nor of the most pervasive modes of GxE.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, the classification of 'top hits' alone may not be representative of the extent of GxE nor of the most pervasive modes of GxE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from their simulations and reanalysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "f387d302-7aad-47d5-bc16-2b8ca9b6ebeb",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C52",
+      "claim": "Modeling context dependency of genetic effects may hold the potential for constructing polygenic scores that are more accurate or improve their portability across contexts.",
+      "claim_type": "EXPLICIT",
+      "source": "Modeling context dependency of genetic effects may hold the potential for constructing polygenic scores that are more accurate or improve their portability across contexts (Patel et al., 2022; Miao et al., 2022; Turley et al., 2018; Spence et al., 2022; Wang et al., 2024; Smith et al., 2025).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "895f0563-14e7-45c1-ad4f-a9adb002ce0c",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C53",
+      "claim": "Evidence for the utility of GxE models in polygenic score prediction has been underwhelming and GxE models are still rarely applied.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence for the utility of GxE models in polygenic score prediction, however, has been underwhelming and GxE models are still rarely applied (Zhu et al., 2023; Schwaba et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "bed4fb1b-e7f6-4379-b3a5-a9c1f0017473",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C54",
+      "claim": "If context-specific effects are similar, additive models will tend to outperform GxE models for polygenic scoring.",
+      "claim_type": "EXPLICIT",
+      "source": "If context-specific effects are similar\u2014a likely possibility for highly polygenic traits with the majority of heritability owing to small causal effects\u2014then additive models will tend to outperform (Fisher, 1930; Falconer and Mackay, 1996; Hill et al., 2008; Young, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior research and theoretical considerations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "a3c48625-9bca-4c6e-bc60-a06bc18f5dd7",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C55",
+      "claim": "The unbiasedness of GxE estimation does not make up for the cost of additional estimator variance, resulting from sample stratification by context or the addition of explicit interaction terms.",
+      "claim_type": "EXPLICIT",
+      "source": "This is because the unbiasedness of GxE estimation does not make up for the cost of additional estimator variance, resulting from sample stratification by context or the addition of explicit interaction terms (Schwaba et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and is a theoretical consideration.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "681e65a9-c816-42d8-963b-606ddcc7b5a0",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C56",
+      "claim": "Even in settings with pervasive GxE, additive polygenic scores outperformed context-specific scores in the authors' simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Even in settings with pervasive GxE, additive polygenic scores (red lines in Figure 5) outperformed context-specific scores (green lines in Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' simulations, shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "43b43011-fa1e-451a-8163-b51b129cb085",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C57",
+      "claim": "The advantage of the additive model is manifested in two ways: more accurate estimation and better identification of true associations with the trait.",
+      "claim_type": "EXPLICIT",
+      "source": "The advantage of the additive model is manifested in two ways: more accurate estimation, as discussed above, but also better identification of true associations with the trait.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "d0960b0a-ac0b-4ea2-8dd4-62675e7eb291",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C58",
+      "claim": "In the authors' simulations, in the presence of substantial amplification, the polygenic adaptive shrinkage approach outperformed all other methods as long as the study was adequately powered.",
+      "claim_type": "EXPLICIT",
+      "source": "In our simulations, in the presence of substantial amplification, the polygenic adaptive shrinkage approach outperformed all other methods as long as the study was adequately powered (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' simulations, shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "a1e72f8c-3bf5-4e11-aef0-5d07f3d547c5",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C59",
+      "claim": "The polygenic adaptive shrinkage approach has the unique ability to leverage the sharing of signals across variants, including the extent and nature of context dependency.",
+      "claim_type": "EXPLICIT",
+      "source": "This is thanks to the unique ability (compared to the three other approaches) to leverage the sharing of signals across variants, including the extent and nature of context dependency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the performance of the polygenic adaptive shrinkage approach.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "8ce0d12d-7a9a-4c0d-8138-2339348dd42d",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C60",
+      "claim": "With low power, the additive model performed best in the authors' simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "With low power, however, the additive model performed best (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' simulations, shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "d9afb20a-2658-49a2-bb18-3bb475d33b8d",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C61",
+      "claim": "The variance cost associated with the polygenic adaptive shrinkage approach is driven by the estimation of additional parameters for capturing the genome-wide covariance relationships.",
+      "claim_type": "EXPLICIT",
+      "source": "We attribute this to the variance cost associated with the polygenic adaptive shrinkage approach\u2014driven by the estimation of additional parameters for capturing the genome-wide covariance relationships.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an explanation for the performance of the polygenic adaptive shrinkage approach in low power settings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "901afadd-a350-4c73-af06-face0d48db9e",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C62",
+      "claim": "When genetic variants are considered independently, the estimation of their effects in different contexts can be boiled down to a bias-variance trade-off.",
+      "claim_type": "EXPLICIT",
+      "source": "When genetic variants are considered independently, the estimation of their effects in different contexts can be boiled down to a bias-variance trade-off.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from their theoretical analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "6d60d070-0ba4-4039-8aca-76400761469e",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C63",
+      "claim": "Considering polygenic patterns of GxE can be key for understanding context-dependent genetic architecture and to aid in prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "For complex traits, we show through example that further considering polygenic patterns of GxE can be key for understanding context-dependent genetic architecture and to aid in prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn by the authors from their analyses and simulations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "7ac2b39d-434f-4161-b6d7-a30d4d7beafc",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "claim_id": "C64",
+      "claim": "Complex trait analyses should combine observations at top associated loci alongside polygenic trends.",
+      "claim_type": "EXPLICIT",
+      "source": "The notion that complex trait analyses should combine observations at top associated loci alongside polygenic trends has gained traction with additive models of trait variation; it may be similarly important in our understanding of context dependency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an argument made by the authors based on their findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors derive a decision rule for choosing between additive and GxE models for estimating allelic effects, framing the problem as a bias-variance trade-off. The rule weighs increased estimation noise when context is considered against potential bias when context dependency is ignored, with the trade-off closely related to the signal-to-noise ratio.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C20-C22, C24, and C26 collectively establish the theoretical framework and mathematical derivation of the decision rule. The mathematical derivations are presented in detail in the Methods section, the conceptual framework is clearly articulated, and the bias-variance decomposition follows from standard OLS theory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "2486c10d-b9b9-4355-b23f-929044ea7648",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "In UK Biobank data examining GxSex effects on physiological traits, the authors find that for most traits, very few allelic effects (0-0.1%) are better estimated using sex-specific models. Notable exceptions include testosterone, SHBG, and waist-to-hip ratio (0.5% of effects better estimated with GxE). However, among genome-wide significant SNPs, a much larger proportion of effects favor GxE estimation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C23, C29-C34 present empirical findings from UK Biobank analysis with specific quantitative results. The analysis applies the derived decision rule to real data, and the findings are illustrated in Figure 3. The data-splitting validation approach (Appendix 1\u2014figure 1) supports the accuracy of the decision rule application.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors demonstrate that a generative model of pervasive amplification (where all effects are 1.4\u00d7 larger in one context) produces patterns highly similar to those observed by Pallares et al. in their GxDiet study of fly longevity, despite Pallares et al. concluding evidence for cryptic genetic variation. This shows that classification of 'top hits' alone may not accurately represent the extent or mode of GxE.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C51 present a reanalysis and simulation study that challenges the interpretation of prior work. The simulation results (Figure 4) closely match the empirical patterns from Pallares et al., and the reanalysis based on covariance estimation (Appendix 1\u2014figure 4) provides additional support. This demonstrates how different generative models can produce similar patterns when analyzed through significance-based classification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In simulations of polygenic traits with pervasive amplification, additive polygenic scores generally outperformed context-specific scores due to the variance cost of stratification. However, with adequate power, a polygenic adaptive shrinkage approach (mash) that leverages genome-wide covariance patterns outperformed all other methods, though it performed poorly with low power.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C61 present simulation results (Figure 5) comparing multiple approaches for polygenic score construction. The findings are internally consistent and demonstrate the conditions under which different methods perform best. The simulations are well-described in the Methods section with clear parameters and evaluation metrics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "7802ded5-7b29-4d20-87ae-1f76859aad1b",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "For complex traits, jointly considering context dependency across many variants can mitigate both noise and bias, potentially improving both estimation and trait prediction. This contrasts with single-variant approaches where the variance cost typically outweighs bias reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C8, C18, C35-C36, and C63-C64 present the key conceptual argument about polygenic GxE. This is supported by the simulation results showing improved performance of polygenic adaptive shrinkage methods under appropriate conditions, and by the reanalysis of the Pallares et al. data demonstrating the limitations of single-variant approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "325f9032-9954-4edf-8698-ddac65babfa6",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Analyses based on independently ascertained 'top hits' can be misleading, as they may miss GxE signals that are subtle at individual variants but pervasive and substantial across the genome. Considering polygenic patterns of GxE can improve interpretation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C19, C39-C41 are supported by the Pallares et al. reanalysis (Figure 4) and the theoretical arguments about polygenic architecture. The demonstration that pervasive amplification can produce patterns similar to those interpreted as cryptic genetic variation provides concrete evidence for this claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "7f63535e-2155-4796-acf1-bd73e1528d25",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The manuscript establishes the background context that genetic effects may depend on context, but it remains unclear whether GxE models merit use over additive models in GWAS. While GxE is common in tractable experimental systems, few cases exist where GxE models explain human GWAS data better than additive models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C11-C17 establish the background and motivation for the study. These are well-supported by citations to prior literature and represent established knowledge in the field. The claims accurately characterize the current state of understanding regarding GxE in GWAS.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "49186d66-d54f-4557-8119-5cab704298d3",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Amplification\u2014a systematic difference in the magnitude of genetic effects between contexts\u2014is a common mode of GxSex across complex physiological traits, potentially arising when variants regulate a shared pathway moderated by a factor that varies across contexts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 describe a pattern from the authors' prior work and propose a mechanistic explanation. C37 is supported by citation to prior work (Zhu et al., 2023), and C38 provides a plausible mechanistic explanation that is used as the basis for simulations in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "ccede067-a56d-4866-ae6b-0fbbb939f431",
+      "content_id": "abc019aa-2b3d-43da-9af3-ad463746af35",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "When genetic variants are considered independently, the estimation of their effects in different contexts can be boiled down to a bias-variance trade-off.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 summarizes the main theoretical conclusion from the single-variant analysis. This is well-supported by the mathematical derivations and empirical demonstrations throughout the manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors propose a theoretical framework treating GxE model utility as a bias-variance tradeoff, deriving a decision rule that weighs increased estimation noise when context is considered against potential bias when context dependency is ignored.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly affirm this contribution. Reviewer 1 states the authors 'quantify this trade-off in a way that is both mathematically precise and conveys the above intuition very clearly,' and Reviewer 2 describes the framework as 'a truly novel view.' The theoretical analysis is praised as clear and convincing.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "b55c0ccf-33ee-4db8-8cf5-19085f4fa128",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Analysis of UK Biobank data shows that for most traits, very few allelic effects (0-0.1%) are better estimated using sex-specific models, though exceptions exist for testosterone, SHBG, and waist-to-hip ratio (~0.5%). Among genome-wide significant SNPs, larger proportions favor GxE models, with testosterone showing 100% and creatinine 62%.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these empirical findings from UK Biobank. Reviewer 1 notes the authors 'argue on its basis that, when allelic effects are small (as in highly polygenic traits), single-locus tests for GxE may be substantially underpowered,' accepting the empirical demonstration. The findings are treated as valid evidence for the bias-variance tradeoff framework.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "b0ab26f4-827a-408a-968b-43460096d329",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors argue that joint consideration of context dependency across many variants mitigates both noise and bias, such that polygenic GxE models can improve both estimation and trait prediction, and that polygenic patterns should be considered rather than just top hits.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states 'The parsimony of the amplification model allows for powerful detection of GxE in scenarios in which it pertains, as the authors show via simulation.' Reviewer 2 affirms the authors 'convincingly show that greater statistical power can be achieved in detecting GxE if an underlying model of polygenic GxE is assumed.' Both reviewers accept this core argument.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "ef680520-97fa-425e-a455-20180703e465",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Reanalysis of Pallares et al. Drosophila longevity data demonstrates that a polygenic amplification model can parsimoniously explain patterns previously interpreted as cryptic genetic variation. Simulations show ~36% of variants classified as diet-specific despite all variants having effects in both diets (amplified in high-sugar), matching the 31% in experimental data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'The authors show, via re-analysis of an existing dataset in Drosophila, that a polygenic 'amplification' model can parsimoniously explain patterns of differential genetic effects across environments.' Both reviewers accept this as an 'important further demonstration of the plausibility of the amplification model' without challenging the reanalysis or simulation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "cc83f658-f06a-474a-bf1e-1134f354bac5",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors demonstrate that analyses based on independently ascertained 'top hits' alone can be misleading, and that conventional approaches focusing on most significant associations may lead to erroneous conclusions about GxE patterns.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges the authors demonstrate how 'the classification of 'top hits' alone may not be representative of the extent of GxE nor of the most pervasive modes of GxE.' This finding is accepted as part of the paper's contribution showing the importance of polygenic approaches over single-variant focus.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Simulations show that in low-power settings, additive models outperform context-specific and GxE models for polygenic prediction. However, with adequate power and substantial amplification, polygenic adaptive shrinkage approaches that leverage sharing of signals across variants outperform all other methods including additive models.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these simulation results without challenge. Reviewer 2 notes the 'polygenic amplification model' shows 'fundamental promise for the detection of GxE in genomic datasets,' implicitly accepting the simulation findings. Reviewer 1 states the paper is 'now more clearly written' after revisions, suggesting acceptance of the presented results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "84d31bb7-4413-4fe9-827e-6d6cd926c8f5",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors establish the context that GxE is common in model organisms with manipulable environments, but few cases exist where GxE models explain human GWAS data better than additive models.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers accept this framing. Reviewer 1 states 'Experiments in model organisms have revealed that the effects of genes on heritable traits are often mediated by environmental factors' but 'In human genetics, however...limited evidence has been found for pervasive GxE interactions.' This background claim is not disputed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "0e7dd207-d3da-48a2-a762-27471341ab87",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Background claims establishing that genetic effects may depend on context, that GWAS typically estimate marginal additive effects, and that complex traits involve numerous small-effect variants, with uncertainty about whether GxE models are warranted.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are standard background claims in the field that reviewers do not question. They serve as the foundation for the paper's contribution and are treated as accepted knowledge by both reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "e166f637-8455-46a3-a4e2-c8f85ac32fd5",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Mathematical derivations showing the GxE estimator is unbiased, weights in the additive estimator are proportional to sample size times heterozygosity, and heterozygosity is similar across sexes for autosomal variants.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 praises the mathematical precision, stating the authors 'quantify this trade-off in a way that is both mathematically precise.' These technical details supporting the bias-variance framework are implicitly accepted through the reviewers' endorsement of the overall theoretical contribution.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "b637c584-7d3a-4b8d-811d-99292c8c0628",
+      "content_id": "802010ba-cc37-49bf-926b-908223b86ebc",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors draw an analogy that just as heritability is due to many small effects, when GxE is pervasive, the sum of many small differences in context-specific effects may account for the majority of GxE variation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This theoretical prediction is part of the polygenic GxE framework that reviewers endorse. Reviewer 2 states the 'polygenic amplification model is a truly novel view,' accepting the conceptual framework including this reasoning about cumulative small effects.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "3e466a09-e454-46d1-a18e-78aeef418828",
+      "result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc"
+    },
+    {
+      "claim_id": "c7f37a80-1ed4-46e7-ad90-6ed0d590074b",
+      "result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc"
+    },
+    {
+      "claim_id": "196c2768-ce40-472f-959b-3b1123d1b327",
+      "result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc"
+    },
+    {
+      "claim_id": "cf0eb9a4-fc30-4e6f-9100-75f1fbabf95e",
+      "result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc"
+    },
+    {
+      "claim_id": "9e0e264f-d98b-4ed6-9c20-7985543f06b8",
+      "result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc"
+    },
+    {
+      "claim_id": "c88276f0-a488-4130-9f7b-412fb68494c1",
+      "result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc"
+    },
+    {
+      "claim_id": "a0b0287e-b4af-41b8-b846-8bfeb18b59aa",
+      "result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc"
+    },
+    {
+      "claim_id": "44ff6a15-048d-4ab5-b41d-64b6fc3d3ff0",
+      "result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc"
+    },
+    {
+      "claim_id": "c0fdbe8c-85a1-4a31-8e78-4354aa8d3309",
+      "result_id": "2486c10d-b9b9-4355-b23f-929044ea7648"
+    },
+    {
+      "claim_id": "2ef02cfc-4090-412b-8fa5-7327c0ad4b14",
+      "result_id": "2486c10d-b9b9-4355-b23f-929044ea7648"
+    },
+    {
+      "claim_id": "9bd90f89-7dfd-4c7d-8c25-018011404bd4",
+      "result_id": "2486c10d-b9b9-4355-b23f-929044ea7648"
+    },
+    {
+      "claim_id": "df99b165-4c17-4960-a4ab-3d8b09a5a4d4",
+      "result_id": "2486c10d-b9b9-4355-b23f-929044ea7648"
+    },
+    {
+      "claim_id": "ace87d9b-d3cb-4ad8-bc6b-d15f9ee62289",
+      "result_id": "2486c10d-b9b9-4355-b23f-929044ea7648"
+    },
+    {
+      "claim_id": "393d9bf2-62c8-460a-be33-4481134cd8cf",
+      "result_id": "2486c10d-b9b9-4355-b23f-929044ea7648"
+    },
+    {
+      "claim_id": "cfcffef9-d19d-4d94-80c5-7c83bf677050",
+      "result_id": "2486c10d-b9b9-4355-b23f-929044ea7648"
+    },
+    {
+      "claim_id": "6f6dadac-6272-4a17-94e4-c75a495bca06",
+      "result_id": "2486c10d-b9b9-4355-b23f-929044ea7648"
+    },
+    {
+      "claim_id": "cc3657ec-22e1-494a-a939-a7fa3bed0112",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "4721c571-ad5b-40df-97a5-a84dee72273c",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "65a447a7-bb9b-4064-9fff-9e491776920b",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "37f2ce8e-ed39-47d6-a522-55e377f00bc0",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "d1d03067-8624-40eb-b13e-61f2bba8abe6",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "930f30dc-360f-45f3-aedf-0938fcbd7448",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "3e0d13aa-3d51-4f4a-9e28-d49e1974021f",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "a29dcb41-5cfc-40da-9976-338320004983",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "2de2f069-8e69-45a9-8bf0-bf2b085dff25",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "ddf053a9-013a-49db-9ad3-88cfdf5a5bb4",
+      "result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19"
+    },
+    {
+      "claim_id": "f387d302-7aad-47d5-bc16-2b8ca9b6ebeb",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "895f0563-14e7-45c1-ad4f-a9adb002ce0c",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "bed4fb1b-e7f6-4379-b3a5-a9c1f0017473",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "a3c48625-9bca-4c6e-bc60-a06bc18f5dd7",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "681e65a9-c816-42d8-963b-606ddcc7b5a0",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "43b43011-fa1e-451a-8163-b51b129cb085",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "d0960b0a-ac0b-4ea2-8dd4-62675e7eb291",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "a1e72f8c-3bf5-4e11-aef0-5d07f3d547c5",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "8ce0d12d-7a9a-4c0d-8138-2339348dd42d",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "d9afb20a-2658-49a2-bb18-3bb475d33b8d",
+      "result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c"
+    },
+    {
+      "claim_id": "0fadc94b-2676-405b-bf63-8c47f2ecce0b",
+      "result_id": "7802ded5-7b29-4d20-87ae-1f76859aad1b"
+    },
+    {
+      "claim_id": "05f36f89-5142-4c2f-a0a3-eab81805f85b",
+      "result_id": "7802ded5-7b29-4d20-87ae-1f76859aad1b"
+    },
+    {
+      "claim_id": "87da6279-f16a-4edc-990b-2873d1c48b7c",
+      "result_id": "7802ded5-7b29-4d20-87ae-1f76859aad1b"
+    },
+    {
+      "claim_id": "74b34032-78f1-4eb5-b77e-4d509fd0ec5b",
+      "result_id": "7802ded5-7b29-4d20-87ae-1f76859aad1b"
+    },
+    {
+      "claim_id": "1325ace5-dbaf-4364-8afe-71d018a86611",
+      "result_id": "7802ded5-7b29-4d20-87ae-1f76859aad1b"
+    },
+    {
+      "claim_id": "6d60d070-0ba4-4039-8aca-76400761469e",
+      "result_id": "7802ded5-7b29-4d20-87ae-1f76859aad1b"
+    },
+    {
+      "claim_id": "7ac2b39d-434f-4161-b6d7-a30d4d7beafc",
+      "result_id": "7802ded5-7b29-4d20-87ae-1f76859aad1b"
+    },
+    {
+      "claim_id": "48db262c-c4d9-4223-91a3-deeb1d089bde",
+      "result_id": "325f9032-9954-4edf-8698-ddac65babfa6"
+    },
+    {
+      "claim_id": "4afc9c33-2626-4d61-aada-d8b7fb22609e",
+      "result_id": "325f9032-9954-4edf-8698-ddac65babfa6"
+    },
+    {
+      "claim_id": "d76d5a82-e3ed-4828-9d1a-ca61c1efc85e",
+      "result_id": "325f9032-9954-4edf-8698-ddac65babfa6"
+    },
+    {
+      "claim_id": "0b47e9aa-a3cb-482f-930d-5323ded5518b",
+      "result_id": "325f9032-9954-4edf-8698-ddac65babfa6"
+    },
+    {
+      "claim_id": "95d28fed-1547-4e05-87aa-309f6d803949",
+      "result_id": "325f9032-9954-4edf-8698-ddac65babfa6"
+    },
+    {
+      "claim_id": "75970dd4-fb4f-4a07-9ae6-c0aaaf15b777",
+      "result_id": "325f9032-9954-4edf-8698-ddac65babfa6"
+    },
+    {
+      "claim_id": "8b063f92-e616-43c7-9751-c2158b855c85",
+      "result_id": "7f63535e-2155-4796-acf1-bd73e1528d25"
+    },
+    {
+      "claim_id": "95bc7ac9-8683-438d-8c8d-b9f76cc09bf3",
+      "result_id": "7f63535e-2155-4796-acf1-bd73e1528d25"
+    },
+    {
+      "claim_id": "77064dcc-6025-4808-92b0-bc8e02264a2c",
+      "result_id": "7f63535e-2155-4796-acf1-bd73e1528d25"
+    },
+    {
+      "claim_id": "6ad14633-a36d-4f12-abfc-6d90f6a0ba9d",
+      "result_id": "7f63535e-2155-4796-acf1-bd73e1528d25"
+    },
+    {
+      "claim_id": "0dd4e090-a200-4c7b-a9e2-67e689d3b169",
+      "result_id": "7f63535e-2155-4796-acf1-bd73e1528d25"
+    },
+    {
+      "claim_id": "ccf991cf-2e96-497c-b400-bae36c10e254",
+      "result_id": "7f63535e-2155-4796-acf1-bd73e1528d25"
+    },
+    {
+      "claim_id": "4fdfbb40-0d92-4aef-8606-7e9c68f74857",
+      "result_id": "7f63535e-2155-4796-acf1-bd73e1528d25"
+    },
+    {
+      "claim_id": "505aa6cb-c226-4d1a-8860-6a16613d9266",
+      "result_id": "7f63535e-2155-4796-acf1-bd73e1528d25"
+    },
+    {
+      "claim_id": "110b0026-11c5-4340-a9ac-7732bc5f5641",
+      "result_id": "7f63535e-2155-4796-acf1-bd73e1528d25"
+    },
+    {
+      "claim_id": "7a46f33d-e8c4-4155-9c26-54df0735ad81",
+      "result_id": "49186d66-d54f-4557-8119-5cab704298d3"
+    },
+    {
+      "claim_id": "d6160804-c4fb-43eb-b572-b4d33a9c16d6",
+      "result_id": "49186d66-d54f-4557-8119-5cab704298d3"
+    },
+    {
+      "claim_id": "901afadd-a350-4c73-af06-face0d48db9e",
+      "result_id": "ccede067-a56d-4866-ae6b-0fbbb939f431"
+    },
+    {
+      "claim_id": "3e466a09-e454-46d1-a18e-78aeef418828",
+      "result_id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb"
+    },
+    {
+      "claim_id": "c7f37a80-1ed4-46e7-ad90-6ed0d590074b",
+      "result_id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb"
+    },
+    {
+      "claim_id": "196c2768-ce40-472f-959b-3b1123d1b327",
+      "result_id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb"
+    },
+    {
+      "claim_id": "cf0eb9a4-fc30-4e6f-9100-75f1fbabf95e",
+      "result_id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb"
+    },
+    {
+      "claim_id": "9e0e264f-d98b-4ed6-9c20-7985543f06b8",
+      "result_id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb"
+    },
+    {
+      "claim_id": "c88276f0-a488-4130-9f7b-412fb68494c1",
+      "result_id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb"
+    },
+    {
+      "claim_id": "901afadd-a350-4c73-af06-face0d48db9e",
+      "result_id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb"
+    },
+    {
+      "claim_id": "c0fdbe8c-85a1-4a31-8e78-4354aa8d3309",
+      "result_id": "b55c0ccf-33ee-4db8-8cf5-19085f4fa128"
+    },
+    {
+      "claim_id": "2ef02cfc-4090-412b-8fa5-7327c0ad4b14",
+      "result_id": "b55c0ccf-33ee-4db8-8cf5-19085f4fa128"
+    },
+    {
+      "claim_id": "df99b165-4c17-4960-a4ab-3d8b09a5a4d4",
+      "result_id": "b55c0ccf-33ee-4db8-8cf5-19085f4fa128"
+    },
+    {
+      "claim_id": "ace87d9b-d3cb-4ad8-bc6b-d15f9ee62289",
+      "result_id": "b55c0ccf-33ee-4db8-8cf5-19085f4fa128"
+    },
+    {
+      "claim_id": "393d9bf2-62c8-460a-be33-4481134cd8cf",
+      "result_id": "b55c0ccf-33ee-4db8-8cf5-19085f4fa128"
+    },
+    {
+      "claim_id": "cfcffef9-d19d-4d94-80c5-7c83bf677050",
+      "result_id": "b55c0ccf-33ee-4db8-8cf5-19085f4fa128"
+    },
+    {
+      "claim_id": "6f6dadac-6272-4a17-94e4-c75a495bca06",
+      "result_id": "b55c0ccf-33ee-4db8-8cf5-19085f4fa128"
+    },
+    {
+      "claim_id": "0fadc94b-2676-405b-bf63-8c47f2ecce0b",
+      "result_id": "b0ab26f4-827a-408a-968b-43460096d329"
+    },
+    {
+      "claim_id": "05f36f89-5142-4c2f-a0a3-eab81805f85b",
+      "result_id": "b0ab26f4-827a-408a-968b-43460096d329"
+    },
+    {
+      "claim_id": "87da6279-f16a-4edc-990b-2873d1c48b7c",
+      "result_id": "b0ab26f4-827a-408a-968b-43460096d329"
+    },
+    {
+      "claim_id": "74b34032-78f1-4eb5-b77e-4d509fd0ec5b",
+      "result_id": "b0ab26f4-827a-408a-968b-43460096d329"
+    },
+    {
+      "claim_id": "1325ace5-dbaf-4364-8afe-71d018a86611",
+      "result_id": "b0ab26f4-827a-408a-968b-43460096d329"
+    },
+    {
+      "claim_id": "6d60d070-0ba4-4039-8aca-76400761469e",
+      "result_id": "b0ab26f4-827a-408a-968b-43460096d329"
+    },
+    {
+      "claim_id": "7ac2b39d-434f-4161-b6d7-a30d4d7beafc",
+      "result_id": "b0ab26f4-827a-408a-968b-43460096d329"
+    },
+    {
+      "claim_id": "7a46f33d-e8c4-4155-9c26-54df0735ad81",
+      "result_id": "ef680520-97fa-425e-a455-20180703e465"
+    },
+    {
+      "claim_id": "d6160804-c4fb-43eb-b572-b4d33a9c16d6",
+      "result_id": "ef680520-97fa-425e-a455-20180703e465"
+    },
+    {
+      "claim_id": "930f30dc-360f-45f3-aedf-0938fcbd7448",
+      "result_id": "ef680520-97fa-425e-a455-20180703e465"
+    },
+    {
+      "claim_id": "3e0d13aa-3d51-4f4a-9e28-d49e1974021f",
+      "result_id": "ef680520-97fa-425e-a455-20180703e465"
+    },
+    {
+      "claim_id": "a29dcb41-5cfc-40da-9976-338320004983",
+      "result_id": "ef680520-97fa-425e-a455-20180703e465"
+    },
+    {
+      "claim_id": "2de2f069-8e69-45a9-8bf0-bf2b085dff25",
+      "result_id": "ef680520-97fa-425e-a455-20180703e465"
+    },
+    {
+      "claim_id": "ddf053a9-013a-49db-9ad3-88cfdf5a5bb4",
+      "result_id": "ef680520-97fa-425e-a455-20180703e465"
+    },
+    {
+      "claim_id": "48db262c-c4d9-4223-91a3-deeb1d089bde",
+      "result_id": "cc83f658-f06a-474a-bf1e-1134f354bac5"
+    },
+    {
+      "claim_id": "4afc9c33-2626-4d61-aada-d8b7fb22609e",
+      "result_id": "cc83f658-f06a-474a-bf1e-1134f354bac5"
+    },
+    {
+      "claim_id": "d76d5a82-e3ed-4828-9d1a-ca61c1efc85e",
+      "result_id": "cc83f658-f06a-474a-bf1e-1134f354bac5"
+    },
+    {
+      "claim_id": "0b47e9aa-a3cb-482f-930d-5323ded5518b",
+      "result_id": "cc83f658-f06a-474a-bf1e-1134f354bac5"
+    },
+    {
+      "claim_id": "ddf053a9-013a-49db-9ad3-88cfdf5a5bb4",
+      "result_id": "cc83f658-f06a-474a-bf1e-1134f354bac5"
+    },
+    {
+      "claim_id": "f387d302-7aad-47d5-bc16-2b8ca9b6ebeb",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "895f0563-14e7-45c1-ad4f-a9adb002ce0c",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "bed4fb1b-e7f6-4379-b3a5-a9c1f0017473",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "a3c48625-9bca-4c6e-bc60-a06bc18f5dd7",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "681e65a9-c816-42d8-963b-606ddcc7b5a0",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "43b43011-fa1e-451a-8163-b51b129cb085",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "d0960b0a-ac0b-4ea2-8dd4-62675e7eb291",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "a1e72f8c-3bf5-4e11-aef0-5d07f3d547c5",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "8ce0d12d-7a9a-4c0d-8138-2339348dd42d",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "d9afb20a-2658-49a2-bb18-3bb475d33b8d",
+      "result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f"
+    },
+    {
+      "claim_id": "77064dcc-6025-4808-92b0-bc8e02264a2c",
+      "result_id": "84d31bb7-4413-4fe9-827e-6d6cd926c8f5"
+    },
+    {
+      "claim_id": "6ad14633-a36d-4f12-abfc-6d90f6a0ba9d",
+      "result_id": "84d31bb7-4413-4fe9-827e-6d6cd926c8f5"
+    },
+    {
+      "claim_id": "8b063f92-e616-43c7-9751-c2158b855c85",
+      "result_id": "0e7dd207-d3da-48a2-a762-27471341ab87"
+    },
+    {
+      "claim_id": "95bc7ac9-8683-438d-8c8d-b9f76cc09bf3",
+      "result_id": "0e7dd207-d3da-48a2-a762-27471341ab87"
+    },
+    {
+      "claim_id": "0dd4e090-a200-4c7b-a9e2-67e689d3b169",
+      "result_id": "0e7dd207-d3da-48a2-a762-27471341ab87"
+    },
+    {
+      "claim_id": "ccf991cf-2e96-497c-b400-bae36c10e254",
+      "result_id": "0e7dd207-d3da-48a2-a762-27471341ab87"
+    },
+    {
+      "claim_id": "4fdfbb40-0d92-4aef-8606-7e9c68f74857",
+      "result_id": "0e7dd207-d3da-48a2-a762-27471341ab87"
+    },
+    {
+      "claim_id": "505aa6cb-c226-4d1a-8860-6a16613d9266",
+      "result_id": "0e7dd207-d3da-48a2-a762-27471341ab87"
+    },
+    {
+      "claim_id": "110b0026-11c5-4340-a9ac-7732bc5f5641",
+      "result_id": "0e7dd207-d3da-48a2-a762-27471341ab87"
+    },
+    {
+      "claim_id": "a0b0287e-b4af-41b8-b846-8bfeb18b59aa",
+      "result_id": "e166f637-8455-46a3-a4e2-c8f85ac32fd5"
+    },
+    {
+      "claim_id": "44ff6a15-048d-4ab5-b41d-64b6fc3d3ff0",
+      "result_id": "e166f637-8455-46a3-a4e2-c8f85ac32fd5"
+    },
+    {
+      "claim_id": "9bd90f89-7dfd-4c7d-8c25-018011404bd4",
+      "result_id": "e166f637-8455-46a3-a4e2-c8f85ac32fd5"
+    },
+    {
+      "claim_id": "95d28fed-1547-4e05-87aa-309f6d803949",
+      "result_id": "b637c584-7d3a-4b8d-811d-99292c8c0628"
+    },
+    {
+      "claim_id": "75970dd4-fb4f-4a07-9ae6-c0aaaf15b777",
+      "result_id": "b637c584-7d3a-4b8d-811d-99292c8c0628"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "82ca9a4b-e172-4003-a17d-9fbb2ffbaed7",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "78279bf1-c17c-41d5-a191-1e0dfcb8987c",
+      "peer_result_id": "32d2a0ff-7a4f-49d5-9971-38ac8d470a4f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on simulation results (C52-C61) comparing polygenic score construction methods. Both evaluations support these findings without challenge, with peer reviewers accepting the demonstration of the polygenic amplification model's promise.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "f0253983-1be5-47be-afd6-befd83363bfe",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "7802ded5-7b29-4d20-87ae-1f76859aad1b",
+      "peer_result_id": "b0ab26f4-827a-408a-968b-43460096d329",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on the core conceptual argument about polygenic GxE (C7-C8, C18, C35-C36, C63-C64). Both evaluations strongly support this central thesis, with peer reviewers explicitly praising the demonstration of greater statistical power under polygenic GxE assumptions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "1af2d88f-1588-4638-9800-14849ac51db9",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2486c10d-b9b9-4355-b23f-929044ea7648",
+      "peer_result_id": "b55c0ccf-33ee-4db8-8cf5-19085f4fa128",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on UK Biobank empirical findings (C6, C23, C30-C34). OpenEval emphasizes quantitative results and validation approach, while peer reviewers accept these findings as valid evidence for the bias-variance tradeoff framework without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "038ef697-5aac-4819-9e41-1fec65defaf1",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "7f63535e-2155-4796-acf1-bd73e1528d25",
+      "peer_result_id": "0e7dd207-d3da-48a2-a762-27471341ab87",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on background and motivation claims (C1-C2, C11-C17). Both evaluations treat these as well-supported by literature and accepted knowledge in the field, establishing the foundation for the study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "fd267104-6855-4b90-8321-da7be00f7e4d",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc",
+      "peer_result_id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on theoretical framework and mathematical derivation (C3-C5, C20-C22). OpenEval emphasizes detailed mathematical derivations, while peer reviewers praise the mathematical precision and clarity. Peer review also includes C62 (main theoretical conclusion) which OpenEval evaluates separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "1eeab58a-83ff-4e33-b9ae-fca013eb1bb3",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "325f9032-9954-4edf-8698-ddac65babfa6",
+      "peer_result_id": "cc83f658-f06a-474a-bf1e-1134f354bac5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Good alignment on claims about limitations of single-variant approaches and polygenic architecture (C9-C10, C19, C39). Both support these claims, though OpenEval also includes C40-C41 which peer reviewers evaluate separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "3ab2eeef-8176-4541-9036-8571be443598",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "2cc918e0-9f2a-4b03-aa10-7837a98b8b19",
+      "peer_result_id": "ef680520-97fa-425e-a455-20180703e465",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial alignment on Pallares et al. reanalysis. OpenEval covers full simulation study (C42-C51), while peer review focuses on the demonstration that amplification model explains patterns (C37-C38, C47-C51). Both accept the reanalysis as valid evidence for the amplification model's plausibility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "536fbee4-ebd3-4022-8311-a3b46e84a9b2",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "49186d66-d54f-4557-8119-5cab704298d3",
+      "peer_result_id": "ef680520-97fa-425e-a455-20180703e465",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on amplification model mechanism (C37-C38). OpenEval evaluates these claims separately as describing prior work and mechanistic explanation, while peer reviewers group them with the Pallares reanalysis as part of demonstrating the amplification model's plausibility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "1dc8d024-dcbb-45cb-ab29-d5bc9eee09ad",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ccede067-a56d-4866-ae6b-0fbbb939f431",
+      "peer_result_id": "648e4c8e-308d-4b83-95aa-4bae0f4bc3eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on C62 (main theoretical conclusion). OpenEval evaluates this claim separately as a summary conclusion, while peer reviewers include it with the broader theoretical framework evaluation alongside C3-C5, C20-C22.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "601366b7-f42d-44a7-8899-a4ea6389bbb0",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "7df5d601-d8e5-4bd1-ab52-37a8171a4dfc",
+      "peer_result_id": "e166f637-8455-46a3-a4e2-c8f85ac32fd5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on technical mathematical details (C24, C26, C29). OpenEval groups these with the full theoretical framework, while peer reviewers evaluate them separately as supporting the bias-variance framework, implicitly accepting them through endorsement of the overall theoretical contribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "cf191c32-1851-4a87-9868-80c2cb8780e8",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "7f63535e-2155-4796-acf1-bd73e1528d25",
+      "peer_result_id": "84d31bb7-4413-4fe9-827e-6d6cd926c8f5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on specific background claims (C11-C12). OpenEval includes these in a broader background evaluation (C1-C2, C11-C17), while peer reviewers evaluate C11-C12 separately, accepting the framing about model organisms versus human genetics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    },
+    {
+      "id": "a3561b81-63ca-482e-a297-2ff4e5e77948",
+      "submission_id": "2a74dfc9-b54c-4bbe-8c14-65885aedeea7",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "325f9032-9954-4edf-8698-ddac65babfa6",
+      "peer_result_id": "b637c584-7d3a-4b8d-811d-99292c8c0628",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on theoretical predictions about cumulative effects (C40-C41). OpenEval groups these with broader claims about polygenic architecture, while peer reviewers evaluate them separately as part of the endorsed polygenic GxE framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:49:47.946921Z"
+    }
+  ]
+}

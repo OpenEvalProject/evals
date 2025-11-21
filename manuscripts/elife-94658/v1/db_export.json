@@ -1,0 +1,1637 @@
+{
+  "submission": {
+    "id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:24:43.391389Z",
+    "updated_at": "2025-11-21T22:24:43.391389Z"
+  },
+  "content": [
+    {
+      "id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "content_type": "manuscript",
+      "content_text": "# The T cell receptor \u03b2 chain repertoire of tumor infiltrating lymphocytes improves neoantigen prediction and prioritization\n\n## Authors\n\n- Thi Mong Quynh Pham<sup>1</sup> ([ORCID: 0000-0002-6977-6064](https://orcid.org/0000-0002-6977-6064))\n- Thanh Nhan Nguyen<sup>1</sup>\n- Bui Que Tran Nguyen<sup>1</sup>\n- Thi Phuong Diem Tran<sup>1</sup>\n- Nguyen My Diem Pham<sup>1</sup>\n- Hoang Thien Phuc Nguyen<sup>1</sup>\n- Thi Kim Cuong Ho<sup>1</sup>\n- Dinh Viet Linh Nguyen<sup>1</sup>\n- Huu Thinh Nguyen<sup>2</sup> ([ORCID: 0000-0002-0981-7274](https://orcid.org/0000-0002-0981-7274))\n- Duc Huy Tran<sup>2</sup>\n- Thanh Sang Tran<sup>2</sup>\n- Truong Vinh Ngoc Pham<sup>2</sup>\n- Minh Triet Le<sup>2</sup>\n- Thi Tuong Vy Nguyen<sup>1</sup> ([ORCID: 0000-0003-3436-3662](https://orcid.org/0000-0003-3436-3662))\n- Minh-Duy Phan<sup>1</sup>\n- Hoa Giang<sup>1</sup>\n- Hoai-Nghia Nguyen<sup>1</sup> \u2020\n- Le Son Tran<sup>1</sup> ([ORCID: 0000-0002-5382-3903](https://orcid.org/0000-0002-5382-3903)) \u2020\n\n### Affiliations\n\n1. Medical Genetics Institute Ho Chi Minh City Viet Nam\n2. University Medical Center Ho Chi Minh City Ho Chi Minh City Viet Nam\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn the realm of cancer immunotherapy, the meticulous selection of neoantigens plays a fundamental role in enhancing personalized treatments. Traditionally, this selection process has heavily relied on predicting the binding of peptides to human leukocyte antigens (pHLA). Nevertheless, this approach often overlooks the dynamic interaction between tumor cells and the immune system. In response to this limitation, we have developed an innovative prediction algorithm rooted in machine learning, integrating T cell receptor \u03b2 chain (TCR\u03b2) profiling data from colorectal cancer (CRC) patients for a more precise neoantigen prioritization. TCR\u03b2 sequencing was conducted to profile the TCR repertoire of tumor-infiltrating lymphocytes (TILs) from 28 CRC patients. The data unveiled both intra-tumor and inter-patient heterogeneity in the TCR\u03b2 repertoires of CRC patients, likely resulting from the stochastic utilization of V and J segments in response to neoantigens. Our novel combined model integrates pHLA binding information with pHLA-TCR binding to prioritize neoantigens, resulting in heightened specificity and sensitivity compared to models using individual features alone. The efficacy of our proposed model was corroborated through ELISpot assays on long peptides, performed on four CRC patients. These assays demonstrated that neoantigen candidates prioritized by our combined model outperformed predictions made by the established tool NetMHCpan. This comprehensive assessment underscores the significance of integrating pHLA binding with pHLA-TCR binding analysis for more effective immunotherapeutic strategies.\n\n## Introduction\n\nIn metastatic CRC patients, immunotherapy has fulfilled the promise of improving survival rate (Ganesh et al., 2019). Immune checkpoint inhibitors (ICIs), which block negative regulatory pathways in T-cell activation, have been approved by the US Food and Drug Administration (FDA) for the treatment of deficient mismatch repair (dMMR) or high microsatellite instability (MSI-H) CRC patients (Dudley et al., 2016; Le et al., 2015; Overman et al., 2017). However, there is an urgent need for alternative immunotherapy strategies for metastatic CRC patients, as patients with proficient mismatch repair (pMMR) or microsatellite stability (MSS) have not shown significant responses to immune checkpoint inhibitors (Dudley et al., 2016; Le et al., 2017).\n\nNeoantigens (neopeptides) have emerged as potential targets for personalized cancer immunotherapy, including CRC (Yu et al., 2022; Kim et al., 2020). Neoantigens are peptides that result from somatic mutations and can be displayed by class I human leukocyte antigen (HLA-I) molecules on the surface of cancer cells, thereby activating immune-mediated tumor killing (Blass and Ott, 2021). Recent studies have demonstrated that the presence of neoantigens is associated with better responses to immune checkpoint inhibitor (ICI) therapy in CRC patients (Miao et al., 2018; Yarchoan et al., 2017). A high neoantigen burden has been linked to improved overall survival and progression-free survival in patients with various solid tumors, including CRC (Miao et al., 2018; Yarchoan et al., 2017). Therefore, neoantigen-based immunotherapies are considered to have significant potential for improving treatment outcomes for CRC patients.\n\nThe successful development of neoantigen-based therapies hinges upon the identification of neoantigens that exhibit a strong binding affinity to their respective HLA-I molecules and demonstrate high immunogenicity. Initially, DNA sequencing of tumor tissues and paired Peripheral Blood Mononuclear Cells identifies cancer-associated genomic mutations. RNA sequencing then determines the patient\u2019s HLA-I allele profile and the gene expression levels of mutated genes. In silico tools are then applied to analyze the tumor somatic variant, HLA-I allele, and gene expression data, predicting the binding affinity of neoantigens to the patient\u2019s HLA-I alleles and their potential to activate T cell responses (Hundal et al., 2020; Chheda et al., 2018; Reynisson et al., 2020). This standard workflow has been successful in identifying clinically relevant neoantigens in various malignancies (Chheda et al., 2018; Schumacher and Schreiber, 2015).\n\nHowever, despite its achievements, the current approach\u2019s impact on patient outcomes remains limited due to the scarcity of mutations in cancer patients that lead to effective immunogenic neoantigens. This limitation arises primarily from the fact that the selection of neoantigen candidates by these workflows relies solely on neoantigen-HLA-I binding affinity as the criteria for immunogenicity prediction (Chen et al., 2021). While HLA-I binding is indeed a crucial factor for neoantigen presentation, it does not fully account for T cell receptor (TCR) recognition and interaction. The recognition of the neoantigen-HLA complex through TCR is of paramount importance for T cell activation and eliciting an immune response (Szeto et al., 2020; Guerder and Flavell, 1995). Various factors, such as the specific TCR repertoire, TCR clonality, and the structural characteristics of the TCR-peptide-HLA complex, profoundly influence TCR recognition. Unfortunately, these critical aspects are not entirely captured by HLA-I binding prediction alone.\n\nThe TCR is a critical component of the adaptive immune system, responsible for recognizing specific antigens presented by antigen-presenting cells (APCs). This membrane-bound heterodimer protein complex is expressed on the surface of T cells and exists in two distinct forms: TCR\u03b1/TCR\u03b2 for \u03b1\u03b2 T cells and TCR\u03b3/TCR\u03b4 for \u03b3\u03b4 T cells, both intricately associated with invariant CD3 chain molecules (Kuhns and Badgandi, 2012; Rast, 1997). TCR diversity arises from the recombination of variable (V), diversity (D), and joining (J) genes at the TCR\u03b2 and TCR\u03b4 loci, along with VJ recombination at the TCR\u03b1 and TCR\u03b3 loci (Rosati et al., 2017), giving rise to a broad array of unique TCRs collectively known as the TCR repertoire. The complementarity-determining region 3 (CDR3), situated at the junction of V, D, and J gene segments (Wucherpfennig et al., 2010), plays a pivotal role in antigen recognition, with the unique combination of CDR3 sequences contributing significantly to the specificity and diversity of the TCR repertoire. With advancements in technology, TCR sequencing has become a powerful technique used to characterize the diversity and composition of TCR repertoires. Valuable information directly obtained through TCR sequencing, including TCR clonotype diversity, V(D)J gene usage, repertoire size, clonal expansion, and repertoire changes, has provided invaluable insights into immune responses, antigen recognition, and the development of targeted immunotherapies.\n\nSequencing the TCRs of TILs or lymphocytes found in peripheral blood provides crucial insights into the T-cell repertoire and their responses against neoantigens associated with tumors (Porciello et al., 2022; Lu et al., 2021b; Mazzotti et al., 2022). This information holds paramount importance in identifying TCRs that specifically target these neoantigens. Additionally, it proves to be invaluable in assessing the immunogenic potential of predicted neoantigens. Unfortunately, the current bioinformatic workflows used in neoantigen selection and prioritization do not incorporate TCR sequencing data. Therefore, we speculate that integrating TCR sequencing data into the assessment of immunogenicity of predicted neoantigens holds promise for unveiling effective neoantigens which can induce immune response, consequently, advancing the development of personalized immunotherapies for cancer.\n\nTo achieve this goal, we first performed TCR sequencing on frozen samples collected from CRC patients to profile the TCR\u03b2 repertoire of tumor-filtrating T cells. We next exploited the peptide-HLA (pHLA) and pHLA-TCR binding affinity of peptides with known immunogenicity status from six public databases including 10 X Genomics (10x Genomics, 2024a; 10x Genomics, 2024b; 10x Genomics, 2024c; 10x Genomics, 2024d), McPAS (Tickotsky et al., 2017), PRIME (Schmidt et al., 2021), VDJdb (Shugay et al., 2018), IEDB (Vita et al., 2019), and TBAdb (Zhang et al., 2020) to develop a predictive algorithm. Subsequently, we employed this algorithm to predict and rank neoantigens by using the TCR\u03b2, HLA types, and mutation profiles identified from patients\u2019 frozen tumor tissues. Finally, we experimentally verified the efficacy of our model by measuring the immunogenicity of the ranked peptides by an ELISpot assay.\n\n## Results\n\n### The workflow of identifying neoantigens by combining both HLA and TCR binding characteristics\n\nThe identification of neoantigens has traditionally heavily relied on pHLA binding prediction while often neglecting the significance of pHLA-TCR interactions (Lu et al., 2021a). In this study, we introduce a novel workflow that integrates both pHLA and pHLA-TCR interactions to enhance the precision of neoantigen identification and prioritization (Figure 1). In the first step (Figure 1A), we conducted RNA and DNA sequencing on matched tumor tissues and peripheral blood mononuclear cells (PBMCs) collected from 28 CRC patients to detect cancer-associated nonsynonymous mutations and determine HLA types, as detailed in our previous work (Nguyen et al., 2023). Additionally, T-cell receptor sequencing (TCR-Seq) was performed to profile the TCR\u03b2 repertoire of TILs. In the second step (Figure 1B), we used the pVACseq and pMTNet tools to predict the binding affinities of both pHLA and pHLA-TCR interactions. To exploit the information of both pHLA and pHLA-TCR binding for selecting and ranking neoantigen candidates, we constructed a machine-learning model by using immunogenic and non-immunogenic peptide information sourced from six publicly available databases (Figure 1C). Finally, we designed long peptide (LP) candidates encompassing the selected neoantigens and experimentally assessed their immunogenicity using PBMCs obtained from the same patients (Figure 1D).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig1-v1.jpg)\n\n**Figure 1.:** (A) Tumor biopsies and peripheral blood from CRC patients were subjected to targeted DNA-seq, RNA-seq, and T cell receptor (TCR)-seq. (B) The prediction of peptide-human leukocyte antigen (HLA) binding and peptide-HLA-TCR binding by indicated tools using the DNA-seq, RNA-seq, and TCR-seq data was performed. (C) Machine learning models were subsequently constructed based on the analysis of the peptide-HLA binding and peptide-HLA-TCR binding features to distinguish immunogenic antigens from non-immunogenic peptides. (D) The immunogenicity of predicted neoantigen candidates prioritized by the model was validated by enzyme-linked immunospot (ELISpot) to evaluate the effectiveness of this approach.\n\n### Heterogenous tumor infiltrating TCR\u03b2 profiles in colorectal cancer patients\n\nAutologous TILs have exhibited varying reactivity levels to neoantigens, suggesting the potential of TIL-based recognition to improve the identification of immunogenic neoantigens (Chen et al., 2019). Furthermore, characterizing TCRs can complement efforts to predict immunogenicity. To explore this, we initiated our study by characterizing the TIL repertoire in a cohort of 28 colorectal cancer patients. This characterization involved sequencing the complementarity-determining region 3 (CDR3) of T-cell receptor beta (TCR\u03b2), renowned for its remarkable diversity within the TCR gene. Our sequencing analysis yielded an average of 2,992,949 productive TCR reads per sample, with a range between 256,035 and 10,888,726 (Supplementary file 1a), following correction for duplications, sequencing errors, and exclusive use of uniquely barcoded reads mapped to TCR\u03b2-CD3 sequences from the ImMunoGeneTics (IMGT) databases. Across the 28 patients, we observed variable numbers of TCR\u03b2-CDR3 clonotypes, ranging from 433 to 27,749 (Figure 2A, Supplementary file 2A, 28 patients were arranged in ascending order), indicating the intra-tumor heterogeneity of TCR clonotypes. Of these clonotypes, 59.5% exhibited a single uniquely barcoded read mapped to the TCR\u03b2-CDR3 sequences (depicted in yellow in Figure 2A), while 40.5% had at least two TCR\u03b2-CDR3 reads confidently identified (Figure 2A). As observed previously (Hey et al., 2023), the length distribution of CDR3 was approximately normally distributed (median 14, range 4\u201343, Figure 2\u2014figure supplement 1 and Supplementary file 1b). Subsequently, we explored potential associations between TCR diversity, as quantified by the Shannon index, and patient characteristics. In accordance with prior investigations, we identified an inverse relationship between the number of TCR clones and the Shannon index (Figure 2B). Based on our current sequencing depth, we have observed that many of our samples (14 out of 28) have reached sufficient saturation (Figure 2C, Figure 2\u2014figure supplement 3) as their diversity of clonotypes was saturated. Additionally, the TCR clones selected in our studies are unique molecular identifier (UMI)-collapsed reads, with each representing at least three raw reads sharing the same UMI. Consequently, despite some samples having low sequencing depth for TCR\u03b2 sequencing, likely due to the diversity of TIL infiltration between patients, our TCR\u03b2 profiling analysis is robust and reliable. However, we did not detect any significant correlations between TCR clonality or diversity and clinical variables, including microsatellite status, tumor staging, patient gender, and tumor location (Figure 2\u2014figure supplement 2). In contrast, MSI-H tumors, which are known to be rich in neoantigens (Roudko et al., 2020; Maleki Vareki, 2018), displayed a significantly lower number of TCR\u03b2 clonotypes compared to MSS tumors (2181 vs 5330, p=0.057, Figure 2\u2014figure supplement 2a and 3), aligning with previous research (Laghi et al., 2020).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig2-v1.jpg)\n\n**Figure 2.:** (A) A bar plot depicting the distribution of T cell receptor (TCR) clonotypes among 28 colorectal cancer (CRC) patients, categorized into two groups: those with a unique read count and those with read counts greater than or equal to 2 for each TCR clonotype. (B) The scatter plot illustrates the relationship between the Shannon-index and the number of TCR clones. (C) The rarefaction plot shows the variable between sample size and diversity among 28 CRC samples.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Distribution of CDR3\u03b2 lengths in total T cell receptor (TCR) clones. (B) The pie chart displays the recurrence rates of TCR clones, variable (V) segments, and joining (J) segments when the read count of TCR clones exceeds 01. The graph illustrates the uniqueness of TCR clones and the shared presence of both V and J segments. (C) The heatmap depicts the Z-scored read counts of V segments or (D) J segments across 28 samples. Some V and J segments were found to be dominant in all samples. (E) The chord diagram illustrates the rearrangement of V and J segments, revealing random V and J combinations, with a few combinations exhibiting high frequencies.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The bar plot and dot plot compare T cell receptor (TCR) clones, Shannon index, and clonality between high microsatellite instability (MSI-H) and microsatellite stability (MSS) (A, B, C), stage II and III (D, E, F), female and male gender (G, H, I), and distal and proximal tumor locations (K, L, M).\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** The rarefaction plot illustrates the sample size and diversity of samples in two groups: MSI and MSS.\n\nAfter filtering out TCR clones with read counts below 1, we obtained a total of 74,590 TCR clones. Subsequently, we conducted a comprehensive assessment of TCR\u03b2 repertoire similarity by calculating the proportion of overlapping TCR\u03b2-CDR3 clones across the 28 patients. The preeminent majority, constituting 95.1% of all identified TCR\u03b2-CDR3 clones, comprised unique clonotypes found in one patient, while the remaining 4.9% were recurrently observed in at least two patients (Figure 2\u2014figure supplement 2b). This observation underscores the substantial inter-patient heterogeneity in TCR profiles. The TCR\u03b2 repertoire is generated by the random rearrangement of variable (V), diversity (D), and joining (J) segments. We conducted a search specifically targeting the D segment by scoring the similarities of sub-sequences within the junction sequences against the reference sequences of D segments. Consistent with a previous study, we were unable to unambiguously assign the D segments to any defined D region usage due to the truncation of this region (Yassai et al., 2009). In contrast to the diversified D segments, V and J sequments displayed high recurrent rates across 28 patients (Figure 2\u2014figure supplement 2b). As anticipated, we identified 59 distinct V segments (Figure 2\u2014figure supplement 2c) and 13 distinct J segments (Figure 2\u2014figure supplement 2d), collectively sharing 185,627 clones across the 28 tumor tissue samples. This underscores the conservation of these segments (Figure 2\u2014figure supplement 2c and d). Conversely, we observed a varied combination of V and J segments, which significantly contributes to the heterogeneity of the TIL TCR\u03b2 repertoire (Figure 2\u2014figure supplement 2e). Collectively, our data elucidate the presence of both intra-tumor and inter-patient heterogeneity in the TCR\u03b2 repertoires of CRC patients, likely stemming from the stochastic utilization of V and J segments in response to neoantigens.\n\n### pHLA and pHLA-TCR interactions are two complement determinants of neoantigen immunogenicity\n\nWhile in silico tools predicting HLA-peptide binding affinity have traditionally played a pivotal role in determining neoantigen immunogenicity (Vitiello and Zanetti, 2017), the evaluation of TCR-peptide binding for screening immunogenic neoantigens remains understudied. In light of this, our study aimed to assess the contributions of both pHLA and pHLA-TCR binding affinity in predicting immunogenic neoantigens. To accomplish this, we gathered HLA and TCR\u03b2 sequences from established datasets containing immunogenic and non-immunogenic pHLA-TCR complexes (Supplementary file 1c). Subsequently, we employed NetMHCpan (Reynisson et al., 2020) and pMTNet (Lu et al., 2021a) tools to predict pHLA and pHLA-TCR binding, respectively.\n\nFor comparative purposes, we generated plots depicting predicted percentile rank values, with lower percentile ranks signifying stronger binding affinity. As anticipated, our analysis revealed a significantly higher prevalence of peptides with robust HLA binding (percentile rank <2%) among immunogenic peptides in contrast to their non-immunogenic counterparts (Figure 3A & B, p<0.00001). Similarly, immunogenic peptides exhibited a greater proportion of peptides with percentile ranks indicating pHLA-TCR binding of <2% compared to non-immunogenic peptides (Figure 3C & D, p=0.086). As recommended by NetMHCpan and pMTNet, we considered peptide candidates with predicted percentile ranks below 2% as binders. Utilizing this predefined threshold, both pHLA and pHLA-TCR binding affinity exhibited comparable positive predictive values (PPV), at 68.5% (Figure 3B) and 64.3% (Figure 3D), respectively. This substantiates the significance of both pHLA and pHLA-TCR binding in determining the immunogenicity of peptides. When we simultaneously applied the cutoff values for both HLA-peptide and TCR-peptide percentile ranks (Q1 group, Figure 3E), the PPV increased to 76.9% from 68.5% and 64.3% for individual binding features (Figure 3F). This underscores the rationale for combining these two criteria to enhance the accuracy of neoantigen prediction. Notably, pHLA-TCR binding displayed a remarkedly lower sensitivity but higher specificity in comparison to pHLA binding (Figure 3G), implying their potential as a complementary criteria for the selection of immunogenic peptides.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig3-v1.jpg)\n\n**Figure 3.:** (A) The histogram displays the HLA percentile distribution of immunogenic antigens (red bar) and non-immunogenic peptides (gray bar). (B) The percentage of immunogenic antigens (red bar) and non-immunogenic peptides (gray bar) is compared between two groups based on HLA percentile:<2% and \u2265 2% (Chi-square test, p<0.00001). (C) The histogram displays the TCR ranking distribution of immunogenic antigens (red bar) and non-immunogenic peptides (gray bar). (D) The percentage of immunogenic antigens (red bar) and non-immunogenic peptides (gray bar) is compared between two groups based on TCR ranking:<2% and \u2265 2% (Chi-square test, p=0.086). (E) The scatter plot illustrates the relationship between the HLA percentile distribution and TCR ranking of immunogenic antigens (red bar) and non-immunogenic peptides (gray bar). (F) The percentage of immunogenic antigens (red bar) and non-immunogenic peptides (gray bar) is analyzed in four distinct groups based on cutoffs of HLA percentile and TCR ranking. (G) The bar plot illustrates the sensitivity and specificity of three neoantigen prioritization approaches: based on neoantigen-HLA binding affinity alone (yellow bar), neoantigen-TCR binding ranking alone (blue bar), and the combined method using both features (red bar).\n\n### Combination of peptide-HLA and peptide-HLA-TCR interactions improves neoantigen prediction\n\nThe combination of peptide-HLA and peptide-HLA-TCR binding ranking with a fixed cutoff values of 2% for each feature resulted in high specificity but low sensitivity (Figure 3G). To optimize the precision of immugenic neoantigens, we examined three distinct machine learning classifiers, namely Random Forest (RF), Logistic Regression (LR), and Extreme Gradient Boosting (XGB) classifiers. We first partitioned the pHLA binding and pHLA-TCR binding ranks for immunogenic and non-immunogenic peptides from publicly available databases into separate discovery (70%) and validation (30%) datasets. These subsets are mutually exclusive and do not overlap (Figure 4\u2014figure supplement 1).\n\nThese datasets were used to develop and validate machine learning algorithms, as illustrated in Figure 4A. We next assessed the performance of the three examined algorithms, employing a 10-fold cross-validation strategy. Among these algorithms, XGB demonstrated the highest performance, achieving an area under the receiver operating characteristic curve (AUC) of 0.82 in the training dataset and 0.84 in the validation dataset (Figure 4\u2014figure supplement 2). Consequently, the model combining pHLA and pHLA-TCR binding, referred to as the 'combined model' was chosen for further validation.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig4-v1.jpg)\n\n**Figure 4.:** (A) The workflow for constructing the model. (B) The receiver operating characteristic (ROC) curves demonstrate the performance of both the combined model and individual models in both the discovery and validation cohorts. The bar graphs illustrate the sensitivity (C), negative predictive value (NPV) (D), and positive predictive value (PPV) (E) at specificity levels of at least 95% or 99% for both the combined and individual models in both the discovery and validation cohorts. (F) Ranking coverage scores for the specified models in either the discovery or validation cohorts.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig4-figsupp1-v1.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** The curves depict the performance of the combined model in the discovery cohort (A) and the validation cohort (B).\n\nOur findings revealed that the combined model outperformed methods relying on pHLA-TCR or pHLA binding features separately. The combined model yielded sensitivity AUC values of 0.82 (95% CI 0.81\u20130.84) and 0.84 (95% CI 0.82\u20130.86) for discovery and validation cohorts, whereas the pHLA-TCR feature alone achieved AUC values of 0.69 (95% CI 0.66\u20130.71) and 0.74 (95% CI 0.71\u20130.77). Meanwhile, the pHLA feature resulted in AUC values of 0.76 (95% CI 0.75\u20130.78) and 0.74 (95% CI 0.72\u20130.77) (Figure 4B). In order to address the elevated false positive rates associated with current prediction tools for neoantigens, we set the specificity at high thresholds of >95% and>99%. We observed that the combined model achieved a greater sensitivity (39.7% vs 5.9% and 19.7% at > 95% specificity; 47.1% vs 3.5% and 18.8% at >99% specificity, Figure 4C), negative predictive value (NPV, 87.7% vs 82% and 84.2% at >95% specificity; 88.9% vs 81.5% and 83.9% at >99% specificity, Figure 4D), and positive predictive value (PPV, 65.9% vs 22.2% and 47.1% at >95% specificity; 62.3% vs 11.8% and 39.4% at >99% specificity, Figure 4E) compared to the single feature methods.\n\nThe accurate prioritization of neoantigen candidates with high immunogenicity holds the potential to streamline the validation process, reducing both costs and time expenditures. Consequently, we proceeded to evaluate the combined model\u2019s capacity to prioritize neoantigens by computing the ranking coverage score, which considers the accuracy in ranking immunogenic peptides versus non-immunogenic peptides (Zhou et al., 2019b). In the validation phase, the combined model exhibited superior rank coverage scores in comparison to the individual feature-based methods. The combined model attained a ranking coverage score of 0.37, while the single-feature methods, pHLA-TCR and pHLA, yielded scores of \u20130.26 and 0.25, respectively (Figure 4F). These findings underscore the notion that the incorporation of pHLA and pHLA-TCR binding criteria can enhance the accuracy of prediction and prioritization of immunogenic neoantigens.\n\n### Experimental validation of the pHLA-TCR and pHLA combined approach in selecting neoantigen candidates in patients with CRC\n\nTo experimentally validate the efficacy of our combined approach, we conducted a comparative analysis of the percentage of confirmed immunogenic neoantigen candidates and the ranking coverage scores between the conventional NetMHCpan method, which relies solely on pHLA binding percentiles, and our combined approach (Figure 5A). Due to the limited availability of patient blood samples, we were only able to perform validation on eight patients who possessed a sufficient quantity of PBMCs. For each patient, we chose the top three neoantigen candidates predicted by each method. Among the neoantigen candidates, three were found to be common between the two methods, while twenty neoantigen candidates were uniquely identified by either NetMHCpan or the combined model (Figure 5B), bringing the total number of candidates to 44. Subsequently, we synthesized 44 LPs covering these 44 selected neoantigen candidates, along with 44 LPs corresponding to the wild-type sequences. The LPs were utilized in an ex vivo ELISpot assay to measure the release of interferon-gamma (IFN\u03b3) from the four patients' PBMCs. If the stimulation with a mutant LP resulted in a >twofold increase in IFN\u03b3 spots compared to its corresponding wild-type LP, the respective neoantigen candidate was classified as an immunogenic neoantigen.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig5-v1.jpg)\n\n**Figure 5.:** (A) A schematic diagram illustrates the procedural steps of neoantigen prioritization and the ELISpot assay. (B) The count of neoantigens identified from each pipeline. (C) The fold change in IFN-\u03b3 spots, relative to the wild-type peptides, is shown for 21 long peptides. Note: Only the mutants that result in a positive value in ELISpot are depicted, along with their corresponding amino acid changes and their associated rankings. (D) ELISpot assays on six long peptides resulting in at least a twofold change in IFN-\u03b3 spots. (E) The bar graphs display the ranking of validated long peptides identified from the NetMHCpan tool (blue bar) or the combined method (red bar) for individual patients and all patients.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94658/elife-94658-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** The bar graphs display rank coverage scores of validated long peptides identified by the NetMHCpan tool (blue bars) and the combined method (red bars) for individual patients and all patients collectively.\n\nOut of the 44 selected LPs, we confirmed the immunogenicity of three LPs (RNF213_W719S, MAP3K1_L1202F, and TRRAP_T148TEL) identified by the NetMHCpan method and seven LPs (NCOR2_R1963H, TRRAP_F1568S, DICER1_P1592L, KMT2C_K3848T, BRAF_EV275-276-, SMAD4_G230R, and PTPN13_D184A) selected by the combined method (Figure 5C and D). Notably, six patients exhibited at least one immunogenic peptide identified by the combined method, whereas none of the LPs in five patients, PT07, PT18, PT21, PT24, and PT25, chosen via the NetMHCpan method were validated as immunogenic (Figure 5C and D). To further assess the ranking accuracy of these two methods, we calculated the ranking coverage scores. In agreement with our in silico analyses, we observed higher rank coverage scores for the combined method in five out of the eight patients, resulting in an overall score of 0.04 (Figure 5E, Figure 5\u2014figure supplement 1). In contrast, the NetMHCpan method exhibited a lower rank coverage score of \u20130.37 (Figure 5E, Figure 5\u2014figure supplement 1). To further evaluate our model, we gathered additional public data and assessed its effectiveness in comparison to other models. We utilized immunogenic peptides from databases such as NEPdb (Xia et al., 2021), NeoPeptide (Zhou et al., 2019a), dbPepneo (Tan et al., 2020), Tantigen (Zhang et al., 2021), and TSNAdb (Wu et al., 2018), ensuring there was no overlap with the datasets used for training and validation. For non-immunogenic peptides, we used data from 10 X Genomics Chromium Single Cell Immune Profiling (10x Genomics, 2024a; 10x Genomics, 2024b; 10x Genomics, 2024c; 10x Genomics, 2024d). The findings indicate that the combined model from pMTNet and NetMHCpan outperforms the NetTCR tool (Montemurro et al., 2021; Supplementary file 1d). These outcomes conclusively demonstrate the ability of the combined approach to enhance the prediction and ranking of immunogenic neoantigens in cancer patients.\n\n## Discussion\n\nThe selection of neoantigens plays a pivotal role in enhancing the efficacy of personalized treatments in cancer immunotherapy. Historically, neoantigen selection has predominantly hinged upon the prediction of pHLA binding. However, the limitations of this approach have become increasingly evident (Borden et al., 2022), as it often neglects the dynamic interplay between tumor cells and the immune system. The findings of our study shed new light on this critical aspect of neoantigen selection. Our research highlights the potential of integrating pHLA binding prediction with the assessment of pHLA-tumor-infiltrating Lymphocyte T Cell receptor (TIL TCR) binding (Figure 1). By encompassing the interaction between neoantigens and the tumor microenvironment, we have demonstrated a substantial enhancement in the accuracy of neoantigen selection and prioritization. Our findings underscore the significance of comprehensive neoantigen assessment in harnessing the full potential of immunotherapeutic strategies in the fight against cancer.\n\nOur investigation into the TIL TCR\u03b2 repertoire across 28 CRC patients has unveiled a complex tapestry of intra-tumor and inter-patient heterogeneity (Figure 2A, Figure 2\u2014figure supplement 1). One underlying cause of this diversity is the random rearrangement of variable (V) and joining (J) segments, which contributes to the distinct TCR\u03b2 sequences observed (Figure 2\u2014figure supplement 1c, d & e). This remarkable diversity in the TCR\u03b2 profile, as elucidated in our study, presents a potential link to the heterogeneity of cancer mutations and neoantigens within CRC. The intricate relationship between the TCR\u03b2 repertoire and the genetic alterations within the tumor microenvironment underscores the need for a more comprehensive understanding of this dynamic interplay to develop more precise immunotherapeutic strategies (Joshi et al., 2019). Furthermore, our research revealed a compelling observation regarding patients with MSI-H, who are known to exhibit high mutation and neoantigen burdens (Motta et al., 2021; Xie et al., 2023). Intriguingly, MSI-H patients with strong immune reactivity to neoantigens was shown to display a lower number of TCR clonotypes and reduced diversity, as characterized by the Shannon index, compared to CRC patients with microsatellite stable (MSS) (Figure 2\u2014figure supplement 2). This stark contrast in TCR\u03b2 diversity hints at the potential enrichment of neoantigen-reactive TCR clonotypes in MSI-H patients. These findings provide valuable insights into the immune responses to different subtypes of CRC and may guide the development of more tailored immunotherapies for patients with differing mutational landscapes.\n\nBy utilizing proven immunogenic and non-immunogenic peptides from public databases, we have demonstrated that predicting the strength of pHLA-TCR binding can be a crucial criterion for selecting immunogenic candidates (Figure 3). For the prediction of pHLA-TCR binding, we employed the well-established tool pMTnet (Lu et al., 2021a). This choice was driven by its proven efficacy, based on its consistently high performance across different validated datasets (Lu et al., 2021a). Although it exhibited lower sensitivity and PPV when compared to pHLA binding alone, pHLA-TCR binding strength exhibited notably superior specificity (Figure 3G). This implies that incorporating pHLA-TCR binding strength as a selection criterion would result in a reduced false positive rate, a crucial factor in the context of neoantigen selection. What makes our study particularly compelling is the convergence of these observations. The integration of both criteria, specifically, pHLA binding and pHLA-TCR binding strength, emerged as a strategy that not only enhanced the PPV but also fortified the rationale for combining these two features in the neoantigen selection process.\n\nThe integration of both pHLA binding and pHLA-TCR binding strength features in our approach exhibited superior performance in neoantigen selection and prioritization when compared to the single-feature method (Figure 4). This observation aligns with the findings of previous studies, which consistently indicate that combining multiple criteria enhances the accuracy and efficacy of neoantigen identification (Zhou et al., 2019b; M\u00fcller et al., 2023). Furthermore, our experimental validation confirmed the robustness of our approach by consistently demonstrating performance consistent with our analysis of publicly available data (Figure 5, Supplementary file 1d). When examining the percentile ranks of positive LPs predicted by netMHCpan from those predicted by our combined model, the results further underscored the strength of our approach (Figure 5E). This alignment between experimental validation and computational analysis enhances the reliability and applicability of our neoantigen selection method. Interestingly, the four identified neoantigen candidates with confirmed immunogenicity by the combined approach have not been previously reported in public neoantigen-databases, indicating that they could serve as novel targets for neoantigen based therapies.\n\nHowever, several limitations must be acknowledged. Firstly, the relatively small sample size employed for validation raises the potential for ranking score bias. Additionally, while both TCR\u03b1 and TCR\u03b2 regions play essential roles in engaging peptide-bound HLA complexes, our study focused solely on TCR\u03b2 sequences to predict pHLA-TCR binding strength. Future investigations should include TCR\u03b1 sequences to provide a more comprehensive analysis. Although the PBMC and TILs were previously shown to be congruent in neoantigen reactivity (Malekzadeh et al., 2020), it is important to recognize that differences in the contribution of TIL and PBMC TCR repertoires in neoantigen selection may introduce variability in the selection and validation of neoantigen candidates, and future studies are warranted to address the consistency in neoantigen reactivity between these two sources of T cells. Moreover, to improve the accuracy and effectiveness of the machine learning model in predicting and ranking neoantigens, we have developed an in-house tool called EpiTCR. This tool will utilize immunogenic assays, such as ELISpot and single-cell sequencing, for validation.\n\nIn summary, our study delves into the diversity and variation within the TCR\u03b2 repertoire of TILs in the tumor tissues of colorectal cancer patients. Through our research, we have introduced a novel approach to the identification and prioritization of neoantigen candidates. This approach combines the assessment of pHLA binding and peptide-human leukocyte antigen-T cell receptor (pHLA-TCR) binding. Our findings underscore the significance of considering pHLA-TCR binding interactions as part of the process for selecting neoantigen candidates. This is a crucial step in the development of personalized immunotherapy strategies. By combining these two factors, we can more accurately identify the neoantigens that hold promise for effective immunotherapy, ultimately improving the prospects for tailored and effective cancer treatment.\n\n## Materials and methods\n\n### Tumor biopsy and peripheral blood collection\n\nTwenty-eight patients diagnosed with CRC were enrolled in this study at the University Medical Center in Ho Chi Minh City between June 2022 and May 2023. CRC confirmation was based on abnormal colonoscopies and histopathological analysis. The stages of CRC were determined according to guidelines provided by the American Joint Committee on Cancer and the International Union for Cancer Control (the eighth version) (Amin et al., 2017; Tong et al., 2018). Prior to participation, all patients provided written informed consent for tumor and whole blood sample collection. Relevant clinical data, including demographics, cancer stages, and pathology information, were extracted from the medical records of the University Medical Center. Detailed information regarding the clinical factors of the patients can be found in Supplementary file 1e. This study was approved by the Ethics Committee of the University of Medicine and Pharmacy in Ho Chi Minh City, Vietnam. For eight patients, ten mL of peripheral blood was collected before surgery and stored in Heparin tubes prior to isolation of PBMCs.\n\n### Targeted DNA, RNA, and TCR\u03b2 sequencing\n\nThe DNA/RNA samples were isolated using either the AllPrep DNA/RNA Mini Kit or the AllPrep DNA/RNA/miRNA Universal Kit (Qiagen, Germany) as per the manufacturer\u2019s protocol. In addition, matched genomic DNA from the white blood cells (WBC) of individuals was also extracted from the buffy coat using the GeneJET Whole Blood Genomic DNA Purification Mini kit (Thermo Fisher, MA, USA), following the manufacturer\u2019s instructions. Genomic DNA samples from the patients\u2019s paired tumor tissues and WBCs were used to prepare DNA libraries for DNA sequencing with the ThruPLEX Tag-seq Kit (Takara Bio, USA). The libraries were then pooled and hybridized with pre-designed probes for 95 targeted genes (Integrated DNA Technologies, USA). This gene panel encompasses commonly mutated genes in CRC tumors, as reported in the Catalog of Somatic Mutations in Cancer (COSMIC) database. The DNA libraries were then subjected to massive parallel sequencing on the DNBSEQ\u2010G400 sequencer (MGI, Shenzhen, China) for paired-end reads of 2\u00d7100 bp with a sequencing depth of 10 X.\n\nIsolated total RNA was processed using the NEBNext Poly(A) mRNA Magnetic Isolation Module (New England Biolabs, MA, USA) to isolate intact poly(A)+ RNA following the manufacturer\u2019s instructions. RNA libraries were prepared using the NEBNext Ultra Directional RNA Library Prep Kit for Illumina (New England Biolabs). These libraries were subsequently sequenced for paired-end reads of 2\u00d7100 bp on an MGI system at a sequencing depth of 50 X.\n\nFor TCR\u03b2 library construction, mRNA was utilized with the SMARTer Human TCR a/b Profiling Kit v2 (Takara, USA). The resulting libraries were sequenced for paired-end reads of 2\u00d7250 bp on an Illumina system at a sequencing depth of 7.5 X.\n\n### Microsatellite instability status\n\nMicrosatellite instability (MSI) status was determined in both tumor DNA and corresponding DNA from blood, serving as the control, using the MSI Analysis System, version 1.2 (Promega, US). This analysis identified alterations in five mononucleotide repeat markers: BAT-25, BAT-26, NR-21, NR-24, and MONO-27. The results were classified as MSS in cases where either none or only one marker was unstable. Samples showing alterations in two or more markers were categorized as microsatellite instability-high (MSI-H).\n\n### Variant calling from DNA-seq and RNA-seq data\n\nThe approach of integrating RNA-seq into calling variants was performed as described in our previous publication (Nguyen et al., 2023). Briefly, we used Dragen (Illumina) (Catreux et al., 2022) in tumor-normal mode to detect somatic mutations from DNA-seq data. The default filtering thresholds of Dragen were applied for the detection of single nucleotide polymorphisms (SNPs) and insertions/deletions (indels). SNPs were further filtered using the dbSNP and 1000 Genome datasets. Germline mutations in tumor tissues were identified by comparison with matched WBC DNA samples. Mutations within immunoglobulin and HLA genes were excluded due to alignment difficulties in these highly polymorphic regions, necessitating specialized analysis tools. Additionally, synonymous mutations were removed from downstream analysis. For analysis, we included somatic mutations that exceeded a minimum threshold of \u22652% variant allele frequency (VAF) in DNA extracted from fresh frozen tissues.\n\nSequencing reads underwent trimming using Trimmomatic (Bolger et al., 2014) and were then aligned to the human reference genome using STAR (version 2.6.0 c) (Dobin, 2013). Prior to alignment, raw sequencing reads were subjected to quality checks using FastQC version 0.11.9 (Andrews, 2010). VarScan 2 (Koboldt et al., 2012), which accepts both DNA and RNA-seq data, was employed to identify mutations in paired tumor and WBC samples across 95 cancer-associated genes. This analysis was carried out in tumor-normal mode. Four filtering steps were applied: (i) only calls with a PASS status were utilized, (ii) population SNPs overlapping with a panel of normal samples from the 1000 Genome dataset were excluded, (iii) somatic mutations included for analysis met a minimum threshold of \u226510x read depth and \u22652% variant allele frequency (VAF) in RNA extracted from FF tissue, and (iv) synonymous mutations and those related to HLA were removed from downstream analysis.\n\nThe resulting BAM files were sorted, and indexed using Samtools version 1.10 (Li et al., 2009), and had PCR duplicates removed using Picard tools version 2.25.6 (Picard, 2024). Somatic variants were manually reviewed using Integrative Genomics Viewer (v2.8.2). The VCF files generated by Dragen (for DNA-seq) and VarScan 2 (for RNA-seq) were subsequently annotated using the Ensembl Variant Effect Predictor (VEP version 105) (McLaren et al., 2016) to extract information about the potential effects of variants on the phenotypic outcome.\n\n### CDR3\u03b2 calling from TCRseq data\n\nTo define the CDR3\u03b2 from TCRseq, we utilized Cogent NGS Immune Profiler Software v1.0 (Takara Bio, 2024). Before calling clonotypes, the raw sequencing reads underwent filtering based on the following criteria: (i) allowing only one mismatch while splitting reads by matching read sequences to different receptor chains, (ii) excluding reads shorter than 30 bp and reads ambiguously matched to multiple receptor chains, (iii) excluding reads that failed correction when linker-based correction was enabled, (iv) excluding reads that failed the abundance check during sequencing error correction, and (v) excluding molecular identifier groups (MIGs) with fewer than three unique molecular identifier (UMI) reads. The filtered MIGs were then assembled and aligned to the V(D)J reference to define the TCR clonotype.\n\n### Shannon index and clonality\n\nWe utilized two indices to characterize T-cell diversity and expansion: the Shannon entropy index and the clonality index.\n\nShannon entropy:\n\n$$\n\u2212\\sumi=1np_{i}log_{e}(p_{i})\n$$\n\nClonality:\n\n$$\n1-\\frac{\\sum_{i=1}^{n}p_{i}log_{e}(p_{i})}{log_{e}(n)}\n$$\n\nThese indices consider both the number of T-cell clone types \u2018n\u2019 and the frequency \u2018pi\u2019 of each clone. Here, \u2018pi\u2019 represents the proportion of the i-th clone within the TCR library containing n clones.\n\n### In silico prediction of peptide-HLA binding and peptide-HLA-TCR binding\n\nClass I HLA alleles (HLA-A/B/C) with two-digit resolution were identified from patient tumor RNA-seq data using the OptiType tool (Supplementary file 1f; Szolek et al., 2014; Li et al., 2024). The annotated VCF files were analyzed using pVACseq, a tool in pVACtools (v1.5.9) (Hundal et al., 2020; Hundal et al., 2016; Hundal et al., 2019). We used the default settings, except for disabling the coverage and MAF filters. We used all peptide-HLA-I binding algorithms that were implemented in pVACseq to predict 8\u201311-mer epitopes binding to HLA-I (A, B, or C) for downstream analysis. Mutants with lower binding affinity than wild-type peptides were prioritized using a two-step ranking process. The minimum binding affinity score was calculated from the distribution of scores among the peptides derived from each mutation, and priority was given to mutations with the lowest binding affinity scores. Moreover, in pVACseq, we collected peptides with binding affinity scores lower than wild-type from multiple tools, calculated minimum binding affinity scores for each unique peptide, and incorporated this data into a combined machine learning model.\n\nWe used the peptide-HLA-TCR binding algorithm implemented in pMTNet (Lu et al., 2021a) to predict peptide binding to HLA and TCR with default settings. These scores represented the predicted likelihood of peptides being immunogenic. A ranking value for immunogenicity was assigned to each unique peptide by determining the minimum TCR ranking of its immunogenicity score.\n\n### Construction of a combined machine-learning model\n\nTo identify immunogenic peptides, we conducted a thorough search across multiple databases, including 10 X Genomics (10x Genomics, 2024a; 10x Genomics, 2024b; 10x Genomics, 2024c; 10x Genomics, 2024d), McPAS (Tickotsky et al., 2017), VDJdb (Shugay et al., 2018), IEDB (Vita et al., 2019), and TBAdb (Zhang et al., 2020). For the creation of a non-immunogenic pHLA-TCR complex, we assembled a negative dataset using the PRIME tool (Schmidt et al., 2021). This dataset was generated by associating each pHLA with 10 randomly generated TCRs sourced from the following databases: 10 X Genomics, McPAS, VDJdb, IEDB, and TBAdb. To objectively train and evaluate the model, we separated the dataset mentioned above into two data subsets: discovery dataset (70%) and validation dataset (30%). These subsets are mutually exclusive and do not overlap (Figure 4\u2014figure supplement 1). pHLA-TCR complex in the discovery dataset, whether labeled as immunogenic or non-immunogenic, were used for model training to classify whether a peptide is positive or not. We examined three machine learning algorithms - Logistic Regression (LR), Random Forest (RF), and Extreme Gradient Boosting (XGB) - for each feature type (pHLA binding, pHLA-TCR binding), as well as for combined features. Feature selection was tested using a k-fold cross-validation approach on the discovery dataset with \u2018k\u2019 set to 10-fold. This process splits the discovery dataset into 10 equal-sized folds, iteratively using ninefolds for training and onefold for validation. Model performance was evaluated using the \u2018roc_auc\u2019 (Receiver Operating Characteristic Area Under the Curve) metric, which measures the model\u2019s ability to distinguish between positive and negative peptides. The average of these scores provides a robust estimate of the model\u2019s performance and generalizability. The model with the highest \u2018roc_auc\u2019 average score, XGB, was chosen for all features. The model cut-off was set based on a threshold specificity of >90% or>95% to achieve high specificity for selecting peptides. This combined model\u2019s performance was evaluated on the independent validation dataset of immunogenic and non-immunogenic pHLA-TCR complex to assess its ability to classify positive peptides from negative peptides. In our GitHub repository, we have included links to the GitHub repositories for NetMHCpan and pMTNet (https://github.com/QuynhPham1220/Combined-model copy archived at Pham, 2024).\n\n### Ranking coverage score calculation\n\nThe approach of compare ranking between two algorithms was performed as described in a previous publication (Zhou et al., 2019b). Briefly, the rank coverage score was based on the ranking value calculation given by the formula:\n\n$$\nRankCoverageScore=\\frac{\\sumn\\innegativerank(n)}{T\\timesnum(n)}\\timescoverage(n)\u2212\\frac{\\sumn\\inpositiverank(p)}{T\\timesnum(p)}\\timescoverage(p)coverage(k)=\\frac{maxrank(k)}{T}k\\in(n,p)\n$$\n\nWhere, T presented the total neoepitope number identified and p and n presented the positive and negative peptides, respectively, that were experimentally validated in vitro.\n\nIf positive peptides have smaller rank values than negative peptides, this will result in a high-rank coverage score, indicates the better ranking result.\n\n### Isolation, culture, and stimulation of PBMCs with long peptides\n\nPeripheral blood samples were collected from eight patients prior to surgery using BD Vacutainer Heparin Tubes (BD Biosciences, NJ, USA). PBMCs were isolated through gradient centrifugation using Lymphoprep (STEMCELL Technologies) within 4 hr of blood collection. The PBMCs were then resuspended in a solution of FBS (10%) and DMSO (7\u201310\u00d7106 cells/mL) for cryopreservation in liquid nitrogen. Frozen PBMCs were thawed in AIM-V media (Gibco, Thermo Scientific, MA, USA) supplemented with 10% FBS (Cytiva, USA) and DNase I (Stemcell Technology, Canada) (1 mg/mL) solution. A total of 105 PBMCs were allowed to rest in a 96-round bottom well-plate containing AIM V media supplemented with 10% FBS, 10 mM HEPES, and 50 mM \u03b2-mercaptoethanol overnight before stimulation with synthesized long peptides at a concentration of 5 mM in a humidified incubator at 37 \u00b0C with 5% CO2. PBMCs were further stimulated with GM-CSF (2000 IU/mL, Gibco, MT, USA) and IL-4 (1000 IU/mL, Invitrogen, MA, USA) for 24 hr. Following this initial stimulation, LPS (100 ng/mL, Sigma-Aldrich, MA, USA) and IFN-\u03b3 (10 ng/mL, Gibco, MT, USA) were added to the PBMCs along with the peptides for an additional 12 hr. On the following day, IL-7, IL-15, and IL-21 (each at a concentration of 10 ng/mL) (Peprotech, NJ, USA) were added to the PBMC culture. The restimulation process involved exposing the peptides to fresh media containing IL-7, IL-15, and IL-21 every 3 days, for a total of three times. On day 12, PBMCs were restimulated with peptides and cultured in media without cytokines. ELISpot assays were performed on stimulated PBMCs on day 13.\n\n### ELISpot assay on PBMCs stimulated with long peptides\n\nCultured T cells were transferred to an enzyme-linked immunospot (ELISpot) plate (Mabtech, Sweden) and incubated for 20 hr at 37 \u00b0C. PBMCs cultured with DMSO were used as a negative control group, while PBMCs stimulated with anti-CD3 were used as a positive control group. The ELISpot assay was performed on treated PBMCs using the ELISpot Pro: Human IFN-g (ALP) kit (Mabtech, Sweden), following the manufacturer\u2019s protocol. Developed spots on the ELISpot plate were then counted using an ELISpot reader (Mabtech, Sweden). Reactivity was determined by measuring the fold increase in the number of spots in PBMCs treated with mutant peptides compared to those treated with wild-type peptides. A fold change of two was selected as the cutoff for positivity, indicating a significant increase in reactivity (Moodie et al., 2010).\n\n### Statistical analysis\n\nIn this study, t-tests were used to compare the TCR clones, clonality, and Shannon index among two groups of four categories (Microsatellite status, stage, gender, and tumor location). Chi-square test was used to compare the proportions of immununogenic and non-immunogenic peptides. All statistical analyses were performed using R (version 4.3.0) with common data analysis packages, including ggplot2 and pROC. The 95% confidence interval (95% CI) was presented in brackets next to a value as appropriate.\n",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "cc3e44f1-d92b-4cbf-9cc6-364998864494",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Annemarie Woolston, NA United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.94658.3.sa0](https://doi.org/10.7554/eLife.94658.3.sa0)\n\nThe study presents a potentially valuable approach by combining two measurements (pHLA binding and pHLA-TCR binding) to improve predictions of which mutations in colorectal cancer are likely to be presented to and recognised by the immune system. While this approach is promising, the evidence supporting the primary claim remains somewhat incomplete. The experimental validation of the computational predictions with actual immune responses is still limited, despite the increase in sample size from 4 to 8 in this revision.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94658.3.sa1](https://doi.org/10.7554/eLife.94658.3.sa1)\n\nSummary:\n\nThis paper introduces a novel approach for improving personalized cancer immunotherapy by integrating TCR profiling with traditional pHLA binding predictions, addressing the need for more precise neoantigen CRC patients. By analyzing TCR repertoires from tumor-infiltrating lymphocytes and applying machine learning algorithms, the authors developed a predictive model that outperforms conventional methods in specificity and sensitivity. The validation of the model through ELISpot assays confirmed its potential in identifying more effective neoantigens, highlighting the significance of combining TCR and pHLA data for advancing personalized immunotherapy strategies.\n\nStrengths:\n\n(1) Comprehensive Patient Data Collection: The study meticulously collected and analyzed clinical data from 27 CRC patients, ensuring a robust foundation for research findings. The detailed documentation of patient demographics, cancer stages, and pathology information enhances the study's credibility and potential applicability to broader patient populations.\n\n(2) The use of machine learning classifiers (RF, LR, XGB) and the combination of pHLA and pHLA-TCR binding predictions significantly enhance the model's accuracy in identifying immunogenic neoantigens, as evidenced by the high AUC values and improved sensitivity, NPV, and PPV.\n\n(3) The use of experimental validation through ELISpot assays adds a practical dimension to the study, confirming the computational predictions with actual immune responses. The calculation of ranking coverage scores and the comparative analysis between the combined model and the conventional NetMHCpan method demonstrate the superior performance of the combined approach in accurately ranking immunogenic neoantigens.\n\n(4) The use of experimental validation through ELISpot assays adds a practical dimension to the study, confirming the computational predictions with actual immune responses.\n\nWeakness:\n\nThe authors have made comprehensive revisions to the original version of the article, and this version has now addressed my concerns.\n",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "b3c1e109-aeaa-474a-8395-d360fad10956",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C1",
+      "claim": "TCR\u03b2 sequencing was conducted to profile the TCR repertoire of tumor-infiltrating lymphocytes (TILs) from 28 CRC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "TCR\u03b2 sequencing was conducted to profile the TCR repertoire of tumor-infiltrating lymphocytes (TILs) from 28 CRC patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states that TCR\u03b2 sequencing was performed on 28 CRC patients to profile TIL TCR repertoire.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "66b7d034-330e-4e40-9303-4a27319916b2",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C2",
+      "claim": "The data unveiled both intra-tumor and inter-patient heterogeneity in the TCR\u03b2 repertoires of CRC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The data unveiled both intra-tumor and inter-patient heterogeneity in the TCR\u03b2 repertoires of CRC patients, likely resulting from the stochastic utilization of V and J segments in response to neoantigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing heterogeneity in TCR\u03b2 repertoires across patients and within tumors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "509c42f6-048e-43d9-9c06-82482444729f",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C3",
+      "claim": "The heterogeneity in TCR\u03b2 repertoires likely results from the stochastic utilization of V and J segments in response to neoantigens.",
+      "claim_type": "EXPLICIT",
+      "source": "The data unveiled both intra-tumor and inter-patient heterogeneity in the TCR\u03b2 repertoires of CRC patients, likely resulting from the stochastic utilization of V and J segments in response to neoantigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the mechanism underlying the observed heterogeneity based on V and J segment usage patterns.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "f13eadf2-178f-47ae-b757-7fab77aa2d00",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C4",
+      "claim": "The combined model integrating pHLA binding information with pHLA-TCR binding results in heightened specificity and sensitivity compared to models using individual features alone.",
+      "claim_type": "EXPLICIT",
+      "source": "Our novel combined model integrates pHLA binding information with pHLA-TCR binding to prioritize neoantigens, resulting in heightened specificity and sensitivity compared to models using individual features alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents comparative performance metrics showing improved specificity and sensitivity for the combined model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "31c3a041-fd25-421a-b15a-4a843c4124f0",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C5",
+      "claim": "Neoantigen candidates prioritized by the combined model outperformed predictions made by NetMHCpan in ELISpot assays on four CRC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "These assays demonstrated that neoantigen candidates prioritized by our combined model outperformed predictions made by the established tool NetMHCpan.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports experimental validation results comparing the combined model to NetMHCpan.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "d714fb9b-5e24-463e-ad08-0f63be848cfd",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C6",
+      "claim": "In metastatic CRC patients, immunotherapy has fulfilled the promise of improving survival rate (Ganesh et al., 2019).",
+      "claim_type": "EXPLICIT",
+      "source": "In metastatic CRC patients, immunotherapy has fulfilled the promise of improving survival rate (Ganesh et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ganesh et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "84b85fa3-6ee1-40f2-a43a-69ae97632ffb",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C7",
+      "claim": "Immune checkpoint inhibitors have been approved by the US Food and Drug Administration (FDA) for the treatment of deficient mismatch repair (dMMR) or high microsatellite instability (MSI-H) CRC patients (Dudley et al., 2016; Le et al., 2015; Overman et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Immune checkpoint inhibitors (ICIs), which block negative regulatory pathways in T-cell activation, have been approved by the US Food and Drug Administration (FDA) for the treatment of deficient mismatch repair (dMMR) or high microsatellite instability (MSI-H) CRC patients (Dudley et al., 2016; Le et al., 2015; Overman et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations documenting FDA approval.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "e232e321-7dfa-4450-90b4-3721efb28bb9",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C8",
+      "claim": "Patients with proficient mismatch repair (pMMR) or microsatellite stability (MSS) have not shown significant responses to immune checkpoint inhibitors (Dudley et al., 2016; Le et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "However, there is an urgent need for alternative immunotherapy strategies for metastatic CRC patients, as patients with proficient mismatch repair (pMMR) or microsatellite stability (MSS) have not shown significant responses to immune checkpoint inhibitors (Dudley et al., 2016; Le et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies showing lack of response in pMMR/MSS patients.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "3810aecd-6f00-4137-9511-df9d2ed35dc6",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C9",
+      "claim": "Neoantigens are peptides that result from somatic mutations and can be displayed by class I human leukocyte antigen (HLA-I) molecules on the surface of cancer cells, thereby activating immune-mediated tumor killing (Blass and Ott, 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "Neoantigens are peptides that result from somatic mutations and can be displayed by class I human leukocyte antigen (HLA-I) molecules on the surface of cancer cells, thereby activating immune-mediated tumor killing (Blass and Ott, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation and represents established knowledge about neoantigens.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "fe79b839-62b8-47fb-9f13-189fe23da882",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C10",
+      "claim": "The presence of neoantigens is associated with better responses to immune checkpoint inhibitor (ICI) therapy in CRC patients (Miao et al., 2018; Yarchoan et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have demonstrated that the presence of neoantigens is associated with better responses to immune checkpoint inhibitor (ICI) therapy in CRC patients (Miao et al., 2018; Yarchoan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies showing association between neoantigens and ICI response.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "a91f688f-1b68-47aa-9ae2-195d213f0edc",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C11",
+      "claim": "A high neoantigen burden has been linked to improved overall survival and progression-free survival in patients with various solid tumors, including CRC (Miao et al., 2018; Yarchoan et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "A high neoantigen burden has been linked to improved overall survival and progression-free survival in patients with various solid tumors, including CRC (Miao et al., 2018; Yarchoan et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies demonstrating survival benefits.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "ecda5a27-70b5-4210-b8ef-21ef26c3f33c",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C12",
+      "claim": "The current approach's impact on patient outcomes remains limited due to the scarcity of mutations in cancer patients that lead to effective immunogenic neoantigens.",
+      "claim_type": "EXPLICIT",
+      "source": "However, despite its achievements, the current approach's impact on patient outcomes remains limited due to the scarcity of mutations in cancer patients that lead to effective immunogenic neoantigens.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents this as a limitation of current approaches based on the authors' assessment.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "8699e163-c209-4fcc-95e3-c9510d646dd3",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C13",
+      "claim": "The selection of neoantigen candidates by current workflows relies solely on neoantigen-HLA-I binding affinity as the criteria for immunogenicity prediction (Chen et al., 2021).",
+      "claim_type": "EXPLICIT",
+      "source": "This limitation arises primarily from the fact that the selection of neoantigen candidates by these workflows relies solely on neoantigen-HLA-I binding affinity as the criteria for immunogenicity prediction (Chen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation describing current workflow limitations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "a2869fe7-fa90-49f6-85b7-f6bfc33c5601",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C14",
+      "claim": "The recognition of the neoantigen-HLA complex through TCR is of paramount importance for T cell activation and eliciting an immune response (Szeto et al., 2020; Guerder and Flavell, 1995).",
+      "claim_type": "EXPLICIT",
+      "source": "The recognition of the neoantigen-HLA complex through TCR is of paramount importance for T cell activation and eliciting an immune response (Szeto et al., 2020; Guerder and Flavell, 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to studies on TCR recognition and T cell activation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "e2494a34-a002-4c68-90bc-7c7af86c7fbe",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C15",
+      "claim": "TCR diversity arises from the recombination of variable (V), diversity (D), and joining (J) genes at the TCR\u03b2 and TCR\u03b4 loci, along with VJ recombination at the TCR\u03b1 and TCR\u03b3 loci (Rosati et al., 2017).",
+      "claim_type": "EXPLICIT",
+      "source": "TCR diversity arises from the recombination of variable (V), diversity (D), and joining (J) genes at the TCR\u03b2 and TCR\u03b4 loci, along with VJ recombination at the TCR\u03b1 and TCR\u03b3 loci (Rosati et al., 2017), giving rise to a broad array of unique TCRs collectively known as the TCR repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation describing the mechanism of TCR diversity generation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "0af3b9d4-5684-4eab-a0a3-d74acf501d78",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C16",
+      "claim": "The complementarity-determining region 3 (CDR3) plays a pivotal role in antigen recognition (Wucherpfennig et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "The complementarity-determining region 3 (CDR3), situated at the junction of V, D, and J gene segments (Wucherpfennig et al., 2010), plays a pivotal role in antigen recognition, with the unique combination of CDR3 sequences contributing significantly to the specificity and diversity of the TCR repertoire.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation describing the role of CDR3 in antigen recognition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "db925cf1-5094-4a16-9062-88436f76544c",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C17",
+      "claim": "The sequencing analysis yielded an average of 2,992,949 productive TCR reads per sample, with a range between 256,035 and 10,888,726.",
+      "claim_type": "EXPLICIT",
+      "source": "Our sequencing analysis yielded an average of 2,992,949 productive TCR reads per sample, with a range between 256,035 and 10,888,726 (Supplementary file 1a), following correction for duplications, sequencing errors, and exclusive use of uniquely barcoded reads mapped to TCR\u03b2-CD3 sequences from the ImMunoGeneTics (IMGT) databases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific sequencing metrics from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "6d141160-7470-41c3-9e82-ed1ebe6fe905",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C18",
+      "claim": "Across the 28 patients, variable numbers of TCR\u03b2-CDR3 clonotypes were observed, ranging from 433 to 27,749.",
+      "claim_type": "EXPLICIT",
+      "source": "Across the 28 patients, we observed variable numbers of TCR\u03b2-CDR3 clonotypes, ranging from 433 to 27,749 (Figure 2A, Supplementary file 2A, 28 patients were arranged in ascending order), indicating the intra-tumor heterogeneity of TCR clonotypes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific clonotype counts and references Figure 2A showing this data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "45e3c7e6-30f9-4a5e-a8a3-f13a85b11100",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C19",
+      "claim": "59.5% of TCR\u03b2-CDR3 clonotypes exhibited a single uniquely barcoded read mapped to the TCR\u03b2-CDR3 sequences.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these clonotypes, 59.5% exhibited a single uniquely barcoded read mapped to the TCR\u03b2-CDR3 sequences (depicted in yellow in Figure 2A), while 40.5% had at least two TCR\u03b2-CDR3 reads confidently identified (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific percentages and references Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "caeeab25-1c69-4779-a07b-ee555cb1045c",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C20",
+      "claim": "The length distribution of CDR3 was approximately normally distributed with a median of 14 and range of 4\u201343.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed previously (Hey et al., 2023), the length distribution of CDR3 was approximately normally distributed (median 14, range 4\u201343, Figure 2\u2014figure supplement 1 and Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific CDR3 length distribution metrics and references a figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "b86e0ef3-3596-47f1-ae1d-177a1110a02b",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C21",
+      "claim": "An inverse relationship exists between the number of TCR clones and the Shannon index.",
+      "claim_type": "EXPLICIT",
+      "source": "In accordance with prior investigations, we identified an inverse relationship between the number of TCR clones and the Shannon index (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports an observed relationship and references Figure 2B showing this correlation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "d31a5224-2562-47a0-807e-aad9887ab8bd",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C22",
+      "claim": "14 out of 28 samples have reached sufficient saturation in their diversity of clonotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our current sequencing depth, we have observed that many of our samples (14 out of 28) have reached sufficient saturation (Figure 2C, Figure 2\u2014figure supplement 3) as their diversity of clonotypes was saturated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific saturation metrics and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "7cd06d50-2fda-4cc0-9c60-d17359668d39",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C23",
+      "claim": "No significant correlations were detected between TCR clonality or diversity and clinical variables, including microsatellite status, tumor staging, patient gender, and tumor location.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we did not detect any significant correlations between TCR clonality or diversity and clinical variables, including microsatellite status, tumor staging, patient gender, and tumor location (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the absence of significant correlations and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "d1de3311-ad36-47f0-bfea-f321955bef6b",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C24",
+      "claim": "MSI-H tumors displayed a significantly lower number of TCR\u03b2 clonotypes compared to MSS tumors (2181 vs 5330, p=0.057).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, MSI-H tumors, which are known to be rich in neoantigens (Roudko et al., 2020; Maleki Vareki, 2018), displayed a significantly lower number of TCR\u03b2 clonotypes compared to MSS tumors (2181 vs 5330, p=0.057, Figure 2\u2014figure supplement 2a and 3), aligning with previous research (Laghi et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific clonotype counts with statistical significance and references figures and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "f9c9ac0d-2b91-4797-a1cb-35deba7d90f9",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C25",
+      "claim": "After filtering out TCR clones with read counts below 1, a total of 74,590 TCR clones were obtained.",
+      "claim_type": "EXPLICIT",
+      "source": "After filtering out TCR clones with read counts below 1, we obtained a total of 74,590 TCR clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific clone counts after filtering.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "325777a9-b87d-43a4-a0f7-d17b9f6bf978",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C26",
+      "claim": "95.1% of all identified TCR\u03b2-CDR3 clones comprised unique clonotypes found in one patient, while 4.9% were recurrently observed in at least two patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The preeminent majority, constituting 95.1% of all identified TCR\u03b2-CDR3 clones, comprised unique clonotypes found in one patient, while the remaining 4.9% were recurrently observed in at least two patients (Figure 2\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific percentages of unique vs. shared clonotypes and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "7eb27945-79ec-46e8-ad2b-a920bcddf985",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C27",
+      "claim": "59 distinct V segments and 13 distinct J segments were identified, collectively sharing 185,627 clones across the 28 tumor tissue samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, we identified 59 distinct V segments (Figure 2\u2014figure supplement 2c) and 13 distinct J segments (Figure 2\u2014figure supplement 2d), collectively sharing 185,627 clones across the 28 tumor tissue samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific counts of V and J segments and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "a47ed520-4083-4d14-b8aa-2d9ddba7d45f",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C28",
+      "claim": "Immunogenic peptides exhibited a significantly higher prevalence of peptides with robust HLA binding (percentile rank <2%) compared to non-immunogenic counterparts (p<0.00001).",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, our analysis revealed a significantly higher prevalence of peptides with robust HLA binding (percentile rank <2%) among immunogenic peptides in contrast to their non-immunogenic counterparts (Figure 3A & B, p<0.00001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison of HLA binding between immunogenic and non-immunogenic peptides and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "1d9b6df2-3625-4080-aaa2-9fe63594764a",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C29",
+      "claim": "Immunogenic peptides exhibited a greater proportion of peptides with percentile ranks indicating pHLA-TCR binding of <2% compared to non-immunogenic peptides (p=0.086).",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, immunogenic peptides exhibited a greater proportion of peptides with percentile ranks indicating pHLA-TCR binding of <2% compared to non-immunogenic peptides (Figure 3C & D, p=0.086).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports statistical comparison of pHLA-TCR binding and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "87537d89-8b08-4655-912f-cfe2e03fa46d",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C30",
+      "claim": "pHLA binding affinity exhibited a positive predictive value (PPV) of 68.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing this predefined threshold, both pHLA and pHLA-TCR binding affinity exhibited comparable positive predictive values (PPV), at 68.5% (Figure 3B) and 64.3% (Figure 3D), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific PPV values and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "37c9f641-2a96-4b13-99d7-93afdffc83ee",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C31",
+      "claim": "pHLA-TCR binding affinity exhibited a positive predictive value (PPV) of 64.3%.",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing this predefined threshold, both pHLA and pHLA-TCR binding affinity exhibited comparable positive predictive values (PPV), at 68.5% (Figure 3B) and 64.3% (Figure 3D), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific PPV values and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "7debc9f7-85b3-41a4-b363-0e62c7e4c47a",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C32",
+      "claim": "When simultaneously applying cutoff values for both HLA-peptide and TCR-peptide percentile ranks, the PPV increased to 76.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "When we simultaneously applied the cutoff values for both HLA-peptide and TCR-peptide percentile ranks (Q1 group, Figure 3E), the PPV increased to 76.9% from 68.5% and 64.3% for individual binding features (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports improved PPV when combining both features and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "cf1fe54f-31fe-4636-8a9d-9f1e8e6a1693",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C33",
+      "claim": "pHLA-TCR binding displayed remarkedly lower sensitivity but higher specificity compared to pHLA binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, pHLA-TCR binding displayed a remarkedly lower sensitivity but higher specificity in comparison to pHLA binding (Figure 3G), implying their potential as a complementary criteria for the selection of immunogenic peptides.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports comparative performance metrics and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "bc0e2cac-a51f-4027-b4f4-01c3fd30f868",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C34",
+      "claim": "XGB demonstrated the highest performance among the three examined algorithms, achieving an AUC of 0.82 in the training dataset and 0.84 in the validation dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these algorithms, XGB demonstrated the highest performance, achieving an area under the receiver operating characteristic curve (AUC) of 0.82 in the training dataset and 0.84 in the validation dataset (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific AUC values for the XGB algorithm and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "2447ea00-c98b-4017-993e-566962b08435",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C35",
+      "claim": "The combined model yielded sensitivity AUC values of 0.82 (95% CI 0.81\u20130.84) and 0.84 (95% CI 0.82\u20130.86) for discovery and validation cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined model yielded sensitivity AUC values of 0.82 (95% CI 0.81\u20130.84) and 0.84 (95% CI 0.82\u20130.86) for discovery and validation cohorts, whereas the pHLA-TCR feature alone achieved AUC values of 0.69 (95% CI 0.66\u20130.71) and 0.74 (95% CI 0.71\u20130.77).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific AUC values with confidence intervals for the combined model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "92245db2-7f27-4485-92a0-b3c191f8ed13",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C36",
+      "claim": "The pHLA-TCR feature alone achieved AUC values of 0.69 (95% CI 0.66\u20130.71) and 0.74 (95% CI 0.71\u20130.77) for discovery and validation cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "The combined model yielded sensitivity AUC values of 0.82 (95% CI 0.81\u20130.84) and 0.84 (95% CI 0.82\u20130.86) for discovery and validation cohorts, whereas the pHLA-TCR feature alone achieved AUC values of 0.69 (95% CI 0.66\u20130.71) and 0.74 (95% CI 0.71\u20130.77).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports specific AUC values with confidence intervals for the pHLA-TCR feature.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "1c36bf78-ac3f-44ab-9f7f-28b2bdc05add",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C37",
+      "claim": "The pHLA feature resulted in AUC values of 0.76 (95% CI 0.75\u20130.78) and 0.74 (95% CI 0.72\u20130.77) for discovery and validation cohorts.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, the pHLA feature resulted in AUC values of 0.76 (95% CI 0.75\u20130.78) and 0.74 (95% CI 0.72\u20130.77) (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific AUC values with confidence intervals for the pHLA feature and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "f37776b1-1429-4bad-a402-dc5ad7361e8a",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C38",
+      "claim": "At >95% specificity, the combined model achieved a sensitivity of 39.7% compared to 5.9% and 19.7% for single feature methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the combined model achieved a greater sensitivity (39.7% vs 5.9% and 19.7% at > 95% specificity; 47.1% vs 3.5% and 18.8% at >99% specificity, Figure 4C), negative predictive value (NPV, 87.7% vs 82% and 84.2% at >95% specificity; 88.9% vs 81.5% and 83.9% at >99% specificity, Figure 4D), and positive predictive value (PPV, 65.9% vs 22.2% and 47.1% at >95% specificity; 62.3% vs 11.8% and 39.4% at >99% specificity, Figure 4E) compared to the single feature methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific sensitivity values at defined specificity thresholds and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "4f9c1d95-0c1a-4f8f-9abd-878ee3839e25",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C39",
+      "claim": "At >99% specificity, the combined model achieved a sensitivity of 47.1% compared to 3.5% and 18.8% for single feature methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the combined model achieved a greater sensitivity (39.7% vs 5.9% and 19.7% at > 95% specificity; 47.1% vs 3.5% and 18.8% at >99% specificity, Figure 4C), negative predictive value (NPV, 87.7% vs 82% and 84.2% at >95% specificity; 88.9% vs 81.5% and 83.9% at >99% specificity, Figure 4D), and positive predictive value (PPV, 65.9% vs 22.2% and 47.1% at >95% specificity; 62.3% vs 11.8% and 39.4% at >99% specificity, Figure 4E) compared to the single feature methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific sensitivity values at defined specificity thresholds and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "70eb1e9b-7d10-45f0-b3b2-0d9daa2c4821",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C40",
+      "claim": "At >95% specificity, the combined model achieved an NPV of 87.7% compared to 82% and 84.2% for single feature methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the combined model achieved a greater sensitivity (39.7% vs 5.9% and 19.7% at > 95% specificity; 47.1% vs 3.5% and 18.8% at >99% specificity, Figure 4C), negative predictive value (NPV, 87.7% vs 82% and 84.2% at >95% specificity; 88.9% vs 81.5% and 83.9% at >99% specificity, Figure 4D), and positive predictive value (PPV, 65.9% vs 22.2% and 47.1% at >95% specificity; 62.3% vs 11.8% and 39.4% at >99% specificity, Figure 4E) compared to the single feature methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific NPV values at defined specificity thresholds and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "2aff97f6-839c-402e-ae47-c0ab34429d97",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C41",
+      "claim": "At >99% specificity, the combined model achieved an NPV of 88.9% compared to 81.5% and 83.9% for single feature methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the combined model achieved a greater sensitivity (39.7% vs 5.9% and 19.7% at > 95% specificity; 47.1% vs 3.5% and 18.8% at >99% specificity, Figure 4C), negative predictive value (NPV, 87.7% vs 82% and 84.2% at >95% specificity; 88.9% vs 81.5% and 83.9% at >99% specificity, Figure 4D), and positive predictive value (PPV, 65.9% vs 22.2% and 47.1% at >95% specificity; 62.3% vs 11.8% and 39.4% at >99% specificity, Figure 4E) compared to the single feature methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific NPV values at defined specificity thresholds and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "56472298-4c73-4f3c-aca2-60589dbef870",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C42",
+      "claim": "At >95% specificity, the combined model achieved a PPV of 65.9% compared to 22.2% and 47.1% for single feature methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the combined model achieved a greater sensitivity (39.7% vs 5.9% and 19.7% at > 95% specificity; 47.1% vs 3.5% and 18.8% at >99% specificity, Figure 4C), negative predictive value (NPV, 87.7% vs 82% and 84.2% at >95% specificity; 88.9% vs 81.5% and 83.9% at >99% specificity, Figure 4D), and positive predictive value (PPV, 65.9% vs 22.2% and 47.1% at >95% specificity; 62.3% vs 11.8% and 39.4% at >99% specificity, Figure 4E) compared to the single feature methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific PPV values at defined specificity thresholds and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "5e02b6da-da52-4076-b941-3ef9ff048166",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C43",
+      "claim": "At >99% specificity, the combined model achieved a PPV of 62.3% compared to 11.8% and 39.4% for single feature methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the combined model achieved a greater sensitivity (39.7% vs 5.9% and 19.7% at > 95% specificity; 47.1% vs 3.5% and 18.8% at >99% specificity, Figure 4C), negative predictive value (NPV, 87.7% vs 82% and 84.2% at >95% specificity; 88.9% vs 81.5% and 83.9% at >99% specificity, Figure 4D), and positive predictive value (PPV, 65.9% vs 22.2% and 47.1% at >95% specificity; 62.3% vs 11.8% and 39.4% at >99% specificity, Figure 4E) compared to the single feature methods.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific PPV values at defined specificity thresholds and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "5a528100-847c-4af5-8caf-4723e535899e",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C44",
+      "claim": "In the validation phase, the combined model attained a ranking coverage score of 0.37, while pHLA-TCR and pHLA yielded scores of \u20130.26 and 0.25, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "In the validation phase, the combined model exhibited superior rank coverage scores in comparison to the individual feature-based methods. The combined model attained a ranking coverage score of 0.37, while the single-feature methods, pHLA-TCR and pHLA, yielded scores of \u20130.26 and 0.25, respectively (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific ranking coverage scores and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "8d990b68-7254-468e-8135-bd78132ec330",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C45",
+      "claim": "Out of 44 selected LPs, three LPs identified by the NetMHCpan method were confirmed as immunogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 44 selected LPs, we confirmed the immunogenicity of three LPs (RNF213_W719S, MAP3K1_L1202F, and TRRAP_T148TEL) identified by the NetMHCpan method and seven LPs (NCOR2_R1963H, TRRAP_F1568S, DICER1_P1592L, KMT2C_K3848T, BRAF_EV275-276-, SMAD4_G230R, and PTPN13_D184A) selected by the combined method (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific validated peptides and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "e13e3198-d30b-4c74-ace1-26530116e39e",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C46",
+      "claim": "Seven LPs selected by the combined method were confirmed as immunogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Out of the 44 selected LPs, we confirmed the immunogenicity of three LPs (RNF213_W719S, MAP3K1_L1202F, and TRRAP_T148TEL) identified by the NetMHCpan method and seven LPs (NCOR2_R1963H, TRRAP_F1568S, DICER1_P1592L, KMT2C_K3848T, BRAF_EV275-276-, SMAD4_G230R, and PTPN13_D184A) selected by the combined method (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific validated peptides and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "aec79fa0-1e82-4467-ad97-6446f85eb468",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C47",
+      "claim": "Six patients exhibited at least one immunogenic peptide identified by the combined method.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, six patients exhibited at least one immunogenic peptide identified by the combined method, whereas none of the LPs in five patients, PT07, PT18, PT21, PT24, and PT25, chosen via the NetMHCpan method were validated as immunogenic (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports the number of patients with validated peptides and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "706bb9a8-8cd7-4b87-8d20-5f2f8668d3fd",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C48",
+      "claim": "None of the LPs in five patients (PT07, PT18, PT21, PT24, and PT25) chosen via the NetMHCpan method were validated as immunogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, six patients exhibited at least one immunogenic peptide identified by the combined method, whereas none of the LPs in five patients, PT07, PT18, PT21, PT24, and PT25, chosen via the NetMHCpan method were validated as immunogenic (Figure 5C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific patients with no validated peptides from NetMHCpan and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "5dba7aa6-1075-432b-8a50-ace5a90614e2",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C49",
+      "claim": "The combined method exhibited higher rank coverage scores in five out of eight patients, resulting in an overall score of 0.04.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with our in silico analyses, we observed higher rank coverage scores for the combined method in five out of the eight patients, resulting in an overall score of 0.04 (Figure 5E, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific ranking coverage scores and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "908fb7ea-c986-4ec0-90fd-bbc751528f9a",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C50",
+      "claim": "The NetMHCpan method exhibited a lower rank coverage score of \u20130.37.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the NetMHCpan method exhibited a lower rank coverage score of \u20130.37 (Figure 5E, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript reports specific ranking coverage score for NetMHCpan and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "8d9e4fc7-eba4-4e60-b50a-8410dac40d3f",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C51",
+      "claim": "The combined model from pMTNet and NetMHCpan outperforms the NetTCR tool (Montemurro et al., 2021; Supplementary file 1d).",
+      "claim_type": "EXPLICIT",
+      "source": "The findings indicate that the combined model from pMTNet and NetMHCpan outperforms the NetTCR tool (Montemurro et al., 2021; Supplementary file 1d).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports comparative performance with NetTCR and provides a citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "02b60e87-45df-4aa4-8ce8-722aec2ad782",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C52",
+      "claim": "The four identified neoantigen candidates with confirmed immunogenicity by the combined approach have not been previously reported in public neoantigen-databases.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the four identified neoantigen candidates with confirmed immunogenicity by the combined approach have not been previously reported in public neoantigen-databases, indicating that they could serve as novel targets for neoantigen based therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript reports that certain validated neoantigens are novel based on database searches.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "fb9d9344-f355-4de4-9737-b3a99f9d9a2d",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C53",
+      "claim": "MSI-H patients with strong immune reactivity to neoantigens display a lower number of TCR clonotypes and reduced diversity compared to MSS patients.",
+      "claim_type": "IMPLICIT",
+      "source": "In contrast, MSI-H tumors, which are known to be rich in neoantigens (Roudko et al., 2020; Maleki Vareki, 2018), displayed a significantly lower number of TCR\u03b2 clonotypes compared to MSS tumors (2181 vs 5330, p=0.057, Figure 2\u2014figure supplement 2a and 3), aligning with previous research (Laghi et al., 2020).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript implies that MSI-H patients have strong immune reactivity based on their neoantigen-rich status and observed TCR patterns.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "4b056dac-5774-46ea-b141-9875eb96dbc1",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C54",
+      "claim": "The lower TCR diversity in MSI-H patients hints at the potential enrichment of neoantigen-reactive TCR clonotypes.",
+      "claim_type": "EXPLICIT",
+      "source": "This stark contrast in TCR\u03b2 diversity hints at the potential enrichment of neoantigen-reactive TCR clonotypes in MSI-H patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript speculates about the biological meaning of the observed TCR diversity differences.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "e8588eba-0662-4561-89b8-fdf11d11d3d5",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C55",
+      "claim": "Integrating pHLA binding prediction with the assessment of pHLA-TIL TCR binding enhances the accuracy of neoantigen selection and prioritization.",
+      "claim_type": "EXPLICIT",
+      "source": "By encompassing the interaction between neoantigens and the tumor microenvironment, we have demonstrated a substantial enhancement in the accuracy of neoantigen selection and prioritization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents this as a conclusion based on the study's findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "6474c108-163a-4b4c-87a2-0443b46234b9",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C56",
+      "claim": "The current bioinformatic workflows used in neoantigen selection and prioritization do not incorporate TCR sequencing data.",
+      "claim_type": "EXPLICIT",
+      "source": "Unfortunately, the current bioinformatic workflows used in neoantigen selection and prioritization do not incorporate TCR sequencing data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as a limitation of current approaches based on the authors' knowledge of the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "457fb887-24a5-4e43-aaf3-fba9a71b0f05",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C57",
+      "claim": "Twenty-eight patients diagnosed with CRC were enrolled in this study at the University Medical Center in Ho Chi Minh City between June 2022 and May 2023.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-eight patients diagnosed with CRC were enrolled in this study at the University Medical Center in Ho Chi Minh City between June 2022 and May 2023.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the study enrollment details.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "2cd63128-dc14-421e-bad7-b872db7af021",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C58",
+      "claim": "This study was approved by the Ethics Committee of the University of Medicine and Pharmacy in Ho Chi Minh City, Vietnam.",
+      "claim_type": "EXPLICIT",
+      "source": "This study was approved by the Ethics Committee of the University of Medicine and Pharmacy in Ho Chi Minh City, Vietnam.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "84aded1a-e7dd-4bb1-ae9d-4b800a73c710",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C59",
+      "claim": "If the stimulation with a mutant LP resulted in a >twofold increase in IFN\u03b3 spots compared to its corresponding wild-type LP, the respective neoantigen candidate was classified as an immunogenic neoantigen.",
+      "claim_type": "EXPLICIT",
+      "source": "If the stimulation with a mutant LP resulted in a >twofold increase in IFN\u03b3 spots compared to its corresponding wild-type LP, the respective neoantigen candidate was classified as an immunogenic neoantigen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly defines the criteria for classifying immunogenic neoantigens.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "fb6b5c59-772b-458e-bb41-034622337a98",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "claim_id": "C60",
+      "claim": "A fold change of two was selected as the cutoff for positivity in the ELISpot assay, indicating a significant increase in reactivity (Moodie et al., 2010).",
+      "claim_type": "EXPLICIT",
+      "source": "A fold change of two was selected as the cutoff for positivity, indicating a significant increase in reactivity (Moodie et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states the cutoff criteria with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TCR\u03b2 sequencing of 28 CRC patients yielded an average of 2,992,949 productive TCR reads per sample, identifying 433 to 27,749 clonotypes per patient. The CDR3 length distribution was normally distributed (median 14, range 4-43), and an inverse relationship was observed between TCR clone number and Shannon index. After filtering, 74,590 TCR clones were obtained, with 95.1% being unique to individual patients and 4.9% shared across patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C17-C22, C25-C27 provide comprehensive sequencing metrics and characterization of TCR repertoires. The data are internally consistent, include appropriate quality control measures (UMI-based filtering, duplicate removal), and report specific quantitative values with referenced figures. The normal distribution of CDR3 length and inverse relationship between clones and Shannon index align with prior literature (C20, C21).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "2e2d8da5-1157-49c6-9228-fc162903abe4",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both intra-tumor and inter-patient heterogeneity in TCR\u03b2 repertoires were observed in CRC patients, with variable clonotype numbers (433-27,749) across patients and 95.1% of clonotypes being patient-specific. This heterogeneity is attributed to stochastic utilization of V and J segments in response to neoantigens.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C2 and C18 demonstrate heterogeneity with quantitative data (C26, C27). However, C3's mechanistic attribution to 'stochastic utilization of V and J segments in response to neoantigens' is speculative and not directly tested. The observed V/J segment diversity could result from multiple factors beyond neoantigen response, and no direct evidence links the observed patterns specifically to neoantigen recognition.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "31c1499a-835a-469c-a22f-9b10518b7297",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MSI-H tumors displayed significantly lower TCR\u03b2 clonotype numbers compared to MSS tumors (2181 vs 5330, p=0.057), despite being neoantigen-rich. This lower diversity is interpreted as potential enrichment of neoantigen-reactive TCR clonotypes in MSI-H patients. No significant correlations were found between TCR clonality/diversity and other clinical variables (tumor staging, gender, location).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C24 reports a p-value of 0.057, which does not meet conventional statistical significance (p<0.05), yet the text describes this as 'significantly lower.' This is a mischaracterization of statistical significance. Claims C53-C54 are speculative interpretations without direct experimental validation. The hypothesis that lower diversity indicates enrichment of neoantigen-reactive clones requires functional validation (e.g., neoantigen-specific TCR identification).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "ddf6f2b4-f49b-4357-be21-c3e7ec027cdc",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Analysis of public databases revealed that immunogenic peptides exhibited significantly higher prevalence of strong HLA binding (percentile rank <2%, p<0.00001, PPV=68.5%) and pHLA-TCR binding (percentile rank <2%, p=0.086, PPV=64.3%) compared to non-immunogenic peptides. Combining both criteria increased PPV to 76.9%. pHLA-TCR binding showed lower sensitivity but higher specificity than pHLA binding alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 present a systematic comparison of binding features between immunogenic and non-immunogenic peptides from public databases. The statistical tests are appropriate (chi-square), p-values are reported, and the complementary nature of the two features (C33) is demonstrated with specificity/sensitivity trade-offs. The improved PPV when combining features (C32) provides rationale for the combined approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "A combined machine learning model integrating pHLA and pHLA-TCR binding features was developed using XGB algorithm, achieving AUC values of 0.82 (discovery) and 0.84 (validation). At >95% specificity, the combined model achieved sensitivity of 39.7%, NPV of 87.7%, and PPV of 65.9%, outperforming single-feature methods. The combined model attained a ranking coverage score of 0.37 in validation, superior to pHLA (-0.26) and pHLA-TCR (0.25) alone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C44 provide comprehensive performance metrics with confidence intervals for the combined model across discovery and validation cohorts. The 70/30 train-test split with 10-fold cross-validation is appropriate. Performance improvements are consistent across multiple metrics (AUC, sensitivity, NPV, PPV, ranking coverage). The high specificity thresholds (>95%, >99%) address the stated goal of reducing false positives in neoantigen prediction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "13931ebc-2622-4ac0-acc6-18592bc33411",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Experimental validation using ELISpot assays on 44 long peptides from 8 CRC patients confirmed 3 immunogenic peptides identified by NetMHCpan and 7 by the combined method. Six patients had at least one immunogenic peptide identified by the combined method, while five patients had no validated peptides from NetMHCpan. The combined method achieved a ranking coverage score of 0.04 versus -0.37 for NetMHCpan, and outperformed NetTCR in independent validation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C5, C45-C51 provide experimental validation of the computational predictions. The ELISpot assay with >2-fold cutoff (C59-C60) is an established method. The combined model identified more immunogenic peptides (7 vs 3) and performed better in ranking (0.04 vs -0.37). However, the validation is limited to 8 patients due to sample availability, and the abstract states 'four CRC patients' while the results describe eight patients, creating an inconsistency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "9d76a27f-3949-4f88-9391-34ade6fcda0e",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Four neoantigen candidates with confirmed immunogenicity identified by the combined approach have not been previously reported in public neoantigen databases, representing potential novel therapeutic targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C52 reports database searches confirming novelty of four validated neoantigens. This is a straightforward data-driven claim supported by database queries. The identification of novel neoantigens demonstrates the practical utility of the combined approach beyond simply improving prediction accuracy.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "41d2d160-f642-4150-8598-2ae7265c0e92",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Integrating pHLA binding prediction with pHLA-TIL TCR binding assessment enhances the accuracy of neoantigen selection and prioritization. Current bioinformatic workflows do not incorporate TCR sequencing data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C55 is supported by the comprehensive experimental and computational results showing improved performance of the combined model (C4, C34-C44, C45-C50). Claim C56 is a knowledge claim about the field that is reasonable given the literature context. Together, these claims establish the rationale and contribution of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "5a216a83-513f-4946-83af-4b30332391de",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Background claims establish that immunotherapy has improved survival in metastatic CRC (C6), ICIs are FDA-approved for dMMR/MSI-H patients (C7) but not effective in pMMR/MSS patients (C8), neoantigens are associated with better ICI response (C9-C11), current approaches are limited by relying solely on pHLA binding (C12-C13), and TCR recognition is critical for T cell activation (C14-C16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C16 are background/context claims supported by appropriate citations to established literature. These claims accurately represent the current state of knowledge in the field and provide rationale for the study. The citations appear appropriate for the claims made.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "d8ec7dbb-8a1c-4941-bfa1-a4c43dcaddc4",
+      "content_id": "ad2c3574-0916-4c3d-8046-be2c06339324",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Twenty-eight CRC patients were enrolled at University Medical Center Ho Chi Minh City (June 2022-May 2023) with ethical approval. Immunogenic neoantigens were defined as mutant long peptides producing >2-fold increase in IFN\u03b3 spots compared to wild-type in ELISpot assays, based on established criteria.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C60 describe study enrollment, ethical approval, and experimental criteria. These are straightforward methodological claims. The 2-fold cutoff for ELISpot positivity (C60) is supported by citation to Moodie et al., 2010, providing established precedent for this threshold.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad",
+      "content_id": "cc3e44f1-d92b-4cbf-9cc6-364998864494",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors performed TCR\u03b2 sequencing on 28 CRC patients to characterize TCR repertoire heterogeneity, finding variable clonotype numbers (433-27,749), CDR3 length distributions, and differences between MSI-H and MSS tumors. MSI-H tumors showed significantly lower TCR clonotype numbers compared to MSS tumors (2181 vs 5330, p=0.057), which the authors interpret as potential enrichment of neoantigen-reactive clonotypes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewers acknowledge the comprehensive patient data collection and TCR profiling as a strength of the study. One reviewer specifically notes 'The study meticulously collected and analyzed clinical data from 27 CRC patients, ensuring a robust foundation for research findings.' No concerns were raised about the TCR sequencing methodology or the characterization of repertoire heterogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "707c1dcb-c463-4ce8-b039-3f714b8bdce3",
+      "content_id": "cc3e44f1-d92b-4cbf-9cc6-364998864494",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors analyzed binding features showing that immunogenic peptides had significantly higher prevalence of strong HLA binding (p<0.00001) and pHLA-TCR binding (p=0.086) compared to non-immunogenic peptides. Individual features showed PPVs of 68.5% (pHLA) and 64.3% (pHLA-TCR), while combining both features increased PPV to 76.9%. pHLA-TCR binding showed lower sensitivity but higher specificity than pHLA binding alone.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praised this analysis, noting 'The use of machine learning classifiers (RF, LR, XGB) and the combination of pHLA and pHLA-TCR binding predictions significantly enhance the model's accuracy in identifying immunogenic neoantigens, as evidenced by the high AUC values and improved sensitivity, NPV, and PPV.' No concerns were raised about these comparative binding analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f",
+      "content_id": "cc3e44f1-d92b-4cbf-9cc6-364998864494",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors developed a combined machine learning model integrating pHLA and pHLA-TCR binding that achieved AUC values of 0.82 (discovery) and 0.84 (validation), outperforming individual features (pHLA: 0.76/0.74; pHLA-TCR: 0.69/0.74). At >95% specificity, the combined model achieved 39.7% sensitivity, 87.7% NPV, and 65.9% PPV compared to lower values for single features. The model also showed superior ranking coverage scores (0.37) compared to individual features.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly endorsed the computational model performance, stating 'The use of machine learning classifiers (RF, LR, XGB) and the combination of pHLA and pHLA-TCR binding predictions significantly enhance the model's accuracy in identifying immunogenic neoantigens, as evidenced by the high AUC values and improved sensitivity, NPV, and PPV.' The computational predictions were accepted without methodological concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "73fcc9d0-6426-45ff-8417-248c9117c568",
+      "content_id": "cc3e44f1-d92b-4cbf-9cc6-364998864494",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors validated their combined model using ELISpot assays on 8 CRC patients (increased from 4 in the original submission), testing 44 peptides. The combined method identified 7 immunogenic peptides while NetMHCpan identified 3, with 6 patients showing at least one immunogenic peptide by the combined method. The combined method achieved a ranking coverage score of 0.04 versus -0.37 for NetMHCpan. Four validated neoantigens were novel and not previously reported in public databases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor explicitly states that 'the experimental validation of the computational predictions with actual immune responses is still limited, despite the increase in sample size from 4 to 8 in this revision.' While reviewers praised the experimental validation approach ('The use of experimental validation through ELISpot assays adds a practical dimension to the study'), the editor's concern about limited validation indicates the evidence remains incomplete for fully supporting the primary claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "9bfdc6c5-31ee-4f03-9824-f6c192844a58",
+      "content_id": "cc3e44f1-d92b-4cbf-9cc6-364998864494",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors conclude that integrating pHLA binding with pHLA-TCR binding enhances neoantigen selection accuracy, addressing a gap in current bioinformatic workflows that do not incorporate TCR sequencing data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledged the 'novel approach' and noted that the study 'highlights the significance of combining TCR and pHLA data for advancing personalized immunotherapy strategies,' the editor's statement that 'the evidence supporting the primary claim remains somewhat incomplete' indicates that the overall conclusion about enhanced accuracy is not fully supported by the limited experimental validation provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "b3c1e109-aeaa-474a-8395-d360fad10956",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "db925cf1-5094-4a16-9062-88436f76544c",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "6d141160-7470-41c3-9e82-ed1ebe6fe905",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "45e3c7e6-30f9-4a5e-a8a3-f13a85b11100",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "caeeab25-1c69-4779-a07b-ee555cb1045c",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "b86e0ef3-3596-47f1-ae1d-177a1110a02b",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "d31a5224-2562-47a0-807e-aad9887ab8bd",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "f9c9ac0d-2b91-4797-a1cb-35deba7d90f9",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "325777a9-b87d-43a4-a0f7-d17b9f6bf978",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "7eb27945-79ec-46e8-ad2b-a920bcddf985",
+      "result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d"
+    },
+    {
+      "claim_id": "66b7d034-330e-4e40-9303-4a27319916b2",
+      "result_id": "2e2d8da5-1157-49c6-9228-fc162903abe4"
+    },
+    {
+      "claim_id": "509c42f6-048e-43d9-9c06-82482444729f",
+      "result_id": "2e2d8da5-1157-49c6-9228-fc162903abe4"
+    },
+    {
+      "claim_id": "6d141160-7470-41c3-9e82-ed1ebe6fe905",
+      "result_id": "2e2d8da5-1157-49c6-9228-fc162903abe4"
+    },
+    {
+      "claim_id": "325777a9-b87d-43a4-a0f7-d17b9f6bf978",
+      "result_id": "2e2d8da5-1157-49c6-9228-fc162903abe4"
+    },
+    {
+      "claim_id": "7eb27945-79ec-46e8-ad2b-a920bcddf985",
+      "result_id": "2e2d8da5-1157-49c6-9228-fc162903abe4"
+    },
+    {
+      "claim_id": "7cd06d50-2fda-4cc0-9c60-d17359668d39",
+      "result_id": "31c1499a-835a-469c-a22f-9b10518b7297"
+    },
+    {
+      "claim_id": "d1de3311-ad36-47f0-bfea-f321955bef6b",
+      "result_id": "31c1499a-835a-469c-a22f-9b10518b7297"
+    },
+    {
+      "claim_id": "fb9d9344-f355-4de4-9737-b3a99f9d9a2d",
+      "result_id": "31c1499a-835a-469c-a22f-9b10518b7297"
+    },
+    {
+      "claim_id": "4b056dac-5774-46ea-b141-9875eb96dbc1",
+      "result_id": "31c1499a-835a-469c-a22f-9b10518b7297"
+    },
+    {
+      "claim_id": "a47ed520-4083-4d14-b8aa-2d9ddba7d45f",
+      "result_id": "ddf6f2b4-f49b-4357-be21-c3e7ec027cdc"
+    },
+    {
+      "claim_id": "1d9b6df2-3625-4080-aaa2-9fe63594764a",
+      "result_id": "ddf6f2b4-f49b-4357-be21-c3e7ec027cdc"
+    },
+    {
+      "claim_id": "87537d89-8b08-4655-912f-cfe2e03fa46d",
+      "result_id": "ddf6f2b4-f49b-4357-be21-c3e7ec027cdc"
+    },
+    {
+      "claim_id": "37c9f641-2a96-4b13-99d7-93afdffc83ee",
+      "result_id": "ddf6f2b4-f49b-4357-be21-c3e7ec027cdc"
+    },
+    {
+      "claim_id": "7debc9f7-85b3-41a4-b363-0e62c7e4c47a",
+      "result_id": "ddf6f2b4-f49b-4357-be21-c3e7ec027cdc"
+    },
+    {
+      "claim_id": "cf1fe54f-31fe-4636-8a9d-9f1e8e6a1693",
+      "result_id": "ddf6f2b4-f49b-4357-be21-c3e7ec027cdc"
+    },
+    {
+      "claim_id": "bc0e2cac-a51f-4027-b4f4-01c3fd30f868",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "2447ea00-c98b-4017-993e-566962b08435",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "92245db2-7f27-4485-92a0-b3c191f8ed13",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "1c36bf78-ac3f-44ab-9f7f-28b2bdc05add",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "f37776b1-1429-4bad-a402-dc5ad7361e8a",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "4f9c1d95-0c1a-4f8f-9abd-878ee3839e25",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "70eb1e9b-7d10-45f0-b3b2-0d9daa2c4821",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "2aff97f6-839c-402e-ae47-c0ab34429d97",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "56472298-4c73-4f3c-aca2-60589dbef870",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "5e02b6da-da52-4076-b941-3ef9ff048166",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "5a528100-847c-4af5-8caf-4723e535899e",
+      "result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66"
+    },
+    {
+      "claim_id": "f13eadf2-178f-47ae-b757-7fab77aa2d00",
+      "result_id": "13931ebc-2622-4ac0-acc6-18592bc33411"
+    },
+    {
+      "claim_id": "31c3a041-fd25-421a-b15a-4a843c4124f0",
+      "result_id": "13931ebc-2622-4ac0-acc6-18592bc33411"
+    },
+    {
+      "claim_id": "8d990b68-7254-468e-8135-bd78132ec330",
+      "result_id": "13931ebc-2622-4ac0-acc6-18592bc33411"
+    },
+    {
+      "claim_id": "e13e3198-d30b-4c74-ace1-26530116e39e",
+      "result_id": "13931ebc-2622-4ac0-acc6-18592bc33411"
+    },
+    {
+      "claim_id": "aec79fa0-1e82-4467-ad97-6446f85eb468",
+      "result_id": "13931ebc-2622-4ac0-acc6-18592bc33411"
+    },
+    {
+      "claim_id": "706bb9a8-8cd7-4b87-8d20-5f2f8668d3fd",
+      "result_id": "13931ebc-2622-4ac0-acc6-18592bc33411"
+    },
+    {
+      "claim_id": "5dba7aa6-1075-432b-8a50-ace5a90614e2",
+      "result_id": "13931ebc-2622-4ac0-acc6-18592bc33411"
+    },
+    {
+      "claim_id": "908fb7ea-c986-4ec0-90fd-bbc751528f9a",
+      "result_id": "13931ebc-2622-4ac0-acc6-18592bc33411"
+    },
+    {
+      "claim_id": "8d9e4fc7-eba4-4e60-b50a-8410dac40d3f",
+      "result_id": "13931ebc-2622-4ac0-acc6-18592bc33411"
+    },
+    {
+      "claim_id": "02b60e87-45df-4aa4-8ce8-722aec2ad782",
+      "result_id": "9d76a27f-3949-4f88-9391-34ade6fcda0e"
+    },
+    {
+      "claim_id": "e8588eba-0662-4561-89b8-fdf11d11d3d5",
+      "result_id": "41d2d160-f642-4150-8598-2ae7265c0e92"
+    },
+    {
+      "claim_id": "6474c108-163a-4b4c-87a2-0443b46234b9",
+      "result_id": "41d2d160-f642-4150-8598-2ae7265c0e92"
+    },
+    {
+      "claim_id": "d714fb9b-5e24-463e-ad08-0f63be848cfd",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "84b85fa3-6ee1-40f2-a43a-69ae97632ffb",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "e232e321-7dfa-4450-90b4-3721efb28bb9",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "3810aecd-6f00-4137-9511-df9d2ed35dc6",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "fe79b839-62b8-47fb-9f13-189fe23da882",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "a91f688f-1b68-47aa-9ae2-195d213f0edc",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "ecda5a27-70b5-4210-b8ef-21ef26c3f33c",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "8699e163-c209-4fcc-95e3-c9510d646dd3",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "a2869fe7-fa90-49f6-85b7-f6bfc33c5601",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "e2494a34-a002-4c68-90bc-7c7af86c7fbe",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "0af3b9d4-5684-4eab-a0a3-d74acf501d78",
+      "result_id": "5a216a83-513f-4946-83af-4b30332391de"
+    },
+    {
+      "claim_id": "457fb887-24a5-4e43-aaf3-fba9a71b0f05",
+      "result_id": "d8ec7dbb-8a1c-4941-bfa1-a4c43dcaddc4"
+    },
+    {
+      "claim_id": "2cd63128-dc14-421e-bad7-b872db7af021",
+      "result_id": "d8ec7dbb-8a1c-4941-bfa1-a4c43dcaddc4"
+    },
+    {
+      "claim_id": "84aded1a-e7dd-4bb1-ae9d-4b800a73c710",
+      "result_id": "d8ec7dbb-8a1c-4941-bfa1-a4c43dcaddc4"
+    },
+    {
+      "claim_id": "fb6b5c59-772b-458e-bb41-034622337a98",
+      "result_id": "d8ec7dbb-8a1c-4941-bfa1-a4c43dcaddc4"
+    },
+    {
+      "claim_id": "b3c1e109-aeaa-474a-8395-d360fad10956",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "66b7d034-330e-4e40-9303-4a27319916b2",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "509c42f6-048e-43d9-9c06-82482444729f",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "db925cf1-5094-4a16-9062-88436f76544c",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "6d141160-7470-41c3-9e82-ed1ebe6fe905",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "45e3c7e6-30f9-4a5e-a8a3-f13a85b11100",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "caeeab25-1c69-4779-a07b-ee555cb1045c",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "b86e0ef3-3596-47f1-ae1d-177a1110a02b",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "d31a5224-2562-47a0-807e-aad9887ab8bd",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "7cd06d50-2fda-4cc0-9c60-d17359668d39",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "d1de3311-ad36-47f0-bfea-f321955bef6b",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "f9c9ac0d-2b91-4797-a1cb-35deba7d90f9",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "325777a9-b87d-43a4-a0f7-d17b9f6bf978",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "7eb27945-79ec-46e8-ad2b-a920bcddf985",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "fb9d9344-f355-4de4-9737-b3a99f9d9a2d",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "4b056dac-5774-46ea-b141-9875eb96dbc1",
+      "result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad"
+    },
+    {
+      "claim_id": "a47ed520-4083-4d14-b8aa-2d9ddba7d45f",
+      "result_id": "707c1dcb-c463-4ce8-b039-3f714b8bdce3"
+    },
+    {
+      "claim_id": "1d9b6df2-3625-4080-aaa2-9fe63594764a",
+      "result_id": "707c1dcb-c463-4ce8-b039-3f714b8bdce3"
+    },
+    {
+      "claim_id": "87537d89-8b08-4655-912f-cfe2e03fa46d",
+      "result_id": "707c1dcb-c463-4ce8-b039-3f714b8bdce3"
+    },
+    {
+      "claim_id": "37c9f641-2a96-4b13-99d7-93afdffc83ee",
+      "result_id": "707c1dcb-c463-4ce8-b039-3f714b8bdce3"
+    },
+    {
+      "claim_id": "7debc9f7-85b3-41a4-b363-0e62c7e4c47a",
+      "result_id": "707c1dcb-c463-4ce8-b039-3f714b8bdce3"
+    },
+    {
+      "claim_id": "cf1fe54f-31fe-4636-8a9d-9f1e8e6a1693",
+      "result_id": "707c1dcb-c463-4ce8-b039-3f714b8bdce3"
+    },
+    {
+      "claim_id": "f13eadf2-178f-47ae-b757-7fab77aa2d00",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "bc0e2cac-a51f-4027-b4f4-01c3fd30f868",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "2447ea00-c98b-4017-993e-566962b08435",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "92245db2-7f27-4485-92a0-b3c191f8ed13",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "1c36bf78-ac3f-44ab-9f7f-28b2bdc05add",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "f37776b1-1429-4bad-a402-dc5ad7361e8a",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "4f9c1d95-0c1a-4f8f-9abd-878ee3839e25",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "70eb1e9b-7d10-45f0-b3b2-0d9daa2c4821",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "2aff97f6-839c-402e-ae47-c0ab34429d97",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "56472298-4c73-4f3c-aca2-60589dbef870",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "5e02b6da-da52-4076-b941-3ef9ff048166",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "5a528100-847c-4af5-8caf-4723e535899e",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "8d9e4fc7-eba4-4e60-b50a-8410dac40d3f",
+      "result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f"
+    },
+    {
+      "claim_id": "31c3a041-fd25-421a-b15a-4a843c4124f0",
+      "result_id": "73fcc9d0-6426-45ff-8417-248c9117c568"
+    },
+    {
+      "claim_id": "8d990b68-7254-468e-8135-bd78132ec330",
+      "result_id": "73fcc9d0-6426-45ff-8417-248c9117c568"
+    },
+    {
+      "claim_id": "e13e3198-d30b-4c74-ace1-26530116e39e",
+      "result_id": "73fcc9d0-6426-45ff-8417-248c9117c568"
+    },
+    {
+      "claim_id": "aec79fa0-1e82-4467-ad97-6446f85eb468",
+      "result_id": "73fcc9d0-6426-45ff-8417-248c9117c568"
+    },
+    {
+      "claim_id": "706bb9a8-8cd7-4b87-8d20-5f2f8668d3fd",
+      "result_id": "73fcc9d0-6426-45ff-8417-248c9117c568"
+    },
+    {
+      "claim_id": "5dba7aa6-1075-432b-8a50-ace5a90614e2",
+      "result_id": "73fcc9d0-6426-45ff-8417-248c9117c568"
+    },
+    {
+      "claim_id": "908fb7ea-c986-4ec0-90fd-bbc751528f9a",
+      "result_id": "73fcc9d0-6426-45ff-8417-248c9117c568"
+    },
+    {
+      "claim_id": "02b60e87-45df-4aa4-8ce8-722aec2ad782",
+      "result_id": "73fcc9d0-6426-45ff-8417-248c9117c568"
+    },
+    {
+      "claim_id": "e8588eba-0662-4561-89b8-fdf11d11d3d5",
+      "result_id": "9bfdc6c5-31ee-4f03-9824-f6c192844a58"
+    },
+    {
+      "claim_id": "6474c108-163a-4b4c-87a2-0443b46234b9",
+      "result_id": "9bfdc6c5-31ee-4f03-9824-f6c192844a58"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c4ba501f-e566-498c-9044-4c992df75f9f",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "ddf6f2b4-f49b-4357-be21-c3e7ec027cdc",
+      "peer_result_id": "707c1dcb-c463-4ce8-b039-3f714b8bdce3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on binding feature analysis (C28-C33). Both evaluations find the comparative analysis of immunogenic vs non-immunogenic peptides well-supported with appropriate statistical methods and clear demonstration of complementary features.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "35872846-d0c3-4cd3-a4af-3f001ee36e84",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "41d2d160-f642-4150-8598-2ae7265c0e92",
+      "peer_result_id": "9bfdc6c5-31ee-4f03-9824-f6c192844a58",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on overall conclusions (C55-C56). OpenEval finds the claims supported by comprehensive results, while peer reviewers rate as uncertain due to editor's concern that 'evidence supporting the primary claim remains somewhat incomplete' despite acknowledging the novel approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "584416e8-2a8f-4de9-a7eb-8bf43f7cc708",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "7a567ec9-8d9d-4246-9e25-05bbbe521a66",
+      "peer_result_id": "7098be71-d50e-41a6-a8c7-a54ccb7cac9f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on computational model performance (C34-C44). Both evaluations endorse the machine learning approach, validation methodology, and reported performance metrics (AUC, sensitivity, NPV, PPV) as well-supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "4a0e1753-434b-41b2-9ff6-a8639b9a1b25",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "13931ebc-2622-4ac0-acc6-18592bc33411",
+      "peer_result_id": "73fcc9d0-6426-45ff-8417-248c9117c568",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on experimental validation sufficiency (C5, C45-C50, C52). OpenEval rates as supported despite noting limited sample size, while peer reviewers rate as uncertain with editor explicitly stating 'experimental validation of the computational predictions with actual immune responses is still limited' even after increase from 4 to 8 patients.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "11d16836-d1a5-4a96-8c44-e1524c7d9ed5",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "52bc8573-baad-4d7e-b045-c1bc6ab8c86d",
+      "peer_result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on TCR sequencing and repertoire characterization (C1, C17-C22, C25-C27). Both evaluations find the comprehensive patient data collection, sequencing metrics, and quality control measures well-supported. Peer reviewers praise 'meticulous' data collection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "75a0aeed-f065-4d55-8765-04ea3158a265",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "2e2d8da5-1157-49c6-9228-fc162903abe4",
+      "peer_result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on heterogeneity claims (C2, C3, C18, C26, C27). OpenEval rates as uncertain due to speculative mechanistic attribution in C3 regarding neoantigen response, while peer reviewers include these claims in their overall supported evaluation of TCR profiling without raising specific concerns about mechanistic interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "82c824bf-fea6-40f7-bdfc-136062581d5c",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "31c1499a-835a-469c-a22f-9b10518b7297",
+      "peer_result_id": "ff75b66b-a562-4bf5-9ef7-5bf22e79f6ad",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluation of diversity-immunogenicity relationship (C23, C24, C53, C54). OpenEval identifies statistical significance mischaracterization (p=0.057) and lack of functional validation for speculative interpretations, while peer reviewers include these claims in their supported evaluation without raising methodological concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "1896a5a0-b8ab-4467-844f-ac901f660911",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "9d76a27f-3949-4f88-9391-34ade6fcda0e",
+      "peer_result_id": "73fcc9d0-6426-45ff-8417-248c9117c568",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address novelty claim (C52). OpenEval evaluates separately as supported based on database searches, while peer reviewers include it with experimental validation claims rated as uncertain due to limited validation scope.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "889db65c-711b-4b15-b6f6-0d9c349fd96b",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "5a216a83-513f-4946-83af-4b30332391de",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background/context claims (C6-C16) as supported by appropriate literature citations. No corresponding peer review evaluation found for these introductory claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    },
+    {
+      "id": "9dcf62c4-bafc-473a-9174-d65b34ed587d",
+      "submission_id": "6bd43ed8-5e8d-4ce1-ad9a-ddef7a986362",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d8ec7dbb-8a1c-4941-bfa1-a4c43dcaddc4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated methodological claims about study enrollment, ethics, and ELISpot criteria (C57-C60) as supported. No corresponding peer review evaluation found for these procedural claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:24:43.391389Z"
+    }
+  ]
+}

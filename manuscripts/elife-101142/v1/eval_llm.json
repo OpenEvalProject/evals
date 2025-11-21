@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C75",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "IC neurons exhibit sustained firing patterns in response to sounds of varying durations (100, 500, 1000 ms), encoding sound duration through tonic firing throughout the auditory stimulus. This sustained response characteristic is conserved across species and contrasts with the more transient responses typically observed in higher auditory structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27 provide direct experimental evidence from 104 neurons showing sustained firing to different sound durations with appropriate statistical support. Claims C94-C99 contextualize these findings within the broader literature, showing consistency across species and contrast with higher auditory areas. The data are well-documented with figures and appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C76",
+      "C77"
+    ],
+    "result": "A 'climbing effect' was observed in IC neurons during behavioral tasks, characterized by a progressive increase in firing rate after the initial transient response. This effect was significantly stronger in behavioral conditions compared to non-behavioral conditions (p=4.40e-19) and was dependent on behavioral context rather than reward anticipation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 provide robust experimental evidence with appropriate statistical tests (ANOVA, paired t-tests) and clear comparisons between behavioral and non-behavioral conditions. The RDI metric is well-defined and consistently applied. Sample size (n=99) is adequate, and the behavioral dependency is convincingly demonstrated through direct comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The climbing effect in IC neurons intensified with successive presentations of standard stimuli in an oddball paradigm. Firing rates decreased from the first to second sound, then progressively increased from the second to fourth stimulus in the late window while remaining stable in the onset window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 provide detailed temporal dynamics with appropriate statistical tests (paired t-tests, ANOVA with post-hoc tests) and clear separation of onset vs. late windows. The progressive nature of the effect is well-documented across the stimulus sequence (sounds 1-7) with population-level data (n=99).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C83"
+    ],
+    "result": "Reward anticipation does not drive the climbing effect in IC neurons. In a reward protocol where sounds were followed by water rewards, neuronal responses during the sound period remained flat (p=0.098), contrasting sharply with the climbing effect observed in behavioral deviation detection tasks. The RDI was significantly higher in behavioral conditions compared to reward conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C54 provide a well-designed control experiment (n=59 neurons) that effectively dissociates reward anticipation from sensory prediction. Statistical comparisons are appropriate (ANOVA, paired t-tests), and the contrast between reward and behavioral conditions is clear. The conclusion that sensory prediction, not reward anticipation, drives the climbing effect is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C78",
+      "C107",
+      "C108",
+      "C111"
+    ],
+    "result": "IC neurons encode reward prediction errors. Reward responses were significantly stronger during initial trials compared to final trials within a reward block (p=7.00e-3 for n=28 neurons), indicating adaptation as rewards became predictable. This pattern mirrors reward prediction error signals observed in dopaminergic neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C61 provide clear experimental evidence with appropriate statistical tests comparing initial vs. final trials. The sample size (n=28 for reward-responsive neurons, n=35 for non-responsive) is adequate. The interpretation as reward prediction error is reasonable given the temporal dynamics and is supported by comparison to established literature on dopaminergic neurons (C107).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C109",
+      "C110"
+    ],
+    "result": "IC neurons demonstrate reward prediction errors in the deviation detection task. Two example neurons showed strong reward responses only in control conditions where rewards were unpredictable, but not in deviant conditions where rewards were predictable following button presses (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 provide clear evidence from carefully selected neurons without motor responses (addressing the confound noted in C62). The contrast between predictable and unpredictable reward conditions is statistically significant and conceptually sound. However, the evidence is based on only two example neurons, which limits generalizability despite the clear pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C79",
+      "C93",
+      "C100"
+    ],
+    "result": "IC neuronal activity correlates with behavioral choices in a duration deviation detection task. Single neurons showed significantly different firing rates when monkeys pressed vs. did not press the button (p=1.32e-8), with ROC analysis yielding AUC=0.86. Population analysis (n=69) showed average detection probability of 0.56, significantly above chance (p=2.57e-4).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 provide robust evidence with appropriate statistical methods (ANOVA, ROC analysis, permutation tests). The single-neuron example is compelling (AUC=0.86), and population-level analysis confirms the effect is consistent across neurons. The detection probability significantly exceeds chance level with adequate sample size. This represents novel evidence for IC involvement in decision-making.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C80",
+      "C119"
+    ],
+    "result": "The IC plays a multifaceted role extending beyond its traditional function as an auditory relay station, actively engaging in sensory prediction, reward processing, and decision-making. This challenges the traditional view of subcortical sensory systems as mere conduits for sensory information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion (C80, C119) is well-supported by the convergence of multiple experimental findings documented in other result groups. Claims C1, C7-C10 establish the traditional view and knowledge gap, while the experimental results collectively demonstrate IC's involvement in higher-order cognitive functions. The conclusion is appropriately cautious and supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Prior work has established that the IC exhibits stimulus-specific adaptation (SSA), possesses dopamine receptors and dopaminergic inputs from the subparafascicular thalamic nucleus, and that dopamine modulates IC auditory responses. However, the role of dopaminergic inputs and reward processing in primate IC remains underexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C24 accurately summarize prior literature with appropriate citations. These are background claims that establish context and identify knowledge gaps. The citations appear appropriate for the claims made, though the actual accuracy of the cited work cannot be verified without examining the original sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "RDIs across various deviant sounds (357, 425, 506, 600 ms) showed strong correlations (p<0.001) and similar values, indicating consistency of the climbing effect across different stimulus durations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by statistical analysis (Pearson correlation) and Figure 2\u2014figure supplement 2. This provides important validation that the climbing effect is a robust phenomenon not specific to particular deviant durations. The correlation analysis is appropriate for this purpose.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The observed climbing effect is consistent with previous findings by Metzger et al. (2006) showing late-trial ramping in IC during behavioral tasks. The IC's extensive descending connections from auditory cortex, thalamic nuclei, and limbic areas may underpin this effect. The progression of the climbing effect could offer a direct, real-time perspective on sensory prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C86 appropriately contextualize findings within prior literature and neuroanatomical knowledge. Claim C90 is appropriately marked as speculation. The integration with prior work strengthens the interpretation, though the mechanistic claims about descending connections (C84-C86) remain speculative without direct experimental evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "While decision signals are traditionally thought to be driven by top-down inputs, the decision-related signals in IC may derive from top-down mechanisms or IC activity may directly modulate higher brain areas. The exact mechanism remains uncertain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C118 appropriately acknowledge uncertainty about mechanisms underlying decision signals in IC. The authors present two plausible alternatives but lack direct experimental evidence to distinguish between them. This honest acknowledgment of uncertainty is appropriate, though it leaves a key mechanistic question unresolved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Some IC neurons responded to rewards, but the reward modulation effect on auditory responses was minimal in awake monkeys. The exact mechanisms and functions of dopamine modulation in primate IC remain incompletely understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106 are supported by the experimental data (Figures 3B-E) showing limited reward modulation of auditory responses. Claims C101-C104 appropriately summarize prior literature and acknowledge knowledge gaps. The finding of minimal reward modulation during auditory responses is important for interpreting the climbing effect results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Experiments were conducted on two male rhesus monkeys with chronically implanted recording equipment. Extracellular recordings used tungsten microelectrodes (2-4 M\u03a9), and only well-isolated neurons were analyzed. All procedures were approved by institutional animal care committees.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 describe standard methodological details that are clearly stated in the Methods section. The use of two animals is a limitation for generalizability, but the methods are appropriate for the study design. Ethical approval is documented.",
+    "result_type": "MINOR"
+  }
+]

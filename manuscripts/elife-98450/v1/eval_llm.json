@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C65",
+      "C66"
+    ],
+    "result": "The RiPA system successfully induces quantifiable degradation of WDR5 when brought into proximity with VHL through rapamycin-induced dimerization of FKBP12 and FRB. Degradation requires at least 10-fold excess of E3 ligase plasmid over target plasmid, and rapamycin treatment reduces WDR5-Luc-FKBP12 luciferase activity by approximately 50%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29, C65-C66 are supported by immunoblotting (Figure 1D) and luciferase activity measurements (Figure 1E) showing dose-dependent degradation. The requirement for 10-fold excess E3 ligase is empirically demonstrated. The quantitative reduction in luciferase activity provides robust evidence for the system's functionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C31",
+      "C32",
+      "C33",
+      "C30",
+      "C69",
+      "C74",
+      "C83"
+    ],
+    "result": "RiPA correctly predicts differential E3 ligase suitability for target degradation: VHL efficiently degrades WDR5 while CRBN does not, but both E3 ligases degrade Aurora A. This recapitulates known PROTAC behavior from the literature, demonstrating the system's predictive power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C31, C30 are strongly supported by experimental data (Figures 2A-D) showing selective degradation patterns. Claims C32-C33, C69 provide literature validation that RiPA results match known PROTAC selectivity. The convergence of experimental results with published PROTAC studies (C74, C83) validates the predictive capability of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C67",
+      "C68"
+    ],
+    "result": "Using lysine-less versions of luciferase and FKBP12 (all 15 lysines mutated to arginine), VHL still induces WDR5 degradation comparable to wild-type constructs, demonstrating that VHL directly ubiquitylates WDR5 rather than the reporter tags. This ensures RiPA specifically reports target protein ubiquitylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 are supported by structural analysis (Figure 2E) and experimental data (Figures 2F-G, Figure 2\u2014figure supplement 1A). The lysine-less experiment is a critical control that definitively demonstrates direct target ubiquitylation. While luciferase activity is reduced by 35.4% in the mutant (C36), measurements remain reliable and degradation is still observed (C37), strongly supporting the conclusion of direct WDR5 ubiquitylation (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C41",
+      "C40"
+    ],
+    "result": "RiPA demonstrates that VHL efficiently degrades KRASG12D while CRBN shows only minor degradation. This differential activity is consistent with published PROTAC studies and is confirmed to be proteasome-dependent by inhibitor experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 are supported by experimental data (Figure 2\u2014figure supplement 1C). Claim C44 provides mechanistic validation through proteasome and neddylation inhibitor experiments (Figure 2H). Claims C40-C41 provide literature context supporting the observed selectivity. The convergence of experimental results with literature and mechanistic controls strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "FBXL12, an E3 ligase not previously used for PROTACs, efficiently degrades WDR5 in the RiPA system with superior activity compared to VHL, and shows comparable potency to VHL for KRASG12D degradation. FBXL12 successfully degraded all tested target proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by experimental data (Figures 3A-C, Figure 3\u2014figure supplement 1A-B). The superior activity of FBXL12 over VHL for WDR5 (C50) is clearly demonstrated in Figure 3C. Claims C76-C78 extend these findings to conclude FBXL12's broad degradative capability. The data support that FBXL12 is functional in RiPA, though the claim that it degraded \"every target protein tested\" (C78) should be interpreted cautiously as only WDR5 and KRASG12D are explicitly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C73"
+    ],
+    "result": "Linker length between target protein and FKBP12 affects both expression and degradation efficiency. Constructs without any linker show the highest expression and most efficient degradation by FBXL12, while longer linkers reduce both expression and degradation. This suggests that tight spatial arrangement mimics PROTAC-induced ternary complex cooperativity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 are directly supported by immunoblot and luciferase data (Figures 3E-F). Claim C73 extends this observation to the RiPA system more broadly. Claim C54 provides a mechanistic interpretation that is reasonable but somewhat speculative. The experimental data clearly demonstrate the linker length effect, though the mechanistic explanation about cooperativity (C54) is an inference rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "RiPA enables kinetic measurements of target degradation in living cells. FBXL12-mediated WDR5 degradation reaches maximum after 5 hours and is sustained, demonstrating the system's capability for time-resolved analysis of E3 ligase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C56 are supported by kinetic luciferase measurements (Figure 3G) showing time-dependent degradation. The ability to perform real-time measurements in living cells is a significant technical advance. The data clearly demonstrate robust kinetic tracking capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Lysine-rich luciferase mutants serve as universal reporters to assess E3 ligase degradative potential. Mutants with additional lysines in flexible peptide tails (LucK3, LucK6) show dramatically increased degradation by FBXL12, with >60% of LucK6 degraded within 2 hours, while surface lysine mutants (LucV1, LucV2) show similar degradation to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C61 are supported by experimental data (Figures 4C-E). The differential degradation between peptide-tail lysines (LucK3, LucK6) and surface lysines (LucV1, LucV2) is clearly demonstrated. Claim C62 provides a reasonable conclusion about using these mutants to stratify E3 ligases, though this application is more prospective than demonstrated. The data support the technical feasibility of this approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "VHL is more effective than CRBN in degrading Aurora B in the RiPA system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by experimental data shown in Figure 2\u2014figure supplement 1B. This extends the differential E3 ligase selectivity findings to another Aurora kinase family member.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C64"
+    ],
+    "result": "The RiPA system is capable of inducing target ubiquitylation and can quantitatively measure degradation of specific targets by E3 ligases when brought into proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45 and C64 are overarching conclusions supported by the collective experimental evidence from all RiPA experiments. These represent summary statements of the system's core functionality demonstrated throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C75"
+    ],
+    "result": "The differential ability of VHL and CRBN to degrade WDR5 may result from differences in their ability to form productive ternary complexes through protein-protein interactions. Structural studies show that the most potent WDR5 PROTACs induce the largest interaction areas between WDR5 and E3 ligase. RiPA may predict E3 ligases capable of forming such ternary complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C72 are based on literature citations and structural knowledge rather than direct experimental evidence in this study. Claim C75 is explicitly stated as a hypothesis. While the reasoning is plausible and consistent with structural biology principles, these claims represent mechanistic speculation rather than demonstrated findings. The connection between RiPA results and ternary complex formation is inferred but not directly proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C84"
+    ],
+    "result": "FBXL12 may be a promising new E3 ligase for PROTAC development, and RiPA will be helpful in streamlining chemical efforts in PROTAC development campaigns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79 and C84 are prospective statements about future applications. While supported by the experimental data showing FBXL12's activity in RiPA, these are anticipatory claims about utility in actual PROTAC development rather than demonstrated outcomes. The word \"may\" and \"anticipate\" in the source text indicate these are forward-looking statements rather than established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "RiPA has limitations: suitable target/E3 ligase pairs may fail if protein tags interfere with interactions, and E3 ligases that work in RiPA may not translate to successful PROTACs if appropriate chemical mimics cannot be found. However, RiPA can identify inappropriate E3 ligases that are in different cellular compartments or cannot add degradative ubiquitin chains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are stated limitations and capabilities of the system based on logical considerations of the experimental design. These are reasonable assessments of the system's scope and limitations, though they are largely conceptual rather than experimentally demonstrated. The authors appropriately acknowledge these constraints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C63"
+    ],
+    "result": "PROTAC development is largely empirical with few design rules, and many campaigns fail because selected E3 ligases cannot degrade the target of interest. Certain E3 ligases are better suited for specific targets than others, and E3 ligase incompatibility with a given target is a possible reason for frequent PROTAC failure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16-C18, C23, C63 describe the current state of the PROTAC field and are supported by multiple literature citations. These establish the motivation and context for developing RiPA. While these are not findings of this study, they accurately represent the field's challenges based on cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C24"
+    ],
+    "result": "Background information on PROTACs: approximately 80% of the intracellular proteome is undruggable by conventional inhibitors; PROTACs are bifunctional molecules that induce target ubiquitylation and degradation with advantages including complete functional inactivation, catalytic mode of action, and reduced susceptibility to resistance mutations. Most PROTACs use only VHL or CRBN despite >600 E3 ligases in the human genome, and new E3 ligase ligands are being discovered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15, C19-C22, C24 provide background context supported by literature citations. These accurately represent established knowledge in the field and provide appropriate context for the study. While not original findings, they are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C33",
+      "C40",
+      "C41"
+    ],
+    "result": "Prior PROTAC studies have shown that VHL but not CRBN efficiently degrades WDR5, while CRBN-based PROTACs efficiently degrade Aurora A. VHL-recruiting degraders efficiently degrade KRAS mutants compared to CRBN-recruiting degraders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32-C33, C40-C41 accurately cite prior literature that is used to validate RiPA predictions. These claims are supported by the cited references and provide important context for interpreting the RiPA results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Based on the Reactome Pathway and UniProt database, only about 40% of 600+ E3 ligases in the human genome are believed to be associated with the ubiquitin-proteasome system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by citation to Schapira et al., 2019. This provides context for why universal substrate reporters are needed to assess E3 ligase degradative capability.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C20"
+    ],
+    "result": "Male germ cells express approximately 10,000 protein-coding genes on average (9,468\u00b1498\u201312,195\u00b11144 depending on species), corresponding to roughly half of the protein-coding genome (48.0\u201367.9%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C20 are well-supported by RNA-Seq data analysis across three species (human, mouse, fruit fly) using TPM >1 as the expression threshold, as shown in Figure 1b. The methodology is clearly described and the quantitative estimates are consistent across claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22"
+    ],
+    "result": "The majority (65.2-70.3%) of genes expressed in male germ cells are deeply conserved (phylostrata 1-5, common to all Metazoa), a proportion not significantly different from somatic cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21, and C22 are supported by phylostratigraphy analysis shown in Figure 1d. The statistical comparison between germ cells and somatic cells is appropriate (Mann-Whitney U test), and the finding challenges the assumption that male germ cells have uniquely divergent transcriptomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Male germ cells have a more diversified transcriptome than somatic cells, but this increased complexity is mainly restricted to extremely low expression levels (TPM 0.01-0.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are supported by RNA-Seq analysis shown in Figure 1b. The observation that transcriptome diversity differences disappear at higher expression thresholds is important for interpreting the functional significance of the male germ cell transcriptome and suggests much of the apparent diversity may reflect transcriptional noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Between 49.7-63.4% of deeply conserved genes in male germ cells are ubiquitously expressed, suggesting that almost half are involved in cell-type-specific rather than housekeeping functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 are supported by analysis shown in Figure 1\u2014figure supplement 2a,b. The inference in C24 logically follows from the data in C23, though the distinction between 'ubiquitous' and 'housekeeping' could be more rigorously defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The male germ cell transcriptome has an old evolutionary origin, with meiotic and pre-meiotic cells having older transcriptomes (lower TAI) than post-meiotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 are supported by transcriptome age index (TAI) analysis shown in Figure 1e. The finding is consistent with prior work in mammals (Murat et al., 2023) and extends it to invertebrates, though the pattern is less clear in fruit flies due to residual post-meiotic transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "Deeply conserved genes in spermatocyte PPI networks are significantly more connected than non-conserved genes, and machine learning classifiers can reliably predict gene conservation based on network features (AUC 0.74-0.82).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C28 are supported by network analysis (Figure 1h, Figure 1\u2014figure supplement 4) and machine learning analysis (Figure 1i). The Kolmogorov-Smirnov tests are appropriate, and the AUC scores indicate good predictive performance. Random edge shuffling experiments (Figure 1\u2014figure supplement 6) address potential ascertainment bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The orthoBackbone represents less than 3% of spermatocyte PPI network edges but contains 70% of deeply conserved genes, which are preferentially involved in gene expression regulation rather than cell signaling, with modest overlap (16.2-18.0%) between spermatocyte and enterocyte orthoBackbones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32 are supported by orthoBackbone analysis (Figures 2b-d, Figure 1\u2014figure supplement 3d). The methodology is novel and well-described. The GO enrichment analysis appropriately identifies functional differences between orthoBackbone and other conserved genes. The modest overlap with enterocytes supports cell-type specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C33"
+    ],
+    "result": "A subset of 79 functional interactions between 104 gene expression regulators represents a core component of the conserved genetic program of spermatogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C33 are supported by orthoBackbone analysis combined with GO term filtering (Figure 2e). The identification of this core network is a key finding, though the claim that it represents a 'core component' is somewhat interpretive. The number (104 genes) is consistent with prior estimates of conserved spermatogenic programs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "In vivo RNAi screening identified 250 conserved transcriptional burst genes (27.2% of 920 tested) essential for male fertility, with 76.0% being part of the orthoBackbone and 161 (64.4%) representing previously unknown spermatogenesis genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by systematic RNAi screening in Drosophila (Figure 2g-i). The experimental design is appropriate with proper controls, and the fertility threshold (75%) is justified. The enrichment of orthoBackbone genes among hits is statistically significant (Fisher's exact test p<0.0001). Literature searches to determine novelty appear thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "A homozygous loss-of-function variant in RNF113B (c.556_565del) causes meiotic arrest in humans, with spermatocytes being the most advanced cell stage in 89.0% of seminiferous tubules, phenocopying the dRNF113 RNAi in fruit flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by genetic analysis, segregation studies (Figure 3\u2014figure supplement 2), and histological analysis (Figure 3b, Figure 3\u2014figure supplement 1b). The phenotypic similarity across species is striking. However, the causal link would be strengthened by functional rescue experiments or additional affected individuals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Mouse Rnf113a2 knockout mice are sterile with severely impaired spermatogenesis (SCO phenotype), and RNF113 proteins are predominantly expressed at meiotic entry with nuclear accumulation in spermatocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by mouse knockout analysis (Figure 3d, Figure 3\u2014figure supplement 1d-g), single-cell RNA-Seq (Figure 3e), and immunofluorescence (Figure 3f). The cross-species validation strengthens the case for RNF113B as a conserved regulator of spermatogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Loss of RNF113 function disrupts 21.7% (human) and 20.3% (fruit fly) of testicular transcriptomes, affecting 30.0% and 26.3% of orthoBackbone edges respectively, with greater impact than Prp19 silencing (15.2% disruption).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by RNA-Seq differential expression analysis (Figures 3g-h, Figure 3\u2014figure supplement 3). The comparison with Prp19 is appropriate as both are spliceosomal components. The statistical significance of the difference (Fisher's exact test p<0.0001) is properly reported. However, one human sample had low RIN (2.0), though DegNorm correction suggests minimal impact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RNF113B loss disrupts 38.0% of the core spermatogenic program interactions, with significant enrichment of downregulated core genes (19.2% vs 10.0% genome-wide, p=0.0046), identifying 61 conserved genes downregulated in both human and fly, of which 27 had prior links to male fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 are supported by comparative transcriptome analysis (Figures 3g, 3i, Figure 3\u2014figure supplement 4). The statistical test (Fisher's exact) is appropriate. The cross-species overlap provides strong evidence for conserved downstream targets. Literature validation of the 27 genes appears thorough.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Two heterozygous loss-of-function variants in HSPA2 were identified in infertile men, with functional validation showing that silencing the fly ortholog (Hsc70-1) phenocopies dRNF113 meiotic arrest, and one patient (M2190) displaying SCO phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53-C59 are partially supported. The genetic variants are well-characterized (Figure 3\u2014figure supplement 5), and functional validation in flies is convincing (Figure 3\u2014figure supplement 5a-b). However, the evidence for autosomal dominant inheritance is incomplete\u2014in silico predictions don't meet conservative thresholds, and only one patient has histology. The claim of 'new potential genetic cause' is appropriately cautious but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Two heterozygous KPNA2 variants were identified in infertile men, including one de novo variant (c.667-2A>G in M1645), with functional validation showing post-meiotic defects in flies and SCO phenotype in one patient (M2098), making KPNA2 a strong autosomal-dominant candidate gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 are well-supported. The de novo occurrence (C64) provides strong evidence for pathogenicity. Functional validation in flies shows post-meiotic defects (Figure 3\u2014figure supplement 6a-b), consistent with known functions. In silico predictions favor autosomal dominance more strongly than for HSPA2. The claim that KPNA2 is a 'strong' candidate while HSPA2 needs more data (C67) is appropriately nuanced.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Male germ cells share a common evolutionary origin, with gene expression identity maintained across species despite rapid evolution of reproductive genes, consistent with modular organization of biological processes and prior observations in plants and mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C17 provide background context supported by appropriate citations. These claims establish the conceptual framework for the study but don't represent novel findings from this work. The citations appear accurate and relevant to the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Deeply conserved genes play a prominent role in male germ cell regulation, with disruption of this ancient genetic program leading to human reproductive disease, and the transcriptional identity built around a small network of conserved interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 represent summary conclusions and interpretations. C68 and C69 are well-supported by the totality of evidence presented. C70 and C71 are more speculative interpretations (appropriately labeled as 'propose' and 'can be regarded as') that are consistent with but not definitively proven by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Male infertility affects up to 12% of men, has a low diagnostic yield (30%), and only 104 clinically validated genes are known, highlighting a significant knowledge gap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 provide clinical context supported by appropriate citations (Agarwal et al., 2015; Houston et al., 2021; Vissers et al., 2016). These establish the medical importance of the research but don't represent novel findings.",
+    "result_type": "MINOR"
+  }
+]

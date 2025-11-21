@@ -1,0 +1,2119 @@
+{
+  "submission": {
+    "id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:14:46.992337Z",
+    "updated_at": "2025-11-21T21:14:46.992337Z"
+  },
+  "content": [
+    {
+      "id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "content_type": "manuscript",
+      "content_text": "# A human forebrain organoid model reveals the essential function of GTF2IRD1-TTR-ERK axis for the neurodevelopmental deficits of Williams syndrome\n\n## Authors\n\n- Xingsen Zhao<sup>1</sup> ([ORCID: 0000-0003-1721-0859](https://orcid.org/0000-0003-1721-0859))\n- Qihang Sun<sup>1</sup>\n- Yikai Shou<sup>1</sup>\n- Weijun Chen<sup>1</sup>\n- Mengxuan Wang<sup>1</sup>\n- Wenzheng Qu<sup>1</sup>\n- Xiaoli Huang<sup>1</sup>\n- Ying Li<sup>1</sup>\n- Chao Wang<sup>4</sup>\n- Yan Gu<sup>4</sup> ([ORCID: 0000-0001-5562-6279](https://orcid.org/0000-0001-5562-6279))\n- Chai Ji<sup>1</sup> \u2020\n- Qiang Shu<sup>1</sup> \u2020\n- Xuekun Li<sup>1</sup> ([ORCID: 0000-0002-6985-6363](https://orcid.org/0000-0002-6985-6363)) \u2020\n\n### Affiliations\n\n1. The Children's Hospital, National Clinical Research Center for Child Health, School of Medicine, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))\n2. The Institute of Translational Medicine, School of Medicine, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))\n3. Binjiang Institute of Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))\n4. Center of Stem Cell and Regenerative Medicine, and Department of Neurology of the Second Affiliated Hospital, Zhejiang University School of Medicine Hangzhou China ([ROR:059cjpv64](https://ror.org/059cjpv64))\n\n\u2020 Corresponding author\n\n## Abstract\n\nWilliams syndrome (WS; OMIM#194050) is a rare disorder, which is caused by the microdeletion of one copy of 25\u201327 genes, and WS patients display diverse neuronal deficits. Although remarkable progresses have been achieved, the mechanisms for these distinct deficits are still largely unknown. Here, we have shown that neural progenitor cells (NPCs) in WS forebrain organoids display abnormal proliferation and differentiation capabilities, and synapse formation. Genes with altered expression are related to neuronal development and neurogenesis. Single cell RNA-seq (scRNA-seq) data analysis revealed 13 clusters in healthy control and WS organoids. WS organoids show an aberrant generation of excitatory neurons. Mechanistically, the expression of transthyretin (TTR) are remarkably decreased in WS forebrain organoids. We have found that GTF2IRD1 encoded by one WS associated gene GTF2IRD1 binds to TTR promoter regions and regulates the expression of TTR. In addition, exogenous TTR can activate ERK signaling and rescue neurogenic deficits of WS forebrain organoids. Gtf2ird1-deficient mice display similar neurodevelopmental deficits as observed in WS organoids. Collectively, our study reveals critical function of GTF2IRD1 in regulating neurodevelopment of WS forebrain organoids and mice through regulating TTR-ERK pathway.\n\n## Introduction\n\nWilliams syndrome, also known as Williams-Beuren syndrome (WS; OMIM#194050) is a rare disorder with a prevalence of 1 in 7500 live births (Kozel et al., 2021; Pober, 2010). WS is caused by the microdeletion of approximately 25\u201327 genes (termed as WS genes) on chromosome 7q11.23 and affects multiple systems including cardiovascular and neuronal systems (Collins, 2013; Collins, 2018; Lin et al., 2019; Pober et al., 2008). Most individuals with WS displayed neuronal phenotypes including hypersociability, impaired myelination and intellectual disability (IQ <70; Barak and Feng, 2016; Barak et al., 2019; Kozel et al., 2021; Morris and Braddock, 2020). fMRI neuroimaging and examination with post-mortem brain tissues of WS patients both showed abnormalities of brain structure of WS patients, including visuospatial construction deficit and increased length of dendrites, numbers of spine and branching points (Chailangkarn et al., 2016; Kippenhan et al., 2005; Meyer-Lindenberg et al., 2004).\n\nNeural progenitor cells (NPCs) and neurons derived from the induced pluripotent stem cells (iPSC) of WS patient display deficits, such as increased apoptosis, aberrant morphological complexity and electrophysiological activity (Chailangkarn et al., 2016; Khattak et al., 2015). The dysregulation of Wnt signaling pathway plays important roles in regulating the survival and development of neurons derived from induced pluripotent stem cells (iPSCs) of WS patient. Neuronal deletion of WS gene Gtf2i leads to severe behavioral deficits and reduced myelination in mice (Barak et al., 2019). Although single gene mutation of those 25\u201327 genes only causes partial phenotypes of WS, genotype-phenotype relationship analysis suggests that GTF2IRD1, GTF2I, BAZ1B, VPS37D, STX1A, CLIP2, LIMK1, MLXIPL, and ELN could be the key genes for the phenotypes (Kozel et al., 2021; Lek et al., 2016). GTF2IRD1 encodes DNA binding protein of the Transcription factor (TF) II-I family and its deficiency contributes to neurological deficits of WS patients, such as the impaired motor coordination, visual-spatial constructive deficits and cognitive deficits (Carmona-Mora et al., 2015; Corley et al., 2016; Dai et al., 2009; Enkhmandakh et al., 2009; Kopp et al., 2020; Makeyev and Bayarsaihan, 2009; Morris et al., 2003; O\u2019Leary and Osborne, 2011; Tassabehji et al., 2005). Despite this remarkable progress, the mechanisms for diverse neuronal defects of WS still remain largely unknown.\n\nDue to the limited accessibility of human brain samples of WS patients, diverse cellular and animal models have been used to study the phenotypes and mechanisms of WS. Brain organoids are derived iPSCs under 3D cultural condition and exhibit unique advantages in modeling spatio-temporal features of brain development compared to 2D cultures including iPSCs. Therefore, brain organoids have been applied for studying human brain development and neurological disorders, including Fragile X syndrome and autism (Clevers, 2016; Di Lullo and Kriegstein, 2017; Kang et al., 2021a; Kelava and Lancaster, 2016; Li and Izpisua Belmonte, 2019; Lyon, 2019; Pa\u015fca, 2019; Qian et al., 2019). To our knowledge, there have been no studies performed with brain organoids of WS.\n\nIn present study, utilizing the iPSCs derived forebrain organoids, we found that NPCs in WS forebrain organoids displayed abnormal proliferation and differentiation, and synapse formation. Bulk RNA-seq revealed the altered gene expression in WS organoids, which is strongly related to neuronal development and neurogenesis. scRNA-seq data analysis revealed 13 clusters in healthy control and WS organoids, and WS NPCs showed an aberrant excitatory neurogenesis. Mechanistically, the expression of transthyretin (TTR) significantly decreased in WS forebrain organoids. GTF2IRD1 encoded by one WS gene GTF2IRD1 binds to TTR promoter regions and regulates the expression of TTR. Exogenous TTR can rescue neurogenic and neurodevelopmental deficits of WS forebrain organoids by activating ERK signaling. Taken together, our results reveal the critical neurogenesis features of WS forebrain organoids and provide novel insight into mechanisms underlying the abnormal neurodevelopment of WS.\n\n## Results\n\n### The forebrain organoids of William\u2019s syndrome patient display deficits of neurogenesis and neuronal differentiation\n\nTo study the neuronal deficits in WS patient, we isolated peripheral blood mononuclear cells (PBMCs) and urinary cells from healthy control (CTRL) and WS patients (Figure 1\u2014figure supplement 1A), respectively. After the clinical evaluations of phenotypes of three WS patients (Figure 1\u2014figure supplement 1B), target sequencing was performed and showed the hemizygous deletion of 23 genes in three WS patients (Figure 1\u2014figure supplement 1C and D). PBMCs and urinary cells of CTRL and WS patients were cultured in vitro, respectively (Figure 1\u2014figure supplement 2A). For reprogramming, cultured cells were infected with Sendai virus according to the manufacturer\u2019s protocol. Three induced pluripotent stem cells (iPSCs) lines were characterized for each CTRL and WS samples. iPSCs displayed typical morphology, normal karyotypes, were positive for alkaline phosphatase live staining and expressed canonical pluripotency markers SOX2, NANOG, SSEA4, and OCT4 (Figure 1\u2014figure supplement 2B\u2013F).\n\nTo assess the neurodevelopmental deficits of WS patients, we generated three dimensional (3D) forebrain organoids with CTRL and WS iPSCs using an established protocol, respectively, which could be well correlated with fetal human brain development (Figure 1A; Kang et al., 2021a; Qian et al., 2016). Considering day 56 (D56) forebrain organoids were well correlated with fetal brain development (Kang et al., 2021a; Kostovi\u0107 et al., 2019; Qian et al., 2016), our following experiments adopted D56 forebrain organoids if no specific annotation. We first performed immunofluorescence staining and observed that WS forebrain organoids showed a higher percentage of KI67+/SOX2+ cells compared to that of CTRL organoids (Figure 1B and C). Further, CTRL and WS organoids were pulsed with 5-ethynyl-2\u2032-deoxyuridine (EdU) at a dosage of 10 \u2009\u03bcM for 2 hr, and we found that the percentage of EdU+/SOX2+ cells also significantly increased in WS organoids (Figure 1D and E). Furthermore, CTRL and WS organoids were incorporated with EdU for 24 hr, and the cell cycle exiting of neural progenitor cells (NPCs) was assessed by analyzing the co-localization of EdU and Ki67. We observed that the percentage of Ki67-EdU+ cells was significantly decreased in WS organoids (Figure 1F and G). Fewer TBR2+ intermediate neural progenitor cells (IPCs) localized at MAP2- ventricular zone (VZ) like layer in WS forebrain organoids compared to the CTRL organoids (Figure 1H and I). These results suggest an aberrant proliferating capability of NPCs in WS forebrain organoids.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic illustration of forebrain organoids culture process and representative brightfield images of organoids over development. Scale bar, 200 \u03bcm. (B) Representative images of KI67 and neural progenitor cells (NPCs) marker SOX2 immunofluorescence staining with healthy (CTRL) and WS patient (WS) forebrain organoids at day 56, respectively. The proliferating cells were positive for KI67 labeling, and NPCs were positive for SOX2 labeling. The white dotted line indicated the outer interface of the ventricular zone (VZ) region. (C) Quantification results showed that the average proportion of KI67 positive (KI67+) cells among total NPCs (SOX2+) significantly increased in the VZ layer of WS forebrain organoids relative to CTRL. (D) Representative images of EdU and SOX2 immunofluorescence staining with CTRL and WS forebrain organoids at day 56. EdU was applied for 2 hr. (E) Quantification results showed that the average proportion of EdU+ cells among total SOX2+ NPCs significantly increased in the VZ layer of WS forebrain organoids compared to CTRL. (F) Representative images of EdU and KI67 immunofluorescence staining with CTRL and WS forebrain organoids at day 56, respectively. EdU was applied for 24 hr. (G) Quantification results show that the average proportion of Ki67-EdU+ cells among total EdU+ cells significantly decreased in the VZ layer of WS forebrain organoids compared to CTRL. EdU was applied for 24 hr. Ki67-EdU+ cells were counted, that is, the proportion of cells exiting the cell cycle. (H) Representative images of TBR2, a marker for intermediate precursor cells (IPCs), and neuronal marker MAP2 immunofluorescence staining of CTRL and WS forebrain organoids, respectively. (I) Quantification results showed that the average proportion of TBR2+ IPCs remarkably decreased in WS forebrain organoids compared to CTRL. For (B-I), five IPS lines of three healthy control (Ctrl) and three WS patients (WS) were adopted for the study, respectively. Three to five organoids were analyzed from each IPS line and 10 representative rosettes of organoids were analyzed in each line. values represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, one-way ANOVA followed by Dunnett\u2019s multiple-comparison test. Scale bar, 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Basic clinical data of three healthy controls (CTRL) and three WS patients. Characteristic facial appearance refers to the distinctive face including flat nasal bridge, short upturned nose, periorbital puffiness, long philtrum, and delicate chin. SVAS refers to supravalvular aortic stenosis. Somatic cell type refers to the somatic cell type reprogrammed into iPSCs. (B) Gesell Developmental Scale data of neurocognitive, motor, language, and social assessments of the adopted three WS patients. (C) Distribution map of WS genes of Healthy CTRL and WS patients, respectively. (D) Targeted sequencing data analysis of 7q11.23 region of Healthy CTRL and WS patients, respectively.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Representative brightfield images of cultured urinary cells and PBMCs. Scale bars, 50 \u03bcm. (B) Representative brightfield images of cultured iPSCs. iPSCs were maintained under feeder-free condition (left). For organoid generation, iPSCs were cultured on mouse embryonic fibroblasts (feeder-dependent) (right). Scale bar, 50 \u03bcm. (C) Karyotype analysis of Healthy and WS iPSCs lines, respectively. (D) Representative images of Alkaline phosphatase staining of Healthy and WS iPSCs. Scale bar, 200 \u03bcm. (E) qRT-PCR assay results showed the expression of pluripotency factors in different iPSCs lines. Primary urinary cells were used for the negative control. (F) Representative images of immunofluorescence staining of pluripotent markers SOX2, NANOG, SSEA4, OCT4 with Healthy and WS iPSCs, respectively. Scale bar, 50 \u03bcm.\n\nNext, we examined the differentiation capability of NPCs. We found that upon the differentiation, the expression of neuronal precursor and immature neuronal cell marker doublecortin positive (DCX+) cells at SOX2+ ventricle (VZ)-like layer significantly decreased in WS forebrain organoids (Figure 2A and B). The relative thickness of the VZ layer indicated by SOX2+ aberrantly increased, but the thickness of cortical plate (CP) layer indicated by MAP2+ abnormally decreased (Figure 2). The total number (Figure 2F and G) and the proporation of neuronal marker CTIP2+ cells in CP like layer (Figure 2F and H) were significantly decreased in WS forebrain organoids. The total number (Figure 2I and J) and the proporation of neuronal marker TBR1+ cells in CP like layer (Figure 2I and K) were also significantly decreased in WS forebrain organoids. These results suggest a dysregulated neuronal differentiation of NPCs in WS forebrain organoids.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig2-v1.jpg)\n\n**Figure 2.:** (A) Representative images of DCX and SOX2 immunofluorescence staining of CTRL and WS forebrain organoids, respectively. (B) Quantification results showed that the intensity of DCX signal significantly decreased in SOX2+ VZ like layers of WS forebrain organoids compared to CTRL. (C) Representative images of MAP2 and SOX2 immunofluorescence staining of CTRL and WS forebrain organoids, respectively. (D, E) Quantification results showed that the thickness of VZ like layer (SOX2+MAP2\u2212) significantly increased (D), but the thickness of cortical plate (CP) like layer (MAP2+) CP like layer significantly decreased (E) in WS forebrain organoids compared to CTRL. (F) Representative images of SOX2 and neuronal marker CTIP2 immunofluorescence staining of CTRL and WS forebrain organoids, respectively. (G) Quantification results showed that the proportion of CTIP2+ neurons significantly decreased in WS forebrain organoids compared to CTRL. (H) Quantification results showed that the relative thickness of SOX2+ VZ like layer significantly increased, while the the relative thickness of CTIP2+ CP like layer significantly decreased in WS forebrain organoids compared to CTRL. (I) Representative images of SOX2 and neuronal marker TBR1 immunofluorescence staining of CTRL and WS forebrain organoids, respectively. (J) Quantification results showed that the proportion of total TBR1+ neurons significantly decreased in WS forebrain organoids compared to CTRL. (K) Quantification results showed that the proportion of TBR1+ neurons significantly decreased in TBR1+ CP like layer of WS forebrain organoids compared to CTRL. For (A\u2013K), five IPS lines of Ctrl and WS were adopted for the study, respectively. Three to five organoids were adopted from each IPS line and 10 representative rosettes of organoids were analyzed in each line. values represent mean \u00b1 SEM. *p<0.05, **p<0.01, ***p<0.001, one-way ANOVA followed by Dunnett\u2019s multiple-comparison test. Scale bar, 50 \u03bcm.\n\n### WS forebrain organoids display the aberrant expression of neurodevelopmental genes\n\nNext, we performed bulk RNA sequencing (RNA-seq) with both CTRL and WS forebrain organoids. In CTRL forebrain organoids. Figure 3A showed the FPKM values of 23 WS-associated genes, and other three genes LAT2, TREM270 and FKBP6 showed very low expression (FPKM less than 1). The expression of these 23 WS genes significantly decreased in WS forebrain organoids (Figure 3B). In addition, RNA-seq data analysis revealed 1761 differentially expressed genes (DEGs): 1003 down-regulated and 758 up-regulated (Figure 3C, Supplementary file 1). Gene Ontology (GO) analysis with all DEG showed enrichment for neuronal development and neurogenesis (Figure 3D), and interaction network of top 30 genes related to neurogenesis was shown (Figure 3E). GO analysis also revealed the enrichment of up-regulated genes for cell proliferation and of down-regulated genes for neuronal differentiation, synaptic signaling and neurogenesis (Figure 3F and G), respectively. In addition, FPKM and qRT-PCR results showed the decreased levels of NPC markers SOX2, NESTIN, PAX6, and HES5 (Figure 3H, Figure 3\u2014figure supplement 1A) and the increased levels of neuronal differentiation markers, such as TBR1, TBR2, CTIP2, and SATB2 (Figure 3I, Figure 3\u2014figure supplement 1B) in WS organoids. WB assay and quantification results showed that the levels of SOX2, NESTIN, PAX6, and HES5 were significantly increased (Figure 3J\u2013N) and the levels of TBR1, SATB2, and CTIP2 (Figure 3O\u2013R) were significantly decreased in WS organoids compared to CTRL. Collectively, these data suggested the aberrant expression of neurogenic and neurodevelopmental genes in WS forebrain organoids.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig3-v1.jpg)\n\n**Figure 3.:** (A) Fragments per kilobase of transcript per million mapped reads (FPKM) values of 23 WS genes in Day 56 CTRL organoids. (B) Heatmap analysis of 23 WS genes in both CTRL and WS brain organoids. (C) Volcano plot of the differentially expressed genes (DEGs). Bulk RNA sequencing (bulk RNA-seq) revealed 758 up-regulated and 1003 down-regualted genes in WS brain organoids compared with CTRL organoids, respectively. Fold change >2 and p-value <0.05 were considered as significance. (D) Gene Ontology (GO) analysis of DEGs showed the enrichment in terms related to neuronal differentiation and neurogenesis. (E) Interactome plot of top 27 genes of neurogenesis GO term was presented. Red dots representing up regulated genes and blue dots representing down regulated genes. (F) GO analysis of DEGs in WS organoids. Red bar represents terms enriched by up regulated genes, and blue bar represents terms enriched by down regulated genes. (G) Heatmap of cell proliferation and neuronal differentiation related genes in CTRL and WS organoids. (H, I) qRT-PCR results showed the increased expression of NPCs markers including SOX2, NESTIN, PAX6, and HES5 (H) and the decreased expression of neuronal markers including TBR1, TBR1, CTIP2, and SATB2 (I) in WS organoids compared to Ctrl group. Values represent mean \u00b1 SEM; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (J\u2013N) WB assay (J) and quantification results shoed the increased expression of SOX2 (K), NESTIN (L), PAX6 (M), HES5 (N) in WS organoids compared to CTRL group. Values represent mean \u00b1 SEM; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (O\u2013R) WB assay (O) and quantification results of TBR1 (P), CTIP2 (Q), SATB2 (R) in WS organoids compared to CTRL group. Values represent mean \u00b1 SEM; n=5 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) FPKM values of SOX2, NESTIN, PAX6, HES5. Values represent mean \u00b1SE; n=3 replicates for each group; *p<0.05, **p<0.01, and ***p<0.001; unpaired Student\u2019s t test. (B) FPKM values of TBR1, TBR2, CTIP2, SATB2. Values represent mean \u00b1 SEM; n=3 replicates for each group; *p<0.05, **p<0.01, and ***p<0.001; unpaired Student\u2019s t test.\n\n### scRNA-seq reveals the abnormal generation of excitatory neurons in WS forebrain organoids\n\nTo gain further insight into the specific transcriptome alterations in different cell types of WS, we performed 10 X genomics chromium single-cell RNA-Seq (scRNA-Seq) with WS and CTRL forebrain organoids. After quality control, total 96,969 cells were obtained from CTRL and WS samples, and were analyzed together using unsupervised clustering (Figure 4A, Figure 4\u2014figure supplement 1A). Uniform manifold approximation and projection (UMAP) identified 13 cell clusters in CTRL and WS forebrain organoids, which were then annotated using the expression of cell-type-specific markers (Figure 4B, Figure 4\u2014figure supplement 1B, C). We observed that the proportions of deeper layer_projection neuron (DL_PN) and upper layer projection neuron (UL_PN) clusters were significantly decreased in WS forebrain organoids compared to CTRL, while the proportions of other clusters did not show significant difference between CTRL and WS organoids (Figure 4C\u2013E, Figure 4\u2014figure supplement 1D). According to the markers for the cluster characterization including BCl11B and FEZF2, DL_PN and UL_PN were excitatory neurons (Paulsen et al., 2022). scRNA-seq data also revealed the differentially expressed genes (DEGs) in 6 distinct clusters including cycling progenitor, oRG, IPC, newborn DL_PN, DL_PN, and UL_PN, which were related to the development of excitatory neurons (Figure 4F). GO analysis with DEGs in DL_PN and UL_PN clusters showed the enrichment for neuronal development and neuronal differentiation (Figure 4G and H). Further, GO analysis with DEGs in cycling progenitor, oRG, IPC and new born_DL_PN clusters showed the enrichment for neurogenesis, cell division and cell migration terms, etc (Figure 4\u2014figure supplement 1E\u2013I). In particular, UMAP distribution maps and heatmaps of WS-related genes showed a distinct expression pattern of WS-deleted genes in cell clusters (Figure 4I). Collectively, these results suggested the deficits of excitatory neurogenesis in WS forebrain organoids.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig4-v1.jpg)\n\n**Figure 4.:** (A) Schematic illustration of the scRNA-seq and histological analysis of both CTRL and WS forebrain organoids. (B) UMAP plot of cell types detected in both CTRL and WS forebrain organoids. DL_PN, deep layer projection neurons; UL_PN, upper layer projection neurons; IN, interneurons; aRG, apical radial glia; oRG, outer radial glia; IPC, intermediate progenitor cells; GABA IN, GABAergic interneurons. (C) UMAP plot of DL_PN (left) and UL_PN (right) in both CTRL and WS forebrain organoids. (D, E) Quantificationof the percentages of DL_PN and UL_PN in both CTRLcontr and WS forebrain organoids. Values represent mean \u00b1 SEM; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (F) Number of DEGs in the indicated cell types in WS organoids. Fold change >1.28 and p-value <0.05 were considered as significance. (G, H) GO analysis of DEGs in the DL_PN (I) and UL_PN (J) cell types in WS organoids. (I) UMAP visualization of the expression of WS genes in CTRL forebrain organoids.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) Statistics of the scRNA-seq of forebrain organoids from three healthy CTRL and three WS patients, respectively. (B) Heat map of marker genes for distinct cell types in both healthy CTRL and WS forebrain organoids, respectively. DL_PN, deep layer projection neurons; UL_PN, upper layer projection neurons; IN, interneuron; aRG, apical radial glia; oRG, outer radial glia; IPC, intermediate progenitor cells; GABA IN, GABAergic interneurons. (C) UMAP plots of of marker genes for distinct cell types in both healthy CTRL and WS forebrain organoids, respectively. (D) Quantification of the percentages of the indicated cell types in both healthy CTRL and WS forebrain organoids. Values represent mean \u00b1 SEM; n=3 replicates for each group; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (E\u2013H) GO analysis of DEGs in the Cycling_progenitor (E), oRG (F), IPC (G) and newborn_DL_PN (H) cell types in WS organoids. (I) Heat map illustrating the expression of WS genes among distinct cell types in the day-56 forebrain organoids.\n\nGiven the aberrant production of the excitatory neurons in WS forebrain organoids, we next analyzed the developmental pesudotime trajectories for cycling progenitor, oRG, IPC, newborn DL_PN, DL_PN, and UL_PN clusters of CTRL and WS organoids (Figure 5A and B). The pesudotime of excitatory neuronal trajectories in WS organoids analysis showed a remarkable delayed development compared to CTRL organoids (Figure 5C). Pseudotime uniform manifold approximation analysis revealed that the excitatory neuronal lineage displayed an increased distribution towards the start point trajectory and a decreased distribution towards the end point trajectory in WS organoids (Figure 5D). The varieties of gene expression along pesudotime trajectories was shown by heatmap (Figure 5E). Furthermore, the expression of NPC marker genes SOX2 and TBR2 exhibited increasing trend at early stage of trajectories, but the expression of neuronal marker genes NHLH1, TBR1, CTIP2, and SATB2 showed decreasing trend at middle and later stages of trajectories in WS organoids (Figure 5F). Collectively, these data suggested an aberrant neurodevelopmental timeline in WS organoids.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig5-v1.jpg)\n\n**Figure 5.:** (A) Pseudo-time distribution of cell trajectories of excitatory neurons related cell clusters. (B) Distribution of cell cluster in Pseudotime trajectories. (C) Boxplot showing the distribution of pseudotime within each cell type in both CTRL and WS-derived forebrain organoids. (D) Mountain maps of pseudotime uniform manifold approximation in both CTRL and WS forebrain organoids. (E) Heatmap of pseudotime line-dependent gene expression. (F) Expression of SOX2,TBR2, NHLH1, TBR1, CTIP2 and SATB2 ordered by Monocle analysis in pseudotime.\n\n### The deficiency of GTF2IRD1 reduces Transthyretin in WS brain organoids\n\nNext, we aim to reveal the mechanism underlying the neuronal deficits of WS organoids. Integrated analysis with down-regulated genes identified both by bulk RNA-seq data and scRNA-seq, respectively, revealed one overlapped gene transthyretin (TTR; Figure 6A), whereas there is no overlapped genes were identified in up-regulated genes by bulk RNA-seq data and scRNA-seq, respectively (Figure 6\u2014figure supplement 1A). TTR is required for the transportation of thyroxine and retinol and plays an essential function in the development of the central nervous system (Fleming et al., 2009; Gomes et al., 2016; Magalh\u00e3es et al., 2021; Santos et al., 2010). Interestingly, a previous study has showed a decreased expression of TTR in the brain of WS patients (Figure 6\u2014figure supplement 1B; Barak et al., 2019). scRNA-seq data analysis showed that TTR was widely expressed in all cell clusters of CTRL organoids, but significantly decresaed in WS organoids (Figure 6B and C). Immunofluorescence staining, qRT-PCR and WB assay results confirmed the remarkable decrease of TTR in WS brain organoids relative to Ctrl (Figure 6D\u2013G, Figure 6\u2014figure supplement 1C). Of note, RNA-seq data anaylsis showed that down-regulated genes enriched for MAPK signaling pathway (Figure 6H). WB assay results showed the significant reduction of GTF2IRD1 and p-ERK/ERK in WS brain organoids (Figure 6I\u2013L). These results indicate a reduced expression of TTR and defects of MAPK/ERK signaling in WS brain organoids.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig6-v1.jpg)\n\n**Figure 6.:** (A) Integrated analysis of down-regualted genes in 6 clusters relating to the generation of excitatory neurons and down-regualted genes revealed by bulk RNA-seq. (B) UMAP visualization of the expression of TTR in CTRL and WS forebrain organoids, respectively. (C) Transthyretin (TTR) displayed the decreased expression in 6 clusters relating to the generation of excitatory neurons. (D) Representative images of TTR immunofluorescence staining with in CTRL and WS forebrain organoids, respectively. Scale bar, 100 \u03bcm. (E) qRT-PCR results showed that TTR level significantly decreased in WS forebrain organoids compared to Ctrl group. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (F, G) WB assay (F) and quantification results (G) showed that the level of TTR was significantly decreased in WS brain organoids compared to Ctrl. Values represent mean \u00b1 SEM; n=5 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (H) KEGG analysis showed that down-regualted genes enriched for MAPK pathway, etc. (I\u2013K) WB assay (I) and quantification results showed that the level of phosphorylated ERK (p-ERK) was significantly decreased (J), but the level of total ERK (K) was not changed in WS brain organoids compared to Ctrl. Values represent mean \u00b1 SEM; n=5 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (L, M) WB assay (L) and quantification results (M) showed that the level of GTF2IRD1 was significantly decreased in WS brain organoids compared to Ctrl. Values represent mean \u00b1 SEM; n=5 independent experiments; *p<0.05, **p<0.01, ***<0.001; unpaired Student\u2019s t test.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Integrated analysis of up-regualted genes in 6 clusters relating to the generation of excitatory neurons and up-regualted genes revealed by bulk RNA-seq. (B) mRNA level of TTR was decreased in the prefrontal cortex of WS patient compared to CTRL. This analysis based on the published data generated by Barak et al., 2019. (C) Representative images of TTR staining showed that TTR was mainly expressed in CP region of CTRL organoids, and the signal intensity remarkably decreased in WS organoids. Scale bar, 100 \u03bcm. (D) qRT-PCR results showed that GTF2I knockdown showed no effect on the expression of TTR in HEK293T cells. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, **p<0.001; unpaired Student\u2019s t test. (E) qRT-PCR results showed that GTF2IRD1 knockdown significantly reduced the expression of TTR in HEK293T cells. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test.\n\nNext, we aim to uncover the mechanism of how TTR was regulated. Two genes among the deleted 23 genes in WS patients, GTF2I and GTF2IRD1, are two transcription factors and were widely expressed in distinct cell clusters in CTRL organoids revealed by scRNA-seq (as shown in Figure 4I). We speculated whether GTF2I and GTF2IRD1 regulated the expression of TTR, and then performed knockdown (KD) of GTF2I and GTF2IRD1 with shRNAs in HEK293T cells, respectively. We observed that the depletion of GTF2IRD1 but not GTF2I led to a significant decrease of TTR (Figure 6\u2014figure supplement 1D and E). These results collectively suggest that GTF2IRD1 deficiency indeed reduces the expression TTR.\n\n### Exogeneous TTR rescues the neuronal deficits in WS brain organoids\n\nNext, we aim to examine whether TTR application could rescue the neuronal deficits in WS brain organoids. WS brain organoids at day 28 were exposed to TTR recombinant protein (55 \u03bcg/ml) and collected for assays at day 56 (Figure 7\u2014figure supplement 1A). WB assay and quantification results showed TTR exposure significantly increased the level p-ERK (Figure 7A\u2013C), which could be significantly inhibited by the supplement of TTR inhibitor receptor-associated protein (RAP), a ligand inhibiting the internalization of TTR (Figure 7D\u2013F). Both TTR only and TTR plus RAP did not affefct the level of total ERK (Figure 7C and F). RAP Immunofluorescence staining and quantification results showed that both TTR exposure remarkably enhanced the percentages of CTIP2+ cells compared to untreated WS organoids (Figure 7G and H). TTR exposure also significantly increased the percentages of TBR1+ cells (Figure 7I and J). These results suggest that TTR can rescue the neuronal deficits of WS forebrain organoids.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig7-v1.jpg)\n\n**Figure 7.:** (A\u2013C) WB assay (A) and quantification results showed that TTR exposure enhanced the level of p-ERK in WS brain organoids (B), while the level of total ERK was not affected (C). Values represent mean \u00b1 SEM; n=3; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (D\u2013F) Western blot (D) and quantification results showed that TTR exposure enhanced the level of p-ERK (E), which could be inhibited by receptor-associated protein (RAP) in WS brain organoids (F). Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (G) Representative images of SOX2 and CTIP2 immunofluorescence staining with WS-derived forebrain organoids under different culture conditions. Scale bar, 50 \u03bcm. (H) Quantification results showed that TTR exposure significantly increased the proportion of CTIP2+ neurons in WS-derived forebrain organoids compared to CTRL. Values represent mean \u00b1 SEM; n=30\u201335 VZ-like regions of 3\u20135 organoids from three WS patients in each group. *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (I) Representative images of SOX2 and TBR1 immunofluorescence staining with WS-derived forebrain organoids under different culture conditions. Scale bar, 50 \u03bcm. (J) Quantification results showed that TTR exposure significantly increased the proportion of TBR1+ neurons in WS-derived forebrain organoids. Values represent mean \u00b1 SEM; n=30\u201335 VZ-like regions of 3\u20135 organoids from three WS patients in each group. *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** (A) Schematic of the application procedure of recombinant TTR, and TTR plus receptor-associated protein (RAP, one TTR inhibitor) for WS forebrain organoid. TTR or TTR +RAP was supplemented to brain organoids at day 28, and assays were performed at day 56.\n\n### Gtf2ird1 deficiency induces neurodevelopmental deficits in mice\n\nFinally, we aim to examine whether Gtf2ird1 deficiency also induces neurodevelopmental deficits in mice. Gtf2ird1+/+ (Wild-type, WT), Gtf2ird1+/- (heterozygous, Het) and Gtf2ird1-/- (knockout, KO) mice were adopted for the study. Immunofluorescence staining with brain sections and quantification results showed that Gtf2ird1+/-and Gtf2ird1-/- mice had the increased BrdU+ (Figure 8A and B) and Ki67+Sox2+ (Figure 8C and D) neuronal progenitor cells in VZ/SVZ regions, respectively, but had the decreased CTIP2+ (Figure 8E and F), STAB+ cells (Figure 8E and G) and TBR1+ (Figure 8H and I) in IZ/CP regions relative to WT mice, respectively. In addition, WB assay and quantification results showed that the protein levels of Gtf2ird1, p-ERK and Ttr (Figure 8J\u2013N) were significantly decreased in the cortex of Gtf2ird1+/-and Gtf2ird1-/- mice relative to WT mice, respectively.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig8-v1.jpg)\n\n**Figure 8.:** (A, B) Representative images of BrdU immunofluorescence staining (A) and quantification results (B) showed the increased BrdU+ eNPCs in VZ/SVZ of Gtf2ird1+/- (heterozygous, Het) and Gtf2ird1-/- (knockout, KO) mice compared to Gtf2ird1+/+ (Wild-type, WT) mice, respectively. Pups were injected with BrdU at E15.5 and sacrificed 1.5 hr later. Values represent mean \u00b1 SEM; n=4 animals for each group; \u2217p<0.05, \u2217\u2217p<0.01, \u2217\u2217\u2217p<0.001; unpaired Student\u2019s t test. Scale bar, 50 \u03bcm. (C, D) Representative images of Sox2 and Ki67 immunofluorescence staining (C) and quantification results (D) showed the increased Ki67+Sox2+ eNPCs in VZ/SVZ of Het and KO mice compared to WT mice, respectively. Values represent mean \u00b1 SEM; n=4 animals for each group; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. Scale bar, 50 \u03bcm. (E\u2013G) Representative images of neuronal marker SATB2 and CTIP2 immunofluorescence staining (E) and quantification results showed the decreased Ctip2+ (F) and SATB2+ (G) neurons of Het and KO mice compared to WT mice, respectively. Values represent mean \u00b1 SEM; n=4 animals for each group; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. Scale bar, 50 \u03bcm. (H, I) Representative images of neuronal marker Tbr1 immunofluorescence staining (H) and quantification results (I) showed the decreased Tbr1+ neurons in IZ/CP of Het and KO mice compared to WT mice, respectively. Values represent mean \u00b1 SEM; n=4 animals for each group; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. Scale bar, 50 \u03bcm. (J\u2013N) WB assay (J) and quantification results showed that the levels of Gtf2ird1 (K), p-ERK (L) and TTR (M) were significantly decreased, while the level of total ERK (N) was not altered in the cortical tissues of Het and KO mice compared to WT mice, respectively. Values represent mean \u00b1 SEM; n=4 animals for each group; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test.\n\nNext, we examined the effects of Gtf2ird1 on the proliferation and differentiation of embryonic neural progenitor cells of mouse (eNPCs) in vitro. eNPCs were isolated from the forebrains of WT, Het and KO mice, respectively. BrdU incorpation assay and quantification results showed that the percentage of BrdU+Nestin+/Nestin+ (Figure 9A and B) and the percentage of Ki67+Sox2+/Sox2+ (Figure 9C and D) were significantly increased in Het and KO eNPCs, respectively. Upon the differentiation, Het and KO eNPCs produced fewer Tuj1+ neurons and more Gfap+ astrocytes relative to WT eNPCs (Figure 9E\u2013G), respectively. qRT-PCR results consistently showed the altered expression of Gtf2ird1, Ttr, Ki67, Nestin, and Sox2 in proliferating eNPCs (Figure 9\u2014figure supplement 1A) and Gtf2ird1, Ttr, Tuj1, and Gfap (Figure 9\u2014figure supplement 1B) in differentiated eNPCs, respectively. We then further performed acute knockdown of Gtf2ird1 (KD) in eNPCs and found that Gtf2ird1 KD significantly reduced the mRNA level of Ttr (Figure 9J\u2013L). WB assay and quantification results showed thaht Gtf2ird1 KD also significantly reduced the protein level of Ttr (Figure 9J\u2013L). In addition, Gtf2ird1 KD significantly inhibited neuronal differentiation of mouse eNPCs (Figure 9\u2014figure supplement 1C and D).\n\n![Figure 9.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig9-v1.jpg)\n\n**Figure 9.:** (A) Representative images of BrdU and Nestin immunofluorescence staining with cultured eNPCs from WT, Het and KO mice, respectively. Scale bar, 25 \u03bcm. (B) Quantification results showed that the percentage of BrdU+/BrdU+Nestin+ eNPCs was significantly increased in Het and KO mice relative to WT cells, respectively. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (C) Representative images of Ki67 and Sox2 immunofluorescence staining with cultured eNPCs from WT, Het and KO mice, respectively. Scale bar, 25 \u03bcm. (D) Quantification results showed that the percentage of Ki67+/Ki67+Sox2+ eNPCs was significantly increased in Het and KO mice relative to WT cells, respectively. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (E) Representative images of Tuj1 and Gfap immunofluorescence staining with cultured eNPCs from WT, Het, and KO mice, respectively. Scale bar, 25 \u03bcm. (F, G) Quantification results showed that the nubmer of Tuj1+ neurons was significantly decreased (F), but the number of Gfap +astrocytes was significantly increased (G) upon the differentiation of eNPCs in Het and KO mice relative to WT cells, respectively. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (H, I) qRT-PCR results showed that acute knockdown of Gtf2ird1 significantly reduced the level of Gtf2ird1 (H) and TTR (I) in WT eNPCs compared to scramble group (NC), respectively. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (J\u2013L) WB assay (J) and quantification results showed that acute knockdown of Gtf2ird1 significantly reduced the level of Gtf2ird1 (K) and TTR (L) in WT eNPCs, respectively. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (M) Chromatin immunoprecipitation followed qPCR (ChIP-qPCR) showed that Gtf2ird1 binds to the promoter regions of TTR. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test.\n\n![Figure 9\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig9-figsupp1-v1.jpg)\n\n**Figure 9\u2014figure supplement 1.:** (A) qRT-PCR results showed the decreased levels of Gtf2ird1 and Ttr, but the increased levels of Ki67, Nestin and Sox2 in proliferating Het and KO embryonic neuronal progenitor cells (eNPCs) relative to WT cells. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (B) qRT-PCR results showed the decreased Gtf2ird1, Ttr and Tuj1, but the increased Gfap in differentiated Het and KO eNPCs relative to WT cells. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. (C, D) Representative images (C) and quantification results (D) showed that Gtf2ird1 knockdown led to a significant decrease of new born neurons in mouse eNPCs. Values represent mean \u00b1 SEM; n=3 independent experiments; *p<0.05, **p<0.01, ***p<0.001; unpaired Student\u2019s t test. Scale bar, 20 \u03bcm.\n\n![Figure 9\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98081/elife-98081-fig9-figsupp2-v1.jpg)\n\nFinally, we examined whether Gtf2ird1 could bind to the promoter region of Ttr to regulate the expression of Ttr. Chromatin immunoprecipitation followed by qPCR results with eNPCs showed that Gtf2ird1 indeed binds to the promoter region of Ttr (Figure 9M). Collectively, these results suggested that Gtf2ird1 deficiency leads to abnormal neurogenesis through regulating Ttr in mice.\n\n## Discussion\n\nIn the present study we established a forebrain organoid model and identified aberrant neurogenesis deficits in WS organoids (Figure 9\u2014figure supplement 2). Bulk RNA-seq revealed the altered gene expression related to neuronal development. scRNA-seq revealed an altered developmental trajectory and aberrant excitatory neurogenesis in WS organoids. Mechanistically, we showed that transthyretin (TTR) had a significantly decreased expression in WS organoids. GTF2IRD1 encoded by one WS gene GTF2IRD1 regulated the expression of TTR. Furthermore, exogenous TTR could rescue the neurogenesis deficits of WS organoids. Collectively, our data highlight the essential function of GTF2IRD1-TTR axis for mammalian neuronal development and provide novel insights into mechanisms underlying the abnormal neurogenesis in WS brain.\n\nIndividuals with WS clinically exhibited diverse neuronal deficits including hypersociability, autistic deficits, impaired myelination, intellectual disability and abnormal brain structure due to the altered neuronal development (Kozel et al., 2021; Osborne, 2010; Pober, 2010). Distinct models have been applied to investigate the mechanisms underlying these defects (Alesi et al., 2021; Barak and Feng, 2016; Barak et al., 2019; Chailangkarn et al., 2016; Corley et al., 2016; Dai et al., 2009; Enkhmandakh et al., 2009; Kopp et al., 2019; Kopp et al., 2020; Kozel et al., 2021; Mervis et al., 2012; Morris and Braddock, 2020; Osborne, 2010; Tassabehji et al., 2005). Brain organoids derived iPSCs under 3D culturing condition have been providing a unique model to investigate human brain development and neurological diseases (Amin and Pa\u015fca, 2018; Benito-Kwiecinski and Lancaster, 2020; Clevers, 2016; Di Lullo and Kriegstein, 2017; Kelava and Lancaster, 2016; Lancaster et al., 2013; Li and Izpisua Belmonte, 2019; Pa\u015fca, 2019; Trujillo and Muotri, 2018). Utilizing the forebrain organoids together with scRNA-seq, our study has revealed the aberrant capabilities of proliferation and differentiation of WS NPCs. Of note, our study revealed for the first time an altered developmental trajectory and a remarkably reduced excitatory neurogenesis in WS organoids. Therefore, our findings provide a new insight regarding the deficits of neurogenesis and neuronal development in WS brain.\n\nGenotype-phenotype relationship analysis suggests that among 25\u201327 WS genes, each gene could be responsible for distinct phenotypes and could contribute to WS phenotype at varying degrees (Kozel et al., 2021; Lek et al., 2016; Tassabehji, 2003). For example, LIMK1, CYLN2, DSCAM, PAK1, GTF2I and BAZ1B contributed for neurological phenotypes (Barak et al., 2019; Lalli et al., 2016; Pinelli et al., 2020; Todorovski et al., 2015; van Hagen et al., 2007), ELN for blood vessel development (Li et al., 1998), and DNAJC30 for mitochondrial function (Tebbenkamp et al., 2018). As a member of the transcription factor II (TF-II), GTF2IRD1 regulates gene expression and involves multiple processes, such as embryonic development, cell cycle and neuronal development (Enkhmandakh et al., 2009; Kopp et al., 2020; O\u2019Leary and Osborne, 2011; Palmer et al., 2007; Tassabehji et al., 2005; Thompson et al., 2007; van Hagen et al., 2007). Our findings reveal a wide expression of GTF2IRD1 in all identified cell clusters. Intriguingly, the deletion of GTF2IRD1, but not GTF2I, caused a remarkable decrease of transthyretin (TTR). TTR is widely expressed in the neuronal system and promotes neuronal development (Buxbaum et al., 2008; Gomes et al., 2016; Li et al., 2011; Magalh\u00e3es et al., 2021). TTR deficient mice displayed a reduced neurogenesis and increased oligodendrogenesis (Alshehri et al., 2020; Vancamp et al., 2019). Our results showed that Gtf2ird1 deficiency also induces abnormal neurogenesis and neurodevelopmental deficits and reduces TTR in mice. Consistently, TTR had decreased expression in the postmortem frontal cortex of WS patients (Barak et al., 2019). Our results also show that TTR can rescue neuronal deficits of NPCs in WS organoids through activating ERK signaling. Therefore, our findings reveal a novel mechanism underlying the aberrant neurogenesis and neuronal development in WS brain.\n\nIn summary, our study has showed the abnormal neurogenesis and neuronal differentiation, especially the aberrant excitatory neurogenesis in WS organoids. Our study has revealed that the dysfunction of GTF2IRD1-TTR axis plays essential roles for the neurodevelopmental deficits of WS brain. Our findings also suggest that TTR could be a potential target for the treatment of WS at clinic.\n\n## Methods\n\n### Animals\n\nGtf2ird1+/- mice were purchased from Model Animal Research Center (Nanjing, China). Gtf2ird1+/- male mice were crossed with Gtf2ird1+/- female mice to generate Gtf2ird1+/+ (wild-type), Gtf2ird1+/- (heterozygous, Het) and Gtf2ird1-/- (homozygous, KO) mice. Animals were in C57BL/6 genetic background and housed in the animal center of Zhejiang University under 12 hour light/12 hour dark conditions with free access to food and water. The genotypes of animals were determined with PCR. The used primers included: 5\u2019TGGAAGCCCAGTGACTACTTG and 5\u2019ACATAGGCATAAGGGCCCAG (for wild-type band), and 5\u2019CAATGAGAGCGTCTTCGTGAT and 5\u2019ACCATTGAAAAGTAGAGTAGAATGC (for knockout band). All animal experiments were performed following with the protocols approved by the Zhejiang University Animal Care and Ethics Committee.\n\n### The establishment and culture of iPSCs\n\nPeripheral blood samples of three male patients with WS and three healthy males were were collected at the Children\u2019s Hospital, School of Medicine, Zhejiang University following the protocol approved by the ethics committee of Zhejiang university Medical University Children\u2019s hospital ([2016]NO.326). After the isolation of peripheral blood mononuclear cells (PBMCs) and urinary cells, respectively, the reprogramming was carried out following the manufactuer\u2019s protocol (Thermo Fisher, Cat# A16517). Briefly, around 1X105 PBMCs were transduced using the Sendai reprogramming vectors at appropriate MOI in 24-well plates. For feeder-free culture, iPSCs were cultured with mTeSR 1 medium (STEMCELL) on Matrigel (Corning). For feeder-dependent culture, iPSCs were cultured with DMEM/F12 medium (Corning) consisting of 20% KnockOut Serum Replacement (Gibco), 1 X GlutaMAX (Gibco), 1 X MEM Non-Essential Amino Acids (Gibco), 100 \u03bcM 2-Mercaptoethanol (Sigma), 10 ng/mL human FGF-basic (PeproTech) on the inactivated mouse embryonic fibroblasts (MEF). The information of used reagents could be found in Supplementary file 2.\n\n### The culture of forebrain organoids\n\nThe generation and maintenance of forebrain organoids were carried out as described previously with moderation (Kang et al., 2021a; Qian et al., 2016). iPSCs colonies on MEF were digested with 1 mg/mL Collagenase Type IV (Gibco) at 37 \u00b0C for 1 hour. After the digestion, the colonies were resuspended with the forebrain first medium (DMEM/F12, 20% KnockOut Serum Replacement, 1 x GlutaMAX, 1 x MEM Non-Essential Amino Acids, 100 \u03bcM 2-Mercaptoethanol, 2 \u03bcM A83-01, 2 \u03bcM Dorsomorphin) and cultured in low-attachment six-well plate (Corning) for 4 days. On day 5 and day 6, the medium was halfly replaced with forebrain second medium containing DMEM/F12 (Corning), 1 X GlutaMAX (Gibco), 1 X MEM Non-Essential Amino Acids (Gibco), 1X N2 (Gibco), 1 \u03bcM SB-431542 (STEMCELL), 1 \u03bcM CHIR99021 (STEMCELL), 4 ng/mL WNT-3A (R&D Systems), 10 \u03bcg/mL Heparin (Sigma). On day 7, EBs were embedded with Matrigel using forebrain second medium in order to induce the neuroepithelium. On day 14, organoids were mechanically separated and transferred to 12-well spin \u03a9 bioreactor for culture, and the medium was changed to forebrain third medium, consisting of DMEM/F-12 (Corning), 1 X GlutaMAX (Gibco), 1 X MEM Non-Essential Amino Acids (Gibco),1X N2 (Gibco), 1XB27 (Gibco), 2.5 \u03bcg/mL insulin (Sigma), 1 X P/S (Gibco),100\u03bcM 2-Mercaptoethanol (Sigma). From day 35 to day 56, 1% Matrigel was added to the forebrain third medium to remodel the extracellular matrix (ECM) in 12-well spinning bioreactors.\n\n### Targeted panel sequencing\n\nDNA was extracted from the peripheral blood of healthy control and WS patients, and purified with GeneJET Whole Blood Genomic DNA Purification Mini Kit (Thermo Fisher Scientific). DNA purity was identified by NanoDrop spectrophotometers (Thermo Fisher, MA, USA). DNA concentration was quantified by Qubit DNA Assay Kit in Qubit 3.0 Fluorometer (Life Technologies, CA). For each sample, a total of 1 \u03bcg of genomic DNA was used for library preparation with the NimbleGen SeqCap EZ Human Exome V3 following manufacturer\u2019s instructions (Basel, Swiss). Library concentration was measured by QubitDNA Assay Kit in Qubit 3.0, and insert size was detected by the Agilent B ioanalyzer 2100 system (Agilent Technologies, CA, USA). The clustering of the index coded samples was performed on a cBot Cluster Generation System according to the manufacturer\u2019s recommendations (Illumia, USA). After cluster generation, the library preparations were sequenced on an Illumina Hiseq Ten platform with 150 bp paired end module.The panel kit was customized from Agilent Technologies, Design ID: 3249861, Cat#5190\u20134816, Species: H. sapiens (UCSC hg19, GRCh37).\n\n### Total RNA isolation and quantitative real-time PCR\n\nTotal RNA was extracted with TRIzol reagent following the manufacturer\u2019s protocol (Thermo Fisher Scientific). The concentration of RNA was quantified using a NanoDrop spectrophotometer 2000 (Thermo Fisher Scientific). 0.5 mg of total RNA was used for reverse transcription, and standard real-time qPCR assays were performed using SYBR Green (Vazyme) in triplicates. The results were analyzed using the \u25b3\u25b3Ct method. The information of used primers could be found in Supplementary file 3.\n\n### Bulk RNA-seq and data analysis\n\nRNA quality was determined using Agilent 2100 Bioanalyzer. After enriched by Oligo(dT) beads, mRNA was fragmented into short fragments using fragmentation buffer and reverse transcribed into cDNA using NEBNext Ultra RNA Library Prep Kit for Illumina (NEB, USA). Purified double-stranded cDNA fragments were end-repaired, base added and ligated to Illumina sequencing adapters. The ligation reaction was purified with the AMPure XP Beads(1.0 X). Ligated fragments were subjected to size selection by agarose gel electrophoresis followed by PCR amplification. Library quality was assessed on the Agilent Bioanalyzer 2100 system (Agilent Technologies Inc) and sequenced on an Illumina Hiseq platform (Illumina NovaSeq6000).\n\nTo obtain high-quality clean reads, raw data of fastq format were processed by removing reads containing adapter, reads containing ploy-N and low-quality reads from raw data. FPKM (Fragments Per Kilobase of transcript sequence per Millions base pairs sequenced) of each transcript was calculated based on the length of the gene and reads count mapped to this gene. Transcripts with the parameter of false discovery rate (FDR) below 0.05 and absolute fold change \u22652 were considered differentially expressed transcripts.\n\n### Single cell RNA-sequencing (scRNA-seq)\n\nThree pairs of Day 56 forebrain organoids derived from iPSCs of three CTRL and WS patients were dissociated with 3 mL Tryp-LE (Sigma-Aldrich) for 15 min at 37 \u00b0C, respectively. A single-cell suspension was subsequentialy collected at a cell density of 1000 cells/\u03bcL, and were added to a 10 X Genomics GemCode Single-cell instrument to generates a single-cell Gel Bead-In-EMlusion (GEMs). The leftover biochemical reagents and primers were removed with silane magnetic beads. Full-length, barcoded cDNAs were then amplified by PCR to generate sufficient amount of DNA for library construction. Libraries were sequenced by Chromium Next GEM Single Cell 3\u2032 Reagent Kits v3.1. Single Cell 5\u2032 16 bp 10 x Barcode and 10 bp UMI were encoded in Read 1, while Read 2 was used to sequence cDNA fragment. Sample index sequences were incorporated as the i7 index read. Read 1 and Read 2 were standard Illumina sequencing primer sites used in paired-end sequencing.\n\n### scRNA-seq data analysis\n\n10 X Genomics Cell Ranger software (version 3.1.0) was used for the conversion of raw BCL files to FASTQ files, alignment and counts quantification. Reads with low-quality barcodes and UMIs were filtered out and then mapped to the reference genome (human GRCh38). Reads were uniquely mapped to the transcriptome and intersecting an exon at least 50% were considered for UMI counting. Before quantification, the UMI sequences would be corrected for sequencing errors, and valid barcodes were identified based on the Empty Drops method (Lun et al., 2019). The cell by gene matrices were produced via UMI counting and cell barcodes calling. The cell by gene matrices for each sample were individually imported to Seurat version 3.1.1 for downstream analysis (Butler et al., 2018). Cells with unusually high number of UMIs 8000 or mitochondrial gene percent 10% were filtered out. We also excluded cells with less than 500 or more than 4000 genes detected. Expression value of each gene in given cluster were compared against the rest of cells using Wilcoxon rank sum test. Cell clusters were annotated to known biological cell types using canonical cell marker genes (Paulsen et al., 2022). Significant upregulated genes were determined based on (1) at least 1.28-fold increased in the target cluster; (2) expressed in more than 25% of the cells in the target cluster; (3) p value is less than 0.05.\n\nGene ontology (GO) analysis was performed using the DAVID database as described previously (Chen et al., 2021). Each enriched GO function term is represented by a node and the node size is proportional to the number of genes in its corresponding function term in the enrichment maps. Similar GO functions are categorized as one cluster. The function term and the number of genes in each cluster are labelled.\n\n### Isolation and culture of embryonic mouse NPCs\n\nEmbryonic mouse neural progenitor cells (eNPCs) were isolated and cultured as described previously (Li et al., 2017, Li et al., 2021). Briefly, the cerebral cortex of mice (Embryonic day 14, Day 14) was dissected and treated with 0.1% Trypsin for 5 min in 37 \u00b0C. Then cells were cultured with DMEM/F-12 medium with 2% B27 (minus vitamin A), 1% antibiotic-antimycotic, 20 ng/mL FGF-2, 20 ng/mL EGF, and in a 5% CO2 incubator at 37 \u00b0C. eNPCs were maintained in proliferating conditions for 2 weeks. For the differentiation assay, eNPCs were cultured with DMEM/F-12 medium containing 2% B27 (minus vitamin A), 2 mM L-glutamine, 1% antibiotic-antimycotic,1 \u03bcM retinoic acid and 5 \u03bcM forskolin (differentiation medium) for 48 hr. For BrdU incorporation assay, BrdU was supplemented at the final concentration of 5 \u03bcM for 8 hr. At the scheduled time point, eNPCs were fixed with 4% paraformaldehyde (PFA) followed by immunostaining with proper antibodies.\n\n### Culture of HEK293T cells and plasmid transfection\n\nHEK293T cells were cultured with DMEM medium containing 10% FBS, 2 mM L-glutamine, and 1% antibiotic-antimycotic in a 5% CO2 incubator at 37 \u00b0C, and medium was replaced every day. After the cell density reaches about 70%, half volume of medium was changed with fresh medium 6 hr before the transfection. 4 \u03bcg of plasmids and 6 \u03bcl of Lipo2000 were mixed with 100 \u03bcl of Opti-MEM at room temperature for 10 min, respectively. Reagents were mixed together and further reacted at room temperature for 10 min. The mixture was added to one well of a six-well plate. The medium was replaced with fresh medium 8\u201310 hr after transfection. Cells were harvested for assays 48 hrs post-transfection.\n\n### Immunofluorescence staining\n\nOrganoids were collected and fixed with 4% paraformaldehyde for 4 hr. After washed with 1 X PBS and dehydrated with 30% sucrose solution at 4 \u00b0C, brain organoids were embedded with O.C.T (SAKURA) and sections of 10 \u03bcm thickness were prepared with a cryostat (Leica).\n\nEmbryonic day 15.5 (E15.5) pups were hypothermic anesthetized with ice, and transcardially perfused with cold phosphate buffer saline (PBS) followed by cold 4% paraformaldehyde (PFA). Brain samples were removed, and post-fixed with 4% PFA overnight and completely dehydrated with 30% sucrose at 4 \u00b0C. Brain samples were embedded with OCT (4583, SAKURA) and 30 \u03bcm thickness sections were prepared with a cryostat (CM1950, Leica). For BrdU assay, E15.5 pups were injected with BrdU (0.1 mg/10 g dody weight) and sacrificed 1.5 hr later.\n\nTo perform immunofluorescence staining, section samples were incubated with blocking buffer for 1 hr and applied with proper primary antibodies at 4 \u00b0C overnight. The next day, samples were washed with 1 x PBS followed by the application of proper secondary antibodies. Images were taken with a confocal microscope (Olympus, FV3000). The quantification of the thickness and cell number of were performed with imageJ software as described previously (Kang et al., 2021b; Qian et al., 2016). For stratification and thickness analysis of brain organoid, ventricular zone (VZ) layers were defined as SOX2+ and CTIP2- or TBR1- (MAP2-) regions. The cortical plate (CP) layer is defined as CTIP2+ or TBR1+ or MAP2+ regions.\n\n### Click-iT EdU labeling\n\nOrganoids were applied with 10 \u03bcM EdU for 2 hr or 24 hr, respectively. At the scheduled timepoint, cells were washed with 1 X PBS, and subsequentially fixed with 4% paraformaldehyde and dehydrated with 30% sucrose. Brain organoid sections were prepared with a cryostat (Leica). EdU staining was performed following the manufactuer\u2019s mannual (Invitrogen). Primary and secondary antibodies were applied. Images were taken with a confocal microscope (Olympus, FV3000).\n\n### Plasmid transfection and lentivirus packaging\n\nScramble shRNA (5\u2032-TTCTCCGAACGTGTCACGT-3\u2032), shRNAs targeting human GTF2I (5\u2032-CGGATGAGTGTAGATGCTGTA \u20133\u2032), human GTF2IRD1 (5\u2032- GCGCCATAGTATCCACTTCAT-3\u2032) and mouse Gtf2ird1 (#1, 5\u2032-GTGCCCTACAAGAGAATCAAA-3\u2032; #2, 5\u2032-GTGAAGCTCTGGGCATCAAAT-3\u2032) were cloned into lentivirus vector, respectively. Lentiviruses were packaged, and used to infect HEK293T cells and eNPCs. 48 hr later, the cells were collected or fixed with 4% paraformaldehyde for the following experiments.\n\n### Western blot\n\nThe collected organoids and cell samples were treated with RIPA buffer (Abcam) containing 1 X protease inhibitor cocktail (MCE). Protein concentration was measured with a Biophotometer (Eppendorf), and after denaturation, 20\u201340 \u03bcg proteins were subjected to SDS-polyacrylamide gel electrophoresis. Signals were detected with Tanon Detection system (Tanon) and the intensities of the immunoblot bands were normalized to Gapdh or Tubulin. The information of primary and secondary antibodies used can be found in Supplementary file 2. Western blot images were analyzed using ImageJ software.\n\n### TTR exposure\n\nWS brain organoids at day 28 were exposed to TTR recombinant protein (55 \u03bcg/ml) and collected for assays at day 56 followed by immunostaining. Some organoids were also treated with TTR only, TTR plus RAP (one TTR inhibitor; 55 \u03bcg/ml) and collected for assays at day 56 followed by western blot assays.\n\n### Chromatin immunoprecipitation-qPCR assay\n\nChromatin immunoprecipatation (ChIP) experiment was performed following the manufactuer\u2019s protocol (Beyotime Biotechnology, China). Briefly, 250 \u03bcl of 37% formaldehyde was added to cultured cells for cross-link for 10 min at 37 \u00b0C. The reaction was then immediately terminated with 125 mM glycine solution for 5 min. Then cells were washed with PBS containing 1 mM and resuspended in 200 \u03bcL SDS lysis buffer containing 1 mM PMSF in an ice bath for 10 min. Samples were sonicated into DNA fragments of 200\u2013600 \u2009bp size using a sonicator. 20 \u03bcl sample was kept as input control, and the left was incubated with anti-IgG (Proteintech) and anti-GTF2IRD1 antibody (RD system) overnight at 4 \u00b0C, respectively. The next day, after centrifugation of sample, pellets was washed with Low Salt Immune Complex Wash Buffer, High Salt Immune Complex Wash Buffer, LiCl Immune Complex Wash Buffer and TE Buffer. Samples were de-crosslinked and DNA was purified by a PCR purification kit according to the manual (Beyotime biotechnology, China). qPCR reaction was performed to measure enrichment with 4 pairs of primers designed within the promoter region of TTR, and GAPDH was used as a internal control. Fold enrichment was calculated by the comparative threshold cycling method using Equation 2-\u0394\u0394ct. Primer sequences were provided in Supplementary file 3.\n\n### Statistical analysis\n\nData were presented as mean \u00b1 SEM. Statistical analysis between group differences was performed with unpaired Student\u2019s t test or one way ANOVA using Graph Prism software (version 9.0, GraphPad). For multiple group comparisons, a one-way ANOVA followed by Dunnett\u2019s multiple-comparison test. p value less than 0.05 was considered as statistical significance. Replicate information is indicated in the figure legends.\n",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Michelle Antoine, National Institute on Alcohol Abuse and Alcoholism United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98081.2.sa0](https://doi.org/10.7554/eLife.98081.2.sa0)\n\nZhao et al. report valuable adverse effects on cell proliferation, differentiation and gene expression, possibly linked to reduced binding activity of the transcription factor GTF2IRD1 to the transthyretin (TTR) promoter, in a human forebrain organoid model of Williams Syndrome (WS). The authors provide incomplete evidence of the effects of GTF2IRD1, a mutated gene in WS, on altering MAPK/ERK pathway activity, a well-recognized target in cell proliferation.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98081.2.sa1](https://doi.org/10.7554/eLife.98081.2.sa1)\n\nSummary:\n\nZhao et al. used the human forebrain organoid model, transgenic mice model, and embryonic neural progenitor cells to investigate the mutation previously identified in Williams Syndrome. They found abnormal proliferation and differentiation induced by this mutation, as well as altered expression profiles corresponding with aberrant cell clusters. This is regulated through the binding of GTF2IRD1 to transthyretin (TTR) promoter regions and tested on three models mentioned above on neurodevelopmental deficits.\n\nStrengths:\n\nAuthors have applied both cell culture, organoid culture and in vivo model to test the previously reported mutation found in Williams Syndrome. They investigated cell behavior including proliferation and differentiation, while using the NGS technique to identify potential signaling pathways that are highly involved and can serve as a candidate to save the phenotype.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98081.2.sa2](https://doi.org/10.7554/eLife.98081.2.sa2)\n\nSummary:\n\nThe study by Xingsen Zhao et al on \"A human forebrain organoid model reveals the essential function of GTF2IRD1-TTR-ERK axis for the neurodevelopmental deficits of Williams Syndrome\" presents a forebrain organoid model for WS and has identified defects in neurogenesis. The authors have performed scRNAseq from these patients' derived forebrain organoids showing upregulation expression in genes related to cell proliferation while genes involved in neuronal differentiation were downregulated. The major findings presented in this study are an increase in the size of SOX2+ ventricular zone in WS forebrain organoids with an altered developmental trajectory and aberrant excitatory neurogenesis. The study also presents evidence that transthyretin (TTR) has a reduced expression in WS organoids, and its expression is regulated by the transcription factor -GTF2IRD1. The authors then go on identity mechanistic details of TTR function on MAPK/ERK pathway which has been known to be involved in brain development. Overall, this is a well-constructed study revealing the function of one of the key genes that is deleted in WS and provides novel insights into mechanisms underlying the abnormal neurogenesis in WS brain.\n\nStrengths:\n\nWS patients have neurocognitive disorders which most likely stem from defects in early neurodevelopment. This study has investigated a WS forebrain organoid model with scRNAseq and identified differences in cell proliferation and differentiation. This study has presented some new evidence regarding the function and regulation of TTR and its regulator GTF2IRD1 during brain development.\n\nWeaknesses:\n\nThough the evidence presented for the mechanism of action of TTR on the MAPK pathway is unclear and lacks depth. It would require identifying downstream targets of TTR and how it interacts with the MAPK pathway.\n",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "55cfee5f-8b01-4b6f-9210-877656cd9568",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C1",
+      "claim": "Williams syndrome (WS; OMIM#194050) is a rare disorder with a prevalence of 1 in 7500 live births.",
+      "claim_type": "EXPLICIT",
+      "source": "Williams syndrome, also known as Williams-Beuren syndrome (WS; OMIM#194050) is a rare disorder with a prevalence of 1 in 7500 live births (Kozel et al., 2021; Pober, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Kozel et al., 2021; Pober, 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "34058630-6953-4dd4-bdba-168b58319e3b",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C2",
+      "claim": "WS is caused by the microdeletion of approximately 25\u201327 genes on chromosome 7q11.23.",
+      "claim_type": "EXPLICIT",
+      "source": "WS is caused by the microdeletion of approximately 25\u201327 genes (termed as WS genes) on chromosome 7q11.23 and affects multiple systems including cardiovascular and neuronal systems (Collins, 2013; Collins, 2018; Lin et al., 2019; Pober et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Collins, 2013; Collins, 2018; Lin et al., 2019; Pober et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "91d07351-a6d6-4c19-b587-9a8e79e1450e",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C3",
+      "claim": "WS affects multiple systems including cardiovascular and neuronal systems.",
+      "claim_type": "EXPLICIT",
+      "source": "WS is caused by the microdeletion of approximately 25\u201327 genes (termed as WS genes) on chromosome 7q11.23 and affects multiple systems including cardiovascular and neuronal systems (Collins, 2013; Collins, 2018; Lin et al., 2019; Pober et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Collins, 2013; Collins, 2018; Lin et al., 2019; Pober et al., 2008).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "d16993c4-3238-4285-bfe5-0df41a41467b",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C4",
+      "claim": "Most individuals with WS displayed neuronal phenotypes including hypersociability, impaired myelination and intellectual disability (IQ <70).",
+      "claim_type": "EXPLICIT",
+      "source": "Most individuals with WS displayed neuronal phenotypes including hypersociability, impaired myelination and intellectual disability (IQ <70; Barak and Feng, 2016; Barak et al., 2019; Kozel et al., 2021; Morris and Braddock, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Barak and Feng, 2016; Barak et al., 2019; Kozel et al., 2021; Morris and Braddock, 2020).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "a2fdb5b1-e7cc-4978-b745-301107fed845",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C5",
+      "claim": "fMRI neuroimaging and examination with post-mortem brain tissues of WS patients both showed abnormalities of brain structure of WS patients, including visuospatial construction deficit and increased length of dendrites, numbers of spine and branching points.",
+      "claim_type": "EXPLICIT",
+      "source": "fMRI neuroimaging and examination with post-mortem brain tissues of WS patients both showed abnormalities of brain structure of WS patients, including visuospatial construction deficit and increased length of dendrites, numbers of spine and branching points (Chailangkarn et al., 2016; Kippenhan et al., 2005; Meyer-Lindenberg et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Chailangkarn et al., 2016; Kippenhan et al., 2005; Meyer-Lindenberg et al., 2004).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "4780a225-3f45-4b62-9f9e-f53e6d898c92",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C6",
+      "claim": "Neural progenitor cells (NPCs) and neurons derived from the induced pluripotent stem cells (iPSC) of WS patient display deficits, such as increased apoptosis, aberrant morphological complexity and electrophysiological activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Neural progenitor cells (NPCs) and neurons derived from the induced pluripotent stem cells (iPSC) of WS patient display deficits, such as increased apoptosis, aberrant morphological complexity and electrophysiological activity (Chailangkarn et al., 2016; Khattak et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Chailangkarn et al., 2016; Khattak et al., 2015).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "1e8e7696-7cb0-45ee-8647-5b879b68c61d",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C7",
+      "claim": "Neuronal deletion of WS gene Gtf2i leads to severe behavioral deficits and reduced myelination in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Neuronal deletion of WS gene Gtf2i leads to severe behavioral deficits and reduced myelination in mice (Barak et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Barak et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "de0bb67b-5f92-4cc7-ae81-b8f3dd32e9da",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C8",
+      "claim": "GTF2IRD1, GTF2I, BAZ1B, VPS37D, STX1A, CLIP2, LIMK1, MLXIPL, and ELN could be the key genes for the phenotypes of WS.",
+      "claim_type": "EXPLICIT",
+      "source": "Although single gene mutation of those 25\u201327 genes only causes partial phenotypes of WS, genotype-phenotype relationship analysis suggests that GTF2IRD1, GTF2I, BAZ1B, VPS37D, STX1A, CLIP2, LIMK1, MLXIPL, and ELN could be the key genes for the phenotypes (Kozel et al., 2021; Lek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Kozel et al., 2021; Lek et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "bdb61652-9fdb-499f-aac1-fac48f6d4be8",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C9",
+      "claim": "GTF2IRD1 encodes DNA binding protein of the Transcription factor (TF) II-I family.",
+      "claim_type": "EXPLICIT",
+      "source": "GTF2IRD1 encodes DNA binding protein of the Transcription factor (TF) II-I family and its deficiency contributes to neurological deficits of WS patients, such as the impaired motor coordination, visual-spatial constructive deficits and cognitive deficits (Carmona-Mora et al., 2015; Corley et al., 2016; Dai et al., 2009; Enkhmandakh et al., 2009; Kopp et al., 2020; Makeyev and Bayarsaihan, 2009; Morris et al., 2003; O'Leary and Osborne, 2011; Tassabehji et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "64aca8fc-1df0-4884-9e2a-d242acb3280e",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C10",
+      "claim": "GTF2IRD1 deficiency contributes to neurological deficits of WS patients, such as the impaired motor coordination, visual-spatial constructive deficits and cognitive deficits.",
+      "claim_type": "EXPLICIT",
+      "source": "GTF2IRD1 encodes DNA binding protein of the Transcription factor (TF) II-I family and its deficiency contributes to neurological deficits of WS patients, such as the impaired motor coordination, visual-spatial constructive deficits and cognitive deficits (Carmona-Mora et al., 2015; Corley et al., 2016; Dai et al., 2009; Enkhmandakh et al., 2009; Kopp et al., 2020; Makeyev and Bayarsaihan, 2009; Morris et al., 2003; O'Leary and Osborne, 2011; Tassabehji et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "12dcfda3-7261-444c-b6f6-c8c05cf7c025",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C11",
+      "claim": "WS forebrain organoids showed a higher percentage of KI67+/SOX2+ cells compared to that of CTRL organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "We first performed immunofluorescence staining and observed that WS forebrain organoids showed a higher percentage of KI67+/SOX2+ cells compared to that of CTRL organoids (Figure 1B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 1B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "a1731a60-c06f-4eab-be84-3e2b8acff8eb",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C12",
+      "claim": "The percentage of EdU+/SOX2+ cells significantly increased in WS organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, CTRL and WS organoids were pulsed with 5-ethynyl-2\u2032-deoxyuridine (EdU) at a dosage of 10  \u03bcM for 2 hr, and we found that the percentage of EdU+/SOX2+ cells also significantly increased in WS organoids (Figure 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by EdU incorporation assay data shown in Figure 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "9ad62636-8910-4a08-82ca-1107f43eab3e",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C13",
+      "claim": "The percentage of Ki67-EdU+ cells was significantly decreased in WS organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CTRL and WS organoids were incorporated with EdU for 24 hr, and the cell cycle exiting of neural progenitor cells (NPCs) was assessed by analyzing the co-localization of EdU and Ki67. We observed that the percentage of Ki67-EdU+ cells was significantly decreased in WS organoids (Figure 1F and G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by EdU and Ki67 co-localization data shown in Figure 1F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "79ea74e3-31fe-49ea-8a9d-1e8e0ed6e2ed",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C14",
+      "claim": "Fewer TBR2+ intermediate neural progenitor cells (IPCs) localized at MAP2- ventricular zone (VZ) like layer in WS forebrain organoids compared to the CTRL organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Fewer TBR2+ intermediate neural progenitor cells (IPCs) localized at MAP2- ventricular zone (VZ) like layer in WS forebrain organoids compared to the CTRL organoids (Figure 1H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 1H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "6e277eb5-abef-4b0b-9295-dff528a1235b",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C15",
+      "claim": "The expression of neuronal precursor and immature neuronal cell marker doublecortin positive (DCX+) cells at SOX2+ ventricle (VZ)-like layer significantly decreased in WS forebrain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that upon the differentiation, the expression of neuronal precursor and immature neuronal cell marker doublecortin positive (DCX+) cells at SOX2+ ventricle (VZ)-like layer significantly decreased in WS forebrain organoids (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 2A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "e9daa4c7-e079-4440-9607-8cf090452798",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C16",
+      "claim": "The relative thickness of the VZ layer indicated by SOX2+ aberrantly increased in WS forebrain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative thickness of the VZ layer indicated by SOX2+ aberrantly increased, but the thickness of cortical plate (CP) layer indicated by MAP2+ abnormally decreased (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "0f1ff254-dae0-424c-ac65-a7ae501364df",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C17",
+      "claim": "The thickness of cortical plate (CP) layer indicated by MAP2+ abnormally decreased in WS forebrain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative thickness of the VZ layer indicated by SOX2+ aberrantly increased, but the thickness of cortical plate (CP) layer indicated by MAP2+ abnormally decreased (Figure 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "ba61d073-df48-4067-a46f-a02d95018307",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C18",
+      "claim": "The total number and the proportion of neuronal marker CTIP2+ cells in CP like layer were significantly decreased in WS forebrain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number (Figure 2F and G) and the proporation of neuronal marker CTIP2+ cells in CP like layer (Figure 2F and H) were significantly decreased in WS forebrain organoids.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 2F, G, and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "aed53713-29a1-4ffc-b8cb-876e77e97f20",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C19",
+      "claim": "The total number and the proportion of neuronal marker TBR1+ cells in CP like layer were significantly decreased in WS forebrain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "The total number (Figure 2I and J) and the proporation of neuronal marker TBR1+ cells in CP like layer (Figure 2I and K) were also significantly decreased in WS forebrain organoids.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 2I, J, and K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "16c0336a-051c-4831-abf0-d10085553b00",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C20",
+      "claim": "Bulk RNA-seq revealed 1761 differentially expressed genes (DEGs): 1003 down-regulated and 758 up-regulated in WS forebrain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, RNA-seq data analysis revealed 1761 differentially expressed genes (DEGs): 1003 down-regulated and 758 up-regulated (Figure 3C, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bulk RNA-seq data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "ba03ff1e-c866-4055-817e-f21fe1aa6ff1",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C21",
+      "claim": "Gene Ontology (GO) analysis with all DEG showed enrichment for neuronal development and neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) analysis with all DEG showed enrichment for neuronal development and neurogenesis (Figure 3D), and interaction network of top 30 genes related to neurogenesis was shown (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GO analysis data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "3b3200a0-45bf-4ae0-afdb-f01256b166f6",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C22",
+      "claim": "GO analysis revealed the enrichment of up-regulated genes for cell proliferation and of down-regulated genes for neuronal differentiation, synaptic signaling and neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis also revealed the enrichment of up-regulated genes for cell proliferation and of down-regulated genes for neuronal differentiation, synaptic signaling and neurogenesis (Figure 3F and G), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GO analysis data shown in Figure 3F and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "f0b3f7bd-caaf-4e92-9c30-0d509866640f",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C23",
+      "claim": "The levels of SOX2, NESTIN, PAX6, and HES5 were significantly increased in WS organoids compared to CTRL.",
+      "claim_type": "EXPLICIT",
+      "source": "WB assay and quantification results showed that the levels of SOX2, NESTIN, PAX6, and HES5 were significantly increased (Figure 3J\u2013N) and the levels of TBR1, SATB2, and CTIP2 (Figure 3O\u2013R) were significantly decreased in WS organoids compared to CTRL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 3J-N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "5b1d104d-3f5f-4715-b401-c9dd2d513901",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C24",
+      "claim": "The levels of TBR1, SATB2, and CTIP2 were significantly decreased in WS organoids compared to CTRL.",
+      "claim_type": "EXPLICIT",
+      "source": "WB assay and quantification results showed that the levels of SOX2, NESTIN, PAX6, and HES5 were significantly increased (Figure 3J\u2013N) and the levels of TBR1, SATB2, and CTIP2 (Figure 3O\u2013R) were significantly decreased in WS organoids compared to CTRL.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 3O-R.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "25ffe2b1-ce35-4911-87f4-d3ef5b38e04c",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C25",
+      "claim": "Total 96,969 cells were obtained from CTRL and WS samples for scRNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control, total 96,969 cells were obtained from CTRL and WS samples, and were analyzed together using unsupervised clustering (Figure 4A, Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNA-seq data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "07aee9b2-3e2c-4771-a818-d3b4d2f21e4c",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C26",
+      "claim": "UMAP identified 13 cell clusters in CTRL and WS forebrain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Uniform manifold approximation and projection (UMAP) identified 13 cell clusters in CTRL and WS forebrain organoids, which were then annotated using the expression of cell-type-specific markers (Figure 4B, Figure 4\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNA-seq data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "247ff087-a1c3-4335-8b1c-d8ea495c95c1",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C27",
+      "claim": "The proportions of deeper layer_projection neuron (DL_PN) and upper layer projection neuron (UL_PN) clusters were significantly decreased in WS forebrain organoids compared to CTRL.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the proportions of deeper layer_projection neuron (DL_PN) and upper layer projection neuron (UL_PN) clusters were significantly decreased in WS forebrain organoids compared to CTRL, while the proportions of other clusters did not show significant difference between CTRL and WS organoids (Figure 4C\u2013E, Figure 4\u2014figure supplement 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNA-seq data shown in Figure 4C-E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "a8f322ef-9f9d-4a8f-a6af-56c7ab020adf",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C28",
+      "claim": "DL_PN and UL_PN were excitatory neurons according to the markers BCl11B and FEZF2.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the markers for the cluster characterization including BCl11B and FEZF2, DL_PN and UL_PN were excitatory neurons (Paulsen et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Paulsen et al., 2022) and marker expression.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "994ece60-2fa5-45c7-89e6-4ad3ce5f7e83",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C29",
+      "claim": "GO analysis with DEGs in DL_PN and UL_PN clusters showed the enrichment for neuronal development and neuronal differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis with DEGs in DL_PN and UL_PN clusters showed the enrichment for neuronal development and neuronal differentiation (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by GO analysis data shown in Figure 4G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "1227762c-0ec2-4322-9b96-262c99b102b8",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C30",
+      "claim": "The pesudotime of excitatory neuronal trajectories in WS organoids showed a remarkable delayed development compared to CTRL organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "The pesudotime of excitatory neuronal trajectories in WS organoids analysis showed a remarkable delayed development compared to CTRL organoids (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pseudotime analysis data shown in Figure 5C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "4b6d6693-19ff-4fe3-828f-acaff3fbc825",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C31",
+      "claim": "The excitatory neuronal lineage displayed an increased distribution towards the start point trajectory and a decreased distribution towards the end point trajectory in WS organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Pseudotime uniform manifold approximation analysis revealed that the excitatory neuronal lineage displayed an increased distribution towards the start point trajectory and a decreased distribution towards the end point trajectory in WS organoids (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pseudotime analysis data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "da67e73a-f72c-4a6f-87c9-a3e818c0b95c",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C32",
+      "claim": "The expression of NPC marker genes SOX2 and TBR2 exhibited increasing trend at early stage of trajectories in WS organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the expression of NPC marker genes SOX2 and TBR2 exhibited increasing trend at early stage of trajectories, but the expression of neuronal marker genes NHLH1, TBR1, CTIP2, and SATB2 showed decreasing trend at middle and later stages of trajectories in WS organoids (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pseudotime trajectory analysis data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "1718a480-4ed9-4055-a931-76bd96572dd9",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C33",
+      "claim": "The expression of neuronal marker genes NHLH1, TBR1, CTIP2, and SATB2 showed decreasing trend at middle and later stages of trajectories in WS organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the expression of NPC marker genes SOX2 and TBR2 exhibited increasing trend at early stage of trajectories, but the expression of neuronal marker genes NHLH1, TBR1, CTIP2, and SATB2 showed decreasing trend at middle and later stages of trajectories in WS organoids (Figure 5F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by pseudotime trajectory analysis data shown in Figure 5F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "20fe1f6e-780f-46b0-a1eb-03aef391d9ca",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C34",
+      "claim": "Integrated analysis with down-regulated genes identified both by bulk RNA-seq data and scRNA-seq revealed one overlapped gene transthyretin (TTR).",
+      "claim_type": "EXPLICIT",
+      "source": "Integrated analysis with down-regulated genes identified both by bulk RNA-seq data and scRNA-seq, respectively, revealed one overlapped gene transthyretin (TTR; Figure 6A), whereas there is no overlapped genes were identified in up-regulated genes by bulk RNA-seq data and scRNA-seq, respectively (Figure 6\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by integrated analysis data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "39d029c1-ea98-4ebd-beed-fb22eb7cc330",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C35",
+      "claim": "TTR is required for the transportation of thyroxine and retinol and plays an essential function in the development of the central nervous system.",
+      "claim_type": "EXPLICIT",
+      "source": "TTR is required for the transportation of thyroxine and retinol and plays an essential function in the development of the central nervous system (Fleming et al., 2009; Gomes et al., 2016; Magalh\u00e3es et al., 2021; Santos et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Fleming et al., 2009; Gomes et al., 2016; Magalh\u00e3es et al., 2021; Santos et al., 2010).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "502ba47b-81ee-4f2f-8769-b1e3815286dd",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C36",
+      "claim": "TTR was widely expressed in all cell clusters of CTRL organoids, but significantly decreased in WS organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "scRNA-seq data analysis showed that TTR was widely expressed in all cell clusters of CTRL organoids, but significantly decresaed in WS organoids (Figure 6B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by scRNA-seq data shown in Figure 6B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "87c5c025-7722-4b08-8fb4-aee08b56939b",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C37",
+      "claim": "Immunofluorescence staining, qRT-PCR and WB assay results confirmed the remarkable decrease of TTR in WS brain organoids relative to Ctrl.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining, qRT-PCR and WB assay results confirmed the remarkable decrease of TTR in WS brain organoids relative to Ctrl (Figure 6D\u2013G, Figure 6\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence, qRT-PCR, and Western blot data shown in Figure 6D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "12acb6dd-625e-4c57-8a8a-7eedbc3a43e9",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C38",
+      "claim": "RNA-seq data analysis showed that down-regulated genes enriched for MAPK signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, RNA-seq data anaylsis showed that down-regulated genes enriched for MAPK signaling pathway (Figure 6H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by RNA-seq data analysis shown in Figure 6H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "80c2dc88-d344-4854-a41e-d5ae2a736b7e",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C39",
+      "claim": "WB assay results showed the significant reduction of GTF2IRD1 and p-ERK/ERK in WS brain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "WB assay results showed the significant reduction of GTF2IRD1 and p-ERK/ERK in WS brain organoids (Figure 6I\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 6I-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "a510501e-ecf4-4cc7-a084-f611d41934ab",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C40",
+      "claim": "The depletion of GTF2IRD1 but not GTF2I led to a significant decrease of TTR.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the depletion of GTF2IRD1 but not GTF2I led to a significant decrease of TTR (Figure 6\u2014figure supplement 1D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by knockdown experiments shown in Figure 6\u2014figure supplement 1D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "09330f38-7b65-43ce-b164-7581538e696d",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C41",
+      "claim": "TTR exposure significantly increased the level p-ERK in WS brain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "WB assay and quantification results showed TTR exposure significantly increased the level p-ERK (Figure 7A\u2013C), which could be significantly inhibited by the supplement of TTR inhibitor receptor-associated protein (RAP), a ligand inhibiting the internalization of TTR (Figure 7D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 7A-C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "5c23798c-c7b1-4f12-a529-29907b740aef",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C42",
+      "claim": "The increase of p-ERK by TTR could be significantly inhibited by the supplement of TTR inhibitor receptor-associated protein (RAP).",
+      "claim_type": "EXPLICIT",
+      "source": "WB assay and quantification results showed TTR exposure significantly increased the level p-ERK (Figure 7A\u2013C), which could be significantly inhibited by the supplement of TTR inhibitor receptor-associated protein (RAP), a ligand inhibiting the internalization of TTR (Figure 7D\u2013F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 7D-F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "4e01f5fc-a331-4e6c-8d7d-609ed4355614",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C43",
+      "claim": "TTR exposure remarkably enhanced the percentages of CTIP2+ cells compared to untreated WS organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "RAP Immunofluorescence staining and quantification results showed that both TTR exposure remarkably enhanced the percentages of CTIP2+ cells compared to untreated WS organoids (Figure 7G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 7G and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "187de600-6539-48e9-a29c-6d08555791be",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C44",
+      "claim": "TTR exposure significantly increased the percentages of TBR1+ cells.",
+      "claim_type": "EXPLICIT",
+      "source": "TTR exposure also significantly increased the percentages of TBR1+ cells (Figure 7I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 7I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "96fa0283-ec9b-4c12-9f58-972895091230",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C45",
+      "claim": "Gtf2ird1+/- and Gtf2ird1-/- mice had the increased BrdU+ neuronal progenitor cells in VZ/SVZ regions relative to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining with brain sections and quantification results showed that Gtf2ird1+/-and Gtf2ird1-/- mice had the increased BrdU+ (Figure 8A and B) and Ki67+Sox2+ (Figure 8C and D) neuronal progenitor cells in VZ/SVZ regions, respectively, but had the decreased CTIP2+ (Figure 8E and F), STAB+ cells (Figure 8E and G) and TBR1+ (Figure 8H and I) in IZ/CP regions relative to WT mice, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 8A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "75c8773b-c11c-4a30-8064-afff5cf34cc9",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C46",
+      "claim": "Gtf2ird1+/- and Gtf2ird1-/- mice had the increased Ki67+Sox2+ neuronal progenitor cells in VZ/SVZ regions relative to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining with brain sections and quantification results showed that Gtf2ird1+/-and Gtf2ird1-/- mice had the increased BrdU+ (Figure 8A and B) and Ki67+Sox2+ (Figure 8C and D) neuronal progenitor cells in VZ/SVZ regions, respectively, but had the decreased CTIP2+ (Figure 8E and F), STAB+ cells (Figure 8E and G) and TBR1+ (Figure 8H and I) in IZ/CP regions relative to WT mice, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 8C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "31e94b88-be65-4d08-a9b5-d3c50b0e1b82",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C47",
+      "claim": "Gtf2ird1+/- and Gtf2ird1-/- mice had the decreased CTIP2+ cells in IZ/CP regions relative to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining with brain sections and quantification results showed that Gtf2ird1+/-and Gtf2ird1-/- mice had the increased BrdU+ (Figure 8A and B) and Ki67+Sox2+ (Figure 8C and D) neuronal progenitor cells in VZ/SVZ regions, respectively, but had the decreased CTIP2+ (Figure 8E and F), STAB+ cells (Figure 8E and G) and TBR1+ (Figure 8H and I) in IZ/CP regions relative to WT mice, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 8E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "6b7eb740-795d-41d9-b097-dce3be58539f",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C48",
+      "claim": "Gtf2ird1+/- and Gtf2ird1-/- mice had the decreased SATB+ cells in IZ/CP regions relative to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining with brain sections and quantification results showed that Gtf2ird1+/-and Gtf2ird1-/- mice had the increased BrdU+ (Figure 8A and B) and Ki67+Sox2+ (Figure 8C and D) neuronal progenitor cells in VZ/SVZ regions, respectively, but had the decreased CTIP2+ (Figure 8E and F), STAB+ cells (Figure 8E and G) and TBR1+ (Figure 8H and I) in IZ/CP regions relative to WT mice, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 8E and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "ef8478ea-879d-478e-bfee-52c73c026a19",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C49",
+      "claim": "Gtf2ird1+/- and Gtf2ird1-/- mice had the decreased TBR1+ cells in IZ/CP regions relative to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunofluorescence staining with brain sections and quantification results showed that Gtf2ird1+/-and Gtf2ird1-/- mice had the increased BrdU+ (Figure 8A and B) and Ki67+Sox2+ (Figure 8C and D) neuronal progenitor cells in VZ/SVZ regions, respectively, but had the decreased CTIP2+ (Figure 8E and F), STAB+ cells (Figure 8E and G) and TBR1+ (Figure 8H and I) in IZ/CP regions relative to WT mice, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 8H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "fb38a477-fa70-4ed5-8820-10205bc89108",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C50",
+      "claim": "The protein levels of Gtf2ird1, p-ERK and Ttr were significantly decreased in the cortex of Gtf2ird1+/- and Gtf2ird1-/- mice relative to WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, WB assay and quantification results showed that the protein levels of Gtf2ird1, p-ERK and Ttr (Figure 8J\u2013N) were significantly decreased in the cortex of Gtf2ird1+/-and Gtf2ird1-/- mice relative to WT mice, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 8J-N.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "2a2759c4-6164-423c-a332-8c8753950d87",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C51",
+      "claim": "The percentage of BrdU+Nestin+/Nestin+ was significantly increased in Het and KO eNPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "BrdU incorpation assay and quantification results showed that the percentage of BrdU+Nestin+/Nestin+ (Figure 9A and B) and the percentage of Ki67+Sox2+/Sox2+ (Figure 9C and D) were significantly increased in Het and KO eNPCs, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by BrdU incorporation assay data shown in Figure 9A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "e0d924e7-69b2-4c29-8115-13f89834d285",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C52",
+      "claim": "The percentage of Ki67+Sox2+/Sox2+ was significantly increased in Het and KO eNPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "BrdU incorpation assay and quantification results showed that the percentage of BrdU+Nestin+/Nestin+ (Figure 9A and B) and the percentage of Ki67+Sox2+/Sox2+ (Figure 9C and D) were significantly increased in Het and KO eNPCs, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 9C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "dafcfb23-94b9-4e15-a75c-4986d59535f2",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C53",
+      "claim": "Het and KO eNPCs produced fewer Tuj1+ neurons and more Gfap+ astrocytes relative to WT eNPCs upon differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon the differentiation, Het and KO eNPCs produced fewer Tuj1+ neurons and more Gfap+ astrocytes relative to WT eNPCs (Figure 9E\u2013G), respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by immunofluorescence staining data shown in Figure 9E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "a9c44a13-a6b1-4703-88a3-39abb4331e5f",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C54",
+      "claim": "Acute knockdown of Gtf2ird1 significantly reduced the mRNA level of Ttr in WT eNPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "We then further performed acute knockdown of Gtf2ird1 (KD) in eNPCs and found that Gtf2ird1 KD significantly reduced the mRNA level of Ttr (Figure 9J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by qRT-PCR data shown in Figure 9J-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "1e9ca326-0ab7-44b5-b2bd-ede79c971bfe",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C55",
+      "claim": "Acute knockdown of Gtf2ird1 significantly reduced the protein level of Ttr in WT eNPCs.",
+      "claim_type": "EXPLICIT",
+      "source": "WB assay and quantification results showed thaht Gtf2ird1 KD also significantly reduced the protein level of Ttr (Figure 9J\u2013L).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by Western blot data shown in Figure 9J-L.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "388eaf55-6be9-4c35-9fb1-8c600f35bec1",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C56",
+      "claim": "Gtf2ird1 binds to the promoter region of Ttr.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromatin immunoprecipitation followed by qPCR results with eNPCs showed that Gtf2ird1 indeed binds to the promoter region of Ttr (Figure 9M).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by ChIP-qPCR data shown in Figure 9M.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "4e3cc341-51d6-4eff-b16c-3d814e0de0de",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C57",
+      "claim": "NPCs in WS forebrain organoids display abnormal proliferation and differentiation capabilities, and synapse formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have shown that neural progenitor cells (NPCs) in WS forebrain organoids display abnormal proliferation and differentiation capabilities, and synapse formation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple experimental data presented in the manuscript including immunofluorescence staining and quantification results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "6f2db7fb-8255-4deb-9b53-4801f603bdca",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C58",
+      "claim": "Genes with altered expression in WS organoids are related to neuronal development and neurogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes with altered expression are related to neuronal development and neurogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by bulk RNA-seq and GO analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "2bc87dfe-a6fd-470e-b601-423ab0ca155a",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C59",
+      "claim": "WS organoids show an aberrant generation of excitatory neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "WS organoids show an aberrant generation of excitatory neurons.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by scRNA-seq data analysis showing decreased proportions of DL_PN and UL_PN clusters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "5cb93a8e-a849-4828-8104-75df00fec1b0",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C60",
+      "claim": "The expression of transthyretin (TTR) are remarkably decreased in WS forebrain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, the expression of transthyretin (TTR) are remarkably decreased in WS forebrain organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple experimental data including immunofluorescence, qRT-PCR, and Western blot assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "f7cec811-9fd1-494b-9d96-bd170707047b",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C61",
+      "claim": "GTF2IRD1 binds to TTR promoter regions and regulates the expression of TTR.",
+      "claim_type": "EXPLICIT",
+      "source": "We have found that GTF2IRD1 encoded by one WS associated gene GTF2IRD1 binds to TTR promoter regions and regulates the expression of TTR.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by ChIP-qPCR data and knockdown experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "ee550853-8724-4084-bcb4-d5b153de0193",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C62",
+      "claim": "Exogenous TTR can activate ERK signaling and rescue neurogenic deficits of WS forebrain organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, exogenous TTR can activate ERK signaling and rescue neurogenic deficits of WS forebrain organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by Western blot and immunofluorescence staining data showing increased p-ERK and neuronal markers upon TTR treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "b13ee032-88cb-4524-9324-af57e3170345",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C63",
+      "claim": "Gtf2ird1-deficient mice display similar neurodevelopmental deficits as observed in WS organoids.",
+      "claim_type": "EXPLICIT",
+      "source": "Gtf2ird1-deficient mice display similar neurodevelopmental deficits as observed in WS organoids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by immunofluorescence staining and Western blot data from Gtf2ird1+/- and Gtf2ird1-/- mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "325cea8c-1af8-4ad1-abf7-aeacbc7a2e16",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C64",
+      "claim": "GTF2IRD1 has critical function in regulating neurodevelopment of WS forebrain organoids and mice through regulating TTR-ERK pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, our study reveals critical function of GTF2IRD1 in regulating neurodevelopment of WS forebrain organoids and mice through regulating TTR-ERK pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple experimental data including ChIP-qPCR, knockdown experiments, TTR rescue experiments, and mouse model studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "ab224276-2039-486a-aaf6-7750d43c63bf",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C65",
+      "claim": "Brain organoids have been applied for studying human brain development and neurological disorders, including Fragile X syndrome and autism.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, brain organoids have been applied for studying human brain development and neurological disorders, including Fragile X syndrome and autism (Clevers, 2016; Di Lullo and Kriegstein, 2017; Kang et al., 2021a; Kelava and Lancaster, 2016; Li and Izpisua Belmonte, 2019; Lyon, 2019; Pa\u015fca, 2019; Qian et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "ad7da40e-f616-4672-9d1f-54573bfbbc37",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C66",
+      "claim": "There have been no studies performed with brain organoids of WS prior to this study.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, there have been no studies performed with brain organoids of WS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "4298fb15-6878-46cc-b345-28926652d054",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C67",
+      "claim": "TTR deficient mice displayed a reduced neurogenesis and increased oligodendrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "TTR deficient mice displayed a reduced neurogenesis and increased oligodendrogenesis (Alshehri et al., 2020; Vancamp et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Alshehri et al., 2020; Vancamp et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "41d39425-d07e-4860-9cb3-d1810b3e515c",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C68",
+      "claim": "TTR had decreased expression in the postmortem frontal cortex of WS patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, TTR had decreased expression in the postmortem frontal cortex of WS patients (Barak et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citation to published literature (Barak et al., 2019).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "c736c743-ce60-4ba3-a846-a9177998ba22",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C69",
+      "claim": "Day 56 forebrain organoids were well correlated with fetal human brain development.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering day 56 (D56) forebrain organoids were well correlated with fetal brain development (Kang et al., 2021a; Kostovi\u0107 et al., 2019; Qian et al., 2016), our following experiments adopted D56 forebrain organoids if no specific annotation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature (Kang et al., 2021a; Kostovi\u0107 et al., 2019; Qian et al., 2016).",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "14cf1803-08dc-4747-97df-a0412f7f699e",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C70",
+      "claim": "The dysregulation of Wnt signaling pathway plays important roles in regulating the survival and development of neurons derived from induced pluripotent stem cells (iPSCs) of WS patient.",
+      "claim_type": "EXPLICIT",
+      "source": "The dysregulation of Wnt signaling pathway plays important roles in regulating the survival and development of neurons derived from induced pluripotent stem cells (iPSCs) of WS patient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "281b70da-9eea-40c3-88cc-97d145300694",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C71",
+      "claim": "GTF2IRD1 regulates gene expression and involves multiple processes, such as embryonic development, cell cycle and neuronal development.",
+      "claim_type": "EXPLICIT",
+      "source": "As a member of the transcription factor II (TF-II), GTF2IRD1 regulates gene expression and involves multiple processes, such as embryonic development, cell cycle and neuronal development (Enkhmandakh et al., 2009; Kopp et al., 2020; O'Leary and Osborne, 2011; Palmer et al., 2007; Tassabehji et al., 2005; Thompson et al., 2007; van Hagen et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "054b0e5c-49ce-4d2e-a1f0-6606099fa1c8",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "claim_id": "C72",
+      "claim": "TTR could be a potential target for the treatment of WS at clinic.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings also suggest that TTR could be a potential target for the treatment of WS at clinic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental data showing TTR rescue effects.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "55c5d922-623f-4401-9ef2-d38be237504f",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background claims establish that Williams syndrome (WS) is a rare genetic disorder caused by microdeletion of 25-27 genes on chromosome 7q11.23, resulting in diverse neurological deficits including hypersociability, impaired myelination, and intellectual disability. GTF2IRD1 is identified as a key gene whose deficiency contributes to neurological deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C10 are all supported by citations to published literature and represent established knowledge about WS. These background claims provide appropriate context for the study but do not represent novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "9e068153-3598-496a-a4ec-c5f4ffe2c098",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "WS forebrain organoids exhibit increased neural progenitor cell (NPC) proliferation compared to control organoids, as evidenced by higher percentages of KI67+/SOX2+ cells, EdU+/SOX2+ cells, decreased cell cycle exit (Ki67-EdU+ cells), and fewer TBR2+ intermediate progenitor cells in the ventricular zone.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are supported by multiple complementary assays (immunofluorescence, EdU incorporation) with quantification shown in Figures 1B-I. The data consistently demonstrate aberrant NPC proliferation in WS organoids using established markers and methods.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "3d957ef8-134f-4c2b-bc5a-390ab2628ee7",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "WS forebrain organoids show impaired neuronal differentiation, characterized by decreased DCX+ cells, increased VZ layer thickness (SOX2+), decreased cortical plate thickness (MAP2+), and reduced numbers of CTIP2+ and TBR1+ neurons in the cortical plate-like layer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C19 are supported by immunofluorescence data with quantification (Figure 2). Multiple neuronal markers consistently show reduced differentiation in WS organoids. The complementary findings of increased progenitor zone and decreased neuronal zone thickness provide converging evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "d4cfc4c8-e2c9-4659-ba89-daf92ffc3445",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Bulk RNA-seq reveals 1761 differentially expressed genes in WS organoids, with GO analysis showing enrichment for neuronal development and neurogenesis. Up-regulated genes are enriched for cell proliferation while down-regulated genes are enriched for neuronal differentiation. Protein levels confirm increased NPC markers (SOX2, NESTIN, PAX6, HES5) and decreased neuronal markers (TBR1, SATB2, CTIP2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 are supported by bulk RNA-seq data (Figure 3C), GO analysis (Figures 3D-G), and validation by qRT-PCR and Western blot (Figures 3H-R). The transcriptomic data are consistent with the cellular phenotypes observed in C11-C19.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "790bc9bc-f814-4faa-bf21-19bedbba8939",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq of 96,969 cells identifies 13 cell clusters in control and WS organoids. WS organoids show significantly decreased proportions of deep layer projection neurons (DL_PN) and upper layer projection neurons (UL_PN), which are excitatory neurons. DEGs in these clusters are enriched for neuronal development and differentiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C29 are supported by scRNA-seq data with UMAP visualization (Figure 4A-E), quantification of cluster proportions, and GO analysis (Figure 4G-H). The identification of specific neuronal subtypes affected provides important mechanistic insight beyond bulk analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "6291b81e-0bd8-44cd-9241-9f7b51b9b7b7",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Pseudotime trajectory analysis reveals delayed developmental progression of excitatory neuronal lineages in WS organoids, with increased distribution toward early trajectory points and decreased distribution toward late trajectory points. NPC marker genes (SOX2, TBR2) show increasing trends early while neuronal marker genes (NHLH1, TBR1, CTIP2, SATB2) show decreasing trends at later stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C33 are supported by pseudotime analysis (Figure 5C-F). The trajectory analysis provides temporal resolution to the developmental defects and is consistent with the increased proliferation and decreased differentiation phenotypes observed earlier.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "5cf9eedc-c480-46da-9bc0-aa53b713e444",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Integrated analysis of bulk and single-cell RNA-seq identifies transthyretin (TTR) as the only overlapping down-regulated gene. TTR is widely expressed in control organoids but significantly decreased in WS organoids, confirmed by immunofluorescence, qRT-PCR, and Western blot.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C37 are supported by integrated bioinformatic analysis (Figure 6A) and validation by multiple orthogonal methods (Figures 6B-G). The identification of TTR as a single overlapping gene is notable, though the stringency of overlap criteria is not fully described.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "0ce486d6-1324-4484-821b-a261682481e2",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Down-regulated genes in WS organoids are enriched for MAPK signaling pathway. WS organoids show reduced GTF2IRD1 and p-ERK/ERK levels. Knockdown experiments demonstrate that GTF2IRD1, but not GTF2I, depletion leads to decreased TTR expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C40 are supported by pathway analysis (Figure 6H), Western blot data (Figures 6I-L), and knockdown experiments (Figure 6 supplement 1D-E). The specificity of GTF2IRD1 (not GTF2I) in regulating TTR is an important mechanistic finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "e0fa0585-880e-4ca8-8b82-c41dabd041a7",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Exogenous TTR treatment rescues neurogenic deficits in WS organoids by activating ERK signaling. TTR exposure increases p-ERK levels (inhibitable by RAP, a TTR inhibitor) and significantly increases percentages of CTIP2+ and TBR1+ neurons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 are supported by Western blot showing TTR-induced p-ERK activation and its inhibition by RAP (Figures 7A-F), and immunofluorescence showing increased neuronal markers (Figures 7G-J). The rescue experiments provide strong evidence for TTR's functional role.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "fb137b05-c4de-4e25-a4ca-3867fdb94b13",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Gtf2ird1-deficient mice (heterozygous and knockout) recapitulate WS organoid phenotypes, showing increased BrdU+ and Ki67+Sox2+ neural progenitors in VZ/SVZ regions, decreased CTIP2+, SATB+, and TBR1+ neurons in IZ/CP regions, and reduced Gtf2ird1, p-ERK, and Ttr protein levels in cortex.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are supported by immunofluorescence staining of mouse brain sections (Figures 8A-I) and Western blot analysis (Figures 8J-N). The mouse model validation strengthens the findings from organoids and demonstrates conservation across species.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "1dfe9853-dc9e-4fdc-a213-b841ec5dc81a",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Embryonic neural progenitor cells (eNPCs) from Gtf2ird1 heterozygous and knockout mice show increased proliferation (BrdU+Nestin+ and Ki67+Sox2+ cells) and altered differentiation (fewer Tuj1+ neurons, more Gfap+ astrocytes) compared to wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 are supported by in vitro assays with mouse eNPCs (Figures 9A-G). The cell culture experiments provide additional mechanistic validation and demonstrate cell-autonomous effects of Gtf2ird1 deficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "16cb4842-e854-455b-be50-b6851182ebd2",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Acute knockdown of Gtf2ird1 in wild-type eNPCs reduces both mRNA and protein levels of Ttr. ChIP-qPCR demonstrates that Gtf2ird1 directly binds to the Ttr promoter region.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C56 are supported by qRT-PCR and Western blot data (Figures 9J-L) and ChIP-qPCR (Figure 9M). The ChIP data provide direct evidence for transcriptional regulation of Ttr by Gtf2ird1, establishing a mechanistic link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "b9893466-646a-47ad-9dfe-f207da2c8d07",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The study demonstrates that NPCs in WS forebrain organoids display abnormal proliferation, differentiation, and synapse formation. GTF2IRD1 regulates TTR expression by binding to its promoter, and the GTF2IRD1-TTR-ERK pathway is critical for neurodevelopment in both WS organoids and Gtf2ird1-deficient mice. Exogenous TTR can rescue neurogenic deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 represent summary statements of the major findings. These are well-supported by the comprehensive data from organoids, mouse models, and mechanistic experiments (C11-C56). However, C57's mention of 'synapse formation' deficits is not directly supported by presented data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "acce908c-102c-47d7-bcf6-ebb47707ea24",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Background claims establish that brain organoids have been used to study neurological disorders, that this is the first WS organoid study, that day 56 organoids correlate with fetal brain development, and that GTF2IRD1 is a transcription factor involved in multiple developmental processes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65, C69, C70, and C71 are supported by appropriate citations. Claim C66 (first WS organoid study) is stated as the authors' knowledge and cannot be independently verified from the manuscript, though it appears plausible given the literature review.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "da19df4d-2c78-410c-9d9b-88820bae2660",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Prior studies show that TTR-deficient mice display reduced neurogenesis and increased oligodendrogenesis, and that TTR expression is decreased in postmortem frontal cortex of WS patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C68 are supported by citations to published literature. These provide important context linking TTR to neurogenesis and to WS pathology, supporting the rationale for investigating TTR in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "b2e504fc-e36c-49d7-a61b-e47feb67f616",
+      "content_id": "81c8fe2a-725e-47e1-8c78-c990f4661ae7",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors suggest that TTR could be a potential therapeutic target for treatment of WS in clinical settings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C72 is speculative and based on inference from the rescue experiments (C41-C44). While the data show TTR can rescue deficits in organoids, translation to clinical therapy would require extensive additional validation including safety studies, delivery methods, and in vivo efficacy in animal models. The claim is appropriately framed as a suggestion rather than a definitive conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "a664de18-3c93-4845-b946-6dda77b926f1",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "WS forebrain organoids display increased neural progenitor cell (NPC) proliferation, as evidenced by higher percentages of KI67+/SOX2+ and EdU+/SOX2+ cells, decreased cell cycle exit (Ki67-EdU+ cells), and fewer TBR2+ intermediate progenitor cells in the ventricular zone compared to control organoids.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the findings on abnormal proliferation in WS organoids. One reviewer explicitly states 'They found abnormal proliferation and differentiation induced by this mutation' and another notes the study 'has identified defects in neurogenesis.' No concerns were raised about these proliferation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "5aca51d6-9640-418e-ab29-15ab0e73359f",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "WS forebrain organoids show impaired neuronal differentiation with decreased DCX+ neuronal precursors, increased SOX2+ ventricular zone thickness, decreased MAP2+ cortical plate thickness, and significantly reduced CTIP2+ and TBR1+ neurons in the cortical plate-like layer.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers recognize the differentiation defects as a major finding. One reviewer states 'The major findings presented in this study are an increase in the size of SOX2+ ventricular zone in WS forebrain organoids with an altered developmental trajectory and aberrant excitatory neurogenesis.' These claims are treated as core findings without methodological critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "d90c73dc-7870-446b-83e3-e3bbcbb9fa14",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Bulk RNA-seq analysis revealed 1761 differentially expressed genes in WS organoids, with GO analysis showing enrichment for neuronal development and neurogenesis. Up-regulated genes were enriched for cell proliferation while down-regulated genes were enriched for neuronal differentiation. Western blot confirmed increased NPC markers (SOX2, NESTIN, PAX6, HES5) and decreased neuronal markers (TBR1, SATB2, CTIP2).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the transcriptomic findings. One reviewer notes 'scRNAseq from these patients' derived forebrain organoids showing upregulation expression in genes related to cell proliferation while genes involved in neuronal differentiation were downregulated.' The use of NGS techniques is highlighted as a strength without concerns about the data quality or interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "67e852e3-24ad-4f12-8a27-a1d71c867a8f",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Single-cell RNA-seq of 96,969 cells identified 13 cell clusters in CTRL and WS organoids. The proportions of deeper layer projection neurons (DL_PN) and upper layer projection neurons (UL_PN), which are excitatory neurons, were significantly decreased in WS organoids, with DEGs in these clusters enriched for neuronal development and differentiation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers recognize the scRNA-seq findings as a major contribution. One reviewer states 'The major findings presented in this study are...aberrant excitatory neurogenesis' and notes the study 'has performed scRNAseq from these patients' derived forebrain organoids.' The identification of specific neuronal populations affected is treated as a key finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "6ce4f144-be2f-4fa7-b32e-f51640213caa",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Pseudotime trajectory analysis revealed delayed excitatory neuronal development in WS organoids, with increased distribution toward early trajectory points and decreased distribution toward late trajectory points. NPC marker genes (SOX2, TBR2) showed increasing trends at early stages while neuronal marker genes (NHLH1, TBR1, CTIP2, SATB2) showed decreasing trends at middle and later stages.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the developmental trajectory findings as part of the major results. One reviewer explicitly mentions 'an altered developmental trajectory' as a key finding. The pseudotime analysis is not questioned and is treated as supporting evidence for the developmental deficits.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "55b3bc1e-f4bd-4644-9355-e1ae0d4a9934",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Integrated analysis of bulk RNA-seq and scRNA-seq identified transthyretin (TTR) as the only overlapping down-regulated gene. TTR was widely expressed in all cell clusters of control organoids but significantly decreased in WS organoids, confirmed by immunofluorescence, qRT-PCR, and Western blot.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers recognize TTR as a major finding. One reviewer states 'The study also presents evidence that transthyretin (TTR) has a reduced expression in WS organoids' and notes this provides 'some new evidence regarding the function and regulation of TTR.' The identification and validation of TTR is treated as a key discovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "d7a9758e-54ff-4fab-a8c4-44947b673c2b",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "RNA-seq analysis showed down-regulated genes enriched for MAPK signaling pathway. Western blot revealed significant reduction of GTF2IRD1 and p-ERK/ERK in WS organoids. Knockdown experiments demonstrated that GTF2IRD1 depletion, but not GTF2I, led to decreased TTR. ChIP-qPCR confirmed that GTF2IRD1 binds to the TTR promoter region.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express concerns about the mechanistic evidence. The editor states 'The authors provide incomplete evidence of the effects of GTF2IRD1, a mutated gene in WS, on altering MAPK/ERK pathway activity.' Another reviewer notes 'the evidence presented for the mechanism of action of TTR on the MAPK pathway is unclear and lacks depth. It would require identifying downstream targets of TTR and how it interacts with the MAPK pathway.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "a83bc753-d470-4ca9-a609-da1a4d6f2d57",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Exogenous TTR treatment significantly increased p-ERK levels in WS organoids, which could be inhibited by TTR inhibitor RAP. TTR exposure enhanced the percentages of CTIP2+ and TBR1+ neuronal cells, demonstrating that exogenous TTR can activate ERK signaling and rescue neurogenic deficits.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the rescue experiments, concerns about the mechanistic understanding persist. One reviewer states 'the evidence presented for the mechanism of action of TTR on the MAPK pathway is unclear and lacks depth,' suggesting the rescue data alone are insufficient to fully support the proposed mechanism. The editor's comment about 'incomplete evidence' also applies to these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "f1032e40-5983-4abe-a0be-31bae4f2c2ed",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Gtf2ird1+/- and Gtf2ird1-/- mice displayed increased BrdU+ and Ki67+Sox2+ neural progenitor cells in VZ/SVZ regions but decreased CTIP2+, SATB+, and TBR1+ cells in IZ/CP regions. Western blot showed decreased Gtf2ird1, p-ERK, and Ttr protein levels in the cortex of mutant mice, recapitulating the organoid phenotypes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers recognize the mouse model validation as a strength. One reviewer notes 'Authors have applied both cell culture, organoid culture and in vivo model to test the previously reported mutation' and that findings were 'tested on three models mentioned above on neurodevelopmental deficits.' The consistency across models is viewed positively.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "f9b6a548-2e6c-427e-8735-8d89bc298a28",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Embryonic neural progenitor cells (eNPCs) from Gtf2ird1 mutant mice showed increased BrdU+Nestin+ and Ki67+Sox2+ proliferating cells, produced fewer Tuj1+ neurons and more Gfap+ astrocytes upon differentiation. Acute knockdown of Gtf2ird1 reduced Ttr mRNA and protein levels, and ChIP-qPCR confirmed Gtf2ird1 binding to the Ttr promoter.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the eNPC data as part of the multi-model validation approach. One reviewer highlights the use of 'embryonic neural progenitor cells' as one of the models used to investigate the mutation. The ChIP-qPCR data providing direct evidence of transcriptional regulation is not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "4661559e-b800-43b3-a7dc-facb982a07fa",
+      "content_id": "1217c8dd-cdf1-4e78-8857-9f675d9bdeae",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The study demonstrates that NPCs in WS forebrain organoids display abnormal proliferation and differentiation with aberrant excitatory neuron generation. Genes with altered expression are related to neuronal development and neurogenesis. GTF2IRD1 has a critical function in regulating neurodevelopment through the TTR-ERK pathway.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the overall findings as valuable, they express reservations about the completeness of the mechanistic understanding. The editor states the study provides 'incomplete evidence' of GTF2IRD1's effects on MAPK/ERK pathway activity. One reviewer notes the mechanism 'lacks depth' and requires 'identifying downstream targets of TTR and how it interacts with the MAPK pathway.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "55cfee5f-8b01-4b6f-9210-877656cd9568",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "34058630-6953-4dd4-bdba-168b58319e3b",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "91d07351-a6d6-4c19-b587-9a8e79e1450e",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "d16993c4-3238-4285-bfe5-0df41a41467b",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "a2fdb5b1-e7cc-4978-b745-301107fed845",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "4780a225-3f45-4b62-9f9e-f53e6d898c92",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "1e8e7696-7cb0-45ee-8647-5b879b68c61d",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "de0bb67b-5f92-4cc7-ae81-b8f3dd32e9da",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "bdb61652-9fdb-499f-aac1-fac48f6d4be8",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "64aca8fc-1df0-4884-9e2a-d242acb3280e",
+      "result_id": "55c5d922-623f-4401-9ef2-d38be237504f"
+    },
+    {
+      "claim_id": "12dcfda3-7261-444c-b6f6-c8c05cf7c025",
+      "result_id": "9e068153-3598-496a-a4ec-c5f4ffe2c098"
+    },
+    {
+      "claim_id": "a1731a60-c06f-4eab-be84-3e2b8acff8eb",
+      "result_id": "9e068153-3598-496a-a4ec-c5f4ffe2c098"
+    },
+    {
+      "claim_id": "9ad62636-8910-4a08-82ca-1107f43eab3e",
+      "result_id": "9e068153-3598-496a-a4ec-c5f4ffe2c098"
+    },
+    {
+      "claim_id": "79ea74e3-31fe-49ea-8a9d-1e8e0ed6e2ed",
+      "result_id": "9e068153-3598-496a-a4ec-c5f4ffe2c098"
+    },
+    {
+      "claim_id": "6e277eb5-abef-4b0b-9295-dff528a1235b",
+      "result_id": "3d957ef8-134f-4c2b-bc5a-390ab2628ee7"
+    },
+    {
+      "claim_id": "e9daa4c7-e079-4440-9607-8cf090452798",
+      "result_id": "3d957ef8-134f-4c2b-bc5a-390ab2628ee7"
+    },
+    {
+      "claim_id": "0f1ff254-dae0-424c-ac65-a7ae501364df",
+      "result_id": "3d957ef8-134f-4c2b-bc5a-390ab2628ee7"
+    },
+    {
+      "claim_id": "ba61d073-df48-4067-a46f-a02d95018307",
+      "result_id": "3d957ef8-134f-4c2b-bc5a-390ab2628ee7"
+    },
+    {
+      "claim_id": "aed53713-29a1-4ffc-b8cb-876e77e97f20",
+      "result_id": "3d957ef8-134f-4c2b-bc5a-390ab2628ee7"
+    },
+    {
+      "claim_id": "16c0336a-051c-4831-abf0-d10085553b00",
+      "result_id": "d4cfc4c8-e2c9-4659-ba89-daf92ffc3445"
+    },
+    {
+      "claim_id": "ba03ff1e-c866-4055-817e-f21fe1aa6ff1",
+      "result_id": "d4cfc4c8-e2c9-4659-ba89-daf92ffc3445"
+    },
+    {
+      "claim_id": "3b3200a0-45bf-4ae0-afdb-f01256b166f6",
+      "result_id": "d4cfc4c8-e2c9-4659-ba89-daf92ffc3445"
+    },
+    {
+      "claim_id": "f0b3f7bd-caaf-4e92-9c30-0d509866640f",
+      "result_id": "d4cfc4c8-e2c9-4659-ba89-daf92ffc3445"
+    },
+    {
+      "claim_id": "5b1d104d-3f5f-4715-b401-c9dd2d513901",
+      "result_id": "d4cfc4c8-e2c9-4659-ba89-daf92ffc3445"
+    },
+    {
+      "claim_id": "25ffe2b1-ce35-4911-87f4-d3ef5b38e04c",
+      "result_id": "790bc9bc-f814-4faa-bf21-19bedbba8939"
+    },
+    {
+      "claim_id": "07aee9b2-3e2c-4771-a818-d3b4d2f21e4c",
+      "result_id": "790bc9bc-f814-4faa-bf21-19bedbba8939"
+    },
+    {
+      "claim_id": "247ff087-a1c3-4335-8b1c-d8ea495c95c1",
+      "result_id": "790bc9bc-f814-4faa-bf21-19bedbba8939"
+    },
+    {
+      "claim_id": "a8f322ef-9f9d-4a8f-a6af-56c7ab020adf",
+      "result_id": "790bc9bc-f814-4faa-bf21-19bedbba8939"
+    },
+    {
+      "claim_id": "994ece60-2fa5-45c7-89e6-4ad3ce5f7e83",
+      "result_id": "790bc9bc-f814-4faa-bf21-19bedbba8939"
+    },
+    {
+      "claim_id": "1227762c-0ec2-4322-9b96-262c99b102b8",
+      "result_id": "6291b81e-0bd8-44cd-9241-9f7b51b9b7b7"
+    },
+    {
+      "claim_id": "4b6d6693-19ff-4fe3-828f-acaff3fbc825",
+      "result_id": "6291b81e-0bd8-44cd-9241-9f7b51b9b7b7"
+    },
+    {
+      "claim_id": "da67e73a-f72c-4a6f-87c9-a3e818c0b95c",
+      "result_id": "6291b81e-0bd8-44cd-9241-9f7b51b9b7b7"
+    },
+    {
+      "claim_id": "1718a480-4ed9-4055-a931-76bd96572dd9",
+      "result_id": "6291b81e-0bd8-44cd-9241-9f7b51b9b7b7"
+    },
+    {
+      "claim_id": "20fe1f6e-780f-46b0-a1eb-03aef391d9ca",
+      "result_id": "5cf9eedc-c480-46da-9bc0-aa53b713e444"
+    },
+    {
+      "claim_id": "39d029c1-ea98-4ebd-beed-fb22eb7cc330",
+      "result_id": "5cf9eedc-c480-46da-9bc0-aa53b713e444"
+    },
+    {
+      "claim_id": "502ba47b-81ee-4f2f-8769-b1e3815286dd",
+      "result_id": "5cf9eedc-c480-46da-9bc0-aa53b713e444"
+    },
+    {
+      "claim_id": "87c5c025-7722-4b08-8fb4-aee08b56939b",
+      "result_id": "5cf9eedc-c480-46da-9bc0-aa53b713e444"
+    },
+    {
+      "claim_id": "12acb6dd-625e-4c57-8a8a-7eedbc3a43e9",
+      "result_id": "0ce486d6-1324-4484-821b-a261682481e2"
+    },
+    {
+      "claim_id": "80c2dc88-d344-4854-a41e-d5ae2a736b7e",
+      "result_id": "0ce486d6-1324-4484-821b-a261682481e2"
+    },
+    {
+      "claim_id": "a510501e-ecf4-4cc7-a084-f611d41934ab",
+      "result_id": "0ce486d6-1324-4484-821b-a261682481e2"
+    },
+    {
+      "claim_id": "09330f38-7b65-43ce-b164-7581538e696d",
+      "result_id": "e0fa0585-880e-4ca8-8b82-c41dabd041a7"
+    },
+    {
+      "claim_id": "5c23798c-c7b1-4f12-a529-29907b740aef",
+      "result_id": "e0fa0585-880e-4ca8-8b82-c41dabd041a7"
+    },
+    {
+      "claim_id": "4e01f5fc-a331-4e6c-8d7d-609ed4355614",
+      "result_id": "e0fa0585-880e-4ca8-8b82-c41dabd041a7"
+    },
+    {
+      "claim_id": "187de600-6539-48e9-a29c-6d08555791be",
+      "result_id": "e0fa0585-880e-4ca8-8b82-c41dabd041a7"
+    },
+    {
+      "claim_id": "96fa0283-ec9b-4c12-9f58-972895091230",
+      "result_id": "fb137b05-c4de-4e25-a4ca-3867fdb94b13"
+    },
+    {
+      "claim_id": "75c8773b-c11c-4a30-8064-afff5cf34cc9",
+      "result_id": "fb137b05-c4de-4e25-a4ca-3867fdb94b13"
+    },
+    {
+      "claim_id": "31e94b88-be65-4d08-a9b5-d3c50b0e1b82",
+      "result_id": "fb137b05-c4de-4e25-a4ca-3867fdb94b13"
+    },
+    {
+      "claim_id": "6b7eb740-795d-41d9-b097-dce3be58539f",
+      "result_id": "fb137b05-c4de-4e25-a4ca-3867fdb94b13"
+    },
+    {
+      "claim_id": "ef8478ea-879d-478e-bfee-52c73c026a19",
+      "result_id": "fb137b05-c4de-4e25-a4ca-3867fdb94b13"
+    },
+    {
+      "claim_id": "fb38a477-fa70-4ed5-8820-10205bc89108",
+      "result_id": "fb137b05-c4de-4e25-a4ca-3867fdb94b13"
+    },
+    {
+      "claim_id": "2a2759c4-6164-423c-a332-8c8753950d87",
+      "result_id": "1dfe9853-dc9e-4fdc-a213-b841ec5dc81a"
+    },
+    {
+      "claim_id": "e0d924e7-69b2-4c29-8115-13f89834d285",
+      "result_id": "1dfe9853-dc9e-4fdc-a213-b841ec5dc81a"
+    },
+    {
+      "claim_id": "dafcfb23-94b9-4e15-a75c-4986d59535f2",
+      "result_id": "1dfe9853-dc9e-4fdc-a213-b841ec5dc81a"
+    },
+    {
+      "claim_id": "a9c44a13-a6b1-4703-88a3-39abb4331e5f",
+      "result_id": "16cb4842-e854-455b-be50-b6851182ebd2"
+    },
+    {
+      "claim_id": "1e9ca326-0ab7-44b5-b2bd-ede79c971bfe",
+      "result_id": "16cb4842-e854-455b-be50-b6851182ebd2"
+    },
+    {
+      "claim_id": "388eaf55-6be9-4c35-9fb1-8c600f35bec1",
+      "result_id": "16cb4842-e854-455b-be50-b6851182ebd2"
+    },
+    {
+      "claim_id": "4e3cc341-51d6-4eff-b16c-3d814e0de0de",
+      "result_id": "b9893466-646a-47ad-9dfe-f207da2c8d07"
+    },
+    {
+      "claim_id": "6f2db7fb-8255-4deb-9b53-4801f603bdca",
+      "result_id": "b9893466-646a-47ad-9dfe-f207da2c8d07"
+    },
+    {
+      "claim_id": "2bc87dfe-a6fd-470e-b601-423ab0ca155a",
+      "result_id": "b9893466-646a-47ad-9dfe-f207da2c8d07"
+    },
+    {
+      "claim_id": "5cb93a8e-a849-4828-8104-75df00fec1b0",
+      "result_id": "b9893466-646a-47ad-9dfe-f207da2c8d07"
+    },
+    {
+      "claim_id": "f7cec811-9fd1-494b-9d96-bd170707047b",
+      "result_id": "b9893466-646a-47ad-9dfe-f207da2c8d07"
+    },
+    {
+      "claim_id": "ee550853-8724-4084-bcb4-d5b153de0193",
+      "result_id": "b9893466-646a-47ad-9dfe-f207da2c8d07"
+    },
+    {
+      "claim_id": "b13ee032-88cb-4524-9324-af57e3170345",
+      "result_id": "b9893466-646a-47ad-9dfe-f207da2c8d07"
+    },
+    {
+      "claim_id": "325cea8c-1af8-4ad1-abf7-aeacbc7a2e16",
+      "result_id": "b9893466-646a-47ad-9dfe-f207da2c8d07"
+    },
+    {
+      "claim_id": "ab224276-2039-486a-aaf6-7750d43c63bf",
+      "result_id": "acce908c-102c-47d7-bcf6-ebb47707ea24"
+    },
+    {
+      "claim_id": "ad7da40e-f616-4672-9d1f-54573bfbbc37",
+      "result_id": "acce908c-102c-47d7-bcf6-ebb47707ea24"
+    },
+    {
+      "claim_id": "c736c743-ce60-4ba3-a846-a9177998ba22",
+      "result_id": "acce908c-102c-47d7-bcf6-ebb47707ea24"
+    },
+    {
+      "claim_id": "14cf1803-08dc-4747-97df-a0412f7f699e",
+      "result_id": "acce908c-102c-47d7-bcf6-ebb47707ea24"
+    },
+    {
+      "claim_id": "281b70da-9eea-40c3-88cc-97d145300694",
+      "result_id": "acce908c-102c-47d7-bcf6-ebb47707ea24"
+    },
+    {
+      "claim_id": "4298fb15-6878-46cc-b345-28926652d054",
+      "result_id": "da19df4d-2c78-410c-9d9b-88820bae2660"
+    },
+    {
+      "claim_id": "41d39425-d07e-4860-9cb3-d1810b3e515c",
+      "result_id": "da19df4d-2c78-410c-9d9b-88820bae2660"
+    },
+    {
+      "claim_id": "054b0e5c-49ce-4d2e-a1f0-6606099fa1c8",
+      "result_id": "b2e504fc-e36c-49d7-a61b-e47feb67f616"
+    },
+    {
+      "claim_id": "12dcfda3-7261-444c-b6f6-c8c05cf7c025",
+      "result_id": "a664de18-3c93-4845-b946-6dda77b926f1"
+    },
+    {
+      "claim_id": "a1731a60-c06f-4eab-be84-3e2b8acff8eb",
+      "result_id": "a664de18-3c93-4845-b946-6dda77b926f1"
+    },
+    {
+      "claim_id": "9ad62636-8910-4a08-82ca-1107f43eab3e",
+      "result_id": "a664de18-3c93-4845-b946-6dda77b926f1"
+    },
+    {
+      "claim_id": "79ea74e3-31fe-49ea-8a9d-1e8e0ed6e2ed",
+      "result_id": "a664de18-3c93-4845-b946-6dda77b926f1"
+    },
+    {
+      "claim_id": "6e277eb5-abef-4b0b-9295-dff528a1235b",
+      "result_id": "5aca51d6-9640-418e-ab29-15ab0e73359f"
+    },
+    {
+      "claim_id": "e9daa4c7-e079-4440-9607-8cf090452798",
+      "result_id": "5aca51d6-9640-418e-ab29-15ab0e73359f"
+    },
+    {
+      "claim_id": "0f1ff254-dae0-424c-ac65-a7ae501364df",
+      "result_id": "5aca51d6-9640-418e-ab29-15ab0e73359f"
+    },
+    {
+      "claim_id": "ba61d073-df48-4067-a46f-a02d95018307",
+      "result_id": "5aca51d6-9640-418e-ab29-15ab0e73359f"
+    },
+    {
+      "claim_id": "aed53713-29a1-4ffc-b8cb-876e77e97f20",
+      "result_id": "5aca51d6-9640-418e-ab29-15ab0e73359f"
+    },
+    {
+      "claim_id": "16c0336a-051c-4831-abf0-d10085553b00",
+      "result_id": "d90c73dc-7870-446b-83e3-e3bbcbb9fa14"
+    },
+    {
+      "claim_id": "ba03ff1e-c866-4055-817e-f21fe1aa6ff1",
+      "result_id": "d90c73dc-7870-446b-83e3-e3bbcbb9fa14"
+    },
+    {
+      "claim_id": "3b3200a0-45bf-4ae0-afdb-f01256b166f6",
+      "result_id": "d90c73dc-7870-446b-83e3-e3bbcbb9fa14"
+    },
+    {
+      "claim_id": "f0b3f7bd-caaf-4e92-9c30-0d509866640f",
+      "result_id": "d90c73dc-7870-446b-83e3-e3bbcbb9fa14"
+    },
+    {
+      "claim_id": "5b1d104d-3f5f-4715-b401-c9dd2d513901",
+      "result_id": "d90c73dc-7870-446b-83e3-e3bbcbb9fa14"
+    },
+    {
+      "claim_id": "25ffe2b1-ce35-4911-87f4-d3ef5b38e04c",
+      "result_id": "67e852e3-24ad-4f12-8a27-a1d71c867a8f"
+    },
+    {
+      "claim_id": "07aee9b2-3e2c-4771-a818-d3b4d2f21e4c",
+      "result_id": "67e852e3-24ad-4f12-8a27-a1d71c867a8f"
+    },
+    {
+      "claim_id": "247ff087-a1c3-4335-8b1c-d8ea495c95c1",
+      "result_id": "67e852e3-24ad-4f12-8a27-a1d71c867a8f"
+    },
+    {
+      "claim_id": "a8f322ef-9f9d-4a8f-a6af-56c7ab020adf",
+      "result_id": "67e852e3-24ad-4f12-8a27-a1d71c867a8f"
+    },
+    {
+      "claim_id": "994ece60-2fa5-45c7-89e6-4ad3ce5f7e83",
+      "result_id": "67e852e3-24ad-4f12-8a27-a1d71c867a8f"
+    },
+    {
+      "claim_id": "1227762c-0ec2-4322-9b96-262c99b102b8",
+      "result_id": "6ce4f144-be2f-4fa7-b32e-f51640213caa"
+    },
+    {
+      "claim_id": "4b6d6693-19ff-4fe3-828f-acaff3fbc825",
+      "result_id": "6ce4f144-be2f-4fa7-b32e-f51640213caa"
+    },
+    {
+      "claim_id": "da67e73a-f72c-4a6f-87c9-a3e818c0b95c",
+      "result_id": "6ce4f144-be2f-4fa7-b32e-f51640213caa"
+    },
+    {
+      "claim_id": "1718a480-4ed9-4055-a931-76bd96572dd9",
+      "result_id": "6ce4f144-be2f-4fa7-b32e-f51640213caa"
+    },
+    {
+      "claim_id": "20fe1f6e-780f-46b0-a1eb-03aef391d9ca",
+      "result_id": "55b3bc1e-f4bd-4644-9355-e1ae0d4a9934"
+    },
+    {
+      "claim_id": "502ba47b-81ee-4f2f-8769-b1e3815286dd",
+      "result_id": "55b3bc1e-f4bd-4644-9355-e1ae0d4a9934"
+    },
+    {
+      "claim_id": "87c5c025-7722-4b08-8fb4-aee08b56939b",
+      "result_id": "55b3bc1e-f4bd-4644-9355-e1ae0d4a9934"
+    },
+    {
+      "claim_id": "5cb93a8e-a849-4828-8104-75df00fec1b0",
+      "result_id": "55b3bc1e-f4bd-4644-9355-e1ae0d4a9934"
+    },
+    {
+      "claim_id": "12acb6dd-625e-4c57-8a8a-7eedbc3a43e9",
+      "result_id": "d7a9758e-54ff-4fab-a8c4-44947b673c2b"
+    },
+    {
+      "claim_id": "80c2dc88-d344-4854-a41e-d5ae2a736b7e",
+      "result_id": "d7a9758e-54ff-4fab-a8c4-44947b673c2b"
+    },
+    {
+      "claim_id": "a510501e-ecf4-4cc7-a084-f611d41934ab",
+      "result_id": "d7a9758e-54ff-4fab-a8c4-44947b673c2b"
+    },
+    {
+      "claim_id": "f7cec811-9fd1-494b-9d96-bd170707047b",
+      "result_id": "d7a9758e-54ff-4fab-a8c4-44947b673c2b"
+    },
+    {
+      "claim_id": "09330f38-7b65-43ce-b164-7581538e696d",
+      "result_id": "a83bc753-d470-4ca9-a609-da1a4d6f2d57"
+    },
+    {
+      "claim_id": "5c23798c-c7b1-4f12-a529-29907b740aef",
+      "result_id": "a83bc753-d470-4ca9-a609-da1a4d6f2d57"
+    },
+    {
+      "claim_id": "4e01f5fc-a331-4e6c-8d7d-609ed4355614",
+      "result_id": "a83bc753-d470-4ca9-a609-da1a4d6f2d57"
+    },
+    {
+      "claim_id": "187de600-6539-48e9-a29c-6d08555791be",
+      "result_id": "a83bc753-d470-4ca9-a609-da1a4d6f2d57"
+    },
+    {
+      "claim_id": "ee550853-8724-4084-bcb4-d5b153de0193",
+      "result_id": "a83bc753-d470-4ca9-a609-da1a4d6f2d57"
+    },
+    {
+      "claim_id": "96fa0283-ec9b-4c12-9f58-972895091230",
+      "result_id": "f1032e40-5983-4abe-a0be-31bae4f2c2ed"
+    },
+    {
+      "claim_id": "75c8773b-c11c-4a30-8064-afff5cf34cc9",
+      "result_id": "f1032e40-5983-4abe-a0be-31bae4f2c2ed"
+    },
+    {
+      "claim_id": "31e94b88-be65-4d08-a9b5-d3c50b0e1b82",
+      "result_id": "f1032e40-5983-4abe-a0be-31bae4f2c2ed"
+    },
+    {
+      "claim_id": "6b7eb740-795d-41d9-b097-dce3be58539f",
+      "result_id": "f1032e40-5983-4abe-a0be-31bae4f2c2ed"
+    },
+    {
+      "claim_id": "ef8478ea-879d-478e-bfee-52c73c026a19",
+      "result_id": "f1032e40-5983-4abe-a0be-31bae4f2c2ed"
+    },
+    {
+      "claim_id": "fb38a477-fa70-4ed5-8820-10205bc89108",
+      "result_id": "f1032e40-5983-4abe-a0be-31bae4f2c2ed"
+    },
+    {
+      "claim_id": "b13ee032-88cb-4524-9324-af57e3170345",
+      "result_id": "f1032e40-5983-4abe-a0be-31bae4f2c2ed"
+    },
+    {
+      "claim_id": "2a2759c4-6164-423c-a332-8c8753950d87",
+      "result_id": "f9b6a548-2e6c-427e-8735-8d89bc298a28"
+    },
+    {
+      "claim_id": "e0d924e7-69b2-4c29-8115-13f89834d285",
+      "result_id": "f9b6a548-2e6c-427e-8735-8d89bc298a28"
+    },
+    {
+      "claim_id": "dafcfb23-94b9-4e15-a75c-4986d59535f2",
+      "result_id": "f9b6a548-2e6c-427e-8735-8d89bc298a28"
+    },
+    {
+      "claim_id": "a9c44a13-a6b1-4703-88a3-39abb4331e5f",
+      "result_id": "f9b6a548-2e6c-427e-8735-8d89bc298a28"
+    },
+    {
+      "claim_id": "1e9ca326-0ab7-44b5-b2bd-ede79c971bfe",
+      "result_id": "f9b6a548-2e6c-427e-8735-8d89bc298a28"
+    },
+    {
+      "claim_id": "388eaf55-6be9-4c35-9fb1-8c600f35bec1",
+      "result_id": "f9b6a548-2e6c-427e-8735-8d89bc298a28"
+    },
+    {
+      "claim_id": "4e3cc341-51d6-4eff-b16c-3d814e0de0de",
+      "result_id": "4661559e-b800-43b3-a7dc-facb982a07fa"
+    },
+    {
+      "claim_id": "6f2db7fb-8255-4deb-9b53-4801f603bdca",
+      "result_id": "4661559e-b800-43b3-a7dc-facb982a07fa"
+    },
+    {
+      "claim_id": "2bc87dfe-a6fd-470e-b601-423ab0ca155a",
+      "result_id": "4661559e-b800-43b3-a7dc-facb982a07fa"
+    },
+    {
+      "claim_id": "325cea8c-1af8-4ad1-abf7-aeacbc7a2e16",
+      "result_id": "4661559e-b800-43b3-a7dc-facb982a07fa"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "e20d8576-c928-4ff8-8f1c-45f68757605f",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "9e068153-3598-496a-a4ec-c5f4ffe2c098",
+      "peer_result_id": "a664de18-3c93-4845-b946-6dda77b926f1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C11-C14 regarding abnormal NPC proliferation in WS organoids. Both evaluations find these claims SUPPORTED with no methodological concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "16fab11c-1c66-4f78-931e-baee84d7d117",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3d957ef8-134f-4c2b-bc5a-390ab2628ee7",
+      "peer_result_id": "5aca51d6-9640-418e-ab29-15ab0e73359f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C15-C19 regarding impaired neuronal differentiation. Both evaluations find these claims SUPPORTED and treat them as core findings without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "47d5e4e2-5698-448a-8052-78bcf9e97fd6",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "d4cfc4c8-e2c9-4659-ba89-daf92ffc3445",
+      "peer_result_id": "d90c73dc-7870-446b-83e3-e3bbcbb9fa14",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C20-C24 regarding transcriptomic findings from bulk RNA-seq. Both evaluations find these claims SUPPORTED and highlight NGS techniques as a strength.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "6957e61f-2cb3-4e5c-a10e-213ae2794fbd",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "790bc9bc-f814-4faa-bf21-19bedbba8939",
+      "peer_result_id": "67e852e3-24ad-4f12-8a27-a1d71c867a8f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C25-C29 regarding scRNA-seq findings and aberrant excitatory neurogenesis. Both evaluations find these claims SUPPORTED and recognize them as major contributions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "6af71660-cd1e-4f47-962e-d676366c4816",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "6291b81e-0bd8-44cd-9241-9f7b51b9b7b7",
+      "peer_result_id": "6ce4f144-be2f-4fa7-b32e-f51640213caa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C30-C33 regarding pseudotime analysis and developmental trajectory. Both evaluations find these claims SUPPORTED without questioning the analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "3d62f3a1-c11e-49d3-9fa9-e535381ebce7",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "5cf9eedc-c480-46da-9bc0-aa53b713e444",
+      "peer_result_id": "55b3bc1e-f4bd-4644-9355-e1ae0d4a9934",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C34, C36-C37 regarding TTR identification and validation. Both evaluations find these claims SUPPORTED and recognize TTR as a key discovery, though peer review also includes C60 (summary claim).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "a10f489a-b781-4dd5-a0ae-6c168395c6b2",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "0ce486d6-1324-4484-821b-a261682481e2",
+      "peer_result_id": "d7a9758e-54ff-4fab-a8c4-44947b673c2b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C38-C40 regarding GTF2IRD1 regulation of TTR via MAPK/ERK pathway. OpenEval finds claims SUPPORTED, while peer reviewers rate them UNCERTAIN, citing incomplete evidence and lack of mechanistic depth.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "b14f887d-692b-4a90-a2d5-599076a40e23",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "e0fa0585-880e-4ca8-8b82-c41dabd041a7",
+      "peer_result_id": "a83bc753-d470-4ca9-a609-da1a4d6f2d57",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C41-C44 regarding TTR rescue experiments. OpenEval finds claims SUPPORTED with strong evidence, while peer reviewers rate them UNCERTAIN, stating the rescue data alone are insufficient for the proposed mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "f9f53317-78f8-4a9c-bc56-4cb2895aaf27",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "fb137b05-c4de-4e25-a4ca-3867fdb94b13",
+      "peer_result_id": "f1032e40-5983-4abe-a0be-31bae4f2c2ed",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C45-C50 regarding mouse model validation. Both evaluations find these claims SUPPORTED and view the cross-species validation as a strength of the study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "48f0a5ed-7829-4f03-bcde-3cac91587bea",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "1dfe9853-dc9e-4fdc-a213-b841ec5dc81a",
+      "peer_result_id": "f9b6a548-2e6c-427e-8735-8d89bc298a28",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C51-C53 regarding mouse eNPC experiments. Both evaluations find these claims SUPPORTED as part of the multi-model validation approach. Peer R10 also covers C54-C56.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "7f6f7241-520c-4fb2-9c17-95478c3ec9ee",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "16cb4842-e854-455b-be50-b6851182ebd2",
+      "peer_result_id": "f9b6a548-2e6c-427e-8735-8d89bc298a28",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C54-C56 regarding ChIP-qPCR evidence of Gtf2ird1 transcriptional regulation of Ttr. Both evaluations find these claims SUPPORTED without questioning the direct mechanistic evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "bcb50571-cad9-4847-a1d8-bdeb5ba9edf0",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "b9893466-646a-47ad-9dfe-f207da2c8d07",
+      "peer_result_id": "4661559e-b800-43b3-a7dc-facb982a07fa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on summary claims C57-C59, C64. OpenEval finds them SUPPORTED (noting C57's synapse claim lacks direct support), while peer reviewers rate them UNCERTAIN due to incomplete mechanistic understanding and lack of depth in the MAPK pathway evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "65bf468a-ab0f-4373-9e38-63885fb669ac",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "55c5d922-623f-4401-9ef2-d38be237504f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background claims C1-C10 about WS as SUPPORTED by literature citations. No corresponding peer review evaluation found for these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "b2c9d168-7211-4f0c-96f6-f56b7eb56f3c",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "acce908c-102c-47d7-bcf6-ebb47707ea24",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C65, C66, C69-C71 (background and context claims) as SUPPORTED. No corresponding peer review evaluation found for these literature-based claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "26d95138-bab4-4f18-9591-6c373d106630",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "da19df4d-2c78-410c-9d9b-88820bae2660",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C67-C68 regarding TTR's role in neurogenesis and WS pathology as SUPPORTED by citations. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    },
+    {
+      "id": "23134323-23af-494d-811c-bb66b345df23",
+      "submission_id": "8b1bf269-abf9-4ac5-8080-04e3daef6c76",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "b2e504fc-e36c-49d7-a61b-e47feb67f616",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claim C72 regarding TTR as potential therapeutic target as UNCERTAIN, noting it is speculative and requires extensive validation. No corresponding peer review evaluation found for this specific claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:14:46.992337Z"
+    }
+  ]
+}

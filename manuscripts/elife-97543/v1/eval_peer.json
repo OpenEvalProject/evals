@@ -1,0 +1,153 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C32",
+      "C65",
+      "C66",
+      "C67",
+      "C87"
+    ],
+    "result": "RiboD-PETRI substantially enhances mRNA detection rates (up to 92% for S. aureus, 81% for E. coli, 54% for C. crescentus) compared to control PETRI-seq (~5-10%), while maintaining transcriptome profile consistency (r=0.93 with non-depleted samples, r=0.84 with bulk RNA-seq), achieving >90% sequencing saturation, >99% transcriptome coverage, and being cost-effective at $0.0049 per cell versus $0.056 for original PETRI-seq.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm the method's high efficiency and utility. Reviewer 1 states the method 'greatly increases its utility' and notes it is 'straightforward and inexpensive.' Reviewer 2 describes the rRNA depletion as 'highly efficient, with the depletion for E. coli resulting in over 90% of reads containing mRNA' and emphasizes 'the value of the method for the field is high.' The editor confirms the method demonstrates 'applicability for studying heterogeneity in microbial biofilms.' No concerns are raised about the technical performance claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "RiboD-PETRI successfully characterized bacterial populations across three species (E. coli, S. aureus, C. crescentus) in different growth phases, recovering thousands of cells with high UMI counts (median 102-182 per cell), achieving >99% transcriptome coverage, and identifying distinct subpopulations including rare clusters (1.2-10.5% of populations) with unique metabolic signatures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these characterization results without challenge. Reviewer 1 notes the authors 'convincingly show how their technology can detect minority subpopulations within a complex community.' Reviewer 2 acknowledges the method's demonstration of 'utility and performance...for three different model species.' The editor confirms the findings provide 'convincing evidence' for subpopulation identification. No concerns are raised about the population analysis or subpopulation detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C89"
+    ],
+    "result": "Application of RiboD-PETRI to static E. coli biofilms identified four major subpopulations with a consistently detected rare cluster 2 (2.6%/2.1% across replicates) driven by cell envelope genes, including marker genes yffO, lptE, rdgB, pdeI, sstT, fixA, yjjG, rlmI, accC, and yaiA.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support the biofilm heterogeneity findings. The editor states the findings provide 'convincing evidence for a distinct subpopulation of cells at the biofilm base that upregulates PdeI expression.' Reviewer 1 confirms the authors 'convincingly show how their technology can detect minority subpopulations.' Reviewer 2 notes 'evidence that a small number of cells at the bottom of a static biofilm express PdeI.' The identification of cluster 2 and its marker genes is not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "PdeI, despite containing an EAL domain typically associated with c-di-GMP degradation, actually elevates c-di-GMP levels through its divergent GGDEF domain. This was demonstrated through single-cell monitoring showing positive correlation between PdeI expression and c-di-GMP levels, HPLC-MS/MS showing ~11-fold increase in c-di-GMP in overexpression strains, and mutation studies showing the G412S mutation abolishes this activity. PdeI functions as a membrane-associated sensor with a CHASE domain that integrates environmental signals with c-di-GMP production.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly accept the PdeI-c-di-GMP relationship after initial concerns were addressed. Reviewer 2 states 'The authors explained the seeming contradiction between c-di-GMP levels and PdeI expression' and notes the finding 'highlights the potentially complex role of PdeI in regulation of c-di-GMP levels.' The editor acknowledges future studies could 'explore the functional relationship between PdeI and c-di-GMP levels' but does not challenge the current findings. The mechanistic data (HPLC-MS/MS, mutation studies, localization) are not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "PdeI promotes persister cell formation in biofilms, with PdeI-high populations producing significantly higher persister ratios (~7.3%) compared to whole biofilm populations (~0.6%). PdeI-positive cells are predominantly located at the biofilm bottom (surface attachment region), display dormancy characteristics during ampicillin treatment, and resume growth after antibiotic removal. This suggests c-di-GMP plays a significant role in generating persister subpopulations during early biofilm development.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the persister formation findings. Reviewer 2 explicitly states 'These cells were shown to be in a state that promotes persister formation in response to ampicillin treatment' and notes this finding 'highlights the potentially complex role of PdeI in regulation of c-di-GMP levels and persister formation in microbial biofilms.' The editor confirms 'convincing evidence for a distinct subpopulation of cells at the biofilm base that upregulates PdeI expression.' The time-lapse imaging and antibiotic killing assay data are not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Other marker genes co-expressed with PdeI in cluster 2 do not significantly impact biofilm formation or directly relate to c-di-GMP or PdeI function.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor specifically suggests 'future studies exploring...the roles of co-expressed genes within the same cluster, could further enhance the depth and impact of these conclusions.' This indicates the reviewers view the functional roles of co-expressed genes as incompletely resolved, though they do not directly challenge the authors' negative finding. The suggestion for future work implies uncertainty rather than rejection of the claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The RiboD method uses species-specific probe sets designed with 3'-ends reverse complementary to r-cDNA sequences for specific recognition and 5'-ends complementing biotin-labeled universal primers, with separate sets designed for E. coli, C. crescentus, and S. aureus.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'I believe the details of the protocol are now much easier to understand, and the text and methods have been significantly clarified' and has 'no further comments.' This indicates acceptance of the methodological details including probe design. No reviewer challenges the probe design strategy or its species-specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "The mechanism by which elevated c-di-GMP contributes to antibiotic tolerance may involve modulation of cellular metabolism or stress response pathways leading to dormancy, and PdeI may be especially crucial in initial biofilm formation stages, responding to surface-associated cues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims ('may involve,' 'may be especially crucial') that propose mechanisms beyond the direct experimental evidence. The editor's suggestion that 'future studies exploring the functional relationship between PdeI and c-di-GMP levels...could further enhance the depth and impact' indicates these mechanistic interpretations remain to be fully established. The claims are presented as hypotheses rather than demonstrated findings.",
+    "result_type": "MINOR"
+  }
+]

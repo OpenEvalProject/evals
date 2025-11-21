@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C24",
+      "C52",
+      "C182",
+      "C183",
+      "C184",
+      "C186",
+      "C187",
+      "C188",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205",
+      "C206"
+    ],
+    "result": "DyNoPy is a computational method that combines residue coevolution analysis with molecular dynamics simulations to identify coevolved dynamic couplings\u2014residue pairs with critical dynamical interactions preserved during evolution. The method constructs a graph model where residues are nodes and conserved dynamic couplings are edges, uses community detection to identify groups of functionally important residues, and assigns importance based on eigenvector centrality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C22-C24, C52, and C182-C206 collectively describe the DyNoPy methodology with consistent technical details including the mathematical formulation (Jij = \u03b1\u03b3ij + \u03b2\u03c1ij), graph construction using python-igraph, community detection via Girvan-Newman algorithm, and centrality calculations. The methodology is internally consistent and well-documented across multiple claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C166",
+      "C167",
+      "C228",
+      "C229"
+    ],
+    "result": "The choice of collective variable (CV) significantly impacts DyNoPy's ability to detect functional dynamic couplings. For SHV-1, PC1 identified 571 residue pairs with Jij > 0, while for PDC-3, TC1_partial identified 216 pairs. Including dynamics information reduced non-zero couplings from 40% to <2% of total residue pairs, effectively filtering for functionally relevant interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 and C166-C167 provide quantitative data showing CV selection impacts coupling detection, with specific numbers of detected pairs and filtering efficiency. Figure 3A and 3B support these findings. The demonstration that different proteins require different CVs (global vs. local) is logical given their distinct dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Coevolution scores (\u03b3ij) alone are insufficient for discriminating functionally relevant residues. Using only \u03b3ij, all residues in both SHV-1 and PDC-3 were grouped into four communities with similar EVC values, whereas incorporating dynamics (Jij) produced clear EVC outliers identifying critical residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 are supported by data in Supplementary file 1c and Figure 3\u2014figure supplement 1A-D showing the lack of discrimination with coevolution alone versus clear outliers with J scores. This validates the core premise that combining coevolution with dynamics provides superior functional site identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "DyNoPy identified eight meaningful communities in SHV-1 containing most known catalytic residues and critical substitution sites (exceptions: R43, R202, S130). The method also identified L162 and N136 as core residues in communities\u2014positions known to confer ESBL phenotypes in other class A \u03b2-lactamases but not yet observed in SHV-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 and C73 are supported by Figure 3C showing eight communities and Figures 4-5 showing detailed community structures. The identification of known functional residues validates the method, while detection of L162 and N136 demonstrates predictive capability. The exceptions (R43, R202, S130) are honestly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "L162 is the core residue of community 1 in SHV-1, positioned at the start of the \u03a9-loop adjacent to catalytic residue E166. DyNoPy identified L162's connections to 28 backbone residues including 9 hydrophobic nodes critical for stability. L162 variants in other class A \u03b2-lactamases (e.g., L162F in BEL-2) expand catalytic spectrum but destabilize protein structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C83 are supported by Figure 4A showing community 1 structure and citations to previous work (Pozzi et al. 2016, Poirel et al. 2010, Bogaerts et al. 2007) documenting L162 variants in other enzymes. DyNoPy's identification of L162's extensive coupling network provides mechanistic explanation for its functional importance and conservation in SHV-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "N136 is the core residue of community 7 in SHV-1, forming a hydrogen bond with E166 to stabilize the \u03a9-loop. DyNoPy detected N136's coupling to N170 (which primes water for deacylation with E166) and to six \u03a9-loop residues including R164 and D179. N136D substitution recently emerged in PenL \u03b2-lactamase, increasing ceftazidime hydrolysis via increased \u03a9-loop flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C96 are supported by Figure 5B showing community 7 and citations documenting N136's role (B\u00f6s and Pleiss 2008, Cao et al. 2020, Agarwal et al. 2023). DyNoPy correctly identified the N136-N170 coupling and \u03a9-loop relationships, consistent with experimental findings. The indirect detection of N136-E166 interaction through N170 is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "F72 is the secondary core residue in community 1, showing strong direct coupling with L162 plus nine indirect couplings including via catalytic K234. DyNoPy successfully recovered key residues (L162, F72, L148) of a previously identified hydrophobic cavity essential for active site stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by Figure 4A and citation to Pozzi et al. 2016 identifying the hydrophobic cavity. DyNoPy's recovery of this known structural feature validates the method's ability to detect functionally important residue networks. The network of direct and indirect couplings provides mechanistic insight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Community 5 shows strong interplay between V103 and S106 on the \u03b13-\u03b14 loop, coupled directly and indirectly via 22 residues. This community contains 27 hydrophobic residues including 15 hydrophobic nodes critical for stabilization. V103 and S106 are themselves hydrophobic nodes stabilizing \u03b13 and \u03b14 helices; position 106 is already serine in SHV (N106S is a stabilizing substitution in CTX-M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C112 are supported by Figure 4C and citation to Lu et al. 2022 about CTX-M. The identification of extensive hydrophobic node involvement is consistent with established understanding of \u03b2-lactamase stability (Galdadas et al. 2021). The comparison with CTX-M provides functional context for S106's role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "G156 is the core residue of community 4, located >20 \u00c5 from catalytic S70. G156D substitution in SHV-27 confers ESBL phenotype. DyNoPy identified G156's 11 coevolved dynamic couplings including with A146, another distant ESBL site (16.8 \u00c5 from S70). The A146-G156 pair shows strong coevolutionary signal and correlation with protein dynamics, suggesting potential for compensatory mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C126 are supported by Figure 4B and citations (Liakopoulos et al. 2016, Corkill et al. 2001, Poirel et al. 2003). DyNoPy's identification of coupling between two distant ESBL sites provides mechanistic explanation for their functional effects. The prediction of potential compensatory mutations is appropriately speculative (C125) but grounded in the coupling data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Community 6 contains R205 and G238, two mutation sites that co-occur in ESBL SHV-3. Y105 and R266 are core residues. G238 couples with catalytic Y105 (which binds penicillin/inhibitor thiazolidine rings), linking to S70, A237, and \u03a9-loop stabilizer R266. R205 (>20 \u00c5 from S70, solvent-exposed) couples with R266 but not catalytic residues; R205 substitution alone is never observed in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C138 are supported by Figure 5A and citations (Ben Achour et al. 2009, Nicolas et al. 1989, Bethel et al. 2006, Kuzin et al. 1999, Neubauer et al. 2020). DyNoPy's co-detection of R205 and G238 in one community aligns with their co-occurrence in SHV-3. The coupling patterns explain why R205 alone doesn't confer advantage but compensates for stability loss from other mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "DyNoPy detected five communities in PDC-3 containing all four predominant \u03a9-loop mutations (V211, G214, E219, Y221). G214 is the core residue of community 1, directly coupled with E219 and Y221, plus four other \u03a9-loop residues (A195, A197, G212, L216). G214 substitutions destabilize the \u03a9-loop. No R2-loop residues appear in community 1, explaining why G214/E219/Y221 mutations don't affect R2-loop flexibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C152 are supported by Figure 3D, Figure 6A, and citations to Chen et al. 2024. DyNoPy's identification of all known \u03a9-loop mutations validates the method for PDC-3. The absence of R2-loop residues from community 1 provides mechanistic explanation for a previously unexplained observation about differential loop effects, demonstrating predictive/explanatory power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "G204 is the core residue of community 2 in PDC-3, coupled with 73 residues mostly distant from the catalytic site, suggesting a role in overall protein stability similar to L162 in SHV-1. G204 is located on \u03b25a within the \u03a9-loop near the \u03b28-\u03b29 hinge. G204 couples to catalytic residues K67, K315, T316, suggesting mutations could negatively impact catalysis. V211 mutations affect R2-loop dynamics via indirect coupling through G204 to R2-loop residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C153-C162 are supported by Figure 6B and citations (Colque et al. 2021, Chen et al. 2024). However, the functional role of G204 is largely speculative (C154, C158, C159) based on coupling patterns rather than experimental validation. C160 appropriately calls for experimental confirmation. The analogy to L162 is reasonable but the evidence is weaker than for SHV-1 communities. The V211-R2-loop connection (C161) is better supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C74",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "L162 and N136 mutations have not emerged in SHV-1 despite conferring ESBL phenotypes in other class A \u03b2-lactamases. DyNoPy identified these as core residues strongly coupled with functional residues critical for catalysis and stability. Their central community roles suggest mutations would significantly alter function but would require compensatory changes to maintain protein function, explaining their absence in SHV-1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C74, C170-C174 synthesize findings about L162 and N136 with appropriate speculation (C72, C173, C174) grounded in the coupling data. The explanation for absence of these mutations in SHV-1 (requiring balanced compensatory changes) is supported by citation to Soskine and Tawfik 2010 and is consistent with the extensive coupling networks identified by DyNoPy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "DyNoPy demonstrated ability to detect well-characterized mutation sites (R205, G238 in SHV-1) and showed predictive ability for less-studied sites (G156, A146 in SHV-1). Based on SHV-1 analysis, mutations at G204 in PDC-3 are predicted to potentially lead to new ESBL/IRBL variants due to conserved dynamic couplings. DyNoPy can guide future mutagenesis studies in PDC-3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C178 appropriately summarize DyNoPy's validation (detecting known sites) and predictive capabilities (identifying understudied sites). The prediction about G204 (C177) is clearly speculative but grounded in the coupling analysis. The recommendation for future mutagenesis (C178) is appropriate given the method's performance on SHV-1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C179",
+      "C180",
+      "C181"
+    ],
+    "result": "DyNoPy offers advantages over existing tools by directly using residue coevolution to detect dynamics preserved during evolution and using MD-derived dynamic descriptors to identify function-specific conserved couplings. The method identifies key residues in local and global interactions and predicts silent residues with unknown roles. Application to \u03b2-lactamases demonstrates potential to address antibiotic resistance challenges through valid predictions on protein evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C165 and C179-C181 summarize DyNoPy's advantages with appropriate citations to existing methods (Yehorova et al. 2024, Osuna 2021). The advantages are supported by the demonstrated results on SHV-1 and PDC-3. The claims about identifying silent residues and addressing antibiotic resistance are validated by the specific findings (L162, N136, G156, A146, G204).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C18",
+      "C21"
+    ],
+    "result": "Existing computational methods for predicting functional residues do not explicitly model the influence of evolution on protein dynamics. None of the existing network analysis techniques incorporate information on residue evolution. A method combining hidden evolutionary dynamics information with direct MD-derived dynamics information was not previously available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C18, C21 identify gaps in existing methods based on literature review. While these are inference-based claims about the state of the field, they are supported by the extensive citations to prior work (C9-C12, C16-C17, C20) and establish the motivation for DyNoPy. The gap identification is reasonable given the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "DyNoPy uses HH-Suite for MSA generation and CCMpred for coevolution score calculation. For SHV-1, 18,174 sequences (Neff: 11.082) were obtained; for PDC-3, 27,892 sequences (Neff: 9.951) from UniRef30 database. Scaled coevolution scores are calculated by dividing raw scores by matrix mean, setting values <1 to zero, and normalizing by maximum. Correlation values <0.5 are set to 0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C190-C196 describe the computational methodology with specific tools (HH-Suite, CCMpred), databases (UniRef30), and parameters (thresholds, normalization). These are supported by appropriate citations (Remmert et al. 2011, Seemayer et al. 2014, Mirdita et al. 2017) and provide sufficient detail for reproducibility. The sequence numbers and Neff values are specific data points.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C210",
+      "C211",
+      "C212",
+      "C213",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C219",
+      "C220",
+      "C221",
+      "C222",
+      "C223",
+      "C224"
+    ],
+    "result": "MD simulation data was sourced from previous studies. SHV-1 (PDB: 3N4I with E104D mutation) and PDC-3 (derived from PDC-1 PDB: 4HEF with T105A) were protonated at pH 7.0, solvated with TIP3P water in 10 \u00c5 periodic box with 150 mM KCl, using Amber ff14SB force field. MSM-based adaptive sampling with ACEMD engine was performed: SHV-1 had 593 trajectories of 60 ns each; PDC-3 had 100 trajectories of 300 ns each. Minimum 30,000 frames preserved per system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C210-C224 provide detailed MD simulation methodology with appropriate citations (Olehnovics et al. 2021, Chen et al. 2024, Mart\u00ednez-Rosell et al. 2017, Maier et al. 2015, Berendsen et al. 1984, Doerr et al. 2016, Harvey et al. 2009, Davidchack et al. 2009). The methods are sufficiently detailed for reproducibility. Sourcing data from previous studies is appropriate and properly cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "\u03b2-Lactamases confer antibiotic resistance through \u03b2-lactam hydrolysis and evolve rapidly via single substitutions. SHV-1 (class A, K. pneumoniae) and PDC-3 (class C, P. aeruginosa) were selected as test cases. Both have \u03b1/\u03b2 and \u03b1-helical domains with active sites between them, using conserved serine for catalysis, but have remarkably different structures. Class A has three active site loops; class C has wider active site with R1 and R2 regions. Known catalytic residues, ESBL sites, and mutation patterns are documented for both enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C51 provide background on \u03b2-lactamases with extensive citations (Poole 2004, Bush 2013/2018, Olehnovics et al. 2021, Chen et al. 2024, Matagne et al. 1998, Philippon et al. 2022, Palzkill 2018, Jacoby 2009, and many others). This establishes the biological context and justifies the choice of test systems. The structural and functional information is well-supported by literature and provides necessary background for interpreting DyNoPy results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C168",
+      "C169"
+    ],
+    "result": "When multiple descriptors can quantify functional conformational change, they are expected to differently modulate coevolution coupling effects, reflected in different graph model structures. This suggests using DyNoPy to generate comparative models in proteins with multiple functions associated with distinct dynamical changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C169 are speculative predictions about future applications of DyNoPy to proteins with multiple functions. While the speculation is reasonable given the demonstrated CV-dependence of coupling detection, no data is provided to support these specific predictions. These are appropriate suggestions for future work but lack empirical support in the current manuscript.",
+    "result_type": "MINOR"
+  }
+]

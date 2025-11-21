@@ -1,0 +1,489 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C35",
+      "C36",
+      "C52"
+    ],
+    "result": "ChIP-seq and ChEC-seq2 reveal strikingly different patterns of RNAPII enrichment across yeast genes. ChIP-seq shows strong enrichment over transcribed regions with little signal at promoters/UAS, while ChEC-seq2 shows strong enrichment at promoters, UAS, and terminators with low signal over transcribed regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26-C28, C35-C36 provide direct experimental evidence from both methods showing complementary patterns. The data in Figure 2A-B clearly demonstrate these differences across multiple genes and gene classes. Claim C52 draws a reasonable conclusion that ChIP-seq fails to detect functionally important RNAPII interactions at promoters/UAS that are captured by ChEC-seq2, supported by modeling (C49-C51) showing published dwell times predict higher promoter occupancy than observed by ChIP-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C38",
+      "C39",
+      "C5"
+    ],
+    "result": "ChEC-seq2 enrichment of RNAPII at promoters correlates with nascent transcription and ChIP-seq enrichment over coding regions, indicating both methods capture transcriptionally active RNAPII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C38-C39 are supported by correlation analysis shown in Figure 2\u2014figure supplement 1C, demonstrating that both ChIP-seq and ChEC-seq2 signals correlate with SLAM-seq nascent transcription measurements, though at different genomic regions. This validates that ChEC-seq2 detects biologically relevant RNAPII populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C58",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "RNAPII association with UAS regions detected by ChEC-seq2 is strongest for genes recruiting coactivators (STM genes) and is dependent on sequence-specific transcription factors but not on TFIIB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31 are supported by metagene analysis (Figure 2B) showing differential UAS enrichment between STM and TFO genes. Claims C79-C82 demonstrate through TFIIB depletion experiments (Figure 5D-E) that RNAPII recruitment to UAS is TFIIB-independent while promoter recruitment requires TFIIB, providing mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "ChEC-seq2 cleavage patterns of RNAPII and PIC components (TFIIA, TFIIE) around TATA boxes reflect the spatial arrangement and ordered assembly of the preinitiation complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 describe specific cleavage patterns relative to TATA boxes (Figure 2D-E) that are consistent with structural studies (C44, citations provided). Claim C45 provides evidence for ordered PIC assembly based on differential protection patterns. The data agree well with published PIC structures, providing strong validation of the ChEC-seq2 method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C118"
+    ],
+    "result": "Modeling RNAPII occupancy using published dwell times and elongation rates predicts higher occupancy at promoters and terminators than transcribed regions, consistent with ChEC-seq2 but not ChIP-seq patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 describe modeling results (Figure 2F, Figure 2\u2014figure supplement 1F) showing that 21 of 24 parameter combinations predict the ChEC-seq2 pattern, while none predict the ChIP-seq pattern unless unrealistically short promoter dwell times (<1 s) are used. This provides strong theoretical support that ChEC-seq2 captures expected RNAPII distributions based on known kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "ChEC-seq2 using Mintbody-MNase constructs specific to Ser5p and Ser2p RNAPII CTD reveals differential phosphorylation patterns, with Ser5p enriched at promoters/UAS and Ser2p enriched over transcribed regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 describe a novel method for detecting phosphorylated RNAPII forms genome-wide. The data (Figure 3E-G) show patterns consistent with known functions of these modifications and with the kinases responsible (Kin28 for Ser5p, Ctk1 for Ser2p). The method appears technically sound with appropriate controls (Figure 3C-D, Figure 3\u2014figure supplement 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "ChEC-seq2 with RNAPII and associated factors captures widespread transcriptional changes upon ethanol stress, showing increased enrichment at induced genes and decreased enrichment at repressed ribosomal protein genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 demonstrate that ChEC-seq2 detects biologically relevant transcriptional changes. The data (Figure 4A-D) show concordant changes across multiple proteins (Rpb1, Kin28, Ctk1, Ser5p, Ser2p) at both induced and repressed genes, validated by SLAM-seq measurements of nascent transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Depletion of TFIIB causes decreased RNAPII occupancy at promoters of active genes and altered PIC component positioning, with TFIIA shifting from upstream to downstream of TATA and loss of RNAPII/TFIIE peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C78 describe effects of TFIIB depletion validated by both SLAM-seq (Figure 5B) and ChEC-seq2 (Figure 5C-D). The data show specific, interpretable changes in PIC component positioning that are consistent with TFIIB's known role in PIC assembly. The lack of effect on repressed genes (C75) provides an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Inhibition of the Kin28 kinase leads to decreased RNAPII occupancy and loss of Ser5p and Ser2p phosphorylation, with differential effects across gene regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 describe effects of Kin28 inhibition (Figure 5G-H) showing expected loss of CTD phosphorylation and decreased RNAPII occupancy. The differential regional effects (C85-C86) provide mechanistic insight. The comparison to TFIIB depletion (C87) helps distinguish between different perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C6"
+    ],
+    "result": "A stochastic kinetic model based on ChEC-seq2 RNAPII occupancy data, incorporating distinct recruitment mechanisms for STM (UAS-mediated) and TFO (direct promoter) gene classes, achieves excellent agreement with experimental data (cosine similarity >0.995).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 describe the kinetic model development and validation. The model assumptions (C88-C89) are based on experimental observations. The excellent fit to ChEC-seq2 data (C90, Figure 6B) with published rate constants provides strong support. The model's inability to fit ChIP-seq data (C91) without unrealistic parameters further validates the ChEC-seq2 approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C132"
+    ],
+    "result": "Kinetic modeling of TFIIB depletion effects suggests that TFIIB loss causes both decreased RNAPII recruitment and increased non-productive dissociation from promoters/UAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 and C132 describe modeling results (Figure 6C, Table 2) showing that multiple rate changes are needed to explain TFIIB depletion effects. The modeling approach is sound and the conclusion that perturbations have multiple effects is reasonable for a multi-step process. The ensemble modeling approach (multiple parameter sets) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C94",
+      "C133"
+    ],
+    "result": "Kinetic modeling of Kin28 inhibition effects indicates both decreased initiation and increased RNAPII dissociation from promoters/UAS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C133 describe modeling of Kin28 inhibition (Figure 6D, Table 2). The conclusion that Kin28 inhibition destabilizes RNAPII at promoters/UAS in addition to blocking initiation is well-supported by the modeling and consistent with the experimental data showing decreased RNAPII occupancy rather than accumulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The gcn4-pd mutation, which blocks NPC interaction without affecting DNA binding or activation domains, causes decreased RNAPII occupancy specifically at promoters but not at UAS regions of Gcn4 target genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C106 describe a genetic dissection of Gcn4 function using the gcn4-pd mutant. The ChEC-seq2 data (Figure 7C-D) clearly show differential effects on promoter vs. UAS occupancy. The fitness defect (C99) and transcriptional changes (Figure 7A) validate the biological significance. The comparison to gcn4\u0394 provides an important control showing that UAS recruitment requires Gcn4 but not the positioning domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C32",
+      "C129"
+    ],
+    "result": "Kinetic modeling of gcn4 mutants suggests that Gcn4 recruits RNAPII to UAS through activation domains, while NPC interaction stabilizes promoter-bound RNAPII, supporting a model where the NPC promotes transcription by stabilizing the PIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C109 describe modeling results (Figure 7E) that distinguish between UAS recruitment (affected by gcn4\u0394) and promoter stabilization (affected by gcn4-pd). This mechanistic model (C32, C129) is well-supported by the combination of ChEC-seq2 data, kinetic modeling, and prior literature on NPC-chromatin interactions. The model provides a satisfying explanation for the quantitative transcriptional defects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C24",
+      "C25",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "For proteins that bind directly to DNA (transcription factors, nuclear pore proteins, PIC components, Mediator, kinases), ChIP-seq and ChEC-seq2 generally show good agreement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C24-C25, C110-C112 establish that ChEC-seq2 and ChIP-seq agree for most proteins tested, supported by citations to published comparisons and data in this study (e.g., Figure 2D for PIC components). This validation is important for establishing that the RNAPII differences are specific rather than a general methodological artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "ChEC-seq2 with initiation and elongation factors (Kin28, Ctk1, Spt5) shows maximum cleavage at promoters of active genes, with differential patterns reflecting their functions in transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C62 describe ChEC-seq2 patterns for transcription-associated factors (Figure 3A-B). The data show expected enrichment at active genes and differential positioning relative to TATA boxes. While the strong promoter enrichment for elongation factors (especially Ctk1) is somewhat unexpected, the authors provide reasonable explanations based on known promoter functions of these factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "MNase was inserted at the C-terminus of endogenous RNAPII subunits Rpb1 and Rpb3 for ChEC-seq2 experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 describes the experimental approach. The method is validated by showing similar patterns for both subunits (Figure 2A) and by ChIP-seq showing the MNase tag doesn't affect RNAPII distribution (Figure 2\u2014figure supplement 2).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91"
+    ],
+    "result": "The kinetic model was unable to find rates within a reasonable range that produced RNAPII occupancies matching ChIP-seq patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C91 is supported by modeling results (Figure 6\u2014figure supplement 1B, D) showing no models achieved cosine similarity >0.9 with ChIP-seq data using published rate constants. The supplementary analysis (Figure 6\u2014figure supplement 1E-F) shows that fitting ChIP-seq requires unrealistic parameter values. This strengthens the argument that ChEC-seq2 provides a more accurate view of RNAPII occupancy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Mechanistic differences between ChIP and ChEC likely explain their different results: ChIP favors direct DNA interactions and may be enhanced by nucleosomes, while ChEC detects both direct and indirect interactions and performs better in nucleosome-depleted regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C116 propose mechanistic explanations for the ChIP vs. ChEC differences. While these are reasonable hypotheses based on the known mechanisms of each method, they remain speculative (marked as INFERENCE in evidence_type). Direct experimental tests of these hypotheses are not provided, though the explanations are consistent with the observed data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The low RNAPII ChIP-seq signal at UAS and high signal over coding sequences may reflect RNAPII's direct DNA interaction during elongation and association with crosslinkable nucleosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C119 is marked as SPECULATION in the evidence_type. While the hypothesis is supported by citations about RNAPII-nucleosome interactions during transcription, it remains speculative without direct experimental validation. The claim provides a plausible explanation but requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Elongation factors may function at promoters, and ChEC-seq2 may capture transient interactions that occur before productive elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C122 cite literature showing promoter functions for elongation factors and transient Spt4/5 binding. Claims C123-C124 are speculative (marked as SPECULATION) about what ChEC-seq2 detects. While the promoter enrichment of elongation factors is unexpected, the authors provide reasonable explanations. However, definitive evidence distinguishing between promoter function vs. technical artifact is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C131",
+      "C134"
+    ],
+    "result": "The kinetic model suggests that perturbations often have multiple effects and that the PIC is unstable, with perturbations causing RNAPII dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C134 draw general conclusions from the modeling results. These are well-supported by the modeling of multiple perturbations (TFIIB depletion, Kin28 inhibition, gcn4 mutations) all showing that multiple rate changes are needed to explain the data. The conclusion about PIC instability is consistent with cited literature (C135-C136).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C14",
+      "C15"
+    ],
+    "result": "ChIP-seq is the most common approach for studying protein-DNA interactions genome-wide and has been widely adopted for studying RNAPII and co-regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C14-C15 provide background context about ChIP-seq as an established method. These are well-supported by general knowledge and citations. They establish the importance of the comparative analysis with ChEC-seq2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C40",
+      "C46",
+      "C47",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Background on transcription mechanism: enhancer-dependent genes involve ssTF recruitment of coactivators and Mediator, PIC assembly, TFIIH-mediated initiation with Ser5 phosphorylation, and elongation with Ser2 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13, C40, C46-C47, C53-C55 provide established background on transcription mechanisms, all supported by citations to published literature. These claims establish the conceptual framework for interpreting the experimental results. The note that S. cerevisiae lacks promoter-proximal pausing (C46) is important for the modeling approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Single-molecule and biochemical studies reveal RNAPII dynamics including promoter dwell times (~10 s), elongation rates (1000-3000 bp/min), termination pauses (50-70 s), and UAS-associated RNAPII recruitment that has not been observed by ChIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 cite published single-molecule and biochemical studies providing kinetic parameters used in the modeling. Claim C23 notes the absence of UAS-associated RNAPII in ChIP-seq data, which is a key motivation for the study. These claims establish the disconnect between biochemical/single-molecule observations and ChIP-seq data that this study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Background on NPC-chromatin interactions: hundreds of yeast genes associate with the NPC in an ssTF-dependent manner, and disrupting this interaction causes quantitative transcriptional defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C125-C128 provide background on NPC-chromatin interactions from published literature, establishing the context for the gcn4-pd experiments. These claims are well-supported by multiple citations and establish that NPC interactions affect transcription, though the mechanism was unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C33",
+      "C130"
+    ],
+    "result": "ChEC-seq2 captures important regulatory events in transcription that are missed by ChIP-seq, enabling development of a comprehensive kinetic model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C130 are summary conclusions drawn from the entire body of work. They are well-supported by the experimental data showing complementary patterns between methods, the modeling showing ChEC-seq2 patterns match expected kinetics, and the successful application to understanding genetic perturbations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Mintbodies (single-chain antibodies) specific to Ser2p and Ser5p RNAPII CTD have been used in mammalian cells to localize phosphorylated RNAPII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 cites published work on Mintbodies in mammalian cells, providing the basis for adapting this approach to ChEC-seq2 in yeast. This establishes precedent for the specificity of these reagents.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Published observations show that only a small fraction of RNAPII molecules at promoters initiate transcription and that conditional inactivation of PIC components doesn't preserve stable intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C136 cite published literature supporting the model's conclusion about PIC instability. These provide independent validation of the modeling conclusions from different experimental approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "ChEC-seq with Rif1 and Sfp1 reveals biologically sensible binding sites not evident from ChIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C113 cites published work showing other examples where ChEC detects sites missed by ChIP. This provides additional support that the RNAPII differences are not unique and that ChEC may generally be more sensitive for certain types of interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "ChEC-seq2 detects UAS-associated RNAPII observed in single-molecule biochemical experiments that has not been observed by ChIP-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 connects the ChEC-seq2 results to published biochemical observations, providing independent validation. The detection of UAS-associated RNAPII by ChEC-seq2 bridges the gap between biochemical and genomic observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Over the repressed GAL1-10 locus, both ChIP-seq and ChEC-seq2 show only background RNAPII enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 provides an important negative control showing that both methods show low signal at repressed genes (Figure 2A). This validates that the ChEC-seq2 enrichment at active genes reflects specific RNAPII binding rather than non-specific cleavage.",
+    "result_type": "MINOR"
+  }
+]

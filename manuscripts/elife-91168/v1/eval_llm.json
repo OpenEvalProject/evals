@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SARS-CoV-2 Mpro cleaves both recombinant and endogenous full-length TRMT1 in vitro. Recombinant TRMT1 incubated with WT Mpro shows >90% reduction in full-length protein after 2 hours with appearance of cleavage products at expected molecular weights (~61 kDa methyltransferase domain and ~14 kDa zinc finger domain). Endogenous TRMT1 from HEK293T cell lysate is similarly cleaved by WT Mpro in a time-dependent manner, though cleavage products are rapidly degraded in cell lysate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C39 provide converging experimental evidence from western blots using two different TRMT1 antibodies showing cleavage of both recombinant and endogenous TRMT1 by WT Mpro but not by catalytically inactive C145A Mpro. The appearance of cleavage products at predicted molecular weights (C32-C33) and their rapid degradation in cell lysate (C37-C38) are well-documented in Figure 2A-B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C49",
+      "C50"
+    ],
+    "result": "Mpro-mediated cleavage of TRMT1 results in complete loss of tRNA methyltransferase activity and reduced tRNA binding affinity. TRMT1 cleaved by WT Mpro exhibits total loss of measurable m2,2G modification activity and approximately 6-fold reduction in tRNA binding affinity compared to uncleaved TRMT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 and C49-C50 are supported by direct experimental measurements shown in Figure 2C (methyltransferase activity assays with 14C-SAM) and Figure 2D (EMSA binding assays). The controls using Mpro C145A demonstrate that cleavage, not just Mpro presence, is responsible for loss of function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Cleaved TRMT1 forms oligomeric complexes with altered migration properties. EMSA experiments show that cleaved TRMT1-tRNA complexes migrate at significantly higher apparent molecular weights compared to uncleaved complexes, suggesting oligomer formation, though these complexes cannot efficiently methylate bound tRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 are supported by EMSA data in Figure 2\u2014figure supplement 1 showing altered migration patterns. The inference about oligomer formation (C45) is reasonable based on the migration data, and the lack of methyltransferase activity (C46) is consistent with data from C40.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Crystal structure of Mpro C145A in complex with TRMT1 peptide (526-536) reveals molecular details of substrate recognition. The 1.9 \u00c5 resolution structure shows TRMT1 Gln530 occupying the S1 pocket with the Gln530-Ala531 bond positioned for cleavage adjacent to the His41/Cys145 catalytic dyad. Multiple hydrogen bonding interactions mediate peptide binding, including specific recognition of P1 Gln530 by Mpro Phe140 and His163.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 are well-supported by crystallographic data shown in Figure 3 and Figure 3\u2014figure supplements. The structure was solved at 1.9 \u00c5 resolution with clear electron density for the bound peptide. All specific residue interactions and distances are documented in the structural figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C115",
+      "C116"
+    ],
+    "result": "TRMT1 adopts a distinct 'P3'-in' binding conformation in the Mpro active site. Structural comparison reveals that while N-terminal residues (P4\u2192P1') have nearly identical conformations across substrates, C-terminal residues diverge into two binding modes distinguished by P2' \u03c8 dihedral angle. TRMT1 and nsp6/7 adopt a P3'-in conformation (P2' \u03c8\u2264116\u00b0) where the P3' Phe sidechain displaces Mpro Met49 to occupy the S3' pocket, unlike most viral substrates which adopt a P3'-out conformation (P2' \u03c8\u2265157\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C115-C116 are supported by structural alignments shown in Figure 4. The classification of binding modes based on P2' \u03c8 dihedral angles is quantitative and well-documented. The P3'-in conformation for TRMT1 is clearly demonstrated in Figure 4D with supporting structural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "TRMT1 peptide is cleaved by Mpro with kinetics comparable to viral nsp8/9 substrate. Kinetic analysis shows TRMT1 cleavage has ~200-fold lower kcat, 4-fold lower KM, and 50-fold lower catalytic efficiency compared to nsp4/5, but kinetic parameters (kcat, KM, kcat/KM) are all within ~3-fold of nsp8/9 cleavage, demonstrating TRMT1 is a viable Mpro substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by fluorogenic peptide cleavage assays shown in Figure 5A-B with triplicate measurements. The kinetic parameters are quantitatively determined and allow direct comparison between substrates. The conclusion that TRMT1 is a viable substrate (C72) is well-justified by the similarity to nsp8/9 kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Individual Mpro active site residues have minimal impact on substrate discrimination. Structural comparison shows Mpro Met49, Asn142, and Gln189 are repositioned in TRMT1-bound vs nsp4/5-bound structures, but mutagenesis of these residues (M49A, N142A, Q189A) shows no substantial changes in cleavage kinetics for either substrate, suggesting these residues do not individually determine differential cleavage rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by structural data (Figure 5C) and kinetic measurements of Mpro mutants (Figure 5D). The lack of kinetic changes upon mutation is surprising but well-documented experimentally. The inference that these residues don't individually determine cleavage rates (C76) is justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C21"
+    ],
+    "result": "The TRMT1 Mpro cleavage site is highly conserved in mammals except Muroidea. Evolutionary analysis shows the TRMT1 (526-536) sequence is highly conserved in primates and most mammals including bats, but Muroidea (mouse, rat, hamster) have a Q530K substitution. Experimental testing confirms TRMT1 Q530K is completely resistant to Mpro cleavage in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80, C82, and C21 are supported by evolutionary sequence analysis (Figure 6A-C) and experimental validation (Figure 6D). The Q530K substitution at the critical P1 position is well-documented across Muroidea species, and western blot data clearly shows resistance to cleavage for the Q530K mutant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Molecular dynamics simulations confirm distinct binding conformations for TRMT1 vs nsp4/5. MD simulations show TRMT1 primarily adopts the P3'-in conformation (~65% probability) with Phe533 occupying the S3' pocket, while nsp4/5 primarily adopts the P3'-out conformation (~70% probability). These dominant binding modes are consistent with crystal structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by 100 ns MD simulation data shown in Figure 7A. The quantitative probabilities for P3'-in vs P3'-out conformations are calculated from simulation trajectories. The consistency between MD simulations and crystal structures strengthens confidence in both approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C125"
+    ],
+    "result": "Kinetic discrimination likely occurs after substrate binding and Michaelis complex formation. Despite different binding conformations, TRMT1 and nsp4/5 have similar geometries at the scissile bond. MD simulations show only ~9% difference in optimal nucleophilic attack angle probability, insufficient to explain the ~200-fold difference in kcat. This suggests kinetic discrimination occurs during later steps of the catalytic mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 and C125 are supported by integrated analysis of structural data, MD simulations (Figure 7B), and kinetic measurements. The logic is sound: similar binding geometries and small differences in attack angle cannot explain large kinetic differences, pointing to post-binding steps. This conclusion is consistent with similar findings for serine proteases (cited Radisky, 2002).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Human TRMT1 is cleaved during SARS-CoV-2 infection leading to loss of m2,2G modification in infected cells. This finding is reported by Zhang et al., 2024 concurrent with the current work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by citation to Zhang et al., 2024, which provides independent validation of TRMT1 cleavage during actual viral infection. This corroborates the in vitro findings from the current manuscript and demonstrates biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C18",
+      "C27",
+      "C28",
+      "C104",
+      "C110",
+      "C111"
+    ],
+    "result": "Mpro-mediated TRMT1 cleavage may impact host translation and COVID-19 pathogenesis. Based on known TRMT1 functions in protein synthesis and redox homeostasis, the authors speculate that TRMT1 cleavage during infection could contribute to downregulation of host translation and oxidative stress-related pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18, C27-C28, C104, C110-C111 are speculative and marked as such in the evidence. While the speculation is reasonable given TRMT1's known functions (C13-C15, C105-C109), direct evidence linking TRMT1 cleavage to translation disruption or pathogenesis during infection is not provided. The authors appropriately note that 'future experiments in different virally infected cell types will be required' to establish these connections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C129",
+      "C131"
+    ],
+    "result": "The S3' pocket could be exploited for therapeutic design. The authors suggest that the flexible S3' pocket revealed by the TRMT1 structure could be utilized in future Mpro inhibitor design, as most current inhibitors target only the S1 and S2 sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C119 and C129-C131 are speculative proposals for future drug design based on structural observations. While the structural characterization of the S3' pocket is solid (C55-C56, C115), the therapeutic utility is hypothetical. This represents a reasonable suggestion for future work but is not experimentally validated in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Substrate conformational preferences are not clearly linked to simple sequence features, and individual residue mutations are often insufficient to change binding or cleavage kinetics. This conclusion is drawn from integrated structural, kinetic, and computational analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 represent high-level conclusions synthesized from multiple lines of evidence including mutagenesis (C75-C76, C121), structural comparisons (C63-C66), and MD simulations (C84-C87). The negative results from mutagenesis and the complexity of substrate recognition patterns support these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The TRMT1 cleavage site residues may make important contacts with the methyltransferase domain. AlphaFold2 predictions suggest that residues in the TRMT1 (526-536) linker region contact the methyltransferase domain surface, which may be important for enzyme stability, domain orientation, or function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C112-C113 are supported by AlphaFold2 structural predictions shown in Figure 1\u2014figure supplement 1. However, C114 is speculative about the functional importance of these contacts. The predictions have not been experimentally validated, and AlphaFold2 confidence for linker regions may be lower than for structured domains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "The Q530K mutation would likely prevent TRMT1 cleavage during Muroidea infection. This inference is based on in vitro resistance of Q530K mutant to Mpro cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is a reasonable inference based on the complete resistance of Q530K to cleavage in vitro (C80, C82) and the fact that Q530 is the critical P1 residue. While not directly tested in infected Muroidea, the inference is well-justified and consistent with cell-based data from Lu and Zhou, 2023 (C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "The TRMT1 A531S mutation has no effect on cleavage kinetics and is predicted to maintain P3'-in binding conformation. This suggests the P1' residue identity does not determine binding mode or cleavage efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122 are supported by kinetic data (Figure 5\u2014figure supplement 1) and MD simulations. The lack of effect from changing Ala to Ser at P1' (the residue found in most viral substrates) is surprising but well-documented, supporting the conclusion that P1' identity is not a major determinant of substrate recognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "The scissile amide bond is positioned similarly across different substrates, and deviations in bond planarity do not correlate with cleavage rates. Structural comparison shows nearly identical positioning of the P1-P1' bond in nsp4/5, nsp8/9, and TRMT1-bound structures, and dihedral angle deviations from 180\u00b0 are inconsistent with observed cleavage rate trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C124 are supported by structural analysis shown in Figure 7\u2014figure supplement 1A-B. These negative results are important for ruling out simple geometric explanations for differential cleavage rates and support the conclusion that kinetic discrimination occurs at later catalytic steps.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1582 @@
+{
+  "submission": {
+    "id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:13:38.323248Z",
+    "updated_at": "2025-11-21T22:13:38.323248Z"
+  },
+  "content": [
+    {
+      "id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "content_type": "manuscript",
+      "content_text": "# Coupling of saccade plans to endogenous attention during urgent choices\n\n## Authors\n\n- Allison T Goldstein<sup>1</sup> ([ORCID: 0000-0002-5475-5965](https://orcid.org/0000-0002-5475-5965))\n- Terrence R Stanford<sup>1</sup> ([ORCID: 0000-0003-0759-5599](https://orcid.org/0000-0003-0759-5599))\n- Emilio Salinas<sup>1</sup> ([ORCID: 0000-0001-7411-5693](https://orcid.org/0000-0001-7411-5693)) \u2020\n\n### Affiliations\n\n1. Department of Neurobiology and Anatomy, Wake Forest School of Medicine Winston-Salem United States ([ROR:0207ad724](https://ror.org/0207ad724))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe neural mechanisms that willfully direct attention to specific locations in space are closely related to those for generating targeting eye movements (saccades). However, the degree to which the voluntary deployment of attention to a location necessarily activates a corresponding saccade plan remains unclear. One problem is that attention and saccades are both automatically driven by salient sensory events; another is that the underlying processes unfold within tens of milliseconds only. Here, we use an urgent task design to resolve the evolution of a visuomotor choice on a moment-by-moment basis while independently controlling the endogenous (goal-driven) and exogenous (salience-driven) contributions to performance. Human participants saw a peripheral cue and, depending on its color, either looked at it (prosaccade) or looked at a diametrically opposite, uninformative non-cue (antisaccade). By varying the luminance of the stimuli, the exogenous contributions could be cleanly dissociated from the endogenous process guiding the choice over time. According to the measured time courses, generating a correct antisaccade requires about 30 ms more processing time than generating a correct prosaccade based on the same perceptual signal. The results indicate that saccade plans elaborated during fixation are biased toward the location where attention is endogenously deployed, but the coupling is weak and can be willfully overridden very rapidly.\n\n## Introduction\n\nPrimates make about four to five quick eye movements (saccades) every second. Before each movement, the oculomotor system selects a new target to look at depending on the match between the content of the current visual scene and the subject\u2019s internal state and current goals, i.e., what, if anything, the subject is looking for (Itti and Koch, 2001; Theeuwes, 2010; Wolfe and Horowitz, 2017). The rich dynamic between internal drives and what is out there in the world makes eye movements a good model system for understanding behavior at large.\n\nSaccades are strongly coupled to visuospatial attention, which comprises a collection of mechanisms that regulate perception and thereby mediate the target selection process (Carrasco, 2011; Maunsell, 2015; Moore and Zirnsak, 2017). In general, the role of attention is to enhance stimuli that are potentially relevant and filter out those that are not. Neurons implicated in attention control and saccade generation are typically found within the same circuits. And importantly, the functional coupling between saccades and attention is bidirectional.\n\nOn one hand, the planning of a saccade automatically commits attentional resources to the saccade endpoint such that perceptual processing is enhanced at that location. This phenomenon, known as presaccadic attention, is firmly supported by both psychophysical (Hoffman and Subramaniam, 1995; Kowler et al., 1995; Deubel and Schneider, 1996; Zhao et al., 2012) and neurophysiological experiments (Moore and Fallah, 2001; Moore and Fallah, 2004; Cavanaugh and Wurtz, 2004; Armstrong and Moore, 2007; Steinmetz and Moore, 2014). Making a saccade implies attentional deployment.\n\nThe relationship in the opposite direction is less clear. With gaze held fixed, attention can be deployed willfully and covertly to a location in space, such that perceptual sensitivity is (typically) enhanced at that location (Carrasco, 2011; Carrasco and Barbot, 2014). This is referred to as endogenous attention, and there is evidence that its deployment impacts subsequent eye movements in two ways: it increases the probability that a saccade will be directed to the attended point (Kustov and Robinson, 1996; Belopolsky and Theeuwes, 2009; Belopolsky and Theeuwes, 2012), and if fixation is maintained, it alters the temporal and spatial characteristics of microsaccades (Hafed and Clark, 2002; Engbert and Kliegl, 2003). However, this link between endogenous attention and eye movements is not obligatory; the attentional locus and saccade endpoint can be dissociated (Katnani and Gandhi, 2013; Steinmetz and Moore, 2014; Klapetek et al., 2016), and microsaccades are only weak, unreliable markers of attentional allocation (Yu et al., 2022; Willett and Mayo, 2023). Furthermore, the effects of directing covert attention or a saccade to a given location can be quite distinct in terms of the activated neuronal populations (Ignashchenkova et al., 2004; Thompson et al., 2005; Armstrong et al., 2009), and may have slightly different perceptual consequences (for instance, on orientation or spatial frequency sensitivity; Li et al., 2021). Thus, the degree to which the early allocation of attention dictates subsequent saccade planning is still uncertain. This is the subject of the current study.\n\nThere are three factors that make it difficult to mechanistically characterize how the willful allocation of spatial attention typically influences eye movements: (1) to reveal the effects of endogenous attention, most laboratory experiments require prolonged fixation, a condition that is somewhat artificial; (2) both attention and eye movements are drawn to salient events, so their underlying neural circuits both react automatically to some degree whenever a stimulus is presented or changed; and (3) the dynamic processes that underlie the allocation of attention and planning of saccades evolve very rapidly, with timescales on the order of a few tens of milliseconds. Thus, sustained fixation is regularly used to dissociate the endogenous deployment of attention from its overt counterpart (an eye movement) and from exogenous effects, which are transient. Normally, though, these three factors interact continuously, rapidly, and not necessarily in a fixed sequence.\n\nTo circumvent these hurdles, and be able to study how both forms of attention influence eye movements under less constrained conditions, we consider a task design in which the participant must make an eye movement either toward a peripheral cue (prosaccade) or in the opposite direction (antisaccade), toward an uninformative non-cue stimulus, depending on the color of the cue. This task has three main features. First, it is urgent. This means that the fixation requirement is brief and, because there is a reaction time (RT) deadline, motor plans must be initiated early, before the cue information is revealed. As detailed below, the resulting visuomotor dynamics are such that performance can be tracked with high precision as a function of time. Second, the luminances of the cue and non-cue are manipulated so that saccades are biased toward one stimulus, the other, or neither. This way, the contributon of exogenous attention can be precisely characterized and accounted for. And third, endogenous attention is deployed to a fixed (cue) location at the start of each trial. This may either shorten or lengthen the amount of time needed to make a successful choice, depending on the trial type (pro or anti) and on the coupling between endogenous attention and motor plans. Thus, the coupling strength can be inferred from the observed pattern of results.\n\nFor goal-directed movements, we report a consistent time delay of roughly 30 ms between prosaccade and antisaccade processing. This and other results indicate that, under relaxed fixation requirements, saccade plans are indeed coupled to the locus of endogenous attention \u2013 but can be voluntarily shifted quite rapidly.\n\n## Results\n\n### A task design for revealing how endogenous attention modulates saccade plans\n\nIn earlier studies (Salinas et al., 2019; Goldstein et al., 2022), we used time pressure to characterize the contributions of exogenous and endogenous mechanisms to elementary visuomotor choices involving a single stimulus. By analyzing performance in an urgent prosaccade task (look toward a cue) and an urgent antisaccade task (look away from a cue), we found that exogenous and endogenous signals acted at different times and independently of each other. Specifically, the exogenous response to the cue onset manifested as \u2018captured\u2019 saccades, eye movements toward the cue that were, by all accounts, involuntary: they occurred early (\u223c100 ms after cue onset), were strongly stereotyped across individuals, highly sensitive to luminance, and largely impervious to task rules or top-down control. In contrast, the endogenous response manifested as a sustained rise toward high-performance accuracy that was consistent with a deliberate process: the rise occured slightly later (\u223c150 ms after cue onset), it was more variable across individuals, and was aligned with the task-defined goal.\n\nIn an effort to further isolate the endogenous component of spatial attention and characterize its impact on saccade planning, we developed a new task, the endogenously driven pro/antisaccade (EPA) task. This is, again, a two-alternative, urgent paradigm in which the participant must either look at a cue stimulus or look away from it, but there are two new elements. First, endogenous attention is deployed to a fixed location, so its influence on competing saccade plans (aligned or misaligned with that location) can be assessed. And second, the exogenous contribution is either unbiased or biased in favor of one or another choice, so that its effect can be cleanly identified. It is worth noting that in standard, non-urgent tasks, the cue is presented either before or simultaneously with the go signal, so the short-lived exogenous response is removed essentially by waiting for it to dissipate before the voluntary choice is made. However, our goal was to study the real-time interaction between attention and saccade planning over its natural timescale, which is on the order of a few tens of milliseconds, and the urgent nature of the paradigm is critical for this (Stanford and Salinas, 2021).\n\nIn the EPA task (Figure 1), the participant starts by fixating on a central spot (Fixation), and the offset of this spot is the go signal (Go) indicating that a saccade must be made to either the right or the left within 450 ms. At this point, the correct option has not been revealed yet, but if the saccade is to be made on time, the participant must attempt to respond nonetheless. After a variable, unpredictable gap interval (Gap), both a cue and a non-cue appear simultaneously (Cue on). The participant is instructed to look at the cue if the cue is green (pro trials; Figure 1a), and to look at the non-cue if the cue is magenta (anti trials; Figure 1b). The cue color is selected randomly on each trial, but the cue and non-cue locations are fixed for each block of trials.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig1-v1.jpg)\n\n**Figure 1.:** (a) A prosaccade trial begins with a fixation period (Fixation, 500, 600, or 700 ms). The disappearance of the fixation point (Go) instructs the participant to look to the left or to the right within a reaction time (RT) window of 425\u2013450 ms. After a variable time gap (Gap, 0\u2013350 ms), a colored cue and a neutral non-cue appear simultaneously (Cue on) at locations that remain fixed for a block of trials. Thus, the participant always knows the cue location. The green color instructs the participant to look at the cue (Saccade). (b) An antisaccade trial proceeds in the same way as a prosaccade trial except that the magenta color instructs the participant to look at the non-cue. Pro- and antisaccade trials are randomly interleaved. In both, performance is dictated by the raw processing time (rPT), which is the amount of time during which the stimuli can be viewed and assessed before a response is initiated. The luminances of the stimuli can be set to balance the exogenous responses to the cue and non-cue (Experiments 1 and 2), or to create a bias toward either (Experiments 3 and 4).\n\nThis task has three critical aspects. First, the urgency requirement (RT\u2264450 ms). Because of time pressure, the participants\u2019 responses range from guesses (uninformed saccades initiated before or soon after cue onset) at one extreme to fully informed choices (saccades initiated well after cue onset) at the other. The quantity that determines the degree to which a specific choice is informed, or the probability that it is informed, is the raw processing time (rPT), which is the time interval between the onset of the cue and the onset of the saccade (Figure 1, rPT). The rPT corresponds to the cue viewing time in each trial. Because this variable determines the probability of success, the main behavioral metric in the task is the \u2018tachometric curve\u2019, the curve that results when the fraction of correct choices is plotted as a function of rPT (Figure 2). As for other urgent tasks (Salinas et al., 2019; Poth, 2021; Stanford and Salinas, 2021; Goldstein et al., 2022; Oor et al., 2023), the tachometric curve depicts the evolution of the subject\u2019s choice on a moment-by-moment basis, and the details of this evolution can be uniquely revealing of the underlying attentional dynamics. For now, it suffices to note that, for all such data (Figure 2a\u2013d), performance typically goes from mostly guesses (\u223c50% correct) at short rPTs (\u227275 ms) to mostly informed choices (\u223c90% correct) at long rPTs (\u2273250 ms). Throughout the rest of the Results we will analyze in detail how this transition between chance and asymptotic performance occurs in the EPA task under different conditions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig2-v1.jpg)\n\n**Figure 2.:** Each panel plots two tachometric curves. Each point on a curve indicates the fraction of correct choices for all the trials falling within a given processing time (rPT) bin (bin width=31 ms). (a) Performance in pro trials in Experiments 1 (high luminance cue, high luminance non-cue) and 2 (low luminance cue, low luminance non-cue). (b) As in a, but for anti trials. (c) Performance in pro trials in Experiments 3 (high luminance cue, low luminance non-cue) and 4 (low luminance cue, high luminance non-cue). (d) As in c, but for anti trials. Luminance combinations for cue and non-cue are indicated for each curve. In all panels, data are pooled across participants that met a performance criterion ($n=11$; Methods). Error bands indicate 95% confidence intervals (CIs) across trials, from binomial statistics.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Easy trials were those in which the cue and non-cue stimuli were revealed before the go signal was given (gap < 0), so participants typically had more time to process the cue information. Bars show mean performance in easy pro (blue) and easy anti trials (red), averaged across experiments, for each participant. Black dots indicate performance in easy trials in each of the four experiments. The performance criterion was met when the fraction correct in easy trials was above 0.7 (dotted line). Participants who met the criterion in both tasks (pro and anti) in all four experiments were considered reliable performers ($n=11$; participants ranked 1\u20138 and 11\u201313). Others ($n=7$) were considered unreliable performers. Participants are sorted by their overall antisaccade performance.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** The plots in this figure are analogous to those in Figure 2, but present data from the participants that did not meet the performance criterion ($n=7$). (a) Tachometric curves for pro trials in Experiments 1 (high luminance cue, high luminance non-cue) and 2 (low luminance cue, low luminance non-cue). (b) As in a, but for anti trials. (c) Tachometric curves for pro trials in Experiments 3 (high luminance cue, low luminance non-cue) and 4 (low luminance cue, high luminance, non-cue). (d) As in c, but for anti trials. Luminance combinations for cue and non-cue are indicated for each curve. Error bands indicate 95% confidence intervals (CIs) across trials. During guesses (raw processing time [rPT]\u226475 ms), the saccades of unreliable performers are strongly biased toward the cue, but additional exogenous capture is clearly visible in Experiments 3 and 4.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Each panel compares the tachometric curve for pro trials (blue) with that from anti trials (red) based on data from a given experiment pooled across all the participants. (a\u2013d) Tachometric curves from Experiments 1\u20134, as labeled. Error bands indicate 95% confidence intervals (CIs) across trials. In all cases, the endogenously driven rise in performance (for raw processing time [rPT] \u2273 135 ms) occurs earlier during pro trials than during anti trials.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Each panel shows two tachometric curves, one for prosaccades (blue) and another for antisaccades (red). Columns 1\u20134 correspond to Experiments 1\u20134, as indicated. Shaded error bands indicate 68% confidence intervals (CIs). (a) Data from a participant demonstrating a slight bias toward the cue (columns 3, 4) and minimal exogenous capture. (b) Data from a participant demonstrating a moderate, consistent bias toward the non-cue and a moderate level of exogenous capture. (c) Data from a participant demonstrating a sometimes strong bias toward the cue (column 2) and strong exogenous capture.\n\nThe second important aspect of the EPA task design is that, at the beginning of each trial, endogenous attention is always directed toward the cue location. This is because the cue remains on the same side for an entire block of trials, switching only across blocks (150 trials per block), so the participant always knows where the color cue will appear. The non-cue never changes, so it is not informative. This way, to make an informed choice, the participant must attend to the cue, determine its color, and make a saccade according to the task rule (look to the green cue; look away from the magenta cue). Notably, the urgent nature of the task means that, by the time the cue is revealed, saccade plans must already be ongoing (Stanford et al., 2010; Salinas et al., 2010; Costello et al., 2013). This creates ideal conditions for studying how endogenous attention and motor plans interact to yield an overt saccadic choice.\n\nFinally, the third task element that is critical is the non-cue. Although the non-cue stimulus is never informative of the correct choice, it serves a purpose: to control whether attention is exogenously drawn to one side, the other, or neither. That is, by adjusting the relative luminance of the cue and non-cue, it is possible to bias the choice in either direction or, alternatively, to balance the opposing exogenous influences so that the net bias is approximately zero. This study comprises four experiments, each one corresponding to a different luminance combination for the cue and non-cue stimuli (Methods; Table 1). In Experiment 1 the cue and non-cue were of equally high luminance, whereas in Experiment 2 they were of equally low luminance. In both cases the exogenous influences were meant to offset each other. In Experiment 3 a high luminance cue was paired with a low luminance non-cue, whereas in Experiment 4 the values were reversed, so the non-cue was brighter than the cue. In these cases the exogenous influence was meant to create a lateral bias favoring either the cue (Experiment 3) or the non-cue (Experiment 4) side.\n\n**Table 1.**\n Stimulus parameters.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Stimulus</th>\n      <th>RGB vector</th>\n      <th>Luminance (cd/m2)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>High luminance green (cue)</td>\n      <td>[0 0.88 0]</td>\n      <td>48</td>\n    </tr>\n    <tr>\n      <td>Low luminance green (cue)</td>\n      <td>[0 0.1067 0]</td>\n      <td>0.25</td>\n    </tr>\n    <tr>\n      <td>High luminance magenta (cue)</td>\n      <td>[0.935 0.255 0.935]</td>\n      <td>48</td>\n    </tr>\n    <tr>\n      <td>Low luminance magenta (cue)</td>\n      <td>[0.1247 0.034 0.1247]</td>\n      <td>0.25</td>\n    </tr>\n    <tr>\n      <td>High luminance gray (non-cue)</td>\n      <td>[0.61 0.61 0.61]</td>\n      <td>48</td>\n    </tr>\n    <tr>\n      <td>Low luminance gray (non-cue)</td>\n      <td>[0.0813 0.0813 0.0813]</td>\n      <td>0.25</td>\n    </tr>\n  </tbody>\n</table>\n\nIn the following sections, we first examine the effect of exogenous attention on performance. Then, having understood the role of this element, we continue onto the main subject of the study, which is how the early deployment of endogenous attention during fixation influences the subsequent saccadic choice.\n\n### Harnessing exogenous capture\n\nEighteen human participants (11 female, 7 male) were recruited and performed all four experiments (Methods). Thus, each participant generated data and a corresponding tachometric curve from two trial types (pro or anti) times four experiments for a total of eight experimental conditions. For some analyses, participants were divided into two groups, reliable performers ($n=11$) and unreliable performers ($n=7$). A participant was included in the reliable-performer group if he or she met a performance criterion in all eight conditions; otherwise they were included in the unreliable-performer group (Methods; Figure 2\u2014figure supplement 1).\n\nFor each of the eight experimental conditions, an aggregate tachometric curve was generated by pooling the data from the reliable performers (Figure 2). In this initial comparison, the resulting eight tachometric curves are shown in pairs sorted by task, prosaccade (blue curves) or antisaccade (red curves). Each pair of curves thus represents the fraction of correct saccades made after a given amount of cue viewing time to each target stimulus, the cue (in pro trials) or the non-cue (in anti trials). As such, the effects of stimulus luminance can be easily visualized.\n\nAs intended, exogenous capture was minimized when the luminances of the cue and the non-cue were the same (Figure 2a and b). In this case, for both pro (panel a) and anti trials (panel b), the fraction correct hovers near 0.5 for processing times around 100 ms, which is when the exogenous effect would be expected to be strongest (Salinas et al., 2019; Goldstein et al., 2022; Oor et al., 2023). For each task, the subsequent rise toward asymptotic performance at longer rPTs is largely the same for stimuli of low (light-colored traces) and high luminance (dark-colored traces). This confirms that, for the most part, exogenous biases due to simultaneous onsets cancel out when they have similar strengths but point in opposite directions. The gradual, approximately monotonic rise in accuracy that results in this case is interpreted as the behavioral manifestation of the endogenously guided choice process.\n\nAlso as intended, exogenous capture was reinstated when the cue and the non-cue differed in luminance (Figure 2c and d), with the exogenous signal always biasing the saccades toward the high-luminance stimulus. In pro trials (Figure 2c), the salient cue (dark curve) produced a sharp, transient increase in the probability of making a correct prosaccade, whereas the salient non-cue (light curve) produced a sharp, transient decrease. In anti trials (Figure 2d), the effect was nearly identical but opposite in sign: the salient cue (dark curve) produced a sharp, transient decrease in the probability of making a correct antisaccade, whereas the salient non-cue (light curve) produced a sharp, transient increase. All of these capture effects were short-lived, peaking at rPT\u2248100 ms and mostly disappearing for rPT\u2273150 ms; thereafter, the endogenously driven rise toward asymptotic performance was, once again, basically the same across luminance conditions.\n\nThese results confirm that exogenous and endogenous influences are dissociable across processing time, and that their effects on visuomotor performance are largely independent of each other.\n\n### Consistency of exogenous capture across participants and conditions\n\nAlthough the early exogenous response is stimulus-driven, it remains uninformed because it does not indicate what the correct choice is; it is simply a bias toward high salience. To verify this characterization of exogenous attention in the EPA task, we performed subsequent analyses on the data from all individual participants in Experiments 3 and 4.\n\nFirst, we defined an rPT window where the exogenous response typically occurred (Methods). For this, we replotted the aggregate tachometric curves from Experiments 3 (Figure 3a) and 4 (Figure 3c) but pairing the curves obtained from pro (blue traces) and anti trials (red traces) from the same experiment. Note that the early deviations from chance that characterize involuntary capture go in opposite directions but otherwise follow similar trajectories up to 25 ms or so past the point of strongest capture. This indicates that the exogenous signal is invariant to task instructions, in agreement with prior results (Goldstein et al., 2022). The common rPT interval bracketed by the crossover points of the mirrored trajectories was defined as the exogenous response window (rPT in 83\u2013124 ms; Figure 3a and c, shaded areas).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig3-v1.jpg)\n\n**Figure 3.:** (a) Tachometric curves for pro (blue) and anti trials (red) in Experiment 3 (high luminance cue, low luminance non-cue). Data are from the reliable performers ($n=11$). Shaded regions show the fixed raw processing time (rPT) window used for quantifying exogenous capture (83\u2013124 ms). (b) Bar plots show fraction correct (y axis) in the exogenous capture window marked in a for all participants (x axis; $n=18$). Pro- (blue) and antisaccade results (red) are from Experiment 3, with participants sorted by their fraction correct in pro trials. Color of axis labels indicates reliable (black) and unreliable (gray) participants. Black lines indicate 95% confidence intervals (CIs). (c) As in a, but for the data from Experiment 4 (low luminance cue, high luminance non-cue). (d) As in b, but for the data from Experiment 4. Participants are sorted by their fraction correct in anti trials. Note that capture is generally symmetric between pro and anti trials.\n\nThen, for each participant, we measured the fraction correct during the exogenous response window, sorting the trials separately for Experiments 3 (Figure 3b) and 4 (Figure 3d), and for pro (blue bars) and anti trials (red bars). With the resulting data arranged according to the magnitude of the effect, it is clear that the degree of exogenous capture varied quite dramatically across participants, from 0% to 100%. However, the magnitude of the capture as an absolute deviation from chance was statistically the same for pro and anti trials in both experiments. This was true when considering individual participants (for both Experiments 3 and 4, $p=0.8$, $n=18$, permutation test) or when pro and anti trials were pooled across participants (Experiment 3: $p=0.5$, $n=1564$ pro trials, $n=1553$ anti trials, binomial test; Experiment 4: $p=0.2$, $n=1542$ pro trials, $n=1489$ anti trials, binomial test). This result confirms that the early exogenous signal always tracks the higher luminance stimulus, and that the evoked exogenous response is the same regardless of the task rule.\n\n### Possible linkage between endogenous attention and subsequent saccade planning\n\nThe above results circumscribe when and how exogenous attention biases saccadic choices in the EPA task. We now turn to the question of how the early deployment of endogenous attention might influence subsequent saccade planning, and how their interaction (or lack thereof) would manifest during task performance.\n\nConsider two extreme possibilities. In the first scenario, saccade plans are entirely decoupled from endogenous attention. Thus, at the start of each trial, attention is endogenously deployed to the cue location, but this does not bias the ensuing saccade plans. Right after the go signal, uninformed plans can be as easily initiated to the cue as to the non-cue; and later on, after the cue color has been resolved, they can be as easily redirected (by perceptual information) toward the cue or toward the non-cue. These decoupled dynamics give rise to two specific predictions. (1) On average, making an informed saccade toward the cue (in pro trials) should require the same amount of processing time as making an informed saccade toward the non-cue (in anti trials) \u2013 because once the cue color has been resolved, the resulting perceptual signal should be able to guide the developing motor selection process with equal effectiveness toward either stimulus. And (2), guesses toward the cue should, on average, be just as likely as guesses toward the non-cue. That is, internally generated saccade plans that advance rapidly before the cue color is resolved should not be systematically biased by endogenous attention being focused on the cue.\n\nIn the second scenario, saccade plans are strongly coupled to endogenous attention. Now, deploying endogenous attention implies a high degree of concomitant motor preparation. In this case, the initial uninformed plans generated right after the go signal are heavily biased toward the cue because attention is pointing there already; and the same thing is true later on: after the cue color has been resolved, plans are more easily redirected toward the cue than toward the non-cue. The specific predictions under strong-coupling dynamics are straightforward: (1) on average, making a perceptually informed saccade toward the cue (in pro trials) should require less processing time than making a perceptually informed saccade toward the non-cue (in anti trials), and (2) guesses should be predominantly directed toward the stimulus that is attended initially, i.e., the cue.\n\nThese extreme scenarios provide intuitive reference points for interpreting the behavioral data in the next sections, where the predictions are tested.\n\n### The processing-time cost of an antisaccade\n\nIn summary, the intuition outlined in the previous section is that, if the initial deployment of endogenous attention necessarily entails some amount of motor preparation, then we would expect that, in the EPA task, generating an informed antisaccade should systematically require more processing time than generating an informed prosaccade. The question is how much. The difference could conceivably go from 0 ms (no coupling) to 100 ms (strong coupling), which is an estimate of the maximum amount of processing time needed to shift an ongoing motor plan from one location to a diametrically opposite one (Salinas et al., 2019; Goldstein et al., 2022).\n\nTo measure the rPT cost of an antisaccade relative to a prosaccade, we first considered the data from Experiments 1 and 2, in which the exogenous response was more muted. An important preliminary question was whether performance differed significantly between these two experiments. So, for each participant, we computed tachometric curves for pro and anti trials in Experiments 1 and 2, and fitted each curve with a sigmoid function (Methods). From each fitted curve, we determined the rise point, which is the rPT at which the curve reaches the midpoint between its minimum and maximum values; this quantity serves as a benchmark for when the saccadic choice becomes endogenously guided. Then we compared the rise points from Experiment 1 to those from Experiment 2 for pro trials (Figure 4a) and for anti trials (Figure 4b). Determining the rise point for an individual participant in any given experimental condition requires task performance to increase consistently as a function of rPT. Therefore, only participants that exceeded a modulation criterion were included in these comparisons, to ensure that the fits were acceptable and that the empirical curves were not flat (Methods; Figure 4a\u2013c). Consistent with the pooled curves in Figure 2a and b, the rise points were similar across experiments for both prosaccades ($p=0.08$, $n=10$, permutation test) and antisaccades ($p=0.8$, $n=17$, permutation test). Given this, the data from Experiments 1 and 2 were combined.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig4-v1.jpg)\n\n**Figure 4.:** (a) Bars show mean rise point (\u00b11 SE across participants) for pro trials in Experiments 1 and 2. Participants were included if their performance met a minimum modulation criterion in both experiments (Methods). Circles show data for individual qualifying participants ($n=$ 10; $p=$ 0.08 for the difference, from paired permutation test). (b) As in a, but for anti trials and corresponding qualifying participants ($n=17$; $p=0.80$). (c) Bars compare mean rise point (\u00b11 SE across participants) in pro (raw processing time [rPT] = 167 ms) versus anti trials (rPT=202 ms). Data for each participant were pooled across Experiments 1 and 2. Participants were included if their combined performance met a minimum modulation criterion in both pro and anti trials ($n=11$). Asterisk indicates $p=0.008$ for the difference, from paired permutation test. (d) Tachometric curves for prosaccades (blue) and antisaccades (red). Data were pooled across Experiments 1 and 2 and across participants ($n=11$; same group as in panel c). Blue and red lines denote rise points for pro (rPT = 165 ms) and anti trials (rPT = 194 ms). (e) As in d, but for data pooled across Experiments 3 and 4. Blue and red lines denote rise points for pro (rPT = 152 ms) and anti trials (rPT = 187 ms).\n\nNext, new tachometric curves for pro and anti trials were generated using the combined data, corresponding sigmoidal fits and rise points were obtained, and 11 participants were identified that met the modulation criterion in both task variants (a complementary analysis that includes all participants is discussed in a later section). Based on the data from these 11 participants, a comparison between rise points indicated that antisaccades consistently required more processing time than prosaccades to reach a comparable performance criterion (Figure 4c, circles). The sign of the effect was the same for 9 of the 11 qualifying participants ($p=0.033$, binomial test). The average rise point was 167 \u00b1 13 ms (mean \u00b1 1 SE across participants) for prosaccades and 202 \u00b1 8 ms for antisaccades, for a mean difference of 35 ms ($p=0.008$, $n=11$, permutation test; Figure 4c, bars). This is the average cost, in milliseconds of processing time, incurred for voluntarily programming a saccade away from the attended cue rather than toward it.\n\nTo further validate this difference in processing time, trials (again from Experiments 1 and 2) were pooled across the 11 qualifying participants to yield two aggregate tachometric curves, one for prosaccades (Figure 4d, blue trace) and another for antisaccades (Figure 4d, red trace). The resulting curves clearly show an earlier rise in prosaccade performance for informed choices (rPT \u2273 150 ms), which have processing times that exceed the exogenous response window. Via sigmoidal fits, rise points were obtained for each of these curves (Figure 4d, vertical lines). Computed this way, the rise point from pro trials was 165 ms (in [158, 172] ms, 95% CI from bootstrap), whereas for anti trials it was 194 ms (in [191, 196] ms). The difference of 29 ms is comparable to the mean difference of 35 ms obtained from individual rise points.\n\nFinally, we conducted the same analysis based on aggregate data from the qualifying participants, but this time pooling trials from Experiments 3 and 4 (Figure 4e). The idea was that, because the exogenous effects in pro and anti trials were always opposite and of similar magnitude (Figure 3b and d), on average they would cancel out, leaving only the net effect of endogenous guidance at each point in time (or, for short rPTs, any motor biases in the early uninformed choices). Indeed, this procedure yielded aggregate tachometric curves that were qualitatively similar to those obtained from Experiments 1 and 2 (Figure 4e). In this case, the rise point for pro trials was 152 ms (in [146, 157] ms, 95% CI), for anti trials it was 187 ms (in [185, 189] ms), and the difference was 35 ms.\n\nThese analyses were based on the rise points of the fitted sigmoidal functions, but results were very similar when using a fixed performance criterion of 70% correct to define the typical processing time required to make an informed choice (Methods). In that case, the differences in processing time between pro and anti trials were 24 ms for the aggregate curves from Experiments 1 and 2, and 34 ms for the aggregate curves from Experiments 3 and 4. Results were also similar when the data from each experiment were kept separate. Finally, when these analyses were repeated but including the data from all the participants, with no exclusions, the rise points in Experiment 1 could not be reliably determined due to strong motor biases (visible in Figure 2\u2014figure supplement 2a and b), but in all other cases the rise in antisaccade performance lagged that in prosaccade performance in agreement with the above numbers (Figure 2\u2014figure supplement 3). Most notably, the informed antisaccades were consistently delayed even in Experiment 4, in which motor plans were strongly biased toward the non-cue by the early exogenous signal (Figure 3c, Figure 2\u2014figure supplement 3d).\n\nThese results indicate that the rPT cost of an endogenously guided antisaccade relative to an endogenously guided prosaccade is about 25\u201335 ms, and support the hypothesis that saccade plans are, to a degree, obligatorily coupled to endogenous attention.\n\n### Guesses are predominantly biased toward the attended cue\n\nAs outlined earlier, another potential indicator of coupling between endogenous attention and subsequent saccade plans is the fraction of guesses that are directed toward the attended cue versus the unattended non-cue. This is a straightforward measurement: for each participant, we considered all the trials (pro and anti) made at short rPTs (\u226475 ms), before the cue and non-cue stimuli had had any effect on performance (see Figures 2, 3a and c), and calculated the fraction of choices made toward the cue. For each participant, this fraction indicates the preferred guessing side.\n\nThe results show that 15 of the 18 participants guessed predominantly toward the cue rather than toward the non-cue (Figure 5a). This motor bias was highly robust: the mean fraction of choices toward the cue was significantly above 0.5 when the averaging was across participants (Figure 5a; $p=0.00006$, $n=18$, permutation test), across experimental conditions (Figure 5b; $p=0.00003$, $n=$ 72, permutation test), or when the data were pooled across participants and experiments ($n=9015$ trials toward the cue, 7154 toward the non-cue, $p=10^{\u221248}$, binomial test). The data are as expected if saccade plans are partially coupled to the location where attention is endogenously deployed.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig5-v1.jpg)\n\n**Figure 5.:** Uninformed choices made at very short cue viewing times (raw processing time [rPT] \u2264 75 ms) are considered guesses. (a) Overall fraction of guesses made toward the cue (y axis), with participants (x axis) ranked by effect size. Results are for data aggregated across Experiments 1\u20134 and trial types (pro and anti). Color of axis labels indicates reliable (black) and unreliable (gray) participants. Thick and thin lines indicate 68% and 95% binomial confidence intervals (CIs). (b) Overall fraction of guesses made toward the cue in each experiment. Results are for data aggregated across trial types (pro and anti). Participant ranking is the same as above. Bar colors correspond to Experiments 1\u20134, as indicated. Lines correspond to 95% CIs.\n\nHaving observed that guesses were predominantly directed toward the cue and that informed antisaccades generally required more processing time than informed prosaccades, we wondered whether the two effects were related or independent. To quantify this relationship, the processing time cost of an antisaccade was contrasted with the magnitude of the motor bias on an individual subject basis.\n\nFor a given participant, two tachometric curves were computed, one for pro and one for anti trials (Figure 6a and b). Because both the motor biases and the antisaccade costs were generally consistent across experiments, for this analysis the data were pooled across all four experiments. Each tachometric curve was fitted with a sigmoid function (Figure 6a and b, black curves; $n=12$ participants had both sigmoidal fits satisfying the minimum modulation criterion; see Methods). From each fitted curve, the halfway point between minimum and maximum values along the y axis was determined, and the highest of the two halfway values (from the pro or anti data) served as a criterion (Figure 6a and b, dashed lines). Finally, the mean processing-time cost of an antisaccade for the participant was taken as the difference between the rPT at which the antisaccade curve attained the criterion (Figure 6a and b, red vertical lines) minus the rPT at which the prosaccade curve attained it (Figure 6a and b, blue vertical lines). The motor bias of the participant was computed from the same sigmoidal fits; it was equal to the difference between the minimum value of the pro curve minus the minimum value of the anti curve.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig6-v1.jpg)\n\n**Figure 6.:** (a) Tachometric curves for pro (blue) and anti (red) trials from one participant whose motor bias was toward the cue. After fitting each curve with a sigmoid function (black traces), the halfway point between minimum and maximum values was determined. The highest halfway point (dashed line) served as a criterion. The mean time cost for an antisaccade, \u0394 rPT, was set as the difference (anti minus pro) between the raw processing times (rPTs) at which that criterion was reached (vertical lines). The corresponding motor bias magnitude for the participant, \u0394 bias, was set as the difference between the minimum values of the two fitted curves (pro minus anti). Each curve includes data from all experiments. (b) As in a, but for a participant whose motor bias was away from the cue. (c) Time cost of an antisaccade (y axis) as a function of motor bias magnitude (x axis). Each point corresponds to one participant ($n=12$ participants with acceptable fits). Data points from the two example participants in a and b are indicated. The dotted line corresponds to linear regression.\n\nContrasting the processing-time cost of an antisaccade with the magnitude of the motor bias (Figure 6c) revealed a positive association of moderate strength between them (Pearson correlation, $\u03c1=0.59$, $p=0.026$ from two-sided permutation test). This suggests that when the early attentional bias toward the cue is strong, it is more difficult for participants to produce an informed antisaccade later on. Importantly, however, the initial motor bias may contribute to but does not explain the rPT cost of an antisaccade. As indicated by the offset of the regression line in Figure 6c (dotted line), the expected cost is 27 ms for zero bias. This agrees with data discussed earlier (Figures 3a, c, 4d and e, Figure 2\u2014figure supplement 3b and d), which showed that there is a cost even for combinations of participants and experiments for which the bias is either minimal or slightly away from the cue. So, in general, producing an informed antisaccade required about 30 ms more of processing time than producing a similarly informed prosaccade, but this number varied by an additional amount in proportion to the strength of the initial bias toward or away from the cue.\n\n### Higher efficiency for prosaccades versus antisaccades\n\nThe analyses above determined the processing-time cost of making an antisaccade away from the attended cue instead of a prosaccade toward it, everything else being equal. Here, we revisit this issue but from a different perspective. Instead of looking at the processing time needed to achieve a set performance criterion, we consider the reverse. Now we ask, given a fixed amount of processing time sufficient for motor plans to be partially informed, are prosaccades generally more successful than antisaccades? This alternate analysis does not exclude any participants. It is interesting not only as a verification of the above results, but also because it makes the variability in performance across individuals and experiments easier to appreciate.\n\nIn this case, individual trials were grouped according to rPT into four non-overlapping ranges (Figure 7, inset at bottom): a guessing range (rPT \u2264 75 ms), a capture range (83 \u2264 rPT \u2264 124 ms), a transition range (135 \u2264 rPT < 200 ms), and an asymptotic range (rPT \u2265 200 ms). Then, for each range, the fraction of correct choices was computed separately for pro and anti trials for each participant and each experiment. The results show how performance progresses over time in each condition (Figure 7a\u2013d; black dots indicate individual participants). The procedure can be thought of as a simpler, discretized version of the tachometric curve for which only four time bins are considered, but the patterns discussed earlier are still recognizable. For instance, in Experiments 1\u20133, during pro trials guesses tend to be more successful than chance (Figure 7a\u2013c, blue bars, G range), whereas during anti trials they tend to be less successful than chance (Figure 7a\u2013c, red bars, G range). This, of course, reflects the internal bias toward the cue. The salience-driven capture of saccades is also easily recognizable. In Experiment 3, for most participants, the fraction correct in the capture range is well above chance in pro trials (Figure 7c, blue bars, C range) but well below chance in anti trials (Figure 7c, red bars, C range); and the effect in Experiment 4 is just the reverse (Figure 7d; compare blue vs. red bars in C range). From these data, it is also easy to see that most participants improve their performance with increasing rPT, as their accuracy tends to be highest in the asymptotic range (Figure 7a\u2013d, A range). Notably, as seen with the full tachometric curves (Figure 2\u2014figure supplement 4), in all the experiments there is considerable variability across participants, even in the asymptotic range. Such variance at long rPTs reflects a range of bias strengths as well as varying degrees of difficulty with the task (consistent with the easy trials; Figure 2\u2014figure supplement 1).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/97883/elife-97883-fig7-v1.jpg)\n\n**Figure 7.:** Processing times were divided into four non-overlapping ranges: a guessing range (G, raw processing time [rPT] \u2264 75 ms), a capture range (C, 83 \u2264 rPT \u2264 124 ms), a transition range (T, 135 \u2264 rPT < 200 ms), and an asymptotic range (A, rPT \u2265 200 ms); see inset at bottom. The fraction of correct choices was then computed separately for pro and anti trials in each experiment, in each rPT window, and for each participant. Responses in the T and A windows are informed by the cue color, whereas those in the G and C windows are not. (a) Results in Experiment 1. Fraction correct is shown for each of the four rPT windows. Black dots indicate data from individual participants ($n=18$); blue and red bars show mean values for pro and anti trials, respectively, averaged across participants. The dotted line indicates chance performance. (b\u2013d) As in a, but for Experiments 2\u20134. (e) Performance in anti trials (y axis) versus pro trials (x axis) with processing times in the transition range. Different symbols correspond to data from Experiments 1\u20134, as indicated, with one data point per participant. The dotted line indicates equality. Given the same amount of processing time, performance was typically higher during prosaccades than during antisaccades. (f) Differences between pro and antisaccade performance in the transition range (y axis) compared to those in the guessing range (x axis). Each point represents one participant ($n=18$) with data pooled across experiments. The dotted line corresponds to linear regression.\n\nThe main question in this case is, what happens during the transition range? This rPT range covers the part of the tachometric curve during which accuracy rises consistently but has yet to reach its eventual asymptote. The responses produced during this time interval can be interepreted as saccades that are partly but not yet fully informed by the cue color; or alternatively, the data can be thought of as a mixture of informed and uninformed saccades. In either case, the question is whether at the given amount of processing time prosaccades have an advantage in performance over antisaccades.\n\nThe answer is yes. The fraction of correct choices during the transition range was consistently higher for pro than for anti trials (Figure 7e). This was true not only when considering the data from all four experiments together ($p<10^{\u22125}$, $n=72$, permutation test), but also when considering the data from each experiment separately (in all cases, $p\\leq0.003$, $n=18$, permutation test). Again, the most notable result is for Experiment 4: in that case, pro trials demonstrate significantly higher accuracy than anti trials in the transition range (Figure 7e, orange points) in spite of the fact that, during the preceding capture interval, pro trials were at a huge disadvantage (Figure 7d; compare blue vs. red bars in C and T ranges). Thus, as perceptual information originating at the cue location starts to guide the ongoing target selection process, generating a movement toward the cue itself is easier than generating a movement away from it.\n\nFinally, the data in this format can also be used to re-examine the degree to which the rPT cost of making an endogenously guided antisaccade covaries with the early motor bias. In this case, we contrasted the difference between pro and anti performance (fraction correct) in the transition range with the difference between pro and anti performance in the guessing range. The results (Figure 7f) confirmed the trend seen earlier based on the direct calculation of processing-time costs (Figure 6c), namely, there was a positive correlation (Pearson correlation, $\u03c1=0.62$, $p=0.003$ from two-sided permutation test). This was the case with the data pooled across experiments, but consistent, positive trends were observed for all four experiments individually. The results again suggest that when motor plans are strongly biased toward the cue, additional processing time is needed to overcome such bias and generate an informed (anti) saccade away from the cue \u2013 although, as remarked before, a cost is expected even with zero bias (see regression line in Figure 7f).\n\nA last, notable point is that the motor bias was not a reliable predictor of overall task performance during informed choices. Across participants, the mean accuracy averaged over pro and anti trials combined had a weak, non-significant correlation with the bias in both the transition ($\u03c1=0.09$, $p=0.7$) and asymptotic ($\u03c1=0.07$, $p=0.8$) ranges. Thus, the bias did not incur an obvious disadvantage in terms of average success in the task. Its main consequence was simply to induce an asymmetry in timing and accuracy between pro- and antisaccades (Figures 6c and 7f).\n\n## Discussion\n\nThe aim of the present study was to investigate how the voluntary deployment of spatial attention to an informative cue influences a subsequent eye movement either toward the cue or away from it. Because the interaction between attention and saccade planning is generally very fast, we focused on the difference in processing time required by these two conditions; and because stimulus presentation always implies a certain degree of exogenous influence, we also aimed to distinguish the respective contributions of exogenous and endogenous signals to the saccadic choice process. By imposing urgency we could generate a psychophysical curve describing the evolution of this choice process with high temporal resolution, and by manipulating the relative luminances of the cue and a non-cue we could characterize the strength and temporal extent of the exogenous signals associated with stimulus onsets. In this way, we were able to isolate the endogenously driven responses and resolve a time delay of approximately 30 ms between informed (pro) saccades toward the attended cue location and informed (anti) saccades toward an unattended, diametrically opposed location. This delay was highly consistent; it occurred even when the exogenous signal produced a bias in favor of the slower response. In addition, we also found that when participants made fast guesses, their saccades were significantly more likely to be toward the attended cue than toward the unattended non-cue.\n\n### The observed coupling is consistent with prior studies\n\nThe findings indicate that when attention is voluntarily but covertly deployed, a subsequent saccade is generally biased toward the attended location. Thus, oculomotor planning is coupled to endogenous attention. The coupling is relatively weak, though, because motor plans could be willfully shifted very rapidly (within \u223c30 ms) to a different location, and because there was relatively high variability across conditions for any given participant (Figure 5b, Figure 2\u2014figure supplement 4). The strength of the effect also varied considerably across individuals (Figures 6c and 7f). Importantly, as mentioned in the Introduction, this coupling pertains to only one side of the bidirectional relationship between saccade planning and spatial attention. The attentional effects that occur just before a saccade is executed have been amply characterized (Hoffman and Subramaniam, 1995; Kowler et al., 1995; Deubel and Schneider, 1996; Moore and Fallah, 2001; Moore and Fallah, 2004; Cavanaugh and Wurtz, 2004; Armstrong and Moore, 2007; Zhao et al., 2012; Steinmetz and Moore, 2014), and at this point the data are unequivocal: planning a saccade commits attentional resources to the intended saccade endpoint (or nearby, depending on how the target selection process progresses; Wollenberg et al., 2018). In contrast, here we examined the complementary relationship, i.e., how the early deployment of spatial attention biases the next saccade. Consistent with data showing that endogenous attention and saccade planning can be dissociated (Ignashchenkova et al., 2004; Thompson et al., 2005; Armstrong et al., 2009; Steinmetz and Moore, 2014; Klapetek et al., 2016; Li et al., 2021), our results are indicative of coupling that is comparatively weak in this direction.\n\nIn this regard, our results are comparable to those of Belopolsky and Theeuwes, 2009, who used a task in which participants made saccades to a target location that did or did not coincide with the location of an attended symbolic cue. They measured saccadic RTs that were much longer than in our case (roughly 500\u2013800 ms), and yet their derived time costs for making an eye movement to an attended cue location versus to an unattended non-cue location were remarkably similar to ours, on the order of 20\u201340 ms. The authors interpreted their data in comparison to prior results by drawing a distinction between the maintenance of attention and the shifting of attention, because the time cost they observed was most robust when participants had to shift their attention to the cue location just before making a saccade to the target. This distinction is consistent with our view of urgency: when the fixation point disappears early on, motor plans can start developing even if the target has not been determined, in which case they will reflect any internal biases, including a bias toward the currently attended location. However, such bias typically becomes invisible under non-urgent conditions, which promote longer fixations. According to Belopolsky and Theeuwes, 2009, this is because the incipient oculomotor program associated with an attention shift can be suppressed shortly thereafter.\n\n### Exogenous-endogenous interactions are rich and fast\n\nA striking aspect of our data is the sharp distinction drawn between exogenous and endogenous attentional components, and the richness of their dynamic. Based on prior studies (Salinas et al., 2019; Goldstein et al., 2022; Oor et al., 2023), we expected the exogenous signal to be brief, involuntary, and luminance-driven. And indeed, we were able to manipulate exogenous, involuntary capture as intended by varying the luminances of the stimuli, with highly consistent results across participants and conditions (Figures 2 and 3). Specifically, we were able to bias the participants\u2019 choices toward the cue or toward the non-cue, or to minimize the bias. The results support the notion that exogenous and endogenous influences on saccade programming are fundamentally independent and dissociable based on processing time (Goldstein et al., 2022). However, the results revealed an interesting wrinkle: the effect of the exogenous signal is not simply to advance the motor plan congruent with it and then fade away, in which case one would expect that responses would simply transition monotonically from captured saccades to informed choices with increasing rPT. Instead, when saccades are strongly biased (Experiments 3 and 4), the tachometric curves demonstrate the corresponding capture but then (briefly) go in the opposite direction. This can be seen in the pro curves of Experiment 3 (Figure 3a, Figure 2\u2014figure supplement 2c, Figure 2\u2014figure supplement 3c, dark blue traces) and in the anti curves of Experiment 4 (Figure 3c, Figure 2\u2014figure supplement 2d, Figure 2\u2014figure supplement 3d, bright red traces); in both cases there is a sharp increase in accuracy during the capture window (approximately 83\u2013124 ms) that is then partially offset immediately afterward, before the final rise toward asymptotic performance. This downward rebound cannot be attributed to the endogenous perceptual signal because it goes in the opposite direction. It is as if the exogenous response was automatically followed by a motor reaction in the opposite direction. Perhaps the oculomotor circuitry is such that an exogenous signal can rapidly trigger a saccade, but if it does not, then the corresponding motor plan is rapidly suppressed regardless of anything else. This idea suggests a symmetry with the effect of endogenous attention discussed in the previous paragraph: it appears that in both cases, exogenous and endogenous, a shift of spatial attention activates a motor plan that is either executed within a few tens of milliseconds (to trigger a saccade) or is rapidly suppressed. Such a mechanism would be consistent with the intrinsic tendency of attentional signals to oscillate (Landau and Fries, 2012; Hogendoorn, 2016; Fiebelkorn and Kastner, 2019).\n\nThe dissociation of exogenous and endogenous influences over time also presents an interesting symmetry with respect to the effects of attention on saccade trajectories across space. Some of the earliest indications of a tight link between attention and eye movements came from experiments showing that saccades deviate away from a cue location that was previously attended but was never itself the saccade target (Sheliga et al., 1994; Sheliga et al., 1995). This led to the hypothesis that the mechanisms responsible for deploying spatial attention and those involved in programming saccades are essentially the same (i.e. the premotor theory of attention; Rizzolatti et al., 1987; Belopolsky and Theeuwes, 2012). However, later studies showed that attention effects on saccade trajectories could be either repulsive or attractive (Van der Stigchel et al., 2006), and specifically demonstrated that saccade trajectories could deviate either toward a distracter or away from it depending on the time at which the distracter was shown (Theeuwes and Godijn, 2004; McSorley et al., 2006; Giuricich et al., 2023). This result recapitulates the idea discussed above but in the spatial domain: the exogenous effect of the distracter is, initially, to produce a motor plan toward it (attraction), but later on this plan is suppressed and a motor bias away from the distracter (repulsion) is observed instead.\n\n### Different tasks, different exogenous and endogenous signals\n\nOur EPA task differs in many ways from the classic prosaccade/antisaccade paradigm (Antoniades et al., 2013), in which only the presence of the cue matters, not its features, and the instruction to look toward or look away is known to the subject at the start of each trial. Are such differences important?\n\nThere are many ways to set up an experiment where the subject either looks at a relevant cue or away from it. Conversely, it is also possible to design a task where the behavior is essentially identical to that in the classic antisaccade task without ever introducing the notion of looking away from something (Oor et al., 2023). We think that, more than the specific task instructions or the structure of the event sequence, the fundamental factors that determine behavior in all of these cases are the magnitudes of the resulting exogenous and endogenous signals, and whether they are aligned or misaligned. Under urgent conditions, consideration of these elements and their relevant timescales explains behavior in a wide variety of tasks (Stanford and Salinas, 2021). Furthermore, a recent study (Zhu et al., 2024) showed that the spatial signal encoded by neurons in monkey prefrontal cortex during the antisaccade task can be accurately predicted from their stimulus- and saccade-related responses during a simpler task that involves no spatial conflict whatsoever (a memory guided saccade task). That is, these two independent response components explained the evolving attentional pointer observed during a typical antisaccade trial. This indicates that, at the circuit level, the dynamics of target selection are dictated by the relative strengths of the exogenous and endogenous activations and their congruency in space and time, however such activations are generated. Thus, we would expect this premise to also be valid under more natural viewing. In that case, visual transients would simply be less predictable and their corresponding exogenous influences potentially more variable.\n\n### Attentional dynamics are better resolved under time pressure\n\nA critical conclusion from our work is that temporal dependencies are much more accurately resolved when the fixation requirement is removed earlier and processing time is considered (instead of RT). There are many examples of this. Prior studies have shown that the effect of salience on saccadic choices is transient (Donk and van Zoest, 2008; Siebold et al., 2011; Anderson et al., 2015), that stimulus-driven and goal-driven control signals on visual selection are distinct and can be temporally dissociated (van Zoest et al., 2004), and that in the transition between them there is a moment of ambiguity wherein choices are dictated by neither (van Heusden et al., 2022). And, of course, various forms of capture have been demonstrated, all occurring early, before endogenous control takes over (Theeuwes, 1992; Theeuwes, 1994; Failing et al., 2015; Aagten-Murphy and Bays, 2017; Nissens et al., 2017). These findings often span differences in RT between 150 and 450 ms. The tachometric curves presented here and in our preceding reports (Salinas et al., 2019; Goldstein et al., 2022; Oor et al., 2023) recapitulate these phenomena but on a much faster timescale. The data in Figure 2c and d are emblematic: they reveal an early salience-driven response (characterized by captured saccades) and a late goal-driven rise toward asymptotic performance (>90% correct) separated by a transition period of ambiguous control, each distinct phase evolving within a few tens of milliseconds. What matters most is not the full saccade latency, but rather the shorter period of time during which the relevant stimuli (cues, distracters) can be viewed and processed, and that is the rPT. By initiating the motor plans early and using rPT as a time base, the fast transitions from uninformed to informed choices (Stanford et al., 2010; Stanford and Salinas, 2021) or from exogenous to endogenous control (Salinas et al., 2019; Goldstein et al., 2022; Oor et al., 2023; Zhu et al., 2024) are exposed with more clarity.\n\nThe broader lesson is that spatial attention dynamics in oculomotor circuits can vary more rapidly and abruptly than is generally appreciated. Saccades can go from being predominantly triggered in one direction to predominantly triggered in the opposite direction easily within 30\u201350 ms, and more than one such shift may occur in sequence (Figure 2c and d, Figure 2\u2014figure supplement 2c and d, Figure 2\u2014figure supplement 4c) as a consequence of distinct mechanisms interacting. The implications of these rich dynamics to more naturalistic visuomotor behaviors is an important avenue to explore in future studies.\n\n## Methods\n\nMethods were generally similar to those in preceding studies (Salinas et al., 2019; Goldstein et al., 2022). Here, we highlight key experimental procedures and details of the data analysis.\n\n### Subjects\n\nExperimental data were collected from 18 healthy human volunteers, 7 male and 11 female, with a median age of 28 years (range, 24\u201363). Subjects had normal or corrected-to-normal vision. All participants provided informed written consent before beginning the study. Participants were recruited from the Wake Forest University School of Medicine, Wake Forest University, and Atrium Health Wake Forest Baptist communities. All procedures were conducted with the approval of the Institutional Review Board of Wake Forest University School of Medicine (IRB00035241).\n\n### Setup\n\nThe experiments were conducted in a semi-dark room. Participants sat in a height-adjustable chair with their chin and forehead supported on a desk-mounted head support. Stimuli were presented on a VIEWPixx LED monitor (VPixx Technologies Inc, Saint Bruno, Quebec, Canada; 1920 \u00d7 1200 screen resolution, 120 Hz refresh rate, 12-bit color) at a distance of 57 cm. Eye position was measured and recorded using the EyeLink 1000 infrared camera and tracking system (SR Research, Ottawa, Canada; 1000 Hz sampling rate). Stimulus presentation and data acquisition were controlled using Matlab (The Mathworks, Natick, MA, USA) and the Psychtoolbox 3.0 package (Brainard, 1997; Kleiner et al., 2007).\n\n### Behavioral tasks\n\nThe pro- and antisaccade tasks are similar to urgent tasks used in prior studies (Salinas et al., 2019; Goldstein et al., 2022; Oor et al., 2023), and require participants to make a perceptual judgment, a color discrimination in this case, while oculomotor plans are already ongoing. The sequence of events was the same in pro and anti trials, as described in Figure 1. A trial began with the onset of a gray central fixation point (RGB vector [0.25 0.25 0.25]) on a black screen. After fixation was maintained within a window (4\u00b0 diameter) for a required time interval (500, 600, or 700 ms, randomly sampled), the fixation point was extinguished. The fixation point offset instructed the participant to make a saccade within 450 ms (or 425 ms for a few participants), and marked the start of the gap interval. Once the gap interval elapsed, the cue (green or magenta) and non-cue (gray) stimuli were shown, one on the left and the other on the right (at \u20138\u00b0 and 8\u00b0 along the horizontal). Participants were instructed to look at the cue whenever it was green (pro trial) and look at the non-cue whenever the cue was magenta (anti trial). Once a saccade was initiated, the cue and non-cue stimuli remained on the screen for 200 ms and then disappeared. A new trial began after an intertrial interval of 350 ms.\n\nFor all experiments, the cue location was constant throughout each block of 150 trials, and was thus known to the participant. Across blocks, it switched between left and right locations. In each trial, the color of the cue (green or magenta) was randomly sampled. The cue and non-cue were circles of 1.5\u00b0 diameter. Gap durations were \u2013200, \u2013100, 0, 75, 100, 125, 150, 175, 200, 250, and 350 ms, and were randomly sampled across trials. So called \u2018easy\u2019 trials (gap < 0) are non-urgent trials in which the cue and non-cue stimuli were presented before the go signal, and were interleaved with urgent trials (gap \u2265 0) throughout each block. The RT was measured as the interval between fixation point offset and saccade onset. The rPT, or cue viewing time, was measured as the interval between stimulus onset and saccade onset, and was computed as rPT = RT \u2013 gap. An auditory feedback beep was provided at the end of a trial if the saccadic choice was made within the allowed 450 ms RT window. No sound played if the limit was exceeded. No feedback was provided about the correctness of the choice. The task proceeded in blocks of 150 trials with 2\u20133 min of rest between blocks.\n\nTo ensure that the task rule was understood, all participants completed short practice blocks of easy trials before beginning the experimental blocks and data collection. Experimental sessions lasted 1 hr, and each participant completed 8 blocks of trials in each of 8 sessions. Each participant completed 16 blocks per experiment: 8 blocks where the cue was always on the left interleaved with 8 blocks with the cue always on the right. For clarity, we refer to green-cue trials as pro trials and magenta-cue trials as anti trials; in practice, however, for participants P1\u2013P10, a green cue instructed a prosaccade and a magenta cue instructed an antisaccade, whereas the colors were reversed for participants P11\u2013P18. No effects of color assignment were found in any of the analyses. The cue and non-cue stimuli could each be of high or low luminance. Luminance values were chosen that triggered strong or weak exogenous capture when using single, lone targets, respectively (Salinas et al., 2019; Goldstein et al., 2022). In Experiment 1, the cue and non-cue were both high luminance. In Experiment 2, the cue and non-cue were both low luminance. In Experiment 3, the cue was high luminance and the non-cue was low luminance. In Experiment 4, the cue was low luminance and the non-cue was high luminance. Respective RGB vectors and luminance values are shown in Table 1 for each stimulus. Luminance was determined by a spectrophotometer (i1 Pro 2 from X-Rite, Inc, Grand Rapids, MI, USA). Experiments were run in the same sequence, 1 through 4, for all participants.\n\n### Data analysis\n\nAnalyses were carried out in the Matlab computing environment (The MathWorks, Natick, MA, USA; version 2013b or higher, with the Statistics Toolbox), as detailed in previous publications (Salinas et al., 2019; Goldstein et al., 2022).\n\nSaccades were detected based on a velocity criterion (40\u00b0/s). Trials with fixation breaks (aborts) or blinks were excluded from analysis. Trials with saccades that were close to vertical (beyond \u00b160\u00b0 of the cue or non-cue; <1% of all trials) were also excluded. There was no explicit amplitude criterion; applying one (for instance, excluding any saccades with amplitude <2\u00b0) produced minimal changes to the data. Overall, saccade amplitudes were distributed unimodally with a median of 7.7\u00b0 of eccentricity and a 95% confidence interval (CI) of [3.7\u00b0, 9.7\u00b0]; for reference, choice targets were located at \u00b18\u00b0 horizontally. Most saccades were directed to the choice targets; 95% of them were within \u00b114.2\u00b0 of the horizontal plane.\n\nThe RT was measured as the time between the go signal (fixation offset) and the onset of the saccade, which was taken as the first time point after the go signal for which the eye velocity surpassed the 40\u00b0/s threshold. Trials were scored as correct or incorrect based on the direction of the first saccade made after the go signal. Completed trials were included even if they exceeded the allotted RT limit.\n\nResults are based on the analysis of urgent trials (gap \u2265 0) only. Easy, non-urgent trials (gap < 0), which yielded predominantly long rPTs (>200 ms), were excluded from analysis because, timing wise, they could potentially correspond to a slightly different regime (go signal after cue onset). In any case, their inclusion was of no appreciable consequence to the effects of interest. Note, however, that non-urgent trials were used to determine whether participants met a performance criterion (see below). No data were excluded based on participant performance or identity.\n\nTachometric curves describe how the fraction of correct choices evolves as a function of time after cue onset, or rPT. This processing time period was computed as rPT = RT \u2013 gap for each trial. For each tachometric curve, trials were grouped into rPT bins that shifted every 1 ms. For each bin, the numbers of correct and incorrect responses were tallied and the fraction of correct responses was calculated from them, with CIs determined by binomial statistics (68% CIs for Figure 2\u2014figure supplement 4, 95% CIs for all other figures). The bin width was 31 ms when data were aggregated across multiple participants and 41 ms for tachometric curves for single participants.\n\nThe tachometric curves in Experiments 1 and 2 were fitted with a continuous analytical function, a monotonically increasing sigmoidal curve, to extract key characteristic metrics from the empirical curves. The sigmoid function was\n\n$$\ns(x)=B+\\frac{A\u2212B}{1+exp\u2061(\u2212\\frac{x\u2212C}{D})}\n$$\n\nwhere $B$ is the baseline, $A$ is the asymptote, $C$ is the rise point, and $D$ determines the slope of the rise. For the current analyses, the most important parameter is the rise point, which corresponds to the rPT at which the fraction correct is halfway between the baseline and the asymptote. This quantity is indicative of when the perceptual discrimination is completed. As an alternative characteristic time point, we considered the rPT at criterion, which is the rPT at which the fraction correct first exceeds a fixed criterion $\\theta$. Results (e.g. Figure 4) using the rise point and the rPT at criterion with $\\theta=0.7$ were very similar.\n\nAlthough the parameter $B$ represents the fraction correct at short rPTs, for which participants guess and overall performance must be at chance, it was not constrained to 0.5, as in some of our prior experiments (Salinas et al., 2019; Goldstein et al., 2022). This is because, in this case, the participants knew where the cue would appear, so they could develop a preference for guessing toward or away from it. After sorting the pro and anti trials, such preference would manifest as substantial deviations from chance in the early parts of the corresponding tachometric curves. Thus, to accommodate these internal biases, the $B$ parameter was allowed to vary during the fitting process.\n\nTo find the optimal parameter values ($A$, $B$, $C$, and $D$) that best characterized a given tachometric curve, we minimized the mean absolute error between the empirical curve and the fitted curve using the fminsearch function in Matlab. Confidence intervals were obtained for these values by bootstrapping (Davison and Hinkley, 2006; Hesterberg, 2015). The bootstrapping process involved resampling the original trials with replacement, refitting the resampled tachometric curve, calculating the new parameters, and repeating the process 1000\u201310,000 times to generate distributions for all four parameters. With those distributions at hand, 95% CIs were determined using the 2.5 and 97.5 percentiles. When comparing the mean difference (averaged over qualifying participants) between rise points across two conditions (Figure 4a\u2013c), significance was determined via a paired permutation test (Siegel and Castellan, 1988) with 100,000 iterations.\n\n#### Performance criterion\n\nFor some analyses (Figure 2, Figure 2\u2014figure supplement 2), participants were sorted based on a criterion that indicated how well they performed the task without time pressure (Figure 2\u2014figure supplement 1). This was done by determining the fraction correct in easy trials only, i.e., in trials with gap <0 ms. The fraction correct was calculated separately for easy pro and easy anti trials in each experiment, for a total of eight performance measurements per participant. Then, to be included in the analysis, a participant had to exceed a fraction correct of 0.7 in all eight measurements. Eleven participants (deemed reliable) met this performance criterion and seven did not (unreliable).\n\n#### Modulation criterion\n\nTo be able to reliably determine a rise point value, as in Figure 4, a tachometric curve was required to be (1) not flat and (2) well fit by the sigmoid function. These conditions were quantified with the curve modulation\n\n$$\n\u0394s=max(s(x))\u2212min(s(x))\n$$\n\nand the fit error\n\n$$\ne=\u27e8|s(x)\u2212f(x)|\u27e9\n$$\n\nwhere $s(x)$ is the fitted sigmoid, $f(x)$ is the empirical tachometric curve, and the angle brackets indicate an average for rPTs in the range 0\u2013300 ms. To combine the two conditions into a single score, we computed the ratio $\u0394s/e$. This quantity is large for curves that are both strongly modulated and well fit by the sigmoid function. Participants with an error ratio above a threshold (2.5) were included in the analysis of rise points.\n\n#### Exogenous response window\n\nIn Experiments 3 and 4, we measured the degree of early exogenous capture by calculating the fraction of correct trials within a fixed rPT window. This exogenous response window was set to 83\u2013124 ms based on the tachometric curves from the reliable performers (Figure 3a and c, shaded areas). It was defined as the common interval where the response to the high luminance stimulus was consistently above that to the low luminance stimulus, when taking into consideration the pro and anti tachometric curves in both experiments. Then, having defined this window, the fraction correct inside the window was computed separately for each participant and for pro and anti trials in each experiment (Figure 3b and d). The exact window limits were not critical to the results.\n\n#### Statistics\n\nFor comparisons where each data point represents one participant or one experimental condition from one participant, significance was determined based on permutation tests for paired data (Siegel and Castellan, 1988) or equivalent randomization tests for non-paired data. For comparisons involving binary data (correct vs. incorrect), confidence intervals and significance values were determined using binomial statistics (Agresti and Coull, 1998).\n",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Miriam Spering, The University of British Columbia Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97883.3.sa0](https://doi.org/10.7554/eLife.97883.3.sa0)\n\nThis important study advances our understanding of the temporal dynamics and cortical mechanisms of eye movements and the cognitive process of attention. The evidence supporting the conclusions is convincing and based on measuring the time course of the eye movement-attention interaction in a novel, carefully-controlled experimental task. This study will be of broad interest to psychologists and neuroscientists interested in the dynamics of cognitive processes.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97883.3.sa1](https://doi.org/10.7554/eLife.97883.3.sa1)\n\nGoldstein et al. provide a thorough characterization of the interaction of attention and eye movement planning. These processes have been thought to be intertwined since at least the development of the Premotor Theory of Attention in 1987, and their relationship has been a continual source of debate and research for decades. Here, Goldstein et al. capitalize on their novel urgent saccade task to dissociate the effects of endogenous and exogenous attention on saccades towards and away from the cue. They find that attention and eye movements are, to some extent, linked to one another but that this link is transient and depends on the nature of the task. A primary strength of the work is that the researchers are able to carefully measure the time course of the interaction between attention and eye movements in various well-controlled experimental conditions. As a result, the behavioral interplay of two forms of attention (endogenous and exogenous) are illustrated at the level of tens of milliseconds as they interact with the planning and execution of saccades towards and away from the cued location. Overall, the results allow the authors to make meaningful claims about the time course of visual behavior, attention, and the potential neural mechanisms at a timescale relevant to everyday human behavior.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97883.3.sa2](https://doi.org/10.7554/eLife.97883.3.sa2)\n\nThe present study used an experimental procedure involving time-pressure for responding, in order to uncover how the control of saccades by exogenous and endogenous attention unfolds over time. The findings of the study indicate that saccade planning is influenced by the locus of endogenous attention, but that this influence was short-lasting and could be overcome quickly. Taken together, the present findings reveal new dynamics between endogenous attention and eye movement control and lead the way for studying them using experiments under time-pressure.\n\nThe results achieved by the present study advance our understanding of vision, eye movements, and their control by brain mechanisms for attention. In addition, they demonstrate how tasks involving time-pressure can be used to study the dynamics of cognitive processes. Therefore, the present study seems highly important not only for vision science, but also for psychology, (cognitive) neuroscience, and related research fields in general.\n\nI think the authors' addressed all of the reviewers' points successfully and in detail, so that I don't have any further suggestions or comments.\n",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "46e8726e-71bb-4741-a13a-07208289fe95",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C1",
+      "claim": "Primates make about four to five quick eye movements (saccades) every second.",
+      "claim_type": "EXPLICIT",
+      "source": "Primates make about four to five quick eye movements (saccades) every second.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established knowledge about primate eye movement behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "3cf8d7d2-1a66-4a89-98ca-d4a37ef9f9f0",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C2",
+      "claim": "The oculomotor system selects a new target to look at depending on the match between the content of the current visual scene and the subject's internal state and current goals.",
+      "claim_type": "EXPLICIT",
+      "source": "Before each movement, the oculomotor system selects a new target to look at depending on the match between the content of the current visual scene and the subject's internal state and current goals, i.e., what, if anything, the subject is looking for (Itti and Koch, 2001; Theeuwes, 2010; Wolfe and Horowitz, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research on visual attention and target selection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "6a57e153-8f02-40dd-bec2-7144322aae6c",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C3",
+      "claim": "Saccades are strongly coupled to visuospatial attention.",
+      "claim_type": "EXPLICIT",
+      "source": "Saccades are strongly coupled to visuospatial attention, which comprises a collection of mechanisms that regulate perception and thereby mediate the target selection process (Carrasco, 2011; Maunsell, 2015; Moore and Zirnsak, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research on the relationship between saccades and attention.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "de3f34a1-d689-434c-9c4e-4681116b55f3",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C4",
+      "claim": "Neurons implicated in attention control and saccade generation are typically found within the same circuits.",
+      "claim_type": "EXPLICIT",
+      "source": "Neurons implicated in attention control and saccade generation are typically found within the same circuits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established neuroanatomical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "bfc05086-a5ad-4429-b40b-2f577b925adf",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C5",
+      "claim": "The functional coupling between saccades and attention is bidirectional.",
+      "claim_type": "EXPLICIT",
+      "source": "And importantly, the functional coupling between saccades and attention is bidirectional.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the subsequent discussion of presaccadic attention and endogenous attention effects.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "82eadd64-1951-4bcc-903c-35e22c059020",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C6",
+      "claim": "Planning a saccade automatically commits attentional resources to the saccade endpoint such that perceptual processing is enhanced at that location.",
+      "claim_type": "EXPLICIT",
+      "source": "On one hand, the planning of a saccade automatically commits attentional resources to the saccade endpoint such that perceptual processing is enhanced at that location. This phenomenon, known as presaccadic attention, is firmly supported by both psychophysical (Hoffman and Subramaniam, 1995; Kowler et al., 1995; Deubel and Schneider, 1996; Zhao et al., 2012) and neurophysiological experiments (Moore and Fallah, 2001; Moore and Fallah, 2004; Cavanaugh and Wurtz, 2004; Armstrong and Moore, 2007; Steinmetz and Moore, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations to psychophysical and neurophysiological studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "07b0659f-030b-42b8-a68e-b2ff1c57ad95",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C7",
+      "claim": "Endogenous attention deployment increases the probability that a saccade will be directed to the attended point.",
+      "claim_type": "EXPLICIT",
+      "source": "This is referred to as endogenous attention, and there is evidence that its deployment impacts subsequent eye movements in two ways: it increases the probability that a saccade will be directed to the attended point (Kustov and Robinson, 1996; Belopolsky and Theeuwes, 2009; Belopolsky and Theeuwes, 2012), and if fixation is maintained, it alters the temporal and spatial characteristics of microsaccades (Hafed and Clark, 2002; Engbert and Kliegl, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "9c2e2668-f775-4246-8c41-8a6d5228b596",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C8",
+      "claim": "The attentional locus and saccade endpoint can be dissociated.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this link between endogenous attention and eye movements is not obligatory; the attentional locus and saccade endpoint can be dissociated (Katnani and Gandhi, 2013; Steinmetz and Moore, 2014; Klapetek et al., 2016), and microsaccades are only weak, unreliable markers of attentional allocation (Yu et al., 2022; Willett and Mayo, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "a14d7a5e-1edd-467e-8a14-80b493e159c0",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C9",
+      "claim": "The effects of directing covert attention or a saccade to a given location can be quite distinct in terms of the activated neuronal populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the effects of directing covert attention or a saccade to a given location can be quite distinct in terms of the activated neuronal populations (Ignashchenkova et al., 2004; Thompson et al., 2005; Armstrong et al., 2009), and may have slightly different perceptual consequences (for instance, on orientation or spatial frequency sensitivity; Li et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "efb92de9-77d5-48d1-9403-653717e25fd4",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C10",
+      "claim": "Exogenous and endogenous signals acted at different times and independently of each other in urgent prosaccade and antisaccade tasks.",
+      "claim_type": "EXPLICIT",
+      "source": "By analyzing performance in an urgent prosaccade task (look toward a cue) and an urgent antisaccade task (look away from a cue), we found that exogenous and endogenous signals acted at different times and independently of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from earlier studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "5373476c-9adc-46bd-aee5-f9b6245f3b57",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C11",
+      "claim": "Exogenous response to cue onset manifested as 'captured' saccades that occurred early (~100 ms after cue onset), were strongly stereotyped across individuals, highly sensitive to luminance, and largely impervious to task rules or top-down control.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, the exogenous response to the cue onset manifested as 'captured' saccades, eye movements toward the cue that were, by all accounts, involuntary: they occurred early (\u223c100 ms after cue onset), were strongly stereotyped across individuals, highly sensitive to luminance, and largely impervious to task rules or top-down control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from earlier studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "2370d0bb-8c4b-4d60-b20f-0fd0162c9e93",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C12",
+      "claim": "The endogenous response manifested as a sustained rise toward high-performance accuracy that occurred slightly later (~150 ms after cue onset), was more variable across individuals, and was aligned with the task-defined goal.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the endogenous response manifested as a sustained rise toward high-performance accuracy that was consistent with a deliberate process: the rise occured slightly later (\u223c150 ms after cue onset), it was more variable across individuals, and was aligned with the task-defined goal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on findings from earlier studies by the authors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "410a60ed-224a-4ccc-a1c1-49eef2e2f67d",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C13",
+      "claim": "Exogenous capture was minimized when the luminances of the cue and the non-cue were the same.",
+      "claim_type": "EXPLICIT",
+      "source": "As intended, exogenous capture was minimized when the luminances of the cue and the non-cue were the same (Figure 2a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "a9b32970-9911-445e-8a2f-81debe2fc9ca",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C14",
+      "claim": "For both pro and anti trials, the fraction correct hovers near 0.5 for processing times around 100 ms when cue and non-cue luminances are equal.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, for both pro (panel a) and anti trials (panel b), the fraction correct hovers near 0.5 for processing times around 100 ms, which is when the exogenous effect would be expected to be strongest (Salinas et al., 2019; Goldstein et al., 2022; Oor et al., 2023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2a and b, and by citations to prior work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "341ff339-0231-4df0-a2d2-b804323bdd82",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C15",
+      "claim": "Exogenous capture was reinstated when the cue and the non-cue differed in luminance.",
+      "claim_type": "EXPLICIT",
+      "source": "Also as intended, exogenous capture was reinstated when the cue and the non-cue differed in luminance (Figure 2c and d), with the exogenous signal always biasing the saccades toward the high-luminance stimulus.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "94c18f71-4604-44d4-81f5-897465f6a5f4",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C16",
+      "claim": "In pro trials, the salient cue produced a sharp, transient increase in the probability of making a correct prosaccade, whereas the salient non-cue produced a sharp, transient decrease.",
+      "claim_type": "EXPLICIT",
+      "source": "In pro trials (Figure 2c), the salient cue (dark curve) produced a sharp, transient increase in the probability of making a correct prosaccade, whereas the salient non-cue (light curve) produced a sharp, transient decrease.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "f47a269b-1f83-4495-a45f-b00741d41642",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C17",
+      "claim": "All capture effects were short-lived, peaking at rPT\u2248100 ms and mostly disappearing for rPT\u2273150 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "All of these capture effects were short-lived, peaking at rPT\u2248100 ms and mostly disappearing for rPT\u2273150 ms; thereafter, the endogenously driven rise toward asymptotic performance was, once again, basically the same across luminance conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of the tachometric curves shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "bed516e6-c0d5-4f6e-9d25-1beb03943313",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C18",
+      "claim": "Exogenous and endogenous influences are dissociable across processing time, and their effects on visuomotor performance are largely independent of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "These results confirm that exogenous and endogenous influences are dissociable across processing time, and that their effects on visuomotor performance are largely independent of each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental results presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "1113c1f8-2dda-4a08-9a73-8fd372ff3bba",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C19",
+      "claim": "The degree of exogenous capture varied quite dramatically across participants, from 0% to 100%.",
+      "claim_type": "EXPLICIT",
+      "source": "With the resulting data arranged according to the magnitude of the effect, it is clear that the degree of exogenous capture varied quite dramatically across participants, from 0% to 100%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of individual participant data shown in Figure 3b and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "9e17243d-68e4-4cd8-8583-f384fa5d8b28",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C21",
+      "claim": "The early exogenous signal always tracks the higher luminance stimulus, and the evoked exogenous response is the same regardless of the task rule.",
+      "claim_type": "EXPLICIT",
+      "source": "This result confirms that the early exogenous signal always tracks the higher luminance stimulus, and that the evoked exogenous response is the same regardless of the task rule.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental results showing symmetry of capture effects between pro and anti trials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "a2ce8cce-453e-4762-bfe1-264351e2f08f",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C23",
+      "claim": "Antisaccades consistently required more processing time than prosaccades to reach a comparable performance criterion.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the data from these 11 participants, a comparison between rise points indicated that antisaccades consistently required more processing time than prosaccades to reach a comparable performance criterion (Figure 4c, circles).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "0e777bd4-eebe-40b7-b099-4d217c601aa1",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C25",
+      "claim": "The rPT cost of an endogenously guided antisaccade relative to an endogenously guided prosaccade is about 25\u201335 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that the rPT cost of an endogenously guided antisaccade relative to an endogenously guided prosaccade is about 25\u201335 ms, and support the hypothesis that saccade plans are, to a degree, obligatorily coupled to endogenous attention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on multiple analyses of the experimental data presented in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "2285f7f4-9e45-43bb-9ab1-cf78544526ad",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C26",
+      "claim": "15 of the 18 participants guessed predominantly toward the cue rather than toward the non-cue.",
+      "claim_type": "EXPLICIT",
+      "source": "The results show that 15 of the 18 participants guessed predominantly toward the cue rather than toward the non-cue (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "f30ec7cf-a7e1-4261-8eef-b2f4a6d1ec56",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C29",
+      "claim": "The expected processing-time cost is 27 ms for zero bias.",
+      "claim_type": "EXPLICIT",
+      "source": "As indicated by the offset of the regression line in Figure 6c (dotted line), the expected cost is 27 ms for zero bias.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is based on regression analysis of the data shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "4bd69860-a3db-47e0-91ba-26c4e8d1fd38",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C30",
+      "claim": "The fraction of correct choices during the transition range was consistently higher for pro than for anti trials.",
+      "claim_type": "EXPLICIT",
+      "source": "The answer is yes. The fraction of correct choices during the transition range was consistently higher for pro than for anti trials (Figure 7e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "dd74ec90-faaf-4554-818b-a050fe7579ba",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C34",
+      "claim": "Generating a correct antisaccade requires about 30 ms more processing time than generating a correct prosaccade based on the same perceptual signal.",
+      "claim_type": "EXPLICIT",
+      "source": "According to the measured time courses, generating a correct antisaccade requires about 30 ms more processing time than generating a correct prosaccade based on the same perceptual signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "4af1933d-5262-4a72-a029-5d72d83e743c",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C35",
+      "claim": "Saccade plans elaborated during fixation are biased toward the location where attention is endogenously deployed, but the coupling is weak and can be willfully overridden very rapidly.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicate that saccade plans elaborated during fixation are biased toward the location where attention is endogenously deployed, but the coupling is weak and can be willfully overridden very rapidly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on the experimental results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "501ffb97-35e9-4c60-b54f-df5a1fd135ff",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C36",
+      "claim": "The observed coupling between endogenous attention and saccade planning is consistent with prior studies showing that endogenous attention and saccade planning can be dissociated.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with data showing that endogenous attention and saccade planning can be dissociated (Ignashchenkova et al., 2004; Thompson et al., 2005; Armstrong et al., 2009; Steinmetz and Moore, 2014; Klapetek et al., 2016; Li et al., 2021), our results are indicative of coupling that is comparatively weak in this direction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research and comparison with the current results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "01aa3082-586b-433a-9bc5-d277daa0b929",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C37",
+      "claim": "The time costs for making an eye movement to an attended cue location versus to an unattended non-cue location observed by Belopolsky and Theeuwes, 2009 were remarkably similar to those in the current study, on the order of 20\u201340 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, our results are comparable to those of Belopolsky and Theeuwes, 2009, who used a task in which participants made saccades to a target location that did or did not coincide with the location of an attended symbolic cue. They measured saccadic RTs that were much longer than in our case (roughly 500\u2013800 ms), and yet their derived time costs for making an eye movement to an attended cue location versus to an unattended non-cue location were remarkably similar to ours, on the order of 20\u201340 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on comparison with results from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "ee6ec68d-af67-4706-8c78-ee28149eee5a",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C38",
+      "claim": "When saccades are strongly biased (Experiments 3 and 4), the tachometric curves demonstrate the corresponding capture but then (briefly) go in the opposite direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, when saccades are strongly biased (Experiments 3 and 4), the tachometric curves demonstrate the corresponding capture but then (briefly) go in the opposite direction. This can be seen in the pro curves of Experiment 3 (Figure 3a, Figure 2\u2014figure supplement 2c, Figure 2\u2014figure supplement 3c, dark blue traces) and in the anti curves of Experiment 4 (Figure 3c, Figure 2\u2014figure supplement 2d, Figure 2\u2014figure supplement 3d, bright red traces); in both cases there is a sharp increase in accuracy during the capture window (approximately 83\u2013124 ms) that is then partially offset immediately afterward, before the final rise toward asymptotic performance.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "bd7fe30f-cbe6-4759-a010-76045b21d6c4",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C39",
+      "claim": "The exogenous response is automatically followed by a motor reaction in the opposite direction.",
+      "claim_type": "IMPLICIT",
+      "source": "It is as if the exogenous response was automatically followed by a motor reaction in the opposite direction. Perhaps the oculomotor circuitry is such that an exogenous signal can rapidly trigger a saccade, but if it does not, then the corresponding motor plan is rapidly suppressed regardless of anything else.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the observed downward rebound in the tachometric curves.",
+      "evidence_type": "[\"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "ddb7728c-a649-4109-8abb-67b58ee4dc38",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C40",
+      "claim": "In both exogenous and endogenous cases, a shift of spatial attention activates a motor plan that is either executed within a few tens of milliseconds (to trigger a saccade) or is rapidly suppressed.",
+      "claim_type": "IMPLICIT",
+      "source": "This idea suggests a symmetry with the effect of endogenous attention discussed in the previous paragraph: it appears that in both cases, exogenous and endogenous, a shift of spatial attention activates a motor plan that is either executed within a few tens of milliseconds (to trigger a saccade) or is rapidly suppressed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed patterns in the data.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "f4a79532-48df-45a2-8805-5e1c3d43438e",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C41",
+      "claim": "Saccade trajectories could deviate either toward a distracter or away from it depending on the time at which the distracter was shown.",
+      "claim_type": "EXPLICIT",
+      "source": "However, later studies showed that attention effects on saccade trajectories could be either repulsive or attractive (Van der Stigchel et al., 2006), and specifically demonstrated that saccade trajectories could deviate either toward a distracter or away from it depending on the time at which the distracter was shown (Theeuwes and Godijn, 2004; McSorley et al., 2006; Giuricich et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "e2b8a0a9-9049-4024-9913-50c65f5db34a",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C42",
+      "claim": "The fundamental factors that determine behavior in prosaccade/antisaccade tasks are the magnitudes of the resulting exogenous and endogenous signals, and whether they are aligned or misaligned.",
+      "claim_type": "EXPLICIT",
+      "source": "We think that, more than the specific task instructions or the structure of the event sequence, the fundamental factors that determine behavior in all of these cases are the magnitudes of the resulting exogenous and endogenous signals, and whether they are aligned or misaligned.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the authors' interpretation of their results and prior work.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "72ba64c5-b9bb-4b9e-9834-c22839a550d4",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C43",
+      "claim": "The spatial signal encoded by neurons in monkey prefrontal cortex during the antisaccade task can be accurately predicted from their stimulus- and saccade-related responses during a memory guided saccade task.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent study (Zhu et al., 2024) showed that the spatial signal encoded by neurons in monkey prefrontal cortex during the antisaccade task can be accurately predicted from their stimulus- and saccade-related responses during a simpler task that involves no spatial conflict whatsoever (a memory guided saccade task).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to a recent study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "7840ee8f-37aa-42df-9942-90f7087b8c7c",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C44",
+      "claim": "At the circuit level, the dynamics of target selection are dictated by the relative strengths of the exogenous and endogenous activations and their congruency in space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "That is, these two independent response components explained the evolving attentional pointer observed during a typical antisaccade trial. This indicates that, at the circuit level, the dynamics of target selection are dictated by the relative strengths of the exogenous and endogenous activations and their congruency in space and time, however such activations are generated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the cited study and the authors' interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "73bc27bd-327f-4f12-abea-98b77421dfb1",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C45",
+      "claim": "Temporal dependencies are much more accurately resolved when the fixation requirement is removed earlier and processing time is considered (instead of RT).",
+      "claim_type": "EXPLICIT",
+      "source": "A critical conclusion from our work is that temporal dependencies are much more accurately resolved when the fixation requirement is removed earlier and processing time is considered (instead of RT).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the authors' experimental approach and results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "36bfec3a-9ce1-4a63-afe2-7d7e14b39b46",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C46",
+      "claim": "Prior studies have shown that the effect of salience on saccadic choices is transient.",
+      "claim_type": "EXPLICIT",
+      "source": "Prior studies have shown that the effect of salience on saccadic choices is transient (Donk and van Zoest, 2008; Siebold et al., 2011; Anderson et al., 2015), that stimulus-driven and goal-driven control signals on visual selection are distinct and can be temporally dissociated (van Zoest et al., 2004), and that in the transition between them there is a moment of ambiguity wherein choices are dictated by neither (van Heusden et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "98f41433-ad5e-4fc0-9cd5-19bae12cda8a",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C47",
+      "claim": "Spatial attention dynamics in oculomotor circuits can vary more rapidly and abruptly than is generally appreciated.",
+      "claim_type": "EXPLICIT",
+      "source": "The broader lesson is that spatial attention dynamics in oculomotor circuits can vary more rapidly and abruptly than is generally appreciated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the authors' experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "9d715ac9-cc7a-4178-bf11-834e703d5aae",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C48",
+      "claim": "Saccades can go from being predominantly triggered in one direction to predominantly triggered in the opposite direction easily within 30\u201350 ms.",
+      "claim_type": "EXPLICIT",
+      "source": "Saccades can go from being predominantly triggered in one direction to predominantly triggered in the opposite direction easily within 30\u201350 ms, and more than one such shift may occur in sequence (Figure 2c and d, Figure 2\u2014figure supplement 2c and d, Figure 2\u2014figure supplement 4c) as a consequence of distinct mechanisms interacting.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "0d69ea12-25f0-4b4d-ac4e-3817a3491873",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C49",
+      "claim": "Eighteen human participants (11 female, 7 male) with a median age of 28 years (range, 24\u201363) were recruited and performed all four experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Eighteen human participants (11 female, 7 male) were recruited and performed all four experiments (Methods). Thus, each participant generated data and a corresponding tachometric curve from two trial types (pro or anti) times four experiments for a total of eight experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental participants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "d543a139-a39d-4abd-8abe-8a0c33b16618",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C51",
+      "claim": "The exogenous response window was set to 83\u2013124 ms based on the tachometric curves from the reliable performers.",
+      "claim_type": "EXPLICIT",
+      "source": "This exogenous response window was set to 83\u2013124 ms based on the tachometric curves from the reliable performers (Figure 3a and c, shaded areas).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a methodological decision based on the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "5f808951-1076-48f6-9320-c7fe8cb88046",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C53",
+      "claim": "The rise point from pro trials was 165 ms (in [158, 172] ms, 95% CI from bootstrap), whereas for anti trials it was 194 ms (in [191, 196] ms) when pooling data from Experiments 1 and 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Via sigmoidal fits, rise points were obtained for each of these curves (Figure 4d, vertical lines). Computed this way, the rise point from pro trials was 165 ms (in [158, 172] ms, 95% CI from bootstrap), whereas for anti trials it was 194 ms (in [191, 196] ms).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by statistical analysis of the experimental data shown in Figure 4d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "dca800e4-d570-43a6-b53a-869dafbbfae7",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C54",
+      "claim": "The rise point for pro trials was 152 ms (in [146, 157] ms, 95% CI), for anti trials it was 187 ms (in [185, 189] ms), and the difference was 35 ms when pooling data from Experiments 3 and 4.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, the rise point for pro trials was 152 ms (in [146, 157] ms, 95% CI), for anti trials it was 187 ms (in [185, 189] ms), and the difference was 35 ms.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by statistical analysis of the experimental data shown in Figure 4e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "3eb047ad-94a5-4010-afe9-6a0c7c958cfe",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C55",
+      "claim": "The differences in processing time between pro and anti trials were 24 ms for the aggregate curves from Experiments 1 and 2, and 34 ms for the aggregate curves from Experiments 3 and 4 when using a fixed performance criterion of 70% correct.",
+      "claim_type": "EXPLICIT",
+      "source": "These analyses were based on the rise points of the fitted sigmoidal functions, but results were very similar when using a fixed performance criterion of 70% correct to define the typical processing time required to make an informed choice (Methods). In that case, the differences in processing time between pro and anti trials were 24 ms for the aggregate curves from Experiments 1 and 2, and 34 ms for the aggregate curves from Experiments 3 and 4.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by alternative analysis of the experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "68d4bfdd-8cbf-4f76-8f49-9b626efafabe",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C56",
+      "claim": "The informed antisaccades were consistently delayed even in Experiment 4, in which motor plans were strongly biased toward the non-cue by the early exogenous signal.",
+      "claim_type": "EXPLICIT",
+      "source": "Most notably, the informed antisaccades were consistently delayed even in Experiment 4, in which motor plans were strongly biased toward the non-cue by the early exogenous signal (Figure 3c, Figure 2\u2014figure supplement 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "da8bd32c-127d-48f2-8613-4d5e9e6d95cd",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C57",
+      "claim": "Producing an informed antisaccade required about 30 ms more of processing time than producing a similarly informed prosaccade, but this number varied by an additional amount in proportion to the strength of the initial bias toward or away from the cue.",
+      "claim_type": "EXPLICIT",
+      "source": "So, in general, producing an informed antisaccade required about 30 ms more of processing time than producing a similarly informed prosaccade, but this number varied by an additional amount in proportion to the strength of the initial bias toward or away from the cue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on analysis of the relationship between processing-time cost and motor bias.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "a22c0c5f-15d0-4dd7-818a-cf0bcfd5f9e9",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C58",
+      "claim": "In Experiment 4, pro trials demonstrate significantly higher accuracy than anti trials in the transition range in spite of the fact that, during the preceding capture interval, pro trials were at a huge disadvantage.",
+      "claim_type": "EXPLICIT",
+      "source": "Again, the most notable result is for Experiment 4: in that case, pro trials demonstrate significantly higher accuracy than anti trials in the transition range (Figure 7e, orange points) in spite of the fact that, during the preceding capture interval, pro trials were at a huge disadvantage (Figure 7d; compare blue vs. red bars in C and T ranges).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 7d and 7e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "c41b7388-ee0e-4fa0-bc57-2f43985bc0a8",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "claim_id": "C59",
+      "claim": "The main consequence of the motor bias was to induce an asymmetry in timing and accuracy between pro- and antisaccades.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the bias did not incur an obvious disadvantage in terms of average success in the task. Its main consequence was simply to induce an asymmetry in timing and accuracy between pro- and antisaccades (Figures 6c and 7f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a conclusion drawn from the analysis of the relationship between motor bias and performance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "f91c41ed-add8-4587-9a89-0100331f13fb",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript reviews established knowledge about the bidirectional coupling between saccades and visuospatial attention, noting that while saccade planning commits attention to the endpoint (presaccadic attention), the reverse relationship\u2014how endogenous attention influences saccade planning\u2014is less clear and can be dissociated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C9 accurately summarize well-established findings from the literature with appropriate citations. These claims provide necessary background context and are supported by extensive prior research, though they represent prior work rather than novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "2a03abcb-89d6-47b9-b896-9b84c309ab20",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Prior work by the authors demonstrated that exogenous and endogenous signals in urgent pro/antisaccade tasks act at different times and independently, with exogenous responses manifesting as early involuntary captured saccades (~100 ms) and endogenous responses as later deliberate rises in performance (~150 ms).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C12 accurately describe findings from the authors' earlier publications (cited as Salinas et al., 2019; Goldstein et al., 2022). These claims establish the foundation for the current study and are appropriately attributed to prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "e029edfb-a58c-4265-a410-859f50344bab",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Exogenous capture was successfully manipulated by varying cue and non-cue luminances: equal luminances minimized capture (performance near chance at ~100 ms rPT), while luminance differences reinstated capture as transient biases toward the brighter stimulus, peaking at ~100 ms and dissipating by ~150 ms, demonstrating independence of exogenous and endogenous influences.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C18 are well-supported by the tachometric curves in Figure 2 showing clear luminance-dependent effects. The experimental manipulation successfully isolated exogenous from endogenous components, with appropriate statistical support (n=11 reliable performers) and consistent patterns across conditions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "f62cd001-074e-4187-a26d-53d25b21db74",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Individual variability in exogenous capture ranged from 0-100%, but the magnitude was symmetric between pro and anti trials (p=0.8 across participants, p=0.5 and p=0.2 for pooled trials), confirming that exogenous signals track luminance regardless of task rules, with effects occurring in an 83-124 ms window.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C21, and C51 are supported by Figure 3 data with appropriate statistical tests. The symmetry analysis provides strong evidence that exogenous capture is stimulus-driven rather than task-dependent. However, the choice of the 83-124 ms window, while data-driven, involves some circularity as it was defined based on the same data being analyzed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "d8f0ec03-2948-4c27-a02a-f024566ffc7e",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Antisaccades consistently required 25-35 ms more processing time than prosaccades to reach comparable performance criteria, with rise points of 165 ms (pro) vs 194 ms (anti) for Experiments 1+2 and 152 ms (pro) vs 187 ms (anti) for Experiments 3+4, even when exogenous signals biased against the antisaccade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C56 are well-supported by multiple converging analyses (Figure 4) including individual rise points (p=0.008, n=11), aggregate curves with bootstrapped confidence intervals, and alternative criterion-based measures (24-34 ms differences). The consistency across different analytical approaches and experimental conditions strengthens the conclusion. The n=11 sample after applying modulation criteria is adequate but represents a subset of participants.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "a629b88b-7845-4508-9bc2-9965a8b685fd",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Fifteen of 18 participants showed a motor bias toward the attended cue location during early guesses (rPT \u226475 ms), with the mean fraction of cue-directed guesses significantly above 0.5 across participants (p=0.00006), experimental conditions (p=0.00003), and pooled trials (p=10^-48).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C26 is strongly supported by Figure 5 data with robust statistical evidence across multiple levels of analysis. The effect is highly significant and consistent, though individual variability is substantial (3 of 18 participants showed opposite bias).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "02f5c3e2-a27e-4622-b89b-33abbc568902",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The processing-time cost for antisaccades (~30 ms baseline) varied proportionally with initial motor bias strength (correlation \u03c1=0.59, p=0.026), with an expected 27 ms cost at zero bias, though the bias primarily induced timing/accuracy asymmetries rather than overall performance deficits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C57, and C59 are supported by regression analysis in Figure 6c showing moderate positive correlation. The 27 ms intercept provides evidence for a baseline cost independent of bias. However, the correlation is moderate (\u03c1=0.59) with n=12 participants meeting fit criteria, and the relationship could be influenced by individual differences in task strategy.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "0190c9b6-946b-4720-9657-5b46d28679a7",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "During the transition range (135-200 ms rPT), prosaccades showed consistently higher accuracy than antisaccades across all experiments (p<10^-5 pooled, p\u22640.003 individual experiments), including Experiment 4 where exogenous capture strongly disadvantaged prosaccades.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C58 are well-supported by Figure 7e data with strong statistical evidence. The finding in Experiment 4 is particularly compelling as it demonstrates the endogenous effect persists even when opposing a strong exogenous bias, though the transition range definition (135-200 ms) is somewhat arbitrary.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "93383e49-fc34-4d69-a421-5abd1d15d2c8",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study concludes that generating correct antisaccades requires ~30 ms more processing time than prosaccades, and that saccade plans during fixation are biased toward endogenously attended locations but with weak coupling that can be rapidly overridden.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34 and C35 represent the main conclusions, well-supported by converging evidence from multiple analyses (Figures 4-7). The ~30 ms estimate is consistent across different analytical approaches. The characterization of 'weak' coupling is justified by the rapid override capability and individual variability, though 'weak' is somewhat subjective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "f3c0ca3f-e3bf-48dd-a208-49684f72bf73",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The observed weak coupling between endogenous attention and saccade planning is consistent with prior dissociation studies, and the 20-40 ms time costs are remarkably similar to those reported by Belopolsky and Theeuwes (2009) despite very different reaction time ranges.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36 and C37 appropriately contextualize the findings within existing literature. The comparison to Belopolsky and Theeuwes (2009) is valid and strengthens the interpretation, though the tasks differ substantially in design and the convergence could be coincidental.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "79119d2e-62e4-4182-8a69-e49147f51093",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In Experiments 3 and 4, tachometric curves showed a 'downward rebound' after exogenous capture, suggesting that if an exogenous signal doesn't trigger a saccade within tens of milliseconds, the corresponding motor plan is rapidly suppressed, potentially reflecting a general mechanism where attention shifts activate motor plans that are either executed or quickly suppressed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C40 describe an interesting pattern in the data (visible in Figure 2c,d and supplements), but C39 and C40 are speculative interpretations ('as if', 'perhaps', 'it appears'). The downward rebound is real but the mechanistic explanation is not directly tested. Alternative explanations (e.g., statistical artifacts, task-specific strategies) are not ruled out.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "04121003-838c-40ca-9310-97f415f9d0ec",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors argue that behavior in prosaccade/antisaccade tasks is fundamentally determined by the magnitudes and spatial/temporal alignment of exogenous and endogenous signals rather than specific task instructions, supported by prior work showing that prefrontal cortex responses during antisaccades can be predicted from simpler tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 present a theoretical framework supported by appropriate citations. C42 is an inference/interpretation rather than a direct finding, but it's reasonable given the data. C43 and C44 appropriately cite Zhu et al. (2024) to support the generalizability of the framework, though this relies on cross-species extrapolation (monkey to human).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "9d306080-24d4-40bd-9d65-459c08727625",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The urgent task design with processing time (rPT) analysis reveals that attentional dynamics evolve much more rapidly than typically appreciated, with saccades shifting direction within 30-50 ms, recapitulating phenomena from prior studies (transient salience effects, stimulus/goal-driven dissociation) but on faster timescales.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by the tachometric curve data showing rapid transitions. C46 appropriately cites prior work, and C47-C48 are justified conclusions from the observed dynamics. The urgent paradigm does provide superior temporal resolution compared to traditional RT-based approaches, though the claim that dynamics are 'more rapid than generally appreciated' is somewhat subjective.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "0294c767-629a-4d52-8844-fb666f60b4e5",
+      "content_id": "e84e8fa1-998d-43db-90c5-4be84957f6f3",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Eighteen participants (11 female, 7 male, median age 28, range 24-63) completed all four experiments, generating eight experimental conditions per participant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C49 is a straightforward methodological description that is adequately documented. Sample size is reasonable for this type of psychophysical study, though the age range is quite broad which could introduce variability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45",
+      "content_id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study demonstrates temporal dissociation between exogenous and endogenous attention signals in urgent saccade tasks. Exogenous capture occurs early (~100 ms), is luminance-dependent, and involuntary, while endogenous responses emerge later (~150 ms) and align with task goals. These signals act independently across processing time.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm this core finding. Reviewer 1 states the authors 'capitalize on their novel urgent saccade task to dissociate the effects of endogenous and exogenous attention' and notes 'the behavioral interplay of two forms of attention...are illustrated at the level of tens of milliseconds.' Reviewer 2 confirms 'the findings...indicate that saccade planning is influenced by the locus of endogenous attention, but that this influence was short-lasting.' The editor describes the evidence as 'convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "cdfe629c-190b-490c-9601-ecd9981834bb",
+      "content_id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Individual variability in exogenous capture ranged dramatically from 0% to 100% across participants, but the exogenous signal consistently tracked the higher luminance stimulus regardless of task rule (pro vs. anti).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these findings about individual differences or the luminance-tracking property of exogenous signals. Reviewer 1 emphasizes the study's strength in 'carefully measure[ing] the time course' across 'well-controlled experimental conditions,' implicitly accepting the reported variability and consistency patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "127521c8-185a-4bc4-a9a0-d821ad7efb38",
+      "content_id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Antisaccades consistently required 25-35 ms more processing time than prosaccades to reach comparable performance criteria, indicating obligatory coupling between saccade plans and endogenous attention. This delay persisted even when motor plans were strongly biased by exogenous signals.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly states 'the findings...indicate that saccade planning is influenced by the locus of endogenous attention,' directly supporting the coupling claim. Reviewer 1 notes the authors 'make meaningful claims about the time course of visual behavior, attention, and the potential neural mechanisms at a timescale relevant to everyday human behavior,' affirming the temporal precision of these measurements. No reviewer challenges the 25-35 ms estimate.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "e06367e9-893f-48de-9728-c81af044da09",
+      "content_id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Most participants (15/18) showed a motor bias toward the cue location during fixation. This bias correlated with processing-time costs: stronger bias toward the cue increased the cost for antisaccades but decreased it for prosaccades. The expected cost at zero bias was 27 ms.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings without challenge. Reviewer 1 emphasizes the study's ability to 'carefully measure the time course of the interaction between attention and eye movements in various well-controlled experimental conditions,' which encompasses these bias-related measurements. The editor describes the evidence as 'convincing.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "c3197986-e31f-4f19-94b9-208763d79e72",
+      "content_id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "During the transition period between exogenous and endogenous control, prosaccades showed consistently higher accuracy than antisaccades across experiments, even when prosaccades were at a disadvantage during the preceding capture interval.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question this finding. Reviewer 1 notes the study 'illustrate[s]' attention dynamics 'at the level of tens of milliseconds as they interact with the planning and execution of saccades,' implicitly accepting the detailed temporal patterns including transition-period differences.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "97c68e1d-07a7-4829-829c-f816cc35ae55",
+      "content_id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Generating a correct antisaccade requires ~30 ms more processing time than a prosaccade. Saccade plans during fixation are biased toward endogenously attended locations, but this coupling is weak and can be rapidly overridden, consistent with prior dissociation studies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 directly confirms 'saccade planning is influenced by the locus of endogenous attention, but that this influence was short-lasting and could be overcome quickly,' precisely matching the authors' conclusion. Reviewer 1 affirms the authors 'find that attention and eye movements are, to some extent, linked to one another but that this link is transient.' No concerns are raised about the ~30 ms estimate or the weak coupling interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "b7d0e880-d9f9-4be1-b206-2f21b54a8b0d",
+      "content_id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "When saccades are strongly biased, tachometric curves show a brief reversal after exogenous capture, suggesting that shifts of spatial attention (both exogenous and endogenous) activate motor plans that are either executed within tens of milliseconds or rapidly suppressed.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this observation or interpretation. Reviewer 1 notes the study reveals 'the behavioral interplay of two forms of attention...at the level of tens of milliseconds,' which encompasses these rapid reversal dynamics. The speculative mechanism is presented as interpretation rather than definitive claim, and reviewers accept it within that framing.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "7afaf5e7-31be-4200-a1e5-f5af4dbd9118",
+      "content_id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The urgent saccade paradigm with early gap removal and processing time analysis reveals that spatial attention dynamics in oculomotor circuits vary more rapidly than generally appreciated, with saccade direction reversing within 30-50 ms as distinct mechanisms interact.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly states the study's findings 'reveal new dynamics between endogenous attention and eye movement control and lead the way for studying them using experiments under time-pressure,' directly endorsing the methodological and conceptual advance. Reviewer 1 emphasizes the study's strength in measuring 'the time course...at a timescale relevant to everyday human behavior.' The editor calls the study 'important' and the evidence 'convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "d0306c0e-813e-41d5-9f2f-3c645c321425",
+      "content_id": "4f949011-20a5-4e8d-838a-7254087e6356",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The fundamental factors determining behavior in prosaccade/antisaccade tasks are the magnitudes and spatial/temporal alignment of exogenous and endogenous signals. At the circuit level, target selection dynamics are dictated by the relative strengths and congruency of these activations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this integrative framework. Reviewer 1 states the results 'allow the authors to make meaningful claims about...the potential neural mechanisms,' affirming the circuit-level interpretation. Reviewer 2 notes the study advances understanding of 'their control by brain mechanisms for attention.' The editor describes the study as advancing understanding of 'cortical mechanisms of eye movements and the cognitive process of attention.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "46e8726e-71bb-4741-a13a-07208289fe95",
+      "result_id": "f91c41ed-add8-4587-9a89-0100331f13fb"
+    },
+    {
+      "claim_id": "3cf8d7d2-1a66-4a89-98ca-d4a37ef9f9f0",
+      "result_id": "f91c41ed-add8-4587-9a89-0100331f13fb"
+    },
+    {
+      "claim_id": "6a57e153-8f02-40dd-bec2-7144322aae6c",
+      "result_id": "f91c41ed-add8-4587-9a89-0100331f13fb"
+    },
+    {
+      "claim_id": "de3f34a1-d689-434c-9c4e-4681116b55f3",
+      "result_id": "f91c41ed-add8-4587-9a89-0100331f13fb"
+    },
+    {
+      "claim_id": "bfc05086-a5ad-4429-b40b-2f577b925adf",
+      "result_id": "f91c41ed-add8-4587-9a89-0100331f13fb"
+    },
+    {
+      "claim_id": "82eadd64-1951-4bcc-903c-35e22c059020",
+      "result_id": "f91c41ed-add8-4587-9a89-0100331f13fb"
+    },
+    {
+      "claim_id": "07b0659f-030b-42b8-a68e-b2ff1c57ad95",
+      "result_id": "f91c41ed-add8-4587-9a89-0100331f13fb"
+    },
+    {
+      "claim_id": "9c2e2668-f775-4246-8c41-8a6d5228b596",
+      "result_id": "f91c41ed-add8-4587-9a89-0100331f13fb"
+    },
+    {
+      "claim_id": "a14d7a5e-1edd-467e-8a14-80b493e159c0",
+      "result_id": "f91c41ed-add8-4587-9a89-0100331f13fb"
+    },
+    {
+      "claim_id": "efb92de9-77d5-48d1-9403-653717e25fd4",
+      "result_id": "2a03abcb-89d6-47b9-b896-9b84c309ab20"
+    },
+    {
+      "claim_id": "5373476c-9adc-46bd-aee5-f9b6245f3b57",
+      "result_id": "2a03abcb-89d6-47b9-b896-9b84c309ab20"
+    },
+    {
+      "claim_id": "2370d0bb-8c4b-4d60-b20f-0fd0162c9e93",
+      "result_id": "2a03abcb-89d6-47b9-b896-9b84c309ab20"
+    },
+    {
+      "claim_id": "410a60ed-224a-4ccc-a1c1-49eef2e2f67d",
+      "result_id": "e029edfb-a58c-4265-a410-859f50344bab"
+    },
+    {
+      "claim_id": "a9b32970-9911-445e-8a2f-81debe2fc9ca",
+      "result_id": "e029edfb-a58c-4265-a410-859f50344bab"
+    },
+    {
+      "claim_id": "341ff339-0231-4df0-a2d2-b804323bdd82",
+      "result_id": "e029edfb-a58c-4265-a410-859f50344bab"
+    },
+    {
+      "claim_id": "94c18f71-4604-44d4-81f5-897465f6a5f4",
+      "result_id": "e029edfb-a58c-4265-a410-859f50344bab"
+    },
+    {
+      "claim_id": "f47a269b-1f83-4495-a45f-b00741d41642",
+      "result_id": "e029edfb-a58c-4265-a410-859f50344bab"
+    },
+    {
+      "claim_id": "bed516e6-c0d5-4f6e-9d25-1beb03943313",
+      "result_id": "e029edfb-a58c-4265-a410-859f50344bab"
+    },
+    {
+      "claim_id": "1113c1f8-2dda-4a08-9a73-8fd372ff3bba",
+      "result_id": "f62cd001-074e-4187-a26d-53d25b21db74"
+    },
+    {
+      "claim_id": "9e17243d-68e4-4cd8-8583-f384fa5d8b28",
+      "result_id": "f62cd001-074e-4187-a26d-53d25b21db74"
+    },
+    {
+      "claim_id": "d543a139-a39d-4abd-8abe-8a0c33b16618",
+      "result_id": "f62cd001-074e-4187-a26d-53d25b21db74"
+    },
+    {
+      "claim_id": "a2ce8cce-453e-4762-bfe1-264351e2f08f",
+      "result_id": "d8f0ec03-2948-4c27-a02a-f024566ffc7e"
+    },
+    {
+      "claim_id": "0e777bd4-eebe-40b7-b099-4d217c601aa1",
+      "result_id": "d8f0ec03-2948-4c27-a02a-f024566ffc7e"
+    },
+    {
+      "claim_id": "5f808951-1076-48f6-9320-c7fe8cb88046",
+      "result_id": "d8f0ec03-2948-4c27-a02a-f024566ffc7e"
+    },
+    {
+      "claim_id": "dca800e4-d570-43a6-b53a-869dafbbfae7",
+      "result_id": "d8f0ec03-2948-4c27-a02a-f024566ffc7e"
+    },
+    {
+      "claim_id": "3eb047ad-94a5-4010-afe9-6a0c7c958cfe",
+      "result_id": "d8f0ec03-2948-4c27-a02a-f024566ffc7e"
+    },
+    {
+      "claim_id": "68d4bfdd-8cbf-4f76-8f49-9b626efafabe",
+      "result_id": "d8f0ec03-2948-4c27-a02a-f024566ffc7e"
+    },
+    {
+      "claim_id": "2285f7f4-9e45-43bb-9ab1-cf78544526ad",
+      "result_id": "a629b88b-7845-4508-9bc2-9965a8b685fd"
+    },
+    {
+      "claim_id": "f30ec7cf-a7e1-4261-8eef-b2f4a6d1ec56",
+      "result_id": "02f5c3e2-a27e-4622-b89b-33abbc568902"
+    },
+    {
+      "claim_id": "da8bd32c-127d-48f2-8613-4d5e9e6d95cd",
+      "result_id": "02f5c3e2-a27e-4622-b89b-33abbc568902"
+    },
+    {
+      "claim_id": "c41b7388-ee0e-4fa0-bc57-2f43985bc0a8",
+      "result_id": "02f5c3e2-a27e-4622-b89b-33abbc568902"
+    },
+    {
+      "claim_id": "4bd69860-a3db-47e0-91ba-26c4e8d1fd38",
+      "result_id": "0190c9b6-946b-4720-9657-5b46d28679a7"
+    },
+    {
+      "claim_id": "a22c0c5f-15d0-4dd7-818a-cf0bcfd5f9e9",
+      "result_id": "0190c9b6-946b-4720-9657-5b46d28679a7"
+    },
+    {
+      "claim_id": "dd74ec90-faaf-4554-818b-a050fe7579ba",
+      "result_id": "93383e49-fc34-4d69-a421-5abd1d15d2c8"
+    },
+    {
+      "claim_id": "4af1933d-5262-4a72-a029-5d72d83e743c",
+      "result_id": "93383e49-fc34-4d69-a421-5abd1d15d2c8"
+    },
+    {
+      "claim_id": "501ffb97-35e9-4c60-b54f-df5a1fd135ff",
+      "result_id": "f3c0ca3f-e3bf-48dd-a208-49684f72bf73"
+    },
+    {
+      "claim_id": "01aa3082-586b-433a-9bc5-d277daa0b929",
+      "result_id": "f3c0ca3f-e3bf-48dd-a208-49684f72bf73"
+    },
+    {
+      "claim_id": "ee6ec68d-af67-4706-8c78-ee28149eee5a",
+      "result_id": "79119d2e-62e4-4182-8a69-e49147f51093"
+    },
+    {
+      "claim_id": "bd7fe30f-cbe6-4759-a010-76045b21d6c4",
+      "result_id": "79119d2e-62e4-4182-8a69-e49147f51093"
+    },
+    {
+      "claim_id": "ddb7728c-a649-4109-8abb-67b58ee4dc38",
+      "result_id": "79119d2e-62e4-4182-8a69-e49147f51093"
+    },
+    {
+      "claim_id": "f4a79532-48df-45a2-8805-5e1c3d43438e",
+      "result_id": "04121003-838c-40ca-9310-97f415f9d0ec"
+    },
+    {
+      "claim_id": "e2b8a0a9-9049-4024-9913-50c65f5db34a",
+      "result_id": "04121003-838c-40ca-9310-97f415f9d0ec"
+    },
+    {
+      "claim_id": "72ba64c5-b9bb-4b9e-9834-c22839a550d4",
+      "result_id": "04121003-838c-40ca-9310-97f415f9d0ec"
+    },
+    {
+      "claim_id": "7840ee8f-37aa-42df-9942-90f7087b8c7c",
+      "result_id": "04121003-838c-40ca-9310-97f415f9d0ec"
+    },
+    {
+      "claim_id": "73bc27bd-327f-4f12-abea-98b77421dfb1",
+      "result_id": "9d306080-24d4-40bd-9d65-459c08727625"
+    },
+    {
+      "claim_id": "36bfec3a-9ce1-4a63-afe2-7d7e14b39b46",
+      "result_id": "9d306080-24d4-40bd-9d65-459c08727625"
+    },
+    {
+      "claim_id": "98f41433-ad5e-4fc0-9cd5-19bae12cda8a",
+      "result_id": "9d306080-24d4-40bd-9d65-459c08727625"
+    },
+    {
+      "claim_id": "9d715ac9-cc7a-4178-bf11-834e703d5aae",
+      "result_id": "9d306080-24d4-40bd-9d65-459c08727625"
+    },
+    {
+      "claim_id": "0d69ea12-25f0-4b4d-ac4e-3817a3491873",
+      "result_id": "0294c767-629a-4d52-8844-fb666f60b4e5"
+    },
+    {
+      "claim_id": "efb92de9-77d5-48d1-9403-653717e25fd4",
+      "result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45"
+    },
+    {
+      "claim_id": "5373476c-9adc-46bd-aee5-f9b6245f3b57",
+      "result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45"
+    },
+    {
+      "claim_id": "2370d0bb-8c4b-4d60-b20f-0fd0162c9e93",
+      "result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45"
+    },
+    {
+      "claim_id": "410a60ed-224a-4ccc-a1c1-49eef2e2f67d",
+      "result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45"
+    },
+    {
+      "claim_id": "a9b32970-9911-445e-8a2f-81debe2fc9ca",
+      "result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45"
+    },
+    {
+      "claim_id": "341ff339-0231-4df0-a2d2-b804323bdd82",
+      "result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45"
+    },
+    {
+      "claim_id": "94c18f71-4604-44d4-81f5-897465f6a5f4",
+      "result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45"
+    },
+    {
+      "claim_id": "f47a269b-1f83-4495-a45f-b00741d41642",
+      "result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45"
+    },
+    {
+      "claim_id": "bed516e6-c0d5-4f6e-9d25-1beb03943313",
+      "result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45"
+    },
+    {
+      "claim_id": "1113c1f8-2dda-4a08-9a73-8fd372ff3bba",
+      "result_id": "cdfe629c-190b-490c-9601-ecd9981834bb"
+    },
+    {
+      "claim_id": "9e17243d-68e4-4cd8-8583-f384fa5d8b28",
+      "result_id": "cdfe629c-190b-490c-9601-ecd9981834bb"
+    },
+    {
+      "claim_id": "a2ce8cce-453e-4762-bfe1-264351e2f08f",
+      "result_id": "127521c8-185a-4bc4-a9a0-d821ad7efb38"
+    },
+    {
+      "claim_id": "0e777bd4-eebe-40b7-b099-4d217c601aa1",
+      "result_id": "127521c8-185a-4bc4-a9a0-d821ad7efb38"
+    },
+    {
+      "claim_id": "5f808951-1076-48f6-9320-c7fe8cb88046",
+      "result_id": "127521c8-185a-4bc4-a9a0-d821ad7efb38"
+    },
+    {
+      "claim_id": "dca800e4-d570-43a6-b53a-869dafbbfae7",
+      "result_id": "127521c8-185a-4bc4-a9a0-d821ad7efb38"
+    },
+    {
+      "claim_id": "3eb047ad-94a5-4010-afe9-6a0c7c958cfe",
+      "result_id": "127521c8-185a-4bc4-a9a0-d821ad7efb38"
+    },
+    {
+      "claim_id": "68d4bfdd-8cbf-4f76-8f49-9b626efafabe",
+      "result_id": "127521c8-185a-4bc4-a9a0-d821ad7efb38"
+    },
+    {
+      "claim_id": "da8bd32c-127d-48f2-8613-4d5e9e6d95cd",
+      "result_id": "127521c8-185a-4bc4-a9a0-d821ad7efb38"
+    },
+    {
+      "claim_id": "2285f7f4-9e45-43bb-9ab1-cf78544526ad",
+      "result_id": "e06367e9-893f-48de-9728-c81af044da09"
+    },
+    {
+      "claim_id": "f30ec7cf-a7e1-4261-8eef-b2f4a6d1ec56",
+      "result_id": "e06367e9-893f-48de-9728-c81af044da09"
+    },
+    {
+      "claim_id": "da8bd32c-127d-48f2-8613-4d5e9e6d95cd",
+      "result_id": "e06367e9-893f-48de-9728-c81af044da09"
+    },
+    {
+      "claim_id": "c41b7388-ee0e-4fa0-bc57-2f43985bc0a8",
+      "result_id": "e06367e9-893f-48de-9728-c81af044da09"
+    },
+    {
+      "claim_id": "4bd69860-a3db-47e0-91ba-26c4e8d1fd38",
+      "result_id": "c3197986-e31f-4f19-94b9-208763d79e72"
+    },
+    {
+      "claim_id": "a22c0c5f-15d0-4dd7-818a-cf0bcfd5f9e9",
+      "result_id": "c3197986-e31f-4f19-94b9-208763d79e72"
+    },
+    {
+      "claim_id": "dd74ec90-faaf-4554-818b-a050fe7579ba",
+      "result_id": "97c68e1d-07a7-4829-829c-f816cc35ae55"
+    },
+    {
+      "claim_id": "4af1933d-5262-4a72-a029-5d72d83e743c",
+      "result_id": "97c68e1d-07a7-4829-829c-f816cc35ae55"
+    },
+    {
+      "claim_id": "501ffb97-35e9-4c60-b54f-df5a1fd135ff",
+      "result_id": "97c68e1d-07a7-4829-829c-f816cc35ae55"
+    },
+    {
+      "claim_id": "01aa3082-586b-433a-9bc5-d277daa0b929",
+      "result_id": "97c68e1d-07a7-4829-829c-f816cc35ae55"
+    },
+    {
+      "claim_id": "ee6ec68d-af67-4706-8c78-ee28149eee5a",
+      "result_id": "b7d0e880-d9f9-4be1-b206-2f21b54a8b0d"
+    },
+    {
+      "claim_id": "bd7fe30f-cbe6-4759-a010-76045b21d6c4",
+      "result_id": "b7d0e880-d9f9-4be1-b206-2f21b54a8b0d"
+    },
+    {
+      "claim_id": "ddb7728c-a649-4109-8abb-67b58ee4dc38",
+      "result_id": "b7d0e880-d9f9-4be1-b206-2f21b54a8b0d"
+    },
+    {
+      "claim_id": "73bc27bd-327f-4f12-abea-98b77421dfb1",
+      "result_id": "7afaf5e7-31be-4200-a1e5-f5af4dbd9118"
+    },
+    {
+      "claim_id": "36bfec3a-9ce1-4a63-afe2-7d7e14b39b46",
+      "result_id": "7afaf5e7-31be-4200-a1e5-f5af4dbd9118"
+    },
+    {
+      "claim_id": "98f41433-ad5e-4fc0-9cd5-19bae12cda8a",
+      "result_id": "7afaf5e7-31be-4200-a1e5-f5af4dbd9118"
+    },
+    {
+      "claim_id": "9d715ac9-cc7a-4178-bf11-834e703d5aae",
+      "result_id": "7afaf5e7-31be-4200-a1e5-f5af4dbd9118"
+    },
+    {
+      "claim_id": "e2b8a0a9-9049-4024-9913-50c65f5db34a",
+      "result_id": "d0306c0e-813e-41d5-9f2f-3c645c321425"
+    },
+    {
+      "claim_id": "72ba64c5-b9bb-4b9e-9834-c22839a550d4",
+      "result_id": "d0306c0e-813e-41d5-9f2f-3c645c321425"
+    },
+    {
+      "claim_id": "7840ee8f-37aa-42df-9942-90f7087b8c7c",
+      "result_id": "d0306c0e-813e-41d5-9f2f-3c645c321425"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "0d359880-ed26-4b8c-ac45-ff7d1dba97c5",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "0190c9b6-946b-4720-9657-5b46d28679a7",
+      "peer_result_id": "c3197986-e31f-4f19-94b9-208763d79e72",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C30 and C58 regarding endogenous effects persisting in transition periods. Both evaluations find the evidence convincing and well-supported, with peer reviewers accepting the temporal precision of these measurements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "f6d0f492-63f5-4227-ab03-855b1921a607",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "79119d2e-62e4-4182-8a69-e49147f51093",
+      "peer_result_id": "b7d0e880-d9f9-4be1-b206-2f21b54a8b0d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C38-C40 about rapid reversal dynamics. OpenEval rates as UNCERTAIN due to speculative interpretations and lack of alternative explanations, while peer reviewers SUPPORT the claims, accepting them as reasonable interpretations within the study's framing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "f451b9d3-0ca5-4c27-9150-a9e8edbf7150",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "9d306080-24d4-40bd-9d65-459c08727625",
+      "peer_result_id": "7afaf5e7-31be-4200-a1e5-f5af4dbd9118",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C45-C48 regarding methodological advances and rapid dynamics. Both evaluations strongly support the urgent paradigm's contribution to revealing faster-than-appreciated attention-saccade dynamics, with peer reviewers explicitly endorsing the methodological innovation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "c741cae2-58f7-4389-beac-fdc064f30c21",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "d8f0ec03-2948-4c27-a02a-f024566ffc7e",
+      "peer_result_id": "127521c8-185a-4bc4-a9a0-d821ad7efb38",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C23, C25, C53-C56 regarding the ~25-35 ms coupling estimate. Both evaluations find converging evidence convincing. OpenEval notes the reduced sample size (n=11) as a minor limitation, while peer reviewers emphasize the temporal precision without raising concerns about sample size.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "ab8812f3-b215-45f5-8e4b-2cad56e9f715",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "02f5c3e2-a27e-4622-b89b-33abbc568902",
+      "peer_result_id": "e06367e9-893f-48de-9728-c81af044da09",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C29, C57, C59 regarding bias-cost relationships. OpenEval supports findings but notes moderate correlation strength and potential individual differences. Peer reviewers accept these findings without challenge, emphasizing the careful measurement of temporal interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "2ccb8849-2885-4fcc-9273-c77825b8a79e",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "04121003-838c-40ca-9310-97f415f9d0ec",
+      "peer_result_id": "d0306c0e-813e-41d5-9f2f-3c645c321425",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C42-C44 regarding theoretical framework and neural mechanisms. Both evaluations support the integrative circuit-level interpretation, with peer reviewers explicitly affirming the meaningful claims about potential neural mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "433dc70d-afd3-44cb-ab7f-24cc102c45df",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "e029edfb-a58c-4265-a410-859f50344bab",
+      "peer_result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C13-C18 about luminance-dependent effects and exogenous-endogenous dissociation. OpenEval supports with detailed statistical validation. Peer result R1 also covers C10-C12 (prior work foundation), affirming the overall experimental approach and temporal precision.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "2d3d245d-c1ec-43ea-934a-5af6061720e6",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f62cd001-074e-4187-a26d-53d25b21db74",
+      "peer_result_id": "cdfe629c-190b-490c-9601-ecd9981834bb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C19 and C21 regarding individual differences and stimulus-driven exogenous capture. OpenEval notes minor circularity in window selection but supports findings. Peer reviewers accept these patterns without challenge, implicitly endorsing the reported variability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "e01e8de8-2229-4ff2-88d2-82ec2251f809",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "93383e49-fc34-4d69-a421-5abd1d15d2c8",
+      "peer_result_id": "97c68e1d-07a7-4829-829c-f816cc35ae55",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address main conclusions C34-C35 about weak coupling and ~30 ms estimate. Complete agreement that evidence is convincing and well-supported by converging analyses. Peer reviewers directly confirm the transient nature of the attention-saccade link.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "75481d33-b7ab-4c88-bb0f-a1933327c70b",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "f3c0ca3f-e3bf-48dd-a208-49684f72bf73",
+      "peer_result_id": "97c68e1d-07a7-4829-829c-f816cc35ae55",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C36-C37 contextualizing findings within existing literature. OpenEval supports the comparison to Belopolsky & Theeuwes (2009) while noting task differences. Peer result R6 focuses more on C34-C35 but implicitly accepts the broader contextualization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "86875b2e-fff3-4fbd-8bc0-529c9840bd64",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "2a03abcb-89d6-47b9-b896-9b84c309ab20",
+      "peer_result_id": "ac3d6189-ea9f-4c9f-a218-53fbd3b25c45",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R2 addresses claims C10-C12 about prior work foundation, rating as SUPPORTED. Peer result R1 covers these same claims plus C13-C18, affirming the novel urgent saccade task builds appropriately on earlier publications.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "c9251aa8-528a-4b55-b54d-b0120333f702",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "a629b88b-7845-4508-9bc2-9965a8b685fd",
+      "peer_result_id": "e06367e9-893f-48de-9728-c81af044da09",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claim C26 regarding endogenous bias effects. OpenEval provides detailed statistical validation while noting individual variability. Peer result R4 also covers C29, C57, C59 and accepts all bias-related findings as part of carefully measured temporal interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "e9cdc5af-dd66-4899-b78d-b30ea4177e46",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "f91c41ed-add8-4587-9a89-0100331f13fb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R1 addresses claims C1-C9 about well-established background literature. These represent prior work context rather than novel findings. No corresponding peer review evaluation specifically addresses these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    },
+    {
+      "id": "f4d20368-df0d-4449-9c2e-8ae6561c54a3",
+      "submission_id": "e238bbbd-7191-42a7-8ec6-18c4e4dcfff5",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "0294c767-629a-4d52-8844-fb666f60b4e5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R14 addresses claim C49 about methodological details (sample size, age range). This straightforward methodological description is supported but not specifically evaluated in peer review results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:13:38.323248Z"
+    }
+  ]
+}

@@ -1,0 +1,1822 @@
+{
+  "submission": {
+    "id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:06:46.972560Z",
+    "updated_at": "2025-11-21T21:06:46.972560Z"
+  },
+  "content": [
+    {
+      "id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "content_type": "manuscript",
+      "content_text": "# Midbrain encodes sound detection behavior without auditory cortex\n\n## Authors\n\n- Tai-Ying Lee<sup>1</sup> ([ORCID: 0000-0001-8072-1219](https://orcid.org/0000-0001-8072-1219))\n- Yves Weissenberger<sup>1</sup>\n- Andrew J King<sup>1</sup> ([ORCID: 0000-0001-5180-7179](https://orcid.org/0000-0001-5180-7179))\n- Johannes C Dahmen<sup>1</sup> ([ORCID: 0000-0001-9889-8303](https://orcid.org/0000-0001-9889-8303)) \u2020\n\n### Affiliations\n\n1. Department of Physiology, Anatomy and Genetics, University of Oxford Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n\n\u2020 Corresponding author\n\n## Abstract\n\nHearing involves analyzing the physical attributes of sounds and integrating the results of this analysis with other sensory, cognitive, and motor variables in order to guide adaptive behavior. The auditory cortex is considered crucial for the integration of acoustic and contextual information and is thought to share the resulting representations with subcortical auditory structures via its vast descending projections. By imaging cellular activity in the corticorecipient shell of the inferior colliculus of mice engaged in a sound detection task, we show that the majority of neurons encode information beyond the physical attributes of the stimulus and that the animals\u2019 behavior can be decoded from the activity of those neurons with a high degree of accuracy. Surprisingly, this was also the case in mice in which auditory cortical input to the midbrain had been removed by bilateral cortical lesions. This illustrates that subcortical auditory structures have access to a wealth of non-acoustic information and can, independently of the auditory cortex, carry much richer neural representations than previously thought.\n\n## Introduction\n\nClassically, perception is considered to rely on the flow of information from the sensory periphery via a sequence of hierarchically-organized brain structures up to the cortex. The ascending sensory pathways connecting these structures have been studied extensively and much has been learned about how signals are relayed, how features are extracted, and how information is integrated to produce increasingly abstract representations of the sensory environment. These pathways are paralleled by descending pathways that can feed information back to lower-order sensory structures. The fact that descending projections often outnumber their feedforward counterparts (Sherman, 2007) attests to their likely importance for brain function. This may include turning an otherwise passive, stimulus-driven device into an active and adaptive brain that is capable of processing sensory input within its behavioral context and, therefore, able to learn and create meaning (Engel et al., 2001; Kraus and White-Schwoch, 2015; Malmierca et al., 2015).\n\nThe descending projections of the auditory cortex target all major subcortical stations of the auditory pathway and are among the largest pathways of the brain (Winer, 2005; Bajo and King, 2013; Antunes and Malmierca, 2021), making them a particularly suitable system for investigating the behavioral and physiological consequences of corticofugal processing. One of their main targets is the inferior colliculus (IC), an obligatory midbrain relay for nearly all ascending auditory input. The corticocollicular projection primarily terminates in the non-lemniscal shell of the IC. The shell encapsulates and is extensively connected with the central nucleus of the IC, which forms part of the tonotopically organized core or lemniscal auditory pathway to the primary auditory cortex. The projection from the auditory cortex to the midbrain was identified almost a century ago (Mettler, 1935) and decades of research have since demonstrated that manipulating the activity of descending projection neurons can alter the collicular representations of multiple sound features, influence adaptive plasticity and perceptual learning, and even trigger an innate flight response (Suga, 2008; Nakamoto et al., 2008; Bajo et al., 2010; Xiong et al., 2015; Blackwell et al., 2020). However, experimental evidence, especially from behaving animals, that could help explain what information the auditory midbrain and other subcortical sensory structures rely on their cortical input for is still very limited.\n\nInteractions between different sensory pathways occur at multiple processing levels and they are also closely linked with the brain\u2019s motor centers and neuromodulatory regions. Indeed, recordings in awake animals have shown that behavior, cognition, and brain state can strongly influence activity in the sensory pathways (Schneider and Mooney, 2018; McCormick et al., 2020; Parker et al., 2020). Consistent with a hierarchical view of sensory processing in which neurons at higher levels carry progressively more complex representations of the world, such contextual influences appear particularly strong in the cortex (Stringer et al., 2019; Musall et al., 2019) and may to a large extent be the result of intracortical processing (Noudoost et al., 2010; Schneider et al., 2014; Song et al., 2017). Nevertheless, non-acoustic and contextual variables can also alter sensory processing at subcortical levels, including the IC and particularly its shell (Metzger et al., 2006; Gruters and Groh, 2012; Chen and Song, 2019; Yang et al., 2020; Parras et al., 2017; Saderi et al., 2021; Shaheen et al., 2021). This raises the possibility that these context-dependent effects may be inherited from the auditory cortex (Ford et al., 2024).\n\nTo test whether auditory midbrain neurons convey behaviorally-relevant signals that depend on descending cortical inputs, we imaged corticorecipient IC shell neurons in mice engaged in a sound detection task. We found that the activity of most neurons contained information beyond the physical attributes of the sound and that this information could be used to decode the animals\u2019 behavior with a high degree of accuracy. Surprisingly, this was the case both in mice with an intact cortex and those in which the auditory cortex had been lesioned. These findings suggest that subcortical auditory structures have access to a wealth of non-auditory information independently of descending inputs from the auditory cortex. Consequently, the contextually-enriched representations that are characteristic of sensory cortices can arise from subcortical processing.\n\n## Results\n\n### Transient suppression of the auditory cortex impairs sound detection\n\nOur aim was to characterize the activity of neurons in the shell of the IC in animals engaged in sound-guided behavior and assess how this activity is influenced by the input from the auditory cortex. To this end, we trained water-regulated mice on a sound detection task (Figure 1A) in which they were rewarded with a drop of water for licking in response to a click sound. Transient pharmacological silencing of the auditory cortex using the GABA-A agonist muscimol has been shown to abolish the ability of rodents (Talwar et al., 2001), including head-fixed mice (Li et al., 2017), to perform a sound detection task, making this approach unsuitable for our aim of exploring the role of IC during behavior. We found that optogenetic suppression of cortical activity by photoactivating ChR2-expressing inhibitory neurons in Gad2-IRES-cre mice (Lohse et al., 2020) also significantly impaired sound detection performance (Figure 1B and C), albeit not to the same degree as pharmacological silencing. Although a control group in which the auditory cortex was injected with an EYFP virus lacking ChR2 would be required to confirm that the altered behavior results from an opsin-dependent perturbation of cortical activity, this result shows that this manipulation is also unsuitable for our study as it would leave us unable to determine whether any changes in the activity of IC neurons arise from removal of their auditory cortical input or are a consequence of alterations in the animals\u2019 behavior.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of the click detection task. (B) Trial structure for experiments involving optogenetic manipulation. Stimulus trials (click) and catch trials (no click) were randomly interleaved and consecutive trials were separated by a randomly varying inter-trial interval (ITI). LEDs placed over each auditory cortex were switched on randomly in half of the stimulus and catch trials to photoactivate the opsin. A separate set of LEDs (Mask LEDs) placed directly in front of the mouse\u2019s eyes were switched on in all Opto-on and Opto-off trials to prevent mice from visually registering the light from the photoactivation LEDs. (C) Detection performance in trials during which light was shone on the auditory cortex for optogenetic silencing (Opto LED \u2013 on) vs control trials (Opto LED - off). Different line styles indicate different mice (n=3). Numbers next to data points indicate the numbers of hit and false alarm trials over a total number of stimulus and catch trials, respectively. *p<0.001, two-sided Chi-squared proportion test.\n\n### Auditory cortex lesions leave detection ability intact\n\nSeveral recent studies have shown that in contrast to the disruptive effects of transient silencing, cortical lesions leave performance in some sensory tasks intact (Hong et al., 2018; Ceballo et al., 2019; O\u2019Sullivan et al., 2019). In order to assess how auditory cortex lesions impact sound detection performance, we therefore compared the performance of mice with bilateral lesions of the auditory cortex (n=7) with non-lesioned controls (n=9).\n\nMost corticocollicular neurons project ipsilaterally, with a substantial proportion also sending axons to the contralateral midbrain (Stebbings et al., 2014). The majority of corticocollicular neurons are found in the temporal cortex, and overwhelmingly in the auditory fields, while a small fraction populates adjacent areas, such as the temporal association area (Figure 2\u2014figure supplement 1). After the experiments, we injected a retrogradely-transported viral tracer (rAAV2-retro-tdTomato) into the right IC to determine whether any corticocollicular neurons remained after the auditory cortex lesions (Figure 2, Figure 2\u2014figure supplement 2, Figure 2\u2014figure supplement 3). The presence of retrogradely-labeled corticocollicular neurons in non-temporal cortical areas (Figure 2) was not the result of viral leakage from the dorsal IC injection sites into the superior colliculus (Figure 2\u2014figure supplement 3).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig2-v1.jpg)\n\n**Figure 2.:** (A) Timeline of experimental procedures. AAV1.hSyn.cre.WPRE was injected into the right auditory cortex of GCaMP6f-reporter (Ai95D) mice. This causes transsynaptic delivery of the virus to the IC and expression of GCaMP6f in corticorecipient IC neurons. Several weeks later, the mice underwent bilateral lesioning of the auditory cortex either by aspiration or by thermocoagulation (see Figure 2\u2014figure supplement 2 for histological sections from a mouse that underwent thermocoagulation) and were implanted with a glass window over the right auditory cortex. Following recovery from this procedure, water access was restricted and, 2\u20133 days later, behavioral training and imaging commenced. After data collection had been completed, rAAV2-retro-tdTomato was injected in the dorsal IC in order to label corticocollicular neurons that had remained intact. (B, C) Coronal sections showing lesion extent at different rostrocaudal positions for one example mouse. Area borders were drawn onto the images according to Paxinos et al., 2001. No retrogradely-labeled neurons were found near the lesion borders, suggesting that the auditory cortex had been completely removed. Corticocollicular projections from non-temporal regions as well as thalamocollicular projections remained intact. Scale bars, 200 \u00b5m. (D) High magnification image (location shown by the upper rectangle in (B)) showing corticocollicular neurons in the visual cortex. Scale bar, 100 \u00b5m. (E) High magnification image (location shown by the lower rectangle in (B)) showing thalamocollicular neurons in the peripeduncular nucleus of the thalamus (PP). Scale bar, 100 \u00b5m. (F, G) High magnification images (locations shown by the left and right rectangles in (C), respectively) showing corticocollicular neurons in the parietal cortex. Scale bars,100 \u00b5m. Cortical area abbreviations: Au1, primary auditory; AuD, secondary auditory, dorsal; AuV, secondary auditory, ventral; Ect, ectorhinal; LPta, lateral parietal association; MPta, medial parietal association; Prh, perirhinal; RSG, retrosplenial granular; RSA, retrosplenial agranular; S1BF, primary somatosensory, barrel field; TeA, temporal association; V1, primary visual; V2L, secondary visual, lateral; V2ML, secondary visual, mediolateral; V2MM, secondary visual, mediomedial.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Seven coronal sections are shown from each hemisphere covering approximately 2.5 mm of the rostrocaudal axis. Corticocollicular neurons were labeled by injecting a total of 150 nL of rAAV2-CAG-cre into the dorsal inferior colliculus (IC) (at three sites and several depths from 100 \u00b5m - 400 \u00b5m below the brain surface) of a tdTomato reporter mouse (Ai9). Data were obtained using whole-brain laser scanning two-photon tomography. The resulting images were grayscale inverted and thresholded to remove all background labeling so that they could be more easily arranged into a common figure. Area borders were drawn onto the images according to Paxinos et al., 2001. Cortical area abbreviations: Au1, primary auditory; AuD, secondary auditory, dorsal; AuV, secondary auditory, ventral; Ect, ectorhinal; Prh, perirhinal; S1, primary somatosensory; S1BF, primary somatosensory, barrel field; S1Tr, primary somatosensory, trunk region; S2, secondary somatosensory; TeA, temporal association; V2L, secondary visual, lateral. Scale bar, 200 \u00b5m.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Coronal section showing lesion extent in a mouse that had undergone lesioning by thermocoagulation. After data collection had been completed, rAAV2-retro-tdTomato was injected along the dorsal inferior colliculus (IC) in order to label corticocollicular neurons that had remained intact. Area borders were drawn onto the images according to Paxinos et al., 2001. Scale bar, 500 \u00b5m. (B, C) Higher magnification images showing tdTomato-labeled corticocollicular neurons in the left and right visual cortex. Scale bars, 200 \u00b5m. (D, E) Higher magnification images of the temporal regions surrounding the lesion sites, show a very small number of residual corticocollicular neurons in the left and right temporal association area and the right dorsal auditory field. Scale bars, 200 \u00b5m. (F) Same as (A) for a different coronal section of the same mouse. (G, H) Higher magnification images show tdTomato-labeled corticocollicular neurons in the right visual cortex and thalamocollicular neurons in the right peripeduncular nucleus. Scale bars, 200 \u00b5m. (I, J) Higher magnification images of the temporal regions surrounding the lesion sites showing a very small number of residual corticocollicular neurons in the left and right ectorhinal cortex and the right dorsal auditory field. Scale bars, 200 \u00b5m. While the lesion procedure spared some auditory cortex tissue in this animal, its visual appearance and the fact that barely any corticocollicular neurons could be found suggests that this residual tissue was almost completely destroyed. Consequently, we categorized this animal as having a (near-)complete lesion, meaning that 5% or less of the auditory cortex was left intact. Cortical area abbreviations: Au1, primary auditory; AuD, secondary auditory, dorsal; AuV, secondary auditory, ventral; Ect, ectorhinal; TeA, temporal association; V2L, secondary visual, lateral.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Coronal sections showing the right midbrain of one example mouse (same mouse as in Figure 2\u2014figure supplement 2). Sections are ordered caudo-rostrally from top left to bottom right. Red lines indicate the approximate outline of the inferior colliculus, and green lines indicate the approximate outline of the superior colliculus. Red triangles indicate rAAV2-retro-tdTomato injection locations. In addition to the labeling near the injection sites, widespread retrograde labeling is found in the central nucleus of the inferior colliculus. No labeled cell bodies were found in the superior colliculus. Scale bar, 500 \u00b5m. (B) Coronal sections showing corticocollicular neurons in non-temporal areas of the right cerebral cortex labeled as a result of the rAAV2-retro-tdTomato injections in the inferior colliculus illustrated in (A). Sections are ordered caudo-rostrally from top left to bottom right. Area borders were drawn onto the images according to Paxinos et al., 2001. Scale bar, 500 \u00b5m. Cortical area abbreviations: LPta, lateral parietal association; MPta, medial parietal association; M1: primary motor; M2: secondary motor; RSA, retrosplenial agranular; S1BF, primary somatosensory, barrel field; S1DZ, primary somatosensory, dysgranular region; S1HL, primary somatosensory, hindlimb region; S1Sh, primary somatosensory, shoulder region; S1ShNc, primary somatosensory, shoulder/neck region; S1Tr, primary somatosensory, trunk field; V1, primary visual; V2L, secondary visual, lateral; V2ML, secondary visual, mediolateral; V2MM, secondary visual, mediomedial.\n\nThe ability of the mice to learn and perform the click detection task was evident in increasing hit rates and decreasing false alarm rates across training days (Figure 3A, p<0.01, mixed-design ANOVAs). There was no difference between lesioned and non-lesioned mice in their learning speed (Figure 3A, p>0.05, mixed-design ANOVAs) or psychometric functions (Figure 3B, p>0.05, mixed-design ANOVA). Cortical lesioning thus leaves behavioral sensitivity to clicks intact and therefore provides a means of examining the effects of removing corticocollicular input, albeit non-reversibly, without directly affecting sound detection performance.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig3-v1.jpg)\n\n**Figure 3.:** (A) Hit rate, false alarm rate, and d\u2019 over time for lesioned and non-lesioned animals. (B) d\u2019 as a function of sound level. The sound levels used were not identical across all mice and were, therefore, combined into 10 dB wide bins. Error bars indicate 95% confidence intervals.\n\n### Transsynaptic labeling and two-photon calcium imaging of auditory corticorecipient IC neurons\n\nManipulations of auditory cortical activity can influence the activity of neurons throughout the IC, including the central nucleus (Suga, 2008; Nakamoto et al., 2008), where corticocollicular axons are relatively sparse (Stebbings et al., 2014). The strongest effects, however, tend to be observed in the shell, where cortical input is densest (Nakamoto et al., 2008; Vila et al., 2019; Blackwell et al., 2020). But even here, effects can be subtle (Vila et al., 2019) or undetectable (Blackwell et al., 2020), especially for cortical silencing. It is also unclear whether the IC neurons recorded in these studies receive cortical input or not. Therefore, we took a projection-specific approach to record the activity of IC neurons that receive direct input from the auditory cortex. More specifically, we injected AAV1.hSyn.Cre.WPRE, a virus with anterograde transsynaptic spread properties (Zingg et al., 2017), into the right auditory cortex of, initially, a tdTomato (Ai9) reporter mouse. This resulted in the expression of Cre recombinase and the reporter gene in neurons that receive input from the auditory cortex, including the corticorecipient neurons of the IC (Figure 4A). By employing this approach in GCaMP6f (Ai95D) reporter mice, we could target the expression of a calcium indicator to corticorecipient IC neurons. We then proceeded to record the activity of corticorecipient neurons within about 150 \u00b5m of the dorsal surface of the IC using two-photon microscopy (Figure 4B, Figure 4\u2014video 1).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig4-v1.jpg)\n\n**Figure 4.:** (A) Coronal section of the left and right IC of a tdTomato-reporter (Ai9) mouse in which AAV1.hSyn.Cre.WPRE had been injected into the right auditory cortex three weeks before perfusion. The transsynaptically transported virus drove the expression of Cre recombinase and tdTomato in neurons that receive input from the auditory cortex, including the corticorecipient neurons in the IC. tdTomato-labeled neurons were predominantly found in the shell of the ipsilateral (right) IC. Scale bar, 500 \u00b5m. (B) In vivo two-photon micrograph taken approximately 100 \u00b5m below the dorsal surface of the right IC of a GCaMP6f-reporter mouse (Ai95D) in which GCaMP6f expression had been driven in corticorecipient IC neurons by injection of AAV1.hSyn.Cre.WPRE into the right auditory cortex. See Figure 4\u2014video 1 for the corresponding video recording. Scale bar, 100 \u00b5m. (C) Example average response profiles of five corticorecipient IC neurons for different trial outcomes. Vertical line at time 0 s indicates the time of click presentation. Shaded areas represent 95% confidence intervals.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Stimulus trials are binned into four different sound level ranges and separated into hit and miss trials. Catch trials are separated into false alarms and correct rejections. Shaded areas represent 95% confidence intervals.\n\n### Corticorecipient IC neurons display heterogeneous response profiles\n\nThe activity of individual corticorecipient IC neurons showed distinct response profiles across neurons and trial outcomes (hit vs miss) (Figure 4C). While averaging across all neurons cannot capture the diversity of responses, the averaged response profiles suggest that it is mostly trial outcome rather than the acoustic stimulus and neuronal sensitivity to sound level that shapes those responses (Figure 4\u2014figure supplement 1). Indeed, close to half (1272/2649) of all neurons showed a statistically significant difference in response magnitude between hit and miss trials, while only a small fraction (97/2649) exhibited a significant response to the sound. While the number of sound-responsive neurons is low, this is not necessarily surprising given the moderate intensity and very short duration of the stimuli. For comparison: Using the same transgenics, labeling approach, and imaging setup and presenting 200 ms long pure tones at 60 dB SPL with frequencies between 2 kHz and 64 kHz, we typically find that between a quarter and a third of neurons in a given imaging area exhibit a statistically significant response (data not shown).\n\nTo capture the heterogeneity of response patterns across all recorded neurons, we used an unsupervised clustering algorithm (Namboodiri et al., 2019) to group the average responses on hit and miss trials for each neuron. This yielded 10 clusters that displayed different response patterns over the course of the trial (Figure 5A and B). Most of the clusters exhibited distinct activity for hit vs miss trials. Some hit trial profiles were characterized by increases or decreases in activity, with a very sharp, short-latency onset, as in clusters 4 and 10 (see Figure 5\u2014figure supplement 1 for a scaled version of cluster 10), and others by much more gradual changes in which a peak occurred seconds after the trial onset, as in clusters 5 and 9. Cluster 3, which contained the smallest number of neurons, was an exception in that it showed a transient, short latency response to the stimulus for both trial outcomes. The response profiles of some other clusters, especially clusters 6 and 8, were also qualitatively similar across hit and miss trials and/or only weakly modulated across both trial types.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig5-v1.jpg)\n\n**Figure 5.:** (A) Peri-stimulus time histograms for all neurons in the dataset separated by cluster identity: hit trials (top) vs miss trials (bottom). (B) Averaged response profiles obtained by taking the mean across all neurons in a cluster separately for hit (red) and miss (blue) trials. (C) Pie charts illustrate the proportion of neurons from lesioned and non-lesioned mice in each cluster. The size of each pie chart is proportional to the total number of neurons in each cluster. Given the unequal number of neurons from lesioned (952 neurons) and non-lesioned (1697 neurons) mice, the pie charts were normalized to the overall sample size such that a 50/50 split indicates a lesioned/non-lesioned distribution that is identical to that of the overall population. Asterisks indicate a significant difference between the lesioned/non-lesioned distribution in the given cluster and that in the overall population. *p<0.05, **p<0.01, ***p<0.001, two-sided one proportion Z-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Averaged response profiles were obtained by taking the mean across all neurons in a cluster separately for hit (red) and miss (blue) trials. Same as Figure 5B except that here each panel has an individualized y-axis range.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** A greater number of recordings happened to be made with a larger field of view in non-lesioned (28 of 38) than in lesioned (13 of 37) mice. Consequently, the number of neurons recorded in non-lesioned mice was greater than that recorded in lesioned mice (1697 vs 952). Error bars represent 95% confidence intervals.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (A) Peri-stimulus time histograms for all neurons recorded in non-lesioned mice separated by cluster identity: hit trials (top) vs miss trials (bottom). (B) Averaged response profiles obtained by taking the mean across all neurons in each cluster separately for hit (red) and miss (blue) trials. (C, D) Same as (A) and (B) for neurons recorded in lesioned mice.\n\nThis suggests that the activity of the majority of neurons in the recorded population contained information beyond the physical properties of the stimulus. Given that licking causes self-generated sounds, IC neurons could, in principle, respond to the sound of licking. However, given how quiet these are - estimated to be just 12 dB SPL (Singla et al., 2017) - and that much of the response to such lick-related sounds is already canceled out at the level of the cochlear nucleus (Singla et al., 2017; but see Shaheen et al., 2021), it is highly unlikely that lick-related sounds play a major role in driving activity in the IC.\n\nTo assess whether certain response profiles depended on auditory cortical input, we compared the ratio of neurons from lesioned vs non-lesioned mice in each cluster to that of the overall recorded population. The number of recorded neurons was unequal for lesioned and non-lesioned mice (952 vs 1697, respectively), reflecting the fact that a greater proportion of imaging sessions in non-lesioned animals were carried out using a larger field of view, which contained larger numbers of neurons (Figure 5\u2014figure supplement 2). To account for this, the percentages shown on the pie charts were normalized to the ratio of the overall population (Figure 5C). Neurons from both groups were well represented across all 10 clusters and while a significant difference in the lesioned/non-lesioned ratio was found for four clusters, the difference between the groups was greater than 20% for only one of them. Furthermore, there was a close correspondence between the cluster averages of lesioned and non-lesioned mice (Figure 5\u2014figure supplement 3). This suggests that the IC shell can produce very similar output regardless of whether auditory cortical input is available or not.\n\n### Behavior can be accurately decoded from neural activity in lesioned and non-lesioned mice\n\nThe average responses of individual neurons in the IC shell exhibited a variety of activity patterns associated with both the stimulus and the trial outcome (Figure 5A and B). To gain insight into how these activity patterns can be read out collectively on a trial-by-trial basis, we assessed the relationship between the trial-by-trial network activity and the trial outcome. We trained logistic regression models to classify hit vs miss trials on a trial-by-trial, frame-by-frame basis. As different populations of neurons were recorded in different imaging sessions, the models were trained separately for each session. \u2018Dummy models,\u2019 which randomly classified trials while taking into account the probability of hit vs miss trials in a given session, were used as the baseline model performance. If the population activity of the IC shell contained information about the trial outcome, the performance of the models would be significantly above baseline.\n\nIn both lesioned and non-lesioned mice, the average model performance was significantly above baseline in classifying hit vs miss trials (p<0.05, one-sided Wilcoxon signed-rank test or paired t-test with Bonferroni correction, Figure 6A), showed a temporal profile that is consistent with the dynamics of the activity profiles of some of the clusters, in particular clusters 1, 2, 4, 5, 9, 10 (Figure 5A and B), and was not meaningfully affected by differences in sound level distributions between hit and miss trials (Figure 6\u2014figure supplement 1). Additionally, the model performance in non-lesioned mice was significantly better than that in lesioned mice (p<0.05, one-sided Mann-Whitney U test or t-test with Bonferroni correction, Figure 6A). This difference in the decoding performance was not the result of the difference in the number of neurons between non-lesioned and lesioned mice (Figure 6\u2014figure supplement 2).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig6-v1.jpg)\n\n**Figure 6.:** (A) Average decoding accuracy of logistic regression models as a function of time against dummy models with a score of 0.5 meaning chance performance and a score of 1 being the maximum. Data shown depict the mean model accuracy across 37 (lesioned) and 38 (non-lesioned) sessions, respectively. Dots at the top indicate the time points (frames) where the model performance was significantly different between trained and dummy models for non-lesioned mice (teal) or lesioned mice (orange) (p<0.05, one-sided Wilcoxon signed-rank test or paired t-test with Bonferroni correction, depending on whether normality assumption was met), and between the trained models for non-lesioned vs lesioned mice (blue) (p<0.05, one-sided Mann-Whitney U test or t-test with Bonferroni correction, depending on whether normality assumption was met). (B) Same as (A) but the average model accuracy is plotted separately for mice with (near-)complete (22 sessions) and partial lesions (15 sessions). Dots at the top indicate the time points where the model performance was significantly different between partial vs (near-)complete mice (purple), (near-)complete vs non-lesioned mice (blue), and partial vs non-lesioned mice (red) (p<0.05, one-sided Mann-Whitney U test or t-test with Bonferroni correction, depending on whether normality assumption was met). Shaded areas represent 95% confidence intervals.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) Decoding results for one imaging session based on trials in which stimuli were presented at five (left), three (middle), or a single sound level (right). Thin colored lines show the results of each of the five cross-validation folds. Thick colored lines indicate averages across all five folds. Gray lines show results for the corresponding dummy models. (B) Superimposed averages from (A). (C) Hit and miss trial distributions for each of the five sound levels, as well as the mean sound level difference (\u0394) between hit and miss trials for the three decoding conditions shown in (A) and (B). The mean difference was 3.08 dB, 1.01 dB, and 0 dB for the five, three, and one sound level conditions, respectively.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A, B) Decoding performance (balanced accuracy) of the logistic regression models averaged over different 1 s time periods relative to stimulus onset as a function of the number of neurons recorded in a given session. A greater number of neurons obtained in a field of view was not associated with better decoding performance. Values above panels indicate Spearman\u2019s rank correlation coefficient \u03c1. The only statistically significant relationship between the number of recorded neurons and decoding performance was found for late trial periods in non-lesioned mice (A), and indicated that for time periods >2 s after stimulus onset a smaller sample size was associated with better decoding performance. **p<0.01.\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Fraction of neurons per session that exhibit a significant difference in response magnitude between hit and miss trials. (B) Fraction of neurons per session that exhibit a significant stimulus response in miss trials. *p<0.01, Mann Whitney U test.\n\n![Figure 6\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/89950/elife-89950-fig6-figsupp4-v1.jpg)\n\n**Figure 6\u2014figure supplement 4.:** (A) Peri-catch trial lick raster for all catch trials that followed a hit trial for one example mouse. The peri-catch trial period was defined as the period from the reward delivery in the hit trial to the onset of the trial following the catch trial. (B) Lick rate averaged across the peri-catch trial periods shown in (A) and binned into 100ms wide bins. The thick blue line shows the smoothed (20-point running average) lick rate. The inset gives a magnified view of the average lick rate during the period indicated by the gray rectangle. The red line illustrates the distribution of \u2018reward-to-next-trial-onset\u2019 intervals experienced by the example mouse. Given that licks are plotted time-locked to reward delivery, we plotted the distribution of intervals between reward delivery and the onset of the next trial rather than the inter-trial interval (ITI) distribution. In practice, the difference between the two is roughly the latency between the stimulus and the first lick and thus barely distinguishable at this scale. As the distribution indicates the probability of the next trial presentation as a function of time since the preceding reward delivery we refer to it as \u2018next-trial-probability\u2019. (C) Same as the inset in (B) averaged across all mice. Next-trial-probability was smoothed with a 20-point running average. (D) Next-trial probability as a predictor of lick rate. The dotted lines indicate the 95% confidence bounds around the regression fit. Adjusted R2=0.59. Although the next-trial probability is a good predictor of changes in the average lick rate, the lick rate at the peak of the distribution is merely about a quarter higher than at its tails where next-trial probability approaches zero. Furthermore, to put the average lick rates into perspective, note that mice tend to lick in bouts, typically consisting of two to six licks in very quick succession (see lick raster in (A)), and that, consequently, the lick rate exceeds the underlying bout rate by a factor of about four. (E) Same as (C) but with peri-catch trials binned into four quarters before averaging in order to illustrate changes in lick behavior across different stages of the experiment. (F) Same as (E) for all peri-catch trials during the initial training with a single-level stimulus. While the peri-catch trial lick rate profile changed substantially over the course of the initial training (F) and started to approximate the stimulus probability distribution towards the end of training, it remained broadly stable throughout the main experiment (E). In order to increase the statistical power of this analysis, we included data from several additional mice used in other projects. These additional mice received the same training and performed the same task, but differed from those in the main dataset in that they had a different genetic background and/or had been fitted with a cranial implant for cortical rather than midbrain imaging. N for panels (C\u2013F) = 34 mice.\n\nBy examining the corticocollicular labeling and referencing the histological sections against a mouse brain atlas (Paxinos et al., 2001), we categorized the mice according to lesion size. Four of the seven lesioned animals had \u2018(near-)complete\u2019 lesions, meaning that all (Figure 2) or an estimated ~95% (Figure 2\u2014figure supplement 2) of the auditory cortex had been lesioned, while the remaining mice had \u2018partial\u2019 lesions, with an estimated 15\u201325% of the auditory cortex left intact. To assess whether the size of the lesions impacted the decoding performance, we compared the model performance between mice that had (near-)complete lesions and mice that had partial lesions. This revealed that the average decoding performance for mice with (near-)complete lesions was significantly better than that measured for mice with partial lesions. While this pattern of results may be unexpected, it is consistent with work showing smaller lesions being associated with greater somatosensory processing deficits (Hong et al., 2018). Additionally, the decoding performance in mice with (near-)complete lesions was largely indistinguishable from that in mice with an intact auditory cortex. Although the proportion of individual neurons with distinct response magnitudes in hit and miss trials in lesioned mice did not differ from that in non-lesioned mice, it was significantly lower when separating out mice with partial lesions (Figure 6\u2014figure supplement 3). These results imply that the activity of IC shell neurons can contain similar amounts of information about the animal\u2019s behavior regardless of whether descending input from the cortex is available or not (Figure 6B).\n\n### Pre-stimulus activity is predictive of the upcoming trial outcome\n\nRemarkably, decoding accuracy was better than baseline even before stimulus onset. This could reflect changes in the network state that led or contributed to the upcoming trial outcome. For instance, changes in arousal or motivation can alter both the probability that an upcoming stimulus is detected and the activity of neurons in the network (Lee and Dan, 2012; McGinley et al., 2015). The decoding models might detect such changes in activity, resulting in higher decoding accuracy prior to stimulus onset. Additionally, pre-stimulus differences in hit and miss trial activity could also reflect the anticipation of an upcoming stimulus (Ruth et al., 1974; Nienhuis and Olds, 1978; Metzger et al., 2006) and the resulting change in attentional state. Inter-trial intervals in our experiments were randomly drawn from a normal distribution with a mean and standard deviation of 8 s and 2 s, respectively, and a lower bound of 3 s. Nevertheless, spontaneous licks did not occur at random times during the peri-catch trial periods following hit trials. Instead, average lick rates approximated the inter-trial interval distribution (Figure 6\u2014figure supplement 4A\u2013D), suggesting that mice learned to adapt their behavior to this distribution and anticipate the timing of upcoming stimuli (Figure 6\u2014figure supplement 4E and F). Assuming that successfully anticipating the timing of an upcoming stimulus confers a greater chance of detecting the stimulus, neurons whose activity reflects that anticipation might be expected to show differences in pre-trial activity between hit and miss trials that could be detected by a decoding model. Note that for the analysis illustrated in Figures 5 and 6, hit trials were excluded if there were any licks between \u2013500 ms and +120 ms (the latter number representing the lower bound of the animals\u2019 lick-latency) relative to stimulus onset, suggesting that changes in pre-stimulus activity cannot be directly related to licking.\n\n## Discussion\n\nImaging auditory corticorecipient neurons in the dorsal shell of the IC in mice trained to perform a sound detection task revealed that the majority of neurons exhibited distinct activity profiles for hit and miss trials, implying that they encode information beyond just the physical attributes of the stimulus. Indeed, using logistic regression models to classify hit vs miss trials, we found that the animals\u2019 behavioral choices can be read out from these neurons with a high degree of accuracy. Importantly, the difference in IC activity between hit and miss trials was observed across different sound levels and was not due to a difference in the sound level distribution for these two trial outcomes. Surprisingly, neural activity profiles and the decoding performance were similar in mice in which the auditory cortex had been lesioned bilaterally, suggesting that the midbrain has, independently of the auditory cortex, access to a wealth of non-acoustic information, which may be sufficient to support sound detection behavior.\n\nAuditory corticocollicular axons terminate predominantly in the shell of the IC (Stebbings et al., 2014; Bajo and King, 2013) and the strongest effects of cortical manipulations have been reported in this region (Nakamoto et al., 2008; Vila et al., 2019; Blackwell et al., 2020). However, these effects can be subtle (Cruces-Sol\u00eds et al., 2018; Vila et al., 2019) or undetectable, especially when optogenetic silencing is used (Blackwell et al., 2020). Because of this and uncertainties over exactly what proportion of neurons in the shell of the IC is innervated by the auditory cortex and even where the border lies with the underlying central nucleus (Barnstedt et al., 2015), we used an anterograde transsynaptic tagging approach (Zingg et al., 2017) to identify corticorecipient neurons. This, therefore, maximized the chances of revealing the contribution of descending cortical input to the response properties of these midbrain neurons. We imaged across the optically accessible dorsal surface of the IC down to a depth of about 150 \u00b5m below the surface. Consequently, the neurons we recorded were located predominantly in the dorsal cortex. However, identifying the borders between different subdivisions of the IC is not straightforward and we cannot rule out the possibility that some were located in the lateral cortex.\n\n### Inferior colliculus neurons exhibit task-related activity\n\nOur recordings from corticorecipient neurons in the IC are consistent with previous studies demonstrating that neural representations of behavioral variables can be found in the auditory midbrain (Ruth et al., 1974; Nienhuis and Olds, 1978; Metzger et al., 2006; Gruters and Groh, 2012; Chen and Song, 2019; Yang et al., 2020; Saderi et al., 2021; De Franceschi and Barkat, 2021; Shaheen et al., 2021; Quass et al., 2024). In keeping with responses recorded in the auditory cortex (Francis et al., 2018; De Franceschi and Barkat, 2021) and IC (Chen and Song, 2019; Yang et al., 2020; De Franceschi and Barkat, 2021) of behaving mice, we found that the activity of most neurons was facilitated and about a third were suppressed during the sound detection task. Overall, only a small minority of clusters (mostly cluster 3) in our dataset showed what could be characterized as largely behavior-invariant response profiles to the auditory stimulus. In contrast, a large number of neurons were clearly driven by variables other than the stimulus itself. Their activity may represent the choice (to lick or not to lick) that an animal made, preparatory motor activity, corollary discharge, or the reward and the somatosensory or gustatory feedback associated with its consumption, as well as modulation by the animal\u2019s cognitive and behavioral state. Due to the task structure used, for the most part, it was not possible to unambiguously assign activity profiles to a particular variable. Nevertheless, we can speculate that neurons with late transients, such as in cluster 5, are more likely to represent corollary discharge and signals associated with the consumption of the reward, while those with very short latency peaks, as in clusters 4 and 10, may represent the animals\u2019 choice and/or preparatory motor activity.\n\nWhen engaged in the detection task, an animal\u2019s arousal or motivational state may vary spontaneously or as a result of changes in, for instance, thirst, time of day, or time into a session. In addition, cognitive factors, such as expectations about the timing of an upcoming trial (Ruth et al., 1974; Nienhuis and Olds, 1978; Metzger et al., 2006), which mice may have derived by learning the shape of the inter-trial interval distribution, may lead to variations in arousal or attentional state. Pre-trial differences in activity as well as the above-chance decoding performance before trial onset likely reflect the joint impact of those state changes on the activity of IC corticorecipient neurons and detection sensitivity (McCormick et al., 2020).\n\n### Contribution of the auditory cortex to task-related activity in the midbrain\n\nGiven the massive corticofugal projections that exist within the auditory system (Bajo and King, 2013), we hypothesized that task-related activity in the IC might depend on descending inputs from the auditory cortex. To address this, we imaged corticorecipient IC neurons during the same sound detection task after removing the cortical input. Consistent with previous work in the auditory (O\u2019Sullivan et al., 2019) and somatosensory systems (Hong et al., 2018), we found that transient optogenetic silencing of the auditory cortex impaired sound detection, whereas cortical lesions had no effect on detection behavior, with lesioned mice learning the task as quickly as non-lesioned animals and achieving the same level of performance. In order to determine whether the absence of auditory cortical input alters the activity of IC neurons during sound detection behavior, we therefore focused on mice with bilateral cortical lesions to avoid the potentially confounding effects that reduced detection sensitivity produced by transient cortical silencing might have on the activity of IC neurons. For the same reason, we opted against the more targeted approach of optogenetic silencing of corticocollicular axons. Furthermore, it would have been difficult to silence the entire corticocollicular projection and the higher light powers required for manipulating axons compared to somata would have risked transmitting light to the cortex or other corticofugal targets, potentially causing behavioral changes and/or sacrificing specificity. Locally silencing corticocollicular axons would also have left indirect transmission via the thalamus between the auditory cortex and IC intact and would have been very challenging to verify. Finally, it has been reported that using optogenetic silencing tools in axons can have unintended consequences (Wiegert et al., 2017).\n\nIn keeping with our findings, numerous studies (reviewed in e.g. Pickles, 1988; Buser and Imbert, 1992) have shown that simple auditory skills, including the ability of freely moving rats to detect sounds (Kelly, 1970), are unaffected by the removal of the auditory cortex. However, transient pharmacological silencing of the auditory cortex in freely moving rats (Talwar et al., 2001), as well as head-fixed mice (Li et al., 2017), completely abolishes sound detection (but see Gimenez et al., 2015). The time course of the effects produced by muscimol application (Talwar et al., 2001) suggests that there is a relationship between the size of the behavioral deficit and the degree of cortical inactivation. Consequently, milder impairments may be produced by the optogenetic approaches employed by us and others (Kato et al., 2015; O\u2019Sullivan et al., 2019) because of incomplete suppression of cortical activity. Alternatively, the larger behavioral effects reported following muscimol application may be due to diffusion of the drug to other brain structures, potentially including the IC. Although our results cannot speak directly to the question of whether the preservation of sound detection without auditory cortex reflects a rewiring or repurposing of circuits in the brain, this seems unlikely given that other studies have shown that trained mice achieve pre-lesion performance levels on simple auditory discrimination (Ceballo et al., 2019; O\u2019Sullivan et al., 2019) or somatosensory detection (Hong et al., 2018) tasks suddenly and within 48 hr following cortical ablation.\n\nWhy then does transient inactivation produce behavioral deficits? One possibility is that disabling the auditory cortex impacts behavior not because it contributes necessary computations or information, but because of the sudden and disruptive removal of tonic excitation (Oberle et al., 2022) to downstream targets (Otchy et al., 2015) that are indispensable for successful sound detection. In this scenario, normal operation would resume once synaptic scaling (Keck et al., 2013) had homeostatically restored normal activity in these structures, a process that has been suggested to take up to 48 hr and is consistent with the time course of recovery after lesions (Ceballo et al., 2019; Hong et al., 2018). Alternatively, several circuits may redundantly support sound detection. Silencing the auditory cortex might then transiently impede sound detection until the relevant downstream decision and motor structures have updated their synaptic weights and/or processing has shifted to the other circuits. Two observations, however, argue against this possibility. First, removing one of several redundant structures should leave some residual function intact and not have the devastating effect that pharmacological cortical silencing achieves (Talwar et al., 2001, Li et al., 2017). Second, other circuits mediating the acousticomotor transformation required for successful sound detection behavior very likely incorporate subcortical auditory structures, including the auditory midbrain. Activity in the IC may trigger actions (Casseday and Covey, 1996), such as licking, via its direct projections to the superior colliculus, pontine nuclei and the periaqueductal gray (Huffman and Henson, 1990; Wenstrup et al., 1994; Casseday and Covey, 1996; Xiong et al., 2015) or indirectly via its projections to the auditory thalamus. If cortical lesioning results in a greater weight being placed on the activity in spared subcortical circuits for perceptual judgements, we would expect the accuracy with which trial-by-trial outcomes could be read out from IC neurons to be greater in mice without auditory cortex. However, that was not the case. This could imply that, following cortical lesions, greater weight is placed on structures other than the IC, with the thalamus being an obvious candidate, or that the auditory midbrain, thalamus and cortex are bypassed entirely if simple acousticomotor transformations, such as licking a spout in response to a sound, are handled by circuits linking the auditory brainstem and motor thalamus via pedunculopontine and midbrain reticular nuclei (Inagaki et al., 2022).\n\nSome differences were observed for mice with only partial lesions of the auditory cortex. Those mice had a lower proportion of neurons with distinct response magnitudes in hit and miss trials than mice with (near-)complete lesions. Furthermore, trial outcomes could be read out with lower accuracy from these mice. While this finding is somewhat counterintuitive and is based on only three mice with partial lesions, it has been observed before that smaller lesions can have a more disruptive effect than larger, more complete lesions, in that the time it takes mice to learn a whisker-dependent sensory detection task is anticorrelated with the size of their somatosensory cortex lesion (Hong et al., 2018). While the complete destruction of a cortical area severs all its communication with downstream structures, a partial lesion may actually be more disruptive by eradicating normal local processing while at the same time leaving intact some tissue, especially in the deeper output layers, which continues to transmit what are now aberrant activity patterns. The difference in decoding accuracy that we observed in the IC could thus be a consequence of residual and now disruptive cortical input.\n\nOur results show that behavioral variables are encoded by corticorecipient neurons in the dorsal shell of the IC independently of their main source of descending input, the auditory cortex. It therefore seems likely that this region of the auditory midbrain is part of the circuit that supports sound detection behavior in the absence of the auditory cortex. Nevertheless, except for the regions immediately bordering the auditory cortex, corticocollicular neurons located in other areas were left intact. These relatively sparse descending projections to the IC, such as those originating from somatosensory cortical areas (Lohse et al., 2020; Lesicko et al., 2016) and the parietal cortex, may have contributed to the response profiles that we observed. Additional non-acoustic sensory input can reach the IC via brainstem nuclei (Lesicko et al., 2016; Shore and Zhou, 2006) and the superior colliculus (Chen et al., 2018; Coleman and Clerici, 1987). The latter, together with input from the substantia nigra (Ola\u017aabal and Moore, 1989) and the globus pallidus (Moriizumi and Hattori, 1991) may also be a source of motor signals, while state changes may impact on the IC via inputs from neuromodulatory structures, including the locus coeruleus and the subparafascicular, dorsal raphe and tegmental nuclei (Chen and Song, 2019, Liu et al., 2023).\n\n### Conclusion\n\nBehavior is a major determinant of activity in the non-lemniscal auditory midbrain and thus key to understanding how it contributes to hearing. The anatomical feature that defines this structure more than any others is its connection with the auditory cortex. While modulation of IC activity by this descending projection has been implicated in various functions, most notably in the plasticity of auditory processing, we have shown in mice performing a sound detection task that IC neurons show task-related activity in the absence of auditory cortical input. These results, therefore, emphasize more than ever the need to factor in subcortical processing when considering how the cortex contributes to sound-guided behavior.\n\n## Materials and methods\n\n### Animals\n\nAll experiments were approved by the Committee on Animal Care and Ethical Review at the University of Oxford and were licensed by the UK Home Office (Animal Scientific Procedures Act, 1986, amended in 2012). We used 22 (three female, 19 male) B6;129S-Gt(ROSA)26Sortm95.1(CAG-GCaMP6f)Hze/J (Ai95D, JAX 024105, Jackson Laboratories, USA), three (one female, two male) Gad2tm2(cre)Zjh/J (JAX 010802), six female B6.Cg-Gt(ROSA)26Sortm9(CAG-tdTomato)Hze/J (Ai9, JAX 007909), two female Ai95D X Slc32a1tm2(cre)Lowl/J (JAX 016962), three female Ai95D X B6.Cg-Tg(Camk2a-cre)T29-1Stl/J (JAX 005359, Jackson Laboratories, USA), and three (one male, two female) C57BL/6NTac.Cdh23753A>G (MRC Harwell, UK) mice. All mice were 9\u201315 weeks old during data collection. They were maintained on a 12 hr light/dark cycle and were housed at 20\u201324\u00b0C with a relative humidity of 45\u201365%.\n\n### Surgeries\n\nFor all surgical procedures, mice were premedicated with intraperitoneal injections of dexamethasone (Dexadreson, 4 mg), atropine (Atrocare, 1 mg), and carprofen (Rimadyl, 0.15 mg) before being anesthetized with isoflurane (1.5\u20132%) and administered with buprenorphine (Vetergesic, 1 ml/kg) postoperatively. Mice were then placed in a stereotaxic frame (Model 900LS, David Kopf Instruments, CA, USA) and their body temperature was kept constant at 37 \u00b0C by the use of a heating mat and a DC temperature controller in conjunction with a temperature probe (FHC, ME, USA).\n\nFor injections in the auditory cortex of AAV1.hSyn.Cre.WPRE (Penn Vector Core), the skin over this part of the brain was shaved and an incision was made, after which three small holes were drilled (Foredom K.1070, Blackstone Industries, CT, USA) into the skull with a 0.4 mm drill bit and the virus injected using a pulled glass pipette and a custom pressure injection system. In order to express GCaMP6f or tdTomato in IC neurons that receive auditory cortical inputs, a total of 150\u2013200 nl of AAV1.hSyn.Cre.WPRE was injected at three sites in the right auditory cortex of GCaMP6f (Ai95D) or tdTomato (Ai9) reporter mice, respectively, at depths of 450\u2013550 \u03bcm below the brain surface. Given the anterograde transsynaptic spread properties of AAV1 (Zingg et al., 2017), this caused the expression of the desired fluorescent protein in structures that the auditory cortex projects to, including the shell of the IC (Figure 4A and B).\n\nIn order to prepare Gad2-Ires-Cre mice for the optogenetics experiments, we removed a large flap of skin over the parietal and temporal bones, partially removed the temporal muscles, and performed a circular craniotomy of 3 mm diameter over each auditory cortex. We then injected a total of 500 nl of AAV5-EF1a-DIO-hChR2-EYFP (UNC Vector Core) bilaterally across four sites and two depths (200 and 600 \u03bcm) into the auditory cortex. Each craniotomy was covered with a circular 3 mm glass window that was attached to the edges of the skull with cyanoacrylate glue (Pattex Ultra Gel, Henkel), and the exposed skull was sealed with dental acrylic (C&B Superbond, Sun Medical, Japan) into which a custom steel bar was embedded for head fixation. Experiments commenced approximately three weeks afterward.\n\nThe IC window implantation and cortical lesioning in the Ai95D mice were performed at least three weeks after the injections. The window implantation involved removing a flap of skin over the (inter-)parietal and occipital bone and making a circular 3 mm craniotomy over the midbrain. A 3 mm diameter glass coverslip that had been glued to a ~1 mm tall steel cylinder with 0.5 mm wall thickness was inserted into this craniotomy. The cylinder allowed us to press the glass window gently onto the brain (in order to minimize brain movement during experiments) and was then glued to the edges of the skull. For head fixation, we embedded a custom steel plate in the dental acrylic used to seal the exposed bone.\n\nLesions were performed as part of the cranial window implantation surgery. In those mice undergoing lesions, we removed a slightly larger flap of skin on both sides in order to expose the temporal bone, detached and deflected and/or partly removed the temporal muscle, and then made, on both sides, an elliptical craniotomy over the auditory cortex of ~3 mm (dorsoventral) by 4 mm (rostrocaudal). The exposed tissue was then aspirated (Hong et al., 2018) with a blunted 19 G needle connected to a suction pump (Eschmann Vp25, UK) or destroyed by thermocoagulation (Ceballo et al., 2019) with a cauterizer (Small Vessel Cauterizer Kit, FST, Germany) and the piece of skull that had been removed for the craniotomy was glued (Pattex Ultra Gel) back in place. In some of the lesioned mice, after completion of the imaging, 150 nl of a retrograde viral construct (rAAV2-CAG-tdTomato, UNC Vector Core) was injected into the dorsal IC across two to three sites at depths of 100\u2013400 \u03bcm below the brain surface in order to visualize the remaining IC-projecting cortical neurons. The extent of the lesions was estimated from the histological sections and by referencing them against sections from a mouse brain atlas (Paxinos et al., 2001). The experimenters were not blinded to the treatment group, i.e., lesioned or non-lesioned, but they were blind to the lesion size both during the behavior experiments and most of the data processing.\n\nIn order to visualize the distribution of IC-projecting neurons in mice without cortical lesions, 150 nl of the retrograde rAAV2-CAG-cre (UNC Vector Core) construct was injected into the dorsal IC of one Ai9 mouse with an intact cortex across three sites at depths of 100\u2013400 \u03bcm below the brain surface.\n\n### Histology\n\nFor histological processing, mice were perfused transcardially, first with phosphate-buffered saline (PBS) and then with 4% paraformaldehyde in (PBS), and their brains were sectioned coronally (100 \u03bcm thick) with a vibratome (Leica). Images were taken manually using a Leica DMR microscope, a confocal laser scanning microscope (Olympus FV1000), or with an automated slide scanner (Zeiss Axioscan Z1). The brain of one mouse (Figure 2\u2014figure supplement 1) was sectioned and imaged on a custom-built two-photon whole brain tomograph.\n\n### Click detection task\n\nStarting 2\u20133 days before training commenced, the mice were habituated to head fixation in the experimental setup, and their access to water was restricted to about ~1 ml per day, bringing their body weight down to about ~85% of the pre-restriction values. During the training phase, the mice were required to report a 0.5ms broadband click stimulus of 80 dB SPL by licking a waterspout positioned in front of them. Licking within a 1.5 s response window (occasionally this was reduced in duration to discourage excessive licking) triggered an immediate water reward (~2 \u03bcl). Stimulus trials and catch (no stimulus) trials were randomly interleaved with an inter-trial interval drawn from a normal distribution with a mean and standard deviation of 8 s and 2 s, respectively, and a lower bound of 3 s. Successful reporting of the sound within the response window was scored a \u2018hit,\u2019 while failure to respond was scored a \u2018miss.\u2019 During catch trials, neither licking (\u2018false alarm\u2019) during the 1.5 s response window nor withholding licking (\u2018correct rejection\u2019) triggered a reward. To help the mice form an association between sound and reward, they received occasional \u2018free\u2019 rewards in stimulus trials during the initial training even when no licking occurred.\n\nOnce the mice had achieved a stable level of performance (typically two days with d\u2019>1.5), quieter stimuli (41\u201371 dB SPL) were introduced. For each mouse, a total of 9 different sound levels were used and the range of sound levels was adjusted to each animal\u2019s behavioral performance to avoid floor and ceiling effects and could, therefore, differ from mouse to mouse. The behavioral experiments were run using custom MATLAB (MathWorks) scripts interfacing with a National Instruments board (NI USB-6501) for reward delivery and lick registration. The stimuli were presented using Psychtoolbox through a free-field speaker (Vifa, Avisoft Bioacoustics, Germany), positioned about ~15 cm from the snout of the mouse. Stimuli were calibrated using a Pettersson M500 microphone, which was itself referenced to a sound-level calibrator (Iso-Tech SLC-1356). Stimulus levels were calibrated by integrating the recorded RMS of clicks over the mouse hearing range (1\u2013100 kHz) and comparing this to the RMS of stimuli from the reference sound-level calibrator.\n\nIn the optogenetics experiments, the behavioral task was identical except that a single sound level (80 dB SPL) was used and on 50% of the trials bilateral photostimulation (20 Hz, 10ms pulses, 0.2 mW/mm2) was performed via two 470 nm LEDs (CREE-XP-E2, LED-Tech, Germany) positioned above the cranial windows. LED-on and LED-off trials were randomly interleaved and stimulation lasted for 700 ms starting 50 ms before trial onset. Furthermore, masking flashes were presented in all trials from two bright LEDs (60 mW) positioned a few cm in front of the animals\u2019 eyes.\n\n### Two-photon calcium imaging\n\nImaging was performed at a depth of 50 \u03bcm \u2013 150 \u03bcm from the IC surface using a commercial two-photon laser-scanning microscope (B-Scope, ThorLabs, VA, USA), a SpectraPhysics Mai-Tai eHP laser (Spectra-Physics, CA, USA) tuned to 930 nm, and a Nikon 16 \u00d7 0.8 NA objective. Images were acquired with a resolution of 512 by 512 pixels at a rate of ~28 Hz. The size of the field of view was either 500 \u00b5m by 500 \u00b5m or 666 \u00b5m by 666 \u00b5m, which allowed us to, typically, image dozens of corticorecipient IC neurons simultaneously. Each imaging session lasted around 1\u20132 hr.\n\n### Image processing\n\nRigid and non-rigid image registration, segmentation, neuropil, and signal extraction were performed using the Python version of suite2p (Pachitariu et al., 2017). Neuropil extraction was performed using default suite2p parameters (https://suite2p.readthedocs.io/en/latest/settings.html), neuropil correction was done using a coefficient of 0.7 and calcium \u0394F/F signals were obtained by using the median over the entire fluorescence trace as F0. To remove slow fluctuations in the signal, a baseline of each neuron\u2019s entire trace was calculated by Gaussian filtering as well as minimum and maximum filtering using default suite2p parameters. This baseline was then subtracted from the signal. To assess the extent of image displacement in the z-axis, we compared the average of the top and the bottom 500 frames of each spatial principal component (PC) of the registered images for every 8\u201316 min of the recordings. Any region of interest (ROI) with substantial z-axis movement was excluded from further analysis. Sessions in which the majority of ROIs had to be excluded were discarded entirely. Furthermore, in order to specifically assess brain motion caused by the motor component of the task, i.e., the animal\u2019s licking, lick-triggered movies of the imaging frames were created for every 8\u201316 min of the recordings. The rationale here is that if licking causes a stereotypical displacement of the imaging plane, this will become apparent when image sequences are averaged across lick events. Specifically, non-registered image sequences surrounding (from 2 s before to 2 s after) lick events were used to produce averaged lick-triggered movies. These lick-triggered movies, as well as non-averaged sequences, were then visually inspected and ROIs were excluded from subsequent analysis if they were affected by substantial z-motion.\n\n### Analysis of task-modulated and sound-driven neurons\n\nTo identify individual neurons that produced significantly different response magnitudes in hit and miss trials, we calculated the mean activity for each stimulus trial by taking the mean activity over the 5 s following the stimulus presentation and subtracting the mean activity over the 2 s preceding the stimulus during that same trial. A Mann-Whitney U test was then performed to assess whether a neuron showed a statistically significant difference (Benjamini-Hochberg adjusted p-value of 0.05) in response magnitude between hit and miss trials. The analysis was performed using equal numbers of hit and miss trials at each sound level to ensure balanced sound level distributions. If, for a given sound level, there were more hit than miss trials, we randomly selected a sample of hit trials (without substitution) to match the sample size for the miss trials and vice versa. Sound-driven neurons were identified by comparing the mean miss trial activity before and after stimulus presentation. Specifically, we performed a Wilcoxon signed rank test to assess whether there was a statistically significant difference (Benjamini-Hochberg adjusted p-value of 0.05) between the mean activity over the 2 s preceding the stimulus and the mean activity over the 1-s period following stimulus presentation. This analysis was performed using miss trials with click intensities from 53 dB SPL to 65 dB SPL (many sessions contained very few or no miss trials for higher sound levels).\n\n### Clustering analysis\n\nTo identify sub-populations of neurons with distinct response profiles, a clustering analysis was performed. While clustering is a useful approach for organizing and visualizing the activity of large and heterogeneous populations of neurons, we need to be mindful that, given continuous distributions of response properties, the locations of cluster boundaries can be somewhat arbitrary and/or reflect idiosyncrasies of the chosen method and thus vary from one algorithm to another. We employed an approach very similar to that described in Namboodiri et al., 2019 because it is thought to produce stable results in high-dimensional neural data (Hirokawa et al., 2019). For each neuron, the trial-averaged activity was obtained by averaging across all the sound levels presented in a given session separately for hit and miss trials (given the small number of catch trials, approximately one-tenth of all trials, this analysis was restricted to stimulus trials only). Differences in the field of view size between sessions resulted in slight differences in frame rate and thus frame duration. Therefore, the activity traces were linearly interpolated to have the same number of data points (193 frames). For each neuron, the trial-averaged activity for missed trials was appended to that for hit trials, producing 386 data points per neuron for a total of 2649 neurons (n=1,697 neurons from 40 sessions with nine non-lesioned mice; n=952 neurons from 40 sessions with seven lesioned mice). To reduce the dimensionality of this dataset before applying the clustering algorithm, we performed principal components analysis (PCA) along the time axis to capture the temporal response profile for each neuron. Guided by the \u2018elbow\u2019 point in a scree plot visualizing the fraction of variance explained by each PC, we decided to project the dataset to the lower dimensional subspace formed by the first nine PCs.\n\nSpectral clustering was used to cluster the resulting data. The affinity matrix was constructed by computing a graph of nearest neighbors. The hyperparameters of the clustering algorithm, including the number of nearest neighbors and the number of clusters, were optimized by a grid search to maximize the mean Silhouette Score for all samples. The Silhouette Score is a measure of the compactness of individual clusters (intra-cluster distance) and the separation amongst clusters (inter-cluster distance). For a given sample $i$ that belongs to a cluster $C_{I}$, the Silhouette Score is defined as:\n\n$$\ns_{i}=\\frac{(b_{i}\u2212a_{i})}{max(a_{i},b_{i})}\n$$\n\nwhere $a_{i}$ is the mean distance between sample $i$ and all the other samples in the same cluster, and $b_{i}$ is the mean distance of sample $i$ to the nearest cluster that sample $i$ is not part of. Let $C_{I}\u2228$ and $C_{J}\u2228$ be the number of samples belonging to clusters $C_{I}$ and $C_{J}$, and $d(i,j)$ be the distance between samples $i$ and j; $a_{i}$ and $b_{i}$ are defined as:\n\n$$\na_{i}=\\frac{1}{C_{I}\u2228\u22121}\\sumj\\inC_{I},i\\neqjd(i,j)\n$$\n\n\n\n$$\nb_{i}=minJ\\neqI\\frac{1}{C_{J}\u2228}\\sumj\\inC_{J}d(i,j)\n$$\n\nThe resulting clusters from the hyperparameter search were further examined by plotting clusters in pairs against each other with t-distributed Stochastic Neighbor Embedding, a statistical method for visualizing high-dimensional data that involves giving each data point a location in a two or three-dimensional space (van der Maaten and Hinton, 2008).\n\n### Population decoding\n\nLogistic regression models were trained on the network activity of each session, i.e., the \u0394F/F values of all ROIs in each session, to classify hit vs miss trials. This was done on a frame-by-frame basis, meaning that each time point (frame) of each session was trained separately. Rather than including all the trials in a given session, only trials of intermediate difficulty were used for the decoding analysis. More specifically, we only included trials across five sound levels, comprising the lowest sound level that exceeded a d\u2019 of 1.5 plus the two sound levels below and above that level. That ensured that differences in sound level distributions would be small, while still giving us a sufficient number of trials to perform the decoding analysis. Sessions were only included if there were at least 15 instances for both hit and miss trials. The models were trained with L2 regularization, which gave similar contributions to correlated features (i.e. individual neuronal activity) instead of discarding some of the correlated features that were also related to behaviorally-relevant information. The strength of the regularization for each model was hyperparameter-tuned and the reported results were cross-validated. Specifically, neuronal data in each session was split into five stratified folds, and each fold preserved the percentage of hit and miss trials in a given session. Four folds were used for cross-validated hyperparameter search (randomized search drawn from the log-uniform distribution between 1 \u00d7 10-4 and 1 \u00d7 102), and the remaining 1 fold was used for evaluating the model after the best hyperparameters were refitted on the four folds of data. To more reliably estimate the model results, the evaluation was done for each of the five folds for each session and the average of these 5 results was taken as each session\u2019s model performance at each timepoint.\n\nThe percentage of hit and miss trials was different in each session, and the number of hit trials often exceeded the number of miss trials. To include as many trials as possible while preventing the models from taking advantage of class imbalances, balancing procedures were performed at both the model-level and the metrics-level. First, logistic regression was trained with the class weights adjusted inversely proportional to the frequency of each trial type in the training data, giving higher weights to the minority class and lower weights to the majority class. Given the total number of trials in the training data $N_{T}$, the number of classes $N_{C}$, and the number of trials for a given class $N_{i}$, the weight for a given class $W_{i}$ was defined as follows:\n\n$$\nW_{i}=W_{T}/(N_{C}\u2217N_{i})\n$$\n\nThese weights were then applied to the cost function during the training process to increase the penalty for minority class misclassifications and reduce the penalty for majority class misclassifications. Second, to avoid the estimated model performance being inflated due to class imbalance, balanced accuracy (Brodersen et al., 2010) was used to report the model performance. Balanced accuracy was defined as the arithmetic mean of the true positive rate and the true negative rate. For a model performing equally well on either class, the balanced accuracy is the same as the conventional accuracy (i.e. the number of correct predictions divided by the total number of predictions). However, for a model scoring above chance only because the model takes advantage of the class imbalance (i.e. consistently predicts the majority class), the balanced accuracy is at the chance level.\n\n$$\nBalancedaccuracy=\\frac{1}{2}\u2217(\\frac{N_{truepos.}}{N_{truepos.}+N_{falseneg.}}+\\frac{N_{trueneg.}}{N_{trueneg.}+N_{falsepos.}}).\n$$\n\nAdditionally, dummy models were used as baseline models to compare against the performance of the logistic regression models. Dummy models predicted the class labels (i.e. hit or miss trials) randomly while taking into account the probability of each class.\n\nTo assess whether the model performance was correlated with the number of ROIs recorded in a session, Spearman\u2019s correlation coefficient was computed between the number of ROIs in a session and the mean model performance over different 1-s time periods relative to stimulus onset (from 2 s before to 5 s after stimulus onset).\n\nStatistical tests were conducted to compare the model performance between lesioned and non-lesioned mice, as well as between the trained models and dummy models. Since the frame rate varied slightly with the size of the field of view, the numbers of frames (193\u2013197 frames) per 7-s trial could be different across sessions. Thus, model performance was linearly interpolated to make all sessions contain the same number of frames before statistical tests were performed at each timepoint. The model performance of each session was cross-validated and averaged across folds, and the statistical tests were performed on the distributions of the sessions\u2019 model performance. The Shapiro\u2013Wilk test was used to determine whether a parametric or nonparametric test should be used, using p<0.05 as a criterion. A one-sided Wilcoxon signed-rank test or paired t-test was performed for comparing trained vs dummy models, while a one-sided Mann-Whitney U test or t-test was performed for comparing trained models for different groups of mice. Because of the smaller sample sizes, the statistical tests in Figure 6B were carried out after binning the scores for every two timepoints. Statistical significance was defined as p<0.05 after Bonferroni correction.\n",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Brice Bathellier, CNRS France\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89950.4.sa0](https://doi.org/10.7554/eLife.89950.4.sa0)\n\nThis study demonstrates that neurons receiving inputs from auditory cortex in the inferior colliculus widely encode the outcome of a sound detection task independent of the presence of auditory cortex. This valuable study based on imaging of transsynaptically labelled neurons provides convincing evidence that auditory cortex is necessary neither for sound detection, nor to channel information related to behavioral outcome to the subcortical auditory system. This study will be of wide interest for sensory neuroscientists.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89950.4.sa1](https://doi.org/10.7554/eLife.89950.4.sa1)\n\nThe inferior colliculus (IC) is the central auditory system's major hub. It integrates ascending brainstem signals to provide acoustic information to the auditory thalamus. The superficial layers of the IC (\"shell\" IC regions as defined in the current manuscript) also receive a massive descending projection from the auditory cortex. This auditory cortico-collicular pathway has long fascinated the hearing field, as it may provide a route to funnel \"high-level\" cortical signals and impart behavioral salience upon an otherwise behaviorally agnostic midbrain circuit.\n\nAccordingly, IC neurons can respond differently to the same sound depending on whether animals engage in a behavioral task (Ryan and Miller 1977; Ryan et al., 1984; Slee & David, 2015; Saderi et al., 2021; De Franceschi & Barkat, 2021). Many studies also report a rich variety of non-auditory responses in the IC, far beyond the simple acoustic responses one expects to find in a \"low-level\" region (Sakurai, 1990; Metzger et al., 2006; Porter et al., 2007). A tacit assumption is that the behaviorally relevant activity of IC neurons is inherited from the auditory cortico-collicular pathway. However, this assumption has never been tested, owing to two main limitations of past studies:\n\n(1) Prior studies could not confirm if data were obtained from IC neurons that receive monosynaptic input from the auditory cortex.\n\n(2) Many studies have tested how auditory cortical inactivation impacts IC neuron activity; the consequence of cortical silencing is sometimes quite modest. However, all prior inactivation studies were conducted in anesthetized or passively listening animals. These conditions may not fully engage the auditory cortico-collicular pathway. Moreover, the extent of cortical inactivation in prior studies was sometimes ambiguous, which complicates interpreting modest or negative results.\n\nHere, the authors' goal is to directly test if the auditory cortex is necessary for behaviorally relevant activity in IC neurons. They conclude that surprisingly, task relevant activity in cortico-recipient IC neuron persists in absence of auditory cortico-collicular transmission. To this end, a major strength of the paper is that the authors combine a sound-detection behavior with clever approaches that unambiguously overcome the limitations of past studies.\n\nFirst the authors inject a transsynaptic virus into the auditory cortex, thereby expressing a genetically encoded calcium indicator in the auditory cortex's postsynaptic targets in the IC. This powerful approach enables 2-photon Ca2+ imaging from IC neurons that unambiguously receive monosynaptic input from auditory cortex. Thus, any effect of cortical silencing should be maximally observable in this neuronal population. Second, they abrogate auditory cortico-collicular transmission using lesions of auditory cortex. This \"sledgehammer\" approach is arguably the most direct test of whether cortico-recipient IC neurons will continue to encode task-relevant information in absence of descending feedback. Indeed, their method circumvents the known limitations of more modern optogenetic or chemogenetic silencing, e.g. variable efficacy.\n\nThe authors have revised their manuscript and adequately addressed the major concerns. Although more in depth analyses of these rich datasets are definitely possible, the current results nevertheless stand on their own. Indeed, the work serves as a beacon to move away from the idea that cortico-collicular projections function primarily to impart behavioral relevance upon auditory midbrain neurons. This knowledge inspires a search for alternative explanations as to the role of auditory cortico-collicular synapses in behavior.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89950.4.sa2](https://doi.org/10.7554/eLife.89950.4.sa2)\n\nSummary:\n\nThis study takes a new approach to studying the role of corticofugal projections from auditory cortex to inferior colliculus. The authors performed two-photon imaging of cortico-recipient IC neurons during a click detection task in mice with and without lesions of auditory cortex. In both groups of animals, they observed similar task performance and relatively small differences in the encoding of task-response variables in the IC population. They conclude that non-cortical inputs to the IC can provide substantial task-related modulation, at least when AC is absent.\n\nStrengths:\n\nThis study provides valuable new insight into big and challenging questions around top-down modulation of activity in the IC. The approach here is novel and appears to have been executed thoughtfully. Thus, it should be of interest to the community.\n\nWeaknesses:\n\nAnalysis of single unit activity is limited in its scope.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89950.4.sa3](https://doi.org/10.7554/eLife.89950.4.sa3)\n\nSummary:\n\nThis study aims to demonstrate that cortical feedback is not necessary to signal behavioral outcome to shell neurons of the inferior colliculus during a sound detection task. The demonstration is achieved in a very clear manner by the observation of the activity of cortico-recepient neurons in animals which have received lesions of the auditory cortex. The experiment shows that neither behavior performance nor neuronal responses are significantly impacted by cortical lesions except for the case of partial lesions which seem to have a disruptive effect on behavioral outcome signaling.\n\nStrengths:\n\nThe demonstration of the main conclusions is based on state-of-the-art, carefully controlled methods and is highly convincing. There is an in depth discussion of the different effects of auditory cortical lesions on sound detection behavior.\n\nWeaknesses:\n\nThe description of feedback signals could be more detailed although it is difficult to achieve good temporal resolution with the calcium imaging technique necessary for targeting cortico-recipient neurons.\n",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "074287c6-6505-4559-931b-4fd3f2f75dd6",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C1",
+      "claim": "Transient pharmacological silencing of the auditory cortex using the GABA-A agonist muscimol abolishes the ability of rodents to perform a sound detection task.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient pharmacological silencing of the auditory cortex using the GABA-A agonist muscimol has been shown to abolish the ability of rodents (Talwar et al., 2001), including head-fixed mice (Li et al., 2017), to perform a sound detection task",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to previous studies (Talwar et al., 2001; Li et al., 2017)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "ffc0d0c5-b452-4cce-863e-5c1d77ba6f73",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C2",
+      "claim": "Optogenetic suppression of cortical activity by photoactivating ChR2-expressing inhibitory neurons in Gad2-IRES-cre mice significantly impaired sound detection performance.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that optogenetic suppression of cortical activity by photoactivating ChR2-expressing inhibitory neurons in Gad2-IRES-cre mice (Lohse et al., 2020) also significantly impaired sound detection performance (Figure 1B and C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B and C, and references a citation (Lohse et al., 2020)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "ce11c088-ff4e-4c8e-8a6f-1112d8ea22b1",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C3",
+      "claim": "Bilateral lesions of the auditory cortex leave sound detection performance intact in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Several recent studies have shown that in contrast to the disruptive effects of transient silencing, cortical lesions leave performance in some sensory tasks intact (Hong et al., 2018; Ceballo et al., 2019; O'Sullivan et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to recent studies (Hong et al., 2018; Ceballo et al., 2019; O'Sullivan et al., 2019)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "3875d661-981e-4b7e-846b-bc4001a3461e",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C4",
+      "claim": "There was no difference between lesioned and non-lesioned mice in their learning speed for the click detection task.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no difference between lesioned and non-lesioned mice in their learning speed (Figure 3A, p>0.05, mixed-design ANOVAs)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (p>0.05, mixed-design ANOVAs) and data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "a8154443-3377-41e0-b6a4-4b55b2df98de",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C5",
+      "claim": "There was no difference between lesioned and non-lesioned mice in their psychometric functions for the click detection task.",
+      "claim_type": "EXPLICIT",
+      "source": "or psychometric functions (Figure 3B, p>0.05, mixed-design ANOVA)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (p>0.05, mixed-design ANOVA) and data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "b126709c-98dd-4126-bd9b-e64b97953f81",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C6",
+      "claim": "Most corticocollicular neurons project ipsilaterally, with a substantial proportion also sending axons to the contralateral midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Most corticocollicular neurons project ipsilaterally, with a substantial proportion also sending axons to the contralateral midbrain (Stebbings et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Stebbings et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "4cf2bfc5-1580-4a2c-a9e8-4aae9e6398f8",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C7",
+      "claim": "The majority of corticocollicular neurons are found in the temporal cortex, and overwhelmingly in the auditory fields.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of corticocollicular neurons are found in the temporal cortex, and overwhelmingly in the auditory fields, while a small fraction populates adjacent areas, such as the temporal association area (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 2\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "94750169-8aa0-4abe-8658-76cef5a006b3",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C8",
+      "claim": "AAV1.hSyn.Cre.WPRE is a virus with anterograde transsynaptic spread properties.",
+      "claim_type": "EXPLICIT",
+      "source": "More specifically, we injected AAV1.hSyn.Cre.WPRE, a virus with anterograde transsynaptic spread properties (Zingg et al., 2017), into the right auditory cortex",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Zingg et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "f241ffcb-6ee7-4d31-8bb1-387148e4b076",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C9",
+      "claim": "Close to half (1272/2649) of all corticorecipient IC neurons showed a statistically significant difference in response magnitude between hit and miss trials.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, close to half (1272/2649) of all neurons showed a statistically significant difference in response magnitude between hit and miss trials",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific numerical data from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "ae9a6aa0-94f6-4a73-a695-acfb0c09784d",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C10",
+      "claim": "Only a small fraction (97/2649) of corticorecipient IC neurons exhibited a significant response to the sound.",
+      "claim_type": "EXPLICIT",
+      "source": "while only a small fraction (97/2649) exhibited a significant response to the sound.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by specific numerical data from the analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "7da93aae-6d5c-439a-8f83-08e895ddaad8",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C11",
+      "claim": "The activity of most corticorecipient IC neurons contained information beyond the physical properties of the stimulus.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the activity of the majority of neurons in the recorded population contained information beyond the physical properties of the stimulus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the clustering analysis showing distinct activity patterns for hit vs miss trials",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "7b2f733d-9b36-4f7a-9e20-b8b9f00d1b71",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C12",
+      "claim": "Lick-related sounds are estimated to be just 12 dB SPL.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that licking causes self-generated sounds, IC neurons could, in principle, respond to the sound of licking. However, given how quiet these are - estimated to be just 12 dB SPL (Singla et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Singla et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "943ba8df-d0f0-4111-a4e5-7ab1fe06a1b4",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C13",
+      "claim": "Much of the response to lick-related sounds is already canceled out at the level of the cochlear nucleus.",
+      "claim_type": "EXPLICIT",
+      "source": "and that much of the response to such lick-related sounds is already canceled out at the level of the cochlear nucleus (Singla et al., 2017; but see Shaheen et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Singla et al., 2017 and Shaheen et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "573f1e63-5359-4ebe-9821-423a94a2f67f",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C14",
+      "claim": "The average model performance was significantly above baseline in classifying hit vs miss trials in both lesioned and non-lesioned mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In both lesioned and non-lesioned mice, the average model performance was significantly above baseline in classifying hit vs miss trials (p<0.05, one-sided Wilcoxon signed-rank test or paired t-test with Bonferroni correction, Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (p<0.05) and data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "5acd8c44-13b6-48f3-a0d1-536740163583",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C15",
+      "claim": "The model performance in non-lesioned mice was significantly better than that in lesioned mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the model performance in non-lesioned mice was significantly better than that in lesioned mice (p<0.05, one-sided Mann-Whitney U test or t-test with Bonferroni correction, Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by statistical analysis (p<0.05) and data shown in Figure 6A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "ef333dc5-da84-4290-9efe-b1639e49b864",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C16",
+      "claim": "The difference in decoding performance between lesioned and non-lesioned mice was not the result of the difference in the number of neurons recorded.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in the decoding performance was not the result of the difference in the number of neurons between non-lesioned and lesioned mice (Figure 6\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by analysis shown in Figure 6\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "18dd388c-5341-42bf-8c4e-8275f498a4a2",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C17",
+      "claim": "Four of the seven lesioned animals had (near-)complete lesions, meaning that all or an estimated ~95% of the auditory cortex had been lesioned.",
+      "claim_type": "EXPLICIT",
+      "source": "Four of the seven lesioned animals had '(near-)complete' lesions, meaning that all (Figure 2) or an estimated ~95% (Figure 2\u2014figure supplement 2) of the auditory cortex had been lesioned",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by histological data shown in Figure 2 and Figure 2\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "e9aba56d-7d38-482d-8f79-55367d660680",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C18",
+      "claim": "The average decoding performance for mice with (near-)complete lesions was significantly better than that measured for mice with partial lesions.",
+      "claim_type": "EXPLICIT",
+      "source": "This revealed that the average decoding performance for mice with (near-)complete lesions was significantly better than that measured for mice with partial lesions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by statistical comparison of decoding performance between groups",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "e1ca42b2-aece-423f-b529-961100fb0471",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C19",
+      "claim": "The decoding performance in mice with (near-)complete lesions was largely indistinguishable from that in mice with an intact auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the decoding performance in mice with (near-)complete lesions was largely indistinguishable from that in mice with an intact auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by comparison of decoding performance data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "86ac3792-12b6-4536-9038-f021667ede0d",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C20",
+      "claim": "Decoding accuracy was better than baseline even before stimulus onset.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, decoding accuracy was better than baseline even before stimulus onset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by decoding analysis results shown in Figure 6",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "3d5d5c53-4f11-416f-9087-6f7e8356bc51",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C21",
+      "claim": "Changes in arousal or motivation can alter both the probability that an upcoming stimulus is detected and the activity of neurons in the network.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, changes in arousal or motivation can alter both the probability that an upcoming stimulus is detected and the activity of neurons in the network (Lee and Dan, 2012; McGinley et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lee and Dan, 2012 and McGinley et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "d14b8dea-2e1e-45f7-a351-d168b10671a1",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C22",
+      "claim": "Average lick rates approximated the inter-trial interval distribution, suggesting that mice learned to adapt their behavior to this distribution and anticipate the timing of upcoming stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, spontaneous licks did not occur at random times during the peri-catch trial periods following hit trials. Instead, average lick rates approximated the inter-trial interval distribution (Figure 6\u2014figure supplement 4A\u2013D), suggesting that mice learned to adapt their behavior to this distribution and anticipate the timing of upcoming stimuli",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by data shown in Figure 6\u2014figure supplement 4A\u2013D and inference from the observed pattern",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "104b8add-606a-4a6e-a952-24d4869e4053",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C23",
+      "claim": "The auditory cortex is considered crucial for the integration of acoustic and contextual information.",
+      "claim_type": "EXPLICIT",
+      "source": "The auditory cortex is considered crucial for the integration of acoustic and contextual information and is thought to share the resulting representations with subcortical auditory structures via its vast descending projections.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established scientific consensus about the role of auditory cortex",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "f6f9238f-074e-4f58-8752-4b1971113fcd",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C24",
+      "claim": "Descending projections often outnumber their feedforward counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "The fact that descending projections often outnumber their feedforward counterparts (Sherman, 2007) attests to their likely importance for brain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Sherman, 2007",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "81c4429f-723a-4bcd-92b1-dacab48d7e04",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C25",
+      "claim": "The descending projections of the auditory cortex target all major subcortical stations of the auditory pathway and are among the largest pathways of the brain.",
+      "claim_type": "EXPLICIT",
+      "source": "The descending projections of the auditory cortex target all major subcortical stations of the auditory pathway and are among the largest pathways of the brain (Winer, 2005; Bajo and King, 2013; Antunes and Malmierca, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Winer, 2005; Bajo and King, 2013; Antunes and Malmierca, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "840d269d-9940-4183-a812-a5005641c12a",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C26",
+      "claim": "The inferior colliculus is an obligatory midbrain relay for nearly all ascending auditory input.",
+      "claim_type": "EXPLICIT",
+      "source": "One of their main targets is the inferior colliculus (IC), an obligatory midbrain relay for nearly all ascending auditory input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established knowledge about the auditory pathway",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "9fa34555-f687-4112-81b7-75761753ff06",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C27",
+      "claim": "The corticocollicular projection primarily terminates in the non-lemniscal shell of the IC.",
+      "claim_type": "EXPLICIT",
+      "source": "The corticocollicular projection primarily terminates in the non-lemniscal shell of the IC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim represents established anatomical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "0dc12ad8-d3db-4923-9f47-e6d787d318c9",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C28",
+      "claim": "The projection from the auditory cortex to the midbrain was identified almost a century ago.",
+      "claim_type": "EXPLICIT",
+      "source": "The projection from the auditory cortex to the midbrain was identified almost a century ago (Mettler, 1935)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Mettler, 1935",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "409b8260-3b68-416a-a4e1-90f2445d1256",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C29",
+      "claim": "Manipulating the activity of descending projection neurons can alter the collicular representations of multiple sound features.",
+      "claim_type": "EXPLICIT",
+      "source": "decades of research have since demonstrated that manipulating the activity of descending projection neurons can alter the collicular representations of multiple sound features, influence adaptive plasticity and perceptual learning, and even trigger an innate flight response (Suga, 2008; Nakamoto et al., 2008; Bajo et al., 2010; Xiong et al., 2015; Blackwell et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Suga, 2008; Nakamoto et al., 2008; Bajo et al., 2010; Xiong et al., 2015; Blackwell et al., 2020)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "949381fc-0d4b-4ee4-a247-556ce15aa554",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C30",
+      "claim": "Behavior, cognition, and brain state can strongly influence activity in the sensory pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, recordings in awake animals have shown that behavior, cognition, and brain state can strongly influence activity in the sensory pathways (Schneider and Mooney, 2018; McCormick et al., 2020; Parker et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Schneider and Mooney, 2018; McCormick et al., 2020; Parker et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "8b78be98-8258-41cd-88b0-74ac5d559755",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C31",
+      "claim": "Contextual influences appear particularly strong in the cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with a hierarchical view of sensory processing in which neurons at higher levels carry progressively more complex representations of the world, such contextual influences appear particularly strong in the cortex (Stringer et al., 2019; Musall et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Stringer et al., 2019; Musall et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "0a6458c1-8360-4fec-882e-d136d0b27987",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C32",
+      "claim": "Non-acoustic and contextual variables can alter sensory processing at subcortical levels, including the IC and particularly its shell.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, non-acoustic and contextual variables can also alter sensory processing at subcortical levels, including the IC and particularly its shell (Metzger et al., 2006; Gruters and Groh, 2012; Chen and Song, 2019; Yang et al., 2020; Parras et al., 2017; Saderi et al., 2021; Shaheen et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple studies (Metzger et al., 2006; Gruters and Groh, 2012; Chen and Song, 2019; Yang et al., 2020; Parras et al., 2017; Saderi et al., 2021; Shaheen et al., 2021)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "29b0503d-0d1f-4662-8b55-a7c3207cfbeb",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C33",
+      "claim": "Auditory corticocollicular axons terminate predominantly in the shell of the IC.",
+      "claim_type": "EXPLICIT",
+      "source": "Auditory corticocollicular axons terminate predominantly in the shell of the IC (Stebbings et al., 2014; Bajo and King, 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Stebbings et al., 2014; Bajo and King, 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "9d237922-6ec5-494d-a851-6185505f09da",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C34",
+      "claim": "The strongest effects of cortical manipulations have been reported in the shell region of the IC.",
+      "claim_type": "EXPLICIT",
+      "source": "and the strongest effects of cortical manipulations have been reported in this region (Nakamoto et al., 2008; Vila et al., 2019; Blackwell et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Nakamoto et al., 2008; Vila et al., 2019; Blackwell et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "04191788-8dee-406b-a619-b86058216b81",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C35",
+      "claim": "Effects of cortical manipulations on IC can be subtle or undetectable, especially when optogenetic silencing is used.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these effects can be subtle (Cruces-Sol\u00eds et al., 2018; Vila et al., 2019) or undetectable, especially when optogenetic silencing is used (Blackwell et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Cruces-Sol\u00eds et al., 2018; Vila et al., 2019; Blackwell et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "2a4714d7-cfd4-46c6-a39c-08ad6951b77d",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C36",
+      "claim": "The recordings from corticorecipient neurons in the IC are consistent with previous studies demonstrating that neural representations of behavioral variables can be found in the auditory midbrain.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recordings from corticorecipient neurons in the IC are consistent with previous studies demonstrating that neural representations of behavioral variables can be found in the auditory midbrain (Ruth et al., 1974; Nienhuis and Olds, 1978; Metzger et al., 2006; Gruters and Groh, 2012; Chen and Song, 2019; Yang et al., 2020; Saderi et al., 2021; De Franceschi and Barkat, 2021; Shaheen et al., 2021; Quass et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to multiple previous studies",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "7f03f89f-945c-428c-849e-81f9caaab0a4",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C37",
+      "claim": "The activity of most IC neurons was facilitated and about a third were suppressed during the sound detection task.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with responses recorded in the auditory cortex (Francis et al., 2018; De Franceschi and Barkat, 2021) and IC (Chen and Song, 2019; Yang et al., 2020; De Franceschi and Barkat, 2021) of behaving mice, we found that the activity of most neurons was facilitated and about a third were suppressed during the sound detection task.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by data from the study and citations to previous work (Francis et al., 2018; De Franceschi and Barkat, 2021; Chen and Song, 2019; Yang et al., 2020)",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "4b62e2da-8ef4-4d19-868d-d40ca6d5d2be",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C38",
+      "claim": "Simple auditory skills, including the ability of freely moving rats to detect sounds, are unaffected by the removal of the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "In keeping with our findings, numerous studies (reviewed in e.g. Pickles, 1988; Buser and Imbert, 1992) have shown that simple auditory skills, including the ability of freely moving rats to detect sounds (Kelly, 1970), are unaffected by the removal of the auditory cortex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to reviews (Pickles, 1988; Buser and Imbert, 1992) and a specific study (Kelly, 1970)",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "eff92160-c1e8-4ca2-82c7-45b7871801de",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C39",
+      "claim": "Transient pharmacological silencing of the auditory cortex in freely moving rats completely abolishes sound detection.",
+      "claim_type": "EXPLICIT",
+      "source": "However, transient pharmacological silencing of the auditory cortex in freely moving rats (Talwar et al., 2001), as well as head-fixed mice (Li et al., 2017), completely abolishes sound detection",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Talwar et al., 2001 and Li et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "298f06c2-123d-42f3-b706-14b644108d53",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C40",
+      "claim": "Trained mice achieve pre-lesion performance levels on simple auditory discrimination or somatosensory detection tasks suddenly and within 48 hr following cortical ablation.",
+      "claim_type": "EXPLICIT",
+      "source": "Although our results cannot speak directly to the question of whether the preservation of sound detection without auditory cortex reflects a rewiring or repurposing of circuits in the brain, this seems unlikely given that other studies have shown that trained mice achieve pre-lesion performance levels on simple auditory discrimination (Ceballo et al., 2019; O'Sullivan et al., 2019) or somatosensory detection (Hong et al., 2018) tasks suddenly and within 48 hr following cortical ablation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Ceballo et al., 2019; O'Sullivan et al., 2019; Hong et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "8bd97946-9353-4e76-bf85-7119928bb9bb",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C41",
+      "claim": "Synaptic scaling is a process that has been suggested to take up to 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "In this scenario, normal operation would resume once synaptic scaling (Keck et al., 2013) had homeostatically restored normal activity in these structures, a process that has been suggested to take up to 48 hr",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Keck et al., 2013",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "ebb520b7-3c1e-4727-aa45-3238dee1541e",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C42",
+      "claim": "Smaller lesions can have a more disruptive effect than larger, more complete lesions, in that the time it takes mice to learn a whisker-dependent sensory detection task is anticorrelated with the size of their somatosensory cortex lesion.",
+      "claim_type": "EXPLICIT",
+      "source": "While this finding is somewhat counterintuitive and is based on only three mice with partial lesions, it has been observed before that smaller lesions can have a more disruptive effect than larger, more complete lesions, in that the time it takes mice to learn a whisker-dependent sensory detection task is anticorrelated with the size of their somatosensory cortex lesion (Hong et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hong et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "a2855337-48bd-4be0-a48d-7b4fb47b4e84",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C43",
+      "claim": "Non-acoustic sensory input can reach the IC via brainstem nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional non-acoustic sensory input can reach the IC via brainstem nuclei (Lesicko et al., 2016; Shore and Zhou, 2006)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lesicko et al., 2016; Shore and Zhou, 2006",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "fd10846f-6164-4639-82ad-c7d7c6e35249",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C44",
+      "claim": "Non-acoustic sensory input can reach the IC via the superior colliculus.",
+      "claim_type": "EXPLICIT",
+      "source": "and the superior colliculus (Chen et al., 2018; Coleman and Clerici, 1987).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen et al., 2018; Coleman and Clerici, 1987",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "6f751aa3-a580-45ba-928f-7a614e932ee6",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C45",
+      "claim": "Motor signals may reach the IC via the substantia nigra.",
+      "claim_type": "EXPLICIT",
+      "source": "The latter, together with input from the substantia nigra (Ola\u017aabal and Moore, 1989)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Ola\u017aabal and Moore, 1989",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "2f01d4c3-83df-4a47-8e43-177310dfe7e4",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C46",
+      "claim": "Motor signals may reach the IC via the globus pallidus.",
+      "claim_type": "EXPLICIT",
+      "source": "and the globus pallidus (Moriizumi and Hattori, 1991) may also be a source of motor signals",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Moriizumi and Hattori, 1991",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "a834e022-3131-4b7e-9f35-7ff104bd5a9b",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C47",
+      "claim": "State changes may impact on the IC via inputs from neuromodulatory structures, including the locus coeruleus and the subparafascicular, dorsal raphe and tegmental nuclei.",
+      "claim_type": "EXPLICIT",
+      "source": "while state changes may impact on the IC via inputs from neuromodulatory structures, including the locus coeruleus and the subparafascicular, dorsal raphe and tegmental nuclei (Chen and Song, 2019, Liu et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Chen and Song, 2019, Liu et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "ac3ca31e-0b04-40a7-81b4-070fde10d5cf",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C48",
+      "claim": "IC neurons show task-related activity in the absence of auditory cortical input.",
+      "claim_type": "EXPLICIT",
+      "source": "While modulation of IC activity by this descending projection has been implicated in various functions, most notably in the plasticity of auditory processing, we have shown in mice performing a sound detection task that IC neurons show task-related activity in the absence of auditory cortical input.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the experimental data from the study showing similar activity patterns in lesioned and non-lesioned mice",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "ec02fda6-1649-46cf-b594-482b15704edd",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C49",
+      "claim": "Subcortical auditory structures have access to a wealth of non-acoustic information independently of the auditory cortex.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, this was also the case in mice in which auditory cortical input to the midbrain had been removed by bilateral cortical lesions. This illustrates that subcortical auditory structures have access to a wealth of non-acoustic information and can, independently of the auditory cortex, carry much richer neural representations than previously thought.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on inference from the experimental findings showing similar task-related activity in lesioned mice",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "e6e0c096-55e4-47fb-bad6-01f0e2dd6c3d",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C50",
+      "claim": "The animals' behavior can be decoded from the activity of corticorecipient IC shell neurons with a high degree of accuracy.",
+      "claim_type": "EXPLICIT",
+      "source": "By imaging cellular activity in the corticorecipient shell of the inferior colliculus of mice engaged in a sound detection task, we show that the majority of neurons encode information beyond the physical attributes of the stimulus and that the animals' behavior can be decoded from the activity of those neurons with a high degree of accuracy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by the decoding analysis results showing above-chance performance",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "7f746258-4ebc-40fd-be35-24a4d273b15d",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C51",
+      "claim": "All experiments were approved by the Committee on Animal Care and Ethical Review at the University of Oxford and were licensed by the UK Home Office.",
+      "claim_type": "EXPLICIT",
+      "source": "All experiments were approved by the Committee on Animal Care and Ethical Review at the University of Oxford and were licensed by the UK Home Office (Animal Scientific Procedures Act, 1986, amended in 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement of regulatory compliance",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "5b85c691-0a8a-4414-93b2-4ca27c4f73c5",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C52",
+      "claim": "Mice were maintained on a 12 hr light/dark cycle and were housed at 20\u201324\u00b0C with a relative humidity of 45\u201365%.",
+      "claim_type": "EXPLICIT",
+      "source": "They were maintained on a 12 hr light/dark cycle and were housed at 20\u201324\u00b0C with a relative humidity of 45\u201365%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental housing conditions",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "c0a1781b-4697-4195-ab4d-4131354e4cf7",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C53",
+      "claim": "Imaging was performed at a depth of 50 \u03bcm \u2013 150 \u03bcm from the IC surface.",
+      "claim_type": "EXPLICIT",
+      "source": "Imaging was performed at a depth of 50 \u03bcm \u2013 150 \u03bcm from the IC surface using a commercial two-photon laser-scanning microscope (B-Scope, ThorLabs, VA, USA)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental imaging parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "82f648fa-d5af-4cef-b81d-fe4c74dd9d4a",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C54",
+      "claim": "Images were acquired with a resolution of 512 by 512 pixels at a rate of ~28 Hz.",
+      "claim_type": "EXPLICIT",
+      "source": "Images were acquired with a resolution of 512 by 512 pixels at a rate of ~28 Hz.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental imaging parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "d2e38cb9-0e38-4c24-96bb-9d442938eb9d",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "claim_id": "C55",
+      "claim": "The size of the field of view was either 500 \u00b5m by 500 \u00b5m or 666 \u00b5m by 666 \u00b5m.",
+      "claim_type": "EXPLICIT",
+      "source": "The size of the field of view was either 500 \u00b5m by 500 \u00b5m or 666 \u00b5m by 666 \u00b5m, which allowed us to, typically, image dozens of corticorecipient IC neurons simultaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim describes the experimental imaging parameters",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "390e903c-e440-4d9b-b1e7-ec1ce758e64b",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Transient suppression of auditory cortex impairs sound detection. Pharmacological silencing with muscimol abolishes sound detection in rodents (C1, C39), while optogenetic suppression significantly impairs performance (C2).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1 and C39 are supported by citations to prior work showing complete abolition of sound detection with muscimol. Claim C2 is supported by experimental data (Figure 1B-C) showing significant impairment with optogenetic silencing. The convergence of pharmacological and optogenetic approaches provides strong evidence, though the authors note lack of a control group for the optogenetic experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "952989cf-8c38-4cc6-b0e9-53cb94c87412",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Bilateral lesions of auditory cortex leave sound detection performance intact. Lesioned and non-lesioned mice showed no differences in learning speed (C4) or psychometric functions (C5), consistent with prior literature (C3, C38).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C5 are supported by statistical analyses (p>0.05, mixed-design ANOVAs) and data in Figure 3. Claims C3 and C38 provide supporting citations to prior work. The convergence of current experimental data with established literature strengthens this result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "eac74af0-6ebf-4a69-b658-9beccf42d0d3",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Anatomical characterization of corticocollicular projections and lesion extent. Most corticocollicular neurons project ipsilaterally (C6), are located in temporal/auditory cortex (C7), and were labeled using AAV1.hSyn.Cre.WPRE with transsynaptic properties (C8). Four of seven lesioned mice had near-complete lesions (C17).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6 and C8 are supported by appropriate citations. Claim C7 is supported by data in Figure 2\u2014figure supplement 1. Claim C17 is supported by histological data in Figure 2 and supplements. The anatomical characterization appears thorough with appropriate controls and validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "76d1e87b-52f6-46e4-86fa-48de6f1d0ab5",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Corticorecipient IC neurons encode information beyond stimulus properties. Nearly half (1272/2649) showed significant differences between hit and miss trials (C9), while only a small fraction (97/2649) showed significant sound responses (C10), suggesting most neurons encode non-acoustic information (C11).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9 and C10 provide specific numerical data from statistical analyses. Claim C11 is a reasonable inference from the disparity between task-modulated and sound-responsive neurons. However, the low number of sound-responsive neurons could also reflect the brief, low-intensity stimuli used, as the authors acknowledge.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "6aee9a77-79ab-4113-841f-79c00f3b3819",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Behavioral outcomes can be decoded from IC neural activity with high accuracy. Model performance was significantly above baseline in both lesioned and non-lesioned mice (C14), though better in non-lesioned mice (C15). This difference was not due to neuron number differences (C16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14 and C15 are supported by statistical analyses (p<0.05) and data in Figure 6A. Claim C16 is supported by analysis in Figure 6\u2014figure supplement 2. The decoding analysis appears methodologically sound with appropriate cross-validation and controls for class imbalance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "d1e06583-872b-4c95-a988-3233556f460b",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mice with near-complete lesions show better decoding performance than those with partial lesions. Decoding performance in near-complete lesions was significantly better than partial lesions (C18) and largely indistinguishable from intact cortex (C19).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C18 and C19 are based on statistical comparisons shown in Figure 6B. However, the authors acknowledge this finding is based on only three mice with partial lesions, limiting statistical power. While the pattern is consistent with prior work (Hong et al., 2018), the small sample size and counterintuitive nature of the result warrant caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "b4b42e89-791a-4990-99e6-3d9fb708c3e3",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Pre-stimulus IC activity predicts trial outcomes. Decoding accuracy was above baseline before stimulus onset (C20), potentially reflecting arousal/motivation changes (C21) or stimulus anticipation, as mice learned the inter-trial interval distribution (C22).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C20 is supported by decoding results in Figure 6. Claim C21 is supported by citations to relevant literature. Claim C22 is supported by data in Figure 6\u2014figure supplement 4A-D showing lick rate approximating the ITI distribution. The interpretation is reasonable though multiple mechanisms could contribute.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "0be4c74d-56e0-4ee2-ba1e-dc6eb0041b45",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Lick-related sounds are unlikely to drive IC activity. Lick sounds are estimated at 12 dB SPL (C12) and responses are largely canceled at the cochlear nucleus level (C13).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both claims are supported by citations to Singla et al., 2017, with C13 also citing Shaheen et al., 2021 as a counterpoint. The authors use this to argue against lick sounds as a major driver of observed IC activity, which is a reasonable interpretation given the low sound level.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "24823229-978a-4ed9-83dc-c69dd657c1cf",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "IC neurons show task-related activity consistent with prior literature. The recordings are consistent with previous studies showing behavioral variable representations in auditory midbrain (C36). Most neurons were facilitated and about a third suppressed during the task (C37).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by extensive citations to prior work. Claim C37 is supported by current data and citations to previous studies showing similar patterns. The consistency with prior literature strengthens confidence in the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "24150e66-9cb3-4a60-820a-7ff22e2fbf63",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Rapid recovery after cortical lesions suggests homeostatic mechanisms rather than circuit rewiring. Mice achieve pre-lesion performance within 48 hours (C40), consistent with synaptic scaling timescales (C41). Smaller lesions can be more disruptive than larger ones (C42).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three claims are supported by citations to relevant literature (Ceballo et al., 2019; O'Sullivan et al., 2019; Hong et al., 2018; Keck et al., 2013). The authors use these to support their interpretation of mechanisms, though they acknowledge their data cannot directly address the rewiring question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "026123c2-ad8a-4223-9805-9ba6ad96473d",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Multiple subcortical pathways can provide non-acoustic information to IC. Non-acoustic sensory input can reach IC via brainstem nuclei (C43) and superior colliculus (C44). Motor signals may arrive via substantia nigra (C45) and globus pallidus (C46). State changes may impact IC via neuromodulatory structures (C47).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All claims are supported by appropriate citations to anatomical studies. These provide plausible alternative sources for the non-acoustic information observed in IC neurons after cortical lesions. The anatomical evidence is well-established.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "56750c0d-0e1b-45e3-8c0e-bcdbdf70b388",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "IC neurons show task-related activity independent of auditory cortex. IC neurons show task-related activity in the absence of auditory cortical input (C48), demonstrating that subcortical structures have independent access to non-acoustic information (C49).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 is supported by experimental data showing similar activity patterns in lesioned and non-lesioned mice. Claim C49 is a reasonable inference from these findings combined with the anatomical evidence. This represents the main conclusion of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Background on auditory cortex, descending projections, and corticocollicular system. These claims establish the scientific context regarding the role of auditory cortex (C23), descending projections (C24-C25), IC anatomy (C26-C27), historical context (C28), effects of cortical manipulations (C29, C34-C35), and contextual influences in sensory processing (C30-C32).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All claims are supported by appropriate citations to established literature. These provide necessary background and context for the study but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "d4988137-5f81-44c1-a1b0-e78ecfcbf134",
+      "content_id": "0884e465-deba-42f1-825a-118f1f278e7c",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Methodological details including ethical approval, housing conditions, and imaging parameters. Experiments were approved by appropriate committees (C51), mice were housed under standard conditions (C52), and imaging was performed at 50-150 \u03bcm depth (C53) with 512\u00d7512 pixel resolution at ~28 Hz (C54) using 500 or 666 \u03bcm fields of view (C55).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All claims describe standard methodological details that are appropriately documented. These are necessary for reproducibility but represent routine experimental procedures.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "f38727a8-4382-4f6b-be4b-b59e0b1fa251",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Transient silencing of auditory cortex (pharmacological with muscimol or optogenetic) abolishes or significantly impairs sound detection performance in rodents.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers accept these findings without challenge. Reviewer 1 explicitly notes the study demonstrates 'auditory cortex is necessary neither for sound detection' in the context of lesions, implicitly accepting the transient silencing effects as established. The reviewers focus their discussion on the contrast between transient silencing and permanent lesions, accepting the transient silencing data as valid.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "652be183-1c28-4058-a4c8-d753b9b68d09",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Bilateral lesions of auditory cortex leave sound detection performance intact, with no differences in learning speed or psychometric functions between lesioned and non-lesioned mice.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers unanimously support this finding. Reviewer 1 states the study provides 'convincing evidence that auditory cortex is necessary neither for sound detection.' Reviewer 2 notes 'similar task performance' between groups. Reviewer 3 states 'neither behavior performance nor neuronal responses are significantly impacted by cortical lesions except for the case of partial lesions.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "f8d5e32d-5b7a-455f-8dcd-fd73eca9ec18",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Close to half of corticorecipient IC neurons showed significant differences between hit and miss trials, while only a small fraction responded to sound, suggesting most neurons encode information beyond physical stimulus properties.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings as demonstrating task-related encoding in IC neurons. Reviewer 1 notes the study shows neurons 'widely encode the outcome of a sound detection task.' Reviewer 2 acknowledges 'encoding of task-response variables in the IC population.' No reviewer challenges the numerical data or interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "debcd01a-c5b7-4d10-970a-967dcc826907",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Behavioral outcomes (hit vs miss) can be decoded from IC neural activity in both lesioned and non-lesioned mice, though decoding performance is significantly better in non-lesioned mice, and this difference is not due to neuron number.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding as valid. Reviewer 1 states the study demonstrates 'task relevant activity in cortico-recipient IC neuron persists in absence of auditory cortico-collicular transmission.' Reviewer 3 notes 'neither behavior performance nor neuronal responses are significantly impacted by cortical lesions,' accepting the decoding results. The difference between groups is acknowledged without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "9c0bec22-1383-477f-917b-db0b82174eff",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Mice with near-complete auditory cortex lesions showed better decoding performance than those with partial lesions, with near-complete lesion performance being largely indistinguishable from intact cortex.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this counterintuitive finding. Reviewer 3 explicitly notes 'partial lesions which seem to have a disruptive effect on behavioral outcome signaling.' Reviewer 2 acknowledges the study was 'executed thoughtfully,' implicitly accepting the lesion extent analysis. No reviewer challenges the comparison between partial and complete lesions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "48f42ada-1d6d-45a3-8629-8746d3df29ac",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Decoding accuracy was above baseline even before stimulus onset, with lick patterns approximating inter-trial interval distributions, suggesting mice anticipate stimulus timing and that arousal/motivation states influence detection probability and neural activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers implicitly accept these findings as part of the overall demonstration of task-related activity. Reviewer 1 notes the study shows neurons encode 'the outcome of a sound detection task independent of the presence of auditory cortex,' which encompasses pre-stimulus activity. No reviewer challenges the pre-stimulus decoding or behavioral anticipation claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "59031ea3-e158-4d89-afa4-c639403f4b23",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "IC neurons show task-related activity in the absence of auditory cortical input, demonstrating that subcortical auditory structures have access to non-acoustic information independently of auditory cortex and can carry richer neural representations than previously thought.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This is the central conclusion strongly endorsed by all reviewers. Reviewer 1 calls it 'convincing evidence' and states the work 'serves as a beacon to move away from the idea that cortico-collicular projections function primarily to impart behavioral relevance.' Reviewer 2 notes the study provides 'valuable new insight' into this question. Reviewer 3 states the demonstration is 'highly convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "c53d3950-ca5a-485b-b6bc-251c2c838d3f",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Corticocollicular neurons project primarily ipsilaterally with some contralateral projections, are predominantly located in auditory cortex fields, and can be labeled using AAV1.hSyn.Cre with transsynaptic spread properties.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the anatomical characterization and viral labeling approach. Reviewer 2 explicitly praises the 'transsynaptic virus' approach as enabling 'unambiguous' identification of cortico-recipient IC neurons, calling it a 'major strength.' No reviewer questions the anatomical claims or viral strategy.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "c10e0af0-769a-438b-9ecf-065f0e68a0b7",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Most IC neurons showed facilitated activity and about a third were suppressed during the sound detection task, consistent with previous studies in behaving mice.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this finding as consistent with prior literature. No reviewer challenges the observation of mixed facilitation and suppression patterns. This is treated as a confirmatory finding supporting the overall characterization of IC activity during behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "ca35f3d2-0016-4579-bd2c-f32638facb43",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The literature shows that permanent cortical lesions preserve simple auditory skills while transient silencing abolishes them, with recovery occurring within 48 hours potentially via synaptic scaling, and smaller lesions sometimes being more disruptive than larger ones.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these literature-based contextual claims. Reviewer 2 explicitly discusses how the study addresses 'limitations of past studies' regarding the 'ambiguous' extent of cortical inactivation. The reviewers treat the lesion vs. silencing distinction as an established phenomenon that this study helps explain.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "2a76245f-ddab-44c5-87a4-13080fad6ffd",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Background claims about auditory cortex function, corticocollicular projections, IC anatomy, and contextual influences on sensory processing establish the theoretical framework for the study.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these background claims as establishing appropriate context. Reviewer 2 provides extensive discussion of the 'tacit assumption' that IC behavioral activity is 'inherited from the auditory cortico-collicular pathway,' indicating acceptance of the theoretical framework. No reviewer challenges the background characterization.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "9aa1f573-7e3a-4437-a9bb-a5e3945d6085",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Non-acoustic sensory input and motor/state signals can reach the IC via multiple subcortical pathways including brainstem nuclei, superior colliculus, substantia nigra, globus pallidus, and neuromodulatory structures.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers implicitly accept these anatomical claims as explaining how IC can access non-acoustic information without cortical input. Reviewer 1 notes the study demonstrates 'subcortical auditory structures have access to a wealth of non-acoustic information' independently of cortex, accepting the existence of alternative pathways. No reviewer challenges these anatomical claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "569fc2cd-f8eb-4af7-9b07-6d347e21dd53",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "Methodological details including ethical approvals, housing conditions, and imaging parameters (50-150 \u03bcm depth, 512\u00d7512 pixels at ~28 Hz, 500-666 \u03bcm field of view).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the methodological approach. Reviewer 2 states the methods 'unambiguously overcome the limitations of past studies' and praises the '2-photon Ca2+ imaging from IC neurons.' Reviewer 3 notes the methods are 'state-of-the-art, carefully controlled.' No concerns are raised about the technical parameters.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "76d88727-33f8-408c-983f-30b881e155a2",
+      "content_id": "740f498d-3dd8-4714-8c7f-8bb0852e197f",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "Lick-related sounds are estimated at 12 dB SPL and responses to such sounds are largely canceled at the cochlear nucleus level.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these claims about lick-related sounds. The claims are presented as addressing a potential confound, and no reviewer raises concerns about this interpretation or the cited evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "074287c6-6505-4559-931b-4fd3f2f75dd6",
+      "result_id": "390e903c-e440-4d9b-b1e7-ec1ce758e64b"
+    },
+    {
+      "claim_id": "ffc0d0c5-b452-4cce-863e-5c1d77ba6f73",
+      "result_id": "390e903c-e440-4d9b-b1e7-ec1ce758e64b"
+    },
+    {
+      "claim_id": "eff92160-c1e8-4ca2-82c7-45b7871801de",
+      "result_id": "390e903c-e440-4d9b-b1e7-ec1ce758e64b"
+    },
+    {
+      "claim_id": "ce11c088-ff4e-4c8e-8a6f-1112d8ea22b1",
+      "result_id": "952989cf-8c38-4cc6-b0e9-53cb94c87412"
+    },
+    {
+      "claim_id": "3875d661-981e-4b7e-846b-bc4001a3461e",
+      "result_id": "952989cf-8c38-4cc6-b0e9-53cb94c87412"
+    },
+    {
+      "claim_id": "a8154443-3377-41e0-b6a4-4b55b2df98de",
+      "result_id": "952989cf-8c38-4cc6-b0e9-53cb94c87412"
+    },
+    {
+      "claim_id": "4b62e2da-8ef4-4d19-868d-d40ca6d5d2be",
+      "result_id": "952989cf-8c38-4cc6-b0e9-53cb94c87412"
+    },
+    {
+      "claim_id": "b126709c-98dd-4126-bd9b-e64b97953f81",
+      "result_id": "eac74af0-6ebf-4a69-b658-9beccf42d0d3"
+    },
+    {
+      "claim_id": "4cf2bfc5-1580-4a2c-a9e8-4aae9e6398f8",
+      "result_id": "eac74af0-6ebf-4a69-b658-9beccf42d0d3"
+    },
+    {
+      "claim_id": "94750169-8aa0-4abe-8658-76cef5a006b3",
+      "result_id": "eac74af0-6ebf-4a69-b658-9beccf42d0d3"
+    },
+    {
+      "claim_id": "18dd388c-5341-42bf-8c4e-8275f498a4a2",
+      "result_id": "eac74af0-6ebf-4a69-b658-9beccf42d0d3"
+    },
+    {
+      "claim_id": "f241ffcb-6ee7-4d31-8bb1-387148e4b076",
+      "result_id": "76d1e87b-52f6-46e4-86fa-48de6f1d0ab5"
+    },
+    {
+      "claim_id": "ae9a6aa0-94f6-4a73-a695-acfb0c09784d",
+      "result_id": "76d1e87b-52f6-46e4-86fa-48de6f1d0ab5"
+    },
+    {
+      "claim_id": "7da93aae-6d5c-439a-8f83-08e895ddaad8",
+      "result_id": "76d1e87b-52f6-46e4-86fa-48de6f1d0ab5"
+    },
+    {
+      "claim_id": "573f1e63-5359-4ebe-9821-423a94a2f67f",
+      "result_id": "6aee9a77-79ab-4113-841f-79c00f3b3819"
+    },
+    {
+      "claim_id": "5acd8c44-13b6-48f3-a0d1-536740163583",
+      "result_id": "6aee9a77-79ab-4113-841f-79c00f3b3819"
+    },
+    {
+      "claim_id": "ef333dc5-da84-4290-9efe-b1639e49b864",
+      "result_id": "6aee9a77-79ab-4113-841f-79c00f3b3819"
+    },
+    {
+      "claim_id": "e6e0c096-55e4-47fb-bad6-01f0e2dd6c3d",
+      "result_id": "6aee9a77-79ab-4113-841f-79c00f3b3819"
+    },
+    {
+      "claim_id": "e9aba56d-7d38-482d-8f79-55367d660680",
+      "result_id": "d1e06583-872b-4c95-a988-3233556f460b"
+    },
+    {
+      "claim_id": "e1ca42b2-aece-423f-b529-961100fb0471",
+      "result_id": "d1e06583-872b-4c95-a988-3233556f460b"
+    },
+    {
+      "claim_id": "86ac3792-12b6-4536-9038-f021667ede0d",
+      "result_id": "b4b42e89-791a-4990-99e6-3d9fb708c3e3"
+    },
+    {
+      "claim_id": "3d5d5c53-4f11-416f-9087-6f7e8356bc51",
+      "result_id": "b4b42e89-791a-4990-99e6-3d9fb708c3e3"
+    },
+    {
+      "claim_id": "d14b8dea-2e1e-45f7-a351-d168b10671a1",
+      "result_id": "b4b42e89-791a-4990-99e6-3d9fb708c3e3"
+    },
+    {
+      "claim_id": "7b2f733d-9b36-4f7a-9e20-b8b9f00d1b71",
+      "result_id": "0be4c74d-56e0-4ee2-ba1e-dc6eb0041b45"
+    },
+    {
+      "claim_id": "943ba8df-d0f0-4111-a4e5-7ab1fe06a1b4",
+      "result_id": "0be4c74d-56e0-4ee2-ba1e-dc6eb0041b45"
+    },
+    {
+      "claim_id": "2a4714d7-cfd4-46c6-a39c-08ad6951b77d",
+      "result_id": "24823229-978a-4ed9-83dc-c69dd657c1cf"
+    },
+    {
+      "claim_id": "7f03f89f-945c-428c-849e-81f9caaab0a4",
+      "result_id": "24823229-978a-4ed9-83dc-c69dd657c1cf"
+    },
+    {
+      "claim_id": "298f06c2-123d-42f3-b706-14b644108d53",
+      "result_id": "24150e66-9cb3-4a60-820a-7ff22e2fbf63"
+    },
+    {
+      "claim_id": "8bd97946-9353-4e76-bf85-7119928bb9bb",
+      "result_id": "24150e66-9cb3-4a60-820a-7ff22e2fbf63"
+    },
+    {
+      "claim_id": "ebb520b7-3c1e-4727-aa45-3238dee1541e",
+      "result_id": "24150e66-9cb3-4a60-820a-7ff22e2fbf63"
+    },
+    {
+      "claim_id": "a2855337-48bd-4be0-a48d-7b4fb47b4e84",
+      "result_id": "026123c2-ad8a-4223-9805-9ba6ad96473d"
+    },
+    {
+      "claim_id": "fd10846f-6164-4639-82ad-c7d7c6e35249",
+      "result_id": "026123c2-ad8a-4223-9805-9ba6ad96473d"
+    },
+    {
+      "claim_id": "6f751aa3-a580-45ba-928f-7a614e932ee6",
+      "result_id": "026123c2-ad8a-4223-9805-9ba6ad96473d"
+    },
+    {
+      "claim_id": "2f01d4c3-83df-4a47-8e43-177310dfe7e4",
+      "result_id": "026123c2-ad8a-4223-9805-9ba6ad96473d"
+    },
+    {
+      "claim_id": "a834e022-3131-4b7e-9f35-7ff104bd5a9b",
+      "result_id": "026123c2-ad8a-4223-9805-9ba6ad96473d"
+    },
+    {
+      "claim_id": "ac3ca31e-0b04-40a7-81b4-070fde10d5cf",
+      "result_id": "56750c0d-0e1b-45e3-8c0e-bcdbdf70b388"
+    },
+    {
+      "claim_id": "ec02fda6-1649-46cf-b594-482b15704edd",
+      "result_id": "56750c0d-0e1b-45e3-8c0e-bcdbdf70b388"
+    },
+    {
+      "claim_id": "104b8add-606a-4a6e-a952-24d4869e4053",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "f6f9238f-074e-4f58-8752-4b1971113fcd",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "81c4429f-723a-4bcd-92b1-dacab48d7e04",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "840d269d-9940-4183-a812-a5005641c12a",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "9fa34555-f687-4112-81b7-75761753ff06",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "0dc12ad8-d3db-4923-9f47-e6d787d318c9",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "409b8260-3b68-416a-a4e1-90f2445d1256",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "949381fc-0d4b-4ee4-a247-556ce15aa554",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "8b78be98-8258-41cd-88b0-74ac5d559755",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "0a6458c1-8360-4fec-882e-d136d0b27987",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "29b0503d-0d1f-4662-8b55-a7c3207cfbeb",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "9d237922-6ec5-494d-a851-6185505f09da",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "04191788-8dee-406b-a619-b86058216b81",
+      "result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4"
+    },
+    {
+      "claim_id": "7f746258-4ebc-40fd-be35-24a4d273b15d",
+      "result_id": "d4988137-5f81-44c1-a1b0-e78ecfcbf134"
+    },
+    {
+      "claim_id": "5b85c691-0a8a-4414-93b2-4ca27c4f73c5",
+      "result_id": "d4988137-5f81-44c1-a1b0-e78ecfcbf134"
+    },
+    {
+      "claim_id": "c0a1781b-4697-4195-ab4d-4131354e4cf7",
+      "result_id": "d4988137-5f81-44c1-a1b0-e78ecfcbf134"
+    },
+    {
+      "claim_id": "82f648fa-d5af-4cef-b81d-fe4c74dd9d4a",
+      "result_id": "d4988137-5f81-44c1-a1b0-e78ecfcbf134"
+    },
+    {
+      "claim_id": "d2e38cb9-0e38-4c24-96bb-9d442938eb9d",
+      "result_id": "d4988137-5f81-44c1-a1b0-e78ecfcbf134"
+    },
+    {
+      "claim_id": "074287c6-6505-4559-931b-4fd3f2f75dd6",
+      "result_id": "f38727a8-4382-4f6b-be4b-b59e0b1fa251"
+    },
+    {
+      "claim_id": "ffc0d0c5-b452-4cce-863e-5c1d77ba6f73",
+      "result_id": "f38727a8-4382-4f6b-be4b-b59e0b1fa251"
+    },
+    {
+      "claim_id": "ce11c088-ff4e-4c8e-8a6f-1112d8ea22b1",
+      "result_id": "652be183-1c28-4058-a4c8-d753b9b68d09"
+    },
+    {
+      "claim_id": "3875d661-981e-4b7e-846b-bc4001a3461e",
+      "result_id": "652be183-1c28-4058-a4c8-d753b9b68d09"
+    },
+    {
+      "claim_id": "a8154443-3377-41e0-b6a4-4b55b2df98de",
+      "result_id": "652be183-1c28-4058-a4c8-d753b9b68d09"
+    },
+    {
+      "claim_id": "f241ffcb-6ee7-4d31-8bb1-387148e4b076",
+      "result_id": "f8d5e32d-5b7a-455f-8dcd-fd73eca9ec18"
+    },
+    {
+      "claim_id": "ae9a6aa0-94f6-4a73-a695-acfb0c09784d",
+      "result_id": "f8d5e32d-5b7a-455f-8dcd-fd73eca9ec18"
+    },
+    {
+      "claim_id": "7da93aae-6d5c-439a-8f83-08e895ddaad8",
+      "result_id": "f8d5e32d-5b7a-455f-8dcd-fd73eca9ec18"
+    },
+    {
+      "claim_id": "573f1e63-5359-4ebe-9821-423a94a2f67f",
+      "result_id": "debcd01a-c5b7-4d10-970a-967dcc826907"
+    },
+    {
+      "claim_id": "5acd8c44-13b6-48f3-a0d1-536740163583",
+      "result_id": "debcd01a-c5b7-4d10-970a-967dcc826907"
+    },
+    {
+      "claim_id": "ef333dc5-da84-4290-9efe-b1639e49b864",
+      "result_id": "debcd01a-c5b7-4d10-970a-967dcc826907"
+    },
+    {
+      "claim_id": "18dd388c-5341-42bf-8c4e-8275f498a4a2",
+      "result_id": "9c0bec22-1383-477f-917b-db0b82174eff"
+    },
+    {
+      "claim_id": "e9aba56d-7d38-482d-8f79-55367d660680",
+      "result_id": "9c0bec22-1383-477f-917b-db0b82174eff"
+    },
+    {
+      "claim_id": "e1ca42b2-aece-423f-b529-961100fb0471",
+      "result_id": "9c0bec22-1383-477f-917b-db0b82174eff"
+    },
+    {
+      "claim_id": "86ac3792-12b6-4536-9038-f021667ede0d",
+      "result_id": "48f42ada-1d6d-45a3-8629-8746d3df29ac"
+    },
+    {
+      "claim_id": "3d5d5c53-4f11-416f-9087-6f7e8356bc51",
+      "result_id": "48f42ada-1d6d-45a3-8629-8746d3df29ac"
+    },
+    {
+      "claim_id": "d14b8dea-2e1e-45f7-a351-d168b10671a1",
+      "result_id": "48f42ada-1d6d-45a3-8629-8746d3df29ac"
+    },
+    {
+      "claim_id": "ac3ca31e-0b04-40a7-81b4-070fde10d5cf",
+      "result_id": "59031ea3-e158-4d89-afa4-c639403f4b23"
+    },
+    {
+      "claim_id": "ec02fda6-1649-46cf-b594-482b15704edd",
+      "result_id": "59031ea3-e158-4d89-afa4-c639403f4b23"
+    },
+    {
+      "claim_id": "e6e0c096-55e4-47fb-bad6-01f0e2dd6c3d",
+      "result_id": "59031ea3-e158-4d89-afa4-c639403f4b23"
+    },
+    {
+      "claim_id": "b126709c-98dd-4126-bd9b-e64b97953f81",
+      "result_id": "c53d3950-ca5a-485b-b6bc-251c2c838d3f"
+    },
+    {
+      "claim_id": "4cf2bfc5-1580-4a2c-a9e8-4aae9e6398f8",
+      "result_id": "c53d3950-ca5a-485b-b6bc-251c2c838d3f"
+    },
+    {
+      "claim_id": "94750169-8aa0-4abe-8658-76cef5a006b3",
+      "result_id": "c53d3950-ca5a-485b-b6bc-251c2c838d3f"
+    },
+    {
+      "claim_id": "7f03f89f-945c-428c-849e-81f9caaab0a4",
+      "result_id": "c10e0af0-769a-438b-9ecf-065f0e68a0b7"
+    },
+    {
+      "claim_id": "4b62e2da-8ef4-4d19-868d-d40ca6d5d2be",
+      "result_id": "ca35f3d2-0016-4579-bd2c-f32638facb43"
+    },
+    {
+      "claim_id": "eff92160-c1e8-4ca2-82c7-45b7871801de",
+      "result_id": "ca35f3d2-0016-4579-bd2c-f32638facb43"
+    },
+    {
+      "claim_id": "298f06c2-123d-42f3-b706-14b644108d53",
+      "result_id": "ca35f3d2-0016-4579-bd2c-f32638facb43"
+    },
+    {
+      "claim_id": "8bd97946-9353-4e76-bf85-7119928bb9bb",
+      "result_id": "ca35f3d2-0016-4579-bd2c-f32638facb43"
+    },
+    {
+      "claim_id": "ebb520b7-3c1e-4727-aa45-3238dee1541e",
+      "result_id": "ca35f3d2-0016-4579-bd2c-f32638facb43"
+    },
+    {
+      "claim_id": "104b8add-606a-4a6e-a952-24d4869e4053",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "f6f9238f-074e-4f58-8752-4b1971113fcd",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "81c4429f-723a-4bcd-92b1-dacab48d7e04",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "840d269d-9940-4183-a812-a5005641c12a",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "9fa34555-f687-4112-81b7-75761753ff06",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "0dc12ad8-d3db-4923-9f47-e6d787d318c9",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "409b8260-3b68-416a-a4e1-90f2445d1256",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "949381fc-0d4b-4ee4-a247-556ce15aa554",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "8b78be98-8258-41cd-88b0-74ac5d559755",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "0a6458c1-8360-4fec-882e-d136d0b27987",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "29b0503d-0d1f-4662-8b55-a7c3207cfbeb",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "9d237922-6ec5-494d-a851-6185505f09da",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "04191788-8dee-406b-a619-b86058216b81",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "2a4714d7-cfd4-46c6-a39c-08ad6951b77d",
+      "result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd"
+    },
+    {
+      "claim_id": "a2855337-48bd-4be0-a48d-7b4fb47b4e84",
+      "result_id": "9aa1f573-7e3a-4437-a9bb-a5e3945d6085"
+    },
+    {
+      "claim_id": "fd10846f-6164-4639-82ad-c7d7c6e35249",
+      "result_id": "9aa1f573-7e3a-4437-a9bb-a5e3945d6085"
+    },
+    {
+      "claim_id": "6f751aa3-a580-45ba-928f-7a614e932ee6",
+      "result_id": "9aa1f573-7e3a-4437-a9bb-a5e3945d6085"
+    },
+    {
+      "claim_id": "2f01d4c3-83df-4a47-8e43-177310dfe7e4",
+      "result_id": "9aa1f573-7e3a-4437-a9bb-a5e3945d6085"
+    },
+    {
+      "claim_id": "a834e022-3131-4b7e-9f35-7ff104bd5a9b",
+      "result_id": "9aa1f573-7e3a-4437-a9bb-a5e3945d6085"
+    },
+    {
+      "claim_id": "7f746258-4ebc-40fd-be35-24a4d273b15d",
+      "result_id": "569fc2cd-f8eb-4af7-9b07-6d347e21dd53"
+    },
+    {
+      "claim_id": "5b85c691-0a8a-4414-93b2-4ca27c4f73c5",
+      "result_id": "569fc2cd-f8eb-4af7-9b07-6d347e21dd53"
+    },
+    {
+      "claim_id": "c0a1781b-4697-4195-ab4d-4131354e4cf7",
+      "result_id": "569fc2cd-f8eb-4af7-9b07-6d347e21dd53"
+    },
+    {
+      "claim_id": "82f648fa-d5af-4cef-b81d-fe4c74dd9d4a",
+      "result_id": "569fc2cd-f8eb-4af7-9b07-6d347e21dd53"
+    },
+    {
+      "claim_id": "d2e38cb9-0e38-4c24-96bb-9d442938eb9d",
+      "result_id": "569fc2cd-f8eb-4af7-9b07-6d347e21dd53"
+    },
+    {
+      "claim_id": "7b2f733d-9b36-4f7a-9e20-b8b9f00d1b71",
+      "result_id": "76d88727-33f8-408c-983f-30b881e155a2"
+    },
+    {
+      "claim_id": "943ba8df-d0f0-4111-a4e5-7ab1fe06a1b4",
+      "result_id": "76d88727-33f8-408c-983f-30b881e155a2"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "5b325200-1173-40cb-9cf0-ea8f6fd0e327",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "390e903c-e440-4d9b-b1e7-ec1ce758e64b",
+      "peer_result_id": "f38727a8-4382-4f6b-be4b-b59e0b1fa251",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C1 and C2 regarding auditory cortex necessity for sound detection. Both find the evidence SUPPORTED. OpenEval emphasizes convergence of pharmacological and optogenetic approaches while noting lack of control group. Peer reviewers accept findings without challenge, focusing on contrast between transient silencing and permanent lesions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "31f9a974-3c75-44b4-b89b-168e054b0f9c",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "952989cf-8c38-4cc6-b0e9-53cb94c87412",
+      "peer_result_id": "652be183-1c28-4058-a4c8-d753b9b68d09",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C3, C4, and C5 regarding lack of behavioral impairment after cortical lesions. Both find evidence SUPPORTED. OpenEval highlights statistical analyses and convergence with literature. Peer reviewers unanimously support findings with explicit statements about convincing evidence. OpenEval includes C38 which peer review addresses separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "eed79cb7-477f-4f3a-bff5-9462e2c0489c",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "eac74af0-6ebf-4a69-b658-9beccf42d0d3",
+      "peer_result_id": "c53d3950-ca5a-485b-b6bc-251c2c838d3f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate anatomical claims C6, C7, and C8 regarding cortico-recipient IC neurons. Both find evidence SUPPORTED. OpenEval emphasizes thorough anatomical characterization with appropriate controls. Peer reviewers praise the transsynaptic virus approach as a major strength enabling unambiguous identification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "4f099c93-0c61-4170-b01e-5ee7f4b3742a",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "76d1e87b-52f6-46e4-86fa-48de6f1d0ab5",
+      "peer_result_id": "f8d5e32d-5b7a-455f-8dcd-fd73eca9ec18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C9, C10, and C11 regarding task-modulated vs sound-responsive neurons in IC. Both find evidence SUPPORTED. OpenEval notes reasonable inference but acknowledges potential alternative explanations related to stimulus parameters. Peer reviewers accept findings as demonstrating task-related encoding without challenging numerical data or interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "8eff91e6-bdc4-4948-9192-9e41c4d036f0",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "6aee9a77-79ab-4113-841f-79c00f3b3819",
+      "peer_result_id": "debcd01a-c5b7-4d10-970a-967dcc826907",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C14, C15, and C16 regarding decoding of behavioral outcomes from IC neurons. Both find evidence SUPPORTED. OpenEval emphasizes methodologically sound decoding analysis with appropriate controls. Peer reviewers accept findings as demonstrating task-relevant activity persists without cortical input. OpenEval includes C50 which peer review addresses separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "a5c64afd-a028-409a-a829-53a9555937e8",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "d1e06583-872b-4c95-a988-3233556f460b",
+      "peer_result_id": "9c0bec22-1383-477f-917b-db0b82174eff",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate claims C18 and C19 regarding partial vs complete lesion effects. OpenEval rates as UNCERTAIN due to small sample size (three mice) despite consistency with prior work. Peer reviewers rate as SUPPORTED, explicitly acknowledging the counterintuitive finding and disruptive effect of partial lesions. Peer review also includes C17 which OpenEval addresses separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "c37b9e44-691e-44e5-9042-9e437067e7f4",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "b4b42e89-791a-4990-99e6-3d9fb708c3e3",
+      "peer_result_id": "48f42ada-1d6d-45a3-8629-8746d3df29ac",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C20, C21, and C22 regarding pre-stimulus activity and behavioral anticipation. Both find evidence SUPPORTED. OpenEval notes reasonable interpretation though multiple mechanisms could contribute. Peer reviewers implicitly accept findings as part of overall demonstration of task-related activity independent of cortex.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "9f725e5d-2df3-4ec3-a0c3-fb8ef2b39df8",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "0be4c74d-56e0-4ee2-ba1e-dc6eb0041b45",
+      "peer_result_id": "76d88727-33f8-408c-983f-30b881e155a2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C12 and C13 regarding lick-related sounds as potential confound. Both find evidence SUPPORTED. OpenEval notes reasonable interpretation given low sound level. Peer reviewers accept claims without challenge as addressing potential confound.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "9b44bf61-50da-458e-808e-dbc76af93c93",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "24823229-978a-4ed9-83dc-c69dd657c1cf",
+      "peer_result_id": "c10e0af0-769a-438b-9ecf-065f0e68a0b7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claim C37 regarding mixed facilitation and suppression patterns. Both find evidence SUPPORTED. OpenEval emphasizes consistency with prior literature. Peer reviewers treat as confirmatory finding supporting overall characterization. OpenEval includes C36 which peer review addresses separately in R11.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "1b504b7c-6a89-43b6-ae3a-98fd8708956d",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "24150e66-9cb3-4a60-820a-7ff22e2fbf63",
+      "peer_result_id": "ca35f3d2-0016-4579-bd2c-f32638facb43",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C40, C41, and C42 regarding mechanisms and literature context. Both find evidence SUPPORTED. OpenEval notes appropriate citations though data cannot directly address rewiring question. Peer reviewers accept literature-based contextual claims, discussing how study addresses limitations of past studies regarding cortical inactivation extent. Peer review also includes C38 and C39.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "52846c67-b391-47f9-9a77-7dda9c49593c",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "026123c2-ad8a-4223-9805-9ba6ad96473d",
+      "peer_result_id": "9aa1f573-7e3a-4437-a9bb-a5e3945d6085",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C43, C44, C45, C46, and C47 regarding anatomical pathways providing alternative sources of non-acoustic information. Both find evidence SUPPORTED. OpenEval emphasizes well-established anatomical evidence. Peer reviewers implicitly accept anatomical claims as explaining IC access to non-acoustic information without cortical input.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "b4993d9f-b20c-4b47-ae62-16755fa4bec0",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "56750c0d-0e1b-45e3-8c0e-bcdbdf70b388",
+      "peer_result_id": "59031ea3-e158-4d89-afa4-c639403f4b23",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate claims C48 and C49 representing the main conclusion about non-cortical sources of task-related information. Both find evidence SUPPORTED. OpenEval notes reasonable inference from experimental data combined with anatomical evidence. Peer reviewers strongly endorse as central conclusion with 'convincing evidence' and 'highly convincing' demonstration. Peer review also includes C50.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "3e577cc8-75fb-4ffd-85f3-f3ebfb446daa",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "8487f17e-9bc1-4386-ae6a-f61a699c90c4",
+      "peer_result_id": "2a76245f-ddab-44c5-87a4-13080fad6ffd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate extensive background claims C23-C35 establishing theoretical context. Both find evidence SUPPORTED. OpenEval notes appropriate citations providing necessary background. Peer reviewers accept background claims as establishing appropriate context, discussing tacit assumptions about IC behavioral activity. OpenEval includes 13 claims while peer review includes these plus C36.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    },
+    {
+      "id": "58722679-f80a-4f29-ae35-325b811831e4",
+      "submission_id": "be04f336-ca2c-47c7-92de-5ff8bc9d0a94",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "d4988137-5f81-44c1-a1b0-e78ecfcbf134",
+      "peer_result_id": "569fc2cd-f8eb-4af7-9b07-6d347e21dd53",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate methodological claims C51-C55 describing standard procedures. Both find evidence SUPPORTED. OpenEval notes appropriately documented routine procedures necessary for reproducibility. Peer reviewers praise methods as state-of-the-art, carefully controlled, and unambiguously overcoming limitations of past studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:06:46.972560Z"
+    }
+  ]
+}

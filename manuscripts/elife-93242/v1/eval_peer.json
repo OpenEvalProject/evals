@@ -1,0 +1,109 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C24",
+      "C49",
+      "C58"
+    ],
+    "result": "The dual-branch recommender model architecture, which separately embeds MALDI-TOF spectra and drug information before combining them, delivers considerably higher performance compared to previous single species-drug approaches and outperforms baseline methods on patient-averaged metrics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this finding, stating 'The authors showed consistent performance of their strategy to predict antibiotic susceptibility' and noting that 'the dual neural network outperform[s] the single spectrum-drug network.' The editor describes the evidence as 'convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C47",
+      "C82",
+      "C83"
+    ],
+    "result": "Species-specific recommender models (trained for the 25 most common species across multiple drugs) deliver better predictions across all evaluated metrics compared to general recommenders trained on all species, achieving ROC-AUC scores up to 0.9.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers highlight this as a strength, noting 'Authors developed species-specific recommenders as an intermediate layer between the single recommender system and single species-antibiotic models. This intermediate approach achieved maximum performance (with one type of the species-specific recommender achieving a 0.9 ROC AUC).'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C26",
+      "C27",
+      "C48",
+      "C63",
+      "C64"
+    ],
+    "result": "Models pre-trained on DRIAMS-A data can be efficiently fine-tuned to data from other hospitals with limited samples (as few as 1000 spectra), outperforming models trained from scratch, with Morgan fingerprints providing the best structural inductive bias for transfer learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise this finding as a strength: 'Authors showed that data collected in one location can be leveraged to improve the performance of models generated using a smaller number of samples collected at a different location. This result may encourage researchers to optimize data integration to reduce the burden of data generation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C46",
+      "C99",
+      "C100"
+    ],
+    "result": "Among drug embedding strategies tested, Morgan fingerprints typically outperform other approaches including one-hot embeddings, SMILES-based methods, and image-based representations, likely due to their compressed and preprocessed format that provides structural information.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note 'The authors tested multiple combinations of embedders for the mass spectra and antibiotics while using different metrics to evaluate the performance' and found 'remarkably good performance for all tested metrics,' implicitly accepting the comparative findings about Morgan fingerprints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C45",
+      "C57"
+    ],
+    "result": "Medium-sized nonlinear multi-layer perceptron spectrum embedders (3.2M parameters) generally perform best compared to smaller, larger, or linear alternatives for encoding MALDI-TOF spectra.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge 'Models trained using different spectrum embedder-antibiotic embedder combinations had remarkably good performance for all tested metrics. The average ROC AUC scores for global and species-specific evaluations were above 0.8,' accepting the comparative performance findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37"
+    ],
+    "result": "UMAP visualization of learned embeddings shows that the model groups spectra primarily by species (with hierarchical genus-level relationships) and within species clusters, samples are often grouped by resistance status, with specific examples like multidrug-resistant S. epidermidis forming subclusters and ciprofloxacin-resistant E. coli forming a distinct tail.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the model's performance, they explicitly identify a critical weakness: 'Authors do not offer information about the model features associated with resistance' and request that 'authors should at least identify mass spectra peaks highly associated with resistance profiles.' This indicates the embedding visualizations alone are insufficient for mechanistic understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C72"
+    ],
+    "result": "This work serves as the first proof of concept for large-scale MALDI-TOF-based antimicrobial drug recommenders and demonstrates their potential to greatly extend the value of MALDI-TOF MS for clinical diagnostics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly states 'This valuable study presents a machine learning model to recommend effective antimicrobial drugs from patients' samples analyzed with mass spectrometry' and 'This work will be of interest to computational biologists, microbiologists, and clinicians,' affirming the overall contribution.",
+    "result_type": "MAJOR"
+  }
+]

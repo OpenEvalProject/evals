@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Topological stress and RNAPI inhibition are the most potent inducers of PNAs. Topoisomerase inhibitors (doxorubicin, aclarubicin, camptothecin, topotecan) and RNAPI inhibitors (BMH-21, AMD, CX-5461) induced PNAs in 4-22% of cells after 48 hr treatment. Downregulation of TOP1 or TOP2A, but not TOP2B, also induced PNAs. Pre-treatment with RNAPI inhibitors before topoisomerase inhibition increased PNA formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C37-C50 provide consistent quantitative data showing that compounds causing topological stress and RNAPI inhibition induce PNAs. The data includes multiple independent treatments (chemical inhibitors and genetic knockdown), appropriate controls, and reproducible percentages across biological replicates. The finding that TOP2B knockdown does not induce PNAs (C49) provides important specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Inhibition of homologous recombination (HR) by B02 increases PNA formation after doxorubicin treatment, while NHEJ inhibition does not significantly affect PNA formation. TDP2 knockdown during etoposide treatment also increases PNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 demonstrate that blocking HR repair (via RAD51 inhibition with B02 or TDP2 knockdown) increases PNAs, while NHEJ inhibition does not. The data includes appropriate statistical testing, multiple concentrations, and recovery phase analysis. This supports the hypothesis that persistent DNA damage triggers PNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C55"
+    ],
+    "result": "Doxorubicin induces DSBs in the rDNA locus, and PNAs co-localize with damaged rDNA marked by 53BP1. Approximately 71% of PNAs examined 2 days after doxorubicin treatment overlapped with rDNA or DJ-containing DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, and C55 are supported by immuno-FISH data (Figure 3) showing co-localization of PNAs with rDNA/DJ regions containing DSB markers. The quantitative analysis (71% overlap) is based on appropriate imaging and co-localization methods. However, the 29% of PNAs without detectable DSB overlap suggests additional complexity not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Direct rDNA damage induced by I-PpoI endonuclease confirms rDNA damage as a genuine stimulus for PNAs. PNAs (PML-NDS) emerged in about 10% of nuclei only after 24-hr-long I-PpoI expression, with nearly 90% of control cells showing no detectable DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56-C58 demonstrate that targeted rDNA cleavage by I-PpoI induces PNAs, providing direct evidence for the rDNA damage hypothesis. The time-course data (Figure 4\u2014figure supplement 1) and control experiments showing minimal background damage strengthen this conclusion. The 24-hr requirement suggests PNAs form as a late response to persistent damage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "ATM and ATR kinase activities are required for I-PpoI-induced PNA formation. Inhibition of ATM (KU-60019, KU-55933) or ATR (VE-822) robustly inhibited PNAs. NHEJ inhibition increased DNA damage foci, while RAD51 inhibition (B02) reduced both DNA damage markers and PNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C61-C65 demonstrate that ATM/ATR signaling is essential for PNA formation using multiple inhibitors with appropriate controls. The differential effects of NHEJ vs. HR inhibition on DNA damage and PNAs are well-documented (Figure 5). However, the mechanism by which RAD51 inhibition reduces damage markers requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "I-PpoI-induced PNAs co-localize with resected DNA (RPA32-pS33 positive) but lack RAD51, indicating DNA that has undergone resection but cannot complete HR repair. RAD51 foci were primarily in S/G2 cells and declined by 24 hr, when PNAs emerge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C66-C70 provide compelling evidence that PNAs associate with resected DNA that cannot complete HR. The temporal relationship (RAD51 decline coinciding with PNA emergence) and the presence of pRPA without RAD51 are well-documented by immunofluorescence (Figure 6). This supports the persistent damage hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "PNAs can occur in both G1 and S/G2 cell cycle phases, but the distribution depends on the type of damage. After I-PpoI activation, G1 cells contained significantly more PNAs. After doxorubicin, G2 EdU-negative cells had the highest percentage. TOP2A depletion preferentially induced PNAs in S/G2, while TOP1 depletion showed equal distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 demonstrate cell cycle-dependent PNA formation using appropriate DNA content and EdU incorporation analysis. The differential effects of different damage types on cell cycle distribution are well-documented. However, the mechanistic basis for these differences requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C59",
+      "C60"
+    ],
+    "result": "PNAs form in response to persistent rDNA damage within the nucleolar cap. Cells with persistent PNAs undergo senescence, with only 1-2% of cells able to resume proliferation after I-PpoI activation, and most non-proliferating cells positive for \u03b2-galactosidase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C59-C60 link PNA formation to persistent damage and senescence. The colony formation assay and \u03b2-galactosidase staining provide appropriate measures of proliferative capacity and senescence. However, the causal relationship between PNAs and senescence (whether PNAs cause or merely mark senescence) is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Background on PML protein: PML is crucial for forming PML-nuclear bodies involved in stress responses. PML was initially studied in APL, exhibits dual tumor suppressor/promoter roles, encodes seven isoforms, and is essential for PML-NBs and APBs involved in HDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C12-C18 provide established background knowledge about PML with appropriate citations. These are well-accepted facts in the field and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background on rDNA organization and repair: Human cells contain ~300 copies of rDNA genes in tandem repeats on acrocentric chromosomes, flanked by heterochromatic junctions. rDNA is vulnerable to damage from transcription-replication collisions and recombination. Both NHEJ and HDR are involved in rDNA repair, with pathway choice depending on damage persistence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 provide established background on rDNA biology with appropriate citations. These are well-accepted facts that provide necessary context for understanding the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Background on PNAs: PNAs have been observed in response to genotoxic insults, proteasome inhibition, and replicative senescence. Doxorubicin induces dynamic PNA maturation stages. Exon 8b and SIM domains are responsible for nucleolar cap recognition, with PML IV being the primary isoform.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 provide background on PNAs from prior work, including the authors' previous studies. These are appropriately cited and provide context for the current investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Discussion context: Persistent unresolved DNA lesions induce senescence. DSBs are mostly resolved within 24 hr. In the rDNA DDR field, 'persistent lesions' describe rDNA lesions that signal for ATM-dependent RNAPI inhibition and nucleolar cap formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 provide appropriate context from the literature with citations. These establish the conceptual framework for interpreting the results regarding persistent damage and senescence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Discussion of repair pathways: Doxorubicin-induced damage relies on both NHEJ and HDR, but depends less on NHEJ than etoposide-induced damage. RAD51/HDR is directly involved in doxorubicin damage repair. TDP2 is essential for removing TOP2 adducts after etoposide treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 provide appropriate literature context with citations to support the interpretation of the experimental results regarding DNA repair pathway involvement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Discussion of ATM/ATR and RAD51 roles: ATM and ATR activities are essential for RNAPI inhibition and nucleolar cap formation. HDR components are present in nucleolar caps even in G1 phase. RAD51 inhibits alternative repair pathways (SSA, A-EJ) by binding ssDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 provide appropriate literature context with citations to interpret the experimental findings regarding kinase signaling and repair pathway choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Discussion of drug mechanisms: Detailed mechanisms of action for topoisomerase inhibitors and RNAPI inhibitors used in the study, including their effects on DNA topology, transcription, and chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C109 provide comprehensive background on drug mechanisms with appropriate citations. This information is necessary for interpreting why different compounds have different PNA-inducing capacities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Discussion of PML functions and PNA/APB comparison: PML is associated with persistent DSBs and is crucial for ALT. PML accumulates damaged telomeres into APBs through SUMO-SIM interaction. PML IV efficiently forms both APBs and PNAs. PNAs are primarily in non-transformed cells and linked to senescence, while ALT operates in cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C119 provide appropriate context from the literature to discuss the functional implications of PNAs and their relationship to APBs. The distinction between PNAs (senescence-associated) and APBs (proliferation-associated) is important for understanding biological significance.",
+    "result_type": "MINOR"
+  }
+]

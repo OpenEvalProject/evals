@@ -1,0 +1,2306 @@
+{
+  "submission": {
+    "id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:57:50.122813Z",
+    "updated_at": "2025-11-21T21:57:50.122813Z"
+  },
+  "content": [
+    {
+      "id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "content_type": "manuscript",
+      "content_text": "# An antimicrobial drug recommender system using MALDI-TOF MS and dual-branch neural networks\n\n## Authors\n\n- Gaetan De Waele<sup>1</sup> ([ORCID: 0000-0003-0367-9699](https://orcid.org/0000-0003-0367-9699)) \u2020\n- Willem Waegeman<sup>1</sup>\n- Gerben Menschaert<sup>1</sup>\n\n### Affiliations\n\n1. Department of Data Analysis and Mathematical Modelling, Ghent University Ghent Belgium ([ROR:00cv9y106](https://ror.org/00cv9y106))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTimely and effective use of antimicrobial drugs can improve patient outcomes, as well as help safeguard against resistance development. Matrix-assisted laser desorption/ionization time-of-flight mass spectrometry (MALDI-TOF MS) is currently routinely used in clinical diagnostics for rapid species identification. Mining additional data from said spectra in the form of antimicrobial resistance (AMR) profiles is, therefore, highly promising. Such AMR profiles could serve as a drop-in solution for drastically improving treatment efficiency, effectiveness, and costs. This study endeavors to develop the first machine learning models capable of predicting AMR profiles for the whole repertoire of species and drugs encountered in clinical microbiology. The resulting models can be interpreted as drug recommender systems for infectious diseases. We find that our dual-branch method delivers considerably higher performance compared to previous approaches. In addition, experiments show that the models can be efficiently fine-tuned to data from other clinical laboratories. MALDI-TOF-based AMR recommender systems can, hence, greatly extend the value of MALDI-TOF MS for clinical diagnostics. All code supporting this study is distributed on PyPI and is packaged at https://github.com/gdewael/maldi-nn.\n\n## Introduction\n\nIn diagnostic laboratories, matrix-assisted laser desorption/ionization time-of-flight mass spectrometry (MALDI-TOF MS) is routinely used for microbial species identification (Hou et al., 2019). Usually, microbial samples only require an overnight culturing step before being analyzed with mass spectrometry (van Veen et al., 2010; Cu\u00e9nod et al., 2021). Consequently, the technology provides a time- and cost-efficient way to accurately identify the pathogen underlying an infection.\n\nDue to the rapid evolution of antibiotic-resistant strains, it is increasingly difficult to determine a treatment based on only species identity. It has been estimated that infections caused by antibiotic-resistant bacteria have caused the deaths of 1.27 million people in 2019, making antimicrobial resistance (AMR) one of the leading causes of death on earth (Murray et al., 2022). Projections have estimated that this annual number could rise to 10 million by 2050 (O\u2019Neill, 2016), highlighting the need for responsible antimicrobial drug use. In light of this, diagnostic laboratories will often perform various tests, such as dilution arrays or disc diffusion tests, to probe which drug will be effective (Khan et al., 2019). Such experiments typically require further culturing and are either costly, labor-intensive, time-intensive, or a mixture of the above (Humphries, 2022).\n\nGiven that MALDI-TOF spectra are already routinely used for identification, it is worth investigating to which extent they can contain further information regarding the resistance status of strains (Weis et al., 2020a). Mining this information from the spectra could help inform healthcare workers of candidate drugs. This may nullify the need for phenotypical experiments, or (at least) direct the tests by narrowing down the choices. Furthermore, possessing a detailed resistance profile allows us to treat with more specifically working drugs (instead of broad-spectrum antibiotics) (Weis et al., 2022). Consequently, predicting resistance status from MALDI-TOF spectra could help toward the goals of antibiotic stewardship (Shlaes et al., 1997).\n\nIt has been described that some known resistance mechanisms are outside of the m/z range that MALDI-TOF spectrometers can accurately measure (Humphries, 2022). Still, it remains largely unknown to which extent co-evolved traits, such as subtle changes in metabolism caused by the resistance mechanism, can be detected by MALDI-TOF spectra. A number of studies have shown that some resistant strains can reliably be predicted from MALDI-TOF MS, either by identifying and detecting specific markers (e.g., peaks) or by learning patterns from data (see \u2018Related work\u2019). To our knowledge, all of these studies have modeled AMR prediction for specific species\u2013drug combinations. For this reason, they learn very specific markers of resistance, not guaranteed to extrapolate well to other drugs and species. As susceptibility rapidly evolves, it is practically impossible to perform such studies for all clinically relevant species\u2013drug combinations. As such, the value of aforementioned studies remains of exploratory nature with limited practical value. In addition, their performance remains limited owing to small sample sizes and, likely, the inability of MALDI-TOF spectra to fully discriminate between the characteristics of interest (Bai et al., 2017). The recently published DRIAMS dataset (Weis et al., 2022) contains phenotypic AMR data covering a wide range of species and drugs, allowing to study MALDI-TOF-based AMR prediction on an unprecedented scale.\n\nWe posit that the most pertinent challenge healthcare workers face regarding AMR is to choose between all possible drugs given an infection, not whether one specific drug will be effective or not. For this reason, we argue that our models and evaluation metrics should be designed to optimally answer that question. In this study, a recommender model is proposed that can predict AMR for the whole range of pathogens and drugs encountered in clinical microbiology. In addition, species-specific recommender models for a range of common species are also trained. Our method jointly learns representations for antibiotic drugs and bacterial MALDI-TOF spectra. It can be used to recommend the most likely drug to work for any drug\u2013spectrum combination. Consequently, the model is broadly applicable and practical to use. To summarize, our contributions are as follows:\n\n### Related work\n\n#### MALDI-TOF-based machine learning\n\nThe most canonical task for MALDI-TOF-based methods is species identification. Identification solutions are usually provided by the MS manufacturers and are built on large, proprietary, in-house databases (van Belkum et al., 2012). It is unclear how these closed-source identification pipelines work, but it is likely that query spectra are directly compared to the in-house database in an approach akin to nearest neighbors (Dauwalder et al., 2023). While this approach works excellently for identification of most species, some strains remain problematic (Cao et al., 2018; Vrioni et al., 2018). Furthermore, by presumably focusing on the presence or absence of specific peaks, a lot of spectral information stands unused (Florio et al., 2018).\n\nFor various difficult prediction cases, such as strain typing, researchers often resort to machine learning (Hettick et al., 2006; Wang et al., 2018; De Bruyne et al., 2011). Stifled by a historical lack of large open data, machine learning research on MALDI-TOF data remains in its infancy. Most studies have narrow scopes and simple datasets (e.g., binary classification), only warranting standard preprocessing and off-the-shelf learning techniques (Yu et al., 2022; Zhang et al., 2023; Chung et al., 2023). Only a handful of examples exist of more advanced learning techniques specifically adapted to a MALDI-TOF-based task (Mortier et al., 2021; Weis et al., 2020a; Vervier et al., 2015). For a more thorough overview of MALDI-TOF-based machine learning, readers are referred to the review of Weis et al., 2020b.\n\nDuring peer review, our attention was brought to a similar concurrent study by Vison\u00e0 et al., 2023. Their study similarly shows that recommender systems-like models outperform more narrowly trained single-species and single-drug models. Their analysis, however, remains limited to fingerprint-based molecular representations. In addition, in this work, we demonstrate transfer learning between hospitals.\n\n#### Dual-branch neural networks\n\nThe idea of processing and combining two separate streams of information with two neural networks is applied in many fields of machine learning, collectively referred to as deep multitarget prediction (Waegeman et al., 2019; Iliadis et al., 2022).\n\nIn collaborative filtering, the goal is to predict the preference of a user to items (He et al., 2017). In its most elementary neural form, both users and items are represented by one-hot encodings, generating a model unable to make salient predictions for new users or items without having seen them during training. To solve this, a body of works exists on trying to communicate user- and item identity to the model via side information encoded in features (Zheng et al., 2017).\n\nDual-branch neural networks are also prevalent in language and vision. Recent advances in (multi-modal) contrastive learning of image (and text) representations often rely on two neural encoders to learn a matching score between two views of the same or discordant objects (Radford et al., 2021; Chen et al., 2020). Language retrieval systems typically compare input vectors with a database of key vectors, each derived from a neural network, using approximate nearest-neighbor search techniques (Karpukhin et al., 2020). In biology, fields of research employing dual-branch neural networks include (1) drug\u2013target interaction (Lee et al., 2019), (2) single-cell multi-omics analysis (Lance et al., 2022), and (3) transcription factor binding prediction (Yang et al., 2020), among countless others.\n\nMost of these applications can, to varying extents, be interpreted as (collaborative filtering) recommender systems. For example, contrastive language-image models have been used to retrieve the most semantically similar images to a piece of text (Beaumont, 2022).\n\n## Methods\n\n### Data\n\nTo train models, we use the recently published DRIAMS database, consisting of 765,048 AMR measurements derived from 55,773 spectra across four different hospitals, spanning in total 74 different drugs (Weis et al., 2022). (These figures reflect the size of the dataset as downloaded from the original Dryad repository https://doi.org/10.5061/dryad.bzkh1899q, and after processing. For example, the number of spectra listed here corresponds to all spectra in DRIAMS for which there exists at least one AMR measurement. The total number of spectra in DRIAMS counts 250,070, but no labels are associated with these extra spectra. Further, the naming of drugs was further preprocessed such that every drug can be linked to a single chemical identifier. For more information on which drugs were merged and how this was performed, see Appendix 1.) Every drug is characterized by a canonical SMILES string obtained from PubChem (Kim et al., 2023). As in the original DRIAMS publication, AMR measurements are binarized according to the EUCAST norms per drug. Specifically, intermediate or resistant values are assigned a positive label, and susceptible samples a negative one. Furthermore, spectra are identically processed as in the original publication. Briefly, the following steps are performed: (1) square-root transformation of the intensities, (2) smoothing using a Savitzky\u2013Golay filter with half-window size of 10, (3) baseline correction using 20 iterations of the SNIP algorithm, (4) trimming to the 2000\u201320,000 Da range, (5) intensity calibration so that the total intensity sums to 1, and (6) binning the intensities by summing all values in intervals of 3 Da. After preprocessing, every spectrum is represented as a 6000-dimensional vector.\n\nThe main experiments concern models that are trained on data from one hospital only (DRIAMS-A, University Hospital Basel). All spectra and measurements derived from the other three hospitals in DRIAMS are left out for transfer learning experiments (see Results). Within DRIAMS-A, all spectra from before 2018 are allocated to the training set, and all spectra measured during 2018 are evenly split between validation and test set. This split in time reflects a realistic evaluation scenario, as models trained on historical data need to generalize to new patients possibly infected by newly evolved strains. The final sizes of all splits are as follows: 409,395 labels across 28,331 spectra for the training set, 76,431 labels across 4994 spectra for the validation set, and 76,133 labels across 4999 spectra for the test set.\n\n### Metrics\n\nThe main objective of this study is to train models to effectively recommend treatments for patients. Hence, unless otherwise noted, metrics are computed on a per-patient basis, and then averaged. This is equivalent to macro-averaged metrics, but then computed per instance (spectrum), instead of per class (drug) (Waegeman et al., 2019). For simplicity, we omit the \u2018macro\u2019 prefix from metrics, and \u2013 unless otherwise indicated \u2013 always use spectrum-macro metrics.\n\nThe area under the receiver operating characteristic curve (ROC-AUC) measures the probability that any positive (resistant or intermediate) sample is assigned a higher predicted probability of being positive as compared to any negative (susceptible) sample. It is a measure of the average quality of the ranking of suggested drugs to a patient. To compute the (per-patient average) ROC-AUC, for any spectrum/patient, all observed drug resistance labels and their corresponding predictions are gathered. Then, the patient-specific ROC-AUC is computed on that subset of labels and predictions. Finally, all ROC-AUCs per patient are averaged to a \u2018spectrum-macro\u2019 ROC-AUC.\n\nThe Precision at 1 of the negative class (Prec@1(-)) evaluates how often the top-ranked prediction is correct. Hence, in this case, it reports the proportion of cases for which the \u2018most likely susceptible drug\u2019 prediction is actually an effective one. In a scenario where the top recommended drug is always administered, it corresponds to the percentage of correctly suggested treatments.\n\n### Model architecture\n\nWe formulate AMR prediction as a multitarget classification problem with side information for both instances and targets, also referred to as dyadic prediction (Waegeman et al., 2019). In this context, let us denote a sample in the dataset $D$ by a triplet $(\ud835\udc94_{i},\ud835\udc85_{j},y_{ij})$, where $y_{ij}$ denotes the resistance label of a microbial spectrum $\ud835\udc94_{i\\in{1,...,n}}$ w.r.t. a drug $\ud835\udc85_{j\\in{1,...,m}}$. This dataset can be arranged in an incomplete score matrix $\ud835\udc80\\in{0,1}^{n\\timesm}$. In what follows, the final architectural set-ups used to present the results are described. For details on hyperparameter tuning, readers are referred to Appendix 2.\n\nThe model consists of two separate neural network embedders $E_{s}(\u22c5)$ and $E_{d}(\u22c5)$ for processing the spectra and drugs, respectively. The resulting instance and target embeddings $\ud835\udc99_{i}$ and $\ud835\udc95_{j}$ are then combined into a single score by their scaled dot product $y^=\\frac{\ud835\udc99_{i}\u22c5\ud835\udc95_{j}}{\\sqrt{h}}$ (Rendle et al., 2020). The scaling factor $\\sqrt{h}$, with $h$ the dimensionality of both embeddings, is inspired by the formulation of self-attention (Vaswani et al., 2017). It ensures the dot products to be of manageable magnitudes, even for large values of $h$. This score can be used together with the sigmoid function and the cross-entropy loss to optimize the two-branch neural network to map a spectrum\u2013drug pair to a resistance label (Iliadis et al., 2022). An overview of the model is visualized in Figure 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/93242/elife-93242-fig1-v1.jpg)\n\n**Figure 1.:** Antimicrobial resistance (AMR) labels of spectrum\u2013drug pairs can be represented in an incomplete matrix. A microbial sample that is susceptible to a drug is denoted by a negative label (orange), whereas positive labels (blue) signify an intermediate or resistant combination. Instance (spectrum) and target (drug) embeddings $\ud835\udc99_{i}$ and $\ud835\udc95_{j}$ are obtained from their respective input representations passed through their respective neural network branch. The two resulting embeddings are aggregated to a single score by their (scaled) dot product. The cross-entropy loss optimizes this score to be maximal or minimal for positive or negative combinations of microbial spectra and drugs, respectively.\n\nThe representations of the instance vectors $\ud835\udc99_{i}$ are extracted from a neural network $E_{s}(\u22c5)$ operating on the processed and binned MALDI-TOF spectra $\ud835\udc94_{i}$. $E_{s}(\u22c5)$ is parameterized by a multi-layer perceptron (MLP), consisting of a series of fully connected layers. Between every two such layers, a series of operations consisting of (1) a GeLU activation (Hendrycks and Gimpel, 2016), (2) a dropout rate of 0.2 (Srivastava et al., 2014), and (3) layer normalization (Ba et al., 2016) is applied. We include multiple model sizes in our final results (Table 1). To make comparisons easier, all models output the same number of hidden dimensions that are used in the dot product, $\ud835\udc99_{i}\\in\u211d^{64}$.\n\n**Table 1.**\n All tested model sizes for the (instance) spectrum branch.Hidden sizes represent the evolution of the hidden state dimensionality as it goes through the model, with every hyphen defining one fully connected layer. The listed number of parameters only includes those of the instance (spectrum) branch.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Size</th>\n      <th># weights</th>\n      <th>Hidden sizes</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>S</td>\n      <td>1,578,176</td>\n      <td>6000-256-128-64</td>\n    </tr>\n    <tr>\n      <td>M</td>\n      <td>3,246,784</td>\n      <td>6000-512-256-128-64</td>\n    </tr>\n    <tr>\n      <td>L</td>\n      <td>6,846,144</td>\n      <td>6000-1024-512-256-128-64</td>\n    </tr>\n    <tr>\n      <td>XL</td>\n      <td>15,093,440</td>\n      <td>6000-2048-1024-512-256-128-64</td>\n    </tr>\n  </tbody>\n</table>\n\nDrug identity can be communicated to the model in a number of ways. In this work, we study the following different input representations $\ud835\udc85_{j}$ and embedder $E_{d}(\u22c5)$ combinations:\n\nFor all these combinations, the embedder outputs target embeddings $\ud835\udc95_{j}\\in\u211d^{64}$. For more details on the different drug embedders and their hyperparameters (as well as their tuning), see Appendix 2. For every combination of spectrum embedder (four sizes: S, M, L, and XL) and drug embedder (seven types), six different learning rates (${1e-5,5e-5,1e-4,5e-4,1e-3,5e-3}$) are tested. For all these different combinations, five models are trained (using different random seeds for model initialization and batching of data). For every spectrum and drug embedder combination, only results from the best learning rate are presented; that is, the learning rate resulting in the best average validation ROC-AUC for that combination.\n\nAll models are trained with the Adam optimizer (Kingma and Ba, 2014) for a maximum of 50 epochs with a batch size of 128. A linear learning rate warm-up over the first 250 steps is applied, after which the rate is kept constant. As every epoch constitutes one pass over every label and, hence, multiple passes over every individual drug and spectrum, a branch can technically already be overfitting before the end of the first epoch. Because of this, performance on the validation set is checked every tenth of an epoch. Training is halted early when validation ROC-AUC has not improved for 10 validation set checks. The checkpoint of the best performing model (in terms of validation ROC-AUC) is used as the final model.\n\n## Results\n\nThe following section will first relay the results of the different dual-branch model configurations. Afterward, the \u2018general\u2019 AMR recommender is matched up against \u2018species-specific\u2019 and \u2018species\u2013drug-specific\u2019 models. Finally, the models\u2019 capabilities and representations are examined through transfer learning and embeddings.\n\n### Encoding species and drugs effectively\n\nFigure 2 shows the performance of all trained models in terms of their average ROC-AUC and Prec@1(-). It can be seen that, in general, performance differences between model configurations occupy a small margin. However, trends can still be found. Models using Morgan fingerprints typically outperform other drug embedding strategies. Morgan fingerprints provide a compressed and preprocessed input format, the nature of which provides an apparent advantage over input representations that require more pattern extraction. The small number of different antimicrobial drugs may not be conducive to learning complex representations. Indeed, embedding drugs without a compound information (i.e., one-hot embedding) is a competitive approach for this problem, resulting in the \u2013 on average \u2013 second best models in terms of ROC-AUC. On the spectrum embedder side, it is observed that the medium or large variants typically perform best. The full ROC curve (showing sensitivity and specificity) for the best-performing model is shown in Appendix 3\u2014figure 1.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/93242/elife-93242-fig2-v1.jpg)\n\n**Figure 2.:** Area under the receiver operating characteristic curve (ROC-AUC) evaluates overall ranking of predictions. Prec@1(-) evaluates how often the top suggested treatment would be effective. Both metrics are calculated per spectrum/patient and then averaged. Errorbars represent the standard deviation over five random model seeds. The x-axis and colors show the different drug and spectrum embedders, respectively.\n\nPerformance in terms of Macro ROC-AUC can be found in Appendix 3\u2014figure 2. The Macro ROC-AUC averages the ROC-AUC for every individual drug. Here, Morgan fingerprints similarly reach the best performances. The full list of performances can be found in Appendix 3\u2014table 1.\n\nIn Appendix 3\u2014figure 3, the performance of the spectrum embedder sizes is compared against a linear baseline. The linear baseline uses the same preprocessed input spectrum representation, but only uses a single linear combination to produce an embedding. For this comparison, only the Morgan fingerprint drug embedders are used as they produce the best-performing models overall. Models using nonlinear multi-layer spectrum embedders obtain considerably better performance over linear embedders.\n\n### Species-specific models improve recommendation\n\nThe recommender systems presented in the previous section provide an incredibly general tool. Trained as single models for all species and drugs, their versatility is unparalleled compared to previous studies that create classifiers for specific drug\u2013species combinations (Weis et al., 2020b). In between the extremes of \u2018one model for everything\u2019 and \u2018a model per species and per drug\u2019, there lies a compromising approach: a species-specific recommender system for all drugs. Such recommender systems would be more specialized in nature, but their usefulness hinges upon having done prior species identification. As these are typically included in the MS\u2019 manufacturer\u2019s software, a more specialized species-specific recommender may provide better performance without incurring extra cost. The disadvantage of such models is that (1) they cannot be used for species for which there is not enough data to train a separate model (i.e., rarely occurring species), and (2) they rely on the prior identification step to be correct.\n\nHere, we create species-specific recommender models for the 25 most occurring species in DRIAMS-A. The training setup for these models is kept the same as in the previous section. The difference between \u2018general\u2019 recommenders and \u2018species-specific recommenders\u2019 is that each species-specific recommender model is only trained on the subset of data covering their respective species (as these models use a smaller training set, validation is checked every fourth of an epoch instead of every tenth). Together, the test predictions of the 25 species-specific recommenders cover 4229 spectra, 56 drugs, and 69,827 AMR labels (covering 91.27% of the original test set). Table 2 compares the two best \u2018general\u2019 recommenders from the previous section to their species-specific recommender counterparts. It is observed that species-specific recommenders deliver better predictions across all evaluated metrics.\n\n**Table 2.**\n Test performance of selected general and species-specific dual branch recommender models.The listed averages and standard deviations are calculated over five independent runs of the same model. Performance is computed on the subset of labels spanning the 25 most common species in DRIAMS-A.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>ROC-AUC</th>\n      <th>Prec@1(-)</th>\n      <th>Macro ROC-AUC</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>General recommender (Morgan fingerprints \u2013 M)</td>\n      <td>0.9411 \u00b1 0.0007</td>\n      <td>0.9967 \u00b1 0.0011</td>\n      <td>0.7684 \u00b1 0.0050</td>\n    </tr>\n    <tr>\n      <td>General recommender (one-hot \u2013 L)</td>\n      <td>0.9408 \u00b1 0.0011</td>\n      <td>0.9940 \u00b1 0.0009</td>\n      <td>0.7746 \u00b1 0.0316</td>\n    </tr>\n    <tr>\n      <td>Species-specific recommenders (Morgan fingerprints \u2013 M)</td>\n      <td>0.9461 \u00b1 0.0010</td>\n      <td>0.9973 \u00b1 0.0004</td>\n      <td>0.7905 \u00b1 0.0151</td>\n    </tr>\n    <tr>\n      <td>Species-specific recommenders (one-hot \u2013 L)</td>\n      <td>0.9468 \u00b1 0.0012</td>\n      <td>0.9950 \u00b1 0.0011</td>\n      <td>0.7686 \u00b1 0.0155</td>\n    </tr>\n  </tbody>\n</table>\n\n_ROC-AUC, area under the receiver operating characteristic curve._\n\nAs opposed to the species-specific models, the \u2018general\u2019 recommender can use learned representations from one species to enhance predictions for other species, benefitting from multitask learning. The fact that this latter mode of learning performs worse on this problem, however, indicates that such transfer of learned knowledge is of limited usefulness for AMR prediction. Still, the \u2018general\u2019 recommender model remains useful in instances where the species could not be identified, or is rare. In Appendix 3\u2014table 2, the 25 species for which specific recommenders were trained are listed, along with their performances.\n\n### Dual-branch recommenders improve over baselines\n\nIn order to gain better insight into the performance of our models, in this section, both our \u2018general\u2019 and \u2018species-specific\u2019 recommenders are squared up against extensive baselines.\n\nPrevious studies have studied AMR prediction in specific species\u2013drug combinations. For this reason, it is useful to compare how the dual-branch setup weighs up against training separate models for separate species and drugs. In Weis et al., 2020b, for example, binary AMR classifiers are trained for the following three combinations: (1) Escherichia coli with ceftriaxone, (2) Klebsiella pneumoniae with ceftriaxone, and (3) Staphylococcus aureus with oxacillin. Here, such \u2018species\u2013drug-specific classifiers\u2019 are trained for the 200 most common combinations of species and drugs in the training dataset. For these combinations, binary logistic regression, XGBoost (Chen and Guestrin, 2016), and MLPs are tested. The tested MLPs come in the same four sizes as the spectrum branches of the dual-branch models. Other than having an output node of size 1 for binary classification, they share all hyperparameters with the tested spectrum branches. For details on the training and tuning procedure of all baselines, see Appendix 2.\n\nThere exist many species\u2013drug combinations for which there are either only positive or only negative labels. As it is impossible to train and evaluate models for these cases, models are trained only for the 200 most occurring combinations for which both labels are present in the training, validation, and test set. We refer to these models as \u2018species\u2013drug classifiers\u2019.\n\nIn addition, it is useful to probe model performance against what experts may be able to guess. Given knowledge of the species identity in question, an expert will \u2013 in many cases \u2013 already be able to make a good guess toward what drugs will be effective or not. Hence, baseline \u2018best guess\u2019 performance would not result in a ROC-AUC of 0.5. A way to simulate such \u2018expert\u2019s best guess\u2019 baseline predictions is through counting label frequencies in the training set. More specifically, for a test label belonging to a certain species and drug, the labels in the training set corresponding to that drug and species can be gathered. The frequency by which that training set is positive or negative can be used to infer a test predicted probability. We refer to this baseline as \u2018simulated expert\u2019s best guess\u2019. More formally, considering all training spectra as $S_{train}$, all training labels corresponding to one drug $j$ and species $t$ are gathered: $Y_{subset}^{j,t}={y_{ij}|s_{i}\\inS_{train}\u2227species(s_{i})=t}$. The \u2018simulated expert\u2019s best guess\u2019 predicted probability for any spectrum $s_{i}$ and drug $d_{j}$, then, corresponds to the fraction of positive labels in their corresponding training label set $Y_{subset}^{j,t}$:$Pr(y_{ij}=1|species(s_{i})=t,d_{j})=\\frac{\\sumy\\inY_{subset}^{j,t}y}{|Y_{subset}^{j,t}|}$.\n\nTable 3 compares the recommenders from the previous section to non-recommender baselines. As the baselines are only trained on the 200 most common species\u2013drug combinations, performance is computed on that subset of test labels. This reduced test set spans 4017 spectra, 35 drugs, and 53,503 labels (covering 70.28% of the original test set). Dual-branch recommenders outperform baselines on all but one metric. Logistic regression baselines result in the best average ROC-AUC for individual species\u2013drug combinations. By all other metrics, dual-branch recommenders outshine a collection of species\u2013drug-specific classifiers. It is illustrated that, when the question is to choose between drugs for a patient (evaluated by the patient-averaged ROC-AUC or Prec@1(-)), a model designed as a recommender will outperform binary classification models trained to predict AMR for specific drugs. On the other hand, species-specific binary classifiers are optimal for distinguishing spectra for a specific drug. The crux of our case in favor of recommender models relies, hence, on the fact that patient-averaged metrics are more representative of AMR models\u2019 utility in clinical diagnostics.\n\n**Table 3.**\n Test performance of selected recommender models, compared to the performance of a collection of models \u2013 each trained on only one species\u2013drug combination \u2013 coined \u2018species\u2013drug classifiers\u2019.\u2018Species\u2013drug classifiers\u2019 refer to a collection of binary classifiers, each trained to predict antimicrobial resistance (AMR) status for a subset of data comprising a single species\u2013drug combination. \u2018Simulated expert\u2019s best guess\u2019 refers to counting AMR label frequencies in single species\u2013drug combinations and taking those as predictions. The listed averages and standard deviations are calculated over five independent runs of the same model. Given the non-stochastic nature of the logistic regression and XGBoost implementations, only one set of models is trained and, hence, no standard deviations are reported. Performance is computed on the subset of labels spanning the 200 most common species\u2013drug combinations.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>ROC-AUC</th>\n      <th>Prec@1(-)</th>\n      <th>Macro ROC-AUC</th>\n      <th>Species\u2013drug macro ROC-AUC</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Species-specific recommenders (Morgan fingerprints \u2013 M)</td>\n      <td>0.9009 \u00b1 0.0018</td>\n      <td>0.9830 \u00b1 0.0015</td>\n      <td>0.8283 \u00b1 0.0059</td>\n      <td>0.6381 \u00b1 0.0121</td>\n    </tr>\n    <tr>\n      <td>Species-specific recommenders (one-hot \u2013 L)</td>\n      <td>0.9030 \u00b1 0.0018</td>\n      <td>0.9814 \u00b1 0.0020</td>\n      <td>0.8129 \u00b1 0.0079</td>\n      <td>0.6511 \u00b1 0.0290</td>\n    </tr>\n    <tr>\n      <td>General recommender (Morgan fingerprints \u2013 M)</td>\n      <td>0.8939 \u00b1 0.0016</td>\n      <td>0.9746 \u00b1 0.0006</td>\n      <td>0.8114 \u00b1 0.0064</td>\n      <td>0.6517 \u00b1 0.0076</td>\n    </tr>\n    <tr>\n      <td>General recommender (one-hot \u2013 L)</td>\n      <td>0.8933 \u00b1 0.0020</td>\n      <td>0.9778 \u00b1 0.0023</td>\n      <td>0.8124 \u00b1 0.0033</td>\n      <td>0.6521 \u00b1 0.0078</td>\n    </tr>\n    <tr>\n      <td>Species\u2013drug classifiers (MLP \u2013 S)</td>\n      <td>0.8341 \u00b1 0.0135</td>\n      <td>0.9420 \u00b1 0.0123</td>\n      <td>0.8005 \u00b1 0.0032</td>\n      <td>0.6745 \u00b1 0.0218</td>\n    </tr>\n    <tr>\n      <td>Species\u2013drug classifiers (MLP \u2013 M)</td>\n      <td>0.8382 \u00b1 0.0077</td>\n      <td>0.9421 \u00b1 0.0196</td>\n      <td>0.8075 \u00b1 0.0049</td>\n      <td>0.6797 \u00b1 0.0097</td>\n    </tr>\n    <tr>\n      <td>Species\u2013drug classifiers (MLP \u2013 L)</td>\n      <td>0.8457 \u00b1 0.0088</td>\n      <td>0.9505 \u00b1 0.0100</td>\n      <td>0.8037 \u00b1 0.0079</td>\n      <td>0.6648 \u00b1 0.0149</td>\n    </tr>\n    <tr>\n      <td>Species\u2013drug classifiers (MLP \u2013 XL)</td>\n      <td>0.8611 \u00b1 0.0049</td>\n      <td>0.9722 \u00b1 0.0041</td>\n      <td>0.8106 \u00b1 0.0069</td>\n      <td>0.6801 \u00b1 0.0101</td>\n    </tr>\n    <tr>\n      <td>Species\u2013drug classifiers (logistic regression)</td>\n      <td>0.8684</td>\n      <td>0.9432</td>\n      <td>0.7989</td>\n      <td>0.7200</td>\n    </tr>\n    <tr>\n      <td>Species\u2013drug classifiers (XGBoost)</td>\n      <td>0.8346</td>\n      <td>0.9196</td>\n      <td>0.7763</td>\n      <td>0.6236</td>\n    </tr>\n    <tr>\n      <td>Simulated expert\u2019s best guess</td>\n      <td>0.8681</td>\n      <td>0.9743</td>\n      <td>0.7159</td>\n      <td>0.5000</td>\n    </tr>\n  </tbody>\n</table>\n\n_ROC-AUC, area under the receiver operating characteristic curve._\n\nIt is useful to note that any gain in performance over the \u2018simulated expert\u2019 means that AMR signal could be mined from the spectra. Hence, any performance above this level results in a real-world information gain for clinical diagnostic laboratories.\n\n### Efficient transfer learning to new hospitals\n\nAn AMR prediction model trained using data from one hospital may not be suitable for use in other hospitals for several reasons. First, protocols such as sample preparation and culturing media differ from hospital to hospital, resulting in systematic differences in MALDI-TOF spectra (Weis et al., 2022). Second, epidemiology is spatially varied. Drug-resistant clades may be prevalent in one region or country, but absent in another (Humphries, 2022). Finally, the MALDI-TOF instruments themselves may also be specific to the hospital and influence the readout. This influences prediction models, as a hospital-specific effect is reported by the study introducing the DRIAMS dataset (Weis et al., 2022). They find that models typically perform best when trained with data from the same hospital. Here, hospital transferability is studied in the context of transfer learning.\n\nData from DRIAMS-B, -C, and -D are split into training, validation, and test set. The train set for these hospitals consists of 1000 randomly drawn spectra, simulating a small data scenario where the hospital has not spent considerable efforts in data collection. The remaining spectra for all three hospitals are evenly split among validation and test set.\n\nFor all three hospitals, we train models in the same way as previously (see Methods). A comparison is made between fine-tuning starting from models trained on DRIAMS-A (i.e., models from previous sections) and dual-branch models trained from scratch (Figure 3). For simplicity, we transfer the non-species-specific, \u2018general\u2019 recommenders as we feel this reflects a more realistic use case for labs that cannot afford to gather spectra for all possible species and additionally fine-tune them. Over all three hospitals, models fine-tuned from a DRIAMS-A checkpoint generally outperform models trained from scratch. This trend holds true over different numbers of spectra available in the fine-tuning set. In general, it can be seen that pre-trained models require very little fine-tuning spectra to obtain performances in the same order of magnitude as with DRIAMS-A (see previous Results sections). Performance comparisons of the same models in terms of other metrics are shown in Appendix 3\u2014figure 4.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/93242/elife-93242-fig3-v1.jpg)\n\n**Figure 3.:** Errorbands show the standard deviation over five runs. Results in terms of other evaluation metrics are shown in Appendix 3\u2014figure 4.\n\nLowering the amount of data required is paramount to expedite the uptake of AMR models in clinical diagnostics. The transfer learning qualities of dual-branch models may be ascribed to multiple properties. First of all, since different hospitals use much of the same drugs, transferred drug embedders allow for expressively representing drugs out of the box. Secondly, owing to multitask learning, even with a limited number of spectra, a considerable fine-tuning dataset may be obtained, as all available data is \u2018thrown on one pile\u2019.\n\n### MALDI-TOF spectra embeddings\n\nTo investigate what the dual-branch models have learned to represent, MALDI-TOF spectra embeddings are examined. For this purpose, both the best-performing \u2018general\u2019 recommender and \u2018species-specific\u2019 recommender are used. Here, we visualize the embeddings $\ud835\udc99_{i}\\in\u211d^{64}$ of all test set spectra from the 25 most occurring pathogens. To visualize in a two-dimensional space, UMAP is applied (using default parameters apart from min_dist = 0.5) (Increasing this parameter helps reduce UMAP packing points too tightly together, hence, making for a more-legible plot.). Figure 4 shows the resulting embeddings, colored by species identity, as well as by their AMR status to a selection of drugs.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/93242/elife-93242-fig4-v1.jpg)\n\n**Figure 4.:** UMAP scatterplots of test set matrix-assisted laser desorption/ionization time-of-flight (MALDI-TOF) spectra embeddings $\ud835\udc99_{i}$.Top: embeddings from a \u2018general\u2019 (trained on all species) recommender. Only embeddings belonging to the 25 most occurring species in the test set are shown. The panels on the right show the same embeddings as on the left, but colored according to its antimicrobial resistance (AMR) status to a certain drug. The four displayed drugs are selected based on a ranking of the product of the number of positive and negative labels $\\sumi=1n[y_{ij}=0]\u22c5\\sumi=1n[y_{ij}=1]$. In this way, the drugs that have a lot of observed labels, both positives and negatives, are displayed. Bottom: highlighted embeddings from a S. epidermidis-specific recommender model.\n\nThe MALDI-TOF embeddings from the \u2018general\u2019 recommender model are grouped primarily per species. This shows that, without being instructed to discriminate between species, the model has learned to group spectra of the same species together. Furthermore, species under the same genus are typically grouped close together, illustrating that the model can pick up hierarchical relations in the tree of life from the data. Within species clusters, the AMR status subplots show that samples are often grouped according to their resistance. For example, for Staphylococcus epidermidis and S. aureus, multidrug-resistant variants clearly form subclusters. In addition, the cluster of E. coli spectra shows a clear tail with samples resistant to ciprofloxacin. Embeddings from the species-specific recommender models show this phenomenon more clearly. UMAP embedding plots from the \u2018general recommender\u2019 colored by other drugs are shown in Appendix 3\u2014figure 5. In addition, species-specific recommender system embeddings for some prominent species are shown in Appendix 3\u2014figure 6.\n\n## Discussion\n\nPrior work on AMR prediction has always modeled within the boundaries of one clade and drug (class), using standard machine learning practices. This work differentiates itself from others by constructing one model for the whole range of drugs encountered in clinical diagnostics. We propose to model AMR prediction via dual-branch neural networks, producing a novel MALDI-TOF-based AMR recommender system. The proposed models come with improved performance over the approaches taken in previous works.\n\nIn clinical diagnostics, AMR predictions could be used to decide which drug to administer on a per-patient basis. For this reason, we argue that evaluation metrics should probe the average quality of predictions per patient (i.e., spectrum-macro metrics). We show that, for these metrics, recommender systems consistently outperform baselines.\n\nWe postulate that the performance of the proposed models is still limited due to (1) lacking a MALDI-TOF-specific learning architecture, (2) collection of more data, especially on rarely encountered species and drugs, and (3) inherent technological limitations of MALDI-TOF MS. Whilst the former is the subject of further machine learning research, the latter two can be considered by equipping the model with some notion of uncertainty, epistemic and aleatoric, respectively (H\u00fcllermeier and Waegeman, 2021). In medical decision-making applications, effective uncertainty estimates would be an invaluable tool to aid understanding the models\u2019 predictions. A fourth factor to consider is that perfect test set performance may also be unattainable due to labeling errors. This comes as a consequence of (1) error-prone laboratory measurements of minimum inhibitory concentration (MIC) values, and (2) the fact that EUCAST norms change over time, resulting in outdated label thresholds for historical data.\n\nAs bacterial strains readily adapt resistance to new and frequently used antibiotics, it is impossible for an AMR model to maintain its performance over time. Consequently, an obvious need for continual data collection and online machine learning approaches presents itself. It is for this reason that ML for AMR prediction will prove most valuable when integrated tightly in the inner workings of healthcare (Lee and Lee, 2020).\n\nIt stands to reason that blindly following the recommender system\u2019s predictions spells misery. For example, healthcare practitioners should additionally take into account host-specific factors such as patient age, medical history, and concurrent medication. Additionally, as the model is trained on the whole repertoire of antimicrobial drugs, it will have learnt that broad-spectrum antibiotics are typically effective. Hence, it may overrecommend their use. As a consequence, the model\u2019s proposed treatment strategies may not be aligned with antibiotic stewardship, instead exacerbating the very issue it is designed to mitigate. To tackle this problem, one could downweigh the prediction probabilities of undesirable drugs, or, alternatively, train a dual-branch model on only more specifically working drugs.\n\nIn summary, this study serves as the first proof of concept for large MALDI-TOF-based antimicrobial drug recommenders. In this context, we highlight the need for appropriate metrics, proposing that per-patient metrics are most suitable. Extensive experiments on our proposed dual-branch model allow us to assemble some conclusions w.r.t. its use. Firstly, we find that medium-sized MLP spectrum embedders (counting 3.2 M weights) generally perform best. Second, incorporating chemical information works best using Morgan fingerprints. Third, while more data may skew the favor toward the other side, given the current available data, species-specific models outperform recommenders trained for all species. For the smaller datasets used in the transfer learning experiments, the structural inductive bias lent to the model via Morgan fingerprints delivers best results. Our experiments demonstrate that dual-branch recommenders outperform non-recommender baselines on relevant metrics. In the above discussion, some considerations are listed w.r.t. its practical implementation in healthcare. Taken together, this work demonstrates the potential of AMR recommenders to greatly extend the value of MALDI-TOF MS for clinical diagnostics.\n",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "2615cc72-e11e-4164-aeb8-52cbe21f5e7a",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lukas Folkman\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93242.4.sa0](https://doi.org/10.7554/eLife.93242.4.sa0)\n\nThis valuable study presents a machine learning model to recommend effective antimicrobial drugs from patients' samples analyzed with mass spectrometry. The evidence supporting the claims of the authors is convincing. This work will be of interest to computational biologists, microbiologists, and clinicians.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93242.4.sa1](https://doi.org/10.7554/eLife.93242.4.sa1)\n\nDe Waele et al. framed the mass-spectrum-based prediction of antimicrobial resistance (AMR) prediction as a drug recommendation task. Neural networks were trained on the recently available DRIAMS database of MALDI-TOF (matrix-assisted laser desorption/ionization time-of-flight) mass spectrometry data and their associated antibiotic susceptibility profiles (Weis et al. 2022). Weis et al. (2022) also introduced the benchmark models which take as the input a single species and are trained to predict resistance to a single drug. Instead here, a pair of drugs and spectrum are fed to two neural network models to predict a resistance probability. In this manner, knowledge from different drugs and species can be shared through the model parameters. Questions asked: What is the best way to encode the drugs? Does the dual neural network outperform the single spectrum-drug network?\n\nThe authors showed consistent performance of their strategy to predict antibiotic susceptibility for different spectrum and antibiotic representations (i.e., embedders). Remarkably, the authors showed how small datasets collected at one location can improve the performance of a model trained with limited data collected at a second location. The authors also showed that species-specific models (trained in multiple antibiotic resistance profiles) outperformed both the single recommender model and the individual species-antibiotic combination models.\n\nStrengths:\n\n\u2022 A single antimicrobial resistance recommender system could potentially facilitate the adoption of MALDI-TOF based antibiotic susceptibility profiling into clinical practices by reducing the number of models to be considered, and the efforts that may be required to periodically update them.\n\n\u2022 The authors tested multiple combinations of embedders for the mass spectra and antibiotics while using different metrics to evaluate the performance of the resulting models. Models trained using different spectrum embedder-antibiotic embedder combinations had remarkably good performance for all tested metrics. The average ROC AUC scores for global and species-specific evaluations were above 0.8.\n\n\u2022 Authors developed species-specific recommenders as an intermediate layer between the single recommender system and single species-antibiotic models. This intermediate approach achieved maximum performance (with one type of the species-specific recommender achieving a 0.9 ROC AUC), outlining the potential of this type of recommenders for frequent pathogens.\n\n\u2022 Authors showed that data collected in one location can be leveraged to improve the performance of models generated using a smaller number of samples collected at a different location. This result may encourage researchers to optimize data integration to reduce the burden of data generation for institutions interested in testing this method.\n\nWeaknesses:\n\n\u2022 Authors do not offer information about the model features associated with resistance. While reviewers understand that it is difficult to map mass spectra to specific pathways or metabolites, mechanistic insights are much more important in the context of AMR than in the context of bacterial identification. For example, this information may offer additional antimicrobial targets. Thus, authors should at least identify mass spectra peaks highly associated with resistance profiles. Are those peaks consistent across species? This would be a key step towards a proteomic survey of mechanisms of AMR. See previous work on this topic (Hrabak et al. 2013, Torres-Sangiao et al. 2022).\n\nReferences:\n\nHrabak et al. (2013). Clin Microbiol Rev 26. doi: 10.1128/CMR.00058-12.\n\nTorres-Sangiao et al. (2022). Front Med 9. doi: 10.3389/fmed.2022.850374.\n\nWeis et al. (2022). Nat Med 28. doi: 10.1038/s41591-021-01619-9.\n",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5d9161f1-23c0-421a-91a7-a2bc8f9aa8d3",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C1",
+      "claim": "MALDI-TOF MS is currently routinely used in clinical diagnostics for rapid species identification.",
+      "claim_type": "EXPLICIT",
+      "source": "Matrix-assisted laser desorption/ionization time-of-flight mass spectrometry (MALDI-TOF MS) is currently routinely used in clinical diagnostics for rapid species identification.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Hou et al., 2019 in the Introduction section",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "4836eaf4-2cd2-47c2-8988-e0907d906c7d",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C2",
+      "claim": "Timely and effective use of antimicrobial drugs can improve patient outcomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Timely and effective use of antimicrobial drugs can improve patient outcomes, as well as help safeguard against resistance development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement in abstract without specific citation but represents established medical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "06d14878-c06d-4fd5-bceb-fd830c23b527",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C3",
+      "claim": "Timely and effective use of antimicrobial drugs can help safeguard against resistance development.",
+      "claim_type": "EXPLICIT",
+      "source": "Timely and effective use of antimicrobial drugs can improve patient outcomes, as well as help safeguard against resistance development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement in abstract without specific citation but represents established medical knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "407790a1-35a8-443e-ab6c-7141e9299846",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C4",
+      "claim": "Microbial samples only require an overnight culturing step before being analyzed with mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Usually, microbial samples only require an overnight culturing step before being analyzed with mass spectrometry (van Veen et al., 2010; Cu\u00e9nod et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to van Veen et al., 2010 and Cu\u00e9nod et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "0e14557b-ca43-4a4f-90bf-cc346c4a45f4",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C5",
+      "claim": "Infections caused by antibiotic-resistant bacteria have caused the deaths of 1.27 million people in 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been estimated that infections caused by antibiotic-resistant bacteria have caused the deaths of 1.27 million people in 2019, making antimicrobial resistance (AMR) one of the leading causes of death on earth (Murray et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Murray et al., 2022",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "fcb2f614-06e2-4495-a7ad-89f4c8bf724c",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C6",
+      "claim": "Antimicrobial resistance (AMR) is one of the leading causes of death on earth.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been estimated that infections caused by antibiotic-resistant bacteria have caused the deaths of 1.27 million people in 2019, making antimicrobial resistance (AMR) one of the leading causes of death on earth (Murray et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the 1.27 million deaths figure cited from Murray et al., 2022",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "4be7d0b5-de9c-4748-964e-3a8f7d4d7afb",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C7",
+      "claim": "The annual number of deaths from antibiotic-resistant bacteria could rise to 10 million by 2050.",
+      "claim_type": "EXPLICIT",
+      "source": "Projections have estimated that this annual number could rise to 10 million by 2050 (O'Neill, 2016), highlighting the need for responsible antimicrobial drug use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to O'Neill, 2016",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "cd84140b-2cd3-4edb-bd7e-1ea680828721",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C8",
+      "claim": "Some known resistance mechanisms are outside of the m/z range that MALDI-TOF spectrometers can accurately measure.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been described that some known resistance mechanisms are outside of the m/z range that MALDI-TOF spectrometers can accurately measure (Humphries, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Humphries, 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "c4319a0a-afdc-4b46-b842-d2a66e74a241",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C9",
+      "claim": "It remains largely unknown to which extent co-evolved traits, such as subtle changes in metabolism caused by the resistance mechanism, can be detected by MALDI-TOF spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, it remains largely unknown to which extent co-evolved traits, such as subtle changes in metabolism caused by the resistance mechanism, can be detected by MALDI-TOF spectra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about current state of knowledge in the field",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "9aa8b89f-f68c-4abe-80a5-a1ca1860be2f",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C10",
+      "claim": "Some resistant strains can reliably be predicted from MALDI-TOF MS by identifying and detecting specific markers or by learning patterns from data.",
+      "claim_type": "EXPLICIT",
+      "source": "A number of studies have shown that some resistant strains can reliably be predicted from MALDI-TOF MS, either by identifying and detecting specific markers (e.g., peaks) or by learning patterns from data (see 'Related work').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Refers to multiple studies discussed in Related work section",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "c18950d3-8847-4b64-ba7a-3c144b9fbf03",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C11",
+      "claim": "All previous studies on MALDI-TOF-based AMR prediction have modeled AMR prediction for specific species\u2013drug combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, all of these studies have modeled AMR prediction for specific species\u2013drug combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' assessment of the literature",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "9be1b1c0-70e9-4d3b-a0ad-7fdde05c49c2",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C12",
+      "claim": "The DRIAMS dataset contains phenotypic AMR data covering a wide range of species and drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "The recently published DRIAMS dataset (Weis et al., 2022) contains phenotypic AMR data covering a wide range of species and drugs, allowing to study MALDI-TOF-based AMR prediction on an unprecedented scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weis et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "6cec8f17-bb47-4b8b-ac3c-338e64baff15",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C13",
+      "claim": "The DRIAMS dataset allows to study MALDI-TOF-based AMR prediction on an unprecedented scale.",
+      "claim_type": "EXPLICIT",
+      "source": "The recently published DRIAMS dataset (Weis et al., 2022) contains phenotypic AMR data covering a wide range of species and drugs, allowing to study MALDI-TOF-based AMR prediction on an unprecedented scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' assessment based on the dataset characteristics",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "a3a50ce5-b3a5-41de-8779-2d616bf4d2f9",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C14",
+      "claim": "The DRIAMS database consists of 765,048 AMR measurements derived from 55,773 spectra across four different hospitals, spanning in total 74 different drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "To train models, we use the recently published DRIAMS database, consisting of 765,048 AMR measurements derived from 55,773 spectra across four different hospitals, spanning in total 74 different drugs (Weis et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Data description from the DRIAMS dataset cited from Weis et al., 2022",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "c8a5e6c6-ea57-416b-af1f-81ade4b03ada",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C15",
+      "claim": "Every drug in DRIAMS is characterized by a canonical SMILES string obtained from PubChem.",
+      "claim_type": "EXPLICIT",
+      "source": "Every drug is characterized by a canonical SMILES string obtained from PubChem (Kim et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing with citation to PubChem",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "b21daaeb-98bf-4106-8e47-7274cd6d959c",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C16",
+      "claim": "AMR measurements in DRIAMS are binarized according to the EUCAST norms per drug.",
+      "claim_type": "EXPLICIT",
+      "source": "As in the original DRIAMS publication, AMR measurements are binarized according to the EUCAST norms per drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data processing methodology",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "29a57315-0ffa-49c6-9105-67065b05eacc",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C17",
+      "claim": "Intermediate or resistant AMR values are assigned a positive label, and susceptible samples a negative one.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, intermediate or resistant values are assigned a positive label, and susceptible samples a negative one.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of labeling scheme used in the study",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "7422f5e3-9593-4143-bfe4-fbb723b2e869",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C18",
+      "claim": "After preprocessing, every spectrum is represented as a 6000-dimensional vector.",
+      "claim_type": "EXPLICIT",
+      "source": "After preprocessing, every spectrum is represented as a 6000-dimensional vector.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data representation after processing",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "b768cb78-8195-4a08-8083-56039d6b235b",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C19",
+      "claim": "The dual-branch method delivers considerably higher performance compared to previous approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that our dual-branch method delivers considerably higher performance compared to previous approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Main finding stated in abstract, supported by experimental results in Results section",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "5d0d52cb-f99e-43bb-a2f8-ba15067fe2db",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C20",
+      "claim": "The models can be efficiently fine-tuned to data from other clinical laboratories.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, experiments show that the models can be efficiently fine-tuned to data from other clinical laboratories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding stated in abstract, supported by transfer learning experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "a1cd64c3-1f4d-4ed4-b5ae-0e1ed9325be6",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C21",
+      "claim": "Models using Morgan fingerprints typically outperform other drug embedding strategies.",
+      "claim_type": "EXPLICIT",
+      "source": "Models using Morgan fingerprints typically outperform other drug embedding strategies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental results shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "9f6fdac6-4806-4509-8388-536711f6e26b",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C22",
+      "claim": "The medium or large spectrum embedder variants typically perform best.",
+      "claim_type": "EXPLICIT",
+      "source": "On the spectrum embedder side, it is observed that the medium or large variants typically perform best.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from experimental results shown in Figure 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "a2dbd8b6-25cc-4f99-a633-6aa093c2f271",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C23",
+      "claim": "Species-specific recommender models deliver better predictions across all evaluated metrics compared to general recommenders.",
+      "claim_type": "EXPLICIT",
+      "source": "It is observed that species-specific recommenders deliver better predictions across all evaluated metrics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison in Table 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "07d1da0a-0d00-49c4-b3b4-f8f3b2c5e5a6",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C24",
+      "claim": "Dual-branch recommenders outperform baselines on all but one metric.",
+      "claim_type": "EXPLICIT",
+      "source": "Dual-branch recommenders outperform baselines on all but one metric.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from comparison in Table 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "87453bde-ecd4-423c-b210-1ae35beae486",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C25",
+      "claim": "Logistic regression baselines result in the best average ROC-AUC for individual species\u2013drug combinations.",
+      "claim_type": "EXPLICIT",
+      "source": "Logistic regression baselines result in the best average ROC-AUC for individual species\u2013drug combinations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific finding from Table 3 comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "76d99d19-0f61-4a30-a995-c95531dc9b19",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C26",
+      "claim": "Models fine-tuned from a DRIAMS-A checkpoint generally outperform models trained from scratch over all three hospitals.",
+      "claim_type": "EXPLICIT",
+      "source": "Over all three hospitals, models fine-tuned from a DRIAMS-A checkpoint generally outperform models trained from scratch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from transfer learning experiments shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "1933b13c-b2bb-478a-99f0-51ca819d393e",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C27",
+      "claim": "Pre-trained models require very little fine-tuning spectra to obtain performances in the same order of magnitude as with DRIAMS-A.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, it can be seen that pre-trained models require very little fine-tuning spectra to obtain performances in the same order of magnitude as with DRIAMS-A (see previous Results sections).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from transfer learning experiments shown in Figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "dd9cbaa2-fccc-4340-a284-479f2500c80d",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C28",
+      "claim": "MALDI-TOF embeddings from the general recommender model are grouped primarily per species.",
+      "claim_type": "EXPLICIT",
+      "source": "The MALDI-TOF embeddings from the 'general' recommender model are grouped primarily per species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from UMAP visualization in Figure 4",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "ff9cfa3d-d81b-44de-a1ef-9a1335e6b445",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C29",
+      "claim": "Species under the same genus are typically grouped close together in the embeddings.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, species under the same genus are typically grouped close together, illustrating that the model can pick up hierarchical relations in the tree of life from the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from UMAP visualization in Figure 4",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "356efc42-f8a2-4c6f-88ca-18cf7e9facc8",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C30",
+      "claim": "The model can pick up hierarchical relations in the tree of life from the data.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, species under the same genus are typically grouped close together, illustrating that the model can pick up hierarchical relations in the tree of life from the data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observation that species under the same genus cluster together",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "0950d1bd-a80f-4947-8ce2-705ab24f384c",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C31",
+      "claim": "Within species clusters, samples are often grouped according to their resistance status.",
+      "claim_type": "EXPLICIT",
+      "source": "Within species clusters, the AMR status subplots show that samples are often grouped according to their resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Observation from UMAP visualization in Figure 4",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "2ff8d95a-320c-4415-898b-dc02ce21be32",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C32",
+      "claim": "For Staphylococcus epidermidis and S. aureus, multidrug-resistant variants clearly form subclusters.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, for Staphylococcus epidermidis and S. aureus, multidrug-resistant variants clearly form subclusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific observation from UMAP visualization in Figure 4",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "02287654-6efe-4ee7-9f7b-a31b3ebe235b",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C33",
+      "claim": "The cluster of E. coli spectra shows a clear tail with samples resistant to ciprofloxacin.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the cluster of E. coli spectra shows a clear tail with samples resistant to ciprofloxacin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Specific observation from UMAP visualization in Figure 4",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "325d7261-7e46-4ff4-b510-fe706db8fd94",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C34",
+      "claim": "Models trained on data from one hospital may not be suitable for use in other hospitals due to differences in protocols, epidemiology, and instruments.",
+      "claim_type": "EXPLICIT",
+      "source": "An AMR prediction model trained using data from one hospital may not be suitable for use in other hospitals for several reasons. First, protocols such as sample preparation and culturing media differ from hospital to hospital, resulting in systematic differences in MALDI-TOF spectra (Weis et al., 2022). Second, epidemiology is spatially varied. Drug-resistant clades may be prevalent in one region or country, but absent in another (Humphries, 2022). Finally, the MALDI-TOF instruments themselves may also be specific to the hospital and influence the readout.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reasoning supported by citations to Weis et al., 2022 and Humphries, 2022",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "758e2ed5-f534-4d3d-9d54-81b344f8e17a",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C35",
+      "claim": "A hospital-specific effect is reported by the study introducing the DRIAMS dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "This influences prediction models, as a hospital-specific effect is reported by the study introducing the DRIAMS dataset (Weis et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Weis et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "144fadf5-1c75-4b0f-a418-7b8aa764fc90",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C36",
+      "claim": "Models typically perform best when trained with data from the same hospital.",
+      "claim_type": "EXPLICIT",
+      "source": "They find that models typically perform best when trained with data from the same hospital.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Finding from Weis et al., 2022 study",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "8055bc87-e922-4149-9cc5-48fda6c39eae",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C37",
+      "claim": "The model has learned to group spectra of the same species together without being instructed to discriminate between species.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that, without being instructed to discriminate between species, the model has learned to group spectra of the same species together.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from UMAP visualization showing species clustering",
+      "evidence_type": "[\"DATA\", \"IMAGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "87e63cc9-10be-42d7-95b7-4eb872aedd7d",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C38",
+      "claim": "Perfect test set performance may be unattainable due to labeling errors.",
+      "claim_type": "EXPLICIT",
+      "source": "A fourth factor to consider is that perfect test set performance may also be unattainable due to labeling errors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reasoning about limitations of the approach",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "e7a66c18-bdde-402c-bbec-415ed2386f34",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C39",
+      "claim": "Labeling errors come as a consequence of error-prone laboratory measurements of MIC values and the fact that EUCAST norms change over time.",
+      "claim_type": "EXPLICIT",
+      "source": "This comes as a consequence of (1) error-prone laboratory measurements of minimum inhibitory concentration (MIC) values, and (2) the fact that EUCAST norms change over time, resulting in outdated label thresholds for historical data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Reasoning about sources of labeling errors",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "78b200c6-32a5-4233-a2f3-70ee3fdb65fa",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C40",
+      "claim": "Bacterial strains readily adapt resistance to new and frequently used antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "As bacterial strains readily adapt resistance to new and frequently used antibiotics, it is impossible for an AMR model to maintain its performance over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Established biological knowledge",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "179439f3-a734-4634-abbe-eedd815af33b",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C41",
+      "claim": "It is impossible for an AMR model to maintain its performance over time due to bacterial adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "As bacterial strains readily adapt resistance to new and frequently used antibiotics, it is impossible for an AMR model to maintain its performance over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the fact that bacteria adapt resistance",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "d9d1ba91-1807-4141-8ad0-45908074400d",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C42",
+      "claim": "The model may have learnt that broad-spectrum antibiotics are typically effective.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as the model is trained on the whole repertoire of antimicrobial drugs, it will have learnt that broad-spectrum antibiotics are typically effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about what the model learns from training data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "b2edf29b-a188-47d8-9114-b196427355dd",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C43",
+      "claim": "The model may overrecommend the use of broad-spectrum antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, it may overrecommend their use.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference from the model learning that broad-spectrum antibiotics are effective",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "acb0d45c-ecad-4f70-9022-f24bd8705b51",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C44",
+      "claim": "The model's proposed treatment strategies may not be aligned with antibiotic stewardship.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, the model's proposed treatment strategies may not be aligned with antibiotic stewardship, instead exacerbating the very issue it is designed to mitigate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about potential negative consequences of model recommendations",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "75bd4fb6-dc46-4a1f-91df-f93863c290f2",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C45",
+      "claim": "Medium-sized MLP spectrum embedders (counting 3.2 M weights) generally perform best.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, we find that medium-sized MLP spectrum embedders (counting 3.2 M weights) generally perform best.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "8857ba47-bf4b-4a83-b1ce-14bae039d0fa",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C46",
+      "claim": "Incorporating chemical information works best using Morgan fingerprints.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, incorporating chemical information works best using Morgan fingerprints.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "d3021e48-5d9c-42f6-8d5a-3900fe6f4673",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C47",
+      "claim": "Given the current available data, species-specific models outperform recommenders trained for all species.",
+      "claim_type": "EXPLICIT",
+      "source": "Third, while more data may skew the favor toward the other side, given the current available data, species-specific models outperform recommenders trained for all species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from experimental results with caveat about data availability",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "fb923f0b-6ba6-42b2-8f35-4a026a705930",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C48",
+      "claim": "For the smaller datasets used in the transfer learning experiments, the structural inductive bias lent to the model via Morgan fingerprints delivers best results.",
+      "claim_type": "EXPLICIT",
+      "source": "For the smaller datasets used in the transfer learning experiments, the structural inductive bias lent to the model via Morgan fingerprints delivers best results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from transfer learning experimental results",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "b9a21103-7314-457a-851c-6e4275031bc7",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C49",
+      "claim": "Dual-branch recommenders outperform non-recommender baselines on relevant metrics.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments demonstrate that dual-branch recommenders outperform non-recommender baselines on relevant metrics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Summary conclusion from experimental comparisons",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "ace445cd-e5bc-4fc4-8d2f-4857b7625831",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C50",
+      "claim": "This work demonstrates the potential of AMR recommenders to greatly extend the value of MALDI-TOF MS for clinical diagnostics.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this work demonstrates the potential of AMR recommenders to greatly extend the value of MALDI-TOF MS for clinical diagnostics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Overall conclusion of the study",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "28308551-6ff3-4938-ac4f-0617241afefa",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C51",
+      "claim": "The ROC-AUC measures the probability that any positive (resistant or intermediate) sample is assigned a higher predicted probability of being positive as compared to any negative (susceptible) sample.",
+      "claim_type": "EXPLICIT",
+      "source": "The area under the receiver operating characteristic curve (ROC-AUC) measures the probability that any positive (resistant or intermediate) sample is assigned a higher predicted probability of being positive as compared to any negative (susceptible) sample.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of the ROC-AUC metric",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "109ec16b-1794-46c7-8067-b62021bea3b1",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C52",
+      "claim": "The Precision at 1 of the negative class (Prec@1(-)) evaluates how often the top-ranked prediction is correct.",
+      "claim_type": "EXPLICIT",
+      "source": "The Precision at 1 of the negative class (Prec@1(-)) evaluates how often the top-ranked prediction is correct.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of the Prec@1(-) metric",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "78fc18d4-2eee-414f-95a0-ac4a9d35772f",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C53",
+      "claim": "In a scenario where the top recommended drug is always administered, Prec@1(-) corresponds to the percentage of correctly suggested treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "In a scenario where the top recommended drug is always administered, it corresponds to the percentage of correctly suggested treatments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of the Prec@1(-) metric in clinical context",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "44cce63e-a13a-4f7b-9863-bcb8171b1674",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C57",
+      "claim": "Models using nonlinear multi-layer spectrum embedders obtain considerably better performance over linear embedders.",
+      "claim_type": "EXPLICIT",
+      "source": "Models using nonlinear multi-layer spectrum embedders obtain considerably better performance over linear embedders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion from comparison shown in Appendix 3\u2014figure 3",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "7d0942d6-4908-4bdb-8ce0-8cefb69f6e97",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C58",
+      "claim": "When the question is to choose between drugs for a patient, a model designed as a recommender will outperform binary classification models trained to predict AMR for specific drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "It is illustrated that, when the question is to choose between drugs for a patient (evaluated by the patient-averaged ROC-AUC or Prec@1(-)), a model designed as a recommender will outperform binary classification models trained to predict AMR for specific drugs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from Table 3 comparison",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "5c3c2659-c5f3-4d7a-a81b-770cbb492a9d",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C59",
+      "claim": "Species-specific binary classifiers are optimal for distinguishing spectra for a specific drug.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, species-specific binary classifiers are optimal for distinguishing spectra for a specific drug.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from Table 3 showing best Species\u2013drug macro ROC-AUC for logistic regression",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "4c8b20cd-5332-4be4-b840-082c6b3f5c38",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C60",
+      "claim": "Patient-averaged metrics are more representative of AMR models' utility in clinical diagnostics.",
+      "claim_type": "EXPLICIT",
+      "source": "The crux of our case in favor of recommender models relies, hence, on the fact that patient-averaged metrics are more representative of AMR models' utility in clinical diagnostics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' argument about appropriate evaluation metrics",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "4feebce0-a5c5-4624-be30-20ec385d702b",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C61",
+      "claim": "Any gain in performance over the 'simulated expert' means that AMR signal could be mined from the spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "It is useful to note that any gain in performance over the 'simulated expert' means that AMR signal could be mined from the spectra.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Interpretation of performance relative to baseline",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "01d3dcc1-9a9d-41ac-9b16-1e7d7939d5d4",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C62",
+      "claim": "Any performance above the simulated expert level results in a real-world information gain for clinical diagnostic laboratories.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, any performance above this level results in a real-world information gain for clinical diagnostic laboratories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about practical value of performance gains",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "c37822f1-3159-48f1-8468-53cf3b6e9cfb",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C63",
+      "claim": "The transfer learning qualities of dual-branch models may be ascribed to the fact that different hospitals use much of the same drugs, allowing transferred drug embedders to expressively represent drugs out of the box.",
+      "claim_type": "EXPLICIT",
+      "source": "The transfer learning qualities of dual-branch models may be ascribed to multiple properties. First of all, since different hospitals use much of the same drugs, transferred drug embedders allow for expressively representing drugs out of the box.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' reasoning about why transfer learning works",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "ec3750eb-0817-428c-9188-fd74a7b3669a",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C64",
+      "claim": "Owing to multitask learning, even with a limited number of spectra, a considerable fine-tuning dataset may be obtained, as all available data is 'thrown on one pile'.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, owing to multitask learning, even with a limited number of spectra, a considerable fine-tuning dataset may be obtained, as all available data is 'thrown on one pile'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' reasoning about why transfer learning works",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "d06d8566-6bee-4a15-808b-968bbde0c7f7",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C65",
+      "claim": "Lowering the amount of data required is paramount to expedite the uptake of AMR models in clinical diagnostics.",
+      "claim_type": "EXPLICIT",
+      "source": "Lowering the amount of data required is paramount to expedite the uptake of AMR models in clinical diagnostics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' assessment of practical considerations",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "bf8a7828-63c3-4bc1-a9ef-493186d81399",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C66",
+      "claim": "The performance of the proposed models is still limited due to lacking a MALDI-TOF-specific learning architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that the performance of the proposed models is still limited due to (1) lacking a MALDI-TOF-specific learning architecture, (2) collection of more data, especially on rarely encountered species and drugs, and (3) inherent technological limitations of MALDI-TOF MS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' speculation about limitations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "ae9aa097-19a0-44e2-8f6b-708aa275bb0b",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C67",
+      "claim": "The performance of the proposed models is still limited due to collection of more data, especially on rarely encountered species and drugs.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that the performance of the proposed models is still limited due to (1) lacking a MALDI-TOF-specific learning architecture, (2) collection of more data, especially on rarely encountered species and drugs, and (3) inherent technological limitations of MALDI-TOF MS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' speculation about limitations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "d2883b31-4076-4419-8c81-ff31e31cfe88",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C68",
+      "claim": "The performance of the proposed models is still limited due to inherent technological limitations of MALDI-TOF MS.",
+      "claim_type": "EXPLICIT",
+      "source": "We postulate that the performance of the proposed models is still limited due to (1) lacking a MALDI-TOF-specific learning architecture, (2) collection of more data, especially on rarely encountered species and drugs, and (3) inherent technological limitations of MALDI-TOF MS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' speculation about limitations",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "02210a7e-2ac7-4a36-a628-25e847274fdb",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C69",
+      "claim": "In medical decision-making applications, effective uncertainty estimates would be an invaluable tool to aid understanding the models' predictions.",
+      "claim_type": "EXPLICIT",
+      "source": "In medical decision-making applications, effective uncertainty estimates would be an invaluable tool to aid understanding the models' predictions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' assessment of what would be valuable for medical applications",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "0356b783-dee7-4952-bfa4-74bfae01825d",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C70",
+      "claim": "Healthcare practitioners should additionally take into account host-specific factors such as patient age, medical history, and concurrent medication.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, healthcare practitioners should additionally take into account host-specific factors such as patient age, medical history, and concurrent medication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Medical knowledge about factors in treatment decisions",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "773e9e51-8269-4a05-a848-61c52ac320f9",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C71",
+      "claim": "The model is trained on the whole repertoire of antimicrobial drugs and will have learnt that broad-spectrum antibiotics are typically effective.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, as the model is trained on the whole repertoire of antimicrobial drugs, it will have learnt that broad-spectrum antibiotics are typically effective.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference about model behavior based on training data",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "8ae698fa-e264-4a70-972b-0ed2c687220d",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C72",
+      "claim": "This study serves as the first proof of concept for large MALDI-TOF-based antimicrobial drug recommenders.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, this study serves as the first proof of concept for large MALDI-TOF-based antimicrobial drug recommenders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' characterization of their contribution",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "cb273f13-561f-4449-bb6e-6de278fa4543",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C73",
+      "claim": "Per-patient metrics are most suitable for evaluating AMR recommender systems.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, we highlight the need for appropriate metrics, proposing that per-patient metrics are most suitable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' methodological recommendation",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "0b351717-e402-430d-9c66-18ea49b91060",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C74",
+      "claim": "All code supporting this study is distributed on PyPI and is packaged at https://github.com/gdewael/maldi-nn.",
+      "claim_type": "EXPLICIT",
+      "source": "All code supporting this study is distributed on PyPI and is packaged at https://github.com/gdewael/maldi-nn.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about code availability",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "d52c1835-e8af-4044-9f1d-f977d3d67a5c",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C75",
+      "claim": "The main experiments concern models that are trained on data from one hospital only (DRIAMS-A, University Hospital Basel).",
+      "claim_type": "EXPLICIT",
+      "source": "The main experiments concern models that are trained on data from one hospital only (DRIAMS-A, University Hospital Basel).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental setup",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "cfe76b76-2f99-4cf4-883a-48211cec695e",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C76",
+      "claim": "All spectra and measurements derived from the other three hospitals in DRIAMS are left out for transfer learning experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "All spectra and measurements derived from the other three hospitals in DRIAMS are left out for transfer learning experiments (see Results).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental setup",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "819eff30-fd3d-42ff-8ecd-3d4495bcc01e",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C77",
+      "claim": "Within DRIAMS-A, all spectra from before 2018 are allocated to the training set, and all spectra measured during 2018 are evenly split between validation and test set.",
+      "claim_type": "EXPLICIT",
+      "source": "Within DRIAMS-A, all spectra from before 2018 are allocated to the training set, and all spectra measured during 2018 are evenly split between validation and test set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of data splitting procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "9d6984e6-c61a-4e80-8532-cd4190ce7fcf",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C78",
+      "claim": "The split in time reflects a realistic evaluation scenario, as models trained on historical data need to generalize to new patients possibly infected by newly evolved strains.",
+      "claim_type": "EXPLICIT",
+      "source": "This split in time reflects a realistic evaluation scenario, as models trained on historical data need to generalize to new patients possibly infected by newly evolved strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Justification for the temporal data split",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "90874626-e4fb-4789-a9ae-f61f8e87f115",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C79",
+      "claim": "The training set contains 409,395 labels across 28,331 spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "The final sizes of all splits are as follows: 409,395 labels across 28,331 spectra for the training set, 76,431 labels across 4994 spectra for the validation set, and 76,133 labels across 4999 spectra for the test set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of dataset sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "5d3bf657-3826-483d-9ba5-b96673c44d04",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C80",
+      "claim": "The validation set contains 76,431 labels across 4994 spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "The final sizes of all splits are as follows: 409,395 labels across 28,331 spectra for the training set, 76,431 labels across 4994 spectra for the validation set, and 76,133 labels across 4999 spectra for the test set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of dataset sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "1d500660-b6eb-4229-ba68-5b63b9fe7c4f",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C81",
+      "claim": "The test set contains 76,133 labels across 4999 spectra.",
+      "claim_type": "EXPLICIT",
+      "source": "The final sizes of all splits are as follows: 409,395 labels across 28,331 spectra for the training set, 76,431 labels across 4994 spectra for the validation set, and 76,133 labels across 4999 spectra for the test set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of dataset sizes",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "d1ae5e1d-6e12-40bb-9caa-6f84f05a2c8b",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C82",
+      "claim": "Species-specific recommender models are created for the 25 most occurring species in DRIAMS-A.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we create species-specific recommender models for the 25 most occurring species in DRIAMS-A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of experimental setup",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "397f8e36-59f6-42ba-a05b-18893916a5c6",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C83",
+      "claim": "The test predictions of the 25 species-specific recommenders cover 4229 spectra, 56 drugs, and 69,827 AMR labels (covering 91.27% of the original test set).",
+      "claim_type": "EXPLICIT",
+      "source": "Together, the test predictions of the 25 species-specific recommenders cover 4229 spectra, 56 drugs, and 69,827 AMR labels (covering 91.27% of the original test set).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of dataset coverage",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "512587ac-1753-467e-9775-d21f40546a1c",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C84",
+      "claim": "Species\u2013drug-specific classifiers are trained for the 200 most common combinations of species and drugs in the training dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, such 'species\u2013drug-specific classifiers' are trained for the 200 most common combinations of species and drugs in the training dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of baseline experimental setup",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "46544f1b-faa0-47c5-9246-6afaf54476e3",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C85",
+      "claim": "The reduced test set for baseline comparison spans 4017 spectra, 35 drugs, and 53,503 labels (covering 70.28% of the original test set).",
+      "claim_type": "EXPLICIT",
+      "source": "This reduced test set spans 4017 spectra, 35 drugs, and 53,503 labels (covering 70.28% of the original test set).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of dataset coverage for baseline comparison",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "4e170248-f006-4394-94d9-e5e72768af65",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C86",
+      "claim": "The train set for DRIAMS-B, -C, and -D consists of 1000 randomly drawn spectra, simulating a small data scenario.",
+      "claim_type": "EXPLICIT",
+      "source": "The train set for these hospitals consists of 1000 randomly drawn spectra, simulating a small data scenario where the hospital has not spent considerable efforts in data collection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of transfer learning experimental setup",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "fa8de5cd-c212-4b82-8cbd-b71a27af7a4b",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C87",
+      "claim": "The remaining spectra for DRIAMS-B, -C, and -D are evenly split among validation and test set.",
+      "claim_type": "EXPLICIT",
+      "source": "The remaining spectra for all three hospitals are evenly split among validation and test set.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of transfer learning experimental setup",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "36524bb4-b869-4503-94f4-6f26adb0204a",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C89",
+      "claim": "All models are trained with the Adam optimizer for a maximum of 50 epochs with a batch size of 128.",
+      "claim_type": "EXPLICIT",
+      "source": "All models are trained with the Adam optimizer (Kingma and Ba, 2014) for a maximum of 50 epochs with a batch size of 128.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of training procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "6e4a6fbb-f0bc-41de-b3cc-928c2b662849",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C90",
+      "claim": "A linear learning rate warm-up over the first 250 steps is applied, after which the rate is kept constant.",
+      "claim_type": "EXPLICIT",
+      "source": "A linear learning rate warm-up over the first 250 steps is applied, after which the rate is kept constant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of training procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "313cd615-7983-4ef3-ba3a-7b1ada7429ec",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C91",
+      "claim": "Performance on the validation set is checked every tenth of an epoch.",
+      "claim_type": "EXPLICIT",
+      "source": "Because of this, performance on the validation set is checked every tenth of an epoch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of training procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "f57eaac6-38c0-4086-9ec8-bbbf09bab6c6",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C92",
+      "claim": "Training is halted early when validation ROC-AUC has not improved for 10 validation set checks.",
+      "claim_type": "EXPLICIT",
+      "source": "Training is halted early when validation ROC-AUC has not improved for 10 validation set checks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of early stopping criterion",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "401777f3-6946-4f5c-83fd-8ae2772d939d",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C93",
+      "claim": "The checkpoint of the best performing model (in terms of validation ROC-AUC) is used as the final model.",
+      "claim_type": "EXPLICIT",
+      "source": "The checkpoint of the best performing model (in terms of validation ROC-AUC) is used as the final model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of model selection procedure",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "120c148c-3c6b-46d5-8029-ef229bd78b8f",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C95",
+      "claim": "A microbial sample that is susceptible to a drug is denoted by a negative label (orange), whereas positive labels (blue) signify an intermediate or resistant combination.",
+      "claim_type": "EXPLICIT",
+      "source": "A microbial sample that is susceptible to a drug is denoted by a negative label (orange), whereas positive labels (blue) signify an intermediate or resistant combination.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Caption of Figure 1 describing the labeling scheme",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "12e74917-216c-4d8a-a419-c09f66c5bf4d",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C96",
+      "claim": "The cross-entropy loss optimizes the score to be maximal or minimal for positive or negative combinations of microbial spectra and drugs, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The cross-entropy loss optimizes this score to be maximal or minimal for positive or negative combinations of microbial spectra and drugs, respectively.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Caption of Figure 1 describing the loss function",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "7481bf4c-1cea-4bf4-834f-96fa5d2155c7",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C97",
+      "claim": "Figure 2 shows the performance of all trained models in terms of their average ROC-AUC and Prec@1(-).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 2 shows the performance of all trained models in terms of their average ROC-AUC and Prec@1(-).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Reference to Figure 2 in the text",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "92cb378e-3d55-4ad7-8256-4042a648f594",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C98",
+      "claim": "Performance differences between model configurations occupy a small margin.",
+      "claim_type": "EXPLICIT",
+      "source": "It can be seen that, in general, performance differences between model configurations occupy a small margin.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from Figure 2",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "d6091319-b960-48d8-b27c-6fecb50057be",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C99",
+      "claim": "Embedding drugs without compound information (i.e., one-hot embedding) is a competitive approach for this problem.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, embedding drugs without a compound information (i.e., one-hot embedding) is a competitive approach for this problem, resulting in the \u2013 on average \u2013 second best models in terms of ROC-AUC.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Observation from Figure 2",
+      "evidence_type": "[\"DATA\", \"IMAGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "337c7cff-812d-4112-ab87-cbb4a5d49566",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C100",
+      "claim": "Morgan fingerprints provide a compressed and preprocessed input format, the nature of which provides an apparent advantage over input representations that require more pattern extraction.",
+      "claim_type": "EXPLICIT",
+      "source": "Morgan fingerprints provide a compressed and preprocessed input format, the nature of which provides an apparent advantage over input representations that require more pattern extraction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' interpretation of why Morgan fingerprints perform well",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "5b4b35b8-31b0-4122-9d55-9d945e2c5e71",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "claim_id": "C101",
+      "claim": "The small number of different antimicrobial drugs may not be conducive to learning complex representations.",
+      "claim_type": "EXPLICIT",
+      "source": "The small number of different antimicrobial drugs may not be conducive to learning complex representations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Authors' speculation about why simpler drug representations work well",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "95136230-d7e0-4378-adb8-c33eeccdd26a",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study uses the DRIAMS dataset comprising 765,048 AMR measurements from 55,773 spectra across four hospitals and 74 drugs. Data were preprocessed into 6000-dimensional vectors, with DRIAMS-A split temporally (pre-2018 for training, 2018 for validation/test) and other hospitals reserved for transfer learning experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C18 and C75-C81 provide comprehensive documentation of the dataset characteristics, preprocessing steps, and data splitting strategy. The temporal split is well-justified (C78) for realistic evaluation. Dataset sizes are explicitly stated with appropriate detail for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The dual-branch neural network architecture with Morgan fingerprints for drug embedding and medium-sized (3.2M parameter) MLP spectrum embedders achieves superior performance compared to previous approaches. Morgan fingerprints consistently outperform other drug embedding strategies, and nonlinear multi-layer embedders substantially outperform linear baselines.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19, C21-C22, C45-C46, C57 are directly supported by experimental results shown in Figure 2 and referenced appendix figures. The performance comparisons are systematic across multiple architectures and embedding strategies. Claims C98-C101 provide reasonable interpretations of why certain architectures perform better, though these remain somewhat speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "b95634cd-9ee0-4f7f-9efc-b0becf5ec7fc",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Species-specific recommender models trained for the 25 most common species outperform general recommenders across all evaluated metrics (ROC-AUC, Prec@1(-), Macro ROC-AUC), covering 91.27% of the test set.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23 and C47 are directly supported by Table 2 comparisons showing consistent performance improvements for species-specific models. The dataset coverage (C83) is explicitly documented. However, C47 appropriately notes this conclusion is contingent on current data availability and may change with more data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "1f82884f-204e-43cb-bed7-0b05182d7be4",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Dual-branch recommenders outperform species-drug-specific classifiers (logistic regression, XGBoost, MLPs) on patient-averaged metrics (ROC-AUC, Prec@1(-)), though logistic regression achieves best performance on species-drug macro ROC-AUC. The authors argue patient-averaged metrics are more clinically relevant for drug recommendation tasks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24-C25, C49, C58-C59 are supported by Table 3 comparisons across 200 species-drug combinations covering 70.28% of test data. The metric-dependent performance differences are clearly documented. Claims C60-C62 provide reasonable justification for prioritizing patient-averaged metrics, though this represents a methodological choice rather than an empirical finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Models pre-trained on DRIAMS-A and fine-tuned on small datasets (1000 spectra) from three other hospitals (DRIAMS-B, C, D) consistently outperform models trained from scratch, demonstrating efficient transfer learning. Morgan fingerprints provide particular advantage in low-data transfer scenarios.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20, C26-C27 are supported by Figure 3 showing consistent transfer learning benefits across hospitals and sample sizes. The experimental design (C86-C87) appropriately simulates realistic low-data scenarios. Claims C63-C64 provide plausible mechanistic explanations for transfer learning success, though these remain somewhat speculative interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "75123365-853a-4444-b43d-e650b7602242",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "UMAP visualization of learned spectrum embeddings reveals that the model spontaneously groups spectra by species without explicit supervision, captures hierarchical taxonomic relationships (genus-level clustering), and shows resistance-status subclustering within species, particularly for multidrug-resistant S. epidermidis and S. aureus variants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C33 and C37 are supported by Figure 4 visualizations showing clear species clustering, taxonomic structure, and resistance-associated patterns. The observation that species clustering emerges without explicit species labels (C37) is particularly notable. However, UMAP visualizations can be sensitive to hyperparameters, and the biological interpretation of embedding structure should be considered exploratory.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "cfda1515-48aa-4212-95bc-ddb6b7260a08",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Models trained on one hospital may not transfer well to other hospitals due to differences in protocols, spatial epidemiology, and instrument variation. Prior work on DRIAMS showed hospital-specific effects with best performance when training and testing on the same hospital.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 appropriately cite prior work (Weis et al., 2022; Humphries, 2022) documenting hospital-specific effects. The reasoning about sources of variation (protocols, epidemiology, instruments) is well-grounded in domain knowledge. This provides important context for the transfer learning experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "1d39d8c8-35fd-4e6c-b08d-04b87bbb096b",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors identify multiple factors limiting model performance: labeling errors from MIC measurement variability and changing EUCAST norms, lack of MALDI-TOF-specific architectures, insufficient data for rare species/drugs, and inherent technological limitations of MALDI-TOF MS.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C38-C39 provide reasonable concerns about label quality, supported by domain knowledge about MIC measurement error and evolving clinical standards. However, no quantitative assessment of labeling error rates is provided. Claims C66-C68 are explicitly speculative (\"we postulate\") about performance limitations without empirical validation of these specific factors' contributions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "6901f223-2eb0-439c-95d3-2746fb5e0e04",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors discuss important limitations for clinical deployment: bacterial resistance evolution will degrade model performance over time, the model may overrecommend broad-spectrum antibiotics (conflicting with stewardship goals), and clinical decisions require incorporating patient-specific factors beyond the model's scope. Uncertainty quantification would be valuable for medical applications.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44 and C69-C71 represent thoughtful discussion of practical limitations and potential negative consequences. C40 is established biological knowledge. Claims C42-C44 about potential overrecommendation of broad-spectrum antibiotics are reasonable inferences but remain speculative without empirical validation. C69-C70 appropriately identify important considerations for clinical implementation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "a9209d30-3e71-4787-954f-c660e62183b1",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The study employs patient-averaged (spectrum-macro) metrics: ROC-AUC measuring ranking quality of resistance predictions, and Prec@1(-) measuring correctness of top-ranked susceptible drug recommendations, which corresponds to treatment success rate if the top recommendation is always administered.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51-C53 provide clear definitions of the evaluation metrics used. The ROC-AUC definition (C51) is standard. The Prec@1(-) metric (C52-C53) is appropriately defined and its clinical interpretation is reasonable, though the assumption that \"top recommendation is always administered\" (C53) is somewhat simplified relative to actual clinical practice.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "250f0a1f-53c0-48bd-953a-38010716fdb9",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "All models were trained using Adam optimizer for maximum 50 epochs with batch size 128, linear learning rate warmup over 250 steps, validation checks every 0.1 epochs, and early stopping after 10 checks without validation ROC-AUC improvement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C89-C93 provide detailed training procedures that appear standard and reasonable. The frequent validation checks (every 0.1 epoch, C91) are justified given that each epoch involves multiple passes over individual samples. Early stopping criterion (C92-C93) is appropriate. These details support reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "8ccc5c49-021d-44cd-b49c-5fff83782c15",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors conclude this work represents the first proof-of-concept for large-scale MALDI-TOF-based antimicrobial drug recommenders, demonstrating potential to greatly extend clinical diagnostic value of MALDI-TOF MS, with emphasis on using per-patient metrics for evaluation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50, C72-C73 represent reasonable summary conclusions supported by the experimental results. The characterization as \"first proof of concept\" (C72) for large-scale recommenders is justified given prior work focused on specific species-drug combinations (C11). The emphasis on per-patient metrics (C73) is a methodological contribution, though the choice of metrics involves subjective judgment about clinical relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "ab956442-863d-47ac-849f-141bb17151ce",
+      "content_id": "ad574744-d63d-4d43-b40e-315e92e2b993",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes context: MALDI-TOF MS is routinely used for rapid species identification requiring only overnight culture; AMR caused 1.27 million deaths in 2019 and could reach 10 million by 2050; some resistance mechanisms fall outside MALDI-TOF's m/z range, but prior studies show some resistant strains can be predicted; previous work focused on specific species-drug combinations; the DRIAMS dataset enables unprecedented scale for AMR prediction studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C13 provide appropriate background context with proper citations. Mortality statistics (C5-C7) are from cited sources. Claims about MALDI-TOF limitations (C8) and prior work scope (C10-C11) are appropriately referenced. The characterization of DRIAMS enabling \"unprecedented scale\" (C13) is reasonable given the dataset's breadth. These claims establish motivation but are not primary results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "6bc3036b-528b-464b-b059-0f193ea46a4a",
+      "content_id": "2615cc72-e11e-4164-aeb8-52cbe21f5e7a",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The dual-branch recommender model architecture, which separately embeds MALDI-TOF spectra and drug information before combining them, delivers considerably higher performance compared to previous single species-drug approaches and outperforms baseline methods on patient-averaged metrics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding, stating 'The authors showed consistent performance of their strategy to predict antibiotic susceptibility' and noting that 'the dual neural network outperform[s] the single spectrum-drug network.' The editor describes the evidence as 'convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "01d0be9e-eb05-44ef-8f95-f01ce863ccda",
+      "content_id": "2615cc72-e11e-4164-aeb8-52cbe21f5e7a",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Species-specific recommender models (trained for the 25 most common species across multiple drugs) deliver better predictions across all evaluated metrics compared to general recommenders trained on all species, achieving ROC-AUC scores up to 0.9.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers highlight this as a strength, noting 'Authors developed species-specific recommenders as an intermediate layer between the single recommender system and single species-antibiotic models. This intermediate approach achieved maximum performance (with one type of the species-specific recommender achieving a 0.9 ROC AUC).'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "ef3a65b4-a8a4-4580-8e5d-dc9a4ebb3773",
+      "content_id": "2615cc72-e11e-4164-aeb8-52cbe21f5e7a",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Models pre-trained on DRIAMS-A data can be efficiently fine-tuned to data from other hospitals with limited samples (as few as 1000 spectra), outperforming models trained from scratch, with Morgan fingerprints providing the best structural inductive bias for transfer learning.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise this finding as a strength: 'Authors showed that data collected in one location can be leveraged to improve the performance of models generated using a smaller number of samples collected at a different location. This result may encourage researchers to optimize data integration to reduce the burden of data generation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "e8dd950c-47f8-49a7-bf20-2fc3df9dca45",
+      "content_id": "2615cc72-e11e-4164-aeb8-52cbe21f5e7a",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Among drug embedding strategies tested, Morgan fingerprints typically outperform other approaches including one-hot embeddings, SMILES-based methods, and image-based representations, likely due to their compressed and preprocessed format that provides structural information.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note 'The authors tested multiple combinations of embedders for the mass spectra and antibiotics while using different metrics to evaluate the performance' and found 'remarkably good performance for all tested metrics,' implicitly accepting the comparative findings about Morgan fingerprints.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "72342b86-8a04-4f6b-bebb-34718c068f7c",
+      "content_id": "2615cc72-e11e-4164-aeb8-52cbe21f5e7a",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Medium-sized nonlinear multi-layer perceptron spectrum embedders (3.2M parameters) generally perform best compared to smaller, larger, or linear alternatives for encoding MALDI-TOF spectra.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge 'Models trained using different spectrum embedder-antibiotic embedder combinations had remarkably good performance for all tested metrics. The average ROC AUC scores for global and species-specific evaluations were above 0.8,' accepting the comparative performance findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "e3438807-e128-42c3-b468-ba5f8de9aa85",
+      "content_id": "2615cc72-e11e-4164-aeb8-52cbe21f5e7a",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "UMAP visualization of learned embeddings shows that the model groups spectra primarily by species (with hierarchical genus-level relationships) and within species clusters, samples are often grouped by resistance status, with specific examples like multidrug-resistant S. epidermidis forming subclusters and ciprofloxacin-resistant E. coli forming a distinct tail.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the model's performance, they explicitly identify a critical weakness: 'Authors do not offer information about the model features associated with resistance' and request that 'authors should at least identify mass spectra peaks highly associated with resistance profiles.' This indicates the embedding visualizations alone are insufficient for mechanistic understanding.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "bb12c6f6-8d2a-4fcc-8b5f-c2406a14e005",
+      "content_id": "2615cc72-e11e-4164-aeb8-52cbe21f5e7a",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "This work serves as the first proof of concept for large-scale MALDI-TOF-based antimicrobial drug recommenders and demonstrates their potential to greatly extend the value of MALDI-TOF MS for clinical diagnostics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly states 'This valuable study presents a machine learning model to recommend effective antimicrobial drugs from patients' samples analyzed with mass spectrometry' and 'This work will be of interest to computational biologists, microbiologists, and clinicians,' affirming the overall contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "a3a50ce5-b3a5-41de-8779-2d616bf4d2f9",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "c8a5e6c6-ea57-416b-af1f-81ade4b03ada",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "b21daaeb-98bf-4106-8e47-7274cd6d959c",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "29a57315-0ffa-49c6-9105-67065b05eacc",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "7422f5e3-9593-4143-bfe4-fbb723b2e869",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "d52c1835-e8af-4044-9f1d-f977d3d67a5c",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "cfe76b76-2f99-4cf4-883a-48211cec695e",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "819eff30-fd3d-42ff-8ecd-3d4495bcc01e",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "9d6984e6-c61a-4e80-8532-cd4190ce7fcf",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "90874626-e4fb-4789-a9ae-f61f8e87f115",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "5d3bf657-3826-483d-9ba5-b96673c44d04",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "1d500660-b6eb-4229-ba68-5b63b9fe7c4f",
+      "result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a"
+    },
+    {
+      "claim_id": "b768cb78-8195-4a08-8083-56039d6b235b",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "a1cd64c3-1f4d-4ed4-b5ae-0e1ed9325be6",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "9f6fdac6-4806-4509-8388-536711f6e26b",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "75bd4fb6-dc46-4a1f-91df-f93863c290f2",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "8857ba47-bf4b-4a83-b1ce-14bae039d0fa",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "44cce63e-a13a-4f7b-9863-bcb8171b1674",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "7481bf4c-1cea-4bf4-834f-96fa5d2155c7",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "92cb378e-3d55-4ad7-8256-4042a648f594",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "d6091319-b960-48d8-b27c-6fecb50057be",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "337c7cff-812d-4112-ab87-cbb4a5d49566",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "5b4b35b8-31b0-4122-9d55-9d945e2c5e71",
+      "result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb"
+    },
+    {
+      "claim_id": "a2dbd8b6-25cc-4f99-a633-6aa093c2f271",
+      "result_id": "b95634cd-9ee0-4f7f-9efc-b0becf5ec7fc"
+    },
+    {
+      "claim_id": "d3021e48-5d9c-42f6-8d5a-3900fe6f4673",
+      "result_id": "b95634cd-9ee0-4f7f-9efc-b0becf5ec7fc"
+    },
+    {
+      "claim_id": "d1ae5e1d-6e12-40bb-9caa-6f84f05a2c8b",
+      "result_id": "b95634cd-9ee0-4f7f-9efc-b0becf5ec7fc"
+    },
+    {
+      "claim_id": "397f8e36-59f6-42ba-a05b-18893916a5c6",
+      "result_id": "b95634cd-9ee0-4f7f-9efc-b0becf5ec7fc"
+    },
+    {
+      "claim_id": "07d1da0a-0d00-49c4-b3b4-f8f3b2c5e5a6",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "87453bde-ecd4-423c-b210-1ae35beae486",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "b9a21103-7314-457a-851c-6e4275031bc7",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "7d0942d6-4908-4bdb-8ce0-8cefb69f6e97",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "5c3c2659-c5f3-4d7a-a81b-770cbb492a9d",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "4c8b20cd-5332-4be4-b840-082c6b3f5c38",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "4feebce0-a5c5-4624-be30-20ec385d702b",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "01d3dcc1-9a9d-41ac-9b16-1e7d7939d5d4",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "512587ac-1753-467e-9775-d21f40546a1c",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "46544f1b-faa0-47c5-9246-6afaf54476e3",
+      "result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4"
+    },
+    {
+      "claim_id": "5d0d52cb-f99e-43bb-a2f8-ba15067fe2db",
+      "result_id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6"
+    },
+    {
+      "claim_id": "76d99d19-0f61-4a30-a995-c95531dc9b19",
+      "result_id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6"
+    },
+    {
+      "claim_id": "1933b13c-b2bb-478a-99f0-51ca819d393e",
+      "result_id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6"
+    },
+    {
+      "claim_id": "fb923f0b-6ba6-42b2-8f35-4a026a705930",
+      "result_id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6"
+    },
+    {
+      "claim_id": "c37822f1-3159-48f1-8468-53cf3b6e9cfb",
+      "result_id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6"
+    },
+    {
+      "claim_id": "ec3750eb-0817-428c-9188-fd74a7b3669a",
+      "result_id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6"
+    },
+    {
+      "claim_id": "4e170248-f006-4394-94d9-e5e72768af65",
+      "result_id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6"
+    },
+    {
+      "claim_id": "fa8de5cd-c212-4b82-8cbd-b71a27af7a4b",
+      "result_id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6"
+    },
+    {
+      "claim_id": "dd9cbaa2-fccc-4340-a284-479f2500c80d",
+      "result_id": "75123365-853a-4444-b43d-e650b7602242"
+    },
+    {
+      "claim_id": "ff9cfa3d-d81b-44de-a1ef-9a1335e6b445",
+      "result_id": "75123365-853a-4444-b43d-e650b7602242"
+    },
+    {
+      "claim_id": "356efc42-f8a2-4c6f-88ca-18cf7e9facc8",
+      "result_id": "75123365-853a-4444-b43d-e650b7602242"
+    },
+    {
+      "claim_id": "0950d1bd-a80f-4947-8ce2-705ab24f384c",
+      "result_id": "75123365-853a-4444-b43d-e650b7602242"
+    },
+    {
+      "claim_id": "2ff8d95a-320c-4415-898b-dc02ce21be32",
+      "result_id": "75123365-853a-4444-b43d-e650b7602242"
+    },
+    {
+      "claim_id": "02287654-6efe-4ee7-9f7b-a31b3ebe235b",
+      "result_id": "75123365-853a-4444-b43d-e650b7602242"
+    },
+    {
+      "claim_id": "8055bc87-e922-4149-9cc5-48fda6c39eae",
+      "result_id": "75123365-853a-4444-b43d-e650b7602242"
+    },
+    {
+      "claim_id": "325d7261-7e46-4ff4-b510-fe706db8fd94",
+      "result_id": "cfda1515-48aa-4212-95bc-ddb6b7260a08"
+    },
+    {
+      "claim_id": "758e2ed5-f534-4d3d-9d54-81b344f8e17a",
+      "result_id": "cfda1515-48aa-4212-95bc-ddb6b7260a08"
+    },
+    {
+      "claim_id": "144fadf5-1c75-4b0f-a418-7b8aa764fc90",
+      "result_id": "cfda1515-48aa-4212-95bc-ddb6b7260a08"
+    },
+    {
+      "claim_id": "87e63cc9-10be-42d7-95b7-4eb872aedd7d",
+      "result_id": "1d39d8c8-35fd-4e6c-b08d-04b87bbb096b"
+    },
+    {
+      "claim_id": "e7a66c18-bdde-402c-bbec-415ed2386f34",
+      "result_id": "1d39d8c8-35fd-4e6c-b08d-04b87bbb096b"
+    },
+    {
+      "claim_id": "bf8a7828-63c3-4bc1-a9ef-493186d81399",
+      "result_id": "1d39d8c8-35fd-4e6c-b08d-04b87bbb096b"
+    },
+    {
+      "claim_id": "ae9aa097-19a0-44e2-8f6b-708aa275bb0b",
+      "result_id": "1d39d8c8-35fd-4e6c-b08d-04b87bbb096b"
+    },
+    {
+      "claim_id": "d2883b31-4076-4419-8c81-ff31e31cfe88",
+      "result_id": "1d39d8c8-35fd-4e6c-b08d-04b87bbb096b"
+    },
+    {
+      "claim_id": "78b200c6-32a5-4233-a2f3-70ee3fdb65fa",
+      "result_id": "6901f223-2eb0-439c-95d3-2746fb5e0e04"
+    },
+    {
+      "claim_id": "179439f3-a734-4634-abbe-eedd815af33b",
+      "result_id": "6901f223-2eb0-439c-95d3-2746fb5e0e04"
+    },
+    {
+      "claim_id": "d9d1ba91-1807-4141-8ad0-45908074400d",
+      "result_id": "6901f223-2eb0-439c-95d3-2746fb5e0e04"
+    },
+    {
+      "claim_id": "b2edf29b-a188-47d8-9114-b196427355dd",
+      "result_id": "6901f223-2eb0-439c-95d3-2746fb5e0e04"
+    },
+    {
+      "claim_id": "acb0d45c-ecad-4f70-9022-f24bd8705b51",
+      "result_id": "6901f223-2eb0-439c-95d3-2746fb5e0e04"
+    },
+    {
+      "claim_id": "02210a7e-2ac7-4a36-a628-25e847274fdb",
+      "result_id": "6901f223-2eb0-439c-95d3-2746fb5e0e04"
+    },
+    {
+      "claim_id": "0356b783-dee7-4952-bfa4-74bfae01825d",
+      "result_id": "6901f223-2eb0-439c-95d3-2746fb5e0e04"
+    },
+    {
+      "claim_id": "773e9e51-8269-4a05-a848-61c52ac320f9",
+      "result_id": "6901f223-2eb0-439c-95d3-2746fb5e0e04"
+    },
+    {
+      "claim_id": "28308551-6ff3-4938-ac4f-0617241afefa",
+      "result_id": "a9209d30-3e71-4787-954f-c660e62183b1"
+    },
+    {
+      "claim_id": "109ec16b-1794-46c7-8067-b62021bea3b1",
+      "result_id": "a9209d30-3e71-4787-954f-c660e62183b1"
+    },
+    {
+      "claim_id": "78fc18d4-2eee-414f-95a0-ac4a9d35772f",
+      "result_id": "a9209d30-3e71-4787-954f-c660e62183b1"
+    },
+    {
+      "claim_id": "36524bb4-b869-4503-94f4-6f26adb0204a",
+      "result_id": "250f0a1f-53c0-48bd-953a-38010716fdb9"
+    },
+    {
+      "claim_id": "6e4a6fbb-f0bc-41de-b3cc-928c2b662849",
+      "result_id": "250f0a1f-53c0-48bd-953a-38010716fdb9"
+    },
+    {
+      "claim_id": "313cd615-7983-4ef3-ba3a-7b1ada7429ec",
+      "result_id": "250f0a1f-53c0-48bd-953a-38010716fdb9"
+    },
+    {
+      "claim_id": "f57eaac6-38c0-4086-9ec8-bbbf09bab6c6",
+      "result_id": "250f0a1f-53c0-48bd-953a-38010716fdb9"
+    },
+    {
+      "claim_id": "401777f3-6946-4f5c-83fd-8ae2772d939d",
+      "result_id": "250f0a1f-53c0-48bd-953a-38010716fdb9"
+    },
+    {
+      "claim_id": "ace445cd-e5bc-4fc4-8d2f-4857b7625831",
+      "result_id": "8ccc5c49-021d-44cd-b49c-5fff83782c15"
+    },
+    {
+      "claim_id": "8ae698fa-e264-4a70-972b-0ed2c687220d",
+      "result_id": "8ccc5c49-021d-44cd-b49c-5fff83782c15"
+    },
+    {
+      "claim_id": "cb273f13-561f-4449-bb6e-6de278fa4543",
+      "result_id": "8ccc5c49-021d-44cd-b49c-5fff83782c15"
+    },
+    {
+      "claim_id": "5d9161f1-23c0-421a-91a7-a2bc8f9aa8d3",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "4836eaf4-2cd2-47c2-8988-e0907d906c7d",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "06d14878-c06d-4fd5-bceb-fd830c23b527",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "407790a1-35a8-443e-ab6c-7141e9299846",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "0e14557b-ca43-4a4f-90bf-cc346c4a45f4",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "fcb2f614-06e2-4495-a7ad-89f4c8bf724c",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "4be7d0b5-de9c-4748-964e-3a8f7d4d7afb",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "cd84140b-2cd3-4edb-bd7e-1ea680828721",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "c4319a0a-afdc-4b46-b842-d2a66e74a241",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "9aa8b89f-f68c-4abe-80a5-a1ca1860be2f",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "c18950d3-8847-4b64-ba7a-3c144b9fbf03",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "9be1b1c0-70e9-4d3b-a0ad-7fdde05c49c2",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "6cec8f17-bb47-4b8b-ac3c-338e64baff15",
+      "result_id": "ab956442-863d-47ac-849f-141bb17151ce"
+    },
+    {
+      "claim_id": "b768cb78-8195-4a08-8083-56039d6b235b",
+      "result_id": "6bc3036b-528b-464b-b059-0f193ea46a4a"
+    },
+    {
+      "claim_id": "07d1da0a-0d00-49c4-b3b4-f8f3b2c5e5a6",
+      "result_id": "6bc3036b-528b-464b-b059-0f193ea46a4a"
+    },
+    {
+      "claim_id": "b9a21103-7314-457a-851c-6e4275031bc7",
+      "result_id": "6bc3036b-528b-464b-b059-0f193ea46a4a"
+    },
+    {
+      "claim_id": "7d0942d6-4908-4bdb-8ce0-8cefb69f6e97",
+      "result_id": "6bc3036b-528b-464b-b059-0f193ea46a4a"
+    },
+    {
+      "claim_id": "a2dbd8b6-25cc-4f99-a633-6aa093c2f271",
+      "result_id": "01d0be9e-eb05-44ef-8f95-f01ce863ccda"
+    },
+    {
+      "claim_id": "d3021e48-5d9c-42f6-8d5a-3900fe6f4673",
+      "result_id": "01d0be9e-eb05-44ef-8f95-f01ce863ccda"
+    },
+    {
+      "claim_id": "d1ae5e1d-6e12-40bb-9caa-6f84f05a2c8b",
+      "result_id": "01d0be9e-eb05-44ef-8f95-f01ce863ccda"
+    },
+    {
+      "claim_id": "397f8e36-59f6-42ba-a05b-18893916a5c6",
+      "result_id": "01d0be9e-eb05-44ef-8f95-f01ce863ccda"
+    },
+    {
+      "claim_id": "5d0d52cb-f99e-43bb-a2f8-ba15067fe2db",
+      "result_id": "ef3a65b4-a8a4-4580-8e5d-dc9a4ebb3773"
+    },
+    {
+      "claim_id": "76d99d19-0f61-4a30-a995-c95531dc9b19",
+      "result_id": "ef3a65b4-a8a4-4580-8e5d-dc9a4ebb3773"
+    },
+    {
+      "claim_id": "1933b13c-b2bb-478a-99f0-51ca819d393e",
+      "result_id": "ef3a65b4-a8a4-4580-8e5d-dc9a4ebb3773"
+    },
+    {
+      "claim_id": "fb923f0b-6ba6-42b2-8f35-4a026a705930",
+      "result_id": "ef3a65b4-a8a4-4580-8e5d-dc9a4ebb3773"
+    },
+    {
+      "claim_id": "c37822f1-3159-48f1-8468-53cf3b6e9cfb",
+      "result_id": "ef3a65b4-a8a4-4580-8e5d-dc9a4ebb3773"
+    },
+    {
+      "claim_id": "ec3750eb-0817-428c-9188-fd74a7b3669a",
+      "result_id": "ef3a65b4-a8a4-4580-8e5d-dc9a4ebb3773"
+    },
+    {
+      "claim_id": "a1cd64c3-1f4d-4ed4-b5ae-0e1ed9325be6",
+      "result_id": "e8dd950c-47f8-49a7-bf20-2fc3df9dca45"
+    },
+    {
+      "claim_id": "8857ba47-bf4b-4a83-b1ce-14bae039d0fa",
+      "result_id": "e8dd950c-47f8-49a7-bf20-2fc3df9dca45"
+    },
+    {
+      "claim_id": "d6091319-b960-48d8-b27c-6fecb50057be",
+      "result_id": "e8dd950c-47f8-49a7-bf20-2fc3df9dca45"
+    },
+    {
+      "claim_id": "337c7cff-812d-4112-ab87-cbb4a5d49566",
+      "result_id": "e8dd950c-47f8-49a7-bf20-2fc3df9dca45"
+    },
+    {
+      "claim_id": "9f6fdac6-4806-4509-8388-536711f6e26b",
+      "result_id": "72342b86-8a04-4f6b-bebb-34718c068f7c"
+    },
+    {
+      "claim_id": "75bd4fb6-dc46-4a1f-91df-f93863c290f2",
+      "result_id": "72342b86-8a04-4f6b-bebb-34718c068f7c"
+    },
+    {
+      "claim_id": "44cce63e-a13a-4f7b-9863-bcb8171b1674",
+      "result_id": "72342b86-8a04-4f6b-bebb-34718c068f7c"
+    },
+    {
+      "claim_id": "dd9cbaa2-fccc-4340-a284-479f2500c80d",
+      "result_id": "e3438807-e128-42c3-b468-ba5f8de9aa85"
+    },
+    {
+      "claim_id": "ff9cfa3d-d81b-44de-a1ef-9a1335e6b445",
+      "result_id": "e3438807-e128-42c3-b468-ba5f8de9aa85"
+    },
+    {
+      "claim_id": "356efc42-f8a2-4c6f-88ca-18cf7e9facc8",
+      "result_id": "e3438807-e128-42c3-b468-ba5f8de9aa85"
+    },
+    {
+      "claim_id": "0950d1bd-a80f-4947-8ce2-705ab24f384c",
+      "result_id": "e3438807-e128-42c3-b468-ba5f8de9aa85"
+    },
+    {
+      "claim_id": "2ff8d95a-320c-4415-898b-dc02ce21be32",
+      "result_id": "e3438807-e128-42c3-b468-ba5f8de9aa85"
+    },
+    {
+      "claim_id": "02287654-6efe-4ee7-9f7b-a31b3ebe235b",
+      "result_id": "e3438807-e128-42c3-b468-ba5f8de9aa85"
+    },
+    {
+      "claim_id": "8055bc87-e922-4149-9cc5-48fda6c39eae",
+      "result_id": "e3438807-e128-42c3-b468-ba5f8de9aa85"
+    },
+    {
+      "claim_id": "ace445cd-e5bc-4fc4-8d2f-4857b7625831",
+      "result_id": "bb12c6f6-8d2a-4fcc-8b5f-c2406a14e005"
+    },
+    {
+      "claim_id": "8ae698fa-e264-4a70-972b-0ed2c687220d",
+      "result_id": "bb12c6f6-8d2a-4fcc-8b5f-c2406a14e005"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2412de61-0a19-4b7c-be4b-0b1844d50513",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "b95634cd-9ee0-4f7f-9efc-b0becf5ec7fc",
+      "peer_result_id": "01d0be9e-eb05-44ef-8f95-f01ce863ccda",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on species-specific recommender performance (C23, C47, C82, C83). Both evaluations find this approach well-supported, with reviewers highlighting it as a strength achieving 0.9 ROC AUC. OpenEval notes the contingency on data availability while reviewers emphasize the intermediate approach's maximum performance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "5f7f636a-b3b5-4a15-9bba-316536414e54",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "75123365-853a-4444-b43d-e650b7602242",
+      "peer_result_id": "e3438807-e128-42c3-b468-ba5f8de9aa85",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address embedding visualizations (C28-C33, C37) but with different conclusions. OpenEval finds the claims SUPPORTED, noting clear species clustering and taxonomic structure. Peer reviewers mark UNCERTAIN, explicitly requesting mechanistic features and identifying lack of resistance-associated peak information as a critical weakness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "13804c50-5622-4c54-bd27-72c5c30d187e",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "ca9a8599-c9f4-4bdb-a666-8fd8228916b6",
+      "peer_result_id": "ef3a65b4-a8a4-4580-8e5d-dc9a4ebb3773",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on transfer learning benefits (C20, C26, C27, C48, C63, C64). Both evaluations are SUPPORTED. Reviewers praise this as encouraging data integration across locations. OpenEval notes the mechanistic explanations (C63-C64) remain somewhat speculative but finds the experimental design appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "dc6ff300-1b31-410e-84a4-a431e8b07ea8",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "8ccc5c49-021d-44cd-b49c-5fff83782c15",
+      "peer_result_id": "bb12c6f6-8d2a-4fcc-8b5f-c2406a14e005",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both affirm the overall contribution and proof-of-concept nature (C50, C72). OpenEval finds it SUPPORTED as first large-scale recommender. Editor explicitly validates the work as valuable for computational biologists, microbiologists, and clinicians, confirming the contribution's significance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "b3fa98ca-52ab-4f18-ad49-e39186c69af3",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb",
+      "peer_result_id": "e8dd950c-47f8-49a7-bf20-2fc3df9dca45",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on architecture comparisons (C21, C46, C99, C100). Both SUPPORTED. Reviewers note remarkably good performance across embedder combinations and dual network superiority. OpenEval finds systematic comparisons in Figure 2 support claims but notes interpretations (C98-C101) remain somewhat speculative.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "75aeef89-33e5-40b6-ba9f-c0b24f8d177d",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb",
+      "peer_result_id": "72342b86-8a04-4f6b-bebb-34718c068f7c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on embedder performance (C22, C45, C57). Both SUPPORTED. Reviewers acknowledge ROC AUC scores above 0.8 for global and species-specific evaluations. OpenEval finds Figure 2 and appendix figures directly support these comparative performance claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "c5b6c65a-d949-49c9-8adb-0e717da1225d",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "1f82884f-204e-43cb-bed7-0b05182d7be4",
+      "peer_result_id": "6bc3036b-528b-464b-b059-0f193ea46a4a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on dual network performance (C24, C49, C58). Both SUPPORTED. Reviewers explicitly affirm consistent performance and dual network superiority. OpenEval notes Table 3 comparisons across 200 species-drug combinations support these claims, with metric-dependent differences clearly documented.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "acce9c20-669e-4dc9-a142-34cd890e5ede",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "27f5bbf9-bdd8-4d24-97e5-f4e688d47acb",
+      "peer_result_id": "6bc3036b-528b-464b-b059-0f193ea46a4a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on C19 (dual network architecture performance). Both SUPPORTED. Reviewers note dual network outperforms single spectrum-drug network. OpenEval finds systematic experimental results in Figure 2 support this claim along with other architecture comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "cb4e4dbe-ef8b-4e21-b51c-6a285fa4e4ff",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "95136230-d7e0-4378-adb8-c33eeccdd26a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates dataset documentation and preprocessing (C14-C18, C75-C81) as SUPPORTED with comprehensive detail and well-justified temporal split. No corresponding peer review evaluation found for these methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "ca10fbdc-752a-4a81-8a3d-ddd9248ea159",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "cfda1515-48aa-4212-95bc-ddb6b7260a08",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates citations about hospital-specific effects (C34-C36) as SUPPORTED, noting appropriate references to prior work and domain knowledge. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "561479bd-4af8-4c96-9b26-a7fdf92cd221",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1d39d8c8-35fd-4e6c-b08d-04b87bbb096b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval marks label quality concerns (C38-C39, C66-C68) as UNCERTAIN, noting reasonable concerns but lack of quantitative assessment and explicitly speculative postulations. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "7e9cb043-4c28-4600-9b9b-cfd37882efa0",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "6901f223-2eb0-439c-95d3-2746fb5e0e04",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates practical limitations and negative consequences (C40-C44, C69-C71) as SUPPORTED, noting thoughtful discussion though some inferences remain speculative without empirical validation. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "3a58d31a-f31a-4f76-99de-403a9f386d5d",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "a9209d30-3e71-4787-954f-c660e62183b1",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates metric definitions (C51-C53) as SUPPORTED with clear standard definitions, though notes the clinical interpretation assumption is somewhat simplified. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "b755887a-d14a-4164-93a9-abfdd08c565d",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "250f0a1f-53c0-48bd-953a-38010716fdb9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates training procedures (C89-C93) as SUPPORTED with detailed, standard, and reasonable methodology supporting reproducibility. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    },
+    {
+      "id": "8c7b18fb-c5ba-4dd5-9eaa-83a1688e3aa0",
+      "submission_id": "2f75be94-4433-4c62-b979-95a3d0f0f5c6",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "ab956442-863d-47ac-849f-141bb17151ce",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background and motivation claims (C1-C13) as SUPPORTED with appropriate citations and context, though notes these are not primary results. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:57:50.122813Z"
+    }
+  ]
+}

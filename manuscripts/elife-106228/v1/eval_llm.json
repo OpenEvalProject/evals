@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Disulfide crosslinking was used to constrain the neck linker in forward (rear head-like, C222/C334) and backward (front head-like, C47/C328) orientations in monomeric kinesin with high efficiency (97% and 87%, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 describe the experimental design and crosslinking efficiency measurements. The methodology is clearly described with specific residue positions, and crosslinking efficiency was quantified by SDS-PAGE (Figure 1D). The approach is sound for constraining neck linker orientation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Neck linker crosslinking in both forward and backward orientations dramatically reduces the microtubule-activated ATPase rate (kcat) by more than 10-fold under oxidized conditions compared to reduced conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 present steady-state ATPase measurements showing that both crosslinks reduce kcat from ~27-32 ATP/s (reduced) to ~1.5-2.2 ATP/s (oxidized). The data are presented with error estimates (Figure 1E, Table 1) and demonstrate that neck linker constraints inhibit specific mechanochemical steps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The rear head crosslink (C222/C334) reduces ATP dissociation rate (k-1) by 30-fold without significantly affecting ATP binding rate (k+1), while the front head crosslink (C47/C328) has minimal effect on ATP binding kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 present pre-steady-state kinetic measurements of ATP binding/dissociation. The data show differential effects: rear head crosslink dramatically reduces k-1 (117\u21923.7 s\u207b\u00b9) with modest effect on k+1, while front head crosslink shows similar modest reductions in both rates. The measurements are from stopped-flow experiments with appropriate controls (Figure 2A-B, Table 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The E236A mutation creates a hydrolysis-deficient kinesin that maintains normal ATP binding (k+1 ~5.6 s\u207b\u00b9\u03bcM\u207b\u00b9) but has a 140-fold reduced ATP dissociation rate (k-1 = 0.65 s\u207b\u00b9) compared to wild-type monomer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 characterize the E236A mutant using both stopped-flow and smFRET measurements. The mutation's effect on ATP hydrolysis is supported by prior citations, and the measured kinetic parameters are consistent between methods. The smFRET approach (Figure 2D-F) provides direct measurement of ATP off-rate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The front head crosslink reduces microtubule dissociation rate (k2) by 7-18 fold, while the rear head crosslink has minimal effect on microtubule dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 present microtubule dissociation measurements using both light scattering (k2) and single-molecule fluorescence (k2_SMF). The front head crosslink shows consistent reduction in both assays (7-fold by light scattering, 18-fold by SMF), while rear head crosslink shows no significant change or slight increase. The complementary methods strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A looser backward crosslink (C47/C335) that allows partial neck-linker docking shows intermediate reduction in k2 (2-fold), suggesting that neck-linker docking is the gatekeeper and that partial docking is sufficient to half-open the gate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 present data from an alternative crosslinking scheme that tests the role of neck-linker docking. The intermediate phenotype (2-fold vs 7-fold reduction) supports the mechanistic interpretation. However, the conclusion about 'half-opening' is somewhat speculative and would benefit from additional structural or functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The C4/C330 crosslink between the N-terminal cover strand and neck linker does not affect ATP dissociation rate, indicating that interaction of the neck linker with the head (not the cover strand) is responsible for reducing ATP off-rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 present a control experiment testing an alternative crosslinking position. The lack of effect on k-1 (148\u219296 s\u207b\u00b9) supports the interpretation that head-neck linker interaction is critical. This is a well-designed control that strengthens the mechanistic conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The E236A-WT heterodimer adopts a stable two-head-bound state with the E236A head in the rear position and the WT head in the front position, as demonstrated by FRET measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 establish the configuration of the heterodimer using smFRET with different labeling schemes. The complementary labeling patterns (90% vs 10% FRET) provide strong evidence for the proposed configuration. This is essential for interpreting subsequent kinetic measurements on the heterodimer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The front WT head of the E236A-WT heterodimer shows suppressed ATPase activity (4.6 ATP/s per head) but maintains normal ATP binding kinetics (k+1 = 5.3 \u03bcM\u207b\u00b9s\u207b\u00b9, k-1 = 92 s\u207b\u00b9), indicating that backward strain on the neck linker does not affect ATP binding/dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 present measurements on the front head of the heterodimer. The ATP binding kinetics are similar to unconstrained monomer, supporting the conclusion that backward strain doesn't affect this step. The suppressed ATPase is consistent with gating at a post-binding step. The measurements use appropriate controls and complementary methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The E236A rear head of the heterodimer shows normal ATP binding (k+1 = 4.4 \u03bcM\u207b\u00b9s\u207b\u00b9) but dramatically reduced ATP dissociation rate (k-1 = 0.015 s\u207b\u00b9), 42-fold lower than E236A monomer, indicating that forward strain prevents nucleotide release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 present smFRET measurements of the rear head showing that forward strain dramatically reduces ATP off-rate. The comparison to E236A monomer (42-fold difference) provides strong evidence for strain-dependent gating. The measurements are technically sound and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The front WT head of the E236A-WT heterodimer shows ATP-dependent microtubule detachment with kcat = 6.3 s\u207b\u00b9 and Km = 43 \u03bcM, similar to the front head crosslink (k2 = 7.0 s\u207b\u00b9), confirming that backward strain reduces nucleotide-induced detachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 present high-speed single-molecule microscopy measurements of front head detachment. The similarity between heterodimer and crosslink measurements (6.3 vs 7.0 s\u207b\u00b9) provides strong convergent evidence. The ATP-dependence and Michaelis-Menten analysis are appropriate. The temporal resolution (50 \u03bcs) is sufficient for these measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "Forward neck-linker strain plays a crucial role in reducing the reversible ATP release rate from the rear head.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C85 is a summary conclusion supported by the observation that the rear E236A head occasionally releases ATP when the front head detaches (relieving strain). This is consistent with the strain-dependent gating mechanism and is supported by the weak ATP dependence of the unbound state dwell time.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Extending the neck linker with 7 or 12 glycine insertions modestly increases the front head detachment rate (1.5-fold for G12), indicating that the detachment rate is not significantly affected by neck linker tension within this range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 present measurements on neck-linker extended heterodimers. The modest effects (1.5-fold increase) support the conclusion that orientation rather than tension is the primary determinant of front-head gating. The measurements are consistent across different insertion lengths and use appropriate methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The ATP off-rate of the rear E236A head is significantly affected by neck linker tension, showing a 5-fold increase for G12 (k-1 = 0.081 s\u207b\u00b9) compared to G0 (k-1 = 0.015 s\u207b\u00b9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 present smFRET measurements showing that rear head ATP off-rate is tension-dependent, especially for longer insertions (>7 glycines). This contrasts with the front head and supports differential gating mechanisms. The measurements are technically sound and the conclusion is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The backward-pointing neck linker orientation in the front head has little effect on ATP binding/dissociation but gates a step subsequent to ATP binding, as evidenced by reduced k2 values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 synthesize results from multiple experiments (crosslinks and heterodimers) to conclude that front-head gating occurs post-ATP binding. The convergent evidence from different experimental approaches strongly supports this conclusion, though the specific gated step (likely ATP hydrolysis/Pi release) is inferred rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "The Kd of ATP differs dramatically between front and rear heads: ~20 \u03bcM for the front head crosslink/monomer versus ~4 nM for the rear E236A head of the heterodimer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C97-C98 present calculated Kd values showing a 5000-fold difference. However, the authors acknowledge caveats: (1) E236A mutation may over-stabilize the closed state, and (2) Alexa-ATP used for measurements has ~10-fold lower activity than unmodified ATP. These factors may exaggerate the difference, though a substantial difference likely remains. The conclusion would be strengthened by measurements with unmodified ATP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The front-head gate slows but does not block ATP hydrolysis (k2 = 6-7 s\u207b\u00b9), which is sufficiently slow to maintain out-of-phase catalytic cycles since the rear head detachment rate is ~100 s\u207b\u00b9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 synthesize kinetic measurements to explain coordination. The front head can slowly hydrolyze ATP without neck-linker docking, explaining backward steps under load. The comparison to rear head detachment rate (from prior work, C101) supports the coordination mechanism. The logic is sound and supported by data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Kinesin takes 8 nm backward steps at supra-stall forces (>7 pN) with ATP-dependent stepping rates comparable to the front head dwell times measured in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 cites prior work and compares those results to current measurements. The similarity in rates (0.3-1 step/s vs 0.16-1.1 s dwell times) supports the interpretation that backward steps result from slow ATP hydrolysis by the front head. This is a reasonable integration of prior and current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The difference in ATP affinity between front and rear heads corresponds to open versus closed nucleotide pocket conformations observed in structural studies, with the isomerization between these states being gated by neck-linker constraint.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C109 integrate current kinetic results with prior structural data (cryo-EM, crystal structures). The correspondence between high/low ATP affinity and closed/open pockets is well-supported by citations. The conclusion that isomerization (rather than nucleotide binding) is gated is consistent with the kinetic data showing similar k+1 values but different k-1 values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Neck-linker docking, particularly the I325 residue interaction with the hydrophobic pocket, is responsible for the open-to-closed transition, with backward strain in the front head suppressing I325 docking and forward strain in the rear head stabilizing it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C114 present a structural mechanism based on the C47/C335 crosslink data and structural modeling. The interpretation that I325 docking is critical is supported by the partial rescue of k2 with the looser crosslink. The tension-dependent effects on I325 docking are consistent with structural constraints and experimental data, though direct structural evidence for the proposed mechanism is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The conformation-specific effects of the neck linker create asymmetric gating: backward-pointing configuration in the front head increases microtubule affinity without changing ATP kinetics, while forward-pointing configuration in the rear head decreases ATP dissociation without affecting microtubule dissociation, thereby favoring rear head detachment before front head detachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C9 represent the main conclusions of the study, synthesizing results from all experimental approaches. The asymmetric gating mechanism is well-supported by convergent evidence from crosslinks, heterodimers, and neck-linker extensions. The conclusion that this mechanism explains coordinated walking is logical and supported by the kinetic data, though direct observation of processive movement with these constructs would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  }
+]

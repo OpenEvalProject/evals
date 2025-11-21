@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The manuscript establishes background knowledge about immune cell extravasation across the blood-brain barrier (BBB), describing it as a multistep process involving tethering, rolling, arrest, crawling, and diapedesis. T cells exhibit unique behaviors at the BBB including long-distance crawling against blood flow and both crawling and probing behaviors that can lead to transmigration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 collectively present well-established background knowledge about immune cell trafficking across the BBB, supported by extensive citations to prior literature (C5, C6, C8, C9, C10, C11, C13, C14). These claims provide context for the study rather than novel findings and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Manual analysis of in vitro flow assays is time-consuming, prone to errors and subjective judgments, and limits statistical power. Automation is challenging due to phase-contrast imaging of unlabeled cells with similar appearance to endothelial cells, and the presence of flow causes rapid cell appearance, displacement, and detachment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 describe well-recognized limitations of manual analysis and technical challenges for automation. These are supported by the subsequent demonstration of experimenter variability (C37, C44) and the successful development of UFMTrack to address these challenges. The claims establish the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "A 2D+T U-Net-like convolutional neural network model was developed for T-cell segmentation and transmigration detection. The 2D+T model outperformed a 2D model by 9% AP for T-cell mask prediction and 32% AP for transmigration mask prediction, though it was sensitive to frame misalignment. The models were trained on 154 Megapixels and validated on 37 Megapixels of annotated data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24 and C80-C84 present quantitative performance metrics from model comparison (Table 1) and describe the training methodology. The substantial improvement of the 2D+T model over 2D model is clearly demonstrated with specific AP values. The sensitivity to frame misalignment (C24) is acknowledged as a limitation and addressed in the pipeline design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "UFMTrack achieves >90% T-cell detection efficiency and comparable tracking efficiency to experienced manual analysis, performing better than inexperienced experimenters. The optimal T-cell density for automated analysis is 200-300 cells per field of view (50-80 cells/mm\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C38-C41 present key performance metrics supported by Figure 5D-E. The 90% detection efficiency is clearly demonstrated, and the comparison with manual analysis by experimenters of varying experience levels provides robust validation. The recommended cell density (C39) is appropriately derived from the performance data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C42",
+      "C43",
+      "C44",
+      "C62"
+    ],
+    "result": "UFMTrack eliminates experimenter bias and improves accuracy compared to manual analysis. Automated analysis agreed with experienced experimenters for migration speed but revealed that manual tracking contains systematic errors in position assignment, leading to overestimation of crawling speed due to jittery track patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C36-C37, C42-C44, C62 demonstrate that UFMTrack eliminates experimenter bias (shown by variability among inexperienced experimenters in Figure 5A-C) and improves accuracy. The identification of systematic errors in manual tracking (C44, Figure 5\u2014figure supplement 1) provides strong evidence for improved accuracy. The claim of eliminating bias is well-supported by the comparison data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C61"
+    ],
+    "result": "UFMTrack reduces analysis time by a factor of 3-5 compared to manual analysis. Manual analysis of 300 T cells requires 8.1-12.9 hours depending on whether all tracks or only crawling cells are analyzed, while automated analysis requires an average of 2.3 hours, enabling analysis of 10 experiments per day within one day of machine time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C49, C61 present time analysis data supported by Figure 5J-K. The quantitative time savings are clearly documented through systematic time tracking of multiple experimenters. The calculations for different analysis scenarios (crawling only vs. all cells) are transparent and the practical implications for experimental throughput are well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Automated analysis of CD4+ T-cell migration across pMBMEC monolayers revealed that cytokine stimulation affects T-cell detachment, motility parameters, crawling speed distributions, instantaneous speed variance, meandering index, and accelerated movement speed. Results were consistent with previous manual analyses while providing deeper insights into T-cell-endothelium interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C35 present biological findings from CD4+ T-cell analysis supported by Figure 4. The data show statistically significant differences between stimulation conditions (C27) and are consistent with prior work (C26, C28). However, some interpretations (C30, C34) are speculative. The observation about abluminal effects (C35) is interesting but the mechanism is not explored. Overall well-supported but some mechanistic claims are inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C85",
+      "C86"
+    ],
+    "result": "UFMTrack successfully analyzed multiple cell types (hPBMCs, BMDMs, human T cells) across different BBB models (HBMEC, EECM-BMEC) and with different imaging modalities (phase-contrast, fluorescence). The framework detected cells of sizes differing by nearly a factor of two, though transmigration detection for macrophages was insufficient due to different cell appearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55, C85-C86 demonstrate broad applicability of UFMTrack across different experimental conditions (Figure 6). Visual inspection confirmed adequate segmentation quality in most cases. The limitation for macrophage transmigration detection (C52) is appropriately acknowledged. The confirmation of previous findings (C54, C55) validates the method. The size discrimination capability (C85) suggests extensibility to multi-cell-type studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "UFMTrack enables cell-by-cell analysis of distinct migration regimes (crawling, probing, transmigration, accelerated movement) and captures rapid accelerated motions under flow, capabilities not available in existing tracking toolkits that consider only single cell types and do not account for flow-induced displacement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 describe novel capabilities of UFMTrack. The ability to track cells under flow with rapid displacement is demonstrated throughout the results. The statement about limitations of existing tools (C58, C59) is supported by citations and the authors' knowledge. The claim of enabling cell-by-cell analysis of multiple migration regimes is well-demonstrated in the CD4+ and CD8+ T-cell analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Current limitations of UFMTrack include reduced performance at high T-cell densities (>250 cells/dataset), leading to a recommended concentration of 100-150 k/ml, and inability to detect cell division events, though these occur rarely (<1% of T cells) in BBB studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 transparently acknowledge limitations of the method. The density limitation (C63) is supported by the detection efficiency data (C38, Figure 5D). The recommended concentration (C64) follows logically from the performance characteristics. The cell division limitation (C65-C66) is appropriately contextualized as rare in this experimental system, and future extensibility is mentioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "UFMTrack contributes to the 3R principle by reducing animal use through improved efficiency. Potential future applications include fundamental research on immune cell trafficking, pharmaceutical screening, personalized medicine, cancer metastasis studies, and real-time operation during image acquisition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C72 are largely speculative about future applications and broader impacts. While the 3R contribution (C67) is a reasonable inference from improved efficiency, the specific applications (C68-C72) are presented as possibilities without supporting data. These are appropriate as discussion points but represent speculation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The experimental methods describe isolation and culture of pMBMECs from C57BL/6J mice, cytokine stimulation protocols, T-cell accumulation under low shear stress (0.1 dynes/cm\u00b2) followed by physiological flow (1.5 dynes/cm\u00b2), and phase-contrast imaging at 6 frames/min with 0.629 \u00b5m/pixel resolution across tiled acquisitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 describe standard experimental methods that are well-documented and appropriately referenced to prior work. These methodological details are necessary for reproducibility and are consistent with established protocols in the field. The imaging parameters and flow conditions are clearly specified.",
+    "result_type": "MINOR"
+  }
+]

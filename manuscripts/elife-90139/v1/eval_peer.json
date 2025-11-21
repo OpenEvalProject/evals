@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "All-atom MD simulations of 4E10 and PGZL1 predict ab initio phospholipid binding at CDR-H1 sites with atomic accuracy matching X-ray crystallography structures (0.6-0.7 \u00c5 RMSD). These phospholipid complexes form rapidly (within 20 ns), are highly stable (>80% occupancy, <1 \u00c5 RMSF), and involve specific hydrogen bonding networks that anchor the antibodies to membrane surfaces.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm these findings, stating the simulations 'accurately and reproducibly predict ab initio binding of phospholipids stably bound at specific CDR binding sites previously identified in co-crystal structures.' One reviewer notes the simulations 'recapitulate in several cases the binding sites of lipid head groups that were observed experimentally by X-ray crystallography' and that 'the simulated lipid phosphates bound within CDR-H1 have exceptional overlap with electron densities from respective lipid-soaked co-crystal structures.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Framework region 3 of the heavy chain (FR-H3) extensively intercalates into the bilayer surface for both 4E10 and PGZL1, demonstrating that predominantly germline-encoded antibody surface features can provide significant contributions to membrane binding mechanism and surface orientation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this as a novel discovery, with one stating the authors 'discovered that a previously unappreciated framework region between loops 2-3 in the 4E10/PGZL1 heavy chain contributes to membrane association.' This finding is treated as an important mechanistic insight without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "10E8 simulations reveal a bivalent phosphocholine binding site at the CDR-L1/FR-L3 groove with >70% occupancy. The phosphate moiety localizes to FR-L3 (offset 2.7 \u00c5 from the crystallographic CDR-L1 site), while the choline moiety occupies the precise crystallographic CDR-L1 site, coordinated by four unpaired backbone carbonyls.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly note that '10E8 simulations revealed several differences from published X-ray structures. Namely, a phosphatidylcholine binding site was offset and includes significant interaction with a nearby framework region.' The revised manuscript is noted to demonstrate 'these lipid interactions are robust to alterations in membrane composition and rigidity,' indicating reviewer acceptance of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "LN01 simulations with and without MPER-TM antigen reveal two phospholipid binding sites: the crystallographic X-ray site (CDR-H3-L1-L2 groove, ~30-40% occupancy) and a novel 'Loading Site' (CDR-H2/CDR-H3/FR-L2 groove, 58-78% occupancy). Antigen-free LN01 samples broader membrane geometries but heavily samples the MPER-TM-bound conformation, suggesting the antibody is predisposed for transmembrane antigen engagement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm these findings, noting the simulations 'recapitulate lipid binding interactions solved in published crystallographic studies but also lead to the discovery of a novel lipid binding site the authors term the \"Loading Site\", which could guide future experiments with this antibody.' The observation about conformational predisposition is accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Structural bioinformatics analysis shows that the CDR-H1 loop backbone conformations of 4E10/PGZL1 are relatively prevalent in the protein universe (10^5 to 2\u00d710^6 matches), but only 4 cases bind phosphate-type ligands, making this a rare protein-phospho-ligand motif. For 10E8, the FR-L3 beta-turn site is a hotspot for phosphate-type ligands (23 natural protein cases), while CDR-L1 shows only 1 case.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this analysis, stating 'these binding sites were further validated using a structural bioinformatics approach.' The combination of MD simulations and structural bioinformatics is described as 'a comprehensive approach to validate the identified binding sites,' indicating acceptance of these findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Coarse-grained (CG) simulations capture spontaneous CDR-directed membrane insertion for 4E10 (10/18 trajectories), PGZL1 (14/18), and 10E8 (12/18), while negative controls BSA (2/18) and non-neutralizing antibody 13h11 show drastically reduced insertion. CG results overlap with all-atom trajectories, demonstrating the approach distinguishes high-affinity lipid interactions from non-specific binding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm these findings, noting 'these CG simulations, which cannot resolve atomistic interactions, are nonetheless compelling because negative controls (ab 13h11, BSA) that should not associate with membrane indeed sample significantly less membrane.' The editor states the work 'provides insights into how broadly neutralizing antibodies associate with lipids,' indicating acceptance of the CG methodology and results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Integration of CG and all-atom simulations shows that CG-derived membrane-bound geometries converge to biologically relevant conformations in all-atom MD. For 4E10, PGZL1, and 10E8, specific CG clusters produce stable all-atom trajectories with high phospholipid binding occupancy (>50-70%), while unstable CG conformations (e.g., 10E8 cluster A) rapidly dissociate, demonstrating the approach can distinguish functional from artifactual states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support this integrative approach, stating 'distinct geometries derived from CG simulations were then used to initialize all-atom MD simulations to study insertion in finer detail (e.g., phospholipid association), which largely recapitulate their earlier results, albeit with more unbiased sampling. The multiscale model of an initial CG study with broad geometric sampling, followed by all-atom MD, provides a generalized framework for such simulations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Steered MD pulling simulations correctly predict that 4E10 has stronger membrane binding than the WAWA variant (63.8\u00b12.8 vs 48.0\u00b12.6 kJ/nm/mol; 32\u00b113% difference; p<0.001), consistent with experimental data showing WAWA has reduced lipid affinity and >100-fold reduced neutralization despite similar MPER affinity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this validation, stating the authors 'demonstrate that their model reliably predicts lower association energetics for known mutations in 4E10 that disrupt lipid binding.' This is treated as evidence that the computational approach can distinguish functional differences in membrane binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Pulling simulations along the PGZL1 maturation pathway show mature PGZL1 has significantly stronger membrane binding (56.1\u00b111.6 kJ/nm/mol) than Intermediate (37.5\u00b114.9) and Germline (41.2\u00b111.7) variants (p<0.003), correlating with neutralization potency. This demonstrates that phospholipid binding features are acquired and honed during antibody maturation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the approach works for large differences but note limitations: 'the model does have limitations: namely, its ability to predict more subtle changes along a lineage-intermediate mutations that reduce lipid binding are indistinguishable from mutations that completely ablate lipid association.' The lack of significant difference between Intermediate and Germline (p>0.4) despite different neutralization profiles supports this critique. The editor notes 'a quantitative assessment of the underlying energetics remain difficult to obtain.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The computational methodology employs Gromacs 2021 with CHARMM36 forcefield for all-atom simulations and Martini 2.2 coarse-graining with elastic network restraints. CG simulations maintain protein fold (<2 \u00c5 backbone RMSD) and effectively capture antibody membrane embedding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the methodological rigor, stating 'the MD simulations conducted throughout are rigorous and the analysis are extensive, creative, and biologically inspired.' One reviewer notes 'the use of multiscale MD simulations allows for a detailed exploration of the system at different time and length scales,' though cautions that 'coarse-grained simulations exhibit artifacts and thus require careful analysis.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "MPER-targeting bnAbs (4E10, PGZL1, 10E8, LN01) from unique lineages show varying lipid affinity that correlates with neutralization potency. Experimental evidence shows mutations enhancing lipid binding boost neutralization, while mutations reducing hydrophobicity drastically reduce neutralization despite minimal impact on antigen affinity. This supports a two-step neutralization mechanism where bnAbs first associate with membranes via CDR embedding, then laterally diffuse to engage Env at MPER.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established findings from prior experimental work that reviewers accept as the foundation for the study. One reviewer states 'previous experimental studies demonstrated that membrane association drives avidity for several potent broadly HIV-neutralizing antibodies and its loss dramatically reduces neutralization.' The reviewers treat these as validated background knowledge supporting the computational investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Compared to PGZL1, 4E10's CDR-H loops are more deeply buried and extensively contact lipid aliphatic tails, which may explain 4E10's higher poly-specificity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation from simulations is accepted by reviewers without critique. One reviewer notes the manuscript demonstrates 'lipid interactions are robust to alterations in membrane composition,' implicitly accepting the differential binding depth observations. The speculative interpretation about poly-specificity is presented cautiously ('may explain') and not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Simulated antigen-free Fabs favor similar membrane orientations as in experimental bnAb-bound Env structures, with the primary difference being that Env-bound Fabs adopt slightly more shallow approach angles (~15\u00b0). Conformational clustering reveals antibody-specific variance in phospholipid binding across substates, with 4E10 maintaining high CDR-H1 occupancy (86-98%) across all substates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these comparisons with experimental structures as validation of the simulation approach. The consistency between simulated and experimental orientations is treated as evidence supporting the computational methodology, with no critiques raised about these specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "Modeling full-length IgG geometries based on Fab orientations suggests that with one membrane-bound Fab, it is very unlikely a second Fab can simultaneously engage the bilayer due to restriction from the IgG hinge, except for extraordinarily flexible hinges.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference from modeling is accepted without critique by reviewers. It is presented as a logical consequence of the Fab orientation data and is consistent with the monovalent binding model implied by the experimental and simulation data.",
+    "result_type": "MINOR"
+  }
+]

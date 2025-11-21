@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "NRL is a Maf-family bZIP transcription factor essential for rod photoreceptor cell fate determination, maintenance, and function, regulating thousands of genes in collaboration with CRX, with mutations associated with retinopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are all supported by citations to prior published work and represent well-established knowledge about NRL's role in retinal biology. These claims provide essential background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Transcriptional activation synergy was observed between NRL and NonO/p54nrb in rhodopsin regulation, where NonO is a ubiquitous nuclear paraspeckle protein that binds DNA, RNA, and proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 are supported by citations to prior work (Yadav et al., 2014; Fox and Lamond, 2010; Kowalska et al., 2013; Feng et al., 2020) and provide important background for the hypothesis that NRL may interact with RNA-binding proteins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Multiple complementary approaches (GST pull-down, immunoprecipitation, mass spectrometry) identified RNA-binding proteins as a major class of NRL interactors, with over 40% of identified proteins being RBPs, including DHX9, HNRNPU, and HNRNPM as highly enriched interactors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C18 are well-supported by experimental data from multiple independent assays (n=3 for GST pull-downs, with appropriate controls). The use of Benzonase treatment (C12-C13) provides evidence for nucleic acid-dependent vs. independent interactions. Statistical significance is reported (p<0.05, >2-fold enrichment) and 'mRNA-binding' was identified as a top enriched GO term with strong statistical support (adjusted p-values of 1.27E-53 and 2.1E-21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Several NRL-interacting RBPs are RNA helicases involved in R-loop regulation (DHX9, DDX5, DDX17, DDX3X), with 50% of NRL-interacting RBPs identified in a high-confidence R-loop protein group, representing significant enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C21 are supported by citations to prior work and statistical analysis. The 50% overlap with R-loop proteins is statistically significant (Fisher's exact test p=2E-13, C21), indicating strong enrichment beyond what would be expected by chance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "DHX9 and DDX5 localize to the rod nuclear periphery (euchromatin compartment) in mouse retina, and proximity ligation assays demonstrate specific interactions between NRL and these helicases in the outer nuclear layer of wild-type but not Nrl KO retina.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C29 are supported by immunofluorescence and PLA data with appropriate controls. The use of Nrl KO retina as a negative control (C26, C29) demonstrates specificity of the PLA signals. The weaker DDX5-NRL interaction (C28) compared to DHX9-NRL is noted and consistent with subsequent biochemical data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "In human retina, DHX9 and DDX5 are detected in all nuclear layers while NRL is restricted to the outer nuclear layer; NRL-DHX9 interaction is clearly detected by PLA in human photoreceptors, but NRL-DDX5 PLA signals are not above background, while both interactions are robust in HEK293 cells overexpressing NRL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 are supported by immunofluorescence and PLA data from human retina samples. The species difference in DDX5-NRL interaction detectability (C33 vs C34) suggests context-dependent or regulated interactions. Appropriate negative controls are shown (C33, Figure 2I).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "NRL binds to and regulates expression of RBP genes, with over 50% of RBP genes possessing NRL ChIP-Seq peaks and ~25% harboring super enhancers; specifically, NRL binds the DHX9 promoter in both human and mouse, and Dhx9 expression is reduced in Nrl KO photoreceptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 are supported by ChIP-Seq data (published and cited), RNA-Seq data showing reduced Dhx9 in Nrl KO (C40), and EMSA data demonstrating binding to the DHX9 promoter (C42-C43). The EMSA competition experiments with mutant probes (C43) provide evidence for sequence-specific binding, though direct NRL binding was not measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The interaction between NRL and DHX9/DDX5 is differentially regulated by nucleic acids: RNA negatively regulates NRL-DHX9 interaction (enhanced by RNase A), while DNA:RNA hybrids (R-loops) positively regulate these interactions (reduced by RNase H); DNA alone does not influence NRL interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 are supported by co-IP experiments with nuclease treatments in both HEK293 cells (n=3) and bovine retina (n=4). Statistical significance is reported for key comparisons. The differential effects of RNase A vs RNase H provide mechanistic insight into the role of R-loops. However, some reciprocal pull-downs did not show the same effects (C46 vs Figure 4B,D), which is appropriately discussed as potentially due to NRL representing only a small fraction of DHX9 interactome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "NRL and DHX9 are enriched in R-loops isolated from mouse retina, while DDX5 does not appear to bind retinal R-loops, suggesting weaker, transient, or more regulated association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by DRIP experiments using S9.6 antibody followed by incubation with retinal lysates and western blotting (n=3). The lack of DDX5 enrichment in R-loops (C54) is consistent with the weaker PLA signals and RNase H sensitivity data, supporting the interpretation of context-dependent regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Overexpression of wild-type RNase H1 (which reduces R-loop levels) decreases the number of cells with NRL-DHX9 PLA signals compared to catalytically inactive RNase H1, without affecting NRL or DHX9 localization, demonstrating that R-loops favor NRL-DHX9 interaction and influence complex stabilization and localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by PLA experiments in HEK293 cells with appropriate controls (wild-type vs catalytically dead RNase H1). Statistical significance is reported (C56, p=0.000). The observation that protein localization is unaffected (C58) strengthens the conclusion that R-loops specifically influence protein-protein interactions rather than simply altering subcellular distribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "R-loop levels increase during postnatal retinal maturation and are elevated in Nrl KO retina compared to wild-type, indicating a role for R-loops in cell type-specific gene expression and/or NRL in regulating R-loop levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by dot-blot quantification using S9.6 antibody with RNase H controls (n=3 for developmental time course, n=3 for WT vs KO comparison). Statistical significance is reported (p=0.019 for P28 vs P6; p=0.002 for Nrl KO vs WT). The increase in R-loops in Nrl KO is intriguing but the causal relationship is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "ssDRIP-Seq identified 4,677 R-loops in adult mouse retina (absent in RNase H-treated controls), comprising 3,352 unstranded and 1,328 stranded R-loops; PCA shows clear separation of samples by RNase H treatment (PC1 contributing 58.12% of variance), demonstrating assay specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 and C109-C111 are supported by ssDRIP-Seq data with four biological replicates and appropriate RNase H-treated controls. The PCA analysis demonstrates technical quality and specificity of the assay. The classification into stranded vs unstranded R-loops is methodologically sound, using opposite strand as reference for strand specificity assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Stranded R-loops are enriched at pseudogenes and preferentially observed around transcription start sites, while unstranded R-loops are enriched at intergenic regions and located downstream of transcription termination sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by genomic annotation analysis of ssDRIP-Seq peaks. The distinct genomic distributions of stranded vs unstranded R-loops suggest different functional roles and regulatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Stranded R-loops are enriched at neuronal genes associated with synapse function, unstranded R-loops are enriched at genes associated with G-protein-coupled receptor signaling, and R-loops were identified in 20 retinal disease genes including Ush2a, Pcdh15, and Abcc6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by gene ontology enrichment analysis of R-loop-associated genes. The enrichment at neuronal/synaptic genes is particularly relevant for retinal photoreceptors. The identification of R-loops in disease genes (C72) is interesting but requires further investigation to determine functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Stranded R-loops harbor histone marks associated with active transcription (H3K36me3, H3K4me2, H3K4me3), while unstranded R-loops are enriched only with H3K9me3 associated with heterochromatin, indicating distinct epigenetic signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by analysis of published histone modification ChIP-Seq data overlapped with R-loop positions. The distinct epigenetic signatures suggest fundamentally different regulatory roles for stranded vs unstranded R-loops.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "NRL is enriched at both stranded and unstranded R-loops regardless of epigenetic context, while other chromatin factors (BRD4, CTCF, Pol II) are primarily associated with stranded R-loops; NRL binding is associated with higher R-loop proportions at low and high expression genes, and NRL target genes show enrichment of stranded R-loops at promoter/TSS and unstranded R-loops in gene bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 are supported by integration of NRL ChIP-Seq/Cut&Run data with ssDRIP-Seq data. The enrichment of NRL at both R-loop types (C75) is a key finding suggesting epigenetically independent functions. The differential association of other factors (C76) provides important context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Genes without R-loops are shorter than those with R-loops (independent of expression level), and in low-to-mid expression genes, concomitant formation of both stranded and unstranded R-loops is associated with longer genes compared to genes with only one R-loop type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 are supported by analysis of gene length distributions relative to R-loop presence and type. This suggests R-loops may play a role in regulating long genes, consistent with prior literature cited in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "R-loops are not uniformly present in highly expressed retinal genes but are detected in heterochromatin regions, lowly expressed genes, and are enriched in genes encoding neuronal synaptic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C114 summarize key findings from the R-loop analysis and are supported by the ssDRIP-Seq data and gene expression analysis. These observations are important for understanding R-loop function in the retina.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "R-loops are formed during transcription and play key roles in transcriptional initiation, elongation, and termination, can initiate antisense lncRNA transcription, contribute to Pol II pausing, cause transcriptional termination at specific sites, and may indirectly control gene expression through chromatin structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are all supported by citations to prior published work and represent established knowledge about R-loop functions. These provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The enrichment of R-loops at neuronal genes may be due to larger gene size, R-loops may contribute to regulation of long neural genes, bidirectional transcription is associated with formation of repressive genomic regions, and R-loops are involved in heterochromatin maintenance and can induce antisense transcription leading to recruitment of repressive histone methyltransferases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by citations to prior work and represent discussion/interpretation of the current findings in light of existing literature. Claims C86-C87 are explicitly speculative ('may be'). Claim C88 is an inference from the data showing unstranded R-loops overlap with H3K9me3.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "NRL genomic occupancy overlaps with unstranded R-loops at gene bodies (suggesting functions beyond transcriptional initiation), NRL regulates transcriptional state of rod-specific genes, DHX9 and DDX5 have roles in R-loop resolution, cell fate specification, DNA damage response, and splicing regulation, with NRL-DHX9 interaction being very robust while NRL-DDX5 interaction is weaker and potentially more regulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C100 integrate current findings with prior knowledge (C94-C97 supported by citations). The observation about NRL at gene body R-loops (C93) is data-supported but the functional interpretation is speculative. The characterization of interaction strength (C98-C99) is well-supported by multiple assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Excess R-loops can generate DNA damage, genomic instability, and activate immune response; dysregulation of R-loops is implicated in diseases including neurodegeneration; aberrant transcription contributes to increased R-loop formation during aging in Drosophila photoreceptors; and rare DHX9 variants increase R-loop levels and are associated with neurological disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C104 are all supported by citations to prior published work and provide important context for the potential pathological implications of R-loop dysregulation in the retina.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Transcription factors are involved in controlling alternative splicing, and based on NRL's interactions with splicing factors and R-loop binding proteins, NRL may have a role in determining splicing patterns and rates, and may influence transcription elongation/termination and transcript isoform diversity in rod photoreceptors; mutations in splicing factors and aberrant splicing are associated with retinal degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105 and C108 are supported by citations to prior work. However, claims C106-C107 are explicitly stated as hypotheses/speculation ('we hypothesize', 'may') and are not directly tested in this study. While the discovery of NRL-RBP interactions provides a foundation for these hypotheses, experimental validation would be required to support these claims.",
+    "result_type": "MINOR"
+  }
+]

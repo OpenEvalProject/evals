@@ -1,0 +1,382 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C24",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors developed a computational workflow for rapid annotation of insect regulatory sequences and created a searchable database resource containing enhancer predictions for 33 insect genomes spanning five orders and over 360 million years of evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C24, C121, and C122 collectively describe the development of the annotation workflow and database resource. The manuscript provides detailed methodology (Figure 1B), describes the scope of 33 genomes with 48 training sets (C24), and confirms database availability as part of REDfly (C121). The workflow and database are well-documented with clear implementation details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C40"
+    ],
+    "result": "Using SCRMshaw, the authors predicted over 2.8 million regulatory sequences (1,164,354 unique sequences after merging) across 33 insect species, with a median predicted enhancer length of 740-750 bp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C36, C37, C38, and C40 present the quantitative results of the prediction pipeline. The numbers are directly reported from the computational analysis with clear documentation in Figure 2 and associated data. The size distribution analysis (C38, C40) includes appropriate handling of outliers, strengthening the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C73"
+    ],
+    "result": "SCRMshaw predictions target specific loci rather than random genomic locations, with 3-4% of loci showing significantly more predictions per locus than expected by chance, consistent with the identification of 'shadow enhancers' - multiple redundant or semi-redundant enhancers regulating the same gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C48 present simulation results comparing real predictions to randomized controls, showing statistically significant (p<0.001) clustering of predictions in specific loci. The interpretation as shadow enhancers (C44, C48, C73) is supported by both the statistical analysis (Figure 3) and independent validation data (C49). The simulation methodology is appropriate and the statistical thresholds are clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SCRMshaw predicts enhancers in orthologous loci across diverged species at rates significantly higher than random expectation, with >2.4\u00d7 fold enrichment when considering 10-12 species (p<0.05), suggesting successful identification of conserved or convergent enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 provide quantitative evidence from orthology analysis with appropriate statistical testing (z-scores, p-values, fold enrichment). The analysis compares real predictions to 360 randomized simulations (Figure 4). While the authors acknowledge limitations in ortholog calling and target gene assignment (C83-C85), the statistical significance across multiple training sets supports the conclusion (C53).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "SCRMshaw predictions are highly enriched for regions of accessible chromatin across multiple species and tissues, with 35-68% overlap with FAIRE-seq and ATAC-seq data and fold enrichments of 1.66-3.45\u00d7 (p<10^-19 to 10^-112), though two butterfly species (J. coenia and V. cardui) show unexpected depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide extensive validation data across seven species with highly significant p-values and substantial fold enrichments (Table 2). The comparison methodology is appropriate despite acknowledged tissue mismatches. The exceptions in J. coenia and V. cardui (C60) are honestly reported. The overall pattern strongly supports enhancer prediction effectiveness (C61), though the exceptions warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In vivo reporter gene assays in transgenic D. melanogaster validated SCRMshaw predictions with 77% (17/22) showing imaginal disc activity, and 45% (10/22) showing correct tissue specificity for wing and/or haltere discs, consistent with previous validation rates of 65-80%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 present clear experimental validation results from reporter gene assays (Figures 6-7). The validation rate of 77% for any activity and 45% for correct specificity is consistent with prior work (C63). The experimental design is appropriate with proper controls (Figure 6\u2014figure supplement 2A-E). However, the authors acknowledge potential underestimation due to cross-species testing limitations (C66-C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The validation success rates may underestimate true performance due to several factors: cross-species testing in D. melanogaster, unique imaginal disc development, suboptimal candidate selection for some genes, and inability to detect silencers or distinguish them from pleiotropic enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C66-C71 present speculative explanations for potential false negatives and false positives in the validation experiments. While these are reasonable hypotheses supported by citations to relevant literature (C67, C69, C71), they remain untested in this study. The authors appropriately frame these as possibilities rather than demonstrated facts, but additional experiments would be needed to confirm these explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "For the expanded (ex) gene locus, the D. melanogaster prediction drove reporter activity in wing, leg, and antennal discs; the T. castaneum prediction showed pupal leg expression but no larval disc activity; and the A. mellifera prediction showed variable wing disc expression and leg disc activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 report specific experimental results for the ex locus across three species, documented in Figure 6A-C. The results show species-specific patterns of enhancer activity. While not all predictions showed the expected activity pattern (particularly Tc_ex_9p0 in larval discs), the overall pattern supports functional enhancer prediction, and the D. melanogaster and A. mellifera results align with expected ex expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "For the klumpfuss (klu) gene locus, the D. melanogaster prediction drove expression in wing, haltere, and leg disc notum regions; the T. castaneum prediction lacked enhancer activity; and the A. mellifera prediction showed weak expression in proximal leg discs only.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 report experimental validation results for klu locus predictions documented in Figure 6D-F. The D. melanogaster result (C97) shows clear activity matching expected patterns. The T. castaneum negative result (C98) and weak A. mellifera result (C99) may reflect the acknowledged limitations of using older prediction methods and genome versions (C68), but the results are clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "For the u-shaped (ush) gene locus, the D. melanogaster prediction showed no larval disc activity; the T. castaneum prediction showed wing disc and weak eye-antennal disc expression; and the A. mellifera prediction showed expression in eye disc peripodial membrane and limited leg disc cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 report experimental results for ush locus predictions documented in Figure 6G-I. The mixed results across species, with D. melanogaster showing no activity but T. castaneum and A. mellifera showing tissue-specific patterns, illustrate the challenges of cross-species prediction while still demonstrating functional enhancer identification in two of three species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "For the homothorax (hth) gene locus, the A. aegypti prediction failed to show imaginal disc activity, while the T. castaneum prediction showed activity in wing disc notum and proximal leg regions matching endogenous hth expression, plus pupal thorax expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 report validation results for hth locus predictions documented in Figure 7A-B and Figure 7\u2014figure supplement 2. The T. castaneum result (C105-C107) shows strong correspondence with known hth expression patterns, supported by comparison to a known D. melanogaster enhancer (Figure 5F). The A. aegypti negative result (C104) is clearly documented. No A. mellifera predictions were obtained for this locus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "For the Ultrabithorax (Ubx) gene locus, predictions from A. aegypti, T. castaneum, and A. mellifera showed various patterns of leg disc activity, with some also showing wing, haltere, or eye disc expression, generally consistent with known Ubx expression patterns in these species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 report validation results for multiple Ubx predictions across three species, documented in Figure 7C-G. The results show tissue-specific activity patterns, with leg disc expression being common across species. The A. mellifera wing and haltere disc activity (C112-C113) is consistent with known Ubx expression in honeybees (C114), supporting the biological relevance of the predictions despite some ectopic expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "For the pipsqueak (psq) gene locus, the A. aegypti prediction showed no imaginal disc expression; the T. castaneum prediction drove expression in eye discs and limited leg disc cells; and the A. mellifera prediction was negative in all tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118 report experimental results for psq locus predictions documented in Figure 7H-J. The mixed results, with only one of three predictions showing activity (T. castaneum), represent a lower success rate for this particular gene. However, the results are clearly documented and the T. castaneum positive result demonstrates some predictive success.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Overall true-positive rates for most training sets are estimated to be between 50-85%, with most likely exceeding 70%, representing an acceptable rate for encouraging follow-up experiments and providing a useful resource for insect regulatory genome studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 synthesize evidence from multiple validation approaches (simulation enrichment scores, chromatin accessibility overlap, in vivo validation) to estimate overall prediction accuracy. The 50-85% range is supported by the 77% in vivo validation rate (C64), significant chromatin accessibility enrichments (C56-C59), and non-random locus targeting (C45-C47). The interpretation of utility (C88-C89) is reasonable given these validation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Reporter lines displayed basal expression in several embryonic tissues (hemocytes, caudal visceral mesoderm, proventriculus) even without enhancer sequences, possibly due to the UAS construct, complicating interpretation of embryonic enhancer activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 report an important technical observation documented in Figure 6\u2014figure supplement 2 and Figure 7\u2014figure supplement 2. The basal activity is clearly demonstrated in control lines (C119) and the speculation about UAS construct contribution (C120) is supported by control experiments. This honestly reported limitation affects interpretation of embryonic results but does not invalidate the imaginal disc findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "SCRMshaw is a supervised machine learning method that requires only a sequenced genome and 15-30 training enhancers with common function, uses kmer-based statistical models to identify sequence characteristics, and has demonstrated ~75% cross-species prediction success across diverged insect species (160-345 MY) despite lack of sequence alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 and C27-C33 describe the SCRMshaw methodology and prior validation. The method description (C22, C29-C33) is clearly documented in Figure 1A and Methods. The cross-species capability (C23, C27) is supported by multiple prior publications (citations in C23, C27). The inference of hidden sequence homologies (C28) is reasonable given the prediction success. This represents established prior work that forms the foundation for the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "The annotation workflow includes tandem repeat masking using Tandem Repeat Finder with specific parameters, followed by SCRMshaw_HD scanning with 500 bp windows sliding in 10 bp increments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 describe specific methodological parameters that are clearly documented in the Methods section. These technical details are essential for reproducibility and are appropriately specified. The workflow is also illustrated in Figure 1B.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A small number (2,642, <0.1%) of unusually large predicted regions (>2 kb) were observed, likely resulting from insufficient repeat masking and/or genome assembly errors, with minimal overall impact on the prediction set (median size remains 740 bp after filtering).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 document an observed artifact in the predictions with clear quantification (Figure 2\u2014figure supplement 1). The explanation (C42) is appropriately framed as preliminary analysis with speculation, and the authors demonstrate that filtering these outliers has minimal impact on overall results (C40). The honest reporting and appropriate handling of this issue strengthens confidence in the overall dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Training sets that did not predict multiple enhancers at rates exceeding random may reflect tissues where shadow enhancers are unusual or indicate poorly performing training sets, with the adult_PNS training set showing poor performance across multiple metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 provide interpretation of negative results, with C75 documenting specific poor performance of the adult_PNS training set across multiple independent metrics (shadow enhancer analysis, cross-species predictions, pCRM_eval scores). The interpretation (C74) is appropriately cautious, acknowledging alternative explanations. This represents good scientific practice in analyzing both positive and negative results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Shadow enhancers may provide phenotypic robustness through different transcription factor mechanisms (as shown in prior studies) or through similar mechanisms (as suggested by SCRMshaw predictions using the same training set), indicating at least two flavors of shadow enhancers exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 summarize established knowledge from prior studies (supported by multiple citations). Claims C79-C81 present a novel inference from the current SCRMshaw results: that shadow enhancers predicted by the same training set likely use similar regulatory mechanisms despite lacking overt sequence similarity. This inference (C80-C81) is logical given the SCRMshaw methodology and represents a meaningful contribution to understanding shadow enhancer biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "SCRMshaw's ability to find putatively orthologous enhancers enables studies of enhancer evolution over large divergence ranges, though the observed number of common loci likely understates true results due to limitations in species sampling, ortholog calling sensitivity, and target gene assignment methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 presents an important implication of the results for future research. Claims C83-C85 provide honest assessment of current limitations, supported by citations to relevant literature (C84-C85). The authors appropriately acknowledge that their orthology analysis likely underestimates true conservation while still demonstrating statistically significant results. This balanced assessment strengthens confidence in the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C86"
+    ],
+    "result": "The regulatory annotations represent initial '1.0' versions that will continue to be revised with updated models, new training sets, confidence scores, and improved genome builds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C86 appropriately frames the resource as an initial release subject to ongoing improvement. This is consistent with standard genome annotation practices and sets appropriate expectations for users. The statement is supported by the documented workflow (Figure 1B) and database implementation (C121-C122).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Despite over 8,000 sequenced metazoan genomes, fewer than 30% are chromosome-level assemblies, only 28% of those have comprehensive annotation, and almost none include regulatory sequence annotation, creating a significant gap given that CRMs are important for gene regulation, evolution, and disease, and that sequence-homology approaches are ineffective for most insects due to lack of conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C12 present database statistics from NCBI (C9-C11) and general observations about annotation practices (C1, C12). Claims C13-C15 establish the importance of CRMs through established knowledge and citations. Claims C16-C20 describe the challenges in CRM discovery and the specific problem for insects, supported by appropriate citations. This background effectively motivates the study, though the claims are primarily context-setting rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The 33 annotated species span five orders and over 360 million years of evolution, representing roughly 10% of annotated insect species with scaffold-level or better assembly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 describe the phylogenetic and temporal scope of the study, documented in Figure 2A and Table 1. The 10% representation (C26) provides useful context for the coverage achieved. These are straightforward descriptive statistics about the study scope.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,144 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors tested three strategies for splitting pegRNA to create a molecular proximity sensor: splitting into sgRNA/petRNA with complementary sequences, inserting self-splicing ribozymes, and splitting at the repeat:anti-repeat junction. The repeat:anti-repeat junction splitting strategy proved most promising, achieving up to 76% of control editing efficiency (28% absolute efficiency) with optimized designs, while the other two strategies showed low efficiency (<2%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledged this as a core finding, with one reviewer stating the authors 'present a comprehensive approach' and that 'splitting the pegRNA at the repeat junction emerged as the most promising, achieving editing efficiencies up to 76% of the control.' Another reviewer noted this work 'lays down important groundwork' for engineering guide RNAs. The data showing the comparison of three strategies and identification of the optimal approach is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "The authors demonstrated that P3 editing can control genome editing via protein-protein interactions using various protein pairs (MCP-LambdaN fusion, epitope-antibody/nanobody interactions like GCN4:scFv and ALFA-tag:NbALFA, and split-GFP), achieving editing efficiencies ranging from 15-52% of control depending on the protein pair used.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirmed this finding, with one stating the study 'extends genome editing control by linking protein-protein interactions to RNA-mediated editing' and that this 'expands the toolkit for precision genome editing.' Another reviewer noted the work demonstrates 'activity-dependent genome editing...based on discreet protein-protein interactions (either constitutively, spatially, or chemically induced).' The data on various protein pairs is accepted as demonstrating proof-of-concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "The authors showed that chemically induced dimerization can control P3 editing, with rapamycin inducing 3.9-fold higher editing for FKBP-FRB pairs (58% vs 15%) and ABA inducing 2.7-fold higher editing for PYL-ABI pairs (36% vs 13%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this demonstration of small molecule control as part of the overall proof-of-concept. One reviewer explicitly mentioned the system enables editing 'based on...chemically induced' protein interactions. The data on rapamycin and ABA control is not questioned and fits within the reviewers' positive assessment of the approach's versatility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors characterized a tradeoff between efficiency (2-53% of control) and specificity (background 0.3-35%) across 12 crRNA-MS2/BoxB-petracrRNA designs, showing that efficiency increases with G-C base-pairs and annealing length, and that different designs can be selected based on experimental goals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged this optimization work (one noting 'the work describing altering the linkers in Supplementary Figure 3...provides a path forward'), they also identified the efficiency-specificity tradeoff as a significant weakness requiring 'further optimization to enhance efficiency and specificity.' The characterization is accepted as valid, but reviewers emphasize these parameters remain insufficient for physiological applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The authors adapted P3 editing to base editing using three base editors (CBE2, CBE4max, ABE8), showing that LambdaN-MCP addition increases editing efficiency for all three (1.4-3.5 fold increases), with P3 strategy efficiencies comparable to standard sgRNA despite using a three-component system.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirmed the adaptability of the approach, with one stating the authors 'demonstrate that this tool can be coupled with several different gene editing effectors, showing convincingly that the tool functions as intended.' The extension to base editing is accepted as demonstrating the versatility of the P3 editing strategy without specific critique of the base editing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The authors combined P3 editing with ADAR-based RNA sensors (RADARS) to control genome editing based on specific RNA expression (IL6 mRNA), achieving statistically significant but modest RNA-dependent editing (11.6% vs 8.2% background, p=0.005), with high background levels indicating efficiency and specificity degradation when combining multiple synthetic modules.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers identified this as a significant weakness, noting 'the strategy combining RADARS and P3 editing...exhibited high background levels of non-specific editing, indicating the need for improved specificity and reduced leaky expression.' While the proof-of-concept is acknowledged, reviewers emphasize that 'the various methods and combinations require further optimization' and that combining modules leads to degraded performance, limiting current utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors acknowledge four key limitations: P3 editing has only been tested in HEK293T cells, both efficiency and specificity need improvement for use in model systems, it's unclear if weak/transient protein interactions can trigger editing, and the current design's reliance on limited RNA aptamer pairs restricts multiplexing capability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly emphasized these limitations, with one stating 'the editing efficiency appears too low to be applied in physiological settings' and another noting 'P3 editing efficiencies are exclusively quantified after transfecting DNA into HEK cells, a strategy that has resulted in past reproducibility concerns.' Reviewers appreciated that in revision, 'the authors clearly describe the present limitations of the system in the discussion section,' validating these as genuine current constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C23",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors claim P3 editing enhances controllability of CRISPR-based genome editing by enabling direct sensing and conversion of molecular interactions (RNA-RNA, RNA-protein, protein-protein) into genome editing outputs, circumventing limitations of transcription-based systems and potentially facilitating multiplexing by engineering gRNAs rather than editors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirmed the conceptual advance and novelty, with the editor stating this is 'an important manuscript' describing 'a creative approach' that 'introduces a first-of-its kind approach.' Reviewers noted it 'expands the toolkit for precision genome editing' and that engineering gRNAs 'improve[s] the modularity of the system in the future.' The conceptual framework and advantages over existing systems are accepted, though practical implementation requires further development.",
+    "result_type": "MAJOR"
+  }
+]

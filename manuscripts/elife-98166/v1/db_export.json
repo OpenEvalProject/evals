@@ -1,0 +1,2138 @@
+{
+  "submission": {
+    "id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T18:53:23.749578Z",
+    "updated_at": "2025-11-21T18:53:23.749578Z"
+  },
+  "content": [
+    {
+      "id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "content_type": "manuscript",
+      "content_text": "# Transcriptome-wide identification of 5-methylcytosine by deaminase and reader protein-assisted sequencing\n\n## Authors\n\n- Jiale Zhou<sup>1</sup> ([ORCID: 0009-0006-9199-8647](https://orcid.org/0009-0006-9199-8647))\n- Ding Zhao<sup>1</sup>\n- Jinze Li<sup>1</sup>\n- Deqiang Kong<sup>1</sup>\n- Xiangrui Li<sup>1</sup>\n- Renquan Zhang<sup>1</sup>\n- Yuru Liang<sup>1</sup>\n- Xun Gao<sup>1</sup>\n- Yuqiang Qian<sup>1</sup>\n- Di Wang<sup>1</sup>\n- Jiahui Chen<sup>1</sup>\n- Liangxue Lai<sup>1</sup> ([ORCID: 0000-0002-5256-6802](https://orcid.org/0000-0002-5256-6802)) \u2020\n- Yang Han<sup>1</sup> ([ORCID: 0000-0001-6249-370X](https://orcid.org/0000-0001-6249-370X)) \u2020\n- Zhanjun Li<sup>1</sup> ([ORCID: 0000-0001-6914-8589](https://orcid.org/0000-0001-6914-8589)) \u2020\n\n### Affiliations\n\n1. Jilin Provincial Key Laboratory of Animal Embryo Engineering, State Key Laboratory for Diagnosis and Treatment of Severe Zoonotic Infectious Diseases, Key Laboratory for Zoonosis Research of the Ministry of Education, Jilin University Changchun China ([ROR:00js3aw79](https://ror.org/00js3aw79))\n2. Laboratory of Organ Regeneration and Transplantation of The Ministry of Education, State Key Laboratory for Diagnosis and Treatment of Severe Zoonotic Infectious Diseases, First Hospital of Jilin University Changchun China ([ROR:034haf133](https://ror.org/034haf133))\n3. Sanya Institute of Swine Resource, Hainan Provincial Research Center of Laboratory Animals Sanya China\n\n\u2020 Corresponding author\n\n## Abstract\n\n5-Methylcytosine (m5C) is one of the posttranscriptional modifications in mRNA and is involved in the pathogenesis of various diseases. However, the capacity of existing assays for accurately and comprehensively transcriptome-wide m5C mapping still needs improvement. Here, we develop a detection method named DRAM (deaminase and reader protein assisted RNA methylation analysis), in which deaminases (APOBEC1 and TadA-8e) are fused with m5C reader proteins (ALYREF and YBX1) to identify the m5C sites through deamination events neighboring the methylation sites. This antibody-free and bisulfite-free approach provides transcriptome-wide editing regions which are highly overlapped with the publicly available bisulfite-sequencing (BS-seq) datasets and allows for a more stable and comprehensive identification of the m5C loci. In addition, DRAM system even supports ultralow input RNA (10 ng). We anticipate that the DRAM system could pave the way for uncovering further biological functions of m5C modifications.\n\n## Introduction\n\nEpigenetics refers to stable inheritance without changing the basic sequence of DNA, involving various forms such as DNA methylation, histone modification, and RNA modification. In recent years, RNA sequencing technology has boosted research on RNA epigenetics. More than 170 RNA modifications have been identified, mainly including m6A, m5C, m1A, m7G, and others (Wiener and Schwartz, 2021; Li and Mason, 2014). Notably, RNA m5C methylation represents a crucial posttranscriptional modification observed across different RNA types, such as tRNA, mRNA, rRNA, vault RNA, microRNA, long noncoding RNA, and enhancer RNA (Van Haute et al., 2019; Blaze et al., 2021; Yang et al., 2017; Sharma et al., 2013; Hussain et al., 2013; Aguilo et al., 2016). Numerous studies have revealed multiple molecular functions of m5C in numerous key stages of RNA metabolism, such as mRNA stability, translation, and nuclear export (Yang et al., 2017; Yang et al., 2019; Garc\u00eda-V\u00edlchez et al., 2019; Trixl and Lusser, 2019; Boo and Kim, 2020; Courtney et al., 2019). The dynamic alterations of m5C play integral roles in many physiological and pathological processes, such as early embryonic development (Liu et al., 2022), neurodevelopmental disorder (Chen et al., 2019b; Flores et al., 2017), and multifarious tumorigenesis and migration (Chen et al., 2022; Chen et al., 2019a; Yang et al., 2021; Li et al., 2023). Moreover, this modification significantly contributes to the regulation of gene expression (Yang et al., 2017; Yang et al., 2019; Garc\u00eda-V\u00edlchez et al., 2019; Trixl and Lusser, 2019; Boo and Kim, 2020; Courtney et al., 2019; Chen et al., 2022). Therefore, the detection of m5C sites appears to be essential for understanding their underlying effects on cellular function and disease states.\n\nWith the recent advances in sequencing techniques, several high-throughput assays have been developed for qualitative or quantitative analysis of m5C. To date, bisulfite-sequencing (BS-seq) has been proven to be the gold standard method for RNA m5C methylation analysis (Yang et al., 2017; Huang et al., 2019; Trixl et al., 2019). This approach chemically deaminates unmethylated cytosine to uracil, while keeping methylated cytosine unchanged. The m5C methylation sites can be identified by subsequent library construction and sequencing. However, bisulfite treatment of BS-seq is extremely detrimental to RNA, thus resulting in unstable detection of m5C in low abundance RNA or highly structured RNA, which directly affects the confidence of results (Schaefer et al., 2009; Amort and Lusser, 2017). Another major type of global m5C analysis depends on antibody-assisted immunoprecipitation of m5C-methylated RNAs, such as m5C-RIP-seq (Cui et al., 2017; Edelheit et al., 2013; Saplaoura et al., 2020), AZA-IP-seq (Khoddami and Cairns, 2013), or miCLIP-seq (Hussain et al., 2013). These methods are unable to recognize methylation on mRNAs with low abundance and secondary structure. Moreover, these methods are highly dependent on antibody specificity, which usually leads to unspecific binding of RNA and a low amount of m5C-modified regions. Moreover, TAWO-seq, originally developed for the identification of hm5C, is also capable of m5C analysis, but it highly depends on the oxidation efficiency of perovskite, which usually causes false positives and unstable conversion (Yuan et al., 2019; Hayashi et al., 2016). Furthermore, the emerging third-generation sequencing, such as Nanopore-seq, can directly map m5C by tracking the characteristic changes of bases, but it still faces challenges of a high error rate (Harel et al., 2019; Chang et al., 2021; Wan et al., 2022). These together largely hamper its wide application on transcriptome profiling of m5C (Supplementary file 1). Hence, there is an urgent need for a simple, efficient, sensitive, and antibody-independent method for global m5C detection.\n\nThe RNA-binding protein ALYREF is the initially recognized nuclear m5C reader that binds directly to m5C sites in mRNA and plays key roles in promoting mRNA nuclear export or tumor progression (Yang et al., 2017). Another well-known m5C reader, YBX1, can also recognize m5C-modified mRNA through its cold-shock domain and participates in a variety of RNA-dependent events such as mRNA packaging, mRNA stabilization, and translational regulation (Yang et al., 2019; Chen et al., 2019a). RNA affinity chromatography and mass spectrometry analyses using biotin-labeled oligonucleotides with or without m5C were performed in previous reports, which indicated that ALYREF and YBX1 had a more prominent binding ability to m5C-modified oligonucleotides (Yang et al., 2017; Chen et al., 2019a). YBX1 can preferentially recognize mRNAs with m5C modifications via key amino acids W65-N70 (WFNVRN) (Chen et al., 2019a), while K171 is essential for the specific binding of ALYREF to m5C sites (Yang et al., 2017). Previous studies have shown that mutations in key amino acids responsible for recognizing m5C binding in ALYREF and YBX1 lead to a significant reduction in their binding levels to m5C-containing oligonucleotides (Yang et al., 2017; Chen et al., 2019a). Nucleic acid deaminases, primarily categorized as cytosine deaminases and adenine deaminases, are zinc-dependent enzymes which facilitate the deamination of cytosine or adenine within DNA or RNA substrates (Budzko et al., 2023). APOBEC1, an evolutionarily conserved family member of APOBEC proteins, can specifically catalyze the deamination of cytosine in single-stranded RNA (ssRNA) or DNA (ssDNA) to uracil (Rosenberg et al., 2011; Qian et al., 1998; Siriwardena et al., 2016). TadA8e is an adenine deaminase optimized through reengineering of TadA and it induces conversion of adenine to inosine (eventually read as guanine by transcriptases) in ssRNA or ssDNA (Richter et al., 2020; Gaudelli et al., 2020). APOBEC1 and TadA8e, with their prominent deamination efficiency, have been employed for the development of precise and efficient base editors such as CBE and ABE8e, which find widespread application in studies related to genome editing (Siriwardena et al., 2016; Richter et al., 2020).\n\nHere, we aim to establish a deaminase and m5C reader-assisted RNA methylation sequencing approach (DRAM-seq), which identifies the m5C sites through reader-mediated recognitions and deaminase-mediated point mutations neighboring the m5C methylation sites. This bisulfite-free and antibody-free method is anticipated to provide more comprehensive and cost-effective transcriptome-wide detection of m5C methylation, which may better assist on exploring its further regulatory mechanisms.\n\n## Results\n\n### Development of DRAM system for m5C detection\n\nOur sequencing platform is inspired by the concept of the m6A DART-seq assay, in which C near the m6A site is converted into U without affecting sequences near non-m6A sites (Meyer, 2019). Therefore, we hypothesized that, by utilizing the targeted binding of m5C readers, deaminase can be recruited to achieve deamination of cytosine or adenine in the vicinity of the m5C sites on ssRNA, thereby facilitating the detection of the m5C site. This approach was named DRAM (deaminase and m5C reader-assisted RNA methylation sequencing). As RNA-binding proteins, ALYREF and YBX1 also could bind to RNAs without m5C modification (Yang et al., 2017; Chen et al., 2019a). To exclude the false-positive detection of DRAM due to the non-m5C-specific binding of ALYREF and YBX1, knockout of W65-N70 (WFNVRN) amino acids in YBX1 and K171A mutation in ALYREF were introduced separately, resulting in the DRAMmut system (Figure 1\u2014figure supplement 1A\u2013D). Subsequently, we verified the affinity ability of YBX1 and ALYREF for m5C-modified RNAs by RNA pull-down experiments. Consistent with previous reports (Yang et al., 2017; Chen et al., 2019a), those two m5C readers preferentially bound RNAs containing m5C modifications. Furthermore, mutating key amino acids involved in their interaction with m5C significantly reduced their binding ability, indicating that ALYREF and YBX1 exhibit specificity for m5C-methylated mRNAs (Figure 1\u2014figure supplement 1E\u2013H). To confirm the recognition of m5C site by DRAM system, DRAM, DRAMmut, and Deaminase system were transfected into the human HEK293T cells, respectively. Finally, we considered the presence of m5C modification in the vicinity only if the deamination changes produced under DRAM induction were significantly different from those produced under DRAMmut or Deaminase induction (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic diagram of the DRAM assay. DRAM, DRAMmut, and Deaminase system were transfected into HEK293T cells separately. After DRAM transfection, the deaminase was directed by m5C reader to the vicinity of the m5C site and induce C-to-U/A-to-G mutations, whereas transfection of the DRAMmut or Deaminase system failed to effectively induce similar mutations due to the absence of the m5C-recognition-binding domain. (B) The overall design of DRAM, DRAMmut, and Deaminase system.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A, B) Computer simulation of the 3D structure of mutated ALYREF (A) and YBX1 (B) protein. On the left is the full structural model of ALYREFK171A, and on the right the 171st amino acid is colored in yellow and shows the stick structure of mutated A171 (A). The complete structural model of YBX1 after knockdown of W65-N70 (WFNVRN) is shown on the left, and the original L60-K64 and G71-I75 amino acids are colored in yellow on the right (B). (C, D) Computer simulation of the 3D structure of wild-type ALYREF (C) and YBX1 (D). The stick structure of K171 is highlighted in yellow (C). The amino acids L60-K64 and G71-I75 is marked in yellow, while the W65-N70 (WFNVRN) region is highlighted in blue (D). (E\u2013H) The RNA pull-down assay demonstrates the binding of expressed YBX1 (E), YBX1mut (F), ALYREF (G), and ALYREFmut (H) proteins to biotinylated RNA containing C or 5-methylcytosine (m5C). The corresponding quantitative analyses of their binding capacities are shown on the right (n=2).\n\nPrevious studies have indicated that there is no uniform intrinsic signature motif sequence that can characterize all m5C sites (Yang et al., 2017; Edelheit et al., 2013; Sun et al., 2019; Zhang et al., 2020b). To comprehensively detect the m5C loci, the readers of m5C (ALYREF and YBX1) were separately fused to the C-terminus of the deaminases (APOBEC1 and TadA-8e), namely DRAM-ABE and DRAM-CBE system (Figure 1B).\n\n### DRAM detection system is assayed in an m5C-dependent form\n\nTo confirm the recognition of m5C site by DRAM system, DRAM, DRAMmut, and Deaminase were transfected into the human HEK293T cells, respectively. To evaluate candidate DRAM constructs within a cellular environment, we performed fluorescence microscopy to analyze the expression of DRAM. The results showed that DRAM-ABE and DRAM-CBE were properly expressed in HEK293T cells (Figure 2\u2014figure supplement 1A and B). In addition, flow cytometry that displayed \u223c60% of cells were GFP-positive (Figure 2\u2014figure supplement 1C). Two previously reported m5C sites in RPSA and AP5Z1 were selected for the analysis (Yang et al., 2017; Huang et al., 2019), and their methylation status was verified by BS-seq PCR. The deep sequencing results showed that the m5C fraction of RPSA and SZRD1 was 75.5% and 27.25%, respectively (Figure 2A and B). Sanger sequencing following RT-PCR was then performed to determine the editing of neighboring m5C sites by DRAM system in these two mRNAs. Notably, adenine close to the m5C site in RPSA mRNA was mutated into guanine, resulting in an A-to-G editing rate of 14.7% by DRAM-ABE, whereas this was rarely observed with TadA-8e or DRAMmut-ABE (Figure 2C). DRAM-CBE induced C-to-U editing in the vicinity of the m5C site in AP5Z1 mRNA, with 13.6% C-to-U editing, while this effect was significantly reduced with APOBEC1 or DRAMmut-CBE (Figure 2D). Subsequently, in order to investigate whether the DRAM system can detect other types of RNA, such as tRNA, 28S rRNA, or others, we performed PCR amplification of the flanking sequences of the m5C sites 3782 and 4447 on 28S rRNA and several m5C sites on tRNA, such as the m5C48 and m5C49 sites of tRNAVal, the m5C48 and m5C49 sites of tRNAAsp, and the m5C48 site of tRNALys. But Sanger sequencing showed that there was no valid A-to-G/C-to-U mutation detected, which is most likely due to the fact that ALYTEF and YBX1 are mainly responsible for the mRNA m5C binding proteins, and thus the DRAM system is more suitable for the mRNA m5C detection (Figure 2\u2014figure supplement 2). Taken together, the fusion of m5C reader and deaminase can effectively and selectively deaminate cytosine/adenine in the vicinity of the mRNA m5C sites.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Two m5C sites from RPSA (A) and AP5Z1 (B) mRNA detected by deep sequencing of bisulfite-sequencing PCR in HEK293T cells. The m5C sites are highlighted by red color. The m5C fraction of RPSA and AP5Z1 were 75.5% and 27.25% (the number of reads is greater than 1000). (C, D) Sanger sequencing following RT-PCR verified two m5C sites from RPSA (C) and AP5Z1 (D) mRNAs in DRAM-transfected HEK293T cells, respectively. HEK293T cells only expressing DRAMmut or Deaminase were served as negative controls. The left panel illustrates the location of DRAM-induced mutation sites, which is highlighted in red asterisk. The right panel shows the corresponding quantification of Sanger sequencing (n=3). (E, F) The knockout efficiency of NSUN2 (E) and NSUN6 (F) in HEK293T cell lines verified by western blotting. The protein level of \u03b1-Tubulin and GAPDH were served as loading controls, separately. (G, H) DRAM-induced mutations close to m5C sites in AP5Z1 (G) and RPSA (H) mRNAs after NSUN2 and NSUN6 knockout in HEK293T cells. The left panel illustrates the location of DRAM-induced mutation sites, which is highlighted in red asterisk. The right panel shows the corresponding quantification of Sanger sequencing (n=3).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A, B) Examination of the EGFP-positive cells by fluorescence microscopy. Scale bars, 200 \u03bcm. (C) Quantification of the EGFP-positive cells by flow cytometry.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** RT-PCR followed by Sanger sequencing verified the presence of m5C modifications at specific sites in DRAM-transfected HEK293T cells, including m5C4447 in 28S rRNA (A), m5C3782 in 28S rRNA (B), m5C48 and m5C49 in tRNAAsp (C), m5C48 in tRNALys (D), and m5C48 and 49 in tRNAVal (E). Mutations were observed in sequences flanking the m5C loci.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Schematic representation of the construction of NSUN2-/- and NSUN6-/- cell line. HEK293T cells were transfected with plasmids encoding a PX459 editor and guide RNA targeting the NSUN2 or NSUN6 gene. After puro for screening, cells were diluted and seeded into a 96-well plate to allow for clonal selection. Monoclonal cells were then picked and screened for the desired genotype, resulting in the identification of the NSUN2-/- and NSUN6-/- cell line. (B) Mutation detection of NSUN2 and NSUN6 by PCR. M, the marker used is DL2000. (C) Venn diagram showing the overlap of DRAM-edited mRNAs identified across three sets of biological replicates. (D) Motif enrichment analysis based on the sequences spanning 10 nt upstream and downstream of DRAM-edited sites mediated by loci associated with NSUN2 or NSUN6. (E) Stacked Venn diagram showing the overlap of genes detected by Wang et al. and those identified by the DRAM system (Wang et al., 2023).\n\nNSUN2 (Zhang, 2021) and NSUN6 (Liu et al., 2021), two family members of NOL1/NSUN protein, were both identified as m5C methyltransferase of mRNA (Schumann et al., 2020). To verify that the detection of DRAM occurs in the presence of m5C, we performed knockdown experiments of NSUN2 and NSUN6 in HEK293T cells by base deletion, resulting in frameshift mutations that led to reduced expression of NSUN2 and NSUN6. These cells were then transfected with DRAM. The knockout efficiency has been confirmed by western blotting (Figure 2E and F, Figure 2\u2014figure supplement 3A and B). It has been previously demonstrated that m5C methylation of AP5Z1 and RPSA is catalyzed by NSUN2 and NSUN6, respectively (Huang et al., 2019; Fang et al., 2020). In line with this, Sanger sequencing following RT-PCT showed a significant reduction in C-to-U or A-to-G mutations near the m5C sites in methyltransferase-deficient cells compared with WT cells (Figure 2G and H). Overall, these findings suggest that the DRAM detection system is assayed in an m5C-dependent form.\n\n### DRAM enables transcriptome-wide analysis of m5C methylation\n\nSubsequently, we performed RNA-seq analysis after DRAM transfection by detecting C-to-U/A-to-G editing events to accomplish transcriptome-wide detection of m5C (Figure 3A). To serve as positive controls, two previously published BS-seq datasets were also integrated (Yang et al., 2017; Huang et al., 2019). Mutations were detected near the m5C site in RPSA as A-to-G by DRAM-ABE (Figure 3B), and DRAM-CBE detected the presence of C-to-U mutations near the AP5Z1 m5C site (Figure 3C). However, the DRAMmut and Deaminase systems induced few effective mutations close to these sites. Examination of multiple reported high-confidence RNA m5C sites showed that DRAM-seq editing events were also enriched in the vicinity of the BS-seq sites (Figure 3B and C, Figure 3\u2014figure supplement 1).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig3-v1.jpg)\n\n**Figure 3.:** (A) Schematic of the DRAM-seq method. (B, C) Integrative genomics viewer (IGV) browser traces of DRAM-seq data expressing the indicated constructs in RPSA (B, left panel), TARBP2 (B, right panel), AP5Z1 (C, left panel), and TRAF7 (C, left panel) mRNAs. C-to-U or A-to-G mutations found in at least 10% of reads are indicated by coloring. The previously published RNA bisulfite-sequencing (BS-seq) datasets from two individual studies were displayed as panel \u2018Yang et al.\u2019 and \u2018Zhang et al.\u2019. (n(DRAM)=3 independent samples, n(Deaminase)=2 independent samples, and n(DRAMmut)=1 independent sample.) (D, E) IGV browser traces of DRAM-seq data in wild-type and methyltransferases knockout cells in AP5Z1 (D) and RPSA (E) mRNAs. C-to-U or A-to-G mutations that were found in at least 10% of reads are indicated by coloring. The previously published RNA BS-seq datasets from two individual studies were displayed as panel \u2018Yang et al.\u2019 and \u2018Zhang et al.\u2019. n=3 independent samples. (F) Screening process for DRAM-seq assays and principles for screening high-confidence genes. (G) The pie chart shows the distribution of editing sites in different transcript region in cells expressing DRAM (n=3 independent samples). (H) The density map showing the distribution of editing events across the mRNA transcripts detected by DRAM-seq. (I) The frequency plot shows the distribution of the distances of edit events in DRAM-seq relative to the m5C sites from the published BS-seq datasets. The position of each m5C site of BS-seq is. determined as 0, and the relative distance of each site to the nearest edit event in DRAM-seq is calculated and plotted. The plots are presented separately based on the cutoff of upstream and downstream 3000 bp (above) and 80 bp (below) windows. (J, K) Motif analysis discovered within the \u00b120 nt region around the C-to-U or A-to-G editing site in cells expressing DRAM-CBE (J), APOBEC1(J), DRAM-ABE (K), and TadA-8e (K).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Integrative genomics viewer (IGV) browser traces of DRAM-seq data expressing the indicated constructs in QARS (A), EHD4 (A), AMH (A), MRPS25 (B), TJAP1 (B), and CHD3 (B) mRNAs. C-to-U or A-to-G mutations found in at least 10% of reads are indicated by coloring. The previously published RNA bisulfite-sequencing (BS-seq) datasets from two individual studies were displayed as panel \u2018Yang et al.\u2019 and \u2018Zhang et al.\u2019.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Integrative genomics viewer (IGV) browser traces showing read coverage and C-to-U/A-to-G mutations for eight representative mRNAs in wild-type, NSUN2-depleted cells (A) and NSUN6-depleted cells (B): LLGL2, CEP170B, PHF14, NAPRT1, FAM107B, PCSK6, TIMM50, and FURIN. C-to-U or A-to-G mutations that were found in at least 10% of reads are indicated by coloring. The previously published RNA bisulfite-sequencing (BS-seq) datasets from two individual studies were displayed as panel \u2018Yang et al.\u2019 and \u2018Zhang et al.\u2019.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Three individual DRAM-ABE replicates were analyzed for the number of A-to-G mutations per RNA (A). Three individual DRAM-CBE replicates were analyzed for the number of C-to-U mutations per RNA (B). Pearson correlation coefficient indicated a high degree of overlap between individual replicates.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A, B) The pie chart shows the distribution of editing sites in different transcript regions in cells expressing DRAM-ABE and DRAM-CBE. (C, D) Gene Ontology (GO) cellular component (C) and molecular function (D) enrichment analysis of genes with DRAM-seq editing events. Statistical analyses were performed using the DAVID tool. p<0.05.\n\nDRAM-seq analysis further confirmed that mutations in AP5Z1 and RPSA mRNA were reduced in methyltransferase knockout cells compared to wild-type cells (Figure 3D and E). Moreover, the knockout cells exhibited overall rare DRAM-seq editing events close to m5C sites in other mRNAs (Figure 3\u2014figure supplement 2). These indicated that DRAM-seq analysis was detected in an m5C-dependent manner. Unfortunately, motif analysis failed to identify any sequence preferences or consensus motifs associated with DRAM-edited sites mediated by loci associated with NSUN2 or NSUN6 (Figure 2\u2014figure supplement 3D).\n\nA comparison of three biological replicates from each experimental group revealed a strong reproducibility of A-to-G/C-to-U mutations in HEK293T cells expressing DRAM-ABE and DRAM-CBE (Figure 3\u2014figure supplement 3). Moreover, the DRAM-edited mRNAs revealed a high degree of overlap across the three biological replicates (Figure 2\u2014figure supplement 3C). And a recent study by Wang et al. showed that ALYREF deletion affects the expression of 94 mRNAs (Wang et al., 2023), and only 55.32% of these ALYREF-regulated mRNAs can be detected by the DRAM system (Figure 2\u2014figure supplement 3E). These findings suggest that DRAM selectively targets specific RNAs for editing, exhibiting a high degree of consistency across samples.\n\nTo obtain information on a set of high-confidence DRAM-seq data, we filtered the list of sites transfected with deaminase alone and screened the sequencing results with methyltransferase depleted, pooled editing events occurring in at least 10% of reads across multiple samples to obtain a set of high-confidence editing sites (Figure 3F and Supplementary file 2), and integrated genes with editing sites occurring in DRAM-ABE and DRAM-CBE (Figure 3F and Supplementary file 3).\n\nPrevious studies have indicated that m5C sites are predominantly distributed in the coding sequences (CDS) and notably enriched near the initiation codon (Yang et al., 2017; Cui et al., 2017; Edelheit et al., 2013; Tang et al., 2020; Squires et al., 2012; Zhang et al., 2020a). To further delineate the characteristics of the DRAM-seq data, we compared the distribution of DRAM-seq editing sites within the gene structure, specifically examining their occurrences in the 5\u2019untranslated region (5\u2019UTR), 3\u2019 untranslated region (3\u2019UTR), CDS, and Intergenic/Intron region. Our analysis revealed that DRAM-seq editing events in cells expressing DRAM-ABE and DRAM-CBE were primarily located in the CDS and 3\u2019UTR, indicating a nonrandom distribution of m5C (Figure 3G, Figure 3\u2014figure supplement 4A and B). Moreover, plotting the distribution of DRAM-seq editing sites in mRNA segments (5\u2019UTR, CDS, and 3\u2019UTR) highlighted a significant enrichment in the CDS (Figure 3H). In contrast, cells expressing the deaminase exhibited a distinct distribution pattern of editing sites, characterized by a prevalence throughout the 3\u2019UTR (Figure 3H). This finding reaffirms that the specific editing pattern observed in DRAM-seq across the transcriptome depends on its capacity to bind m5C.\n\nComparative analysis of the DRAM-seq editing sites with the previously published BS-seq m5C sites indicated that the likelihood of editing was notably higher in closer proximity to the m5C sites (Figure 3I). Furthermore, the editing window of DRAM exhibited enrichment approximately 20 bp before and after the m5C site (Figure 3I). Investigation into the sequences surrounding the editing window revealed that AC motifs were the most significantly enriched in DRAM-CBE, whereas (U/C) A motifs were most notably enriched in DRAM-ABE. In contrast, the APOBEC1 and TadA-8e samples displayed no significantly enriched motifs, with mutations being more randomly orientated (Figure 3J and K).\n\n### DRAM-seq provides stable and comprehensive identification of m5C loci\n\nSubsequently, we then evaluated the ability of DRAM-seq to detect m5C across the entire transcriptome and compared its performance to that of the previously reported BS-seq. Although both previous studies employed bisulfite treatment, the resulting data obtained significant discrepancies due to variations in their treatment and analysis methodologies. We first complied the overall distribution of mutant regions identified by DRAM-seq, presenting both the mutant sites detected by the DRAM system and those reported in previous studies (Yang et al., 2017; Chen et al., 2019a) across each chromosome (Figure 4A). Our results indicated that DRAM-seq identified the presence of m5C modifications covering 79.6% of the genes detected by Yang et al., 2017, and 91.9% of the genes detected by Huang et al., 2019 (Figure 4B and D). Remarkably, certain pivotal regulators with diverse biological functions, such as ATG16L1 (coordinates autophagy pathway) (Fletcher et al., 2018) and ARHGEF25 (plays an important role in actin cytoskeleton reorganization) (Guo et al., 2003), were identified by Zhang et al. and DRAM-seq, but not by Yang et al. (Figure 4C). Conversely, FANCD2 (maintains chromosome stability) (Naim and Rosselli, 2009) and RPL15 (components of the large ribosomal subunit) (Anger et al., 2013; Liang et al., 2020) were discovered by Yang et al. and DRAM-seq, but not by Zhang et al. (Figure 4E). Hence, DRAM-seq appears to offer a more stable and comprehensive identification of the m5C loci.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig4-v1.jpg)\n\n**Figure 4.:** (A) Comparison of the overall distribution of genes with m5C modifications detected by DRAM-seq, Yang et al., and Zhang et al. on chromosomes. The mutation sites detected by DRAM-seq on each gene are categorized into dual-colored short lines, with positive strand mutations shown in orange and negative strand mutations in dark green. The line graph and kernel density plot in the inner ring represent the locations and distributions of overlapping genes detected by DRAM-seq (red), Yang et al. (blue), and Zhang et al. (light green). (B) Venn diagram showing the overlap between DRAM-seq and Yang et al.\u2019s edited genes. (D) Venn diagram showing the overlap between DRAM-seq and Zhang et al.\u2019s edited genes. (C, E) Integrative genomics viewer (IGV) browser traces of DRAM-seq data expressing the indicated constructs in the ATG16L1 (B), ARHGEF25 (B), FANCD2 (D), and RPL15 (D) mRNAs. C-to-U/A-to-G mutations found in at least 10% of reads are indicated by coloring, and the m5C site found by bisulfite-sequencing (BS-seq) is also labeled. (F) Genes with DRAM-seq editing events were analyzed for Kyoto Encyclopedia of Genes and Genomes (KEGG) bioprocess enrichment. (G) Gene Ontology (GO) biological processes enrichment analysis of genes with DRAM-seq editing events. Statistical analyses were performed using the DAVID tool.\n\nTo provide functional insights into m5C RNA-modified genes in HEK293T cells, we conducted Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) analyses. These results highlighted the involvement of these genes in the regulation of diverse key biological processes, such as cell division, cell cycle, mRNA splicing, protein processing in the endoplasmic reticulum, nucleocytoplasmic transport, translation, DNA repair, and others (Figure 4F and G, Figure 3\u2014figure supplement 4C and D).\n\n### DRAM enables low-input m5C profiling\n\nA significant challenge in m5C detection lies in the specificity of antibodies and the substantial amount of input RNA required for sequencing. RNA is susceptible to degradation during denaturation, sodium bisulfite treatment, and desulfurization steps in the BS-seq assay (Schaefer, 2015). Immunoprecipitation-based m5C assays and LC-MS/MS also impose high demand for sample input (Hussain et al., 2013; Cui et al., 2017; Bourgeois et al., 2015). Several experiments have highlighted the requirement of 100\u2013500 ng of RNA for m5C-RIP-seq, while BS-seq necessitates an even more demanding 750\u20131000 ng of RNA (Huang et al., 2019; Cui et al., 2017; Gu and Liang, 1933). To assess the detection limits of DRAM-Sanger, we attempted to amplify two representative m5C-containing sites in the RPSA and AP5Z1 transcripts from diluted RNA samples.\n\nRemarkably, we successfully generated PCR products of these two mRNAs from cDNAs corresponding to 250 ng, 50 ng, and 10 ng of total RNA. Quantitative analysis by Sanger sequencing demonstrated nearly identical Sanger traces across these dilutions (Figure 5A and B). This finding underscores that the specificity of DRAM editing depended on its ability to bind m5C, and DRAM is proficient in low-input m5C analyses. Furthermore, cell viability was determined by CCK8 assay on HEK293T cells transfected with DRAM (Figure 5C). Importantly, there was no significant difference in the relative proliferative capacity of the cells compared to untransfected cells (NC), indicating that DRAM expression did not adversely affect cell viability (Figure 5D).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98166/elife-98166-fig5-v1.jpg)\n\n**Figure 5.:** (A, B) DRAM analysis of RPSA (A) and AP5Z1 (B) mRNAs with 250 ng, 50 ng, and 10 ng of input RNA. Representative Sanger sequencing plots are shown on the left panel, with mutation sites marked with asterisks. The mutation rates are quantified on the right panel. (C) Flowchart illustrating cell viability analysis by CCK8 reagent after DRAM transfection in HEK293T cells. (D) Quantitative comparison of the relative proliferative capacity of DRAM-expressing and untransfected cells. (E, F) The expression levels of DRAM-CBE (E) and DRAM-ABE (F) systems at different plasmid transfection concentrations were verified by western blotting. (G, H) Editing of RPSA (G) and AP5Z1 (H) mRNA at varying concentrations of DRAM protein expression. The left panels indicate Sanger sequencing results following RT-PCR, while the corresponding quantifications of DRAM-induced mutations are shown in the right panels.\n\nTransfection of the DRAM system in cells results in the transient overexpression of fusion proteins. To investigate how varying expression levels of these proteins influence A-to-G and C-to-U editing within the same m5C region, we conducted a gradient transfection using plasmid concentrations of 1500 ng, 1000 ng, and 500 ng. This approach allowed us to progressively reduce the expression levels of the fusion proteins (Figure 5E and F). Sanger sequencing revealed that the editing efficiency of A-to-G and C-to-U within the m5C region significantly decreased as fusion protein expression diminished (Figure 5G and H). These findings suggest that the transfection efficiency of the DRAM system is concentration-dependent and that the ratio of editing efficiency to transfection efficiency may assist in the quantitative analysis of m5C using the DRAM system.\n\n## Discussion\n\nIn recent years, m5C methylation modifications have received increasing attention, with multiple reports detailing the distribution of RNA m5C methylation modifications across various species and tissues, elucidating their characteristics. Despite the relatively low abundance of m5C, its highly dynamic changes hold significant implications for the regulation of physiological and pathological processes (Yang et al., 2017; Huang et al., 2019; Liu et al., 2021). However, due to the limitations of sequencing methods and the variability of data processing, there remains ample room for progress in the study of m5C detection methods.\n\nIn this study, we developed a site-specific, depth-sequencing-free m5C detection method using DRAM-Sanger. This workflow relies on conventional molecular biology assays such as RT-PCR and Sanger sequencing, eliminating the need for specialized techniques and thereby simplifying the process of m5C detection.\n\nDRAM-seq introduces a novel strategy for transcriptome-wide m5C detection, overcoming inherent limitations in existing methods. Notably, DRAM-seq covered around 80% of the high-confidence m5C-modified genes detected by BS-seq and identified more potential m5C sites. This can be attributed to the avoidance of bisulfite treatment by DRAM-seq, preventing RNA damage and ensuring a more comprehensive representation of RNA samples. This feature also likely contributes to the observed stability of DRAM-seq in comparison to BS-seq. Additionally, DRAM-seq is not limited by antibody specificity and is resistant to chemical-induced damage.\n\nA prominent challenge in existing m5C profiling methods is their reliance on substantial amounts of input RNA samples. In contrast, DRAM operates through the deamination activity of deaminase, preserving RNA integrity and preventing degradation. The notable advantage of DRAM lies in its capacity for low-input m5C detection. Our analysis demonstrates that DRAM requires as low as 10 ng of total RNA for m5C detection. While DRAM is currently well suited for detecting m5C on a transcriptome-wide scale, the potential for future applications involving third-generation sequencing could extend its utility to individual mRNAs, particularly m5C heterogeneity on mRNA splicing variants. In addition, the DRAM system depends on the specific recognition of m5C modifications on ssRNA by the reader protein, theoretically avoiding the false-positive effects of 5-hydroxymethylation modifications in other assays, such as BS-seq (Huang et al., 2019; Trixl et al., 2019; Schaefer et al., 2009). This potential feature could enhance the accuracy of the DRAM assay, albeit it still requires careful validation.\n\nIn our study, m5C detection was performed following the transient transfection of the DRAM detection system into mammalian cells, which might result in a lower mutation rate at the corresponding site. Therefore, employing lentiviral-mediated transfection into cell lines of interest could potentially enhance the efficiency of m5C detection. Our results confirm that YBX1 and ALYREF exhibit specificity as m5C readers, binding preferentially to RNAs with m5C modifications, thereby validating the reliability of the DRAM detection system. However, mutations in the key amino acids responsible for m5C binding reduced their affinity while retaining some binding capacity. DRAM-seq analysis identified a substantial number of m5C sites. However, we cannot exclude the potential existence of false-positive sites resulting from nonspecific binding of the m5C reader. Further elucidation of the key amino acids directing ALYREF and YBX1\u2019s binding to m5C methylation sites should enable more accurate and sensitive m5C detection by DRAM-seq. Due to the lack of a fixed base composition for characterizing all m5C modification sites, DRAM has an apparent limitation in achieving single-base resolution for detecting m5C. This technical constraint may explain the absence of identifiable sequence specificity in our analysis of m5C sites catalyzed by NSUN2 and NSUN6, despite previous reports associating these methyltransferases with \u2018G\u2019-rich sequences and the \u2018CUCCA\u2019 motif (Selmi et al., 2021). However, our present study proved that the measuring resolution of DRAM is around 40 nt, which facilitates higher precision than that of m5C-RIP-seq (~100 nt). In the future, with more in-depth analyses of m5C reader structures and the identification of new potential m5C readers, we expect to achieve more precise m5C localization and more comprehensive m5C modification detection. Moreover, the substitution of deaminases, such as A3A and A3G (the family members of APOBEC), could also potentially enhance the efficiency of the DRAM detection (Kim et al., 2023; Barka et al., 2022; Pan et al., 2017).\n\nAlthough the m5C assay can be performed using the DRAM system alone, comparing it with the DRAMmut and deaminase controls could enhance the accuracy of m5C detection in specific regions. Given that the expression of DRAM fusion proteins significantly influences m5C detection, it is advisable to transfect the same batch of cells during the assay to ensure consistent transfection efficiency across experimental groups and thus can better standardize the detection.\n\nOne future direction of endeavor is the purification of DRAM fusion proteins to facilitate in vitro detection of RNA m5C methylation, which could extend the scope of DRAM-seq to diverse sample types. Another potential application for DRAM-seq could be the expression of drug-inducible DRAM systems in vivo using various animal models for m5C analysis. These will together provide novel insights into m5C modifications for biological and clinical research.\n\n### Conclusions\n\nIn summary, we developed a novel deaminase and reader protein-assisted RNA m5C methylation approach that detects the m5C region by deaminating As or Cs in close proximity to the m5C sites, which does not rely on antibodies or bisulfite, thus leading to unprecedently comprehensive transcriptome-wide RNA m5C methylation profiling. We anticipated that this system could pave the way for uncovering further biological functions of m5C modifications and facilitate the development of therapeutic interventions for associated diseases.\n\n## Materials and methods\n\n### Plasmid construction\n\nALYREF and YBX1 expression plasmids were purchased from MIAOLING BIOLOGY (http://www.miaolingbio.com/), and the ALYREF and YBX1 fractions were then amplified using specific primer. The ALYREF and YBX1 portions were amplified using pCMV-APOBEC1-YTH (RRID:Addgene_131636) and ABE8e (RRID:Addgene_138489) to amplify the deaminase portion and the essential plasmid construct proxies, and finally the fragments were recombined by the ClonExpress Ultra One Step Cloning Kit to complete the plasmid vector construction. Both DRAMmut-ABE- and DRAMmut-CBE-related vectors were obtained by introducing the corresponding key amino acid mutations using Fast Site-Directed Mutagenesis Kit (TIANGEN Biotech). The primer sequences used are listed in Supplementary file 4.\n\n### Cell culture and plasmid transfection\n\nHEK293T cell line (ATCC) was cultured in Dulbecco\u2019s Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum (CLARK BIOSCIENCE) and 1% penicillin (100 U/ml)-streptomycin (100 \u03bcg/ml). The cells were seeded in 12-well plates and transfected using Hieff Trans Liposomal Transfection Reagent (Yeasen).\n\nNSUN2-depleted cell lines were generated by cloning NSUN2-targeting single guide RNA sequences into the pSpCas9(BB)-2A-Puro (PX459) V2.0 plasmid (RRID:Addgene_62988). Plasmids were then transfected into HEK293T cells and Puromycin (Meilunbio) was added at a final concentration of 3 \u03bcg/ml to enrich the positively transfected cells 24 hr after transfection. After 72 hr, the cells were collected and used for genotyping by Sanger sequencing. NSUN6-depleted cell lines were generated in the same way. The primers used for genotyping and single guide RNA sequences are listed in Supplementary file 4.\n\n### Cell viability measurements\n\nHEK293T cells were transfected with DRAM plasmid and cultured at 37\u00b0C for 24 hr. Subsequently, 1000 cells were seeded in 96-well plates. After waiting for the cells to attach to the wall, the cell activity was detected by Cell Counting Kit-8 (Meilunbio). Cell Counting Kit-8 contains WST-8, which in the presence of the electronically coupled reagent 1-Methoxy PMS can be reduced by mitochondrial dehydrogenase to the orange-colored metazan product Formazan, the absorbance of which is measured at 450 nm to analyze cellular activity.\n\n### Western blotting\n\nFor protein blotting, samples were lysed in RIPA Lysis Buffer (Meilunbio) with phenylmethanesulfonyl fluoride, and the BCA protein assay kit (Beyotime Biotechnology) was used to measure protein concentration. Total protein extracts were separated by SDS-PAGE on a 10% gel and then transferred to 0. 45 nm polyvinylidene fluoride membranes (Boster). Subsequently, the proteins were probed with specific antibodies after the blot was blocked with 5% nonfat milk (Boster). Images were quantified using ImageJ software and all data are expressed as mean \u00b1 SEM.\n\nThe following antibodies and concentrations were used: NSUN2 Polyclonal antibody (Proteintech; Cat No. 20854-1-AP; 1:7500), NSUN6 Polyclonal antibody (Proteintech; Cat No. 17240-1-AP; 1:2000), RabbitAnti-GAPDH antibody (Bioss; bs-41373R; 1:2000), Alpha Tubulin Polyclonal antibody (Proteintech; Cat No. 11224-1-AP; 1:2000), HRP-labeled Goat Anti-Rabbit IgG(H+L) (Beyotime Biotechnology; A0208; 1:2000).\n\n### cDNA synthesis and Sanger sequencing\n\nTotal cellular RNA was extracted with TRIzol reagent (TIANGEN Biotech) and cDNA was synthesized using PrimeScript II 1st Strand cDNA Synthesis Kit (Takara Bio) according to the manufacturer\u2019s recommendations. PCR was then performed using 2\u00d7Taq PCR MasterMix II (TIANGEN Biotech) and primers flanking m5C target sites, and the purified PCR products were directly sequenced by Sanger sequencing. The Sanger sequencing results were analyzed using EditR 1.0.10 to calculate the mutation frequency (Kluesner et al., 2018). The primers used in this study are shown in Supplementary file 4.\n\n### Real-time quantitative PCR\n\ncDNA was synthesized using FastKing RT kit (with gDNase) (TIANGEN Biotech) according to the manufacturer\u2019s recommendations. RT-qPCR assay was performed using SuperReal PreMix Plus (SYBR Green) (TIANGEN Biotech). GAPDH was used as an endogenous control, and the expression levels were normalized to the control and calculated by the 2-\u0394\u0394Ct formula. All samples were analyzed in triplicate and each mRNA quantification represents the average of at least three measurements. All data are expressed as mean \u00b1 SEM. The primers used in this study are shown in Supplementary file 4.\n\n### Protein structure modeling\n\nProtein structure simulations were performed using the SWISS-MODEL online website (https://swissmodel.expasy.org/interactive) (Bienert et al., 2017). The SWISS-MODEL database is able to provide up-to-date annotated 3D protein models, which are generated from automated homology modeling of related model organisms and experimental structural information for all sequences in UniProtKB, with reliable structural information, and subsequently protein structure observations were performed using PyMOL (Delano, 2002).\n\n### BS-seq PCR\n\nWe referenced BS-seq PCR, an assay established by Schaefer et al. We chemically deaminated cytosine in RNA using the EZ RNA methylation kit (50) (Zymo Research) and then quantified m5C methylation levels based on PCR amplification of cDNA combined with deep sequencing (Schaefer et al., 2009).\n\nRNA Conversion Reagent was premixed with prepared RNA samples, and the RNA was denatured at 70\u00b0C for 5 min, followed by a reaction period of 45 min at 54\u00b0C. Finally, the purified RNA samples were recovered after desulfurization by RNA Desulphonation Buffer. cDNA was synthesized using PrimeScript II 1st Strand cDNA Synthesis Kit (Takara Bio) according to the manufacturer\u2019s recommendations. PCR was then performed using 2\u00d7EpiArt HS Taq Master Mix (Dye Plus) (Vazyme) and m5C target site-specific Bisulfite Primer (primer sequences were designed at https://zymoresearch.eu/pages/bisulfite-primer-seeker), the products were purified by TIANgel Midi Purification Kit (TIANGEN Biotech), and the connectors for second-generation sequencing were attached at both ends of the products for sequencing. Finally, deep sequencing was performed by HiTOM analysis to detect the methylation level (the number of reads>1000 in deep sequencing) (Liu et al., 2019). The primers used in this study are shown in Supplementary file 4.\n\n### Library construction and next-generation sequencing\n\n1 \u03bcg of total cellular RNA was used for sequencing library generation by NEBNext Ultra RNA Library Prep Kit for Illumina (NEB, USA, Catalog #: E7530L) following the manufacturer\u2019s recommendations and index codes were added to attribute sequences to each sample. Briefly, mRNA was purified from total RNA using poly-T oligo-attached magnetic beads. Fragmentation was carried out using divalent cations under elevated temperature in NEB Next First Strand Synthesis Reaction Buffer(5\u00d7). First-strand cDNA was synthesized using random hexamer primer and M-MuLV Reverse Transcriptase (RNase H). Second-strand cDNA synthesis was subsequently performed using DNA Polymerase I and RNase H. Remaining overhangs were converted into blunt ends via exonuclease/polymerase activities. After adenylation of 3\u2019 ends of DNA fragments, NEB Next Adaptor with hairpin loop structure was ligated to prepare for hybridization. To select cDNA fragments of preferentially 370\u2013420 bp in length, the library fragments were purified with AMPure XP system (Beverly, USA). Then, 3 \u00b5l USER Enzyme (NEB, USA) was used with size-selected, adaptor-ligated cDNA at 37\u00b0C for 15 min followed by 5 min at 95\u00b0C before PCR. Then PCR was performed with Phusion High-Fidelity DNA polymerase, Universal PCR primers, and Index (X) Primer. At last, PCR products were purified (AMPure XP system) and library quality was assessed on the Agilent 5400 system (Agilent, USA) and quantified by qPCR (library concentration\u22651.5 nM). The qualified libraries were pooled and sequenced on Illumina platforms with PE150 strategy in Novogene Bioinformatics Technology Co., Ltd (Beijing, China), according to effective library concentration and data amount required.\n\n### DRAM-seq analysis and calling of edited sites\n\nThe raw fastq sequencing data were cleaned by trimming the adapter sequences using Fastp (v0.23.1) and were aligned to the human genome (hg19) using STAR (v2.7.7) in paired-end mode. The aligned BAM files were sorted and PCR duplicates were removed using Samtools (v1.12). The cite calling of DRAM-seq was performed using Bullseye, a previously customized pipeline to look for C-to-U or A-to-G edited sites throughout the transcriptome (Meyer, 2019). Briefly, the sorted and deduplicated BAM files were initially parsed by parseBAM.pl script.\n\nThen, Find_edit_site.pl script was employed to find C-to-U or A-to-G editing events by DRAM-seq with at least 10 reads of coverage, an edit ratio of 5\u201395%, an edit ratio at least 1.5-fold higher than NSUN2 or NSUN6-knockout samples, and at least two editing events at a given site. Sites that were only found in one replicate of each DRAM protein variant were removed. Editing events appeared in cells expressing merely APOBEC1 or TadA8e were also removed. For high-confidence filtering, we further adjusted the Find_edit_site.pl parameters to the edit ratio of 10\u201360%, an edit ratio of control samples at least twofold higher than NSUN2 or NSUN6-knockout samples, and at least four editing events at a given site.\n\n### Metagene and motif analyses\n\nMetagene analysis was performed using hg19 annotations according to previously reported tool, MetaplotR (Olarerin-George and Jaffrey, 2017). For motif analysis, the 20 bp flanking sequence of each DRAM-seq editing site was extracted by Bedtools (v2.30.0) (Quinlan and Hall, 2010). The motif logos were then plotted by WebLogo (v3.7.12) (Crooks et al., 2004).\n\n### Replicates analysis\n\nIndependent biological replicates of DRAM-ABE or DRAM-CBE in DRAM-seq analysis were separately compared by computing the Pearson correlation coefficient between the number of C-to-U mutations per mRNA between any two replicate experiments.\n\n### GO and KEGG analysis\n\nGO and KEGG analysis of DRAM-seq edited mRNAs was performed using the DAVID bioinformatic database (Sherman et al., 2022). GO terms with a p value of less than 0.05 were considered statistically significant.\n\n### RNA pull-down assay\n\nThe biotin-labeled RNA oligonucleotides with (oligo-m5C) or without m5C (oligo-C) were prepared in advance: 5\u2032-biotin-GAGGUAUGAAXUGUAAGTT-3\u2032 (X=C or m5C, used in the ALYREF and ALYREFmut group) and 5\u2032-biotin-GAAAGGAGAUXGCCAUUAUCC-3\u2032 (X=C or m5C, used in the YBX1 and YBX1mut group). Protein lysates were then isolated from HEK293T cells transfected with DRAM-YBX1, DRAM-YBX1mut, DRAM-ALYREF, or DRAM-ALYREFmut for 24 hr using lysis buffer. RNA pull-down assays were performed with the Pierce Magnetic RNA-Protein Pull-Down Kit (Thermo) following the manufacturer\u2019s instructions, and the results were finally analyzed by western blotting.\n\n### Statistical analysis\n\nAll data are expressed as mean \u00b1 SEM of three independent determinations. Data were analyzed through a two-tailed t-test. A probability of p<0.05 was considered statistically significant; *, p<0.05, **, p<0.01, ***, p<0.001, and ****, p<0.0001 denote the significance thresholds; ns denotes not significant.\n",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Detlef Weigel, Max Planck Institute for Biology T\u00fcbingen Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98166.5.sa0](https://doi.org/10.7554/eLife.98166.5.sa0)\n\nThis potentially useful study introduces an orthogonal approach for detecting RNA modification, without chemical modification of RNA, which often results in RNA degradation and therefore loss of information. Compared to previous versions, the most recent one is improved and sufficiently aligned with the standards of the field to merit consideration by the research community, making the evidence solid according to said standards. Nevertheless, uncertainty regarding false positive and false negative rates remains, as it does for some of the alternative approaches. With more rigorous validation, the approach might be of particular interest for sites in RNA molecules where modifications are rare.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98166.5.sa1](https://doi.org/10.7554/eLife.98166.5.sa1)\n\nThe fledgling field of epitranscriptomics has encountered various technical roadblocks with implications as to the validity of early epitranscriptomics mapping data. As a prime example, the low specificity of (supposedly) modification-specific antibodies for the enrichment of modified RNAs, has been ignored for quite some time and is only now recognized for its dismal reproducibility (between different labs), which necessitates the development of alternative methods for modification detection. Furthermore, early attempts to map individual epitranscriptomes using sequencing-based techniques are largely characterized by the deliberate avoidance of orthogonal approaches aimed at confirming the existence of RNA modifications that have been originally identified.\n\nImproved methodology, the inclusion of various controls, and better mapping algorithms as well as the application of robust statistics for the identification of false-positive RNA modification calls have allowed revisiting original (seminal) publications whose early mapping data allowed making hyperbolic claims about the number, localization and importance of RNA modifications, especially in mRNA. Besides the existence of m6A in mRNA, the detectable incidence of RNA modifications in mRNAs has drastically dropped.\n\nAs for m5C, the subject of the manuscript submitted by Zhou et al., its identification in mRNA goes back to Squires et al., 2012 reporting on >10.000 sites in mRNA of a human cancer cell line, followed by intermittent findings reporting on pretty much every number between 0 to > 100.000 m5C sites in different human cell-derived mRNA transcriptomes. The reason for such discrepancy is most likely of a technical nature. Importantly, all studies reporting on actual transcript numbers that were m5C-modified relied on RNA bisulfite sequencing, an NGS-based method, that can discriminate between methylated and non-methylated Cs after chemical deamination of C but not m5C. RNA bisulfite sequencing has a notoriously high background due to deamination artifacts, which occur largely due to incomplete denaturation of double-stranded regions (denaturing-resistant) of RNA molecules. Furthermore, m5C sites in mRNAs have now been mapped to regions that have not only sequence identity but also structural features of tRNAs. Various studies revealed that the highly conserved m5C RNA methyltransferases NSUN2 and NSUN6 do not only accept tRNAs but also other RNAs (including mRNAs) as methylation substrates, which in combination account for most of the RNA bisulfite-mapped m5C sites in human mRNA transcriptomes. Is m5C in mRNA only a result of the Star activity of tRNA or rRNA modification enzymes, or is their low stoichiometry biologically relevant?\n\nIn light of the short-comings of existing tools to robustly determine m5C in transcriptomes, other methods, like DRAM-seq, aiming to map m5C independently of ex situ RNA treatment with chemicals, are needed to arrive at a more solid \"ground state\", from which it will be possible to state and test various hypotheses as to the biological function of m5C, especially in lowly abundant RNAs such as mRNA.\n\nImportantly, the identification of >10.000 sites containing m5C increases through DRAM-Seq, increases the number of potential m5C marks in human cancer cells from a couple of 100 (after rigorous post-hoc analysis of RNA bisulfite sequencing data) by orders of magnitude. This begs the question, whether or not the application of these editing tools results in editing artefacts overstating the number of actual m5C sites in the human cancer transcriptome.\n\n[Editors' note: earlier reviews have been provided here: https://doi.org/10.7554/eLife.98166.3.sa1; https://doi.org/10.7554/eLife.98166.2.sa1; https://doi.org/10.7554/eLife.98166.1.sa1]\n",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "356cda2a-8d9c-429a-a592-4a93e33ca438",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C1",
+      "claim": "5-Methylcytosine (m5C) is one of the posttranscriptional modifications in mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "5-Methylcytosine (m5C) is one of the posttranscriptional modifications in mRNA and is involved in the pathogenesis of various diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known fact about m5C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "3dbe9a10-8087-4370-ac74-46d37d31c1f7",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C2",
+      "claim": "m5C is involved in the pathogenesis of various diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "5-Methylcytosine (m5C) is one of the posttranscriptional modifications in mRNA and is involved in the pathogenesis of various diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as established knowledge about m5C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "6a53647a-7afa-45db-aa6f-391fd6869f4e",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C3",
+      "claim": "DRAM is an antibody-free and bisulfite-free approach for m5C detection.",
+      "claim_type": "EXPLICIT",
+      "source": "This antibody-free and bisulfite-free approach provides transcriptome-wide editing regions which are highly overlapped with the publicly available bisulfite-sequencing (BS-seq) datasets and allows for a more stable and comprehensive identification of the m5C loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the technical characteristics of the DRAM method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "c2c63fa7-248b-4eae-b841-2cd095ff29ad",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C4",
+      "claim": "DRAM provides transcriptome-wide editing regions that are highly overlapped with publicly available BS-seq datasets.",
+      "claim_type": "EXPLICIT",
+      "source": "This antibody-free and bisulfite-free approach provides transcriptome-wide editing regions which are highly overlapped with the publicly available bisulfite-sequencing (BS-seq) datasets and allows for a more stable and comprehensive identification of the m5C loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison with published BS-seq data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "384c0a73-d601-4e71-b3b5-a97e176fc104",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C5",
+      "claim": "DRAM system supports ultralow input RNA (10 ng).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, DRAM system even supports ultralow input RNA (10 ng).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated experimentally in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "47ae6d86-57ff-4368-b1c8-5e7ccd6ceefc",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C6",
+      "claim": "More than 170 RNA modifications have been identified.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 170 RNA modifications have been identified, mainly including m6A, m5C, m1A, m7G, and others (Wiener and Schwartz, 2021; Li and Mason, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "97007166-903f-4945-baab-b03399eeffef",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C7",
+      "claim": "RNA m5C methylation is observed across different RNA types including tRNA, mRNA, rRNA, vault RNA, microRNA, long noncoding RNA, and enhancer RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, RNA m5C methylation represents a crucial posttranscriptional modification observed across different RNA types, such as tRNA, mRNA, rRNA, vault RNA, microRNA, long noncoding RNA, and enhancer RNA (Van Haute et al., 2019; Blaze et al., 2021; Yang et al., 2017; Sharma et al., 2013; Hussain et al., 2013; Aguilo et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "748ce970-5f8d-4889-92ff-32c778cd1558",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C8",
+      "claim": "m5C has multiple molecular functions in key stages of RNA metabolism including mRNA stability, translation, and nuclear export.",
+      "claim_type": "EXPLICIT",
+      "source": "Numerous studies have revealed multiple molecular functions of m5C in numerous key stages of RNA metabolism, such as mRNA stability, translation, and nuclear export (Yang et al., 2017; Yang et al., 2019; Garc\u00eda-V\u00edlchez et al., 2019; Trixl and Lusser, 2019; Boo and Kim, 2020; Courtney et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "528c6927-c554-4c53-819d-6026343d89f9",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C9",
+      "claim": "Dynamic alterations of m5C play integral roles in early embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic alterations of m5C play integral roles in many physiological and pathological processes, such as early embryonic development (Liu et al., 2022), neurodevelopmental disorder (Chen et al., 2019b; Flores et al., 2017), and multifarious tumorigenesis and migration (Chen et al., 2022; Chen et al., 2019a; Yang et al., 2021; Li et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liu et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "4c410c70-3b85-47fe-8753-c9c098503eac",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C10",
+      "claim": "Dynamic alterations of m5C play integral roles in neurodevelopmental disorder.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic alterations of m5C play integral roles in many physiological and pathological processes, such as early embryonic development (Liu et al., 2022), neurodevelopmental disorder (Chen et al., 2019b; Flores et al., 2017), and multifarious tumorigenesis and migration (Chen et al., 2022; Chen et al., 2019a; Yang et al., 2021; Li et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Chen et al., 2019b and Flores et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "010b20e3-0366-4613-82c4-1a8e07439d2b",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C11",
+      "claim": "Dynamic alterations of m5C play integral roles in tumorigenesis and migration.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic alterations of m5C play integral roles in many physiological and pathological processes, such as early embryonic development (Liu et al., 2022), neurodevelopmental disorder (Chen et al., 2019b; Flores et al., 2017), and multifarious tumorigenesis and migration (Chen et al., 2022; Chen et al., 2019a; Yang et al., 2021; Li et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies on cancer.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "b9cda3c5-eb3b-4c89-a08e-9175bcdd2fe3",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C12",
+      "claim": "m5C modification significantly contributes to the regulation of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, this modification significantly contributes to the regulation of gene expression (Yang et al., 2017; Yang et al., 2019; Garc\u00eda-V\u00edlchez et al., 2019; Trixl and Lusser, 2019; Boo and Kim, 2020; Courtney et al., 2019; Chen et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "bb6c5205-282e-452f-9db8-652116fe6ab1",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C13",
+      "claim": "Bisulfite-sequencing (BS-seq) has been proven to be the gold standard method for RNA m5C methylation analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To date, bisulfite-sequencing (BS-seq) has been proven to be the gold standard method for RNA m5C methylation analysis (Yang et al., 2017; Huang et al., 2019; Trixl et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies establishing BS-seq as the standard.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "e00cf756-bf58-451b-aec8-d011f4b8c562",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C14",
+      "claim": "BS-seq chemically deaminates unmethylated cytosine to uracil while keeping methylated cytosine unchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "This approach chemically deaminates unmethylated cytosine to uracil, while keeping methylated cytosine unchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the established mechanism of BS-seq.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "87a304d6-bd18-4289-aae8-144abcd86d6f",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C15",
+      "claim": "Bisulfite treatment in BS-seq is extremely detrimental to RNA, resulting in unstable detection of m5C in low abundance RNA or highly structured RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "However, bisulfite treatment of BS-seq is extremely detrimental to RNA, thus resulting in unstable detection of m5C in low abundance RNA or highly structured RNA, which directly affects the confidence of results (Schaefer et al., 2009; Amort and Lusser, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies documenting limitations of BS-seq.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "dfac9310-6e17-4133-9d98-8c891a0f4245",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C16",
+      "claim": "Antibody-based m5C detection methods are unable to recognize methylation on mRNAs with low abundance and secondary structure.",
+      "claim_type": "EXPLICIT",
+      "source": "These methods are unable to recognize methylation on mRNAs with low abundance and secondary structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes limitations of antibody-based methods based on their technical characteristics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "67bca86e-9d62-4c76-ac43-f393185a66de",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C17",
+      "claim": "Antibody-based m5C detection methods are highly dependent on antibody specificity, which usually leads to unspecific binding of RNA and a low amount of m5C-modified regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, these methods are highly dependent on antibody specificity, which usually leads to unspecific binding of RNA and a low amount of m5C-modified regions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes known limitations of antibody-based approaches.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "baa0fb4e-a90e-43cf-abbb-cc486441702b",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C18",
+      "claim": "TAWO-seq is capable of m5C analysis but highly depends on the oxidation efficiency of perovskite, which usually causes false positives and unstable conversion.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, TAWO-seq, originally developed for the identification of hm5C, is also capable of m5C analysis, but it highly depends on the oxidation efficiency of perovskite, which usually causes false positives and unstable conversion (Yuan et al., 2019; Hayashi et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on TAWO-seq.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "198403f2-9579-4549-8ad7-800312dd893e",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C19",
+      "claim": "Nanopore-seq can directly map m5C by tracking the characteristic changes of bases but faces challenges of a high error rate.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the emerging third-generation sequencing, such as Nanopore-seq, can directly map m5C by tracking the characteristic changes of bases, but it still faces challenges of a high error rate (Harel et al., 2019; Chang et al., 2021; Wan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on Nanopore sequencing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "739c9814-bb8a-4be4-b190-8b2f7b2d6321",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C20",
+      "claim": "ALYREF is the initially recognized nuclear m5C reader that binds directly to m5C sites in mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-binding protein ALYREF is the initially recognized nuclear m5C reader that binds directly to m5C sites in mRNA and plays key roles in promoting mRNA nuclear export or tumor progression (Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "050ceabc-e20f-47e9-8a2e-898a230a2a62",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C21",
+      "claim": "ALYREF plays key roles in promoting mRNA nuclear export or tumor progression.",
+      "claim_type": "EXPLICIT",
+      "source": "The RNA-binding protein ALYREF is the initially recognized nuclear m5C reader that binds directly to m5C sites in mRNA and plays key roles in promoting mRNA nuclear export or tumor progression (Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "700e9968-fff1-445e-ad1a-672a1741e4a1",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C22",
+      "claim": "YBX1 can recognize m5C-modified mRNA through its cold-shock domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Another well-known m5C reader, YBX1, can also recognize m5C-modified mRNA through its cold-shock domain and participates in a variety of RNA-dependent events such as mRNA packaging, mRNA stabilization, and translational regulation (Yang et al., 2019; Chen et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yang et al., 2019 and Chen et al., 2019a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "4dde74ce-7a68-45d8-ab0d-37277eb5aefb",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C23",
+      "claim": "YBX1 participates in mRNA packaging, mRNA stabilization, and translational regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "Another well-known m5C reader, YBX1, can also recognize m5C-modified mRNA through its cold-shock domain and participates in a variety of RNA-dependent events such as mRNA packaging, mRNA stabilization, and translational regulation (Yang et al., 2019; Chen et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yang et al., 2019 and Chen et al., 2019a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "911cc0b6-4fea-4104-bbb2-9f80b0aeee35",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C24",
+      "claim": "ALYREF and YBX1 had a more prominent binding ability to m5C-modified oligonucleotides compared to unmodified oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "RNA affinity chromatography and mass spectrometry analyses using biotin-labeled oligonucleotides with or without m5C were performed in previous reports, which indicated that ALYREF and YBX1 had a more prominent binding ability to m5C-modified oligonucleotides (Yang et al., 2017; Chen et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "1e6db04d-cf03-4f03-90b6-2e6c2e1ab1b6",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C25",
+      "claim": "YBX1 can preferentially recognize mRNAs with m5C modifications via key amino acids W65-N70 (WFNVRN).",
+      "claim_type": "EXPLICIT",
+      "source": "YBX1 can preferentially recognize mRNAs with m5C modifications via key amino acids W65-N70 (WFNVRN) (Chen et al., 2019a), while K171 is essential for the specific binding of ALYREF to m5C sites (Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chen et al., 2019a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "587b411d-9736-4234-8c8a-eb6806da7ab7",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C26",
+      "claim": "K171 is essential for the specific binding of ALYREF to m5C sites.",
+      "claim_type": "EXPLICIT",
+      "source": "YBX1 can preferentially recognize mRNAs with m5C modifications via key amino acids W65-N70 (WFNVRN) (Chen et al., 2019a), while K171 is essential for the specific binding of ALYREF to m5C sites (Yang et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Yang et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "d4f1ee46-70b4-4411-982d-5038fa1b5151",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C27",
+      "claim": "Mutations in key amino acids responsible for recognizing m5C binding in ALYREF and YBX1 lead to a significant reduction in their binding levels to m5C-containing oligonucleotides.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that mutations in key amino acids responsible for recognizing m5C binding in ALYREF and YBX1 lead to a significant reduction in their binding levels to m5C-containing oligonucleotides (Yang et al., 2017; Chen et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "ffb228ce-390d-4d91-86cb-f69a4e1559fa",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C28",
+      "claim": "APOBEC1 can specifically catalyze the deamination of cytosine in single-stranded RNA (ssRNA) or DNA (ssDNA) to uracil.",
+      "claim_type": "EXPLICIT",
+      "source": "APOBEC1, an evolutionarily conserved family member of APOBEC proteins, can specifically catalyze the deamination of cytosine in single-stranded RNA (ssRNA) or DNA (ssDNA) to uracil (Rosenberg et al., 2011; Qian et al., 1998; Siriwardena et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies on APOBEC1.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "5c397985-3adf-45b4-823c-00078e07d868",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C29",
+      "claim": "TadA8e induces conversion of adenine to inosine (eventually read as guanine by transcriptases) in ssRNA or ssDNA.",
+      "claim_type": "EXPLICIT",
+      "source": "TadA8e is an adenine deaminase optimized through reengineering of TadA and it induces conversion of adenine to inosine (eventually read as guanine by transcriptases) in ssRNA or ssDNA (Richter et al., 2020; Gaudelli et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on TadA8e.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "c013ddbe-4ed6-4d95-bad9-14de891d1b14",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C30",
+      "claim": "APOBEC1 and TadA8e have been employed for the development of precise and efficient base editors such as CBE and ABE8e.",
+      "claim_type": "EXPLICIT",
+      "source": "APOBEC1 and TadA8e, with their prominent deamination efficiency, have been employed for the development of precise and efficient base editors such as CBE and ABE8e, which find widespread application in studies related to genome editing (Siriwardena et al., 2016; Richter et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on base editors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "6876bced-b54e-4c5c-af2a-1077022f812a",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C31",
+      "claim": "DRAM-ABE and DRAM-CBE were properly expressed in HEK293T cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that DRAM-ABE and DRAM-CBE were properly expressed in HEK293T cells (Figure 2\u2014figure supplement 1A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by fluorescence microscopy data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "8bea665f-c6e6-4c32-961e-3b09b44748a0",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C32",
+      "claim": "Approximately 60% of cells were GFP-positive after DRAM transfection.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, flow cytometry that displayed \u223c60% of cells were GFP-positive (Figure 2\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by flow cytometry data shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "c856f44e-69b6-41b6-92eb-7e72a1969bd0",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C33",
+      "claim": "The m5C fraction of RPSA is 75.5%.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep sequencing results showed that the m5C fraction of RPSA and SZRD1 was 75.5% and 27.25%, respectively (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by BS-seq PCR deep sequencing data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "0e3e6353-d780-4fe4-b58b-c9e05d8d25df",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C34",
+      "claim": "The m5C fraction of SZRD1 is 27.25%.",
+      "claim_type": "EXPLICIT",
+      "source": "The deep sequencing results showed that the m5C fraction of RPSA and SZRD1 was 75.5% and 27.25%, respectively (Figure 2A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by BS-seq PCR deep sequencing data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "4c51df05-9975-4cb0-9361-9d428026c6c6",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C35",
+      "claim": "DRAM-ABE induced an A-to-G editing rate of 14.7% near the m5C site in RPSA mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, adenine close to the m5C site in RPSA mRNA was mutated into guanine, resulting in an A-to-G editing rate of 14.7% by DRAM-ABE, whereas this was rarely observed with TadA-8e or DRAMmut-ABE (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Sanger sequencing data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "09f8b0ff-b268-4868-9e6b-e37339e7b187",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C36",
+      "claim": "DRAM-CBE induced 13.6% C-to-U editing in the vicinity of the m5C site in AP5Z1 mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "DRAM-CBE induced C-to-U editing in the vicinity of the m5C site in AP5Z1 mRNA, with 13.6% C-to-U editing, while this effect was significantly reduced with APOBEC1 or DRAMmut-CBE (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Sanger sequencing data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "17eba17c-0994-4bee-8c31-91becd5b9434",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C37",
+      "claim": "The DRAM system is more suitable for mRNA m5C detection than for tRNA or rRNA m5C detection.",
+      "claim_type": "EXPLICIT",
+      "source": "But Sanger sequencing showed that there was no valid A-to-G/C-to-U mutation detected, which is most likely due to the fact that ALYTEF and YBX1 are mainly responsible for the mRNA m5C binding proteins, and thus the DRAM system is more suitable for the mRNA m5C detection (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the lack of mutations detected in tRNA and rRNA samples.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "dcd34d5e-529d-4d63-a6be-a75be2375809",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C38",
+      "claim": "YBX1 and ALYREF preferentially bound RNAs containing m5C modifications.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous reports (Yang et al., 2017; Chen et al., 2019a), those two m5C readers preferentially bound RNAs containing m5C modifications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by RNA pull-down experiments and supported by citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "3a9ff735-7ace-4fa0-9643-88f219cc61a4",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C39",
+      "claim": "Mutating key amino acids involved in m5C interaction significantly reduced the binding ability of ALYREF and YBX1 to m5C-modified mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutating key amino acids involved in their interaction with m5C significantly reduced their binding ability, indicating that ALYREF and YBX1 exhibit specificity for m5C-methylated mRNAs (Figure 1\u2014figure supplement 1E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by RNA pull-down experiments shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "f4a7c3af-6ed6-4649-8582-2b8d3fff7a26",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C40",
+      "claim": "NSUN2 and NSUN6 were both identified as m5C methyltransferase of mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "NSUN2 (Zhang, 2021) and NSUN6 (Liu et al., 2021), two family members of NOL1/NSUN protein, were both identified as m5C methyltransferase of mRNA (Schumann et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "42e277e0-236d-4bf5-a833-12f703ac02d1",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C41",
+      "claim": "m5C methylation of AP5Z1 is catalyzed by NSUN2.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously demonstrated that m5C methylation of AP5Z1 and RPSA is catalyzed by NSUN2 and NSUN6, respectively (Huang et al., 2019; Fang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "405b1f4c-40ae-4d39-839a-25929d63350e",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C42",
+      "claim": "m5C methylation of RPSA is catalyzed by NSUN6.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been previously demonstrated that m5C methylation of AP5Z1 and RPSA is catalyzed by NSUN2 and NSUN6, respectively (Huang et al., 2019; Fang et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "a03def50-9370-4eee-b835-2a57c863fc33",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C43",
+      "claim": "C-to-U or A-to-G mutations near m5C sites were significantly reduced in methyltransferase-deficient cells compared with WT cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, Sanger sequencing following RT-PCT showed a significant reduction in C-to-U or A-to-G mutations near the m5C sites in methyltransferase-deficient cells compared with WT cells (Figure 2G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Sanger sequencing data shown in Figures 2G and 2H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "f18cbb2e-e9cd-4e09-b271-d1888e82b222",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C44",
+      "claim": "DRAM-seq editing events were enriched in the vicinity of BS-seq m5C sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Examination of multiple reported high-confidence RNA m5C sites showed that DRAM-seq editing events were also enriched in the vicinity of the BS-seq sites (Figure 3B and C, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by IGV browser traces comparing DRAM-seq and BS-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "80376bb4-ad12-4538-b3c9-f5abf08a1b16",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C45",
+      "claim": "Knockout cells exhibited overall rare DRAM-seq editing events close to m5C sites in mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the knockout cells exhibited overall rare DRAM-seq editing events close to m5C sites in other mRNAs (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by IGV browser traces shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "114c6bd4-0486-4f7a-bb4c-32a8b8588e6c",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C46",
+      "claim": "Three biological replicates from each experimental group revealed a strong reproducibility of A-to-G/C-to-U mutations in HEK293T cells expressing DRAM-ABE and DRAM-CBE.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of three biological replicates from each experimental group revealed a strong reproducibility of A-to-G/C-to-U mutations in HEK293T cells expressing DRAM-ABE and DRAM-CBE (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by correlation analysis shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "2f0c09db-91ce-4bfe-a966-20a27b9e67e3",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C47",
+      "claim": "DRAM-edited mRNAs revealed a high degree of overlap across the three biological replicates.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the DRAM-edited mRNAs revealed a high degree of overlap across the three biological replicates (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Venn diagram analysis shown in the referenced figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "cab196ae-833f-43ec-97c2-986109aff88a",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C48",
+      "claim": "55.32% of ALYREF-regulated mRNAs can be detected by the DRAM system.",
+      "claim_type": "EXPLICIT",
+      "source": "And a recent study by Wang et al. showed that ALYREF deletion affects the expression of 94 mRNAs (Wang et al., 2023), and only 55.32% of these ALYREF-regulated mRNAs can be detected by the DRAM system (Figure 2\u2014figure supplement 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by comparison with data from Wang et al., 2023.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "aa9cc1a0-104b-4769-ba47-c7a1d4e67b32",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C49",
+      "claim": "DRAM-seq editing events in cells expressing DRAM-ABE and DRAM-CBE were primarily located in the CDS and 3'UTR.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed that DRAM-seq editing events in cells expressing DRAM-ABE and DRAM-CBE were primarily located in the CDS and 3'UTR, indicating a nonrandom distribution of m5C (Figure 3G, Figure 3\u2014figure supplement 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by distribution analysis shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "67a39df4-271a-41c5-9a71-979dc79e16e5",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C50",
+      "claim": "DRAM-seq editing sites showed significant enrichment in the CDS.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, plotting the distribution of DRAM-seq editing sites in mRNA segments (5'UTR, CDS, and 3'UTR) highlighted a significant enrichment in the CDS (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by density map analysis shown in Figure 3H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "4ba89c2f-b538-482a-90ee-a074172b3416",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C51",
+      "claim": "The likelihood of editing was notably higher in closer proximity to the m5C sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparative analysis of the DRAM-seq editing sites with the previously published BS-seq m5C sites indicated that the likelihood of editing was notably higher in closer proximity to the m5C sites (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by frequency plot analysis shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "e63eda8e-8873-47f7-9aaa-85726f883f00",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C52",
+      "claim": "The editing window of DRAM exhibited enrichment approximately 20 bp before and after the m5C site.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the editing window of DRAM exhibited enrichment approximately 20 bp before and after the m5C site (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by frequency plot analysis shown in Figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "2c1d936c-7c58-44e1-b204-d690645930fc",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C53",
+      "claim": "AC motifs were the most significantly enriched in DRAM-CBE.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigation into the sequences surrounding the editing window revealed that AC motifs were the most significantly enriched in DRAM-CBE, whereas (U/C) A motifs were most notably enriched in DRAM-ABE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by motif analysis of DRAM-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "8cdab725-87cd-4123-91d1-aa8dcecadecb",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C54",
+      "claim": "(U/C) A motifs were most notably enriched in DRAM-ABE.",
+      "claim_type": "EXPLICIT",
+      "source": "Investigation into the sequences surrounding the editing window revealed that AC motifs were the most significantly enriched in DRAM-CBE, whereas (U/C) A motifs were most notably enriched in DRAM-ABE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by motif analysis of DRAM-seq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "5b32ddd7-bbe4-44fb-95c1-054fd56edaf5",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C55",
+      "claim": "APOBEC1 and TadA-8e samples displayed no significantly enriched motifs, with mutations being more randomly orientated.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the APOBEC1 and TadA-8e samples displayed no significantly enriched motifs, with mutations being more randomly orientated (Figure 3J and K).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by motif analysis shown in Figures 3J and 3K.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "ce47b35b-85a2-4eb8-bd4c-4dc2e2e9aaef",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C56",
+      "claim": "DRAM-seq identified the presence of m5C modifications covering 79.6% of the genes detected by Yang et al., 2017.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that DRAM-seq identified the presence of m5C modifications covering 79.6% of the genes detected by Yang et al., 2017, and 91.9% of the genes detected by Huang et al., 2019 (Figure 4B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Venn diagram comparison shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "196ae0c7-dfff-4c73-b188-254c586025fb",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C57",
+      "claim": "DRAM-seq identified the presence of m5C modifications covering 91.9% of the genes detected by Huang et al., 2019.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results indicated that DRAM-seq identified the presence of m5C modifications covering 79.6% of the genes detected by Yang et al., 2017, and 91.9% of the genes detected by Huang et al., 2019 (Figure 4B and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Venn diagram comparison shown in Figure 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "9536e0e0-9bfa-490a-a80e-89003f3a56fa",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C58",
+      "claim": "ATG16L1 coordinates autophagy pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, certain pivotal regulators with diverse biological functions, such as ATG16L1 (coordinates autophagy pathway) (Fletcher et al., 2018) and ARHGEF25 (plays an important role in actin cytoskeleton reorganization) (Guo et al., 2003), were identified by Zhang et al. and DRAM-seq, but not by Yang et al. (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fletcher et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "e3df8922-1a04-457d-9f32-33f3c0515111",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C59",
+      "claim": "ARHGEF25 plays an important role in actin cytoskeleton reorganization.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, certain pivotal regulators with diverse biological functions, such as ATG16L1 (coordinates autophagy pathway) (Fletcher et al., 2018) and ARHGEF25 (plays an important role in actin cytoskeleton reorganization) (Guo et al., 2003), were identified by Zhang et al. and DRAM-seq, but not by Yang et al. (Figure 4C).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Guo et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "0bd3a97c-421a-4fec-ab2b-c2d46cf264ec",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C60",
+      "claim": "FANCD2 maintains chromosome stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, FANCD2 (maintains chromosome stability) (Naim and Rosselli, 2009) and RPL15 (components of the large ribosomal subunit) (Anger et al., 2013; Liang et al., 2020) were discovered by Yang et al. and DRAM-seq, but not by Zhang et al. (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Naim and Rosselli, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "5a8f4c9c-4163-4793-8b03-c6a04d557082",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C61",
+      "claim": "RPL15 is a component of the large ribosomal subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, FANCD2 (maintains chromosome stability) (Naim and Rosselli, 2009) and RPL15 (components of the large ribosomal subunit) (Anger et al., 2013; Liang et al., 2020) were discovered by Yang et al. and DRAM-seq, but not by Zhang et al. (Figure 4E).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Anger et al., 2013 and Liang et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "83f69efa-ac92-4b7e-9c33-291ea43e16c9",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C62",
+      "claim": "m5C RNA-modified genes are involved in the regulation of diverse key biological processes including cell division, cell cycle, mRNA splicing, protein processing in the endoplasmic reticulum, nucleocytoplasmic transport, translation, and DNA repair.",
+      "claim_type": "EXPLICIT",
+      "source": "These results highlighted the involvement of these genes in the regulation of diverse key biological processes, such as cell division, cell cycle, mRNA splicing, protein processing in the endoplasmic reticulum, nucleocytoplasmic transport, translation, DNA repair, and others (Figure 4F and G, Figure 3\u2014figure supplement 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by GO and KEGG analyses shown in the referenced figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "69320a83-ee34-407f-9486-ea08fc395a13",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C63",
+      "claim": "m5C-RIP-seq requires 100\u2013500 ng of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Several experiments have highlighted the requirement of 100\u2013500 ng of RNA for m5C-RIP-seq, while BS-seq necessitates an even more demanding 750\u20131000 ng of RNA (Huang et al., 2019; Cui et al., 2017; Gu and Liang, 1933).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "896e39b0-2a80-4aa3-a926-052cda3d455e",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C64",
+      "claim": "BS-seq necessitates 750\u20131000 ng of RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Several experiments have highlighted the requirement of 100\u2013500 ng of RNA for m5C-RIP-seq, while BS-seq necessitates an even more demanding 750\u20131000 ng of RNA (Huang et al., 2019; Cui et al., 2017; Gu and Liang, 1933).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "a09604c4-a588-402f-98e1-6fbefeaec954",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C65",
+      "claim": "DRAM successfully generated PCR products of RPSA and AP5Z1 mRNAs from cDNAs corresponding to 250 ng, 50 ng, and 10 ng of total RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, we successfully generated PCR products of these two mRNAs from cDNAs corresponding to 250 ng, 50 ng, and 10 ng of total RNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental results with diluted RNA samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "921482f3-52eb-48f9-b593-5ab0db718909",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C66",
+      "claim": "Sanger sequencing demonstrated nearly identical Sanger traces across RNA dilutions of 250 ng, 50 ng, and 10 ng.",
+      "claim_type": "EXPLICIT",
+      "source": "Quantitative analysis by Sanger sequencing demonstrated nearly identical Sanger traces across these dilutions (Figure 5A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by Sanger sequencing data shown in Figures 5A and 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "13641eb3-b5dd-491d-b11a-6a159f341abf",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C67",
+      "claim": "DRAM expression did not adversely affect cell viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, there was no significant difference in the relative proliferative capacity of the cells compared to untransfected cells (NC), indicating that DRAM expression did not adversely affect cell viability (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by CCK8 assay data shown in Figure 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "b2e5b8b7-a45d-473d-bf68-063f7783f9c3",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C68",
+      "claim": "The editing efficiency of A-to-G and C-to-U within the m5C region significantly decreased as fusion protein expression diminished.",
+      "claim_type": "EXPLICIT",
+      "source": "Sanger sequencing revealed that the editing efficiency of A-to-G and C-to-U within the m5C region significantly decreased as fusion protein expression diminished (Figure 5G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by gradient transfection experiments shown in Figures 5G and 5H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "1a45daec-05b2-450b-9c67-fc15874a5c17",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C69",
+      "claim": "The transfection efficiency of the DRAM system is concentration-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "These findings suggest that the transfection efficiency of the DRAM system is concentration-dependent and that the ratio of editing efficiency to transfection efficiency may assist in the quantitative analysis of m5C using the DRAM system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the gradient transfection experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "b7457368-445d-40f7-9507-470e7c4c0d0d",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C70",
+      "claim": "DRAM-seq covered around 80% of the high-confidence m5C-modified genes detected by BS-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, DRAM-seq covered around 80% of the high-confidence m5C-modified genes detected by BS-seq and identified more potential m5C sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparison with BS-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "f4e3761c-ff63-4384-b148-183268adc6f1",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C71",
+      "claim": "DRAM-seq identified more potential m5C sites than BS-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, DRAM-seq covered around 80% of the high-confidence m5C-modified genes detected by BS-seq and identified more potential m5C sites.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by comparison with BS-seq datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "93345586-d163-4396-be92-7df39fbbfaaa",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C72",
+      "claim": "DRAM avoids bisulfite treatment, preventing RNA damage and ensuring a more comprehensive representation of RNA samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This can be attributed to the avoidance of bisulfite treatment by DRAM-seq, preventing RNA damage and ensuring a more comprehensive representation of RNA samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the technical characteristics of DRAM compared to BS-seq.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "14b74955-b11f-4e1a-88df-31ecb6c3c496",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C73",
+      "claim": "DRAM requires as low as 10 ng of total RNA for m5C detection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis demonstrates that DRAM requires as low as 10 ng of total RNA for m5C detection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by experimental results with low-input RNA samples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "8bc99aaa-4aca-486b-a37c-2568f017a35b",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C74",
+      "claim": "The measuring resolution of DRAM is around 40 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our present study proved that the measuring resolution of DRAM is around 40 nt, which facilitates higher precision than that of m5C-RIP-seq (~100 nt).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by analysis of DRAM-seq editing windows.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "732977a6-8410-49df-a2eb-67d8dded9f97",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C75",
+      "claim": "m5C-RIP-seq has a measuring resolution of approximately 100 nt.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our present study proved that the measuring resolution of DRAM is around 40 nt, which facilitates higher precision than that of m5C-RIP-seq (~100 nt).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a comparison to DRAM's resolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "a3417d93-99c1-48b6-87b7-194dc002f2fb",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C76",
+      "claim": "DRAM system depends on the specific recognition of m5C modifications on ssRNA by the reader protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the DRAM system depends on the specific recognition of m5C modifications on ssRNA by the reader protein, theoretically avoiding the false-positive effects of 5-hydroxymethylation modifications in other assays, such as BS-seq (Huang et al., 2019; Trixl et al., 2019; Schaefer et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mechanism of DRAM and comparison with BS-seq.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "b63f444e-22af-4d37-ae83-6c7dd7561d54",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C77",
+      "claim": "m5C sites are predominantly distributed in the coding sequences (CDS) and notably enriched near the initiation codon.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have indicated that m5C sites are predominantly distributed in the coding sequences (CDS) and notably enriched near the initiation codon (Yang et al., 2017; Cui et al., 2017; Edelheit et al., 2013; Tang et al., 2020; Squires et al., 2012; Zhang et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "c3bc6064-eaff-4929-b0fe-a295cf64412f",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "claim_id": "C78",
+      "claim": "There is no uniform intrinsic signature motif sequence that can characterize all m5C sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have indicated that there is no uniform intrinsic signature motif sequence that can characterize all m5C sites (Yang et al., 2017; Edelheit et al., 2013; Sun et al., 2019; Zhang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The DRAM system successfully detects m5C modifications in mRNA through fusion of m5C reader proteins (ALYREF and YBX1) with deaminases (APOBEC1 and TadA8e), producing specific editing events near m5C sites. The method is antibody-free, bisulfite-free, supports ultralow RNA input (10 ng), shows high reproducibility across replicates, and covers ~80% of genes detected by BS-seq while identifying additional m5C sites with ~40 nt resolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C74 collectively demonstrate that DRAM functions as designed through multiple lines of evidence: proper protein expression (C31-C32), specific editing at known m5C sites (C33-C36, C43), m5C-dependent detection validated by methyltransferase knockouts (C43-C45), high reproducibility (C46-C47), appropriate genomic distribution (C49-C52), enriched motifs (C53-54), substantial overlap with BS-seq (C56-C57, C70), low input capability (C65-C66, C73), and defined resolution (C74). The convergence of validation experiments, controls, and comparisons with established methods provides strong support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "08d9435e-2b9c-4d97-9329-4748e78acdd1",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "m5C-modified genes identified by DRAM-seq are involved in diverse biological processes including cell division, cell cycle, mRNA splicing, protein processing, nucleocytoplasmic transport, translation, and DNA repair.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C62 is supported by GO and KEGG enrichment analyses shown in Figures 4F-G and supplementary figures. These standard bioinformatics approaches applied to the DRAM-seq dataset provide appropriate evidence for functional enrichment, though the biological significance of m5C in these processes requires further experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "9aa34b50-00b4-4ecb-ac1b-060bbc9db223",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Only 55.32% of ALYREF-regulated mRNAs identified by Wang et al. (2023) can be detected by the DRAM system.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C48 presents a quantitative overlap but the interpretation is ambiguous. This could indicate either a limitation of DRAM's sensitivity or reflect that ALYREF regulates gene expression through both m5C-dependent and m5C-independent mechanisms. The claim lacks sufficient context to determine whether this represents a technical limitation or biological reality.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "a6813712-721c-48c8-9203-c43a1f1ccb64",
+      "content_id": "9e5e77bb-fdeb-4ad3-b930-6c10c0b06ba2",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Background knowledge about m5C biology, existing detection methods, reader proteins, deaminases, and methyltransferases is established through citations to prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C30, C40-C42, C58-C61, C63-C64, C75-C78 represent established knowledge from the field, appropriately cited to prior work. These provide necessary context for the study but do not constitute novel findings. The citations appear appropriate for the claims made, though verification of citation accuracy would require checking the original sources.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "DRAM is presented as an antibody-free and bisulfite-free method for m5C detection that provides transcriptome-wide editing regions overlapping with BS-seq datasets, supports ultralow input RNA (10 ng), covers ~80% of high-confidence m5C-modified genes detected by BS-seq, identifies more potential m5C sites than BS-seq, and has a measuring resolution of around 40 nt.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor states the approach is 'potentially useful' and 'improved' with 'evidence solid according to said standards,' but emphasizes that 'uncertainty regarding false positive and false negative rates remains.' The reviewer raises critical concerns about whether 'the application of these editing tools results in editing artefacts overstating the number of actual m5C sites,' noting DRAM-seq identifies >10,000 sites compared to 'a couple of 100' after rigorous BS-seq analysis. This suggests the core claims about DRAM's performance are viewed with substantial uncertainty regarding accuracy.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "45d1e8cc-7e4e-49ce-bc26-11ea3cef5fc4",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "DRAM-ABE and DRAM-CBE were properly expressed in HEK293T cells with ~60% GFP-positive cells, induced specific editing near m5C sites in RPSA and AP5Z1 mRNAs (14.7% A-to-G and 13.6% C-to-U respectively), showed reduced editing in methyltransferase-deficient cells, and DRAM-seq editing events were enriched in the vicinity of BS-seq m5C sites.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the editor acknowledges the method is 'improved and sufficiently aligned with the standards of the field,' the reviewer's concern about 'editing artefacts overstating the number of actual m5C sites' casts doubt on whether the observed editing events truly reflect m5C modifications or represent technical artifacts. The editor's statement about 'uncertainty regarding false positive and false negative rates' directly applies to these validation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "258852f7-ab7e-4dcb-8e1a-23a9a44a6f37",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "YBX1 and ALYREF preferentially bound RNAs containing m5C modifications, with specific key amino acids (W65-N70 for YBX1, K171 for ALYREF) essential for m5C recognition, and mutations in these amino acids significantly reduced binding to m5C-containing oligonucleotides.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims about m5C reader proteins are based on previous published studies and are cited as established knowledge. Neither reviewer challenges these foundational claims about the reader proteins' specificity, which form the basis for the DRAM approach. The concerns raised are about the downstream application, not these underlying biochemical properties.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "85d8ba05-cdef-4cbc-8150-ccef6d796624",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Three biological replicates revealed strong reproducibility of A-to-G/C-to-U mutations in HEK293T cells expressing DRAM-ABE and DRAM-CBE, with high overlap of DRAM-edited mRNAs across replicates, though only 55.32% of ALYREF-regulated mRNAs were detected by DRAM.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reproducibility between replicates is demonstrated, the reviewer's fundamental concern about 'editing artefacts' means that reproducible detection does not necessarily validate true m5C sites. The editor's statement about 'uncertainty regarding false positive and false negative rates' applies to the interpretation of these reproducible signals. The incomplete overlap with ALYREF-regulated mRNAs (55.32%) further suggests limitations in detection.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "2a321fa4-4e9b-4995-8f0c-91ee18e30a1d",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "DRAM-seq editing events were primarily located in CDS and 3'UTR with significant enrichment in CDS, editing likelihood was higher in closer proximity to m5C sites with an editing window of approximately 20 bp before and after the m5C site, and specific motifs (AC for DRAM-CBE, U/C-A for DRAM-ABE) were enriched while control samples showed random mutations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor notes the approach 'might be of particular interest for sites in RNA molecules where modifications are rare,' suggesting conditional utility. However, the reviewer's concern about whether the method produces 'editing artefacts overstating the number of actual m5C sites' means these distribution patterns and motif enrichments could reflect technical biases rather than true m5C biology. The contrast with randomly distributed control mutations provides some support, but does not fully address false positive concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "DRAM-seq identified m5C modifications covering 79.6% of genes detected by Yang et al. 2017 and 91.9% by Huang et al. 2019, identified specific regulators like ATG16L1, ARHGEF25, FANCD2, and RPL15, and revealed involvement of m5C-modified genes in diverse biological processes including cell division, cell cycle, mRNA splicing, and DNA repair.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The reviewer explicitly questions whether DRAM-seq's identification of '>10,000 sites containing m5C' represents a genuine increase from 'a couple of 100 (after rigorous post-hoc analysis of RNA bisulfite sequencing data) by orders of magnitude' or reflects 'editing artefacts overstating the number of actual m5C sites.' The editor's acknowledgment of 'uncertainty regarding false positive and false negative rates' directly undermines confidence in the scope and biological interpretation of these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "21dd0870-fb96-4d26-9ce7-ee0cc802dc0a",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "DRAM successfully generated PCR products from cDNAs corresponding to 250 ng, 50 ng, and 10 ng of total RNA with nearly identical Sanger traces across dilutions, did not adversely affect cell viability, and showed concentration-dependent transfection efficiency with editing efficiency decreasing as fusion protein expression diminished.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor acknowledges the method 'introduces an orthogonal approach for detecting RNA modification, without chemical modification of RNA, which often results in RNA degradation.' The low-input capability and lack of cytotoxicity are technical advantages that neither reviewer disputes. These represent methodological improvements over existing approaches, even if questions remain about accuracy.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "d1c82813-ee67-4c5a-8f35-528c1196ea91",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "BS-seq is the gold standard for m5C detection but has limitations including RNA damage from bisulfite treatment, unstable detection in low abundance or highly structured RNA; antibody-based methods have limitations with specificity and low abundance RNAs; and alternative methods like TAWO-seq and Nanopore-seq face challenges with false positives and high error rates.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer extensively discusses the 'short-comings of existing tools to robustly determine m5C in transcriptomes,' noting BS-seq has 'notoriously high background due to deamination artifacts' and antibody methods have 'low specificity' with 'dismal reproducibility.' The editor agrees that chemical modification 'often results in RNA degradation and therefore loss of information.' These limitations of existing methods are well-established and not disputed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "39ce27c1-0ac5-4355-afe1-fdb3b890244e",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The DRAM system is more suitable for mRNA m5C detection than for tRNA or rRNA m5C detection because ALYREF and YBX1 are mainly responsible for mRNA m5C binding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is based on the mechanistic design of DRAM using mRNA-specific reader proteins and is supported by negative results in tRNA/rRNA experiments. Neither reviewer challenges this specificity claim, which is consistent with the known biology of ALYREF and YBX1. This represents an acknowledged limitation rather than a flaw.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "7ce0b15a-091b-446c-a54b-fca39358905d",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Background claims about m5C as a posttranscriptional modification in mRNA involved in disease pathogenesis, its presence across RNA types, molecular functions in RNA metabolism, roles in physiological and pathological processes, the properties of m5C readers ALYREF and YBX1, deaminases APOBEC1 and TadA8e, methyltransferases NSUN2 and NSUN6, and the distribution and sequence characteristics of m5C sites.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established background claims supported by citations to previous literature. The reviewer acknowledges the biological importance of m5C and the need for better detection methods, stating 'other methods, like DRAM-seq, aiming to map m5C independently of ex situ RNA treatment with chemicals, are needed.' Neither reviewer challenges these foundational biological facts, which provide context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "6de8a1f2-6b23-4883-bbb3-773dfc47ca27",
+      "content_id": "a6107d4a-a914-4b5e-936d-8507e3f18cf0",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Specific m5C fractions were measured for RPSA (75.5%) and SZRD1 (27.25%) by BS-seq, existing methods require 100-500 ng RNA (m5C-RIP-seq) or 750-1000 ng (BS-seq), m5C-RIP-seq has ~100 nt resolution, and DRAM depends on specific recognition of m5C on ssRNA by reader proteins, theoretically avoiding false-positive effects of 5-hydroxymethylation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These technical specifications and comparisons are either based on cited literature or represent straightforward technical characteristics. The reviewer does not dispute these specific measurements or technical parameters. The claim about avoiding 5-hydroxymethylation interference is theoretical and based on the mechanism, which is logically sound even if other accuracy concerns exist.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "6a53647a-7afa-45db-aa6f-391fd6869f4e",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "c2c63fa7-248b-4eae-b841-2cd095ff29ad",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "384c0a73-d601-4e71-b3b5-a97e176fc104",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "6876bced-b54e-4c5c-af2a-1077022f812a",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "8bea665f-c6e6-4c32-961e-3b09b44748a0",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "c856f44e-69b6-41b6-92eb-7e72a1969bd0",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "0e3e6353-d780-4fe4-b58b-c9e05d8d25df",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "4c51df05-9975-4cb0-9361-9d428026c6c6",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "09f8b0ff-b268-4868-9e6b-e37339e7b187",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "17eba17c-0994-4bee-8c31-91becd5b9434",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "dcd34d5e-529d-4d63-a6be-a75be2375809",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "3a9ff735-7ace-4fa0-9643-88f219cc61a4",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "a03def50-9370-4eee-b835-2a57c863fc33",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "f18cbb2e-e9cd-4e09-b271-d1888e82b222",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "80376bb4-ad12-4538-b3c9-f5abf08a1b16",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "114c6bd4-0486-4f7a-bb4c-32a8b8588e6c",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "2f0c09db-91ce-4bfe-a966-20a27b9e67e3",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "aa9cc1a0-104b-4769-ba47-c7a1d4e67b32",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "67a39df4-271a-41c5-9a71-979dc79e16e5",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "4ba89c2f-b538-482a-90ee-a074172b3416",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "e63eda8e-8873-47f7-9aaa-85726f883f00",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "2c1d936c-7c58-44e1-b204-d690645930fc",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "8cdab725-87cd-4123-91d1-aa8dcecadecb",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "5b32ddd7-bbe4-44fb-95c1-054fd56edaf5",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "ce47b35b-85a2-4eb8-bd4c-4dc2e2e9aaef",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "196ae0c7-dfff-4c73-b188-254c586025fb",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "a09604c4-a588-402f-98e1-6fbefeaec954",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "921482f3-52eb-48f9-b593-5ab0db718909",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "13641eb3-b5dd-491d-b11a-6a159f341abf",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "b2e5b8b7-a45d-473d-bf68-063f7783f9c3",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "1a45daec-05b2-450b-9c67-fc15874a5c17",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "b7457368-445d-40f7-9507-470e7c4c0d0d",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "f4e3761c-ff63-4384-b148-183268adc6f1",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "93345586-d163-4396-be92-7df39fbbfaaa",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "14b74955-b11f-4e1a-88df-31ecb6c3c496",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "8bc99aaa-4aca-486b-a37c-2568f017a35b",
+      "result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb"
+    },
+    {
+      "claim_id": "83f69efa-ac92-4b7e-9c33-291ea43e16c9",
+      "result_id": "08d9435e-2b9c-4d97-9329-4748e78acdd1"
+    },
+    {
+      "claim_id": "cab196ae-833f-43ec-97c2-986109aff88a",
+      "result_id": "9aa34b50-00b4-4ecb-ac1b-060bbc9db223"
+    },
+    {
+      "claim_id": "356cda2a-8d9c-429a-a592-4a93e33ca438",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "3dbe9a10-8087-4370-ac74-46d37d31c1f7",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "47ae6d86-57ff-4368-b1c8-5e7ccd6ceefc",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "97007166-903f-4945-baab-b03399eeffef",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "748ce970-5f8d-4889-92ff-32c778cd1558",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "528c6927-c554-4c53-819d-6026343d89f9",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "4c410c70-3b85-47fe-8753-c9c098503eac",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "010b20e3-0366-4613-82c4-1a8e07439d2b",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "b9cda3c5-eb3b-4c89-a08e-9175bcdd2fe3",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "bb6c5205-282e-452f-9db8-652116fe6ab1",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "e00cf756-bf58-451b-aec8-d011f4b8c562",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "87a304d6-bd18-4289-aae8-144abcd86d6f",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "dfac9310-6e17-4133-9d98-8c891a0f4245",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "67bca86e-9d62-4c76-ac43-f393185a66de",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "baa0fb4e-a90e-43cf-abbb-cc486441702b",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "198403f2-9579-4549-8ad7-800312dd893e",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "739c9814-bb8a-4be4-b190-8b2f7b2d6321",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "050ceabc-e20f-47e9-8a2e-898a230a2a62",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "700e9968-fff1-445e-ad1a-672a1741e4a1",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "4dde74ce-7a68-45d8-ab0d-37277eb5aefb",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "911cc0b6-4fea-4104-bbb2-9f80b0aeee35",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "1e6db04d-cf03-4f03-90b6-2e6c2e1ab1b6",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "587b411d-9736-4234-8c8a-eb6806da7ab7",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "d4f1ee46-70b4-4411-982d-5038fa1b5151",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "ffb228ce-390d-4d91-86cb-f69a4e1559fa",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "5c397985-3adf-45b4-823c-00078e07d868",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "c013ddbe-4ed6-4d95-bad9-14de891d1b14",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "f4a7c3af-6ed6-4649-8582-2b8d3fff7a26",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "42e277e0-236d-4bf5-a833-12f703ac02d1",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "405b1f4c-40ae-4d39-839a-25929d63350e",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "9536e0e0-9bfa-490a-a80e-89003f3a56fa",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "e3df8922-1a04-457d-9f32-33f3c0515111",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "0bd3a97c-421a-4fec-ab2b-c2d46cf264ec",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "5a8f4c9c-4163-4793-8b03-c6a04d557082",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "69320a83-ee34-407f-9486-ea08fc395a13",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "896e39b0-2a80-4aa3-a926-052cda3d455e",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "732977a6-8410-49df-a2eb-67d8dded9f97",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "a3417d93-99c1-48b6-87b7-194dc002f2fb",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "b63f444e-22af-4d37-ae83-6c7dd7561d54",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "c3bc6064-eaff-4929-b0fe-a295cf64412f",
+      "result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64"
+    },
+    {
+      "claim_id": "6a53647a-7afa-45db-aa6f-391fd6869f4e",
+      "result_id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b"
+    },
+    {
+      "claim_id": "c2c63fa7-248b-4eae-b841-2cd095ff29ad",
+      "result_id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b"
+    },
+    {
+      "claim_id": "384c0a73-d601-4e71-b3b5-a97e176fc104",
+      "result_id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b"
+    },
+    {
+      "claim_id": "b7457368-445d-40f7-9507-470e7c4c0d0d",
+      "result_id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b"
+    },
+    {
+      "claim_id": "f4e3761c-ff63-4384-b148-183268adc6f1",
+      "result_id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b"
+    },
+    {
+      "claim_id": "93345586-d163-4396-be92-7df39fbbfaaa",
+      "result_id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b"
+    },
+    {
+      "claim_id": "14b74955-b11f-4e1a-88df-31ecb6c3c496",
+      "result_id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b"
+    },
+    {
+      "claim_id": "8bc99aaa-4aca-486b-a37c-2568f017a35b",
+      "result_id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b"
+    },
+    {
+      "claim_id": "6876bced-b54e-4c5c-af2a-1077022f812a",
+      "result_id": "45d1e8cc-7e4e-49ce-bc26-11ea3cef5fc4"
+    },
+    {
+      "claim_id": "8bea665f-c6e6-4c32-961e-3b09b44748a0",
+      "result_id": "45d1e8cc-7e4e-49ce-bc26-11ea3cef5fc4"
+    },
+    {
+      "claim_id": "4c51df05-9975-4cb0-9361-9d428026c6c6",
+      "result_id": "45d1e8cc-7e4e-49ce-bc26-11ea3cef5fc4"
+    },
+    {
+      "claim_id": "09f8b0ff-b268-4868-9e6b-e37339e7b187",
+      "result_id": "45d1e8cc-7e4e-49ce-bc26-11ea3cef5fc4"
+    },
+    {
+      "claim_id": "a03def50-9370-4eee-b835-2a57c863fc33",
+      "result_id": "45d1e8cc-7e4e-49ce-bc26-11ea3cef5fc4"
+    },
+    {
+      "claim_id": "f18cbb2e-e9cd-4e09-b271-d1888e82b222",
+      "result_id": "45d1e8cc-7e4e-49ce-bc26-11ea3cef5fc4"
+    },
+    {
+      "claim_id": "80376bb4-ad12-4538-b3c9-f5abf08a1b16",
+      "result_id": "45d1e8cc-7e4e-49ce-bc26-11ea3cef5fc4"
+    },
+    {
+      "claim_id": "dcd34d5e-529d-4d63-a6be-a75be2375809",
+      "result_id": "258852f7-ab7e-4dcb-8e1a-23a9a44a6f37"
+    },
+    {
+      "claim_id": "3a9ff735-7ace-4fa0-9643-88f219cc61a4",
+      "result_id": "258852f7-ab7e-4dcb-8e1a-23a9a44a6f37"
+    },
+    {
+      "claim_id": "911cc0b6-4fea-4104-bbb2-9f80b0aeee35",
+      "result_id": "258852f7-ab7e-4dcb-8e1a-23a9a44a6f37"
+    },
+    {
+      "claim_id": "1e6db04d-cf03-4f03-90b6-2e6c2e1ab1b6",
+      "result_id": "258852f7-ab7e-4dcb-8e1a-23a9a44a6f37"
+    },
+    {
+      "claim_id": "587b411d-9736-4234-8c8a-eb6806da7ab7",
+      "result_id": "258852f7-ab7e-4dcb-8e1a-23a9a44a6f37"
+    },
+    {
+      "claim_id": "d4f1ee46-70b4-4411-982d-5038fa1b5151",
+      "result_id": "258852f7-ab7e-4dcb-8e1a-23a9a44a6f37"
+    },
+    {
+      "claim_id": "114c6bd4-0486-4f7a-bb4c-32a8b8588e6c",
+      "result_id": "85d8ba05-cdef-4cbc-8150-ccef6d796624"
+    },
+    {
+      "claim_id": "2f0c09db-91ce-4bfe-a966-20a27b9e67e3",
+      "result_id": "85d8ba05-cdef-4cbc-8150-ccef6d796624"
+    },
+    {
+      "claim_id": "cab196ae-833f-43ec-97c2-986109aff88a",
+      "result_id": "85d8ba05-cdef-4cbc-8150-ccef6d796624"
+    },
+    {
+      "claim_id": "aa9cc1a0-104b-4769-ba47-c7a1d4e67b32",
+      "result_id": "2a321fa4-4e9b-4995-8f0c-91ee18e30a1d"
+    },
+    {
+      "claim_id": "67a39df4-271a-41c5-9a71-979dc79e16e5",
+      "result_id": "2a321fa4-4e9b-4995-8f0c-91ee18e30a1d"
+    },
+    {
+      "claim_id": "4ba89c2f-b538-482a-90ee-a074172b3416",
+      "result_id": "2a321fa4-4e9b-4995-8f0c-91ee18e30a1d"
+    },
+    {
+      "claim_id": "e63eda8e-8873-47f7-9aaa-85726f883f00",
+      "result_id": "2a321fa4-4e9b-4995-8f0c-91ee18e30a1d"
+    },
+    {
+      "claim_id": "2c1d936c-7c58-44e1-b204-d690645930fc",
+      "result_id": "2a321fa4-4e9b-4995-8f0c-91ee18e30a1d"
+    },
+    {
+      "claim_id": "8cdab725-87cd-4123-91d1-aa8dcecadecb",
+      "result_id": "2a321fa4-4e9b-4995-8f0c-91ee18e30a1d"
+    },
+    {
+      "claim_id": "5b32ddd7-bbe4-44fb-95c1-054fd56edaf5",
+      "result_id": "2a321fa4-4e9b-4995-8f0c-91ee18e30a1d"
+    },
+    {
+      "claim_id": "ce47b35b-85a2-4eb8-bd4c-4dc2e2e9aaef",
+      "result_id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef"
+    },
+    {
+      "claim_id": "196ae0c7-dfff-4c73-b188-254c586025fb",
+      "result_id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef"
+    },
+    {
+      "claim_id": "9536e0e0-9bfa-490a-a80e-89003f3a56fa",
+      "result_id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef"
+    },
+    {
+      "claim_id": "e3df8922-1a04-457d-9f32-33f3c0515111",
+      "result_id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef"
+    },
+    {
+      "claim_id": "0bd3a97c-421a-4fec-ab2b-c2d46cf264ec",
+      "result_id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef"
+    },
+    {
+      "claim_id": "5a8f4c9c-4163-4793-8b03-c6a04d557082",
+      "result_id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef"
+    },
+    {
+      "claim_id": "83f69efa-ac92-4b7e-9c33-291ea43e16c9",
+      "result_id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef"
+    },
+    {
+      "claim_id": "a09604c4-a588-402f-98e1-6fbefeaec954",
+      "result_id": "21dd0870-fb96-4d26-9ce7-ee0cc802dc0a"
+    },
+    {
+      "claim_id": "921482f3-52eb-48f9-b593-5ab0db718909",
+      "result_id": "21dd0870-fb96-4d26-9ce7-ee0cc802dc0a"
+    },
+    {
+      "claim_id": "13641eb3-b5dd-491d-b11a-6a159f341abf",
+      "result_id": "21dd0870-fb96-4d26-9ce7-ee0cc802dc0a"
+    },
+    {
+      "claim_id": "b2e5b8b7-a45d-473d-bf68-063f7783f9c3",
+      "result_id": "21dd0870-fb96-4d26-9ce7-ee0cc802dc0a"
+    },
+    {
+      "claim_id": "1a45daec-05b2-450b-9c67-fc15874a5c17",
+      "result_id": "21dd0870-fb96-4d26-9ce7-ee0cc802dc0a"
+    },
+    {
+      "claim_id": "bb6c5205-282e-452f-9db8-652116fe6ab1",
+      "result_id": "d1c82813-ee67-4c5a-8f35-528c1196ea91"
+    },
+    {
+      "claim_id": "e00cf756-bf58-451b-aec8-d011f4b8c562",
+      "result_id": "d1c82813-ee67-4c5a-8f35-528c1196ea91"
+    },
+    {
+      "claim_id": "87a304d6-bd18-4289-aae8-144abcd86d6f",
+      "result_id": "d1c82813-ee67-4c5a-8f35-528c1196ea91"
+    },
+    {
+      "claim_id": "dfac9310-6e17-4133-9d98-8c891a0f4245",
+      "result_id": "d1c82813-ee67-4c5a-8f35-528c1196ea91"
+    },
+    {
+      "claim_id": "67bca86e-9d62-4c76-ac43-f393185a66de",
+      "result_id": "d1c82813-ee67-4c5a-8f35-528c1196ea91"
+    },
+    {
+      "claim_id": "baa0fb4e-a90e-43cf-abbb-cc486441702b",
+      "result_id": "d1c82813-ee67-4c5a-8f35-528c1196ea91"
+    },
+    {
+      "claim_id": "198403f2-9579-4549-8ad7-800312dd893e",
+      "result_id": "d1c82813-ee67-4c5a-8f35-528c1196ea91"
+    },
+    {
+      "claim_id": "17eba17c-0994-4bee-8c31-91becd5b9434",
+      "result_id": "39ce27c1-0ac5-4355-afe1-fdb3b890244e"
+    },
+    {
+      "claim_id": "356cda2a-8d9c-429a-a592-4a93e33ca438",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "3dbe9a10-8087-4370-ac74-46d37d31c1f7",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "47ae6d86-57ff-4368-b1c8-5e7ccd6ceefc",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "97007166-903f-4945-baab-b03399eeffef",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "748ce970-5f8d-4889-92ff-32c778cd1558",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "528c6927-c554-4c53-819d-6026343d89f9",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "4c410c70-3b85-47fe-8753-c9c098503eac",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "010b20e3-0366-4613-82c4-1a8e07439d2b",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "b9cda3c5-eb3b-4c89-a08e-9175bcdd2fe3",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "739c9814-bb8a-4be4-b190-8b2f7b2d6321",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "050ceabc-e20f-47e9-8a2e-898a230a2a62",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "700e9968-fff1-445e-ad1a-672a1741e4a1",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "4dde74ce-7a68-45d8-ab0d-37277eb5aefb",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "ffb228ce-390d-4d91-86cb-f69a4e1559fa",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "5c397985-3adf-45b4-823c-00078e07d868",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "c013ddbe-4ed6-4d95-bad9-14de891d1b14",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "f4a7c3af-6ed6-4649-8582-2b8d3fff7a26",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "42e277e0-236d-4bf5-a833-12f703ac02d1",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "405b1f4c-40ae-4d39-839a-25929d63350e",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "b63f444e-22af-4d37-ae83-6c7dd7561d54",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "c3bc6064-eaff-4929-b0fe-a295cf64412f",
+      "result_id": "7ce0b15a-091b-446c-a54b-fca39358905d"
+    },
+    {
+      "claim_id": "c856f44e-69b6-41b6-92eb-7e72a1969bd0",
+      "result_id": "6de8a1f2-6b23-4883-bbb3-773dfc47ca27"
+    },
+    {
+      "claim_id": "0e3e6353-d780-4fe4-b58b-c9e05d8d25df",
+      "result_id": "6de8a1f2-6b23-4883-bbb3-773dfc47ca27"
+    },
+    {
+      "claim_id": "69320a83-ee34-407f-9486-ea08fc395a13",
+      "result_id": "6de8a1f2-6b23-4883-bbb3-773dfc47ca27"
+    },
+    {
+      "claim_id": "896e39b0-2a80-4aa3-a926-052cda3d455e",
+      "result_id": "6de8a1f2-6b23-4883-bbb3-773dfc47ca27"
+    },
+    {
+      "claim_id": "732977a6-8410-49df-a2eb-67d8dded9f97",
+      "result_id": "6de8a1f2-6b23-4883-bbb3-773dfc47ca27"
+    },
+    {
+      "claim_id": "a3417d93-99c1-48b6-87b7-194dc002f2fb",
+      "result_id": "6de8a1f2-6b23-4883-bbb3-773dfc47ca27"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "0450ef3c-b809-441b-a3c4-bbdc0c06ccf6",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64",
+      "peer_result_id": "7ce0b15a-091b-446c-a54b-fca39358905d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on background/contextual claims (C1-C30, C40-C42, C77-C78). Both evaluations recognize these as established knowledge from prior literature that provides necessary context. OpenEval marks as SUPPORTED citing appropriate references; peer review also marks SUPPORTED, acknowledging these foundational biological facts are not disputed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "8d1fa695-6491-477b-9302-5065111fc60e",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "peer_result_id": "c96d2e56-e88d-4df8-ada9-2160c48a6f0b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Major disagreement on DRAM validation claims (C3-C5, C70-C74). OpenEval finds these SUPPORTED through convergence of validation experiments and controls. Peer review marks UNCERTAIN due to fundamental concerns about 'editing artefacts overstating the number of actual m5C sites' and 'uncertainty regarding false positive and false negative rates.' This represents the core methodological dispute.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "c255d667-b3af-4571-9361-de981aa20bd1",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "peer_result_id": "45d1e8cc-7e4e-49ce-bc26-11ea3cef5fc4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on protein expression and editing validation (C31-C32, C35-C36, C43-C45). OpenEval includes these in comprehensive SUPPORTED evaluation of DRAM functionality. Peer review marks UNCERTAIN, questioning whether observed editing events reflect true m5C modifications or technical artifacts, with editor noting 'uncertainty regarding false positive and false negative rates.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "abf81a42-9bf9-404a-b9ab-7670efc4e577",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "peer_result_id": "2a321fa4-4e9b-4995-8f0c-91ee18e30a1d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on genomic distribution and motif enrichment (C49-C55). OpenEval finds these SUPPORTED as part of DRAM validation. Peer review marks UNCERTAIN, noting these patterns 'could reflect technical biases rather than true m5C biology' despite contrast with random controls, due to overarching false positive concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "e1ff8367-1ee0-428f-912b-be14b55c9d6c",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "peer_result_id": "21dd0870-fb96-4d26-9ce7-ee0cc802dc0a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on low-input capability (C65-C69). OpenEval includes these in comprehensive SUPPORTED evaluation. Peer review marks SUPPORTED, acknowledging these as 'technical advantages' and 'methodological improvements' that are not disputed, even while questioning overall accuracy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "6c720ee6-b3e4-450d-8015-466d740ef2f2",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "peer_result_id": "85d8ba05-cdef-4cbc-8150-ccef6d796624",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on reproducibility claims (C46-C47, shared with OpenEval R1). OpenEval finds reproducibility supports DRAM validation. Peer review marks UNCERTAIN, noting that 'reproducible detection does not necessarily validate true m5C sites' given fundamental concerns about editing artifacts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "2e142133-1c6c-406a-b808-7a2ea99a4ea6",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "08d9435e-2b9c-4d97-9329-4748e78acdd1",
+      "peer_result_id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on functional enrichment (C62) and related biological interpretation (C56-C61 in peer R6). OpenEval marks C62 SUPPORTED by standard bioinformatics approaches, noting biological significance requires further validation. Peer review marks UNCERTAIN, questioning whether '>10,000 sites' represents genuine biology or 'editing artefacts,' directly undermining confidence in functional interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "1c239d8b-09b4-4752-a894-1620c32b14ca",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "9aa34b50-00b4-4ecb-ac1b-060bbc9db223",
+      "peer_result_id": "85d8ba05-cdef-4cbc-8150-ccef6d796624",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address incomplete ALYREF overlap (C48). OpenEval marks UNCERTAIN due to ambiguous interpretation (technical limitation vs. biological reality). Peer review also marks UNCERTAIN, viewing the 55.32% overlap as evidence of 'limitations in detection' within broader concerns about false positive/negative rates.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "71870306-2a46-45e4-be1b-869e491754c1",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64",
+      "peer_result_id": "d1c82813-ee67-4c5a-8f35-528c1196ea91",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on limitations of existing methods (C13-C19). OpenEval marks these SUPPORTED as appropriately cited established knowledge. Peer review also marks SUPPORTED, extensively discussing 'short-comings of existing tools' including BS-seq artifacts and antibody method issues. Both recognize these as well-established context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "205c5bb1-0218-4e83-abdf-e957cec618ac",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64",
+      "peer_result_id": "258852f7-ab7e-4dcb-8e1a-23a9a44a6f37",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on m5C reader protein properties (C24-C27, part of C38-C39 in peer R3). OpenEval marks these SUPPORTED as established knowledge from prior work. Peer review also marks SUPPORTED, noting these foundational biochemical properties are not challenged; concerns focus on downstream application rather than underlying protein specificity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "a31e6a71-b80a-4560-a292-2951ced80e94",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a6813712-721c-48c8-9203-c43a1f1ccb64",
+      "peer_result_id": "6de8a1f2-6b23-4883-bbb3-773dfc47ca27",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on technical specifications (C63-C64, C75-C76). OpenEval marks these SUPPORTED as established knowledge or appropriately cited claims. Peer review also marks SUPPORTED, not disputing these specific measurements or technical parameters, including the theoretical advantage of avoiding 5-hydroxymethylation interference.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "6bbe3fa2-489a-4249-bc1a-83fa001add8d",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "peer_result_id": "39ce27c1-0ac5-4355-afe1-fdb3b890244e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on mRNA specificity (C37). OpenEval includes this in comprehensive SUPPORTED evaluation of DRAM design. Peer review also marks SUPPORTED, noting this specificity is consistent with known biology of reader proteins and represents an acknowledged design feature rather than a flaw.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "0777ab81-0957-42b2-89df-9e10f38b80b5",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "peer_result_id": "258852f7-ab7e-4dcb-8e1a-23a9a44a6f37",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on reader protein mechanism (C38-C39). OpenEval includes these in comprehensive SUPPORTED evaluation of DRAM functionality. Peer review marks C38-C39 (with C24-C27) as SUPPORTED, acknowledging the biochemical basis is sound even though concerns exist about downstream application accuracy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "9c642439-03cc-4e04-aee0-2fdef02a1268",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "peer_result_id": "6de8a1f2-6b23-4883-bbb3-773dfc47ca27",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on editing specificity (C33-C34). OpenEval includes these in comprehensive SUPPORTED evaluation showing specific editing at known m5C sites. Peer review marks SUPPORTED for technical specifications, not disputing the C-to-U editing mechanism itself, though broader accuracy concerns remain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    },
+    {
+      "id": "95055d91-e5c6-4695-9562-d8cd52ac1801",
+      "submission_id": "990a5448-a283-4dc5-bc66-449184c9dee4",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "0be18d60-c9fc-4924-8218-33ccf59c06cb",
+      "peer_result_id": "2aa5a69b-0888-4cc9-b646-6e6146ffdaef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on BS-seq overlap interpretation (C56-C57). OpenEval includes substantial BS-seq overlap in SUPPORTED validation evidence. Peer review marks UNCERTAIN, questioning whether DRAM's identification of '>10,000 sites' versus 'a couple of 100' from rigorous BS-seq represents genuine discovery or technical artifacts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:53:23.749578Z"
+    }
+  ]
+}

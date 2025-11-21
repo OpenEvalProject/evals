@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Sfp1 physically interacts with Rpb4 but not with other transcription factors Fhl1, Ifh1, or Abf1. This interaction was demonstrated through multiple complementary approaches including yeast two-hybrid screening, pairwise two-hybrid analysis, co-immunoprecipitation, and imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence from multiple independent experimental approaches (two-hybrid, co-IP, imaging) demonstrating specific interaction between Sfp1 and Rpb4, with appropriate negative controls showing no interaction with related transcription factors. The use of multiple orthogonal methods strengthens confidence in this protein-protein interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "Sfp1 shuttles between nucleus and cytoplasm in a transcription-dependent manner, and this shuttling is functionally connected to Rpb4. Temperature-sensitive mutant experiments demonstrate that Sfp1 export requires active transcription, and Sfp1 import is slower in rpb4\u0394 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 use appropriate temperature-sensitive mutants and genetic approaches to demonstrate transcription-dependent shuttling. The nup49-313/rpb1-1 double mutant experiment (C5) provides strong evidence for transcription-dependence, and the rpb4\u0394 import delay (C6) supports functional connection between Sfp1 and Rpb4. The experimental design with proper controls is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "During starvation, Sfp1 localizes to P-bodies, as evidenced by co-localization with P-body markers Dcp2, Lsm1, and Rpb4, and the cycloheximide-sensitive nature of these foci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C7 is supported by microscopy showing co-localization with multiple established P-body markers and the expected response to cycloheximide treatment, which is a characteristic feature of P-bodies. The use of multiple markers and functional validation strengthens this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Sfp1 binds to a specific set of 262 mRNAs (CRAC+ genes) with a sharp peak toward the 3' end at a discrete distance from polyadenylation sites. These CRAC+ genes are enriched for protein biosynthesis functions, with 42% transcriptionally upregulated by Sfp1 overexpression. A GCTGCT motif is found in 73/113 CRAC+ mRNAs at ~150 bp upstream of the polyadenylation site, and Sfp1 binding correlates with motif proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 present comprehensive CRAC-seq analysis with appropriate clustering methods, statistical validation (p-values provided), and integration with published transcriptional data. The identification of the GCTGCT motif through multiple tools (DRIMust and MEME) with statistical significance (p<7.925e-08) and its spatial correlation with Sfp1 binding provides strong evidence. The biological replicates showed high similarity, supporting reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Sfp1 binds to CRAC+ mRNAs co-transcriptionally, as validated by RNA immunoprecipitation showing 4/5 tested CRAC+ mRNAs co-precipitating with Sfp1 but not the negative control GPP1. Importantly, Sfp1 binds intron-containing RPL30 pre-mRNA with enrichment relative to input, strongly suggesting co-transcriptional binding since introns are spliced during transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17 provide strong evidence for co-transcriptional binding through detection of intron-containing pre-mRNA (C16) with enrichment in the IP fraction. The logic connecting intron detection to co-transcriptional binding (C17) is sound given the citation that introns are spliced co-transcriptionally. The inclusion of appropriate negative controls (GPP1) strengthens the specificity argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Rap1 binding sites (RapBS) in promoters are necessary and sufficient for Sfp1 to bind mRNA. Deletion of RapBS abolishes Sfp1-mRNA binding while addition of RapBS confers binding capacity, independent of mRNA expression level. Genome-wide analysis shows most RiBi CRAC+ promoters bind Rap1 (p=1.9\u00d710\u207b\u00b2\u00b2) while RiBi non-CRAC+ promoters exclude Rap1 binding (p=1.5\u00d710\u207b\u2075). Other transcription factors Fhl1 and Ifh1 do not interact with these mRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 provide compelling evidence through construct-based experiments showing necessity and sufficiency of RapBS (C18), supported by genome-wide statistical analysis with highly significant p-values (C19). The control showing higher expression of construct F than E, yet only E being detected in IP, demonstrates the effect is not due to expression level. Negative controls with Fhl1 and Ifh1 (C20) support specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Sfp1 affects both mRNA synthesis and stability of CRAC+ genes. Deletion or depletion of Sfp1 reduces synthesis rates and mRNA abundance of RiBi and RP genes, but unexpectedly also reduces stability of CRAC+ mRNAs specifically. This effect is RapBS-dependent and involves slowing of deadenylation. The stability effect is specific to RiBi CRAC+ but not RiBi non-CRAC+ mRNAs, despite Sfp1 binding all RiBi promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 present comprehensive evidence from multiple approaches (GRO assays, auxin-induced degron, heat shock experiments, PAGEN) all converging on the conclusion that Sfp1 stabilizes CRAC+ mRNAs. The specificity is well-demonstrated through appropriate negative controls (PMA1, GPP1 in C26) and the distinction between RiBi CRAC+ and non-CRAC+ (C27). The RapBS-dependence (C28) mechanistically links promoter elements to mRNA stability. The use of multiple independent methods strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Sfp1 binds to gene bodies of CRAC+ genes in addition to promoters, with binding intensity correlating with transcriptionally active Pol II (and even more strongly with total Pol II including backtracked). In contrast, Rap1 binds almost exclusively to promoters. The Sfp1 ChIP-exo signal declines around the GCTGCT motif position (~160 bp upstream of polyadenylation sites).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 leverage published ChIP-exo datasets appropriately and demonstrate clear differences in binding patterns between Sfp1 and Rap1. The correlation analysis between Sfp1 binding and Pol II occupancy (C32-C33) provides mechanistic insight, with the stronger correlation with total vs. active Pol II supporting the backtracking hypothesis. The decline in ChIP-exo signal at the GCTGCT motif (C34) is consistent with Sfp1 transfer from chromatin to RNA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Sfp1 negatively affects transcription elongation and enhances Pol II backtracking, as evidenced by published work showing sfp1 deletion increases Pol II elongation rate and suppresses TFIIS deletion effects on transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are based on citations to published work. While the current manuscript does not independently validate these claims, they are appropriately cited and consistent with the new data presented. The citations appear relevant and support the proposed role of Sfp1 in backtracking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Sfp1 promotes Pol II backtracking, particularly in CRAC+ genes. While total Pol II (Rpb3 ChIP) is higher in WT than sfp1\u0394, active Pol II (GRO) is similar, resulting in higher backtracking index (BI) in WT. CRAC+ genes show higher BI than average, with RiBi CRAC+ showing high Sfp1-dependent BI while RiBi non-CRAC+ do not. There is modest correlation (r=0.366, higher for CRAC+ at r=0.423) between Sfp1 effects on mRNA half-life and backtracking index.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 present internally consistent ChIP and GRO data supporting the backtracking hypothesis. The comparison between total and active Pol II (C37-C38) provides a sound basis for calculating backtracking index. The specificity to CRAC+ genes and distinction between RiBi CRAC+ and non-CRAC+ (C40) strengthens the argument. The modest correlation between BI and mRNA half-life (C41) suggests but does not prove a mechanistic link. The statistical analyses appear appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Sfp1 affects Rpb4 stoichiometry/configuration during transcription elongation. The Rpb4-ChIP/Rpb3-ChIP ratio decreases gradually from TSS to polyadenylation site, with stronger changes in highly transcribed genes. CRAC+ genes show even stronger changes despite not being highly transcribed. These changes are Sfp1-dependent (abolished in sfp1\u0394). The Rpb4/Rpb3 ratio inversely correlates with backtracking index (stronger in CRAC+) and positively correlates with mRNA half-life specifically in CRAC+ genes (r=0.488) in an Sfp1-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C49 present comprehensive ChIP-on-chip analysis showing Sfp1-dependent changes in Rpb4/Rpb3 ratios. The progressive decrease along gene bodies (C42) and its dependence on Sfp1 (C45) are well-documented. The correlations with both backtracking (C46-C47) and mRNA half-life (C48-C49) are appropriately quantified with correlation coefficients. The specificity to CRAC+ genes and Sfp1-dependence strengthen the conclusions. However, the interpretation as 'stoichiometry' vs 'configuration' remains ambiguous as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Sfp1 binding to gene bodies correlates with transcriptionally active Pol II and impacts Pol II configuration, stoichiometry, and backtracking. Backtracking is substantially more frequent in genes whose mRNAs are bound by Sfp1, and RiBi genes that exhibit Sfp1-dependent backtracking also show Sfp1 imprinting while those that don't also lack imprinting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 synthesize multiple lines of evidence presented in earlier claims. The correlation between Sfp1 binding and active Pol II (C50) is well-supported by data. The connection between backtracking and imprinting (C52-C53) is supported by the concordance between RiBi CRAC+ and non-CRAC+ genes. These claims represent valid integration of the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Multiple lines of evidence support co-transcriptional binding of Sfp1 to CRAC+ mRNAs: CRAC+ genes display broad transcription rates (not just highly transcribed), only a subset of similarly-expressed RiBi mRNAs bind Sfp1, Sfp1 export is transcription-dependent, binding is RapBS-dependent, ChIP-exo signal drops at the GCTGCT motif, and Sfp1 regulates deadenylation-mediated decay by slowing these processes. Together, this demonstrates Sfp1 regulates CRAC+ gene products through both synthesis stimulation and decay repression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 synthesize evidence for co-transcriptional binding and dual regulation. Each individual piece of evidence (transcription-dependent export C56, RapBS-dependence C57, ChIP signal drop C58, deadenylation regulation C59) is supported by data presented earlier. The integration of these observations into a coherent model of co-transcriptional binding followed by cytoplasmic stabilization (C60) is logical and well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Sfp1 has widespread effects on gene expression beyond CRAC+ genes. Expression of >30% of genes is affected by Sfp1 depletion/overexpression, correlating with Sfp1 binding to gene bodies and Pol II occupancy genome-wide. The widespread effect on backtracking correlates with higher mRNA half-life in many genes (not only CRAC+). However, the correlation between Rpb4/Rpb3 and mRNA half-life is much higher in CRAC+ than other genes and is entirely Sfp1-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 distinguish between genome-wide and CRAC+-specific effects of Sfp1. The citation to published work on widespread transcriptional effects (C61) is appropriate. The distinction between modest genome-wide correlation with backtracking/half-life (C62) versus strong CRAC+-specific correlation with Rpb4/Rpb3 ratio (C63) is well-supported by the correlation analyses presented. This effectively argues for both general and specific mechanisms of Sfp1 action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Previous work showed that transcription elongation of Rap1-controlled genes is exceptionally affected by backtracking, and Rap1 depletion leads to mRNA stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 appropriately cite previous work from the same group. These citations provide important context for interpreting the current findings regarding the relationship between Rap1, Sfp1, backtracking, and mRNA stability. The citations appear relevant and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Rpb4 stoichiometry within yeast Pol II is substoichiometric (<1) and decreases gradually during transcription elongation. Sfp1 regulates this stoichiometry drop, and the effect of Sfp1 on mRNA stability is entirely linked to its action on Rpb4 stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 build from established knowledge (C66 citing previous work) to new findings. The demonstration of progressive decrease in Rpb4/Rpb3 ratio during elongation (C67) is novel and well-supported by ChIP data. The Sfp1-dependence of this effect (C68) is clearly shown by comparison of WT and sfp1\u0394. The strong claim that Sfp1's effect on mRNA stability is 'entirely linked' to Rpb4 stoichiometry (C69) is supported by the CRAC+-specific correlation data, though 'entirely' may be somewhat overstated given the correlations are modest (r=0.488).",
+    "result_type": "MAJOR"
+  }
+]

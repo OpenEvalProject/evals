@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The Alpha variant spread rapidly through Germany and Thuringia from December 2020 to August 2021, with Thuringia experiencing a roughly 2-week delay compared to other German federal states. By March 2021, Alpha had spread to nearly all states and districts with high prevalence (median 76.47% in Germany, 85.29% in Thuringia), and sequencing declined in summer 2021 due to decreased case numbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 provide comprehensive genomic surveillance data (289,487 German genomes and 7,394 Thuringian genomes) with temporal and geographical analysis showing the Alpha variant's spread pattern. The data are well-documented with figures and consistent with cited literature (C16), and the 2-week delay observation (C17) is supported by the temporal data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C61",
+      "C62"
+    ],
+    "result": "The delayed spread of Alpha in Thuringia is attributed to the lack of major transport hubs and early implementation of strict containment measures, including contact limitations, retail closures, and movement restrictions (15 km radius) starting December 14, 2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 document specific public health interventions with dates, and C61-C62 provide a plausible mechanistic explanation supported by prior literature on the role of transportation hubs in viral spread. The inference connecting containment measures and lack of airports to the observed delay is reasonable given the temporal data, though causality cannot be definitively established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C70",
+      "C71"
+    ],
+    "result": "Nine Alpha subclusters were identified based on mutation profiles, phylogenetic distance, and temporal patterns from 70,429 Alpha genomes. Seven formed separate phylogenetic clusters with regionally confined spreading patterns in Thuringia (expanding 1-6 districts per month for Spike-mutation subclusters, 2-7 districts per month for the ORF1b variant), while two were subclusters of parent clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C38-C47 provide detailed characterization of subcluster identification methodology, temporal dynamics, and geographical spread patterns supported by phylogenetic analysis and visualization in Figure 2. The data show consistent patterns of regional confinement with quantitative expansion rates. The methodology is described in sufficient detail in the Methods section.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C28",
+      "C32"
+    ],
+    "result": "Several spike protein mutations in the identified subclusters have functional significance based on prior literature, including S:H49Y (eases cell entry), S:N354K (impairs mAb h11B11), S:G496S (affects replication fitness, ACE2 binding, and immune evasion), and S:S939F (modulates T-cell propensity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C26, C28, and C32 are supported by appropriate citations to prior experimental work characterizing these mutations. However, these are literature-based attributions rather than experimental validations performed in this study, making them supporting contextual information rather than primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C63",
+      "C64",
+      "C72"
+    ],
+    "result": "Mobile service data from approximately 200 million trips aligned well with the spread of high-prevalence Alpha subclusters (e.g., subcluster 7 with 811 samples) but did not correspond well with low-prevalence subclusters. The data indicated potential sampling bias and partially predicted subcluster spread patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C50 and C63-C64 describe the retrospective analysis of mobility data compared to genomic surveillance results. The finding that mobility data predicts high-prevalence but not low-prevalence variant spread is clearly demonstrated in Figure 2, with specific quantitative examples provided. The identification of Type 2 districts (high mobility but no variant detected) suggests sampling bias for low-prevalence variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C65",
+      "C75",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "A proof-of-concept mobility-guided sampling strategy for the Omicron BQ.1.1 sublineage successfully identified one additional BQ.1.1 sample using only 19 targeted samples in high-mobility communities, while 132 randomized samples in the same period detected no additional cases. This represents the first active guidance of genomic surveillance sampling during a pandemic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C60 and C65-C83 document a prospective experiment with clear methodology, sample sizes, and outcomes. The guided sampling (19 samples) identified 1 additional BQ.1.1 case while randomized sampling (132 samples) found none in October 2022, demonstrating proof-of-concept despite the small sample size. The authors appropriately acknowledge limitations including low BQ.1.1 prevalence and dependence on sample availability. The claim of being first (C81) is supported by their literature review.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The study generated a comprehensive dataset of 3,770 SARS-CoV-2 genomes sequenced by the institute plus 7,800 additional Thuringian genomes from commercial providers, including over 6,500 Alpha genomes with fine-granular metadata (postal codes and isolation dates), complemented by over 66,000 publicly available German Alpha genomes and mobile service data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 describe the data collection and sources with specific numbers. The dataset is substantial and well-documented, with appropriate acknowledgment of external data providers. The combination of institutional sequencing, commercial provider data, and public data represents a comprehensive surveillance dataset for the study period.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C76",
+      "C86",
+      "C87"
+    ],
+    "result": "Mobile service data can be used retrospectively to assess surveillance coverage and sampling bias, or prospectively to guide sampling toward districts where variants are expected to emerge. The combination of mobile service data and genomic surveillance enables more targeted and responsive surveillance, with subcluster monitoring allowing effective tracking of transmissions and regional spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 and C76 summarize the two main applications demonstrated in the study (retrospective analysis of Alpha subclusters and prospective BQ.1.1 sampling), both of which are supported by the presented data. Claims C86-C87 provide appropriate interpretation of the value of the approach. The conclusions are well-supported by the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Mobile service data were collected via the Cell ID method with traffic cells assigned to transmitter masts at 500m \u00d7 500m to 8km \u00d7 8km resolution, extrapolated using Deutsche Telekom's market share, and anonymized with k-value=30 (removing streams with <30 participants), resulting in approximately 200 million trips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80 provide detailed methodology for mobile service data collection and processing. The description includes spatial resolution, anonymization procedures, and data volume. These methodological details are appropriate and necessary for reproducibility, though the reliance on proprietary data from T-Systems limits independent verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Precise sampling location data are crucial for utilizing mobile service data in genomic surveillance, but privacy regulations may restrict access to such data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C85 identify an important limitation: the study could only apply mobility analysis to Thuringia where precise postal codes were available, not to other German states where only laboratory locations were available. This limitation is clearly acknowledged and represents a genuine constraint on the broader application of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Guided sampling could enable flexible resource allocation, reduce surveillance costs, and be applied to other viruses or lineages. Pre-generated mobility networks tailored to regional infrastructure could improve targeting, though feasibility depends on data availability and cost. Mobile service data could complement other surveillance approaches like wastewater surveillance and passenger data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C94 are largely speculative about future applications and improvements (as indicated by 'could,' 'may,' 'might'). While these are reasonable extrapolations from the proof-of-concept results, they represent proposed future work rather than demonstrated findings. The cost-benefit analysis (C89, C92, C93) lacks empirical support, and integration with other surveillance methods (C94) is suggested but not tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Background context on the COVID-19 pandemic, including WHO pandemic declaration (March 11, 2020), GISAID database statistics (15.8 million sequences as of July 2023), German surveillance regulations (CorSurV enacted January 19, 2021), PANGO lineage classification system (>3,660 lineages as of August 2023), and the succession of Alpha and Delta variants in 2020-2021.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide standard background information supported by appropriate citations and publicly available data sources. These are well-established facts that contextualize the study but do not represent novel findings. The characterization of Thuringia (C9) is supported by reference to population density data in supplementary figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Thuringian Alpha genomes were evenly distributed among other German samples in the phylogenetic time tree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by the phylogenetic analysis shown in Figure 1\u2014figure supplement 3, which includes 64,131 German and 6,298 Thuringian Alpha genomes. The even distribution indicates no major phylogenetic clustering by geography, consistent with widespread circulation of Alpha across Germany.",
+    "result_type": "MINOR"
+  }
+]

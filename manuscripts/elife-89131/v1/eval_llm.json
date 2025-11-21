@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9"
+    ],
+    "result": "Prior work has established that motor areas display movement-specific preparatory activity before movement onset, which has been proposed to seed initial neural states. Recent experiments have also revealed the presence and necessity of ongoing inputs during movement, including critical pattern-generating input from the thalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C3, C8, and C9 accurately summarize established findings from prior experimental work, supported by appropriate citations. These claims provide the empirical and theoretical context for the current study and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In an optimally controlled inhibition-stabilized network model of M1, delay-period inputs consistently arise before movement onset. Network activity begins changing well before the go cue, driven by early inputs that cancel in the readout to keep the hand still. The preparation index plateaus at ~1.3 for delays >300 ms, with preparation enabling faster reaches and reducing control effort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20, C27-C30, C33-C36 describe the main findings from the optimal control modeling (Figures 2-3). The results are internally consistent and supported by the presented data showing preparatory inputs, preparation index dynamics, and cost function components. The modeling framework and results are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "When preparation time exceeds ~300 ms, the optimal controller does not utilize the additional early time. Instead, external inputs continue to arise just a couple hundred milliseconds before movement initiation, with firing rates and PCA trajectories remaining similar across different delay periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 describe findings from Figure 3 showing that preparation timing is constrained by network timescales. The data clearly demonstrate that longer delays do not lead to earlier preparation, supporting the interpretation that network dynamics have characteristic timescales that limit the utility of very early inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "In simplified 2D networks with nonnormal or oscillatory dynamics, optimal control generally produces preparatory inputs, but the amount depends critically on readout orientation. In nonnormal networks, reading out the sink mode yields lower cost and more preparation than reading out the source mode. In oscillatory networks, preparation is independent of readout direction but consistently moves activity along the output-null axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C50, C52 describe systematic analyses of 2D networks (Figure 4) that isolate the effects of specific dynamical motifs. The results are clearly presented and logically consistent, demonstrating how network structure and readout geometry interact to determine optimal preparation strategies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C21"
+    ],
+    "result": "Two control-theoretic quantities\u2014observability of the nullspace (\u03b1) and controllability of the readout (\u03b2)\u2014largely explain preparation in networks. For preparation to be beneficial, the nullspace must be sufficiently observable and the readout must have limited controllability. These quantities predict preparation across diverse network architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C53-C56 present the theoretical framework linking network properties to preparation (Figure 5). The linear regression achieves R\u00b2=0.93 for ISNs and R\u00b2=0.69 for other network types, providing strong quantitative support. The control-theoretic formalization is mathematically sound and generalizes across network families.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Optimal control of sequential reaches produces two phases of preparation, one before each movement, consistent with experimental observations in monkeys. In the model, this arises because the network's limited timescales require reinjection of inputs to produce the transient activity growth needed for the second reach after the hand stops at the first target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C63-C69 describe modeling of sequential reaches (Figure 6) that reproduces key experimental findings from Zimnik and Churchland (2021). The preparatory subspace analysis shows two clear peaks of occupancy before each reach, and the mechanistic explanation based on network timescales is logically consistent with the model's dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Most published network models of delayed reaches can perform the task equally well without preparatory inputs, with inputs confined to the movement epoch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is demonstrated by the authors' own modeling (Figure 1B) showing that the same reach can be produced with movement-only inputs. This observation motivates the central question of the paper and is clearly illustrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Prior theoretical and modeling work has established that motor cortex operates as a dynamical system with near-autonomous evolution during movement, that preparation benefits behavior and may facilitate learning, and that previous models typically assume preparatory inputs by design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C11-C17 accurately summarize established theoretical frameworks and prior modeling approaches, supported by appropriate citations. These claims provide important context for understanding the novelty of the current approach, which does not assume preparatory inputs a priori.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C23",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "The authors modeled M1 as an input-driven RNN coupled to a two-link arm model, using iLQR to find optimal control inputs that minimize a cost functional. They employed inhibition-stabilized networks previously shown to capture M1 dynamics, with reaches required within 600 ms of a go cue following a known delay period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C23, C74-C78, C80 describe the methodological framework. The approach is clearly documented with appropriate citations to established methods (Li and Todorov 2004, Hennequin et al. 2014). The iLQR algorithm is appropriate for this nonlinear optimal control problem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Preparatory neural activity patterns arise from optimal control of reaching movements at the level of motor cortical circuits, providing a normative explanation for experimental findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 represents the main conclusion of the study, which is well-supported by the comprehensive modeling results (C4, C20-C22, C27-C40, C44-C56, C63-C69). The optimal control framework successfully reproduces key experimental observations and provides mechanistic insights into why preparation emerges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Networks of excitatory and inhibitory neurons embed two main connectivity motifs: feedforward (nonnormal) connectivity and anti-symmetric connectivity causing oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 accurately describes established knowledge about E-I network dynamics, appropriately cited. This provides the theoretical basis for the 2D network analyses in Figure 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "Zimnik and Churchland (2021) concluded that each reach in a sequence is successively seeded by its own preparatory activity rather than the whole sequence unrolling from a single preparatory period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 accurately summarizes the key finding from the cited experimental study, providing the empirical motivation for the sequential reach modeling in Figure 6.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The experimental data shown in Figure 1 came from two monkeys trained on delayed reaching tasks, with recordings from PMd and M1 using 96-electrode arrays, under protocols approved by Stanford IACUC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe the source of experimental data used for comparison. These are factual statements about previously published datasets with appropriate citations to the original studies.",
+    "result_type": "MINOR"
+  }
+]

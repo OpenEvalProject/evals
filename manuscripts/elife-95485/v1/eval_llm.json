@@ -1,0 +1,247 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C39",
+      "C40"
+    ],
+    "result": "CausalXtract is a computational pipeline that integrates live-cell image feature extraction with causal discovery methods, combining network-based and information-based frameworks in a modular architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C39, and C40 collectively describe the architecture and methodology of CausalXtract. The modular design and methodological combination are clearly documented in the manuscript with supporting figures showing the pipeline components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C27",
+      "C48",
+      "C49",
+      "C95"
+    ],
+    "result": "CellHunter+ feature extraction module performs cell detection using Circular Hough Transform, tracking via Munkres' algorithm, and extracts 15 morphodynamic and interaction descriptors from live-cell imaging data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C12, C27, C48-C49, and C95 describe the feature extraction methodology with appropriate citations to established algorithms (CHT, Munkres). The extraction of 15 descriptors is documented with methodological details, though validation of segmentation accuracy is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C20"
+    ],
+    "result": "tMIIC adapts the MIIC causal discovery method to time-series data by reconstructing time-unfolded causal networks that account for temporal correlations and latent variables.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C20 describe tMIIC methodology with appropriate citations to MIIC and time-unfolded network frameworks. The adaptation is conceptually sound and builds on established methods, though the specific implementation details require reference to cited works.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C68",
+      "C73"
+    ],
+    "result": "Graph-based causal discovery methods can uncover causal effects overlooked by Granger-Schreiber causality, which is too restrictive because vanishing Transfer Entropy implies temporal v-structures but not vice versa (Theorem 1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C17-C19, C68, and C73 present a theoretical result (Theorem 1) with proof and counterexample (Figure 2b) demonstrating the asymmetric relationship between Transfer Entropy and temporal v-structures. The theoretical analysis is logically sound and supported by visual evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C84",
+      "C85"
+    ],
+    "result": "Benchmarking on synthetic datasets shows tMIIC matches or outperforms PC and PCMCI+ methods in accuracy while running orders of magnitude faster, particularly on large datasets with tens to hundreds of thousands of time steps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C74-C78, C84-C85 present comprehensive benchmarking results averaged over 10 datasets with multiple comparison methods and kernels. Performance metrics (Precision, Recall, F-score) and runtime comparisons are shown in multiple supplementary figures, providing strong quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "tMIIC is robust to overestimated maximum lag in stationary data, and when data is nonstationary, the method identifies multiple self-loops at nonstationary variables while preserving the rest of the network structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 describe robustness properties demonstrated through benchmark experiments (Figure 2\u2014figure supplement 3). The observation that nonstationary variables produce multiple self-loops is consistent across synthetic and real data, providing convergent evidence for this behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C28"
+    ],
+    "result": "CausalXtract discovers two novel findings: CAFs directly inhibit cancer cell apoptosis independently from treatment, and treatment increases cancer cell perimeter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4 and C28 present novel biological findings from causal network analysis. While the causal network is shown (Figure 3), the manuscript lacks validation experiments to confirm these causal relationships. The findings rely entirely on computational inference without orthogonal experimental validation (e.g., perturbation experiments, independent datasets).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CausalXtract recovers known effects: treatment increases cancer cell apoptosis and cancer-immune interactions while decreasing division rate; CAFs stimulate cancer cell migration and increase cell area.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 describe recovery of known results from prior studies (Nguyen et al., 2018). These serve as positive controls demonstrating that CausalXtract can recapitulate established findings, lending credibility to the method though not constituting novel discoveries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CausalXtract identifies multiple antagonistic time-lagged effects: cell division shows decreased eccentricity 2-3 hours before cytokinesis followed by increased eccentricity during late division; apoptosis shows decreased area followed by increased area upon cell lysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34-C36 describe time-lagged antagonistic effects shown in Figure 3d with specific time delays. The biological interpretation (prophase, cytokinesis, cell lysis) is plausible and consistent with cell biology, though experimental validation of these specific temporal dynamics is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The inferred causal networks are robust to variations in sampling rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C37 is supported by Figure 3\u2014figure supplement 2 showing similar network structures across different sampling rates (\u03b4\u03c4 = 5, 7, 8 time steps). This robustness analysis strengthens confidence in the biological findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The tumor-on-chip experimental system includes HER2+ breast cancer cells, immune cells, CAFs, and endothelial cells in a 3D collagen matrix, with four experimental conditions based on CAF presence and trastuzumab treatment, imaged over 48 hours.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C42-C45, and C91-C94 describe the experimental system with appropriate detail including cell line authentication, mycoplasma testing, and imaging parameters. The experimental design is adequately documented, though the manuscript analyzes data from a prior study (Nguyen et al., 2018) rather than new experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "MIIC improves upon traditional causal discovery methods by combining constraint-based and information-based principles, limiting spurious conditional independences, and handling missing data and heterogeneous variables while distinguishing genuine from latent causal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C58 describe MIIC methodology and advantages with appropriate citations to prior work. These claims establish the foundation for tMIIC but represent prior work rather than contributions of this manuscript. The characterization of traditional methods and MIIC capabilities is well-supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "tMIIC does not require ad hoc conditioning rules like PCMCI/PCMCI+ because it uses information-theoretic strategies to limit spurious independence, and it captures both time-lagged and contemporaneous latent variable effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe methodological advantages of tMIIC over alternative approaches with appropriate citations. The advantages are demonstrated through benchmarking results (C22, C77-C78), providing empirical support for these methodological claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "CausalXtract source code and a reproducible demo notebook are publicly available on GitHub, and the Tigramite package used for benchmarking is also available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 provide code availability statements with specific URLs. The inclusion of a demo notebook that reproduces results enhances reproducibility, which is a strength of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C21",
+      "C25",
+      "C41"
+    ],
+    "result": "Live-cell imaging produces extensive time-lapse data, but there is a lack of methods to discover causal effects from spatio-temporal correlations, and latent variables are ubiquitous in cell biology data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C21, C25, and C41 provide context and motivation for the work, citing established knowledge and prior work (Driscoll and Zaritsky, 2021). These claims appropriately frame the problem but do not constitute results of the current study.",
+    "result_type": "MINOR"
+  }
+]

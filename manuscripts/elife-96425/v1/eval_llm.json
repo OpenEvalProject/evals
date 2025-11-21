@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C86",
+      "C87"
+    ],
+    "result": "Spatial transcriptomics using the 10x Genomics Visium Platform identified 16 unique clusters with differentially expressed genes representing cell types and spatial elements during C. violaceum infection. The dataset was normalized using sctransform, and 10 DPI was identified as the most enriched timepoint with all seven non-hepatocyte clusters present.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18, C86-C87 describe the spatial transcriptomics methodology and clustering results, which are well-documented in Figure 1 and the methods section. The use of established normalization methods (sctransform) and clear visualization of cluster identification support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C34",
+      "C36"
+    ],
+    "result": "Neutrophil-recruiting chemokines Cxcl1 and Cxcl2 show high expression as early as 0.5 DPI with distinct spatial patterns, while Cxcl3 and Cxcl5 show delayed expression peaking around 10 DPI. All CXCR2 ligands are absent by 21 DPI, correlating with infection clearance and neutrophil trafficking within 1 DPI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C34, C36 are supported by spatial transcriptomics data shown in Figures 2 and 5, demonstrating temporal and spatial expression patterns of neutrophil chemokines. The correlation with previous findings on neutrophil arrival timing strengthens these observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C35",
+      "C37",
+      "C69"
+    ],
+    "result": "Among CCR2 ligands, Ccl2 was most highly upregulated with peak expression at 3 DPI, Ccl12 showed only low expression, and Ccl7 showed intermediate expression with delayed kinetics. All CCR2 ligands were absent by 21 DPI, correlating with monocyte trafficking beginning at 3 DPI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25, C35, C37, C69 are supported by spatial transcriptomics data in Figures 3 and 5, showing differential expression patterns of CCR2 ligands. The temporal correlation with monocyte trafficking is consistent with the infection model observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The adaptive immune response is dispensable for C. violaceum clearance, supported by absent or low expression of T cell trafficking chemokines (Cxcl11, Ccl1, Ccl22, Ccl25) and absence of basophils, eosinophils, and their associated chemokines. Despite high expression of Cxcl9 and Cxcl10, T cells are not recruited in large numbers during primary infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C33 are supported by spatial transcriptomics data (Figure 4) showing low/absent expression of adaptive immunity-associated chemokines, corroborated by previous work (Harvest et al., 2023) demonstrating successful infection clearance without adaptive immunity. The histological absence of eosinophils and basophils further supports these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C99"
+    ],
+    "result": "Ccr2\u2212/\u2212 mice are highly susceptible to C. violaceum infection, with all mice succumbing between 5-9 DPI. At 5 DPI, these mice showed increased liver bacterial burdens, dissemination to the spleen, and abnormal lesions that were more numerous and larger than WT mice, representing a more severe phenotype than Nos2\u2212/\u2212 mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42, C99 are strongly supported by survival curves (Figure 6A), CFU data (Figure 6B-C), and gross pathology (Figure 6D). The statistical significance (p<0.0001 for survival, p<0.001 for CFU) and clear phenotypic differences provide robust evidence for CCR2's essential role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Ccr2\u2212/\u2212 mice had negligible macrophages but drastically increased neutrophils in infected livers compared to WT mice, despite similar baseline macrophage frequencies in uninfected mice. This pattern extended to spleen and blood, demonstrating that failure to recruit monocytes leads to enhanced neutrophil recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C43-C47 are supported by flow cytometry data (Figure 6E-K) with statistical significance (p<0.01 for liver macrophages and neutrophils). The two-way ANOVA analysis appropriately accounts for genotype and infection status, and the data clearly demonstrate the cellular composition changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Lesions in Ccr2\u2212/\u2212 mice lack the distinct three-zone architecture (necrotic core, coagulative necrosis, macrophage zone) seen in WT mice at 5 DPI. Instead, they show abnormal budding morphology with loss of bacterial containment, absence of organized macrophage zones, and bacteria extending to healthy hepatocyte layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C48-C52, C54-C57 are strongly supported by histological and immunohistochemical analysis in Figure 7, showing clear architectural differences between WT and Ccr2\u2212/\u2212 mice. The loss of distinct zones and bacterial containment is visually evident and consistent across multiple staining methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C63",
+      "C64",
+      "C67",
+      "C70",
+      "C108"
+    ],
+    "result": "Macrophages are critical for successful innate granuloma formation and C. violaceum clearance. CCR2 is essential for monocyte trafficking, and its loss results in failed bacterial containment, uncontrolled replication, and mouse mortality, demonstrating that upregulated chemokines are critical for granuloma formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C63-C64, C67, C70, C108 represent the main conclusions drawn from the Ccr2\u2212/\u2212 experiments. The combination of survival data, CFU measurements, flow cytometry, and histology provides strong converging evidence that CCR2-dependent macrophage recruitment is essential for infection control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C68",
+      "C127"
+    ],
+    "result": "Ccr2\u2212/\u2212 mice produce higher amounts of CCL2 in liver and serum compared to WT mice at 3 DPI, suggesting CCL2 may be a critical chemokine for monocyte recruitment. Pro-inflammatory cytokines and PAMPs can induce CCL2 expression by most cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58, C68, C127 are supported by immunofluorescence and ELISA data (Figure 7\u2014figure supplement 4) showing elevated CCL2 in Ccr2\u2212/\u2212 mice, combined with spatial transcriptomics showing Ccl2 upregulation. The inference about CCL2's importance is reasonable given the data, though direct functional testing would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C77",
+      "C78"
+    ],
+    "result": "Despite excessive neutrophil numbers in liver, spleen, and blood, Ccr2\u2212/\u2212 mice cannot clear C. violaceum infection. While neutrophil recruitment wanes in WT mice as granulomas mature, Ccr2\u2212/\u2212 mice show elevated neutrophil numbers at 5 DPI, suggesting continuous recruitment in the absence of macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C77-C78 are supported by flow cytometry data (Figure 6) showing dramatically increased neutrophils in Ccr2\u2212/\u2212 mice despite infection failure. This demonstrates that neutrophils alone are insufficient for bacterial clearance, highlighting the essential role of macrophages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Ccr2\u2212/\u2212 mice show similar abnormal lesion architecture to Casp1::Casp11 DKO and Gsdmd\u2212/\u2212 mice but survive slightly longer, developing larger lesions. The similar mortality timeframe to Nos2\u2212/\u2212 mice supports the hypothesis that nitric oxide from granuloma macrophages is required for bacterial clearance, indicating both macrophage recruitment and pyroptosis are essential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C105-C107 are supported by comparing current data with previous work (Harvest et al., 2023). The similar phenotypes across different knockout models provide converging evidence for the importance of both macrophage recruitment and pyroptosis, though the hypothesis about nitric oxide specificity (C107) remains to be directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C62"
+    ],
+    "result": "Clotting was more abundant in Ccr2\u2212/\u2212 mice compared to WT mice. Without monocyte trafficking, C. violaceum replicates and spreads into adjacent hepatocytes, resulting in ever-expanding lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C62 are supported by histological observations (Figure 7\u2014figure supplement 1) and the overall pattern of infection progression in Ccr2\u2212/\u2212 mice. The inference about bacterial spread is consistent with the loss of containment shown in multiple figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C125"
+    ],
+    "result": "Reparixin, a CXCR1/2 inhibitor, was not a successful inhibitor of neutrophil recruitment during C. violaceum infection. Treatment showed no significant effect on bacterial burdens or macrophage numbers, with poor solubility in PBS potentially accounting for variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92, C125 are supported by the reparixin experiments (Figure 5\u2014figure supplement 1) showing no significant effects on CFU or cell recruitment. The authors appropriately acknowledge the limitations of this approach and the poor solubility issue, concluding that the inhibitor was unsuccessful.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C93",
+      "C94",
+      "C121",
+      "C122"
+    ],
+    "result": "Tissue-resident Kupffer cells and infected hepatocytes likely initiate neutrophil recruitment through chemokines (CXCL1, CXCL2) redundantly with other chemoattractants like formylated peptides and leukotrienes. FPR2 promotes neutrophil migration in liver bacterial infections and FPRs are upregulated during C. violaceum infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66, C93-C94, C121-C122 combine speculation about initial immune responses with data showing FPR upregulation (Table 3) and literature support for redundant neutrophil recruitment mechanisms. While speculative elements are clearly identified, they are reasonable hypotheses supported by the failure of CXCR2 inhibition and known biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C117"
+    ],
+    "result": "CCR1 and CCR5 are highly upregulated in C. violaceum-induced granulomas, and many chemokines, chemokine receptors, and adhesion molecules appear in the top twenty upregulated genes in several clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C117 are supported by spatial transcriptomics data (Figure 4D, Tables 3-4) showing upregulation of these receptors and related molecules. The data clearly demonstrate broad upregulation of trafficking-related genes during infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Cluster 14 (hepatocyte-enriched) expressed high levels of Cxcl1 but only low levels of Ccl2, demonstrating differential chemokine expression patterns across cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C120 is supported by spatial transcriptomics data shown in Figure 5C-D, demonstrating cell-type-specific chemokine expression patterns that contribute to understanding the spatial organization of the immune response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C26",
+      "C75",
+      "C95",
+      "C96"
+    ],
+    "result": "The C. violaceum mouse infection model establishes that WT C57BL/6 mice develop necrotic liver granulomas with organized immune cell layers. Lesions progress from neutrophil-dominated (1-5 DPI) to macrophage-surrounded structures (starting 5 DPI), with bacterial clearance by 21 DPI. The adaptive immune response is dispensable for this clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C15, C26, C75, C95-C96 describe the established infection model from previous work (Harvest et al., 2023) that provides the foundation for the current study. These are well-documented observations that are appropriately cited and form the basis for investigating chemokine expression patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C118",
+      "C119",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The role of CCR2 varies across different infection models: it enhances Y. pseudotuberculosis clearance when deleted, has variable effects in M. tuberculosis depending on strain/dose/route, and differs from C. violaceum in chemokine expression patterns and pathogen biology. M. tuberculosis can replicate within macrophages while C. violaceum cannot circumvent pyroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74, C76, C100-C104, C118-C119, C128-C132 appropriately cite literature comparing different infection models and pathogen biology. These comparisons provide important context for interpreting the C. violaceum results and are accurately represented from the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Multiple mechanisms regulate chemokine function and resolution of inflammation, including differential receptor effects on localization (CCR1/CCR5), post-translational modifications (nitration, proteolytic cleavage by MMPs), endocytosis by endothelial cells, and binding to atypical receptors. MMP-2, MMP-9, CXCL12, and CCL7 are upregulated during C. violaceum infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79, C81-C85, C133-C137 appropriately cite literature on chemokine regulation mechanisms and correlate these with genes upregulated in the current dataset (C83, Tables 1, 3, 4). These provide important context for understanding potential resolution mechanisms, though direct functional testing in this model is suggested as future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C88",
+      "C97",
+      "C98",
+      "C123",
+      "C124",
+      "C126"
+    ],
+    "result": "Ccr2RFP mice lack functional CCR2 and have intact tissue-resident macrophage populations but cannot recruit additional monocytes during infection. Cxcr2 knockout mice exist but have abnormalities. Monocytes express CXCR2 to a lesser extent than neutrophils. CCL2 and CCL7 can both bind CCR2 to induce monocyte trafficking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C97-C98, C123-C124, C126 describe established knowledge about the mouse models and chemokine biology used in the study. These are appropriately cited and provide necessary background for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Approximately 50 chemokines are recognized for their role in cellular chemotaxis, categorized into four subfamilies (CXC, CC, XC, CX3C) based on cysteine arrangement. Inflammatory chemokines are rapidly upregulated during infection, and dysregulation is linked to disease. Chemokines also contribute to wound healing and resolution, with neutrophils responding hierarchically to multiple signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112, C114-C116 provide well-cited background on chemokine biology from established literature. This foundational information appropriately contextualizes the study's focus on chemokine expression during granuloma formation.",
+    "result_type": "MINOR"
+  }
+]

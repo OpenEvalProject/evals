@@ -1,0 +1,2325 @@
+{
+  "submission": {
+    "id": "b0df624c-8422-4cbb-bc84-06753478abea",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:29:03.697562Z",
+    "updated_at": "2025-11-21T20:29:03.697562Z"
+  },
+  "content": [
+    {
+      "id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "content_type": "manuscript",
+      "content_text": "# CausalXtract, a flexible pipeline to extract causal effects from live-cell time-lapse imaging data\n\n## Authors\n\n- Franck Simon<sup>1</sup> ([ORCID: 0000-0002-6952-0819](https://orcid.org/0000-0002-6952-0819))\n- Maria Colomba Comes<sup>2</sup>\n- Tiziana Tocci<sup>1</sup>\n- Louise Dupuis<sup>1</sup>\n- Vincent Cabeli<sup>1</sup>\n- Nikita Lagrange<sup>1</sup>\n- Arianna Mencattini<sup>2</sup>\n- Maria Carla Parrini<sup>3</sup> ([ORCID: 0000-0002-7082-9792](https://orcid.org/0000-0002-7082-9792))\n- Eugenio Martinelli<sup>2</sup> \u2020\n- Herve Isambert<sup>1</sup> ([ORCID: 0000-0001-9638-8545](https://orcid.org/0000-0001-9638-8545)) \u2020\n\n### Affiliations\n\n1. CNRS UMR168, Institut Curie, Universit\u00e9 PSL, Sorbonne Universit\u00e9 Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))\n2. Department of Electronic Engineering, University of Rome Tor Vergata Rome Italy ([ROR:02p77k626](https://ror.org/02p77k626))\n3. INSERM U830, Institut Curie, Universit\u00e9 PSL Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))\n\n\u2020 Corresponding author\n\n## Abstract\n\nLive-cell microscopy routinely provides massive amounts of time-lapse images of complex cellular systems under various physiological or therapeutic conditions. However, this wealth of data remains difficult to interpret in terms of causal effects. Here, we describe CausalXtract, a flexible computational pipeline that discovers causal and possibly time-lagged effects from morphodynamic features and cell\u2013cell interactions in live-cell imaging data. CausalXtract methodology combines network-based and information-based frameworks, which is shown to discover causal effects overlooked by classical Granger and Schreiber causality approaches. We showcase the use of CausalXtract to uncover novel causal effects in a tumor-on-chip cellular ecosystem under therapeutically relevant conditions. In particular, we find that cancer-associated fibroblasts directly inhibit cancer cell apoptosis, independently from anticancer treatment. CausalXtract uncovers also multiple antagonistic effects at different time delays. Hence, CausalXtract provides a unique computational tool to interpret live-cell imaging data for a range of fundamental and translational research applications.\n\n## Introduction\n\nLive-cell imaging microscopy commonly produces extensive amounts of time-lapse images of cellular systems, which can be segmented to extract morphodynamic features and interactions of individual cells under increasingly complex and physiologically relevant conditions. However, this wealth of information remains largely underexploited due to a lack of methods and tools able to discover causal effects from spatio-temporal correlations under well-controlled experimental conditions.\n\nCausalXtract addresses this need by integrating an advanced live-cell image feature extraction tool with a reliable and scalable causal discovery method (Figures 1 and 2) in order to learn temporal causal networks from live-cell time-lapse imaging data (Figure 3).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig1-v1.jpg)\n\n**Figure 1.:** (a) Live-cell tumor ecosystem reconstituted ex vivo (Nguyen et al., 2018) using the tumor-on-chip technology (\u2018Materials and methods\u2019). (b) CausalXtract\u2019s live-cell image feature extraction module (CellHunter+). The tracking of cancer and immune cells and of their mutual interactions is illustrated in Videos 1\u20133, in the absence or presence of cell division and apoptosis event. Examples of time series of extracted cellular features are shown in Figure 1\u2014figure supplement 1. (c) CausalXtract\u2019s temporal causal discovery module (tMIIC) learns a temporal causal network from the features extracted in (b). See \u2018Materials and methods\u2019 for CausalXtract\u2019s implementation details and theoretical foundations. A step-by-step notebook of CausalXtract pipeline is provided with the source code.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Example of time series of cellular features extracted by CausalXtract\u2019s feature extraction module (CellHunter+) from the tumor ecosystems analyzed in this study (Figure 1a). It includes two experimental control parameters (i.e., treatment and CAF presence) and 15 cellular features extracted every 2 min over a period of 2 days. Continuous features are highlighted for one trajectory (traj.18), while categorical features are shown for all trajectories.\n\n![Video 1.](https://cdn.elifesciences.org/articles/95485/elife-95485-video1.mp4.jpg)\n\n![Video 2.](https://cdn.elifesciences.org/articles/95485/elife-95485-video2.mp4.jpg)\n\n![Video 3.](https://cdn.elifesciences.org/articles/95485/elife-95485-video3.mp4.jpg)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig2-v1.jpg)\n\n**Figure 2.:** (a) The signature of Granger\u2013Schreiber temporal causality is a vanishing Transfer Entropy, that is,$T_{Y\u2192X}=I(X_{t};Y_{t^{\u2032}<t}|X_{t^{\u2032}<t})=0$ (\u2018Materials and methods\u2019). In the time-unfolded causal network framework, it implies (i) the absence of (dashed) edge between $X_{t}$ and any $Y_{t^{\u2032}}$, with $t^{\u2032}<t$, and (ii) if $X_{t}$ is adjacent to $Y_{t}$, the presence of temporal (2-variable+time) v-structures, $Y_{t^{\u2032}}\u2192Y_{t}\u2190X_{t}$, for all $Y_{t^{\u2032}}$ adjacent to $Y_{t}$, with $t^{\u2032}<t$ (\u2018Materials and methods\u2019, Theorem 1). (b) By contrast, the presence of a temporal (2-variable+time) v-structure, $Y_{t^{\u2032}}\u2192Y_{t}\u2190X_{t}$ does not imply a vanishing Transfer Entropy as long as there remains an edge between any $Y_{t^{\u2032\u2032}<t}$ and $X_{t}$. It implies that Granger\u2013Schreiber temporal causality is in fact too restrictive and may overlook actual causal effects, which can be uncovered by graph-based causal discovery methods. Hence, tMIIC\u2019s time-unfolded network framework, combining graph-based and information-based approaches, sheds light on the common foundations of the seemingly unrelated graph-based causality and Granger\u2013Schreiber temporal causality, while clarifying their actual differences and limitations. (c) Benchmarking of tMIIC on synthetic time-series datasets generated from 15-node causal networks based on linear combinations of contributions, Appendix 1 and Figure 2\u2014figure supplements 1\u20133. (d) Benchmarking with more complex 15-node time-series datasets based on nonlinear combinations of contributions, Appendix 2 and Figure 2\u2014figure supplement 4. Running times and scores (Precision, Recall, Fscore) are averaged over 10 datasets and compared to PC and PCMCI+ methods using different kernels (GPDC, KNN, ParCorr).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Example of a 15-node causal network to generate benchmark time-series datasets based on linear combinations of contributions (Appendix 1). Examples of temporal causal networks reconstructed by tMIIC based on 100, 1000, or 10,000 simulated time steps. (b) Running times and scores (Precision, Recall, Fscore) averaged over 10 datasets and compared to PC and PCMCI+ methods using different kernels (GPDC, KNN, ParCorr); tMIIC is at par with PC and PCMCI+ scores using GPDC and KNN kernels but runs orders of magnitude faster. Only ParCorr kernel matches tMIIC running speed but with significantly lower scores at large sample size; see \u2018Materials and methods\u2019.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig2-figsupp2-v1.jpg)\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (a) Example of a temporal causal network model ($\\tau=2$) with a low-frequency periodic input ($T=100$) applied to X8 and a time-linear trend applied to X13. Corresponding temporal causal networks inferred by tMIIC from 1000 time step time series (Appendix 1) including non-stationary inputs to X8 and X13. Increasing the maximum lag from $\\tau=2$ to $\\tau=5$ or 10 leads to the appearance of multiple self-loops, which result from the non-stationary dynamics of X8 and X13, whilst the rest of the network remains largely unaffected. (b) Running times and scores (Precision, Recall, Fscore ignoring X8 and X13 self-loops) of tMIIC causal network reconstructions for $\\tau=2,5$ or 10 averaged over 10 time series of 10 to 105 time steps.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (a) Example of a 15-node causal network to generate more complex benchmark time-series datasets based on nonlinear combinations of contributions (Appendix 2). Examples of temporal causal networks reconstructed by tMIIC based on 100, 1000, or 10,000 simulated time steps. (b) Running times and scores (Precision, Recall, Fscore) averaged over 10 datasets and compared to PC and PCMCI+ methods using different kernels (GPDC, KNN, ParCorr); tMIIC outperforms both PC and PCMCI+, in terms of Recall and Fscores, while running orders of magnitude faster, except for the ParCorr kernel, which leads, however, to significantly lower scores at large sample size.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig3-v1.jpg)\n\n**Figure 3.:** (a) Summary causal network inferred by CausalXtract. The underlying time-unfolded causal network is shown in Figure 3\u2014figure supplement 1. Red (resp. blue) edges correspond to positive (resp. negative) associations. Bidirected dashed edges represent the effect of unobserved (latent) common causes. Annotations on edges correspond to time delays in time steps (1 ts = 2 min). The inferred network is largely robust to variations in sampling rate ($\\delta\\tau$) and maximum lag ($\\tau$), Figure 3\u2014figure supplement 2. Here, $\\delta\\tau=7$ ts and $\\tau=84$ ts are chosen automatically by CausalXtract. (b) The CAF presence subnetwork highlighting the direct causal effects of CAFs on cancer cells. In particular, CausalXtract uncovers that CAFs directly inhibit cancer cell apoptosis independently from treatment, which has not been reported so far. (c) The treatment subnetwork highlighting the direct causal effects of treatment on cancer cells. In particular, CausalXtract uncovers that treatment increases cancer cell perimeter, which has not been reported either. (d) The eccentricity-area subnetwork highlighting multiple direct and possibly antagonistic time-lagged effects, notably, between cell division and eccentricity and between cell apoptosis and area, as discussed in the main text.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Time-unfolded causal network assuming stationary dynamics of cellular ecosystems implying translational time invariance of the inferred causal network. (b) Only edges involving at least one contemporaneous variables (i.e., at time t) need to be tested for conditional independence by tMIIC and the remaining edges are then duplicated at all previous time steps before assigning orientations when time-lagged latent variables are taken into account (Figure 1c). Variables retaining multiple self-loops with different time delays correspond to non-stationary variables in Figure 1\u2014figure supplement 1, in agreement with benchmarks from simulated data including non-stationary variables (Figure 2\u2014figure supplement 3).\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95485/elife-95485-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Summary causal networks inferred by CausalXtract using different sampling rates ($\\delta\\tau$). (a) $\\delta\\tau=8$ ts and $\\tau=80$ ts, in time step units (1 ts = 2 min). (b) $\\delta\\tau=7$ ts, and $\\tau=84$ ts, as chosen automatically by CausalXtract based on the average relaxation time across the 15 monitored variables, $\\tau_{R}=40$ ts, which defines a maximum lag $\\tau=2\\tau_{R}=80$ ts. Given a total number of (time-lagged and -unlagged) nodes, chosen to be around 200 nodes for computational efficiency, it leads to 13 temporal layers ($\u03bd+1=200/15\u224313$) and a lag increment $\\delta\\tau=\\tau/\u03bd\u22437$ ts. This summary causal network corresponds to Figure 3a. (c) $\\delta\\tau=5$ ts and $\\tau=60$ ts, corresponding to $\\tau=\u03bd\u22c5\\delta\\tau$ with $\u03bd+1=13$ temporal layers, as in (b).\n\n## Results\n\n### CausalXtract\u2019s feature extraction and causal discovery modules\n\nCausalXtract\u2019s live-cell image feature extraction module (CellHunter+) (Figure 1b) is based on CellHunter software (Nguyen et al., 2018) and consists of three steps: detection, tracking, and feature extraction of live cells within time-lapse video images. First, automatic localization/segmentation of cells (e.g., tumor and immune cells) is performed with the Circular Hough Transform (CHT) algorithm (Davies, 2004) to estimate the cell centers and radii. Second, cell trajectories along the frames are constructed by linking the positions detected at the previous time step through Munkres\u2019 algorithm for optimal sub-pattern assignment problems (OAPs) (Munkres, 1957). Finally, relevant descriptors related to the shape, motility, and state of the cells, as well as cell\u2013cell interactions, are quantified from each cell trajectory (\u2018Materials and methods\u2019).\n\nCausalXtract\u2019s temporal causal discovery module (tMIIC) (Figure 1c) is adapted from the causal discovery method (MIIC) (Verny et al., 2017; Cabeli et al., 2020; Cabeli and Li, 2021; Ribeiro-Dantas et al., 2024), which learns contemporaneous causal networks (i.e., when temporal information is not available) for a broad range of biological or biomedical data, from single-cell transcriptomic and genomic alteration data (Verny et al., 2017; Desterke et al., 2020) to medical records of patients (Cabeli et al., 2020; Sella et al., 2022; Ribeiro-Dantas et al., 2024). Live-cell time-lapse imaging data contain, however, information about cellular dynamics, which can in principle facilitate the discovery of novel cause\u2013effect functional processes based on the assumption that future events cannot cause past ones. To this end, CausalXtract\u2019s discovery module, tMIIC, reconstructs time-unfolded causal networks, where each variable is represented by several nodes at different relative time points (Assaad et al., 2022; Figure 1c). Such a time-unfolded network framework (Entner and Granger, 2010; Malinsky and Spirtes, 2018; Runge et al., 2019) is required to account for the temporal correlation between successive time steps in time-series data. This graph-based causal framework goes beyond the seminal concept of temporal causality originally proposed by Granger, 1969 for linear time series without reference to graphical models and later extended to nonlinear dynamics by Schreiber, 2000; Barnett et al., 2009. In particular, Granger\u2013Schreiber causality is in fact too restrictive and may overlook actual causal effects that can be uncovered by graph-based causal discovery methods (Figure 2a and b; \u2018Materials and methods\u2019, Theorem 1). In addition, Granger\u2013Schreiber causality has long been known to infer spurious causal associations based on time delays by excluding the presence of latent common causes a priori (Assaad et al., 2022). tMIIC circumvents these limitations by combining graph-based and information-based approaches (\u2018Materials and methods\u2019), while including contemporary and time-delayed effects of unobserved latent variables that are ubiquitous in cell biology data (e.g., the latent effects of cell cycle phases on cellular features and responses).\n\nWe benchmarked tMIIC on synthetic datasets resembling the real-world data of interest analyzed in this study (i.e., number of time steps, network size, and degree distribution) and found that it matches or outperforms state-of-the-art methods, PC and PCMCI+ (Runge, 2020), while running order of magnitudes faster on datasets of biologically relevant size including tens to hundreds of thousands time steps (Figure 2c and d and Figure 2\u2014figure supplement 3; Figure 2\u2014figure supplement 2; Figure 2\u2014figure supplement 1; Figure 2\u2014figure supplements 4).\n\n### Application to tumor-on-chip cellular ecosystems\n\nWe showcase CausalXtract with the analysis of time-lapse images of a tumor ecosystem reconstituted ex vivo using the tumor-on-chip technology (Figure 1a). These live-cell time-lapse images come from a proof-of-concept study (Nguyen et al., 2018), which demonstrated the effects of an anticancer drug (the monoclonal antibodies trastuzumab, brand name Herceptin, used to treat HER2+ breast cancers) on a reconstituted tumor microenvironment, including cancer cells, immune cells, cancer-associated fibroblasts (CAFs), and endothelial cells (\u2018Materials and methods\u2019). However, a comprehensive extraction and analysis of cellular morphodynamic features and interactions remained unexplored.\n\nTo this end, cellular features such as cell geometry, velocity, division, apoptosis, cell\u2013cell transient interactions, and persistent contacts were first extracted from the raw images using CausalXtract\u2019s feature extraction module (Figure 1b, Figure 1\u2014figure supplement 1).\n\nThen, summary causal network (Figure 3a) and the corresponding time-unfolded causal network (Figure 3\u2014figure supplement 1) were reconstructed between extracted cellular features, cell\u2013cell interactions, and therapeutic conditions using CausalXtract\u2019s temporal causal discovery module (Figure 1c).\n\nCausalXtract inferred network (Figure 3a) uncovers novel biologically relevant findings, in addition to confirming known results from earlier studies. In particular, CausalXtract discovers that CAFs directly inhibit cancer cell apoptosis, independently from anticancer treatment (Figure 3b), while earlier studies reported that CAFs merely reduced the effect of treatment (Nguyen et al., 2018). CausalXtract also discovers that treatment increases cancer cell perimeter (Figure 3c), which has not been reported so far either. In addition, CausalXtract confirms known results from earlier studies. In particular, it recovers that treatment increases cancer cell apoptosis and the number of cancer-immune interactions, as well as decreases the division rate of cancer cells (Figure 3c). Likewise, CausalXtract recovers that CAFs stimulate cancer cell migration and increase their area (Figure 3b).\n\nInterestingly, CausalXtract identifies also multiple and possibly antagonistic effects with different time delays. For instance, CausalXtract recovers several antagonistic relations between morphodynamic features such as cell division and eccentricity or cell apoptosis and area (Figure 3d). Indeed, the late phases of cell division are associated to a marked increase in eccentricity (red edge) but preceded by a net decrease in eccentricity, 2\u20133 hr before cytokinesis (blue edges), once the decision to divide has been made (i.e., the probable latent cause) and the cell is actually duplicating its biological materials (prophase) (Figure 3d). Likewise, the area change upon apoptosis is predicted to first decrease soon after apoptosis (blue edge) before eventually increasing upon cell lysis (red edge) (Figure 3d). These results are robust to variations in sampling rate (Figure 3\u2014figure supplement 2).\n\n## Discussion\n\nAll in all, CausalXtract is a flexible pipeline that uncovers novel and possibly time-lagged causal relations between cellular features under controlled conditions (e.g., drug). CausalXtract uniquely combines live-cell feature extraction with information theory and causal discovery approaches. It consists of two independent computational modules, conceived to warrant interoperability with alternative live-cell segmentation and tracking methods or alternative temporal causal discovery methods.\n\nCausalXtract opens up new avenues to analyze live-cell imaging data for a range of fundamental and translational research applications, such as the use of tumor-on-chips to screen immunotherapy responses on patient-derived tumor samples. With the advent of virtually unlimited live-cell image data, flexible hypothesis-free interpretation methods are much needed (Driscoll and Zaritsky, 2021), and we believe that CausalXtract can bring unique insights based on causal discovery to interpret such information-rich live-cell imaging data.\n\n## Materials and methods\n\n### Tumor-on-chip preparation and live-cell microscopy\n\nThe videos analyzed in the present study refer to biological experiments emulating a 3D breast tumor ecosystem (Nguyen et al., 2018). All tumor-on-chip experiments have a central endothelium compartment containing endothelial cells (primary human umbilical vein endothelial cells [HUVECs]) and two lateral chambers filled with biomimetic hydrogel (collagen type I at 2.3 mg/mL) seeded with cancer cells (HER2+ breast cancer BT474 cell line) and immune cells (peripheral blood mononuclear cells [PBMCs]) from healthy donors (Figure 1a). Four experimental conditions were considered depending on the presence or absence of breast CAFs (CAF cell line Hs578T) and drug treatment (trastuzumab, Herceptin). The immortalized human BT474 and Hs578T cell lines were purchased from ATCC (#HTB-20, #HTB-126) and authenticated by SRT profiling (GenePrint 10 system, Promega, #B9510). The human primary HUVEC lines were purchased from Lonza (#C2517A). PBMCs were routinely isolated from the fresh blood of healthy donors by density gradient centrifugation. All cells were periodically tested to exclude mycoplasma contamination using a qPCR-based method (VenorGem Classic, BioValley, #11-1250). Videos were acquired using inverted motorized Leica microscopes with a frame rate of 2 min for up to 48 hr (1440 frames). Figure 1b shows a crop frame with cancer cells, PBMCs, and CAFs. Each video was cropped into multiple small 300 \u00d7 300 pixel videos (referred to as crops in the following), each of which represented a field of view at subsequent time frames containing a \u2018main\u2019 cancer cell (MCC) initially placed at the center of the image, some PBMC immune cells, other cancer cells, and possibly CAFs within the surrounding of the MCC depending on the experimental conditions. Thirty-six video crops of up to 1440 frames were analyzed (46,935 frames in total) corresponding to nine video crops per experimental conditions.\n\n### CausalXtract\u2019s live-cell image feature extraction module\n\nThe live-cell image feature extraction module (CellHunter+) (Figure 1b) extends the CellHunter software (Nguyen et al., 2018) and consists of three steps: detection, tracking, and feature extraction of live cells within time-lapse video images. First, cell detection is based on the segmentation of circular-shaped objects using CHT (Davies, 2004) with radii set around the theoretical radii of the two cell populations ($r_{im}=4$ px for immune cells and $r_{ca}=14$ px for MCCs with a pixel resolution $1px=0.645\\mum$; Nguyen et al., 2018). Then, cell tracking is performed by linking cells detected at the $i^{th}$ frame to cells located at the $(i+1)^{th}$ frame within a maximum distance from the detected cell candidate. While the motions of both MCCs and immune cells resemble random walks with time-varying drift and volatility, these two cell types exhibit different motility characteristics (Nguyen et al., 2018). Hence, different maximum distances are considered for the two cell populations: it was set to 40 px for MCCs and to 20 px for immune cells. For each cell population, an OAP using the Munkres algorithm Munkres, 1957 is solved: the globally best possible pairing among located objects is based on an assignment cost equal to the inverse of the distance between pairs of cell candidates at the $i^{th}$ and $(i+1)^{th}$ frames. Cell appearing/disappearing and cell overlaps due to projection errors of the 3D scene in the 2D domain are also handled. Finally, cellular morphodynamic features and cell\u2013cell interaction features are extracted at successive positions along each trajectory. For each MCC, 15 descriptors were extracted (Figure 1\u2014figure supplement 1) and classified into four main categories: cell shape, motility, state, and interaction descriptors.\n\n#### Shape descriptors\n\nThe active contour algorithm implemented in MATLAB (Chan and Vese, 2001) was used to segment the MCC boundaries on each video crop frame. Taking as input a frame representing the $i^{th}$ snapshot of the $t^{th}$ MCC, it returns a binary image, where the MCC is represented by a white region. From the binary image, the shape properties of the region occupied by each MCC were extracted using the MATLAB regionprops algorithm. The resulting descriptors of the extracted shape are listed below:\n\n#### Motility descriptors\n\nThe positions $p_{i}^{t}=(x_{i}^{t},y_{i}^{t})$ and $p_{i\u22121}^{t}$ of the $t^{th}$ MCC in the $i^{th}$ and $(i\u22121)^{th}$ frames were compared using the Euclidean distance $d(\u22c5)$ to define the following motility parameters:\n\n#### State descriptors\n\nThey record apoptosis or division events:\n\n#### Interaction descriptors\n\nInteractions between MCCs and immune cells were defined with respect to two radii around each MCC, $r_{1}=r_{im}+r_{ca}+2=20$ px and $r_{2}=2\\times(r_{im}+r_{ca})=36$ px (Nguyen et al., 2018). Hence, $r_{1}$ refers to MCC and immune cells in actual physical contact, while $r_{2}$ refers to MCC and immune cells in close vicinity. Then, for each sample the following interaction features were defined:\n\n### Overview of causal discovery methods for non-temporal data\n\nTraditional causal discovery methods (Pearl, 2009; Spirtes, 2000) aim to learn causal networks from datasets of independent samples by proceeding through successive steps. They first learn structural constraints in the form of unconditional or conditional independence between variables and remove the corresponding edges from an initial fully connected network. The second step then consists of orienting some of the retained edges based on the signature of causality in observational data. This corresponds to orienting three-variable \u2018v-structure\u2019 motifs as $X\u2192Z\u2190Y$ whenever the edge $X\u2212Y$ has been removed without conditioning on the variable $Z$, which implies that $Z$ cannot be a cause of $X$ nor $Y$. This does not guarantee, however, that $X$ (or $Y$) is an actual cause of $Z$, which also requires to rule out the possibility that the edge between $X$ and $Z$ (or $Y$ and $Z$) might originate from a latent common cause, $L$, unobserved in the dataset, that is, $X\u21e0L\u21e2Z$. In addition, classical causal discovery methods are prone to spurious conditional independences, which lead to many false-negative edges and limit the accuracy of inferred orientations. The recent causal discovery method (MIIC) (Verny et al., 2017; Cabeli et al., 2020; Cabeli and Li, 2021; Ribeiro-Dantas et al., 2024), which combines constraint-based and information-based principles, learns more robust causal graphical models by first collecting iteratively significant information contributors before assessing conditional independences (Affeldt and Isambert, 2015; Affeldt et al., 2016). In practice, MIIC\u2019s strategy limits spurious conditional independences, which improves its edge sensitivity and orientation reliability compared to traditional constraint-based methods. In addition, MIIC can handle missing data (Cabeli et al., 2020) and also heterogeneous multimodal data by analyzing continuous and categorical variables on the same footing based on a mutual information supremum principle for finite dataset (Cabeli et al., 2020; Cabeli and Li, 2021; Ribeiro-Dantas et al., 2024). Last, MIIC distinguishes genuine causal relations from putative and latent causal effects (Ribeiro-Dantas et al., 2024) that are ubiquitous in real-world applications.\n\n### CausalXtract\u2019s causal discovery module for time-series data (tMIIC)\n\nIn order to analyze time-series datasets, CausalXtract\u2019s causal discovery module (tMIIC) aims to learn a time-unfolded graph, $G_{t}$, where each variable is represented by a series of nodes associated with its value at different relative time points (Figure 1c). Such a time-unfolded network framework (Entner and Granger, 2010; Malinsky and Spirtes, 2018; Runge et al., 2019) is required to account for the temporal correlation between successive samples in time-series data. Assuming that the dynamics can be considered stationary (see section \u2018Benchmarking of CausalXtract\u2019s causal discovery module\u2019), the time-unfolded graph, $G_{t}$, should be translationally invariant over time and can be assigned a periodic structure a priori. In addition, $G_{t}$ can be restricted to a few time steps from the running time, $t$, back to a maximum time lag, $t\u2212\\tau$, since nodes at future time points ($t^{\u2032}>t$) cannot a priori influence the observed data at current or previous time points ($t^{\u2032}\u2a7dt$) (Figure 1c). The maximum time lag $\\tau$ should be chosen so as to have little effect on the final graphical model, which can be achieved for instance by setting $\\tau$ to twice the average relaxation time of the variables of the dataset. In practice, we may also limit the number of time points $\u03bd$ in $G_{t}$ by introducing a time increment $\\delta\\tau$ between consecutive time points, which leads to $\u03bd=\\tau/\\delta\\tau$ time-lagged layers in $G_{t}$.\n\nSuch a compact periodic graphical representation over a sliding temporal window is learned with tMIIC, which extends MIIC causal discovery method to analyze time-series data. First, tMIIC identifies all necessary edges involving at least one contemporaneous node at time $t$ (Figure 1c). Once these time-lagged and contemporaneous necessary edges have been identified, they are simply duplicated at earlier time points to enforce the translational invariance of $G_{t}$ skeleton. Time-lagged edges are then pre-oriented with a first arrowhead pointing toward the future, considering that current time points cannot cause earlier events. Then, contemporaneous and time-lagged edges can be further oriented using MIIC orientation probability scores applied to $G_{t}$, which may also uncover a second arrowhead (backward in time) for time-lagged edges. This corresponds to time-lagged latent causal effects from unobserved common causes (Figure 1c).\n\nLearning such structural models including latent variables from time-series data was first proposed for time-lagged effects (Entner and Granger, 2010) and subsequently extended to contemporaneous effects (Malinsky and Spirtes, 2018) by adapting the constraint-based FCI method allowing for latent variables (Spirtes, 2000). While traditional constraint-based methods suffer from poor recall, the recent PCMCI (Runge et al., 2019)/PCMCI+ (Runge, 2020) method improves recall by introducing ad hoc conditioning rules for autocorrelated time series. By contrast, tMIIC does not require any ad hoc conditioning rules as it relies on the same robust information-theoretic strategy as MIIC to limit spurious independence and improve edge recall. tMIIC also captures time-lagged and contemporaneous effects due to latent variables.\n\n### Relation to Granger\u2013Schreiber temporal causality\n\nThe concept of temporal causality was originally formulated by Granger, 1969 without reference to any graphical model by comparing linear autoregression with or without past values of possible causal variables. This was later extended to nonlinear relations by Schreiber, 2000; Barnett et al., 2009 using the notion of Transfer Entropy, $T_{X\u2192Y}$, which can be expressed in terms of multivariate conditional information:\n\n$$\nT_{X\u2192Y}=I(Y_{t};X_{t^{\u2032}<t}|Y_{t^{\u2032}<t})\n$$\n\nwhere $X_{t^{\u2032}<t}$ and $Y_{t^{\u2032}<t}$ denote the sets of variables, $X_{t^{\u2032}}$ and $Y_{t^{\u2032}}$, taken at earlier time points $t^{\u2032}$ than $t$.\n\nWhile Equation 1 is asymmetric upon $X$/$Y$ permutation, a simple comparison of Transfer Entropy asymmetry (e.g., $T_{X\u2192Y}>T_{Y\u2192X}\u2a7e0$) does not necessarily translate into causal direction as this asymmetry is also expected for non-causal relations. Interestingly, this is in fact the absence of Transfer Entropy in one direction (e.g.,$T_{Z\u2192X}\u22480$), which suggests the possibility of a causal relation in the opposite direction, $X\u2192Z$, as in the case of v-structures in graph-based causal discovery methods, provided that a latent common cause can be excluded between the two variables (as discussed above).\n\nWe clarify in Theorem 1 this relation between temporal causality without reference to any structural model (Equation 1) and structural causality entailed by time-unfolded causal graphical models ($G_{t}$). This highlights the common foundations of temporal and structural causalities beyond their seemingly unrelated definitions.\n\nTheorem 1. [$T_{Y\u2192X}=0$ implies temporal (2-variable + time) v-structures]\n\nIf $X_{t}$ is adjacent to $Y_{t}$ in $G_{t}$ and $T_{Y\u2192X}=I(X_{t};Y_{t^{\u2032}<t}|X_{t^{\u2032}<t})=0$, then for all $Y_{t^{\u2032}}$ adjacent to $Y_{t}$ in $G_{t}$ , with $t^{\u2032}<t$, there is a temporal (2-variable + time) v-structure, $Y_{t^{\u2032}}\u2192Y_{t}\u2190X_{t}$ , in $G_{t}$ (Figure 2a).\n\nProof: If $T_{Y\u2192X}=I(X_{t};Y_{t^{\u2032}<t}|X_{t^{\u2032}<t})=0$, then all pairs $(X_{t},Y_{t^{\u2032}})$ should be unconnected (assuming \u2018faithfulness\u2019, i.e., no coincidental cancellation of effects) and all unshielded triples $Y_{t^{\u2032}}\u2212Y_{t}\u2212X_{t}$ should be temporal v-structures, $Y_{t^{\u2032}}\u2192Y_{t}\u2190X_{t}$ , as $Y_{t}\u2209X_{t^{\u2032}<t}$ in $T_{Y\u2192X}=I(X_{t};Y_{t^{\u2032}<t}|X_{t^{\u2032}<t})=0$.$\u25fb$\n\nTheorem 1 can be readily extended to include the presence of other observed variables, $V_{t^{\u2032}\u2a7dt}$, by redefining Transfer Entropy as $T_{Y\u2192X}=I(X_{t};Y_{t^{\u2032}<t}|X_{t^{\u2032}<t},V_{t^{\u2032}\u2a7dt})$, which discards contributions from indirect paths through other observed variables, $V_{t^{\u2032}\u2a7dt}$.\n\nNote, however, that the converse of Theorem 1 is not true: a temporal v-structure does not imply a vanishing Transfer Entropy, as shown with the counterexample in Figure 2b. As a result, the presence of a temporal v-structure, $Y_{t^{\u2032}}\u2192Y_{t}\u2190X_{t}$ in $G_{t}$, does not necessarily imply a vanishing Transfer Entropy, $T_{Y\u2192X}=0$, as long as there remains an edge between any $Y_{t^{\u2032\u2032}}$ and $X_{t}$, as in the example in Figure 2b. Hence, Granger\u2013Schreiber causality is in fact too restrictive and may miss actual causal effects, which can be uncovered by structural causal discovery methods like tMIIC. In addition, Granger\u2013Schreiber causality is also known to infer spurious causal associations by excluding the presence of latent common causes a priori. By contrast, tMIIC includes time-delayed as well as synchronous effects originating from unobserved latent variables, as discussed above.\n\n### Benchmarking of CausalXtract\u2019s causal discovery module (tMIIC)\n\nThe performance of CausalXtract\u2019s causal discovery module (tMIIC) has been assessed using Tigramite package (Runge, 2020), which provides different methods to learn temporal causal networks from time-series data. We compared tMIIC to two methods capable of orienting contemporaneous edges (PC and PCMCI+) and tested three different kernels for estimating mutual information (Parcorr, GPDC, and KNN). Benchmark networks and datasets have been chosen to resemble the real-world data analyzed in this study (i.e., similar number of time steps, network size, and degree distribution) and include a large range of linear and nonlinear relations between variables.\n\nA first series of datasets was generated for a 15-node benchmark network (Figure 2\u2014figure supplement 1a) with linear combinations of contributions inspired by the Tigramite package (Appendix 1). Running times and scores (Precision, Recall, Fscore) have been averaged over 10 datasets (Figure 2\u2014figure supplement 1b) and show that tMIIC scores are at par with PC and PCMCI+ using GPDC or KNN kernels but that tMIIC runs orders of magnitude faster, which enables to use tMIIC on much larger datasets of biological interest including a few tens or hundreds of thousands samples. Only PC or PCMCI+ using ParCorr kernel match tMIIC running speed but with significantly lower scores, as Fscores level off around 0.6\u20130.7 at large sample size, while tMIIC Fscore exceeds 0.9 (Figure 2\u2014figure supplement 1b).\n\nImportantly, increasing the number of time-lagged layers from $\\tau=2$ (as in the actual model) to 5 or 10 layers in the inferred time-unfolded network (Figure 2\u2014figure supplement 2) leads to very similar network reconstructions for simulated stationary data. This demonstrates tMIIC insensitivity to an overestimated maximum lag for the reconstituted network. Interestingly, however, when the generated data is no longer stationary, increasing the number of layers leads to multiple self-loops at nonstationary variables, whilst the rest of the network remains relatively unaffected (Figure 2\u2014figure supplement 3). It demonstrates that CausalXtract\u2019s causal discovery module is robust to the presence of nonstationary variables but requires long-time range interactions, and therefore multiple time-lagged layers, to account for these nonstationary dynamics at specific variables. This striking observation on benchmark networks is also consistent with the multiple self-loops observed for a number of nonstationary variables in the real-world application on cellular ecosystems (Figure 3a, Figure 1\u2014figure supplement 1).\n\nA second series of more complex datasets was also generated for another 15-node benchmark network (Figure 2\u2014figure supplement 4a) with nonlinear combinations of contributors (Appendix 2). Here, tMIIC tends to outperform both PC and PCMCI+ in terms of Recall and Fscores, while remaining orders of magnitude faster compared to GPDC and KNN kernels. Only PC or PCMCI+ using ParCorr kernel match tMIIC running speed but with significantly lower scores (i.e., Fscores level off around 0.4\u20130.5 at large sample size, while tMIIC Fscore exceeds 0.8). This demonstrates that CausalXtract\u2019s causal discovery module (tMIIC) is both a reliable and scalable method to discover complex temporal causal relations in very large time-series datasets including a few hundred thousand samples.\n\n### Code availability\n\nThe source code of CausalXtract is available at https://github.com/miicTeam/CausalXtract, copy archived at miicTeam, 2024. It includes a demo R markdown notebook of CausalXtract pipeline, which reproduces step-by-step the results reported in the article (Figure 3), starting from the original live-cell time-lapse images of the tumor-on-chip ecosystem (Figure 1a). The Tigramite package used for benchmark comparison is available at https://github.com/jakobrunge/tigramite, copy archived at Runge, 2024.\n",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Lynne-Marie Postovit, Queens University Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95485.3.sa0](https://doi.org/10.7554/eLife.95485.3.sa0)\n\nThis important study represents a data processing pipeline to discover causal interactions from time-lapse imaging data and convincingly illustrates it on a challenging application for the analysis of tumor-on-chip ecosystem data. The authors describe the raw data they used (imaging data), go through a step-by-step description of how to extract the features they are interested in from the raw data, and how to perform the causal discovery process. This article tackles the problem of learning causal interactions from temporal data, which is applicable to many biological applications.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95485.3.sa1](https://doi.org/10.7554/eLife.95485.3.sa1)\n\nSummary:\n\nThis paper presents a data processing pipeline to discover causal interactions from time-lapse imaging data and convincingly illustrates it on a challenging application for the analysis of tumor-on-chip ecosystem data.\n\nThe core of the discovery module is the original tMIIC method of the authors, which is shown in supplementary material to compare favourably to two state-of-the-art methods on synthetic temporal data on a 15 nodes network.\n\nStrengths:\n\nThis paper tackles the problem of learning causal interactions from temporal data which is an open problem in presence of latent variables.\n\nThe core of the method tMIIC of the authors is nicely presented in connection to Granger-Schreiber causality and to the novel graphical conditions used to infer latent variables and based on a theorem about transfer entropy.\n\ntMIIC compares favourably to PC and PCMCI+ methods using different kernels on synthetic datasets generated from a network of 15 nodes.\n\nA full application to tumor-on-chip cellular ecosystems data including cancer cells, immune cells, cancer-associated fibroblasts, endothelial cells and anti cancer drugs, with convincing inference results with respect to both known and novel effects between those components and their contact.\n\nThe code and dataset are available online for the reproducibility of the results.\n\nWeaknesses:\n\nThe references to \"state-of-the-art methods\" concerning the inference of causal networks should be more precise by giving citations in the main text, and better discussed in general terms, both in the first section and in the section of presentation of CausalXtract. It is only in the legend of the figures of the supplementary material that we get information.\n\nOf course, comparison on our own synthetic datasets can always be criticized but this is rather due to the absence of a common benchmark in this domain compared to other domains. I recommend the authors to explicitly propose their datasets made accessible in supplementary material as benchmark for the community.\n\nComments on revisions:\n\nThis is a very nice paper.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95485.3.sa2](https://doi.org/10.7554/eLife.95485.3.sa2)\n\nSummary:\n\nThe authors propose a methodology to perform causal (temporal) discovery. The approach appears to be robust and is tested in the different scenarios: one related to live-cell imaging data, and another one using synthetic (mathematically defined) time series data. They compare the performance of their findings against another well-known method by using metrics like F-score, precision and recall,\n\nStrengths:\n\n--Performance, robustness, the text is clear and concise, The authors provide the code to review.\n\nComments on revisions:\n\nThe authors have addressed my concerns properly providing the needed explanations.\n",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8ad6e22c-29ff-4485-98c7-41e3770a1281",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C1",
+      "claim": "CausalXtract is a flexible computational pipeline that discovers causal and possibly time-lagged effects from morphodynamic features and cell\u2013cell interactions in live-cell imaging data.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe CausalXtract, a flexible computational pipeline that discovers causal and possibly time-lagged effects from morphodynamic features and cell\u2013cell interactions in live-cell imaging data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main description of the tool provided in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "8bfa1e2e-e4ab-460a-ba3f-f5ac7bc30bfb",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C2",
+      "claim": "CausalXtract methodology combines network-based and information-based frameworks.",
+      "claim_type": "EXPLICIT",
+      "source": "CausalXtract methodology combines network-based and information-based frameworks, which is shown to discover causal effects overlooked by classical Granger and Schreiber causality approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The methodology description is stated in the abstract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "09cfb6cd-6866-4937-bbc2-78e4cbde7630",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C3",
+      "claim": "CausalXtract discovers causal effects overlooked by classical Granger and Schreiber causality approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "CausalXtract methodology combines network-based and information-based frameworks, which is shown to discover causal effects overlooked by classical Granger and Schreiber causality approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by theoretical analysis and benchmarking results shown in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "52628a08-8cd9-42aa-9e20-502f1112c96e",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C4",
+      "claim": "Cancer-associated fibroblasts directly inhibit cancer cell apoptosis, independently from anticancer treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we find that cancer-associated fibroblasts directly inhibit cancer cell apoptosis, independently from anticancer treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is derived from the causal network analysis of tumor-on-chip data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "8c6e0171-7c55-413f-a619-a3bf8d6a7b63",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C5",
+      "claim": "CausalXtract uncovers multiple antagonistic effects at different time delays.",
+      "claim_type": "EXPLICIT",
+      "source": "CausalXtract uncovers also multiple antagonistic effects at different time delays.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated in the results section with specific examples.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4bffd4fe-5f78-43bf-9828-924f043d9fb5",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C6",
+      "claim": "Live-cell imaging microscopy commonly produces extensive amounts of time-lapse images of cellular systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Live-cell imaging microscopy commonly produces extensive amounts of time-lapse images of cellular systems, which can be segmented to extract morphodynamic features and interactions of individual cells under increasingly complex and physiologically relevant conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the field based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4d0c53b0-7c78-43a4-9c1f-bdd36ac57479",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C7",
+      "claim": "There is a lack of methods and tools able to discover causal effects from spatio-temporal correlations under well-controlled experimental conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this wealth of information remains largely underexploited due to a lack of methods and tools able to discover causal effects from spatio-temporal correlations under well-controlled experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the motivation for developing CausalXtract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "b6096e86-7b1e-4354-8be6-442d466d5480",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C8",
+      "claim": "CausalXtract integrates an advanced live-cell image feature extraction tool with a reliable and scalable causal discovery method.",
+      "claim_type": "EXPLICIT",
+      "source": "CausalXtract addresses this need by integrating an advanced live-cell image feature extraction tool with a reliable and scalable causal discovery method (Figures 1 and 2) in order to learn temporal causal networks from live-cell time-lapse imaging data (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the overall architecture of CausalXtract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "5f38175c-c407-4835-85f3-fbdd1660fefa",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C9",
+      "claim": "CausalXtract's live-cell image feature extraction module (CellHunter+) is based on CellHunter software.",
+      "claim_type": "EXPLICIT",
+      "source": "CausalXtract's live-cell image feature extraction module (CellHunter+) (Figure 1b) is based on CellHunter software (Nguyen et al., 2018) and consists of three steps: detection, tracking, and feature extraction of live cells within time-lapse video images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Results section with a citation to the original software.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "29d9368f-ea0a-4a48-bb42-9f0da3e67755",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C10",
+      "claim": "CellHunter+ consists of three steps: detection, tracking, and feature extraction of live cells.",
+      "claim_type": "EXPLICIT",
+      "source": "CausalXtract's live-cell image feature extraction module (CellHunter+) (Figure 1b) is based on CellHunter software (Nguyen et al., 2018) and consists of three steps: detection, tracking, and feature extraction of live cells within time-lapse video images.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of the feature extraction module.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "5995de95-5ed6-4611-bc4f-dae9cecfa53d",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C11",
+      "claim": "Automatic localization/segmentation of cells is performed with the Circular Hough Transform (CHT) algorithm.",
+      "claim_type": "EXPLICIT",
+      "source": "First, automatic localization/segmentation of cells (e.g., tumor and immune cells) is performed with the Circular Hough Transform (CHT) algorithm (Davies, 2004) to estimate the cell centers and radii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail with a citation to the algorithm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "59a62656-ce4f-4b1c-9894-9008ecbfabe0",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C12",
+      "claim": "Cell trajectories are constructed by linking positions detected at the previous time step through Munkres' algorithm for optimal sub-pattern assignment problems.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, cell trajectories along the frames are constructed by linking the positions detected at the previous time step through Munkres' algorithm for optimal sub-pattern assignment problems (OAPs) (Munkres, 1957).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail with a citation to the algorithm.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "34b31fc9-399d-4a40-95d3-1136678d9519",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C13",
+      "claim": "CausalXtract's temporal causal discovery module (tMIIC) is adapted from the causal discovery method (MIIC).",
+      "claim_type": "EXPLICIT",
+      "source": "CausalXtract's temporal causal discovery module (tMIIC) (Figure 1c) is adapted from the causal discovery method (MIIC) (Verny et al., 2017; Cabeli et al., 2020; Cabeli and Li, 2021; Ribeiro-Dantas et al., 2024), which learns contemporaneous causal networks (i.e., when temporal information is not available) for a broad range of biological or biomedical data, from single-cell transcriptomic and genomic alteration data (Verny et al., 2017; Desterke et al., 2020) to medical records of patients (Cabeli et al., 2020; Sella et al., 2022; Ribeiro-Dantas et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the origin of tMIIC with multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "1f588a38-96e2-4041-bbef-1cce696b7bf3",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C14",
+      "claim": "MIIC learns contemporaneous causal networks for a broad range of biological or biomedical data.",
+      "claim_type": "EXPLICIT",
+      "source": "CausalXtract's temporal causal discovery module (tMIIC) (Figure 1c) is adapted from the causal discovery method (MIIC) (Verny et al., 2017; Cabeli et al., 2020; Cabeli and Li, 2021; Ribeiro-Dantas et al., 2024), which learns contemporaneous causal networks (i.e., when temporal information is not available) for a broad range of biological or biomedical data, from single-cell transcriptomic and genomic alteration data (Verny et al., 2017; Desterke et al., 2020) to medical records of patients (Cabeli et al., 2020; Sella et al., 2022; Ribeiro-Dantas et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to previous applications.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "fc347437-a026-491e-8a86-c94538ad6822",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C15",
+      "claim": "tMIIC reconstructs time-unfolded causal networks where each variable is represented by several nodes at different relative time points.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, CausalXtract's discovery module, tMIIC, reconstructs time-unfolded causal networks, where each variable is represented by several nodes at different relative time points (Assaad et al., 2022; Figure 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology with a citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "7cb89215-3972-4fe0-a420-5423d7d169a1",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C16",
+      "claim": "A time-unfolded network framework is required to account for the temporal correlation between successive time steps in time-series data.",
+      "claim_type": "EXPLICIT",
+      "source": "Such a time-unfolded network framework (Entner and Granger, 2010; Malinsky and Spirtes, 2018; Runge et al., 2019) is required to account for the temporal correlation between successive time steps in time-series data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological justification with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "08499c92-dd0f-4d3e-ae60-7c6f154a7429",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C17",
+      "claim": "The graph-based causal framework goes beyond the seminal concept of temporal causality originally proposed by Granger for linear time series.",
+      "claim_type": "EXPLICIT",
+      "source": "This graph-based causal framework goes beyond the seminal concept of temporal causality originally proposed by Granger, 1969 for linear time series without reference to graphical models and later extended to nonlinear dynamics by Schreiber, 2000; Barnett et al., 2009.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative statement with citations to prior work.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "fd244560-a045-45d3-bac0-88f44ec2f975",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C18",
+      "claim": "Granger\u2013Schreiber causality is too restrictive and may overlook actual causal effects that can be uncovered by graph-based causal discovery methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, Granger\u2013Schreiber causality is in fact too restrictive and may overlook actual causal effects that can be uncovered by graph-based causal discovery methods (Figure 2a and b; 'Materials and methods', Theorem 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by theoretical analysis (Theorem 1) and figures.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "f5cf22b9-9728-4ecf-a057-97227919cb3f",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C19",
+      "claim": "Granger\u2013Schreiber causality has long been known to infer spurious causal associations based on time delays by excluding the presence of latent common causes a priori.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Granger\u2013Schreiber causality has long been known to infer spurious causal associations based on time delays by excluding the presence of latent common causes a priori (Assaad et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation cited from prior work.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "649f5bc7-2ae0-4259-b931-251aa303c6c4",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C20",
+      "claim": "tMIIC circumvents the limitations of Granger\u2013Schreiber causality by combining graph-based and information-based approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "tMIIC circumvents these limitations by combining graph-based and information-based approaches ('Materials and methods'), while including contemporary and time-delayed effects of unobserved latent variables that are ubiquitous in cell biology data (e.g., the latent effects of cell cycle phases on cellular features and responses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantages of tMIIC methodology.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "db9e042e-c1c6-480a-be91-9456bb3b86a3",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C21",
+      "claim": "Unobserved latent variables are ubiquitous in cell biology data.",
+      "claim_type": "EXPLICIT",
+      "source": "tMIIC circumvents these limitations by combining graph-based and information-based approaches ('Materials and methods'), while including contemporary and time-delayed effects of unobserved latent variables that are ubiquitous in cell biology data (e.g., the latent effects of cell cycle phases on cellular features and responses).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general characteristic of cell biology data with an example.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "6ac59671-b0d7-41a5-aab4-2df52f68afb5",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C22",
+      "claim": "tMIIC matches or outperforms state-of-the-art methods PC and PCMCI+ while running orders of magnitudes faster on datasets of biologically relevant size.",
+      "claim_type": "EXPLICIT",
+      "source": "We benchmarked tMIIC on synthetic datasets resembling the real-world data of interest analyzed in this study (i.e., number of time steps, network size, and degree distribution) and found that it matches or outperforms state-of-the-art methods, PC and PCMCI+ (Runge, 2020), while running order of magnitudes faster on datasets of biologically relevant size including tens to hundreds of thousands time steps (Figure 2c and d and Figure 2\u2014figure supplement 3; Figure 2\u2014figure supplement 2; Figure 2\u2014figure supplement 1; Figure 2\u2014figure supplements 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by benchmark results shown in multiple figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "27b1a59b-8660-407e-b29e-4ecd174cf83f",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C23",
+      "claim": "The tumor ecosystem was reconstituted ex vivo using tumor-on-chip technology.",
+      "claim_type": "EXPLICIT",
+      "source": "We showcase CausalXtract with the analysis of time-lapse images of a tumor ecosystem reconstituted ex vivo using the tumor-on-chip technology (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental system analyzed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "73830cd9-575e-4e28-8c3a-d5a531d48e25",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C24",
+      "claim": "The live-cell time-lapse images come from a proof-of-concept study that demonstrated the effects of trastuzumab on a reconstituted tumor microenvironment.",
+      "claim_type": "EXPLICIT",
+      "source": "These live-cell time-lapse images come from a proof-of-concept study (Nguyen et al., 2018), which demonstrated the effects of an anticancer drug (the monoclonal antibodies trastuzumab, brand name Herceptin, used to treat HER2+ breast cancers) on a reconstituted tumor microenvironment, including cancer cells, immune cells, cancer-associated fibroblasts (CAFs), and endothelial cells ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references a prior study with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "102a69d7-2122-4606-a709-5fd1faa271e8",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C25",
+      "claim": "Trastuzumab is a monoclonal antibody used to treat HER2+ breast cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "These live-cell time-lapse images come from a proof-of-concept study (Nguyen et al., 2018), which demonstrated the effects of an anticancer drug (the monoclonal antibodies trastuzumab, brand name Herceptin, used to treat HER2+ breast cancers) on a reconstituted tumor microenvironment, including cancer cells, immune cells, cancer-associated fibroblasts (CAFs), and endothelial cells ('Materials and methods').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established medical knowledge about the drug.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "953cafd6-1110-4544-ae20-9e5b66183c7c",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C26",
+      "claim": "A comprehensive extraction and analysis of cellular morphodynamic features and interactions remained unexplored in the prior study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, a comprehensive extraction and analysis of cellular morphodynamic features and interactions remained unexplored.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This identifies a gap in prior work that CausalXtract addresses.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4d1bf498-0a5e-411e-829a-f96cad86a0e6",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C27",
+      "claim": "Cellular features such as cell geometry, velocity, division, apoptosis, cell\u2013cell transient interactions, and persistent contacts were extracted using CausalXtract's feature extraction module.",
+      "claim_type": "EXPLICIT",
+      "source": "To this end, cellular features such as cell geometry, velocity, division, apoptosis, cell\u2013cell transient interactions, and persistent contacts were first extracted from the raw images using CausalXtract's feature extraction module (Figure 1b, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the features extracted in the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "1ef33f7d-b4b9-4858-99b4-812a3ab2b4be",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C28",
+      "claim": "CausalXtract discovers that treatment increases cancer cell perimeter.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, CausalXtract uncovers that treatment increases cancer cell perimeter, which has not been reported either.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a novel finding from the causal network analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "1e17533e-482e-4657-8bcc-0d33f3c5903e",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C29",
+      "claim": "Treatment increases cancer cell apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it recovers that treatment increases cancer cell apoptosis and the number of cancer-immune interactions, as well as decreases the division rate of cancer cells (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This confirms a known result from earlier studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "2973c15d-f987-47bc-9bcc-76b3648ff2f2",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C30",
+      "claim": "Treatment increases the number of cancer-immune interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it recovers that treatment increases cancer cell apoptosis and the number of cancer-immune interactions, as well as decreases the division rate of cancer cells (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This confirms a known result from earlier studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "7a9ca218-a9ce-40da-b0cc-c540a9d0996c",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C31",
+      "claim": "Treatment decreases the division rate of cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it recovers that treatment increases cancer cell apoptosis and the number of cancer-immune interactions, as well as decreases the division rate of cancer cells (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This confirms a known result from earlier studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "3ff65fa3-4bd4-4987-9c3c-fa42252e3e09",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C32",
+      "claim": "CAFs stimulate cancer cell migration.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, CausalXtract recovers that CAFs stimulate cancer cell migration and increase their area (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This confirms a known result from earlier studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "aedb2391-c6d5-4727-adb3-e57dad79a26b",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C33",
+      "claim": "CAFs increase cancer cell area.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, CausalXtract recovers that CAFs stimulate cancer cell migration and increase their area (Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This confirms a known result from earlier studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4dac06ca-a06e-4c4d-9eab-a132c7625e73",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C34",
+      "claim": "The late phases of cell division are associated with a marked increase in eccentricity.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the late phases of cell division are associated to a marked increase in eccentricity (red edge) but preceded by a net decrease in eccentricity, 2\u20133 hr before cytokinesis (blue edges), once the decision to divide has been made (i.e., the probable latent cause) and the cell is actually duplicating its biological materials (prophase) (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the causal network analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "1df06269-281c-4f96-86c2-b3b4dc40a58a",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C35",
+      "claim": "Cell division is preceded by a net decrease in eccentricity 2\u20133 hr before cytokinesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, the late phases of cell division are associated to a marked increase in eccentricity (red edge) but preceded by a net decrease in eccentricity, 2\u20133 hr before cytokinesis (blue edges), once the decision to divide has been made (i.e., the probable latent cause) and the cell is actually duplicating its biological materials (prophase) (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the causal network analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "5c028bd2-62f1-43ac-821e-338fdf351f54",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C36",
+      "claim": "The area change upon apoptosis is predicted to first decrease soon after apoptosis before eventually increasing upon cell lysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, the area change upon apoptosis is predicted to first decrease soon after apoptosis (blue edge) before eventually increasing upon cell lysis (red edge) (Figure 3d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the causal network analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "d81bdd21-9d15-4ee3-9daf-07d2e57ef26a",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C37",
+      "claim": "The results are robust to variations in sampling rate.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are robust to variations in sampling rate (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by additional analysis shown in supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "3755a02c-f8a4-4e02-8bb4-53282ac3a665",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C38",
+      "claim": "CausalXtract is a flexible pipeline that uncovers novel and possibly time-lagged causal relations between cellular features under controlled conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "All in all, CausalXtract is a flexible pipeline that uncovers novel and possibly time-lagged causal relations between cellular features under controlled conditions (e.g., drug).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary statement of the tool's capabilities.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "a954fc3a-a46f-40dc-ad06-989e7626b50c",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C39",
+      "claim": "CausalXtract uniquely combines live-cell feature extraction with information theory and causal discovery approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "CausalXtract uniquely combines live-cell feature extraction with information theory and causal discovery approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the unique combination of methods in CausalXtract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "9cb5f692-4365-4177-bbd4-6a17d8ef0671",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C40",
+      "claim": "CausalXtract consists of two independent computational modules conceived to warrant interoperability with alternative methods.",
+      "claim_type": "EXPLICIT",
+      "source": "It consists of two independent computational modules, conceived to warrant interoperability with alternative live-cell segmentation and tracking methods or alternative temporal causal discovery methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the modular design of CausalXtract.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "ba2fce8a-9096-4667-84b8-ffa0180fb54a",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C41",
+      "claim": "Flexible hypothesis-free interpretation methods are much needed with the advent of virtually unlimited live-cell image data.",
+      "claim_type": "EXPLICIT",
+      "source": "With the advent of virtually unlimited live-cell image data, flexible hypothesis-free interpretation methods are much needed (Driscoll and Zaritsky, 2021), and we believe that CausalXtract can bring unique insights based on causal discovery to interpret such information-rich live-cell imaging data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a need in the field with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "e55047ba-e968-40c6-85fe-5cd9038b1039",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C42",
+      "claim": "All tumor-on-chip experiments have a central endothelium compartment containing endothelial cells and two lateral chambers filled with biomimetic hydrogel seeded with cancer cells and immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "All tumor-on-chip experiments have a central endothelium compartment containing endothelial cells (primary human umbilical vein endothelial cells [HUVECs]) and two lateral chambers filled with biomimetic hydrogel (collagen type I at 2.3 mg/mL) seeded with cancer cells (HER2+ breast cancer BT474 cell line) and immune cells (peripheral blood mononuclear cells [PBMCs]) from healthy donors (Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "db91d18c-7bef-4fdc-b8e7-8d46cf0a486b",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C43",
+      "claim": "Four experimental conditions were considered depending on the presence or absence of breast CAFs and drug treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Four experimental conditions were considered depending on the presence or absence of breast CAFs (CAF cell line Hs578T) and drug treatment (trastuzumab, Herceptin).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "37ec4143-ed26-4170-ae75-5133c579529f",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C44",
+      "claim": "Videos were acquired using inverted motorized Leica microscopes with a frame rate of 2 min for up to 48 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "Videos were acquired using inverted motorized Leica microscopes with a frame rate of 2 min for up to 48 hr (1440 frames).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the imaging parameters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "c43148fa-c802-4cf4-b70a-9dd88fa68b65",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C45",
+      "claim": "Thirty-six video crops of up to 1440 frames were analyzed corresponding to nine video crops per experimental condition.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirty-six video crops of up to 1440 frames were analyzed (46,935 frames in total) corresponding to nine video crops per experimental conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the dataset size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4dc1fd49-caaa-4c21-a6ca-10b088e1075f",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C48",
+      "claim": "Different maximum distances are considered for MCCs (40 px) and immune cells (20 px) due to their different motility characteristics.",
+      "claim_type": "EXPLICIT",
+      "source": "While the motions of both MCCs and immune cells resemble random walks with time-varying drift and volatility, these two cell types exhibit different motility characteristics (Nguyen et al., 2018). Hence, different maximum distances are considered for the two cell populations: it was set to 40 px for MCCs and to 20 px for immune cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological choice based on observed differences with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "8a65bc9c-b6b0-422f-bf90-b2f545dc2331",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C49",
+      "claim": "For each MCC, 15 descriptors were extracted and classified into four main categories: cell shape, motility, state, and interaction descriptors.",
+      "claim_type": "EXPLICIT",
+      "source": "For each MCC, 15 descriptors were extracted (Figure 1\u2014figure supplement 1) and classified into four main categories: cell shape, motility, state, and interaction descriptors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the features extracted.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "d37b6a0c-84f0-40d6-9150-6c1c2583573b",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C50",
+      "claim": "Traditional causal discovery methods aim to learn causal networks from datasets of independent samples by proceeding through successive steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional causal discovery methods (Pearl, 2009; Spirtes, 2000) aim to learn causal networks from datasets of independent samples by proceeding through successive steps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes traditional methods with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4d38789a-c57d-49ab-8ca0-6b97bbb21598",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C51",
+      "claim": "Traditional causal discovery methods first learn structural constraints in the form of unconditional or conditional independence between variables.",
+      "claim_type": "EXPLICIT",
+      "source": "They first learn structural constraints in the form of unconditional or conditional independence between variables and remove the corresponding edges from an initial fully connected network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of traditional causal discovery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "5606c151-e67c-435e-9165-4bb152d9bf30",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C52",
+      "claim": "The second step of traditional causal discovery consists of orienting some of the retained edges based on the signature of causality in observational data.",
+      "claim_type": "EXPLICIT",
+      "source": "The second step then consists of orienting some of the retained edges based on the signature of causality in observational data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of traditional causal discovery.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "c1f71e49-ea8c-4795-a394-55a69e741609",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C53",
+      "claim": "Classical causal discovery methods are prone to spurious conditional independences which lead to many false-negative edges.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, classical causal discovery methods are prone to spurious conditional independences, which lead to many false-negative edges and limit the accuracy of inferred orientations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation of classical methods.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "5b9bd5e6-5285-4505-b20a-4d32809a4f70",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C54",
+      "claim": "MIIC combines constraint-based and information-based principles to learn more robust causal graphical models.",
+      "claim_type": "EXPLICIT",
+      "source": "The recent causal discovery method (MIIC) (Verny et al., 2017; Cabeli et al., 2020; Cabeli and Li, 2021; Ribeiro-Dantas et al., 2024), which combines constraint-based and information-based principles, learns more robust causal graphical models by first collecting iteratively significant information contributors before assessing conditional independences (Affeldt and Isambert, 2015; Affeldt et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes MIIC methodology with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "2bf8a4d2-a117-4433-96f0-68c9be535b90",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C55",
+      "claim": "MIIC's strategy limits spurious conditional independences which improves its edge sensitivity and orientation reliability compared to traditional constraint-based methods.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, MIIC's strategy limits spurious conditional independences, which improves its edge sensitivity and orientation reliability compared to traditional constraint-based methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the advantages of MIIC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "d1169071-ba89-436b-b5f4-ebc3e1b86da2",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C56",
+      "claim": "MIIC can handle missing data.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MIIC can handle missing data (Cabeli et al., 2020) and also heterogeneous multimodal data by analyzing continuous and categorical variables on the same footing based on a mutual information supremum principle for finite dataset (Cabeli et al., 2020; Cabeli and Li, 2021; Ribeiro-Dantas et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a capability of MIIC with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "64abf0c3-f6a1-4894-a554-60dc8f02ba0d",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C57",
+      "claim": "MIIC can analyze heterogeneous multimodal data by analyzing continuous and categorical variables on the same footing.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, MIIC can handle missing data (Cabeli et al., 2020) and also heterogeneous multimodal data by analyzing continuous and categorical variables on the same footing based on a mutual information supremum principle for finite dataset (Cabeli et al., 2020; Cabeli and Li, 2021; Ribeiro-Dantas et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a capability of MIIC with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "e3666994-b5e9-4f64-87dc-ae3192d73ad1",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C58",
+      "claim": "MIIC distinguishes genuine causal relations from putative and latent causal effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Last, MIIC distinguishes genuine causal relations from putative and latent causal effects (Ribeiro-Dantas et al., 2024) that are ubiquitous in real-world applications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a capability of MIIC with citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "3703f0b0-fb55-4a0a-bec2-a5c3734928fe",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C63",
+      "claim": "Learning structural models including latent variables from time-series data was first proposed for time-lagged effects and subsequently extended to contemporaneous effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Learning such structural models including latent variables from time-series data was first proposed for time-lagged effects (Entner and Granger, 2010) and subsequently extended to contemporaneous effects (Malinsky and Spirtes, 2018) by adapting the constraint-based FCI method allowing for latent variables (Spirtes, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical account with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "592dac95-e069-4ed4-ab02-9d9971b72e90",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C64",
+      "claim": "Traditional constraint-based methods suffer from poor recall.",
+      "claim_type": "EXPLICIT",
+      "source": "While traditional constraint-based methods suffer from poor recall, the recent PCMCI (Runge et al., 2019)/PCMCI+ (Runge, 2020) method improves recall by introducing ad hoc conditioning rules for autocorrelated time series.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a known limitation with citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "377b6d2f-0784-4b06-898b-0a82fb7e87b5",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C65",
+      "claim": "PCMCI/PCMCI+ method improves recall by introducing ad hoc conditioning rules for autocorrelated time series.",
+      "claim_type": "EXPLICIT",
+      "source": "While traditional constraint-based methods suffer from poor recall, the recent PCMCI (Runge et al., 2019)/PCMCI+ (Runge, 2020) method improves recall by introducing ad hoc conditioning rules for autocorrelated time series.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes PCMCI methodology with citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "335104bd-408c-4ff2-881e-af0bc30b919d",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C66",
+      "claim": "tMIIC does not require any ad hoc conditioning rules as it relies on the same robust information-theoretic strategy as MIIC to limit spurious independence and improve edge recall.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, tMIIC does not require any ad hoc conditioning rules as it relies on the same robust information-theoretic strategy as MIIC to limit spurious independence and improve edge recall.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an advantage of tMIIC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "e4068827-a171-43cf-8d31-eadfbfd2de61",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C67",
+      "claim": "tMIIC captures time-lagged and contemporaneous effects due to latent variables.",
+      "claim_type": "EXPLICIT",
+      "source": "tMIIC also captures time-lagged and contemporaneous effects due to latent variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a capability of tMIIC.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "015e991f-caf9-4148-998f-754d7f1a944f",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C68",
+      "claim": "The concept of temporal causality was originally formulated by Granger without reference to any graphical model by comparing linear autoregression with or without past values of possible causal variables.",
+      "claim_type": "EXPLICIT",
+      "source": "The concept of temporal causality was originally formulated by Granger, 1969 without reference to any graphical model by comparing linear autoregression with or without past values of possible causal variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a historical account with citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "46e577b6-a9de-4a45-bd33-cf65e05f52b3",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C73",
+      "claim": "The converse of Theorem 1 is not true: a temporal v-structure does not imply a vanishing Transfer Entropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Note, however, that the converse of Theorem 1 is not true: a temporal v-structure does not imply a vanishing Transfer Entropy, as shown with the counterexample in Figure 2b.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a theoretical result demonstrated with a counterexample.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "213ddee9-7b68-458e-8e65-01cd44016456",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C74",
+      "claim": "The performance of tMIIC has been assessed using Tigramite package which provides different methods to learn temporal causal networks from time-series data.",
+      "claim_type": "EXPLICIT",
+      "source": "The performance of CausalXtract's causal discovery module (tMIIC) has been assessed using Tigramite package (Runge, 2020), which provides different methods to learn temporal causal networks from time-series data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the benchmarking methodology with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "2ed57541-0901-4fac-a913-178d22bb61d5",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C75",
+      "claim": "tMIIC was compared to two methods capable of orienting contemporaneous edges (PC and PCMCI+) using three different kernels (Parcorr, GPDC, and KNN).",
+      "claim_type": "EXPLICIT",
+      "source": "We compared tMIIC to two methods capable of orienting contemporaneous edges (PC and PCMCI+) and tested three different kernels for estimating mutual information (Parcorr, GPDC, and KNN).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the benchmarking methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "010c3ed4-6c72-4a48-b388-9fa4e3342ba0",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C76",
+      "claim": "Benchmark networks and datasets have been chosen to resemble the real-world data analyzed in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Benchmark networks and datasets have been chosen to resemble the real-world data analyzed in this study (i.e., similar number of time steps, network size, and degree distribution) and include a large range of linear and nonlinear relations between variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the benchmarking design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "eb583838-3579-433a-8ee7-b8c9d62b53cd",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C77",
+      "claim": "tMIIC scores are at par with PC and PCMCI+ using GPDC or KNN kernels but tMIIC runs orders of magnitude faster.",
+      "claim_type": "EXPLICIT",
+      "source": "Running times and scores (Precision, Recall, Fscore) have been averaged over 10 datasets (Figure 2\u2014figure supplement 1b) and show that tMIIC scores are at par with PC and PCMCI+ using GPDC or KNN kernels but that tMIIC runs orders of magnitude faster, which enables to use tMIIC on much larger datasets of biological interest including a few tens or hundreds of thousands samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a benchmarking result shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "86f8f02a-2db3-4a96-a496-9c3e639e27b1",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C78",
+      "claim": "PC or PCMCI+ using ParCorr kernel match tMIIC running speed but with significantly lower scores.",
+      "claim_type": "EXPLICIT",
+      "source": "Only PC or PCMCI+ using ParCorr kernel match tMIIC running speed but with significantly lower scores, as Fscores level off around 0.6\u20130.7 at large sample size, while tMIIC Fscore exceeds 0.9 (Figure 2\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a benchmarking result shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "c2d6de8f-b99b-4801-92c7-b9787ecc9b2b",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C80",
+      "claim": "tMIIC is insensitive to an overestimated maximum lag for the reconstituted network when data is stationary.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates tMIIC insensitivity to an overestimated maximum lag for the reconstituted network.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from benchmarking results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "c7633f58-d638-4baa-a8e9-bab9b71775e3",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C81",
+      "claim": "When generated data is no longer stationary, increasing the number of layers leads to multiple self-loops at nonstationary variables while the rest of the network remains relatively unaffected.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, when the generated data is no longer stationary, increasing the number of layers leads to multiple self-loops at nonstationary variables, whilst the rest of the network remains relatively unaffected (Figure 2\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a benchmarking result shown in figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "01cd54c3-e5b8-4786-9da2-c512df62c403",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C82",
+      "claim": "CausalXtract's causal discovery module is robust to the presence of nonstationary variables but requires long-time range interactions to account for these nonstationary dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "It demonstrates that CausalXtract's causal discovery module is robust to the presence of nonstationary variables but requires long-time range interactions, and therefore multiple time-lagged layers, to account for these nonstationary dynamics at specific variables.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from benchmarking results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "92e285da-12d6-4bda-a2c1-b6eab1b745e8",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C83",
+      "claim": "The observation of multiple self-loops on benchmark networks is consistent with multiple self-loops observed for nonstationary variables in the real-world application on cellular ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "This striking observation on benchmark networks is also consistent with the multiple self-loops observed for a number of nonstationary variables in the real-world application on cellular ecosystems (Figure 3a, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This connects benchmarking results to real data analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "34bd19a8-79a0-409a-b99c-2d1560f643dc",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C84",
+      "claim": "For nonlinear benchmark datasets, tMIIC tends to outperform both PC and PCMCI+ in terms of Recall and Fscores while remaining orders of magnitude faster compared to GPDC and KNN kernels.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, tMIIC tends to outperform both PC and PCMCI+ in terms of Recall and Fscores, while remaining orders of magnitude faster compared to GPDC and KNN kernels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a benchmarking result for nonlinear datasets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "c1725ba1-8066-48e5-b10b-9ea63221f3cf",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C85",
+      "claim": "tMIIC is both a reliable and scalable method to discover complex temporal causal relations in very large time-series datasets including a few hundred thousand samples.",
+      "claim_type": "EXPLICIT",
+      "source": "This demonstrates that CausalXtract's causal discovery module (tMIIC) is both a reliable and scalable method to discover complex temporal causal relations in very large time-series datasets including a few hundred thousand samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion from benchmarking results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4f40e45e-8c4c-48ec-9d78-9a7e8092766b",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C86",
+      "claim": "The source code of CausalXtract is available at https://github.com/miicTeam/CausalXtract.",
+      "claim_type": "EXPLICIT",
+      "source": "The source code of CausalXtract is available at https://github.com/miicTeam/CausalXtract, copy archived at miicTeam, 2024.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about code availability.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "544950df-5e54-4345-b019-6962a86cc9b9",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C87",
+      "claim": "CausalXtract includes a demo R markdown notebook that reproduces step-by-step the results reported in the article.",
+      "claim_type": "EXPLICIT",
+      "source": "It includes a demo R markdown notebook of CausalXtract pipeline, which reproduces step-by-step the results reported in the article (Figure 3), starting from the original live-cell time-lapse images of the tumor-on-chip ecosystem (Figure 1a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about code availability and reproducibility.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "cd642579-900e-4689-9405-e13ae5038e75",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C88",
+      "claim": "The Tigramite package used for benchmark comparison is available at https://github.com/jakobrunge/tigramite.",
+      "claim_type": "EXPLICIT",
+      "source": "The Tigramite package used for benchmark comparison is available at https://github.com/jakobrunge/tigramite, copy archived at Runge, 2024.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about software availability.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4dd0dfda-cf50-4a8b-8b60-e077e054f673",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C91",
+      "claim": "The immortalized human BT474 and Hs578T cell lines were purchased from ATCC and authenticated by SRT profiling.",
+      "claim_type": "EXPLICIT",
+      "source": "The immortalized human BT474 and Hs578T cell lines were purchased from ATCC (#HTB-20, #HTB-126) and authenticated by SRT profiling (GenePrint 10 system, Promega, #B9510).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "fc0ed018-7a48-4b19-bcdb-84491064824d",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C92",
+      "claim": "The human primary HUVEC lines were purchased from Lonza.",
+      "claim_type": "EXPLICIT",
+      "source": "The human primary HUVEC lines were purchased from Lonza (#C2517A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about cell lines.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4fd918a1-1c61-4b45-ac0c-f445dbd9ce4f",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C93",
+      "claim": "PBMCs were routinely isolated from the fresh blood of healthy donors by density gradient centrifugation.",
+      "claim_type": "EXPLICIT",
+      "source": "PBMCs were routinely isolated from the fresh blood of healthy donors by density gradient centrifugation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail about cell isolation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "64edb011-9c8e-49d3-8204-4c19350a3bb7",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C94",
+      "claim": "All cells were periodically tested to exclude mycoplasma contamination using a qPCR-based method.",
+      "claim_type": "EXPLICIT",
+      "source": "All cells were periodically tested to exclude mycoplasma contamination using a qPCR-based method (VenorGem Classic, BioValley, #11-1250).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quality control measure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "8e6d6712-51d1-4d9f-b70e-c604ea726e0f",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "claim_id": "C95",
+      "claim": "The active contour algorithm was used to segment the MCC boundaries on each video crop frame.",
+      "claim_type": "EXPLICIT",
+      "source": "The active contour algorithm implemented in MATLAB (Chan and Vese, 2001) was used to segment the MCC boundaries on each video crop frame.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological detail with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "231820ed-6c68-4f76-83f9-0866a9663a04",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "CausalXtract is a computational pipeline that integrates live-cell image feature extraction with causal discovery methods, combining network-based and information-based frameworks in a modular architecture.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8, C39, and C40 collectively describe the architecture and methodology of CausalXtract. The modular design and methodological combination are clearly documented in the manuscript with supporting figures showing the pipeline components.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "78b4beff-6cdc-43c8-9714-eefd38b48be2",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CellHunter+ feature extraction module performs cell detection using Circular Hough Transform, tracking via Munkres' algorithm, and extracts 15 morphodynamic and interaction descriptors from live-cell imaging data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C12, C27, C48-C49, and C95 describe the feature extraction methodology with appropriate citations to established algorithms (CHT, Munkres). The extraction of 15 descriptors is documented with methodological details, though validation of segmentation accuracy is not provided.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "34ffb729-855f-43b9-a8a0-57b3e1c55804",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "tMIIC adapts the MIIC causal discovery method to time-series data by reconstructing time-unfolded causal networks that account for temporal correlations and latent variables.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 and C20 describe tMIIC methodology with appropriate citations to MIIC and time-unfolded network frameworks. The adaptation is conceptually sound and builds on established methods, though the specific implementation details require reference to cited works.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "6c8b3f2a-15a2-41e5-82b2-f8b50bfab757",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Graph-based causal discovery methods can uncover causal effects overlooked by Granger-Schreiber causality, which is too restrictive because vanishing Transfer Entropy implies temporal v-structures but not vice versa (Theorem 1).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C17-C19, C68, and C73 present a theoretical result (Theorem 1) with proof and counterexample (Figure 2b) demonstrating the asymmetric relationship between Transfer Entropy and temporal v-structures. The theoretical analysis is logically sound and supported by visual evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Benchmarking on synthetic datasets shows tMIIC matches or outperforms PC and PCMCI+ methods in accuracy while running orders of magnitude faster, particularly on large datasets with tens to hundreds of thousands of time steps.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22, C74-C78, C84-C85 present comprehensive benchmarking results averaged over 10 datasets with multiple comparison methods and kernels. Performance metrics (Precision, Recall, F-score) and runtime comparisons are shown in multiple supplementary figures, providing strong quantitative support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "121e0351-912c-4212-8b7d-c0c90837a4cb",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "tMIIC is robust to overestimated maximum lag in stationary data, and when data is nonstationary, the method identifies multiple self-loops at nonstationary variables while preserving the rest of the network structure.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C83 describe robustness properties demonstrated through benchmark experiments (Figure 2\u2014figure supplement 3). The observation that nonstationary variables produce multiple self-loops is consistent across synthetic and real data, providing convergent evidence for this behavior.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "1d9e6e02-187a-4e89-bd6e-2772f95677a6",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "CausalXtract discovers two novel findings: CAFs directly inhibit cancer cell apoptosis independently from treatment, and treatment increases cancer cell perimeter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C4 and C28 present novel biological findings from causal network analysis. While the causal network is shown (Figure 3), the manuscript lacks validation experiments to confirm these causal relationships. The findings rely entirely on computational inference without orthogonal experimental validation (e.g., perturbation experiments, independent datasets).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "b076560e-fcce-4472-a180-050a34e632f0",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CausalXtract recovers known effects: treatment increases cancer cell apoptosis and cancer-immune interactions while decreasing division rate; CAFs stimulate cancer cell migration and increase cell area.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C33 describe recovery of known results from prior studies (Nguyen et al., 2018). These serve as positive controls demonstrating that CausalXtract can recapitulate established findings, lending credibility to the method though not constituting novel discoveries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "bc96f1f3-9f04-4579-9b6f-db42d2492fdb",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "CausalXtract identifies multiple antagonistic time-lagged effects: cell division shows decreased eccentricity 2-3 hours before cytokinesis followed by increased eccentricity during late division; apoptosis shows decreased area followed by increased area upon cell lysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C34-C36 describe time-lagged antagonistic effects shown in Figure 3d with specific time delays. The biological interpretation (prophase, cytokinesis, cell lysis) is plausible and consistent with cell biology, though experimental validation of these specific temporal dynamics is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "3cecd93a-c14a-46c0-9439-13803a1261e5",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The inferred causal networks are robust to variations in sampling rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C37 is supported by Figure 3\u2014figure supplement 2 showing similar network structures across different sampling rates (\u03b4\u03c4 = 5, 7, 8 time steps). This robustness analysis strengthens confidence in the biological findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The tumor-on-chip experimental system includes HER2+ breast cancer cells, immune cells, CAFs, and endothelial cells in a 3D collagen matrix, with four experimental conditions based on CAF presence and trastuzumab treatment, imaged over 48 hours.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C24, C42-C45, and C91-C94 describe the experimental system with appropriate detail including cell line authentication, mycoplasma testing, and imaging parameters. The experimental design is adequately documented, though the manuscript analyzes data from a prior study (Nguyen et al., 2018) rather than new experiments.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "5893b04a-d689-4f13-af2b-a763447c3d66",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "MIIC improves upon traditional causal discovery methods by combining constraint-based and information-based principles, limiting spurious conditional independences, and handling missing data and heterogeneous variables while distinguishing genuine from latent causal effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C58 describe MIIC methodology and advantages with appropriate citations to prior work. These claims establish the foundation for tMIIC but represent prior work rather than contributions of this manuscript. The characterization of traditional methods and MIIC capabilities is well-supported by citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "c2d0c6bb-b05c-46ee-95c5-a9185bace3e3",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "tMIIC does not require ad hoc conditioning rules like PCMCI/PCMCI+ because it uses information-theoretic strategies to limit spurious independence, and it captures both time-lagged and contemporaneous latent variable effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C67 describe methodological advantages of tMIIC over alternative approaches with appropriate citations. The advantages are demonstrated through benchmarking results (C22, C77-C78), providing empirical support for these methodological claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "59cee66f-66b5-4a75-aa2a-ea3417b3023f",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "CausalXtract source code and a reproducible demo notebook are publicly available on GitHub, and the Tigramite package used for benchmarking is also available.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C88 provide code availability statements with specific URLs. The inclusion of a demo notebook that reproduces results enhances reproducibility, which is a strength of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "aa5ffe3d-e536-4a4f-b138-ceb3484eb44d",
+      "content_id": "c72b2075-352f-419f-8354-d964ba192b35",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Live-cell imaging produces extensive time-lapse data, but there is a lack of methods to discover causal effects from spatio-temporal correlations, and latent variables are ubiquitous in cell biology data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C21, C25, and C41 provide context and motivation for the work, citing established knowledge and prior work (Driscoll and Zaritsky, 2021). These claims appropriately frame the problem but do not constitute results of the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "b3763be6-b5bf-4a56-9e8f-c5c3eff8fdee",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "CausalXtract is a flexible computational pipeline that integrates live-cell image feature extraction with causal discovery methods, combining network-based and information-based frameworks to discover causal and time-lagged effects from morphodynamic features and cell-cell interactions in live-cell imaging data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm the pipeline's design and capabilities. Reviewer 1 states it 'convincingly illustrates' the approach on tumor-on-chip data and describes it as 'nicely presented.' Reviewer 2 notes 'the text is clear and concise' and confirms the methodology is 'robust.' The editor describes it as an 'important study' that 'convincingly illustrates' the application.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "296e940d-230d-4932-ada7-6e38902ab69b",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "CausalXtract's graph-based causal framework goes beyond classical Granger-Schreiber causality by discovering causal effects that would be overlooked by these restrictive approaches, circumventing their limitations through combined graph-based and information-based methods.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states 'The core of the method tMIIC of the authors is nicely presented in connection to Granger-Schreiber causality' and acknowledges the theoretical foundation. The theoretical comparison (Theorem 1) and methodological advantages are accepted without challenge by any reviewer.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "f0badcff-9f10-4552-8891-0e407469d9dc",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "tMIIC matches or outperforms state-of-the-art methods (PC and PCMCI+) in benchmark comparisons while running orders of magnitude faster on biologically relevant datasets, demonstrating it is both reliable and scalable for discovering complex temporal causal relations in large time-series datasets.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states 'tMIIC compares favourably to PC and PCMCI+ methods using different kernels on synthetic datasets' and notes the benchmarking results. Reviewer 2 confirms 'Performance, robustness' as strengths. The benchmarking methodology and results are accepted without criticism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "4e2f5bdc-30a1-4f3f-a975-73d6efc76867",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "CausalXtract discovers novel findings including that cancer-associated fibroblasts directly inhibit cancer cell apoptosis independently from anticancer treatment, and that treatment increases cancer cell perimeter.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 describes 'convincing inference results with respect to both known and novel effects' from the tumor-on-chip application. The editor states the study 'convincingly illustrates' the application. These novel biological findings are accepted as valid discoveries from the analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "b434d005-d047-46ca-ab30-b1caef93a912",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "CausalXtract recovers known effects from prior studies including that treatment increases cancer cell apoptosis and cancer-immune interactions while decreasing cancer cell division rate, and that CAFs stimulate cancer cell migration and increase their area.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly notes 'convincing inference results with respect to both known and novel effects,' confirming that the method successfully recovers established findings. This validation of known results supports the method's reliability.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "880246e9-4854-412a-8b91-d0c7ffcb5e6c",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "CausalXtract uncovers multiple antagonistic effects at different time delays, including that cell division is preceded by decreased eccentricity 2-3 hours before cytokinesis followed by increased eccentricity during late division phases, and that apoptosis leads to initial area decrease followed by increase upon cell lysis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 describes the application as having 'convincing inference results' and the editor confirms the study 'convincingly illustrates' the challenging application. These time-lagged findings are presented as demonstrations of the method's capability to detect temporal dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "943f84f1-a137-4eb7-bf7c-801bd7fe4973",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "tMIIC demonstrates robustness to overestimated maximum lag in stationary data, and when data is nonstationary, the method appropriately identifies multiple self-loops at nonstationary variables while leaving the rest of the network relatively unaffected, requiring long-time range interactions to account for nonstationary dynamics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly confirms 'robustness' as a strength of the approach. The benchmarking results demonstrating these properties are presented in supplementary figures and accepted without challenge by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "9bdee181-79fd-48b7-9e01-5595302986a1",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "CausalXtract's feature extraction module (CellHunter+) is based on CellHunter software and performs detection using Circular Hough Transform, tracking via Munkres' algorithm, and extraction of 15 cellular descriptors including cell geometry, velocity, division, apoptosis, and cell-cell interactions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states the authors 'go through a step-by-step description of how to extract the features they are interested in from the raw data.' Reviewer 1 notes the full application includes these features. The methodological details are accepted without criticism.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "61bc5f04-c742-4744-8ebe-924b251525ff",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "tMIIC is adapted from MIIC, which combines constraint-based and information-based principles to learn robust causal graphical models, can handle missing data and heterogeneous multimodal data, and distinguishes genuine causal relations from putative and latent causal effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'The core of the method tMIIC of the authors is nicely presented' and acknowledges its connection to the original MIIC method. The methodological foundation and capabilities are accepted without challenge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "d1f43013-5240-4723-95d1-e12f90f32bef",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "tMIIC does not require ad hoc conditioning rules as it relies on robust information-theoretic strategy to limit spurious independence and improve edge recall, and captures both time-lagged and contemporaneous effects due to latent variables.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly notes the method addresses 'the problem of learning causal interactions from temporal data which is an open problem in presence of latent variables' and describes the approach as 'nicely presented.' These methodological advantages are accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "1f6275e9-a882-4763-ae8a-cf90346f4fad",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The source code of CausalXtract is publicly available with a demo notebook that reproduces the reported results, and the Tigramite package used for benchmarking is also available.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states 'The code and dataset are available online for the reproducibility of the results' as a strength. Reviewer 2 confirms 'The authors provide the code to review.' Code availability is affirmed by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "f46511dc-c0f8-403a-bd23-7e7d8e4b5ddc",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "The tumor-on-chip experimental system reconstitutes a tumor microenvironment ex vivo with cancer cells, immune cells, CAFs, and endothelial cells under four experimental conditions, with videos acquired at 2-minute intervals for up to 48 hours across 36 video crops.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states 'The authors describe the raw data they used (imaging data)' and reviewer 1 describes it as 'A full application to tumor-on-chip cellular ecosystems data.' The experimental setup is accepted as described.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "0fe9d1d3-b308-4fa2-9c98-0bbdcc61587e",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The causal discovery results are robust to variations in sampling rate.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly lists 'robustness' as a strength. This robustness analysis is presented in supplementary figures and accepted without challenge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "fa1c9658-749f-4f3c-bbca-b9614f04efea",
+      "content_id": "60d23cac-f3a5-4e1a-ab7a-bdacd589a3b6",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "The converse of Theorem 1 is not true: a temporal v-structure does not imply vanishing Transfer Entropy, as demonstrated by a counterexample.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states the method is 'based on a theorem about transfer entropy' and describes the theoretical presentation as 'nicely presented.' The theoretical results including this limitation are accepted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8ad6e22c-29ff-4485-98c7-41e3770a1281",
+      "result_id": "231820ed-6c68-4f76-83f9-0866a9663a04"
+    },
+    {
+      "claim_id": "8bfa1e2e-e4ab-460a-ba3f-f5ac7bc30bfb",
+      "result_id": "231820ed-6c68-4f76-83f9-0866a9663a04"
+    },
+    {
+      "claim_id": "b6096e86-7b1e-4354-8be6-442d466d5480",
+      "result_id": "231820ed-6c68-4f76-83f9-0866a9663a04"
+    },
+    {
+      "claim_id": "a954fc3a-a46f-40dc-ad06-989e7626b50c",
+      "result_id": "231820ed-6c68-4f76-83f9-0866a9663a04"
+    },
+    {
+      "claim_id": "9cb5f692-4365-4177-bbd4-6a17d8ef0671",
+      "result_id": "231820ed-6c68-4f76-83f9-0866a9663a04"
+    },
+    {
+      "claim_id": "5f38175c-c407-4835-85f3-fbdd1660fefa",
+      "result_id": "78b4beff-6cdc-43c8-9714-eefd38b48be2"
+    },
+    {
+      "claim_id": "29d9368f-ea0a-4a48-bb42-9f0da3e67755",
+      "result_id": "78b4beff-6cdc-43c8-9714-eefd38b48be2"
+    },
+    {
+      "claim_id": "5995de95-5ed6-4611-bc4f-dae9cecfa53d",
+      "result_id": "78b4beff-6cdc-43c8-9714-eefd38b48be2"
+    },
+    {
+      "claim_id": "59a62656-ce4f-4b1c-9894-9008ecbfabe0",
+      "result_id": "78b4beff-6cdc-43c8-9714-eefd38b48be2"
+    },
+    {
+      "claim_id": "4d1bf498-0a5e-411e-829a-f96cad86a0e6",
+      "result_id": "78b4beff-6cdc-43c8-9714-eefd38b48be2"
+    },
+    {
+      "claim_id": "4dc1fd49-caaa-4c21-a6ca-10b088e1075f",
+      "result_id": "78b4beff-6cdc-43c8-9714-eefd38b48be2"
+    },
+    {
+      "claim_id": "8a65bc9c-b6b0-422f-bf90-b2f545dc2331",
+      "result_id": "78b4beff-6cdc-43c8-9714-eefd38b48be2"
+    },
+    {
+      "claim_id": "8e6d6712-51d1-4d9f-b70e-c604ea726e0f",
+      "result_id": "78b4beff-6cdc-43c8-9714-eefd38b48be2"
+    },
+    {
+      "claim_id": "34b31fc9-399d-4a40-95d3-1136678d9519",
+      "result_id": "34ffb729-855f-43b9-a8a0-57b3e1c55804"
+    },
+    {
+      "claim_id": "1f588a38-96e2-4041-bbef-1cce696b7bf3",
+      "result_id": "34ffb729-855f-43b9-a8a0-57b3e1c55804"
+    },
+    {
+      "claim_id": "fc347437-a026-491e-8a86-c94538ad6822",
+      "result_id": "34ffb729-855f-43b9-a8a0-57b3e1c55804"
+    },
+    {
+      "claim_id": "7cb89215-3972-4fe0-a420-5423d7d169a1",
+      "result_id": "34ffb729-855f-43b9-a8a0-57b3e1c55804"
+    },
+    {
+      "claim_id": "649f5bc7-2ae0-4259-b931-251aa303c6c4",
+      "result_id": "34ffb729-855f-43b9-a8a0-57b3e1c55804"
+    },
+    {
+      "claim_id": "09cfb6cd-6866-4937-bbc2-78e4cbde7630",
+      "result_id": "6c8b3f2a-15a2-41e5-82b2-f8b50bfab757"
+    },
+    {
+      "claim_id": "08499c92-dd0f-4d3e-ae60-7c6f154a7429",
+      "result_id": "6c8b3f2a-15a2-41e5-82b2-f8b50bfab757"
+    },
+    {
+      "claim_id": "fd244560-a045-45d3-bac0-88f44ec2f975",
+      "result_id": "6c8b3f2a-15a2-41e5-82b2-f8b50bfab757"
+    },
+    {
+      "claim_id": "f5cf22b9-9728-4ecf-a057-97227919cb3f",
+      "result_id": "6c8b3f2a-15a2-41e5-82b2-f8b50bfab757"
+    },
+    {
+      "claim_id": "015e991f-caf9-4148-998f-754d7f1a944f",
+      "result_id": "6c8b3f2a-15a2-41e5-82b2-f8b50bfab757"
+    },
+    {
+      "claim_id": "46e577b6-a9de-4a45-bd33-cf65e05f52b3",
+      "result_id": "6c8b3f2a-15a2-41e5-82b2-f8b50bfab757"
+    },
+    {
+      "claim_id": "6ac59671-b0d7-41a5-aab4-2df52f68afb5",
+      "result_id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a"
+    },
+    {
+      "claim_id": "213ddee9-7b68-458e-8e65-01cd44016456",
+      "result_id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a"
+    },
+    {
+      "claim_id": "2ed57541-0901-4fac-a913-178d22bb61d5",
+      "result_id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a"
+    },
+    {
+      "claim_id": "010c3ed4-6c72-4a48-b388-9fa4e3342ba0",
+      "result_id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a"
+    },
+    {
+      "claim_id": "eb583838-3579-433a-8ee7-b8c9d62b53cd",
+      "result_id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a"
+    },
+    {
+      "claim_id": "86f8f02a-2db3-4a96-a496-9c3e639e27b1",
+      "result_id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a"
+    },
+    {
+      "claim_id": "34bd19a8-79a0-409a-b99c-2d1560f643dc",
+      "result_id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a"
+    },
+    {
+      "claim_id": "c1725ba1-8066-48e5-b10b-9ea63221f3cf",
+      "result_id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a"
+    },
+    {
+      "claim_id": "c2d6de8f-b99b-4801-92c7-b9787ecc9b2b",
+      "result_id": "121e0351-912c-4212-8b7d-c0c90837a4cb"
+    },
+    {
+      "claim_id": "c7633f58-d638-4baa-a8e9-bab9b71775e3",
+      "result_id": "121e0351-912c-4212-8b7d-c0c90837a4cb"
+    },
+    {
+      "claim_id": "01cd54c3-e5b8-4786-9da2-c512df62c403",
+      "result_id": "121e0351-912c-4212-8b7d-c0c90837a4cb"
+    },
+    {
+      "claim_id": "92e285da-12d6-4bda-a2c1-b6eab1b745e8",
+      "result_id": "121e0351-912c-4212-8b7d-c0c90837a4cb"
+    },
+    {
+      "claim_id": "52628a08-8cd9-42aa-9e20-502f1112c96e",
+      "result_id": "1d9e6e02-187a-4e89-bd6e-2772f95677a6"
+    },
+    {
+      "claim_id": "1ef33f7d-b4b9-4858-99b4-812a3ab2b4be",
+      "result_id": "1d9e6e02-187a-4e89-bd6e-2772f95677a6"
+    },
+    {
+      "claim_id": "1e17533e-482e-4657-8bcc-0d33f3c5903e",
+      "result_id": "b076560e-fcce-4472-a180-050a34e632f0"
+    },
+    {
+      "claim_id": "2973c15d-f987-47bc-9bcc-76b3648ff2f2",
+      "result_id": "b076560e-fcce-4472-a180-050a34e632f0"
+    },
+    {
+      "claim_id": "7a9ca218-a9ce-40da-b0cc-c540a9d0996c",
+      "result_id": "b076560e-fcce-4472-a180-050a34e632f0"
+    },
+    {
+      "claim_id": "3ff65fa3-4bd4-4987-9c3c-fa42252e3e09",
+      "result_id": "b076560e-fcce-4472-a180-050a34e632f0"
+    },
+    {
+      "claim_id": "aedb2391-c6d5-4727-adb3-e57dad79a26b",
+      "result_id": "b076560e-fcce-4472-a180-050a34e632f0"
+    },
+    {
+      "claim_id": "8c6e0171-7c55-413f-a619-a3bf8d6a7b63",
+      "result_id": "bc96f1f3-9f04-4579-9b6f-db42d2492fdb"
+    },
+    {
+      "claim_id": "4dac06ca-a06e-4c4d-9eab-a132c7625e73",
+      "result_id": "bc96f1f3-9f04-4579-9b6f-db42d2492fdb"
+    },
+    {
+      "claim_id": "1df06269-281c-4f96-86c2-b3b4dc40a58a",
+      "result_id": "bc96f1f3-9f04-4579-9b6f-db42d2492fdb"
+    },
+    {
+      "claim_id": "5c028bd2-62f1-43ac-821e-338fdf351f54",
+      "result_id": "bc96f1f3-9f04-4579-9b6f-db42d2492fdb"
+    },
+    {
+      "claim_id": "d81bdd21-9d15-4ee3-9daf-07d2e57ef26a",
+      "result_id": "3cecd93a-c14a-46c0-9439-13803a1261e5"
+    },
+    {
+      "claim_id": "27b1a59b-8660-407e-b29e-4ecd174cf83f",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "73830cd9-575e-4e28-8c3a-d5a531d48e25",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "e55047ba-e968-40c6-85fe-5cd9038b1039",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "db91d18c-7bef-4fdc-b8e7-8d46cf0a486b",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "37ec4143-ed26-4170-ae75-5133c579529f",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "c43148fa-c802-4cf4-b70a-9dd88fa68b65",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "4dd0dfda-cf50-4a8b-8b60-e077e054f673",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "fc0ed018-7a48-4b19-bcdb-84491064824d",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "4fd918a1-1c61-4b45-ac0c-f445dbd9ce4f",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "64edb011-9c8e-49d3-8204-4c19350a3bb7",
+      "result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494"
+    },
+    {
+      "claim_id": "d37b6a0c-84f0-40d6-9150-6c1c2583573b",
+      "result_id": "5893b04a-d689-4f13-af2b-a763447c3d66"
+    },
+    {
+      "claim_id": "4d38789a-c57d-49ab-8ca0-6b97bbb21598",
+      "result_id": "5893b04a-d689-4f13-af2b-a763447c3d66"
+    },
+    {
+      "claim_id": "5606c151-e67c-435e-9165-4bb152d9bf30",
+      "result_id": "5893b04a-d689-4f13-af2b-a763447c3d66"
+    },
+    {
+      "claim_id": "c1f71e49-ea8c-4795-a394-55a69e741609",
+      "result_id": "5893b04a-d689-4f13-af2b-a763447c3d66"
+    },
+    {
+      "claim_id": "5b9bd5e6-5285-4505-b20a-4d32809a4f70",
+      "result_id": "5893b04a-d689-4f13-af2b-a763447c3d66"
+    },
+    {
+      "claim_id": "2bf8a4d2-a117-4433-96f0-68c9be535b90",
+      "result_id": "5893b04a-d689-4f13-af2b-a763447c3d66"
+    },
+    {
+      "claim_id": "d1169071-ba89-436b-b5f4-ebc3e1b86da2",
+      "result_id": "5893b04a-d689-4f13-af2b-a763447c3d66"
+    },
+    {
+      "claim_id": "64abf0c3-f6a1-4894-a554-60dc8f02ba0d",
+      "result_id": "5893b04a-d689-4f13-af2b-a763447c3d66"
+    },
+    {
+      "claim_id": "e3666994-b5e9-4f64-87dc-ae3192d73ad1",
+      "result_id": "5893b04a-d689-4f13-af2b-a763447c3d66"
+    },
+    {
+      "claim_id": "3703f0b0-fb55-4a0a-bec2-a5c3734928fe",
+      "result_id": "c2d0c6bb-b05c-46ee-95c5-a9185bace3e3"
+    },
+    {
+      "claim_id": "592dac95-e069-4ed4-ab02-9d9971b72e90",
+      "result_id": "c2d0c6bb-b05c-46ee-95c5-a9185bace3e3"
+    },
+    {
+      "claim_id": "377b6d2f-0784-4b06-898b-0a82fb7e87b5",
+      "result_id": "c2d0c6bb-b05c-46ee-95c5-a9185bace3e3"
+    },
+    {
+      "claim_id": "335104bd-408c-4ff2-881e-af0bc30b919d",
+      "result_id": "c2d0c6bb-b05c-46ee-95c5-a9185bace3e3"
+    },
+    {
+      "claim_id": "e4068827-a171-43cf-8d31-eadfbfd2de61",
+      "result_id": "c2d0c6bb-b05c-46ee-95c5-a9185bace3e3"
+    },
+    {
+      "claim_id": "4f40e45e-8c4c-48ec-9d78-9a7e8092766b",
+      "result_id": "59cee66f-66b5-4a75-aa2a-ea3417b3023f"
+    },
+    {
+      "claim_id": "544950df-5e54-4345-b019-6962a86cc9b9",
+      "result_id": "59cee66f-66b5-4a75-aa2a-ea3417b3023f"
+    },
+    {
+      "claim_id": "cd642579-900e-4689-9405-e13ae5038e75",
+      "result_id": "59cee66f-66b5-4a75-aa2a-ea3417b3023f"
+    },
+    {
+      "claim_id": "4bffd4fe-5f78-43bf-9828-924f043d9fb5",
+      "result_id": "aa5ffe3d-e536-4a4f-b138-ceb3484eb44d"
+    },
+    {
+      "claim_id": "4d0c53b0-7c78-43a4-9c1f-bdd36ac57479",
+      "result_id": "aa5ffe3d-e536-4a4f-b138-ceb3484eb44d"
+    },
+    {
+      "claim_id": "db9e042e-c1c6-480a-be91-9456bb3b86a3",
+      "result_id": "aa5ffe3d-e536-4a4f-b138-ceb3484eb44d"
+    },
+    {
+      "claim_id": "102a69d7-2122-4606-a709-5fd1faa271e8",
+      "result_id": "aa5ffe3d-e536-4a4f-b138-ceb3484eb44d"
+    },
+    {
+      "claim_id": "ba2fce8a-9096-4667-84b8-ffa0180fb54a",
+      "result_id": "aa5ffe3d-e536-4a4f-b138-ceb3484eb44d"
+    },
+    {
+      "claim_id": "8ad6e22c-29ff-4485-98c7-41e3770a1281",
+      "result_id": "b3763be6-b5bf-4a56-9e8f-c5c3eff8fdee"
+    },
+    {
+      "claim_id": "8bfa1e2e-e4ab-460a-ba3f-f5ac7bc30bfb",
+      "result_id": "b3763be6-b5bf-4a56-9e8f-c5c3eff8fdee"
+    },
+    {
+      "claim_id": "b6096e86-7b1e-4354-8be6-442d466d5480",
+      "result_id": "b3763be6-b5bf-4a56-9e8f-c5c3eff8fdee"
+    },
+    {
+      "claim_id": "3755a02c-f8a4-4e02-8bb4-53282ac3a665",
+      "result_id": "b3763be6-b5bf-4a56-9e8f-c5c3eff8fdee"
+    },
+    {
+      "claim_id": "a954fc3a-a46f-40dc-ad06-989e7626b50c",
+      "result_id": "b3763be6-b5bf-4a56-9e8f-c5c3eff8fdee"
+    },
+    {
+      "claim_id": "9cb5f692-4365-4177-bbd4-6a17d8ef0671",
+      "result_id": "b3763be6-b5bf-4a56-9e8f-c5c3eff8fdee"
+    },
+    {
+      "claim_id": "09cfb6cd-6866-4937-bbc2-78e4cbde7630",
+      "result_id": "296e940d-230d-4932-ada7-6e38902ab69b"
+    },
+    {
+      "claim_id": "08499c92-dd0f-4d3e-ae60-7c6f154a7429",
+      "result_id": "296e940d-230d-4932-ada7-6e38902ab69b"
+    },
+    {
+      "claim_id": "fd244560-a045-45d3-bac0-88f44ec2f975",
+      "result_id": "296e940d-230d-4932-ada7-6e38902ab69b"
+    },
+    {
+      "claim_id": "649f5bc7-2ae0-4259-b931-251aa303c6c4",
+      "result_id": "296e940d-230d-4932-ada7-6e38902ab69b"
+    },
+    {
+      "claim_id": "6ac59671-b0d7-41a5-aab4-2df52f68afb5",
+      "result_id": "f0badcff-9f10-4552-8891-0e407469d9dc"
+    },
+    {
+      "claim_id": "eb583838-3579-433a-8ee7-b8c9d62b53cd",
+      "result_id": "f0badcff-9f10-4552-8891-0e407469d9dc"
+    },
+    {
+      "claim_id": "86f8f02a-2db3-4a96-a496-9c3e639e27b1",
+      "result_id": "f0badcff-9f10-4552-8891-0e407469d9dc"
+    },
+    {
+      "claim_id": "34bd19a8-79a0-409a-b99c-2d1560f643dc",
+      "result_id": "f0badcff-9f10-4552-8891-0e407469d9dc"
+    },
+    {
+      "claim_id": "c1725ba1-8066-48e5-b10b-9ea63221f3cf",
+      "result_id": "f0badcff-9f10-4552-8891-0e407469d9dc"
+    },
+    {
+      "claim_id": "52628a08-8cd9-42aa-9e20-502f1112c96e",
+      "result_id": "4e2f5bdc-30a1-4f3f-a975-73d6efc76867"
+    },
+    {
+      "claim_id": "1ef33f7d-b4b9-4858-99b4-812a3ab2b4be",
+      "result_id": "4e2f5bdc-30a1-4f3f-a975-73d6efc76867"
+    },
+    {
+      "claim_id": "1e17533e-482e-4657-8bcc-0d33f3c5903e",
+      "result_id": "b434d005-d047-46ca-ab30-b1caef93a912"
+    },
+    {
+      "claim_id": "2973c15d-f987-47bc-9bcc-76b3648ff2f2",
+      "result_id": "b434d005-d047-46ca-ab30-b1caef93a912"
+    },
+    {
+      "claim_id": "7a9ca218-a9ce-40da-b0cc-c540a9d0996c",
+      "result_id": "b434d005-d047-46ca-ab30-b1caef93a912"
+    },
+    {
+      "claim_id": "3ff65fa3-4bd4-4987-9c3c-fa42252e3e09",
+      "result_id": "b434d005-d047-46ca-ab30-b1caef93a912"
+    },
+    {
+      "claim_id": "aedb2391-c6d5-4727-adb3-e57dad79a26b",
+      "result_id": "b434d005-d047-46ca-ab30-b1caef93a912"
+    },
+    {
+      "claim_id": "4dac06ca-a06e-4c4d-9eab-a132c7625e73",
+      "result_id": "880246e9-4854-412a-8b91-d0c7ffcb5e6c"
+    },
+    {
+      "claim_id": "1df06269-281c-4f96-86c2-b3b4dc40a58a",
+      "result_id": "880246e9-4854-412a-8b91-d0c7ffcb5e6c"
+    },
+    {
+      "claim_id": "5c028bd2-62f1-43ac-821e-338fdf351f54",
+      "result_id": "880246e9-4854-412a-8b91-d0c7ffcb5e6c"
+    },
+    {
+      "claim_id": "8c6e0171-7c55-413f-a619-a3bf8d6a7b63",
+      "result_id": "880246e9-4854-412a-8b91-d0c7ffcb5e6c"
+    },
+    {
+      "claim_id": "c2d6de8f-b99b-4801-92c7-b9787ecc9b2b",
+      "result_id": "943f84f1-a137-4eb7-bf7c-801bd7fe4973"
+    },
+    {
+      "claim_id": "c7633f58-d638-4baa-a8e9-bab9b71775e3",
+      "result_id": "943f84f1-a137-4eb7-bf7c-801bd7fe4973"
+    },
+    {
+      "claim_id": "01cd54c3-e5b8-4786-9da2-c512df62c403",
+      "result_id": "943f84f1-a137-4eb7-bf7c-801bd7fe4973"
+    },
+    {
+      "claim_id": "92e285da-12d6-4bda-a2c1-b6eab1b745e8",
+      "result_id": "943f84f1-a137-4eb7-bf7c-801bd7fe4973"
+    },
+    {
+      "claim_id": "5f38175c-c407-4835-85f3-fbdd1660fefa",
+      "result_id": "9bdee181-79fd-48b7-9e01-5595302986a1"
+    },
+    {
+      "claim_id": "29d9368f-ea0a-4a48-bb42-9f0da3e67755",
+      "result_id": "9bdee181-79fd-48b7-9e01-5595302986a1"
+    },
+    {
+      "claim_id": "5995de95-5ed6-4611-bc4f-dae9cecfa53d",
+      "result_id": "9bdee181-79fd-48b7-9e01-5595302986a1"
+    },
+    {
+      "claim_id": "59a62656-ce4f-4b1c-9894-9008ecbfabe0",
+      "result_id": "9bdee181-79fd-48b7-9e01-5595302986a1"
+    },
+    {
+      "claim_id": "4d1bf498-0a5e-411e-829a-f96cad86a0e6",
+      "result_id": "9bdee181-79fd-48b7-9e01-5595302986a1"
+    },
+    {
+      "claim_id": "8a65bc9c-b6b0-422f-bf90-b2f545dc2331",
+      "result_id": "9bdee181-79fd-48b7-9e01-5595302986a1"
+    },
+    {
+      "claim_id": "34b31fc9-399d-4a40-95d3-1136678d9519",
+      "result_id": "61bc5f04-c742-4744-8ebe-924b251525ff"
+    },
+    {
+      "claim_id": "1f588a38-96e2-4041-bbef-1cce696b7bf3",
+      "result_id": "61bc5f04-c742-4744-8ebe-924b251525ff"
+    },
+    {
+      "claim_id": "fc347437-a026-491e-8a86-c94538ad6822",
+      "result_id": "61bc5f04-c742-4744-8ebe-924b251525ff"
+    },
+    {
+      "claim_id": "5b9bd5e6-5285-4505-b20a-4d32809a4f70",
+      "result_id": "61bc5f04-c742-4744-8ebe-924b251525ff"
+    },
+    {
+      "claim_id": "2bf8a4d2-a117-4433-96f0-68c9be535b90",
+      "result_id": "61bc5f04-c742-4744-8ebe-924b251525ff"
+    },
+    {
+      "claim_id": "d1169071-ba89-436b-b5f4-ebc3e1b86da2",
+      "result_id": "61bc5f04-c742-4744-8ebe-924b251525ff"
+    },
+    {
+      "claim_id": "64abf0c3-f6a1-4894-a554-60dc8f02ba0d",
+      "result_id": "61bc5f04-c742-4744-8ebe-924b251525ff"
+    },
+    {
+      "claim_id": "e3666994-b5e9-4f64-87dc-ae3192d73ad1",
+      "result_id": "61bc5f04-c742-4744-8ebe-924b251525ff"
+    },
+    {
+      "claim_id": "335104bd-408c-4ff2-881e-af0bc30b919d",
+      "result_id": "d1f43013-5240-4723-95d1-e12f90f32bef"
+    },
+    {
+      "claim_id": "e4068827-a171-43cf-8d31-eadfbfd2de61",
+      "result_id": "d1f43013-5240-4723-95d1-e12f90f32bef"
+    },
+    {
+      "claim_id": "4f40e45e-8c4c-48ec-9d78-9a7e8092766b",
+      "result_id": "1f6275e9-a882-4763-ae8a-cf90346f4fad"
+    },
+    {
+      "claim_id": "544950df-5e54-4345-b019-6962a86cc9b9",
+      "result_id": "1f6275e9-a882-4763-ae8a-cf90346f4fad"
+    },
+    {
+      "claim_id": "cd642579-900e-4689-9405-e13ae5038e75",
+      "result_id": "1f6275e9-a882-4763-ae8a-cf90346f4fad"
+    },
+    {
+      "claim_id": "27b1a59b-8660-407e-b29e-4ecd174cf83f",
+      "result_id": "f46511dc-c0f8-403a-bd23-7e7d8e4b5ddc"
+    },
+    {
+      "claim_id": "73830cd9-575e-4e28-8c3a-d5a531d48e25",
+      "result_id": "f46511dc-c0f8-403a-bd23-7e7d8e4b5ddc"
+    },
+    {
+      "claim_id": "e55047ba-e968-40c6-85fe-5cd9038b1039",
+      "result_id": "f46511dc-c0f8-403a-bd23-7e7d8e4b5ddc"
+    },
+    {
+      "claim_id": "db91d18c-7bef-4fdc-b8e7-8d46cf0a486b",
+      "result_id": "f46511dc-c0f8-403a-bd23-7e7d8e4b5ddc"
+    },
+    {
+      "claim_id": "37ec4143-ed26-4170-ae75-5133c579529f",
+      "result_id": "f46511dc-c0f8-403a-bd23-7e7d8e4b5ddc"
+    },
+    {
+      "claim_id": "c43148fa-c802-4cf4-b70a-9dd88fa68b65",
+      "result_id": "f46511dc-c0f8-403a-bd23-7e7d8e4b5ddc"
+    },
+    {
+      "claim_id": "d81bdd21-9d15-4ee3-9daf-07d2e57ef26a",
+      "result_id": "0fe9d1d3-b308-4fa2-9c98-0bbdcc61587e"
+    },
+    {
+      "claim_id": "46e577b6-a9de-4a45-bd33-cf65e05f52b3",
+      "result_id": "fa1c9658-749f-4f3c-bbca-b9614f04efea"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2828facd-80d4-4313-977f-57f96b9ba265",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "231820ed-6c68-4f76-83f9-0866a9663a04",
+      "peer_result_id": "b3763be6-b5bf-4a56-9e8f-c5c3eff8fdee",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the pipeline architecture and methodology claims (C1, C2, C8, C39, C40). OpenEval focuses on modular design documentation with supporting figures, while peer reviewers emphasize the clear presentation and robust methodology. Both rate as SUPPORTED with high agreement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "e95b1efa-1345-4f1e-84e8-40ffd60be932",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "121e0351-912c-4212-8b7d-c0c90837a4cb",
+      "peer_result_id": "943f84f1-a137-4eb7-bf7c-801bd7fe4973",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on robustness properties (C80-C83). Both evaluations support the claims about nonstationary variables producing self-loops. OpenEval references specific benchmark experiments, while peer reviewer confirms robustness as a strength. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "91ccddf1-6d95-4fca-b9f3-e4064cbe308c",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1d9e6e02-187a-4e89-bd6e-2772f95677a6",
+      "peer_result_id": "4e2f5bdc-30a1-4f3f-a975-73d6efc76867",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Critical disagreement on novel biological findings (C4, C28). OpenEval rates as UNCERTAIN due to lack of experimental validation and reliance solely on computational inference. Peer reviewers rate as SUPPORTED, describing results as 'convincing' without requiring additional validation. This represents a significant methodological difference in evaluation standards.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "aaab136e-d22d-4ca5-a730-c1f892822003",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "b076560e-fcce-4472-a180-050a34e632f0",
+      "peer_result_id": "b434d005-d047-46ca-ab30-b1caef93a912",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on recovery of known results (C29-C33). Both evaluations support these claims as positive controls demonstrating method reliability. OpenEval notes these recapitulate established findings, while peer reviewer confirms 'convincing inference results' for known effects. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "d01b771e-fcbd-4c12-8764-dbc7b3e243e1",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "bc96f1f3-9f04-4579-9b6f-db42d2492fdb",
+      "peer_result_id": "880246e9-4854-412a-8b91-d0c7ffcb5e6c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support time-lagged antagonistic effects (C5, C34-C36). OpenEval notes plausible biological interpretation but lack of experimental validation, yet still rates SUPPORTED. Peer reviewers describe results as 'convincing' demonstrations of temporal dynamics capability. Both rate as SUPPORTED despite validation limitations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "e28bab8a-8f57-4f71-8cce-ffe75970bbe0",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "3cecd93a-c14a-46c0-9439-13803a1261e5",
+      "peer_result_id": "0fe9d1d3-b308-4fa2-9c98-0bbdcc61587e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on robustness across sampling rates (C37). Both evaluations support this claim. OpenEval references specific supplementary figure showing similar networks, while peer reviewer lists robustness as a strength. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "f24fd28d-9099-49fd-8d6a-b4c137bdd9bd",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "59cee66f-66b5-4a75-aa2a-ea3417b3023f",
+      "peer_result_id": "1f6275e9-a882-4763-ae8a-cf90346f4fad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on code availability (C86-C88). Both evaluations support reproducibility claims. OpenEval notes demo notebook as a strength, while peer reviewers explicitly confirm code and dataset availability. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "512cee34-5035-4031-bf1b-fba6abb1e0c4",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "78b4beff-6cdc-43c8-9714-eefd38b48be2",
+      "peer_result_id": "9bdee181-79fd-48b7-9e01-5595302986a1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support feature extraction methodology (C9-C12, C27, C49). OpenEval provides detailed assessment noting appropriate citations but lack of segmentation validation. Peer reviewers accept methodology without criticism, noting step-by-step description. Both rate as SUPPORTED despite OpenEval noting validation gap.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "ece0cd92-819c-417c-bafe-d758d1f20461",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "d9a55e8e-bfe8-4f19-a79b-1fb30c188f3a",
+      "peer_result_id": "f0badcff-9f10-4552-8891-0e407469d9dc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on benchmarking results (C22, C77-C78, C84-C85). Both evaluations support comprehensive performance comparisons. OpenEval emphasizes quantitative metrics across 10 datasets, while peer reviewers confirm favorable comparison to alternative methods. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "83c05632-0665-4754-b33d-8b417d661f5b",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "3fb6dc29-513f-4e63-ad44-6fec4ae5b494",
+      "peer_result_id": "f46511dc-c0f8-403a-bd23-7e7d8e4b5ddc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support experimental system description (C23-C24, C42-C45). OpenEval notes adequate documentation but analyzes prior study data rather than new experiments. Peer reviewers accept the experimental setup as described. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "7ad20f75-7218-4adb-9e76-363fa813568e",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "6c8b3f2a-15a2-41e5-82b2-f8b50bfab757",
+      "peer_result_id": "296e940d-230d-4932-ada7-6e38902ab69b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support theoretical foundations (C3, C17-C18). OpenEval emphasizes Theorem 1 with proof and counterexample demonstrating logical soundness. Peer reviewers describe theoretical presentation as 'nicely presented' in connection to Granger-Schreiber causality. Both rate as SUPPORTED with C20 also addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "48bcb555-d2f0-45ea-9ff7-098bb042e3ce",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "34ffb729-855f-43b9-a8a0-57b3e1c55804",
+      "peer_result_id": "61bc5f04-c742-4744-8ebe-924b251525ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support tMIIC methodology (C13-C15). OpenEval notes appropriate citations and conceptual soundness building on established methods. Peer reviewers accept the methodological foundation and connection to original MIIC. Both rate as SUPPORTED, with peer review also covering C54-C58.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "f8634f53-c4b5-4e9b-be5b-21007089418a",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "5893b04a-d689-4f13-af2b-a763447c3d66",
+      "peer_result_id": "61bc5f04-c742-4744-8ebe-924b251525ff",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Overlapping coverage of MIIC methodology background (C54-C58). OpenEval characterizes these as well-supported prior work establishing foundation for tMIIC. Peer reviewers accept the methodological presentation. Both rate as SUPPORTED, recognizing these represent established methods rather than novel contributions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "7fdae9d0-524e-45c8-ae48-c01f000e3544",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "c2d0c6bb-b05c-46ee-95c5-a9185bace3e3",
+      "peer_result_id": "d1f43013-5240-4723-95d1-e12f90f32bef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support methodological advantages claims (C66-C67). OpenEval notes advantages demonstrated through benchmarking with appropriate citations. Peer reviewers explicitly acknowledge the method addresses open problems with latent variables. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "eaa6754f-1149-4a8d-a22e-c6382784734b",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "6c8b3f2a-15a2-41e5-82b2-f8b50bfab757",
+      "peer_result_id": "fa1c9658-749f-4f3c-bbca-b9614f04efea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address theoretical results with C73 overlap. OpenEval supports Theorem 1 and related theoretical analysis. Peer reviewer accepts the theorem-based foundation as 'nicely presented.' Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    },
+    {
+      "id": "0996a56e-82b4-4fa2-9833-1fc65f8c2e15",
+      "submission_id": "b0df624c-8422-4cbb-bc84-06753478abea",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "aa5ffe3d-e536-4a4f-b138-ceb3484eb44d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates contextual/motivational claims (C6-C7, C21, C25, C41) as SUPPORTED, noting they appropriately frame the problem with established citations but don't constitute novel results. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:29:03.697562Z"
+    }
+  ]
+}

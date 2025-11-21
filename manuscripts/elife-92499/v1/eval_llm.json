@@ -1,0 +1,274 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "PfMORC-HA transgenic line was successfully generated and validated, showing nuclear localization with colocalization to H3K9me3 marks in heterochromatin clusters throughout the parasite IDC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C25 collectively demonstrate successful generation and validation of the PfMORC-HA line through CRISPR/Cas9 editing (C15), PCR and WGS validation (C16), Western blot confirmation (C20), and IFA showing nuclear localization with H3K9me3 colocalization (C21-C25). The experimental evidence is comprehensive and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "WGS analysis revealed an off-target nonsense mutation in the gdv1 gene, which is known to emerge frequently in laboratory culture and is essential for sexual commitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 document an important limitation of the study. The mutation is confirmed by WGS (C17), contextualized by prior literature (C18), and its functional significance is established (C19). This represents a transparent reporting of experimental complications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "IP-MS identified 73 PfMORC-associated proteins including chromatin remodelers, epigenetic regulators, and eight AP2 transcription factors, with GO enrichment indicating nuclear localization and association with heterochromatin and transcription factor activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C35 present a comprehensive IP-MS analysis with appropriate statistical thresholds (log2 FC \u22652, Z statistic >5), validation through comparison with published studies (C30, C34), and functional annotation through GO analysis (C31). The convergence of multiple lines of evidence supports the protein interaction network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "ChIP-seq analysis revealed stage-specific PfMORC binding patterns with strong enrichment at telomeric/subtelomeric regions and antigenic variation genes (var, rifin), showing differential binding across ring (47%), trophozoite (95%), and schizont (82%) stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C47 present detailed ChIP-seq data with quantitative binding measurements across developmental stages. The stage-specific patterns are internally consistent and supported by visual data in figures. The differential binding to antigenic genes versus gametocyte genes (C42-C43) provides functional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PfMORC knockdown using TetR-DOZI system achieved ~88% protein depletion at 36 hpi and demonstrated essentiality for parasite survival, with significant parasitemia drops (53-84%) when aTC was removed at ring stage and delayed effects (37-66% drops) when removed at trophozoite stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 resolve prior conflicting results (C48-C49) through more effective knockdown (C50-C51) and demonstrate essentiality with quantitative phenotypic data (C52-C56). The stage-specific effects (ring vs. trophozoite removal) are well-documented with statistical significance (n=3, p\u22640.0001). This addresses a key controversy in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "RNA-seq analysis revealed modest transcriptional changes at 24 hpi (96 up, 93 down) but extensive changes at 36 hpi (1319 up, 1150 down), with GO enrichment indicating stress response, cell cycle arrest, and upregulation of var genes, though limited overlap with ChIP-seq peaks suggests indirect effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C65 present comprehensive RNA-seq analysis with appropriate statistical thresholds (FDR <0.05, log2 FC >0.5) and functional interpretation through GO analysis. The temporal progression (24 vs 36 hpi) correlates with protein depletion levels. Importantly, C65 acknowledges that transcriptional changes likely reflect both direct and indirect effects, showing appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "PfMORC knockdown resulted in significant reduction of H3K9me3 marks at var and rifin gene loci (p<0.05), particularly in telomeric regions, indicating erosion of heterochromatin integrity required for mutually exclusive gene expression and immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 demonstrate the epigenetic consequences of PfMORC depletion through ChIP-seq analysis of histone marks. Statistical significance is established (Mann-Whitney U test, p<0.05) for specific genomic regions (C68-C69), and the functional interpretation (C71-C72) is supported by correlation with upregulated var/rifin genes from RNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Hi-C analysis revealed that PfMORC knockdown causes collapse of chromatin architecture, with decreased heterochromatin borders, loss of long-range interactions (particularly at var gene regions), and opening of 3D chromatin structure at 36 hpi, while centromere/telomere colocalization was preserved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C85 present comprehensive Hi-C data with appropriate technical details (>37M reads, 10kb resolution) and statistical analysis (FDR <0.05). The progressive disruption from 24 to 36 hpi (C81) correlates with protein depletion. The 3D modeling (C84) provides visual confirmation of structural changes. The preservation of some features (centromere/telomere colocalization) adds credibility by showing specificity of effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "The authors speculate that heterochromatin maintenance may be essential for var gene control and that overall chromatin structure preservation may be necessary for accurate transcriptional regulation across the P. falciparum genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C87 are explicitly speculative interpretations based on the Hi-C and RNA-seq data. While the speculation is reasonable given the observed chromatin collapse and widespread transcriptional changes, these claims represent hypotheses rather than demonstrated mechanisms. The use of 'may be' appropriately indicates uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C104"
+    ],
+    "result": "The study demonstrates that PfMORC is essential for parasite survival and plays a direct role in heterochromatin formation and gene silencing, with previous conflicting results likely due to insufficient protein depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 and C104 synthesize the major findings from multiple experimental approaches (IFA, IP-MS, ChIP-seq, knockdown, Hi-C). The resolution of prior conflicts (C96) is supported by achieving higher knockdown levels (88% vs previous studies). The convergence of evidence from protein localization, interactions, chromatin binding, and functional consequences provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C99",
+      "C102"
+    ],
+    "result": "The authors propose that PfMORC may control AP2-G expression and sexual differentiation, and may act as a repressor for parasite-specific genes involved in egress, invasion, and antigenic variation during trophozoite-to-schizont transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99 and C102 are speculative ('may most likely', 'may act') and explicitly acknowledge limitations (inability to confirm sexual commitment role due to AP2-G mutation in C99). While supported by ChIP-seq binding data and protein interactions, direct functional validation is lacking. The speculation is reasonable but requires additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "The authors recognize that transcriptional changes in PfMORC knockdown lines represent a combination of direct effects (reduced DNA binding) and indirect effects (cell cycle arrest and chromatin collapse).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 demonstrate appropriate scientific interpretation by acknowledging the complexity of phenotypic effects. This is supported by the limited overlap between ChIP-seq peaks and differentially expressed genes (C65), and the widespread nature of transcriptional changes. This represents good scientific practice in distinguishing direct from indirect effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C105"
+    ],
+    "result": "The authors propose that PfMORC and its interacting partners represent potential targets for novel antimalarial therapeutic strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103 and C105 are explicitly speculative ('tempting to speculate', 'validating this factor as a strong candidate') regarding therapeutic applications. While the essentiality of PfMORC and parasite specificity of interacting partners provide rationale, no drug development or target validation studies are presented. This represents reasonable speculation for future work but is not experimentally supported in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims establish the malaria disease burden, limited transcription factor repertoire in Plasmodium, conservation of MORC proteins across kingdoms, and prior characterization of MORC function in related parasites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14 provide background context supported by appropriate citations to WHO data (C1), established literature on Plasmodium transcription factors (C3-C4), MORC protein family (C6-C7), and prior studies in T. gondii and P. falciparum (C8-C13). These claims appropriately contextualize the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C41",
+      "C44",
+      "C78",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Discussion claims contextualize findings within prior knowledge of antigenic variation, MORC protein functions across organisms, and previous conflicting results on PfMORC essentiality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C44, C78, C88-C94 provide appropriate context from prior literature to interpret the current findings. Citations are provided for established knowledge about antigenic variation (C41), MORC functions in other organisms (C89-C90), and prior conflicting results (C94). These claims appropriately frame the significance of the current work.",
+    "result_type": "MINOR"
+  }
+]

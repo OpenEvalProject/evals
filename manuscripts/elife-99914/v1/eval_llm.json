@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The manuscript establishes background knowledge about mitochondrial function, TIMM50's role in the TIM23 complex, and the clinical significance of TIMM50 mutations. These claims describe established facts about mitochondrial biology, the TIM23 import pathway, and prior clinical observations linking TIMM50 mutations to severe neurological disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C19-C49 represent well-established background knowledge supported by appropriate citations to prior literature. These claims accurately describe mitochondrial functions, the TIM23 complex composition and function, and documented clinical phenotypes associated with TIMM50 mutations. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "TIMM50 T149M mutation in patient fibroblasts causes significant decreases in TIMM50 and other TIM23 core protein levels (TIMM23, TIMM17A, TIMM17B). The mutation was confirmed by sequencing and protein level changes were demonstrated by immunoblotting in two patients compared to a healthy control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C50-C54 are well-supported by immunoblot data in Figure 1B-C showing significant decreases in TIMM50, TIMM23, TIMM17A, and TIMM17B levels. Claim C55 appropriately cites prior work showing similar effects with other TIMM50 mutations. The data include appropriate controls, multiple biological replicates (n=3-6), and statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Despite reduced TIM23 core complex levels, PAM complex subunits, TIMM21, TOM complex subunits, and matrix proteins (aconitase 2, mtHsp60) showed no significant changes in patient fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 are supported by immunoblot data in Figure 1B-C showing no significant changes in these proteins despite the dramatic reduction in TIM23 core components. This surprising finding is appropriately noted and forms a key observation of the study. The data include appropriate statistical analysis and controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "TIMM50 knockdown in mouse primary cortical neurons using shRNA (Sh2) reduced TIMM50 levels by ~80% and significantly decreased TIMM23 and TIMM17A/B levels, while TIMM21, PAM subunits, TOM subunits, and matrix substrates remained unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C67 are well-supported by immunoblot data in Figure 2B-C. The neuronal model recapitulates the fibroblast findings, with appropriate controls (untreated, pLL3.7, scrambled shRNA) and sufficient replicates (n=3-14). The consistency between the two model systems strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Mass spectrometry analysis of patient fibroblasts revealed that TIMM50 deficiency had no impact on steady-state levels of most mitochondrial proteins (~65% of MIM proteins and ~71% of matrix proteins), suggesting that low levels of functional TIM23 complex are sufficient to maintain most of the mitochondrial proteome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C68-C75 are supported by comprehensive mass spectrometry data (Figures 3A-C, Source data 1-2) with appropriate sample size (n=9 per group, three biological replicates in triplicate). The quantitative findings are clearly presented in volcano plots and correlation analyses. The observation that most proteins are unaffected despite reduced TIM23 core levels is a key finding, though the mechanistic interpretation (C5) requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Among the affected proteins in patient fibroblasts, OXPHOS and mitochondrial ribosomal proteins (MRP) were predominantly downregulated. Of 18 decreased MIM proteins, 17 were OXPHOS subunits; of 7 decreased matrix proteins, 4 were MRP subunits. The authors conclude that decreased MRP levels likely lead to lower translation of mitochondrially-encoded OXPHOS subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by mass spectrometry data (Figure 3D) and GO-term analysis (Figure 3\u2014figure supplement 3A). The quantitative analysis is clear and the inference about MRP affecting mitochondrially-encoded OXPHOS translation (C81) is reasonable given that OXA1 levels were unchanged (Figure 3\u2014figure supplement 3B-C). However, this remains an inference that would benefit from direct measurement of translation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "TIMM50 knockdown in neurons showed similar effects to patient fibroblasts: most MIM and matrix proteins were unaffected, while OXPHOS and MRP subunits were predominantly downregulated, though to a lesser extent than in fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C82-C87 are supported by mass spectrometry data in Figure 4A-D with appropriate sample size (n=9 per group). The consistency with fibroblast findings strengthens the conclusions. The authors appropriately note that the lesser extent of changes in neurons may reflect the shorter duration of knockdown compared to the constitutive deficiency in patient cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Mitochondrial DNA content was not affected by TIMM50 deficiency in either fibroblasts or neurons, confirming that observed effects on OXPHOS and MRP proteins are direct consequences of TIMM50 deficiency rather than secondary to mtDNA loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89 are supported by qPCR data in Figure 4E-F with appropriate controls (ethidium bromide treatment) and sample size (n=6). This control experiment is important for ruling out an alternative explanation for the observed proteome changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "TIMM50 deficiency led to significantly reduced basal respiration, maximal respiration, and OXPHOS-dependent ATP production in both patient fibroblasts and TIMM50 KD neurons, as measured by Seahorse XF analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11 and C90-C95 are well-supported by Seahorse XF data in Figure 5A, C-D with appropriate sample size (n=4-6 biological replicates with 3-6 technical replicates each) and statistical analysis. The functional consequences of reduced OXPHOS protein levels are clearly demonstrated in both model systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Basal glycolysis remained stable in TIMM50-deficient cells, but glycolytic capacity and glycolytic reserves were significantly reduced in both fibroblasts and neurons, indicating impaired ability to switch to glycolysis when needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C101 are supported by Seahorse XF glycolysis stress test data in Figure 5B, E-F with appropriate sample size and statistical analysis. The finding that cells cannot compensate for OXPHOS deficiency by upregulating glycolysis is important for understanding the metabolic consequences of TIMM50 deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C108"
+    ],
+    "result": "TIMM50 knockdown in neurons led to a significant ~25% reduction in cellular ATP levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C108 are supported by ATP measurement data in Figure 6G with appropriate sample size (n=27 wells per condition from three biological replicates with nine technical replicates each) and statistical analysis. This directly demonstrates the functional consequence of impaired OXPHOS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C13",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "TIMM50 deficiency caused defective mitochondrial trafficking in neuronal processes, with a twofold decrease in mobile mitochondria percentage and reduced traveling distance and speed. Proteomics showed no changes in trafficking machinery proteins, suggesting the effect is indirect and likely due to ATP deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C102-C107 are supported by live imaging data (Figure 6A-E) with appropriate sample size (n=13-31 neurites, 84-130 mitochondria per condition) and proteomics data (Figure 6F). The inference that trafficking defects result from ATP deficiency (C107) is reasonable given unchanged trafficking protein levels and known ATP-dependence of motor proteins, though direct causation is not proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "TIMM50 knockdown neurons showed no significant changes in spontaneous excitatory activity (mEPSC amplitude, area, frequency) or in basic action potential properties (rheobase, half-width, rate of fall).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 are supported by patch clamp data in Figure 7D-F and Figure 7\u2014figure supplement 1B-D with appropriate sample size (n=20-37 cells from 3-4 biological replicates). These negative findings are important controls showing that not all neuronal functions are affected.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "TIMM50 knockdown neurons displayed increased electrical activity, with shorter action potential latency and significantly increased maximum number of action potentials, suggesting faster recovery time between successive action potentials without decreased firing threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C117 are supported by patch clamp data in Figure 7C, G-H with appropriate sample size (n=28-50 cells from 3-4 biological replicates) and statistical analysis. The interpretation (C117) is reasonable based on the observed data pattern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "TIMM50 deficiency correlated with ~2.5-fold reduction in KCNA2 and KCNJ10 potassium channel levels. \u03b1-DTX blocking experiments confirmed that KCNA2 reduction contributes to increased firing rate in TIMM50 KD neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C121 are supported by mass spectrometry data (Figure 7I), immunoblot validation (Figure 7\u2014figure supplement 2), and \u03b1-DTX experiments (Figure 7\u2014figure supplement 1E-F). The pharmacological validation (C121) strengthens the mechanistic link between KCNA2 reduction and increased firing rate. Claim C120 is appropriately cited background knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C18",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The authors propose that reduced KCNJ10 and KCNA2 potassium channel levels likely underlie the epileptic phenotype observed in TIMM50 patients, supported by literature showing that mutations in these channels lead to temporal lobe epilepsy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18 and C127 represent inferences connecting the experimental findings to patient phenotypes. While the experimental data (reduced channel levels, increased firing rate) are solid, the direct link to patient epilepsy remains speculative without patient-derived neuronal data or in vivo validation. Claims C128-C130 appropriately cite supporting literature, but the causal connection requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C126",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors propose that defective mitochondrial trafficking, reduced ATP levels, and mitochondrial abnormalities provide plausible links between TIMM50 mutations and developmental defects in patients, and that increased electrical activity from reduced potassium channels links to the epileptic phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C126, C134-C136 represent speculative interpretations connecting experimental findings to patient phenotypes. While the experimental observations are well-supported, the direct causal links to patient developmental defects and epilepsy remain hypothetical. The manuscript appropriately uses cautious language ('possibly contributing', 'plausibly links', 'could be responsible'), but these remain inferences requiring validation in patient-derived cells or animal models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The authors conclude that even reduced levels of TIM23CORE components are sufficient for maintaining steady-state levels of most presequence-containing substrates, and that normal TIMM50 levels might be mainly essential for maintaining intricate complex proteins. They note the unexpected relationship between TIMM50 and TIMM23/TIMM17A/B levels despite the latter being imported by TIM22.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122, C131-C133 represent interpretations of the proteomics data that are reasonable given the observations. Claim C122 is supported by data from this study and appropriately cites Crameri et al., 2024. Claims C123-C125 appropriately note the surprising finding that TIMM23/TIMM17A/B levels decrease despite being TIM22 substrates, highlighting an unknown relationship. Claim C133 is appropriately speculative about TIMM50's role in complex assembly.",
+    "result_type": "MAJOR"
+  }
+]

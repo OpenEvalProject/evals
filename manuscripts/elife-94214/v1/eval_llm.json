@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C14",
+      "C24",
+      "C25",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Droplet size distributions of FUS (both untagged and SNAP-tagged) follow a scale-invariant log-normal behavior below the critical concentration. The scaling analysis yields critical exponents \u03c6 \u2248 1 and \u03b1 \u2248 0, with moment ratios falling onto straight lines when plotted against distance from critical concentration, and rescaled distributions collapsing onto a theoretical log-normal curve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 provide quantitative evidence (\u03c6 = 0.95 \u00b1 0.05) from Figure 1, C45-C46 establish \u03b1 = 0, and C48-C50 demonstrate log-normal collapse in Figure 2C. The convergence of multiple independent analyses (moment ratios, distribution collapse, theoretical overlap) provides strong support for the scale-invariant log-normal model for FUS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C47"
+    ],
+    "result": "The variance (\u03c3) of the log-normal distribution is approximately independent of protein concentration for FUS, except at the lowest concentrations furthest from the critical point. This concentration-independence of \u03c3 is consistent with the scale invariance prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is directly supported by observation in Figure 2B showing nearly uniform \u03c3 values across concentrations. This is a key prediction of the scaling model (C47) and its verification strengthens the log-normal interpretation, though the exception at lowest concentrations is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C55",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C6",
+      "C91",
+      "C94"
+    ],
+    "result": "The scaling model enables estimation of critical concentrations: \u03c1c = 5.0 \u00b1 0.2 \u03bcM for untagged FUS and \u03c1c = 5.4 \u00b1 0.4 \u03bcM for SNAP-tagged FUS. These estimates are higher than originally reported values but consistent when accounting for experimental methodology, and are validated by collapse of size distribution functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide quantitative estimates from Figure 3, C61 shows validation via distribution collapse in Figure 4, and C59-C60 address consistency with prior literature. The self-consistency check (C37-C38) and multiple independent estimation methods strengthen confidence in these values, supporting the practical utility of the scaling approach (C62, C91, C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "\u03b1-synuclein droplets below critical concentration also exhibit scale-invariant behavior with critical exponents \u03c6 = 1.3 \u00b1 0.2 and m = 0.9 \u00b1 0.2 (yielding \u03b1 \u2248 0.1-0.2). Two independent methods estimate critical concentration as \u03c1c = 137 \u00b1 10 \u03bcM (Equation 18) and \u03c1c = 125 \u00b1 7 \u03bcM (Equation 19), with stationary size distributions below \u03c1c.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 provide quantitative exponents from Figure 5A-B with independent validation, C68-C69 give consistent critical concentration estimates from Figure 5C-D, and C70 confirms stationarity in Figure 6B-C. The agreement between two independent estimation methods and consistency with the scaling framework support these findings, though the exponents differ slightly from FUS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C15",
+      "C35",
+      "C75",
+      "C85"
+    ],
+    "result": "The scaling analysis reveals universal behavior with critical exponents (\u03b1 \u2248 0, \u03c6 \u2248 1) that are independent of protein sequence and structure, differing from standard percolation theory exponents (\u03b1 = 1.19, \u03c6 = 2.21 for 3D percolation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C15 state the universality inference, C35 and C75 establish the theoretical expectation of universal exponents, and C85 documents the difference from percolation. The observation that both FUS and \u03b1-synuclein exhibit similar exponents despite different sequences supports universality, though \u03b1-synuclein shows slightly different values (\u03c6 = 1.3 vs 1.0), suggesting the universality may be approximate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Proteins form droplets of sizeable dimensions below the critical concentration for phase separation, with size distributions that become stationary after an initial transient, despite individual droplets continuing to form, grow, shrink, and dissolve.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C10 establish the phenomenon with citations to prior work (Stender et al., 2021; Kar et al., 2022), while C28-C30 characterize the empirical observations. This is well-documented in the literature and forms the empirical basis for the study, with C70 providing additional confirmation for \u03b1-synuclein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The formation of sizeable droplets below the critical concentration is not readily compatible with classical nucleation theory, which predicts nucleation in supersaturated systems and exponentially decreasing assembly probability in subsaturated systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C11 state the incompatibility with classical nucleation theory (supported by citation to Li et al., 2012), while C12-C13 provide the theoretical basis for this incompatibility. This is a well-established theoretical framework and the observation of sizeable droplets below \u03c1c does indeed contradict classical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23"
+    ],
+    "result": "The observed scale invariance is consistent with an increasingly large correlation length (\u03be) as concentration approaches the critical point from below. When \u03be is sufficiently large, scale invariance and finite-size scaling occur, with physical observables becoming independent of microscopic details, leading to universal behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 provide established theoretical framework (with citation to Brankov et al., 2000), C19-C21 discuss correlation length behavior at phase transitions, and C23 explains experimental challenges near critical points. This theoretical interpretation is consistent with the observed scaling behavior and represents standard critical phenomena theory, though direct measurement of \u03be is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C86",
+      "C87"
+    ],
+    "result": "The observed scaling behavior with \u03b1 \u2248 0 and \u03c6 \u2248 1 differs from predictions of existing theoretical models including Flory-Huggins theory, percolation models (which predict \u03b1 = 1.19, \u03c6 = 2.21 for 3D), and gelation models. A phase separation coupled with percolation could be consistent if it induces a shift in universality class.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C84 accurately describe existing theoretical frameworks with appropriate citations, and C85-C86 correctly identify the discrepancy with observed exponents. C87 offers a speculative reconciliation regarding finite-size effects. The comparison is fair and the identification of theoretical challenges is appropriate, though resolution requires future theoretical work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C22"
+    ],
+    "result": "The existence of scale invariance for droplet size distributions imposes stringent constraints on theoretical models of protein phase separation. The scaling analysis exhibits high generality, independent of specific underlying models, and can uncover fundamental aspects of universal phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 draw appropriate conclusions about the implications of the findings, and C22 characterizes the model-independent nature of the scaling approach. These are reasonable inferences from the demonstrated scale invariance and universality, representing standard practice in critical phenomena analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C92",
+      "C93",
+      "C95",
+      "C96"
+    ],
+    "result": "Methods to assess critical concentration are crucial for understanding protein phase diagrams and pharmacological interventions. The scale-invariant approach enables accurate estimation based on measurements away from the critical point where experimental errors are smaller, and should find applications in studying cellular protein condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 establish the importance and advantages of the method, C92-C93 identify the current challenge in the field, and C95-C96 predict future applications. The practical utility is demonstrated by the FUS and \u03b1-synuclein analyses, and the advantage of measuring away from the critical point is theoretically sound (C23), though broader validation across systems would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "The scale invariance characteristic of critical phenomena suggests that protein droplet formation and dimensions are highly tunable and sensitive to environmental conditions, which may be favorable for biological control by the protein homeostasis system and for pharmacological modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 correctly identifies scale invariance as characteristic of critical phenomena, but C98-C100 are speculative inferences about biological and therapeutic implications. While the sensitivity of critical phenomena is well-established, the specific claims about tunability, biological control, and pharmacological modulation require experimental validation and are not directly demonstrated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Many proteins undergo phase separation leading to biomolecular condensates of physiological significance, a process controlled by the protein homeostasis system, with dysregulation associated with human diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C7-C9) are well-supported by extensive citations to established literature (Brangwynne et al., 2009; Hyman et al., 2014; Banani et al., 2017; Alberti and Hyman, 2021; Lyon et al., 2021; Mateju et al., 2017; Qamar et al., 2018; Mitrea et al., 2022; Vendruscolo and Fuxreiter, 2022). This represents established background knowledge that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C72",
+      "C73",
+      "C74",
+      "C76"
+    ],
+    "result": "The scaling approach is analogous to percolation cluster analysis, uses characteristic size defined as ratio of second to first moment, and scale invariance is a general phenomenon observed across physics, biology, and economics. Log-normal distributions are general for nucleation and growth processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C33, C72-C74, and C76 provide methodological context and definitions supported by appropriate citations (Stauffer and Aharony, 2018; Song et al., 2005; Stanley, 1999; Binder and Virnau, 2016; Bergmann and Bill, 2008; Giometto et al., 2013). These represent established knowledge and standard definitions that contextualize the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "\u03b1-synuclein was purified from E. coli, labeled with Alexa Fluor 647, and mixed with PEG to induce droplet formation. Images were captured 10 min post-formation. FUS data from prior work (Kar et al., 2022) used fluorescence intensity proportional to diameter, with measurements at multiple concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 describe experimental methods with appropriate citations and detail. The \u03b1-synuclein methods follow established protocols (Dada et al., 2023; Fusco et al., 2014; Hardenberg et al., 2021), and the FUS data reanalysis is properly attributed (Kar et al., 2022). Methods appear sound and reproducible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C71",
+      "C88"
+    ],
+    "result": "It remains unclear whether droplets observed below and above saturation concentration result from the same process. A power law distribution has been reported for nucleoli above transition temperature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 appropriately identifies an open question in the field, and C88 cites relevant recent work (Lee et al., 2023) on nucleoli. These represent honest acknowledgment of uncertainties and connections to related phenomena, though they don't directly advance the main findings.",
+    "result_type": "MINOR"
+  }
+]

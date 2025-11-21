@@ -1,0 +1,367 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "RBMX primarily functions as a splicing repressor in human somatic cells. RNA-seq analysis of RBMX-depleted MDA-MB-231 and HEK293 cells identified 148 high-amplitude splicing events controlled by RBMX in both cell lines, with two-thirds of these events being repressed by RBMX. Alternative splice sites repressed by RBMX have comparable strength to normally used splice sites, indicating RBMX prevents use of 'decoy' splice sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide converging evidence from Western blots (>90% depletion), RNA-seq analysis (315 events in MDA-MB-231, 148 shared with HEK293), and splice site strength analysis. The data consistently demonstrate RBMX's primary role as a splicing repressor with appropriate experimental validation and statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "RBMX protein-RNA interactions are enriched within ultra-long exons (>1000 bp). iCLIP analysis revealed RBMX preferentially binds AG-rich sequences, with 17.6% of RBMX-regulated internal exons and 18.9% of RBMX-bound exons classified as ultra-long, representing significant enrichment compared to 0.4% abundance in all expressed exons. Ultra-long exons bound or regulated by RBMX show enrichment of AG-rich sequences, contrasting with AT-rich sequences in other ultra-long exons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C42 present comprehensive iCLIP data with appropriate technical validation (70% correlation between replicates, physiological protein expression levels). The statistical analysis demonstrating enrichment of ultra-long exons (p<0.0001) and k-mer analysis showing sequence preferences provide strong support for RBMX's preferential binding to ultra-long exons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "RBMX regulates genes involved in genome stability. Gene ontology analysis showed that genes bound by RBMX and genes with ultra-long exons dependent on RBMX are enriched in pathways involving cell cycle, DNA repair, and chromosome regulation. Consistent with this, RBMX depletion increases genome instability as measured by comet assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 combine bioinformatics analysis (gene ontology) with functional validation (comet assays showing increased DNA damage). The convergence of computational predictions with experimental evidence of genome instability (p<0.0001) and consistency with prior literature provides strong support for this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "RBMX represses cryptic splice sites within ultra-long exons of specific genome stability genes. RBMX represses cryptic 3' splice sites in ETAA1 exon 5 (2.1 Kb), REV3L exon 13 (4.2 Kb), and an exitron in ATRX exon 9 (3 Kb). RBMX depletion leads to complete loss of detectable ETAA1 protein in MDA-MB-231 cells, demonstrating functional consequences of aberrant splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56 provide detailed molecular evidence for specific targets with multiple validation methods (RNA-seq, iCLIP, RT-PCR, Western blot). The demonstration that ETAA1 protein is undetectable after RBMX depletion directly links splicing defects to protein expression, providing strong functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "RBMX binds adjacent to branchpoint sequences used by cryptic splice sites. iCLIP tags mapped just upstream of cryptic 3' splice sites in ETAA1 exon 5, and branchpoint mapping confirmed that branchpoint sequences are adjacent to RBMX binding sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 combine iCLIP mapping with direct branchpoint sequencing using a minigene system. The spatial proximity of RBMX binding sites to functional branchpoints provides mechanistic insight, though the sample size for branchpoint mapping appears limited to one example (ETAA1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C82"
+    ],
+    "result": "RBMXL2 can functionally replace RBMX in somatic cells. Tetracycline-induced expression of RBMXL2 in RBMX-depleted HEK293 cells rescued approximately 80% of splicing defects detected by RNA-seq. Rescued exons tend to be larger and have nearby RBMX binding sites. RT-PCR validation confirmed RBMXL2 represses aberrant splice isoforms in ETAA1, REV3L, and ATRX genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C59-C63, C82 present comprehensive rescue experiments with both global (RNA-seq) and targeted (RT-PCR) validation. The 80% rescue rate with appropriate statistical analysis (p<0.01 for exon size, p<0.0001 for iCLIP enrichment) and validation across multiple target genes provides strong evidence for functional equivalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C64"
+    ],
+    "result": "RBMY can functionally replace RBMX in cryptic splice site control. Tetracycline-induced expression of RBMY in RBMX-depleted HEK293 cells restored normal splicing patterns of ultra-long exons in ETAA1, REV3L, and ATRX genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C64 demonstrate functional conservation across more divergent family members (only 37% identity between RBMXL2 and RBMY). The rescue experiments with RBMY are validated by RT-PCR for three target genes, though the extent of rescue appears less comprehensive than with RBMXL2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C67",
+      "C68",
+      "C85"
+    ],
+    "result": "The C-terminal disordered domain of RBMXL2 is sufficient for cryptic splicing repression. Expression of RBMXL2\u0394RRM (lacking the RRM domain) rescued RBMX depletion phenotypes for ETAA1, REV3L, and ATRX splicing, demonstrating the C-terminal disordered domain mediates splicing control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C67-C68, C85 provide domain-mapping evidence through deletion analysis. The rescue of splicing defects by RBMXL2\u0394RRM with statistical validation (p<0.05 to p<0.0001 across targets) directly demonstrates sufficiency of the C-terminal domain, though necessity is not tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C65",
+      "C84"
+    ],
+    "result": "RBMX family proteins have conserved splicing control functions for at least 200 million years. The functional interchangeability of RBMX, RBMXL2, and RBMY in controlling ultra-long exon splicing indicates these mechanisms pre-date mammalian X and Y chromosome divergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C65, C84 make evolutionary inferences based on functional conservation demonstrated in rescue experiments. The logic is sound: functional equivalence across proteins with known evolutionary relationships supports ancient conservation. However, the 200 million year estimate relies on established evolutionary timelines rather than direct evidence from this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C69",
+      "C70"
+    ],
+    "result": "RBMX has similar functions to RBMXL2, regulating ultra-long exons and repressing cryptic splice sites. Both proteins operate primarily as splicing repressors in their respective cell types, with RBMX controlling ultra-long exons (>1 Kb) enriched in genome stability genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C5, C11, C69-C70 synthesize the main findings comparing RBMX and RBMXL2 functions. These summary claims are well-supported by the detailed experimental evidence in other claim groups, representing valid conclusions from the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "RBMX protein binding within ultra-long exons may directly block spliceosome access to cryptic splice sites through a steric interference mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C97 proposes a mechanistic model based on iCLIP data showing high-density RBMX binding and branchpoint mapping. While the spatial proximity data is consistent with steric blocking, the mechanism is not directly tested. Alternative mechanisms (e.g., recruitment of other factors, chromatin effects) are not excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C71",
+      "C81"
+    ],
+    "result": "Prior work established that RBMXL2 is testis-specific, evolved 65 million years ago from RBMX retrotransposition, represses cryptic splice sites in ultra-long exons of genome stability genes during meiosis, and is essential for male fertility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C16, C71, C81 cite prior work (Ehrmann et al., 2019; Aldalaqan et al., 2022) establishing the foundation for this study. These are appropriately attributed to previous publications and provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C23",
+      "C77"
+    ],
+    "result": "X chromosome inactivation during meiosis necessitates autosomal retrogene expression. The X and Y chromosomes are inactivated during meiosis in the XY body, and autosomal retrogenes evolved from essential X chromosome genes to maintain cell viability during this period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22-C23, C77 describe established biological knowledge about meiotic sex chromosome inactivation, appropriately cited to Turner, 2015 and Wang, 2004. This provides essential context for understanding RBMX/RBMXL2 functional relationships.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "RBMX family proteins share structural features and evolutionary relationships. RBMX and RBMXL2 share 73% identity with the same modular structure (RRM and C-terminal disordered domain). RBMY is more divergent (~37% identity with RBMXL2), located on the Y chromosome, and is deleted in some infertile men.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 describe protein structure and evolutionary relationships based on sequence analysis and prior literature. The structural information is well-established and appropriately illustrated in Figure 1A. These provide necessary background for interpreting functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24",
+      "C66",
+      "C86"
+    ],
+    "result": "Prior work showed RBMX activates exon splicing through its C-terminal disordered domain via m6A recognition and RNA polymerase II pausing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C66, C86 cite prior work (Liu et al., 2017; Zhou et al., 2019; Moursy et al., 2014) on RBMX splicing activation mechanisms. This contrasts with the repression function emphasized in the current study and provides important mechanistic context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "m6A residues are enriched within some long internal exons and might facilitate RBMX protein-RNA interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 cites Dominissini et al., 2012 for m6A enrichment in long exons and speculates about facilitating RBMX binding. While m6A enrichment is established, the connection to RBMX binding in ultra-long exons is not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "RBMX family proteins interact with SR protein Tra2\u03b2 and may regulate splicing through protein-protein interactions in addition to direct RNA binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 cite prior work (Elliott et al., 2000; Venables et al., 2000; Nasim et al., 2003) on protein-protein interactions. This provides an alternative or complementary mechanism to direct RNA binding for explaining splicing regulation of exons without direct RBMX binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Cryptic splice sites are common in the human genome and can interfere with gene expression. Many are in intronic repetitive sequences repressed by hnRNPs, while others within exons can shorten long exons or form exitrons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 cite established literature (Aldalaqan et al., 2022; Sibley et al., 2016; Attig et al., 2018; Marquez et al., 2015) on cryptic splice sites. This provides essential background for understanding the biological significance of RBMX's repressive function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Most human exons are short (~130 bp) to facilitate exon definition through spliceosome assembly and SR protein binding to exonic splicing enhancers. Some long exons require specific factors like SRSF3, hnRNP K, and transcription factor phase separation for proper splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe established splicing mechanisms (Black, 1995; Robberson et al., 1990; Kawachi et al., 2021). This provides theoretical framework for understanding why ultra-long exons present special challenges and require specific regulatory mechanisms like RBMX.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "RPL10 and RPL10L exemplify functional replacement during meiosis. These 95% identical proteins show that RPL10L directly replaces X-linked RPL10 during meiosis, with RPL10 mutation causing meiotic arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 cite Jiang et al., 2017 and Wang, 2004 to provide a precedent for X-linked gene replacement during meiosis. This contextualizes the RBMX/RBMXL2 relationship as part of a broader biological strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83"
+    ],
+    "result": "A recent model suggests RBMXL2 directly replaces RBMX function during meiosis due to X chromosome transcriptional inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 cites Aldalaqan et al., 2022 for a model that the current study's results support. This represents prior interpretation that the current work validates experimentally through rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C46",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "RBMX is important for genome stability through multiple mechanisms including replication fork activity, sensitivity to genotoxic drugs, and cell proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C91-C93 cite extensive prior literature (Adamson et al., 2012; Munschauer et al., 2018; Zheng et al., 2020) establishing RBMX's role in genome stability. This provides context for interpreting the gene ontology results and functional significance of splicing defects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "RBMX's dual role in genome maintenance (direct DNA damage response participation and splicing regulation of genome stability genes) may explain associations with intellectual disability and tumor suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 synthesize current findings with prior clinical observations (Cai et al., 2021; Shashi et al., 2015; Adamson et al., 2012; Elliott et al., 2019). The connection between splicing defects and disease is logical but represents interpretation rather than direct evidence from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C50",
+      "C52",
+      "C55"
+    ],
+    "result": "ETAA1, REV3L, and ATRX encode proteins involved in genome stability: ETAA1 is a replication stress protein in ATR signaling, REV3L is the catalytic subunit of DNA polymerase \u03b6 for translesion synthesis, and ATRX is a chromatin remodeling protein involved in mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C52, C55 describe established protein functions (Bass et al., 2016; Martin and Wood, 2019) for key RBMX targets. This provides biological context for understanding the functional importance of proper splicing of these genes.",
+    "result_type": "MINOR"
+  }
+]

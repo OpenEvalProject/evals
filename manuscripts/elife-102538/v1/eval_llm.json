@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "xCas9 is an evolved variant of SpCas9 developed through directed evolution with seven amino acid substitutions, demonstrating expanded PAM compatibility, improved recognition of the canonical TGG PAM, and reduced off-target effects compared to SpCas9, which is strictly limited to NGG PAM sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7, C8, and C9 are well-supported by citations to the literature (Hu et al., 2018; Anzalone et al., 2020; Pacesa et al., 2024) and structural data (Figure 1). These claims establish the background and context for the study, describing well-established facts about SpCas9 and xCas9.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "The only substitution within the PAM-interacting domain of xCas9 is E1219V, which does not directly interact with the PAM sequence, and structures of xCas9 bound to AAG and GAT PAMs show no substantial differences in the PAM-interacting domain compared to SpCas9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 are supported by structural analysis of xCas9 crystal structures (PDB 6AEB, 6AEG) and citations to structural studies (Chen et al., 2019; Guo et al., 2019). These observations motivate the computational investigation into the mechanism of expanded PAM recognition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SpCas9 enforces stringent guanine selection through the rigidity of its arginine dyad (R1333 and R1335), particularly R1335, restricting PAM compatibility to NGG sequences. In contrast, xCas9 introduces flexibility in R1335 through the E1219V mutation, enabling selective recognition of specific PAM sequences and expanding PAM compatibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C24, C25, C26, C63, C64, C65, C66, and C67 are supported by RMSF analysis (Figure 2C), interaction frequency analysis (Figure 2B), hydrogen bond analysis (Figure 2D), and free energy simulations (Figure 3). The data consistently show increased flexibility of R1335 in xCas9 compared to SpCas9, and the computational methods are appropriate for assessing protein flexibility and interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "In SpCas9, R1333 and R1335 provide anchoring for PAM nucleotides, with R1335 being remarkably constrained and exhibiting higher interaction probability with PAM nucleobases than R1333. In xCas9, both arginines switch interactions between PAM nucleobases and backbone for recognized PAMs (TGG, AAG, GAT), while for ignored PAMs (CCT, TTA, ATC), no significant interactions with PAM nucleotides are observed. R1335 exhibits a distinct specificity pattern for recognized versus ignored PAMs, suggesting it serves as a discriminator for PAM recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C23 are supported by extensive MD simulations (~6 \u03bcs per system), interaction frequency analysis (Figure 2B), hydrogen bond analysis (Figure 2D), RMSF analysis (Figure 2C), and specificity index analysis (Figure 2E). The statistical methods for computing interaction frequencies and specificity indices are described in detail, and the data are reported with appropriate error estimates. The conclusions are consistent across multiple independent analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Effective interactions with PAM nucleotides are required for PAM recognition. Most recognized PAM sequences contain at least one guanine, which readily forms specific interactions with arginine. For ignored PAM sequences lacking guanine, the arginine dyad shifts away from the PAM nucleotides, demonstrating selective targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, C29, C70, C71, and C72 are supported by interaction frequency analysis (Figure 2B), hydrogen bond analysis (Figure 2D), structural snapshots (Figure 2F), and citations to studies on arginine-guanine interactions (Hossain et al., 2023; Luscombe et al., 2001). The observation that recognized PAMs (TGG, AAG, GAT) all contain guanine while ignored PAMs do not is consistent with the data showing lack of interactions for ignored PAMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "In SpCas9, R1335 is sandwiched between E1219 and G3, explaining its rigidity and limited ability to recognize only NGG PAMs. This rigidity incurs an entropic cost due to restricted conformational space. In xCas9, R1335 exhibits dynamic interactions with the G3 nucleobase and backbone, with increased flexibility reducing the entropic penalty for DNA binding (entropy increase of 216.83 J/mol\u00b7K compared to SpCas9), improving recognition and binding of the TGG PAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, C33, C34, C35, C36, C37, and C38 are supported by well-tempered metadynamics simulations (Figure 3A, 3B, and supplements) and entropy calculations using the quasi-harmonic approximation. The free energy landscapes show converged results (Figure 3\u2014figure supplements 1-3), and the entropy calculations provide quantitative support for the entropic advantage of xCas9. The methods are appropriate and well-described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C68",
+      "C69",
+      "C89",
+      "C97"
+    ],
+    "result": "The increased flexibility of R1335 in xCas9 confers a pronounced entropic preference, reducing the entropic penalty during DNA binding. This flexibility not only facilitates binding to non-canonical PAMs but also enhances recognition of the canonical TGG PAM, broadening xCas9's functional range while maintaining a strong preference for guanine-containing motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C68, C69, C89, and C97 are supported by entropy calculations using the quasi-harmonic approximation and free energy simulations (Figure 3). The entropy increase of 216.83 J/mol\u00b7K for R1335 in xCas9 compared to SpCas9 provides quantitative support for the entropic advantage. The alchemical free energy calculations (Figure 4) further support the improved binding to both canonical and non-canonical PAMs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "xCas9 was developed through three cycles of directed evolution: E480K, E543D, and E1219V were introduced in the first cycle (xCas91); A262T, S409I, and M694I in the second cycle (xCas92); and R324L in the third cycle (xCas93).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, and C41 are supported by citation to Hu et al., 2018, which described the directed evolution of xCas9. This is established knowledge from the literature and provides the framework for the subsequent computational analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C73",
+      "C74"
+    ],
+    "result": "The directed evolution process tunes the specificity of xCas9 for non-canonical PAM sequences by progressively enhancing DNA-binding affinity. The first evolution cycle (SpCas9 to xCas91) primarily improved DNA binding with non-canonical PAMs (AAG: \u0394\u0394G=\u22124.25\u00b10.47 kcal/mol; GAT: \u0394\u0394G=\u22124.43\u00b10.98 kcal/mol) but not significantly for TGG (\u0394\u0394G=\u22121.5\u00b10.63 kcal/mol). The second cycle (xCas91 to xCas92) further improved binding to AAG and GAT with no substantial change for TGG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C42, C43, C44, C45, C73, and C74 are supported by alchemical free energy calculations (Figure 4) using a thermodynamic cycle approach. The methods are well-described, convergence is demonstrated (Figure 4\u2014figure supplement 2), and errors are computed using the MBAR method. The results show clear trends across the evolution cycles with appropriate statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The third evolution cycle (xCas92 to xCas93) significantly enhanced binding affinity for the canonical TGG PAM (\u0394\u0394G=\u22129.29\u00b10.82 kcal/mol), while affinity for AAG and GAT increased less (\u0394\u0394G=\u22124.03\u00b10.18 and \u22125.24\u00b10.42 kcal/mol, respectively). This indicates that E1219V is not the sole contributor to expanded PAM compatibility, and the enhanced recognition of the canonical TGG PAM by xCas9 compared to SpCas9 predominantly arises from mutations introduced during the third cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C46, C47, C48, C49, C50, C75, C76, and C77 are supported by alchemical free energy calculations (Figure 4) and enthalpic contribution analysis (Figure 5\u2014figure supplements 2 and 3). The data show a clear and statistically significant improvement in TGG binding in the third cycle, with appropriate error estimates. The conclusion that the third cycle is key for TGG recognition is well-supported by the quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the first evolution cycle (SpCas9 to xCas91), R1335 interacts more favorably with AAG- and GAT-bound xCas91 compared to TGG-bound xCas91, while E543D contributes unfavorably only in the presence of TGG, owing to a conformational change in the REC3 domain upon non-canonical PAM binding. Structural comparisons show no significant differences between TGG-bound xCas9 and SpCas9 (RMSD ~0.80 \u00c5), but notable shifts in the REC3 domain for AAG- and GAT-bound xCas9 (RMSD ~3.21 \u00c5 and ~3.55 \u00c5, respectively).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C53, and C54 are supported by enthalpic contribution analysis (Figure 5A) and structural comparisons (Figure 5\u2014figure supplement 1). The RMSD values are quantitative and the structural differences are consistent with the enthalpic contributions. However, the causal link between the REC3 conformational change and the E543D contribution could be more rigorously established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The recognition of alternative PAMs (AAG and GAT, but not TGG) triggers a conformational change in the REC3 domain, driven by alternative PAM binding rather than the amino acid substitutions in xCas9. In the presence of TGG, the REC3 domain maintains the configuration observed in the SpCas9 X-ray structure, while in the presence of AAG and GAT, REC3 exhibits a notable opening of ~10-13 \u00c5, reaching a conformation similar to their respective X-ray structures. This conformational shift is observed in the initial cycle of directed evolution and is maintained throughout, suggesting that PAM binding acts as a positive allosteric effector of REC3 function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C56, C57, C58, C80, C81, C82, C83, and C84 are supported by MD simulations and distance analysis (Figure 5B). The simulations were performed by introducing xCas9 mutations into SpCas9 in the presence of different PAMs, providing a controlled test of whether the conformational change is due to mutations or PAM binding. The distance measurements show statistically significant differences (p < 0.0001), and the results are consistent with X-ray structures. The allosteric interpretation is supported by citations to previous studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In the second evolution cycle (xCas91 to xCas92), the mutations promote favorable interactions between R1335 and non-canonical PAM sequences (AAG: \u0394E \u221226.92\u00b16.33; GAT: \u0394E \u221238.60\u00b17.18) despite being distal from the DNA and PAM. In the third cycle (xCas92 to xCas93), the enthalpic contribution to DNA binding does not show substantial differences for R1335 and R324L between TGG- and non-canonical PAMs-bound xCas9, but the overall interaction energy between the protein and DNA is highly favorable for TGG-bound xCas93, indicating that the third evolution cycle highly adapts to binding TGG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C60, C61, and C62 are supported by enthalpic contribution analysis (Figure 5\u2014figure supplements 2 and 3). The data show clear trends across the evolution cycles, with appropriate error estimates. The observation that distal mutations can affect PAM interactions is interesting and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Cas9 functions as an allosteric engine, where the binding of the canonical PAM sequence primes the protein for double-stranded DNA cleavage. When bound to TGG, xCas9 retains a closed conformation of the REC3 domain, akin to that observed in TGG-bound SpCas9. As the third round of evolution enhances DNA binding in the presence of TGG, a compact and energetically favorable conformation is essential for the efficient recognition of the canonical TGG PAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C86, and C87 are supported by MD simulations and distance analysis (Figure 5B), alchemical free energy calculations (Figure 4), and citations to previous studies on Cas9 allostery (Nierzwicki et al., 2020; Palermo et al., 2017; Sternberg et al., 2015; Zuo and Liu, 2020). The data are consistent with the allosteric model and provide mechanistic insight into the role of the third evolution cycle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Studies on directed evolution have shown that early substitutions commonly reshape functionality, while subsequent mutations confer a stabilizing role. This pattern is consistent with the findings for xCas9, where initial mutations enhanced binding to non-canonical PAMs and later mutations stabilized binding to the canonical TGG PAM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are supported by citations to studies on directed evolution (Arantes et al., 2024; Romero and Arnold, 2009; Tokuriki et al., 2008; Wang et al., 2002). These claims provide context for interpreting the xCas9 results in the broader framework of directed evolution principles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "The flexibility of the PAM-interacting residues, particularly R1335, is a key factor driving xCas9's ability to recognize a broader range of PAM sequences compared to SpCas9. This flexibility reduces the entropic penalty during DNA binding, broadening xCas9's functional range towards non-canonical PAMs while maintaining a strong preference for guanine-containing motifs. This reflects a broader evolutionary strategy in protein-DNA recognition, where structural flexibility enables sequence diversity without sacrificing specificity, and exemplifies how flexibility-driven optimization can expand protein functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C90, and C91 are supported by the comprehensive computational analyses presented in the manuscript, including RMSF analysis (Figure 2C), interaction frequency analysis (Figure 2B), free energy simulations (Figure 3), entropy calculations, and alchemical free energy calculations (Figure 4). The broader evolutionary interpretation is supported by citations to studies on protein-DNA recognition (Chiu et al., 2022; Heller et al., 2020; Luscombe et al., 2001; Luscombe and Thornton, 2002).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Future engineering should fine-tune the flexibility of the PAM-interacting cleft to design CRISPR-Cas systems with expanded genome targeting capabilities and tailored specificities. Introducing further substitutions within the PAM-interacting cleft may enhance recognition of adenine- and thymine-containing PAMs. This mechanism might be exploited by the PAM-less SpRY Cas9 variant, where mutations likely increase the flexibility of interacting residues. The findings may apply to other CRISPR-Cas effectors from diverse species. Experimental studies and further computational analysis will be essential to elucidate the causative mechanisms underlying the REC3 conformational change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92, C93, C94, C95, C96, C99, C100, and C101 are speculative and represent future directions rather than results of the current study. While these suggestions are reasonable based on the findings, they are not directly supported by data in the manuscript. The claim about SpRY Cas9 (C93, C94) is supported by citations (Walton et al., 2020; Hibshman et al., 2024) but remains speculative in the context of the flexibility mechanism proposed here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "The binding of alternative PAMs (AAG and GAT, but not TGG) induces a conformational change in the distally located REC3 domain, revealing an intriguing allosteric phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 is supported by MD simulations and distance analysis (Figure 5B). This is a restatement of the major finding regarding REC3 conformational changes and is well-supported by the data.",
+    "result_type": "MAJOR"
+  }
+]

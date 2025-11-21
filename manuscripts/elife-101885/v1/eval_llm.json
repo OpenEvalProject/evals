@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "The manuscript provides epidemiological context for lung cancer, stating that in 2020 there were more than 2.2 million new cases and 1.8 million deaths worldwide, with NSCLC accounting for 85% of lung cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 present well-established epidemiological data from the literature (C3 cites Sung et al., 2021). These are standard background facts that provide context for the study and are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "The tumor-stroma ratio is an independent prognostic factor, with higher stromal proportions associated with worse prognosis in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are supported by citation to Wu et al., 2016. This is established prior knowledge that motivates the study's focus on tumor-stroma interactions. The claims are appropriately attributed to the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cancer-associated fibroblasts (CAFs) have dual and ambiguous roles in tumor biology: they produce ECM, growth factors, and cytokines that can both promote tumor growth by excluding immune cells and suppress tumor growth by creating mechanical barriers. CAFs are characterized by increased mobility, proliferation, ECM remodeling, and poorly reversible activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C15, C46-C49, C54-C56 collectively describe the complex biology of CAFs based on extensive literature citations (Mathieson et al., 2022; Salmon et al., 2012; Yaegashi et al., 2021; Cheng et al., 2009; Barbazan et al., 2023; Nazareth et al., 2007; Lakins et al., 2018; Koppensteiner et al., 2022; Nakamura et al., 2004; Wang et al., 2009; Peng et al., 2013; Kalluri, 2016; Barrett and Pur\u00e9, 2020; Grout et al., 2022). The ambiguous role (C15) is a reasonable inference from the cited evidence. This provides essential biological context for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "In NSCLC, CD8+ T-cell recruitment is modulated by tumor-associated antigens and cytokines (IL6, IL8), with T-cells differentiating from both circulating and tissue-resident precursors and being attracted via chemokines produced by dendritic cells or cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe T-cell biology in NSCLC with appropriate citations (Hiraoka et al., 2006; Liu et al., 2022; McKeown et al., 2004; Brenner et al., 2017; Gueguen et al., 2021; Brown et al., 2007). This provides biological context for the T-cell component of the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C43",
+      "C50"
+    ],
+    "result": "Analysis of 13 LUSC and 22 LUAD patient samples using multiplex immunohistochemistry revealed that fibroblasts occupy 35% (LUSC) and 31% (LUAD) of the stroma, with FAP+\u03b1SMA+ fibroblasts responsible for T-cell exclusion. When FAP+\u03b1SMA+ fibroblasts line the tumor, T-cells are excluded; when absent, T-cells infiltrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24, C43, C50 describe original experimental measurements from patient samples. The data are presented with appropriate detail (percentages, TSR values) and are visualized in Figure 3. The observations about T-cell exclusion patterns (C23-C24) are directly supported by the immunohistochemistry images. C22 appropriately cites Grout et al., 2022 for the identification of FAP+\u03b1SMA+ fibroblasts as responsible for T-cell exclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Different cell types vary greatly in size: lung cancer cells have diameters of 13-18 \u03bcm, fibroblasts ~16 \u03bcm, and T-cells 5-10 \u03bcm, resulting in T-cells having volumes and projected areas approximately 10 times smaller than fibroblasts and cancer cells at the same densities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28 provide cell size measurements from the literature (Hosokawa et al., 2013; Mitsui and Schneider, 1976; Tasnim et al., 2018). The inference about relative volumes (C28) is mathematically sound given the diameter measurements. This information is relevant for interpreting cell density measurements and modeling parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "Fibroblasts are often considered a major stromal component but are found in small proportions in scRNA-seq with 10X single-cell systems, possibly due to tissue digestion processes, incomplete stroma extraction, and lower efficiency of 10X systems for fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41-C42 identify a methodological discrepancy between expected and observed fibroblast proportions in scRNA-seq data. While C41 describes a known observation, C42 offers speculative explanations without direct experimental validation. The authors acknowledge this is 'well known' but do not provide citations for the proposed mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C51",
+      "C52",
+      "C57",
+      "C59",
+      "C62",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors developed a two-stage mathematical model: first, a dynamical system with a pressure-like term to model proliferation and activation; second, a spatial model based on Onsager's variational principle. The model considers four cell types (cancer cells, T-cells, NAFs, CAFs) and assumes irreversible NAF-to-CAF transformation, with CAF mass fraction reflecting matrix production and associated friction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C51-C52, C57, C59, C62, C76-C77 describe the mathematical modeling framework. The approach is clearly articulated with appropriate theoretical foundations (Onsager's variational principle). The assumptions (irreversible transformation, friction proportional to CAF density) are explicitly stated. The two-stage approach is methodologically sound for building complexity incrementally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C39",
+      "C40"
+    ],
+    "result": "The dynamical system model identifies two mechanisms controlling tumor growth: competition for resources and space, and T-cell response efficiency. The final outcome (tumor invasion, persistence, or eradication) depends on patient-specific parameter values and results from the interplay between cancer cell growth, T-cell cytotoxicity, and fibroblast activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C39-C40 present key conclusions from the dynamical system analysis. These are supported by the mathematical analysis in the manuscript and Figure 4, which shows different outcomes based on parameter combinations. The identification of two controlling mechanisms is a reasonable synthesis of the model behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C63",
+      "C64"
+    ],
+    "result": "Spatial simulations demonstrate that activated fibroblasts create a fibrotic environment (20-30% mass fraction) that acts as a barrier to tumor expansion and excludes T-cells even when they are efficient. Without CAF activation, efficient T-cells can eliminate the tumor. The presence of stroma exerts pressure that affects cancer cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C34-C35, C37-C38, C63-C64 describe results from the spatial model simulations shown in Figure 5. The simulations demonstrate the dual role of CAFs: limiting tumor expansion while excluding T-cells. The quantitative results (mass fractions, spatial distributions) are clearly presented in the figures. The conclusions about CAF barrier function are well-supported by the simulation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Simulations of two tumor nests show that when T-cell activity is marginalized by CAFs, nests coalesce into a single tumor; when T-cells are active, coalescence is reduced; without T-cell chemotaxis, unrestricted growth occurs. Coalescence leads to anisotropic tumor shapes, with relaxation to round shapes being slower for large and fibrotic tumors due to friction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 describe results from two-nest simulations shown in Figure 6. The different outcomes based on T-cell and CAF activity are clearly demonstrated. The observation about anisotropic shapes and slow relaxation (C70-C71) is a reasonable inference from the simulation results and the friction model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C30",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The spatial distribution of T-cells is an indicator of patient survival. ECM density alone is not always sufficient for T-cell exclusion; matrix orientation strongly influences metastasis and tumor growth. Cancer cell flux is much higher when fibers are oriented normal to the tumor surface compared to parallel orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C72-C75 discuss the importance of spatial organization and matrix orientation. C30 and C72 are supported by citation to Carstens et al., 2017. C73 is stated as established knowledge. C74-C75 describe simulation results from Figure 7 showing differential cancer cell flux based on fiber orientation. The integration of these concepts is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53"
+    ],
+    "result": "Finite element-based simulations in two-dimensional space demonstrate the ambiguous activity of CAFs in regulating cancer cell proliferation and invasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 summarizes the overall conclusion from the spatial modeling work. This is well-supported by the simulation results presented in Figures 5-7, which show CAFs both limiting tumor expansion and promoting growth by excluding T-cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Identifying different TME scenarios and their likelihood is critical for predicting therapy outcomes, as pharmacodynamics and pharmacokinetics depend on spatial structure and composition. Classification and quantitative characterization of outcomes can help monitor treatment in real-time according to TME evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 discuss the translational implications of the modeling work. C78 is supported by citation to Mori and Ben Amar, 2023. C79 is stated as established knowledge. C80 is a reasonable proposal for future application of the modeling framework, appropriately framed as a potential benefit rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

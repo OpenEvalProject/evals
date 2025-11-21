@@ -1,0 +1,221 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The authors performed all-atom MD simulations of an 8-chain A1-LCD system at an initial concentration of 3.5 mM across five NaCl concentrations (50\u20131000 mM), with four replicates of 1.5 \u03bcs each. The simulations showed lack of condensation at low salt (50 mM) but progressive condensation at intermediate and high salt, as measured by Dmax values decreasing from ~150 \u00c5 to ~120 \u00c5.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raised multiple critical concerns about the simulation setup and interpretation: (1) simulation duration is too short for comprehensive conclusions about phase separation; (2) convergence issues in Figure 2A; (3) the starting concentration of 3.5 mM is questioned as inappropriate for modeling phase separation, with the reviewer stating 'the use of the term \"dense phase\" is questioned' and requesting 'clearer analysis depicting coexistence of both dilute and dense phases.' The reviewer states 'commenting on phase separation under conditions that don't align with typical phase separation parameters is not acceptable.' Reviewer 2 also noted limitations, stating 'the smallness of the authors' simulation system may affect the nature of the \"phase transition\"' and information about salt concentrations inside vs. outside the condensate. The authors themselves acknowledge (C144) that 8 chains is 'too low for a proper representation of a homogenous solution at low salt and a full equilibration between two phases.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The simulations showed that the radius of gyration (Rg) decreases with increasing salt, matching experimental data. Intrachain contacts per residue increased slightly (5%) while inter-chain contacts increased substantially (23%) when salt concentration increased from 50 to 1000 mM, indicating that high salt induces condensation primarily through enhanced inter-chain interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raised concerns about data quality and interpretation: (6) 'difficult to observe a clear trend due to irregularities in the data' with non-monotonic trends in Figure 2C despite red dotted lines; (7) 'given the error in the radius of gyration (Rg) calculations, the reviewer questions the validity of drawing conclusions from this data'; (9) the increase in intramolecular contacts contradicts prior reports that 'upon self-assembly, protein chains extend within the condensate, leading to a decrease in intramolecular contacts.' The reviewer requests careful review and justification. These concerns about data quality, trends, and contradictions with prior work create uncertainty about these structural findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The simulations revealed detailed ion coordination patterns: Cl\u207b ions preferentially coordinate with Arg sidechains (showing strong RDF peaks at 3.2 \u00c5) and backbone nitrogens, with Arg sidechains often coordinating two Cl\u207b ions simultaneously. Na\u207a ions show strongest preference for Asp carboxyls but predominantly bind to backbone carbonyls due to their abundance, with multiple backbone carbonyls often coordinating a single Na\u207a ion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 directly challenged claim C48, stating: '(4) The inference that \"Each Arg sidechain often coordinates two Cl- ions simultaneously, but each Lys sidechain coordinates only one Cl- ion\" is questioned. According to Supplementary Figure 2A, Lys seems to coordinate with Cl- ions more frequently than Arg.' This contradicts the authors' interpretation of their own data. Additionally, reviewer 1 requested (5) that figure captions for Supplementary Figures 2 and 3 specify which system the analyses were performed on, suggesting ambiguity in the data presentation. While the overall ion coordination patterns may be valid, the specific claims about Arg vs. Lys coordination are directly challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C100"
+    ],
+    "result": "The simulations demonstrated that ions neutralize A1-LCD's high net charge (+9 per chain, +72 total) through excess Cl\u207b binding over Na\u207a. At low salt (50 mM), the net charge remains high (~48), explaining lack of condensation due to electrostatic repulsion. At high salt (1000 mM), when including 1st- and 2nd-shell ions, the net charge reduces to zero, enabling condensation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the charge neutralization mechanism conceptually, reviewer 1 expressed concern (11) that 'the majority of the data presented shows no significant alteration with changes in salt concentration, yet the authors have made strong conclusions regarding salt activity.' Reviewer 1 also requested (10) 'systematic comparison of estimated parameters with varying salt concentrations' and 'potential differences in salt concentrations between the dilute and condensed phases,' which the simulation setup cannot properly address due to the small system size. The charge neutralization mechanism is conceptually accepted but the quantitative evidence and interpretation are questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C101"
+    ],
+    "result": "The simulations revealed that ions bridge between A1-LCD chains, with ~20% of 1st- and 2nd-shell ions serving as bridges. Bridging increases with salt concentration, with Cl\u207b bridging dominated by Arg sidechains and Na\u207a bridging increasingly mediated by backbone carbonyls (especially Gly residues) at high salt. At 1000 mM NaCl, there are 26.6 bridging Cl\u207b and 10.9 bridging Na\u207a ions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledged this finding, stating the simulations provide 'atomistic details regarding how small salt ions modulate interactions among intrinsically disordered proteins with charged residues, namely via Debye-like screening that weakens the effective electrostatic interactions among the polymers, or through bridging interactions that allow interactions between like charges from different polymer chains to become effectively attractive (as illustrated, e.g., by the radial distribution functions in Supplementary Information).' Reviewer 3 also noted the study identifies 'two direct effects of salt: neutralization of the protein's net charge and bridging between protein chains, both promoting condensation.' The bridging mechanism is accepted as a valid finding from the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C102",
+      "C113"
+    ],
+    "result": "The simulations showed that high salt strengthens \u03c0-type interactions (cation\u2013\u03c0, \u03c0\u2013\u03c0, amino\u2013\u03c0) by drawing water away from interaction partners, while salt bridge numbers remain constant. Water RDFs around Tyr sidechains in \u03c0-interactions show decreased water density at high salt, with the magnitude of decrease correlating with the increase in each interaction type (amino\u2013\u03c0 > \u03c0\u2013\u03c0 > cation\u2013\u03c0).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 questioned (8) whether 'the pair correlation function values in Figure 5E and supplementary figure 4 show only minor differences' and whether 'these differences are significant.' This directly challenges the water dehydration mechanism. Additionally, reviewer 1's concern (6) about 'irregularities in the data' and non-monotonic trends applies to Figure 5A showing interaction counts. However, reviewer 3 noted this as a strength, stating the authors 'uncover an indirect effect, where high salt concentrations strengthen pi-type interactions by reducing water availability,' and reviewer 2 acknowledged in their revised comments that 'the new results and analyses provided by the authors represent a substantial advance.' The mechanism is conceptually accepted but the statistical significance of the water density changes is questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C121",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C149",
+      "C150"
+    ],
+    "result": "Based on the mechanistic understanding, the authors proposed four distinct classes of salt dependence for IDP phase separation (screening, reentrant, high net charge, low net charge) that can be predicted from amino acid composition based on three determinants: total charged residue content, net charge, and aromatic residue content.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly praised this contribution, stating the authors 'identify four distinct classes of salt dependence in the phase separation of intrinsically disordered proteins (IDPs), which can be predicted based on their amino acid composition.' The editor's summary also highlighted that the authors 'provided explanations for four distinct classes of salt dependence, and proposed a model for predicting protein properties from amino acid composition.' Reviewer 2, after revision, stated 'the manuscript is now significantly improved' and 'the new results and analyses provided by the authors represent a substantial advance in our understanding of the role of electrostatics in the assembly of biomolecular condensates.' The classification scheme and its predictive value are accepted as valid contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C138"
+    ],
+    "result": "The amino acid composition-based predictor shows good correlation with observed salt dependence classes: 71% of proteins in classes requiring high aromatic content have >8% aromatics (vs. 20% in screening class); 70% in high net charge class have >6% net charge (vs. 0% in low net charge classes); 73% in classes requiring high charge content have >20% charged residues (vs. 17% in other classes).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These validation statistics for the predictor are presented in Table 1 and were not specifically challenged by reviewers. Reviewer 3 noted the study's strength in providing 'comprehensive analysis' and the 'clear presentation' of findings. The correlation analysis supporting the classification scheme appears to be accepted as part of the overall contribution, particularly given reviewer 2's statement after revision that the work represents 'a substantial advance.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C22",
+      "C99",
+      "C103",
+      "C104",
+      "C105",
+      "C107"
+    ],
+    "result": "The study's main conclusion is that A1-LCD phase separation, unlike typical IDPs, is promoted by salt >100 mM NaCl through both direct effects (charge neutralization and chain bridging) and indirect effects (strengthening \u03c0-interactions). Phase separation is prevented at low salt by net charge repulsion, enabled at intermediate salt through charge neutralization and bridging, and further enhanced at high salt through strengthened \u03c0-interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor's summary states this is 'a potentially important study' where 'the authors have identified both direct and indirect mechanisms of salt modulation.' Reviewer 3 explicitly noted 'the study challenges the prevailing view that salt generally suppresses IDP phase separation, highlighting A1-LCD's unique behavior' as a key strength and called it 'a significant contribution to the field of IDP phase separation.' Reviewer 2, after revision, confirmed 'the authors have adequately addressed my previous concerns' and the work 'represent[s] a substantial advance.' While concerns about simulation limitations exist, the overall mechanistic picture is accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C28",
+      "C109",
+      "C141",
+      "C142",
+      "C143",
+      "C147",
+      "C148"
+    ],
+    "result": "The authors argue that all-atom MD simulations uniquely capture physical effects missed by coarse-grained approaches, such as strengthening \u03c0-interactions through water withdrawal, an effect now confirmed by Raman spectroscopy. However, they acknowledge limitations: their 8-chain system cannot properly represent phase equilibrium between dilute and dense phases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 initially requested discussion of 'strengths and limitations of the authors' approach vis-\u00e0-vis other theoretical approaches' and 'how the smallness of the authors' simulation system may affect the nature of the \"phase transition.\"' After revision, reviewer 2 stated 'the authors have adequately addressed my previous concerns and suggestions. The manuscript is now significantly improved.' Reviewer 3 noted as a strength that 'the authors utilize all-atom MD simulations, a powerful computational tool, to investigate the molecular details of salt-protein interactions.' The value of atomistic detail is accepted, though limitations are acknowledged.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,296 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C17",
+      "C18",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors establish the biological context for their model by reviewing established findings about hippocampal place cells, replay, preplay, and remapping. They note that replay occurs after 1-2 laps in novel environments and that preplay has been observed in both rodents and humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C24) are well-supported by appropriate citations to established literature. The authors accurately represent prior experimental findings about hippocampal function, place cells, replay, and preplay. These background claims provide appropriate motivation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C19",
+      "C25"
+    ],
+    "result": "The authors identify a key limitation of existing replay models: they rely on environment-specific recurrent connectivity that would be disrupted by random remapping in novel environments, yet replay occurs immediately in novel environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C19 and C25 present a logical argument about limitations of existing models. The inference in C19 is sound: if place fields remap randomly (C17-C18), then models requiring place-field-dependent connectivity would fail in novel environments. This motivates the need for an alternative model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The authors propose that clustered connectivity is a common brain motif that arises from Hebbian and homeostatic plasticity, is observed in hippocampus and cortex, and may underlie functional assemblies and support rapid representations in novel environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C36 are well-supported by citations to experimental observations of clustered connectivity across multiple brain regions and species. The speculation in C32 and C34 is appropriately qualified and supported by the cited evidence. This provides biological plausibility for the model architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C78",
+      "C79"
+    ],
+    "result": "The model generates realistic place fields from minimal landmark-based inputs and produces spontaneous sequences that can be decoded as spatial trajectories without pre-configured environment-specific maps. Place fields arise between boundaries from random internal network structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C37-C42, C45, C78-C79 are supported by simulation data in Figures 2-4. The model successfully produces place fields (Figure 3) and preplay (Figure 4) without environment-specific wiring. The robustness to input variations (C41, Figure 4-supplement 4) strengthens this result. However, the model is compared to CA1 data while modeling CA3, which the authors acknowledge (C83-C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Both experimental hippocampal data and simulated data show significant preplay, with distributions of absolute weighted correlations significantly greater than shuffled controls. The result is robust to cell subsampling and methodological variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 and C80-C82 are supported by appropriate statistical tests (KS-tests with p<0.001) comparing actual to shuffled events in both experimental (Figure 4a-b) and simulated (Figure 4c-d) data. The subsampling analysis (C48, Figure 4-supplement 2) demonstrates robustness. The replication of prior findings (C80) with different methodology (C82) strengthens confidence in the phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C43",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C85"
+    ],
+    "result": "Preplay quality depends critically on network parameters controlling cluster overlap, with optimal preplay occurring at moderate cluster overlap (cluster participation slightly above 1). The model is robust to variations in spatial inputs but impaired with binary cues or no cluster bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C43, C49-C53, and C85 are well-supported by systematic parameter sweeps (Figures 4e-f, 5). The finding that preplay requires moderate cluster overlap is demonstrated across multiple metrics (p-value, median shift, fraction significant, entropy). The robustness tests (C51-C52, Figure 4-supplement 4) appropriately identify boundary conditions where the model fails.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C86"
+    ],
+    "result": "High-quality preplay arises through sequential activation of individual clusters. Moderate cluster overlap balances the need for cluster isolation (to enable coherent cluster activation) and cluster overlap (to enable propagation between clusters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 and C86 present a mechanistic explanation supported by cluster activation analysis (Figure 5). The data show that optimal preplay occurs when events involve sequential activation of multiple clusters, each active for sufficient duration (~10ms). The hypothesis (C54-C55) is tested and confirmed by the analysis (C58-C59). This provides mechanistic insight into why moderate overlap is optimal.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cluster identity is sufficient to produce preplay. Shuffling cell identities across the network abolishes preplay, but shuffling within clusters preserves it, and shuffling within single clusters produces statistics indistinguishable from unshuffled data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by appropriate shuffling controls (Figure 6). The across-network shuffle (C62) abolishes preplay (p-value distribution uniform, median shift centered at zero), while within-cluster shuffles (C63-C64) preserve significance. The statistical tests (t-tests, chi-square) are appropriate. This demonstrates that cluster membership, not individual cell identity, drives preplay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "After accounting for decoded trajectory direction, there is a significant correlation between cells' mean relative spike rank within events and their place field location on the track, for both within-network and within-cluster rankings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by the spike rank analysis (Figure 7). While there's no correlation without accounting for direction (C65), accounting for trajectory direction reveals significant correlations (C66) that exceed all three shuffling controls. This suggests individual cell properties contribute to preplay beyond cluster identity alone, though the effect appears modest.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C87",
+      "C100"
+    ],
+    "result": "Networks with high small-world index (high clustering yet short path lengths) show optimal preplay dynamics. This relationship holds across different global connection probabilities, indicating that small-world properties, not just connectivity strength, drive preplay quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C87, and C100 are supported by systematic analysis across three different connection probabilities (Figure 8). Spearman correlations between SWI and preplay quality are significant (p<0.001) for all three conditions, both across parameter sets and individual networks. This demonstrates that the relationship is robust to changes in overall connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C88"
+    ],
+    "result": "The model produces distinct place field maps for different environments (low cross-environment correlations) while maintaining high within-environment correlations. The model shows no significant de novo place-field directionality, consistent with experimental observations in novel environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 and C88 are supported by remapping analysis (Figure 9a-b). Within-environment correlations are high (~0.91) while across-environment correlations are low (~0.08-0.10). The lack of directionality (C73) is consistent with cited experimental data (C74). This demonstrates the model can represent multiple distinct environments with the same network structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Population burst events generated without location-specific inputs decode significantly to linear trajectories in any environment. The same set of PBEs shows similar preplay quality when decoded with place fields from different environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by multi-environment decoding analysis (Figure 9d-e). The distributions of absolute weighted correlations are consistent across all four trajectories and all significantly exceed shuffles. The p-value matrices (Figure 9e) are similar across environments. This demonstrates that preplay is environment-general, arising from intrinsic network dynamics rather than environment-specific structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C99",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors conclude that preplay and immediate replay could be natural consequences of preexisting randomly clustered hippocampal connectivity, providing a general framework for understanding pre-configured hippocampal dynamics that would influence place field expression in novel environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C99, C103-C106 represent the main conclusions of the study. These are well-supported by the collective simulation results demonstrating that randomly clustered networks can produce both realistic place fields and preplay. The inference that Hebbian plasticity on independent maps would produce such connectivity (C104) is reasonable, though not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Small-world properties are widespread across brain networks at multiple scales and species, from C. elegans connectome to human brain networks, providing biological plausibility for the model's architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C98 are well-supported by extensive citations to experimental observations across multiple species and scales. This establishes that the small-world architecture used in the model has broad biological relevance, strengthening the model's plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The authors justify comparing their CA3 model to CA1 data by noting that place field properties are qualitatively similar between CA1 and CA3, and that these regions reactivate in a coordinated manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 acknowledge a limitation but may understate it. While the cited papers support qualitative similarity, there are known quantitative differences between CA1 and CA3 place fields. The model explicitly represents CA3 recurrent connectivity, so comparison to CA1 data is not ideal. A more direct test would use CA3 recordings, though the authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101",
+      "C102"
+    ],
+    "result": "The authors speculate that synaptic plasticity in CA3 may primarily reinforce and stabilize intrinsic dynamics established through development and past experience, rather than creating spatial maps de novo, with experience selectively reinforcing relevant dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C102 are explicitly speculative and not tested in the current work. While consistent with the model results, these claims about the role of plasticity require experimental validation or additional modeling incorporating plasticity mechanisms. The speculation is reasonable but remains untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The authors acknowledge that in vivo CA3 microcircuitry is complex, including nonlinear dendritic computations and diverse inhibitory cell types that are crucial for some hippocampal functions but not included in their minimal model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 appropriately acknowledge model limitations. The authors correctly note that their simplified model omits features important for phenomena like ripple oscillations but is sufficient for capturing place field and preplay statistics. This is an honest assessment of model scope.",
+    "result_type": "MINOR"
+  }
+]

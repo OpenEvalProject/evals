@@ -1,0 +1,144 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C35",
+      "C36"
+    ],
+    "result": "In an optimally controlled inhibition-stabilized network model of M1, delay-period inputs consistently arise well before movement begins. Network activity changes before the go cue, driven by early inputs that cancel in the readout to keep the hand still. The preparation index plateaus at ~1.3 for delays >300 ms, and preparation changes the optimal control strategy, improving task performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this core finding. Reviewer 1 states the authors 'report that when there is a cost on the inputs, the optimal inputs should start before the desired network output.' Reviewer 2 notes 'They show that networks optimised under reasonable constraints...will use the input to seed the state of the network before movement.' Reviewer 4 confirms 'the authors show that, when there are constraints on inputs, preparation becomes a natural strategy.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "With varying delay periods, the optimal controller makes little use of preparation time beyond ~300 ms before the go cue. External inputs continue to arise just a couple hundred milliseconds before movement initiation regardless of longer preparation times, and single neuron firing rates and PCA trajectories remain remarkably similar across different delay periods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings without challenge. Reviewer 4 notes the manuscript 'has a useful section in the Discussion on the topic of preparation when there is no external delay' and that 'preparation can (1) be very brief, but (2) is always present,' which aligns with these timing results. No reviewer questions the delay period analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Preparation can be largely explained by two control-theoretic quantities: observability of the readout's nullspace (\u03b1) and limited controllability of the readout (\u03b2). For a network to benefit from preparation, there must exist output-null activity patterns that seed output-potent dynamics, the nullspace must be sufficiently observable, and there must be sizeable cost to input-driven movement without preparation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly affirms this theoretical contribution: 'they identify a strong connection between the structure of the network and the amount of preparation that is optimal for control - namely, that preparation has the most value when nullspaces are highly observable relative to the readout dimension and when the controllability of readout dimensions is low.' No reviewer challenges this mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "In simplified 2-unit networks with feedforward (nonnormal) and oscillatory motifs, optimal control generally leads to preparatory dynamics. In the feedforward motif, preparation depends critically on readout orientation\u2014reading out the sink mode yields lower cost and more preparation than reading out the source mode. In the oscillatory network, the controller consistently moves activity along the output-null axis during preparation to engage rotational flow after the go cue.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 affirms the authors 'present compelling evidence by combining mathematically tractable analyses in linear networks and numerical simulation in nonlinear networks.' Reviewer 3 praises 'the mechanisms by which it happens by dissecting in detail low-dimensional networks.' No reviewer questions these simplified network analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Optimal control of compound reaches leads to input-driven preparatory activity in a dedicated subspace prior to each movement, consistent with experimental findings. For double reaches with pauses, the preparatory subspace is occupied twice; for compound reaches without pauses, occupancy rises before the first movement, decays slightly, then peaks again before the second reach. This arises from the requirement that the hand stop briefly at the first target, necessitating activity re-growth via input reinjection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 notes the model 'predictions are consistent with the observation in monkey motor cortex' regarding sequential preparation. However, Reviewer 3 identifies significant discrepancies: 'the data reproduced from Zimnik and Churchland show preparatory inputs that have a very asymmetric shape that really plummets before the start of the next movement, whereas the derived inputs have larger amplitude during the movement period.' Reviewer 3 also notes differences in trigger signals and correlation patterns between conditions, suggesting only partial consistency with data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "Most published network models of delayed reaches can perform the task just as well without preparatory inputs, with external inputs confined to the movement epoch, as demonstrated in Figure 1B.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 4 explicitly confirms this motivation: 'Prior studies have simply assumed, to emulate empirical findings, that preparatory inputs precede execution. They never asked why.' This validates the authors' demonstration that previous models don't require preparation, establishing the novelty of the current work's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors modeled motor cortex as an input-driven dynamical system using an inhibition-stabilized network coupled to a model arm, and used the iLQR algorithm to find optimal spatiotemporal input patterns that minimize a cost functional combining target accuracy and input effort.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 affirms the approach 'provides valuable theoretical insight' and that 'treating input to motor cortex as a signal that is optimised directly...is able to sidestep many...problematic questions.' However, Reviewer 3 raises significant methodological concerns: 'iLQR...has a limited ability to leverage potential advantages of nonlinearities' and 'is not a biologically plausible learning rule,' noting this 'can confound the question of whether [differences] come from a difference of assumed objective or a difference of optimization procedure.' Reviewer 4 acknowledges the 'simple magnitude constraint' is 'a mathematically tractable stand-in for a range of plausible...constraints.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "The decrease in target cost with preparation was due to the model producing faster reaches, while the decrease in effort cost arose from smaller control inputs being necessary when preparation was allowed.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 4 summarizes this mechanism: 'if small inputs before movement can reduce the size of the inputs needed during movement, preparation is a good strategy. This occurs if (and only if) the network has strong dynamics.' No reviewer challenges this explanation of the cost reduction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Preparatory neural activity patterns arise from optimal control of reaching movements at the level of motor cortical circuits, providing a possible explanation for observed experimental findings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 calls this 'an important study' that 'provides a new perspective on why preparatory activity occurs.' Reviewer 2 states it 'provides valuable theoretical insight into the role of preparation.' However, Reviewer 3 extensively discusses limitations, noting the framework 'cannot easily account for some other varied types of objectives' such as 'reusability of parts of the circuit, sparse use of additional neurons...and ease of planning.' Reviewer 3 also questions whether the model can explain preparation in 'more sensory-feedback-driven' movements and notes that 'some M1 properties that lead to strong preparation...may not be favorable for control in general.'",
+    "result_type": "MAJOR"
+  }
+]

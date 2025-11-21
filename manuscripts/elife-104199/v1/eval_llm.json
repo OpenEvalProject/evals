@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C123",
+      "C124"
+    ],
+    "result": "Chlamydia trachomatis serovar L2 (Ct) is an obligate intracellular bacterium that lacks FtsZ and divides by polarized budding. Ct is a member of the Planctomycetes/Verrucomicrobia/Chlamydia superphylum, and members of the Chlamydia and Planctomycetes phyla do not encode FtsZ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C18, C123, and C124 establish the biological context of Ct as an FtsZ-less bacterium that divides by polarized budding. These claims are well-supported by multiple citations to established literature (Stephens 1998, Ouellette et al. 2020, Abdelrahman et al. 2016, Rivas-Mar\u00edn et al. 2016) and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C42",
+      "C43",
+      "C50"
+    ],
+    "result": "FtsK forms discrete foci at the septum and at the base of the progenitor mother cell in Ct. FtsK foci at the base of the mother cell mark the location of nascent divisome complexes that form at the site where a daughter cell will emerge in the next round of division. Approximately 20% of dividing cells have a secondary bud, and FtsK accumulates at the base of these secondary buds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C37-C40, C42-C43, and C50 describe the novel spatiotemporal localization pattern of FtsK in Ct. These claims are well-supported by imaging data (Figures 1B, 1C, 1F, 1G) showing FtsK foci at the septum and base, and quantification data (Figure 2C) validating the FtsK-mCherry fusion accurately reflects endogenous FtsK distribution. The interpretation that base-localized FtsK marks nascent divisomes is supported by the observation of FtsK at secondary bud sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C51",
+      "C52",
+      "C54",
+      "C55"
+    ],
+    "result": "The Ct divisome has a hybrid composition containing elements of both the divisome (FtsK, PBP3) and elongasome (PBP2, MreB, MreC) from other bacteria. FtsK is recruited to nascent divisomes prior to PBP2, PBP3, MreB, and MreC. MreB is one of the last proteins recruited to nascent divisomes at the base of dividing cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C44-C47, C49, C51-C52, C54-C55 describe the ordered assembly of the hybrid divisome. These claims are supported by localization data (Figures 2A-B) showing similar localization patterns for all divisome proteins, quantification data (Figure 2C) demonstrating FtsK has a higher percentage at the base compared to other proteins, and imaging data (Figure 2D) showing FtsK is present at both septum and base while other proteins are only at the septum in a subset of cells. The conclusion that MreB is recruited late is supported by quantification showing statistically different localization profiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C74",
+      "C76",
+      "C100",
+      "C101",
+      "C122"
+    ],
+    "result": "FtsK is critical for divisome assembly in Ct. CRISPRi-mediated knockdown of ftsK results in ~10-fold reduction in ftsK transcript levels, blocks cell division (with ~90% of cells remaining coccoid), prevents divisome assembly (with ~80% reduction in PBP2 and PBP3 foci), and almost entirely prevents accumulation of all PG-containing intermediates (~90% diffuse/undetectable).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C8, C62-C71, C74, C76, C100-C101, C122 demonstrate FtsK is critical for divisome assembly and function. These claims are well-supported by RT-qPCR data (Figure 4A) showing specific knockdown of ftsK, imaging data (Figures 4C-E) showing aberrant morphology and loss of FtsK foci, quantification data (Figures 5A, 5E) showing most cells remain coccoid and lack PBP2/PBP3 foci, and PG labeling data (Figures 7E-F) showing loss of PG intermediates. The conclusion that FtsK is upstream of PBP2 and PBP3 is logically supported by the knockdown data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C75",
+      "C77",
+      "C78"
+    ],
+    "result": "PBP2 is necessary for foci formation by PBP3. Following pbp2 knockdown, FtsK retains its ability to form foci in coccoid cells, but foci of PBP3 are almost entirely absent. This places PBP2 upstream of and necessary for the addition of PBP3 to the Ct divisome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C75, C77-C78 establish the hierarchical relationship between PBP2 and PBP3 in divisome assembly. These claims are supported by imaging data (Figures 5C-D) showing FtsK foci persist but PBP3 foci are lost after pbp2 knockdown, and quantification data (Figure 5F) confirming this observation. The conclusion is consistent with prior inhibitor studies (Cox et al. 2020, C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "MreB does not function like FtsZ as a scaffold for the assembly of the Ct divisome. A22 treatment (which inhibits MreB filament formation) blocks chlamydial budding and causes most cells to become coccoid, but does not affect the ability of FtsK, PBP2, or PBP3 to form foci in coccoid cells. A22 had a statistically significant effect on MreC foci formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C56-C61 refute the hypothesis that MreB serves as a scaffold for divisome assembly. These claims are supported by quantification data (Figure 3A) showing A22 blocks budding, imaging data (Figure 3B-C) showing MreB adopts diffuse localization after A22 treatment, and quantification data (Figures 3D-E) showing FtsK, PBP2, and PBP3 can still form foci without MreB filaments. The statistical analysis supports the conclusion that MreB is not required for all divisome components to assemble.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C95",
+      "C96",
+      "C97",
+      "C120"
+    ],
+    "result": "MreB is one of the last proteins recruited to the chlamydial divisome and is necessary for the formation of septal peptidoglycan rings. A22 treatment prevents the conversion of PG foci into rings, with PG being diffuse/undetectable in the majority of A22-treated cells, and in cells where PG was still detected, it could not convert into ring structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C95-C97, C120 establish MreB's role in PG ring formation. These claims are supported by quantification data (Figure 2C) showing MreB has a different localization profile than other divisome proteins (recruited later), and PG labeling data (Figures 7E-F) showing A22 treatment prevents PG ring formation. The conclusion that MreB is necessary for PG ring formation is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C98",
+      "C99"
+    ],
+    "result": "The catalytic activity of PBP2 is necessary for PBP2 to efficiently associate with or maintain its association with polarized divisome complexes. Mecillinam (an inhibitor of PBP2 transpeptidase activity) blocks chlamydial division and results in ~50% reduction in polarized foci of both PBP2 and PBP3. PG formed discrete foci or bars in 60% of mecillinam-treated cells, but these PG intermediates could not convert into rings. FtsK foci formation is unaffected when PBP2 foci are reduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C85, C98-C99 demonstrate that PBP2 catalytic activity is required for its stable association with the divisome and for PBP3 recruitment. These claims are supported by quantification data (Figure 6A) showing mecillinam blocks division, imaging and quantification data (Figures 6B-E) showing reduced PBP2 and PBP3 foci but maintained FtsK foci, and PG labeling data (Figures 7E-F) showing PG intermediates cannot convert to rings. The interpretation is logically sound and consistent with the knockdown data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "PG foci, bars, and rings can be detected in dividing Ct using EDA-DA labeling. In some instances, PG foci were detected at both the septum and base, while in other instances PG organization differed between these locations. Multiple foci of PBP3 and FtsK were associated with septal PG rings that were at an angle relative to the MOMP-stained septum. Foci, bars, or rings were detected in ~80% of untreated coccoid cells, with each exhibiting a polarized distribution. PG rings can arise prior to morphological changes during polarized division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C94 describe PG organization during Ct division. These claims are supported by imaging data (Figures 7A-D) showing various PG intermediates (foci, bars, rings) at the septum and base, 3D projections (Figure 7C) showing multiple protein foci associated with angled PG rings, and quantification data (Figures 7D-E) showing ~80% of coccoid cells contain PG intermediates. The conclusion that PG rings can form before morphological changes is a reasonable inference from observing rings in coccoid cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C48"
+    ],
+    "result": "Overexpression of the FtsK-mCherry, mCherry-PBP2, mCherry-PBP3, and mCherry-MreC fusions had no effect on chlamydial developmental cycle progression and the production of infectious EBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41 and C48 validate that the fusion proteins used for localization studies do not perturb normal Ct biology. These claims are supported by IFU assay data (Figure 1\u2014figure supplement 1C, Figure 2\u2014figure supplement 1B) showing no statistically significant effect of fusion protein expression on EB production. This is important for validating the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Chlamydial budding is dependent upon a hybrid divisome complex, and FtsK is required for the assembly of this hybrid divisome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 represent the main conclusions of the study. These claims are supported by the collective evidence from localization studies (Figures 1-2) showing hybrid divisome composition, knockdown studies (Figures 4-5) demonstrating FtsK is required for divisome assembly, and PG labeling studies (Figure 7) showing FtsK is required for PG synthesis. The conclusions are well-supported by the experimental data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C121"
+    ],
+    "result": "Background information on bacterial cell division, Chlamydia biology, divisome and elongasome composition, and FtsK structure and function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C36, C106-C112, C121 provide background context from the literature. These claims are supported by numerous citations to established literature and represent accepted knowledge in the field. They establish the scientific context for the study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The localization profiles of chlamydial divisome proteins likely reflect assembly at the septum and base, and disassembly when proteins are only at the base. There was no correlation between the stage of bud formation and appearance of nascent divisomes at the base. MreB and MreC can reorganize into rings in dividing cells, and these rings are at an angle relative to the MOMP-stained septum. FtsK never forms rings. The angled orientation appears to be a conserved feature and may arise because divisome proteins are often positioned slightly above or below the MOMP-stained septum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C53, C113-C119 represent interpretations and speculations about the observed localization patterns. While C114-C117 are supported by imaging data showing MreC rings (Figure 2\u2014figure supplement 5A-B) and lack of FtsK rings, claims C53, C113, C118-C119 are more speculative. The interpretation that localization profiles reflect assembly/disassembly (C53) is reasonable but not directly tested. The lack of correlation between bud stage and nascent divisome appearance (C113) is stated but data are not shown. The explanation for angled orientation (C119) is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "This study is the first to document the ordered assembly of divisome proteins in Ct and to investigate the roles of divisome proteins in regulating PG synthesis/organization in this obligate intracellular bacterial pathogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 assert the novelty of the study. These claims are supported by the lack of prior studies documenting ordered divisome assembly in Ct. The study does provide the first comprehensive analysis of divisome protein localization and assembly order in Ct, as well as the first investigation of how specific divisome proteins regulate PG synthesis/organization using genetic approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Planctospirus limnophila is a member of the Planctomycetes that divides by polarized budding, and FtsK is the only protein of the chlamydial divisome characterized in this study that is essential for the growth of this free-living organism. This suggests that multiple mechanisms of FtsZ-independent polarized budding have evolved in members of the Planctomycetes/Verrucomicrobia/Chlamydia superphylum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 place the findings in a broader evolutionary context. Claim C125-C126 are supported by citation to Rivas-Marin et al. 2023, which showed FtsK is essential in P. limnophila. Claim C127 is a reasonable inference from the observation that different proteins are essential in different organisms within the superphylum, though it is somewhat speculative about the evolutionary implications.",
+    "result_type": "MINOR"
+  }
+]

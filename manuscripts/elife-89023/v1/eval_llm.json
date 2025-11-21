@@ -1,0 +1,304 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C59",
+      "C60",
+      "C97",
+      "C98"
+    ],
+    "result": "RNA-seq analysis of ap \u03b1\u2032/\u03b2\u2032 neurons 1 hour after training in fed flies identified 59 differentially expressed genes (DEGs), with 56 downregulated and 3 upregulated. These DEGs are enriched in RNA processing functions, including ribosome biosynthesis, transcription, and components of the 90S preribosome, Cajal body, and DNA-directed RNA polymerase complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (C4, C23-C26) with appropriate controls (trained-starved, untrained-fed) and the GO analysis (C25, C97, C98) provide converging evidence for differential expression of RNA processing genes. The experimental design includes biological replicates (4 samples per condition) and appropriate statistical cutoffs (FDR <0.1, fold change >1.5). The enrichment analysis is consistent across multiple approaches (PathwayPCA, GO analysis).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C27",
+      "C35",
+      "C37",
+      "C38",
+      "C102"
+    ],
+    "result": "Polr1F, a component of RNA polymerase I complex, is downregulated after training in fed flies. Adult-specific knockdown of Polr1F in ap \u03b1\u2032/\u03b2\u2032 neurons promotes both acute and chronic sleep, with immediate effects observed upon induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent experimental approaches support this result: constitutive knockdown (C27), inducible pan-neuronal knockdown (C35, C37), and temperature-shift experiments (C102) all show consistent sleep-promoting effects. The RNA-seq data confirms downregulation (C5). Controls include both genetic controls (Gal4 and UAS alone) and temporal controls (RU+/RU-). Sample sizes are adequate (N=23-48).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C52",
+      "C53"
+    ],
+    "result": "Knockdown of Polr1F increases pre-ribosomal RNA (pre-rRNA) levels, as measured by qPCR in flies with inducible pan-neuronal Polr1F knockdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR data (C52) with appropriate controls (RU+ vs RU-) demonstrates increased pre-rRNA levels upon Polr1F knockdown. This is consistent with the known inhibitory function of Polr1F homologs in yeast (C53). The result provides a mechanistic link between Polr1F and ribosomal RNA transcription.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C54",
+      "C55"
+    ],
+    "result": "Knockdown of Polr1F increases overall translation, as measured by puromycin incorporation assay in dissected fly brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The puromycin assay (C54, C55) with appropriate controls (RU+ vs RU-) shows increased translation upon Polr1F knockdown. The method is established for measuring nascent protein synthesis. Sample sizes are adequate (N=8-11 per group). This result connects Polr1F downregulation to increased translation capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C40",
+      "C41"
+    ],
+    "result": "Constitutive knockdown of Polr1F in ap \u03b1\u2032/\u03b2\u2032 neurons does not affect sleep-dependent or sleep-independent memory consolidation, nor does it affect post-training sleep increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Memory tests under both fed and starved conditions (C40) and post-training sleep monitoring (C41) show no significant effects of Polr1F knockdown. This is consistent with the downregulation of Polr1F during memory consolidation. Appropriate genetic controls were used (N\u22656 biological replicates for memory, N\u226532 for sleep).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C9",
+      "C30",
+      "C92"
+    ],
+    "result": "Regnase-1, an mRNA decay protein, is downregulated after training in fed flies. Constitutive knockdown of Regnase-1 in ap \u03b1\u2032/\u03b2\u2032 neurons reduces both daytime and nighttime sleep and prevents the post-training sleep increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "RNA-seq data confirms downregulation (C5), and constitutive knockdown experiments (C9, C30, C92) show consistent sleep reduction phenotypes. Multiple sleep parameters were measured (total sleep, sleep episodes). Sample sizes are adequate (N=23-32). The result establishes a role for Regnase-1 in sleep regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C36",
+      "C39",
+      "C103"
+    ],
+    "result": "Adult-specific knockdown of Regnase-1 has limited or no effect on sleep, suggesting that Regnase-1's effects on sleep are developmental in nature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple adult-specific knockdown approaches (inducible nSyb-GS system C36, C39; temperature-shift experiments C103) consistently show no acute sleep effects, contrasting with constitutive knockdown. This suggests developmental timing is critical for Regnase-1's sleep function. However, potential leakiness of the nSyb-GS system is acknowledged as a confounding factor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C90",
+      "C106",
+      "C107"
+    ],
+    "result": "Constitutive knockdown of Regnase-1 in ap \u03b1\u2032/\u03b2\u2032 neurons impairs short-term memory, long-term memory (both sleep-dependent and sleep-independent), and eliminates the post-training sleep increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple memory tests (short-term C45, C107; long-term fed and starved C42, C90) and post-training sleep measurements (C43, C106) consistently show impairments with Regnase-1 knockdown. Appropriate genetic controls were used (N\u22656 biological replicates). The broad memory deficits suggest Regnase-1 has a general role in memory beyond sleep-dependent consolidation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C99",
+      "C100",
+      "C101",
+      "C104"
+    ],
+    "result": "Knockdown of Polr1F and Regnase-1 in ap \u03b1\u2032/\u03b2\u2032 neurons affects sleep architecture: Polr1F knockdown increases average sleep episode length and decreases episode number, while Regnase-1 knockdown decreases average sleep episode length. Neither affects total activity or peak activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Detailed sleep architecture analysis (C32-C34, C99-C101, C104) shows specific effects on sleep consolidation rather than general activity. Statistical tests are appropriate (Kruskal-Wallis, one-way ANOVA). The dissociation between sleep and activity effects strengthens the specificity of the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Feeding of the rRNA inhibitor CX-5461 does not produce rapid sleep phenotypes in fed or starved flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the negative result is reported (C57), the authors acknowledge it cannot be considered conclusive. Potential issues include drug delivery, bioavailability, specificity, or timing. The lack of positive control or dose-response analysis limits interpretation. This negative result does not rule out a role for rRNA synthesis in sleep.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Regnase-1 overexpression has no effect on sleep, but knockdown in m \u03b1\u2032/\u03b2\u2032 neurons also reduces sleep, suggesting Regnase-1 has a broader role beyond sleep-dependent memory in ap \u03b1\u2032/\u03b2\u2032 neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The overexpression data is shown (C46), but the m \u03b1\u2032/\u03b2\u2032 knockdown data is not shown (C47), limiting evaluation. The inference about broader role (C48) is reasonable but speculative without the supporting data. Additional experiments in other neuron types would be needed to fully support this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C58"
+    ],
+    "result": "Prior work has established that Drosophila can switch between sleep-dependent and sleep-independent memory consolidation based on food availability, with ap \u03b1\u2032/\u03b2\u2032 neurons mediating sleep-dependent memory and post-training sleep in fed flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize established prior work (primarily Chouhan et al., 2021) that provides the foundation for the current study. The citations are appropriate and the background is accurately represented. This contextualizes the current investigation of molecular mechanisms in ap \u03b1\u2032/\u03b2\u2032 neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C49",
+      "C70",
+      "C71"
+    ],
+    "result": "Polr1F is a component of RNA polymerase I complex with an inhibitory role in ribosomal DNA transcription, as demonstrated in yeast and mammalian systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge about Polr1F function from prior literature (Beckou\u00ebt et al., 2011; Marygold et al., 2020; Rothblum et al., 2014). The inference about inhibitory role (C71) is supported by both the current data and prior studies. This provides mechanistic context for the Drosophila findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C65",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Regnase-1 is an RNA-binding protein that localizes to ribosomes, binds translationally active mRNAs, and promotes mRNA decay. It has been extensively studied in immune responses and has been reported to function in the nervous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge about Regnase-1 function from prior literature (Mino et al., 2015; Mao et al., 2017; Wei et al., 2019; Uehata et al., 2013; Tanaka et al., 2019; Liu et al., 2016). This provides mechanistic context for understanding its potential role in sleep and memory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C67",
+      "C69",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Protein synthesis, including ribosomal RNA synthesis, is well-established as required for long-term memory consolidation across organisms. Sleep is thought to promote translation, though the causal relationships remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately represent established knowledge from prior literature (Alberini and Kandel, 2015; Allen et al., 2018; Seibt and Frank, 2012; Zimmerman et al., 2006; Jarome and Helmstetter, 2014). The authors appropriately acknowledge uncertainties about causal relationships between sleep, translation, and memory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C72",
+      "C89",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors propose that Polr1F downregulation after training increases ribosomal RNA synthesis to support translation and memory, and that RNA processing changes may induce sleep which promotes translation necessary for memory consolidation. The role of Regnase-1 downregulation and its effects on development remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative interpretations (C56, C72, C89, C93, C94, C95) that extend beyond the direct experimental evidence. While plausible based on the data, they require additional experiments to test causality and mechanisms. The authors appropriately present these as hypotheses rather than established conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C66"
+    ],
+    "result": "Among the 59 DEGs identified, several encode proteins involved in specific RNA processing functions: Polr1F and CG11920 affect ribosomal RNA processing, CG5654 is part of the 90S pre-ribosome, WDR79 encodes a Cajal body RNA binding protein, Nup133 is a nuclear pore component, and several genes are involved in RNA polymerase II transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These functional annotations (C61-C64, C66) are supported by the RNA-seq data and appropriate citations to prior literature (Herold et al., 2009; Di Giorgio et al., 2017; Rogg et al., 2022). This provides context for the broader set of DEGs beyond the two genes studied in detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68",
+      "C96"
+    ],
+    "result": "The findings demonstrate that alterations in RNA processing genes impact sleep and memory, providing a foundation for future mechanistic exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion (C68, C96) is supported by the experimental data showing sleep phenotypes for Polr1F and Regnase-1 knockdown. The statement appropriately acknowledges that this is a foundation for future work rather than a complete mechanistic understanding.",
+    "result_type": "MAJOR"
+  }
+]

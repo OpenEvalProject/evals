@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C27"
+    ],
+    "result": "The authors conducted an in silico screening of orphan transporters expressed in the small intestine, followed by functional validation in HEK293 cells, which identified SLC35G1 as a novel citrate transporter. SLC35G1 is a member of the SLC35 family whose function had not been previously characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screening methodology is clearly described (C20-C22) and the identification of SLC35G1 as a citrate transporter is supported by experimental data (C25). The approach is logical and the knowledge gap regarding SLC35G subfamily functions (C27) provides appropriate context. However, details about the number of candidates screened and selection criteria are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C74",
+      "C75"
+    ],
+    "result": "SLC35G1-mediated citrate uptake in MDCKII cells exhibits saturation kinetics with a Km of 519\u00b186 \u03bcM and Vmax of 1.11\u00b10.16 nmol/min/mg protein, with linear uptake observed during the first 10 minutes under chloride-free conditions at pH 5.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kinetic parameters are derived from appropriate concentration-dependent uptake experiments (C33, Figure 1C) with reported error estimates (C74-C75). The time-course linearity (C31) validates the initial rate measurements. However, the use of acidic pH 5.5 (C32) to enhance uptake signal may not reflect physiological conditions and could affect the interpretation of kinetic parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C76",
+      "C9"
+    ],
+    "result": "SLC35G1-mediated citrate transport is extensively inhibited by extracellular chloride with an IC50 of 6.7\u00b11.4 mM. Given the physiological chloride gradient (5 mM cytosolic vs 120 mM extracellular), the authors propose SLC35G1 functions as a citrate exporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chloride inhibition is well-documented with dose-response data (C34-C35, C76, Figures 1D-E). The physiological chloride concentrations are appropriately cited (C36). The inference that SLC35G1 is an exporter (C37) is logical based on the chloride gradient, though direct efflux measurements would strengthen this conclusion. The IC50 of 6.7 mM is within the physiological range, supporting the regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "SLC35G1-mediated citrate transport is independent of membrane potential and does not utilize a proton gradient as a driving force, suggesting it operates as a facilitative transporter, though a citrate/Cl- exchange mechanism cannot be excluded. The transporter shows pH-dependent activity and may preferentially transport dianionic citrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The membrane potential independence is supported by K-gluconate substitution experiments (C38-C39), and the lack of proton coupling is demonstrated with nigericin (C46-C47). However, the conclusions about transport mechanism (C48-C49) are explicitly speculative. The pH dependence (C45) and preference for dianionic citrate (C51) are inferred but not directly tested. Additional experiments such as equilibrium exchange studies or electrophysiology would be needed to definitively establish the transport mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Certain anionic compounds (BSP, DIDS, probenecid) significantly inhibit SLC35G1-mediated citrate uptake, but no common structural features beyond anionic moieties were identified. TCA cycle intermediates and other tested compounds showed minimal inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inhibitor screening data (C40, Figure 1F) provides useful information about substrate specificity. The inability to identify structural commonalities (C42) is honestly reported. The inference about compound affinities (C43-C44) is reasonable based on competitive inhibition principles. However, the study would benefit from IC50 determinations for the inhibitory compounds and testing at multiple concentrations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "In polarized MDCKII cells, SLC35G1 localizes to the basolateral membrane and significantly enhances apical-to-basolateral transcellular citrate transport without affecting basolateral-to-apical transport, consistent with its function as a basolateral citrate exporter under physiological chloride conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The basolateral localization is clearly demonstrated by immunofluorescence (C52, Figure 1J). The directional transcellular transport data (C53-C55, Figures 1K-L) strongly support the exporter function. The interpretation that chloride inhibits uptake but permits efflux (C56) is logical and consistent with the chloride sensitivity data. This represents a key functional validation of the proposed physiological role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C66",
+      "C70"
+    ],
+    "result": "SLC35G1 is highly expressed in the upper small intestine (duodenum and jejunum) with lower expression in testis and pancreas. Immunohistochemical analysis of human jejunum confirms basolateral membrane localization, co-localizing with the basolateral marker ATP1A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tissue expression profile from qRT-PCR (C58-C59, Figure 2A) shows appropriate tissue distribution for an intestinal citrate transporter. The immunohistochemical localization in human jejunum (C60, Figure 2B) with ATP1A1 co-staining (C61) provides strong evidence for basolateral positioning in native tissue. The use of an established basolateral marker strengthens the localization claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C73"
+    ],
+    "result": "siRNA-mediated knockdown of SLC35G1 in Caco-2 cells significantly reduces citrate uptake, with multiple independent siRNAs producing similar effects. The correlation between mRNA reduction and decreased uptake indicates SLC35G1 is primarily responsible for intestinal citrate transport at the basolateral membrane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The siRNA knockdown approach is appropriate, with multiple siRNAs used to control for off-target effects (C62-C63, Figures 2C-D). The correlation between mRNA levels and transport activity (C65) supports specificity. The use of Caco-2 cells as an intestinal model is well-established (C73). However, the experiments were conducted in chloride-free conditions, which may not fully represent physiological function. Rescue experiments with siRNA-resistant SLC35G1 would further strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C5",
+      "C14",
+      "C72"
+    ],
+    "result": "The authors propose that SLC35G1 acts cooperatively with the apical transporter NaDC1 to mediate transcellular citrate absorption in the jejunum, with chloride sensitivity providing directional control of transport function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The model integrating SLC35G1 with the established apical transporter NaDC1 (C68-C69, C5, C14) is logical and supported by the expression and localization data. The proposed role of chloride sensitivity in directional transport (C72) is a reasonable inference from the data. However, this remains a model that would benefit from additional validation, such as measuring citrate absorption in vivo or in more complex intestinal models with both transporters present.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C71"
+    ],
+    "result": "The authors claim SLC35G1 is the first transporter identified with chloride sensitivity among those functioning on the basolateral membrane of intestinal epithelial cells and among SLC transporters generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim is explicitly qualified with 'to our best knowledge' (C10, C71), indicating uncertainty. While the chloride sensitivity is well-documented in this study, the claim of being 'first' requires comprehensive knowledge of all characterized transporters. The authors have not provided systematic evidence that other basolateral or SLC transporters lack chloride sensitivity. This represents a speculative priority claim that would require more extensive literature analysis to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "The authors suggest that previous ER localization of SLC35G1 in earlier studies using GFP-tagged constructs may have been an artifact of the tagging approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly presented as speculation (C29: 'A possibility is'). While the current study shows plasma membrane localization without tags, the authors do not provide direct experimental evidence that GFP tagging causes mislocalization. This represents a reasonable hypothesis to explain discrepancies with prior work but lacks experimental validation. Testing GFP-tagged versus untagged SLC35G1 in parallel would address this question.",
+    "result_type": "MINOR"
+  }
+]

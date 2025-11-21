@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Synchronous stimulation of ascending axon (AA) and parallel fiber (PF) inputs induces long-term potentiation (LTP) specifically at AA synapses (131\u00b17% of baseline at 25-30 min, p=7e-5), while PF synapses show depression (65\u00b15% of baseline, p=1e-7). This plasticity is associative, requiring co-activation of both pathways, as stimulation of either pathway alone does not induce AA-LTP. The paired-pulse ratio (PPR) transiently decreases but returns to baseline by 25-30 min, suggesting transient presynaptic effects but long-term postsynaptic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23-C31, and C35-C38 provide converging experimental evidence with appropriate controls (No Stim, AA-only, PF-only stimulation) and statistical analysis. The data demonstrate specific AA-LTP with synchronous stimulation, proper controls showing rundown effects, and PPR analysis suggesting postsynaptic mechanisms. The associative nature is well-supported by the requirement for co-activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The timing of AA and PF stimulation determines the outcome of plasticity. When AAs are stimulated 150 ms after PFs, both pathways show depression (AA: 53\u00b115%, PF: 50\u00b120% of baseline), converting AA-LTP into LTD. When AAs are stimulated 150 ms before PFs, AA-EPSC returns to baseline (97\u00b126%) and PF-EPSC is near baseline (84\u00b112%), eliminating the potentiation observed with synchronous stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C39-C43 demonstrate timing-dependent plasticity with quantitative data and statistical comparisons to synchronous stimulation. The experiments show bidirectional control of plasticity outcomes based on relative timing, with appropriate sample sizes (n=7-8) and statistical analysis. The data clearly support that timing is a critical determinant of plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "AA-LTP induction requires both NMDAR and mGluR1 activation. Blocking mGluR1 with CPCCOEt reduces AA-EPSC to 72\u00b113% of baseline (p=0.0004 vs control), while blocking NMDARs with APV causes depression of both pathways (AA: 50\u00b18%, PF: 40\u00b19% of baseline, both significantly smaller than control). These results demonstrate the concomitant involvement of both receptor types in plasticity induction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C53-C56 are supported by pharmacological experiments with appropriate antagonists (CPCCOEt for mGluR1, APV for NMDAR) and statistical comparisons to control conditions. The data show that blocking either receptor impairs AA-LTP, with quantitative measurements and significance testing. The mechanistic interpretation is consistent with prior literature (C44-C46) on cerebellar plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "GABAAR activation is required for efficient induction and maintenance of associative plasticity. With GABAARs blocked by SR95531, AA-EPSC shows initial facilitation (170\u00b130%) but decreases to 117\u00b124% of baseline at 25-30 min, with high variability across experiments. PF-EPSC depression (56\u00b110%) is not significantly different from control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C63 show that GABAAR blockade affects AA-LTP, but the result is not statistically significant compared to control (p=0.1) due to high variability (2 out of 9 cells showed strong depression). While the data suggest GABAAR involvement, the lack of statistical significance and high variability make the conclusion uncertain. Additional experiments or larger sample sizes would be needed to definitively establish this requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The differential plasticity between AA and PF inputs is not due to sparse synaptic distribution but to intrinsic synaptic properties. When sparse PF stimulation (from granule cell layer) replaces AA stimulation, both sparse and dense PF inputs show depression (88\u00b113% and 54\u00b110% of baseline, respectively), unlike the potentiation seen with AA inputs. This demonstrates that AA-LTP is specific to AA synapses rather than being a consequence of sparse distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide a critical control experiment testing whether spatial distribution or synaptic identity determines plasticity. The data show that sparse PF inputs do not exhibit LTP like AA inputs do, with appropriate statistical comparisons to control AA and PF responses (p=0.0024 and p=0.017). This strongly supports the conclusion that synaptic properties, not distribution, determine the plasticity outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The transient decrease in paired-pulse ratio (PPR) following induction suggests transient presynaptic effects on release probability, but the lack of long-term PPR changes indicates that long-term plasticity is mediated by postsynaptic mechanisms. The PPR returns to baseline values within 25-30 min (PPRAA: 1.03\u00b10.03, PPRPF: 0.99\u00b10.03, p=0.81).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by PPR measurements showing transient changes that recover by 25-30 min, combined with established knowledge linking PPR to presynaptic release probability (C32). The inference that long-term effects are postsynaptic is logical given the dissociation between sustained amplitude changes and recovered PPR. However, this is an indirect measure and direct postsynaptic evidence would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C15",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Anatomical organization of granule cell inputs: Granule cells make up to 175,000 excitatory synapses on a single Purkinje cell. The granule cell axon consists of an ascending portion (AA) that synapses with a few overlying PCs in the same sagittal plane, and parallel fibers (PF) extending 4.2-4.7 mm that synapse with hundreds of PCs. AA synapses represent only 1-2% of granule cells or parallel fibers based on the 50 \u03bcm thick layer of the PC dendritic tree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C12, C15, and C68-C70 describe well-established cerebellar anatomy supported by multiple citations (Napper and Harvey, 1988; Pichitpornchai et al., 1994). The calculation that AA synapses represent 1-2% of fibers is a reasonable inference based on anatomical constraints. These are foundational anatomical facts that provide context for the experimental findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Prior literature shows controversial findings regarding AA and PF synapse properties. Some studies (Isope and Barbour, 2002; Walter et al., 2009) found AA and PF properties indistinguishable, while others (Sims and Hartell, 2005, 2006) reported differences in properties and plasticity susceptibility, with AA synapses being refractory to both LTD and LTP. Additionally, 85% of PF synapses are silent, but this proportion is lower for AA synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C17-C22 accurately summarize prior literature with appropriate citations. These claims establish the controversial state of the field and provide context for the current study's findings. The citations support the statements about conflicting findings in the literature regarding AA vs PF synapse properties and plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C57",
+      "C58"
+    ],
+    "result": "Receptor localization in cerebellar circuits: mGluR1s are highly expressed postsynaptically at GC-PC synapses and require PF train stimulation for activation. NMDARs are expressed by molecular layer interneurons and GCs (on dendrites and presynaptic varicosities) but are not present postsynaptically at GC-PC synapses. GABAARs are present on GCs including presynaptically on the GC axon, where they are activated by synaptic GABA release and affect axonal Cl- concentration and synaptic release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 and C57-C58 describe established receptor localization patterns supported by multiple citations. These are well-documented facts about cerebellar circuit organization that provide mechanistic context for understanding the plasticity experiments. The citations support each specific localization claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Signaling mechanisms in cerebellar plasticity: NO production is linked to NMDAR activation in GC presynaptic boutons and acts as a diffusible messenger activating guanylate cyclase in PCs. mGluR1s activate multiple pathways including IP3-mediated Ca2+ release (requiring depolarization priming), slow EPSCs mediating Ca2+ entry, and regulation of voltage-activated Ca2+ channels. mGluR1 also triggers endocannabinoid production, with presynaptic CB1Rs involved in PF-LTD. mGluR1-mediated Ca2+ signals are not expected to propagate across the PC dendritic tree due to rapid buffering of Ca2+ and IP3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 and C82-C85 describe established signaling mechanisms supported by extensive citations. These provide mechanistic context for understanding how NMDAR and mGluR1 activation could cooperate to induce plasticity. The claims about limited spatial spread of Ca2+ signals (C82) are reasonable inferences based on known buffering properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Quantification of recruited synapses: The median PF-EPSC (288 pA) corresponds to approximately 34 active synapses, while the median AA-EPSC (90 pA) corresponds to 11 active synapses and 22 total synapses (accounting for 50% silent synapses). These recruited synapses represent less than 0.2% of the 175,000 excitatory synapses on a PC dendritic tree.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide reasonable calculations based on measured EPSC amplitudes and published unitary synaptic amplitudes (Isope and Barbour, 2002). The calculations are straightforward and the assumptions (unitary amplitude, proportion of silent synapses) are supported by citations. This quantification provides important context for understanding the scale of synaptic recruitment in the experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Functional implications and broader context: The cerebellum is involved in motor learning, coordination, and higher cognitive functions. In fish, discrimination of self from external stimuli relies on associating motor command and sensory feedback in cerebellar-like structures. The authors propose that AA synapses encode precise receptive field information while PF synapses represent context, with associative plasticity reinforcing conjointly presented signals. This work shows that associative plasticity in PCs can be triggered by granule cell inputs independently of the climbing fiber, which is classically associated with error signals and learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C10 and C94-C95 are well-supported by citations describing established cerebellar functions. However, claims C13-C14 and C90-C92 are speculative hypotheses about functional roles of AA vs PF synapses. While these hypotheses are reasonable given the anatomical and plasticity data, they lack direct experimental validation in this study. Claim C93 is supported by the data showing CF-independent plasticity, but the broader functional implications remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Prior work on inhibition and PF plasticity shows contradictory findings. Binda et al. (2016) showed that PF-LTP requires GABAAR activation to hyperpolarize PC dendrites and recruit T-type Ca2+ channels, and that PF-LTP was not sustained when inhibition was blocked. However, Rowan et al. (2018) showed that inhibition decreased Ca2+ entry and converted LTD into LTP. The current study's induction protocol was previously shown to induce PF-LTP with inhibition intact, though not always.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 and C86-C89 accurately summarize contradictory findings in prior literature with appropriate citations. These claims provide important context for understanding the role of inhibition in the current study and explain why the lack of PF-LTP in the current experiments is unexpected. The citations support the described contradictions in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C16",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Additional context from prior work: The authors previously identified two PF synaptic populations with different molecular signatures. Sims and Hartell (2005, 2006) reported absence of both LTP and LTD at AA synapses with CF conjunctive stimulation. Presynaptic GABAB and CB1 receptors modulate release probability at GC-PC synapses but decrease release and increase PPR. Endocannabinoid release is triggered by mGluR1 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16 and C71-C73 provide relevant context from prior literature with appropriate citations. These claims help interpret the current findings, particularly regarding why certain mechanisms (CB1R, GABABR) are unlikely to explain the observed transient PPR changes. The citations support each specific claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Methodological details: Experiments were performed on 300 \u03bcm horizontal cerebellar slices from 19-25-day-old Sprague-Dawley rats. At this age, GC synapses are well-established. The low Cl- concentration in the intracellular solution ensured the reversal potential for Cl- was close to -85 mV as determined for PCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C98 describe standard methodological details. The age range is appropriate for studying mature GC synapses (supported by citation to Ichikawa et al., 2016). The Cl- concentration rationale is supported by citation to Chavas and Marty, 2003. These are straightforward methodological choices that are well-justified.",
+    "result_type": "MINOR"
+  }
+]

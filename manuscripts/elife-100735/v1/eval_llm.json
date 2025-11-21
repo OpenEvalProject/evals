@@ -1,0 +1,486 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Four transgenic mouse lines were generated with fluorescent reporters to enable prospective identification of Pou5f1-KO and Sox2-KO embryos. Immunostaining confirmed loss of Oct4 and Sox2 proteins in reporter-positive embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23 describe the generation and validation of transgenic mouse models. The experimental design is clearly documented with supporting figures (Figure 1A-F), and immunostaining data confirm the knockout phenotypes. This provides a solid foundation for subsequent experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C54",
+      "C129",
+      "C130"
+    ],
+    "result": "Low-input ATAC-seq and RNA-seq were performed on staged embryos treated with MEKi to suppress PE development. MEKi treatment did not alter Oct4/Sox2 target chromatin regions and genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27, C54, C129-C130 describe the experimental methodology. The use of MEKi is justified and validated by comparison with published data (C53-C54), showing that MEKi does not alter the molecular functions of Oct4 and Sox2. The methodological choices (pooling for ATAC-seq, single embryos for RNA-seq) are appropriately justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "ATAC-seq analysis revealed that Pou5f1-KO and Sox2-KO have minimal effects in morulae but substantial effects in ICMs, with more peaks decreasing than increasing in KO samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 present the global chromatin accessibility analysis. PCA clustering (C28-C30) and differential peak analysis (C31-C36) are well-documented with appropriate statistical cutoffs (adjusted p-value<0.05). The data show clear stage-specific effects with quantitative support from Figure 2A-B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "K-means clustering identified subsets of chromatin regions differentially affected by Oct4 and Sox2, with peaks highly reliant on both factors showing greater OCT-SOX motif enrichment and becoming open in the ICM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe clustering analysis revealing functional distinctions between peak groups. The analysis identifies temporal and motif-based patterns (Figure 2C), with over 96.8% of differential peaks being distal enhancers (C41). The findings are internally consistent and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "Decreased ATAC-seq peaks in KO embryos were validated by enrichment with Sox2 CUT&RUN signals and binding by Oct4, Sox2, and Nanog in ESCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 provide orthogonal validation using published datasets. The comparison with Sox2 CUT&RUN data (Li et al., 2023) and ESC ChIP-seq data (Marson et al., 2008; Whyte et al., 2012) strengthens confidence that identified peaks represent genuine Oct4/Sox2 targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RNA-seq analysis showed Pou5f1-KO had progressively greater effects than Sox2-KO on the transcriptome from morula to late ICM, with Pou5f1-KO altering 15.8% and Sox2-KO altering 6.1% of genes in late ICM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 present comprehensive transcriptome analysis. The progressive impact of Pou5f1-KO (C46) and the greater effect compared to Sox2-KO (C50-C52) are well-documented with appropriate statistical cutoffs (adjusted p-value<0.05, log2FC\u22651). The consistency with developmental arrest timing (C52) provides biological validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Integration of ATAC-seq and RNA-seq revealed that genes near decreased peaks were downregulated while genes near increased peaks were upregulated, identifying both known targets (Utf1) and novel targets (Sap30, Uhrf1) of Oct4 and Sox2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 demonstrate integration of chromatin and transcriptome data. GSEA analysis (C55-C56, Figure 2E) shows correlation between chromatin accessibility and gene expression. Known targets validate the approach (C57), while novel targets (C59-C60) are supported by citations establishing their functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Oct4 and Sox2 play crucial roles in shaping chromatin landscape and transcriptome in the ICM, yet KO embryos develop apparently normally up to the blastocyst stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 summarize key findings. The molecular changes (C61) are well-supported by the ATAC-seq and RNA-seq data, while the apparently normal morphological development (C62) is consistent with previous reports and explains the paradox of molecular changes without immediate developmental arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "ATAC-seq peaks consistently decreased in both Pou5f1-KO and Sox2-KO ICMs were enriched near pluripotency genes, while consistently increased peaks were near extraembryonic lineage genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 describe functional annotation of differential peaks. GREAT analysis (Figure 3B) shows clear enrichment patterns consistent with loss of pluripotency and gain of extraembryonic characteristics. The findings are biologically coherent and well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Many pluripotency genes were downregulated while TE genes were upregulated in KO ICMs. Notably, Nanog, Esrrb, and Klf4 were significantly downregulated in Pou5f1-KO but not Sox2-KO ICM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 present specific gene expression changes with protein-level validation for Pecam1 (C72-C73). The differential effects on Nanog, Esrrb, and Klf4 between Pou5f1-KO and Sox2-KO (C70-C71) reveal distinct regulatory roles and are well-documented in Figure 3C-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C139"
+    ],
+    "result": "Oct4 and Sox2 activated epigenetic modifiers including Ezh2 and Sap30, potentially contributing to establishing ICM-specific epigenetic status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C75 and C139 identify activation of epigenetic modifiers but the functional consequence (C75, C139) remains speculative. While the expression changes are documented, direct evidence that this regulates epigenetic status in ICM is not provided. This represents a reasonable hypothesis requiring further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Motif analysis revealed OCT-SOX, OCT, and SOX motifs enriched in decreased peaks, while increased peaks showed GATA, TEAD, EOMES, and KLF motifs, suggesting increased peaks represent secondary effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 present comprehensive motif analysis. The enrichment patterns (Figure 4A) are consistent with known TF binding preferences. The temporal analysis (C80) and lack of OCT-SOX motifs in increased peaks (C79) support the interpretation that increased peaks are secondary effects (C81). CTCF serves as an appropriate negative control (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The most decreased peaks in early ICM were enriched for OCT-SOX but not OCT or SOX motifs alone, suggesting Oct4 and Sox2 cooperatively maintain chromatin accessibility at OCT-SOX peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 present a key mechanistic finding supported by motif occurrence analysis (Figure 4B). The interpretation of cooperative function (C84) is reasonable given the motif enrichment pattern. Claims C85-C86 offer alternative explanations for KLF motif enrichment, appropriately acknowledging uncertainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "8,993 OCT-SOX peaks decreased in both Pou5f1-KO and Sox2-KO ICMs, with the majority shared between knockouts, indicating both factors participate in maintaining these enhancers as primary targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 identify OCT-SOX peaks as primary targets. The quantitative analysis (C87-C88, Figure 4C-D) shows consistent effects across both KOs. Known enhancers of Dppa3 and Klf4 (C90) validate the findings. The conclusion that these are primary targets (C91) is well-supported by the cooperative effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Approximately 50% of peaks and genes decreased in KO early ICMs were activated during normal ICM formation. A significant chromatin reorganization with 21,731 peaks (14.3%) activated in early ICM was disrupted in the absence of Oct4 or Sox2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 demonstrate that Oct4 and Sox2 drive developmental chromatin reorganization. The quantitative analysis (C92-C93, Figure 5A-B) is consistent with previous studies (Guo et al., 2010; Wu et al., 2016). GREAT and motif analyses (C94-C95) show appropriate functional enrichment, and GSEA (C96) confirms disruption in KO embryos.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The transcriptome underwent substantial rearrangements in early ICMs with 1,115 genes (7.1%) upregulated, which were enriched with genes downregulated in KO ICMs, indicating Oct4 and Sox2 play critical roles in initiating ICM-specific programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 parallel the chromatin findings at the transcriptome level. The alluvial plot (Figure 5D) and GSEA (Figure 5E) demonstrate coordinated changes. The conclusion about critical roles (C99) is well-supported by the convergence of chromatin and transcriptome data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "All core pluripotency TFs except Sox2 are highly expressed in morulae but insufficient to induce pluripotency. Sox2 expression in early ICM functions as a temporal regulator activating pluripotency genes through OCT-SOX enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C108 and C110 present a temporal model for pluripotency establishment. Expression data (C102, Figure 5\u2014figure supplement 1C) and GSEA Wikipathway analysis (C105, Figure 5F) support the role of Sox2 as a temporal regulator. Specific examples like Il6st (C107-C108) provide mechanistic support. The inference (C103, C110) is well-justified by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Oct4 activated enzymes regulating pyruvate and glutathione metabolism, consistent with Oct4's role in metabolism regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 identifies metabolic targets of Oct4, supported by RNA-seq data and consistent with previous studies (Frum et al., 2013; Stirparo et al., 2021). This extends understanding of Oct4 function beyond transcriptional regulation of pluripotency genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C111",
+      "C151",
+      "C152"
+    ],
+    "result": "Oct4 and Sox2 play pivotal roles in promoting ICM fate by working together to open OCT-SOX enhancers and activate pluripotency genes at the blastocyst stage, with Oct4 function limited in morulae by absence of Sox2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C151-C152 synthesize the main findings into a coherent model. The conclusion is well-supported by the comprehensive ATAC-seq and RNA-seq data showing cooperative function at OCT-SOX enhancers and stage-specific effects. Figure 5I provides a clear visual summary of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Pou5f1-KO or Sox2-KO have minimal impact until early blastocyst stage. Oct4 function in morulae is likely limited by insufficient Sox2 levels and possibly epigenetic constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 explain the unexpected finding of minimal early effects. The expression data (C113-C114) and ATAC-seq/RNA-seq results (C112) support this interpretation. The proposed limitations (C115-C116) are reasonable hypotheses supported by citations to epigenetic differences between morula and ICM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Sox2 activation occurs after Oct4 in both embryogenesis and reprogramming, coinciding with pluripotency establishment. Sox2-KO ICMs fail to fully activate the pluripotent program, indicating Sox2 plays a critical role in spatial-temporal onset of pluripotency genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C124 place findings in broader context of embryogenesis and reprogramming. The temporal relationship (C117-C121) is supported by established knowledge and citations. The failure to fully activate pluripotency in Sox2-KO (C122) is documented by RNA-seq (Figure 3C), and the conclusion (C124) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "This study found extensive downregulation of pluripotency genes in Pou5f1-KO ICM, contrasting with previous reports. Differences in experimental design (EPI isolation with MEKi, complete POU domain deletion, maternal-zygotic KO) may explain the discrepancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C135 address discrepancies with prior work. The current findings (C126) are well-documented by RNA-seq. The proposed explanations (C128-C135) are reasonable: MEKi validation (C129-C130), more complete knockout (C131-C133), and maternal-zygotic approach (C134-C135) all represent methodological improvements that could account for differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Most OCT-SOX peaks are more affected in Pou5f1-KO than Sox2-KO ICMs, indicating Oct4 plays a more important role in activating OCT-SOX enhancers. Compensation by other Sox family members is unlikely based on expression analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 present a key mechanistic finding supported by ATAC-seq data and consistent with ESC rescue experiments (C143). The analysis of Sox family compensation (C144-C150) is thorough, examining expression of Sox1, Sox3, Sox15, and Sox18. While Sox15 compensation cannot be completely ruled out (C150), the evidence argues against significant compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Oct4 and Sox2 are key transcription factors in early embryonic development. Both are confined to pluripotent EPI at late blastocyst stage. KO embryos develop apparently normal EPI but fail to give rise to ESCs, yet still express many pluripotency markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide essential background from prior literature. All claims are supported by appropriate citations to established work. The paradox between loss of pluripotency (C8-C10) and maintenance of pluripotency markers (C11) motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Previous studies suggested Oct4 and Sox2 may function before blastocyst stage in lineage segregation and chromatin accessibility, with species-specific differences in their roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16 summarize prior work on early functions of Oct4 and Sox2. All claims are supported by citations. The species differences (C15-C16) provide important context for interpreting mouse-specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Oct4 and Sox2 maintain pluripotency networks in ESCs. MEKi promotes ground state ESCs and directs entire ICM toward EPI fate in embryos, with MEKi-treated EPI showing na\u00efve pluripotency confirmed by chimera contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 provide rationale for using MEKi in the experimental design. All claims are supported by citations to established work (Masui et al., 2007; Niwa et al., 2000; Ying et al., 2008; Nichols et al., 2009). This justifies the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Na\u00efve pluripotency is governed by a core regulatory circuit including Oct4, Sox2, Nanog, Esrrb, and Klf4. Sox2 activation represents a late-stage deterministic event triggering pluripotency during reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 provide important context from pluripotency and reprogramming literature. Both claims are supported by appropriate citations (Adachi et al., 2018; Ng and Surani, 2011; Young, 2011; Buganim et al., 2012) and frame the significance of Sox2's temporal role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C125",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Loss of Oct4 and Sox2 impairs embryonic pluripotency. Preimplantation embryos undergo dynamic epigenomic reprogramming governed by epigenetic modifiers like Ezh2 and Uhrf1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125, C136-C138 provide background on pluripotency impairment and epigenetic regulation. All claims are supported by citations to established work. This contextualizes the finding that Oct4 and Sox2 activate epigenetic modifiers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "There are ongoing debates regarding the precise roles of Oct4 and Sox2 cooperation on OCT-SOX enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 acknowledges existing controversy in the field, supported by multiple citations (Biddle et al., 2019; Chen et al., 2008; Han et al., 2022; Li et al., 2019; Michael et al., 2020; Velychko et al., 2019). This contextualizes the contribution of the current study to resolving this debate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "The upstream factors driving activation of the core pluripotency regulatory circuitry remain unknown. Further studies are needed to understand molecular mechanisms governing embryonic pluripotency and early lineage segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 acknowledge limitations and future directions. These are appropriate statements about gaps in current knowledge and represent reasonable suggestions for future work rather than unsupported speculation.",
+    "result_type": "MINOR"
+  }
+]

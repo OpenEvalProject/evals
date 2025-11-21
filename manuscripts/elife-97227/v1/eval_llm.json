@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes the background that TEM images are affected by lens aberrations and defocus, which can be modeled using the CTF. Accurate CTF estimation and correction is essential for high-resolution cryoEM, and CTFFIND4 has been the standard tool for this purpose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C11-C16) provide well-established background knowledge about cryoEM and CTF estimation, supported by appropriate citations to prior work. They accurately describe the field's current understanding and the role of CTFFIND4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "CTFFIND4 has limitations when applied to thick and tilted cellular samples, as it assumes uniform defocus across the sample. Thick samples introduce additional modulations in Thon ring patterns, and cellular samples are often tilted due to FIB milling or tomography, with effects most pronounced at high resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 accurately identify limitations of CTFFIND4 and describe problems with thick/tilted samples, supported by appropriate citations (Tichelaar et al., 2020). These establish the motivation for the new method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C25",
+      "C26",
+      "C27",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CTFFIND5 improves CTF estimation by accounting for sample thickness and tilt using an extended CTF model, which increases fit fidelity at higher resolution and provides valuable geometric information about the sample, particularly important for cellular samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C25-C27, C81-C83 describe the main contribution of CTFFIND5. The improvements are demonstrated through multiple validation experiments (aquaporin crystals, tilt series, FIB-milled samples) showing quantitative improvements in fit resolution and accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C32",
+      "C33",
+      "C84",
+      "C100"
+    ],
+    "result": "CTFFIND5 estimates sample tilt by fitting CTF to power spectra from 128\u00d7128 pixel patches across the micrograph, assuming defocus variation can be described by a tilted plane, and evaluating fits using correlation coefficients. This approach is similar to CTFTILT and other software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C32-C33, C84, C100 describe the tilt estimation methodology with appropriate citations to similar approaches. The method is clearly described and follows established principles in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C103",
+      "C104"
+    ],
+    "result": "Validation using tilted aquaporin crystals shows CTFFIND5 can measure sample tilt with 3\u00b0 accuracy and improves fit resolution from 5.9 \u00c5 to 4.6 \u00c5 after tilt correction. CTFFIND5 estimates agree well with crystallographic analysis, with average discrepancies of 1.9\u00b0 for tilt axis and 1.5\u00b0 for tilt angle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C34-C38, C103-C104 present quantitative validation results using aquaporin crystals as a ground truth. The accuracy estimates are well-supported by comparison to crystallographic analysis (Table 1), and the improvement in fit resolution is demonstrated in Figure 1c.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Validation using two tilt series from FIB-milled lamellae shows CTFFIND5 correctly estimates tilt angles with a linear relationship to nominal stage tilt, identifies ~20\u00b0 pre-tilt from FIB milling, and achieves accuracy of 2.08-3.95\u00b0 for tilt and 2.58-9.47\u00b0 for axis angles. Accuracy is lower than for aquaporin crystals and depends on data quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C47 present tilt series validation with quantitative accuracy measurements. The results are internally consistent, showing expected pre-tilt from FIB milling and agreement with SerialEM calibration. The acknowledgment that accuracy depends on data quality is appropriate given the observed differences between the two tilt series.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C86"
+    ],
+    "result": "CTFFIND5 implements an extended CTF model based on McMullan et al. 2015 to account for sample thickness effects. For FIB-milled samples and some thick single-particle samples, this model extends fits to higher resolution and provides direct thickness readout, with particularly substantial improvements for images with defocus <1 \u03bcm and thickness >200 nm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C57, C86 describe the thickness estimation feature with appropriate citations and demonstrate improvements through multiple examples (Figure 3b-d). The model is based on established theory (McMullan et al., 2015) and shows clear improvements in fit quality and resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C62",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "Validation using the Beer-Lambert law on 655 energy-filtered micrographs shows CTFFIND5 thickness estimates follow a linear relationship with electron scattering (\u03ba=317 nm), with mean absolute accuracy of 4.8 nm. The methods are complementary as they rely on orthogonal mechanisms, though there is a systematic -14.1 nm offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C62, C64-C65, C67 present validation against an independent physical method. The linear relationship (568/655 images) and accuracy estimate are well-supported by Figure 4. The systematic offset is acknowledged but not explained, which is appropriate given current understanding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Validation using tomography from seven locations shows CTFFIND5 thickness estimates are 1.05\u00d7 higher than tomography measurements (slope=0.95, intercept=0.12 nm). This is consistent with prior work (Tichelaar et al., 2020) showing 1.1\u00d7 overestimation. The reasons for systematic discrepancies are unclear, but estimates provide comparable information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 present tomography validation with quantitative results (Figure 5). The systematic overestimation is acknowledged and consistent with prior literature (C71). The conclusion that estimates are still useful despite unexplained systematic differences is reasonable given the small magnitude of discrepancies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "CTF correction using CTFFIND5 defocus estimates can reduce fringes in medium-magnification overview images of cellular samples. A Wiener filter-based amplitude correction produces more natural-looking images suited for recognizing cellular features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 describe a practical application demonstrated in Figure 6. The improvement is visually apparent in the figures, and the Wiener filter approach is appropriately cited (Tegunov and Cramer, 2019).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CTFFIND5 runtime is ~1 second without tilt/thickness estimation, ~1.5 seconds with thickness estimation, and several minutes with tilt estimation due to exhaustive search. Near real-time tilt estimation can be achieved with multiple CPU cores, and further optimization is possible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 present runtime benchmarking (Table 2) with clear measurements and appropriate caveats. The suggestion of future optimizations (C80) is reasonable speculation based on the identified computational bottleneck.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "CTFFIND5 thickness estimation works reliably for higher exposures (~30 e-/\u00c5\u00b2) used in 2DTM and in situ single-particle analysis, but not for low exposures (3-5 e-/\u00c5\u00b2) in tomography. The method enables quality assessment of lamellae before time-intensive processing and provides better quality-of-fit indicators than CTFFIND4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 appropriately describe the scope and limitations of the method with citations to relevant applications. The practical benefits for workflow optimization are well-justified by the demonstrated improvements in fit resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CTFFIND5 has limitations for tilt series compared to specialized software (e.g., Ctfplotter) as it uses no prior information and cannot pool data across tilt angles. However, it may be useful for troubleshooting angle conventions and provides more robust defocus estimation at high tilt for existing CTFFIND4 pipelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 appropriately acknowledge limitations while identifying potential use cases. The comparison to specialized software is fair, and the suggested benefits for existing workflows are supported by Figure 2 results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Most single-particle samples do not benefit from CTFFIND5, but some thick samples (e.g., viral particles) may benefit from thickness estimation. However, per-particle CTF refinement is still required for high-resolution averaging. Tilt measurement might be useful for tilted-stage approaches to overcome preferred orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 appropriately scope the applicability to single-particle cryoEM. The limitation that per-particle refinement is still needed (C98) is important and well-supported by citations to relevant software. The suggested application to preferred orientation (C99) is reasonable speculation.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "APARENT2 neural network model validation shows that paSNVs with strong predicted impact on cleavage/polyadenylation are positioned near cleavage sites, predominantly affect AWTAAA hexamers, and that AATAAA presence correlates with high APARENT2 scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 provide internal validation of the APARENT2 model performance. The data in Figure 1B and Figure 1\u2014figure supplement 1A-B demonstrate expected patterns: paSNVs cluster near cleavage sites, affect canonical PAS sequences, and show appropriate score changes with AATAAA gain/loss. This validates the computational approach used throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "DOWN-paSNVs show pronounced negative selection in the normal population, with significantly decreased allele frequencies and enrichment for singleton variants compared to background controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 are well-supported by data in Figure 1C-D and are consistent with prior studies (C26 cites Linder et al., 2022; Kainov et al., 2016; Findlay et al., 2022). The negative selection pattern indicates these mutations are deleterious under normal conditions, providing important context for their enrichment in cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Cancer somatic mutations show stronger effects on polyadenylation efficiency than normal population variants, are enriched in cancer samples, cluster near annotated cleavage sites, affect stronger polyadenylation signals, and target more evolutionarily conserved sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by data in Figures 1B and 2A-D. The comparison between Normal and Cancer datasets shows consistent patterns: higher LOR variance (0.115 vs 0.0876), enrichment of DOWN-paSNVs in cancer, clustering near cleavage sites, higher APARENT2 scores, and greater evolutionary conservation (PhastCons scores). These converging lines of evidence strongly support positive selection for these mutations in cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The study identified 1614 distinct cancer somatic DOWN-paSNVs affecting 1570 cleavage/polyadenylation events in 1460 genes across 602 tumours (22.7% of PCAWG samples), with nearly half originating from colorectal adenocarcinoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide quantitative results from the bioinformatics analysis, supported by data in Figure 2E and Supplementary file 1. These are straightforward descriptive statistics from the dataset analysis. The high prevalence (22.7% of samples) and concentration in colorectal adenocarcinoma are important findings, though the latter may reflect mutation rate differences across cancer types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "DOWN-paSNVs show remarkable enrichment in tumour suppressor genes (affecting 38 genes, 14.3% of Census tumour suppressors), with enrichment magnitude exceeding that of nonsense mutations, while showing no enrichment in oncogenes. Conversely, UP-paSNVs show enrichment in oncogenes but not tumour suppressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C42 are strongly supported by data in Figures 3A-C and Figure 3\u2014figure supplement 1. The enrichment analysis using Fisher's exact test shows statistically significant patterns. The finding that DOWN-paSNV enrichment in tumour suppressors exceeds that of nonsense mutations is particularly striking. The recurrence of mutations in specific genes (LRP1B, FOXO1) provides additional support. The contrasting pattern for UP-paSNVs in oncogenes is biologically coherent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "Genes affected by DOWN-paSNVs are significantly enriched for apoptosis-related functions and proteins interacting with the ubiquitination pathway, consistent with tumour suppressor targeting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by GO enrichment analysis shown in Figure 3D-E. The functional enrichment for apoptosis and ubiquitination pathways is consistent with the enrichment in tumour suppressor genes and provides biological coherence to the findings. Specific examples (CASP9, FHIT, SMAD2, APC, AXIN1) are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "DigDriver analysis independently confirms that DOWN-paSNVs show significantly higher observed-to-expected mutation rates compared to background controls and are enriched in tumour suppressor genes but not oncogenes, consistent with positive selection in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by DigDriver analysis in Figures 4A-B and Figure 4\u2014figure supplement 1. This independent analytical method accounts for cancer-specific mutation rates and confirms the enrichment patterns observed with simpler methods. The convergence of multiple analytical approaches strengthens the conclusion of positive selection for DOWN-paSNVs in tumour suppressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Wild-type tumour suppressor 3'UTRs have stronger cleavage/polyadenylation signals than oncogenes and non-cancer genes, with tumour suppressors associated with hallmarks of cancer showing even stronger signals than other tumour suppressors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 are supported by data in Figure 4\u2014figure supplement 2A-C. This analysis of wild-type sequences provides important context: tumour suppressors may be particularly vulnerable to disruption of polyadenylation signals because they rely on strong signals for proper expression. This mechanistic insight helps explain why DOWN-paSNVs are enriched in tumour suppressors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C73"
+    ],
+    "result": "Tumour suppressors containing DOWN-paSNVs show markedly increased incidence of additional damaging non-synonymous mutations in the same tumour compared to controls, consistent with the two-hit hypothesis for tumour suppressor inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C73 are supported by data in Figure 4C-D. The co-occurrence analysis shows that DOWN-paSNV-containing tumour suppressors are more likely to acquire additional damaging mutations, consistent with Knudson's two-hit hypothesis. This provides evidence that DOWN-paSNVs may represent one 'hit' in the classical model of tumour suppressor inactivation. However, the analysis cannot determine whether the mutations are on the same or different alleles without long-read sequencing data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Copy number analysis reveals that while copy number increases are 4.1 times more common than losses in PCAWG data overall, the incidence of copy number increases is substantially lower in the DOWN-paSNV group compared to background controls, suggesting negative selection against duplications of genes affected by DOWN-paSNVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by CNV analysis data in Figure 4\u2014figure supplement 3. The inference of negative selection (C55) is reasonable given the data, though it is based on observational patterns rather than direct experimental evidence. This finding is biologically coherent: duplicating an allele with a disrupted polyadenylation signal would not provide selective advantage in cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Seven tumour suppressor genes containing only DOWN-paSNVs (CASP9, NDRG1, XPA, TSC1, ETV6, ISY1, SMAD2) show consistent downregulation in colorectal adenocarcinoma samples with DOWN-paSNVs compared to wild-type samples, with median downregulation of 1.25-fold for the aggregated set and 1.1- to 3.2-fold for individual genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 are supported by gene expression analysis in Figure 5A-B. The filtering criteria (detectably expressed, DOWN-paSNVs only, no other damaging mutations) are appropriate for isolating the effect of DOWN-paSNVs. The consistent negative bias across all seven genes strengthens the conclusion. However, the modest effect sizes (1.1-3.2-fold) and the use of bulk tumor expression data (which may include normal cells) suggest the true effect in cancer cells could be larger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C76",
+      "C77"
+    ],
+    "result": "Experimental validation using XPA as a model shows that a cancer-specific mutation changing AATAAA to GATAAA significantly reduces APARENT2 score, decreases cleavage/polyadenylation efficiency by RT-qPCR, and reduces luciferase protein production in reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C76-C77 are strongly supported by experimental data in Figure 5C-E. The minigene experiments provide direct functional validation of the bioinformatics predictions. The RT-qPCR shows reduced cleavage/polyadenylation efficiency, and the luciferase assay demonstrates reduced protein expression. The convergence of computational prediction and experimental validation is compelling. However, the experiments use a single mutation in one gene, limiting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "XPA promotes apoptosis in response to DNA damage beyond its role in nucleotide excision repair, and its downregulation is associated with decreased patient survival in colorectal cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by citations to prior work (Deng et al., 2021; Feng et al., 2018). These claims provide biological context for why XPA downregulation via DOWN-paSNVs could contribute to cancer progression. The claims rely on the accuracy of the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The study confirms that germline mutations disrupting polyadenylation signals are deleterious and under negative selection in normal populations, while cancer somatic mutations affecting these elements are more prevalent, occur near stronger and more conserved cleavage sites, and show enrichment patterns in tumour suppressors similar to nonsense mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 synthesize findings from multiple analyses (Figures 1-4). The convergence of evidence from population genetics (negative selection in normals), cancer genomics (enrichment in tumours), evolutionary conservation, and comparison with known deleterious mutations (nonsense) provides strong support. The inference about importance of pre-mRNA processing for tumour suppressor expression (C72) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C78"
+    ],
+    "result": "Tumour suppressors containing only DOWN-paSNVs are consistently expressed at lower levels than wild-type counterparts, and partial inactivation of tumour suppressors can be sufficient to promote tumorigenesis, suggesting SNVs targeting polyadenylation signals can profoundly affect gene expression in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C78 are supported by the gene expression data (Figure 5A-B) and experimental validation (Figure 5C-E). Claim C75 is supported by citations to prior work (Berger et al., 2011; Park et al., 2021). Together, these claims argue that DOWN-paSNVs can contribute to cancer even without complete gene inactivation. The inference in C78 is reasonable but somewhat broad given the limited experimental validation (one gene).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "Potential mechanisms by which DOWN-paSNVs reduce gene expression include destabilization of read-through transcripts by RNA quality control mechanisms or dampening of transcription initiation due to coupling between cleavage/polyadenylation and transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C81 are explicitly speculative (\"It is expected,\" \"might dampen\") and supported only by citations to prior work on RNA quality control and transcription-polyadenylation coupling. No experimental data in this study directly test these mechanisms. These are reasonable hypotheses for future investigation but remain unvalidated in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C82"
+    ],
+    "result": "The study identifies a novel class of noncoding somatic mutations\u2014those disrupting strong and evolutionarily conserved cleavage and polyadenylation signals in tumour suppressor genes\u2014that have significant potential to drive cancer progression through downregulation of tumour suppressor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C82 represent the main conclusions of the study. They are well-supported by the convergence of multiple lines of evidence: enrichment in cancer vs. normal populations, targeting of strong/conserved signals, enrichment in tumour suppressors, positive selection signatures, co-occurrence with other damaging mutations, gene expression effects, and experimental validation. The characterization as \"novel\" is justified by C19 (no prior systematic characterization). The claim of \"driver properties\" is supported by DigDriver analysis and enrichment patterns similar to known drivers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The findings emphasize the importance of pre-mRNA processing in cancer biology and highlight the need for improved functional annotation of noncoding single nucleotide variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 are reasonable inferences from the study's findings. The demonstration that polyadenylation signal mutations can act as cancer drivers does emphasize the importance of pre-mRNA processing. The call for improved annotation of noncoding variants is justified by the finding that these functionally important mutations might be overlooked without systematic analysis. These are appropriate concluding statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study uses APARENT2 neural network model to calculate changes in cleavage/polyadenylation efficiency and categorizes paSNVs into UP-paSNVs (LOR\u22651, creating AWTAAA), DOWN-paSNVs (LOR\u2264-1, disrupting AWTAAA), and background controls (BG-paSNVs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 describe the methodological framework. C85 is supported by citation to Linder et al., 2022. C86-C88 define the analytical categories used throughout the study. These definitions are clear and appropriate for the analysis. The choice of thresholds (LOR \u00b11) and requirement for AWTAAA changes provides stringent criteria for identifying functionally significant mutations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "HCT-116 cells used in experimental validation were authenticated by morphology and tested negative for mycoplasma contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 describe quality control measures for the cell line used in experiments. These are standard practices and are appropriately documented. The claims are straightforward methodological statements supported by the materials and methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background on eukaryotic mRNA processing: cleavage and polyadenylation are critical for mature mRNA production, involve multisubunit protein complexes assembling at cis-regulatory sequences including the polyadenylation signal (PAS), with AATAAA and ATTAAA being the most common PAS hexamers in mammals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C14 provide established background knowledge about eukaryotic mRNA processing, supported by citations to prior literature. These are well-established facts in molecular biology and provide necessary context for the study. The claims are appropriately cited and accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Literature context: while cancer sequencing has identified numerous protein-coding driver mutations and some noncoding drivers in promoters/enhancers/splicing signals, mutations affecting polyadenylation signals have received less attention, with only limited studies of individual genes, and no systematic characterization has been performed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C15-C21 establish the gap in knowledge that motivates the study. These claims are supported by citations to relevant literature (PCAWG consortium, studies on alternative polyadenylation, germline mutations, limited somatic mutation studies). The characterization of the gap (C19) is reasonable based on the cited literature, though the claim that \"no systematic characterisation\" exists should be interpreted as \"no comprehensive genome-wide analysis\" rather than absolute absence of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The gene expression effects observed for somatic DOWN-paSNVs are consistent with previous reports on germline SNVs affecting polyadenylation signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 draws a parallel between the current findings and prior work on germline mutations (Higgs et al., 1983; Bennett et al., 2001). This comparison is appropriate and strengthens the biological plausibility of the findings. The claim relies on the accuracy of the cited literature.",
+    "result_type": "MINOR"
+  }
+]

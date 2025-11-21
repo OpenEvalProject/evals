@@ -1,0 +1,159 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C39",
+      "C40",
+      "C44"
+    ],
+    "result": "A benchmark dataset of 164 cryoEM maps of monoclonal antibody-antigen complexes was assembled from EMDB, filtered for maps with \u22644\u00c5 resolution released after April 1st 2022, and processed with ModelAngelo. Of these, 141 and 144 maps yielded non-zero alignment scores for heavy and light chains respectively, with 152 maps analyzed for sequence accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C10, C39-C40, and C44 provide clear methodology and results for benchmark assembly. The dataset composition, filtering criteria, search parameters, and processing pipeline are explicitly described with specific numbers that are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C45",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "ModelAngelo can sequence antibody variable domains from cryoEM reconstructions with accuracies of 80-90% for high-quality maps, though the 15% error rate exceeds typical somatic hypermutation levels. Despite this, ModelAngelo-derived sequences successfully identify V-genes with mean/median identities improving from 0.59/0.52 (random) to 0.78/0.87 for heavy chains and 0.56/0.53 to 0.75/0.85 for light chains, reaching 0.89/1.00 at alignment score cutoffs \u226580.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C16, C45, and C50-C53 are well-supported by quantitative data from the benchmark analysis with appropriate statistical testing (Kolmogorov-Smirnov, p<0.0001). The correlation between alignment scores and V-gene identity is demonstrated in Figure 3, and the comparison to random baseline provides proper context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C46"
+    ],
+    "result": "Complete CDR3 regions (CDRH3 and CDRL3) were covered in 66 and 68 maps respectively. CDR3 length was estimated with average errors of 0.5\u00b13.3 residues (heavy) and 1.7\u00b16.0 residues (light), with sequence identities of 0.63 and 0.41. CDRH3 showed moderately better accuracy than CDRL3, potentially due to tighter antigen binding leading to better order in density maps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 provide quantitative data on CDR3 coverage and accuracy from the benchmark. Claim C46 offers a mechanistic inference that is reasonable given established knowledge about CDRH3's role in antigen binding, though this remains speculative. The data itself is clearly presented in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C47"
+    ],
+    "result": "Global FSC resolution is a poor predictor of both Stitch alignment score and inferred V-gene identity, likely because it is dominated by the bulk antigen rather than representing local resolution in the epitope-paratope region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C47 report an important negative finding with mechanistic explanation. The poor correlation is demonstrated in Figure 5, and the inference about antigen-dominated global resolution is reasonable based on structural biology principles, though local resolution analysis would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "For the CR3022 antibody (IGHV5-51/IGKV4-1), ModelAngelo correctly identified the V-genes and when used as templates for LC-MS/MS peptide assembly, achieved 96% and 99% identity to true sequences. The three remaining errors were I/L assignments. LC-MS/MS alone achieved 97-98% accuracy for this monoclonal sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 describe a well-controlled proof-of-principle experiment with CR3022. The results are clearly quantified and the I/L ambiguity is a known limitation of mass spectrometry. The comparison between integrated and MS-only approaches provides appropriate context for evaluating the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C32",
+      "C48",
+      "C49",
+      "C54",
+      "C55"
+    ],
+    "result": "ModelAngelo-derived templates improve tolerance to polyclonal antibody backgrounds. While Stitch tolerates diffuse polyclonal IgG backgrounds, accuracy drops below 0.6 with five monoclonal antibodies at 5:1 background ratio but recovers to >0.95 using ModelAngelo-derived or true templates. This demonstrates that ModelAngelo templates enable more accurate peptide assembly against complex backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C32, C48-C49, and C54-C55 describe systematic background mixing experiments with clear quantitative results shown in Figure 7. The experimental design appropriately tests different background complexities (diffuse polyclonal vs. specific monoclonals) and template strategies (true, IMGT, ModelAngelo, with/without decoys).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "Analysis of 46 published EMPEM maps found 23 with non-zero alignment scores, of which 8 had scores >50 for both chains. At this threshold, mean/median V-gene identity is estimated at ~0.85/0.90, suggesting experimental EMPEM studies can yield sufficiently detailed reconstructions to accurately narrow down candidate V-genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C31 and C33 apply the benchmark-derived metrics to EMPEM data, but without ground truth sequences for validation. The inference that alignment scores >50 correspond to ~0.85/0.90 V-gene identity relies on extrapolation from the monoclonal benchmark. Independent validation of EMPEM-derived sequences would be needed to confirm this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CryoEM data addresses key limitations of proteomics-based antibody sequencing: heavy-light chain pairing is preserved in cryoEM structures but lost during proteomics sample preparation, and CDRH3 reconstruction is challenging with proteomics alone due to the hypervariable D-segment junction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 accurately describe established limitations of proteomics methods and advantages of cryoEM based on well-known principles of sample preparation and antibody gene recombination. These are supported by general knowledge in the field rather than new experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Both EMPEM and MS-based polyclonal antibody sequencing are estimated to be limited to the top 1-10 antibodies in polyclonal mixtures. EMPEM is biased toward larger, well-ordered antigens, requiring complementary approaches like HDX-MS for comprehensive epitope mapping.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C37-C38 are speculative statements about current limitations without supporting quantitative data. The 1-10 antibody limit is stated as belief rather than demonstrated, and the bias toward well-ordered antigens is inferred from cryoEM principles but not systematically tested. These represent reasonable hypotheses requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Stitch was extended to accept mmCIF files as input, extracting sequences and using ModelAngelo's per-residue confidence scores (from B-factor column) as weights for consensus sequence determination from overlapping polypeptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 clearly describe methodological modifications to Stitch software. The implementation details are straightforward and the use of confidence scores as weights is a reasonable approach, though validation of this weighting scheme's effectiveness is not explicitly provided.",
+    "result_type": "MINOR"
+  }
+]

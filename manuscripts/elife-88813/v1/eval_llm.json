@@ -1,0 +1,253 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Transcriptomic profiling of ductal cells at 3 days post beta cell ablation in adult zebrafish revealed 1866 upregulated and 1515 downregulated genes, with DNA replication and cell cycle as the most enriched upregulated pathways, Notch pathway enriched in downregulated genes, and components of the calcineurin signaling pathway (nfatc3b, ppp3ccb, itpr2, calm3b) associated with cellular senescence signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C85-C87 collectively provide strong evidence from RNA-sequencing data with appropriate statistical analysis (DESeq2, padj < 0.05) and Gene Ontology enrichment analysis. The transcriptomic profiling was performed at an appropriate time point (3 dpt, before beta cell neogenesis) with proper controls and biological replicates. The findings are visualized in Figure 1A-D and are consistent with prior knowledge about Notch signaling in regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Beta cell ablation in larvae activates ductal cell proliferation and accelerates beta cell differentiation from ducts, with duct-associated beta cells appearing between 7-10 dpt in non-ablated larvae and showing more pronounced increase from 10 dpt onwards in ablated larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by quantitative data from Tg(ins:NTR-P2A-mCherry); Tg(nkx6.1:GFP) larvae with EdU incorporation assays and time-course analysis. The experimental design is appropriate with proper controls, and the data show statistically significant differences (Figure 1F-J). The findings establish the larval model for studying ductal regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Cyclosporin A (CsA) treatment transiently enhanced beta cell formation at 10 dpt after beta cell ablation in larvae, with effects specific to regenerative contexts and not affecting normal development or bi-hormonal cell formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 are supported by time-course quantification data showing CsA increases beta cell numbers at 10 dpt but not at 14 dpt, indicating transient acceleration of regeneration. The specificity is demonstrated by lack of effect in non-ablated larvae and on bi-hormonal cells. Statistical analysis shows significant differences with appropriate controls (Figure 2B-D and supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CsA increased neurod1+ endocrine progenitor cells from 4-10 dpt without affecting their proliferation rate, and this effect was specific to beta cells and their progenitors, not affecting alpha or delta cell neogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 are supported by quantification of neurod1+ cells and EdU incorporation assays showing increased progenitor numbers without increased proliferation, indicating neogenesis rather than proliferation. The cell-type specificity is demonstrated by immunofluorescence quantification of alpha and delta cells (Figure 2E-F and supplements). The inference that effects are due to neogenesis is logical given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Overexpression of constitutively active calcineurin (CaNCA) impaired beta cell regeneration at 14 dpt, with both ubiquitous and duct-specific overexpression showing similar effects without affecting ductal structure or normal beta cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by genetic experiments using two independent transgenic approaches (heat-shock inducible and duct-specific cftr:gal4 driver). The data show reduced beta cell regeneration with CaNCA overexpression while ductal morphology remains normal (Figure 3B-E). The inference that CaN acts directly in ducts is well-supported by the duct-specific experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Calcineurin and Notch pathways act synergistically on a common pool of ductal progenitors, with CsA enhancing beta cell differentiation induced by mild Notch inhibition (1-10 \u00b5M LY411575) but not at high doses (15 \u00b5M), and this effect is mediated at least partially through NFAT regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C30 are supported by dose-response experiments with LY411575 and CsA showing synergistic effects at intermediate Notch inhibition levels. The specificity is confirmed using a second calcineurin inhibitor (FK506) and by CaNCA overexpression counteracting Notch inhibition effects. NFAT involvement is demonstrated by CHIR99021 rescue experiments (Figure 4 and supplements). The transient nature of effects supports the acceleration model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Combined Notch and calcineurin inhibition increases ductal progenitor proliferation at 4 dpf followed by progenitor depletion at 6 dpf, with EdU-labeled beta cells detected indicating they arise from proliferating progenitors, demonstrating that both pathways act together to prevent progenitor exhaustion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are supported by EdU incorporation assays showing increased proliferation without change in total ductal cell numbers at 4 dpf, followed by decreased progenitor numbers at 6 dpf correlating with increased beta cell differentiation. The detection of EdU+ beta cells provides direct evidence of their origin from proliferating progenitors. The dose-dependent effects with high Notch inhibition causing premature depletion support the model (Figure 5A-D and supplements).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "During beta cell regeneration, calcineurin inhibition enhanced ductal cell proliferation including tp1+ Notch-responsive cells, but also induced their depletion, suggesting calcineurin fine-tunes the balance between progenitor proliferation and differentiation to prevent exhaustion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 are supported by EdU incorporation data in both Tg(nkx6.1:GFP) and Tg(tp1:VenusPest) reporter lines showing increased proliferation and decreased tp1+ cell numbers with CsA in ablated but not non-ablated larvae. This demonstrates CaN acts on Notch-responsive progenitors without directly affecting Notch signaling. The inference about balance between proliferation and differentiation is well-supported by the combined observations (Figure 5E-J).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "In juvenile and adult zebrafish, CsA transiently increased small islet formation at 7 dpt, while CaNCA overexpression delayed glycemia recovery, demonstrating that calcineurin regulation is necessary for proper beta cell regeneration and glycemia recovery across developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 are supported by quantification of small islets in 2-month-old juveniles and glycemia measurements in adults using both heat-shock and duct-specific CaNCA overexpression. The transient nature of CsA effects is consistent with larval data. The glycemia data show CaNCA overexpression delays recovery, though CsA effects on glycemia are limited possibly due to floor effects. The conclusion about necessity of CaN regulation is well-supported (Figure 6).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Mammalian pancreatic ducts possess intrinsic but limited capacity to regenerate beta cells, with evidence from mouse models showing Neurog3 expression in ducts during regeneration and human ductal cells capable of giving rise to beta cells in transplantation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 provide appropriate background context supported by multiple citations to established literature. The claims accurately represent the current understanding of limited mammalian beta cell regeneration capacity and the evidence for ductal progenitor potential. These are well-established facts in the field supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Zebrafish possess robust age-independent regenerative capacity with beta cell regeneration occurring through multiple mechanisms including ductal progenitors, with findings translatable to mammals and duct-derived beta cells appearing 7-10 days post-ablation in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 provide appropriate background context supported by multiple citations to established literature including the authors' previous work. The claims accurately represent the zebrafish regeneration model and its advantages for studying regenerative mechanisms. These are well-established facts supported by the cited references.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Notch signaling regulates ductal progenitor behavior in a dose-dependent manner, with high levels maintaining quiescence, moderate levels inducing proliferation, and low levels driving differentiation, while steep decreases cause premature differentiation and progenitor depletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C69 provide essential background context supported by citations to key papers (particularly Ninov et al., 2012, 2013). These claims accurately represent established knowledge about Notch signaling in zebrafish pancreatic progenitors and provide necessary context for interpreting the current study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Calcineurin activity patterns correlate with proliferation in zebrafish fin regeneration and human keratinocytes, with low activity associated with high proliferation and CaN cooperating with Notch signaling to regulate cell cycle and differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 provide relevant background context from other regenerative systems and cell types, supported by appropriate citations. These claims establish precedent for CaN's role in proliferation control and its interaction with Notch signaling, providing important context for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Pancreatic progenitors exhibit three division modes (symmetric self-renewing, asymmetric, and symmetric differentiative) regulated by timing of endocrine program induction and Notch signaling, with zebrafish using Ascl1b and Neurod1 instead of Neurog3 for endocrine differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 provide important mechanistic context about progenitor division modes and their regulation, supported by appropriate citations to mouse and zebrafish studies. These claims establish the conceptual framework for understanding how CaN might regulate the balance between proliferation and differentiation through division mode control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Calcineurin is implicated in cellular senescence, and while diabetic patients show increased ductal cell proliferation suggesting regenerative response, these cells cannot efficiently reform beta cell mass, indicating dormant regenerative mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 provide relevant context about CaN's role in senescence and the translational relevance to human diabetes, supported by appropriate citations. The claims about limited human regenerative capacity despite proliferative responses provide important motivation for the study. C84 reflects established knowledge about CaN's role in beta cell function.",
+    "result_type": "MINOR"
+  }
+]

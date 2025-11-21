@@ -1,0 +1,232 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Two tropical tree species, Shorea laevis (slow-growing) and S. leprosula (fast-growing), were characterized with significantly different growth rates (MAI of 0.38 vs 1.21 cm/year) but similar heights (~44 m), with estimated ages of 256 and 66 years respectively based on DBH/MAI ratios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While growth rate measurements (C1, C2) are well-supported by 20-year data, the age estimates (C4, C5) rely on DBH/MAI calculations that assume constant growth rates over centuries. The authors acknowledge this is challenging for tropical trees lacking annual rings (C56), making age estimates highly uncertain. The small sample size (n=2 for slow-growing species) also limits confidence in these foundational parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "De novo reference genomes were assembled for both species with high completeness (97.9% and 97.8% BUSCO), containing 52,935 and 40,665 protein-coding genes respectively, with genome sizes of 347 and 376 Mb showing high syntenic conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genome assemblies are well-validated through multiple metrics (C6-C9): BUSCO completeness scores are high, k-mer estimates align reasonably with flow cytometry data (C57), and the S. leprosula genome matches previous reports (C58). The use of both long-read PacBio and short-read Illumina sequencing with appropriate assembly and polishing methods supports genome quality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Somatic mutations were identified through rigorous sequencing and validation, with 728 and 234 SNVs in slow-growing individuals and 106 and 68 SNVs in fast-growing individuals, showing 94% validation rate by amplicon sequencing and phylogenetic congruence with physical tree structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SNV calling pipeline is robust (C10-C14): biological replicates, dual SNP callers (GATK and BCFtools), multiple quality thresholds, manual curation, and independent amplicon validation (94% accuracy, C14). The phylogenetic congruence with physical structure (C15) provides strong internal validation. High coverage (69.3\u00d7 and 56.5\u00d7) and mapping rates (91.61% and 89.5%) support data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C64",
+      "C65"
+    ],
+    "result": "Somatic mutation rates per meter were quantified showing a linear relationship with physical distance, with slow-growing species accumulating mutations 3.7-fold faster per meter (5.67\u00d710\u207b\u2079 vs 1.53\u00d710\u207b\u2079 nucleotide\u207b\u00b9 m\u207b\u00b9) than fast-growing species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The linear regression analysis (C16) with confidence intervals (C17-C20) provides strong statistical support. The 3.7-fold difference (C21) is well-documented across four individuals. However, the analysis assumes linear accumulation and relies on accurate physical distance measurements. The intercept-zero constraint in the regression is reasonable but should be justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C42",
+      "C66"
+    ],
+    "result": "When normalized by time rather than growth, somatic mutation rates per year were similar between species (7.71\u00d710\u207b\u00b9\u2070 vs 8.05\u00d710\u207b\u00b9\u2070 nucleotide\u207b\u00b9 year\u207b\u00b9), indicating clock-like accumulation independent of growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This central conclusion (C23, C24, C42) critically depends on accurate age estimates, which are acknowledged as uncertain (C4, C5, C56). The DBH/MAI method assumes constant growth rates over centuries, which may not hold. While the similar per-year rates are compelling, the uncertainty in age estimation (especially for the 256-year-old trees) substantially weakens confidence in this key finding. Additional dating methods would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C47"
+    ],
+    "result": "The authors argue that similar cell sizes between species (1.29 mm vs 0.91 mm fiber length) imply similar numbers of cell divisions per meter of growth, supporting that differences in mutation rates per meter are not due to differential cell division.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This reasoning (C22, C47) relies on cited fiber cell measurements from other studies (Usami 1978, Praptoyo and Mayaningsih 2012) rather than direct measurements from the study individuals. The assumption that fiber cell dimensions directly translate to total cell divisions per meter is simplistic and doesn't account for differences in cell types, tissue organization, or meristem dynamics. The authors acknowledge this limitation in the Discussion but still use it as key support for their mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C77"
+    ],
+    "result": "Mutational spectra showed dominance of C>T substitutions at CpG sites (3.38-4.54 fold enrichment), attributed to spontaneous deamination of 5-methylcytosine, with stronger enrichment in slow-growing species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutational spectrum analysis (C26, C28) is well-supported by the data shown in Figure 3. The mechanistic interpretation (C27, C77) is based on established biochemistry with appropriate citations. The enrichment calculations comparing observed to expected frequencies are straightforward and the pattern is consistent across individuals within species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C78"
+    ],
+    "result": "Mutational spectra in tropical trees showed similarity to human cancer signatures SBS1 (cosine similarity 0.789 and 0.597) and SBS5 (0.577 and 0.558), suggesting conserved mutational processes between plants and animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cosine similarity analysis (C29, C31) provides quantitative comparison to established human signatures. The similarities are moderate (0.6-0.8 range), which is reasonable given the evolutionary distance. The interpretation of conservation (C34) is appropriately cautious. However, cosine similarity alone doesn't prove mechanistic conservation\u2014convergent evolution could produce similar patterns. The connection to clock-like processes (C33) is well-supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C35",
+      "C37"
+    ],
+    "result": "Somatic mutations within individuals show neutral evolution, with observed non-synonymous mutation rates not deviating from neutral expectations (p=0.71 and p=1.0 for slow- and fast-growing species).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical test (C35) is appropriate (binomial test) and the non-significant p-values support neutrality. The expected rates were calculated using background mutation rates from intergenic regions, which is a reasonable neutral baseline. The authors also validated using whole-genome rates. The sample size of mutations is adequate for this test.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C36",
+      "C38"
+    ],
+    "result": "Inter-individual SNVs show strong purifying selection with significantly fewer non-synonymous mutations than expected (p<10\u207b\u00b9\u2075 for both species), indicating selection during germline transmission and early development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The highly significant p-values (C36) provide strong statistical evidence for purifying selection. The contrast with neutral somatic mutations (C35) strengthens the interpretation. The mechanistic interpretation (C38) about selection during embryogenesis and development is reasonable, though the data cannot distinguish between selection at different developmental stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Inter-individual SNVs showed reduced C>T substitutions at CpG sites compared to somatic SNVs, potentially due to GC-biased gene conversion during meiosis or biased purifying selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The observation (C39) is supported by Figure 4d. The proposed explanations (C40) are appropriately presented as speculative with citation support. Both GC-biased gene conversion and biased selection are plausible mechanisms. The authors appropriately acknowledge uncertainty about the mechanism while documenting the pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C63"
+    ],
+    "result": "Somatic mutation rates per year in Shorea are higher than previously reported in temperate trees (Quercus, Populus, Eucalyptus, Picea), suggesting tropical trees may not suppress mutation rates as strongly as temperate counterparts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the comparison (C25, C63) is supported by citations, direct comparison across studies is problematic due to methodological differences in SNV calling, validation stringency, and age estimation. The authors acknowledge this limitation and appropriately call for standardized comparisons. The claim about tropical vs. temperate differences is speculative without controlling for methodology and phylogenetic distance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C50"
+    ],
+    "result": "The authors propose that non-replicative mutagenesis (spontaneous CpG deamination accumulating with absolute time) predominates over replication-dependent mutagenesis in explaining the observed patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The mechanistic model is conceptually sound (C44, C45) and the inference (C50) is consistent with the data. However, the model relies on several untested assumptions: (1) similar \u03b1 and \u03b2 between species, (2) accurate age estimates, (3) cell cycle duration inversely proportional to MAI, and (4) similar cell divisions per meter. The authors present a mathematical framework but don't provide direct measurements of these parameters. The conclusion is plausible but requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C67"
+    ],
+    "result": "The neutral nature of somatic mutations results in a molecular clock, with older trees contributing more to genetic variation due to time-dependent mutation accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The molecular clock interpretation (C51) follows logically from neutral evolution (C35) and clock-like accumulation (C24), with appropriate citations to classic theory. However, the conclusion about older trees' contribution (C67) depends on the uncertain age estimates and assumes mutations in older trees are equally likely to be transmitted to offspring, which may not hold if germline establishment timing differs with tree age.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C70",
+      "C71"
+    ],
+    "result": "The study site in central Borneo represents a humid tropical rainforest dominated by Dipterocarpaceae, filling a knowledge gap as no previous studies examined somatic mutation landscapes in tropical ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The site characterization (C52-C55) is well-documented with climate data and location information. The claim about knowledge gaps (C70) is supported by literature review. The ecological context (C71) is established knowledge. This provides appropriate justification for the study's significance.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,401 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "ARID1A is expressed during pachynema and becomes enriched on sex chromosomes during diplonema. Arid1a mRNA is expressed at various spermatogenic stages with notable expression at pachynema, while Arid1b is undetectable until late spermiogenesis. ARID1A protein is uniformly distributed in pachytene spermatocytes but becomes preferentially enriched on sex chromosomes during late diplonema.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C36-C39 are supported by single-cell RNA-seq data (Figure 1\u2014figure supplement 1) and immunofluorescence imaging (Figure 1) showing ARID1A expression patterns and localization throughout meiosis. The temporal and spatial expression data are consistent and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C53"
+    ],
+    "result": "Loss of ARID1A causes pachytene arrest and failure of meiotic sex chromosome inactivation (MSCI). Arid1a cKO spermatocytes accumulate at mid-pachynema, with no ARID1A-negative cells progressing to diplonema or metaphase-I, indicating that ARID1A is essential for progression beyond pachynema.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C4, C48-C50, C53 are supported by meiotic staging data (Table 1), immunofluorescence showing absence of later-stage ARID1A-negative cells (Figure 2\u2014figure supplement 3B), and flow cytometry showing reduced round spermatids (Figure 2\u2014figure supplement 4). The convergence of multiple independent assays strongly supports pachytene arrest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C47",
+      "C51"
+    ],
+    "result": "The Stra8-Cre system shows incomplete recombination efficiency in generating Arid1a cKO. Approximately 70-74% of spermatocytes lack ARID1A, with both floxed and excised alleles detected by RT-PCR in pachytene spermatocytes, while round spermatids express only the floxed allele, indicating escapers complete meiosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42, C45-C47, C51 are supported by quantitative immunostaining, RT-PCR, and Western blot data showing incomplete Cre recombination. This technical limitation is well-documented and explains the presence of mature spermatozoa in mutant testes. The authors appropriately acknowledge this limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C52"
+    ],
+    "result": "Despite pachytene arrest in ARID1A-deficient cells, Arid1a cKO testes contain mature spermatids and spermatozoa due to incomplete Cre recombination. Flow cytometry shows significantly reduced round spermatids in mutant testes, consistent with partial meiotic block.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C52 are supported by histological analysis (Figure 2\u2014figure supplement 2) and flow cytometry (Figure 2\u2014figure supplement 4). The apparent contradiction is resolved by incomplete Cre efficiency, allowing escaper cells to complete spermatogenesis. This interpretation is consistent with all data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "ARID1A loss causes widespread transcriptional dysregulation with preferential upregulation of sex-linked genes. RNA-seq reveals 53% of sex-linked genes are misexpressed (86.4% upregulated), with 97% of highly misexpressed sex-linked genes showing increased expression, implicating ARID1A in MSCI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C60 are supported by comprehensive RNA-seq analysis (Figure 2A-B, Figure 2\u2014source data 2) with appropriate statistical thresholds (FDR <0.05). The dramatic skew toward sex-linked gene upregulation provides strong evidence for ARID1A's role in sex chromosome repression. Sample size (quadruplicate) is adequate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "ARID1A occupies promoters of differentially regulated genes genome-wide, with preferential association at promoters of normally repressed sex-linked genes. CUT&RUN reveals ARID1A binding patterns not detectable by immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 are supported by CUT&RUN data (Figure 2\u2014figure supplement 5) using appropriate controls (Arid1a cKO as negative control). The higher resolution of CUT&RUN compared to IF is well-established. Data from two different antibodies strengthen confidence in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "DNA damage response (DDR) signaling on sex chromosomes occurs independently of ARID1A. \u03b3H2Ax, ATR, and MDC1 localization appear normal in ARID1A-deficient cells, indicating that failure of gene silencing occurs despite intact DDR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by immunofluorescence data (Figure 2\u2014figure supplement 6) showing normal localization of key DDR factors. This finding is important for mechanistic understanding, indicating ARID1A acts downstream or independently of DDR initiation. Multiple DDR markers strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "ARID1A limits elongating RNA polymerase II (pSer2-RNAPII) association with sex chromosomes during pachynema. Loss of ARID1A results in 1.5-fold increased pSer2-RNAPII on sex chromosomes (p=0.0003), facilitating inappropriate transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C70-C72 are supported by quantitative immunofluorescence (Figure 3) with adequate sample sizes (n=82 WT, n=119 cKO) and statistical significance. The 1.5-fold increase is likely underestimated due to inability to distinguish escapers from mutants, as authors acknowledge. The mechanism linking ARID1A to RNAPII regulation is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Loss of ARID1A causes dramatic shift toward promoter-associated chromatin accessibility. ATAC-seq shows increased accessibility at transcription start sites of both autosomal and sex-linked genes, with sex-linked upregulated genes showing greatest accessibility increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C73-C79 are supported by comprehensive ATAC-seq analysis (Figure 4) performed in quadruplicate. The dramatic shift in peak distribution from balanced (promoters 34%, intergenic 22.8%, intronic 21.5%) to promoter-dominated is striking and well-documented. The differential effect on sex chromosomes versus autosomes is clearly shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7",
+      "C9",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "ARID1A promotes preferential enrichment of histone variant H3.3 on sex chromosomes. H3.3 accumulates on sex chromosomes progressively during pachynema (17% early, 70% mid, 95% late) in wild-type, but remains at autosomal levels in ARID1A-deficient cells (89% mid, 77% late pachytene lack enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C9, C82-C86 are supported by quantitative immunofluorescence (Figure 5A) with large sample sizes across multiple pachytene substages. The progressive accumulation in wild-type and failure in mutants is well-documented. This represents a key mechanistic finding linking ARID1A to a known MSCI hallmark.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Loss of ARID1A causes abnormal retention of canonical histones H3.1/3.2 on sex chromosomes. While H3.1/3.2 is normally excluded from sex chromosomes in mid (56%) and late (100%) pachynema, ARID1A loss increases retention in mid (66%) and late (40%) pachytene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 are supported by immunofluorescence data (Figure 5B) showing altered H3.1/3.2 dynamics. The reciprocal relationship between H3.3 depletion and H3.1/3.2 retention is consistent with a histone replacement defect. Quantification across pachytene substages strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "ARID1A affects H3.3 localization without altering H3.3 expression or H3.3 chaperone levels. Western blotting shows no difference in total H3.3 abundance, and immunofluorescence shows normal DAXX and HIRA levels and localization in ARID1A-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 are supported by Western blot (Figure 5\u2014figure supplement 1A) and immunofluorescence (Figure 5\u2014figure supplement 1B-C) data. These controls are important for ruling out indirect effects through H3.3 expression or chaperone availability, supporting a direct role for ARID1A in H3.3 localization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "CUT&RUN reveals ARID1A-dependent shifts in H3.3 genomic localization from intergenic sites to promoters. Wild-type shows few sex-linked H3.3 peaks (n=224, 98% sex-linked, intergenic) with gene-wide spreading, while ARID1A loss causes dramatic increase in peaks (n=12,183) that are predominantly autosomal (94.5%), genic, and promoter-enriched.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C95-C103 are supported by high-resolution CUT&RUN analysis (Figure 5\u2014figure supplement 2-3) with appropriate replication (duplicates for WT, triplicates for cKO). The dramatic redistribution from intergenic to genic/promoter regions is well-documented. The shift from sex-linked to autosomal peaks is striking and mechanistically informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "ARID1A prevents H3.3 accumulation at promoters of target genes. Autosomal genes show H3.3 enrichment at TSSs that is enhanced in ARID1A-deficient cells, while sex-linked genes show striking TSS accumulation only upon ARID1A loss, representing redistribution from intergenic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C108 are supported by integrated CUT&RUN analysis (Figure 5\u2014figure supplement 2-3) showing differential effects on autosomal versus sex-linked genes. The interpretation of H3.3 redistribution from high-affinity intergenic sites to promoters is well-supported by the data and provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Integration of ATAC-seq and H3.3 CUT&RUN reveals ARID1A restricts H3.3 to intergenic sites on sex chromosomes. K-means clustering identifies regions that lose H3.3 (intergenic) versus gain H3.3 (genic) upon ARID1A loss, indicating H3.3 redistribution rather than global changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C116 are supported by sophisticated integration of ATAC-seq and CUT&RUN datasets (Figure 6) using k-means clustering. The analysis appropriately identifies common (n=7,194) and gained (n=2,246) accessible regions and correlates with H3.3 occupancy changes. The conclusion about H3.3 redistribution is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "ARID1A-governed H3.3 localization influences DNA double-strand break (DSB) sites. Regions gaining H3.3 upon ARID1A loss (G1, G3) show PRDM9 motif enrichment and normally contain DMC1 and H3K4me3, suggesting antagonism between H3.3 and DSB repair sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 are supported by motif enrichment analysis (Figure 6\u2014figure supplement 1B) and integration with published DMC1 and H3K4me3 ChIP-seq data (Figure 6\u2014figure supplement 1C-D). The correlation between H3.3-depleted regions and DSB markers is compelling, though the authors appropriately note this is correlative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C123",
+      "C124",
+      "C127",
+      "C149"
+    ],
+    "result": "ARID1A is required for normal DMC1 localization to sex chromosomes. Loss of ARID1A causes marked reduction in DMC1 foci on sex chromosomes (p=7.5e-09), with ectopic H3.3 occupancy at sites that do not co-localize with DMC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C123-C124, C127, C149 are supported by quantitative immunofluorescence (Figure 7A-B) with adequate sample sizes (n=66 WT, n=75 cKO) and highly significant p-value. The observation of non-overlapping H3.3 and DMC1 localization provides mechanistic insight into the relationship between chromatin composition and DNA repair.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C153",
+      "C156"
+    ],
+    "result": "RAD51 localization to sex chromosomes is unaffected by ARID1A loss. Analysis of published RAD51-SSDS data and immunofluorescence show no detectable RAD51 at H3.3-enriched regions and normal RAD51 foci formation in ARID1A-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126, C153, C156 are supported by analysis of published SSDS data (Figure 7\u2014figure supplement 1A) and immunofluorescence (Figure 7\u2014figure supplement 1B). The differential effect on DMC1 versus RAD51 is important for understanding the specificity of ARID1A's role in DNA repair and is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C128",
+      "C130",
+      "C131",
+      "C132",
+      "C158"
+    ],
+    "result": "ARID1A has a dual role in meiotic sex chromosome regulation, promoting both transcriptional silencing and DNA repair. BAF-A promotes H3.3 accumulation on sex chromosomes at mid-pachynema, coinciding with H3.1/3.2 and RNAPII eviction, and facilitates DMC1 localization for DNA repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C128, C130-C132, C158 represent the major conclusions integrating multiple experimental findings. The dual role is supported by convergent evidence from RNA-seq (gene silencing), chromatin composition analysis (H3.3/H3.1/3.2), RNAPII localization, and DMC1 foci quantification. The model is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C157"
+    ],
+    "result": "H3.3 enrichment at intergenic sites is inversely correlated with DMC1 localization, and ARID1A loss causes H3.3 redistribution to DMC1-associated regions. This suggests H3.3-enriched regions may be unfavorable for DNA repair and that BAF-A may facilitate DMC1 loading/retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C152, C157 are based on correlative data from integrated analysis of H3.3 CUT&RUN and DMC1 localization. While the inverse correlation is well-documented, the mechanistic interpretation remains speculative. The authors appropriately acknowledge the correlative nature (C152). Direct evidence for H3.3 inhibiting repair or ARID1A facilitating DMC1 loading is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C68",
+      "C69",
+      "C80",
+      "C81",
+      "C122",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C139",
+      "C140",
+      "C143",
+      "C144",
+      "C154",
+      "C155"
+    ],
+    "result": "Background knowledge claims about meiosis, MSCI, sex chromosome biology, and relevant chromatin factors. These include established facts about sex chromosome pairing, DDR signaling, H3.3 enrichment as MSCI hallmark, SWI/SNF requirements, and recombinase localization patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C15-C35, C68-C69, C80-C81, C122, C133-C136, C139-C140, C143-C144, C154-C155 represent established scientific knowledge supported by appropriate citations to previous literature. These provide necessary context for interpreting the current findings and are accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C129",
+      "C137",
+      "C138",
+      "C141",
+      "C142",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "Discussion and interpretation claims about mechanisms and comparisons to other systems. These include speculation about BAF-A versus PBAF roles, comparison to XCI, potential mechanisms linking H3.3 to RNAPII regulation, and relationship between ARID1A and DDR signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C129, C137-C138, C141-C142, C145-C148 represent interpretations and speculation in the Discussion. While grounded in the data, these mechanistic proposals (e.g., H3.3 limiting RNAPII pausing, DDR recruiting BAF-A) lack direct experimental support. The authors appropriately use cautious language ('may', 'might', 'possible'), but these remain hypotheses requiring future testing.",
+    "result_type": "MINOR"
+  }
+]

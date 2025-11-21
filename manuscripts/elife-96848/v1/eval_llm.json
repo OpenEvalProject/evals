@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C36",
+      "C37",
+      "C38",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors successfully developed and applied a NIR-based FRET biosensor (C99 720-670) combined with NIR confocal microscopy to record \u03b3-secretase activity in individual neurons in living mouse brains in vivo for the first time. The biosensor was delivered via AAV to the somatosensory cortex and detected at depths up to ~100 \u03bcm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29, C36-C38, and C92 provide converging experimental evidence showing successful in vivo detection of the biosensor in neurons 3-4 weeks post-AAV injection, with imaging depth to ~100 \u03bcm. The methodological claims (C28, C30, C93) are supported by the successful application demonstrated in Figures 1C-D and supplementary figures. This represents a novel technical achievement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Immunohistochemical characterization showed that approximately 40% of NeuN-positive neurons express the C99 720-670 biosensor, and almost all biosensor-expressing cells are neurons (NeuN-positive, GFAP-negative, Iba-1-negative).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 are directly supported by quantitative immunohistochemical data presented in Figure 1\u2014figure supplement 2, showing cell-type specificity and transduction efficiency. The data demonstrate neuronal specificity of biosensor expression with appropriate controls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors developed an automated image processing pipeline involving background subtraction, median filtering, 3D iterative thresholding, and morphological filtering to segment individual neurons and exclude autofluorescent objects based on 720/670 ratio thresholds (<1.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 and C104-C108 describe a systematic image processing workflow supported by Figure 2A and supplementary figures. The identification and exclusion of autofluorescent objects (C44-C46) is validated by scatter plot analysis in Figure 2\u2014figure supplement 1B. The methodology is appropriately cited and appears technically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C98"
+    ],
+    "result": "DAPT administration dose-dependently increased APP CTFs without altering full-length APP levels, confirming \u03b3-secretase inhibition in vivo. However, DAPT decreased 720/670 ratios by 22.1% in mouse brains, contrary to increases observed in cell culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by biochemical data (Figure 2\u2014figure supplement 2A) and imaging data (Figure 2\u2014figure supplement 2B-C) showing DAPT effects. The unexpected direction of FRET change (decrease vs. increase) is acknowledged and discussed (C52-C53), suggesting orientation-dependent FRET effects. The validation is appropriate though the interpretation requires caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C54",
+      "C55",
+      "C56",
+      "C61"
+    ],
+    "result": "\u03b3-secretase activity is heterogeneously regulated among individual neurons in live mouse brains, with neighboring neurons exhibiting similar 720/670 ratios. Statistical analysis revealed significant positive correlations between individual neuron activity and the average activity of 2, 5, or 10 neighboring neurons across three independent mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C54-C56 are supported by visual observations (Figure 3A) and quantitative correlation analyses (Figures 3B-D, Figure 3\u2014figure supplement 2). The correlations are statistically significant (p<0.001) and replicated across three mice with appropriate sample sizes (n=200-487 neurons). The effect sizes are modest but consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C62",
+      "C63"
+    ],
+    "result": "There is a statistically significant correlation between \u03b3-secretase activity in individual neurons and the average activity of neurons within a 20 \u03bcm radius, demonstrating spatial clustering of neurons with similar \u03b3-secretase activity levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C62-C63 are supported by correlation analyses using a distance-based approach (Figures 4B-D) across three independent mice. The spatial analysis complements the nearest-neighbor approach and strengthens the evidence for activity clustering. Statistical significance is maintained (p<0.001) with appropriate sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The positive correlation between \u03b3-secretase activity in neighboring neurons is abolished by DAPT treatment, indicating that the correlation is dependent on active \u03b3-secretase. This suggests potential 'cell non-autonomous' regulation of \u03b3-secretase activity in mouse brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by loss of correlation after DAPT treatment (Figure 5A-D) in both nearest-neighbor and radius-based analyses. The loss of correlation upon \u03b3-secretase inhibition provides strong evidence that the observed clustering depends on enzymatic activity. Claims C67-C68 represent reasonable interpretations, though the mechanism remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "AAV transduction was spatially uneven, with biosensor expression correlating among neighboring neurons. However, the 720/670 ratio (\u03b3-secretase activity) did not correlate with biosensor expression levels, indicating that uneven transduction did not confound activity measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 address a critical potential confound. The positive correlation of biosensor expression among neighbors (C57, Figure 3\u2014figure supplement 1A) could artifactually explain activity clustering. However, the lack of correlation between expression level and 720/670 ratio (C59, Figure 3\u2014figure supplement 1B) effectively rules out this confound. This control strengthens the main findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The C99 720-670 biosensor design involves fusing the C-terminus of APP C99 to FRET donor and acceptor fluorescent proteins, where \u03b3-secretase cleavage alters FRET efficiency. The biosensor design does not significantly affect C99 cleavage efficiency by \u03b3-secretase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 describe the biosensor principle illustrated in Figure 1A. Claim C35 references previous validation studies (Maesako et al., 2020; Houser et al., 2020) demonstrating that the biosensor does not perturb \u03b3-secretase processing. This validation is critical for interpreting the results as reflecting endogenous activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "FRET efficiency depends on both proximity and orientation of fluorophores. The observation that DAPT decreases 720/670 ratios in vivo (opposite to cell culture) suggests orientation plays a significant role in this biosensor, and FRET response direction is cell-type dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 states established FRET principles. Claims C52-C53 represent reasonable interpretations of the unexpected DAPT effect (C50). The authors appropriately acknowledge this complexity and note the need for model-specific validation. This interpretation is speculative but well-reasoned given the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Statistical analysis used Pearson correlation coefficients calculated in Python (Scipy) with p<0.001 as the significance threshold. Sample sizes of approximately 200-250 neurons per animal were determined based on previous in vitro correlation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C112 describe the statistical methodology. The use of Pearson correlation is appropriate for the linear relationships examined. The significance threshold (p<0.001) is stringent. Sample size justification based on prior studies (C112) is reasonable, and actual sample sizes (200-487 neurons) meet or exceed targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors discuss potential mechanisms for cell-to-cell heterogeneity in \u03b3-secretase activity, including differential expression of \u03b3-secretase complex isoforms (PSEN1/2, Aph1a/b/c) and varying equilibrium between active and inactive enzyme states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C80 represent discussion of prior literature and speculation about mechanisms. The cited evidence (C73-C76) about differential phenotypes of knockout mice supports the notion that different complexes have distinct activities (C77). The speculative explanations (C78, C80) are appropriately qualified and represent reasonable hypotheses for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The authors speculate that secreted A\u03b242 (which exerts feedback inhibition on \u03b3-secretase) or local oxygen concentration (via HIF-1\u03b1 regulation of \u03b3-secretase) may contribute to the observed clustering of neurons with similar \u03b3-secretase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81 and C83-C84 cite relevant literature about A\u03b242 feedback inhibition and HIF-1\u03b1 regulation. However, claims C82 and C85 are purely speculative without supporting experimental evidence in this study. These represent plausible hypotheses but remain untested and should be clearly distinguished from demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C96",
+      "C97"
+    ],
+    "result": "Background claims establish that \u03b3-secretase is a critical intramembrane protease processing multiple substrates including Notch and APP, with essential roles in development, neuronal survival, and disease pathogenesis including AD, cancer, and inflammatory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C21, and C86-C97 represent established knowledge supported by appropriate citations to prior literature. These background claims provide context for the study but are not novel findings. The citations appear appropriate and the statements align with established understanding of \u03b3-secretase biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Prior work established FRET-based biosensors for \u03b3-secretase activity in cultured neurons, revealing heterogeneous regulation. Conventional assays only measure bulk activity ex vivo. NIR imaging offers advantages of depth penetration and low autofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C23 reference the authors' previous work developing FRET biosensors. Claims C24-C25 accurately describe limitations of conventional assays. Claims C26-C27 state established properties of NIR imaging. All claims are appropriately cited and provide rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Multiphoton microscopy has limitations including potential phototoxicity from high laser powers and high instrumentation complexity and cost.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 represent established knowledge about multiphoton microscopy limitations. These statements provide context for positioning NIR confocal microscopy as an alternative approach. The claims are reasonable though somewhat promotional of the authors' chosen method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Methodological details describe AAV vector construction, viral packaging, surgical procedures for cranial window implantation, and NIR confocal microscopy parameters for biosensor detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C103 provide essential methodological details that are clearly described and appropriately cited where relevant. These technical details enable reproducibility and are consistent with standard practices in the field.",
+    "result_type": "MINOR"
+  }
+]

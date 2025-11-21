@@ -1,0 +1,170 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C60",
+      "C101",
+      "C103",
+      "C104",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study analyzed lipid profiles from 31 breast cancer patients before and after paclitaxel therapy, quantifying 255 lipid mediators. Of these patients, 17 (54.9%) developed neuropathy, with most experiencing grade 1 severity. The authors acknowledge limitations including small sample size and heterogeneity in treatment regimens.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly identify the small sample size as 'a significant limitation,' noting that 'out of 31 patients, only 17 patients were reported to develop neuropathy, with significant neuropathy (grade 2/3) in only 5 patients.' They state this 'limits the interpretation of the results.' The heterogeneity in treatment regimens is also acknowledged as problematic.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C39",
+      "C147"
+    ],
+    "result": "Machine learning algorithms trained on 27-77 lipid mediators could distinguish pre- and post-paclitaxel samples with up to 90% balanced accuracy in the primary cohort and 60-62% accuracy in an independent validation cohort. Permutation testing confirmed results were not due to overfitting.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge 'the use of multiple methods to classify lipid patterns' as a strength. While they note the algorithms 'could not distinguish between samples with and without neuropathy,' they do not challenge the ability to distinguish pre- vs. post-treatment samples. The validation in a second cohort is accepted despite its limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C123",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Three sphingolipids including SA1P differed significantly between patients with and without neuropathy at end of treatment using univariate analyses. However, multivariate machine learning algorithms could not reliably distinguish neuropathy status, likely due to small sample size (n=31 post-treatment samples).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers note that 'potentially due to this small number of patients with neuropathy, the machine learning algorithms could not distinguish between samples with and without neuropathy. Only selected univariate analyses identified differences in lipid profiles potentially related to neuropathy.' They also point out the confidence intervals for neuropathy classification 'was not separated from guess level.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C125",
+      "C126"
+    ],
+    "result": "SA1P induced calcium transients in approximately 11.7% of sensory neurons via TRPV1 channels and S1P receptors. The TRPV1 antagonist AMG9810 abolished SA1P responses, and fingolimod (S1PR1 modulator) reduced the number of responding neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers state 'it is not clear how this experimental model assists in validating the role of SA1P in neuropathy development as there is no assessment of sensory neuron damage or other hallmarks of peripheral neuropathy.' They acknowledge the results 'demonstrate that some sensory neurons respond to SA1P and that this activity is linked to TRPV1 receptors' but emphasize 'further studies will be required to determine if this is mechanistically related to neuropathy.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Sphingolipids were significantly overrepresented among the top lipid markers regulated by paclitaxel treatment, comprising 40.7% of the final 27-marker set compared to 18% of the original 255 lipids (Fisher's exact test p=0.01).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this statistical finding about sphingolipid enrichment. They acknowledge the study presents 'findings about the role of sphingolipids using lipidomics with machine learning in paclitaxel-induced peripheral neuropathy' and note that 'based on the results of previous studies, it is likely that sphingolipid metabolism plays a role in chemotherapy induced peripheral neuropathy.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C41",
+      "C136"
+    ],
+    "result": "LPC 24:0, a lipid deemed irrelevant by machine learning analysis, showed no notable activation of sensory neurons at 1 and 10 \u03bcM concentrations, validating the machine learning feature selection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this negative control result. They acknowledge 'the leading hit from machine learning, SA1P, was validated as a highly active mediator in a neuronal cell model, while a lipid maker deemed irrelevant by machine learning actually showed ineffectiveness in the cell model' as part of the study's validation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C46",
+      "C40"
+    ],
+    "result": "In the independent validation cohort, SA1P showed a trend toward different concentrations between pre- and post-treatment samples (p=0.086), consistent with its top ranking in feature selection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this validation finding. While they note limitations of the validation cohort (different sampling time, lower neuropathy incidence), they acknowledge that 'algorithms trained with lipid information from cohort 1 were able to successfully identify whether a probe was taken before or after paclitaxel therapy in the second cohort at a better than guessing level.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C127",
+      "C141"
+    ],
+    "result": "The authors propose that S1P receptor modulators like fingolimod may be a potential treatment strategy for reducing paclitaxel-induced neuropathy based on their findings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly state 'the results do not provide evidence to support the use of S1PR1 receptor antagonists as a therapeutic strategy' and emphasize 'it is important to be careful with language use in the discussion, as the significance of the present results are overstated.' They conclude 'the data presented do not provide sufficient evidence to support the contention that SA1P has an important role in paclitaxel induced peripheral neuropathy.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C138",
+      "C149"
+    ],
+    "result": "The study employed a 'mixture of experts' approach combining multiple machine learning and statistical methods with rigorous validation to identify biologically relevant lipid mediators in an unbiased manner.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers identify 'the use of multiple methods to classify lipid patterns' as a strength of the study. They acknowledge 'the attempt to validate findings from the clinical cohort in a preclinical model using primary sensory neurons' as another strength, indicating acceptance of the multi-method validation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C133",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study had several methodological limitations including lack of quantitative sensory testing, small sample size, and a validation cohort with different sampling protocols and lower neuropathy incidence (26.5% vs 54.9%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly note these limitations, stating 'the authors acknowledge this limitation' regarding sample size and 'also acknowledged is the limited method used to assess neuropathy.' These are presented as weaknesses that 'limit the interpretation of the results.'",
+    "result_type": "MINOR"
+  }
+]

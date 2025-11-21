@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C30",
+      "C64",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C84",
+      "C85",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The authors collected over 20,000 hand-drawn ROCF images from 90 countries and diverse clinical populations, and obtained ground truth scores using a novel crowdsourcing approach with approximately 5,000 human workers trained via an interactive web application. Each figure was scored by an average of 13 workers, with median scores used as ground truth and quality control measures excluding workers with >20% disagreement with clinician ratings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly praised the 'comprehensive data collection' and noted that the authors 'collected over 20,000 hand-drawn ROCF images from a wide demographic and geographic range, ensuring a robust and diverse dataset.' The crowdsourcing methodology was recognized as a 'novelty of our approach' and reviewers found the data collection 'critical for training a generalizable and effective deep learning model.' No concerns were raised about the dataset or crowdsourcing methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors developed a multihead convolutional neural network with both classification and regression variants, achieving progressively better performance through data augmentation (DA) and test-time augmentation (TTA). The best model combined regression and classification approaches, achieving MSE of 3.00 and MAE of 1.11, which considerably outperformed human raters (MSE 16.3, MAE 2.41).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly recognized the 'advanced deep learning approach' and noted that 'utilizing a multi-head convolutional neural network to automate ROCF scoring represents a sophisticated application of current AI technologies.' One reviewer stated the authors 'demonstrated the model's ability to outperform both crowdsourced raters and professional clinicians in scoring the ROCF.' The quantitative performance metrics were not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C81"
+    ],
+    "result": "The neural network model performs highly unbiased with predictions close to ground truth and errors concentrated around zero (MSE 3.00, MAE 1.11), outperforming both online raters (MSE 16.3, MAE 2.41) and clinicians (MSE 9.25, MAE 2.15). The model shows balanced performance across individual figure elements without considerable bias, whereas clinicians show more spread-out error distributions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly stated the authors 'found their model to have exceptional accuracy and perform similarly to crowdsourced workers and clinicians with, in some cases, less degree of error/score dispersion than clinicians.' Another reviewer noted 'the evidence supporting the validity of the AI scoring system is compelling.' The comparative performance claims were accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C45",
+      "C89",
+      "C90",
+      "C102"
+    ],
+    "result": "The model performance was successfully replicated in a large independent prospective validation study (2,498 ROCF images from 961 healthy adults and 288 patients) that was pre-registered prior to data collection, achieving MSE of 3.32 and MAE of 1.13.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praised the validation approach, stating 'the inclusion of an independent prospective validation study further strengthens the credibility of the results.' The pre-registration and prospective nature of the validation were recognized as methodological strengths. No concerns were raised about the validation study design or results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C79"
+    ],
+    "result": "The scoring system can reliably identify and accurately score individual figure elements in previously unseen ROCF drawings, providing item-specific scores that facilitate explainability of the AI-scoring system through visualization of detailed score breakdowns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the 'detailed analysis of individual figure elements' as a strength, one reviewer specifically noted that 'one area where the study could be strengthened is in the explainability of the AI methods used' and stated 'to ensure the scores are fully transparent and consistent for clinical use, it will be important for future work to test the robustness of the approach.' This indicates the explainability is recognized but requires further development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C74",
+      "C75"
+    ],
+    "result": "The model maintains high accuracy and generalizes well across various demographics and clinical conditions, including children and patients with neurological disorders. The scoring system delivers accurate scores even when drawings are distorted or have omissions typical of neurological patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers noted the 'comprehensive data collection' from 'a wide demographic and geographic range,' one reviewer raised concerns about 'the lack of detailed analysis across different patient demographics,' suggesting 'there are areas of improvement that could make the results more robust.' This indicates acceptance of the generalization claim but with reservations about the depth of demographic analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The scoring system is highly robust against different semantic transformations including rotations, perspective changes, brightness, and contrast variations that occur in real-life scenarios. Data augmentation significantly improves robustness, with performance degraded only under unrealistic and extreme transformations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praised the 'robustness analysis efficacy,' noting 'the model underwent a thorough robustness analysis, testing its adaptability to variations in rotation, perspective, brightness, and contrast' and that 'such meticulous examination ensures the model's consistent performance across different clinical imaging scenarios.' The robustness findings were accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C86",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Convergence analysis revealed that after approximately 8,000-10,000 images, no substantial improvements could be achieved by including more data, suggesting the dataset is rich and diverse enough and that future improvements are likely to come from algorithmic rather than data-centric efforts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the convergence analysis or the conclusions drawn from it. The comprehensive dataset was repeatedly praised, and the finding that the dataset is sufficient was implicitly accepted through the overall positive assessment of the methodology and results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The model exhibits comparable MAE across the entire range of total scores, with a trend toward lower MAEs for high scores, explained by fewer possible combinations for high-score images and proportionally more training data for high-score images in the dataset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not raise concerns about the score-specific performance analysis or the explanations provided for the observed trends. The analysis was presented as part of the comprehensive evaluation that reviewers found convincing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The model has been integrated into a tablet- and smartphone-based application that provides instant scoring, currently in beta testing with selected clinicians in real-world settings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "One reviewer specifically noted 'the work, when elaborated on how to access the app, will have far-reaching implications for current clinical practice,' indicating acceptance of the application development while requesting more information about access. The beta testing status was not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Manual ROCF scoring is time-consuming (5-15 minutes per figure), requires training, depends on subjective judgments, introduces human scoring biases, and has low inter-rater reliability with criteria varying from clinician to clinician.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the motivation for the study based on limitations of manual scoring. One reviewer noted the goal was 'to overcome the limitations of manual scoring, such as subjectivity and time consumption.' The characterization of manual scoring problems was not challenged and formed the accepted rationale for the automated system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C80",
+      "C82"
+    ],
+    "result": "An automated scoring system can overcome intra- and inter-rater variability, remove time-consuming tasks from clinicians, support more accurate and timely healthcare decisions, provide completely reproducible scores, and advance the quality of neuropsychological assessments by diminishing reliance on subjective ratings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly recognized these benefits, with one stating the work 'represents a significant step forward in automating neuropsychological assessments, potentially revolutionizing how memory deficits are evaluated in clinical settings.' Another noted the system is 'sufficient for clinical use' and provides 'compelling quality, enough for clinical use now.' The claimed benefits were accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C83"
+    ],
+    "result": "The twofold innovative approach combining digitization of neuropsychological tests and high-quality scoring using crowdsourced intelligence can provide a roadmap for how AI can be leveraged in neuropsychological testing more generally and can be translated to many different neuropsychological tests.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers recognized the broader implications, with one stating 'the application of deep learning to clinical neuropsychology opens avenues for future research, including the potential automation of other neuropsychological tests.' Another noted this is 'an important advance in using AI methods for clinical applications, which is both innovative and has implications beyond a single subfield.' The generalizability claim was accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Image resolution analysis showed that inputs of size 232 \u00d7 300 pixels yielded the best performance for both models with and without data augmentation, and all subsequent analyses were performed with this image size.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not challenge the image resolution analysis or the choice of image size. This methodological detail was accepted as part of the rigorous methodology that reviewers praised.",
+    "result_type": "MINOR"
+  }
+]

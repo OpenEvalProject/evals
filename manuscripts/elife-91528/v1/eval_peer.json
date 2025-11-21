@@ -1,0 +1,160 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors used FACS sorting based on THY1 and RMV-1 to enrich spermatogonia, achieving 85-95% PLZF+ cells. They validated enrichment using marker gene expression and deconvolution analysis, estimating 82-99% SSC proportions across developmental stages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Multiple reviewers raised critical concerns about the FACS methodology. Reviewers noted that THY1+ sorting 'is now known to not be highly specific for spermatogonia (somatic cells are also recovered) and definitely not for SSCs.' One reviewer stated the deconvolution results showing 99% SSCs at P8 are 'impossible' given the known overlap between PLZF and KIT markers. Reviewers questioned why single-cell multiome was not performed and noted that 'critical methodological flaws prevent interpretation of the results.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The study identified differential gene expression across developmental stages: 663 DEGs between PND8 and PND15, and 2483 DEGs between PND15 and adult. Gene ontology analyses revealed stage-specific functional enrichments including pluripotency markers, cell cycle regulators, and spermatogenesis-related genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledged the technical quality of sequencing but questioned novelty and interpretation. One reviewer stated 'much of the information reported in this study is not novel' and that 'the gene expression data provided by the authors on the basis of their deconvolution of bulk RNA-seq data does not add any novel information to what has been shown in recent years by multiple elegant scRNA-seq studies.' Another reviewer noted that results 'do not reflect the biology of any one type of spermatogonium' due to mixed cell populations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "ATAC-seq analysis identified 158,977 accessible peaks and 3,212 differentially accessible regions (DARs) between postnatal and adult SPGs, with most DARs located in distal intergenic regions and introns, and enriched for active histone modifications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers questioned the novelty and interpretation of chromatin accessibility data. One reviewer noted 'A prior publication by the Griswold lab (Schleif et al., 2023) already performed ATAC-seq' and 'A previous study by the Namekawa lab (PMID: 29126117) performed ATAC-seq on a similar cell population.' The same reviewer stated 'The authors should explain how their results extend our knowledge of spermatogonial biology in light of the preceding reports.' The mixed cell population issue also affects interpretation of these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Integration of ATAC-seq with ChIP-seq data revealed that regions with increased accessibility overlap with H3K4me1 (48%) and H3K27ac (16%), while regions with decreased accessibility overlap with H3K4me1 (80%) and H3K27me3 (33%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the technical quality of the integration analysis, the fundamental concerns about cell population heterogeneity and novelty apply. One reviewer noted that 'results in essentially all Figures do not reflect the biology of any one type of spermatogonium,' which undermines the biological interpretation of these chromatin state associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C64",
+      "C69",
+      "C71",
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C81",
+      "C88"
+    ],
+    "result": "Motif enrichment analysis identified transcription factor families (KLF, SP, FOXO, ETS, POU, RFX, DMRT, SOX, NFY, AP-1) enriched in DARs, with many corresponding TFs showing differential expression across developmental stages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers noted that 'results of the authors' analyses of putative factor binding sites within regions of differentially accessible chromatin also appear to confirm previously reported results.' One reviewer stated 'it is not at all novel to note that changes in gene expression patterns are accompanied by changes in patterns of chromatin accessibility in either related promoters or enhancers.' The mixed cell population issue further complicates interpretation of TF-specific regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C100",
+      "C101",
+      "C103",
+      "C104",
+      "C106"
+    ],
+    "result": "Integration of transcriptome and chromatin accessibility data revealed limited overlap: only 3.2% of DEG promoters overlap with DARs, and about one-third of DEGs associate with DARs within \u00b1100kb, suggesting transcriptional regulation and chromatin accessibility are not always linked.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While reviewers raised concerns about novelty and cell heterogeneity, this specific finding about the limited correlation between gene expression and chromatin accessibility appears to be accepted. One reviewer acknowledged the observation is 'consistent with recent observations' citing Kiani et al., 2022, suggesting this result aligns with emerging understanding in the field, though it may not be entirely novel.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C115",
+      "C117",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Analysis of transposable elements revealed 135 TE subtypes with differential chromatin accessibility, including decreased accessibility at LTR elements (ERVK, ERV1) associated with pluripotency-related lncRNAs (Lncenc1, Platr genes) and increased accessibility at LINE L1 elements near olfactory receptor genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers did not specifically comment on the TE analysis, but the general concerns about cell population heterogeneity and novelty apply. The study builds on prior work (Sakashita et al., 2020) showing unique chromatin accessibility at LTRs in SPGs. The biological interpretation of these findings is complicated by the mixed cell population issue raised by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C153",
+      "C154"
+    ],
+    "result": "The study provides an integrated view of transcriptome-chromatin dynamics during SPG postnatal maturation, revealing age-dependent reorganization of chromatin accessibility and a trend toward transcriptional upregulation as development proceeds.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenged the novelty and impact of this work. One reviewer stated 'it is difficult to discern how the data reported in this manuscript advance the field in any sort of novel or useful way beyond providing a review of previously published studies' and concluded 'the likely impact of this work is relatively low because, other than the value it provides as a review of previously published datasets, the new datasets provided are not novel.' Another reviewer maintained that 'critical methodological flaws prevent interpretation of the results.'",
+    "result_type": "MAJOR"
+  }
+]

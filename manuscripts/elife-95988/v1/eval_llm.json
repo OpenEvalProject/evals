@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors provide background on lung adenocarcinoma (LUAD) epidemiology, treatment with chemotherapy, and the challenges of drug resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 are all supported by citations to published literature and represent established knowledge in the field. These background claims appropriately contextualize the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The tumor microenvironment (TME) is a source of intratumoral heterogeneity, with evolving understanding of metabolic competition between cancer cells and immune cells, particularly regarding glucose metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C11 are supported by citations to published research and provide appropriate scientific background on TME metabolism and immune cell function. These establish the rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C20",
+      "C21"
+    ],
+    "result": "The study analyzed 83,622 cells from nine LUAD patients (four control, five receiving neoadjuvant chemotherapy with cisplatin plus pemetrexed) using scRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, C20, C21 describe the study design and sample composition, which are clearly documented with specific numbers and treatment regimens. The sample size is small (n=9 patients) but adequate for exploratory scRNA-seq analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cell types were classified using the Seurat package with marker genes, identifying epithelial cells, T cells, B cells, endothelial cells, mast cells, macrophages, monocytes, fibroblasts, and neutrophils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C31 describe standard scRNA-seq analysis methods and cell type identification using established marker genes. The approach is well-documented and the marker genes cited are appropriate for the identified cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The composition of cell types exhibited high heterogeneity across groups, with significantly higher proportions of immune cells (mainly T and B cells) in the NCT group, and epithelial subclusters being highly patient-specific while immune cell subclusters were shared across patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C32-C34 are supported by the scRNA-seq data and Figure 1. The observation of increased immune infiltration after chemotherapy and patient-specific tumor heterogeneity versus shared immune profiles is consistent with expected biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C15",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Functional enrichment analysis revealed that chemotherapy drove significant metabolic reprogramming in tumor cells and macrophages, with upregulated metabolic pathways (OXPHOS, glycolysis, pyruvate metabolism, TCA cycle) enriched in cancer cells, nonmalignant epithelial cells, fibroblasts, and macrophages, and increased metabolic pathway activity in macrophages and malignant cells after chemotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C35-C38 are supported by GSVA analysis data presented in Figure 2. The metabolic reprogramming findings are consistent with known cancer metabolism and chemotherapy responses. However, the study would benefit from validation of these transcriptional changes at the protein or functional level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "After chemotherapy, the proportion of malignant cells decreased but remaining malignant cells showed higher malignancy scores by CNV analysis. Pseudotime analysis revealed that nonmalignant cells evolved toward malignancy with gradual increases in glycolysis, OXPHOS, angiogenesis, DNA repair, and mTORC1 signaling pathways, while p53 and apoptosis pathways decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are supported by CNV analysis, pseudotime trajectory analysis, and pathway activity data (Figure 3). The finding that remaining tumor cells after chemotherapy have higher malignancy scores is important but requires validation. The pseudotime analysis appropriately tracks cellular evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Malignant cells showed metabolic reprogramming enabling chemoresistance, with distinct transcription factor expression patterns between control and NCT groups. Malignant cells were reclustered into 13 subclusters, with specific NCT-derived clusters (5, 6, 10) showing high glycolysis, OXPHOS, and pyruvate metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 are supported by SCENIC analysis and metabolic pathway analysis (Figure 3). The identification of specific metabolically active tumor cell subclusters after chemotherapy is well-documented, though functional validation would strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "NCT significantly altered stromal cell composition in the TME, with myofibroblasts exclusively from the control group and stromal cells exhibiting enhanced metabolic levels (glycolysis, OXPHOS, fatty acid metabolism) after NCT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C58 are supported by stromal cell analysis and GSVA data (Figure 4). The observation that myofibroblasts are absent after NCT is interesting and consistent with treatment effects on cancer-associated fibroblasts, though the small sample size limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Fibroblasts were reclustered into 10 subgroups, with clusters 5, 6, and 9 showing upregulated metabolic pathways (glycolysis, OXPHOS, pyruvate metabolism, TCA cycle) mainly in NCT groups, potentially driven by transcription factors MEF2C, NFIA, and RAD21.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by clustering analysis, GSVA, and SCENIC analysis (Figure 4). The identification of metabolically active fibroblast subclusters and their potential drivers is well-documented, though the mechanistic role of the identified transcription factors requires experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Macrophages (10,526 cells) were reclustered into 10 clusters showing distinct metabolic profiles. Chemotherapy promoted glycolysis in TAMs and inhibited fatty acid metabolism, with clusters 0/1/8 enriched in glycolysis-related pathways and clusters 2/4/7/9 enriched in OXPHOS and fatty acid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 are supported by macrophage clustering, GSVA, and metabolic pathway analysis (Figure 5). The metabolic reprogramming of macrophages after chemotherapy is well-documented at the transcriptional level, though functional validation would strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Macrophages were classified into three subtypes: M1-like (Anti-mac), M2-like (Pro-mac), and Mix, with distinct transcription factor expression patterns. The proportion of Pro-mac increased after chemotherapy, and trajectory analysis showed that Anti-mac and Mix can convert to Pro-mac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are supported by SCENIC analysis, polarization scoring, and trajectory analysis (Figure 5). The macrophage classification and plasticity findings are well-documented, though the functional significance of the identified transcription factors requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Two macrophage subtypes were identified and validated: Anti-mac (CD45+CD11b+CD86+) and Pro-mac (CD45+CD11b+ARG+), with distinct marker gene expression. The proportion of Pro-mac cells in LUAD tissues increased significantly after NCT, confirmed by flow cytometry and immunofluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C82-C86 are supported by marker gene analysis, flow cytometry, and immunofluorescence data (Figure 6). The validation of macrophage subtypes using multiple orthogonal methods strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C18",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Pro-mac cells promote tumor growth and angiogenesis while suppressing tumor immunity through secretion of cytokines (IL10, VEGF, MMP9, EGF). NCT Pro-mac significantly promoted tumor growth in vivo, while NCT Anti-mac showed stronger tumor inhibition than Control Anti-mac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C87-C91 are supported by differential gene expression analysis, ELISA, and in vivo tumor xenograft experiments (Figure 6). The functional validation of macrophage subtypes using multiple assays provides strong evidence for their opposing roles in tumor biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "NCT Pro-mac showed enhanced glucose uptake and lactate production compared to other cells, and NCT Anti-mac had higher glycolysis than Control Anti-mac. Glycolysis inhibition with 2-DG significantly weakened Pro-mac's tumor-promoting ability and Anti-mac's tumor-suppressing ability in vitro and in 3D culture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by metabolic assays (glucose uptake, lactate production, Seahorse), Transwell invasion assays, and 3D culture experiments (Figure 6). The demonstration that glycolysis is functionally important for both macrophage subtypes is well-validated, though the 2-DG concentration used (800 \u00b5M) should be justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "T cells (22,530 cells, 26.9% of total) were classified into CD4+ T, CD8+ T, and Tregs. The proportion of CD8+ T cells was significantly higher in the NCT group. CD8+ T cells were reclustered into five subgroups with clusters 1-4 mainly from NCT and cluster 5 from control, showing distinct marker gene expression patterns (na\u00efve, regulatory/exhausted, and cytotoxic phenotypes).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C106 are supported by T cell clustering and marker gene expression analysis (Figure 6\u2014figure supplement 1). The classification of CD8+ T cell subtypes using established markers is appropriate and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C116"
+    ],
+    "result": "Chemotherapy ignited a more robust immune cytotoxic response toward tumor cells. NCT treatment induced reprogramming of CD8+ cytotoxic cells, with pseudotime analysis showing na\u00efve T cells differentiating into two distinct cytotoxic fates (clusters 4 and 5), with cluster 4 (NCT-derived) showing higher cytotoxicity than cluster 5 (control-derived).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C107-C112, C116 are supported by pseudotime trajectory analysis and cytotoxicity scoring (Figure 6\u2014figure supplement 1). The finding that NCT enhances CD8+ T cell cytotoxicity is important and well-documented, though the underlying mechanisms require further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C113"
+    ],
+    "result": "The excessive production of neoantigen caused by NCT-induced DNA damage could partly explain the more robust immune cytotoxic response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C113 is speculative reasoning without direct experimental evidence. While the hypothesis is plausible, neoantigen production was not measured in this study. This claim requires validation through neoantigen prediction and experimental verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Cytotoxic CD8+ T cells from NCT-treated patients (cluster 4) showed increased activation of FOSL2-extended, REL, YBX1, and NF-KB pathways, while those from control (cluster 5) had upregulated JUN, FOSB, and ELF3 extended pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by SCENIC analysis (Figure 6\u2014figure supplement 1q). The identification of distinct transcriptional programs in cytotoxic T cells from different treatment groups is well-documented, though functional validation would strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "B cells (3,902 cells, 4.6% of total) were reclustered into class-switched memory B-cells (80.7%) and plasma cells. Control groups had higher proportions of plasma cells while NCT groups were enriched in class-switched memory B cells. B cells from different groups showed distinct metabolic pathway activation patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C125 are supported by B cell clustering, marker gene analysis, and GSVA (Figure 6\u2014figure supplement 2). The B cell composition changes after NCT are well-documented, though the functional significance of these changes requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "Cell-cell interactions between malignant cells and macrophages were strongest in both groups. Cell-to-cell communications, especially between tumoral and immune cells, were significantly strengthened in the NCT group. Specific ligand-receptor pairs (MIF-CXCR4, LGALS9-CD44, LGALS9-HAVCR2) showed altered activation patterns after NCT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129, C131-C132 are supported by cell-cell interaction analysis using CellChat and CellPhoneDB (Figure 6\u2014figure supplements 3 and 4). The interaction analysis provides insights into TME remodeling after NCT, though experimental validation of key interactions would strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C130"
+    ],
+    "result": "MDK-NCL might serve as a potential target of immune checkpoint inhibitor treatment in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C130 is speculative without experimental validation. While the ligand-receptor pair shows altered activation, its functional role and therapeutic potential are not demonstrated. This claim requires substantial additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The authors discuss prior literature on chemotherapy-induced metabolic changes in tumors, including increased OXPHOS promoting tumor survival, elevated glycolysis and OXPHOS promoting EMT and CSC phenotype, and conflicting reports on the effects of chemotherapy on macrophage infiltration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C139 are supported by citations to published literature and provide appropriate context for the discussion. These claims accurately represent prior work in the field.",
+    "result_type": "MINOR"
+  }
+]

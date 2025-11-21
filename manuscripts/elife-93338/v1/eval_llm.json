@@ -1,0 +1,262 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C94"
+    ],
+    "result": "The authors propose a theoretical model for inversion polymorphism maintenance requiring antagonistic pleiotropy between two phenotypes (one with negative frequency-dependent fitness), which yields frequency-dependent disruptive selection favoring two predominant haplotypes with opposing antagonistic phenotypes. Inversions reduce fitness load from recombinant offspring and enable accumulation of antagonistic variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 and C94 present a coherent theoretical framework that is logically consistent with established population genetic principles. The model builds on well-established concepts (reduction principle, frequency-dependent selection) and makes testable predictions. While speculative, the theoretical foundation is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Simulations demonstrate that the proposed model generates inversion-associated haplotypes with opposing sex-specific fitness effects, with antagonism strengthening over time and yielding karyotypes at predictable frequencies (0.25 and 0.75). Inversions facilitate accumulation of antagonistic variation through synergistic epistasis, with intermediate haplotypes being less fit and extreme haplotypes maintained at higher frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C9 and C95-C99 are well-supported by simulation data shown in Figures 4-6. The simulations demonstrate key predictions of the model including synergistic epistasis (r\u00b2=0.2139), maintenance of extreme haplotypes, and predictable frequency distributions. The simulation design appears appropriate for testing the theoretical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Simulations with stochastic mutation demonstrate that populations without initial genetic variation can establish alternate karyotypes linking sexually antagonistic alleles and inversions, maintaining balanced polymorphism and accumulating antagonistic character, though the degree of antagonism depends strongly on crossover rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 are supported by simulation data in Figure 5. The simulations appropriately test whether the model can arise de novo rather than requiring pre-existing variation. The dependence on crossover rate is a biologically reasonable prediction that strengthens the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "In simulations with shared survival costs, inversion frequencies cluster around 0.25 and 0.75 in zygotes due to predominantly homokaryotypic display-favoring males and heterokaryotypic females reproducing, yielding inheritance patterns similar to ZW sex chromosomes. This results in Hardy-Weinberg deviations with excess heterokaryotypes and deficiency of survival-focused homokaryotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C109 are well-supported by simulation data in Figure 6. The mechanistic explanation for the 0.25/0.75 frequencies is logical and follows from the model's assumptions. The Hardy-Weinberg deviations are a novel prediction that could be tested empirically. The analogy to sex chromosome inheritance patterns is insightful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Simulations with female-specific survival costs recovered three different equilibrium states: 20% resembling ZW-like systems, 37% resembling XY-like systems, and 40.6% with three intermediate frequency haplotypes including both Y-like and W-like arrangements plus a shared intermediate arrangement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110-C113 are supported by simulation data in Figure 7. The emergence of three distinct equilibrium states is interesting, though the authors acknowledge uncertainty about barriers between states. The simulation constraints (no overlapping inversions) may influence these outcomes and warrant further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C129",
+      "C130"
+    ],
+    "result": "Experimental crosses demonstrate that In(3R)K favors survival (p=2.70\u00d710\u207b\u00b3 for frequency reversal) while In(3L)Ok favors male reproduction (p=2.97\u00d710\u207b\u2077 for frequency reversal), providing evidence for antagonistic tradeoffs between male reproductive success and survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 and C129-C130 are supported by experimental data in Figure 9A with appropriate statistical testing. The frequency reversals between life stages provide direct evidence for the proposed tradeoffs. The statistical approach using resampling to account for technical variance is appropriate, and p-values are corrected for multiple testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C132",
+      "C133"
+    ],
+    "result": "In(3L)Ok reduced female survival more strongly than male survival (p=0.0450), while In(3R)K favored female survival more than male survival (p=4.61\u00d710\u207b\u00b3), demonstrating sex-specific survival effects aligned with their antagonistic fitness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 and C132-C133 are supported by experimental data in Figure 9B. The sex-specific survival differences align with the predicted antagonistic effects, strengthening the case for sexual antagonism. Statistical significance is demonstrated with appropriate corrections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "Among 197 sequenced haploid embryo genomes from Zambia, not a single genome carried both In(3L)Ok and In(3R)K (p=0.0031), despite these inversions being carried individually by 36 and 35 genomes respectively, suggesting selection against doubly-inverted karyotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 are supported by genomic data analysis with appropriate statistical testing (Fisher's Exact Test). The absence of doubly-inverted karyotypes is consistent with the model's prediction that carrying both inversions would be disadvantageous. The sample size (197 genomes) is adequate for detecting this pattern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C121"
+    ],
+    "result": "In 13 of 16 inversion-line trials, inversions increased in frequency in aged adult offspring compared to fathers (binomial p=0.02), with 10 increases primarily due to survival/longevity advantages, suggesting that multiple inversions harbor alleles benefiting survival under experimental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 and C121 are supported by experimental data. The general trend toward increased inversion frequency is statistically significant. However, this result somewhat contradicts the specific antagonistic tradeoff predictions and may reflect laboratory-specific effects or other selective forces not captured by the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C136",
+      "C137"
+    ],
+    "result": "D. melanogaster inversions have distinct and often context-dependent influences on male reproduction and survival, with some evidence for antagonistic tradeoffs as proposed in the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C137 appropriately summarize the experimental findings. The evidence for antagonistic tradeoffs is strongest for In(3R)K and In(3L)Ok, while effects are more variable for other inversions. The context-dependence (maternal genotype effects) is an important caveat that requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Balancing selection on antagonistically pleiotropic traits may provide a significant and underappreciated contribution to the maintenance of natural inversion polymorphism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by the combined theoretical, simulation, and experimental evidence. The model is theoretically sound, simulations demonstrate its plausibility, and experiments provide some empirical support. However, the generality of this mechanism and its relative importance compared to other forces remains to be fully established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127"
+    ],
+    "result": "Male reproductive effects of inversions were less consistent between crosses than survival effects, implying that differences in male reproductive success may depend on maternal genotype, consistent with past findings in D. melanogaster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C127 are supported by experimental data in Figure 9A and citation to Reinhart et al., 2015. The maternal genotype dependence is an important biological complexity that affects interpretation of results. This finding highlights the context-dependent nature of inversion effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The authors propose that balanced sexually antagonistic autosomal inversions may contribute to sex chromosome evolution, as simulations show strong antagonism can yield inheritance patterns resembling sex chromosomes (ZW or XY-like), and mutations linking haplotypes to the sex they benefit would be favored. This predicts inversion differences should exist between sex chromosomes at the time of formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C176 present an interesting hypothesis about sex chromosome evolution supported by simulation results (C170, C172). However, this remains largely speculative (C168, C174-C176) with limited empirical support. The single example from D. miranda (C177) is suggestive but insufficient to validate the general hypothesis. Further empirical testing is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Survival effects of inversions were generally consistent across maternal genotypes, with In(3R)K associated with increased survival in all four crosses, In(2L)t and In(2R)NS showing elevated survival except with ZI418N, and In(3L)Ok associated with lower survival in each cross.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C125 are supported by experimental data in Figure 9A. The consistency of survival effects across maternal genotypes contrasts with the variability in reproductive effects, suggesting survival effects may be more robust. However, the exception for ZI418N indicates some maternal genotype influence remains.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128"
+    ],
+    "result": "Each of the four inversions had multiple frequency changes that departed strongly from null expectations, as might be expected if selection was present but varied in strength and direction between crosses and life stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C128 is supported by experimental data and statistical analysis. The departures from null expectations across multiple inversions and contexts suggest selection is operating, though the variable patterns indicate complex, context-dependent effects rather than simple directional selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C131",
+      "C134"
+    ],
+    "result": "All four inversions displayed frequency differences between female and male offspring. In(2L)t and In(2R)NS consistently favored female over male survival in all four maternal crosses, though not significant after multiple test correction (corrected p=0.282 and 0.137).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131 and C134 are supported by experimental data in Figure 9B. While the pattern for In(2L)t and In(2R)NS is consistent across crosses, the lack of significance after correction indicates these effects are weaker than for In(3L)Ok and In(3R)K. The consistency suggests real effects that may require larger sample sizes to confirm.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "No consistent differences in inversion frequency were found between early- and late-eclosing offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 is supported by experimental data in Figure 9\u2014figure supplement 1. This negative result suggests inversions do not strongly affect development time under the experimental conditions, which is useful information for understanding the scope of inversion effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "Any antagonistic pleiotropy involving at least one frequency-dependent trait has the potential to generate similar inversion polymorphism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 is a reasonable generalization from the model. The specific case studied (survival vs. male display) is one example of a broader class of antagonistic tradeoffs. The logic extends naturally to other frequency-dependent traits, though empirical validation for other tradeoffs would strengthen this claim.",
+    "result_type": "MINOR"
+  }
+]

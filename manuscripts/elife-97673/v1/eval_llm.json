@@ -1,0 +1,362 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "GABA+ and PV+ cell distributions in marmoset V1 peak in layers 2/3 and 4C, with no significant differences between these layers for either marker. Layer-specific density differences exist, with L4C PV+ density significantly higher than other layers, and GABA+ density consistently higher than PV+ density within each layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C58 provide comprehensive statistical analysis of GABA+ and PV+ cell distributions across marmoset V1 layers with appropriate statistical tests (Bonferroni-corrected Kruskal-Wallis, ANOVA, t-tests) and clear reporting of p-values and sample sizes (n=6 ROIs). The data are internally consistent and supported by Figure 2A-B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C119"
+    ],
+    "result": "Marmoset V1 shows species-specific differences in inhibitory neuron distribution compared to mouse V1. PV+ and GABA+ cell densities peak in L2/3 and 4C in marmoset, whereas in mouse V1 they peak in L4 and 5, with marmoset showing overall higher PV+ cell density.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 and C119 compare marmoset data with published mouse data (Xu et al., 2010), showing clear species differences in laminar distribution patterns. The comparison is supported by Figures 2C-D and appropriate citations, though the mouse data relies on a single published source.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C35"
+    ],
+    "result": "In marmoset V1, 92.3% of PV+ cells are GABA+, and PV+ cells represent 61.4% of all GABA+ cells on average, ranging from 54.5% in L6 to 78.5% in L4C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C35 report double-labeling quantification with clear percentages and standard errors. The data are supported by Figure 2E and represent direct experimental measurements from immunohistochemistry, providing important characterization of inhibitory neuron overlap in marmoset V1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The proportion of PV+ cells among GABA+ cells in marmoset V1 (61% overall, 79% in L4C) differs from both macaque and mouse V1, being intermediate between previously reported values for macaque (74% overall) and more recent macaque studies (52% overall).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67 and C116-C118 compare the current marmoset data with published primate and rodent data. The comparisons are appropriately cited and highlight species differences, though the discrepancies between different macaque studies suggest potential methodological variability that is not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Different AAV-h56D serotypes (1, 7, 9) show distinct viral expression patterns in marmoset V1. AAV7 produces the smallest expression region biased toward superficial and deep layers, while AAV9 and AAV1 produce larger expression regions spanning all cortical layers, likely due to differences in tropism and/or viral spread.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C72 describe observed differences in viral expression patterns across serotypes (Figure 3), but acknowledge that only a single injection per serotype was performed (C72). This severely limits the ability to distinguish true serotype differences from injection variability or other confounding factors. The inference about tropism/spread (C69, C72) is reasonable but speculative given the limited replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "AAV9 and AAV1 serotypes show laminar distributions of tdT expression similar to GABA+ IHC (peaking in L2/3 and 4C), while AAV7 shows relatively higher expression in L2/3 and lower expression in L4C compared to GABA+ distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C78 report statistical comparisons of viral expression patterns with GABA+ IHC distributions (Figure 4A). While appropriate statistical tests are used (Bonferroni-corrected median tests), the conclusions are limited by single injections per serotype (n=4 ROIs per serotype). The near-significant result for AAV7 (p=0.059, C75) and significant layer-specific differences require replication for confirmation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C123",
+      "C124"
+    ],
+    "result": "AAV9 shows the highest overall specificity for GABA+ cells (82.3%) with consistent specificity across layers, followed by AAV7 (79.2%) and AAV1 (75.3%). AAV7 and AAV1 show more layer-dependent variation in specificity, with lowest values in L4A/B.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C83 and C123-C124 report specificity measurements with statistical comparisons (Figure 4B). While the data show clear trends and one significant difference (AAV9 vs AAV1, p=0.014), the single injection per serotype limits generalizability. The high variability in some layers (e.g., AAV7 L4A/B: 50%\u00b135.4) suggests potential sampling issues or biological variability that cannot be distinguished with n=1 injection per serotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C125"
+    ],
+    "result": "AAV9 and AAV1 show significantly higher coverage of GABA+ cells (66.1% and 64.9%) than AAV7 (34%), with AAV9 and AAV1 showing relatively uniform coverage across layers while AAV7 shows very low coverage in middle layers and highest coverage in L6 and L2/3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C88 and C125 report coverage measurements with statistical significance (Figure 4C). The large differences in coverage between serotypes are striking, but the single injection per serotype limits confidence in these findings. The very low coverage of AAV7 in middle layers could reflect true serotype differences or injection-specific factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "AAV9 is recommended as the serotype of choice for marmoset studies requiring highest specificity and coverage across all layers, while AAV7 may be better for restricting expression to L6 or L2/3 GABA cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C89-C90 make recommendations based on single injections per serotype. While the observed patterns support these suggestions, the lack of replication means these recommendations are premature. Additional injections per serotype are needed to confirm these are reproducible serotype-specific properties rather than injection-specific variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "AAV-PHP.eB-S5E2 tdT expression distribution matches PV+ IHC distribution across all injection volumes (90-585 nl), peaking in L2/3 and 4C. Smaller injection volumes (180 nl) show higher specificity (95%) than larger volumes (\u2265315 nl, 82%), though coverage does not differ significantly across volumes (78-81%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 report systematic comparison of different injection volumes with appropriate statistical analysis (Figure 6A-C). Multiple injections per volume group (n=8-12 ROIs) provide adequate replication. The dose-dependent effect on specificity but not coverage is clearly demonstrated, though the mechanism is not fully explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "Injection volumes of 150-300 nl are recommended for studying PV neuron function and connectivity using AAV-PHP.eB-S5E2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 provides a practical recommendation based on the dose-response data showing optimal specificity at 180 nl volumes. The recommendation is reasonable given the experimental data, though it represents an interpolation between tested volumes rather than direct testing of the recommended range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Both GABA- and PV-specific AAVs significantly reduce GABA and PV immunoreactivity at injection sites in a cell-type-specific manner. AAV-h56D reduces GABA immunoreactivity more (28.1% cell number, 21.5% density) than PV immunoreactivity (20.5% number, 10.2% density), while AAV-S5E2 reduces PV immunoreactivity more (33.3% number, 25.4% density) than GABA immunoreactivity (27.4% number, 20.2% density).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C108 report systematic quantification of immunoreactivity reduction with appropriate statistical tests (Mann-Whitney U test) and adequate sample sizes (n=12-28 ROIs). The cell-type-specific pattern of reduction (Figure 7) is internally consistent and statistically significant, though the biological mechanism remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The viral-induced reduction in GABA and PV immunoreactivity likely caused underestimation of viral specificity, suggesting actual specificity is higher than measured.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 makes a logical inference from the observed reduction in immunoreactivity (C97-C99). If viral infection reduces marker expression, then some truly infected cells would be counted as marker-negative, artificially lowering specificity measurements. This reasoning is sound and important for interpreting the specificity data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127"
+    ],
+    "result": "Viral injection may cause subtle circuit alterations leading to activity-dependent changes in PV and GABA expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C127 proposes a speculative mechanism for the observed reduction in immunoreactivity. While this is a plausible hypothesis, no direct evidence is provided to test this mechanism versus direct viral effects on gene expression. The speculation is appropriately labeled but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C109"
+    ],
+    "result": "AAV-h56D induces transgene expression in GABAergic cells with up to 91-94% specificity and 79% efficiency in marmoset V1, with performance depending on viral serotype and cortical layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C10 and C109 summarize the main findings for GABA-AAV, but the stated specificity values (91-94%) appear inconsistent with the detailed data in C79-C83 showing maximum specificity of 82.3% for AAV9. This discrepancy suggests either different calculation methods or selective reporting of best-case values. The layer and serotype dependence is well-supported, but the specific numbers require clarification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C36",
+      "C37",
+      "C110"
+    ],
+    "result": "AAV-PHP.eB-S5E2 induces transgene expression in PV cells with up to 98% specificity and 86-90% efficiency across all cortical layers, depending on layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C36-C37, and C110 summarize the PV-AAV findings. The stated values are consistent with the detailed data in C92-C95 showing 95% specificity for 180 nl injections and 78-81% coverage. The high specificity and efficiency are well-documented with adequate replication across multiple injection volumes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C13",
+      "C111"
+    ],
+    "result": "These viral vectors are promising tools for studying GABA and PV cell function and connectivity in primate cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C111 draw an overall conclusion about the utility of these viral tools. Given the demonstrated specificity (75-95%) and coverage (34-81%) values, along with functional validation cited in C132, this conclusion is reasonable. However, the term 'promising' appropriately acknowledges limitations including the viral-induced reduction in immunoreactivity and serotype-dependent variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Species differences in inhibitory neuron marker expression, proportions, and laminar distributions have been documented between primates and rodents, and the current marmoset V1 findings are consistent with previous primate studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 and C120-C122 cite published literature documenting species differences and consistency with prior primate work. The citations appear appropriate and the comparisons are relevant for contextualizing the current findings. This provides important validation that the marmoset data fit within the broader comparative neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C126"
+    ],
+    "result": "Viral-induced downregulation of host cell gene expression, including inhibitory neuron markers like PV, has been documented for other viruses such as rabies virus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 cites published literature on viral effects on gene expression. This provides relevant context for interpreting the observed reduction in immunoreactivity, though it does not directly demonstrate that AAVs cause similar effects. The citation is appropriate for supporting the plausibility of the observed phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The study tested three AAV-h56D serotypes and one AAV-PHP.eB-S5E2 serotype through 10 viral injections in 4 marmosets, using immunohistochemistry and quantitative analysis of double/triple-labeled cells across cortical layers defined by DAPI and PV staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C38-C44, and C128-C131 describe the experimental design and methods. The approach is clearly documented with appropriate sample sizes for the PV-AAV (7 injections) but limited replication for GABA-AAV serotypes (1 injection each). The methods are standard and appropriate for the research questions, with proper ethical approval (C129).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "PV-IHC reveals laminar boundaries consistent with those defined by DAPI staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 reports a methodological validation supported by Figure 1. This finding justifies the use of PV-IHC for layer identification, which is important for the subsequent quantitative analyses. The consistency between two independent methods strengthens confidence in layer assignments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "The laminar distribution of viral-mediated reporter protein expression resembles the laminar distribution of GABA+ and PV+ cells revealed by immunohistochemistry in marmoset V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 summarizes a key validation finding supported by Figures 4A and 6A. The similarity in laminar distributions between viral expression and IHC provides important evidence for viral specificity, though the degree of similarity varies by serotype as detailed in subsequent claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Electrophysiological responses have been recorded from V1 neurons expressing opsins delivered via these viral vectors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 cites a separate study (Vafaei et al., 2024) demonstrating functional validation of these viral tools. This provides important evidence that the viral transduction does not completely abolish neuronal function, though the cited work is not detailed in the current manuscript.",
+    "result_type": "MINOR"
+  }
+]

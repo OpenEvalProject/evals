@@ -1,0 +1,344 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Transcriptional recovery after ionizing radiation (IR) is independent of HIRA and H3.3, unlike the situation after UV damage. Depletion of HIRA or H3.3 genes had no effect on transcriptional inhibition or recovery after IR, suggesting mechanistic differences between IR and UV-induced transcriptional responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C3, C4 provide converging experimental evidence from shRNA and siRNA depletion experiments (Figures 1A, 1B) showing no effect of HIRA or H3.3 on transcriptional recovery after IR. C5 appropriately concludes mechanistic differences from UV damage based on comparison with cited literature. The experimental controls and quantification support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C13"
+    ],
+    "result": "Transcriptional inhibition occurs rapidly after IR (detectable at 15-30 min) and recovery begins by 2 hours and is complete by 4 hours post-IR. This recovery correlates temporally with reduction in \u03b3H2AX DNA damage signal, suggesting transcriptional recovery occurs after DSB repair.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C12, C13 provide consistent time-course data from EU incorporation assays (Figures 1A, 2D) showing rapid inhibition and recovery kinetics. C8 and C9 provide correlative evidence linking recovery timing to DNA repair via \u03b3H2AX reduction (Figure 1\u2014figure supplement 1). However, the causal link between DSB repair completion and transcriptional recovery (C9) is inferential rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Flow cytometry analysis of EU-labeled nascent transcripts reveals two peaks corresponding to different cell cycle phases: the lower EU peak represents G1 cells while the higher EU peak represents S and G2 phase cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C11 are directly supported by cell cycle analysis combining EU labeling with BrdU incorporation and DNA content staining (Figure 2A, 2B). The experimental approach appropriately distinguishes cell cycle phases and correlates them with transcriptional activity levels.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C77"
+    ],
+    "result": "The extent of transcriptional repression after IR is dose-independent (similar at 2, 5, and 10 Gray), suggesting the reduction in nascent transcripts is a programmed/signaling response rather than due to proximity of genes to DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C77 provide experimental evidence for dose-independence (Figure 2D, Figure 2\u2014figure supplement 1). C15 appropriately interprets this as evidence for a programmed response rather than local cis effects. The logic is sound: if transcriptional inhibition were due to direct damage proximity, higher doses would cause more inhibition. However, alternative explanations (e.g., saturation of response pathway) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C79"
+    ],
+    "result": "Total nascent transcript levels decline after IR, but this is primarily due to reduced rDNA transcripts. In contrast, total protein-coding transcript levels actually increase after IR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C17, C18, C79 are supported by EU-RNA sequencing data normalized to ERCC spike-ins (Figure 3B). The use of spike-in normalization is appropriate for detecting global changes. The data clearly show opposing trends for rDNA versus protein-coding transcripts, supporting the conclusion that bulk reduction is driven by highly abundant rDNA transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C70"
+    ],
+    "result": "Analysis of protein-coding genes reveals that more genes are transcriptionally induced (3026 genes) than repressed (1388 genes) after IR, contrary to expectations of global transcriptional shutdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C20, C70 are supported by differential expression analysis from EU-RNA-seq (Figure 3C, 3D). The statistical criteria for differential expression (fold change >1.5, FDR <0.05) are appropriate. This finding challenges the simple model of global transcriptional inhibition and is a key result of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "RT-PCR validation confirms that rDNA transcripts (28S and 18S) are significantly downregulated after IR, while the p53-regulated gene Cdkn1a/p21 is highly induced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21 and C22 are supported by RT-PCR validation data (Figure 3\u2014figure supplement 3) showing significant changes in Ct values. This provides independent validation of the sequencing results for key transcripts, strengthening confidence in the RNA-seq findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Gene ontology analysis reveals that DNA damage response pathways including intrinsic apoptotic signaling, type 2 immune response, and cytokine-mediated signaling are significantly upregulated after IR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, C25 are supported by GO enrichment analysis of upregulated genes (Figure 3E). The statistical significance of enrichment is demonstrated. These findings are consistent with known cellular responses to DNA damage and provide biological context for the transcriptional changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Gene ontology analysis shows that genes involved in chromatin organization, including chromatin silencing, DNA packaging, and nucleosome assembly, are significantly downregulated after IR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C30 are supported by GO enrichment analysis of downregulated genes (Figure 3E). The downregulation of chromatin organization genes is biologically plausible given the need to modulate chromatin structure during DNA damage response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C35",
+      "C36"
+    ],
+    "result": "Highly expressed genes, including histone-encoding genes, show reduced transcription after IR, while genes with lower baseline expression tend to be induced. Overall, differentially expressed genes show increased total read counts after IR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C35, C36 are supported by analysis of gene expression levels ranked by baseline expression (Figure 4A, 4B, 4D). The data clearly show an inverse relationship between baseline expression level and response to IR. This is a key mechanistic insight about selective transcriptional regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Gene length analysis shows that for most genes, transcript length is equivalent regardless of whether genes are repressed, activated, or unchanged after IR. However, among the top 100 highly expressed genes, repressed genes tend to be shorter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33 and C34 are supported by gene length analysis (Figure 4C). The finding that gene length is generally not predictive of response argues against a simple model of cis inhibition around randomly distributed DSBs. The observation about shorter highly expressed genes being preferentially repressed is intriguing but the mechanistic significance is unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C2",
+      "C40",
+      "C71"
+    ],
+    "result": "The vast majority of histone genes show reduced transcription after IR. Combined with rDNA repression, the bulk reduction in nascent transcripts after IR is mainly due to reduced transcriptional initiation of these highly transcribed gene families.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C2, C40, C71 are supported by multiple lines of evidence: RNA-seq data (Figures 4E, 3\u2014figure supplement 2B), RT-PCR validation (Figure 3\u2014figure supplement 3), and read distribution analysis (Figure 4F). The conclusion that histone and rDNA genes drive bulk changes is well-supported given their high expression levels and consistent downregulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Analysis of read distribution across gene bodies shows uniform reduction at both 5' and 3' ends of repressed genes, indicating that transcriptional repression after IR occurs primarily at the initiation stage rather than elongation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are supported by metagene analysis showing similar reduction across gene bodies (Figure 4F). The logic is sound: if elongation were primarily affected, 3' ends would show greater reduction than 5' ends. However, the authors acknowledge in Discussion that additional elongation defects cannot be ruled out.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C46",
+      "C78",
+      "C80"
+    ],
+    "result": "ATM is required for transcriptional inhibition after IR, as demonstrated by enrichment of ATM gRNAs in the CRISPR screen and validation with ATM inhibitor showing greatly reduced transcriptional inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C46, C78 provide converging evidence from CRISPR screen (Figure 5B) and pharmacological validation (Figure 5C). C42 and C80 cite established literature supporting ATM's role. The finding is consistent with prior work and validates the screening approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "CRISPR screen identifies neddylation machinery and CUL4B as top hits. Genetic depletion of NAE1 and pharmacological inhibition of neddylation (16 hr MLN4924 treatment) greatly reduce transcriptional inhibition after IR in both mouse and human cells, suggesting neddylation is required for efficient transcriptional inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "While claims C43, C44, C47, C48, C49 provide initial evidence from screening and long-term inhibition experiments (Figures 5B-F), subsequent experiments (C57-C59) demonstrate that short-term neddylation inhibition (1-3 hr) does not prevent transcriptional inhibition despite effectively blocking neddylation (Figure 6C, 6D). This contradicts C50's conclusion that neddylation is required. The authors themselves conclude neddylation is NOT directly required (C59, C81), making the initial interpretation unsupported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CUL4B, but not CUL4A, partially contributes to transcriptional inhibition after IR. However, neddylation of CUL4A/CUL4B does not increase after IR, and double depletion does not further enhance the block of transcriptional inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 are supported by western blot analysis (Figure 6A) and genetic depletion experiments (Figure 6B, Figure 6\u2014figure supplement 1). The differential requirement for CUL4B versus CUL4A is clearly demonstrated. However, the lack of increased neddylation after IR (C51) and limited effect of double depletion (C54) raise questions about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C81",
+      "C82"
+    ],
+    "result": "Short-term neddylation inhibition (1-3 hr) effectively blocks neddylation but does not prevent transcriptional inhibition after IR, demonstrating that neddylation per se is not required for transcriptional inhibition. Instead, the cell cycle arrest caused by prolonged neddylation inhibition likely prevents transcriptional inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C58, C59 provide critical experimental evidence (Figure 6C, 6D) that resolves the apparent contradiction from earlier experiments. C81 and C82 appropriately interpret these findings as speculation. This is a key result that reinterprets the CRISPR screen hits and demonstrates the importance of temporal controls in inhibitor studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C83"
+    ],
+    "result": "Multiple different treatments causing cell cycle arrest in G1 or G2 phase (prolonged neddylation inhibition, CDK1 inhibition, serum starvation, CDK4/6 inhibition) prevent transcriptional inhibition after IR. This indicates that cells need to be cycling for IR to rapidly inhibit bulk transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C62-C67, C72 provide extensive experimental evidence using multiple independent methods to arrest cells (Figures 7A-E, Figure 6\u2014figure supplement 2). C65 addresses a potential confound by showing G1-arrested cells still have substantial transcription. C67, C73, C83 appropriately conclude that cell cycle progression is required. The convergence of multiple approaches strongly supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C90",
+      "C91"
+    ],
+    "result": "Cell cycle arrest by MLN4924 or RO-3306 treatment markedly reduces TOPBP1 localization to nucleolar caps after IR. This suggests arrested cells fail to repress rDNA expression after DNA damage due to compromised ATM-dependent TOPBP1 recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C69 are supported by microscopy and quantification data (Figure 7F, 7G). C90 and C91 cite established mechanisms. The data provide a mechanistic explanation for why cell cycle arrest prevents transcriptional inhibition, specifically for rDNA. However, C92 shows TOPBP1 expression is not affected, supporting the localization defect interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C116"
+    ],
+    "result": "The length-independent and dose-independent nature of transcriptional changes suggests bulk transcriptional inhibition after IR occurs in trans as a programmed event, preferentially affecting highly expressed genes in cycling cells. This genome-wide response cannot be extrapolated from single-gene studies of cis inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C75, C116 synthesize multiple experimental observations (dose-independence C14, length-independence C33, cell cycle dependence C67, selective effect on highly expressed genes C32) into a coherent model. The conclusion is well-supported by the data and represents a significant conceptual advance over prior single-gene studies. However, C74 appropriately frames this as a suggestion rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Pro-inflammatory cytokines are rapidly activated after irradiation in various cell types and ultimately lead to radiation-induced fibrosis in cancer patients following radiation therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26 and C27 are supported by citations to published literature (Schaue et al., 2012; Kim et al., 2014; Yu et al., 2023). These claims provide biological context for the observed upregulation of cytokine pathways but are not primary findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "While rDNA transcription is known to be reduced in non-cycling cells and histone transcription requires DNA replication, the authors find that bulk nascent transcript levels during G2 arrest are equivalent to or higher than in cycling cells, suggesting rDNA levels may not be reduced during G2 arrest in their experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84 and C85 cite established knowledge, but C86 presents an observation that appears to contradict C84. The authors acknowledge this discrepancy and suggest (C87) that a required factor may be absent in arrested cells. However, the data interpretation is complicated by the fact that most nascent transcripts are from rDNA, making it difficult to assess rDNA-specific changes. Additional experiments specifically measuring rDNA transcription in arrested versus cycling cells would be needed to resolve this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "Analysis of nascent transcripts at early times after irradiation reveals a different transcriptional response compared to changes in total mRNAs after irradiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by citation to published literature (Lieberman et al., 2017) and is consistent with the authors' findings showing rapid changes in nascent transcripts. This highlights the importance of studying nascent rather than steady-state transcripts for understanding immediate transcriptional responses.",
+    "result_type": "MINOR"
+  }
+]

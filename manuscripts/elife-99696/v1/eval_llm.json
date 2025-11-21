@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The manuscript establishes the context that while the cerebellum's role in eye movement control is well-established, its contribution to complex visual behavior and covert attention remains elusive. Prior work suggests overlap between saccade programming and covert attention networks, though cell-type specificity may exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C13-C18 accurately summarize the state of knowledge in the field based on appropriate citations to prior literature. These claims establish the scientific rationale for the study and are well-supported by the referenced work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C52",
+      "C53",
+      "C54",
+      "C81"
+    ],
+    "result": "DN neurons exhibit heterogeneous activity patterns that modulate throughout the task, bridging temporally separated events. Neurons show both facilitation and suppression, with suppressing neurons responding earlier than facilitating neurons after C-stimulus onset. Many DN neurons respond in a direction-selective manner more than half a second before saccade execution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4 and C26-C30 are directly supported by electrophysiological recordings shown in Figure 2, with appropriate statistical tests (Kolmogorov-Smirnov test, p<0.0041). The heterogeneous, temporally extended activity patterns are well-documented in the data. Claims C52-C54 and C81 provide appropriate summaries of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The two monkeys (Mi and Mo) employed different behavioral strategies during task performance, with Mo consistently outperforming Mi. Mi's improvement was primarily in up/down trials, while Mo showed improvement in both directions. Mi assigned decreasing weight to previous trial saccades over time in L/R trials, while Mo showed no such change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C19-C24 are supported by behavioral data in Figure 1 and logistic regression modeling with appropriate statistical tests (p=0.016, R\u00b2=0.32 for C23). The behavioral differences between animals are well-documented and quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C35"
+    ],
+    "result": "DN neuron activity reflected the unique behavioral strategies of the two monkeys, with visual stimulus direction frequently encoded long before saccade execution. The better-performing monkey (Mo) showed shorter latency (115 ms) of ramping activity following visual stimulus presentation compared to Mi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C35 are supported by encoding models (Figures 3-4) and ramping onset analysis (Figure 3\u2014figure supplement 2) with appropriate statistical testing (F=10.9, p=0.001). The correlation between neural latency and behavioral performance is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C61",
+      "C78",
+      "C79"
+    ],
+    "result": "Many DN cells encoded gap direction, saccade direction, or both, with a smaller fraction sensitive to previous trial events. Individual DN neurons can encode both visual cue direction and subsequent saccade direction, with this dual encoding present in the largest proportion of task-modulated neurons in both monkeys.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 and C61, C78-C79 are supported by GLM analysis shown in Figure 3B-E. The multimodal encoding properties are well-documented with appropriate model selection procedures (LASSO regularization). The finding that similar proportions of neurons show these properties in both animals (C34) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Decoding analysis revealed that trial outcome was most reliably represented in DN activity, with differences between monkeys: Mi had more cells encoding trial outcome around reward time, while Mo showed more cells encoding gap direction. Mi maintained more information about previous trial choices into the current trial compared to Mo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C41 are supported by decoding analysis in Figure 4 using logistic regression with trial re-balancing to control for behavioral correlations. The temporal dynamics and inter-animal differences are well-documented, though the interpretation of these differences could benefit from additional controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Anatomical tracing with CTb revealed that recorded DN neurons predominantly receive inputs from Purkinje cells in D1 and D2 zones of lateral cerebellum, as well as from principal olive and medial pons. Mo showed more extensive labeling than Mi, possibly due to differences in injection efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10 and C42-C48 are supported by anatomical tracing data in Figure 5 with quantification of labeled cells. The differential labeling between animals (C43-C47) is acknowledged and appropriately attributed to technical factors rather than biological differences. The anatomical methods are standard and well-described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C49",
+      "C50",
+      "C51",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The anatomical connectivity pattern indicates that the recorded DN region is integrated in a functional loop between cerebellum and cerebral cortex involved in decision making, planning, and attention. Anterograde labeling was found in thalamic nuclei known to connect to prefrontal cortex areas like FEF, but not in superior colliculus or hypothalamus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C49-C60 are supported by anatomical tracing data (Figure 5G) and appropriate citations to prior anatomical studies. The interpretation that this forms a functional loop (C60) is reasonable given the convergent anatomical and functional data, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C72",
+      "C76",
+      "C77",
+      "C80",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The study concludes that DN neurons dynamically modulate activity during visual attention tasks comprising sensorimotor and cognitive components. Integration of sensory, motor, and cognitive signals occurs at the DN level, potentially through cortico-cerebellar loops involving forward and inverse models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the main conclusion (C12) is supported by the data, several related claims (C62, C65, C72, C76, C85-C87) are speculative interpretations that extend beyond the direct evidence. The computational framework involving forward/inverse models (C86) is plausible but not directly tested. These interpretations would benefit from additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The findings are contextualized within prior literature showing cerebellar involvement in motor planning, action observation, and integration of multiple sensory modalities. Ramping activity in DN neurons is consistent with motor preparation signatures observed in FEF and other brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C75 and C82-C84 appropriately cite and summarize prior literature to contextualize the current findings. The comparisons to FEF activity (C69-C70) and motor preparation signatures (C71) are well-supported by citations and strengthen the interpretation of the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C25",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study recorded 305 DN neurons from two adult male rhesus macaques during the Landolt C task. All procedures were ethically approved and complied with NIH guidelines. Both animals had been used in prior studies on glissade control and anti-saccades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C88-C90 provide methodological details that are clearly stated and appropriately documented. The prior use of animals in other studies (C90) is transparently reported, which is important for interpreting potential training effects.",
+    "result_type": "MINOR"
+  }
+]

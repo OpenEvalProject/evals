@@ -1,0 +1,1837 @@
+{
+  "submission": {
+    "id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:20:56.654678Z",
+    "updated_at": "2025-11-21T22:20:56.654678Z"
+  },
+  "content": [
+    {
+      "id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "content_type": "manuscript",
+      "content_text": "# Intraspecific predator interference promotes biodiversity in ecosystems\n\n## Authors\n\n- Ju Kang<sup>1</sup> ([ORCID: 0000-0003-3862-4065](https://orcid.org/0000-0003-3862-4065))\n- Shijie Zhang<sup>2</sup>\n- Yiyuan Niu<sup>1</sup> ([ORCID: 0009-0008-6078-9265](https://orcid.org/0009-0008-6078-9265))\n- Fan Zhong<sup>1</sup>\n- Xin Wang<sup>1</sup> ([ORCID: 0000-0001-6479-395X](https://orcid.org/0000-0001-6479-395X)) \u2020\n\n### Affiliations\n\n1. School of Physics, Sun Yat-sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))\n2. School of Mathematics, Sun Yat-sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))\n3. Department of Mechanical Engineering, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))\n\n\u2020 Corresponding author\n\n## Abstract\n\nExplaining biodiversity is a fundamental issue in ecology. A long-standing puzzle lies in the paradox of the plankton: many species of plankton feeding on a limited variety of resources coexist, apparently flouting the competitive exclusion principle (CEP), which holds that the number of predator (consumer) species cannot exceed that of the resources at a steady state. Here, we present a mechanistic model and demonstrate that intraspecific interference among the consumers enables a plethora of consumer species to coexist at constant population densities with only one or a handful of resource species. This facilitated biodiversity is resistant to stochasticity, either with the stochastic simulation algorithm or individual-based modeling. Our model naturally explains the classical experiments that invalidate the CEP, quantitatively illustrates the universal S-shaped pattern of the rank-abundance curves across a wide range of ecological communities, and can be broadly used to resolve the mystery of biodiversity in many natural ecosystems.\n\n## Introduction\n\nThe most prominent feature of life on Earth is its remarkable species diversity: countless macro- and micro-species fill every corner on land and in the water (Pennisi, 2005; Hoorn et al., 2010; de Vargas et al., 2015; Daniel, 2005). In tropical forests, thousands of plant and vertebrate species coexist (Hoorn et al., 2010). Within a gram of soil, the number of microbial species is estimated to be 2000\u201318,000 (Daniel, 2005). In the photic zone of the world ocean, there are roughly 150,000 eukaryotic plankton species (de Vargas et al., 2015). Explaining this astonishing biodiversity is a major focus in ecology (Pennisi, 2005). A great challenge stems from the well-known competitive exclusion principle (CEP): two species competing for a single type of resources cannot coexist at constant population densities (Gause, 1934; Hardin, 1960), or generically, in the framework of consumer-resource models, the number of consumer species cannot exceed that of resources at a steady state (MacArthur and Levins, 1964; Levin, 1970; McGehee, 1977). On the contrary, in the paradox of plankton, a limited variety of resources supports hundreds or more coexisting species of phytoplankton (Hutchinson, 1961). Then, how can plankton and many other organisms somehow liberate the constraint of CEP?\n\nEver since MacArthur and Levin proposed the classical mathematical proof for CEP in the 1960s (MacArthur and Levins, 1964), various mechanisms have been put forward to overcome the limits set by CEP (Chesson, 2000). Some suggest that the system never approaches a steady state where the CEP applies, due to temporal variations (Hutchinson, 1961; Levins, 1979), spatial heterogeneity (Levin, 1974), or species\u2019 self-organized dynamics (Koch, 1974; Huisman and Weissing, 1999). Others consider factors such as toxins (Cz\u00e1r\u00e1n et al., 2002), cross-feeding (Goyal and Maslov, 2018; Goldford et al., 2018; Niehaus et al., 2019), spatial circulation (Villa Mart\u00edn et al., 2020; Gupta et al., 2021), \u2018kill the winner\u2019 (Thingstad, 2000), pack hunting (Wang and Liu, 2020), collective behavior (Dalziel et al., 2021), metabolic trade-offs (Posfai et al., 2017; Weiner et al., 2019), co-evolution (Xue and Goldenfeld, 2017), and other complex interactions among the species (Beddington, 1975; DeAngelis et al., 1975; Arditi and Ginzburg, 1989; Kelsic et al., 2015; Grilli et al., 2017; Ratzke et al., 2020). However, questions remain as to what determines species diversity in nature, especially for quasi-well-mixed systems such as that of plankton (Pennisi, 2005; Sunagawa et al., 2020).\n\nAmong the proposed mechanisms, predator interference, specifically the pairwise encounters among consumer individuals, emerges as a potential solution to this issue. Predator interference is commonly described by the classical Beddington-DeAngelis (B-D) phenomenological model (Beddington, 1975; DeAngelis et al., 1975). Through the application of the B-D model, several studies (Cantrell et al., 2004; Hsu et al., 2013) have shown that intraspecific predator interference can break CEP and facilitate species coexistence. However, from a mechanistic perspective, the functional response of the B-D model can be formally derived from a scenario solely involving chasing pairs, representing the consumption process between consumers and resources, without accounting for pairwise encounters among consumer individuals (Wang and Liu, 2020; Huisman and De Boer, 1997). Disturbingly, it has been established that the scenario involving only chasing pairs is subject to the constraint of CEP (Wang and Liu, 2020), raising doubt regarding the validity of applying the B-D model to overcome the CEP.\n\nIn this work, building upon MacArthur\u2019s consumer-resource model framework (Arthur, 1969; MacArthur, 1970; Chesson, 1990), and drawing on concepts from chemical reaction kinetics (Ruxton et al., 1992; Huisman and De Boer, 1997; Wang and Liu, 2020), we present a mechanistic model of predator interference that extends the B-D phenomenological model (Beddington, 1975; DeAngelis et al., 1975) by providing a detailed consideration of pairwise encounters. The intraspecific interference among consumer individuals effectively constitutes a negative feedback loop, enabling a wide range of consumer species to coexist with only one or a few types of resources. The coexistence state is resistant to stochasticity and can hence be realized in practice. Our model is broadly applicable and can be used to explain biodiversity in many ecosystems. In particular, it naturally explains species coexistence in classical experiments that invalidate CEP (Ayala, 1969; Park, 1954) and quantitatively illustrates the S-shaped pattern of the rank-abundance curves in an extensive spectrum of ecological communities, ranging from the communities of ocean plankton worldwide (Fuhrman et al., 2008; Ser-Giacomi et al., 2018), tropical river fishes from Argentina (Cody and Smallwood, 1996), forest bats of Trinidad (Clarke et al., 2005), rainforest trees (Hubbell, 2001), birds (Terborgh et al., 1990; Mart\u00ednez et al., 2023), butterflies (De Vries, 1997) in Amazonia, to those of desert bees (Hubbell, 2001) in Utah and lizards from South Australia (Cody and Smallwood, 1996).\n\n## Results\n\n### A generic model of pairwise encounters\n\nHere we present a mechanistic model of pairwise encounters (see Figure 1A), where $S_{C}$ consumer species ${C_{1},\u22ef,C_{S_{C}}}$ compete for $S_{R}$ resource species ${R_{1},\u22ef,R_{S_{R}}}$. The consumers are biotic, while the resources can be either biotic or abiotic. For simplicity, we assume that all species are motile and move at certain speeds, namely, $v_{C_{i}}$ for consumer species $C_{i}$ and $v_{R_{l}}$ for resource species $R_{l}$. For abiotic resources, they cannot propel themselves but may passively drift due to environmental factors. Each consumer is free to feed on one or multiple types of resources, while consumers do not directly interact with one another except through pairwise encounters.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/93115/elife-93115-fig1-v1.jpg)\n\n**Figure 1.:** (A) A generic model of pairwise encounters involving $S_{C}$ consumer species and $S_{R}$ resource species. (B) The well-mixed model of (A). (C\u2013E) Time courses of two consumer species competing for one resource species. (F\u2013H) Positive solutions to the steady-state equations (see Equations S38 and S65): $R\u02d9=0$ (orange surface), $C\u02d9_{1}=0$ (blue surface), $C\u02d9_{2}=0$ (green surface), that is the zero-growth isoclines. The black/red dot represents the unstable/stable fixed point, while the dotted lines in (E) are the analytical solutions of the steady-state abundances (marked with superscript \u2018(A)\u2019). See Appendix 1\u2014tables 1 and 2 for the definitions of symbols. See Appendix 9 for simulation details.\n\nThen, we explicitly consider the population structure of consumers and resources: some wander around freely, undergoing Brownian motions; others encounter one another, forming ephemeral entangled pairs. Specifically, when a consumer individual $C_{i}$ and a resource $R_{l}$ come close within a distance of $r_{il}^{(C)}$ (see Figure 1A), the consumer can chase the resource and form a chasing pair: $C_{i}^{(P)}\u22c1R_{l}^{(P)}$ (see Figure 1B), where the superscript \u2018(P)\u2019 represents \u2018pair\u2019. The resource can either escape at rate $d_{il}$ or be caught and consumed by the consumer with rate $k_{il}$. Meanwhile, when a $C_{i}$ individual encounters another consumer $C_{j}$ within a distance of $r_{ij}^{(I)}$ (see Figure 1A), they can stare at, fight against, or play with each other, thus forming an interference pair: $C_{i}^{(P)}\u22c1C_{j}^{(P)}$ (see Figure 1B). This paired state is evanescent, with consumers separating at rate $d_{ij}^{\u2032}$. For simplicity, we assume that all $r_{il}^{(C)}$ and $r_{ij}^{(I)}$ are identical, respectively, that is $\u2200i,j,l$, $r_{il}^{(C)}=r^{(C)}$ and $r_{ij}^{(I)}=r^{(I)}$.\n\nIn a well-mixed system of size $L^{2}$, the encounter rates among individuals, $a_{il}$ and $a_{ij}^{\u2032}$ (see Figure 1B), can be derived using the mean-field approximation: $a_{il}=2r^{(C)}L^{\u22122}\\sqrt{v_{C_{i}}^{2}+v_{R_{l}}^{2}}$ and $a_{ij}^{\u2032}=2r^{(I)}L^{\u22122}\\sqrt{v_{C_{i}}^{2}+v_{C_{j}}^{2}}$ (see Materials and methods, and Appendix 1\u2014figure 1). Then, we proceed to analyze scenarios involving different types of pairwise encounters (see Figure 1B). For the scenario involving only chasing pairs, the population dynamics can be described as follows:\n\n$$\n{x\u02d9_{il}=a_{il}C_{i}^{(F)}R_{l}^{(F)}\u2212(d_{il}+k_{il})x_{il},C\u02d9_{i}=\\suml=1S_{R}w_{il}k_{il}x_{il}\u2212D_{i}C_{i},i=1,\u22ef,S_{C},R\u02d9_{l}=g_{l}({R_{l}},{x_{i}},{C_{i}}),l=1,\u22ef,S_{R},\n$$\n\nwhere $x_{il}\u2261C_{i}^{(P)}\u22c1R_{l}^{(P)}$, gl is an unspecified function, the superscript \u2018(F)\u2019 represents the freely wandering population, $D_{i}$ denotes the mortality rate of $C_{i}$, and $w_{il}$ is the mass conversion ratio (Wang and Liu, 2020) from resource $R_{l}$ to consumer $C_{i}$. With the integration of intraspecific predator interference, we combine Equation 1 and the following equation:\n\n$$\ny\u02d9_{i}=a_{i}^{\u2032}[C_{i}^{(F)}]^{2}\u2212d_{i}^{\u2032}y_{i},\n$$\n\nwhere $a_{i}^{\u2032}=a_{ii}^{\u2032}$, $d_{i}^{\u2032}=d_{ii}^{\u2032}$, and $y_{i}\u2261C_{i}^{(P)}\u22c1C_{i}^{(P)}$ represents the intraspecific interference pair (see Figure 1B). For the scenario involving chasing pairs and interspecific interference, we combine Equation 1 with the following equation:\n\n$$\nz\u02d9_{ij}=a_{ij}^{\u2032}C_{i}^{(F)}C_{j}^{(F)}\u2212d_{ij}^{\u2032}z_{ij},\u00a0i\\neqj,\n$$\n\nwhere $z_{ij}\u2261C_{i}^{(P)}\u22c1C_{j}^{(P)}$ stands for the interspecific interference pair (see Figure 1B). In the scenario where chasing pairs and both intra- and interspecific interference are relevant, we combine Equations 1\u20133, and the populations of consumers and resources are given by $C_{i}=C_{i}^{(F)}+\\sumlx_{il}+2y_{i}+\\sumj\\neqiz_{ij}$ and $R_{l}=R_{l}^{(F)}+\\sumix_{il}$, respectively.\n\nGenerically, the consumption and interference processes are much quicker compared to the birth and death processes. Thus, in the derivation of the functional response, $F(R_{l},C_{i})\u2261k_{il}x_{il}/C_{i}$, the consumption and interference processes are supposed to be in fast equilibrium. In all scenarios involving different types of pairwise encounters, the functional response in the B-D model is a good approximation only for a special case with $d_{il}\u22480$ and $R_{l}\u226b\\sumi=1S_{C}C_{i}$ (see Appendix 1\u2014figure 2 and Appendix 3 for details).\n\nTo facilitate further analysis, we assume that the population dynamics of the resources follows the same construction rule as that in MacArthur\u2019s consumer-resource model (Arthur, 1969; MacArthur, 1970; Chesson, 1990). Then,\n\n$$\ng_{l}({R_{l}},{x_{i}},{C_{i}})={\u03b7_{l}R_{l}(1\u2212R_{l}/\u03ba_{l})\u2212\\sumi=1S_{C}k_{il}x_{il}(forbioticresources);\u03b6_{l}(1\u2212R_{l}/\u03ba_{l})\u2212\\sumi=1S_{C}k_{il}x_{il}(forabioticresources).\n$$\n\nIn the absence of consumers, biotic resources exhibit logistic growth. Here, $\u03b7_{l}$ and $\u03ba_{l}$ represent the intrinsic growth rate and the carrying capacity of species $R_{l}$. For abiotic resources, $\u03b6_{l}$ stands for the external resource supply rate of $R_{l}$, and $\u03ba_{l}$ is the abundance of $R_{l}$ at a steady state without consumers. For simplicity, we focus our analysis on abiotic resources, although all results generally apply to biotic resources as well. By applying dimensional analysis, we render all parameters dimensionless (see Appendix 7). For convenience, we retain the same notations below, with all parameters considered dimensionless unless otherwise specified.\n\n### Intraspecific predator interference facilitates species coexistence and breaks CEP\n\nTo clarify the specific mechanisms that can facilitate species coexistence, we systematically investigate scenarios involving different forms of pairwise encounters in a simple case with $S_{C}=2$ and $S_{R}=1$. To simplify the notations, we omit the subscript/superscript \u2018$l$\u2019 since $S_{R}=1$. For clarity, we assign each consumer species of unique competitiveness by setting that the mortality rate $D_{i}$ is the only parameter that varies with the consumer species.\n\nFirst, we conduct the analysis within a deterministic framework using ordinary differential equations (ODEs). In the scenario involving only chasing pairs, consumer species cannot coexist at a steady state except for special parameter settings (sets of measure zero) (Wang and Liu, 2020). In practice, if all species coexist, the steady-state equations of the consumer species ($C\u02d9_{i}=0$, i.e. the zero-growth isolines) yield $f_{i}(R^{(F)})=D_{i}$ ($i=1,2$), where $f_{i}(R^{(F)})$ is defined as $f_{i}(R^{(F)})\u2261R^{(F)}/(R^{(F)}+K_{i})$ and $K_{i}\u2261(d_{i}+k_{i})/a_{i}$. These equations form two parallel surfaces in the $(C_{1},C_{2},R)$ coordinates, making steady coexistence impossible (Wang and Liu, 2020; see Figure 1C and F and Appendix 1\u2014figure 3A\u2013C).\n\nMeanwhile, in the scenario involving chasing pairs and interspecific interference, if all species coexist, the zero-growth isolines of the three species (see Equation S65) correspond to three non-parallel surfaces $\u03a9_{i}^{\u2032}(R,C_{1},C_{2})=D_{i}$ ($i=1,2$), $G^{\u2032}(R,C_{1},C_{2})=0$ (see Figure 1G and Appendix 1\u2014figure 3D; refer to Appendix 5 for definitions of $\u03a9_{i}^{\u2032}$ and $G^{\u2032}$), which can intersect at a common point (fixed point). However, this fixed point is unstable (see Figure 1G and Appendix 1\u2014figure 3D, F), and thus one of the consumer species is doomed to extinction (see Figure 1D).\n\nNext, we turn to the scenario involving chasing pairs and intraspecific interference. Likewise, steady coexistence requires (see Equation S38) that three non-parallel surfaces $\u03a9_{i}(R,C_{1},C_{2})=D_{i}$ ($i=1,2$), $G(R,C_{1},C_{2})=0$ cross at a common point (see Figure 1H and Appendix 1\u2014figure 3G; refer to Appendix 4 for definitions of $\u03a9_{i}$ and $G$). Indeed, this naturally happens, and encouragingly the fixed point can be stable. Therefore, two consumer species may stably coexist at a steady state with only one type of resources, which obviously breaks CEP (see Figure 1E and Appendix 1\u2014figure 4A). In fact, the coexisting state is globally attractive (see Appendix 1\u2014figure 4A), and there exists a non-zero volume of parameter space where the two consumer species stably coexist at constant population densities (see Appendix 1\u2014figure 4B, C), demonstrating that the violation of CEP does not depend on special parameter settings. We further consider the scenario involving chasing pairs and both intra- and interspecific interference (see Appendix 1\u2014figure 5). Much as expected, the species coexistence behavior is very similar to that without interspecific interference.\n\n### Intraspecific interference promotes biodiversity in the presence of stochasticity\n\nStochasticity is ubiquitous in nature. However, it is prone to jeopardize species coexistence (Xue and Goldenfeld, 2017). Influential mechanisms such as \u2018kill the winner\u2019 fail when stochasticity is incorporated (Xue and Goldenfeld, 2017). Consistent with this, we observe that two notable cases of oscillating coexistence (Koch, 1974; Huisman and Weissing, 1999) turn into species extinction when stochasticity is introduced (see Appendix 1\u2014figure 6A, B), where we simulate the models with stochastic simulation algorithm (SSA; Gillespie, 2007) and adopt the same parameters as those in the original references (Koch, 1974; Huisman and Weissing, 1999).\n\nThen, we proceed to investigate the impact of stochasticity on our model using SSA (Gillespie, 2007). In the scenario involving chasing pairs and intraspecific interference, species may coexist indefinitely in the SSA simulations (see Figure 2A and Appendix 1\u2014figure 4D). In fact, the parameter region for species coexistence in this scenario is rather similar between the SSA and ODEs studies (see Appendix 1\u2014figure 6C, D). Similarly, in the scenario involving chasing pairs and both inter- and intraspecific interference, all species may coexist indefinitely in company with stochasticity (see Appendix 1\u2014figure 5D).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/93115/elife-93115-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Time courses of the species abundances simulated with ODEs, SSA, or IBM. (C) Snapshots of the IBM simulations. (D, E) A model of intraspecific predator interference explains two classical laboratory experiments that invalidate CEP. (D) In Ayala\u2019s experiment, two Drosophila species coexist with one type of resources within a laboratory bottle (Ayala, 1969). (E) In Park\u2019s experiment, two Tribolium species coexist for 2 years with one type of food (flour) within a lab (Park, 1954). See Appendix 1\u2014figure 7C, D for the comparison between model results and experimental data using Shannon entropies.\n\nTo further mimic a real ecosystem, we resort to individual-based modeling (IBM; Grimm, 2013; Vetsigian, 2017), an essentially stochastic simulation method. In the simple case of $S_{C}=2$ and $S_{R}=1$, we simulate the time evolution of a 2-D square system in a size of $L^{2}$ with periodic boundary conditions (see Materials and methods for details). In the scenario involving chasing pairs and intraspecific interference, two consumer species coexist for long with only one type of resources in the IBM simulations (see Figure 2B and C). Together with the SSA simulation studies, it is obvious that intraspecific interference still robustly promotes species coexistence when stochasticity is considered.\n\n### Comparison with experimental studies that reject CEP\n\nIn practice, two classical studies (Ayala, 1969; Park, 1954) reported that, in their respective laboratory systems, two species of insects coexisted for roughly years or more with only one type of resources. Evidently, these two experiments (Ayala, 1969; Park, 1954) are incompatible with CEP, while factors such as temporal variations, spatial heterogeneity, cross-feeding, etc. are clearly not involved in such systems. As intraspecific fighting is prevalent among insects (Boomsma et al., 2005; Dankert et al., 2009; Chen et al., 2002), we apply the model involving chasing pairs and intraspecific interference to simulate the two systems. Overall, our SSA results show good consistency with those of the experiments (see Figure 2D and E and Appendix 1\u2014figure 7). The fluctuations in experimental time series can be mainly accounted by stochasticity.\n\n### A handful of resource species can support a wide range of consumer species regardless of stochasticity\n\nTo resolve the puzzle stated in the paradox of the plankton, we analyze the generic case where $S_{C}$ consumer species compete for $S_{R}$ resource species (with $S_{C}>S_{R}$) within the scenario involving chasing pairs and intraspecific interference. The population dynamics is described by equations combining Equations 1, 2 and 4. As with the cases above, each consumer species is assigned a unique competitiveness through a distinctive $D_{i}$.\n\nStrikingly, a plethora of consumer species may coexist at a steady state with only one resource species ($S_{C}\u226bS_{R}$, $S_{R}=1$) in the ODEs simulations, and crucially, the facilitated biodiversity can still be maintained in the SSA simulations. The long-term coexistence behavior is exemplified in Figure 3 and Appendix 1\u2014figures 8\u201310, involving simulations with or without stochasticity. The number of consumer species in long-term coexistence can be up to hundreds or more (see Figure 3 and Appendix 1\u2014figure 8). To mimic real ecosystems, we further analyze cases with more than one type of resources, such as systems with $S_{R}=3$ ($S_{C}\u226bS_{R}$). Just like the case of $S_{R}=1$ ($S_{C}\u226bS_{R}$), an extensive range of consumer species may coexist indefinitely regardless of stochasticity (see Figure 3 and Appendix 1\u2014figures 11\u201314).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/93115/elife-93115-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Representative time courses simulated with ODEs and SSA. (C, D) A model of intraspecific predator interference illustrates the S-shaped pattern of the species\u2019 rank-abundance curves across different ecological communities. The solid icons represent the experimental data (marked with \u2018Exp\u2019) reported in existing studies (Fuhrman et al., 2008; Cody and Smallwood, 1996; Terborgh et al., 1990; Mart\u00ednez et al., 2023; Clarke et al., 2005; De Vries, 1997; Hubbell, 2001), where the bird community data were collected longitudinally in 1982 and 2018 (Terborgh et al., 1990; Mart\u00ednez et al., 2023). The ODEs and SSA results were constructed from timestamp $t=1.0\\times10^{5}$ in the time series. In the K-S test, the probabilities (p-values) that the simulation results and the corresponding experimental data come from the same distributions are: $p_{ODEs}^{bird(1982)}=0.17$, $p_{ODEs}^{bird(2018)}=0.26$, $p_{ODEs}^{butterfly}=0.70$, $p_{ODEs}^{fish}=0.88$, $p_{ODEs}^{bat}=0.42$, $p_{SSA}^{bat}=0.48$, $p_{ODEs}^{lizard}=0.96$, $p_{SSA}^{lizard}=0.54$, $p_{ODEs}^{plankton}=0.20$, $p_{SSA}^{plankton}=0.06$. See Appendix 9 for simulation details and the Shannon entropies.\n\nWe further analyze the scenario involving chasing pairs and both intra- and interspecific interference, where multiple consumer species compete for one resource species. Similar to the scenario involving chasing pairs and intraspecific interference, all species coexist indefinitely in either ODEs or SSA simulation studies (see Appendix 1\u2014figure 5F\u2013H for the cases of $S_{C}=6,20$ and $S_{R}=1$).\n\n### Intuitive understanding: an underlying negative feedback loop\n\nFor the case with only one resource species ($S_{R}=1$), if the total population size of the resources is much larger than that of the consumers (i.e. $R\u226b\\sumi=1S_{C}C_{i}$), the functional response $F\u2261k_{i}x_{i}/C_{i}$ and the steady-state population of each consumer and resource species can be obtained analytically (see Appendix 4.B-C for details). In fact, the functional response of a consumer species (e.g. $C_{i}$) is negatively correlated with its own population size:\n\n$$\nF(R,C_{i})\u2248\\frac{2R}{\\sqrt{(R+K_{i})^{2}+8\\beta_{i}K_{i}^{2}C_{i}}+R+K_{i}},\n$$\n\nwhere $\\beta_{i}\u2261a_{i}^{\u2032}/d_{i}^{\u2032}$. The analytical steady-state solutions are highly consistent with the numerical results (see Figure 1E and Appendix 1\u2014figure 3H, I) and can even quantitatively predict the coexistence region of the parameter space (see Appendix 1\u2014figure 3I).\n\nIntuitively, the mechanisms of how intraspecific interference facilitates species coexistence can be understood from the underlying negative feedback loop. Specifically, for consumer species of higher competitiveness (e.g. $C_{i}$) in an ecological community, as the population size of $C_{i}$ increases during competition, a larger portion of $C_{i}$ individuals are then engaged in intraspecific interference pairs which are temporarily absent from hunting (see Equation S59 and Appendix 1\u2014figure 15A, B). Consequently, the fraction of $C_{i}$ individuals within chasing pairs decreases (see Equation S59 and Appendix 1\u2014figure 15A, B) and thus form a self-inhibiting negative feedback loop through the functional response (see Equation 5 and Appendix 1\u2014figure 15C). This negative feedback loop prevents further increases in $C_{i}$ populations, results in an overall balance among the consumer species, and thus promotes biodiversity (see Appendix 4.C for details).\n\n### The S shape pattern of the rank-abundance curves in a broad range of ecological communities\n\nAs mentioned above, a prominent feature of biodiversity is that the species\u2019 rank-abundance curves follow a universal S-shaped pattern in the linear-log plot across a broad spectrum of ecological communities (Fuhrman et al., 2008; Ser-Giacomi et al., 2018; Cody and Smallwood, 1996; Terborgh et al., 1990; Mart\u00ednez et al., 2023; Clarke et al., 2005; Hubbell, 2001; De Vries, 1997). Previously, this pattern was mostly explained by the neutral theory (Hubbell, 2001), which requires special parameter settings that all consumer species share identical fitness. To resolve this issue, we apply the model involving chasing pairs and intraspecific interference to simulate the ecological communities, where one or three types of resources support a large number of consumer species ($S_{C}\u226bS_{R}$). In each model system, the mortality rates of consumer species follow a Gaussian distribution where the coefficient of variation was taken around 0.3 (Menon et al., 2003; see Appendix 9 for details). For a broad array of the ecological communities, the rank-abundance curves obtained from the long-term coexisting state of both the ODEs and SSA simulation studies agree quantitatively with those of experiments (see Figure 3C and D and Appendix 1\u2014figures 8\u201314), sharing roughly equal Shannon entropies and mostly being regarded as identical distributions in the Kolmogorov-Smirnov (K-S) statistical test (with a significance threshold of 0.05). Still, there is a noticeable discrepancy between the experimental data and SSA studies in terms of the species\u2019 absolute abundances (e.g. see Appendix 1\u2014figure 8C): those with experimental abundances less than 10 tend to be extinct in the SSA simulations. This is due to the fact that the recorded individuals in an experimental sample are just a tiny portion of that in the real ecological system, whereas the species population size in a natural community is certainly much larger than 10.\n\n## Discussion\n\nThe conflict between the CEP and biodiversity, exemplified by the paradox of the plankton (Hutchinson, 1961), is a long-standing puzzle in ecology. Although many mechanisms have been proposed to overcome the limit set by CEP (Hutchinson, 1961; Chesson, 2000; Levins, 1979; Levin, 1974; Koch, 1974; Huisman and Weissing, 1999; Cz\u00e1r\u00e1n et al., 2002; Goyal and Maslov, 2018; Goldford et al., 2018; Villa Mart\u00edn et al., 2020; Gupta et al., 2021; Thingstad, 2000; Wang and Liu, 2020; Dalziel et al., 2021; Posfai et al., 2017; Weiner et al., 2019; Xue and Goldenfeld, 2017; Beddington, 1975; DeAngelis et al., 1975; Arditi and Ginzburg, 1989; Kelsic et al., 2015; Grilli et al., 2017; Ratzke et al., 2020), it is still unclear how plankton and many other organisms can flout CEP and maintain biodiversity in quasi-well-mixed natural ecosystems. To address this issue, we investigate a mechanistic model with detailed consideration of pairwise encounters. Using numerical simulations combined with mathematical analysis, we identify that the intraspecific interference among the consumer individuals can promote a wide range of consumer species to coexist indefinitely with only one or a handful of resource species through the underlying negative feedback loop. By applying the above analysis to real ecological systems, our model naturally explains two classical experiments that reject CEP (Ayala, 1969; Park, 1954), and quantitatively illustrates the universal S-shaped pattern of the rank-abundance curves for a broad range of ecological communities (Fuhrman et al., 2008; Ser-Giacomi et al., 2018; Cody and Smallwood, 1996; Terborgh et al., 1990; Mart\u00ednez et al., 2023; Clarke et al., 2005; Hubbell, 2001; De Vries, 1997).\n\nIn fact, predator interference has been introduced long ago by the classical B-D phenomenological model (Beddington, 1975; DeAngelis et al., 1975). However, the functional response of the B-D model involving intraspecific interference can be formally derived from the scenario involving only chasing pairs without consideration of pairwise encounters between consumer individuals (Wang and Liu, 2020; Huisman and De Boer, 1997; see Equations S8a and S24a). Yet, it has been demonstrated that the scenario involving only chasing pairs is under the constraint of CEP (Wang and Liu, 2020; see Appendix 1\u2014figure 3A\u2013C). Therefore, it is questionable regarding the validity of applying the B-D model to break CEP (Cantrell et al., 2004; Hsu et al., 2013). From a mechanistic perspective, we resolve these issues and show that the B-D model corresponds to a special case of our mechanistic model yet without the escape rate (see Appendix 1\u2014figure 2 and Appendix 3 for details).\n\nOur model is broadly applicable to explain biodiversity in many ecosystems. In practice, many more factors are potentially involved, and special attention is required to disentangle confounding factors. In microbial systems, complex interactions are commonly involved (Goyal and Maslov, 2018; Goldford et al., 2018; Hu et al., 2022), and species\u2019 preference for food is shaped by the evolutionary course and environmental history (Wang et al., 2019). It is still highly challenging to fully explain how organisms evolve and maintain biodiversity in diverse ecosystems.\n\n## Materials and methods\n\n### Derivation of the encounter rates with the mean-field approximation\n\nIn the model depicted in Figure 1A, consumers and resources move randomly in space, which can be regarded as Brownian motions. At moment $t$, a consumer individual of species $C_{i}$ moves at speed $v_{C_{i}}$ with velocity $v_{C_{i}}(t)$, while a resource individual of species $R_{l}$ moves at speed $v_{R_{l}}$ with velocity $v_{R_{l}}(t)$. Here, $v_{C_{i}}$ and $v_{R_{l}}$ are two invariants, while the directions of $v_{C_{i}}(t)$ and $v_{R_{l}}(t)$ change constantly. The relative velocity between the two individuals is $u_{C_{i}\u2212R_{l}}(t)\u2261v_{R_{l}}(t)\u2212v_{C_{i}}(t)$, with a relative speed of $u_{C_{i}\u2212R_{l}}(t)$. Then, $u_{C_{i}\u2212R_{l}}(t)^{2}=v_{C_{i}}^{2}+v_{R_{l}}^{2}\u22122v_{C_{i}}\u22c5v_{R_{l}}\u22c5cos\u2061\\theta_{C_{i}\u2212R_{l}}(t)$, where $\\theta_{C_{i}\u2212R_{l}}(t)$ represents the angle between $v_{C_{i}}(t)$ and $v_{R_{l}}(t)$. This system is homogeneous, thus, $cos\u2061\\theta_{C_{i}\u2212R_{l}}\u00af=0$, where the overline stands for the temporal average. Then, we obtain the average relative speed between the $C_{i}$ and $R_{l}$ individuals: $u_{C_{i}\u2212R_{l}}\u00af=\\sqrt{v_{C_{i}}^{2}+v_{R_{l}}^{2}}$. Likewise, the average relative speed between the $C_{i}$ and $C_{j}$ individuals is $u_{C_{i}\u2212C_{j}}\u00af=\\sqrt{v_{C_{i}}^{2}+v_{C_{j}}^{2}}$. Evidently, $u_{C_{i}\u2212C_{i}}\u00af=\\sqrt{2}v_{C_{i}}$. Meanwhile, the concentrations of species $C_{i}$ and $R_{l}$ in a 2-D square system with a length of $L$ are $n_{C_{i}}=C_{i}/L^{2}$ and $n_{R_{l}}=R_{l}/L^{2}$, while those of the freely wandering $C_{i}$ and $R_{l}$ are $n_{C_{i}^{(F)}}=C_{i}^{(F)}/L^{2}$ and $n_{R_{l}^{(F)}}=R_{l}^{(F)}/L^{2}$.\n\nThen, we use the mean-field approximation to calculate the encounter rates $a_{il}$ and $a_{ij}^{\u2032}$ in the well-mixed system. In particular, we estimate $a_{il}$ by tracking a randomly chosen consumer individual from species $C_{i}$ and counting its encounter frequency with the freely wandering individuals from resource species $R_{l}$ (see Appendix 1\u2014figure 1). At any moment, the consumer individual may form a chasing pair with a $R_{l}$ individual within a radius of $r_{il}^{(C)}$ (see Figure 1A). Over a time interval of $\u0394t$, the number of encounters between the consumer individual and $R_{l}$ individuals can be estimated by the encounter area and the concentration $n_{R_{l}}$, which takes the value of $2r_{il}^{(C)}n_{R^{(F)}}u_{C_{i}\u2212R}\u00af\u0394t$ (see Appendix 1\u2014figure 1). Combined with $n_{R_{l}^{(F)}}=R_{l}^{(F)}/L^{2}$, for all freely wandering $C_{i}$ individuals, the number of their encounters with $R^{(F)}$ during interval $\u0394t$ is $\\frac{2r_{il}^{(C)}u_{C_{i}\u2212R}\u00afC_{i}^{(F)}R^{(F)}}{L^{2}}\u0394t$. Meanwhile, in the ODEs, this corresponds to $a_{i}C_{i}^{(F)}R^{(F)}\u0394t$. Comparing both terms above, for chasing pairs, we have $a_{il}=2r_{il}^{(C)}L^{\u22122}u_{C_{i}\u2212R_{l}}\u00af=2r_{il}^{(C)}L^{\u22122}\\sqrt{v_{C_{i}}^{2}+v_{R_{l}}^{2}}$. Likewise, for interference pairs, we obtain $a_{ij}^{\u2032}=2r_{ij}^{(I)}L^{\u22122}u_{C_{i}\u2212C_{j}}\u00af=2r_{ij}^{(I)}L^{\u22122}\\sqrt{v_{C_{i}}^{2}+v_{C_{j}}^{2}}$. In particular, $a_{ii}^{\u2032}=2\\sqrt{2}v_{C_{i}}r_{ii}^{(I)}L^{\u22122}$.\n\n### Stochastic simulations\n\nTo investigate the impact of stochasticity on species coexistence, we use the stochastic simulation algorithm (SSA; Gillespie, 2007) and individual-based modeling (IBM; Vetsigian, 2017; Grimm, 2013) in simulating the stochastic process. In the SSA studies, we follow the standard Gillespie algorithm and simulation procedures (Gillespie, 2007).\n\nIn the IBM studies, we consider a 2D square system with a length of $L$ and periodic boundary conditions. In the case of $S_{C}=2$ and $S_{R}=1$, consumers of species $C_{i}$ move at speed $v_{C_{i}}$, while the resources move at speed $v_{R}$. The unit length is $\u0394l=1$, and all individuals move probabilistically. Specifically, when $\u0394t$ is small so that $v_{C_{i}}\u0394t\u226a1$, $C_{i}$ individuals jump a unit length with the probability $v_{C_{i}}\u0394t$. In practice, we simulate the temporal evolution of the model system following the procedures below.\n\n#### Initialization\n\nWe choose the initial position for each individual randomly from a uniform distribution in the square space, which rounds to the nearest integer point in the $x$-$y$ coordinates.\n\n#### Moving\n\nWe choose the destination of a movement randomly from four directions ($x$-positive, $x$-negative, $y$-positive, $y$-negative) following a uniform distribution. The consumers and resources jump a unit length with probabilities $v_{C_{i}}\u0394t$ and $v_{R}\u0394t$, respectively.\n\n#### Forming pairs\n\nWhen a $C_{i}$ individual and a resource individual get close in space within a distance of $r^{(C)}$, they form a chasing pair. Meanwhile, when two consumer individuals $C_{i}$ and $C_{j}$ stand within a distance of $r^{(I)}$, they form an interference pair.\n\n#### Dissociation\n\nWe update the system with a small time step $\u0394t$ so that $d_{i}\u0394t,k_{i}\u0394t,d_{ij}^{\u2032}\u0394t\u226a1$. In practice, a random number $\u03c2$ is sampled from a uniform distribution between 0 and 1, that is $U(0,1)$. If $\u03c2<d_{i}\u0394t$ or $\u03c2<d_{ij}^{\u2032}\u0394t$, then the chasing pair or interference pair dissociates into two separated individuals. One occupies the original position, while the other individual moves just out of the encounter radius in a uniformly distributed random angle. For a chasing pair, if $d_{i}\u0394t<\u03c2<(d_{i}+k_{i})\u0394t$, then, the consumer catches the resource, and the biomass of the resource flows into the consumer populations (updated according to the birth procedure), while the consumer individual occupies the original position. Finally, if $\u03c2>(d_{i}+k_{i})\u0394t$ or $\u03c2>d_{ij}^{\u2032}\u0394t$ , the chasing pair or interference pair maintains the current status.\n\n#### Birth and death\n\nFor each species, we use two separate counters with decimal precision to record the contributions of the birth and death processes, both of which accumulate in each time step. The incremental integer part of the counter will trigger updates in this run. Specifically, a newborn would join the system following the initialization procedure in a birth action, while an unfortunate target would be randomly chosen from the living population in a death action.\n",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Babak Momeni, Boston College United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.93115.3.sa0](https://doi.org/10.7554/eLife.93115.3.sa0)\n\nThis manuscript is an important contribution, assessing the role of intraspecific consumer interference in maintaining diversity using a mathematical model. Consistent with long-standing ecological theory, the authors convincingly show that predator interference allows for the coexistence of multiple species on a single resource, beyond the competitive exclusion principle. Notably, the model matches observed rank-abundance curves in several natural ecosystems.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93115.3.sa1](https://doi.org/10.7554/eLife.93115.3.sa1)\n\nSummary:\n\nThe manuscript considers a mechanistic extension of MacArthur's consumer-resource model to include chasing down of food and potential encounters between the chasers (consumers) that lead to less efficient feeding in the form of negative feedback. After developing the model, a deterministic solution and two forms of stochastic solutions are presented, in agreement with each other. Finally, the model is applied to explain observed coexistence and rank-abundance data.\n\nStrengths:\n\n- The application of the theory to natural rank-abundance curves is impressive.\n\n- The comparison with the experiments that reject the competitive exclusion principle is promising. It would be fascinating to see if in, e.g. insects, the specific interference dynamics could be observed and quantified and whether they would agree with the model.\n\n- The results are clearly presented; the methods adequately described; the supplement is rich with details.\n\n- There is much scope to build upon this expansion of the theory of consumer-resource models. This work can open up new avenues of research.\n\nWeaknesses:\n\n- Though more and better data could be used to constrain and validate the modeling, given this is a theory-driven manuscript, their results are sufficient.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.93115.3.sa2](https://doi.org/10.7554/eLife.93115.3.sa2)\n\nSummary:\n\nIn this manuscript, the authors extend previous work on the role of predator interference in species coexistence. Previous theoretical work (for example, using the Beddington-DeAngelis model) has shown that predator interference allows for multiple predators to coexist on the same prey. While the Beddington-DeAngelis has been influential in theoretical ecology, it has also been criticized at times for several unusual assumptions, most critically, that predators interfere with each other regardless of whether they are already engaged in another interaction. There has been considerable work since then which has sought either to find sets of assumptions that lead to the B-D equation or to derive alternative equations from a more realistic set of assumptions (Ruxton et al. 1992; Cosner et al. 1999; Broom et al. 2010; Geritz and Gyllenberg 2012). This paper represents another effort to more rigorously derive a model of predator interference by borrowing concepts from chemical reaction kinetics (the approach is similar to previous work: Ruxton et al. 1992). The main point of difference is that the model in the current manuscript allows for 'chasing pairs', where a predator and prey engage with one another to the exclusion of other interactions, a situation Ruxton et al. (1992) do not consider. While the resulting functional response is quite complex, the authors show that under certain conditions, one can get an analytical expression for the functional response of a predator as a function of predator and resource densities. They then go on to show that including intraspecific interference allows for the coexistence of multiple species on one or a few resources, and demonstrate that this result is robust to demographic stochasticity. This work provides additional support for the idea that predator interference allows multiple predators to persist with a shared resource.\n\nStrengths:\n\nI appreciate the effort to rigorously derive interaction rates from models of individual behaviors. As currently applied, functional responses (FRs) are estimated by fitting equations to feeding rate data across a range of prey or predator densities. In practice, such experiments are only possible for a limited set of species. This is problematic because whether a particular FR allows stability or coexistence depends on not just its functional form, but also its parameter values. The promise of the approach taken here is that one might be able to derive the functional response parameters of a particular predator species from species traits or more readily measurable behavioural data.\n\nWeaknesses:\n\nThe main weakness of this paper is that while it is technically sound, it doesn't change the fundamental intuition gained from more phenomenological models of predator interference: as one species becomes more common, it limits its own growth (manifested by less time spent searching for/handing resources due to interference), such that it does not exclude the existence of a competitor species. However, given the authors use a different model formulation that has been used in past studies, it suggests that predator interference will likely tend to promote coexistence regardless of some of the technical details in how it is formulated in a model.\n\nThe formulation of chasing-pair engagements assumes that prey being chased by a predator are unavailable to other predators. While this may hold in some predator-prey, it does not hold for many others, perhaps limiting some results' generality.\n\nSummary:\n\nThe manuscript by Kang et al investigates how the consideration of pairwise encounters (consumer-resource chasing, intraspecific consumer pair, and interspecific consumer pair) influences the community assembly results. To explore this, they presented a new model that considers pairwise encounters and intraspecific interference among consumer individuals, which is an extension of the classical Beddington-DeAngelis (B-D) phenomenological model, incorporating detailed considerations of pairwise encounters and intraspecific interference among consumer individuals. Later, they connected with several experimental datasets.\n\nStrengths:\n\nThey found that the negative feedback loop created by the intraspecific interference allows a diverse range of consumer species to coexist with only one or a few types of resources. Additionally, they showed that some patterns of their model agree with experimental data, including time-series trajectories of two small in-lab community experiments and the rank-abundance curves from several natural communities. The presented results here are interesting and present another way to explain how the community overcomes the competitive exclusion principle.\n\nWeaknesses:\n\nThe authors did a great job of satisfactorily addressing each of my concerns raised in the previous round. I did not detect additional weaknesses.\n",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c11276f2-36b3-4610-acef-8bb06134e733",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C1",
+      "claim": "Many species of plankton feeding on a limited variety of resources coexist, apparently flouting the competitive exclusion principle (CEP).",
+      "claim_type": "EXPLICIT",
+      "source": "A long-standing puzzle lies in the paradox of the plankton: many species of plankton feeding on a limited variety of resources coexist, apparently flouting the competitive exclusion principle (CEP), which holds that the number of predator (consumer) species cannot exceed that of the resources at a steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the paradox of plankton, which is established knowledge in ecology and is presented as the motivation for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "4f798394-5d17-4cfe-b141-34ce3138a217",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C2",
+      "claim": "The competitive exclusion principle holds that the number of predator (consumer) species cannot exceed that of the resources at a steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "A long-standing puzzle lies in the paradox of the plankton: many species of plankton feeding on a limited variety of resources coexist, apparently flouting the competitive exclusion principle (CEP), which holds that the number of predator (consumer) species cannot exceed that of the resources at a steady state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of CEP, which is established ecological theory.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "3a9e52f5-3e37-48be-a526-996fa29b700b",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C3",
+      "claim": "Intraspecific interference among consumers enables a plethora of consumer species to coexist at constant population densities with only one or a handful of resource species.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we present a mechanistic model and demonstrate that intraspecific interference among the consumers enables a plethora of consumer species to coexist at constant population densities with only one or a handful of resource species.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main finding of the study, supported by the modeling and simulation results presented throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "f0a42889-d68e-4a5f-a32f-91b0d00b2ee4",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C4",
+      "claim": "The facilitated biodiversity through intraspecific interference is resistant to stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "This facilitated biodiversity is resistant to stochasticity, either with the stochastic simulation algorithm or individual-based modeling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by SSA and IBM simulation results shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "863e81f1-7d2d-4a11-8a77-e07e8c30e061",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C5",
+      "claim": "The model naturally explains classical experiments that invalidate the CEP.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model naturally explains the classical experiments that invalidate the CEP, quantitatively illustrates the universal S-shaped pattern of the rank-abundance curves across a wide range of ecological communities, and can be broadly used to resolve the mystery of biodiversity in many natural ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison with experimental data from Ayala (1969) and Park (1954) shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "e3b26e39-0179-48dc-8baa-76edbc06b718",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C6",
+      "claim": "The model quantitatively illustrates the universal S-shaped pattern of the rank-abundance curves across a wide range of ecological communities.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model naturally explains the classical experiments that invalidate the CEP, quantitatively illustrates the universal S-shaped pattern of the rank-abundance curves across a wide range of ecological communities, and can be broadly used to resolve the mystery of biodiversity in many natural ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the comparison with experimental data from multiple ecological communities shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "cafeaef4-1402-433e-bc18-7f021604f534",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C7",
+      "claim": "In tropical forests, thousands of plant and vertebrate species coexist.",
+      "claim_type": "EXPLICIT",
+      "source": "In tropical forests, thousands of plant and vertebrate species coexist (Hoorn et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hoorn et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "1a53df4b-7250-4cc4-adc4-85a4947571d5",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C8",
+      "claim": "Within a gram of soil, the number of microbial species is estimated to be 2000\u201318,000.",
+      "claim_type": "EXPLICIT",
+      "source": "Within a gram of soil, the number of microbial species is estimated to be 2000\u201318,000 (Daniel, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Daniel, 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "55acc358-5d3a-445f-94f3-6974853fc12c",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C9",
+      "claim": "In the photic zone of the world ocean, there are roughly 150,000 eukaryotic plankton species.",
+      "claim_type": "EXPLICIT",
+      "source": "In the photic zone of the world ocean, there are roughly 150,000 eukaryotic plankton species (de Vargas et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to de Vargas et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "4530bbfb-da86-43b9-ae15-53711911058c",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C10",
+      "claim": "Two species competing for a single type of resources cannot coexist at constant population densities.",
+      "claim_type": "EXPLICIT",
+      "source": "A great challenge stems from the well-known competitive exclusion principle (CEP): two species competing for a single type of resources cannot coexist at constant population densities (Gause, 1934; Hardin, 1960), or generically, in the framework of consumer-resource models, the number of consumer species cannot exceed that of resources at a steady state (MacArthur and Levins, 1964; Levin, 1970; McGehee, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gause, 1934 and Hardin, 1960.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "ec514f95-def8-4d9e-8c3e-089a9b3cfda4",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C11",
+      "claim": "In the framework of consumer-resource models, the number of consumer species cannot exceed that of resources at a steady state.",
+      "claim_type": "EXPLICIT",
+      "source": "A great challenge stems from the well-known competitive exclusion principle (CEP): two species competing for a single type of resources cannot coexist at constant population densities (Gause, 1934; Hardin, 1960), or generically, in the framework of consumer-resource models, the number of consumer species cannot exceed that of resources at a steady state (MacArthur and Levins, 1964; Levin, 1970; McGehee, 1977).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to MacArthur and Levins, 1964; Levin, 1970; McGehee, 1977.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "ba50f2bf-73a1-49c3-b72b-1a176e21fcc5",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C12",
+      "claim": "A limited variety of resources supports hundreds or more coexisting species of phytoplankton in the paradox of plankton.",
+      "claim_type": "EXPLICIT",
+      "source": "On the contrary, in the paradox of plankton, a limited variety of resources supports hundreds or more coexisting species of phytoplankton (Hutchinson, 1961).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hutchinson, 1961.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "cf2eb993-a0e0-4b01-8f79-3c0e8bbd5335",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C13",
+      "claim": "Various mechanisms have been put forward to overcome the limits set by CEP.",
+      "claim_type": "EXPLICIT",
+      "source": "Ever since MacArthur and Levin proposed the classical mathematical proof for CEP in the 1960s (MacArthur and Levins, 1964), various mechanisms have been put forward to overcome the limits set by CEP (Chesson, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Chesson, 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "ab328212-a631-482a-8de4-133e67f43803",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C14",
+      "claim": "Some mechanisms suggest that the system never approaches a steady state where the CEP applies, due to temporal variations, spatial heterogeneity, or species' self-organized dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "Some suggest that the system never approaches a steady state where the CEP applies, due to temporal variations (Hutchinson, 1961; Levins, 1979), spatial heterogeneity (Levin, 1974), or species' self-organized dynamics (Koch, 1974; Huisman and Weissing, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "7fa9aeac-46bd-40e0-ac3b-e340eef8a282",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C15",
+      "claim": "Predator interference is commonly described by the classical Beddington-DeAngelis (B-D) phenomenological model.",
+      "claim_type": "EXPLICIT",
+      "source": "Predator interference is commonly described by the classical Beddington-DeAngelis (B-D) phenomenological model (Beddington, 1975; DeAngelis et al., 1975).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Beddington, 1975 and DeAngelis et al., 1975.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "f1c4a2b5-3a3d-47da-9a60-40a79e44809d",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C16",
+      "claim": "Several studies have shown that intraspecific predator interference can break CEP and facilitate species coexistence through the application of the B-D model.",
+      "claim_type": "EXPLICIT",
+      "source": "Through the application of the B-D model, several studies (Cantrell et al., 2004; Hsu et al., 2013) have shown that intraspecific predator interference can break CEP and facilitate species coexistence.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cantrell et al., 2004 and Hsu et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "87a1f8ca-611b-4287-93e9-25573bc6b291",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C17",
+      "claim": "The functional response of the B-D model can be formally derived from a scenario solely involving chasing pairs without accounting for pairwise encounters among consumer individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, from a mechanistic perspective, the functional response of the B-D model can be formally derived from a scenario solely involving chasing pairs, representing the consumption process between consumers and resources, without accounting for pairwise encounters among consumer individuals (Wang and Liu, 2020; Huisman and De Boer, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang and Liu, 2020 and Huisman and De Boer, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "3fd0eee2-9f3a-4581-85bd-4253a4a73878",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C18",
+      "claim": "The scenario involving only chasing pairs is subject to the constraint of CEP.",
+      "claim_type": "EXPLICIT",
+      "source": "Disturbingly, it has been established that the scenario involving only chasing pairs is subject to the constraint of CEP (Wang and Liu, 2020), raising doubt regarding the validity of applying the B-D model to overcome the CEP.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang and Liu, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "d8758699-6ece-4880-806e-d970a05a6f8d",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C19",
+      "claim": "The intraspecific interference among consumer individuals effectively constitutes a negative feedback loop.",
+      "claim_type": "EXPLICIT",
+      "source": "The intraspecific interference among consumer individuals effectively constitutes a negative feedback loop, enabling a wide range of consumer species to coexist with only one or a few types of resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the mathematical analysis and simulation results presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "9636c6b2-0a65-4eb5-807a-7642b233d8e3",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C20",
+      "claim": "The coexistence state facilitated by intraspecific interference is resistant to stochasticity and can be realized in practice.",
+      "claim_type": "EXPLICIT",
+      "source": "The coexistence state is resistant to stochasticity and can hence be realized in practice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SSA and IBM simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "5e680ba6-e415-436b-aa59-623c71e5e173",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C21",
+      "claim": "The model naturally explains species coexistence in classical experiments that invalidate CEP by Ayala (1969) and Park (1954).",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it naturally explains species coexistence in classical experiments that invalidate CEP (Ayala, 1969; Park, 1954) and quantitatively illustrates the S-shaped pattern of the rank-abundance curves in an extensive spectrum of ecological communities, ranging from the communities of ocean plankton worldwide (Fuhrman et al., 2008; Ser-Giacomi et al., 2018), tropical river fishes from Argentina (Cody and Smallwood, 1996), forest bats of Trinidad (Clarke et al., 2005), rainforest trees (Hubbell, 2001), birds (Terborgh et al., 1990; Mart\u00ednez et al., 2023), butterflies (De Vries, 1997) in Amazonia, to those of desert bees (Hubbell, 2001) in Utah and lizards from South Australia (Cody and Smallwood, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with experimental data shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "feef1f3b-4b57-4d2a-a145-be3076bc2c30",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C22",
+      "claim": "The model quantitatively illustrates the S-shaped pattern of the rank-abundance curves in ocean plankton communities worldwide.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, it naturally explains species coexistence in classical experiments that invalidate CEP (Ayala, 1969; Park, 1954) and quantitatively illustrates the S-shaped pattern of the rank-abundance curves in an extensive spectrum of ecological communities, ranging from the communities of ocean plankton worldwide (Fuhrman et al., 2008; Ser-Giacomi et al., 2018), tropical river fishes from Argentina (Cody and Smallwood, 1996), forest bats of Trinidad (Clarke et al., 2005), rainforest trees (Hubbell, 2001), birds (Terborgh et al., 1990; Mart\u00ednez et al., 2023), butterflies (De Vries, 1997) in Amazonia, to those of desert bees (Hubbell, 2001) in Utah and lizards from South Australia (Cody and Smallwood, 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparison with experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "2a69e2fd-6521-4e7b-8c78-d478c46d5fe5",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C27",
+      "claim": "In the scenario involving only chasing pairs, consumer species cannot coexist at a steady state except for special parameter settings.",
+      "claim_type": "EXPLICIT",
+      "source": "In the scenario involving only chasing pairs, consumer species cannot coexist at a steady state except for special parameter settings (sets of measure zero) (Wang and Liu, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang and Liu, 2020 and illustrated in Figure 1C and F.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "5c6c0408-1265-4069-ae4a-836fa8920624",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C28",
+      "claim": "In the scenario involving chasing pairs and interspecific interference, the fixed point for species coexistence is unstable.",
+      "claim_type": "EXPLICIT",
+      "source": "However, this fixed point is unstable (see Figure 1G and Appendix 1\u2014figure 3D, F), and thus one of the consumer species is doomed to extinction (see Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis shown in Figure 1G and simulation results in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "0337ac24-a57b-4f23-98a3-10c263e4237e",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C29",
+      "claim": "In the scenario involving chasing pairs and intraspecific interference, two consumer species may stably coexist at a steady state with only one type of resources, which breaks CEP.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this naturally happens, and encouragingly the fixed point can be stable. Therefore, two consumer species may stably coexist at a steady state with only one type of resources, which obviously breaks CEP (see Figure 1E and Appendix 1\u2014figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the analysis and simulation results shown in Figure 1E and H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "9d3ed45e-905d-444a-b20a-33082ba1dc78",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C30",
+      "claim": "The coexisting state in the scenario with intraspecific interference is globally attractive.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the coexisting state is globally attractive (see Appendix 1\u2014figure 4A), and there exists a non-zero volume of parameter space where the two consumer species stably coexist at constant population densities (see Appendix 1\u2014figure 4B, C), demonstrating that the violation of CEP does not depend on special parameter settings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation results shown in Appendix 1\u2014figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "b7bbd266-6d45-4f21-a554-f110f8d202ca",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C31",
+      "claim": "There exists a non-zero volume of parameter space where two consumer species stably coexist at constant population densities.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the coexisting state is globally attractive (see Appendix 1\u2014figure 4A), and there exists a non-zero volume of parameter space where the two consumer species stably coexist at constant population densities (see Appendix 1\u2014figure 4B, C), demonstrating that the violation of CEP does not depend on special parameter settings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation results shown in Appendix 1\u2014figure 4B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "be4f3926-7d5d-4102-9e74-7a2c7a670056",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C32",
+      "claim": "The violation of CEP through intraspecific interference does not depend on special parameter settings.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the coexisting state is globally attractive (see Appendix 1\u2014figure 4A), and there exists a non-zero volume of parameter space where the two consumer species stably coexist at constant population densities (see Appendix 1\u2014figure 4B, C), demonstrating that the violation of CEP does not depend on special parameter settings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the analysis of parameter space shown in Appendix 1\u2014figure 4B, C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "8777461a-5231-4c53-93bf-c78a473aa9a3",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C33",
+      "claim": "Two notable cases of oscillating coexistence turn into species extinction when stochasticity is introduced.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with this, we observe that two notable cases of oscillating coexistence (Koch, 1974; Huisman and Weissing, 1999) turn into species extinction when stochasticity is introduced (see Appendix 1\u2014figure 6A, B), where we simulate the models with stochastic simulation algorithm (SSA; Gillespie, 2007) and adopt the same parameters as those in the original references (Koch, 1974; Huisman and Weissing, 1999).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SSA simulation results shown in Appendix 1\u2014figure 6A, B.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "f26c2d4e-8ee0-40df-8212-36fa00fca6f2",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C34",
+      "claim": "In the scenario involving chasing pairs and intraspecific interference, species may coexist indefinitely in the SSA simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the scenario involving chasing pairs and intraspecific interference, species may coexist indefinitely in the SSA simulations (see Figure 2A and Appendix 1\u2014figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by SSA simulation results shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "22a854ca-5c3d-411f-bad9-f7b2db00a89f",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C35",
+      "claim": "The parameter region for species coexistence in the scenario with intraspecific interference is rather similar between the SSA and ODEs studies.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the parameter region for species coexistence in this scenario is rather similar between the SSA and ODEs studies (see Appendix 1\u2014figure 6C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison of simulation results shown in Appendix 1\u2014figure 6C, D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "b9617fe4-1150-4658-81ed-824d4f784475",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C36",
+      "claim": "In the scenario involving chasing pairs and intraspecific interference, two consumer species coexist for long with only one type of resources in the IBM simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the scenario involving chasing pairs and intraspecific interference, two consumer species coexist for long with only one type of resources in the IBM simulations (see Figure 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by IBM simulation results shown in Figure 2B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "be7c8f95-3bfe-4dc0-b127-ab7ca6be8e3a",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C37",
+      "claim": "Intraspecific interference robustly promotes species coexistence when stochasticity is considered.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with the SSA simulation studies, it is obvious that intraspecific interference still robustly promotes species coexistence when stochasticity is considered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by SSA and IBM simulation results shown in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "135dda91-4272-478f-9281-b01869998f12",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C38",
+      "claim": "In Ayala's experiment, two Drosophila species coexisted with one type of resources within a laboratory bottle.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, two classical studies (Ayala, 1969; Park, 1954) reported that, in their respective laboratory systems, two species of insects coexisted for roughly years or more with only one type of resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Ayala, 1969.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "1b1e9fd2-54c6-403c-94e4-29a38e94bed8",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C39",
+      "claim": "In Park's experiment, two Tribolium species coexisted for 2 years with one type of food (flour) within a lab.",
+      "claim_type": "EXPLICIT",
+      "source": "In practice, two classical studies (Ayala, 1969; Park, 1954) reported that, in their respective laboratory systems, two species of insects coexisted for roughly years or more with only one type of resources.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Park, 1954.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "c7d7dec7-ec97-4ef0-9685-6b6aacd81adf",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C40",
+      "claim": "The two experiments by Ayala (1969) and Park (1954) are incompatible with CEP.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidently, these two experiments (Ayala, 1969; Park, 1954) are incompatible with CEP, while factors such as temporal variations, spatial heterogeneity, cross-feeding, etc. are clearly not involved in such systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the experimental results and the definition of CEP.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "ac3b78cc-1099-4775-9d10-6328ae20f6c3",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C41",
+      "claim": "Intraspecific fighting is prevalent among insects.",
+      "claim_type": "EXPLICIT",
+      "source": "As intraspecific fighting is prevalent among insects (Boomsma et al., 2005; Dankert et al., 2009; Chen et al., 2002), we apply the model involving chasing pairs and intraspecific interference to simulate the two systems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Boomsma et al., 2005; Dankert et al., 2009; Chen et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "ff0793eb-a289-46d3-8862-5e76e827c45a",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C42",
+      "claim": "The SSA results show good consistency with the experiments by Ayala (1969) and Park (1954).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our SSA results show good consistency with those of the experiments (see Figure 2D and E and Appendix 1\u2014figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with experimental data shown in Figure 2D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "10a09a82-156a-4d0b-aded-f8f1dccf565e",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C43",
+      "claim": "The fluctuations in experimental time series can be mainly accounted by stochasticity.",
+      "claim_type": "EXPLICIT",
+      "source": "The fluctuations in experimental time series can be mainly accounted by stochasticity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison between SSA simulations and experimental data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "60c097ec-4ac4-4261-9357-95f78305c80c",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C46",
+      "claim": "The number of consumer species in long-term coexistence can be up to hundreds or more.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of consumer species in long-term coexistence can be up to hundreds or more (see Figure 3 and Appendix 1\u2014figure 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by simulation results shown in Figure 3 and Appendix 1\u2014figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "3c8c9135-5a42-4f63-bff8-f3fd07793609",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C49",
+      "claim": "The analytical steady-state solutions are highly consistent with the numerical results.",
+      "claim_type": "EXPLICIT",
+      "source": "The analytical steady-state solutions are highly consistent with the numerical results (see Figure 1E and Appendix 1\u2014figure 3H, I) and can even quantitatively predict the coexistence region of the parameter space (see Appendix 1\u2014figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison between analytical and numerical results shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "acc098da-b333-4410-9d1e-c94a0fac2453",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C50",
+      "claim": "The analytical solutions can quantitatively predict the coexistence region of the parameter space.",
+      "claim_type": "EXPLICIT",
+      "source": "The analytical steady-state solutions are highly consistent with the numerical results (see Figure 1E and Appendix 1\u2014figure 3H, I) and can even quantitatively predict the coexistence region of the parameter space (see Appendix 1\u2014figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison shown in Appendix 1\u2014figure 3I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "03f3c93a-e478-4143-9c5e-be55a67203c3",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C54",
+      "claim": "The species' rank-abundance curves follow a universal S-shaped pattern in the linear-log plot across a broad spectrum of ecological communities.",
+      "claim_type": "EXPLICIT",
+      "source": "As mentioned above, a prominent feature of biodiversity is that the species' rank-abundance curves follow a universal S-shaped pattern in the linear-log plot across a broad spectrum of ecological communities (Fuhrman et al., 2008; Ser-Giacomi et al., 2018; Cody and Smallwood, 1996; Terborgh et al., 1990; Mart\u00ednez et al., 2023; Clarke et al., 2005; Hubbell, 2001; De Vries, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "6cddbb83-bad1-45a7-9451-83f823690f18",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C55",
+      "claim": "The S-shaped pattern was mostly explained by the neutral theory, which requires special parameter settings that all consumer species share identical fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, this pattern was mostly explained by the neutral theory (Hubbell, 2001), which requires special parameter settings that all consumer species share identical fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hubbell, 2001.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "8305feed-d2b3-4ddc-9ffc-713b159e7084",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C56",
+      "claim": "The rank-abundance curves obtained from the long-term coexisting state of both the ODEs and SSA simulation studies agree quantitatively with those of experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "For a broad array of the ecological communities, the rank-abundance curves obtained from the long-term coexisting state of both the ODEs and SSA simulation studies agree quantitatively with those of experiments (see Figure 3C and D and Appendix 1\u2014figures 8\u201314), sharing roughly equal Shannon entropies and mostly being regarded as identical distributions in the Kolmogorov-Smirnov (K-S) statistical test (with a significance threshold of 0.05).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by comparison with experimental data shown in Figure 3C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "5a664136-f5dd-4556-9c3c-4be45e152c92",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C57",
+      "claim": "The simulation results and experimental data share roughly equal Shannon entropies.",
+      "claim_type": "EXPLICIT",
+      "source": "For a broad array of the ecological communities, the rank-abundance curves obtained from the long-term coexisting state of both the ODEs and SSA simulation studies agree quantitatively with those of experiments (see Figure 3C and D and Appendix 1\u2014figures 8\u201314), sharing roughly equal Shannon entropies and mostly being regarded as identical distributions in the Kolmogorov-Smirnov (K-S) statistical test (with a significance threshold of 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical analysis of the simulation and experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "be7804af-f250-4301-b857-9889b2a266a6",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C58",
+      "claim": "The simulation results and experimental data are mostly regarded as identical distributions in the Kolmogorov-Smirnov (K-S) statistical test.",
+      "claim_type": "EXPLICIT",
+      "source": "For a broad array of the ecological communities, the rank-abundance curves obtained from the long-term coexisting state of both the ODEs and SSA simulation studies agree quantitatively with those of experiments (see Figure 3C and D and Appendix 1\u2014figures 8\u201314), sharing roughly equal Shannon entropies and mostly being regarded as identical distributions in the Kolmogorov-Smirnov (K-S) statistical test (with a significance threshold of 0.05).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by K-S test results with p-values reported in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "f2fd30d4-a116-4b2a-bb7d-603fd44e73d6",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C59",
+      "claim": "There is a noticeable discrepancy between the experimental data and SSA studies in terms of the species' absolute abundances.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, there is a noticeable discrepancy between the experimental data and SSA studies in terms of the species' absolute abundances (e.g. see Appendix 1\u2014figure 8C): those with experimental abundances less than 10 tend to be extinct in the SSA simulations.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is observed in the comparison shown in Appendix 1\u2014figure 8C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "3e4d8084-85b6-45ac-b225-c245548b3f2e",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C60",
+      "claim": "Species with experimental abundances less than 10 tend to be extinct in the SSA simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Still, there is a noticeable discrepancy between the experimental data and SSA studies in terms of the species' absolute abundances (e.g. see Appendix 1\u2014figure 8C): those with experimental abundances less than 10 tend to be extinct in the SSA simulations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the SSA simulation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "160c6bf3-9d2f-41d0-871a-3de7d2e3b3bf",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C61",
+      "claim": "The recorded individuals in an experimental sample are just a tiny portion of that in the real ecological system.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to the fact that the recorded individuals in an experimental sample are just a tiny portion of that in the real ecological system, whereas the species population size in a natural community is certainly much larger than 10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on ecological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "c86ecc90-4f50-4ff8-a1cf-2a2faa93a4c0",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C62",
+      "claim": "The species population size in a natural community is certainly much larger than 10.",
+      "claim_type": "EXPLICIT",
+      "source": "This is due to the fact that the recorded individuals in an experimental sample are just a tiny portion of that in the real ecological system, whereas the species population size in a natural community is certainly much larger than 10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on ecological knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "8cd9830a-8f0d-4ee4-b3d1-757d374f9718",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C63",
+      "claim": "The functional response of the B-D model involving intraspecific interference can be formally derived from the scenario involving only chasing pairs without consideration of pairwise encounters between consumer individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, predator interference has been introduced long ago by the classical B-D phenomenological model (Beddington, 1975; DeAngelis et al., 1975). However, the functional response of the B-D model involving intraspecific interference can be formally derived from the scenario involving only chasing pairs without consideration of pairwise encounters between consumer individuals (Wang and Liu, 2020; Huisman and De Boer, 1997; see Equations S8a and S24a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wang and Liu, 2020 and Huisman and De Boer, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "74757848-2dca-4d03-a5c4-fc03ef6c57eb",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C64",
+      "claim": "It is questionable regarding the validity of applying the B-D model to break CEP.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, it is questionable regarding the validity of applying the B-D model to break CEP (Cantrell et al., 2004; Hsu et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the analysis that the B-D model can be derived from a scenario subject to CEP.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "87f63810-17bb-4af4-844c-0f5459316e6a",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C65",
+      "claim": "The B-D model corresponds to a special case of the mechanistic model without the escape rate.",
+      "claim_type": "EXPLICIT",
+      "source": "From a mechanistic perspective, we resolve these issues and show that the B-D model corresponds to a special case of our mechanistic model yet without the escape rate (see Appendix 1\u2014figure 2 and Appendix 3 for details).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the mathematical analysis shown in Appendix 1\u2014figure 2 and Appendix 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "5203a4b4-a021-4a37-bdab-d21b8f93b1ce",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C66",
+      "claim": "The model is broadly applicable to explain biodiversity in many ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "Our model is broadly applicable to explain biodiversity in many ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the successful application to multiple ecological communities shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "794d4163-fd76-447a-8559-9ef076b186e9",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C67",
+      "claim": "In microbial systems, complex interactions are commonly involved.",
+      "claim_type": "EXPLICIT",
+      "source": "In microbial systems, complex interactions are commonly involved (Goyal and Maslov, 2018; Goldford et al., 2018; Hu et al., 2022), and species' preference for food is shaped by the evolutionary course and environmental history (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "9f972e60-461c-468a-91a6-5c04ab7565e4",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C68",
+      "claim": "Species' preference for food is shaped by the evolutionary course and environmental history.",
+      "claim_type": "EXPLICIT",
+      "source": "In microbial systems, complex interactions are commonly involved (Goyal and Maslov, 2018; Goldford et al., 2018; Hu et al., 2022), and species' preference for food is shaped by the evolutionary course and environmental history (Wang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Wang et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "a7accfbb-67a4-4cf0-bb05-ed5830f9460f",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C69",
+      "claim": "It is highly challenging to fully explain how organisms evolve and maintain biodiversity in diverse ecosystems.",
+      "claim_type": "EXPLICIT",
+      "source": "It is still highly challenging to fully explain how organisms evolve and maintain biodiversity in diverse ecosystems.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge in ecology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "cb15cfce-0369-4a66-ba78-40b36fb0a433",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "claim_id": "C75",
+      "claim": "The mortality rates of consumer species in the model simulations follow a Gaussian distribution where the coefficient of variation was taken around 0.3.",
+      "claim_type": "EXPLICIT",
+      "source": "In each model system, the mortality rates of consumer species follow a Gaussian distribution where the coefficient of variation was taken around 0.3 (Menon et al., 2003; see Appendix 9 for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a parameter setting for the simulations, supported by a citation to Menon et al., 2003.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "68b49267-e04e-4f36-a69b-eafc60c7b63b",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the paradox of plankton as a fundamental ecological puzzle: many plankton species coexist on limited resources, apparently violating the competitive exclusion principle (CEP), which states that the number of consumer species cannot exceed the number of resources at steady state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C10, C11, and C12 collectively establish well-documented ecological principles and the paradox of plankton. These are supported by appropriate citations to foundational work (Gause 1934, Hardin 1960, MacArthur and Levins 1964, Hutchinson 1961) and represent established knowledge in ecology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "87cc966a-ceb8-4897-b9c6-e966427cb89e",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors demonstrate that in scenarios with only chasing pairs or with chasing pairs plus interspecific interference, consumer species cannot stably coexist (except for special parameter settings), but adding intraspecific interference enables stable coexistence of two consumer species on one resource, breaking CEP across a non-zero volume of parameter space.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C32 are supported by mathematical analysis and simulations shown in Figure 1 and Appendix figures. The progression from unstable coexistence (C27, C28) to stable coexistence with intraspecific interference (C29-C32) is demonstrated through phase portraits, stability analysis, and parameter space exploration. The analytical framework appears sound and the visualizations support the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "cfea2ec4-cfff-47fe-b2c8-84e064b34652",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Intraspecific interference among consumers creates a negative feedback loop that enables multiple consumer species to coexist at constant population densities with limited resources. This mechanism is captured analytically through a functional response (Equation 5) that is negatively correlated with consumer population size, and analytical solutions accurately predict numerical results and coexistence regions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C19, C49, and C50 describe the core mechanistic finding. The negative feedback mechanism is mathematically derived (Equation 5 in manuscript), and C49-C50 demonstrate that analytical predictions match numerical simulations (Figure 1E, Appendix figures). The mathematical framework appears internally consistent and the agreement between analytical and numerical results supports the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "f2d69348-74a0-4c41-8bd1-e431e510e34a",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The biodiversity facilitated by intraspecific interference is resistant to stochasticity, as demonstrated through stochastic simulation algorithm (SSA) and individual-based modeling (IBM). In contrast, other mechanisms like oscillating coexistence fail when stochasticity is introduced.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C20, C33-C37 are supported by SSA and IBM simulations shown in Figure 2 and Appendix figures. The comparison showing that oscillating coexistence mechanisms (Koch 1974, Huisman and Weissing 1999) fail under stochasticity (C33) while intraspecific interference maintains coexistence (C34-C37) provides strong evidence. The parameter regions for coexistence are similar between deterministic and stochastic models (C35), supporting robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "c064e4e6-7447-48e9-8929-5e923336f9de",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The model explains classical experiments by Ayala (1969) and Park (1954) where two insect species coexisted on one resource for extended periods. SSA simulations show good quantitative agreement with experimental time series, with fluctuations attributable to stochasticity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C21, C38-C43 are supported by comparisons in Figure 2D-E and Appendix figures. The model successfully reproduces the experimental observations (C42), and the justification that intraspecific fighting is prevalent in insects (C41, supported by citations) provides biological plausibility. However, the claim that fluctuations are 'mainly' due to stochasticity (C43) is somewhat speculative without more rigorous statistical decomposition of variance sources.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "62992a94-db99-4be2-885a-0ae7964e4405",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The model demonstrates that hundreds or more consumer species can coexist long-term with limited resources (one or a few resource species).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by simulation results in Figure 3 and Appendix figures 8-14, showing systems with Sc >> Sr where many consumer species persist. The simulations include both deterministic (ODEs) and stochastic (SSA) approaches, demonstrating robustness of the high-diversity coexistence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "0def3689-e4e3-4e75-9ae6-35b956aef9fa",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The model quantitatively reproduces the universal S-shaped rank-abundance curves observed across diverse ecological communities (plankton, fish, bats, birds, butterflies, lizards) without requiring the special parameter settings (identical fitness) needed by neutral theory. Model predictions match experimental data in K-S tests and Shannon entropy comparisons.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C22, C54-C58 are supported by extensive comparisons in Figure 3C-D and Appendix figures 8-14. The K-S test p-values reported in Figure 3 show that most comparisons fail to reject the null hypothesis that simulation and experimental data come from the same distribution (p > 0.05 for most cases). Shannon entropies are reported as 'roughly equal.' This represents strong quantitative validation across multiple ecosystems, though one plankton comparison has p=0.06, approaching significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "f21749eb-412c-47e3-a7f4-02a8ff83f289",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "There is a discrepancy between SSA simulations and experimental data for species with abundances less than 10, which tend to go extinct in simulations. The authors attribute this to sampling effects: experimental samples capture only a fraction of actual populations, while natural populations are much larger than 10 individuals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C59-C62 identify a limitation but the explanation is somewhat speculative. While C59-C60 are observational (supported by Appendix figure 8C), the explanation in C61-C62 is plausible but not rigorously tested. The authors don't provide direct evidence that scaling up population sizes in simulations would resolve the discrepancy, nor do they quantify the sampling fraction in the experimental studies. This represents a potential weakness in the model's predictive power for rare species.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "e701b77a-cb49-4839-8ee3-da874388fc21",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors resolve a theoretical inconsistency with the Beddington-DeAngelis (B-D) model: while previous studies claimed the B-D model breaks CEP through intraspecific interference, the B-D functional response can be derived from scenarios with only chasing pairs (which obey CEP). The authors show the B-D model is a special case of their mechanistic model without escape rates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C18, C63-C65 address an important theoretical issue. The criticism of prior B-D applications (C16, C64) is supported by citations and mathematical analysis (C17, C18, C63 citing Wang and Liu 2020, Huisman and De Boer 1997). The resolution (C65) is supported by mathematical derivations in Appendix 2 and Appendix 3. This represents a significant theoretical clarification, though the practical implications for prior studies using the B-D model remain somewhat unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "98726d7d-78db-4420-acfe-ef7e2316565f",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "In model simulations, mortality rates of consumer species follow a Gaussian distribution with coefficient of variation around 0.3.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C75 describes a methodological choice for parameter selection, supported by citation to Menon et al. 2003 and detailed in Appendix 9. This is a reasonable approach to model species diversity without requiring identical fitness (as in neutral theory), though the choice of 0.3 for the coefficient of variation could be better justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript provides context on biodiversity in various ecosystems and reviews existing mechanisms proposed to overcome CEP, including temporal variations, spatial heterogeneity, and complex interactions. The authors note that fully explaining biodiversity evolution and maintenance remains challenging.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C9, C13-C14, C67-C69 provide background context supported by appropriate citations. These represent accurate summaries of established knowledge and current understanding in ecology. The claims are appropriately cautious about the limits of current explanations (C69).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "a370ad11-93d7-4af2-b466-dafe5d395a68",
+      "content_id": "1e3b39de-e8af-42dd-af57-3bb2af6ab36f",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The model is broadly applicable to explain biodiversity in many ecosystems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C66 is supported by the successful application to multiple diverse ecological communities shown in Figure 3 and Appendix figures (plankton, fish, bats, birds, butterflies, lizards). The quantitative agreement with rank-abundance curves across these systems provides strong evidence for broad applicability, though the authors appropriately note in the Discussion that many additional factors may be involved in real ecosystems.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "6bce0c44-e1d5-4536-b742-f40a61f9d898",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The mechanistic model demonstrates that intraspecific interference among consumers enables multiple consumer species to coexist at constant population densities with only one or a handful of resource species, breaking the competitive exclusion principle. This coexistence is stable, globally attractive, and occurs across a non-zero volume of parameter space.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm this core finding. The editor states the authors 'convincingly show that predator interference allows for the coexistence of multiple species on a single resource, beyond the competitive exclusion principle.' Reviewer 2 notes 'This work provides additional support for the idea that predator interference allows multiple predators to persist with a shared resource.' Reviewer 3 confirms 'the negative feedback loop created by the intraspecific interference allows a diverse range of consumer species to coexist with only one or a few types of resources.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "c6b97e36-5aa6-4b1e-b7b5-92ae71f76c2d",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The facilitated biodiversity through intraspecific interference is resistant to stochasticity, as demonstrated through both stochastic simulation algorithm (SSA) and individual-based modeling (IBM). The coexistence persists indefinitely in SSA simulations, with parameter regions for coexistence similar between SSA and ODE studies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the robustness to stochasticity. The editor notes the model is assessed 'using a mathematical model' with no concerns raised. Reviewer 2 states the authors 'demonstrate that this result is robust to demographic stochasticity.' Reviewer 3 confirms 'some patterns of their model agree with experimental data' and notes no additional weaknesses after revision.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "3a789d93-ce36-4b9e-9883-49ceae5971cf",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The model naturally explains classical experiments by Ayala (1969) and Park (1954) that invalidate the competitive exclusion principle, showing good consistency between SSA simulation results and experimental time series data. The fluctuations in experimental data can be mainly accounted for by stochasticity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praise this application. Reviewer 1 states 'The comparison with the experiments that reject the competitive exclusion principle is promising' and suggests future work to quantify interference dynamics in insects. Reviewer 2 acknowledges the model 'provides additional support' for predator interference theory. No concerns are raised about the comparison with classical experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The model quantitatively illustrates the universal S-shaped pattern of rank-abundance curves across a wide range of ecological communities (ocean plankton, tropical fish, bats, birds, butterflies, etc.). The simulation results agree quantitatively with experimental data, sharing roughly equal Shannon entropies and passing Kolmogorov-Smirnov statistical tests, though there is a discrepancy for species with very low abundances (<10 individuals).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly affirm this finding. The editor states 'Notably, the model matches observed rank-abundance curves in several natural ecosystems.' Reviewer 1 emphasizes 'The application of the theory to natural rank-abundance curves is impressive.' Reviewer 3 confirms 'some patterns of their model agree with experimental data, including...the rank-abundance curves from several natural communities.' The acknowledged discrepancy at low abundances is explained by sampling effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "acd216a6-4ecb-4985-a4ed-553eb4c054eb",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The analytical steady-state solutions are highly consistent with numerical results and can quantitatively predict the coexistence region of parameter space.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the technical soundness of the work. Reviewer 1 states 'The results are clearly presented; the methods adequately described; the supplement is rich with details.' Reviewer 2 notes 'while it is technically sound' and appreciates 'the effort to rigorously derive interaction rates from models of individual behaviors.' No concerns are raised about the analytical solutions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "da835b26-2a23-4030-930f-51d29880d7ef",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "In scenarios involving only chasing pairs or chasing pairs with interspecific interference, consumer species cannot stably coexist at steady state\u2014the fixed points are either non-existent (except for special parameters) or unstable, leading to competitive exclusion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these baseline comparisons without challenge. Reviewer 2 acknowledges the model formulation 'allows for 'chasing pairs', where a predator and prey engage with one another to the exclusion of other interactions' and notes this differs from previous work. The demonstration that these scenarios fail to break CEP is implicitly accepted as it sets up the main finding.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "e8ebb4d4-df3e-40e2-b13e-cf1c5c9873b9",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The classical Beddington-DeAngelis (B-D) model can be formally derived from a scenario involving only chasing pairs without accounting for pairwise encounters among consumers, which is subject to CEP constraints. The authors' mechanistic model shows that the B-D model corresponds to a special case without the escape rate, resolving questions about the validity of applying B-D to break CEP.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this theoretical contribution. Reviewer 2 provides detailed context: 'the Beddington-DeAngelis has been influential in theoretical ecology, it has also been criticized at times for several unusual assumptions' and notes 'This paper represents another effort to more rigorously derive a model of predator interference.' The resolution of B-D model issues is implicitly accepted as part of the technical soundness affirmed by reviewers.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "1229e60e-4181-413d-996b-b7b8c0921aa2",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The model is broadly applicable to explain biodiversity in many ecosystems.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers praise the broad applications shown, Reviewer 2 raises a limitation: 'The formulation of chasing-pair engagements assumes that prey being chased by a predator are unavailable to other predators. While this may hold in some predator-prey, it does not hold for many others, perhaps limiting some results' generality.' This suggests the claim of broad applicability may be overstated for some systems.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "c8659752-202d-4228-939c-7d177e59452e",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about biodiversity patterns, the competitive exclusion principle, and existing mechanisms proposed to overcome CEP constraints.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established ecological knowledge claims that reviewers do not question. They serve as context and motivation for the study. Reviewer comments focus on the novel contributions rather than challenging these foundational concepts.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "c7e65ddb-140c-43d6-8c01-70bebd09c948",
+      "content_id": "84c497c8-9ef8-40d3-9ff8-364b3100aed3",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Contextual claims about microbial systems, evolutionary factors, ongoing challenges in ecology, and methodological parameter choices.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These supporting claims are not challenged by reviewers. Reviewer 1 notes 'Though more and better data could be used to constrain and validate the modeling, given this is a theory-driven manuscript, their results are sufficient,' accepting the methodological choices. Reviewer 3 states 'The authors did a great job of satisfactorily addressing each of my concerns raised in the previous round.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c11276f2-36b3-4610-acef-8bb06134e733",
+      "result_id": "68b49267-e04e-4f36-a69b-eafc60c7b63b"
+    },
+    {
+      "claim_id": "4f798394-5d17-4cfe-b141-34ce3138a217",
+      "result_id": "68b49267-e04e-4f36-a69b-eafc60c7b63b"
+    },
+    {
+      "claim_id": "4530bbfb-da86-43b9-ae15-53711911058c",
+      "result_id": "68b49267-e04e-4f36-a69b-eafc60c7b63b"
+    },
+    {
+      "claim_id": "ec514f95-def8-4d9e-8c3e-089a9b3cfda4",
+      "result_id": "68b49267-e04e-4f36-a69b-eafc60c7b63b"
+    },
+    {
+      "claim_id": "ba50f2bf-73a1-49c3-b72b-1a176e21fcc5",
+      "result_id": "68b49267-e04e-4f36-a69b-eafc60c7b63b"
+    },
+    {
+      "claim_id": "2a69e2fd-6521-4e7b-8c78-d478c46d5fe5",
+      "result_id": "87cc966a-ceb8-4897-b9c6-e966427cb89e"
+    },
+    {
+      "claim_id": "5c6c0408-1265-4069-ae4a-836fa8920624",
+      "result_id": "87cc966a-ceb8-4897-b9c6-e966427cb89e"
+    },
+    {
+      "claim_id": "0337ac24-a57b-4f23-98a3-10c263e4237e",
+      "result_id": "87cc966a-ceb8-4897-b9c6-e966427cb89e"
+    },
+    {
+      "claim_id": "9d3ed45e-905d-444a-b20a-33082ba1dc78",
+      "result_id": "87cc966a-ceb8-4897-b9c6-e966427cb89e"
+    },
+    {
+      "claim_id": "b7bbd266-6d45-4f21-a554-f110f8d202ca",
+      "result_id": "87cc966a-ceb8-4897-b9c6-e966427cb89e"
+    },
+    {
+      "claim_id": "be4f3926-7d5d-4102-9e74-7a2c7a670056",
+      "result_id": "87cc966a-ceb8-4897-b9c6-e966427cb89e"
+    },
+    {
+      "claim_id": "3a9e52f5-3e37-48be-a526-996fa29b700b",
+      "result_id": "cfea2ec4-cfff-47fe-b2c8-84e064b34652"
+    },
+    {
+      "claim_id": "d8758699-6ece-4880-806e-d970a05a6f8d",
+      "result_id": "cfea2ec4-cfff-47fe-b2c8-84e064b34652"
+    },
+    {
+      "claim_id": "3c8c9135-5a42-4f63-bff8-f3fd07793609",
+      "result_id": "cfea2ec4-cfff-47fe-b2c8-84e064b34652"
+    },
+    {
+      "claim_id": "acc098da-b333-4410-9d1e-c94a0fac2453",
+      "result_id": "cfea2ec4-cfff-47fe-b2c8-84e064b34652"
+    },
+    {
+      "claim_id": "f0a42889-d68e-4a5f-a32f-91b0d00b2ee4",
+      "result_id": "f2d69348-74a0-4c41-8bd1-e431e510e34a"
+    },
+    {
+      "claim_id": "9636c6b2-0a65-4eb5-807a-7642b233d8e3",
+      "result_id": "f2d69348-74a0-4c41-8bd1-e431e510e34a"
+    },
+    {
+      "claim_id": "8777461a-5231-4c53-93bf-c78a473aa9a3",
+      "result_id": "f2d69348-74a0-4c41-8bd1-e431e510e34a"
+    },
+    {
+      "claim_id": "f26c2d4e-8ee0-40df-8212-36fa00fca6f2",
+      "result_id": "f2d69348-74a0-4c41-8bd1-e431e510e34a"
+    },
+    {
+      "claim_id": "22a854ca-5c3d-411f-bad9-f7b2db00a89f",
+      "result_id": "f2d69348-74a0-4c41-8bd1-e431e510e34a"
+    },
+    {
+      "claim_id": "b9617fe4-1150-4658-81ed-824d4f784475",
+      "result_id": "f2d69348-74a0-4c41-8bd1-e431e510e34a"
+    },
+    {
+      "claim_id": "be7c8f95-3bfe-4dc0-b127-ab7ca6be8e3a",
+      "result_id": "f2d69348-74a0-4c41-8bd1-e431e510e34a"
+    },
+    {
+      "claim_id": "863e81f1-7d2d-4a11-8a77-e07e8c30e061",
+      "result_id": "c064e4e6-7447-48e9-8929-5e923336f9de"
+    },
+    {
+      "claim_id": "5e680ba6-e415-436b-aa59-623c71e5e173",
+      "result_id": "c064e4e6-7447-48e9-8929-5e923336f9de"
+    },
+    {
+      "claim_id": "135dda91-4272-478f-9281-b01869998f12",
+      "result_id": "c064e4e6-7447-48e9-8929-5e923336f9de"
+    },
+    {
+      "claim_id": "1b1e9fd2-54c6-403c-94e4-29a38e94bed8",
+      "result_id": "c064e4e6-7447-48e9-8929-5e923336f9de"
+    },
+    {
+      "claim_id": "c7d7dec7-ec97-4ef0-9685-6b6aacd81adf",
+      "result_id": "c064e4e6-7447-48e9-8929-5e923336f9de"
+    },
+    {
+      "claim_id": "ac3b78cc-1099-4775-9d10-6328ae20f6c3",
+      "result_id": "c064e4e6-7447-48e9-8929-5e923336f9de"
+    },
+    {
+      "claim_id": "ff0793eb-a289-46d3-8862-5e76e827c45a",
+      "result_id": "c064e4e6-7447-48e9-8929-5e923336f9de"
+    },
+    {
+      "claim_id": "10a09a82-156a-4d0b-aded-f8f1dccf565e",
+      "result_id": "c064e4e6-7447-48e9-8929-5e923336f9de"
+    },
+    {
+      "claim_id": "60c097ec-4ac4-4261-9357-95f78305c80c",
+      "result_id": "62992a94-db99-4be2-885a-0ae7964e4405"
+    },
+    {
+      "claim_id": "e3b26e39-0179-48dc-8baa-76edbc06b718",
+      "result_id": "0def3689-e4e3-4e75-9ae6-35b956aef9fa"
+    },
+    {
+      "claim_id": "feef1f3b-4b57-4d2a-a145-be3076bc2c30",
+      "result_id": "0def3689-e4e3-4e75-9ae6-35b956aef9fa"
+    },
+    {
+      "claim_id": "03f3c93a-e478-4143-9c5e-be55a67203c3",
+      "result_id": "0def3689-e4e3-4e75-9ae6-35b956aef9fa"
+    },
+    {
+      "claim_id": "6cddbb83-bad1-45a7-9451-83f823690f18",
+      "result_id": "0def3689-e4e3-4e75-9ae6-35b956aef9fa"
+    },
+    {
+      "claim_id": "8305feed-d2b3-4ddc-9ffc-713b159e7084",
+      "result_id": "0def3689-e4e3-4e75-9ae6-35b956aef9fa"
+    },
+    {
+      "claim_id": "5a664136-f5dd-4556-9c3c-4be45e152c92",
+      "result_id": "0def3689-e4e3-4e75-9ae6-35b956aef9fa"
+    },
+    {
+      "claim_id": "be7804af-f250-4301-b857-9889b2a266a6",
+      "result_id": "0def3689-e4e3-4e75-9ae6-35b956aef9fa"
+    },
+    {
+      "claim_id": "f2fd30d4-a116-4b2a-bb7d-603fd44e73d6",
+      "result_id": "f21749eb-412c-47e3-a7f4-02a8ff83f289"
+    },
+    {
+      "claim_id": "3e4d8084-85b6-45ac-b225-c245548b3f2e",
+      "result_id": "f21749eb-412c-47e3-a7f4-02a8ff83f289"
+    },
+    {
+      "claim_id": "160c6bf3-9d2f-41d0-871a-3de7d2e3b3bf",
+      "result_id": "f21749eb-412c-47e3-a7f4-02a8ff83f289"
+    },
+    {
+      "claim_id": "c86ecc90-4f50-4ff8-a1cf-2a2faa93a4c0",
+      "result_id": "f21749eb-412c-47e3-a7f4-02a8ff83f289"
+    },
+    {
+      "claim_id": "7fa9aeac-46bd-40e0-ac3b-e340eef8a282",
+      "result_id": "e701b77a-cb49-4839-8ee3-da874388fc21"
+    },
+    {
+      "claim_id": "f1c4a2b5-3a3d-47da-9a60-40a79e44809d",
+      "result_id": "e701b77a-cb49-4839-8ee3-da874388fc21"
+    },
+    {
+      "claim_id": "87a1f8ca-611b-4287-93e9-25573bc6b291",
+      "result_id": "e701b77a-cb49-4839-8ee3-da874388fc21"
+    },
+    {
+      "claim_id": "3fd0eee2-9f3a-4581-85bd-4253a4a73878",
+      "result_id": "e701b77a-cb49-4839-8ee3-da874388fc21"
+    },
+    {
+      "claim_id": "8cd9830a-8f0d-4ee4-b3d1-757d374f9718",
+      "result_id": "e701b77a-cb49-4839-8ee3-da874388fc21"
+    },
+    {
+      "claim_id": "74757848-2dca-4d03-a5c4-fc03ef6c57eb",
+      "result_id": "e701b77a-cb49-4839-8ee3-da874388fc21"
+    },
+    {
+      "claim_id": "87f63810-17bb-4af4-844c-0f5459316e6a",
+      "result_id": "e701b77a-cb49-4839-8ee3-da874388fc21"
+    },
+    {
+      "claim_id": "cb15cfce-0369-4a66-ba78-40b36fb0a433",
+      "result_id": "98726d7d-78db-4420-acfe-ef7e2316565f"
+    },
+    {
+      "claim_id": "cafeaef4-1402-433e-bc18-7f021604f534",
+      "result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df"
+    },
+    {
+      "claim_id": "1a53df4b-7250-4cc4-adc4-85a4947571d5",
+      "result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df"
+    },
+    {
+      "claim_id": "55acc358-5d3a-445f-94f3-6974853fc12c",
+      "result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df"
+    },
+    {
+      "claim_id": "cf2eb993-a0e0-4b01-8f79-3c0e8bbd5335",
+      "result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df"
+    },
+    {
+      "claim_id": "ab328212-a631-482a-8de4-133e67f43803",
+      "result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df"
+    },
+    {
+      "claim_id": "794d4163-fd76-447a-8559-9ef076b186e9",
+      "result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df"
+    },
+    {
+      "claim_id": "9f972e60-461c-468a-91a6-5c04ab7565e4",
+      "result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df"
+    },
+    {
+      "claim_id": "a7accfbb-67a4-4cf0-bb05-ed5830f9460f",
+      "result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df"
+    },
+    {
+      "claim_id": "5203a4b4-a021-4a37-bdab-d21b8f93b1ce",
+      "result_id": "a370ad11-93d7-4af2-b466-dafe5d395a68"
+    },
+    {
+      "claim_id": "3a9e52f5-3e37-48be-a526-996fa29b700b",
+      "result_id": "6bce0c44-e1d5-4536-b742-f40a61f9d898"
+    },
+    {
+      "claim_id": "d8758699-6ece-4880-806e-d970a05a6f8d",
+      "result_id": "6bce0c44-e1d5-4536-b742-f40a61f9d898"
+    },
+    {
+      "claim_id": "0337ac24-a57b-4f23-98a3-10c263e4237e",
+      "result_id": "6bce0c44-e1d5-4536-b742-f40a61f9d898"
+    },
+    {
+      "claim_id": "9d3ed45e-905d-444a-b20a-33082ba1dc78",
+      "result_id": "6bce0c44-e1d5-4536-b742-f40a61f9d898"
+    },
+    {
+      "claim_id": "b7bbd266-6d45-4f21-a554-f110f8d202ca",
+      "result_id": "6bce0c44-e1d5-4536-b742-f40a61f9d898"
+    },
+    {
+      "claim_id": "be4f3926-7d5d-4102-9e74-7a2c7a670056",
+      "result_id": "6bce0c44-e1d5-4536-b742-f40a61f9d898"
+    },
+    {
+      "claim_id": "f0a42889-d68e-4a5f-a32f-91b0d00b2ee4",
+      "result_id": "c6b97e36-5aa6-4b1e-b7b5-92ae71f76c2d"
+    },
+    {
+      "claim_id": "9636c6b2-0a65-4eb5-807a-7642b233d8e3",
+      "result_id": "c6b97e36-5aa6-4b1e-b7b5-92ae71f76c2d"
+    },
+    {
+      "claim_id": "8777461a-5231-4c53-93bf-c78a473aa9a3",
+      "result_id": "c6b97e36-5aa6-4b1e-b7b5-92ae71f76c2d"
+    },
+    {
+      "claim_id": "f26c2d4e-8ee0-40df-8212-36fa00fca6f2",
+      "result_id": "c6b97e36-5aa6-4b1e-b7b5-92ae71f76c2d"
+    },
+    {
+      "claim_id": "22a854ca-5c3d-411f-bad9-f7b2db00a89f",
+      "result_id": "c6b97e36-5aa6-4b1e-b7b5-92ae71f76c2d"
+    },
+    {
+      "claim_id": "b9617fe4-1150-4658-81ed-824d4f784475",
+      "result_id": "c6b97e36-5aa6-4b1e-b7b5-92ae71f76c2d"
+    },
+    {
+      "claim_id": "be7c8f95-3bfe-4dc0-b127-ab7ca6be8e3a",
+      "result_id": "c6b97e36-5aa6-4b1e-b7b5-92ae71f76c2d"
+    },
+    {
+      "claim_id": "863e81f1-7d2d-4a11-8a77-e07e8c30e061",
+      "result_id": "3a789d93-ce36-4b9e-9883-49ceae5971cf"
+    },
+    {
+      "claim_id": "5e680ba6-e415-436b-aa59-623c71e5e173",
+      "result_id": "3a789d93-ce36-4b9e-9883-49ceae5971cf"
+    },
+    {
+      "claim_id": "135dda91-4272-478f-9281-b01869998f12",
+      "result_id": "3a789d93-ce36-4b9e-9883-49ceae5971cf"
+    },
+    {
+      "claim_id": "1b1e9fd2-54c6-403c-94e4-29a38e94bed8",
+      "result_id": "3a789d93-ce36-4b9e-9883-49ceae5971cf"
+    },
+    {
+      "claim_id": "c7d7dec7-ec97-4ef0-9685-6b6aacd81adf",
+      "result_id": "3a789d93-ce36-4b9e-9883-49ceae5971cf"
+    },
+    {
+      "claim_id": "ac3b78cc-1099-4775-9d10-6328ae20f6c3",
+      "result_id": "3a789d93-ce36-4b9e-9883-49ceae5971cf"
+    },
+    {
+      "claim_id": "ff0793eb-a289-46d3-8862-5e76e827c45a",
+      "result_id": "3a789d93-ce36-4b9e-9883-49ceae5971cf"
+    },
+    {
+      "claim_id": "10a09a82-156a-4d0b-aded-f8f1dccf565e",
+      "result_id": "3a789d93-ce36-4b9e-9883-49ceae5971cf"
+    },
+    {
+      "claim_id": "e3b26e39-0179-48dc-8baa-76edbc06b718",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "feef1f3b-4b57-4d2a-a145-be3076bc2c30",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "60c097ec-4ac4-4261-9357-95f78305c80c",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "03f3c93a-e478-4143-9c5e-be55a67203c3",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "6cddbb83-bad1-45a7-9451-83f823690f18",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "8305feed-d2b3-4ddc-9ffc-713b159e7084",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "5a664136-f5dd-4556-9c3c-4be45e152c92",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "be7804af-f250-4301-b857-9889b2a266a6",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "f2fd30d4-a116-4b2a-bb7d-603fd44e73d6",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "3e4d8084-85b6-45ac-b225-c245548b3f2e",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "160c6bf3-9d2f-41d0-871a-3de7d2e3b3bf",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "c86ecc90-4f50-4ff8-a1cf-2a2faa93a4c0",
+      "result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412"
+    },
+    {
+      "claim_id": "3c8c9135-5a42-4f63-bff8-f3fd07793609",
+      "result_id": "acd216a6-4ecb-4985-a4ed-553eb4c054eb"
+    },
+    {
+      "claim_id": "acc098da-b333-4410-9d1e-c94a0fac2453",
+      "result_id": "acd216a6-4ecb-4985-a4ed-553eb4c054eb"
+    },
+    {
+      "claim_id": "2a69e2fd-6521-4e7b-8c78-d478c46d5fe5",
+      "result_id": "da835b26-2a23-4030-930f-51d29880d7ef"
+    },
+    {
+      "claim_id": "5c6c0408-1265-4069-ae4a-836fa8920624",
+      "result_id": "da835b26-2a23-4030-930f-51d29880d7ef"
+    },
+    {
+      "claim_id": "7fa9aeac-46bd-40e0-ac3b-e340eef8a282",
+      "result_id": "e8ebb4d4-df3e-40e2-b13e-cf1c5c9873b9"
+    },
+    {
+      "claim_id": "f1c4a2b5-3a3d-47da-9a60-40a79e44809d",
+      "result_id": "e8ebb4d4-df3e-40e2-b13e-cf1c5c9873b9"
+    },
+    {
+      "claim_id": "87a1f8ca-611b-4287-93e9-25573bc6b291",
+      "result_id": "e8ebb4d4-df3e-40e2-b13e-cf1c5c9873b9"
+    },
+    {
+      "claim_id": "3fd0eee2-9f3a-4581-85bd-4253a4a73878",
+      "result_id": "e8ebb4d4-df3e-40e2-b13e-cf1c5c9873b9"
+    },
+    {
+      "claim_id": "8cd9830a-8f0d-4ee4-b3d1-757d374f9718",
+      "result_id": "e8ebb4d4-df3e-40e2-b13e-cf1c5c9873b9"
+    },
+    {
+      "claim_id": "74757848-2dca-4d03-a5c4-fc03ef6c57eb",
+      "result_id": "e8ebb4d4-df3e-40e2-b13e-cf1c5c9873b9"
+    },
+    {
+      "claim_id": "87f63810-17bb-4af4-844c-0f5459316e6a",
+      "result_id": "e8ebb4d4-df3e-40e2-b13e-cf1c5c9873b9"
+    },
+    {
+      "claim_id": "5203a4b4-a021-4a37-bdab-d21b8f93b1ce",
+      "result_id": "1229e60e-4181-413d-996b-b7b8c0921aa2"
+    },
+    {
+      "claim_id": "c11276f2-36b3-4610-acef-8bb06134e733",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "4f798394-5d17-4cfe-b141-34ce3138a217",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "cafeaef4-1402-433e-bc18-7f021604f534",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "1a53df4b-7250-4cc4-adc4-85a4947571d5",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "55acc358-5d3a-445f-94f3-6974853fc12c",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "4530bbfb-da86-43b9-ae15-53711911058c",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "ec514f95-def8-4d9e-8c3e-089a9b3cfda4",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "ba50f2bf-73a1-49c3-b72b-1a176e21fcc5",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "cf2eb993-a0e0-4b01-8f79-3c0e8bbd5335",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "ab328212-a631-482a-8de4-133e67f43803",
+      "result_id": "c8659752-202d-4228-939c-7d177e59452e"
+    },
+    {
+      "claim_id": "794d4163-fd76-447a-8559-9ef076b186e9",
+      "result_id": "c7e65ddb-140c-43d6-8c01-70bebd09c948"
+    },
+    {
+      "claim_id": "9f972e60-461c-468a-91a6-5c04ab7565e4",
+      "result_id": "c7e65ddb-140c-43d6-8c01-70bebd09c948"
+    },
+    {
+      "claim_id": "a7accfbb-67a4-4cf0-bb05-ed5830f9460f",
+      "result_id": "c7e65ddb-140c-43d6-8c01-70bebd09c948"
+    },
+    {
+      "claim_id": "cb15cfce-0369-4a66-ba78-40b36fb0a433",
+      "result_id": "c7e65ddb-140c-43d6-8c01-70bebd09c948"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "94dcad11-2594-4566-997c-1d692dc5c130",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f2d69348-74a0-4c41-8bd1-e431e510e34a",
+      "peer_result_id": "c6b97e36-5aa6-4b1e-b7b5-92ae71f76c2d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C4, C20, C33-C37 regarding robustness to stochasticity. Both evaluations find the evidence SUPPORTED. OpenEval emphasizes the comparison with oscillating mechanisms and parameter region similarity, while peer reviewers explicitly affirm the demonstration of robustness to demographic stochasticity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "b57b8457-25c9-49a3-916d-d10cd6905997",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "c064e4e6-7447-48e9-8929-5e923336f9de",
+      "peer_result_id": "3a789d93-ce36-4b9e-9883-49ceae5971cf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C5, C21, C38-C43 regarding comparison with classical experiments. Both evaluations find the evidence SUPPORTED. OpenEval notes some speculation about variance sources (C43), while peer reviewers praise the comparison and suggest future work to quantify interference dynamics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "23babff5-2403-4525-9e03-d7f1388fbcca",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "e701b77a-cb49-4839-8ee3-da874388fc21",
+      "peer_result_id": "e8ebb4d4-df3e-40e2-b13e-cf1c5c9873b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C15-C18, C63-C65 regarding Beddington-DeAngelis model issues and resolution. Both evaluations find the evidence SUPPORTED. OpenEval notes the theoretical clarification is significant, while peer reviewers acknowledge this as part of the effort to rigorously derive interaction rates.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "6be6d844-a443-45cc-983b-f3dbee5ada07",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "a370ad11-93d7-4af2-b466-dafe5d395a68",
+      "peer_result_id": "1229e60e-4181-413d-996b-b7b8c0921aa2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claim C66 regarding broad applicability. OpenEval finds the evidence SUPPORTED based on successful application across multiple ecosystems. Peer reviewers rate this UNCERTAIN, noting that the chasing-pair formulation may not hold for many predator-prey systems, potentially limiting generality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "45be77b3-8c51-4765-a3b8-7fe908fed85c",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "0def3689-e4e3-4e75-9ae6-35b956aef9fa",
+      "peer_result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C6, C22, C54-C58 regarding rank-abundance curve matching. Both evaluations find the evidence SUPPORTED. OpenEval provides quantitative K-S test details, while peer reviewers emphasize the impressive nature of this application. Peer result R4 also includes claims C59-C62 about rare species discrepancy, which OpenEval addresses separately in R8.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "d3f180cb-2e9a-43b0-89d9-6e05f554822b",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "87cc966a-ceb8-4897-b9c6-e966427cb89e",
+      "peer_result_id": "6bce0c44-e1d5-4536-b742-f40a61f9d898",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the core mechanism of intraspecific interference enabling coexistence. OpenEval R2 focuses on claims C27-C32 (mathematical progression from unstable to stable coexistence), while peer R1 emphasizes claims C3, C19, C29-C32 (the negative feedback mechanism). Both find evidence SUPPORTED, with peer reviewers providing strong affirmation from all three reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "c95df1d1-f7a8-4d3e-afcd-28fdf11d8f08",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "cfea2ec4-cfff-47fe-b2c8-84e064b34652",
+      "peer_result_id": "acd216a6-4ecb-4985-a4ed-553eb4c054eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address analytical-numerical agreement. OpenEval R3 focuses on claims C3, C19, C49-C50 regarding the core mechanistic finding and analytical predictions matching simulations. Peer R5 addresses claims C49-C50 specifically, affirming technical soundness and rigor of analytical solutions. Both find evidence SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "2f31fea7-3888-4867-a2e5-856fcc1dda13",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "68b49267-e04e-4f36-a69b-eafc60c7b63b",
+      "peer_result_id": "c8659752-202d-4228-939c-7d177e59452e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address foundational ecological principles. OpenEval R1 covers claims C1, C2, C10-C12 (competitive exclusion and paradox of plankton), while peer R9 covers broader background claims C1, C2, C7-C14. Both find these established knowledge claims SUPPORTED without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "e61ef3f9-b4cd-47f4-ad63-6850e118df92",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "87cc966a-ceb8-4897-b9c6-e966427cb89e",
+      "peer_result_id": "da835b26-2a23-4030-930f-51d29880d7ef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address baseline scenarios without intraspecific interference. OpenEval R2 includes claims C27-C28 as part of the mathematical progression, while peer R6 focuses specifically on these claims showing unstable coexistence. Both find evidence SUPPORTED, establishing the baseline for the main finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "6b6b6811-db30-4c88-ab38-801aae751c00",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "f21749eb-412c-47e3-a7f4-02a8ff83f289",
+      "peer_result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the rare species discrepancy. OpenEval R8 focuses on claims C59-C62 and rates the explanation as UNCERTAIN due to lack of rigorous testing. Peer R4 includes these claims within a broader SUPPORTED evaluation of rank-abundance curves, acknowledging the discrepancy but accepting the sampling effect explanation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "217c4580-325b-4340-b6eb-dba92695bd7c",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df",
+      "peer_result_id": "c8659752-202d-4228-939c-7d177e59452e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address background ecological knowledge. OpenEval R11 covers claims C7-C9, C13-C14, C67-C69 (prior explanations and their limitations), while peer R9 includes these within broader foundational concepts C1, C2, C7-C14. Both find evidence SUPPORTED as established context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "0ceed4e5-1f3a-45aa-90f5-a6ae744defa3",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "609d3cf1-6cd3-4b4c-a463-f987ea5475df",
+      "peer_result_id": "c7e65ddb-140c-43d6-8c01-70bebd09c948",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address supporting methodological claims. OpenEval R11 includes claims C67-C69 about prior explanations, while peer R10 covers C67-C69, C75 regarding methodological choices. Both find evidence SUPPORTED, with peer reviewers accepting the theory-driven approach as sufficient.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "916c3e84-72b9-4984-9ba3-00c00866b58c",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "98726d7d-78db-4420-acfe-ef7e2316565f",
+      "peer_result_id": "c7e65ddb-140c-43d6-8c01-70bebd09c948",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claim C75 regarding parameter selection methodology. OpenEval R10 finds the approach SUPPORTED but notes the coefficient of variation choice could be better justified. Peer R10 also finds this SUPPORTED, accepting the methodological choices for a theory-driven manuscript.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "dc7d843a-b1ad-4776-8dac-983a62aaf4b7",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "62992a94-db99-4be2-885a-0ae7964e4405",
+      "peer_result_id": "50ce251a-feae-4c0f-b9ed-69fffe2b9412",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address high-diversity coexistence. OpenEval R6 focuses specifically on claim C46 (many species persisting when Sc >> Sr), while peer R4 includes C46 within broader rank-abundance curve validation (C6, C22, C46, C54-C62). Both find evidence SUPPORTED for the high-diversity finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    },
+    {
+      "id": "5f5afaf1-37f0-4f80-ba0f-7af609819568",
+      "submission_id": "75b9751f-aaf3-45c8-b74d-25126d250539",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "cfea2ec4-cfff-47fe-b2c8-84e064b34652",
+      "peer_result_id": "6bce0c44-e1d5-4536-b742-f40a61f9d898",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the core negative feedback mechanism. OpenEval R3 focuses on claims C3, C19, C49-C50 (mechanistic finding and analytical-numerical agreement), while peer R1 emphasizes C3, C19, C29-C32 (negative feedback enabling coexistence). Both find evidence SUPPORTED with strong affirmation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:20:56.654678Z"
+    }
+  ]
+}

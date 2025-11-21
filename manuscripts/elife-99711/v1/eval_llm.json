@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "ChR2 was successfully expressed in SuM neurons of VGluT2-Cre mice, and the vast majority (95.2%) of ChR2-eYFP-expressing SuM boutons in the DG co-expressed both VGluT2 and VIAAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 provide converging evidence from viral injection methodology (C1), immunofluorescence imaging (C2), and quantitative analysis (C3) demonstrating successful targeting and co-expression of glutamatergic and GABAergic markers in SuM terminals. The quantitative data and imaging evidence are consistent with previous literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Glutamatergic and GABAergic transmission at SuM-GC synapses exhibit different paired-pulse ratios, with EPSCs showing stronger depression (PPR=0.46) than IPSCs (PPR=0.6), and this difference is not due to ChR2 artifacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 demonstrate differential PPR between EPSCs and IPSCs with appropriate controls. C6 shows axon stimulation yields similar results to terminal stimulation, and C7 demonstrates that fiber volleys remain constant during paired-pulse stimulation, ruling out ChR2 desensitization. The statistical analysis (p<0.01) supports the significance of the difference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Reducing extracellular Ca2+ from 2.5 to 1 mM decreased both EPSCs and IPSCs, but IPSCs showed greater reduction (58.2%) than EPSCs (45.1%), indicating different Ca2+ sensitivities for glutamate and GABA release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 provide experimental evidence with statistical support (p<0.01) showing differential Ca2+ sensitivity between the two transmission types. The data are internally consistent and the inference about different Ca2+ sensitivities is reasonable given the differential reduction observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11"
+    ],
+    "result": "Both glutamate and GABA release at SuM-GC synapses depend on P/Q-type Ca2+ channels but not N-type Ca2+ channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11 provide pharmacological evidence with appropriate controls. The lack of effect of \u03c9-CgTx (C10) is validated by showing it works at CA3-CA1 synapses (Figure 2\u2014supplement 1). The equal suppression by \u03c9-Aga-IVA of both EPSCs and IPSCs (C11) with statistical support (p=0.92 for comparison) demonstrates shared dependence on P/Q-type channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Group II mGluR agonist DCG-IV and GABAB receptor agonist baclofen differentially inhibit glutamatergic transmission more strongly than GABAergic transmission at SuM-GC synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13 provide dose-response data (C12) and pharmacological evidence (C13) with statistical support showing differential presynaptic modulation. The IC50 values differ significantly (0.11 \u03bcM vs 0.27 \u03bcM for DCG-IV), and baclofen shows differential inhibition (51.6% vs 38.6%, p<0.05).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Ca2+ channel-vesicle coupling is tighter for GABA release than for glutamate release, as demonstrated by differential effects of fast (BAPTA-AM) and slow (EGTA-AM) Ca2+ chelators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 provide experimental evidence showing BAPTA-AM suppresses both transmissions equally (C14), while EGTA-AM selectively suppresses EPSCs but not IPSCs (C15, p<0.05). The inference about tighter coupling for GABA (C16) is well-supported by the classical interpretation of differential BAPTA/EGTA sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Minimal light stimulation reveals that independent EPSCs and IPSCs are the majority of synaptic responses (86 EPSC-only, 67 IPSC-only, 19 biphasic from 1700 trials), with biphasic responses representing only a minor population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 provide converging evidence from minimal stimulation experiments. The quantitative data (C17-C18) show statistical significance (p<0.001), and appropriate controls (C19-C20) rule out contamination between response types. Comparison with strontium-induced responses (C21) validates that minimal stimulation evokes unitary responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C22"
+    ],
+    "result": "Asynchronous release induced by Sr2+ substitution predominantly produces independent EPSCs and IPSCs, with biphasic responses representing only a minor population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C22 provides complementary evidence to the minimal stimulation experiments using a different approach (Sr2+ substitution). The statistical analysis (p<0.001) supports that biphasic responses are significantly less frequent than independent responses, strengthening the conclusion about segregated vesicle pools.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "SuM terminals in the DG co-express VGluT2 and VIAAT, form both asymmetric and symmetric synapses on individual GC somata, and represent the primary source of VGluT2-positive terminals in the GC layer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 provide anatomical evidence from multiple EM techniques. The immunofluorescence (C23), post-embedding EM (C24), and serial section EM (C25) converge on the conclusion that single terminals form both synapse types. The retrograde tracing (C26) rules out VTA as a significant contributor, supporting that most VGluT2/VIAAT terminals are from SuM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "The majority of VGluT2-positive SuM terminals (52.5%) are associated with both GluN1 and GABAA\u03b11 postsynaptic markers, with an average distance of 397.5 nm between glutamatergic and GABAergic postsynaptic sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 provide quantitative immunofluorescence data showing spatial segregation of postsynaptic sites. The authors acknowledge potential underestimation due to the 100-nm section thickness, suggesting the actual percentage may be higher. The distance measurements provide quantitative support for spatially distinct but proximal synapses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Glutamatergic transmission exhibits frequency-dependent depression (stronger at higher frequencies), while GABAergic transmission shows frequency-independent stable depression, resulting in a decreased EPSC/IPSC ratio during high-frequency stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide comprehensive evidence for differential short-term plasticity. The frequency-dependent depression of EPSCs (C29) contrasts with frequency-independent depression of IPSCs (C30), with statistical support (C31, p<0.05 at 10 and 20 Hz). Simultaneous recording (C32) confirms the differential depression, and fiber volley recordings (C33) rule out presynaptic activation differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C34",
+      "C35"
+    ],
+    "result": "Short-term depression of both EPSCs and IPSCs at SuM-GC synapses is of presynaptic origin, not due to postsynaptic receptor saturation or desensitization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C35 provide pharmacological controls ruling out postsynaptic mechanisms. \u03b3DGG does not affect EPSC depression (C34), and TPMPA does not affect IPSC depression (C35), supporting a presynaptic origin. These controls are essential for interpreting the short-term plasticity results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SuM inputs enhance granule cell firing in a frequency-dependent manner: at 5 Hz, SuM activation enhances firing throughout the train, while at 10 and 20 Hz, the enhancement is attenuated in later stimulations due to GABAergic co-transmission filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 demonstrate the functional consequences of differential short-term plasticity. At 5 Hz, SuM enhances firing (C36), with GABAergic transmission limiting this enhancement (C37). At higher frequencies (C38), the enhancement disappears in later stimulations, but blocking GABAergic transmission with picrotoxin restores enhancement (C39), demonstrating frequency-dependent filtering.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "Glutamate and GABA are co-released from different synaptic vesicles within SuM terminals, and distinct transmission modes serve as frequency-dependent filters of SuM inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 represent the main conclusions integrating multiple lines of evidence: differential release properties (PPR, Ca2+ sensitivity, presynaptic modulation, Ca2+ channel coupling), independent unitary responses, anatomical segregation of postsynaptic sites, and differential short-term plasticity. The convergence of electrophysiological, pharmacological, and anatomical evidence strongly supports these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The literature establishes that glutamate/GABA co-release occurs in multiple brain regions including lateral habenula and dentate gyrus, but the mode of co-release at SuM-DG synapses has not been functionally characterized despite anatomical evidence for vesicle segregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C48 provide appropriate literature context. The citations support the existence of glutamate/GABA co-release in multiple regions (C42-C44), conflicting evidence about vesicle packaging in lateral habenula (C45-C46), anatomical evidence for segregation in DG (C47), and identification of the knowledge gap (C48) that the current study addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Differential release properties of dual-neurotransmitter neurons in other brain regions (retina, striatum, hippocampus) indicate separate release from distinct vesicle pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 provide relevant comparative context from other brain regions showing that differential release properties (PPR, Ca2+ sensitivity, Ca2+ channel dependence) indicate separate vesicle pools. This literature context supports the interpretation of similar findings in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "Neurotransmitter release from SuM neurons depends on P/Q-type Ca2+ channels regardless of target neurons, as shown by comparison with SuM-CA2 synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 provide comparative context showing that P/Q-type Ca2+ channel dependence is a general property of SuM neurons. The inference (C53) is reasonable given the evidence from both SuM-GC (current study) and SuM-CA2 synapses (cited work).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Previous biochemical and transport studies support the segregation of VGluT2 and VIAAT into distinct synaptic vesicles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 cite relevant biochemical evidence supporting the possibility of vesicle segregation. These citations provide additional support for the interpretation of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The frequency-dependent filtering of SuM inputs may contribute to theta-mediated information processing and prevent over-excitation of granule cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C58 are speculative about functional implications. While C56 provides cited evidence for theta-rhythm association with SuM activity, C57 and C58 are explicitly speculative ('may transfer', 'could contribute', 'could prevent') about the functional consequences. These hypotheses are reasonable but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "SuM inputs modulate granule cell output through both short-term plasticity (presynaptic) and long-term potentiation (postsynaptic) with distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 integrate current findings with previous work from the same group. The contrast between presynaptic short-term plasticity (current study) and postsynaptic long-term potentiation (previous work) is well-supported by citations and provides a comprehensive view of SuM-GC synaptic plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The experimental methods employed appropriate animal models, viral injection parameters, slice preparation, and electrophysiological recording techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 describe standard methodological approaches with appropriate detail. The use of VGluT2-Cre mice (C61), specific viral injection parameters (C62), standard slice preparation (C63), and well-established recording techniques (C64-C65) are all appropriate for the experimental goals.",
+    "result_type": "MINOR"
+  }
+]

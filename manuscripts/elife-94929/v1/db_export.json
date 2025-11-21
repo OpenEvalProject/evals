@@ -1,0 +1,2099 @@
+{
+  "submission": {
+    "id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:20:37.205725Z",
+    "updated_at": "2025-11-21T21:20:37.205725Z"
+  },
+  "content": [
+    {
+      "id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "content_type": "manuscript",
+      "content_text": "# Lipid discovery enabled by sequence statistics and machine learning\n\n## Authors\n\n- Priya M Christensen<sup>1</sup> ([ORCID: 0000-0003-4790-9839](https://orcid.org/0000-0003-4790-9839))\n- Jonathan Martin<sup>1</sup> ([ORCID: 0000-0003-0946-3864](https://orcid.org/0000-0003-0946-3864))\n- Aparna Uppuluri<sup>1</sup> ([ORCID: 0009-0005-6334-8375](https://orcid.org/0009-0005-6334-8375))\n- Luke R Joyce<sup>2</sup> ([ORCID: 0000-0002-9346-671X](https://orcid.org/0000-0002-9346-671X))\n- Yahan Wei<sup>3</sup>\n- Ziqiang Guan<sup>4</sup> ([ORCID: 0000-0002-8082-3423](https://orcid.org/0000-0002-8082-3423)) \u2020\n- Faruck Morcos<sup>1</sup> ([ORCID: 0000-0001-6208-1561](https://orcid.org/0000-0001-6208-1561)) \u2020\n- Kelli L Palmer<sup>1</sup> ([ORCID: 0000-0002-7343-9271](https://orcid.org/0000-0002-7343-9271)) \u2020\n\n### Affiliations\n\n1. Department of Biological Sciences, University of Texas at Dallas Richardson United States ([ROR:049emcs32](https://ror.org/049emcs32))\n2. Department of Immunology and Microbiology, University of Colorado Anschutz Medical Campus Aurora United States ([ROR:03wmf1y16](https://ror.org/03wmf1y16))\n3. School of Podiatric Medicine, University of Texas Rio Grande Valley Harlingen United States ([ROR:02p5xjf12](https://ror.org/02p5xjf12))\n4. Department of Biochemistry, Duke University Medical Center Durham United States ([ROR:00py81415](https://ror.org/00py81415))\n5. Department of Bioengineering, University of Texas at Dallas Richardson United States ([ROR:049emcs32](https://ror.org/049emcs32))\n6. Center for Systems Biology, University of Texas at Dallas Richardson United States ([ROR:049emcs32](https://ror.org/049emcs32))\n\n\u2020 Corresponding author\n\n## Abstract\n\nBacterial membranes are complex and dynamic, arising from an array of evolutionary pressures. One enzyme that alters membrane compositions through covalent lipid modification is MprF. We recently identified that Streptococcus agalactiae MprF synthesizes lysyl-phosphatidylglycerol (Lys-PG) from anionic PG, and a novel cationic lipid, lysyl-glucosyl-diacylglycerol (Lys-Glc-DAG), from neutral glycolipid Glc-DAG. This unexpected result prompted us to investigate whether Lys-Glc-DAG occurs in other MprF-containing bacteria, and whether other novel MprF products exist. Here, we studied protein sequence features determining MprF substrate specificity. First, pairwise analyses identified several streptococcal MprFs synthesizing Lys-Glc-DAG. Second, a restricted Boltzmann machine-guided approach led us to discover an entirely new substrate for MprF in Enterococcus, diglucosyl-diacylglycerol (Glc2-DAG), and an expanded set of organisms that modify glycolipid substrates using MprF. Overall, we combined the wealth of available sequence data with machine learning to model evolutionary constraints on MprF sequences across the bacterial domain, thereby identifying a novel cationic lipid.\n\n## Introduction\n\nLipids are ubiquitous and diverse group of amphiphathic compounds that are critical for fundamental biological processes, including the formation of cell membranes, protection, and cargo delivery; energy storage; and cell signaling pathways (Fahy et al., 2011). Chemical modifications to lipids, including changes in fatty acid tails (saturated and unsaturated) (Wang et al., 2018), modifications of head groups (Roy et al., 2009), and alterations to lipid charge (Roy and Ibba, 2008), impact these interactions, as well as the physicochemical properties of membranes. Commonly, bacteria synthesize lipids that are negatively charged or neutral (Sohlenkamp and Geiger, 2016). Some bacteria modify the negatively charged lipids with amino acids to make them positively charged to confer resistance to cationic antimicrobial peptides and cationic antibiotics (Weidenmaier et al., 2005; Joyce and Doran, 2023). The bacterial domain is a rich source of natural lipids that are likely coevolved for specific interactions with host tissues and other cells, yet the full extent of this chemical diversity remains unexplored. Finding bacteria that possess unique lipids can be useful for biotechnology. For example, natural lipids found in bacteria can be used for drug delivery. A study by Gujrati et al., 2014, used low cytotoxic outer membrane vesicles that contained a modified lipopolysaccharide to deliver siRNA to targeted cancer cells. This delivery mechanism had success and demonstrates the possibility of using naturally occurring bacterial lipids for future drug delivery processes to eukaryotic cells.\n\nOne enzyme responsible for modifying lipids in bacteria is the multiple peptide resistance factor (MprF). MprF modifies lipids through the transfer of amino acids from charged tRNAs to the head group of the anionic membrane phospholipid, phosphatidylglycerol (PG) (Roy and Ibba, 2008). The MprF protein is comprised of two domains: an N-terminal flippase domain responsible for moving aminoacylated lipids from the inner membrane leaflet to the outer leaflet and a C-terminal synthase domain responsible for the aminoacyl transfer from tRNA to lipids (Ernst et al., 2009; Staubitz et al., 2004). Recently, in Streptococcus agalactiae (Group B Streptococcus, GBS) it was found that MprF can modify two different substrates with lysine (Lys) \u2013 the glycolipid glucosyl-diacylglycerol (Glc-DAG) and the phospholipid, PG (Joyce et al., 2022), generating Lys-Glc-DAG, as well as Lys-PG (Joyce et al., 2021; Joyce et al., 2022; Figure 1). An S. agalactiae mprF deletion mutant no longer synthesizes Lys-Glc-DAG or Lys-PG and expression of S. agalactiae mprF in the heterologous host Streptococcus mitis conferred Lys-Glc-DAG and Lys-PG synthesis to S. mitis (Joyce et al., 2022). This was the first time MprF was demonstrated to add lysine onto a neutral glycolipid (Glc-DAG).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig1-v1.jpg)\n\n**Figure 1.:** Lys-PG, lysyl-phosphatidylglycerol; Lys-Glc-DAG, lysyl-glucosyl-diacylglycerol; Lys-Glc2-DAG, lysyl-diglucosyl-diacylglycerol.\n\nThe synthesis of Lys-Glc-DAG by S. agalactiae MprF illustrated a unique lipid substrate and product by the enzyme that had not been characterized before, highlighting the possibility for further exploration into unknown lipids and lipid substrates by MprF of different bacterial species. We sought to investigate the molecular determinants of enzyme specificity and identify other bacterial species that may have this novel specificity. This investigation led us from the standard methodology of BLASTp queries (Camacho et al., 2009), which are based on single residue amino acid substitution frequencies, to a more modern statistical method called a restricted Boltzmann machine (RBM) (Tubiana et al., 2019b), which captures global statistical patterns within natural sequence data. In this work, we develop a general strategy for combining this high-powered statistical model with lipidomic analysis to discover MprF variants with unique enzymatic activity. This process led us to the discovery of an uncharacterized lipid substrate for MprF, diglucosyl-diacylglycerol (Glc2-DAG), which is present in several strains identified by the parameters of the statistical model. These models also provide interpretable and actionable information for use in further enzyme characterization, and we show that this application is a useful companion tool for experimental work.\n\n## Results\n\n### Simple pairwise sequence statistics identify streptococcal MprF enzymes that synthesize Lys-Glc-DAG\n\nUtilizing a method based on the amino acid sequence of S. agalactiae MprF, we identified four streptococcal MprFs with high sequence identity to S. agalactiae COH1 MprF (WP_000733236.1). A BLASTp analysis found that Streptococcus sobrinus ATCC 27352 MprF (WP_019790557.1) had 61.4% amino acid identity to the S. agalactiae MprF, Streptococcus salivarius ATCC 7073 MprF (WP_002888893.1) had 43.09% amino acid identity, Streptococcus ferus MprF (WP_018030543.1) had 61.88% amino acid identity, and Streptococcus downei (WP_002997695.1) had 61.03% amino acid identity (Table 1). Plasmids were designed to express the S. sobrinus mprF (pSobrinus), S. salivarius mprF (pSalivarius), S. ferus mprF (pFerus), and S. downei mprF (pDownei) genes. The plasmids were transformed into the expression host S. mitis NCTC12261 (SM61). The empty vector (pABG5\u0394phoZ, referred to as pABG5 here) was also transformed (Figure 2a). S. mitis does not natively encode mprF but synthesizes lipids (Glc-DAG; PG) that are substrates for S. agalactiae MprF (Adams et al., 2017; Joyce et al., 2019; Joyce et al., 2022), making it an appropriate heterologous host for expressing streptococcal MprFs. Previously, a plasmid expressing S. agalactiae mprF (pGBSMprF) (Joyce et al., 2022) was generated and transformed into S. mitis. Lys-Glc-DAG and Lys-PG presence in SM61 was only possible with the expression of pGBSMprF (Figure 2b; Joyce et al., 2022).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig2-v1.jpg)\n\n**Figure 2.:** (a) S. mitis NCTC12261 with empty vector control (pABG5) lacks lysine lipids; (b) S. agalactiae mprF (pGBSMprF) produces both Lys-PG and Lys-Glc-DAG; (c) S. salivarius mprF produces only Lys-PG; (d) S. ferus mprF produces only Lys-Glc-DAG. Left panels: total ion chromatograms (TIC); middle panels: mass spectra of retention time 19.5\u201321.5 min showing Lys-PG and PC; right panels: mass spectra of retention time 26\u201330 min showing Lys-Glc-DAG. Note: \u2018*\u2019 is an extraction artifact due to chloroform used. DAG, diacylglycerol; MHDAG, monohexosyldiacylglycerol; DHDAG, dihexosyldiacylglycerol; PG, phosphatidylglycerol; Lys-PG, lysyl-phosphatidylglycerol; Lys-Glc-DAG, lysyl-glucosyl-diacylglycerol; PC, phosphatidylcholine.\n\n**Table 1.**\n Summary of different MprF variants expressed in S. mitis and the lysine lipids they produce.Percentage of amino acid identity and similarity compared to S. agalactiae COH1 MprF; data obtained from BLASTp. The lipids each strain synthesize are denoted by a checkmark or an x. Lys-PG, lysyl-phosphatidylglycerol; Lys-Glc-DAG, lysyl-glycosyl-diacylglycerol.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Bacteria strains</th>\n      <th>% Amino acid identity (similarity)</th>\n      <th>Lys-PG</th>\n      <th>Lys-Glc-DAG</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>SM61(pGBSMprF)</td>\n      <td>100.0 (100.0)</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>SM61(pFerus)</td>\n      <td>61.9 (79.0)</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>SM61(pSobrinus)</td>\n      <td>61.4 (79.0)</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>SM61(pDownei)</td>\n      <td>61.0 (79.0)</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>SM61(pSalivarius)</td>\n      <td>43.1 (66.0)</td>\n      <td>\u2713</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>SM61(pABG5)</td>\n      <td>- (-)</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n  </tbody>\n</table>\n\nS. mitis lipids of strains expressing the plasmids pSobrinus (Table 1), pSalivarius (Figure 2c), pFerus (Figure 2d), and pDownei (Table 1) were analyzed. Lipidomic analysis found that pSobrinus, pDownei, and pFerus conferred synthesis of Lys-Glc-DAG, but not Lys-PG in S. mitis. Notably, pFerus confers synthesis of Lys-Glc-DAG at a similar level to S. agalactiae MprF (Figure 2b and d). In contrast, pSalivarius conferred synthesis of Lys-PG only and not Lys-Glc-DAG. Importantly, S. salivarius MprF also synthesized Lys-PG at a level most similar to S. agalactiae MprF (Figure 2b and c). Lysine-modified lipids synthesized by S. mitis strains expressing streptococcal MprFs used in this study are summarized in Table 1. In general, streptococcal MprF enzymes with higher amino acid percent (>60%) to S. agalactiae MprF conferred Lys-Glc-DAG synthesis to S. mitis, but only S. agalactiae MprF conferred both Lys-Glc-DAG and Lys-PG synthesis in S. mitis.\n\n### RBM can provide sensitive, rational guidance for sequence classification\n\nWe set out to understand which specific MprF amino acid residues are involved in enzyme specificity for either the PG or Glc-DAG substrate. To this end, we employed an RBM, a probabilistic graphical model which aims to model the probability of data in a dataset through statistical connections between the features of the data and a set of hidden units (Smolensky, 1986).\n\nThis class of models is closely related to another model termed the Boltzmann machine. The Boltzmann machine formulation is closely related to the Potts model from physics, which was successfully applied in biology to elucidate important residues in protein structure and function (Morcos et al., 2011), one example being the careful tuning of enzyme specificity in bacterial two-component regulatory systems (Cheng et al., 2014; Jiang et al., 2021). The Boltzmann machine formulation from Morcos et al., 2011, termed direct-coupling analysis, stores patterns in the form of a pairwise coupling matrix and local field matrix (shown in Equation 2), which has been useful in understanding how likely pairs of residues are to interact in physical space. We hypothesize that S. agalactiae MprF and other MprF enzymes that utilize glycolipid substrates have unique patterns of interacting residues relative to those enzymes that use only PG as a substrate.\n\nWhile modeling how pairs of residues covary is powerful, many important features of enzyme function like allostery or enzyme specificity (which is the purpose of this analysis) may involve more than two residues (Goodey and Benkovic, 2008), and in these situations it can be difficult to connect sets of residues using solely pairwise parameters (Figliuzzi et al., 2018). Therefore, a more global approach is required to address our hypothesis. To this end, an RBM has recently been developed for use in the learning of protein sequence data, with special attention given to producing a model which produces sparse, interpretable, and biologically meaningful representations of these higher-order statistical couplings within the hidden units (Tubiana et al., 2019b). The design of this RBM can be seen in Figure 3, where the model architecture is represented by purple dots and green triangles. The dots are the \u2018visible\u2019 layer, which take in input sequences and encode them into the \u2018hidden\u2019 layer, where each triangle represents a separate hidden unit. The lines connecting the visible and hidden layers show that each hidden unit can see all the visible units (the statistics are global), but they cannot see any of the other hidden units, meaning the hidden units are mutually independent. This global model with mutually independent hidden units (see the marginal distribution form shown in Equation 3) allows the following useful properties: higher-order couplings between residues (sets of coupled residues instead of pairs); bimodal hidden unit outputs given the training dataset (Equation 4); sparse, interpretable configurations of the hidden units ($w_{\\mu}$) (Equation 5); and a compositional representation of the hidden unit weights (Tubiana et al., 2019a), where input sequences are modeled largely through combinations of hidden units instead of single, highly activating units.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig3-v1.jpg)\n\n**Figure 3.:** An aligned set of protein sequences is first used to learn a hidden unit representation that best describes the statistics of the sequence dataset given restrictions on the hidden unit representation. Then, the individual hidden units can be studied to find particular units which allow useful enzyme classification, and additionally, these weights can be meaningfully interpreted as statistically covarying sequence configurations. Additionally, the classification can be used to create filtered datasets to train more models.\n\nThe compositional representation is a critical feature of this method, allowing us to find independently coupled sets of residues which in combination describe these protein sequences, and it is achieved through the particular choices of training parameters. More details on the training parameter choices are found in Materials and methods. In particular, we focus on the scoring of sequences using individual hidden units $w_{\\mu}$:\n\n$$\nI_{\\mu}(v)=\\sumiw_{i\\mu}(v_{i})\n$$\n\nwhere $v$ is an input sequence vectorized through one-hot encoding, to produce a hidden unit activation (a single number) which depends on the input sequence residues at position $i$ and the value of the hidden unit weight matrix for that residue at that position.\n\nWe used this methodology to study the sequences in the family of MprF, which is a large protein composed of independent flippase and synthase domains (Ernst et al., 2009; Slavetinsky et al., 2012). In our analysis, we restrict ourselves to the cytosolic region (see yellow box in Figure 4a), also known as the aminoacyl-PG synthase domain, which constituted the Pfam family DUF2156 (now renamed LPG_synthase_C) (Mistry et al., 2021).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig4-v1.jpg)\n\n**Figure 4.:** (a) The structure of PDB:7DUW, with the red colored region being the transmembrane flippase domain and the yellow boxed region the cytosolic domain which we focus on. (b) The activations produced by inputting a sequence into a hidden unit, producing a single number as output which corresponds to a summation of negatively and positively weighted residues. Performed on entire training set (histogram in blue), highlighting sequences corresponding to predominantly positive weighted residues. (c) Hidden unit from a restricted Boltzmann machine (RBM) trained on the Pfam DUF2156 domain. The MSA positions 152 and 212 correspond to residues S684 and R742, respectively. (d) Residues (in yellow) in the MprF cytosolic domain which form the binding pocket for Lys-tRNALys (the ligand analogue L-lysine amide shown in green), from PDB:4V36. LYN, L-lysine amide.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** We then split these results based on the procedure in Figure 3, where Removed sequences indicate domain composition of sequences removed by this procedure, and Training sequences for the data we trained our final model on. We remove domains from this plot which occur in less than 1% of the sequences of their respective sets for clarity.\n\nOne hidden unit in particular is highlighted, where we find bimodal activation (Figure 4b) of the hidden unit (Figure 4c) when Equation 1 is evaluated with the training sequences. Interpreting the sequence histograms, a positive value activation in Figure 4b corresponds to a sequence containing combinations of the residues listed in the positive portion of the weight diagram in Figure 4c, whereas a negative activation corresponds to residues in the negative portion. For display purposes, the residue weights shown in all of our hidden units correspond to the positions where the magnitude of the visible positions $w_{i\\mu}$ is greater than some threshold proportional to the largest magnitude position (position 212); the hidden units have values for all possible amino acids in the entire protein length, but they are considerably smaller than this threshold and generally very low.\n\nTwo positions in particular, 152 and 212, in the positive portion of the hidden unit correspond to residues 684 and 742, which were experimentally demonstrated to be relevant for aminoacylated-PG production by the Bacillus licheniformis and Pseudomonas aeruginosa cytosolic synthase domain variants (Hebecker et al., 2015); in B. licheniformis the residues which form a complex with the lysine from $Lys\u2212tRNA^{Lys}$ are shown in Figure 4c. We have highlighted these two aforementioned variants as well as the S. agalactiae variant for demonstration of sequence scoring through Equation 1 in Figure 4a. We used this hidden unit to create a filtered dataset; only sequences that contained this necessary motif were of interest to us, and we subsequently trained a new model using only sequences with a catalytic hidden unit activation greater than 2 (because it cleanly split the bimodal distribution). We outline this general workflow in Figure 3. We also note that the full-length sequences of the sequences included in our new dataset are enriched with sequences which contain the bacterial flippase domain (shown in red in Figure 4a), and the sequences we removed rarely contain the flippase domain (see Figure 4\u2014figure supplement 1 for domain analysis).\n\n### RBM hidden units identify plausible sequence residues for functional characterization\n\nAfter filtering the dataset and training another model, we set out to find hidden units which could describe MprF specificity. To this end, we identify hidden units which are sparse, have high overall magnitude, and involve residues which could be plausibly linked to the lipid-binding specificity (see Materials and methods for more details). Through this search method we identified the two hidden units shown in Figure 5A. They both have high sparsity and high magnitude relative to the majority of other hidden units in the model, and importantly they correspond to residues localized to regions of the catalytic domain that had been previously identified through Autodock experiments using a PG molecule with side chains C5:0/C8:0 (Hebecker et al., 2015) (highlighted in Figure 5A). The scoring of the training set of sequences with these hidden units is shown in Figure 5B, and we see a clear separation between the cytosolic domain sequences which produces Lys-Glc-DAG (from S. agalactiae) and two domain variants which produce only aminoacylated-PG (from P. aeruginosa and B. licheniformis). Importantly, these output activations depend on a greatly reduced subset of the full sequence and do not correspond to clustering on total sequence identity (Figure 5\u2014figure supplement 1).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig5-v1.jpg)\n\n**Figure 5.:** (A) Two hidden units found in a restricted Boltzmann machine (RBM) trained on the filtered Pfam dataset. The hidden unit residues are highlighted in the PDB:4V34 structure, with arrows pointing to their corresponding residue sets. (B) The activations of the hidden units when scoring the sequences used in the training set and sequences from NCBI not used during training (N=23,138). S. agalactiae produces Lys-Glc-DAG and Lys-PG, while B. licheniformis and P. aeruginosa produces only aminoacylated-PG. Q1-Q4 are quadrant labels which we refer to throughout the paper. Lys-PG, lysyl-phosphatidylglycerol; Lys-Glc-DAG, lysyl-glucosyl-diacylglycerol.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** A sliding window average is performed, where a window of width 1 is slid from the negative end to the positive of the hidden unit activation, where at each position sequence coordinates are sampled from the window. These sampled sequences are compared pairwise between themselves, computing the Hamming distance across their entire sequence length to produce an average. This sampling procedure is repeated 30 times for each window, with the light blue shading representing the 95% confidence interval. Panels (a) and (b) correspond to the sliding window average on hidden units one and two.\n\nUsing these two hidden units as sequence classifiers with a potential link to the substrate specificity of cytosolic domain variants, we used Figure 5B to propose sequences in quadrant three (Q3), the quadrant occupied by the S. agalactiae MprF variant with this novel glycolipid-modifying function. We selected a sequence which was distant in terms of sequence identity from the Streptococcus genus (Supplementary file 1) and which has been implicated in human pathologies (Mundy et al., 2000), Enterococcus dispar MprF. We also emphasize that the two hidden units we selected are from a set of 300 total hidden units, and that while other hidden units may differentially classify our three sequences, without the additional link to lipid binding provided by the Autodocking experiment there would be only weak justification for using their activations to make predictions.\n\n### Enterococcal MprF enzymes synthesize Lys-Glc-DAG, Lys-PG, and a novel cationic glycolipid Lys-Glc2-DAG\n\nE. dispar ATCC 51266 was identified as a possible candidate for novel lipid synthesis through the analyses described above. Remarkably, our lipidomic analysis found that E. dispar synthesizes a novel cationic lipid, lysyl-diglucosyl(Glc2)-diacylglycerol (Lys-Glc2-DAG) (Figure 1, Figure 6a and b), as well as Lys-Glc-DAG and Lys-PG (Figure 6c, Figure 6\u2014figure supplement 1). The structural identification of Lys-Glc-2-DAG was supported by exact mass measurement ([M+H]+ observed at m/z 1047.730; calculated m/z 1047.731) and tandem MS (Figure 6b). Lys-Glc-2-DAG is unusually polar and charged for a lipid; chromatographically, Lys-Glc2-DAG is highly retentive on a silica-based normal phase column and elutes off the column at the very end of the gradient (Figure 6\u2014figure supplement 1). The use of an amino-based HPLC column led to much improved elution profiles for Lys-Glc2-DAG and other glyco- and lysine lipids (Figure 6).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig6-v1.jpg)\n\n**Figure 6.:** (a) Positive ion mass spectrum of Lys-Glc2-DAG species in E. dispar. Major Lys-Glc2-DAG species with carbon atoms (before colon) and double bonds (after colon). (b) MS/MS product ions and fragmentation scheme of the most abundant Lys-Glc2-DAG ion at m/z 1047.73. (c) Extracted ion chromatograms of LC/MS of lysine lipids (Lys-PG, Lys-Glc-DAG, Lys-Glc2-DAG) and Glc2-DAG separated on an amino HPLC column. Glc2-DAG, diglucosyl-diacylglycerol; Lys-PG, lysyl-phosphatidylglycerol; Lys-Glc-DAG, lysyl-glucosyl-diacylgylcerol; Lys-Glc2-DAG, lysyl-diglucosyl-diacylglycerol.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The total ion chromatogram of normal phase LC/MS of E. dispar lipids separated on a silica HPLC column. (B) The positive ion mass spectrum of Lys-Glc-2DAG eluting at the end of the LC gradient. Glc-DAG, glucosyl-diacylglycerol; Glc-DAG, diglucosyl-diacylglycerol; PG, phosphatidylglycerol; Lyso-Glc2-DAG, lyso diglucosyl-diacylglycerol; Lys-PG, lysyl-phosphatidylglycerol; Lys-Glc-DAG, lysyl-glucosyl-diacylglycerol; Lyso Lys-PG, lyso lysyl-phosphatidylglycerol; Lys-Glc-DAG, lysyl-diglucosyl-diacylglycerol.\n\nThe discovery of Lys-Glc2-DAG in E. dispar led us to analyze other Enterococcus strains: Enterococcus faecium 1,231,410, Enterococcus faecalis T11 and OG1RF Enterococcus gallinarium EG2, Enterococcus casseliflavus EC10, and Enterococcus raffinosus Er676. All Enterococcus strains examined were found to synthesize Lys-PG, Lys-Glc-DAG, and Lys-Glc2-DAG at varying levels (Figure 7a and Table 2). MprF-dependent Lys-PG production by E. faecalis and E. faecium was previously reported (Bao et al., 2012; Roy and Ibba, 2009), but cationic glycolipids production has not been previously reported. E. gallinarium EG2 and E. casseliflavus EC10 encode a single copy of mprF gene, while the other enterococci we tested encode two distinct mprF genes (mprF1 and mprF2) (Bao et al., 2012; Roy and Ibba, 2009). When these MprF sequence variants are plotted using our chosen RBM hidden units, we see that the two single copy strains plot in quadrant two (Q2), while for the two copy sequences, each MprF variant maps to separate coordinates (Figure 7\u2014figure supplement 1). Both E. raffinosus Er676 MprF variants plot to quadrant two (with the lowest Weight 2 value being 0.34). The E. faecium and E. faecalis variants have copies plotting directly in quadrant one and variants plotting farther out from the sequence cluster; we note that the two displaced variants are both lacking the characteristic aspartic acid and glutamic acid amino acids at positions 100 and 48 in the hidden units (Figure 5A), which are the dominant contributions for determining quadrant one occupancy. To clarify which variants were determinants of the novel cationic lipid production, lipidomic analysis on an E. faecalis OG1RF mini-mariner (EfaMarTn) transposon mutant (Dale et al., 2018) with a transposon insertion within OG1RF_10760 mprF (referred to as mprF2 in previous studies [Bao et al., 2012]; OG1RF_10760::Tn) revealed that Lys-PG, Lys-Glc-DAG, and the newly identified Lys-Glc2-DAG were absent when the synthase domain of the gene was disrupted (Figure 7b, Supplementary file 1). This led us to the conclusion that E. faecalis mprF2 is necessary for the synthesis of the three Lys-lipids in E. faecalis. When the empty vector (pABG5) was transformed into OG1RF_10760::Tn, no Lys-lipids synthesis was observed as expected (Figure 7c). This phenotype was complemented by expression of E. faecalis mprF2 from a plasmid (pOGMprF2) (Figure 7d). Additionally, expression of E. faecium mprF1 (EFTG_00601) (pEfMprF1) restored Lys-PG and Lys-Glc2-DAG synthesis to the E. faecalis OG1RF_10760::Tn strain (Figure 7e), while E. faecium mprF2 (EFTG_02430) did not rescue Lys-lipid synthesis (Figure 7f). Taken together, these data indicate that E. faecalis MprF2 (OG1RF_10760) and E. faecium MprF1 (EFTG_00601), like S. agalactiae MprF, act on both phospholipid and glycolipids substrates, additionally synthesizing the novel cationic glycolipid, Lys-Glc2-DAG.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig7-v1.jpg)\n\n**Figure 7.:** (a) OG1RF-WT; (b) OG1RF_10760::Tn lacks lysine lipids; (c) OG1RF_10760::Tn+pABG5 lacks lysine lipids; (d) OG1RF_10760::Tn+pOGMprF2 restores lysine lipids; (e) OG1RF_10760::Tn+pEFMprF1 restores lysine lipids; (f) OG1RF_10760::Tn+pEFMprF2 lacks lysine lipids. Expression of OGMprF2 and EFMprF1 in OG1RF_10760 Tn mutant restores Lys-Glc2-DAG synthesis. Shown are the extracted ion chromatograms of lysine lipids (Lys-PG, Lys-Glc2-DAG) and Glc2-DAG separated on an amino HPLC column. Note: Lys-Glc-DAG was found in trace amounts or missing from lipid extractions. Glc2-DAG, diglucosyl-diacylglycerol; Lys-PG, lysyl-phosphatidylglycerol; Lys-Glc2-DAG, lysyl-diglucosyl-diacylglycerol.\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig7-figsupp1-v1.jpg)\n\n**Table 2.**\n Table of all strains studied, the quadrant they occupy, and the lipids they synthesize.** trace amounts Lys-Glc-DAG present in lipid extractions. * indicates heterologous expression of mprF in S. mitis. Lys-Glc-DAG, lysyl-glucosyl-diacylglycerol; Lys-Glc2-DAG, lysyl-diglucosyl-diacylglycerol; Lys-PG, lysyl-phosphatidylglycerol.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Bacterial strains</th>\n      <th>Lys-Glc-DAG</th>\n      <th>Lys-Glc2-DAG</th>\n      <th>Lys-PG</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"6\">Q1</td>\n      <td>Bacillus subtilis 168</td>\n      <td>X</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Bacillus licheniformis ATCC 14580</td>\n      <td>X</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Staphylococcus aureus RN4220</td>\n      <td>X</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Exiguobacterium acetylicum UTDF19-27C</td>\n      <td>X</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Enterococcus faecalis T11/OG1RF**</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Enterococcus faecium 1,231,410</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Q2</td>\n      <td>Enterococcus raffinosus Er676</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Enterococcus gallinarum EG2</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Enterococcus casseliflavus EC10</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">Q3</td>\n      <td>Streptococcus salivarius* ATCC 7073</td>\n      <td>X</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Enterococcus dispar ATCC 51266</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Streptococcus agalactiae CJB111/COH1</td>\n      <td>\u2713</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Streptococcus sobrinus* ATCC 27352</td>\n      <td>\u2713</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>Streptococcus downei* (WP_002997695.1)</td>\n      <td>\u2713</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td>Streptococcus ferus* (WP_018030543.1)</td>\n      <td>\u2713</td>\n      <td>X</td>\n      <td>X</td>\n    </tr>\n    <tr>\n      <td rowspan=\"5\">Q4</td>\n      <td>Ligilactobacillus salivarius ATCC 11741</td>\n      <td>X</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Lacticaseibacillus rhamnosus ATCC 7469</td>\n      <td>X</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Lactobacillus casei ATCC 393</td>\n      <td>X</td>\n      <td>X</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Levilactobacillus brevis ATCC 14869</td>\n      <td>X</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n    <tr>\n      <td>Lacticaseibacillus paracasei ATCC 25302</td>\n      <td>X</td>\n      <td>\u2713</td>\n      <td>\u2713</td>\n    </tr>\n  </tbody>\n</table>\n\n### Hidden unit 2 is correlated with GlcN-DAG substrate activity in MprF\n\nWhen we started our RBM analysis, we had substrate specificity information for only the quadrants one and three, and through identifying the novel substrate in E. dispar we expanded our testing to quadrant two by testing Enterococcus strains. To expand our RBM analysis, we tested specific sequences which were found in quadrant four (Q4). We conducted lipid analysis on Ligilactobacillus salivarius ATCC 11741, Levilactobacillus brevis ATCC 14869, Lacticaseibacillus rhamnosus ATCC 7469, Lactobacillus casei ATCC 393, and Lacticaseibacillus paracasei ATCC 25302. All strains tested synthesize Lys-PG (Table 2). Only L. brevis and L. paracasei synthesized Lys-Glc2-DAG, L. paracasei synthesized low levels of Lys-Glc2-DAG. An additional quadrant one (Q1) strain Exiguobacterium acetylicum UTDF19-27C was analyzed by lipidomics. It was found to synthesize only Lys-PG. This MprF falls near Staphylococcus aureus RN4220 and Bacillus subtilis 168 in our plot, both of which synthesize only Lys-PG (Peschel et al., 2001; Slavetinsky et al., 2012) (and experimentally confirmed in this study). This further supports that strains located in quadrant one of Figure 8 are capable of Lys-PG synthesis.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/94929/elife-94929-fig8-v1.jpg)\n\n**Figure 8.:** Protein ID of highlighted sequences are listed in Supplementary file 1. (#) indicates the lipid activity was confirmed through heterologous expression.\n\nSummaries of all functional species/variants tested and the Lys-lipids they produced are shown in Table 2, and plotted in the two RBM hidden units in Figure 8. We list for each MprF variant which of the three tested lipids it acts on, and in Figure 8 we indicate whether a variant has only PG as a substrate or if it operates on GlcN-DAG as a substrate irrespective of its PG activity. With this plot, we can see that sequences which plot with positive activations in hidden unit 2 are more likely to have GlcN-DAG as a substrate (8/9), and sequences with negative values predominantly use PG (7/11), with a Fisher\u2019s exact test p-value of 0.028 (Supplementary file 2). Hidden unit 1, however, is not correlated with GlcN-DAG specificity, with a Fisher\u2019s exact p-value of 0.67. Therefore, we conclude that hidden unit 2, and thus the high magnitude sequence positions identified by it, are correlated with GlcN-DAG specificity.\n\n## Discussion\n\nThe utilization of the S. agalactiae MprF amino acid sequence as a query for BLASTp was a simple method to identify various streptococcal MprFs and further our understanding of MprF specificity. This allowed us to identify three MprFs that can synthesize the highly cationic Lys-Glc-DAG. Importantly, although highly similar to S. agalactiae MprF, this method did not identify other streptococcal MprFs capable of lysine addition to both glycolipid and phospholipid substrates (generating Lys-Glc-DAG and Lys-PG) nor did it lead to the identification of a novel cationic glycolipid found in Enterococcus. Sequence logos (Schneider and Stephens, 1990) may identify important sequence features, but largely in instances where amino acids are highly conserved. When amino acids must interact to produce a specific function, yet the exact identity of those amino acids is not a requirement, methods which model the strength of amino acid coevolution in sequence sets can find important signals which in the sequence logo might appear to be negligible. For this reason we used the RBM method (Tubiana et al., 2019b), which can model statistical connectivity of residues at multiple sites in the protein sequence.\n\nThe RBM can be used in a number of ways to study sequence data. First, it allowed us to filter the sequence data using hidden units (Figure 4); the two hidden units which formed the basis of our specificity analysis were not found in models trained on the Pfam dataset when it was initially pulled from Pfam, and this was potentially due to the presence of sequences without relevant catalytic function adding noise to the dataset. The most prominent feature for our purposes is the ability to use the hidden units learned through RBM training to classify sequences. The bimodal nature of this particular model provides a relatively simple interpretation which is straightforward to use for prediction.\n\nWe show in Figure 5 that the combination of clustering and interpretable hidden unit structure allows us to identify a small subset of residues within a structure, grounding our statistical clustering in MprF\u2019s structural features. The combination of experimental evidence and evolutionary information provided a strong rationale for selecting organisms for further study, ultimately leading to the discovery of novel cationic lipid biosynthesis in E. dispar (Figure 6, Figure 6\u2014figure supplement 1).\n\nOne goal of this study was to find the structural determinants of GlcN-DAG activity by MprF, and we found that hidden unit 2 from our RBM analysis was predictive of this. However, there are notable exceptions such as the E. faecium allele EGTF_00601, which has sequence features placing it in quadrant one yet has GlcN-DAG activity. Therefore, identifying the exact sequence determinants of GlcN-DAG specificity remains to be fully elucidated. One explanation could be our exclusion of the N-terminal flippase domain and the non-cytosolic region of the C-terminal domain in the RBM analysis, where important residue interactions determining specificity could occur and is under further investigation. Additionally, a challenge in experimental validation will be to standardize the method of studying mprF alleles from diverse organisms. When using native organisms, lipids produced may vary during the growth phase of the organisms, the media they are grown in, and whether a membrane stressor is present (i.e. inducible production of specific lipids). For this study we used stationary phase cultures of equal volume and bacteria were grown in their respective standard laboratory media. The use of a heterologous host for expression of mprF alleles is a method of standardization, but may result in not identifying novel lipids that would be found in their native bacteria since the appropriate lipid substrates may not be present (Joyce et al., 2019; Joyce et al., 2021). A combination of both approaches (native organisms and heterologous hosts) may be required. Additionally, spike-in controls might be implemented to help us to more quantitatively understand the output specificity of these MprF variants. Ultimately, mutational studies of the residues identified by the RBM will allow for identification of the residues critical for specificity, though likely the residues will depend in part on the primary sequence being altered.\n\nThe general method of RBM-guided exploration has applications in enzyme design, for example, in enhancing methods like directed evolution (Arnold, 2018). Concretely, the residues identified through hidden units can be thought of as templates for mutational exploration, greatly reducing the search space for assessing which residues are critical for specificity determination. Enzymes like MprF that produce lipids of modified charge have potential applications in biotechnology and therapeutics, where the design of lipid nanoparticles with different charge and chemical properties of the head group have important physiological implications (Carrasco et al., 2021). Notably, the identification of Lys-Glc2-DAG opens new research avenues, particularly in the fields of antibiotic resistance and host-pathogen interactions, wherein lipid modification and cationic lipids play key roles. With respect to human health, it would be relevant to investigate whether Lys-Glc2-DAG plays a role in enterococcal resistance to the last-line membrane-active antibiotic, daptomycin.\n\n## Materials and methods\n\n### Bacterial strains and growth conditions\n\nSee Supplementary files 1 and 3 for a full list of bacterial strains used in this study. S. mitis NCTC12261 (referred to as SM61 here) (Kilian et al., 1989) was grown in Todd Hewitt Broth (THB) at 37\u00b0C with 5% CO2. Escherichia coli DH5\u03b1 (Taylor et al., 1993) and B. subtilis 168 (Kunst et al., 1997) were grown at 37\u00b0C with shaking at 225 rpm in lysogeny broth. S. aureus RN4220 (Kreiswirth et al., 1983) was grown at 37\u00b0C with shaking at 220 rpm in Trypic Soy Broth. S. agalactiae COH1 ATCC BAA-1176 (Kuypers et al., 1989) and CJB111 (Faralla et al., 2014; Spencer et al., 2021) were grown in THB at 37\u00b0C. E. faecium 1,231,410 (Palmer et al., 2010), E. faecalis T11 (McBride et al., 2007) and OG1RF (Gold et al., 1975), E. gallinarium EG2 (Palmer et al., 2010), E. casseliflavus EC10 (Palmer et al., 2010), and E. raffinosus Er676 (Sharon et al., 2023) were grown at 37\u00b0C in Brain Heart Infusion (BHI). E. dispar ATCC 51266 (Collins et al., 1991) was grown at 30\u00b0C in BHI. E. acetylicum UTDF19-27C was grown in BHI at 37\u00b0C. L. salivarius ATCC 11741 (Drucker, 1979), L. rhamnosus ATCC 7469 (Collins et al., 1989), L. casei ATCC 393 (Hansen and Lessel, 1971), and L. paracasei ATCC 25302 (Collins et al., 1989) were grown in Lactobacilli MRS Broth at 37\u00b0C and 5% CO2. L. brevis ATCC 14869 (Rogosa and Hansen, 1971) was grown in Lactobacilli MRS Broth at 30\u00b0C, 5% CO2. B. licheniformis ATCC 14580 was grown in nutrient broth at 37\u00b0C with shaking at 225 rpm (Chester, 1901). A transposon mutant of E. faecalis OG1RF from Dale et al., 2018, with a mini mariner transposon (EfaMarTn) insertion in OG1RF10760 (OG1RF10760::Tn) was grown on BHI supplemented with chloramphenicol at a concentration of 15 \u03bcg/mL. The mutant was confirmed to be erythromycin-sensitive. The transposon mutant location was confirmed through Sanger sequencing performed by the Genome Center at the University of Texas at Dallas (Richardson, TX, USA).\n\nWhere appropriate for plasmid selection, kanamycin (Sigma-Aldrich) was added. For E. coli, a concentration of 50 \u03bcg/mL was used, for S. mitis a concentration of 300 \u03bcg/mL, and for E. faecalis a concentration of 500 \u03bcg/mL was used.\n\n### Routine molecular biology procedures\n\nGenomic DNA was extracted as done previously in Adams et al., 2015, and Manson et al., 2003. All PCRs used Phusion polymerase (Thermo Fisher Scientific) and Phusion 5x HF buffer (Thermo Fisher Scientific) in a Veriti PCR machine (Applied Biosystems). List of primers used are found in Supplementary file 4. Gibson assemblies were completed using a 2x HI-FI Assembly master mix following the manufacturer\u2019s protocol (New England Biolabs). PCR clean-up was done using the GeneJET PCR Purification Kit (Thermo Fisher Scientific) per the manufacturer\u2019s protocol. Plasmid extractions were performed per manufacturer\u2019s protocol using the GeneJET Plasmid miniprep kit (Thermo Fisher Scientific). All plasmid constructs were confirmed by Sanger sequencing at the Massachusetts General Hospital CCIB DNA Core facility or by Illumina sequence at SeqCenter. DNA concentrations were measured using NanoDrop (Thermo Fisher Scientific) or Quibit 2.0 (Invitrogen by Life Technologies). Optical density at 600 nm (OD600 nm) was measured in a disposable cuvette (Thermo Fisher Scientific) using a spectrophotometer (Thermo Scientific Genesys 30).\n\nGibson assembly was performed using pABG5 as previously described (Joyce et al., 2022). Transformation of plasmids into E. coli, S. mitis, and E. faecalis was performed as previously described in ; Joyce et al., 2022Joyce et al., 2019; Joyce et al., 2022; Salvadori et al., 2016; Shepard and Gilmore, 1995.\n\n### Acidic Bligh-Dyer lipid extractions\n\nBacteria were grown for approximately 16 hr overnight in 15 mL of an appropriate culture medium. After growth, OD600 nm measurements were taken, and cells were pelleted at 4280 \u00d7 g for 5 min at room temperature in a Sorvall RC6+ centrifuge. The supernatant was tipped out, and the cell pellet was washed and resuspended in 1\u00d7 phosphate buffered saline (PBS). The cells were pelleted again, and all the supernatant was aspirated out. The cell pellet was stored at \u201380\u00b0C until lipid extraction. An acidic Bligh-Dyer lipid extraction was performed as previously reported (Joyce et al., 2019; Joyce et al., 2021). Briefly, cell pellets were resuspended in 0.8 mL of 1x Dulbecco\u2019s PBS (Sigma-Aldrich). Cells were transferred to a 9 mL glass tube with a Teflon-lined cap (Pyrex). 1 mL chloroform (MilliporeSigma) and 2 mL methanol (Thermo Fisher Scientific) were added to create the single-phase Bligh-Dyer. Tubes were vortexed every 5 min for 20 min, then centrifuged at 500 \u00d7 g for 10 min at room temperature. The supernatant was transferred to a new 9 mL glass tube. 100 \u00b5L of hydrochloric acid (Thermo Fisher Scientific) was added followed by 1 mL of chloroform and 0.9 mL of 1x Dulbecco\u2019s PBS to create the two-phase Bligh-Dyer. Tubes were gently mixed and centrifuged at 500 \u00d7 g for 5 min at room temperature. After centrifuging, the bottom layer was extracted to a new tube and dried under nitrogen gas and stored at \u201380\u00b0C prior to lipidomic analysis. Lipid analyses were repeated in biological triplicate aside, from OG1RF_10760::Tn extractions, which were performed once.\n\n### Analysis of lysine lipids by an amino column-based LC-ESI MS: a new method\n\nAn amino column-based normal phase LC-ESI MS (liquid chromatography electrospray ionization-mass spectrometry) was performed using an Agilent 1200 Quaternary LC system coupled to a high-resolution TripleTOF5600 mass spectrometer (Sciex, Framingham, MA, USA). A Unison UK-Amino column (3 \u00b5m, 25 cm \u00d72 mm) (Imtakt USA, Portland, OR, USA) was used. Mobile phase A consisted of chloroform/methanol/aqueous ammonium hydroxide (800:195:5, vol/vol/vol). Mobile phase B consisted of chloroform/methanol/water/aqueous ammonium hydroxide (600:340:50:5, vol/vol/vol/vol). Mobile phase C consisted of chloroform/methanol/water/aqueous ammonium hydroxide (450:450:95:5, vol/vol/vol/vol). The elution program consisted of the following: 100% mobile phase A was held isocratically for 2 min and then linearly increased to 100% mobile phase B over 8 min and held at 100% B for 5 min. The LC gradient was then changed to 100% mobile phase C over 1 min and held at 100% C for 3 min, and finally returned to 100% A over 0.5 min and held at 100% A for 3 min. The total LC flow rate was 300 \u00b5L/min. The MS settings were as follows: ion spray voltage (IS)=5000 V, curtain gas (CUR)=20 psi, ion source gas 1 (GS1)=20 psi, de-clustering potential (DP)=50 V, and focusing potential (FP)=150 V. Nitrogen was used as the collision gas for MS/MS experiments. Data acquisition and analysis were performed using Analyst TF1.5 software (Sciex, Framingham, MA, USA).\n\n### Generation of mprF expression plasmids\n\nThe S. downei mprF nucleotide sequence (Locus tag HMPREF9176_RS03810) and S. ferus mprF nucleotide sequence (Locus tag A3GY_RS0106165) were used to design synthetic geneblocks (GeneWiz from Azenta Life Sciences). A 20 nucleotide 5\u2019 extension and a 20 nucleotide 3\u2019 extension complementary to the pABG5 plasmid were added to enable Gibson assembly of the inserts with pABG5. Sequences for the geneblocks can be found in Supplementary file 5. The S. salivarius mprF (Locus tag SSAL8618_04345) was amplified from S. salivarius ATCC 7073. A 20 nucleotide 5\u2019 extension and a 20 nucleotide 3\u2019 extension complementary to the pABG5 plasmid was added to the insert. The same protocol was used for generation of pSobrinus, pEFMprF1, pEFMprF2, and pOGMprF2 with slight modifications. S. sobrinus mprF (Locus tag DLJ52_05040) was amplified from S. sobrinus ATCC 27352. E. faecium mprF1 (Locus tag EFTG_00601) and E. faecium mprF2 (Locus tag EFTG_02430) were amplified from E. faecium 1, 231, 410. E. faecalis mprF2 (Locus tag OG1RF_10760) was amplified from E. faecalis OG1RF.\n\n### Boltzmann machines and RBM for protein sequences\n\n#### Formulation of models\n\nThe Boltzmann machine, as described in Morcos et al., 2011, is defined as:\n\n$$\nP(v)=\\frac{1}{Z}exp\u2061(\\sumi<je_{ij}(v_{i},v_{j})+\\sumih_{i}(v_{i}))\n$$\n\nwhich is a probability distribution defined on the pairwise interactions (the couplings $e_{ij}$) between the positions ($v_{n}$) in an input sequence ($v$) and a local field term $h_{i}$. The pairwise coupling matrix is akin to a covariance matrix, and the local fields are similar to single site frequency measures.\n\nThe joint probability distribution of the RBM as described in Tubiana et al., 2019b, is as follows:\n\n$$\nP(v,h)=\\frac{1}{Z}exp\u2061(\\sumi=1Ng_{i}(v_{i})\u2212\\sum\\mu=1MU_{\\mu}(h_{\\mu})+\\sumi,\\muh_{\\mu}w_{i\\mu}(v_{i}))\n$$\n\nHere, the vector $v$ again represents the input sequence data, $g(v_{i})$ is a local field which controls the conditional probability of the input data, $U_{\\mu}$ is the hidden unit potential/activation, and the terms $h_{i}$ and $w_{i\\mu}(v)$ couple the input variables with the hidden unit variables. In this way, interactions between residues are mediated by a relatively smaller set of hidden units which do not interact directly with each other, leading to a bipartite structure as opposed to the Boltzmann machine\u2019s fully connected pair-based formulation.\n\nParticularly important is the potential function $U$, which in this work is the dRELU function defined as:\n\n$$\nU_{\\mu}(h)=\\frac{1}{2}\\gamma_{\\mu,+}\u00a0h_{+}^{2}+\\frac{1}{2}\\gamma_{\\mu,\u2212}\u00a0h_{\u2212}^{2}+\\theta_{\\mu,+}\u00a0h_{+}+\\theta_{\\mu,\u2212}\u00a0h_{\u2212}h_{+}=max(h,0)\u00a0,\u00a0h_{\u2212}=min(h,0)\n$$\n\nThe four parameters $\\gamma_{\\mu,\\pm},\\theta_{\\mu,\\pm}$ are learned through the inference procedure, and allow the positive and negative components of the hidden units $w_{\\mu}$ to be separately gated, which allows learning of bimodal distributions for the activations $h_{\\mu}$. Another key feature is the sparsity regularization on the weights applied during model inference:\n\n$$\nL2/L1=\\frac{\\lambda_{1}^{2}}{2qN}\\sum\\mu(\\sumi|w_{i\\mu}(v_{i})|)^{2}\n$$\n\nwhere $q$ is the number of amino acids plus a gap character (21) and the hyperparameter $\\lambda_{1}^{2}$ can be increased to induce sparsity and lower weight magnitude. Equations 4 and 5 together guide the representation of the hidden units to bimodal outputs with interpretable features.\n\n#### Dataset acquisition and preprocessing\n\nMultiple sequence alignment used for model training was the DUF2156 domain acquired from Pfam (Mistry et al., 2021) (in later revisions renamed LPG_synthase_C). Starting with this MSA, it was processed to include only amino acid characters and gaps, excluding sequences with ambiguous or non-standard characters. Additionally, sequences with contiguous strings of gaps greater than 20% of the full sequence\u2019s length were removed. This left 11,507 sequences with a length of 298. After the data cleaning process described in Figure 4, a total of 7865 sequences were used to train our final model.\n\n#### Model training\n\nThe model previously described (Tubiana et al., 2019b) was utilized, specifically the Python 2.7 version freely available on GitHub (https://github.com/jertubiana/ProteinMotifRBM; Tubiana, 2019). Extensive testing of the combinations of the number of hidden units, $L2/L1$ regularization, and learning rate were performed. Models were trained in triplicate with different random seeds, as the training procedure converges to slightly different weight values depending on their initial random configuration. Training was considered successful when the model consistently produced similar sets of weights across different random seeds, and the weights had the previously mentioned sparsity and magnitude indicating compositional representation. The final model used in this work was trained for 2000 epochs with a learning rate of 0.1, a learning rate decay of 0.33, $L2/L1$ parameter $\\lambda_{1}^{2}$ set to 1.0, and 300 hidden units.\n\n#### Model weight selection\n\nTo find hidden units which were relevant to function we computed the $L1$ norm of each hidden unit individually, then ranked them. The hidden units with the largest magnitude were looked at first, and these were typically the sparsest of all hidden units. Hidden units were chosen which involved sequence coordinates implicated in our function of interest. Specifically, locations identified through Autodock (Hebecker et al., 2015) where the lipid was likely to interact, and a small radius around this region to select a small set of coordinates. We chose the only hidden units which had both overlap with multiple residues in this chosen radius and predictive power (separation) for the three examples we had to start with.\n\n#### Software accessibility\n\nDUF2156 domain sequences were retrieved from Pfam33 (Mistry et al., 2021). Raw sequence datasets are available as Supplementary Material.\n",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Anne-Florence Bitbol, Ecole Polytechnique Federale de Lausanne (EPFL) Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.94929.3.sa0](https://doi.org/10.7554/eLife.94929.3.sa0)\n\nThis study reports important findings on identifying sequence motifs that predict substrate specificity in a class of lipid synthesis enzymes. It sheds light on a mechanism used by bacteria to modify the lipids in their membrane to develop antibiotic resistance. The evidence is compelling, with a careful application of machine learning methods, validated by mass spectrometry-based lipid analysis experiments. This interdisciplinary study will be of interest to computational biologists and to the community working on lipids and on enzymes involved in lipid synthesis or modification.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94929.3.sa1](https://doi.org/10.7554/eLife.94929.3.sa1)\n\nThe manuscript by Christensen, et al. presents an application of restricted Boltzmann machines to analyze the MprF family of enzymes, which catalyze the addition of amino acids to lipid substrates in bacteria. Overall the manuscript is an interesting and very compelling combination of advanced statistical analysis of sequences and experimental determination of MprF function. One notable outcome is (as stated in the title) the identification of a novel substrate/product. I expect that other researchers interested in using advanced methods to connect sequence to lipid synthesis functions will find the work of significant value and that others interested in microbial resistance will find inspiration in the results. This is an excellent contribution that will be of great value to the field, and which is improved following revisions.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94929.3.sa2](https://doi.org/10.7554/eLife.94929.3.sa2)\n\nSummary:\n\nAfter the previous identification that the Streptococcus agalactiae MprF enzyme can synthesize also lysyl-glucosyl-diacylglycerol (Lys-Glc-DAG), besides the already known lysyl-phosphatidylglycerol (Lys-PG), the authors aim for the current manuscript was to investigate the molecular determinants of MprF lipid substrate specificity, for which MprF from a variety of bacterial species were used. This then led to the coincidental discovery of a novel lipid species.\n\nThe manuscript is well constructed and easy to follow, especially taking into account the multidisciplinary aspect of it (computational machine learning combined with lipid biology). The Restricted Boltzmann machines (RBM) approach enables the successful, although not perfect, classification and categorization of MprF activity. The computational approach is validated by lab experiments in which LC-MS analysis reveals the specific activity of the lipid synthesizing enzymes. In a few cases lipid synthesis activity is completely absent. Due to the lack of protein expression data, it is unclear if this is caused by enzyme inactivity or the overall absence of enzyme.\n\nOverall, the authors largely achieved their goals, as the applied RBM approach led to specific sequence determinants in MprF enzymes that could categorize the specificity of these enzymes. The experimental data could largely confirm this categorization, although a stronger connection between synthesized lipids and enzyme activity would have further strengthened the observations.\n\nThe work now focuses only on MprF enzymes, but could in theory be expanded to other categories of lipid synthesizing enzymes. In other words, the RBM approach could have an impact on the lipid synthesis field, if it would be a tool that is easy applicable. Moreover, the lipids synthesized by MprF (Lys-PG, but also other cationic lipids) play an important role in the bacterial resistance against certain antibiotics.\n",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "df5c529b-cd12-4120-85c6-fa996373452a",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C1",
+      "claim": "MprF is an enzyme that alters membrane compositions through covalent lipid modification.",
+      "claim_type": "EXPLICIT",
+      "source": "One enzyme that alters membrane compositions through covalent lipid modification is MprF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a known property of MprF.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "ebc248f5-fb67-45ae-b847-efbf9c0cea89",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C2",
+      "claim": "Streptococcus agalactiae MprF synthesizes lysyl-phosphatidylglycerol (Lys-PG) from anionic PG.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently identified that Streptococcus agalactiae MprF synthesizes lysyl-phosphatidylglycerol (Lys-PG) from anionic PG, and a novel cationic lipid, lysyl-glucosyl-diacylglycerol (Lys-Glc-DAG), from neutral glycolipid Glc-DAG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recent finding by the authors as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "37d017bf-edd1-4581-baf0-db7f20c2ca9f",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C3",
+      "claim": "Streptococcus agalactiae MprF synthesizes lysyl-glucosyl-diacylglycerol (Lys-Glc-DAG) from neutral glycolipid Glc-DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "We recently identified that Streptococcus agalactiae MprF synthesizes lysyl-phosphatidylglycerol (Lys-PG) from anionic PG, and a novel cationic lipid, lysyl-glucosyl-diacylglycerol (Lys-Glc-DAG), from neutral glycolipid Glc-DAG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recent finding by the authors as stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "6f7ef924-c649-4f8d-8794-38c10018305c",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C4",
+      "claim": "A restricted Boltzmann machine-guided approach led to the discovery of diglucosyl-diacylglycerol (Glc2-DAG) as a new substrate for MprF in Enterococcus.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, a restricted Boltzmann machine-guided approach led us to discover an entirely new substrate for MprF in Enterococcus, diglucosyl-diacylglycerol (Glc2-DAG), and an expanded set of organisms that modify glycolipid substrates using MprF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study stated in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "69e606f8-3670-422f-a6c0-6930ccf207dc",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C5",
+      "claim": "Lipids are critical for fundamental biological processes including the formation of cell membranes, protection, and cargo delivery; energy storage; and cell signaling pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipids are ubiquitous and diverse group of amphiphathic compounds that are critical for fundamental biological processes, including the formation of cell membranes, protection, and cargo delivery; energy storage; and cell signaling pathways (Fahy et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Fahy et al., 2011.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "82200e88-0f09-4d84-ae17-188cb657ef78",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C6",
+      "claim": "Chemical modifications to lipids impact interactions and the physicochemical properties of membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Chemical modifications to lipids, including changes in fatty acid tails (saturated and unsaturated) (Wang et al., 2018), modifications of head groups (Roy et al., 2009), and alterations to lipid charge (Roy and Ibba, 2008), impact these interactions, as well as the physicochemical properties of membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations (Wang et al., 2018; Roy et al., 2009; Roy and Ibba, 2008).",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "8bae4a9a-3799-4b88-a58b-ce953046b40e",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C7",
+      "claim": "Bacteria commonly synthesize lipids that are negatively charged or neutral.",
+      "claim_type": "EXPLICIT",
+      "source": "Commonly, bacteria synthesize lipids that are negatively charged or neutral (Sohlenkamp and Geiger, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Sohlenkamp and Geiger, 2016.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "83c0d8fd-f036-444a-a9a5-f54dd9f5d778",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C8",
+      "claim": "Some bacteria modify negatively charged lipids with amino acids to make them positively charged to confer resistance to cationic antimicrobial peptides and cationic antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "Some bacteria modify the negatively charged lipids with amino acids to make them positively charged to confer resistance to cationic antimicrobial peptides and cationic antibiotics (Weidenmaier et al., 2005; Joyce and Doran, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Weidenmaier et al., 2005 and Joyce and Doran, 2023.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "f3de0e54-d562-410d-a704-2250199cde21",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C9",
+      "claim": "Outer membrane vesicles containing modified lipopolysaccharide can be used to deliver siRNA to targeted cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "A study by Gujrati et al., 2014, used low cytotoxic outer membrane vesicles that contained a modified lipopolysaccharide to deliver siRNA to targeted cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Gujrati et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "b20d4601-7b10-4c5a-9d6f-e5d1f662ee99",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C10",
+      "claim": "MprF modifies lipids through the transfer of amino acids from charged tRNAs to the head group of the anionic membrane phospholipid, phosphatidylglycerol (PG).",
+      "claim_type": "EXPLICIT",
+      "source": "MprF modifies lipids through the transfer of amino acids from charged tRNAs to the head group of the anionic membrane phospholipid, phosphatidylglycerol (PG) (Roy and Ibba, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Roy and Ibba, 2008.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "3ebd220c-35d3-42c3-8584-65440c801f3e",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C11",
+      "claim": "The MprF protein is comprised of an N-terminal flippase domain and a C-terminal synthase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The MprF protein is comprised of two domains: an N-terminal flippase domain responsible for moving aminoacylated lipids from the inner membrane leaflet to the outer leaflet and a C-terminal synthase domain responsible for the aminoacyl transfer from tRNA to lipids (Ernst et al., 2009; Staubitz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ernst et al., 2009 and Staubitz et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "9626f368-007e-489f-b0aa-8146eed9da2a",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C12",
+      "claim": "The N-terminal flippase domain of MprF is responsible for moving aminoacylated lipids from the inner membrane leaflet to the outer leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "The MprF protein is comprised of two domains: an N-terminal flippase domain responsible for moving aminoacylated lipids from the inner membrane leaflet to the outer leaflet and a C-terminal synthase domain responsible for the aminoacyl transfer from tRNA to lipids (Ernst et al., 2009; Staubitz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ernst et al., 2009 and Staubitz et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "9076c220-51dc-4c53-a655-b0d122837cc4",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C13",
+      "claim": "The C-terminal synthase domain of MprF is responsible for the aminoacyl transfer from tRNA to lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The MprF protein is comprised of two domains: an N-terminal flippase domain responsible for moving aminoacylated lipids from the inner membrane leaflet to the outer leaflet and a C-terminal synthase domain responsible for the aminoacyl transfer from tRNA to lipids (Ernst et al., 2009; Staubitz et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Ernst et al., 2009 and Staubitz et al., 2004.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "46da49f0-ca89-47f7-8ca8-7cb9f1eff1e2",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C14",
+      "claim": "An S. agalactiae mprF deletion mutant no longer synthesizes Lys-Glc-DAG or Lys-PG.",
+      "claim_type": "EXPLICIT",
+      "source": "An S. agalactiae mprF deletion mutant no longer synthesizes Lys-Glc-DAG or Lys-PG and expression of S. agalactiae mprF in the heterologous host Streptococcus mitis conferred Lys-Glc-DAG and Lys-PG synthesis to S. mitis (Joyce et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Joyce et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "bd81815c-c5e0-46a6-bcb6-fcacfa8e9d90",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C15",
+      "claim": "Expression of S. agalactiae mprF in the heterologous host Streptococcus mitis conferred Lys-Glc-DAG and Lys-PG synthesis to S. mitis.",
+      "claim_type": "EXPLICIT",
+      "source": "An S. agalactiae mprF deletion mutant no longer synthesizes Lys-Glc-DAG or Lys-PG and expression of S. agalactiae mprF in the heterologous host Streptococcus mitis conferred Lys-Glc-DAG and Lys-PG synthesis to S. mitis (Joyce et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Joyce et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "70b42504-1f1e-48fe-855e-9e21bee9aeed",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C16",
+      "claim": "MprF adding lysine onto a neutral glycolipid (Glc-DAG) was demonstrated for the first time in S. agalactiae.",
+      "claim_type": "EXPLICIT",
+      "source": "This was the first time MprF was demonstrated to add lysine onto a neutral glycolipid (Glc-DAG).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding in the introduction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "da0c6ac8-189f-4f19-957b-fa17f452ba27",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C17",
+      "claim": "Streptococcus sobrinus ATCC 27352 MprF has 61.4% amino acid identity to S. agalactiae MprF.",
+      "claim_type": "EXPLICIT",
+      "source": "A BLASTp analysis found that Streptococcus sobrinus ATCC 27352 MprF (WP_019790557.1) had 61.4% amino acid identity to the S. agalactiae MprF, Streptococcus salivarius ATCC 7073 MprF (WP_002888893.1) had 43.09% amino acid identity, Streptococcus ferus MprF (WP_018030543.1) had 61.88% amino acid identity, and Streptococcus downei (WP_002997695.1) had 61.03% amino acid identity (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on BLASTp analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "c7071d5a-1029-4b6a-9670-16feb6dca008",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C18",
+      "claim": "Streptococcus salivarius ATCC 7073 MprF has 43.09% amino acid identity to S. agalactiae MprF.",
+      "claim_type": "EXPLICIT",
+      "source": "A BLASTp analysis found that Streptococcus sobrinus ATCC 27352 MprF (WP_019790557.1) had 61.4% amino acid identity to the S. agalactiae MprF, Streptococcus salivarius ATCC 7073 MprF (WP_002888893.1) had 43.09% amino acid identity, Streptococcus ferus MprF (WP_018030543.1) had 61.88% amino acid identity, and Streptococcus downei (WP_002997695.1) had 61.03% amino acid identity (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on BLASTp analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "52585612-7037-481f-af27-6d938ce324c1",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C19",
+      "claim": "Streptococcus ferus MprF has 61.88% amino acid identity to S. agalactiae MprF.",
+      "claim_type": "EXPLICIT",
+      "source": "A BLASTp analysis found that Streptococcus sobrinus ATCC 27352 MprF (WP_019790557.1) had 61.4% amino acid identity to the S. agalactiae MprF, Streptococcus salivarius ATCC 7073 MprF (WP_002888893.1) had 43.09% amino acid identity, Streptococcus ferus MprF (WP_018030543.1) had 61.88% amino acid identity, and Streptococcus downei (WP_002997695.1) had 61.03% amino acid identity (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on BLASTp analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "1fa19759-7e3e-42f9-8ea8-45766791d943",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C20",
+      "claim": "Streptococcus downei MprF has 61.03% amino acid identity to S. agalactiae MprF.",
+      "claim_type": "EXPLICIT",
+      "source": "A BLASTp analysis found that Streptococcus sobrinus ATCC 27352 MprF (WP_019790557.1) had 61.4% amino acid identity to the S. agalactiae MprF, Streptococcus salivarius ATCC 7073 MprF (WP_002888893.1) had 43.09% amino acid identity, Streptococcus ferus MprF (WP_018030543.1) had 61.88% amino acid identity, and Streptococcus downei (WP_002997695.1) had 61.03% amino acid identity (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on BLASTp analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "22eb7b8f-cf9e-449c-9aba-153ae330f569",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C21",
+      "claim": "S. mitis does not natively encode mprF.",
+      "claim_type": "EXPLICIT",
+      "source": "S. mitis does not natively encode mprF but synthesizes lipids (Glc-DAG; PG) that are substrates for S. agalactiae MprF (Adams et al., 2017; Joyce et al., 2019; Joyce et al., 2022), making it an appropriate heterologous host for expressing streptococcal MprFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Adams et al., 2017; Joyce et al., 2019; Joyce et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "1ec67392-f16e-4b29-988f-358ccd0fc277",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C22",
+      "claim": "S. mitis synthesizes lipids (Glc-DAG; PG) that are substrates for S. agalactiae MprF.",
+      "claim_type": "EXPLICIT",
+      "source": "S. mitis does not natively encode mprF but synthesizes lipids (Glc-DAG; PG) that are substrates for S. agalactiae MprF (Adams et al., 2017; Joyce et al., 2019; Joyce et al., 2022), making it an appropriate heterologous host for expressing streptococcal MprFs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Adams et al., 2017; Joyce et al., 2019; Joyce et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "9ceff5d7-0566-460a-b4af-a88214aff456",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C23",
+      "claim": "S. mitis NCTC12261 with empty vector control (pABG5) lacks lysine lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "(a) S. mitis NCTC12261 with empty vector control (pABG5) lacks lysine lipids",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2a with lipidomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "0508f725-de68-4c08-bf0b-54aa003cc4fd",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C24",
+      "claim": "S. agalactiae mprF (pGBSMprF) produces both Lys-PG and Lys-Glc-DAG when expressed in S. mitis.",
+      "claim_type": "EXPLICIT",
+      "source": "(b) S. agalactiae mprF (pGBSMprF) produces both Lys-PG and Lys-Glc-DAG",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2b with lipidomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "b58b9f24-3dc7-4937-ba35-3601c59567e6",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C25",
+      "claim": "S. salivarius mprF produces only Lys-PG when expressed in S. mitis.",
+      "claim_type": "EXPLICIT",
+      "source": "(c) S. salivarius mprF produces only Lys-PG",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2c with lipidomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "d5623135-2263-4acf-94fe-11eca88ad5f0",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C26",
+      "claim": "S. ferus mprF produces only Lys-Glc-DAG when expressed in S. mitis.",
+      "claim_type": "EXPLICIT",
+      "source": "(d) S. ferus mprF produces only Lys-Glc-DAG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in Figure 2d with lipidomic data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "651a83bc-4e68-4046-92e3-87dba6b1b0aa",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C27",
+      "claim": "S. sobrinus MprF confers synthesis of Lys-Glc-DAG, but not Lys-PG in S. mitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipidomic analysis found that pSobrinus, pDownei, and pFerus conferred synthesis of Lys-Glc-DAG, but not Lys-PG in S. mitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on lipidomic analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "9fbbe003-2fb6-4608-8caa-7ca97a806258",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C28",
+      "claim": "S. downei MprF confers synthesis of Lys-Glc-DAG, but not Lys-PG in S. mitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Lipidomic analysis found that pSobrinus, pDownei, and pFerus conferred synthesis of Lys-Glc-DAG, but not Lys-PG in S. mitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on lipidomic analysis results presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "5864854b-30ad-44e9-9885-76f15fa8e428",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C29",
+      "claim": "S. ferus MprF confers synthesis of Lys-Glc-DAG at a similar level to S. agalactiae MprF.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, pFerus confers synthesis of Lys-Glc-DAG at a similar level to S. agalactiae MprF (Figure 2b and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of lipidomic data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "a399796e-03dd-415a-a43a-a4d5aa6801a3",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C30",
+      "claim": "S. salivarius MprF synthesized Lys-PG at a level most similar to S. agalactiae MprF.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, S. salivarius MprF also synthesized Lys-PG at a level most similar to S. agalactiae MprF (Figure 2b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on comparison of lipidomic data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "f2da5d0e-d2cd-40ab-8c60-594cf432ddb4",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C31",
+      "claim": "Streptococcal MprF enzymes with higher amino acid percent (>60%) to S. agalactiae MprF conferred Lys-Glc-DAG synthesis to S. mitis.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, streptococcal MprF enzymes with higher amino acid percent (>60%) to S. agalactiae MprF conferred Lys-Glc-DAG synthesis to S. mitis, but only S. agalactiae MprF conferred both Lys-Glc-DAG and Lys-PG synthesis in S. mitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization based on the experimental results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "d161963f-cac3-4020-abbe-e8dc04b93f02",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C32",
+      "claim": "Only S. agalactiae MprF conferred both Lys-Glc-DAG and Lys-PG synthesis in S. mitis.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, streptococcal MprF enzymes with higher amino acid percent (>60%) to S. agalactiae MprF conferred Lys-Glc-DAG synthesis to S. mitis, but only S. agalactiae MprF conferred both Lys-Glc-DAG and Lys-PG synthesis in S. mitis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental results presented.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "535d22f0-b2e0-48e9-b21e-62f255856cab",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C33",
+      "claim": "The Boltzmann machine formulation is closely related to the Potts model from physics.",
+      "claim_type": "EXPLICIT",
+      "source": "The Boltzmann machine formulation is closely related to the Potts model from physics, which was successfully applied in biology to elucidate important residues in protein structure and function (Morcos et al., 2011), one example being the careful tuning of enzyme specificity in bacterial two-component regulatory systems (Cheng et al., 2014; Jiang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Morcos et al., 2011; Cheng et al., 2014; Jiang et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "985a08b4-c35b-4071-8df7-8e1e32676a73",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C34",
+      "claim": "The Potts model was successfully applied in biology to elucidate important residues in protein structure and function.",
+      "claim_type": "EXPLICIT",
+      "source": "The Boltzmann machine formulation is closely related to the Potts model from physics, which was successfully applied in biology to elucidate important residues in protein structure and function (Morcos et al., 2011), one example being the careful tuning of enzyme specificity in bacterial two-component regulatory systems (Cheng et al., 2014; Jiang et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Morcos et al., 2011; Cheng et al., 2014; Jiang et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "2c58e0ec-a8b0-4fc9-a2ec-451ed9eca75a",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C35",
+      "claim": "S. agalactiae MprF and other MprF enzymes that utilize glycolipid substrates have unique patterns of interacting residues relative to those enzymes that use only PG as a substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that S. agalactiae MprF and other MprF enzymes that utilize glycolipid substrates have unique patterns of interacting residues relative to those enzymes that use only PG as a substrate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hypothesis by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "292b0557-5c73-4631-82f6-3dd54e3368f4",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C36",
+      "claim": "Important features of enzyme function like allostery or enzyme specificity may involve more than two residues.",
+      "claim_type": "EXPLICIT",
+      "source": "While modeling how pairs of residues covary is powerful, many important features of enzyme function like allostery or enzyme specificity (which is the purpose of this analysis) may involve more than two residues (Goodey and Benkovic, 2008), and in these situations it can be difficult to connect sets of residues using solely pairwise parameters (Figliuzzi et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Goodey and Benkovic, 2008 and Figliuzzi et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "4017d867-f57f-458b-a13e-ad2d65376b08",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C37",
+      "claim": "Two positions (152 and 212) in the positive portion of the hidden unit correspond to residues 684 and 742, which were experimentally demonstrated to be relevant for aminoacylated-PG production.",
+      "claim_type": "EXPLICIT",
+      "source": "Two positions in particular, 152 and 212, in the positive portion of the hidden unit correspond to residues 684 and 742, which were experimentally demonstrated to be relevant for aminoacylated-PG production by the Bacillus licheniformis and Pseudomonas aeruginosa cytosolic synthase domain variants (Hebecker et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Hebecker et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "650dbab7-a059-4841-a256-b39cb2f4194a",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C38",
+      "claim": "Full-length sequences included in the filtered dataset are enriched with sequences which contain the bacterial flippase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "We also note that the full-length sequences of the sequences included in our new dataset are enriched with sequences which contain the bacterial flippase domain (shown in red in Figure 4a), and the sequences we removed rarely contain the flippase domain (see Figure 4\u2014figure supplement 1 for domain analysis).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on domain analysis shown in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "72e304fa-fbd8-4de4-a110-08952dc134bd",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C39",
+      "claim": "E. dispar synthesizes a novel cationic lipid, lysyl-diglucosyl(Glc2)-diacylglycerol (Lys-Glc2-DAG).",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, our lipidomic analysis found that E. dispar synthesizes a novel cationic lipid, lysyl-diglucosyl(Glc2)-diacylglycerol (Lys-Glc2-DAG) (Figure 1, Figure 6a and b), as well as Lys-Glc-DAG and Lys-PG (Figure 6c, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on lipidomic analysis results shown in Figures 1, 6a, 6b, 6c, and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "03fd2228-494b-48ae-984b-d50c5625578c",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C40",
+      "claim": "E. dispar synthesizes Lys-Glc-DAG and Lys-PG.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, our lipidomic analysis found that E. dispar synthesizes a novel cationic lipid, lysyl-diglucosyl(Glc2)-diacylglycerol (Lys-Glc2-DAG) (Figure 1, Figure 6a and b), as well as Lys-Glc-DAG and Lys-PG (Figure 6c, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on lipidomic analysis results shown in Figure 6c and Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "ec67949d-c0cc-44bb-9a52-7947fdf3b4ac",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C41",
+      "claim": "The structural identification of Lys-Glc-2-DAG was supported by exact mass measurement ([M+H]+ observed at m/z 1047.730; calculated m/z 1047.731) and tandem MS.",
+      "claim_type": "EXPLICIT",
+      "source": "The structural identification of Lys-Glc-2-DAG was supported by exact mass measurement ([M+H]+ observed at m/z 1047.730; calculated m/z 1047.731) and tandem MS (Figure 6b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on mass spectrometry data shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "266336db-298b-4706-8302-da2543b0e7ae",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C42",
+      "claim": "Lys-Glc2-DAG is highly retentive on a silica-based normal phase column and elutes off the column at the very end of the gradient.",
+      "claim_type": "EXPLICIT",
+      "source": "Lys-Glc-2-DAG is unusually polar and charged for a lipid; chromatographically, Lys-Glc2-DAG is highly retentive on a silica-based normal phase column and elutes off the column at the very end of the gradient (Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on chromatographic data shown in Figure 6\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "4136afbf-8d0d-457a-a364-2d2aa6ce88ba",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C43",
+      "claim": "The use of an amino-based HPLC column led to much improved elution profiles for Lys-Glc2-DAG and other glyco- and lysine lipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of an amino-based HPLC column led to much improved elution profiles for Lys-Glc2-DAG and other glyco- and lysine lipids (Figure 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on chromatographic data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "766db883-b398-4deb-8c52-a02f13761764",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C44",
+      "claim": "All Enterococcus strains examined were found to synthesize Lys-PG, Lys-Glc-DAG, and Lys-Glc2-DAG at varying levels.",
+      "claim_type": "EXPLICIT",
+      "source": "All Enterococcus strains examined were found to synthesize Lys-PG, Lys-Glc-DAG, and Lys-Glc2-DAG at varying levels (Figure 7a and Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on lipidomic analysis results shown in Figure 7a and Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "9c61d709-7acb-465b-93e9-57dbdf8aadc3",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C45",
+      "claim": "MprF-dependent Lys-PG production by E. faecalis and E. faecium was previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "MprF-dependent Lys-PG production by E. faecalis and E. faecium was previously reported (Bao et al., 2012; Roy and Ibba, 2009), but cationic glycolipids production has not been previously reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bao et al., 2012 and Roy and Ibba, 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "5a1f38ec-4451-4a0e-9467-5bb693c672cd",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C46",
+      "claim": "Cationic glycolipids production by E. faecalis and E. faecium has not been previously reported.",
+      "claim_type": "EXPLICIT",
+      "source": "MprF-dependent Lys-PG production by E. faecalis and E. faecium was previously reported (Bao et al., 2012; Roy and Ibba, 2009), but cationic glycolipids production has not been previously reported.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a novel finding in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "c4915607-4e7b-4555-be77-6a111673b350",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C47",
+      "claim": "E. gallinarium EG2 and E. casseliflavus EC10 encode a single copy of mprF gene.",
+      "claim_type": "EXPLICIT",
+      "source": "E. gallinarium EG2 and E. casseliflavus EC10 encode a single copy of mprF gene, while the other enterococci we tested encode two distinct mprF genes (mprF1 and mprF2) (Bao et al., 2012; Roy and Ibba, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bao et al., 2012 and Roy and Ibba, 2009.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "c29ad20d-d6c7-4652-bf28-d869dd57720a",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C48",
+      "claim": "Other enterococci tested encode two distinct mprF genes (mprF1 and mprF2).",
+      "claim_type": "EXPLICIT",
+      "source": "E. gallinarium EG2 and E. casseliflavus EC10 encode a single copy of mprF gene, while the other enterococci we tested encode two distinct mprF genes (mprF1 and mprF2) (Bao et al., 2012; Roy and Ibba, 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bao et al., 2012 and Roy and Ibba, 2009.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "ed4e48ee-2908-4802-9c1a-56c4e8f8dc7f",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C49",
+      "claim": "Lys-PG, Lys-Glc-DAG, and Lys-Glc2-DAG were absent when the synthase domain of E. faecalis OG1RF_10760 mprF was disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "lipidomic analysis on an E. faecalis OG1RF mini-mariner (EfaMarTn) transposon mutant (Dale et al., 2018) with a transposon insertion within OG1RF_10760 mprF (referred to as mprF2 in previous studies [Bao et al., 2012]; OG1RF_10760::Tn) revealed that Lys-PG, Lys-Glc-DAG, and the newly identified Lys-Glc2-DAG were absent when the synthase domain of the gene was disrupted (Figure 7b, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on lipidomic analysis of a transposon mutant shown in Figure 7b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "d3877022-4da5-4e67-b2b6-4e0a9e64ed5e",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C50",
+      "claim": "E. faecalis mprF2 is necessary for the synthesis of the three Lys-lipids in E. faecalis.",
+      "claim_type": "EXPLICIT",
+      "source": "This led us to the conclusion that E. faecalis mprF2 is necessary for the synthesis of the three Lys-lipids in E. faecalis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the transposon mutant analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "800e9864-04d9-469f-8ab4-912e0af6e9e2",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C51",
+      "claim": "Expression of E. faecalis mprF2 from a plasmid (pOGMprF2) complemented the phenotype of OG1RF_10760::Tn.",
+      "claim_type": "EXPLICIT",
+      "source": "This phenotype was complemented by expression of E. faecalis mprF2 from a plasmid (pOGMprF2) (Figure 7d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on complementation experiment shown in Figure 7d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "c42013b0-c2e2-4771-bb97-69e736e84cdf",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C52",
+      "claim": "Expression of E. faecium mprF1 (EFTG_00601) (pEfMprF1) restored Lys-PG and Lys-Glc2-DAG synthesis to the E. faecalis OG1RF_10760::Tn strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, expression of E. faecium mprF1 (EFTG_00601) (pEfMprF1) restored Lys-PG and Lys-Glc2-DAG synthesis to the E. faecalis OG1RF_10760::Tn strain (Figure 7e), while E. faecium mprF2 (EFTG_02430) did not rescue Lys-lipid synthesis (Figure 7f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on complementation experiment shown in Figure 7e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "4f03de42-64e6-4b7b-b525-888e345b3ac4",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C53",
+      "claim": "E. faecium mprF2 (EFTG_02430) did not rescue Lys-lipid synthesis in E. faecalis OG1RF_10760::Tn strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, expression of E. faecium mprF1 (EFTG_00601) (pEfMprF1) restored Lys-PG and Lys-Glc2-DAG synthesis to the E. faecalis OG1RF_10760::Tn strain (Figure 7e), while E. faecium mprF2 (EFTG_02430) did not rescue Lys-lipid synthesis (Figure 7f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on complementation experiment shown in Figure 7f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "707f0f73-ed9e-461b-bd51-c586a3a20ad6",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C54",
+      "claim": "E. faecalis MprF2 (OG1RF_10760) and E. faecium MprF1 (EFTG_00601) act on both phospholipid and glycolipids substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that E. faecalis MprF2 (OG1RF_10760) and E. faecium MprF1 (EFTG_00601), like S. agalactiae MprF, act on both phospholipid and glycolipids substrates, additionally synthesizing the novel cationic glycolipid, Lys-Glc2-DAG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the complementation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "6618d96e-6022-464b-b7a5-2237074d1c38",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C55",
+      "claim": "E. faecalis MprF2 (OG1RF_10760) and E. faecium MprF1 (EFTG_00601) synthesize the novel cationic glycolipid, Lys-Glc2-DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that E. faecalis MprF2 (OG1RF_10760) and E. faecium MprF1 (EFTG_00601), like S. agalactiae MprF, act on both phospholipid and glycolipids substrates, additionally synthesizing the novel cationic glycolipid, Lys-Glc2-DAG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the complementation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "2fbb5f7a-1788-4f9c-bc11-bf37ed3cf9fe",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C56",
+      "claim": "All strains tested synthesize Lys-PG.",
+      "claim_type": "EXPLICIT",
+      "source": "All strains tested synthesize Lys-PG (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on lipidomic analysis results shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "7eb20dc0-c51f-4c96-b048-20eb2c6607a1",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C57",
+      "claim": "Only L. brevis and L. paracasei synthesized Lys-Glc2-DAG among the Lactobacillus strains tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Only L. brevis and L. paracasei synthesized Lys-Glc2-DAG, L. paracasei synthesized low levels of Lys-Glc2-DAG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on lipidomic analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "079b597a-f59a-4749-89aa-5651105ef293",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C58",
+      "claim": "L. paracasei synthesized low levels of Lys-Glc2-DAG.",
+      "claim_type": "EXPLICIT",
+      "source": "Only L. brevis and L. paracasei synthesized Lys-Glc2-DAG, L. paracasei synthesized low levels of Lys-Glc2-DAG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on lipidomic analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "9e27a653-f89e-4bda-9aa8-a9401c32d87b",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C59",
+      "claim": "Exiguobacterium acetylicum UTDF19-27C was found to synthesize only Lys-PG.",
+      "claim_type": "EXPLICIT",
+      "source": "An additional quadrant one (Q1) strain Exiguobacterium acetylicum UTDF19-27C was analyzed by lipidomics. It was found to synthesize only Lys-PG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on lipidomic analysis results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "43f5031e-45cb-4089-a135-83e90cd4f9e9",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C60",
+      "claim": "Staphylococcus aureus RN4220 and Bacillus subtilis 168 synthesize only Lys-PG.",
+      "claim_type": "EXPLICIT",
+      "source": "This MprF falls near Staphylococcus aureus RN4220 and Bacillus subtilis 168 in our plot, both of which synthesize only Lys-PG (Peschel et al., 2001; Slavetinsky et al., 2012) (and experimentally confirmed in this study).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Peschel et al., 2001 and Slavetinsky et al., 2012, and experimentally confirmed in this study.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "51ef6e2c-65cf-49ec-87cc-e0b44c81f410",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C61",
+      "claim": "Sequences which plot with positive activations in hidden unit 2 are more likely to have GlcN-DAG as a substrate (8/9).",
+      "claim_type": "EXPLICIT",
+      "source": "With this plot, we can see that sequences which plot with positive activations in hidden unit 2 are more likely to have GlcN-DAG as a substrate (8/9), and sequences with negative values predominantly use PG (7/11), with a Fisher's exact test p-value of 0.028 (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the experimental results with a Fisher's exact test p-value of 0.028.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "b1b08f1f-6159-46b1-87f1-d862616e19d0",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C62",
+      "claim": "Sequences with negative values in hidden unit 2 predominantly use PG (7/11).",
+      "claim_type": "EXPLICIT",
+      "source": "With this plot, we can see that sequences which plot with positive activations in hidden unit 2 are more likely to have GlcN-DAG as a substrate (8/9), and sequences with negative values predominantly use PG (7/11), with a Fisher's exact test p-value of 0.028 (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the experimental results with a Fisher's exact test p-value of 0.028.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "026d65d8-3f34-48c9-8945-d8ec25a46da4",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C63",
+      "claim": "Hidden unit 2 is correlated with GlcN-DAG specificity with a Fisher's exact test p-value of 0.028.",
+      "claim_type": "EXPLICIT",
+      "source": "With this plot, we can see that sequences which plot with positive activations in hidden unit 2 are more likely to have GlcN-DAG as a substrate (8/9), and sequences with negative values predominantly use PG (7/11), with a Fisher's exact test p-value of 0.028 (Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "d04a6d02-54c4-4bb4-9775-35402731c111",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C64",
+      "claim": "Hidden unit 1 is not correlated with GlcN-DAG specificity, with a Fisher's exact p-value of 0.67.",
+      "claim_type": "EXPLICIT",
+      "source": "Hidden unit 1, however, is not correlated with GlcN-DAG specificity, with a Fisher's exact p-value of 0.67.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical analysis of the experimental results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "ddd21024-61ca-49d5-a997-3f4a42df2f31",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C65",
+      "claim": "Hidden unit 2, and thus the high magnitude sequence positions identified by it, are correlated with GlcN-DAG specificity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we conclude that hidden unit 2, and thus the high magnitude sequence positions identified by it, are correlated with GlcN-DAG specificity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the statistical analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "6808488d-21ea-4c50-a007-97a009fb753b",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C66",
+      "claim": "BLASTp did not identify other streptococcal MprFs capable of lysine addition to both glycolipid and phospholipid substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, although highly similar to S. agalactiae MprF, this method did not identify other streptococcal MprFs capable of lysine addition to both glycolipid and phospholipid substrates (generating Lys-Glc-DAG and Lys-PG) nor did it lead to the identification of a novel cationic glycolipid found in Enterococcus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the BLASTp method as discussed by the authors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "9ec8d161-2d94-4362-bd47-5e4cb1a50d8b",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C67",
+      "claim": "BLASTp did not lead to the identification of a novel cationic glycolipid found in Enterococcus.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, although highly similar to S. agalactiae MprF, this method did not identify other streptococcal MprFs capable of lysine addition to both glycolipid and phospholipid substrates (generating Lys-Glc-DAG and Lys-PG) nor did it lead to the identification of a novel cationic glycolipid found in Enterococcus.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation of the BLASTp method as discussed by the authors.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "44b0e23d-4a27-44e8-b107-32bf5506d38a",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C68",
+      "claim": "Methods which model the strength of amino acid coevolution in sequence sets can find important signals which in the sequence logo might appear to be negligible.",
+      "claim_type": "EXPLICIT",
+      "source": "When amino acids must interact to produce a specific function, yet the exact identity of those amino acids is not a requirement, methods which model the strength of amino acid coevolution in sequence sets can find important signals which in the sequence logo might appear to be negligible.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a rationale for using the RBM method.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "e367b321-80b6-49f5-9b01-479696fb15e3",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C69",
+      "claim": "The two hidden units which formed the basis of the specificity analysis were not found in models trained on the Pfam dataset when it was initially pulled from Pfam.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it allowed us to filter the sequence data using hidden units (Figure 4); the two hidden units which formed the basis of our specificity analysis were not found in models trained on the Pfam dataset when it was initially pulled from Pfam, and this was potentially due to the presence of sequences without relevant catalytic function adding noise to the dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about the model training process.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "5fc97ae8-458c-4e50-add9-d094c6d6ca93",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C70",
+      "claim": "The presence of sequences without relevant catalytic function potentially added noise to the initial Pfam dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "First, it allowed us to filter the sequence data using hidden units (Figure 4); the two hidden units which formed the basis of our specificity analysis were not found in models trained on the Pfam dataset when it was initially pulled from Pfam, and this was potentially due to the presence of sequences without relevant catalytic function adding noise to the dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about why the hidden units were not found in the initial model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "fac0df96-63a0-4bec-b9c6-acb2f166a844",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C71",
+      "claim": "The E. faecium allele EGTF_00601 has sequence features placing it in quadrant one yet has GlcN-DAG activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there are notable exceptions such as the E. faecium allele EGTF_00601, which has sequence features placing it in quadrant one yet has GlcN-DAG activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation about an exception to the general pattern.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "c51fc255-1df5-4bc0-a087-1324af5127b8",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C72",
+      "claim": "Identifying the exact sequence determinants of GlcN-DAG specificity remains to be fully elucidated.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, identifying the exact sequence determinants of GlcN-DAG specificity remains to be fully elucidated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the current study.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "2bb3205e-376d-42bf-9400-775484c86cea",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C73",
+      "claim": "Important residue interactions determining specificity could occur in the N-terminal flippase domain and the non-cytosolic region of the C-terminal domain.",
+      "claim_type": "EXPLICIT",
+      "source": "One explanation could be our exclusion of the N-terminal flippase domain and the non-cytosolic region of the C-terminal domain in the RBM analysis, where important residue interactions determining specificity could occur and is under further investigation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation about potential explanations for the incomplete understanding of specificity determinants.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "ae7b5078-15f5-437e-8954-4d36ddcef9d5",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C74",
+      "claim": "Lipids produced may vary during the growth phase of the organisms, the media they are grown in, and whether a membrane stressor is present.",
+      "claim_type": "EXPLICIT",
+      "source": "When using native organisms, lipids produced may vary during the growth phase of the organisms, the media they are grown in, and whether a membrane stressor is present (i.e. inducible production of specific lipids).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of experimental challenges.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "4361d490-44a5-44a7-8a5f-3f512788a011",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C75",
+      "claim": "The use of a heterologous host for expression of mprF alleles may result in not identifying novel lipids that would be found in their native bacteria since the appropriate lipid substrates may not be present.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of a heterologous host for expression of mprF alleles is a method of standardization, but may result in not identifying novel lipids that would be found in their native bacteria since the appropriate lipid substrates may not be present (Joyce et al., 2019; Joyce et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Joyce et al., 2019 and Joyce et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "6446dc88-b442-4166-9978-2802eaefcf15",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C76",
+      "claim": "The residues identified through hidden units can be thought of as templates for mutational exploration, greatly reducing the search space for assessing which residues are critical for specificity determination.",
+      "claim_type": "EXPLICIT",
+      "source": "Concretely, the residues identified through hidden units can be thought of as templates for mutational exploration, greatly reducing the search space for assessing which residues are critical for specificity determination.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of potential applications of the RBM method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "93379b66-15a7-48da-9d05-c5482088e835",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C77",
+      "claim": "Enzymes like MprF that produce lipids of modified charge have potential applications in biotechnology and therapeutics.",
+      "claim_type": "EXPLICIT",
+      "source": "Enzymes like MprF that produce lipids of modified charge have potential applications in biotechnology and therapeutics, where the design of lipid nanoparticles with different charge and chemical properties of the head group have important physiological implications (Carrasco et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Carrasco et al., 2021.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "5e40e105-ec0a-4b90-80fa-342b610ea0f1",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C78",
+      "claim": "The identification of Lys-Glc2-DAG opens new research avenues, particularly in the fields of antibiotic resistance and host-pathogen interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the identification of Lys-Glc2-DAG opens new research avenues, particularly in the fields of antibiotic resistance and host-pathogen interactions, wherein lipid modification and cationic lipids play key roles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a discussion of the implications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "d1c6b287-a435-454b-bb5d-cb629a60138f",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "claim_id": "C79",
+      "claim": "It would be relevant to investigate whether Lys-Glc2-DAG plays a role in enterococcal resistance to daptomycin.",
+      "claim_type": "EXPLICIT",
+      "source": "With respect to human health, it would be relevant to investigate whether Lys-Glc2-DAG plays a role in enterococcal resistance to the last-line membrane-active antibiotic, daptomycin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion for future research.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e8bd5e57-d23a-4b83-9817-a7c74cbac486",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "S. agalactiae MprF synthesizes both Lys-PG from anionic PG and the novel cationic lipid Lys-Glc-DAG from neutral glycolipid Glc-DAG. This was demonstrated through deletion mutant analysis showing loss of both lipids in mprF deletion mutants, and heterologous expression in S. mitis conferring synthesis of both lipids. This represents the first demonstration of MprF adding lysine to a neutral glycolipid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C3, C14, C15, and C16 collectively establish this novel substrate specificity through genetic deletion, complementation, and heterologous expression experiments with appropriate controls (C23). The lipidomic data in Figure 2 provides direct analytical evidence for the synthesis of both lipid products.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "fe229965-7a01-401a-ba9b-5d4899c5d1db",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "BLASTp analysis identified four streptococcal MprF enzymes with varying amino acid identity to S. agalactiae MprF (43-62%). Heterologous expression in S. mitis revealed that MprFs with >60% identity (S. sobrinus, S. downei, S. ferus) synthesize only Lys-Glc-DAG, while S. salivarius MprF (43% identity) synthesizes only Lys-PG. Only S. agalactiae MprF synthesizes both lipids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are supported by BLASTp sequence analysis (C17-C20) and lipidomic data from heterologous expression experiments (C23-C30, Figure 2). The generalization about sequence identity correlating with substrate specificity (C31-C32) is appropriately qualified and supported by the experimental data, though the sample size is limited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "44ce2248-fc26-48da-85a8-8d5df582343a",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "A restricted Boltzmann machine (RBM) approach was developed to identify higher-order sequence patterns in MprF that determine substrate specificity. The RBM identified hidden units containing residues previously shown to be functionally important (positions 684 and 742), and filtering the dataset using a catalytic hidden unit enriched for sequences with the bacterial flippase domain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The RBM methodology is well-justified theoretically (C33-C36, C68) and validated by recovering known functionally important residues (C37). The dataset filtering approach (C38, C69, C70) improved model performance, though the speculation about noise (C70) is appropriately qualified. The approach represents a sound application of machine learning to protein sequence analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "7aee287c-13b3-4267-9dba-51c04591e114",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "E. dispar, identified through RBM analysis, synthesizes a novel cationic lipid Lys-Glc2-DAG in addition to Lys-Glc-DAG and Lys-PG. The structure was confirmed by exact mass measurement (observed m/z 1047.730 vs. calculated 1047.731) and tandem MS. An amino-based HPLC column provided improved separation of this highly polar lipid.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The discovery of Lys-Glc2-DAG is well-supported by multiple lines of analytical evidence including mass spectrometry (C39, C41, Figure 6a-b), chromatographic behavior (C42, C43, Figure 6c), and structural characterization. The RBM-guided selection of E. dispar demonstrates the predictive power of the computational approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "All Enterococcus strains examined synthesize Lys-PG, Lys-Glc-DAG, and Lys-Glc2-DAG at varying levels. Genetic analysis using an E. faecalis mprF2 transposon mutant demonstrated that mprF2 is necessary for synthesis of all three Lys-lipids. Complementation with E. faecalis mprF2 or E. faecium mprF1 restored synthesis, while E. faecium mprF2 did not.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The claims are supported by comprehensive lipidomic analysis across multiple Enterococcus species (C44, Figure 7a, Table 2) and rigorous genetic experiments including deletion (C49), complementation (C51), and cross-species complementation (C52-C53, Figure 7b-f). The conclusion that specific MprF variants synthesize Lys-Glc2-DAG (C54-C55) is well-supported by the genetic data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "95dd802f-e4b3-490d-80f7-05b2a1009130",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Analysis of additional bacterial strains across quadrants of the RBM hidden unit plot revealed that hidden unit 2 is statistically correlated with GlcN-DAG substrate specificity (Fisher's exact test p=0.028). Sequences with positive activations in hidden unit 2 are more likely to have GlcN-DAG activity (8/9), while negative values predominantly correlate with PG-only activity (7/11). Hidden unit 1 shows no correlation (p=0.67).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The statistical correlation is supported by experimental lipidomic data from multiple bacterial species (C56-C60, Table 2) and appropriate statistical testing (C61-C65). The Fisher's exact test p-value of 0.028 provides statistical significance, though the sample size is modest (N=20 total). The specificity of hidden unit 2 versus hidden unit 1 strengthens the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "7e9030b9-6023-49fc-893a-d2aa8cb797b8",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "BLASTp analysis, while identifying streptococcal MprFs with high sequence similarity to S. agalactiae MprF, did not identify other streptococcal MprFs capable of modifying both glycolipid and phospholipid substrates, nor did it lead to discovery of the novel Lys-Glc2-DAG lipid found in Enterococcus.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This limitation of the BLASTp approach is demonstrated by the experimental results showing that high sequence identity alone (>60%) does not predict dual substrate specificity (C31-C32), and that the RBM approach was necessary to identify E. dispar and the novel Lys-Glc2-DAG lipid (C39). This highlights the advantage of the RBM method over traditional sequence similarity approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "34bed437-5008-4ab7-9d12-9ca6426923ce",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The E. faecium allele EFTG_00601 represents an exception to the RBM classification, having sequence features placing it in quadrant one yet exhibiting GlcN-DAG activity. The exact sequence determinants of GlcN-DAG specificity remain incompletely understood, potentially due to exclusion of the N-terminal flippase domain and non-cytosolic regions from the RBM analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The exception is documented experimentally (C71, C52), and the authors appropriately acknowledge the limitation (C72) while providing a plausible explanation (C73). This honest assessment of the model's limitations and potential explanations demonstrates scientific rigor, though the speculation about excluded domains (C73) requires future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "cbc1782e-2f81-4415-ad7e-dcdf64df7691",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study acknowledges experimental challenges including variability in native lipid production based on growth conditions and potential limitations of heterologous expression systems. The RBM-identified residues can serve as templates for future mutational studies to identify critical specificity determinants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are appropriate discussions of experimental limitations (C74-C75) supported by citations and logical reasoning. The proposed application for mutational studies (C76) is a reasonable extension of the work, though it remains speculative until implemented. These represent honest assessments of methodological constraints.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "a89490c4-2c6e-4ee2-aeba-8def3596685d",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Background claims establish that MprF modifies membrane lipids through aminoacyl transfer from charged tRNAs to lipid head groups, that bacteria commonly synthesize negatively charged or neutral lipids, and that amino acid modification of lipids confers resistance to cationic antimicrobials. MprF consists of N-terminal flippase and C-terminal synthase domains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are well-supported by appropriate citations to the literature (C5-C13) and represent established knowledge in the field. They provide necessary context for understanding the significance of the novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "e541fb5e-b824-411e-a433-b89651d7a8bf",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "S. mitis does not natively encode mprF but synthesizes lipids (Glc-DAG and PG) that are substrates for S. agalactiae MprF, making it an appropriate heterologous host for expressing streptococcal MprFs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This methodological choice is well-justified by citations (C21-C22) and is critical for the experimental design. The absence of native mprF provides a clean background for testing heterologous MprF activity, as demonstrated by the negative control (C23).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "3c83d69b-b4bc-4da6-8e60-71989f43ecf6",
+      "content_id": "58e559d5-7d60-4ca3-a10c-a57381779870",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors discuss potential applications of MprF enzymes in biotechnology and therapeutics for designing lipid nanoparticles, and suggest that the discovery of Lys-Glc2-DAG opens research avenues in antibiotic resistance and host-pathogen interactions, including potential investigation of its role in daptomycin resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are speculative claims about future applications and research directions (C77-C79) that are appropriately qualified but not experimentally tested in this study. While the speculation is reasonable given the findings, these represent hypotheses for future work rather than demonstrated results.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "3009233e-a33c-4b69-8bb6-f46739438502",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "S. agalactiae MprF synthesizes both Lys-PG from anionic PG and the novel cationic lipid Lys-Glc-DAG from neutral glycolipid Glc-DAG. This was demonstrated through deletion mutant analysis showing loss of both lipids in \u0394mprF strains and heterologous expression in S. mitis conferring synthesis of both lipids.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers accepted this finding without challenge. Reviewer 2 explicitly states 'After the previous identification that the Streptococcus agalactiae MprF enzyme can synthesize also lysyl-glucosyl-diacylglycerol (Lys-Glc-DAG), besides the already known lysyl-phosphatidylglycerol (Lys-PG)' as established background. The editor notes this as part of 'important findings' with 'compelling' evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "f6590a52-f423-47ac-bde8-1dc802f1b06e",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Heterologous expression of streptococcal MprF enzymes in S. mitis revealed differential substrate specificity: S. agalactiae MprF produces both Lys-PG and Lys-Glc-DAG; S. salivarius MprF produces only Lys-PG; S. ferus, S. sobrinus, and S. downei MprF produce only Lys-Glc-DAG. Enzymes with >60% amino acid identity to S. agalactiae MprF generally conferred Lys-Glc-DAG synthesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these experimental findings as valid. Reviewer 2 states 'The experimental data could largely confirm this categorization' from the RBM approach. Reviewer 1 describes the work as 'compelling combination of advanced statistical analysis of sequences and experimental determination of MprF function.' The lipidomic data in Figure 2 is not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "c240637e-6b7b-42a8-8c7d-362037ef267d",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "A restricted Boltzmann machine-guided approach led to the discovery of a novel cationic lipid, lysyl-diglucosyl-diacylglycerol (Lys-Glc2-DAG), synthesized by Enterococcus species from the substrate diglucosyl-diacylglycerol (Glc2-DAG). All Enterococcus strains examined synthesize Lys-PG, Lys-Glc-DAG, and Lys-Glc2-DAG at varying levels, with cationic glycolipid production not previously reported for these species.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This discovery is highlighted by all reviewers as a major contribution. Reviewer 1 states 'One notable outcome is (as stated in the title) the identification of a novel substrate/product.' The editor describes findings as 'important' with 'compelling' evidence validated by 'mass spectrometry-based lipid analysis experiments.' Structural identification through exact mass and tandem MS (C41) is not challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "c622dbb3-6ca7-402c-8107-45b394596ebc",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "E. faecalis mprF2 (OG1RF_10760) is necessary for synthesis of all three Lys-lipids (Lys-PG, Lys-Glc-DAG, and Lys-Glc2-DAG) in E. faecalis, as demonstrated by transposon mutant analysis showing loss of all three lipids and complementation restoring synthesis. E. faecium mprF1 (EFTG_00601) can also restore Lys-PG and Lys-Glc2-DAG synthesis, while E. faecium mprF2 cannot rescue lipid synthesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the genetic evidence linking MprF to Lys-Glc2-DAG synthesis. Reviewer 2 notes 'The computational approach is validated by lab experiments in which LC-MS analysis reveals the specific activity of the lipid synthesizing enzymes.' The complementation experiments (Figure 7) demonstrating functional activity are not questioned by any reviewer.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "437f0ca2-d84a-4456-88ea-65c1fc768f93",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Hidden unit 2 from the RBM analysis is statistically correlated with GlcN-DAG (glycolipid) substrate specificity (Fisher's exact test p=0.028), with sequences having positive activations more likely to use GlcN-DAG substrates (8/9) and negative values predominantly using PG (7/11). Hidden unit 1 shows no correlation with GlcN-DAG specificity (p=0.67).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the RBM approach and its statistical validation. Reviewer 2 states 'The RBM approach enables the successful, although not perfect, classification and categorization of MprF activity' and 'The experimental data could largely confirm this categorization.' The editor describes the application of machine learning methods as 'careful' with 'compelling' evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "a9262335-fffa-4894-8014-b118b00d967d",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The RBM analysis identified key sequence positions including residues 684 and 742 (positions 152 and 212) that were previously experimentally demonstrated to be relevant for aminoacylated-PG production. Dataset filtering using hidden units was necessary, as the relevant hidden units were not found in models trained on the initial Pfam dataset, potentially due to noise from sequences without relevant catalytic function.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the methodological approach and validation. Reviewer 1 describes it as 'careful application of machine learning methods' and notes the work will be valuable for 'researchers interested in using advanced methods to connect sequence to lipid synthesis functions.' The connection to previously validated residues (C37) provides experimental support that reviewers did not challenge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "7bd6856d-b296-45f2-a8b6-a5e06c83ed2d",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "BLASTp analysis based on sequence similarity to S. agalactiae MprF did not identify other streptococcal MprFs capable of lysine addition to both glycolipid and phospholipid substrates, nor did it lead to identification of the novel cationic glycolipid found in Enterococcus, demonstrating limitations of sequence similarity-based approaches.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This limitation of traditional methods is implicitly accepted by reviewers as it motivates the RBM approach. Reviewer 2 notes 'The RBM approach enables the successful, although not perfect, classification' suggesting acceptance that alternative methods were needed. The contrast between BLASTp and RBM success supports the methodological innovation reviewers praised.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "da5e1e91-b217-449b-a01a-4fbc3aaee6dc",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The E. faecium allele EFTG_00601 represents a notable exception with sequence features placing it in quadrant one yet having GlcN-DAG activity, indicating that exact sequence determinants of GlcN-DAG specificity remain incompletely elucidated. Important residue interactions determining specificity could occur in excluded regions (N-terminal flippase domain and non-cytosolic C-terminal region).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 explicitly notes this limitation: 'The experimental data could largely confirm this categorization, although a stronger connection between synthesized lipids and enzyme activity would have further strengthened the observations.' The authors acknowledge incomplete understanding (C72), and reviewers accepted this as a limitation rather than a fatal flaw, with Reviewer 1 stating the RBM approach is 'successful, although not perfect.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "d2c9cae7-72ea-42b3-ad69-dbae2a68a018",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Survey of lipid synthesis across bacterial species showed all strains tested synthesize Lys-PG. Among Lactobacillus strains, only L. brevis and L. paracasei synthesized Lys-Glc2-DAG (with L. paracasei at low levels). Control organisms S. aureus RN4220, B. subtilis 168, and E. acetylicum synthesize only Lys-PG.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raises a significant concern about interpretation: 'In a few cases lipid synthesis activity is completely absent. Due to the lack of protein expression data, it is unclear if this is caused by enzyme inactivity or the overall absence of enzyme.' This uncertainty about negative results affects confidence in the survey data, though positive findings (lipid detection) are not questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "f8936903-1df9-49a5-813c-5f39f7acdb92",
+      "content_id": "bb7d6a3d-910c-464b-a98d-8a49f04b5a93",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Experimental approach considerations: lipid production in native organisms may vary with growth phase, media, and membrane stressors. Use of heterologous host (S. mitis) for mprF expression standardizes conditions but may miss novel lipids found in native bacteria if appropriate substrates are absent.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 implicitly acknowledges these experimental challenges when noting 'Due to the lack of protein expression data, it is unclear if this is caused by enzyme inactivity or the overall absence of enzyme.' The reviewers accept the heterologous expression approach as valid despite its limitations, with no requests for additional native organism studies.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ebc248f5-fb67-45ae-b847-efbf9c0cea89",
+      "result_id": "e8bd5e57-d23a-4b83-9817-a7c74cbac486"
+    },
+    {
+      "claim_id": "37d017bf-edd1-4581-baf0-db7f20c2ca9f",
+      "result_id": "e8bd5e57-d23a-4b83-9817-a7c74cbac486"
+    },
+    {
+      "claim_id": "46da49f0-ca89-47f7-8ca8-7cb9f1eff1e2",
+      "result_id": "e8bd5e57-d23a-4b83-9817-a7c74cbac486"
+    },
+    {
+      "claim_id": "bd81815c-c5e0-46a6-bcb6-fcacfa8e9d90",
+      "result_id": "e8bd5e57-d23a-4b83-9817-a7c74cbac486"
+    },
+    {
+      "claim_id": "70b42504-1f1e-48fe-855e-9e21bee9aeed",
+      "result_id": "e8bd5e57-d23a-4b83-9817-a7c74cbac486"
+    },
+    {
+      "claim_id": "da0c6ac8-189f-4f19-957b-fa17f452ba27",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "c7071d5a-1029-4b6a-9670-16feb6dca008",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "52585612-7037-481f-af27-6d938ce324c1",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "1fa19759-7e3e-42f9-8ea8-45766791d943",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "9ceff5d7-0566-460a-b4af-a88214aff456",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "0508f725-de68-4c08-bf0b-54aa003cc4fd",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "b58b9f24-3dc7-4937-ba35-3601c59567e6",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "d5623135-2263-4acf-94fe-11eca88ad5f0",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "651a83bc-4e68-4046-92e3-87dba6b1b0aa",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "9fbbe003-2fb6-4608-8caa-7ca97a806258",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "5864854b-30ad-44e9-9885-76f15fa8e428",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "a399796e-03dd-415a-a43a-a4d5aa6801a3",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "f2da5d0e-d2cd-40ab-8c60-594cf432ddb4",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "d161963f-cac3-4020-abbe-e8dc04b93f02",
+      "result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db"
+    },
+    {
+      "claim_id": "535d22f0-b2e0-48e9-b21e-62f255856cab",
+      "result_id": "44ce2248-fc26-48da-85a8-8d5df582343a"
+    },
+    {
+      "claim_id": "985a08b4-c35b-4071-8df7-8e1e32676a73",
+      "result_id": "44ce2248-fc26-48da-85a8-8d5df582343a"
+    },
+    {
+      "claim_id": "2c58e0ec-a8b0-4fc9-a2ec-451ed9eca75a",
+      "result_id": "44ce2248-fc26-48da-85a8-8d5df582343a"
+    },
+    {
+      "claim_id": "292b0557-5c73-4631-82f6-3dd54e3368f4",
+      "result_id": "44ce2248-fc26-48da-85a8-8d5df582343a"
+    },
+    {
+      "claim_id": "4017d867-f57f-458b-a13e-ad2d65376b08",
+      "result_id": "44ce2248-fc26-48da-85a8-8d5df582343a"
+    },
+    {
+      "claim_id": "650dbab7-a059-4841-a256-b39cb2f4194a",
+      "result_id": "44ce2248-fc26-48da-85a8-8d5df582343a"
+    },
+    {
+      "claim_id": "44b0e23d-4a27-44e8-b107-32bf5506d38a",
+      "result_id": "44ce2248-fc26-48da-85a8-8d5df582343a"
+    },
+    {
+      "claim_id": "e367b321-80b6-49f5-9b01-479696fb15e3",
+      "result_id": "44ce2248-fc26-48da-85a8-8d5df582343a"
+    },
+    {
+      "claim_id": "5fc97ae8-458c-4e50-add9-d094c6d6ca93",
+      "result_id": "44ce2248-fc26-48da-85a8-8d5df582343a"
+    },
+    {
+      "claim_id": "72e304fa-fbd8-4de4-a110-08952dc134bd",
+      "result_id": "7aee287c-13b3-4267-9dba-51c04591e114"
+    },
+    {
+      "claim_id": "03fd2228-494b-48ae-984b-d50c5625578c",
+      "result_id": "7aee287c-13b3-4267-9dba-51c04591e114"
+    },
+    {
+      "claim_id": "ec67949d-c0cc-44bb-9a52-7947fdf3b4ac",
+      "result_id": "7aee287c-13b3-4267-9dba-51c04591e114"
+    },
+    {
+      "claim_id": "266336db-298b-4706-8302-da2543b0e7ae",
+      "result_id": "7aee287c-13b3-4267-9dba-51c04591e114"
+    },
+    {
+      "claim_id": "4136afbf-8d0d-457a-a364-2d2aa6ce88ba",
+      "result_id": "7aee287c-13b3-4267-9dba-51c04591e114"
+    },
+    {
+      "claim_id": "766db883-b398-4deb-8c52-a02f13761764",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "9c61d709-7acb-465b-93e9-57dbdf8aadc3",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "5a1f38ec-4451-4a0e-9467-5bb693c672cd",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "c4915607-4e7b-4555-be77-6a111673b350",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "c29ad20d-d6c7-4652-bf28-d869dd57720a",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "ed4e48ee-2908-4802-9c1a-56c4e8f8dc7f",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "d3877022-4da5-4e67-b2b6-4e0a9e64ed5e",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "800e9864-04d9-469f-8ab4-912e0af6e9e2",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "c42013b0-c2e2-4771-bb97-69e736e84cdf",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "4f03de42-64e6-4b7b-b525-888e345b3ac4",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "707f0f73-ed9e-461b-bd51-c586a3a20ad6",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "6618d96e-6022-464b-b7a5-2237074d1c38",
+      "result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c"
+    },
+    {
+      "claim_id": "2fbb5f7a-1788-4f9c-bc11-bf37ed3cf9fe",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "7eb20dc0-c51f-4c96-b048-20eb2c6607a1",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "079b597a-f59a-4749-89aa-5651105ef293",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "9e27a653-f89e-4bda-9aa8-a9401c32d87b",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "43f5031e-45cb-4089-a135-83e90cd4f9e9",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "51ef6e2c-65cf-49ec-87cc-e0b44c81f410",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "b1b08f1f-6159-46b1-87f1-d862616e19d0",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "026d65d8-3f34-48c9-8945-d8ec25a46da4",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "d04a6d02-54c4-4bb4-9775-35402731c111",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "ddd21024-61ca-49d5-a997-3f4a42df2f31",
+      "result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130"
+    },
+    {
+      "claim_id": "6808488d-21ea-4c50-a007-97a009fb753b",
+      "result_id": "7e9030b9-6023-49fc-893a-d2aa8cb797b8"
+    },
+    {
+      "claim_id": "9ec8d161-2d94-4362-bd47-5e4cb1a50d8b",
+      "result_id": "7e9030b9-6023-49fc-893a-d2aa8cb797b8"
+    },
+    {
+      "claim_id": "fac0df96-63a0-4bec-b9c6-acb2f166a844",
+      "result_id": "34bed437-5008-4ab7-9d12-9ca6426923ce"
+    },
+    {
+      "claim_id": "c51fc255-1df5-4bc0-a087-1324af5127b8",
+      "result_id": "34bed437-5008-4ab7-9d12-9ca6426923ce"
+    },
+    {
+      "claim_id": "2bb3205e-376d-42bf-9400-775484c86cea",
+      "result_id": "34bed437-5008-4ab7-9d12-9ca6426923ce"
+    },
+    {
+      "claim_id": "ae7b5078-15f5-437e-8954-4d36ddcef9d5",
+      "result_id": "cbc1782e-2f81-4415-ad7e-dcdf64df7691"
+    },
+    {
+      "claim_id": "4361d490-44a5-44a7-8a5f-3f512788a011",
+      "result_id": "cbc1782e-2f81-4415-ad7e-dcdf64df7691"
+    },
+    {
+      "claim_id": "6446dc88-b442-4166-9978-2802eaefcf15",
+      "result_id": "cbc1782e-2f81-4415-ad7e-dcdf64df7691"
+    },
+    {
+      "claim_id": "df5c529b-cd12-4120-85c6-fa996373452a",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "69e606f8-3670-422f-a6c0-6930ccf207dc",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "82200e88-0f09-4d84-ae17-188cb657ef78",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "8bae4a9a-3799-4b88-a58b-ce953046b40e",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "83c0d8fd-f036-444a-a9a5-f54dd9f5d778",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "f3de0e54-d562-410d-a704-2250199cde21",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "b20d4601-7b10-4c5a-9d6f-e5d1f662ee99",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "3ebd220c-35d3-42c3-8584-65440c801f3e",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "9626f368-007e-489f-b0aa-8146eed9da2a",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "9076c220-51dc-4c53-a655-b0d122837cc4",
+      "result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d"
+    },
+    {
+      "claim_id": "22eb7b8f-cf9e-449c-9aba-153ae330f569",
+      "result_id": "e541fb5e-b824-411e-a433-b89651d7a8bf"
+    },
+    {
+      "claim_id": "1ec67392-f16e-4b29-988f-358ccd0fc277",
+      "result_id": "e541fb5e-b824-411e-a433-b89651d7a8bf"
+    },
+    {
+      "claim_id": "93379b66-15a7-48da-9d05-c5482088e835",
+      "result_id": "3c83d69b-b4bc-4da6-8e60-71989f43ecf6"
+    },
+    {
+      "claim_id": "5e40e105-ec0a-4b90-80fa-342b610ea0f1",
+      "result_id": "3c83d69b-b4bc-4da6-8e60-71989f43ecf6"
+    },
+    {
+      "claim_id": "d1c6b287-a435-454b-bb5d-cb629a60138f",
+      "result_id": "3c83d69b-b4bc-4da6-8e60-71989f43ecf6"
+    },
+    {
+      "claim_id": "ebc248f5-fb67-45ae-b847-efbf9c0cea89",
+      "result_id": "3009233e-a33c-4b69-8bb6-f46739438502"
+    },
+    {
+      "claim_id": "37d017bf-edd1-4581-baf0-db7f20c2ca9f",
+      "result_id": "3009233e-a33c-4b69-8bb6-f46739438502"
+    },
+    {
+      "claim_id": "46da49f0-ca89-47f7-8ca8-7cb9f1eff1e2",
+      "result_id": "3009233e-a33c-4b69-8bb6-f46739438502"
+    },
+    {
+      "claim_id": "bd81815c-c5e0-46a6-bcb6-fcacfa8e9d90",
+      "result_id": "3009233e-a33c-4b69-8bb6-f46739438502"
+    },
+    {
+      "claim_id": "70b42504-1f1e-48fe-855e-9e21bee9aeed",
+      "result_id": "3009233e-a33c-4b69-8bb6-f46739438502"
+    },
+    {
+      "claim_id": "0508f725-de68-4c08-bf0b-54aa003cc4fd",
+      "result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e"
+    },
+    {
+      "claim_id": "b58b9f24-3dc7-4937-ba35-3601c59567e6",
+      "result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e"
+    },
+    {
+      "claim_id": "d5623135-2263-4acf-94fe-11eca88ad5f0",
+      "result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e"
+    },
+    {
+      "claim_id": "651a83bc-4e68-4046-92e3-87dba6b1b0aa",
+      "result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e"
+    },
+    {
+      "claim_id": "9fbbe003-2fb6-4608-8caa-7ca97a806258",
+      "result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e"
+    },
+    {
+      "claim_id": "5864854b-30ad-44e9-9885-76f15fa8e428",
+      "result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e"
+    },
+    {
+      "claim_id": "a399796e-03dd-415a-a43a-a4d5aa6801a3",
+      "result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e"
+    },
+    {
+      "claim_id": "f2da5d0e-d2cd-40ab-8c60-594cf432ddb4",
+      "result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e"
+    },
+    {
+      "claim_id": "d161963f-cac3-4020-abbe-e8dc04b93f02",
+      "result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e"
+    },
+    {
+      "claim_id": "6f7ef924-c649-4f8d-8794-38c10018305c",
+      "result_id": "c240637e-6b7b-42a8-8c7d-362037ef267d"
+    },
+    {
+      "claim_id": "72e304fa-fbd8-4de4-a110-08952dc134bd",
+      "result_id": "c240637e-6b7b-42a8-8c7d-362037ef267d"
+    },
+    {
+      "claim_id": "03fd2228-494b-48ae-984b-d50c5625578c",
+      "result_id": "c240637e-6b7b-42a8-8c7d-362037ef267d"
+    },
+    {
+      "claim_id": "ec67949d-c0cc-44bb-9a52-7947fdf3b4ac",
+      "result_id": "c240637e-6b7b-42a8-8c7d-362037ef267d"
+    },
+    {
+      "claim_id": "766db883-b398-4deb-8c52-a02f13761764",
+      "result_id": "c240637e-6b7b-42a8-8c7d-362037ef267d"
+    },
+    {
+      "claim_id": "5a1f38ec-4451-4a0e-9467-5bb693c672cd",
+      "result_id": "c240637e-6b7b-42a8-8c7d-362037ef267d"
+    },
+    {
+      "claim_id": "ed4e48ee-2908-4802-9c1a-56c4e8f8dc7f",
+      "result_id": "c622dbb3-6ca7-402c-8107-45b394596ebc"
+    },
+    {
+      "claim_id": "d3877022-4da5-4e67-b2b6-4e0a9e64ed5e",
+      "result_id": "c622dbb3-6ca7-402c-8107-45b394596ebc"
+    },
+    {
+      "claim_id": "800e9864-04d9-469f-8ab4-912e0af6e9e2",
+      "result_id": "c622dbb3-6ca7-402c-8107-45b394596ebc"
+    },
+    {
+      "claim_id": "c42013b0-c2e2-4771-bb97-69e736e84cdf",
+      "result_id": "c622dbb3-6ca7-402c-8107-45b394596ebc"
+    },
+    {
+      "claim_id": "4f03de42-64e6-4b7b-b525-888e345b3ac4",
+      "result_id": "c622dbb3-6ca7-402c-8107-45b394596ebc"
+    },
+    {
+      "claim_id": "707f0f73-ed9e-461b-bd51-c586a3a20ad6",
+      "result_id": "c622dbb3-6ca7-402c-8107-45b394596ebc"
+    },
+    {
+      "claim_id": "6618d96e-6022-464b-b7a5-2237074d1c38",
+      "result_id": "c622dbb3-6ca7-402c-8107-45b394596ebc"
+    },
+    {
+      "claim_id": "51ef6e2c-65cf-49ec-87cc-e0b44c81f410",
+      "result_id": "437f0ca2-d84a-4456-88ea-65c1fc768f93"
+    },
+    {
+      "claim_id": "b1b08f1f-6159-46b1-87f1-d862616e19d0",
+      "result_id": "437f0ca2-d84a-4456-88ea-65c1fc768f93"
+    },
+    {
+      "claim_id": "026d65d8-3f34-48c9-8945-d8ec25a46da4",
+      "result_id": "437f0ca2-d84a-4456-88ea-65c1fc768f93"
+    },
+    {
+      "claim_id": "d04a6d02-54c4-4bb4-9775-35402731c111",
+      "result_id": "437f0ca2-d84a-4456-88ea-65c1fc768f93"
+    },
+    {
+      "claim_id": "ddd21024-61ca-49d5-a997-3f4a42df2f31",
+      "result_id": "437f0ca2-d84a-4456-88ea-65c1fc768f93"
+    },
+    {
+      "claim_id": "4017d867-f57f-458b-a13e-ad2d65376b08",
+      "result_id": "a9262335-fffa-4894-8014-b118b00d967d"
+    },
+    {
+      "claim_id": "650dbab7-a059-4841-a256-b39cb2f4194a",
+      "result_id": "a9262335-fffa-4894-8014-b118b00d967d"
+    },
+    {
+      "claim_id": "e367b321-80b6-49f5-9b01-479696fb15e3",
+      "result_id": "a9262335-fffa-4894-8014-b118b00d967d"
+    },
+    {
+      "claim_id": "5fc97ae8-458c-4e50-add9-d094c6d6ca93",
+      "result_id": "a9262335-fffa-4894-8014-b118b00d967d"
+    },
+    {
+      "claim_id": "6808488d-21ea-4c50-a007-97a009fb753b",
+      "result_id": "7bd6856d-b296-45f2-a8b6-a5e06c83ed2d"
+    },
+    {
+      "claim_id": "9ec8d161-2d94-4362-bd47-5e4cb1a50d8b",
+      "result_id": "7bd6856d-b296-45f2-a8b6-a5e06c83ed2d"
+    },
+    {
+      "claim_id": "fac0df96-63a0-4bec-b9c6-acb2f166a844",
+      "result_id": "da5e1e91-b217-449b-a01a-4fbc3aaee6dc"
+    },
+    {
+      "claim_id": "c51fc255-1df5-4bc0-a087-1324af5127b8",
+      "result_id": "da5e1e91-b217-449b-a01a-4fbc3aaee6dc"
+    },
+    {
+      "claim_id": "2bb3205e-376d-42bf-9400-775484c86cea",
+      "result_id": "da5e1e91-b217-449b-a01a-4fbc3aaee6dc"
+    },
+    {
+      "claim_id": "2fbb5f7a-1788-4f9c-bc11-bf37ed3cf9fe",
+      "result_id": "d2c9cae7-72ea-42b3-ad69-dbae2a68a018"
+    },
+    {
+      "claim_id": "7eb20dc0-c51f-4c96-b048-20eb2c6607a1",
+      "result_id": "d2c9cae7-72ea-42b3-ad69-dbae2a68a018"
+    },
+    {
+      "claim_id": "079b597a-f59a-4749-89aa-5651105ef293",
+      "result_id": "d2c9cae7-72ea-42b3-ad69-dbae2a68a018"
+    },
+    {
+      "claim_id": "9e27a653-f89e-4bda-9aa8-a9401c32d87b",
+      "result_id": "d2c9cae7-72ea-42b3-ad69-dbae2a68a018"
+    },
+    {
+      "claim_id": "43f5031e-45cb-4089-a135-83e90cd4f9e9",
+      "result_id": "d2c9cae7-72ea-42b3-ad69-dbae2a68a018"
+    },
+    {
+      "claim_id": "ae7b5078-15f5-437e-8954-4d36ddcef9d5",
+      "result_id": "f8936903-1df9-49a5-813c-5f39f7acdb92"
+    },
+    {
+      "claim_id": "4361d490-44a5-44a7-8a5f-3f512788a011",
+      "result_id": "f8936903-1df9-49a5-813c-5f39f7acdb92"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b27f0096-a405-4c14-ab1c-5b7885f7a1e5",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "e8bd5e57-d23a-4b83-9817-a7c74cbac486",
+      "peer_result_id": "3009233e-a33c-4b69-8bb6-f46739438502",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C2, C3, C14, C15, C16 regarding S. agalactiae MprF dual substrate specificity. Both evaluate as SUPPORTED with strong experimental evidence from genetic and lipidomic data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "c3f3c8a0-e34e-44af-96fd-bdc8831b0150",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "7e9030b9-6023-49fc-893a-d2aa8cb797b8",
+      "peer_result_id": "7bd6856d-b296-45f2-a8b6-a5e06c83ed2d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C66, C67 regarding limitations of BLASTp approach. Both evaluate as SUPPORTED, recognizing this limitation motivates the RBM methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "6d8a1495-ffc0-488b-841c-68166081a65c",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "34bed437-5008-4ab7-9d12-9ca6426923ce",
+      "peer_result_id": "da5e1e91-b217-449b-a01a-4fbc3aaee6dc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C71, C72, C73 regarding E. faecalis exception. OpenEval evaluates as SUPPORTED (acknowledging limitation with plausible explanation), while peer review evaluates as UNCERTAIN (noting incomplete understanding weakens confidence).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "75a6f9fd-101b-4163-a841-ec274ca474c0",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "fe229965-7a01-401a-ba9b-5d4899c5d1db",
+      "peer_result_id": "f6590a52-f423-47ac-bde8-1dc802f1b06e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong overlap on claims C24-C32 regarding heterologous expression and sequence identity findings. Both evaluate as SUPPORTED, accepting lipidomic data and experimental validation of RBM categorization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "a463aadf-3c2f-489c-848c-b965da72ef44",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "9c0832d3-2f0e-4880-8c2a-1a490ba1727c",
+      "peer_result_id": "c622dbb3-6ca7-402c-8107-45b394596ebc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong overlap on claims C49-C55 regarding genetic evidence for Lys-Glc2-DAG synthesis in Enterococcus species. Both evaluate as SUPPORTED with acceptance of deletion, complementation, and cross-species experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "b7169124-0252-45cb-8da8-7db7b677344c",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130",
+      "peer_result_id": "437f0ca2-d84a-4456-88ea-65c1fc768f93",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C61-C65 regarding statistical validation of RBM approach. Both evaluate as SUPPORTED, accepting the machine learning methodology and its experimental confirmation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "5e79f7bc-b151-4533-9a99-a6b2fd0223e9",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "95dd802f-e4b3-490d-80f7-05b2a1009130",
+      "peer_result_id": "d2c9cae7-72ea-42b3-ad69-dbae2a68a018",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address claims C56-C60 regarding lipidomic survey data. OpenEval evaluates as SUPPORTED with statistical significance, while peer review evaluates as UNCERTAIN due to concerns about negative results and lack of protein expression data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "09474a6d-a16c-4383-9800-56f804b24896",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "44ce2248-fc26-48da-85a8-8d5df582343a",
+      "peer_result_id": "a9262335-fffa-4894-8014-b118b00d967d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C37, C38, C69, C70 regarding RBM methodology validation and dataset filtering. Both evaluate as SUPPORTED, accepting recovery of known residues and improved model performance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "546a50ec-a433-48a1-bd7a-366c0526a7a1",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "7aee287c-13b3-4267-9dba-51c04591e114",
+      "peer_result_id": "c240637e-6b7b-42a8-8c7d-362037ef267d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C39, C40, C41 regarding discovery of Lys-Glc2-DAG. OpenEval includes full analytical characterization (C39-C43), peer review emphasizes this as major contribution (also including C4, C44, C46). Both evaluate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "6a0850bd-afb3-4341-9b02-b5d9531ecf26",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "cbc1782e-2f81-4415-ad7e-dcdf64df7691",
+      "peer_result_id": "f8936903-1df9-49a5-813c-5f39f7acdb92",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address claims C74, C75 regarding experimental limitations of heterologous expression. Both evaluate as SUPPORTED, accepting these as honest methodological constraints.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "71fe6818-c69c-4f77-886a-507c6de361c3",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a89490c4-2c6e-4ee2-aeba-8def3596685d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates background claims C1, C5-C13 as SUPPORTED with appropriate citations. No corresponding peer review evaluation found, as reviewers typically focus on novel findings rather than established background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "7206e31d-12f8-419a-8154-ab0798fd5aa9",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "e541fb5e-b824-411e-a433-b89651d7a8bf",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C21, C22 regarding S. aureus strain selection as SUPPORTED methodological choice. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    },
+    {
+      "id": "23b9f8be-6cce-4b4b-bd54-f99bb9a47ef7",
+      "submission_id": "23ef17fd-3b76-4ab7-9834-80756d8d81b4",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "3c83d69b-b4bc-4da6-8e60-71989f43ecf6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates claims C77-C79 regarding future applications as UNCERTAIN (speculative but reasonable). No corresponding peer review evaluation found addressing these forward-looking statements.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:20:37.205725Z"
+    }
+  ]
+}

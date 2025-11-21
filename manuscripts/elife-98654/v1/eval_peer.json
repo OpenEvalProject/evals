@@ -1,0 +1,394 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C11",
+      "C12"
+    ],
+    "result": "Parent sequences contain on average ~5.32 -10 boxes and ~7.04 -35 boxes, with 18 of the -10 boxes including the TGn motif upstream. 30% of parents have the TGn motif upstream of a -10 box, but only 20% of these parents have promoter activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not question these descriptive statistics about motif content in parent sequences. One reviewer noted that 'the method of identifying key mutations using mutual information in this paper is well done' and another stated the 'evidence supporting these findings is convincing,' implicitly accepting the motif characterization data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "The mutagenesis library comprised 245,639 unique daughter sequences with a mean coverage of 93% of possible mutational neighbors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praised the experimental design, with one stating 'their pooling strategy allows them to characterize expression of many different backgrounds in both directions in extremely high-throughput which is impressive!' The coverage statistics were not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "10 out of 50 parent sequences encode promoter activity before mutagenesis, including three on the top strand, seven on the bottom strand, and two bidirectional promoters. The remaining 40 parent sequences are non-promoters with an average fluorescence score of 1.39 a.u.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the classification of parent sequences. One reviewer noted 'the authors have described many examples, including several that are non-obvious, and show convincingly that different sequence backgrounds have different probabilities for gaining or losing promoter activity,' supporting the parent sequence characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C121"
+    ],
+    "result": "The median Pnew for non-promoter parents is 0.046, with the lowest being 0.002 and the highest 0.41, representing a 205-fold difference. The inflection point of the fitted sigmoid curve is at 1.51 a.u., and the probability that mutations create an active promoter varies more than 200-fold among parent sequences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accepted the overall finding of variable Pnew, one reviewer stated 'I don't think the fluorescence threshold of 1.5 a.u. for promoter activity is justified, the authors do acknowledge this shortcoming, and even empirically-derived thresholds are still technically arbitrary.' This indicates uncertainty about the threshold used to define promoter activity, which affects Pnew calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C122"
+    ],
+    "result": "Pnew does not significantly correlate with the number of daughter sequences, GC-content, -10 box counts, or -35 box counts. Six k-mers correlate with Pnew, but these correlations are heavily influenced by an outlier and disappear when it is removed. The probability that mutations create an active promoter is not correlated with the number of promoter motifs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this key finding. One reviewer stated 'the authors express a key finding that the specific landscape of promoter motifs in a sequence affect the likelihood that local mutations create or destroy regulatory elements' and 'show convincingly that different sequence backgrounds have different probabilities for gaining or losing promoter activity.' Another noted 'I particularly enjoyed Figure 1E,' which shows the relationship between Pnew and parent fluorescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "A total of 68 hotspots were identified across all 50 parent sequences using mutual information analysis. In promoter parents, hotspots overlap significantly with -10 and -35 boxes compared to scrambled sequences, with similar patterns observed in non-promoter parents. However, there is no significant difference in motif overlap between promoters and non-promoters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praised the mutual information approach. One stated 'the method of identifying key mutations using mutual information in this paper is well done and should be a standard in future studies for identifying regions of interest.' The hotspot analysis and overlap statistics were not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Only ~14% of -10 boxes and ~12% of -35 boxes overlap with hotspots, meaning only ~13% of all -10 and -35 boxes in the parents contribute to promoter activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this finding as part of the overall conclusion that most motifs do not contribute to promoter activity. One reviewer noted 'these findings suggest that we are still underestimating the complexity of promoters,' which aligns with this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C123",
+      "C124"
+    ],
+    "result": "Mutations created over 1,500 new -10 and -35 boxes at unique positions in non-promoter parent sequences, with ~22% properly spaced and ~7.3% of new -10 boxes having the TGn motif. However, only ~0.3% of these new boxes actually create new promoter activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly supported this finding. One stated 'the authors have described many examples, including several that are non-obvious, and show convincingly that different sequence backgrounds have different probabilities for gaining or losing promoter activity.' Another noted 'the validation of mutations on a clean background is well-executed, and the results are convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Parent P16-RFP gains promoter activity when mutations create a -10 box 17 bp downstream of a preexisting -35 box, increasing median fluorescence by +1.99 a.u. The majority of new -10 boxes emerge when TAAACA mutates to TAAACt, and experimental validation shows an ~11.2-fold increase in fluorescence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praised the validation experiments. One stated 'the validation of mutations on a clean background is well-executed, and the results are convincing. I appreciate the effort put into validating their results.' The specific example of P16-RFP was not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Parent P1-RFP gains promoter activity when mutations create a -35 box 18 bp upstream of a preexisting -10 box, increasing fluorescence by +0.74 a.u. The majority of new -35 boxes emerge when ATGAGT mutates to tTGAGT, and experimental validation shows a ~2.0-fold increase in fluorescence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this validated example. One noted 'the validation of mutations on a clean background is well-executed, and the results are convincing,' which applies to this P1-RFP case as well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "Mutations do not create de novo promoter activity by destroying -10 and -35 boxes in non-promoter parents.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers did not question this finding. It is consistent with the overall conclusion that -10 and -35 boxes do not repress promoter activity, which reviewers accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "In promoter parents, 5 hotspots were identified where losing a -10 box decreases expression and 3 where losing a -35 box decreases expression. For P12-RFP, losing these boxes decreases fluorescence by -1.57 a.u. and -1.41 a.u., respectively, with experimental validation showing 62.6-fold and 49.7-fold decreases. No hotspots were found where destroying boxes increases expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these findings. One stated 'the validation of mutations on a clean background is well-executed, and the results are convincing,' which applies to the P12-RFP validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C125"
+    ],
+    "result": "In promoter parents, 329 new -10 boxes and 332 new -35 boxes are created, but only 4 new -10 boxes and 1 new -35 box further increase expression. Surprisingly, gaining 4 new -10 boxes and 6 new -35 boxes decreases expression. 40% of hotspots show homo-motif gains and 20% show hetero-motif gains.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these findings about motif gains in promoter parents. One noted 'the authors have described many examples, including several that are non-obvious, and show convincingly that different sequence backgrounds have different probabilities for gaining or losing promoter activity.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "In P12-RFP, a point mutation creates a new -10 box that is +1 bp further from the -35 box and increases the PWM score of the original -10 box, increasing median expression by +0.78 a.u. Experimental validation shows a 0.3-fold increase in fluorescence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this validated example. One stated 'the validation of mutations on a clean background is well-executed, and the results are convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "For parent P22-GFP, mutations can change the -35 box into a -10 box, which decreases expression by -0.90 a.u. Experimental validation shows a 13-fold decrease in fluorescence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this validated example. One noted 'the validation of mutations on a clean background is well-executed, and the results are convincing.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "4 of the 15 hotspots (~27%) in promoter parents are located in P20-GFP/RFP, which encodes a bidirectional promoter.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this finding. One noted 'recent work in the field of bacterial gene regulation has raised interest in bidirectional promoter regions' and praised the dataset for enabling study of this phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Six parent sequences were identified as H-NS target candidates. P22-GFP shows the largest fluorescence change in the \u0394hns background (~1.6-fold increase), and P12-RFP shows a ~0.5-fold increase. For bidirectional promoter P20, GFP expression increases ~2.6-fold while RFP expression decreases ~0.42-fold in the \u0394hns background, suggesting H-NS modulates directionality.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praised the H-NS analysis. One stated 'I particularly enjoyed Figure 1E, thank you for entertaining my analysis request! Also, the H-NS story is a nice addition showing how transcription factors influence this evolution.' The findings were not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Two candidate H-NS motifs were identified in P12-RFP and one in P22-GFP whose destruction is associated with fluorescence increases greater than 0.5 a.u. For P22-GFP, destroying the H-NS motif increases fluorescence by +0.52 a.u. For P12-RFP, destroying H-NS motifs increases fluorescence by +0.53 and +0.51 a.u. These findings demonstrate that H-NS can suppress promoter emergence in certain contexts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the H-NS repression findings. One noted 'the H-NS story is a nice addition showing how transcription factors influence this evolution,' indicating support for these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "H-NS sites in P12-RFP overlap with hotspots where gaining new -35 and -10 boxes decreases fluorescence. Experimental validation shows that constructs with new boxes have lower fluorescence in wild-type backgrounds but higher fluorescence in \u0394hns backgrounds, with the \u0394hns background rescuing the fluorescence loss. This demonstrates that expression lowers because mutations modulate H-NS binding, not by gaining the boxes themselves.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these mechanistic findings. One stated 'the validation of mutations on a clean background is well-executed, and the results are convincing,' which applies to these H-NS validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "H-NS represses both P22-GFP and P12-RFP in cis and modulates the bidirectionality of P20-GFP/RFP in cis or trans. In P22-GFP, the strongest H-NS motif lies upstream of the promoter. In P12-RFP, the strongest H-NS motifs lie upstream of the -10 and -35 boxes, with 16 additional H-NS motifs surrounding the promoter that may also regulate P12-RFP.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these conclusions about H-NS regulation. One noted 'the H-NS story is a nice addition showing how transcription factors influence this evolution,' supporting these mechanistic interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "74 UP-like elements were identified using a less stringent PWM threshold, with 23 significantly changing fluorescence when created or destroyed. However, none increase fluorescence by more than 0.5 a.u. when gained or decrease by more than 0.5 a.u. when lost, suggesting the UP element plays a negligible role in promoter emergence.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this finding. One noted 'the additional analyses that include TGn and UP-element motifs are also well done and highly relevant, as these elements are known to compensate for weaker or absent -35 sequences,' indicating acceptance of the UP element analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Promoter emergence is best predicted by the level of background transcription each non-promoter parent produces. Sequences that produce pervasive transcripts may have a proclivity for evolving de-novo promoters compared to other sequences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this interpretation. One stated 'I particularly enjoyed Figure 1E,' which shows the relationship between parent fluorescence and Pnew that supports this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C106",
+      "C126"
+    ],
+    "result": "-10 and -35 boxes are not likely to repress promoter activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted this conclusion. One noted 'the authors express a key finding that the specific landscape of promoter motifs in a sequence affect the likelihood that local mutations create or destroy regulatory elements,' which is consistent with boxes not being repressive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Mutations can readily create promoters with a wide dynamic range of activity, facilitating natural selection's fine-tuning of promoter expression levels. True promoters in sequences enriched with promoter motifs typically overlap with multiple -10 and -35 boxes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these interpretations. One stated 'the authors have described many examples, including several that are non-obvious, and show convincingly that different sequence backgrounds have different probabilities for gaining or losing promoter activity,' supporting these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "We are still underestimating the complexity of promoters. The -10 and -35 boxes, extended -10, and UP-element may be one of many components underlying promoter architecture. Flanking sequences may play an important role in prokaryotic transcriptional regulation, and there may be much more transcriptional repression in the genome than anticipated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these speculative conclusions. One noted 'this study reveals complex mutational patterns, modeling them could significantly advance our ability to predict bacterial evolutionary trajectories and interpret genomes,' supporting the conclusion about promoter complexity.",
+    "result_type": "MAJOR"
+  }
+]

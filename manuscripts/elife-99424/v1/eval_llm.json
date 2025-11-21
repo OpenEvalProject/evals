@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "M-cell responses to tectal stimulation are modulated by stimulus duration and frequency. Increasing the duration of 60 Hz trains increases the tonic component while the phasic component remains unchanged. Increasing the frequency of 100 ms trains increases the tonic component but decreases the phasic component. Both manipulations produce approximately 45-50% increases in total response amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 are well-supported by statistical analyses (ANOVA) with significant p-values and clear presentation of data in Figure 1. The experimental design appropriately separates tonic and phasic components, and the quantitative results are consistent across different stimulus parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Combining auditory and tectal stimuli produces multisensory enhancement in the M-cell of approximately 50% (MSI/Max ~1.5). Most stimulus combinations show sublinear integration (MSI/Sum < 1), except for the briefest tectal stimulus which shows linear integration. The enhancement is relatively insensitive to tectal stimulus duration or frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C60 are supported by appropriate statistical tests (Wilcoxon tests, linear models) with significant p-values and data shown in Figure 2. The MSI/Max and MSI/Sum metrics are properly defined and applied. The finding of linear integration for weak stimuli versus sublinear for stronger stimuli is particularly well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Auditory and tectal stimuli evoke feedforward inhibition (FFI) with similar peak amplitude and timing, but auditory FFI decays much more slowly than tectal FFI. Tectal FFI decays to 50% in 8 ms versus 30 ms for auditory FFI, and the area under the curve for auditory FFI is approximately three times greater.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are well-supported by statistical analyses (Kruskal-Wallis tests) with significant p-values and clear presentation in Figure 3. The experimental design using antidromic action potentials to measure shunting inhibition is appropriate. The differential decay dynamics are quantitatively characterized and provide mechanistic insight into MSI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Stimulus temporal order and modality affect integration in the M-cell. Auditory-auditory (AA) pairs show strong inhibitory integration (42% reduction), while auditory-tectal (AT) shows weaker sublinear integration, and tectal-tectal (TT) and tectal-auditory (TA) show linear integration when stimuli are separated by 50 ms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by appropriate statistical tests (Wilcoxon rank tests, ANOVA) with significant p-values and data shown in Figure 4. The experimental design systematically varies stimulus order and modality. The differential integration patterns are consistent with the FFI decay dynamics reported in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Multisensory integration in the M-cell exhibits inverse effectiveness: the magnitude of multisensory enhancement is inversely correlated with the strength of unisensory components. Weak stimuli (<2.5 mV) produce supralinear responses 50-100% stronger than the most effective unisensory stimulus, demonstrating that inverse effectiveness is implemented at the single-cell level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 are well-supported by linear model analyses with highly significant p-values (p < 0.0001) and clear presentation in Figure 5. The pooling of data across multiple experimental conditions (N=18, n=174) provides robust evidence. The parallel between cellular and behavioral inverse effectiveness strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Tectal stimulation at 30 s ITI produces non-adapting M-cell responses that are qualitatively and quantitatively similar to visual looming stimuli, though tectal stimulation likely recruits projections that are predominantly but not exclusively visual.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are supported by experimental observations and citations to prior work. The methodological choice to use tectal stimulation is justified by the need to avoid adaptation. The caveat about multisensory tectum inputs (C25-C26) is appropriately acknowledged, though this introduces some uncertainty about the purely visual nature of the stimulus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "M-cell responses to tectal and auditory stimulation show no statistical differences between ipsilateral and contralateral stimulation, confirming that both M-cells respond similarly to stimuli from either side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 are supported by paired t-tests with non-significant p-values and data shown in Figure 1\u2014figure supplement 1. This control experiment validates pooling data from left and right M-cells and addresses potential spatial coherence concerns for MSI.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Multisensory stimuli evoke M-cell firing more frequently (12%) than auditory (5%) or tectal (6.7%) stimuli alone, though these probabilities likely underestimate actual firing rates due to anesthesia and paralysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 are based on analysis of 60 M-cells and provide quantitative support for multisensory enhancement at the level of action potential generation. The caveat about anesthesia effects (C105) is appropriately noted. However, no statistical test is provided to determine if the difference between 12% and 5-6.7% is significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "M-cell somatic responses to tectal stimulation reach a plateau after 30-100 ms and decay to resting values 200-300 ms after the end of the tectal train.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 describe temporal dynamics of M-cell responses based on experimental observations. These are descriptive findings that characterize the time course of responses and are supported by the data shown in the figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C99",
+      "C100"
+    ],
+    "result": "The temporal dynamics of M-cell responses modulate MSI through complex nonlinear interactions between positive factors (input summation, voltage-dependent conductances) and negative factors (decay, FFI, decreased input resistance). The plateau in tonic depolarization and low-pass filtering may explain the lack of frequency effects, suggesting the M-cell functions as a sudden stimulus detector.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C99-C100 represent interpretive synthesis of the experimental findings. These inferences are reasonable given the data presented, though they involve some speculation about mechanisms. The characterization of the M-cell as a sudden stimulus detector is consistent with the observed response properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C106",
+      "C108"
+    ],
+    "result": "Linear integration of weak multisensory stimuli suggests the existence of active MSI mechanisms upstream of the M-cell soma or in the dendritic tree. Nonlinear membrane properties that increase excitability above 5 mV might provide a cellular mechanism for inverse effectiveness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C106 and C108 are speculative inferences about mechanisms that could explain the observed linear integration of weak stimuli. While C107 cites prior work on membrane nonlinearities, the connection to MSI inverse effectiveness remains hypothetical. These claims identify important questions for future work but lack direct experimental support in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C114"
+    ],
+    "result": "Differences in integration between AA and AT stimuli may result from differences in presynaptic networks mediating prepulse inhibition and differential FFI decay dynamics. Spatial distribution of inhibition targeting different dendritic regions could contribute to modality-specific integration patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111, C114 propose mechanistic explanations for observed integration differences but are largely speculative. While C110 references experimental data (Figure 3D) and prior work, C111 explicitly acknowledges uncertainty about spatial distribution of inhibition. These represent reasonable hypotheses requiring additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establishing that MSI combines information from multiple modalities to create coherent perception, is widespread across species, enhances escape behaviors, and exhibits inverse effectiveness with stimulus strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C9-C16 represent established knowledge in the field supported by multiple citations. These provide appropriate context for the current study and are well-documented in the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C71",
+      "C72",
+      "C73",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Anatomical and physiological background on M-cell circuitry: auditory inputs reach the lateral dendrite via a fast disynaptic pathway while visual inputs reach the ventral dendrite via a slower polysynaptic pathway through the tectum. The dendrites have different cable properties suited to processing different stimulus types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21, C71-C73, C88-C90 describe established anatomical and physiological properties of the M-cell system, supported by multiple citations to prior work. These provide essential background for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C25",
+      "C37",
+      "C38",
+      "C39",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C61",
+      "C62",
+      "C74",
+      "C86",
+      "C87",
+      "C91",
+      "C92",
+      "C93",
+      "C95",
+      "C96",
+      "C101",
+      "C107",
+      "C109",
+      "C112",
+      "C113"
+    ],
+    "result": "Additional background claims on goldfish adaptation to looming stimuli, tectal multisensory integration, MSI principles, M-cell synaptic physiology, FFI mechanisms, prepulse inhibition, behavioral MSI effects, and biophysical properties of neuronal integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C25, C37-C39, C43-C47, C61-C62, C74, C86-C87, C91-C93, C95-C96, C101, C107, C109, C112-C113 represent established knowledge supported by citations or fundamental biophysical principles. These provide necessary context and mechanistic framework for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C85"
+    ],
+    "result": "Summary claims that stimulus modality, intensity, temporal structure, and interstimulus delay affect input summation in the M-cell, and that distinct FFI decay dynamics account for certain aspects of integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8, C85 are high-level summary statements of the main findings, supported by the detailed experimental results in other claim groups. These accurately represent the scope and conclusions of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Methodological details: adult goldfish (7-10 cm) were used; sound stimuli were 5 ms, 200 Hz pips at 118 dB SPL (147 dB for Figure 4 experiments); only 5% of M-cells fired to auditory stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 are straightforward methodological statements supported by the Methods section and post-hoc analysis. These provide important details for reproducibility and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Intracellular recordings show that auditory responses can be increased by about 50% when preceded by tectal stimulation, and this enhancement is not affected by large changes in stimulus frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 summarize key findings from the multisensory experiments, supported by data in Figures 2C and 2G. These parallel the behavioral observations and represent important cellular-level confirmation of MSI.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The short-lived tectal FFI suggests that multiple tectal inputs are more likely to be integrated than multiple auditory inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 is a reasonable inference based on the differential FFI decay dynamics shown in Figure 3. This prediction is consistent with the known duration of effective visual looming stimuli, though direct experimental validation would strengthen the claim.",
+    "result_type": "MINOR"
+  }
+]

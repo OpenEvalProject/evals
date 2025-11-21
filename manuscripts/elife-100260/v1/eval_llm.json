@@ -1,0 +1,338 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The study used an EEG-SSVEP paradigm with 45 infants across four age groups (3-4, 4-6, 6-8, and 12-15 months) viewing controlled grayscale images from five categories (faces, limbs, corridors, characters, cars). The paradigm was validated in adults and stimuli were controlled for low-level properties and distinguishable at infant cortical acuity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C43 provide comprehensive methodological details including participant demographics, stimulus properties, experimental design, and validation studies. The SSVEP paradigm is well-justified with adult validation data (C41-C42) and stimulus controls (C35, C43). The methodology is appropriate for measuring both general visual responses (4.286 Hz) and category-selective responses (0.857 Hz).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "All infant age groups showed significant visual responses at the image frequency over occipital electrodes, with no differences in noise across ages. The temporal dynamics of visual responses developed from 3 to 15 months, with peak latency decreasing significantly with age, particularly in the second time window (90-160ms), and waveform complexity increasing from two to four deflections after 4 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C55 demonstrate robust visual responses across all age groups with appropriate statistical analyses (LMM with FDR correction). The developmental changes in latency and amplitude are well-documented with clear statistical support (C51-C52). The finding that noise levels don't differ across ages (C47) strengthens the validity of comparing responses across age groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C97",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Face-selective responses emerge at 4-6 months of age over bilateral occipitotemporal electrodes and are absent in 3-4 month-olds. This represents the earliest category-selective response observed among all tested categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide strong statistical evidence (Hotelling's T2, FDR corrected) for face-selective responses emerging at 4-6 months but not earlier. The absence of responses in 3-4 month-olds (C58, C104) despite significant visual responses (C103) indicates this is not a sensitivity issue. This is the central finding regarding the earliest emergence of category selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C98"
+    ],
+    "result": "Category-selective responses to limbs, corridors, and characters emerge later at 6-8 months of age in occipitotemporal ROIs, with significant development varying by category.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 document category-selective responses for non-face categories with appropriate statistical corrections (FDR). The LMM analysis (C63) demonstrates significant category-by-age interactions. However, these responses are weaker and emerge later than face responses, supporting differential development across categories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Time-domain analyses reveal distinct temporal waveforms for different categories: faces show a biphasic response (positive at ~500ms, negative at ~900ms) emerging at 4 months, while limbs, corridors, and characters show single negative deflections at ~500ms significant only after 6 months. Face responses increase in amplitude with age while limb responses decrease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C73 provide detailed temporal characterization with cluster-based permutation testing and LMM analyses. The differential waveforms across categories (C65-C67) and opposite developmental trajectories for faces vs. limbs (C70-C71) are well-documented. The finding that peak latency decreases with age across all categories (C72) indicates general visual system maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "A leave-one-out cross-validation classifier successfully decoded category information from spatiotemporal brain responses in infants 6 months and older but not younger infants. Face decoding was particularly successful (64-93% of infants) while other categories showed lower performance (<40%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 demonstrate successful group-level decoding with appropriate statistical testing (t-tests, FDR corrected). The high success rate for faces (C76) compared to other categories (C77) provides strong evidence for robust face representations. The failure to decode in younger infants (C74) aligns with the absence of category-selective responses in that age group.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Individual-level representational similarity analyses show no reliable category information in infants younger than 6 months. Within-category similarity for faces becomes significant at 6-8 months and remains robust through 12-15 months. Limb representations become reliable only at 12-15 months. Category distinctiveness increases with age, with faces showing the largest and most consistent increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C86 provide individual-level analyses complementing group results. The RSM analyses with appropriate statistics (t-tests, FDR corrected) show developmental progression from no category structure to reliable representations. The individual infant data (C85-C86) strengthen conclusions by showing consistency across participants, not just group averages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Category distinctiveness significantly increased from 3 to 15 months with development varying significantly across categories. Post-hoc analyses show significant increases for faces, limbs, characters, and cars, with faces showing the largest effect. Distinctiveness becomes significantly above zero for faces after 6 months and for limbs and cars at 12-15 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C95 provide comprehensive statistical support using LMM with appropriate post-hoc tests and FDR correction. The differential development across categories (C88) with faces showing earliest and strongest effects (C89, C93) is well-documented. The statistical rigor with multiple testing corrections strengthens these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C135",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The study demonstrates that both ROI-level category-selective responses and distributed spatiotemporal representations develop progressively from 3-15 months, with differential timing across categories. This suggests category representations are learned and that even categories with potential innate substrates (faces, bodies, places) emerge at different times during infancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 and C135-C148 synthesize the main findings with appropriate interpretation. The convergence of ROI-level and distributed analyses (C96) strengthens conclusions. The interpretation that representations are learned (C101) is supported by the data showing progressive development and differential timing. However, the claim about innate substrates (C102, C148) involves speculation beyond what the data directly demonstrate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study has sufficient sensitivity to measure category responses, as evidenced by detecting visual responses in 3-4 month-olds and category responses in older infants and adults with equivalent data. Comparison with Kosakowski et al. 2022 shows some differences in findings, though that study's group averaging across 8 months limits temporal resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 address potential sensitivity concerns with appropriate evidence. The ability to detect responses in 3-4 month-olds (C106) and in older infants/adults (C107) demonstrates adequate sensitivity. The comparison with prior work (C108-C111) is fair, noting methodological differences and limitations of the prior study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The findings that face-selective responses emerge at 4-6 months are consistent with prior literature, though some studies report responses in younger infants using different paradigms (isolated faces vs. objects). The results align with macaque studies showing gradual emergence of face selectivity and support the hypothesis that visual experience is necessary for development. The robust face decoding may serve as an early biomarker for developmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C122 appropriately contextualize findings within prior literature. The distinction between current findings and prior work (C115-C116) is well-explained by methodological differences. The comparison with animal models (C117) and speculation about clinical applications (C121) are appropriately qualified. The correlation with behavioral milestones (C122) is interesting but requires further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Face selectivity emerges earliest among tested categories (~4 months) yet shows protracted development through childhood and adolescence. This extended plasticity may reflect both expansion of social circles and changing face statistics across the lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C126 are well-supported by current data and prior literature. The observation of early emergence but protracted development (C124) is documented. However, the speculation about mechanisms (C128) regarding social circles and face statistics, while plausible, lacks direct empirical support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "This is the first study to examine both ROI-level and distributed responses across the first year of life. The two approaches show convergent results for faces but divergent patterns for other categories: limbs/corridors show ROI responses without distributed distinctiveness at 6-8 months, while cars show distributed distinctiveness without significant ROI responses at 12-15 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C134 highlight methodological novelty and provide nuanced interpretation of differences between analysis approaches. The convergence for faces (C130) and divergence for other categories (C131-C132) is well-documented. The explanations for these differences (C133-C134) based on waveform similarity are reasonable interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "The differential development of category representations may be due to differential visual experience during infancy, supported by head-mounted camera studies showing faces are more prevalent early in infancy. Alternative maturational mechanisms (myelination, cortical maturation) may also contribute. These hypotheses make testable predictions about the impact of visual experience on brain development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C136-C145 present plausible hypotheses about mechanisms but lack direct empirical support in the current study. The correlation with visual diet data from other studies (C137) is suggestive but not definitive. The animal deprivation study (C141) provides some support for experience-dependent development. However, the current study cannot distinguish between experience-driven and maturational accounts without additional data on individual differences in visual experience or experimental manipulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C149"
+    ],
+    "result": "The findings have important ramifications for theoretical and computational models of visual development and assessment of atypical infant development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C149 appropriately identifies broader implications of the work. The demonstration of differential timing of category emergence challenges models assuming simultaneous development and provides potential biomarkers for atypical development. However, these are prospective implications requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Prior work establishes that visual categorization is rapid in adults and supported by clustered and distributed responses in VTC and LOTC. Infants show behavioral categorization abilities and neural responses to faces by 4-12 months, but the timing of emergence for various categories during the first year remains unknown due to methodological differences across studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 provide appropriate background from prior literature with proper citations. The identification of the research gap (C7, C16) is well-justified based on limitations of prior work. These claims establish the motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Two hypotheses are considered: (1) representations of ecologically relevant categories may be innate due to evolutionary importance, while others develop with learning, supported by newborn face orientation and word representations emerging only with reading instruction; (2) categories seen more frequently earlier in infancy may develop first, supported by visual diet data showing faces comprise ~25% of 0-3 month-olds' visual input while hands increase later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C31 present competing hypotheses with appropriate support from prior literature. The visual diet data (C28-C30) provides quantitative support for the experience-based hypothesis. The prediction that face representations emerge before limb representations (C31) is testable and directly addressed by the study. However, these remain hypotheses to be tested rather than established facts.",
+    "result_type": "MINOR"
+  }
+]

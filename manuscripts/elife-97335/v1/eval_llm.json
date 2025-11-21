@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The manuscript provides background epidemiological and clinical context for cervical cancer, including its ranking as the fourth leading cause of cancer-related death in women, the distribution of histological subtypes (70% SCC, 25% ADC), and survival rates that vary dramatically by stage (>90% for early-stage, 30-60% with lymph node metastasis, <20% for recurrent disease).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C60-C62 are all supported by appropriate citations to published literature (Sung et al. 2021, Cohen et al. 2019, Gennigens et al. 2022, Schiffman et al. 2007, Li et al. 2016). These background claims establish the clinical context and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "ADC is characterized as more aggressive than SCC, with higher rates of rapid progression, relapse, and resistance to chemotherapy, radiotherapy, and immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 are stated as general knowledge in the text, while C9 is supported by citation to Sasieni et al. 2009. The characterization of ADC as more aggressive is consistent with the literature and provides rationale for the study focus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Post-surgical upstaging due to undetected lymph node metastasis occurs in >10% of early-stage cervical cancer patients, requiring additional radiotherapy that may cause complications without additional benefit compared to radiotherapy alone. Current imaging modalities (CT/MRI) can only detect lymph nodes \u226510mm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 are all supported by appropriate citations (Dabi et al. 2018, Thelissen et al. 2022, Bhatla et al. 2018, Cushman et al. 2018, Kashima et al. 2023, Saleh et al. 2020). These claims establish the clinical problem that motivates the search for biomarkers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "While HPV infection is the primary cause of cervical cancer, 5-15% of patients test HPV-negative and these patients tend to have worse clinical outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by citations to Mann et al. 2023, Yang et al. 2023, and Fernandes et al. 2022. This establishes the importance of considering HPV status in the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Despite 30-50% of cervical cancer patients exhibiting positive PD-L1 expression, only 20-30% respond to PD-1/PD-L1 blockade therapy, with ADC characterized as immune-insensitive due to atypical tumor immune microenvironment modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 are supported by citations to Omenai et al. 2022, Sun et al. 2020, and Cao et al. 2023. This provides rationale for investigating the tumor immune microenvironment in ADC.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Single-cell RNA sequencing was performed on 11 ADC and 4 SCC samples, yielding 102,012 qualified cells that were categorized into 12 clusters and re-clustered into 9 distinct cell types, with T cells (37.87%), epithelial cells (31.56%), and neutrophils (12.34%) being the most abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C25 describe the basic experimental design and cell composition. The sample numbers, cell counts, and proportions are clearly stated and referenced to Figure 1. The methodology appears standard for scRNA-seq studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ADC exhibited significantly higher proportions of neutrophils (20.05% vs 4.23%) and T cells (41.13% vs 35.48%) compared to SCC, while SCC showed nearly threefold enrichment of epithelial cells (47.43% vs 16.48%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C28 present comparative cell composition data between ADC and SCC, referenced to Figure 1F. Statistical significance is indicated for neutrophils (p=0.026) and epithelial cells (p=0.039). The differences are substantial and form a key finding distinguishing ADC from SCC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Epithelial cells were classified into 12 sub-clusters, with four clusters (Epi_09_SST, Epi_10_CYSTM1, Epi_11_REG1A, Epi_12_RRAD) exclusively enriched in ADC. Notably, Epi_10_CYSTM1 was exclusively present in stage IIIC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C31 describe epithelial cell sub-clustering with references to Figures 2A, 2D, and Figure 2\u2014figure supplement 1B. The exclusive presence of certain clusters in ADC and the stage-specific enrichment of Epi_10_CYSTM1 are clearly shown in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Cluster Epi_10_CYSTM1 was predicted to exhibit the highest degree of malignancy and was more active in regulating immunity-related pathways and cell-to-cell interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by malignancy scoring analysis (Figure 2F) and GOBP analysis (Figure 2G). The computational predictions are appropriately described and visualized, though experimental validation of functional predictions would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "SLC26A3 was specifically enriched in the Epi_10_CYSTM1 cluster, and ADC patients at stage IIIC exhibited higher expression of SLC26A3 compared to early stages, suggesting SLC26A3 might serve as a potential predictor of lymph node metastasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by marker gene analysis and IHC validation on both post-surgical and biopsy samples (Figure 3, Tables 3-4). The statistical association between SLC26A3 expression and stage IIIC is significant (p=0.002 for post-surgical, p=0.003 for biopsy samples). However, C37 appropriately uses cautious language ('might serve') as this is a predictive biomarker requiring prospective validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Analysis of two clinical cohorts showed upstaging rates of 10.85% (Cohort 1) and 15.31% (Cohort 2), with significantly higher misdiagnosis rates in HPV-negative patients, particularly among ADC patients who were more likely to be misdiagnosed for clinical staging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 are supported by data from two independent clinical cohorts (Tables 1-2). Statistical significance is demonstrated for HPV status associations with upstaging. The finding that ADC patients are more vulnerable to misdiagnosis is significant in Cohort 2 (p=0.027) but not Cohort 1, which the authors appropriately attribute to smaller sample size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "T cells were categorized into eight main clusters and re-clustered into four types (exhausted, cytotoxic, regulatory, and activated T cells), with ADC showing significantly higher proportions of regulatory T cells (Tregs) compared to SCC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe T cell sub-clustering based on canonical markers (Li et al. 2022) and comparative analysis showing Treg enrichment in ADC (Figure 4). The cell type annotations appear appropriate based on established markers, and the Treg enrichment in ADC is a key finding for understanding immunosuppression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Neutrophils were clustered into three sub-types of tumor-associated neutrophils (TANs): pro-tumor TANs, anti-tumor TANs, and TANs with interferon-stimulated genes. Pro-tumor TANs were significantly higher in ADC compared to SCC, while anti-tumor TANs were lower. Patients with higher expression of pro-tumor TAN gene signatures exhibited poorer prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe neutrophil sub-clustering based on consensus markers (Jaillon et al. 2020, Xue et al. 2022) and show differential enrichment between ADC and SCC (Figure 5D). The survival analysis using TCGA data (Figure 5F) supports the prognostic significance of pro-tumor TANs. The classification and functional implications are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Six distinctive clusters of plasma/B cells were identified, with Plasma/B_01_IGHA2 found to be higher in ADC compared to SCC. Higher expression of Plasma/B_01_IGHA2 signature genes predicted poorer prognosis in cervical cancer patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 describe plasma/B cell clustering and differential enrichment (Figure 6). The survival analysis using TCGA data (Figure 6E) supports the prognostic association. However, the functional role of this cluster remains unclear and somewhat contradicts typical anti-tumor functions of B cells, which the authors acknowledge in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "ADC-enriched epithelial sub-clusters exhibited higher propensity for interaction with Tregs through ALCAM and MHC-II signaling pathways. TGF\u03b2-TGFBR interaction between Tregs and epithelial cells (particularly Epi_10_CYSTM1) was activated in ADC but not SCC. Immunofluorescence validation confirmed greater Treg recruitment near SLC26A3-high regions, increased ALDH1A1 expression (stemness marker), ALCAM-CD6 co-localization, and reduced E-cadherin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 are supported by CellChat analysis (Figure 7A-G) and validated by multiplexed immunofluorescence (Figure 7H-J). The computational predictions of cell-cell interactions are appropriately validated with spatial protein expression data. The integration of bioinformatic and experimental approaches strengthens these findings. However, the TGF\u03b2 pathway activation is inferred rather than directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript cites established knowledge about key signaling pathways and cell types: TGF\u03b2 as a canonical inducer of carcinogenesis, ALCAM and MHC-II pathways as essential for Treg recruitment, pro-tumor TANs characterized by specific markers, ALDH1A1 as a cancer stem cell marker, ANNEXIN pathway promoting neutrophil chemotaxis, tumor stemness associated with immunotherapy resistance, and reduced immunotherapy efficacy in ADC patients, especially HPV-negative cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C69 are all supported by appropriate citations to published literature and provide mechanistic context for interpreting the study findings. These background claims are appropriately used to support the interpretation of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose mechanistic interpretations: recruited Tregs might secrete TGF\u03b2 to stimulate ADC tumor epithelial cells leading to increased stemness; immunosuppressive TIME establishment may involve Treg recruitment and cytotoxic T cell inactivation; ADC-specific epithelial sub-clusters may recruit pro-tumor TANs; increased malignancy in ADC may relate to pro-tumor TAN enrichment; crosstalk between Epi_10_CYSTM1 and Tregs might establish immunosuppressive TIME; Treg infiltration may accelerate immune evasion and explain immunotherapy resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C70-C76 represent interpretive hypotheses based on the data. While these interpretations are reasonable given the observed cell-cell interactions, gene expression patterns, and spatial co-localization, they remain speculative. The TGF\u03b2 secretion by Tregs is inferred but not directly measured. The causal relationships proposed (e.g., that Treg recruitment 'causes' immunosuppression) are not experimentally demonstrated. These claims would benefit from functional validation experiments such as Treg depletion, TGF\u03b2 blockade, or co-culture studies.",
+    "result_type": "MAJOR"
+  }
+]

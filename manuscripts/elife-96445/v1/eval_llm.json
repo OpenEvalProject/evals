@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "H3K27ac CUT&Tag sequencing of six GC samples revealed differential super-enhancer (SE) landscapes between infiltrative and expanding GC subtypes. Infiltrative GC showed bimodal H3K27ac enrichment and 1057 SE peaks compared to 819 in expanding GC, with over 50% of peaks in non-coding regions. This identified 240 infiltrative and 173 expanding SE-driven protein-coding genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C32 provide comprehensive experimental evidence from CUT&Tag sequencing, computational SE identification using ROSE algorithm, and genomic distribution analysis. The bimodal enrichment pattern (C26), differential SE peak counts (C27-C28), and identification of SE-driven genes (C31-C32) are well-documented with appropriate figures and methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Pathway enrichment analysis revealed that infiltrative SE-driven genes are enriched in immune-related pathways including negative regulation of T-cell proliferation, response to tumor necrosis factor, and 3'UTR-mediated mRNA destabilization. Sixteen infiltrative SE-driven genes with prognostic value were identified, and infiltrative SE-driven clusters showed significant T-cell infiltration and higher PD-L1 expression compared to expanding GC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38 are supported by GO-KEGG pathway analysis (Figure 1E), survival analysis from TCGA datasets (Figure 1\u2014figure supplement 1D), unsupervised clustering with immune infiltration analysis (Figures 1F-H), and IHC scoring (Figure 1I). The convergence of computational and experimental evidence strengthens these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "ZFP36L1 was identified as a key infiltrative SE-driven gene through Friends analysis and TCGA data exploration. ZFP36L1 expression correlated with poor clinical outcomes, high TIDE scores, T-cell infiltration, and PD-L1 expression. The ZFP36L1-SE region (chr14:68806839\u201368816867) contains two enhancers (E1 and E2) with enriched H3K27ac modifications in infiltrative GC tissues and cell lines, and ZFP36L1 protein was elevated in GC samples and cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C49 are well-supported by multiple lines of evidence including bioinformatic analysis (Figure 2A-E), genomic characterization (Figures 2F-G), and protein expression validation (Figures 2H-I). The integration of public database analysis with experimental validation in patient samples and cell lines provides robust support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Treatment with SE inhibitors THZ1 and JQ1 reduced ZFP36L1 expression in a concentration- and time-dependent manner, with JQ1 specifically decreasing H3K27ac enrichment in the ZFP36L1-SE region, particularly in the E1 enhancer. These findings establish ZFP36L1 as an SE-driven oncogene in infiltrative GC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by pharmacological inhibitor experiments (Figure 2J) and ChIP validation (Figure 2K). The dose-dependent and time-dependent effects, combined with direct measurement of H3K27ac changes at the SE region, provide strong mechanistic evidence for SE-driven regulation of ZFP36L1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "ZFP36L1 positively regulates IFN-\u03b3-induced PD-L1 expression at both mRNA and protein levels. Knockdown of ZFP36L1 reduced PD-L1 transcription and protein expression, while overexpression enhanced it. Flow cytometry confirmed these effects on cell surface PD-L1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 are supported by complementary gain-of-function and loss-of-function experiments using RT-PCR (Figures 3A-B), western blot (Figures 3C-D), and flow cytometry (Figures 3E-F). The bidirectional experimental design and multiple orthogonal methods provide strong evidence for the regulatory relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "SPI1 was identified as the transcription factor binding to ZFP36L1-SE through motif enrichment analysis and ChIP-seq data validation. SPI1 expression correlated with poor prognosis and PD-L1 expression in GC. Functional experiments demonstrated that SPI1 upregulates ZFP36L1 expression and enhances IFN-\u03b3-induced PD-L1 expression in a ZFP36L1-dependent manner, as concurrent ZFP36L1 knockdown reversed SPI1's effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C70 are supported by computational prediction (Figure 4A), database validation (Figures 4B, 4E, Figure 4\u2014figure supplement 1A), RT-PCR and western blot experiments (Figures 4C-D), and rescue experiments (Figure 4F, Figure 4\u2014figure supplement 1B). The rescue experiments demonstrating ZFP36L1-dependence provide particularly strong mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "SPI1 physically interacts with BRD4, an SE-associated protein. This interaction was demonstrated through STRING network prediction, co-immunoprecipitation of both exogenous and endogenous proteins, and direct binding validation using GST pull-down assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 are supported by multiple complementary approaches: computational prediction (Figure 4G), co-IP experiments in both overexpression and endogenous contexts (Figures 4H-I), and in vitro binding assays (Figure 4J). The progression from prediction to in vivo to in vitro validation provides robust evidence for direct protein-protein interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Site C within the E1 enhancer region was identified as the specific SPI1-binding site in ZFP36L1-SE. Luciferase assays showed enhanced activity when SPI1 was co-transfected with E1-containing constructs, ChIP-qPCR identified site C as having the highest SPI1 enrichment, and deletion of the binding motifs at site C abolished SPI1's transcriptional activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by systematic mapping using luciferase reporter assays (Figures 4K, 4M), ChIP-qPCR (Figure 4L), and deletion mutagenesis (Figure 4N). The convergence of multiple independent approaches to identify the same binding site provides strong evidence for the specific SPI1-SE interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "ZFP36L1 negatively regulates HDAC3 expression, which in turn represses PD-L1 transcription through histone H3K27 deacetylation at the PD-L1 promoter region. HDAC3 overexpression does not directly affect PD-L1 promoter activity but acts through histone modification. Additionally, HDAC3 creates a negative feedback loop by reducing transcriptional activity at the ZFP36L1-E1 enhancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by RT-PCR (Figure 5B), western blot (Figure 5C), luciferase assays (Figure 5D), and ChIP experiments (Figures 5E-H). The demonstration of both the forward regulatory pathway (ZFP36L1\u2192HDAC3\u2192PD-L1) and the negative feedback loop (HDAC3\u2192ZFP36L1-E1) provides comprehensive mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Rescue experiments demonstrated that SE-driven ZFP36L1 positively regulates PD-L1 expression by inhibiting HDAC3. Simultaneous overexpression of HDAC3 with ZFP36L1 decreased PD-L1 levels, and HDAC3 restoration rescued the effects of SPI1 overexpression. The inhibition of HDAC3 provides positive feedback to promote ZFP36L1 transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 are supported by rescue experiments using western blot and flow cytometry (Figures 5I-L). The bidirectional rescue experiments (ZFP36L1+HDAC3 and SPI1+HDAC3) provide strong evidence for the regulatory relationships and feedback mechanisms in the signaling axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "ZFP36L1 promotes HDAC3 mRNA decay by directly binding to the AU-rich element (ARE) in the 3'UTR of HDAC3 mRNA. Actinomycin D chase experiments showed that ZFP36L1 knockdown increased HDAC3 mRNA half-life while overexpression decreased it. RNA immunoprecipitation confirmed direct binding, luciferase assays identified the specific ARE binding site, and RNA pull-down experiments demonstrated that the CCCH-type zinc finger domains are required for binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 are supported by multiple complementary approaches: mRNA stability assays (Figure 5M), RIP experiments (Figure 5N), luciferase reporter assays with wild-type and mutant 3'UTR constructs (Figure 5O), and RNA pull-down with wild-type and mutant ZFP36L1 proteins (Figure 5P). The systematic validation from mRNA stability to direct binding to functional domain mapping provides comprehensive mechanistic evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "In 70 PD-L1-positive GC tumor tissues, IHC scoring revealed that ZFP36L1 expression positively correlated with PD-L1 and SPI1 expression, while negatively correlating with HDAC3 expression, validating the regulatory relationships observed in cell culture experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 are supported by IHC analysis of patient tissues (Figures 6A-C). The correlation analysis in clinical samples provides important validation that the regulatory relationships identified in cell culture systems are relevant in human tumors, though causality cannot be definitively established from correlation data alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "In vivo experiments in C57BL/6J mice showed that Zfp36l1 knockdown did not affect subcutaneous tumor size but reduced Pdl1 expression and decreased pulmonary metastatic nodules with increased Cd8\u03b1+ T-cell infiltration. Importantly, this anti-metastatic effect was absent in T-cell-deficient nude mice, suggesting that targeting ZFP36L1 has potential immunotherapeutic benefits dependent on T-cell function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 are supported by in vivo experiments in both immunocompetent (Figures 6E-I) and immunodeficient mice (Figure 6J). The differential effects in wild-type versus nude mice provide strong evidence for T-cell-dependent mechanisms. However, the therapeutic implications (C106) remain speculative and would require additional validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "The study establishes that ZFP36L1, driven by a super-enhancer with SPI1 as the specific binding transcription factor, enhances IFN-\u03b3-induced PD-L1 expression by binding to the ARE in HDAC3 mRNA 3'UTR and promoting its decay. This SPI1-ZFP36L1-HDAC3-PD-L1 signaling axis orchestrates immune escape mechanisms in GC and offers potential targets for immune checkpoint therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C112 represent comprehensive summary conclusions supported by the totality of experimental evidence presented in the manuscript. The mechanistic pathway is well-established through multiple complementary approaches. However, the therapeutic implications (C112) remain speculative and would require clinical validation studies to fully support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Background claims establishing that gastric cancer is a major cause of mortality, particularly in China, and that PD-L1-targeted immunotherapy is a promising but challenging approach for unresectable GC, with current guidelines recommending checkpoint inhibitor therapy for cases with high PD-L1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 are standard background statements supported by appropriate citations to established literature (Qi et al. 2023, Ming 1977, Guan et al. 2023, Janjigian et al. 2023) and general scientific knowledge. These provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Background claims describing super-enhancers as densely clustered transcriptionally active enhancers with characteristic features (H3K27ac enrichment, recruitment of BRD4/MED1/P300), their identification using the ROSE algorithm and ChIP-seq/CUT&Tag techniques, and their roles in tumor biology including immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 are standard background statements supported by appropriate citations to established literature (Whyte et al. 2013, Liu et al. 2022, Berico et al. 2023, Ye et al. 2023, Ho et al. 2023). These provide appropriate scientific context for the SE-focused investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Background claims describing the ZFP36 gene family structure, function, and localization, including the specific characteristics of ZFP36L1 (genomic location, transcript variants, protein structure, subcellular distribution) and the roles of family members in inflammation and cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C22 are standard background statements supported by appropriate citations (Snyder and Blackshear 2022, Xing et al. 2019) and established genetic/protein databases. These provide necessary background on the ZFP36L1 protein that is the focus of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C23"
+    ],
+    "result": "Previous proteomic analysis by the authors identified increased MED1 and P300 levels in infiltrative GC compared to expanding GC, providing the rationale for investigating SE heterogeneity between these subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 is supported by citation to the authors' previous work (Hong et al. 2023) and reference to Figure 1\u2014figure supplement 1A. This provides appropriate justification for the current study's focus on SEs in infiltrative GC.",
+    "result_type": "MINOR"
+  }
+]

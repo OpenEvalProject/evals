@@ -1,0 +1,280 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "AI-based virtual screening using AtomNet identified three promising KATP channel pharmacochaperone candidates from ~2.5 million compounds. The screening targeted the RPG binding site in the KATP channel structure (PDB ID 6PZ9), and after filtering and diversity clustering, 96 top-ranking compounds were tested experimentally, yielding three compounds (C24, C27, C45/Aekatperone) with consistent pharmacochaperone effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C33-C37, and C96-C99 describe a coherent virtual screening workflow with appropriate filtering steps (medicinal chemistry filters, similarity exclusion, diversity clustering). The identification of three active compounds from 96 tested candidates represents a reasonable hit rate (~3%) for structure-based virtual screening, and the methodology is well-documented with specific parameters provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Aekatperone exhibits pharmacochaperone effects on multiple KATP trafficking mutants. Western blot analysis showed that Aekatperone treatment (10-200 \u03bcM) increased the mature (complex-glycosylated) form of SUR1 trafficking mutants (F27S, A30T, A116P, V187D) in a dose-dependent manner, with effects plateauing at 100-200 \u03bcM. Immunofluorescence confirmed increased surface expression of mutant channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C40-C43 are well-supported by multiple complementary assays (western blot, immunofluorescence) across several trafficking mutants. The dose-response data (C41-C42) shows appropriate quantification with statistical analysis (n=3, p=0.0133). The use of multiple mutants strengthens the conclusion that Aekatperone has general pharmacochaperone activity for SUR1-TMD0 trafficking defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C44",
+      "C45",
+      "C48"
+    ],
+    "result": "Aekatperone reversibly inhibits KATP channel activity with an IC50 of ~9 \u03bcM. Patch-clamp recordings showed that 10 \u03bcM Aekatperone occluded MgADP stimulation of KATP channels, but this effect was reversed upon compound washout. Rb+ efflux assays confirmed dose-dependent inhibition with IC50 = 9.23 \u00b1 0.36 \u03bcM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C44-C45, and C48 are supported by two independent assay methods (patch-clamp and Rb+ efflux) that yield consistent results. The reversibility demonstrated in C45 is a key finding distinguishing Aekatperone from high-affinity inhibitors like GBC. The IC50 determination includes appropriate error estimates and replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Trafficking mutant channels rescued by Aekatperone show functional recovery upon drug removal. After overnight Aekatperone treatment and washout, SUR1F27S and SUR1A30T mutants showed significant dose-dependent increases in Rb+ efflux compared to DMSO controls, contrasting with GBC-treated cells which showed reduced efflux. Rescued mutants responded to diazoxide at ~80% of wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C49-C51 demonstrate the key therapeutic advantage of Aekatperone over existing pharmacochaperones. The comparison with GBC (C50) provides critical context showing that high-affinity inhibitors prevent functional recovery. The diazoxide response data (C51) is particularly important for clinical relevance, though the exact experimental design could be clearer regarding timing of diazoxide addition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Aekatperone's pharmacochaperone and reversible inhibitory effects are conserved in human KATP channels. The effects observed in hamster SUR1/rat Kir6.2 channels were replicated in human SUR1/Kir6.2 channels, which share 95% and 96% protein sequence identity, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by data in Figure 2\u2014figure supplement 2 showing similar effects in human channels. The high sequence homology (C47) provides a reasonable basis for expecting conservation of drug effects. This is important for translational relevance, though more extensive characterization in human channels would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C75"
+    ],
+    "result": "Aekatperone shows 4-5 fold selectivity for SUR1/Kir6.2 over SUR2A/Kir6.2 and SUR2B/Kir6.2 channels. Patch-clamp recordings showed that 10 \u03bcM Aekatperone had no significant effect on MgADP stimulation of SUR2-containing channels. Rb+ efflux assays yielded IC50 values of 41.22 \u00b1 2.22 \u03bcM (SUR2A) and 41.85 \u00b1 2.08 \u03bcM (SUR2B), compared to 9.2 \u03bcM for SUR1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 and C75 are well-supported by both electrophysiology and Rb+ efflux data showing consistent ~4-5 fold selectivity. The selectivity is modest but potentially sufficient to reduce off-target effects on cardiac and smooth muscle KATP channels. Statistical analysis and replication appear adequate, though the number of replicates is not explicitly stated for all experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C10"
+    ],
+    "result": "CryoEM structure of Aekatperone-bound KATP channel was determined at 4.1 \u00c5 resolution. The structure shows a closed Kir6.2 pore (radius ~0.75 \u00c5 at F168), NBD-separated SUR1 conformation, and clear density for Aekatperone in the TMD pocket above NBD1. The Kir6.2 N-terminal peptide (KNtp) is resolved with its N-terminus contacting bound Aekatperone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 and C10 describe a well-characterized cryoEM structure with appropriate resolution for the conclusions drawn. The 4.1 \u00c5 resolution is sufficient to identify ligand density and overall protein conformations. The structure determination workflow (Figure 5\u2014figure supplement 1) shows appropriate particle numbers and classification steps. Comparison with apo structure (Figure 5\u2014figure supplement 2) validates ligand assignment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Aekatperone binds in the SUR1 TMD pocket with distinct features compared to high-affinity inhibitors. The cyclohexyl moiety aligns with S1238, the pyrazole coordinates with T1242/N1245, the sulfonyl group interacts with R1246/R1300, and the benzene ring forms \u03c0-\u03c0 stacking with Y377. Unlike GBC and RPG, Aekatperone does not interact with R306. This binding stabilizes the KNtp-SUR1 interface, promoting assembly while preventing channel opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 describe detailed molecular interactions supported by the cryoEM structure. However, C59 relies heavily on citations to prior work for the mechanistic interpretation. The lack of R306 interaction (C65) is an important distinguishing feature. The resolution (4.1 \u00c5) is marginal for confidently assigning all specific interactions, particularly for the imidazole group which shows weaker density (acknowledged in the text).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Molecular dynamics simulations reveal conformational flexibility of Aekatperone in the binding pocket. During 2.5 \u03bcs of simulation (5 \u00d7 500 ns runs), Aekatperone remained in the pocket but exhibited flexibility, particularly in the imidazole ring (group e) which displayed considerable conformational freedom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by MD simulation data with appropriate total simulation time (2.5 \u03bcs across 5 replicates). The analysis of conformational freedom by molecular fragments is appropriate. The flexibility of the imidazole group (C67) is consistent with the weaker cryoEM density for this region. System equilibration appears adequate based on Figure 6\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Mutagenesis validates the Aekatperone binding model. Mutations Y377A, R1246A, and R1300A significantly reduced Aekatperone inhibition, with Y377A and R1300A being particularly detrimental. R306A had little effect, consistent with lack of R306 involvement. The S1238Y/T1242S double mutation (mimicking SUR2) reduced inhibition, and Kir6.2 N-terminal deletions (\u0394N5, \u0394N10) attenuated inhibition at all concentrations tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 provide strong functional validation of the structural model through systematic mutagenesis. The results are internally consistent with the binding model and the selectivity data. Statistical analysis appears appropriate with multiple replicates. The KNtp deletion experiments (C72) support involvement of the N-terminus, though they cannot distinguish between direct binding interactions and allosteric effects on channel gating.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C78"
+    ],
+    "result": "Aekatperone represents a promising lead compound for CHI treatment and validates AI-aided drug discovery for rare diseases. The compound fits the profile of a reversible inhibitor pharmacochaperone with selectivity for pancreatic KATP channels, and rescued mutant channels respond to diazoxide at ~80% of wild-type levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73-C74 and C78 represent conclusions and future directions rather than fully demonstrated results. While the data support Aekatperone's potential (C73-C74), clinical application requires extensive additional validation not yet performed (acknowledged in C94-C95). The claim about AI-aided drug discovery (C78) is supported by the successful identification of active compounds, but the comparison to traditional methods is not rigorously evaluated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background on KATP channels, CHI, and pharmacochaperones. KATP channels (SUR1/Kir6.2) regulate insulin secretion in pancreatic \u03b2-cells. Loss-of-function mutations cause CHI, with trafficking mutations being unresponsive to diazoxide. Current KATP inhibitors act as pharmacochaperones but have high affinity that limits functional recovery. Structural studies revealed a common binding pocket in SUR1 where inhibitors stabilize the SUR1-Kir6.2 interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C32 represent established background knowledge appropriately cited from the literature. These claims provide context for the study but are not novel findings. The citations appear appropriate and the mechanistic understanding is consistent with current knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Aekatperone is classified as a 'site A' ligand based on structural comparison with other KATP inhibitors. This classification is supported by Aekatperone occupying the site A region and the S1238Y mutation compromising inhibition. Site A ligands show variable potency, with tolbutamide and Aekatperone being reversible (IC50 ~23 \u03bcM and 9 \u03bcM), while mitiglinide is nearly irreversible (IC50 in low nM range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 provide useful context by relating Aekatperone to the established site A/B binding model. The classification is supported by structural and mutagenesis data (C80). The comparison with other site A ligands (C81-C82) appropriately cites prior work and highlights that site occupancy alone does not determine affinity or reversibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Discussion of CHI therapeutic landscape and limitations of existing pharmacochaperones. Nearly half of CHI-KATP mutations prevent surface expression. KATP trafficking mutations concentrate in SUR1-TMD0 and are rescued by various inhibitors (tolbutamide, GBC, RPG, CBZ). However, GBC and RPG have high affinity preventing functional recovery, CBZ has multiple off-targets, and tolbutamide was withdrawn due to cardiovascular concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C92 summarize the therapeutic context and limitations of existing drugs, appropriately citing prior literature. These claims justify the need for new pharmacochaperones like Aekatperone but represent discussion/context rather than novel findings. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Study limitations and future directions. The focused screening approach may miss potential scaffolds from larger libraries. Before clinical application, Aekatperone requires evaluation for off-target effects, testing in relevant cell and animal models, and assessment of potential cardiovascular/neurological effects. A dosing regimen combining Aekatperone with diazoxide could enhance therapeutic effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77 and C93-C95 appropriately acknowledge study limitations and propose future directions. These are reasonable assessments of what additional work is needed. C93 is speculative but logically follows from the data. C94-C95 correctly identify that extensive additional validation is required before clinical translation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Cell line authentication and quality control. COSm6 cells were authenticated by RT-PCR/sequencing of \u03b1-tubulin (confirming Green monkey origin), and INS-1 cells by RT-PCR/sequencing of SUR1 and Kir6.2 (confirming rat origin). Both cell lines were tested for mycoplasma contamination every ~6 months.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 describe appropriate cell line authentication and quality control procedures. These are important methodological details that support reproducibility and data integrity. The authentication methods are standard and appropriate for the cell lines used.",
+    "result_type": "MINOR"
+  }
+]

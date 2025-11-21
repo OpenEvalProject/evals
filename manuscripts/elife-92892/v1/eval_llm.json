@@ -1,0 +1,432 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C31",
+      "C32",
+      "C41",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The study employed a contextual two-armed bandit task with 25 participants (14 male, 11 female, mean age 20.82\u00b12.12 years) with concurrent EEG recordings. The task was designed to enable participants to actively reduce novelty, avoid variability, and maximize rewards, with specific reward distributions for two contexts and a total of 120 trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C31-C32, C41, and C159-C162 provide comprehensive methodological details including sample size, task design, reward structures, and ethical approval. The experimental design is clearly described with sufficient detail for replication, though the relatively small sample size (n=25) may limit generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C99",
+      "C133"
+    ],
+    "result": "Active inference provided superior model fit to participants' behavioral data compared to model-free and model-based reinforcement learning, as measured by Bayesian Information Criterion (BIC). The active inference model better captured participants' exploratory inclinations and information-seeking behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42-C43, C99, and C133 consistently report that active inference outperformed reinforcement learning models in explaining behavioral data. The use of BIC for model comparison is appropriate, and the finding is supported by behavioral observations (C44-C48) showing information-seeking preferences. However, the manuscript does not report effect sizes or confidence intervals for the model comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Participants exhibited context-dependent decision-making strategies: they significantly favored asking for information (cue) over staying, showed equal preference for safe and risky options when context was unknown, strongly preferred the risky path in high-reward contexts (Context 1), and mostly chose the safe path in low-reward contexts (Context 2) with occasional risky choices for epistemic value.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C52 describe consistent behavioral patterns across different experimental conditions. The findings are supported by data shown in Figures 4b and 5, demonstrating systematic preferences that align with active inference predictions. The behavioral data show clear patterns of information-seeking and context-dependent risk preferences, though statistical tests and effect sizes are not explicitly reported for these comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C56",
+      "C57",
+      "C112"
+    ],
+    "result": "At the sensor level, EEG analysis revealed that frontal, central, and parietal regions showed differential activity associated with novelty, with statistically significant differences between first and second half trials in left frontal (p<0.01), right frontal (p<0.05), central (p<0.01), and left parietal (p<0.05) regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C56-C57, and C112 report sensor-level EEG findings with specific p-values for multiple brain regions. The statistical significance is clearly stated, though the manuscript does not report correction for multiple comparisons at the sensor level or provide effect sizes. The interpretation that these regions encode environmental statistical structure (C57) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C60",
+      "C61",
+      "C63"
+    ],
+    "result": "Frontal and central brain regions showed differential activity associated with variability (uncertainty about hidden states), with statistically significant differences between asked and not-asked trials in left frontal (p<0.01), right frontal (p<0.05), and central (p<0.001) regions. Higher theta band signal was observed during not-asked trials, suggesting correlation with uncertainty about hidden states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C60-C61, and C63 report sensor-level findings with specific p-values and spectral analysis. The theta band finding (C63) is supported by citation and aligns with previous literature. However, the interpretation of these signals as encoding hidden states (C61) involves inference beyond the direct data, and multiple comparison corrections are not clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C134"
+    ],
+    "result": "Source-level EEG analysis revealed that expected free energy is encoded in the frontal pole (p<0.05) and middle frontal gyrus during action selection, with the superior temporal gyrus also showing strong correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C64-C65, and C134 report source-level findings with statistical significance. The frontal pole correlation with expected free energy is a key finding supported by regression analysis. However, C132 acknowledges that only a subset of regions remain significant after FDR correction, indicating that some reported correlations may not survive multiple comparison correction. The use of an average head model rather than individual models (noted in Discussion) may also limit precision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C66",
+      "C67",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C82",
+      "C135",
+      "C136"
+    ],
+    "result": "Different types of uncertainty (novelty and variability) are encoded in distinct but overlapping brain regions. The medial orbitofrontal cortex, precentral gyrus, and postcentral gyrus showed correlations with the value of reducing variability (p<0.05), while the rostral middle frontal gyrus, superior frontal gyrus, insula, and lateral orbitofrontal cortex correlated with the value of reducing novelty (p<0.05). Neural correlates were found for the value of reducing uncertainties but not for the degree of uncertainties after FDR correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C66-C67, C72-C73, C76-C77, C82, C135-C136 describe the neural encoding of different uncertainty types with specific p-values and brain regions. The finding that value of reducing uncertainty (but not degree of uncertainty) shows robust neural correlates after FDR correction (C82) is an important distinction. However, C132 notes that only a subset of regions survive multiple comparison correction, suggesting some findings may be less robust than initially presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Simulation experiments demonstrated that active inference agents with different parameter configurations exhibit different decision-making policies. Agents with low learning rates initially explore thoroughly by accessing cues to understand reward distributions, while agents with high learning rates may become trapped in local optima. The simulations showed human-like exploration-exploitation trade-offs with preference for information-seeking early and reward-maximizing later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C40 describe simulation results that demonstrate the theoretical behavior of active inference agents. These simulations provide proof-of-concept for the model's ability to capture exploration-exploitation trade-offs. The findings are illustrated in Figure 3 and provide important context for interpreting human behavioral data. However, these are computational demonstrations rather than empirical findings about human behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C130",
+      "C131"
+    ],
+    "result": "The active inference model did not fully capture some aspects of participant behavior, including occasional risky choices in later trials (possibly due to forgetting) and discrete reward structure effects. The authors acknowledge that participants may remember mean rewards rather than specific probabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 and C130-C131 honestly acknowledge limitations in model fit. These are important caveats that demonstrate critical self-assessment. The speculation about forgetting (C54) and memory limitations (C131) are reasonable hypotheses for future investigation but remain untested in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C58",
+      "C108",
+      "C109"
+    ],
+    "result": "Participants showed greater uncertainty about model parameters in the first half of trials compared to the second half. After learning the environmental statistical structure, participants could better utilize this knowledge for more confident decision-making, reflected in greater neural responses in the second half.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C58, C108-C109 describe the learning trajectory across trials with theoretical support (C55 cites Schwartenbeck et al., 2019). The interpretation is consistent with active inference theory and supported by the EEG findings (C56, C112). However, C58 and C109 involve inference about internal cognitive states that are not directly measured, and the counterintuitive finding of greater neural response for lower novelty (C113) requires careful interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C62",
+      "C110",
+      "C111"
+    ],
+    "result": "During not-asked trials, participants had greater uncertainty about hidden states, leading to higher-variability actions reflected in increased brain activity. When participants knew hidden states (asked trials), they could integrate information with environmental statistical structure for more confident decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C62, C110-C111 describe the relationship between information availability and neural activity. C59 is a logical inference from the experimental design, while C62 and C111 involve interpretation of neural signals. The findings are consistent with the EEG data (C60), though C62 is explicitly noted as speculative. The interpretation assumes a direct relationship between neural activity and decision confidence that is not independently validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C128",
+      "C129"
+    ],
+    "result": "During choice stages, expected free energy showed stronger correlations with brain signals than extrinsic value alone, with temporal dynamics suggesting the brain initially encodes reward values before integrating them with information values. Correlations were more pronounced in the Second choice stage (reward decisions) compared to the First choice stage (information decisions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71 and C128-C129 describe important temporal and functional distinctions in neural encoding. The finding that expected free energy (which combines reward and information) shows stronger correlations than extrinsic value alone (C128) supports the active inference framework. The temporal sequence (C71) and stage differences (C129) provide insights into decision-making processes, though these interpretations involve inference from correlation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "During the Second choice stage, strong correlations (p<0.001) were found between expected free energy and the rostral middle frontal gyrus, with additional correlations in caudal middle frontal gyrus, middle temporal gyrus, pars triangularis, and superior temporal gyrus. Extrinsic value showed similar patterns. No significant correlations were found for degree of novelty after FDR correction. Correlations were generally more pronounced in the Second choice stage compared to First choice stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75, C78-C81 report source-level findings with appropriate statistical thresholds (p<0.001 for some regions). The finding that degree of novelty shows no significant correlations after FDR correction (C80) is an important null result. The comparison across stages (C81) provides insight into functional specialization. However, the large number of regions tested raises concerns about multiple comparisons despite FDR correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "During the Second result stage (belief update after receiving rewards), correlations (p<0.05) were observed between extrinsic value and lateral occipital gyrus/parietal regions, between prediction error and temporal/occipital regions, and between reducing novelty and precentral gyrus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C85 report source-level findings during the result stage, but C130 explicitly states these results were 'not very reliable' possibly due to discrete reward structure. This self-acknowledged limitation significantly undermines confidence in these specific findings. The p<0.05 threshold is also less stringent than for other stages, and the results are relegated to appendix figures, suggesting the authors themselves view these as less robust.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The frontal pole plays a critical role in combining extrinsic value with epistemic value (expected free energy) to guide decision-making during the First choice stage. The medial orbitofrontal cortex, rostral middle frontal gyrus, and lateral orbitofrontal cortex are involved in valuing uncertainty about hidden states and learning information about these states during the First result stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C124 integrate current findings with previous literature (C119-C120, C122-C123) to interpret the functional roles of specific brain regions. The interpretations are well-supported by citations and consistent with the EEG data. However, these are functional interpretations based on correlational data and reverse inference from brain regions to cognitive processes, which has known limitations. C124 is explicitly noted as postulated rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Some brain regions may evaluate both the value of reducing novelty and the value of reducing variability. The precentral gyrus and superior parietal gyrus play roles in learning state transition functions and reducing novelty during the Second result stage, with multiple studies supporting the superior parietal gyrus role in uncertain decision-making.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 describe overlapping neural representations for different uncertainty types, supported by the data and previous literature (C127 cites multiple studies). However, C125 is tentative ('may evaluate'), and the Second result stage findings are acknowledged as less reliable (C130). The interpretation of functional roles (C126) involves inference from correlation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The finding of greater neural response for lower novelty trials contrasts with some previous studies showing greater response for higher novelty. This difference may reflect different definitions of novelty: perceptual difficulty in previous work versus information gain from policies in the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 acknowledge an apparent contradiction with previous literature and provide a reasonable explanation based on different operational definitions of novelty. This demonstrates good scientific practice in addressing discrepancies. However, the explanation remains speculative and would benefit from direct empirical testing. The comparison highlights important conceptual distinctions in how uncertainty is defined and measured.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "Only a subset of brain regions identified without multiple comparison correction exhibit correlations robust enough to remain significant after FDR correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is an important methodological acknowledgment that many reported correlations do not survive stringent multiple comparison correction. This honest reporting of limitations is commendable but also indicates that some of the reported brain-behavior correlations may be less robust than initially suggested. This affects the confidence in several of the source-level findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C97",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The theoretical framework of active inference integrates perception, decision-making, and learning through minimization of free energy and expected free energy. Expected free energy comprises epistemic value (reducing novelty and variability) and extrinsic value (reward), providing a unified mechanism for exploration-exploitation trade-offs. The framework builds on partially observable Markov decision processes and variational Bayesian methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C12, C27-C30, C97, and C140-C158 provide comprehensive theoretical background on active inference, well-supported by citations to foundational work (Friston and colleagues). These are established theoretical principles rather than novel empirical findings. The theoretical framework is internally consistent and provides the conceptual foundation for the empirical work, though the claims themselves are not tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "EEG data were processed using EEGLAB and MNE packages with standard preprocessing steps including downsampling to 250 Hz, bandpass filtering (1-30 Hz), interpolation of bad channels, ICA decomposition for artifact removal, and source localization using eLORETA with 'aparc sub' parcellation. Two-second segments were extracted at each experimental stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C170 describe standard EEG preprocessing and analysis methods with appropriate tools and parameters. The methods are clearly described and follow established practices. However, the use of an average head model (fsaverage) rather than individual head models is a limitation acknowledged in the Discussion, potentially reducing spatial precision of source localization. The choice of 1-30 Hz filtering is appropriate for the analyses conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Human exploration strategies vary by situation and can be viewed as blending directed exploration (favoring uncertain actions) and random exploration. In active inference, randomness derives from precision parameters while directed exploration stems from expected free energy computation. Model-fitting results show high variance in individual exploration strategies, incorporating both model-free and model-based learning components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C96 describe the theoretical basis for exploration strategies and relate them to the empirical findings (C92). The theoretical claims are well-supported by citations (C87, C91, C94, C96). The finding of high variance in exploration strategies (C92) is supported by the behavioral data and model fitting, though specific quantitative measures of this variance are not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Active inference has strengths including robust statistical and neuroscientific foundations, superior exploration mechanisms compared to basic reinforcement learning, time-dependent policies enabling efficient exploration-exploitation transitions, and adaptability to different environments. Limitations include computational complexity restricting application to continuous spaces and dependence on prior selection. However, the complete class theorem indicates any behavioral data can be described with appropriate priors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C107 provide balanced discussion of active inference strengths and limitations, supported by citations (C98, C100, C102-C103, C105-C106). The discussion of the complete class theorem (C106-C107) is an important theoretical point about model flexibility, though it also highlights a potential concern about falsifiability. The limitations are honestly acknowledged, and the strengths are supported by the empirical findings in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Active inference has been applied to understanding cognitive processes and behavioral policies, with theoretical work on exploration-exploitation trade-offs. Previous studies investigated different forms of uncertainty (novelty and variability) using various multi-armed bandit tasks, but these tasks only separated either variability from novelty or actions from states. Theoretical studies on active inference have rarely been confirmed experimentally with both behavioral and neural evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C25 provide literature review establishing the gap that this study addresses. The claims are supported by multiple citations (C14-C16, C19-C20, C23-C24) and accurately characterize the state of the field. The critique of previous tasks (C25) motivates the current experimental design. C20 is a key claim establishing the novelty of the current work in providing both behavioral and neural validation of active inference theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "Active inference is capable of investigating human behaviors in decision-making under uncertainty, as demonstrated by the combined behavioral and neural evidence from this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C139 is the main conclusion of the study, supported by the convergent evidence from behavioral model comparison (C4, C42), behavioral patterns (C44-C52), and neural correlates (C5-C8, C64-C85). The study successfully demonstrates that active inference can account for human decision-making under uncertainty with both behavioral and neural validation. However, the relatively small sample size, acknowledged limitations in model fit (C53, C130), and issues with multiple comparison correction (C132) suggest this conclusion should be interpreted as preliminary support rather than definitive proof.",
+    "result_type": "MAJOR"
+  }
+]

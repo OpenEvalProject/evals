@@ -1,0 +1,162 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C72"
+    ],
+    "result": "MGPfact is a novel model-based manifold-learning framework that factorizes complex cellular trajectories into independent bifurcation processes of gene sets, enabling interpretable trajectory inference with efficient feature selection. The method uses MURP downsampling, Gaussian process mixtures with bifurcation kernels (RBF and polynomial), and MCMC inference (AMWG and SLICE sampling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C15-C19, C21, and C72 collectively describe the methodological innovation and capabilities of MGPfact. The mathematical framework is clearly defined with appropriate kernel functions and inference methods. The claim of uniqueness (C72) is supported by the comprehensive literature review showing no other method performs trajectory factorization in this manner. The two-stage pipeline (C17) is well-documented with both text and figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23",
+      "C26",
+      "C33",
+      "C36",
+      "C73",
+      "C74"
+    ],
+    "result": "MGPfact demonstrates competitive performance in trajectory inference benchmarking across 239 datasets (110 real, 229 synthetic), ranking second overall to TinGa but achieving top performance in branch division accuracy (F1_branches) and ranking first in real datasets. MURP downsampling provides substantial performance improvements (5.31-185% increase in overall score).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22-C23, C26, C33, C36, C73-C74 are supported by comprehensive benchmarking data presented in Figures 2-3 and Table 1. Statistical tests (t-tests, p<0.1) support claims of significant outperformance in specific trajectory types. The validation dataset composition is clearly described, and performance metrics are appropriate for trajectory inference evaluation. The better performance on real vs. synthetic data (C74) is an interesting finding supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "MGPfact successfully reconstructed microglia developmental trajectories from immature microglia (IM) to homeostatic microglia (HM) and proliferative-region-associated microglia (PAM), identifying three bifurcation processes with 74-90 highly weighted genes each. The method identified key transcription factors (Hif1a, E2f5, Nfkb1) and discovered two PAM subtypes (PAM-T1 and PAM-T2), with PAM-T2 showing similarity to disease-associated microglia (DAM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C54 are well-supported by the microglia case study data shown in Figure 4 and supplementary files. The identified marker genes (Apoe, Selplg, Gpnmb, Mki67, Tubb5, Top2a, Tmem119, P2ry12, Sepp1) and transcription factors are validated by citations to experimental literature. The discovery of PAM subtypes and their connection to DAM is supported by differential expression analysis. The biological interpretations are consistent with known microglia biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "MGPfact significantly improved explanatory power for CD8+ T cell subtypes compared to Monocle 2 (p<0.05) in both NSCLC and CRC datasets. The identified trajectories showed strong clinical associations: in NSCLC, trajectory 1 (cytotoxic T cells, 96%) associated with better survival while trajectory 2 (exhausted T cells, 91%) associated with worse survival. Gene expression signatures from these trajectories predicted immune checkpoint inhibitor responses across multiple independent cohorts (AUC 0.796-0.964).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by statistical comparisons in Table 2, survival analyses in Figure 5a-b, and ROC analyses in Figure 5c-d. The goodness-of-fit improvements are quantified with R-squared values and p-values from F-tests. The survival associations are validated in TCGA cohorts with appropriate Cox regression and hazard ratios. The ICI response predictions are validated across 3-4 independent cohorts with significant AUC values, demonstrating clinical utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "MGPfact identified novel CD8+ T cell subtypes with clinical significance: in NSCLC, CD8-ZNF683-T1 (LEF+/TBX21-) and CD8-ZNF683-T2 (LEF+/TBX21+), where T2 cells expressed pre-exhaustion markers; in CRC, CD8-GZMK-T1 (EOMES-/BHLHE40+) and CD8-GZMK-T2 (EOMES-/BHLHE40-), where T1 cells showed higher cytotoxic activity. Increased CD8-ZNF683-T1 fractions associated with favorable outcomes in LUAD, and CD8-GZMK-T1 signatures predicted ICI responses (AUC 0.782-0.917).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C70 are supported by consensus trajectory analyses in Figure 6, differential expression data, and clinical validation. The subtype characterizations are based on transcription factor activity and differential gene expression with appropriate statistical thresholds (|logfc|>0.25, adjusted p<0.1). The clinical associations are validated through survival analysis (Figure 6c) and ICI response prediction across three independent cohorts (Figure 6f). The biological interpretations are supported by citations to relevant literature on TBX21 and BHLHE40 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The manuscript provides background on existing trajectory inference methods, describing the approaches used by TSCAN (minimum spanning trees), DPT (random walks), scShaper (pseudo-temporal solutions), Monocle 2 (DDRtree), Monocle 3 (UMAP), and TinGa (Growing Neural Gas algorithm), and notes that graph-based embedding methods better capture nonlinear biological signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C11 accurately describe established methods in the field with appropriate citations. These are factual descriptions of prior work that provide context for the development of MGPfact. The characterization of graph-based methods as better for capturing nonlinear signals (C5) is a reasonable general statement supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Current trajectory inference methods have significant limitations: RNA velocity analyses cannot resolve complex branching trajectories, graph-based methods have limited interpretability due to difficulty disentangling specific biological processes, and conventional feature-selection methods are inefficient for learning complex topologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 represent reasonable critical assessments of the field that motivate the development of MGPfact. These limitations are well-recognized in the trajectory inference community and are supported by the authors' comprehensive literature review. The claims appropriately identify gaps that MGPfact aims to address.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MGPfact has acknowledged limitations: it is designed specifically for bifurcation topologies and is less efficient for complex topologies; it infers trajectories based on selected gene sets rather than the whole transcriptome; the bifurcation kernel definition introduces singularities for highly complex trajectories; it operates only in the temporal domain, neglecting spatial dynamics; and it assumes independence of bifurcation processes. The authors recommend experimental validation and future incorporation of spatial dynamics and RNA velocity data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 represent honest and appropriate acknowledgment of methodological limitations. These are clearly stated in the Discussion section and are consistent with the observed performance data (e.g., lower performance on complex topologies). The recommendations for future work (C81) and caution in interpretation (C82) are appropriate given these limitations. This transparent discussion of limitations strengthens the overall credibility of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49",
+      "C51",
+      "C77"
+    ],
+    "result": "The manuscript cites established biological knowledge about key transcription factors: Hif1a is crucial for microglial activation and linked to neurodegenerative disease; E2f5 and Nfkb1 have known roles in microglial development; and TBX21 and BHLHE40 are known regulators of CD8+ T cell functionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C51, and C77 are factual statements about established biology, each supported by appropriate citations to the literature (Wang et al. 2022; Dresselhaus and Meffert 2019; Nawal 2017; Lutter et al. 2022; Pritchard et al. 2023; Salmon et al. 2022; Trapani 2001). These provide biological validation for the computational findings.",
+    "result_type": "MINOR"
+  }
+]

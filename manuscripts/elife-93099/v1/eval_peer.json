@@ -1,0 +1,153 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C36",
+      "C58",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "The authors claim that adenylate kinase operates with a broad, conformationally delocalized transition-state ensemble (TSE) in the presence of Mg2+, spanning ~1 \u00c5 along the reaction coordinate and including asymmetric conformations. This wide TSE is proposed as a fundamental catalytic strategy that avoids entropic bottlenecks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Multiple reviewers express significant concerns about this central claim. One reviewer states the conclusion 'appears this may be a misinterpretation of the simulation results' and notes 'questions still remain about their conclusion regarding the wide-TS.' Another reviewer indicates 'it is not clear the degree to which this hypothesis is fully supported by the data' and notes the interpretation is 'somewhat speculative.' The editor summarizes that 'there remain limitations in the computational analyses' leading to 'the level of evidence is incomplete.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C40",
+      "C41",
+      "C76",
+      "C79"
+    ],
+    "result": "The QM/MM simulations report specific activation free energy barriers: 13\u00b10.9 kcal/mol for fully charged nucleotides with Mg2+, 23\u00b10.9 kcal/mol for monoprotonated with Mg2+, and 34\u00b11.6 kcal/mol without Mg2+. Higher-level DFT(PBE) calculations are claimed to be in excellent agreement with SCC-DFTB results, though umbrella sampling gives lower barriers than steered MD.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raise concerns about the computational methodology and consistency. One reviewer explicitly states authors 'should clearly point out the large discrepancies between DFTB QM/MM and PBE QM/MM results (shape of free energy files) and also between steered MD and umbrella sampling results (barriers).' Another notes 'concerns about the determined free energy profiles compared to the experimental estimate.' These methodological inconsistencies undermine confidence in the specific barrier values reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C7"
+    ],
+    "result": "Experimental kinetics measurements show a large decrease in activation entropy with divalent cation (\u0394S\u2021 = -5.7\u00b11.6 cal/mol/K with Ca2+ vs -19.1\u00b13.1 cal/mol/K without), which the authors claim confirms the computational prediction of a wider TSE with metal ion present.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the experimental data is valuable, they question the interpretation. One reviewer states 'Another question is the large change in activation entropy (between the reaction with and without divalent cations). This difference may be difficult to attribute sorely to the difference in the reaction geometries near TS.' Another notes that 'The observation of a \"wide conformational ensemble\" is not a quantitative measure of entropy' and that authors 'miss an opportunity to compare directly to the experimental measurements' by not performing temperature-dependent simulations. The connection between TSE width and entropy is questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The simulations show that Mg2+ enables a looser TSE with longer acceptor-donor distances (4.5 \u00c5 vs 4 \u00c5), changes the mechanism from tight/synchronous to loose, stabilizes the transferring phosphate charge, and eliminates the need for a bridging proton.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These mechanistic details from the simulations are not specifically challenged by reviewers. The editor notes 'a broad set of computations and experimental analyses' and one reviewer acknowledges 'A combined application of simulation and experiments is a strength.' The specific geometric and electronic changes with Mg2+ appear accepted as computational observations, though their interpretation regarding TSE width remains contested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C84",
+      "C85"
+    ],
+    "result": "pH-dependent kinetics experiments show opposite trends with and without metal: reaction rate increases with pH in presence of Ca2+ but decreases without metal. This matches computational predictions that fully charged nucleotides are most reactive with metal while monoprotonated state is required without metal.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these experimental observations or their consistency with simulations. One reviewer notes 'the experimental data is valuable' and another acknowledges the study 'combines theoretical calculations and supporting experiments.' The pH-dependence data appears to be accepted as supporting evidence for the protonation state predictions from simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C56",
+      "C69"
+    ],
+    "result": "Active site arginine residues (R36, R85, R124, R150, R161) play specific roles in positioning substrates and stabilizing the transition state, with single Arg-to-Lys mutations causing large decreases in catalytic rate.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings about active site residues and mutational effects are not questioned by reviewers. The mutagenesis data provides experimental validation of computational predictions about residue roles. Reviewers acknowledge the combination of computational and experimental approaches without raising concerns about these specific claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "At low pH (pH 5), P-transfer becomes rate limiting even with Mg2+, allowing estimation of a 24-fold rate enhancement of Mg2+ versus Ca2+.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This experimental observation is not challenged by reviewers and provides useful comparative data on metal ion effects. It represents a straightforward kinetic measurement that supports the general importance of metal ions without being central to the disputed TSE width claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "Umbrella sampling and commitment analysis show a shallow change in committor probability along the reaction coordinate with Mg2+, versus a steep change without Mg2+, corroborating a wider TSE with metal ion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While these computational analyses are presented as supporting evidence, reviewers' concerns about 'large discrepancies between DFTB QM/MM and PBE QM/MM results' and between 'steered MD and umbrella sampling results' extend to these analyses. The commitment analysis interpretation depends on the validity of the underlying free energy surfaces, which reviewers question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "The authors propose that employing a broad TSE represents a fundamentally different catalytic strategy compared to uncatalyzed reactions, modifying transition-state theory for enzymes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenge this broad claim. One states 'In order to assert that something is part of a catalytic strategy of an enzyme, it would be necessary to demonstrate from simulations that the activation entropy for the baseline reaction is indeed greater and the transition state ensemble less \"wide\"... However, these simulations were not performed.' Another notes the authors 'miss an opportunity' to make proper comparisons. The fundamental claim requires comparison to non-enzymatic reaction that was not performed.",
+    "result_type": "MAJOR"
+  }
+]

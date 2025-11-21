@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The Eco-HAB system is an automated experimental setup employing RFID tracking to observe cohorts of 10\u201315 mice in a semi-naturalistic environment with four connected compartments, two containing food and water, tracked continuously for 10 days under 12-hour light-dark cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16, C26\u2013C31 collectively describe the Eco-HAB system's design and operation. The manuscript provides detailed technical specifications (RFID frequency, tracking accuracy, compartment structure) and experimental protocols that are internally consistent and supported by figures (Figure 1A). These are methodological descriptions that establish the experimental platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Mice exhibit clustering behavior, especially during inactive light phases, consistent with thermoregulatory huddling. Individual locomotor activity is a stable characteristic with greater inter-individual than intra-individual variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32\u2013C35 describe observed behavioral patterns supported by Figure 1B-C and cited literature (Rydzanicz et al., 2024). The statistical observation about activity variability is directly shown in the data. These are basic observational findings that validate expected mouse behavior in the system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C43",
+      "C71",
+      "C74",
+      "C82"
+    ],
+    "result": "A pairwise maximum entropy model successfully captures collective mouse behavior in the Eco-HAB, with pairwise interactions sufficient to predict higher-order statistics. The model distinguishes direct social interactions from indirect correlations and individual spatial preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36\u2013C38, C41\u2013C43, C71, C74, C82 establish the core methodological result. The manuscript provides extensive validation: the model reproduces observed statistics (Figure 2\u2014supplement 1), predicts higher-order correlations (Figure 2D-E), shows unbiased in-state probabilities (Figure 2\u2014supplement 4), and demonstrates that triplet models overfit (Figure 2\u2014supplement 5). Cross-validation results (Figure 2\u2014supplement 6) support the choice of pairwise interactions. This is well-supported by multiple independent validation approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C47",
+      "C75"
+    ],
+    "result": "The statistics of inferred interaction parameters show temporal stability and consistency across male cohorts of the same strain, but differ between sexes. Individual chamber preferences show moderate temporal consistency (Pearson correlation ~0.6).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C45, C47, C75 describe temporal and cross-cohort consistency. The manuscript reports specific correlation coefficients and statistical tests (Figure 2\u2014supplement 7) showing chamber preference consistency (\u03c1=0.6\u00b10.1) and interaction variance stability across male cohorts but differences between sexes. Statistical tests are appropriately applied with Bonferroni corrections. The finding of sex differences is supported by data from multiple cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Despite non-zero sociability, the mutual information between single mouse position and the rest of the cohort is low (0.0323\u00b10.0151 bits), indicating that precise individual mouse position is difficult to predict from the network at any single moment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53\u2013C54 quantify the predictive power of social interactions. The mutual information calculation is clearly described in Methods and the low values (maximum 0.06 bits out of possible 2 bits) appropriately support the interpretation that instantaneous positions are poorly predicted despite social structure. This is a valid statistical measure of the system's predictability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "TIMP-1 treatment in the prelimbic cortex increases individual compartment preferences (especially for food-containing compartments) and makes behavior more predictable in male mice, with effects returning to baseline after 5 days. Control BSA injection shows smaller, persistent effects, suggesting partial contribution from injection procedure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C57\u2013C59, C62\u2013C64 describe TIMP-1 effects on individual preferences. The manuscript shows increased mean and variance of food preferences (Figure 3C), increased model likelihood (Figure 3D), and return to baseline consistent with drug release kinetics (Chaturvedi et al., 2014). The BSA control (Figure 3H-I) appropriately demonstrates that some effects may be procedure-related. Statistical comparisons are made with appropriate corrections. The temporal dynamics match expected pharmacokinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C65",
+      "C66",
+      "C76",
+      "C77"
+    ],
+    "result": "TIMP-1 treatment shows sex-specific effects: male mice show increased individual preferences while female mice show increased pairwise interaction contributions and increased mutual information, with both sexes showing increased competitive pairwise interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C65\u2013C66, C76\u2013C77 describe sex differences in TIMP-1 response. The manuscript provides statistical evidence (Figure 3\u2014supplement 1) showing significant interaction variability increase in females but not males, different patterns of conditional likelihood changes, and different mutual information responses. Statistical tests are appropriately applied. The finding of sex-specific effects is supported by parallel experiments in both sexes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C4"
+    ],
+    "result": "TIMP-1 treatment increases the dissatisfaction triplet index (DTI), indicating increased competitive pairwise interactions that make simultaneous satisfaction of all interactions more difficult, suggesting impaired transmission of social information. BSA control shows no such increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68 and C4 describe the DTI measure and its interpretation. Figure 4B shows significant increases in DTI for TIMP-1-treated cohorts (M1, F1) but not BSA control (M4), with appropriate statistical testing (Welch's t-test with Bonferroni correction). The DTI is clearly defined mathematically and the interpretation as reflecting difficulty in information transmission is reasonable given the increased competitive interactions. Subsampling controls (Figure 4\u2014supplements 1-2) confirm the effect is not due to group size differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The current study finds pairwise interactions sufficient to describe collective behavior, contrasting with Shemesh et al. (2013) who found triplet interactions necessary. Differences may arise from experimental arena design, spatial resolution of data, or group size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78\u2013C81 compare findings to prior work and speculate on reasons for differences. While the manuscript correctly identifies the discrepancy with Shemesh et al. (2013), the proposed explanations (arena design, spatial resolution, group size) are speculative and not directly tested. The analogy to renormalization theory (C80) is suggestive but not rigorously demonstrated. This represents reasonable speculation but lacks experimental validation of the proposed mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The pairwise interaction model can capture changes in social interactions induced by neuronal plasticity alterations in the prelimbic cortex, providing a general toolbox for quantifying sociability across different mouse strains and behavioral phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72\u2013C73 summarize the methodological contribution. The manuscript demonstrates that the model successfully captures TIMP-1-induced changes in multiple cohorts (M1, F1) with appropriate controls (M4), showing sensitivity to neuronal manipulations. The claim of generalizability (C73) is supported by successful application across multiple cohorts, though broader validation across different strains would strengthen this claim. The approach is well-validated within the scope of the current experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The current model is purely static, describing concurrent positions rather than dynamics. Future work should develop dynamic models incorporating temporal transitions and behavioral history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84\u2013C85 acknowledge a limitation and propose future directions. The manuscript correctly identifies that the maximum entropy model describes steady-state distributions rather than dynamics. The proposed extension to dynamic models (C85) is reasonable and appropriately cited (Chen et al., 2023b). This is an honest assessment of current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C98",
+      "C99",
+      "C102"
+    ],
+    "result": "Methodological choices including exclusion of inactive mice, 2-second time resolution, pseudocount smoothing, and specific stopping conditions for model training are justified to ensure stable parameter inference and avoid overfitting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89\u2013C93, C98\u2013C99, C102 describe methodological decisions with clear justifications. Exclusion criteria (C89\u2013C90) prevent unstable parameters, time resolution (C91\u2013C92) avoids artifacts, pseudocounts (C93) handle finite sampling, and stopping conditions (C98\u2013C99) balance convergence with parameter stability. Cross-validation results (C102, Figure 2\u2014supplement 5) demonstrate that triplet models overfit. These are well-justified methodological choices supported by empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C55",
+      "C56"
+    ],
+    "result": "The prelimbic cortex (PL) is crucial for sociability and social information processing, with TIMP-1 modulating synaptic plasticity by inhibiting MMPs. Nanoparticle-mediated TIMP-1 delivery to the PL impedes neuronal connectivity updating and has region-specific behavioral effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C17\u2013C25, C55\u2013C56 establish the biological rationale for the manipulation. These claims are extensively supported by citations to prior literature establishing PL function in social behavior, TIMP-1's role in synaptic plasticity, and nanoparticle delivery methods. The cited work (Winiarski et al., 2025) provides direct evidence for TIMP-1 effects in the Eco-HAB context. This represents well-established background knowledge appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Traditional dyadic studies in controlled environments have limitations for studying complex social behaviors. Recent trends favor naturalistic settings. Mice exhibit complex social behaviors including territoriality, hierarchies, and communication. Maximum entropy models have successfully explained collective behavior in various species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6\u2013C15 provide background context and are supported by appropriate citations to established literature. These represent accurate summaries of the field's state and prior work, establishing the motivation for the current study. The characterization of mouse social behavior and prior applications of maximum entropy models are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "C57BL/6J mice aged 2-3 months were bred at specified institutions and housed under 12-hour light-dark cycles in accordance with ethical guidelines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86\u2013C88 describe animal husbandry and are standard methodological details. The manuscript states ethical approval was obtained and provides specific housing conditions. These are straightforward factual statements about experimental procedures.",
+    "result_type": "MINOR"
+  }
+]

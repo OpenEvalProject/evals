@@ -1,0 +1,167 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "PSD95 supercomplexes contain predominantly two copies of PSD95 with a dominant separation of 12.7 nm. Using photobleaching analysis of >6000 supercomplexes, 63% contained one PSD95, 24% contained two, and 13% contained more than two. PALM analysis of 82,501 supercomplexes confirmed this distribution (76\u00b12% one, 12\u00b11% two, 12\u00b12% more than two). MINFLUX imaging with 1-5 nm resolution revealed a dominant separation of 12.7 nm between PSD95 molecules in dimeric supercomplexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal techniques (photobleaching, PALM, MINFLUX) with large sample sizes (>6000, 82,501, and 1011 supercomplexes respectively) converge on consistent stoichiometry distributions. The authors appropriately account for fluorophore folding efficiency (50-60% for GFP) and validate their approach with purified eGFP controls. The 12.7 nm separation measurement is supported by high-resolution MINFLUX data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "PSD95 subunits within supercomplexes are sequentially replaced over days and weeks in vivo. Using dual HaloTag labeling (SiR-Halo at day 0, AF488-Halo at day 7), approximately 40% of PSD95 was replaced over 7 days. Critically, 12% of supercomplexes at day 7 contained both old and new PSD95 (mixed supercomplexes), demonstrating that supercomplexes can exchange individual subunits rather than being replaced entirely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The time-stamping approach using covalent HaloTag labeling is methodologically sound. The observation of mixed supercomplexes (containing both old SiR-labeled and new AF488-labeled PSD95) at day 7 provides direct evidence for sequential subunit replacement. The 96% saturation at day 0 validates complete initial labeling. Analysis of 13,710 and 15,391 supercomplexes at the two timepoints provides statistical robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Subunit replacement rate varies by brain region and correlates with PSD95 protein lifetime. The isocortex showed the highest percentage of mixed supercomplexes (19\u00b13%) and lowest percentage of new complexes (27\u00b18%), while the olfactory bulb showed the opposite pattern (4\u00b13% mixed, 40\u00b116% new). There was a statistically significant correlation between mixed supercomplex percentage and PSD95 half-life across regions (R=0.95, p=0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The regional analysis examined large numbers of supercomplexes (60,798 in isocortex, 15,842 in hippocampus, 3,148 in olfactory bulb, 36,126 in cerebellum, 28,339 in subcortical areas). The strong correlation (R=0.95, p=0.01) between mixed supercomplex percentage and previously published PSD95 half-life data provides compelling evidence linking subunit replacement rate to protein lifetime. Statistical testing (ANOVA and post-hoc t-tests) appropriately identifies significant regional differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Synaptic fractions show enrichment for mixed supercomplexes compared to total forebrain. While SiR-only supercomplexes were similar between synaptic and total fractions (52% vs 56%), synaptic fractions had fewer AF488-only supercomplexes (21% vs 32%) and more mixed supercomplexes (27% vs 12%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison between synaptosome and total forebrain fractions is methodologically appropriate. The enrichment of mixed supercomplexes in synaptic fractions (27% vs 12%) supports the interpretation that sequential subunit replacement is particularly important at synapses. However, the inference that this underlies maintenance of postsynaptic density molecular state, while reasonable, extends slightly beyond the direct data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C86",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose that protein supercomplexes are maintained by gradual replacement of individual subunits, providing a mechanism for stable maintenance of synaptic organization. They suggest that synapses with slow subunit replacement and long protein lifetimes (enriched in cortex) are specialized for long-term memory storage, and that subunit replacement and protein turnover are synergistic mechanisms producing stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data clearly demonstrate sequential subunit replacement and regional variation, the mechanistic link to memory storage is speculative. The authors provide no direct memory/behavior experiments. The proposal that cortical synapses with slow replacement are specialized for long-term memory is a reasonable hypothesis based on correlative evidence (cortex is where long-term memories are stored), but causality is not established. This represents an interpretive framework rather than a directly tested result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C93",
+      "C98"
+    ],
+    "result": "The findings extend Crick's 1984 hypothesis by demonstrating a link between protein lifetime and subunit exchange rate, and suggesting that cortical synapses with slow replacement are specialized for long-term memory. The authors note this challenges Crick's assumption that protein lifetimes are much shorter than memories, since some synapses maintain PSD95 for months while most mouse memories are forgotten within days to weeks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The extension of Crick's model is conceptually interesting but involves significant speculation. While the data support sequential replacement and regional variation in replacement rates, the connection to memory duration and the challenge to Crick's assumptions require behavioral/memory experiments that were not performed. The apparent paradox (long protein lifetimes vs. short memory durations) is noted but not resolved experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C74"
+    ],
+    "result": "This study represents the first direct observation of PSD95 in megadalton supercomplexes at single-molecule resolution, revealing heterogeneity in supercomplex stoichiometry at the individual complex level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim of first direct single-molecule observation is supported by comparison with previous biochemical ensemble studies (C27, C72). The methodological advantage of observing hundreds of thousands of individual molecules in tens of thousands of supercomplexes is clearly demonstrated. The heterogeneity finding (range of stoichiometries) is directly shown by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The authors compare their 12.7 nm intra-supercomplex spacing measurement with recent studies reporting 7-9 nm spacing, suggesting those measurements may represent inter-supercomplex rather than intra-supercomplex distances, and noting that their measurements may be slightly larger due to the size of eGFP and nanobodies used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison with prior literature is appropriate and the interpretation that different measurements may reflect different spatial relationships (within vs. between supercomplexes) is reasonable. The acknowledgment of potential methodological contributions to the observed distance (eGFP size ~3 nm, nanobody size) shows appropriate consideration of technical factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The authors speculate that the postsynaptic terminal environment may facilitate subunit exchange, that cortical long-protein lifetime synapses may be better suited to exchange processes, and that the phenomenon may extend to other synaptic complexes like CamKII.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (using language like 'may be' and 'it may be that') that extend beyond the experimental data. While reasonable hypotheses for future work, they are not tested in this study. The speculation about CamKII and other complexes is particularly uncertain as only PSD95 was examined.",
+    "result_type": "MINOR"
+  }
+]

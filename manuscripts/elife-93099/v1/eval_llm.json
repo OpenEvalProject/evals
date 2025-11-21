@@ -1,0 +1,250 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C59",
+      "C60",
+      "C62",
+      "C78",
+      "C81",
+      "C82"
+    ],
+    "result": "QM/MM simulations reveal a structurally wide transition-state ensemble (TSE) for the phosphoryl-transfer step in adenylate kinase with Mg2+, spanning ~1 \u00c5 along the reaction coordinate and comprising many asymmetric conformations. Without Mg2+, the TSE is narrower. This finding is corroborated by umbrella sampling and committor analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C28-C32, C59-C60, C62, C78, C81-C82 collectively demonstrate a wide TSE with Mg2+ versus a narrow TSE without Mg2+ through multiple computational approaches (MSMD, umbrella sampling, committor analysis). The computational data consistently show a ~1 \u00c5 range for the transferring phosphate position in the TSE with Mg2+, asymmetric conformations, and validation through multiple independent methods (Figures 1-4, Table 1).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C40",
+      "C41",
+      "C76"
+    ],
+    "result": "QM/MM calculations show that the fully charged nucleotide state has a much lower activation barrier (\u0394fG\u2021 = 13 \u00b1 0.9 kcal/mol) than the monoprotonated state (\u0394fG\u2021 = 23 \u00b1 0.9 kcal/mol) with Mg2+, and that Mg2+ lowers the barrier by ~9.5-11 kcal/mol compared to the reaction without Mg2+ (\u0394fG\u2021 = 34 \u00b1 1.6 kcal/mol). Higher-level DFT calculations validate these results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22, C40-C41, C76 provide consistent computational and experimental evidence for the activation barriers. The calculated difference (~9.5 kcal/mol) agrees well with experimental measurements (\u226511 kcal/mol), and validation with higher-level DFT(PBE) calculations (C76) strengthens confidence in the results. The agreement between multiple computational methods and experimental data supports these quantitative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C7"
+    ],
+    "result": "Experimental temperature-dependent kinetics measurements show that Ca2+ (as a Mg2+ mimic) significantly reduces both the enthalpic barrier (from 16.7 to 15.3 kcal/mol) and especially the entropic barrier (from -19.1 to -5.7 cal/mol/K) for the phosphoryl-transfer step, confirming the computational prediction of a broader TSE with divalent cations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51, C7 present experimental validation of the key computational prediction. The large decrease in activation entropy (\u0394\u0394S\u2021 \u2248 13.4 cal/mol/K) with Ca2+ directly supports the computational finding of a wider TSE with divalent cations. The Eyring plot analysis (Figure 5A) provides rigorous thermodynamic evidence, and the experimental design appropriately uses Ca2+ as a measurable proxy for Mg2+ (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C84",
+      "C85"
+    ],
+    "result": "pH-dependent kinetics experiments show that the reaction rate increases with pH in the presence of Ca2+ but decreases with pH without metal, confirming that the fully charged nucleotide state is most reactive with metal while the monoprotonated state is required without metal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C84-C85 provide experimental validation of the computational predictions about protonation states. The opposite pH dependencies with and without metal (Figure 5B) directly confirm the QM/MM predictions about which nucleotide protonation states are reactive under different conditions. This represents a clear experimental test of a specific computational prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Mg2+ plays multiple catalytic roles: it enables donor and acceptor phosphates to approach closely enough to react, eliminates the need for a bridging proton to prevent electrostatic repulsion, stabilizes the charge of the transferring phosphate to lower the enthalpic barrier, and results in a wide TSE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 describe the mechanistic roles of Mg2+ observed in QM/MM simulations. These are directly supported by computational data showing structural changes, charge distributions, and TSE characteristics with and without Mg2+ (Figures 1-3, Figure 3\u2014figure supplements 3-5). The multiple roles are consistent with the observed activation barrier differences and structural features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C56",
+      "C69"
+    ],
+    "result": "Active site arginine residues (R36, R85, R124, R150, R161) play critical roles in positioning substrates and stabilizing the transition state, as demonstrated by QM/MM simulations and confirmed by large rate decreases (>1000-fold) in Arg-to-Lys mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39, C56, C69 combine computational predictions with experimental validation. The QM/MM simulations identify specific roles for each arginine (Figure 3, Figure 3\u2014figure supplements 6-8), and the mutational analysis (Table 2) confirms their importance with dramatic rate reductions. The convergence of computational and experimental evidence strongly supports these claims about active site organization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "The TSE changes from tight/synchronous without Mg2+ to loose with Mg2+, with active site contraction during the transition. Without Mg2+, acceptor and donor must be within 4 \u00c5, while with Mg2+ a distance of 4.5 \u00c5 is sufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 describe the geometric and electronic character of the TSE from QM/MM simulations. These are directly observed in the Moore-O'Ferrall-Jencks diagrams (Figure 2) and distance plots (Figure 1D-E), and are consistent with established definitions from the cited literature (Roston and Cui, 2016). The characterization is well-supported by the computational data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The QM/MM computational setup uses appropriate starting structures, QM region definitions, and force fields, with validation against X-ray structures and higher-level DFT calculations. A concerted mechanism with no intermediates is observed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 describe the computational methodology and validation. The starting structures agree well with experimental X-ray structures (C75, Figure 1\u2014figure supplement 2), the QM region is appropriately defined (C74), and higher-level DFT calculations validate the results (C76, Figure 1\u2014figure supplement 6). The concerted mechanism (C77) is clearly shown in the free energy profiles. These methodological details are well-documented and validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "At low pH (pH 5), the P-transfer step becomes rate limiting even with Mg2+, allowing estimation of a 24-fold rate enhancement of Mg2+ versus Ca2+.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 report an experimental observation and rate comparison. This is a straightforward experimental measurement that provides additional quantitative information about metal ion effects. The claim is directly supported by the experimental data presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Activation free energies from umbrella sampling are smaller than from MSMD, consistent with the known tendency of exponential averaging to overestimate barriers, especially high ones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 compare two computational methods and explain the difference. The observation is directly stated (C79) and the explanation is supported by citation to established knowledge (C80, Park et al., 2003). This is a methodological observation that helps interpret the computational results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C58",
+      "C61"
+    ],
+    "result": "The wide TSE provides a fundamentally different catalytic mechanism that lowers the entropic barrier and explains why enzymes do not face an entropic bottleneck, representing a modified transition-state theory for enzyme catalysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C58, C61 present the central conceptual conclusion of the manuscript. These interpretations are well-supported by the convergence of computational predictions (wide TSE) and experimental validation (reduced activation entropy). The logic connecting the wide TSE to reduced entropic barriers is sound, and the experimental confirmation of reduced \u0394S\u2021 with divalent cations directly supports this interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66",
+      "C67"
+    ],
+    "result": "A conformationally spread-out TSE may explain why enzymes are much larger than just active-site residues, as remote residues allow conformational flexibility without unfolding while reducing unproductive conformations, with TSE configurations lying along the reaction coordinate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C64, C66-C67 propose broader implications of the TSE concept. While C67 is directly demonstrated by the simulations, C63-C64 are explicitly speculative hypotheses about enzyme size. C66 is supported by citation but the connection to the current findings is indirect. These represent interesting hypotheses that extend beyond what is directly demonstrated in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The rate-limiting lid-opening step represents the 'price' the enzyme pays for stabilizing the ES complex to enable efficient rate acceleration and suppress detrimental alternate reactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 proposes an evolutionary/mechanistic explanation for why lid-opening is rate-limiting. While this is a reasonable hypothesis consistent with the data, it is explicitly presented as a proposal ('We propose that...') and represents speculation about evolutionary optimization rather than a directly tested result. The underlying observations about ES stabilization and rate acceleration are supported, but the teleological interpretation is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C42",
+      "C70",
+      "C72",
+      "C83"
+    ],
+    "result": "Background and context claims about transition-state theory, protein ensembles, adenylate kinase function, and prior experimental results establish the foundation for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C8-C18, C23, C42, C70, C72, C83 provide background information, cite established knowledge, and reference prior experimental work. These are appropriately cited and represent accurate statements of established concepts and prior results. They provide necessary context but are not novel findings of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57"
+    ],
+    "result": "Full lid-closure results in excellent preorientation of donor and acceptor groups and active-site residues in the enzyme/substrate complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 describes a conclusion from structural and computational analysis about substrate positioning. This is supported by the QM/MM simulations showing the organized active site (Figure 3) and is consistent with general principles of enzyme catalysis. The claim is well-supported by the computational data.",
+    "result_type": "MINOR"
+  }
+]

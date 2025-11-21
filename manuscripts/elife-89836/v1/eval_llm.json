@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C16"
+    ],
+    "result": "The study recruited 17 healthy participants (9 females, mean age 29.29\u00b14.5 years) based on a power analysis requiring 16 participants for a medium effect size of 0.3 and power of 0.8. Behavioral data for two participants was lost due to technical problems, though their fMRI data was retained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The participant recruitment and sample size are adequately justified by power analysis (C2) and clearly documented (C1). The loss of behavioral data for two participants (C4) is transparently reported, and the study appropriately retained their fMRI data while excluding them from behavioral analyses. The sample size meets the pre-specified requirement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The experimental design used four object categories (bodies, cars, houses, cats) with 10 exemplars each, presented either in isolation (4 conditions) or superimposed pairs (12 conditions) for 16 total conditions. Participants performed a one-back repetition detection task on cued stimuli during blocked presentations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is clearly described with appropriate justification for category selection based on neural selectivity (C6) and behavioral similarity data (C7). The stimulus parameters, timing, and task are well-specified (C10-C15), allowing for replication. The 16-condition design systematically varies target-distractor pairings to test the hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Five ROIs were examined (V1, LO, pFs, EBA, PPA) using standard localization procedures. fMRI data were acquired on two different scanners (Siemens Tim Trio and Prisma) with standard preprocessing including motion correction, slice timing correction, and trend removal, but no spatial smoothing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ROI selection is justified (C17-C18) and localization methods are standard (C19). The use of two different scanners (C20-C21) is a potential confound, though the authors report no significant SNR differences between groups. Preprocessing steps are appropriate for multivariate analysis (C23-C24). The methods are sufficiently detailed for replication.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Participants achieved 90.49% average detection rate across all runs, with significantly higher performance in isolated (94.82%) versus paired (89%) conditions, confirming effective attention to cued stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The high detection rate (C26) provides strong evidence that participants maintained attention to the cued category. The difference between isolated and paired conditions is expected given task difficulty and supports the validity of the manipulation. Statistical significance is reported with appropriate values.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C34",
+      "C51",
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "The strength of attentional bias toward the target decreases with increasing target-distractor similarity in higher-level visual areas (LO, pFs, EBA, PPA) but not in V1. For stimuli that elicit more different responses, attention causes greater response modulation, while attention between more similar stimuli causes less response change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by systematic univariate analyses showing significant correlations between univariate shift and category distance in higher-level ROIs (Figure 5) but not V1 (C30). The pattern is consistent across multiple ROIs and category pairs (C34). The finding that attentional bias is not constant but depends on target-distractor similarity (C63, C65) is a core empirical result well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Less significant results in PPA are attributed to this region showing no response to body and cat stimuli and little response to car stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The explanation for weaker PPA results (C38) is reasonable given the known selectivity profile of this scene-selective region. The authors appropriately reference supporting data (Appendix 1-table 2) and acknowledge this limitation. This is a valid interpretation of the regional specificity of effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C52",
+      "C74"
+    ],
+    "result": "Simulations demonstrate that the tuning sharpening model, but not the response gain model, predicts the observed relationship between attentional enhancement and target-distractor similarity at both univariate and multivariate levels. The labeled line model failed to predict results except in specific cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The simulation results clearly differentiate between models: response gain predicts no relationship (C44, C46) while tuning sharpening predicts positive correlations (C45, C47) matching empirical data. The comparison is systematic across both univariate and multivariate measures (C49, C74). The rejection of the labeled line model (C48) strengthens the conclusion. The simulations use reasonable parameters based on neural data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C66",
+      "C67",
+      "C78",
+      "C83",
+      "C84"
+    ],
+    "result": "The findings provide a mechanistic explanation for behavioral effects of target-distractor similarity on attentional biases, suggesting tuning sharpening as the underlying mechanism in object-based attention. The reduction in performance for similar target-distractor pairs occurs because target representation is less effectively enhanced by attention when targets are more similar to distractors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic interpretation (C67, C77) is well-supported by the convergence of empirical fMRI results and simulation outcomes. The link to behavioral effects (C66) appropriately connects neural findings to prior behavioral literature. However, the authors appropriately acknowledge (C81) that the tuning sharpening conclusion is based on simulations rather than direct neural recordings, and call for intracranial recordings for confirmation (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The absence of significant attentional effects in V1 is explained by the study's focus on object-based attention with superimposed stimuli, in contrast to prior studies showing V1 effects with space-based attention where stimuli were presented at different locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The explanation for divergent V1 findings (C68-C72) is reasonable and well-supported by citations. The distinction between object-based and space-based attention (C70) is methodologically sound. The interpretation that V1's spatial selectivity makes it less sensitive to object-based attention with superimposed stimuli (C72) is a valid inference, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The blocked design with predictable target and distractor categories may have enhanced the observed effect, though previous behavioral studies reported similar effects without predictability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is an appropriate acknowledgment of a potential limitation (C73). The authors cite relevant behavioral work suggesting the effect persists without predictability, but they correctly note that an event-related design would be needed to directly test this in fMRI. This represents a limitation that could affect the generalizability of findings but does not invalidate the core results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Visual stimuli compete for cortical processing due to limited neural resources, and attention biases this competition by enhancing attended stimulus responses by approximately 30%. Competition is content-dependent, with higher competition between more similar stimuli, though direct neuroscientific investigation of how target-distractor similarity affects visual representations was previously missing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize established knowledge from prior literature (C50, C55-C58) with appropriate citations. The identification of a gap in the literature (C59) appropriately motivates the current study. These are well-established background claims that frame the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The response gain model predicts multiplicative scaling of neural tuning functions without shape changes, while the tuning sharpening model predicts sharpening with increased response to optimal stimuli and suppression for non-optimal stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are accurate descriptions of the two competing models (C60-C61) supported by appropriate citations and illustrated in Figure 3. The characterizations are consistent with the literature and provide clear theoretical predictions that can be tested against empirical data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C75",
+      "C79",
+      "C80"
+    ],
+    "result": "Previous studies showed attentional modulation as an average value without considering variance across target-distractor pairings. While response gain has been the dominant explanation for attention effects, tuning changes have been observed in visual search and feature-based attention, and tuning sharpening improves selection at high noise levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately characterize prior literature (C64, C75, C79-C80) with appropriate citations. They establish the context for the current study's contribution and justify the investigation of tuning mechanisms. The citations support the statements about previous findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Tuning sharpening could lead to behavioral disadvantage when targets are not very different from surrounding items, because attention to the target also enhances responses to similar non-target objects, leading to weaker attentional effects for similar target-distractor pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic explanation (C76-C77) logically follows from the tuning sharpening model and the empirical results. It provides a coherent account of why similarity reduces attentional effectiveness. The inference is well-reasoned, though it remains an interpretation of the simulation results rather than directly measured neural mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The speculation about tuning sharpening as the mechanism for object-based attention is based on simulations rather than neural data, and intracranial recordings from human brain are needed to ascertain this mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate and important acknowledgment of the study's limitations (C81-C82). The authors correctly recognize that simulations, while informative, cannot definitively establish neural mechanisms. The call for intracranial recordings is a reasonable suggestion for future work. This transparent discussion of limitations strengthens the paper.",
+    "result_type": "MINOR"
+  }
+]

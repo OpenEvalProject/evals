@@ -1,0 +1,335 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C79",
+      "C80"
+    ],
+    "result": "Human subjects (7 young, 8 old) were enrolled and characterized for circadian entrainment using behavioral and physiological assessments. Diurnal rhythms were confirmed for physical activity, light exposure, heart rate, and autonomic nervous system indices. Age-related differences included lower heart rate, higher heart rate variability, lower SNS activity, higher PNS activity in old subjects, and phase-advanced midsleep time (p=0.036), though some trends did not reach statistical significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C27, C79-C80 provide comprehensive characterization of study participants with appropriate statistical analyses (two-way ANOVA, Wilcoxon tests, Kuiper's test). The data demonstrate successful entrainment and identify age-related physiological differences. Sample sizes are small (n=5-8 per group for various measures) but analyses are appropriately powered for the observed effects. The midsleep time difference reached significance (p=0.036) while activity phase advance showed a trend (p=0.055).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C28",
+      "C45",
+      "C46"
+    ],
+    "result": "Young and old sera are equally competent at initiating robust ~24 hr oscillations of BMAL1-luciferase reporter with no significant differences in period, amplitude, or phase, though MESOR of BMAL1 significantly increased with age. This was confirmed by both luciferase assay and RNA-seq data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C28, C45, C46 demonstrate that the core clock mechanism remains functional with aged serum. The luciferase data (Figure 2\u2014figure supplement 1) and RNA-seq validation provide converging evidence. The increased MESOR represents a quantitative change in expression level rather than disruption of rhythmicity, supporting the conclusion that the core clock continues to oscillate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C29",
+      "C30",
+      "C31",
+      "C53"
+    ],
+    "result": "Young and old sera promote cycling of different sets of genes. Using CircaCompare with weighted BIC>0.75 cutoff, 1519 genes lost rhythmicity with age, 637 genes gained rhythmicity, and 1209 genes remained rhythmic in both conditions. The young serum condition showed ~18% rhythmic transcripts compared to ~12% in old serum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C29-C31, C53 are well-supported by RNA-seq data analyzed with CircaCompare (Figures 2B, 3A). The weighted BIC>0.75 threshold is a validated criterion for rhythmicity. The differential gene cycling demonstrates that while the core clock oscillates (C2), the circadian transcriptome is substantially altered by aged serum. Sample size (n=4 sera per group) is adequate for RNA-seq with multiple timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Among genes rhythmic in both young and old conditions, 568 showed significant changes in MESOR (q<0.05), with 163 genes increasing and 405 genes decreasing in old serum-treated samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by CircaCompare analysis (Figure 2C, Figure 2\u2014figure supplement 3). The q<0.05 threshold is appropriate for multiple testing correction. The authors appropriately note that low p-values can be driven by large sample size when each gene represents a sample, showing awareness of statistical considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "Only 41 genes showed detectable changes in amplitude with age (39 decreased, 2 increased) using CircaCompare q-values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by CircaCompare analysis (Figure 2D, Figure 2\u2014figure supplement 3). The small number of genes with amplitude changes suggests amplitude is relatively preserved compared to other circadian parameters. The authors acknowledge this is a small number and provide appropriate statistical thresholds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C7"
+    ],
+    "result": "Phase analysis revealed 20 genes with advanced phase and 34 genes with delayed phase (q<0.05) in old serum conditions. Notably, several clock-controlled genes (PER3, NR1D1, NR1D2, CRY1, CRY2, TEF) showed significant phase delays with old serum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C37, C7 are supported by CircaCompare analysis (Figures 2E, 4). The phase delays in core clock genes are particularly significant as they indicate altered entrainment despite maintained oscillation. The statistical threshold (q<0.05) is appropriate and the specific genes identified are biologically relevant clock components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Genes losing rhythmicity with old serum are associated with oxidative phosphorylation and Alzheimer's Disease pathways. STRING analysis showed 24 of 26 oxidative phosphorylation genes overlap with Alzheimer's Disease KEGG pathway. An additional 31 Alzheimer's Disease pathway genes, including APP and APOE, lose rhythmicity with aged serum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C38-C40 are supported by STRING and IPA pathway analyses (Figure 3A, Figure 3\u2014figure supplement 1). The convergence of oxidative phosphorylation and Alzheimer's Disease pathways is biologically plausible given known links between mitochondrial dysfunction and neurodegeneration. The pathway enrichment statistics (FDR values provided) support these associations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "Expression of cycling genes associated with cholesterol biosynthesis (steroid biosynthesis pathway) increased in cells entrained with old serum, while genes involved in cell cycle and transcription/translation remained rhythmic in both conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6 are supported by STRING and IPA pathway analyses (Figure 3A, Supplementary files 3-4). The maintenance of cell cycle gene rhythmicity is consistent with continued cell division. The increased cholesterol biosynthesis gene expression is unexpected given known age-related changes in cholesterol metabolism, which the authors acknowledge and discuss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "LISA analysis identified 59 transcription factors (q<0.05) with altered activity associated with age-related cycling phenotypes. Twenty-six transcription factors were represented across all cycling phenotype groups, including factors implicated in cancer, inflammation, oxidative stress, and neurological conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44 are supported by LISA analysis (Figure 3B). The computational prediction of transcription factor activity changes is based on established binding profiles in fibroblasts. The q<0.05 threshold is appropriate. However, these are computational predictions that would benefit from experimental validation in future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Day 2 of serum entrainment (36-58 hr post-synchronization) showed greater MESOR differences and more phase-shifted genes between young and old conditions compared to Day 1. This is expected because Day 1 includes acute serum responses that can mask circadian rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by pilot RNA-seq data (Figure 2\u2014figure supplement 2). The rationale that Day 1 includes acute responses is biologically sound and well-established in the serum shock literature. This justified the focus on Day 2 (32-58 hr) for the main RNA-seq experiment, strengthening the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C48",
+      "C49",
+      "C62"
+    ],
+    "result": "Age-dependent blood-borne factors affect circadian rhythms in peripheral cells. The core clock continues to cycle in fibroblasts synchronized with old serum, but the circadian transcriptome differs from young serum treatment. Age-related changes in the circadian transcriptome are derived from signals in the serum, not the age of the cells themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C48, C49, C62 represent the central conclusion of the study. The experimental design using the same cell line (BJ-5TA) with different sera directly tests whether serum factors mediate age effects. The maintained core clock oscillation (C2, C28) combined with altered transcriptome (C3, C29-C31) strongly supports this conclusion. This is a well-controlled experiment that isolates serum effects from cellular aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Many genes whose cycling is affected by old serum contribute to age-associated disorders, particularly Alzheimer's Disease and mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C63 is supported by pathway analyses showing enrichment of Alzheimer's Disease and oxidative phosphorylation genes among those losing rhythmicity (C4, C38-C40). The connection to age-associated disorders is strengthened by the specific identification of APP and APOE, key Alzheimer's risk genes. This provides translational relevance to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C74"
+    ],
+    "result": "Both young and old serum conditions demonstrate a much larger number of cycling transcripts (~18% young, ~12% old) in cultured fibroblasts than in other cell culture studies. The use of human serum as the synchronization signal may more accurately recapitulate the human condition compared to other synchronization methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C56, C74 compare the current results to published literature. The ~18% rhythmic transcripts in young serum approaches the ~20% seen in mammalian tissues in vivo, which is substantially higher than typical culture studies. The inference that human serum synchronization better recapitulates physiological conditions is reasonable but remains speculative without direct comparison experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C69",
+      "C71"
+    ],
+    "result": "Previous work shows circadian clock synchronization results in cycling of mitochondrial respiratory activity. Age-dependent decreases in oxidative phosphorylation occur in aged fibroblasts and contribute to age-related diseases. The age-related inefficiency of oxidative phosphorylation may be conferred by serum signals such that oxidative phosphorylation cycles are mitigated, though loss of cycling could also contribute to mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57-C59 cite prior literature appropriately. However, C69 and C71 present mechanistic interpretations that are speculative. The data show loss of rhythmicity in oxidative phosphorylation genes with old serum, but whether this is cause or consequence of mitochondrial dysfunction cannot be determined from the current data. The bidirectional relationship proposed requires additional experiments to establish causality.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C70",
+      "C76"
+    ],
+    "result": "Elderly individuals typically have lower cholesterol biosynthesis but higher circulating cholesterol. The observed increase in cholesterol biosynthesis transcripts with old serum is unexpected. Oxidative stress may play a role, as reactive oxygen species increased cholesterol biosynthesis transcripts in hepatocytes. Alternatively, high RNA levels may reflect compensatory responses to low protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C60 cites prior literature appropriately. However, C61, C70, C76 are speculative explanations for the unexpected finding of increased cholesterol biosynthesis gene expression. The authors acknowledge the finding is surprising and offer plausible hypotheses, but these remain untested. The disconnect between expected and observed results highlights the need for follow-up studies measuring protein levels and cholesterol synthesis activity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "Alzheimer's pathology is associated with oxidative stress accumulation. Loss of cycling of oxidative phosphorylation genes may contribute to oxidative damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 appropriately cites prior literature. However, C73 is speculative. While the association between loss of rhythmicity in oxidative phosphorylation genes and Alzheimer's pathways is demonstrated (C4, C38), the causal link to oxidative damage is not established. This represents a plausible hypothesis requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Prior work showed cultured fibroblasts from old and young subjects have robust clocks and respond similarly to dexamethasone synchronization, but exhibited shortened periods when synchronized with dexamethasone in media containing old serum. This effect was reversed by heat inactivating old serum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 accurately cite and describe findings from Pagani et al., 2011. The authors appropriately note they did not observe period shortening in their study, possibly because dexamethasone was not used. This demonstrates proper contextualization of their findings within prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "Previous work showed serum factors activate the transcription factor SRF in a diurnal manner to confer time-of-day signals to cells in culture and mouse liver.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 appropriately cites Gerber et al., 2013 to provide mechanistic context for how serum can synchronize peripheral clocks. This supports the biological plausibility of the experimental approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Factors circulating in serum likely act on several tissues, so their effects are relatively broad. The study focused only on fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is a reasonable inference about the systemic nature of circulating factors. The authors appropriately acknowledge the limitation that only fibroblasts were studied and suggest future work should investigate other cell types. This is an important caveat for interpreting the generalizability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The BJ-5TA cell line derives from normal human tissue, providing an advantage over the commonly used U2OS osteosarcoma line which has chromosomal abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C78 appropriately justify the choice of cell line. Using normal human fibroblasts rather than cancer cells is a strength for studying normal physiology. The citation to Al-Romaih et al., 2003 regarding U2OS abnormalities is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C47"
+    ],
+    "result": "Background knowledge from prior literature: Aging is associated with perturbed circadian rhythms and adverse health consequences. SCN signals dampen with age and peripheral tissue rhythms change differently. Serum can reset peripheral clocks. Blood-borne factors influence aging. Aged SCN shows persistent clock gene cycling but breakdown of output signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C13, C47 appropriately cite established knowledge from prior literature to provide context and rationale for the study. These are well-supported by the cited references and represent accurate characterization of the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "APP is the precursor of amyloid beta which accumulates in Alzheimer's Disease. Specific APOE variants are strongly associated with AD risk as APOE interacts with amyloid beta in plaques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C42 accurately describe established knowledge about APP and APOE in Alzheimer's Disease, appropriately cited to recent reviews. This provides important biological context for why loss of rhythmicity in these genes (C40) is significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Blood was collected from young (25-30 years) and old (70-76 years) apparently healthy individuals at 14:00 using an established clinical study paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 describes the study design with appropriate citations to prior work using the same blood collection time. The 14:00 collection time is standardized and allows comparison to prior studies. The age ranges are appropriate for young vs. old comparisons.",
+    "result_type": "MINOR"
+  }
+]

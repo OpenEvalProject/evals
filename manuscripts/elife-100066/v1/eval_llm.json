@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The manuscript provides extensive background on African trypanosomiasis, including disease burden, challenges in control, metabolic characteristics of parasites, and the rationale for targeting glycolytic enzymes. This establishes the context and motivation for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C34, C90-C93 collectively establish well-documented background knowledge about trypanosomiasis, supported by appropriate citations to the literature. These claims provide essential context but represent established knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The manuscript describes the structure, function, and allosteric regulation of trypanosomatid pyruvate kinases (PYKs), including the 'rock and lock' mechanism that governs T-to-R state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C46 describe established knowledge about PYK structure and function, supported by appropriate citations. This background is essential for understanding the novel findings but does not represent new discoveries from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C47",
+      "C48"
+    ],
+    "result": "sdAb42 is a potent and selective inhibitor of TcoPYK with an IC50 of ~15 nM, showing no effect on human PYK isoforms even at 1000-fold excess.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C47, C48 are well-supported by enzyme kinetics data in Figure 2. The IC50 determination appears robust with appropriate controls (sdAb44, BCII10, human PYK isoforms), demonstrating both potency and selectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Crystal structures reveal that sdAb42 binds TcoPYK in a 4:1 stoichiometry, with the epitope spanning the AA' dimer interface. sdAb42 stabilizes the inactive T state, as evidenced by structural features and a 10.3\u00b0C increase in thermal stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C53, C83-C85 are strongly supported by crystallographic data (Figures 3A-E, Table 4) and CD spectroscopy. The structural evidence clearly shows T-state features (Arg311 flip) and epitope distortion between T and R states (RMSD 3.70 \u00c5). The presence of sulfate in the effector site while maintaining T-state conformation provides compelling evidence for the stabilization mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Computational perturbation analysis reveals that the sdAb42 epitope coincides with an allosteric hotspot with high ACI values (>0.75), particularly in the T state. The analysis identifies intersubunit allosteric pathways in the T state versus intrasubunit pathways in the R state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 are supported by perturbation analysis data (Figure 4). The computational predictions are consistent with the structural and functional data. However, these are computational predictions that would benefit from experimental validation of the predicted allosteric pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C86"
+    ],
+    "result": "The sdAb42 epitope is highly conserved among trypanosomatids, with only 3 residue differences between TcoPYK and TbrPYK/LmePYK. sdAb42 binds TcoPYK with high affinity (KD = 0.90 \u00b1 0.07 nM) but shows ~40-fold lower affinity for TbrPYK and LmePYK, while still inhibiting their activity in a dose-dependent manner.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63, C86 are well-supported by sequence conservation analysis (Figure 5A), ITC data (Figure 5B, Table 3), computational \u0394\u0394G analysis (Table 2), and enzyme kinetics (Figure 5C). The data consistently show conservation of the epitope and cross-reactivity with reduced affinity, which is mechanistically explained by the epitope differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "sdAb42 displays slow-binding inhibition kinetics when trypanosomatid PYKs are pre-saturated with substrates and effectors. Under these conditions, the IC50 for TcoPYK is ~350 nM, approximately 24-fold higher than when sdAb42 is pre-incubated with the enzyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by kinetic data in Figure 6. The non-linear features in the early reaction phases are consistent with slow-binding inhibition. The 24-fold difference in IC50 values supports the hypothesis that sdAb42 requires R-to-T state transition for binding. However, a full quantitative analysis of the slow-binding kinetics was not performed, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C89"
+    ],
+    "result": "Intracellular expression of sdAb42 as an intrabody in transgenic T. brucei induces a dose-dependent growth defect (Pearson r=0.95), while control sdAb BCII10 has no effect. sdAb42 protein levels decrease rapidly over time despite stable transcript levels, suggesting a parasite defense mechanism at the translational level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C71, C89 are supported by growth curve data (Figure 7) and fluorescence measurements. The correlation between sdAb42 levels and growth defect is strong (r=0.95). However, the interpretation of the mechanism (C71) is speculative, as the authors acknowledge they do not know the exact mechanism. The rapid loss of sdAb42 protein and heterogeneous expression levels complicate interpretation of the growth defect. Additionally, the experiments were performed in T. brucei rather than T. congolense due to technical limitations (C88), which may affect the relevance of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The authors propose that sdAb42 identifies a potential site of vulnerability on trypanosomatid PYKs that could be exploited for drug design, drawing parallels to amino acid binding sites in human PYKs and leveraging the ability of sdAbs to stabilize specific conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C73, C78-C82 represent speculation and discussion of potential applications rather than demonstrated results. While the structural similarity to human PYK amino acid binding sites (C80) is an interesting observation supported by citations, the proposal that this could be exploited for drug design (C78) is speculative and would require substantial additional work to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The manuscript discusses prior work suggesting that achieving trypanosome death through PYK inhibition would require an 88% reduction in Vmax and proposes that PYK inhibitors should be used in combination with inhibitors of glucose transporters and PFK.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 accurately cite prior work (Albert et al., 2005; Helfert et al., 2001; Haanstra et al., 2011) to provide context for the limitations of PYK inhibition as a monotherapy. This helps explain why the intrabody experiments showed growth defects rather than complete parasite killing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The 400-fold difference between KD and IC50 values for sdAb42 has been observed for sdAb-mediated allosteric inhibition of other kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 is supported by citation to Singh et al., 2022, providing context that this phenomenon is not unique to this system. However, the authors acknowledge they lack a mechanistic explanation for this observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C88"
+    ],
+    "result": "Technical considerations regarding trypanosome biology, including post-transcriptional gene regulation and difficulties in culturing T. congolense, influenced experimental design choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C88 are supported by appropriate citations (Clayton, 2019; Awuah-Mensah et al., 2021) and explain methodological choices in the study. These are minor methodological considerations rather than primary findings.",
+    "result_type": "MINOR"
+  }
+]

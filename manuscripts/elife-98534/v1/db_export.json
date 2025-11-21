@@ -1,0 +1,2654 @@
+{
+  "submission": {
+    "id": "60161a59-8b72-4186-a63a-19f6c452809a",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:23:54.017919Z",
+    "updated_at": "2025-11-21T22:23:54.017919Z"
+  },
+  "content": [
+    {
+      "id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "content_type": "manuscript",
+      "content_text": "# A synthetic method to assay polycystin channel biophysics\n\n## Authors\n\n- Megan Larmore<sup>1</sup>\n- Orhi Esarte Palomero<sup>1</sup> ([ORCID: 0000-0003-2022-3140](https://orcid.org/0000-0003-2022-3140))\n- Neha Kamat<sup>2</sup> ([ORCID: 0000-0001-9362-6106](https://orcid.org/0000-0001-9362-6106))\n- Paul G DeCaen<sup>1</sup> ([ORCID: 0000-0001-8776-983X](https://orcid.org/0000-0001-8776-983X)) \u2020\n\n### Affiliations\n\n1. Department of Pharmacology, Feinberg School of Medicine, Northwestern University Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))\n2. Department of Biomedical Engineering, McCormick School of Engineering and Applied Science, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))\n3. Center for Synthetic Biology, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))\n4. Chemistry of Life Processes Institute, Northwestern University Evanston United States ([ROR:000e0be47](https://ror.org/000e0be47))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIon channels are biological transistors that control ionic flux across cell membranes to regulate electrical transmission and signal transduction. They are found in all biological membranes and their conductive state kinetics are frequently disrupted in human diseases. Organelle ion channels are among the most resistant to functional and pharmacological interrogation. Traditional channel protein reconstitution methods rely upon exogenous expression and/or purification from endogenous cellular sources which are frequently contaminated by resident ionophores. Here, we describe a fully synthetic method to assay functional properties of polycystin channels that natively traffic to primary cilia and endoplasmic reticulum organelles. Using this method, we characterize their oligomeric assembly, membrane integration, orientation, and conductance while comparing these results to their endogenous channel properties. Outcomes define a novel synthetic approach that can be applied broadly to investigate channels resistant to biophysical analysis and pharmacological characterization.\n\n## Introduction\n\nIon channels are pore-forming integral transmembrane proteins essential for all cellular lifeforms (Hille, 1978; Lee et al., 2014). At the plasma membrane, ion channels are responsible for generating long-range bioelectric conduction in excitable eukaryotic cells (e.g. neurons), and within prokaryotic colonies (e.g. bacteria biofilms), and filamentous colonies of archaea (Yang et al., 2021; Prindle et al., 2015; Goaillard and Marder, 2021). Here, they contribute to fundamental vital cell processes including division, signal transduction, and ionic homeostasis (Hille, 1978). In eukaryotic organelle membranes, ion channels are integral to a wide range of functions including energy production (mitochondria), and the maintenance of defining compartmental conditions such as Ca2+ gradients (endoplasmic reticulum), pH (lysosome), and redox states (peroxisome) (Stutzmann and Mattson, 2011; Smith and Aitchison, 2013; Li et al., 2019). The conductive states of channels are precisely controlled by their molecular conformations which are unique among their phylogenetic families and subfamilies (Yu et al., 2005). More than 400 human genes encode ion channel subunits, many of which are altered by variants that impact organ function and development (George, 2014a; George, 2014b; Clare, 2010). These so-called \u2018Channelopathies\u2019 manifest in various human diseases such as cardiac arrhythmias, neurological conditions, and cystic kidney diseases (Lieve and Wilde, 2015; Kass, 2005). Besides their association with disease-causing variants, channels are important therapeutic targets for treating various pathophysiologies and represent the second largest target among the existing FDA-approved drug portfolio (Overington et al., 2006; Santos et al., 2017; Kaczorowski et al., 2008). However, many members of the so-called \u2018dark genome\u2019 of understudied proteins encode putative ion channels that are implicated in human disease but remain resistant to functional characterization (Oprea, 2019). Furthermore, channels which localize to cellular compartments in low quantities present a significant challenge to assay for drug screening purposes (McGivern and Ding, 2020). Thus, these observations warrant the present investigation of a novel methodological approach to characterize ion channel biophysics and pharmacology.\n\nVoltage-clamp electrophysiology incarnated in either planar or glass electrode designs provide direct, real-time and the highest available fidelity measurements of the ion channel conductive states. In the on-cell or inside-out configurations, their opening and closing conformational changes (i.e. gating) are captured as stochastic single-channel currents after forming high-resistance seals (>10 M\u03a9) at the interface of the electrode against a biological membrane (Neher and Sakmann, 1976). This conventional electrophysiology technique is commonly used to characterize the properties of plasma membrane channels and typically involves either recording from an endogenous cell source or from a cell line expressing the channel transgene (Neher, 1992; Hamill et al., 1981). However, capturing the biophysical properties of organelle channels and those from bacteria can be mired by electrode inaccessibility to inner membranes. As a work around, investigators have employed various channel reconstitution methods which typically consist of several steps (Morera et al., 2007; Leptihn et al., 2011). First, the channel of interest is expressed and immunopurified from a biological cell source, then it is reconstituted into a synthetic or into biologically derived lipid bilayers or vesicles. While there are many examples where heterologous approaches have faithfully reproduced the functional properties of channels from native sources, these preparations are frequently contaminated by endogenous ionophores from the host cell lines, even after purification (Varghese et al., 2006; Pablo et al., 2017).\n\nTo address this, we have developed a completely synthetic method to assay ion channel biophysics. The approach combines advances in cell-free protein expression (CFE) and reconstitution of the synthetic channel protein into giant unilamellar vesicles (GUV) where their single-channel properties can be measured using voltage-clamp electrophysiology (Shimizu and Ueda, 2010; Kuruma et al., 2005; Jacobs and Kamat, 2022). CFE is a form of in vitro protein synthesis, utilizing purified cellular machinery (ribosomes, tRNAs, enzymes, cofactors, etc.) needed to directly transcribe and translate user-supplied DNA plasmid encoding an ion channel. The unmodified channel proteins are reconstituted into GUVs\u2014 cell-sized model membrane systems derived from electrolysis of synthetic lipid mixtures. To validate this method, we characterized PKD2 and PKD2L1, two members of the polycystin subfamily of transient receptor potential (TRP) ion channels. PKD2 and PKD2L1 are highly homologous subunits with six transmembrane segments and shared overall protein folding when structurally assembled as homotetrameric channels (Shen et al., 2016; Grieben et al., 2017; Wang et al., 2020; Wilkes et al., 2017; Hulse et al., 2018; Su et al., 2018). Polycystin subunits can also form heteromeric ion channel complexes with several members of the TRP family and traffic to the primary cilia and endoplasmic reticulum organelle membranes (Esarte Palomero et al., 2023). Both features present challenges for experimentalists to functionally characterize these unique channel properties within their endogenous cell membranes. The medical and biological importance of polycystins is underscored by PKD2 variants associated with autosomal dominant polycystic kidney disease, and this channel\u2019s role in fertility and conferring right\u2013left symmetry in embryonic development (Wu et al., 1998; Gao et al., 2003; Tanaka et al., 2023). While PKD2L1 variants have yet to be linked to human disease, its loss of expression results in epilepsy susceptibility and autism-like features in mice (Vien et al., 2023; Yao et al., 2016). In this report, we stepwise express and confirm protein expression of polycystin channels using the CFE method; reconstitute channel protein in GUVs containing distinct lipid components; assess correct membrane orientation using self-labeling saturated N-heterocyclic building blocks (SNAP) protein chemistry and evaluate channel properties using electrophysiology (Vo et al., 2013). Outcomes define a novel reductionist and generalizable approach to study ion channels resistant to biophysical characterization.\n\n## Results and discussion\n\nWe began by carrying out CFE in vitro synthesis of PKD2L1 protein in the presence and absence of lipid vesicles. Plasmid DNA encoding human PKD2L1 with C-terminally tagged green fluorescent protein (PKD2L1-GFP) was added to the cell-free expression components (PURExpress, New England Biolabs) and induced protein translation by heat (Figure 1A, see methods). Each reaction produced 8 \u00b1 3.5 ng/\u03bcl of synthetic channel protein as estimated by a standardized GFP absorbance assay (Figure 1\u2014figure supplement 1A). The synthetically derived channel protein identity was confirmed using two methods. First, by western blot of the cell-free reaction where the PKD2L1-GFP protein was sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) gel separated from the reactants and detected by an anti-GFP monoclonal antibody (Figure 1B). Second, the PKD2L1 protein was confirmed by mass spectroscopy with 46% coverage (Figure 1\u2014figure supplement 1B, C). Since polycystins are transmembrane proteins, we hypothesize that channel membrane incorporation would be facilitated by including lipid substrates into the CFE reaction. Thus, we compared channel synthesis in the presence or absence of small unilamellar vesicles (SUVs) comprised of 1,2-diphytanoyl-sn-glycero-phosphocholine (DPhPC; 4ME16:0PC) and cholesterol (Figure 1A). We monitored PKD2L1-GFP protein production over time through fluorescence which is dependent on complete channel translation and correct GFP folding (M\u00fcller-Lucks et al., 2012). We observed a dramatic increase in fluorescence output which plateaued after 3 hr when CFEs reactions were supplemented with SUVs\u2014 an effect not observed in water-supplement (H2O) control reactions (Figure 1C; Klammt et al., 2006). Minimal changes in fluorescence were detected when a control plasmid (Ctrl) encoding a non-fluorescent protein (dihydrofolate reductase) was used in the reaction. Polycystin channels function as tetramers, thus we examined CFE-derived PKD2L1 oligomeric assembly in SUVs using fluorescence-detection size-exclusion chromatography (FSEC). As controls, we tested recombinant (cell-derived) GFP and GFP-tagged polycystin proteins which produced monodispersed peaks in the fluorescent signal which provided a reference for their respective elution times off the column (Figure 1\u2014figure supplement 1D). Although not as robust, the fluorescence signal from CFE + SUV-derived PKD2L1 protein produced a symmetrical peak at the expected elution time of channel tetramers, along with fractions which may correspond to unassembled protomers (Figure 1\u2014figure supplement 1E). Taken together, these results demonstrate the feasibility of synthesizing full-length polycystin channels using the cell-free expression system, and the enhancement of transmembrane protein synthesis and channel assembly through lipid vesicle incorporation during these reactions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of cell-free protein expression into synthetic lipid vesicles and subsequent electroformation with Vesicle Prep Pro (Nanion). (B) Full-length PKD2L1-GFP protein detected by western blot after cell-free expression into vesicles. (C) Monitored fluorescence over time of cell-free expressed PKD2L1-GFP and a non-fluorescent control plasmid produced in the presence or absence of lipid vesicles.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Top, fluorescence (488\u03b3) standard curve determined with a recombinant GFP-tagged protein fit with a linear regression. PURExpress synthesized PKD2L1-GFP and PKD2-GFP were measured after 3 hr of expression at 37\u00b0C. (GFP standard curve N = 5, PKD2L1 and PKD2 N = 3 replicates). Bottom, average protomer and tetramer protein production from the PURExpress reaction. Error bars represent SEM. (B) Representative sequence coverage of PKD2L1-GFP (top) and PKD2-GFP (bottom) from tandem mass spectrometry spectra. (C) Mass spectrometry outputs identifying polycystin proteins. (D, E) Fluorescence-detection size-exclusion chromatography (FSEC) of polycystin proteins derived from recombinant and cell-free protein expression (CFE) sources. Recombinant human PKD2-GFP and PKD2L1-GFP protein was obtained from lysates of 0.5 \u00d7 106 HEK cells stably expressing the channels. Purified Aequorea Victoria GFP His-tag protein was obtained from Thermo Fisher Scientific. SUVs containing CFE-derived polycystins were lysed using dodecyl \u03b2-D-maltoside (DDM) prior to FSEC analysis (see methods).\n\nOne caveat of membrane protein vesicle reconstitution is the potential for misorientation after lipid integration. To assay channel orientation, we synthesized PKD2L1 with a C-terminal SNAP-tag fusion protein (PKD2L1-SNAP) in SUVs then electroformed them into GUVs for the assay. The SNAP-tag specifically reacts with fluorescent O2-benzylcytosine derivatives and, depending on the derivatives membrane permeability, will react with lipid integrated proteins based on the tag\u2019s accessibility (Figure 2\u2014figure supplement 1). GUVs containing CFE synthesized PKD2L1-SNAP were formed by electroformation after passing current through indium tin oxide slides treated with dried SUV-channel protein mixture (Boban et al., 2021). We then added two SNAP fluorescent derivatives, membrane permeable SNAP-Cell Oregon Green (Cell488) and membrane impermeable SNAP-Surface Alexa Fluor 647 (Surface647), to monitor orientation-dependent membrane protein reactivity with the SNAP label (Figure 2A, Figure 2\u2014figure supplement 1). We hypothesized there will be two fluorescent outcomes. First, if all channels orient correctly, then we should see only Cell488 fluorescence with no Surface647 at the membrane (Figure 2A). Second, if the channels are in opposite or in mixed orientations, then we expect to see dual fluorescence of Cell488 and Surface647 (Figure 2B). We imaged over 60 GUVs and found 38.5% of the vesicles exhibited sole Cell488 fluorescence\u2014indicating their correct channel orientation within this population (Figure 2B, C). Importantly, none of the vesicle membranes labeled with both Cell488 and Surface647 while retaining a clear lumen\u2014suggesting that the population of GUVs containing misoriented channels was nominal. In some cases, vesicles can encapsulate dye through compromised integrity or mechanisms other than membrane permeability. This is apparent when fluorescence can be seen in the vesicle lumen, rather than on the membrane (Figure 2C). While the encapsulated fluorescent vesicles account for most of the vesicles imaged, there were no vesicles seen with Cell488 and Surface647 fluorescence at the membrane with a clear lumen (Figure 2B, C). Based on these results, we conclude that our cell-free synthesized PKD2L1 channels are successfully reconstituted in GUVs in the correct orientation, and this preparation is suitable to assay PKD2L1 channels using electrophysiology.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig2-v1.jpg)\n\n**Figure 2.:** (A) Schematic of possible ion channel orientation outcomes from PKD2L1 cell-free expression (top) and hypothesized fluorescence results when Cell488 and Surface647 added (bottom). (B) Fluorescent confocal images from the SNAP-tagged vesicles. The scale bar represents 10 \u03bcm for all images. (C) Vesicle percentage depicts the percent of vesicles with each fluorescent output (N = 65 vesicles).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Schematic of PKD2L1-SNAP incorporated into GUVs, followed by SNAP staining with cell permeable (Cell488), and cell impermeable (Surface647) SNAP-Tag marker.\n\nNative and transgene expressed PKD2L1 channels conduct monovalent cations, thus we established symmetric potassium ion (K+) recording conditions to measure synthetic polycystin currents from GUVs. GUVs containing PKD2L1 were voltage clamped using 4\u20137 M\u03a9 resistance (R) glass electrodes in the inside-out membrane patch configuration (Figure 3A). Single-channel events were frequently observed while establishing high-resistance seals (R > 10 G\u03a9); however, the majority of PKD2L1 GUV patches were unstable during voltage steps and these results were excluded from the final analysis. We hypothesize that patch instability and low seal resistance likely results from over-incorporation of PKD2L1 tetramers into the GUV membranes, as supported by the FSEC data. In addition, membrane instability was not observed from empty GUV recordings, suggesting that opening of incorporated CFE synthesized polycystins is likely responsible for patch destabilization. From the stable recordings, two magnitudes of single channels were readily observed from GUVs containing PKD2L1, suggesting unique full and sub-conductance states (Figure 3B, C and Table 1). In some recordings, only one conductance predominates, which can be estimated from recordings from individual GUVs (Figure 3\u2014figure supplement 1A, B). While in other recordings, both full (FC) and sub-conductive (SC) states can be identified by histogram analysis of the unitary current (Figure 3\u2014figure supplement 1C, D). Importantly, no single-channel events were observed from GUVs (N = 11) derived from CFE reactions with the empty plasmid\u2014indicating that the measured conductance is not due to contaminates from lipid or cell-free reagents (Figure 3B). To assess the selectivity of the synthetic PKD2L1 pore, we substituted the pipette K+ charge carrier for methyl-D-glucamine ions (NMDG+). We did not observe any outward single-channel currents (i.e. toward the bath), indicating the large cation was not permeable through PKD2L1 which is consistent with previous reports (Figure 3D, E; DeCaen et al., 2016; Ng et al., 2019). To determine the feasibility of using this approach to assess the function of other polycystin channels, we followed the same steps to assay PKD2 channel biophysics. As observed in our PKD2L1 results, unitary single-channel currents of synthetic PKD2 channels reconstituted in GUVs yield sub- and full conductances, which were terminated by substitution of K+ with NMDG+ in the electrode (Figure 4A\u2013C; Figure 3\u2014figure supplement 1E\u2013H). To compare the properties of the synthetic and biologically derived channels, we recorded native PKD2L1 and PKD2 channel single-channel currents from the primary cilia membranes of hippocampal neurons and inner medullary collecting duct (IMCD) cell line, respectively (Figure 4\u2014figure supplement 1; Vien et al., 2023; Kleene and Kleene, 2017; Liu et al., 2018). Like the synthetic PKD2 and PKD2L1 channels, native polycystins produced sub- and full K+ conductances with inward currents having the greater magnitudes. Here, the synthetic PKD2L1 GUV conductance approximates the native full and sub-conductances recorded from hippocampal primary cilia membranes cultured from neonatal mice (ARL13B-EGFPtg). However, the PKD2 K+ conductance magnitudes recorded from IMCD cilia were significantly smaller than those assayed using the CFE\u2013GUV synthetic system (Table 1). These differences might arise from the lack of post-translational modifications (e.g. phosphorylation and N-glycosylation) to the synthetic PKD2 peptides, which are normally found in biologically derived channels (Su et al., 2018; Cai et al., 1999; Newby et al., 2002). In addition, the GUVs are comprised of synthetic lipids which does not reflect the composition of organelle (cilia or ER) membranes of the cell (Nakatsu, 2015). Thus, while retaining the native ion selectivity and ion channel functionality despite their cell-free origin, synthetic PKD2 has different conductance magnitudes compared to cell-derived channels, which presents a limitation of using this approach to recapitulating physiological channel functions.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig3-v1.jpg)\n\n**Figure 3.:** (A) Images of voltage-clamped giant unilamellar vesicles (GUVs) with incorporated PKD2L1-GFP channels. Left, establishing high-resistance seals in the on-cell patch configuration. Right, transitioning to the inside-our patch configuration. Scale bar = 20 \u03bcm. (B) Example unitary single-channel current records from GUVs reconstituted with or without PKD2L1 protein. Vesicles were patched using the symmetrical 150 mM K+ conditions (see methods) and PKD2L1 single-channel current producing full and sub-conductances are colored black and blue, respectively. (C) Average single-channel current amplitudes. Conductance (\u03b3) estimated by fitting the average single-channel currents to a linear equation. Error (gray) indicates SEM from N = 3\u20138 GUVs. Several replicates lacked single-channel openings at all test potentials. (D) PKD2L1 single-channel current recorded using asymmetric cationic solutions, with 150 mM K+ in the bath and 150 mM NMDG+ in the pipette. (E) Resulting average single-channel current amplitudes where no inward single-channel current was detected (N = 3\u20134 GUVs).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A, E) Single-channel current amplitudes measured from individual GUVs (open circles). GUVs with open channel events measure at four or more potentials in inward and outward direction were fit to a linear equation to estimate their conductance. (B, F) Resulting violin plots of the sub- (SC, blue) and full (FC, black) polycystin conductance as estimated from individual GUV recordings (N = 5\u20137 GUVs). (C, G) Unitary single-channel currents measured from GUVs expressing polycystins held at 100 mV. Examples on the top demonstrated channels transitioning from closed (C) to the full conductance current levels, whereas examples below are measured from channels shifting between sub- and fully conductive current levels. (D, H) Resulting histogram analysis of the corresponding single-channel currents.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig4-v1.jpg)\n\n**Figure 4.:** (A) Example unitary single-channel current records from giant unilamellar vesicles (GUVs) reconstituted with PKD2 protein in symmetrical 150 mM K+ conditions producing full (black traces) and sub-conductances (blue traces), respectively. (B, C) Average single-channel current amplitudes recorded using K+ or NMDG+ in the recording electrode solution. Conductance (\u03b3) estimated by fitting the average single-channel currents to a linear equation. Error (gray) indicate SEM from K+ (N = 3\u201312 GUVs) and NMDG+ (N = 2\u20135 GUVs) conditions.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98534/elife-98534-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A, B) Top, images of voltage-clamped primary cilia from mouse hippocampal neurons and inner medullary kidney collecting duct cells (IMCD) harvested from transgenic mice expressing a fluorescent cilia reporter (ARL13B-EGFPtg) (Delling et al., 2013). Scale bar = 20 \u03bcm. Previous work has genetically identified PKD2L1 and PKD2 as essential ion channel subunit in the primary cilia of the renal collecting duct cells and hippocampal neurons (Vien et al., 2023; Kleene and Kleene, 2017). Bottom, average single-channel current amplitudes recorded from primary cilia using K+ in the recording electrode solution. Conductance (\u03b3) estimated by fitting the average single-channel currents to a linear equation. Error indicates SEM (N = 6 cilia).\n\n**Table 1.**\n Conductance properties of polycystins measured from giant unilamellar vesicle (GUV) and cilia membranes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Polycystin channel and membrane context</th>\n      <th colspan=\"2\">Major K+ g (pS) \u00b1 SD</th>\n      <th colspan=\"2\">Minor K+ g (pS) \u00b1 SD</th>\n    </tr>\n    <tr>\n      <th>Inward</th>\n      <th>Outward</th>\n      <th>Inward</th>\n      <th>Outward</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>PKD2 (GUV membrane, cell-free expression)</td>\n      <td>282 \u00b1 38</td>\n      <td>153 \u00b1 32</td>\n      <td>23 \u00b1 4</td>\n      <td>21 \u00b1 3</td>\n    </tr>\n    <tr>\n      <td>PKD2 (primary cilia membrane, endogenous murine inner medullary collecting duct [IMCD] cell line)</td>\n      <td>144 \u00b1 9</td>\n      <td>110 \u00b1 6</td>\n      <td>46 \u00b1 4</td>\n      <td>34 \u00b1 4</td>\n    </tr>\n    <tr>\n      <td>PKD2L1 (GUV membrane, cell-free expression)</td>\n      <td>148 \u00b1 29</td>\n      <td>114 \u00b1 28</td>\n      <td>30 \u00b1 6</td>\n      <td>31 \u00b1 7</td>\n    </tr>\n    <tr>\n      <td>PKD2L1 (primary cilia membrane, endogenous hippocampal neurons)</td>\n      <td>165 \u00b1 10</td>\n      <td>113 \u00b1 6</td>\n      <td>40 \u00b1 4</td>\n      <td>29 \u00b1 3</td>\n    </tr>\n  </tbody>\n</table>\n\nIn summary, we have established a synthetic approach to assay ion channel biophysics using two polycystin members to validate our method. Previously CFE has been used to study membrane protein integration, drug delivery, and the study of actin dynamics (Jacobs and Kamat, 2022; Noireaux and Liu, 2020; G\u00f6pfrich et al., 2019). The novelty of our approach rests with the adaptation of CFE-derived channels and their GUV reconstitution to carry out single-channel electrophysiology experiments. The described method represents a highly reductionist approach to assay channel function which can be generalized to other channels resistant to characterization using traditional electrophysiology approaches. Furthermore, the CFE\u2013GUV electrophysiology method can be leveraged for future inquiry into lipid-channel regulation and effects of channel subunit composition. PKD2-related protomers form heteromeric complexes (e.g. PKD1\u2013PKD2; PKD1L1\u2013PKD2L1) with PKD1-related polycystins which are notoriously difficult to assay using traditional electrophysiology techniques (as reviewed) (Esarte Palomero et al., 2023). Using the CFE method to co-synthesize and GUV reconstitute these subunits presents a potential avenue to assay their function with patch clamp recordings. The approach may be further developed into high throughput drug screening assays using cation reporters (e.g. Fura derivatives) or multi-well planer electrophysiology instruments (Zhou et al., 2021; Yu et al., 2016). With our pipette patch electrodes, we observed considerable instability of our high resistant seals when the bath solutions were exchanged. Thus, future work could explore alternative membrane compositions (e.g. additional cholesterol) and stabilizing cationic conditions (internal CsF) to mitigate this effect. The folding and membrane integration of many ion channels require their association with stabilizing chaperone proteins produced in cells (Li et al., 2017; Chen et al., 2023; Bai et al., 2018). Thus, while the co-expression of chaperones with these channels using the CFS + GUV system is likely required for their functionality, the approach may also be leveraged to study chaperone-assisted folding in vitro.\n\n## Methods\n\n### Protein production\n\nCell-free protein production was performed with PURExpress In Vitro Protein Synthesis Kit from New England Biolabs, Inc (Ipswich, MA, USA). Both PKD2 and PKD2L1 are in a pET19b plasmid under T7 promoter. We utilized the manufacturer\u2019s protocol with 1 mg target DNA and a maximum reaction volume of 30 \u03bcl. When appropriate, we added substituted diH2O for SUVs. The reactions were placed in 37\u00b0C water bath or heated plate reader between 2 and 3 hr and then placed at 4\u00b0C for storage.\n\n### Vesicle formation\n\nLipids DPhPC (4ME16:0PC) and cholesterol (ovine) were obtained from Avanti Polar Lipids (Alabaster, AL, USA) and mixed in chloroform to the desired mol percentage, 95% DPhPC and 5% cholesterol. SUVs were formed following the previously described (Varghese et al., 2006). Briefly, lipids were reconstituted in chloroform in a glass vial and the chloroform was evaporated until a thin lipid layer is deposited on the bottom of the glass vial. The lipid layer is then placed under vacuum, \u201323 inhg, for >4 hr. Lipids are then rehydrated in 1 ml of diH2O overnight at 60\u00b0C. The following day, lipids are vortexed and then passed through a 100-nm polycarbonate filter with the Mini-Extruder (Avanti Polar Lipids, Alabaster, AL, USA) seven times and stored at 4\u00b0C for 2 weeks. SUVs with or without channel incorporated are dried onto indium tin oxide-coated glass slides from Nanion Technologies (Munich, Germany). The dried slides are placed on the Vesicle Prep Pro (Nanion Technologies) with a rubber o-ring and 300 mM sucrose. GUVs are formed using the standard program. GUVs are electroformed and used for electrophysiology experiments the same day. SUVs with channel incorporated are stored at 4\u00b0C for 3 days.\n\n### Monitoring fluorescence and cell-free protein synthesis quantification\n\nWe monitored fluorescent folding with PKD2L1 C-terminally tagged GFP during PURExpress reaction in the presence and absence of SUVs. GFP fluorescence was monitored every 10 min for 3 hr at 37\u00b0C on the BioTek Cytation5 Imaging Reader (Agilent, Santa Clara, CA, USA). Control plasmid was the PURExpress Control DHFR Plasmid (NEB, Ipswich, MA, USA) with no fluorescent tag. GFP standard curve was created from dilutions of Aequorea Victoria GFP His-tag recombinant protein (Thermo Fisher Scientific, Cat. No. A42613) and measured on the BioTek Cytation5 Imaging Reader. A linear regression (Igor Pro, WaveMetrics, Portland, OR, USA) was used to create a standard curve. Target protein fluorescent measurements were made after in vitro protein synthesis for 3 hr.\n\n### Western blotting\n\nWestern blotting was performed on PKD2L1\u2013GFP plasmid after PURExpress protein expression in the presence of SUVs. SUV and protein mixture were separated on SDS\u2013PAGE gel, Novex Tris-Glycine mini protein gels, 4\u201320%, 1.0 mm, WedgeWell format (Thermo Fisher, Waltham, MA, USA). The SDS\u2013PAGE was run with 10 \u03bcl Spectra Multicolor Broad Range Protein Ladder (Thermo Fisher Scientific, Cat. No. 26634). The gel was then transferred to Amersham Hybond P 0.45 PVDF blotting membrane (Cytiva, Cat. No. 10600029) and PKD2L1-GFP was detected with an anti eGFP monoclonal antibody (F56-6A1.2.3) (Invitrogen, Cat. No. MA1-952) diluted 1:1000 in TBS with 0.1% (vol/vol) Tween-20 and 5% (5/vol) milk overnight at 4\u00b0C. The goat anti-mouse AF555 secondary (Invitrogen, Cat. No. A32727) diluted 1:5000 in TBS with 0.1% Tween-20 and 5% milk was incubated for 1 hr at room temperature.\n\n### SNAP staining\n\nChannel orientation was visualized with N-terminally tagged PKD2L1 with SNAP Tag sequence (NEB, Ipswich, MA, USA). After PKD2L1-SNAP-tag production and incorporation into GUVs, two SPAP-tag substrates were added to the solution, cell permeable SNAP-Cell Oregon Green and the cell impermeable SNAP-Surface Alexa Fluor 647, according to the manufacturer\u2019s instructions. Images were collected on Nikon A1 confocal microscope and all images were analyzed with Nikon Elements (Melville, NY, USA). Briefly, regions of interests were manually outlined around the vesicle membrane. Then Pearson\u2019s correlation coefficients were measured for fluorescence overlap of the two substrates.\n\n### Fluorescence-detection size-exclusion chromatography\n\nAs controls for the polycystin FSEC elution time, Aequorea Victoria GFP His-tag recombinant protein (Thermo Fisher Scientific, Cat. No. A42613) and polycystin channel protein was harvested from lysates of 0.5 \u00d7 109 HEK293T (ATCC, Cat. No. CRL-3216) PKD2Null cell lines (Vien et al., 2020) stably expressing PKD2-GFP and PKD2L1-GFP. Sythetic channel protein from three CFE reactions were synthesized in the presence of SUVs, as previously described. The SUVs were lysed using dodecyl \u03b2-D-maltoside (DDM) (GoldBio) and protein supinates collected after centrifugation for 20 min at 20,000 rpm. Samples were then diluted in 50\u2013100 \u03bcl of SEC running buffer containing (ml) 150 mM NaCl, 25 mM N-2-hydroxyethylpiperazine-N'-2-ethanesulfonic acid (HEPES), 1 mM CaCl2\u00b76H2O, 0.05% DDM, 0.005% cholesteryl hemisuccinate, pH 7. 50 \u03bcl of each sample were separated on an analytical size-exclusion column (Superose 6 5/150 GL; GE Healthcare) at 0.2 ml/min flow rate. Fluorescent proteins were detected (excitation: 480 \u2009nm, emission: 512 \u2009nm) using an RF-20Axs detector (Shimadzu, Japan).\n\n### Isolation of primary hippocampal neurons and IMCD cell culture for cilia electrophysiology\n\nAll mice utilized in these procedures are housed in our AAALAC-approved Center for Comparative Medicine (CCM) at Northwestern University, Feinberg School of Medicine. NU Institutional Animal Care and Use Committee has approved this facility and was monitored by an Animal Care Supervisor as well as a veterinarian from the Division of Laboratory Animal Medicine (DLAM). All of those who handled animals and perform the approved protocols were properly trained prior to start of work to ensure no animal discomfort. Mice were anesthetized using isoflurane and sacrificed by severing the spinal cord. Hippocampi were dissected from 3 to 6 ARL13B-EGFPtg mice (ages P0\u2013P1, sex undetermined, background strain C57BL/6J) and digested in ~20 units of papain (LK003176, Worthington) and ~200 units of deoxyribonuclease (LK003172, Worthington) dissolved to basal medium eagle solution (B1522, Sigma) at 37\u00b0C for 25 min (Vien et al., 2023). Tissues were washed with beta-mercaptoethanol (BME) and triturated to release cells. Cells were centrifuged at 300 \u00d7 g for 4 min and plated on polylysine-coated glass coverslip at 1\u20134 \u00d7 105 density in basal medium eagle solution containing B27 supplement (17504044, Gibco), N-2 supplement (17502048, Gibco), 0.5% penicillin/streptomycin (15140148, Gibco), 5% fetal bovine serum, 5% horse serum (260500,Gibco), and GlutaMax (350500, Gibco). Hippocampal neurons were cultured for 2\u20137 days prior to conducting electrophysiology experiments. IMCD cells stably expressing ARL13B-EGFP cilia reporters were cultured in F12/DMEM media (Sigma) with 10% fetal bovine serum (Sigma) and 50 I.U./ml penicillin\u2013streptomycin (30-2300, ATCC) antibiotic.\n\n### Electrophysiology\n\nAll research chemicals used in the electrophysiology experiments were purchased from Millipore-Sigma. Single-channel recordings were recorded from primary cilia and GUV membranes. All GUV patch electrodes were made using borosilicate glass electrodes and were fire polished to resistances greater than 5\u201310 M\u03a9 and primary cilia patch electrodes were polished to a resistance greater than 15 M\u03a9. Renal primary cilia PKD2 currents were recorded from mIMCD-3 (ATCC, Catalog No. CRL-2123) cells expressing the cilia reporter ARL13B-EGFP, as previously described (Kleene and Kleene, 2017; Kleene and Kleene, 2012; DeCaen et al., 2013; Vien et al., 2020; Liu et al., 2017). Primary cilia PKD2L1 currents were recorded from isolated neonatal hippocampal neurons from ARL13B-EGFPtg using previously described procedure (Vien et al., 2023). Recording solutions for mammalian culture consisted of symmetrical recording solutions with 150 mM KCl, 10 mM HEPES, and 300 mM glucose, unless the charge carrier was changed when mentioned. Recordings were collected in voltage clamp with voltage steps from \u2212100 to +100 mV and a holding potential of \u221240 mV with ClampEx v.11.2.0.59 (MolecularDevices, San Jose, CA, USA) using a Axopatch 200B amplifier. Recordings were digitized with the Digidata 1550B (MolecularDevices) at 25 kHz and low pass filtered at 5 kHz. Recordings were analyzed with ClampFit v11.2.0.59 (Molecular Devices, San Jose, CA, USA) and IGOR Pro 8.04 (WaveMetrics, Portland, OR, USA). As a predetermined criteria, data was excluded from analysis when seal resistance fell below 5 M\u03a9 due insufficient voltage control of the patched membrane. Conductance was determined by determining the slope of the current\u2013voltage relationship. Probability of open time was calculated by measuring the time at which a channel spends in an open confirmation divided by the total time in the voltage step.\n\n### Materials availability statement\n\nAll CFE and mammalian cell expression constructs used in this study are available without restriction upon written request to the corresponding author.\n",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Stephan A Pless, University of Copenhagen Denmark\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98534.3.sa0](https://doi.org/10.7554/eLife.98534.3.sa0)\n\nThe authors have developed a valuable approach that employs cell-free expression to reconstitute ion channels into giant unilamellar vesicles for biophysical characterisation. The work is convincing and will be of particular interest to those studying ion channels that primarily occur in organelles and are therefore not amenable to be studied by more traditional methods.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98534.3.sa1](https://doi.org/10.7554/eLife.98534.3.sa1)\n\nSummary:\n\nThe authors have developed a valuable method based on a fully cell-free system to express a channel protein and integrated it into a membrane vesicle in order to characterize it biophysically. The study presents a useful alternative to study channels that are not amenable to be studied by more traditional methods.\n\nStrengths:\n\nThe evidence supporting the claims of the authors is solid and convincing. The method will be of interest to researchers working on ionic channels, allowing to study a wide range of ion channel functions such as those involved in transport, interaction with lipids or pharmacology.\n\nWeaknesses:\n\nThe inclusion of a mechanistic interpretation how the channel protein folds into a protomer or a tetramer to become functional into the membrane, would strengthen the study.\n\nComments on revised version:\n\nIn the revised version, the authors did not experimentally addressed how tetrameric or protomeric proteins are actually produced. However, they performed new experiments to assess the amount of tetramers that are being actually formed. They used a size-exclusion chromatography to conclude that the protomers and tetramers species of complexes are formed and assembled.\n\nThe authors have addressed most of my minor concerns and have modified or updated the manuscript following my recommendations, so I have no further comments.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98534.3.sa2](https://doi.org/10.7554/eLife.98534.3.sa2)\n\nIt is challenging to study the biophysical properties of organelle channels using conventional electrophysiology. The conventional reconstitution methods requires multiple steps and can be contaminated by endogenous ionophores from the host cell lines after purification. To overcome this challenge, in this manuscript, Larmore et al. described a fully synthetic method to assay the functional properties of the TRPP channel family. The TRPP channels are an important organelle ion channel family that natively traffic to primary cilia and ER organelles. The authors utilized cell-free protein expression and reconstitution of the synthetic channel protein into giant unilamellar vesicles (GUV), the single channel properties can be measured using voltage-clamp electrophysiology. Using this innovative method, the authors characterized their membrane integration, orientation, and conductance, comparing the results to those of endogenous channels. The manuscript is well-written and may present broad interest to the ion channel community studying organelle ion channels. Particularly because of the challenges of patching native cilia cells, the functional characterization is highly concentrated in very few labs. This method may provide an alternative approach to investigate other channels resistant to biophysical analysis and pharmacological characterization.\n\nComments on revised version:\n\nThe authors have addressed my concerns. This excellent method manuscript would benefit the study of organelle channels.\n",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ca64b8e9-2bb2-43d9-bbe8-1ef314d1c9ec",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C1",
+      "claim": "Ion channels are biological transistors that control ionic flux across cell membranes to regulate electrical transmission and signal transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "Ion channels are biological transistors that control ionic flux across cell membranes to regulate electrical transmission and signal transduction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about ion channel function supported by established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "a1a9a50e-614c-4195-96fb-64202df79a10",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C2",
+      "claim": "Ion channels are found in all biological membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "They are found in all biological membranes and their conductive state kinetics are frequently disrupted in human diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a broad statement about ion channel distribution supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "fead0aa9-f5bc-451c-a0c5-cbf6e0c0020f",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C3",
+      "claim": "Ion channel conductive state kinetics are frequently disrupted in human diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "They are found in all biological membranes and their conductive state kinetics are frequently disrupted in human diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge about channelopathies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "ef4eff60-38bf-4afb-886e-8dc7878f5143",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C4",
+      "claim": "Organelle ion channels are among the most resistant to functional and pharmacological interrogation.",
+      "claim_type": "EXPLICIT",
+      "source": "Organelle ion channels are among the most resistant to functional and pharmacological interrogation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the challenges of studying organelle ion channels, supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "e3d70198-73b1-4a2f-800a-300b373d2eb0",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C5",
+      "claim": "Traditional channel protein reconstitution methods rely upon exogenous expression and/or purification from endogenous cellular sources which are frequently contaminated by resident ionophores.",
+      "claim_type": "EXPLICIT",
+      "source": "Traditional channel protein reconstitution methods rely upon exogenous expression and/or purification from endogenous cellular sources which are frequently contaminated by resident ionophores.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a known limitation of traditional methods, supported by established knowledge and later cited in the manuscript (Varghese et al., 2006; Pablo et al., 2017).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "3f84c297-f407-4cca-9056-4cd52532e254",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C6",
+      "claim": "Polycystin channels natively traffic to primary cilia and endoplasmic reticulum organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we describe a fully synthetic method to assay functional properties of polycystin channels that natively traffic to primary cilia and endoplasmic reticulum organelles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement about polycystin localization is supported by established knowledge and later cited in the manuscript (Esarte Palomero et al., 2023).",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "25b054e6-9ab9-421e-8a4e-d8425053ff90",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C7",
+      "claim": "The synthetic method characterizes polycystin channel oligomeric assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we characterize their oligomeric assembly, membrane integration, orientation, and conductance while comparing these results to their endogenous channel properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including FSEC analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "af039b18-f815-4934-ab2c-bdcd29121ca6",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C8",
+      "claim": "The synthetic method characterizes polycystin channel membrane integration.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we characterize their oligomeric assembly, membrane integration, orientation, and conductance while comparing these results to their endogenous channel properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including fluorescence monitoring and western blot analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "57fe5d71-8b66-4fc9-a0a9-c660dbd8d06f",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C9",
+      "claim": "The synthetic method characterizes polycystin channel orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we characterize their oligomeric assembly, membrane integration, orientation, and conductance while comparing these results to their endogenous channel properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data using SNAP-tag labeling presented in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "39c881d6-235a-4805-964a-03d008783d00",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C10",
+      "claim": "The synthetic method characterizes polycystin channel conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this method, we characterize their oligomeric assembly, membrane integration, orientation, and conductance while comparing these results to their endogenous channel properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by electrophysiology data presented in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "65d483a9-e036-42a3-99b1-50bdb026dbbd",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C11",
+      "claim": "Ion channels are pore-forming integral transmembrane proteins essential for all cellular lifeforms.",
+      "claim_type": "EXPLICIT",
+      "source": "Ion channels are pore-forming integral transmembrane proteins essential for all cellular lifeforms (Hille, 1978; Lee et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to foundational literature in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "f4c64c3e-b18a-4e0e-8196-8d9e42e4223e",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C12",
+      "claim": "At the plasma membrane, ion channels are responsible for generating long-range bioelectric conduction in excitable eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At the plasma membrane, ion channels are responsible for generating long-range bioelectric conduction in excitable eukaryotic cells (e.g. neurons), and within prokaryotic colonies (e.g. bacteria biofilms), and filamentous colonies of archaea (Yang et al., 2021; Prindle et al., 2015; Goaillard and Marder, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "0f85d439-5e78-486f-9c09-e2a09bbfa901",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C13",
+      "claim": "Ion channels generate long-range bioelectric conduction within prokaryotic colonies.",
+      "claim_type": "EXPLICIT",
+      "source": "At the plasma membrane, ion channels are responsible for generating long-range bioelectric conduction in excitable eukaryotic cells (e.g. neurons), and within prokaryotic colonies (e.g. bacteria biofilms), and filamentous colonies of archaea (Yang et al., 2021; Prindle et al., 2015; Goaillard and Marder, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "4aba838a-7d6b-4b2e-80be-603e328ae76f",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C14",
+      "claim": "Ion channels generate long-range bioelectric conduction in filamentous colonies of archaea.",
+      "claim_type": "EXPLICIT",
+      "source": "At the plasma membrane, ion channels are responsible for generating long-range bioelectric conduction in excitable eukaryotic cells (e.g. neurons), and within prokaryotic colonies (e.g. bacteria biofilms), and filamentous colonies of archaea (Yang et al., 2021; Prindle et al., 2015; Goaillard and Marder, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "2af19d32-c108-42a5-be2b-00d5636d0e21",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C15",
+      "claim": "Ion channels contribute to fundamental vital cell processes including division, signal transduction, and ionic homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, they contribute to fundamental vital cell processes including division, signal transduction, and ionic homeostasis (Hille, 1978).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to foundational literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "09c7481c-a27a-451e-a8f7-f52da3d4f14f",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C16",
+      "claim": "In eukaryotic organelle membranes, ion channels are integral to energy production in mitochondria.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotic organelle membranes, ion channels are integral to a wide range of functions including energy production (mitochondria), and the maintenance of defining compartmental conditions such as Ca2+ gradients (endoplasmic reticulum), pH (lysosome), and redox states (peroxisome) (Stutzmann and Mattson, 2011; Smith and Aitchison, 2013; Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "7d403a5e-908a-41e8-b4c7-70bbaa577141",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C17",
+      "claim": "Ion channels maintain Ca2+ gradients in the endoplasmic reticulum.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotic organelle membranes, ion channels are integral to a wide range of functions including energy production (mitochondria), and the maintenance of defining compartmental conditions such as Ca2+ gradients (endoplasmic reticulum), pH (lysosome), and redox states (peroxisome) (Stutzmann and Mattson, 2011; Smith and Aitchison, 2013; Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "329c221b-b82b-4c20-a75c-ab82e2e3cc05",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C18",
+      "claim": "Ion channels maintain pH in lysosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotic organelle membranes, ion channels are integral to a wide range of functions including energy production (mitochondria), and the maintenance of defining compartmental conditions such as Ca2+ gradients (endoplasmic reticulum), pH (lysosome), and redox states (peroxisome) (Stutzmann and Mattson, 2011; Smith and Aitchison, 2013; Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "7d688ba4-e21a-4808-a53d-7c269892a5f2",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C19",
+      "claim": "Ion channels maintain redox states in peroxisomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotic organelle membranes, ion channels are integral to a wide range of functions including energy production (mitochondria), and the maintenance of defining compartmental conditions such as Ca2+ gradients (endoplasmic reticulum), pH (lysosome), and redox states (peroxisome) (Stutzmann and Mattson, 2011; Smith and Aitchison, 2013; Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "d80b869f-f7fb-4210-ad10-704165fdb63c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C20",
+      "claim": "The conductive states of channels are precisely controlled by their molecular conformations which are unique among their phylogenetic families and subfamilies.",
+      "claim_type": "EXPLICIT",
+      "source": "The conductive states of channels are precisely controlled by their molecular conformations which are unique among their phylogenetic families and subfamilies (Yu et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "0fc948cf-88f5-4125-af95-068ede9a76ab",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C21",
+      "claim": "More than 400 human genes encode ion channel subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 400 human genes encode ion channel subunits, many of which are altered by variants that impact organ function and development (George, 2014a; George, 2014b; Clare, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "3cf05adc-51fd-4034-b904-5a67919bd1b3",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C22",
+      "claim": "Many ion channel genes are altered by variants that impact organ function and development.",
+      "claim_type": "EXPLICIT",
+      "source": "More than 400 human genes encode ion channel subunits, many of which are altered by variants that impact organ function and development (George, 2014a; George, 2014b; Clare, 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "ecc47f7c-02fd-4d0b-a3de-9ff4f2f5843c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C23",
+      "claim": "Channelopathies manifest in various human diseases such as cardiac arrhythmias, neurological conditions, and cystic kidney diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "These so-called 'Channelopathies' manifest in various human diseases such as cardiac arrhythmias, neurological conditions, and cystic kidney diseases (Lieve and Wilde, 2015; Kass, 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "7c16d867-4cf4-436e-b502-dbfc7a9fa3fc",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C24",
+      "claim": "Ion channels are important therapeutic targets for treating various pathophysiologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides their association with disease-causing variants, channels are important therapeutic targets for treating various pathophysiologies and represent the second largest target among the existing FDA-approved drug portfolio (Overington et al., 2006; Santos et al., 2017; Kaczorowski et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "9bfe0500-66f6-4822-8533-d7f4bc6ce106",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C25",
+      "claim": "Ion channels represent the second largest target among the existing FDA-approved drug portfolio.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides their association with disease-causing variants, channels are important therapeutic targets for treating various pathophysiologies and represent the second largest target among the existing FDA-approved drug portfolio (Overington et al., 2006; Santos et al., 2017; Kaczorowski et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "d0e9fa4a-e802-41f7-bc88-60820464877d",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C26",
+      "claim": "Many members of the 'dark genome' of understudied proteins encode putative ion channels that are implicated in human disease but remain resistant to functional characterization.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many members of the so-called 'dark genome' of understudied proteins encode putative ion channels that are implicated in human disease but remain resistant to functional characterization (Oprea, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "bfeac51c-54d8-4ad7-861a-8b8369d6cd67",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C27",
+      "claim": "Channels which localize to cellular compartments in low quantities present a significant challenge to assay for drug screening purposes.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, channels which localize to cellular compartments in low quantities present a significant challenge to assay for drug screening purposes (McGivern and Ding, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "a3049960-c86b-41ba-ad50-91ad09a56c7a",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C28",
+      "claim": "Voltage-clamp electrophysiology provides direct, real-time and the highest available fidelity measurements of ion channel conductive states.",
+      "claim_type": "EXPLICIT",
+      "source": "Voltage-clamp electrophysiology incarnated in either planar or glass electrode designs provide direct, real-time and the highest available fidelity measurements of the ion channel conductive states.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field of electrophysiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "d6910446-5772-4144-9e2a-bb55c681e01b",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C29",
+      "claim": "In the on-cell or inside-out configurations, channel opening and closing conformational changes are captured as stochastic single-channel currents after forming high-resistance seals (>10 M\u03a9).",
+      "claim_type": "EXPLICIT",
+      "source": "In the on-cell or inside-out configurations, their opening and closing conformational changes (i.e. gating) are captured as stochastic single-channel currents after forming high-resistance seals (>10 M\u03a9) at the interface of the electrode against a biological membrane (Neher and Sakmann, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to foundational literature in electrophysiology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "4d694d6b-b0bc-422b-9634-0d2d99fe7d6a",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C30",
+      "claim": "Conventional electrophysiology technique is commonly used to characterize the properties of plasma membrane channels.",
+      "claim_type": "EXPLICIT",
+      "source": "This conventional electrophysiology technique is commonly used to characterize the properties of plasma membrane channels and typically involves either recording from an endogenous cell source or from a cell line expressing the channel transgene (Neher, 1992; Hamill et al., 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to foundational literature in electrophysiology.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "6670ff36-9548-4fde-a2f7-1ad11fe5137e",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C31",
+      "claim": "Capturing the biophysical properties of organelle channels and those from bacteria can be mired by electrode inaccessibility to inner membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, capturing the biophysical properties of organelle channels and those from bacteria can be mired by electrode inaccessibility to inner membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes a known limitation in the field, supported by established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "ecc8c31d-273d-4996-aec8-01e041a676c3",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C32",
+      "claim": "Channel reconstitution methods typically consist of expressing the channel of interest, immunopurifying it from a biological cell source, then reconstituting it into synthetic or biologically derived lipid bilayers or vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "As a work around, investigators have employed various channel reconstitution methods which typically consist of several steps (Morera et al., 2007; Leptihn et al., 2011). First, the channel of interest is expressed and immunopurified from a biological cell source, then it is reconstituted into a synthetic or into biologically derived lipid bilayers or vesicles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature describing reconstitution methods.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "c00446ae-7878-461d-a775-650210db1810",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C33",
+      "claim": "Heterologous channel preparations are frequently contaminated by endogenous ionophores from the host cell lines, even after purification.",
+      "claim_type": "EXPLICIT",
+      "source": "While there are many examples where heterologous approaches have faithfully reproduced the functional properties of channels from native sources, these preparations are frequently contaminated by endogenous ionophores from the host cell lines, even after purification (Varghese et al., 2006; Pablo et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "f29e532d-0605-4672-bdba-e64fa9b4d3a3",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C34",
+      "claim": "The synthetic method combines advances in cell-free protein expression (CFE) and reconstitution of the synthetic channel protein into giant unilamellar vesicles (GUV).",
+      "claim_type": "EXPLICIT",
+      "source": "The approach combines advances in cell-free protein expression (CFE) and reconstitution of the synthetic channel protein into giant unilamellar vesicles (GUV) where their single-channel properties can be measured using voltage-clamp electrophysiology (Shimizu and Ueda, 2010; Kuruma et al., 2005; Jacobs and Kamat, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the method developed in this study, supported by citations to relevant literature on CFE and GUV techniques.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "70cc6435-ba92-48ae-bbbb-98e224a6875b",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C35",
+      "claim": "CFE is a form of in vitro protein synthesis, utilizing purified cellular machinery needed to directly transcribe and translate user-supplied DNA plasmid encoding an ion channel.",
+      "claim_type": "EXPLICIT",
+      "source": "CFE is a form of in vitro protein synthesis, utilizing purified cellular machinery (ribosomes, tRNAs, enzymes, cofactors, etc.) needed to directly transcribe and translate user-supplied DNA plasmid encoding an ion channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes the CFE method, supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "4c1a4f28-ea0d-47d4-a871-21577fe594b3",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C36",
+      "claim": "GUVs are cell-sized model membrane systems derived from electrolysis of synthetic lipid mixtures.",
+      "claim_type": "EXPLICIT",
+      "source": "The unmodified channel proteins are reconstituted into GUVs\u2014 cell-sized model membrane systems derived from electrolysis of synthetic lipid mixtures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement describes GUVs, supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "b0a49354-faf6-47f8-bec6-f490652d6293",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C37",
+      "claim": "PKD2 and PKD2L1 are two members of the polycystin subfamily of transient receptor potential (TRP) ion channels.",
+      "claim_type": "EXPLICIT",
+      "source": "To validate this method, we characterized PKD2 and PKD2L1, two members of the polycystin subfamily of transient receptor potential (TRP) ion channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "0f365a24-44ba-4266-8644-5d9771e1a3a1",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C38",
+      "claim": "PKD2 and PKD2L1 are highly homologous subunits with six transmembrane segments.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 and PKD2L1 are highly homologous subunits with six transmembrane segments and shared overall protein folding when structurally assembled as homotetrameric channels (Shen et al., 2016; Grieben et al., 2017; Wang et al., 2020; Wilkes et al., 2017; Hulse et al., 2018; Su et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "675ca7ba-b8a4-441e-90e9-5672b14c08ba",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C39",
+      "claim": "PKD2 and PKD2L1 share overall protein folding when structurally assembled as homotetrameric channels.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 and PKD2L1 are highly homologous subunits with six transmembrane segments and shared overall protein folding when structurally assembled as homotetrameric channels (Shen et al., 2016; Grieben et al., 2017; Wang et al., 2020; Wilkes et al., 2017; Hulse et al., 2018; Su et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to structural studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "953959c5-609d-4097-bdd2-fe9945e1b14a",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C40",
+      "claim": "Polycystin subunits can form heteromeric ion channel complexes with several members of the TRP family.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin subunits can also form heteromeric ion channel complexes with several members of the TRP family and traffic to the primary cilia and endoplasmic reticulum organelle membranes (Esarte Palomero et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "8781bea0-5525-4220-8dc8-8aaf53dbbe85",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C41",
+      "claim": "Polycystin subunits traffic to the primary cilia and endoplasmic reticulum organelle membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin subunits can also form heteromeric ion channel complexes with several members of the TRP family and traffic to the primary cilia and endoplasmic reticulum organelle membranes (Esarte Palomero et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "12fc7cb3-c741-4ee3-b9fa-a7c13feb5907",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C42",
+      "claim": "PKD2 variants are associated with autosomal dominant polycystic kidney disease.",
+      "claim_type": "EXPLICIT",
+      "source": "The medical and biological importance of polycystins is underscored by PKD2 variants associated with autosomal dominant polycystic kidney disease, and this channel's role in fertility and conferring right\u2013left symmetry in embryonic development (Wu et al., 1998; Gao et al., 2003; Tanaka et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "f49d81f3-36d2-425d-a1a6-55d15ac01663",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C43",
+      "claim": "PKD2 plays a role in fertility.",
+      "claim_type": "EXPLICIT",
+      "source": "The medical and biological importance of polycystins is underscored by PKD2 variants associated with autosomal dominant polycystic kidney disease, and this channel's role in fertility and conferring right\u2013left symmetry in embryonic development (Wu et al., 1998; Gao et al., 2003; Tanaka et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "d39b1f89-b374-41d5-a742-1af048bd3d0b",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C44",
+      "claim": "PKD2 plays a role in conferring right\u2013left symmetry in embryonic development.",
+      "claim_type": "EXPLICIT",
+      "source": "The medical and biological importance of polycystins is underscored by PKD2 variants associated with autosomal dominant polycystic kidney disease, and this channel's role in fertility and conferring right\u2013left symmetry in embryonic development (Wu et al., 1998; Gao et al., 2003; Tanaka et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "806d7442-518f-4b01-9862-ecbd514f1354",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C45",
+      "claim": "PKD2L1 loss of expression results in epilepsy susceptibility in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While PKD2L1 variants have yet to be linked to human disease, its loss of expression results in epilepsy susceptibility and autism-like features in mice (Vien et al., 2023; Yao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "d8056d83-ea4b-491f-9c0e-4a1e1bcdb276",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C46",
+      "claim": "PKD2L1 loss of expression results in autism-like features in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "While PKD2L1 variants have yet to be linked to human disease, its loss of expression results in epilepsy susceptibility and autism-like features in mice (Vien et al., 2023; Yao et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "5310506f-d2de-4bab-a098-14462c26291c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C47",
+      "claim": "Each CFE reaction produced 8 \u00b1 3.5 ng/\u03bcl of synthetic PKD2L1-GFP channel protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Each reaction produced 8 \u00b1 3.5 ng/\u03bcl of synthetic channel protein as estimated by a standardized GFP absorbance assay (Figure 1\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1A using a GFP absorbance assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "12cd2265-bc3a-440b-af0b-4f9e43c733b2",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C48",
+      "claim": "The synthetically derived PKD2L1-GFP protein identity was confirmed by western blot using an anti-GFP monoclonal antibody.",
+      "claim_type": "EXPLICIT",
+      "source": "First, by western blot of the cell-free reaction where the PKD2L1-GFP protein was sodium dodecyl sulfate\u2013polyacrylamide gel electrophoresis (SDS\u2013PAGE) gel separated from the reactants and detected by an anti-GFP monoclonal antibody (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "caaee067-f31d-465c-bd41-275360540339",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C49",
+      "claim": "The PKD2L1 protein was confirmed by mass spectroscopy with 46% coverage.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the PKD2L1 protein was confirmed by mass spectroscopy with 46% coverage (Figure 1\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "418ba917-0c4c-47d3-bb9c-50dcdef0b69d",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C50",
+      "claim": "A dramatic increase in fluorescence output was observed when CFE reactions were supplemented with SUVs, which plateaued after 3 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dramatic increase in fluorescence output which plateaued after 3 hr when CFEs reactions were supplemented with SUVs\u2014 an effect not observed in water-supplement (H2O) control reactions (Figure 1C; Klammt et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "437d6da0-c65c-4b6f-a9bd-720ae091efcd",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C51",
+      "claim": "The increase in fluorescence output with SUV supplementation was not observed in water-supplement control reactions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a dramatic increase in fluorescence output which plateaued after 3 hr when CFEs reactions were supplemented with SUVs\u2014 an effect not observed in water-supplement (H2O) control reactions (Figure 1C; Klammt et al., 2006).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "32ccc0f5-fa00-4720-ad5b-25652ea8c7bc",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C52",
+      "claim": "Minimal changes in fluorescence were detected when a control plasmid encoding a non-fluorescent protein was used in the reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Minimal changes in fluorescence were detected when a control plasmid (Ctrl) encoding a non-fluorescent protein (dihydrofolate reductase) was used in the reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data, serving as a negative control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "e30e8919-4164-4e51-aa8f-265b1a66eaf6",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C53",
+      "claim": "Polycystin channels function as tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Polycystin channels function as tetramers, thus we examined CFE-derived PKD2L1 oligomeric assembly in SUVs using fluorescence-detection size-exclusion chromatography (FSEC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge in the field and citations to structural studies mentioned earlier.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "c1da2ec0-013d-4ce8-b089-c3075cf40fb3",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C54",
+      "claim": "The fluorescence signal from CFE + SUV-derived PKD2L1 protein produced a symmetrical peak at the expected elution time of channel tetramers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not as robust, the fluorescence signal from CFE + SUV-derived PKD2L1 protein produced a symmetrical peak at the expected elution time of channel tetramers, along with fractions which may correspond to unassembled protomers (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "62a1d4ff-85d6-4d76-a5a4-5d3b35c0596d",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C55",
+      "claim": "CFE + SUV-derived PKD2L1 protein produced fractions which may correspond to unassembled protomers.",
+      "claim_type": "EXPLICIT",
+      "source": "Although not as robust, the fluorescence signal from CFE + SUV-derived PKD2L1 protein produced a symmetrical peak at the expected elution time of channel tetramers, along with fractions which may correspond to unassembled protomers (Figure 1\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 1\u2014figure supplement 1E, with speculative interpretation.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "59dc0cbd-b120-4e04-b64f-b62f0a1b3096",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C56",
+      "claim": "38.5% of the vesicles exhibited sole Cell488 fluorescence, indicating correct channel orientation within this population.",
+      "claim_type": "EXPLICIT",
+      "source": "We imaged over 60 GUVs and found 38.5% of the vesicles exhibited sole Cell488 fluorescence\u2014indicating their correct channel orientation within this population (Figure 2B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 2B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "d576dc07-db76-43f3-89a3-041299c5e723",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C57",
+      "claim": "None of the vesicle membranes labeled with both Cell488 and Surface647 while retaining a clear lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, none of the vesicle membranes labeled with both Cell488 and Surface647 while retaining a clear lumen\u2014suggesting that the population of GUVs containing misoriented channels was nominal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the SNAP-tag orientation assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "bcec73fa-c784-4039-a790-d31ffe036c95",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C58",
+      "claim": "The population of GUVs containing misoriented channels was nominal.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, none of the vesicle membranes labeled with both Cell488 and Surface647 while retaining a clear lumen\u2014suggesting that the population of GUVs containing misoriented channels was nominal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the experimental data showing no dual-labeled vesicles with clear lumens.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "5fd160ee-666d-4ddf-9ca6-48b0f6a96ea1",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C59",
+      "claim": "Cell-free synthesized PKD2L1 channels are successfully reconstituted in GUVs in the correct orientation.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we conclude that our cell-free synthesized PKD2L1 channels are successfully reconstituted in GUVs in the correct orientation, and this preparation is suitable to assay PKD2L1 channels using electrophysiology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the SNAP-tag orientation data presented in Figure 2.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "b591d7aa-1110-4514-b236-6621e9931b72",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C60",
+      "claim": "Native and transgene expressed PKD2L1 channels conduct monovalent cations.",
+      "claim_type": "EXPLICIT",
+      "source": "Native and transgene expressed PKD2L1 channels conduct monovalent cations, thus we established symmetric potassium ion (K+) recording conditions to measure synthetic polycystin currents from GUVs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established knowledge from previous studies of PKD2L1.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "8d6f89c4-2ccf-4d8e-9df9-a5e19f6ebed8",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C61",
+      "claim": "Two magnitudes of single channels were readily observed from GUVs containing PKD2L1, suggesting unique full and sub-conductance states.",
+      "claim_type": "EXPLICIT",
+      "source": "From the stable recordings, two magnitudes of single channels were readily observed from GUVs containing PKD2L1, suggesting unique full and sub-conductance states (Figure 3B, C and Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B, C and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "5199139c-7225-4339-9963-c820a563c14c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C62",
+      "claim": "No single-channel events were observed from GUVs derived from CFE reactions with the empty plasmid.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no single-channel events were observed from GUVs (N = 11) derived from CFE reactions with the empty plasmid\u2014indicating that the measured conductance is not due to contaminates from lipid or cell-free reagents (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3B, serving as a negative control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "362bd6cf-e13b-4f17-8828-8bfcef2aa27a",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C63",
+      "claim": "The measured conductance is not due to contaminates from lipid or cell-free reagents.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, no single-channel events were observed from GUVs (N = 11) derived from CFE reactions with the empty plasmid\u2014indicating that the measured conductance is not due to contaminates from lipid or cell-free reagents (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This conclusion is inferred from the negative control data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "c419fef6-dd5c-4df8-a9e4-165cebb242da",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C64",
+      "claim": "No outward single-channel currents were observed when K+ was substituted with NMDG+ in the pipette, indicating the large cation was not permeable through PKD2L1.",
+      "claim_type": "EXPLICIT",
+      "source": "We did not observe any outward single-channel currents (i.e. toward the bath), indicating the large cation was not permeable through PKD2L1 which is consistent with previous reports (Figure 3D, E; DeCaen et al., 2016; Ng et al., 2019).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 3D, E and is consistent with cited previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "1c4aea5d-89e0-4070-a65a-b3d0cf12ce2c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C65",
+      "claim": "Unitary single-channel currents of synthetic PKD2 channels reconstituted in GUVs yield sub- and full conductances.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in our PKD2L1 results, unitary single-channel currents of synthetic PKD2 channels reconstituted in GUVs yield sub- and full conductances, which were terminated by substitution of K+ with NMDG+ in the electrode (Figure 4A\u2013C; Figure 3\u2014figure supplement 1E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A\u2013C and Figure 3\u2014figure supplement 1E\u2013H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "ba21313d-481a-4d00-97ad-afe5830f9f44",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C66",
+      "claim": "PKD2 conductances were terminated by substitution of K+ with NMDG+ in the electrode.",
+      "claim_type": "EXPLICIT",
+      "source": "As observed in our PKD2L1 results, unitary single-channel currents of synthetic PKD2 channels reconstituted in GUVs yield sub- and full conductances, which were terminated by substitution of K+ with NMDG+ in the electrode (Figure 4A\u2013C; Figure 3\u2014figure supplement 1E\u2013H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4A\u2013C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "3e9a533a-85c9-4c6f-a690-34480423aa75",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C67",
+      "claim": "Native polycystins produced sub- and full K+ conductances with inward currents having the greater magnitudes.",
+      "claim_type": "EXPLICIT",
+      "source": "Like the synthetic PKD2 and PKD2L1 channels, native polycystins produced sub- and full K+ conductances with inward currents having the greater magnitudes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from recordings of native channels from primary cilia.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "e6c32ed2-32c4-464e-b355-65cafd3e686d",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C68",
+      "claim": "The synthetic PKD2L1 GUV conductance approximates the native full and sub-conductances recorded from hippocampal primary cilia membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, the synthetic PKD2L1 GUV conductance approximates the native full and sub-conductances recorded from hippocampal primary cilia membranes cultured from neonatal mice (ARL13B-EGFPtg).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by comparison of experimental data from synthetic and native channels shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "339bfd4d-3ffb-49ed-bfd4-f90f2e620dbb",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C69",
+      "claim": "The PKD2 K+ conductance magnitudes recorded from IMCD cilia were significantly smaller than those assayed using the CFE\u2013GUV synthetic system.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the PKD2 K+ conductance magnitudes recorded from IMCD cilia were significantly smaller than those assayed using the CFE\u2013GUV synthetic system (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by comparison of experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "4efc466c-a028-49cd-9089-b2c7e1a0f6b9",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C70",
+      "claim": "Differences in PKD2 conductance might arise from the lack of post-translational modifications to the synthetic PKD2 peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences might arise from the lack of post-translational modifications (e.g. phosphorylation and N-glycosylation) to the synthetic PKD2 peptides, which are normally found in biologically derived channels (Su et al., 2018; Cai et al., 1999; Newby et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative explanation for the observed differences, supported by citations to literature on post-translational modifications.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "a2d75e39-20a6-4711-b5fd-4e2d5475c78e",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C71",
+      "claim": "Post-translational modifications such as phosphorylation and N-glycosylation are normally found in biologically derived polycystin channels.",
+      "claim_type": "EXPLICIT",
+      "source": "These differences might arise from the lack of post-translational modifications (e.g. phosphorylation and N-glycosylation) to the synthetic PKD2 peptides, which are normally found in biologically derived channels (Su et al., 2018; Cai et al., 1999; Newby et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "229e873d-a511-4654-8314-1ba247a3fa6f",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C72",
+      "claim": "GUVs are comprised of synthetic lipids which does not reflect the composition of organelle membranes of the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the GUVs are comprised of synthetic lipids which does not reflect the composition of organelle (cilia or ER) membranes of the cell (Nakatsu, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to relevant literature and represents a known limitation of the method.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "78186315-c47b-4d6d-b0e0-8ab2fed61724",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C73",
+      "claim": "Synthetic PKD2 retains native ion selectivity and ion channel functionality despite its cell-free origin.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while retaining the native ion selectivity and ion channel functionality despite their cell-free origin, synthetic PKD2 has different conductance magnitudes compared to cell-derived channels, which presents a limitation of using this approach to recapitulating physiological channel functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental data comparing synthetic and native channels.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "3d8689a3-706f-4544-aa93-0e2ad98221f4",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C74",
+      "claim": "Synthetic PKD2 has different conductance magnitudes compared to cell-derived channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while retaining the native ion selectivity and ion channel functionality despite their cell-free origin, synthetic PKD2 has different conductance magnitudes compared to cell-derived channels, which presents a limitation of using this approach to recapitulating physiological channel functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "099f36d2-63a5-40bb-8251-0453be511ae4",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C75",
+      "claim": "Different conductance magnitudes present a limitation of using this approach to recapitulating physiological channel functions.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while retaining the native ion selectivity and ion channel functionality despite their cell-free origin, synthetic PKD2 has different conductance magnitudes compared to cell-derived channels, which presents a limitation of using this approach to recapitulating physiological channel functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the observed differences between synthetic and native channels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "b52fa140-529d-4301-a3cd-1b868355f18d",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C76",
+      "claim": "The described method represents a highly reductionist approach to assay channel function which can be generalized to other channels resistant to characterization using traditional electrophysiology approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "The described method represents a highly reductionist approach to assay channel function which can be generalized to other channels resistant to characterization using traditional electrophysiology approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the successful application of the method to polycystin channels.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "13697447-c238-4ea3-8c44-839cf7b8371f",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C77",
+      "claim": "The CFE\u2013GUV electrophysiology method can be leveraged for future inquiry into lipid-channel regulation and effects of channel subunit composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the CFE\u2013GUV electrophysiology method can be leveraged for future inquiry into lipid-channel regulation and effects of channel subunit composition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "91a1d01c-14f2-4542-849a-84767ee8c531",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C78",
+      "claim": "PKD2-related protomers form heteromeric complexes with PKD1-related polycystins which are notoriously difficult to assay using traditional electrophysiology techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2-related protomers form heteromeric complexes (e.g. PKD1\u2013PKD2; PKD1L1\u2013PKD2L1) with PKD1-related polycystins which are notoriously difficult to assay using traditional electrophysiology techniques (as reviewed) (Esarte Palomero et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to a review article.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "b65c3566-5a08-40cd-845a-d8a85a093b9d",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C79",
+      "claim": "Using the CFE method to co-synthesize and GUV reconstitute PKD1-PKD2 heteromeric subunits presents a potential avenue to assay their function with patch clamp recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the CFE method to co-synthesize and GUV reconstitute these subunits presents a potential avenue to assay their function with patch clamp recordings.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "0b06d30e-6a1e-45e2-a3c2-3cc397c5a33c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C80",
+      "claim": "The approach may be further developed into high throughput drug screening assays using cation reporters or multi-well planer electrophysiology instruments.",
+      "claim_type": "EXPLICIT",
+      "source": "The approach may be further developed into high throughput drug screening assays using cation reporters (e.g. Fura derivatives) or multi-well planer electrophysiology instruments (Zhou et al., 2021; Yu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications of the method, supported by citations to relevant literature.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "364105f6-72fe-4047-bc9d-2cc192daae9b",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C81",
+      "claim": "Considerable instability of high resistant seals was observed when the bath solutions were exchanged.",
+      "claim_type": "EXPLICIT",
+      "source": "With our pipette patch electrodes, we observed considerable instability of our high resistant seals when the bath solutions were exchanged.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "00081d2a-7879-4174-aef5-f924068ad553",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C82",
+      "claim": "Future work could explore alternative membrane compositions and stabilizing cationic conditions to mitigate seal instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, future work could explore alternative membrane compositions (e.g. additional cholesterol) and stabilizing cationic conditions (internal CsF) to mitigate this effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future improvements to the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "e5007e63-0f4c-498d-9e33-1c607cbc0c49",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C83",
+      "claim": "The folding and membrane integration of many ion channels require their association with stabilizing chaperone proteins produced in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The folding and membrane integration of many ion channels require their association with stabilizing chaperone proteins produced in cells (Li et al., 2017; Chen et al., 2023; Bai et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "2b627e71-b40c-4282-97a0-be943ba4ff47",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C84",
+      "claim": "Co-expression of chaperones with channels using the CFS + GUV system is likely required for functionality of some channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while the co-expression of chaperones with these channels using the CFS + GUV system is likely required for their functionality, the approach may also be leveraged to study chaperone-assisted folding in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement based on known requirements for some ion channels.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "7fb99481-7365-4113-85d0-da4682fa08bb",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C85",
+      "claim": "The CFS + GUV approach may be leveraged to study chaperone-assisted folding in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, while the co-expression of chaperones with these channels using the CFS + GUV system is likely required for their functionality, the approach may also be leveraged to study chaperone-assisted folding in vitro.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about potential future applications of the method.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "64539da7-eb14-4b26-907e-f661b94d0856",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C86",
+      "claim": "PKD2L1 has been genetically identified as an essential ion channel subunit in the primary cilia of hippocampal neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has genetically identified PKD2L1 and PKD2 as essential ion channel subunit in the primary cilia of the renal collecting duct cells and hippocampal neurons (Vien et al., 2023; Kleene and Kleene, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "e96351a6-f1c7-4cf0-a820-4503b395128c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C87",
+      "claim": "PKD2 has been genetically identified as an essential ion channel subunit in the primary cilia of renal collecting duct cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work has genetically identified PKD2L1 and PKD2 as essential ion channel subunit in the primary cilia of the renal collecting duct cells and hippocampal neurons (Vien et al., 2023; Kleene and Kleene, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to previous work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "5985ec33-bf3b-4428-8da5-26cbf9702a01",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C88",
+      "claim": "The majority of PKD2L1 GUV patches were unstable during voltage steps.",
+      "claim_type": "EXPLICIT",
+      "source": "Single-channel events were frequently observed while establishing high-resistance seals (R > 10 G\u03a9); however, the majority of PKD2L1 GUV patches were unstable during voltage steps and these results were excluded from the final analysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "2e40eb2d-96ae-4470-9216-c47fbb2fb921",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C89",
+      "claim": "Patch instability and low seal resistance likely results from over-incorporation of PKD2L1 tetramers into the GUV membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that patch instability and low seal resistance likely results from over-incorporation of PKD2L1 tetramers into the GUV membranes, as supported by the FSEC data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the experimental observations and FSEC data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "da55a8d3-29bb-400a-9be4-37310c1dac71",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C90",
+      "claim": "Membrane instability was not observed from empty GUV recordings.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, membrane instability was not observed from empty GUV recordings, suggesting that opening of incorporated CFE synthesized polycystins is likely responsible for patch destabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the experimental work serving as a control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "29e5f3e1-e7c7-44c1-8fa1-6547ac7b4bef",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C91",
+      "claim": "Opening of incorporated CFE synthesized polycystins is likely responsible for patch destabilization.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, membrane instability was not observed from empty GUV recordings, suggesting that opening of incorporated CFE synthesized polycystins is likely responsible for patch destabilization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the comparison between channel-containing and empty GUVs.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "877b31c6-2d7b-4f0b-91b7-3988cc4d663f",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C92",
+      "claim": "GFP fluorescence monitoring is dependent on complete channel translation and correct GFP folding.",
+      "claim_type": "EXPLICIT",
+      "source": "We monitored PKD2L1-GFP protein production over time through fluorescence which is dependent on complete channel translation and correct GFP folding (M\u00fcller-Lucks et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to relevant literature and established knowledge about GFP.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "7cd4ce4e-5db4-4c6c-af3a-d89afcfcb545",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C93",
+      "claim": "Channel membrane incorporation is facilitated by including lipid substrates into the CFE reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "Since polycystins are transmembrane proteins, we hypothesize that channel membrane incorporation would be facilitated by including lipid substrates into the CFE reaction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis that is subsequently tested and supported by the experimental data showing increased fluorescence with SUV supplementation.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "48913013-83c0-45e3-86b0-cef93bbba2d7",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C94",
+      "claim": "The synthetic PKD2L1 GUV conductance has a major inward K+ conductance of 148 \u00b1 29 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2L1 (GUV membrane, cell-free expression)\t148 \u00b1 29",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "59c1235c-2f6b-4e82-bf6d-e195cf3bfeed",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C95",
+      "claim": "The synthetic PKD2L1 GUV conductance has a major outward K+ conductance of 114 \u00b1 28 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2L1 (GUV membrane, cell-free expression)\t148 \u00b1 29\t114 \u00b1 28",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "e03580f7-1759-42d8-aab3-cd5e46304805",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C96",
+      "claim": "The synthetic PKD2L1 GUV conductance has a minor inward K+ conductance of 30 \u00b1 6 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2L1 (GUV membrane, cell-free expression)\t148 \u00b1 29\t114 \u00b1 28\t30 \u00b1 6",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "2d830c62-679f-42b0-a8b3-4cfcd2ec5c7d",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C97",
+      "claim": "The synthetic PKD2L1 GUV conductance has a minor outward K+ conductance of 31 \u00b1 7 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2L1 (GUV membrane, cell-free expression)\t148 \u00b1 29\t114 \u00b1 28\t30 \u00b1 6\t31 \u00b1 7",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "3b22930e-6295-4274-a879-49c71265b707",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C98",
+      "claim": "Native PKD2L1 from hippocampal neuron primary cilia has a major inward K+ conductance of 165 \u00b1 10 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2L1 (primary cilia membrane, endogenous hippocampal neurons)\t165 \u00b1 10",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "c9da2d8b-736c-445a-97e8-c956705f3ac2",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C99",
+      "claim": "Native PKD2L1 from hippocampal neuron primary cilia has a major outward K+ conductance of 113 \u00b1 6 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2L1 (primary cilia membrane, endogenous hippocampal neurons)\t165 \u00b1 10\t113 \u00b1 6",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "d0af9d95-b256-4987-a1a8-6c9bdd87664d",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C100",
+      "claim": "Native PKD2L1 from hippocampal neuron primary cilia has a minor inward K+ conductance of 40 \u00b1 4 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2L1 (primary cilia membrane, endogenous hippocampal neurons)\t165 \u00b1 10\t113 \u00b1 6\t40 \u00b1 4",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "5a3523c9-71c4-4024-aa2c-26d355e7c28c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C101",
+      "claim": "Native PKD2L1 from hippocampal neuron primary cilia has a minor outward K+ conductance of 29 \u00b1 3 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2L1 (primary cilia membrane, endogenous hippocampal neurons)\t165 \u00b1 10\t113 \u00b1 6\t40 \u00b1 4\t29 \u00b1 3",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "b9961213-7751-4aff-94c6-9c36aba6b475",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C102",
+      "claim": "The synthetic PKD2 GUV conductance has a major inward K+ conductance of 282 \u00b1 38 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 (GUV membrane, cell-free expression)\t282 \u00b1 38",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "eeec93f6-31ba-4b30-b643-29180bda9f19",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C103",
+      "claim": "The synthetic PKD2 GUV conductance has a major outward K+ conductance of 153 \u00b1 32 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 (GUV membrane, cell-free expression)\t282 \u00b1 38\t153 \u00b1 32",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "bf82370d-fd59-42fe-a7f9-eec58d1831b7",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C104",
+      "claim": "The synthetic PKD2 GUV conductance has a minor inward K+ conductance of 23 \u00b1 4 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 (GUV membrane, cell-free expression)\t282 \u00b1 38\t153 \u00b1 32\t23 \u00b1 4",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "6f65fd3e-9f0c-4916-8dac-dde766e169c0",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C105",
+      "claim": "The synthetic PKD2 GUV conductance has a minor outward K+ conductance of 21 \u00b1 3 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 (GUV membrane, cell-free expression)\t282 \u00b1 38\t153 \u00b1 32\t23 \u00b1 4\t21 \u00b1 3",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "e1f45adb-cc4d-44e7-987c-b3eec012262e",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C106",
+      "claim": "Native PKD2 from IMCD primary cilia has a major inward K+ conductance of 144 \u00b1 9 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 (primary cilia membrane, endogenous murine inner medullary collecting duct [IMCD] cell line)\t144 \u00b1 9",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "6797b7c4-0851-4a25-86fd-7cdde66fc11c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C107",
+      "claim": "Native PKD2 from IMCD primary cilia has a major outward K+ conductance of 110 \u00b1 6 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 (primary cilia membrane, endogenous murine inner medullary collecting duct [IMCD] cell line)\t144 \u00b1 9\t110 \u00b1 6",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "4825c61e-e968-4d9f-8f14-2abfd4179ce1",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C108",
+      "claim": "Native PKD2 from IMCD primary cilia has a minor inward K+ conductance of 46 \u00b1 4 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 (primary cilia membrane, endogenous murine inner medullary collecting duct [IMCD] cell line)\t144 \u00b1 9\t110 \u00b1 6\t46 \u00b1 4",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "b7f2cc2e-f880-4f02-bcc4-e70576be2c3d",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "claim_id": "C109",
+      "claim": "Native PKD2 from IMCD primary cilia has a minor outward K+ conductance of 34 \u00b1 4 pS.",
+      "claim_type": "EXPLICIT",
+      "source": "PKD2 (primary cilia membrane, endogenous murine inner medullary collecting duct [IMCD] cell line)\t144 \u00b1 9\t110 \u00b1 6\t46 \u00b1 4\t34 \u00b1 4",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data presented in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "92a68848-c744-40c8-b435-0e234e2a551a",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Cell-free expression (CFE) successfully produces full-length PKD2L1-GFP protein at 8 \u00b1 3.5 ng/\u03bcl, confirmed by western blot and mass spectrometry (46% coverage). Protein synthesis is dramatically enhanced when CFE reactions are supplemented with small unilamellar vesicles (SUVs), with fluorescence plateauing after 3 hours, an effect not observed in water-only controls or with non-fluorescent control plasmids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C52 provide converging evidence from multiple orthogonal methods (GFP fluorescence quantification, western blot, mass spectrometry) confirming successful protein synthesis. The SUV-dependent enhancement of fluorescence with appropriate negative controls (water, non-fluorescent plasmid) strongly supports membrane-facilitated protein production. The 46% mass spec coverage is reasonable for a transmembrane protein.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "4281d963-c7a1-480b-9acc-cfcc118cbca2",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CFE-derived PKD2L1 protein assembles into oligomeric structures in SUVs, producing a symmetrical fluorescence peak at the expected elution time for channel tetramers by FSEC analysis, along with fractions potentially corresponding to unassembled protomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While C54 shows a peak at the expected tetramer elution time, the authors acknowledge the signal is \"not as robust\" and C55 involves speculative interpretation of additional fractions. Without quantification of the tetramer:protomer ratio or comparison to known standards beyond the controls mentioned, the extent of proper assembly remains unclear. The method demonstrates oligomerization occurs but not its efficiency.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "fe30c164-86ce-4baa-b25b-a661df557bcc",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using SNAP-tag orientation assays, 38.5% of GUVs containing CFE-synthesized PKD2L1-SNAP channels exhibit correct orientation (sole Cell488 fluorescence), with no vesicles showing dual labeling with clear lumens, indicating minimal misorientation. The authors conclude channels are successfully reconstituted in the correct orientation suitable for electrophysiology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C59 provide direct experimental evidence using membrane-permeable and impermeable fluorescent labels to assess orientation. The absence of dual-labeled vesicles with clear lumens (C57) is strong negative evidence against misorientation. However, only 38.5% showed correct orientation while 61.5% showed encapsulated dye, suggesting potential membrane integrity issues in the majority of vesicles. Despite this limitation, the method successfully identifies a population suitable for study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "d463a3d7-c353-4569-9fbc-886367a53489",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Synthetic PKD2L1 channels in GUVs exhibit two conductance states: major conductances of 148 \u00b1 29 pS (inward) and 114 \u00b1 28 pS (outward), and minor conductances of 30 \u00b1 6 pS (inward) and 31 \u00b1 7 pS (outward). No single-channel events were observed in control GUVs from empty plasmid reactions (N=11), confirming conductances are not due to contaminants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C61-C63 and C94-C97 provide quantitative electrophysiology data with appropriate negative controls. The empty plasmid control (C62) is critical and well-executed (N=11). The observation of two distinct conductance states is supported by multiple recordings and histogram analysis. Standard deviations are provided, indicating measurement variability is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "2c9012fc-2d67-40f2-a98c-57a8c59cee39",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Synthetic PKD2L1 channels show ion selectivity, with no outward single-channel currents observed when K+ is substituted with the large cation NMDG+ in the pipette, indicating NMDG+ impermeability consistent with previous reports.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C64 demonstrates ion selectivity through substitution experiments, with results consistent with cited prior work. This functional validation is important for confirming the synthetic channels retain native selectivity properties. The experimental design is appropriate for testing permeability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "53e68b68-28f0-4047-a1cf-e284fa37b244",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Synthetic PKD2 channels reconstituted in GUVs exhibit sub- and full conductances: major conductances of 282 \u00b1 38 pS (inward) and 153 \u00b1 32 pS (outward), and minor conductances of 23 \u00b1 4 pS (inward) and 21 \u00b1 3 pS (outward). These conductances are terminated by K+ substitution with NMDG+.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C66 and C102-C105 demonstrate the method generalizes to a second polycystin family member (PKD2). The observation of similar conductance patterns (sub- and full states) and NMDG+ sensitivity supports the validity of the approach. Quantitative data with error estimates are provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "6fe1b958-5f6b-40c9-b361-921d1533c589",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Synthetic PKD2L1 GUV conductances (148 \u00b1 29 pS inward, 114 \u00b1 28 pS outward major; 30 \u00b1 6 pS inward, 31 \u00b1 7 pS outward minor) closely approximate native PKD2L1 conductances from hippocampal primary cilia (165 \u00b1 10 pS inward, 113 \u00b1 6 pS outward major; 40 \u00b1 4 pS inward, 29 \u00b1 3 pS outward minor).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68 and C98-C101 provide direct comparison between synthetic and native channels. The conductance values are remarkably similar, particularly for the major outward and minor conductances. The major inward conductance shows ~10% difference, which is within reasonable experimental variation. This validates the synthetic method produces functionally similar channels to native sources.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "3f997ee0-2c61-497f-979c-7f5dd290b59c",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Native PKD2 conductances from IMCD primary cilia (144 \u00b1 9 pS inward, 110 \u00b1 6 pS outward major; 46 \u00b1 4 pS inward, 34 \u00b1 4 pS outward minor) are significantly smaller than synthetic PKD2 GUV conductances (282 \u00b1 38 pS inward, 153 \u00b1 32 pS outward major; 23 \u00b1 4 pS inward, 21 \u00b1 3 pS outward minor).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69 and C106-C109 document a significant discrepancy between synthetic and native PKD2 channels, with synthetic channels showing approximately 2-fold higher major conductances. The claim of \"significantly smaller\" is supported by the non-overlapping error ranges. This represents an important limitation of the method for PKD2, though the authors provide plausible explanations (C70-C72).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "b75b2168-bdd5-472e-abbc-bdd9eeb0123f",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Differences in PKD2 conductance magnitudes between synthetic and native channels may arise from lack of post-translational modifications (phosphorylation, N-glycosylation) in synthetic peptides and non-physiological lipid composition of GUVs. Despite different conductance magnitudes, synthetic PKD2 retains native ion selectivity and channel functionality, presenting a limitation for recapitulating physiological functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70-C75 provide reasonable explanations for observed discrepancies, supported by citations to literature on post-translational modifications (C71) and lipid composition effects (C72). The authors appropriately acknowledge this as a limitation (C75) while noting preserved selectivity (C73). This represents honest assessment of method limitations with mechanistic hypotheses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "31add9de-146a-4ab9-87da-04c5ac757e01",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The majority of PKD2L1 GUV patches were unstable during voltage steps, hypothesized to result from over-incorporation of channel tetramers into GUV membranes (supported by FSEC data). Membrane instability was not observed in empty GUV recordings, suggesting channel opening is responsible for patch destabilization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C88-C91 identify a technical limitation with a plausible mechanistic explanation. The empty GUV control (C90) is critical for ruling out lipid-related instability. The hypothesis of over-incorporation (C89) is supported by FSEC data showing substantial protein production. This represents transparent reporting of experimental challenges.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "a10882c7-a016-423f-a2e5-7ebee21f60d8",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Considerable seal instability was observed when bath solutions were exchanged during patch-clamp recordings. Future work could explore alternative membrane compositions (additional cholesterol) and stabilizing cationic conditions (internal CsF) to mitigate this effect.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 identify a technical limitation and propose potential solutions. This is appropriate acknowledgment of experimental challenges. The suggestions for improvement (C82) are reasonable based on established electrophysiology practices, though they remain untested in this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "5a94fe7e-ef84-4063-a86f-458abbe16020",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The CFE-GUV method represents a reductionist approach generalizable to channels resistant to traditional characterization, with potential applications including lipid-channel regulation studies, heteromeric polycystin complex analysis (PKD1-PKD2), and development of high-throughput drug screening assays.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C76 is supported by successful application to two polycystin channels with validation against native sources. Claims C77-C80 are speculative about future applications but are reasonable extrapolations based on demonstrated proof-of-principle. The method's success with organellar channels (C78) that are \"notoriously difficult\" to study supports generalizability claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "c996b18b-7b29-4f12-aa83-d8a5a87ace55",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Many ion channels require chaperone proteins for proper folding and membrane integration. Co-expression of chaperones with channels using the CFE+GUV system may be required for functionality of some channels, and the approach could be leveraged to study chaperone-assisted folding in vitro.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 is well-supported by citations to relevant literature. Claims C84-C85 are speculative but represent logical extensions of the method. The acknowledgment that some channels may require chaperones (C84) is an important caveat about method limitations and generalizability.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "39db98ab-46b8-4546-9069-a7387aa366f5",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Ion channels are biological transistors controlling ionic flux across membranes, found in all biological membranes, with conductive states frequently disrupted in disease. Organelle ion channels are particularly resistant to functional interrogation, and traditional reconstitution methods suffer from contamination by endogenous ionophores. Polycystin channels natively traffic to primary cilia and ER organelles.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C6 provide established background knowledge supported by the field and later citations in the manuscript. These contextual claims establish the motivation for developing the synthetic method and are well-supported by general knowledge and specific citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "3c23ba9c-efe7-4a56-9948-37ddfaf624fa",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The synthetic method combines cell-free protein expression (CFE) - an in vitro protein synthesis system using purified cellular machinery to transcribe and translate DNA - with reconstitution into giant unilamellar vesicles (GUVs) - cell-sized model membranes from synthetic lipids - for electrophysiology measurements.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C34-C36 describe the methodological approach, supported by citations to relevant CFE and GUV literature (C34) and established knowledge about these techniques. The integration of these established methods represents the novel contribution of this work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "1964d5b4-d932-46e3-9d12-b04e89306ba4",
+      "content_id": "f6bce561-542d-4273-94a0-18df6e8a30e1",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "PKD2 and PKD2L1 are homologous polycystin TRP channel subunits with six transmembrane segments that assemble as homotetramers and can form heteromeric complexes. They traffic to primary cilia and ER membranes. PKD2 variants cause polycystic kidney disease and affect fertility and embryonic development, while PKD2L1 loss causes epilepsy and autism-like features in mice.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C46 provide background on the biological and medical significance of the channels studied, all supported by appropriate citations to structural studies and disease literature. This establishes why these channels are important validation targets for the method.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed a cell-free expression (CFE) system combined with giant unilamellar vesicles (GUVs) to synthesize and reconstitute polycystin channels. CFE reactions produced PKD2L1-GFP protein (8 \u00b1 3.5 ng/\u03bcl), confirmed by western blot and mass spectrometry (46% coverage), with dramatic fluorescence increase when supplemented with SUVs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirmed the method as 'valuable' and 'convincing.' Reviewer 1 stated 'The evidence supporting the claims of the authors is solid and convincing,' and Reviewer 2 called it 'an excellent method manuscript.' No concerns were raised about the CFE-GUV synthesis approach or protein production data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "10efdc2b-498f-44a1-bbd4-2e078b60c576",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors characterized oligomeric assembly of CFE-derived PKD2L1 using fluorescence-detection size-exclusion chromatography (FSEC), showing a symmetrical peak at the expected elution time for tetramers, along with fractions potentially corresponding to unassembled protomers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 initially noted as a weakness 'The inclusion of a mechanistic interpretation how the channel protein folds into a protomer or a tetramer' but in the revised version stated 'they performed new experiments to assess the amount of tetramers that are being actually formed. They used a size-exclusion chromatography to conclude that the protomers and tetramers species of complexes are formed and assembled.' This indicates acceptance of the oligomeric assembly data.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "45e7a99b-0788-42a4-afa3-5cf012149219",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors demonstrated correct membrane integration and orientation of synthetic PKD2L1 channels in GUVs using SNAP-tag labeling. 38.5% of vesicles showed sole Cell488 fluorescence (correct orientation), with no vesicles showing dual labeling with clear lumens, indicating nominal misorientation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The orientation data using SNAP-tag methodology was not questioned by any reviewer. The editor and reviewers described the work as 'convincing' and the evidence as 'solid,' with no concerns raised about the membrane integration or orientation characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Synthetic PKD2L1 channels in GUVs exhibited two conductance magnitudes (full: 148 \u00b1 29 pS inward, 114 \u00b1 28 pS outward; sub: 30 \u00b1 6 pS inward, 31 \u00b1 7 pS outward) under symmetric K+ conditions. No currents were observed with empty plasmid controls or when K+ was replaced with NMDG+, confirming ion selectivity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 stated the authors 'characterized their membrane integration, orientation, and conductance, comparing the results to those of endogenous channels' and concluded 'The authors have addressed my concerns.' All reviewers accepted the conductance measurements without critique, with the editor noting the work is 'convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "0a9af625-ca2e-428a-afcc-747bf9a3e62e",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Synthetic PKD2 channels reconstituted in GUVs showed sub- and full conductances (full: 282 \u00b1 38 pS inward, 153 \u00b1 32 pS outward; sub: 23 \u00b1 4 pS inward, 21 \u00b1 3 pS outward), which were terminated by K+ substitution with NMDG+.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The PKD2 conductance data were presented alongside PKD2L1 data and received the same positive assessment from reviewers. Reviewer 2 noted the method allows characterization of channels and found the manuscript 'well-written,' with no concerns raised about PKD2-specific measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "2782eb6f-1a80-4fdc-a77d-cae8ff3d8451",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Native PKD2L1 channels from hippocampal neuron primary cilia produced conductances (major: 165 \u00b1 10 pS inward, 113 \u00b1 6 pS outward; minor: 40 \u00b1 4 pS inward, 29 \u00b1 3 pS outward) that approximate the synthetic PKD2L1 GUV conductances.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison between synthetic and native PKD2L1 channels was accepted by all reviewers. The editor noted the method allows comparison to endogenous properties, and Reviewer 2 specifically mentioned 'comparing the results to those of endogenous channels' without raising concerns about the native channel data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Native PKD2 from IMCD cilia showed significantly smaller conductances (major: 144 \u00b1 9 pS inward, 110 \u00b1 6 pS outward) than synthetic PKD2 in GUVs. The authors attribute differences to lack of post-translational modifications in synthetic channels and non-physiological lipid composition of GUVs, presenting this as a limitation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted the authors' acknowledgment of limitations. Reviewer 1 stated 'The authors have addressed most of my minor concerns,' and no reviewer challenged the comparison or the authors' interpretation of differences. The transparent discussion of limitations appears to have satisfied reviewer concerns about the method's physiological relevance.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "ef926bf7-9f04-481f-9456-c162785e986b",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors conclude the CFE-GUV method represents a reductionist approach generalizable to other channels resistant to traditional characterization, with potential applications for studying lipid-channel regulation, heteromeric complexes, and high-throughput drug screening.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers endorsed the method's broader applicability. The editor stated it 'will be of particular interest to those studying ion channels that primarily occur in organelles,' Reviewer 1 noted it allows study of 'a wide range of ion channel functions,' and Reviewer 2 emphasized it 'may provide an alternative approach to investigate other channels resistant to biophysical analysis.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "9f56db49-f63f-4950-9e8d-2882cd17a1b9",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors observed considerable seal instability during bath solution exchanges and patch instability with PKD2L1, hypothesizing this results from over-incorporation of channels into GUV membranes. They suggest future work could explore alternative membrane compositions to mitigate this effect.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge these technical observations or the authors' hypothesis about channel over-incorporation. The transparent reporting of technical challenges and proposed solutions appears consistent with the reviewers' overall assessment that the authors 'have addressed most of my minor concerns' (Reviewer 1).",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "f70813f1-4069-4f45-85a4-e6f1aec6bf6d",
+      "content_id": "84540bc2-82aa-493a-9922-b6d3c26dea78",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors acknowledge that some ion channels require chaperone proteins for proper folding and suggest the CFE-GUV system could be used to co-express chaperones or study chaperone-assisted folding in vitro.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This forward-looking discussion of method limitations and extensions was not contested by reviewers. It aligns with the reviewers' positive assessment of the method's potential applications, with Reviewer 1 noting it allows study of 'interaction with lipids' and other functions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5310506f-d2de-4bab-a098-14462c26291c",
+      "result_id": "92a68848-c744-40c8-b435-0e234e2a551a"
+    },
+    {
+      "claim_id": "12cd2265-bc3a-440b-af0b-4f9e43c733b2",
+      "result_id": "92a68848-c744-40c8-b435-0e234e2a551a"
+    },
+    {
+      "claim_id": "caaee067-f31d-465c-bd41-275360540339",
+      "result_id": "92a68848-c744-40c8-b435-0e234e2a551a"
+    },
+    {
+      "claim_id": "418ba917-0c4c-47d3-bb9c-50dcdef0b69d",
+      "result_id": "92a68848-c744-40c8-b435-0e234e2a551a"
+    },
+    {
+      "claim_id": "437d6da0-c65c-4b6f-a9bd-720ae091efcd",
+      "result_id": "92a68848-c744-40c8-b435-0e234e2a551a"
+    },
+    {
+      "claim_id": "32ccc0f5-fa00-4720-ad5b-25652ea8c7bc",
+      "result_id": "92a68848-c744-40c8-b435-0e234e2a551a"
+    },
+    {
+      "claim_id": "e30e8919-4164-4e51-aa8f-265b1a66eaf6",
+      "result_id": "4281d963-c7a1-480b-9acc-cfcc118cbca2"
+    },
+    {
+      "claim_id": "c1da2ec0-013d-4ce8-b089-c3075cf40fb3",
+      "result_id": "4281d963-c7a1-480b-9acc-cfcc118cbca2"
+    },
+    {
+      "claim_id": "62a1d4ff-85d6-4d76-a5a4-5d3b35c0596d",
+      "result_id": "4281d963-c7a1-480b-9acc-cfcc118cbca2"
+    },
+    {
+      "claim_id": "59dc0cbd-b120-4e04-b64f-b62f0a1b3096",
+      "result_id": "fe30c164-86ce-4baa-b25b-a661df557bcc"
+    },
+    {
+      "claim_id": "d576dc07-db76-43f3-89a3-041299c5e723",
+      "result_id": "fe30c164-86ce-4baa-b25b-a661df557bcc"
+    },
+    {
+      "claim_id": "bcec73fa-c784-4039-a790-d31ffe036c95",
+      "result_id": "fe30c164-86ce-4baa-b25b-a661df557bcc"
+    },
+    {
+      "claim_id": "5fd160ee-666d-4ddf-9ca6-48b0f6a96ea1",
+      "result_id": "fe30c164-86ce-4baa-b25b-a661df557bcc"
+    },
+    {
+      "claim_id": "8d6f89c4-2ccf-4d8e-9df9-a5e19f6ebed8",
+      "result_id": "d463a3d7-c353-4569-9fbc-886367a53489"
+    },
+    {
+      "claim_id": "5199139c-7225-4339-9963-c820a563c14c",
+      "result_id": "d463a3d7-c353-4569-9fbc-886367a53489"
+    },
+    {
+      "claim_id": "362bd6cf-e13b-4f17-8828-8bfcef2aa27a",
+      "result_id": "d463a3d7-c353-4569-9fbc-886367a53489"
+    },
+    {
+      "claim_id": "48913013-83c0-45e3-86b0-cef93bbba2d7",
+      "result_id": "d463a3d7-c353-4569-9fbc-886367a53489"
+    },
+    {
+      "claim_id": "59c1235c-2f6b-4e82-bf6d-e195cf3bfeed",
+      "result_id": "d463a3d7-c353-4569-9fbc-886367a53489"
+    },
+    {
+      "claim_id": "e03580f7-1759-42d8-aab3-cd5e46304805",
+      "result_id": "d463a3d7-c353-4569-9fbc-886367a53489"
+    },
+    {
+      "claim_id": "2d830c62-679f-42b0-a8b3-4cfcd2ec5c7d",
+      "result_id": "d463a3d7-c353-4569-9fbc-886367a53489"
+    },
+    {
+      "claim_id": "c419fef6-dd5c-4df8-a9e4-165cebb242da",
+      "result_id": "2c9012fc-2d67-40f2-a98c-57a8c59cee39"
+    },
+    {
+      "claim_id": "1c4aea5d-89e0-4070-a65a-b3d0cf12ce2c",
+      "result_id": "53e68b68-28f0-4047-a1cf-e284fa37b244"
+    },
+    {
+      "claim_id": "ba21313d-481a-4d00-97ad-afe5830f9f44",
+      "result_id": "53e68b68-28f0-4047-a1cf-e284fa37b244"
+    },
+    {
+      "claim_id": "b9961213-7751-4aff-94c6-9c36aba6b475",
+      "result_id": "53e68b68-28f0-4047-a1cf-e284fa37b244"
+    },
+    {
+      "claim_id": "eeec93f6-31ba-4b30-b643-29180bda9f19",
+      "result_id": "53e68b68-28f0-4047-a1cf-e284fa37b244"
+    },
+    {
+      "claim_id": "bf82370d-fd59-42fe-a7f9-eec58d1831b7",
+      "result_id": "53e68b68-28f0-4047-a1cf-e284fa37b244"
+    },
+    {
+      "claim_id": "6f65fd3e-9f0c-4916-8dac-dde766e169c0",
+      "result_id": "53e68b68-28f0-4047-a1cf-e284fa37b244"
+    },
+    {
+      "claim_id": "e6c32ed2-32c4-464e-b355-65cafd3e686d",
+      "result_id": "6fe1b958-5f6b-40c9-b361-921d1533c589"
+    },
+    {
+      "claim_id": "3b22930e-6295-4274-a879-49c71265b707",
+      "result_id": "6fe1b958-5f6b-40c9-b361-921d1533c589"
+    },
+    {
+      "claim_id": "c9da2d8b-736c-445a-97e8-c956705f3ac2",
+      "result_id": "6fe1b958-5f6b-40c9-b361-921d1533c589"
+    },
+    {
+      "claim_id": "d0af9d95-b256-4987-a1a8-6c9bdd87664d",
+      "result_id": "6fe1b958-5f6b-40c9-b361-921d1533c589"
+    },
+    {
+      "claim_id": "5a3523c9-71c4-4024-aa2c-26d355e7c28c",
+      "result_id": "6fe1b958-5f6b-40c9-b361-921d1533c589"
+    },
+    {
+      "claim_id": "339bfd4d-3ffb-49ed-bfd4-f90f2e620dbb",
+      "result_id": "3f997ee0-2c61-497f-979c-7f5dd290b59c"
+    },
+    {
+      "claim_id": "e1f45adb-cc4d-44e7-987c-b3eec012262e",
+      "result_id": "3f997ee0-2c61-497f-979c-7f5dd290b59c"
+    },
+    {
+      "claim_id": "6797b7c4-0851-4a25-86fd-7cdde66fc11c",
+      "result_id": "3f997ee0-2c61-497f-979c-7f5dd290b59c"
+    },
+    {
+      "claim_id": "4825c61e-e968-4d9f-8f14-2abfd4179ce1",
+      "result_id": "3f997ee0-2c61-497f-979c-7f5dd290b59c"
+    },
+    {
+      "claim_id": "b7f2cc2e-f880-4f02-bcc4-e70576be2c3d",
+      "result_id": "3f997ee0-2c61-497f-979c-7f5dd290b59c"
+    },
+    {
+      "claim_id": "4efc466c-a028-49cd-9089-b2c7e1a0f6b9",
+      "result_id": "b75b2168-bdd5-472e-abbc-bdd9eeb0123f"
+    },
+    {
+      "claim_id": "a2d75e39-20a6-4711-b5fd-4e2d5475c78e",
+      "result_id": "b75b2168-bdd5-472e-abbc-bdd9eeb0123f"
+    },
+    {
+      "claim_id": "229e873d-a511-4654-8314-1ba247a3fa6f",
+      "result_id": "b75b2168-bdd5-472e-abbc-bdd9eeb0123f"
+    },
+    {
+      "claim_id": "78186315-c47b-4d6d-b0e0-8ab2fed61724",
+      "result_id": "b75b2168-bdd5-472e-abbc-bdd9eeb0123f"
+    },
+    {
+      "claim_id": "3d8689a3-706f-4544-aa93-0e2ad98221f4",
+      "result_id": "b75b2168-bdd5-472e-abbc-bdd9eeb0123f"
+    },
+    {
+      "claim_id": "099f36d2-63a5-40bb-8251-0453be511ae4",
+      "result_id": "b75b2168-bdd5-472e-abbc-bdd9eeb0123f"
+    },
+    {
+      "claim_id": "5985ec33-bf3b-4428-8da5-26cbf9702a01",
+      "result_id": "31add9de-146a-4ab9-87da-04c5ac757e01"
+    },
+    {
+      "claim_id": "2e40eb2d-96ae-4470-9216-c47fbb2fb921",
+      "result_id": "31add9de-146a-4ab9-87da-04c5ac757e01"
+    },
+    {
+      "claim_id": "da55a8d3-29bb-400a-9be4-37310c1dac71",
+      "result_id": "31add9de-146a-4ab9-87da-04c5ac757e01"
+    },
+    {
+      "claim_id": "29e5f3e1-e7c7-44c1-8fa1-6547ac7b4bef",
+      "result_id": "31add9de-146a-4ab9-87da-04c5ac757e01"
+    },
+    {
+      "claim_id": "364105f6-72fe-4047-bc9d-2cc192daae9b",
+      "result_id": "a10882c7-a016-423f-a2e5-7ebee21f60d8"
+    },
+    {
+      "claim_id": "00081d2a-7879-4174-aef5-f924068ad553",
+      "result_id": "a10882c7-a016-423f-a2e5-7ebee21f60d8"
+    },
+    {
+      "claim_id": "b52fa140-529d-4301-a3cd-1b868355f18d",
+      "result_id": "5a94fe7e-ef84-4063-a86f-458abbe16020"
+    },
+    {
+      "claim_id": "13697447-c238-4ea3-8c44-839cf7b8371f",
+      "result_id": "5a94fe7e-ef84-4063-a86f-458abbe16020"
+    },
+    {
+      "claim_id": "91a1d01c-14f2-4542-849a-84767ee8c531",
+      "result_id": "5a94fe7e-ef84-4063-a86f-458abbe16020"
+    },
+    {
+      "claim_id": "b65c3566-5a08-40cd-845a-d8a85a093b9d",
+      "result_id": "5a94fe7e-ef84-4063-a86f-458abbe16020"
+    },
+    {
+      "claim_id": "0b06d30e-6a1e-45e2-a3c2-3cc397c5a33c",
+      "result_id": "5a94fe7e-ef84-4063-a86f-458abbe16020"
+    },
+    {
+      "claim_id": "e5007e63-0f4c-498d-9e33-1c607cbc0c49",
+      "result_id": "c996b18b-7b29-4f12-aa83-d8a5a87ace55"
+    },
+    {
+      "claim_id": "2b627e71-b40c-4282-97a0-be943ba4ff47",
+      "result_id": "c996b18b-7b29-4f12-aa83-d8a5a87ace55"
+    },
+    {
+      "claim_id": "7fb99481-7365-4113-85d0-da4682fa08bb",
+      "result_id": "c996b18b-7b29-4f12-aa83-d8a5a87ace55"
+    },
+    {
+      "claim_id": "ca64b8e9-2bb2-43d9-bbe8-1ef314d1c9ec",
+      "result_id": "39db98ab-46b8-4546-9069-a7387aa366f5"
+    },
+    {
+      "claim_id": "a1a9a50e-614c-4195-96fb-64202df79a10",
+      "result_id": "39db98ab-46b8-4546-9069-a7387aa366f5"
+    },
+    {
+      "claim_id": "fead0aa9-f5bc-451c-a0c5-cbf6e0c0020f",
+      "result_id": "39db98ab-46b8-4546-9069-a7387aa366f5"
+    },
+    {
+      "claim_id": "ef4eff60-38bf-4afb-886e-8dc7878f5143",
+      "result_id": "39db98ab-46b8-4546-9069-a7387aa366f5"
+    },
+    {
+      "claim_id": "e3d70198-73b1-4a2f-800a-300b373d2eb0",
+      "result_id": "39db98ab-46b8-4546-9069-a7387aa366f5"
+    },
+    {
+      "claim_id": "3f84c297-f407-4cca-9056-4cd52532e254",
+      "result_id": "39db98ab-46b8-4546-9069-a7387aa366f5"
+    },
+    {
+      "claim_id": "f29e532d-0605-4672-bdba-e64fa9b4d3a3",
+      "result_id": "3c23ba9c-efe7-4a56-9948-37ddfaf624fa"
+    },
+    {
+      "claim_id": "70cc6435-ba92-48ae-bbbb-98e224a6875b",
+      "result_id": "3c23ba9c-efe7-4a56-9948-37ddfaf624fa"
+    },
+    {
+      "claim_id": "4c1a4f28-ea0d-47d4-a871-21577fe594b3",
+      "result_id": "3c23ba9c-efe7-4a56-9948-37ddfaf624fa"
+    },
+    {
+      "claim_id": "b0a49354-faf6-47f8-bec6-f490652d6293",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "0f365a24-44ba-4266-8644-5d9771e1a3a1",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "675ca7ba-b8a4-441e-90e9-5672b14c08ba",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "953959c5-609d-4097-bdd2-fe9945e1b14a",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "8781bea0-5525-4220-8dc8-8aaf53dbbe85",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "12fc7cb3-c741-4ee3-b9fa-a7c13feb5907",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "f49d81f3-36d2-425d-a1a6-55d15ac01663",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "d39b1f89-b374-41d5-a742-1af048bd3d0b",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "806d7442-518f-4b01-9862-ecbd514f1354",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "d8056d83-ea4b-491f-9c0e-4a1e1bcdb276",
+      "result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4"
+    },
+    {
+      "claim_id": "f29e532d-0605-4672-bdba-e64fa9b4d3a3",
+      "result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f"
+    },
+    {
+      "claim_id": "70cc6435-ba92-48ae-bbbb-98e224a6875b",
+      "result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f"
+    },
+    {
+      "claim_id": "4c1a4f28-ea0d-47d4-a871-21577fe594b3",
+      "result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f"
+    },
+    {
+      "claim_id": "5310506f-d2de-4bab-a098-14462c26291c",
+      "result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f"
+    },
+    {
+      "claim_id": "12cd2265-bc3a-440b-af0b-4f9e43c733b2",
+      "result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f"
+    },
+    {
+      "claim_id": "caaee067-f31d-465c-bd41-275360540339",
+      "result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f"
+    },
+    {
+      "claim_id": "418ba917-0c4c-47d3-bb9c-50dcdef0b69d",
+      "result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f"
+    },
+    {
+      "claim_id": "437d6da0-c65c-4b6f-a9bd-720ae091efcd",
+      "result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f"
+    },
+    {
+      "claim_id": "32ccc0f5-fa00-4720-ad5b-25652ea8c7bc",
+      "result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f"
+    },
+    {
+      "claim_id": "25b054e6-9ab9-421e-8a4e-d8425053ff90",
+      "result_id": "10efdc2b-498f-44a1-bbd4-2e078b60c576"
+    },
+    {
+      "claim_id": "e30e8919-4164-4e51-aa8f-265b1a66eaf6",
+      "result_id": "10efdc2b-498f-44a1-bbd4-2e078b60c576"
+    },
+    {
+      "claim_id": "c1da2ec0-013d-4ce8-b089-c3075cf40fb3",
+      "result_id": "10efdc2b-498f-44a1-bbd4-2e078b60c576"
+    },
+    {
+      "claim_id": "62a1d4ff-85d6-4d76-a5a4-5d3b35c0596d",
+      "result_id": "10efdc2b-498f-44a1-bbd4-2e078b60c576"
+    },
+    {
+      "claim_id": "af039b18-f815-4934-ab2c-bdcd29121ca6",
+      "result_id": "45e7a99b-0788-42a4-afa3-5cf012149219"
+    },
+    {
+      "claim_id": "57fe5d71-8b66-4fc9-a0a9-c660dbd8d06f",
+      "result_id": "45e7a99b-0788-42a4-afa3-5cf012149219"
+    },
+    {
+      "claim_id": "59dc0cbd-b120-4e04-b64f-b62f0a1b3096",
+      "result_id": "45e7a99b-0788-42a4-afa3-5cf012149219"
+    },
+    {
+      "claim_id": "d576dc07-db76-43f3-89a3-041299c5e723",
+      "result_id": "45e7a99b-0788-42a4-afa3-5cf012149219"
+    },
+    {
+      "claim_id": "bcec73fa-c784-4039-a790-d31ffe036c95",
+      "result_id": "45e7a99b-0788-42a4-afa3-5cf012149219"
+    },
+    {
+      "claim_id": "5fd160ee-666d-4ddf-9ca6-48b0f6a96ea1",
+      "result_id": "45e7a99b-0788-42a4-afa3-5cf012149219"
+    },
+    {
+      "claim_id": "39c881d6-235a-4805-964a-03d008783d00",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "b591d7aa-1110-4514-b236-6621e9931b72",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "8d6f89c4-2ccf-4d8e-9df9-a5e19f6ebed8",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "5199139c-7225-4339-9963-c820a563c14c",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "362bd6cf-e13b-4f17-8828-8bfcef2aa27a",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "c419fef6-dd5c-4df8-a9e4-165cebb242da",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "48913013-83c0-45e3-86b0-cef93bbba2d7",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "59c1235c-2f6b-4e82-bf6d-e195cf3bfeed",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "e03580f7-1759-42d8-aab3-cd5e46304805",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "2d830c62-679f-42b0-a8b3-4cfcd2ec5c7d",
+      "result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2"
+    },
+    {
+      "claim_id": "1c4aea5d-89e0-4070-a65a-b3d0cf12ce2c",
+      "result_id": "0a9af625-ca2e-428a-afcc-747bf9a3e62e"
+    },
+    {
+      "claim_id": "ba21313d-481a-4d00-97ad-afe5830f9f44",
+      "result_id": "0a9af625-ca2e-428a-afcc-747bf9a3e62e"
+    },
+    {
+      "claim_id": "b9961213-7751-4aff-94c6-9c36aba6b475",
+      "result_id": "0a9af625-ca2e-428a-afcc-747bf9a3e62e"
+    },
+    {
+      "claim_id": "eeec93f6-31ba-4b30-b643-29180bda9f19",
+      "result_id": "0a9af625-ca2e-428a-afcc-747bf9a3e62e"
+    },
+    {
+      "claim_id": "bf82370d-fd59-42fe-a7f9-eec58d1831b7",
+      "result_id": "0a9af625-ca2e-428a-afcc-747bf9a3e62e"
+    },
+    {
+      "claim_id": "6f65fd3e-9f0c-4916-8dac-dde766e169c0",
+      "result_id": "0a9af625-ca2e-428a-afcc-747bf9a3e62e"
+    },
+    {
+      "claim_id": "3e9a533a-85c9-4c6f-a690-34480423aa75",
+      "result_id": "2782eb6f-1a80-4fdc-a77d-cae8ff3d8451"
+    },
+    {
+      "claim_id": "e6c32ed2-32c4-464e-b355-65cafd3e686d",
+      "result_id": "2782eb6f-1a80-4fdc-a77d-cae8ff3d8451"
+    },
+    {
+      "claim_id": "3b22930e-6295-4274-a879-49c71265b707",
+      "result_id": "2782eb6f-1a80-4fdc-a77d-cae8ff3d8451"
+    },
+    {
+      "claim_id": "c9da2d8b-736c-445a-97e8-c956705f3ac2",
+      "result_id": "2782eb6f-1a80-4fdc-a77d-cae8ff3d8451"
+    },
+    {
+      "claim_id": "d0af9d95-b256-4987-a1a8-6c9bdd87664d",
+      "result_id": "2782eb6f-1a80-4fdc-a77d-cae8ff3d8451"
+    },
+    {
+      "claim_id": "5a3523c9-71c4-4024-aa2c-26d355e7c28c",
+      "result_id": "2782eb6f-1a80-4fdc-a77d-cae8ff3d8451"
+    },
+    {
+      "claim_id": "339bfd4d-3ffb-49ed-bfd4-f90f2e620dbb",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "4efc466c-a028-49cd-9089-b2c7e1a0f6b9",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "a2d75e39-20a6-4711-b5fd-4e2d5475c78e",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "229e873d-a511-4654-8314-1ba247a3fa6f",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "78186315-c47b-4d6d-b0e0-8ab2fed61724",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "3d8689a3-706f-4544-aa93-0e2ad98221f4",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "099f36d2-63a5-40bb-8251-0453be511ae4",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "e1f45adb-cc4d-44e7-987c-b3eec012262e",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "6797b7c4-0851-4a25-86fd-7cdde66fc11c",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "4825c61e-e968-4d9f-8f14-2abfd4179ce1",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "b7f2cc2e-f880-4f02-bcc4-e70576be2c3d",
+      "result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d"
+    },
+    {
+      "claim_id": "b52fa140-529d-4301-a3cd-1b868355f18d",
+      "result_id": "ef926bf7-9f04-481f-9456-c162785e986b"
+    },
+    {
+      "claim_id": "13697447-c238-4ea3-8c44-839cf7b8371f",
+      "result_id": "ef926bf7-9f04-481f-9456-c162785e986b"
+    },
+    {
+      "claim_id": "91a1d01c-14f2-4542-849a-84767ee8c531",
+      "result_id": "ef926bf7-9f04-481f-9456-c162785e986b"
+    },
+    {
+      "claim_id": "b65c3566-5a08-40cd-845a-d8a85a093b9d",
+      "result_id": "ef926bf7-9f04-481f-9456-c162785e986b"
+    },
+    {
+      "claim_id": "0b06d30e-6a1e-45e2-a3c2-3cc397c5a33c",
+      "result_id": "ef926bf7-9f04-481f-9456-c162785e986b"
+    },
+    {
+      "claim_id": "364105f6-72fe-4047-bc9d-2cc192daae9b",
+      "result_id": "9f56db49-f63f-4950-9e8d-2882cd17a1b9"
+    },
+    {
+      "claim_id": "00081d2a-7879-4174-aef5-f924068ad553",
+      "result_id": "9f56db49-f63f-4950-9e8d-2882cd17a1b9"
+    },
+    {
+      "claim_id": "5985ec33-bf3b-4428-8da5-26cbf9702a01",
+      "result_id": "9f56db49-f63f-4950-9e8d-2882cd17a1b9"
+    },
+    {
+      "claim_id": "2e40eb2d-96ae-4470-9216-c47fbb2fb921",
+      "result_id": "9f56db49-f63f-4950-9e8d-2882cd17a1b9"
+    },
+    {
+      "claim_id": "da55a8d3-29bb-400a-9be4-37310c1dac71",
+      "result_id": "9f56db49-f63f-4950-9e8d-2882cd17a1b9"
+    },
+    {
+      "claim_id": "29e5f3e1-e7c7-44c1-8fa1-6547ac7b4bef",
+      "result_id": "9f56db49-f63f-4950-9e8d-2882cd17a1b9"
+    },
+    {
+      "claim_id": "e5007e63-0f4c-498d-9e33-1c607cbc0c49",
+      "result_id": "f70813f1-4069-4f45-85a4-e6f1aec6bf6d"
+    },
+    {
+      "claim_id": "2b627e71-b40c-4282-97a0-be943ba4ff47",
+      "result_id": "f70813f1-4069-4f45-85a4-e6f1aec6bf6d"
+    },
+    {
+      "claim_id": "7fb99481-7365-4113-85d0-da4682fa08bb",
+      "result_id": "f70813f1-4069-4f45-85a4-e6f1aec6bf6d"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "ac778a8e-f528-483c-ac60-682fbc6a18ea",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "92a68848-c744-40c8-b435-0e234e2a551a",
+      "peer_result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the protein synthesis claims (C47-C52). OpenEval provides detailed technical assessment of the multiple orthogonal methods and controls. Peer reviewers affirmed the method as 'solid and convincing' with no concerns raised about protein production data. Peer R1 also includes methodological claims C34-C36 that OpenEval addresses separately in R15.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "3b9c7724-8798-4808-8508-f96213c1aa3f",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "4281d963-c7a1-480b-9acc-cfcc118cbca2",
+      "peer_result_id": "10efdc2b-498f-44a1-bbd4-2e078b60c576",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address oligomeric assembly (C53-C55). OpenEval rates as UNCERTAIN due to lack of quantification and speculative interpretation, noting the signal is 'not as robust.' Peer reviewers initially raised concerns about mechanistic interpretation but ultimately SUPPORTED after new SEC experiments were performed, indicating acceptance of the assembly data despite OpenEval's reservations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "7ec3e89c-e67d-4c71-8647-d5a82f739e82",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "fe30c164-86ce-4baa-b25b-a661df557bcc",
+      "peer_result_id": "45e7a99b-0788-42a4-afa3-5cf012149219",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the orientation data (C56-C59). OpenEval provides detailed analysis noting that only 38.5% showed correct orientation while acknowledging the method successfully identifies suitable vesicles. Peer reviewers found the SNAP-tag orientation methodology convincing with no concerns raised, describing evidence as 'solid.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "46839635-3057-4335-a4c9-a51dc46d9452",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "d463a3d7-c353-4569-9fbc-886367a53489",
+      "peer_result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the PKD2L1 electrophysiology data (C61-C63, C94-C97). OpenEval emphasizes the quantitative data, appropriate controls, and reporting of variability. Peer reviewers accepted the conductance measurements without critique, with Peer R4 also including ion selectivity claim C64 that OpenEval addresses separately in R5.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "68a55723-d581-46b0-b4cd-68be2189453b",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "2c9012fc-2d67-40f2-a98c-57a8c59cee39",
+      "peer_result_id": "9e20178d-43d5-492e-8b3e-f7259f3c99e2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R5 addresses ion selectivity (C64) separately as SUPPORTED, noting consistency with prior work. Peer R4 groups this with broader electrophysiology claims (C10, C60-C64, C94-C97) and supports the overall functional characterization including selectivity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "52afd259-7b6d-4fe3-acba-0756bbf0a0d7",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "53e68b68-28f0-4047-a1cf-e284fa37b244",
+      "peer_result_id": "0a9af625-ca2e-428a-afcc-747bf9a3e62e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on PKD2 conductance data (C65-C66, C102-C105). Both evaluations support the claims. OpenEval notes the method generalizes to a second polycystin member with similar conductance patterns. Peer reviewers accepted PKD2 data alongside PKD2L1 with no concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "a2855a70-d297-43aa-9e05-a4f74788d66a",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "6fe1b958-5f6b-40c9-b361-921d1533c589",
+      "peer_result_id": "2782eb6f-1a80-4fdc-a77d-cae8ff3d8451",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the comparison between synthetic and native PKD2L1 channels (C68, C98-C101). OpenEval notes conductance values are remarkably similar with ~10% difference within reasonable variation. Peer reviewers accepted the native channel comparison without concerns, with the editor noting the method allows comparison to endogenous properties.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "9062f231-8920-4d13-9c95-7194747df0d8",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "3f997ee0-2c61-497f-979c-7f5dd290b59c",
+      "peer_result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address PKD2 discrepancies (C69, C106-C109). OpenEval supports the documentation of 2-fold higher conductances in synthetic channels as an important limitation. Peer R7 also includes the authors' explanations (C70-C75) and accepts the transparent discussion of limitations, with no reviewer challenging the comparison.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "e4502b9a-dd10-4f6c-aec0-051488a7f515",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "b75b2168-bdd5-472e-abbc-bdd9eeb0123f",
+      "peer_result_id": "31e1b0b0-f5c0-483f-aa58-92b40c49a23d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the mechanistic explanations for discrepancies (C70-C75). OpenEval emphasizes the reasonable explanations supported by literature citations and honest assessment of limitations. Peer reviewers accepted the authors' acknowledgment of limitations and interpretation of differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "041ac401-bfc9-4bc1-ba31-3452506bb188",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "31add9de-146a-4ab9-87da-04c5ac757e01",
+      "peer_result_id": "9f56db49-f63f-4950-9e8d-2882cd17a1b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the technical limitation regarding GUV instability (C88-C91). OpenEval emphasizes the critical empty GUV control and plausible mechanistic explanation. Peer reviewers did not challenge these observations or the over-incorporation hypothesis, consistent with transparent reporting.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "b3b648ea-998f-4088-be40-1bbeed31e3fe",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a10882c7-a016-423f-a2e5-7ebee21f60d8",
+      "peer_result_id": "9f56db49-f63f-4950-9e8d-2882cd17a1b9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both support the technical limitation and proposed solutions (C81-C82). OpenEval notes appropriate acknowledgment of challenges with reasonable suggestions. Peer R9 groups this with C88-C91 and accepts the transparent reporting, with Reviewer 1 noting concerns were addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "7fb56cf5-6517-49b0-a04a-dee41d294af4",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "5a94fe7e-ef84-4063-a86f-458abbe16020",
+      "peer_result_id": "ef926bf7-9f04-481f-9456-c162785e986b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on method generalizability claims (C76-C80). Both evaluations support the claims. OpenEval notes successful application to two channels validates proof-of-principle with reasonable extrapolations. Peer reviewers strongly endorsed broader applicability, with all three reviewers emphasizing potential for studying organellar channels and other difficult targets.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "9392963a-43b7-45fd-8536-e8c1f1b96b54",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "c996b18b-7b29-4f12-aa83-d8a5a87ace55",
+      "peer_result_id": "f70813f1-4069-4f45-85a4-e6f1aec6bf6d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on forward-looking method extensions (C83-C85). Both evaluations support the claims. OpenEval notes well-supported background with logical extensions and important caveats about chaperone requirements. Peer reviewers did not contest this discussion, consistent with positive assessment of method potential.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "2d5b5d66-ec2c-4b29-83b3-7c23522344be",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "39db98ab-46b8-4546-9069-a7387aa366f5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R14 addresses background/motivation claims (C1-C6) as SUPPORTED, establishing context for the method development. No corresponding peer review evaluation found, as peer reviewers focused on experimental claims rather than background literature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "fa0e749f-849f-428f-b4ba-fcac29383e60",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "3c23ba9c-efe7-4a56-9948-37ddfaf624fa",
+      "peer_result_id": "d780f375-b3dd-425c-8b9a-ae83b6d3494f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R15 addresses methodological approach claims (C34-C36) separately as SUPPORTED background. Peer R1 groups these with protein synthesis data (C47-C52) in a single evaluation, supporting both the CFE-GUV approach and protein production together.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    },
+    {
+      "id": "a49df0d4-eb76-405f-a06c-04569d544766",
+      "submission_id": "60161a59-8b72-4186-a63a-19f6c452809a",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "1964d5b4-d932-46e3-9d12-b04e89306ba4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R16 addresses background claims on biological/medical significance (C37-C46) as SUPPORTED, establishing why these channels are important validation targets. No corresponding peer review evaluation found, as peer reviewers focused on experimental results rather than background context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:23:54.017919Z"
+    }
+  ]
+}

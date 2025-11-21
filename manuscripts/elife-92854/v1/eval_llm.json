@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Stellate cells in layer 2 of the MEC have extensive axonal projections spanning >500 \u03bcm along the dorsoventral axis and >400 \u03bcm along the mediolateral axis, with axon collaterals distributed across multiple layers (L1-3, L5b) and dendrites restricted to L1-3. Individual stellate cells show variability in layer-specific axonal targeting, and there is no correlation between superficial and deep axonal projections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C33 are supported by direct experimental data from neuronal reconstructions following patch-clamp recordings (Figure 1). The anatomical measurements are quantified with appropriate statistical analyses (e.g., linear model p=0.30 for C31), and the findings are consistent with prior work (C27 cites S\u00fcrmeli et al., 2015). The extensive spatial extent of axonal projections provides the anatomical substrate for the functional connectivity studies that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Asynchronous widefield optogenetic activation of stellate cells reveals coordinated excitatory synaptic input to pairs of PV+ interneurons separated by up to 500 \u03bcm (dorsoventral) and 900 \u03bcm (mediolateral). Cross-correlation analysis identified 35/71 PV+ interneuron pairs as receiving coordinated input, with correlation strength decreasing as a function of intercell distance along both axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C41 are well-supported by experimental data using a validated optogenetic approach combined with simultaneous patch-clamp recordings (Figures 2-3). The asynchronous activation strategy is validated through simulations (Figure 2) and direct recordings from ChR2-expressing stellate cells. Statistical analyses demonstrate significant distance-dependent correlations (C40: adjusted R\u00b2=0.19, p=0.0046; C41: adjusted R\u00b2=0.09, p=0.045), and shuffled controls confirm that coordinated responses are not due to chance (0/1000 shuffled pairs identified as coordinated).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A small subset of PV+ interneuron pairs (3/49) separated by <100 \u03bcm are electrically coupled through gap junctions, while no inhibitory chemical synaptic connections were detected between any tested PV+ interneuron pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by direct experimental evidence from paired recordings testing both electrical and chemical connectivity (Figure 3\u2014figure supplement 2). The finding of rare electrical coupling at short distances (<100 \u03bcm) and absence of chemical inhibitory connections is consistent with prior work (cited as Fernandez et al., 2022 in C68). The sample size (49 pairs tested) is adequate for detecting these connection types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Coordination of PV+ interneurons by stellate cells involves both direct and indirect mechanisms: nearby pairs (<150 \u03bcm) maintain coordinated responses during GABA_A receptor blockade, while distant pairs (>150 \u03bcm) show reduced coordination when fast inhibition is blocked, indicating multisynaptic coordination through inhibitory intermediates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 are supported by pharmacological experiments using GABAzine to block GABA_A receptors (Figure 4). The differential effects based on distance provide strong evidence for distinct mechanisms: direct connections at short distances and indirect multisynaptic pathways at longer distances. The experimental design appropriately controls for the contribution of inhibitory circuits to the observed coordination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Focal laser stimulation of ChR2-expressing stellate cells reveals spatially restricted common input to PV+ interneuron pairs within 200 \u03bcm (dorsoventral) and 400 \u03bcm (mediolateral). The correlation probability is independent of the number of activated stellate cells, suggesting structured rather than random connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by experimental data using focal optogenetic stimulation combined with simultaneous recordings (Figure 5). The approach is validated by demonstrating variable spike latencies and restricted activation sites in ChR2-expressing stellate cells (Figure 5\u2014figure supplement 1). The independence of correlation probability from stimulus intensity (C52) strengthens the conclusion that the observed spatial organization reflects genuine circuit structure rather than sampling artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Spatial maps of stellate cell inputs to PV+ interneuron pairs show significant correlations (positive or negative) that differ from chance, with clear spatial boundaries suggesting modular organization of connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by cross-correlation analysis of stimulus maps compared to shuffled controls (Figure 5G-H). The finding of both positive and negative correlations with distinct boundaries provides evidence for structured, non-random organization of SC-to-PV+ IN connectivity. The statistical approach using shuffled controls is appropriate for establishing significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "PV+ interneurons in layer 2 of the MEC have dense axonal arborizations restricted to layer 2, with dendrites primarily in layers 1-2. Their axons extend >600 \u03bcm along both dorsoventral and mediolateral axes, significantly exceeding their dendritic extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C59 are supported by experimental data from neuronal reconstructions (Figure 6). Statistical analyses confirm that axonal extent exceeds dendritic extent in both orientations (sagittal: p=3.15\u00d710\u207b\u2076; horizontal: p=8.9\u00d710\u207b\u2074). The findings are consistent with recent observations cited in the text (Fuchs et al., 2016; Grosser et al., 2021). The restriction of PV+ interneuron axons to layer 2 contrasts with the multi-layer projections of stellate cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Activation of PV+ interneurons induces sparse, large-amplitude inhibitory synaptic currents in stellate cells. Pairs of stellate cells receiving common input from PV+ interneurons are separated by <300 \u03bcm along both dorsoventral and mediolateral axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C62 are supported by experimental data from optogenetic activation of PV+ interneurons combined with recordings from stellate cell pairs (Figure 7). The sparse, large-amplitude nature of inhibitory responses contrasts with the more frequent, smaller excitatory responses observed in the reverse direction (PV+ INs receiving SC input), suggesting asymmetric connectivity properties. The spatial extent of common input (<300 \u03bcm) is consistent with the direct connectivity range identified in the forward direction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Stellate cells and pyramidal cells in layer 2 receive input from distinct populations of PV+ interneurons, as evidenced by the absence of correlated responses in any tested SC-pyramidal cell pairs during PV+ interneuron activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 are supported by experimental data showing no correlated responses in SC-pyramidal cell pairs (Figure 7E, Figure 7\u2014figure supplement 1C and F). While C64 is an inference from C63, it is a reasonable conclusion given the complete absence of correlated responses across all tested pairs. This finding is consistent with prior work showing that SCs and pyramidal cells receive distinct inhibitory inputs (cited as Fuchs et al., 2016; Varga et al., 2010).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Direct functional interactions between stellate cells and PV+ interneurons are localized to within ~250 \u03bcm, with variable probability of shared connectivity and distinct spatial boundaries demarcating functional connections from SCs to PV+ interneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 synthesize findings from multiple experimental approaches (widefield activation, focal stimulation, and reverse direction mapping). The ~250 \u03bcm spatial scale is consistently supported across different methods. The variable connectivity probability and distinct boundaries (C66-C67) are demonstrated by focal stimulation experiments showing clear borders in stimulus maps (Figure 5). These findings provide strong evidence for structured, modular organization of SC-PV+ IN circuits.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "The circuit organization in layer 2 of the MEC involves multiple spatial scales: PV+ interneurons separated by <100 \u03bcm interact through gap junctions, while populations of SCs and PV+ interneurons separated by up to ~250 \u03bcm form local modules defined by common inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 are supported by experimental data showing electrical coupling at short distances (C42-C43) and coordinated synaptic inputs at intermediate distances (C37-C41, C50-C51, C62). The multi-scale organization is consistent with prior work (cited in C69). This hierarchical organization provides a framework for understanding how local circuits might support grid cell computations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors propose that direct SC-PV+ IN interactions operate at the scale of grid cell clusters (~250 \u03bcm), while indirect interactions through non-PV interneurons (possibly L1 interneurons or somatostatin-positive interneurons) may coordinate activity at the scale of grid cell modules. This connectivity could support continuous attractor dynamics and emergence of grid firing patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9 and C70-C75 are explicitly speculative interpretations (marked as SPECULATION/INFERENCE in evidence_type). While the experimental data on spatial organization of connectivity is solid, the link to grid cell clusters and modules is inferential. The authors appropriately use cautious language ('may', 'could', 'in principle'). Key limitations: (1) no direct recordings from identified grid cells, (2) no in vivo validation of the proposed functional roles, (3) the candidate interneurons for inter-module coordination (C71-C72) are speculative suggestions based on citations. These claims represent reasonable hypotheses for future testing rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript provides extensive background on excitatory-inhibitory interactions in cortical circuits, the organization of grid cells in the MEC, and prior work on SC-PV+ IN connectivity. Previous studies have focused on nearby cell pairs (<150 \u03bcm), leaving the spatial organization at the scale of grid cell clusters and modules unexplored.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C26 establish the scientific context and rationale for the study. These are primarily knowledge claims and citations to prior work, which are appropriately referenced. The key gap identified (C26) - that previous work focused on nearby pairs (<150 \u03bcm) - is well-documented and provides clear motivation for the current study's focus on longer-range connectivity. These background claims are accurate representations of the field.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,522 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Fragmentation in computational neuroscience modeling tools creates barriers to model construction, reuse, and FAIR principles. Different tools have incompatible designs, APIs, and model representations, making model translation error-prone and impeding interoperability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C14-C18 establish the motivation for NeuroML by describing well-recognized challenges in the field. These are supported by citations (C3, C14, C17) and represent established knowledge about tool fragmentation in computational neuroscience. The claims are consistent with the broader literature on standardization needs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "NeuroMLv1 was developed as a declarative, modular, simulator-independent language that could describe neuronal morphologies, biophysical properties, and networks, enabling model archiving and exchange between NEURON, GENESIS, and MOOSE. However, it had key limitations: dynamics were not formally machine-readable, extension was difficult, and XML as the primary interface limited usability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C28 describe the historical development and limitations of NeuroMLv1, supported by citations to original publications (Goddard et al., 2001; Gleeson et al., 2010). The limitations are clearly documented and motivated the development of NeuroMLv2. This represents established historical fact about the standard's evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C42"
+    ],
+    "result": "NeuroMLv2 was redesigned using LEMS to address NeuroMLv1 limitations, providing fully machine-readable definitions of model structure and dynamics. It retains modularity and simulator independence while adding extensibility, moving to Python as the main interface, and has grown into a mature standard endorsed by INCF and COMBINE with an expanding ecosystem of tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37, C42 describe the development and features of NeuroMLv2, supported by citations (Cannon et al., 2014; Vella et al., 2014) and documented endorsements from INCF and COMBINE (C42). The growth of the ecosystem is evidenced by Tables 3-4 and Figures 3-4 (C6, C53). These are verifiable facts about the standard's development and adoption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "NeuroML provides a curated library of model elements including ionic conductances, synapses, detailed multi-compartmental neurons, abstract point neurons, and networks. The modular, hierarchical structure allows elements to be reused across models, encourages well-structured models, reduces errors, and embeds FAIR principles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C51 describe the structure and capabilities of NeuroML, supported by Tables 1-2 and Figure 2 which document the available model elements (C43). The hierarchical relationships are illustrated in Figure 2 (C47). The benefits for FAIR principles (C51) follow logically from the formal structure, though this is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62"
+    ],
+    "result": "NeuroML supports all stages of the model life cycle through a large ecosystem of tools including core APIs in Python, Java, C++, and MATLAB. Python is the recommended interface, combining NeuroML's declarative elements with procedural scripting for a powerful 'building block' approach, with pyNeuroML providing comprehensive utilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C62 describe the tool ecosystem, supported by Figure 1 (model life cycle), Figures 3-4 and Tables 3-4 (tool listings), and Figure 6 (Python utilities). The recommendation for Python (C56-C57) is supported by citation (Muller et al., 2015). The ecosystem's existence and capabilities are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "GUI-based applications including NetPyNE's web interface and neuroConstruct are available for users not experienced with Python, allowing model construction and export to NeuroML/LEMS without programming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 describe GUI tools supported by citations to NetPyNE (Dura-Bernal et al., 2019) and neuroConstruct (Gleeson et al., 2007). These are verifiable tools in the ecosystem that provide alternative interfaces to NeuroML.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "NeuroML's hierarchical structure enables multi-level validation prior to simulation, including structural validation against the schema, semantic/logical checks, and dimensional consistency checking through LEMS. Validation tests are listed in Table 6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 describe validation capabilities illustrated in Figure 7 and documented in Table 6. The dimensional consistency checking (C70-C71) is a documented feature of LEMS (Cannon et al., 2014). The validation framework is a concrete, verifiable feature of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Post-simulation validation is supported through OMV framework for checking consistent behavior across simulators and NeuronUnit for data-driven validation against experimental data. Both support automated validation of models on OSB and NeuroML-DB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 describe validation tools supported by citations (Gleeson et al., 2019b for OMV; Gerkin et al., 2019 and Omar et al., 2014 for NeuronUnit/SciUnit). These are documented tools with specific capabilities for model validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Multiple visualization and analysis tools are available in the NeuroML ecosystem. pyNeuroML includes ready-made utilities for generating graphical views of morphology, 3D network layouts, connectivity matrices, and model summaries, accessible via Python, Jupyter notebooks, and command line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 describe visualization capabilities illustrated in Figures 6, 8, 9, and 10. The structured format of NeuroML (C77) enables automated extraction of information for visualization. These are concrete, demonstrable features of the tools.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "NeuroML models can be simulated on multiple engines without modification because NeuroML/LEMS descriptions are simulator-independent and translatable to simulator-specific formats. Simulation engines fall into five categories, with different capabilities (e.g., reference simulators cannot handle multi-compartmental models; NetPyNE, Arbor, EDEN support parallel execution).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 describe simulation capabilities supported by Figure 5 (five categories) and Table 7 (simulator features). The simulator independence is a core design feature of NeuroML. The limitations of different simulators (C84) are documented in Table 7. These are verifiable technical capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "pyNeuroML promotes data-driven modeling through optimization capabilities including the NeuroMLTuner module using evolutionary computation. BluePyOpt and NetPyNE also provide optimization features with NeuroML export/support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 describe optimization tools supported by citations (Vella and Gleeson, 2023 for Neurotune; Van Geit et al., 2016 for BluePyOpt; Dura-Bernal et al., 2019 for NetPyNE). These are documented tools with specific optimization capabilities for NeuroML models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The NeuroML ecosystem includes web-based platforms NeuroML-DB and OSB for model sharing and dissemination. OSBv2 provides cloud-based workspaces for model construction, analysis, and comparison to experimental data. Table 8 lists stable NeuroML models from various brain regions shared on OSB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C96 describe sharing platforms supported by citations (Birgiolas et al., 2023 for NeuroML-DB; Gleeson et al., 2019b for OSB) and Table 8 listing example models. These are operational platforms with documented capabilities and model collections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "NeuroML interoperates with other standards to promote model reuse: bidirectional conversion with PyNN and SONATA for network structures, conversion from SBML to LEMS, export of NeuroML/LEMS subsets to SBML, and export of simulation details to SED-ML for use with Biosimulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 describe interoperability features supported by citations to the respective standards (Davison et al., 2008 for PyNN; Dai et al., 2020 for SONATA; Hucka et al., 2003 for SBML; Waltemath et al., 2011 for SED-ML; Shaikh et al., 2022 for Biosimulators). These are documented technical capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "NeuroML can be extended using LEMS to incorporate novel model elements not in the standard. LEMS allows definition of ComponentTypes specifying structure and dynamics, which can be instantiated as Components with specific parameters. LEMS is fully machine-readable, enabling translation to simulator-specific code. New elements can be submitted for inclusion in the standard.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C110 describe the extensibility mechanism through LEMS, supported by citation (Cannon et al., 2014) and illustrated in Figure 5. The hierarchical nature (C105) and translatability (C108) are documented features of LEMS. The submission process (C109) is part of the governance structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "NeuroML is a global open community standard maintained by a Scientific Committee and elected Editorial Board. It is endorsed by INCF and is a main standard of COMBINE. All development is public, with schema and tools freely available under FOSS licenses on public platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 describe governance and community structure supported by citations (Abrams et al., 2022 for INCF; Martone and Das, 2019; Hucka et al., 2015 for COMBINE). The open development and FOSS licensing are verifiable through the GitHub repositories mentioned. This represents the organizational reality of the project.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "NeuroMLv2 has matured into a widely adopted community standard that can define diverse model types, provides a common language for tool interoperability, has spawned a large ecosystem covering the model life cycle, and combines with Python for a powerful building block approach. It has evolved from an archiving format to support FAIR principles and reproducible science.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 summarize the current state and impact of NeuroML, synthesizing evidence from throughout the paper including the tool ecosystem (Tables 3-4, Figures 3-4), model library (Tables 1-2), and capabilities described in previous sections. This represents a well-supported summary of the standard's maturity and adoption.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "NeuroML evolved from v1 (mainly for archiving/visualization) through v2/LEMS (fully machine-readable with lossless mapping) to become an INCF-recognized standard with formal governance. This enabled development of compliant tools and models, allowing modelers to build tool chains spanning the model life cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128 trace the historical evolution supported by citations (Goddard et al., 2001; Gleeson et al., 2010 for v1; Cannon et al., 2014 for v2/LEMS; Blundell et al., 2018 for code generation) and references to Tables 3-4, 8 documenting the ecosystem growth. This is a well-documented historical account.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "PyNN and SONATA provide complementary capabilities to NeuroML (procedural API and large-scale simulation framework, respectively). The development teams work collaboratively to ensure interoperability, making PyNN and SONATA integral parts of the wider NeuroML ecosystem.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C132 describe relationships with other standards supported by citations (Davison et al., 2008 for PyNN; Dai et al., 2020 for SONATA and collaboration). The interoperability is documented in earlier claims (C98-C99). This represents the collaborative nature of standards development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Building models with NeuroMLv2 is efficient and intuitive due to pre-made components and specified structure. The structured format enables API features like auto-completion and inline validation. Multi-stage validation minimizes errors. OSB enables visualization of morphology, conductance distribution, and connectivity matrices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C136 describe usability benefits, with C135 supported by Figure 7 (validation) and C136 by Figure 8 and citation (Gleeson et al., 2019b). Claims C133-C134 are somewhat inferential about usability but follow logically from the structured format. The visualization capabilities are demonstrable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "NeuroML has limitations: not all models fit the current scope. However, LEMS provides flexibility for new model types. Plans exist to extend NeuroML to rate-based population models and improve SBML support for biochemical descriptions of sub-cellular activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C140 acknowledge limitations and describe future plans. C137 is a general statement about standards. C138 is supported by citation (Cannon et al., 2014). C139-C140 describe plans with references to example models (Table 8) and citations (Hucka et al., 2003; Cannon et al., 2014). These represent honest assessment of current limitations and documented future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "There is growing interest in large-scale network models. XML serialization is inefficient for such models. NeuroML has HDF5 serialization and recently added SONATA export for efficient large-scale model handling. NeuroMLlite prototype facilitates network template description and generation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C145 describe large-scale modeling capabilities. C141 is supported by citations (Markram et al., 2015; Billeh et al., 2020; Einevoll et al., 2019). C142 acknowledges a limitation. C143-C144 describe solutions supported by citation (Dai et al., 2020 for SONATA). C145 describes a prototype tool. These represent practical solutions to scaling challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Model Description Format (MDF) has been developed to provide a common framework for biological and artificial neural networks, allowing specification of both using the same entities. Support for mapping to/from NeuroMLv2/LEMS is included, enabling integration of computational neuroscience and AI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C149 describe MDF supported by citation (Gleeson et al., 2023). The interoperability with NeuroML (C148) is documented. C149 about future impact is somewhat speculative but follows logically from the capabilities described. This represents an emerging extension of the ecosystem.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "NeuroMLv2 is a mature standard for biologically detailed models. Short-term vision includes expanding functionality and new online resources. The team is exploring integration with musculo-skeletal simulations. Long-term goals include seamless interfaces with other domain standards for holistic models and greater exchange with AI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C153 describe current state and future vision. C150 summarizes maturity (supported by evidence throughout). C151-C153 describe future plans and exploratory work. These are appropriate forward-looking statements for a resource paper, acknowledging both near-term and long-term goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "NeuroMLv2 is formally specified by an XML schema (XSD format, W3C recommendation) defining structure, and LEMS ComponentType definitions specifying dynamics. The schema is language-independent, enables validation, allows API generation, and is maintained as a versioned artifact (current version 2.3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C164 describe the formal specification of NeuroML, with references to W3C standards and the GitHub repository. The schema structure (C159-C161) follows XSD conventions. The functions (C162) are documented capabilities. This is a technical description of the standard's implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "LEMS is a domain-independent language for describing models and simulations, allowing definition of ComponentTypes (formal descriptions of behavior) that can be instantiated as Components with specific parameters. Types can extend other types hierarchically. For NeuroML standard elements, there is one-to-one mapping between XSD schema types and LEMS ComponentTypes. User-defined ComponentTypes can be used freely but cannot be validated against the NeuroML schema.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C165-C174 describe LEMS supported by citation (Cannon et al., 2014). The relationship between ComponentTypes and Components (C167-C168), hierarchical structure (C169), and mapping to NeuroML schema (C170-C171) are documented features. The limitation for user-defined types (C173) is a logical consequence of the schema-based validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "NeuroML APIs provide functionality to read, write, validate, and inspect models. APIs are programmatically generated from the XSD schema, ensuring correct structure. APIs are available in Python, Java, C++, and MATLAB. XML is the default serialization; HDF5 is an alternative for efficient large-scale model handling with compact binary format and optimized access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C184 describe the API infrastructure. The generation from schema (C176) ensures consistency. The available languages (C177) are documented with references to generation tools. The serialization formats (C180-C184) are documented features with HDF5 providing practical benefits for large-scale models. These are verifiable technical capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "jNeuroML is the primary tool for simulating NeuroML/LEMS models, supporting all simulator categories. It includes jLEMS for simulation, can pass to EDEN, generates import scripts or converts to simulator-specific formats using org.neuroml.export, and imports from other formats using org.neuroml.import. Not all models are supported by each simulator depending on capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C185-C192 describe jNeuroML capabilities supported by Figure 5 (categories) and citations (Panagiotou et al., 2022 for EDEN; Dura-Bernal et al., 2019 for NetPyNE; Hines and Carnevale, 1997 for NEURON; Hucka et al., 2003 for SBML). The limitations (C192) are documented in Table 7. These are concrete, verifiable features of the simulation infrastructure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196"
+    ],
+    "result": "All NeuroML and LEMS software packages are available under FOSS licenses on GitHub. The Python API was developed with NeuralEnsemble. Archives of each release with citations are published on Zenodo to enable proper citation and ensure reproducibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C196 describe software availability and archival practices. The GitHub repository (C194) is verifiable. The collaboration with NeuralEnsemble (C195) is supported by citations. The Zenodo archival (C196) is supported by multiple citations to archived releases. These represent good practices for open science and reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "NeuroML documentation is consolidated in a JupyterBook at docs.neuroml.org, supporting executable documentation through interactive Jupyter notebooks runnable on OSBv2, Binder.org, and Google Colab. The machine-readable schema and LEMS enable automated generation of documentation. Documentation is on GitHub under FOSS license, with PDF version available.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C197-C201 describe documentation infrastructure. The JupyterBook platform (C197) and interactive features (C198) are verifiable. The automated generation (C199) is illustrated in Figure 16. The open nature (C200) and PDF availability (C201) are documented. These represent comprehensive documentation practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "The Scientific Committee sets scientific focus, ensures the standard represents state-of-the-art, defines governance, and gathers community feedback. The Editorial Board manages day-to-day development and maintenance of LEMS, schema, tools, and documentation, and works with simulator developers to ensure NeuroML compliance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C202-C205 describe the governance structure with references to documentation pages. This represents the organizational structure of the NeuroML initiative, which is verifiable through the provided URLs and consistent with community-based standards development.",
+    "result_type": "MINOR"
+  }
+]

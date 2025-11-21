@@ -1,0 +1,189 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Three strategies for splitting pegRNA were tested: sgRNA/petRNA with complementary sequences, self-splicing ribozyme insertion, and splitting at the repeat:anti-repeat junction. The sgRNA/petRNA strategy showed low editing efficiency (<2%), while a single pegRNA with stem-loop structure achieved ~10% efficiency. Self-splicing ribozyme insertion was also inefficient (<2%), though the limited editing observed was ribozyme-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 provide consistent experimental data from multiple approaches (Figure 1 supplements). The negative results are well-controlled (e.g., ribozyme loss-of-function mutant in C30, stem-loop control in C28), and the authors appropriately conclude these strategies were unsuccessful, leading them to pursue the third approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Splitting pegRNA at the repeat:anti-repeat junction enables functional prime editing dependent on RNA-RNA complementarity. Using a 10 bp dimerization sequence achieved 15% editing efficiency (37% of standard epegRNA), which improved to 28% (76% of control) by optimizing base-pairing. Removing dimerization sequences reduced efficiency to 2.7%, and mismatched sequences resulted in only 2-3% editing, confirming dependence on RNA-RNA hybridization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C35 provide quantitative data with appropriate controls (matched vs. mismatched sequences, removal of dimerization domains) shown in Figure 1d-e. The dose-response relationship between complementarity and editing efficiency (C37) supports the mechanism. This establishes the foundational split-pegRNA system that enables subsequent protein-proximity sensing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The MCP-LambdaN fusion protein brings crRNA-MS2 and BoxB-petracrRNA into proximity to enable prime editing at 15% efficiency (52% of standard epegRNA control). Replacing MCP-LambdaN with GFP reduced editing to 6% of control, indicating that crRNA-MS2 and BoxB-petracrRNA can form active complexes at low levels without protein-mediated proximity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 present clear experimental data with appropriate negative controls (Figure 2b). The ~2.5-fold difference between conditions with and without the fusion protein demonstrates protein-dependent enhancement while acknowledging background activity. This establishes proof-of-concept for protein-mediated control of split pegRNA assembly.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C50"
+    ],
+    "result": "Multiple protein-protein interaction pairs can drive P3 editing with varying efficiencies. Epitope-antibody/nanobody interactions (GCN4:scFv, ALFA:NbALFA) achieved strong editing comparable to MCP-LambdaN fusion. Split-GFP showed lower efficiency, possibly due to weaker interactions, and removal of nuclear localization sequences further reduced efficiency. These results demonstrate that P3 editing can control genome editing via diverse tagged protein domain interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 provide systematic comparison of different protein interaction systems with consistent trends (Figure 2b). The observation that 4xGCN4 doesn't improve over 1xGCN4 (C45) is appropriately presented as speculative. The conclusion (C50) is well-supported by the breadth of functional protein pairs tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Small molecule-induced protein dimerization can control P3 editing. Addition of 200 nM rapamycin to FKBP-FRB increased editing 3.9-fold (58% vs 15%), while 100 \u03bcM ABA with PYL-ABI increased editing 2.7-fold (36% vs 13%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 present clear dose-response data for two independent chemical induction systems (Figure 2d). The fold-changes are substantial and demonstrate chemical control of genome editing. Replicates (n=3) are shown with error bars, supporting reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Optimization of crRNA-MS2/BoxB-petracrRNA designs reveals an efficiency-specificity tradeoff. Across 12 designs, efficiency ranged from 2-53% and background from 0.3-35%. Efficiency increased with more G-C base-pairs and longer annealing, while the GAUA:UAUC design achieved 14-fold specificity (3.8% with protein vs 0.27% without). The efficiency and specificity can be tuned by varying the repeat:anti-repeat sequence design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 present systematic optimization data across 12 designs (Figure 2 supplement 1). The tradeoff between efficiency and specificity is well-documented with quantitative measurements. The mechanistic interpretation (C52) that background editing increases with stronger RNA-RNA pairing is logical and supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "P3 editing strategy is compatible with base editing. For three base editors (CBE2, CBE4max, ABE8), LambdaN-MCP addition increased editing efficiency, with greater effects for CBE4max (3.5-fold) and ABE8 (2.1-fold) than CBE2 (1.4-fold). The P3 strategy achieved editing efficiencies comparable to standard sgRNA despite using a three-component system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 provide quantitative data for three different base editors (Figure 3c). The differential response (C57) is documented, and the speculation about Cas9 vs dCas9 (C58) is appropriately tentative. The comparison to standard sgRNA (C59) demonstrates that the split system doesn't severely compromise base editing efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "P3 editing can be combined with ADAR-based RNA sensors (RADARS) to link RNA detection to genome editing. Using IL6 RNA detection, the system achieved 11.6\u00b10.7% editing with target RNA vs 8.2\u00b10.3% without (p=0.005). Control experiments revealed 5.5% background from P3 editing alone and 2.7% from RADARS leakiness. Direct LambdaN-PCP expression increased efficiency to 34\u00b11%, suggesting the RNA-controlled module reduces overall efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C62 shows statistically significant RNA-dependent editing, the effect size is modest (1.4-fold) and the background is high (8.2% vs 11.6%). Claims C63-C65 appropriately dissect the sources of background and inefficiency, but the overall system performance (C66-C67) indicates substantial optimization is needed. The statistical significance is marginal given the small effect size and high background, making the practical utility uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "C73",
+      "C74"
+    ],
+    "result": "P3 editing is a novel strategy that links protein-protein proximity to formation of functional CRISPR-Cas9 dual-component guide RNA, enabling control of prime editing and base editing through various protein-protein interactions and chemically induced dimerization. The strategy converts molecular interactions directly into genome editing outputs, enhancing controllability of CRISPR-based editing for synthetic molecular circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the core conceptual advance and are well-supported by the experimental results in claims C32-C59. Multiple protein interaction modalities (constitutive, inducible) successfully control both prime and base editing. The work demonstrates a generalizable principle for coupling molecular sensing to genome editing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "P3 editing circumvents limitations of existing signal-specific molecular recording systems (DOMINO, CAMERA, ENGRAM) by operating at the protein level rather than requiring signal-driven transcription. The strategy engineers individual gRNAs while leaving the editor unaltered, potentially enabling multiplex genome editing within single cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 makes a valid comparison to prior systems that require transcriptional control. Claim C76 correctly identifies the architectural advantage of modular gRNA engineering. However, the multiplex capability remains theoretical as no multiplex experiments were performed. The claims are appropriately framed as potential advantages.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Four major challenges remain for P3 editing: (1) testing in cell types beyond HEK293T, (2) improving efficiency and specificity, (3) determining whether weak/transient protein interactions can trigger editing, and (4) identifying more orthogonal protein-RNA pairs for multiplex applications. Overcoming these challenges is necessary for broad utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C82 provide an honest assessment of limitations. The single cell type (C77) is a clear limitation. The efficiency-specificity tradeoff (C78) is documented in C51-C54. The questions about weak interactions (C79) and multiplexing (C80-C81) are valid given the current system uses only MS2/BoxB pairs. This represents appropriate scientific self-critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "P3 editing can potentially incorporate outputs from ADAR-based RNA sensors, allowing specific RNAs to induce specific genome edits within larger circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C5 states this was explored (supported by C62-C67), C6 appropriately frames this as potential. The experimental demonstration (C62) shows only modest RNA-dependent effects with high background. The word 'potentially' in C6 is appropriate given the preliminary nature and need for optimization identified in C66-C67.",
+    "result_type": "MINOR"
+  }
+]

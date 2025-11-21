@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37"
+    ],
+    "result": "Loss-of-function mutations in ubr-1 confer broad ivermectin (IVM) resistance in C. elegans across multiple phenotypes including viability, body size, pharyngeal pumping, and locomotion. This resistance is dose- and time-dependent, with IC50 values doubling in ubr-1 mutants compared to wild-type, and is consistent across multiple ubr-1 alleles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C24-C33, and C37 collectively provide strong experimental evidence for IVM resistance in ubr-1 mutants. The data include quantitative measurements of viability, body length, pharyngeal pumping, and locomotion velocity across multiple ubr-1 alleles (hp684, hp865, hp821 hp833), with appropriate controls and statistical analyses. The dose-response and time-course experiments (C26, C27) provide additional rigor. The consistency across multiple alleles (C37) strengthens the conclusion that loss of UBR-1 function causes IVM resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Exogenous glutamate application induces IVM resistance in wild-type animals, mimicking the ubr-1 mutant phenotype. This effect is specific to glutamate, as aspartate and GABA pretreatment do not confer resistance. Glutamate pretreatment does not further increase resistance in ubr-1 mutants, suggesting saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C42 demonstrate that glutamate pretreatment (20 mM) significantly increases IVM resistance in wild-type animals across multiple phenotypes (viability increased from 52% to 77.2%, C40), with appropriate negative controls (aspartate, GABA, C42). The lack of additional effect in ubr-1 mutants (C41) supports the interpretation that glutamate acts through the same pathway disrupted in ubr-1. The experimental design includes proper controls and the data are quantitative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C53",
+      "C54",
+      "C57"
+    ],
+    "result": "Genetic elimination of glutamate metabolism (GOT-1) or glutamate transport (EAT-4) restores IVM sensitivity in ubr-1 mutants. Single got-1 or eat-4 mutants show wild-type IVM sensitivity, but ubr-1; got-1 and ubr-1; eat-4 double mutants revert to wild-type levels of IVM sensitivity across all measured phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C53, C54, and C57 provide strong genetic evidence that glutamate metabolism and signaling are required for IVM resistance in ubr-1 mutants. The epistasis analysis is well-designed: single mutants (got-1, eat-4) show wild-type sensitivity (C53), while double mutants with ubr-1 restore sensitivity (C54, C57), demonstrating that GOT-1 and EAT-4 act downstream of or in parallel to UBR-1. Quantitative data are provided for viability, body length, pharyngeal pumping, and locomotion (Figure 3B-E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Pharmacological enhancement of glutamate uptake via ceftriaxone completely restores IVM sensitivity in ubr-1 mutants in a dose-dependent manner (IC50 = 5.14 \u03bcg/mL). This effect is independent of ceftriaxone's antimicrobial activity, as bacterial quantity manipulation does not affect IVM sensitivity restoration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C44-C51 demonstrate that ceftriaxone treatment restores IVM sensitivity in ubr-1 mutants across all phenotypes (viability decreased from 96% to 62.8%, C47), with dose-response data (C46) and appropriate controls. The experiments ruling out bacterial quantity effects (C48-C50) strengthen the conclusion that ceftriaxone acts through glutamate uptake rather than antimicrobial activity. The specificity is further supported by the lack of effect on wild-type animals (C45), consistent with ceftriaxone acting only on excess glutamate (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "IVM-targeted glutamate-gated chloride channels (GluCls: AVR-15, AVR-14, GLC-1) are downregulated in ubr-1 mutants at the post-transcriptional level. This downregulation is reversed by UBR-1 restoration, elimination of got-1 or eat-4, or ceftriaxone treatment. Glutamate application reduces GluCl expression in wild-type animals. The effect is specific to glutamate-gated receptors, as acetylcholine and GABA receptors are unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C67-C79 provide comprehensive evidence for GluCl downregulation in ubr-1 mutants using fluorescent reporters. The data show reduced fluorescence intensity for all three GluCls (C70), with tissue-specific expression patterns documented (C67-C69). The post-transcriptional nature is supported by RNA-seq data showing no change in transcript levels (C71). Multiple lines of evidence support the glutamate-dependence: genetic rescue (C72, C73), pharmacological rescue (C75), glutamate-induced downregulation in wild-type (C76), and loss of ceftriaxone rescue in GluCl triple mutants (C77). The specificity is demonstrated by lack of effect on other receptors (C78, C79). Overexpression of AVR-15 partially restores sensitivity (C74), providing functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "IVM-mediated inhibition of serotonin-activated pharynx Ca2+ activity is diminished in ubr-1 mutants. While 5-HT induces similar Ca2+ transients in wild-type and ubr-1 mutants, IVM (3 \u03bcM) profoundly suppresses Ca2+ activity in wild-type but only modestly in ubr-1 mutants. The IVM IC50 increases from 0.5 \u03bcM in wild-type to 10.1 \u03bcM in ubr-1 mutants. This functional deficit is reversed by UBR-1 restoration, elimination of got-1 or eat-4, or ceftriaxone treatment, and is mimicked by glutamate exposure in wild-type animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C82-C91 provide functional validation of GluCl downregulation using calcium imaging of pharyngeal muscle cells. The experimental design is rigorous: 5-HT dose-response establishes baseline function (C83), IVM dose-response quantifies resistance (C87), and genetic/pharmacological manipulations demonstrate reversibility (C88-C91). The ~20-fold shift in IVM IC50 (C87) is substantial and consistent with the behavioral phenotypes. The parallel between calcium imaging and behavioral data strengthens the overall conclusions. The use of 5-HT to activate pharyngeal muscles provides a physiologically relevant readout of GluCl function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "UBR-1 is ubiquitously expressed but its role in the pharynx is particularly critical for modulating IVM sensitivity. Pharynx-specific expression of UBR-1 fully rescues IVM resistance in ubr-1 mutants, while pharynx-specific RNAi knockdown induces IVM resistance in wild-type animals more effectively than knockdown in other tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 provide tissue-specific functional analysis using both rescue and knockdown approaches. The expression pattern is documented (C59), and tissue-specific rescue experiments show that pharyngeal expression is sufficient for full rescue (C61), while endogenous promoter-driven expression provides partial rescue (C60). The RNAi experiments provide complementary evidence that pharyngeal UBR-1 is necessary (C63, C64). The convergence of rescue and knockdown data strengthens the conclusion about pharyngeal specificity (C62).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C92",
+      "C93",
+      "C94",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "UBR-1 deficiency-mediated aberrant glutamate signaling leads to ivermectin resistance in C. elegans through a novel metabolic mechanism. UBR-1 maintains glutamate homeostasis by inhibiting GOT-1 activity; loss of UBR-1 leads to excess glutamate production, which causes compensatory downregulation of IVM-targeted GluCls, resulting in IVM resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C92-C94, C100-C102 synthesize the experimental findings into a coherent mechanistic model. The model is well-supported by the collective evidence: (1) ubr-1 mutants have elevated glutamate (C22, C38), (2) genetic elimination of glutamate synthesis (got-1) or transport (eat-4) restores sensitivity, (3) exogenous glutamate induces resistance, (4) GluCls are downregulated in ubr-1 mutants, and (5) pharmacological glutamate reduction restores sensitivity. The claim that this represents a novel mechanism (C100) is justified by comparison to previously known mechanisms (receptor mutations, efflux pumps, drug metabolism). However, the direct mechanism by which UBR-1 inhibits GOT-1 remains unresolved (C92), which is acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The ubr-1 gene is functionally conserved from yeast to humans and exhibits high sequence similarity in nematodes and filarial worms. The hp684 allele contains a premature stop codon resulting in truncation of the final 194 amino acids (Q1864X).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide basic characterization of UBR-1 conservation and the hp684 allele. The conservation is supported by phylogenetic analysis (Figure 1\u2014figure supplement 2A, C35) and is consistent with established knowledge (C34). The molecular characterization of hp684 is straightforward (C36). This provides important context for the functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Anthelmintic resistance to macrocyclic lactones is a critical global concern. C. elegans serves as a model for identifying IVM resistance genes. Previous work has identified GluCls as primary IVM targets and detoxification genes (P-glycoproteins, cytochrome oxidases, glutathione S-transferases) regulated by NHR-8 as contributing to IVM resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 provide background context from the literature, supported by appropriate citations. These claims establish the importance of the research problem and the rationale for using C. elegans as a model system. The citations appear appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "UBR1 is an E3 ubiquitin ligase that facilitates protein degradation through the N-end rule pathway. In humans, UBR1 mutations cause Johanson-Blizzard syndrome. C. elegans has a single UBR-1 homolog with conserved functional domains. Previous work showed that UBR-1 regulates glutamate homeostasis and neural outputs, with LIN-28 as the only identified substrate, though LIN-28 loss does not explain all ubr-1 phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C23 provide background on UBR-1 function and previous findings, supported by appropriate citations. These claims establish the known functions of UBR-1 and set up the rationale for investigating its role in IVM resistance. The citations to previous work by the authors (C22, C23) establish the foundation for the current study's focus on glutamate metabolism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C55",
+      "C56"
+    ],
+    "result": "GOT enzymes facilitate amino group conversion between aspartate and \u03b1-ketoglutarate to oxaloacetate and glutamate. Glutamate is packed into synaptic vesicles by the vesicular glutamate transporter (VGLUT), with EAT-4 being the sole VGLUT in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C55, C56 provide established biochemical and molecular background on glutamate metabolism and transport, supported by appropriate citations. These claims provide necessary context for understanding the experimental manipulations and interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Ceftriaxone appears to be effective only against excess glutamate, as it does not affect IVM sensitivity in wild-type animals but restores sensitivity in ubr-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C58 is an inference from the observation that ceftriaxone does not rescue wild-type IVM sensitivity (Figure 2I-L) but does rescue ubr-1 mutants. This interpretation is reasonable given the data, though it would be strengthened by direct measurement of glutamate levels. The claim is consistent with the proposed mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Previous work established that ubr-1 mutants exhibit impaired GLR-1 glutamate receptor function in AVA/AVE interneurons. Three GluCls (avr-15, avr-14, glc-1) are recognized as pivotal for IVM resistance in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C66 provide relevant background from previous studies, supported by appropriate citations. These claims establish the rationale for examining GluCl expression in ubr-1 mutants and connect to the broader context of glutamate receptor regulation by UBR-1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "IVM acts by engaging target GluCls, leading to irreversible inhibition of pharyngeal pumping and disrupting nerve-muscle conduction. Pharyngeal pumping in C. elegans relies on coordinated interaction between pharyngeal muscles and the serotonin-activated pacemaker neuron MC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80 and C81 provide established mechanistic background on IVM action and pharyngeal pumping regulation, supported by appropriate citations. These claims provide necessary context for interpreting the calcium imaging experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Disruptions in glutamate metabolism can lead to glutamate overabundance, which may trigger activity-dependent modulation of glutamate receptors. This phenomenon has been observed in Drosophila and mammalian systems, where excess glutamate leads to compensatory downregulation of glutamate receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C99 provide comparative context from other model systems, supported by appropriate citations. These claims establish precedent for glutamate-induced receptor downregulation and support the proposed compensatory mechanism in C. elegans. The citations appear appropriate and the claims are consistent with established knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The findings have potential translational implications: glutamate pathways are conserved between C. elegans and parasitic nematodes; UBR-1 could serve as a candidate marker for IVM resistance; combination treatments with ceftriaxone and IVM-like anthelmintics are proposed as a strategy to mitigate resistance. Ceftriaxone has been FDA approved since 1982.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C108 discuss potential applications and future directions. While the conservation of glutamate pathways (C103) is reasonable, the translational claims (C104, C106, C107) are speculative and would require validation in parasitic nematodes. The proposal for combination therapy (C106, C107) is based on the C. elegans data but lacks direct evidence in parasites or clinical settings. The FDA approval of ceftriaxone (C108) is factual but does not validate its use for this specific application. These claims represent reasonable speculation based on the findings but require substantial additional work for validation.",
+    "result_type": "MINOR"
+  }
+]

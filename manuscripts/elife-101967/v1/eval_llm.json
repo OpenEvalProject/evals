@@ -1,0 +1,348 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "AlphaFold2 was used to predict protein-protein interactions among 20 nuage-localizing proteins, generating 400 pairwise dimer predictions. A ranking confidence threshold of 0.6 was established based on reproducibility analysis, with pairs scoring above this threshold considered likely complex-forming candidates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 describe a well-defined computational methodology using AlphaFold2 with appropriate threshold selection based on empirical reproducibility data (Figure 1B). The ranking confidence metric is properly defined (C39) and the threshold choice is justified by observed variance patterns (C43).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "AlphaFold2 predictions identified 13 protein pairs with ranking confidence >0.6, of which 7 were previously known complexes, validating the approach. Predicted structures for known complexes (AGO3/Aub-Mael, Me31B-Tral, Cup-Me31B, BoYb-Vret, Tej-Vas, Tej-Spn-E) were consistent with prior experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C66 demonstrate successful validation of the AlphaFold2 approach by recovering 7/13 known interactions. The structural predictions align with previously reported binding properties (C47, C48, C58, C64, C65, C66), providing strong support for the method's accuracy on this protein set.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Five novel protein-protein interactions were predicted by AlphaFold2. Three pairs (Spn-E_Squ, Aub_Vret, BoYb_Shu) were experimentally validated by co-immunoprecipitation in S2 cells, while two pairs (BoYb-Spn-E, Me31B-Vret) showed no detectable interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C73 report a 60% validation rate (3/5) for novel predictions, which is reasonable given the exploratory nature of the predictions and known limitations of co-IP for weak interactions (C73, C74). The experimental validation is appropriately conducted in a germline-protein-free system (C69).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The Spn-E_Squ interaction was characterized structurally, revealing that Squ (largely disordered with 3 \u03b1-helices and 2 \u03b2-strands) binds to well-folded Spn-E through its middle region. Specific structural features include a short \u03b1-helix (residues 106-116) fitting into a groove on Spn-E and an anti-parallel \u03b2-sheet (residues 140-153) also contacting Spn-E, with salt bridges identified at the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C90 provide detailed structural characterization of the Spn-E_Squ complex based on AlphaFold2 predictions (C82-C89) and computational analysis (C90). The consistency across five prediction models (C85-C87) and identification of specific interaction features support the structural model, though experimental validation of the interface is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Mutagenesis of predicted salt bridge residues in Squ (E107, E109, R115, K163) validated the AlphaFold2-predicted interface. Single mutations mildly reduced binding, while the quadruple mutant (Squ4A) completely abolished interaction with Spn-E in both co-IP and co-localization assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C99 provide strong experimental validation of the predicted structure through systematic mutagenesis. The graded effect of single vs. quadruple mutations (C92, C93, C97) and loss of co-localization (C98) support the accuracy of the predicted interface and the functional importance of these salt bridges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "AlphaFold3 prediction of a Spn-E_Squ_Tej_RNA tetramer suggests that Squ binding does not inhibit but may regulate Spn-E's interactions with Tej or RNA by stabilizing domain orientation, with ssRNA positioned near the helicase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C103 present an AlphaFold3-predicted tetramer model with mechanistic speculation (C103). While the RNA positioning is consistent with known helicase-RNA complexes (C100, C102), the regulatory mechanism proposed is speculative and lacks experimental validation. The model requires further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "AlphaFold2/3 predicted several trimeric complexes (Vas_Tej_Spn-E, BoYb_Vret_Shu, Me31B_Cup_Tral), but experimental evidence suggests Tej binds exclusively to either Vas or Spn-E, not simultaneously, indicating these trimers may be weak or transient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C104-C108 identify a discrepancy between computational predictions and experimental observations (C106). The speculation that trimers are weak/transient (C107, C108) is reasonable but unvalidated. This highlights a limitation of the prediction approach for higher-order complexes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "In Drosophila ovaries, Squ co-localizes with Spn-E in nuage and co-immunoprecipitates with Spn-E but not with PIWI family proteins (Piwi, Aub, AGO3), supporting direct Squ-Spn-E interaction in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 provide strong in vivo validation through antibody specificity (C109), co-localization (C110), and selective co-IP (C111, C113). The absence of PIWI proteins in Squ immunoprecipitates, despite their presence in Spn-E IPs (C112), supports direct rather than indirect interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "AlphaFold2 screening of interactions between three nuage proteins (Vas, Squ, Tej) and 430 oogenesis pathway proteins identified 18 pairs scoring >0.6. Three pairs (Mei-W68_Squ, CSN3_Squ, Pka-C1_Tej) were validated by co-immunoprecipitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C124 describe an expanded screening with a 17% validation rate (3/18). While the success rate is lower than the initial nuage screen, the validated interactions are biologically plausible given the proteins' known functions (C126, C127, C130, C131), supporting the utility of the approach for hypothesis generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The Mei-W68_Squ interaction was predicted with score 0.63, with Squ binding at \u03b1-helices overlapping the Spn-E interaction site. Given Mei-W68's role in meiotic double-strand break formation and Squ's role in DNA damage response, this interaction may regulate Mei-W68 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C128 present a validated interaction (C124) with structural prediction (C125) and functional context (C126, C127). However, the proposed regulatory mechanism (C128) is speculative without functional assays demonstrating effects on Mei-W68 enzymatic activity or double-strand break formation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "The low validation rate (3/18) for oogenesis protein interactions prompted assessment of binding affinity (Kd) from predicted structures. Most high-confidence predictions showed low Kd values, but some (e.g., Baf_Vas with score 0.85 but Kd 1.1E-4 M) showed weak affinity, consistent with failed co-IP validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C142 acknowledge the validation challenges (C134) and implement an additional computational filter (C137, C138). The Baf_Vas example (C139, C140) demonstrates that Kd prediction can identify false positives, though the accuracy limitations are appropriately noted (C141). This represents a reasonable secondary screening approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Genome-wide AlphaFold2 screening of ~12,000 Drosophila proteins for Piwi interactions identified 164 pairs (1.5%) scoring >0.6, with 98% of predictions below this threshold, indicating selective interaction potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C153 describe a comprehensive genome-wide screen with appropriate computational scope (C151) and clear results (C152, C153). The low percentage of high-confidence predictions (1.5%) is consistent with biological expectations for a specific protein like Piwi, supporting the specificity of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Among top Piwi-interacting candidates, Arx (Gtsf1) and three paralogs (CG34283, CG32625, CG14036) showed high ranking confidence (0.77-0.85), with predictions suggesting association with the PIWI domain. However, unlike arx, knockdown of expressed paralogs did not affect transposon repression, suggesting pseudogene status or redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C165 identify Arx as a high-confidence hit with known function (C156) and extend predictions to paralogs (C161). The functional testing (C164) appropriately distinguishes between computational prediction and biological significance, with the negative results (C165) properly interpreted as either pseudogenes or redundancy rather than false positives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "Hen1, a methyltransferase for piRNAs, was predicted to bind Piwi with high confidence (0.77), consistent with prior reports. The prediction suggests Hen1 recruitment to Piwi positions it closer to the piRNA substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C168 present a high-confidence prediction (C167) that validates against known biology (C166) and prior experimental data (C167). The mechanistic inference about substrate positioning (C168) is reasonable given the structural prediction, though direct experimental validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "CG33703 and three paralogs (CG33783, CG33647, CG33644) were predicted to bind Piwi (score 0.82) through their DUF1091 domain. These proteins are not expressed under normal conditions but may have regulatory roles under stress conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C169-C173 identify an uncharacterized protein family with high-confidence predictions (C170, C171). However, the lack of expression under normal conditions (C172) and the speculation about stress-induced function (C173) make this result uncertain without experimental validation under relevant conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Among oogenesis proteins tested for Piwi binding, Brainiac (Brn, score 0.63) showed significant binding by co-IP, while Twinfilin (Twf, score 0.64) showed no binding, demonstrating that ranking confidence alone does not guarantee interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C177 provide experimental validation showing that similar ranking confidence scores (0.63 vs 0.64) can yield different experimental outcomes (C175, C176). This appropriately demonstrates the limitations of the computational predictions and the necessity of experimental validation, consistent with the study's overall approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "The study acknowledges important limitations: AlphaFold2 does not account for conformational changes, ligands, or cofactors; high-scoring predictions do not guarantee biological significance; expression patterns and cellular context are crucial for validation; and in silico screening is particularly valuable for narrowing candidates when dealing with toxic proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C178-C184 provide appropriate caveats about the computational approach (C178, C179) and emphasize the importance of biological context (C180-C182). The acknowledgment of method limitations and the value proposition for specific use cases (C183) demonstrate scientific rigor and appropriate interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C22",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C114",
+      "C115",
+      "C116",
+      "C119"
+    ],
+    "result": "This study used AlphaFold2 to screen protein interactions among nuage components in Drosophila, experimentally validating novel interactions including Spn-E_Squ with interface mutagenesis, and expanding screening to oogenesis proteins and genome-wide Piwi interactions. The approach bridges bioinformatics predictions and experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C119 summarize the overall study approach and significance. The combination of computational prediction, experimental validation (C26, C27), and expanded screening (C28) demonstrates a systematic methodology. The claim about bridging bioinformatics and experimental biology (C29) is supported by the validation results throughout the study.",
+    "result_type": "MAJOR"
+  }
+]

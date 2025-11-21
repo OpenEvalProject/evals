@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The study recruited 16 participants (8 for TA, 8 for VL) who met specific inclusion criteria, received ethical approval from two institutions, and followed standardized experimental protocols including specific body positioning, MVC measurements, and randomized contraction sequences with controlled rest periods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C57-C62 provide comprehensive documentation of participant recruitment, ethical approval, inclusion criteria, and experimental protocols. The explicit descriptions of body positioning, MVC procedures, rest periods, and randomization demonstrate rigorous experimental design and appropriate ethical oversight.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "EMG signals were recorded using 256 surface electrodes per muscle with specified sampling frequencies and filtering parameters, then decomposed using a blind source-separation algorithm with automated and manual quality control procedures including duplicate detection and silhouette value thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C63-C70 provide detailed technical specifications for EMG recording and signal processing. The methods are well-documented with specific parameters, quality control steps, and validation procedures. The 30% threshold for duplicate detection is justified as conservative (C68), and manual editing is constrained by objective criteria (C70).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The EMG decomposition method was validated using both simulated signals (150 motor units) and two-source validation comparing intramuscular and surface recordings, with agreement rates calculated as the ratio of correctly identified to total discharge times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 describe two complementary validation approaches with explicit metrics. The simulation validation (C71-C72) and two-source validation (C73) provide independent verification of the decomposition accuracy. The validation metrics are clearly defined and appropriate for assessing method performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C6",
+      "C27"
+    ],
+    "result": "The study identified 42\u00b124 motor units per contraction for TA and 33\u00b115 for VL, totaling 129\u00b144 motor units per participant in TA and 130\u00b163 in VL, representing 69.3\u00b117.3% (TA) and 55.2\u00b119.5% (VL) of the EMG signal variance and approaching the estimated detectable motor unit populations of 200\u00b161 (TA) and 146\u00b129 (VL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C6, and C27 provide quantitative evidence that the study identified extensive samples of motor units. The proportion of EMG signal explained (C4) and comparison with previous estimates (C27) support the claim that most detectable motor units were identified. The data are internally consistent and well-documented with percentiles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C7"
+    ],
+    "result": "Motor units were tracked across contraction levels by projecting EMG signals onto separation vectors from lower force levels, achieving 67.1\u00b110.0% (TA) and 57.2\u00b15.1% (VL) tracking success between consecutive forces, with 92.1% (TA) and 87.0% (VL) of motor units confirmed as unique based on RMSE analysis, after excluding 34 (TA) and 28 (VL) outliers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C74-C77, and C7 describe a novel tracking methodology with quantitative success rates and quality control. The RMSE-based uniqueness validation (C7) provides objective evidence that tracked motor units represent distinct entities. The exclusion of outliers (C76-C77) demonstrates appropriate quality control, though the moderate tracking success rates (C5) indicate some limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C87"
+    ],
+    "result": "The experimental protocol used slow ramp contractions (5% MVC/s) with force plateaus of varying durations across 10-80% MVC in randomized order. Rate coding was characterized as the firing rate-force relationship, assuming linear force increases reflect proportional synaptic input increases, with deviations indicating neuromodulatory influences. Model selection used BIC, and motor units were grouped into low-, medium-, and high-threshold categories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23-C25, C78-C83, and C87 describe the experimental design and analytical framework. While the methods are clearly documented, the critical assumption that linear force increases reflect proportional synaptic inputs (C78) is based on cited literature rather than direct measurement. This assumption is fundamental to interpreting all rate coding results but cannot be verified in this study. The BIC-based model selection (C80-C81) is appropriate, but the choice of three threshold groups with equal ranges (C83) is somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Approximately 70% of motor units in both muscles exhibited input-output functions best fitted by natural logarithm functions comprising two stages: an initial steep acceleration of firing rate (greater for low-threshold units) followed by a linear increase (greater for high-threshold units).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C88-C90 present the primary finding on rate coding patterns. The percentages (C8) and differential patterns across threshold groups (C89-C90) are supported by statistical comparisons and model selection criteria. The two-stage characterization is consistent with cited animal literature and represents a major finding about human motor control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C82"
+    ],
+    "result": "The initial acceleration of firing rate, calculated as the first derivative of the logarithmic fit at recruitment threshold, was significantly greater for low-threshold motor units in both muscles (TA: 1.0\u00b10.7 pps\u00b2 vs 0.6\u00b10.3 pps\u00b2 for medium-threshold; VL: 0.6\u00b10.6 pps\u00b2 vs 0.4\u00b10.2 pps\u00b2 for medium- and high-threshold units).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C10, and C82 provide quantitative evidence with statistical significance for differential initial acceleration across motor unit types. The calculation method is clearly defined (C82), and the statistical comparisons include p-values. The findings are consistent across both muscles, though with different patterns, supporting the robustness of the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The rate of increase in firing rate during the linear phase was significantly greater for TA (3.5\u00b11.7 pps) than VL (2.0\u00b11.1 pps), with most motor units (92.0% TA, 80.9% VL) increasing firing rates by more than 1 pps between contractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C12 demonstrate significant muscle-specific differences in rate coding with clear statistical support (p<0.001). The high percentages of motor units showing substantial rate increases (C12) indicate this is a general phenomenon rather than limited to specific motor unit types. The findings reveal important differences between proximal and distal muscles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C91",
+      "C92"
+    ],
+    "result": "Hysteresis analysis revealed that only medium-threshold motor units exhibited significant positive hysteresis in both muscles (TA: -3.8\u00b17.2 pps, p=0.013; VL: -3.1\u00b16.0 pps, p=0.026), while high-threshold VL units showed negative hysteresis (+3.2\u00b16.7 pps, p=0.039). Most motor units maintained the same firing rate-force relationship type during ramp-up and ramp-down phases (TA: 60.2%; VL: 76.7%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C15, C91-C92 provide statistical evidence for threshold-dependent hysteresis patterns. The p-values indicate statistical significance for medium-threshold units in both muscles and high-threshold VL units. The consistency of fit types between phases (C15) supports the non-linear characterization. However, the large standard deviations relative to means suggest substantial variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The initial acceleration stage reflects amplification of synaptic inputs through persistent inward currents via voltage-gated channels, with greater influence on low-threshold units due to larger current-to-conductance ratios. Increased recurrent and reciprocal inhibition during force increases likely blunts this effect for late-recruited units and linearizes their firing rate-force relations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C28-C31 provide mechanistic interpretations based on cited literature. While the proposed mechanisms are well-supported by animal studies, they represent inferences rather than direct measurements in this study. The use of speculative language ('presumably' in C29, 'probably' in C30, 'should' in C31) appropriately indicates uncertainty. These interpretations are plausible but require direct experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The second stage of rate coding corresponds to 'rate limiting' or 'saturation' mechanisms, more pronounced in low- than high-threshold motor units, potentially explained by smaller excitatory inputs, lower synaptic driving potential, and longer afterhyperpolarization in low-threshold motoneurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C32 and C33 interpret the linear increase phase using established terminology and cite multiple mechanistic explanations from literature. While the differential rate limiting between motor unit types is supported by the data (Figures 2-3), the specific mechanisms (C33) are inferred from animal studies rather than directly measured. The interpretation is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C93",
+      "C97"
+    ],
+    "result": "Motor unit size determines recruitment threshold while neuromodulatory inputs determine gain, creating a spectrum of firing rate variations without differentiating ionotropic inputs to each motoneuron. This allows high-threshold units to potentially reach similar or greater firing rates than low-threshold units during strong contractions, challenging the onion skin principle and the assumption of uniform rate coding across motor unit pools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37, C93, and C97 synthesize the findings into a conceptual framework. The data on differential gain across motor unit types (Figures 2-3) support the gain control mechanism (C34-C35). The potential for firing rate convergence (C36) is supported by cited literature and the observed gain differences. The challenge to the onion skin principle (C37) and uniform rate coding assumption (C97) is justified by the data showing diverse rate coding patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Hysteresis results from membrane bistability mediated by calcium channel inward currents. The absence of significant hysteresis in low-threshold units may reflect their early recruitment mathematically limiting hysteresis amplitude or prominent outward currents attenuating persistent inward current effects. Absence or negative hysteresis in high-threshold units may result from briefer bistability due to faster calcium current decay and narrower activation ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C40-C43 provide mechanistic interpretations of hysteresis patterns. While C40 cites established mechanisms, C41-C43 offer speculative explanations ('may be explained,' 'alternatively') for the observed patterns. The proposed mechanisms are plausible and consistent with cited literature, but represent inferences rather than direct measurements. The mathematical argument in C41 is logical but not rigorously demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Differences in rate coding between TA and VL may reflect varying balances of excitatory/inhibitory inputs and neuromodulation, with VL potentially receiving more recurrent inhibition than distal muscles, though direct human evidence is lacking. Similar proximal-distal differences were observed in upper limb muscles, while facial muscles show distinct rate coding with much higher firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C48 interpret muscle-specific differences through cited mechanisms. While the observed differences between TA and VL are well-documented (C11), the mechanistic explanations (C44-C45) are speculative. C46 explicitly acknowledges the lack of direct human evidence. The comparative observations (C47-C48) provide context but don't validate the proposed mechanisms for the current findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The observed rate coding patterns facilitate force control by filtering synaptic noise through population activity and enabling low-threshold units to discharge at rates (>8 pps) that transmit common inputs (<8-10 Hz) without phase distortion. Initial firing rate amplification favors rate coding over recruitment for smoother control, while progressive recruitment of higher-gain units promotes accuracy across force ranges and may compensate for muscle-tendon compliance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C56 provide functional interpretations of the rate coding patterns. While the cited framework (C49-C52) is established, the specific functional advantages proposed (C53-C56) are inferences from the data rather than direct measurements of force control. The use of speculative language ('likely' in C54, 'may' in C56) appropriately indicates uncertainty. These interpretations are plausible but require experimental validation of force control performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The study builds on established knowledge that motor units comprise motoneurons and innervated muscle fibers, with force controlled through recruitment (following the size principle) and rate coding. Animal studies demonstrated two-stage rate coding (amplification and rate limiting) due to metabotropic modulation of ionotropic inputs, with similar but limited observations in humans over narrow force ranges. TA and VL receive substantial common input constraining fixed recruitment order.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C22 establish the scientific context through cited literature. These are well-established principles in motor control (C16-C18) and documented findings from animal (C19-C20) and human studies (C21). The characterization of TA and VL as receiving common input (C22) is supported by cited studies and justifies the muscle selection. This provides appropriate background for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Rate coding patterns should vary with contraction patterns, with fast contractions lowering recruitment threshold ranges. The observed variability in rate coding could lead to small deviations from the size principle during isometric contractions with various force patterns or during derecruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38 and C39 extrapolate from the findings to predict behavior under different conditions. While C38 cites literature on fast contractions, the current study only examined slow ramps (5% MVC/s). C39 makes a logical inference about size principle deviations based on rate coding variability, but this was not directly tested. These predictions require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Statistical analyses used linear mixed effect models with the Kenward-Roger method, with significance set at 0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84 and C85 describe appropriate statistical methods for the hierarchical data structure (motor units nested within participants). The Kenward-Roger method is suitable for estimating degrees of freedom in mixed models. The significance threshold is standard. The methods are clearly documented and appropriate for the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C95",
+      "C96"
+    ],
+    "result": "This study provides the most comprehensive framework to date of motor unit activity during isometric contractions, being the first to identify >100 motor units spanning most recruitment thresholds from the same individual in animals or humans, identifying most active motor units in the recorded volume.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86, C95, and C96 assert the novelty and comprehensiveness of the dataset. The claim of >100 motor units per participant (C95) is supported by C6 (129\u00b144 for TA, 130\u00b163 for VL). Comparison with previous estimates (C27) and signal reconstruction percentages (C4) support the claim of identifying most active motor units (C96). The assertion of being most comprehensive (C86) is justified by the scope relative to cited prior work (C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C94"
+    ],
+    "result": "These findings indicate how motor unit pools use gain control to transform inputs with limited bandwidths into intended muscle force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C94 synthesizes the findings into a functional framework. The demonstration of differential gain across motor unit types (C9-C12) and the relationship to force bandwidth (C50-C51) support this interpretation. However, this represents an inference about neural control strategy rather than a directly measured mechanism. The interpretation is well-supported by the data and cited framework but remains somewhat speculative regarding the nervous system's 'intent.'",
+    "result_type": "MAJOR"
+  }
+]

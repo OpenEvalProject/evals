@@ -1,0 +1,118 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "The authors constructed a circuit model by inserting two virtual nodes (VNs) between each pair of cells connected by gap junctions, setting all edges to identical length, and representing the system as a tight-binding Anderson Hamiltonian (3335\u00d73335 matrix). This model excludes spontaneous signal attenuation and maintains energy conservation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Multiple reviewers fundamentally challenged the methodological approach. One reviewer stated the authors 'give little to no motivation' for adding virtual nodes and questioned 'it is possible that the wavenumber-dependent transmission observed depends strongly on the addition of a large number of virtual nodes.' Another reviewer explicitly asked 'Why?' regarding the use of quantum formalism instead of resistor-based representation, and in revised comments noted 'the authors have not tested this direction.' The editor summarized 'altering the original network structure of the connectome without a clear justification.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C27"
+    ],
+    "result": "The model demonstrates wavenumber-dependent transmission where transmission coefficients vary across cell-pairs, with strong transmissions primarily in body-wall muscles at low E values (E=0.225), complete isolation at high E values (E=5.650), and a threshold wavenumber beyond which all transmission disappears. This creates a 'Wavenumber-Dependent Transmission Map (WDTM).'",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the numerical results exist, they fundamentally question their validity and interpretation. One reviewer stated 'the strength of the evidence presented in favor of interference effects being a major component in subthreshold wave dynamics is inadequate.' Another noted 'the presence of two mobility edges in the transmission coefficient calculated in this work is unmistakably due to the discrete nature of the system, coming from the tight-binding approximation, and it is unclear to me if this approximation is justified.' The findings are treated as artifacts of questionable methodology rather than validated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C41",
+      "C42",
+      "C44"
+    ],
+    "result": "The model identifies long-distance, regular patterned transmission in body-wall muscles, particularly in intra-strand connections from neck to tail. The head mesodermal cell (hmc) acts as a bridge between inter-strand muscle pairs. The simple linear connectivity of muscle strands reduces transmissible paths, suppressing destructive interference and enabling strong transmission across various wavenumbers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not directly validate these specific anatomical findings but express fundamental concerns about the model's biological relevance. One reviewer noted 'the implications of this work for C elegans neuroscience remain unclear' and 'the preprint falls short of relating its numerical results to any phenomena which could be observed in the lab.' The editor emphasized 'providing little motivation for the choice of numerical parameters values that were used.' The findings are computational observations whose biological significance remains unestablished.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C45",
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "Major hub cell-pairs were identified based on appearance rate \u22650.1 across wavenumber conditions, primarily consisting of intra-strand body-wall muscle pairs, hmc connections to ventral-left neck muscles, and specific sensory neurons (PVDL/PVDR) with organ cells (CANL/CANR/exc_cell). Strong anatomical edges were necessary but not sufficient for hub status.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not specifically address the hub cell-pair findings but question the overall framework's validity. One reviewer stated the work 'would only have a very limited impact on the understanding of subthreshold oscillations in the rat or in C elegans' and noted the authors 'should make an attempt at estimating the wavenumber of subthreshold oscillations in C elegans if they were to exist and be observed.' The hub identification is a computational result whose biological meaning is unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Effective conductance analysis shows interneurons and organ cells have high conductance due to complex parallel connections, while body-wall muscles show low conductance. However, when considering wave interference, complex connections cause destructive interference. Wave signals transmit effectively only in strongly connected small groups (PVDL/R, CANL/R, exc_cell, hmc) or regularly connected large groups (body-wall muscle strands).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers question the fundamental distinction between the authors' interference-based approach and traditional conductance models. One reviewer explicitly asked 'Instead of representing electrical coupling via resistors that connect neurons, the authors use a quantum formalism and introduce the tight-binding Anderson Hamiltonian. Why?' and later noted 'I recommended that the authors should represent electrical coupling via resistors that connect neurons instead of via the quantum formalism. The authors have not tested this direction.' This suggests the comparison between effective conductance and interference-based transmission lacks validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C16",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors acknowledge no subthreshold oscillations have been observed in C. elegans, but speculate their model suggests mechanisms for synchronized rhythmic activity in mammalian inferior olive nucleus, proposing that constructive interference of subthreshold waves with specific wavenumbers may generate synchronization in networks with strong or regular connections.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenge these speculative connections. One reviewer stated 'The authors should also give more evidence for the claim that their study may give a mechanism for synchronized rhythmic activity in the mammalian inferior olive nucleus, or refrain from making this conclusion.' Another noted 'the implications of this work for C elegans neuroscience remain unclear' and questioned why the authors 'chose to use the C elegans connectome for their study' when motivated by inferior olive questions. A third reviewer emphasized 'No subthreshold oscillations were identified in the C-elegans' as a fundamental weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The authors apply the general principle that complex neuronal connections increase transmissible wave propagation paths, and phase changes from path-length differences cause destructive interference.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While this is a general physics principle, reviewers question its application in this biological context. One reviewer noted 'it is unclear to me if this approximation is justified in the current system' regarding the tight-binding approximation that underlies this interference interpretation. The principle itself is not disputed, but its relevance to the biological system remains unvalidated.",
+    "result_type": "MINOR"
+  }
+]

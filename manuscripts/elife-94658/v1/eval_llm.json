@@ -1,0 +1,175 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "TCR\u03b2 sequencing of 28 CRC patients yielded an average of 2,992,949 productive TCR reads per sample, identifying 433 to 27,749 clonotypes per patient. The CDR3 length distribution was normally distributed (median 14, range 4-43), and an inverse relationship was observed between TCR clone number and Shannon index. After filtering, 74,590 TCR clones were obtained, with 95.1% being unique to individual patients and 4.9% shared across patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C22, C25-C27 provide comprehensive sequencing metrics and characterization of TCR repertoires. The data are internally consistent, include appropriate quality control measures (UMI-based filtering, duplicate removal), and report specific quantitative values with referenced figures. The normal distribution of CDR3 length and inverse relationship between clones and Shannon index align with prior literature (C20, C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C18",
+      "C26",
+      "C27"
+    ],
+    "result": "Both intra-tumor and inter-patient heterogeneity in TCR\u03b2 repertoires were observed in CRC patients, with variable clonotype numbers (433-27,749) across patients and 95.1% of clonotypes being patient-specific. This heterogeneity is attributed to stochastic utilization of V and J segments in response to neoantigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2 and C18 demonstrate heterogeneity with quantitative data (C26, C27). However, C3's mechanistic attribution to 'stochastic utilization of V and J segments in response to neoantigens' is speculative and not directly tested. The observed V/J segment diversity could result from multiple factors beyond neoantigen response, and no direct evidence links the observed patterns specifically to neoantigen recognition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C53",
+      "C54"
+    ],
+    "result": "MSI-H tumors displayed significantly lower TCR\u03b2 clonotype numbers compared to MSS tumors (2181 vs 5330, p=0.057), despite being neoantigen-rich. This lower diversity is interpreted as potential enrichment of neoantigen-reactive TCR clonotypes in MSI-H patients. No significant correlations were found between TCR clonality/diversity and other clinical variables (tumor staging, gender, location).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C24 reports a p-value of 0.057, which does not meet conventional statistical significance (p<0.05), yet the text describes this as 'significantly lower.' This is a mischaracterization of statistical significance. Claims C53-C54 are speculative interpretations without direct experimental validation. The hypothesis that lower diversity indicates enrichment of neoantigen-reactive clones requires functional validation (e.g., neoantigen-specific TCR identification).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Analysis of public databases revealed that immunogenic peptides exhibited significantly higher prevalence of strong HLA binding (percentile rank <2%, p<0.00001, PPV=68.5%) and pHLA-TCR binding (percentile rank <2%, p=0.086, PPV=64.3%) compared to non-immunogenic peptides. Combining both criteria increased PPV to 76.9%. pHLA-TCR binding showed lower sensitivity but higher specificity than pHLA binding alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 present a systematic comparison of binding features between immunogenic and non-immunogenic peptides from public databases. The statistical tests are appropriate (chi-square), p-values are reported, and the complementary nature of the two features (C33) is demonstrated with specificity/sensitivity trade-offs. The improved PPV when combining features (C32) provides rationale for the combined approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A combined machine learning model integrating pHLA and pHLA-TCR binding features was developed using XGB algorithm, achieving AUC values of 0.82 (discovery) and 0.84 (validation). At >95% specificity, the combined model achieved sensitivity of 39.7%, NPV of 87.7%, and PPV of 65.9%, outperforming single-feature methods. The combined model attained a ranking coverage score of 0.37 in validation, superior to pHLA (-0.26) and pHLA-TCR (0.25) alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C44 provide comprehensive performance metrics with confidence intervals for the combined model across discovery and validation cohorts. The 70/30 train-test split with 10-fold cross-validation is appropriate. Performance improvements are consistent across multiple metrics (AUC, sensitivity, NPV, PPV, ranking coverage). The high specificity thresholds (>95%, >99%) address the stated goal of reducing false positives in neoantigen prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Experimental validation using ELISpot assays on 44 long peptides from 8 CRC patients confirmed 3 immunogenic peptides identified by NetMHCpan and 7 by the combined method. Six patients had at least one immunogenic peptide identified by the combined method, while five patients had no validated peptides from NetMHCpan. The combined method achieved a ranking coverage score of 0.04 versus -0.37 for NetMHCpan, and outperformed NetTCR in independent validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5, C45-C51 provide experimental validation of the computational predictions. The ELISpot assay with >2-fold cutoff (C59-C60) is an established method. The combined model identified more immunogenic peptides (7 vs 3) and performed better in ranking (0.04 vs -0.37). However, the validation is limited to 8 patients due to sample availability, and the abstract states 'four CRC patients' while the results describe eight patients, creating an inconsistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Four neoantigen candidates with confirmed immunogenicity identified by the combined approach have not been previously reported in public neoantigen databases, representing potential novel therapeutic targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 reports database searches confirming novelty of four validated neoantigens. This is a straightforward data-driven claim supported by database queries. The identification of novel neoantigens demonstrates the practical utility of the combined approach beyond simply improving prediction accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Integrating pHLA binding prediction with pHLA-TIL TCR binding assessment enhances the accuracy of neoantigen selection and prioritization. Current bioinformatic workflows do not incorporate TCR sequencing data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is supported by the comprehensive experimental and computational results showing improved performance of the combined model (C4, C34-C44, C45-C50). Claim C56 is a knowledge claim about the field that is reasonable given the literature context. Together, these claims establish the rationale and contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establish that immunotherapy has improved survival in metastatic CRC (C6), ICIs are FDA-approved for dMMR/MSI-H patients (C7) but not effective in pMMR/MSS patients (C8), neoantigens are associated with better ICI response (C9-C11), current approaches are limited by relying solely on pHLA binding (C12-C13), and TCR recognition is critical for T cell activation (C14-C16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C16 are background/context claims supported by appropriate citations to established literature. These claims accurately represent the current state of knowledge in the field and provide rationale for the study. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Twenty-eight CRC patients were enrolled at University Medical Center Ho Chi Minh City (June 2022-May 2023) with ethical approval. Immunogenic neoantigens were defined as mutant long peptides producing >2-fold increase in IFN\u03b3 spots compared to wild-type in ELISpot assays, based on established criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 describe study enrollment, ethical approval, and experimental criteria. These are straightforward methodological claims. The 2-fold cutoff for ELISpot positivity (C60) is supported by citation to Moodie et al., 2010, providing established precedent for this threshold.",
+    "result_type": "MINOR"
+  }
+]

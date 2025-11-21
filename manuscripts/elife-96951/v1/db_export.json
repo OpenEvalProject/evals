@@ -1,0 +1,2419 @@
+{
+  "submission": {
+    "id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:28:47.409266Z",
+    "updated_at": "2025-11-21T21:28:47.409266Z"
+  },
+  "content": [
+    {
+      "id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "content_type": "manuscript",
+      "content_text": "# Increased inflammatory signature in myeloid cells of non-small cell lung cancer patients with high clonal hematopoiesis burden\n\n## Authors\n\n- Hyungtai Sim<sup>1</sup> ([ORCID: 0000-0002-3719-4190](https://orcid.org/0000-0002-3719-4190))\n- Hyun Jung Park<sup>2</sup>\n- Geun-Ho Park<sup>4</sup>\n- Yeon Jeong Kim<sup>2</sup>\n- Woong-Yang Park<sup>2</sup>\n- Se-Hoon Lee<sup>4</sup> \u2020\n- Murim Choi<sup>1</sup> ([ORCID: 0000-0002-9195-1455](https://orcid.org/0000-0002-9195-1455)) \u2020\n\n### Affiliations\n\n1. Department of Biomedical Sciences, Seoul National University College of Medicine Seoul Republic of Korea ([ROR:0331rkj73](https://ror.org/0331rkj73))\n2. Samsung Genome Institute, Samsung Medical Center Seoul Republic of Korea ([ROR:05a15z872](https://ror.org/05a15z872))\n3. Research Institute for Veterinary Science, College of Veterinary Medicine, Seoul National University Seoul Republic of Korea ([ROR:04h9pn542](https://ror.org/04h9pn542))\n4. Samsung Genome Institute, Division of Hematology-Oncology, Department of Medicine, Samsung Medical Center, Sungkyunkwan University School of Medicine Seoul Republic of Korea ([ROR:04q78tk20](https://ror.org/04q78tk20))\n5. Department of Health Sciences and Technology, Samsung Advanced Institute for Health Science & Technology (SAIHST), Sungkyunkwan University Seoul Republic of Korea ([ROR:0331rkj73](https://ror.org/0331rkj73))\n\n\u2020 Corresponding author\n\n## Abstract\n\nClonal hematopoiesis of indeterminate potential (CHIP) allows estimation of clonal dynamics and documentation of somatic mutations in the hematopoietic system. Recent studies utilizing large cohorts of the general population and patients have revealed significant associations of CHIP burden with age and disease status, including in cancer and chronic diseases. An increasing number of cancer patients are treated with immune checkpoint inhibitors (ICIs), but the association of ICI response in non-small cell lung cancer (NSCLC) patients with CHIP burden remains to be determined. We collected blood samples from 100 metastatic NSCLC patients before and after ICI for high-depth sequencing of the CHIP panel and 63 samples for blood single-cell RNA sequencing. Whole exome sequencing was performed in an independent replication cohort of 180 patients. The impact of CHIP status on the immunotherapy response was not significant. However, metastatic lung cancer patients showed higher CHIP prevalence (44/100 for patients vs. 5/42 for controls; p = 0.01). In addition, lung squamous cell carcinoma (LUSC) patients showed increased burden of larger clones compared to lung adenocarcinoma (LUAD) patients (8/43 for LUSC vs. 2/50 for LUAD; p = 0.04). Furthermore, single-cell RNA-seq analysis of the matched patients showed significant enrichment of inflammatory pathways mediated by NF-\u03baB in myeloid clusters of the severe CHIP group. Our findings suggest minimal involvement of CHIP mutation and clonal dynamics during immunotherapy but a possible role of CHIP as an indicator of immunologic response in NSCLC patients.\n\n## Introduction\n\nRecent studies have revealed that somatic mutations detected in hematopoietic malignancies are also commonly observed with clonal expansion in the individuals with no hematological conditions (Jaiswal et al., 2014). Among such individuals, asymptomatic cases with a variant allele frequency (VAF) of \u22652% are defined as clonal hematopoiesis of indeterminate potential (CHIP) (Jaiswal and Ebert, 2019). In general, CHIP is strongly associated with aging; and mutagenic anticancer therapies and smoking can also induce clonal expansion in specific genes (Jaiswal et al., 2014; Hsu et al., 2018). Longitudinal monitoring of CHIP mutations offers important clues into the clonal dynamics of blood (Uddin et al., 2022).\n\nHematopoietic stem and progenitor cells (HSPCs) carrying CHIP mutations serve as a major source of expanded clones, and even a few cells are sufficient to influence clonal homeostasis (Welch et al., 2012). Representative CHIP mutation-carrying genes, such as DNMT3A, ASXL1, and TET2, impact the myeloid population, including monocytes and granulocytes, and have been linked to hematologic malignancies such as myelodysplastic syndrome and acute myeloid leukemia through inflammation mediated by the NF-\u03baB and NLRP3 inflammasome (Muto et al., 2020; Cai et al., 2018; Abplanalp et al., 2021). The prevalence of clonal hematopoiesis (CH) in cancer patients is also significantly higher than that in healthy populations, and high CH burden has been implicated in a negative effect on overall survival in multiple cancer types (Coombs et al., 2017; Bolton et al., 2020). CHIP is also associated with diseases beyond hematologic malignancies, such as atherosclerosis, type 2 diabetes, and chronic obstructive pulmonary disease (Miller et al., 2022; Tobias et al., 2023; Jaiswal et al., 2017). Multiple studies, including both population and pan-cancer cohorts, have explored the correlation of CHIP with solid tumors (Coombs et al., 2017; Bolton et al., 2020; Xie et al., 2014; Stacey et al., 2023). However, establishing a causal relationship has proven challenging due to confounding factors such as history of smoking and anticancer therapy, both of which act as risk factors for CHIP (Bolton et al., 2020).\n\nNon-small cell lung cancer (NSCLC) stands out globally as the solid tumor with the highest mortality burden (Leiter et al., 2023). The difficulty in early detection of NSCLC significantly contributes to its mortality rate being high compared to its incidence rate. Recent studies examining CHIP within lung cancer cohorts and general population indicate a possible association of lung cancer risk with CH (Stacey et al., 2023; Hong et al., 2022; Tian et al., 2023). As mentioned above, factors such as a patient\u2019s history of anticancer treatments and smoking serve as common risk factors for CH; however, the interplay between lung cancer and CHIP is not yet fully understood. Immune checkpoint inhibitors (ICIs) targeting PD-(L)1 and CTLA-4 have revolutionized treatment of advanced NSCLC, both as monotherapies and in combination with chemotherapy (Reck et al., 2021). However, response rates to ICI treatments remain relatively low. The predictive ability of markers like PD-1 expression and tumor mutational burden is insufficient, requiring the identification of additional markers.\n\nRecent studies suggest a marginal effect of ICI on the clonal dynamics of CHIP (Miller et al., 2021; Miller et al., 2020), but the current understanding of the role of CHIP in ICI-treated patients is not comprehensive. Also, only limited analysis has been performed concerning the impact of CHIP on cancer patients\u2019 blood. To understand the interplay between ICI and CHIP in NSCLC patients, we conducted CHIP-targeted panel sequencing and single-cell RNA sequencing (scRNA-seq) on blood samples collected before and 1\u20133 weeks after ICI administration. Our results indicate a marginal interaction between ICI and CHIP, but also validate that high CHIP burden manifests an inflammatory phenotype in metastatic NSCLC patients\u2019 myeloid cells.\n\n## Results\n\n### CHIP profiles in metastatic NSCLC patients treated with ICI\n\nTo investigate the interplay between ICI treatment and CHIP in NSCLC, we collected blood samples before and after ICI treatment from 100 metastatic NSCLC patients (Figure 1, Supplementary file 1a). These samples were utilized for a CHIP-targeted sequencing panel (median depth ~600\u00d7) and scRNA-seq (Figure 1A and Methods). At the baseline, we identified 67 CHIP mutations in 100 patients, 26 of them in known putative driver genes of hematopoietic cancer (CHIP-PD). After treatment, 68 CHIP and 32 CHIP-PD mutations were found in 91 patients who passed quality control assessment (Figure 1A, Figure 1\u2014figure supplements 1\u20133, and Supplementary file 1c).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overall study design. The numbers indicate sample counts in each group. (B) Frequency of CH variant detection in each gene in NSCLC samples before (light blue) and after (blue) ICI treatment. (C) Comparison of variant allele frequency before and after ICI treatment, divided by pathology type (lung adenocarcinoma [LUAD], lung squamous cell carcinoma [LUSC], other). (D) Effect of ICI treatment on the clonal landscape of all genes (left) and frequently detected CH genes.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** We collected numbers indicate count of variants after each variant filtering scheme (all samples/excluding controls).\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Variant depth distributions from raw calls and putative clonal hematopoiesis of indeterminate potential (CHIP) variants. (B) Distribution of variant annotation from each variant filtering step.\n\n![Figure 1\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig1-figsupp3-v1.jpg)\n\n**Figure 1\u2014figure supplement 3.:** (A) Gene distribution in before and after immune checkpoint inhibitor (ICI) treatment. Color indicates variant annotation. (B) Waterfall plot showing CHIP mutations from baseline, cohort samples.\n\nAmong the CHIP genes, DNMT3A, PPM1D, and TET2 were the most frequently mutated (Figure 1B). PPM1D truncating mutations were also common, and have previously demonstrated association with patients\u2019 smoking habits and possible history with chemotherapy (Hsu et al., 2018; Coombs et al., 2017). Variants involving the DNMT3A p.Arg882 residue and TP53, which are frequent in CHIP, were not prevalent in our dataset, although our panel extensively covered these regions and these loci were manually inspected (data not shown).\n\nOverall, we observed ICI treatment to effect minimal changes in CHIP burden (Figure 1B). Also, VAF was highly correlated across all traced mutations and not dependent on clinical responses (Figure 1C, D). However, we noted increased number of CHIP mutations with VAF >10% in patients with lung squamous cell carcinoma (LUSC). While the specific mutated genes differed between patients with different histology or responses, mutated gene burden did not significantly differ between groups.\n\n### Prevalence of high CHIP burden showed bias to LUSC patients\n\nNext, we investigated the association of CHIP status with clinical parameters in the cohort (Figure 2). CHIP prevalence was significantly higher in the lung cancer cohort compared to the control group (controls 5/42 vs. patients 44/100, age-adjusted logistic regression p = 0.01; Figure 2A, Supplementary file 1a and b). However, the number of CHIP-positive patients did not differ before and after ICI treatment, nor in relation to treatment response (Figure 2B, C). As previously reported, CHIP burden is heavily dependent on age (Figure 2D). Smoking history may also impact CHIP prevalence, but we could not find a significant contribution of smoking, as almost all NSCLC patients in our study have a smoking history (CHIP prevalence of non-smoker 2/9 vs. smoker 42/91; Figure 2\u2014figure supplement 1).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig2-v1.jpg)\n\n**Figure 2.:** (A\u2013D) Discovery cohort (n = 100), (E\u2013G) replication cohort (n = 180; see Methods for description). (A, E) CH prevalence by pathology (lung squamous cell carcinoma [LUSC] and lung adenocarcinoma [LUAD]). (B) Effect of immune checkpoint inhibitor (ICI) treatment on CH. (C, F) Effect of post-ICI prognosis to ICI on CH. (D, G) Age distribution of the cohort, stratified by clonal hematopoiesis of indeterminate potential (CHIP) allele frequency and pathology status.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** CHIP status was displayed using (A) binned variant allele frequency (VAF) and (B) variant count per patient. Colors indicate binned VAF and variants count.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** CHIP variant counts and major clinical parameters were presented. Color indicates the binned number of CHIP variants.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Variant depth distribution from raw and CHIP variant. Colored bar indicates variants cutoff, with depth = 40. (B) Distribution of variant annotation from each variant filtering step. (C) All genes from CHIP variants. Colors denote variant annotation.\n\nSubsequently, we examined clonal size in the cohort, as that has been reported as a risk factor of clinical outcome (Kessler et al., 2022). Taking CHIP VAF as an indicator of clonal size, we observed that high CHIP burden was prevalent in LUSC, while multiple concurrent CHIP mutations were common in lung adenocarcinoma (LUAD) patients (Figure 2C and Figure 2\u2014figure supplement 2). To determine if this finding would reproduce in an independent cohort, we performed CHIP mutation calling using whole exome sequencing (WES) data of median ~80\u00d7 depth from 180 additional peripheral blood mononuclear cell (PBMC) samples from an independent cohort of NSCLC patients (Figure 2C\u2013E, Figure 2\u2014figure supplement 3, Supplementary file 1a, c, d and Methods). The results showed similar patterns between the two cohorts, but the replication cohort alone was not powerful enough to achieve significance for difference in clonal sizes based on pathology (Figure 2E\u2013G).\n\n### High CHIP burden causes single-cell transcriptomic changes\n\nNext, to test whether the presence of CHIP and ICI prognosis affects blood cell transcriptomes, we analyzed PBMC scRNA-seq data from 63 samples of the discovery cohort. After quality control processes, we retrieved 468,596 cells in a total of 26 clusters defined by systemic integration and clustering using the Louvain algorithm, then validated using Azimuth (Figure 3A, Figure 3\u2014figure supplement 1A, B, Supplementary file 1e, and Methods) (Hao et al., 2021). Cell composition analysis showed an increased proportion of natural killer (NK) cells and a decreased CD4 TEM population after ICI administration, but high variability between samples precluded systematic differences by CHIP status (Figure 3\u2014figure supplement 1C). Subsequently, differentially expressed genes (DEG) analysis using Wilcoxon\u2019s rank-sum test according to CHIP VAF bins in each cluster (see Methods) highlighted genes important in immune response and transcriptional activation (Figure 3C, Figure 3\u2014figure supplement 2, Supplementary file 1f). To further implicate these DEGs functionally, a gene set enrichment test was performed using the area under the curve (AUC) statistics from DEGs and the hallmark pathway gene sets in msigDB (Liberzon et al., 2015). The results indicated activation of the tumor necrosis factor (TNF) signaling pathway via NFKB in the high CH burden group for most cell lineages, including both classical dendritic cells (DCs) and NK cells (Figure 3D, E, Figure 3\u2014figure supplement 3, and Supplementary file 1g; see Methods). To understand possible interactions between ICI treatment response and CHIP burden, we grouped samples by CHIP burden and ICI response (Figure 3\u2014figure supplement 4). However, the interactions mostly depended on CH status only, and not on response to ICI.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-v1.jpg)\n\n**Figure 3.:** (A) Uniform manifold approximation and projection (UMAP) plot of scRNA-seq data from the discovery cohort (n = 63). (B) Effect of pathology (left) and variant allele frequency (VAF) (right) on cell composition. (C) Expression of selected genes in the NF-\u0138B pathway from the scRNA-seq data. (D) Gene set enrichment analysis (GSEA) of DEGs from myeloid populations. Color represents normalized effect score (NES), and dot size represents adjusted p-values. (E) and (F) GSEA plots of selected pathways from (C).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) UMAP plot of scRNA-seq data, with CH variant allele frequency (VAF) bins. (B) Cell-type-specific marker gene expression from each cluster. (C) Cell composition plot from each sample.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp2-v1.jpg)\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Color represents normalized effect score (NES), and dot size represents adjusted p-values.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** (A) Results of GSEA analysis in response to ICI and CHIP VAF bins, from before treatment samples. Color represents normalized effect score (NES), and dot size represents adjusted p-values. (B) Representative gene expression is displayed using same panels as Figure 3B. Colors indicate groups based on CHIP VAF bin and ICI response status.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** (A) WGCNA dendrogram, derived from myeloid gene expressions. (B) Cluster-wise \u2018black\u2019 module score distribution. (C) Gene ontology (GO) enrichment analysis of the black module genes. The colored bar indicates inflammatory pathway-related GO terms with significant enrichment. (D) Gene set enrichment analysis (GSEA) of black module genes. Colored dots indicate significant gene set enrichment.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** (A) Clustered, representative GRNs from scRNA-seq dataset. 1500 cells from each variant allele frequency (VAF) bin were presented for this visualization. Color represents GRN AUC scores. (B) Aggregated GRN scores from cluster and VAF bins. (C) NFKB1 and ATF3 regulon scores in major cell clusters, stratified by VAF bins. (D) UMAP plot for clusters, used in SCENIC analysis. (E) Regulon expression distribution, using Seurat\u2019s featureplot.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp7-v1.jpg)\n\n**Figure 3\u2014figure supplement 7.:** Heatmap illustrating the numbers of cell\u2013cell interactions using (A) high variant allele frequency (VAF) clonal hematopoiesis of indeterminate potential (CHIP) and (B) CHIP negative samples. (C) Selected interaction pathways related to myeloid cells are displayed. Dot sizes represent interaction p-values, and colors indicate the magnitude of interactions. In row names, the order of names is presented as sender | receiver.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp8-v1.jpg)\n\n**Figure 3\u2014figure supplement 8.:** Survival curve using progression-free survival in clonal hematopoiesis of indeterminate potential (CHIP) negative (N = 71) and high-burden CHIP (N = 11), using survplot in R.\n\n![Figure 3\u2014figure supplement 9.](https://cdn.elifesciences.org/articles/96951/elife-96951-fig3-figsupp9-v1.jpg)\n\n**Figure 3\u2014figure supplement 9.:** Hypoxia and TNF-\u0251 signaling pathways across clusters. The bars represent the count of clusters in which each gene is included in the leading edge.\n\n### Implication of high CHIP burden in inflammatory signatures of myeloid cells\n\nWe performed a gene network analysis to comprehensively analyze the increased expression of inflammatory signaling genes in patients with higher CHIP burden. First, we used hdWGCNA to construct co-expression networks for genes in myeloid cells, which yielded a black module that exhibited myeloid specificity and represented most of the signaling-related DEGs identified via gene set enrichment analysis (GSEA) (Figure 3\u2014figure supplement 5 and Supplementary file 1h; Morabito et al., 2023). We determined gene ontology term enrichment in this module and found the inflammatory and transcriptional activation pathways observed in DEGs to be clearly identified (Figure 3\u2014figure supplement 5C). Additionally, further GSEA on the myeloid-specific module showed its function to resemble that of the overall set of DEGs (Figure 3\u2014figure supplement 5D).\n\nIn addition to weighted correlation network analysis (WGCNA), gene regulatory network (GRN) analysis using SCENIC (Van de Sande et al., 2020; Figure 3\u2014figure supplement 6) indicated that the regulatory activity of transcription factors in the AP-1 and NF-\u03baB pathways was particularly notable in the myeloid lineage of high-burden patients (Figure 3\u2014figure supplement 6A, B). Both the NF-\u03baB regulon and the ATF3 regulon, which represents the AP-1 pathway, were activated in the myeloid cluster of high-burden patients (Figure 3\u2014figure supplement 6C\u2013E).\n\nRecent studies have shown that expansion of HSPC-derived monocytes is the cause of CHIP, and representative CHIP genes, including DNMT3A and TET2, exert immune-regulatory effects through the NLRP3 inflammasome (Welch et al., 2012; Abplanalp et al., 2021; Sano et al., 2018). Our network analysis also points to this pathway (Figure 3\u2014figure supplement 6). Notably, a VAF of 10% in heterozygote mutations corresponds to approximately 20% of cells; thus, the presence of such mutations in HSPC-derived monocytes of high-burden patients would have resulted in an overall transcriptional profile change for blood monocytes.\n\nIn addition to conducting gene network analysis, we explored the effect of the inflammatory signature on cell\u2013cell interaction using CellPhoneDB (Figure 3\u2014figure supplement 7; Efremova et al., 2020). The number of significant cell\u2013cell interactions did not differ significantly between high-burden CHIP samples and negative samples, although the number of cells in each group seemed likely to have an impact (Figure 3\u2014figure supplement 7A, B). However, when the interactions in the TNF and IL-1B pathways were analyzed separately, monocytes and DCs in high-burden cases were activated as receptors for TNF and Lymphotoxin A (Figure 3\u2014figure supplement 7C). Collectively, our results suggest a sensitized response of monocytes to inflammation in lung cancer patients with high CHIP burden.\n\n### Effect of CHIP on clinical outcome\n\nFinally, to understand whether clonal hematopoiesis status can affect the clinical outcomes of lung cancer patients undergoing ICI treatment, we conducted a survival analysis (Figure 3\u2014figure supplement 8). Our results showed the progression-free survival (PFS) of patients after ICI treatment to be reduced in the high-burden CHIP group (825 vs. 404, p = 0.056), with no difference in ICI response rates between the negative and high-burden CHIP groups. Previous studies have already observed a negative effect on life expectancy in CHIP patients with solid tumors. Therefore, it is possible that these results will be validated by analyzing additional samples.\n\n## Discussion\n\nTo address the influence of CH in lung cancer patients with differential prognosis following ICI, we sought to determine the following: (1) CH profiles from metastatic NSCLC patients, (2) changes in PBMC gene expression by scRNA-seq, (3) relationship of CH burden and transcriptome profile, and (4) potential implication for the clinical outcomes. Here, we report that CH prevalence was significantly higher in NSCLC patients and higher burden of mutations with VAF of greater than 10% was frequently observed in LUSC. Using scRNA-seq analysis, we found myeloid cells in NSCLC patients with high CH burden to exhibit an altered inflammatory milieu via increased NF-\u03baB pathway expression. Our results provide possible explanations for heterogeneity in response to immunotherapy and suggest immune response to be altered due to CHIP in cancer patients.\n\nRecent studies have employed mouse models and single-cell transcriptomics to understand the roles of specific mutations in CH and provided evidence of their implications for inflammatory response in the myeloid lineage (Nam et al., 2022; Fuster et al., 2017). In particular, a study linking COVID-19 and CH showed an increased inflammatory response from monocytes in severe COVID-19 patients with CH, mediated via interferon gamma (IFN-\u03b3) and TNF-\u03b1 signaling signatures (Choi et al., 2022). Likewise, we observed that myeloid cells from NSCLC patients with CH tend to harbor increased inflammatory response, and this response is mediated by NF-\u03baB pathway signaling (Figure 3).\n\nOur GSEA results specifically indicated the enrichment of TNF signaling and hypoxia pathways in most clusters of patients with severe CH (Figure 3\u2014figure supplement 3). The leading edge genes from GSEA results showed core genes such as FOS, DUSP1, JUN, and PPP1R15A, which are known to play critical roles in the inflammatory phenotypes of immune cells, were shared between the TNF signaling and hypoxia pathways in all significant clusters (Figure 3\u2014figure supplement 9). Furthermore, GRN analysis using SCENIC indicated a higher enrichment of inflammatory signatures in myeloid lineages (Figure 3\u2014figure supplement 6), highlighting the pronounced inflammatory phenotype of CH clones in these cell lineages. To gain insight into the functional implications of myeloid-driven inflammatory gene pathways within CH in NSCLC patients, we conducted gene network analyses focusing on the myeloid lineage. The \u2018black module\u2019 from the WGCNA analysis (Figure 3\u2014figure supplement 5) and the NFKB1 and ATF3 GRN from SCENIC (Figure 3\u2014figure supplement 6) revealed activation and adaptation of myeloid-specific inflammatory pathways (Morabito et al., 2023; Van de Sande et al., 2020). Additionally, cell\u2013cell interaction analysis using cellphoneDB unveiled notable interactions between myeloid cells and other lineages mediated through the TNF pathway (Figure 3\u2014figure supplement 7 Efremova et al., 2020).\n\nAs ICIs modulate pathways involved in immune response rather than cell proliferation, it is reasonable that ICIs do not exert a direct influence on CH development (Miller et al., 2020). Also, our results did not support significant difference of ICI outcome based on CH burden (Figure 2). According to our power analysis, a minimum of 100 samples per group with CHIP is required to achieve a statistical power of 0.8 from pair-wise comparisons between each gene and variant (Methods for details). However, our findings do suggest that elevated inflammatory activity in the bloodstream may impact long-term patient survival pre- and post-ICI administration (Figure 3\u2014figure supplement 8). Therefore, a future study with a larger sample size may yet clarify a causal relationship of CH with ICI outcome. Notably, involvement of the IL-1 pathway in the aggressiveness and metastasis of lung cancer has been reported in experimental studies (Li et al., 2020; Zhang and Veeramachaneni, 2022), and inhibition of IL-1\u03b2 has proven effective in reducing lung cancer-related mortality, as shown in the CANTOS trial (Ridker et al., 2017). Indeed, our analysis indicated a modest decrease in PFS in the ICI-responder group with high CH patients (Figure 3\u2014figure supplement 8, p = 0.056). Our study design is potentially limited by the relatively short observation period for defining ICI response. Indeed, it is worth noting that more potent factors, such as smoking and anticancer therapies, may have a more substantial impact than immunotherapy (Bolton et al., 2020). Consistent with this postulation, our analyses indicated minimal changes in in CH-related signatures before and after ICI treatment (Figure 3, Figure 3\u2014figure supplement 1, 3, and 4).\n\nAlso, the distinct characteristics of our cohort can be confounders for our results. Compared to control patients, our cohort was biased to slightly older ages, a higher prevalence of smoking habits, and with a higher proportion of males (mean age: 64.1 vs. 58.9; current smokers: 37/100 vs. 11/42; male/female: 91/9 vs. 18/24; Supplementary file 1a, c). However, previous studies have reported similar prevalence rates of clonal hematopoiesis in NSCLC patients, aligned with our findings (Coombs et al., 2017). Moreover, our most prevalent CH mutations, including DNMT3A, TET2, and PPM1D, were marginally affected by smoking, and this trend has been consistently observed in both healthy populations and NSCLC patients (Bolton et al., 2020; Levin et al., 2022).\n\nHere, we have illustrated increased inflammatory activation in myeloid cells of NSCLC patients with high CH burden. Our scRNA-seq analysis has revealed that NF-\u03baB signaling mediated by the IL-1\u03b2 and the TNF superfamilies may enhance interactions of myeloid cells with other cell lineages. These findings propose the potential utility of CH as a predictive marker for classifying NSCLC patients. Future investigations involving ICI-treated patients and their clinical outcomes may shed light on the impact of CH, offering a basis for the development of adjuvant anticancer strategies aimed at modulating CH.\n\n## Methods\n\n### Patients\n\nDescription of the discovery cohort is previously reported (Kim et al., 2023). Briefly, 100 patients (50 LUAD, 43 LUSC, and 7 others) with metastatic NSCLC stage IV who were treated with anti-PD(L)1 (e.g., Atezolizumab, Nivolumab, and Pembrolizumab) were recruited at Samsung Medical Center (SMC) under the permission of SMC Institutional Review Board (No. 2018-04-048, 2022-01-094). All subjects provided their written informed consent to participate in the study. Whole blood sample was acquired before and 1\u20133 weeks after the treatment and used for genome sequencing and scRNA-seq. For replication, blood samples from additional 180 lung cancer patients (125 LUAD and 55 LUSC) were used for genome analysis (Litchfield et al., 2021).\n\n### Targeted sequencing and WES\n\nWe designed a targeted sequencing panel comprising 167 selected genes associated with putative drivers of CHIP at Twist Bioscience (South San Francisco, CA). For WES, we utilized the SureSelect V5 panel from Agilent (Santa Clara, CA). CHIP-targeted sequencing and WES were both conducted at Samsung Genome Institute, respectively, employing 50 and 200 ng of genomic DNA extracted from whole blood. The targeted sequencing panel was captured and sequenced using NextSeq 2000, with paired-end sequencing performed at a read length of 150 base pairs (bps).\n\n### Variant filtering and calling of CHIP variants\n\nFor somatic variant calling, the Sarek pipeline (version 3.2.1) implemented in Nextflow was used (Garcia et al., 2020). In brief, the pipeline employed GATK\u2019s standard data preprocessing procedure and Mutect2 for somatic variant calling based on a BED file (McKenna et al., 2010). All passed calls were collected and annotated using Snpeff (version 4.3 and db version 105) and VEP (version 108) (Cingolani et al., 2012; McLaren et al., 2016). To filter CHIP variants, a stepwise approach based on the following criteria was applied. First, variants should meet the following conditions: (1) VAF 2\u201335%, (2) variant depth >500\u00d7 for the discovery set and >40\u00d7 for the WES replication set, (3) 4 or more (2 or more for the WES replication set) variant-covering read pairs in each forward and reverse direction, (4) global allele frequency from gnomAD <1e\u22125, or <1e\u22123 if a variant is in the COSMIC database (Tate et al., 2019) allele count <5% in all processed samples, and (5) no homopolymer signature found in 6 bp upstream or downstream of the candidate variant. Next, we called CHIP variants based on (1) protein sequence alterations, including exonic splicing variants, and (2) manual assessment of variant calls using IGV (Robinson et al., 2017). Finally, we curated data from previous studies and the COSMIC database, assigning variants reported more than 10 times or matched within a predefined list as CHIP with putative drivers (called as clonal hematopoiesis of indeterminate potential with putative drivers, or CHIP-PD) (Niroula et al., 2021).\n\n### Power estimation\n\nThe power of the Poisson binomial test was calculated as the probability that a variant would be detected exclusively in one of two arbitrary groups. In brief, the most prevalent CHIP variant, DNMT3A p.Arg882, constitutes approximately 10% of the DNMT3A CHIP cases. When this variant is totally absent in the one group, a minimum of 16 DNMT3A CHIP patients in the other group would be required to achieve a power of 0.8. Considering the current prevalence of DNMT3A CHIP in our cohort (8/50 CHIP samples), this suggests that a minimum of 100 CHIP samples per group is required for determining the prevalence of any specific variant.\n\n### scRNA-seq preprocessing and analysis\n\nThe scRNA-seq dataset was generated using the 10\u00d7 Genomics 5\u2032 single-cell kit and was partially derived from a previous study (Kim et al., 2023). Reads were aligned to the hg38 reference using 10X CellRanger (ver. 7.0). Contaminant RNA barcodes were removed with cellbender and sample demultiplexing was performed by demuxlet (Fleming et al., 2023; Kang et al., 2018). After filtering the cell expression matrix, we used Seurat (v 4.3.0) for downstream analysis (Hao et al., 2021). At the sample level, we filtered out cells with mitochondrial RNA content >15%, unique molecular identifier (UMI) counts <200 or >6000, and calculated library-size corrected counts using SCTransform (Hafemeister and Satija, 2019). Then, we computed PCA based on the normalized SCTransform values and integrated all samples using Harmony (Korsunsky et al., 2019). Using the corrected PCA, we performed unsupervised clustering via Louvain algorithms and UMAP. For each cluster, we identified marker genes using the Wilcoxon rank-sum test with presto and validated annotations using Azimuth (Hao et al., 2021).\n\n### Gene set enrichment analysis\n\nGSEA was employed to compare the expression patterns according to CHIP status based on their concordance to the hallmark pathways in the Molecular Signatures Database (MSigDB) (Liberzon et al., 2015). For GSEA of scRNA-seq data, we used fgsea (Sergushichev, 2016). Briefly, the AUC rank of DEGs obtained with and without CHIP for each cluster was used as input. Significant gene set enrichment was determined only for adjusted p < 0.05.\n\n### scRNA-seq WGCNA\n\nWe utilized WGCNA to construct a gene co-expression network from the gene expression profiles of myeloid cells utilizing the R package hdWGCNA (Morabito et al., 2023). In brief, the co-expression network was constructed using a soft power of 12 for SCTtransform-normalized cell counts. Within the constructed co-expression network, we explored the type and specificity of genes in each module, excluding unassigned genes. The functionality of the black module was validated through GSEA and by examining its overlap with DEGs identified between CHIP groups (Morabito et al., 2023).\n\n### GRN inference\n\nTo further understand the altered gene modulation in major cell clusters, including B cells, NK cells, CD4 T cells, CD8 T cells, and monocytes, we constructed a GRN using pySCENIC (Van de Sande et al., 2020). We created meta-cells for each sample using SEACells and employed these meta-cells for GRN calculation to address the sparse nature of scRNA expression and enhance resolution (Bravo Gonz\u00e1lez-Blas et al., 2023; Persad et al., 2023). The full transcriptome matrix and the GRN derived from meta-cells were then used to analyze regulon signatures for each cell. Finally, we mapped the regulon AUC values of each cell onto Seurat\u2019s UMAP and visualized the results using Seurat.\n\n### Cell-to-cell communication analysis\n\nTo understand the interactions between myeloid and other cell types, we utilized the Python package CellphoneDB (Efremova et al., 2020), which curates human cell\u2013cell interactions. The counts matrix, processed with SCTransform, was divided according to CHIP status and used as input for CellphoneDB. Significant interactions were then counted to determine the number of cell\u2013cell interactions, and myeloid-related interactions were compared between samples of different CHIP status.\n\n### Statistical analysis\n\nWe present raw data if applicable. For scRNA-seq data, scaled and log-normalized raw counts from cells are displayed in violin plots. To determine statistical significance between high-burden, CHIP, and negative groups, the Wilcoxon test or Kruskal\u2013Wallis test was used for continuous variables and the Poisson binomial test or logistic regression for categorical variables. Statistical metrics from GESA were calculated using the fgsea package in R. All statistical analyses were conducted in R 4.2.1.\n",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Claire Harrison, King's College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.96951.3.sa0](https://doi.org/10.7554/eLife.96951.3.sa0)\n\nThis valuable article represents a significant body of work that addresses some novel aspects of the biology of lung cancer, the overall influence of CHIP and its impacts on responses to therapy. While a high clonal hematopoiesis (CHIP) burden was previously linked with an inflammatory phenotype in other disease settings, the authors demonstrate with solid evidence that this is also true for lung cancer. CHIP is complex and more data will be required to substantiate more evidence with regard perhaps to specific mutations in certain situations and how this might influence therapy choices.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.96951.3.sa1](https://doi.org/10.7554/eLife.96951.3.sa1)\n\nSummary:\n\nThe study investigates the impact of Clonal Hematopoiesis of Indeterminate Potential (CHIP) on Immune Checkpoint Inhibitor (ICI) therapy outcomes in NSCLC patients, analyzing blood samples from 100 patients pre- and post-ICI therapy for CHIP, and conducting single-cell RNA sequencing (scRNA-seq) of PBMCs in 63 samples, with validation in 180 more patients through whole exome sequencing. Findings show no significant CHIP influence on ICI response, but a higher CHIP prevalence in NSCLC compared to controls and a notable CHIP burden in squamous cell carcinoma. Severely affected CHIP groups showed NF-kB pathway gene enrichment in myeloid clusters.\n\nStrengths:\n\nThe study is commendable for analyzing a significant cohort of 100 patients for CHIP and utilizing scRNA-seq on 63 samples, showcasing the use of cutting-edge technology.\n\nThe study tackles the vital clinical question of predicting ICI therapy outcomes in NSCLC.\n\nWeaknesses:\n\nThe study groups, comprising NSCLC patients and healthy controls, exhibit notable differences in sex distribution and smoking status. Given that smoking is a well-established factor influencing CHIP status, this introduces potential confounding variables that may impact the study's conclusions. The authors have appropriately acknowledged these disparities and provided a transparent discussion of their implications.\n\nComments on revised submission:\n\nThe authors thoroughly addressed all my concerns. Thank you very much for your additional work.\n",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c3fbc475-f110-4fed-81d9-a3ad3e75c7d5",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C1",
+      "claim": "Blood samples were collected from 100 metastatic NSCLC patients before and after ICI treatment for high-depth sequencing of the CHIP panel.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected blood samples from 100 metastatic NSCLC patients before and after ICI for high-depth sequencing of the CHIP panel and 63 samples for blood single-cell RNA sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the sample collection and sequencing approach in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "450f0a5f-47bf-4118-b032-073e55bec22f",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C2",
+      "claim": "63 samples were collected for blood single-cell RNA sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected blood samples from 100 metastatic NSCLC patients before and after ICI for high-depth sequencing of the CHIP panel and 63 samples for blood single-cell RNA sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the number of samples used for scRNA-seq in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "ed40f3cc-920d-446f-88a9-a5a1188a8aa1",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C3",
+      "claim": "Whole exome sequencing was performed in an independent replication cohort of 180 patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole exome sequencing was performed in an independent replication cohort of 180 patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states the replication cohort size and sequencing method in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "93b65e40-b0f1-484d-a843-014b78a47906",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C4",
+      "claim": "The impact of CHIP status on the immunotherapy response was not significant.",
+      "claim_type": "EXPLICIT",
+      "source": "The impact of CHIP status on the immunotherapy response was not significant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding in the abstract based on their analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "db416846-2cbd-4e58-9614-a0447da9ef94",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C5",
+      "claim": "Metastatic lung cancer patients showed higher CHIP prevalence compared to controls (44/100 for patients vs. 5/42 for controls; p = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "However, metastatic lung cancer patients showed higher CHIP prevalence (44/100 for patients vs. 5/42 for controls; p = 0.01).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data and statistical significance for CHIP prevalence comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "a57f5d14-1ac5-417e-afea-186af608c7e1",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C6",
+      "claim": "Lung squamous cell carcinoma (LUSC) patients showed increased burden of larger clones compared to lung adenocarcinoma (LUAD) patients (8/43 for LUSC vs. 2/50 for LUAD; p = 0.04).",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, lung squamous cell carcinoma (LUSC) patients showed increased burden of larger clones compared to lung adenocarcinoma (LUAD) patients (8/43 for LUSC vs. 2/50 for LUAD; p = 0.04).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data and statistical significance for the comparison between LUSC and LUAD patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "9c7db79f-f6e0-4dbe-94e0-c536da0e4892",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C7",
+      "claim": "Single-cell RNA-seq analysis showed significant enrichment of inflammatory pathways mediated by NF-\u03baB in myeloid clusters of the severe CHIP group.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, single-cell RNA-seq analysis of the matched patients showed significant enrichment of inflammatory pathways mediated by NF-\u03baB in myeloid clusters of the severe CHIP group.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript explicitly states this finding from scRNA-seq analysis in the abstract.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "2d965465-3156-43ed-8313-df8adefeb99e",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C8",
+      "claim": "Somatic mutations detected in hematopoietic malignancies are commonly observed with clonal expansion in individuals with no hematological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have revealed that somatic mutations detected in hematopoietic malignancies are also commonly observed with clonal expansion in the individuals with no hematological conditions (Jaiswal et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "35701b6a-2697-45c9-a448-9a35dcf56704",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C9",
+      "claim": "Asymptomatic cases with a variant allele frequency (VAF) of \u22652% are defined as clonal hematopoiesis of indeterminate potential (CHIP).",
+      "claim_type": "EXPLICIT",
+      "source": "Among such individuals, asymptomatic cases with a variant allele frequency (VAF) of \u22652% are defined as clonal hematopoiesis of indeterminate potential (CHIP) (Jaiswal and Ebert, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this definition.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "c1ac0a1a-62c4-4e0b-bae5-772293415def",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C10",
+      "claim": "CHIP is strongly associated with aging.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, CHIP is strongly associated with aging; and mutagenic anticancer therapies and smoking can also induce clonal expansion in specific genes (Jaiswal et al., 2014; Hsu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this association.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "5ced0907-d298-4d1a-b086-4350ba9ae29e",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C11",
+      "claim": "Mutagenic anticancer therapies and smoking can induce clonal expansion in specific genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, CHIP is strongly associated with aging; and mutagenic anticancer therapies and smoking can also induce clonal expansion in specific genes (Jaiswal et al., 2014; Hsu et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "c6b21705-3cfa-4cf6-9c7a-7f99d0c6f054",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C12",
+      "claim": "Hematopoietic stem and progenitor cells (HSPCs) carrying CHIP mutations serve as a major source of expanded clones.",
+      "claim_type": "EXPLICIT",
+      "source": "Hematopoietic stem and progenitor cells (HSPCs) carrying CHIP mutations serve as a major source of expanded clones, and even a few cells are sufficient to influence clonal homeostasis (Welch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "af353636-9c32-49cf-9968-e73b3919b60e",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C13",
+      "claim": "Even a few HSPC cells carrying CHIP mutations are sufficient to influence clonal homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Hematopoietic stem and progenitor cells (HSPCs) carrying CHIP mutations serve as a major source of expanded clones, and even a few cells are sufficient to influence clonal homeostasis (Welch et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "5a721a0b-de99-4bb0-8d48-3a2e8028d946",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C14",
+      "claim": "DNMT3A, ASXL1, and TET2 are representative CHIP mutation-carrying genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative CHIP mutation-carrying genes, such as DNMT3A, ASXL1, and TET2, impact the myeloid population, including monocytes and granulocytes, and have been linked to hematologic malignancies such as myelodysplastic syndrome and acute myeloid leukemia through inflammation mediated by the NF-\u03baB and NLRP3 inflammasome (Muto et al., 2020; Cai et al., 2018; Abplanalp et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "345050c7-d6f6-4021-822a-1df95d184eda",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C15",
+      "claim": "DNMT3A, ASXL1, and TET2 impact the myeloid population, including monocytes and granulocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative CHIP mutation-carrying genes, such as DNMT3A, ASXL1, and TET2, impact the myeloid population, including monocytes and granulocytes, and have been linked to hematologic malignancies such as myelodysplastic syndrome and acute myeloid leukemia through inflammation mediated by the NF-\u03baB and NLRP3 inflammasome (Muto et al., 2020; Cai et al., 2018; Abplanalp et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "ea5e021d-1c02-426c-9a6a-5e7453f9548d",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C16",
+      "claim": "DNMT3A, ASXL1, and TET2 have been linked to hematologic malignancies such as myelodysplastic syndrome and acute myeloid leukemia through inflammation mediated by the NF-\u03baB and NLRP3 inflammasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative CHIP mutation-carrying genes, such as DNMT3A, ASXL1, and TET2, impact the myeloid population, including monocytes and granulocytes, and have been linked to hematologic malignancies such as myelodysplastic syndrome and acute myeloid leukemia through inflammation mediated by the NF-\u03baB and NLRP3 inflammasome (Muto et al., 2020; Cai et al., 2018; Abplanalp et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "797a08ea-5234-4ebb-93bb-f743d19977f2",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C17",
+      "claim": "The prevalence of clonal hematopoiesis (CH) in cancer patients is significantly higher than that in healthy populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of clonal hematopoiesis (CH) in cancer patients is also significantly higher than that in healthy populations, and high CH burden has been implicated in a negative effect on overall survival in multiple cancer types (Coombs et al., 2017; Bolton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "4a7c5e69-dcc3-4730-8db1-76805379cfa5",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C18",
+      "claim": "High CH burden has been implicated in a negative effect on overall survival in multiple cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "The prevalence of clonal hematopoiesis (CH) in cancer patients is also significantly higher than that in healthy populations, and high CH burden has been implicated in a negative effect on overall survival in multiple cancer types (Coombs et al., 2017; Bolton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "47723d50-ecc3-4de2-b593-27d0b8f31d14",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C19",
+      "claim": "CHIP is associated with atherosclerosis, type 2 diabetes, and chronic obstructive pulmonary disease.",
+      "claim_type": "EXPLICIT",
+      "source": "CHIP is also associated with diseases beyond hematologic malignancies, such as atherosclerosis, type 2 diabetes, and chronic obstructive pulmonary disease (Miller et al., 2022; Tobias et al., 2023; Jaiswal et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "4b6c10f8-13c0-471a-a4cd-48fb7ef4fccb",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C20",
+      "claim": "Non-small cell lung cancer (NSCLC) stands out globally as the solid tumor with the highest mortality burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-small cell lung cancer (NSCLC) stands out globally as the solid tumor with the highest mortality burden (Leiter et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "2839bbba-4855-4d6e-af9a-a4b044ca0048",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C21",
+      "claim": "The difficulty in early detection of NSCLC significantly contributes to its mortality rate being high compared to its incidence rate.",
+      "claim_type": "EXPLICIT",
+      "source": "The difficulty in early detection of NSCLC significantly contributes to its mortality rate being high compared to its incidence rate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge about NSCLC.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "25eecc41-9cfe-4b6b-a469-f675a84d62db",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C22",
+      "claim": "Recent studies indicate a possible association of lung cancer risk with CH.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies examining CHIP within lung cancer cohorts and general population indicate a possible association of lung cancer risk with CH (Stacey et al., 2023; Hong et al., 2022; Tian et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "22e80094-65be-450f-b6b1-40e4fc7d5498",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C23",
+      "claim": "Immune checkpoint inhibitors (ICIs) targeting PD-(L)1 and CTLA-4 have revolutionized treatment of advanced NSCLC.",
+      "claim_type": "EXPLICIT",
+      "source": "Immune checkpoint inhibitors (ICIs) targeting PD-(L)1 and CTLA-4 have revolutionized treatment of advanced NSCLC, both as monotherapies and in combination with chemotherapy (Reck et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "251f54e8-1986-4a21-a21b-7517c1b9f980",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C24",
+      "claim": "Response rates to ICI treatments remain relatively low.",
+      "claim_type": "EXPLICIT",
+      "source": "However, response rates to ICI treatments remain relatively low.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge about ICI treatments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "9220e261-5fe3-45ba-b593-6a8b211ca5c0",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C25",
+      "claim": "The predictive ability of markers like PD-1 expression and tumor mutational burden is insufficient.",
+      "claim_type": "EXPLICIT",
+      "source": "The predictive ability of markers like PD-1 expression and tumor mutational burden is insufficient, requiring the identification of additional markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript states this as established knowledge about current predictive markers.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "c36585a2-3bbe-44d4-b546-ef0ab286f4db",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C26",
+      "claim": "Recent studies suggest a marginal effect of ICI on the clonal dynamics of CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies suggest a marginal effect of ICI on the clonal dynamics of CHIP (Miller et al., 2021; Miller et al., 2020), but the current understanding of the role of CHIP in ICI-treated patients is not comprehensive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "d82b3936-3f9b-4e12-97d4-162392582924",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C27",
+      "claim": "67 CHIP mutations were identified in 100 patients at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "At the baseline, we identified 67 CHIP mutations in 100 patients, 26 of them in known putative driver genes of hematopoietic cancer (CHIP-PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data from their analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "ffd42d42-1308-4752-8ea8-ddd3c2293237",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C28",
+      "claim": "26 CHIP mutations were in known putative driver genes of hematopoietic cancer (CHIP-PD) at baseline.",
+      "claim_type": "EXPLICIT",
+      "source": "At the baseline, we identified 67 CHIP mutations in 100 patients, 26 of them in known putative driver genes of hematopoietic cancer (CHIP-PD).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data from their analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "bb07fc1d-3457-4f7a-be7d-1e4dc20375dd",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C29",
+      "claim": "After treatment, 68 CHIP and 32 CHIP-PD mutations were found in 91 patients who passed quality control assessment.",
+      "claim_type": "EXPLICIT",
+      "source": "After treatment, 68 CHIP and 32 CHIP-PD mutations were found in 91 patients who passed quality control assessment (Figure 1A, Figure 1\u2014figure supplements 1\u20133, and Supplementary file 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numerical data from their analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "68be0085-6032-422f-b424-7ddc4a325b43",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C30",
+      "claim": "DNMT3A, PPM1D, and TET2 were the most frequently mutated CHIP genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the CHIP genes, DNMT3A, PPM1D, and TET2 were the most frequently mutated (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "a82b76a3-cbd2-4b22-a81f-ae56b417b963",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C31",
+      "claim": "PPM1D truncating mutations have previously demonstrated association with patients' smoking habits and possible history with chemotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "PPM1D truncating mutations were also common, and have previously demonstrated association with patients' smoking habits and possible history with chemotherapy (Hsu et al., 2018; Coombs et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "b838776c-fd4d-441a-9d0c-b534d3a33c55",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C32",
+      "claim": "ICI treatment effected minimal changes in CHIP burden.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we observed ICI treatment to effect minimal changes in CHIP burden (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "36932fa6-75db-4fac-a27a-430117c2b44d",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C33",
+      "claim": "VAF was highly correlated across all traced mutations and not dependent on clinical responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, VAF was highly correlated across all traced mutations and not dependent on clinical responses (Figure 1C, D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "0573aaef-3ab8-4a3e-8f00-cc89003a53bc",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C34",
+      "claim": "Increased number of CHIP mutations with VAF >10% was noted in patients with lung squamous cell carcinoma (LUSC).",
+      "claim_type": "EXPLICIT",
+      "source": "However, we noted increased number of CHIP mutations with VAF >10% in patients with lung squamous cell carcinoma (LUSC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this finding from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "1b3b5ed5-5895-404a-9f44-a88748475ba5",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C35",
+      "claim": "CHIP prevalence was significantly higher in the lung cancer cohort compared to the control group (controls 5/42 vs. patients 44/100, age-adjusted logistic regression p = 0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "CHIP prevalence was significantly higher in the lung cancer cohort compared to the control group (controls 5/42 vs. patients 44/100, age-adjusted logistic regression p = 0.01; Figure 2A, Supplementary file 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numerical data and statistical significance for this comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "c3b906a1-1ef8-45c9-a164-49b3f69928e3",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C36",
+      "claim": "The number of CHIP-positive patients did not differ before and after ICI treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of CHIP-positive patients did not differ before and after ICI treatment, nor in relation to treatment response (Figure 2B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "09fcbb44-e600-4945-b835-493a88d4c375",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C37",
+      "claim": "The number of CHIP-positive patients did not differ in relation to treatment response.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the number of CHIP-positive patients did not differ before and after ICI treatment, nor in relation to treatment response (Figure 2B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "4303d690-ebf4-4e0c-b6ed-0130629d7615",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C38",
+      "claim": "CHIP burden is heavily dependent on age.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported, CHIP burden is heavily dependent on age (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript references previous reports and their own data shown in a figure.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "128f3288-1ec4-467c-8184-b0fa69623d40",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C39",
+      "claim": "High CHIP burden was prevalent in LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking CHIP VAF as an indicator of clonal size, we observed that high CHIP burden was prevalent in LUSC, while multiple concurrent CHIP mutations were common in lung adenocarcinoma (LUAD) patients (Figure 2C and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "f49b353e-fd48-4fd6-9c2a-1e2a55bcd713",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C40",
+      "claim": "Multiple concurrent CHIP mutations were common in lung adenocarcinoma (LUAD) patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking CHIP VAF as an indicator of clonal size, we observed that high CHIP burden was prevalent in LUSC, while multiple concurrent CHIP mutations were common in lung adenocarcinoma (LUAD) patients (Figure 2C and Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "3b22c7bb-065b-4c22-a7f0-bc5722358012",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C41",
+      "claim": "468,596 cells were retrieved in a total of 26 clusters from PBMC scRNA-seq data.",
+      "claim_type": "EXPLICIT",
+      "source": "After quality control processes, we retrieved 468,596 cells in a total of 26 clusters defined by systemic integration and clustering using the Louvain algorithm, then validated using Azimuth (Figure 3A, Figure 3\u2014figure supplement 1A, B, Supplementary file 1e, and Methods) (Hao et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific numerical data from their scRNA-seq analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "2101a2f1-adeb-4f91-80e1-c4c7935cf1dc",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C42",
+      "claim": "Cell composition analysis showed an increased proportion of natural killer (NK) cells after ICI administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell composition analysis showed an increased proportion of natural killer (NK) cells and a decreased CD4 TEM population after ICI administration, but high variability between samples precluded systematic differences by CHIP status (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "f7740cd4-9785-493c-835a-40f7af600154",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C43",
+      "claim": "Cell composition analysis showed a decreased CD4 TEM population after ICI administration.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell composition analysis showed an increased proportion of natural killer (NK) cells and a decreased CD4 TEM population after ICI administration, but high variability between samples precluded systematic differences by CHIP status (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "008bcc39-3773-43a8-8c27-c716a5bc95c0",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C44",
+      "claim": "High variability between samples precluded systematic differences by CHIP status in cell composition.",
+      "claim_type": "EXPLICIT",
+      "source": "Cell composition analysis showed an increased proportion of natural killer (NK) cells and a decreased CD4 TEM population after ICI administration, but high variability between samples precluded systematic differences by CHIP status (Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "f62bc8e7-cf81-492c-9f66-be935347f0b2",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C45",
+      "claim": "Gene set enrichment test indicated activation of the tumor necrosis factor (TNF) signaling pathway via NFKB in the high CH burden group for most cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "The results indicated activation of the tumor necrosis factor (TNF) signaling pathway via NFKB in the high CH burden group for most cell lineages, including both classical dendritic cells (DCs) and NK cells (Figure 3D, E, Figure 3\u2014figure supplement 3, and Supplementary file 1g; see Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their gene set enrichment analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "236a219f-056d-4939-9498-9755d6412130",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C46",
+      "claim": "The interactions between ICI treatment response and CHIP burden mostly depended on CH status only, and not on response to ICI.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the interactions mostly depended on CH status only, and not on response to ICI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this finding from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "31dccac4-ea90-4184-b078-496acc91ec65",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C47",
+      "claim": "The 'black module' from WGCNA exhibited myeloid specificity and represented most of the signaling-related DEGs identified via gene set enrichment analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "First, we used hdWGCNA to construct co-expression networks for genes in myeloid cells, which yielded a black module that exhibited myeloid specificity and represented most of the signaling-related DEGs identified via gene set enrichment analysis (GSEA) (Figure 3\u2014figure supplement 5 and Supplementary file 1h; Morabito et al., 2023).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their WGCNA analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "6e58a08e-e505-4cfd-9c56-eaf75a96ce42",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C48",
+      "claim": "Gene regulatory network (GRN) analysis using SCENIC indicated that the regulatory activity of transcription factors in the AP-1 and NF-\u03baB pathways was particularly notable in the myeloid lineage of high-burden patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to weighted correlation network analysis (WGCNA), gene regulatory network (GRN) analysis using SCENIC (Van de Sande et al., 2020; Figure 3\u2014figure supplement 6) indicated that the regulatory activity of transcription factors in the AP-1 and NF-\u03baB pathways was particularly notable in the myeloid lineage of high-burden patients (Figure 3\u2014figure supplement 6A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their GRN analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "46a67858-c795-47db-bf9a-e4203cea688c",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C49",
+      "claim": "Both the NF-\u03baB regulon and the ATF3 regulon were activated in the myeloid cluster of high-burden patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Both the NF-\u03baB regulon and the ATF3 regulon, which represents the AP-1 pathway, were activated in the myeloid cluster of high-burden patients (Figure 3\u2014figure supplement 6C\u2013E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their GRN analysis and references figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "18042ae1-00ab-4918-8309-1aec6caa1472",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C50",
+      "claim": "Expansion of HSPC-derived monocytes is the cause of CHIP.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that expansion of HSPC-derived monocytes is the cause of CHIP, and representative CHIP genes, including DNMT3A and TET2, exert immune-regulatory effects through the NLRP3 inflammasome (Welch et al., 2012; Abplanalp et al., 2021; Sano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "f104d942-e78b-41a0-a97b-7a9618b51ec5",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C51",
+      "claim": "Representative CHIP genes, including DNMT3A and TET2, exert immune-regulatory effects through the NLRP3 inflammasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies have shown that expansion of HSPC-derived monocytes is the cause of CHIP, and representative CHIP genes, including DNMT3A and TET2, exert immune-regulatory effects through the NLRP3 inflammasome (Welch et al., 2012; Abplanalp et al., 2021; Sano et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "b9e3745f-6583-451e-86ff-d319499f032b",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C52",
+      "claim": "A VAF of 10% in heterozygote mutations corresponds to approximately 20% of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, a VAF of 10% in heterozygote mutations corresponds to approximately 20% of cells; thus, the presence of such mutations in HSPC-derived monocytes of high-burden patients would have resulted in an overall transcriptional profile change for blood monocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this calculation based on genetic principles.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "f762b70e-c6d8-4a4a-97fd-28a0c24a701e",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C53",
+      "claim": "Monocytes and DCs in high-burden cases were activated as receptors for TNF and Lymphotoxin A.",
+      "claim_type": "EXPLICIT",
+      "source": "However, when the interactions in the TNF and IL-1B pathways were analyzed separately, monocytes and DCs in high-burden cases were activated as receptors for TNF and Lymphotoxin A (Figure 3\u2014figure supplement 7C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their cell-cell interaction analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "26007405-6014-4ef1-94f7-c4d022d65faf",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C54",
+      "claim": "The progression-free survival (PFS) of patients after ICI treatment was reduced in the high-burden CHIP group (825 vs. 404, p = 0.056).",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed the progression-free survival (PFS) of patients after ICI treatment to be reduced in the high-burden CHIP group (825 vs. 404, p = 0.056), with no difference in ICI response rates between the negative and high-burden CHIP groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data and statistical significance for this survival analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "094f4e5a-b544-49fd-bcf3-e70f3b24b17a",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C55",
+      "claim": "There was no difference in ICI response rates between the negative and high-burden CHIP groups.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results showed the progression-free survival (PFS) of patients after ICI treatment to be reduced in the high-burden CHIP group (825 vs. 404, p = 0.056), with no difference in ICI response rates between the negative and high-burden CHIP groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this finding from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "7adc510f-0469-48ca-a807-8a4e4ddff11f",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C56",
+      "claim": "Previous studies have observed a negative effect on life expectancy in CHIP patients with solid tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have already observed a negative effect on life expectancy in CHIP patients with solid tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript references previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "7dd29092-8e3c-44f6-a1f2-b156403bee30",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C57",
+      "claim": "CH prevalence was significantly higher in NSCLC patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that CH prevalence was significantly higher in NSCLC patients and higher burden of mutations with VAF of greater than 10% was frequently observed in LUSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this finding from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "b64c846b-2077-4489-ac12-403ea3efed09",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C58",
+      "claim": "Higher burden of mutations with VAF of greater than 10% was frequently observed in LUSC.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we report that CH prevalence was significantly higher in NSCLC patients and higher burden of mutations with VAF of greater than 10% was frequently observed in LUSC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this finding from their data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "ec632dfc-648e-4e7a-b800-9c7cb2d83c2c",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C59",
+      "claim": "Myeloid cells in NSCLC patients with high CH burden exhibit an altered inflammatory milieu via increased NF-\u03baB pathway expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Using scRNA-seq analysis, we found myeloid cells in NSCLC patients with high CH burden to exhibit an altered inflammatory milieu via increased NF-\u03baB pathway expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this finding from their scRNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "b2602e7a-754e-4cb5-a064-c725524bcb26",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C60",
+      "claim": "A study linking COVID-19 and CH showed an increased inflammatory response from monocytes in severe COVID-19 patients with CH, mediated via interferon gamma (IFN-\u03b3) and TNF-\u03b1 signaling signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, a study linking COVID-19 and CH showed an increased inflammatory response from monocytes in severe COVID-19 patients with CH, mediated via interferon gamma (IFN-\u03b3) and TNF-\u03b1 signaling signatures (Choi et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "9997d96a-1d3d-4552-9ad1-768f12ee01db",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C61",
+      "claim": "Myeloid cells from NSCLC patients with CH tend to harbor increased inflammatory response mediated by NF-\u03baB pathway signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we observed that myeloid cells from NSCLC patients with CH tend to harbor increased inflammatory response, and this response is mediated by NF-\u03baB pathway signaling (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their data analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "96357f46-a5db-4997-9238-c4f0c6b60228",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C62",
+      "claim": "GSEA results indicated the enrichment of TNF signaling and hypoxia pathways in most clusters of patients with severe CH.",
+      "claim_type": "EXPLICIT",
+      "source": "Our GSEA results specifically indicated the enrichment of TNF signaling and hypoxia pathways in most clusters of patients with severe CH (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their GSEA analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "463bb352-f103-49d2-9af6-dc1577e1b909",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C63",
+      "claim": "Core genes such as FOS, DUSP1, JUN, and PPP1R15A were shared between the TNF signaling and hypoxia pathways in all significant clusters.",
+      "claim_type": "EXPLICIT",
+      "source": "The leading edge genes from GSEA results showed core genes such as FOS, DUSP1, JUN, and PPP1R15A, which are known to play critical roles in the inflammatory phenotypes of immune cells, were shared between the TNF signaling and hypoxia pathways in all significant clusters (Figure 3\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this finding from their GSEA analysis and references a figure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "22443564-00f8-4d16-8cee-498a78554280",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C64",
+      "claim": "FOS, DUSP1, JUN, and PPP1R15A are known to play critical roles in the inflammatory phenotypes of immune cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The leading edge genes from GSEA results showed core genes such as FOS, DUSP1, JUN, and PPP1R15A, which are known to play critical roles in the inflammatory phenotypes of immune cells, were shared between the TNF signaling and hypoxia pathways in all significant clusters (Figure 3\u2014figure supplement 9).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript states this as established knowledge about these genes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "1ac948a1-7dd4-4a59-b327-d9f79213b266",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C65",
+      "claim": "ICIs modulate pathways involved in immune response rather than cell proliferation.",
+      "claim_type": "EXPLICIT",
+      "source": "As ICIs modulate pathways involved in immune response rather than cell proliferation, it is reasonable that ICIs do not exert a direct influence on CH development (Miller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study and provides reasoning based on the mechanism of ICIs.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "44d7efe8-8dda-4f5f-97b9-165d6cacfb2c",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C66",
+      "claim": "ICIs do not exert a direct influence on CH development.",
+      "claim_type": "EXPLICIT",
+      "source": "As ICIs modulate pathways involved in immune response rather than cell proliferation, it is reasonable that ICIs do not exert a direct influence on CH development (Miller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "df512304-8109-4167-b366-aab448cdd789",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C67",
+      "claim": "Elevated inflammatory activity in the bloodstream may impact long-term patient survival pre- and post-ICI administration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our findings do suggest that elevated inflammatory activity in the bloodstream may impact long-term patient survival pre- and post-ICI administration (Figure 3\u2014figure supplement 8).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides this interpretation based on their data analysis and references a figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "790fbde9-1f54-431b-9cb6-91840b201807",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C68",
+      "claim": "Involvement of the IL-1 pathway in the aggressiveness and metastasis of lung cancer has been reported in experimental studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, involvement of the IL-1 pathway in the aggressiveness and metastasis of lung cancer has been reported in experimental studies (Li et al., 2020; Zhang and Veeramachaneni, 2022), and inhibition of IL-1\u03b2 has proven effective in reducing lung cancer-related mortality, as shown in the CANTOS trial (Ridker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "0fe840c3-2710-435e-bb5e-f5f39039b89b",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C69",
+      "claim": "Inhibition of IL-1\u03b2 has proven effective in reducing lung cancer-related mortality, as shown in the CANTOS trial.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, involvement of the IL-1 pathway in the aggressiveness and metastasis of lung cancer has been reported in experimental studies (Li et al., 2020; Zhang and Veeramachaneni, 2022), and inhibition of IL-1\u03b2 has proven effective in reducing lung cancer-related mortality, as shown in the CANTOS trial (Ridker et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "bda9197a-78d6-4424-ad56-7affe9c6842c",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C70",
+      "claim": "More potent factors, such as smoking and anticancer therapies, may have a more substantial impact than immunotherapy on CH.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, it is worth noting that more potent factors, such as smoking and anticancer therapies, may have a more substantial impact than immunotherapy (Bolton et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "9f315280-a2c1-40ed-9232-ab2209f3361a",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C71",
+      "claim": "The cohort was biased to slightly older ages compared to control patients (mean age: 64.1 vs. 58.9).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control patients, our cohort was biased to slightly older ages, a higher prevalence of smoking habits, and with a higher proportion of males (mean age: 64.1 vs. 58.9; current smokers: 37/100 vs. 11/42; male/female: 91/9 vs. 18/24; Supplementary file 1a, c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data comparing their cohort to controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "1f4f36c4-2cf3-4096-9c60-a1149af44ec9",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C72",
+      "claim": "The cohort had a higher prevalence of smoking habits compared to control patients (current smokers: 37/100 vs. 11/42).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control patients, our cohort was biased to slightly older ages, a higher prevalence of smoking habits, and with a higher proportion of males (mean age: 64.1 vs. 58.9; current smokers: 37/100 vs. 11/42; male/female: 91/9 vs. 18/24; Supplementary file 1a, c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data comparing their cohort to controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "ed665ca7-5208-4ebb-882a-3200a8990589",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C73",
+      "claim": "The cohort had a higher proportion of males compared to control patients (male/female: 91/9 vs. 18/24).",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to control patients, our cohort was biased to slightly older ages, a higher prevalence of smoking habits, and with a higher proportion of males (mean age: 64.1 vs. 58.9; current smokers: 37/100 vs. 11/42; male/female: 91/9 vs. 18/24; Supplementary file 1a, c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data comparing their cohort to controls.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "18ea699e-65a2-4d9c-bf1c-897296e522bb",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C74",
+      "claim": "Previous studies have reported similar prevalence rates of clonal hematopoiesis in NSCLC patients, aligned with the findings of this study.",
+      "claim_type": "EXPLICIT",
+      "source": "However, previous studies have reported similar prevalence rates of clonal hematopoiesis in NSCLC patients, aligned with our findings (Coombs et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "7b0ad96e-c88b-4349-896c-62cbc68b7a26",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C75",
+      "claim": "The most prevalent CH mutations, including DNMT3A, TET2, and PPM1D, were marginally affected by smoking.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our most prevalent CH mutations, including DNMT3A, TET2, and PPM1D, were marginally affected by smoking, and this trend has been consistently observed in both healthy populations and NSCLC patients (Bolton et al., 2020; Levin et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies to support this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "c3277c4b-0c8d-4e66-89bf-5435a5d22fad",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C76",
+      "claim": "100 patients with metastatic NSCLC stage IV who were treated with anti-PD(L)1 were recruited at Samsung Medical Center.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, 100 patients (50 LUAD, 43 LUSC, and 7 others) with metastatic NSCLC stage IV who were treated with anti-PD(L)1 (e.g., Atezolizumab, Nivolumab, and Pembrolizumab) were recruited at Samsung Medical Center (SMC) under the permission of SMC Institutional Review Board (No. 2018-04-048, 2022-01-094).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific details about patient recruitment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "a177040c-a61c-4650-8c24-f070d89f08c6",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C77",
+      "claim": "The discovery cohort included 50 LUAD, 43 LUSC, and 7 other patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, 100 patients (50 LUAD, 43 LUSC, and 7 others) with metastatic NSCLC stage IV who were treated with anti-PD(L)1 (e.g., Atezolizumab, Nivolumab, and Pembrolizumab) were recruited at Samsung Medical Center (SMC) under the permission of SMC Institutional Review Board (No. 2018-04-048, 2022-01-094).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data about the cohort composition.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "247d53fc-279a-4f92-a346-d7a7ed09f91f",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C78",
+      "claim": "Whole blood sample was acquired before and 1\u20133 weeks after the treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Whole blood sample was acquired before and 1\u20133 weeks after the treatment and used for genome sequencing and scRNA-seq.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific details about sample collection timing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "b99b7fc4-45f1-4625-88a3-b63894f27751",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C79",
+      "claim": "Blood samples from additional 180 lung cancer patients (125 LUAD and 55 LUSC) were used for genome analysis in the replication cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "For replication, blood samples from additional 180 lung cancer patients (125 LUAD and 55 LUSC) were used for genome analysis (Litchfield et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific numerical data about the replication cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "9b898c1c-97e3-4a73-8f21-46e7c711eba8",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C80",
+      "claim": "A targeted sequencing panel comprising 167 selected genes associated with putative drivers of CHIP was designed at Twist Bioscience.",
+      "claim_type": "EXPLICIT",
+      "source": "We designed a targeted sequencing panel comprising 167 selected genes associated with putative drivers of CHIP at Twist Bioscience (South San Francisco, CA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific details about the sequencing panel design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "38e6d7b6-c855-41da-ba25-00874c41196d",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C81",
+      "claim": "The targeted sequencing panel was captured and sequenced using NextSeq 2000, with paired-end sequencing performed at a read length of 150 base pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The targeted sequencing panel was captured and sequenced using NextSeq 2000, with paired-end sequencing performed at a read length of 150 base pairs (bps).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific technical details about the sequencing method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "4d04d350-2f96-46a1-903e-92cb39438086",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C82",
+      "claim": "The Sarek pipeline (version 3.2.1) implemented in Nextflow was used for somatic variant calling.",
+      "claim_type": "EXPLICIT",
+      "source": "For somatic variant calling, the Sarek pipeline (version 3.2.1) implemented in Nextflow was used (Garcia et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific details about the bioinformatics pipeline used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "bf887385-adf9-4d76-bf7e-c5fbf07df2f2",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C83",
+      "claim": "The scRNA-seq dataset was generated using the 10\u00d7 Genomics 5\u2032 single-cell kit.",
+      "claim_type": "EXPLICIT",
+      "source": "The scRNA-seq dataset was generated using the 10\u00d7 Genomics 5\u2032 single-cell kit and was partially derived from a previous study (Kim et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific technical details about the scRNA-seq method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "2cf29095-1bf5-4b56-a98c-32174c8f02e5",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C84",
+      "claim": "Reads were aligned to the hg38 reference using 10X CellRanger (ver. 7.0).",
+      "claim_type": "EXPLICIT",
+      "source": "Reads were aligned to the hg38 reference using 10X CellRanger (ver. 7.0).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides specific technical details about the alignment method.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "df91c63b-54a2-499b-93e4-b6bb4e9ad807",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C85",
+      "claim": "A minimum of 100 samples per group with CHIP is required to achieve a statistical power of 0.8 from pair-wise comparisons between each gene and variant.",
+      "claim_type": "EXPLICIT",
+      "source": "According to our power analysis, a minimum of 100 samples per group with CHIP is required to achieve a statistical power of 0.8 from pair-wise comparisons between each gene and variant (Methods for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this calculation from their power analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "b15ccfe2-4699-47d3-b57d-32d014a98206",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C86",
+      "claim": "NF-\u03baB signaling mediated by the IL-1\u03b2 and the TNF superfamilies may enhance interactions of myeloid cells with other cell lineages.",
+      "claim_type": "EXPLICIT",
+      "source": "Our scRNA-seq analysis has revealed that NF-\u03baB signaling mediated by the IL-1\u03b2 and the TNF superfamilies may enhance interactions of myeloid cells with other cell lineages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides this interpretation based on their scRNA-seq analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "72165e7f-cb9d-42d6-a25b-952c4602b584",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C87",
+      "claim": "The median depth of CHIP-targeted sequencing was approximately 600\u00d7.",
+      "claim_type": "EXPLICIT",
+      "source": "These samples were utilized for a CHIP-targeted sequencing panel (median depth ~600\u00d7) and scRNA-seq (Figure 1A and Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific technical details about sequencing depth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "51840f72-ea6c-4730-a097-4b14729de78d",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "claim_id": "C88",
+      "claim": "The median depth of WES in the replication cohort was approximately 80\u00d7.",
+      "claim_type": "EXPLICIT",
+      "source": "To determine if this finding would reproduce in an independent cohort, we performed CHIP mutation calling using whole exome sequencing (WES) data of median ~80\u00d7 depth from 180 additional peripheral blood mononuclear cell (PBMC) samples from an independent cohort of NSCLC patients (Figure 2C\u2013E, Figure 2\u2014figure supplement 3, Supplementary file 1a, c, d and Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript provides specific technical details about sequencing depth in the replication cohort.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study collected blood samples from 100 metastatic NSCLC patients (50 LUAD, 43 LUSC, 7 others) before and after ICI treatment for CHIP-targeted sequencing (~600\u00d7 depth) and 63 samples for scRNA-seq. An independent replication cohort of 180 patients underwent WES (~80\u00d7 depth). Samples were processed using established bioinformatics pipelines including Sarek for variant calling and CellRanger for scRNA-seq alignment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C3, C76-C88 provide comprehensive methodological details about sample collection, cohort composition, sequencing approaches, and bioinformatics pipelines. The methods are clearly described with specific technical parameters (sequencing depth, software versions, panel design), supporting reproducibility. The two-cohort design (discovery and replication) strengthens the study design.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "eedb9e2b-5bdb-4d70-97ab-da06495d288a",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CHIP mutation profiling identified 67 mutations in 100 patients at baseline (26 in putative driver genes) and 68 mutations in 91 patients post-treatment (32 in putative drivers). DNMT3A, PPM1D, and TET2 were the most frequently mutated genes. ICI treatment caused minimal changes in CHIP burden, with VAF highly correlated before and after treatment regardless of clinical response. However, increased CHIP mutations with VAF >10% were noted in LUSC patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C34 provide specific numerical data on CHIP mutations detected before and after ICI treatment, with clear identification of frequently mutated genes. The finding of minimal ICI effect on CHIP burden is supported by correlation analysis (C33) and visual data (Figure 1). The LUSC-specific observation (C34) is noted but requires validation in the replication cohort.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CHIP status did not significantly impact immunotherapy response. The number of CHIP-positive patients remained unchanged before and after ICI treatment and showed no association with treatment response. This finding aligns with the understanding that ICIs modulate immune response pathways rather than cell proliferation, thus not directly influencing CH development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C32-C33, C36-C37, C46 consistently demonstrate no significant relationship between CHIP status and ICI response across multiple analyses. The mechanistic reasoning (C65-C66) is supported by prior literature. However, the study acknowledges power limitations (C85) requiring 100 samples per CHIP group for adequate statistical power, which was not achieved.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Metastatic NSCLC patients showed significantly higher CHIP prevalence compared to controls (44/100 vs. 5/42, p=0.01 after age adjustment). The patient cohort was older (mean age 64.1 vs. 58.9), had higher smoking prevalence (37/100 vs. 11/42), and was predominantly male (91/9 vs. 18/24). Despite these demographic differences, the CHIP prevalence finding aligns with previous studies in NSCLC patients, and the most prevalent mutations (DNMT3A, TET2, PPM1D) are marginally affected by smoking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C35, C57 provide consistent statistical evidence for elevated CHIP prevalence in NSCLC patients with appropriate age adjustment. Claims C71-C75 acknowledge potential confounders (age, smoking, sex) but provide literature support that the observed CHIP prevalence and mutation spectrum are consistent with prior NSCLC studies and that key mutations are not strongly smoking-associated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "78a21f0a-450b-47b0-a58c-15995c4b7cd2",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "LUSC patients showed increased burden of larger CHIP clones (VAF >10%) compared to LUAD patients (8/43 vs. 2/50, p=0.04), while LUAD patients more commonly harbored multiple concurrent CHIP mutations. This histology-specific difference in CHIP burden patterns was observed in the discovery cohort.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C6, C34, C39-C40, C58 report a statistically significant difference in CHIP clone size between LUSC and LUAD. However, the manuscript notes that the replication cohort did not achieve sufficient power to validate this finding. The small sample sizes in subgroups (8/43 vs. 2/50) and lack of replication raise concerns about the robustness of this observation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "911e0d0a-d654-4085-9025-deb81bfc23e6",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Single-cell RNA-seq analysis of 468,596 cells from 63 samples revealed significant enrichment of TNF signaling via NF-\u03baB pathways in myeloid clusters of high CHIP burden patients. While cell composition showed increased NK cells and decreased CD4 TEM after ICI, high sample variability precluded systematic differences by CHIP status. Core inflammatory genes (FOS, DUSP1, JUN, PPP1R15A) were shared between TNF signaling and hypoxia pathways across significant clusters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C41-C45, C59, C61-C63 provide comprehensive scRNA-seq analysis with specific cell counts, pathway enrichment results, and identification of key inflammatory genes. The GSEA analysis (C45, C62) with referenced figures supports the NF-\u03baB pathway activation. The acknowledgment of high variability limiting CHIP-specific cell composition differences (C44) demonstrates appropriate statistical caution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "9783f416-97a7-48c1-9dd7-bdb57210d466",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Gene network analyses using hdWGCNA and SCENIC revealed myeloid-specific inflammatory signatures in high CHIP burden patients. The 'black module' from WGCNA showed myeloid specificity and captured signaling-related DEGs. GRN analysis indicated elevated regulatory activity of AP-1 and NF-\u03baB pathway transcription factors (including NFKB1 and ATF3 regulons) in the myeloid lineage of high-burden patients, suggesting enhanced myeloid cell interactions with other lineages via IL-1\u03b2 and TNF superfamily signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49, C86 describe complementary network analyses (WGCNA and SCENIC) that converge on NF-\u03baB and AP-1 pathway activation in myeloid cells. The use of multiple analytical approaches strengthens the findings. The methods are appropriately described with software citations, and results are supported by referenced supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "affdd17c-cd18-4695-b841-847ef73b4438",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cell-cell interaction analysis revealed that monocytes and DCs in high-burden cases were activated as receptors for TNF and Lymphotoxin A. This finding parallels observations in COVID-19 patients with CH showing increased inflammatory response via IFN-\u03b3 and TNF-\u03b1 signaling. The IL-1 pathway has been implicated in lung cancer aggressiveness, and IL-1\u03b2 inhibition has shown efficacy in reducing lung cancer mortality in the CANTOS trial.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53, C60, C64, C68-C69 integrate the study's cell-cell interaction findings with established literature on inflammatory pathways in CH and lung cancer. The CellPhoneDB analysis (C53) provides mechanistic insight, while citations to prior work (C60, C68-C69) appropriately contextualize the findings within existing knowledge of inflammation-mediated cancer progression.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "ff4f507d-810e-4669-af84-58dd2c66da67",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Progression-free survival after ICI treatment was reduced in the high-burden CHIP group (825 vs. 404 days, p=0.056), with no difference in ICI response rates between groups. This marginal survival difference suggests that elevated inflammatory activity in the bloodstream may impact long-term patient survival, consistent with prior observations of negative effects on life expectancy in CHIP patients with solid tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C55, C67 report a survival difference that approaches but does not reach statistical significance (p=0.056). While the trend is consistent with prior literature (C56), the lack of statistical significance, relatively short observation period acknowledged by authors, and small sample size in the high-burden group limit the strength of this conclusion. The authors appropriately suggest this requires validation with larger cohorts.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge on CHIP, defining it as asymptomatic clonal hematopoiesis with VAF \u22652%, strongly associated with aging, smoking, and anticancer therapies. Representative CHIP genes (DNMT3A, ASXL1, TET2) impact myeloid populations and are linked to hematologic malignancies through NF-\u03baB and NLRP3 inflammasome-mediated inflammation. CHIP prevalence is elevated in cancer patients and associated with reduced survival. NSCLC has high mortality burden, and while ICIs have revolutionized treatment, response rates remain low and predictive markers are insufficient.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C26 provide appropriate background context with proper citations to establish the scientific foundation for the study. These claims accurately represent prior knowledge about CHIP biology, its clinical associations, and the rationale for investigating CHIP in ICI-treated NSCLC patients. The citations appear appropriate and the knowledge claims are consistent with the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "8cb6ec00-5aed-4b03-9848-cd4b462c40d4",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "PPM1D truncating mutations, common in the cohort, have been previously associated with smoking and chemotherapy history. HSPC-derived monocyte expansion causes CHIP, with genes like DNMT3A and TET2 exerting immune-regulatory effects through the NLRP3 inflammasome. A VAF of 10% in heterozygous mutations corresponds to ~20% of cells, sufficient to alter overall monocyte transcriptional profiles. Smoking and anticancer therapies may have more substantial impact on CH than immunotherapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31, C50-C52, C70 appropriately integrate prior mechanistic knowledge with the study's findings. The calculation relating VAF to cell percentage (C52) is mathematically sound for heterozygous mutations. The contextualization of relative impacts of different exposures (C70) is supported by cited literature and helps interpret the minimal ICI effect observed.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "628a0fa3-d276-4d81-842e-b3e765b19ed1",
+      "content_id": "c093e7bd-9821-4998-95bb-1a02033a2cff",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CHIP burden is heavily age-dependent, as confirmed in the study cohort. Power analysis indicated that a minimum of 100 samples per CHIP group would be required to achieve statistical power of 0.8 for pair-wise comparisons between genes and variants, which was not achieved in this study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38 and C85 acknowledge important limitations. The age-dependence of CHIP (C38) is well-established and confirmed in the data. The power analysis (C85) is appropriately conducted and honestly reported, explaining why certain gene-specific or variant-specific associations could not be definitively determined. This transparency strengthens the overall evaluation of the study's findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "8a2b3032-7ff0-48e7-88ca-881005ad8061",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study collected blood samples from 100 metastatic NSCLC patients before and after ICI treatment for high-depth CHIP-targeted sequencing (~600\u00d7 depth) and 63 samples for scRNA-seq. An independent replication cohort of 180 patients was analyzed using whole exome sequencing (~80\u00d7 depth).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly praised the study for 'analyzing a significant cohort of 100 patients for CHIP and utilizing scRNA-seq on 63 samples, showcasing the use of cutting-edge technology.' The editor noted this represents 'a significant body of work.' No concerns were raised about the cohort sizes or sequencing methods.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "51dd82c2-53df-4353-8786-978e09292385",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "ICI treatment had minimal effect on CHIP burden and clonal dynamics. VAF was highly correlated before and after treatment and not dependent on clinical responses. The number of CHIP-positive patients did not differ before and after ICI treatment, nor in relation to treatment response.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these findings without challenge. The editor noted the study 'addresses some novel aspects of the biology of lung cancer, the overall influence of CHIP and its impacts on responses to therapy.' The anonymous reviewer summarized findings as showing 'no significant CHIP influence on ICI response' without expressing concern.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "CHIP prevalence was significantly higher in metastatic lung cancer patients compared to controls (44/100 vs. 5/42, p=0.01). However, the cohort was biased toward older age, higher smoking prevalence, and more males compared to controls. The authors note that previous studies reported similar CHIP prevalence rates in NSCLC patients, and the most prevalent mutations (DNMT3A, TET2, PPM1D) were marginally affected by smoking.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledged the finding of higher CHIP prevalence, they raised significant concerns about confounding variables. The anonymous reviewer noted 'notable differences in sex distribution and smoking status' and that 'smoking is a well-established factor influencing CHIP status, this introduces potential confounding variables that may impact the study's conclusions.' Though the authors 'appropriately acknowledged these disparities,' the confounding remains a limitation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "2e740e36-caf0-4646-b312-2c588fea0fff",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Lung squamous cell carcinoma (LUSC) patients showed increased burden of larger CHIP clones (VAF >10%) compared to lung adenocarcinoma (LUAD) patients (8/43 vs. 2/50, p=0.04). High CHIP burden was prevalent in LUSC.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted this finding without challenge. The anonymous reviewer summarized it as 'a notable CHIP burden in squamous cell carcinoma' in their summary. The editor noted the study demonstrates findings with 'solid evidence.' No methodological concerns were raised about this comparison.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "3618d783-7225-467a-84d8-c66653867b96",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Single-cell RNA-seq analysis showed significant enrichment of inflammatory pathways mediated by NF-\u03baB in myeloid clusters of the high CHIP burden group. Gene set enrichment analysis indicated activation of TNF signaling via NF-\u03baB in most cell lineages. WGCNA and SCENIC analyses confirmed regulatory activity of transcription factors in the AP-1 and NF-\u03baB pathways in myeloid lineages. However, these interactions depended on CH status only, not on response to ICI.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly stated 'the authors demonstrate with solid evidence that this is also true for lung cancer' regarding the inflammatory phenotype associated with high CHIP burden. The anonymous reviewer noted 'severely affected CHIP groups showed NF-kB pathway gene enrichment in myeloid clusters' without raising concerns. Reviewers praised the use of 'cutting-edge technology' for this analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "ea315bac-aa38-4994-866a-4ff966c8af1d",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "At baseline, 67 CHIP mutations were identified in 100 patients, with 26 in known putative driver genes (CHIP-PD). After treatment, 68 CHIP and 32 CHIP-PD mutations were found in 91 patients. DNMT3A, PPM1D, and TET2 were the most frequently mutated CHIP genes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accepted these descriptive findings without challenge. The anonymous reviewer noted the study's strength in 'analyzing a significant cohort' and using appropriate sequencing methods. No concerns were raised about mutation identification or classification.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "f5fa6525-cd23-4fa8-b74f-76e9ca033cc3",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Multiple concurrent CHIP mutations were common in lung adenocarcinoma (LUAD) patients.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding was accepted without challenge by reviewers as part of the broader characterization of CHIP patterns in different NSCLC subtypes. No methodological concerns were raised.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "026541fa-bf58-48dc-b5d9-99fd6bc3b55a",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "From PBMC scRNA-seq data, 468,596 cells were retrieved in 26 clusters. Cell composition analysis showed increased NK cells and decreased CD4 TEM population after ICI administration, but high variability between samples precluded systematic differences by CHIP status.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers praised the scRNA-seq analysis as 'cutting-edge technology' and noted the 'significant cohort' analyzed. The finding of high variability was accepted without challenge, and reviewers did not question the inability to detect systematic differences by CHIP status in cell composition.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "8ceabbf8-e065-493f-bff3-31a7cec00fb4",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "When TNF and IL-1B pathways were analyzed separately, monocytes and DCs in high-burden cases were activated as receptors for TNF and Lymphotoxin A.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding was accepted as part of the broader inflammatory phenotype characterization that reviewers praised as demonstrating 'solid evidence.' No specific concerns were raised about this cell-cell interaction analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "cc568b4a-f2a3-4767-a82a-236aac173dbf",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Progression-free survival (PFS) after ICI treatment was reduced in the high-burden CHIP group (825 vs. 404 days, p=0.056). The authors suggest elevated inflammatory activity in the bloodstream may impact long-term patient survival pre- and post-ICI administration.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers did not explicitly challenge this finding, the p-value of 0.056 falls just short of conventional statistical significance. The editor noted 'CHIP is complex and more data will be required to substantiate more evidence with regard perhaps to specific mutations in certain situations and how this might influence therapy choices,' suggesting the survival findings require further validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "72016128-7786-4aff-8384-87ecec000a81",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "CHIP burden is heavily dependent on age, as previously reported.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding was accepted without challenge as it confirms established knowledge. Reviewers acknowledged age as a known factor in CHIP prevalence.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "c255eb12-f911-41cd-87bd-663fd32a8d13",
+      "content_id": "eb6dc864-ca50-4580-933f-72757093aaf9",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "According to power analysis, a minimum of 100 samples per group with CHIP is required to achieve a statistical power of 0.8 from pair-wise comparisons between each gene and variant.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers did not challenge the power analysis or sample size justification. The anonymous reviewer praised the study for 'analyzing a significant cohort of 100 patients,' suggesting the sample size was deemed adequate.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c3fbc475-f110-4fed-81d9-a3ad3e75c7d5",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "450f0a5f-47bf-4118-b032-073e55bec22f",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "ed40f3cc-920d-446f-88a9-a5a1188a8aa1",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "c3277c4b-0c8d-4e66-89bf-5435a5d22fad",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "a177040c-a61c-4650-8c24-f070d89f08c6",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "247d53fc-279a-4f92-a346-d7a7ed09f91f",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "b99b7fc4-45f1-4625-88a3-b63894f27751",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "9b898c1c-97e3-4a73-8f21-46e7c711eba8",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "38e6d7b6-c855-41da-ba25-00874c41196d",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "4d04d350-2f96-46a1-903e-92cb39438086",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "bf887385-adf9-4d76-bf7e-c5fbf07df2f2",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "2cf29095-1bf5-4b56-a98c-32174c8f02e5",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "72165e7f-cb9d-42d6-a25b-952c4602b584",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "51840f72-ea6c-4730-a097-4b14729de78d",
+      "result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967"
+    },
+    {
+      "claim_id": "d82b3936-3f9b-4e12-97d4-162392582924",
+      "result_id": "eedb9e2b-5bdb-4d70-97ab-da06495d288a"
+    },
+    {
+      "claim_id": "ffd42d42-1308-4752-8ea8-ddd3c2293237",
+      "result_id": "eedb9e2b-5bdb-4d70-97ab-da06495d288a"
+    },
+    {
+      "claim_id": "bb07fc1d-3457-4f7a-be7d-1e4dc20375dd",
+      "result_id": "eedb9e2b-5bdb-4d70-97ab-da06495d288a"
+    },
+    {
+      "claim_id": "68be0085-6032-422f-b424-7ddc4a325b43",
+      "result_id": "eedb9e2b-5bdb-4d70-97ab-da06495d288a"
+    },
+    {
+      "claim_id": "b838776c-fd4d-441a-9d0c-b534d3a33c55",
+      "result_id": "eedb9e2b-5bdb-4d70-97ab-da06495d288a"
+    },
+    {
+      "claim_id": "36932fa6-75db-4fac-a27a-430117c2b44d",
+      "result_id": "eedb9e2b-5bdb-4d70-97ab-da06495d288a"
+    },
+    {
+      "claim_id": "0573aaef-3ab8-4a3e-8f00-cc89003a53bc",
+      "result_id": "eedb9e2b-5bdb-4d70-97ab-da06495d288a"
+    },
+    {
+      "claim_id": "93b65e40-b0f1-484d-a843-014b78a47906",
+      "result_id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b"
+    },
+    {
+      "claim_id": "b838776c-fd4d-441a-9d0c-b534d3a33c55",
+      "result_id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b"
+    },
+    {
+      "claim_id": "36932fa6-75db-4fac-a27a-430117c2b44d",
+      "result_id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b"
+    },
+    {
+      "claim_id": "c3b906a1-1ef8-45c9-a164-49b3f69928e3",
+      "result_id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b"
+    },
+    {
+      "claim_id": "09fcbb44-e600-4945-b835-493a88d4c375",
+      "result_id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b"
+    },
+    {
+      "claim_id": "236a219f-056d-4939-9498-9755d6412130",
+      "result_id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b"
+    },
+    {
+      "claim_id": "1ac948a1-7dd4-4a59-b327-d9f79213b266",
+      "result_id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b"
+    },
+    {
+      "claim_id": "44d7efe8-8dda-4f5f-97b9-165d6cacfb2c",
+      "result_id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b"
+    },
+    {
+      "claim_id": "db416846-2cbd-4e58-9614-a0447da9ef94",
+      "result_id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1"
+    },
+    {
+      "claim_id": "1b3b5ed5-5895-404a-9f44-a88748475ba5",
+      "result_id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1"
+    },
+    {
+      "claim_id": "7dd29092-8e3c-44f6-a1f2-b156403bee30",
+      "result_id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1"
+    },
+    {
+      "claim_id": "9f315280-a2c1-40ed-9232-ab2209f3361a",
+      "result_id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1"
+    },
+    {
+      "claim_id": "1f4f36c4-2cf3-4096-9c60-a1149af44ec9",
+      "result_id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1"
+    },
+    {
+      "claim_id": "ed665ca7-5208-4ebb-882a-3200a8990589",
+      "result_id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1"
+    },
+    {
+      "claim_id": "18ea699e-65a2-4d9c-bf1c-897296e522bb",
+      "result_id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1"
+    },
+    {
+      "claim_id": "7b0ad96e-c88b-4349-896c-62cbc68b7a26",
+      "result_id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1"
+    },
+    {
+      "claim_id": "a57f5d14-1ac5-417e-afea-186af608c7e1",
+      "result_id": "78a21f0a-450b-47b0-a58c-15995c4b7cd2"
+    },
+    {
+      "claim_id": "0573aaef-3ab8-4a3e-8f00-cc89003a53bc",
+      "result_id": "78a21f0a-450b-47b0-a58c-15995c4b7cd2"
+    },
+    {
+      "claim_id": "128f3288-1ec4-467c-8184-b0fa69623d40",
+      "result_id": "78a21f0a-450b-47b0-a58c-15995c4b7cd2"
+    },
+    {
+      "claim_id": "f49b353e-fd48-4fd6-9c2a-1e2a55bcd713",
+      "result_id": "78a21f0a-450b-47b0-a58c-15995c4b7cd2"
+    },
+    {
+      "claim_id": "b64c846b-2077-4489-ac12-403ea3efed09",
+      "result_id": "78a21f0a-450b-47b0-a58c-15995c4b7cd2"
+    },
+    {
+      "claim_id": "9c7db79f-f6e0-4dbe-94e0-c536da0e4892",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "3b22c7bb-065b-4c22-a7f0-bc5722358012",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "2101a2f1-adeb-4f91-80e1-c4c7935cf1dc",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "f7740cd4-9785-493c-835a-40f7af600154",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "008bcc39-3773-43a8-8c27-c716a5bc95c0",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "f62bc8e7-cf81-492c-9f66-be935347f0b2",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "ec632dfc-648e-4e7a-b800-9c7cb2d83c2c",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "9997d96a-1d3d-4552-9ad1-768f12ee01db",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "96357f46-a5db-4997-9238-c4f0c6b60228",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "463bb352-f103-49d2-9af6-dc1577e1b909",
+      "result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6"
+    },
+    {
+      "claim_id": "31dccac4-ea90-4184-b078-496acc91ec65",
+      "result_id": "9783f416-97a7-48c1-9dd7-bdb57210d466"
+    },
+    {
+      "claim_id": "6e58a08e-e505-4cfd-9c56-eaf75a96ce42",
+      "result_id": "9783f416-97a7-48c1-9dd7-bdb57210d466"
+    },
+    {
+      "claim_id": "46a67858-c795-47db-bf9a-e4203cea688c",
+      "result_id": "9783f416-97a7-48c1-9dd7-bdb57210d466"
+    },
+    {
+      "claim_id": "b15ccfe2-4699-47d3-b57d-32d014a98206",
+      "result_id": "9783f416-97a7-48c1-9dd7-bdb57210d466"
+    },
+    {
+      "claim_id": "f762b70e-c6d8-4a4a-97fd-28a0c24a701e",
+      "result_id": "affdd17c-cd18-4695-b841-847ef73b4438"
+    },
+    {
+      "claim_id": "b2602e7a-754e-4cb5-a064-c725524bcb26",
+      "result_id": "affdd17c-cd18-4695-b841-847ef73b4438"
+    },
+    {
+      "claim_id": "22443564-00f8-4d16-8cee-498a78554280",
+      "result_id": "affdd17c-cd18-4695-b841-847ef73b4438"
+    },
+    {
+      "claim_id": "790fbde9-1f54-431b-9cb6-91840b201807",
+      "result_id": "affdd17c-cd18-4695-b841-847ef73b4438"
+    },
+    {
+      "claim_id": "0fe840c3-2710-435e-bb5e-f5f39039b89b",
+      "result_id": "affdd17c-cd18-4695-b841-847ef73b4438"
+    },
+    {
+      "claim_id": "26007405-6014-4ef1-94f7-c4d022d65faf",
+      "result_id": "ff4f507d-810e-4669-af84-58dd2c66da67"
+    },
+    {
+      "claim_id": "094f4e5a-b544-49fd-bcf3-e70f3b24b17a",
+      "result_id": "ff4f507d-810e-4669-af84-58dd2c66da67"
+    },
+    {
+      "claim_id": "7adc510f-0469-48ca-a807-8a4e4ddff11f",
+      "result_id": "ff4f507d-810e-4669-af84-58dd2c66da67"
+    },
+    {
+      "claim_id": "df512304-8109-4167-b366-aab448cdd789",
+      "result_id": "ff4f507d-810e-4669-af84-58dd2c66da67"
+    },
+    {
+      "claim_id": "2d965465-3156-43ed-8313-df8adefeb99e",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "35701b6a-2697-45c9-a448-9a35dcf56704",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "c1ac0a1a-62c4-4e0b-bae5-772293415def",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "5ced0907-d298-4d1a-b086-4350ba9ae29e",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "c6b21705-3cfa-4cf6-9c7a-7f99d0c6f054",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "af353636-9c32-49cf-9968-e73b3919b60e",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "5a721a0b-de99-4bb0-8d48-3a2e8028d946",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "345050c7-d6f6-4021-822a-1df95d184eda",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "ea5e021d-1c02-426c-9a6a-5e7453f9548d",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "797a08ea-5234-4ebb-93bb-f743d19977f2",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "4a7c5e69-dcc3-4730-8db1-76805379cfa5",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "47723d50-ecc3-4de2-b593-27d0b8f31d14",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "4b6c10f8-13c0-471a-a4cd-48fb7ef4fccb",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "2839bbba-4855-4d6e-af9a-a4b044ca0048",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "25eecc41-9cfe-4b6b-a469-f675a84d62db",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "22e80094-65be-450f-b6b1-40e4fc7d5498",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "251f54e8-1986-4a21-a21b-7517c1b9f980",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "9220e261-5fe3-45ba-b593-6a8b211ca5c0",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "c36585a2-3bbe-44d4-b546-ef0ab286f4db",
+      "result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9"
+    },
+    {
+      "claim_id": "a82b76a3-cbd2-4b22-a81f-ae56b417b963",
+      "result_id": "8cb6ec00-5aed-4b03-9848-cd4b462c40d4"
+    },
+    {
+      "claim_id": "18042ae1-00ab-4918-8309-1aec6caa1472",
+      "result_id": "8cb6ec00-5aed-4b03-9848-cd4b462c40d4"
+    },
+    {
+      "claim_id": "f104d942-e78b-41a0-a97b-7a9618b51ec5",
+      "result_id": "8cb6ec00-5aed-4b03-9848-cd4b462c40d4"
+    },
+    {
+      "claim_id": "b9e3745f-6583-451e-86ff-d319499f032b",
+      "result_id": "8cb6ec00-5aed-4b03-9848-cd4b462c40d4"
+    },
+    {
+      "claim_id": "bda9197a-78d6-4424-ad56-7affe9c6842c",
+      "result_id": "8cb6ec00-5aed-4b03-9848-cd4b462c40d4"
+    },
+    {
+      "claim_id": "4303d690-ebf4-4e0c-b6ed-0130629d7615",
+      "result_id": "628a0fa3-d276-4d81-842e-b3e765b19ed1"
+    },
+    {
+      "claim_id": "df91c63b-54a2-499b-93e4-b6bb4e9ad807",
+      "result_id": "628a0fa3-d276-4d81-842e-b3e765b19ed1"
+    },
+    {
+      "claim_id": "c3fbc475-f110-4fed-81d9-a3ad3e75c7d5",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "450f0a5f-47bf-4118-b032-073e55bec22f",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "ed40f3cc-920d-446f-88a9-a5a1188a8aa1",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "c3277c4b-0c8d-4e66-89bf-5435a5d22fad",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "a177040c-a61c-4650-8c24-f070d89f08c6",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "247d53fc-279a-4f92-a346-d7a7ed09f91f",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "b99b7fc4-45f1-4625-88a3-b63894f27751",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "9b898c1c-97e3-4a73-8f21-46e7c711eba8",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "38e6d7b6-c855-41da-ba25-00874c41196d",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "4d04d350-2f96-46a1-903e-92cb39438086",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "bf887385-adf9-4d76-bf7e-c5fbf07df2f2",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "2cf29095-1bf5-4b56-a98c-32174c8f02e5",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "72165e7f-cb9d-42d6-a25b-952c4602b584",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "51840f72-ea6c-4730-a097-4b14729de78d",
+      "result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061"
+    },
+    {
+      "claim_id": "93b65e40-b0f1-484d-a843-014b78a47906",
+      "result_id": "51dd82c2-53df-4353-8786-978e09292385"
+    },
+    {
+      "claim_id": "b838776c-fd4d-441a-9d0c-b534d3a33c55",
+      "result_id": "51dd82c2-53df-4353-8786-978e09292385"
+    },
+    {
+      "claim_id": "36932fa6-75db-4fac-a27a-430117c2b44d",
+      "result_id": "51dd82c2-53df-4353-8786-978e09292385"
+    },
+    {
+      "claim_id": "c3b906a1-1ef8-45c9-a164-49b3f69928e3",
+      "result_id": "51dd82c2-53df-4353-8786-978e09292385"
+    },
+    {
+      "claim_id": "09fcbb44-e600-4945-b835-493a88d4c375",
+      "result_id": "51dd82c2-53df-4353-8786-978e09292385"
+    },
+    {
+      "claim_id": "094f4e5a-b544-49fd-bcf3-e70f3b24b17a",
+      "result_id": "51dd82c2-53df-4353-8786-978e09292385"
+    },
+    {
+      "claim_id": "1ac948a1-7dd4-4a59-b327-d9f79213b266",
+      "result_id": "51dd82c2-53df-4353-8786-978e09292385"
+    },
+    {
+      "claim_id": "44d7efe8-8dda-4f5f-97b9-165d6cacfb2c",
+      "result_id": "51dd82c2-53df-4353-8786-978e09292385"
+    },
+    {
+      "claim_id": "db416846-2cbd-4e58-9614-a0447da9ef94",
+      "result_id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08"
+    },
+    {
+      "claim_id": "1b3b5ed5-5895-404a-9f44-a88748475ba5",
+      "result_id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08"
+    },
+    {
+      "claim_id": "7dd29092-8e3c-44f6-a1f2-b156403bee30",
+      "result_id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08"
+    },
+    {
+      "claim_id": "9f315280-a2c1-40ed-9232-ab2209f3361a",
+      "result_id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08"
+    },
+    {
+      "claim_id": "1f4f36c4-2cf3-4096-9c60-a1149af44ec9",
+      "result_id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08"
+    },
+    {
+      "claim_id": "ed665ca7-5208-4ebb-882a-3200a8990589",
+      "result_id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08"
+    },
+    {
+      "claim_id": "18ea699e-65a2-4d9c-bf1c-897296e522bb",
+      "result_id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08"
+    },
+    {
+      "claim_id": "7b0ad96e-c88b-4349-896c-62cbc68b7a26",
+      "result_id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08"
+    },
+    {
+      "claim_id": "a57f5d14-1ac5-417e-afea-186af608c7e1",
+      "result_id": "2e740e36-caf0-4646-b312-2c588fea0fff"
+    },
+    {
+      "claim_id": "0573aaef-3ab8-4a3e-8f00-cc89003a53bc",
+      "result_id": "2e740e36-caf0-4646-b312-2c588fea0fff"
+    },
+    {
+      "claim_id": "128f3288-1ec4-467c-8184-b0fa69623d40",
+      "result_id": "2e740e36-caf0-4646-b312-2c588fea0fff"
+    },
+    {
+      "claim_id": "b64c846b-2077-4489-ac12-403ea3efed09",
+      "result_id": "2e740e36-caf0-4646-b312-2c588fea0fff"
+    },
+    {
+      "claim_id": "9c7db79f-f6e0-4dbe-94e0-c536da0e4892",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "f62bc8e7-cf81-492c-9f66-be935347f0b2",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "236a219f-056d-4939-9498-9755d6412130",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "31dccac4-ea90-4184-b078-496acc91ec65",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "6e58a08e-e505-4cfd-9c56-eaf75a96ce42",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "46a67858-c795-47db-bf9a-e4203cea688c",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "ec632dfc-648e-4e7a-b800-9c7cb2d83c2c",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "9997d96a-1d3d-4552-9ad1-768f12ee01db",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "96357f46-a5db-4997-9238-c4f0c6b60228",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "463bb352-f103-49d2-9af6-dc1577e1b909",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "b15ccfe2-4699-47d3-b57d-32d014a98206",
+      "result_id": "3618d783-7225-467a-84d8-c66653867b96"
+    },
+    {
+      "claim_id": "d82b3936-3f9b-4e12-97d4-162392582924",
+      "result_id": "ea315bac-aa38-4994-866a-4ff966c8af1d"
+    },
+    {
+      "claim_id": "ffd42d42-1308-4752-8ea8-ddd3c2293237",
+      "result_id": "ea315bac-aa38-4994-866a-4ff966c8af1d"
+    },
+    {
+      "claim_id": "bb07fc1d-3457-4f7a-be7d-1e4dc20375dd",
+      "result_id": "ea315bac-aa38-4994-866a-4ff966c8af1d"
+    },
+    {
+      "claim_id": "68be0085-6032-422f-b424-7ddc4a325b43",
+      "result_id": "ea315bac-aa38-4994-866a-4ff966c8af1d"
+    },
+    {
+      "claim_id": "a82b76a3-cbd2-4b22-a81f-ae56b417b963",
+      "result_id": "ea315bac-aa38-4994-866a-4ff966c8af1d"
+    },
+    {
+      "claim_id": "f49b353e-fd48-4fd6-9c2a-1e2a55bcd713",
+      "result_id": "f5fa6525-cd23-4fa8-b74f-76e9ca033cc3"
+    },
+    {
+      "claim_id": "3b22c7bb-065b-4c22-a7f0-bc5722358012",
+      "result_id": "026541fa-bf58-48dc-b5d9-99fd6bc3b55a"
+    },
+    {
+      "claim_id": "2101a2f1-adeb-4f91-80e1-c4c7935cf1dc",
+      "result_id": "026541fa-bf58-48dc-b5d9-99fd6bc3b55a"
+    },
+    {
+      "claim_id": "f7740cd4-9785-493c-835a-40f7af600154",
+      "result_id": "026541fa-bf58-48dc-b5d9-99fd6bc3b55a"
+    },
+    {
+      "claim_id": "008bcc39-3773-43a8-8c27-c716a5bc95c0",
+      "result_id": "026541fa-bf58-48dc-b5d9-99fd6bc3b55a"
+    },
+    {
+      "claim_id": "f762b70e-c6d8-4a4a-97fd-28a0c24a701e",
+      "result_id": "8ceabbf8-e065-493f-bff3-31a7cec00fb4"
+    },
+    {
+      "claim_id": "26007405-6014-4ef1-94f7-c4d022d65faf",
+      "result_id": "cc568b4a-f2a3-4767-a82a-236aac173dbf"
+    },
+    {
+      "claim_id": "df512304-8109-4167-b366-aab448cdd789",
+      "result_id": "cc568b4a-f2a3-4767-a82a-236aac173dbf"
+    },
+    {
+      "claim_id": "4303d690-ebf4-4e0c-b6ed-0130629d7615",
+      "result_id": "72016128-7786-4aff-8384-87ecec000a81"
+    },
+    {
+      "claim_id": "df91c63b-54a2-499b-93e4-b6bb4e9ad807",
+      "result_id": "c255eb12-f911-41cd-87bd-663fd32a8d13"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b9cf45e9-ed11-421d-9fa2-5ed198845291",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "dd497a1c-81dd-43f2-b0bf-0e2b91873967",
+      "peer_result_id": "8a2b3032-7ff0-48e7-88ca-881005ad8061",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on methodological claims (C1-C3, C76-C88). Both evaluations rate the study design, cohort composition, sequencing approaches, and bioinformatics pipelines as SUPPORTED. Reviewers praised the 'significant cohort' and 'cutting-edge technology,' aligning with OpenEval's assessment of comprehensive methodological details supporting reproducibility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "23ec8e0e-eb4c-4dd8-b956-b232878c3853",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "f688eafc-bdbe-4e08-a40c-746cfc740e9b",
+      "peer_result_id": "51dd82c2-53df-4353-8786-978e09292385",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on lack of CHIP-ICI response relationship (C4, C32-C33, C36-C37, C65-C66). Both rate as SUPPORTED. OpenEval acknowledges power limitations while peer reviewers accepted findings without challenge, with editor noting the study 'addresses novel aspects' of CHIP impacts on therapy responses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "4031d98b-c51c-426e-81f9-0e00167bffc6",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "a8b86ce2-6e80-4236-8103-f9ed0fdba3b1",
+      "peer_result_id": "b524f70e-8461-42e9-b3be-db2ebb9f4b08",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on elevated CHIP prevalence claims (C5, C35, C57, C71-C75). OpenEval rates SUPPORTED with appropriate age adjustment and literature support. Peer reviewers rate UNCERTAIN, raising significant concerns about confounding variables (sex distribution, smoking status) despite acknowledging authors addressed these disparities.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "5763a59c-caec-4277-96f2-5455aa3288e1",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "78a21f0a-450b-47b0-a58c-15995c4b7cd2",
+      "peer_result_id": "2e740e36-caf0-4646-b312-2c588fea0fff",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on LUSC vs LUAD CHIP differences (C6, C34, C39-C40, C58). OpenEval rates UNCERTAIN due to lack of replication and small sample sizes. Peer reviewers rate SUPPORTED, accepting the finding without challenge and noting 'solid evidence' for CHIP burden differences in squamous cell carcinoma.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "65352e08-a6ae-41b3-bfd6-f131d7944cf9",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6",
+      "peer_result_id": "3618d783-7225-467a-84d8-c66653867b96",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on scRNA-seq inflammatory pathway findings (C7, C45, C59, C61-C63). Both rate SUPPORTED. OpenEval emphasizes comprehensive GSEA analysis and NF-\u03baB pathway activation. Peer reviewers praised 'solid evidence' for inflammatory phenotype and 'cutting-edge technology,' though OpenEval also covers C41-C44 on cell composition variability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "53201c0a-78fe-4a91-a0b8-e6f879ded713",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "911e0d0a-d654-4085-9025-deb81bfc23e6",
+      "peer_result_id": "026541fa-bf58-48dc-b5d9-99fd6bc3b55a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on cell composition analysis (C41-C44). Both rate SUPPORTED. OpenEval notes appropriate statistical caution regarding high variability limiting CHIP-specific differences. Peer reviewers accepted the scRNA-seq findings and praised the methodology without questioning the inability to detect systematic differences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "a80938cd-ff17-4b16-83af-0ec5982d1b4a",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "9783f416-97a7-48c1-9dd7-bdb57210d466",
+      "peer_result_id": "3618d783-7225-467a-84d8-c66653867b96",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on network analyses identifying NF-\u03baB and AP-1 pathways (C47-C49, C86). Both rate SUPPORTED. OpenEval emphasizes convergence of multiple analytical approaches (WGCNA, SCENIC). Peer reviewers accepted these findings as part of the inflammatory phenotype characterization with 'solid evidence.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "5b9a7ee9-b236-4497-9cf6-448b44438ac3",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "eedb9e2b-5bdb-4d70-97ab-da06495d288a",
+      "peer_result_id": "ea315bac-aa38-4994-866a-4ff966c8af1d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on CHIP mutation detection and characterization (C27-C30). Both rate SUPPORTED. OpenEval provides detailed assessment of numerical data and correlation analyses. Peer reviewers accepted descriptive findings without challenge, praising the 'significant cohort' and sequencing methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "741267a7-6c15-4464-a086-b04fd71f3019",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "affdd17c-cd18-4695-b841-847ef73b4438",
+      "peer_result_id": "8ceabbf8-e065-493f-bff3-31a7cec00fb4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on cell-cell interaction findings (C53). Both rate SUPPORTED. OpenEval integrates CellPhoneDB analysis with established literature on inflammatory pathways. Peer reviewers accepted this as part of the broader inflammatory phenotype characterization demonstrating 'solid evidence.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "f2787793-ed17-4802-9727-80e98d2580ee",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ff4f507d-810e-4669-af84-58dd2c66da67",
+      "peer_result_id": "cc568b4a-f2a3-4767-a82a-236aac173dbf",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on survival findings (C54, C67). Both rate UNCERTAIN. OpenEval notes p=0.056 approaches but doesn't reach significance, requiring validation. Peer reviewers implicitly acknowledge uncertainty, with editor noting 'more data will be required to substantiate more evidence' regarding CHIP's influence on therapy choices.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "5a669247-6586-4183-87ec-a0cef4b7836e",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "628a0fa3-d276-4d81-842e-b3e765b19ed1",
+      "peer_result_id": "72016128-7786-4aff-8384-87ecec000a81",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on age-dependence of CHIP (C38). Both rate SUPPORTED. OpenEval notes this is well-established and confirmed in data. Peer reviewers accepted without challenge as it confirms established knowledge about age as a known factor in CHIP prevalence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "6a823ad3-3dfe-4651-84e6-c3ac9b9296b0",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "628a0fa3-d276-4d81-842e-b3e765b19ed1",
+      "peer_result_id": "c255eb12-f911-41cd-87bd-663fd32a8d13",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on power analysis and sample size limitations (C85). Both rate SUPPORTED. OpenEval praises transparency in acknowledging limitations. Peer reviewers did not challenge the power analysis, with anonymous reviewer praising the 'significant cohort of 100 patients' as adequate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "0fbcf62d-9be4-47eb-a32f-f7468148eaab",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "78a21f0a-450b-47b0-a58c-15995c4b7cd2",
+      "peer_result_id": "f5fa6525-cd23-4fa8-b74f-76e9ca033cc3",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address LUSC-related findings (C40). OpenEval includes C40 in broader UNCERTAIN evaluation of LUSC vs LUAD differences due to lack of replication. Peer reviewers rate C40 alone as SUPPORTED without methodological concerns as part of NSCLC subtype characterization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "2c91364e-cfe8-4797-ac43-5433443a5028",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "8cb6ec00-5aed-4b03-9848-cd4b462c40d4",
+      "peer_result_id": "ea315bac-aa38-4994-866a-4ff966c8af1d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address mechanistic contextualization (C31). OpenEval rates SUPPORTED for integration of prior knowledge and VAF calculations. Peer reviewers accepted C31 as part of descriptive mutation findings without specific evaluation of the mechanistic reasoning.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "b678675a-d73a-4459-a30a-6a1d3244862a",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "206c56bb-a35a-45df-afae-5aa1dd9d86c9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background/introduction claims (C8-C26) as SUPPORTED, noting appropriate citations and accurate representation of prior knowledge about CHIP biology. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "393b2095-619e-4de0-a0f8-6681b9bb3c6a",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "8cb6ec00-5aed-4b03-9848-cd4b462c40d4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated mechanistic integration claims (C50-C52, C70) as SUPPORTED, noting sound mathematical reasoning and appropriate literature contextualization. Peer reviewers did not separately evaluate these mechanistic reasoning claims beyond C31.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "2d89d010-84c0-4608-93dd-e1028d5b4deb",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "affdd17c-cd18-4695-b841-847ef73b4438",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated literature integration claims (C60, C64, C68-C69) as SUPPORTED for contextualizing findings within existing knowledge of inflammation-mediated cancer progression. No corresponding separate peer evaluation found for these literature contextualization claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    },
+    {
+      "id": "e3361608-eecb-4c29-8360-203fa8f120ae",
+      "submission_id": "b920222e-470a-4f10-813f-5ea8f2cd4d15",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "ff4f507d-810e-4669-af84-58dd2c66da67",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated survival trend claims (C55-C56) as UNCERTAIN, noting consistency with prior literature but lack of statistical significance. Peer reviewers addressed C55 only tangentially within their broader survival evaluation (R10).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:28:47.409266Z"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Fractal cycles, defined as time intervals during which fractal slopes descend to local minima and ascend to local maxima, occur 4-6 times per night with mean duration of 89\u00b134 min, closely matching classical sleep cycle duration (90\u00b125 min, r=0.4-0.5, p<0.001). 81% of fractal cycles matched classical cycles, with 54% of participants showing complete correspondence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C50 provide converging evidence from multiple datasets (n=205 participants, 940 cycles) showing strong correspondence between fractal and classical cycles. The correlation coefficients (r=0.4-0.5), Bayesian analysis (96% HDI: 0.77-0.83), and visual inspection data collectively support the validity of the fractal cycle concept. The statistical rigor and replication across five independent datasets strengthen these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C77",
+      "C78"
+    ],
+    "result": "Mismatches between fractal and classical cycles are associated with longer REM episodes (r=0.36, p<0.001) and higher wake after sleep onset (WASO) proportions (r=0.23, p=0.001), as both REM and wake-related fractal slopes can be identified as local peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 and C77-C78 provide mechanistic explanations for observed discrepancies between fractal and classical cycles. The correlational evidence is statistically significant and biologically plausible, explaining why the algorithm shows imperfect correspondence. The explanation that smoothed wake and REM slopes show similar values is supported by visual data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Children and adolescents (mean age 12.4\u00b13.1 years) showed shorter fractal cycles than young adults (76\u00b134 vs 94\u00b132 min, p<0.001, d=-0.57), with fractal cycles showing higher sensitivity to age differences than classical cycles based on F-values, R\u00b2, and effect sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 demonstrate age-related differences in fractal cycles with appropriate statistical testing (Mann-Whitney U, MANOVA) and medium effect sizes. The direct comparison showing fractal cycles have higher F-values and effect sizes than classical cycles supports the claim of superior sensitivity. However, the sample size for the pediatric group is relatively small (n=21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C7"
+    ],
+    "result": "The fractal cycle algorithm detected cycles with skipped REM sleep in 91-98% of cases, matching or exceeding the 91% inter-rater agreement between human scorers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 provide strong validation evidence for the algorithm's ability to detect skipped cycles. The performance metrics (91-98% detection rate) are comparable to or better than human inter-rater agreement (91%), demonstrating clinical utility. The comparison with two independent human raters strengthens the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "In adults, fractal cycle duration negatively correlated with age (r=-0.19, p=0.006), remaining significant after controlling for WASO (r=-0.18, p=0.011) and REM latency (r=-0.16, p=0.025), while classical cycle duration showed no age correlation (r=-0.02, p=0.751).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61-C64 show age-related effects on fractal but not classical cycles. However, the correlations are weak (r=-0.16 to -0.19) and only significant in the pooled dataset, not individual datasets. The authors acknowledge non-linearities and unclear mechanisms. The partial correlations controlling for confounders are appropriate, but the biological interpretation remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Medicated MDD patients showed longer fractal cycles than controls (104\u00b149 vs 88\u00b131 min, p<0.001) and their own unmedicated state (107\u00b151 vs 92\u00b138 min, p=0.001, d=0.4), with REM-suppressive antidepressants showing greater effects than REM-non-suppressive medications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 demonstrate clinical utility of fractal cycles in MDD with appropriate within-subject and between-group comparisons. The medium effect sizes (d=0.3-0.7) and statistical significance across multiple datasets (n=111 patients) support the findings. The medication-specific effects (REM-suppressive vs non-suppressive) provide mechanistic insight, though tested in limited datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Automatically identified classical sleep cycles showed moderate correlation with human raters (r=0.3-0.7), comparable to fractal-classical cycle correlations (r=0.41-0.55) but lower than inter-rater agreement for classical cycles (r=0.7-0.9).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 provide important methodological context showing that fractal-classical cycle correspondence is comparable to automatic-manual classical cycle correspondence. This suggests the fractal approach is not inferior to existing automated methods. The comparison with human inter-rater reliability (r=0.7-0.9) provides appropriate benchmarking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Fractal slopes show cycling patterns throughout the entire night, unlike slow-wave activity (SWA) which only cycles during early sleep, with lower inter-individual variability than SWA while maintaining strong correlation (31-53% shared variance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 establish advantages of fractal cycles over SWA as a sleep marker. The cited evidence for lower inter-individual variability and whole-night cycling is supported by both current data and literature citations. However, the direct comparison relies partially on prior work rather than systematic comparison in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Fractal cycles represent an objective, quantifiable, continuous, and biologically plausible method to display sleep neural activity and cycles, meaningfully adding to conventional hypnograms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 represent the main conclusions synthesizing the study findings. The evidence from multiple datasets, age groups, and clinical populations supports these claims. The objectivity (automated), quantifiability (continuous measure), and biological plausibility (correlation with known sleep architecture) are demonstrated throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Fractal slopes reflect the balance between excitatory and inhibitory neural currents, discriminate between sleep stages and consciousness states, and relate to the reciprocal interaction model involving aminergic and cholinergic neurotransmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C38 establish the theoretical foundation for fractal cycles based on extensive prior literature. All claims are supported by appropriate citations to established work. This provides the biological plausibility for the fractal cycle concept, though the mechanistic details are based on prior work rather than direct testing in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C109",
+      "C110",
+      "C111",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Fractal cycle dynamics may reflect antagonistic sleep functions, with troughs representing restorative processes and peaks representing environmental monitoring, potentially mediated by acetylcholine release during ascents and aminergic activity during descents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 and C109-C115 present speculative mechanistic interpretations of fractal cycle function. While biologically plausible and consistent with existing models, these are explicitly marked as speculation by the authors. The hypotheses about neurotransmitter involvement (particularly C110-C111) are based on rat studies and require direct validation in humans.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The fractal cycle algorithm detects skipped cycles because sleep lightening appears as local peaks in fractal time series, suggesting potential utility for detecting REM sleep without atonia in REM behavior disorder.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C92 provides a reasonable mechanistic explanation for skipped cycle detection supported by the data. However, C93's hypothesis about REM behavior disorder is purely speculative without supporting data. The extension to clinical applications beyond what was tested requires validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Fractal cycles show greater sensitivity to age-related alterations than classical cycles, potentially related to homeostatic pressure, REM latency, and circadian rhythm differences, though mechanisms remain unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C100 attempt to explain age effects on fractal cycles through multiple mechanisms (homeostatic pressure, REM latency, chronotype, circadian rhythm). However, the authors acknowledge weak correlations, non-linearities, and unclear mechanisms. The partial correlation controlling for REM latency was non-significant, undermining one proposed explanation. The mechanistic understanding requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Longer fractal cycles in medicated MDD patients may result from flatter fractal slopes due to antidepressants, similar to effects seen in sleep restriction and insomnia, with insomnia patients showing shorter fractal cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 provide mechanistic explanations for MDD findings based on prior work showing flatter slopes with medication. However, C102's interpretation is speculative about algorithm sensitivity. C105 presents pilot findings on insomnia (n not specified) that require replication. The mechanistic links between flatter slopes, longer cycles, and clinical conditions need more direct testing.",
+    "result_type": "MINOR"
+  }
+]

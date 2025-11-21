@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Experimental observations show that intact cats cannot consistently perform treadmill locomotion below 0.3-0.4 m/s, whereas spinal cats can walk at these slow speeds. At moderate speeds (0.4-1.0 m/s), both intact and spinal cats show qualitatively similar speed-dependent changes in cycle and phase durations, with stance duration decreasing and swing duration remaining relatively constant as speed increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are directly supported by experimental data presented in Figure 1, showing consistent patterns across multiple cats. The observations are clearly documented with appropriate sample sizes (7 intact and 6 spinal cats) and statistical measures (mean \u00b1 standard deviation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "During split-belt locomotion, both intact and spinal cats maintain equal cycle durations between slow and fast hindlimbs despite different belt speeds. The fast hindlimb shows decreased stance duration and increased swing duration with increasing speed, while the slow hindlimb shows minimal changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by experimental data from split-belt locomotion studies shown in Figure 2. The data demonstrate consistent patterns in both intact and spinal cats with appropriate experimental controls and replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C27",
+      "C28",
+      "C56",
+      "C57"
+    ],
+    "result": "The computational model proposes that each rhythm generator (RG) consists of flexor and extensor half-centers operating as conditional bursters that can function in three distinct regimes: a non-oscillating state-machine regime, a flexor-driven oscillatory regime, and a classical half-center regime. The regime transitions depend on the level of excitatory drive to the RG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C27-C28, C56-C57 describe the core architecture and operational framework of the computational model, which is demonstrated through simulations shown in Figure 3. The model successfully reproduces experimental observations and provides mechanistic explanations for regime transitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The model predicts that at slow speeds (<0.4 m/s) with weak supraspinal drives, the intact spinal network operates in a state-machine regime requiring sensory feedback for phase transitions. At higher speeds with stronger supraspinal drives, the network switches to oscillatory regimes. Following spinal transection, the network can only operate in the state-machine regime at all speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C45-C47 are supported by computational modeling results that successfully reproduce experimental observations. The model predictions are internally consistent and align with the experimental data showing different locomotor capabilities in intact versus spinal cats at different speeds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The computational model successfully reproduces experimental observations for both tied-belt and split-belt locomotion in intact and spinal cats. The model captures the speed-dependent changes in cycle and phase durations, including the steeper increase in flexor phase duration on the fast side during split-belt locomotion in spinal compared to intact conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 demonstrate that the model quantitatively reproduces experimental data shown in Figures 1-2, as evidenced by the model outputs in Figures 5-6. The qualitative and quantitative agreement between model and experiment validates the model's core mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C39",
+      "C40"
+    ],
+    "result": "The model incorporates two types of sensory feedback: SF-E1 representing hip flexor stretch feedback that triggers the extension-to-flexion transition, and SF-E2 representing force-dependent extensor feedback that reinforces extensor activity during stance. Both feedback types are based on experimental evidence from cat locomotion studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37, C39-C40 describe sensory feedback mechanisms in the model that are well-supported by multiple experimental studies cited in the manuscript (C37, C40). The model implementation is consistent with known physiological mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The model implements presynaptic inhibition of sensory feedback by supraspinal drives, which reduces feedback gain in a speed-dependent manner in intact animals. Following spinal transection, this presynaptic inhibition is eliminated, increasing the influence of sensory feedback on spinal circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C41-C43 describe a key model feature that is supported by experimental evidence (C42) and provides a mechanistic explanation for differences between intact and spinal locomotion. The implementation is physiologically plausible and consistent with known mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Model simulations predict specific effects of removing sensory feedback: in the spinal-transected model, removing SF-E1 prevents locomotion, while removing SF-E2 produces abnormal locomotion with extremely short extensor phases. In the intact model, removing SF-E1 increases extensor phase duration and prevents oscillations below moderate speeds (\u03b2\u22650.5), while removing SF-E2 shortens extensor phases but preserves oscillations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 present testable predictions from the computational model shown in Figures 7-8. The predictions are internally consistent with the model's architecture and mechanisms, though they require experimental validation. The predictions logically follow from the model's structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The model provides a mechanistic explanation for the steeper increase in flexor phase duration on the fast side during split-belt locomotion in spinal versus intact cats. In spinal cats, accumulated SF-E1 excitation on the fast side is not balanced by contralateral inhibition, causing the fast-side RG to transition to a classical half-center regime with increasing flexor phase duration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 provide a detailed mechanistic explanation for experimental observations (C77) based on the model's dynamics. The explanation is consistent with the model architecture and successfully accounts for differences between intact and spinal conditions during split-belt locomotion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C59",
+      "C60"
+    ],
+    "result": "The model suggests that locomotion in intact cats at low speeds and in spinal cats at any speed is mainly controlled by sensory feedback (consistent with Philippson/Sherrington's view), whereas locomotion in intact cats at higher speeds is primarily controlled by intrinsic spinal oscillatory activity (supporting Brown's concept).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C59-C60 present interpretations of the modeling results that reconcile historical theories. The interpretation is well-supported by the model's behavior across different speed regimes and conditions, providing a unified framework that encompasses both classical views.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C61",
+      "C62"
+    ],
+    "result": "The model predicts that slow exploratory locomotion requires volitional signals for step-by-step phase transitions because the spinal network operates in a state-machine regime, while faster escape locomotion occurs automatically under spinal rhythm-generating circuit control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C61-C62 present interpretations and predictions about behavioral implications that extend beyond the direct modeling results. While the predictions are logical extensions of the model, they involve speculation about behavioral contexts (exploratory vs. escape) that are not directly tested in the model or supporting experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "The model predicts that below 0.35 m/s, cats with diminished sensory feedback require patterned step-by-step supraspinal signals for phase transitions, which may explain why intact cats do not walk consistently on treadmills at speeds \u22640.3 m/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 present a testable prediction from the model (Figure 8C) that provides a plausible explanation for the experimental observation in C12/C19. The prediction logically follows from the model's regime transitions and is consistent with the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C66"
+    ],
+    "result": "The model predicts that in intact animals, sensory feedback (particularly SF-E1) is required for locomotion at slow speeds to compensate for low supraspinal drives. This has implications for spinal cord injury rehabilitation, where subjects may need volition, external drive, or postural adjustments to perform phase transitions at very slow speeds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C66 present model predictions with clinical implications. C64 is directly supported by modeling results (Figure 8), while C66 extends these findings to clinical contexts in a logical manner, though experimental validation in humans would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes foundational knowledge about mammalian locomotor control: the spinal network generates basic locomotor patterns through CPG circuits, supraspinal structures control voluntary aspects, sensory feedback provides state information, and increasing speed leads to decreased cycle duration primarily through shortened stance phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C10 present well-established knowledge in the field, supported by extensive literature citations. These claims provide the scientific foundation for the study and are not controversial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "Previous experimental studies showed that changes in cycle and phase durations during tied-belt and split-belt locomotion were similar in intact and spinal cats at moderate speeds (0.4-1.0 m/s), but intact cats cannot consistently perform treadmill locomotion below 0.3-0.4 m/s while spinal cats can.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 summarize previously published experimental findings that form the basis for the current modeling study. These are well-documented observations supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C13",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The model is based on established concepts that the mammalian spinal cord contains CPG circuits capable of intrinsic rhythm generation, and that both flexor and extensor half-centers can operate as conditional bursters based on persistent sodium current (INaP).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C29-C31 describe foundational concepts and experimental evidence from the literature that inform the model architecture. These are well-supported by multiple citations to experimental and modeling studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The model incorporates commissural interneuron pathways (V0D, V2a-V0V-Ini, V3) that mediate left-right coordination during different gaits, and supraspinal drives that primarily control locomotor frequency by targeting flexor half-centers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe model features based on previous modeling studies and experimental evidence. The implementation is consistent with known spinal circuitry organization and is appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C44"
+    ],
+    "result": "Intact animals walking on a treadmill use visual cues and supraspinal signals to adjust speed and maintain fixed position relative to external space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 describes a known behavioral phenomenon supported by experimental evidence (citation provided). This provides context for how the model simulates intact locomotion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "A recent mouse study supported the role of V3 commissural interneurons in transmitting primary afferent activity to the contralateral side.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 cites recent experimental evidence supporting a model feature. The citation is appropriate and the claim is straightforward.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The manuscript reviews established knowledge about sensory feedback after spinal cord injury, human CPG evidence, walking patterns in spinal cord injury patients, and plasticity following injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C65, C67-C70 present established knowledge from the literature with appropriate citations. These provide context for the study's implications but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "The study assumes that the neural connectome in the mammalian spinal cord is evolutionarily conserved, allowing findings from mouse studies to inform understanding of locomotion in cats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 states a reasonable assumption based on evolutionary conservation principles. While this assumption has some support, the degree of conservation across species for specific circuit details remains an area of active research. The assumption is explicitly stated and is commonly made in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "The model successfully reproduced experimental results for locomotor characteristics during tied-belt and split-belt locomotion despite being based on simplifications and assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C72 is a summary statement about overall model performance that is supported by the detailed comparisons in C73-C77. The acknowledgment of simplifications and assumptions is appropriate.",
+    "result_type": "MINOR"
+  }
+]

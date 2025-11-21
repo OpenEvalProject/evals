@@ -1,0 +1,213 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "CausalXtract is a flexible computational pipeline that integrates live-cell image feature extraction with causal discovery methods, combining network-based and information-based frameworks to discover causal and time-lagged effects from morphodynamic features and cell-cell interactions in live-cell imaging data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm the pipeline's design and capabilities. Reviewer 1 states it 'convincingly illustrates' the approach on tumor-on-chip data and describes it as 'nicely presented.' Reviewer 2 notes 'the text is clear and concise' and confirms the methodology is 'robust.' The editor describes it as an 'important study' that 'convincingly illustrates' the application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C18",
+      "C20"
+    ],
+    "result": "CausalXtract's graph-based causal framework goes beyond classical Granger-Schreiber causality by discovering causal effects that would be overlooked by these restrictive approaches, circumventing their limitations through combined graph-based and information-based methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'The core of the method tMIIC of the authors is nicely presented in connection to Granger-Schreiber causality' and acknowledges the theoretical foundation. The theoretical comparison (Theorem 1) and methodological advantages are accepted without challenge by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C77",
+      "C78",
+      "C84",
+      "C85"
+    ],
+    "result": "tMIIC matches or outperforms state-of-the-art methods (PC and PCMCI+) in benchmark comparisons while running orders of magnitude faster on biologically relevant datasets, demonstrating it is both reliable and scalable for discovering complex temporal causal relations in large time-series datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'tMIIC compares favourably to PC and PCMCI+ methods using different kernels on synthetic datasets' and notes the benchmarking results. Reviewer 2 confirms 'Performance, robustness' as strengths. The benchmarking methodology and results are accepted without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C28"
+    ],
+    "result": "CausalXtract discovers novel findings including that cancer-associated fibroblasts directly inhibit cancer cell apoptosis independently from anticancer treatment, and that treatment increases cancer cell perimeter.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 describes 'convincing inference results with respect to both known and novel effects' from the tumor-on-chip application. The editor states the study 'convincingly illustrates' the application. These novel biological findings are accepted as valid discoveries from the analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "CausalXtract recovers known effects from prior studies including that treatment increases cancer cell apoptosis and cancer-immune interactions while decreasing cancer cell division rate, and that CAFs stimulate cancer cell migration and increase their area.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes 'convincing inference results with respect to both known and novel effects,' confirming that the method successfully recovers established findings. This validation of known results supports the method's reliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C5"
+    ],
+    "result": "CausalXtract uncovers multiple antagonistic effects at different time delays, including that cell division is preceded by decreased eccentricity 2-3 hours before cytokinesis followed by increased eccentricity during late division phases, and that apoptosis leads to initial area decrease followed by increase upon cell lysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 describes the application as having 'convincing inference results' and the editor confirms the study 'convincingly illustrates' the challenging application. These time-lagged findings are presented as demonstrations of the method's capability to detect temporal dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "tMIIC demonstrates robustness to overestimated maximum lag in stationary data, and when data is nonstationary, the method appropriately identifies multiple self-loops at nonstationary variables while leaving the rest of the network relatively unaffected, requiring long-time range interactions to account for nonstationary dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly confirms 'robustness' as a strength of the approach. The benchmarking results demonstrating these properties are presented in supplementary figures and accepted without challenge by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C27",
+      "C49"
+    ],
+    "result": "CausalXtract's feature extraction module (CellHunter+) is based on CellHunter software and performs detection using Circular Hough Transform, tracking via Munkres' algorithm, and extraction of 15 cellular descriptors including cell geometry, velocity, division, apoptosis, and cell-cell interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states the authors 'go through a step-by-step description of how to extract the features they are interested in from the raw data.' Reviewer 1 notes the full application includes these features. The methodological details are accepted without criticism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "tMIIC is adapted from MIIC, which combines constraint-based and information-based principles to learn robust causal graphical models, can handle missing data and heterogeneous multimodal data, and distinguishes genuine causal relations from putative and latent causal effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The core of the method tMIIC of the authors is nicely presented' and acknowledges its connection to the original MIIC method. The methodological foundation and capabilities are accepted without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "tMIIC does not require ad hoc conditioning rules as it relies on robust information-theoretic strategy to limit spurious independence and improve edge recall, and captures both time-lagged and contemporaneous effects due to latent variables.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes the method addresses 'the problem of learning causal interactions from temporal data which is an open problem in presence of latent variables' and describes the approach as 'nicely presented.' These methodological advantages are accepted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The source code of CausalXtract is publicly available with a demo notebook that reproduces the reported results, and the Tigramite package used for benchmarking is also available.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'The code and dataset are available online for the reproducibility of the results' as a strength. Reviewer 2 confirms 'The authors provide the code to review.' Code availability is affirmed by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The tumor-on-chip experimental system reconstitutes a tumor microenvironment ex vivo with cancer cells, immune cells, CAFs, and endothelial cells under four experimental conditions, with videos acquired at 2-minute intervals for up to 48 hours across 36 video crops.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'The authors describe the raw data they used (imaging data)' and reviewer 1 describes it as 'A full application to tumor-on-chip cellular ecosystems data.' The experimental setup is accepted as described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The causal discovery results are robust to variations in sampling rate.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly lists 'robustness' as a strength. This robustness analysis is presented in supplementary figures and accepted without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The converse of Theorem 1 is not true: a temporal v-structure does not imply vanishing Transfer Entropy, as demonstrated by a counterexample.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the method is 'based on a theorem about transfer entropy' and describes the theoretical presentation as 'nicely presented.' The theoretical results including this limitation are accepted.",
+    "result_type": "MINOR"
+  }
+]

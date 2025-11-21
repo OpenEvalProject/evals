@@ -1,0 +1,137 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C16",
+      "C72"
+    ],
+    "result": "MGPfactXMBD is a novel model-based manifold-learning framework that factorizes complex development trajectories into independent bifurcation processes of gene sets, providing highly interpretable trajectories with matched gene expression modules and efficient feature selection for graph-based embedding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm the novelty and utility of the method. Reviewer 1 states it is 'a useful new tool that could deliver novel insights,' Reviewer 2 describes it as 'a novel computational method' that is 'important, with several potential future applications,' and Reviewer 3 confirms it 'addresses core state-of-the-art questions in biology' and represents 'a relevant tool in manifold-learning for scRNA-seq data.' No concerns were raised about the core methodological claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C33",
+      "C36",
+      "C73"
+    ],
+    "result": "MGPfactXMBD demonstrated superior or competitive performance when benchmarked across 239 datasets in key quality-control metrics such as branch division accuracy and trajectory topology, outperforming most established methods and ranking second only to TinGa for overall trajectory inference performance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the benchmarking results. Reviewer 2 states the method 'showed superior performance for some of the tasks in cell trajectory analysis compared to other methods with compelling evidence,' and Reviewer 3 notes it 'demonstrated similar to slightly superior performance in key quality-control metrics to state-of-the-art methods.' The revision comments indicate all previous concerns were addressed to satisfaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In microglia development analysis, MGPfactXMBD reconstructed developmental trajectories from immature to homeostatic and proliferative-region-associated microglia, identified three bifurcation processes with 74-90 highly weighted genes each, and discovered influential transcription factors (Hif1a, E2f5, Nfkb1) determining microglia development, revealing two distinct PAM subtypes with connections to disease-associated microglia.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly validate the microglia case study. Reviewer 1 confirms the method 'can accurately identify the differentiation timepoint and uncover biologically relevant gene signatures,' Reviewer 2 states it 'showed superior performance' and notes compelling evidence, and Reviewer 3 affirms it 'successfully identified critical pathways and cell types in microglia development, validating experimentally identified regulons and markers.' All revision concerns were addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "MGPfactXMBD discovered evolutionary trajectories of tumor-associated CD8+ T cells, yielding new subtypes characterized by differential TBX21 and BHLHE40 activity with gene expression signatures significantly predictive of responses to immune checkpoint inhibitors in independent cohorts, and associated with patient survival outcomes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the CD8+ T cell findings. Reviewer 1 notes the method 'can accurately identify the differentiation timepoint and uncover biologically relevant gene signatures' in T cells, Reviewer 2 confirms it 'showed superior performance' with compelling evidence, and Reviewer 3 states it 'uncovered evolutionary trajectories of tumor-associated CD8+ T cells, revealing new subtypes with gene expression signatures that predict responses to immune checkpoint inhibitors in independent cohorts.' All concerns were addressed to satisfaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "Trajectory predictions utilizing MURP-based downsampling realized an overall score increase of 5.31 to 185% compared to methods without MURP, demonstrating the indispensable role of MURP in MGPfact's trajectory inference capabilities.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While not explicitly discussed in detail by reviewers, this methodological component is implicitly accepted as part of the overall method validation. Reviewers affirm the method's superior performance and note that all previous concerns were addressed, suggesting acceptance of the MURP downsampling contribution to the method's success.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "MGPfact's analytical pipeline consists of MURP downsampling and trajectory reconstruction stages, using radial basis function and polynomial kernel functions with MCMC-based parameter inference, validated across 110 real and 229 synthetic datasets encompassing nine trajectory topologies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'most parts of the method are well described' and notes the manuscript is 'written in a logical way.' The revision comments indicate 'all previous concerns were addressed to satisfaction,' suggesting acceptance of the methodological details and validation approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "MGPfact performed significantly better in trajectory prediction in real cell populations compared to synthetic datasets, suggesting the algorithm fits better to true biological variation and noise.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is implicitly accepted as part of the overall benchmarking results that reviewers explicitly affirmed. Reviewer 2 notes the method was 'benchmarked using synthetic as well as real world samples and showed superior performance,' and Reviewer 3 confirms it was 'tested across 239 datasets' with similar to superior performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "MGPfact has acknowledged limitations including being designed specifically for bifurcation topology (less efficient for complex topologies), inference based on selected gene sets rather than whole transcriptome, potential singularity issues with complex trajectories, temporal-only inference neglecting spatial dynamics, and assumption of independence between bifurcation processes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations are author-acknowledged and implicitly accepted by reviewers. The fact that all reviewers note their concerns were addressed to satisfaction and provide positive overall assessments suggests they find the authors' acknowledgment of limitations appropriate and transparent.",
+    "result_type": "MINOR"
+  }
+]

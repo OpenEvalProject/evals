@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C87",
+      "C88"
+    ],
+    "result": "The study collected blood samples from 100 metastatic NSCLC patients (50 LUAD, 43 LUSC, 7 others) before and after ICI treatment for CHIP-targeted sequencing (~600\u00d7 depth) and 63 samples for scRNA-seq. An independent replication cohort of 180 patients underwent WES (~80\u00d7 depth). Samples were processed using established bioinformatics pipelines including Sarek for variant calling and CellRanger for scRNA-seq alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C76-C88 provide comprehensive methodological details about sample collection, cohort composition, sequencing approaches, and bioinformatics pipelines. The methods are clearly described with specific technical parameters (sequencing depth, software versions, panel design), supporting reproducibility. The two-cohort design (discovery and replication) strengthens the study design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "CHIP mutation profiling identified 67 mutations in 100 patients at baseline (26 in putative driver genes) and 68 mutations in 91 patients post-treatment (32 in putative drivers). DNMT3A, PPM1D, and TET2 were the most frequently mutated genes. ICI treatment caused minimal changes in CHIP burden, with VAF highly correlated before and after treatment regardless of clinical response. However, increased CHIP mutations with VAF >10% were noted in LUSC patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 provide specific numerical data on CHIP mutations detected before and after ICI treatment, with clear identification of frequently mutated genes. The finding of minimal ICI effect on CHIP burden is supported by correlation analysis (C33) and visual data (Figure 1). The LUSC-specific observation (C34) is noted but requires validation in the replication cohort.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C46",
+      "C65",
+      "C66"
+    ],
+    "result": "CHIP status did not significantly impact immunotherapy response. The number of CHIP-positive patients remained unchanged before and after ICI treatment and showed no association with treatment response. This finding aligns with the understanding that ICIs modulate immune response pathways rather than cell proliferation, thus not directly influencing CH development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32-C33, C36-C37, C46 consistently demonstrate no significant relationship between CHIP status and ICI response across multiple analyses. The mechanistic reasoning (C65-C66) is supported by prior literature. However, the study acknowledges power limitations (C85) requiring 100 samples per CHIP group for adequate statistical power, which was not achieved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C57",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Metastatic NSCLC patients showed significantly higher CHIP prevalence compared to controls (44/100 vs. 5/42, p=0.01 after age adjustment). The patient cohort was older (mean age 64.1 vs. 58.9), had higher smoking prevalence (37/100 vs. 11/42), and was predominantly male (91/9 vs. 18/24). Despite these demographic differences, the CHIP prevalence finding aligns with previous studies in NSCLC patients, and the most prevalent mutations (DNMT3A, TET2, PPM1D) are marginally affected by smoking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35, C57 provide consistent statistical evidence for elevated CHIP prevalence in NSCLC patients with appropriate age adjustment. Claims C71-C75 acknowledge potential confounders (age, smoking, sex) but provide literature support that the observed CHIP prevalence and mutation spectrum are consistent with prior NSCLC studies and that key mutations are not strongly smoking-associated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C34",
+      "C39",
+      "C40",
+      "C58"
+    ],
+    "result": "LUSC patients showed increased burden of larger CHIP clones (VAF >10%) compared to LUAD patients (8/43 vs. 2/50, p=0.04), while LUAD patients more commonly harbored multiple concurrent CHIP mutations. This histology-specific difference in CHIP burden patterns was observed in the discovery cohort.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C34, C39-C40, C58 report a statistically significant difference in CHIP clone size between LUSC and LUAD. However, the manuscript notes that the replication cohort did not achieve sufficient power to validate this finding. The small sample sizes in subgroups (8/43 vs. 2/50) and lack of replication raise concerns about the robustness of this observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C59",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Single-cell RNA-seq analysis of 468,596 cells from 63 samples revealed significant enrichment of TNF signaling via NF-\u03baB pathways in myeloid clusters of high CHIP burden patients. While cell composition showed increased NK cells and decreased CD4 TEM after ICI, high sample variability precluded systematic differences by CHIP status. Core inflammatory genes (FOS, DUSP1, JUN, PPP1R15A) were shared between TNF signaling and hypoxia pathways across significant clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41-C45, C59, C61-C63 provide comprehensive scRNA-seq analysis with specific cell counts, pathway enrichment results, and identification of key inflammatory genes. The GSEA analysis (C45, C62) with referenced figures supports the NF-\u03baB pathway activation. The acknowledgment of high variability limiting CHIP-specific cell composition differences (C44) demonstrates appropriate statistical caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C86"
+    ],
+    "result": "Gene network analyses using hdWGCNA and SCENIC revealed myeloid-specific inflammatory signatures in high CHIP burden patients. The 'black module' from WGCNA showed myeloid specificity and captured signaling-related DEGs. GRN analysis indicated elevated regulatory activity of AP-1 and NF-\u03baB pathway transcription factors (including NFKB1 and ATF3 regulons) in the myeloid lineage of high-burden patients, suggesting enhanced myeloid cell interactions with other lineages via IL-1\u03b2 and TNF superfamily signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49, C86 describe complementary network analyses (WGCNA and SCENIC) that converge on NF-\u03baB and AP-1 pathway activation in myeloid cells. The use of multiple analytical approaches strengthens the findings. The methods are appropriately described with software citations, and results are supported by referenced supplementary figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C60",
+      "C64",
+      "C68",
+      "C69"
+    ],
+    "result": "Cell-cell interaction analysis revealed that monocytes and DCs in high-burden cases were activated as receptors for TNF and Lymphotoxin A. This finding parallels observations in COVID-19 patients with CH showing increased inflammatory response via IFN-\u03b3 and TNF-\u03b1 signaling. The IL-1 pathway has been implicated in lung cancer aggressiveness, and IL-1\u03b2 inhibition has shown efficacy in reducing lung cancer mortality in the CANTOS trial.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C60, C64, C68-C69 integrate the study's cell-cell interaction findings with established literature on inflammatory pathways in CH and lung cancer. The CellPhoneDB analysis (C53) provides mechanistic insight, while citations to prior work (C60, C68-C69) appropriately contextualize the findings within existing knowledge of inflammation-mediated cancer progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C67"
+    ],
+    "result": "Progression-free survival after ICI treatment was reduced in the high-burden CHIP group (825 vs. 404 days, p=0.056), with no difference in ICI response rates between groups. This marginal survival difference suggests that elevated inflammatory activity in the bloodstream may impact long-term patient survival, consistent with prior observations of negative effects on life expectancy in CHIP patients with solid tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C55, C67 report a survival difference that approaches but does not reach statistical significance (p=0.056). While the trend is consistent with prior literature (C56), the lack of statistical significance, relatively short observation period acknowledged by authors, and small sample size in the high-burden group limit the strength of this conclusion. The authors appropriately suggest this requires validation with larger cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The manuscript establishes background knowledge on CHIP, defining it as asymptomatic clonal hematopoiesis with VAF \u22652%, strongly associated with aging, smoking, and anticancer therapies. Representative CHIP genes (DNMT3A, ASXL1, TET2) impact myeloid populations and are linked to hematologic malignancies through NF-\u03baB and NLRP3 inflammasome-mediated inflammation. CHIP prevalence is elevated in cancer patients and associated with reduced survival. NSCLC has high mortality burden, and while ICIs have revolutionized treatment, response rates remain low and predictive markers are insufficient.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C26 provide appropriate background context with proper citations to establish the scientific foundation for the study. These claims accurately represent prior knowledge about CHIP biology, its clinical associations, and the rationale for investigating CHIP in ICI-treated NSCLC patients. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C50",
+      "C51",
+      "C52",
+      "C70"
+    ],
+    "result": "PPM1D truncating mutations, common in the cohort, have been previously associated with smoking and chemotherapy history. HSPC-derived monocyte expansion causes CHIP, with genes like DNMT3A and TET2 exerting immune-regulatory effects through the NLRP3 inflammasome. A VAF of 10% in heterozygous mutations corresponds to ~20% of cells, sufficient to alter overall monocyte transcriptional profiles. Smoking and anticancer therapies may have more substantial impact on CH than immunotherapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C50-C52, C70 appropriately integrate prior mechanistic knowledge with the study's findings. The calculation relating VAF to cell percentage (C52) is mathematically sound for heterozygous mutations. The contextualization of relative impacts of different exposures (C70) is supported by cited literature and helps interpret the minimal ICI effect observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C38",
+      "C85"
+    ],
+    "result": "CHIP burden is heavily age-dependent, as confirmed in the study cohort. Power analysis indicated that a minimum of 100 samples per CHIP group would be required to achieve statistical power of 0.8 for pair-wise comparisons between genes and variants, which was not achieved in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C85 acknowledge important limitations. The age-dependence of CHIP (C38) is well-established and confirmed in the data. The power analysis (C85) is appropriately conducted and honestly reported, explaining why certain gene-specific or variant-specific associations could not be definitively determined. This transparency strengthens the overall evaluation of the study's findings.",
+    "result_type": "MINOR"
+  }
+]

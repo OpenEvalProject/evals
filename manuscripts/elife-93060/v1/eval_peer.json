@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The authors identify two dynamical regimes in trained RNNs\u2014aligned and oblique\u2014that differ in the correlation between output weights and principal components. The magnitude of readout weights before training serves as a control parameter: small weights lead to aligned dynamics (high correlation), while large weights lead to oblique dynamics (low correlation).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this core finding. Reviewer 1 states the authors 'found that RNNs operate between two extremes' with aligned and oblique regimes. Reviewer 2 calls it 'a really interesting new idea' that is 'genuinely insightful.' The editor confirms the authors 'report that two different kinds of dynamics exist' and present 'convincing evidence.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C37",
+      "C38",
+      "C40",
+      "C45",
+      "C46"
+    ],
+    "result": "For aligned dynamics, the output can be reconstructed from the largest principal components of neural activity. For oblique dynamics, many more PCs are needed to reconstruct the output than to explain variance in the dynamics, indicating poor representation of output in the largest PCs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings without challenge. Reviewer 2 notes the framework shows 'aligned dynamics, where low-dimensional neural activity recapitulates the target' versus 'oblique dynamics, where encoding is spread across many dimensions.' The characterization of PC-output relationships is treated as well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Across multiple neuroscience tasks, initialization with large output weights consistently led to oblique dynamics and small weights to aligned dynamics. The gap in output weight norms persists after training, demonstrating that initial weight magnitude determines the regime under realistic settings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes as a strength that the work 'shows the occurrence of the aligned and oblique regimes generalises across a range of simulated behavioural tasks.' Reviewer 2 praises the 'diverse set of relevant tasks' and states they are 'thoroughly convinced of the reported effect of large or small output weights in networks.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C23",
+      "C24"
+    ],
+    "result": "In aligned networks trained on the cycling task, neural trajectories in PC space mirror the counter-rotating output structure. In oblique networks, neural activity co-rotates in the leading PCs despite counter-rotating output, demonstrating qualitative differences between the regimes in how PCs relate to output.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 highlights that the framework 'potentially unifies' the experimental observation 'that ongoing dynamics of motor cortex can rotate in the same direction even when the arm movement is rotating in opposite directions.' This specific finding is treated as a key strength connecting theory to known experimental results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Oblique networks show greater heterogeneity in solutions across different trained networks compared to aligned networks, which converge to stereotypical solutions. This reflects weaker task constraints on internal dynamics in the oblique regime, with the degree of heterogeneity varying across tasks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly lists as a strength that the work 'shows where the oblique regime may be advantageous: allows multiple solutions to the same problem.' Reviewer 1 notes the 'exciting' prospect that 'versatility of oblique regime could lead to differences between subjects in neural data,' affirming the heterogeneity finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Aligned and oblique networks show differential susceptibility to perturbations along output directions. Aligned networks exhibit strong long-term responses to perturbations along output weights, while oblique networks are robust to such perturbations but sensitive to perturbations along PCs. Results for oblique networks match previous experimental simulations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 lists as a strength that the work 'shows where the oblique regime may be advantageous... and differs in sensitivity to perturbation and noise.' The differential perturbation responses are accepted as a key distinguishing feature between regimes without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C28",
+      "C70",
+      "C71",
+      "C72",
+      "C74",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Oblique networks develop a negative feedback loop that suppresses noise fluctuations along output directions, resulting in variance ratios (output/random) less than 1. Aligned networks amplify fluctuations along output directions via positive feedback, yielding variance ratios much greater than 1. This noise suppression in oblique networks emerges through a slow learning process.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly notes as a strength that the work 'shows where the oblique regime may be advantageous... and differs in sensitivity to perturbation and noise.' Reviewer 1 calls it 'an insightful corollary result that noise in training is needed to obtain the oblique regime,' affirming the noise-related findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C22",
+      "C34",
+      "C47",
+      "C49",
+      "C73"
+    ],
+    "result": "The oblique regime is specific to recurrent networks and arises from dynamical stability considerations. Stability constraints preclude small neural activity magnitude, and noise during training is necessary to reach stable aligned and oblique regimes. For large output weights, networks initially learn unstable solutions that transform to oblique dynamics over longer timescales.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 praises 'a deep analytical investigation of when the regimes occur and how they evolve over training' and calls it 'an insightful corollary result that noise in training is needed to obtain the oblique regime.' The theoretical analysis of stability and learning dynamics is treated as a key contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C29",
+      "C89"
+    ],
+    "result": "Analysis of neural recordings from motor control experiments reveals different degrees of alignment across experiments. BCI experiments show higher correlation and smaller relative fitting dimensions (more aligned), while non-BCI settings show lower correlation and larger fitting dimensions (more oblique).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 identifies a major weakness: 'One of the major connections to found BCI data with neural variance aligned to the outputs... doesn't this have to be the case based on the design of the experiment? The outputs of the BCI are chosen to align with the largest principal components.' Reviewer 1 also states 'connections to neural data were weak' despite being 'thoroughly convinced' of the network results. This suggests the neural data analysis may be confounded by experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C84"
+    ],
+    "result": "The oblique regime matches experimental observations from motor cortex studies, including co-rotating dynamics in leading PCs despite counter-rotating muscle activity (Russo et al., 2018) and weak correlation between best decoding directions and leading PCs (Schroeder et al., 2022).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states the framework 'potentially unifies a collection of separate experimental results and ideas, largely from studies of motor cortex in primate' including these specific observations. The connection to Russo et al. 2018 is treated as a key validation of the oblique regime concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C25"
+    ],
+    "result": "Oblique networks are more heterogeneous than aligned networks, more robust to perturbations along output directions, and exhibit functional decoupling that provides greater freedom for neural dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These properties are encompassed in Reviewer 2's statement that the work 'shows where the oblique regime may be advantageous: allows multiple solutions to the same problem; and differs in sensitivity to perturbation and noise.' The heterogeneity and robustness findings are accepted as established characteristics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "For aligned dynamics, analyzing dynamics within the largest PCs may yield insights about output-generating computations. For oblique dynamics, such analysis is hampered by dissociation between large PCs and output-generating components.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretive claim follows logically from the accepted distinction between regimes. Reviewer 2 notes the framework helps understand 'when the dynamics of neural population activity do and do not align with some target output,' implicitly accepting these analytical implications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Theoretical predictions based on stability and output magnitude constraints: small output weights require large correlation (aligned dynamics) to generate sufficient output, while large output weights require small correlation (oblique dynamics) to prevent excessive output.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'once written out (Eq 3) it becomes obvious, which I take as the mark of a genuinely insightful idea,' affirming the theoretical logic. The mathematical framework underlying these predictions is accepted as sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C75"
+    ],
+    "result": "Internally generated dynamics in RNNs are sustained by positive feedback loops and constitute a prominent part of the largest PCs. These feedback loops amplify both dynamics and noise, leading to strong responses to aligned perturbations but weak responses to orthogonal perturbations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These mechanistic explanations are part of the 'deep analytical investigation' praised by Reviewer 2. The feedback loop framework is accepted as providing valid mechanistic insight into the regimes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims establishing the context: neural activity relates to behavioral variables (neural representations), but partial dissociations exist. Neural activity can be decoded but is not fully explained by observable variables, with unexplained components attributed to various factors including noise, preparatory activity, and connectivity constraints.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are standard background statements supported by citations. No reviewer challenges these contextual claims, which establish the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Recent work in feedforward networks identified rich and lazy regimes arising from output weight choices, providing context for similar phenomena in recurrent networks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a cited background claim that contextualizes the findings. Reviewer 2 notes the connection to feedforward networks as part of the framework's development, accepting this as relevant prior work.",
+    "result_type": "MINOR"
+  }
+]

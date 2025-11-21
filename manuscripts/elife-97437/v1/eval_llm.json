@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors describe the challenges of gene editing in Leishmania, including a repetitive genome, limited DNA repair mechanisms, lack of RNA interference in most species, and limitations of existing CRISPR and bar-seq approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C26-C36, and C119-C126 collectively establish the biological and technical challenges that motivate the study. These are well-supported by citations to prior work and represent established knowledge in the field. The claims are consistent and provide appropriate context for the improvements presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors previously developed a CBE system for Leishmania (Engstler and Beneke, 2023) that had several limitations including low transfection efficiency (~1/30,000 cells), variable editing rates across species, growth defects, and competition between deleterious and non-deleterious mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C8 and C37-C47 describe the prior CBE system and its limitations, all supported by citation to Engstler and Beneke, 2023. These claims establish the baseline for comparison and are internally consistent. The limitations are clearly stated and provide justification for the improvements presented in the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A T7 RNAP promoter variant (T7 T10 GG) was identified that enables high editing rates without compromising parasite growth, achieving complete tdTomato knockdown in 7 days compared to 33 days with the previous system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C48-C54 describe the optimization of the T7 RNAP promoter, supported by data in Figure 1. The comparison shows clear improvement (7 vs 33 days for complete knockdown) with no significant growth defects (doubling times 7.5-8.1 hr). The data are quantitative and include appropriate controls comparing multiple promoter variants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "AsCas12a ultra-mediated DSBs increase donor DNA integration efficiency regardless of homology flank length, with Cas12a crRNA-4 achieving the highest efficiency (~1 transfectant per 2,300 cells) and enabling accurate integration with homology flanks as short as 30 nt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C69 describe the Cas12a integration system, supported by data in Figure 2. The results show ~25-fold improvement with Cas12a crRNA, independence from homology flank length (600, 60, 30 nt tested), and Sanger sequencing confirmation of flawless integration. The variation in crRNA efficiency (500-fold difference between crRNA-3 and crRNA-4) is documented with quantitative data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Integration of CBE sgRNA expression cassettes into the 18S rRNA SSU locus using Cas12a crRNA-4 achieves complete tdTomato depletion in 7 days across all tested species, with transfection efficiency reaching 1 transfectant per 70 cells using Lonza Nucleofector technology\u2014a ~400-fold improvement over the previous method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C70-C78 describe the combined CBE-Cas12a system, supported by data in Figure 3. The 400-fold improvement in transfection efficiency is quantitatively documented (from 1/30,000 to 1/70 cells). Complete tdTomato depletion in 7 days is shown across L. donovani, L. mexicana, and L. major. The claim about library representation (C77) is a calculation based on achieved efficiency and is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The improved system achieves rapid and complete editing of PF16 (6 days post-transfection) with paralysis phenotype in L. mexicana and L. donovani, confirmed by Illumina sequencing showing 100% editing with 35\u00d7 genome coverage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C87 describe PF16 targeting experiments, supported by data in Figures 4 and 4\u2014figure supplement 1. The rapid editing (6 days) and complete mutation are documented by both motility analysis and Illumina sequencing. The reversal in one L. mexicana line (C84) is noted and explained by growth defect (C85), which is appropriately discussed as a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ONT and Illumina sequencing confirm that CBE sgRNA cassettes integrate as single copies on separate alleles in L. mexicana, with only one guide per transfectant, while L. donovani and L. major show some integration of multiple guides (2/10 clones).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92, C94-C96 describe integration patterns, supported by ONT/Illumina sequencing (Figure 4\u2014figure supplements 1-3). The single-copy integration in L. mexicana is well-documented by read coverage analysis and ONT mapping. The species difference (multiple guides in 2/10 L. donovani and L. major clones) is clearly stated and represents an improvement over the previous system where 1/3 had multiple plasmids (C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "A small-scale pooled screen successfully confirmed essential and fitness-associated functions of CK1.2, CRK2, CRK3, AUK1/AIRK, TOR1, IFT88, IFT139, IFT140, and RAB5A in L. mexicana, with 10-20\u00d7 stronger depletion ratios and reduced error margins compared to the previous method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 and C97-C112 describe the pooled screen results, supported by data in Figure 5. The screen design is appropriate (24 targeting sgRNAs, 15 non-targeting controls, ~25,000 cells/sgRNA representation). Strong depletion of targeting sgRNAs vs stable non-targeting controls is shown, with most sgRNAs falling outside the 99% confidence interval. The comparison to method v1 (C112) shows clear quantitative improvement. A few sgRNAs showed no depletion (C109), which is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C113",
+      "C114"
+    ],
+    "result": "A revised CBE sgRNA scoring system was developed that prioritizes STOP codon generation by calculating the ratio of available cytosines to resulting STOP codons and considering STOP codon position within the editing window.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C10, C113-C114 describe the improved scoring system shown in Figure 4\u2014figure supplement 4. While the scoring system is clearly described and implemented (available at leishbaseedit.net), the manuscript states it 'will be systematically tested in future studies.' Without validation data showing improved performance, the actual utility of this scoring system remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C23",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Co-expression of AsCas12a ultra, T7 RNAP, and CBE enables hybrid CRISPR gene replacement and base editing, demonstrated by successful PF16 knockout using Cas12a-mediated gene replacement with 30 nt homology flanks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C115-C118 describe the hybrid approach, supported by data in Figure 6. The successful gene replacement is confirmed by PCR, Sanger sequencing of integration sites, and motility phenotype analysis. This demonstrates the versatility of the system, though it represents a proof-of-concept rather than extensive validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12"
+    ],
+    "result": "The triple-expression construct increased transfection efficiency by ~400-fold to 1 transfectant per 70 transfected cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C12 is the key quantitative result for transfection efficiency improvement, supported by data in Figure 3C. The 400-fold improvement is calculated from the previous rate of 1/30,000 (C46) to the new rate of 1/70 cells, achieved using Lonza Nucleofector technology with 1\u00d710^8 cells and 10 \u00b5g DNA. This is a major technical achievement that enables large-scale screens.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C129"
+    ],
+    "result": "These improvements will broaden the range of possible gene editing applications in Leishmania species and enable genome-wide CBE screens in the near future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C129 represent forward-looking statements about the impact of the work. While speculative, they are reasonable given the demonstrated improvements: 400-fold increase in transfection efficiency, ability to achieve 500-fold library representation with 20\u00d710^8 cells, successful proof-of-concept pooled screen, and the statement that genome-wide screens with 40,000 sgRNAs have been completed (mentioned in Results).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "The dual-construct system requires generation of a stable cell line first but offers the advantage of efficient CBE sgRNA integration using AsCas12a-mediated DSBs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 provide a balanced assessment of the dual-construct system's trade-offs. The disadvantage (requiring stable cell line generation) and advantage (efficient integration) are both clearly demonstrated in the manuscript. This represents an honest evaluation of the method's limitations and benefits.",
+    "result_type": "MINOR"
+  }
+]

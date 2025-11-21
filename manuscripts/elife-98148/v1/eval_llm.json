@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C13",
+      "C64"
+    ],
+    "result": "Sensory braille letter representations (hand-dependent) are located in tactile processing areas (S1, S2, aIPS, pIPS), while perceptual representations (hand-independent) are located in sighted reading areas (EVC, LOC, VWFA), with LOC serving as a 'hinge' region containing both types of representations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C13 are supported by fMRI ROI classification analyses with appropriate statistical testing (N=15, Wilcoxon signed-rank test, FDR corrected). Claim C64 confirms these findings through an unbiased searchlight analysis. Claim C5 about LOC as a 'hinge' region is a reasonable inference from the data showing LOC contains both representation types. The experimental design appropriately operationalizes sensory vs. perceptual representations through within-hand vs. across-hand classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C65"
+    ],
+    "result": "Sensory braille letter representations emerge at 77 ms (45-138 ms) after stimulus onset, while perceptual representations emerge later at 184 ms (127-230 ms), with a significant delay of 107 ms (21-167 ms, p=0.012) between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C8, and C65 are supported by time-resolved EEG classification analysis with appropriate statistical testing (N=11, bootstrap tests with 1000 iterations). The sequential emergence is statistically significant and confidence intervals are provided. The 50 consecutive significant time point criterion for onset determination is reasonable, though somewhat arbitrary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C44"
+    ],
+    "result": "Perceptual representations in sighted reading areas (EVC, LOC, VWFA, insula) are significantly correlated with behavioral similarity ratings, while sensory representations in tactile processing areas (S1, S2, aIPS, pIPS, LOC) are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 are supported by representational similarity analysis (RSA) correlating fMRI RDMs with behavioral RDMs (N=15, Wilcoxon signed-rank test, FDR corrected). Claim C44 is a reasonable inference from these results. The use of perceived similarity as a proxy for behavioral relevance is well-justified by citations to previous work (C70), though the authors acknowledge this is task-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C72",
+      "C73"
+    ],
+    "result": "Both sensory and perceptual braille letter representations identified in EEG are correlated with behavioral similarity ratings, with sensory representations emerging at 220 ms (167-567 ms) and perceptual representations at 466 ms (249-877 ms), showing a significant delay of 240 ms (p=0.046).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72, C73, and C46 are supported by EEG RSA analysis with appropriate statistical testing (N=11, bootstrap tests). Claim C45 is a reasonable inference from these results. However, the wide confidence intervals (especially for C72 and C73) and the marginal significance of the delay (p=0.046, C46) suggest some uncertainty. The finding differs from the fMRI RSA results where sensory representations were not behaviorally relevant, which the authors do not adequately explain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C17",
+      "C18",
+      "C76"
+    ],
+    "result": "EVC and VWFA in the visually deprived brain represent perceptual rather than sensory braille letter information, suggesting modality-independent functional organization at higher perceptual levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C17 are supported by the fMRI data showing significant perceptual but not sensory representations in these regions. Claims C18 and C76 are reasonable inferences supported by citations to previous work. However, the interpretation that this reflects 'modality-independent' organization (C18) goes beyond what the current data directly demonstrate, as no direct comparison with visual letter processing is made in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C53"
+    ],
+    "result": "Somatosensory cortices and intra-parietal sulci represent hand-dependent (sensory) but not hand-independent (perceptual) braille letter representations, consistent with these areas representing location of tactile stimulation rather than higher-level letter identity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by fMRI ROI analysis. Claims C21, C22 provide supporting context from previous literature. Claim C53 is a reasonable inference integrating current and previous findings. The interpretation is consistent with known functional properties of these regions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Braille letter classification peaks substantially later (~200 ms for hand-dependent, ~390 ms for hand-independent) than visual letter processing (~125-175 ms), but tactile information reaches cortex rapidly (35 ms). This delay is attributed to the efficiency of the braille system rather than brain capacity, as blind participants show efficient auditory processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is supported by comparing current EEG data with cited previous work. Claim C27 is supported by supplementary EEG analysis. Claims C28-C30 are supported by citations. Claim C31 is a reasonable inference from this pattern. However, the inference in C31 is somewhat speculative as no direct test of braille system efficiency vs. brain capacity is performed. Alternative explanations (e.g., complexity of tactile letter discrimination) are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Sensory braille letter information is decodable from widespread electrodes across the scalp (~200-300 ms), while perceptual information is decodable later from fewer, more localized electrodes (right frontal, central, left parietal, left temporal areas).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66 and C67 are supported by EEG searchlight analysis in sensor space (N=11, Wilcoxon signed-rank test, FDR corrected). Claim C68 is a reasonable inference from these results. The spatial patterns are consistent with the fMRI findings showing more widespread sensory representations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "The timing of perceptual braille letter representations correlating with behavior (320-420 ms) coincides with the time window when TMS over VWFA affects braille reading in sighted braille readers, suggesting this is when brains utilize braille representations for letter identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C32 relates current RSA timing to previous TMS findings, which is reasonable. However, claim C33 makes a strong inference about when brains 'utilize' representations that goes beyond what correlation with behavior demonstrates. The TMS study cited (Bola et al., 2019) was in sighted braille readers, not blind participants, limiting generalizability. The causal claim requires more direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19"
+    ],
+    "result": "Shape serves as an intermediate representational format in LOC between lower-level tactile properties and higher-level perceptual letter features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C19 is explicitly labeled as speculation by the authors ('We stipulate'). While the finding that LOC contains both sensory and perceptual representations is supported, the specific interpretation about 'shape' as an intermediate format is not directly tested. This would require additional experiments manipulating shape independently of other features.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "EVC in the visually deprived brain may not undergo fundamental reorganization but rather operates within pre-existing computational capacity limits, as EVC in sighted participants also processes higher-level information like natural sounds and language.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is explicitly speculative ('might not'). Claims C49-C50 are supported by citations to previous work. Claim C48 is an inference. Claim C51 represents a theoretical interpretation. While the pattern of findings is consistent with this view, the study does not directly test between reorganization vs. capacity-based accounts. As the authors acknowledge, a definitive test would require comparable experiments in sighted participants, which faces practical challenges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In the visually deprived brain, information flows in a spatially and functionally distributed manner through overlapping thalamo-cortical and cortico-cortical connections, with multiple brain areas receiving and forwarding information simultaneously.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54 and C55 cite previous connectivity studies. However, claim C56 is speculative interpretation not directly tested in this study. The current study does not measure connectivity or information flow directly. While the widespread spatial distribution of representations is consistent with this model, alternative architectures could also explain the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C25",
+      "C60"
+    ],
+    "result": "The human brain honors the principle of sequential multi-step processing in time even in extreme cases of species-atypical cortical plasticity, with sensory-to-perceptual transformations following a common temporal scheme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C57 is supported by the EEG findings showing sequential emergence (C6-C8). Claim C25 establishes this as a general principle through citations. Claim C60 summarizes this conclusion. The temporal sequence is well-demonstrated, though the interpretation of 'honoring' a principle is somewhat teleological. The finding is significant for understanding constraints on plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The functional organization of both VWFA and LOC is multimodal, as evidenced by their representation of tactile braille information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is a reasonable inference from the finding that VWFA and LOC represent tactile braille letters. However, 'multimodal' typically implies integration of multiple sensory modalities, whereas blind participants lack visual input. The term might be better described as 'supramodal' or 'amodal.' The claim is supported but the terminology could be more precise.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C71"
+    ],
+    "result": "The study included 15 participants in fMRI (mean age 39, 9 females) and 11 in EEG (mean age 44, 8 females), all blind since birth or early childhood (\u22643 years). Eight braille letters were presented using piezo-electric cells without finger movement to avoid motion artifacts. Participants showed high accuracy (88-89%) in letter identification screening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C43 and C71 are direct statements about methods and participant characteristics, well-documented in the manuscript. Sample sizes are modest but reasonable for neuroimaging studies. The experimental design appropriately controls for motion artifacts. Participant screening confirms adequate braille reading ability. One concern is the partial overlap between fMRI and EEG samples (5 participants), which could affect independence of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The visually deprived brain shows both plasticity (regions typically processing visual information adapt to represent perceptual braille information) and limits to plasticity (representations remain within pre-existing computational capacity boundaries).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 are summary conclusions integrating the major findings. Claim C58 is well-supported by the fMRI data showing perceptual representations in sighted reading areas. Claim C59 about limits is supported by the temporal dynamics findings and the higher-level nature of EVC representations. These represent appropriate high-level interpretations of the collective findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Sensory braille letter representations are operationalized as hand-dependent (specific to the reading hand), while perceptual representations are operationalized as hand-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62 and C63 clearly define the operational framework of the study. This operationalization is reasonable and well-justified by the practical requirement that braille readers use both hands. The within-hand vs. across-hand classification scheme appropriately tests these definitions. However, 'hand-independent' is a proxy for perceptual rather than a direct measure, and other interpretations (e.g., abstract spatial representations) are possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12"
+    ],
+    "result": "Experience-based plasticity mediates the influence of individual experience on cognition and behavior, with sensory loss being an extreme case. Visual cortical structures in blind individuals are activated by non-visual functions including braille reading, which requires transformation of hand-specific tactile input to hand-independent perceptual format.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C2 are general statements about plasticity supported by established knowledge. Claim C11 is supported by extensive citations to previous research. Claim C12 is a factual statement about braille reading practice. These claims provide appropriate context and motivation for the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C69",
+      "C70",
+      "C74",
+      "C75"
+    ],
+    "result": "Previous research identified brain regions activated during braille reading, but activation alone does not indicate functional role or information content. Not all neural representations distinguishing stimuli are necessarily used to guide behavior; some may be epiphenomenal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61, C74, and C75 accurately characterize limitations of previous activation-based studies, supported by appropriate citations. Claims C69 and C70 provide theoretical justification for the RSA approach. These represent accurate statements about the state of the field and methodological considerations, providing important context for the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Previous research has shown that EVC in blind participants processes natural sounds and language, primary somatosensory cortex represents tactile stimulation location but not braille word identity, and insula plays roles in tactile memory and multisensory integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C16, C21-C24 are all supported by appropriate citations to previous research. These claims accurately represent prior findings and provide important context for interpreting the current results. However, these are not novel findings from this study.",
+    "result_type": "MINOR"
+  }
+]

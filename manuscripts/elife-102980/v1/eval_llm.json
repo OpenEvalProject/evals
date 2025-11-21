@@ -1,0 +1,276 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "CRISPR-mediated knockout of five fatty acid metabolism genes (Plin2, Slc27a1, Cpt2, Cpt1a, Cd36) achieved >85% deletion efficiency and all significantly restricted Mtb growth at day 5 post-infection, with Plin2-/-, Slc27a1-/-, and Cpt2-/- showing the strongest phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 provide converging evidence from CRISPR deletion efficiency analysis (C29), CFU data at day 5 (C30-C32), and consistency with prior literature (C33-C34). The experimental design includes appropriate controls (scrambled sgRNA) and the results are consistent with previous findings for Cd36 and Cpt2 knockouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Functional validation confirmed that Plin2-/- macrophages completely lack lipid droplet formation (contrary to previous reports using germline knockout mice) and Cpt2-/- macrophages show impaired palmitate oxidation comparable to chemical inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by direct experimental evidence (confocal microscopy for C35, Seahorse analysis for C37). The discrepancy with Knight et al. 2018 (C36) is acknowledged and may reflect differences between myeloid-specific CRISPR knockout versus germline deletion with potential compensatory mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "All three mutant macrophages (Slc27a1-/-, Plin2-/-, Cpt2-/-) displayed reduced mitochondrial respiration and increased glycolysis in both uninfected and Mtb-infected conditions, with Plin2-/- showing the most severe metabolic reprogramming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C45 are well-supported by Seahorse metabolic flux analysis data showing consistent patterns of reduced OCR and increased ECAR across mutants. The data includes appropriate technical replicates (n=3 biological replicates with 2 technical repeats) and statistical comparisons. The findings are consistent with expected metabolic consequences of disrupting fatty acid metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "Impaired fatty acid metabolism in mutant macrophages correlated with stabilization of HIF1\u03b1 and activation of AMPK (increased phosphorylation), indicating metabolic stress responses in both infected and uninfected conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by western blot analysis with quantification across biological replicates (n=3). The data show statistically significant increases in HIF1\u03b1 and pAMPK levels. However, the western blots would benefit from loading controls normalized across all samples, and the claim of 'correlation' (C53) should be interpreted as association rather than causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Mutant macrophages showed increased autophagy as evidenced by elevated LC3II/LC3I ratios in Slc27a1-/- and Cpt2-/- macrophages and upregulation of autophagy genes (AMBRA1, ATG7, MAP1LC3B, ULK1) in all three mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 are supported by both western blot analysis of LC3 conversion and qPCR data. However, the autophagy assessment is incomplete - LC3II/LC3I ratios alone can be ambiguous (could reflect increased autophagosome formation or decreased degradation). Autophagic flux assays with lysosomal inhibitors would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C72",
+      "C73"
+    ],
+    "result": "Oleate supplementation rescued Mtb \u0394icl1 growth in control macrophages but failed to rescue growth in Slc27a1-/-, Plin2-/-, and Cpt2-/- macrophages, despite Cpt2-/- macrophages forming abundant lipid droplets, indicating that growth restriction is not purely due to nutrient limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70, C72-C73 provide strong evidence that the antimicrobial phenotype extends beyond simple lipid availability. The Mtb \u0394icl1 rescue experiment is well-designed as this mutant has a defined metabolic requirement for even-chain fatty acids. The observation that Cpt2-/- macrophages form more lipid droplets yet still restrict Mtb growth (C73) is particularly compelling evidence against a purely nutritional mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "RNA-seq analysis revealed distinct transcriptional responses in the three mutant macrophages, with Plin2-/- showing 900 differentially expressed genes, Slc27a1-/- showing 817 genes, and Cpt2-/- showing 189 genes, with Cpt2-/- and Plin2-/- clustering closer together than Slc27a1-/-.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by RNA-seq data with appropriate statistical thresholds (adjusted p<0.05, log2FC>1.2). The PCA analysis (C74-C75) and differential expression counts (C76-C78) are consistent. However, the manuscript should clarify the number of biological replicates used for RNA-seq and whether batch effects were assessed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C91"
+    ],
+    "result": "Slc27a1-/- macrophages displayed a pro-inflammatory phenotype with upregulation of MAPK/ERK signaling and inflammatory cytokines (IFN-\u03b3, IL-6, IL-1\u03b2), along with compensatory upregulation of alternative lipid transporters (MSR1, ABCC1) and downregulation of other solute carriers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82, C91 are supported by pathway enrichment analysis and qPCR validation. The pro-inflammatory signature is consistent with previous reports (C80). The upregulation of alternative transporters (C82) provides a plausible explanation for why Slc27a1-/- shows moderate rather than severe Mtb restriction and why bacterial transcriptomes show no differential expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C92"
+    ],
+    "result": "Plin2-/- macrophages showed upregulation of glycolysis, MHC class I presentation, and type I interferon responses, but were broadly anti-inflammatory with downregulation of pro-inflammatory cytokines and oxidative phosphorylation genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C88, C92 are supported by pathway enrichment analysis and qPCR validation showing IL-1\u03b2 downregulation. The transcriptional data are consistent with the metabolic flux analysis showing increased glycolysis and decreased mitochondrial respiration. The anti-inflammatory phenotype contrasts with Slc27a1-/-, suggesting distinct mechanisms of Mtb restriction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Cpt2-/- macrophages upregulated MHC class I antigen presentation and IFN-\u03b3/IL-1 response pathways while downregulating oxidative phosphorylation genes, showing overlap with Plin2-/- responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by pathway enrichment analysis. The similarity to Plin2-/- is consistent with the PCA clustering (C75). However, the relatively small number of differentially expressed genes (189) compared to the other mutants suggests either a more subtle transcriptional response or potential issues with statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Bacterial RNA-seq revealed no differentially expressed genes in Mtb from Slc27a1-/- macrophages, 105 genes in Plin2-/- macrophages, and 10 genes in Cpt2-/- macrophages, with Plin2-/- eliciting the strongest bacterial transcriptional response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C96 are supported by bacterial RNA-seq data. The lack of differential expression in Slc27a1-/- (C93) is surprising given the growth restriction but may reflect compensatory lipid import mechanisms. The correlation between Plin2-/- showing the strongest growth restriction and the most bacterial transcriptional changes (C96) is logically consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Mtb in Plin2-/- macrophages upregulated genes involved in nutrient assimilation including vitamin B12 biosynthesis, de novo fatty acid synthesis, cholesterol breakdown, \u03b2-oxidation, purine salvage, and tryptophan metabolism, indicating nutrient limitation stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 are supported by bacterial RNA-seq data showing upregulation of metabolic genes. The interpretation that this represents nutrient limitation (C105) is reasonable and supported by citations. However, upregulation of fatty acid synthesis and \u03b2-oxidation genes could also reflect other stresses or regulatory responses beyond simple nutrient limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C110",
+      "C111"
+    ],
+    "result": "Mtb in Plin2-/- and Cpt2-/- macrophages showed signatures of oxidative stress including upregulation of DNA repair and oxidative stress response genes, downregulation of the KatG repressor FurA, and elevated cellular ROS levels in host cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108, C110-C111 provide converging evidence for oxidative stress from bacterial transcriptomics (upregulation of DinF, RecF, etc.) and host ROS measurements. The FurA downregulation (C107-C108) is a specific and well-characterized response to oxidative stress. The CellROX staining (C111) provides direct evidence of elevated ROS in mutant macrophages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Pharmacological inhibitors of fatty acid metabolism (metformin, TMZ, FATP1 In) had no effect on Mtb growth in broth culture but significantly reduced bacterial loads in infected macrophages, phenocopying the genetic knockouts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C115 are supported by growth curve and CFU data. The lack of direct antimicrobial activity in broth (C112-C113) with efficacy in macrophages (C114-C115) demonstrates that the effects are host-mediated rather than direct bacterial toxicity. This provides independent validation of the genetic knockout results and supports the therapeutic potential of targeting host lipid metabolism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "The authors conclude that macrophages unable to import, store, or catabolize fatty acids restrict Mtb through both common mechanisms (increased glycolysis, oxidative stress, autophagy) and divergent mechanisms (pro-inflammatory vs anti-inflammatory responses), and that lipid droplet abundance does not correlate with Mtb growth support.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5 represent the main conclusions and are well-supported by the collective experimental evidence. The common mechanisms (glycolysis, oxidative stress, autophagy) are documented across mutants, while divergent mechanisms (Slc27a1-/- pro-inflammatory vs Plin2-/- anti-inflammatory) are clearly demonstrated. The lipid droplet paradox (C4-C5) is supported by the Cpt2-/- phenotype showing increased lipid droplets but Mtb restriction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C36"
+    ],
+    "result": "The authors' findings contradict previous reports that Plin2-/- macrophages have normal lipid droplet formation and do not restrict Mtb growth, potentially due to differences between myeloid-specific CRISPR knockout versus germline deletion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C36 accurately describe the discrepancy with Knight et al. 2018. The authors provide a plausible explanation that germline knockout may allow compensatory upregulation of other PLIN isoforms during development, while acute myeloid-specific deletion does not. This highlights an important methodological consideration for interpreting knockout studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Eight of ten differentially expressed genes in Mtb from Cpt2-/- macrophages were also differentially expressed in Plin2-/- macrophages, indicating overlapping bacterial stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 is supported by the bacterial RNA-seq data and is consistent with the host transcriptional similarity between these mutants. However, with only 10 differentially expressed genes in Cpt2-/-, the statistical power to detect unique responses may be limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "SLC27A1 knockout resulted in compensatory upregulation of alternative lipid import transporters MSR1 and ABCC1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 is supported by RNA-seq data showing upregulation of these transporters. This compensatory mechanism likely explains why Slc27a1-/- macrophages show only moderate Mtb restriction and why bacterial transcriptomes show no differential expression - the bacteria may still access sufficient lipids through alternative routes.",
+    "result_type": "MAJOR"
+  }
+]

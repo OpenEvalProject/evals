@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C124",
+      "C125",
+      "C126",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "SPICE is a novel computational pipeline that can systematically predict protein binding partners, DNA motif spacing preferences, and composite elements genome-wide. The authors claim SPICE is versatile, efficient, broadly applicable, and accurately predicts known binding partners and composite motifs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge SPICE as a 'valuable' and 'interesting' tool that correctly predicted known composite elements (Reviewer 1, Reviewer 3). However, Reviewer 2 challenges the novelty, stating the title is 'misleading' and that it should be 'Application of SpaMo tool' rather than claiming a 'new pipeline,' arguing that 'the novelty is missed.' Reviewer 2 also criticizes the use of old tools and data (ENCODE 2010-2012, old MACS version), suggesting the pipeline lacks methodological innovation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C44"
+    ],
+    "result": "SPICE successfully identified known AP1-IRF4 composite elements (AICE) with optimal spacing of 0 or 4 bp, validating the pipeline against previously reported findings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'SPICE was able to recapitulate previously known composite elements, such as the AP-1/IRF4 composite elements (AICE)' as a 'major strength.' Reviewer 1 also notes that SPICE 'correctly predicted known/reported transcription factor cooperations.' No reviewer challenges this validation result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SPICE successfully predicted STAT5 tetramerization with optimal spacing of 11-12 bps and correctly predicted that STAT1, STAT3, and STAT4 can form tetramers while STAT2 was not predicted to form tetramers, consistent with literature.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These predictions are presented as validation of SPICE's accuracy and are not questioned by any reviewer. Reviewer 3 acknowledges SPICE's ability to recapitulate known composite elements, which would include these STAT predictions. The consistency with literature reports strengthens the validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SPICE successfully defined an optimal spacing of 8 bp for CTCF/ETS complexes, a detail not defined in earlier studies, and validated against a recently reported functional CTCF-ETS1 interaction and known JUN-STAT3 association.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is presented as further validation of SPICE's robustness and is not challenged by reviewers. The claim that SPICE added new information (optimal spacing) beyond previous reports strengthens rather than weakens the validation, and no reviewer disputes this.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C56",
+      "C57",
+      "C129"
+    ],
+    "result": "SPICE uncovered JUN-IKZF1 composite elements as novel binding partners, an association not previously reported despite both factors playing critical roles in immune cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this as a novel finding. Reviewer 1 states this is 'interesting work' with 'the report of interaction between Ikaros and Jun' as one of two main contributions. Reviewer 3 notes the authors 'focus on a novel, SPICE predicted interaction between JUN and IKZF1.' The novelty of this interaction is not disputed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C71",
+      "C72",
+      "C75",
+      "C80",
+      "C81",
+      "C130",
+      "C141"
+    ],
+    "result": "ChIP-seq analysis in mouse B cells and human GM12878 cells demonstrated extensive genome-wide co-localization of IKZF1 and JUN (88.3% of IKZF1 peaks co-localized with JUN), including at known regulatory elements such as Prdm1 and Il10 genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 acknowledges 'Under LPS and IL-21 treatment, JUN and IKZF1 in B cells have significant overlap in their genomic localization' as 'very good supporting evidence.' However, Reviewer 1 raises concerns about the experimental conditions, noting that 'Ikaros bound strongly in LPS stimulated cells, in the (relative) absence of Jun binding' and questions how this reconciles with other data. Reviewer 1 requests additional ChIP-seq tracks from all conditions to clarify cooperativity versus independent binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C131",
+      "C132"
+    ],
+    "result": "De novo motif analysis on IKZF1 peaks identified canonical IKZF1 motifs (ETS-like and EBF1-like) comparable to previously identified motifs, as well as non-canonical variant motifs including at the IL10 gene locus.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This motif analysis is presented as characterization of IKZF1 binding and is not challenged by reviewers. The identification of both canonical and non-canonical motifs provides context for subsequent functional studies at the IL10 locus.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C142"
+    ],
+    "result": "Reactome Pathway Analysis from co-localized IKZF1-JUN peaks suggested broad biological roles including enrichment in cytokine signaling, interleukin signaling, and TLR4-related cascades.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 cautions that 'binding does not equal function' and that 'opening of chromatin (by any other factor(s)) can give DNA-binding factors (like Ikaros and Jun) the opportunity to bind, without functional consequence for the biological process studied.' This challenges the inference of functional cooperation from co-localization and pathway analysis alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "IKZF1 binding was induced by LPS or LPS+IL-21 treatment, while JUN binding was prominent only with LPS+IL-21 treatment in mouse B cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 identifies this as problematic, noting the discrepancy between conditions and requesting 'A western blot showing the Ikaros protein levels in the 3 conditions' to understand if binding patterns reflect protein expression. Reviewer 1 also asks how the LPS-only induction of IKZF1 (without JUN) reconciles with EMSA data showing IKZF1 cannot bind alone, creating logical inconsistency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C65",
+      "C66",
+      "C83",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "A novel JUN-IKZF1 interaction was identified at CNS9, a highly conserved upstream region (~9.1 kb) of the IL10 gene in both humans and mice, which harbors a non-canonical IKZF1 binding site and canonical AP-1 motif.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification and characterization of CNS9 as the site of interest is not disputed by reviewers. The conservation between species and presence of both motifs is accepted as descriptive data supporting the focus on this region for functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C138"
+    ],
+    "result": "Co-immunoprecipitation experiments in MINO cells showed JUN was weakly co-precipitated by anti-IKZF1, but IKZF1 could not be co-immunoprecipitated with anti-JUN or anti-JunD, suggesting these factors might form a complex.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 states as a 'major weakness' that 'The authors fail to convincingly show that IKZF1 and Jun physically interact. A quantitative measurement of their interaction strength would have been ideal.' Reviewer 1 notes the asymmetry ('curiously IKZF1 did not immunoprecipitate with an anti-JUN antibody') but does not explicitly reject the conclusion. The weak and unidirectional co-IP raises doubts about direct physical interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "EMSA with MINO cell extracts showed a strong complex formed with the WT CNS9 probe, which was weaker when the variant IKZF1 site was mutated and abolished when the AP-1 motif was mutated. Super-shift experiments with anti-IKZF1 and anti-JUN antibodies indicated both factors are part of the complex.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 states 'The super-shift experiment to show that the proteins bound to their EMSA probe were indeed IKZF1 and JUN are not very convincing and would benefit from efforts to quantify the shift (Figure 3E). Nuclear extracts from cells with single or double CRISPR knock outs of the two TFs would have been ideal.' This indicates the evidence is insufficient to definitively identify the proteins in the complex.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "EMSA competition experiments showed the WT competitor dramatically reduced binding, the variant IKZF1 mutant moderately reduced binding, while AP-1 mutant or double mutant oligonucleotides had little effect.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These competition experiments are not specifically challenged by reviewers and provide supporting evidence for the specificity of binding to the identified motifs. The data are consistent with the interpretation that both sites contribute to binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "EMSA with recombinant proteins showed no binding with IKZF1 alone, binding with AP-1 alone, and stronger binding when both proteins were added, suggesting cooperative binding. The AP-1 site is absolutely required while the variant IKZF1 site has low affinity but cooperates with AP-1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 identifies a critical issue: 'There is a second band beneath the more prominent band in the EMSA experiment with recombinant IKZF1 and JUN (Figure 4C). This second band is most probably bound by IKZF1 because it becomes weaker when the IKZF1 site is mutated and is completely absent when only JUN is added. This is completely ignored by the authors. Therefore, experiments with EMSA fail to convincingly show that IKZF1 and Jun bind cooperatively. They could just as well bind independently to the two sites.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C112",
+      "C113",
+      "C114",
+      "C119",
+      "C120",
+      "C121",
+      "C140"
+    ],
+    "result": "Luciferase reporter assays in primary B and T cells showed that IL10-CNS9 activity was potently induced but depended on both the IKZF1 and AP-1 binding sites, demonstrating cooperative binding and transcriptional activation by IKZF1 and AP1 proteins.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states 'The luciferase assays in B and T cells do not demonstrate the role of the proteins Ikaros or Jun directly (page 10, lines 208 and surrounding text). The assay measures an effect of the DNA sequences (implying binding of some transcription factor(s)), but does not identify which protein factors bind there.' This challenges the claim that the assays demonstrate IKZF1 and JUN specifically, as opposed to other family members. Reviewer 1 also notes the need to discuss other Ikaros family members (Aiolos, Helios) that bind similar sequences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C139",
+      "C143"
+    ],
+    "result": "The findings reveal an unappreciated global association of IKZF1 and AP1 with broad physiological significance, potentially influencing various cellular functions and disease contexts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the genome-wide co-localization data support a global association, Reviewer 1's concerns about distinguishing binding from function and the need to clarify which specific proteins are involved (IKZF1 vs. other family members, JUN vs. other AP-1 components) temper confidence in the broad functional claims. The pathway analysis suggests potential roles but does not demonstrate them.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "SPICE successfully predicted both known and novel interactions using the ENCODE database, and the fundamental conclusions would not be altered by using larger, more recent databases like ReMap.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 2 strongly criticizes the use of 'old data from ENCODE (2010-2012)' and states 'authors even did not care even about to set for each library the name of target TF.' The claim that newer databases would not alter conclusions is speculative and not tested. Reviewer 2's criticism suggests the use of outdated data is a significant limitation that undermines confidence in the comprehensiveness of the predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "IKZF1 is closely related to IKZF2 (Helios) and IKZF3 (Aiolos), which might also co-localize with JUN. An independent study confirmed IKZF1 and IKZF3 can directly bind AP-1 family members, supporting the findings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly requests discussion of other Ikaros family members, noting 'There are other Ikaros family members that have high homology and that are reported to bind similar DNA sequences (for instance Aiolos and Helios), which are expressed in B-cells and T-cells. A discussion of this is of relevance.' The authors' acknowledgment of this and citation of independent validation (Goh et al., 2024) addresses this concern and is accepted as supporting evidence.",
+    "result_type": "MINOR"
+  }
+]

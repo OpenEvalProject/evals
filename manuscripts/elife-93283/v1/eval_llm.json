@@ -1,0 +1,239 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C87",
+      "C88"
+    ],
+    "result": "Immune cell populations in synovium are diverse in healthy tissue and undergo dramatic expansion and diversification following ACLR injury, with macrophages showing the most prominent changes. Flow cytometry and scRNA-seq demonstrate that immune cells are present in healthy synovium but increase acutely at 7 days post-ACLR with partial resolution by 28 days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C27-C31, C87-C88 collectively demonstrate immune cell dynamics in PTOA using complementary scRNA-seq and flow cytometry approaches. The data in Figures 1B-E provide quantitative evidence for immune cell expansion, with macrophages predominating both numerically and proportionally. The temporal dynamics (7d vs 28d ACLR) are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C89",
+      "C94"
+    ],
+    "result": "Multiple distinct macrophage polarization states exist in PTOA synovium with unique transcriptomic signatures. Basal resident macrophages (Timd4+ Lyve1+ Folr2+) predominate in healthy tissue but are lost after injury, while two resident-like subsets (A: Mrc1+ Ly6e+ Gas6+; B: Cd9+ Spp1+ Trem2+) emerge following injury with distinct functional profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6-C7, C56-C64, C89, C94 describe macrophage heterogeneity based on scRNA-seq clustering and trajectory analysis (Figure 4). While the transcriptomic signatures are well-documented, the trajectory modeling (C60) is computational inference that requires experimental validation through lineage tracing. The authors acknowledge this limitation, stating 'in vivo approaches such as lineage tracing will be required to assess the veracity of in silico trajectory modeling.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C90",
+      "C103"
+    ],
+    "result": "Infiltrating macrophages expressing Ccr2 and MHC Class II genes arise from systemically derived monocytes (Ly6c2+ Plac8+ Chil3+) and are pro-inflammatory, analogous to F4/80hi MHC Class II+ macrophages described in inflammatory arthritis models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66, C90, C103 describe monocyte-to-macrophage differentiation based on trajectory analysis (Figure 4D). While the transcriptomic characterization is supported by data, the cellular origin and differentiation pathway are inferred computationally rather than demonstrated experimentally. The analogy to Huang et al.'s findings (C103) is based on gene signature comparison, not functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C91",
+      "C92"
+    ],
+    "result": "M-CSF signaling is highly activated after joint injury and operates primarily in the stromal-to-immune direction. Fibroblasts produce Csf1, pericytes produce Il34, and macrophages/DCs express Csf1r, establishing a stromal-immune crosstalk axis that regulates macrophage function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C68-C80, C91-C92 demonstrate M-CSF pathway activation through multiple complementary approaches: CellChat computational analysis (Figure 5B,D), bulk RNA-seq (Figure 5C), and scRNA-seq gene expression patterns (Figure 5E-G). The directionality of signaling is well-supported by ligand-receptor expression patterns and hierarchy plots. However, the functional role of this signaling (C8, C69) is inferred rather than experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C81",
+      "C82",
+      "C83",
+      "C107"
+    ],
+    "result": "The transcription factors Pu.1, Cebp\u03b1, Cebp\u03b2, and Jun are predicted to control monocyte-to-macrophage differentiation in PTOA synovium, with Pu.1 specifically regulating Csf1r expression. Target genes of these TFs show increasing expression along pseudotime trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C81-C83, C107 are based on computational RcisTarget analysis of gene modules (Figure 6D-F). While the bioinformatic predictions are supported by prior literature (C81, C107 cite previous work), the actual regulatory role of these TFs in PTOA macrophage differentiation has not been experimentally validated. The authors acknowledge 'empirical studies demonstrating whether maturation of systemically derived monocytes into inflammatory synovial macrophages during OA is dependent on these TFs are needed.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Integration of four scRNA-seq datasets from PTOA and RA models reveals conserved immune cell populations across studies, with myeloid cells predominating and distinct signaling patterns for different immune cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33, C39-C44 describe integrated analysis of multiple datasets (Figure 2). The clustering and cell type identification are well-supported by marker gene expression and CIPR analysis. CellChat analysis provides evidence for distinct signaling patterns, though these are computational predictions rather than experimental validations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "Macrophages from PTOA and RA show both shared and distinct transcriptomic signatures. PTOA macrophages are enriched for collagen metabolism and neutrophil chemotaxis pathways, while RA macrophages show enrichment in corticotropin-releasing hormone response and Th1 differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46, C49-C53, C55 compare macrophages across disease states using differential gene expression and pathway analysis (Figure 3). The statistical analysis is appropriate, with clear identification of disease-specific and shared DEGs. Pathway enrichment analysis provides biological context, though functional validation is not provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "High neutrophil abundance detected in whole joint digests is not reduced by systemic perfusion and likely represents bone marrow contamination rather than true intra-articular tissue neutrophils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 address a technical concern about neutrophil abundance in whole joint preparations. The perfusion experiment (C36) provides direct evidence that neutrophils are not vascular-derived. CIPR analysis (C38, Figure 2\u2014figure supplement 5) comparing gene signatures to published datasets supports the bone marrow origin interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Traditional M1/M2 macrophage markers do not segregate into defined clusters in PTOA synovium, indicating the need for more nuanced characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is directly supported by gene expression data in Figure 4\u2014figure supplement 1C-D showing that Tnf, Il10, Il1b, and Arg1 do not show clear cluster-specific expression patterns. This observation is important for interpreting macrophage heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The ACLR model recapitulates traumatic joint injury without surgical confounding effects on synovial inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 describe the experimental model used. C25 is supported by citations to prior validation studies. C26 states an advantage of the model that is conceptually sound\u2014non-invasive injury avoids surgical trauma\u2014though direct comparison to surgical models is not provided in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The resident-like B macrophage population (Spp1+ Cd9+ Trem2+) identified in PTOA synovium is functionally analogous to pro-fibrotic macrophages described in other disease contexts, and trajectory modeling suggests it arises from resident TLF+ macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 make functional inferences based on gene signature similarity to published pro-fibrotic macrophages. While C95 is well-supported by multiple citations, C96 and C98 are inferences requiring experimental validation. The authors acknowledge uncertainty, noting that 'in liver cirrhosis, however, trajectory analysis suggested a monocytic origin for Spp1+ macrophages,' indicating context-dependent origins.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C34",
+      "C54",
+      "C70",
+      "C71",
+      "C84",
+      "C85",
+      "C86",
+      "C93",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Background and contextual claims about synovial inflammation, macrophage biology, and prior studies in arthritis models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C24, C34, C54, C70-C71, C84-C86, C93, C99-C102, C104-C106 are primarily literature citations and general knowledge statements that provide context for the study. These are appropriately supported by citations to prior work and represent accurate summaries of the field.",
+    "result_type": "MINOR"
+  }
+]

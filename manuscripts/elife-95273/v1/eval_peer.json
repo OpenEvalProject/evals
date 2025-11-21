@@ -1,0 +1,225 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The authors developed a CNN-based cell painting approach that achieves >96% accuracy in classifying neural cell lines (1321N1 astrocytoma and SH-SY5Y neuroblastoma) in pure and mixed cultures. The CNN significantly outperformed Random Forest classification (96% vs 75% F-score), with optimal performance requiring 5000 training instances and models trained on multiple replicates showing better generalization to unseen data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly praise the comprehensive experimental validations, with one reviewer noting 'exceptional evidence through rigorous experimental and computational validations' and the other highlighting the 'direct comparison of feature-based versus deep-learning-based classification' as especially compelling. The high accuracy results and methodological comparisons are accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors propose a novel nucleocentric phenotyping approach using a region around the nucleus (optimal size 12-18 \u03bcm) as CNN input, which maintains high classification accuracy (F-score 0.96\u00b10.02) even at very high cell densities (95-100% confluency) where whole-cell approaches fail. This approach is less susceptible to segmentation errors at high density and focuses CNN attention on perinuclear structures.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers explicitly highlight this as a key innovation, with one stating 'The authors also propose a new nucleocentric phenotyping pipeline...This nucleocentric approach improves classification performance at high densities because nuclear segmentation is less prone to errors in dense cultures.' The reviewer lists 'Evaluation of cell-density dependency' and 'Evaluating the performance of different spatial contexts around the cell/nucleus' among the comprehensive validations that make the manuscript 'especially compelling.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The authors systematically evaluated the contribution of individual cell painting channels, spatial resolution requirements, and signal-to-noise ratio to classification performance. All four channels contribute to classification (no single channel achieves >85% accuracy), spatial resolution can be reduced to 0.6 \u03bcm pixel size without performance loss, and SNR must remain above 14.27 dB.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly praises the 'Systematic assessment of the contribution of each fluorescent channel' as one of the comprehensive validations that distinguishes this work. These technical characterizations are accepted without question as supporting the robustness of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "The CNN approach successfully discriminated three cell lines (1321N1, RPE1, and ARPE) with 95.06\u00b12.51% accuracy, with UMAP analysis showing the two related RPE lines cluster closer together but remain well separated from the morphologically distinct 1321N1 cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is part of the 'application to multiple classification tasks' that the reviewer explicitly lists as one of the comprehensive validations. The multi-class extension demonstrates generalizability and is accepted without critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C104",
+      "C105"
+    ],
+    "result": "Models trained on monocultures can classify cells in co-cultures with reasonable accuracy (F-score 0.86\u00b10.01 for Mono2Co), though performance is lower than training directly on co-cultures. Finetuning with same-plate monocultures improves performance to 0.88\u00b10.01 and reduces variability. This demonstrates that cells retain salient characteristics in heterogeneous environments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly highlights 'generalization of models trained on cultures containing a single cell type (mono-cultures) to mixed co-cultures' as one of the especially compelling comprehensive validations. The successful transfer, even with reduced accuracy, is accepted as demonstrating an important principle about cell identity preservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C111"
+    ],
+    "result": "The approach successfully classifies neurons versus neural progenitor cells (NPCs) in iPSC-derived cultures undergoing guided differentiation, achieving 96% accuracy with cell-level ground truth labels (vs 86% with condition-based labels). The CNN predictions of fractional abundance (40.5% vs 74.2% neurons in primed vs differentiated conditions) align well with immunofluorescence quantification and generalize to spontaneous differentiation protocols.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This application to iPSC-derived cultures directly addresses the manuscript's stated goal of quality control for iPSC cultures. The reviewer notes this is an 'important application' for characterizing 'induced pluripotent stem cell-derived mixed neural cultures cell type compositions' and praises the comprehensive validations. The successful generalization across differentiation protocols is accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The nucleocentric CNN discriminates iPSC-derived neurons, astrocytes, and microglia with 96.81\u00b10.95% accuracy in monocultures. In mixed neuron-microglia cultures, the approach achieves 98% accuracy for cell type discrimination regardless of microglial activation state (LPS treatment), though distinguishing reactive versus resting microglia is more challenging (F-score 0.80\u00b10.01 with tiered approach).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents another 'application to multiple classification tasks' that the reviewer explicitly praises. The ability to handle both cell type and cell state classification, even with acknowledged lower performance for state discrimination, is accepted as demonstrating the method's utility for iPSC culture quality control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Random Forest classification using the full morphotextural feature dataset achieved poor accuracy (F-score 0.75\u00b10.01), with 46% misclassification of 1321N1 cells. Removing redundant features did not improve performance, likely due to bias in feature selection for high-dimensional data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly praises the 'Direct comparison of feature-based (a la cell profiling) versus deep-learning-based classification' as one of the comprehensive validations that makes the manuscript especially compelling. The poor RF performance is accepted as justifying the CNN approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C49"
+    ],
+    "result": "CNN misclassifications are mainly caused by faulty cell detection (e.g., oversegmentation), unhealthy/dead cells, debris, or aberrant cell shapes\u2014errors not necessarily attributed to the CNN itself.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer explicitly lists 'explicit examination of mistakes in classification' as one of the comprehensive validations. This analysis of failure modes is accepted as demonstrating rigor in method evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "Cell-based CNN prediction significantly outperformed using population-level time in culture as a classification criterion (96% vs 86% accuracy) for staging iPSC-derived neuronal differentiation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comparison is part of the comprehensive validations of the method's application to iPSC culture staging. The reviewer accepts this as demonstrating the superiority of single-cell morphological profiling over population-level temporal information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "In mixed iPSC-derived neuronal cultures, microglia could be unequivocally discriminated from neurons regardless of reactivity state, and a tiered strategy allowed distinguishing activated from non-activated microglia states, albeit with lower accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is part of the 'application to multiple classification tasks' that the reviewer praises. The ability to handle both cell type and activation state, even with acknowledged limitations for state discrimination, is accepted as valuable for quality control applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C112"
+    ],
+    "result": "Guided differentiation protocols speed up differentiation and enhance culture purity, but neural differentiation is not binary, as evidenced by mixed presence of Ki67+/TUBB3- and Ki67-/TUBB3+ cells. Differentiating iPSC cultures are highly heterogeneous with transitioning progenitors in various maturity stages that binary models fail to fully capture.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These observations about iPSC culture heterogeneity are accepted as biological context that motivates the need for single-cell classification approaches. The reviewers do not question these characterizations of differentiation complexity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C120"
+    ],
+    "result": "Morphological single-cell profiling provides a means to quantify cell composition in complex mixed neural cultures and holds promise for quality control of iPSC-derived cell culture models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion directly aligns with the reviewers' assessment. One reviewer states this is an 'important application' for characterizing iPSC cultures, and the other notes the 'simple and high-content assay democratizes use and enables adoption by other labs,' accepting the quality control application as a key contribution.",
+    "result_type": "MAJOR"
+  }
+]

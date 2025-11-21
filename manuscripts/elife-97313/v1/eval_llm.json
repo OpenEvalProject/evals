@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Equilibrium MD simulations of the glycosylated spike with linoleate bound show that the locked state remains stable over 750 ns, with dynamics generally similar to the closed state (without LA), except for decreased dynamics in RBMB. Glycans exhibit diverse mobility patterns, and the glycan shield covers ~60% of the protein surface accessible to medium-sized probes but only ~26% for small molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C49 are supported by equilibrium MD simulation data shown in Figures 2 and supplementary figures. The simulations demonstrate structural stability, convergence, and characterize glycan dynamics and shielding effects with appropriate metrics (RMSD, RMSF, surface area calculations). The comparison with prior work (Casalino et al., 2020) provides validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "LA removal from the FA sites triggers immediate structural changes that propagate to the NTD, RBM, and FP-surrounding regions. The cascade of events in the glycosylated spike mirrors that of the non-glycosylated protein, with strong positive correlation between responses, though the largest differences occur around the furin recognition site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by D-NEMD simulation data (Figures 3 and supplements). The simulations demonstrate propagation of structural changes with statistical significance (standard error of mean shown). The comparison with non-glycosylated spike is appropriate, and the difference at the furin site is explained by the cleavage state difference between models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Structural changes from LA removal in the FA site (P337-A348, S366-A372, T415-K417 regions) are rapidly transmitted to the RBD, with R454-K458 mediating transmission to the RBM (A475-C488). The FA site contracts upon LA removal, and RBM motions show diverse directions with two RBMs moving upward and one downward at t=10 ns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by D-NEMD simulation data shown in Figures 4 and 5. The identification of specific residue segments involved in signal transmission is data-driven. The directional analysis of motions provides mechanistic insight, though the functional significance of the diverse RBM directions (C64) could benefit from further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The N343 glycan is positioned immediately after the P337-F342 region that transmits structural changes from the FA site and can bridge neighboring RBDs, potentially strengthening the connection between the FA site and RBDs. N343 has been shown to act as a gate for RBD opening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 and C69 are supported by simulation data (Figure 4) and citations. C68 is appropriately qualified as speculative ('may strengthen'). The structural observations about N343's position and bridging capability are data-supported, while the functional interpretation relies on both current simulations and prior literature (Sztain et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Structural changes from LA removal propagate to the NTD via P337-F342, W353-I358, and C161-P172, reaching antigenic epitopes (S71-R78, H146-E156, Q173-Q183, L249-G257) in the NTD distal-loop region. The response is consistent across the three FA sites despite amplitude variations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 are well-supported by D-NEMD simulation data (Figure 4 and supplements) and citations identifying antigenic epitopes. C74 is supported by citation. The identification of specific pathways and their consistency across FA sites demonstrates robust findings. The connection to functional antigenic sites adds biological relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The structural response from the FA site reaches the Q173-Q183 segment, which forms the entrance to an allosteric site that binds heme and biliverdin. Two of three Q173-Q183 regions show outward motions upon LA removal, revealing a connection between the FA and heme/biliverdin sites despite being >30 \u00c5 apart.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C82 are supported by D-NEMD simulation data (Figures 4, 6) and citations to prior experimental work on heme/biliverdin binding. The identification of this unexpected connection between allosteric sites is a novel finding. C79 and C82 appropriately characterize this as an interpretation. The distance measurement (>30 \u00c5) provides quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The presence of heme or biliverdin in the NTD site may affect internal networks and modulate the spike's response to FAs, potentially affecting binding rates and/or affinities at the respective allosteric sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 are appropriately qualified as speculative ('may affect', 'potentially affecting') based on the observed structural connection. However, these claims represent hypotheses that require experimental validation or additional simulations with heme/biliverdin bound. The current simulations do not include these ligands, so the functional consequences remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Eight N-glycans are present on the NTD, with four (N74, N122, N149, N165) located near segments responding to FA site occupancy. N74, N122, and N149 shield the spike from the immune system, while N165 and N234 stabilize the RBD 'up' conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C88 are supported by citations to published research and observations from simulation data (Figure 4\u2014supplement 3). The structural descriptions are well-documented in the literature, and the simulation data confirms the proximity of these glycans to responsive regions. The functional roles are established by prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Structural changes from LA removal are transmitted to the furin site, S2' cleavage site, V620-L629 loop, and FPPR via F318-I326 and C525-K537 segments. The furin site is >40 \u00c5 from the FA site and is important for spike activation and viral infectivity. Previous D-NEMD work suggests that additional positive charges near the furin site strengthen the allosteric connection to the FA site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C94 are supported by D-NEMD simulation data (Figure 4 and supplements) and citations to published research on furin site function. The distance measurement (>40 \u00c5) demonstrates long-range allosteric effects. C93-C94 appropriately cite prior work on variants. The identification of specific transmission pathways is data-driven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "The allosteric effects in the glycosylated ancestral spike are qualitatively similar to the non-glycosylated protein, with the same regions connected to the FA site. This indicates that glycans on the protein exterior do not substantially affect internal allosteric communication pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 are supported by comparison of D-NEMD simulation data with previous studies (Figure 3\u2014supplement 7 shows strong correlation). The interpretation that glycans don't affect internal pathways is reasonable given the data, though 'qualitatively similar' appropriately acknowledges some quantitative differences. The conclusion is limited to internal pathways and doesn't claim glycans have no effect overall.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Structural changes propagate from the FA site to the furin site and V620-L629, then to the FPPR and S2' cleavage site. The S2' site is an antibody epitope and crucial for infection. FPPR residues show well-defined upward responses in chains B and C, and outward motion in chain A. Chains with FPPR motion toward CTD1 also exhibit upward RBM movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C105 are supported by D-NEMD simulation data (Figures 4, 5 and supplements) and citations to published research on S2' and FPPR function. The temporal progression of structural changes is well-documented. The observation linking FPPR and RBM motions (C104) is interesting but the mechanistic significance could benefit from further investigation. The diverse S2' motions (C105) are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Several N- and O-glycans are located near pathways connecting the FA site to furin and FP regions. All three monomers contain glycans at T323, N616, and N657 near these pathways. Interactions between O-glycans (S323, T325) and N-glycan N234 create a direct connection between NTD and F318-I326, potentially facilitating structural change transmission within subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 and C111 are supported by citations and simulation data (Figure 4\u2014supplement 3). C110 is appropriately qualified as speculative ('may facilitate'). The structural observations about glycan positions and interactions are data-driven. The proposed facilitation role is a reasonable interpretation but would benefit from additional analysis or experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Cross-correlation analysis shows similar patterns between equilibrium and D-NEMD trajectories, with equilibrium simulations showing subtle increases in correlations between FA sites and RBDs. LA binding reinforces connections between the FA site and other protein regions. Some pathway segments (R454-K458, C525-K537) show moderate to high correlations with the FA site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 are supported by cross-correlation analysis shown in Figure 4\u2014supplements 4-5. The analysis provides complementary evidence for the allosteric pathways identified by D-NEMD. The interpretation that LA binding reinforces connections (C113) is reasonable based on the increased correlations. The identification of specific segments from correlation analysis validates the D-NEMD findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "More than 65% of amino acid variations in Alpha, Beta, Gamma, Delta, and Omicron variants (50 of 77 positions) are located in or near the allosteric pathways identified by D-NEMD. Several variants contain substitutions at the FA site itself (e.g., K417N/T, R408N). These mutations are responsible for previously observed differences in allosteric behavior between variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118, C121-C124 are supported by sequence alignment and comparison with D-NEMD results (Figure 4\u2014supplements 6-7). C119 is appropriately qualified as speculative ('may influence'). C120 is supported by citation to prior work. C125 is a reasonable interpretation. The high percentage of variant mutations mapping to identified pathways provides strong validation of the pathway identification and suggests functional relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Previous D-NEMD work showed significant differences in allosteric responses between spike variants. Alpha was similar to ancestral, Delta showed increased FA-furin connections but diminished V622-L629 links, and Omicron displayed stronger couplings between the FA site and NTD, RBM, and furin site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C130 are supported by citations to previous D-NEMD studies (Oliveira et al., 2023). These claims appropriately summarize prior work to provide context for the current findings. The variant-specific differences in allosteric behavior support the functional relevance of the pathways identified in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The connection between FA site and RBM is mediated by R454-K458, transmission to NTD involves P337-F342, W353-I358, and C161-P172, and pathways to furin and FP regions involve F318-I326 and C525-K537. More than 65% of variant mutations are located in or near these pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C135 are supported by D-NEMD simulation data and variant sequence analysis. These claims summarize the main allosteric pathways identified in the study. The specific residue segments are consistently identified across multiple analyses (D-NEMD, cross-correlation, variant mapping), providing strong support. The high percentage of variant mutations in these regions validates their functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "D-NEMD reveals an unexpected connection between the FA site and the heme/biliverdin binding site. This work reinforces the ability of D-NEMD to find allosteric sites and map communication pathways, and points to complex allosteric effects in the spike of potential functional relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 are supported by D-NEMD simulation data and citations. C136 identifies a novel finding. C137 appropriately characterizes the methodological contribution with citations to D-NEMD methodology papers. C138 is a reasonable interpretation of the overall findings. The discovery of the FA-heme/biliverdin connection is a significant result that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Comparison with non-glycosylated spike simulations shows that glycans do not qualitatively change the cascade of events connecting the FA site to the rest of the spike. However, some glycans influence allosteric pathways by facilitating structural change transmission within and between subunits, such as through interactions between N234, T373, and S375 glycans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C142 are supported by comparison of D-NEMD simulation data with previous studies and analysis of glycan interactions. The conclusion that glycans don't qualitatively change pathways but can facilitate transmission is well-supported and represents an important finding about the role of glycosylation in spike allostery. The specific example (C141) provides mechanistic detail.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "A model of the fully glycosylated ancestral spike ectodomain with three closed RBDs and LA bound in each FA site was created based on cryo-EM structure 7JJI. The model contains 22 N- and 2 O-glycosylation sites per monomer with asymmetric site-specific glycosylation profiles derived from experimental data, and is cleaved at the furin site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C148 describe the model building procedure and are supported by citations to the structural template (7JJI) and glycosylation data sources. C145 cites prior validation of similar models. The model construction follows established protocols and incorporates experimentally-determined glycosylation heterogeneity, providing a solid foundation for the simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Equilibrium MD simulations (3 replicates, 750 ns each) and 210 D-NEMD simulations (10 ns each) were performed using CHARMM36m force field. LA was instantaneously removed from all three FA sites to create a nonequilibrium perturbation. Responses were computed using the Kubo-Onsager relation by calculating C\u03b1 displacements between equilibrium and nonequilibrium simulations, averaged over 210 replicas, with statistical significance assessed by standard error of the mean.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C158 describe the simulation methodology and are supported by the methods section and Figure 7. The approach is well-established (citations to D-NEMD methodology provided). The large number of replicas (210) and statistical analysis (standard error) provide robust sampling. The methodology is clearly described and appropriate for the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "D-NEMD simulations identify allosteric networks connecting the FA site to functionally important regions including RBM, NTD antigenic supersite, fusion peptide region, and the heme/biliverdin binding site. These networks highlight the complexity of allosteric modulation and reveal a striking, unexpected link between different allosteric sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 summarize the main findings and are supported by the D-NEMD simulation data presented throughout the manuscript. The identification of multiple allosteric connections is well-documented with specific residue-level detail. The characterization as 'complex' and 'unexpected' (particularly for the FA-heme/biliverdin connection) is appropriate. These represent the core discoveries of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "Glycans do not qualitatively change the internal allosteric pathways in the spike protein but can facilitate the transmission of structural changes within and between subunits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 represent a key conclusion supported by comparison of glycosylated and non-glycosylated D-NEMD results (Figure 3\u2014supplement 7 shows strong correlation). The distinction between 'qualitatively' (pathways are the same) and facilitation (quantitative effects) is appropriate and well-supported by the data. This addresses the main research question about glycan effects on allostery.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "Experiment 1 tested whether audiovisual integration relies on sustained or transient channels by measuring perceived synchrony of on-step and off-step stimuli. Neither the point of subjective simultaneity (PSS) nor the window of subjective simultaneity (WSS) differed across conditions combining on-steps and off-steps in vision and audition, arguing against dominance of sustained channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20 and C21 are well-supported by statistical tests showing no significant differences across conditions (C20) and the logical inference that sustained channels would have produced different correlations for positively vs. negatively correlated stimuli (C21). The experimental design appropriately tests the hypothesis with adequate sample size (8 participants, 600 responses each in TOJ and SJ tasks).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Experiment 2 demonstrated a frequency-doubling effect in perceived audiovisual simultaneity using periodic stimuli. The power spectrum of psychometric functions showed a sharp peak at 2 cycles per period in all observers, supporting the hypothesis that audiovisual synchrony is computed over unsigned transient input channels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are strongly supported by Fourier analysis showing a clear 2 cpp peak (C22), with 99% confidence intervals separating this from the 1 cpp amplitude (C23). The inference that this frequency doubling indicates transient channel dominance (C24) is logically sound given the theoretical framework. Sample size (5 participants, 600 trials each) is justified given the expected large effect size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C31"
+    ],
+    "result": "The study demonstrates that multisensory integration operates on correlated input from unimodal transient channels, unifying several previously unrelated phenomena in multisensory research under a single computational framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2 and C31 represent the main conclusion, supported by converging evidence from experiments 1 and 2, plus successful model simulations of multiple published datasets (68,693 trials from 110 observers total). The breadth of phenomena accounted for (timing perception, detection, causality judgments, optimal integration) provides strong support for this unifying claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "The revised MCD model with transient input channels accurately replicated the results of experiments 1 and 2, with Pearson correlations of 0.99 for both TOJ and SJ tasks in experiment 1, and 0.97 for experiment 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is well-supported by quantitative model-data correlations. The model has only 3 temporal constants plus 2 GLM parameters per psychometric curve, providing parsimony. The high correlations across diverse task types (TOJ, SJ, periodic stimuli) demonstrate the model's generalizability and support the transient channel hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The revised MCD model successfully replicated findings from six published studies across diverse paradigms, including causality judgments (r=0.99, 0.98), temporal order judgments (r=0.97), detection tasks (r=0.91), and amplitude modulation detection (r=0.89).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 demonstrate strong model generalization with high correlations across diverse datasets. The model used constrained or zero free parameters for several simulations (C26, C27), strengthening the evidence. The successful replication of high temporal rate stimuli (up to 18 Hz, C26) addresses previous criticisms of the original MCD model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C4"
+    ],
+    "result": "The MCD model can quantitatively replicate several recent findings in multisensory research and simultaneously account for perceived timing, multisensory facilitation, causality judgments, and optimal integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C4 are supported by the comprehensive model validation against published datasets (C26-C30) and the new experiments. The model's ability to account for multiple phenomena with a single computational framework and consistent parameters provides strong evidence for its validity and the underlying transient channel hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "PSS and WSS measured with TOJ and SJ tasks were not significantly correlated in experiment 1 (PSS: r=-0.16, p=0.38; WSS: r=0.16, p=0.39), but the authors propose both tasks share a common sensory processing mechanism (MCD) with independent decision-making processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 is supported by statistical tests showing no correlation. Claim C45 provides a reasonable theoretical explanation consistent with the model architecture (two outputs from one MCD unit). This reconciles the lack of correlation with a shared sensory mechanism, though the proposal is somewhat speculative and would benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Audiovisual information reaches the brain via sustained and transient channels that originate early in the processing hierarchy. Sustained channels respond to stimulus intensity (low-pass filters), while transient channels respond to changes in intensity (band-pass filters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C9 describe established knowledge about sensory processing, supported by multiple citations to prior work. These claims provide the necessary theoretical foundation for the study's hypotheses. The characterizations are consistent with signal processing theory and neuroscience literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Prior research has established that temporal correlation and synchrony are critical for multisensory perception, with evidence from illusions, optimal integration, detection tasks, and neuroimaging showing that audiovisual integration relies on transient stimulus information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C15 accurately summarize prior literature with appropriate citations. These claims establish the context and motivation for the current study. The authors correctly attribute findings to cited studies (Andersen & Mamassian 2008, Werner & Noppeney 2011), providing a solid foundation for their hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Onset and offset step stimuli trigger identical unsigned transient responses but negatively correlated sustained responses. With periodic stimuli, transient channels exhibit frequency doubling (responding at twice the input rate), a hallmark of transient channel contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 describe theoretical predictions that form the basis for the experimental hypotheses. These are supported by signal processing theory, model simulations (Figure 1), and citations to prior work on frequency doubling. The logic is sound and provides clear testable predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Experiment 1 included 8 participants (age 22-35, 4 females) providing 1200 responses each. Experiment 2 included 5 participants (age 25-35, 3 females) providing 600 responses each. Both experiments were ethically approved and conducted according to the Declaration of Helsinki.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C42 describe methodological details that are clearly stated and appropriate. Sample sizes are justified based on expected effect sizes and number of trials. Ethical approval is documented. These are standard methodological claims that are adequately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "The study analyzed 68,693 trials from 110 observers across three novel and six published datasets, including TOJs, SJs, causality judgments, and detection tasks, providing large-scale evidence for transient channel dominance in multisensory integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 accurately describe the scope of the analysis. The large sample size across diverse paradigms strengthens the conclusions. However, it should be noted that the published datasets were not collected specifically to test the transient vs. sustained hypothesis, which could introduce some limitations in interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The MCD model architecture includes two outputs (for SJ and TOJ), uses biphasic band-pass filters for transient channels and low-pass filters for sustained channels, with specific temporal constants (\u03c4V=0.070s, \u03c4A=0.055s, \u03c4av=0.674s) and squaring nonlinearities to achieve polarity insensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 describe the model implementation with appropriate technical detail and citations. The parameter values (C50, C51) were determined from experimental data. The model architecture is biologically plausible and mathematically well-defined. These technical specifications are necessary for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "Multisensory benefits in detection tasks critically depend on the correlation and timing of audiovisual events, which are the primary factors affecting MCD model responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by the model simulations showing that correlation and timing systematically affect MCD output, and by the successful replication of detection task data (C29). This provides a mechanistic explanation for multisensory facilitation effects without requiring post-sensory adjustments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "No obvious mapping between acoustic and lightness intensity rooted in natural scene statistics has been reported. Transient channels operate as event detectors by representing only input variations, signaling potentially relevant changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 accurately notes a gap in the literature regarding intensity mappings. Claim C34 provides a functional interpretation of transient channels that is consistent with their computational properties and supported by the study's findings. These claims contextualize the results within broader perceptual theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Event cameras respond only to brightness changes (like transient channels), reducing bandwidth and maximizing dynamic range. The MCD model's mathematical equivalence to Hassenstein-Reichardt detectors suggests potential applications in multimodal neuromorphic systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35 and C36 accurately describe event camera technology and its biological inspiration. However, claim C37 about mathematical equivalence between MCD and Hassenstein-Reichardt detectors is stated but not demonstrated in the manuscript. The proposed neuromorphic application (C37) is speculative and would require validation. The connection is plausible but not rigorously established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "PSS and WSS measured with TOJ and SJ tasks are often not correlated when measured on the same subjects, as reported in previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by multiple citations to prior research. This establishes the context for the authors' finding of no correlation in their own data (C44) and their theoretical explanation (C45). The claim accurately represents the literature.",
+    "result_type": "MINOR"
+  }
+]

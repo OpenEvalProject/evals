@@ -1,0 +1,378 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "SPICE is a novel computational pipeline that can systematically predict genome-wide composite elements for pairs of transcription factors and their optimal motif spacing. The pipeline is versatile, efficient, and capable of utilizing any ChIP-seq dataset to generate experimentally testable predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C35-C38, and C41-C43 collectively describe SPICE's capabilities and design. The manuscript provides a detailed methods section describing the pipeline's implementation, demonstrates its application to multiple datasets (ENCODE, mouse B cells), and shows it can identify both known and novel TF interactions. The computational approach is well-documented with code availability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SPICE successfully validated its predictive accuracy by correctly identifying known composite elements including AP1-IRF4 (AICE) with 0 or 4 bp spacing, STAT5 tetramers with 11-12 bp spacing, STAT1/3/4 tetramers, and CTCF/ETS complexes with 8 bp spacing, while correctly predicting that STAT2 does not form tetramers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C44-C53 demonstrate SPICE's validation against known TF interactions. The predictions match previously published findings (cited as Li et al., 2012b; Lin et al., 2012; Pham et al., 2019) and are supported by figures showing spacing distributions. The STAT2 negative prediction aligns with lack of literature reports, providing additional validation. The CTCF/ETS spacing (8 bp) was not previously defined, showing SPICE adds precision to known interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C39",
+      "C40",
+      "C56",
+      "C57",
+      "C129"
+    ],
+    "result": "SPICE identified a novel JUN-IKZF1 composite element, including a non-canonical IKZF1 binding site at CNS9 in the IL10 gene locus. This represents a previously unreported physical association and functional cooperation between these two transcription factors that play critical roles in immune cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C39-C40, C56-C57, and C129 establish the novelty of the JUN-IKZF1 interaction. The manuscript explicitly states this association was not previously demonstrated and provides computational prediction from SPICE analysis of ENCODE data. This is a major discovery claim that is subsequently validated experimentally in later results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C80",
+      "C81",
+      "C83",
+      "C130",
+      "C131",
+      "C132",
+      "C141"
+    ],
+    "result": "ChIP-seq analysis in GM12878 cells and primary mouse B cells demonstrated extensive genome-wide co-localization of IKZF1 and JUN, with 88.3% of IKZF1 peaks co-localizing with JUN. De novo motif analysis identified canonical IKZF1 motifs (ETS-like, EBF1-like) and non-canonical variant motifs, including at the conserved CNS9 region in the IL10 locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C75, C80-C81, C83, and C130-C132, C141 describe ChIP-seq findings with specific quantitative data (9197 IKZF1 peaks, 14433 JUN peaks, 88.3% co-localization). The data are shown in multiple figures (Figure 1\u2014figure supplement 3, Figure 2A-F) with heatmaps, Venn diagrams, and genome browser tracks. The conservation of CNS9 between human and mouse is demonstrated by sequence alignment. Methods are detailed for ChIP-seq library preparation and analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C142",
+      "C143"
+    ],
+    "result": "Reactome pathway analysis of the 8125 IKZF1-JUN co-localized peaks revealed enrichment for multiple immune-related pathways including 'Cytokine Signaling in Immune System,' 'Signaling by Interleukins,' and TLR4-related cascades, suggesting the IKZF1-JUN complex may play broad biological roles in immune function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C142-C143 describe pathway analysis results shown in Figure 2D and Figure 2\u2014figure supplement 1. The enriched pathways are explicitly listed and visualized. However, the claim of 'broad biological roles' (C76, C143) is somewhat speculative as it's based on pathway enrichment rather than direct functional validation. The inference is reasonable but represents a hypothesis for future testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C138"
+    ],
+    "result": "Co-immunoprecipitation experiments in MINO cells showed that JUN was weakly co-precipitated by anti-IKZF1 antibody, suggesting IKZF1 and JUN might form a physical complex, although IKZF1 could not be co-precipitated with anti-JUN or anti-JunD antibodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C89 and C138 describe co-IP results shown in Figure 3A. The asymmetric co-IP results (JUN co-IPs with anti-IKZF1 but not vice versa) are concerning and suggest either weak/transient interaction, technical issues with antibodies, or indirect association. The authors appropriately use cautious language ('might form a complex,' 'weakly co-precipitated'). The result is consistent with ChIP-seq co-localization but doesn't provide strong evidence for direct physical interaction. Additional experiments (e.g., reciprocal co-IP with different antibodies, proximity ligation assay) would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The IL10 gene CNS9 region, located ~9.1 kb upstream of the promoter, contains a canonical AP-1 motif and a nearby 11 bp sequence matching a variant IKZF1 motif. This region is highly conserved between human and mouse and is critical for IL10 gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C94 describe the CNS9 region with specific sequence and location information. The conservation is demonstrated by sequence alignment (Figure 1\u2014figure supplement 3C). The claim that CNS9 is 'critical for regulation' (C94) is supported by citations to prior work (Li et al., 2012b; Lee et al., 2009) rather than data in this manuscript, which is appropriate context-setting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "EMSA experiments with MINO nuclear extracts and CNS9 probes demonstrated that both IKZF1 and JUN are part of a DNA-binding complex. A strong complex formed with wild-type probe, was weakened by variant IKZF1 mutation, and was abolished by AP-1 mutation. Super-shift assays with anti-IKZF1 and anti-JUN antibodies confirmed both factors are in the complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 describe EMSA results shown in Figure 3C-E. The experiments include appropriate controls (IgG controls, mutant probes) and super-shift assays. The data show clear bands and quantification (Figure 3D). The conclusion that both factors are in the complex is well-supported by the super-shift results, though the exact stoichiometry and whether the interaction is direct or indirect cannot be determined from EMSA alone.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "EMSA competition experiments showed that wild-type competitor dramatically reduced binding activity, variant IKZF1 mutant competitor moderately reduced binding, while AP-1 mutant or double mutant competitors had little effect, demonstrating sequence specificity of the IKZF1-JUN complex binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C104 describe competition EMSA results shown in Figure 4A-B with quantification from three independent experiments. The graded effects of different competitors (WT > IKZF1 mutant > AP1 mutant \u2248 double mutant) provide strong evidence for sequence-specific binding and the relative importance of each motif. The experiments are well-controlled and replicated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "EMSA with recombinant proteins demonstrated cooperative binding of IKZF1 and AP1. No binding occurred with IKZF1 alone, binding occurred with AP-1 alone, and stronger binding occurred when both proteins were added. The AP-1 site is absolutely required for cooperative binding, while the variant IKZF1 site has low affinity alone but cooperates with the AP1 site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C111 describe recombinant protein EMSA results shown in Figure 4C-D. The use of purified recombinant proteins provides strong evidence for direct cooperative binding without confounding factors from nuclear extracts. The data clearly show the requirement for AP-1 and the cooperative enhancement when both factors are present. The interpretation about the variant IKZF1 site having low affinity but cooperating with AP1 (C111) is a reasonable inference from the mutant probe data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C112",
+      "C113",
+      "C114",
+      "C119",
+      "C120",
+      "C121",
+      "C140"
+    ],
+    "result": "Luciferase reporter assays in primary B cells and T cells demonstrated that both the IKZF1 and AP-1 binding sites in the CNS9 region are critical for transcriptional activation of IL10. Wild-type reporter activity was potently induced by LPS (B cells) or TCR/IL-21 stimulation (T cells), but activity was abolished or diminished when either or both motifs were mutated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C112-C114, C119-C121, and C140 describe functional reporter assays shown in Figure 4E-F. The experiments were performed in primary cells (not just cell lines), which strengthens the physiological relevance. The data show clear dependence on both binding sites for reporter activity. However, the experiments test a reporter construct rather than the endogenous IL10 gene, so the functional importance at the native locus remains to be fully demonstrated. The results are consistent across both B and T cells, supporting generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "IKZF1 binding was induced by treatment with LPS or LPS + IL-21, while JUN binding was prominent only with LPS + IL-21 treatment in primary mouse B cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 describe differential induction patterns shown in the ChIP-seq data. The observation that JUN requires both LPS and IL-21 while IKZF1 responds to LPS alone suggests distinct regulatory mechanisms. However, the manuscript doesn't provide detailed quantification or statistical analysis of these treatment effects, and the biological significance of this differential regulation is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C82",
+      "C117",
+      "C118"
+    ],
+    "result": "Prior studies have shown that Prdm1 and Il10 are critical for plasma cell differentiation in IL-10-producing B cells, and that IKZF1 regulates Il10 expression in mouse T cells, with significantly lower Il10 expression in Ikzf1-/- T cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C117-C118 cite prior literature (Wang et al., 2019; Umetsu and Winandy, 2009) to provide biological context for the IL10 locus and IKZF1's known regulatory roles. These are appropriately cited background claims that justify the focus on IL10 and support the biological relevance of the findings. The claims accurately represent the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The conserved CNS9 region might be biologically important and dependent on binding of both IKZF1 and JUN. Other pioneer factors might also play vital roles by opening chromatin to facilitate IKZF1 and JUN binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C84-C85 are speculative statements about biological importance and potential roles of other factors. C84 is a reasonable inference based on conservation and binding data, but 'might be' indicates uncertainty. C85 explicitly acknowledges speculation about pioneer factors and suggests this as 'an interesting area for future investigation.' These are appropriate hypotheses but lack direct experimental support in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "AP-1 comprises homodimers or heterodimers of JUN/JUNB/BATF/FOS family members, and the roles of individual members remain uncertain with potentially similar or opposing actions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 describe the complexity of AP-1 as a transcription factor family. This is established knowledge appropriately cited. The acknowledgment of uncertainty about individual member roles (C116) is an honest limitation of the study, as the experiments don't definitively identify which specific AP-1 family members are involved in the IKZF1 complex at CNS9.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "SPICE analysis of the ENCODE database successfully predicted both known interactions and numerous novel interactions. The fundamental conclusion regarding IKZF1-JUN would not be altered by using larger databases like ReMap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C128 describe SPICE's performance on ENCODE data and address the choice of database. The manuscript demonstrates successful prediction of known interactions (validation) and novel interactions (discovery). The statement about ReMap (C128) is a reasonable assertion since the IKZF1-JUN interaction was validated experimentally in primary cells, not just predicted from ENCODE. However, using larger databases could potentially reveal additional novel interactions not identified here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "IKZF1 is closely related to IKZF2 (Helios) and IKZF3 (Aiolos), and it is conceivable these factors might also co-localize with JUN. An independent study confirmed that IKZF1 and IKZF3 can directly bind to AP-1 family members, and deletion of both Ikzf1 and Ikzf3 in NK cells led to reduced Jun/Fos expression and complete loss of peripheral NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C137 discuss related IKZF family members and cite an independent validation study (Goh et al., 2024). The speculation about IKZF2/3 co-localization with JUN (C134) is reasonable given family similarity. The independent study provides strong external validation of the IKZF-AP1 interaction and demonstrates functional consequences in NK cells. This cross-validation from an independent group significantly strengthens the manuscript's conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The discovery of JUN-IKZF1 complexes provides mechanistic insights into IKZF1 actions and demonstrates the effectiveness of the SPICE pipeline for identifying novel transcription factor cooperative effects. SPICE provides a valuable new approach to discover composite elements and understand gene regulatory networks in immune responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C126 and C144-C146 represent the manuscript's overall conclusions about SPICE's utility and the significance of the JUN-IKZF1 discovery. These conclusions are well-supported by the validation of known interactions, discovery and experimental confirmation of the novel JUN-IKZF1 interaction, and independent validation by another group. The claims appropriately emphasize both the computational tool's value and the biological insights gained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The manuscript provides extensive background on ChIP-seq technology, computational tools for ChIP-seq analysis (MACS, MUSIC, ZINBA), motif discovery tools (MEME, STREME, TF-COMB, MCOT, TACO), and the biological importance of transcription factor cooperative binding at composite elements. Few existing tools can systematically predict composite elements genome-wide, with SpaMo having limitations in systematic prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C34 represent background knowledge and literature review appropriately cited throughout the introduction. These claims establish the scientific context, justify the need for SPICE, and accurately represent prior work. The characterization of existing tools' limitations (C32-C34) appropriately motivates the development of SPICE. All claims are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The manuscript provides biological context for the transcription factors studied, including universal stripe factors (KLF, EGR, ZBTB families), IKZF1's role in hematopoiesis and immune cell development, JUN's role in AP-1 complexes and T cell biology, BATF as a FOS family member that partners with JUN in AICEs, and IKZF1's importance for B cell development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55, C58-C62, C68-C70 provide biological background appropriately cited from the literature. These claims establish the biological importance of the transcription factors being studied and justify the experimental choices (e.g., using B cells because IKZF1 is important for B cell development). The information accurately represents cited work and provides necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9"
+    ],
+    "result": "The findings reveal an unappreciated global association of IKZF1 and AP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C9 represents a major conclusion of the manuscript. The 'global association' is supported by the genome-wide ChIP-seq data showing 88.3% co-localization of IKZF1 peaks with JUN, pathway analysis suggesting broad functional roles, and validation at specific loci. The term 'unappreciated' is justified since this association was not previously reported in the literature. This is a well-supported major finding.",
+    "result_type": "MAJOR"
+  }
+]

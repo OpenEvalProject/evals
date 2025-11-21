@@ -1,0 +1,290 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Fun30 chromatin remodeling activity is specifically required for early rDNA replication in sir2 mutants. Deletion of FUN30 delayed rDNA replication in sir2 background (Trel from 1.2 to 1.06), and this effect depends on Fun30's ATPase activity (K603R mutation also suppresses early replication) but not its phosphorylation sites involved in DNA damage response (S20A/S28A mutations had no effect).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 provide converging evidence from multiple experimental approaches (S-seq replication timing measurements, point mutations affecting different Fun30 functions) that specifically implicate Fun30's chromatin remodeling activity in promoting early rDNA replication in sir2 mutants. The genetic specificity (only FUN30 among 9 CREs tested) and functional specificity (ATPase-dependent but phosphorylation-independent) strongly support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Deletion of FUN30 causes severe rDNA array shrinkage specifically in sir2 mutants, reducing rDNA size by ~50% (from 9.2% to 4.2% of genome, or ~160 to 40 repeats). This shrinkage occurs independently of FOB1, though FOB1 deletion slows the kinetics of size reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 demonstrate through multiple measurement approaches (sequencing read depth, qPCR, Southern blots) that fun30 sir2 double mutants exhibit dramatic rDNA shrinkage. The FOB1-independence experiment (C46) strengthens the conclusion by showing this is due to replication defects rather than recombination-mediated instability, though the kinetic delay suggests FOB1 modulates the rate of shrinkage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "rDNA origin licensing is high (60-85%) across all genotypes tested (WT, sir2, fun30, sir2 fun30), with a much higher fraction of origins licensed than activated, indicating that regulation occurs primarily at the level of origin firing rather than licensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by MCM-MNase Southern blot data showing ~60-85% decrease in the XmnI fragment upon MNase activation across all four genotypes. This is the first quantitative measurement of rDNA licensing in these strains and provides critical evidence that SIR2 and FUN30 do not regulate replication through licensing. The inference that regulation occurs at firing (C48) logically follows from high licensing but known low activation rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Fun30 promotes firing of rDNA origins in sir2 mutants while suppressing firing of non-rDNA early origins. Deletion of SIR2 increased activated rDNA origins 6.3-fold, and FUN30 deletion reduced this increase. Conversely, FUN30 deletion in sir2 background partially restored EdU incorporation at early genomic origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by multiple orthogonal approaches: 2D gel analysis of rDNA origin firing (C49-C50, with statistical significance p<0.05), 2D gel analysis of ARS305, and genome-wide EdU-seq (C51). The reciprocal effects on rDNA vs genomic origins support a model of competition for limiting replication factors. The statistical analysis is appropriate and the convergent evidence from different methods strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The displaced MCM population in sir2 mutants fires more readily than the nondisplaced population, as demonstrated by differential disappearance of MCM-ChEC signals during S phase progression in HU. The displaced MCM signal decreases rapidly while the nondisplaced signal remains constant, and FUN30 deletion suppresses this differential firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 present a novel method for distinguishing firing of closely spaced MCM complexes and provide strong evidence for differential activation. C52 validates the approach by showing MCM-ChEC signal decreases more at early than late origins. C53-C54 show the key result with appropriate controls (nondisplaced MCM as internal control, fun30 suppression). C55 synthesizes these observations into a well-supported conclusion. The reciprocal accumulation of signal at the RFB provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Even in WT cells, a small fraction of MCM complexes are displaced, and this minor displaced population is activated earlier than the nondisplaced population, suggesting the mechanism observed in sir2 mutants represents an exaggerated version of normal rDNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 is supported by experimental data in Figure 5\u2014figure supplement 5 showing that the small displaced MCM population in WT also disappears more rapidly than the nondisplaced population. This observation is important for understanding the physiological relevance of the findings and suggests the sir2 phenotype amplifies a normal regulatory mechanism rather than creating an artificial situation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "C-pro transcript levels are approximately twice as high in sir2 fun30 cells compared to sir2 cells (when adjusted for rDNA size), and FUN30 deletion shifts MCM distribution toward the repositioned location in G1, consistent with increased C-pro transcription in fun30 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by qRT-PCR data (Figure 5\u2014figure supplement 6) and MCM-ChEC data (Figure 5C). These results demonstrate that Fun30 deletion does not suppress early replication by preventing MCM displacement, but rather by affecting the ability of displaced MCMs to fire. This is critical for understanding the mechanism and rules out an alternative model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Fun30 maintains low nucleosome occupancy at the +2 and +3 positions adjacent to displaced MCM complexes. Nucleosome occupancy at these positions is higher in sir2 fun30 double mutants than in sir2 single mutants, and this effect occurs in both sir2 and SIR2 backgrounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by both MNase-seq (measuring bulk nucleosome occupancy) and MCM2-ChEC (measuring nucleosome occupancy specifically adjacent to loaded MCMs) shown in Figure 6. The convergence of these two independent methods strengthens the conclusion. The observation that the effect occurs in both backgrounds (C60) demonstrates this is a general function of Fun30, not specific to sir2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study demonstrates that displaced MCMs at rDNA origins have increased firing propensity, and both their activation and the low nucleosome occupancy of adjacent regions depend on Fun30 chromatin remodeling activity. This elucidates how Sir2 delays replication timing and represents the first demonstration that activation of a specific origin in vivo depends on nucleosome context shaped by a single chromatin remodeler.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 represent the main conclusions synthesized from the experimental results. C3 is supported by the MCM-ChEC time course data (C53-C55). C4 is supported by the nucleosome occupancy data (C59-C61) and the replication timing/origin firing data (C40-C42, C49-C50). C5 and C6 represent appropriate synthesis of these findings. The novelty claim in C6 appears justified given the specificity of the Fun30 effect and the in vivo demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64"
+    ],
+    "result": "Regulation of rDNA replication initiation occurs primarily at the level of origin firing rather than licensing, based on measurements showing MCM are loaded at up to 90% of origins in WT cells while only ~20% fire.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C64 is a well-supported inference combining the high licensing measurements from this study (C47: 60-85% licensing) with established knowledge about low activation rates (C62: ~20% activation). The logic is sound: if most origins are licensed but few fire, regulation must occur at firing. This conclusion is appropriately qualified as occurring \"primarily\" at the firing level.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "The effect of Fun30 on DNA replication is remarkably specific to nucleosomes adjacent to repositioned MCM complexes at the rDNA, and the suppression is so severe it reduces rDNA size 3- to 5-fold (from 160 to 35-50 copies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 appropriately synthesize the specificity of Fun30's effect (only one of 9 CREs tested, specific to repositioned MCMs, specific nucleosome positions) and the magnitude of the phenotype (dramatic rDNA shrinkage). These conclusions are well-supported by the experimental data presented throughout the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Even in WT cells, replication predominantly initiates from displaced MCMs, likely due to low levels of C-pro transcription, suggesting the sir2 phenotype represents an exaggerated version of normal rDNA replication behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is an inference based on the observation that displaced MCMs fire earlier even in WT cells (C56). While this is a reasonable inference given the data, it represents a model rather than a directly demonstrated fact. However, the inference is well-supported by the experimental observations and represents an important insight into normal rDNA replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "This study provides the first in vivo demonstration of the modulation of origin activity by a specific chromatin remodeler, with implications for the relationship between transcription and replication timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 asserts novelty and broader significance. The novelty claim appears justified given the specificity of the Fun30 effect (single remodeler, specific origin, specific MCM population, specific nucleosome positions) and the in vivo demonstration. The claim about implications for transcription-replication relationships is appropriate given that C-pro transcription drives MCM displacement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In sir2 mutants, de-repressed RNA PolII transcription of C-pro repositions MCM complexes from their normal loading site (adjacent to a high-occupancy nucleosome ~130 bp left of the ACS) to an adjacent region with lower nucleosome occupancy. This represents prior work by the authors that provides the foundation for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C34-C36 describe established findings from prior work (Foss et al., 2019) that provide essential context for the current study. These are appropriately cited and the current study builds on these observations. While these are not new findings from this manuscript, they are accurately represented and essential for understanding the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background information on Sir2 function, rDNA structure, and replication timing establishes the biological context for the study, including Sir2's role in transcriptional silencing and late replication, the structure of the rDNA locus, and the timing of rDNA replication in WT vs sir2 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 provide essential background information that is well-supported by citations to prior literature and represents established knowledge in the field. These claims accurately represent the current understanding and provide necessary context for interpreting the new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Background on the biological significance of rDNA replication timing, including the competition between rDNA and genomic origins for replication resources, the consequences of disrupting this balance, and the evolutionary rationale for late replication of repetitive sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18 and C25-C28 provide important biological context from prior studies (particularly Kwan et al., 2013 and Foss et al., 2017) about why rDNA replication timing matters. These claims are well-supported by citations and help motivate the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background on the mechanisms of origin licensing and firing, including the roles of ORC, MCM2-7, DDK, CDK, and the competition for limiting firing factors, represents established knowledge about DNA replication that provides context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C24 accurately summarize established knowledge about DNA replication mechanisms, supported by appropriate citations. This background is essential for understanding how the study's findings fit into the broader context of replication regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Background on Sir2's role in heterochromatin structure and the limitations of simple steric occlusion models, including the observation that Sir2's effect on transcription (3000-fold) far exceeds its effect on chromatin accessibility (1.5-fold).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 provide important context about the limitations of simple models for Sir2 function, supported by citations to prior work. The quantitative comparison (C32-C33) is particularly important for motivating the search for more specific mechanisms, which is the focus of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Prior in vitro and in vivo studies have demonstrated that the arrangement of MCM-proximal nucleosomes can dramatically affect MCM activation, providing precedent for the hypothesis that nucleosome context influences origin firing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 cite relevant prior work (Azmi et al., 2017; Chacin et al., 2023) that provides important precedent for the current study's hypothesis. These citations are appropriate and accurately represent the prior findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "Prior studies estimated that ~20% of potential rDNA origins are activated in WT cells and that this fraction increases in sir2 mutants, providing context for the current study's licensing measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 accurately cite prior estimates of rDNA origin activation rates from classic studies (Brewer and Fangman, 1988; Linskens and Huberman, 1988; Pasero et al., 2002; Yoshida et al., 2014). These provide important quantitative context for interpreting the licensing measurements in the current study.",
+    "result_type": "MINOR"
+  }
+]

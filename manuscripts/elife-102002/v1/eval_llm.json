@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SAXS analysis reveals that AL light chains (AL-LCs) exhibit a slightly larger radius of gyration (0.5-0.8 \u00c5 larger, p<10\u207b\u2075) and greater deviations from crystallographic/predicted structures compared to MM light chains (MM-LCs), suggesting enhanced conformational dynamics and structural heterogeneity in AL-LCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The SAXS data (Table 1, Figure 1) consistently show statistically significant differences in Rg between AL-LCs and MM-LCs (C52, C53), with AL-LCs displaying larger \u03c7\u00b2 values and non-normal residuals in low q regions (C48, C50). The experimental measurements are well-documented with appropriate controls and statistical analysis, supporting the conclusion of enhanced conformational dynamics in AL-LCs (C54).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C55",
+      "C56",
+      "C57",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Metadynamics metainference MD simulations integrated with SAXS data reveal that AL-LCs uniquely populate a distinct low-frequency conformational state (H state, 5-10% population) characterized by well-separated VL and CL domains (>4.1 nm distance) with straight alignment, which is essentially absent (<1%) in MM-LCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MD simulations (120-180 \u00b5s per protein, Table 2) with SAXS restraints provide robust computational evidence for the H state (C69, C73, C74, Figure 3, Table 3). The simulations were performed in duplicate with convergent results, and the improved \u03c7\u00b2 values (C57, Table 2) validate the ensemble quality. The H state represents a clear structural fingerprint distinguishing AL from MM proteins (C70).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The H state in AL-LCs is associated with altered CL-CL dimer configurations, with most AL-LCs (H3, H18, AL55) showing increased CL-CL distances while H7 uniquely displays a more compact CL-CL interface in this state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The free energy surface analysis (Figure 4) clearly demonstrates distinct CL-CL interface configurations in the H state across different AL-LCs (C75, C76, C77, C78). The heterogeneity in CL-CL behavior, particularly H7's unique compact configuration, is well-documented and provides mechanistic insight into the structural diversity of the H state.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "HDX-MS experiments independently validate the H state by demonstrating significantly higher deuterium uptake in AL-LCs at residues 34-50 (VL-VL/CL-VL interface) and 152-180 (CL-CL interface region), consistent with the increased solvent accessibility predicted for the H state, with H7 showing uniquely low uptake at 152-180 correlating with its compact CL-CL interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The HDX-MS data (Figure 5) with >90% sequence coverage and >4.0 redundancy (C79) provide strong orthogonal validation of the H state. The increased deuterium uptake at key interface regions in AL-LCs (C83, C90) directly correlates with the MD predictions of increased accessibility (C92), and H7's exceptional behavior (C91, C93) matches its unique compact CL-CL configuration in simulations. This represents robust experimental validation (C94).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "RMSF analysis from MD simulations shows that while VL domains of AL-LCs are generally more flexible than MM-LCs, this may be confounded by CDR length variations, and CL domain flexibility differences are small, providing no clear discrimination between AL and MM-LCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RMSF analysis (Figure 2B) is appropriately cautious in interpretation, noting that observed VL flexibility differences may be explained by CDR length (C60, C61) rather than intrinsic amyloidogenic properties. The acknowledgment that RMSF does not clearly differentiate AL from MM-LCs (C64) demonstrates appropriate scientific rigor in not over-interpreting the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Sequence analysis suggests that the A40G mutation in H18 (compared to M7, both from IGLV3-19*01 germline) may contribute to H state formation by disrupting a hydrophobic interaction with T165, though position 40 is glycine in the germline and also in M10, complicating this interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural analysis of the A40G mutation is reasonable (C101, C102, C103), the interpretation is appropriately qualified as speculative (evidence_type includes SPECULATION). The observation that M10 also has glycine at position 40 (C106) undermines the simple mutation-based explanation, and no experimental validation of this specific mutation's role is provided. This remains a hypothesis requiring further testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Sequence comparison with germlines reveals that all mutations in the studied AL-LCs fall exclusively in the variable domain, with mutations distributed in both CDR regions and framework regions including near dimerization interfaces.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence alignments (Figure 6 supplements 2-7) clearly document that mutations are restricted to VL domains (C108), with distribution in both CDR and framework regions (C109, C110). This observation is straightforward and well-supported by the presented sequence data, though the functional implications remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Analysis of Ramachandran plots from MD simulations shows that residues populating left-handed alpha helix regions are present in both AL-LCs and MM-LCs, providing no support for the frustrated CDR hypothesis as a distinguishing feature of AL-LCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The Ramachandran analysis (Figure 6 supplements 2-7) appropriately tests a prior hypothesis about frustrated CDRs (C112, C113) and correctly concludes that the data do not support this as a distinguishing mechanism (C114, C115). The negative result is appropriately reported and interpreted with proper scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The identified H state represents a unifying conformational fingerprint that reconciles previous observations linking AL-LC amyloidogenicity to interface destabilization, proteolysis susceptibility, and conformational dynamics rather than simple thermodynamic stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This synthesis appropriately integrates the current findings with extensive prior literature (multiple citations in C116) to provide a coherent mechanistic framework. The conclusion that conformational dynamics and proteolysis susceptibility better capture AL/MM differences than stability (C117, C118) is well-supported by the H state data and consistent with prior observations, representing a significant conceptual advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119"
+    ],
+    "result": "The authors propose that targeting the CL-VL interface region, which is more labile in the H state, represents a novel therapeutic strategy for preventing LC aggregation in AL.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While this therapeutic suggestion is rationally based on the H state findings (C119), it remains entirely speculative with no experimental validation of druggability, binding sites, or efficacy. This represents a reasonable hypothesis for future work but cannot be considered a supported result without additional data demonstrating feasibility of this approach.",
+    "result_type": "MINOR"
+  }
+]

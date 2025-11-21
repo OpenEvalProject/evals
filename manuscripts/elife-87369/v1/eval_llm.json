@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7"
+    ],
+    "result": "Pancreatic ductal adenocarcinoma (PDAC) has poor prognosis with 10% 5-year survival, late diagnosis in >80% of patients, and no credentialed serologic biomarkers for early detection. The current best biomarker CA19-9 has poor sensitivity and specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C7 establish the clinical context through citations to peer-reviewed literature. These background claims about PDAC prognosis, survival rates, diagnostic challenges, and limitations of CA19-9 are well-supported by appropriate citations and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C91",
+      "C92",
+      "C96"
+    ],
+    "result": "Extracellular vesicles (EVs) are promising biomarker sources as they reflect parental cells and play roles in oncogenic signaling. However, prior EV biomarker studies used cell lines or tissue, which cannot capture systemic responses to cancer and were only compared against healthy controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C11, C91-C92, and C96 establish the rationale for the study through appropriate citations. The limitations of prior tissue-based and cell line studies (inability to capture systemic responses, comparison only to healthy controls) provide clear justification for the current work's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C43",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study enrolled 124 patients in the discovery cohort (93 PDAC, 12 chronic pancreatitis, 8 IPMN, 11 controls) and 36 patients in the validation cohort (24 PDAC, 6 chronic pancreatitis, 6 IPMN), with appropriate IRB approval and informed consent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15, C43, and C54-C58 describe the study design and cohort composition with clear demographic details. The inclusion of benign pancreatic diseases as controls (not just healthy subjects) is a strength. However, the relatively small number of controls (N=11 in discovery, none in validation) limits statistical power for some comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C79",
+      "C99",
+      "C101"
+    ],
+    "result": "EVtrap is a magnetic bead-based method that efficiently isolates EVs from plasma with >95% recovery yield, less protein contamination than ultracentrifugation, and isolates particles 100-200 nm in diameter consistent with exosomes. The method enables analysis from small plasma volumes (100 \u00b5L).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21, C79, C99, and C101 describe the EVtrap method with supporting citations and validation data (TEM, NTA). The characterization data (Figure 1 supplements) confirm EV morphology and size distribution. The method's advantages are supported by prior publications, though independent validation in this specific study context is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C59"
+    ],
+    "result": "The proteomics workflow demonstrated high technical reproducibility (r\u00b2>0.97 between replicates) and identified 1,708 unique proteins across the cohort, with an average of 912 EV proteins per 100 \u00b5L plasma sample. No differences in total protein numbers were observed between disease groups or stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 and C59 present technical validation and proteomics depth. The high correlation between technical replicates (C22) supports data quality. The consistent protein detection across disease groups (C25-C26) is appropriately reported as a negative finding. The proteomics depth is substantial for EV studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "A total of 207 proteins were differentially expressed in pancreatic diseases versus controls (176 in PDAC, 55 in chronic pancreatitis, 3 in IPMN). PCA showed controls segregated from PDAC but were closer to IPMN and chronic pancreatitis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28 describe differential expression analysis with appropriate statistical criteria (fold change \u22652, p\u22640.01 after multiple testing correction). The PCA visualization (Figure 2A) supports the clustering patterns described. The gradient from controls through benign diseases to PDAC is biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C85",
+      "C86"
+    ],
+    "result": "182 proteins were differentially expressed between PDAC and benign pancreatic diseases (92 overexpressed, 90 reduced). Several markers showed >10-fold overexpression in PDAC including PDCD6IP, SERPINA12, RUVBL2, and KRT20. Unsupervised clustering separated PDAC into early-stage and advanced/metastatic subgroups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35, C85-C86 present the core discovery findings with supporting data in Figures 2B-D. The differential expression analysis uses appropriate statistical methods. The identification of PDAC subgroups by clustering (C33) is supported by the heatmap. However, the biological interpretation of specific markers (e.g., KRT20 as GI epithelial marker) requires validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Several identified EV proteins have been previously associated with pancreatic cancer in tissue studies. KRT20 overexpression correlates with poor prognosis in pancreatic tumors. PSMB4 has oncogenic properties in multiple cancers. PDCD6IP was identified in tissue proteomics and correlates with improved prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36, C47-C49 connect the current findings to prior literature through appropriate citations. The concordance between circulating EV proteins and tissue-based findings (C48-C49) strengthens the biological validity. However, the prognostic associations cited are from different contexts and require validation in this cohort.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C61"
+    ],
+    "result": "85 proteins were differentially expressed between metastatic and non-metastatic PDAC. PSMB4, RUVBL2, and ANKAR were increased in metastatic disease, while RAP2B, SERPINA12, and IGLV4-69 were decreased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 and C61 describe metastasis-associated proteins with supporting data in Figure 3A-C. The supervised clustering shows clear separation (C38). However, the sample sizes for metastatic (N=47) vs non-metastatic (N=46) groups are not explicitly stated, and the statistical significance of individual markers should be verified. The biological interpretation requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C62",
+      "C87"
+    ],
+    "result": "The cEV expression of RALB, CRP, and CD55 significantly correlated with poor overall survival, while PDCD6IP expression was associated with improved outcomes (with a trend, p=0.11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C41, C62, and C87 report survival associations shown in Figure 3D. While log-rank p-values are provided for some markers, the claim about PDCD6IP showing only a 'trend' (p=0.11) contradicts the statement that it 'had a significant correlation' (C41). The survival analysis methodology (quartile-based grouping) is described, but multiple testing correction for testing many proteins is not mentioned, raising concerns about false positives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Using SVM-based feature selection, a seven EV protein signature (RUVBL2, PDCD6IP, ATP5F1, DLD, KRT20, CCT4, SERPINA12) was identified that gave 100% accuracy in the discovery cohort. The top 16 markers were selected for validation, with marker recurrence ranging from 55-97%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claim C42 reports 100% accuracy in the discovery cohort, which is a major red flag suggesting overfitting. The feature selection process (C88-C90) is described, but achieving perfect classification in a discovery cohort of 124 samples with heterogeneous disease is implausible without overfitting. The lack of proper cross-validation or held-out test set in the discovery phase undermines this result. The 55-97% recurrence rates (C89) indicate some markers are frequently missing, which is problematic for a diagnostic panel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C60",
+      "C63"
+    ],
+    "result": "In an independent validation cohort, all 7 signature proteins showed significant differences (p<0.05) between PDAC and benign diseases. The seven-protein signature achieved 89% prediction accuracy, outperforming individual markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C45 report validation results with 89% accuracy, which is more realistic than the 100% discovery accuracy. However, critical details are missing: (1) the validation used a different technology (PRM vs LC-MS/MS), which could introduce systematic differences; (2) the validation cohort had no healthy controls, only benign diseases; (3) sensitivity and specificity values are not provided, only overall accuracy; (4) the sample size (N=36) is small for validation; (5) confidence intervals are not reported. The claim that 'no single marker achieved sufficiently high sensitivity and specificity' (C46) lacks quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The seven EV protein signature with 89% accuracy serves as proof-of-concept for PDAC biomarker development. Clinical application requires minimum 88% sensitivity and 85% specificity, which CA19-9 (75.4% sensitivity, 77.6% specificity) does not meet. Future studies should combine EV proteins with other biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C52 appropriately cite performance requirements and CA19-9 limitations. However, claims C70-C72 are largely speculative. The 89% 'accuracy' reported does not specify sensitivity and specificity separately, making comparison to the 88%/85% threshold (C50) impossible. The statement that the signature 'has the potential to facilitate further development' (C70) is reasonable but the claim that it meets clinical requirements is unsupported. The suggestion to combine with other biomarkers (C72) is speculation about future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C83",
+      "C84"
+    ],
+    "result": "Direct profiling of circulating EVs revealed proteins involved in metabolism, immune regulation, protein binding, exocytosis, and endocytosis. Immune-related proteins showed complex regulation with increased leukocyte-mediated immunity and decreased complement activation, providing insights into systemic changes during PDAC development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65, C83-C84 describe pathway analysis findings with appropriate Gene Ontology terms. The detection of immune-related proteins in circulating EVs (C65) is supported by Supplementary file 5. The interpretation that this provides 'unique insights into systemic changes' (C64) is reasonable given the comparison to tissue-based studies. However, the functional significance of these pathway changes requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "EV proteomic profiles of PDAC patients exhibited significant heterogeneity, with marker abundances varying significantly between individuals. This highlights the need for multi-protein panels rather than single biomarkers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 appropriately acknowledge patient heterogeneity observed in the data. The inference that multi-protein panels are needed (C68) is a reasonable conclusion from the observed variability. This heterogeneity is visible in the heatmaps (Figures 2C, 3A) and is an expected feature of cancer biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C78",
+      "C100"
+    ],
+    "result": "The study provides a comprehensive catalog of circulating EV proteins that may serve as diagnostic or prognostic biomarkers in pancreatic cancer and could be adopted for biomarker discovery in other cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C78, and C100 describe the study's contribution as a resource. The proteomics dataset (1,708 proteins) is indeed comprehensive for EV studies. The statement that proteins 'may have the potential' (C69) and 'may assist' (C78) appropriately uses conditional language. The suggestion for application to other cancers (C100) is reasonable speculation given the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "This represents the largest circulating EV proteomics study in pancreatic cancer to date, analyzing 124 discovery and 36 validation samples. The study identified and validated EV markers distinguishing PDAC from benign pancreatic diseases and discovered proteins associated with metastasis and prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C93-C95, C97-C98 summarize the study's scope and findings. The claim of being the 'largest' study (C53) is an inference but appears reasonable given the cohort size. The inclusion of benign pancreatic diseases as controls (C97-C98) is a genuine strength that addresses a clinical need, as many PDAC patients have underlying inflammation or cysts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Study limitations include single-center design, small control cohort in validation, use of only one EV isolation method, and potential EV heterogeneity. The seven-protein panel requires cross-validation in larger multicenter populations and with alternative methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 appropriately acknowledge study limitations. The single-center design (C73), small validation control cohort (C74), and need for multicenter validation (C75) are valid concerns. The acknowledgment of potential EV heterogeneity (C76) and need for cross-validation with other methods (C77) demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

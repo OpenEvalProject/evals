@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C70",
+      "C78",
+      "C80",
+      "C81"
+    ],
+    "result": "Electrical stimulation of the reuniens nucleus evokes bidirectional (orthodromic and antidromic) responses in mPFC neurons with distinct characteristics compared to hippocampal stimulation. Reuniens-evoked responses had shorter latencies (6.05\u00b13.6ms vs 9.95\u00b14.6ms), faster rising slopes, lower amplitudes, and greater consistency than hippocampal-evoked responses, suggesting higher response fidelity in the reuniens-prefrontal pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C25-C38, C70, C78, C80-C81 collectively demonstrate bidirectional functional connectivity between reuniens and mPFC through intracellular recordings in anesthetized cats. The data show statistically significant differences in response properties (latency, amplitude, slope) with appropriate statistical tests (t-tests, p<0.01), and the presence of both orthodromic and antidromic responses is well-documented with collision tests confirming antidromic nature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C68",
+      "C69"
+    ],
+    "result": "During NREM sleep, reuniens spindles precede mPFC spindles (median onset difference = -0.083s), and reuniens single-unit activity shows significant phase-locking to both reuniens and mPFC spindle cycles. Hippocampal SWRs and increased ripple power precede the onset of mPFC spindles, with significantly elevated SWR rate in the 250ms window before spindle onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46, C68-C69 are well-supported by chronic recordings from 4 cats with 49 sessions. Statistical tests are appropriate (Rayleigh tests for phase-locking, Wilcoxon signed rank tests for timing differences, t-tests comparing real vs shuffled data), sample sizes are adequate (n=24/49 and n=29/49 single-units showing significant phase-locking), and the temporal relationships are consistently demonstrated across multiple measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C72",
+      "C73"
+    ],
+    "result": "mPFC slow waves modulate the amplitude and timing of both reuniens spindles and hippocampal SWRs through phase-amplitude coupling. Reuniens spindles show stronger coupling to mPFC slow waves than mPFC spindles themselves (SI strength 0.24\u00b10.11 vs 0.18\u00b10.09), with reuniens spindles occurring at earlier phases. SWRs are significantly phase-locked to mPFC slow waves (mean phase 162.7\u00b129.37\u00b0) but not to spindle cycles in most sessions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52, C72-C73 demonstrate phase-amplitude coupling with appropriate statistical methods (synchronization index, Wilcoxon signed rank tests, Rayleigh tests). The finding that only 3/51 sessions showed significant mPFC spindle-SWR coupling and 10/51 for reuniens spindle-SWR coupling is appropriately reported as lack of significant phase-locking in the majority of sessions. The inference that mPFC slow waves control timing (C73) is reasonable given the phase-locking data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C7"
+    ],
+    "result": "During REM sleep, reuniens single-unit activity shows significant phase-locking to hippocampal theta rhythm (n=21/36 units, mean phase -124.5\u00b159.8\u00b0, p=0.011). Reuniens signals lag hippocampus by shorter delays than mPFC signals (87.8\u00b155.5ms vs 109.1\u00b141.52ms), and reuniens-hippocampus cross-correlations are significantly stronger than reuniens-mPFC correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C7 are supported by appropriate phase-locking analysis (Rayleigh tests) and cross-correlation analysis from 20 sessions. The statistical tests are appropriate (t-tests for comparing lags and correlation coefficients), and the finding of stronger hippocampal-reuniens coupling during REM compared to mPFC-reuniens coupling is consistently demonstrated. However, the relatively low proportion of significantly phase-locked units (21/36, 58%) suggests moderate rather than universal coupling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C96"
+    ],
+    "result": "Reuniens single-unit activity is modulated by hippocampal SWRs during NREM sleep, with 20.4% of units (10/49) showing increased firing and 32.6% (16/49) showing decreased firing following SWR onset. The average thalamic LFP shows a negative 250\u03bcV deflection coincident with increased reuniens firing around SWR onset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C96 are supported by peri-event analysis comparing real events to shuffled controls. The bidirectional modulation (both increases and decreases in firing) is appropriately documented, and the LFP deflection provides converging evidence. However, the fact that approximately half of units show no significant modulation suggests heterogeneity in reuniens responses to SWRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "A computational neural mass model recapitulates key experimental findings: thalamic slow waves lag cortical slow waves (median 0.113\u00b10.019s), thalamic spindles precede cortical spindles (median -0.102\u00b10.387s), slow wave-spindle coupling is stronger for reuniens than cortical spindles (SI 0.66\u00b10.15 vs 0.58\u00b10.11), and SWRs are phase-locked to slow waves occurring before peaks (mean phase -24.97\u00b162.01\u00b0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62, C123-C126 demonstrate that the computational model successfully reproduces experimental observations with similar timing relationships and coupling strengths. Statistical tests (Wilcoxon signed rank tests, Rayleigh tests) are appropriately applied to model outputs. The model provides mechanistic insights into the origins of slow waves (cortical) and spindles (thalamic), though these inferences (C125-C126) depend on model assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "The computational model predicts that bidirectional connection strength between reuniens and CA1 controls multiple aspects of network coupling: correlation during SWRs, SWR activity before spindle onset, CA1 deflection magnitude during slow waves, and the phase of SWR occurrence relative to slow waves. Strong connections cause SWRs to occur before slow wave peaks, while weak connections shift them to after peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67, C127-C131 present systematic parameter exploration in the computational model showing how connection strength affects network dynamics. The model predictions are internally consistent and provide testable hypotheses. However, these are model predictions rather than experimental validations, and claim C131 (inferring strong connections in cat NREM) is speculative based on matching experimental phase relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C74",
+      "C94",
+      "C101",
+      "C103",
+      "C117",
+      "C121",
+      "C122",
+      "C132",
+      "C133"
+    ],
+    "result": "The hippocampus, reuniens, and mPFC form a functional loop during NREM sleep where SWRs facilitate triggering of thalamic spindles that reach neocortex, while mPFC UP states increase SWR probability and modulate spindle amplitude. This functional connectivity is modulated by behavioral state, with reuniens serving as a core mediator of hippocampo-cortical dialogue.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C74, C94, C101, C103, C117, C121-C122, C132-C133 represent the main integrative conclusions of the study. These are well-supported by the convergent evidence from stimulation experiments (bidirectional connectivity), chronic recordings (temporal relationships), and computational modeling (mechanistic predictions). The state-dependence is demonstrated by different patterns in wake, NREM, and REM. However, some claims (C103, C121-C122) involve mechanistic inferences that go beyond direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Memory consolidation during sleep depends on interregional coupling of slow waves (0.1-4 Hz), spindles (10-15 Hz), and SWRs (100-300 Hz) across cortex, thalamus, and hippocampus. These rhythms play well-established roles in neuronal plasticity and hippocampus-dependent memory consolidation, with temporal coupling of hippocampal and mPFC oscillations enhancing memory recall.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C16 represent established background knowledge supported by multiple citations to prior research. These claims provide the scientific context for the study and are well-accepted in the field. The frequency ranges for oscillations are standard definitions supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The reuniens nucleus is bidirectionally connected to hippocampus and mPFC, making it an ideal hub for coupling hippocampo-cortical interactions. While reuniens plays a major role in memory function and hippocampus-dependent memory processing, little is known about reuniens-prefrontal interactions during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C24 establish the anatomical and functional background for the study, supported by extensive citations to anatomical and behavioral studies. These claims accurately represent prior knowledge and identify the knowledge gap (C24) that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C79",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Previous research has characterized the hippocampo-prefrontal pathway as involving both monosynaptic and polysynaptic mechanisms with variable response latencies, mediated by AMPA receptors, GABA receptors, and feedforward inhibition. The reuniens sends glutamatergic projections to both hippocampus and prefrontal cortex and is believed to synchronize their activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77, C79, C82-C93 summarize prior research on pathway mechanisms and are appropriately supported by citations. Claim C77 is appropriately marked as speculative regarding mechanisms underlying inconsistent responses. These claims provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Background on spindle generation mechanisms: In first-order thalamic nuclei, spindles are generated through TRN-thalamocortical interactions, with cortical firing triggering TRN bursts that elicit rebound spikes in thalamocortical neurons. Less is known about spindle generation in higher-order nuclei like reuniens, which can generate low-threshold calcium spikes but lack hyperpolarization-activated current. The hippocampus may provide an alternative mechanism for spindle initiation in limbic circuitry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95, C97-C120 provide extensive background on spindle generation mechanisms, appropriately supported by citations. Claims C108, C119 correctly identify knowledge gaps. Claim C118 is appropriately marked as speculative. Claim C114 reports an unpublished model result that supports the importance of MD for spindle generation. These claims provide essential mechanistic context for the Discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C9"
+    ],
+    "result": "The computational model demonstrates that bidirectional hippocampo-thalamic connection strength determines oscillation coupling, suggesting a mechanistic link between synaptic weights and interregional synchrony. Functional connectivity in the hippocampo-thalamo-cortical network is modulated by behavioral state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 represent high-level conclusions supported by both modeling (C8) and experimental data (C9). These are well-supported by the detailed results but represent summary statements rather than novel specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C134"
+    ],
+    "result": "Flexibility in functional connectivity can be explained by neuromodulation of intrinsic neuronal currents, synaptic strength, and synaptic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C134 is speculative and supported only by a citation to general principles of neuromodulation. While plausible, this mechanism was not tested in the current study and represents a hypothesis for future investigation rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

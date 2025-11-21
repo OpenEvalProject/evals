@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors define root causal genes as initial changes in gene expression that generate patient symptoms downstream, distinguishing them from core genes (which directly cause diagnosis and lie at the end of pathogenesis) and driver genes (which account for somatic mutations primarily in cancer).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, C9, and C10 provide a clear conceptual framework supported by appropriate citations (Boyle et al., 2017; Mart\u00ednez-Jim\u00e9nez et al., 2020). The definitions are logically consistent and establish the novelty of the root causal gene concept.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors claim that no existing methods identify root causal genes from data. While many algorithms discover associational or causal relations, none pinpoint the first gene expression levels that generate the majority of pathogenesis, and causal graph learning alone is insufficient because it does not summarize effects of unobserved root causes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C16, C17, C18, and C19 make strong assertions about the state of the field with limited citations. While the authors cite some existing methods, the claim that 'no existing algorithms attempt to identify root causal genes' is difficult to verify without a comprehensive literature review. The logical argument about limitations of causal graphs (C19) is sound but the empirical claim about the field requires more support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C105"
+    ],
+    "result": "The authors claim that RNA-seq introduces measurement error, high dimensionality, and non-linearity that compromise root causal effect estimation. They show the Poisson distribution approximates measurement error to high accuracy and develop an asymptotic argument eliminating the need for sequencing depth normalization when library size N approaches infinity (at least 10 million in bulk RNA-seq).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C35, C36, and C105 are well-supported by mathematical derivation in the Methods section and citations to prior work (Choudhary and Satija, 2022; Sarkar and Stephens, 2021; Gr\u00fcn et al., 2014). The asymptotic argument is theoretically sound, though the assumption that N is large enough for negligible approximation error requires empirical validation (which authors state is provided in Appendix).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C20",
+      "C37",
+      "C38"
+    ],
+    "result": "RCSP leverages Perturb-seq to learn causal order between genes, transfers this to bulk RNA-seq, and identifies patient-specific root causal genes using a novel RCS statistic. The algorithm identifies surrogate parents using perturbation data and only transfers binary causal relations (not exact functional relationships) to remain robust to discrepancies between data types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C20, C37, and C38 describe the core methodological innovation. The approach is logically sound and the robustness strategy (transferring only binary relations) is empirically validated in the Appendix. The theoretical foundation is provided through Theorem 2 (C108).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The RCS statistic \u03a6\u1d62 directly measures the contribution of gene X\u1d62 on Y according to its error term E\u1d62 without recovering error term values, imposing distributional assumptions, or functional restrictions. RCS is patient-specific because values of parents and X\u1d62 differ between patients, and equals zero when E\u1d62 is not a cause of Y.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 define the mathematical properties of RCS. These are supported by the formal definitions in Equations 1-2 and Proposition 2. The claims are internally consistent and follow from the structural equation model framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In synthetic data experiments, RCSP estimated \u03a6 most accurately by a large margin compared to ANM, LiNGAM, CausalCell, univariate regression, and multivariate regression. All pairwise differences were significant at Bonferroni-corrected threshold 0.05/5. RCSP achieved lowest RMSE while completing in similar time as multivariate regression, maintained performance in cyclic cases and with graph discrepancies, and across different numbers of clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39-C46 are supported by experimental results in Figures 2g-i. Statistical significance is properly assessed with Bonferroni correction for multiple comparisons. The simulation setup is described in Methods with 30 replicates, providing adequate power. The explanation for why ANM and LiNGAM struggle (measurement error) is logical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In AMD analysis, age is a known root cause of the disease. RCSP correctly detected age with D-RCS of 0.46, more than double that of the nearest gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 provide validation using a known ground truth (age as root cause of AMD). The claim is supported by citation (Hadziahmetovic and Malek, 2020) and empirical results in Figure 3d. This serves as an important positive control for the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "For AMD, the majority of gene D-RCS scores concentrated around zero, whereas D-SD scores concentrated around 0.10. RCSP identified few root causal genes rather than many correlated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by distributions in Figure 3b. This result is consistent with the omnigenic root causal model hypothesis (C15, C33) and provides evidence that RCS distinguishes root causality from correlation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "AMD pathogenesis involves RPE cell loss due to oxidative stress. Top D-RCS genes (MIPEP, SLC7A5, HEATR1) are involved in oxidative stress pathways. Pathway enrichment identified 'amino acid transport across the plasma membrane' (FDR < 5%), with leading edge genes SLC7A5 and SLC1A5 functioning to increase amino acid efflux that activates mTORC1, increasing oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C60 connect RCSP results to known AMD biology through multiple citations (Barouch and Miller, 2007; Shi et al., 2011; Nachef et al., 2021; Go et al., 2020; Nicklin et al., 2009; Beaumatin et al., 2019). The pathway enrichment analysis (Figure 3c) provides statistical support with proper FDR correction. The biological interpretation is coherent and well-supported by literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Drug enrichment analysis identified four significant compounds for AMD. Arsenous acid inhibits RPE proliferation (negative control), while busulfan, genistein, and 3'-azido-3'-deoxythymidine metabolite have therapeutic potential through mechanisms including reducing anti-VEGF injection requirements, attenuating neovascularization, and mitigating RPE degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by citations (Su et al., 2020; Dalvin et al., 2022; Kinoshita et al., 2014; Kamalden et al., 2011; Narendran et al., 2020) and results in Figure 3e. The identification of arsenous acid as a negative control (inhibits RPE proliferation) strengthens confidence in the other predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Hierarchical clustering revealed four clear AMD patient clusters by elbow method. RCSP detected a subgroup whose root causal genes have large RCS scores and involve known pathogenic pathways related to oxidative stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by clustering results in Figures 3f-g and pathway enrichment in the black cluster (Figure 3j). The elbow method provides objective cluster number selection. The biological interpretation is consistent with prior results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "MS is an inflammatory neurodegenerative disease where T cells cross the blood-brain barrier and attack myelin sheaths, leading to misfolded protein accumulation. Top D-RCS genes (MNT, CERCAM, HERPUD2) play key roles in T cell proliferation, leukocyte transmigration across the blood-brain barrier, and unfolded protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 connect RCSP results to known MS biology through citations (Fletcher et al., 2010; Andhavarapu et al., 2019; Gnanaprakasam and Wang, 2017; Starzyk et al., 2000; Kokame et al., 2000). The biological interpretation is coherent and consistent with established MS pathophysiology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Pathway enrichment for MS identified two significant pathways (FDR < 5%): 'APC truncation mutants have impaired AXIN binding' and 'EPH-ephrin signaling'. APC and AXIN regulate beta-catenin in Wnt signaling, whose inhibition causes CD4+ T cell infiltration. Ephrins regulate T cell migration and are overexpressed in MS lesions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 are supported by pathway enrichment results (Figure 4c) with proper FDR correction and citations (Spink et al., 2000; Lengfeld et al., 2017; Luo et al., 2016; Sobel, 2005). The biological interpretation connects identified pathways to known MS mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Hierarchical clustering revealed three MS patient clusters by elbow method. The green cluster identified multiple cathepsin inhibitors in drug enrichment (three significant after Bonferroni correction), corroborating experimental findings of therapeutic efficacy in MS patients responsive to interferon therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 are supported by clustering results (Figure 4e), drug enrichment (Figure 4h) with proper multiple testing correction (Bonferroni 0.05/4), and citations (Haves-Zburof et al., 2011; Burster et al., 2007). The identification of a patient subgroup with specific drug sensitivity is clinically relevant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "EPH-ephrin signaling is more prevalent in relapsing-remitting MS than other subtypes. The pink cluster contained a higher proportion of relapsing-remitting patients. RCSP precisely identified EPH-ephrin enrichment in the correct MS subtype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 are supported by citation (Golan et al., 2021), pathway enrichment results, and subtype distribution (Figure 4j). This provides validation that RCSP can identify biologically meaningful patient subgroups corresponding to known disease subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Application to AMD and MS recovers an omnigenic root causal model where a small set of root causal genes drive pathogenesis but impact many downstream genes, resulting in nearly all genes being correlated with diagnosis. This differs from the omnigenic core gene model: root causal genes lie upstream (not downstream), assume sparsity in upstream genes (not direct causal genes), account for combined genetic and non-genetic effects, and capture all deleterious effects (not just those in diagnosis Y).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C83-C91 present a novel theoretical model supported by empirical results from both diseases (Figures 3b, 4b) showing few root causal genes but many correlated genes. The conceptual distinctions from Boyle et al.'s core gene model are clearly articulated with appropriate citation. The model is illustrated in Figure 5.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Treating root causal genes can modify disease pathogenesis in its entirety, whereas targeting other causes may only provide symptomatic relief. Gaucher disease exemplifies this: mutations cause decreased beta-glucocerebrosidase expression (root causal gene), and enzyme replacement therapy alleviates liver, bone, and neurological abnormalities as downstream effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 provide a motivating example supported by citation (Nagral, 2014) and established medical knowledge. The logical inference about therapeutic implications (C11) follows from the definition of root causal genes. This effectively motivates the importance of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C33"
+    ],
+    "result": "Complex diseases have many causes, but root causal genes may represent only a small subset because only a few root causes have large causal effects, analogous to how machines typically break down due to one or a few root problems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, and C33 present a hypothesis illustrated in Figure 1b. While speculative (C15, C33 are marked as SPECULATION), this hypothesis is subsequently validated by empirical results in both AMD and MS (C51-C52 for AMD). The machine analogy provides intuitive motivation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "A gene may be differentially expressed because it causes Y or because a confounder explains the relation. Gene expression datasets contain thousands of genes in practice. The authors assume gene expression causes patient symptoms but not vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 establish basic assumptions and context. C24 is a logical statement about causal structures, C25 is an empirical fact about typical dataset sizes, and C26 is a reasonable modeling assumption (symptoms don't change gene expression in the samples). These are foundational but not novel contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "RCSP relies on bulk RNA-seq instead of single-cell RNA-seq to obtain many samples of the label Y.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 explains a methodological choice based on practical considerations (need for phenotypic labels). This is a reasonable design decision given current data availability, though it introduces limitations discussed in C95-C96.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "RCS quantifies root causal strength rather than root causal effect and cannot identify the direction of unconditional root causal effect. However, root causal effect and signed RCS do not differ by much in practice (validated in Appendix).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C94 acknowledge an important limitation of the RCS metric. The empirical validation that signed RCS approximates root causal effect well in practice (C94, supported by Appendix data) partially mitigates this limitation. This is an honest assessment of method capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "RCS achieves patient but not cell-type specificity because the algorithm relies on phenotypic labels from bulk RNA-seq. RCSP cannot identify potentially different root causal genes within distinct cell populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 acknowledge a clear limitation of the current approach. This follows logically from the use of bulk RNA-seq (C32) and is an honest assessment of method limitations. Future work could address this with single-cell phenotyping.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Modern genome-wide Perturb-seq datasets adequately perturb and measure only a few thousand genes rather than all genes. RCSP can only identify root causal genes within this perturbed and measured subset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 acknowledge a limitation imposed by current Perturb-seq technology. This is an honest assessment of method scope. The limitation is inherent to available data rather than the algorithm itself.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "RCSP accounts for known batch effects and measurement error but cannot adjust for unknown confounding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C99 acknowledges a fundamental limitation of observational causal inference. While the method addresses known confounders (batch effects, measurement error), unknown confounding remains a concern as with any observational study. This is an honest limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "RCSP assumes a directed acyclic graph. While directed graphs with cycles can be transformed to acyclic ones under equilibrium, real biological distributions vary across time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C101 acknowledge the DAG assumption and its limitations, supported by citations (Spirtes, 1995; Bongers et al., 2021). The authors note that RCSP maintained performance in cyclic cases (C45), partially mitigating this concern. Future work on time-varying distributions is suggested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "Theorem 2 establishes Fisher consistency: if unconditional d-separation faithfulness holds, RCSP recovers \u03a6 almost surely as N\u2192\u221e.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 presents a theoretical result. The theorem is stated formally and proof is delegated to Appendix. The assumption of unconditional (rather than full) d-separation faithfulness is noted as less restrictive. This provides theoretical foundation for the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C109",
+      "C110"
+    ],
+    "result": "RCSP outperformed all other algorithms in both the AMD and MS datasets (results in Appendix).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C110 reference comparative results in the Appendix without providing details in the main text. Without access to the Appendix data, we cannot fully evaluate these claims. The evaluation criteria for real data (described in Methods) differ from synthetic data, making interpretation more complex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "RCSP is a novel, accurate, scalable, and disease-agnostic procedure for performing patient-specific root causal gene discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C102 is the main conclusion. Novelty is supported by C2, C5 (though C2 is UNCERTAIN). Accuracy is demonstrated in synthetic experiments (C39-C46) and real data validation (C50, C58, C73, C82). Scalability is shown in C44. Disease-agnostic nature is demonstrated by successful application to two disparate diseases (AMD and MS). The conclusion is well-supported by the body of evidence.",
+    "result_type": "MAJOR"
+  }
+]

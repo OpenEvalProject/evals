@@ -1,0 +1,414 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Low precursor frequency of naive T cells makes studying early antigen-specific T cell responses challenging. The enormous T cell receptor diversity (>10^10 unique sequences) empowers adaptive immunity but results in extremely low precursor frequencies due to space constraints, impeding detailed study of early responses despite tetramer technology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C18-C22 establish well-accepted immunological principles supported by citations and general knowledge. These foundational concepts are consistently described in the literature and provide the scientific rationale for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "TCR transgenic mice enable study of early T cell responses but are not readily available for emerging pathogens like SARS-CoV-2. While many TCR transgenic models are commercially available and have contributed to T cell biology across multiple fields, rapid generation of new models is sometimes needed, particularly for emerging pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C24-C28 describe established practices and motivations for the study, supported by citations and general knowledge about the field. The motivation for developing new methods for emerging pathogens is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Traditional hybridoma-based TCR transgenic mouse generation is labor-intensive and erratic. Clones are selected based on CD69 upregulation or IL-2 production in vitro with minimal functional parameter checking, which can result in TCR Tg mice whose T cells respond poorly in biological settings, fail to compete with endogenous cells, or fail to form memory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C29-C34, C39-C43 describe limitations of traditional methods supported by the authors' experience (C6, C53, C65, C68) and citations to published literature (C41-C43). The failed first CORSET8 line provides direct experimental evidence of these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The first CORSET8 mouse line generated using traditional hybridoma technology yielded a poorly reactive TCR transgenic line. Clone 47 showed strong IL-2 production and CD69/IFN-\u03b3 upregulation in vitro but failed to respond to Spike peptide or protein ex vivo, despite expressing a functional TCR capable of positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C59-C69 are supported by experimental data in Figure 1\u2014figure supplement 1. The presence of CD8 T cells in Rag1-deficient background (C66-C67) demonstrates TCR functionality, while lack of response in co-culture (C65) confirms poor reactivity. This provides direct evidence for the erratic nature of traditional methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C143"
+    ],
+    "result": "The authors developed an optimized approach combining single-cell sequencing, TCR repertoire analysis, and the DALI software tool to rationalize TCR clone selection. This approach integrates cellular heterogeneity analysis with immune receptor profiling to link TCR clonotype information to functional properties, immunophenotype, and precursor frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C44-C52, C54, C143 describe the core methodological innovation supported by the DALI software citation (C46-C48) and demonstrated through successful generation of functional CORSET8 mice. The approach is clearly described and validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The VNFNFNGL epitope of SARS-CoV-2 Spike protein was selected based on published epitope mapping studies. Three samples were subjected to single-cell sequencing: Tetramer+ cells from immunized mice, Tetramer- cells from immunized mice, and Tetramer- cells from naive controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74 describe the experimental design supported by citations to epitope mapping studies (C70, C72-C73) and clear description of the sorting strategy shown in Figure 2\u2014figure supplement 1. The epitope selection is well-justified by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Single-cell analysis revealed distinct cellular clusters among CD8 T cells, with Tetramer+ cells forming a distinct cluster. A subgroup of Tetramer+ cells showed increased expression of proliferation markers (Mki67, Gzmb) and effector transcription factors (Tbet, Bhlhe40). Upon reclustering, clusters 0 and 1 showed high Ifng and activation markers (Cd69, Nr4a1), with clonotype 1 being highly expanded in these clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 are directly supported by single-cell RNA-seq data shown in Figure 2A-I. The clustering, marker expression, and clonal expansion patterns are clearly visualized and quantified. Citations support the interpretation of marker expression (C77-C78).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Clonotype 1 was selected for TCR transgenic mouse generation based on expression of proliferation markers (Mki67+), cytokine production (Ifng+), memory potential (Cd69+, Tcf7+, Sell\u2212), and clonal expansion. The TCR sequences were synthesized and cloned into expression vectors for oocyte injection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 describe the rational selection criteria and molecular cloning approach. The selection is supported by single-cell data (Figure 2J) and follows established protocols (C89 cites Vanheerswynghels et al., 2018). The rationale is clearly justified by the phenotypic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C98",
+      "C99"
+    ],
+    "result": "The newly generated CORSET8 mice showed skewing toward CD8 T cells in spleen and thymus. CD8 T cells displayed loss of naive (CD62L+CD44\u2212) and increase of effector (CD62L\u2212CD44+) populations as expected from clonotype 1 phenotype. About 70% of CD8 T cells were transgenic (Tetramer+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94, C98-C99 are supported by flow cytometry data in Figure 3A-C, E. The phenotypic characteristics match predictions from the single-cell analysis (C93), validating the selection approach. Statistical significance is shown for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "CORSET8 cells responded to minute doses of Spike peptide (10 pg/ml) in ex vivo co-culture assays, with CTV dilution reflecting dose-dependent proliferation. This demonstrates that CORSET8 cells express a strong affinity TCR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by experimental data in Figure 3D showing dose-dependent proliferation. The response to very low peptide concentrations (10 pg/ml) provides strong evidence for high TCR affinity. However, no direct affinity measurements (e.g., SPR, tetramer off-rate) are provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C14",
+      "C100",
+      "C101",
+      "C103",
+      "C107"
+    ],
+    "result": "Following Spike/CpG immunization, 95.17% (\u00b11.61) of adoptively transferred CORSET8 cells divided in draining lymph nodes and displayed activation markers (CD44, IFN-\u03b3, T-Bet, CD69, Ki-67). The phenotypical characteristics selected during single-cell analysis were confirmed in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C14, C100-C101, C103, C107 are supported by in vivo data in Figure 4C-D. The high proliferation rate and activation marker expression validate the selection criteria. Statistical analysis shows significant differences compared to controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C15",
+      "C102"
+    ],
+    "result": "Following Pfizer BNT162b2 mRNA vaccination, CORSET8 T cells strongly proliferated and displayed activation markers (CD44, IFN-\u03b3, T-Bet, CD69).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C15, C102 are supported by experimental data in Figure 4D showing activation marker expression after mRNA vaccination. This demonstrates the utility of CORSET8 mice for studying vaccine responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C16",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Following SARS-CoV-2 infection in K18-hACE2 transgenic mice, 99.28\u00b10.12% of CORSET8 cells divided and upregulated CD44. CORSET8 cells were exclusively detected in infected hACE2Tg/wt mice, while endogenous CD8 T cells did not upregulate CD44, demonstrating specific engagement of transgenic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C16, C108-C114 are supported by infection model data in Figure 4E-H. The exclusive detection in infected mice and lack of endogenous response provide strong evidence for antigen-specific activation. The use of K18-hACE2 mice is well-justified by citations (C108-C109).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "CORSET8 T cells showed higher tetramer binding affinity than endogenous Tetramer+ CD8 T cells, confirming selection of a high-affinity TCR clone as intended during the selection process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117 are supported by tetramer staining data in Figure 4I showing higher MFI for CORSET8 cells. This validates the selection approach, though direct affinity measurements would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C145"
+    ],
+    "result": "The DALI-based approach allowed a priori evaluation of key characteristics (cytokine production, cellular phenotype, clonal expansion) and generated fully functional TCR transgenic mice with only a fraction of the workload and time compared to classical approaches. The streamlined method offers an attractive approach for future TCR Tg mouse development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C145 summarize the main conclusions supported by the successful generation and validation of CORSET8 mice. The comparison to the failed traditional approach (C53, C65, C68) and timeline shown in Figure 1 support the efficiency claims. However, quantitative time/cost comparisons are limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C10",
+      "C17",
+      "C51"
+    ],
+    "result": "DALI software enables rapid selection of ideal responder CD8 T cell clones based on antigen reactivity, proliferation, and immunophenotype in vivo. Information on clonotype diversity, expansion, and differentially expressed genes allows rationalized TCR sequence selection for generating TCR transgenic mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C17, C51 describe the capability and utility of DALI demonstrated through successful clone selection. The integration of TCR repertoire and phenotypic data is clearly shown in Figure 2D-J. However, the claim of 'rapid' selection lacks quantitative benchmarking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A small population of endogenous CD45.2 cells was Spike Tetramer positive with slightly increased activation compared to Tetramer negative counterparts, but this increase was mild compared to strong CORSET8 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 describe an interesting observation about endogenous responses supported by experimental data. This demonstrates the competitive advantage of high-affinity CORSET8 cells and validates the model's utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C123"
+    ],
+    "result": "Successful TCR transgenic mouse generation depends on selecting an antigenic, immunogenic, and stable epitope, and a TCR clone with sufficient affinity to determine immune response strength, kinetics, proliferative advantage, and memory formation tendency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C123 describe established principles of TCR biology supported by citations (C38) and general immunological knowledge. These principles provide the theoretical framework for the study's approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Current TCR screening methods assess proliferation, CD69 upregulation, and cytokine production but do not inform on clone fitness in polyclonal environments or effects on T cell fate decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 provide critical assessment of current methods supported by citations (C124) and logical reasoning. This identifies a key gap that the proposed method addresses, though the assessment is somewhat subjective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "TCR affinity and tonic signaling influence T cell fate decisions. Effector cells are found among high-affinity clones while memory cells recognize antigens with lower affinity. Distinct mechanisms drive effector/memory development, and tonic signaling strength determines Tfh cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C132 describe established T cell biology principles supported by multiple citations. These provide important context for understanding the implications of clone selection criteria, though they are primarily literature review rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "The affinity bias for long-term memory and tissue residence is unclear. The proposed immunophenotype-based selection method could enable generation of TCR Tg T cells biased toward either immediate effectors or long-term memory cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C133 acknowledges a knowledge gap, while C134 is explicitly speculative. No experimental data directly tests whether the method can selectively generate effector- vs. memory-biased lines. This represents a prediction for future work rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Alternative methods for TCR transgenic mouse generation have been developed, including retrogenic mice, efficient TCR cloning systems, CRISPR-mediated TCR replacement, and TRex mice with targeted integration. These approaches address various limitations of traditional methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C142 describe published alternative methods supported by appropriate citations. This provides important context for positioning the current work, though these are literature review rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C144",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The DALI tool is user-friendly and free for immunologists with limited bioinformatics background. The rationalized approach has increased reagent costs but may circumvent expensive generation of poorly functional lines, which conflicts with the 3R principle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144, C146-C148 discuss practical considerations of the method. The user-friendliness is supported by the GUI design (C49). The cost-benefit analysis (C146-C147) is reasonable but somewhat speculative. The 3R principle consideration (C148) is an important ethical point.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "TCR transgenic adoptive transfer models enable clonal-level study of early T cell responses, functional status, and cell-fate decisions. The standard generation method involves immunization, T cell isolation, hybridoma generation, and crude TCR identification often without detailed sequence information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 describe established practices in the field supported by citations and general knowledge. This provides background context for the study's motivation and approach.",
+    "result_type": "MINOR"
+  }
+]

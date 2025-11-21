@@ -1,0 +1,234 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C12",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study generated the first single-nucleus multiomics map of chromatin accessibility and gene expression during murine PGC development, profiling 3,054 PGCs and 22,382 supporting cells across embryonic stages E11.5, E12.5, and E13.5 in both XX and XY embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C12, C68-C71 collectively establish the novelty and scope of the dataset. The experimental design is clearly described with appropriate sample sizes, technical replicates, sequencing depth metrics, and cell identification methods based on established markers (C69). The methodology appears sound and the dataset is comprehensive for addressing PGC sex determination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Multiomics analysis revealed that E11.5 XX and XY PGCs are transcriptionally and epigenetically similar, but diverge at E12.5 with a distinct branching point, culminating in sex-specific terminal states at E13.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C14, C19-C23 are supported by dimensional reduction, clustering, and pseudotime trajectory analyses shown in Figure 1. The progression from bipotential to sexually dimorphic states is demonstrated through multiple complementary analytical approaches (snRNA-seq, snATAC-seq, and joint analysis), providing converging evidence for the developmental trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Clustering analysis identified distinct PGC subpopulations with XX PGCs showing greater transcriptional heterogeneity (diverging into multiple clusters at E12.5-E13.5) compared to XY PGCs which converged onto fewer clusters, with joint multiomics analysis resolving 11 distinct PGC groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18 and C58-C61 describe clustering patterns supported by Figures 1c-d and 1i-j. The observation of greater heterogeneity in XX versus XY PGCs is consistent across both RNA-seq and joint analyses. The enhanced resolution from multiomics integration (11 clusters vs 8 from RNA alone) demonstrates the added value of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C62",
+      "C77",
+      "C78"
+    ],
+    "result": "Regulatory element accessibility precedes gene expression during PGC development, with the correlation between differentially accessible peaks and differentially expressed genes increasing from ~20% (XX) and ~1% (XY) at E11.5 to ~35% (XX) and ~60% (XY) at E13.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While C77-C78 provide quantitative data on peak-to-gene correlations, the interpretation that accessibility 'precedes' expression (C3, C62) is speculative. The temporal correlation data alone cannot establish causality or temporal precedence without time-resolved measurements within individual cells or functional validation. The claim of 'chromatin priming' requires additional experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Sexual dimorphism in both gene expression and chromatin accessibility increased temporally during PGC development, with DEGs increasing ~3.5-fold from E11.5 to E12.5 and 1.75-fold from E12.5 to E13.5, and the largest increase in DAPs occurring at E13.5 (15,546 XY-enriched vs 5,626 XX-enriched).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C43 are well-supported by quantitative differential analysis shown in Figure 4a-b. The temporal increase in both transcriptional and epigenetic sexual dimorphism is clearly documented with specific fold-changes and peak counts. The disproportionate increase in XY DAPs at E13.5 is particularly notable and well-quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C65"
+    ],
+    "result": "XY PGC functional genes (Rb1, Rbl2, Cdkn1b, Cdkn2b, Bnc2, Cnot1, Dnd1, Nanos2) showed increasing expression from E11.5 to E13.5, with Bnc2 showing the strongest XY enrichment and chromatin accessibility positively correlated with expression; ZKSCAN5 was identified as a potential novel regulator of XY PGC genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 are supported by gene expression and chromatin accessibility data in Figure 2. The correlation between Bnc2 accessibility and expression is demonstrated. However, C28-C29 and C65 regarding ZKSCAN5 are computational predictions based on motif enrichment that require experimental validation. The identification is reasonable but the regulatory role remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "XX PGC functional genes (Rec8, Sycp2, Sycp3, Ctnnb1, Meioc, Rnf2, Stra8, Ythdc2, Zglp1) were substantially more highly expressed in E13.5 XX versus XY PGCs, with Rnf2 and Zglp1 strongly expressed at E12.5 prior to other female genes, and Stra8 promoter accessibility positively correlated with expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by differential expression analysis and chromatin accessibility data shown in Figure 3. The temporal expression patterns and correlation between accessibility and expression are well-documented. The observation that Rnf2 and Zglp1 expression precedes other female genes is consistent with their known roles in controlling differentiation timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C63",
+      "C66"
+    ],
+    "result": "XX PGC gene regulatory networks are enriched for transcription factors TFAP2c, TCFL5, GATA2, MGA, NR6A1, TBX4, and ZFX, with TFAP2c and TCFL5 showing the strongest enrichment and predicted to regulate 75% and 74% of DEGs with peak-to-gene linkages, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C45-C49 are supported by integrated motif enrichment and gene expression analysis shown in Figure 5. The computational prediction of target genes is methodologically sound, combining chromatin accessibility, motif presence, and expression data. However, C63 and C66 are inferences requiring functional validation. Immunofluorescence validation of TFAP2c (C46) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C64",
+      "C67"
+    ],
+    "result": "XY PGCs showed sex-specific enrichment of forkhead-box (FOXO1, FOXK2) and POU6 (POU6F1/2) transcription factor families, with FOXK2 and POU6F1/2 predicted to regulate 26% and 19% of DEGs with peak-to-gene linkages, respectively, though these TF families appear to regulate distinct gene sets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C50-C52 are supported by motif enrichment and expression analysis. The lower percentage of predicted target genes compared to XX PGCs is notable. Claims C64 and C67 are reasonable hypotheses based on the data (pioneering properties of FOX factors and limited overlap of target genes), but remain speculative without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Retinoic acid receptor expression and motif activity were enriched in XX PGCs, with RA receptor motifs located in regulatory regions of meiosis-related genes (Stra8, Rec8, Rnf2, Sycp1, Sycp2, Ccnb3, Zglp1) and statistically linked to genes involved in RA response, cell cycle regulation, and meiotic processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C72-C74 are supported by expression analysis and motif enrichment data shown in Appendix figures. However, C75's claim that RA 'directly regulates' these genes is an inference from in silico motif analysis. While the presence of RA receptor motifs in regulatory regions is suggestive, direct regulation requires experimental validation (e.g., ChIP-seq, functional perturbation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C44",
+      "C76"
+    ],
+    "result": "Immunofluorescence validation confirmed differential expression of Porcn (XX-enriched) between E13.5 XX and XY germ cells, and differentially accessible peaks were predominantly located in gene regulatory regions (promoters, distal intergenic, or intronic regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 provides important experimental validation of the multiomics predictions using an orthogonal method (immunofluorescence), shown in Figure 4e. Claim C76 regarding genomic location of DAPs is supported by the data, though the inference that these 'likely correspond to gene regulatory sites' is reasonable but not definitively proven without functional assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Cell-cell communication analysis revealed that ligand-receptor interactions between supporting cells and PGCs increased temporally from E11.5 to E13.5, with 15-38% more interactions in XX versus XY gonads, and WNT signaling interactions 2-3 times greater in XX gonads; novel pathways including MDK signaling (XX) and DHH signaling (XY) were identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by CellphoneDB analysis shown in Figure 6. The quantitative differences in interaction numbers and pathway-specific enrichment are well-documented. The identification of MDK and DHH signaling as potentially novel pathways is based on computational prediction and requires experimental validation, but the analytical approach is appropriate for discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C79",
+      "C80",
+      "C81",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The manuscript establishes biological context by citing established knowledge about PGC development, sex determination mechanisms, disease associations, and signaling pathways, including several knowledge gaps that remain to be addressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C11, C79-C81, C83-C90 represent background knowledge supported by appropriate citations to established literature. These claims provide necessary context for interpreting the novel findings. Claim C90 explicitly acknowledges a knowledge gap regarding Dhh function in fetal XY mice, demonstrating appropriate scientific caution.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The study cohort consisted of 45 AD patients and 44 controls (including 27 age-matched), with APOE frequencies comparable to published data. Targeted deep sequencing of 744 samples (PU.1+, NeuN+, DN nuclei, and blood) was performed using a 716-gene panel at ~1100x coverage, with ~94% of PU.1+ nuclei confirmed as microglia by snRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C38 describe the study design, cohort characteristics, and technical methodology. The cohort composition, APOE distribution, sequencing coverage, and microglia purity are well-documented with appropriate validation (Figure 1, supplementary data). These foundational methodological claims are adequately supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Variant calling identified 826 somatic SNVs (0.3 mut/Mb) with 90% validation by ddPCR. Of these, 96 were classified as pathogenic (P-SNV) with 95% validation rate. Most variants (>90%) were cell-type specific, with only ~5% of SNVs and ~8% of P-SNVs shared between blood and brain, suggesting infiltrating peripheral myeloid cells account for ~5% of microglia somatic diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 present the variant detection results with strong validation data. The high ddPCR confirmation rates (90% for all SNVs, 95% for P-SNVs) and cell-type specificity analysis support the technical quality. The inference about peripheral cell contribution (C46) is reasonable given the barcode analysis, though it assumes all shared variants originate from peripheral infiltration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Somatic variant burden was higher in blood (1 mut/Mb) and PU.1+ nuclei (0.5 mut/Mb) than in DN and neurons (0.18 mut/Mb), and increased with age in blood and microglia. Blood SNV burden was higher in controls than AD patients, while brain cell SNV burden showed no difference between AD and controls across cell types or brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 describe overall mutational burden patterns. The age correlation (C48) is consistent with known biology of proliferating cells. The finding of higher blood SNV burden in controls vs AD (C49) is interesting and statistically supported (Figure 2B), though the biological interpretation requires caution as controls died of other causes including cancer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Pathogenic SNV (P-SNV) burden correlated with both age and AD status, with selective enrichment in PU.1+ samples from AD patients vs controls (p=0.0003). This association was confirmed by logistic regression (OR=7, p=0.0035) and mixed-effects modeling (p=0.0215), and was consistent across brain regions, indicating disease-specific rather than sampling-related enrichment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 present the key finding of pathogenic variant enrichment in AD microglia. Multiple statistical approaches converge on significant association (p=0.0003, OR=7, mixed-effects p=0.0215). The consistency across brain regions (C56) strengthens the conclusion. However, the modest cohort size (n=45 AD, n=27 age-matched controls) and multiple testing considerations warrant cautious interpretation of effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "All genes targeted by pathogenic SNVs were expressed in microglia, and analysis restricted to genes not expressed in microglia showed no enrichment of pathogenic variants in AD patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 provide important negative control evidence. The finding that P-SNV enrichment is specific to microglia-expressed genes (C60) and absent in non-expressed genes (C61) strengthens the biological relevance of the findings. This control analysis is well-designed and supports specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C70"
+    ],
+    "result": "Pathway analysis revealed enrichment of pathogenic variants in the RTK/MAPK pathway, with variants in 6 of 15 classical MAPK genes (CBL, BRAF, RIT1, NF1, PTPN11, KRAS) detected in ~25% of AD patients (p=0.0145 vs controls). Notably, 6 patients (13%) carried recurrent CBL RING-domain mutations, and 2 patients had RIT1 Switch II domain variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C70 identify MAPK pathway enrichment as the primary mechanistic finding. The pathway analysis is appropriately controlled (716-gene background), and the recurrence of CBL variants in 6/45 patients (13%) is striking. The p=0.0145 for MAPK pathway enrichment is significant, though multiple pathway testing should be considered. The recurrent CBL mutations provide strong evidence for selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "Functional validation in HEK293T cells demonstrated that CBL RING-domain variants and RIT1 variants found in AD patients increased MAPK phosphorylation in response to EGF and FBS, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 provide functional validation of variant pathogenicity. Western blot data (Figure 3E-F) demonstrate increased ERK phosphorylation for patient-derived variants. However, validation is performed in HEK293T cells rather than microglia, and only tests acute signaling responses. The functional relevance in physiological microglia context requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "MAPK-activating variants in AD patients were detected at allelic frequencies of ~1-6% in microglia (corresponding to 2-12% of microglia assuming heterozygosity), comparable to BRAFV600E frequencies observed in microglia from histiocytosis patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 contextualize the variant allelic frequencies. The comparison to histiocytosis (C72) is appropriate given the known association with neurodegeneration. The allelic frequency range (1-6%) is consistent with clonal expansion but below typical cancer frequencies, which is biologically plausible for a non-malignant clonal disorder.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In murine microglial cell lines (BV2) and CSF-1-dependent macrophages (MAC), expression of CBL, RIT1, KRAS, and PTPN11 variants increased ERK phosphorylation and/or proliferation, and RNA-seq showed upregulation of RAS, TNF, IL6, JAK-STAT signaling, complement, inflammatory responses, and mTOR pathway signatures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C75 demonstrate functional consequences in mouse cell lines. Western blot and EdU incorporation data (Figure 4A) support increased signaling and proliferation. RNA-seq pathway analysis (Figure 4B) shows inflammatory signatures. However, these are immortalized/transformed mouse lines, which may not fully recapitulate primary human microglia biology. The BV2 line is v-Raf immortalized, potentially confounding MAPK pathway studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Human iPSC-derived microglia-like cells heterozygous for CBL C404Y showed increased size, lamellipodia, amoeboid morphology, slightly increased proliferation, and ~2-fold increased ERK phosphorylation upon CSF-1 stimulation compared to isogenic controls, demonstrating that heterozygosity for CBLC404Y is sufficient to activate human microglia-like cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 provide critical validation in human cells with physiological heterozygosity. The use of prime-edited isogenic iPSC lines is rigorous. Morphological changes (Figure 4D-E), proliferation (Figure 4F), and ERK activation (Figure 4G) are documented. However, these are iPSC-derived cells that may not fully recapitulate mature brain microglia. The 'slightly increased' proliferation (C77) suggests modest effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "RNA-seq of CBL404C/Y iPSC-derived microglia showed upregulation of glycolysis, oxidative phosphorylation, mTORC1, complement, TNF, JAK-STAT signaling, inflammatory signatures, KEGG neurodegenerative disease signatures, and the human AD-microglia signature. ELISA confirmed increased production of TNF, IL-6, IFN-\u03b3, IL-1\u03b2, C3, and complement Factor H, indicating heterozygosity for CBLC404Y drives a neuroinflammatory/AD signature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 demonstrate transcriptional and protein-level inflammatory responses. GSEA shows enrichment for AD-associated signatures (Figure 5A-C), and ELISA confirms cytokine production (Figure 5B). The convergence of multiple inflammatory pathways and validation at protein level strengthens conclusions. However, in vitro culture conditions may not fully replicate in vivo inflammatory milieu. The n=3-4 replicates for ELISA is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Single-nucleus RNA-seq analysis of microglia from patients with MAPK variants showed enrichment for inflammatory, TNF, mTOR, oxidative phosphorylation, and glycolysis signatures, particularly in clusters 2 and 2B. KRAS A59G variant reads were detected in cluster 2/2B from patient AD52, supporting that patient microglial clones carrying pathogenic mutations are associated with metabolic and neuroinflammatory signatures in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86-C89 attempt to validate in vitro findings in patient samples. The snRNA-seq shows enrichment of inflammatory signatures in variant-carrying patients (Figure 5D-E). However, the analysis is limited to 5 samples from 4 donors, with only 2 AD patients carrying variants. Detection of variant reads at single-cell level (C88) is notable but challenging given low VAF and sequencing depth. The small sample size and difficulty distinguishing cause vs. effect limit certainty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Microglia from 45 AD patients are selectively enriched for pathogenic/oncogenic variants absent from blood, glia, or neurons compared to 44 controls. These variants predominantly target the MAPK pathway and include recurrent CBL RING-domain mutations, which promote microglial proliferation, activation, and neuroinflammatory transcriptional programs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C90-C92 summarize the main findings. The enrichment of microglia-specific pathogenic variants in AD (p=0.0003, OR=7) is well-supported by multiple statistical approaches. MAPK pathway enrichment and CBL recurrence are documented. Cell-type specificity is demonstrated. However, causality vs. consequence cannot be definitively established from this cross-sectional study. The 'promote' language in C92 implies causation that requires longitudinal or interventional data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Heterozygous expression of pathogenic CBL variant in human microglia-like cells was sufficient to drive a transcriptional program associated with increased metabolic activity and neurotoxic inflammatory response, also observed in microglia from patients with MAPK-activating variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 integrates in vitro and patient data. The iPSC-derived cell experiments (C80-C85) demonstrate sufficiency of heterozygous CBL variant for inflammatory phenotype. Patient snRNA-seq (C86-C87) shows similar signatures. However, 'sufficient' is strong language given that in vitro systems may not capture all regulatory mechanisms. The patient validation is limited by small sample size (n=2 variant carriers).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The association between AD and MAPK pathway variants is consistent with prior whole-exome sequencing showing MAPK enrichment in AD brain tissue. Additionally, MAPK-activating variants in tissue macrophages cause histiocytosis with neurodegeneration, and BRAFV600E expression in mouse microglia causes neurodegeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 contextualize findings with prior literature. The consistency with Park et al. 2019 (C94) supports reproducibility despite different methods. The histiocytosis connection (C95) and mouse BRAFV600E model (C96) provide mechanistic precedent. However, these are citations to prior work rather than new findings. The relevance of histiocytosis (a rare clonal disorder) to sporadic AD requires careful interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The allelic frequencies of pathogenic variants in AD patients are within the range observed in histiocytosis and autoimmune diseases. The RAS/MAPK pathway is involved in microglia proliferation, activation, inflammatory response, and AD pathogenesis, with activation proposed as an early event in AD. Neuroinflammation is an early and critical event in AD, and APOE4, the main genetic risk factor, increases inflammatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 provide biological context through literature citations. The allelic frequency comparison (C97) is appropriate. The role of MAPK in microglia function (C98) and AD pathogenesis (C99) is well-established in cited literature. The emphasis on neuroinflammation (C100) and APOE4 (C101) contextualizes the findings. These are primarily literature-based contextual claims rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The contributing role of MAPK-activating variants could be comparable to APOE4, and APOE4 allele frequency is lower in patients with pathogenic variants (34%) than without (53%), though this difference did not reach significance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102-C103 propose a relationship between MAPK variants and APOE4. The observation of lower APOE4 frequency in variant carriers (34% vs 53%) is interesting but non-significant (C103). The speculation about comparable contribution to APOE4 (C102) is not supported by statistical evidence or mechanistic data. The sample size (n=23 variant carriers) is insufficient to detect this difference. This remains a hypothesis requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Microglia variants are frequently absent from blood, and the DNA sequencing barcode approach does not support massive blood cell infiltration or replacement of the microglia pool, but instead is consistent with local microglia maintenance and proliferation. This is consistent with studies showing clonal hematopoiesis is inversely associated with AD risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 address the origin of microglial variants. The low frequency of shared variants between blood and brain (5-8%, C45) supports local origin rather than peripheral infiltration. The consistency with microglia biology literature (C105) and inverse association of clonal hematopoiesis with AD (C106) strengthens the interpretation. However, the barcode approach cannot definitively exclude all peripheral contribution, particularly for variants arising in early hematopoietic progenitors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "The association of microglia clones carrying pathogenic variants with AD is not due to overall increased microglia mutational load in AD. Together with evidence that pathogenic variants drive neuroinflammation, these data suggest clones could contribute to AD pathogenesis with other genetic and environmental factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 distinguish pathogenic variant enrichment from general mutational burden. The finding that overall SNV burden is similar between AD and controls (C50) while P-SNV burden is elevated (C55) supports specificity (C107). The suggestion of contribution to pathogenesis (C108) is appropriately cautious ('could contribute', 'suggest') given the cross-sectional design. However, causality cannot be established without longitudinal or interventional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C109"
+    ],
+    "result": "Lewy bodies, amyloid angiopathy, tauopathy, or alpha synucleinopathy were equally distributed among AD patients with or without microglia clones carrying MAPK-activating variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C109 reports no association between MAPK variants and specific AD pathological features. This negative finding is important for understanding the relationship between microglial clones and AD subtypes. The data are presented in Figure 2\u2014figure supplement 2. However, the sample size for subgroup analysis is limited, and statistical power to detect associations may be insufficient.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C28",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The natural history of microglial clones is difficult to study in humans. Microglial expression of MAPK-activating variants causes neurodegeneration in mice, suggesting AD-associated neuroinflammatory microglial clones may contribute to neurodegeneration in patients. Clones may be present at onset contributing to early disease, or may appear/be selected later during disease progression in the inflammatory milieu.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9, C28, C110-C113 discuss temporal dynamics and causality. The mouse model data (C8, C28) from prior work (Mass et al. 2017) provides mechanistic support but cannot establish timing in human disease. The acknowledgment of difficulty studying natural history (C110) is appropriate. The alternative hypotheses about early vs. late emergence (C111-C112) are reasonable but speculative. The cross-sectional design cannot distinguish cause from consequence or determine when clones arise. Longitudinal studies would be required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C29",
+      "C30",
+      "C31",
+      "C33",
+      "C52"
+    ],
+    "result": "Background claims establishing the context of somatic mosaicism, AD epidemiology, genetic risk factors (APOE4, GWAS variants), prior evidence of mosaicism in AD brain tissue, and the role of microglia in AD pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C31, C33, C52 provide literature-based background and context. These are primarily citations to established knowledge and prior studies. The claims accurately represent the cited literature regarding AD prevalence, genetic risk factors, somatic mosaicism, and microglia biology. C25 appropriately identifies limitations of prior studies (lack of cellular resolution), motivating the current work. These contextual claims are well-supported by citations.",
+    "result_type": "MINOR"
+  }
+]

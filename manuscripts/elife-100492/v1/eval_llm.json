@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C18",
+      "C19",
+      "C43"
+    ],
+    "result": "Octopus cells receive a higher density of excitatory SGN inputs (10.7 \u00b1 3.0 puncta/100 \u00b5m\u00b2) than inhibitory inputs (4.2 \u00b1 0.8 puncta/100 \u00b5m\u00b2) on dendrites, with a strikingly different ratio of excitatory to inhibitory puncta on the soma (7:1) versus dendrites (5:2). The average octopus cell receives ~1035 SGN synapses and ~354 inhibitory synapses, with 83% of synapses on dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C18-C19, and C43 provide converging quantitative anatomical evidence from 3D reconstructions showing differential distribution of excitatory and inhibitory synapses across somatic and dendritic compartments. The measurements are internally consistent and include appropriate sample sizes (n=8-9 cells from multiple mice) with reported variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C47",
+      "C48"
+    ],
+    "result": "The majority of SGN inputs onto octopus cells come from type Ia SGNs (62 \u00b1 9.7% of synapses), which correspond to low-threshold, high-spontaneous rate neurons. Ib/c SGNs account for 38% of inputs despite comprising 60.1% of the total SGN population, indicating Ia SGNs are overrepresented on octopus cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C47-C48 provide consistent evidence from genetic labeling, cell counting (n=1599 neurons), and synaptic reconstruction showing Ia SGN dominance. The findings align with previous cat studies (C48), strengthening the conclusion. The quantitative measurements are well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C51"
+    ],
+    "result": "SGN inputs to octopus cells exhibit mild facilitation at high frequencies (50 Hz) when assessed with electrical stimulation under physiological conditions, but show paired-pulse depression with ChR2 stimulation or non-physiological calcium concentrations. Ia inputs do not exhibit paired-pulse depression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C23 and C51 provide experimental evidence distinguishing physiological from artifactual synaptic properties. The comparison between electrical and optogenetic stimulation methods (C20-C21) and calcium concentration effects (C23) appropriately controls for technical confounds. Statistical testing shows no differences between total and Ib/c populations (p>0.35), supporting the conclusion about Ia inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Functional glycinergic inhibitory synaptic transmission onto octopus cells was revealed by pharmacologically blocking Kv and HCN channels to increase input resistance. Light-evoked IPSPs were fully abolished by strychnine, confirming glycinergic transmission involving both homomeric and \u03b12\u03b2 heteromeric receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 provide a logical experimental progression: initial failure to detect IPSPs (C24), pharmacological manipulation to increase detection (C25-C26), confirmation with antagonists (C27), and receptor subtype characterization (C28). The approach is well-controlled with appropriate pharmacology (n=6-9 cells from multiple mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Computational modeling demonstrates that dendritic IPSPs are electrically isolated from the soma under control conditions due to low input resistance, but become detectable after Kv and HCN block due to increased transfer impedance rather than changes in local IPSC amplitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C35 provide comprehensive computational evidence supporting the experimental findings. The model appropriately accounts for passive and active properties, demonstrates that increased transfer impedance (C35) rather than IPSC changes (C33-C34) explains somatic IPSP detection, and matches experimental observations (C31). The modeling approach is rigorous and well-validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Dendritic inhibition reduces EPSP amplitude by 25.2 \u00b1 9.0% and advances EPSP peak timing by 57.5 \u00b1 26 \u00b5s at the soma. Both computational modeling and experiments with coincident excitation and inhibition demonstrate that inhibition shapes EPSP timing, with effects mimicked by bath glycine application and reversed by strychnine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C42 provide converging evidence from modeling (C36-C37) and experiments (C38-C41) showing consistent effects of inhibition on EPSP properties. The quantitative measurements (C39) are supported by pharmacological controls (C40-C41, n=4-8 cells). The inference about tonic and synaptic glycine (C42) is reasonable given the strychnine effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C44",
+      "C46"
+    ],
+    "result": "Octopus cells employ a two-stage compartmentalized computation: dendritic integration of excitation and inhibition that modulates EPSP timing and amplitude, followed by somatic coincidence detection within a narrow temporal window. This mechanism allows responses to both rapid onsets and frequency modulations during ongoing sounds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C44, and C46 represent the main conclusions integrating all experimental and modeling results. The two-stage computation model is well-supported by the anatomical distribution of synapses, the functional demonstration of dendritic inhibition effects, and the preservation of somatic coincidence detection properties. This is the central finding of the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "Low-threshold Ia SGNs are characterized by short first spike latencies and low temporal jitter, properties that may ensure reliable coincidence detection for quiet sounds. Recruitment of higher threshold SGNs at higher intensities may compensate for saturation of low-threshold responses by background noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50 and C52 are supported by citations to previous physiological studies (C49) and represent reasonable inferences based on the demonstrated Ia SGN dominance and known properties of SGN subtypes. The logic connecting low-threshold properties to reliable detection (C50) and intensity compensation (C52) is sound, though these remain functional predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C53",
+      "C54"
+    ],
+    "result": "Octopus cells respond to complex spectrotemporal patterns including frequency modulations beyond stimulus onset. Subthreshold dendritic integration of coincident excitation and inhibition may be the primary computation in dendrites, as resting conductances likely suppress dendritic spikes and backpropagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by citations to in vivo studies. Claims C53-C54 represent reasonable inferences based on known biophysical properties (supported by citations in C53) and the experimental findings of this study. The conclusion about subthreshold integration (C54) is consistent with the lack of evidence for dendritic spiking in octopus cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The source of glycinergic inhibition to octopus cells remains unknown, though potential sources include local CNC neurons (D-Stellate, L-Stellate, tuberculoventral cells) or descending feedback from SPON and VNLL. Feedback inhibition could modulate coincidence detection windows during ongoing stimuli without affecting onset responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C55-C59 acknowledge gaps in knowledge and propose potential sources based on anatomical studies (C57-C58). However, these remain speculative (C56, C59) as the current study does not identify inhibitory sources. The proposals are reasonable but require future experimental validation through circuit tracing or manipulation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Octopus cells are specialized coincidence detectors with low input resistance (~4 M\u03a9), fast time constants (~200 \u00b5s), and narrow coincidence detection windows (~1 ms) that allow them to detect momentary coincidence of excitatory inputs and phase lock to broadband transients up to 1 kHz. SGNs project tonotopically to the cochlear nucleus and include physiologically distinct subtypes recruited at different intensities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C4-C10 establish the background knowledge about octopus cells and the auditory system, all supported by appropriate citations to previous work. These claims provide essential context for the current study's findings and are well-established in the literature.",
+    "result_type": "MINOR"
+  }
+]

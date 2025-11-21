@@ -1,0 +1,345 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The study integrates secondary structure data from Lan et al. (2022) and mutational fitness estimates from Bloom and Neher (2023) to analyze SARS-CoV-2 substitution patterns. DMS and SHAPE reactivity datasets from multiple sources were used to derive secondary structure models for comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C120-C123 establish the data sources used in the analysis. The citations are appropriate and the integration of published datasets (mutational fitness, DMS reactivity, and secondary structure models) is clearly documented with specific references to supplementary data files.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Secondary structure significantly predicts substitution frequencies in SARS-CoV-2, with unpaired positions showing 4-fold higher frequencies for C\u2192U and G\u2192U substitutions compared to basepaired positions (p<0.05). The effect is specific to certain substitution types (C\u2192U, G\u2192U, C\u2192A, U\u2192C) but not others (A\u2192G, G\u2192A).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C25-C40 collectively demonstrate a robust statistical relationship between basepairing status and substitution frequencies. The use of Tukey's range test with Bonferroni correction (C25-C30), quantitative effect sizes with bootstrapped confidence intervals (C36-C37), and visual presentation in Figure 1 (C33, C38-C39) provide strong convergent evidence. The specificity of the effect to certain substitution types strengthens the biological interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "At unpaired positions, synonymous C\u2192U substitutions show strong 5' sequence context dependence, with 5'U context having significantly higher fitness (0.83) than other contexts (0.15-0.57), while basepaired positions show no 5' preference. The 3'G context shows elevated rates independent of basepairing, suggesting CpG suppression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 present context-dependent effects with quantitative confidence intervals from bootstrapping (C47-C49). The differential behavior at paired vs. unpaired positions (C45-C46) and the basepairing-independent 3'G effect (C50-C51) are supported by Figure 1 supplements. The specific example of C29095 in UCG context (C52) provides a concrete illustration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Basepairing status correlates more strongly with mutational fitness (r=0.59) than DMS reactivity (r=0.45) for synonymous C\u2192U substitutions genome-wide, but DMS reactivity shows stronger correlation (r=0.77) when limited to positions with detectable reactivity. Correlations are weaker for nonsynonymous substitutions (r=0.13-0.17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide quantitative correlation analyses with bootstrapped confidence intervals. The comparison between binary basepairing and continuous DMS reactivity (C53-C54) is methodologically sound, and the interpretation that structural heterogeneity could improve predictions (C55) follows logically. The reduced correlation for nonsynonymous substitutions (C56-C57) is appropriately attributed to fitness effects of amino acid changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Secondary structure models derived from DMS data show higher correlation with C\u2192U substitution rates (r=0.59-0.63) than models from SHAPE data (r=0.50-0.55), though methodological differences beyond probe chemistry prevent attribution to a single factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 present a comparative analysis of four secondary structure models with appropriate quantification (C59-C60) and important caveats (C61-C62). The acknowledgment that differences cannot be attributed to a single factor demonstrates appropriate scientific caution given the multiple variables (probe type, cell type, viral isolate, analysis methods).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The high mutation rate of C29095U can be better explained by its extreme DMS reactivity (99th percentile) than by basepairing status alone, with this relationship consistent across the SARS-CoV-2 genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 provide a specific case study supported by Figure 2. The 99th percentile DMS reactivity (C64) quantitatively explains the high mutation rate, and the genome-wide consistency (C65) strengthens the generalizability. This effectively demonstrates the value of continuous reactivity data over binary basepairing classification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "A simple adjustment adding +0.32 to basepaired and -1.13 to unpaired positions equalizes median mutational fitness for synonymous C\u2192U substitutions, capturing much variation though leaving residual correlation with DMS reactivity (r=0.18), indicating room for improvement with more complex models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 describe a coarse adjustment method with clear quantification (C67) and validation (C68-C69). The acknowledgment of remaining correlation (C70) and potential for improvement (C71) demonstrates appropriate self-criticism. The conclusion that binary basepairing captures much variation (C72) is supported, and the suggestion for extension (C73) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Six of the top 15 C\u2192U substitutions at basepaired positions characterize major SARS-CoV-2 lineages (\u22655% global prevalence), including BA.1, XB, P.1, and JN.1.7, suggesting that basepairing-adjusted fitness better identifies functionally important mutations than raw frequency alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 test a specific hypothesis with clear criteria (C75) and quantitative results (C76). The identification of specific lineages (C77-C78) and comparison with unpaired positions (C81-C82) strengthen the conclusion. The observation that only 3 of 15 top-ranked unpaired nonsynonymous C\u2192U define major lineages despite higher median fitness (C81-C82) supports the interpretation that basepairing adjustment reveals biologically important mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The spike A222V mutation (C22227T) at a basepaired position characterized the B.1.177/EU1 lineage that dominated in Spain and Europe in summer 2020. Its recurrence in Delta sublineage AY.4.2 provided evidence for fitness advantage and suggested molecular mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 present a detailed case study with appropriate citations (C88-C90). The historical context (C86-C87) and resolution of initial uncertainty about fitness effects (C88) through subsequent evidence (C89-C90) demonstrate how the basepairing-adjusted analysis identifies mutations of biological significance. The citations to Hodcroft et al. (2021) and Ginex et al. (2022) appropriately support the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Top-ranked G\u2192U substitutions at basepaired positions include mutations to ORF3a and variants of concern like nucleocapsid D377Y in Delta. After basepairing adjustment, nonsynonymous C\u2192U substitutions characterizing major variants rank among the highest fitness estimates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 extend the analysis beyond C\u2192U to G\u2192U substitutions and demonstrate that the adjustment method elevates biologically important mutations in the rankings (C93, supported by Figure 2 right panel). This provides additional validation of the approach across substitution types and functional categories.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Combining apparent viral fitness from millions of patient sequences with accurate secondary structure measurements is informative. Mutational fitness reflects both mutation generation rates and selection, both of which can be influenced by secondary structure, though even dense SARS-CoV-2 sampling is insufficient for direct fitness inference from phylogenetic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 provide appropriate conceptual framing and limitations. The distinction between mutation rate and selection (C95-C96) is important for interpretation, and the acknowledgment of phylogenetic inference limitations (C97, citing Bloom and Neher 2023; Richard et al. 2021) appropriately contextualizes the indirect approach used in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The lack of basepairing dependence for A\u2192G and G\u2192A substitutions supports a chemical reaction rate mechanism over structural conservation. The relative contributions of enzymatic versus non-enzymatic processes remain unclear and warrant further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 present mechanistic interpretation supported by the differential behavior of substitution types (C29-C30). The contrast between interpretations (C99 vs C100, citing Gout et al. 2024 and Li et al. 2023) is appropriately presented, and suggestions for future work (C101, C103) are reasonable. The acknowledgment of uncertainty (C102) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "A recent in vitro study suggests guanine oxidation can cause G\u2192U substitutions, which like C\u2192U are common in SARS-CoV-2 infections and show strong basepairing dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C106 connect the observed G\u2192U pattern to a potential mechanism (citing Akagawa et al. 2024). The parallel between C\u2192U and G\u2192U in frequency (C105) and basepairing dependence (C106, supported by C26, C37, C39) strengthens the mechanistic hypothesis, though the connection remains speculative pending direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Secondary structure and other correlating data can refine mutational fitness estimates for SARS-CoV-2 and other viruses. More sophisticated analyses could incorporate structural heterogeneity and sequence context, and combining DMS (probing A/C) and SHAPE (probing all nucleotides) data could improve accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C113 present reasonable suggestions for future work based on the study's findings. The acknowledgment that the coarse adjustment doesn't capture all DMS information (C110, Figure 2 supplement 1) and the complementary nature of different probes (C111-C112) support the suggestion for data integration (C113). These are appropriately framed as suggestions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Future measurements or modeling may reveal secondary structure changes in new variants, potentially evident in in vitro substitution rates. In vitro structures may differ from in vivo, and model uncertainty must be evaluated, with initial estimates refined through rapid characterization and surveillance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C119 provide appropriate caveats and suggestions for future work. The acknowledgment that in vitro structures may differ from in vivo (C116) is an important limitation. The suggestion to use correlation with functional assays for validation (C117, citing Lamb et al. 2024) and emphasis on uncertainty evaluation (C118) demonstrate scientific rigor. These are appropriately speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The analysis has several limitations: mutational fitness is logarithmically related to observed/expected substitution ratios with asymmetric frequencies; DMS data is from WA1 (Lineage A) which differs from Lineage B; fitness estimates aggregate across divergent clades with varying structures; and the analysis excludes indels, masked sites, and focuses only on common substitutions (\u22655%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C134 transparently document methodological details and limitations. The definition of mutational fitness (C124) is clear, and potential sources of variation (C126-C130) and analytical limitations (C131-C134) are appropriately acknowledged. This transparency is essential for proper interpretation and strengthens confidence in the results despite these limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "C\u2192U is the most common SARS-CoV-2 substitution type. Mutational fitness measures the difference between observed and expected substitution frequency (correlated with viral fitness) assuming neutral mutation expectations depend only on substitution type. C\u2192U substitutions at basepaired positions may have greater fitness impact than appreciated from frequency alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C7 and C22-C24 establish key definitions and the main hypothesis. The definition of mutational fitness (C4, C22-C23) is clearly stated with appropriate citation (Bloom and Neher 2023). The characterization of C\u2192U as most common (C5, C24) is well-established. The hypothesis that basepairing adjustment reveals underappreciated fitness effects (C7) is supported by subsequent results (C76-C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Investigation of C29095U (detected in a familial cluster, fourth most frequent C\u2192U at 7\u00d7 typical rate) revealed it is unpaired in UC context in an asymmetrical internal loop. Prior studies supported but differed in interpreting whether high C\u2192U rates at unpaired positions reflect mutation rates or fitness costs of disrupting structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C21 provide the motivating case study with appropriate citations (Chan et al. 2020, Bloom and Neher 2023, Sun et al. 2021, etc.). The characterization of C29095 (C11-C14) is consistent across multiple structure models. The summary of prior work (C15-C21) appropriately identifies the unresolved question that motivated this study. This provides strong rationale for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Two studies published after this preprint reported similar results: one found basepairing dependence in serial passage experiments (Gout et al. 2024), while another found little overall difference by context but strong 5'U preference for the highest-frequency C\u2192U substitutions (Simmonds 2024).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 appropriately cite subsequent independent validation. The convergence of results from different experimental approaches (serial passage in C42, recurrent substitutions in C43-C44) strengthens confidence in the findings. The reconciliation of Simmonds' observation (C43-C44) with this study's more detailed analysis (C45-C46) demonstrates consistency.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C91"
+    ],
+    "result": "Light-sheet microscopy enables superior depth penetration and 3D imaging of intact islets compared to spinning disk confocal microscopy. The light-sheet system achieved >twofold increase in penetration depth (from 50\u201360 to 130\u2013150 \u03bcm) with axial resolution of ~1.1 \u03bcm, allowing imaging of entire small- and medium-sized islets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33\u2013C35 and C91 are well-supported by comparative imaging data in Figure 1B showing superior depth penetration of the light-sheet system. The quantitative measurements of penetration depth and axial resolution are clearly documented, and the technical specifications are consistent with optical principles for the equipment used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "3D network analysis reveals that highly synchronized \u03b2-cells (high degree cells) are located at the islet center while low degree cells are located at the periphery, indicating a radial distribution pattern of the islet network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36\u2013C38 are supported by spatial analysis data in Figures 2D and 2E showing statistically significant differences in distance from islet center. The radial pattern inference (C38) is reasonable given the spatial distribution of high and low degree cells, though it represents an interpretation of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40"
+    ],
+    "result": "Leader \u03b2-cells (early phase cells) that initiate Ca2+ waves are located at the islet periphery, opposite to the location of highly synchronized cells. Early and late phase cells show clear temporal separation in their depolarization and repolarization dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C39\u2013C40 are supported by wave analysis data in Figures 2I and 2J. The spatial localization to the periphery and temporal separation are clearly demonstrated. This contrasts with the network analysis showing central localization of high degree cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C42",
+      "C43",
+      "C44",
+      "C71",
+      "C73"
+    ],
+    "result": "Leader \u03b2-cells change their identity over time via rotations in the wave axis, with 57% of islets showing substantial wave axis changes. The center of gravity of early phase cells moved significantly more than high degree cells, indicating that \u03b2-cell depolarization is dominated by stochastic properties rather than predetermined profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C42\u2013C44, C71, C73 are supported by quantitative analysis in Figures 3D and 3E showing significant movement of early phase cell center of gravity and wave axis rotation. The conclusion about stochastic dominance (C73) is a reasonable inference from the observed instability, though alternative explanations are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C41",
+      "C45",
+      "C46",
+      "C82",
+      "C85"
+    ],
+    "result": "Highly synchronized \u03b2-cells remain regionally but not cellularly stable between oscillations. High degree cells show ~60% retention rate between oscillations, with regional stability significantly higher than cellular stability, indicating nearby cells 'take over' as high degree cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C41, C45\u2013C46, C82, C85 are supported by retention analysis (Figure 3C) and KL divergence analysis (Figure 4C). The distinction between regional and cellular stability is statistically significant and well-documented. The 'take over' interpretation (C86) is a reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48"
+    ],
+    "result": "For the Ca2+ wave, cellular stability was similar to regional stability, suggesting the wave is established by cellular properties whereas the network is emergent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C47 is supported by KL divergence data in Figure 4D. However, C48 is explicitly labeled as speculative by the authors ('may imply'), and alternative mechanistic explanations are not tested. The inference about cellular versus emergent properties requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C69",
+      "C70"
+    ],
+    "result": "2D imaging at different planes can skew heterogeneity analysis results compared to 3D imaging. 2D analysis failed to detect the difference between regional and cellular consistency of the \u03b2-cell network that was evident in 3D analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49\u2013C50, C69\u2013C70 are supported by comparative analysis in Figure 5E showing that 2D planes at different depths failed to reproduce the regional versus cellular consistency differences observed in 3D. This demonstrates a clear methodological advantage of 3D over 2D imaging for this application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C52",
+      "C53"
+    ],
+    "result": "Glucokinase activation (GKa) increased oscillation period and duty cycle by extending the active phase duration without affecting the silent phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C52\u2013C53 are supported by quantitative analysis in Figure 6D showing statistically significant increases in period, active phase duration, and duty cycle upon GKa treatment. The lack of effect on silent phase is clearly demonstrated. Note that 3 of 15 islets were excluded due to Ca2+ plateau (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C54",
+      "C55"
+    ],
+    "result": "Pyruvate kinase activation (PKa) increased oscillation frequency by reducing both silent and active phase durations in equal proportions, with no effect on duty cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C54\u2013C55 are supported by quantitative analysis in Figure 6E showing decreased period (increased frequency) and proportional reductions in both phases. The lack of duty cycle effect is consistent with prior studies and the known mechanism of PKa action.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C56",
+      "C58",
+      "C59",
+      "C62"
+    ],
+    "result": "Glucokinase activation reinforced leader cells and stabilized the wave axis by increasing early phase cell retention and reducing wave axis change and KL divergence for wave propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C56, C58\u2013C59, C62 are supported by multiple analyses in Figure 7A\u2013D showing GKa effects on spatial reinforcement, KL divergence reduction, wave axis stabilization, and increased early phase cell retention. The effects are statistically significant and internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C11",
+      "C57",
+      "C60"
+    ],
+    "result": "Pyruvate kinase activation had no discernible effect on leader cells, wave axis stability, or KL divergence for wave propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C57, C60 are supported by data in Figure 7 showing no significant changes in early phase cell retention, wave axis stability, or regional consistency upon PKa treatment. This contrasts with the clear effects of GKa.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C61",
+      "C76"
+    ],
+    "result": "The Ca2+ wave origin is patterned by fuel input, specifically glucokinase activity. When glucokinase is activated, the strongest gradient is amplified, reinforcing the wave axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C61, C76 represent inferences from the differential effects of GKa (which affects fuel input) versus PKa (which does not) on wave properties. The inference is logical and supported by the experimental data, though it relies on the assumption that GKa specifically affects fuel input while PKa does not affect wave patterning through other mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C67",
+      "C68",
+      "C84"
+    ],
+    "result": "The subpopulation of highly synchronized \u03b2-cells (hub cells) is insensitive to changes in fuel metabolism induced by glucokinase and pyruvate kinase activation, with no changes in network consistency or high/low degree cell retention.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C67\u2013C68, C84 are supported by data in Figure 7\u2014figure supplement 1 showing no significant changes in network consistency or degree cell retention upon GKa or PKa treatment. This contrasts with the clear effects on wave properties and suggests different mechanisms control network versus wave dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Late phase cells showed no change in retention upon any treatment, while early phase cells were selectively maintained by GKa. The time lag between early and late phase cells increased with GKa, suggesting earliest phase cells drive wave propagation consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63\u2013C66 are supported by retention analysis (Figure 7D\u2013E) and time lag analysis (Figure 7F). The differential effects on early versus late phase cells and the increased temporal separation with GKa are statistically significant. The inference about earliest phase cells driving consistency (C64) is reasonable but represents an interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C72",
+      "C93"
+    ],
+    "result": "Light-sheet imaging of isolated islets produced Ca2+ oscillations with periods (6.77 \u00b1 0.36 min) similar to in vivo two-photon imaging (~3\u20135 min oscillations), validating the ex vivo approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C72 compares the current findings to in vivo studies, but there is a discrepancy between the reported period (6.77 \u00b1 0.36 min from C93) and the cited in vivo range (~3\u20135 min). This suggests the ex vivo oscillations may be slower than in vivo, which could affect interpretation of the results. The validation claim requires clarification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The preponderance of \u03b1-cells on the islet periphery may disrupt \u03b2-cell synchronization peripherally and stabilize it centrally through paracrine communication or by inducing stochastic behavior, potentially explaining the observed radial network pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78, C87\u2013C89 are explicitly speculative hypotheses about mechanisms underlying the observed patterns. While supported by citations to relevant literature, these mechanisms are not directly tested in this study. The hypotheses are plausible but require experimental validation through \u03b1-cell manipulation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "The top 10% highly coordinated cells identified in 3D likely overlap with but are not identical to 'hub cells' defined in prior 2D studies. In 3D, these cells are located near the center, conflicting with prior descriptions of hub cells as intermingled throughout the islet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80\u2013C81, C83 appropriately clarify the relationship between current 3D findings and prior 2D work. The central localization in 3D (C83) is supported by data in Figure 2, and the authors correctly note this conflicts with prior 2D descriptions. The clarification about population overlap is reasonable given methodological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "No significant photobleaching was observed during continuous GCaMP6s and H2B-mCherry excitation over the experimental time course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is an important methodological validation ensuring data quality. While no quantitative photobleaching data is shown, this observation is credible given the light-sheet configuration and is important for interpreting the temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C51"
+    ],
+    "result": "In 3 of 15 islets, glucokinase activation induced a Ca2+ plateau (duty cycle = 1.0), requiring exclusion from oscillation analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C51 documents an important observation about GKa effects. The exclusion of these islets is methodologically appropriate but represents 20% of the sample, which could introduce selection bias. The biological significance of this plateau response is not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Background and prior work establishing the importance of insulin oscillations, \u03b2-cell heterogeneity, functional networks, leader cells, and the roles of glucokinase and pyruvate kinase in \u03b2-cell function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13\u2013C32 represent established knowledge and prior work, appropriately cited throughout. These provide necessary context for the current study. The citations appear appropriate and the characterization of prior work is accurate based on the references provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C77",
+      "C79"
+    ],
+    "result": "Prior computational and experimental studies suggested Ca2+ wave origin corresponds to glucokinase gradients that emerge stochastically. Alternative hypotheses include \u03b1-cell heterogeneity and vasculature effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74\u2013C75, C77, C79 appropriately cite and characterize prior work and alternative hypotheses. These provide important context for interpreting the current findings about glucokinase's role in wave patterning.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C90",
+      "C94"
+    ],
+    "result": "Methodological details including animal ethics approval and network analysis parameters (correlation threshold set for average degree of 7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C94 document important methodological details. The ethics approval is appropriately documented. The network analysis threshold choice (C94) is cited to prior work (\u0160terk et al., 2024) and represents a reasonable standardization approach.",
+    "result_type": "MINOR"
+  }
+]

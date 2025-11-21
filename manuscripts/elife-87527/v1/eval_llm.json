@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The model naturally produces three phases of dendritic development: overshoot (rapid expansion and synapse formation), pruning (net synapse reduction), and stabilization (balanced growth and retraction). These phases emerge from the interaction between fast activity-independent growth and slower activity-dependent synaptic plasticity, with morphological stability achieved rapidly after initial expansion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C36-C46 collectively demonstrate that the model produces three developmental phases consistent with experimental observations (C40, C41, C43). The mechanistic explanation for phase emergence (C44, C45) is grounded in the model's temporal dynamics shown in Figures 2 and 3. The comparison with experimental Sholl diagrams (C41) and synaptic pruning patterns (C43) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "The model generates stellate-like dendritic morphologies by combining activity-independent molecular signaling (diffusive growth factors from potential synapses) with local activity-dependent plasticity rules that implement distance-dependent competition and correlation-dependent cooperation. Despite simplifications (2D implementation, simplified assumptions), the model captures basic morphological features of biological neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C28-C35, C95-C98 describe the model architecture and its outputs. The model successfully generates stellate morphologies (C3) using biologically-motivated mechanisms (C28-C35). The authors acknowledge limitations (C96, C97) while demonstrating that basic features are captured (C98), supported by comparisons with experimental data throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C86",
+      "C87",
+      "C88",
+      "C92",
+      "C94",
+      "C102"
+    ],
+    "result": "Model-generated dendrites exhibit approximately optimal wiring length, falling between theoretical minimum and random wiring predictions. The fold change between model dendrites and theoretical minimum matches that of real dendrites from experimental data. Model trees are well-fitted by minimum spanning tree (MST) models with balancing factor bf=0.925.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C86-C88, C92, C94, C102 demonstrate wiring optimization through multiple analyses in Figure 8. The comparison with experimental data (C87, C88) and MST models (C92) provides strong support. However, the high balancing factor (bf=0.925) compared to biological dendrites (0.2-0.4) is acknowledged but not fully resolved, suggesting the model achieves approximate rather than perfect optimization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C56",
+      "C57",
+      "C59",
+      "C100"
+    ],
+    "result": "Activity-dependent plasticity organizes synapses into spatial clusters according to correlated activity patterns. Dendrites transition from non-selective (overshoot phase) to selective for 2-3 activity groups (stabilization phase). Early selectivity predicts mature selectivity, and overlapping dendrites tend to select different activity groups. This selectivity emergence enables morphological stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C50-C54, C56-C57, C59, C100 describe synaptic organization outcomes shown in Figure 4. The progression from non-selective to selective states (C50, C51) is clearly demonstrated. The mechanistic link between selectivity and stabilization (C59, C100) is supported by the model dynamics. Comparison with experimental observations (C52, C58) provides validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C81",
+      "C85",
+      "C99",
+      "C101",
+      "C103"
+    ],
+    "result": "A trade-off between activity-independent and activity-dependent factors influences dendritic development throughout growth. Activity-independent factors dominate early morphology while activity-dependent factors affect morphology with delay. Early developmental variability can affect mature morphology and synaptic function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C81, C85, C99, C101, C103 describe temporal dynamics of different developmental factors shown in Figure 7. The dissection of activity-dependent vs. independent contributions (C81, C85) is supported by simulations. However, C7 is presented as a suggestion/prediction rather than demonstrated fact, and C103 uses speculative language ('might exert'), indicating these are model predictions requiring experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Within-group activity correlations shape synaptic selectivity and pruning dynamics. Intermediate correlations (~60%) maximize selectivity for single activity groups, while perfect correlations allow coexistence of multiple groups. Reduced within-group correlations increase pruning. Between-group correlations decrease competition and reduce pruning. Competition between activity groups is necessary for realistic developmental dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C67 describe systematic parameter explorations in Figure 5 and supplements. The effects of correlation structure on selectivity (C61, C62) and pruning (C63, C65) are clearly demonstrated. The consistency with recent experimental evidence (C67, citing Matsumoto et al., 2024) provides validation. The conclusion about competition necessity (C66) is well-supported by the simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The balance between BDNF and proBDNF controls dendritic arborization through effects on synaptic density and competition. BDNF overabundance leads to larger dendrites with higher synapse density and reduced selectivity, while proBDNF overabundance produces smaller dendrites with fewer synapses and increased selectivity. The model links the plasticity rule's 'offset' parameter to neurotrophin balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C79 describe neurotrophin effects shown in Figure 6. The mechanistic link between neurotrophins and the plasticity rule (C69) is established through prior work (Kirchner and Gjorgjieva, 2021). Model predictions (C74, C75) match experimental observations (C15, C16). The analytical derivation of maximal synapse density (C72) and simulation results (C73-C78) are consistent. C79 is presented as a prediction requiring validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Model-generated dendrites exhibit substantial morphological variability consistent with experiments. The number of major branches positively correlates with final dendritic length, matching patterns in mouse cortex reconstructions. Early dendritic length predicts mature length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80, C82-C84 describe variability and predictive relationships shown in Figure 7. The consistency with experimental data (C80, C83) provides validation. The positive relationship between major branches and length (C82) is demonstrated in both model and data. C84 is presented as a prediction but is supported by the model's temporal dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Growth stabilization in the model is not due to depletion of potential synaptic partners, as many remain available. Dendritic growth and synaptic refinement dynamics are independent of soma density, though final arbor size and synapse number decrease with increased soma density while timing remains constant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 describe control analyses shown in Figure 3e and Figure 3\u2014figure supplement 2. The observation that potential synapses remain abundant (C47) rules out resource depletion as the stabilization mechanism. The independence of dynamics from soma density (C48, C49) demonstrates robustness of the model's core mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The model differs from the synaptotrophic hypothesis in key aspects: it includes activity-independent growth components allowing dendrite development without synaptic activity, proposes concrete molecular mechanisms based on neurotrophic factors, and implements delayed synaptic fate determination (tens of minutes to hours after formation).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 describe how the model relates to and extends the synaptotrophic hypothesis. The distinctions are clearly articulated and supported by the model implementation (C110, C112) and experimental evidence (C113). This represents a conceptual contribution clarifying the model's relationship to existing theory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "The model proposes that dendrite form and function reciprocally shape each other during development, with dendritic trees self-organizing to support functionally related synapses. Initial synaptic contacts may serve as scaffolds for clustering of additional functionally related synapses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115-C117 present conceptual interpretations of the model's behavior. While C115 and C116 describe demonstrated model properties, C117 is explicitly speculative ('might then serve') about functional implications. The reciprocal relationship between form and function (C115) is a key conceptual contribution but the functional consequences for mature dendrite computation remain to be validated experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C121"
+    ],
+    "result": "The model predicts detrimental effects on dendrite stability from extreme or absent input selectivity, providing insights into neurodevelopmental disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C121 presents a prediction about clinical relevance. While the model shows relationships between selectivity and stability, the extension to neurodevelopmental disorders is speculative and requires experimental validation. The prediction is plausible given the model's mechanisms but represents future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Background claims establishing the biological context for dendritic development, including the roles of genetic factors, molecular signaling (BDNF/proBDNF), spontaneous activity, and the synaptotrophic hypothesis. These claims synthesize established knowledge from the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C27, C104-C107, C118-C120 provide background context supported by extensive citations to experimental literature. These are well-established facts in neuroscience that motivate the model's design. The claims accurately represent the cited literature and provide appropriate context for the computational work.",
+    "result_type": "MINOR"
+  }
+]

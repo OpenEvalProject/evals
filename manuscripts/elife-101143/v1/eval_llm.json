@@ -1,0 +1,321 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Tissue clearing techniques enable 3D imaging of whole tissues and organs by reducing light scattering and absorption, achieving single-cell resolution in deep samples. These approaches are widely used across multiple biological fields, and various optical sectioning techniques have been developed for deep imaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 provide well-cited background on tissue clearing techniques and their applications. These are established facts in the field, supported by appropriate citations (Ueda et al., 2020; Susaki et al., 2014), and represent accepted knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Deep tissue imaging requires objectives with low to medium magnification and long working distances, but low NA objectives face challenges maintaining high axial resolution due to spherical aberration caused by light scattering and refractive index mismatches. Matching the RI of the objective's immersion medium to the sample medium is essential to mitigate these aberrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C12 describe well-established optical principles and challenges in deep tissue imaging, supported by appropriate citations (Jonkman et al., 2020; Birk et al., 2017; Diel et al., 2020; Gibson and Lanni, 1992). These represent background knowledge establishing the problem that RIM-Deep addresses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Existing solutions to address RI mismatches and spherical aberration include correction collars, dipping caps, sample movement systems, adaptive optics, and phase masks. However, inverted confocal microscopes face specific limitations due to gravitational dispersion of RI buffer and the inability to insert objectives into sample chambers, restricting imaging depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C22 provide well-cited background on existing approaches and their limitations (Dodt et al., 2015; Engelbrecht and Stelzer, 2006; Ji, 2017; Patwary et al., 2016). These establish the gap in current technology that motivates the development of RIM-Deep.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The RIM-Deep system was developed to address challenges in inverted confocal microscopy by incorporating an immersion chamber around the objective lens and a specimen holder integrated with a motorized stage. This design stabilizes the refractive index between objective and sample media, enabling high-resolution deep imaging while addressing the RI buffer leakage problem of standard adapters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 describe the design and rationale of RIM-Deep, supported by figures showing the system components and comparing it to standard adapters (Figure 1A-B, Figure 1\u2014figure supplements 1-2). The design principles are clearly articulated and visually documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C52"
+    ],
+    "result": "RIM-Deep maintains optimal axial resolution across 5 mm imaging depth when imaging fluorescent beads, compared to the 2 mm limit of standard adapters. Both systems show similar lateral resolution, with no significant difference between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34, C52 are supported by quantitative measurements of fluorescent beads at different depths (Figure 1C-E). The data show maintained axial resolution across 5 mm for RIM-Deep versus degradation beyond 2 mm for standard adapters. However, the manuscript lacks statistical analysis details (sample size n=10 mentioned but no p-values for 'no significant difference' claim in C34).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C53"
+    ],
+    "result": "In Macaca fascicularis brain tissue cleared with three different methods (iDISCO, CUBIC, MACS), standard adapters limited imaging depth to less than 2 mm due to gravity affecting the RI matching fluid. RIM-Deep extended imaging depth to approximately 5 mm with clear visualization of vascular structures, demonstrating consistent performance across different clearing methods and imaging platforms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C53 are well-supported by extensive imaging data across three clearing methods on two microscope platforms (Figure 1G-L, Figure 1\u2014figure supplement 3, multiple videos). The visual evidence clearly shows improved depth and clarity with RIM-Deep. The consistency across methods and platforms strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C54"
+    ],
+    "result": "In Thy1-EGFP mouse brains cleared with CUBIC, RIM-Deep extended imaging depth to approximately 5 mm, enabling clear visualization and reconstruction of neuronal soma and axon structures in the hippocampus and thalamus while maintaining micron-level resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41, C54 are supported by detailed imaging data showing neuronal structures at depth (Figure 2, Figure 2\u2014video 1). The images demonstrate clear visualization of fine neuronal structures including soma and axons. However, quantitative resolution measurements at these depths in neural tissue (as opposed to beads) would strengthen the 'micron-level resolution' claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Using 3\u00d73 stitching with multi-layer Z-axis scanning, RIM-Deep enabled visualization of neuronal structures up to nearly 5 mm in cleared brain segments and achieved comprehensive imaging of a cleared half-brain with stable and precise positioning ensuring accurate alignment across optical slices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 are supported by large-scale imaging data (Figure 3A-I, Figure 3\u2014video 1). The stitched images demonstrate the system's capability for large tissue imaging. However, quantitative metrics for 'stable and precise positioning' and 'accurate alignment' would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C55"
+    ],
+    "result": "RIM-Deep effectively visualized vascular damage in a mouse stroke model, revealing significantly reduced vessel density in the ischemic cortex compared to contralateral regions using VALID labeling and MACS clearing. This demonstrates RIM-Deep's value as a tool for studying disease-related vascular changes in neuroscience research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50, C55 are supported by imaging data from the stroke model (Figure 3J-L, videos 2-4). The visual evidence shows clear differences between ischemic and control regions. However, the claim of 'significantly reduced vessel density' (C48) lacks quantitative analysis or statistical testing, making it a qualitative rather than rigorously quantified observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56",
+      "C62",
+      "C80"
+    ],
+    "result": "RIM-Deep represents a significant advancement in deep tissue imaging for inverted confocal microscopy, demonstrating versatility across different imaging platforms (Nikon and Leica) and extending imaging depth without compromising normal microscope functionality while addressing key challenges related to axial resolution and spherical aberration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C62, C80 summarize the overall contribution of RIM-Deep. The versatility claim is supported by successful demonstrations on both Nikon and Leica platforms (Figure 1\u2014figure supplement 3). The system's ability to extend depth while maintaining normal function is demonstrated across multiple experiments. These represent valid summary conclusions from the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Tissue clearing has revolutionized neuroscience research, but two-photon and light sheet microscopes are prohibitively expensive with high operation costs, limiting accessibility. Inverted point-scanning confocal microscopes offer advantages for deep imaging of cleared tissues including reduced sample contact and buffer use compared to upright microscopes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide context for the practical significance of RIM-Deep. These are reasonable statements about the field, though the cost claims (C58) are somewhat subjective and lack specific citations. The advantages of inverted microscopes (C60-C61) are stated as general knowledge without citation but are reasonable assertions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "RIM-Deep can potentially be employed in wide-field microscopy to enhance imaging performance, though deconvolution algorithms would be necessary to eliminate out-of-focus signals, and the system may reduce fluorescence intensity in deeper regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63-C66 discuss potential application to wide-field microscopy. C64 is speculative ('can be employed'), C65 is cited (Shaw, 2006), but C66 acknowledges a potential limitation without supporting data. No experimental validation of wide-field application is provided, making this result speculative rather than demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "RIM-Deep has limitations including slower imaging speed compared to light sheet microscopy, challenges achieving uniform resolution across depths in dense samples, and focus primarily on neural tissues with effectiveness in other tissue types remaining unexplored. Advanced computational methods including resonance scanning, AI-based analysis, and iterative reconstruction could address some limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C71 honestly acknowledge limitations of the current work. C67 states a known limitation of confocal versus light sheet microscopy. C68 is cited (Elliott, 2020). C69-C70 acknowledge technical challenges. C71 appropriately notes the limited scope to neural tissues. These represent appropriate self-critical assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The objective lens used is limited to RI correction between 1.33-1.51, and while clearing techniques like iDISCO (RI=1.56) and CUBIC/MACS (RI=1.51-1.52) enable depth imaging to nearly 5 mm, exceeding the lens correction range could compromise resolution. Recently developed objectives like the Schmidt immersion objective offer broader RI correction capabilities (NA=1.08 at RI=1.56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 discuss technical limitations and potential solutions. C72-C73 accurately describe the specifications and capabilities demonstrated. C74 is a reasonable inference about potential limitations. C75-C76 are cited (Voigt et al., 2024) and discuss future possibilities. This represents honest assessment of current limitations and awareness of emerging solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C81"
+    ],
+    "result": "Future work should explore machine learning-based techniques to optimize image quality and resolution, and advanced denoising algorithms to address signal-to-noise ratio challenges in deep imaging. Further refinements and integration with advanced computational techniques are necessary to optimize RIM-Deep's performance and expand its applicability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79, C81 discuss future directions with appropriate citations (Melanthota et al., 2022; Mandracchia et al., 2023; Li et al., 2023). These represent reasonable suggestions for future work based on acknowledged limitations. C78 correctly identifies SNR as a challenge in deep imaging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "RIM-Deep facilitates deep immunofluorescence imaging extending depth from 2 mm to 5 mm in cleared macaque tissue and enables clear axonal visualization in intact cleared mouse brains. The concept can potentially be extended to other imaging modalities including wide-field, confocal, and two-photon microscopy, which would significantly upgrade traditional laboratory configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82-C84 summarize demonstrated capabilities and are supported by the experimental data. However, C85-C86 are speculative ('in principle,' 'would significantly upgrade') without experimental validation. Extension to two-photon microscopy and wide-field systems is proposed but not demonstrated, making these forward-looking claims rather than established results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Traditional inverted confocal microscopes excel at imaging tissue sections and cultured cells but face limitations in deep imaging of cleared tissues due to refractive index mismatches. RIM-Deep was developed to improve deep imaging capabilities without compromising normal confocal microscope function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 provide abstract-level summary of the problem and solution. C87-C88 accurately describe known limitations of traditional systems. C89 correctly states the development goal, which is supported by the experimental results showing maintained functionality with extended depth capability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The RIM-Deep adapter consists of a glass solution reservoir and specimen holder with support bracket. The nested arrangement forms a semi-closed space filled with imaging buffer, with the specimen holder centrally positioned on the support bracket and featuring a 0.17 mm thick cover glass bottom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 describe the technical specifications and design of the RIM-Deep system, supported by detailed figures (Figure 1\u2014figure supplement 2). These provide clear documentation of the system components and assembly, enabling reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The methods employed include CUBIC clearing for Thy1-EGFP mouse brains, photothrombotic stroke model creation using Rose Bengal and laser irradiation, VALID vascular labeling, MACS and iDISCO clearing protocols, imaging on Nikon AXR and Leica STELLARIS 5 microscopes with 10\u00d7/0.5 NA objectives, and image processing using NIS-Elements and Imaris software. All procedures were ethically approved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C111 describe the methods with appropriate citations (Susaki et al., 2015; Zhu et al., 2023; Zhu et al., 2020; Renier et al., 2014). The methods are sufficiently detailed for the main procedures, though some details (e.g., specific imaging parameters, Z intensity correction algorithm specifics) could be more complete. Ethical approval is documented (C110-C111).",
+    "result_type": "MINOR"
+  }
+]

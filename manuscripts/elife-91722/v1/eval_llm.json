@@ -1,0 +1,347 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C103",
+      "C104"
+    ],
+    "result": "Hit trials at perceptual threshold are associated with elevated arousal as measured by larger pupil diameter. The mean pupil diameter in both hit and miss trials falls within the optimal intermediate arousal range, with hits showing slightly higher arousal within this optimal state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide direct data showing larger pupil diameters in hits versus misses (Figure 2A-B). Claims C61-C62 contextualize this finding within the optimal arousal framework from prior literature (C60). The statistical analysis and bootstrapping support the conclusion (C63, C104). The measurement methods are clearly described (C56-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C72",
+      "C105",
+      "C101"
+    ],
+    "result": "Hit trials at perceptual threshold are associated with greater eye position stability, specifically the absence of microsaccades in the 400 ms window preceding target onset. Pre-target microsaccades are the strongest predictor of behavioral performance in the GLM analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 provides direct evidence from Figure 2D showing most trials with pre-target microsaccades were misses. The GLM analysis (C101) confirms microsaccades as the strongest predictor (weight=-1.3116, p<0.001). The biological rationale is supported by prior literature on microsaccades and visual sensitivity (C64-C66). Methods are clearly described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C73",
+      "C74"
+    ],
+    "result": "Linear discriminant analysis shows better discrimination of target from non-target stimuli in hit trials compared to miss trials, with this improved discriminability consistent across all three cortical layers (superficial, input, deep).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are directly supported by the decoding analysis shown in Figure 3A. The methods describe appropriate cross-validation (20-fold) and chance-level controls. The consistency across layers strengthens the finding. However, the analysis pools across stimulus contrasts which were slightly different between hits and misses, though the authors address this with normalization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C76",
+      "C77",
+      "C78",
+      "C80",
+      "C81",
+      "C102"
+    ],
+    "result": "Target stimuli evoke stronger firing rates in V4 during hit trials compared to miss trials across all cortical layers in the stimulus-evoked period (60-260 ms post-onset). This elevated firing emerges at expected V4 response latencies (70-100 ms) and cannot be attributed to saccade planning. Input layer firing rate is the most reliable physiological signature of perceived stimuli in single-trial GLM analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 are supported by firing rate analysis in Figures 3C-E. The timing analysis (C80) and comparison to saccade planning latencies (C81) rule out motor confounds. The GLM result (C102) provides single-trial validation. Firing rates were normalized by contrast to control for stimulus differences. Non-target stimuli showed no differences (C75), supporting specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Broad-spiking excitatory neurons in the superficial layer exhibit lower Fano factor (reduced trial-to-trial variability) during the pre-stimulus period in hit trials, indicating more reliable firing. This effect is specific to broad-spiking superficial layer neurons and not observed in other layers or narrow-spiking neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C83 is directly supported by Fano factor analysis in Figure 4B showing lower variability in superficial broad-spiking neurons during hits. The specificity to this population (C85-C86) is demonstrated by lack of effect in other layers and cell types. The 0-60 ms pre-stimulus window is appropriate. However, the sample sizes are relatively small (n=27 superficial broad-spiking units) and individual animal data would strengthen confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C90",
+      "C91"
+    ],
+    "result": "Feed-forward interlaminar population correlations measured by canonical correlation analysis are stronger in hit trials than miss trials in both pre-stimulus and stimulus-evoked periods, suggesting more effective feed-forward information flow through the cortical column during successful perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by CCA analysis shown in Figures 6B-C. The method is appropriate for measuring interlaminar communication and has been validated in prior work (Semedo et al., 2022). The finding is consistent across both time windows. However, the analysis requires at least 2 neurons per layer, which may limit inclusion of some sessions, and the interpretation of 'information flow' from correlation is inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "During the pre-stimulus period, hit trials show greater spike-spike coherence between superficial and deep layers (output layers) across all frequencies, implying greater synchrony of cortical output layers during spontaneous activity preceding successful perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 are supported by SSC analysis in Figure 7B showing strongest differences between superficial-deep layers in the pre-stimulus period. Firing rates were matched across conditions to control for rate effects. The three-way ANOVA shows significant interaction (C97, p=0.0075). However, the interpretation of 'output layer synchrony' (C94) is inferential and the functional significance requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C95",
+      "C96"
+    ],
+    "result": "During the stimulus-evoked period, hit trials show greater spike-spike coherence in layer pairs involving the input layer, potentially reflecting higher stimulus-driven feed-forward information propagation during successful perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by SSC analysis in Figure 7D showing greater differences in input-superficial and input-deep pairs during stimulus-evoked period. The shift from superficial-deep dominance (pre-stimulus) to input-layer dominance (evoked) is supported by significant interaction effect (C97). However, the interpretation of 'feed-forward propagation' (C96) is speculative and the causal relationship is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "Deep-layer neurons exhibit reduced low-frequency (3-12 Hz) phase-locking to local field potentials in hit trials compared to miss trials, similar to attention-related desynchronization reported in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C88 is supported by PPC analysis in Figure 5B showing reduced low-frequency phase-locking in deep layers during hits. The comparison to attention effects (C89) is appropriate given the task design. However, the sample size meeting the 50-spike threshold is limited (n=64 deep layer units), and the effect is specific to deep layers with no changes in superficial or input layers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C11",
+      "C38",
+      "C72",
+      "C104",
+      "C105",
+      "C106",
+      "C140",
+      "C149"
+    ],
+    "result": "The authors conclude that a state of elevated arousal and stable retinal images enables enhanced processing of sensory stimuli, contributing to successful perception at threshold through both pre-stimulus baseline state differences and enhanced stimulus-evoked processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This integrative conclusion (C11, C149) is supported by converging evidence from pupil diameter (arousal), microsaccades (retinal stability), firing rates, variability, and synchrony measures. The GLM analysis validates the relative importance of these factors. However, the study cannot fully disentangle whether behavioral state differences cause neural differences or vice versa, as acknowledged by the authors. The causal mechanisms remain inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The behavioral task successfully generated trials at perceptual threshold where identical stimuli produced variable behavioral outcomes (hits and misses). Performance was slightly higher in the middle of sessions compared to beginning and end, but target presentation times did not differ between hits and misses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The task design (C39-C45) is clearly described and appropriate for studying threshold perception. The threshold definition using psychometric functions (C47) is standard. The lack of difference in target timing (C48) rules out a temporal confound. The session-time effect (C49-C50) is small but appropriately reported. The median of 905 trials per session (C51) provides adequate statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C55",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "Laminar recordings in V4 using 16-channel linear array electrodes yielded 413 single units (146 narrow-spiking, 267 broad-spiking) and 296 multi-unit clusters across 32 sessions from two monkeys, with roughly equal contributions from both animals despite different per-session yields.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The recording methods (C52-C53, C55) are well-described and follow established techniques. The dataset size (C150-C151) is substantial for laminar recordings. The balanced contribution across monkeys (C152) despite different yields is appropriate. CSD analysis for layer assignment is standard. However, the classification of broad/narrow-spiking as excitatory/inhibitory (C55) is putative and not directly validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C116",
+      "C117"
+    ],
+    "result": "Microsaccades directed toward the attended stimulus were overrepresented in correct trials and underrepresented in incorrect trials. There was a very weak negative correlation (r\u00b2=0.006) between pupil diameter and microsaccade rate, suggesting these measures reflect largely independent phenomena.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are supported by directional analysis in Figure 2\u2014figure supplement 1A with appropriate bootstrapped null distributions. The weak correlation (C71) supports independence of arousal and microsaccade measures. The interpretation regarding attention (C116-C117) is consistent with prior literature. However, the functional significance of microsaccade direction in this task requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C114",
+      "C115"
+    ],
+    "result": "The authors implemented appropriate controls to rule out confounds from stimulus differences, saccade planning, and motor preparation. Stimuli were identical between hits and misses, neural measurements preceded saccade planning, and contrast normalization was applied where needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental controls are well-designed. Identical stimuli (C79) are critical for the threshold paradigm. Exclusion criteria (C109-C110) and timing analysis (C111) rule out motor confounds. Contrast normalization (C114-C115) addresses the slight contrast differences between conditions. The temporal separation between neural measurements and saccades (C108) is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C128",
+      "C130"
+    ],
+    "result": "The electrophysiological findings in hit trials mirror several established effects of spatial attention, including increased firing rates, reduced variability, and desynchronization, suggesting that fluctuations in attentional state may contribute to perceptual variability at threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to attention literature (C118-C122, C128, C130) is well-supported by appropriate citations. The parallel between hit/miss differences and attention effects is compelling. However, the task already involves sustained spatial attention (95% valid cue), so the additional 'attentional fluctuations' interpretation requires careful consideration. The authors appropriately note this is within a cued attention state.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors hypothesized that minor fluctuations in behavioral state and neural activity across cortical layers result in different perceptual outcomes at threshold, with output layer sub-populations showing improved stimulus representation and information propagation during successful perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These hypotheses (C35-C37) are clearly stated and testable. The experimental design and analyses directly address these predictions. The results largely support the hypotheses, particularly regarding output layer function and interlaminar communication. However, these are a priori hypotheses that frame the study rather than results per se.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "In the GLM analysis predicting behavioral outcomes, superficial layer firing rate, deep layer firing rate, and pupil diameter were not significant predictors when accounting for microsaccades and input layer firing rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C100 is directly supported by the GLM results (Supplementary file 1b, all p>0.5). This negative result is important for understanding the relative contributions of different measures. However, the GLM is limited to single-trial measures and cannot include the population-level metrics (Fano factor, PPC, SSC, CCA) that showed significant effects, as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The introduction establishes the scientific context by reviewing established knowledge about perceptual thresholds, psychometric functions, arousal, attention, V4 function, and cortical laminar architecture, while identifying gaps in understanding laminar mechanisms underlying threshold perception.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1, C12-C34) accurately represent established knowledge from the cited literature. The citations are appropriate and the knowledge claims are well-supported. The identification of gaps (C33-C34) appropriately motivates the study. These are background claims rather than novel results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors position their findings within the broader literature on perception at threshold, noting that prior studies have examined large-scale information propagation while the current study provides insight into columnar-level microcircuit mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to prior work (C141-C143) is accurate and appropriately cited. The positioning of the current contribution (C144) is reasonable. However, this is primarily a discussion point contextualizing the findings rather than a novel result. The connection between columnar mechanisms and large-scale dynamics remains to be directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "The authors propose a conceptual model where elevated arousal and eye stability during hits manifest as increased superficial-deep synchrony during spontaneous activity (potentially due to top-down influences), decreased firing variability in superficial excitatory neurons (potentially due to reduced membrane potential variability), and elevated feed-forward propagation during stimulus-evoked periods, all contributing to higher-fidelity stimulus processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This conceptual model (C145-C148, Figure 8) integrates the findings into a coherent framework. However, several key elements are speculative: the role of top-down influences (C145), the membrane potential mechanism for reduced variability (C146), and the causal relationships between synchrony, firing rates, and processing fidelity (C147-C148). These predictions require direct experimental validation through techniques like intracellular recording or optogenetic manipulation.",
+    "result_type": "MINOR"
+  }
+]

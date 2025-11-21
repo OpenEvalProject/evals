@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Transient overexpression of Hm-oscar, but not wmk homologs, induces male lethality and female-biased sex ratios in H. magnanima. Hm-oscar overexpression resulted in a strongly female-biased adult sex ratio (14.4% males), while wmk-1, wmk-2, wmk-3, wmk-4, and dual wmk combinations did not significantly alter sex ratios compared to GFP controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C45-C53 provide converging experimental evidence with appropriate statistical testing (Steel-Dwass test, p<0.05) and adequate replication (5-15 replicates per condition). The data clearly demonstrate differential effects of Hm-oscar versus wmk genes in the native host, with proper controls (GFP-injected and non-injected groups showing ~50% male ratios). Figure 1b visually supports these quantitative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Hm-oscar-induced male mortality occurs primarily during embryogenesis, recapitulating the Wolbachia wHm-t phenotype. Hm-oscar-injected embryos showed female-biased hatched larvae (87.5% female) but male-biased unhatched embryos (67.9% male), mirroring the pattern observed in wHm-t-infected lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C59 demonstrate temporal specificity of male killing with appropriate statistical support (binomial tests, p<0.05). The parallel between Hm-oscar effects and natural Wolbachia infection (C55) strengthens the conclusion. Sex determination via W chromatin presence/absence provides reliable phenotyping. The inference about embryonic timing (C58) is well-supported by the contrasting sex ratios in hatched versus unhatched groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Hm-oscar disrupts sex determination by inducing female-type dsx splicing in male embryos. Both wHm-t-infected and Hm-oscar-expressed male embryos (ZZ genotype) exhibited female-type dsx splicing, while control males showed normal male-type splicing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C60-C62 are supported by RT-PCR data shown in Figure 2b, with proper controls (GFP-injected and NSR groups). Sex was independently verified by W chromatin analysis. The observation of weak residual male-type splicing in Hm-oscar males (C62) adds nuance and is consistent with prior low-titer infection data, suggesting dose-dependent effects. The molecular mechanism directly links to the phenotypic outcome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Hm-oscar impairs dosage compensation in male embryos, causing elevated Z-linked gene expression. RNA-seq and qPCR analyses revealed that Z-linked genes were approximately twice as highly expressed in Hm-oscar-injected males compared to females, a pattern not observed in controls but present in wHm-t-infected males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C64-C67 are supported by both genome-wide RNA-seq data (Figure 3a-d) and targeted qPCR validation of the Z-linked Hmtpi gene (Figure 3e). The use of B. mori chromosome homology for Z-linkage assignment is appropriate given the known synteny. Statistical support is provided (Steel-Dwass test), and the consistency between Hm-oscar effects and natural wHm-t infection strengthens the conclusion. The ~2-fold increase matches expectations for failed dosage compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Hm-oscar suppresses the masculinizing function of Hmmasc in cell-based assays. Co-expression of Hm-oscar with Hmmasc in BmN-4 cells reduced BmIMPM expression (a marker of masculinization) compared to Hmmasc alone, with Hm-oscar showing greater suppressive activity than wFur-encoded Oscar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C71-C73 are supported by transfection experiments in BmN-4 cells (Figure 4a), an established model system for lepidopteran sex determination. The use of BmIMPM as a quantitative masculinization marker is well-justified (C70). However, C71 notes the increase in BmIMPM with Hmmasc alone was not statistically significant, which slightly weakens but does not invalidate the suppression result. The comparison between Hm-oscar and wFur Oscar (C73) provides insight into host-specific adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Hm-oscar exhibits broad-spectrum activity across Lepidoptera, suppressing masc function from diverse lepidopteran species. Hm-oscar suppressed masc genes from O. furnacalis, S. frugiperda, B. mori, T. varians, and P. machaon, which show high sequence divergence (23.82-100% homology).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by systematic testing across phylogenetically diverse lepidopteran species (Figure 4b-c). The phylogenetic analysis and sequence homology matrix demonstrate that the tested masc genes span substantial evolutionary distance, making the conserved suppression by Hm-oscar particularly significant. This supports the inference of broad-spectrum activity (C75), though the conclusion is based on in vitro assays rather than in vivo validation in all species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C76"
+    ],
+    "result": "Hm-oscar recapitulates the Wolbachia wHm-t-induced male-killing phenotype through a proposed mechanism of Masc inhibition leading to disrupted dosage compensation and male death. The combined effects on sex ratio, dsx splicing, dosage compensation, and masc function mirror natural Wolbachia infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C76 represent integrative conclusions supported by the convergence of multiple experimental results (C6, C9, C10, C12, C56-C58). The phenotypic similarity between Hm-oscar overexpression and wHm-t infection is demonstrated across multiple levels (sex ratios, developmental timing, molecular markers). The proposed mechanism (C76) is explicitly stated as a hypothesis but is well-supported by the data and prior literature. The causal chain from Masc inhibition to male death is logically consistent with the observed phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C84"
+    ],
+    "result": "In Drosophila, wmk homologs induce male lethality while Hm-oscar does not, contrasting with results in H. magnanima. Prior transgenic studies showed wmk-1 and wmk-3 caused ~100% lethality in Drosophila, and wmk-3/wmk-4 co-expression induced 90% male-specific lethality, whereas Hm-oscar had no lethal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42-C44, and C84 accurately report prior findings from cited work (Arai et al., 2023a, 2023b). These are established results from the authors' previous research using transgenic Drosophila. The contrast with the current H. magnanima results (C6-C7) is clearly documented and forms the basis for the taxon-specific mechanism hypothesis. However, these are not new findings from the current study but rather contextual information from prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Oscar homologs have conserved roles in lepidopteran male-killing, while Wolbachia have evolved multiple taxon-specific MK mechanisms. The differential effects of oscar and wmk between Lepidoptera and Diptera likely reflect differences in sex determination systems, with oscar targeting the lepidopteran-specific masc gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 and C85-C89 represent well-supported conclusions integrating current findings with prior knowledge. The taxon-specific effects are clearly demonstrated (C6-C8, C84), and the mechanistic explanation based on sex determination system differences (C85-C87) is logically sound given that masc is present in Lepidoptera but absent in Diptera (C86). The conclusion about multiple MK mechanisms (C15, C89) is supported by the differential gene effects across taxa and the absence of oscar in dipteran MK strains (C88). These represent appropriate interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C94",
+      "C95"
+    ],
+    "result": "Hm-oscar shows host-specific adaptation, suppressing H. magnanima masc more efficiently than wFur-encoded Oscar. This differential efficiency suggests evolutionary tuning of the Wolbachia factor to its natural host.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C94-C95 are supported by the comparative transfection data (C73, Figure 4a) showing Hm-oscar has greater suppressive activity than wFur Oscar on Hmmasc. The inference of evolutionary adaptation (C95) is reasonable given the host-specificity pattern, though it remains a hypothesis. The conclusion is appropriately qualified with 'suggesting' rather than definitive language. This represents a meaningful biological insight about host-symbiont coevolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C83",
+      "C82"
+    ],
+    "result": "Oscar homologs may have conserved functions in both Wolbachia-induced male-killing and feminization in Lepidoptera. Type II oscar genes are present in both MK-inducing wHm-t and feminizing wFem strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C83 is explicitly speculative ('may have'), and while C82 reports the presence of type II oscar in feminizing Wolbachia, no functional data are presented in this study to demonstrate oscar's role in feminization. The hypothesis is plausible given that both phenotypes involve disruption of male development, but it requires experimental validation. The claim appropriately uses cautious language but represents future work rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Wmk likely targets factors other than masc, and Wolbachia have acquired multiple MK genes through evolution. Prior work showed wmk homologs did not affect masc function in vitro, suggesting alternative targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 appropriately integrate prior findings (C90 from Katsuma et al., 2022) with current results. The inference that wmk targets non-masc factors (C91) is logical given the lack of effect on masc in vitro combined with male-lethal effects in Drosophila. The conclusion about multiple MK genes (C92) is well-supported by the differential effects of oscar and wmk across species. The authors appropriately acknowledge uncertainty about potential synergistic effects while drawing reasonable conclusions from available data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "The presence of oscar and wmk homologs does not guarantee MK expression, with effects varying by host genetic background. Historical data suggest suppressor evolution in some host species, and wmk effects differ among insects possibly due to sex determination system diversity or suppressor evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C99 and C101 appropriately cite prior work showing temporal and host-specific variation in MK phenotypes (Sasaki et al., 2002; Takahashi and Kuwahara, 1970). The inference of suppressor evolution (C99) is reasonable given the historical data. Claim C101 provides a plausible explanation for variable wmk effects consistent with the study's findings. These claims appropriately acknowledge complexity in host-symbiont interactions and are well-supported by cited literature and current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Speculative hypotheses about wmk function, evolutionary dynamics, and broader implications. These include potential roles of wmk as transcriptional regulators, arms race dynamics driving MK gene diversification, and possible existence of additional uncharacterized MK genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102, C104, C106-C109 are explicitly speculative ('may', 'could have', 'warranted'). While these hypotheses are plausible and grounded in the study's findings, they represent future research directions rather than demonstrated results. C102 about wmk function is particularly speculative given the lack of functional data in the current study. These are appropriate for a Discussion section but do not constitute supported results. They are clearly presented as hypotheses requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Background information on Wolbachia biology, male-killing mechanisms, lepidopteran sex determination, and prior discoveries of MK-associated genes. This includes established knowledge about Wolbachia prevalence, reproductive manipulation strategies, sex determination cascades, and the authors' prior identification of the MK-associated prophage region in H. magnanima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C41 represent established knowledge from prior literature (C1-C4, C16-C38) and the authors' previous work (C5, C39-C41). These are appropriately cited and provide essential context for the current study. Claims about the prophage structure (C40-C41) are supported by prior publications and Figure 1a. These background claims are accurate representations of the field's knowledge and the authors' prior contributions, though they are not new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C63",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Methodological background on Tortricidae chromosome structure and BmN-4 cell system characteristics. The Tortricidae Z chromosome corresponds to B. mori chromosomes 1 and 15, and BmN-4 cells exhibit female-type default sex determination that can be masculinized by masc overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63, C68-C70 provide essential methodological context supported by appropriate citations. These are established facts about the experimental systems used (Tortricidae karyotype, BmN-4 cell properties) that justify the analytical approaches (using B. mori homology for Z-linkage, using BmIMPM as masculinization marker). While not new findings, they are accurately stated and properly referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C93",
+      "C100",
+      "C103",
+      "C105"
+    ],
+    "result": "Contextual information about dosage compensation lethality, oscar protein diversity, wmk genomic prevalence, virulence gene evolution, and host genetic background effects. These include established principles from prior research that inform interpretation of the current findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C80, C93, C100, C103, and C105 accurately represent established knowledge from cited literature. These provide important context for understanding the study's findings but are not new results. They are appropriately cited and correctly stated, serving to connect the current work to broader principles in the field. C80 notes a prior hypothesis about ankyrin repeats that the current study challenges (C81).",
+    "result_type": "MINOR"
+  }
+]

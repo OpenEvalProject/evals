@@ -1,0 +1,217 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C94"
+    ],
+    "result": "The authors report that cellular stress (arsenite, H2O2, heat shock) induces global RNA shortening, with RNAs from stressed cells being significantly shorter than unstressed cells by an average of 115.3 nucleotides. This shortening is independent of differential expression, coding potential, and is observed across multiple stress types and cell lines including mouse cells, suggesting an evolutionarily conserved process.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this finding. Reviewer 1 states the study 'describes mRNA shortening during cellular stress' using 'convincing data.' Reviewer 2 notes the authors 'conclude that cellular stress induces prevalent 5' end RNA decay' and calls the findings 'paradigm-shifting.' Reviewer 3 observes 'a population of transcripts that are shortened during stress' and Reviewer 4 confirms the work 'reveals that cellular stress induces prevalent 5' end RNA decay.' No concerns are raised about this core observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The authors developed NanopLen, a statistical tool using linear mixed models to identify transcripts with significant RNA length changes. The model was validated on simulated data and identified 2,730 significantly shortened transcripts in arsenite-treated cells, with gene ontology analysis showing enrichment for RNA catabolism, translation initiation, and protein localization processes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the methodological innovation without critique. Reviewer 1 describes 'cutting-edge technologies' and Reviewer 2 states the authors 'fully established these paradigm-shifting findings using cutting-edge technologies.' Reviewer 4 calls it 'an exciting and novel discovery utilizing innovative sequencing methods.' The statistical framework and its application are accepted as valid.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors demonstrate that stress-induced RNA shortening occurs specifically at the 5' end while the 3' end remains stable. This was validated by multiple approaches: direct sequencing showing heterogeneous 5' ends but identical 3' ends, RT-qPCR showing reduced amplification near 5' ends, reanalysis of short-read RNA-seq showing reduced 5' coverage, and TSS analysis showing no contribution from alternative transcription start sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this directionality finding without question. Reviewer 2 explicitly states the authors 'conclude that cellular stress induces prevalent 5' end RNA decay' and Reviewer 4 confirms 'cellular stress induces prevalent 5' end RNA decay.' The multiple validation approaches are implicitly accepted through the reviewers' overall positive assessment of the data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C62",
+      "C96"
+    ],
+    "result": "The authors show that stress-induced RNA decay is dependent on the 5'-3' exonuclease XRN1, as XRN1 knockdown largely abolished transcript length differences between stressed and unstressed cells. This rescue effect was specific to stress-shortened transcripts identified by NanopLen analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm XRN1 dependence. Reviewer 2 states 'stress-induced RNA decay is dependent on XRN1,' Reviewer 3 notes 'this shortening is mediated by the 5'-3' exonuclease XRN1, as XRN1 knockdown results in longer transcripts,' and Reviewer 4 confirms 'This decay, however, is dependent on XRN1.' No concerns are raised about this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors demonstrate that stress-induced RNA decay does not require deadenylation or decapping, contrary to canonical decay models. Expression of dominant-negative NOT8* (blocking deadenylation) or DCP2* (blocking decapping) did not prevent stress-induced 5' shortening, and shortened RNAs retained poly(A) tails. The authors conclude decay likely involves endonucleolytic cleavage.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers highlight this as a key paradigm-shifting finding. Reviewer 1 states 'this mRNA shortening does not appear to require the shortening of poly A tails' and calls it 'Surprising.' Reviewer 2 emphasizes 'Contrary to the literature...stress-induced RNA decay...does not depend on the removal of the poly(A) tail.' Reviewer 3 notes 'Interestingly, the authors do not observe a polyA-tail shortening.' Reviewer 4 confirms decay is 'independent of the shortening of the poly(A) tail.' This independence from canonical pathways is universally accepted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors show that stress-induced RNA decay is coupled to translation status. Treatment with ISRIB (restoring translation initiation) or cycloheximide (blocking elongation) rescued RNA length, particularly for significantly shortened transcripts. This indicates that translation initiation inhibition and mRNA exit from the translational pool are critical for stress-induced decay.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the coupling to translation. Reviewer 2 states findings show decay is 'coupled to translation and ribosome occupancy,' and Reviewer 4 similarly confirms decay is 'coupled to translation and ribosome occupancy.' The ISRIB and cycloheximide experiments supporting this conclusion are not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C80",
+      "C81",
+      "C82",
+      "C85",
+      "C105"
+    ],
+    "result": "The authors demonstrate that RNAs undergoing stress-induced decay are predominantly enriched in the stress granule transcriptome. SG-enriched genes showed significantly higher shortening upon oxidative stress compared to SG-depleted or non-localized RNAs, and shared features like lower GC content with shortened transcripts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the stress granule enrichment. Reviewer 1 states 'this shortening is dependent on localization in stress granules,' Reviewer 2 notes decay is 'enriched in the stress granule transcriptome,' and Reviewer 4 confirms decay is 'enriched in the stress granule transcriptome.' The association is accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C92",
+      "C106"
+    ],
+    "result": "The authors show that stress granule formation is required for stress-induced RNA decay. Genetic ablation of G3BP1/2, which prevents SG formation, substantially reduced RNA shortening and rescued RNA length to unstressed levels. This demonstrates that G3BP1/2-mediated SG formation is indispensable for the decay process.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm this requirement. Reviewer 1 notes 'this shortening is dependent on localization in stress granules,' Reviewer 3 states 'the authors use G3BP1 knockout cells to demonstrate that stress granule formation is required for the observed transcript shortening,' and Reviewer 4 confirms 'inhibiting stress granule formation in G3BP1/2-null cells restores the RNA length...and suppresses stress-induced decay.' The G3BP1/2 knockout data convincingly establish SG dependence in all reviewers' assessments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors investigated potential mechanisms and found that stress-induced decay is not mediated by 8-OxoG ribosome stalling (no G-nucleotide enrichment at 5' ends). Shortened transcripts were associated with shorter coding sequences and lower GC content, but pre-stress ribosome density was not predictive of shortening.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these mechanistic findings. The negative results (no 8-OxoG mechanism, no pre-stress ribosome association) and positive associations (CDS length, GC content) are implicitly accepted as part of the overall 'convincing data' (Reviewer 1) and 'paradigm-shifting findings' (Reviewer 2) without specific critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The authors established their experimental system by treating HeLa cells with arsenite to induce oxidative stress, verifying stress granule formation and eIF2\u03b1 phosphorylation, confirming cell viability, and performing TERA-seq with high-quality replicates showing expected stress response gene expression patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the experimental setup without concern. The quality control measures and validation of stress induction are implicitly endorsed through reviewers' statements about 'convincing data' (Reviewer 1) and proper use of 'cutting-edge technologies' (Reviewer 2). No methodological concerns are raised about the basic experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C93"
+    ],
+    "result": "The authors employed TERA-seq, a nanopore-based direct RNA sequencing method with 5' adapter ligation, to address the limitation of inconsistent 5' end capture in standard direct RNA-seq. This approach allows full-length sequencing of RNA molecules and identification of 5' ends.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praise the methodological approach. Reviewer 1 describes 'cutting-edge technologies,' Reviewer 2 notes the use of 'direct RNA sequencing with nanopores, enhanced by 5' end adaptor ligation,' and Reviewer 4 highlights 'direct RNA sequencing with a Nanopore-based method' as enabling the discoveries. The technical approach is viewed as a strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C7",
+      "C97",
+      "C98",
+      "C107",
+      "C108"
+    ],
+    "result": "The authors conclude that RNA decay is a key component of RNA metabolism during cellular stress that depends on stress granule formation. They propose endonucleolytic cleavage as the initiating mechanism (not No-Go decay), potentially involving SG-P-body interactions, though mechanistic details remain to be fully elucidated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the main conclusion while recognizing it as a significant advance. Reviewer 1 calls the findings 'novel, paradigm-shifting,' Reviewer 2 states the authors 'fully established these paradigm-shifting findings,' Reviewer 3 notes the manuscript 'contains intriguing findings,' and Reviewer 4 calls it 'an exciting and novel discovery.' The proposed model is accepted as well-supported by the data, even if mechanistic details remain incomplete.",
+    "result_type": "MAJOR"
+  }
+]

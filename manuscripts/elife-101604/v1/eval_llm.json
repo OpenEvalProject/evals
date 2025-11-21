@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C155"
+    ],
+    "result": "A multicenter retrospective study was conducted at six institutions in Japan, enrolling 2074 patients who underwent ERCP between November 2020 and October 2022. These patients were randomly split into development (n=1037) and validation (n=1037) cohorts after excluding 102 patients based on specific criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C21, C23-C25, and C155 provide consistent information about study design, enrollment, and patient allocation. The study design is clearly described with appropriate exclusion criteria and random allocation to cohorts, supported by Figure 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Five pre-procedural risk factors for PEP were identified through multivariate logistic regression analysis in the development cohort: female sex (1 point), IPMN (2 points), native papilla of Vater (2 points), pancreatic calcification (-2 points), and procedures on the pancreatic duct (2 points). These factors were selected based on p<0.10 in multivariate analysis and assigned points proportional to their regression coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 and C37-C46 provide detailed statistical results from univariate and multivariate analyses. The methodology (C122-C124) is clearly described, and the factor selection and point assignment are appropriately justified by the regression coefficients shown in Table 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C83",
+      "C84",
+      "C85",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "In the development cohort, the SuPER model stratified patients into three risk groups with PEP rates of 0% (low risk, \u22640 points, 0/327 patients), 5.5% (moderate risk, 1-3 points, 27/492 patients), and 20.2% (high risk, 4-7 points, 39/193 patients). The model showed good discrimination (C-statistic 0.77, 95% CI 0.72-0.82) and calibration (Hosmer-Lemeshow test p=0.59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 and C83-C85 provide consistent PEP rates across risk groups. The statistical validation (C47-C49) demonstrates significant correlation with PEP occurrence and good model performance. Data are consistent between text and Table 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "In the validation cohort, the SuPER model demonstrated acceptable performance with a C-statistic of 0.71 (95% CI 0.64-0.78) and good calibration (Hosmer-Lemeshow test p=0.40). PEP rates were 2.4% (8/331) for low-risk, 5.3% (27/513) for moderate-risk, and 18.0% (29/161) for high-risk patients, with significant correlation between risk classification and PEP occurrence (p<0.01).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 and C50-C54 demonstrate successful validation of the model in an independent cohort. The C-statistic of 0.71 is appropriately characterized as acceptable, and the risk stratification maintained statistical significance. The slightly higher PEP rate in the validation low-risk group (2.4% vs 0%) is acknowledged but does not invalidate the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C66",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The SuPER risk classification was independently associated with PEP occurrence (OR 4.2, 95% CI 2.8-6.3; p<0.01) after adjusting for intraprocedural risk factors (precut sphincterotomy and inadvertent pancreatic duct cannulation), which themselves were not significantly associated with PEP in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While claims C20, C66, and C99-C101 report that the risk classification was independent of intraprocedural factors, the finding that precut sphincterotomy and inadvertent pancreatic duct cannulation were not significant contradicts established literature (C55-C56). This may reflect study limitations (C118-C119) regarding incomplete data on cannulation attempts, or could indicate confounding by the prophylactic measures used.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C132",
+      "C133",
+      "C134",
+      "C136"
+    ],
+    "result": "PEP occurred in 6.8% (70/1037) of the development cohort and 6.2% (64/1037) of the validation cohort. Most cases were mild (60 and 53 cases respectively), with fewer moderate (8 and 7 cases) and severe (2 and 4 cases) cases. The cohorts differed significantly in age, history of pancreatitis, and pancreatic duct procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C132-C134, C136 provide consistent baseline data from Table 1. The PEP rates are within the expected range based on prior literature (C2, C33), and the severity distribution is clearly documented. The differences between cohorts (C36) are acknowledged but did not prevent successful validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "PEP was diagnosed using Cotton's criteria, requiring abdominal pain and hyperamylasemia (>3\u00d7 upper limit of normal) at least 24 hours after ERCP. Severity was classified as mild (2-3 days additional hospitalization), moderate (4-10 days), or severe (>10 days or complications).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C30 describe standard, well-established diagnostic criteria for PEP with appropriate citation (Cotton et al., 1991). The definitions are clear and consistent with accepted clinical practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Chronic pancreatitis was defined by pancreatic calcification or main pancreatic duct diameter >3 mm on imaging (CT, MRI, EUS). IPMN was diagnosed using the same imaging modalities, with findings reviewed by radiologists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C113-C115 describe appropriate diagnostic criteria for CP and IPMN with supporting citations (C31). The use of multiple imaging modalities and radiologist review (C114) enhances diagnostic accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C120",
+      "C121"
+    ],
+    "result": "Sample size was calculated based on the requirement of 10 events per variable for logistic regression. With 7 variables in development and 5 in validation, and an expected PEP rate of 9.7%, at least 722 and 521 patients were needed in each cohort respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 and C120-C121 describe appropriate sample size calculation methodology with supporting citations. The actual enrollment (1037 per cohort) exceeded the minimum requirements, providing adequate statistical power.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C60",
+      "C61",
+      "C62",
+      "C144"
+    ],
+    "result": "The protective effect of pancreatic calcification (assigned -2 points) is explained by the chronic pancreatitis disease model, where established CP patients with calcification have passed the acute/recurrent pancreatitis stage and exhibit acinar dysfunction, potentially reducing PEP susceptibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C144 provide a biologically plausible explanation for the negative association between pancreatic calcification and PEP, supported by citation to the international CP conceptual model (Whitcomb et al., 2016). The inference (C63) is reasonable given the data (C43-C44) and cited framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C145",
+      "C146"
+    ],
+    "result": "Rectal NSAID use was not identified as a significant protective factor in this study. The authors attribute this to: (1) inclusion of all ERCP patients rather than only high-risk patients as in prior studies, and (2) use of lower diclofenac doses (12.5-50 mg) compared to the 100 mg used in most prior reports, with dosing based on patient age and size due to Japanese insurance regulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 and C145-C146 provide a reasonable explanation for the negative finding regarding NSAIDs. The dose difference is well-documented (C94-C98), and the population difference (C145-C146) is a valid consideration. However, this finding contradicts established evidence (C57) and may reflect study limitations rather than true lack of efficacy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C147",
+      "C148"
+    ],
+    "result": "Pancreatic stent placement was classified as a 'procedure on the pancreatic duct' rather than as prophylaxis because it is itself a higher-risk procedure for PEP than biliary procedures without pancreatic duct access, and it was performed alongside other high-risk procedures (guidewire placement or pancreatography).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 and C147-C148 explain the classification decision with supporting data (Supplementary file 2) and citations. This approach is methodologically sound given that pancreatic stent placement requires pancreatic duct access and is used as prophylaxis after such access has already occurred.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C102",
+      "C103",
+      "C138",
+      "C153",
+      "C154"
+    ],
+    "result": "The SuPER model is a simple 5-item preprocedural risk score that can predict PEP risk before ERCP and may aid in clinical decision-making by enabling selection of appropriate expert endoscopists and prophylactic measures for high-risk patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70, C102-C103, C138, and C153-C154 describe the model's characteristics and potential clinical utility. The simplicity (5 items, easily assessed) and preprocedural applicability are supported by the study design and results. The clinical utility statements (C68-C70, C154) are appropriately qualified as potential benefits ('may aid').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C64",
+      "C65",
+      "C82",
+      "C118",
+      "C119"
+    ],
+    "result": "The study has limitations including its retrospective design with missing data, though the percentage of excluded patients (<5%) and missing data (<1%) were minimal. Patients with missing data for selected variables were removed from analysis. The retrospective design prevented collection of detailed cannulation data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 and C64-C65, C82, C118-C119 appropriately acknowledge study limitations. The low rates of exclusion and missing data (C64-C65) support data quality, and the handling of missing data (C82) is appropriate. The inability to assess cannulation attempts (C118-C119) is a recognized limitation of retrospective studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study was conducted only in Japan using multicenter data, and the authors acknowledge that prospective validation studies over wider geographical regions are needed in the future.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 appropriately identify geographic limitation and need for external validation. This is a standard limitation for prediction models that requires acknowledgment and future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The model can predict PEP risk regardless of whether pancreatic duct procedures are performed, because additional procedures can be conducted during ERCP and unplanned pancreatography often occurs. The score can be calculated with or without planned pancreatic duct procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C150-C152 describe an important feature of the model - its flexibility in handling planned vs. unplanned pancreatic duct procedures. This is supported by the model design (C14) which treats this as 'planned pancreatic duct procedures' for pre-ERCP calculation, and Figure 2 which shows how to calculate both scenarios.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Statistical methods included Cochran-Armitage trend test for correlation analysis, C-statistic for discrimination, Hosmer-Lemeshow test for calibration, and multivariate logistic regression for independence assessment. Analyses were performed using EZR version 1.62 and SPSS version 26.0, with p<0.05 considered significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 describe appropriate statistical methods for prediction model development and validation. The methods are standard for this type of analysis, software versions are specified, and the significance threshold is clearly stated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "PEP is a severe and potentially deadly complication of ERCP, with occurrence rates of 3.1-13.0% and fatality rates of 0.1-0.7%. ERCP-related procedures are relatively risky among endoscopic procedures, with major adverse events including perforation, bleeding, and PEP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C72-C74 provide well-established background information about PEP severity and ERCP risks, supported by multiple citations to prior literature. These claims establish the clinical importance of the research question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C104"
+    ],
+    "result": "Six previous PEP risk scoring systems have been developed since 2002, but the ideal method for predicting PEP risk before ERCP has not yet been identified. The first system (2002) identified pain during procedure, pancreatic duct cannulation, history of PEP, and number of cannulation attempts as risk factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C104 provide appropriate context from prior literature with supporting citations. The statement that no ideal preprocedural method exists (C104) justifies the current study's objective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "One previous scoring system included sphincter of Oddi dysfunction (SOD) as a test item, which requires sphincter of Oddi manometry (not widely used) and fulfillment of criteria for biliary pain (8 items) and SOD (15 items), making it complex and impractical.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C143 provide valid criticism of a prior scoring system's complexity, supported by citation (DiMagno et al., 2013; Cotton et al., 2016). This comparison highlights the advantage of the SuPER model's simplicity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C22",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The study was approved by institutional review boards (Fukushima Medical University and partner institutions, number 2453). Anonymous clinical data were used after patients provided written consent for treatment, so additional informed consent for the study was not required. Study details are available on the Fukushima Medical University homepage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C106-C108 describe appropriate ethical procedures for a retrospective study using anonymized data. The waiver of additional consent is reasonable given the retrospective design and data anonymization.",
+    "result_type": "MINOR"
+  }
+]

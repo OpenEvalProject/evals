@@ -1,0 +1,272 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C32",
+      "C122",
+      "C123",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors developed HepG4-seq, a novel method for mapping native G4s in living cells based on hemin-induced proximal biotinylation. The method uses physiological hemin concentrations (25 \u00b5M) to activate G4-hemin peroxidase activity, which biotinylates G4s and proximal DNA using biotin-aniline. HepG4-seq identified 6,799 consensus G4 peaks in HEK293 cells under basal conditions and 77,003 peaks after helicase inhibition, demonstrating high sensitivity and specificity with minimal perturbation of native G4 folding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C25, C32, C122-C123, and C136-C140 collectively establish HepG4-seq as a valid method. The experimental data (C19-C25) show specific biotinylation dependent on hemin and Bio-An, good overlap with PQS predictions, and enrichment of G-rich motifs. Control experiments (C20) demonstrate minimal perturbation of native G4s. The method's sensitivity is validated by detecting dynamic changes after helicase inhibition (C28-C32). The technical foundation is well-supported by prior work on G4-hemin complexes and proximity labeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C33",
+      "C34",
+      "C147",
+      "C148"
+    ],
+    "result": "The authors developed HBD-seq, an optimized method for mapping native R-loops using the HBD domain of RNase H1. HBD-seq identified 42,488 consensus R-loop peaks in HEK293 cells with high signal-to-noise ratio, and signals were dramatically diminished by RNase treatment, demonstrating specificity for R-loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17, C33-C34, and C147-C148 establish HBD-seq as a valid method. The experimental data (C33-C34) show robust peak detection with appropriate negative controls (RNase treatment). The method builds on established prior work (C16-C17, C148) using the HBD domain for R-loop recognition. The optimization to avoid GST-fusion protein aggregation issues (C147) is well-justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C115",
+      "C124",
+      "C125"
+    ],
+    "result": "Co-localized G4s and R-loops exhibit cell type-specific distributions. In HEK293 cells, 5,030 co-localized peaks were identified (73.8% at promoters/5'UTR/exon1/intron1), while mESCs showed 68,482 peaks with different distribution (34.2% at promoters/exon1/intron1, 25.9% intergenic). mESCs showed approximately 10-fold more co-localized peaks than HEK293 cells, demonstrating dramatic cell type-dependent variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38, C44-C48, and C115, C124-C125 demonstrate cell type-specific co-localization patterns. The data show clear quantitative differences in peak numbers and genomic distributions between cell types. The metagene analyses (C37, C49) and motif enrichment (C38, C50) provide consistent supporting evidence. The ~10-fold difference between cell types (C125) is substantial and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C51",
+      "C52",
+      "C116",
+      "C134",
+      "C135"
+    ],
+    "result": "Co-localized G4s and R-loops are associated with transcriptionally active genes and regulate their expression. In both HEK293 cells and mESCs, genes associated with co-localized G4s and R-loops showed significantly higher RNA levels than all genes or genes associated with G4s or R-loops alone (Mann-Whitney test p<2.2E-16). Inhibition of G4-resolving helicases BLM or WRN led to hundreds of genes with altered expression, enriched in cell cycle regulation, DNA metabolic processes, and DNA damage response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43, C51-C52, and C116, C134-C135 establish transcriptional regulatory roles. The RNA-seq data (C39, C51) with statistical support demonstrate higher expression of co-localized peak-associated genes. The helicase inhibition experiments (C41-C43) provide functional evidence linking G4 accumulation to transcriptional changes. The GO enrichment analyses (C43) are consistent with known G4/R-loop functions. The localization near TSS (C40, C52) supports regulatory roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "In mESCs, co-localized G4s and R-loops are enriched at active promoters (18,496 peaks) and active enhancers (15,787 peaks), overlapping with active chromatin marks (H3K4me3, H3K27ac, H3K36me3, H3K4me1) and RNA polymerase II. At active promoters, co-localized peaks show high G4 and R-loop signals with enrichment of H3K4me3, H3K27ac, and RNAP, suggesting involvement with promoter-associated nascent RNAs. At active enhancers, peaks overlap with H3K27ac, H3K4me1, H3K4me3, and RNAP, suggesting potential involvement of enhancer RNAs (eRNAs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C65 and C142-C144 establish the chromatin context of co-localized peaks. The ChIP-seq overlap data (C54, C58, C62-C64) demonstrate clear associations with active chromatin states. The classification into promoter and enhancer types (C55-C57, C142-C143) follows established definitions. The inference about nascent RNAs (C59) and eRNAs (C65, C144) is reasonable given the RNAP co-localization, though direct evidence for RNA involvement is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C119",
+      "C120"
+    ],
+    "result": "Dhx9 is a key regulator of co-localized G4s and R-loops in mESCs. Loss of Dhx9 resulted in significant changes in G4 and R-loop levels at thousands of co-localized sites, with 1,647 genes up-regulated and 1,916 genes down-regulated. Hundreds of G4-, R-loop-, and co-localized G4&R-loop-associated genes showed differential expression. GO analysis revealed enrichment in processes related to cell differentiation, embryonic development, and pattern specification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74, C119-C120 establish Dhx9's regulatory role. The knockout experiments (C69-C73) provide clear functional evidence with appropriate controls. The RNA-seq data (C72-C73) demonstrate transcriptional consequences. The GO enrichment (C74) is consistent with known Dhx9 functions (C75-C77). However, C70 notes that only a small proportion showed simultaneous G4 and R-loop changes, suggesting complex regulation that may involve other factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "Dhx9 directly binds to the majority of co-localized G4s and R-loops in mESCs. Dhx9 CUT&Tag identified 54,982 binding peaks, with 65.5% overlapping 69.9% of co-localized G4s and R-loops. Among Dhx9-bound co-localized peaks, 6,171 showed differential signals in dhx9KO cells (1,382 up-regulated, 4,789 down-regulated), accounting for 50-75% of all differential co-localized peaks. These Dhx9-bound differential peaks were linked to 852 genes with altered expression, enriched in embryonic development and differentiation processes. Key stem cell regulators including Nanog, Lin28a, Bmp4, Wnt8a, Gata2, and Lef1 were identified as direct Dhx9 targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C90 and C128-C132 establish direct Dhx9 binding and regulation. The CUT&Tag data (C81-C83) demonstrate genome-wide binding with appropriate motif enrichment. The comparison between WT and dhx9KO (C84-C87) identifies direct targets. The observation that only ~8.5% of Dhx9-bound peaks show differential signals (C129) suggests redundancy (C130), supported by evidence of other helicase expression changes (C131-C132). The identification of specific target genes (C89) provides biological context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C121"
+    ],
+    "result": "Loss of Dhx9 impairs self-renewal and pluripotency of mESCs. dhx9KO mESCs showed decreased RNA and protein levels of Lin28a and Oct4, while Nanog RNA increased but protein decreased. dhx9KO cells exhibited modest S-phase arrest, significantly reduced proliferation, and impaired embryoid body formation with altered expression of all three germ lineage markers tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C100 and C121 demonstrate functional consequences of Dhx9 loss. The qRT-PCR (C91), western blot (C92-C93), and immunofluorescence (C94) data consistently show altered pluripotency factor levels. The cell cycle (C96), proliferation (C97), and EB differentiation (C98-C99) assays provide multiple lines of functional evidence. The discordance between Nanog RNA and protein (C93) suggests post-transcriptional regulation, which is appropriately noted. The results are consistent with prior work on Dhx9 knockout lethality (C75-C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C117",
+      "C118"
+    ],
+    "result": "Inhibition of G4-resolving helicases BLM or WRN with small molecules ML216 or NSC617145 dramatically increases native G4 levels. Treatment resulted in ~70,000 new G4 peaks detected by HepG4-seq (from 6,799 to 77,003 total peaks), with significantly increased G4 signals (Mann-Whitney test p<2.2E-16). This accumulation led to differential expression of hundreds of genes enriched in cell cycle, DNA metabolism, and DNA damage response processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C31, C117-C118 demonstrate dynamic G4 regulation. The helicase inhibitor experiments (C27-C31) provide strong evidence for G4 accumulation with appropriate controls and statistical analysis. The ~10-fold increase in peaks (C29-C30) is substantial. The transcriptional consequences (C118) are consistent with known G4 functions. However, the specificity of the inhibitors (C27) relies on prior work, and potential off-target effects are not discussed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Comparison of HepG4-seq with BG4 CUT&Tag reveals complementary detection of G4s. 80% of HepG4-seq peaks in HEK293 cells and 71% in mESCs overlap with BG4 peaks, but BG4 CUT&Tag identified many more peaks (70,954 in HEK293, 103,303 in mESCs). HepG4-seq peaks show sharper resolution around PQS centers than BG4 peaks. Signal intensity differences between cell types may reflect G4 conformation dynamics, as parallel G4s show higher peroxidase activity than anti-parallel G4s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C106 provide methodological comparison. The overlap analysis (C101-C102) shows substantial but incomplete concordance between methods. The observation of sharper HepG4-seq peaks (C103) suggests better resolution. The interpretation of signal intensity differences as reflecting conformation (C106) is reasonable given prior work (C105), but remains speculative without direct conformation measurements. The suggestion that BG4 may promote G4 folding (C102-C103) is plausible but not definitively proven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Comparison of HBD-seq with other R-loop mapping methods shows improved performance. HBD-seq and S9.6 CUT&Tag identified similar peak numbers (125,311 vs 154,993) with 45,989 HBD-seq peaks overlapping 88,036 S9.6 peaks. HBD-seq showed stronger signal intensities and sharper peaks than MapR and GST-2xHBD CUT&Tag. However, HBD-seq generated ~80,000 extra peaks compared to S9.6 CUT&Tag, suggesting differences in detection sensitivity or specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C114 provide methodological validation. The comparisons with S9.6 CUT&Tag (C107-C109) and other HBD-based methods (C112-C114) show reasonable concordance with improved signal quality. The observation of extra HBD-seq peaks (C111) raises questions about specificity versus sensitivity that are acknowledged but not fully resolved. The interpretation that protein status affects mapping (C111) is reasonable given known issues with GST-fusion proteins (C147).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C126"
+    ],
+    "result": "The most enriched motif in mESC co-localized G4s and R-loops matches the CTCF ChIP-seq motif, suggesting potential modulation of CTCF binding. This is consistent with prior work showing CTCF-bound regions are enriched for both R-loops and G4s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 suggest a connection to CTCF binding. While the motif match (C127) is interesting and consistent with prior work (C126), this is purely correlative. No functional experiments test CTCF binding or activity in relation to co-localized G4s and R-loops. The inference about modulation of CTCF binding requires additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C133"
+    ],
+    "result": "Comprehensive mechanistic study of G4 and R-loop interplay is difficult due to redundancy and compensatory roles of regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C133 is supported by the observation that only a fraction of Dhx9-bound peaks show changes upon Dhx9 loss (C129-C130), and that loss of Dhx9 alters expression of 30 other helicases/regulators (C131-C132). This demonstrates the complexity of the regulatory network, though it is more of a discussion point than a primary result.",
+    "result_type": "MINOR"
+  }
+]

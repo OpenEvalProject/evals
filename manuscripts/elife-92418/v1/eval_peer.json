@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C36",
+      "C37",
+      "C59",
+      "C60"
+    ],
+    "result": "MD simulations reveal that the L\u2192H transition involves three coordinated structural changes: the agonist pivots ~130-180\u00b0 around its cationic center ('flip'), loop C undergoes staged downward displacement ('flop'), and a compact, stable high-affinity pocket forms ('fix'). The agonist's cationic center remains surrounded by aromatic residues throughout the flip, which begins at the start of simulations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple reviewers affirm these findings as solid and a strong point of the study. One reviewer states 'The simulations indicating that ligands flip ~180 degrees in the binding site as it transitions from a low to high affinity bound conformation are solid.' Another notes 'The 200 ns-long simulations...suggest that the agonist rotates about its centre in a 'flip' motion, while loop C 'flops' to restructure the site. The changes appear to be reproduced across simulations and different ligands and are thus a strong point of the study.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C54",
+      "C90"
+    ],
+    "result": "Efficiency (\u03b7) values calculated in silico from binding energies matched almost perfectly with experimental values measured in vitro, demonstrating that agonist efficiency can be estimated computationally.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this as a strength. One reviewer notes 'simulated efficiencies were a good representation of experimental measures, which gives some support to the relevance of the in silico observations.' Another states 'ligand efficiency notably similar to experimental values' as a strength, indicating acceptance of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C87",
+      "C88"
+    ],
+    "result": "For ACh and CCh, calculated binding energies (\u0394Gm1 and \u0394Gm3) showed excellent agreement with experimental values (\u0394GL and \u0394GH). However, for Ebt and Ebx, calculated values overestimated experimental ones by ~45% and ~130% respectively, though \u0394Gm3 was consistently more favorable than \u0394Gm1 for all ligands.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concern about the binding energy calculations. One reviewer notes 'A limitation is the approximation of binding energies using Poisson-Boltzmann Surface Area and mismatch between calculated and experimental binding energies for two of the four ligands tested.' Another reviewer is more critical: 'The free energy methods used seem to lack accuracy - they are only correct for 2 out of 4 ligands' and notes 'up to 130% errors in free energy...is far worse than a simple proportional error, because -24 Vs -10 kcal/mol is a massive overestimation of free energy...error exceeding a billion fold' when expressed as KD values. A third reviewer states this 'raises some doubt as to the validity of the simulations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C44",
+      "C45"
+    ],
+    "result": "Docking simulations consistently showed agonists binding in a cis orientation (tail pointing toward \u03b1 subunit) with strong binding scores (-5.82 to -9.18 kcal/mol), unlike the trans orientation seen in cryo-EM structures of desensitized receptors. Re-docking after 200 ns MD showed all agonists preferred trans orientation with higher binding energies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the docking results. One states 'Docking results are clearly presented and remarkably consistent.' Another notes 'I find the premise for the simulations to be good, starting with an antagonist bound structure as an estimate of the low affinity binding site conformation, then docking agonists into the site.' The consistency across ligands and poses is viewed as a strength.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "All 200 ns MD simulations showed reproducible trajectories with RMSD patterns consistently below 1 \u00c5 across three replicates for all four agonists, with systems stabilizing by ~120 ns. RMSF analysis showed flexibility mainly in loops C and F, and agonists stabilized binding pocket residues compared to apo simulations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors present convergence data, reviewers express concerns about simulation methodology. One reviewer notes 'The weakness are the brevity of the simulations, the concomitant lack of scope of the simulations, the lack of depth in the analysis.' Another states 'The MD analysis could be improved with better measures of convergence, as well as a more careful discussion of free energy maps.' A third reviewer notes 'aside from the limited timescales (200 ns) that do not capture global rearrangements' as a concern.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Principal component analysis identified three states (m1, m2, m3) along the L\u2192H transition trajectory. All trajectories started in m1 and ended in m3, with m2 as an intermediate. The m3 pose was more localized and stable than m1, with m2 being the least stable, and trans orientation in m3 was more stable than cis in m1.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express uncertainty about the PCA-derived states. One reviewer notes 'Principal component analysis also suggests the formation of an intermediate complex, not yet captured in structural studies' as a strength, but another states 'it is not obvious that landscapes constructed on two principal components to identify endpoint and intermediate states (Fig 3) are highly robust or reproducible, nor whether they relate consistently to experimental structures.' This indicates acceptance of the intermediate state concept but doubt about the robustness of the specific characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The L\u2192H transition involves increased Van der Waals interactions (most pronounced with Ebt, least with Ebx), reduction in binding pocket volume, and decrease in the number of water molecules in the pocket, indicating pocket compaction and de-wetting.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these structural observations. One notes 'Snapshot comparisons provide a structural rationale for these changes on the basis of pocket volume, hydration, and rearrangement of key residues at the subunit interface' as a strength. The compaction and de-wetting are consistent with the accepted 'fix' component of the flip-flop-fix mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The final MD configuration with CCh aligns well with the CCh-bound cryo-EM desensitized structure (RMSD <0.5 \u00c5) and remains stable for at least 1 \u03bcs. Similar rearrangements occur in ECD pentamer and dimer simulations, and apo simulations show partial loop C flop.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note the agreement with experimental structures as supporting evidence. One states 'Apparent convergence of agonist-docked simulations towards a desensitized state (l 184)' though notes this is 'difficult to interpret in absence of comparative values with other states, systems, etc.' The alignment with cryo-EM structures is viewed as validation of the simulation endpoints.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C68",
+      "C69",
+      "C70",
+      "C75",
+      "C111",
+      "C112"
+    ],
+    "result": "In the L state, \u03b1Y190, \u03b1Y93, and \u03b4W57 are spaced apart to accommodate the agonist tail in cis orientation. In the H state, loop C flop repositions \u03b1Y190 closer to \u03b1Y93, filling the gap. The aromatic cluster (\u03b1W149-\u03b1Y190-\u03b1Y198) acts as a 'slippery anchor' maintaining N+ stability while the tail rotates. \u03b1W149 is the main player in both L and H, but the biggest binding energy increase comes from \u03b1Y190.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These structural interpretations are consistent with the accepted flip-flop mechanism and are not specifically challenged by reviewers. The mechanistic details about aromatic residue repositioning support the overall model that reviewers found solid. The integration with mutagenesis data (C65-C67) provides experimental support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C76",
+      "C78",
+      "C79"
+    ],
+    "result": "During the m1\u2192m2\u2192m3 transition, specific interactions change: in m1, the agonist tail interacts with \u03b1Y93 (all agonists) and \u03b1D200 (CCh, Ebt only); \u03b1W149 serves as a fulcrum throughout; in m2, the tail interacts with \u03b1Y198; in m3, the agonist fully flips to trans, facilitating VdW interactions and water-mediated H-bonds with \u03b4N109/\u03b4L121 backbone.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These detailed structural observations are part of the flip-flop-fix mechanism that reviewers found solid. The sequential nature of interactions is consistent with the accepted trajectory from m1 to m3. No specific challenges to these interaction details are raised by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The mutation \u03b1K145A differentially affects agonist efficiency: it lowers efficiency for ACh and CCh but not for Ebt and Ebx. In simulations, the \u03b1K145-\u03b1D200 distance shortens substantially with ACh/CCh in the L\u2192H transition but remains unstable with Ebt/Ebx, suggesting \u03b1K145 instability is responsible for the differential effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These observations integrate experimental mutagenesis data with simulation results to explain agonist-specific effects. While not explicitly discussed by reviewers, this represents a successful integration of computational and experimental approaches that is consistent with the overall positive assessment of the study's integration of structure-function analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C34",
+      "C35"
+    ],
+    "result": "Excellent matches between energy measurements from pentamers (electrophysiology) and ECD dimers (simulations) support the view that the ECD-TMD interface is not an important determinant of agonist affinity, consistent with experiments showing affinity is determined by structural elements within ~12 \u00c5 of the ligand and that orthosteric sites operate independently.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This conclusion is accepted by reviewers as part of the validation of the simplified dimer model. The agreement between dimer simulations and full receptor experiments justifies the computational approach, though the overall binding energy accuracy issues (for Ebt/Ebx) temper this support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Previous proposals suggested the \u03b1Y190 hydroxyl-\u03b1D200-\u03b1K145 salt bridge interaction triggers the allosteric transition. However, simulations show the \u03b1Y190 hydroxyl is positioned far (~5.0 \u00c5) from \u03b1D200 and \u03b1K145 in the H state, suggesting this interaction may stabilize the down position of loop C rather than trigger the transition.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This reinterpretation of previous mechanistic proposals is not challenged by reviewers and represents a refinement of understanding based on the simulation data. It is consistent with the overall accepted flip-flop-fix mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The L and H end states emerged from simulations of a single protein structure using an inexpensive approximate method (PBSA), suggesting MD could facilitate dose-response analysis and drug discovery. The simulations suggest agonist rotation is the trigger that turns on the receptor.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express mixed views on the methodological approach and its implications. One notes concerns about 'the motivations for and limitations associated with this approximate model for the thermodynamics of binding, rather than using modern atomistic MD free energy methods.' The potential applications are speculative, and the accuracy issues with Ebt/Ebx raise questions about the generalizability of the approach for drug discovery.",
+    "result_type": "MAJOR"
+  }
+]

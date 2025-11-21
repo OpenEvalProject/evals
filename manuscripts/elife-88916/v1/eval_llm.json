@@ -1,0 +1,328 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "InferCNV analysis validated chromosomal copy number detection from RNA-seq data, matching 45/48 aneuploidies with PGT results and correctly predicting all euploid cases, demonstrating that aneuploidy results in abnormal gene dosage effects in human blastocysts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 provide strong validation of the InferCNV method with quantitative concordance data (45/48 match rate, 100% euploidy detection) shown in Figure 1. The gene dosage effects are directly demonstrated through the correlation between chromosomal gains/losses and gene expression changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C73",
+      "C74",
+      "C75",
+      "C126"
+    ],
+    "result": "RNA-sequencing of aneuploid trophectoderm cells revealed dose-dependent activation of p53 pathway and apoptosis signatures proportionate to chromosomal imbalance, with 21 upregulated and 2 downregulated genes, alongside negative enrichment of metabolism, translation, and proliferation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C73-C75, and C126 are well-supported by RNA-seq data in Figures 1 and 2, showing consistent transcriptomic signatures. The GSEA analysis provides robust pathway-level evidence with appropriate statistical thresholds (25% FDR), and the dose-dependent relationship strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C133",
+      "C134"
+    ],
+    "result": "High-dosage aneuploid embryos (\u226550th percentile of imbalanced loci) showed distinct transcriptomic profiles with strong p53/apoptosis activation and inhibited unfolded protein response, while low-dosage embryos activated both stress responses and pro-survival pathways (MYC targets, MTORC1, UPR, hypoxia), demonstrating a dose-dependent cellular stress response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C91 and C133-C134 are strongly supported by the dose-stratification analysis in Figure 2, with clear PCA separation for high-dosage embryos and progressive gene expression changes (Figure 2K). The differential pathway activation between high and low dosage groups is biologically coherent and statistically validated through GSEA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C98",
+      "C99",
+      "C100",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Immunostaining validation confirmed that aneuploidy triggers proteotoxic stress (HSP70), autophagy (LC3B, p62), p53 activation (S15 phosphorylation), and apoptosis (CASP3/7, CASP8) independent of DNA damage, with similar responses in both naturally aneuploid and reversine-treated embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C13 and C92-C100, C127-C130 are well-supported by immunostaining data in Figure 3, with quantitative measurements showing significant increases in all markers. The independence from DNA damage is demonstrated by \u03b3H2AX staining (C105-C107, C143), providing strong evidence for proteotoxic stress rather than DNA damage as the trigger.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C143"
+    ],
+    "result": "Aneuploid embryos showed increased p53 activation via Serine-15 phosphorylation without corresponding increases in DNA damage markers (\u03b3H2AX), indicating that p53 activation occurs through cellular stress pathways rather than DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 and C143 are supported by immunostaining data in Figure 3M-R, with Bleomycin-treated embryos serving as positive controls for DNA damage. The similar \u03b3H2AX levels between euploid and aneuploid embryos, despite elevated S15p53, provide clear evidence for DNA damage-independent p53 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C96",
+      "C97",
+      "C114"
+    ],
+    "result": "Aneuploid embryos had significantly lower total cell numbers due to reductions in both trophectoderm and ICM/EPI lineages, likely attributable to apoptosis-mediated cell loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C96-C97, and C114 are supported by quantitative cell counting data in Figures 3E and 4C-F, showing statistically significant reductions. However, the causal attribution to apoptosis (C16, C97) is inferential rather than directly demonstrated through lineage tracing or temporal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C123"
+    ],
+    "result": "Aneuploidy induced lineage-specific stress responses, with trophectoderm showing increased apoptosis (CASP3/7) and autophagy (LC3B), while ICM/EPI cells showed no nuclear CASP3/7 signal, indicating differential tolerance to chromosomal imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C117, C119, and C123 are strongly supported by lineage-specific immunostaining in Figure 4G-O. The complete absence of CASP3/7 in OCT4+ cells (C117) is a striking finding, though the sample size and statistical power for ICM-specific analyses may be limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C120",
+      "C121",
+      "C122",
+      "C125",
+      "C131",
+      "C175",
+      "C176"
+    ],
+    "result": "Aneuploidy impaired the second lineage segregation, with 39% of aneuploid embryos lacking GATA4-positive primitive endoderm cells and those with PrE showing significantly lower PrE/EPI ratios, with severity correlating with the number of imbalanced loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C18, C120-C122, C125, C131, C175-C176 are supported by immunostaining data in Figure 4P-S, with clear statistical significance (Fisher's exact test p=0.009 for PrE absence, p=0.0068 for ratio). The dose-dependent effect (C122) strengthens the causal inference, though the mechanisms remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C124",
+      "C165",
+      "C166"
+    ],
+    "result": "Both aneuploid TE and ICM cells showed nuclear enrichment of NANOG, suggesting delayed exit from pluripotency and impaired first lineage segregation in both lineages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C113, C124, C165-C166 are supported by quantitative NANOG nuclear enrichment data in Figure 4A-B, with statistical significance in both lineages. However, the interpretation as 'delayed' differentiation (C113, C166) is inferential and would benefit from temporal analysis or functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "DRAM1, a p53-regulated gene controlling autophagy and apoptosis, was significantly upregulated in aneuploid embryos and showed increased cytoplasmic expression specifically in TE cells, suggesting it is a key downstream effector of p53-mediated aneuploidy responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 and C146-C149 are supported by RNA-seq data (Figure 2B) and immunostaining (Figure 3S-T) showing TE-specific DRAM1 upregulation. The mechanistic role (C146-C149) is supported by citations to cancer cell studies, though direct functional validation in embryos is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Reversine-treated embryos showed a distinct transcriptomic profile from naturally aneuploid embryos, with enrichment of mitotic spindle and WNT signaling pathways but no evidence of p53 activation or apoptosis, suggesting different cellular responses to induced versus natural aneuploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C80 are supported by RNA-seq data in Figure 1 supplement, showing clear differences in pathway enrichment. However, this contrasts with the immunostaining data (C94-C95, C101-C103) showing similar protein-level responses, suggesting transcriptome-proteome discordance that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Despite transcriptomic differences, reversine-treated embryos showed similar downstream protein responses to naturally aneuploid embryos, with co-expression of CASP8 and HSP70 in the majority of cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 are supported by colocalization analysis in Figure 3K-L. This finding reconciles the transcriptomic differences (C80) with similar cellular outcomes, though the mechanisms underlying this transcriptome-proteome discordance remain unexplained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C155"
+    ],
+    "result": "Aneuploid embryos contained increased numbers of CASP3/7-positive micronuclei, suggesting a mechanism for selective elimination of chromosomal material.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118 and C155 are supported by immunostaining data in Figure 4J-K with statistical significance. The connection to selective chromosome elimination is supported by citations to primate models (C156) and live-imaging studies (C157), providing a plausible mechanism for aneuploidy correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "High-dosage aneuploid embryos showed inhibited unfolded protein response while low-dosage embryos activated this pathway, suggesting that low-dosage cells attempt homeostatic restoration while high-dosage cells proceed to p53-mediated apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by GSEA data in Figure 2C-J, showing opposite enrichment patterns for UPR between dosage groups. The mechanistic interpretation (C137) is biologically coherent and supported by citations, though direct functional evidence for this model is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C154"
+    ],
+    "result": "Apoptosis in aneuploid embryos is mediated through at least two pathways: sustained p62/LC3B-mediated response to unfolded proteins and p53 activation in response to cellular stress, both converging on extrinsic apoptotic pathway activation (CASP8, CASP3/7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 and C154 integrate multiple lines of evidence from immunostaining (Figure 3) showing elevated autophagy markers, p53 activation, and caspase activation. The dual-pathway model is biologically coherent and supported by citations, though direct pathway manipulation experiments would strengthen causal claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The observed mechanisms may explain why fully aneuploid embryos fail to develop, with the hypothesis that the same mechanisms lead to removal of aneuploid cells from mosaic embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C21 are speculative extrapolations from the data. While C20 is supported by established knowledge, C21 is explicitly stated as a hypothesis. The study examined uniformly aneuploid embryos, not mosaic embryos, so direct evidence for selective cell elimination in mosaics is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Aneuploid TE showed increased autophagy markers and DRAM1 expression that did not reach significance in ICM/EPI, aligning with absence of p53/autophagy activation in ICM of mosaic human embryos but contrasting with reversine-treated mouse embryos and human gastruloids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C174 are supported by immunostaining data (Figures 3-4) and citations to comparative studies. The species/model differences are acknowledged, with C174 offering a speculative explanation regarding reversine's direct p53 effects. The lack of statistical significance in ICM may reflect insufficient power rather than true absence of effect.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C180",
+      "C181"
+    ],
+    "result": "A possible explanation for impaired PrE formation is delayed differentiation due to NANOG retention, though the underlying mechanisms remain to be elucidated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C180-C181 acknowledge the speculative nature of the NANOG-based explanation and explicitly state that mechanisms remain unclear. While the NANOG data (C112) support delayed differentiation, the causal connection to PrE defects requires functional validation through NANOG manipulation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C132"
+    ],
+    "result": "The gene expression results align with previously published RNA-sequencing studies on aneuploid human embryonic cells showing altered cell proliferation, cell cycle, autophagy, p53 signaling, and apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C132 is supported by multiple citations to concordant studies. This contextualizes the current findings within the existing literature, though the claim itself is primarily a literature comparison rather than a novel finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "The study acknowledges limitations in ICM/EPI cell identification due to ongoing debate about exclusive markers, with confident EPI assignment only in GATA4-positive embryos where PrE is established, and notes that finding only one GATA4+/OCT4- cell supports PrE differentiation from EPI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C187 appropriately acknowledge methodological limitations and uncertainties in cell type identification. The single GATA4+/OCT4- cell observation (C186-C187) provides modest support for the EPI-to-PrE differentiation model, though the n=1 observation limits interpretive strength.",
+    "result_type": "MINOR"
+  }
+]

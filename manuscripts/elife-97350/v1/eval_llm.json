@@ -1,0 +1,285 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C6",
+      "C120",
+      "C121"
+    ],
+    "result": "RNA viruses like influenza A/H3N2 and SARS-CoV-2 undergo rapid antigenic evolution driven by immune pressure, with A/H3N2 showing particularly rapid antigenic change through frequent epitope substitutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C6, C120, and C121 establish well-documented background knowledge about RNA virus evolution, supported by multiple citations to established literature. These claims provide the empirical motivation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The traveling wave framework is commonly used to model RNA virus evolution but lacks explicit representation of epidemiological dynamics and host immunity, which could improve predictions or explain prediction difficulties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C13 accurately describe the traveling wave framework and its limitations, supported by appropriate citations. The critical assessment of existing approaches (C12, C13) is well-justified and provides clear motivation for the new model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C31",
+      "C32",
+      "C33",
+      "C28"
+    ],
+    "result": "The authors develop a multi-strain SIR model with heterogeneous host immunity groups that can differ in cross-immunity responses, where immunity builds through exposure rather than only infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C15, C28, C31-C33 describe the model structure with appropriate citations to prior SIR models. The model assumptions are clearly stated, including the key innovation of heterogeneous cross-immunity between groups (C33) and the exposure-based immunity mechanism (C31).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C45",
+      "C48",
+      "C57",
+      "C58",
+      "C61",
+      "C62"
+    ],
+    "result": "In the multi-strain SIR model with heterogeneous immunity, immune evasive variants initially grow exponentially but lose their growth advantage before fixation, resulting in 'partial sweeps' where variants settle at intermediate frequencies rather than replacing the wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C45, C48, C57, C58, C61, C62 describe the core finding of partial sweeps, supported by Figure 1 simulations. The distinction between homogeneous (oscillatory) and heterogeneous (damped) population dynamics is clearly demonstrated, and the partial sweep phenomenon is well-defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C54",
+      "C56"
+    ],
+    "result": "Homogeneous populations show strong oscillations that would lead to stochastic extinction in finite populations, while heterogeneous immunity dampens these oscillations by reducing excess susceptibility and slowing variant spread across groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52, C54, C56 explain why heterogeneous immunity is necessary for realistic dynamics. The reasoning about stochastic extinction (C51) and the mechanistic explanation for dampening (C54, C56) are logically sound and supported by Figure 1 simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The initial growth advantage of variants results from immunological imbalance in the host population rather than intrinsic fitness, making the model comparable to ecological consumer-resource systems where fitness depends on population composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 provide important conceptual interpretation of the model dynamics, with appropriate comparisons to ecological models (C66, C67) supported by citations. The inference about prediction difficulty (C68) follows logically from the frequency-dependent dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C74",
+      "C102"
+    ],
+    "result": "When multiple variants emerge sequentially, the frequency of initial mutations follows an anomalous random walk with zero mean change, where trajectories monotonically reaching 0 or 1 represent a finite fraction of outcomes, leading to unpredictable evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C74, C102 describe the random walk abstraction with mathematical support referenced in appendices. The zero-mean property and the existence of monotonic trajectories (C74) are mathematically derived, though full verification would require checking the appendix calculations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "The authors introduce an 'expiring fitness' model where growth rate decays proportionally to variant frequency, qualitatively reproducing partial sweep dynamics while being simpler to simulate than the full SIR model, though lacking oscillatory behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81, C82, C87, C88, C90 describe the expiring fitness model and its purpose. The model is clearly defined (Equation 11), its qualitative correspondence to SIR dynamics is stated (C88), and its limitations are acknowledged (C90). This provides a useful computational tool for exploring parameter space.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C94",
+      "C97",
+      "C99",
+      "C100",
+      "C123",
+      "C124"
+    ],
+    "result": "Retrospective analysis shows A/H3N2 influenza mutations lack consistent growth beyond intermediate frequencies, while SARS-CoV-2 shows more predictable exponential growth with eventual decline due to clonal interference.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C97, C99, C100, C123, C124 describe empirical observations from Figure 3, supported by citations to prior work. The contrasting dynamics between influenza and SARS-CoV-2 are clearly demonstrated, though the analysis is retrospective and descriptive rather than predictive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "Wright-Fisher simulations show good agreement between empirical time to MRCA and random walk predictions when partial sweep overlap probability is small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 describes validation of the random walk model using Wright-Fisher simulations (Figure 4E). The agreement is demonstrated empirically, with appropriate caveats about the regime of validity (small overlap probability).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C126",
+      "C130",
+      "C131"
+    ],
+    "result": "The model reconciles the apparent contradiction between adaptive antigenic evolution and quasi-neutral high-frequency dynamics in influenza by showing that escape mutations have expiring fitness advantages, with ultimate fate determined by subsequent mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C126, C130, C131 present the main synthesis of the work. The reconciliation of adaptive evolution with quasi-neutral dynamics (C5, C130) is well-supported by the combination of model results and empirical observations, providing a coherent explanation for previously puzzling patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The relative importance of selective sweeps versus partial sweeps depends on parameter regimes and varies across viruses and over time, with recently emerged viruses like SARS-CoV-2 and A/H1N1pdm showing more complete sweeps than established A/H3N2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C129, C133-C135 describe conditions determining sweep completeness and provide empirical context. The parameter dependencies (C127) are derived from the model, and the virus-specific patterns (C134, C135) are supported by citations and consistent with the model predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The partial sweep dynamics are expected to occur generally in eco-evolutionary systems where evolutionary and ecological timescales are comparable, with the most complex dynamics arising when these timescales are similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C139 generalize the findings to broader eco-evolutionary contexts with appropriate citations. The reasoning about timescale matching (C139) is logical and well-supported, though empirical validation in other systems would strengthen this generalization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The multi-strain SIR model generically produces immune evasive variants that lead to selective sweeps in homogeneous populations but partial sweeps in heterogeneous populations with rapid immunity waning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C16-C18 summarize key model behaviors. These are well-supported by the simulations in Figure 1 and the mathematical analysis, clearly distinguishing between homogeneous and heterogeneous population dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The model exhibits frequency-dependent fitness similar to consumer-resource ecological models, where adaptive mutations are overrepresented in diversity but cease having growth advantages at intermediate frequencies ('expiring fitness'), with subsequent dynamics resembling neutral evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 draw important connections to ecological theory with appropriate citations (C19, C20). The 'expiring fitness' concept (C21) is clearly defined and demonstrated. The resemblance to neutral evolution (C23) is appropriately framed as having 'important consequences' rather than being complete equivalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C92",
+      "C93",
+      "C122",
+      "C123"
+    ],
+    "result": "Influenza A/H3N2 evolution is less predictable than expected from traveling wave models, with fit variants not consistently growing, contrasting with expectations from adaptive evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C25, C92, C93, C122, C123 describe the prediction problem and empirical observations, well-supported by citations to prior work (Barrat-Charlaix et al., 2021; Huddleston et al., 2020). This provides strong empirical motivation for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141"
+    ],
+    "result": "Sequence data for influenza was obtained from GISAID and for SARS-CoV-2 from NCBI (North America only).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140, C141 describe data sources with appropriate citations and acknowledgments. The geographic restriction for SARS-CoV-2 (C141) is justified for sampling homogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C36",
+      "C63",
+      "C118",
+      "C119"
+    ],
+    "result": "Heterogeneous immune responses could arise from varying exposure histories due to age or geography, and partial sweeps may affect evolutionary predictability, while evolutionary adaptation often occurs in changing rather than static environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C36, C63, C118, C119 are largely speculative or provide general context. C36 offers plausible biological mechanisms but lacks direct evidence. C63 suggests consequences without demonstration. C118-C119 provide conceptual framing but are not tested claims.",
+    "result_type": "MINOR"
+  }
+]

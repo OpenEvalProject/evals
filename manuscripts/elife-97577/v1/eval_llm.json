@@ -1,0 +1,434 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "A genome-wide CRISPR-Cas9 chemogenetic screen was performed using the Toronto Knockout Library (70,948 guides targeting 18,053 genes) in HAP1 cells treated with three cell cycle inhibitors (palbociclib, colchicine, camptothecin) for 18 days. Genes were considered significantly enriched or de-enriched if the Loess-adjusted differential gene effect was \u00b10.5 and FDR <0.4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodology is clearly described with appropriate library coverage (>200-fold), defined statistical thresholds, and proper experimental timeline (C46-C49). The screen successfully identified expected hits for each inhibitor (C50-C61), validating the approach. The use of multiple inhibitors targeting different cell cycle phases provides internal controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The camptothecin screen identified expected DNA damage repair genes (Fanconi Anemia pathway members, RAD54L, MUS81) as sensitizing hits, and TOP1 (the molecular target) as the strongest resistance hit. Unexpectedly, genes involved in adaptive immunity (BIRC6, UBA5, USP14) also conferred sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Recovery of known camptothecin targets (TOP1, DDR genes) validates screen quality (C50-C52). The immune system finding (C54) is supported by clinical use of colchicine as immunomodulator (C55), though the mechanistic connection requires further investigation. The data demonstrate both expected and novel interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The colchicine screen identified genes involved in mitotic spindle assembly as sensitizing, and genes controlling vesicle trafficking and Mediator complex as desensitizing. Unexpectedly, Fanconi Anemia complex members conferred resistance to colchicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of mitotic spindle genes as sensitizing hits (C53) is consistent with colchicine's mechanism as a microtubule inhibitor. The unexpected resistance of Fanconi Anemia genes to colchicine (C72) contrasts with their sensitization to camptothecin, suggesting phase-specific roles. Multiple pathway analyses support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The palbociclib screen identified known G1/S regulators at expected ranks: CCNE1 (2nd), CDK6 (24th), CDK2 (27th), CCND2 (29th), CCND1 (46th) as sensitizing hits, and RB1 as conferring substantial resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Recovery of canonical CDK4/6-RB1-E2F pathway components validates the screen (C56-C61). The ranking order reflects known biological importance, with CCNE1 (CDK2 partner) ranking highest among sensitizing genes. RB1 resistance is mechanistically consistent as its loss bypasses CDK4/6 requirement. This provides strong positive controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The majority of genes conferring sensitivity or resistance were specific to individual inhibitors with minimal overlap. Only 13 genes caused sensitivity and 20 caused resistance across all three conditions, which were excluded as non-specific.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The specificity of hits to individual inhibitors (C62) demonstrates that the screen identified biologically relevant, phase-specific regulators rather than general fitness genes. The small number of pan-inhibitor hits (C63-C64) and their exclusion is appropriate. Venn diagram analysis supports distinct biological processes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Loss of genes involved in chromatin structure and RNA metabolism conferred resistance to camptothecin. KICSTOR complex members (negative mTOR regulators) showed de-enrichment, potentially through mTOR-mediated RNF168 degradation affecting DDR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The chromatin/RNA metabolism resistance (C65) is unexpected given their known roles in DNA repair. The KICSTOR-mTOR-RNF168 mechanism (C66-C68) is speculative, based on a single citation. Alternative explanations for these interactions are not explored. Additional validation experiments would strengthen these interpretations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Palbociclib sensitivity was enhanced by inactivation of genes involved in H4 acetylation, Pol II transcription, and DDR, though weaker than with DNA damaging agents. This is consistent with reports that long-term palbociclib treatment induces DNA damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DDR gene sensitivity (C73) is supported by multiple chromatin-modifying complexes (SIN3, NuA4, STAGA, Mediator) showing similar effects (C75). The interpretation that palbociclib induces DNA damage (C74) is supported by recent literature citations. The weaker effect compared to direct DNA damaging agents is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Almost 25% (170/689) of genes conferring unique palbociclib resistance are associated with mitochondrial function. Chemical inhibitors of oxidative phosphorylation (rotenone, TTFA, oligomycin) showed dose-dependent positive proliferation interactions with palbociclib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The strong enrichment of mitochondrial genes (C76) is validated by pharmacological experiments (C77) showing mutual rescue between mitochondrial inhibitors and palbociclib. The dose-dependent effects and testing of multiple ETC complexes strengthen the conclusion. However, the authors acknowledge potential confounding from protein stability/phenotypic lag.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Core PRC2 components (EZH2, SUZ12, EED) ranked as 8th, 4th, and 3rd strongest resistance hits to palbociclib among 18,053 genes. PRC1 components (RING1, RNF2, PCGF6) also conferred resistance, while H2AK119ub1 deubiquitinase components (OGT, ASXL1, HAT1) conferred sensitivity. No PRC components affected camptothecin or colchicine sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The profound resistance of core PRC2 components (C78-C81) is well-supported by ranking data and validated by multiple approaches. The opposing effects of PRC1 (resistance, C83) and deubiquitinase complex (sensitivity, C85) are mechanistically consistent with H2AK119ub1 biology (C84). The specificity to palbociclib (C86) strongly implicates PRC2 in G1 regulation specifically.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "Treatment with increasing doses of GSK126 (EZH2 inhibitor) rescued palbociclib-induced proliferation suppression after 9 days, though the highest dose (5 \u00b5M) showed some synergistic effects with low palbociclib doses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pharmacological validation (C87) confirms the genetic screen results using a specific EZH2 inhibitor. The dose-response relationship and partial synergy at high doses are appropriately reported. This provides orthogonal validation of the PRC2-palbociclib interaction beyond genetic approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "PRC2.1 accessory proteins (PHF1, MTF2, PHF19, EPOP) all conferred significant palbociclib resistance, with MTF2 being strongest. Conversely, PRC2.2 accessory proteins showed enhanced (AEBP2) or neutral (JARID2) sensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects of PRC2.1 vs PRC2.2 components (C88-C91) are clearly demonstrated and represent a key finding. The ranking of MTF2 as strongest (C89) is supported by screen data. The opposing effects of the two subcomplexes suggest distinct roles in G1 regulation, which is further validated in subsequent experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Validation experiments using pooled sgRNA knockouts confirmed that EZH2, SUZ12, EED, and MTF2 conferred palbociclib resistance similar to RB1 (positive control), while PRC2.2 components (AEBP2, JARID2) showed slight but statistically significant sensitivity. MTF2 was chosen for detailed study as the predominant PCL subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The competitive proliferation assays (C92-C93) validate screen results with independent methodology. Statistical analysis is appropriate (p-values reported). The rationale for focusing on MTF2 (C94) is supported by literature showing it is the predominant PCL protein. The choice of SUZ12 over EZH2 (C95) is justified by avoiding EZH1 compensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Monoclonal MTF2\u2206 cells showed resistance to palbociclib (IC50=1.033 \u00b5M vs WT=0.3936 \u00b5M) and to structurally related CDK4/6 inhibitors (ribociclib, abemaciclib), while JARID2\u2206 cells were slightly more sensitive (IC50=0.2216 \u00b5M).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative IC50 measurements (C96-C97) provide precise validation with monoclonal lines. Testing multiple CDK4/6 inhibitors (C98) demonstrates the effect is not palbociclib-specific but relates to CDK4/6 inhibition generally. The opposing effects of MTF2\u2206 and JARID2\u2206 are consistent with screen results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "MTF2\u2206 and SUZ12\u2206 cells showed significantly more S-phase entry in palbociclib, while JARID2\u2206 cells showed significantly fewer S-phase cells. No detectable increase in apoptosis markers was observed in any knockout line with or without palbociclib treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The BrdU incorporation data (C99-C100) directly demonstrate that PRC2.1 loss allows cell cycle progression despite palbociclib. The absence of apoptosis (C101) rules out differential cell death as an explanation. This supports the conclusion that effects are due to altered G1/S regulation rather than survival differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Western blotting showed no change in bulk H3K27me3 levels in MTF2\u2206 and JARID2\u2206 cells, while SUZ12\u2206 cells displayed significant reduction (p=0.0104). This suggests phenotypic changes are due to altered H3K27me3 localization rather than overall abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential effects on bulk H3K27me3 (C102-C103) are important for interpretation. The maintenance of total H3K27me3 in MTF2\u2206/JARID2\u2206 but not SUZ12\u2206 is consistent with PRC2.1/2.2 having distinct localization roles while SUZ12 is required for all PRC2 activity. This motivates the subsequent genomic localization studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "PCA analysis showed high variance between genotypes for both H3K27me3 and transcripts. RNA-Seq showed substantial shifts with palbociclib treatment, but CUT&RUN showed no large H3K27me3 distribution changes with palbociclib. DESeq2 found no significant changes in H3K27me3 peak locations with palbociclib treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PCA and DESeq2 analyses (C104-C107) are appropriate for genome-wide data. The finding that H3K27me3 distribution doesn't change with palbociclib (C106-C107) while transcripts do (C105) supports the interpretation that MTF2 affects basal gene expression rather than drug-induced adaptation (C108). This is a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "MTF2\u2206 cells showed significantly decreased H3K27me3 at 5808 promoters vs 1034 in JARID2\u2206 cells. Of these, 5149 were MTF2-dependent, 392 JARID2-dependent, and 629 co-dependent. Correspondingly, 733 transcripts were upregulated in MTF2\u2206 vs 114 in JARID2\u2206, with 666 MTF2-dependent, 47 JARID2-dependent, and 67 co-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative CUT&RUN and RNA-Seq analysis (C109-C117) demonstrates MTF2-containing PRC2.1 affects more genes than JARID2-containing PRC2.2 in HAP1 cells. The correlation between H3K27me3 loss and transcript upregulation supports direct repression. Statistical thresholds are clearly defined. The conclusion (C118) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Only ~30-40% of promoters with significantly changed H3K27me3 were upstream of protein-coding genes, while ~80-90% of significantly differentially expressed transcripts encoded proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This observation (C119-C120) is important for interpreting the functional consequences of H3K27me3 changes. The enrichment of protein-coding genes among differentially expressed transcripts suggests these are the functionally relevant targets. The analysis appropriately focuses subsequent pathway analysis on protein-coding genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Complete loss of H3K27me3 signal at CpG islands was observed in MTF2\u2206 cells, with only partial loss in JARID2\u2206 cells. Genome-wide analysis showed significant loss at CpG islands in MTF2\u2206 (Fisher's exact test, OR=20.4, p=2.2\u00d710\u207b\u00b3\u2070\u2078) vs modest loss in JARID2\u2206 (OR=9.8, p=6.5\u00d710\u207b\u2077).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The heatmap and statistical analyses (C121-C124) clearly demonstrate differential requirements for MTF2 vs JARID2 at CpG islands. The extremely significant p-values and large effect sizes support the interpretation that PRC2.1 is required for H3K27me3 establishment at CpG islands while PRC2.2 contributes to full levels (C125-C126). This is consistent with known DNA-binding properties of PCL proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C127",
+      "C128"
+    ],
+    "result": "50-70% of human promoters contain at least one CpG island. MTF2 is required for H3K27me3 deposition at promoters containing CpG islands involved in cell cycle regulation, explaining greater gene expression changes in MTF2\u2206 vs JARID2\u2206 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The prevalence of CpG islands in promoters (C127) is well-established. The pathway analysis showing enrichment of cell cycle genes among CpG island-containing promoters with altered H3K27me3 supports the conclusion (C128). This mechanistically links MTF2's CpG island targeting to its role in G1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "CCND1 and CCND2 promoters lost H3K27me3 signal and showed strong transcriptional induction in MTF2\u2206 cells (4.3 and 2.7 log2 fold-decrease in H3K27me3, respectively), but were unaltered in JARID2\u2206 cells. CCND3 promoter H3K27me3 changes were not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CUT&RUN and RNA-Seq data (C129-C133) identify CCND1/CCND2 as key MTF2 targets. The statistical significance and magnitude of changes are clearly reported. The lack of CCND3 changes (C134) provides an important internal control. These are among the most upregulated genes in MTF2\u2206 cells (C130), supporting their functional importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "All three D-type cyclin promoters contain CpG islands, but CCND1 and CCND2 have regions ~7\u00d7 larger (7460 and 6003 bp) than CCND3 (996 bp). CCND1 contains ~2\u00d7 more CpG repeats than CCND2 (575 vs 379) and ~6\u00d7 more than CCND3 (575 vs 95), suggesting CpG island-dependent regulation of CCND1/CCND2 but not CCND3 by MTF2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative analysis of CpG island size and density (C135-C138) provides a mechanistic explanation for differential MTF2 regulation. The correlation between CpG island size/density and MTF2-dependent regulation (C139) is consistent with PCL proteins' known CpG island-binding properties. This elegantly explains the selective regulation of CCND1/CCND2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Western blotting showed increased CCND1 and CCND2 (but not CCND3) protein levels in pooled knockouts of MTF2, EZH2, EED, and SUZ12, but not JARID2. Clonal SUZ12\u2206 and MTF2\u2206 (but not JARID2\u2206) lines showed increased mRNA and protein for CCND1/CCND2 but not CCND3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protein-level validation (C140-C142) confirms the RNA-Seq results and demonstrates functional consequences. Testing both pooled and clonal knockouts strengthens confidence. The consistent pattern across core PRC2 and MTF2 but not JARID2 supports the PRC2.1-specific effect. The lack of CCND3 changes provides an important negative control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143"
+    ],
+    "result": "None of the E-type cyclins, CIP/KIP CDK inhibitors, RB1, or E2F proteins displayed significantly altered mRNA transcript abundance in MTF2\u2206 or JARID2\u2206 lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This negative result (C143) is important for demonstrating specificity. The lack of changes in other canonical G1/S regulators suggests CCND1/CCND2 are the primary PRC2.1 targets affecting palbociclib sensitivity. Western blot confirmation of protein levels strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "GSK126 treatment (6 days) reduced H3K27me3 levels in all cell lines tested and increased CCND1 expression in HAP1, KBM7, MDA-MB-231, and COS7 cells, but not in LNCaP or NR-6 cells, demonstrating context-dependent regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The panel of cell lines (C144-C149) demonstrates that PRC2 regulation of CCND1 occurs in multiple contexts (CML, breast cancer, immortalized cells) but not universally. The inclusion of KBM7 (HAP1 parent line, C146) rules out HAP1-specific artifacts. The context-dependence (C149) is consistent with known PRC2 biology and appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C150"
+    ],
+    "result": "Depletion of SUZ12 or MTF2 in COS7 and MDA-MB-231 cells resulted in significantly increased CCND1 expression, confirming that MTF2-containing PRC2.1 represses CCND1 in diverse cell types beyond HAP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic validation in additional cell lines (C150) confirms the pharmacological results and demonstrates the effect is not HAP1-specific. Testing both a breast cancer line and immortalized fibroblasts strengthens generalizability. This addresses a key concern about context-dependence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C151",
+      "C152"
+    ],
+    "result": "Overexpression of CCND1 or CCND2 was sufficient to induce palbociclib resistance. Increased association of CCND1 with FLAG-tagged CDK6 was observed in SUZ12\u2206 and MTF2\u2206 (but not JARID2\u2206) cells, suggesting elevated D-type cyclins drive formation of active CDK4/6 complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The overexpression experiment (C151) demonstrates sufficiency of CCND1/CCND2 for palbociclib resistance. The co-IP data (C152) shows increased CCND1-CDK6 association in PRC2.1 mutants, supporting increased complex formation. Together, these establish a causal link between PRC2.1 loss, cyclin upregulation, and palbociclib resistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "MTF2\u2206 cells maintained a higher ratio of phosphorylated to unphosphorylated RB1 at each palbociclib concentration tested compared to WT or JARID2\u2206 cells. This suggests increased CCND1/CCND2 levels in MTF2\u2206 cells increase CDK4/6 kinase activity, driving S-phase entry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RB1 phosphorylation data (C153) directly demonstrate increased CDK4/6 activity in MTF2\u2206 cells despite palbociclib treatment. Combined with the BrdU incorporation data (C99) showing increased S-phase entry, this establishes the mechanistic link (C154) between cyclin upregulation and palbociclib resistance through the canonical CDK4/6-RB1 pathway.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C155"
+    ],
+    "result": "MTF2-containing PRC2.1 antagonizes G1 progression by repressing expression of D-type cyclins CCND1 and CCND2 in certain cellular contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This main conclusion (C155) is well-supported by the comprehensive data: (1) genetic screens identify PRC2.1 as palbociclib resistance factor, (2) MTF2\u2206 cells show loss of H3K27me3 at CCND1/CCND2 promoters, (3) CCND1/CCND2 are upregulated in MTF2\u2206 cells, (4) this leads to increased CDK4/6 activity and S-phase entry, (5) the effect is validated in multiple cell types. The caveat about context-dependence is appropriate.",
+    "result_type": "MAJOR"
+  }
+]

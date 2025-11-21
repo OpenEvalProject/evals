@@ -1,0 +1,167 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C74"
+    ],
+    "result": "The authors develop a theoretical framework that derives the conditional sibling trait distribution under polygenic architecture, assuming infinitesimal genetic effects, random mating, and Gaussian environmental effects. The framework predicts regression-to-the-mean for siblings of individuals with extreme trait values, with different patterns expected for de novo and Mendelian architectures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C26-C30 describe the theoretical framework and its predictions, which are validated by simulation (C74). The derivation is mathematically grounded in quantitative genetics theory (C30 cites Falconer and Mackay, 1983; Alberts et al., 2002), and the validation shows the theoretical distributions match simulated data. The framework's assumptions are clearly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C64"
+    ],
+    "result": "The authors develop statistical tests that can distinguish between polygenic, de novo, and Mendelian genetic architectures in trait tails. The tests are well-calibrated and demonstrate that power to detect de novo architecture is greatest at high heritability, while power to detect Mendelian architecture is greatest at low heritability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C37-C41, and C64 describe the statistical tests and their power characteristics. The tests are validated through simulation (C64, Figure 5), showing proper calibration and quantified power under different scenarios. The power analysis (C39-C41) is supported by simulation data showing the relationship between heritability and detection power for each architecture type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Application of the statistical tests to UK Biobank data (>21,000 siblings, 18 traits) reveals varied genetic architectures: polygenic architecture for Ankle Spacing, Mendelian architecture in specific tails for Urate, Waist Circumference, and Left Hand Grip Strength, and de novo architecture for Forced Expiratory Volume and Sitting Height.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C42-C50 report results from UK Biobank application. While the data source is documented (C42) and results are presented with statistical tests (Figure 6), the interpretation faces significant limitations acknowledged by the authors (C52-C53): departures from expected distributions could be due to environmental factors rather than genetic architecture. The finding for Sitting Height is supported by independent sequencing studies (C49), but other findings lack external validation. The tests cannot definitively distinguish genetic from environmental causes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C7",
+      "C59"
+    ],
+    "result": "The approach provides a novel method for inferring genetic architecture without requiring genetic data, applicable to any cohort with sibling trait data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C59 describe the key methodological innovation. The approach is demonstrated to work on phenotypic data alone (C8), validated through simulation and UK Biobank application. The broad applicability (C7) is supported by the method's reliance only on sibling trait values and heritability estimates, which are widely available.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C77"
+    ],
+    "result": "The authors acknowledge several important limitations: departures from expected distributions could be due to environmental rather than genetic factors, the model assumes independent environmental effects among siblings, random mating, and additive genetic effects. The tests are claimed to be robust to shared environmental effects that are consistent across the trait distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C58 and C77 describe limitations and assumptions. While the authors acknowledge key limitations (C52-C54, C56-C57), the claim of robustness to shared environmental effects (C77) is not directly demonstrated with data\u2014it is stated but not validated. The assumption of independent environmental effects (C54) is critical but only partially addressed by citing Polderman et al., 2015 (C55), which may not apply to all traits studied. The impact of violations of random mating (C56) and additivity (C57) assumptions on the specific traits analyzed is not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C25"
+    ],
+    "result": "The use of siblings in quantitative genetics has historical precedent (Fisher, 1919; Lush, 1940) for heritability estimation and household effects, but no prior theoretical framework existed for inferring genetic architecture from sibling trait data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C11, and C25 establish the historical context and novelty. The historical use of siblings is well-documented through citations (C9-C11), and the gap in the literature (C25) is a reasonable characterization that motivates the current work. This represents accurate assessment of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C60",
+      "C61"
+    ],
+    "result": "Individuals with extreme trait values are at greatest disease risk and may harbor rare variants of large effect due to natural selection. Selection pressures can enrich trait tails for rare variants, affecting polygenic score accuracy and sibling similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3, C16-C21, C60-C61 describe the biological and evolutionary context. These claims are supported by appropriate citations (Koch et al., 2024; Uricchio, 2020; Corte et al., 2023; Momozawa and Mizukami, 2021; Chan et al., 2011) and represent established knowledge in evolutionary genetics and complex trait architecture. The logical connections between selection, rare variants, and trait tails are well-founded.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Genetic architecture is typically inferred from multiple study types (GWAS, sequencing, family studies), and prior sibling studies on intellectual ability have shown patterns consistent with different genetic architectures in different parts of the trait distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C15 and C22-C24 describe standard approaches and prior empirical findings. These are well-supported by citations (Yengo et al., 2022; Selvaraj et al., 2022; Singh et al., 2022; Iyegbe and O'Reilly, 2022; Shakeshaft et al., 2015; Reichenberg et al., 2016) and represent accurate characterization of the field and prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C62",
+      "C63",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The framework could be extended to multiple future applications including heritability estimation, characterizing mating patterns, inferring selection pressures, clinical genetic testing prioritization, and improving sequencing study design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C51, C62-C63, C67-C72 describe potential future applications. These are speculative (as noted in evidence_type) and represent possibilities rather than demonstrated capabilities. While the suggestions are reasonable extensions of the framework, they require additional development and validation. These claims about future work cannot be evaluated as supported without actual implementation and testing.",
+    "result_type": "MINOR"
+  }
+]

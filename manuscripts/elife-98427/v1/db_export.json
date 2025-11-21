@@ -1,0 +1,2099 @@
+{
+  "submission": {
+    "id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:06:17.720454Z",
+    "updated_at": "2025-11-21T20:06:17.720454Z"
+  },
+  "content": [
+    {
+      "id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "content_type": "manuscript",
+      "content_text": "# Multi-tissue network analysis reveals the effect of JNK inhibition on dietary sucrose-induced metabolic dysfunction in rats\n\n## Authors\n\n- Hong Yang<sup>1</sup> ([ORCID: 0009-0002-0414-2471](https://orcid.org/0009-0002-0414-2471))\n- Cheng Zhang<sup>1</sup> ([ORCID: 0000-0002-3721-8586](https://orcid.org/0000-0002-3721-8586))\n- Woonghee Kim<sup>1</sup>\n- Mengnan Shi<sup>1</sup>\n- Metin Kiliclioglu<sup>2</sup>\n- Cemil Bayram<sup>3</sup>\n- Ismail Bolar<sup>2</sup>\n- \u00d6zlem \u00d6zdemir Tozlu<sup>4</sup>\n- Cem Baba<sup>4</sup>\n- Nursena Yuksel<sup>4</sup>\n- Serkan Yildirim<sup>2</sup>\n- Shazia Iqbal<sup>5</sup>\n- Jihad Sebhaoui<sup>5</sup>\n- Ahmet Hac\u0131muftuoglu<sup>3</sup>\n- Matthias Uhlen<sup>1</sup>\n- Jan Boren<sup>6</sup>\n- Hasan Turkez<sup>7</sup>\n- Adil Mardinoglu<sup>1</sup> ([ORCID: 0000-0002-4254-6090](https://orcid.org/0000-0002-4254-6090)) \u2020\n\n### Affiliations\n\n1. Science for Life Laboratory, KTH Royal Institute of Technology Stockholm Sweden ([ROR:026vcq606](https://ror.org/026vcq606))\n2. Department of Pathology, Veterinary Faculty , Atat\u00fcrk University Erzurum Turkiye ([ROR:03je5c526](https://ror.org/03je5c526))\n3. Department of Medical Pharmacology, Faculty of Medicine, Atat\u00fcrk University Erzurum Turkiye ([ROR:03je5c526](https://ror.org/03je5c526))\n4. Department of Molecular Biology and Genetics, Faculty of Science, Erzurum Technical University Erzurum Turkiye ([ROR:038pb1155](https://ror.org/038pb1155))\n5. Trustlife Labs Drug Research and Development Center Istanbul Turkiye\n6. Department of Molecular and Clinical Medicine, University of Gothenburg, Sahlgrenska University Hospital Gothenburg Sweden ([ROR:01tm6cn81](https://ror.org/01tm6cn81))\n7. Department of Medical Biology, Faculty of Medicine, Atat\u00fcrk University Erzurum Turkiye ([ROR:03je5c526](https://ror.org/03je5c526))\n8. Centre for Host-Microbiome Interactions, Faculty of Dentistry, Oral & Craniofacial Sciences, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))\n\n\u2020 Corresponding author\n\n## Abstract\n\nExcessive consumption of sucrose, in the form of sugar-sweetened beverages, has been implicated in the pathogenesis of metabolic dysfunction\u2010associated fatty liver disease (MAFLD) and other related metabolic syndromes. The c-Jun N-terminal kinase (JNK) pathway plays a crucial role in response to dietary stressors, and it was demonstrated that the inhibition of the JNK pathway could potentially be used in the treatment of MAFLD. However, the intricate mechanisms underlying these interventions remain incompletely understood given their multifaceted effects across multiple tissues. In this study, we challenged rats with sucrose-sweetened water and investigated the potential effects of JNK inhibition by employing network analysis based on the transcriptome profiling obtained from hepatic and extrahepatic tissues, including visceral white adipose tissue, skeletal muscle, and brain. Our data demonstrate that JNK inhibition by JNK-IN-5A effectively reduces the circulating triglyceride accumulation and inflammation in rats subjected to sucrose consumption. Coexpression analysis and genome-scale metabolic modeling reveal that sucrose overconsumption primarily induces transcriptional dysfunction related to fatty acid and oxidative metabolism in the liver and adipose tissues, which are largely rectified after JNK inhibition at a clinically relevant dose. Skeletal muscle exhibited minimal transcriptional changes to sucrose overconsumption but underwent substantial metabolic adaptation following the JNK inhibition. Overall, our data provides novel insights into the molecular basis by which JNK inhibition exerts its metabolic effect in the metabolically active tissues. Furthermore, our findings underpin the critical role of extrahepatic metabolism in the development of diet-induced steatosis, offering valuable guidance for future studies focused on JNK-targeting for effective treatment of MAFLD.\n\n## Introduction\n\nHepatic steatosis (HS) is characterized by the accumulation of triglycerides (TG) in the liver (at least 5% of liver weight) in the absence of secondary contributing factors (Nassir et al., 2015). MAFLD encompasses a spectrum of conditions, ranging from simple HS to metabolic dysfunction-associated steatohepatitis (MASH), which is characterized by HS combined with various degrees of liver inflammation and liver injury, with or without fibrosis. MASH can progress to advanced liver disease including cirrhosis and hepatocellular carcinoma (Machado and Cortez-Pinto, 2023). The global prevalence of MAFLD is estimated to be 20\u201325% (Younossi et al., 2023), and it is rapidly increasing in parallel with the epidemic of obesity and type 2 diabetes mellitus (Kotsiliti, 2023; Le et al., 2023). Given the absence of approved pharmacological therapy for MAFLD by the US Food and Drug Treatment (FDA) (Llovet et al., 2023; Nassir et al., 2015), the discovery and development of effective therapies are of great importance in MAFLD treatment.\n\nThe progression of MAFLD is associated with various factors, including overnutrition, genetic determinants, and associated comorbidities (Sveinbjornsson et al., 2022; Yki-J\u00e4rvinen et al., 2021). Strong evidence from meta-analysis, prospective cohort studies, and observational studies indicate that excessive sucrose, a disaccharide that comprises equal amounts of glucose and fructose and is prevalent in all kinds of sugar-sweetened beverages, maybe an initial factor for the development of MAFLD (Geidl-Flueck et al., 2021; Geurtsen et al., 2021; Karlsen et al., 2022; Malik and Hu, 2022; Zhang et al., 2021). For instance, a previous study reported that rats subjected to a 12 wk high-sucrose diet (25% w/v sucrose), developed a metabolic syndrome phenotype characterized by glucose intolerance, HS, and insulin resistance (IR) (Sousa et al., 2018). Recent research further reveals that the consumption of sucrose at a concentration of 10% w/v can disrupt energy balance and induce HS within 10\u201320 wk (Jang et al., 2020; Stephenson et al., 2022). In this context, JNK, a mitogen-activated protein kinase family member, emerges as a critical player due to its known function in response to intra- and extracellular stress, including hypercaloric diet consumption (Nikolic et al., 2020; Sabio et al., 2009; Softic et al., 2020). Indeed, accumulating evidence implicated JNK in the pathogenesis of diet-induced obesity, IR, development of metabolic syndrome, and MAFLD (Czaja, 2010; Sabio and Davis, 2010; Seki et al., 2012; Singh et al., 2009). JNK has three isoforms: JNK1 and JNK2, which are ubiquitously expressed, and JNK3 is specifically expressed in the brain, testis, and heart (Chang and Karin, 2001). Previously, Singh et al. demonstrated that increased hepatic JNK signaling occurred simultaneously with steatosis and lipid accumulation in a steatohepatitis model induced by a methionine- and choline-deficient diet (MCD) (Singh et al., 2009). Notably, MCD diet-fed JNK1 null mice exhibited significantly reduced levels of key hallmarks of MAFLD, including HS, TG accumulation, inflammation, lipid peroxidation, hepatocyte injury, and apoptosis (Singh et al., 2009). Similarly, high-fat diet-fed mice with hepatic ablation of both JNK1 and JNK2 are protected from HS and IR (Vernia et al., 2014). Altogether, these findings suggest that the suppression of the JNK pathway may prevent the development of HS and related metabolic syndrome (Kodama and Brenner, 2009; Schattenberg et al., 2006). However, whether JNK mediates the metabolic disruption induced by sucrose overconsumption remains to be elucidated. Moreover, our previous study demonstrated that JNK-IN-5A, a selective JNK2 and JNK3 inhibitor (Angell et al., 2007; Cerbone et al., 2012), effectively decreased fat accumulation and steatosis-related protein expression in an in vitro steatosis model (Kim et al., 2023). However, the inhibitory effect of JNK-IN-5A to JNK and JNK-related pathways in in vivo is unknown. It is established that JNK exerts its metabolic regulation as a result of multi-tissue communication, including those between liver and adipose tissues (Azzu et al., 2020), and skeletal muscle (Nikolic et al., 2020; Vernia et al., 2014). A systematic investigation into tissue-specific and tissue-crosstalk metabolic changes in response to diet and therapy interventions is, therefore, paramount by using genome-scale metabolic models (GEMs). GEMs are the collection of biochemical reactions and the associated enzymes and transporters between the cellular compartments and such models can be used in the analysis of omics data for gaining insights and interpretation of the omics data (Mardinoglu et al., 2013; Mardinoglu et al., 2018; Mardinoglu and Nielsen, 2012; Mardinoglu and Palsson, 2025).\n\nIn this study, we first performed a 7 d oral toxicology study and studied the tolerability of JNK-IN-5A in rats. Next, we explored the potential therapeutic effect of JNK-IN-5A under high sucrose consumption in in vivo by performing systems biology analysis. To elucidate the systems-wide impact of sucrose overconsumption and JNK-IN-5A treatment, we investigated the intra- and inter-tissue response through integrative analysis of transcriptomics profiles from the metabolically active tissues, including liver and three other extrahepatic tissues: visceral white adipose tissue (vWAT), skeletal muscle (SkM), and brain tissues. We further predicted the genome-wide metabolic activity changes induced by liquid sucrose ingestion and JNK-IN-5A treatment by performing genome-scale metabolic modeling.\n\n## Results\n\n### The acute effect of the JNK-IN-5A in rats\n\nWe previously showed that the JNK-IN-5A can effectively decrease the TG accumulation and steatosis-related protein levels in an in vitro model simulating the activated de novo lipogenesis in MAFLD patients (Kim et al., 2023). Here, we first performed a 7 d oral toxicology study and studied the tolerability of JNK-IN-5A in rats. Four groups of three males and three females were given vehicle and doses of 30, 100, and 300 mg/kg of JNK-IN-5A, once a day for 7 d (Figure 1, Figure 2a). We assessed clinical adverse effects, body weight, and clinical pathological parameters during the study.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig1-v1.jpg)\n\n**Figure 1.:** Study groups included the healthy control group received tap water, the sucrose group received 10% sucrose water, the sucrose+JNK_D1 group received 10% sucrose and 30 mg/kg/d JNK-IN-5A, and the sucrose+JNK_D2 group received 10% sucrose and 60 mg/kg/d JNK-IN-5A (N=44, n=11 per group).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig2-v1.jpg)\n\n**Figure 2.:** (a) The acute effect of JNK-IN-5A in rats (n=3/Sex/Group). Statistically significant changed clinical chemistry parameters were presented as mean \u00b1 standard deviation (SD), see also Supplementary file 1. ALB: albumin; ALP: alkaline phosphatase; BUN: blood urea nitrogen; PHOS: phosphate; GLU: glucose; K+: potassium; Na+: sodium; TP: total Protein; GLOB: globulin. Statistical significance was assessed by one-way ANOVA testing followed by Tukey\u2019s multiple comparisons post-test or Shapiro\u2013Wilk testing followed by Dunn\u2019s post-hoc test, as appropriate, <i>p-value <0.05 is considered as statistical significance. (b) Boxplot showing the levels of plasma triglycerides in control, sucrose, sucrose+JNK_D1, and sucrose +JNK_D2 rats. Statistical significance was assessed by one-way ANOVA testing followed by Tukey\u2019s multiple comparisons post-test or the Kruskal-Wallis test followed by Dunn\u2019s multiple comparisons post-test, as appropriate, <i>p-value <0.05 is considered as statistical significance. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001. (c) Boxplot showing the relative mRNA expression of Mapk8, Mapk9, and Mapk10 in the studied tissues. The count-based abundance of genes was transformed using the vst function and the Benjamini-Hochberg adjusted p-value (p.adj) is derived from DESeq2 (Love et al., 2014). *p.adj <0.05, **p.adj <0.01, ***p.adj <0.001, ****p.adj <0.0001. (d) Correlation between the relative mRNA expression of Mapk8 and (e) Mapk9 in skeletal muscle tissue (SkM) and plasma triglycerides level.\n\nA few animals including those given vehicles displayed noisy respiration and reflux. These signs were only observed in connection with dosing, suggesting being related to the high viscosity of the formulation and foul taste, and are not considered as systemic side effects of the JNK-IN-5A administration. We observed none of the administrated doses led to significant changes in body weight and hematological parameters (Supplementary file 1). Clinical chemistry parameters revealed lower plasma levels of glucose, blood urea nitrogen, and total proteins in female rats given JNK-IN-5A at all three doses (Figure 2a, Supplementary file 1). In addition, the two higher doses of JNK-IN-5A decreased the levels of sodium in female rats and elevated the level of phosphate in both sexes (Figure 2a, Supplementary file 1). Overall, the administration of JNK-IN-5A is well tolerated with regard to adverse clinical signs, body weight, and clinical hematology parameters.\n\n### Treatment of liquid sucrose-induced fatty liver with JNK-IN-5A\n\nWe next investigated the effect of JNK-IN-5A treatment in a rat model of MAFLD induced by liquid sucrose ingestion (Figure 1b). The rats feeding a standard chow diet received either tap water (control group) or sucrose-containing water (10% w/v sucrose, sucrose group) for 4 wk, after which rats on sucrose-watering were further divided into subgroups: sucrose-only group and JNK-IN-5A-treated groups at a regular dosage of 30 mg/kg/d (sucrose +JNK_D1 group) or a higher dosage of 60 mg/kg/d (sucrose +JNK_D2 group), for 3 wk. A total of 44 rats were used in this study (n=11 rats per group).\n\nWe observed that liquid sucrose consumption resulted in significantly increased plasma levels of TG (p<0.0001) and lactate dehydrogenase (LDH, p<0.0001), which is an inflammation marker, compared to the healthy controls (Figure 2b, Supplementary file 2). On sucrose water, JNK-IN-5A-treated rats exhibited significantly lower levels of TG (JNK_D1, p<0.0001; JNK_D2, p<0.001), aspartate aminotransferase (AST; JNK_D1, p=0.09; JNK_D2, p=0.005), and LDH (JNK_D1, n.s.; JNK_D2, p=0.015) but had no significant change on body weight, glucose, high-density lipoprotein (HDL) and low-density lipoprotein (LDL) as compared to their corresponding controls (Figure 2b, Supplementary file 2). We also performed neurological tests to study the potential effect of JNK-IN-5A on the brain. We found no significant differences among groups in retention latencies, a measure of learning and memory abilities in passive avoidance test (Supplementary file 3). Additionally, the locomotor activity test was used to analyze behaviors such as locomotion, anxiety, and depression in rat. No significant differences were observed among groups in stereotypical movements, ambulatory activity, rearing, resting percentage, and distance traveled (Supplementary file 4). Similarly, the elevated plus maze test (Walf and Frye, 2007), an assay for assessing anxiety-like behavior in rodents, showed that rats in all groups had comparable open-arm entries and durations (Supplementary file 5). Collectively, the behavior tests indicate the JNK-IN-5A-treated rats exhibit no evidence of anxiety and behavior disorders.\n\nTo investigate the gene-level inhibition of JNK upon JNK-IN-5A treatment, we further examined the mRNA expression of JNK1 (encoded by the gene Mapk8), JNK2 (encoded by the gene Mapk9), and JNK3 (encoded by the gene Mapk10) in the study. As anticipated, Mapk8 and Mapk9 have high expression in all these tissues (liver, vWAT, SkM, and brain) whereas Mapk10 is highly expressed specifically in the brain tissue (Figure 2c, Figure 3\u2014figure supplement 1a). Our analysis indicates that the treatment of JNK_D1 effectively alleviated the JNK1 gene expression in the liver (padj = 0.03) and exerted more profound inhibitory effects on both JNK1 (padj = 0.0009) and JNK2 gene expression (padj = 2.2e-07) in SkM (Figure 2c, Supplementary file 6). Interestingly, we found that plasma TG level is significantly correlated with the JNK2 gene expression in SkM (Figure 2d and e). In brain tissue, we found JNK3 gene expression exhibited a trend of dose-dependently inhibition in the JNK-IN-5A-treated groups. Particularly, the downregulation of JNK3 in the sucrose + JNK_D2 group approaches the borderline of significance (padj = 0.07), compared to those, which drank sweetened water group only (sucrose group) (Supplementary file 6).\n\n### JNK inhibition rewires metabolic perturbation in the liver and vWAT\n\nTo gain in-depth insight into system-level transcriptional response to sucrose consumption and JNK-IN-5A treatment, we next studied the global gene expression profiles in both liver and extrahepatic tissues (vWAT, SkM, and brain). A total of 19,780 protein-coding genes in the rat genome were analyzed (Martin et al., 2023). Principal component analysis (PCA) revealed that liquid sucrose ingestion resulted in the largest transcriptional changes in the liver and vWAT (Figure 3a), which is consistent with previous results (Stephenson et al., 2022). Of note, we observed that JNK-IN-5A treatment, especially JNK_D1, corrected to a large extent of the gene expression profile in the liver and vWAT of treated-rats towards the profile of healthy controls on a principal components space (Figure 3a). In SkM, the transcriptional difference is primally driven by JNK_D1 treatment and showed a clear separation (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig3-v1.jpg)\n\n**Figure 3.:** (a) Principal component analysis (PCA) of liver, visceral white adipose tissue (vWAT), skeletal muscle (SkM), and brain transcriptome data showing global gene expression profiles in control (n=9), sucrose (n=11), sucrose+JNK_D1 and sucrose+JNK_D2 (n=10/per group). Each data point represents a sample in the respective colored group. (b) Bar graphs represent the percentage of differential expressed genes (or regulated genes) associated with sucrose (sucrose vs. control), sucrose+JNK_D1 (sucrose+JNK_D1 vs. sucrose), or sucrose+JNK_D2 (sucrose+JNK_D2 vs. sucrose) in all protein-coding genes (N=19,780) for each tissue. (c) Heatmap of all genes differentially upregulated (red) and downregulated (blue) in three pairwise comparisons for sucrose (sucrose vs. control), sucrose+JNK_D1 (sucrose+JNK_D1 vs. sucrose), and sucrose+JNK_D2 (sucrose+JNK_D2 vs. sucrose) (adjusted p-value, p.adj<0.01) for each tissue. Column annotation represents tissues. (d) Venn diagram showing the overlap between significantly regulated genes response to sucrose consumption and JNK_D1 treatment.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Gene expression pattern of c-Jun N-terminal kinase (JNK) isoforms (b\u2013e) UpSet plot showing the number of shared differentially expressed genes (DEGs) (adjusted-p<0.01) associated with sucrose consumption and JNK-IN-5A treatment in the liver, visceral white adipose tissue (vWAT), skeletal muscle tissue (SkM), and brain tissues in the experimental rats. The histogram bar graph (right) shows the total number of DEGs in each comparison corresponding. The histogram bar graph (top) shows the number of DEGs shared among pairwise comparisons. Connected lines indicate what comparisons are sharing DEGs.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (a) Venn diagram showing the overlap between significantly regulated genes response to sucrose consumption and JNK_D2 treatment in liver and (b) in visceral white adipose tissue (vWAT). (c) Top 10 enriched KEGG pathways enriched by reversed genes after JNK_D1 treatment in liver and (d) in vWAT.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The BH-adjusted p-value (p.adj) is derived from DESeq2 (Love et al., 2014). *p.adj<0.05, **p.adj<0.01, ***p.adj<0.001, ****p.adj<0.0001.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The BH-adjusted p-value (p.adj) is derived from DESeq2 (Love et al., 2014). *p.adj<0.05, **p.adj<0.01, ***p.adj<0.001, ****p.adj<0.0001.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The BH-adjusted p-value (p.adj) is derived from DESeq2 (Love et al., 2014). *p.adj<0.05, **p.adj<0.01, ***p.adj<0.001, ****p.adj<0.0001.\n\nIn parallel with the results presented above, differential gene expression analysis revealed that the liver had the largest number of differentially expressed genes (DEGs, DESeq2-Benjamini-Hochberg adjusted p<0.01) associated with liquid sucrose ingestion, comprising a total of 2771 DEGs (14%), followed closely by vWAT with 2,724 DEGs (13.8%), SkM with 257 DEGs (1.3%), and the brain with a modest 30 DEGs (0.2%) (Figure 3b and c, Figure 3\u2014figure supplement 1b\u2013e, Supplementary file 6). Moreover, we observed that JNK_D1 treatment demonstrated a remarkable effect in the reversal of gene expression patterns related to sucrose consumption. Specifically, in the liver, JNK_D1 treatment substantially suppressed the expression of 60.7% (1143 out of 1884, hypergeometric p\u2248 0) sucrose-induced DEGs and elevated the expression of 22% of sucrose-repressed genes (195 out of 887, hypergeometric p=6.9e-129) (Figure 3d, Figure 3\u2014figure supplement 1b). Likewise, we observed a reversal of 42.2% and 31.4% (698 of 1655 and 336 out of 1069, respectively) DEGs in vWAT (Figure 3d, Figure 3\u2014figure supplement 1c). It should be noted that, in both liver and vWAT, the effect of JNK_D2 treatment is relatively smaller than JNK_D1 in terms of the corrections of DEGs (Figure 3\u2014figure supplement 2a and b). Pathway enrichment analysis of JNK_D1 reversed genes identified significantly enriched KEGG pathways related to carbon metabolism, fatty acid metabolism, protein processing in ER, and oxidative phosphorylation (OXPHOS) (Benjamini-Hochberg adjusted p<0.01) (Figure 3\u2014figure supplement 2c and d). Interestingly, some of the genes exhibited opposing regulation in the liver and vWAT in response to the interventions of sucrose only and the combination of sucrose intervention and JNK-IN-5A treatment. This is exemplified in genes related to fatty acid degradation, elongation, and biosynthesis (up in the liver and down in vWAT in sucrose only group, while down in the liver and up in vWAT in sucrose plus JNK-IN-5A-treated groups), including Cpt2, Acads, Acadvl, Acat1, Acot5, Eci3, Hsd17b12, and Oxsm (Figure 3\u2014figure supplement 3, Supplementary file 6); genes related to fatty acid (FA) uptake, including fatty acid binding proteins Fabp1, Fabp4, and transporters Slc27a1 and Slc27a5 (Figure 3\u2014figure supplement 4, Supplementary file 6); and genes related to redox homeostasis, including Prdx4, a secreted enzyme that scavenges redox oxidative stress (ROS), Selenos, and Ndufa6 (Figure 3\u2014figure supplement 5, Supplementary file 6). Taken together, these results suggest that JNK-IN-5A treatment reshapes sucrose-induced transcriptional changes in both the liver and vWAT, reinforcing their metabolic synergy in FA uptake and metabolism (Stephenson et al., 2022).\n\n### JNK inhibition in SkM correlated with the regulation of energy metabolism in the liver and vWAT\n\nIt has been reported that JNK acts as a critical mediator of muscle phenotype and adaptive remodeling in animals and humans (Lessard et al., 2018). Here, we found that in contrast to the massive transcriptional regulation observed in the liver and vWAT, liquid sucrose intake has minimal impact on SkM in terms of both genome-wide transcriptional variance (Figure 3a) and the number of DEGs (Figures 3a and 4a and b). While in JNK_D1-treated SkM, a substantial quantitative difference in gene expression emerged, encompassing 4,159 (20.9%) DEGs, of which 97% up-regulated (1552 out of 1588) and 99% down-regulated (2557 out of 2571) genes being exclusively dependent on the JNK_D1 treatment (Figure 4a and b). Functional analysis revealed that many of the upregulated genes are involved in immune-related pathways, including hematopoietic cell lineage (HSCs), osteoclast differentiation, chemokine signaling pathway, phagosome, and Fc gamma R-mediated phagocytosis, and down-regulated genes are involved in OXPHOS, thermogenesis, TCA cycle, carbon metabolism, cardiac muscle contraction, and insulin signaling pathway (Figure 4c and d, Figure 5). Among the genes regulated by both sucrose-feeding and JNK_D1 treatment in SkM were those involved in the insulin signaling pathway (e.g. Ppp1r3f, Phkg1, Phkb) (Figure 5). As this intra-tissue effect was observed in JNK_D1 not in the JNK_D2-treated group (Figure 3b, Figure 4\u2014figure supplement 1), we subsequently investigated the inter-tissue regulation based on the significant transcriptional changes (as indicated by the log2-Fold change, log2FC) in response to JNK_D1 treatment and found that log2FC of shared DEGs between JNK_D1-treated SkM and liver, vWAT, or brain exhibited strong agreements (Figure 4e, Figure 4\u2014figure supplement 1). Specifically, 86% and 69% of shared DEGs between SkM and vWAT, and the brain, exhibited consistent changes in response to JNK_D1 treatment (the same log2FC sign, indicating either upregulated or downregulated in both tissues being compared), with a Spearman correlation of 0.78 and 0.54, respectively. These shared DEGs were found to be involved in several critical metabolic processes, including cholesterol metabolism, bile acid biosynthesis and secretion (such as Lipc, Apob, Slc7a1, Angptl3, Slc10a1), and regulation of energy homeostasis (e.g. Lep), suggesting that SkM had a major metabolic adaptation to JNK_D1 treatment and exerts its metabolic effect, at least partially, through coordinated interactions with other tissues.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig4-v1.jpg)\n\n**Figure 4.:** (a, b) Venn diagram showing the overlap between significantly regulated genes response to sucrose consumption and INK_D1 treatment in SkM. (c, d) Functional annotation of up- (red) and down-regulated (blue) genes in JNK_D1-treated SkM with a Benjamini Hochberg adjusted p-value <0.05. (e) Correlation of log2(Fold change) for shared differentially expressed genes (DEGs) between the SkM and Liver, visceral white adipose tissue (vWAT), or Brain after JNK_D1 treatment.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) Venn diagram showing the overlap between significantly regulated genes response to sucrose consumption and JNK_D2 treatment in skeletal muscle (SkM). (b) Correlation of log2(Fold change) for shared differentially expressed genes (DEGs) between the SkM and Liver, visceral white adipose tissue (vWAT), or Brain after JNK_D2 treatment. (c) Venn diagram showing the overlap between significantly regulated genes response to sucrose consumption and JNK_D1 treatment as well as (d) JNK_D2 treatment in the Brain, respectively.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig5-v1.jpg)\n\n**Figure 5.:** (a) A representative diagram of metabolic pathways associated with insulin resistance and insulin signaling was found to be largely inhibited by JNK_D1 treatment. (b) Correlation between the relative mRNA expression of Phkg1, Phkb, and Ppp1r3f (those three genes are also significantly upregulated in sucrose-feeding only group) in SkM and plasma triglycerides level. (c) Relative changes of genes involved in insulin resistance and insulin signaling pathways in response to sucrose consumption and JNK-IN-5A treatment in the tissues. The BH-adjusted p-value (p.adj) is derived from DESeq2 (Love et al., 2014). *p.adj<0.05, **p.adj<0.01, ***p.adj<0.001, ****p.adj<0.0001.\n\n### Inter-tissue network analysis revealed the JNK-IN-5A inhibition-associated molecular mechanism\n\nTo better understand the regulation of lipid metabolism and energy homeostasis at a system-wide level in an unbiased manner, we next performed gene co-expression network (GCN) analysis to study intra- and inter-tissue coordination of metabolic pathways as well as biological processes that are associated with sucrose-feeding and/or JNK_D1 inhibition. GCN, a robust systems biology approach (Barabasi and Albert, 1999), allows us to study the functionality of the gene module and its constituent genes. These genes are more likely to be co-expressed if they are either regulated by the same transcription factors or share similar topological properties in protein-protein interaction networks (Califano et al., 2012; Dobrin et al., 2009; Zhang et al., 2016). By investigating the importance and topology of these functional modules, it is possible to understand the biological mechanisms underpinning the disease and/or therapy intervention (Choobdar et al., 2019; Yang et al., 2021; Yang et al., 2014).\n\nWe first constructed tissue-specific GCN based on the whole transcriptomics data and selected highly connected genes from the network (the top 10% positively correlated genes that fulfilled FDR <0.05), followed by module detection using the Leiden clustering algorithm (Figure 6\u2014figure supplement 1, Supplementary file 7). We subsequently evaluated the enrichment of DEGs in the modules to identify those associated with sucrose consumption, JNK_D1 treatment, or both (so-called perturbated module). As expected, GCN analysis revealed distinct gene expression patterns across different tissues (Figure 6a). For instance, in module 1 in the liver (Liver.M1), vWAT.M4, SkM.M4, and Brain.M4, we found a significant enrichment of genes that exhibited elevated expression in response to sucrose consumption while simultaneously being suppressed by JNK_D1. Conversely, Liver.M0 and vWAT.M3 exhibited significant enrichment of genes repressed by sucrose intake but elevated after JNK_D1 treatment. These distinct expression patterns collectively reflect the combined metabolic effect of sucrose-feeding and JNK_D1 interventions. Additionally, GCN analysis identified modules associated with either sucrose-feeding or JNK_D1 intervention at the tissue level, for example, vWAT.M0 (sucrose), vWAT.M1 and Brain.M5 (JNK_D1) (Figure 6a).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig6-v1.jpg)\n\n**Figure 6.:** (a) Significantly enriched modules (hypergeometric test, <0.05) by the differentially expressed genes related to sucrose, sucrose+JNK_D1, and sucrose+JNK_D1 in each tissue. (b) Dot-plot showing the significant correlation among inter-tissue module pairs. The size and color of the connected line are proportional to the correlation coefficient and statistical significance indicated by the adjusted p-value. The module pairs with Benjamini Hochberg adjusted p-value (p.adj)<0.05 are presented. (c) Spearman coefficient correlation of the first component from principal component analysis (PCA) analyses on gene expression of module pairs. (d) Significantly enriched MSigDB hallmark gene sets by each module.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a) The number of gene modules are identified from the tissue-specific co-expression networks. The text on the module indicates the module name and the number of genes of individual modules in each tissue. The edges between the clusters were aggregations of the inter-cluster edges. (b) Principal component analysis (PCA) of Liver.M0, vWAT.M3, and SkM.M0 gene expression data. (c) Module neighbors of Mapk9 in SkM.M0.\n\nTo pinpoint gene modules involved in inter-tissue communication, we conducted a correlation analysis among inter-tissue modules using their module eigengene (see details in Method) and assessed the enrichment of genes from these modules in MSigDB hallmark gene sets. Our analysis revealed a significant correlation between SkM.M0 and Liver.M0 (R = 0.67, padj = 0.006) as well as vWAT.M3 (R = 0.58, padj = 0.03) (Figure 6b and c). This correlation aligns with the functional annotation of genes within these modules, including those associated with mTORC1 signaling, PI3K/AKT/mTOR signaling, DNA Repair, and unfolded protein response (Figure 6d). Interestingly, we observed that Mapk9 is among the module members of SkM.M0, indicating a potential metabolic link coordinated by JNK inhibition, connecting SkM with other tissues, including the liver and vWAT (Figure 6b, Supplementary file 7). SkM.M1 and Liver.M2 (R = \u20130.66, padj = 0.006), SkM.M3 and vWAT.M0 (R = 0.60, padj = 0.03), and SkM.M4 and vWAT.M3 (R = \u20130.66, padj = 0.006) were also found to be significantly correlated (R = \u20130.57, padj = 0.03). Note that genes in Liver.M1, vWAT.M3, SkM.M0, SkM.M4, and Brain.M4 are commonly involved in adipogenesis, fatty acid metabolism, OXPHOS, and reactive oxygen species pathway (Figure 6d). These observations suggest the potential crosstalk or regulatory relationship between these tissue modules after JNK_D1 treatment.\n\n### Metabolic modeling identified the metabolic reprogramming linked to JNK-IN-5A inhibition\n\nTo predict how tissue-level metabolic activity responds to sucrose feeding and JNK-IN-5A treatment, we performed an integrative analysis of transcriptomics data by generating tissue-specific GEMs and applying Compass (Wagner et al., 2021). Compass is a flux balance analysis-based (Orth et al., 2010) algorithms to model the metabolic state of a system (e.g. single cell or tissue), taking into account the observed expression levels of enzyme-coding genes in each sample from RNA-seq data. In this study, we employed Recon3D, a generic GEMs of human metabolism, comprising 10,600 metabolic reactions associated with 5835 metabolites and 2248 metabolic genes (Brunk et al., 2018). Consistent with our previous analysis, we observed a shift in metabolic activity in the liver and vWAT after JNK_D1 treatment (Figure 7, Supplementary file 8). Specifically, Compass predicted that 2840 and 4170 metabolic reactions showed significantly altered activity (Wilcoxon test, adjusted p-value <0.05) following the sucrose consumption in the liver and vWAT, respectively. 89.2% and 88.3% of which were correspondingly reversed after JNK_D1 treatment (Supplementary file 9). The common altered reactions are partitioned into the subsystems named citric acid cycle, fatty acid oxidation, fatty acid synthesis, and tryptophan metabolism in Recon3D (Figure 7c). Some of the predicted metabolic changes align with previous findings in rodents subjected to sucrose overconsumption. For example, \u00d6zt\u00fcrk et al. reported altered tryptophan metabolism in rats consuming 10% sucrose in drinking water, including decreased serum levels of kynurenic acid and kynurenine (Ozturk and Eryavuz Onmaz, 2022). Similarly, increased triglyceride-bound oleate, palmitate, and stearate were observed in the livers of rats fed a 10% sucrose solution (Stephenson et al., 2022), indicating JNK-IN-5A treatment may regulate lipid metabolism by modulating these metabolic activities. Moreover, we found 8 metabolic reactions significantly altered in sucrose +JNK_D2-treated rats, including 2 reactions involved in glycolysis/gluconeogenesis, 2 in nucleotide interconversion, 1 in pentose phosphate pathway, 1 in fructose and mannose metabolism, 1 in propanoate metabolism (Cohen\u2019s d<0, padj <0.05), and 1 in drug metabolism (Cohen\u2019s d>0, padj <0.05) (Supplementary file 8). Hence our systems biology analysis revealed the molecular mechanisms altered due the JNK-IN-5A treatment.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/98427/elife-98427-fig7-v1.jpg)\n\n**Figure 7.:** (a) Simulation of metabolic activity based on Compass (Wagner et al., 2021) and Recon3D (Brunk et al., 2018). (b) Distribution of Cohen\u2019s d statistic for differential metabolic reactions in response to sucrose, sucrose+JNK_D1 and sucrose+JNK_D2 in each tissue, see also Supplementary file 8. (c) Principal component analysis of the Compass score of metabolic reaction potential activity scores showing the metabolic heterogeneity in response to sucrose ingestion and JNK-IN-5A treatment at the tissue levels, for principal components 1 and 2. (d) Heatmap showing the tissue-level differential activity of metabolic reactions in response to sucrose intake and JNK-IN-5A treatment. Reactions are partitioned by Recon3 pathways (Brunk et al., 2018) and colored by the sign of their Cohen\u2019s d statistic derived from different contrasts: sucrose vs control, sucrose+JNK_D1 vs sucrose, or sucrose+JNK_D2 vs sucrose, respectively. Abbreviations: vWAT, visceral white adipose tissue; SkM, skeletal muscle.\n\n## Discussion\n\nThe etiology of MAFLD is multifactorial and remains incompletely understood, impeding the progress in developing effective therapies for MAFLD. Our investigation into the metabolic changes from the major metabolically active tissues enabled us to systematically assess the potential therapeutic effects of JNK-IN-5A under high sucrose consumption. Here, we demonstrated that JNK-IN-5A attenuated the accumulation of circulating TG and inflammation exaggerated by liquid sucrose consumption. Importantly, the rats treated with JNK-IN-5A did not exhibit indications of anxiety or behavioral disorders. These results have important implications for the development of JNK3 inhibitors, taking into account the high expression of JNK3 in the brain (Chang and Karin, 2001). Additionally, our data indicated that JNK-IN-5A, a selective inhibitor of JNK2 and JNK3 (Angell et al., 2007; Cerbone et al., 2012), also exerted an inhibitory effect on the gene expression of JNK1 in in vivo, especially in skeletal muscle (Figure 2).\n\nBy studying the hepatic and extrahepatic tissues using genome-wide transcriptome data and integrative analyses with GEMs, we found that the intervention with sucrose-sweetened water triggered extensive transcriptional changes in the liver and adipose tissues, including those involved in fatty acid and oxidative metabolism. The metabolic axis between the liver and adipose tissues is a critical regulatory network that governs energy balance and metabolic homeostasis in the body (Azzu et al., 2020). It has been reported that upon chronic overnutrition, adipose lipogenesis is significantly downregulated, which leads to ectopic lipid accumulation and insulin resistance (Jeon et al., 2023). In line with this, we found that in the sucrose-sweetened water group, the mRNA expression of many genes related to fatty acid metabolism and uptake is downregulated in adipose tissue. Interestingly, those genes showed the opposite regulation between liver and adipose tissue, indicating their complementary role in these metabolic processes in response to the diet intervention. These findings also pinpoint the critical role of extrahepatic metabolism in the development of MAFLD.\n\nJNK plays essential roles in a range of signaling pathways that have implications for metabolic processes such as insulin sensitivity, thermogenesis, adipogenesis, and lipid metabolism (Nikolic et al., 2020; Solinas and Becattini, 2017). Our data demonstrated that JNK-IN-5A, especially when administered at a regular dosage (JNK_D1, 30 mg/kg/d), effectively opposite a substantial portion of the transcriptional changes induced by sucrose consumption, particularly those related to carbon, fatty acid metabolism, OXPHOS, and thermogenesis in the liver and adipose tissues. This suggests that JNK-IN-5A might hold promise as a potential strategy for restoring metabolic perturbation in tissues challenged by sucrose-induced stress. However, our study also revealed that JNK_D1-treated skeletal muscle exhibited profound transcriptional changes related to HSCs, osteoclast differentiation, and immune-related pathways. Importantly, we found that these changes were not confined to skeletal muscle but exhibited correlations with transcriptional changes in the liver, adipose tissue, and even brain tissue. The suggest the coordinated roles of JNK inhibition in mitigating sucrose-induced MAFLD across these tissues, while the exact molecular mechanisms by which JNK-IN-5A exert its muscle-specific effect warrant further investigations. Previously, Xiao et al., 2019 demonstrated that the JNK pathway regulates HSCs expansion and self-renewal in JNK-IN-8-treated CD34+CD45RA-CB cells. Lessard et al., 2018 demonstrated that mice with muscle-specific JNK1/2 knockout, have a muscle phenotype that mimics that of endurance-trained athletes. Together with our data, these results suggest a multifaceted role of JNK signaling in the regulation of HSCs and metabolism in skeletal muscle.\n\nAlthough overactivated JNK activity presents an attractive opportunity to combat MAFLD, inhibition of JNK presents substantial challenges and potential risks due to its broad and multifaceted roles in many cellular processes. One key challenge is the dual role of JNK signaling (Lamb et al., 2003). For instance, long-term JNK inhibition may disrupt liver regeneration, as JNK plays a critical role in liver repair by regulating hepatocyte proliferation and survival following injury or stress (Papa and Bubici, 2018). In HCC, it has been reported that JNK acts as both a tumor promoter, driving inflammation, fibrosis, and metabolic dysregulation, and a tumor suppressor, facilitating apoptosis and cell cycle arrest in damaged hepatocytes. Its inhibition, therefore, carries the risk of inadvertently promoting tumor progression under certain conditions (Seki et al., 2012). Furthermore, the differential roles of JNK isoforms (JNK1, JNK2, JNK3) and a lack of specificity of JNK inhibitors present another layer of complexity. Given these challenges, while our study demonstrated the potential of JNK-IN-5A in mitigating early metabolic dysfunction in the liver and adipose tissues, JNK targeting strategies should be carefully tailored to the disease stage under investigation. For curative approaches targeting advanced MAFLD, such as MASH, future studies are warranted to address considerations related to dosing, tissue specificity, and the long-term effects.\n\nIn summary, our study provides a comprehensive understanding of the therapeutic potential of JNK-IN-5A treatment in a rat model of sucrose-induced MAFLD. Through an analysis of genome-wide transcriptome data in the major metabolic tissues, we shed light on the JNK-IN-5A-mediated metabolic effects in both hepatic and extrahepatic tissues. This implies a potential therapeutic strategy for the treatment of diet-induced MAFLD and other metabolic complications, potentially by regulating cellular energy homeostasis and mitochondrial metabolism. Nevertheless, several limitations warrant consideration. First, while we observed transcriptional adaptations in skeletal muscle tissue following treatment, the exact molecular mechanisms underlying these changes and their roles in skeletal muscle function and systemic metabolic homeostasis remain unclear. Further investigation is warranted to elucidate the muscle-specific effects of JNK inhibition. Second, our study did not investigate the dose-dependent or potential off-target effects of JNK-IN-5A, particularly its activity on other members of the kinase family and associated signaling pathways. Lastly, the long-term effects of JNK-IN-5A administration remain unexplored. Understanding its prolonged impact across different stages of MAFLD, including advanced MASH, is crucial for assessing the full therapeutic potential of JNK inhibition in the treatment of MAFLD.\n\n## Materials and methods\n\n### Experimental models and subject details\n\n#### Oral toxicity study in rats\n\nTwelve male and twelve female rats of the Wistar strain (Envigo, Venray, Netherlands) were used to assess the 7 d oral (gavage) toxicology, in terms of clinical signs, body weight, and clinical pathological parameters, of JNK-IN-5A in rats. Animals were group-housed under standard conditions and had free access to water and 2916 C Teklad global 16% protein rodent irradiated diet (Envigo, Venray, Netherlands). Dose levels of 0 (vehicle control), 30, 100, or 300 mg/kg of JNK-IN-5A were administered once daily via oral gavage for 7 d. The vehicle was 2 w/w% HPMC (Colorcon), 2 w/w% PS80 (Merck) in 10 mM PBS, pH 7 and dose volume was 5 mL/kg for JNK-IN-5A. Body weights were recorded the week before and within 24 hr before the start of dosing and on Day 3 and on necropsy Day 8. All animals were bled at 2 hr after dosing on Day 1 and Day 7. Blood samples were placed on ice after sample collection and centrifuged at approx. 3000\u00d7G, 5 min., 4 \u00b0C. 7.5 \u03bcL plasma was transferred into a separate low-binding protein tube and the remaining plasma was transferred into a second low-binding tube. The tubes were frozen upright at approximately \u201320 \u00b0C. Blood and plasma were analyzed using an Exigo analyzer and Vetscan equipment. The VetScan analyzer was calibrated with calibration samples with known plasma levels of each parameter before the start of analysis, occasionally during the analysis period of study samples, and after completed analyses. All the animal procedures (including housing, health monitoring, dosing, etc.) and ethical revisions were performed according to the 2010/63/EU Directive on the protection of animals used for biomedical research.\n\n#### JNK-IN-5A treatment study in rats\n\nAll experiments were performed in accordance with institutional ethical guidelines, and the present in vivo study was approved by the Ethics Committee for Animal Research of Atat\u00fcrk University (with the reference number 2023/04 on 30.03.2023). Rats were obtained from the Atat\u00fcrk University Experimental Research Center. All groups were housed on a 12 hr light and dark cycle. The temperature and humidity values of the environment were kept at optimal values. To prevent neophobia, rats were divided into groups 1 wk before sucrose treatment by following the double-blind method to adapt to the laboratory environment and each other.\n\nA total of 4 groups consisting of 11 subjects each were formed, including the healthy Control group consisting of rats received ad libitum tap water, the Sucrose group consisting of rats received ad libitum 10% Sucrose (BioShop, Canada, Lot No: 2E77269) (equivalent to the concentration of fructose in typical soda Jang et al., 2020), and groups treated by JNK-IN-5A at two concentration: sucrose+JNK_D1 group with rats received ad libitum 10% sucrose and 30 mg/kg/d JNK-IN-5A gavage and sucrose+JNK_D2 group with rats received ad libitum 10% sucrose and 60 mg/kg/d JNK-IN-5A gavage. The rats had ad libitum access to tap water (Control) or 10% sucrose water (sucrose, sucrose+JNK_D1, and sucrose+JNK_D2) and a standard chow diet throughout the experimental period. The amount of water consumed by all groups was recorded daily, and drinking water was renewed every day. After feeding with sucrose for 4 wk, drug treatment was given at the following 3 wk. Behavioral tests were taken before the experiment started and after 3 wk of drug treatment. Locomotor activity tests, elevated plus maze tests, and passive avoidance tests were used as behavioral tests. Behavioral tests were repeated at the end of the 21 d treatment regimen. While the last behavioral tests were being taken, drug treatment continued so that the drug level in the blood would not change. After the experimental animals were sacrificed with a high dose (200 mg/kg thiopental sodium) anesthetic, the relevant tissues were taken for further analysis.\n\n##### Monitoring behavior\n\nAll tests were performed twice in total, initially and after the 21 d treatment regimen. According to the results obtained from the initial measurements, rats with outliers for the experiment were determined. After the treatment measurement, it was determined whether there was any change in the behavior of the rats. The Locomotor Activity Test is a system used to test differences in motor activity and anxiety-related behaviors of rats. In the system scanned with infrared rays, each of the ambulatory, stereotypical, rearings, resting percentage and traveled distance movements of the rats are digitized and converted to computer output. These outputs are evaluated and provide information that needs to be interpreted about the animal\u2019s adaptation to the new environment and the continuation of the sense of curiosity or anxiety. Stereotypical movement shows rats grooming and recognizing their environment. Ambulatory movement is all the movements that rats make on the ground without standing up. Distance shows the distance traveled by the rats in the cage. The rearing movement indicates the time the rats stand up in the cage. The resting percentage is an indicator of anxiety. Ambulatory movements are recorded with horizontal sensors that surround the cage 360 degrees at the base, and stereotypic and rearing movements are recorded with vertical sensors located 10 cm above the floor. The entire cage continues to be measured continuously with 250 ms infrared. Unlike the open field test, activity measurement is performed in this study and the computer automatically records all the recordings instead of an independent observer (Lu et al., 2019). The experiment is performed in a dark environment. Rats are placed in cages for 10 min periods and the system automatically records with infrared rays. After each rat, the cage is cleaned with alcohol to remove odor and urine (Ferah Okkay et al., 2022). The Elevated Plus Maze Test is used to measure anxiety-like behavior in rodents. The elevated plus maze apparatus is a system consisting of two open arms (without walls; 50 cm \u00d7 10 cm) and two closed arms (with black walls, 50 cm \u00d7 10 cm). The open and closed arms are connected by a central platform. The labyrinth is 55 cm above the ground. At the start of each test, rats are placed in the central zone and allowed to explore the platform for 5 min. The rats are recorded with a camera located at the top of the maze and the test is done in a quiet, dim room. The number of times the rats entered the open and closed arms, and the time spent in these arms were recorded. The device was cleaned with an alcohol solution between tests (Chellian et al., 2020; Walf and Frye, 2007). Results are given as arm entries and time spent (durations) in these areas. The more entries into open arms and the more duration spent there, the less anxiety the rat has. The Passive Avoidance Test is a system consisting of two rooms (light/dark), the base of which is covered with rods that can apply electroshock, in which memory, behavior, and learning abilities are investigated. This system is used to test the learning ability of the animal by fear-driven conditional avoidance. In this test, the animal is expected to learn to avoid entering the electroshock chamber (dark room). Rats are nocturnal animals. By nature, they sleep during the day and are active at night. Although rats are not afraid of light, they generally live in dark compartments because they are uncomfortable with the bright environment. In the passive avoidance system, lighting the bright compartment with LED lights and high lumen light creates an uncomfortable environment for the animals, and they want to move to the closed compartment. Here, the low intensity electroshock they are exposed to causes a deterrent stimulus and allows the rats to understand and learn how the system works. The experimental procedure is built on these understanding and learning abilities (Gim\u00e9nez De B\u00e9jar et al., 2017; Hosseini et al., 2013; Wu et al., 2020). The experiment is carried out on two consecutive days. Learning is measured on the first day and recall on the second day. The time that each rat took to enter the dark compartment was considered as initial latency. The next day (retention phase), the rats were reintroduced into the bright chamber and the step-through latency was noted down as memory retention. Shorter latencies indicated poorer cognition. At this stage, rats are expected to remember the shock in the dark compartment. For this reason, it was accepted that the memory of the rats that stayed longer in the bright compartment was stronger. In retention measurements, it is understood that the longer the rats stay in the bright compartment, the stronger the memory and learning.\n\n##### RNA extraction and library preparation for transcriptome sequencing\n\nTotal RNA is extracted from the snap-frozen rat tissues with Zymo Research Quick RNA Miniprep kit (California USA) by following the protocol provided on the manufacturer\u2019s website with slight modifications made to improve the quality and quantity of RNA from each tissue. Before the cell lysis, the tissues are subjected to short (1 min or longer for muscle tissues) homogenization with the beads in PowerLyzer 24 by keeping samples on ice to prevent overheating. The homogenized tissues are further enzymatically in a digestion buffer for at least 30 min or more for muscle tissue at room temperature with continuous inversion and agitation of the tubes. After the lysis of the cells, the RNA is cleaned and collected with columns. The quality and quantity of the isolated samples were examined spectrophotometrically with NanoDrop (Thermo Fisher, USA). After the evaluation of the sample A260, A260/A280, and A260/A230 values, the RNA integrity number (RIN) value of total RNA samples was measured with TapeStation (Agilent Tech, USA). The amount of total RNA was measured more precisely fluorometrically with the RNA Broad Range kit (Thermofisher, USA) by using Qubit (Invitrogen, USA). RNA sequencing library was prepared with Illumina Stranded Total RNA Prep and Ligation with Ribo-Zero Plus kit was used by following the standard protocol provided by the manufacturer. The libraries were then pair-end (2\u00d7100 bp) sequenced on the NovaSeq6000 system yielding, on average, 25 million fragment reads per sample. Raw sequencing data (.bcl) was converted to FASTQ with the Dragen Bio-IT platform (v3.9.5). The quality of RNA-seq data was assessed by FastQC (v0.11.9).\n\n##### RNA-seq data processing, differential expression, and functional enrichment analysis\n\nTissue bulk RNA-seq data were aligned and quantified using a standard protocol of Kallisto (v0.46.2) (Bray et al., 2016) against the Rattus norvegicus genome (mRatBN7.2) downloaded from Ensembl (Martin et al., 2023) official website (https://www.ensembl.org/index.html). The output of Kallisto, both estimated counts and TPM (transcript per kilobase million)-based transcript-level expressions were then transformed into gene-level expressions using the Bioconductor package tximport (v1.22.0) with the tx2gene option set to connect transcripts to genes (Soneson et al., 2015). Protein-coding genes were considered for the above step and downstream analyses. Differential analysis was performed using the DESeq2 Bioconductor package (v1.34.0) (Love et al., 2014), following a standard protocol for all three pairwise intervention comparisons for determining the effect of sucrose consumption only (sucrose vs control), the effect of 30 mg/kg/d JNK-IN-5A treatment (sucrose+JNK_D1 vs sucrose), and effect of 60 mg/kg/d JNK-IN-5A treatment (sucrose+JNK_D2 vs sucrose) in all four studied tissues. Significantly expressed genes (DEGs) were identified with a significance threshold of an adjusted <i>p-value <0.01. To examine differences in global gene expression, we conducted principal component analysis (PCA) based on variance-stabilizing transformation (VST)-normalized count data in DESeq2. PC1 and PC2 were plotted for visualization.\n\n###### Gene co-expression network analysis\n\nFor the generation of the tissue-specific co-expression networks, we first filtered out lowly-expressed genes based on their TPM-based expression level (TPM <1) and constructed co-expression networks by generating gene pairs Spearman correlation ranks within the tissue, which was performed using the \u2018spearmanr\u2019 function from SciPy (Virtanen et al., 2020) in Python 3.8. Next, considering the network with negative correlation has relatively low correlation scores, we retained the top 10% positively correlated genes that fulfilled FDR <0.05 on the network (Arif et al., 2021; Yang et al., 2021) and performed module detection analysis using Leiden algorithm (Traag et al., 2019), implemented in the leidenalg (v0.7.0) package with \u2018ModularityVertexPartition\u2019' to find the optimal partition. Modules with less than 30 genes were discarded to be able to get significant functional analysis results in the downstream analysis. To identify gene modules involved in tissue crosstalk, we correlated the module eigengenes of inter-tissue modules and assessed the significance of these correlations after Benjamini & Hochberg (BH) correction, with BH-adjusted p<0.05 was considered as significance. The module eigengene is defined as the first principal component of the expression matrix of a given module.\n\n###### Gene set functional enrichment analysis\n\nWe used Bioconductor package enrichR (v3.2) to annotate gene sets (e.g. differentially expressed genes or co-expression genes) against the curated genes sets obtained from the KEGG pathway database (Kanehisa, 2002), or against hallmark gene sets from MSigDB (Liberzon et al., 2015) using R package msigdbr (v.7.5.1). Benjamini-Hochberg (BH)\u2013adjusted p-values (p.adj)<0.05 are considered as statistically significant and are provided in the relevant figures/datasets.\n\n### Compass-based metabolic activity analysis\n\nWe inferred tissue-level metabolic state from RNA-seq profiles using Compass (Wagner et al., 2021). Compass is a flux balance analysis-based algorithm (Orth et al., 2010) that enables modeling the metabolic state of a system (e.g. single-cell or organ) from RNA-seq data based on a reconstructed genome-scale metabolic model of human metabolism (also known as Recon3D) (Brunk et al., 2018). We downloaded Recon3D from BiGG Models (http://bigg.ucsd.edu/models/Recon3D/) and created model metadata files required for the input of downstream analysis, including gene, reaction, and metabolite metadata, using in-house scripts. We used human orthologs of rat gene expression data (TPM-based) for computation of the Compass scores matrix using default parameters, and the human species as detailed in Wagner et al., 2021. Downstream analysis was done using the compassR R package (v.1.0.0) following the protocol (https://github.com/YosefLab/compassR; YosefLab, 2021).\n\n### Statistical analyses\n\nData were shown as mean \u00b1 standard deviation (SD), unless stated otherwise. The assumption of normality for continuous variables from behavior tests, biometric measurements, and plasm biochemistry was determined using the Shapiro\u2013Wilk test. Differences among multiple groups were tested by ANOVA or, for data that were not normally distributed, the non-parametric Kruskal-Wallis test. Pairwise comparisons were performed using Tukey\u2019s post hoc test following the ANOVA or Dunn\u2019s multiple comparisons post hoc test following the Kruskal-Wallis test, as appropriate. The Jaccard index was used to evaluate the similarity and diversity of two gene sets, and a hypergeometric test was used to test the significance of their overlap. All results were considered statistically significant at p<0.05, unless stated otherwise.\n",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "9e10048d-a97c-45e4-8769-898b676e04ef",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marcus M Seldin, University of California, Irvine United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98427.3.sa0](https://doi.org/10.7554/eLife.98427.3.sa0)\n\nThe authors implement a valuable multi-tissue approach to dissect the physiologic consequences of JNK inhibition in parallel with dietary perturbation via sucrose. The conclusions of disrupted liver, muscle and adipose metabolism being central to these effects are solid, as they are supported by a combination of experimental dissection and network modeling approaches.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98427.3.sa1](https://doi.org/10.7554/eLife.98427.3.sa1)\n\nSummary:\n\nIn this manuscript, authors have investigated the effects of JNK inhibition on sucrose-induced metabolic dysfunction in rats. They used multi-tissue network analysis to study the effects of the JNK inhibitor JNK-IN-5A on metabolic dysfunction associated with excessive sucrose consumption. Their results show that JNK inhibition reduces triglyceride accumulation and inflammation in the liver and adipose tissues while promoting metabolic adaptations in skeletal muscle. The study provides new insights into how JNK inhibition can potentially treat metabolic dysfunction-associated fatty liver disease (MAFLD) by modulating inter-tissue communication and metabolic processes.\n\nStrengths:\n\nThe study has several notable strengths:\n\nComprehensive Multi-Tissue Analysis: The research provides a thorough multi-tissue evaluation, examining the effects of JNK inhibition across key metabolically active tissues, including the liver, visceral white adipose tissue, skeletal muscle, and brain. This comprehensive approach offers valuable insights into the systemic effects of JNK inhibition and its potential in treating MAFLD.\n\nRobust Use of Systems Biology: The study employs advanced systems biology techniques, including transcriptomic analysis and genome-scale metabolic modeling, to uncover the molecular mechanisms underlying JNK inhibition. This integrative approach strengthens the evidence supporting the role of JNK inhibitors in modulating metabolic pathways linked to MAFLD.\n\nPotential Therapeutic Insights: By demonstrating the effects of JNK inhibition on both hepatic and extrahepatic tissues, the study offers promising therapeutic insights into how JNK inhibitors could be used to mitigate metabolic dysfunction associated with excessive sucrose consumption, a key contributor to MAFLD.\n\nBehavioral and Metabolic Correlation: The inclusion of behavioral tests alongside metabolic assessments provides a more holistic view of the treatment's effects, allowing for a better understanding of the broader physiological implications of JNK inhibition.\n\nWeaknesses:\n\nThe authors have adequately addressed all my concerns, and the revisions have significantly improved the manuscript's clarity and impact.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98427.3.sa2](https://doi.org/10.7554/eLife.98427.3.sa2)\n\nExcessive sucrose is a possible initial factor for the development of metabolic dysfunction-associated fatty liver disease (MAFLD). To investigate the possibility that intervention with JNK inhibitor could lead to the treatment of metabolic dysfunction caused by excessive sucrose intake, the authors performed multi-organ transcriptomics analysis (liver, visceral fat (vWAT), skeletal muscle, and brain) in a rat model of MAFLD induced by sucrose overtake (+ JNK inhibitor treatment).\n\nThe major strengths and weakness of this study are as follows.\n\nStrengths:\n\n\u30fbIt has been previously reported that inhibition of JNK signalling can contribute to the prevention of hepatic steatosis (HS) and related metabolic syndrome in other models, but the role of JNK signalling in the metabolic disruption caused by excessive intake of sucrose, a possible initial factor for the development of MAFLD, has not been well understood, and the authors have addressed this point.\n\n\u30fbThis study is also important because pharmacological therapy for MAFLD has not yet been established.\n\n\u30fbBy obtaining transcriptomic data in multiple organs and comprehensively analyzing the data using gene co-expression network (GCN) analysis and genome-scale metabolic models (GEM), the authors showed the multi-organ interaction in not only in the pathology of MAFLD caused by excessive sucrose intake but also in the treatment effects by JNK-IN-5A.\n\n\u30fbSince JNK signalling has diverse physiological functions in many organs, the authors effectively assessed possible side effects with a view to the clinical application of JNK-IN-5A.\n\nWeaknesses:\n\n\u30fbThe metabolic process activities were evaluated using RNA-seq results in Figure 7, but direct data such as metabolite measurements are lacking.\n\n\u30fbThere is a lack of consistency in the data between JNK-IN-5A_D1 and _D2, and there is no sufficient data-based explanation for why the effects observed in D1 were inconsistent in the D2 samples.\n\n\u30fbAlthough it is valuable that the authors were able to suggest the possibility of JNK inhibitor as a therapeutic strategy for MAFLD, the evaluation of the therapeutic effect was limited to evaluation of plasma TG, LDH, and gene expression changes. As there was no evaluation of liver tissue images, it is unclear what changes were brought about in the liver by the excessive sucrose intake and the treatment with JNK-IN-5A.\n\nAs mentioned in the Weakness section, biological data is insufficient, such as the lack of metabolite measurements and a histological evaluation of the liver. However, overall, the authors successfully provided the valuable insights that the JNK inhibitor has a cross-organ therapeutic effect on their MAFLD model induced by sucrose overtake. Their insist is supported by convincing data, comprehensively analysing the transcriptomic data obtained from multiple organs using GCN (gene co-expression network) analysis and GEM (genome-scale metabolic modelling).\n\nTheir comprehensive transcriptomic analysis in multiple organs, including the brain, has demonstrated that the effects of drugs are more widespread than just on specific tissues thought to be the main target, indicating the importance of focusing on tissue interactions when we assess the effects of drugs. Also, the data set in this study will be useful for comparative evaluation with transcriptomics data for other MALFD models.\n",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "a5f0b7cb-737e-423b-a384-6e033bbb1c77",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C1",
+      "claim": "Excessive consumption of sucrose has been implicated in the pathogenesis of metabolic dysfunction\u2010associated fatty liver disease (MAFLD) and other related metabolic syndromes.",
+      "claim_type": "EXPLICIT",
+      "source": "Excessive consumption of sucrose, in the form of sugar-sweetened beverages, has been implicated in the pathogenesis of metabolic dysfunction\u2010associated fatty liver disease (MAFLD) and other related metabolic syndromes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to existing literature and represents established knowledge in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "6fecccd0-41b1-4569-b948-d1fe8268e7eb",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C2",
+      "claim": "The c-Jun N-terminal kinase (JNK) pathway plays a crucial role in response to dietary stressors.",
+      "claim_type": "EXPLICIT",
+      "source": "The c-Jun N-terminal kinase (JNK) pathway plays a crucial role in response to dietary stressors, and it was demonstrated that the inhibition of the JNK pathway could potentially be used in the treatment of MAFLD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by references to prior research demonstrating JNK's role in dietary stress response.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "dfede2e0-3666-4711-910a-886a2d3f6722",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C3",
+      "claim": "Inhibition of the JNK pathway could potentially be used in the treatment of MAFLD.",
+      "claim_type": "EXPLICIT",
+      "source": "The c-Jun N-terminal kinase (JNK) pathway plays a crucial role in response to dietary stressors, and it was demonstrated that the inhibition of the JNK pathway could potentially be used in the treatment of MAFLD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by prior demonstrations cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "9ef02178-1995-4b45-a816-43a3717c32b1",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C4",
+      "claim": "JNK inhibition by JNK-IN-5A effectively reduces circulating triglyceride accumulation in rats subjected to sucrose consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that JNK inhibition by JNK-IN-5A effectively reduces the circulating triglyceride accumulation and inflammation in rats subjected to sucrose consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the study, including plasma triglyceride measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "2ca7d96d-5e41-4d22-bc21-6b1298681c60",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C5",
+      "claim": "JNK inhibition by JNK-IN-5A effectively reduces inflammation in rats subjected to sucrose consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrate that JNK inhibition by JNK-IN-5A effectively reduces the circulating triglyceride accumulation and inflammation in rats subjected to sucrose consumption.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data showing reduced LDH levels (an inflammation marker) in treated rats.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "f27ea7ab-fde9-4194-98ee-d9c5221c112c",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C6",
+      "claim": "Sucrose overconsumption primarily induces transcriptional dysfunction related to fatty acid metabolism in the liver and adipose tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression analysis and genome-scale metabolic modeling reveal that sucrose overconsumption primarily induces transcriptional dysfunction related to fatty acid and oxidative metabolism in the liver and adipose tissues, which are largely rectified after JNK inhibition at a clinically relevant dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by coexpression analysis and genome-scale metabolic modeling performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "3791b6cc-cf24-4419-acb0-36aee0737089",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C7",
+      "claim": "Sucrose overconsumption primarily induces transcriptional dysfunction related to oxidative metabolism in the liver and adipose tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression analysis and genome-scale metabolic modeling reveal that sucrose overconsumption primarily induces transcriptional dysfunction related to fatty acid and oxidative metabolism in the liver and adipose tissues, which are largely rectified after JNK inhibition at a clinically relevant dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by coexpression analysis and genome-scale metabolic modeling performed in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "30c944c0-e55b-41df-93fd-c151a96ceca6",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C8",
+      "claim": "Transcriptional dysfunction induced by sucrose overconsumption in liver and adipose tissues is largely rectified after JNK inhibition at a clinically relevant dose.",
+      "claim_type": "EXPLICIT",
+      "source": "Coexpression analysis and genome-scale metabolic modeling reveal that sucrose overconsumption primarily induces transcriptional dysfunction related to fatty acid and oxidative metabolism in the liver and adipose tissues, which are largely rectified after JNK inhibition at a clinically relevant dose.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transcriptomic data showing reversal of gene expression patterns after JNK-IN-5A treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "7be4de02-6471-4b84-b8a4-f4455e97f2d2",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C9",
+      "claim": "Skeletal muscle exhibited minimal transcriptional changes to sucrose overconsumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle exhibited minimal transcriptional changes to sucrose overconsumption but underwent substantial metabolic adaptation following the JNK inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by differential gene expression analysis showing only 257 DEGs (1.3%) in skeletal muscle in response to sucrose.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "722933ea-3612-4ffa-917c-1625f27ab3b5",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C10",
+      "claim": "Skeletal muscle underwent substantial metabolic adaptation following JNK inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Skeletal muscle exhibited minimal transcriptional changes to sucrose overconsumption but underwent substantial metabolic adaptation following the JNK inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transcriptomic data showing 4,159 DEGs (20.9%) in skeletal muscle after JNK_D1 treatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "48a12098-3865-4818-bd3c-b94448771387",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C11",
+      "claim": "Extrahepatic metabolism plays a critical role in the development of diet-induced steatosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our findings underpin the critical role of extrahepatic metabolism in the development of diet-induced steatosis, offering valuable guidance for future studies focused on JNK-targeting for effective treatment of MAFLD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the multi-tissue transcriptomic analysis showing significant changes in adipose tissue and skeletal muscle.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "2dcd5521-43fc-4831-8cd8-b0ed8d7f8275",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C12",
+      "claim": "The global prevalence of MAFLD is estimated to be 20\u201325%.",
+      "claim_type": "EXPLICIT",
+      "source": "The global prevalence of MAFLD is estimated to be 20\u201325% (Younossi et al., 2023), and it is rapidly increasing in parallel with the epidemic of obesity and type 2 diabetes mellitus (Kotsiliti, 2023; Le et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Younossi et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "763aaf6f-8665-4449-a73a-7e920fabedf3",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C13",
+      "claim": "MAFLD prevalence is rapidly increasing in parallel with the epidemic of obesity and type 2 diabetes mellitus.",
+      "claim_type": "EXPLICIT",
+      "source": "The global prevalence of MAFLD is estimated to be 20\u201325% (Younossi et al., 2023), and it is rapidly increasing in parallel with the epidemic of obesity and type 2 diabetes mellitus (Kotsiliti, 2023; Le et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Kotsiliti, 2023 and Le et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "4c16a127-a15e-455b-a94e-1218141d05d7",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C14",
+      "claim": "There is an absence of approved pharmacological therapy for MAFLD by the US Food and Drug Administration (FDA).",
+      "claim_type": "EXPLICIT",
+      "source": "Given the absence of approved pharmacological therapy for MAFLD by the US Food and Drug Treatment (FDA) (Llovet et al., 2023; Nassir et al., 2015), the discovery and development of effective therapies are of great importance in MAFLD treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Llovet et al., 2023 and Nassir et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "fe9b36cc-e1d5-43d4-83f0-840ceabee286",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C15",
+      "claim": "Rats subjected to a 12 week high-sucrose diet (25% w/v sucrose) developed a metabolic syndrome phenotype characterized by glucose intolerance, hepatic steatosis, and insulin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, a previous study reported that rats subjected to a 12 wk high-sucrose diet (25% w/v sucrose), developed a metabolic syndrome phenotype characterized by glucose intolerance, HS, and insulin resistance (IR) (Sousa et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Sousa et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "b76a72b0-f077-4aaf-b4de-551e9278f96b",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C16",
+      "claim": "Consumption of sucrose at a concentration of 10% w/v can disrupt energy balance and induce hepatic steatosis within 10\u201320 weeks.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent research further reveals that the consumption of sucrose at a concentration of 10% w/v can disrupt energy balance and induce HS within 10\u201320 wk (Jang et al., 2020; Stephenson et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Jang et al., 2020 and Stephenson et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "389a3543-fb62-4b99-b2fe-9cfb7a03308b",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C17",
+      "claim": "JNK has three isoforms: JNK1 and JNK2, which are ubiquitously expressed, and JNK3 is specifically expressed in the brain, testis, and heart.",
+      "claim_type": "EXPLICIT",
+      "source": "JNK has three isoforms: JNK1 and JNK2, which are ubiquitously expressed, and JNK3 is specifically expressed in the brain, testis, and heart (Chang and Karin, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Chang and Karin, 2001.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "ae28e701-9540-4690-beff-8e370792d0e7",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C18",
+      "claim": "MCD diet-fed JNK1 null mice exhibited significantly reduced levels of key hallmarks of MAFLD, including hepatic steatosis, TG accumulation, inflammation, lipid peroxidation, hepatocyte injury, and apoptosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, MCD diet-fed JNK1 null mice exhibited significantly reduced levels of key hallmarks of MAFLD, including HS, TG accumulation, inflammation, lipid peroxidation, hepatocyte injury, and apoptosis (Singh et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Singh et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "e912140a-2862-4f51-a75d-65802dc4585f",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C19",
+      "claim": "High-fat diet-fed mice with hepatic ablation of both JNK1 and JNK2 are protected from hepatic steatosis and insulin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, high-fat diet-fed mice with hepatic ablation of both JNK1 and JNK2 are protected from HS and IR (Vernia et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Vernia et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "766809e1-2fec-4ab9-8dd2-9c812ed77447",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C20",
+      "claim": "JNK-IN-5A is a selective JNK2 and JNK3 inhibitor.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our previous study demonstrated that JNK-IN-5A, a selective JNK2 and JNK3 inhibitor (Angell et al., 2007; Cerbone et al., 2012), effectively decreased fat accumulation and steatosis-related protein expression in an in vitro steatosis model (Kim et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Angell et al., 2007 and Cerbone et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "96865b81-65b8-4283-ba23-dbb138648c83",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C21",
+      "claim": "JNK-IN-5A effectively decreased fat accumulation and steatosis-related protein expression in an in vitro steatosis model.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our previous study demonstrated that JNK-IN-5A, a selective JNK2 and JNK3 inhibitor (Angell et al., 2007; Cerbone et al., 2012), effectively decreased fat accumulation and steatosis-related protein expression in an in vitro steatosis model (Kim et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Kim et al., 2023, which is the authors' previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "fb34534f-a1db-460d-90c7-0564345e78e2",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C22",
+      "claim": "None of the administered doses of JNK-IN-5A led to significant changes in body weight and hematological parameters in rats.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed none of the administrated doses led to significant changes in body weight and hematological parameters (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from the 7-day oral toxicology study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "8b851cf9-29b6-4f16-855b-5e464e7fd295",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C23",
+      "claim": "The two higher doses of JNK-IN-5A decreased the levels of sodium in female rats.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the two higher doses of JNK-IN-5A decreased the levels of sodium in female rats and elevated the level of phosphate in both sexes (Figure 2a, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by clinical chemistry data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "35ed84ec-7025-414c-91a1-b3fe613194e2",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C24",
+      "claim": "The two higher doses of JNK-IN-5A elevated the level of phosphate in both sexes of rats.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the two higher doses of JNK-IN-5A decreased the levels of sodium in female rats and elevated the level of phosphate in both sexes (Figure 2a, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by clinical chemistry data shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "e013e663-f530-4f0a-bb12-e8e0f45ff253",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C25",
+      "claim": "The administration of JNK-IN-5A is well tolerated with regard to adverse clinical signs, body weight, and clinical hematology parameters.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the administration of JNK-IN-5A is well tolerated with regard to adverse clinical signs, body weight, and clinical hematology parameters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the toxicology study data showing no significant adverse effects.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "5c360371-0409-4d1e-b42f-32fc68faf50c",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C26",
+      "claim": "Liquid sucrose consumption resulted in significantly increased plasma levels of triglycerides compared to healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that liquid sucrose consumption resulted in significantly increased plasma levels of TG (p<0.0001) and lactate dehydrogenase (LDH, p<0.0001), which is an inflammation marker, compared to the healthy controls (Figure 2b, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by plasma biochemistry measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "bff45d38-1ddf-4252-bed8-500cd44b2877",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C27",
+      "claim": "Liquid sucrose consumption resulted in significantly increased plasma levels of lactate dehydrogenase (LDH), an inflammation marker, compared to healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that liquid sucrose consumption resulted in significantly increased plasma levels of TG (p<0.0001) and lactate dehydrogenase (LDH, p<0.0001), which is an inflammation marker, compared to the healthy controls (Figure 2b, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by plasma biochemistry measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "10483313-996a-41e9-8e79-fb7d1eb6ead4",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C28",
+      "claim": "JNK-IN-5A-treated rats on sucrose water exhibited significantly lower levels of triglycerides compared to sucrose-only controls.",
+      "claim_type": "EXPLICIT",
+      "source": "On sucrose water, JNK-IN-5A-treated rats exhibited significantly lower levels of TG (JNK_D1, p<0.0001; JNK_D2, p<0.001), aspartate aminotransferase (AST; JNK_D1, p=0.09; JNK_D2, p=0.005), and LDH (JNK_D1, n.s.; JNK_D2, p=0.015) but had no significant change on body weight, glucose, high-density lipoprotein (HDL) and low-density lipoprotein (LDL) as compared to their corresponding controls (Figure 2b, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by plasma biochemistry measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "ac887a92-43e6-495a-a36c-08b4cf27f36c",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C29",
+      "claim": "JNK-IN-5A-treated rats on sucrose water exhibited significantly lower levels of aspartate aminotransferase (AST) compared to sucrose-only controls.",
+      "claim_type": "EXPLICIT",
+      "source": "On sucrose water, JNK-IN-5A-treated rats exhibited significantly lower levels of TG (JNK_D1, p<0.0001; JNK_D2, p<0.001), aspartate aminotransferase (AST; JNK_D1, p=0.09; JNK_D2, p=0.005), and LDH (JNK_D1, n.s.; JNK_D2, p=0.015) but had no significant change on body weight, glucose, high-density lipoprotein (HDL) and low-density lipoprotein (LDL) as compared to their corresponding controls (Figure 2b, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by plasma biochemistry measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "707b03df-3409-4ece-b341-f1b154866cda",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C30",
+      "claim": "JNK-IN-5A-treated rats on sucrose water exhibited significantly lower levels of LDH compared to sucrose-only controls.",
+      "claim_type": "EXPLICIT",
+      "source": "On sucrose water, JNK-IN-5A-treated rats exhibited significantly lower levels of TG (JNK_D1, p<0.0001; JNK_D2, p<0.001), aspartate aminotransferase (AST; JNK_D1, p=0.09; JNK_D2, p=0.005), and LDH (JNK_D1, n.s.; JNK_D2, p=0.015) but had no significant change on body weight, glucose, high-density lipoprotein (HDL) and low-density lipoprotein (LDL) as compared to their corresponding controls (Figure 2b, Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by plasma biochemistry measurements shown in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "da543e12-949e-4249-9acf-8c24dd65a004",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C31",
+      "claim": "JNK-IN-5A-treated rats exhibit no evidence of anxiety and behavior disorders.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, the behavior tests indicate the JNK-IN-5A-treated rats exhibit no evidence of anxiety and behavior disorders.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by behavioral test data including passive avoidance test, locomotor activity test, and elevated plus maze test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "d03c5f4a-6fe1-4bec-b9d1-10acfde56155",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C32",
+      "claim": "Mapk8 and Mapk9 have high expression in liver, vWAT, SkM, and brain tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, Mapk8 and Mapk9 have high expression in all these tissues (liver, vWAT, SkM, and brain) whereas Mapk10 is highly expressed specifically in the brain tissue (Figure 2c, Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 2c and Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "4b185c77-db01-42a6-a1b8-2b2f45517677",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C33",
+      "claim": "Mapk10 is highly expressed specifically in the brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "As anticipated, Mapk8 and Mapk9 have high expression in all these tissues (liver, vWAT, SkM, and brain) whereas Mapk10 is highly expressed specifically in the brain tissue (Figure 2c, Figure 3\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene expression data shown in Figure 2c and Figure 3\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "bb7fc232-5324-40b2-9f15-053c90992507",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C34",
+      "claim": "Treatment of JNK_D1 effectively alleviated the JNK1 gene expression in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis indicates that the treatment of JNK_D1 effectively alleviated the JNK1 gene expression in the liver (padj = 0.03) and exerted more profound inhibitory effects on both JNK1 (padj = 0.0009) and JNK2 gene expression (padj = 2.2e-07) in SkM (Figure 2c, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "36a6741e-4b5e-4d9c-a52e-6648dfbe01da",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C35",
+      "claim": "Treatment of JNK_D1 exerted profound inhibitory effects on both JNK1 and JNK2 gene expression in skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis indicates that the treatment of JNK_D1 effectively alleviated the JNK1 gene expression in the liver (padj = 0.03) and exerted more profound inhibitory effects on both JNK1 (padj = 0.0009) and JNK2 gene expression (padj = 2.2e-07) in SkM (Figure 2c, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis shown in Figure 2c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "b2480849-7cda-4a49-852a-cc2405115803",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C36",
+      "claim": "Plasma TG level is significantly correlated with the JNK2 gene expression in skeletal muscle.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we found that plasma TG level is significantly correlated with the JNK2 gene expression in SkM (Figure 2d and e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 2d and e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "bf78b25c-d302-48a4-b826-ea454c186331",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C37",
+      "claim": "Liquid sucrose ingestion resulted in the largest transcriptional changes in the liver and vWAT.",
+      "claim_type": "EXPLICIT",
+      "source": "Principal component analysis (PCA) revealed that liquid sucrose ingestion resulted in the largest transcriptional changes in the liver and vWAT (Figure 3a), which is consistent with previous results (Stephenson et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCA analysis shown in Figure 3a and is consistent with cited previous results.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "9d731a82-3a37-4cf3-b498-fc915b5e1042",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C38",
+      "claim": "JNK-IN-5A treatment corrected to a large extent the gene expression profile in the liver and vWAT of treated-rats towards the profile of healthy controls.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, we observed that JNK-IN-5A treatment, especially JNK_D1, corrected to a large extent of the gene expression profile in the liver and vWAT of treated-rats towards the profile of healthy controls on a principal components space (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCA analysis shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "47d86d3c-1abd-4db0-8c59-ce99b01939bf",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C39",
+      "claim": "The liver had the largest number of differentially expressed genes associated with liquid sucrose ingestion, comprising a total of 2771 DEGs (14%).",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel with the results presented above, differential gene expression analysis revealed that the liver had the largest number of differentially expressed genes (DEGs, DESeq2-Benjamini-Hochberg adjusted p<0.01) associated with liquid sucrose ingestion, comprising a total of 2771 DEGs (14%), followed closely by vWAT with 2,724 DEGs (13.8%), SkM with 257 DEGs (1.3%), and the brain with a modest 30 DEGs (0.2%) (Figure 3b and c, Figure 3\u2014figure supplement 1b\u2013e, Supplementary file 6).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis shown in Figure 3b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "72821c0a-2925-4231-bcd5-c85957caa2c3",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C40",
+      "claim": "JNK_D1 treatment substantially suppressed the expression of 60.7% of sucrose-induced DEGs in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in the liver, JNK_D1 treatment substantially suppressed the expression of 60.7% (1143 out of 1884, hypergeometric p\u2248 0) sucrose-induced DEGs and elevated the expression of 22% of sucrose-repressed genes (195 out of 887, hypergeometric p=6.9e-129) (Figure 3d, Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis and hypergeometric testing shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "fad05be4-d72c-484c-ab4f-2258ed66e25a",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C41",
+      "claim": "JNK_D1 treatment elevated the expression of 22% of sucrose-repressed genes in the liver.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in the liver, JNK_D1 treatment substantially suppressed the expression of 60.7% (1143 out of 1884, hypergeometric p\u2248 0) sucrose-induced DEGs and elevated the expression of 22% of sucrose-repressed genes (195 out of 887, hypergeometric p=6.9e-129) (Figure 3d, Figure 3\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis and hypergeometric testing shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "d563d9da-e225-4929-8da0-b52e7dcd7fcc",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C42",
+      "claim": "JNK_D1 treatment reversed 42.2% and 31.4% of DEGs in vWAT.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, we observed a reversal of 42.2% and 31.4% (698 of 1655 and 336 out of 1069, respectively) DEGs in vWAT (Figure 3d, Figure 3\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis shown in Figure 3d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "b8104a78-80c9-40be-b918-5d43a72149f7",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C43",
+      "claim": "Pathway enrichment analysis of JNK_D1 reversed genes identified significantly enriched KEGG pathways related to carbon metabolism, fatty acid metabolism, protein processing in ER, and oxidative phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Pathway enrichment analysis of JNK_D1 reversed genes identified significantly enriched KEGG pathways related to carbon metabolism, fatty acid metabolism, protein processing in ER, and oxidative phosphorylation (OXPHOS) (Benjamini-Hochberg adjusted p<0.01) (Figure 3\u2014figure supplement 2c and d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by pathway enrichment analysis shown in Figure 3\u2014figure supplement 2c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "f4e04073-3cd1-4322-9e30-9635009cdf70",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C44",
+      "claim": "Liquid sucrose intake has minimal impact on skeletal muscle in terms of both genome-wide transcriptional variance and the number of DEGs.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we found that in contrast to the massive transcriptional regulation observed in the liver and vWAT, liquid sucrose intake has minimal impact on SkM in terms of both genome-wide transcriptional variance (Figure 3a) and the number of DEGs (Figures 3a and 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by PCA and differential gene expression analysis shown in Figures 3a and 4a-b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "1d5eaef8-0ffb-4f6d-bb13-0525674a4e8e",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C45",
+      "claim": "In JNK_D1-treated skeletal muscle, a substantial quantitative difference in gene expression emerged, encompassing 4,159 (20.9%) DEGs.",
+      "claim_type": "EXPLICIT",
+      "source": "While in JNK_D1-treated SkM, a substantial quantitative difference in gene expression emerged, encompassing 4,159 (20.9%) DEGs, of which 97% up-regulated (1552 out of 1588) and 99% down-regulated (2557 out of 2571) genes being exclusively dependent on the JNK_D1 treatment (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis shown in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "1e0632ff-7dd5-4f34-bfa5-b691372980f3",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C46",
+      "claim": "97% of up-regulated genes and 99% of down-regulated genes in JNK_D1-treated skeletal muscle were exclusively dependent on the JNK_D1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "While in JNK_D1-treated SkM, a substantial quantitative difference in gene expression emerged, encompassing 4,159 (20.9%) DEGs, of which 97% up-regulated (1552 out of 1588) and 99% down-regulated (2557 out of 2571) genes being exclusively dependent on the JNK_D1 treatment (Figure 4a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by differential gene expression analysis shown in Figure 4a and b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "9b7fdb0a-4ba3-48d5-b35a-b1a87d519601",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C47",
+      "claim": "Many of the upregulated genes in JNK_D1-treated skeletal muscle are involved in immune-related pathways, including hematopoietic cell lineage, osteoclast differentiation, chemokine signaling pathway, phagosome, and Fc gamma R-mediated phagocytosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional analysis revealed that many of the upregulated genes are involved in immune-related pathways, including hematopoietic cell lineage (HSCs), osteoclast differentiation, chemokine signaling pathway, phagosome, and Fc gamma R-mediated phagocytosis, and down-regulated genes are involved in OXPHOS, thermogenesis, TCA cycle, carbon metabolism, cardiac muscle contraction, and insulin signaling pathway (Figure 4c and d, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by functional enrichment analysis shown in Figure 4c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "9dc3c6e1-0fa7-47e6-ae13-0e8b20482640",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C48",
+      "claim": "Down-regulated genes in JNK_D1-treated skeletal muscle are involved in OXPHOS, thermogenesis, TCA cycle, carbon metabolism, cardiac muscle contraction, and insulin signaling pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional analysis revealed that many of the upregulated genes are involved in immune-related pathways, including hematopoietic cell lineage (HSCs), osteoclast differentiation, chemokine signaling pathway, phagosome, and Fc gamma R-mediated phagocytosis, and down-regulated genes are involved in OXPHOS, thermogenesis, TCA cycle, carbon metabolism, cardiac muscle contraction, and insulin signaling pathway (Figure 4c and d, Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by functional enrichment analysis shown in Figure 4c and d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "106f5b34-8174-4a5f-980f-407284d3a6cf",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C49",
+      "claim": "86% and 69% of shared DEGs between skeletal muscle and vWAT, and the brain, exhibited consistent changes in response to JNK_D1 treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, 86% and 69% of shared DEGs between SkM and vWAT, and the brain, exhibited consistent changes in response to JNK_D1 treatment (the same log2FC sign, indicating either upregulated or downregulated in both tissues being compared), with a Spearman correlation of 0.78 and 0.54, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of log2FC values between tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "4f9518c7-caed-476f-bb78-dde5e4734c9b",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C50",
+      "claim": "Shared DEGs between skeletal muscle and vWAT after JNK_D1 treatment were found to be involved in several critical metabolic processes, including cholesterol metabolism, bile acid biosynthesis and secretion, and regulation of energy homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "These shared DEGs were found to be involved in several critical metabolic processes, including cholesterol metabolism, bile acid biosynthesis and secretion (such as Lipc, Apob, Slc7a1, Angptl3, Slc10a1), and regulation of energy homeostasis (e.g. Lep), suggesting that SkM had a major metabolic adaptation to JNK_D1 treatment and exerts its metabolic effect, at least partially, through coordinated interactions with other tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the functional annotation of shared DEGs and their known roles in metabolism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "3fad2f24-a344-4f18-b7a2-7f60f78bfa8f",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C51",
+      "claim": "Skeletal muscle had a major metabolic adaptation to JNK_D1 treatment and exerts its metabolic effect, at least partially, through coordinated interactions with other tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "These shared DEGs were found to be involved in several critical metabolic processes, including cholesterol metabolism, bile acid biosynthesis and secretion (such as Lipc, Apob, Slc7a1, Angptl3, Slc10a1), and regulation of energy homeostasis (e.g. Lep), suggesting that SkM had a major metabolic adaptation to JNK_D1 treatment and exerts its metabolic effect, at least partially, through coordinated interactions with other tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the analysis of shared DEGs and their correlation across tissues.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "de2b04c5-4d50-4560-9d33-dc5151967f0c",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C52",
+      "claim": "The intervention with sucrose-sweetened water triggered extensive transcriptional changes in the liver and adipose tissues, including those involved in fatty acid and oxidative metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "By studying the hepatic and extrahepatic tissues using genome-wide transcriptome data and integrative analyses with GEMs, we found that the intervention with sucrose-sweetened water triggered extensive transcriptional changes in the liver and adipose tissues, including those involved in fatty acid and oxidative metabolism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by transcriptomic analysis and genome-scale metabolic modeling.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "2db53b57-f01e-45dc-894a-19b6ea33c699",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C53",
+      "claim": "Upon chronic overnutrition, adipose lipogenesis is significantly downregulated, which leads to ectopic lipid accumulation and insulin resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been reported that upon chronic overnutrition, adipose lipogenesis is significantly downregulated, which leads to ectopic lipid accumulation and insulin resistance (Jeon et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Jeon et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "d1664681-bc2d-4400-8aa2-bde2662f404e",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C54",
+      "claim": "In the sucrose-sweetened water group, the mRNA expression of many genes related to fatty acid metabolism and uptake is downregulated in adipose tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "In line with this, we found that in the sucrose-sweetened water group, the mRNA expression of many genes related to fatty acid metabolism and uptake is downregulated in adipose tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by differential gene expression analysis of adipose tissue.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "e3762b67-841a-4fb3-8d22-ad65ae38a3aa",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C55",
+      "claim": "Genes related to fatty acid metabolism and uptake showed opposite regulation between liver and adipose tissue in response to diet intervention.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, those genes showed the opposite regulation between liver and adipose tissue, indicating their complementary role in these metabolic processes in response to the diet intervention.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the comparison of gene expression patterns between liver and adipose tissue.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "4afec559-8bcd-41ba-80f8-e28cafd7b320",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C56",
+      "claim": "JNK-IN-5A, especially when administered at a regular dosage (JNK_D1, 30 mg/kg/d), effectively opposite a substantial portion of the transcriptional changes induced by sucrose consumption.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data demonstrated that JNK-IN-5A, especially when administered at a regular dosage (JNK_D1, 30 mg/kg/d), effectively opposite a substantial portion of the transcriptional changes induced by sucrose consumption, particularly those related to carbon, fatty acid metabolism, OXPHOS, and thermogenesis in the liver and adipose tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by differential gene expression analysis and pathway enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "125dad5c-1ceb-4ddb-b618-f4e4e1930bdd",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C57",
+      "claim": "JNK_D1-treated skeletal muscle exhibited profound transcriptional changes related to HSCs, osteoclast differentiation, and immune-related pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our study also revealed that JNK_D1-treated skeletal muscle exhibited profound transcriptional changes related to HSCs, osteoclast differentiation, and immune-related pathways.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by functional enrichment analysis of DEGs in skeletal muscle.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "babd5a3c-7ecd-4295-9efd-74de8ea4979d",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C58",
+      "claim": "Transcriptional changes in JNK_D1-treated skeletal muscle were not confined to skeletal muscle but exhibited correlations with transcriptional changes in the liver, adipose tissue, and brain tissue.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that these changes were not confined to skeletal muscle but exhibited correlations with transcriptional changes in the liver, adipose tissue, and even brain tissue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by correlation analysis of log2FC values between tissues.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "eb105878-62e4-420c-8829-f6687a51339a",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C59",
+      "claim": "The JNK pathway regulates HSCs expansion and self-renewal in JNK-IN-8-treated CD34+CD45RA-CB cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, Xiao et al., 2019 demonstrated that the JNK pathway regulates HSCs expansion and self-renewal in JNK-IN-8-treated CD34+CD45RA-CB cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Xiao et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "a23698b2-c83d-42d5-9074-c268d6a67ca7",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C60",
+      "claim": "Mice with muscle-specific JNK1/2 knockout have a muscle phenotype that mimics that of endurance-trained athletes.",
+      "claim_type": "EXPLICIT",
+      "source": "Lessard et al., 2018 demonstrated that mice with muscle-specific JNK1/2 knockout, have a muscle phenotype that mimics that of endurance-trained athletes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Lessard et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "5133bfa5-4e20-4a1e-9381-8c4fdea5520a",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C61",
+      "claim": "Long-term JNK inhibition may disrupt liver regeneration, as JNK plays a critical role in liver repair by regulating hepatocyte proliferation and survival following injury or stress.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, long-term JNK inhibition may disrupt liver regeneration, as JNK plays a critical role in liver repair by regulating hepatocyte proliferation and survival following injury or stress (Papa and Bubici, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Papa and Bubici, 2018 and represents a potential risk of JNK inhibition.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "835387e3-740b-4920-9ec9-51cfc3fffac5",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C62",
+      "claim": "In HCC, JNK acts as both a tumor promoter, driving inflammation, fibrosis, and metabolic dysregulation, and a tumor suppressor, facilitating apoptosis and cell cycle arrest in damaged hepatocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "In HCC, it has been reported that JNK acts as both a tumor promoter, driving inflammation, fibrosis, and metabolic dysregulation, and a tumor suppressor, facilitating apoptosis and cell cycle arrest in damaged hepatocytes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Seki et al., 2012 and represents established knowledge about JNK's dual role.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "80e073e5-7d2a-43e4-a083-4a0442e4e762",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C63",
+      "claim": "Compass predicted that 2840 and 4170 metabolic reactions showed significantly altered activity following sucrose consumption in the liver and vWAT, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Compass predicted that 2840 and 4170 metabolic reactions showed significantly altered activity (Wilcoxon test, adjusted p-value <0.05) following the sucrose consumption in the liver and vWAT, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Compass metabolic modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "c8dbdade-ea71-45fe-ba3b-be85ae3403a5",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C64",
+      "claim": "89.2% and 88.3% of metabolic reactions altered by sucrose consumption were correspondingly reversed after JNK_D1 treatment in liver and vWAT.",
+      "claim_type": "EXPLICIT",
+      "source": "89.2% and 88.3% of which were correspondingly reversed after JNK_D1 treatment (Supplementary file 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by Compass metabolic modeling analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "70ed75a9-7234-440f-b195-dc35842c62e7",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C65",
+      "claim": "Altered tryptophan metabolism was observed in rats consuming 10% sucrose in drinking water, including decreased serum levels of kynurenic acid and kynurenine.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, \u00d6zt\u00fcrk et al. reported altered tryptophan metabolism in rats consuming 10% sucrose in drinking water, including decreased serum levels of kynurenic acid and kynurenine (Ozturk and Eryavuz Onmaz, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Ozturk and Eryavuz Onmaz, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "ec9e4937-be29-43d8-b39d-c1351d1f03cd",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C66",
+      "claim": "Increased triglyceride-bound oleate, palmitate, and stearate were observed in the livers of rats fed a 10% sucrose solution.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, increased triglyceride-bound oleate, palmitate, and stearate were observed in the livers of rats fed a 10% sucrose solution (Stephenson et al., 2022), indicating JNK-IN-5A treatment may regulate lipid metabolism by modulating these metabolic activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to Stephenson et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "d878d783-2e42-4bb0-84b8-030455428933",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C67",
+      "claim": "A total of 19,780 protein-coding genes in the rat genome were analyzed.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 19,780 protein-coding genes in the rat genome were analyzed (Martin et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a methodological statement about the scope of the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "41e9a09c-b1e4-4a5f-82f6-c0a4980e7437",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C68",
+      "claim": "Mapk9 is among the module members of SkM.M0.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, we observed that Mapk9 is among the module members of SkM.M0, indicating a potential metabolic link coordinated by JNK inhibition, connecting SkM with other tissues, including the liver and vWAT (Figure 6b, Supplementary file 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene co-expression network analysis shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "1d7150a2-634a-480e-925a-cd2967f45eb4",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C69",
+      "claim": "There is a significant correlation between SkM.M0 and Liver.M0 (R = 0.67, padj = 0.006).",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed a significant correlation between SkM.M0 and Liver.M0 (R = 0.67, padj = 0.006) as well as vWAT.M3 (R = 0.58, padj = 0.03) (Figure 6b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of module eigengenes shown in Figure 6b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "1050378e-a658-4bce-8eb8-0dd43ed2e352",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "claim_id": "C70",
+      "claim": "There is a significant correlation between SkM.M0 and vWAT.M3 (R = 0.58, padj = 0.03).",
+      "claim_type": "EXPLICIT",
+      "source": "Our analysis revealed a significant correlation between SkM.M0 and Liver.M0 (R = 0.67, padj = 0.006) as well as vWAT.M3 (R = 0.58, padj = 0.03) (Figure 6b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis of module eigengenes shown in Figure 6b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "c21f3f76-9c2a-46b4-b483-48a8034ecded",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "A 7-day oral toxicology study in rats demonstrated that JNK-IN-5A at doses up to 300 mg/kg/day was well tolerated, with no significant changes in body weight or hematological parameters, though higher doses decreased sodium levels in females and elevated phosphate in both sexes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C22-C25 collectively demonstrate acceptable tolerability of JNK-IN-5A in the acute toxicity study. The data show no major adverse effects on body weight or hematology, with only minor electrolyte changes at higher doses. Sample sizes (n=3/sex/group) are small but adequate for preliminary toxicology screening.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "f2da0079-c266-424e-9273-f4e999a61b22",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "JNK-IN-5A treatment significantly reduced plasma triglycerides, AST, and LDH levels in rats consuming sucrose-sweetened water, with the lower dose (JNK_D1, 30 mg/kg/day) showing the most consistent effects across all biomarkers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C30 and C4-C5 are well-supported by plasma biochemistry data with appropriate statistical testing (p<0.05 thresholds). The dose-response relationship is documented, though JNK_D1 appears more effective than JNK_D2 for some parameters. Sample sizes (n=11/group) are adequate for detecting these effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "47dc5c86-7f65-4a94-b083-dfbe8e5c8881",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "JNK-IN-5A-treated rats exhibited no evidence of anxiety or behavioral disorders based on passive avoidance, locomotor activity, and elevated plus maze tests.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by multiple behavioral assays showing no significant differences between treatment groups. This addresses an important safety concern given JNK3's expression in the brain. However, the manuscript does not provide detailed statistical results for these behavioral tests in the main text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "ef40beb4-9e21-40db-b0fd-a9fa5bcb0ca1",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "JNK isoforms show tissue-specific expression patterns, with Mapk8 and Mapk9 highly expressed across liver, vWAT, skeletal muscle, and brain, while Mapk10 is brain-specific. JNK_D1 treatment significantly reduced JNK1 expression in liver and both JNK1 and JNK2 expression in skeletal muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by RNA-seq data with appropriate statistical testing (adjusted p-values provided). The tissue-specific expression patterns align with known biology (C17). The finding that JNK-IN-5A affects gene expression of JNK isoforms is notable, though the mechanism is unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "7d7f1f8f-d88d-435c-8440-3710a2bb6427",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Plasma triglyceride levels are significantly correlated with JNK2 gene expression in skeletal muscle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C36 is supported by correlation analysis shown in Figure 2d-e. This finding suggests a potential mechanistic link between skeletal muscle JNK2 and systemic lipid metabolism, though causality cannot be inferred from correlation alone.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "c18e30b5-d96e-46d1-bcac-24b361352ad0",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Sucrose consumption induced extensive transcriptional changes primarily in liver (2771 DEGs, 14%) and vWAT (2724 DEGs, 13.8%), affecting fatty acid and oxidative metabolism pathways. JNK_D1 treatment largely corrected these gene expression profiles toward healthy control patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C39, C6-C7, and C52 are well-supported by comprehensive transcriptomic analysis with appropriate statistical thresholds (adjusted p<0.01). PCA analysis demonstrates clear separation and correction of expression profiles. The pathway enrichment analysis provides mechanistic insights into metabolic dysfunction.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "ac091b4a-f7a0-46e2-bd75-9aa63e2196b1",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "JNK_D1 treatment reversed a substantial proportion of sucrose-induced transcriptional changes in liver (60.7% of upregulated, 22% of downregulated genes) and vWAT (42.2% and 31.4%), particularly affecting pathways related to carbon metabolism, fatty acid metabolism, protein processing, and oxidative phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C43, C8, and C56 are strongly supported by differential expression analysis with hypergeometric testing showing highly significant overlaps (p\u22480). The pathway enrichment analysis identifies specific metabolic processes affected. The asymmetry in reversal percentages between up- and down-regulated genes is interesting but not explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "dfd2ca59-cf01-4c47-8ef2-326693c62085",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Skeletal muscle exhibited minimal transcriptional response to sucrose consumption, with only 257 DEGs (1.3%) compared to extensive changes in liver and adipose tissue.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44 and C9 are supported by differential expression analysis and PCA showing minimal variance in skeletal muscle in response to sucrose. This tissue-specific response pattern is well-documented and contrasts sharply with liver and adipose tissue responses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "c1f71663-0f8a-43d9-94f6-ef85d106f996",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "JNK_D1 treatment induced substantial transcriptional changes in skeletal muscle (4159 DEGs, 20.9%), with upregulated genes enriched in immune-related pathways (hematopoietic cell lineage, osteoclast differentiation, chemokine signaling) and downregulated genes involved in oxidative phosphorylation, thermogenesis, TCA cycle, and insulin signaling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48, C10, and C57 are well-supported by comprehensive transcriptomic analysis. The finding that 97-99% of DEGs are treatment-specific (not sucrose-responsive) is striking. However, the biological interpretation of immune pathway upregulation in skeletal muscle requires further investigation, as acknowledged in the discussion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "e5e82570-ad3c-48f4-8039-0a894ec5f787",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Transcriptional changes in JNK_D1-treated skeletal muscle showed strong correlations with changes in liver, vWAT, and brain (86%, 69% concordance respectively), with shared DEGs involved in cholesterol metabolism, bile acid biosynthesis, and energy homeostasis, suggesting coordinated inter-tissue metabolic adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51 and C58 are supported by correlation analysis of log2FC values across tissues. The high Spearman correlations (0.78, 0.54) and functional annotation of shared genes provide evidence for inter-tissue coordination. However, the mechanistic basis for this coordination remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "6c47f6be-205b-4e3a-9024-10020cc65e9a",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Sucrose consumption downregulated genes related to fatty acid metabolism and uptake in adipose tissue, showing opposite regulation compared to liver, consistent with the known phenomenon that chronic overnutrition downregulates adipose lipogenesis leading to ectopic lipid accumulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C55 are supported by differential expression analysis showing tissue-specific patterns. Claim C53 provides literature context (Jeon et al., 2023) supporting the interpretation. The complementary regulation between liver and adipose tissue is well-documented in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "dda7afaf-f628-45c2-91c5-175114c3b3ae",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Genome-scale metabolic modeling predicted that sucrose consumption altered 2840 and 4170 metabolic reactions in liver and vWAT respectively, with 89.2% and 88.3% of these reactions reversed by JNK_D1 treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by Compass metabolic modeling analysis with appropriate statistical testing (Wilcoxon test, adjusted p<0.05). The high reversal percentages align with transcriptomic findings. However, the validation of these computational predictions with metabolomic data would strengthen the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "1e19181f-10d9-4304-83b0-812bfe98de9a",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Gene co-expression network analysis revealed that Mapk9 is a member of skeletal muscle module SkM.M0, which shows significant correlations with liver module Liver.M0 (R=0.67, padj=0.006) and vWAT module vWAT.M3 (R=0.58, padj=0.03), suggesting JNK-mediated inter-tissue metabolic coordination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 are supported by co-expression network analysis with appropriate statistical testing. The presence of Mapk9 in a module that correlates across tissues provides mechanistic insight into JNK's role in inter-tissue communication. The correlation coefficients are moderate but statistically significant.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "17885d90-740b-424f-9a77-5c4e2770948c",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Extrahepatic metabolism, particularly in adipose tissue and skeletal muscle, plays a critical role in the development of diet-induced steatosis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C11 is supported by the comprehensive multi-tissue transcriptomic analysis showing substantial changes in adipose tissue and skeletal muscle, inter-tissue correlations, and the reversal of metabolic dysfunction through JNK inhibition affecting multiple tissues. This represents a key conceptual conclusion of the study.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background claims establishing the context for MAFLD, sucrose consumption, JNK pathway biology, and prior evidence for JNK inhibition as a therapeutic strategy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims (C1-C3, C12-C21, C59-C62, C65-C66) represent background knowledge and literature citations that provide context for the study. They are appropriately cited and represent established knowledge in the field. These are not novel findings from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "0876ae9c-6bbf-45d3-a91d-e05b21e9de52",
+      "content_id": "1753e2ca-3c88-4aa8-9141-79b362646052",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "A total of 19,780 protein-coding genes in the rat genome were analyzed.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C67 is a methodological statement about the scope of the transcriptomic analysis. This is appropriately documented and represents standard practice for RNA-seq analysis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "83b000bb-b8ca-4dcb-be1d-d32a98746931",
+      "content_id": "9e10048d-a97c-45e4-8769-898b676e04ef",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "JNK-IN-5A treatment reduces plasma triglycerides and inflammation markers (LDH, AST) in sucrose-fed rats. The study demonstrates that JNK inhibition effectively reduces circulating triglyceride accumulation and inflammation in rats subjected to sucrose consumption, with dose-dependent effects observed for both JNK_D1 and JNK_D2 treatments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the therapeutic effects but note critical limitations. Reviewer 3 explicitly states 'the evaluation of the therapeutic effect was limited to evaluation of plasma TG, LDH, and gene expression changes' and emphasizes 'there was no evaluation of liver tissue images, it is unclear what changes were brought about in the liver.' This indicates the biochemical findings are accepted but insufficient to fully support therapeutic efficacy claims without histological validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "f8f0f638-7c23-455b-8dca-5c37873f426f",
+      "content_id": "9e10048d-a97c-45e4-8769-898b676e04ef",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Sucrose overconsumption induces transcriptional dysfunction in liver and adipose tissue related to fatty acid and oxidative metabolism, which is largely reversed by JNK-IN-5A treatment. The liver showed the largest number of DEGs (2771, 14%), followed by vWAT (2724, 13.8%), with JNK_D1 treatment reversing 60.7% of sucrose-induced DEGs in liver and 42.2% in vWAT.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers affirm these findings as central contributions. The editor states 'the conclusions of disrupted liver, muscle and adipose metabolism being central to these effects are solid, as they are supported by a combination of experimental dissection and network modeling approaches.' Reviewer 2 highlights the 'comprehensive multi-tissue analysis' and 'robust use of systems biology' as strengths. Reviewer 3 confirms 'the authors successfully provided the valuable insights that the JNK inhibitor has a cross-organ therapeutic effect.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "c5fe2796-5875-452d-9d3a-3f065862ac5b",
+      "content_id": "9e10048d-a97c-45e4-8769-898b676e04ef",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Skeletal muscle showed minimal transcriptional response to sucrose (257 DEGs, 1.3%) but underwent substantial metabolic adaptation following JNK_D1 treatment (4,159 DEGs, 20.9%), with upregulated genes involved in immune-related pathways and downregulated genes involved in oxidative metabolism and insulin signaling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings as novel and important. The editor explicitly notes this as part of the 'solid' conclusions about 'disrupted liver, muscle and adipose metabolism.' Reviewer 3 emphasizes the value of 'multi-organ interaction' analysis and states the findings are 'supported by convincing data, comprehensively analysing the transcriptomic data obtained from multiple organs using GCN analysis and GEM.' No concerns were raised about the skeletal muscle findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "c69bc0d2-3134-496c-92db-67d685837701",
+      "content_id": "9e10048d-a97c-45e4-8769-898b676e04ef",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Extrahepatic metabolism, particularly skeletal muscle, plays a critical role in diet-induced steatosis through coordinated inter-tissue interactions. Gene co-expression analysis revealed significant correlations between skeletal muscle module SkM.M0 and liver module Liver.M0 (R=0.67, padj=0.006) and vWAT module vWAT.M3 (R=0.58, padj=0.03), with shared DEGs involved in cholesterol metabolism and energy homeostasis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly support the inter-tissue findings as a key contribution. Reviewer 3 states 'their comprehensive transcriptomic analysis in multiple organs...has demonstrated that the effects of drugs are more widespread than just on specific tissues thought to be the main target, indicating the importance of focusing on tissue interactions.' The editor affirms the conclusions are 'solid' and 'supported by a combination of experimental dissection and network modeling approaches.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "fd54ad2a-c662-48e9-93a7-8b1354f7a2ed",
+      "content_id": "9e10048d-a97c-45e4-8769-898b676e04ef",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "JNK-IN-5A is well tolerated in rats with no significant adverse effects on body weight, hematological parameters, or behavior. Minor changes in sodium (decreased in females at higher doses) and phosphate (elevated in both sexes at higher doses) were observed, but behavioral tests showed no evidence of anxiety or behavioral disorders.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the safety findings without challenge. Reviewer 3 notes as a strength that 'the authors effectively assessed possible side effects with a view to the clinical application of JNK-IN-5A.' Reviewer 2 mentions 'behavioral and metabolic correlation' as providing 'a more holistic view of the treatment's effects.' No concerns were raised about the toxicology or behavioral data.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "7189d54d-7be9-46fe-9e9b-4e1157273633",
+      "content_id": "9e10048d-a97c-45e4-8769-898b676e04ef",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "JNK_D1 treatment effectively reduced JNK1 gene expression in liver and both JNK1 and JNK2 expression in skeletal muscle, with plasma triglyceride levels significantly correlated with JNK2 gene expression in skeletal muscle.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these molecular findings. The correlation between plasma TG and skeletal muscle JNK2 expression is presented as supporting evidence for the inter-tissue metabolic coordination, which reviewers affirm as a key finding. No concerns were raised about the gene expression or correlation analyses.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "a4159aeb-7ad9-4028-88b1-f4d9fd6472a4",
+      "content_id": "9e10048d-a97c-45e4-8769-898b676e04ef",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Genome-scale metabolic modeling using Compass predicted that 2840 and 4170 metabolic reactions showed significantly altered activity following sucrose consumption in liver and vWAT respectively, with 89.2% and 88.3% of these reactions reversed after JNK_D1 treatment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 explicitly critiques the reliance on computational predictions without direct validation: 'The metabolic process activities were evaluated using RNA-seq results in Figure 7, but direct data such as metabolite measurements are lacking.' While reviewers acknowledge the systems biology approach as a strength, the absence of metabolite validation creates uncertainty about the metabolic modeling conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3",
+      "content_id": "9e10048d-a97c-45e4-8769-898b676e04ef",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Background claims establishing the context for MAFLD, JNK pathway biology, and prior evidence for JNK inhibition as a therapeutic strategy. These include the role of sucrose in MAFLD pathogenesis, JNK isoform expression patterns, prior genetic studies showing protection from steatosis in JNK knockout mice, and JNK-IN-5A's selectivity and prior in vitro efficacy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these background claims without challenge. Reviewer 3 notes as a strength that 'it has been previously reported that inhibition of JNK signalling can contribute to the prevention of hepatic steatosis...but the role of JNK signalling in the metabolic disruption caused by excessive intake of sucrose...has not been well understood, and the authors have addressed this point.' These contextual claims are treated as established knowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fb34534f-a1db-460d-90c7-0564345e78e2",
+      "result_id": "c21f3f76-9c2a-46b4-b483-48a8034ecded"
+    },
+    {
+      "claim_id": "8b851cf9-29b6-4f16-855b-5e464e7fd295",
+      "result_id": "c21f3f76-9c2a-46b4-b483-48a8034ecded"
+    },
+    {
+      "claim_id": "35ed84ec-7025-414c-91a1-b3fe613194e2",
+      "result_id": "c21f3f76-9c2a-46b4-b483-48a8034ecded"
+    },
+    {
+      "claim_id": "e013e663-f530-4f0a-bb12-e8e0f45ff253",
+      "result_id": "c21f3f76-9c2a-46b4-b483-48a8034ecded"
+    },
+    {
+      "claim_id": "5c360371-0409-4d1e-b42f-32fc68faf50c",
+      "result_id": "f2da0079-c266-424e-9273-f4e999a61b22"
+    },
+    {
+      "claim_id": "bff45d38-1ddf-4252-bed8-500cd44b2877",
+      "result_id": "f2da0079-c266-424e-9273-f4e999a61b22"
+    },
+    {
+      "claim_id": "10483313-996a-41e9-8e79-fb7d1eb6ead4",
+      "result_id": "f2da0079-c266-424e-9273-f4e999a61b22"
+    },
+    {
+      "claim_id": "ac887a92-43e6-495a-a36c-08b4cf27f36c",
+      "result_id": "f2da0079-c266-424e-9273-f4e999a61b22"
+    },
+    {
+      "claim_id": "707b03df-3409-4ece-b341-f1b154866cda",
+      "result_id": "f2da0079-c266-424e-9273-f4e999a61b22"
+    },
+    {
+      "claim_id": "9ef02178-1995-4b45-a816-43a3717c32b1",
+      "result_id": "f2da0079-c266-424e-9273-f4e999a61b22"
+    },
+    {
+      "claim_id": "2ca7d96d-5e41-4d22-bc21-6b1298681c60",
+      "result_id": "f2da0079-c266-424e-9273-f4e999a61b22"
+    },
+    {
+      "claim_id": "da543e12-949e-4249-9acf-8c24dd65a004",
+      "result_id": "47dc5c86-7f65-4a94-b083-dfbe8e5c8881"
+    },
+    {
+      "claim_id": "d03c5f4a-6fe1-4bec-b9d1-10acfde56155",
+      "result_id": "ef40beb4-9e21-40db-b0fd-a9fa5bcb0ca1"
+    },
+    {
+      "claim_id": "4b185c77-db01-42a6-a1b8-2b2f45517677",
+      "result_id": "ef40beb4-9e21-40db-b0fd-a9fa5bcb0ca1"
+    },
+    {
+      "claim_id": "bb7fc232-5324-40b2-9f15-053c90992507",
+      "result_id": "ef40beb4-9e21-40db-b0fd-a9fa5bcb0ca1"
+    },
+    {
+      "claim_id": "36a6741e-4b5e-4d9c-a52e-6648dfbe01da",
+      "result_id": "ef40beb4-9e21-40db-b0fd-a9fa5bcb0ca1"
+    },
+    {
+      "claim_id": "b2480849-7cda-4a49-852a-cc2405115803",
+      "result_id": "7d7f1f8f-d88d-435c-8440-3710a2bb6427"
+    },
+    {
+      "claim_id": "bf78b25c-d302-48a4-b826-ea454c186331",
+      "result_id": "c18e30b5-d96e-46d1-bcac-24b361352ad0"
+    },
+    {
+      "claim_id": "9d731a82-3a37-4cf3-b498-fc915b5e1042",
+      "result_id": "c18e30b5-d96e-46d1-bcac-24b361352ad0"
+    },
+    {
+      "claim_id": "47d86d3c-1abd-4db0-8c59-ce99b01939bf",
+      "result_id": "c18e30b5-d96e-46d1-bcac-24b361352ad0"
+    },
+    {
+      "claim_id": "f27ea7ab-fde9-4194-98ee-d9c5221c112c",
+      "result_id": "c18e30b5-d96e-46d1-bcac-24b361352ad0"
+    },
+    {
+      "claim_id": "3791b6cc-cf24-4419-acb0-36aee0737089",
+      "result_id": "c18e30b5-d96e-46d1-bcac-24b361352ad0"
+    },
+    {
+      "claim_id": "de2b04c5-4d50-4560-9d33-dc5151967f0c",
+      "result_id": "c18e30b5-d96e-46d1-bcac-24b361352ad0"
+    },
+    {
+      "claim_id": "72821c0a-2925-4231-bcd5-c85957caa2c3",
+      "result_id": "ac091b4a-f7a0-46e2-bd75-9aa63e2196b1"
+    },
+    {
+      "claim_id": "fad05be4-d72c-484c-ab4f-2258ed66e25a",
+      "result_id": "ac091b4a-f7a0-46e2-bd75-9aa63e2196b1"
+    },
+    {
+      "claim_id": "d563d9da-e225-4929-8da0-b52e7dcd7fcc",
+      "result_id": "ac091b4a-f7a0-46e2-bd75-9aa63e2196b1"
+    },
+    {
+      "claim_id": "b8104a78-80c9-40be-b918-5d43a72149f7",
+      "result_id": "ac091b4a-f7a0-46e2-bd75-9aa63e2196b1"
+    },
+    {
+      "claim_id": "30c944c0-e55b-41df-93fd-c151a96ceca6",
+      "result_id": "ac091b4a-f7a0-46e2-bd75-9aa63e2196b1"
+    },
+    {
+      "claim_id": "4afec559-8bcd-41ba-80f8-e28cafd7b320",
+      "result_id": "ac091b4a-f7a0-46e2-bd75-9aa63e2196b1"
+    },
+    {
+      "claim_id": "f4e04073-3cd1-4322-9e30-9635009cdf70",
+      "result_id": "dfd2ca59-cf01-4c47-8ef2-326693c62085"
+    },
+    {
+      "claim_id": "7be4de02-6471-4b84-b8a4-f4455e97f2d2",
+      "result_id": "dfd2ca59-cf01-4c47-8ef2-326693c62085"
+    },
+    {
+      "claim_id": "1d5eaef8-0ffb-4f6d-bb13-0525674a4e8e",
+      "result_id": "c1f71663-0f8a-43d9-94f6-ef85d106f996"
+    },
+    {
+      "claim_id": "1e0632ff-7dd5-4f34-bfa5-b691372980f3",
+      "result_id": "c1f71663-0f8a-43d9-94f6-ef85d106f996"
+    },
+    {
+      "claim_id": "722933ea-3612-4ffa-917c-1625f27ab3b5",
+      "result_id": "c1f71663-0f8a-43d9-94f6-ef85d106f996"
+    },
+    {
+      "claim_id": "9b7fdb0a-4ba3-48d5-b35a-b1a87d519601",
+      "result_id": "c1f71663-0f8a-43d9-94f6-ef85d106f996"
+    },
+    {
+      "claim_id": "9dc3c6e1-0fa7-47e6-ae13-0e8b20482640",
+      "result_id": "c1f71663-0f8a-43d9-94f6-ef85d106f996"
+    },
+    {
+      "claim_id": "125dad5c-1ceb-4ddb-b618-f4e4e1930bdd",
+      "result_id": "c1f71663-0f8a-43d9-94f6-ef85d106f996"
+    },
+    {
+      "claim_id": "106f5b34-8174-4a5f-980f-407284d3a6cf",
+      "result_id": "e5e82570-ad3c-48f4-8039-0a894ec5f787"
+    },
+    {
+      "claim_id": "4f9518c7-caed-476f-bb78-dde5e4734c9b",
+      "result_id": "e5e82570-ad3c-48f4-8039-0a894ec5f787"
+    },
+    {
+      "claim_id": "3fad2f24-a344-4f18-b7a2-7f60f78bfa8f",
+      "result_id": "e5e82570-ad3c-48f4-8039-0a894ec5f787"
+    },
+    {
+      "claim_id": "babd5a3c-7ecd-4295-9efd-74de8ea4979d",
+      "result_id": "e5e82570-ad3c-48f4-8039-0a894ec5f787"
+    },
+    {
+      "claim_id": "d1664681-bc2d-4400-8aa2-bde2662f404e",
+      "result_id": "6c47f6be-205b-4e3a-9024-10020cc65e9a"
+    },
+    {
+      "claim_id": "e3762b67-841a-4fb3-8d22-ad65ae38a3aa",
+      "result_id": "6c47f6be-205b-4e3a-9024-10020cc65e9a"
+    },
+    {
+      "claim_id": "2db53b57-f01e-45dc-894a-19b6ea33c699",
+      "result_id": "6c47f6be-205b-4e3a-9024-10020cc65e9a"
+    },
+    {
+      "claim_id": "80e073e5-7d2a-43e4-a083-4a0442e4e762",
+      "result_id": "dda7afaf-f628-45c2-91c5-175114c3b3ae"
+    },
+    {
+      "claim_id": "c8dbdade-ea71-45fe-ba3b-be85ae3403a5",
+      "result_id": "dda7afaf-f628-45c2-91c5-175114c3b3ae"
+    },
+    {
+      "claim_id": "41e9a09c-b1e4-4a5f-82f6-c0a4980e7437",
+      "result_id": "1e19181f-10d9-4304-83b0-812bfe98de9a"
+    },
+    {
+      "claim_id": "1d7150a2-634a-480e-925a-cd2967f45eb4",
+      "result_id": "1e19181f-10d9-4304-83b0-812bfe98de9a"
+    },
+    {
+      "claim_id": "1050378e-a658-4bce-8eb8-0dd43ed2e352",
+      "result_id": "1e19181f-10d9-4304-83b0-812bfe98de9a"
+    },
+    {
+      "claim_id": "48a12098-3865-4818-bd3c-b94448771387",
+      "result_id": "17885d90-740b-424f-9a77-5c4e2770948c"
+    },
+    {
+      "claim_id": "a5f0b7cb-737e-423b-a384-6e033bbb1c77",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "6fecccd0-41b1-4569-b948-d1fe8268e7eb",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "dfede2e0-3666-4711-910a-886a2d3f6722",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "2dcd5521-43fc-4831-8cd8-b0ed8d7f8275",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "763aaf6f-8665-4449-a73a-7e920fabedf3",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "4c16a127-a15e-455b-a94e-1218141d05d7",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "fe9b36cc-e1d5-43d4-83f0-840ceabee286",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "b76a72b0-f077-4aaf-b4de-551e9278f96b",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "389a3543-fb62-4b99-b2fe-9cfb7a03308b",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "ae28e701-9540-4690-beff-8e370792d0e7",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "e912140a-2862-4f51-a75d-65802dc4585f",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "766809e1-2fec-4ab9-8dd2-9c812ed77447",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "96865b81-65b8-4283-ba23-dbb138648c83",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "eb105878-62e4-420c-8829-f6687a51339a",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "a23698b2-c83d-42d5-9074-c268d6a67ca7",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "5133bfa5-4e20-4a1e-9381-8c4fdea5520a",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "835387e3-740b-4920-9ec9-51cfc3fffac5",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "70ed75a9-7234-440f-b195-dc35842c62e7",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "ec9e4937-be29-43d8-b39d-c1351d1f03cd",
+      "result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2"
+    },
+    {
+      "claim_id": "d878d783-2e42-4bb0-84b8-030455428933",
+      "result_id": "0876ae9c-6bbf-45d3-a91d-e05b21e9de52"
+    },
+    {
+      "claim_id": "9ef02178-1995-4b45-a816-43a3717c32b1",
+      "result_id": "83b000bb-b8ca-4dcb-be1d-d32a98746931"
+    },
+    {
+      "claim_id": "2ca7d96d-5e41-4d22-bc21-6b1298681c60",
+      "result_id": "83b000bb-b8ca-4dcb-be1d-d32a98746931"
+    },
+    {
+      "claim_id": "5c360371-0409-4d1e-b42f-32fc68faf50c",
+      "result_id": "83b000bb-b8ca-4dcb-be1d-d32a98746931"
+    },
+    {
+      "claim_id": "bff45d38-1ddf-4252-bed8-500cd44b2877",
+      "result_id": "83b000bb-b8ca-4dcb-be1d-d32a98746931"
+    },
+    {
+      "claim_id": "10483313-996a-41e9-8e79-fb7d1eb6ead4",
+      "result_id": "83b000bb-b8ca-4dcb-be1d-d32a98746931"
+    },
+    {
+      "claim_id": "ac887a92-43e6-495a-a36c-08b4cf27f36c",
+      "result_id": "83b000bb-b8ca-4dcb-be1d-d32a98746931"
+    },
+    {
+      "claim_id": "707b03df-3409-4ece-b341-f1b154866cda",
+      "result_id": "83b000bb-b8ca-4dcb-be1d-d32a98746931"
+    },
+    {
+      "claim_id": "f27ea7ab-fde9-4194-98ee-d9c5221c112c",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "3791b6cc-cf24-4419-acb0-36aee0737089",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "30c944c0-e55b-41df-93fd-c151a96ceca6",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "bf78b25c-d302-48a4-b826-ea454c186331",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "9d731a82-3a37-4cf3-b498-fc915b5e1042",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "47d86d3c-1abd-4db0-8c59-ce99b01939bf",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "72821c0a-2925-4231-bcd5-c85957caa2c3",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "fad05be4-d72c-484c-ab4f-2258ed66e25a",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "d563d9da-e225-4929-8da0-b52e7dcd7fcc",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "b8104a78-80c9-40be-b918-5d43a72149f7",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "de2b04c5-4d50-4560-9d33-dc5151967f0c",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "d1664681-bc2d-4400-8aa2-bde2662f404e",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "e3762b67-841a-4fb3-8d22-ad65ae38a3aa",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "4afec559-8bcd-41ba-80f8-e28cafd7b320",
+      "result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f"
+    },
+    {
+      "claim_id": "7be4de02-6471-4b84-b8a4-f4455e97f2d2",
+      "result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b"
+    },
+    {
+      "claim_id": "722933ea-3612-4ffa-917c-1625f27ab3b5",
+      "result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b"
+    },
+    {
+      "claim_id": "f4e04073-3cd1-4322-9e30-9635009cdf70",
+      "result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b"
+    },
+    {
+      "claim_id": "1d5eaef8-0ffb-4f6d-bb13-0525674a4e8e",
+      "result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b"
+    },
+    {
+      "claim_id": "1e0632ff-7dd5-4f34-bfa5-b691372980f3",
+      "result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b"
+    },
+    {
+      "claim_id": "9b7fdb0a-4ba3-48d5-b35a-b1a87d519601",
+      "result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b"
+    },
+    {
+      "claim_id": "9dc3c6e1-0fa7-47e6-ae13-0e8b20482640",
+      "result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b"
+    },
+    {
+      "claim_id": "125dad5c-1ceb-4ddb-b618-f4e4e1930bdd",
+      "result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b"
+    },
+    {
+      "claim_id": "48a12098-3865-4818-bd3c-b94448771387",
+      "result_id": "c69bc0d2-3134-496c-92db-67d685837701"
+    },
+    {
+      "claim_id": "106f5b34-8174-4a5f-980f-407284d3a6cf",
+      "result_id": "c69bc0d2-3134-496c-92db-67d685837701"
+    },
+    {
+      "claim_id": "4f9518c7-caed-476f-bb78-dde5e4734c9b",
+      "result_id": "c69bc0d2-3134-496c-92db-67d685837701"
+    },
+    {
+      "claim_id": "3fad2f24-a344-4f18-b7a2-7f60f78bfa8f",
+      "result_id": "c69bc0d2-3134-496c-92db-67d685837701"
+    },
+    {
+      "claim_id": "babd5a3c-7ecd-4295-9efd-74de8ea4979d",
+      "result_id": "c69bc0d2-3134-496c-92db-67d685837701"
+    },
+    {
+      "claim_id": "41e9a09c-b1e4-4a5f-82f6-c0a4980e7437",
+      "result_id": "c69bc0d2-3134-496c-92db-67d685837701"
+    },
+    {
+      "claim_id": "1d7150a2-634a-480e-925a-cd2967f45eb4",
+      "result_id": "c69bc0d2-3134-496c-92db-67d685837701"
+    },
+    {
+      "claim_id": "1050378e-a658-4bce-8eb8-0dd43ed2e352",
+      "result_id": "c69bc0d2-3134-496c-92db-67d685837701"
+    },
+    {
+      "claim_id": "fb34534f-a1db-460d-90c7-0564345e78e2",
+      "result_id": "fd54ad2a-c662-48e9-93a7-8b1354f7a2ed"
+    },
+    {
+      "claim_id": "8b851cf9-29b6-4f16-855b-5e464e7fd295",
+      "result_id": "fd54ad2a-c662-48e9-93a7-8b1354f7a2ed"
+    },
+    {
+      "claim_id": "35ed84ec-7025-414c-91a1-b3fe613194e2",
+      "result_id": "fd54ad2a-c662-48e9-93a7-8b1354f7a2ed"
+    },
+    {
+      "claim_id": "e013e663-f530-4f0a-bb12-e8e0f45ff253",
+      "result_id": "fd54ad2a-c662-48e9-93a7-8b1354f7a2ed"
+    },
+    {
+      "claim_id": "da543e12-949e-4249-9acf-8c24dd65a004",
+      "result_id": "fd54ad2a-c662-48e9-93a7-8b1354f7a2ed"
+    },
+    {
+      "claim_id": "bb7fc232-5324-40b2-9f15-053c90992507",
+      "result_id": "7189d54d-7be9-46fe-9e9b-4e1157273633"
+    },
+    {
+      "claim_id": "36a6741e-4b5e-4d9c-a52e-6648dfbe01da",
+      "result_id": "7189d54d-7be9-46fe-9e9b-4e1157273633"
+    },
+    {
+      "claim_id": "b2480849-7cda-4a49-852a-cc2405115803",
+      "result_id": "7189d54d-7be9-46fe-9e9b-4e1157273633"
+    },
+    {
+      "claim_id": "80e073e5-7d2a-43e4-a083-4a0442e4e762",
+      "result_id": "a4159aeb-7ad9-4028-88b1-f4d9fd6472a4"
+    },
+    {
+      "claim_id": "c8dbdade-ea71-45fe-ba3b-be85ae3403a5",
+      "result_id": "a4159aeb-7ad9-4028-88b1-f4d9fd6472a4"
+    },
+    {
+      "claim_id": "a5f0b7cb-737e-423b-a384-6e033bbb1c77",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "6fecccd0-41b1-4569-b948-d1fe8268e7eb",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "dfede2e0-3666-4711-910a-886a2d3f6722",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "2dcd5521-43fc-4831-8cd8-b0ed8d7f8275",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "763aaf6f-8665-4449-a73a-7e920fabedf3",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "4c16a127-a15e-455b-a94e-1218141d05d7",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "fe9b36cc-e1d5-43d4-83f0-840ceabee286",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "b76a72b0-f077-4aaf-b4de-551e9278f96b",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "389a3543-fb62-4b99-b2fe-9cfb7a03308b",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "ae28e701-9540-4690-beff-8e370792d0e7",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "e912140a-2862-4f51-a75d-65802dc4585f",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "766809e1-2fec-4ab9-8dd2-9c812ed77447",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "96865b81-65b8-4283-ba23-dbb138648c83",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "2db53b57-f01e-45dc-894a-19b6ea33c699",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "eb105878-62e4-420c-8829-f6687a51339a",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "a23698b2-c83d-42d5-9074-c268d6a67ca7",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "5133bfa5-4e20-4a1e-9381-8c4fdea5520a",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "835387e3-740b-4920-9ec9-51cfc3fffac5",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "70ed75a9-7234-440f-b195-dc35842c62e7",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    },
+    {
+      "claim_id": "ec9e4937-be29-43d8-b39d-c1351d1f03cd",
+      "result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "011c849b-6c82-4c58-b576-ad407b292668",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f2da0079-c266-424e-9273-f4e999a61b22",
+      "peer_result_id": "83b000bb-b8ca-4dcb-be1d-d32a98746931",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate plasma biochemistry claims (C4, C5, C26-C30). OpenEval finds the data well-supported with appropriate statistics and adequate sample sizes. Peer reviewers acknowledge therapeutic effects but rate as UNCERTAIN, noting critical limitations: lack of liver histology and insufficient evaluation beyond plasma markers to fully support therapeutic efficacy claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "1f25de34-ac4f-4a76-a722-d07f8ebd852a",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "dda7afaf-f628-45c2-91c5-175114c3b3ae",
+      "peer_result_id": "a4159aeb-7ad9-4028-88b1-f4d9fd6472a4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address metabolic modeling claims (C63-C64). OpenEval finds Compass analysis well-supported with appropriate statistics but notes validation with metabolomic data would strengthen conclusions. Peer reviewers rate UNCERTAIN, explicitly critiquing reliance on computational predictions without direct metabolite measurements, creating uncertainty about metabolic modeling conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "52739232-0fe6-4183-9531-eb139f2eb9c3",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "bfe6f68f-88ae-4f63-a19d-8da503ebccb2",
+      "peer_result_id": "7fd8e657-eec7-40d6-aefc-dff67dbbf3a3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address background/contextual claims (C1-C3, C12-C21, C59-C62, C65-C66, with peer also including C53). Both evaluations agree these represent established knowledge appropriately cited. OpenEval notes they are not novel findings; peer reviewers accept without challenge as established context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "39a85b72-1c3a-4e00-a207-6c0c26ffaeba",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "c21f3f76-9c2a-46b4-b483-48a8034ecded",
+      "peer_result_id": "fd54ad2a-c662-48e9-93a7-8b1354f7a2ed",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate safety/toxicity claims (C22-C25), with peer also including behavioral safety (C31). Both find the data supported. OpenEval notes adequate preliminary toxicology despite small sample sizes. Peer reviewers accept safety findings without challenge, noting effective assessment of side effects for clinical application.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "f99d6320-b852-4b98-b7f8-ca2a8d8cbc7f",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "c1f71663-0f8a-43d9-94f6-ef85d106f996",
+      "peer_result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address skeletal muscle transcriptomic findings (C10, C45-C48, C57, C44, C9). Both rate as SUPPORTED. OpenEval highlights the striking finding that 97-99% of DEGs are treatment-specific and notes immune pathway upregulation requires further investigation. Peer reviewers accept as novel and important, part of solid conclusions about multi-tissue metabolism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "112a6ebc-886c-4151-8b12-a1e049be0f70",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "c18e30b5-d96e-46d1-bcac-24b361352ad0",
+      "peer_result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate liver/adipose transcriptomic claims (C6-C7, C37-C39, C52), with peer also covering C8, C40-C43, C54-C56. Both rate as SUPPORTED. OpenEval finds comprehensive analysis with appropriate statistics and pathway enrichment. Peer reviewers strongly affirm as central contributions with solid conclusions supported by experimental and modeling approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "c2d619a8-5024-48d6-b8f5-db469079c8fd",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "ac091b4a-f7a0-46e2-bd75-9aa63e2196b1",
+      "peer_result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address differential expression and pathway claims (C8, C40-C43, C56), with peer covering broader transcriptomic findings (C6-C7, C37-C39, C52, C54-C55). Both rate as SUPPORTED. OpenEval highlights significant overlaps and pathway enrichment. Peer reviewers affirm as solid central contributions with robust systems biology approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "cebd8cd8-c7ae-4d53-9a0d-4817d8caa272",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "e5e82570-ad3c-48f4-8039-0a894ec5f787",
+      "peer_result_id": "c69bc0d2-3134-496c-92db-67d685837701",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate inter-tissue coordination claims (C49-C51, C58), with peer also covering C11, C68-C70. Both rate as SUPPORTED. OpenEval finds correlation analysis supports inter-tissue coordination but mechanism remains speculative. Peer reviewers strongly support as key contribution demonstrating drug effects are more widespread than specific tissues, emphasizing tissue interaction importance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "476bf78e-fd63-4c0f-b1a2-988249966bdd",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ef40beb4-9e21-40db-b0fd-a9fa5bcb0ca1",
+      "peer_result_id": "7189d54d-7be9-46fe-9e9b-4e1157273633",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address gene expression claims (C34-C35), with OpenEval also covering C32-C33 and peer including C36. Both rate as SUPPORTED. OpenEval finds RNA-seq data with appropriate statistics and tissue-specific patterns align with known biology. Peer reviewers accept molecular findings without question as supporting inter-tissue metabolic coordination.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "0a88ec9d-7d1b-4668-b5ba-5a6f1b71dcbf",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "1e19181f-10d9-4304-83b0-812bfe98de9a",
+      "peer_result_id": "c69bc0d2-3134-496c-92db-67d685837701",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate co-expression network claims (C68-C70), with peer also covering broader inter-tissue findings (C11, C49-C51, C58). Both rate as SUPPORTED. OpenEval finds network analysis provides mechanistic insight into inter-tissue communication with moderate but significant correlations. Peer reviewers strongly affirm as solid conclusions supported by experimental and modeling approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "650ccc40-08c4-4e07-843d-83275414fd1e",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "7d7f1f8f-d88d-435c-8440-3710a2bb6427",
+      "peer_result_id": "7189d54d-7be9-46fe-9e9b-4e1157273633",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address correlation between plasma TG and skeletal muscle JNK2 (C36). Both rate as SUPPORTED. OpenEval notes correlation suggests mechanistic link but causality cannot be inferred. Peer reviewers accept without question as supporting evidence for inter-tissue metabolic coordination.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "584fcf97-ddf5-4255-827b-dcb8ff92e181",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "dfd2ca59-cf01-4c47-8ef2-326693c62085",
+      "peer_result_id": "c5fe2796-5875-452d-9d3a-3f065862ac5b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate skeletal muscle minimal response to sucrose (C9, C44). Both rate as SUPPORTED. OpenEval documents tissue-specific response pattern contrasting with liver/adipose. Peer reviewers accept as part of novel and important findings about multi-tissue metabolism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "8c71d6d2-2ae9-4cca-af2c-982ed0805c64",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "47dc5c86-7f65-4a94-b083-dfbe8e5c8881",
+      "peer_result_id": "fd54ad2a-c662-48e9-93a7-8b1354f7a2ed",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address behavioral safety (C31). Both rate as SUPPORTED. OpenEval notes multiple behavioral assays show no significant differences, addressing important safety concern, though detailed statistics not in main text. Peer reviewers accept without challenge, noting effective assessment of side effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "85693a44-4dcf-44ec-8d53-2a6acc1cc4f0",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "17885d90-740b-424f-9a77-5c4e2770948c",
+      "peer_result_id": "c69bc0d2-3134-496c-92db-67d685837701",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the key conceptual conclusion about inter-tissue metabolic coordination (C11). Both rate as SUPPORTED. OpenEval finds it supported by comprehensive multi-tissue analysis showing substantial changes and inter-tissue correlations. Peer reviewers strongly affirm as demonstrating drug effects are more widespread than specific tissues, emphasizing tissue interaction importance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "9e32812d-051c-4a6a-9eb5-c3e28d8d0882",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "6c47f6be-205b-4e3a-9024-10020cc65e9a",
+      "peer_result_id": "f8f0f638-7c23-455b-8dca-5c37873f426f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval addresses tissue-specific regulation patterns (C53-C55) rating as SUPPORTED with literature context. Peer R2 covers broader transcriptomic findings including C54-C55 as part of central contributions rated SUPPORTED. Both affirm the tissue-specific differential expression findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    },
+    {
+      "id": "8080aa69-fa04-446b-a6c5-b54bd8750096",
+      "submission_id": "b5be25ad-f6d7-4063-80ff-a10446fb9e2d",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "0876ae9c-6bbf-45d3-a91d-e05b21e9de52",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates methodological scope claim (C67) as SUPPORTED, noting it represents standard RNA-seq practice. No corresponding peer review evaluation found for this methodological statement.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:06:17.720454Z"
+    }
+  ]
+}

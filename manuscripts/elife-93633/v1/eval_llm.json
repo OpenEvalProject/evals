@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "AMATERAS-2 is a volumetric trans-scale imaging system with a custom-made giant lens (\u00d72 magnification, NA=0.25) that achieves ~1.1 \u00b5m transverse resolution across a ~1.5\u00d71.0 cm\u00b2 FOV using optical and computational sectioning techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 describe the core technical specifications and capabilities of AMATERAS-2. The system specifications (C2, C3) are explicitly stated and the 3D capability (C4) is demonstrated through experimental results in subsequent claims. These foundational claims are well-supported by the detailed methods and experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The AMATERAS-2 lens system consists of a 12-element objective lens (144\u00d7310 mm) and 9-element tube lens (170\u00d7345 mm), both infinity-corrected with NAs of 0.25 and 0.125 respectively, a 44 mm field number, and aberration correction to the diffraction limit across 436-656 nm with zero vignetting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 provide detailed optical specifications of the lens system that are explicitly stated in the text and shown in Figure 1. These are design specifications from the manufacturer and represent verifiable technical parameters of the custom-made lens system.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "AMATERAS-2 theoretically achieves over 2\u00d7 transverse resolution, over 4\u00d7 longitudinal resolution, and over 4\u00d7 brightness compared to AMATERAS-1 based on the doubled NA (0.25 vs 0.12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 present theoretical predictions based on optical principles relating NA to resolution and brightness. These are standard optical relationships (resolution \u221d 1/NA, axial resolution \u221d 1/NA\u00b2, brightness \u221d NA\u00b2) and are later validated experimentally in C28-C29, C32-C33, and C36.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "AMATERAS-2 uses either a 120-megapixel (2.2 \u00b5m pixel) or 250-megapixel (1.5 \u00b5m pixel) CMOS camera, achieving measured transverse resolutions of 1.24\u00b10.12 \u00b5m and 1.12\u00b10.072 \u00b5m respectively, with DOFs of 15.6\u00b11.3 \u00b5m and 14.8\u00b11.1 \u00b5m, where DOF differences are attributed to pixel size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C34 describe camera specifications and experimentally measured PSF characteristics with N=100 measurements. The measurements are well-documented with error bars and the interpretation of DOF differences (C34) is supported by citation. The measured resolutions are close to theoretical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "AMATERAS-2w achieves approximately 2\u00d7 improved transverse resolution compared to AMATERAS-1, delivering more detailed images with finer spatial structures including sharper visualization of filamentous actin and enabling observation of subcellular structures like myofibrils in large-area cell sheets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe the practical imaging improvements demonstrated in Figure 2C-F comparing AMATERAS-2w to AMATERAS-1. The 2\u00d7 improvement matches theoretical predictions (C23) and is visually demonstrated with line profile comparisons showing sharper features.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The confocal method was selected as most compatible with AMATERAS-2 because light-sheet microscopy struggles with uniform illumination at centimeter scale, light-field microscopy involves resolution trade-offs incompatible with AMATERAS's concept, two-photon microscopy requires further innovations for wide FOV, and standard microlens-pinhole arrays are incompatible with the large tube lens NA (0.125).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 provide the rationale for choosing the confocal approach with supporting citations. The technical reasoning about incompatibility of standard microlens arrays (C44) is sound given the large NA, and the limitations of alternative methods are appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "A custom pinhole array disk (6 \u00b5m pinholes, 24 \u00b5m spacing) dramatically suppresses out-of-focus background and achieves optical sectioning. With \u00d71 relay lens (NA=0.079), transverse resolution degrades but longitudinal FWHM is ~16 \u00b5m; with \u00d72 relay lens (NA=0.12), transverse degradation is smaller and longitudinal FWHM is ~14 \u00b5m, both exceeding the ideal ~9.5 \u00b5m due to loose excitation focusing and non-negligible pinhole size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C51 describe the confocal system design and measured performance shown in Figure 3. The dramatic background suppression (C46) is visually demonstrated in Figure 3C. The measured PSF characteristics (C50) with N=100 are well-documented, and the interpretation of discrepancies from ideal values (C51) is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "A computational sectioning method was developed that estimates out-of-focus contributions by iterative low-pass filtering, assuming higher spatial frequency in the focal plane. Applied to myocardial organoids, it clearly visualizes cTnT and nuclei distribution in each z-layer, revealing a hollow oval structure of cTnT-positive cardiomyocytes over cTnT-negative cells. The method is effective when fluorescent molecules are localized or filament-like and requires uniform, clearly higher spatial frequency in the focal plane.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 describe the computational sectioning algorithm and its validation on myocardial organoids (Figure 4). The method is clearly explained, the results (C54-C55) are demonstrated in Figure 4D-E with consistency to prior literature (Ma et al., 2015), and the limitations/assumptions (C56-C57) are appropriately stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "AMATERAS-2 successfully imaged a 1.5-mm-thick CUBIC-cleared mouse brain section with SYTOX-Green staining, acquiring 378 layers at 4 \u00b5m steps with 1 s exposure. Computational sectioning eliminated background light enabling clear images even in high-background areas, and \u00d74 magnification improved spatial resolution and cell separation in both xy and xz planes compared to \u00d72.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe the mouse brain imaging experiment shown in Figure 5. The experimental parameters (C59-C60) are clearly stated, the effectiveness of computational sectioning (C61) is demonstrated in Figure 5C vs 5D, and the magnification comparison (C62) is shown in Figure 5E-F.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Using ELEPHANT for cell detection in the mouse brain cortex achieved 99.4% precision and 97.6% recall, yielding a calculated cell density of 1.18\u00d710\u2075 cells/mm\u00b3, which closely matches previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 describe the cell detection analysis using ELEPHANT (Figure 5G-I). The precision/recall metrics (C64) are based on manual validation of ~640 cells as described in methods, and the calculated density (C65) is validated by comparison to prior literature (Herculano-Houzel and Lent, 2005).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Time-lapse 3D imaging of tie1:H2B-eYFP quail embryo from 36 hr (HH10) for 25 hr captured 4200 layers (21 layers \u00d7 200 timepoints, 12 \u00b5m spacing, 7.5 min intervals) at 113 mW/cm\u00b2 with 1 s exposure, generating ~500 GB data. The embryo developed normally without phototoxicity/photobleaching. Cell detection identified ~4.5\u00d710\u2076 cells across all timepoints, with ~4.0\u00d710\u2075 cells tracked, revealing significant changes in high meandering index distribution between t=8 hr and t=16 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C73 describe the quail embryo time-lapse experiment shown in Figure 6. All experimental parameters (C66-C68, C70) are explicitly stated, the lack of phototoxicity (C69) is an important control observation, and the cell detection/tracking results (C71-C72) with dynamic analysis (C73) are demonstrated in Figure 6F-G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "AMATERAS-2's FOV-to-resolution ratio surpasses previous large-FOV methods, with an optical invariant of 2.75 and space-bandwidth product of 4.3\u00d710\u2078, both significantly outperforming earlier studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 present quantitative performance metrics with appropriate citations to the formulas used (Bumstead et al., 2018; Lohmann et al., 1996) and comparisons to prior work. The calculations are based on measured parameters and the comparisons are appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "AMATERAS-2w and -2c achieve spatial resolution of ~1.1-1.8 \u00b5m (xy) and 13-16 \u00b5m (z), representing significant enhancement over AMATERAS-1 (2.3 and 64 \u00b5m). The improved transverse resolution enables clearer visualization of intracellular filamentous structures, and the >4\u00d7 longitudinal resolution improvement demonstrates the expected effect of >2\u00d7 NA increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 summarize the measured spatial resolution improvements across both systems (Figures 2, 3) and compare to AMATERAS-1. The improvements match theoretical predictions (C23-C25) and are validated by the filamentous actin imaging (Figure 2F). The >4\u00d7 z-resolution improvement is consistent with the NA\u00b2 relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Volumetric imaging of 1.5-mm-thick mouse brain section was achieved using multipoint-scanning confocal, computational sectioning, and tissue-clearing with 1 s exposure per image and <10 min total acquisition. This could significantly reduce whole-brain acquisition time compared to light-sheet imaging and block-face serial microscopy tomography which require \u2265half a day due to narrow FOV tiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 describe the brain imaging achievement and compare acquisition speed to alternative methods with appropriate citations (Susaki et al., 2014; Seiriki et al., 2019). The speed advantage is logical given the large FOV eliminating tiling requirements, though C85 is prospective for whole-brain extension.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "AMATERAS-2 successfully performed time-lapse observation of centimeter-sized vascular networks in quail embryo, representing the first demonstration of extensive vascular network dynamics throughout the quail embryo at single-cell level and serving as a promising tool for understanding multicellular behavior and tissue formation mechanisms during development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 describe the quail embryo application and its significance. The capability (C86) is demonstrated in Figure 6, the novelty claim (C88) is reasonable given the unprecedented scale and resolution, and the potential applications (C87) are appropriately cited (Sasai, 2013; McDole et al., 2018; Dominguez et al., 2023).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6"
+    ],
+    "result": "AMATERAS-2 was applied to a 1.2 cm-wide mouse brain section observing various regions with sub-cellular resolution in a single FOV, and performed >24 hr time-lapse imaging of a 1-cm-wide vascular network during quail embryo development, visualizing movement of >4.0\u00d710\u2075 vascular endothelial cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 from the abstract summarize the two major biological applications that are detailed and validated in the Results section (mouse brain: C58-C65, Figure 5; quail embryo: C66-C73, Figure 6). Both applications successfully demonstrate the system's capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Multicellular systems are complex and heterogeneous, requiring simultaneous observation of all components to understand cooperative mechanisms, especially when rare cells influence populations or distant cells operate synchronously. Large FOV imaging methods have been developed, mostly for neuroscience using two-photon fluorescence. AMATERAS-1 enabled 10\u2075-10\u2076 cell observation and detected <1% rare cells triggering transitions in Dictyostelium, but its NA of 0.12 was insufficient for volumetric observation due to broad depth of field.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C14 provide background context and motivation with appropriate citations. The scientific rationale (C7-C9) is well-established, the prior work summary (C10-C13) is appropriately cited, and the limitation of AMATERAS-1 (C14) motivates the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Conventional microscopy methods selecting limited observation areas have difficulty determining distribution and synchronicity of cellular dynamics across entire systems. The raw data for mouse brain and quail embryo imaging amounted to ~100 GB and ~500 GB respectively, but after processing resulted in several terabytes per experiment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 discuss limitations of conventional methods and data management challenges. The limitation statement (C89) is reasonable background, and the data sizes (C90-C92) are explicitly stated and represent important practical considerations for the technique.",
+    "result_type": "MINOR"
+  }
+]

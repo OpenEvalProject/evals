@@ -1,0 +1,226 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C87"
+    ],
+    "result": "A small-molecule screen of ~3,000 nucleoside mimetics identified compounds 0357 and 3610 that selectively activate the ISR downstream of HRI. These compounds activated ATF4 reporters and ISR target genes (ASNS, CHAC1) without activating other stress pathways (UPR, HSR, OSR) or reducing cell viability. CRISPRi depletion confirmed HRI-specific activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screening approach is well-controlled with appropriate validation steps including ISRIB inhibition (C31), ISR target gene expression (C32), specificity testing against other stress pathways (C33-C34), viability assessment (C35), and genetic validation via CRISPRi (C36). The data converge to support HRI-specific ISR activation, though the acknowledged low potency (EC50 >10 \u00b5M) is a limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Compounds 0357 and 3610 induce ISR-dependent mitochondrial elongation in MEF cells, as measured by an automated 3D image analysis pipeline quantifying bounding box length, ellipsoid principal axis length, and sphericity. ISRIB co-treatment blocked this elongation, confirming ISR-dependence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The automated imaging pipeline (C83-C86) provides objective, quantitative measurements of mitochondrial morphology with large sample sizes (n>1000 mitochondria per condition). Multiple morphological parameters converge on the same conclusion. ISRIB controls (C40-C41) demonstrate ISR-dependence. The validation with known ISR activators (thapsigargin, halofuginone) and fragmenting agents (BtdCPU, CCCP) strengthens confidence in the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C42",
+      "C43",
+      "C44",
+      "C55",
+      "C68",
+      "C88"
+    ],
+    "result": "Pretreatment with HRI activators (0357, 3610) or the GCN2 activator halofuginone prevents ionomycin-induced mitochondrial fragmentation. Mitochondria in pretreated cells maintained morphology similar to vehicle-treated controls despite ionomycin challenge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ionomycin model is well-established (C26) and provides a disease-relevant stress (calcium dysregulation). Time-course data (Figure 3) with multiple morphological parameters and large sample sizes support the protective effect. The inclusion of thapsigargin (PERK activator) as a positive control and consistency across different ISR kinase activators strengthen the conclusion. Statistical significance is robust (p<0.001 in most comparisons).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C69",
+      "C74",
+      "C89"
+    ],
+    "result": "Pharmacologic ISR activation with halofuginone, 0357, or 3610 rescues mitochondrial morphology in patient fibroblasts expressing the disease-associated MFN2D414V variant. Treatment increased mitochondrial length and reduced sphericity to levels similar to control fibroblasts, with effects reversed by ISRIB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The patient fibroblast model is clinically relevant (C25, C91-C92) with well-characterized baseline fragmentation (C48). The rescue effect is demonstrated with multiple compounds, large sample sizes (n>3000 mitochondria), and appropriate ISRIB controls (C50, C52). However, a critical limitation is that the patient is homozygous for MFN2D414V, while most CMT2A cases are heterozygous (acknowledged in C75), limiting immediate translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The ISR comprises four kinases (PERK, PKR, GCN2, HRI) that phosphorylate eIF2\u03b1 in response to diverse stresses including mitochondrial stress. ISR activation leads to translational attenuation and ATF4-dependent transcription, regulating mitochondrial proteostasis, phospholipid synthesis, cristae organization, and electron transport chain activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established background claims supported by extensive citations to prior literature (C1-C10). The authors appropriately cite primary sources and reviews. This provides necessary context for the current work but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C53",
+      "C54"
+    ],
+    "result": "Mitochondrial morphology is regulated by pro-fusion (MFN1, MFN2) and pro-fission (DRP1) GTPases. ISR activation, particularly through PERK and GCN2, promotes mitochondrial elongation by inhibiting DRP1 through mechanisms including phosphatidic acid accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the mechanistic framework linking ISR activation to mitochondrial morphology, supported by citations to prior work (C13-C15, C54). The authors' previous publications are appropriately cited. This provides the rationale for testing HRI activators but represents prior knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C45",
+      "C46",
+      "C47",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Excessive mitochondrial fragmentation is a pathologic hallmark of neurodegenerative diseases including CMT, associated with impaired respiratory chain activity and dysregulated mitophagy. Over 150 pathogenic MFN2 variants cause CMT Type 2A, with >70% of axonal CMT cases linked to MFN2. Genetic or pharmacologic DRP1 inhibition mitigates pathology in disease models, but no disease-modifying therapies exist for CMT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the clinical relevance and unmet medical need, supported by extensive citations (C16-C19, C45-C46, C56-C60). The disease context is well-documented in the literature. This provides strong motivation for the study but represents prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C20",
+      "C26",
+      "C64"
+    ],
+    "result": "Halofuginone is a GCN2 activator that promotes ISR-dependent mitochondrial elongation. Ionomycin induces rapid DRP1-dependent mitochondrial fragmentation. BtdCPU activates HRI through mitochondrial uncoupling and fragmentation, limiting its utility for studying protective ISR effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about existing tools and models are supported by citations to prior work (C20, C26, C64). They establish the rationale for identifying new HRI activators that don't cause mitochondrial uncoupling. This represents prior knowledge that motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "ISR signaling promotes adaptive remodeling of mitochondrial proteostasis, electron transport chain activity, phospholipid synthesis, and apoptotic signaling. Halofuginone-dependent GCN2 activation restored ER stress sensitivity and mitochondrial function in PERK-deficient cells, a model of PSP and AD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by citations to prior work including the authors' previous publications (C61-C63). They establish the broader potential of ISR activation beyond morphology but represent prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The identified compounds 0357 and 3610 provide new tools for studying HRI-dependent mitochondrial remodeling, though their low potency limits translational potential. Pharmacologic ISR kinase activation represents a potential strategy to mitigate pathologic mitochondrial fragmentation across diverse diseases associated with overactive DRP1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C65, C71-C72) are well-supported by the experimental data presented. The authors appropriately acknowledge the limitation of low potency (C66) while highlighting the proof-of-concept value. The broader therapeutic potential (C67, C70, C73) is a reasonable inference from the data, though appropriately framed as potential rather than demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Future work is needed to test ISR activation in heterozygous MFN2 patients (the most common CMT2A genotype), explore effects on other pathogenic mitochondrial protein variants, optimize compound PK/PD profiles to enhance adaptive ISR signaling while avoiding maladaptive chronic activation, and establish ISR kinase activation as a viable therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are appropriate future directions and limitations (C75-C82) that acknowledge gaps in the current work. The authors correctly identify that the homozygous patient model may not represent typical CMT2A cases (C75), that broader applicability needs testing (C76), and that compound optimization is required (C79-C81). These are speculative claims about future work rather than supported conclusions from current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Patient fibroblasts were obtained from an individual homozygous for the MFN2 c.1241A>T (p.Asp414Val) variant with clinical features including ataxia, optic atrophy, and sensorineural hearing loss. Exome sequencing confirmed no other pathogenic variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The patient characterization is well-documented with appropriate ethical approval (C90), clinical phenotype description (C91), and genetic confirmation (C92). The citation to prior characterization (Sharma et al., 2021b) provides additional validation. This establishes the disease-relevance of the model.",
+    "result_type": "MINOR"
+  }
+]

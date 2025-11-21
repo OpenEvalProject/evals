@@ -1,0 +1,206 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The study applied an unsupervised Hidden Markov Model (HMM) to two nights of whole-brain fMRI data from 12 non-sleep-deprived participants who completed all sleep stages. The HMM identified 21 recurring brain states without prior knowledge of PSG staging, and all states were present in every participant.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor and reviewers explicitly affirm this work as 'important' and praise the 'state-of-the-art whole-night sleep EEG-fMRI methods.' Reviewers describe the methodology as 'sound' and note the dataset's strength. No concerns are raised about the basic methodological approach or the identification of 21 states.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C90"
+    ],
+    "result": "The HMM trained on night 2 data accurately predicted night 1 data, demonstrating cross-night reproducibility with a correlation of r=0.94 (p<0.0001) between sleep stage proportions of HMM states across nights.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly highlight reproducibility as a strength. One reviewer states the findings were 'reproducible over two nights' and another notes the authors 'show that the identified brain states are stable across nights.' The editor emphasizes 'reliable transition structure,' affirming this core finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C56",
+      "C60"
+    ],
+    "result": "Modularity analysis identified functionally relevant subdivisions within N2 sleep (light-N2 and deep-N2 modules with distinct transition probabilities) and within REM sleep (states 6 and 19 grouped in the same module but with different characteristics).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly states the work presents 'convincing evidence for substates within N2 and REM sleep stages.' A reviewer emphasizes this as a fundamental finding, stating 'The study provides the most compelling evidence on the sub-states of both REM and N2 sleep.' These subdivisions are treated as novel and important contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The 21 HMM states showed specific associations with PSG-defined sleep stages: 13 states with N2, 2 with N3 (states 8 and 10), 2 with REM (states 6 and 19), 3 with Wake (states 13, 16, 20), 1 with undefined stage (state 4), and notably none predominantly with N1 (though state 11 was active during both N1 and N2).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these associations without challenge. The editor notes the work 'advances our understanding of the brain states underlying sleep and wakefulness' and reviewers describe the characterization as adding 'additional insights.' The absence of N1-specific states is not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Within-stage heterogeneity was characterized: Wake states showed temporal and physiological differences (state 13 as post-sleep vs. states 16/20 as pre-sleep), and REM states differed in transition probabilities, timing, and connectivity (state 19 interpreted as tonic REM, state 6 as phasic REM).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise the identification of substates. One states the work provides 'the most compelling evidence on the sub-states of both REM and N2 sleep.' The characterization of these differences is treated as a strength, with no concerns raised about the interpretations of tonic vs. phasic REM or pre- vs. post-sleep wakefulness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C92"
+    ],
+    "result": "Brain activation and functional connectivity patterns distinguished wake from sleep states: wake showed classic DMN-anticorrelated network patterns, while sleep states showed same-direction activation. The connections between DMN and salience/control networks may play a critical role in sleep-wake transitions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note that 'Additional characterization of brain states in terms of which networks these brain states primarily engage adds additional insights.' The functional connectivity analyses are accepted without critique, though one reviewer suggests more could be done to relate findings back to EEG.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "HMM states had durations ranging from 8.7 to 36 seconds (average 12s), providing finer temporal resolution than PSG's 30-second epochs and revealing that N2-related states tended to have shorter lifetimes than N3, REM, or Wake states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the temporal characterization without challenge. The editor notes the work supports 'the perspective that there are more than the five canonical sleep/wake states,' implicitly endorsing the finer temporal resolution as meaningful. No concerns are raised about state duration measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "EEG spectral analysis showed N3-related states had highest delta power, and deep-N2 module had higher theta and alpha power compared to light-N2 module, validating the HMM state distinctions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accept the basic EEG findings, one explicitly identifies a 'missed opportunity' in EEG analysis, stating 'it would be much more informative to show the complete EEG spectra for each of the 21 HMM states' and noting that 'band-specific analyses' should 'specify bands in accordance with the dominant sleep EEG features (e.g., slow oscillation and sigma/spindle bands are currently missing).' This suggests the EEG characterization is incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C102"
+    ],
+    "result": "Motion analysis showed systematic decreases from wake to light to deep sleep, with high data retention after censoring (>92% for all stages), and motion during extended sleep scans was comparable to shorter resting-state scans.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about motion or data quality. The methodology is described as 'sound' and the dataset as a 'primary strength.' The motion characterization is implicitly accepted as adequate quality control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The HMM approach offers advantages over PSG: 300 ROIs provide whole-brain spatial coverage including subcortical/cerebellar regions; the method is automated and objective, eliminating inter-rater reliability issues; and it explicitly models state transitions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the methodological advantages. The editor notes the work 'advances our understanding' and reviewers describe the methodology as 'sound.' One reviewer explicitly states 'The paper's conclusions are generally well-supported' regarding the methodological approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Model selection involved choosing 21 states based on multiple criteria (free energy, fractional occupancy, lifetime, Wilk's lambda), retaining 40.7% variance with 13 principal components. The authors acknowledge the exact number of states may depend on sample and methodological factors, and generalizability to other populations needs demonstration.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor explicitly acknowledges the limitation, stating 'Despite a small sample size, the authors present convincing evidence.' A reviewer notes 'Weaknesses are its small sample size' but concludes 'The paper's conclusions are generally well-supported.' The model selection approach is not challenged, and the authors' acknowledgment of limitations is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The authors suggest the HMM method can be applied to EEG data and cite previous data-driven EEG studies suggesting more than five traditional sleep stages exist.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly identifies this as a 'missed opportunity,' stating there is an 'absence of more analyses relating the HMM states back to EEG' and suggesting analyses that 'might have shown that fMRI-based brain states map onto familiar EEG substates, or reveal novel EEG changes.' This indicates the EEG integration is incomplete, though the basic claim about method applicability is not directly challenged.",
+    "result_type": "MINOR"
+  }
+]

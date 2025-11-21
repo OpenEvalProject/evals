@@ -1,0 +1,235 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript establishes efficient coding as a normative principle for sensory cortical networks, positing that networks encode maximal sensory information with minimal metabolic cost. This principle has been influential across visual, auditory, and olfactory pathways, and biological networks encode information through millisecond-precise spike timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8, and C9 provide well-established background on efficient coding principles supported by extensive citations. These claims accurately represent prior work in the field and provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C10",
+      "C31"
+    ],
+    "result": "The analytically derived optimal network exhibits biologically plausible biophysical features including realistic integrate-and-fire dynamics, spike-triggered adaptation, and non-specific external input. The network size (400 E and 100 I neurons) is relevant for cortical microcolumn computations, and optimal parameters match empirical measurements in cortical circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C10, and C31 are well-supported by the analytical derivation (Equations 29a-h), parameter optimization (Table 1), and comparisons with empirical data throughout the manuscript. The model parameters fall within biologically plausible ranges and are validated against multiple empirical sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C15",
+      "C16"
+    ],
+    "result": "The excitatory-inhibitory recurrent connectivity implements feature-specific competition similar to that found in visual cortex. Simulated photostimulation of E neurons increases firing in similarly-tuned I neurons and reduces firing in similarly-tuned E neurons, replicating empirical findings of negative effective connectivity between E neurons with similar tuning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C15, and C16 are supported by simulated photostimulation experiments (Figure 3B-C) that qualitatively reproduce empirical findings from Chettih and Harvey, 2019. The structured connectivity emerges from the optimization and produces lateral inhibition patterns consistent with experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C33",
+      "C34"
+    ],
+    "result": "Networks with structured connectivity achieve significantly higher coding efficiency than unstructured networks. Structured networks show better encoding performance, lower metabolic cost, weaker membrane potential variance, lower firing rates, and stronger E-I balance compared to networks with randomly shuffled connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C17, C33, and C34 are well-supported by systematic comparisons between structured and unstructured networks (Figure 4). The analysis includes multiple performance measures and demonstrates consistent advantages of structured connectivity. The shuffling procedure appropriately preserves Dale's law and connectivity weight distributions while removing structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C37",
+      "C41"
+    ],
+    "result": "The optimal E:I neuron ratio (approximately 4:1) and the optimal mean I-I to E-I synaptic efficacy ratio (approximately 3:1) match empirical measurements in cortical sensory networks. These two ratios are positively correlated, with optimal E-I and I-E synaptic efficacy of 0.75 mV and optimal I-I efficacy of 2.25 mV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C23, C24, C37, and C41 are supported by parameter optimization results (Figure 7, Table 1) and comparisons with empirical data from multiple sources. The two-dimensional parameter search (Figure 7J) demonstrates the positive correlation between optimal ratios. The predicted values fall within empirically observed ranges.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C38",
+      "C39"
+    ],
+    "result": "The efficient network exhibits moderate instantaneous E-I balance, which is optimal for coding. Too strong instantaneous E-I balance is detrimental to coding efficiency, and structured E-I-E connectivity is necessary for optimal levels of instantaneous balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C38, and C39 are supported by correlation analysis (Figure 1I) and comparisons between structured and unstructured networks (Figure 4). The manuscript demonstrates that instantaneous balance (\u03c1=[0.44, 0.25] for I and E neurons) is moderate and correlates with network efficiency, while average balance does not predict efficiency well.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The optimal network exhibits biologically realistic neural dynamics: I neurons have higher firing rates than E neurons, firing rates follow a log-normal distribution, and neurons fire irregularly with coefficient of variation near 1 (CV=[0.97, 0.95] for E and I neurons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C13, and C14 are supported by simulation results (Figure 1F) and comparisons with empirical observations. The quantitative values are provided and match empirical ranges. The log-normal fit is shown visually in Figure 1F.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C35"
+    ],
+    "result": "The optimally efficient solution does not include within-neuron feedback, while weak and short-lasting spike-triggered adaptation is slightly suboptimal but still highly efficient. Optimal networks require structured E-I and I-E connectivity with weak or no spike-triggered adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C35 are supported by systematic analysis of spike-triggered adaptation (Figure 5). The results show that optimal time constants for single neuron readout equal the population readout time constant (\u03c4_r^E = \u03c4_r^I = 10 ms), eliminating adaptation. The analysis demonstrates that adaptation in E neurons is less detrimental than in I neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C19",
+      "C36",
+      "C48"
+    ],
+    "result": "Optimal efficiency requires non-zero metabolic constant, with non-specific external current providing more than half the distance between resting potential and threshold. This prediction is qualitatively consistent with empirical measurements of background synaptic input.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C36, and C48 are supported by parameter optimization (Figure 6B, Table 1) and comparison with empirical data. The optimal metabolic constant \u03b2=14 mV yields a mean non-specific current spanning more than half the distance to threshold, consistent with measurements from Destexhe and Par\u00e9, 1999; Destexhe et al., 2003.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C20",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49"
+    ],
+    "result": "Optimal performance requires non-vanishing noise levels in non-specific currents, which prevents excessive network synchronization. Firing rates and spiking variability increase with noise strength, but significant variability (CV\u22480.8-0.9) exists even without external noise due to recurrent dynamics. Optimal metabolic constant and noise strength are positively correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C44, C45, C46, C47, and C49 are supported by systematic analysis of noise effects (Figure 6F-I). The results demonstrate optimal noise at non-zero levels, show that recurrent dynamics generate intrinsic variability, and reveal positive correlation between optimal \u03b2 and \u03c3. These findings are consistent with previous theoretical work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C25"
+    ],
+    "result": "The network performs efficient coding across a wide range of stimulus timescales (1-200 ms) with stable encoding error, metabolic cost, and neural dynamics. Performance remains stable when different stimulus features have different timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C25 are supported by analysis of stimulus timescale effects (Figure 8A-B, Figure 8\u2014figure supplement 1A-B). The results show stable performance across two orders of magnitude in timescale and when multiple features have different timescales. This demonstrates robustness of the efficient coding framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Decreasing the number of I neurons (increasing E:I ratio) causes a linear increase in I neuron firing rate while E neuron firing rate remains constant, consistent with distributed population coding where fewer neurons require higher firing rates to maintain performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C21 is supported by simulation results (Figure 7B) showing the predicted linear relationship. This result is consistent with the theoretical prediction that distributed coding requires compensation through firing rate changes when neuron numbers change, and matches empirical observations in neuronal cultures (Sukenik et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Comparing the E-I model with a one-cell-type (1CT) model shows that the 1CT model is slightly more efficient than the E population alone, but the E-I model exhibits greater robustness. The 1CT model shows superexponential sensitivity of firing rates to metabolic constant variations, while the E-I model maintains physiologically realistic firing rates across parameter ranges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27, C28, C29, and C30 are supported by direct comparisons between models (Figure 8G-I). The E-I model shows higher encoding error and metabolic cost in E neurons but lower in I neurons. The key advantage of the E-I model is robustness: firing rates remain within physiological limits even with suboptimal metabolic constants, unlike the 1CT model which shows superexponential growth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "I neurons develop stimulus feature selectivity through structured recurrent connectivity, despite not receiving direct feedforward inputs. E and I neurons show similar mean stimulus selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C32 is supported by analysis of tuning curves (Figure 8E-F) showing that I neurons acquire selectivity through E-I connections. The selectivity index analysis shows no significant difference between E and I neurons (p=0.418). This demonstrates that structured connectivity enables I neurons to inherit stimulus selectivity from E neurons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40"
+    ],
+    "result": "The E-I-E structured connectivity causes desynchronization of spiking output, with weak cross-correlograms between neuron pairs despite strong voltage correlations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 is supported by cross-correlogram analysis (Figure 3E) showing weak spike timing coordination despite shared inputs causing voltage correlations (Figure 3D). This demonstrates that lateral inhibition through structured connectivity decorrelates spiking output, consistent with previous efficient coding models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The efficient network optimizing leaky integration of stimulus features does not require recurrent E-E connections, as a consequence of the model assumptions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by the analytical derivation showing that the assumption of no across-feature interaction in leaky integration (Equation 1) leads to no E-E connections in the optimal solution (Equation 25). The authors acknowledge this is likely simplistic and discuss it as a limitation, noting that E-E connectivity is relatively sparse in primary visual cortex.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "The connection probability of recurrent synapses is 0.5 as a consequence of rectification to enforce Dale's law. This matches empirical E-to-I connection probability but likely overestimates I-to-E connection probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C43 is supported by the analytical derivation (Equation 24) and comparison with empirical data. The authors appropriately note that while the 0.5 connection probability matches E-to-I measurements (Pala and Petersen, 2015; Campagnola et al., 2022), it likely overestimates I-to-E connectivity, which is typically lower. This is acknowledged as a limitation.",
+    "result_type": "MINOR"
+  }
+]

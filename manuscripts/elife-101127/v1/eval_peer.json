@@ -1,0 +1,178 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C8",
+      "C9",
+      "C60",
+      "C61",
+      "C70"
+    ],
+    "result": "The study's central hypothesis is that PROTAC linker properties govern the dynamics of the degradation complex, which in turn determines lysine accessibility and ubiquitination efficiency. The authors claim that despite identical warheads, different linkers affect residue-interaction networks and essential motions of the degradation machinery, ultimately explaining varying degradation potencies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm the study's main conclusions. The editor states the study provides 'a convincing demonstration that differences in degradation efficacy can be linked to linker properties.' Reviewer 1 notes 'the authors' claims about the role of PROTAC linkers and protein-protein interaction stability are generally supported by their computational data.' Reviewer 3 confirms the authors 'were able to present a hypothesis as to how linker property affects degradation potency' and 'roughly correlate' findings with experimental DC50/5h values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C63",
+      "C64",
+      "C65",
+      "C76",
+      "C77"
+    ],
+    "result": "The computational methodology combined protein-protein docking and MD simulations to model ternary complexes and full degradation machinery. The approach generated diverse conformational ensembles, with dBET57's short linker yielding only 24 conformations versus >160 for other PROTACs. MD simulations sampled additional low-energy conformations beyond docking, providing suitable initial structures for studying degradation dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the computational methodology without criticism. Reviewer 1 acknowledges the 'comprehensive computational analysis' as a strength. Reviewer 2 notes the study 'employed a combination of protein-protein docking, structural alignment, atomistic MD simulations, and post-analysis' and describes it as 'interesting and timely.' Reviewer 3 confirms the approach 'presents interesting tools that could be used to guide future PROTAC design.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C66",
+      "C67"
+    ],
+    "result": "MD simulations revealed that different PROTACs recruit specific lysine residues to the E2 catalytic pocket: dBET1 recruited K72/K76/K111, dBET23 and dBET70 recruited K99, and dBET57 recruited K102. The simulations showed dBET23 (~85%) and dBET70 (~78%) had higher probability of fulfilling criteria for ubiquitination compared to dBET1 (~40%) and dBET57 (~22%), correlating with experimental degradation potencies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accept the overall findings, Reviewer 1 specifically notes a weakness: 'Limited examination of lysine accessibility despite its stated importance' and states 'the conclusions regarding lysine accessibility could be strengthened with more in-depth analysis.' This suggests the evidence for specific lysine recruitment, while presented, may not be as thoroughly validated as the reviewers would prefer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C68",
+      "C69"
+    ],
+    "result": "Principal component analysis revealed that PC1 and PC2 accounted for >60% of overall motions, with hinge regions in Rbx1 and DDB1 contributing prominently. The analysis showed correlation between linker dihedral rotations and movement of the entire degradation complex, with all dBETs exhibiting substantial BRD4BD1 shifts of 10-15 degrees. Time-dependent correlation analysis demonstrated that dihedral rotation of PROTACs correlates with Lys-Gly interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these dynamic analyses without specific criticism. Reviewer 2 explicitly notes the study 'discussed the correlated motions between the PROTAC linker and the complex' as part of the findings. The comprehensive nature of the dynamic analysis is implicitly supported by Reviewer 1's acknowledgment of 'comprehensive computational analysis' and the editor's statement about 'convincing demonstration.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C73",
+      "C74"
+    ],
+    "result": "Entropy analysis showed dBET57 has ~0.3 kcal/mol lower entropy than other PROTACs, indicating reduced flexibility that limits structural dynamics for bringing BRD4BD1 closer to Ub. In contrast, dBET23 and dBET70 with greater flexibility allowed diverse conformations for catalysis, leading to more efficient degradation. dBET1 recruited multiple lysines but unstable Asp positioning prevented effective charge transfer.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these mechanistic explanations linking linker flexibility to degradation efficiency. The editor's statement about 'convincing demonstration that differences in degradation efficacy can be linked to linker properties' encompasses these flexibility-based explanations. No reviewer challenges the entropy analysis or the mechanistic interpretations of how flexibility affects degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C6",
+      "C25"
+    ],
+    "result": "Experimental degradation data from prior studies showed dBET70 (DC50/5h ~5 nM) was the most potent degrader, followed by dBET23 (~50 nM), while dBET1 and dBET57 were less potent (~500 nM). Despite similar crystal structures of ternary complexes with highly similar CRBN-BRD4BD1 contacts, these PROTACs exhibited significant differences in degradation capabilities.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are experimental data from cited literature that reviewers accept as the basis for the computational study. Reviewer 3 notes the authors 'were able to roughly correlate the distance of Lys residues to the catalytic pocket of E2/Ub with observed DC50/5h values,' confirming acceptance of the experimental degradation data as valid benchmarks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Specific analysis of degradation complexes showed dBET23_#14 and dBET70_#91 brought K99 closer to G75 of Ub, while dBET57_#9_MD1 placed K102 in proximity to G75. Pairwise force analysis revealed strong attraction between K99 and G75 for dBET23 and dBET70, but weaker attraction between K102 and G75 for dBET57.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These detailed mechanistic findings are part of the overall analysis that reviewers accept. While Reviewer 1 notes limited examination of lysine accessibility overall, the specific pairwise force analysis and distance measurements are not challenged. The findings contribute to the 'convincing demonstration' noted by the editor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C78"
+    ],
+    "result": "The study concludes that longer and more flexible linkers typically provide enhanced opportunities for E3-PROTAC-POI complexes to orient suitable conformations for ubiquitination. Examining the dynamic nature of the degradation complex provides a more complete picture of conformations determining lysine accessibility, an important factor for optimizing PROTAC potency.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these general conclusions about PROTAC design principles. Reviewer 3 states the study 'presents interesting tools that could be used to guide future PROTAC design or optimization,' affirming the practical implications. Reviewer 2 notes the study offers 'potentially valuable insights for future research into PROTAC degradability.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MD simulations were performed using AMBER20 with ff14SB force field for proteins and GAFF2 for ligands. Systems were solvated in TIP3P water boxes with 12 \u00c5 distance from protein edges. NPT ensemble at 300 K was used for 400 ns production runs with 1-ps frame collection intervals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The computational methods are accepted by reviewers without criticism. The editor notes 'the analyses address reproducibility considerations comprehensively, reinforcing the study's conclusions.' Reviewer 1 acknowledges the 'comprehensive computational analysis' without questioning the specific simulation parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C30",
+      "C39",
+      "C62"
+    ],
+    "result": "Background claims establish that PROTACs induce degradation via ternary complex formation, but stable ternary complex formation does not always correlate with degradation potency. Lysine accessibility after ternary complex formation is critical for degradation, and positioning POI lysine residues close to E2 is crucial for successful degradation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background knowledge claims from the literature that reviewers implicitly accept as the scientific context for the study. No reviewer challenges these foundational concepts. They form the rationale for why the study's investigation of dynamics beyond static ternary complex formation is important.",
+    "result_type": "MINOR"
+  }
+]

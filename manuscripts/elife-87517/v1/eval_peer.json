@@ -1,0 +1,182 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors developed SPRAWL, a statistical framework that assigns interpretable scores to detect RNA subcellular localization patterns (peripheral, central, radial, punctate) in multiplexed imaging datasets. SPRAWL is non-parametric, robust to confounding variables, provides FDR control, and is publicly available as a Python package.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge SPRAWL as 'a novel statistical framework' and note 'the methodological choices allow wide applicability to existing datasets.' The editor states the paper describes 'an important, well-organized study' and 'the tools presented will provide a resource to researchers.' No reviewer challenges the technical validity of the method itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C122"
+    ],
+    "result": "SPRAWL demonstrates high reproducibility across biological replicates with Pearson correlation coefficients >0.47 for all metrics in all datasets, and shows perfect specificity on permuted negative control datasets where no genes are called significant after multiple hypothesis correction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the validation results. One reviewer notes 'A strength of the study is the clarity and honesty with which the authors have outlined the strengths and weaknesses of their own approach.' The permutation analysis demonstrating specificity is not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C119",
+      "C120",
+      "C123"
+    ],
+    "result": "SPRAWL detects extensive cell-type specific subcellular RNA localization in mouse brain (75-88% of gene/cell-type pairs significant) and to a lesser extent in mouse liver (51-85% significant), with high consistency between replicates (>77.8% same direction of effect) and identifies thousands of significant genes with extreme localization patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the extensive findings, they express concern about biological significance. One reviewer states 'insufficient validations are performed to show the biological significance of the results' and 'there is no experimental validation for the results obtained applying this method.' Another notes 'the difficulty in interpreting the biology underpinning the metrics.' The editor concludes 'there is insufficient orthogonal validation to demonstrate the biological significance of the results.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C43",
+      "C44",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Over 99% of significant gene/cell-type groups show positive radial and punctate scores, revealing a general tendency for RNAs to colocalize with other RNAs of the same gene. Specific examples include Cldn5 (scores 0.85 punctate, 0.84 radial) and Flt1 (0.83 for both metrics), which are globally punctate and radial across all cell-types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers do not dispute the statistical findings but question their biological interpretation. One reviewer notes 'it is unclear what biological benefits the central metric gives' and questions whether the metrics truly reflect biologically meaningful patterns. The lack of experimental validation for these patterns is repeatedly emphasized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C78",
+      "C79",
+      "C81",
+      "C85",
+      "C92",
+      "C103"
+    ],
+    "result": "SPRAWL integrated with ReadZS detected 26 genes with significant correlations between 3' UTR length and subcellular localization (twofold enrichment over chance). Examples include Slc32a1 (R=-0.94, centrality vs UTR length), Cxcl14 (R=0.9, radial vs UTR length), and Nxph1 (R=0.9, punctate vs UTR length), with Timp3 showing R=-0.68 for peripheral localization vs UTR length.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers explicitly question this finding. One states 'The correlation between localization scores and 3'UTR length across cell types for certain genes is also not experimentally validated: results are based on inference from single-cell or imaging data, with no complementary experimental validation.' The lack of orthogonal validation is a major concern raised by multiple reviewers and the editor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C104",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Timp3 shows the largest variation in 3' UTR length between cell-types in mouse brain (>2 kb difference between L6 CT and endothelial cells), with longer isoforms associated with less peripheral localization. In human lung culture, Timp3 3' UTRs become shorter over time, predicting a shift to more peripheral distribution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a predictive claim based on correlational data. Reviewers emphasize the lack of experimental validation, with one stating 'the manuscript contains little proof that the results have biological significance' and 'there is no experimental validation for the results obtained applying this method.' The prediction about localization shift during culture is not experimentally tested in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "In pericyte culture experiments, Timp3 protein secretion rate remains constant (~350 molecules/cell/hour), but the ratio of distal to proximal 3' UTR RNA decreased 1.5-fold from 24-48 hours, supporting the hypothesis that transcripts with proximal 3' UTR regions increase relative to distal regions during culture.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While this represents experimental validation, reviewers note the overall insufficiency of validation. One reviewer states 'insufficient validations are performed to show the biological significance of the results.' The pericyte experiment is limited in scope and does not directly validate the subcellular localization predictions from SPRAWL, only the 3' UTR length changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "In the BICCN dataset, 36% of genes show opposite-directionality for peripheral localization and 38% for central localization across cell-types, while only 1% show opposite-directionality for radial and 4% for punctate metrics. Approximately 55% of genes show cell-type dependent patterning for peripheral/central metrics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer explicitly notes 'this paper is full of inconsistencies. Values (eg. Pearson correlation coefficient values, number of significant genes, number of total genes) and names (eg. cell types, gene names) stated throughout the main text and figures/table do not match repeatedly.' This raises concerns about the reliability of these specific quantitative claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "SPRAWL shows robustness to cell segmentation, with Pearson correlation >0.85 between shrunk and original cell boundaries for peripheral scores in both BICCN MOp and Vizgen Brainmap datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This technical validation is not challenged by reviewers. One reviewer notes the method's 'wide applicability to existing datasets' as a strength, implicitly accepting the robustness analyses presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C121"
+    ],
+    "result": "SPRAWL predicts that 3' UTR regulation of subcellular localization may be more pervasive than currently known, providing evidence for differential patterning dependent on 3' UTR isoform.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenge the strength of this conclusion. One states 'The authors claim that SPRAWL is able to identify spatial patterns of localization and generated relevant hypotheses to be tested, yet the manuscript contains little proof that the results have biological significance.' The editor concludes 'there is insufficient orthogonal validation to demonstrate the biological significance of the results, which leads to the evidence for the claims being currently incomplete.'",
+    "result_type": "MAJOR"
+  }
+]

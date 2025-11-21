@@ -1,0 +1,193 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The manuscript establishes the paradox of plankton as a fundamental ecological puzzle: many plankton species coexist on limited resources, apparently violating the competitive exclusion principle (CEP), which states that the number of consumer species cannot exceed the number of resources at steady state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C10, C11, and C12 collectively establish well-documented ecological principles and the paradox of plankton. These are supported by appropriate citations to foundational work (Gause 1934, Hardin 1960, MacArthur and Levins 1964, Hutchinson 1961) and represent established knowledge in ecology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors demonstrate that in scenarios with only chasing pairs or with chasing pairs plus interspecific interference, consumer species cannot stably coexist (except for special parameter settings), but adding intraspecific interference enables stable coexistence of two consumer species on one resource, breaking CEP across a non-zero volume of parameter space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 are supported by mathematical analysis and simulations shown in Figure 1 and Appendix figures. The progression from unstable coexistence (C27, C28) to stable coexistence with intraspecific interference (C29-C32) is demonstrated through phase portraits, stability analysis, and parameter space exploration. The analytical framework appears sound and the visualizations support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C49",
+      "C50"
+    ],
+    "result": "Intraspecific interference among consumers creates a negative feedback loop that enables multiple consumer species to coexist at constant population densities with limited resources. This mechanism is captured analytically through a functional response (Equation 5) that is negatively correlated with consumer population size, and analytical solutions accurately predict numerical results and coexistence regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C19, C49, and C50 describe the core mechanistic finding. The negative feedback mechanism is mathematically derived (Equation 5 in manuscript), and C49-C50 demonstrate that analytical predictions match numerical simulations (Figure 1E, Appendix figures). The mathematical framework appears internally consistent and the agreement between analytical and numerical results supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The biodiversity facilitated by intraspecific interference is resistant to stochasticity, as demonstrated through stochastic simulation algorithm (SSA) and individual-based modeling (IBM). In contrast, other mechanisms like oscillating coexistence fail when stochasticity is introduced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C20, C33-C37 are supported by SSA and IBM simulations shown in Figure 2 and Appendix figures. The comparison showing that oscillating coexistence mechanisms (Koch 1974, Huisman and Weissing 1999) fail under stochasticity (C33) while intraspecific interference maintains coexistence (C34-C37) provides strong evidence. The parameter regions for coexistence are similar between deterministic and stochastic models (C35), supporting robustness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The model explains classical experiments by Ayala (1969) and Park (1954) where two insect species coexisted on one resource for extended periods. SSA simulations show good quantitative agreement with experimental time series, with fluctuations attributable to stochasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C21, C38-C43 are supported by comparisons in Figure 2D-E and Appendix figures. The model successfully reproduces the experimental observations (C42), and the justification that intraspecific fighting is prevalent in insects (C41, supported by citations) provides biological plausibility. However, the claim that fluctuations are 'mainly' due to stochasticity (C43) is somewhat speculative without more rigorous statistical decomposition of variance sources.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The model demonstrates that hundreds or more consumer species can coexist long-term with limited resources (one or a few resource species).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by simulation results in Figure 3 and Appendix figures 8-14, showing systems with Sc >> Sr where many consumer species persist. The simulations include both deterministic (ODEs) and stochastic (SSA) approaches, demonstrating robustness of the high-diversity coexistence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The model quantitatively reproduces the universal S-shaped rank-abundance curves observed across diverse ecological communities (plankton, fish, bats, birds, butterflies, lizards) without requiring the special parameter settings (identical fitness) needed by neutral theory. Model predictions match experimental data in K-S tests and Shannon entropy comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22, C54-C58 are supported by extensive comparisons in Figure 3C-D and Appendix figures 8-14. The K-S test p-values reported in Figure 3 show that most comparisons fail to reject the null hypothesis that simulation and experimental data come from the same distribution (p > 0.05 for most cases). Shannon entropies are reported as 'roughly equal.' This represents strong quantitative validation across multiple ecosystems, though one plankton comparison has p=0.06, approaching significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "There is a discrepancy between SSA simulations and experimental data for species with abundances less than 10, which tend to go extinct in simulations. The authors attribute this to sampling effects: experimental samples capture only a fraction of actual populations, while natural populations are much larger than 10 individuals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C62 identify a limitation but the explanation is somewhat speculative. While C59-C60 are observational (supported by Appendix figure 8C), the explanation in C61-C62 is plausible but not rigorously tested. The authors don't provide direct evidence that scaling up population sizes in simulations would resolve the discrepancy, nor do they quantify the sampling fraction in the experimental studies. This represents a potential weakness in the model's predictive power for rare species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors resolve a theoretical inconsistency with the Beddington-DeAngelis (B-D) model: while previous studies claimed the B-D model breaks CEP through intraspecific interference, the B-D functional response can be derived from scenarios with only chasing pairs (which obey CEP). The authors show the B-D model is a special case of their mechanistic model without escape rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C18, C63-C65 address an important theoretical issue. The criticism of prior B-D applications (C16, C64) is supported by citations and mathematical analysis (C17, C18, C63 citing Wang and Liu 2020, Huisman and De Boer 1997). The resolution (C65) is supported by mathematical derivations in Appendix 2 and Appendix 3. This represents a significant theoretical clarification, though the practical implications for prior studies using the B-D model remain somewhat unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "In model simulations, mortality rates of consumer species follow a Gaussian distribution with coefficient of variation around 0.3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 describes a methodological choice for parameter selection, supported by citation to Menon et al. 2003 and detailed in Appendix 9. This is a reasonable approach to model species diversity without requiring identical fitness (as in neutral theory), though the choice of 0.3 for the coefficient of variation could be better justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C13",
+      "C14",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The manuscript provides context on biodiversity in various ecosystems and reviews existing mechanisms proposed to overcome CEP, including temporal variations, spatial heterogeneity, and complex interactions. The authors note that fully explaining biodiversity evolution and maintenance remains challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C13-C14, C67-C69 provide background context supported by appropriate citations. These represent accurate summaries of established knowledge and current understanding in ecology. The claims are appropriately cautious about the limits of current explanations (C69).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The model is broadly applicable to explain biodiversity in many ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 is supported by the successful application to multiple diverse ecological communities shown in Figure 3 and Appendix figures (plankton, fish, bats, birds, butterflies, lizards). The quantitative agreement with rank-abundance curves across these systems provides strong evidence for broad applicability, though the authors appropriately note in the Discussion that many additional factors may be involved in real ecosystems.",
+    "result_type": "MAJOR"
+  }
+]

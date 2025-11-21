@@ -1,0 +1,1635 @@
+{
+  "submission": {
+    "id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:38:03.055821Z",
+    "updated_at": "2025-11-21T20:38:03.055821Z"
+  },
+  "content": [
+    {
+      "id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "content_type": "manuscript",
+      "content_text": "# Wavenumber-dependent transmission of subthreshold waves on electrical synapses network model of Caenorhabditis elegans\n\n## Authors\n\n- Iksoo Chang<sup>1</sup>\n- Taegon Chung<sup>1</sup>\n- Sangyeol Kim<sup>1</sup> ([ORCID: 0009-0001-3200-9726](https://orcid.org/0009-0001-3200-9726)) \u2020\n\n### Affiliations\n\n1. Department of Brain Sciences, Daegu Gyeongbuk Institute of Science and Technology Daegu Republic of Korea ([ROR:03frjya69](https://ror.org/03frjya69))\n2. Creative Research Initiative Center for Proteome Biophysics, Daegu Gyeongbuk Institute of Science and Technology Daegu Republic of Korea ([ROR:03frjya69](https://ror.org/03frjya69))\n3. Supercomputing Bigdata Center, Daegu Gyeongbuk Institute of Science and Technology Daegu Republic of Korea ([ROR:03frjya69](https://ror.org/03frjya69))\n\n\u2020 Corresponding author\n\n## Abstract\n\nRecent experimental studies showed that electrically coupled neural networks like in mammalian inferior olive nucleus generate synchronized rhythmic activity by the subthreshold sinusoidal-like oscillations of the membrane voltage. Understanding the basic mechanism and its implication of such phenomena in the nervous system bears fundamental importance and requires preemptively the connectome information of a given nervous system. Inspired by these necessities of developing a theoretical and computational model to this end and, however, in the absence of connectome information for the inferior olive nucleus, here we investigated interference phenomena of the subthreshold oscillations in the reference system Caenorhabditis elegans for which the structural anatomical connectome was completely known recently. We evaluated how strongly the sinusoidal wave was transmitted between arbitrary two cells in the model network. The region of cell-pairs that are good at transmitting waves changed according to the wavenumber of the wave, for which we named a wavenumber-dependent transmission map. Also, we unraveled that (1) the transmission of all cell-pairs disappeared beyond a threshold wavenumber, (2) long distance and regular patterned transmission existed in the body-wall muscles part of the model network, and (3) major hub cell-pairs of the transmission were identified for many wavenumber conditions. A theoretical and computational model presented in this study provided fundamental insight for understanding how the multi-path constructive/destructive interference of the subthreshold oscillations propagating on electrically coupled neural networks could generate wavenumber-dependent synchronized rhythmic activity.\n\n## Introduction\n\nThe ion current flowing through the gap junction between neurons changes the membrane potential of those neurons, which is called signal transmission by electrical synapses (Carew and Kandel, 1976). Electrical synapses have characteristics such as simple structure, fast signal transmission, bidirectional communication (in most cases), and a wide operation range for voltage including the subthreshold region (Bennett, 1997). Based on this, it has been reported that electrical synapses play various roles, such as excitation or inhibition of neurons, synchronization or desynchronization of neural activity, promotion or attenuation of rhythms, and improvement of signal-to-noise ratio (Connors, 2017). Here, rhythm refers to the periodic active pattern of neurons, and in particular, the rhythm in the subthreshold region helps neurons ignite the action potential simultaneously according to the cycle of the rhythm, and a typical example of this can be seen is the excitatory cells in inferior olivary nucleus (Bazzigaluppi et al., 2012; Benardo and Foster, 1986; Giocomo et al., 2007; Khosrovani et al., 2007; Long et al., 2002). Spontaneous and robust subthreshold membrane potential oscillations were observed in the inferior olivary cells (Benardo and Foster, 1986; Chorev et al., 2007; Devor and Yarom, 2002; Lampl and Yarom, 1997; Llin\u00e1s and Yarom, 1981). The inferior olivary cells are intra-connected only by electrical synapses, and it was reported that the presence of electrical synapses is largely involved in the synchronization of subthreshold oscillations (De Zeeuw et al., 2003; Leznik and Llin\u00e1s, 2005; Leznik et al., 2002; Llin\u00e1s, 2013; Long et al., 2002; Turecek et al., 2016). Although electrical synapses and subthreshold oscillations are functionally closely related, theoretical and computational exploration of this has been lacking. The occurrence of subthreshold oscillations and their role in neural networks have been explored through pioneering neuron models (Roach et al., 2018; Tchumatchenko and Clopath, 2014; V-Ghaffari et al., 2016), but the establishment of an entire connectome between numerous neurons belonging to regions such as the inferior olivary nucleus remains a task to be solved in the future.\n\nIn the field of connectome, information on the indexing of all individual neurons, muscles, and organ cells present in the nematode Caenorhabditis elegans and the entire connectivity between those cells by chemical and electrical synapses was recently updated (Cook et al., 2019). This available connectome data of C. elegans identifies connectivity weights proportional to the structural size of each synapse, with 1433 electrical synapses present among a total of 469 cells, including neurons, muscles, pharynx, and other organ cells. Some examples of synchronized activity of a small number of neurons through electrical synapses in C. elegans have been reported. During the gentle nose touch response, nose mechanoreceptor neurons connected to electrical synapses simultaneously increased in activity, thereby serving as a coincidence detector (Chatzigeorgiou and Schafer, 2011). And a pair of GABAergic motor neurons controlling the bowel movement program repeated every 50 s used synchronized activity through electrical synapses at their axon terminal (Choi et al., 2021). However, direct observation or indirect evidence of spontaneous subthreshold oscillations has NOT been confirmed in C. elegans. Nevertheless, a theoretical and computational model consideration of the signal transmission of subthreshold oscillations on the entire electrical synapse network among cells with various cell types could be a great challenge.\n\nIn general, the wave properties of membrane potential are well-known, such as constructive summation of the two excitatory postsynaptic potentials or deconstructive summation of the excitatory and inhibitory postsynaptic potentials. Likewise, it is experimentally confirmed that subthreshold oscillations have wave properties as fluctuations observed in membrane potential measurements and experience interference when propagated in the neural tissue space (Chiang and Durand, 2023; Gupta et al., 2016). Therefore, interference should be considered important when subthreshold membrane potential waves propagate through the neural network and cross each other at one spatial point.\n\nHere, we attempted to describe a situation in which wave signals, mimicking the subthreshold membrane potential waves, are propagated and interfered on a network that mimics the electrical synapse network of C. elegans (the cells become nodes, the electrical synapses become edges, and the subthreshold waves can flow in both directions on the edges). In the field of physics, the Anderson localization phenomenon has been well known, and it is a general wave phenomenon due to the wave interference between multiple scattering paths. Depending on the strength of the scattering of waves, the result of wave interference could be constructive or destructive, namely, waves could transmit or localize through the media, correspondingly. The theoretical and numerical method for describing the so-called Anderson localization problem usually employed the tight-binding Anderson Hamiltonian. A relevant model was developed to calculate the wave\u2019s quantum percolation using the tight-binding Anderson Hamiltonian on a network lattice consisting of nodes and edges, where the interference by all possible propagation paths was considered when the quantum mechanical probability wave was propagated by experiencing the percolation disorder on the network lattice (Anderson, 1958; Chang et al., 1995; Meir et al., 1989; Shapir et al., 1982; Thomas and Nakanishi, 2016). In this study, we benefited from this model, and by treating the probability wave as a general wave signal and replacing the network lattice with a synapse network model we are interested in. We could calculate the interference by all possible paths which were considered when the wave signals propagate in the synapse network.\n\nBy applying the theoretical concept and computational methodology introduced above and well established in the field of physics, we calculated the signal transmission coefficient between arbitrary two cells of the model connectome as a function of the wavenumber (the quantity of inverse of wavelength) of the wave signal. Based on the signal transmission coefficients for all cell-pairs estimated under various wavenumber conditions, we unraveled (1) the existence of a threshold wavenumber above which the signal transmission disappears, (2) regions of cell-pairs with wavenumber-dependent transmission map, (3) long distance and regular patterned signal transmission, and (4) major hub cell-pair common across multiple wavenumbers. When comparing with the results for a situation that did not consider the wave interference, we revealed the role of the interference when subthreshold waves propagate on the C. elegans\u2019 electrical synapse network model. Although many aspects of the actual neural network and electrical synapses were simplified or omitted in our model study, our results provided the insight of the fundamental role of the electrical synapse network with subthreshold oscillations.\n\n## Results\n\n### Cell-pairs in the model connectome of C. elegans could belong to regions where the wave signal could be transmitted (or not transmitted) below (or above) a threshold wavenumber\n\nIn our circuit model mimicking the anatomical gap junction network of C. elegans (details described in \u2018Construction of our circuit model\u2019 part of Methods) (Figure 1), we calculated all the transmission coefficient $T_{ij}$ of the wave signal for each of the 109,746 cell-pairs $\u27e8i,j\u27e9$ between the total 469 cells (details described in \u2018Calculation for the transmission coefficient\u2019 part of Methods). Here, the transmission coefficient was a function of energy E of the incoming wave, and the E value was a function of the wavenumber k of the wave signal. And according to the wavenumber, E value was set up to exist in the range [\u201310, 10], and we calculated all the $T_{ij}(E)$ of the entire cell-pairs at E values of 801 points listed by equal intervals over the entire range ($\u0394E=0.025$).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig1-v1.jpg)\n\n**Figure 1.:** (A) In the sample of the network diagram on the left, there are white-filled nodes stand for cells, and the edges of a solid line stand for the anatomical gap junction between them. The graph on the right is the distribution of 1433 gap junction weights obtained from the connectome data of C. elegans. (B) In the sample of the network diagram on the left, equally spaced two virtual nodes were added between cells connected by a gap junction, and the virtual node is presented as a black-filled circle. The solid line stands for the connection between the cell and the virtual node that gave a weight of 1, and the dotted line stands for the connection between the two virtual nodes that gave our processed weight between 0 and 1. Our processed weights are calculated from the anatomical gap junction weights, and the graph on the right shows its distribution.\n\nFirst, the average transmission coefficient of all cell-pairs $\u27e8i,j\u27e9$ for each E value, $\u27e8T_{ij}(E)\u27e9_{All\u00a0ij\u00a0cell\u2212pairs}$, was obtained and drawn as a function of E (Figure 2A). The $\u27e8T(E)\u27e9$ graph showed an incomplete but quite symmetrical form based on $E=0$. And on the real Y-axis scale, high $\u27e8T(E)\u27e9$ values were broadly identified in these three ranges of the E values: [\u20131.575, \u20131.275], [\u20130.350, 0.350], and [1.275, 1.575]. Also on the log Y-axis scale, several relatively high $\u27e8T(E)\u27e9$ values were locally identified in the form of peaks in the remaining ranges of the E values. Meanwhile, on the log Y-axis scale, the signal transmission of all cell-pairs almost disappeared in the E value range at both ends. In the field of solid-state physics, a threshold energy value in which electrical conductivity disappears in the energy band is called a \u2018mobility edge\u2019. We were able to define a threshold wavenumber, namely a signal mobility edge, even in the transmission of the wave signal of our circuit model. For example, considering that $\u27e8T(E)\u27e9=10^{\u22127}$ is a value that can be obtained when only one cell-pair out of all cell-pairs shows 1% transmission and all others are completely unable to transmit the wave, this 10\u20137 value can be regarded as an extreme disappearance of signal transmission throughout the entire circuit. Thus, by taking this reference value, $E=\\pm5.650$ in our circuit model became a signal mobility edge. If the reference value is set more conservatively lower than now, the absolute value of E corresponding to the signal mobility edges will be larger than now.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig2-v1.jpg)\n\n**Figure 2.:** Average transmission coefficient for all cell-pairs as a function of E values (E value is a function of the wavenumber of the subthreshold wave). (A) The upper panel shows the average transmission coefficient graph on the Y-axis of the real scale and the lower panel shows the same graph on the Y-axis of the log scale. The reference value (10\u20137) of the signal mobility edge is indicated in the lower panel as a dot-dash line. (B) The transmission coefficient of all cell-pairs at $E=0.225$ is represented as a heatmap, which is the highest average transmission coefficient in our result. (C) The transmission coefficient of all cell-pairs at $E=5.650$ is represented as a heatmap, which is one of the signal mobility edges. (B, C) In heatmap, the X and Y axes are arranged according to the index of 469 cells, and the index follows that of the original connectome data. Instead of displaying all cell names, only seven cell types were indicated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Selected $\u27e8T(E)\u27e9$ peaks.The 31 selected peaks are shown as dots on the graph of the average transmission coefficient for all cell-pairs. To make the dots more visible, only the E value range of [\u20131, 5] was drawn out of the total [\u201310, 10]. The upper panel shows the dots and the graph on the Y-axis of the real scale and the lower panel shows the same things on the Y-axis of the log scale.\n\nNext, the transmission coefficient of all individual cell-pairs $T_{ij}(E=0.225)$ was represented as a heatmap at the E value (or the corresponding wavenumber) where the $\u27e8T(E=0.225)\u27e9$ value was the highest (Figure 2B). Here, we confirmed that not all cell-pairs transmit the wave signals with even transmission coefficients. Most of the strong transmissions were found in the cell-pairs of intra-body-wall muscles, and a small number of cells belonging to sensory neurons, motor neurons, and other organ cells also showed strong transmission in cell-pairs between them or to body-wall muscles. The rest of the cells except these cells were almost isolated separately without exchanging the wave signals with any cells even at this E value, which was the highest transmitted state on average.\n\nIn addition, the transmission coefficient of all individual cell-pairs $T_{ij}(E=5.650)$ was represented as a heatmap at the E value (or the corresponding wavenumber) which we defined as the signal mobility edge (Figure 2C). As expected, all cells were isolated separately without exchanging the wave signals with each other, and the entire circuit stop transmitting wave signals of this wavenumber.\n\n### Transmission map of subthreshold waves on the electrical synapse network model depended on values of wavenumber\n\nBetween the two E values discussed above ($E=0.225$ and $E=5.650$), the average transmission coefficient of all cell-pairs, $\u27e8T(E)\u27e9$, did not simply increase or decrease, but fluctuated along the E value (Figure 2). Therefore, it was expected that the composition of the cell-pairs, which showed strong transmission, also changes according to the E value. To efficiently investigate the changes in the composition of the cell-pairs, instead of inspecting the $T_{ij}(E)$ heatmaps in all E values, we selected 31 specific E values and tried to analyze the composition of the cell-pairs only in these E values. We chose the specific E values on the following three criteria: (1) the $\u27e8T(E)\u27e9$ value was the local maximum (the shape of a peak) in the $\u27e8T(E)\u27e9$ graph, (2) the components of the $T_{ij}(E)$ showed greater than 0.5 at least one cell-pair, and (3) the E value was positive number (Figure 2\u2014figure supplement 1). The reasons why we used these conditions are as follows: (1) we assumed that the peak occurred in the $\u27e8T(E)\u27e9$ graph due to the emergence of new cell-pairs with strong transmission, (2) we set the reference value for strong transmission to be 0.5 or higher, and (3) the E values where peak occurred in the $\u27e8T(E)\u27e9$ graph showed left\u2013right symmetry based on $E=0$. (Additional explanations are in \u2018Auxiliary paragraph 1\u2019 of Supplementary Materials.)\n\nThe transmission coefficients of all individual cell-pairs were represented as a heatmap at each E value (or the corresponding wavenumber) for the 31 specific E values we selected (left panels in Figure 3, Figure 3\u2014figure supplements 1\u20138). To closely observe the composition of cell-pairs with strong transmission, only cells (Appendix 1\u2014tables 1\u20134) belonging to the cell-pairs with $T_{ij}(E)>0.5$ were selectively exhibited in these heatmaps, not for all 469 cells. To confirm the spatial status of the cell-pairs with strong transmission on the electrical synapse network model, a network diagram was prepared first. Since drawing all 469 cells as a network diagram was complicated and poorly visible, we presented nodes for only 173 cells that belonged to the cell-pairs with $T_{ij}(E)>0.5$ in the positive E values. Electrical synapses between cells were represented as edges, and the thickness of the edge proportional to our processed weights ($w_{ij}$) was used. (Additional explanations are in \u2018Auxiliary paragraph 2\u2019 of Supplementary Materials). On the prepared network diagram, we marked the cell-pairs with strong transmission that satisfies $T_{ij}>0.5$ (right panels in Figure 3, Figure 3\u2014figure supplements 1\u20138).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig3-v1.jpg)\n\n**Figure 3.:** The cell-pairs with strong transmission ($T_{ij}(E)>0.5$) at (A) $E=0.225$, (B) $E=0.800$, (C) $E=1.450$, and (D) $E=3.875$ (or the corresponding wavenumbers) are shown, respectively. The left panels represent the transmission coefficient between cells belonging to the cell-pairs with strong transmission at each E value as a heatmap. Here, the X and Y axes are the cell index, and the cell name corresponding to the cell index can be found in Appendix 1\u2014table 1, Appendix 1\u2014table 2, Appendix 1\u2014table 3, Appendix 1\u2014table 4. The right panels display the cell-pairs of strong transmission at each E value as red bidirectional arrows of the same thickness on the network diagram. In the network diagram, the cell name is written inside the circle that stands for each node (for the body-wall muscles, the cell name is abbreviated as follows: ex) dBWML1 \u2192 dL1, and the color of the node stands for the cell type (red: pharynx cells, orange: sensory neurons, yellow: inter neurons, green: motor neurons, light blue: body-wall muscles, purple: other end organs, magenta: sex-specific cells). Edges indicated by black solid lines stand for the electrical synapses among the cells, and the thickness of the edges is proportional to our processed weight. In the network diagram, only 173 cells that belonged to the cell-pair with strong transmission at least once in positive E values are represented, and the remaining cells and the electrical synapses by them are omitted from display. The virtual nodes of our circuit are also omitted from the display.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The cell-pairs with strong transmission ($T_{ij}(E)>0.5$) at (A) $E=0.000$, (B) $E=0.100$, (C) $E=0.175$, and (D) $E=0.225$ (or the corresponding wavenumbers) are shown, respectively. The left panels represent the transmission coefficient between cells belonging to the cell-pairs with strong transmission at each E value as a heatmap. Here, the X and Y axes are the cell index, and the cell name corresponding to the cell index can be found in Appendix 1\u2014Tables 1\u20134. The right panels display the cell-pairs of strong transmission at each E value as red bidirectional arrows of the same thickness on the network diagram. In the network diagram, the cell name is written inside the circle that stands for each node (for the body-wall muscles, the cell name is abbreviated as follows: ex) dBWML1 \u2192 dL1, and the color of the node stands for the cell type (red: pharynx cells, orange: sensory neurons, yellow: inter neurons, green: motor neurons, light blue: body-wall muscles, purple: other end organs, magenta: sex-specific cells). Edges indicated by black solid lines stand for the electrical synapses among the cells, and the thickness of the edges is proportional to our processed weight. In the network diagram, only 173 cells that belonged to the cell-pair with strong transmission at least once in positive E values are represented, and the remaining cells and the electrical synapses by them are omitted from display. The virtual nodes of our circuit are also omitted from the display.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The cell-pairs with strong transmission ($T_{ij}(E)>0.5$) at (A) $E=0.275$, (B) $E=0.325$, (C) $E=0.475$, and (D) $E=0.575$ (or the corresponding wavenumbers) are shown, respectively. The heatmaps of the left panels and the network diagram of the right panels are represented in the same way as in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** The cell-pairs with strong transmission ($T_{ij}(E)>0.5$) at (A) $E=0.750$, (B) $E=0.800$, (C) $E=0.850$, and (D) $E=0.925$ (or the corresponding wavenumbers) are shown, respectively. The heatmaps of the left panels and the network diagram of the right panels are represented in the same way as in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** The cell-pairs with strong transmission ($T_{ij}(E)>0.5$) at (A) $E=1.350$, (B) $E=1.450$, (C) $E=1.500$, and (D) $E=1.575$ (or the corresponding wavenumbers) are shown, respectively. The heatmaps of the left panels and the network diagram of the right panels are represented in the same way as in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** The cell-pairs with strong transmission ($T_{ij}(E)>0.5$) at (A) $E=1.700$, (B) $E=1.750$, (C) $E=1.800$, and (D) $E=1.875$ (or the corresponding wavenumbers) are shown, respectively. The heatmaps of the left panels and the network diagram of the right panels are represented in the same way as in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 6.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig3-figsupp6-v1.jpg)\n\n**Figure 3\u2014figure supplement 6.:** The cell-pairs with strong transmission ($T_{ij}(E)>0.5$) at (A) $E=2.000$, (B) $E=2.225$, (C) $E=2.450$, and (D) $E=2.650$ (or the corresponding wavenumbers) are shown, respectively. The heatmaps of the left panels and the network diagram of the right panels are represented in the same way as in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 7.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig3-figsupp7-v1.jpg)\n\n**Figure 3\u2014figure supplement 7.:** The cell-pairs with strong transmission ($T_{ij}(E)>0.5$) at (A) $E=3.000$, (B) $E=3.375$, (C) $E=3.475$, and (D) $E=3.525$ (or the corresponding wavenumbers) are shown, respectively. The heatmaps of the left panels and the network diagram of the right panels are represented in the same way as in Figure 3\u2014figure supplement 1.\n\n![Figure 3\u2014figure supplement 8.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig3-figsupp8-v1.jpg)\n\n**Figure 3\u2014figure supplement 8.:** The cell-pairs with strong transmission ($T_{ij}(E)>0.5$) at (A) $E=3.625$, (B) $E=3.750$, and (C) $E=3.875$ (or the corresponding wavenumbers) are shown, respectively. The heatmaps of the left panels and the network diagram of the right panels are represented in the same way as in Figure 3\u2014figure supplement 1.\n\nAs expected above, the region of the cell-pairs with strong transmission changed depending on the value of E (or wavenumber), which we named \u2018Wavenumber-Dependent Transmission Map (WDTM) of subthreshold waves on the electrical synapse network model\u2019. However, it should be also noted that our WDTM was a result derived from a network where only electrical synapses were considered, not a general neural network where chemical and electrical synapses coexist.\n\nWe looked at the cell type of the cell-pairs that make up the 31 WDTMs (Figure 3, Figure 3\u2014figure supplements 1\u20138). In the two E value ranges of [0, 0.350] and [1.275, 1.575], the high $\u27e8T(E)\u27e9$ value was broadly identified (Figure 2\u2014figure supplement 1), and many cell-pairs of intra-body-wall muscles were observed in the corresponding WDTMs of these E values (Figure 3A, C, Figure 3\u2014figure supplements 1 and 2A, B, and Figure 3\u2014figure supplement 4). Since the body-wall muscles consist of four muscle strands: dorsal/ventral-left/right strands, the cell-pair of intra-body-wall muscles can be divided into two cases: a cell-pair of intra-strand and a cell-pair of inter-strand. Following this classification, the cell-pairs of both intra- and inter-strand were found in the WDTMs of the E value range of [0, 0.350] (Figure 3A, Figure 3\u2014figure supplements 1 and 2A, B), whereas only the cell-pairs of intra-strand were found in the WDTMs in the E value range of [1.275, 1.575] (Figure 3C and Figure 3\u2014figure supplement 4). On the other hand, in the remaining WDTMs, a small number of cell-pairs within cells with less than 10 members were mostly found (Figure 3B, D, Figure 3\u2014figure supplement 2C, D, Figure 3\u2014figure supplement 3, and Figure 3\u2014figure supplements 5\u20138), and the WDTMs of the two largest cases are shown in Figure 3B, D. The composition of cell-pairs with various combinations of cell types (sensory/inter/motor neurons, body-wall/sex-specific muscles, pharynx, and other organ cells) was shown in these remaining WDTMs.\n\n### Cell-pairs in body-wall muscles on long distance with regular patterned transmission were found in the WDTMs\n\nWhen looking at each WDTM on the network diagram, it shows various patterns spatially. In particular, in the case of the body-wall muscles, the cell-pairs of intra-strand existed, ranging from short distance to the longer distance than the half of the full length of the strand (Figure 3A, C). Here, the \u2018Distance\u2019 was meant by the length of the shortest path along the network between two cells of a cell-pair. If two cells are directly connected to an edge, the distance between the two cells is one. In the WDTMs of the E value range of [1.275, 1.575], cell-pairs with regular patterned transmission of the body-wall muscles were observed through the network diagram (Figure 3\u2014figure supplement 4). Only the cell-pairs of intra-strand were found in these WDTMs, and the configuration of the distance of these cell-pairs was different for each WDTM (multiple of 3 at $E=1.350$, multiple of 2 at $E=1.450$, multiple of 7 at $E=1.500$, and multiple of 4 at $E=1.575$).\n\nOn the other hand, when the cell-pairs of inter-strand of the body-wall muscles appeared in the WDTMs as shown in Figure 3A, B, the head mesodermal cell (hmc) seemed to play an important role in building a bridge between them. This would be recognized from the network diagram itself of black edges without WDTM, and hmc was strongly connected near the neck of the body-wall muscles (seventh and eighth muscles) for all four strands. In the WDTM of Figure 3A, there were many cell-pairs of inter-strand between dorsal-right and ventral-left strands, and there were also many cell-pairs between the ventral-left strand and hmc, which directly revealed the role of hmc as a bridge between the two body-wall muscle strands. In the WDTM of Figure 3B, it was shown that the role of hmc was indirectly revealed as the cell-pairs of inter-strand, which existed only among the neck of four body-wall muscle strands.\n\nAdditionally, we reaffirmed the important role of hmc while confirming the distance characteristics of the cell-pairs with strong transmission. Under the conditions used when preparing the network diagram (the transmission coefficient $T_{ij}E$ of a cell-pair was 0.5 or higher in the range of positive E values at least once), a total of 146 cell-pairs with strong transmission were identified excluding the cell-pairs of intra-body-wall muscles, and their distance was investigated (Appendix 1\u2014table 5). (Additional explanations are in \u2018Auxiliary paragraph 3\u2019 of Supplementary Materials.) Most of the cell-pairs in Appendix 1\u2014table 5 showed the kinds of short distances 1\u20133, which consisted of various cell types. On the other hand, the cell-pairs with long distances in Appendix 1\u2014table 5 ranging from 4 to 17 were mainly pairs between hmc and body-wall muscles. The strong transmission between hmc and the tail muscle, which corresponds to the longest distance, passes through the intra-strand connections from the neck to the tail of body-wall muscles.\n\nA few cell-pairs of strong transmission with long distance in Appendix 1\u2014table 5 turned out to be not those between hmc and the body-wall muscles. In there, one inter neuron (AVBR) and two motor neurons (AS11 and VD04) formed a cell-pair with the body-wall muscles, respectively, and four sensory neurons (CEPDL, IL1R, IL1DR, and OLQDL) formed cell-pairs between them.\n\n### Major hub cell-pairs with the strong transmission of signals for many wavenumbers exist\n\nWe looked at cell-pairs frequently appearing in all 31 WDTMs in order to identify the major hub cell-pairs that is commonly used for various wavenumbers. First, for each cell-pair $\u27e8i,j\u27e9$, we calculated the average appearance rate in all 31 WDTMs, $\u27e8\\theta[T_{ij}(E)\u22120.5]\u27e9_{E\\in{31\u00a0selected\u00a0E}}$, and represented this as a heatmap (Figure 4). Where, the $\\theta[x]$ was a step function, which value was 1 if \ud835\udc65 \u2265 0 or 0 if \ud835\udc65 < 0. Thus, the average appearance rate was 1 in the case of a cell-pair that appeared in all 31 WDTMs, and 1/31 \u2248 0.03 in the case of a cell-pair that appeared only once. In this study, we declared a cell-pair as a major hub cell-pair if the average appearance rate of a cell-pair was \ud835\udc65 < 0 or higher. The major hub cell-pairs were the cell-pairs of intra-strand of the body-wall muscles (Figure 4). As seen in the network diagram, the edges of each strand of the body-wall muscles from the neck (seventh or eighth muscle) to the tail (twenty-third or twenty-fourth muscle) were simply connected in a line, unlike the messy edges among most neurons in the network (Figure 3). In general, the complexity of connections among most neurons increase with the number of transmissible paths of wave propagation, and the sum of phase changes coming from various path-length differences causes the deconstructive interference. Therefore, the simple (or regular) connections in each strand of the body-wall muscles from the neck to the tail reduced the number of transmissible paths of wave signals, which suppressed deconstructive interference and thus resulted in the strong transmission for various wavenumbers.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig4-v1.jpg)\n\n**Figure 4.:** The average appearance rate of all cell-pairs is represented as a heatmap. Here, the X and Y axes are arranged according to the index of 469 cells, and the index follows that of the original connectome data. Instead of displaying all cell names, only seven cell types were indicated. The highest rate is $7/31\u22480.23$, and four cell-pair groups showing rates of $3/31\u22480.1$ or higher are identified and numbered in the heatmap. (1) PVDL-PVDR pair, (2) hmc-vBWML6, hmc-vBWML7, and hmc-vBWML8 pairs, (3) CANL-CANR, CANL-exc_cell, and CANR-exc_cell pairs, and (4) many cell-pairs of intra-strand of the body-wall muscles.\n\nAlso, the cell-pairs between hmc and the neck of the ventral-left strand of the body-wall muscles were also identified as major hub cell-pair (Figure 4). As seen in the network diagram, since the edges between hmc and the neck muscles were very strong compared to other edges (Figure 3), the relative contribution of wave signals coming from other cells could be almost ignored, and thus resulted in the strong transmission for various wavenumbers.\n\nThe cell-pairs among two sensory neurons (PVDL and PVDR) and three other organ cells (CANL, CANR, exc_cell) were also identified as major hub cell-pairs (Figure 4). The cell-pair between CANL and CANR was the most major hub cell-pair, with the highest average appearance rate of $7/31\u22480.23$. As seen in the network diagram, the three other organ cells were very strongly connected by the edges to each other, and the two sensory neurons were very strongly connected by the edges to both ALA inter neuron and hmc (Figure 3). Although there were cases where they were strongly connected by the edges to each other, such as between PVDL and CANL or between PVDR and CANR, they were not major hub cell-pair. Therefore, the strong edge shown on the network diagram was not a sufficient condition to implicate a major hub cell-pair.\n\n## Discussion\n\nThe fundamental aspect of this study is that the interference phenomena of the subthreshold oscillations propagating on a neuronal circuit was described by a theoretical and computational model study of the reference system C. elegans for which the structural anatomical connectome was completely known. We investigated the wavenumber-dependent transmission of the sinusoidal wave signals between all cell-pairs on the connectome model of C. elegans by considering the interference effect caused by multi-paths of signaling.\n\nThe results related to the wavenumber-dependent transmission map expanded the way we used to view signal transmission on electrical synapses. The difference in signal transmission with the presence or absence of interference effect on electrical synapses could be illustrated by considering the effective conductance between two nodes in the electric circuit with or without considering the interference effect (Figure 5). For a situation without considering the interference, we calculated the effective resistance and effective conductance for all cell-pairs by imitating a cell as a node and the electrical synapse as an electrical resistor connecting nodes as shown in Figure 5A (details in \u2018Calculation for effective conductance\u2019 part of Methods). Several inter neurons and other organ cells showed high effective conductance, while pharynx, body-wall muscles from the neck to the tail, and sex-specific muscles showed very low effective conductance (Figure 5B). Since inter neurons have many complex connections among them, many electrical current paths exist between the two inter neurons, which act as parallel connections of multiple electrical resistors. This results in lower effective resistance (or higher effective conductance). However, for a situation with considering the interference, many transmissible forward and backward paths of the signal propagation rather caused the deconstructive interference, preventing the transmission of the signal. For each cell-pair $i,j$, we calculated the average transmission coefficient for all E values and represented this as a heatmap (Figure 5C, D). Which clearly showed that most of the neurons could not exchange wave signals with each other except for very few neurons. Wave signals were effectively delivered only within a small number of very strongly connected cell groups (PVDL/R, CANL/R, exc_cell, and hmc) or within a large number of very regularly connected cell groups (body-wall muscle strands from the neck to the tail).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/99904/elife-99904-fig5-v1.jpg)\n\n**Figure 5.:** (A) In the electrical synapse network model without considering interference, when the electrical synapse is treated as an electrical resistor, the effective conductance (the reciprocal of the effective resistance) experienced by the external direct current power applied to an arbitrary cell-pair was calculated, and this value was represented as (B) a heatmap for all cell-pairs. (C) In our circuit considering interference of wave signals, the average transmission coefficient for all E values (or all wavenumbers) of an arbitrary cell-pair was calculated, and this value was represented as (D) a heatmap for all cell-pairs. (B, D) In heatmap, the X and Y axes are arranged according to the index of 469 cells, and the index follows that of the original connectome data. Instead of displaying all cell names, only seven cell types are indicated.\n\nIn this study, we used the structural anatomical information from C. elegans\u2019 electrical synapse network, but no synchronized rhythmic activity induced by subthreshold membrane potential oscillations has been reported for C. elegans so far. However, we aimed at investigating the signaling characteristics caused by the interference and to discover a feasible phenomenon related to the propagation of the subthreshold oscillations on a neuronal circuit of living nervous system. As to the synchronized rhythmic activation observed like in the mammalian inferior olive nucleus, we think that there might be an electrical synapse network in there that connect cells very strongly or very regularly. The plausible possibility according to our model study is that the constructive interference of subthreshold membrane potential waves with a specific wavenumber may generate the synchronized rhythmic activation. We hope that the results in our study would serve as the worthwhile framework and knowledge for designing the future experimental studies not only for inferior olive nucleus, C. elegans but also other living systems.\n\n## Methods\n\n### Construction of our circuit model\n\nWe used the contents of the \u2018hermaphrodite gap jn symmetric\u2019 tab in the \u2018SI 5 Connectome adjacency matrices, corrected July 2020.xlsx\u2019 file of the C. elegans connectome dataset as data for the anatomical gap junction network (Cook et al., 2019). The 469 cell names and the gap junction weight ($g_{ij}$) of all cell-pairs connected by gap junction were provided in the tab, and the weights had a value distribution from a minimum of 1 to a maximum of 401 (Figure 1A). The weights were proportional to the spatial size of the corresponding gap junction, which we hypothesized that the larger the weight, the stronger the connection between the cells and thus the better transmit the wave signal to the connected cell.\n\nOur circuit model described C. elegans\u2019 anatomical gap junction network as follows (Figure 1B). First, each cell was treated as a node in our circuit. Each gap junction connected to a cell-pair was treated as an edge connecting two nodes in our circuit, and we inserted two virtual nodes (VNs) between those two nodes to be connected sequentially through VNs (Cell-VN-VN-Cell). Here, all edges inside our circuit were set to have the identical length a. The edge of Cell-to-VN (or VN-to-Cell) representing like axon or dendrite of neuron gave a weight of 1, and the edge of VN-to-VN representing a gap junction gave our processed weight ($w_{ij}=min{1,g_{ij}/40}$). Our processed weight ($w_{ij}$) was proportional to the anatomical gap junction weight ($g_{ij}$) and normalized as a value between 0 and 1 but was fixed to 1 if $g_{ij}>40$. In our circuit model, the weight of the edge meant the transmission coefficient of the signal transmitted through this edge, so if the weight was 1 corresponded to complete transmission, and 0 corresponded to complete reflection (or unavailable edge), respectively. And within our circuit, the characteristic of the signal being spontaneously attenuated, and disappearing was excluded. Therefore, when a signal incoming from the outside to a node in our circuit was reflected to the outside at the same node and simultaneously transmitted to the outside at another node, the sum of the transmission and reflection coefficients to the outside always remained at 1 without loss.\n\n### Calculation for the transmission coefficient\n\nWe benefited from the method of calculating the transmission coefficient according to the energy E of the incoming wave when the electron probability wave incident on one point of the network lattice was detected on another point. This methodology, called the quantum percolation model, considered the propagation and interference of waves on the network lattice using the tight-binding Anderson Hamiltonian (Anderson, 1958; Chang et al., 1995; Meir et al., 1989; Shapir et al., 1982; Thomas and Nakanishi, 2016). In our methodology, we replaced the classical wave signals of complex number expression representing subthreshold membrane potential waves instead of the electron probability wave and replaced the network lattice with our circuit describing the electrical synapse network model built above. Then, the transmission coefficient calculated by the quantum percolation model told how well the subthreshold waves were transmitted from one cell i to another cell j while undergoing interference by multiple propagation paths in the electrical synapse network model. Here, the electrical synapses act as wave scatters that interrupt the propagation of the subthreshold waves from cell i to cell j.\n\nIn the quantum percolation model, the tight-binding Anderson Hamiltonian was defined as follows:\n\n$$\nH=\\summ\u03f5_{m}|m\u27e9\u27e8m|+\\sum\u27e8mn\u27e9V_{mn}(|m\u27e9\u27e8n|+|n\u27e9\u27e8m|),\n$$\n\nwhere the $|m\u27e9$ (also expressed as the $\u03c8_{m}$) is as the electron probability wave on the mth node, and the $\u27e8m|$ means its complex conjugate $\u03c8_{m}^{*}$. We used $\u03c8_{m}$ as the classical wave signal observed on the mth node, which of complex number expression made it easy to express the phase shift of the wave and calculate the interference. The amplitude of this classical wave signal on the mth node was defined as the $mm=\u03c8_{m}^{*}\u03c8_{m}$. In the Hamiltonian, the $\u03f5_{m}$ is the on-site energy, and we regarded it as the resting membrane potential of the mth cell and set it to 0, the identical value as the relative reference value of the resting membrane potential in all cells. The $mn$ represents a pair of nearest-neighbor sites in the Hamiltonian, we replaced it with a node-pair connected by the edges in our circuit. The $V_{mn}$ as a hopping matrix represents the entire structure of the network lattice in the Hamiltonian, which we implemented the structure of our circuit by setting it to $V_{mn}=1$ for a node-pair between cell and VN, and $V_{mn}=w_{mn}$ for that between two VNs. Since the total number of the cells was 469, and we inserted two VNs for every 1433 electrical synapses, the newly constructed tight-binding Anderson Hamiltonian for our circuit was represented as a matrix of 3335 by 3335.\n\nBy solving the time-independent Schr\u00f6dinger equation ($H\u03c8\u2192=E\u03c8\u2192$) for the Hamiltonian of our circuit, we sought to obtain the reflection and transmission coefficients of the cell-pair between the IN-cell and the OUT-cell from the $\u03c8_{IN}$ of the IN-cell where the wave signal from the outside was incident and reflect, and the $\u03c8_{OUT}$ of the OUT-cell where the wave signal from our circuit transmitted to the outside. We defined $\u03c8_{IN}$ and $\u03c8_{OUT}$ as follows using complex numbers r and t with amplitudes and phases,\n\n$$\n\u03c8_{IN}=1+r,\u03c8_{OUT}=t,\n$$\n\nwhere the $\u03c8_{IN}$ was the sum of 1 and r corresponding to the incoming wave and the reflective wave, respectively, and the $\u03c8_{OUT}$ was t corresponding to the transmitted wave. The reason why the amplitude and the phase of the incoming wave on the IN-cell were 1 and 0, respectively, was because we set that as a reference amplitude and a reference phase in our circuit. The amplitude of the wave reflected from the IN-cell to the outside became the reflection coefficient with $R=r^{*}r$, and the amplitude of the wave transmitted from the OUT-cell to the outside became the transmission coefficient with $T=t^{*}t$, and $T+R=1$ had to be always satisfied, as mentioned above.\n\nThis methodology also assumed both an external injector and an external detector. The external injector injected the generated wave into the network lattice and received the reflective wave from the network lattice. The external detector received the transmitted wave from the network lattice. The waves on the external injector $\u03d5_{Injector}$ and the external detector $\u03d5_{Detector}$ were extended from the definitions of $\u03c8_{IN}$ and $\u03c8_{OUT}$ above, respectively, and determined as follows:\n\n$$\n\u03d5_{Injector}=1e^{\u2212ika}+re^{ika},\u03d5_{Detector}=te^{ika}.\n$$\n\nThe external injector and detector were set to be connected to the IN-cell and OUT-cell by a perfect conducting wire with a length of a, respectively. The wave outgoing to the external injector (detector) from the IN-cell (OUT-cell) was determined by multiplying the phase difference of $e^{ika}$ to the wave on the IN-cell (OUT-cell), whereas the wave incoming to the IN-cell from the external injector was determined by multiplying the phase difference of $e^{-ika}$ to the wave on the IN-cell. Insert these terms into the time-independent Schr\u00f6dinger equation for the Hamiltonian of our circuit, the following equation was derived describing the entire system consisting of our circuit and the external injector and detector,\n\n$$\nH\u03c8_{m}+\u03d5_{Injector}\\delta_{m,IN}+\u03d5_{Detector}\\delta_{m,OUT}=E\u03c8_{m},\n$$\n\nwhere the E value on the right side representing the energy of the entire system was equivalent to the energy E of the incoming wave from the external injector.\n\nIn the quantum percolation model, the energy E of the incoming wave was defined as a tight-binding energy function as follows:\n\n$$\nE=2\\gammacos\u2061(ka),\n$$\n\nwhere $\\gamma$ meant the binding energy between the nearest-neighbor atoms in the tight-binding model, but we had to set it to an arbitrary value. In this study, it was set to $\\gamma=5$, and the decision process was described in the below section. Applying this energy function, the above equation for the entire system was expressed as the matrices as follows:\n\n$$\n(e^{ika}\u22122\\gammacos\u2061(ka)V_{IN,m}V_{IN,OUT}V_{n,IN}V_{nm}\u22122\\gammacos\u2061(ka)\\delta_{nm}V_{n,OUT}V_{OUT,IN}V_{OUT,m}e^{ika}\u22122\\gammacos\u2061(ka))(1+r\u03c8_{m}t)=(e^{ika}\u2212e^{\u2212ika}00),\n$$\n\nwhere m and n meant the 3333 remaining nodes except two nodes for IN-cell and OUT-cell. For a wavenumber k in the range of [$0,\\pi/a$] (or an E value in the range of [$\u22122\\gamma,2\\gamma$]), all components of both the left-hand square-matrix and the right-hand column-vector were fully expressed as complex numbers, and then the r and t values in the left-hand column-vector were obtained by matrix multiplication of the inverse matrix of the left-hand square-matrix and the right-hand column-vector. From squared absolute the r and t values, the reflection and transmission coefficients of the cell-pair between IN-cell and OUT-cell at the E value (or the corresponding wavenumber k) were deduced, respectively.\n\n### Searching for optimal gamma\n\nTo determine the appropriate $\\gamma$ of the above energy function, we preliminarily calculated the transmission coefficient for all cell-pairs between the 469 cells under all four conditions of $\\gamma$, and compared the average transmission coefficient graph as a function of the E value $\u27e8T_{ij}(E)\u27e9_{Allijcell\u2212pairs}$ (Appendix 1\u2014figure 1). Where four values of 1, 2.5, 5, and 10 were attempted for $\\gamma$, and equally spaced a hundred values were used for the wavenumber k in the range of [$0,\\pi/a$]. According to the above energy function, the minimum/maximum range of the E value differed as [$\u22122\\gamma,2\\gamma$], and as $\\gamma$ was larger, the points of the $T(E)$ graph were placed sparsely on the X-axis of the E value. In each of the $T(E)$ graphs for these four conditions of $\\gamma$, similarly high $T(E)$ values occurred in the vicinity of $E=0,\\pm1.4$. Based on this preliminarily estimation, we confirmed that the occurrence of high $T(E)$ values appeared as a function of the E value regardless of $\\gamma$. Therefore, we considered $\\gamma$ as just determining the minimum/maximum range of the E value.\n\nThe appropriate $\\gamma$ we wanted in this study was large enough to provide a wide E value range to check the signal mobility edge in the $T(E)$ graph, and the appropriate $\\gamma$ had to be small so that the points in the $T(E)$ graph did not become too sparse. It was the condition of $\\gamma=5$ that satisfied this demand out of the four conditions of $\\gamma$. Because the condition of $\\gamma=2.5$ was not sufficient to confirm the signal mobility edge, and the condition of $\\gamma=10$ had too sparse points along the X-axis.\n\n### Error report on our calculation for the transmission coefficient\n\nIn principle, the sum of transmission coefficient $T_{ij}(E)$ and reflection coefficient $R_{ij}(E)$ of any cell-pair at any E value always had to satisfy 1 because our circuit model did not consider spontaneous attenuation of the wave signal. However, in the calculating program we wrote and used for this study, the error occurred with the sum of the two coefficients exceeding 1 (by the tolerance was 10\u20135) for a total of 5213 cell-pairs in three specific E values (45 cell-pairs at $E=-1.000$, 3836 cell-pairs at $E=-0.375$, and 1332 cell-pairs at $E=1.000$). We performed the calculations on a total of 109,746 cell-pairs for a total of 801 E values, so these errors correspond to 0.006% of the total calculation results. To eliminate the effect of these errors in this study, we post-corrected the two coefficients of the 5213 cell-pairs in the three specific E values in which the error occurred to $T_{ij}(E)=0,R_{ij}(E)=1$.\n\n### Calculation for effective conductance\n\nAn electrical resistor network model was constructed that mimics C. elegans\u2019 electrical synapse network, with the 469 cells replaced with electrical conducting nodes and the 1433 electrical synapses replaced with electrical resistors connecting these nodes. The effective resistance and its reciprocal, the effective conductance, when a direct current power source outside the electrical resistor network model contacted a cell by its positive pole, and another cell by its negative pole, respectively, were calculated (Klein and Randi\u0107, 1993). The effective conductance shows how well electric current without interference flows between the two cells contacted to the external power source.\n\nWe expressed the electric voltage at node i as $\u03bd_{i}$, the electric current flowing from node i to node j as $\\mu_{ij}$, the resistance of the electrical resistor between node i and node j as $\u03c7_{ij}$, the conductance of that as $\\omega_{ij}(=\u03c7_{ij}^{\u22121})$. The anatomical gap junction weights ($g_{ij}$) were used as the conductance value of the electrical resistors in the network, $\\omega_{ij}=g_{ij}$, with arbitrary units.\n\nBy Ohm\u2019s law, each electrical resistor in the network satisfies the following equation,\n\n$$\n\\mu_{ij}=\u03c7_{ij}^{-1}(\u03bd_{i}-\u03bd_{j})=\\omega_{ij}(\u03bd_{i}-\u03bd_{j}).\n$$\n\nThe sum of the electric currents entering each node by Kirchhoff\u2019s current law satisfied the equation below,\n\n$$\n\\sumj\\neqi\\mu_{ij}={I,ati=(+)\u2212I,ati=(\u2212)0,otherwise,\n$$\n\nwhere $(+)$ and $(\u2212)$ meant a node in which the positive and negative poles of the external power source were in contact, respectively, and the capital letter I was the total electric current supplied by the external power source. When Ohm\u2019s law above was substituted on the left-hand of this equation, it was expressed as $\u03bd_{i}\\sumj\\neqi\\omega_{ij}-\\sumj\\neqi\\omega_{ij}\u03bd_{j}$, and then the equation was able to express in matrix and vector as follows:\n\n$$\nL^{\\omega}\u03bd\u2192=I(e_{(+)}\u2192\u2212e_{(\u2212)}\u2192),\n$$\n\nwhere $L^{\\omega}$ was the Laplacian matrix of the electrical resistors\u2019 conductance matrix ($\\omega$), defined as $L_{ij}^{\\omega}=\\delta_{ij}\\sum_{l}\\omega_{il}-\\omega_{ij}$, $\u03bd\u2192$ was a column-vector with an electric voltage at all nodes as a component, and $e_{(+)}\u2192$ $(e_{(\u2212)}\u2192)$ was a unit column-vector of the identical dimension as $\u03bd\u2192$, with only the component of the $(+)$ node ($(\u2212)$ node) having a value of 1 and all other components having a value of 0. By applying the pseudo-inverse matrix of the Laplacian matrix ($L^{\\omega+}$) on both sides of the equation, we obtained a particular solution as $\u03bd\u2192=IL^{\\omega+}e_{(+)}\u2192-e_{(-)}\u2192$.\n\nThe effective resistance applied between the positive and negative poles of the external power source was defined by Ohm\u2019s law of the electric voltage difference between the $(+)$ and $(\u2212)$ nodes and the total electric current, as follows:\n\n$$\nR^{eff}=I^{-1}\u03bd_{+}-\u03bd_{-}=I^{-1}e_{+}\u2192-e_{-}\u2192^{T}\u03bd\u2192.\n$$\n\nSubstituting here the particular solution of $\u03bd\u2192$ obtained above was as follows:\n\n$$\nR^{eff}=e_{+}\u2192-e_{-}\u2192^{T}L^{\\omega+}e_{(+)}\u2192-e_{(-)}\u2192.\n$$\n\nAs a result, we were able to obtain the effective resistance for any one cell-pair by calculating the pseudo-inverse matrix of the Laplacian matrix ($L^{\\omega+}$) from the electrical resistors\u2019 conductance matrix $(\\omega)$. The effective conductance was defined as the reciprocal of the effective resistance, $G^{eff}=(R^{eff})^{-1}$.\n",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "781ffb9f-ddc6-4602-924e-bc89ed6db17e",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Audrey Sederberg, https://ror.org/01zkghx44 Georgia Institute of Technology United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.99904.3.sa0](https://doi.org/10.7554/eLife.99904.3.sa0)\n\nThis study presents numerical results on a framework for understanding the dynamics of subthreshold waves in a network of electrical synapses modeled on the connectome data of the C elegans nematode. The strength of the evidence presented in favor of interference effects being a major component in subthreshold wave dynamics is inadequate and the approach is flawed. Substantial methodological issues are present, including altering the original network structure of the connectome without a clear justification and providing little motivation for the choice of numerical parameters values that were used.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99904.3.sa1](https://doi.org/10.7554/eLife.99904.3.sa1)\n\nSummary:\n\nThis work investigates numerically the propagation of subthreshold waves in a model neural network that is derived from the C. elegans connectome. Using a scattering formalism and tight-binding description of the network -- approximations which are commonplace in condensed matter physics -- this work attempts at showing the relevance of interference phenomena, such as wavenumber-dependent propagation, for the dynamics of subthreshold waves propagating in a network of electrical synapses.\n\nStrengths:\n\nThe primary strength of the work is in trying to use theoretical tools from a far-away corner of fundamental physics to shed light on the properties of a real neural system.\n\nWeaknesses:\n\nThe authors provide a good introduction and motivation for studying the propagation of subthreshold oscillations in the inferior olive nuclei. However, they chose to use the C elegans connectome for their study, and the implications of this work for C elegans neuroscience remain unclear by the end of the preprint. The authors should also give more evidence for the claim that their study may give a mechanism for synchronized rhythmic activity in the mammalian inferior olive nucleus, or refrain from making this conclusion. In the same vein, since the work emphasizes the dependence on the wavenumber for the propagation of subthreshold oscillations, they should make an attempt at estimating the wavenumber of subthreshold oscillations in C elegans if they were to exist and be observed. Next, the presence of two \"mobility edges\" in the transmission coefficient calculated in this work is unmistakably due to the discrete nature of the system, coming from the tight-binding approximation, and it is unclear to me if this approximation is justified in the current system. Similarly, it is possible that the wavenumber-dependent transmission observed depends strongly on the addition of a large number of virtual nodes (VNs) in the network, which the authors give little to no motivation for. As these nodes are not present in the C elegans connectome, the authors should explain the motivation for their inclusion in the model and should discuss their consequences on the transmission properties of the network. As it stands, I think the work would only have a very limited impact on the understanding of subthreshold oscillations in the rat or in C elegans. Indeed, the preprint falls short of relating its numerical results to any phenomena which could be observed in the lab.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.99904.3.sa2](https://doi.org/10.7554/eLife.99904.3.sa2)\n\nThis manuscript addresses an interesting and important question: the basic mechanisms underlying subthreshold intrinsic oscillations in the inferior olive. Instead of a direct investigation of the questions, the authors decide to study subthreshold oscillations in the C-elegans, where the connectivity pattern is known but does not exhibit sub-threshold oscillations. Furthermore, instead of the common description of gap-junction coupling by resistors, the authors decide to represent the system as a tight-binding Anderson Hamiltonian.\n\nWeaknesses:\n\nThe authors study an architecture of the C-elegans instead of that of the inferior olive of mammals because the architecture of C-elegans is known.\n\nNo subthreshold oscillations were identified in the C-elegans.\n\nInstead of representing electrical coupling via resistors that connect neurons, the authors use a quantum formalism and introduce the tight-binding Anderson Hamiltonian. Why?\n\nEqually spaced two virtual nodes were added between cells connected by a gap junction. Why?\n\nComments on revised version:\n\nLast time, I recommended that the authors should represent electrical coupling via resistors that connect neurons instead of via the quantum formalism. The authors have not tested this direction.\n",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "ebbc3abe-97ca-4b43-897f-3a947a236da3",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C1",
+      "claim": "Electrically coupled neural networks like in mammalian inferior olive nucleus generate synchronized rhythmic activity by the subthreshold sinusoidal-like oscillations of the membrane voltage.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent experimental studies showed that electrically coupled neural networks like in mammalian inferior olive nucleus generate synchronized rhythmic activity by the subthreshold sinusoidal-like oscillations of the membrane voltage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is attributed to recent experimental studies, indicating citation-based support.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "41798af5-762f-418f-8186-91ee17c8f950",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C2",
+      "claim": "The structural anatomical connectome of Caenorhabditis elegans was completely known recently.",
+      "claim_type": "EXPLICIT",
+      "source": "Inspired by these necessities of developing a theoretical and computational model to this end and, however, in the absence of connectome information for the inferior olive nucleus, here we investigated interference phenomena of the subthreshold oscillations in the reference system Caenorhabditis elegans for which the structural anatomical connectome was completely known recently.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim references the recent completion of C. elegans connectome information, supported by citation to Cook et al., 2019 elsewhere in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "23bee7fe-f3b2-4129-b5bf-5af920706f11",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C3",
+      "claim": "The transmission of all cell-pairs disappeared beyond a threshold wavenumber.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, we unraveled that (1) the transmission of all cell-pairs disappeared beyond a threshold wavenumber",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational model presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "7885b7ac-1686-4484-a566-cb862d30e926",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C4",
+      "claim": "Long distance and regular patterned transmission existed in the body-wall muscles part of the model network.",
+      "claim_type": "EXPLICIT",
+      "source": "(2) long distance and regular patterned transmission existed in the body-wall muscles part of the model network",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "8e9a5d3f-90f7-4c13-9eeb-8a922dd0a8aa",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C5",
+      "claim": "Major hub cell-pairs of the transmission were identified for many wavenumber conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "(3) major hub cell-pairs of the transmission were identified for many wavenumber conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the computational model analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "dc8c6f66-d6ab-4993-adca-6061f0f5424d",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C6",
+      "claim": "Electrical synapses change the membrane potential of neurons through ion current flowing through the gap junction between neurons.",
+      "claim_type": "EXPLICIT",
+      "source": "The ion current flowing through the gap junction between neurons changes the membrane potential of those neurons, which is called signal transmission by electrical synapses (Carew and Kandel, 1976).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Carew and Kandel, 1976.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "e654ad16-4155-4be4-ae92-35762619d1a9",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C7",
+      "claim": "Electrical synapses have characteristics such as simple structure, fast signal transmission, bidirectional communication (in most cases), and a wide operation range for voltage including the subthreshold region.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrical synapses have characteristics such as simple structure, fast signal transmission, bidirectional communication (in most cases), and a wide operation range for voltage including the subthreshold region (Bennett, 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Bennett, 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "6e6da639-9356-4a59-9c04-050978361f23",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C8",
+      "claim": "Electrical synapses play various roles, such as excitation or inhibition of neurons, synchronization or desynchronization of neural activity, promotion or attenuation of rhythms, and improvement of signal-to-noise ratio.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on this, it has been reported that electrical synapses play various roles, such as excitation or inhibition of neurons, synchronization or desynchronization of neural activity, promotion or attenuation of rhythms, and improvement of signal-to-noise ratio (Connors, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Connors, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "e55690b5-9325-477c-81c8-94f18e418bb5",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C9",
+      "claim": "Spontaneous and robust subthreshold membrane potential oscillations were observed in the inferior olivary cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Spontaneous and robust subthreshold membrane potential oscillations were observed in the inferior olivary cells (Benardo and Foster, 1986; Chorev et al., 2007; Devor and Yarom, 2002; Lampl and Yarom, 1997; Llin\u00e1s and Yarom, 1981).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "21aa822d-0d4b-40ba-be8e-f08882c49e55",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C10",
+      "claim": "The inferior olivary cells are intra-connected only by electrical synapses.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferior olivary cells are intra-connected only by electrical synapses, and it was reported that the presence of electrical synapses is largely involved in the synchronization of subthreshold oscillations (De Zeeuw et al., 2003; Leznik and Llin\u00e1s, 2005; Leznik et al., 2002; Llin\u00e1s, 2013; Long et al., 2002; Turecek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "9177ff93-d556-46b1-9352-577be6536220",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C11",
+      "claim": "The presence of electrical synapses is largely involved in the synchronization of subthreshold oscillations in inferior olivary cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The inferior olivary cells are intra-connected only by electrical synapses, and it was reported that the presence of electrical synapses is largely involved in the synchronization of subthreshold oscillations (De Zeeuw et al., 2003; Leznik and Llin\u00e1s, 2005; Leznik et al., 2002; Llin\u00e1s, 2013; Long et al., 2002; Turecek et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "84518d08-8c59-4cdc-9a5c-077f98ac638c",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C12",
+      "claim": "Information on the indexing of all individual neurons, muscles, and organ cells present in the nematode Caenorhabditis elegans and the entire connectivity between those cells by chemical and electrical synapses was recently updated.",
+      "claim_type": "EXPLICIT",
+      "source": "In the field of connectome, information on the indexing of all individual neurons, muscles, and organ cells present in the nematode Caenorhabditis elegans and the entire connectivity between those cells by chemical and electrical synapses was recently updated (Cook et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Cook et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "ed121a1f-ede4-4c15-8c15-65fc2199504b",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C13",
+      "claim": "The C. elegans connectome data identifies connectivity weights proportional to the structural size of each synapse, with 1433 electrical synapses present among a total of 469 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "This available connectome data of C. elegans identifies connectivity weights proportional to the structural size of each synapse, with 1433 electrical synapses present among a total of 469 cells, including neurons, muscles, pharynx, and other organ cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on the connectome data from Cook et al., 2019.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "1cf82b76-32ca-4555-8371-d0757d0f34b1",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C14",
+      "claim": "During the gentle nose touch response in C. elegans, nose mechanoreceptor neurons connected to electrical synapses simultaneously increased in activity, thereby serving as a coincidence detector.",
+      "claim_type": "EXPLICIT",
+      "source": "During the gentle nose touch response, nose mechanoreceptor neurons connected to electrical synapses simultaneously increased in activity, thereby serving as a coincidence detector (Chatzigeorgiou and Schafer, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Chatzigeorgiou and Schafer, 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "acd63c31-2249-4b8d-bccd-1a4168e373a7",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C15",
+      "claim": "A pair of GABAergic motor neurons controlling the bowel movement program repeated every 50 s in C. elegans used synchronized activity through electrical synapses at their axon terminal.",
+      "claim_type": "EXPLICIT",
+      "source": "And a pair of GABAergic motor neurons controlling the bowel movement program repeated every 50 s used synchronized activity through electrical synapses at their axon terminal (Choi et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Choi et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "3d0e78d1-8ad7-4d07-b8cd-4f6aa92682a7",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C16",
+      "claim": "Direct observation or indirect evidence of spontaneous subthreshold oscillations has NOT been confirmed in C. elegans.",
+      "claim_type": "EXPLICIT",
+      "source": "However, direct observation or indirect evidence of spontaneous subthreshold oscillations has NOT been confirmed in C. elegans.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of evidence in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "6ebcf03f-9ce1-4037-ab9d-3cfb94f30cfc",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C17",
+      "claim": "Subthreshold oscillations have wave properties as fluctuations observed in membrane potential measurements and experience interference when propagated in the neural tissue space.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, it is experimentally confirmed that subthreshold oscillations have wave properties as fluctuations observed in membrane potential measurements and experience interference when propagated in the neural tissue space (Chiang and Durand, 2023; Gupta et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to experimental studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "b4c0e3d9-8051-4f95-b9f6-be7f46950ffe",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C18",
+      "claim": "The Anderson localization phenomenon is a general wave phenomenon due to the wave interference between multiple scattering paths.",
+      "claim_type": "EXPLICIT",
+      "source": "In the field of physics, the Anderson localization phenomenon has been well known, and it is a general wave phenomenon due to the wave interference between multiple scattering paths.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in physics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "479a6830-c9c6-4c70-b740-67d1a1014e14",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C19",
+      "claim": "Depending on the strength of the scattering of waves, the result of wave interference could be constructive or destructive, namely, waves could transmit or localize through the media, correspondingly.",
+      "claim_type": "EXPLICIT",
+      "source": "Depending on the strength of the scattering of waves, the result of wave interference could be constructive or destructive, namely, waves could transmit or localize through the media, correspondingly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about wave interference.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "a33b66a7-d527-4484-9068-c69d1138ae76",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C20",
+      "claim": "The theoretical and numerical method for describing the Anderson localization problem usually employed the tight-binding Anderson Hamiltonian.",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical and numerical method for describing the so-called Anderson localization problem usually employed the tight-binding Anderson Hamiltonian.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge in physics, supported by citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "706bff58-9aa3-4107-a573-c86d0f118407",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C24",
+      "claim": "Most of the strong transmissions were found in the cell-pairs of intra-body-wall muscles at E=0.225.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we confirmed that not all cell-pairs transmit the wave signals with even transmission coefficients. Most of the strong transmissions were found in the cell-pairs of intra-body-wall muscles, and a small number of cells belonging to sensory neurons, motor neurons, and other organ cells also showed strong transmission in cell-pairs between them or to body-wall muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study, referring to Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "e766c7d0-c056-41bb-8374-4fcc19f0de71",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C25",
+      "claim": "All cells were isolated separately without exchanging the wave signals with each other at E=5.650.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, all cells were isolated separately without exchanging the wave signals with each other, and the entire circuit stop transmitting wave signals of this wavenumber.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study, referring to Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "4ca3bacc-7a6e-4327-b326-41f79e59b5ac",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C27",
+      "claim": "The region of the cell-pairs with strong transmission changed depending on the value of E (or wavenumber), which was named 'Wavenumber-Dependent Transmission Map (WDTM) of subthreshold waves on the electrical synapse network model'.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected above, the region of the cell-pairs with strong transmission changed depending on the value of E (or wavenumber), which we named 'Wavenumber-Dependent Transmission Map (WDTM) of subthreshold waves on the electrical synapse network model'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "e0b024d7-dc45-4d64-a003-9aab7d893f29",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C29",
+      "claim": "In the E value range of [1.275, 1.575], only the cell-pairs of intra-strand were found in the WDTMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Following this classification, the cell-pairs of both intra- and inter-strand were found in the WDTMs of the E value range of [0, 0.350] (Figure 3A, Figure 3\u2014figure supplements 1 and 2A, B), whereas only the cell-pairs of intra-strand were found in the WDTMs in the E value range of [1.275, 1.575] (Figure 3C and Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "82520c3f-15f4-4ccf-8641-25fe8a93babe",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C30",
+      "claim": "Cell-pairs with regular patterned transmission of the body-wall muscles were observed in the WDTMs of the E value range of [1.275, 1.575].",
+      "claim_type": "EXPLICIT",
+      "source": "In the WDTMs of the E value range of [1.275, 1.575], cell-pairs with regular patterned transmission of the body-wall muscles were observed through the network diagram (Figure 3\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "47c371fd-f025-4dd5-a799-b137deaca3f8",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C32",
+      "claim": "The head mesodermal cell (hmc) seemed to play an important role in building a bridge between inter-strand cell-pairs of the body-wall muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when the cell-pairs of inter-strand of the body-wall muscles appeared in the WDTMs as shown in Figure 3A, B, the head mesodermal cell (hmc) seemed to play an important role in building a bridge between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "469cfb30-8e5e-4104-ad26-380d6a4aaadb",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C33",
+      "claim": "hmc was strongly connected near the neck of the body-wall muscles (seventh and eighth muscles) for all four strands.",
+      "claim_type": "EXPLICIT",
+      "source": "This would be recognized from the network diagram itself of black edges without WDTM, and hmc was strongly connected near the neck of the body-wall muscles (seventh and eighth muscles) for all four strands.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the network diagram analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "7a8596e4-991b-4fd7-970f-2bc63594425f",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C35",
+      "claim": "Most of the cell-pairs in Appendix 1\u2014table 5 showed the kinds of short distances 1\u20133, which consisted of various cell types.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the cell-pairs in Appendix 1\u2014table 5 showed the kinds of short distances 1\u20133, which consisted of various cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "e6d217ab-4fad-4f00-9471-80d9c042f484",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C36",
+      "claim": "The cell-pairs with long distances in Appendix 1\u2014table 5 ranging from 4 to 17 were mainly pairs between hmc and body-wall muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, the cell-pairs with long distances in Appendix 1\u2014table 5 ranging from 4 to 17 were mainly pairs between hmc and body-wall muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "c09ebda2-9802-4c38-bed2-568758f934de",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C37",
+      "claim": "The strong transmission between hmc and the tail muscle, which corresponds to the longest distance, passes through the intra-strand connections from the neck to the tail of body-wall muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "The strong transmission between hmc and the tail muscle, which corresponds to the longest distance, passes through the intra-strand connections from the neck to the tail of body-wall muscles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "bda5a668-23c8-48d3-8e7a-93799d153eb1",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C38",
+      "claim": "One inter neuron (AVBR) and two motor neurons (AS11 and VD04) formed a cell-pair with the body-wall muscles with strong transmission and long distance.",
+      "claim_type": "EXPLICIT",
+      "source": "In there, one inter neuron (AVBR) and two motor neurons (AS11 and VD04) formed a cell-pair with the body-wall muscles, respectively, and four sensory neurons (CEPDL, IL1R, IL1DR, and OLQDL) formed cell-pairs between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "b4b0f04b-6971-455d-8397-5bc9d9173d64",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C39",
+      "claim": "Four sensory neurons (CEPDL, IL1R, IL1DR, and OLQDL) formed cell-pairs between them with strong transmission and long distance.",
+      "claim_type": "EXPLICIT",
+      "source": "In there, one inter neuron (AVBR) and two motor neurons (AS11 and VD04) formed a cell-pair with the body-wall muscles, respectively, and four sensory neurons (CEPDL, IL1R, IL1DR, and OLQDL) formed cell-pairs between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "8afc85d7-1683-423f-9c4a-69811cc1040b",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C40",
+      "claim": "A cell-pair was declared as a major hub cell-pair if the average appearance rate of a cell-pair was 0.1 or higher.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we declared a cell-pair as a major hub cell-pair if the average appearance rate of a cell-pair was \ud835\udc65 < 0 or higher.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the study. Note: There appears to be a typo in the manuscript ('\ud835\udc65 < 0' should likely be '0.1').",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "df2cb827-877e-4fcf-a16e-3ca7ce3ea7ee",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C41",
+      "claim": "The major hub cell-pairs were the cell-pairs of intra-strand of the body-wall muscles.",
+      "claim_type": "EXPLICIT",
+      "source": "The major hub cell-pairs were the cell-pairs of intra-strand of the body-wall muscles (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "89214c6e-d920-4e1f-835f-341b50594b20",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C42",
+      "claim": "The edges of each strand of the body-wall muscles from the neck (seventh or eighth muscle) to the tail (twenty-third or twenty-fourth muscle) were simply connected in a line.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in the network diagram, the edges of each strand of the body-wall muscles from the neck (seventh or eighth muscle) to the tail (twenty-third or twenty-fourth muscle) were simply connected in a line, unlike the messy edges among most neurons in the network (Figure 3).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the network diagram analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "4d8e64fd-5c61-46d9-98e6-d051b29ea983",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C43",
+      "claim": "The complexity of connections among most neurons increase with the number of transmissible paths of wave propagation, and the sum of phase changes coming from various path-length differences causes the deconstructive interference.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the complexity of connections among most neurons increase with the number of transmissible paths of wave propagation, and the sum of phase changes coming from various path-length differences causes the deconstructive interference.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general principle applied to interpret the findings.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "bf8c42eb-6dd2-46c4-bc9f-7621f4e5f175",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C44",
+      "claim": "The simple (or regular) connections in each strand of the body-wall muscles from the neck to the tail reduced the number of transmissible paths of wave signals, which suppressed deconstructive interference and thus resulted in the strong transmission for various wavenumbers.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the simple (or regular) connections in each strand of the body-wall muscles from the neck to the tail reduced the number of transmissible paths of wave signals, which suppressed deconstructive interference and thus resulted in the strong transmission for various wavenumbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "89577dc7-5363-45b0-a13c-e84902af6787",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C45",
+      "claim": "The cell-pairs between hmc and the neck of the ventral-left strand of the body-wall muscles were identified as major hub cell-pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the cell-pairs between hmc and the neck of the ventral-left strand of the body-wall muscles were also identified as major hub cell-pair (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "8cd5e675-641e-4704-b86b-e4a251d85f5c",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C46",
+      "claim": "The edges between hmc and the neck muscles were very strong compared to other edges.",
+      "claim_type": "EXPLICIT",
+      "source": "As seen in the network diagram, since the edges between hmc and the neck muscles were very strong compared to other edges (Figure 3), the relative contribution of wave signals coming from other cells could be almost ignored, and thus resulted in the strong transmission for various wavenumbers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the network diagram analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "8bf21de7-08a6-4a7c-90c8-572487740299",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C47",
+      "claim": "The cell-pairs among two sensory neurons (PVDL and PVDR) and three other organ cells (CANL, CANR, exc_cell) were identified as major hub cell-pairs.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell-pairs among two sensory neurons (PVDL and PVDR) and three other organ cells (CANL, CANR, exc_cell) were also identified as major hub cell-pairs (Figure 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "3693ed67-80c8-414e-81dc-a6383937d2d7",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C49",
+      "claim": "The strong edge shown on the network diagram was not a sufficient condition to implicate a major hub cell-pair.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the strong edge shown on the network diagram was not a sufficient condition to implicate a major hub cell-pair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "714af880-a940-4f08-90a3-d9a8cc90ca47",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C50",
+      "claim": "Several inter neurons and other organ cells showed high effective conductance, while pharynx, body-wall muscles from the neck to the tail, and sex-specific muscles showed very low effective conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "Several inter neurons and other organ cells showed high effective conductance, while pharynx, body-wall muscles from the neck to the tail, and sex-specific muscles showed very low effective conductance (Figure 5B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the effective conductance analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "ddcace64-9f75-4f55-9317-fe999ac79338",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C51",
+      "claim": "Inter neurons have many complex connections among them, which act as parallel connections of multiple electrical resistors, resulting in lower effective resistance (or higher effective conductance).",
+      "claim_type": "EXPLICIT",
+      "source": "Since inter neurons have many complex connections among them, many electrical current paths exist between the two inter neurons, which act as parallel connections of multiple electrical resistors. This results in lower effective resistance (or higher effective conductance).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the effective conductance analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "aed1770b-af69-4edb-a6bf-a5ac7774095e",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C52",
+      "claim": "For a situation with considering the interference, many transmissible forward and backward paths of the signal propagation rather caused the deconstructive interference, preventing the transmission of the signal.",
+      "claim_type": "EXPLICIT",
+      "source": "However, for a situation with considering the interference, many transmissible forward and backward paths of the signal propagation rather caused the deconstructive interference, preventing the transmission of the signal.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "e6310934-7d27-4646-a271-c9afb5b8ede4",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C53",
+      "claim": "Wave signals were effectively delivered only within a small number of very strongly connected cell groups (PVDL/R, CANL/R, exc_cell, and hmc) or within a large number of very regularly connected cell groups (body-wall muscle strands from the neck to the tail).",
+      "claim_type": "EXPLICIT",
+      "source": "Wave signals were effectively delivered only within a small number of very strongly connected cell groups (PVDL/R, CANL/R, exc_cell, and hmc) or within a large number of very regularly connected cell groups (body-wall muscle strands from the neck to the tail).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the computational analysis presented in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "4fd45675-f7be-479f-85ad-598e3f540693",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C54",
+      "claim": "No synchronized rhythmic activity induced by subthreshold membrane potential oscillations has been reported for C. elegans so far.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we used the structural anatomical information from C. elegans' electrical synapse network, but no synchronized rhythmic activity induced by subthreshold membrane potential oscillations has been reported for C. elegans so far.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the absence of evidence in the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "0d6f79dc-8836-42db-a016-ff77bad71b17",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C55",
+      "claim": "There might be an electrical synapse network in the mammalian inferior olive nucleus that connect cells very strongly or very regularly.",
+      "claim_type": "EXPLICIT",
+      "source": "As to the synchronized rhythmic activation observed like in the mammalian inferior olive nucleus, we think that there might be an electrical synapse network in there that connect cells very strongly or very regularly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "2e731009-1568-4d45-96ae-9c42980a8d65",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C56",
+      "claim": "The constructive interference of subthreshold membrane potential waves with a specific wavenumber may generate the synchronized rhythmic activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The plausible possibility according to our model study is that the constructive interference of subthreshold membrane potential waves with a specific wavenumber may generate the synchronized rhythmic activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative inference based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "eeba2877-2b77-4b5c-b2e6-5e18eb7ead15",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C58",
+      "claim": "The weights were proportional to the spatial size of the corresponding gap junction.",
+      "claim_type": "EXPLICIT",
+      "source": "The weights were proportional to the spatial size of the corresponding gap junction, which we hypothesized that the larger the weight, the stronger the connection between the cells and thus the better transmit the wave signal to the connected cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the connectome data and a hypothesis made by the authors.",
+      "evidence_type": "[\"DATA\", \"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "7d15227b-6c66-402d-a66c-7f61bc6adcc2",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C59",
+      "claim": "Two virtual nodes (VNs) were inserted between each pair of cells connected by a gap junction in the circuit model.",
+      "claim_type": "EXPLICIT",
+      "source": "Each gap junction connected to a cell-pair was treated as an edge connecting two nodes in our circuit, and we inserted two virtual nodes (VNs) between those two nodes to be connected sequentially through VNs (Cell-VN-VN-Cell).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in constructing the circuit model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "7458705d-74ef-49f7-9d01-4e93126f509b",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C60",
+      "claim": "All edges inside the circuit were set to have the identical length a.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, all edges inside our circuit were set to have the identical length a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in constructing the circuit model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "3022179a-37ef-4ab5-b74c-d53053cfe28b",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C63",
+      "claim": "In the circuit model, the weight of the edge meant the transmission coefficient of the signal transmitted through this edge.",
+      "claim_type": "EXPLICIT",
+      "source": "In our circuit model, the weight of the edge meant the transmission coefficient of the signal transmitted through this edge, so if the weight was 1 corresponded to complete transmission, and 0 corresponded to complete reflection (or unavailable edge), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in constructing the circuit model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "c2c78c30-1da6-4db5-aa31-535e5fd99d8f",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C64",
+      "claim": "Within the circuit, the characteristic of the signal being spontaneously attenuated, and disappearing was excluded.",
+      "claim_type": "EXPLICIT",
+      "source": "And within our circuit, the characteristic of the signal being spontaneously attenuated, and disappearing was excluded.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in constructing the circuit model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "fc90ecd7-cd36-4928-b9be-8fc86f84a67b",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C65",
+      "claim": "When a signal incoming from the outside to a node in the circuit was reflected to the outside at the same node and simultaneously transmitted to the outside at another node, the sum of the transmission and reflection coefficients to the outside always remained at 1 without loss.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, when a signal incoming from the outside to a node in our circuit was reflected to the outside at the same node and simultaneously transmitted to the outside at another node, the sum of the transmission and reflection coefficients to the outside always remained at 1 without loss.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in constructing the circuit model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "5941a167-f112-4bca-bf3c-73ade63677e7",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C67",
+      "claim": "The newly constructed tight-binding Anderson Hamiltonian for the circuit was represented as a matrix of 3335 by 3335.",
+      "claim_type": "EXPLICIT",
+      "source": "Since the total number of the cells was 469, and we inserted two VNs for every 1433 electrical synapses, the newly constructed tight-binding Anderson Hamiltonian for our circuit was represented as a matrix of 3335 by 3335.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology used in the computational model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "405fef41-aa8d-4969-b8c5-52e5aa377ae4",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "claim_id": "C70",
+      "claim": "The errors in the calculation correspond to 0.006% of the total calculation results.",
+      "claim_type": "EXPLICIT",
+      "source": "We performed the calculations on a total of 109,746 cell-pairs for a total of 801 E values, so these errors correspond to 0.006% of the total calculation results.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes errors in the computational analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the biological and physical context for the study by reviewing prior work on electrical synapses, subthreshold oscillations in inferior olive neurons, the C. elegans connectome, and Anderson localization physics. These background claims justify using C. elegans as a model system to study wave interference on electrical synapse networks.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C20 are well-supported by appropriate citations to established literature in neuroscience and physics. The authors correctly cite the C. elegans connectome (Cook et al., 2019), properties of electrical synapses, and Anderson localization theory. The absence of subthreshold oscillations in C. elegans (C16) is appropriately noted as a limitation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "b141ef38-6bf7-4eca-88d2-d7f014a33b5b",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors constructed a circuit model of the C. elegans electrical synapse network by treating cells as nodes, inserting two virtual nodes between each gap junction, normalizing anatomical weights to transmission coefficients (0-1), and representing the system as a 3335\u00d73335 tight-binding Anderson Hamiltonian without signal attenuation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C67 describe a methodologically sound circuit construction. The normalization scheme (C58: w_ij = min{1, g_ij/40}) is clearly defined, and the matrix dimensions (C67) are mathematically consistent with 469 cells + 2\u00d71433 virtual nodes. However, the biological justification for the normalization threshold (40) and the exclusion of signal attenuation (C64) are not provided, which may limit biological realism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "3045353a-1779-466d-999b-66c5ba942085",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The computational model reveals that transmission coefficients between cell-pairs depend on wavenumber (E value), with all transmission disappearing beyond a threshold (E=\u00b15.650), strong transmission concentrated in body-wall muscles at E=0.225, and complete isolation at the mobility edge. This wavenumber-dependent pattern is termed the Wavenumber-Dependent Transmission Map (WDTM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C24, C25, C27 are supported by computational data shown in Figure 2. The identification of a signal mobility edge (C3) at E=\u00b15.650 using a 10^-7 threshold is reasonable, though the threshold choice is somewhat arbitrary. The WDTM concept (C27) is a novel contribution clearly demonstrated by the heatmaps showing different transmission patterns at different E values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "8fd5a487-60e1-4e78-9b69-c7a4c942140f",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the E value range [1.275, 1.575], only intra-strand body-wall muscle cell-pairs showed strong transmission, exhibiting regular patterned transmission with distances that are multiples of specific integers (3, 2, 7, or 4 depending on E value).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29, C30, C4 are supported by Figure 3 and supplementary figures showing WDTMs at different E values. The regular patterns with specific distance multiples are clearly visible in the network diagrams. This represents a key finding about long-distance, structured transmission in body-wall muscles, though the biological significance of these specific patterns is not explained.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "7ce1f62d-8cf5-49be-98d6-49ccddbf4b23",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The head mesodermal cell (hmc) plays a critical bridging role in the network, being strongly connected to neck body-wall muscles (7th-8th) across all four strands, enabling inter-strand transmission and long-distance signal propagation. Cell-pairs between hmc and ventral-left neck muscles were identified as major hub cell-pairs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32, C33, C36, C37, C45, C46 are supported by network diagram analysis and distance calculations in Appendix 1-table 5. The strong connectivity of hmc (C33, C46) is evident from the network structure, and its role in bridging inter-strand connections (C32) is a reasonable inference from the WDTM patterns. The identification as a major hub (C45) is supported by Figure 4.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "97e83b1d-1e5f-4c41-94cb-164487af04d8",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Among non-body-wall muscle cell-pairs with strong transmission, most showed short distances (1-3), while specific neurons (AVBR interneuron, AS11 and VD04 motor neurons, and CEPDL, IL1R, IL1DR, OLQDL sensory neurons) formed long-distance cell-pairs with strong transmission.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C35, C38, C39 are supported by Appendix 1-table 5 data. The identification of specific neurons with long-distance transmission is a concrete finding, though the functional significance of these particular neurons is not explored. The data clearly distinguish short-distance (most cell-pairs) from long-distance (specific neurons) transmission patterns.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Major hub cell-pairs (appearing in \u226510% of WDTMs) were predominantly intra-strand body-wall muscle pairs from neck to tail. The simple linear connectivity of these strands reduces multi-path interference compared to complex neuronal connections, enabling strong transmission across multiple wavenumbers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C44, C5 are supported by Figure 4 showing average appearance rates. Note: C40 contains a typo ('x<0' should be '\u22650.1'). The mechanistic explanation (C43-C44) linking simple connectivity to reduced destructive interference is physically sound and represents an important insight. However, the threshold of 0.1 for defining major hubs is arbitrary and not justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "056755f3-72ae-4dea-9900-34e90856fe3d",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Cell-pairs among sensory neurons PVDL/PVDR and organ cells CANL/CANR/exc_cell were identified as major hub cell-pairs, with CANL-CANR showing the highest appearance rate (7/31\u22480.23). Strong anatomical connectivity alone is not sufficient to predict major hub status.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47, C49 are supported by Figure 4 data. The identification of these specific cell-pairs as hubs is clear from the appearance rate analysis. The insight that strong edges don't guarantee hub status (C49) is important and demonstrates that interference effects, not just connectivity strength, determine transmission patterns. This distinguishes the wave-based model from simple connectivity analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "6911a052-ca59-4857-8431-4965f6b95703",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Comparing models with and without interference reveals that interneurons show high effective conductance (without interference) but poor wave transmission (with interference) due to destructive interference from multiple paths. Effective transmission occurs only in strongly connected small groups or regularly connected large groups (body-wall muscles).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C53 are supported by Figure 5 comparing effective conductance (no interference) versus transmission coefficients (with interference). This comparison is a key contribution showing that complex connectivity paradoxically reduces wave transmission. The mechanistic explanation (C51-C52) is physically sound. However, the effective conductance calculation assumes DC conditions, which may not fully capture the relevant comparison for oscillatory signals.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "29d87784-70b7-4f2e-8a82-05a6155f8a17",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors speculate that synchronized rhythmic activity in mammalian inferior olive nucleus might arise from strong or regular electrical synapse connectivity enabling constructive interference of subthreshold waves at specific wavenumbers, though no such activity has been observed in C. elegans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C54-C56 are explicitly speculative (C55-C56 use 'might' and 'may'). While C54 correctly notes the absence of subthreshold oscillations in C. elegans, the extrapolation to inferior olive (C55-C56) is not supported by data from this study. The model uses C. elegans connectivity, which differs substantially from mammalian systems. This speculation requires experimental validation and connectome data from inferior olive to be supported.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "129be254-a3dd-4934-9e83-1a4018b4ed38",
+      "content_id": "6b636626-d253-46d1-aba3-94bd69fde038",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Computational errors occurred in 0.006% of calculations (5,213 cell-pairs at three E values where T+R>1), which were post-corrected to T=0, R=1.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 transparently reports computational errors and their correction. The error rate is very low (0.006%), and the correction method (setting T=0, R=1) is conservative. However, the root cause of these errors is not explained, and it's unclear whether they indicate numerical instability at specific E values or implementation issues. This transparency is commendable but raises questions about numerical robustness.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "529febad-d451-4aca-ba30-82f15f59131d",
+      "content_id": "781ffb9f-ddc6-4602-924e-bc89ed6db17e",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors constructed a circuit model by inserting two virtual nodes (VNs) between each pair of cells connected by gap junctions, setting all edges to identical length, and representing the system as a tight-binding Anderson Hamiltonian (3335\u00d73335 matrix). This model excludes spontaneous signal attenuation and maintains energy conservation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Multiple reviewers fundamentally challenged the methodological approach. One reviewer stated the authors 'give little to no motivation' for adding virtual nodes and questioned 'it is possible that the wavenumber-dependent transmission observed depends strongly on the addition of a large number of virtual nodes.' Another reviewer explicitly asked 'Why?' regarding the use of quantum formalism instead of resistor-based representation, and in revised comments noted 'the authors have not tested this direction.' The editor summarized 'altering the original network structure of the connectome without a clear justification.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "4a04f650-30a5-4843-92e0-21b7af808c34",
+      "content_id": "781ffb9f-ddc6-4602-924e-bc89ed6db17e",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The model demonstrates wavenumber-dependent transmission where transmission coefficients vary across cell-pairs, with strong transmissions primarily in body-wall muscles at low E values (E=0.225), complete isolation at high E values (E=5.650), and a threshold wavenumber beyond which all transmission disappears. This creates a 'Wavenumber-Dependent Transmission Map (WDTM).'",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge the numerical results exist, they fundamentally question their validity and interpretation. One reviewer stated 'the strength of the evidence presented in favor of interference effects being a major component in subthreshold wave dynamics is inadequate.' Another noted 'the presence of two mobility edges in the transmission coefficient calculated in this work is unmistakably due to the discrete nature of the system, coming from the tight-binding approximation, and it is unclear to me if this approximation is justified.' The findings are treated as artifacts of questionable methodology rather than validated results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "e717a179-2923-4f77-a330-70165dbf54d8",
+      "content_id": "781ffb9f-ddc6-4602-924e-bc89ed6db17e",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The model identifies long-distance, regular patterned transmission in body-wall muscles, particularly in intra-strand connections from neck to tail. The head mesodermal cell (hmc) acts as a bridge between inter-strand muscle pairs. The simple linear connectivity of muscle strands reduces transmissible paths, suppressing destructive interference and enabling strong transmission across various wavenumbers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not directly validate these specific anatomical findings but express fundamental concerns about the model's biological relevance. One reviewer noted 'the implications of this work for C elegans neuroscience remain unclear' and 'the preprint falls short of relating its numerical results to any phenomena which could be observed in the lab.' The editor emphasized 'providing little motivation for the choice of numerical parameters values that were used.' The findings are computational observations whose biological significance remains unestablished.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "92663ab7-fbba-4cef-afb9-45cb22fa1555",
+      "content_id": "781ffb9f-ddc6-4602-924e-bc89ed6db17e",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Major hub cell-pairs were identified based on appearance rate \u22650.1 across wavenumber conditions, primarily consisting of intra-strand body-wall muscle pairs, hmc connections to ventral-left neck muscles, and specific sensory neurons (PVDL/PVDR) with organ cells (CANL/CANR/exc_cell). Strong anatomical edges were necessary but not sufficient for hub status.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers do not specifically address the hub cell-pair findings but question the overall framework's validity. One reviewer stated the work 'would only have a very limited impact on the understanding of subthreshold oscillations in the rat or in C elegans' and noted the authors 'should make an attempt at estimating the wavenumber of subthreshold oscillations in C elegans if they were to exist and be observed.' The hub identification is a computational result whose biological meaning is unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "9516e22f-4cf0-43bd-ad86-a9768bc560e3",
+      "content_id": "781ffb9f-ddc6-4602-924e-bc89ed6db17e",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Effective conductance analysis shows interneurons and organ cells have high conductance due to complex parallel connections, while body-wall muscles show low conductance. However, when considering wave interference, complex connections cause destructive interference. Wave signals transmit effectively only in strongly connected small groups (PVDL/R, CANL/R, exc_cell, hmc) or regularly connected large groups (body-wall muscle strands).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers question the fundamental distinction between the authors' interference-based approach and traditional conductance models. One reviewer explicitly asked 'Instead of representing electrical coupling via resistors that connect neurons, the authors use a quantum formalism and introduce the tight-binding Anderson Hamiltonian. Why?' and later noted 'I recommended that the authors should represent electrical coupling via resistors that connect neurons instead of via the quantum formalism. The authors have not tested this direction.' This suggests the comparison between effective conductance and interference-based transmission lacks validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "42d1afa9-f2de-413e-832a-735397ebe571",
+      "content_id": "781ffb9f-ddc6-4602-924e-bc89ed6db17e",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors acknowledge no subthreshold oscillations have been observed in C. elegans, but speculate their model suggests mechanisms for synchronized rhythmic activity in mammalian inferior olive nucleus, proposing that constructive interference of subthreshold waves with specific wavenumbers may generate synchronization in networks with strong or regular connections.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers explicitly challenge these speculative connections. One reviewer stated 'The authors should also give more evidence for the claim that their study may give a mechanism for synchronized rhythmic activity in the mammalian inferior olive nucleus, or refrain from making this conclusion.' Another noted 'the implications of this work for C elegans neuroscience remain unclear' and questioned why the authors 'chose to use the C elegans connectome for their study' when motivated by inferior olive questions. A third reviewer emphasized 'No subthreshold oscillations were identified in the C-elegans' as a fundamental weakness.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "435ecc31-d3ce-44b6-a8cf-bc19fa3b2bd6",
+      "content_id": "781ffb9f-ddc6-4602-924e-bc89ed6db17e",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors apply the general principle that complex neuronal connections increase transmissible wave propagation paths, and phase changes from path-length differences cause destructive interference.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While this is a general physics principle, reviewers question its application in this biological context. One reviewer noted 'it is unclear to me if this approximation is justified in the current system' regarding the tight-binding approximation that underlies this interference interpretation. The principle itself is not disputed, but its relevance to the biological system remains unvalidated.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "ebbc3abe-97ca-4b43-897f-3a947a236da3",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "41798af5-762f-418f-8186-91ee17c8f950",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "dc8c6f66-d6ab-4993-adca-6061f0f5424d",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "e654ad16-4155-4be4-ae92-35762619d1a9",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "6e6da639-9356-4a59-9c04-050978361f23",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "e55690b5-9325-477c-81c8-94f18e418bb5",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "21aa822d-0d4b-40ba-be8e-f08882c49e55",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "9177ff93-d556-46b1-9352-577be6536220",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "84518d08-8c59-4cdc-9a5c-077f98ac638c",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "ed121a1f-ede4-4c15-8c15-65fc2199504b",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "1cf82b76-32ca-4555-8371-d0757d0f34b1",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "acd63c31-2249-4b8d-bccd-1a4168e373a7",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "3d0e78d1-8ad7-4d07-b8cd-4f6aa92682a7",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "6ebcf03f-9ce1-4037-ab9d-3cfb94f30cfc",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "b4c0e3d9-8051-4f95-b9f6-be7f46950ffe",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "479a6830-c9c6-4c70-b740-67d1a1014e14",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "a33b66a7-d527-4484-9068-c69d1138ae76",
+      "result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb"
+    },
+    {
+      "claim_id": "eeba2877-2b77-4b5c-b2e6-5e18eb7ead15",
+      "result_id": "b141ef38-6bf7-4eca-88d2-d7f014a33b5b"
+    },
+    {
+      "claim_id": "7d15227b-6c66-402d-a66c-7f61bc6adcc2",
+      "result_id": "b141ef38-6bf7-4eca-88d2-d7f014a33b5b"
+    },
+    {
+      "claim_id": "7458705d-74ef-49f7-9d01-4e93126f509b",
+      "result_id": "b141ef38-6bf7-4eca-88d2-d7f014a33b5b"
+    },
+    {
+      "claim_id": "3022179a-37ef-4ab5-b74c-d53053cfe28b",
+      "result_id": "b141ef38-6bf7-4eca-88d2-d7f014a33b5b"
+    },
+    {
+      "claim_id": "c2c78c30-1da6-4db5-aa31-535e5fd99d8f",
+      "result_id": "b141ef38-6bf7-4eca-88d2-d7f014a33b5b"
+    },
+    {
+      "claim_id": "fc90ecd7-cd36-4928-b9be-8fc86f84a67b",
+      "result_id": "b141ef38-6bf7-4eca-88d2-d7f014a33b5b"
+    },
+    {
+      "claim_id": "5941a167-f112-4bca-bf3c-73ade63677e7",
+      "result_id": "b141ef38-6bf7-4eca-88d2-d7f014a33b5b"
+    },
+    {
+      "claim_id": "23bee7fe-f3b2-4129-b5bf-5af920706f11",
+      "result_id": "3045353a-1779-466d-999b-66c5ba942085"
+    },
+    {
+      "claim_id": "706bff58-9aa3-4107-a573-c86d0f118407",
+      "result_id": "3045353a-1779-466d-999b-66c5ba942085"
+    },
+    {
+      "claim_id": "e766c7d0-c056-41bb-8374-4fcc19f0de71",
+      "result_id": "3045353a-1779-466d-999b-66c5ba942085"
+    },
+    {
+      "claim_id": "4ca3bacc-7a6e-4327-b326-41f79e59b5ac",
+      "result_id": "3045353a-1779-466d-999b-66c5ba942085"
+    },
+    {
+      "claim_id": "e0b024d7-dc45-4d64-a003-9aab7d893f29",
+      "result_id": "8fd5a487-60e1-4e78-9b69-c7a4c942140f"
+    },
+    {
+      "claim_id": "82520c3f-15f4-4ccf-8641-25fe8a93babe",
+      "result_id": "8fd5a487-60e1-4e78-9b69-c7a4c942140f"
+    },
+    {
+      "claim_id": "7885b7ac-1686-4484-a566-cb862d30e926",
+      "result_id": "8fd5a487-60e1-4e78-9b69-c7a4c942140f"
+    },
+    {
+      "claim_id": "47c371fd-f025-4dd5-a799-b137deaca3f8",
+      "result_id": "7ce1f62d-8cf5-49be-98d6-49ccddbf4b23"
+    },
+    {
+      "claim_id": "469cfb30-8e5e-4104-ad26-380d6a4aaadb",
+      "result_id": "7ce1f62d-8cf5-49be-98d6-49ccddbf4b23"
+    },
+    {
+      "claim_id": "e6d217ab-4fad-4f00-9471-80d9c042f484",
+      "result_id": "7ce1f62d-8cf5-49be-98d6-49ccddbf4b23"
+    },
+    {
+      "claim_id": "c09ebda2-9802-4c38-bed2-568758f934de",
+      "result_id": "7ce1f62d-8cf5-49be-98d6-49ccddbf4b23"
+    },
+    {
+      "claim_id": "89577dc7-5363-45b0-a13c-e84902af6787",
+      "result_id": "7ce1f62d-8cf5-49be-98d6-49ccddbf4b23"
+    },
+    {
+      "claim_id": "8cd5e675-641e-4704-b86b-e4a251d85f5c",
+      "result_id": "7ce1f62d-8cf5-49be-98d6-49ccddbf4b23"
+    },
+    {
+      "claim_id": "7a8596e4-991b-4fd7-970f-2bc63594425f",
+      "result_id": "97e83b1d-1e5f-4c41-94cb-164487af04d8"
+    },
+    {
+      "claim_id": "bda5a668-23c8-48d3-8e7a-93799d153eb1",
+      "result_id": "97e83b1d-1e5f-4c41-94cb-164487af04d8"
+    },
+    {
+      "claim_id": "b4b0f04b-6971-455d-8397-5bc9d9173d64",
+      "result_id": "97e83b1d-1e5f-4c41-94cb-164487af04d8"
+    },
+    {
+      "claim_id": "8afc85d7-1683-423f-9c4a-69811cc1040b",
+      "result_id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b"
+    },
+    {
+      "claim_id": "df2cb827-877e-4fcf-a16e-3ca7ce3ea7ee",
+      "result_id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b"
+    },
+    {
+      "claim_id": "89214c6e-d920-4e1f-835f-341b50594b20",
+      "result_id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b"
+    },
+    {
+      "claim_id": "4d8e64fd-5c61-46d9-98e6-d051b29ea983",
+      "result_id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b"
+    },
+    {
+      "claim_id": "bf8c42eb-6dd2-46c4-bc9f-7621f4e5f175",
+      "result_id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b"
+    },
+    {
+      "claim_id": "8e9a5d3f-90f7-4c13-9eeb-8a922dd0a8aa",
+      "result_id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b"
+    },
+    {
+      "claim_id": "8bf21de7-08a6-4a7c-90c8-572487740299",
+      "result_id": "056755f3-72ae-4dea-9900-34e90856fe3d"
+    },
+    {
+      "claim_id": "3693ed67-80c8-414e-81dc-a6383937d2d7",
+      "result_id": "056755f3-72ae-4dea-9900-34e90856fe3d"
+    },
+    {
+      "claim_id": "714af880-a940-4f08-90a3-d9a8cc90ca47",
+      "result_id": "6911a052-ca59-4857-8431-4965f6b95703"
+    },
+    {
+      "claim_id": "ddcace64-9f75-4f55-9317-fe999ac79338",
+      "result_id": "6911a052-ca59-4857-8431-4965f6b95703"
+    },
+    {
+      "claim_id": "aed1770b-af69-4edb-a6bf-a5ac7774095e",
+      "result_id": "6911a052-ca59-4857-8431-4965f6b95703"
+    },
+    {
+      "claim_id": "e6310934-7d27-4646-a271-c9afb5b8ede4",
+      "result_id": "6911a052-ca59-4857-8431-4965f6b95703"
+    },
+    {
+      "claim_id": "4fd45675-f7be-479f-85ad-598e3f540693",
+      "result_id": "29d87784-70b7-4f2e-8a82-05a6155f8a17"
+    },
+    {
+      "claim_id": "0d6f79dc-8836-42db-a016-ff77bad71b17",
+      "result_id": "29d87784-70b7-4f2e-8a82-05a6155f8a17"
+    },
+    {
+      "claim_id": "2e731009-1568-4d45-96ae-9c42980a8d65",
+      "result_id": "29d87784-70b7-4f2e-8a82-05a6155f8a17"
+    },
+    {
+      "claim_id": "405fef41-aa8d-4969-b8c5-52e5aa377ae4",
+      "result_id": "129be254-a3dd-4934-9e83-1a4018b4ed38"
+    },
+    {
+      "claim_id": "7d15227b-6c66-402d-a66c-7f61bc6adcc2",
+      "result_id": "529febad-d451-4aca-ba30-82f15f59131d"
+    },
+    {
+      "claim_id": "7458705d-74ef-49f7-9d01-4e93126f509b",
+      "result_id": "529febad-d451-4aca-ba30-82f15f59131d"
+    },
+    {
+      "claim_id": "3022179a-37ef-4ab5-b74c-d53053cfe28b",
+      "result_id": "529febad-d451-4aca-ba30-82f15f59131d"
+    },
+    {
+      "claim_id": "c2c78c30-1da6-4db5-aa31-535e5fd99d8f",
+      "result_id": "529febad-d451-4aca-ba30-82f15f59131d"
+    },
+    {
+      "claim_id": "fc90ecd7-cd36-4928-b9be-8fc86f84a67b",
+      "result_id": "529febad-d451-4aca-ba30-82f15f59131d"
+    },
+    {
+      "claim_id": "5941a167-f112-4bca-bf3c-73ade63677e7",
+      "result_id": "529febad-d451-4aca-ba30-82f15f59131d"
+    },
+    {
+      "claim_id": "23bee7fe-f3b2-4129-b5bf-5af920706f11",
+      "result_id": "4a04f650-30a5-4843-92e0-21b7af808c34"
+    },
+    {
+      "claim_id": "706bff58-9aa3-4107-a573-c86d0f118407",
+      "result_id": "4a04f650-30a5-4843-92e0-21b7af808c34"
+    },
+    {
+      "claim_id": "e766c7d0-c056-41bb-8374-4fcc19f0de71",
+      "result_id": "4a04f650-30a5-4843-92e0-21b7af808c34"
+    },
+    {
+      "claim_id": "4ca3bacc-7a6e-4327-b326-41f79e59b5ac",
+      "result_id": "4a04f650-30a5-4843-92e0-21b7af808c34"
+    },
+    {
+      "claim_id": "7885b7ac-1686-4484-a566-cb862d30e926",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "e0b024d7-dc45-4d64-a003-9aab7d893f29",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "82520c3f-15f4-4ccf-8641-25fe8a93babe",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "47c371fd-f025-4dd5-a799-b137deaca3f8",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "469cfb30-8e5e-4104-ad26-380d6a4aaadb",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "e6d217ab-4fad-4f00-9471-80d9c042f484",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "c09ebda2-9802-4c38-bed2-568758f934de",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "df2cb827-877e-4fcf-a16e-3ca7ce3ea7ee",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "89214c6e-d920-4e1f-835f-341b50594b20",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "bf8c42eb-6dd2-46c4-bc9f-7621f4e5f175",
+      "result_id": "e717a179-2923-4f77-a330-70165dbf54d8"
+    },
+    {
+      "claim_id": "8e9a5d3f-90f7-4c13-9eeb-8a922dd0a8aa",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "7a8596e4-991b-4fd7-970f-2bc63594425f",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "bda5a668-23c8-48d3-8e7a-93799d153eb1",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "b4b0f04b-6971-455d-8397-5bc9d9173d64",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "8afc85d7-1683-423f-9c4a-69811cc1040b",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "df2cb827-877e-4fcf-a16e-3ca7ce3ea7ee",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "89577dc7-5363-45b0-a13c-e84902af6787",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "8cd5e675-641e-4704-b86b-e4a251d85f5c",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "8bf21de7-08a6-4a7c-90c8-572487740299",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "3693ed67-80c8-414e-81dc-a6383937d2d7",
+      "result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555"
+    },
+    {
+      "claim_id": "714af880-a940-4f08-90a3-d9a8cc90ca47",
+      "result_id": "9516e22f-4cf0-43bd-ad86-a9768bc560e3"
+    },
+    {
+      "claim_id": "ddcace64-9f75-4f55-9317-fe999ac79338",
+      "result_id": "9516e22f-4cf0-43bd-ad86-a9768bc560e3"
+    },
+    {
+      "claim_id": "aed1770b-af69-4edb-a6bf-a5ac7774095e",
+      "result_id": "9516e22f-4cf0-43bd-ad86-a9768bc560e3"
+    },
+    {
+      "claim_id": "e6310934-7d27-4646-a271-c9afb5b8ede4",
+      "result_id": "9516e22f-4cf0-43bd-ad86-a9768bc560e3"
+    },
+    {
+      "claim_id": "3d0e78d1-8ad7-4d07-b8cd-4f6aa92682a7",
+      "result_id": "42d1afa9-f2de-413e-832a-735397ebe571"
+    },
+    {
+      "claim_id": "4fd45675-f7be-479f-85ad-598e3f540693",
+      "result_id": "42d1afa9-f2de-413e-832a-735397ebe571"
+    },
+    {
+      "claim_id": "0d6f79dc-8836-42db-a016-ff77bad71b17",
+      "result_id": "42d1afa9-f2de-413e-832a-735397ebe571"
+    },
+    {
+      "claim_id": "2e731009-1568-4d45-96ae-9c42980a8d65",
+      "result_id": "42d1afa9-f2de-413e-832a-735397ebe571"
+    },
+    {
+      "claim_id": "4d8e64fd-5c61-46d9-98e6-d051b29ea983",
+      "result_id": "435ecc31-d3ce-44b6-a8cf-bc19fa3b2bd6"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "c0c5337e-3eba-4bba-b548-81bcdf8b088d",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "b141ef38-6bf7-4eca-88d2-d7f014a33b5b",
+      "peer_result_id": "529febad-d451-4aca-ba30-82f15f59131d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Both address the circuit construction methodology (C59, C60, C63, C64, C65, C67). OpenEval finds the approach methodologically sound and SUPPORTED despite noting lack of biological justification for some parameters. Peer reviewers find it UNSUPPORTED, fundamentally challenging the addition of virtual nodes and questioning whether results depend on this methodological choice without clear justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "a1849b55-eb01-4630-97e0-cdc6cfe55191",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3045353a-1779-466d-999b-66c5ba942085",
+      "peer_result_id": "4a04f650-30a5-4843-92e0-21b7af808c34",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the signal mobility edge and WDTM findings (C3, C24, C25, C27). OpenEval finds these SUPPORTED by computational data in Figure 2, treating them as valid novel contributions. Peer reviewers rate them UNCERTAIN, questioning whether the mobility edges are artifacts of the tight-binding approximation and stating 'the strength of the evidence presented in favor of interference effects being a major component in subthreshold wave dynamics is inadequate.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "40178d57-3a8c-47d6-9049-2ac1a8b56a50",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "6911a052-ca59-4857-8431-4965f6b95703",
+      "peer_result_id": "9516e22f-4cf0-43bd-ad86-a9768bc560e3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the comparison between effective conductance and interference-based transmission (C50, C51, C52, C53). OpenEval finds this SUPPORTED as a key contribution showing complex connectivity reduces wave transmission. Peer reviewers rate it UNCERTAIN, fundamentally questioning why the quantum formalism was used instead of resistor-based representation and noting the authors 'have not tested' the alternative approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "cdc4918d-66cf-4d8b-b96c-f875b2259910",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "29d87784-70b7-4f2e-8a82-05a6155f8a17",
+      "peer_result_id": "42d1afa9-f2de-413e-832a-735397ebe571",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate speculative claims about inferior olive and C. elegans oscillations (C54, C55, C56, with C16 overlap). OpenEval rates these UNCERTAIN, acknowledging they are explicitly speculative and lack data support. Peer reviewers rate them UNSUPPORTED, explicitly challenging these connections and questioning why C. elegans connectome was used for inferior olive-motivated questions, emphasizing 'No subthreshold oscillations were identified in the C-elegans.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "9f6722ae-570d-4caf-bfa5-22bcdbfbe646",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "8fd5a487-60e1-4e78-9b69-c7a4c942140f",
+      "peer_result_id": "e717a179-2923-4f77-a330-70165dbf54d8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address WDTM patterns showing regular distance multiples in body-wall muscles (C4, C29, C30). OpenEval finds these SUPPORTED by Figure 3 data as key findings. Peer reviewers rate them UNCERTAIN, not directly validating the anatomical findings but questioning the model's biological relevance and noting 'the preprint falls short of relating its numerical results to any phenomena which could be observed in the lab.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "3d99d672-dc29-4bb9-a9d4-ab5f445f8737",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "7ce1f62d-8cf5-49be-98d6-49ccddbf4b23",
+      "peer_result_id": "e717a179-2923-4f77-a330-70165dbf54d8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval addresses hmc connectivity and hub role (C32, C33, C36, C37, C45, C46) finding them SUPPORTED by network analysis. Peer R3 partially overlaps (C32, C33, C36, C37) but rates UNCERTAIN, expressing concerns about biological relevance rather than validating specific anatomical findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "2937364b-5f63-4c99-9b8f-5527853ca857",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "7ce1f62d-8cf5-49be-98d6-49ccddbf4b23",
+      "peer_result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval addresses hmc as major hub (C45, C46) finding it SUPPORTED. Peer R4 includes these claims among hub findings rated UNCERTAIN, questioning the overall framework's validity and biological meaning of computational hub identification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "e14d0fcf-f1d6-4393-bd7e-42a5dbf74fd9",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "97e83b1d-1e5f-4c41-94cb-164487af04d8",
+      "peer_result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address long-distance transmission neurons (C35, C38, C39). OpenEval finds these SUPPORTED by Appendix 1-table 5 data as concrete findings. Peer reviewers rate them UNCERTAIN as part of broader concerns about the framework's biological validity and lack of connection to observable phenomena.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "d693ecb9-00e4-4c4b-a1ec-79dd643c68fe",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b",
+      "peer_result_id": "e717a179-2923-4f77-a330-70165dbf54d8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval addresses hub appearance rates and interference mechanisms (C40, C41, C42, C43, C44, C5) finding them SUPPORTED. Peer R3 partially overlaps (C41, C42, C44) rating UNCERTAIN, questioning biological relevance and parameter motivation rather than validating specific findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "8af7b34c-4793-430d-9faa-13801bf0be4e",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b",
+      "peer_result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval addresses hub identification and mechanisms (C40, C41, C5) finding them SUPPORTED. Peer R4 overlaps on these claims rating them UNCERTAIN, questioning the framework's biological impact and noting lack of wavenumber estimation for C. elegans.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "dd5a20b5-f937-409a-97d6-a65bc5b91261",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1d66e834-9703-4e4b-ba4c-7df8cc9b265b",
+      "peer_result_id": "435ecc31-d3ce-44b6-a8cf-bc19fa3b2bd6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the interference mechanism principle (C43). OpenEval finds it SUPPORTED as physically sound. Peer reviewers rate it UNCERTAIN, not disputing the physics principle itself but questioning whether the tight-binding approximation is justified in this biological context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "848e3cd4-f679-4f27-a2b1-a60083945d14",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "056755f3-72ae-4dea-9900-34e90856fe3d",
+      "peer_result_id": "92663ab7-fbba-4cef-afb9-45cb22fa1555",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval addresses specific hub cell-pairs and the insight that strong edges don't guarantee hub status (C47, C49) finding them SUPPORTED. Peer R4 includes these among hub findings rated UNCERTAIN, questioning biological meaning of computational results without validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "768622ad-ffd5-404d-862a-441f852f41df",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "1e5a78e7-58d3-4cd3-a77f-a985de37aeeb",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds background claims about C. elegans connectome, electrical synapses, and Anderson localization (C1, C2, C6-C20) SUPPORTED by appropriate literature citations. No corresponding peer review evaluation addresses these foundational claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    },
+    {
+      "id": "8a5c99e3-090d-46e5-883d-575d28a9d720",
+      "submission_id": "9f41dbd8-aafb-4770-8a53-d1e8b769155d",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "129be254-a3dd-4934-9e83-1a4018b4ed38",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval addresses computational error reporting (C70) finding it SUPPORTED as transparent disclosure with conservative correction, though noting unexplained root causes. No corresponding peer review evaluation found.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:38:03.055821Z"
+    }
+  ]
+}

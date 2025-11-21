@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C95",
+      "C118",
+      "C120"
+    ],
+    "result": "DKK2 knockout significantly reduces liver metastasis in a mouse organoid transplantation model. Splenic injection of Dkk2 KO organoids (carrying Apc, Kras, Trp53 mutations) into C57BL/6 mice resulted in significantly reduced liver metastases, improved survival, and decreased Lgr5+ cancer stem cells with reduced c-Src phosphorylation compared to control AKP organoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C35, C37-C39, C95, C118, and C120 are well-supported by in vivo imaging data (Figure 1B-D), survival analysis (Figure 1D), quantitative PCR (Figure 1E), and flow cytometry (Figure 1F-H). The experimental design includes appropriate controls, statistical analysis (p<0.01, p<0.0001), and multiple biological replicates. The reduction in metastasis is consistently demonstrated across multiple readouts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C40",
+      "C41",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "DKK2 is required for lysozyme-positive (LYZ+) Paneth cell formation in colon cancer organoids. Dkk2 knockout disrupts LYZ+ cell formation and reduces expression of Paneth cell markers (Lyz1, Lyz2, alpha defensins) and stem cell niche factors (Wnt3a, Fgfr3) in organoid culture, which can be partially rescued by recombinant DKK2 protein treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30, C40-C41, C45-C48, C51-C53 are supported by bulk RNA-seq (Figure 2B, Figure 2\u2014figure supplement 1), confocal microscopy (Figure 2C), and quantitative PCR (Figure 2D). The temporal analysis of LYZ+ cell formation and rescue experiments with recombinant DKK2 provide strong evidence. However, the claim that stem cell niche formation is disrupted (C47, C53) is somewhat inferential, as direct functional assays of niche activity are not shown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C32",
+      "C54",
+      "C55",
+      "C56",
+      "C60",
+      "C119"
+    ],
+    "result": "Single-cell RNA sequencing identifies LYZ+ cancer cells with Paneth cell properties and enhanced glycolysis in mouse liver metastases. scRNA-seq analysis of metastasized tumors revealed LYZ+ cells with Paneth cell characteristics, and Dkk2 knockout reduced the Paneth+/Goblet+ cell ratio and significantly inhibited the glycolysis I pathway in Lgr5+ tumor cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C32, C54-C56, C60, and C119 are supported by scRNA-seq data analysis (Figures 3-4) including UMAP clustering, pathway enrichment analysis (IPA), and gene expression analysis. The identification of LYZ+ cells with Paneth properties is based on marker gene expression and module scores. The glycolysis pathway inhibition is demonstrated through IPA (Figure 3C) and specific gene expression (Figure 3D). The computational methods are described, though some details about statistical thresholds and multiple testing correction could be clearer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C68"
+    ],
+    "result": "Human colorectal cancer samples contain LYZ+ cancer cells with Paneth cell properties that increase in metastases. Analysis of patient scRNA-seq data identified LYZ+ cancer cells (1% in normal, 13% in primary tumor, 24% in metastasis) with enriched glycolysis and protein secretion pathways characteristic of Paneth cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C66 and C68 are supported by reanalysis of published human scRNA-seq data (Joanito et al., 2022) shown in Figures 4-5. The identification criteria (LYZ expression >2.0, Paneth module score >0.2) are clearly stated, and GSEA analysis demonstrates enrichment of glycolysis and protein secretion pathways. The progressive increase from normal to metastasis is compelling. However, the analysis relies on reanalysis of published data rather than new patient samples, and the functional significance of these cells in human disease remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C69",
+      "C70",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "HNF4A is identified as a key downstream transcriptional regulator of DKK2 signaling. Multi-omics analysis (IPA of RNA-seq, ATAC-seq motif enrichment) in both mouse organoids and human patient samples consistently identified HNF4A as activated in Dkk2 KO cells and as an upstream regulator of LYZ+ cancer cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C69-C70, C72-C76 are supported by convergent evidence from multiple omics approaches: IPA of bulk RNA-seq (Figure 6A), IPA of human scRNA-seq (Figure 5C), and ATAC-seq motif enrichment (Figure 6B-C). The consistency across mouse and human datasets and multiple analytical methods strengthens the conclusion. However, the claim that HNF4A is a 'downstream target' (C6) is somewhat imprecise\u2014the data show HNF4A activity is affected by DKK2, but the direct mechanistic link relies on prior work (Shin et al., 2021a).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "HNF4A directly binds the Sox9 promoter and inhibits LYZ+ cell formation. ChIP-seq analysis revealed HNF4A binding to the Sox9 promoter region, and functional experiments showed that Dkk2 knockout reduces Sox9 expression (rescued by DKK2 treatment), while HNF4\u03b11 knockdown reverses Sox9 suppression and rescues LYZ+ cell formation in KO organoids.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C83-C87 are supported by ChIP-seq data (Figure 6D), quantitative PCR (Figure 6E-F), and confocal microscopy (Figure 6G). The ChIP-seq provides direct evidence of HNF4A binding to Sox9 promoter, and the rescue experiments with DKK2 protein and HNF4\u03b11 knockdown provide functional validation. The experimental logic is sound and the data are consistent with the proposed mechanism. However, the ChIP-seq appears to be performed only in KO organoids where HNF4A is present, not in AKP controls where it is degraded, limiting direct comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C31",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "DKK2 knockout rescues HNF4A protein levels and reduces LYZ+ cells in liver metastases. In liver metastatic foci, Dkk2 knockout increased HNF4\u03b11+ cells threefold (to ~60%) and decreased LYZ+ cells threefold compared to AKP controls, demonstrating that DKK2 is required for generating LYZ+ cancer cells in vivo by reducing HNF4\u03b11 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C31, C88-C90 are supported by flow cytometry analysis of liver metastases (Figure 6H-I). The inverse relationship between HNF4\u03b11 and LYZ+ cells in vivo is clearly demonstrated with appropriate statistical analysis (p<0.01, p<0.0001). The use of tdTomato reporter to identify transplanted cancer cells is appropriate. However, the sample size (n=3 mice per group) is relatively small for in vivo experiments, though the effect sizes are large.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Human colorectal cancer LYZ+ cells show reduced HNF4A and increased SOX9 regulatory activity. Regulon analysis of human scRNA-seq data revealed significantly reduced HNF4A activity and increased SOX9 activity in LYZ+ cancer cells compared to LYZ- cells, suggesting conserved roles of HNF4A and SOX9 in human LYZ+ cancer cell formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 are supported by regulon analysis of human patient scRNA-seq data (Figure 6J-K). The computational approach (SCENIC) is appropriate for inferring transcription factor activity. The inverse relationship between HNF4A and SOX9 activity in LYZ+ cells is consistent with the mouse data and the proposed mechanism. However, this is purely computational inference from transcriptomic data without functional validation in human cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C36",
+      "C94",
+      "C117",
+      "C125"
+    ],
+    "result": "DKK2 promotes metastasis by generating LYZ+ cancer cells with Paneth cell properties through the DKK2-HNF4A-SOX9 axis. The authors propose that DKK2-mediated degradation of HNF4\u03b11 enhances Sox9 expression, leading to formation of LYZ+ cells with Paneth cell characteristics that support cancer stem cell niches required for metastatic outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C11, C36, C94, C117, and C125 represent the main integrative conclusion. This is well-supported by the convergent evidence from in vivo metastasis models, organoid culture, multi-omics analyses, and mechanistic studies. The pathway from DKK2 \u2192 HNF4A degradation \u2192 Sox9 expression \u2192 LYZ+ cell formation \u2192 metastasis is demonstrated through multiple complementary approaches. However, some mechanistic steps rely on prior work (e.g., DKK2 activates Src to degrade HNF4A from Shin et al., 2021a), and the direct causal role of LYZ+ cells in supporting metastasis is somewhat inferential\u2014the correlation between LYZ+ cell loss and reduced metastasis is strong, but direct functional proof (e.g., selective depletion of LYZ+ cells) is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "DKK2 inhibition may have therapeutic potential for metastatic colon cancer. The authors suggest that because DKK2 expression is intestinal tumor-specific, inhibiting DKK2 may have promising therapeutic outcomes for treating metastatic colon cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C121-C122 are speculative and represent future therapeutic implications rather than demonstrated results. While C121 (tumor-specific expression) is supported by prior literature and the current data showing DKK2 expression in tumor organoids, C122 is explicitly speculative ('may have promising therapeutic outcomes'). No therapeutic intervention studies, drug development, or clinical data are presented. The claim is reasonable based on the mechanistic findings but remains unvalidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background context on colorectal cancer metastasis, Lgr5+ cells, Paneth cells, and stem cell niches. The introduction establishes that metastasis is the leading cause of cancer mortality, Lgr5+ cells are required for metastasis, Paneth cells function as stem cell niche cells, and the mechanisms of cancer stem cell niche development in metastatic colon tumors are largely unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C12-C29 are background statements supported by appropriate citations to published literature. These establish the scientific context and knowledge gaps that motivate the study. The citations appear appropriate and the statements accurately represent established knowledge in the field. However, these are not novel findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C67",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C116"
+    ],
+    "result": "Additional background on Paneth cell biology, HNF4A function, and cancer stem cell niche remodeling. The discussion contextualizes findings with established knowledge about Paneth cell derivation, metabolic functions, HNF4A isoforms, Sox9 function, and mechanisms of stem cell niche remodeling in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44, C57-C59, C61, C67, C77-C82, C96-C116 are background statements supported by appropriate citations. These provide important context for interpreting the current findings but are not novel results. The citations appear appropriate and accurately represent prior work. Some claims (C81-C82, C97, C109) cite the authors' own prior work (Shin et al., 2021a), which is appropriate for building on previous findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C8",
+      "C49",
+      "C50",
+      "C71",
+      "C123"
+    ],
+    "result": "Supporting evidence from prior work by the same authors. Several claims reference the authors' previous publication (Shin et al., 2021a) regarding Sox9's role in Paneth cell differentiation, Lgr5 expression patterns in organoids, DKK2 enhancement of Lgr5 via HNF4\u03b11, and DKK2 activation of Src leading to HNF4A degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C49-C50, C71, and C123 appropriately cite prior work, including the authors' own previous study (Shin et al., 2021a). These claims provide important mechanistic context that connects the current findings to established knowledge. The reliance on prior work for some mechanistic steps (e.g., DKK2\u2192Src\u2192HNF4A degradation) is appropriate but means those mechanisms are not independently validated in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C115",
+      "C124"
+    ],
+    "result": "Summary of mechanistic findings shown in Figure 7. The authors summarize that DKK2-mediated HNF4\u03b11 degradation enhances Sox9 expression, inducing Paneth cell properties including lysozyme and defensin expression, which contributes to metastatic outgrowth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115 and C124 are summary statements of the main mechanistic findings, supported by the experimental data presented throughout the manuscript and illustrated in the model (Figure 7). These accurately reflect the demonstrated results, though they integrate findings from both current and prior work (Shin et al., 2021a for the DKK2\u2192Src\u2192HNF4A degradation step).",
+    "result_type": "MINOR"
+  }
+]

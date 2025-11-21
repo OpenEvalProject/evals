@@ -1,0 +1,430 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C6",
+      "C152"
+    ],
+    "result": "This study presents the first high-throughput smFISH-based spatial transcriptomics (SRT) dataset of the adult Drosophila melanogaster using Molecular Cartography (MC), covering 150 mRNA species across the head and body.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C6, and C152 consistently state this is the first high-throughput smFISH-based SRT dataset of adult fly tissues. The methodology is described in detail (C31), sample numbers are provided (C35-C36, C38-C39, C88), and the novelty is contextualized against prior embryonic work (C32). The data are made publicly available (C34, C193).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Gene selection for SRT was based on FCA expression data, with 50 genes for body samples and 100 genes for head samples, covering a wide range of expression levels. Detection yielded an average of 190,622 mRNA molecules for head samples and 1.5 million for body samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide specific, quantitative details about gene selection rationale and detection outcomes. The gene selection is justified by the need to cover diverse cell types (C35-C36) and expression ranges (C37), with concrete detection statistics provided (C38-C39). Supporting figures are referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "SRT successfully identified major cell types in the fly body using marker genes, including neurons, glia, gut cells with subcellular trypsin isoform localization, fat body, oenocytes, hemocytes, stem cells, and muscle subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C54 describe identification of diverse cell types with specific marker genes. The subcellular localization of \u03b1- and \u03b2-Trypsin (C42-C44) is particularly notable. Each claim references supporting figures. The detection of VGlut in IFMs (C54) is consistent with known biology and properly cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The MC method demonstrates >99% specificity for TpnC4 and Act88F detection in flight muscles, with negligible off-target signal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 provide quantitative specificity measurements (99.1% and 99.7%) for two marker genes in a well-defined tissue region. This validates the technical reliability of the MC method. The analysis is straightforward: segmentation of flight muscles followed by calculation of the percentage of marker mRNA spots within the segmented region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Unsupervised clustering of body samples identified 142 clusters, revealing multiple subclusters in flight muscles and showing significant correlation (r=0.69, p<1e-100) with snRNA-seq data, though with some technical biases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 describe unsupervised analysis results with specific statistics. The correlation coefficient and p-value (C60) demonstrate concordance between SRT and snRNA-seq. The explanation for Act88F differences (C61-C62) is reasonable given the biological differences between cytoplasmic and nuclear RNA detection. The unexpected subclusters in flight muscles (C59) motivate further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "LanB1 is widely expressed across multiple cell types beyond hemocytes, with only 15.5% co-expressing with Hml in hemocytes, while most overlaps with epithelial (41.4% total) or muscle cells (66.3% total).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 reveal unexpected widespread LanB1 expression with specific quantification. The percentages are provided in the text and methods describe the co-expression analysis. This finding contradicts the assumption that LanB1 is primarily a hemocyte marker, demonstrating the value of SRT for revealing spatial expression patterns not evident in dissociated cell data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Different mRNAs show distinct nuclear proximity patterns in muscles: sls is nucleus-enriched while TpnC4 is nucleus-depleted. This pattern does not correlate with mRNA size, contrary to previous findings in mammalian muscles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C68 describe nuclear proximity analysis with specific examples. The methodology (distance to nearest nucleus) is described in Methods. The finding that mRNA size does not predict nuclear proximity (C68) is supported by specific length comparisons (sls: 15,263-56,489 nt vs TpnC4: 859 nt). This contradicts prior work (C67), which is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "sls mRNA forms large assemblies around nuclei near muscle-tendon junctions in IFMs, confirmed by HCR-FISH. Unlike mammals, this enrichment does not correlate with nuclear accumulation, suggesting terminal nuclei may express higher sls levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C76 describe a novel spatial pattern with orthogonal validation. MC findings (C69) are confirmed by HCR-FISH (C70), though with minor technical differences noted (C71-C72). The lack of correlation with DAPI signal (C75) is explicitly tested, leading to the speculation about differential transcription (C76). The comparison to mammalian biology (C73-C74) provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Act88F, TpnC4, and Mhc mRNAs show complementary striped patterns in IFMs correlating with intracellular architecture. HCR-FISH partially validates these patterns but shows some discrepancies, particularly for Mhc and TpnC4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C85 describe striped mRNA patterns with partial HCR-FISH validation. While Act88F stripes are confirmed (C82), TpnC4 shows inconsistent localization (C83) and Mhc localization differs between methods (C84). The authors acknowledge these discrepancies (C85) and recommend systematic validation. The MC observations are intriguing but require additional validation to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Three main types of mRNA localization were identified in IFMs: nuclei-enriched patterns, complementary striped bands, and concentrations at terminal nuclei near muscle attachment sites. None of these patterns had been previously identified.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87 summarize the muscle mRNA localization findings. These patterns are supported by the detailed observations in C64-C84, though with the caveat that some patterns require additional validation (as noted in the evaluation of the previous result). The novelty claim (C87) is reasonable given the literature review provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "SRT of 13 head sections identified major brain cell types using marker genes, including neurons, astrocytes, photoreceptors, olfactory projection neurons (OPNs) in anterior sections, and blood-brain barrier (BBB) glia at the brain periphery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 describe successful cell type identification in the brain with appropriate spatial localization. The diversity between sections is quantified (C89). Known cell types are found in expected locations: OPNs anteriorly (C92) and BBB glia peripherally (C94). One marker (ninaE) was excluded due to technical issues (C91), which is appropriate quality control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Gene-gene correlations between MC and snRNA-seq show strong overall match (r=0.68) but with notable mismatches. Vmat and neuropeptides (Ilp2, Pdf) show unexpected spatial patterns suggesting mRNA transport away from cell bodies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C100 describe correlation analysis with specific examples of discrepancies. The overall correlation (C95) is good but not perfect. The Vmat and neuropeptide patterns (C97-C98, C100) suggest biological phenomena (mRNA transport) rather than technical artifacts. Alternative explanations are considered (C99). These findings highlight the complementary nature of SRT and scRNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "SRT successfully mapped four previously uncharacterized scRNA-seq clusters to specific brain regions: Fer1+ cells (cluster 120) to central brain near ventral gnathal ganglion, AstC+ cells (cluster 122) to dorsal central brain, otp+ cells (clusters 30, 62) near lateral horn, and vg+ cells (cluster 20) at the OL-CB boundary.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 demonstrate a key application of SRT: spatially localizing uncharacterized cell clusters. Each cluster is mapped to a specific anatomical location with supporting figures. The AstC localization (C107) is consistent with known DN1/DN3 neuron locations, providing validation. This represents a significant advance in annotating the FCA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Unsupervised clustering of brain MC data identified 23 clusters with different compositions across anterior-posterior sections. Differential expression analysis identified pros and scro as markers clearly demarcating central brain and optic lobe regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 describe unsupervised analysis revealing spatial organization. The cluster number (C111) and compositional differences (C112) are specific. The identification of pros/scro as boundary markers (C114) corroborates prior findings with appropriate citations. The claim that SRT alone can identify regional markers (C115) is supported by this analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C116",
+      "C117"
+    ],
+    "result": "SRT confirmed that Wnt4 and Wnt10 mRNAs are enriched in ventral and dorsal brain regions respectively, validating previous scRNA-seq findings of ventral-dorsal optic lobe subdivisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117 provide spatial validation of prior scRNA-seq findings. The prior work is properly cited (C116) and the spatial enrichment is demonstrated (C117) with supporting figures. This exemplifies how SRT can validate and extend scRNA-seq findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Three computational approaches for representing SRT data were compared: 5 \u03bcm grid rasterization (fast, hours), neighborhood embedding (slow, days, subcellular resolution), and nuclei segmentation (challenging due to dense, small fly brain nuclei).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C126 describe methodological comparisons with specific computational costs (C124) and technical challenges (C125-C126). The trade-offs between methods are clearly articulated: speed vs. resolution vs. biological interpretability. The challenges with nuclei segmentation in fly brain (C126) are well-documented with supporting figures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Comparison of label transfer methods (lasso regression, Tangram, SpaGE) showed that regression-based and SpaGE methods successfully matched glial subtypes, while nuclei segmentation performed poorly due to missing glial nuclei. Grid-based and segmentation methods successfully located peptidergic neurons, while neighborhood embedding failed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C133 provide systematic comparison of integration methods with specific performance assessments for different cell types. The strengths and weaknesses of each method are clearly documented with supporting figures. The need for manual threshold adjustment in Tangram (C133) is an important practical consideration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "Different integration methods localized 2-4 uncharacterized clusters. Tangram uniquely detected ventral-dorsal retinal divisions (cluster 15 dorsal, driven by mirr expression) and mapped cluster 69 via caup expression to dorsal eye and central brain locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C144 demonstrate method-dependent cluster localization. The Tangram-specific findings (C141-C144) are validated by known biology: mirr is documented to be expressed in the dorsal eye (C142). The variable performance across methods (C137-C138) underscores the importance of using multiple approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Grid-based analysis (5 \u03bcm) produces similar clustering results to neighborhood embedding but is computationally faster. Tangram was best for identifying unknown clusters but required careful thresholding to avoid false positives. Simple regression performed as well as specialized methods for marker genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C151 provide practical recommendations based on systematic comparison. The equivalence of grid and neighborhood embedding for clustering (C145) with the advantage of subcellular resolution (C146) is clearly stated. The limitations of each method are acknowledged (C147-C149), and the recommendation for consensus approaches (C151) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The 50-gene body panel identified all major cell types and rare populations with high marker specificity (>99% for Act88F and TpnC4), showing high concordance with snRNA-seq data and enabling whole-body analysis unique to flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-C158 summarize the body analysis results. The comprehensive cell type identification (C154-C155) is supported by detailed results in C40-C54. The high specificity (C158) is quantified in C55-C56. The concordance with snRNA-seq (C156) is demonstrated in C60. The advantage of whole-body analysis in flies (C157) is a valid point.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Some marker genes showed unexpected expression not detected in snRNA-seq (e.g., tin and TpnC4 in ejaculatory bulb, widespread LanB1 beyond hemocytes), demonstrating SRT's enhanced sensitivity and spatial context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C159-C161 highlight discoveries enabled by SRT's spatial resolution. The unexpected LanB1 expression (C160) is detailed in C47-C50 with quantification. The claim that SRT provides more sensitive readout (C161) is supported by these examples of expression missed by snRNA-seq.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The 100-gene head panel identified major brain cell types including specific neuronal subtypes and enabled spatial mapping of uncharacterized clusters. Future integration with connectomics data could bridge scRNA-seq atlases with spatial and morphological information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C163 summarize brain analysis results supported by C88-C110. The challenge of connecting to connectomics (C164) is appropriately identified with citation. The acknowledgment that nomenclature is based on projections not nuclei (C165) is important context. The vision for future integration (C166) is reasonable speculation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Technical challenges in fly brain SRT include sample deformation due to small head size, difficulty segmenting small dense nuclei (5 \u03bcm\u00b3), and 2D overlap of nuclei. Potential solutions include expansion microscopy, super-resolution imaging, and 3D imaging, though nuclei-segmentation loses information compared to nuclei-unaware methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C167-C173 honestly assess technical limitations with specific details (nucleus size in C168). Potential solutions are proposed (C169-C170, C172) with appropriate citations. The conclusion that nuclei-segmentation loses information (C173) is supported by the comparative analysis in C127-C151. This transparent discussion of limitations strengthens the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "SRT revealed localized mRNAs in three cell types: (1) trypsin isoforms in opposite apical-basal locations in gut enterocytes, (2) neuropeptides Pdf and Ilp2 likely transported into neuronal projections, and (3) diverse mRNA distribution patterns in muscle fibers suggesting both transport and local synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C180-C185 summarize key mRNA localization findings. The trypsin localization (C181) is detailed in C42-C44. The neuropeptide patterns (C183-C184) are described in C100 with appropriate biological context. The muscle patterns (C185) are extensively documented in C64-C86. Each finding is novel and biologically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Terminal IFM nuclei near muscle-tendon attachments show enriched sls mRNA, suggesting heterogeneous nuclear transcription. This parallels findings in mammalian muscles where terminal nuclei have specialized transcriptional programs, though FCA snRNA-seq did not detect such heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C188-C191 propose nuclear heterogeneity in IFMs based on sls enrichment (detailed in C69-C76). The parallel to mammalian biology (C190) is appropriately cited. The observation that FCA missed this (C191) demonstrates SRT's advantage. The proposal is well-supported by spatial data, though direct transcriptional measurements would strengthen it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C192",
+      "C193",
+      "C194"
+    ],
+    "result": "This proof-of-concept study demonstrates that medium-throughput SRT on entire fly head and body is methodologically feasible, leads to informative discoveries, and opens avenues for potential full 3D imaging of adult flies at high resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192-C194 provide appropriate concluding statements. The feasibility is demonstrated throughout the manuscript. The data are made publicly available (C193). The vision for future 3D imaging (C194) is reasonable speculation based on the current results. This represents a significant methodological advance for the Drosophila community.",
+    "result_type": "MAJOR"
+  }
+]

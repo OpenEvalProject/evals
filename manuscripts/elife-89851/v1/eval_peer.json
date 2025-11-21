@@ -1,0 +1,152 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study demonstrates that a one-dimensional (1D) attractor architecture aligns grid cells and produces hexagonal firing patterns as effectively as a two-dimensional (2D) attractor. Both 1D and 2D simulations resulted in grid maps with hexagonal symmetry, shared spacing and orientation, and similar gridness scores, with the 1D condition showing slightly higher gridness than 2D.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 questions whether the evidence convincingly shows that attractor dynamics (rather than just connectivity structure) are necessary for alignment, noting that 'the evidence provided doesn't convincingly show that attractor dynamics of the circuit are a necessary condition for this to arise.' Reviewer 2 similarly states that 'it is not shown that this connectivity, on its own, indeed sustains persistent attractor states' and questions whether attractor dynamics are even necessary. The editor summarizes that 'support for this proposal was incomplete.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Using topological data analysis, the authors show that population activity from 1D, 2D, and stripe attractors all form a toroidal manifold embedded in high-dimensional space. Local dimensionality analysis showed that >90% of data points had local dimension of 2, and persistent homology revealed Betti numbers [1,2,1] characteristic of a torus for the majority of simulations with attractors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 notes that 'given that all the grid cells are driven by an input from place cells that span a 2d manifold...it is expected that the manifold of activity states in the grid cell layer...would also locally span a 2d plane. The result is not surprising.' Reviewer 1 raises concerns that 'given the 2D structure of the network input it perhaps isn't surprising that the network generates 2D representations and this may have little to do with its 1D connectivity.' This suggests the toroidal topology may be driven by the 2D input structure rather than the attractor architecture itself.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Analysis of the transpose of the activity matrix revealed that the topology of the ensemble of grid maps recapitulates the architecture of recurrent connections: 86% of 1D simulations showed ring topology [1,1,0], 97% of 1DL simulations showed stripe topology [1,0,0], while only 27% of 2D simulations correctly identified toroidal topology [1,2,1].",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 notes that 'in real grid cells, there is a dense and fairly uniform representation of all phases...Thus, the highly clustered phases obtained in the model (Fig. S1) seem incompatible with the experimental reality. I suspect that this may be related to the difficulty in identifying the topology of a torus in persistent homology analysis based on the transpose of the matrix M.' This suggests the analysis may not accurately reflect biological reality and the difficulty in identifying toroidal topology in 2D simulations raises questions about the interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The flexibility of low-dimensional attractors allows multiple configuration orders (O0-O3) to emerge during learning, representing different ways grid cells can align while maintaining hexagonal periodicity. This demonstrates that weak 1D constraints allow many possible solutions to coexist as local minima in the self-organization energy landscape.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 states that 'the results of Figure 6 suggest that even across distinct rectangular environments, toroidal tuning curves will not be preserved, because there are multiple possible arrangements of the phases on the torus which emerge in different simulations.' This is problematic because experimental data show that 'the toroidal tuning curves of individual neurons remained the same in different environments,' which the model does not reproduce. The flexibility is thus inconsistent with key experimental observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The results demonstrate a proof of principle that the architecture and representation manifold of an attractor need not be topological objects of the same dimensionality, as 1D and stripe attractors produce 2D toroidal population activity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 suggests that 'given the 2D structure of the network input it perhaps isn't surprising that the network generates 2D representations and this may have little to do with its 1D connectivity,' questioning whether the dimensionality mismatch is truly a property of the attractor or simply reflects the input structure. Reviewer 2 notes this result 'is not surprising' given the 2D place cell inputs. The claim's generality as a 'proof of principle' is thus not well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Control simulations show that when attractors are inactive, weak, or shuffled, grid maps exhibit markedly lower hexagonal symmetry and fail to align, demonstrating the necessity of structured connectivity for grid alignment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 notes that 'the authors provide one additional control based on shuffling weights. However, this is far from exhaustive and it seems difficult on this basis to conclude that it is specifically the attractor dynamics that drive the emergence of coordinated grid firing.' The reviewer requested additional controls with different connectivity architectures (e.g., Gaussian or exponential weight distributions) that were not provided, leaving the specificity of the attractor requirement unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "During learning, individual grid cell spacing negatively correlates with time across all attractor conditions (R: -0.74 to -0.78), consistent with experimental observations of progressive spacing decrease and gridness increase as animals familiarize with novel environments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is presented as consistent with experimental data and no reviewer raised concerns about this specific result. The correlation values and comparison to experimental observations (Barry et al., 2007) are stated without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Three-dimensional Isomap projections visualized the twisted torus structure in all attractor conditions, though the same procedure produced different visualizations (tetrahedron or torus-like shapes) for different simulations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While reviewers did not specifically critique this visualization result, the authors themselves acknowledge in C60 that 'dimensionality reduction procedures do not provide guarantee a priori to preserve the topology of the underlying manifold.' The result is presented as descriptive visualization rather than rigorous proof, and reviewers did not challenge this specific finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The manuscript reviews established experimental findings showing that grid cells represent multiple geometries (1D, 2D, 3D) with varying periodicity, can be distorted by experimental manipulations, and develop ring rather than toroidal dynamics when animals navigate without sensory feedback.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are cited experimental findings from the literature used to motivate the study. Reviewer 2 notes that 'attractor models can be fully compatible with distortions of the hexagonal spatial response patterns' and does not challenge the experimental observations themselves, though questions the authors' interpretation of their implications for attractor models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript presents established background knowledge about grid cells: they implement hexagonal spatial codes, cells in the same module share spacing and orientation, and alignment is thought to occur through local synaptic interactions forming a two-dimensional continuous attractor.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature cited in the introduction. No reviewer challenges these background claims, which serve as the foundation for the study's motivation.",
+    "result_type": "MINOR"
+  }
+]

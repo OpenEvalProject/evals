@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The study recruited 120 Polish adolescents and young adults (60 with dyslexia, 60 controls) matched for sex, age, and socioeconomic status. MRS measurements at 7T were obtained in half the sample. The dyslexic group showed lower performance on all reading and reading-related tasks and higher ARHQ-PL scores, with lower overall IQ but no Bayesian evidence for nonverbal IQ differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C40-C42, C44-C46, C174-C176 describe the study design, sample characteristics, and group differences in behavioral measures. These are well-documented with explicit sample sizes, demographic matching, and statistical comparisons presented in Table 1. The characterization of the dyslexic group is appropriately supported by multiple behavioral assessments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C51",
+      "C54",
+      "C55",
+      "C62",
+      "C66",
+      "C98",
+      "C100"
+    ],
+    "result": "No evidence of E/I balance differences between dyslexic and control groups was found in EEG aperiodic components (exponent and offset). Bayesian statistics supported the absence of group differences, with age as the only significant predictor of these measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49-C51, C54-C55, C62, C66, C98, C100 consistently report null findings for group differences in EEG aperiodic measures across multiple analyses (mean and regional). The statistical evidence includes both frequentist (non-significant p-values, small effect sizes) and Bayesian approaches (BF values indicating evidence against group effects), providing converging support for the null result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C73",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "No group differences in aperiodic-adjusted beta power were observed, with Bayesian statistics favoring exclusion of the group factor. This contrasts with one previous study (Turri et al., 2023) that reported lower beta power in dyslexia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C108-C110 report null findings for beta power differences between groups, supported by both frequentist statistics (F(1,115)=0.05, p=0.817) and strong Bayesian evidence against group effects (BFincl<0.00001). The comparison with prior literature (C109-C110) appropriately contextualizes the findings, though methodological differences limit direct comparability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C114",
+      "C115"
+    ],
+    "result": "No evidence for group differences in Glu, GABA+, Glu/GABA+ ratio, or Glu/GABA+ imbalance was found in the left STS. Bayesian statistics indicated against including the group factor for the Glu/GABA+ ratio, while other measures showed inconclusive Bayesian evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C85, C114-C115 report null findings for MRS measures with appropriate statistical testing including covariates (GMV, age). The Bayesian evidence varies from inconclusive to favoring the null hypothesis. The sample size (n=47-50) is smaller than the EEG sample but comparable to prior studies reporting positive findings (C118), strengthening the interpretation of these null results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Age negatively correlated with EEG aperiodic components (exponent: r=-0.27, p=0.003; offset: r=-0.40, p<0.001) and with Glu concentrations, suggesting maturational changes in E/I balance. However, these age effects show contrasting patterns between EEG (increased E/I ratio) and MRS (decreased excitation) measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48, C131-C134 report age effects with appropriate statistical support and citations to prior literature. The interpretation of contrasting patterns between EEG and MRS (C132, C134) is appropriately cautious. However, the claim that EEG changes indicate 'increased E/I ratio' while MRS indicates 'decreased neuronal excitation' requires careful interpretation given the complexity of these measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C63",
+      "C64",
+      "C65",
+      "C67",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Condition-dependent changes were observed with higher offset and beta power during the language task compared to rest. Regional differences showed lower offset in temporal versus frontal regions and greater beta power in temporal versus frontal regions during the task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53, C63-C65, C67, C135-C137 report task-related modulations with strong statistical support (p<0.001, large Bayes factors). The interpretation linking offset to neuronal spiking rates (C136) is appropriately cited. These findings demonstrate that the experimental manipulation was effective and participants engaged with the task.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Glu negatively correlated with offset in the left STS both at rest (r=-0.38, p=0.007) and during the task (r=-0.37, p=0.009) after controlling for age and GMV. This correlation was not observed in zero-order correlations and involved the offset rather than the exponent, contrary to predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86, C138-C141 report a correlation between Glu and offset that only emerges after controlling for covariates (C139), which raises questions about the robustness of this relationship. The Bayesian evidence (BF10=6.28 and 5.05) provides moderate support but falls short of strong evidence. The finding contradicts predictions based on prior literature (C140), and the authors acknowledge this may reflect the strong correlation between exponent and offset (C141).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Glu/GABA+ imbalance positively correlated with the exponent at rest (r=0.35, p=0.017 in left STS), replicating a previous finding. This suggests the exponent may reflect disproportion between neurotransmitters rather than absolute levels, and that EEG and MRS may reflect distinct biological mechanisms of E/I balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87, C146-C149 report a correlation with weak Bayesian support (BF10=2.87, indicating absence of evidence). While the finding replicates prior work (C146-C147), the interpretation that the exponent reflects 'disproportion' rather than absolute levels (C148) is speculative. The broader claim that EEG and MRS reflect 'distinct biological mechanisms' (C149) requires more direct evidence beyond correlational patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C157",
+      "C158"
+    ],
+    "result": "Beta power in the left STS showed a significant indirect effect on reading through phonological awareness (b=0.66, 95% CI=[0.24, 1.18]), while direct and total effects were not significant. This mediation occurred despite no group differences in beta power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C90, C93-C97, C157-C158 report a mediation analysis with a significant indirect effect. However, the initial correlations between beta power and phonological awareness have weak Bayesian support (BF10=2.73-2.84, C90), and the mediation model shows a significant indirect effect alongside non-significant direct and total effects\u2014a pattern requiring cautious interpretation. The cross-sectional design (acknowledged in C159) limits causal inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C153"
+    ],
+    "result": "Gamma oscillations could not be analyzed because gamma peaks were not detected above the aperiodic component in most participants. This methodological limitation differs from previous dyslexia studies that did not separate aperiodic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113, C153 clearly document a methodological limitation with appropriate explanation. The authors correctly note that proper analysis of gamma oscillations requires separating aperiodic components (C112), which is not standard practice in the field (C113). This transparency about limitations is appropriate, though it prevents testing a key prediction of the neural noise hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C105",
+      "C107",
+      "C162",
+      "C163"
+    ],
+    "result": "The findings diverge from a previous Italian study (Turri et al., 2023) that reported decreased exponent and offset in dyslexia, despite the current study having twice the sample size and longer acquisition time. The results suggest the EEG spectral exponent cannot serve as a neurobiological marker for dyslexia in isolation and that the neural noise hypothesis does not fully explain reading difficulties in dyslexia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C102, C105, C107, C162-C163 appropriately compare the current null findings with prior positive findings, noting methodological advantages of the current study (larger sample, longer acquisition). The conclusion that the exponent is not a marker for dyslexia 'in isolation' (C107) is supported by the exclusion of ADHD comorbidity. The broader conclusion about the neural noise hypothesis (C162-C163) is appropriately cautious given the comprehensive null findings across multiple E/I measures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "fMRI analysis revealed greater activation in the control group compared to the dyslexic group in the left STS for words versus control stimuli. The MRS voxel was individually localized to this language-sensitive region, which is consistently implicated in dyslexia and predicted by the neural noise hypothesis to show altered glutamatergic signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120, C74-C77 describe the fMRI-guided MRS voxel placement with appropriate citations supporting the relevance of the left STS to dyslexia (C75) and the neural noise hypothesis (C76-C77). The finding of reduced activation in dyslexia (C120) is consistent with prior literature and validates the region selection. This methodological approach is more sophisticated than previous MRS studies in dyslexia.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study used 7T MRS with short echo time (28 ms) to optimize Glu measurement, though this resulted in macromolecule contamination of GABA (GABA+). Methodological comparisons suggest only slight practical advantages of 7T over optimized 3T, and the short echo time may have impacted resolution of overlapping Glu and GABA peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C130 provide transparent discussion of MRS methodology with appropriate citations. The authors acknowledge the trade-off between optimizing Glu versus GABA measurement (C125-C128) and recognize that their echo time choice may have impacted Glu/GABA ratio and imbalance measures (C129-C130). This methodological transparency is important for interpreting the null findings, though it also raises questions about whether technical limitations contributed to the lack of group differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The study's focus on adolescents/young adults and use of rest and spoken language tasks may limit generalizability. Future research should include younger populations, broader task arrays (reading, phonological processing), and examination of other brain regions beyond the left STS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C164-C166, C159-C161 appropriately acknowledge study limitations and provide reasonable recommendations for future research. The age range limitation (C164) is relevant since developmental effects were observed (C47-C48). The task limitation is valid given that the neural noise hypothesis makes predictions about reading-specific processes. The regional limitation (C166) is appropriately cautious, though the left STS was theoretically motivated (C75-C77).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The neural noise hypothesis predicts flatter 1/f slopes, decreased beta and gamma power, higher Glu concentrations, and specific relationships between these measures (flatter slopes with higher Glu; enhanced beta/gamma with increased GABA) in the dyslexic group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 clearly state the predictions derived from the neural noise hypothesis. These predictions are appropriately based on the theoretical framework (C1, C5-C6) and prior literature linking E/I balance measures (C8-C9, C16-C18, C27). The explicit statement of predictions provides a clear framework for evaluating the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "While some studies show increased trial-to-trial neural response variability in dyslexia associated with risk genes, this variability is often limited to subsets of participants, specific conditions, or brain regions. One study found no evidence for increased variability, suggesting cortical hyperexcitability may not be the primary cause of reading difficulties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C171 appropriately review literature on neural variability in dyslexia, noting both positive findings (C168) and important limitations (C169) and null results (C170). The conclusion (C171) appropriately integrates this literature with the current study's null findings regarding E/I balance. However, the leap from 'trial-to-trial inconsistency' to 'cortical hyperexcitability' conflates distinct mechanisms.",
+    "result_type": "MINOR"
+  }
+]

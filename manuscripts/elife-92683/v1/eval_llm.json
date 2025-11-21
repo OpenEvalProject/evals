@@ -1,0 +1,299 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The authors developed a novel framework that conceptualizes gene regulatory networks (GRNs) as agents navigating problem spaces toward goal states. The framework leverages curiosity-driven exploration algorithms (IMGEP) and empirical robustness tests to map the repertoire of robust goal states GRNs can reach. The framework was applied to 432 systems from 30 ODE models in the BioModels database, with all code implemented in JAX.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C43-C49, C57-C62, C66, and C123-C126 collectively describe the methodological framework and its implementation. The framework is well-documented with clear definitions of problem spaces (intervention, behavior, observation, perturbation), navigation competencies (versatility and robustness), and computational implementation. The application to a curated database of 432 systems provides empirical grounding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Curiosity search (IMGEP) significantly outperforms random search in discovering diverse reachable steady states in GRNs. At n=290 experiments, curiosity search achieves diversity equivalent to random search at n=900. For some systems, random search fails to discover latent regions revealed by IMGEP, while for others with low redundancy, both methods perform equivalently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51 and C67-C76 are supported by quantitative comparisons shown in Figure 3, including statistical significance testing (Welch's t-test, p<0.05). The diversity metric (threshold coverage) is well-defined, and the results demonstrate clear performance differences between exploration strategies. The explanation of when each strategy excels (redundancy vs. non-redundancy in I\u2192Z mapping) is logically consistent with the observed patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Empirical robustness tests inspired by behavioral sciences reveal that GRNs exhibit robust goal-reaching behavior despite perturbations. The median sensitivity across 432 systems remains relatively low for noise, push, and wall perturbations. Some systems show highly robust trajectories with complex non-linear paths that consistently reach the same endpoint despite multiple perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52 and C77-C85 describe the robustness testing methodology and results shown in Figure 5. The perturbations are well-defined and conditioned on observed behavior (C79-C81), which is a methodological strength. The sensitivity analysis provides quantitative measures across multiple perturbation types and magnitudes. The identification of extreme examples (C85) with visual evidence in Figure 5e,g supports the claim of robust navigation competencies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Energy landscape visualizations generated from curiosity search trajectories reveal previously hidden valleys of reachable states compared to random search. For the RKIP-ERK pathway, a robust region with low RKIP and high ERK (associated with tumor development) was identified. The landscape method can visualize how external cues deform the energy landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C92 are supported by the landscape visualizations in Figure 6 and citations to established methods (Li and Wang 2013, 2014; Venkatachalapathy et al. 2021). The comparison between landscapes generated from random search (Figure 6a) versus curiosity search (Figure 6b) provides clear visual evidence. The identification of the tumor-associated region (C92) is supported by citation to Lee et al. 2006.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Statistical analysis across organism classes reveals that generic and Homo sapiens GRNs exhibit higher versatility (mean 0.228-0.238) than bacteria and plant GRNs (mean 0.117-0.136). Random networks show much lower versatility (<0.026) than biological networks. Generic cell GRNs achieve pareto-optimal solutions for the versatility-robustness tradeoff, while bacteria GRNs excel at high robustness thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C93-C103 present interesting comparative patterns shown in Figure 7, but the authors acknowledge significant limitations: the database is small and may not be representative (stated in text), there is only one slime mold system (C100), and the random network model has inherent constraints (C151-C152). While the statistical comparisons are properly conducted, the generalizability of these findings is uncertain given the limited and potentially biased sample.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "For the RKIP-ERK pathway, the framework identified disease-associated robust trajectories and successfully designed a stimuli-based intervention using random search. The intervention (MEKPP modulation) successfully reset disease setpoints to healthy setpoints across all tested perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 describe a proof-of-concept therapeutic intervention shown in Figure 8. The identification of disease vs. healthy regions is supported by citation (Lee et al. 2006, C105). The intervention design is clearly described with specific parameters, and Figure 8 and its supplement demonstrate successful setpoint resetting under various perturbations. However, this is a computational demonstration on a single pathway model, not experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "In synthetic gene circuit engineering for oscillator design, curiosity search discovered 1167 oscillator configurations out of 5000 trials, compared to 42 for random search and 0 for gradient descent from random initialization. Global optimization strategies (SGD, CMA-ES) are useful for local refinement of solutions found by curiosity search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C122 describe the gene circuit engineering application shown in Figure 9. The quantitative comparison (C116-C117) provides clear evidence of curiosity search superiority for this task. The explanation of why gradient descent fails (local minima, C114) and the demonstration of its utility for local refinement (C121, Figure 9i-j) are well-supported. The results are consistent with the cited literature on optimization challenges (C113-C115).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "The final database comprised 30 curated ODE models from BioModels, totaling 432 systems after filtering. Random networks generated using the transcriptional gene circuit model failed to meet the criterion for sufficient steady states due to inherent constraints in the ODE equation structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C152 describe the database creation process with clear inclusion/exclusion criteria (C148) and acknowledge the limitation of random network generation (C151-C152). The filtering process is well-documented with specific criteria (F1-F3 mentioned in text). The explanation for random network failure (C152) is reasonable given the constraints of the gene circuit model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "Validation experiments on BIOMD0000000341 and BIOMD0000000454 confirmed that the exploration pipeline successfully rediscovered known ground truth goal states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C153-C154 describe validation experiments with systems where ground truth is known (cited: Topp et al. 2000, Smallbone 2013). Figure 3\u2014figure supplement 1 provides visual confirmation. This is an important sanity check that validates the exploration methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The authors acknowledge several limitations and propose future directions: ODE models may produce spurious behaviors not observable in vitro; the framework uses predefined problem spaces; and future work should test additional cognitive competencies, apply the framework to in vitro systems, and validate predictions experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C140 represent the authors' critical self-assessment and future directions. These are appropriately cautious statements about limitations (C128, C133) and reasonable proposals for future work (C129-C132, C135-C140). The acknowledgment of limitations strengthens rather than weakens the overall contribution by demonstrating scientific rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The introduction establishes the importance of understanding GRN control properties for biomedicine and bioengineering, reviews the current state of the field including limitations of existing approaches, and motivates the need for efficient exploration methods under resource constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 provide background and motivation supported by extensive citations to established literature. These claims accurately represent the current state of knowledge in the field and identify genuine gaps (C8-C9, C14) that motivate the authors' approach. The citations are appropriate and support the stated claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors review limitations of current therapeutic and analytical approaches: most treatments are symptom-focused rather than curative; conventional methods struggle with high-dimensional systems; network control theory requires prior knowledge; and machine learning approaches focus on structural rewiring with limited behavior space exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C42 provide a critical review of existing approaches with appropriate citations. The characterization of current limitations (C25, C27-C28, C32, C35, C37-C38) is well-supported by the cited literature. The review of alternative approaches (C39-C42) provides context for the authors' contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The findings suggest that cell phenotype could result from a flexibly reprogrammable multi-step program. The behavioral catalog can be reused for comparing network competencies across organisms and designing non-genetic interventions in biomedicine and synthetic gene networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 represent interpretations and applications of the results. C53 is appropriately cautious ('seem to suggest') and supported by citations. C54-C56 describe demonstrated applications (Figures 7-9) rather than speculative future work. These represent valid conclusions from the presented data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The computational implementation uses SBML format models, the SBMLtoODEjax library for simulation, and a custom Python library (AutoDiscJax) for interventions and perturbations, all implemented in JAX for efficient parallel computation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C144 describe the computational infrastructure with appropriate citations (Scheiner 2019 for SBMLtoODEjax). The code is archived (Etcheverry et al. 2023a) and tutorials are provided, supporting reproducibility. The technical implementation is clearly documented.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,289 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Through pull-down screening followed by BTH and BiFC validation, the authors identified CsoR as a novel CheA-interacting protein among 16 total new CheA-interacting proteins in P. putida.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The multi-tiered validation approach (pull-down MS, BTH, BiFC) provides strong converging evidence for the CheA-CsoR interaction. The pull-down identified 43 proteins with Log2(fold change)>2, including known CheA partners (CheY, CheZ) as positive controls (C46-C48), and subsequent orthogonal validation confirmed 16 of 19 candidates (C49-C50), demonstrating methodological rigor.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "CsoR interacts with the HPT (P1), Dimer (P3), and HATPase_c (P4) domains of CheA, with the Dimer domain playing the primary role in this interaction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Domain mapping using truncated CheA variants in BTH assays clearly demonstrates that deletion of P1, P3, or P4 abolishes interaction (C58), while deletion of P2 or P5 maintains interaction (C59). Individual domain testing confirms P3 as the strongest interactor (C60), with P1 and P4 showing weaker interactions (C61-C62). The experimental design is sound and conclusions are well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C51",
+      "C53",
+      "C54",
+      "C56",
+      "C57"
+    ],
+    "result": "CsoR inhibits CheA autophosphorylation in a dose-dependent manner without possessing ATPase activity or affecting CheA-CheY phosphotransfer, resulting in decreased bacterial chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The phosphorylation assays demonstrate dose-dependent inhibition of CheA autophosphorylation by CsoR (C53-C54), with appropriate controls ruling out alternative mechanisms such as ATPase activity (C56) or interference with phosphotransfer (C57). The functional consequence is validated by chemotaxis assays showing reduced colony diameter upon CsoR overexpression (C51). The mechanistic chain is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "CsoR inhibition of CheA autophosphorylation results in decreased chemotaxis, and this inhibition is relieved by copper binding to CsoR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Chemotaxis assays demonstrate that CsoR overexpression reduces chemotaxis by ~40% in the absence of copper (C89), but only ~20% in the presence of 200 \u03bcM Cu\u00b2\u207a (C90). The copper-binding deficient mutant CsoRC69A maintains inhibition regardless of copper presence (C91), establishing that copper binding to CsoR is necessary for relief of inhibition. The genetic and biochemical evidence converge effectively.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "CsoR binds Cu\u00b2\u207a with high affinity (Kd = 5.5 \u00b1 1.98 \u03bcM) and shows weaker binding to Ni\u00b2\u207a and Zn\u00b2\u207a, with no apparent binding to Co\u00b2\u207a, Cd\u00b2\u207a, or Mg\u00b2\u207a.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MST assays provide quantitative binding constants for multiple metal ions (C63-C65), with Cu\u00b2\u207a showing the strongest affinity. The negative results for Co\u00b2\u207a, Cd\u00b2\u207a, and Mg\u00b2\u207a (C66) serve as appropriate controls. The Kd values are reported with error estimates, and the metal specificity is consistent with CsoR's known function as a copper-responsive regulator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C67",
+      "C68",
+      "C69",
+      "C72",
+      "C73"
+    ],
+    "result": "CsoR binds to promoters of copper-resistance genes to weakly repress their expression, and copper binding releases CsoR from these promoters, though CsoR is not required for copper-induced gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EMSA demonstrates dose-dependent CsoR-DNA binding (C72) that is disrupted by Cu\u00b2\u207a (C73). However, qRT-PCR shows only a modest 1.3-fold increase in gene expression upon csoR deletion (C67), and no difference between WT and \u0394csoR in copper-induced expression (C69), indicating CsoR plays a minor regulatory role. The authors appropriately acknowledge this limitation and discuss the presence of other dominant regulators (CueR, CopR).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Copper binding weakens the CheA-CsoR interaction in a dose-dependent manner, with the binding constant increasing from 0.17 \u00b1 0.1 \u03bcM (no copper) to 2.15 \u00b1 0.97 \u03bcM (200 \u03bcM Cu\u00b2\u207a).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "MST assays demonstrate dose-dependent weakening of CheA-CsoR interaction with increasing copper concentrations (C79-C81), corroborated by pull-down assays showing decreased CsoR binding to CheA with increasing Cu\u00b2\u207a (C82). The use of two independent methods strengthens the conclusion, and the quantitative Kd measurements provide mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C88"
+    ],
+    "result": "The Cys69 residue of CsoR is critical for copper binding and for copper-mediated relief of CheA autophosphorylation inhibition, while Cys40 and His65 play minor roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Point mutation analysis shows CsoRC69A has significantly reduced copper binding (C83), and copper addition has minimal effect on CsoRC69A-CheA interaction (C86) or on CsoRC69A inhibition of CheA autophosphorylation (C88). In contrast, CsoRC40A and CsoRH65A retain copper responsiveness (C85). The mutagenesis strategy effectively identifies the critical residue, consistent with prior structural studies on CsoR homologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C13",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "P. putida exhibits a CheA-dependent chemorepellent response to copper, and CsoR inhibits this chemorepellent response as evidenced by increased RI values upon CsoR overexpression and decreased RI values in \u0394csoR mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary assays demonstrate copper chemorepellence: semisolid plate assays show oval swimming zones in copper gradients (C92), RI value analysis quantifies the response (C93-C94), and \u0394cheA mutants show no chemotaxis (C95, C98). Time-lapse microscopy confirms directional migration away from copper (C97). The CheA-dependence and CsoR's inhibitory role are well-established through genetic complementation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "CsoR inhibits the chemorepellent response to copper without affecting bacterial migration speed, while CheA positively regulates migration speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Center of mass analysis from cell tracking shows CsoR overexpression reduces directional migration toward lower copper concentrations (C99-C100), while velocity measurements show no effect of CsoR on migration speed (C101). The \u0394cheA mutants show reduced velocity (C102), distinguishing CheA's role in motility from CsoR's role in chemotaxis direction. The quantitative single-cell tracking provides robust evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The CheA-CsoR interaction exists in proteins from A. caldus, B. subtilis, P. syringae, and P. stutzeri, but not in B. diazoefficiens, L. monocytogenes, or P. fluorescens, suggesting this regulatory mechanism may be conserved in some but not all bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BTH assays with heterologous protein pairs demonstrate interaction in 4 of 7 tested species (C103-C104), with varying interaction strengths (C105-C106). The negative results in some species are appropriately reported. However, the functional significance of these interactions in other species remains untested, limiting conclusions about conservation of the regulatory mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C52",
+      "C55"
+    ],
+    "result": "PhaD, like CsoR, inhibits CheA autophosphorylation in a dose-dependent manner without phosphate transfer between CheA and PhaD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Phosphorylation assays demonstrate that PhaD inhibits CheA autophosphorylation dose-dependently (C55) without accepting phosphate from CheA (C52). The parallel characterization of PhaD alongside CsoR provides internal validation of the experimental approach. However, the functional significance and copper-responsiveness of the CheA-PhaD interaction are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Cu\u207a (reduced from Cu\u00b2\u207a by DTT) has a stronger inhibitory effect than Cu\u00b2\u207a on CsoR-DNA interaction, and other metal ions (Ni\u00b2\u207a, Zn\u00b2\u207a, Cd\u00b2\u207a) show weaker effects while Co\u00b2\u207a and Mg\u00b2\u207a show no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "EMSA experiments demonstrate that DTT enhances Cu\u00b2\u207a inhibition of CsoR-DNA binding (C74), supporting the inference that Cu\u207a is the preferred ligand (C75). The metal specificity profile (C76-C77) is consistent with MST binding data and provides mechanistic insight. The use of DTT as a reducing agent is well-justified by prior literature (C122).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C70",
+      "C78"
+    ],
+    "result": "Deletion of cheA or csoR has no significant effect on bacterial growth under copper stress or on the expression of copper-resistance genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Growth assays show no difference between WT, \u0394csoR, and \u0394cheA under various copper concentrations (C78), and qRT-PCR shows cheA deletion has no effect on copper-resistance gene expression (C70). These negative results are important controls demonstrating that the CheA-CsoR interaction primarily affects chemotaxis rather than copper resistance per se. The authors appropriately discuss this in the context of redundant copper resistance mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "CsoR represses the expression of multiple metal resistance genes beyond copper, including genes for nickel, cadmium, cobalt, and zinc resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qRT-PCR demonstrates that CsoR represses expression of nikB, cadA-I, cadA-III, cbtA, czcC-I, czcB-II, and PP_0026 to a similar degree as copper resistance genes (C71). This suggests CsoR may have broader metal-responsive regulatory functions. However, the functional significance and metal-specificity of these regulatory effects are not explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C9"
+    ],
+    "result": "Copper binding to CsoR relieves its inhibition of CheA autophosphorylation and chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "In vitro phosphorylation assays show that adding CsoR plus copper results in weaker inhibition of CheA autophosphorylation compared to CsoR alone (C87), and chemotaxis assays demonstrate that copper relieves CsoR's inhibition of chemotaxis (C9). The convergence of biochemical and behavioral evidence supports the proposed regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors propose a model where free CsoR (under low copper) inhibits both gene expression and CheA autophosphorylation, while copper-bound CsoR (under high copper) releases from DNA and CheA, increasing both copper resistance and chemotaxis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proposed model (C107-C110) integrates the experimental findings into a coherent regulatory framework. While the model is largely supported by the data, some aspects are inferred rather than directly demonstrated (e.g., CsoR tetramerization is cited from prior work but not shown here). The model appropriately acknowledges that conformational changes upon copper binding are based on prior structural studies of CsoR homologs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "CsoR and PhaD show no sequence or structural similarity despite both inhibiting CheA autophosphorylation through interaction with the same CheA domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BLAST analysis shows no sequence similarity (C119), and structural comparison using AlphaFold predictions shows high RMSD (13.151), indicating no structural similarity (C120). This suggests convergent evolution of CheA-inhibitory function. However, the structural analysis relies on predicted rather than experimentally determined structures, which is a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "Point mutations in copper-binding residues (C40A, H65A, C69A) do not affect CsoR's ability to interact with CheA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "BTH assays demonstrate that all three point-mutated CsoRs interact with CheA with similar intensity to wild-type CsoR (C84). This important control establishes that the copper-binding site and CheA-binding site are distinct, supporting the model that copper binding induces conformational changes that indirectly affect CheA interaction.",
+    "result_type": "MINOR"
+  }
+]

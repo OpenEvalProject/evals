@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C46",
+      "C49",
+      "C54",
+      "C55",
+      "C56",
+      "C179",
+      "C180"
+    ],
+    "result": "The authors collected 564 ATAC-Seq samples from sorted cell populations across 12 studies, covering 10 major cell types (B cells, CD4+ T cells, CD8+ T cells, NK cells, dendritic cells, macrophages, monocytes, neutrophils, fibroblasts, and endothelial cells) frequently observed in the tumor microenvironment. These samples were homogeneously processed to limit batch effects, and stable peaks observed across samples and studies were derived for each cell type to build reference profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C46, C49, C54, C179, and C180 are directly supported by the data collection and processing methodology described in the manuscript. The collection of 564 samples from 12 studies (C54) with homogeneous processing (C55) and derivation of stable peaks (C56) provides a solid foundation for the reference profiles. Figure 2A and Supplementary file 1 provide supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Cell-type specific marker peaks were identified through pairwise differential accessibility analysis, including ENCODE tissue samples to ensure markers were not accessible in other human tissues. After filtering using the human atlas study to exclude markers accessible in other tissues, 716 TME markers remained for tumor deconvolution and a separate set of PBMC markers was created for PBMC sample deconvolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The marker peak identification methodology is well-documented across claims C50-C64. The differential analysis approach (C57), inclusion of ENCODE samples (C58), filtering using the human atlas (C60), and refinement based on TCGA correlation patterns (C63) represent a rigorous multi-step process. The final count of 716 TME markers (C64) is explicitly stated and supported by Figure 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Principal component analysis based on marker peaks showed that samples clustered by cell type rather than study of origin, with averaged silhouette coefficients above 0.45 for cell type and around 0 for study of origin, indicating limited remaining batch effects after data processing and marker selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by the PCA analysis results. The silhouette coefficient values (C67) provide quantitative evidence for clustering by cell type, and Figure 2B and Figure 2\u2014figure supplement 1 provide visual confirmation (C68). The inference about limited batch effects (C69) is reasonable given the quantitative metrics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76"
+    ],
+    "result": "The selected marker peaks demonstrated cell-type specificity in the reference dataset and were validated in independent ATAC-Seq data from sorted cells and single-cell ATAC-Seq samples. Most markers were located in distal and intergenic regions, with 7% in promoter regions compared to 4% in randomly selected peaks, suggesting enrichment for important regulatory regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 are supported by multiple lines of evidence. Figure 2C shows cell-type specificity in the reference dataset, while Figure 2D and 2E confirm this in independent data (C72). The genomic location analysis (C73, C75) is supported by Figure 2F, and the inference about regulatory region enrichment (C76) is reasonable based on the promoter enrichment comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C83"
+    ],
+    "result": "Marker peaks were annotated using ChIP-Enrich to identify nearest genes and tested for enrichment of chromatin binding proteins (CBPs) from JASPAR2022 and ReMap databases, as well as enrichment in biological pathways. The analyses demonstrated that the marker peaks capture known biological properties associated with each cell type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The annotation analyses (C77-C81) are methodologically sound and supported by the data. The use of multiple databases (JASPAR2022, ReMap) and enrichment analysis tools provides robust evidence. Figure 2G and Table 1 support the findings. The conclusion that marker peaks capture known biological properties (C83) is a reasonable inference from the enrichment results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C47",
+      "C53",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C94",
+      "C96"
+    ],
+    "result": "The cell-type specific marker peaks and reference profiles were integrated into the EPIC deconvolution framework, creating EPIC-ATAC. The framework includes options for genome build compatibility (hg19 to hg38 liftover), feature matching between input data and reference profiles, and TPM-like normalization of ATAC-Seq counts before cell-type proportion estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C47, C53, C84-C96 describe the methodological integration of the marker peaks and profiles into EPIC. The framework is well-documented with clear steps for data processing, normalization, and deconvolution. The TPM-like transformation (C92, C94) is justified by citations to prior work (C93). The methodological choices are appropriate for ATAC-Seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C48",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "EPIC-ATAC was validated on bulk ATAC-Seq data from five healthy donor PBMCs with matched flow cytometry data, showing predicted cell fractions consistent with flow cytometry measurements (Pearson correlation 0.78, RMSE 0.10). However, accuracy varied across samples, with one outlier sample (Sample4) showing larger discrepancies, possibly due to unusually high ATAC-Seq accessibility at monocyte and dendritic cell marker peaks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C48, C98-C105 are supported by the experimental validation. The correlation and RMSE values (C101) provide quantitative evidence of accuracy. The identification of Sample4 as an outlier (C103) and the proposed explanation based on marker peak accessibility (C104, C105) are supported by Figure 3B and Figure 3\u2014figure supplement 1. The acknowledgment of variable accuracy (C102) demonstrates appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C106",
+      "C107"
+    ],
+    "result": "EPIC-ATAC was validated on pseudobulk PBMC samples generated from three publicly available scATAC-Seq datasets, showing high correlation (0.91) and low RMSE (0.05) between predictions and true cell-type proportions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106 and C107 are supported by the pseudobulk validation results. The high correlation and low RMSE values are explicitly stated and supported by Figure 3C. The use of multiple independent scATAC-Seq datasets strengthens the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "EPIC-ATAC was benchmarked against other deconvolution tools (DeconPeaker, CIBERSORTx, quanTIseq, ABIS, MCPcounter) using the same reference profiles and marker peaks. Many tools displayed high correlation and low RMSE values similar to EPIC-ATAC, with no single tool consistently outperforming others, demonstrating the broad applicability of the curated marker peaks and reference profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115 are supported by the benchmarking analysis. The comparison methodology (C108-C110) is appropriate, and the results (C114) are supported by Figure 3D-E and Figure 3\u2014figure supplement 2. The inference about broad applicability (C115) is reasonable given that multiple tools performed well with the same reference data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "EPIC-ATAC was evaluated on cancer pseudobulk samples from basal cell carcinoma, gynecological cancer, and HTAN datasets, demonstrating the ability to simultaneously predict proportions of both uncharacterized cells (serving as a proxy for cancer cells in most cases) and immune, stromal, and vascular cells across most cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C123 are supported by the cancer sample validation. The methodology (C117, C118) is appropriate, and the results (C119, C123) are supported by Figure 4A and Figure 4\u2014figure supplement 1. The interpretation that uncharacterized cells serve as a proxy for cancer cells (C120) is reasonable, with appropriate caveats for the HTAN dataset (C121, C122).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "In benchmarking on cancer datasets, EPIC-ATAC achieved the highest performance and was the only method to accurately predict uncharacterized cell proportions. When excluding uncharacterized cells from the evaluation, EPIC-ATAC still outperformed most other methods. The advantage of EPIC-ATAC and quanTIseq in predicting absolute cell-type fractions (including uncharacterized cells) was significant compared to tools that only predict relative fractions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C133 are supported by the benchmarking results on cancer datasets. The superior performance of EPIC-ATAC (C125) is documented in Figure 4B and related supplements. The comparison with quanTIseq (C126) and the two-benchmark approach (C132, C133) demonstrate rigorous evaluation. The distinction between absolute and relative fractions (C127-C129) is an important methodological consideration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "Cell-type-specific evaluation of EPIC-ATAC predictions revealed that NK cells, endothelial cells, neutrophils, and dendritic cells showed lower correlation values, explained by their low abundance in benchmarking datasets. For endothelial and dendritic cells, low RMSE values suggest reliable within-sample quantification despite lower between-sample precision. NK cells and neutrophils showed higher variability, suggesting potential for improvement in their markers and profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C141 are supported by the cell-type-specific analysis. The observation of lower correlations for certain cell types (C136) and the explanation based on abundance (C137) are supported by Figure 5A. The distinction between endothelial/dendritic cells (C138, C139) and NK/neutrophils (C140) based on RMSE values is appropriate. The comparison with other tools (C141) is supported by Figure 5\u2014figure supplements 1 and 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "EPIC-ATAC was evaluated for predicting T-cell subtype proportions (naive and non-naive CD8+, naive, helper/memory, and regulatory CD4+ T cells). Correlations between predictions and true proportions decreased when considering T-cell subtypes compared to major CD4+ and CD8+ populations, with particularly low accuracies for helper/memory CD4+ and naive T-cell subtypes. Similar results were obtained with other deconvolution tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C149 are supported by the T-cell subtype analysis. The methodology (C142-C144) is appropriate, and the validation of markers in external data (C145) is documented in Figure 5\u2014figure supplement 3B. The decreased performance for subtypes (C147, C148) is supported by Figure 5B-C, and the comparison with other tools (C149) is shown in Figure 5\u2014figure supplement 4. This represents an honest assessment of the method's limitations for closely related cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C6",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "EPIC-ATAC was applied to a breast cancer cohort of 42 samples (35 ER+/HER2- and 7 TNBC), showing high correlation (0.5-0.94) with the original study's cell-type infiltration metric. EPIC-ATAC identified higher proportions of T, B, and NK cells in TNBC versus ER+/HER2- samples, and differences in cellular composition among ER+/HER2- subgroups (CA-A, CA-B, CA-C), largely recapitulating findings from the original study with some differences in myeloid cell quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C150-C162 are supported by the breast cancer cohort analysis. The high correlation with the original study's metric (C155) is documented in Figure 6A. The differences between breast cancer subtypes (C156) and subgroups (C158, C159) are supported by Figure 6B-C. The comparison with the original study (C160) and the additional findings for macrophages (C161) and NK cells (C162) demonstrate both validation and novel insights. This represents a successful real-world application of EPIC-ATAC.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Comparison of EPIC-ATAC (on ATAC-Seq data) with EPIC-RNA (on RNA-Seq data) using single-cell multiomic data from 10x PBMC and HTAN datasets showed that EPIC-ATAC performs similarly to EPIC RNA-seq-based deconvolution and outperforms gene activity (GA)-based RNA deconvolution. The lower performance of GA-based deconvolution was attributed to imperfect matching between GA features and transcriptomic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C171 are supported by the modality comparison analysis. The methodology using multiomic data (C164, C165) is appropriate for direct comparison. The results (C170) are supported by Figure 7A-B. The explanation for GA-based deconvolution's lower performance (C171) is a reasonable inference. This comparison provides important context for understanding EPIC-ATAC's performance relative to established RNA-seq methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "On bulk PBMC samples with matched ATAC-Seq, RNA-Seq, and flow cytometry data, EPIC-ATAC predictions were better correlated with flow cytometry for some cell types (CD8+, CD4+ T cells, NK cells) while EPIC-RNA predictions were better for others (B cells, neutrophils, monocytes). Averaging predictions from both modalities showed moderate improvement, suggesting the two modalities can complement each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C178 are supported by the matched bulk data analysis. The cell-type-specific performance differences (C174, C175) are documented in Figure 7C. The moderate improvement from averaging (C177) and the inference about complementarity (C178) are supported by the data. This represents an important finding about the potential for multi-modal deconvolution approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C186",
+      "C188"
+    ],
+    "result": "EPIC-ATAC framework allows accurate prediction of uncharacterized cell proportions (cells not included in reference profiles), which approximates the proportion of cancer cells in most cases since major TME cell types are included in the reference profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186 and C188 are supported by the cancer dataset validation results shown in Figure 4 and Figure 4\u2014figure supplement 1. The ability to predict uncharacterized cells is a key distinguishing feature of EPIC-ATAC compared to other tools (C125). The inference that uncharacterized cells approximate cancer cells (C188) is reasonable given the comprehensive coverage of TME cell types in the reference profiles, though appropriate caveats are noted (C187).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "The evaluation of EPIC-ATAC deconvolution resulted in an average absolute error of 8% across cell types, consistent with previous observations in RNA-Seq data deconvolution. Given this uncertainty, quantification of low-frequency populations remains challenging, and comparisons of such estimations across samples should be performed with care.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C199-C202 provide an honest assessment of EPIC-ATAC's accuracy and limitations. The 8% average error (C199) is explicitly stated and consistent with prior RNA-Seq deconvolution work (C200, supported by citation to Racle et al., 2017). The acknowledgment of challenges with low-frequency populations (C201, C202) is supported by citation to Jin and Liu, 2021 and by Figure 5A. This represents appropriate scientific caution about the method's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "Cell-type deconvolution reaches a limitation when closely related cell types are considered. In this study, this limit was reached when considering T-cell subtypes in the reference profiles. The authors recommend using EPIC-ATAC with markers and reference profiles based on major cell-type populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C203-C205 are supported by the T-cell subtype analysis results (Figure 5B-C and Figure 5\u2014figure supplement 4). The acknowledgment of this limitation (C203, C204) is based on empirical evidence showing decreased performance for T-cell subtypes. The recommendation to use major cell-type populations (C205) is a reasonable inference from these results. This represents honest reporting of method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C208"
+    ],
+    "result": "Comparison of EPIC-ATAC applied on ATAC-Seq data with EPIC applied on RNA-Seq data showed that both modalities led to similar performances and could complement each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C208 is supported by the modality comparison results shown in Figure 7. Both the pseudobulk analysis (Figure 7A-B) and the bulk PBMC analysis (Figure 7C) demonstrate similar performance between ATAC-Seq and RNA-Seq based deconvolution, with evidence of complementarity when predictions are combined (C177, C178).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C220",
+      "C221",
+      "C222"
+    ],
+    "result": "The authors identified biologically relevant cell-type specific chromatin accessibility markers and profiles for most non-malignant cell types in the tumor microenvironment, capitalized on these to predict cell-type proportions from bulk PBMC and tumor ATAC-Seq data, and demonstrated reliable predictions of immune, stromal, vascular, and cancer cell proportions across diverse tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C220-C222 summarize the main contributions of the study. The identification of markers and profiles (C220) is supported by the data collection and analysis (C3, C46, C54, C71-C83). The prediction of cell-type proportions (C221) is supported by the EPIC-ATAC framework development (C4, C47, C84-C96). The demonstration of reliable predictions (C222) is supported by multiple validation analyses (C101, C107, C119, C155). These claims represent an accurate summary of the study's major findings.",
+    "result_type": "MAJOR"
+  }
+]

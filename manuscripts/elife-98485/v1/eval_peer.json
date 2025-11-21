@@ -1,0 +1,233 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50"
+    ],
+    "result": "The authors developed miniML, a supervised deep learning method using a CNN-LSTM architecture trained on ~30,000 labeled synaptic events. The model achieved 98.4% validation accuracy and an area under the ROC curve close to 1, with saliency analysis showing the model focuses on peak regions of events.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm the development and performance of miniML. Reviewer 1 states the 'benchmark results presented in the paper are compelling, demonstrating the superiority of miniML.' Reviewer 2 notes the authors 'utilize a supervised deep learned-based method to optimize the software.' Reviewer 3 confirms 'miniML outperforms current methods for simulated events' and that 'the training process along with other technical issues are now described in a satisfactory level of detail.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Benchmarking against five state-of-the-art methods using simulated ground-truth data showed miniML achieved the highest precision (no false positives at any SNR), highest recall values alongside deconvolution, highest F1 scores, superior robustness to variable event kinetics, and consistent performance over a wide threshold range (5-195%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers unanimously support the benchmarking results. Reviewer 1 describes them as 'compelling, demonstrating the superiority of miniML over current state-of-the-art alternatives.' Reviewer 3 states 'Compared to five other state-of-the-art methods, miniML leads to the highest detection rates and is most robust to specific choices of threshold values' and later confirms 'The performance of mini ML is thoroughly explored and compared to several benchmarks.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C53",
+      "C54"
+    ],
+    "result": "miniML generalized across diverse experimental preparations including mouse cerebellar MF-GC synapses, calyx of Held, Golgi cells, human iPSC-derived neurons, zebrafish telencephalon, and Drosophila NMJ, detecting events with varying kinetics and resolving genetic perturbations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the generalization capability. Reviewer 2 states 'miniML is able to quantify and standardize the analyses of miniature events, using both voltage and current clamp electrophysiology, as well as optically driven events using iGluSnFR3, in a variety of preparations, including in the cerebellum, calyx of held, golgi cell, human iPSC cultures, zebrafish, and Drosophila.' Reviewer 1 notes 'The performance of miniML is demonstrated across various experimental paradigms.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C51",
+      "C52",
+      "C62"
+    ],
+    "result": "Transfer learning (TL) enabled effective model adaptation with as few as 400-500 labeled samples, achieving accuracy (95.4%) only slightly lower than full training with 10x more samples, and TL-trained models performed comparably to those trained from scratch across different datasets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly highlights this as a 'major strength of miniML' stating 'This Transfer Learning (TL) strategy reduces computation time significantly and more importantly, it allows for using a substantially smaller data set (compared to training a full model) which is crucial as training is supervised.' Reviewer 2 notes 'the software appears to be flexible, in that users are able to hone and adapt the software to new preparations and events.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Event frequencies detected by miniML were highly similar and correlated between voltage-clamp (0.49 Hz) and current-clamp (0.54 Hz) recording modes in the same neurons.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is implicitly supported as part of the broader generalization claims. Reviewer 2 explicitly states miniML works 'using both voltage and current clamp electrophysiology' without raising concerns about the quantitative comparison between modes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Analysis of zebrafish telencephalon neurons revealed broad distributions of event statistics with correlations between decay and rise times across neurons, and negative correlation between input resistance and decay times, consistent with cell size effects on event propagation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These biological findings are implicitly accepted as part of the demonstration of miniML's capabilities. Reviewer 2 notes miniML's application 'in a variety of preparations, including...zebrafish' without questioning the biological interpretations derived from the detected events.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In Drosophila GluRIIA mutant NMJs, miniML detected a 54% reduction in mEPSC amplitude, 64% reduction in event frequency, and faster decay/rise times (-58%/-18%) compared to wildtype, consistent with previous reports.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This genetic validation is accepted without critique. Reviewer 1 states miniML 'showing that miniML has the potential to become a valuable tool' and Reviewer 3 notes the method 'presents compelling results for real data across experimental paradigms and species,' implicitly accepting the Drosophila genetic perturbation results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C55"
+    ],
+    "result": "miniML reliably detected optical synaptic events in iGluSnFR3 recordings with kinetics similar to previous reports and revealed power-law distribution of event frequencies consistent with fractal glutamate release behavior.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states miniML works with 'optically driven events using iGluSnFR3' and notes the software's utility across different recording techniques. The biological interpretations (power-law distribution) are not questioned by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C57"
+    ],
+    "result": "miniML detected ~40% of mEPSPs in ASAP5 voltage imaging data despite lower SNR (2.26) compared to electrophysiology (4.79), demonstrating superior recall versus template matching/deconvolution and confirming ASAP5's linear reporting of subthreshold voltage changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This challenging application is accepted by reviewers as demonstrating miniML's versatility. Reviewer 1 notes the method's demonstration 'across various experimental paradigms' and Reviewer 3 states the results are 'compelling...for real data across experimental paradigms,' which includes the voltage imaging application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Model performance gain was marginal (<0.2%) when exceeding 5000 training samples, indicating relatively small datasets suffice for effective training.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is implicitly accepted as part of the overall training methodology. Reviewer 3 notes that 'the training process along with other technical issues are now described in a satisfactory level of detail' without raising concerns about sample size requirements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C15",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "miniML provided clear peaks for all synaptic events without false positives, effectively eliminating the trade-off between false positive and false negative rates, enabling automated analysis without manual inspection.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this key advantage. Reviewer 1 states miniML demonstrates 'superiority...over current state-of-the-art alternatives.' Reviewer 2 notes it 'enables the quantification of electrophysiological events' and 'should now be of considerable benefit and utility.' Reviewer 3 confirms miniML 'yields highly accurate detection rates' and is 'robust.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Despite its deep learning approach, miniML runs at relatively rapid speed on commodity hardware.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This practical consideration is implicitly accepted. Reviewer 2 notes the software 'enables users to adapt new features using Python' and that it 'should now be of considerable benefit and utility to a variety of researchers,' suggesting practical usability including computational efficiency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establishing that spontaneous synaptic events carry fundamental information about synaptic function and plasticity, but their stochastic nature and low SNR present analysis challenges.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are standard background claims supported by citations. No reviewer questions these foundational statements, which are accepted as established knowledge motivating the need for improved analysis methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C63",
+      "C64",
+      "C66",
+      "C68",
+      "C70"
+    ],
+    "result": "Speculative claims about future potential improvements and applications, including that more extensive training may improve voltage imaging performance, the method could extend to other fields, and unsupervised learning approaches might reduce annotation requirements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These forward-looking statements are accepted without objection. Reviewer 2 states 'this new software has the potential to become widely used in the field and an asset to researchers' and Reviewer 3 notes miniML 'has a great potential to become a valuable tool,' affirming the optimistic outlook.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C67"
+    ],
+    "result": "Acknowledged limitations that miniML requires labeled training data and that overlapping events at very high frequencies remain challenging to separate.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These limitations are implicitly accepted as reasonable. Reviewer 3 initially requested clarification about balanced datasets and training details, which the authors addressed satisfactorily, as the reviewer states 'They answered all claims and concerns raised by me and the other reviewers.'",
+    "result_type": "MINOR"
+  }
+]

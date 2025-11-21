@@ -1,0 +1,180 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "NAP-CNB is a machine learning-based platform that uses RNA-seq data and LSTM neural networks to predict tumor neoantigens based on MHC I affinity, with performance comparable or superior to existing methods (95% AUC for H-2Kb). The platform is fully automated, freely available, and includes a post-processing step for robust scoring.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers accept the platform's capabilities without critique. Reviewer 1 states the study demonstrates 'the importance of incorporating RNAseq and machine learning approaches for neoantigen prediction' with 'convincing' evidence. Reviewer 2 acknowledges 'the machine learning approach to the prediction can reveal very useful information for the selection of neoantigens.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "In vivo validation using B16 F10 melanoma showed that NAP-CNB-predicted neoantigens (*Pnp, *Adar, *Lrrc28, *Wiz) elicited robust immune responses in mice as measured by IFN\u03b3-secreting cells and CD8+ T-cell activation markers, while the predicted non-immunogenic control (*Herc6) showed no response, validating the platform's predictions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states as a strength that 'They proved in vivo that in silico-predicted neoantigens can trigger antitumor response in mice.' Reviewer 1 finds the overall evidence 'convincing.' Neither reviewer questions the immunogenicity data or experimental design for these assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Tumor challenge experiments demonstrated variable antitumor efficacy among individual neoantigens: *Herc6 and *Adar showed no protection, *Pnp and *Lrrc28 showed partial protection (50-75% success), while *Wiz (high expression) and the positive control Trp2 showed maximum effectiveness (100% success at day 15). The highly expressed *Wiz neoantigen provided optimal antitumor activity despite weaker immunogenicity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledges as a strength that 'The authors demonstrated that RNA expression of a neoantigen is very important factor in the selection of peptides for the creation of personalized vaccines.' Reviewer 1 accepts these findings as part of the 'convincing' evidence. The differential efficacy based on expression levels is central to the reviewers' positive assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C37"
+    ],
+    "result": "The study found that optimal antitumor activity was observed when targeting the antigen with higher expression in the tumor (*Wiz), which was not the most immunogenic, suggesting that prioritizing TNAs with higher expression levels is a more promising approach even if they elicit comparatively weaker immunogenic responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is explicitly highlighted by Reviewer 2 as a key strength: 'The authors demonstrated that RNA expression of a neoantigen is very important factor in the selection of peptides.' Reviewer 1 notes this contributes 'important information towards the selection of neoantigens for personalized antitumor vaccination.' Both reviewers accept this as a significant contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C38"
+    ],
+    "result": "Vaccination with a mixture of three predicted neoantigens (*Pnp, *Adar, *Lrrc28) induced strong antitumor responses comparable to or better than the positive control Trp2, with significantly increased survival and 100% effectiveness, demonstrating the value of multiantigen-based approaches for preventing immune escape.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers accept this finding without critique. Reviewer 1 states the findings 'contribute important information towards the selection of neoantigens for personalized antitumor vaccination,' implicitly accepting the multiantigen approach. Reviewer 2 does not question this result, and it aligns with their acknowledgment of the study's demonstration of effective neoantigen selection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The selection criteria for peptides tested included three top-scored TNAs with varying expression levels (*Pnp, *Adar, *Lrrc28), one bottom-scored negative control (*Herc6), and one top-scored peptide revealed after post-processing (*Wiz) to test the advantage of the post-processing step.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises a specific concern: 'The selection of the peptides for vaccination is not clear. Some peptides were selected before and some after processing. What processing is also not clear.' The reviewer notes this was addressed in responses but 'didn't include that in the revised manuscript. I think all that information should be in the manuscript,' indicating incomplete documentation of the selection rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C45",
+      "C51"
+    ],
+    "result": "The study demonstrates that pure in silico machine learning approaches can effectively identify tumor neoantigens that induce strong antitumor protection, addressing a recognized critical need for algorithmic validation and bolstering prospects for translating TNA identification into practical personalized cancer treatments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the findings 'contribute important information towards the selection of neoantigens for personalized antitumor vaccination' and finds the evidence 'convincing.' Reviewer 2 acknowledges the study shows 'RNAseq can be used for neoantigen prediction and the machine learning approach...can reveal very useful information.' Both reviewers accept the broader implications of the validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study employed standard experimental methods including C57BL/6J mice, Freund's adjuvant vaccination protocols, B16 F10 melanoma tumor challenges, ELISpot and ICS assays for immune response assessment, and appropriate statistical analyses, all conducted under approved ethical guidelines.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer raises concerns about the experimental methods, protocols, or statistical approaches. Reviewer 1 finds the evidence 'convincing' overall, and Reviewer 2's concerns are limited to documentation of peptide selection rationale rather than methodological execution. The methods are implicitly accepted as appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C39",
+      "C44",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The manuscript provides background context on challenges in cancer immunotherapy (low response rates, side effects, need for tumor-specific antigens), the emerging role of deep learning approaches in neoantigen prediction, and the potential impact of rapid neoantigen identification for personalized treatments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Neither reviewer questions the background context or motivation for the study. These claims establish the rationale that both reviewers implicitly accept, as evidenced by their agreement that the study addresses an important problem in neoantigen selection for personalized vaccination.",
+    "result_type": "MINOR"
+  }
+]

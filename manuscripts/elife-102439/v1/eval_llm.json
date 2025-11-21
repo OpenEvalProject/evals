@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "W3110 surface motility requires type 1 pili but not flagella. Deletion of fimA (pili subunit) reduced surface motility and abolished oscillatory patterns, while deletion of fliC (flagellum subunit) had no effect. Electron microscopy confirmed pili presence and flagella absence, and glucose suppression of swimming motility further supports that flagella are not involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C33-C42 provide converging evidence from genetic deletions (C33-C34), electron microscopy (C35-C37, C42), and glucose effects (C38-C40) that consistently demonstrate pili requirement and flagella dispensability for W3110 surface motility. The multiple independent experimental approaches strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "W3110 contains an IS1 insertion in fimE that likely explains its relative genetic stability and consistent motility phenotype. FimE normally favors the unproductive OFF orientation of the fim operon promoter, so its inactivation would stabilize the ON orientation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 present genome sequencing data (C43) identifying the IS1 insertion and logically connect this to the observed phenotype (C44, C47) based on established knowledge of FimE function (C45-C46). The inference is reasonable given the known role of FimE in phase variation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Surface motility requires two independent putrescine synthesis pathways but not spermidine synthesis. Single deletions of speC or speF had no effect, but the double mutant showed reduced motility. Deletions of speA or speB (alternate pathway) each reduced motility. A speE mutant (lacking spermidine synthesis) moved normally, and all mutants had normal growth and swimming motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C48-C54 demonstrate genetic redundancy in putrescine synthesis pathways through systematic deletion analysis with clear phenotypic outcomes. The data show that both pathways must be disrupted to impair motility (C48-C49), while spermidine is dispensable (C54). Controls showing normal growth and swimming motility (C52-C53) rule out general fitness defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Putrescine supplementation at 1 mM restored surface motility in speA and speB mutants, while spermidine did not restore wild-type movement and caused unusual movement patterns. These polyamines had no effect on growth rates in liquid medium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C55-C59 provide direct rescue experiments demonstrating specificity for putrescine over spermidine. The restoration of motility by putrescine (C55-C56) and failure of spermidine (C57-C58) strongly support the conclusion that putrescine, not spermidine, is the critical polyamine. The lack of growth effects (C59) rules out indirect metabolic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Putrescine transport systems modulate surface motility. Mutants lacking PlaP or PotF transporters showed 50% and 40% reduced motility respectively and lost concentric ring patterns, while PotE and PuuP transporter mutants were unaffected. The more highly expressed transporters (potF and plaP) were the ones affecting motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C61-C65 demonstrate that specific putrescine transporters affect motility through deletion analysis (C61-C63) with correlation to expression levels (C64). The selective effects of different transporters and the conclusion about extracellular putrescine (C65) are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74"
+    ],
+    "result": "Putrescine catabolism affects surface motility in a complex manner. Single deletions of puuA or patA had no effect, but the double mutant moved less well despite expected higher putrescine levels. Loss of puuR (repressor) also impaired motility. The phenotype does not result from spermidine toxicity as loss of speE did not rescue the double mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C73-C74 present paradoxical results that are experimentally sound but mechanistically complex. The data clearly show the phenotypes (C66-C68), and the spermidine toxicity hypothesis is properly tested and rejected (C73-C74). Claim C70 offers speculation to reconcile results but doesn't undermine the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Pili expression requires an optimal putrescine concentration. In the speB mutant, 1 mM putrescine was optimal for motility, fimA transcription, FimA protein levels, and pili expression by TEM, while 4 mM was slightly inhibitory. The parental strain was unaffected by putrescine supplementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C84 provide comprehensive dose-response data using multiple complementary methods (motility assays, RT-qPCR, ELISA, TEM). The convergence of results across different experimental approaches (C75-C82) strongly supports the conclusion of optimal concentration requirement (C84). The observation that 4 mM causes cellular stress (C83) provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C14"
+    ],
+    "result": "Pili synthesis requires putrescine, as confirmed by multiple experimental approaches including ELISA for FimA, RT-qPCR of fimA, and transmission electron microscopy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C14 represent the central conclusion supported by multiple independent experimental methods described throughout the manuscript. The convergence of genetic, biochemical, and microscopic evidence provides strong support for this major finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C90",
+      "C132"
+    ],
+    "result": "The \u0394speB mutant had reduced transcripts for pili structural genes and for fimB (phase variation recombinase), as shown by RNAseq analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C90, C132 are directly supported by RNAseq data presented in the manuscript. The transcriptional changes in both structural genes and regulatory genes are clearly documented and quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C99",
+      "C100"
+    ],
+    "result": "Loss of speB did not affect fim operon promoter orientation (phase variation). PCR analysis showed that loss of speB, loss of hns, or presence of putrescine did not alter the ON/OFF ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C99-C100 are supported by PCR analysis with specific primers designed to detect promoter orientation. The data clearly show no change in phase variation despite effects on pili expression, indicating that putrescine acts through a different mechanism than phase switching in W3110.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C133",
+      "C134"
+    ],
+    "result": "RNAseq analysis revealed changes in transcription factor genes affecting fim operon expression. Loss of speB reduced hns transcripts and increased fis, lrp, and qseB transcripts. Deletion of hns, ihfA, or lrp impaired motility, confirming their requirement for pili synthesis in W3110.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C91-C96, C133-C134 combine transcriptomic data (C91-C93) with functional validation through deletion analysis (C95-C96). The RNAseq findings are well-documented, and the genetic validation strengthens the conclusion that these transcription factors are involved in putrescine-dependent pili control.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C137",
+      "C144"
+    ],
+    "result": "RNAseq analysis suggests compensatory mechanisms for low putrescine, implying a putrescine homeostatic network. The speB mutant showed increased transcripts for putrescine synthesis genes, transport systems, and decreased transcripts for putrescine export and synthesis inhibitors, with net effect to increase intracellular putrescine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C101-C107, C137, C144 present a coherent pattern of transcriptional changes from RNAseq data that collectively suggest homeostatic compensation. The coordinated upregulation of synthesis/import and downregulation of export/inhibition (C101-C105) logically supports the homeostasis interpretation (C106-C107, C144).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The \u0394speB mutant showed decreased transcripts for oxidative energy metabolism and iron transport genes. This included all TCA cycle enzymes, NADH dehydrogenase I, cytochrome oxidase, and genes for quinone and heme synthesis. Previous work showed that loss of specific energy metabolism genes impairs motility, suggesting these changes could account for the motility defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C112-C121 present comprehensive RNAseq data on energy metabolism genes (C113-C117) with logical connection to iron acquisition (C117-C118). The link to previous genetic studies (C120) strengthens the mechanistic interpretation (C121), though the cumulative effect claim (C121) involves some inference beyond direct demonstration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C15",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C151"
+    ],
+    "result": "Putrescine concentration is controlled by a complex homeostatic network that includes oxidative energy metabolism genes. Low putrescine appears to divert metabolism away from energy generation toward putrescine synthesis, representing a prioritization of putrescine synthesis over aerobic energy metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C145-C146, C149, C151 represent high-level interpretations of the RNAseq data that are well-supported by the coordinated transcriptional changes. The metabolic competition for \u03b1-ketoglutarate (C147) is based on established biochemical knowledge. While these are interpretive conclusions, they are reasonable inferences from the comprehensive transcriptomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "RNAseq comparison showed the speB mutant grown without putrescine had a distinct transcriptome with 310 downregulated and 159 upregulated genes. Reduced expression of putrescine catabolic genes implies lower intracellular putrescine in the mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89 present straightforward RNAseq results with appropriate statistical thresholds (C86). The inference about intracellular putrescine levels (C89) is based on established regulatory relationships (C88) and is a reasonable interpretation of the catabolic gene expression data (C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "The speB mutant showed increased transcripts for magnesium (mgtA, 60-fold) and phosphate (phoBR, 7-fold) transport genes. This could represent compensation for low putrescine, as magnesium can replace putrescine in binding to nucleotides and RNA, and studies in Salmonella suggest magnesium-polyamine homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C111 present clear RNAseq data on ion transport genes. The compensatory mechanism interpretation (C138, C143) is speculative but reasonable given cited literature on magnesium-polyamine relationships (C139-C142). The speculation is appropriately qualified and based on relevant prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Multiple aspects of polyamine metabolism affect PDSM in E. coli. Loss of synthesis genes, transport defects, and impaired catabolism all resulted in PDSM defects without affecting growth. The involvement of both synthesis and degradation suggests rapid adjustments to fluctuating putrescine concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C131 synthesize the genetic analysis results into broader conclusions about polyamine metabolism's role in motility. The observations are well-supported by experimental data (C122-C129), and the interpretation about rapid adjustment (C130) is reasonable given the involvement of both anabolic and catabolic pathways, supported by cited literature (C131).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "The authors' results contrast with a previous study showing E. coli PDSM requires spermidine. Differences in strain backgrounds, media, and temperature (33\u00b0 vs 37\u00b0) may explain the discrepancy. The authors propose that growth at 37\u00b0 results in inhibitory putrescine concentrations, making spermidine stimulatory through its inhibition of putrescine synthesis enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C159 address an important discrepancy with prior work (C152). The experimental differences are documented (C153), and the authors' observations at 37\u00b0 are data-based (C154-C155). However, the proposed mechanism (C156-C157) is speculative and not directly tested. The explanation is plausible but remains hypothetical without direct measurement of intracellular putrescine concentrations at different temperatures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Transcript changes in this study differed from another systematic study of putrescine effects on E. coli gene expression, despite similar experimental designs. Differences in growth media and temperature may account for discrepancies. Common results include increased transcripts for arginine synthesis and magnesium transport, and reduced transcripts for TCA cycle genes, which may represent core responses to putrescine limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C167 provide important context by comparing results with prior work. The identification of common findings (C164-C165) despite different conditions strengthens confidence in core regulatory responses. The mechanistic link through ArgR (C166-C167) is supported by RNAseq data. The speculation about media effects (C162-C163) is reasonable but untested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The authors discuss implications for E. coli virulence in urinary tract infections. Putrescine is present in infected urine, and pili are essential for uropathogenicity. They propose that in uropathogenic group B2 strains, which have higher putrescine levels, the speB mutant's enhanced virulence results from reducing putrescine from inhibitory to optimal levels for pili synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C168-C171 cite relevant literature connecting putrescine to UTIs. However, the proposed mechanism (C178-C179) to explain the paradoxical virulence enhancement of speB mutants (C172) is entirely speculative. While the hypothesis is logical given the dose-response data from W3110, it lacks direct experimental support in uropathogenic strains. The inference about higher putrescine in B2 strains (C177) is based on indirect evidence (C175-C176).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Background information on polyamines: they are ubiquitous cations that bind to nucleic acids, ribosomes, and phospholipids; E. coli contains putrescine and lesser amounts of spermidine and cadaverine; they modulate protein synthesis and expression of hundreds of genes through translational control of transcription regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C16-C23 present established background knowledge from cited literature. These are not novel findings but provide necessary context for the study. The claims are well-supported by appropriate citations to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Initial observations and strain selection: A spermidine synthesis mutant moved normally while putrescine synthesis mutants moved poorly. W3110 was selected for study because it showed least variability, generated fewer fast-moving variants, and had been previously characterized for energy requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C28-C32 describe preliminary observations and rationale for strain selection. The observations are data-based (C24-C25, C28-C30) and the selection criteria are clearly stated (C30-C31). These provide important methodological context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C135",
+      "C136"
+    ],
+    "result": "Alternative mechanisms for putrescine control of pili expression cannot be excluded, including general regulatory dysfunction mediated by altered nucleoprotein complexes at the fim operon promoter, or inhibitory effects of elevated transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135-C136 acknowledge limitations and alternative explanations. These are appropriately cautious statements recognizing that the mechanism is not fully resolved. While scientifically appropriate, these represent speculation about untested possibilities rather than supported conclusions.",
+    "result_type": "MINOR"
+  }
+]

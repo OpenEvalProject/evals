@@ -1,0 +1,169 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C62"
+    ],
+    "result": "The authors propose a theoretical framework treating GxE model utility as a bias-variance tradeoff, deriving a decision rule that weighs increased estimation noise when context is considered against potential bias when context dependency is ignored.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers explicitly affirm this contribution. Reviewer 1 states the authors 'quantify this trade-off in a way that is both mathematically precise and conveys the above intuition very clearly,' and Reviewer 2 describes the framework as 'a truly novel view.' The theoretical analysis is praised as clear and convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Analysis of UK Biobank data shows that for most traits, very few allelic effects (0-0.1%) are better estimated using sex-specific models, though exceptions exist for testosterone, SHBG, and waist-to-hip ratio (~0.5%). Among genome-wide significant SNPs, larger proportions favor GxE models, with testosterone showing 100% and creatinine 62%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these empirical findings from UK Biobank. Reviewer 1 notes the authors 'argue on its basis that, when allelic effects are small (as in highly polygenic traits), single-locus tests for GxE may be substantially underpowered,' accepting the empirical demonstration. The findings are treated as valid evidence for the bias-variance tradeoff framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C18",
+      "C35",
+      "C36",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors argue that joint consideration of context dependency across many variants mitigates both noise and bias, such that polygenic GxE models can improve both estimation and trait prediction, and that polygenic patterns should be considered rather than just top hits.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'The parsimony of the amplification model allows for powerful detection of GxE in scenarios in which it pertains, as the authors show via simulation.' Reviewer 2 affirms the authors 'convincingly show that greater statistical power can be achieved in detecting GxE if an underlying model of polygenic GxE is assumed.' Both reviewers accept this core argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Reanalysis of Pallares et al. Drosophila longevity data demonstrates that a polygenic amplification model can parsimoniously explain patterns previously interpreted as cryptic genetic variation. Simulations show ~36% of variants classified as diet-specific despite all variants having effects in both diets (amplified in high-sugar), matching the 31% in experimental data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'The authors show, via re-analysis of an existing dataset in Drosophila, that a polygenic 'amplification' model can parsimoniously explain patterns of differential genetic effects across environments.' Both reviewers accept this as an 'important further demonstration of the plausibility of the amplification model' without challenging the reanalysis or simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C19",
+      "C39",
+      "C51"
+    ],
+    "result": "The authors demonstrate that analyses based on independently ascertained 'top hits' alone can be misleading, and that conventional approaches focusing on most significant associations may lead to erroneous conclusions about GxE patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges the authors demonstrate how 'the classification of 'top hits' alone may not be representative of the extent of GxE nor of the most pervasive modes of GxE.' This finding is accepted as part of the paper's contribution showing the importance of polygenic approaches over single-variant focus.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Simulations show that in low-power settings, additive models outperform context-specific and GxE models for polygenic prediction. However, with adequate power and substantial amplification, polygenic adaptive shrinkage approaches that leverage sharing of signals across variants outperform all other methods including additive models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these simulation results without challenge. Reviewer 2 notes the 'polygenic amplification model' shows 'fundamental promise for the detection of GxE in genomic datasets,' implicitly accepting the simulation findings. Reviewer 1 states the paper is 'now more clearly written' after revisions, suggesting acceptance of the presented results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "The authors establish the context that GxE is common in model organisms with manipulable environments, but few cases exist where GxE models explain human GWAS data better than additive models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both reviewers accept this framing. Reviewer 1 states 'Experiments in model organisms have revealed that the effects of genes on heritable traits are often mediated by environmental factors' but 'In human genetics, however...limited evidence has been found for pervasive GxE interactions.' This background claim is not disputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Background claims establishing that genetic effects may depend on context, that GWAS typically estimate marginal additive effects, and that complex traits involve numerous small-effect variants, with uncertainty about whether GxE models are warranted.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are standard background claims in the field that reviewers do not question. They serve as the foundation for the paper's contribution and are treated as accepted knowledge by both reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C29"
+    ],
+    "result": "Mathematical derivations showing the GxE estimator is unbiased, weights in the additive estimator are proportional to sample size times heterozygosity, and heterozygosity is similar across sexes for autosomal variants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 praises the mathematical precision, stating the authors 'quantify this trade-off in a way that is both mathematically precise.' These technical details supporting the bias-variance framework are implicitly accepted through the reviewers' endorsement of the overall theoretical contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The authors draw an analogy that just as heritability is due to many small effects, when GxE is pervasive, the sum of many small differences in context-specific effects may account for the majority of GxE variation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This theoretical prediction is part of the polygenic GxE framework that reviewers endorse. Reviewer 2 states the 'polygenic amplification model is a truly novel view,' accepting the conceptual framework including this reasoning about cumulative small effects.",
+    "result_type": "MINOR"
+  }
+]

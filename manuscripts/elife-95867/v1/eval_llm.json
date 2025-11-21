@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C46",
+      "C47",
+      "C48",
+      "C97"
+    ],
+    "result": "Treatment of hiPSC-CMs with inflammatory cytokines TNF-\u03b1 and IFN-\u03b3 significantly increases decay time and downstroke time (markers of cardiomyocyte relaxation) without affecting beating rate, indicating impaired Ca2+ uptake into the sarcoplasmic reticulum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C46, C47, C48, and C97 collectively demonstrate that cytokine treatment impairs calcium handling in hiPSC-CMs. The data in Figure 1 show statistically significant increases in decay and downstroke times with TNF-\u03b1 and IFN-\u03b3 treatment while beats per minute remain unchanged, providing strong evidence for the cytokine-induced relaxation defect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C49",
+      "C50",
+      "C99"
+    ],
+    "result": "Mitochondrial antioxidant mito-Tempo reverses the TNF-\u03b1-induced impairment in calcium transient decay and downstroke time, suggesting that mitochondrial ROS contributes to the cytokine-mediated relaxation defect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C49, C50, and C99 are supported by Figure 1A-B showing that mito-Tempo treatment reverses TNF-\u03b1 effects on decay and downstroke times. The interpretation that mitochondrial ROS reduction is responsible (C50) is reasonable given mito-Tempo's known mechanism, though the study did not directly measure ROS levels during these experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C51",
+      "C52",
+      "C53",
+      "C105"
+    ],
+    "result": "Cytokine treatment does not alter mitochondrial membrane potential or oxygen consumption rate at baseline, but NAC co-treatment with TNF-\u03b1 significantly reduces OCR, suggesting antioxidants may alleviate aberrant metabolic regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45, C51, C52, and C53 present conflicting findings: cytokines don't affect MMP or OCR (C45, C51), yet NAC reduces OCR with TNF-\u03b1 (C52). The interpretation in C53 that antioxidants alleviate 'aberrantly regulated OCR' is speculative since TNF-\u03b1 alone didn't significantly alter OCR. The mechanistic link between OCR changes and calcium transient improvement remains unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Antiretroviral drugs (tenofovir, darunavir, raltegravir, emtricitabine) reverse TNF-\u03b1-induced prolongation of decay time in hiPSC-CMs without causing cytotoxicity or increasing ROS at tested concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C54-C59 are well-supported by Figure 3 showing that multiple ART drugs reverse cytokine effects on decay time, and Figure 3\u2014supplement 1 showing no toxicity. However, C60's interpretation that benefits 'may go beyond their inhibitory effects on the virus' is speculative since no viral infection was present in this system, and the mechanism of action remains unexplored (acknowledged in C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "SGLT2 inhibitor dapagliflozin significantly reverses the prolonged decay and downstroke times induced by both TNF-\u03b1 and IFN-\u03b3 in hiPSC-CMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C64-C67 are strongly supported by Figure 4D-K showing statistically significant reversal of cytokine effects by dapagliflozin at 10 \u03bcM. The result is consistent with clinical efficacy of SGLT2 inhibitors in HFpEF (C20), though the mechanism is unclear given that cardiomyocytes don't normally express SGLT2 (C80, discussed in C81-C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Riociguat, sildenafil, and PF-04447943 failed to reverse TNF-\u03b1-induced increases in decay time in hiPSC-CMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 are supported by Figure 4A-C showing no significant reversal of TNF-\u03b1 effects with these drugs. This negative result provides important context for drug screening but represents a minor finding compared to the positive results with SGLT2 inhibitors and ART.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Short-term treatment (3-48 hours) of hiPSC-CMs with serum from HIV+ patients with diastolic dysfunction does not alter calcium decay time, and treatment of HUVECs with patient serum does not affect angiogenic tube formation capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C68-C74 are supported by Figures 5 and 6 showing no significant changes in decay time or angiogenic parameters with patient serum. However, the authors acknowledge important limitations: short treatment duration, potentially lower cytokine concentrations in serum than used in vitro (C78), and small sample size (N=6 for group 1). The negative result is appropriately interpreted as insufficient exposure rather than evidence against the hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C79"
+    ],
+    "result": "hiPSC-CMs can be used as an in vitro model to study inflammation-mediated abnormal cardiomyocyte relaxation and screen for potential therapeutic interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, and C79 represent the overarching conclusion supported by the successful demonstration that cytokines induce relaxation defects (C2, C46-C47) and that various drugs can reverse these effects (C3-C5, C64-C67). The model's utility is demonstrated through drug screening, though limitations are acknowledged (C75, C84, C91-C93).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C22",
+      "C23",
+      "C24",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C103",
+      "C104"
+    ],
+    "result": "HIV infection is associated with increased prevalence of HFpEF and elevated inflammatory cytokines that persist despite antiretroviral therapy, with TNF-\u03b1 and IFN-\u03b3 remaining elevated and associated with adverse outcomes in PLWH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C22-C24, C29-C36, C103-C104 establish the clinical context for the study through multiple citations. These background claims about HIV-associated cardiac dysfunction and persistent inflammation are well-supported by the cited literature and provide the rationale for the experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C76",
+      "C77"
+    ],
+    "result": "HFpEF is characterized by preserved ejection fraction (>50%) with impaired relaxation and increased stiffness, is associated with multiple comorbidities and inflammation, and has limited effective treatments beyond mineralocorticoid receptor antagonists, SGLT2 inhibitors, and GLP-1 analogs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C21, C76-C77 provide established clinical and pathophysiological background about HFpEF supported by appropriate citations. These claims establish the clinical significance and unmet need that motivates the study but do not represent novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "hiPSC-derived cardiomyocytes have been successfully used to model various cardiovascular diseases and for drug screening, but no models using human heart cells and HIV currently exist.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 establish the precedent for using hiPSC-CMs in disease modeling through multiple citations while identifying a gap (C37) that this study addresses. These background claims are well-supported but represent prior work rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study has several acknowledged limitations including: use of tissue culture for a systemic disease, lack of direct biomechanical measurements, use of single drugs rather than combination therapy, absence of dose-response curves, and unknown mechanisms of ART drug effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C84-C93 represent the authors' transparent acknowledgment of study limitations. These are appropriately identified and discussed, demonstrating scientific rigor in interpretation. The limitations are real but do not invalidate the major findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The mechanism by which SGLT2 inhibitors reverse cytokine-induced calcium transient defects is unclear since cardiomyocytes don't normally express SGLT2, though expression may occur under inflammatory conditions similar to diabetes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80-C83 acknowledge a mechanistic puzzle: SGLT2 inhibitors work despite cardiomyocytes not expressing SGLT2 (C80). The speculation that HIV patients might express SGLT2 due to inflammation (C82) is based on a single citation about diabetic conditions (C81) and remains unverified. This represents an important gap requiring future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Animal models demonstrate that HIV proteins (gp120) and SIV infection cause diastolic dysfunction, with CCR5 inhibition preserving cardiac function, and the immune system remains hypersensitive in chronic HIV infection despite ART.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28, C100-C102 summarize prior animal model work establishing HIV-associated cardiac dysfunction through appropriate citations. These provide important context for the current study but represent prior knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Previous studies show lower cytokine concentrations in HIV+ patient serum than used in this study, and myocardial perfusion reserve is associated with HFpEF incidence and prognosis, with endothelial dysfunction playing a critical role in HFpEF development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78, C94-C96 provide context for interpreting the negative patient serum results and the rationale for including endothelial cell assays. These are appropriately cited background claims that inform study design and interpretation.",
+    "result_type": "MINOR"
+  }
+]

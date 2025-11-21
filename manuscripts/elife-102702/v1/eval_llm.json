@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C50"
+    ],
+    "result": "Mice encode local predictions based on stimulus occurrence and transition probabilities, as evidenced by boosted auditory responses to rare sequences with local transitions (AAAAB, BBBBA) but not to sequences without local transitions (AAAAA, BBBBB). This local+global violation response was observed in 10-20% of neurons and provided sufficient information for single-trial classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C11, and C50 collectively demonstrate that mice show enhanced neural responses to sequences violating local predictions, with statistical support from calcium imaging data (Figures 1D-G). The specificity to sequences with local transitions and the proportion of responsive neurons are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C23",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C94"
+    ],
+    "result": "The boosting of auditory responses upon prediction violation involves both stimulus-specific adaptation (operating on ~2-4s timescales) and an adaptation-independent surprise mechanism (operating on longer timescales >30s). The surprise component persists under anesthesia, while adaptation effects diminish with longer inter-sequence intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C17-C19, C23, C27-C33, and C94 are supported by systematic manipulation of inter-sequence intervals (1.5s vs 30s) and trial-by-trial analysis (Figure 4). The dissociation between adaptation and surprise is demonstrated through multiple experimental conditions including anesthesia, though the weaker effect at 30s intervals (C18) suggests partial rather than complete independence from adaptation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C57",
+      "C58",
+      "C95"
+    ],
+    "result": "VIP interneurons respond to omissions of locally expected sounds and signal sequence termination in an anesthesia-sensitive manner. A small population (~2%) of VIP neurons shows termination responses characterized by suppression during sequences followed by activity increases ~200ms after the last sound, with timing that follows actual sequence structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34-C42, C57-C58, and C95 are well-supported by cell-type-specific calcium imaging (Figure 5). The anesthesia sensitivity, temporal characteristics, and proportion of responsive neurons are clearly documented. However, the functional interpretation as 'chunking signals' (C4, C59) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "VIP interneuron termination responses potentially provide chunking signals useful for establishing global sequence structure, similar to signals observed in basal ganglia and prefrontal cortex during action sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C59-C62 propose a functional interpretation of VIP termination responses based on their temporal properties and comparison to prior work (Barnes et al., 2005; Fujii and Graybiel, 2003). While the response characteristics are well-documented, the actual functional role in sequence chunking is inferred rather than directly demonstrated. No causal manipulation or behavioral validation is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C12",
+      "C13",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C96"
+    ],
+    "result": "PV interneurons show weak but significant responses to pure global violations (rare AAAAA sequences) in awake mice, which disappear under anesthesia. VIP neurons show slight increases for sequence shortening violations. These responses are much weaker than local+global violation responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C12-C13, C43-C48, and C96 are supported by cell-type-specific imaging and Neuropixels recordings (Figures 1I-K, 6). Statistical significance is demonstrated for PV responses to pure global violations, though the authors acknowledge the weakness of these effects. The late timing (>200ms) and anesthesia sensitivity are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C78",
+      "C82",
+      "C92",
+      "C97"
+    ],
+    "result": "Distinct cellular mechanisms predict different regularity levels in sound sequences. At least two parallel processes estimate stimulus occurrence probability: one based on stimulus-specific adaptation and one based on conditional probability relative to previous sounds. Different cell types (VIP, PV, general populations) show distinct response patterns to different violation types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C55, C78, C82, C92, and C97 synthesize findings across multiple experiments showing dissociable mechanisms. The evidence includes differential anesthesia sensitivity, distinct temporal dynamics, and cell-type-specific responses. This conclusion is well-supported by the comprehensive dataset, though some mechanistic details remain to be elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C56",
+      "C79",
+      "C93"
+    ],
+    "result": "Most neuron clusters activated by tones A or B show increased responses when sounds generate local+global violations compared to local-only violations. These modulations are cumulative and involve the same sound-responsive neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C56, C79, and C93 are supported by clustering analysis of calcium imaging data (Figure 2C, Figure 3-figure supplements 1-2). The cumulative nature of violation effects and involvement of the same neurons is demonstrated through systematic comparison of different violation types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C20",
+      "C21",
+      "C52"
+    ],
+    "result": "Recovery from adaptation in the auditory cortex is complete after 4 seconds, as demonstrated by classical oddball paradigm experiments showing larger deviant responses up to 2s inter-tone intervals but not at 4s or longer intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16, C20-C21, and C52 are supported by systematic manipulation of inter-tone intervals in the oddball paradigm (Figure 3F, Table 1). The 4s recovery time is consistent with prior literature (Ulanovsky et al., 2004) and provides a benchmark for distinguishing adaptation from other mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C24"
+    ],
+    "result": "The local+global violation response reflects predictions about the short-timescale structure of 1s sequence chunks rather than occurrence frequency of oddball sounds, as demonstrated by context-dependent modulation requiring the presence of associated tones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22 and C24 are supported by experiments comparing BBBBA sequences with A-only presentations (Figure 3G). The requirement for contextual B tones to observe modulation of A responses demonstrates sequence-structure-based rather than frequency-based predictions. Sample size is adequate (6906 neurons, 8 recordings, 3 mice).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C49",
+      "C51",
+      "C53"
+    ],
+    "result": "Adaptation corresponds to dampening of responses to repeated stimuli, while prediction violation corresponds to response increases for unlikely stimuli. The most salient effect of sequence structure is to modulate sound-specific responses depending on predictability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C49, C51, and C53 represent conceptual definitions and summary statements supported by the overall experimental findings. These definitions are consistent with established knowledge (Nelken, 2014) and provide a framework for interpreting the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C63",
+      "C65",
+      "C70",
+      "C74",
+      "C75"
+    ],
+    "result": "The weakness of pure global violation responses may be due to underdeveloped networks in mice compared to humans, encoding at higher cortical levels with weak top-down signals, or diffuse sources not sampled by the current approach. The absence of omission responses for BBBBA sequences may reflect sampling bias toward VIP neurons preferring tone A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C65, C70, C74-C75 are speculative explanations for negative or weak findings. While the authors acknowledge limitations of their approach (1\u00d71mm field of view), these hypotheses are not directly tested. Alternative explanations are plausible but require additional experiments to distinguish between them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "VIP interneurons may share the function of signaling omissions of salient predictions across sensory cortex, consistent with recent observations in auditory cortex (Lao-Rodr\u00edguez et al., 2023) and visual cortex (Garrett et al., 2020).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C66-C68 connect current findings to prior work through appropriate citations. The anesthesia sensitivity observed here aligns with Lao-Rodr\u00edguez et al., 2023, and the functional similarity to visual cortex VIP neurons (Garrett et al., 2020) is reasonable, though cross-modal generalization requires caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Pure global violation responses are weak in mouse auditory cortex despite broad sampling (1\u00d71mm field of view), contrasting with robust responses observed in human and non-human primate prefrontal and auditory cortices. In primates, these responses show late timing and functional connectivity suggesting top-down origins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C71-C73 accurately describe the current findings and prior literature (Bekinschtein et al., 2009; Chao et al., 2018; Wacongne et al., 2011). The contrast between species is well-documented, though the interpretation of this difference remains uncertain (see C70, C74-C75).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C83",
+      "C84"
+    ],
+    "result": "The results demonstrate diverse neural processes tracking sequence regularity, some pre-attentive and anesthesia-resistant, others anesthesia-sensitive. This diversity suggests multiple mechanisms rather than a single canonical circuit, extending beyond classical predictive coding theory and recent observations of cell-type-specific dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C77, C80-C81, C83-C84 synthesize the main findings and their theoretical implications. The diversity of mechanisms is well-supported by the data. The challenge to single-mechanism theories (Friston, 2005) is justified by the differential properties of violation responses across cell types and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Prior literature establishes that global violations produce late responses in temporal and prefrontal cortices that are sensitive to anesthesia, sleep, and attention, while local violations are fast, dominate in sensory cortices, and resist these manipulations. This suggests distinct mechanisms for different prediction levels, but circuit-scale analysis has been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C91 accurately summarize prior literature with appropriate citations (Bekinschtein et al., 2009; Nourski et al., 2018; Strauss et al., 2015; Parras et al., 2017; Tang et al., 2023). This provides proper context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C15"
+    ],
+    "result": "The larger modulation of sound responses when global violations accompany local violations could be due to stronger adaptation to less frequent oddball sounds in control blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C15 proposes a testable hypothesis that is subsequently evaluated through experiments with long inter-sequence intervals (C17-C19). This hypothesis is partially supported but also shown to be incomplete, as adaptation-independent mechanisms also contribute.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C54"
+    ],
+    "result": "Processes performing predictions based on local transition probability exist in the mouse brain, as demonstrated by lower responses to expected transitions even over timescales that preclude adaptation-based probability estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C54 is supported by experiments with long inter-sequence intervals (Figure 3) showing persistent violation responses beyond adaptation recovery time. This demonstrates transition-probability-based predictions distinct from stimulus-specific adaptation.",
+    "result_type": "MAJOR"
+  }
+]

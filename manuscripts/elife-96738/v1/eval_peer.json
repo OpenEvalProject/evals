@@ -1,0 +1,223 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C36",
+      "C37",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors developed a computational workflow using SCRMshaw to predict over 2.8 million regulatory sequences across 33 insect genomes spanning 360 million years of evolution, and created a searchable database resource with these enhancer predictions that is freely accessible through the REDfly site.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this work as 'an unparalleled community resource' and 'a welcome addition' that 'fills a large gap in current methods.' The editor states the authors 'present a convincing pipeline for insect genome regulatory annotation across 33 insect genomes spanning 5 orders,' and reviewers note 'the established database will be a welcome community resource.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "SCRMshaw predictions target specific loci rather than random genomic locations, with simulation experiments showing that 3-4% of loci have significantly more predictions than expected by chance, consistent with identifying multiple related 'shadow' enhancers in specific loci.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these simulation-based findings. The editor notes that 'independent comparisons of real predictions with simulated predictions' strengthen the conclusions, and reviewers accept that the authors 'creatively draw on existing resources to scaffold a pipeline and independently assess likelihood of prediction validity.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "SCRMshaw predicts enhancers in orthologous loci across diverged species at rates significantly higher than random expectation, with 2.4\u00d7 more predictions in common loci than expected when considering groups of 10-12 species, suggesting successful identification of conserved or convergent enhancers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as part of the 'independent downstream analyses' that support validity. The editor states the results 'suggest that this prediction pipeline may have uses in identifying functional enhancers across large phylogenetic distances,' implicitly accepting the orthology analysis as evidence for cross-species prediction capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "SCRMshaw predictions are highly enriched for regions of accessible chromatin, with 35-68% overlap with ATAC-seq and FAIRE-seq data across multiple species and tissues, providing strong evidence for effective enhancer prediction across a broad range of genomes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this validation approach. The editor notes 'independent comparisons...with chromatin accessibility data' strengthen conclusions, and reviewers state the authors 'creatively draw on existing resources' to 'independently assess likelihood of prediction validity,' accepting the chromatin accessibility comparisons as supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C87",
+      "C88"
+    ],
+    "result": "SCRMshaw achieves a validation rate of 77% (17/22) for imaginal disc activity using in vivo reporter gene assays in transgenic D. melanogaster, with 45% showing correct tissue specificity, suggesting overall true-positive rates between 50-85% with most training sets likely exceeding 70%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the validation but express significant caveats. The editor notes 'the work here is limited by the field-wide lack of an independently validated set of tissue specific enhancers that could be used to directly benchmark this pipeline,' and states 'the prediction of true positive enhancer identification rates and in vivo reporter gene assays offer some insight into the rates of successful prediction, but the output of SCRMshaw regulatory annotation should be regarded as another prediction-generating tool.' This indicates acceptance of the data but uncertainty about the generalizability of the success rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The validation success rates may underestimate true performance due to cross-species testing limitations, developmental differences between species, methodological constraints, and the possibility that some predictions may be silencers or pleiotropic enhancers rather than tissue-specific enhancers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers implicitly acknowledge these limitations through their overall caution about validation. The editor's statement that 'an experimental validation is not yet available in the field to validate a large class of newly identified enhancers across such evolutionary distances' suggests acceptance that the cross-species validation approach has inherent limitations, though reviewers do not explicitly discuss these specific caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C27",
+      "C28",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SCRMshaw can leverage D. melanogaster enhancer data for cross-species prediction in diverged insect species (160-345 million years) with ~75% success rate, suggesting significant hidden homologies in enhancer sequence characteristics that enable prediction across large phylogenetic distances despite lack of observable sequence alignment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this core capability. One reviewer notes 'this cross-species analysis, and the inherent suggestion that training datasets generated in flies can predict a cis-regulatory activity in distant insects, is interesting,' and the editor states the results 'suggest that this prediction pipeline may have uses in identifying functional enhancers across large phylogenetic distances,' affirming the cross-species prediction capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The median length of predicted enhancers is 740-750 bp, with a small number (<0.1%) of unusually large predictions (>2000 bp) that likely result from insufficient masking of tandem repeats and/or genome assembly errors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these descriptive statistics about prediction characteristics. The acceptance of the overall methodology and database resource implicitly accepts these technical details about prediction sizes and quality control measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Almost all training sets predicted multiple enhancers in certain loci at rates exceeding random expectation, consistent with the prevalence of redundant 'shadow' enhancers, though the mechanisms may vary with some shadow enhancers using similar regulatory mechanisms and others using different mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the shadow enhancer findings. The acceptance of the simulation analyses and overall methodology implicitly supports these interpretations about shadow enhancer identification, though reviewers do not explicitly discuss this specific biological interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C89"
+    ],
+    "result": "The regulatory annotations represent initial '1.0' versions that will be revised and improved, with current limitations including uneven species distribution, dependence on ortholog calling accuracy, and closest-gene target assignment methods, but should still be useful for both large-scale and small-scale studies of the insect regulatory genome.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly acknowledge the resource's utility despite limitations. One reviewer states 'the approach seem to be relatively accurate, although it should be combined with other sources of evidence to be practical,' and another notes the database 'will be a welcome community resource in its current state, and even more so as the authors continue to expand their annotations.' This indicates acceptance of the resource as useful while acknowledging its preliminary nature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "In vivo validation of predictions for the expanded (ex), klumpfuss (klu), and u-shaped (ush) genes showed variable results across species, with some predictions showing activity in targeted discs (e.g., Dm_ex_20p0 in wing/leg/antennal discs, Dm_klu_16p1 in wing/haltere/leg discs) while others showed no activity or activity in non-targeted tissues.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these experimental results as part of the validation dataset. The editor notes 'the functional validation through reporter gene analysis strengthen their conclusions,' indicating acceptance of these specific validation experiments as supporting evidence, even when results were negative or showed unexpected patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "In vivo validation of predictions for homothorax (hth), Ultrabithorax (Ubx), and pipsqueak (psq) genes showed mixed results, with some predictions showing activity in expected tissues (e.g., Tc_hth_15p5 in wing/leg discs, multiple Ubx predictions in leg and wing discs) while others showed no activity or unexpected patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these experimental results as part of the validation dataset. The overall acceptance of the validation approach and the editor's statement that 'functional validation through reporter gene analysis strengthen their conclusions' indicates acceptance of these specific experimental results, including both positive and negative outcomes.",
+    "result_type": "MINOR"
+  }
+]

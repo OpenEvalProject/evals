@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C154"
+    ],
+    "result": "IPC activity is strongly modulated by nutritional state, decreasing progressively with starvation duration (detectable within 0.5-2h, reaching median 0 Hz at 24h) and recovering slowly after glucose refeeding (requiring >6h to return to baseline). Starved IPCs show 8 mV hyperpolarization compared to fed flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C52 provide converging electrophysiological evidence from in vivo patch-clamp recordings showing nutritional state-dependent modulation of IPC spike rates and membrane potential. The data include appropriate statistical comparisons (C45, C47, C52) and demonstrate both acute (0.5-2h) and chronic (24h) effects. The slow recovery kinetics (C154) are directly shown in Figure 1G.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "IPCs specifically respond to ingestion of nutritive sugars (glucose and fructose) but not non-nutritive sugars (arabinose), protein-rich diets, or standard diet alone after starvation. The response requires 18-24h of refeeding to reach maximum levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C55-C59 demonstrate sugar-specific responses with appropriate controls (arabinose, protein, standard diet) and statistical comparisons shown in Figure 1H. The data clearly distinguish nutritive from non-nutritive sugars. However, the lack of response to standard diet (C58) is somewhat puzzling given prior literature (C60) and may reflect low glucose content in the diet.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "IPCs do not respond to direct glucose or trehalose perfusion over the brain in vivo, despite responding to glucose ingestion. This differential response resembles the mammalian incretin effect and suggests IPCs require input from gut or other sensory pathways rather than directly sensing hemolymph glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C103-C105 provide clear negative results from perfusion experiments (Figure 3A-B), contrasting with feeding responses. However, the incretin interpretation (C107, C9) is speculative. Alternative explanations exist: (1) ex vivo vs in vivo methodological differences (C171-C172), (2) inhibitory feedback from DH44Ns that would be absent in explants, (3) differences in intracellular saline formulation. The authors acknowledge these issues but don't definitively rule them out. The claim requires additional experiments (e.g., blocking inhibitory inputs during perfusion) to be fully supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "DH44PINs are glucose-sensing neurons that respond to glucose perfusion in a nutritional state-dependent manner (only in starved flies). They exhibit higher baseline firing rates (0.2-3 Hz) and more burst-like activity patterns than IPCs, with distinct ISI distributions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C119-C122 demonstrate glucose sensitivity of DH44PINs with appropriate statistical testing (Figure 3G, p<0.05). The nutritional state dependence (C121, C188-C189) is well-documented. Claims C111-C115 establish distinct electrophysiological properties compared to IPCs. Claim C124 provides important validation that the negative IPC result was not artifactual. The ISI analysis (C117-C118) suggests modulation beyond simple rate changes, though the functional significance is speculative (C190).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "DH44PINs do not affect IPC activity on short timescales, as demonstrated by optogenetic activation experiments showing no change in IPC membrane potential or spike rate. DH44PINs and IPCs act independently and in parallel to signal nutritional state changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C135-C137 provide clear negative results from optogenetic experiments using a sparse DH44PIN driver line (Figure 4F-H, p=0.641). This contrasts with the broad DH44N line effects (C12, C125-C130) and establishes functional independence. Claim C138 synthesizes these findings appropriately. The experiments include proper controls and statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C180",
+      "C184"
+    ],
+    "result": "Non-PI DH44Ns strongly inhibit IPCs, causing immediate hyperpolarization (~5 mV) lasting >1s after stimulation. The identity of these inhibitory neurons remains uncertain but may include LK-expressing neurons rather than DH44PINs themselves.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C130 demonstrate robust inhibition with appropriate electrophysiological evidence (Figure 4B-D, p=0.002). The effect is fast and strong, suggesting direct synaptic connections (C128, C187). However, the identity of the inhibitory neurons is uncertain (C180, C184) - they could be LK+ neurons (C133-C134) or non-DH44-expressing neurons in the driver line (C183-C184). Claim C131 notes heterogeneity (one excited IPC), which is appropriately acknowledged but not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "IPC activation has small, transient effects on behavior: minimal impact in fed flies but modest reduction of starvation-induced hyperactivity in starved flies. The effect diminishes over repeated activation cycles and does not persist post-activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C85 show minimal effects in fed flies (Figure 2C-E), while C86-C91 demonstrate modest reduction in starved fly hyperactivity (Figure 2F-H, p<0.05). The authors appropriately acknowledge limitations: effects diminish over time (C88-C89), pre-activation effects from background light (C90), and small effect sizes (0.06 mm/s difference, C83). The behavioral data are consistent across replicates but the physiological significance is questionable given the transient nature and confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C16",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Octopaminergic neuron (OAN) activation strongly increases locomotor activity, mimicking starvation-induced hyperactivity. Activation produces an initial activity peak followed by stopping behavior, then sustained hyperactivity reaching levels comparable to 24h starvation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C96 demonstrate strong behavioral effects (0.23 to 3.68 mm/s, p<0.001) comparable to starvation (Figure 2I-K). The biphasic response (C97-C98) is well-documented with video evidence. However, the stopping behavior interpretation is speculative (C99-C100) - it could reflect VUM neuron effects, tyramine/octopamine interactions, or VNC pattern generator interference. Claim C102 appropriately concludes that starvation-induced hyperactivity involves multiple modulatory systems, not just IPCs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Broad DH44N activation produces dramatic behavioral effects (initial activity surge, locomotor arrest with proboscis extension, then sustained hyperactivity), while sparse DH44PIN activation produces minimal effects. This suggests non-PI DH44Ns drive feeding-related behaviors and may reciprocally inhibit satiety pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C146 demonstrate strong behavioral phenotypes with the broad line (Figure 4I-K), while C147-C149 show minimal effects with the sparse line (Figure 4L-N). The proboscis extension data (C142) support feeding-related function. Claim C151 proposes reciprocal inhibition between feeding and satiety pathways, which is reasonable given the electrophysiological data (C125-C130) but remains somewhat speculative regarding mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79"
+    ],
+    "result": "Nutritional state strongly modulates locomotor activity: fed flies show low activity (0.3 mm/s), 24h starved flies show high activity (1.9 mm/s), and refeeding partially reverses this. The modulation occurs on similar timescales to IPC activity changes but cannot be explained by IPC activity alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 establish clear nutritional state effects on behavior (Figure 2B) with appropriate statistical testing. Claims C73-C75 appropriately note the complex relationship: glucose refeeding (high IPC activity) only partially reduces hyperactivity, while SD refeeding reduces activity without increasing IPC activity. This supports the conclusion that multiple parallel systems regulate behavior. Claim C79 notes similar timescales for IPC and behavioral modulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C61"
+    ],
+    "result": "Extended glucose refeeding (18-24h) increases IPC activity above baseline fed levels, while high-protein diet results in poor survival and no IPC activity recovery. Survival assays show flies tolerate high glucose diet reasonably well (100% survival to day 12) but not high protein diet (43% survival past day 12).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C53 shows IPC hyperactivity after prolonged glucose feeding (Figure 1G, p=0.02), which is interesting but of unclear physiological relevance. Claims C54 and C61 provide survival data (Figure 1\u2014supplement 1) validating that the glucose diet is not acutely toxic but the protein diet is. This supports the interpretation that lack of IPC recovery on HP diet (C59) reflects metabolic impairment rather than just dietary composition.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "IPC activity is not significantly affected by sex or mating state, but is significantly reduced in aged flies (>10 days old), with baseline spike rates dropping from 0-1.4 Hz in young flies to 0-0.4 Hz in older flies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 show no sex/mating effects (Figure 1\u2014supplement 2A, p>0.05), while C64-C65 demonstrate age-dependent reduction (Figure 1\u2014supplement 2B, p<0.05). The data are clear, though the sample sizes are modest (N=8-15). The authors appropriately note this is unlikely to explain other results since recordings used 5-6 day old flies. The speculation about survival mechanisms (C161-C163) is reasonable but unsupported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The slow temporal dynamics of IPC activity recovery (hours) contrast with fast behavioral state modulation (milliseconds), suggesting IPCs integrate internal state changes over multiple timescales. The lack of recovery on standard diet may indicate increased insulin sensitivity after starvation-refeeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C152 appropriately connects current findings to prior literature on DILP accumulation. Claim C155 notes the contrast with fast modulation from prior work (Liessem et al., 2023), leading to the multi-timescale integration hypothesis (C156). However, this interpretation is speculative. Claim C157 proposes increased insulin sensitivity to explain the SD refeeding result, citing mammalian studies, but this is entirely speculative without direct measurements of insulin sensitivity or signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "The incretin-like effect in Drosophila may be mediated by gut-secreted neuropeptides, similar to mammalian GLP-1 and GIP. The experimental approach may miss rapid initial insulin peaks, capturing only steady-state responses tens of minutes after feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C108 notes recent identification of incretin-like hormones in flies. Claim C174 proposes gut neuropeptides as the mechanism, which is reasonable but speculative - taste pathways (mentioned but dismissed) and mechanosensation (piezo-expressing IPCs, mentioned) are alternative explanations not fully ruled out. Claims C176-C178 acknowledge temporal resolution limitations, which is appropriate self-criticism. The incretin interpretation requires additional experiments (e.g., gut peptide manipulations) to be definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C179",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "DH44PINs and IPCs have distinct, complementary roles in glucose sensing: IPCs respond to feeding (hours timescale), while DH44PINs respond to hemolymph glucose changes (seconds-minutes timescale) in a nutritional state-dependent manner. DH44PINs may sense glucose concentration changes rather than absolute levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C179 appropriately synthesizes the distinct responses. Claims C188-C189 establish nutritional state-dependent glucose sensitivity of DH44PINs. However, the mechanistic explanations (C190-C192) are speculative. The ISI-based peptide release hypothesis (C190) is reasonable but untested. The change-detection hypothesis (C192) is interesting but purely speculative. The complementary roles conclusion is well-supported by the data, but the mechanistic details remain uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "The mechanism of IPC inhibition by non-PI DH44Ns remains unclear. While IPCs express DH44 receptors, the fast, strong inhibition suggests classical synaptic transmission rather than peptidergic signaling. Some neurons in the broad driver line may not express DH44 peptide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C181-C183 establish that not all neurons in the broad line express DH44 peptide (citing Lee et al., 2015). Claim C185 shows IPCs express DH44 receptors (from parallel study), suggesting possible peptidergic connections (C186). However, C187 argues the fast kinetics favor synaptic transmission. This is reasonable but the mechanism remains unresolved. The speculation about non-DH44-expressing neurons (C184) is plausible but unsupported. Additional experiments (receptor knockdown, synaptic markers) are needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Background and context claims establishing IPCs as functional analogues of mammalian beta cells, their role in metabolic homeostasis, sensitivity to multiple inputs, and prior evidence for glucose sensing and involvement in foraging behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C43) provide established background knowledge supported by appropriate citations to prior literature. They set up the rationale for the current study. The claims about IPC properties (C25-C31) and their role in behavior (C33, C37-C39) are well-established. The ex vivo glucose sensitivity (C40) is appropriately cited but contrasts with the current in vivo findings, which is a key motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C92",
+      "C93",
+      "C139",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C173"
+    ],
+    "result": "Background claims about starvation-induced hyperactivity, octopamine's role, insulin's effects on olfactory neurons, mammalian incretin effect, and trehalose as the primary insect hemolymph sugar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C66-C68, C92-C93, C139, C166-C169, C173) are well-supported by citations to prior literature and provide important context for interpreting the current findings. They establish the conceptual framework for understanding the behavioral and metabolic phenotypes observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Speculative discussion claims about mechanisms regulating insulin sensitivity (DILP6), effects of high-protein diets, reduced IPC activity in aging as a survival mechanism, and evolutionary conservation of insulin regulation across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These discussion claims (C158-C165) are largely speculative, drawing parallels to mammalian systems and proposing mechanisms not directly tested. Claim C158 cites DILP6 regulation but doesn't measure it. Claims C159-C160 propose protein diet effects based on mammalian studies. Claims C161-C163 speculate about aging mechanisms. Claims C164-C165 propose evolutionary conservation, which is reasonable but not demonstrated. These are appropriate discussion points but lack direct experimental support.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,369 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "E. tarda induces pyroptosis in differentiated THP-1 cells, characterized by cell swelling, LDH release, IL-1\u03b2 secretion, Casp1 activation, and GSDMD cleavage. This process requires intracellular bacteria, as blocking bacterial entry with cytochalasins prevents cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 collectively demonstrate that E. tarda induces pyroptosis in human macrophages through intracellular infection. The data include multiple complementary measurements (LDH release, microscopy, IL-1\u03b2 ELISA, Western blots) and appropriate controls (cytochalasin treatment). The inference that intracellular bacteria are required is well-supported by the cytochalasin experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "E. tarda-induced pyroptosis in human macrophages requires NLRC4, NLRP3, ASC, Casp1, Casp4, and GSDMD, but not AIM2. Knockout or knockdown of these proteins (except AIM2) significantly reduces cell death and IL-1\u03b2 release following infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C24 demonstrate the involvement of multiple inflammasome components through systematic knockout/knockdown experiments. The data show consistent effects across multiple time points (2h and 4h) with appropriate statistical analysis. The negative result with AIM2 serves as an important control, suggesting specificity of the response.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C56"
+    ],
+    "result": "The T3SS translocon proteins (EseB, EseC, EseD) are essential for E. tarda-induced pyroptosis. Deletion mutants of these genes cannot induce cell death, IL-1\u03b2 release, Casp1 activation, GSDMD cleavage, or Casp4 activation, while maintaining normal bacterial adhesion and entry. The chaperone mutant \u0394escA shows reduced but not abolished pyroptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C56 demonstrate the essential role of translocon proteins through comprehensive mutant analysis. The data show that translocon mutants retain cell entry capability but lose pyroptosis-inducing ability, establishing a specific functional requirement. The partial phenotype of \u0394escA is consistent with its chaperone role and adds nuance to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "E. tarda flagellin (\u0394fliC mutant) is not required for pyroptosis induction in human macrophages, showing no significant differences in cell adhesion, entry, cell death, Casp1 activation, or GSDMD cleavage compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C55 demonstrate through systematic comparison that flagellin is dispensable for E. tarda-induced pyroptosis. The data are consistent across multiple readouts and distinguish E. tarda from other pathogens where flagellin is a key NLRC4 activator.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Intracellular, but not extracellular, EseB is sufficient to induce pyroptosis via the NLRC4/NAIP inflammasome. EseB-induced cell death requires NLRC4, GSDMD, Casp1, and NAIP, but not AIM2, Casp4, or NLRP3 (with ASC showing modest involvement).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C69 establish EseB as a direct pyroptosis inducer through protein electroporation experiments and systematic knockout/knockdown analysis. The distinction between extracellular and intracellular effects is clearly demonstrated, and the inflammasome pathway specificity is well-characterized through multiple genetic perturbations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C112",
+      "C113"
+    ],
+    "result": "The C-terminal region of EseB, particularly the terminal 6 residues (T6R), is essential for NLRC4/NAIP inflammasome activation. EseB-CT alone is sufficient to induce pyroptosis and activate Casp1/GSDMD, while deletion mutants (\u0394T4R, \u0394T6R) and the N-terminal region (NT) are inactive. EseB binds NAIP but not NLRC4 directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C84, C112-C113 demonstrate through sequence analysis, domain mapping, and biochemical experiments that the CT region, especially T6R, is both necessary and sufficient for EseB function. The immunoprecipitation data establish direct NAIP binding, and the systematic mutant analysis clearly defines the functional domain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "In reconstituted 293T cells expressing NLRC4 inflammasome components, both full-length EseB and EseB-CT induce massive IL-1\u03b2 cleavage, demonstrating direct inflammasome activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 provide direct evidence of inflammasome activation in a reconstituted system, eliminating confounding factors from bacterial infection. This approach validates the sufficiency of EseB and EseB-CT for NLRC4 activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Among E. tarda T3SS components, only the needle protein EsaG activates the NLRC4 inflammasome in reconstituted cells, while the rod protein EsaI and flagellin proteins FliC1/2 do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 systematically test different T3SS components and identify EsaG as the only other NLRC4 activator besides EseB. This finding is consistent with known NLRC4 ligands and helps explain the flagellin-independent pyroptosis observed in infection experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "All 20 identified EseB homologs from diverse bacteria can activate the NLRC4/NAIP inflammasome, and these homologs share highly conserved T6R sequences that are crucial for NLRC4 activation. This suggests widespread bacteria-host interaction mediated by EseB and NLRC4/NAIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C89, C117-C120 demonstrate conservation of both sequence and function across diverse bacterial species through systematic testing of 20 homologs. The sequence alignment data support the functional conservation, and the breadth of species tested strengthens the conclusion about widespread evolutionary conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Deletion of T6R or T7R from five selected EseB homologs abolishes their ability to activate NLRC4 inflammasome and cause cell death, demonstrating the functional importance of these terminal residues across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 validate the functional importance of terminal residues through mutagenesis of representative homologs. The consistent loss of function across multiple species strengthens the conclusion about the conserved mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Among translocator proteins with low sequence identity to EseB, only PcrV activates NLRC4, and this activity depends on its T5R. LcrV, which differs from PcrV in the T6R region, does not activate NLRC4, but substituting LcrV's T6R with PcrV's T5R confers NLRC4 activation. Similarly, substituting EspAEHEC's T5R with EseB's T6R enables NLRC4 activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 demonstrate through domain swapping experiments that terminal residues are transferable determinants of NLRC4 activation. The reciprocal experiments (gain and loss of function) provide strong evidence for the sufficiency and necessity of these residues, though the authors appropriately note they are not the sole determinant (C132).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C135"
+    ],
+    "result": "IpaC and SipC possess EseB T6R-like terminal residues but fail to activate NLRC4 inflammasome, indicating that terminal residues are necessary but not sufficient for NLRC4 activation by translocator proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C132, C135 identify an important limitation of the terminal residue model through negative results with IpaC and SipC. This finding appropriately qualifies the conclusions and suggests additional determinants are required, which is acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "E. tarda infection activates both canonical (NLRC4, NLRP3, ASC, Casp1) and non-canonical (Casp4) inflammasome pathways, requiring direct bacteria-inflammasome interaction as evidenced by the requirement for bacterial entry into the cytoplasm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C100 synthesize findings from the knockout experiments and cytochalasin studies to conclude that both pathways are activated. The inference is well-supported by the experimental data, though the mechanism of non-canonical pathway activation is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "The translocon protein EseB triggers pyroptosis by directly activating the NLRC4/NAIP inflammasome via its CT region, especially the T6R. Both the sequence and inflammasome-stimulating function of T6R are highly conserved in EseB homologs across diverse bacteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 represent the main conclusions of the study, synthesizing findings from domain mapping, binding studies, and comparative analysis. These conclusions are well-supported by the comprehensive experimental evidence presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Background claims about T3SS function, inflammasome recognition patterns in mice versus humans, and prior work on translocon proteins establish the context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C110 are appropriately cited to prior literature and represent established knowledge in the field. The claim about E. tarda flagellin/rod evasion (C107) is speculative but reasonable given the experimental data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C111",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Discussion claims synthesizing the findings: intracellular EseB is sufficient for pyroptosis via NLRC4/NAIP; EseB differs from needle proteins in the NT region but shares CT region identity; and there is a conserved inflammasome activation mechanism via the CT region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111, C114-C116 represent interpretive synthesis of the experimental findings. These are well-supported by the data, though C116 includes some speculation about the conserved mechanism that extends beyond the direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Prior structural and functional studies demonstrate that terminal amino acids of needle proteins are important for protein oligomerization, NAIP interaction, and immune evasion, providing context for the EseB findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 appropriately cite prior literature to contextualize the current findings. These citations are relevant and accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Discussion claims about terminal residue replacement experiments and immune evasion strategies: replacing terminal residues of EspAEHEC or LcrV with those from EseB or PcrV confers NLRC4 activation, suggesting that lack of T6R-like residues may be an immune evasion strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 synthesize experimental findings with evolutionary speculation. The experimental observations are well-supported, but the immune evasion interpretation (C127) is speculative, though reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Introduction claims establishing background on E. tarda biology, T3SS structure and function, and inflammasome biology, including species-specific differences in NAIP recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C158 represent established background knowledge appropriately cited to prior literature. These provide necessary context for understanding the experimental work.",
+    "result_type": "MINOR"
+  }
+]

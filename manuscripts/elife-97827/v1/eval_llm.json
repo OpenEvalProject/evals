@@ -1,0 +1,246 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims establish that CRC is a major cause of cancer mortality, radiotherapy is crucial for management, and neoadjuvant therapies show variable response rates. These claims provide context for the study's focus on radioresistance mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 are all supported by appropriate citations to prior literature (Siegel et al., 2023; Glynne-Jones et al., 2017; Cercek et al., 2018; Cervantes et al., 2023). These are standard background claims establishing the clinical context and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Background claims establish that mitochondria generate 90% of cellular ROS, radiation-induced ROS cause two-thirds of DNA damage, and CPT1A is absent in several tumors. These provide mechanistic context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 are supported by citations to prior work (Glasauer and Chandel, 2014; Chio and Tuveson, 2017; Melone et al., 2018). These establish the biological rationale for investigating CPT1A in the context of radiation-induced ROS and DNA damage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C58"
+    ],
+    "result": "CPT1A expression is significantly downregulated in CRC tissues compared to adjacent normal tissues, as demonstrated by multiple independent approaches including GEO microarray analysis, qRT-PCR, western blot, TCGA database analysis, and IHC staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 and C58 are well-supported by convergent evidence from multiple methodologies (GEO arrays, qRT-PCR on 24 paired samples, western blot on 16 paired samples, TCGA analysis, and IHC). The consistency across different datasets and techniques strengthens the conclusion. Sample sizes are adequate for the analyses performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C59"
+    ],
+    "result": "Low CPT1A expression correlates with poor overall survival and reduced responsiveness to neoadjuvant radiotherapy, as evidenced by Kaplan-Meier survival analysis and negative correlation between CPT1A IHC scores and tumor regression grade (TRG) scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15-C20 show associations between CPT1A expression and clinical outcomes. However, C16 reports a non-significant p-value (p=0.061), which undermines the strength of the survival association. The TRG correlation (C20, R=-0.343, p=0.024) is statistically significant but modest. The sample size for TRG analysis (n=43) is relatively small, and no multivariate analysis controlling for confounders is reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Baseline CPT1A expression levels correlate with intrinsic radiosensitivity across CRC cell lines, with higher CPT1A expression in radiosensitive cells (HCT15, RKO, HCT116) compared to radioresistant cells (SW480, Caco-2, SW620, HT-29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by colony formation assays with multi-target single-hit survival modeling and expression analysis across multiple cell lines. The correlation between baseline CPT1A expression and radiosensitivity provides important context for subsequent manipulation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C60",
+      "C63"
+    ],
+    "result": "CPT1A modulates radiosensitivity in CRC cells, with knockout increasing radioresistance and overexpression increasing radiosensitivity, as demonstrated by colony formation assays, comet assays, and \u03b3-H2A.X kinetics following irradiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C28 are well-supported by multiple complementary assays. The D0 values from survival curves show statistically significant changes (p<0.05 for knockout, p<0.01 for overexpression). Comet assays and \u03b3-H2A.X kinetics provide mechanistic support for altered DNA damage repair. The use of both loss-of-function and gain-of-function approaches strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C75",
+      "C78"
+    ],
+    "result": "Radioresistant cell lines (HCT-15-25F and HCT-15-5F) generated by fractionated irradiation show decreased CPT1A expression, and CPT1A overexpression in these cells restores radiosensitivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78 and C75 demonstrate that acquired radioresistance is associated with CPT1A downregulation, and that restoring CPT1A expression can reverse this phenotype. The D0 values show significant differences (p<0.05), and the \u03b3-H2A.X kinetics support altered DNA repair. This provides additional evidence that CPT1A loss is functionally linked to radioresistance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CPT1A modulates tumor radiosensitivity in vivo, with knockout increasing tumor growth and radioresistance, and overexpression decreasing tumor growth and enhancing radiosensitivity, as measured by tumor weight and Ki-67 proliferation markers in xenograft models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C36 demonstrate in vivo validation of the in vitro findings. The xenograft experiments show consistent effects on tumor weight and Ki-67 staining. The quantitative analysis of radiotherapy effects (32.9% vs 14.5% reduction in Ki-67 for control vs knockout; 52.5% vs 89.7% tumor weight reduction for control vs overexpression) provides strong evidence. However, the manuscript does not specify the number of mice per group or provide statistical analysis details for the in vivo experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Transcriptomic analysis of CPT1A knockout cells reveals differential expression of 1,653 genes, with enrichment in peroxisomal pathways, cell cycle, nucleotide excision repair, and fatty acid degradation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 are supported by RNA-seq data with appropriate statistical thresholds (|log2FC|>1, q<0.05). The KEGG pathway analysis identifies biologically relevant pathways. However, the manuscript does not specify the number of biological replicates used for RNA-seq, though Figure 5\u2014figure supplement 1A suggests technical replicates were consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C62"
+    ],
+    "result": "CPT1A modulates cellular ROS levels and antioxidant capacity, with knockout decreasing ROS and increasing GSH/GSSG ratio, SOD, and CAT activities, while overexpression has opposite effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 and C62 are supported by multiple biochemical assays measuring ROS (DCFH-DA flow cytometry), GSH/GSSG ratio, and enzyme activities. The effects are consistent across different manipulations and are observed both at baseline and after irradiation. The data provide mechanistic insight into how CPT1A affects radiosensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Radioresistant cells show reduced ROS levels and elevated antioxidant enzyme activities compared to parental cells, and CPT1A overexpression partially restores these parameters except for POD activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C74 provide additional validation in the radioresistant cell model. The data show consistent patterns with the knockout/overexpression experiments. The observation that POD activity is not restored by CPT1A overexpression (C74) suggests specificity in the mechanism and is appropriately reported as a negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "CPT1A regulates expression of antioxidant enzymes SOD1, SOD2, and CAT at both mRNA and protein levels, and bioinformatic analysis identifies FOXM1, LMNB1, and SAP30 as candidate transcription factors, with FOXM1 showing inverse correlation with CPT1A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C51 are supported by western blot and qRT-PCR data showing coordinated regulation of multiple antioxidant enzymes. The bioinformatic approach to identify candidate transcription factors (C49) is reasonable, though it relies on prediction algorithms. The observation that FOXM1 protein levels change inversely with CPT1A (C50-C51) provides a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C79"
+    ],
+    "result": "FOXM1 directly regulates SOD1, SOD2, and CAT expression, as demonstrated by rescue experiments showing FOXM1 overexpression restores antioxidant enzyme levels in CPT1A knockout cells, correlation analysis in TCGA data, and predicted binding sites in target gene promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C52 shows that FOXM1 overexpression can restore SOD1, SOD2, and CAT protein levels, which is strong functional evidence. Claims C53-C54 show positive correlations in TCGA data. However, C79 relies only on bioinformatic prediction of binding sites without experimental validation (e.g., ChIP, luciferase assays). The mechanism by which CPT1A regulates FOXM1 is not elucidated, and the authors acknowledge this limitation in the Discussion. Direct binding evidence for FOXM1 to target promoters is lacking.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C64"
+    ],
+    "result": "The proposed mechanism is that CPT1A downregulation increases FOXM1 expression, which promotes transcription of SOD1, SOD2, and CAT, thereby accelerating ROS scavenging after radiation and leading to radioresistance in CRC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57, C61, and C64 synthesize the experimental findings into a coherent mechanistic model. The model is supported by the convergent evidence from expression studies, functional assays, ROS measurements, enzyme activities, and rescue experiments. However, the direct mechanism linking CPT1A to FOXM1 regulation remains unclear, as acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "CPT1A is proposed as a potential biomarker of radiosensitivity and a novel therapeutic target for overcoming radioresistance in CRC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C66 are speculative and represent future directions rather than demonstrated results. While the correlation with TRG scores (C20) and survival data (C15-C16) provide some support for biomarker potential, the clinical utility has not been validated in independent cohorts. The therapeutic potential (C66) is inferred from functional studies but would require extensive additional work including drug development and clinical trials.",
+    "result_type": "MINOR"
+  }
+]

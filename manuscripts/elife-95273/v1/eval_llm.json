@@ -1,0 +1,391 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Neural cell lines (1321N1 astrocytoma and SH-SY5Y neuroblastoma) possess distinct morphotextural fingerprints that enable their separation in UMAP space based on handcrafted features extracted from cell painting images. Both texture and shape metrics contribute to cell type separation, with morphological differences consistent across biological replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 demonstrate that the two cell lines have distinguishable morphological features through UMAP analysis of handcrafted features. The data shows clear separation along UMAP1, consistency across replicates, and identifies specific contributing features (texture, shape). This is well-supported by Figure 1B-C showing UMAP clustering and feature importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Random Forest classification using handcrafted morphotextural features achieved poor performance (F-score 0.75\u00b10.01) with 46% misclassification of 1321N1 cells. Feature reduction by removing redundant features did not improve performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 report specific quantitative results from RF classification experiments shown in Figure 1D. The poor performance and imbalanced classification are clearly documented with confusion matrices and F-scores. The explanation citing bias in high-dimensional data is supported by citation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CNN-based classification using 60 \u00b5m image crops significantly outperformed Random Forest (F-score 0.96\u00b10.01 vs 0.75\u00b10.01), with optimal performance achieved using 5000 training instances. Models trained on multiple biological replicates showed better generalization to unseen replicates than models trained on single replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 present comprehensive benchmarking of CNN performance with specific quantitative metrics shown in Figures 2B-E. The superiority of CNN over RF, training set size requirements, and importance of training set variability are all well-documented with appropriate statistical comparisons and multiple model initializations (N=9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Grad-CAM analysis revealed that CNN attention focuses on cell borders, nuclear and nucleolar signals. Misclassifications are primarily due to segmentation errors, unhealthy/dead cells, or aberrant morphology rather than CNN limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by Grad-CAM visualizations in Figure 2F and analysis of misclassified examples in Figure 2\u2014figure supplement 1B. The interpretation that errors stem from upstream issues rather than CNN performance is reasonable given the visual evidence provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "All four cell painting channels contribute to successful cell type classification, with no single channel or combination of 2-3 channels matching the performance of the full four-channel image (all single channels \u226485% accuracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 are supported by systematic channel ablation experiments shown in Figure 3A. The data clearly demonstrates that each channel contributes unique information, with performance degrading when channels are removed. The conclusion is appropriately drawn from the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CNN classification is robust to moderate reductions in image quality, maintaining performance with pixel sizes up to 0.6 \u00b5m and SNR down to 14.27 dB, but performance degrades with further quality reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by systematic simulation experiments shown in Figures 3B-C. The specific thresholds for resolution (0.6 \u00b5m) and SNR (14.27 dB) are clearly identified through progressive degradation experiments with multiple model initializations (N=3).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "CNN successfully discriminated three cell lines (1321N1, RPE1, ARPE) with 95.06\u00b12.51% accuracy, with UMAP analysis showing the two related RPE lines clustering closer together but still well-separated from the morphologically distinct 1321N1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 demonstrate CNN capability to distinguish subtle phenotypic differences between related cell lines. The quantitative accuracy and UMAP visualization in Figure 3D support the conclusion that the method can handle more challenging classification tasks beyond the initial 1321N1/SH-SY5Y comparison.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "CNN accuracy using whole-cell inputs remained stable up to 80% confluency but decreased significantly at very high densities (95-100%, F-score 0.92\u00b10.05), likely due to cell shape being determined by neighboring cells and decreased segmentation performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are supported by density experiments in Figure 4B and segmentation quality analysis in Figure 4\u2014figure supplement 1. The reasoning about cell shape constraints and segmentation errors at high density is well-supported by the supplementary data showing decreased IoU at high densities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Nuclear ROI inputs achieved F-score 0.91\u00b10.05 but performed consistently worse than whole-cell inputs across all densities. Grad-CAM analysis revealed the CNN was using background as a proxy for nuclear size rather than focusing on nuclear features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 are supported by experiments in Figures 4B-D and extensive Grad-CAM visualizations in Figure 4\u2014figure supplements 2-7. The interpretation that background serves as a proxy for nuclear size is reasonable given the Grad-CAM evidence, though this represents a limitation of the nuclear-only approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "A nucleocentric approach using 12-18 \u00b5m patches around nuclear centroids achieved optimal performance (F-score 0.96\u00b10.02) and maintained accuracy even at near-confluent densities, unlike whole-cell approaches. The method is robust to patch size variations within the 12-60 \u00b5m range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 present the key methodological innovation of the paper. The nucleocentric approach is thoroughly validated through systematic patch size optimization (Figure 4E) and density testing (Figure 4B). The superiority at high densities and robustness to patch size are well-demonstrated with appropriate replication (N=3-9).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "In mixed cultures, CNN models trained and tested on co-cultures (Co2Co) performed nearly as well as monoculture models (Mono2Mono). Transfer from monoculture to co-culture (Mono2Co) achieved F-score 0.86\u00b10.01%, improved to 0.88\u00b10.01% with finetuning using same-plate monocultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C75 demonstrate the feasibility of transfer learning from monocultures to mixed cultures, shown in Figure 5. The quantitative results are clearly reported with appropriate replication (N=9). The improvement with finetuning and reduced variability are statistically significant (p-values provided). However, C73 is speculative about the cause of performance drop.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "For iPSC-derived neuronal cultures, cell-based CNN classification using IF ground truth (Ki67/TUBB3) achieved 96\u00b10% accuracy, significantly outperforming condition-based classification (86\u00b10.01%) and Random Forest (87\u00b10.02%). CNN predictions of neuron/NPC ratios aligned well with IF-based quantification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 demonstrate successful application to iPSC-derived cultures with clear quantitative results in Figure 6. The superiority of cell-based over condition-based ground truth and CNN over RF are statistically significant. The alignment between CNN predictions and IF quantification validates the approach, though some discrepancy exists (40.5% vs 36.4% and 74.2% vs 80.0%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "The cell-based CNN model trained on guided differentiation successfully transferred to spontaneous differentiation, detecting the slower shift in neuron-to-NPC ratio over time, demonstrating generalizability across differentiation protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 demonstrate cross-protocol generalization shown in Figure 6H. The successful application to spontaneous differentiation using a model trained on guided differentiation supports the transferability claim, though quantitative validation against ground truth for the spontaneous protocol is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Nucleocentric CNN achieved 96.81\u00b10.95% accuracy discriminating iPSC-derived neurons, astrocytes, and microglia. In mixed neuron-microglia cultures, neurons were distinguished from microglia with 98\u00b10.01% accuracy regardless of LPS treatment, but distinguishing reactive vs. resting microglia was more challenging (80\u00b10.01% accuracy).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C92 demonstrate application to multiple iPSC-derived cell types with comprehensive quantitative results in Figure 7. The high accuracy for cell type discrimination and robustness to activation state are well-supported. The lower accuracy for distinguishing microglia states (80%) is honestly reported. CNN significantly outperformed RF (98% vs 86%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Nucleocentric phenotyping can gauge cell type composition of iPSC-derived cultures, with different cell states recognizable albeit with lower performance than cell type classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94 are appropriate conclusions drawn from the iPSC experiments (C85-C92). The statement accurately reflects both the capability (cell type composition) and limitation (lower performance for cell states) demonstrated in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The nuclear ROI carries distinctive information for cell type prediction. At high density, whole-cell segmentation becomes error-prone while losing morphological information. The nucleocentric approach's superior performance stems from reduced segmentation errors while capturing perinuclear structures (ER, mitochondria, Golgi) important for classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 provide mechanistic explanation for the nucleocentric approach's success. The segmentation quality analysis (Figure 4\u2014figure supplement 1), Grad-CAM visualizations showing perinuclear focus, and density-dependent performance data collectively support these conclusions. The interpretation is well-reasoned from the experimental evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C104",
+      "C105"
+    ],
+    "result": "Cell types retain their salient characteristics in mixed cultures, enabling identification using monoculture-trained models, though predictions are superior when training directly on mixed cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C105 are supported by the transfer learning experiments in Figure 5C showing Mono2Co performance (86%) vs Co2Co performance (96%). The conclusion that cells retain characteristics is reasonable, though the performance gap suggests some phenotypic changes occur in mixed cultures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C111"
+    ],
+    "result": "Guided differentiation protocols speed up differentiation and enhance purity, but neural differentiation is not binary, showing mixed Ki67+/TUBB3- and Ki67-/TUBB3+ populations. Cell painting captures morphological changes associated with neural differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C108 are supported by IF analysis in Figure 6B-C showing mixed populations. C111 is supported by successful classification of differentiation stages. The acknowledgment of non-binary differentiation is important for interpreting the results and represents honest reporting of biological complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "The approach can be transferred to other differentiation protocols, and morphological profiling holds promise for quality control of iPSC-derived cell culture models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by the successful transfer from guided to spontaneous differentiation (Figure 6H) and the comprehensive validation across multiple cell types and conditions throughout the manuscript. These are appropriate conclusions about the method's potential applications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "iPSC technology enables generation of brain-resident cell types for disease modeling but faces challenges including variability in differentiation, lack of efficient characterization methods, and need for quality control in both preclinical and clinical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C23 establish the background and motivation for the study. These are well-supported by citations to prior literature and represent accurate characterization of the field's challenges and needs. This contextualizes why the developed method is important.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Cell painting is a powerful method for predicting mode-of-action of perturbations using morphology readout. Prior applications focused on condition-based predictions using whole-image features, which do not account for cell density or inter-cellular heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 accurately describe cell painting methodology and its prior applications, supported by appropriate citations. The identification of limitations in whole-image approaches (C31) provides clear rationale for the single-cell, nucleocentric approach developed in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C103",
+      "C106",
+      "C109",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Prior work demonstrates that CNN-based approaches outperform shallow learning, nuclei have biomarker potential, multiplexed imaging provides culture composition information, and spontaneous neural differentiation requires ~80 days. Microglia in vitro are not completely homeostatic.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96, C103, C106, C109, C113-C117 cite prior literature to contextualize the current findings. These are appropriately used to support interpretations and place results in context. The citations appear relevant and accurately represented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102",
+      "C118"
+    ],
+    "result": "Cell profiling could potentially be applied to 3D systems like tissue or organoid slices, and a more generalized CNN could be established for multiple culture types with larger datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C102 and C118 are speculative about future applications and developments. While the reasoning is sound based on the current results, these represent untested hypotheses rather than demonstrated findings. No experimental evidence for 3D applications or generalized models is provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The drop in performance when transferring from monoculture to co-culture may be caused by phenotypic effects of other cell types in mixed cultures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C73 is speculative about the mechanism underlying the Mono2Co performance drop. While this is a reasonable hypothesis, no direct evidence is provided to test whether phenotypic changes occur in mixed cultures. Alternative explanations (batch effects, technical variability) are not ruled out.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C110",
+      "C112"
+    ],
+    "result": "Variation in neural differentiation timing negatively affects statistical power for drug testing. Differentiating iPSC cultures are highly heterogeneous with transitioning progenitors that binary models fail to capture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110 and C112 represent reasonable inferences about the implications of differentiation variability and limitations of binary classification. C110 logically follows from documented variability, and C112 is an honest acknowledgment of the method's limitations in capturing continuous differentiation states.",
+    "result_type": "MINOR"
+  }
+]

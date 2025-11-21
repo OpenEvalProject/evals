@@ -1,0 +1,358 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The model demonstrates that three classes of BLA interneurons (VIP, SOM, and PV) generate distinct rhythms based on their biophysical properties: VIP cells with D-current produce low theta (~3.5 Hz) with nested gamma bursts (~38 Hz), SOM cells with NaP- and H-currents produce high theta (~12 Hz), and PV cells interact with excitatory neurons to produce PING gamma rhythms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C12-C15, and C56-C59 collectively demonstrate through model simulations (Figures 1A-C) that each interneuron type produces specific rhythms matching their biophysical properties. The model reproduces experimental electrophysiological behaviors and generates rhythms consistent with experimental observations, providing strong computational evidence for the mechanistic origins of BLA rhythms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C30",
+      "C32",
+      "C33",
+      "C35",
+      "C38",
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C60",
+      "C61"
+    ],
+    "result": "All three interneuron types (VIP, SOM, PV) are necessary for spike-timing-dependent plasticity between CS-encoding (ECS) and fear-encoding (F) neurons during fear learning. Removal of any single interneuron type prevents learning, with only full networks showing robust potentiation of the ECS-to-F synapse within 40 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C32-C33, C41-C43, and C61 demonstrate through systematic ablation studies (Figures 3A-B, 5D) that all network realizations with complete interneuron populations become learners, while networks lacking any interneuron type fail to show plasticity. The mechanistic explanations in C35, C38-C39 provide computational evidence for how each cell type contributes to the necessary timing and pauses for depression-dominated STDP.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C70",
+      "C71"
+    ],
+    "result": "PV interneurons establish the correct pre-post spike timing between ECS and F neurons through PING (pyramidal-interneuron network gamma) rhythms, with differential lateral versus feedback inhibition biasing ECS to fire before F.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 and C70-C71 describe a specific mechanistic role for PV cells supported by model simulations (Figure 4A). The model demonstrates that reciprocal PV-F connections create PING rhythms that establish fine temporal ordering necessary for potentiation, with weaker lateral inhibition to ECS than feedback inhibition to F creating the required pre-post timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C62",
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The depression-dominated STDP rule requires periodic pauses in excitatory neuron activity to prevent accumulated depression. VIP and SOM interneurons create these pauses through rhythmic inhibition, allowing depression to decay and enabling potentiation during active phases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39, C62, C72-C74 provide a mechanistic explanation supported by model simulations (Figure 4, Appendix 1-figure 2C) showing that continuous PING activity leads to depression unless interrupted. The model demonstrates that VIP pauses allow SOM activation, which inhibits ECS and F, creating the necessary breaks for the depression-dominated rule to produce net potentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C54",
+      "C55",
+      "C65",
+      "C66"
+    ],
+    "result": "Fear conditioning produces a selective increase in low theta power (2.5-4 Hz) but not high theta power in both network spiking activity and LFP. This low theta increase occurs only in learning networks and is absent in non-learners, establishing it as a biomarker of successful fear conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47, C54-C55, C65-C66 are strongly supported by model simulations (Figure 6A-E) showing statistically significant low theta increases in learners but not non-learners. The results replicate experimental findings from Davis et al. 2017 and extend them by demonstrating the biomarker property through comparison of learner versus non-learner networks, providing novel computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The low theta power increase after fear conditioning is mechanistically driven by AMPA currents to PV interneurons, which show a dramatic 3000-fold power increase relative to baseline, compared to only 4.6-fold for GABA currents. This results from the newly potentiated ECS-to-F pathway activating F, which then drives PV cells at low theta frequency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 provide a detailed mechanistic explanation supported by quantitative model analysis (Figure 6F-G). The specific power ratios (3\u00d710\u00b3 for AMPA vs 4.6 for GABA across 20 realizations) provide strong quantitative evidence. The causal chain from learned pathway to F activation to PV excitation is clearly demonstrated in the model simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "A heterogeneous network with multiple neurons of each type (3 interneurons per subtype, 10 excitatory neurons per type) robustly produces fear learning, with all full network realizations becoming learners in less than 40 seconds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C42 demonstrate model robustness through expansion from single-cell to multi-cell networks (Figure 5). The results show that the core findings generalize beyond the minimal model to more realistic heterogeneous networks, strengthening confidence in the model's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The necessity of all interneuron types for learning depends specifically on the depression-dominated plasticity rule. With classical Hebbian plasticity (lower depression than potentiation amplitude), learning could occur without VIP and SOM cells, but the depression-dominated rule provides regulatory control over plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77, C106-C108 are supported by comparative model simulations (Appendix 1-figure 4) showing that alternative plasticity rules change interneuron requirements. This demonstrates that the model's core finding about interneuron necessity is conditional on the specific plasticity rule used, which is appropriately acknowledged and mechanistically explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "During fear conditioning, US activates both F and VIP neurons, with VIP disinhibiting F by inhibiting SOM and PV. Before US onset, VIP shows low theta bursting, SOM fires at high theta, PV is silent, and F is inhibited. After US onset, F becomes active during VIP active phases, PV provides feedback inhibition, and ECS fires before F creating appropriate timing for potentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C29 describe the detailed network dynamics during fear conditioning supported by model simulations (Figure 2A-C). The temporal sequence of activation patterns and the resulting conductance changes are clearly demonstrated, showing how the circuit configuration and rhythms interact to produce the conditions for plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The depression-dominated plasticity rule may prevent overgeneralization of fear learning. VIP cells may establish this rule through co-release of VIP peptide with GABA, which can inhibit potentiation via second messenger pathways involving VPAC1 receptors present in the amygdala.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C78-C84 present a speculative hypothesis about the functional role of the depression-dominated rule and a potential molecular mechanism involving VIP peptide. While the cited evidence (C80-C83) supports the existence of relevant molecular machinery, the causal connection to the plasticity rule and overgeneralization prevention remains hypothetical and untested in the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C119"
+    ],
+    "result": "Neuromodulators (acetylcholine from basal forebrain and dopamine) released during US presentation may provide sustained depolarization and increased excitability of ECS and F neurons lasting 7-10 seconds to 20 minutes, potentially resolving the temporal overlap problem when CS and US stimuli do not overlap.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C109-C117, C119 present a hypothesis about how neuromodulators could enable STDP when CS and US don't temporally overlap. While individual citations support neuromodulator release and effects (C109-C114, C116), the integrated hypothesis about sustained activity enabling plasticity (C115, C117) is speculative and not directly tested in the model, which assumes overlap by design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Experimental evidence suggests BLA can intrinsically generate theta oscillations. The model demonstrates that interneuron intrinsic currents (D-current in VIP, NaP- and H-currents in SOM) can affect LFP and support theta/gamma rhythm generation, consistent with slice studies showing intrinsic theta generation with ACh stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C98 connect experimental findings about intrinsic BLA theta generation to the model's mechanisms. The model results (Figure 6G) demonstrate that interneuron intrinsic currents contribute to LFP rhythms, providing a mechanistic explanation for experimental observations. The implicit modeling of ACh effects through VIP activation (C97) is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The model predicts that blocking D-current in VIP interneurons or silencing any interneuron subtype will prevent fear learning. The model assumes weak ECS-to-PV connections to preserve PING rhythm integrity necessary for proper ECS-F timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C105 present testable predictions and model assumptions. The predictions (C102, C105) follow logically from the model's demonstrated necessity of each interneuron type. The assumption about ECS-to-PV connectivity (C103-C104) is justified mechanistically and represents a clear hypothesis that could be tested experimentally.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Fear learning involves distributed networks including medial prefrontal cortex and hippocampus beyond the amygdala. These structures may provide substrates for sustained BLA neuron firing after US offset and are crucial for fear extinction, which involves high theta rhythms and acquisition of distinct safety memories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C90 summarize established knowledge from experimental literature about distributed fear networks and extinction mechanisms. These claims appropriately contextualize the model's focus on BLA circuits within the broader neuroscience of fear learning, though they are not directly tested in the current model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Low theta rhythms observed in BLA may originate from multiple sources: intrinsic BLA generation, respiratory-related oscillations from olfactory bulb via prefrontal cortex, or volume conduction. High theta may originate from hippocampus during spatial exploration and memory processes involved in fear conditioning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 acknowledge alternative sources for rhythms observed in BLA LFP recordings, appropriately citing experimental evidence. This represents important caveats about rhythm origins that don't undermine the model's demonstration that BLA interneurons can generate these rhythms intrinsically.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The BLA is the main site of fear learning through synaptic plasticity, showing prominent low theta, high theta, and gamma rhythms in LFP recordings. Experimental studies show increased low theta and gamma after fear conditioning, while high theta modulation is associated with fear extinction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C11 establish the experimental and theoretical background for the study through citations to established literature. These claims accurately represent prior knowledge about BLA's role in fear learning and the rhythms observed experimentally, providing appropriate context for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7"
+    ],
+    "result": "The model may apply broadly to associative learning situations beyond fear conditioning because it uses interneuron types (PV, SOM, VIP) commonly found throughout cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C7 presents a speculative generalization about the model's applicability. While the ubiquity of these interneuron types in cortex is established knowledge, whether the specific mechanisms demonstrated for fear learning generalize to other forms of associative learning remains untested and speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C31",
+      "C34"
+    ],
+    "result": "Experimental fear conditioning typically achieves learning after one or few CS-US pairings (1.5-2 s) with 30-40 s intervals. The model defines learners as networks with ECS-to-F conductance >0.12 mS/cm\u00b3 at 40 s, resulting in systematic F activation following ECS spikes during CS-only presentation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C34 establish the experimental context and model definition of learning. C31 accurately cites experimental timescales, while C34 provides a clear operational definition of learning in the model that connects synaptic strength to functional output, appropriately justified by the resulting behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "PV interneurons and excitatory projection neurons form PING (pyramidal-interneuron network gamma) rhythms when reciprocally connected and the excitatory neuron receives sufficient input. PING frequency depends on external input to the excitatory neuron and PV's inhibitory decay time constant (8.3 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 describe the PING mechanism demonstrated in the model (Figure 1C) and cite established literature (Whittington et al., 2000). The model successfully reproduces this well-characterized rhythm-generating mechanism and identifies the key parameters controlling its frequency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "BLA SOM cells are not necessarily the only source of high theta observed during fear learning; high theta in BLA LFP also originates from prefrontal cortex and/or hippocampus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 appropriately acknowledge limitations in attributing high theta solely to BLA SOM cells, citing experimental evidence for external sources. This represents appropriate scientific caution about interpreting the model's results in light of known anatomical connectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "STDP requires overlap in pre- and post-synaptic firing. The depression-dominated rule used in the model makes depression stronger than potentiation unless there is fine timing in gamma and low theta cycles, with each interneuron contributing to establishing this timing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 describe fundamental properties of STDP and the specific plasticity rule used in the model. C67 states general STDP principles, while C68-C69 characterize the depression-dominated rule's requirements, which are demonstrated through model simulations and mechanistic analysis.",
+    "result_type": "MINOR"
+  }
+]

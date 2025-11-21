@@ -1,0 +1,327 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Three gerbil families (2 adults, 4 pups each) were recorded continuously for 20 days in an enlarged environment using four ultrasonic microphones at 125 kHz sampling rate, generating 13.084 TB of raw audio data. All procedures were approved by the University Animal Welfare Committee at New York University.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C93-C96 provide a complete and consistent description of the experimental setup, including animal subjects, recording apparatus, data volume, and ethical approval. The methodology is clearly documented with specific technical parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Audio segmentation using amplitude thresholding and spectral flatness (threshold=0.3) extracted 10,267,972 sound events containing 583,237 vocalizations (6.99\u00b13.07% of all events) and 9,684,735 non-vocal sounds. Sound events occurred at 6726\u00b11260/hour and vocalizations at 405\u00b1103/hour, with the spectral flatness threshold validated to have a 5.5\u00b11.96% false positive rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 and C97-C101 describe a well-validated audio segmentation pipeline with empirical validation of the spectral flatness threshold. The quantitative measurements are internally consistent and the false positive rate validation (C12, C101) strengthens confidence in the vocalization detection method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C59",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "A VAE was trained on 583,237 vocalization spectrograms for 50 epochs to learn a 32-dimensional latent representation, with GMM clustering performed on 7 of 32 latents (explaining 99.5% variance) using stochastic variational inference. The analysis revealed a more elaborate vocal repertoire than previously reported in gerbils.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C59, C102-C105 describe a methodologically sound unsupervised learning approach. The VAE training parameters are specified, dimensionality reduction is justified by variance explained, and the modified GMM allowing family-specific usage patterns is appropriate for the research question. The claim of a more elaborate repertoire (C2) is supported by the discovery of new vocal types shown in subsequent results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "70 vocal clusters were selected using the elbow method on held-out log likelihood combined with prior knowledge that gerbils emit ~12 vocalization types. The authors interpret that 70 clusters likely capture the ~12 known types plus individual or family-specific variations, supported by evidence that both naked mole rats and gerbils exhibit individual-specific vocal variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60, C106-C109 provide reasonable justification for selecting 70 clusters, but the interpretation remains somewhat speculative (C107, C108). While the robustness across cluster numbers is demonstrated (C22), the biological interpretation of why 70 clusters exceeds ~12 known types relies on plausible but unproven hypotheses about individual/family variation. The supporting evidence from other species (C109) is suggestive but not definitive for gerbils.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The gerbil vocal repertoire is more discrete than mouse but less discrete than zebra finch, consisting of monosyllabic vocalizations (56/70 clusters) and multisyllabic vocalizations (9/70 clusters). One vocalization appears similar to naked mole rat family-specific chirp.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 provide a comparative characterization of the gerbil vocal repertoire. The discreteness comparison (C13) is based on UMAP visualization and citations to prior work. The quantitative breakdown of mono- vs. multisyllabic vocalizations (C15, C16) is data-driven. The similarity to naked mole rat chirp (C17) is a qualitative observation that adds comparative context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C112"
+    ],
+    "result": "Vocal repertoire usage differs significantly by family, with all families using each of the 70 vocal types but relying more heavily on different clusters. Families overexpress both dissimilar and similar vocal clusters relative to each other. This finding is robust across a wide range of GMM cluster numbers and supported by MMD permutation tests showing empirical distances much higher than shuffle controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20-C24, C112 provide converging evidence for family-specific vocal usage through multiple analytical approaches (GMM cluster usage, MMD permutation tests, robustness analysis). The statistical validation (C112) and robustness across cluster numbers (C22) strengthen the conclusion. The observation that all families use all clusters (C20) but with different preferences (C21) is an important nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Families preferentially use characteristic sets of vocal clusters that remain stable over weeks. Daily UMAP density maps show stability within families and distinctness across families. Cluster usages during full family recording days are stable within families, with PCA projections showing clearly separable families. MMD analysis confirms across-family repertoire differences are substantially larger than within-family differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C25-C30 provide multiple lines of evidence for temporal stability of family-specific vocal usage through qualitative (UMAP density maps) and quantitative (PCA, MMD) analyses. The convergence of different analytical approaches (visual inspection, dimensionality reduction, statistical distance metrics) strengthens confidence in the stability finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C82"
+    ],
+    "result": "Pup weaning causes a drastic decrease in vocal emission and a large-magnitude vocal repertoire change, with the repertoire confined to a small region of vocal space following weaning. The sudden reduction of sonic calls could suggest these vocalizations are produced selectively by pups, though this interpretation is speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19 document clear changes in vocal behavior following weaning, supported by data in Figure 3\u2014figure supplement 1. However, C82 acknowledges the interpretation about pup-specific production is speculative, and the authors note (C83-C84) that adults also produce sonic vocalizations. The observed effect is real but the mechanistic interpretation remains uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C74",
+      "C76"
+    ],
+    "result": "Vocal emission follows a diurnal activity pattern similar across families, with peaks in morning and afternoon. The majority of vocalizations (58.5\u00b10.9%) occur in bouts with modal duration of 4s. The distributions of bout durations, inter-vocalization-intervals, and vocalization durations are highly overlapping across families, suggesting temporal structure of vocal emission does not vary by family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34, C74, C76 demonstrate that temporal emission patterns are conserved across families, in contrast to the family-specific spectral patterns. The bout definition criteria are cited from prior work (C32), and the overlapping distributions (C33) support the inference that temporal structure is not family-specific (C34). This provides an important control showing not all vocal features differ by family.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C113",
+      "C115",
+      "C116"
+    ],
+    "result": "Gerbils display family-specific transitions between vocal clusters. While all families show strong self-transition preference, the proportion usage of different transitions drastically varies by family. Most transitions occur significantly above chance levels (p\u22640.05, Benjamini-Hochberg corrected), and families arrange the same sets of vocal clusters into unique sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35-C39, C113, C115-C116 provide evidence for family-specific transition structure through transition matrix analysis with appropriate statistical controls (1000 shuffles, multiple comparisons correction). The demonstration that families arrange the same clusters into unique sequences (C39) is particularly compelling evidence that transition structure, not just cluster usage, differs by family.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The family-specific vocal usage patterns suggest the presence of a vocal dialect that could be exploited to represent kinship. The differences align with the linguistic definition of dialect (usage and pronunciation differences). Like naked mole-rats, gerbils may possess the ability to acquire family-specific vocal behavior through experience, with multiple vocal types potentially harboring dialects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C68-C72 present an interpretation of the family-specific patterns as vocal dialects. While the analogy to human dialects (C68-C70) is conceptually reasonable and the comparison to naked mole-rats (C71-C72) is appropriate, these claims are largely speculative. The data demonstrate family-specific patterns but do not establish learning mechanisms, functional significance for kinship recognition, or rule out alternative explanations (e.g., genetic differences, environmental factors).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study has important limitations: lack of synchronized video data for behavioral context, inability to localize vocalizations to individual animals with sufficient spatial resolution, and current computational bioacoustics methods are insufficient to determine whether individual animals emit unique repertoires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81 provide an honest assessment of study limitations. The inability to attribute vocalizations to individuals (C80-C81) is a significant constraint that prevents stronger claims about individual vs. family-level variation. The acknowledgment that video data could help control for social interaction differences (C78-C79) shows appropriate consideration of alternative explanations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Long-term behavioral monitoring of gerbil families reveals richer vocal behavior than previously reported, establishing the Mongolian gerbil as a useful model organism for studying the neurobiology of vocal interactions in complex social groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 represent reasonable conclusions based on the cumulative findings. The discovery of new vocal types (C2), family-specific usage patterns (C3-C4), and temporal stability (C4) support the claim of richer vocal behavior. The establishment of gerbils as a useful model (C92) is justified by the demonstrated complexity of their vocal communication and existing neuroscience infrastructure for this species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Maximum Mean Discrepancy (MMD) was used as a cluster-free method to quantify differences between family vocal repertoires. MMD distances between families were much higher than shuffle controls, supporting the hypothesis that families utilize distinct vocal repertoire statistics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 describe a complementary statistical approach that makes no assumptions about clustering. The MMD permutation test provides independent validation of family differences beyond the GMM clustering results, strengthening confidence in the main findings. The method is appropriately cited (C111) and the statistical result is clear (C112).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The introduction establishes that natural observations of family behaviors are often incomplete, vocal cues are learned through social experience across many species (humans, birds, rodents, marine mammals), and vocalizations can convey information about identity and kinship. Prior laboratory studies have generally focused on short periods with animals lacking prior social relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C48, C61-C67 provide appropriate background context from prior literature to motivate the study. The citations appear accurate and relevant, establishing that: (1) naturalistic observation is challenging, (2) vocal learning occurs across taxa, (3) social context matters for vocal behavior, and (4) prior lab studies have limitations. This contextualizes why long-term family recordings are valuable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Gerbils form pair bonds and maintain family structures across generations, living cooperatively in underground burrows with up to 15 family members in multi-family neighborhoods. They rely heavily on auditory communication given burrow darkness, display vocal communication in sonic and ultrasonic ranges, and can hear within sonic ranges at sensitivities similar to humans. Recordings began at P11-13 during the auditory cortex critical period and extended to P31-32 at weaning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C58 establish gerbils as an appropriate model system through citations to prior work on their social structure, natural behavior, and auditory capabilities. The timing of recordings (C57-C58) is justified by developmental considerations (auditory cortex critical period, weaning age). This background supports the rationale for studying vocal communication in gerbil families.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C73",
+      "C75",
+      "C77"
+    ],
+    "result": "Prior work shows that vocalization emission statistics and behavioral transition patterns can signify group differences. The observed diurnal vocal pattern complements prior work on gerbil non-vocal behaviors, and the bout emission statistics are somewhat consistent with human phoneme rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C75, C77 appropriately contextualize the temporal analysis results within prior literature. The citations support that temporal patterns can be informative (C73), the diurnal pattern extends prior findings (C75), and the comparison to human speech rates (C77) provides interesting cross-species context, though the relevance of this comparison is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The discussion reviews prior literature on gerbil vocal development, noting that adults produce sonic vocalizations during social interactions, pup vocalizations change with isolation and arousal state, ultrasonic vocalization rates increase during juvenile-to-adolescent development in a sex-dependent manner, and vocal repertoire development has been studied in related species (fat-tailed gerbils) and other rodents (mice) and primates (chimpanzees).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C90 provide appropriate discussion of how the current findings relate to prior work on vocal development. The citations appear accurate and the discussion acknowledges complexity in interpreting the weaning effects (C82-C85) and limitations in understanding vocal development without individual-level data. The cross-species comparisons (C87-C90) provide useful context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C117"
+    ],
+    "result": "Acoustic features (fundamental frequency, amplitude, entropy, frequency modulation, goodness of pitch, spectral flatness, duration, start/stop frequencies) were calculated using VocalPy and librosa software packages for the top 100 most probable vocalizations from each GMM cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C117 describes the acoustic feature calculation methodology with appropriate software citations. This provides supplementary characterization of the vocal clusters beyond the unsupervised VAE/GMM approach, though these features are not central to the main results.",
+    "result_type": "MINOR"
+  }
+]

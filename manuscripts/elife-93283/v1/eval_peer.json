@@ -1,0 +1,200 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C87",
+      "C88"
+    ],
+    "result": "The study demonstrates that immune cells are broadly represented in healthy synovium but undergo drastic expansion and diversification following joint injury in PTOA, with macrophages showing the most notable expansion. Flow cytometry and scRNA-seq data show immune cell abundance greatly increased at 7 days post-injury with partial resolution by 28 days, and all major immune cell types identified by scRNA-seq were validated by flow cytometry.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers acknowledge the comprehensive profiling of immune cells as a strength. Reviewer 3 specifically states 'the profiling of immune cells...will be a valuable resource' and notes 'the work is technically sound.' No reviewer challenges the basic characterization of immune cell expansion and diversity after injury.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C39",
+      "C40",
+      "C41",
+      "C93"
+    ],
+    "result": "Integration of scRNA-seq datasets from multiple studies (Knights, Sebastian, Culemann, Muench) revealed consistent immune cell populations across PTOA and RA models, with myeloid cells predominating (>80%), lymphocytes comprising <20%, and mast cells being very rare. The same or very similar cell types clustered together across datasets following integration.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises significant concerns about the cross-dataset comparison, stating 'methods of sample preparation must be different, for example, the extent and location of excised synovium' and warns that 'caution should be exercised regarding the potentially significant impact of methodological differences on the analysis results.' This suggests the integration findings may be confounded by technical variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Approximately half of all CD45+ cells in digested whole knee joints are neutrophils by flow cytometry, and this abundance was not reduced by systemic perfusion to clear vasculature. However, comparison of gene signatures suggests these neutrophil clusters (particularly Neut-1) are more likely bone marrow-derived than true intra-articular tissue neutrophils.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges these neutrophil findings. The authors acknowledge the limitation that these cells may be contaminants from bone marrow rather than true synovial neutrophils, and reviewers do not dispute this interpretation or the supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C55"
+    ],
+    "result": "Comparison of macrophages between PTOA and RA models revealed distinct and overlapping gene expression patterns. PTOA macrophages showed enrichment in collagen metabolism, myeloid differentiation, and neutrophil chemotaxis pathways, while RA macrophages showed enrichment in corticotropin-releasing hormone response and Th1 differentiation. 21 DEGs overlapped between conditions, enriched for cytokine activity and leukocyte chemotaxis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 notes that 'most of all signaling pathways and molecules described in the latter part of this study are previously known,' suggesting limited novelty. Additionally, Reviewer 2's concern about methodological differences between datasets (sample preparation, tissue location) raises questions about whether the PTOA vs RA comparisons are confounded by technical factors rather than reflecting true biological differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C89",
+      "C94"
+    ],
+    "result": "Healthy synovium contains a basal resident macrophage population expressing Timd4, Lyve1, and Folr2 that resembles homeostatic tissue-resident macrophages in other tissues. After injury, this population is largely lost but trajectory modeling suggests it polarizes into two distinct phenotypes: resident-like A (Mrc1+ Ly6e+ Gas6+) and resident-like B (Cd9+ Spp1+ Trem2+).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the comprehensive analysis, Reviewer 1 and the Editor emphasize 'the analysis performed so far is incomplete, with a main weakness being the lack of data to confirm the authors' speculation about the underlying mechanisms.' Reviewer 3 states 'the data has been rather descriptive and superficial at this stage' and 'the authors did not show the in vivo significance of their findings.' The trajectory modeling is computational inference without experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The polarized resident-like macrophage subsets show distinct functional enrichment: resident-like A is enriched for complement activation, cell migration, and antigen presentation; resident-like B is enriched for CXCL12-CXCR4 signaling and macrophage inflammatory protein production; basal resident macrophages are enriched for homeostatic functions including phagocytosis, endocytosis, and apoptosis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 notes that 'the various data obtained from these technologies are comprehensive and useful; however, they are just estimates. Without confirmation by experiments, it is impossible to determine how much of it can be believed.' The functional enrichment is based on computational pathway analysis without experimental validation of the predicted functions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C90",
+      "C103"
+    ],
+    "result": "Monocytes expressing Ly6c2, Plac8, and Chil3 are present after injury, and trajectory analysis suggests they give rise to infiltrating macrophages expressing Ccr2 and MHC Class II genes. These infiltrating macrophages are inferred to be pro-inflammatory and analogous to F4/80hi MHC Class II+ macrophages described in inflammatory arthritis models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The Editor and Reviewer 1 state 'the main weakness being the lack of data to confirm the authors' speculation about the underlying mechanisms.' Reviewer 3 notes 'the authors did not show the in vivo significance of their findings in OA development.' The monocyte-to-macrophage differentiation is based on computational trajectory inference without lineage tracing or functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Traditional M1/M2 macrophage markers (Tnf, Il10) did not segregate neatly into defined clusters in the scRNA-seq data, emphasizing the need to supersede these outdated terms with more nuanced characterizations based on in vivo gene expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges this observation. This finding is consistent with current understanding in the field that the M1/M2 paradigm is oversimplified for in vivo macrophage biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C78",
+      "C79",
+      "C80",
+      "C91",
+      "C92"
+    ],
+    "result": "M-CSF signaling is among the most perturbed ligand-receptor axes after injury, operating primarily in the stromal-to-immune direction. Fibroblasts are the major source of Csf1, pericytes produce Il34, and Csf1r expression is confined to immune cells (primarily macrophages and DCs). CellChat analysis shows increased M-CSF pathway interactions with higher probabilities after injury, originating from fibroblasts and pericytes and signaling toward myeloid cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 states 'the various data obtained from these technologies are comprehensive and useful; however, they are just estimates. Without confirmation by experiments, it is impossible to determine how much of it can be believed.' Reviewer 3 notes 'the identification of M-CSF signaling as a major crosstalk axis in OA development is also intriguing' but emphasizes 'the authors did not show the in vivo significance of their findings.' The M-CSF signaling findings are based on computational prediction (CellChat) without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C81",
+      "C82",
+      "C83",
+      "C104",
+      "C107"
+    ],
+    "result": "The transcription factors Pu.1, Cebp\u03b1, Cebp\u03b2, and Jun are predicted by RcisTarget analysis to control differentiation of monocytes into pro-inflammatory synovial macrophages. Gene regulatory network analysis shows Pu.1 controls Csf1r expression. While expression of the TF genes themselves was not necessarily induced over pseudotime, their target genes (Il10, Csf1r, Tlr7) showed increasing expression with pseudotime.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The Editor and Reviewer 1 emphasize 'the lack of data to confirm the authors' speculation about the underlying mechanisms.' Reviewer 3 states 'the authors did not show the in vivo significance of their findings in OA development.' The TF predictions are computational (RcisTarget) without experimental validation such as TF perturbation studies. Reviewer 2 notes these TFs 'are previously known' in other contexts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C98"
+    ],
+    "result": "The resident-like B macrophage population (Spp1+ Cd9+ Trem2+) identified in PTOA synovium is inferred to be functionally analogous to pro-fibrotic macrophages described in other disease contexts. Trajectory modeling suggests these pro-fibrotic macrophages arise from synovium-resident TLF+ macrophages after injury.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the gene signature comparison to published pro-fibrotic macrophages is reasonable, Reviewer 1 and the Editor note 'the lack of data to confirm the authors' speculation.' Reviewer 3 emphasizes 'the authors did not show the in vivo significance of their findings.' The functional analogy is based on gene expression similarity without direct functional testing of fibrotic activity or validation of the trajectory model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "CellChat analysis of outgoing communication signals revealed distinct signaling patterns for immune cell types: DCs and T/NK cells participate strongly in integrin, selectin, and chemokine signaling; mast cells are enriched for CSF and IL-4 signals; monocytes and macrophages are enriched for IL-1 and IGF signaling.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 states 'the various data obtained from these technologies are comprehensive and useful; however, they are just estimates. Without confirmation by experiments, it is impossible to determine how much of it can be believed.' These are computational predictions from CellChat without experimental validation of the predicted signaling interactions.",
+    "result_type": "MINOR"
+  }
+]

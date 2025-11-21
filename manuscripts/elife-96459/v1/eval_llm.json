@@ -1,0 +1,477 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C26",
+      "C109",
+      "C110"
+    ],
+    "result": "The study generated comprehensive transcriptomic data for Schlemm's canal endothelial cells (SECs) using bulk RNA-seq (~4500 SECs), scRNA-seq, and snRNA-seq (903 individual SECs total from two mouse strains), representing far greater numbers and depth than previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C19, C26, C109, and C110 collectively demonstrate successful generation of extensive SEC transcriptomic data. The optimized isolation protocol (C26) enabled bulk RNA-seq of ~4500 SECs identifying >9000 genes (C110), and single-cell approaches captured 903 SECs (C19), substantially exceeding previous studies (C109). The data quality and depth are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C20",
+      "C27",
+      "C28",
+      "C30",
+      "C31",
+      "C46",
+      "C111",
+      "C112",
+      "C113",
+      "C120"
+    ],
+    "result": "SECs exhibit a lymphatic-biased molecular identity, showing greater transcriptomic similarity to lymphatic endothelial cells (LECs) than blood endothelial cells (BECs), as demonstrated by bulk RNA-seq, scRNA-seq, and snRNA-seq analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent analyses (C27, C28, C31, C46, C111, C113, C120) consistently demonstrate that SECs are more similar to LECs than BECs. The finding is supported by volcano plots showing fewer DEGs between SECs and LECs (C28), hierarchical clustering (C31), and correlation analyses across different sequencing modalities. This contradicts one previous study (C112) but aligns with others, and the authors provide substantially more data to support their conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C56",
+      "C57",
+      "C66",
+      "C67",
+      "C68",
+      "C122",
+      "C128"
+    ],
+    "result": "Three distinct molecular classes of SECs were identified: outer wall (OW), and two inner wall states (IW1 and IW2), with IW1 cells typically Npnt-high and IW2 cells Ccl21a-high, while OW cells are Selp-high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C56, C66, C67, and C128 describe the identification of three SEC states through unbiased clustering of integrated scRNA-seq and snRNA-seq data. The increased statistical power from combining datasets (C122, C128) enabled resolution of IW into two subclasses. Marker gene expression patterns (C57, C67) provide molecular signatures for each state. The clustering is reproducible across strains and validated by immunofluorescence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C155",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Immunofluorescence validation confirmed the molecular classification of SEC states, revealing that NPNT is highly expressed in the IW (particularly anteriorly), CCL21A shows a posterior bias in the IW, and SELP marks the OW.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C72 describe immunofluorescence and in situ hybridization results that validate the transcriptomic findings. NPNT localization to IW with anterior bias (C69, C70, C71) and CCL21A with posterior bias (C72) are well-documented with multiple imaging approaches. Claims C155, C157-C159 confirm that IF strengthened the biological separation of IW1 and IW2 states. The spatial gradients are clearly demonstrated in the figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C73",
+      "C130",
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "The two inner wall cell states (IW1 and IW2) likely result from local environmental differences, potentially including differential aqueous humor flow rates and anatomical context along the anterior-posterior axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C23, C73, C130, and C162 propose that IW1 and IW2 states result from local environmental differences, particularly flow rates. While the spatial segregation (C158, C159) and anatomical differences (C160, C161) are documented, the causal relationship between environment and cell state is speculative (marked as SPECULATION in evidence). The hypothesis is reasonable but lacks direct experimental validation of flow effects on gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "SELP (P-Selectin) was identified as a marker for outer wall SECs and collector channel cells, validated by both transcriptomic data and immunofluorescence, consistent with enrichment of Weibel-Palade bodies in OW SECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 and C137-C139 demonstrate that SELP marks OW SECs and CCs through both transcriptomic (C75, C139) and immunofluorescence (C74, C76) evidence. The finding is consistent with known biology of Weibel-Palade bodies (C138). The agreement between RNA and protein data strengthens the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C68",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Collector channel (CC) endothelial cells were identified as a distinct population expressing Ackr1 and Selp, with intermediate expression of SEC and vascular markers, validated by immunofluorescence despite antibody cross-reactivity concerns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60, C68, and C82 describe identification of CC cells through Ackr1+Selp+ expression. The transcriptomic characterization (C80) and immunofluorescence validation (C78, C81) support this classification. The authors acknowledge antibody specificity issues (C79) but provide multiple lines of evidence including FLT1 expression (C81) to support CC cell identification. The manual clustering approach is justified by the small cell number.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Npnt is enriched in both IW1 and IW2 compared to OW, with highest expression in IW1 cells (89% detection rate), while Ccl21a is robustly expressed in IW2 cells (45% detection), establishing these as key markers for SEC subclasses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148, C149, C151-C153 provide detailed quantitative data on marker gene expression across SEC states. The detection frequencies (C149, C152) and expression patterns are clearly documented. Claim C154 confirms higher lymphatic gene expression in IW cells. The data support these genes as markers, though C144 notes no markers are completely unique, requiring marker combinations for best specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Gene set enrichment and gene ontology analyses revealed that SECs are enriched in pathways regulating extracellular matrix interactions, cell-cell junctions, membrane rafts, TGF\u03b2 signaling, and interleukin pathways, highlighting key functional specializations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 describe GSEA results from bulk RNA-seq, while C100-C105 detail GO analysis results. The enrichment of ECM interactions (C32), TGF\u03b2 signaling (C33), interleukin pathways (C34), cell-cell junctions (C100), and membrane raft components including caveolins (C103) is well-documented with appropriate statistical analysis. The biological interpretation linking these pathways to SEC function is reasonable and supported by citations to functional studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C187",
+      "C188",
+      "C189"
+    ],
+    "result": "Predicted ligand-receptor analysis using NicheNet identified key signaling interactions between trabecular meshwork and Schlemm's canal cells, including ANGPT1/TEK, VEGF family members, and novel contact-based interactions like JAM2/ITGB1, with more predicted interactions from TM to SC than vice versa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C95, C97-C99, and C187-C189 describe predicted ligand-receptor interactions using NicheNet. The ANGPT1/TEK interaction (C95, C189) is validated by prior knowledge (C96), providing confidence in the approach. The asymmetry in predicted interactions (C99) is clearly documented. However, these are computational predictions requiring experimental validation. The analysis is appropriately described as 'predicted' and 'supporting' rather than definitively proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C191"
+    ],
+    "result": "Cell type-specific expression analysis of GWAS-identified glaucoma genes revealed that the majority are expressed in endothelial cells and trabecular meshwork cells, with most genes broadly expressed among endothelial subtypes, supporting the importance of vascular regulatory functions in IOP and glaucoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93 describe analysis of glaucoma-associated genes from GWAS studies, showing predominant expression in endothelial cells and TM cells. The scDRS analysis (C92) provides statistical support for disease relevance in these cell types. The broad expression pattern among endothelial subtypes (C93) is documented. This represents a valuable resource for the field, though the functional significance of expression patterns requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "snRNA-seq provided proportional enrichment of endothelial cells (11.9% vs 5.1% in scRNA-seq) and integrated well with scRNA-seq data despite capturing fewer genes per cell, enabling identification of inner and outer wall SEC transcriptomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C52 document the enrichment of ECs using snRNA-seq based on prior reports and current data. The integration quality (C53, C54, C121) and correlation with other datasets (C54, C120) are well-documented. Claims C116-C119 explain the advantages and limitations of snRNA-seq. The increased SEC numbers enabled IW/OW distinction (C122). The complementary use of multiple sequencing approaches is well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C128"
+    ],
+    "result": "scRNA-seq of 129/Sj mice (8812 cells, 362 SECs) validated findings in a genetically divergent strain, with no significant pathway differences detected between strains, and integration with C57BL/6J data enabled resolution of three SEC states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64 document successful scRNA-seq in 129/Sj mice with good data quality. The lack of significant pathway differences between strains (C65) supports generalizability, though the authors note this is not a comprehensive strain comparison. The integration enabling three-state resolution (C128) demonstrates the value of cross-strain validation. The approach strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C113"
+    ],
+    "result": "The scRNA-seq data correlated well with bulk RNA-seq data, and signature genes from scRNA-seq clustering correctly identified cell types in bulk RNA-seq through unsupervised hierarchical clustering, demonstrating robustness across independent samples and statistical methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C113 describe validation of scRNA-seq findings using bulk RNA-seq data. The correlation (C47, C113) and successful unsupervised clustering using signature genes (C48) demonstrate technical robustness. This cross-validation strengthens confidence in both datasets and the identified cell type signatures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Sex-specific clustering was identified in endothelial cells, with male and female clusters distinguished by expression of sex chromosome genes (Xist, Ddx3y) and sex-associated genes (Lars2, Aes), though functional significance remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 document sex-specific clustering with appropriate molecular markers. The cluster size difference is explained by experimental design (C84). The sex-specific gene expression patterns (C85, C86) are consistent with prior studies. However, the authors appropriately note that functional significance is unknown. This is a descriptive finding requiring further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C172",
+      "C173",
+      "C174"
+    ],
+    "result": "Pericytes were identified in the BEC cluster expressing Des, Pdgfrb, and Rgs5, and immunofluorescence revealed their association with collector channels, suggesting a potential role in regulating outflow resistance distal to SC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87, C88, C172, and C173 document pericyte identification through marker expression and IF localization to CCs. However, claim C174's suggestion of a role in regulating outflow resistance is speculative (marked as SPECULATION) and explicitly noted to require further experiments. The identification is solid, but the functional interpretation is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "Blood endothelial cells were further classified into arteries (Sox17+), capillaries (Esm1-high), and veins (Adamtsl1+, Car4+), and immunofluorescence confirmed enrichment of lymphatic markers (Prox1, Flt4) in the inner wall of Schlemm's canal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89 and C90 describe sub-classification of BECs and confirmation of lymphatic polarization. The BEC sub-clustering (C89) uses established markers with appropriate citations. The IF confirmation of lymphatic marker enrichment in IW (C90) validates prior findings (Kizhatil et al., 2014) with the current dataset. Both findings are well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C132",
+      "C133"
+    ],
+    "result": "Pathway enrichment analysis identified molecular differences between IW and OW cells, with IW cells enriched for calcium-dependent protein binding and cell adhesion molecule binding, while OW cells showed enrichment in growth factor binding and glycosaminoglycan binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106, C107, C132, and C133 describe pathway differences between IW and OW cells. The enrichment patterns are documented with appropriate GO analysis. Claim C133 provides biological interpretation linking calcium-dependent binding to membrane fusion and giant vacuole formation, which is reasonable though somewhat speculative. The pathway differences are modest but statistically significant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "CCL21A, a marker of IW2 cells, is a chemoattractant that may function in SC to direct immune cell migration, potentially playing a role in anterior chamber-associated immune deviation (ACAID), though this remains speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C164-C166 describe established CCL21A biology with appropriate citations. However, claims C167 and C168 proposing similar functions in SC are explicitly speculative (marked as SPECULATION). While the hypothesis is biologically plausible given SC's association with immune cells, it lacks direct experimental support. This represents an interesting hypothesis for future investigation rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C21",
+      "C177",
+      "C178"
+    ],
+    "result": "Cell-cell junction pathway genes including Tjp1, Tjp2, and Ctnnb1 were enriched in SECs, pointing to the importance of junctions in determining SC fluid permeability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C177, and C178 document enrichment of junction-related genes in SECs. The genes identified (Tjp1, Tjp2, Ctnnb1) have established roles in tight junction regulation (C178). The interpretation linking junction regulation to fluid permeability (C21) is reasonable given SC's function, though direct functional validation is not provided in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C108",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The study demonstrates that comprehensive analysis of specific cell types may require combining complementary sequencing approaches (bulk, scRNA-seq, snRNA-seq), as different methods provide different advantages in cell capture, transcriptome depth, and statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108, C123-C127 discuss methodological considerations for single-cell studies. The authors provide both conceptual arguments (C123-C126) and empirical evidence (C127) supporting the value of multi-modal approaches. Their successful use of three complementary methods to achieve comprehensive SEC characterization validates this approach. This represents an important methodological contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C169",
+      "C170",
+      "C171"
+    ],
+    "result": "Macrophages are intimately associated with adult SC and likely play important roles in determining aqueous humor outflow and IOP in health and disease, though the current dataset lacked adequate power for pathway analysis of macrophages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C169 cites prior work on macrophage-SC associations. Claim C170 proposes functional importance but is explicitly speculative. Claim C171 acknowledges the current study's limitation in analyzing macrophages. While the hypothesis is reasonable based on prior work, the current study does not provide new data to support macrophage function in IOP regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C175",
+      "C176",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C186"
+    ],
+    "result": "Gene ontology analysis identified enrichment of genes involved in actin filament organization, cell substrate adhesion, vascular development, integrin-ECM interactions, and membrane raft pathways in SECs, with bulk RNA-seq providing deeper pathway member identification than scRNA-seq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C175-C176 and C179-C182 document GO analysis results identifying key biological processes and pathways in SECs. The specific genes identified (integrins, fibulins, Npnt, membrane raft components) are well-documented. Claim C186 notes the complementary value of bulk RNA-seq for pathway analysis. The findings provide a comprehensive molecular framework for understanding SEC function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "FYN, a Src family kinase enriched in the membrane raft pathway, was recently demonstrated to regulate aqueous humor outflow and IOP by phosphorylating VE-cadherin and increasing SEC junction permeability, exemplifying how pathway analysis can identify functionally important genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183 and C184 cite recent work by the authors demonstrating FYN function in IOP regulation. Claim C185 suggests that similar functional analysis of other hub genes will improve understanding of SEC mechanisms. This provides proof-of-concept that the pathway analyses can identify functionally relevant genes, though C185 is prospective.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Flt1 expression in SECs shows discrepancies between studies, with low RNA expression and undetectable protein by IF in most SECs in the current study, contrasting with robust IHC detection in one previous study, though reanalysis of another study showed similar low expression patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C141-C143 document conflicting findings regarding Flt1 expression in SECs. The current study shows low expression (C142), which is validated by reanalysis of one previous dataset (C143), but conflicts with another study showing robust expression (C141). The reasons for discrepancy are unclear. This highlights the importance of careful validation and potential technical or biological sources of variation between studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "No markers have completely unique expression in SEC subclasses, requiring marker combinations for optimal specificity, though immunofluorescence using key markers like NPNT and CCL21A provides a reasonable initial approach for identifying SEC states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144 and C145 provide practical guidance on marker use, acknowledging limitations while suggesting workable approaches. Claims C146 and C147 discuss Npnt as a SEC marker, with C147 being speculative about its role in SC formation/maintenance. The practical recommendations are well-supported by the data, though the functional speculation requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C156"
+    ],
+    "result": "Analysis of a publicly available dataset showed similar distribution of Npnt, Ccl21a, and Selp expression in SECs, further supporting the study's findings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C156 describes reanalysis of an independent dataset showing consistent marker expression patterns. This external validation strengthens confidence in the marker gene identification and SEC state classification. The agreement across independent datasets is important for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C129",
+      "C131"
+    ],
+    "result": "The SEC classes are termed 'states' rather than 'subtypes' because they have remarkably similar transcriptomes with few detected pathway differences, and additional states/types will likely be identified with greater sampling depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C129 explains the terminology choice based on transcriptomic similarity and limited pathway differences. This is a reasonable interpretation of the data. Claim C131 is prospective, predicting future discoveries with deeper sampling. The terminology distinction is appropriate given the current data resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C192",
+      "C193"
+    ],
+    "result": "The study provides a deep characterization of SECs including identification of three distinct cell states valuable for understanding SC biology and IOP elevation in glaucoma, along with extensive data for other anterior segment cell types for future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C192 and C193 summarize the study's contributions. The deep characterization of SECs with three cell states is well-supported by the preceding results. The value for understanding SC biology and glaucoma is reasonable given the comprehensive molecular data provided. Claim C193 notes additional data for other cell types, which is evident in the figures but not the primary focus.",
+    "result_type": "MAJOR"
+  }
+]

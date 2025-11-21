@@ -1,0 +1,162 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C26"
+    ],
+    "result": "The authors derive a decision rule for choosing between additive and GxE models for estimating allelic effects, framing the problem as a bias-variance trade-off. The rule weighs increased estimation noise when context is considered against potential bias when context dependency is ignored, with the trade-off closely related to the signal-to-noise ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C20-C22, C24, and C26 collectively establish the theoretical framework and mathematical derivation of the decision rule. The mathematical derivations are presented in detail in the Methods section, the conceptual framework is clearly articulated, and the bias-variance decomposition follows from standard OLS theory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In UK Biobank data examining GxSex effects on physiological traits, the authors find that for most traits, very few allelic effects (0-0.1%) are better estimated using sex-specific models. Notable exceptions include testosterone, SHBG, and waist-to-hip ratio (0.5% of effects better estimated with GxE). However, among genome-wide significant SNPs, a much larger proportion of effects favor GxE estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C23, C29-C34 present empirical findings from UK Biobank analysis with specific quantitative results. The analysis applies the derived decision rule to real data, and the findings are illustrated in Figure 3. The data-splitting validation approach (Appendix 1\u2014figure 1) supports the accuracy of the decision rule application.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The authors demonstrate that a generative model of pervasive amplification (where all effects are 1.4\u00d7 larger in one context) produces patterns highly similar to those observed by Pallares et al. in their GxDiet study of fly longevity, despite Pallares et al. concluding evidence for cryptic genetic variation. This shows that classification of 'top hits' alone may not accurately represent the extent or mode of GxE.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C51 present a reanalysis and simulation study that challenges the interpretation of prior work. The simulation results (Figure 4) closely match the empirical patterns from Pallares et al., and the reanalysis based on covariance estimation (Appendix 1\u2014figure 4) provides additional support. This demonstrates how different generative models can produce similar patterns when analyzed through significance-based classification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In simulations of polygenic traits with pervasive amplification, additive polygenic scores generally outperformed context-specific scores due to the variance cost of stratification. However, with adequate power, a polygenic adaptive shrinkage approach (mash) that leverages genome-wide covariance patterns outperformed all other methods, though it performed poorly with low power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C61 present simulation results (Figure 5) comparing multiple approaches for polygenic score construction. The findings are internally consistent and demonstrate the conditions under which different methods perform best. The simulations are well-described in the Methods section with clear parameters and evaluation metrics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C18",
+      "C35",
+      "C36",
+      "C63",
+      "C64"
+    ],
+    "result": "For complex traits, jointly considering context dependency across many variants can mitigate both noise and bias, potentially improving both estimation and trait prediction. This contrasts with single-variant approaches where the variance cost typically outweighs bias reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C18, C35-C36, and C63-C64 present the key conceptual argument about polygenic GxE. This is supported by the simulation results showing improved performance of polygenic adaptive shrinkage methods under appropriate conditions, and by the reanalysis of the Pallares et al. data demonstrating the limitations of single-variant approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C19",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Analyses based on independently ascertained 'top hits' can be misleading, as they may miss GxE signals that are subtle at individual variants but pervasive and substantial across the genome. Considering polygenic patterns of GxE can improve interpretation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C19, C39-C41 are supported by the Pallares et al. reanalysis (Figure 4) and the theoretical arguments about polygenic architecture. The demonstration that pervasive amplification can produce patterns similar to those interpreted as cryptic genetic variation provides concrete evidence for this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes the background context that genetic effects may depend on context, but it remains unclear whether GxE models merit use over additive models in GWAS. While GxE is common in tractable experimental systems, few cases exist where GxE models explain human GWAS data better than additive models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C17 establish the background and motivation for the study. These are well-supported by citations to prior literature and represent established knowledge in the field. The claims accurately characterize the current state of understanding regarding GxE in GWAS.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Amplification\u2014a systematic difference in the magnitude of genetic effects between contexts\u2014is a common mode of GxSex across complex physiological traits, potentially arising when variants regulate a shared pathway moderated by a factor that varies across contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 describe a pattern from the authors' prior work and propose a mechanistic explanation. C37 is supported by citation to prior work (Zhu et al., 2023), and C38 provides a plausible mechanistic explanation that is used as the basis for simulations in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "When genetic variants are considered independently, the estimation of their effects in different contexts can be boiled down to a bias-variance trade-off.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 summarizes the main theoretical conclusion from the single-variant analysis. This is well-supported by the mathematical derivations and empirical demonstrations throughout the manuscript.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1942 @@
+{
+  "submission": {
+    "id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:29:38.319809Z",
+    "updated_at": "2025-11-21T22:29:38.319809Z"
+  },
+  "content": [
+    {
+      "id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "content_type": "manuscript",
+      "content_text": "# Extreme positive epistasis for fitness in monosomic yeast strains\n\n## Authors\n\n- Hanna Tutaj<sup>1</sup> ([ORCID: 0000-0003-1539-5300](https://orcid.org/0000-0003-1539-5300)) \u2020\n- Katarzyna Tomala<sup>1</sup> ([ORCID: 0000-0002-4474-1658](https://orcid.org/0000-0002-4474-1658))\n- Adrian Pirog<sup>1</sup> ([ORCID: 0000-0001-8858-1118](https://orcid.org/0000-0001-8858-1118))\n- Marzena Marsza\u0142ek<sup>1</sup> ([ORCID: 0000-0001-9175-8850](https://orcid.org/0000-0001-9175-8850))\n- Ryszard Korona<sup>1</sup> ([ORCID: 0000-0002-4329-5908](https://orcid.org/0000-0002-4329-5908)) \u2020\n\n### Affiliations\n\n1. Institute of Environmental Sciences, Faculty of Biology, Jagiellonian University Cracow Poland ([ROR:03bqmcz70](https://ror.org/03bqmcz70))\n2. Doctoral School of Exact and Natural Sciences, Jagiellonian University Cracow Poland ([ROR:03bqmcz70](https://ror.org/03bqmcz70))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe loss of a single chromosome in a diploid organism halves the dosage of many genes and is usually accompanied by a substantial decrease in fitness. We asked whether this decrease simply reflects the joint damage caused by individual gene dosage deficiencies. We measured the fitness effects of single heterozygous gene deletions in yeast and combined them for each chromosome. This predicted a negative growth rate, that is, lethality, for multiple monosomies. However, monosomic strains remained alive and grew as if much (often most) of the damage caused by single mutations had disappeared, revealing an exceptionally large and positive epistatic component of fitness. We looked for functional explanations by analyzing the transcriptomes. There was no evidence of increased (compensatory) gene expression on the monosomic chromosomes. Nor were there signs of the cellular stress response that would be expected if monosomy led to protein destabilization and thus cytotoxicity. Instead, all monosomic strains showed extensive upregulation of genes encoding ribosomal proteins, but in an indiscriminate manner that did not correspond to their altered dosage. This response did not restore the stoichiometry required for efficient biosynthesis, which probably became growth limiting, making all other mutation-induced metabolic defects much less important. In general, the modular structure of the cell leads to an effective fragmentation of the total mutational load. Defects outside the module(s) currently defining fitness lose at least some of their relevance, producing the epiphenomenon of positive interactions between individually negative effects.\n\n## Introduction\n\nCells and entire organisms can tolerate a surprisingly large number of deleterious mutations, especially when they affect gene function partially rather than completely, for example, when only one of two alleles is inactivated. In fact, a typical human germline cell has as many as about 100 inactive genes, usually complemented by active alleles (MacArthur et al., 2012). Somatic cell lines in healthy tissues can add dozens of new (nearly always heterozygous) mutations every year (Moore et al., 2021). Understanding how this high burden of DNA damage translates into a relatively low mutational load, defined as a reduction in fitness, has proven to be a real challenge (Henn et al., 2015). One possible explanation is that mutations typically have negligible effects, especially when heterozygous. Another is that deleterious mutations are balanced by compensatory mutations, although the latter may not yet have been identified. However, it is also possible that the negative effects of mutations are significantly reduced when they are numerous, that is, they effectively offset each other through positive epistasis.\n\nBecause the fitness architecture of complex organisms is particularly difficult to disentangle, researchers have turned to simpler systems. In the model organism Saccharomyces cerevisiae, collections of engineered single-gene mutations, such as complete deletions, have been created and used to estimate selection and dominance coefficients, as well as the effects of interactions between a few (typically two) loci (Costanzo et al., 2010; Giaever et al., 2002; Steinmetz et al., 2002). It would be much more difficult to combine large numbers of deleterious mutations. This inevitably long process would expose the strains under construction to a high probability of developing fitness-restoring genetic adaptations, which are known to occur even with limited cell proliferation (Szamecz et al., 2014). A rapid way to generate genomes with extensive loads of known mutations is needed. With this in mind, we noted that the budding yeast genome consists of approximately 5000 genes, distributed in a largely random manner across 16 chromosomes. We reasoned that monosomy, the loss of one chromosome in an otherwise regular diploid (2n-1), would mimic the sudden mutation (partial inactivation) of numerous and randomly assembled genes.\n\n## Results\n\n### Viability of monosomic strains\n\nWe began our study by inserting three markers into one chromosome within each homologous pair. These were two URA3 genes, each at the center of every arm, and one copy of kan near a centromere (Tutaj et al., 2022). Since its homolog was unmarked, mutants lacking the markers signaled a possible loss of the marked chromosome (\u2018Materials and methods\u2019). We expected that such generated true monosomic strains (M1, M2,..., M16) would show visible growth defects, which we indeed observed, except for M1 (Figure 1A). The loss of markers and slow growth were only hints, and often turned out to be false when DNA sequencing revealed that the expected loss of an entire single chromosome did not occur, or that it did occur but was accompanied by other changes. Figure 1B shows isolates that passed the sequencing test. As shown in Figure 1C, small colonies formed by monosomic cells were regularly invaded by much larger ones. For each monosomic, dozens of the latter were re-streaked and found to reproduce the fast-growing phenotype almost universally. To prevent the monosomics from overgrowing by the fast-growers, we had to keep the cultures small, down to 5 \u00b5L of YPD medium in the case of M5 or M15. The cultures had to be replicated (in tens or hundreds) so that a sufficient number of those dominated by the slow-growing cells could still be found and replenished.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87455/elife-87455-fig1-v1.jpg)\n\n**Figure 1.:** (A) Representative colonies of wild-type diploid (WT) and monosomic mutant strains (M1...M16) when grown together for 24 hr at 30\u00b0C on agar-solidified YPD medium. (B) DNA whole-genome sequencing coverage. (C) Examples of large colonies emerging among the small monosomic ones.\n\nThe procedure described above could not be completed for three chromosomes\u2014VII, XII, and XIII\u2014although we paid special attention to them. Regarding the screens for M7 and M13, we did not find a single mutant that lacked the markers, grew slowly, and could rapidly revert to a normal phenotype. Instead, we regularly encountered isolates of the desired genotype with no growth defect and a diploid genome. Hypothetically, two mitotic crossovers within a pair of homologous chromosomes could produce an offspring cell without the markers. We were able to reject this possibility based on the results of the present study and a previous study (Tutaj et al., 2022). Relevant data and calculations are provided in Appendix 1. The best explanation is that the marked chromosomes VII and XIII were lost and their unmarked homologs underwent endoreduplication shortly thereafter. The endoreduplication could result from non-disjunction of a monosomic chromosome. Thus, we suggest that the cells of M7 and M13 were viable but suffered from very slow growth, high rate of endoreduplication, or both, and were thus especially rapidly overgrown by revertants. The search for M12 yielded unusually numerous and genotypically variable isolates, but none that were correct in terms of growth phenotype or DNA copy number mapping (\u2018Materials and methods\u2019, Appendix 1). Chromosome XII contains the only yeast rDNA region and is a strong recombinational hotspot (Tutaj et al., 2022). Therefore, we suspended attempts to derive M12, especially since, as we show below, its predicted fitness loss from haploinsufficiency was well within the range covered by other chromosomes.\n\nIn the wild, monosomic isolates have only been found for a few and the shortest chromosomes (Peter et al., 2018). Similar examples of monosomy have been detected in mutation-accumulation experiments (Sui et al., 2020; Zhu et al., 2014). It is uncertain whether these monosomies were simply tolerated, compensated by other changes, or conditionally adaptive in certain environments. There have been laboratory experiments suggesting that all monosomies can be induced in yeast, though indicated only by loss of heterozygosity at selected loci, but they may have been transient (Beach et al., 2017; Reid et al., 2008). We suggest that past work on yeast monosomy should be taken with a grain of salt and that future work should be properly planned. Colonies of putative monosomics may actually be diploids or aneuploids. Even if they were initially truly monosomic, they could easily have been overtaken by endoreduplications or other compensations for chromosome loss. This could happen even if a moderately sized colony was formed from an initially monosomic cell. Here, we combined the marker-based approach with genome-wide assays based on sequencing of DNA (reported above) and RNA (below) to confirm that nearly all yeast monosomics are viable.\n\n### Epistasis for fitness\n\nBefore studying epistasis between multiple mutations, their individual effects must be known. With respect to yeast growth rate, virtually none of the single-gene deletions can increase it (Sliwa and Korona, 2005). About 1/5 of them stop growth altogether and another 1/5 slow it down detectably (Giaever et al., 2002). These estimates are based on homozygous or haploid strains under optimal laboratory conditions. Heterozygous deletions, again under good conditions, often show morphological changes, but their growth rate, that is, proliferative fitness, is rarely and only modestly affected (Deutschbauer et al., 2005; Marek and Korona, 2016; Ohnuki and Ohya, 2018). In \u2018Materials and methods\u2019, we explain how we selected 468 heterozygous single-deletion strains as potentially (haplo)insufficient for growth on the rich medium, YPD. We performed repeated growth rate measurements for single-deletion strains and compared them to a set of carefully selected control strains to make our estimates as accurate and reliable as possible. The doubling rates of individual heterozygous deletions were divided by that of the control to obtain relative doubling rates (rDRs) (Figure 2\u2014source data 1). The frequency distribution of rDR is shown in Figure 2A. It shows that the negative effects of the deletions were undoubtedly present, although predictably small, a substantial fraction of them were in the range of bidirectional effects, most likely composed of phenotypic plasticity and measurement error. (The existence of phenotypic variation not attributable to gene deletions is revealed by the variation within a genetically homogeneous control.)\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87455/elife-87455-fig2-v1.jpg)\n\n**Figure 2.:** (A) Growth performance of heterozygous single-gene deletion strains tested in this study. Left: list of chromosomes with numbers of assayed deletion strains. Right: frequency distribution of rDR (doubling rate related to that of the control). (B) Growth performance of monosomics. Colored bars represent expected performance calculated as a sum of the single-gene effects per chromosome, rDRE = 1 + \u2211di, where di = rDRi\u22121 (deviation from the control). Gray bars show the observed performance of monosomic strains, rDRM. White arrows mark the expected departure from wild-type fitness (expected genetic load), gray the observed one. Black arrows show the extent and direction of epistasis. Three monosomics were not included in these assays (see the main text).\n\nEpistasis is absent when an effect of the gene variant does not depend on the genetic content of other loci. In the case of fitness, a non-neutral mutation corresponds to a proportional change in wild-type fitness (Crow and Kimura, 1970). The absence of epistasis means that the fitness quotient of a given mutation remains unchanged regardless of whether it is the only one present in an individual or accompanied by other fitness-affecting mutations. Accepting this postulate is equivalent to adopting a multiplicative model of fitness structure, in which the fitness of a genotype involving n loci is the product of n respective quotients. The model is additive for log-fitness because such a transformation turns a quotient into a deviation from one and a product of quotients into a sum of such deviations. Since we are working with a (log2) transformed measure of fitness, the deviation caused by an ith gene deletion is equal to di = rDRi \u2212 1. The expected effect of multiple loci is the sum of all deviations involved, rDRE = 1 + \u2211di. (Derivation provided in Appendix 2.) To predict how each of the 16 monosomic strains should perform, we summed the deviations caused by the individual deletions present on each chromosome (obtaining 16 values of rDRE). We summed both negative and positive values of d to account for non-genetic variation of estimates. We then compared the predicted values of rDRE with the corresponding values of rDRM, that is, estimates obtained experimentally for the actual monosomic strains (Figure 2\u2014source data 1). Figure 2B shows the expected and obtained values of monosomics\u2019 rDR, where epistasis is equal to the difference between them. The epistasis between multiple deleterious gene deletions turned out to be not only positive but also large, much larger than that observed for just pairs of deletions (Jasnos and Korona, 2007). Most strikingly, some monosomic strains were expected to have a negative doubling rate, that is, were predicted to be effectively lethal, but turned out to be able to proliferate. For several monosomics, and especially M4, most of the predicted mutational load was canceled out by epistasis. The contribution of epistasis to fitness seemed so large that it might be difficult to accept without a functional rationalization.\n\n### Transcriptome reaction\n\nEpistasis can be considered in a purely abstract way as a deviation from additivity/multiplicity. But it must have a biological explanation. Our attempt to find it began with the isolation and quantitative analysis of mRNA from the ancestral diploid strain and eight monosomic strains. (The selection was random. It nevertheless resulted in the inclusion of strains in which the level of epistasis was low, M1 and M8, or high, M2 and M16.) The first question was obvious: was the decrease in gene dosage compensated by increased expression? Figure 3A shows that there was no detectable increase in the average intensity of transcription on the monosomic chromosomes. These averages depend on hundreds of genes and would therefore be largely insensitive to increased expression of important but relatively few genes. In this experiment, we knew which genes would be most rewarding to upregulate, those that were most haploinsufficient, and could focus our attention on them. Figure 3B shows that the fitness effect of a single-gene deletion did not correlate with the expression of this gene in a monosomic strain. Thus, neither physical underrepresentation (single copy) nor functional importance (impact on growth) triggered an increase in expression of the genes on monosomic chromosomes: their mRNA level was halved on average, although individual genes could show either up- or downshifts.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87455/elife-87455-fig3-v1.jpg)\n\n**Figure 3.:** (A) Halved RNA production on monosomic chromosomes. For every open reading frame (ORF), the obtained number of RNA-seq reads was divided by the number expected for it under expression being constant over an entire genome. (B) Expression under monosomy vs. single-deletion fitness (rDR). X-axis shows the length of a monosomic chromosome with centromeres marked as circles and gene deletions as bars; colors show the effect of monosomy on the level of a particular mRNA with a particular color showing a range of log2 fold change (FC) relative to the control. Y-axis: the difference in rDR between a single-gene deletion strain and the control, d = rDR \u2212 1. The correlation between fitness effect (rDR \u2212 1) and shift in expression (log2FC) is reported as Spearman\u2019s coefficient rs with associated and p-value (not corrected for the multiplicity of comparisons).\n\nMonosomy could have altered the expression of any genes, not just those on the affected chromosomes. We aimed to find any distinct and functionally interpretable patterns of adjustment that might explain how the functioning of monosomic strains was perturbed. We found multiple statistically significant up- and downregulations in the transcriptomes of each monosomic strain analyzed (Figure 4\u2014source data 1). Both parallelisms and incongruencies between them were visible.\n\nFigure 4A shows the similarities. The translational apparatus of the cytosol was on average significantly and universally upregulated, as evidenced by transcripts encoding proteins that build both large (e.g., RPL28) and small (RPS29B) ribosomal subunits. Cytosolic proteolysis was downregulated (core proteasome component PRE6). In remarkable agreement, chaperones required to fold newly synthesized peptides were upregulated (SSB1/2), while those required to direct destabilized chains to degradation were downregulated (SSA1, HSP82, HSP104). Transcripts encoding mitochondrial proteins were generally less abundant, with a marked decrease in the expression of several genes encoding the electron transport chain (Figure 4\u2014source data 1). In parallel, the expression of the antioxidant machinery was downregulated, especially that of a major ROS scavenger (SOD2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87455/elife-87455-fig4-v1.jpg)\n\n**Figure 4.:** Heat maps show monosomic mRNA frequencies divided by respective diploid (control) ones. (A) Gene Ontology categories selected to demonstrate similarities in transcriptional profiles of monosomic strains. (B) Regulons demonstrating differences in gene expression between monosomic strains. Expanded versions of all panels can be found in Figure 4\u2014figure supplement 1.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87455/elife-87455-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Heat maps show monosomic mRNA frequencies divided by respective diploid (control) ones. (A) Gene Ontology categories selected to demonstrate similarities in transcriptional profiles of monosomic strains. (B) Regulons demonstrating differences in gene expression between monosomic strains.\n\nTo find transcriptomic differences, we examined groups of genes, each responding to a known signal. This increased the chances of detecting statistical significance and functional divergence. In our experiment, all strains received identical external signals. Therefore, different expression patterns would indicate different internal perturbations. Indeed, as shown in Figure 4B, substantial variation was detected within several regulons: cAMP-PKA (glucose-activated signaling), NCR (nitrogen catabolism repression), GAAC (general amino acid control), and Msn2up (activation by a broad range of stresses). These differences underscore the significance of the above reported uniformity in the pattern of biosynthetic upregulation and proteolytic downregulation.\n\nAll of the above considerations refer to the relative abundance of mRNA species. We also attempted to compare the absolute size of the transcriptome in wild-type BY and three monosomic strains: M1, M2, and M3. We added an admixture of specific external mRNA to provide a quantitative reference, or \u2018spike\u2019, to known total cell volumes of each strain and repeated our assays. The results are shown in Figure 5. In summary, the spike represented 4.04% of total mRNA for the BY sample and 6.08, 15.6, and 24.2% for the respective monosomic strains. Thus, monosomy would be associated with a decrease in the absolute level of mRNA. A possible caveat is that the monosomic cells had an altered morphology. They were more rounded in shape and approximately 60% larger in long axis, so that their individual volumes were several times larger than wild-type. Thus, the size of the transcriptome for M1 and M2 would not be reduced but actually increased if calculated per whole cell (one nucleus). Indeed, one explanation for the observed epistasis for viability could be an ample overproduction of all transcripts, so that even those halved by monosomy are sufficiently abundant. We consider the cell volume calculations more appropriate and therefore accept that the transcripts from monosomic chromosomes were even less abundant than half of the wild strain abundances. The apparent decrease in the cellular density of the transcriptome in the cytoplasm of monosomics is not paradoxical because the RNA content, including ribosomal protein mRNAs, decreases with slowing growth (Garc\u00eda-Mart\u00ednez et al., 2016; Warner, 1999). However, even if one accepts that monosomic transcriptomes were expanded (per nucleus), they would still be unbalanced. Thus, if the lack of stoichiometry between proteins and the resulting low efficiency of ribosome assembly, rather than the simple scarcity of specific elements, is the major consequence of monosomy, it would remain so regardless of the absolute size of the transcriptome.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87455/elife-87455-fig5-v1.jpg)\n\n**Figure 5.:** Counts are expressed as fractions of either wild-type BY or monosomic M1, M2, and M3 total transcriptomes. Gray circles represent mRNAs from the unaffected 15 chromosomes and group around the diagonal. Blue represent spike mRNAs. Red circles represent mRNAs from the monosomic chromosomes (I, II, or III in the respective graphs). Note that the monosomic counts are, as expected, underrepresented in the respective monosomic strains (red circles are below the diagonal). Monosomic counts of spike are higher than that of BY (blue circles are above the diagonal). As reported in the main text, the total fraction of spike counts in BY is 4.04%. Analogous sums for M1, M2, and M3 are 6.08, 15.6, and 24.2%. This can be seen here as an increasing distance between the gray and blue circles.\n\n## Discussion\n\nThe successful derivation and maintenance of monosomic strains demonstrated that it is possible to obtain an a priori designed set of strains with hundreds of partially inactive genes, dozens of which are known to have deleterious fitness effects. It implies that the ability to remain viable despite carrying extensive mutational burdens is not limited to specific combinations of genes, but would likely apply to a wide variety of them. Viability was supported by the epistatic effect, which was of positive value and remarkable strength, but may still be underestimated in our study. It was shown that many of the single deletions with negative fitness effects had undergone compensatory evolution under recurrent replication needed to maintain the strains carrying them (Puddu et al., 2019). Since we used the same collection of deletions, it is likely that some of them were at least partially compensated. All of these effects that may have been missing in the individual deletions were present in the newly derived monosomic strains. This caveat actually strengthens our claim that the positive epistatic component can be substantial and even offset most of the total damage associated with the combined individual negative effects.\n\nThe advent of systems biology has raised hopes that the \u2018statistical\u2019 and \u2018biological\u2019 sides of epistasis can be coherently brought together (Moore and Williams, 2005; Phillips, 2008). Indeed, a truly functional explanation of the measured growth effects would require an understanding of how the material and energetic expenditures were altered by the same mutations when they were separate or combined. Such a metabolomic interpretation could only be attempted semi-quantitatively and for much simpler systems (Molenaar et al., 2009). Regarding proteome and transcriptome, the latter has the advantage of higher accuracy and repeatability, the ability to detect the products of even weakly expressed genes, and, crucially for this study, to provide clear signals of major functional transitions such as fast-slow growth, anabolism-catabolism, presence-absence of stress. The relationship between the transcriptome and the proteome is not straightforward in multicellular organisms, where compensation for the perturbations introduced by aneuploidy is often observed (Birchler and Veitia, 2021). In yeast, most of the changes observed in mRNA are generally reflected as corresponding shifts in both the profile of translation and the composition of mature proteins (Larrimore et al., 2020; Pavelka et al., 2010). The relationship is not perfect as, for example, disomics have a somewhat attenuated average expression of proteins encoded on the duplicated chromosome. But even there, the result is still much closer to doubling than to parity (Dephoure et al., 2014). Post-transcriptional attenuation can be more frequent and pronounced when only single genes are doubled, but this is a very different case from ours (Ascencio et al., 2021). Crucially, while signs of compensation at the proteome level are found in wild aneuploids, they are much less pronounced in the laboratory strains and especially in the BY used here (Messner et al., 2023; Muenzner et al., 2024). (It is tempting to suggest that the wild aneuploids represent a biased sample of aneuploid mutants, i.e., they either already possessed means of compensating for the distortions introduced by aneuploidy or were able to evolve them and thus avoid purging by selection.) In summary, although mRNA analysis does not provide a complete description of the metabolism of the laboratory-generated monosomic cells, it does provide valuable information about it.\n\nThe simultaneous upregulation of genes encoding ribosomal proteins (RP) and downregulation of those encoding subunits of the proteasome was observed in all monosomic strains, providing a crucial insight into the functional response of the cell to monosomy. The absence of a single chromosome meant that several genes encoding the translational machinery that resided on it were halved in dosage, while dozens of others remained unaffected. The cell could not restore the required stoichiometry by overexpressing the affected genes. Favorable environmental conditions signaled that translation needed to be intensified, but functioning ribosomes were in short supply, resulting in seemingly indiscriminate overproduction of ribosomal proteins and withholding of degradation of both them and other cytosolic proteins. The response was inadequate and costly, but it should be seen as an attempt at ad hoc rebalancing rather than a prepared (evolved) response. This interpretation, strongly suggested by the transcriptomic data, appears even more plausible when analyzing the functional diversity of the 468 genes qualified as haploinsufficient. Table 1 shows that the diversity was ample: of the 100 Slim GO Biological Process categories, dozens could be linked to each chromosome-associated subset of deletions. However, there was a significant common motif. Processes involved in the \u2018protein synthesis apparatus\u2019 (our term) were most frequently represented. Their predicted damage was also particularly high, typically sufficient or exceeding that required to reduce the growth rate to the levels actually observed in monosomics. The biosynthetic perturbation was thus real, and its relationship to the observed transcriptomic response was likely causal, not merely coincidental.\n\n**Table 1.**\n Yeast Slim GO Biological Process categories of the tested deletions and the predicted and observed relative doubling rate of the monosomic strains.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Monosomic strain</th>\n      <th>M1</th>\n      <th>M2</th>\n      <th>M3</th>\n      <th>M8</th>\n      <th>M10</th>\n      <th>M11</th>\n      <th>M14</th>\n      <th>M16</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Subsets of deletions mapping to chromosomes</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Number of GO Slim Biological Process categories</td>\n      <td>25</td>\n      <td>47</td>\n      <td>11</td>\n      <td>27</td>\n      <td>39</td>\n      <td>33</td>\n      <td>34</td>\n      <td>57</td>\n    </tr>\n    <tr>\n      <td>Number of unique genes</td>\n      <td>6</td>\n      <td>40</td>\n      <td>11</td>\n      <td>20</td>\n      <td>31</td>\n      <td>19</td>\n      <td>24</td>\n      <td>41</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Number of genes affecting categories constituting PSA (protein synthesis apparatus):</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>rRNA processing</td>\n      <td>1</td>\n      <td>5</td>\n      <td>3</td>\n      <td>7</td>\n      <td>4</td>\n      <td>5</td>\n      <td>8</td>\n      <td>11</td>\n    </tr>\n    <tr>\n      <td>Ribosome large subunit biogenesis</td>\n      <td></td>\n      <td>1</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n      <td>4</td>\n      <td>6</td>\n      <td>7</td>\n    </tr>\n    <tr>\n      <td>Ribosome small subunit biogenesis</td>\n      <td>1</td>\n      <td>4</td>\n      <td>2</td>\n      <td>4</td>\n      <td>3</td>\n      <td>1</td>\n      <td>2</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Ribosomal assembly</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>1</td>\n      <td></td>\n      <td>2</td>\n      <td>1</td>\n      <td>2</td>\n    </tr>\n    <tr>\n      <td>Ribosome subunit export from nucleus</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>1</td>\n      <td>2</td>\n      <td>3</td>\n      <td>2</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td>Cytoplasmic translation</td>\n      <td>1</td>\n      <td>9</td>\n      <td></td>\n      <td>5</td>\n      <td>4</td>\n      <td>5</td>\n      <td>3</td>\n      <td>5</td>\n    </tr>\n    <tr>\n      <td>Translational initiation</td>\n      <td>1</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td>2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Regulation of translation</td>\n      <td></td>\n      <td>2</td>\n      <td>2</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Total number of unique PSA genes</td>\n      <td>1</td>\n      <td>13</td>\n      <td>5</td>\n      <td>8</td>\n      <td>10</td>\n      <td>7</td>\n      <td>12</td>\n      <td>14</td>\n    </tr>\n    <tr>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Relative doubling rate (rDR)</td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Predicted from the total load of deletions (Figure 2B)</td>\n      <td>0.85</td>\n      <td>\u20130.95</td>\n      <td>0.66</td>\n      <td>0.27</td>\n      <td>\u20130.82</td>\n      <td>\u20130.33</td>\n      <td>\u20130.04</td>\n      <td>\u20131.52</td>\n    </tr>\n    <tr>\n      <td>Predicted from the PSA deletions</td>\n      <td>0.95</td>\n      <td>0.37</td>\n      <td>0.78</td>\n      <td>0.63</td>\n      <td>0.22</td>\n      <td>0.49</td>\n      <td>0.22</td>\n      <td>\u20130.07</td>\n    </tr>\n    <tr>\n      <td>Observed in monosomic strains</td>\n      <td>0.96</td>\n      <td>0.60</td>\n      <td>0.63</td>\n      <td>0.61</td>\n      <td>0.49</td>\n      <td>0.60</td>\n      <td>0.63</td>\n      <td>0.58</td>\n    </tr>\n  </tbody>\n</table>\n\nSome of the other adaptations seen in the monosomal transcriptomes could also be related to the dominant effect of translational inefficiency. A signal to increase biosynthesis would mobilize fermentation and reduce oxidation, which would downregulate genes encoding ROS-scavenging proteins. The Mns2-mediated and other stress responses were apparently absent, contrary to previous reports (Sheltzer et al., 2012). The hallmarks of stress responses include decreased RP production and increased proteolysis (to remove destabilized proteins). Here, these two processes were driven in opposite directions, blurring the expected patterns. The non-homogeneity of the response in other regulons analyzed \u2013 cAMP-PKA, NCR, GAAC \u2013 means that functions other than ribosome assembly were severely affected, but differently, depending on the composition of genes made insufficient by the loss of a chromosome (see also Figure 4\u2014source data 1). If there were so many different piecemeal responses, why was the uniform positive epistasis observed?\n\nA possible answer begins with the assumption that the cell is an aggregate of multiple functional modules (Hartwell et al., 1999). Our monosomic strains had many different modules that were negatively affected by partially inactivating mutations. These mutations did not interact with each other directly, but rather through the modules to which they belonged. Mutations that affected the most critical module(s) suppressed the negative effect of mutations that affected other, non-limiting modules. The latter were either less damaged or less needed under current conditions. The epiphenomenon of positive epistasis for fitness reflected the fact that not all mutations exerted their negative effects, at least not to the full extent. In our case, this is not just speculation, but rather the simplest and most prudent explanation linking growth rate and transcriptomic data. Our experimental system is special in a way: a microbial cell in which several modules have been compromised but exposed to favorable conditions and thus tested for the single capacity to grow rapidly. Although peculiar, the system is also instructive. Any unicellular organism is typically tested for only a few specific condition-dependent functions defining fitness, which are very different under, for example, growth or starvation. Similarly, the specialized cells of a complex organism are required to support only a few, and different, elements of life. The modularity of the cell helps us understand how so many partial genetic defects can be carried by so many different organisms without drastically reducing their fitness: rarely or never are all the defects really important.\n\nInteractions within pairs of gene knockouts have received much attention (Costanzo et al., 2010; Segr\u00e8 et al., 2005; Szappanos et al., 2011). Epistasis for fitness arising from interactions between at least several mutations has also been studied but mostly in the context of \u2018diminished returns\u2019 of successive beneficial variants (Barrick et al., 2009; Chou et al., 2011; Khan et al., 2011; Kryazhimskiy et al., 2014). It has been proposed that the pattern may arise from interactions of mutations through a 'global' phenotypic interface, such as fitness (MacLean et al., 2010; Perfeito et al., 2014; Schoustra et al., 2016). However, a similar overall effect could also be produced by \u2018idiosyncratic\u2019 interactions without any mediating factors (Lyons et al., 2020; Reddy and Desai, 2021). Indeed, this has been demonstrated experimentally, at least for a selected and moderately large set of mutations (Bakerlee et al., 2022). Finally, negative epistasis of beneficial mutations has been attributed to cellular modularity by postulating that the positive contribution of each functional module to fitness must have its upper bound (Wei and Zhang, 2019). Given that the negative epistasis between multiple positive effects can arise from different mechanisms, we do not insist that the explanation of positive epistasis between multiple negative effects we propose is the only possible one. However, it may be particularly applicable when the deleterious mutations are truly numerous and distributed across many cellular subsystems that work as functional modules.\n\n## Materials and methods\n\n### Single-gene deletion strains\n\n#### Selection of single-gene deletions with a possible effect of haploinsufficiency\n\nDeutschbauer et al. have assayed a complete collection of heterozygous single-gene deletion strains and identified a total of 184 genes, 98 essential and 86 non-essential, as haploinsufficient for growth in rich medium, YPD (Deutschbauer et al., 2005). We included this set of genes in the present study. Using a different technique, our group have previously tested all 1142 essential heterozygous single-gene deletions and 946 non-essential deletions selected as likely not neutral for growth (Marek and Korona, 2016). We reviewed the latter study and, using a false discovery rate of 0.15, accepted up to 404 genes, 256 essential and 148 non-essential, as potentially haploinsufficient. The two sets obtained in two different studies, 184 and 404, overlapped in 112 cases. The overlap was much higher than expected, 14.3, if the two sets were just random samples from among 5200 yeast genes. On the other hand, it was limited and suggested that new growth assays were desirable. The new assays are described below; they included all the unique strains identified in the two studies minus 5 that were not present in our current strain collections and another 3 that were dropped as superfluous for the orthogonal design of experimental blocks described below. (They were also the three least promising based on the earlier assays.) Figure 2\u2014source data 1 lists the strains.\n\n#### Control for single-deletion strains\n\nTo correctly quantify the predictably small negative growth effects introduced by heterozygous single-deletion strains, an unbiased and accurate estimate of a wild-type phenotype is required. In the present study, we attempted to achieve this by using multiple strains as controls rather than a single strain. The reason for this was that the gene deletions used here were constructed over several years by several laboratories and then treated with repeated rounds of propagation, which could lead to genetic divergence. We felt it was risky to use one strain as a control for all the others. We looked for a group of strains that were indistinguishable in terms of growth rate, suggesting that they had not acquired genetic changes that affected this trait. In the case of non-essential genes, we searched the Saccharomyces Genome Database and found 25 ORFs originally labeled \u2018dubious\u2019, which are currently almost certainly spurious ORFs, located between other ORFs and no closer than 100 bp to their START or STOP codons. Heterozygous strains carrying deletions of these genes were tested for doubling rate in a manner specific to this study (described below). After repeated assays, 16 deletion strains that were closest to the medium growth performance and not statistically different from each other were selected as controls. Knowing that the non-essential and essential strains differ somewhat in their origin and subsequent handling (Brachmann et al., 1998), we decided to derive a separate set of control strains for the latter. We selected 32 essential genes that were in the very center of a single, strong, and narrow modal peak of the frequency distribution of estimates collected for the entire collection of heterozygous essentials (Marek and Korona, 2016). Again, after repeated tests of growth rate, 16 strains that were closest to the median and not different from each other were selected to serve as the final control for essential gene deletions. Control strains from both groups are listed in Figure 2\u2014source data 1.\n\n### Monosomic strains\n\n#### Parents of monosomic strains\n\nIn an earlier study, we used 32 strains that had a counter-selectable marker (URA3) near the center of each of the 32 chromosome arms and a drug resistance marker (kan) near a centromere (Tutaj et al., 2022). Pairs of strains with the same centromere marker and the counter-selectable markers located on either the left or right arm of the same chromosome were mated with each other. The resulting diploids were sporulated and tetrads dissected to get triple-marked haploid genotypes, URA3-kan-URA3. The latter were mated with a standard BY haploid strain of the opposite mating type. In the final set of 16 diploid strains, each strain had one chromosome triple-marked while its homolog and the remaining 15 chromosome pairs were isogenic with the diploid strain BY4743.\n\n#### Derivation and verification of monosomic strains\n\nThe diploid strains with triple-marked chromosomes were grown overnight in synthetic complete medium (SC) and then 50\u2013500 \u00b5L samples of the resulting cultures were plated on standard 5-fluoroorotic acid (5-FOA5-FOA) plates. Emerging colonies were transferred to new 5-FOA plates and YPD plates with 200 mg/mL geneticin. The goal was to identify variants that were able to grow on the 5-FOA plates but not on the geneticin plates, indicating that all three marker genes may have been lost along with an entire chromosome. Colonies identified in this way were often of different sizes, suggesting that they were genetically heterogeneous. The next criterion was to find variants that produced colonies that were visibly smaller than those of the parental strain, but rarely, though regularly, produced colonies similar to those of the parental strain. Such strains were grown in replicate small cultures (5\u2013100 \u00b5L, depending on the monosomic strain), tested for negligible frequency of cells forming large colonies, and collected in larger samples that allowed isolation of DNA in quantities sufficient for next-generation sequencing. Monosomy was considered confirmed when the number of reads for the entire length of a single and expected chromosome was halved. Although simple, this protocol required multiple attempts for some chromosomes because few colonies tended to appear on the 5-FOA plates, most of them remained resistant to geneticin, and those that passed these two criteria did not show the required reversibility, that is, the tendency to occasionally return to normal growth in an apparent step. Even when all these phenotypic criteria were met, sequencing occasionally revealed genomes other than those of pure monosomic origin, that is, with the whole and only one chromosome removed. Nevertheless, once confirmed, the monosomic strains could have been reliably propagated on rich and synthetic media, including that containing 5-FOA, as long as the recurrent appearance of fast-growing colonies was monitored and counteracted.\n\n#### Control for monosomic strains\n\nThe monosomic strains were all derived by us and the derivation involved our stock of haploid strains BY4741 and BY4742. These two were then crossed to produce a diploid BY4743 that lacked the URA3MX4 and kanMX4 cassettes and was used as a control in the growth assays of the monosomic strains.\n\n### Estimation of DR and rDR\n\nThe collection of single-gene deletion strains was arrayed on six flat-bottomed 8 \u00d7 12-well titration plates with 150 \u00b5L aliquots per well. Within each plate, the first and last wells contained clean YPD medium, rows 3 and 10 contained control strains, and the deletion strains occupied the remainder of the plate. Plates were filled with either essential or non-essential deletions accompanied by the 16 control strains listed above. One plate contained both essential and non-essential deletions along with eight essential and eight non-essential control strains. Plates were inoculated at 1\u20135% from thawed samples and kept non-agitated at 30\u00b0C for 48 hr until they reached approximately similar densities of stationary phase cells. Such conditioned microcultures were used to inoculate plates with fresh YPD at 0.5% and maintained at 30\u00b0C with shaking at 1000 rpm. Cultures were analyzed for OD (600 nm) every 0.5 hr using a TECAN Infinity reader. Four independent replicates of measurements were performed, starting with independent conditionings. OD readings were used to calculate DR (doubling rate). To obtain the rDR (relative doubling rate), each DR estimate of an experimental strain was divided by the average DR of the control strains present on the same plate. In the case of the monosomic strains, the entire protocol was analogous except that all experimental and control strains were kept in one plate. Cultures of monosomic strains used in this assay were tested to contain less than 1% fast-growing cells at the time of OD measurements.\n\n### Analysis of DNA and RNA\n\nThe first step in preparation for both DNA and RNA analysis was to collect samples of monosomic cells that would be nearly free of the rapidly growing revertant cells. Individual monosomic strains were grown as replicate microcultures (5\u2013100 \u00b5L) in YPD at 30\u00b0C to stationary phase. The latter were serially diluted and plated to test for the appearance of large colonies indicating the appearance of compensatory mutations. The microcultures in which more than 99% of the colonies were typical of a particular monosomic strain were pooled. Such tested stationary cultures of monosomic cells were directly used to extract DNA as template for high-coverage sequencing (PE 150, expected read depth ~80). The resulting reads were mapped along standard yeast chromosome sequences using bowtie2 (Langmead and Salzberg, 2012), along standard sequences of yeast chromosomes: Ensembl release 100, S. cerevisiae genome R64-1-1. Duplicate reads were marked with MarkDuplicates (Picard Toolkit 2019. Broad Institute, GitHub). Samtools (1.15.1) was used for BAM files sorting, indexing, and coverage analysis (Danecek et al., 2021).\n\nFor RNA, purity-tested cultures of monosomic cells were transferred to fresh YPD and incubated for 4 hr at 30\u00b0C with agitation. Total RNA was then extracted using the RiboPure RNA Purification Kit. Three replicates of the monosomic and control BY4743 strain were prepared in this manner. Library preparation and PE 150 sequencing were performed by Novagene. Approximately 20 million read pairs were generated per sample. Quality control of the reads was performed using fastQC v0.11.9 (Andrew, 2010). RNA reads were aligned to the above standard sequence using Hisat2 v2.1.0 (Kim et al., 2015). The resulting alignment files were sorted and indexed with samtools (1.9). Transcript quantification was performed using cuffquant/cuffnorm v2.2.1 (Trapnell et al., 2012). Gene count data normalization (\u2018TMM\u2019 method) and differential expression analysis (exact test) were performed in the EdgeR test (Robinson et al., 2010). Heat maps were created with Heatmapper (Babicki et al., 2016).\n\nFor transcriptome analysis with the addition of the mRNA spike, cultures were conditioned as above. The density of the cultures was estimated by counting the cells in the Burker\u2019s chamber. The cells were also photographed under a light microscope and the long and short axes of the cells were measured for about 50 randomly selected cells. Using the formula for ellipsoids and assuming that the two shorter axes are equal, the volumes of individual cells and their sums were calculated. Equal amounts of the mRNA spike (ERCC RNA Spike-In Mix, Thermo Fisher) were added to all samples (equal number of cells) from which RNA was extracted using hot formamide (Shedlovskiy et al., 2017), followed by RNAzol purification. Subsequent library preparation, sequencing, and analysis were performed as described above with the following modifications. We used stranded RNAseq libraries (dUTP method, Novogene). The merged yeast (Ensembl, R64-1-1) and ERCC (https://assets.thermofisher.com/TFS-Assets/LSG/manuals/ERCC92.zip) reference fasta and gtf files were used for all steps. Hisat2 (v2.1.) was run with the options --rna-strandness RF and -k 20. Transcripts were counted using FeatureCounts (2.0.6) with the following parameters: -F GTF -O -s 2 -t exon -p -R -T 8 --largestOverlap. The raw counts for ERCC transcripts were multiplied by the adjustment factors (RK_02 - 8.40399; RK_03 - 2.72366, RK_04 - 3.58748, RK_01 - 1) to obtain the same amount of spike-in per given cell volume. The counts were then normalized in edgeR (Robinson et al., 2010) using the TMM method. Normalized fragment counts per million were extracted using edgeR\u2019s cpm function and used for subsequent visualization.\n",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wenfeng Qian, Chinese Academy of Sciences China\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87455.3.sa0](https://doi.org/10.7554/eLife.87455.3.sa0)\n\nThis study offers important insights into the generation and maintenance of monosomic yeast lines and is, to our knowledge, the first to evaluate gene expression in yeast monosomies. The research introduces an innovative method to assess epistasis between genes on the same chromosome, providing solid evidence for positive epistatic interactions affecting fitness. Although the authors have substantially improved the methodology and interpretation during revision, questions regarding the interpretation of the transcriptome data have not been completely addressed.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87455.3.sa1](https://doi.org/10.7554/eLife.87455.3.sa1)\n\nThe study by Korona and colleagues presents a rigorous experimental strategy for generating and maintaining a nearly complete set of monosomic yeast lines, thereby establishing a new standard for studying monosomes. Their careful approach in generating and handling monosome yeast lines, coupled with their use of high-throughput DNA sequencing and RNA sequencing, addresses concerns related to genomic instability and is commendable. However, I would like to express my concerns regarding the second part of the study, particularly the calculation of epistasis and the conclusion that vast positive epistatic effects have been observed. I believe that the conclusion of positive epistasis for fitness might be premature due to potential errors in estimating the expected fitness.\n\nThe method used to calculate fitness expectation (1 + sum(di), where di = rDRi - 1) may be inappropriate. The logarithm transformation mentioned by the authors is designed to transform the exponential growth curve into a linear relation for estimating doubling rate, and thus the fitness expectation should be calculated as the product of rDRi values. As an illustration, if gene A exhibits a 20% reduction in fitness when halved (A/-) and gene B exhibits a 30% reduction (B/-), the expected fitness of A/- B/- should be 56%, rather than the 50% estimated in the study. In other words, the formula used by the authors could underestimate the fitness expectation.\n\nThis issue is evident in Figure 2b, where negative values were obtained due to the use of an incorrect formula for estimating fitness expectations. It is worth noting that Figure 2a shows rDR values around one, indicating that no further logarithmic transformation was applied.\n\nWhile widespread positive epistasis in yeast has been reported by other studies (e.g., doi: 10.1038/ng.524, but not to the extent reported in this study), the conclusion of the current study might not be sufficiently supported. I recommend that the authors revisit their calculation methods to provide a more convincing conclusion on the presence of positive epistasis for fitness in their dataset. Overall, I appreciate the authors' efforts in this study but believe that addressing these concerns is essential for strengthening the validity of their findings.\n\nComments on revised version:\n\nThe authors have adequately addressed all my previous concerns during revision.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87455.3.sa2](https://doi.org/10.7554/eLife.87455.3.sa2)\n\nThis study examines monosomies in yeast in comparison to synthetic lethals resulting from combinations of heterozygous gene deletions that individually have a detrimental effect. The survival of monosomies, albeit with detrimental growth defects, is interpreted as positive epistasis for fitness. Gene expression was examined in monosomies in an attempt to gain insight into why monosomies can survive when multiple heterozygous deletions on the respective chromosome do not. In the RNAseq experiments, many genes were interpreted to be increased in expression and some were interpreted as reduced. Those with the apparent strongest increase were the subunits of the ribosome and those with the apparent strongest decreases were subunits of the proteasome.\n\nThe initiation and interpretation of the results were apparently performed in a vacuum of a century of work on genomic balance. Classical work in the flowering plant Datura and in Drosophila found that changes in chromosomal dosage would modulate phenotypes in a dosage sensitive manner (for references see Birchler and Veitia, 2021, Cytogenetics and Genome Research 161: 529-550). In terms of molecular studies, the most common modulation across the genome for monosomies is an upregulation (Guo and Birchler, Science 266: 1999-2002; Shi et al. 2021, The Plant Cell 33: 917-939).\n\nIt was also apparently performed in a vacuum of results of evolutionary genomics that indicate the classes of genes for which dosage causes fitness consequences. It was from yeast genomics that it was realized that there is a difference in the fate of duplicate genes that are members of molecular complexes following whole genome duplications (WGD) versus small segmental duplications (SSD) with longer retention times from WGD than other genes and an underrepresentation in small scale duplications (e.g. Papp et al. 2003, Nature 424: 194-197; Hakes et al 2007, Genome Biol 8: R209). This pattern arises from negative fitness consequences of deletion of some but not all members of a complex after WGD or the overexpression of individual subunits after SSD (Defoort et al., 2019 Genome Biol Evol 11: 2292-2305; Shi et al., 2020, Mol Biol Evol 37: 2394-2413). In order for this pattern to occur, there must be a reasonably close relationship between mRNA and the respective protein levels. This pattern of retention and underrepresentation has been found throughout eukaryotes (e.g. Tasdighian et al 2017, Plant Cell 29: 2766-2785) indicating that yeast is not an outlier in its behavior.\n\nIn the present yeast study, not only are there apparent increases for ribosomal subunits but also for many genes in the GAAC pathway, the NCR pathway, and Msn2p. The word \"apparent\" is used because RNAseq studies can only determine relative changes in gene expression (Loven et al., 2012, Cell 151: 476-482). Because aneuploidy can change the transcriptome size in general (Yang et al., 2021, The Plant Cell 33: 1016-1041), it is possible and maybe probable that this occurs in yeast monosomies as well. If there is an increase in the general transcriptome size, then there might not be as much reduction of the proteosome subunits as claimed and the increases might be somewhat less than indicated.\n\nIndeed, the authors claim that there is an increased cell volume in the monosomies. Given that cell volume correlates very well with the total transcriptome size (Loven et al., 2012, Cell 151: 476-482; Sun et al 2020, Current Biol 30: 1217-1230; Swaffer et al., 2023, Cell 186: 5254-5268), it could well be that there is an increased transcriptome size in the monosomies. Thus, the interpretation of the relative changes from RNAseq is compromised.\n\nIt should be noted that contrary to the claims of the cited paper of Torres et al 2007 (Science 317: 916-924), a reanalysis of the data indicated that yeast disomies have many modulated genes in trans with downregulated genes being more common (Hou et al, 2018, PNAS 115: E11321-E11330). The claim of Torres et al that there are no global modulations in trans is counter to the knowledge that transcription factors are typically dosage sensitive and have multiple targets across the genome. The inverse effect trend is also true of maize disomies (Yang et al., 2021, The Plant Cell 33: 1016-1041), maize trisomies (Shi et al., 2021), Arabidopsis trisomies (Hou et al. 2018), Drosophila trisomies (Sun et al. 2013, PNAS 110: 7383-7388; Sun et al., 2013, PNAS 110: 16514-16519; Zhang et al., 2021, Scientific Reports 11: 19679; Zhang et al., genes 12: 1606) and human trisomies (Zhang et al., 2024, genes 15: 637). Taken as a whole it would seem to suggest that there are many inverse relationships of global gene expression with chromosomal dosage in both yeast disomies and monosomies.\n\nIn a similar vein, the authors cite Muenzner et al 2024, Nature 630 149-157 that there is an attenuation of protein levels from aneuploid chromosomes while the mRNA levels correlate with gene dosage. This interpretation also seems to have been made in a vacuum of the evolutionary genomics data noted above and there was no consideration of transcriptome size change in the aneuploids. Also, Muenzner et al make the remarkable suggestion that there is degradation of overproduced proteins from hyperploidy, but for monosomies there is greater degradation of the proteins from the remainder of the genome.\n\nTo clarify the claims of this study, it would be informative to produce distributions of the various ratios of individual gene expression in monosomy versus diploid as performed by Hou et al. 2018. This will better express the trends of up and down regulation across the genome and whether there are any genes on the varied chromosome that are dosage compensated. The authors claim in the Abstract that \"There is no evidence of increased (compensatory) gene expression on the monosomic chromosomes\", but then note after describing the increased cell volume of monosomies that this observation likely signals an increased transcriptome size: \"Indeed, one explanation for the observed epistasis for viability could be an ample overproduction of all transcripts, so that even those halved by monosomy are sufficiently abundant\". It is not clear to this reviewer what conclusions can be made from this work other than the empirical observation that monosomy does not reflect the cumulative effect of multiple haplo-insufficiencies of individual heterozygous deletions and that there are some RELATIVE changes in gene expression, but it is unclear what the ABSOLUTE PER CELL expression is across the whole genome. Clarifying this issue would be important for understanding the nature of any epistasis and fitness consequences.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87455.3.sa3](https://doi.org/10.7554/eLife.87455.3.sa3)\n\nThe current study examined 13 monosomic yeast strains that lost different individual chromosomes. By comparing the fitness of monosomic strains and several heterozygous deletion strains, the authors observed strong positive epistasis for fitness. The transcriptomes of monosomic strains indicated that general gene-dose compensation is not the reason for fitness gains. On the other hand, gene expression of ribosomal proteins was up-regulated and proteasome subunit expression was down-regulated in all tested monosomic strains. The authors speculated that overexpression in combination with decreased degradation of the insufficient proteins might explain the positive epistasis observed in monosomic strains. This study investigates an important biological question and has some interesting results. However, I have some reservations about the data interpretations listed below.\n\n(1) In Figure 3b (and line 179), the authors stated that those haploinsufficient genes were not transcribed at elevated rates, but almost half of them are in reddish colors (indicating that the expression is higher than 1-fold). Obviously, many haploinsufficient genes are up-regulated in monosomic strains. What the data really show is that the level of overexpression is not correlated with the fitness effect of the deletion (since all the p values are not significant). The authors need to correct their conclusions.\n\n(2) Why are some monosomic strains removed from the transcriptomics analysis, especially when the chromosome IV and XV strains show very strong positive epistasis? The authors need to provide an explanation here.\n\n(3) The authors stated that diploidy observed in chromosome VII and XIII strains were due to endoreplication after losing the marked chromosomes (lines 97 and 117). Isn't chromosome missegregation an equally possible explanation? Since monosomic cells are generated by chromosome missegregation during mitosis, another chromosome missegregation event may occur to rescue the fitness (or viability) of monosomic cells in these strains.\n\nComments for the revised version:\n\nThe authors have addressed all my previous concerns and I have no further questions.\n",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "712b22be-601f-4d06-b784-f1b2b7263832",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C1",
+      "claim": "The loss of a single chromosome in a diploid organism halves the dosage of many genes.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of a single chromosome in a diploid organism halves the dosage of many genes and is usually accompanied by a substantial decrease in fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of established biological knowledge about the consequences of monosomy.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "5515f4b9-2872-435a-80a0-362721b5f8eb",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C2",
+      "claim": "The loss of a single chromosome in a diploid organism is usually accompanied by a substantial decrease in fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss of a single chromosome in a diploid organism halves the dosage of many genes and is usually accompanied by a substantial decrease in fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about aneuploidy effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "535ac1ab-165d-4a59-a212-98e72e219293",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C3",
+      "claim": "Combining the fitness effects of single heterozygous gene deletions for each chromosome predicted a negative growth rate (lethality) for multiple monosomies.",
+      "claim_type": "EXPLICIT",
+      "source": "We measured the fitness effects of single heterozygous gene deletions in yeast and combined them for each chromosome. This predicted a negative growth rate, that is, lethality, for multiple monosomies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental measurements of single-gene deletions and mathematical combination of their effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "edbc85e1-5fcc-4876-a00f-f4335f302d20",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C4",
+      "claim": "Monosomic strains remained alive despite predictions of lethality.",
+      "claim_type": "EXPLICIT",
+      "source": "However, monosomic strains remained alive and grew as if much (often most) of the damage caused by single mutations had disappeared, revealing an exceptionally large and positive epistatic component of fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental observation of viable monosomic strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "8e378f2d-06a7-4d99-9176-43af609f289d",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C5",
+      "claim": "Monosomic strains grew as if much (often most) of the damage caused by single mutations had disappeared.",
+      "claim_type": "EXPLICIT",
+      "source": "However, monosomic strains remained alive and grew as if much (often most) of the damage caused by single mutations had disappeared, revealing an exceptionally large and positive epistatic component of fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of predicted versus observed growth rates.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "ee53746d-d897-4a5c-839d-23e5705d4647",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C6",
+      "claim": "Monosomic strains reveal an exceptionally large and positive epistatic component of fitness.",
+      "claim_type": "EXPLICIT",
+      "source": "However, monosomic strains remained alive and grew as if much (often most) of the damage caused by single mutations had disappeared, revealing an exceptionally large and positive epistatic component of fitness.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the difference between predicted and observed fitness.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "afc79a85-5ba9-4f6b-afb0-98ea5430f2f7",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C7",
+      "claim": "There was no evidence of increased (compensatory) gene expression on the monosomic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no evidence of increased (compensatory) gene expression on the monosomic chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "c088ab02-65a5-4d67-9c39-49016f8d8679",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C8",
+      "claim": "There were no signs of the cellular stress response that would be expected if monosomy led to protein destabilization and thus cytotoxicity.",
+      "claim_type": "EXPLICIT",
+      "source": "Nor were there signs of the cellular stress response that would be expected if monosomy led to protein destabilization and thus cytotoxicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis showing absence of expected stress markers.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "d26de3a1-720d-4bb4-8c39-dbd6c8b4e2c0",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C9",
+      "claim": "All monosomic strains showed extensive upregulation of genes encoding ribosomal proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, all monosomic strains showed extensive upregulation of genes encoding ribosomal proteins, but in an indiscriminate manner that did not correspond to their altered dosage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "03f69e6d-660d-4684-a5df-f1b23349f004",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C10",
+      "claim": "The upregulation of genes encoding ribosomal proteins in monosomic strains was indiscriminate and did not correspond to their altered dosage.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, all monosomic strains showed extensive upregulation of genes encoding ribosomal proteins, but in an indiscriminate manner that did not correspond to their altered dosage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis comparing expression patterns to dosage changes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "382149a4-9798-4963-86e2-710d0ae5ecde",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C11",
+      "claim": "The transcriptional response in monosomic strains did not restore the stoichiometry required for efficient biosynthesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This response did not restore the stoichiometry required for efficient biosynthesis, which probably became growth limiting, making all other mutation-induced metabolic defects much less important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the pattern of gene expression and its relationship to ribosome assembly requirements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "5332608c-2570-4214-94ab-64c946a76a12",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C12",
+      "claim": "Inefficient biosynthesis probably became growth limiting in monosomic strains.",
+      "claim_type": "EXPLICIT",
+      "source": "This response did not restore the stoichiometry required for efficient biosynthesis, which probably became growth limiting, making all other mutation-induced metabolic defects much less important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on transcriptome data and growth observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "f00e83fc-0a66-4599-8b4c-1c9dc29001e2",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C13",
+      "claim": "Growth limitation by inefficient biosynthesis made other mutation-induced metabolic defects much less important.",
+      "claim_type": "EXPLICIT",
+      "source": "This response did not restore the stoichiometry required for efficient biosynthesis, which probably became growth limiting, making all other mutation-induced metabolic defects much less important.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning to explain the observed positive epistasis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "ac5e7347-f0ea-4a19-b6e0-077c88f1b2cb",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C14",
+      "claim": "The modular structure of the cell leads to an effective fragmentation of the total mutational load.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the modular structure of the cell leads to an effective fragmentation of the total mutational load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general theoretical interpretation of the experimental findings.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "e0a0e631-ff79-4554-8fff-e5705583aa7a",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C15",
+      "claim": "Defects outside the module(s) currently defining fitness lose at least some of their relevance.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects outside the module(s) currently defining fitness lose at least some of their relevance, producing the epiphenomenon of positive interactions between individually negative effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation for the observed epistasis pattern.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "9a699f8b-8e5d-4f0e-944f-42b4046b74dd",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C16",
+      "claim": "The loss of relevance of defects outside limiting modules produces the epiphenomenon of positive interactions between individually negative effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Defects outside the module(s) currently defining fitness lose at least some of their relevance, producing the epiphenomenon of positive interactions between individually negative effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical explanation for the observed positive epistasis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "02d60e3a-958c-4b0e-9bce-e759e2da8928",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C17",
+      "claim": "A typical human germline cell has about 100 inactive genes, usually complemented by active alleles.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, a typical human germline cell has as many as about 100 inactive genes, usually complemented by active alleles (MacArthur et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to MacArthur et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "63d47dcc-4e6b-48bf-a3b3-2d2002b7e05d",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C18",
+      "claim": "Somatic cell lines in healthy tissues can add dozens of new (nearly always heterozygous) mutations every year.",
+      "claim_type": "EXPLICIT",
+      "source": "Somatic cell lines in healthy tissues can add dozens of new (nearly always heterozygous) mutations every year (Moore et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Moore et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "c99e5710-56c3-4465-ae0d-3f7188c87cc6",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C19",
+      "claim": "The budding yeast genome consists of approximately 5000 genes distributed in a largely random manner across 16 chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "With this in mind, we noted that the budding yeast genome consists of approximately 5000 genes, distributed in a largely random manner across 16 chromosomes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about yeast genome organization.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "e49897fa-5756-4888-a626-201379418128",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C20",
+      "claim": "Monosomy would mimic the sudden mutation (partial inactivation) of numerous and randomly assembled genes.",
+      "claim_type": "EXPLICIT",
+      "source": "We reasoned that monosomy, the loss of one chromosome in an otherwise regular diploid (2n-1), would mimic the sudden mutation (partial inactivation) of numerous and randomly assembled genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the consequences of monosomy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "8ad21bc6-c549-4ca9-9eb7-afb751f4dacb",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C21",
+      "claim": "Monosomic strains showed visible growth defects, except for M1.",
+      "claim_type": "EXPLICIT",
+      "source": "We expected that such generated true monosomic strains (M1, M2,..., M16) would show visible growth defects, which we indeed observed, except for M1 (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental observation shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "5683a311-2755-4130-90ed-e1ba5c4d609a",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C22",
+      "claim": "Small colonies formed by monosomic cells were regularly invaded by much larger ones.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 1C, small colonies formed by monosomic cells were regularly invaded by much larger ones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on experimental observation shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "96f89cb5-54e4-4246-867d-0b423fe3840c",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C23",
+      "claim": "Fast-growing colonies from monosomic cultures reproduced the fast-growing phenotype almost universally when re-streaked.",
+      "claim_type": "EXPLICIT",
+      "source": "For each monosomic, dozens of the latter were re-streaked and found to reproduce the fast-growing phenotype almost universally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental observation of colony phenotypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "52e8001f-1a5a-4171-bca8-b93ce3565c56",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C24",
+      "claim": "Monosomic strains could not be completed for chromosomes VII, XII, and XIII.",
+      "claim_type": "EXPLICIT",
+      "source": "The procedure described above could not be completed for three chromosomes\u2014VII, XII, and XIII\u2014although we paid special attention to them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental attempts to derive these monosomic strains.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "83b52a58-f841-484a-858e-bb32eebd5a3a",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C25",
+      "claim": "No mutants lacking markers for chromosomes VII and XIII were found that grew slowly and could rapidly revert to a normal phenotype.",
+      "claim_type": "EXPLICIT",
+      "source": "Regarding the screens for M7 and M13, we did not find a single mutant that lacked the markers, grew slowly, and could rapidly revert to a normal phenotype.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental screening results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "d6f77fa8-c0f5-42ab-8e45-f34e67442433",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C26",
+      "claim": "The marked chromosomes VII and XIII were lost and their unmarked homologs underwent endoreduplication shortly thereafter.",
+      "claim_type": "EXPLICIT",
+      "source": "The best explanation is that the marked chromosomes VII and XIII were lost and their unmarked homologs underwent endoreduplication shortly thereafter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observed genotypes and phenotypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "6528d0f1-a175-4ff8-bc35-8f097e820184",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C27",
+      "claim": "The cells of M7 and M13 were viable but suffered from very slow growth, high rate of endoreduplication, or both.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we suggest that the cells of M7 and M13 were viable but suffered from very slow growth, high rate of endoreduplication, or both, and were thus especially rapidly overgrown by revertants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculative reasoning based on the inability to isolate these monosomics.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "1dcfeae3-fda5-4006-b12e-db65393b0bd0",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C28",
+      "claim": "Chromosome XII contains the only yeast rDNA region and is a strong recombinational hotspot.",
+      "claim_type": "EXPLICIT",
+      "source": "Chromosome XII contains the only yeast rDNA region and is a strong recombinational hotspot (Tutaj et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tutaj et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "dbfc0b7e-6af4-4e0c-8052-b14a5309ec9d",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C29",
+      "claim": "In the wild, monosomic isolates have only been found for a few and the shortest chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the wild, monosomic isolates have only been found for a few and the shortest chromosomes (Peter et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Peter et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "e9ac1440-8653-4556-8e90-383d7cafb108",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C30",
+      "claim": "Examples of monosomy have been detected in mutation-accumulation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar examples of monosomy have been detected in mutation-accumulation experiments (Sui et al., 2020; Zhu et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sui et al., 2020 and Zhu et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "3fba0b23-0b73-4c7c-a9dd-cc9115b41770",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C31",
+      "claim": "About 1/5 of single-gene deletions in yeast stop growth altogether.",
+      "claim_type": "EXPLICIT",
+      "source": "About 1/5 of them stop growth altogether and another 1/5 slow it down detectably (Giaever et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Giaever et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "33b5dd6f-a83c-4399-a580-9400eac28ec6",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C32",
+      "claim": "About 1/5 of single-gene deletions in yeast slow growth down detectably.",
+      "claim_type": "EXPLICIT",
+      "source": "About 1/5 of them stop growth altogether and another 1/5 slow it down detectably (Giaever et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Giaever et al., 2002.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "97e921d9-ce46-4f25-b049-7ce7a308b9ca",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C33",
+      "claim": "Heterozygous deletions often show morphological changes under optimal laboratory conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "These estimates are based on homozygous or haploid strains under optimal laboratory conditions. Heterozygous deletions, again under good conditions, often show morphological changes, but their growth rate, that is, proliferative fitness, is rarely and only modestly affected (Deutschbauer et al., 2005; Marek and Korona, 2016; Ohnuki and Ohya, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Deutschbauer et al., 2005; Marek and Korona, 2016; Ohnuki and Ohya, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "8586169e-c7b1-4027-b408-b55ba046e68f",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C34",
+      "claim": "The growth rate of heterozygous deletions is rarely and only modestly affected under good conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterozygous deletions, again under good conditions, often show morphological changes, but their growth rate, that is, proliferative fitness, is rarely and only modestly affected (Deutschbauer et al., 2005; Marek and Korona, 2016; Ohnuki and Ohya, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Deutschbauer et al., 2005; Marek and Korona, 2016; Ohnuki and Ohya, 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "a8d58c23-bb4c-4725-b0ec-a810069c08a4",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C35",
+      "claim": "468 heterozygous single-deletion strains were selected as potentially haploinsufficient for growth on YPD.",
+      "claim_type": "EXPLICIT",
+      "source": "In 'Materials and methods', we explain how we selected 468 heterozygous single-deletion strains as potentially (haplo)insufficient for growth on the rich medium, YPD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the experimental design described in Materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "4c9d5e89-ff1f-49c5-9b31-926d7ffdcf3b",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C36",
+      "claim": "The negative effects of heterozygous deletions were undoubtedly present, although predictably small.",
+      "claim_type": "EXPLICIT",
+      "source": "It shows that the negative effects of the deletions were undoubtedly present, although predictably small, a substantial fraction of them were in the range of bidirectional effects, most likely composed of phenotypic plasticity and measurement error.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the frequency distribution of rDR shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "28bb0d2e-8862-4b6f-bc9f-4fb52fd062e4",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C37",
+      "claim": "The epistasis between multiple deleterious gene deletions was not only positive but also large.",
+      "claim_type": "EXPLICIT",
+      "source": "The epistasis between multiple deleterious gene deletions turned out to be not only positive but also large, much larger than that observed for just pairs of deletions (Jasnos and Korona, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of predicted and observed fitness values, with citation to Jasnos and Korona, 2007 for comparison.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "6ff9e26d-f11d-4453-912c-5ca3383a60b1",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C38",
+      "claim": "Some monosomic strains were expected to have a negative doubling rate but turned out to be able to proliferate.",
+      "claim_type": "EXPLICIT",
+      "source": "Most strikingly, some monosomic strains were expected to have a negative doubling rate, that is, were predicted to be effectively lethal, but turned out to be able to proliferate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of predicted versus observed growth rates shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "16ccdc5d-d075-4991-bd4e-4414d8f3818b",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C39",
+      "claim": "For M4, most of the predicted mutational load was canceled out by epistasis.",
+      "claim_type": "EXPLICIT",
+      "source": "For several monosomics, and especially M4, most of the predicted mutational load was canceled out by epistasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "85a5c28c-4ea5-4d64-a4d5-ead875a18b1a",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C40",
+      "claim": "There was no detectable increase in the average intensity of transcription on the monosomic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3A shows that there was no detectable increase in the average intensity of transcription on the monosomic chromosomes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transcriptome data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "6578319e-54d9-441d-b393-84dbc12279e5",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C41",
+      "claim": "The fitness effect of a single-gene deletion did not correlate with the expression of this gene in a monosomic strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 3B shows that the fitness effect of a single-gene deletion did not correlate with the expression of this gene in a monosomic strain.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on correlation analysis shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "9c984ef6-c0c1-4c81-8983-98e7f61ffc1f",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C42",
+      "claim": "The mRNA level of genes on monosomic chromosomes was halved on average, although individual genes could show either up- or downshifts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, neither physical underrepresentation (single copy) nor functional importance (impact on growth) triggered an increase in expression of the genes on monosomic chromosomes: their mRNA level was halved on average, although individual genes could show either up- or downshifts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "3b0bc04d-9938-4781-99da-143dcc87ee1a",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C43",
+      "claim": "The translational apparatus of the cytosol was on average significantly and universally upregulated in monosomic strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The translational apparatus of the cytosol was on average significantly and universally upregulated, as evidenced by transcripts encoding proteins that build both large (e.g., RPL28) and small (RPS29B) ribosomal subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "83c99169-959f-4672-b475-61efc29ed8ad",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C44",
+      "claim": "Cytosolic proteolysis was downregulated in monosomic strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Cytosolic proteolysis was downregulated (core proteasome component PRE6).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "f25e08fd-3135-4f7a-8bf4-24dfa8149771",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C45",
+      "claim": "Chaperones required to fold newly synthesized peptides were upregulated in monosomic strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In remarkable agreement, chaperones required to fold newly synthesized peptides were upregulated (SSB1/2), while those required to direct destabilized chains to degradation were downregulated (SSA1, HSP82, HSP104).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "81763ecb-270d-49e4-a4be-ee38653be755",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C46",
+      "claim": "Chaperones required to direct destabilized chains to degradation were downregulated in monosomic strains.",
+      "claim_type": "EXPLICIT",
+      "source": "In remarkable agreement, chaperones required to fold newly synthesized peptides were upregulated (SSB1/2), while those required to direct destabilized chains to degradation were downregulated (SSA1, HSP82, HSP104).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "f4e7ea61-9f41-4645-b9be-de323dacdfd9",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C47",
+      "claim": "Transcripts encoding mitochondrial proteins were generally less abundant in monosomic strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Transcripts encoding mitochondrial proteins were generally less abundant, with a marked decrease in the expression of several genes encoding the electron transport chain (Figure 4\u2014source data 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "c123fa0e-24cb-4487-8f1d-461aa0d2c8fc",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C48",
+      "claim": "The expression of the antioxidant machinery was downregulated in monosomic strains, especially that of a major ROS scavenger (SOD2).",
+      "claim_type": "EXPLICIT",
+      "source": "In parallel, the expression of the antioxidant machinery was downregulated, especially that of a major ROS scavenger (SOD2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "0df68bc7-2204-402e-8cb4-8c4f1412843f",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C49",
+      "claim": "Substantial variation was detected within several regulons in monosomic strains: cAMP-PKA, NCR, GAAC, and Msn2up.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, as shown in Figure 4B, substantial variation was detected within several regulons: cAMP-PKA (glucose-activated signaling), NCR (nitrogen catabolism repression), GAAC (general amino acid control), and Msn2up (activation by a broad range of stresses).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on transcriptome analysis shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "7872e570-0368-41fe-8e03-0007feb9186f",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C50",
+      "claim": "Monosomy would be associated with a decrease in the absolute level of mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, monosomy would be associated with a decrease in the absolute level of mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on spike-in RNA analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "26da3f4e-0fbb-4deb-b75c-4e6b4ba0cfde",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C51",
+      "claim": "Monosomic cells were more rounded in shape and approximately 60% larger in long axis than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "They were more rounded in shape and approximately 60% larger in long axis, so that their individual volumes were several times larger than wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on microscopic measurements of cell dimensions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "5cba5be1-64a4-4809-bf20-36195c95a4fd",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C52",
+      "claim": "The individual volumes of monosomic cells were several times larger than wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "They were more rounded in shape and approximately 60% larger in long axis, so that their individual volumes were several times larger than wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from cell dimension measurements.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "0bf95067-1233-4328-8a81-6e0b5bae4360",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C53",
+      "claim": "The RNA content, including ribosomal protein mRNAs, decreases with slowing growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The apparent decrease in the cellular density of the transcriptome in the cytoplasm of monosomics is not paradoxical because the RNA content, including ribosomal protein mRNAs, decreases with slowing growth (Garc\u00eda-Mart\u00ednez et al., 2016; Warner, 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Garc\u00eda-Mart\u00ednez et al., 2016 and Warner, 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "c1189d66-e1fe-4cfc-91bb-1548236d6a4d",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C54",
+      "claim": "The ability to remain viable despite carrying extensive mutational burdens is not limited to specific combinations of genes.",
+      "claim_type": "EXPLICIT",
+      "source": "It implies that the ability to remain viable despite carrying extensive mutational burdens is not limited to specific combinations of genes, but would likely apply to a wide variety of them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the successful derivation of multiple different monosomic strains.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "b5012d72-991b-4ef2-9bb3-6117382c95f9",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C55",
+      "claim": "Many of the single deletions with negative fitness effects had undergone compensatory evolution under recurrent replication.",
+      "claim_type": "EXPLICIT",
+      "source": "It was shown that many of the single deletions with negative fitness effects had undergone compensatory evolution under recurrent replication needed to maintain the strains carrying them (Puddu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Puddu et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "3c2cc2c5-7fd5-4838-a859-503718b1d89c",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C56",
+      "claim": "The positive epistatic component measured may be underestimated because compensatory effects present in single deletions were absent in newly derived monosomic strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Since we used the same collection of deletions, it is likely that some of them were at least partially compensated. All of these effects that may have been missing in the individual deletions were present in the newly derived monosomic strains. This caveat actually strengthens our claim that the positive epistatic component can be substantial and even offset most of the total damage associated with the combined individual negative effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the comparison of strain histories and their implications for fitness measurements.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "a300506e-849e-4c98-97ac-d58bb282e3b8",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C57",
+      "claim": "In yeast, most of the changes observed in mRNA are generally reflected as corresponding shifts in both the profile of translation and the composition of mature proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, most of the changes observed in mRNA are generally reflected as corresponding shifts in both the profile of translation and the composition of mature proteins (Larrimore et al., 2020; Pavelka et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Larrimore et al., 2020 and Pavelka et al., 2010.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "730893dd-8f59-4eaa-b19c-ccc3a5430ee6",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C58",
+      "claim": "Disomics have a somewhat attenuated average expression of proteins encoded on the duplicated chromosome.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship is not perfect as, for example, disomics have a somewhat attenuated average expression of proteins encoded on the duplicated chromosome. But even there, the result is still much closer to doubling than to parity (Dephoure et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dephoure et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "db78a4ef-dfe1-4c6b-a3a7-5b0875b3b691",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C59",
+      "claim": "Signs of compensation at the proteome level are found in wild aneuploids but are much less pronounced in laboratory strains, especially in the BY strain used in this study.",
+      "claim_type": "EXPLICIT",
+      "source": "Crucially, while signs of compensation at the proteome level are found in wild aneuploids, they are much less pronounced in the laboratory strains and especially in the BY used here (Messner et al., 2023; Muenzner et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Messner et al., 2023 and Muenzner et al., 2024.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "65529be1-fe2d-4b4d-90bf-718a85f4d286",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C60",
+      "claim": "The simultaneous upregulation of genes encoding ribosomal proteins and downregulation of those encoding subunits of the proteasome was observed in all monosomic strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The simultaneous upregulation of genes encoding ribosomal proteins (RP) and downregulation of those encoding subunits of the proteasome was observed in all monosomic strains, providing a crucial insight into the functional response of the cell to monosomy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on transcriptome analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "ad35eff9-3dac-4d2b-9bb5-f152c89c490a",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C61",
+      "claim": "The cell could not restore the required stoichiometry by overexpressing the affected genes on monosomic chromosomes.",
+      "claim_type": "EXPLICIT",
+      "source": "The cell could not restore the required stoichiometry by overexpressing the affected genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the transcriptome data showing no compensatory upregulation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "a10bd420-4bde-4226-a66d-56971d19327c",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C62",
+      "claim": "Processes involved in the 'protein synthesis apparatus' were most frequently represented among haploinsufficient genes.",
+      "claim_type": "EXPLICIT",
+      "source": "However, there was a significant common motif. Processes involved in the 'protein synthesis apparatus' (our term) were most frequently represented.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on Gene Ontology analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "1ef6630f-5e73-4438-a589-f709124d3dba",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C63",
+      "claim": "The predicted damage to protein synthesis apparatus was typically sufficient or exceeding that required to reduce the growth rate to the levels actually observed in monosomics.",
+      "claim_type": "EXPLICIT",
+      "source": "Their predicted damage was also particularly high, typically sufficient or exceeding that required to reduce the growth rate to the levels actually observed in monosomics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of predicted fitness effects from PSA genes versus total genes shown in Table 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "80f34c75-af1e-488c-889e-a8f767edfad3",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C64",
+      "claim": "The biosynthetic perturbation was real, and its relationship to the observed transcriptomic response was likely causal.",
+      "claim_type": "EXPLICIT",
+      "source": "The biosynthetic perturbation was thus real, and its relationship to the observed transcriptomic response was likely causal, not merely coincidental.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the concordance between functional analysis and transcriptome data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "4aece7a4-4383-4c5b-8c6a-b08ce5214964",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C65",
+      "claim": "Deutschbauer et al. identified 184 genes (98 essential and 86 non-essential) as haploinsufficient for growth in YPD.",
+      "claim_type": "EXPLICIT",
+      "source": "Deutschbauer et al. have assayed a complete collection of heterozygous single-gene deletion strains and identified a total of 184 genes, 98 essential and 86 non-essential, as haploinsufficient for growth in rich medium, YPD (Deutschbauer et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Deutschbauer et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "8d500c35-67bb-430b-b322-28ed17265bbc",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C66",
+      "claim": "Marek and Korona identified up to 404 genes (256 essential and 148 non-essential) as potentially haploinsufficient using a false discovery rate of 0.15.",
+      "claim_type": "EXPLICIT",
+      "source": "We reviewed the latter study and, using a false discovery rate of 0.15, accepted up to 404 genes, 256 essential and 148 non-essential, as potentially haploinsufficient.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on reanalysis of data from Marek and Korona, 2016.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "e646c4fc-fd36-41c7-8e54-19fb28992513",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "claim_id": "C67",
+      "claim": "The overlap between the two sets of haploinsufficient genes (184 and 404) was 112 genes, much higher than expected by chance (14.3).",
+      "claim_type": "EXPLICIT",
+      "source": "The two sets obtained in two different studies, 184 and 404, overlapped in 112 cases. The overlap was much higher than expected, 14.3, if the two sets were just random samples from among 5200 yeast genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on statistical comparison of the two datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "a7036c07-2682-45bd-aa7f-704122238a7e",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors successfully derived 13 of 16 monosomic yeast strains (M1-M16, excluding M7, M12, M13). Monosomic strains showed visible growth defects and were regularly invaded by fast-growing revertants. Three chromosomes (VII, XII, XIII) could not be maintained as stable monosomies, likely due to rapid endoreduplication or recombination.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C28 provide converging evidence from phenotypic observations (growth defects, colony morphology), DNA sequencing (Figure 1B), and experimental screening. The inability to derive M7, M12, and M13 is well-documented with plausible mechanistic explanations (endoreduplication, recombination hotspot). The experimental approach is rigorous with appropriate validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "b548f3e1-6b65-441b-b456-1c7cd1bb6f4f",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Combining fitness effects of 468 haploinsufficient single-gene deletions predicted lethality for several monosomies, but all viable monosomic strains showed large positive epistasis. Some monosomics (especially M4) were predicted to have negative growth rates but remained viable, with most predicted mutational load canceled by epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C35-C39 are supported by systematic fitness measurements (Figure 2A-B) comparing predicted versus observed growth rates. The multiplicative fitness model is mathematically justified (Appendix 2), and the large positive epistasis is quantitatively demonstrated. However, potential compensatory evolution in single-deletion strains (C55-C56) suggests the epistasis magnitude may be underestimated, strengthening rather than weakening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "7f35801f-aa8b-45ab-ba2e-941eb657e5e5",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Monosomic chromosomes showed no compensatory upregulation of gene expression. Average transcription intensity was halved on monosomic chromosomes, and fitness effects of single-gene deletions did not correlate with expression changes in monosomic strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C40-C42 are directly supported by transcriptome data (Figures 3A-B). The lack of correlation between haploinsufficiency and expression changes is statistically demonstrated. RNA-seq methodology is appropriate, though the analysis is limited to 8 of 13 monosomic strains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "0aa7e699-ce81-42b0-9709-a8743eb3e9e2",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "All monosomic strains showed universal upregulation of ribosomal protein genes and downregulation of proteasome genes, with simultaneous upregulation of protein-folding chaperones and downregulation of protein-degradation chaperones. This response was indiscriminate and did not correspond to altered gene dosage.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C10, C43-C46, C60 are supported by consistent transcriptome patterns across all analyzed monosomic strains (Figure 4A). The uniformity of response despite different chromosomal losses is compelling evidence. The interpretation that upregulation is indiscriminate is justified by the lack of dosage-specific compensation shown in C40-C42.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "bdd70d10-22d6-4964-9b4a-422e1677cddf",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Monosomic strains showed no classical stress response signatures. Instead, they exhibited downregulation of mitochondrial proteins and antioxidant machinery, with variable responses in specific regulons (cAMP-PKA, NCR, GAAC, Msn2up) across different monosomic strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8, C47-C49 are supported by transcriptome analysis (Figure 4A-B). The absence of stress markers (typically upregulated proteolysis and downregulated ribosomal proteins) is notable and contradicts prior reports. The variable regulon responses are well-documented, though their functional significance remains somewhat unclear.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "83624ca1-6f7c-4ecf-9cd5-01e118ba2e55",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The transcriptional response failed to restore stoichiometry required for efficient biosynthesis, which likely became growth-limiting. Protein synthesis apparatus genes were most frequently haploinsufficient, and their predicted damage was sufficient to account for observed growth defects in monosomics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11-C13 involve substantial speculation (marked as SPECULATION in evidence_type). While C62-C64 provide supporting data from GO analysis (Table 1) showing enrichment of protein synthesis apparatus genes among haploinsufficient genes, the causal link between failed stoichiometry restoration and growth limitation (C12-C13) is inferred rather than directly demonstrated. The hypothesis is plausible but requires additional experimental validation such as direct measurement of ribosome assembly efficiency or protein synthesis rates.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "0eda2c01-beb1-4a5e-b786-59738a4f7170",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors propose that cellular modularity leads to fragmentation of mutational load, where defects outside growth-limiting modules lose relevance, producing positive epistasis as an epiphenomenon.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C14-C16 are entirely theoretical interpretations (marked as INFERENCE/SPECULATION). While this modular bottleneck model provides an elegant explanation for the observed positive epistasis, it lacks direct experimental validation. The model would require testing through targeted perturbations of specific modules or demonstration that epistasis magnitude correlates with module-specific damage. The hypothesis is well-reasoned but remains speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "0009cc6a-1394-4591-92fb-c2ac6a6276ed",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Spike-in RNA analysis revealed decreased absolute mRNA levels in monosomic strains, though monosomic cells were larger (60% longer axis, several-fold larger volume). The decreased RNA density is consistent with known relationships between RNA content and growth rate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52 are supported by spike-in experiments (Figure 5) and morphological measurements. The interpretation in C53 is supported by appropriate citations. However, the analysis is limited to only 3 monosomic strains (M1-M3), and the relationship between per-cell versus per-volume RNA content introduces some ambiguity in interpretation. The caveat about cell volume is appropriately acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "ffb5771d-0891-4a04-b02d-95d40484aee2",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The ability to tolerate extensive mutational burdens is not limited to specific gene combinations and would apply broadly. The measured positive epistasis may be underestimated because single-deletion strains had undergone compensatory evolution that was absent in newly derived monosomics.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is a reasonable inference from successful derivation of 13 diverse monosomic strains. Claim C56 is supported by citation to Puddu et al., 2019 showing compensatory evolution in deletion collections. The logic that this would strengthen rather than weaken the epistasis claim is sound, though the magnitude of this effect is not quantified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "8edc5514-100d-4d52-9423-64d36ae330aa",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The authors selected 468 haploinsufficient genes by combining two prior studies (Deutschbauer et al.: 184 genes; Marek and Korona reanalysis: 404 genes). The overlap of 112 genes was significantly higher than the 14.3 expected by chance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 describe the methodological approach for gene selection. The statistical comparison of overlap is appropriate and demonstrates non-random concordance between studies. The reanalysis using FDR 0.15 is reasonable, though this relatively permissive threshold may include false positives. The approach is transparent and adequately justified.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "168a16aa-4d6c-4f58-93a6-3e191c9b0b24",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In yeast, mRNA changes generally reflect corresponding shifts in translation and protein composition, though with some attenuation in disomics. Proteome-level compensation is less pronounced in laboratory strains (especially BY) compared to wild aneuploids.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C59 are supported by appropriate citations to establish that transcriptome analysis is a reasonable proxy for proteome changes in the BY laboratory strain used. This justifies the authors' reliance on RNA-seq data. The distinction between laboratory and wild strains is important context for interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "e9f394b3-5f60-488a-83d6-37ccada1a263",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Background claims establishing that chromosome loss halves gene dosage and reduces fitness, that human cells carry ~100 inactive genes, that yeast has ~5000 genes across 16 chromosomes, and that monosomy mimics sudden partial inactivation of numerous randomly assembled genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C17-C20 provide established background knowledge and logical framing for the study. C1-C2 are well-established principles of aneuploidy. C17-C18 are supported by appropriate citations. C19 is accurate knowledge about yeast genome organization. C20 is a logical inference that motivates the experimental approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "a9b8c372-ba6a-45dc-a69e-0f2549ad422f",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior literature context: wild monosomics are rare and limited to short chromosomes; ~20% of yeast gene deletions are lethal or slow growth in haploids/homozygotes; heterozygous deletions rarely affect growth rate substantially under optimal conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C34 provide literature context supported by appropriate citations (Peter et al., 2018; Sui et al., 2020; Zhu et al., 2014; Giaever et al., 2002; Deutschbauer et al., 2005; Marek and Korona, 2016; Ohnuki and Ohya, 2018). These establish the novelty and significance of the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "cd0884bb-569a-4b1e-8d1b-5936ac1dbecd",
+      "content_id": "920def7f-20ee-464f-aa39-ec36709f90fe",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Summary claims that monosomic strains remained viable despite predictions, grew as if mutation damage had disappeared, and revealed large positive epistasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4-C6 are high-level summaries of the main findings that are substantiated by the detailed results in other claim groups (particularly C21-C28 for viability and C35-C39 for epistasis). These are appropriately supported by the experimental data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "9829f3fa-5a4e-40cc-965d-5efce91aa0cb",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors successfully generated 13 viable monosomic yeast strains (M1-M16, excluding M7, M12, M13) showing visible growth defects. These strains exhibited genomic instability with frequent reversion to faster-growing phenotypes, and three chromosomes (VII, XII, XIII) could not yield stable monosomics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers praised the 'rigorous experimental strategy' and 'careful approach in generating and handling monosome yeast lines' (Reviewer 1). The editor noted this is 'the first to evaluate gene expression in yeast monosomies' and the methodology was 'commendable.' No reviewer challenged the strain generation or characterization data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Monosomic strains showed large positive epistasis for fitness: predicted fitness based on combining single heterozygous deletion effects suggested lethality for several monosomics, but these strains remained viable and grew substantially better than predicted, with some monosomics (especially M4) having most of their predicted mutational load canceled by epistasis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 initially raised concerns about the epistasis calculation method but noted in revision comments that 'the authors have adequately addressed all my previous concerns.' The editor confirmed the study provides 'solid evidence for positive epistatic interactions affecting fitness.' Reviewer 2 accepted the empirical observation that 'monosomy does not reflect the cumulative effect of multiple haplo-insufficiencies.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "f1a7319a-2f36-4607-a2de-f535bb59587f",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "There was no compensatory upregulation of gene expression on monosomic chromosomes. The average transcription intensity on monosomic chromosomes was not increased, haploinsufficient gene expression did not correlate with fitness effects, and mRNA levels were halved on average for genes on monosomic chromosomes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 3 directly challenged claim C7, stating 'almost half of them are in reddish colors (indicating that the expression is higher than 1-fold). Obviously, many haploinsufficient genes are up-regulated' and that 'the authors need to correct their conclusions.' Reviewer 2 raised fundamental concerns about interpreting relative vs. absolute expression changes, noting 'it is unclear what the ABSOLUTE PER CELL expression is across the whole genome.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "72cda132-fc3e-4520-9394-8f91b54141bd",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "All monosomic strains showed universal upregulation of ribosomal protein genes and downregulation of proteasome genes. The ribosomal protein upregulation was indiscriminate and did not correspond to altered gene dosage. Chaperones for folding were upregulated while those for degradation were downregulated.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While no reviewer directly challenged these observations, Reviewer 2 raised fundamental interpretive concerns: 'If there is an increase in the general transcriptome size, then there might not be as much reduction of the proteosome subunits as claimed and the increases might be somewhat less than indicated.' The editor noted 'questions regarding the interpretation of the transcriptome data have not been completely addressed.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "f221bc59-2bda-4a78-b59e-c9681d7b3384",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Monosomy was associated with decreased absolute mRNA levels and increased cell size. Monosomic cells were more rounded, approximately 60% larger in long axis, with volumes several times larger than wild-type.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 highlighted a critical interpretive issue: 'Given that cell volume correlates very well with the total transcriptome size...it could well be that there is an increased transcriptome size in the monosomies. Thus, the interpretation of the relative changes from RNAseq is compromised.' This directly contradicts C50's claim of decreased absolute mRNA, creating uncertainty about the actual transcriptome state.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "be712fb9-05de-4a71-bf87-82e2b4f84dff",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The transcriptional response did not restore stoichiometry for efficient biosynthesis, which likely became growth-limiting and made other metabolic defects less important. Protein synthesis apparatus genes were most frequently haploinsufficient, and their predicted damage was sufficient to explain observed growth rates, suggesting a causal relationship between biosynthetic perturbation and transcriptomic response.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These mechanistic interpretations were not directly validated by reviewers. Reviewer 2's concerns about transcriptome size changes undermine the foundation for these conclusions. The editor's statement that 'questions regarding the interpretation of the transcriptome data have not been completely addressed' applies to these mechanistic claims as well.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "50579194-917b-451d-b590-24a2a0668565",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Monosomic strains showed decreased expression of mitochondrial proteins and antioxidant machinery, with substantial variation in several stress-response regulons (cAMP-PKA, NCR, GAAC, Msn2up).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These observations were not challenged by reviewers. Reviewer 2 acknowledged 'there are some RELATIVE changes in gene expression' and specifically mentioned increases in 'the GAAC pathway, the NCR pathway, and Msn2p,' implicitly accepting these patterns exist even while questioning their absolute interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "3f510f21-2710-4903-a72c-2f4c69c31003",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The modular structure of the cell leads to fragmentation of mutational load, where defects outside fitness-limiting modules lose relevance, producing positive epistasis. This ability to remain viable with extensive mutational burdens applies broadly to different gene combinations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This theoretical framework was not challenged by reviewers. Reviewer 1 accepted the positive epistasis findings after revision, and Reviewer 2 acknowledged 'the empirical observation that monosomy does not reflect the cumulative effect of multiple haplo-insufficiencies,' which supports this modular interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "1b603839-c774-4a4d-b010-0b820ce25dd6",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The study selected 468 heterozygous single-deletion strains as potentially haploinsufficient based on two previous studies (184 genes from Deutschbauer et al., 404 from reanalysis of Marek and Korona), with significant overlap (112 genes) between datasets indicating reliability of haploinsufficiency identification.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The methodology for selecting haploinsufficient genes was not challenged by reviewers. This represents accepted methodological groundwork for the fitness predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "0dd79aa2-af99-48e0-9a8b-53270baf04e8",
+      "content_id": "d69a8ac3-4a80-4855-8557-22f99820b822",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Many single deletions had undergone compensatory evolution during strain maintenance, which may cause underestimation of positive epistasis in monosomics since these compensatory effects were absent in newly derived monosomic strains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This caveat was not challenged by reviewers and actually strengthens the main epistasis claims, as acknowledged in the manuscript text itself.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8ad21bc6-c549-4ca9-9eb7-afb751f4dacb",
+      "result_id": "a7036c07-2682-45bd-aa7f-704122238a7e"
+    },
+    {
+      "claim_id": "5683a311-2755-4130-90ed-e1ba5c4d609a",
+      "result_id": "a7036c07-2682-45bd-aa7f-704122238a7e"
+    },
+    {
+      "claim_id": "96f89cb5-54e4-4246-867d-0b423fe3840c",
+      "result_id": "a7036c07-2682-45bd-aa7f-704122238a7e"
+    },
+    {
+      "claim_id": "52e8001f-1a5a-4171-bca8-b93ce3565c56",
+      "result_id": "a7036c07-2682-45bd-aa7f-704122238a7e"
+    },
+    {
+      "claim_id": "83b52a58-f841-484a-858e-bb32eebd5a3a",
+      "result_id": "a7036c07-2682-45bd-aa7f-704122238a7e"
+    },
+    {
+      "claim_id": "d6f77fa8-c0f5-42ab-8e45-f34e67442433",
+      "result_id": "a7036c07-2682-45bd-aa7f-704122238a7e"
+    },
+    {
+      "claim_id": "6528d0f1-a175-4ff8-bc35-8f097e820184",
+      "result_id": "a7036c07-2682-45bd-aa7f-704122238a7e"
+    },
+    {
+      "claim_id": "1dcfeae3-fda5-4006-b12e-db65393b0bd0",
+      "result_id": "a7036c07-2682-45bd-aa7f-704122238a7e"
+    },
+    {
+      "claim_id": "535ac1ab-165d-4a59-a212-98e72e219293",
+      "result_id": "b548f3e1-6b65-441b-b456-1c7cd1bb6f4f"
+    },
+    {
+      "claim_id": "a8d58c23-bb4c-4725-b0ec-a810069c08a4",
+      "result_id": "b548f3e1-6b65-441b-b456-1c7cd1bb6f4f"
+    },
+    {
+      "claim_id": "4c9d5e89-ff1f-49c5-9b31-926d7ffdcf3b",
+      "result_id": "b548f3e1-6b65-441b-b456-1c7cd1bb6f4f"
+    },
+    {
+      "claim_id": "28bb0d2e-8862-4b6f-bc9f-4fb52fd062e4",
+      "result_id": "b548f3e1-6b65-441b-b456-1c7cd1bb6f4f"
+    },
+    {
+      "claim_id": "6ff9e26d-f11d-4453-912c-5ca3383a60b1",
+      "result_id": "b548f3e1-6b65-441b-b456-1c7cd1bb6f4f"
+    },
+    {
+      "claim_id": "16ccdc5d-d075-4991-bd4e-4414d8f3818b",
+      "result_id": "b548f3e1-6b65-441b-b456-1c7cd1bb6f4f"
+    },
+    {
+      "claim_id": "afc79a85-5ba9-4f6b-afb0-98ea5430f2f7",
+      "result_id": "7f35801f-aa8b-45ab-ba2e-941eb657e5e5"
+    },
+    {
+      "claim_id": "85a5c28c-4ea5-4d64-a4d5-ead875a18b1a",
+      "result_id": "7f35801f-aa8b-45ab-ba2e-941eb657e5e5"
+    },
+    {
+      "claim_id": "6578319e-54d9-441d-b393-84dbc12279e5",
+      "result_id": "7f35801f-aa8b-45ab-ba2e-941eb657e5e5"
+    },
+    {
+      "claim_id": "9c984ef6-c0c1-4c81-8983-98e7f61ffc1f",
+      "result_id": "7f35801f-aa8b-45ab-ba2e-941eb657e5e5"
+    },
+    {
+      "claim_id": "d26de3a1-720d-4bb4-8c39-dbd6c8b4e2c0",
+      "result_id": "0aa7e699-ce81-42b0-9709-a8743eb3e9e2"
+    },
+    {
+      "claim_id": "03f69e6d-660d-4684-a5df-f1b23349f004",
+      "result_id": "0aa7e699-ce81-42b0-9709-a8743eb3e9e2"
+    },
+    {
+      "claim_id": "3b0bc04d-9938-4781-99da-143dcc87ee1a",
+      "result_id": "0aa7e699-ce81-42b0-9709-a8743eb3e9e2"
+    },
+    {
+      "claim_id": "83c99169-959f-4672-b475-61efc29ed8ad",
+      "result_id": "0aa7e699-ce81-42b0-9709-a8743eb3e9e2"
+    },
+    {
+      "claim_id": "f25e08fd-3135-4f7a-8bf4-24dfa8149771",
+      "result_id": "0aa7e699-ce81-42b0-9709-a8743eb3e9e2"
+    },
+    {
+      "claim_id": "81763ecb-270d-49e4-a4be-ee38653be755",
+      "result_id": "0aa7e699-ce81-42b0-9709-a8743eb3e9e2"
+    },
+    {
+      "claim_id": "65529be1-fe2d-4b4d-90bf-718a85f4d286",
+      "result_id": "0aa7e699-ce81-42b0-9709-a8743eb3e9e2"
+    },
+    {
+      "claim_id": "c088ab02-65a5-4d67-9c39-49016f8d8679",
+      "result_id": "bdd70d10-22d6-4964-9b4a-422e1677cddf"
+    },
+    {
+      "claim_id": "f4e7ea61-9f41-4645-b9be-de323dacdfd9",
+      "result_id": "bdd70d10-22d6-4964-9b4a-422e1677cddf"
+    },
+    {
+      "claim_id": "c123fa0e-24cb-4487-8f1d-461aa0d2c8fc",
+      "result_id": "bdd70d10-22d6-4964-9b4a-422e1677cddf"
+    },
+    {
+      "claim_id": "0df68bc7-2204-402e-8cb4-8c4f1412843f",
+      "result_id": "bdd70d10-22d6-4964-9b4a-422e1677cddf"
+    },
+    {
+      "claim_id": "382149a4-9798-4963-86e2-710d0ae5ecde",
+      "result_id": "83624ca1-6f7c-4ecf-9cd5-01e118ba2e55"
+    },
+    {
+      "claim_id": "5332608c-2570-4214-94ab-64c946a76a12",
+      "result_id": "83624ca1-6f7c-4ecf-9cd5-01e118ba2e55"
+    },
+    {
+      "claim_id": "f00e83fc-0a66-4599-8b4c-1c9dc29001e2",
+      "result_id": "83624ca1-6f7c-4ecf-9cd5-01e118ba2e55"
+    },
+    {
+      "claim_id": "ad35eff9-3dac-4d2b-9bb5-f152c89c490a",
+      "result_id": "83624ca1-6f7c-4ecf-9cd5-01e118ba2e55"
+    },
+    {
+      "claim_id": "a10bd420-4bde-4226-a66d-56971d19327c",
+      "result_id": "83624ca1-6f7c-4ecf-9cd5-01e118ba2e55"
+    },
+    {
+      "claim_id": "1ef6630f-5e73-4438-a589-f709124d3dba",
+      "result_id": "83624ca1-6f7c-4ecf-9cd5-01e118ba2e55"
+    },
+    {
+      "claim_id": "80f34c75-af1e-488c-889e-a8f767edfad3",
+      "result_id": "83624ca1-6f7c-4ecf-9cd5-01e118ba2e55"
+    },
+    {
+      "claim_id": "ac5e7347-f0ea-4a19-b6e0-077c88f1b2cb",
+      "result_id": "0eda2c01-beb1-4a5e-b786-59738a4f7170"
+    },
+    {
+      "claim_id": "e0a0e631-ff79-4554-8fff-e5705583aa7a",
+      "result_id": "0eda2c01-beb1-4a5e-b786-59738a4f7170"
+    },
+    {
+      "claim_id": "9a699f8b-8e5d-4f0e-944f-42b4046b74dd",
+      "result_id": "0eda2c01-beb1-4a5e-b786-59738a4f7170"
+    },
+    {
+      "claim_id": "7872e570-0368-41fe-8e03-0007feb9186f",
+      "result_id": "0009cc6a-1394-4591-92fb-c2ac6a6276ed"
+    },
+    {
+      "claim_id": "26da3f4e-0fbb-4deb-b75c-4e6b4ba0cfde",
+      "result_id": "0009cc6a-1394-4591-92fb-c2ac6a6276ed"
+    },
+    {
+      "claim_id": "5cba5be1-64a4-4809-bf20-36195c95a4fd",
+      "result_id": "0009cc6a-1394-4591-92fb-c2ac6a6276ed"
+    },
+    {
+      "claim_id": "0bf95067-1233-4328-8a81-6e0b5bae4360",
+      "result_id": "0009cc6a-1394-4591-92fb-c2ac6a6276ed"
+    },
+    {
+      "claim_id": "c1189d66-e1fe-4cfc-91bb-1548236d6a4d",
+      "result_id": "ffb5771d-0891-4a04-b02d-95d40484aee2"
+    },
+    {
+      "claim_id": "3c2cc2c5-7fd5-4838-a859-503718b1d89c",
+      "result_id": "ffb5771d-0891-4a04-b02d-95d40484aee2"
+    },
+    {
+      "claim_id": "4aece7a4-4383-4c5b-8c6a-b08ce5214964",
+      "result_id": "8edc5514-100d-4d52-9423-64d36ae330aa"
+    },
+    {
+      "claim_id": "8d500c35-67bb-430b-b322-28ed17265bbc",
+      "result_id": "8edc5514-100d-4d52-9423-64d36ae330aa"
+    },
+    {
+      "claim_id": "e646c4fc-fd36-41c7-8e54-19fb28992513",
+      "result_id": "8edc5514-100d-4d52-9423-64d36ae330aa"
+    },
+    {
+      "claim_id": "a300506e-849e-4c98-97ac-d58bb282e3b8",
+      "result_id": "168a16aa-4d6c-4f58-93a6-3e191c9b0b24"
+    },
+    {
+      "claim_id": "730893dd-8f59-4eaa-b19c-ccc3a5430ee6",
+      "result_id": "168a16aa-4d6c-4f58-93a6-3e191c9b0b24"
+    },
+    {
+      "claim_id": "db78a4ef-dfe1-4c6b-a3a7-5b0875b3b691",
+      "result_id": "168a16aa-4d6c-4f58-93a6-3e191c9b0b24"
+    },
+    {
+      "claim_id": "712b22be-601f-4d06-b784-f1b2b7263832",
+      "result_id": "e9f394b3-5f60-488a-83d6-37ccada1a263"
+    },
+    {
+      "claim_id": "5515f4b9-2872-435a-80a0-362721b5f8eb",
+      "result_id": "e9f394b3-5f60-488a-83d6-37ccada1a263"
+    },
+    {
+      "claim_id": "02d60e3a-958c-4b0e-9bce-e759e2da8928",
+      "result_id": "e9f394b3-5f60-488a-83d6-37ccada1a263"
+    },
+    {
+      "claim_id": "63d47dcc-4e6b-48bf-a3b3-2d2002b7e05d",
+      "result_id": "e9f394b3-5f60-488a-83d6-37ccada1a263"
+    },
+    {
+      "claim_id": "c99e5710-56c3-4465-ae0d-3f7188c87cc6",
+      "result_id": "e9f394b3-5f60-488a-83d6-37ccada1a263"
+    },
+    {
+      "claim_id": "e49897fa-5756-4888-a626-201379418128",
+      "result_id": "e9f394b3-5f60-488a-83d6-37ccada1a263"
+    },
+    {
+      "claim_id": "dbfc0b7e-6af4-4e0c-8052-b14a5309ec9d",
+      "result_id": "a9b8c372-ba6a-45dc-a69e-0f2549ad422f"
+    },
+    {
+      "claim_id": "e9ac1440-8653-4556-8e90-383d7cafb108",
+      "result_id": "a9b8c372-ba6a-45dc-a69e-0f2549ad422f"
+    },
+    {
+      "claim_id": "3fba0b23-0b73-4c7c-a9dd-cc9115b41770",
+      "result_id": "a9b8c372-ba6a-45dc-a69e-0f2549ad422f"
+    },
+    {
+      "claim_id": "33b5dd6f-a83c-4399-a580-9400eac28ec6",
+      "result_id": "a9b8c372-ba6a-45dc-a69e-0f2549ad422f"
+    },
+    {
+      "claim_id": "97e921d9-ce46-4f25-b049-7ce7a308b9ca",
+      "result_id": "a9b8c372-ba6a-45dc-a69e-0f2549ad422f"
+    },
+    {
+      "claim_id": "8586169e-c7b1-4027-b408-b55ba046e68f",
+      "result_id": "a9b8c372-ba6a-45dc-a69e-0f2549ad422f"
+    },
+    {
+      "claim_id": "edbc85e1-5fcc-4876-a00f-f4335f302d20",
+      "result_id": "cd0884bb-569a-4b1e-8d1b-5936ac1dbecd"
+    },
+    {
+      "claim_id": "8e378f2d-06a7-4d99-9176-43af609f289d",
+      "result_id": "cd0884bb-569a-4b1e-8d1b-5936ac1dbecd"
+    },
+    {
+      "claim_id": "ee53746d-d897-4a5c-839d-23e5705d4647",
+      "result_id": "cd0884bb-569a-4b1e-8d1b-5936ac1dbecd"
+    },
+    {
+      "claim_id": "8ad21bc6-c549-4ca9-9eb7-afb751f4dacb",
+      "result_id": "9829f3fa-5a4e-40cc-965d-5efce91aa0cb"
+    },
+    {
+      "claim_id": "5683a311-2755-4130-90ed-e1ba5c4d609a",
+      "result_id": "9829f3fa-5a4e-40cc-965d-5efce91aa0cb"
+    },
+    {
+      "claim_id": "96f89cb5-54e4-4246-867d-0b423fe3840c",
+      "result_id": "9829f3fa-5a4e-40cc-965d-5efce91aa0cb"
+    },
+    {
+      "claim_id": "52e8001f-1a5a-4171-bca8-b93ce3565c56",
+      "result_id": "9829f3fa-5a4e-40cc-965d-5efce91aa0cb"
+    },
+    {
+      "claim_id": "83b52a58-f841-484a-858e-bb32eebd5a3a",
+      "result_id": "9829f3fa-5a4e-40cc-965d-5efce91aa0cb"
+    },
+    {
+      "claim_id": "d6f77fa8-c0f5-42ab-8e45-f34e67442433",
+      "result_id": "9829f3fa-5a4e-40cc-965d-5efce91aa0cb"
+    },
+    {
+      "claim_id": "6528d0f1-a175-4ff8-bc35-8f097e820184",
+      "result_id": "9829f3fa-5a4e-40cc-965d-5efce91aa0cb"
+    },
+    {
+      "claim_id": "535ac1ab-165d-4a59-a212-98e72e219293",
+      "result_id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a"
+    },
+    {
+      "claim_id": "edbc85e1-5fcc-4876-a00f-f4335f302d20",
+      "result_id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a"
+    },
+    {
+      "claim_id": "8e378f2d-06a7-4d99-9176-43af609f289d",
+      "result_id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a"
+    },
+    {
+      "claim_id": "ee53746d-d897-4a5c-839d-23e5705d4647",
+      "result_id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a"
+    },
+    {
+      "claim_id": "28bb0d2e-8862-4b6f-bc9f-4fb52fd062e4",
+      "result_id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a"
+    },
+    {
+      "claim_id": "6ff9e26d-f11d-4453-912c-5ca3383a60b1",
+      "result_id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a"
+    },
+    {
+      "claim_id": "16ccdc5d-d075-4991-bd4e-4414d8f3818b",
+      "result_id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a"
+    },
+    {
+      "claim_id": "afc79a85-5ba9-4f6b-afb0-98ea5430f2f7",
+      "result_id": "f1a7319a-2f36-4607-a2de-f535bb59587f"
+    },
+    {
+      "claim_id": "85a5c28c-4ea5-4d64-a4d5-ead875a18b1a",
+      "result_id": "f1a7319a-2f36-4607-a2de-f535bb59587f"
+    },
+    {
+      "claim_id": "6578319e-54d9-441d-b393-84dbc12279e5",
+      "result_id": "f1a7319a-2f36-4607-a2de-f535bb59587f"
+    },
+    {
+      "claim_id": "9c984ef6-c0c1-4c81-8983-98e7f61ffc1f",
+      "result_id": "f1a7319a-2f36-4607-a2de-f535bb59587f"
+    },
+    {
+      "claim_id": "d26de3a1-720d-4bb4-8c39-dbd6c8b4e2c0",
+      "result_id": "72cda132-fc3e-4520-9394-8f91b54141bd"
+    },
+    {
+      "claim_id": "03f69e6d-660d-4684-a5df-f1b23349f004",
+      "result_id": "72cda132-fc3e-4520-9394-8f91b54141bd"
+    },
+    {
+      "claim_id": "3b0bc04d-9938-4781-99da-143dcc87ee1a",
+      "result_id": "72cda132-fc3e-4520-9394-8f91b54141bd"
+    },
+    {
+      "claim_id": "83c99169-959f-4672-b475-61efc29ed8ad",
+      "result_id": "72cda132-fc3e-4520-9394-8f91b54141bd"
+    },
+    {
+      "claim_id": "f25e08fd-3135-4f7a-8bf4-24dfa8149771",
+      "result_id": "72cda132-fc3e-4520-9394-8f91b54141bd"
+    },
+    {
+      "claim_id": "81763ecb-270d-49e4-a4be-ee38653be755",
+      "result_id": "72cda132-fc3e-4520-9394-8f91b54141bd"
+    },
+    {
+      "claim_id": "65529be1-fe2d-4b4d-90bf-718a85f4d286",
+      "result_id": "72cda132-fc3e-4520-9394-8f91b54141bd"
+    },
+    {
+      "claim_id": "7872e570-0368-41fe-8e03-0007feb9186f",
+      "result_id": "f221bc59-2bda-4a78-b59e-c9681d7b3384"
+    },
+    {
+      "claim_id": "26da3f4e-0fbb-4deb-b75c-4e6b4ba0cfde",
+      "result_id": "f221bc59-2bda-4a78-b59e-c9681d7b3384"
+    },
+    {
+      "claim_id": "5cba5be1-64a4-4809-bf20-36195c95a4fd",
+      "result_id": "f221bc59-2bda-4a78-b59e-c9681d7b3384"
+    },
+    {
+      "claim_id": "382149a4-9798-4963-86e2-710d0ae5ecde",
+      "result_id": "be712fb9-05de-4a71-bf87-82e2b4f84dff"
+    },
+    {
+      "claim_id": "5332608c-2570-4214-94ab-64c946a76a12",
+      "result_id": "be712fb9-05de-4a71-bf87-82e2b4f84dff"
+    },
+    {
+      "claim_id": "f00e83fc-0a66-4599-8b4c-1c9dc29001e2",
+      "result_id": "be712fb9-05de-4a71-bf87-82e2b4f84dff"
+    },
+    {
+      "claim_id": "ad35eff9-3dac-4d2b-9bb5-f152c89c490a",
+      "result_id": "be712fb9-05de-4a71-bf87-82e2b4f84dff"
+    },
+    {
+      "claim_id": "a10bd420-4bde-4226-a66d-56971d19327c",
+      "result_id": "be712fb9-05de-4a71-bf87-82e2b4f84dff"
+    },
+    {
+      "claim_id": "1ef6630f-5e73-4438-a589-f709124d3dba",
+      "result_id": "be712fb9-05de-4a71-bf87-82e2b4f84dff"
+    },
+    {
+      "claim_id": "80f34c75-af1e-488c-889e-a8f767edfad3",
+      "result_id": "be712fb9-05de-4a71-bf87-82e2b4f84dff"
+    },
+    {
+      "claim_id": "f4e7ea61-9f41-4645-b9be-de323dacdfd9",
+      "result_id": "50579194-917b-451d-b590-24a2a0668565"
+    },
+    {
+      "claim_id": "c123fa0e-24cb-4487-8f1d-461aa0d2c8fc",
+      "result_id": "50579194-917b-451d-b590-24a2a0668565"
+    },
+    {
+      "claim_id": "0df68bc7-2204-402e-8cb4-8c4f1412843f",
+      "result_id": "50579194-917b-451d-b590-24a2a0668565"
+    },
+    {
+      "claim_id": "ac5e7347-f0ea-4a19-b6e0-077c88f1b2cb",
+      "result_id": "3f510f21-2710-4903-a72c-2f4c69c31003"
+    },
+    {
+      "claim_id": "e0a0e631-ff79-4554-8fff-e5705583aa7a",
+      "result_id": "3f510f21-2710-4903-a72c-2f4c69c31003"
+    },
+    {
+      "claim_id": "9a699f8b-8e5d-4f0e-944f-42b4046b74dd",
+      "result_id": "3f510f21-2710-4903-a72c-2f4c69c31003"
+    },
+    {
+      "claim_id": "c1189d66-e1fe-4cfc-91bb-1548236d6a4d",
+      "result_id": "3f510f21-2710-4903-a72c-2f4c69c31003"
+    },
+    {
+      "claim_id": "a8d58c23-bb4c-4725-b0ec-a810069c08a4",
+      "result_id": "1b603839-c774-4a4d-b010-0b820ce25dd6"
+    },
+    {
+      "claim_id": "4c9d5e89-ff1f-49c5-9b31-926d7ffdcf3b",
+      "result_id": "1b603839-c774-4a4d-b010-0b820ce25dd6"
+    },
+    {
+      "claim_id": "4aece7a4-4383-4c5b-8c6a-b08ce5214964",
+      "result_id": "1b603839-c774-4a4d-b010-0b820ce25dd6"
+    },
+    {
+      "claim_id": "8d500c35-67bb-430b-b322-28ed17265bbc",
+      "result_id": "1b603839-c774-4a4d-b010-0b820ce25dd6"
+    },
+    {
+      "claim_id": "e646c4fc-fd36-41c7-8e54-19fb28992513",
+      "result_id": "1b603839-c774-4a4d-b010-0b820ce25dd6"
+    },
+    {
+      "claim_id": "b5012d72-991b-4ef2-9bb3-6117382c95f9",
+      "result_id": "0dd79aa2-af99-48e0-9a8b-53270baf04e8"
+    },
+    {
+      "claim_id": "3c2cc2c5-7fd5-4838-a859-503718b1d89c",
+      "result_id": "0dd79aa2-af99-48e0-9a8b-53270baf04e8"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "f0c57c5c-4862-4ec4-86b3-8949b28c2022",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "a7036c07-2682-45bd-aa7f-704122238a7e",
+      "peer_result_id": "9829f3fa-5a4e-40cc-965d-5efce91aa0cb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on strain generation and characterization (C21-C27). Both evaluations find the experimental approach rigorous and well-validated. OpenEval rated SUPPORTED; peer reviewers praised the 'careful approach' and 'rigorous experimental strategy' with no challenges to the methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "00f2cf11-2f6d-4c68-a949-76e7f7d15972",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b548f3e1-6b65-441b-b456-1c7cd1bb6f4f",
+      "peer_result_id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on epistasis findings (C3, C37-C39) after revision. OpenEval rated SUPPORTED with caveat about compensatory evolution. Peer Reviewer 1 initially raised concerns but stated 'authors have adequately addressed all my previous concerns.' Both accept the positive epistasis conclusion, though OpenEval also addresses summary claims C4-C6 that peer review grouped here.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "9daa195a-88ec-40d4-93a2-2861d381f44f",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "7f35801f-aa8b-45ab-ba2e-941eb657e5e5",
+      "peer_result_id": "f1a7319a-2f36-4607-a2de-f535bb59587f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on haploinsufficiency and expression correlation (C7, C40-C42). OpenEval rated SUPPORTED based on statistical demonstration. Peer Reviewer 3 directly challenged C7, stating 'many haploinsufficient genes are up-regulated' and demanding correction. Reviewer 2 raised concerns about absolute vs. relative expression interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "f4b21ec1-4506-4599-a184-bd4bd21d6b8c",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "0aa7e699-ce81-42b0-9709-a8743eb3e9e2",
+      "peer_result_id": "72cda132-fc3e-4520-9394-8f91b54141bd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent evaluations on transcriptome patterns (C9-C10, C43-C46, C60). OpenEval rated SUPPORTED based on consistent patterns across strains. Peer reviewers rated UNCERTAIN due to fundamental interpretive concerns about transcriptome size changes affecting relative expression measurements, though observations themselves were not directly challenged.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "27b4e59d-c4cc-4c18-9a9f-eabe9e341586",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "bdd70d10-22d6-4964-9b4a-422e1677cddf",
+      "peer_result_id": "50579194-917b-451d-b590-24a2a0668565",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on stress marker observations (C47-C49). OpenEval rated SUPPORTED noting absence of typical stress markers. Peer Reviewer 2 acknowledged these RELATIVE changes exist, specifically mentioning GAAC, NCR pathways, and Msn2p, accepting the patterns even while questioning absolute interpretation in other contexts.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "175b0fd6-d586-4441-9536-b30d4a1c6599",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "83624ca1-6f7c-4ecf-9cd5-01e118ba2e55",
+      "peer_result_id": "be712fb9-05de-4a71-bf87-82e2b4f84dff",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations express uncertainty about mechanistic interpretations (C11-C13, C61-C64). OpenEval rated UNCERTAIN noting substantial speculation requiring experimental validation. Peer reviewers also rated UNCERTAIN, with concerns that transcriptome size issues undermine the foundation for these mechanistic claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "57585e81-ece3-41e8-a954-fc70f35847ef",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "0eda2c01-beb1-4a5e-b786-59738a4f7170",
+      "peer_result_id": "3f510f21-2710-4903-a72c-2f4c69c31003",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on theoretical framework (C14-C16). OpenEval rated UNCERTAIN noting elegant but unvalidated hypothesis. Peer reviewers rated SUPPORTED, accepting the modular bottleneck interpretation as consistent with empirical epistasis findings, though neither evaluation provides direct experimental validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "17c0c71e-d49c-4e57-9c81-511dbffead10",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "0009cc6a-1394-4591-92fb-c2ac6a6276ed",
+      "peer_result_id": "f221bc59-2bda-4a78-b59e-c9681d7b3384",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on absolute mRNA content (C50-C52). OpenEval rated SUPPORTED based on spike-in experiments. Peer reviewers rated UNCERTAIN, with Reviewer 2 arguing that cell volume correlation with transcriptome size means 'there might be an increased transcriptome size,' directly contradicting C50's decreased absolute mRNA claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "365ee396-30c8-48a6-b4ac-a099520da4d3",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ffb5771d-0891-4a04-b02d-95d40484aee2",
+      "peer_result_id": "0dd79aa2-af99-48e0-9a8b-53270baf04e8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on compensatory evolution caveat (C54, C56). Both evaluations rated SUPPORTED. OpenEval noted this strengthens rather than weakens epistasis claims. Peer reviewers accepted this caveat without challenge, recognizing it supports the main conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "15f6ba87-960e-4392-b303-f7bc6ab56159",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "8edc5514-100d-4d52-9423-64d36ae330aa",
+      "peer_result_id": "1b603839-c774-4a4d-b010-0b820ce25dd6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on gene selection methodology (C65-C67). Both evaluations rated SUPPORTED. OpenEval found the statistical approach appropriate with reasonable FDR threshold. Peer reviewers did not challenge the methodology for selecting haploinsufficient genes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "69af980f-1a98-4ea4-a150-1f36efaa731e",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "168a16aa-4d6c-4f58-93a6-3e191c9b0b24",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated justification for using transcriptome as proteome proxy (C57-C59) as SUPPORTED based on appropriate citations. No corresponding peer review evaluation found addressing this methodological justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "d2f10dfb-ec7c-4bba-a9f8-4f34ee2bde1d",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "e9f394b3-5f60-488a-83d6-37ccada1a263",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background knowledge and framing (C1-C2, C17-C20) as SUPPORTED. No corresponding peer review evaluation found, as peer reviewers focused on novel findings rather than established background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "3da7a75a-3374-48b0-aea9-87b93176e49a",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "a9b8c372-ba6a-45dc-a69e-0f2549ad422f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated literature context claims (C29-C34) as SUPPORTED based on appropriate citations. No corresponding peer review evaluation found addressing these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    },
+    {
+      "id": "ea243753-b5a3-4e60-81be-e423c33b93cf",
+      "submission_id": "586b6d2d-400e-41fb-8ec0-68f04616cb4e",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "cd0884bb-569a-4b1e-8d1b-5936ac1dbecd",
+      "peer_result_id": "5ee4d13d-e56a-4c81-a4ac-20896f73de7a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval evaluated high-level summary claims (C4-C6) as SUPPORTED, grouping them separately from detailed epistasis results. Peer reviewers addressed these summary claims together with detailed epistasis findings (C3, C37-C39) in their evaluation of the main positive epistasis conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:29:38.319809Z"
+    }
+  ]
+}

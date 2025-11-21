@@ -1,0 +1,2451 @@
+{
+  "submission": {
+    "id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T18:48:09.112743Z",
+    "updated_at": "2025-11-21T18:48:09.112743Z"
+  },
+  "content": [
+    {
+      "id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "content_type": "manuscript",
+      "content_text": "# Pleiotropy increases parallel selection signatures during adaptation from standing genetic variation\n\n## Authors\n\n- Wei-Yun Lai<sup>1</sup> ([ORCID: 0000-0002-5101-8695](https://orcid.org/0000-0002-5101-8695))\n- Sheng-Kai Hsu<sup>1</sup> ([ORCID: 0000-0002-6942-7163](https://orcid.org/0000-0002-6942-7163))\n- Andreas Futschik<sup>3</sup>\n- Christian Schl\u00f6tterer<sup>1</sup> ([ORCID: 0000-0003-4710-6526](https://orcid.org/0000-0003-4710-6526)) \u2020\n\n### Affiliations\n\n1. Institut f\u00fcr Populationsgenetik, Vetmeduni Vienna Vienna Austria\n2. Vienna Graduate School of Population Genetics, Vetmeduni Vienna Vienna Austria\n3. Department of Applied Statistics, Johannes Kepler University Linz Linz Austria ([ROR:052r2xn60](https://ror.org/052r2xn60))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe phenomenon of parallel evolution, whereby similar genomic and phenotypic changes occur across replicated pairs of populations or species, is widely studied. Nevertheless, the determining factors of parallel evolution remain poorly understood. Theoretical studies have proposed that pleiotropy, the influence of a single gene on multiple traits, is an important factor. In order to gain a deeper insight into the role of pleiotropy for parallel evolution from standing genetic variation, we characterized the interplay between parallelism, polymorphism, and pleiotropy. The present study examined the parallel gene expression evolution in 10 replicated populations of Drosophila simulans, which were adapted from standing variation to the same new temperature regime. The data demonstrate that the parallel evolution of gene expression from standing genetic variation is positively correlated with the strength of pleiotropic effects. The ancestral variation in gene expression is, however, negatively correlated with parallelism. Given that pleiotropy is also negatively correlated with gene expression variation, we conducted a causal analysis to distinguish cause and correlation and evaluate the role of pleiotropy. The causal analysis indicated that both direct (causative) and indirect (correlational) effects of pleiotropy contribute to parallel evolution. The indirect effect is mediated by historic selective constraint in response to pleiotropy. This results in parallel selection responses due to the reduced standing variation of pleiotropic genes. The direct effect of pleiotropy is likely to reflect a genetic correlation among adaptive traits, which in turn gives rise to synergistic effects and higher parallelism.\n\n## Introduction\n\nDistinguishing selection from stochastic changes continues to be a major challenge in evolutionary research. The evidence for selection mostly comes from parallel evolution, where similar genes, traits, or functions are identified in replicate populations exposed to similar environments (Colosimo et al., 2005; Westram et al., 2021; van der Zee et al., 2022; Zong et al., 2021). Given that non-parallel evolution does not preclude the possibility of selection (Barghi et al., 2019; Barghi et al., 2020), there has been a sustained interest in elucidating the factors that influence the extent of genetic parallelism (i.e. how similar is the response of the same gene to selection in multiple populations from the same/similar ecological niche(s)) (Bolnick et al., 2018).\n\nIt has been proposed that the degree of pleiotropy, the number of traits affected by a single gene, maybe a potential factor associated with parallelism (Bolnick et al., 2018; Conte et al., 2015; Rennison and Peichel, 2022; Stern, 2013). The majority of hypotheses regarding the influence of pleiotropy on parallel selection responses are (implicitly) related to the ideas of Fisher, 1930, later modified by Orr, 2000, focusing on the cost of pleiotropy. This concept posits that any new mutation in a pleiotropic gene results in a shift in trait values away from their optimum across multiple traits. New mutations in highly pleiotropic genes are more likely to have negative fitness effects than mutations in less pleiotropic genes as more traits are displaced from their optima. This \u2018cost of pleiotropy\u2019 model (Orr, 2000) is evidenced by the lack of sequence divergence observed in genes with a higher level of pleiotropy (Fraser et al., 2002; Hahn and Kern, 2005; Masalia et al., 2017; Josephs et al., 2017). Consequently, it can be postulated that less pleiotropic genes are more likely to contribute to adaptation over long evolutionary timescales, given that they have a higher probability of accumulating beneficial genetic variants. This results in a more parallel selection response in different populations/species (Hansen, 2003).\n\nFisher\u2019s model of pleiotropy is simplistic in its assumption of uncorrelated traits and uncorrelated selection. It has been proposed that the influence of pleiotropy on the selection response strongly depends on the genetic correlation of the affected traits and the underlying fitness function which connects phenotypic values with fitness (Blows, 2007; Lande and Arnold, 1983; Lande, 1979). If the fitness effects of the affected traits are positively correlated (synergistic pleiotropy), this may result in stronger net selection (Thorh\u00f6lludottir et al., 2023) and consequently in more parallel selection signatures (MacPherson and Nuismer, 2017). This implies that the correlation of fitness effects determines whether pleiotropy increases or decreases parallel selection signatures.\n\nThe impact of pleiotropy on parallel evolution has typically been considered in the context of long-term adaptation via de novo mutations. However, many studies of parallel evolution have focused on short-term adaptation [e.g. Rivas-S\u00e1nchez et al., 2023; Huang et al., 2021; Heckley et al., 2022; Fischer et al., 2021; Elmer et al., 2014; Butlin et al., 2014; Hsu et al., 2021; Otte et al., 2021], where standing genetic variation plays a more significant role in selection responses than de novo mutations. Nevertheless, it remains unclear whether a similar impact of pleiotropy on evolutionary parallelism is to be expected for standing genetic variation.\n\nIndeed, the empirical evidence regarding the role of pleiotropy for intra-specific adaptive responses is somewhat inconclusive. A gene expression study in European grayling populations adapted to different temperature regimes provided compelling evidence for the constraining effect of pleiotropy (Papakostas et al., 2014), which supports the cost of complexity concept. A comparison of gene expression changes in natural Drosophila populations along a temperature cline and populations evolved in the laboratory to different temperature regimes demonstrated the importance of correlated fitness effects (Thorh\u00f6lludottir et al., 2023). A direct test of the influence of pleiotropy on parallel evolution was conducted on 19 independent contrasts of stickleback populations (Rennison and Peichel, 2022). The authors discovered that pleiotropic genes were more likely to exhibit parallel adaptation signatures (Rennison and Peichel, 2022), thereby supporting the importance of synergistic pleiotropy.\n\nPrevious studies on pleiotropy and parallelism did not account for polymorphism (standing genetic variation), which plays a central role in selection responses during short-term adaptation. Although natural variation provides the basis for adaptive responses, it is not well-documented how ancestral variation (polymorphism) determines the level of genetic parallelism during short-term adaptation in replicate populations. Moreover, polymorphism of a gene is also affected by its pleiotropic level while the expectations regarding the influence of pleiotropy on the extent of polymorphism varies. The cost of complexity predicts that pleiotropic genes with uncorrelated fitness effects will be subject to stronger purifying selection, which will result in reduced polymorphism. In the case of multiple selected traits with aligned fitness effects, synergistic pleiotropy may facilitate the occurrence of selective sweeps, and thereby reducing variation in pleiotropic genes. Alternatively, it may be possible that once pleiotropic alleles have been established in a population, their multivariate fitness effects lead to a balanced polymorphism, which in turn maintains higher levels of variation. Empirical studies have observed a negative correlation between the level of pleiotropy and sequence/expression polymorphism (Lemos et al., 2004; M\u00e4hler et al., 2017). This suggests that pleiotropy may preferentially reduce variation, either by purifying selection, synergistic effects, or a combination of both.\n\nIn this study, we employed gene expression analysis to investigate the interplay between polymorphism and pleiotropy on the degree of parallelism of adaptive responses. We assessed the selective response by measuring gene expression differences between populations from different environments, a widely employed approach [e.g. Nourmohammad et al., 2017; Hsu et al., 2020; Yu et al., 2023; Velotta et al., 2017; Tang et al., 2017; O\u2019Neil et al., 2014; Margres et al., 2017]. Specifically, we compared gene expression in the ancestral D. simulans population with that of flies that had evolved for 100 generations in a novel hot temperature regime. To infer parallel evolution, the gene expression change was measured in 10 replicate populations. By focusing on the evolutionary response, we circumvent the challenge of connecting the phenotype to an unknown fitness landscape. Furthermore, we take advantage of well-established pleiotropy estimates (McShea, 2000; Proulx et al., 2005; He and Zhang, 2006; Mank et al., 2008) to evaluate the influence of pleiotropy on parallel gene expression evolution. The natural variation in gene expression was determined by examining the differences in expression levels among individual flies from the ancestral D. simulans population.\n\nWe observed significant interplays between pleiotropy, ancestral variation, and parallel selection responses among genes. The parallelism of gene expression evolution is positively associated with pleiotropy but negatively associated with the ancestral variation in gene expression. Given that pleiotropy was also negatively associated with ancestral variation, it is crucial to differentiate between statistical causality and correlation. Causal analysis revealed that pleiotropy affects parallel evolution both directly and indirectly via ancestral variation. It is likely that the indirect effects operate via the reduction of ancestral variation in pleiotropic genes. The direct effects of pleiotropy on parallelism are probably best explained by synergistic pleiotropy which results in a stronger selection response.\n\n## Methods\n\n### Estimating gene pleiotropy\n\nWe approximated the pleiotropy of each gene with two alternative estimators, network connectivity, and tissue specificity (\u03c4).\n\n\u03c4 indicates how specific the expression of a gene is across different tissues. \u03c4 was estimated for each gene using the adult male expression profiles on flyatlas2 (Leader et al., 2018) as: $\\tau=\\frac{\\sumi[1\u2212\\frac{geneexpression_{i}}{geneexpression_{max}}]}{N\u22121}$, where N is the number of tissues examined and i indicates each of them (Dean and Mank, 2016). If a gene is only expressed in one tissue, \u03c4 will equal to 1 while it equals 0 when a gene is expressed at the same level across all tissues. The relationship between \u03c4 and pleiotropy is based on the idea that the genes expressed in many tissues are more likely to affect multiple traits than genes expressed in fewer tissues (McShea, 2000; Mank et al., 2008; Allen et al., 2018; Watanabe et al., 2019). Hence, we used 1-\u03c4 to indicate the pleiotropic effect of a gene.\n\nNetwork connectivity has also been used as a proxy for pleiotropy, as more connected genes are likely to be more pleiotropic (Josephs et al., 2017; Proulx et al., 2005; He and Zhang, 2006; H\u00e4m\u00e4l\u00e4 et al., 2020a). We used published information about the transcriptional regulatory network of Drosophila, which was inferred from several sources, including genome-wide chromatin immuno-precipitation, conserved transcription factor binding motifs, gene expression profiles across different development stages, and chromatin modification profiles among several cell types (Marbach et al., 2012). The connectivity for each gene was estimated as the sum of adjacencies between the focal gene and other genes in the network.\n\nThe significant positive correlation (rho = 0.54) between 1-\u03c4 and network connectivity suggests that both estimates capture a similar, but not identical, signature of the pleiotropic properties among the genes (Appendix 1\u2014figure 1).\n\nWe note that approximating pleiotropic effects in D. simulans by using data-rich estimates from the close relative Drosophila melanogaster could potentially compromise the interpretability of our results. However, comparative analyses of tissue-specific gene expression have shown an extremely high consistency across species in animals (Mao et al., 2024) and plants (Davidson et al., 2012; Julca et al., 2021). Hence, these data suggest that at least for tissue specificity, one of the pleiotropy measures used, estimates from one species can be safely used for close relatives.\n\n### Experimental evolution and common garden experiment\n\nThe procedures of the evolution and common garden experiments were described in Barghi et al., 2019; Hsu et al., 2020; Jak\u0161i\u0107 et al., 2020. Briefly, 202 isofemale lines collected from Florida, USA were used to constitute 10 outbred Drosophila simulans populations, which have been exposed for more than 100 generations to a laboratory experiment at 28/18 \u00b0C with 12 hr light/12 hr dark photoperiod. The census population size of each replicate population is 1000\u20131250 adult flies.\n\nEach founder isofemale line was maintained at a small population size (typically less than 50 individuals) at 18 \u00b0C\u2009on standard laboratory food. Adaptation to the laboratory environment with the residual heterogeneity or de novo mutation is unlikely due to the small effective population size during the maintenance of each line (Barghi et al., 2019). This is supported by the observation that 50 generations of maintenance as isofemale lines does not result in significant genetic differentiation from the ancestral population (Nouhaud et al., 2016). Furthermore, mutations that occur in the laboratory are mostly recessive (Charlesworth and Charlesworth, 2010), and the effects are likely to be masked because, after two generations of random mating during common garden maintenance, most individuals will be heterozygous for isofemale line-specific variants.\n\nThe collection of samples for RNA-Seq was preceded by two generations of common garden experiments (CGE). As described previously (Barghi et al., 2019; Hsu et al., 2020; Jak\u0161i\u0107 et al., 2020), at generation 103 of the evolution experiment, five biological replicates of reconstituted ancestral populations were generated by pooling five mated females from 184 founder isofemale lines (Nouhaud et al., 2018) and reared together with 10 independently evolved populations for two generations with controlled egg density (400 eggs/bottle) at the same temperature regime as in the evolution experiment. Three biological replicates were included for each independently evolved population (each biological replicate was cultivated separately for the two generations of the common garden). From each biological replicate, a sample of 50 5-d-old adult males was collected (Figure 1a).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/102321/elife-102321-fig1-v1.jpg)\n\n**Figure 1.:** (a) Experimental Evolution: ten replicated populations seeded from one common founder population have been evolving for >100 generations in a hot laboratory environment at 18 and 28\u00b0C. Common Garden Experiment: at the 103rd generation of the evolution experiment, the ten evolved populations (each with three biological replicates) were maintained together with the reconstituted ancestral population (with five biological replicates) for two generations in the same environment as in the evolution experiment. After two generations in the common garden, 50 males from each biological replicates were pooled and subjected to RNA-Seq. (b) Replicate frequency spectrum. Number of populations (x-axis) in which a given gene experienced a significant change in gene expression. The y-axis indicates the number of genes in each category. Most of the genes experienced a significant change in gene expression in a few evolved populations while much fewer genes were significant in all 10 populations. This pattern suggests that the parallelism in gene expression evolution differs across genes. (c) The distribution of gene expression evolution parallelism (log(1 /F)) across genes. Larger log(1 /F) values indicate more parallel evolution of a gene. The exhibit variation suggests that genes varied in their parallelism of its expression evolution.\n\n### Quantifying the evolutionary parallelism in gene expression across ten replicate populations\n\nThe raw RNA-Seq count table of five replicates of the reconstituted ancestral population and 10 independently evolved populations, each with three biological samples, was taken from Jak\u0161i\u0107 et al., 2020. The raw read counts of each gene were normalized with the TMM method implemented in edgeR (Robinson et al., 2010). Only genes with at least 0.1 normalized counts per million base (CPM) across all samples were considered for further analysis. Because we are interested in the evolutionary response in each independently evolved population, we contrasted the three biological samples from each evolved population to the five biological samples from the ancestral population. The differential expression (DE) analysis was done separately in each of the ten evolved populations. For DE analysis, we utilized negative binomial generalized linear modeling implemented in edgeR to fit the expression to the model $Y=E+\\epsilon$, in which Y stands for gene expression, E is the effect of evolution and $\\epsilon$ is the random error. Likelihood ratio tests were performed to test the effect of evolution. p-values were adjusted using Benjamini-Hochberg false discovery rate (FDR) correction (Benjamini and Hochberg, 1995). After we identified DE genes in each evolved population, we constructed a replicate-frequency spectrum (RFS; Barghi et al., 2019). We considered genes with significant changes in the same direction in at least three evolved populations as putatively adaptive genes.\n\nTo quantify the degree of parallel gene expression evolution, we calculated the expression changes in response to evolution (log2FC; fold change in expression between ancestral and evolved sample; see below) of each putatively adaptive gene (n=1775) in each evolved sample.\n\n$$\nlog_{2}\u2061FC=log\u2061(\\frac{y_{evo}}{y_{anc}\u00af}),\n$$\n\nwhere $y_{evo}$ is the expression value (CPM) per gene per evolved sample, and $y_{anc}\u00af$ is the overall mean expression value (CPM) per gene across five ancestral samples.\n\nWe calculated the ratio of between-evolution population variation (MSpop) and residual (MSe) among the expression changes (log2FC), which is denoted as F.\n\n$$\nF=\\frac{MS_{pop}}{MS_{e}}\n$$\n\n\n\n$$\nMS_{pop}=\\frac{\\sumi=110(X\u00af_{i}\u2212X\u00af)^{2}}{10\u22121}\n$$\n\n\n\n$$\nMS_{e}=\\frac{\\sumi=110\\sumj=13(X_{ij}\u2212X\u00af_{i})^{2}}{30\u221210}\n$$\n\nWhere $X_{ij}$ represent the log2FC value for the jth biological sample in the ith evolution population. i=1, 2, \u2026,10, j=1, 2, 3.\n\nAs F reflects the heterogeneity of the evolutionary response for a gene across 10 evolutionary populations, we used the reciprocal of F (i.e. 1 /F) to quantify the degree of parallelism in gene expression evolution.\n\n### Estimating gene expression variation in an outbred ancestral population\n\nThe variation in expression of each gene within an outbred ancestral population was estimated from 20 adult males sampled from an outbred ancestral population (Lai and Schl\u00f6tterer, 2022). We distinguished biological variation and measurement error of each gene using the statistical method implemented in edgeR Robinson et al., 2010, where the biological variance across individual (biological coefficient of variation; BCV; defined in Robinson et al., 2010) of each gene can be estimated (tag-wised dispersion). BCV2 was used to represent the expression variance relative to the mean of each gene within the population. To illustrate that the gene expression variation is not explained by random measurement error, we took the data from two ancestral population replicates, which are considered to be genetically identical, and calculated BCV2 of expression levels across individuals for each population replicates separately. We found that both mean and variance in expression for each gene were similar in two ancestral population replicates (mean: rho >0.99; variance: rho = 0.8, p-value <2.2e-16), suggesting that sequencing noise does not mask the biological variability.\n\n### Causal analysis\n\nTo infer the causal relationship between three factors: pleiotropy (Pl), ancestral variation (A), and parallelism (Pa), we applied causal analysis. The causal analysis is built upon a previously published statistical framework (Schadt et al., 2005). We consider five possible causal relationships between pleiotropic effects, ancestral variation, and parallelism (Figure 5). Our goal is to determine which of the five models is best supported by the data. The selection is based on Bayesian information criteria (BIC) which are calculated from the maximum likelihood of the respective models. The likelihood of each model is represented as:\n\n$$\nL(ModelI)=p(Pa|A)p(A|Pl)p(Pl)\n$$\n\n\n\n$$\nL(ModelII)=p(Pa|Pl)p(A|Pl)p(Pl)\n$$\n\n\n\n$$\nL(ModelIII)=p(Pa|A,Pl)p(A|Pl)p(Pl)\n$$\n\n\n\n$$\nL(ModelIV)=p(Pa|A,Pl)p(A)p(Pl)\n$$\n\n\n\n$$\nL(ModelV)=p(Pa)p(A)p(Pl)\n$$\n\np(Pl) is the probability distribution of the pleiotropic effect. To utilize the normal probability density function in the derivation of the likelihoods for each joint probability distribution, we transformed the random variables Pa and A to be normally distributed (natural log transformation on 1 /F and BCV2). The exact forms of these likelihoods are given in the Appendix.\n\nFor each model, we maximized the likelihood and estimated the parameters using standard maximum likelihood methods. Based on the maximum likelihood, we computed the BICs for each model; the model with the smallest BIC is the one best supported by the data.\n\nBIC is calculated as:\n\n$$\nBIC=\u22122ln\u2061(L_{i})+k_{i}ln\u2061(n)\n$$\n\nWhere $L_{i}$ is the likelihood for model I-V, $k_{i}$ is the corresponding number of free parameters and n is the total number of putatively selected genes. The analysis was performed independently on two measures of pleiotropy (tissue specificity and network connectivity).\n\n### Estimating the sizes of direct and indirect pleiotropic effects on parallelism\n\nWe used path analysis to estimate the effect sizes of direct and indirect pleiotropic effects on parallelism (Wright, 1920). We standardized all three transformed variables (Parallelism (Pa), Pleiotropy (Pl), and Ancestral variation (A); see Appendix) by subtracting the mean and dividing by the standard deviation for the following analysis.\n\nFirst, we fit the regression model for all three variables across all putatively adaptive genes:\n\n$$\ny_{Pa}=\\beta_{1}x_{A}+\\beta_{2}x_{Pl}+\\epsilon\n$$\n\nwhere $y_{Pa}$ stands for parallelism, $x_{A}$ is ancestral variation, $x_{Pl}$ is pleiotropy measure and $\\epsilon$ is a random error. $\\beta_{1}$ and $\\beta_{2}$ are the regression coefficients corresponding to $x_{A}$ and $x_{Pl}$, respectively.\n\nSecond, we fit another regression model for ancestral variation and pleiotropy measure across all putatively adaptive genes:\n\n$$\ny_{A}=\\beta_{3}x_{Pl}+\\epsilon\n$$\n\nwhere $y_{A}$ stands for ancestral variation, $x_{Pl}$ is pleiotropy measure and $\\epsilon$ is a random error. $\\beta_{3}$ is the regression coefficient corresponding to $x_{pl}$.\n\nThe sizes of the direct effect of pleiotropy on parallelism will be $\\beta_{2}$. The size of the indirect effect of pleiotropy on parallelism via ancestral variation will then be the product of $\\beta_{1}\\times\\beta_{3}$.\n\nThe analysis was performed independently on two different measures of pleiotropy.\n\n### Computer simulations\n\nIn our interpretation of the indirect effect of pleiotropy on parallelism, we assumed that ancestral variation in gene expression is negatively correlated with its parallel evolution. Because this has not been previously demonstrated, we used computer simulations to illustrate how the level of standing genetic variation impacts the parallelism of adaptive responses after a shift in trait optimum. For simplicity, we considered four redundant genes equally contributing to a fitness-associated trait. The phenotype (expression level) of each gene is controlled by a different number of genetic loci (5, 15, 30, and 50) with equal effect. The underlying assumption is that these four genes are redundant in terms of their fitness effect during the experimental evolution, but they exhibit different levels of pleiotropy and thus have historically experienced different levels of purifying selection, leaving different levels of genetic variation at the start of the experiment. Using mimicrEE2 (Vlachos and Kofler, 2018), we evolved 10 replicate populations (N=300) derived from the same set of 189 natural Drosophila haplotypes (Barghi et al., 2019) in the same selection regime with a shift in trait optimum of one standard deviation relative to the ancestral phenotypic distribution. After 100 generations, we determined the evolutionary parallelism of the four genes using the same approach as for the empirical data. Each simulation was repeated 100 times and one out of four genes was randomly picked from each simulation run to generate Figure 4 (i.e. we estimated variance in the ancestral population and parallelism for the evolved replicate populations).\n\n## Results\n\n### The parallelism of expression evolution differs among genes\n\nWe investigated the degree of parallelism in gene expression evolution, using an RNA-Seq dataset from an experimental evolution study in which 10 replicated populations with the same genetic variation were exposed to the same environment for more than 100 generations (Hsu et al., 2021; Jak\u0161i\u0107 et al., 2020; Lai and Schl\u00f6tterer, 2022; Figure 1a). While previous studies have focused on the shared parallel response across replicated populations (Hsu et al., 2021; Jak\u0161i\u0107 et al., 2020; Lai and Schl\u00f6tterer, 2022), we re-analyzed the RNA-Seq data to quantify the degree of evolutionary parallelism across different genes. We identified 1775 putatively selected genes with a significant change in gene expression in the same direction in response to the novel environment in at least three populations. This conditioning on multiple replicate populations with a significant change in the same direction reduces false positives due to drift (Rennison and Peichel, 2022; Bohut\u00ednsk\u00e1 et al., 2021). Relaxing the threshold of responding populations provides qualitatively similar results.\n\nBarghi et al., 2019 introduced the replicate frequency spectrum to describe the parallel genomic selection response in replicate populations. The replicate frequency spectrum of DE genes shows considerable heterogeneity among populations, with many genes displaying significant gene expression changes only in a few populations (Figure 1b). The replicate frequency spectrum is strongly influenced by the significance threshold used and provides an incomplete quantitative measure of parallelism. To obtain a more quantitative measure of parallelism, we evaluated the between-population variation in the evolutionary response (log2FC) of each putatively adaptive gene (n=1775) while controlling for measurement error (F). The parallelism of evolution for each gene is then quantified as 1 /F (Figure 1b; see Materials and Methods). A higher value of 1 /F indicates a more parallel evolutionary response among replicated populations (Appendix 1\u2014figure 2). Importantly, the measure of parallelism varies between genes (Figure 1c) and is positively correlated with the number of populations in which a significant change in gene expression is observed for each gene (Appendix 1\u2014figure 3).\n\n### Pleiotropy is positively associated with the degree of parallelism in gene expression evolution\n\nPleiotropy is one of the factors that influence the degree of parallel evolution (Bolnick et al., 2018; Conte et al., 2015; Rennison and Peichel, 2022; Stern, 2013). Therefore, we tested whether and how the pleiotropic effect of a gene influences the degree of parallelism of its expression evolution in a new environment. We correlated two different measures of pleiotropy (1-\u03c4 (tissue specificity) and network connectivity; see materials and methods) of each putatively adaptive gene (n=1775) with the parallelism of its evolutionary responses (1 /F). We observed a significant positive correlation between the parallelism and the degree of pleiotropy, (rho = 0.26, p-value <2.2e-16 for 1-\u03c4 and rho = 0.11, p-value <5.6e-07 for network connectivity) (Figure 2 and Appendix 1\u2014figure 4a). This suggests that pleiotropy may enhance parallel changes in gene expression during evolution.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/102321/elife-102321-fig2-v1.jpg)\n\n**Figure 2.:** The distribution of evolution parallelism (log(1 /F)) of putatively adaptive genes (n=1775) is shown in boxplots binned by their strength of pleiotropy (1-$\\tau$). Overall, the strength of pleiotropy was positively correlated with evolution parallelism (spearman correlation coefficient; $\u03c1$=0.26; p-value <2.2e-16).\n\n### Pleiotropy constrains the ancestral (natural) variation in gene expression\n\nThe negative effect of pleiotropy on genetic variation over longer time scales, mostly between species, is well documented (Fraser et al., 2002; Hahn and Kern, 2005; Masalia et al., 2017; Josephs et al., 2017), but it is not yet clear whether the same effect is seen for adaptation from standing genetic variation. We reconstituted the ancestral population from 189 isofemale lines (Lai and Schl\u00f6tterer, 2022) and estimated the expression variance (BCV2; see materials and methods) of each putatively adaptive gene (n=1775) in two replicate sets of 20 individuals. Since the variance in gene expression is positively correlated with genetic variation in cis-regulatory regions (H\u00e4m\u00e4l\u00e4 et al., 2020b) and the heritability of gene expression is high (Ayroles et al., 2009), we assumed that the observed variation in gene expression has a genetic basis, rather than being noise (see discussion). We observed a highly significant negative correlation between the level of pleiotropy and the magnitude of ancestral variation in gene expression (Figure 3a and Appendix 1\u2014figure 4b; rho = \u22120.34, p-value <2.2e-16 for 1-$\\tau$ and rho = \u22120.37, p-value <2.2e-16 for network connectivity). To exclude that this correlation was driven by our filtering for significant expression changes in at least three populations, we repeated these analyses with all genes (n=9,882) and also observed a significant correlation (rho = \u22120.45, p-value <2.2e-16 for 1-$\\tau$ and rho = \u22120.38, p-value <2.2e-16 for network connectivity, data not shown). Hence, we suggest that the negative relationship between pleiotropy and polymorphism/diversity (Lemos et al., 2004; M\u00e4hler et al., 2017) (i.e. reduced variants, lower frequencies, and/or lower allelic effects) can be extended to gene expression.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/102321/elife-102321-fig3-v1.jpg)\n\n**Figure 3.:** Association between ancestral variation in gene expression with the strength of pleiotropy (1- $\\tau$) (a) and with the evolution parallelism (b).(a) The distribution of gene expression variation in the ancestral population (log (BCV2)) of putatively evolved genes (n=1,775) is shown in boxplots binned by their strength of pleiotropy (1-$\\tau$). Overall, the strength of pleiotropy was negatively correlated with ancestral variation in gene expression (spearman correlation coefficient; $\u03c1$=\u22120.34, p-value <2.2e-16). (b) The distribution of evolutionary parallelism (log(1 /F)) of putatively adaptive genes (n=1775) is shown in boxplots binned by their strength of ancestral variation. The strength of parallelism is negatively correlated with the ancestral variation in gene expression (spearman correlation coefficient; \u03c1=\u22120.22, p-value <2.2e-16).\n\n### Evolutionary parallelism is negatively associated with ancestral variation\n\nFor a better understanding of the factors determining parallel evolution, we examined the influence of ancestral variation in gene expression on the parallel evolution of gene expression. We observed a significant negative correlation between ancestral variation and parallelism of the evolutionary response (rho = \u22120.22, p-value <2.2e-16; Figure 3b). We suggest that this pattern could be explained by genetic redundancy (Barghi et al., 2019; L\u00e1ruson et al., 2020), which describes the phenomenon that a polygenic trait can shift its phenotypic value through different combinations of contributing loci: When the diversity of the contributing loci is reduced (either through fewer loci, lower ancestral frequencies or smaller variation in effect size), fewer combinations of the contributing loci are available for adaptation, resulting in more parallel adaptive responses. To confirm this, we performed computer simulations of replicated polygenic adaptation and found that lower ancestral phenotypic (i. e. expression) variation leads to more parallel trait evolution (Figure 4). Hence, that natural variation in the ancestral population could be one of the factor determining the parallel adaptive response in replicate populations. Although we focused on the phenotypic response to match gene expression, it is interesting to note that a similar result was obtained for parallelism at the genetic level with different levels of standing genetic variation (Thompson et al., 2019). If pleiotropy reduces variation, the positive correlation between pleiotropy and parallelism may be an indirect (correlative) effect, rather than a direct consequence of pleiotropy.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/102321/elife-102321-fig4-v1.jpg)\n\n**Figure 4.:** Computer simulations assume a fitness-related trait determined by the expression of four genes. The expression of these four genes is determined by a different number of genetic loci, reflecting the influence of pleiotropy on ancestral genetic variation. A shift in trait optimum was used to illustrate the connection between ancestral variation in expression (x-axis) and parallelism of expression change across ten evolved populations (y-axis). The negative correlation between them (\u03c1 = \u20130.26, p-value <1.77e-07) suggests that the genes with less ancestral variation are resulting in more parallel responses.\n\n### Testing causality\n\nOur previous analyses indicated that parallelism is affected by pleiotropy and ancestral variation. Because pleiotropy is negatively correlated with ancestral variation for both pleiotropy measures (Figure 3a and Appendix 1\u2014figure 4b), it is not clear whether pleiotropy affects parallelism directly or indirectly through the negative correlation with ancestral variation. We used causal analysis, which is based on a Bayesian statistical framework (Schadt et al., 2005), to disentangle the causal relationship between the three different parameters. Since the directionality of pleiotropic effects on ancestral variation has been previously demonstrated, and ancestral variation is unlikely to influence the pleiotropy of a gene, we considered five possible causal relationships between pleiotropic effects, ancestral variation, and parallelism (Figure 5). In the first model, parallelism is determined by ancestral variation, which is shaped by pleiotropic, but pleiotropy has no direct effect on parallelism. In model II, the pleiotropic effect affects ancestral variation and parallelism independently, but ancestral variation has no causal effect on parallelism. In model III, pleiotropy affects both ancestral variation and parallelism, and ancestral variation also determines parallelism. In model IV, parallelism is determined by ancestral variation and pleiotropy, but pleiotropic effects are assumed to have no effect on the ancestral variation. This serves as a null model to confirm the indirect effect of pleiotropy on parallelism via ancestral variation. We also add a global null model with no correlation between these three factors (model V, Figure 5). The analysis was performed independently for two measures of pleiotropy (tissue specificity and network connectivity).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/102321/elife-102321-fig5-v1.jpg)\n\n**Figure 5.:** Five possible relationships between pleiotropic effects, ancestral variation, and evolutionary parallelism. $L$ denotes the likelihood of each model given the data. P is the probability or conditional probability of the measurements for each gene; Pa is the parallelism level and A is the level of ancestral variation in gene expression. Pl is the pleiotropic effects. See materials and methods for a more detailed description.\n\nFor tissue specificity, our data were better explained by model III (i.e. model III has the lowest BIC, Table 1), suggesting that both direct and indirect effects of pleiotropy determine the degree of parallelism of adaptive gene expression evolution. On the other hand, when pleiotropy was estimated by network connectivity, model I had a slightly lower BIC than model III (Table 1). Thus, our causal analysis does not provide evidence for a direct effect of network connectivity. We further quantified the strength of the direct and indirect effects of pleiotropy on parallelism using a path analysis (see materials and methods). The path analysis confirmed the significant direct effect of tissue specificity, but network connectivity has no statistically significant direct effect on the parallelism of gene expression evolution (Table 2, Appendix 1\u2014table 1). Although the relevance of the direct effects of pleiotropy on parallel gene expression evolution differs for the two pleiotropy estimates, the similarity of the indirect effect sizes for both pleiotropy measures is striking (Table 2). Taken together, these results suggest that pleiotropy may enhance the parallel evolutionary response of gene expression directly and indirectly through its influence on ancestral variation.\n\n**Table 1.**\n Bayesian Information Criteria (BIC) value for Model I-V.The model with the smallest BIC is the one best support by the data.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Model</th>\n      <th>BIC value (Network connectivity)</th>\n      <th>BIC value (Tissue specificity)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>I</td>\n      <td>9258.395</td>\n      <td>8958.125</td>\n    </tr>\n    <tr>\n      <td>II</td>\n      <td>9316.852</td>\n      <td>8972.626</td>\n    </tr>\n    <tr>\n      <td>III</td>\n      <td>9264.769</td>\n      <td>8939.342</td>\n    </tr>\n    <tr>\n      <td>IV</td>\n      <td>9490.017</td>\n      <td>9162.090</td>\n    </tr>\n    <tr>\n      <td>V</td>\n      <td>9550.309</td>\n      <td>9247.540</td>\n    </tr>\n  </tbody>\n</table>\n\n**Table 2.**\n The size of direct and indirect pleiotropic effects on the evolutionary parallelism.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>Direct effect</th>\n      <th>Indirect effect</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>1-\u03c4</td>\n      <td>0.127</td>\n      <td>0.055 (\u22120.181, \u20130.332) *</td>\n    </tr>\n    <tr>\n      <td>Network connectivity</td>\n      <td>0.026</td>\n      <td>0.068 (\u22120.210, \u20130.337) *</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Coefficient estimates (\u03b22,\u03b23) whose product provides the indirect effect._\n\n## Discussion\n\nThis study examined the influence of pleiotropy on the parallelism of the adaptive response from standing genetic variation. By examining the role of natural variation, which is important for parallelism of short-term evolution, we extended the scope of previous studies. Because differences in genetic background and selection strength among replicated populations cannot be controlled in natural populations and may affect the degree of parallelism, we relied on experimental evolution for our study. We took advantage of ten replicated populations that have evolved from the same genetic background in the same hot environment for more than 100 generations (Barghi et al., 2019).\n\nThe adaptive response during adaptation to the new hot temperature regime was measured by changes in gene expression. This approach has the advantage that pleiotropic effects and their associated fitness function, which are typically not known, are already included in the adaptive response. Furthermore, we were able to rely on two well-established measures of pleiotropy to study the interplay between parallelism and natural variation.\n\nA key finding of our study is that adaptation from standing genetic variation results in complex interplays between pleiotropy, ancestral variation, and parallelism. Of particular interest is the observed negative correlation between pleiotropy and ancestral variation in gene expression, which confirms previous observations (Lemos et al., 2004; M\u00e4hler et al., 2017). This suggests that the primary effect of pleiotropy is not to maintain variation. Rather, stronger purifying selection removes pleiotropic variants from the population, resulting in a reduced standing genetic variation. The reduced variation in more pleiotropic genes could reflect historical hard sweeps or purifying selection. A similar pattern is seen over longer evolutionary timescales: less sequence divergence in pleiotropic genes (Fraser et al., 2002; Hahn and Kern, 2005; Masalia et al., 2017; Josephs et al., 2017).\n\nAn important difference between adaptation from de novo mutations and standing genetic variation concerns the implications for parallel evolution. While pleiotropic genes are less likely to contribute to parallel evolution from de novo mutations (Bolnick et al., 2018), our results show that adaptation from standing genetic variation favors parallel selection responses of pleiotropic genes (Figure 2, Appendix 1\u2014figure 4a). It is important to note that many previous studies focused on sequence variation, whereas we used expression variation. While it is possible that these two types of variation behave differently, we do not believe that this is the case as sequence polymorphism and expression variation are correlated (Lawniczak et al., 2008). Furthermore, a recent study focusing on genomic changes (Rennison and Peichel, 2022) reached similar conclusions.\n\nA very important assumption in our interpretation is that differences in gene expression variation in the ancestral population reflect regulatory sequence polymorphism rather than noise. The high correlation in the variance of gene expression between two replicate groups of individuals indicates that our measures do not reflect technical noise but have a biological basis. However, stochastic fluctuations in gene expression have also been observed among cells in single-celled and multicellular organisms and the variance in gene expression differs among genes (Swain et al., 2002; Elowitz et al., 2002; Blake et al., 2003). In this case, the differences in gene expression variance are biological in nature, but not associated with sequence variation. We do not believe that variation in the control of gene expression levels among genes can explain our pattern because Drosophila is a multicellular organism and we used whole body RNA-Seq data for our analysis. Therefore, even if expression is controlled to different extents among genes, by averaging across multiple cells, this does not affect our results. The only scenario we can imagine in which gene expression noise could propagate across the many cells of a multicellular organism is that during early development, differences in gene expression of a key regulator could affect downstream gene expression throughout the entire organism. However, we do not think this is a likely scenario, especially in the light of previous results showing that genetic variation in cis-regulatory regions correlates with expression variation (H\u00e4m\u00e4l\u00e4 et al., 2020b). Furthermore, whole-body gene expression in Drosophila is highly heritable, suggesting that gene expression is not stochastic (Ayroles et al., 2009). Nevertheless, we would like to point out that our observations are valid irrespective of whether the correlation between parallelism and expression variation is the result of genetic polymorphism or genetic control of expression noise.\n\nBased on the significant correlation results, the question arose as to whether the positive correlation between pleiotropy and parallelism, is causal (direct effect) or merely correlational (indirect effect). Regardless of the measure of pleiotropy, our causal analysis showed a consistent indirect effect of pleiotropy on parallelism (Tables 1 and 2). The estimated indirect effects were very similar for both measures of pleiotropy (Table 2). This indirect effect of pleiotropy could be explained by the reduced variation in the expression of more pleiotropic genes in the ancestral population leading to a more parallel selection response of gene expression. For the direct effect, however, the results differed between the two measures of pleiotropy. Only tissue specificity had a significant direct effect, which was even larger than the indirect effect (Table 2). No significant direct effect was found for network connectivity. The discrepancy between the two measures of pleiotropy is particularly interesting given their significant correlation (Appendix 1\u2014figure 1). This suggests that both measures capture aspects of pleiotropy that differ in their biological implications. The direct effects of pleiotropy, most likely arise from the positively correlated fitness effects of non-focal traits (synergistic pleiotropy). The synergistic pleiotropic effects result in a stronger fitness advantage, which translates into a more parallel selection response - as previously shown (MacPherson and Nuismer, 2017). Given that temperature is one of the most important abiotic factors, it is expected that positive genetic correlations between temperature-adaptive traits have been selected over long evolutionary timescales, probably prior to the speciation of D. simulans. Thus, it is conceivable that positive pleiotropy for temperature adaptation-related traits is common and thus determines the positive contribution of pleiotropy to the parallel evolution observed here.\n\nWe focused our analysis on genes that exhibited evidence of adaptive responses, defined as significant changes in the same direction across at least three populations. This approach allowed us to investigate the extent of parallel adaptive responses and how pleiotropy contributes to variation in parallelism among genes. Interestingly, when comparing pleiotropy between DE genes (those showing adaptive responses) and non-DE genes (those that did not change their response during evolution), we observed significantly higher pleiotropy in the non-DE gene group (Appendix 1\u2014figure 5). This finding suggests that extremely high levels of pleiotropy may constrain evolutionary responses. Overall, the pattern of increased pleiotropy associated with evolutionary parallelism supports the idea that low to intermediate levels of pleiotropy are more favorable for adaptation (Rennison and Peichel, 2022; Frachon et al., 2017).\n\nIn a concluding remark, we would like to emphasize that although pleiotropy and ancestral variation were found to be significantly associated with the degree of parallelism of gene expression evolution, it is likely that additional factors also contribute. For example, diminishing return epistasis, population size (drift), and the contribution of gene expression to the selected traits may also affect the parallelism of gene evolution. Further investigation of other potential factors will continue to advance our understanding of parallelism and the predictability of evolution.\n",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Frank Chan, University of Groningen Netherlands\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.102321.3.sa0](https://doi.org/10.7554/eLife.102321.3.sa0)\n\nThis study makes the important finding that pleiotropy is positively associated with parallelism of evolutionary responses in gene expression. This finding, if true, runs counter to current expectations in the field. The analysis uses state-of-the art experimental evolution approach to study the genetic basis of adaptation of Drosophila simulans to a hot environment. Although the experimental results are convincing, the theoretical model is incomplete, due to several unusual assumptions. It remains to be seen whether the main conclusion can be replicated in other contexts.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.102321.3.sa1](https://doi.org/10.7554/eLife.102321.3.sa1)\n\nWhen different groups (populations, species) are presented with similar environmental pressures, how similar are the ultimate targets (genes, pathways)? This study sought to illuminate this broader question via experimental evolution in D. simulans and quantifying gene-expression changes, specifically in the context of standing genetic variation (and not de novo mutation). Ultimately, the authors showed pleiotropy and standing-genetic variation play a significant role in the \"predictability\" of evolution.\n\nThe results of this manuscript look at the interplay between pleiotropy, standing genetic variation and parallelism (i.e. predictability of evolution) in gene expression. Ultimately, their results suggest that (a) pleiotropic genes typically have a smaller range in variation/expression, and (b) adaptation to similar environments tends to favor changes in pleiotropic genes, which leads to parallelism in mechanisms (though not dramatically). However, it is still uncertain how much parallelism is directly due to pleiotropy, instead of a complex interplay between them and ancestral variation.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.102321.3.sa2](https://doi.org/10.7554/eLife.102321.3.sa2)\n\nSummary:\n\nLai and collaborators use a previously published RNAseq dataset derived from an experimental evolution set up to compare the pleiotropic properties of genes which expression evolved in response to fluctuating temperature for over 100 generations. The authors correlate gene pleiotropy with the degree of parallelisms in the experimental evolution set up to ask: are genes that evolved in multiple replicates more or less pleiotropic?\n\nThey find that, maybe counter to expectation, highly pleiotropic genes show more replicated evolution. And such effect seems to be driven by direct effects (which the authors can only speculate on) and indirect effect through low variance in pleiotropic genes (which the authors indirectly link to genetic variation underlying gene expression variance).\n\nWeaknesses:\n\nThe results offer new insights into the evolution of gene expression and into the parameters that constrain such evolution, i.e., pleiotropy. Although the conclusions are supported by the data, I find the interpretation of the results a little bit complicated.\n\nMajor comment:\n\nThe major point I ask the authors to address is whether the connection between polygenic adaptation and parallelism can indeed be used to interpret gene expression parallelism. If the answer is not, please rephrase the introduction and discussion, if the answer is yes, please make it explicit in the text why it is so.\n\nThe authors argument: parallelism in gene expression is the same as parallelism in SNP allele frequency (AFC) (see L389-383 here they don't mention that this explanation is derived from SNP parallelism and not trait parallelism, and see Fig1 b). In previous publications the authors have explained the low level of AFC parallelism using a polygenic argument. Polygenic traits can reach a new trait optimum via multiple SNPs and therefore although the trait is parallel across replicates, the SNPs are not necessarily so.\n\nIn the current paper, they seem to be exchanging SNP AFC by gene expression, and to me, those are two levels that cannot be interchanged. Gene expression is a trait, not a SNP, and therefore the fact that a gene expression doesn't replicate cannot be explained by polygenic basis, because again the trait is gene expression itself. And, actually the results of the simulations show that high polygenicity = less trait parallelism (Fig4).\n\nNow, if the authors focus on high parallel genes (present in e.g. 7 or more replicates) and they show that the eQTLs for those genes are many (highly polygenic) and the AFC of those eQTL are not parallel, then I would agree with the interpretation. But, given that here they just assess gene expression and not eQTL AFC, I do not think they can use the 'highly polygenic = low parallelism' explanation.\n\nThe interpretation of the results to me, should be limited to: genes with low variance and high pleiotropy tend to be more parallel, and the explanation might be synergistic pleiotropy.\n\nComments on revisions: The authors didn't really address any of the comments made by any of the reviewers - basically nothing was changed in the main text. Therefore, I leave my original review unchanged.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.102321.3.sa3](https://doi.org/10.7554/eLife.102321.3.sa3)\n\nThe authors aim to understand how gene pleiotropy affects parallel evolutionary changes among independent replicates of adaptation to a new hot environment of a set of experimental lines of Drosophila simulans using experimental evolution. The flies were RNAsequenced after more than 100 generations of lab adaptation and the changes in average gene expression were obtained relative to ancestral expression levels from reconstructed ancestral lines. Parallelism of gene expression change among lines is evaluated as variance in differential gene expression among lines relative to error variance. Similarly, the authors ask how the standing variation in gene expression estimated from a handful of flies from a reconstructed outbred line affects parallelism. The main findings are that parallelism in gene expression responses is positively associated with pleiotropy and negatively associated with expression variation. Those results are in contradiction with theoretical predictions and empirical findings. To explain those seemingly contradictory results the authors invoke the role of synergistic pleiotropy and correlated selection, although they do not attempt to measure either.\n\nStrengths:\n\nThe study uses highly replicated outbred laboratory lines of Drosophila simulans evolved in the lab under constant hot regime for over 100 generations. This allows for robust comparisons of evolutionary responses among lines.\n\nThe manuscript is well written and the hypotheses are clearly delineated at the onset.\n\nThe authors have run a causal analysis to understand the causal dependencies between pleiotropy and expression variation on parallelism.\n\nThe use of whole-body RNA extraction to study gene expression variation is well justified.\n\nWeaknesses:\n\nThe accuracy of the estimate of ancestral phenotypic variation in gene expression is likely low because estimated from a small sample of 20 males from a reconstructed outbred line. It might not constitute a robust estimate of the genetic variation of the evolved lines under study.\n\nThere are no estimates of the standing genetic variation of expression levels of the genes under study, only estimates of their phenotypic variation. I wished the authors had been clear about that limitation and had refrained from equating phenotypic variation in expression level with standing genetic variation.\n\nMoreover, since the phenotype studied is gene expression, its genetic basis extends beyond expressed sequences. The phenotypic variation of a gene's expression may thus likely misrepresent the genetic variation available for its evolution. The authors do not present evidence that sequence variation correlates with expression variation.\n\nThe authors have not attempted to estimate synergistic pleiotropy among genes, nor how selection acts on gene expression modules. It makes their conclusion regarding the role of synergistic pleiotropy rather speculative.\n",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d98b9962-f7b2-474d-bc0a-c3c2bf46645f",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C1",
+      "claim": "Ten replicated populations of Drosophila simulans were adapted from standing variation to the same new temperature regime.",
+      "claim_type": "EXPLICIT",
+      "source": "The present study examined the parallel gene expression evolution in 10 replicated populations of Drosophila simulans, which were adapted from standing variation to the same new temperature regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental setup used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "75ecafb4-c31f-4ba7-8474-93d41013a914",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C2",
+      "claim": "Parallel evolution of gene expression from standing genetic variation is positively correlated with the strength of pleiotropic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "The data demonstrate that the parallel evolution of gene expression from standing genetic variation is positively correlated with the strength of pleiotropic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing this correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "ac108278-a261-44c9-89d1-f1864f7f9951",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C3",
+      "claim": "Ancestral variation in gene expression is negatively correlated with parallelism.",
+      "claim_type": "EXPLICIT",
+      "source": "The ancestral variation in gene expression is, however, negatively correlated with parallelism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing this correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "509e911c-a6a3-4345-8b80-57d8ee038613",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C4",
+      "claim": "Pleiotropy is negatively correlated with gene expression variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that pleiotropy is also negatively correlated with gene expression variation, we conducted a causal analysis to distinguish cause and correlation and evaluate the role of pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing this correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "7ede1a0d-3933-4c87-ae7a-c3bcfd072764",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C5",
+      "claim": "Both direct (causative) and indirect (correlational) effects of pleiotropy contribute to parallel evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The causal analysis indicated that both direct (causative) and indirect (correlational) effects of pleiotropy contribute to parallel evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes results from causal analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "fa57633b-196e-4b92-a97f-2535b0378568",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C6",
+      "claim": "The indirect effect of pleiotropy is mediated by historic selective constraint in response to pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "The indirect effect is mediated by historic selective constraint in response to pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript interprets the causal analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "0bbdf6c8-f226-40e6-b0ac-7e57fb31b50f",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C7",
+      "claim": "Historic selective constraint results in parallel selection responses due to the reduced standing variation of pleiotropic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in parallel selection responses due to the reduced standing variation of pleiotropic genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the mechanism.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "6f696967-92b0-422e-9939-cfcf8188ef61",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C8",
+      "claim": "The direct effect of pleiotropy is likely to reflect a genetic correlation among adaptive traits.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct effect of pleiotropy is likely to reflect a genetic correlation among adaptive traits, which in turn gives rise to synergistic effects and higher parallelism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "db8a88ff-b451-4c0e-9e4a-c133ca9044a8",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C9",
+      "claim": "Genetic correlation among adaptive traits gives rise to synergistic effects and higher parallelism.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct effect of pleiotropy is likely to reflect a genetic correlation among adaptive traits, which in turn gives rise to synergistic effects and higher parallelism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "5b44fc0c-e1b0-481e-8710-987815fc0e65",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C10",
+      "claim": "Non-parallel evolution does not preclude the possibility of selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Given that non-parallel evolution does not preclude the possibility of selection (Barghi et al., 2019; Barghi et al., 2020), there has been a sustained interest in elucidating the factors that influence the extent of genetic parallelism (i.e. how similar is the response of the same gene to selection in multiple populations from the same/similar ecological niche(s)) (Bolnick et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "06bf6cd4-4b1e-4d57-ae8a-cb70e6a89ccc",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C11",
+      "claim": "The degree of pleiotropy may be a potential factor associated with parallelism.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that the degree of pleiotropy, the number of traits affected by a single gene, maybe a potential factor associated with parallelism (Bolnick et al., 2018; Conte et al., 2015; Rennison and Peichel, 2022; Stern, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies proposing this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "c2b0f2db-9e03-4e2e-a309-6d15e5078c4f",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C12",
+      "claim": "New mutations in highly pleiotropic genes are more likely to have negative fitness effects than mutations in less pleiotropic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "New mutations in highly pleiotropic genes are more likely to have negative fitness effects than mutations in less pleiotropic genes as more traits are displaced from their optima.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the cost of pleiotropy concept.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "233f5b97-f888-489c-ac59-baac3595b82e",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C13",
+      "claim": "The 'cost of pleiotropy' model is evidenced by the lack of sequence divergence observed in genes with a higher level of pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "This 'cost of pleiotropy' model (Orr, 2000) is evidenced by the lack of sequence divergence observed in genes with a higher level of pleiotropy (Fraser et al., 2002; Hahn and Kern, 2005; Masalia et al., 2017; Josephs et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies supporting the cost of pleiotropy model.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "8a688745-6cc7-4b61-88ad-9abbfa34a4bb",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C14",
+      "claim": "Less pleiotropic genes are more likely to contribute to adaptation over long evolutionary timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "Consequently, it can be postulated that less pleiotropic genes are more likely to contribute to adaptation over long evolutionary timescales, given that they have a higher probability of accumulating beneficial genetic variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a logical inference from the cost of pleiotropy model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "6994a1f0-ff03-4628-ab86-6ff5b388a7e9",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C15",
+      "claim": "Less pleiotropic genes result in a more parallel selection response in different populations/species.",
+      "claim_type": "EXPLICIT",
+      "source": "This results in a more parallel selection response in different populations/species (Hansen, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "58ab7e1e-fe77-4731-9b1b-98e49fb734a7",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C16",
+      "claim": "The influence of pleiotropy on the selection response strongly depends on the genetic correlation of the affected traits and the underlying fitness function.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been proposed that the influence of pleiotropy on the selection response strongly depends on the genetic correlation of the affected traits and the underlying fitness function which connects phenotypic values with fitness (Blows, 2007; Lande and Arnold, 1983; Lande, 1979).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies proposing this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "13ef5256-5fa3-4dfa-9738-c74a1c06d4be",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C17",
+      "claim": "Synergistic pleiotropy may result in stronger net selection and consequently in more parallel selection signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "If the fitness effects of the affected traits are positively correlated (synergistic pleiotropy), this may result in stronger net selection (Thorh\u00f6lludottir et al., 2023) and consequently in more parallel selection signatures (MacPherson and Nuismer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "1dd02334-e4da-4fe3-b1a4-177a003e287e",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C18",
+      "claim": "The correlation of fitness effects determines whether pleiotropy increases or decreases parallel selection signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that the correlation of fitness effects determines whether pleiotropy increases or decreases parallel selection signatures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a logical inference from the discussion of synergistic pleiotropy.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "65836503-9fed-422a-a64e-2e95e296ac41",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C19",
+      "claim": "Many studies of parallel evolution have focused on short-term adaptation where standing genetic variation plays a more significant role than de novo mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "However, many studies of parallel evolution have focused on short-term adaptation [e.g. Rivas-S\u00e1nchez et al., 2023; Huang et al., 2021; Heckley et al., 2022; Fischer et al., 2021; Elmer et al., 2014; Butlin et al., 2014; Hsu et al., 2021; Otte et al., 2021], where standing genetic variation plays a more significant role in selection responses than de novo mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies focusing on short-term adaptation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "fc0eadf7-84b1-414b-9f26-f55ffea7d65c",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C20",
+      "claim": "It remains unclear whether a similar impact of pleiotropy on evolutionary parallelism is to be expected for standing genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, it remains unclear whether a similar impact of pleiotropy on evolutionary parallelism is to be expected for standing genetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a gap in knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "6a16fa9a-04d5-4eb6-b3c7-a22c0c0a1d7e",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C21",
+      "claim": "A gene expression study in European grayling populations provided compelling evidence for the constraining effect of pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "A gene expression study in European grayling populations adapted to different temperature regimes provided compelling evidence for the constraining effect of pleiotropy (Papakostas et al., 2014), which supports the cost of complexity concept.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting the constraining effect of pleiotropy.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "117076f8-0ac0-4d03-ab97-b1607da8895d",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C22",
+      "claim": "A comparison of gene expression changes in natural Drosophila populations demonstrated the importance of correlated fitness effects.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of gene expression changes in natural Drosophila populations along a temperature cline and populations evolved in the laboratory to different temperature regimes demonstrated the importance of correlated fitness effects (Thorh\u00f6lludottir et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study demonstrating the importance of correlated fitness effects.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "1b442191-aece-43ba-9a5c-ac400fe1b700",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C23",
+      "claim": "Pleiotropic genes were more likely to exhibit parallel adaptation signatures in stickleback populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The authors discovered that pleiotropic genes were more likely to exhibit parallel adaptation signatures (Rennison and Peichel, 2022), thereby supporting the importance of synergistic pleiotropy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study showing this pattern.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "7245042d-10b1-46e4-a30c-dfc8033a752d",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C24",
+      "claim": "Previous studies on pleiotropy and parallelism did not account for polymorphism (standing genetic variation).",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies on pleiotropy and parallelism did not account for polymorphism (standing genetic variation), which plays a central role in selection responses during short-term adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript identifies a limitation of previous studies.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "de74714f-6787-414c-8312-e711c7bd6cf5",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C25",
+      "claim": "Polymorphism of a gene is affected by its pleiotropic level.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, polymorphism of a gene is also affected by its pleiotropic level while the expectations regarding the influence of pleiotropy on the extent of polymorphism varies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses the relationship between pleiotropy and polymorphism.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "c5f3239a-7145-41a7-84b5-59113a53bbd9",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C26",
+      "claim": "The cost of complexity predicts that pleiotropic genes with uncorrelated fitness effects will be subject to stronger purifying selection, resulting in reduced polymorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "The cost of complexity predicts that pleiotropic genes with uncorrelated fitness effects will be subject to stronger purifying selection, which will result in reduced polymorphism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a prediction from the cost of complexity model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "803dbb10-4103-4eb1-8f6d-430dcc315e57",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C27",
+      "claim": "Synergistic pleiotropy may facilitate the occurrence of selective sweeps, thereby reducing variation in pleiotropic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of multiple selected traits with aligned fitness effects, synergistic pleiotropy may facilitate the occurrence of selective sweeps, and thereby reducing variation in pleiotropic genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes a potential mechanism for reduced variation.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "20c59d9f-f42b-4bb5-a1a2-ebaa1d30ed4f",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C28",
+      "claim": "Pleiotropic alleles may lead to a balanced polymorphism, which maintains higher levels of variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternatively, it may be possible that once pleiotropic alleles have been established in a population, their multivariate fitness effects lead to a balanced polymorphism, which in turn maintains higher levels of variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents an alternative hypothesis.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "9e61aee0-8635-4d28-b939-a7d4112d3898",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C29",
+      "claim": "Empirical studies have observed a negative correlation between the level of pleiotropy and sequence/expression polymorphism.",
+      "claim_type": "EXPLICIT",
+      "source": "Empirical studies have observed a negative correlation between the level of pleiotropy and sequence/expression polymorphism (Lemos et al., 2004; M\u00e4hler et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing this correlation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "dd8bb477-fd8b-42de-b7d9-c5996052de99",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C30",
+      "claim": "Pleiotropy may preferentially reduce variation, either by purifying selection, synergistic effects, or a combination of both.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that pleiotropy may preferentially reduce variation, either by purifying selection, synergistic effects, or a combination of both.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of empirical observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "553974d8-b4ad-4e86-b6a7-5bf3d0fce181",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C31",
+      "claim": "Gene expression analysis is a widely employed approach to assess the selective response.",
+      "claim_type": "EXPLICIT",
+      "source": "We assessed the selective response by measuring gene expression differences between populations from different environments, a widely employed approach [e.g. Nourmohammad et al., 2017; Hsu et al., 2020; Yu et al., 2023; Velotta et al., 2017; Tang et al., 2017; O'Neil et al., 2014; Margres et al., 2017].",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites multiple studies using this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "80da3d70-f8a6-4950-9805-f76b2dcf1bef",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C32",
+      "claim": "The study compared gene expression in the ancestral D. simulans population with that of flies that had evolved for 100 generations in a novel hot temperature regime.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we compared gene expression in the ancestral D. simulans population with that of flies that had evolved for 100 generations in a novel hot temperature regime.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "1ae4dc4d-8a36-4d7b-b3a7-7e65ec902fd6",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C33",
+      "claim": "The gene expression change was measured in 10 replicate populations to infer parallel evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To infer parallel evolution, the gene expression change was measured in 10 replicate populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "8728906a-4d0b-478c-acb7-5a62cfc17910",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C34",
+      "claim": "The natural variation in gene expression was determined by examining the differences in expression levels among individual flies from the ancestral D. simulans population.",
+      "claim_type": "EXPLICIT",
+      "source": "The natural variation in gene expression was determined by examining the differences in expression levels among individual flies from the ancestral D. simulans population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the method for measuring ancestral variation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "c06d0a67-a214-4601-8570-5fbd0c0ea5d2",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C35",
+      "claim": "The parallelism of gene expression evolution is positively associated with pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "The parallelism of gene expression evolution is positively associated with pleiotropy but negatively associated with the ancestral variation in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing this association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "4818c3a5-1ede-4dc2-8e15-a3391f5e5058",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C36",
+      "claim": "The parallelism of gene expression evolution is negatively associated with the ancestral variation in gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "The parallelism of gene expression evolution is positively associated with pleiotropy but negatively associated with the ancestral variation in gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing this association.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "4f2ce9ef-2722-4afa-a011-d37d83ffc217",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C37",
+      "claim": "Pleiotropy affects parallel evolution both directly and indirectly via ancestral variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Causal analysis revealed that pleiotropy affects parallel evolution both directly and indirectly via ancestral variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents results from causal analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "54164fac-12b3-4f2a-a66b-a4782cc73461",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C38",
+      "claim": "The indirect effects of pleiotropy operate via the reduction of ancestral variation in pleiotropic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that the indirect effects operate via the reduction of ancestral variation in pleiotropic genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the causal analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "1fb9f0d8-7853-4bbd-b009-0e273d577620",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C39",
+      "claim": "The direct effects of pleiotropy on parallelism are probably best explained by synergistic pleiotropy which results in a stronger selection response.",
+      "claim_type": "EXPLICIT",
+      "source": "The direct effects of pleiotropy on parallelism are probably best explained by synergistic pleiotropy which results in a stronger selection response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the causal analysis results.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "72e33e6a-7f25-4cfc-b029-f24172944fae",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C40",
+      "claim": "Tissue specificity (\u03c4) indicates how specific the expression of a gene is across different tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03c4 indicates how specific the expression of a gene is across different tissues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript defines the tissue specificity measure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "95504740-0632-43d1-9d9b-100a289470b0",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C41",
+      "claim": "Genes expressed in many tissues are more likely to affect multiple traits than genes expressed in fewer tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The relationship between \u03c4 and pleiotropy is based on the idea that the genes expressed in many tissues are more likely to affect multiple traits than genes expressed in fewer tissues (McShea, 2000; Mank et al., 2008; Allen et al., 2018; Watanabe et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies supporting this relationship.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "2129286f-ebfa-4ed3-b488-2c55ce7c8623",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C42",
+      "claim": "Network connectivity has been used as a proxy for pleiotropy, as more connected genes are likely to be more pleiotropic.",
+      "claim_type": "EXPLICIT",
+      "source": "Network connectivity has also been used as a proxy for pleiotropy, as more connected genes are likely to be more pleiotropic (Josephs et al., 2017; Proulx et al., 2005; He and Zhang, 2006; H\u00e4m\u00e4l\u00e4 et al., 2020a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies supporting this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "77f3aedc-f11f-4883-8682-adf1aa22e2cd",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C43",
+      "claim": "There is a significant positive correlation (rho = 0.54) between 1-\u03c4 and network connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant positive correlation (rho = 0.54) between 1-\u03c4 and network connectivity suggests that both estimates capture a similar, but not identical, signature of the pleiotropic properties among the genes (Appendix 1\u2014figure 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data showing this correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "00d5847c-431a-44db-b4a3-251390e079ef",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C44",
+      "claim": "Comparative analyses of tissue-specific gene expression have shown an extremely high consistency across species in animals.",
+      "claim_type": "EXPLICIT",
+      "source": "However, comparative analyses of tissue-specific gene expression have shown an extremely high consistency across species in animals (Mao et al., 2024) and plants (Davidson et al., 2012; Julca et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing this consistency.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "aae0786d-253e-4204-88e3-a4dcdee28229",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C45",
+      "claim": "Tissue specificity estimates from one species can be safely used for close relatives.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, these data suggest that at least for tissue specificity, one of the pleiotropy measures used, estimates from one species can be safely used for close relatives.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an inference based on cited studies.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "a7eb0dbb-ba11-424d-94f2-19aa0e700461",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C46",
+      "claim": "202 isofemale lines collected from Florida, USA were used to constitute 10 outbred Drosophila simulans populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, 202 isofemale lines collected from Florida, USA were used to constitute 10 outbred Drosophila simulans populations, which have been exposed for more than 100 generations to a laboratory experiment at 28/18 \u00b0C with 12 hr light/12 hr dark photoperiod.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "c5e3a2cd-cd7e-4ced-91f8-ef67c96837b7",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C47",
+      "claim": "The populations have been exposed for more than 100 generations to a laboratory experiment at 28/18 \u00b0C with 12 hr light/12 hr dark photoperiod.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, 202 isofemale lines collected from Florida, USA were used to constitute 10 outbred Drosophila simulans populations, which have been exposed for more than 100 generations to a laboratory experiment at 28/18 \u00b0C with 12 hr light/12 hr dark photoperiod.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "35727247-8e1b-4786-a896-d8a6348859a2",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C48",
+      "claim": "The census population size of each replicate population is 1000\u20131250 adult flies.",
+      "claim_type": "EXPLICIT",
+      "source": "The census population size of each replicate population is 1000\u20131250 adult flies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript describes the experimental setup.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "19b41845-2ea9-40ab-a02a-0694ca9b1785",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C49",
+      "claim": "Adaptation to the laboratory environment with the residual heterogeneity or de novo mutation is unlikely due to the small effective population size during the maintenance of each line.",
+      "claim_type": "EXPLICIT",
+      "source": "Adaptation to the laboratory environment with the residual heterogeneity or de novo mutation is unlikely due to the small effective population size during the maintenance of each line (Barghi et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "12f917e6-3622-42bb-a342-b55c80b165a2",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C50",
+      "claim": "50 generations of maintenance as isofemale lines does not result in significant genetic differentiation from the ancestral population.",
+      "claim_type": "EXPLICIT",
+      "source": "This is supported by the observation that 50 generations of maintenance as isofemale lines does not result in significant genetic differentiation from the ancestral population (Nouhaud et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "2a24d980-41b0-4528-9043-76c53b8311b6",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C51",
+      "claim": "Mutations that occur in the laboratory are mostly recessive.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, mutations that occur in the laboratory are mostly recessive (Charlesworth and Charlesworth, 2010), and the effects are likely to be masked because, after two generations of random mating during common garden maintenance, most individuals will be heterozygous for isofemale line-specific variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "efad2e18-d6a0-43a2-9b7f-54df78c850bc",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C52",
+      "claim": "1775 putatively selected genes were identified with a significant change in gene expression in the same direction in response to the novel environment in at least three populations.",
+      "claim_type": "EXPLICIT",
+      "source": "We identified 1775 putatively selected genes with a significant change in gene expression in the same direction in response to the novel environment in at least three populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents data from the analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "2df55e2c-819a-4b99-8f80-09123f4ab591",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C53",
+      "claim": "Conditioning on multiple replicate populations with a significant change in the same direction reduces false positives due to drift.",
+      "claim_type": "EXPLICIT",
+      "source": "This conditioning on multiple replicate populations with a significant change in the same direction reduces false positives due to drift (Rennison and Peichel, 2022; Bohut\u00ednsk\u00e1 et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies supporting this approach.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "0339248f-d3b6-4003-94f0-7b46d8c1cc40",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C54",
+      "claim": "The replicate frequency spectrum shows considerable heterogeneity among populations, with many genes displaying significant gene expression changes only in a few populations.",
+      "claim_type": "EXPLICIT",
+      "source": "The replicate frequency spectrum of DE genes shows considerable heterogeneity among populations, with many genes displaying significant gene expression changes only in a few populations (Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents data shown in Figure 1b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "ffbd6fd5-638b-4e3f-b294-3d4a6e8722fa",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C55",
+      "claim": "The measure of parallelism varies between genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, the measure of parallelism varies between genes (Figure 1c) and is positively correlated with the number of populations in which a significant change in gene expression is observed for each gene (Appendix 1\u2014figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "21d927d9-b198-4592-a75e-dc26efe906df",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C56",
+      "claim": "There is a significant positive correlation between the parallelism and the degree of pleiotropy (rho = 0.26, p-value <2.2e-16 for 1-\u03c4 and rho = 0.11, p-value <5.6e-07 for network connectivity).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant positive correlation between the parallelism and the degree of pleiotropy, (rho = 0.26, p-value <2.2e-16 for 1-\u03c4 and rho = 0.11, p-value <5.6e-07 for network connectivity) (Figure 2 and Appendix 1\u2014figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents data showing this correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "f5d91bb8-f1ba-468f-b622-7f670e076fbc",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C57",
+      "claim": "There is a highly significant negative correlation between the level of pleiotropy and the magnitude of ancestral variation in gene expression (rho = \u22120.34, p-value <2.2e-16 for 1-\u03c4 and rho = \u22120.37, p-value <2.2e-16 for network connectivity).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a highly significant negative correlation between the level of pleiotropy and the magnitude of ancestral variation in gene expression (Figure 3a and Appendix 1\u2014figure 4b; rho = \u22120.34, p-value <2.2e-16 for 1-\u03c4 and rho = \u22120.37, p-value <2.2e-16 for network connectivity).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents data showing this correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "cf64aac1-a001-4f84-b016-585ceccbb98c",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C58",
+      "claim": "The negative relationship between pleiotropy and polymorphism/diversity can be extended to gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, we suggest that the negative relationship between pleiotropy and polymorphism/diversity (Lemos et al., 2004; M\u00e4hler et al., 2017) (i.e. reduced variants, lower frequencies, and/or lower allelic effects) can be extended to gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an inference based on the data and cited studies.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "fd4043d4-81c5-4a7a-b82a-1eaffd10d942",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C59",
+      "claim": "There is a significant negative correlation between ancestral variation and parallelism of the evolutionary response (rho = \u22120.22, p-value <2.2e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "We observed a significant negative correlation between ancestral variation and parallelism of the evolutionary response (rho = \u22120.22, p-value <2.2e-16; Figure 3b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents data showing this correlation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "759e1404-51a5-46f7-9e93-7ecb7c1e9581",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C60",
+      "claim": "Lower ancestral phenotypic (i.e. expression) variation leads to more parallel trait evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To confirm this, we performed computer simulations of replicated polygenic adaptation and found that lower ancestral phenotypic (i. e. expression) variation leads to more parallel trait evolution (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents simulation results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "e1b5a761-2504-4887-9f0d-bb8339124b41",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C61",
+      "claim": "Natural variation in the ancestral population could be one of the factors determining the parallel adaptive response in replicate populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, that natural variation in the ancestral population could be one of the factor determining the parallel adaptive response in replicate populations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an inference based on the simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "859599da-df3e-4994-888d-5680c692f64c",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C62",
+      "claim": "For tissue specificity, the data were better explained by model III (i.e. model III has the lowest BIC).",
+      "claim_type": "EXPLICIT",
+      "source": "For tissue specificity, our data were better explained by model III (i.e. model III has the lowest BIC, Table 1), suggesting that both direct and indirect effects of pleiotropy determine the degree of parallelism of adaptive gene expression evolution.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents results from causal analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "62182be2-3845-4519-b229-14cdfd49b9e4",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C63",
+      "claim": "When pleiotropy was estimated by network connectivity, model I had a slightly lower BIC than model III.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, when pleiotropy was estimated by network connectivity, model I had a slightly lower BIC than model III (Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents results from causal analysis shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "c5332d9c-933c-41fe-a68b-afeceec361db",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C64",
+      "claim": "The causal analysis does not provide evidence for a direct effect of network connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our causal analysis does not provide evidence for a direct effect of network connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the causal analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "732f31e6-48e9-4a1a-b476-7476896cb03b",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C65",
+      "claim": "The path analysis confirmed the significant direct effect of tissue specificity, but network connectivity has no statistically significant direct effect on the parallelism of gene expression evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "The path analysis confirmed the significant direct effect of tissue specificity, but network connectivity has no statistically significant direct effect on the parallelism of gene expression evolution (Table 2, Appendix 1\u2014table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents results from path analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "b90511d8-316d-4dfb-a63e-9c885c895a41",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C66",
+      "claim": "The indirect effect sizes for both pleiotropy measures are similar.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the relevance of the direct effects of pleiotropy on parallel gene expression evolution differs for the two pleiotropy estimates, the similarity of the indirect effect sizes for both pleiotropy measures is striking (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents results from path analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "54ed62f2-328b-4f52-a064-061b09327aa4",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C67",
+      "claim": "Pleiotropy may enhance the parallel evolutionary response of gene expression directly and indirectly through its influence on ancestral variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these results suggest that pleiotropy may enhance the parallel evolutionary response of gene expression directly and indirectly through its influence on ancestral variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the causal and path analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "0ce6e054-fb82-4b04-81a8-da132224e8fb",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C68",
+      "claim": "Adaptation from standing genetic variation results in complex interplays between pleiotropy, ancestral variation, and parallelism.",
+      "claim_type": "EXPLICIT",
+      "source": "A key finding of our study is that adaptation from standing genetic variation results in complex interplays between pleiotropy, ancestral variation, and parallelism.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript summarizes the key finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "186722bf-a997-4ee6-bc54-3b2f1ceb234f",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C69",
+      "claim": "The observed negative correlation between pleiotropy and ancestral variation in gene expression confirms previous observations.",
+      "claim_type": "EXPLICIT",
+      "source": "Of particular interest is the observed negative correlation between pleiotropy and ancestral variation in gene expression, which confirms previous observations (Lemos et al., 2004; M\u00e4hler et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies confirming the observation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "a7172a11-7e3e-425c-bc98-e1610609f63d",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C70",
+      "claim": "The primary effect of pleiotropy is not to maintain variation.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the primary effect of pleiotropy is not to maintain variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "8e7a80e1-ada4-4458-b5fb-262998a5c9e0",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C71",
+      "claim": "Stronger purifying selection removes pleiotropic variants from the population, resulting in a reduced standing genetic variation.",
+      "claim_type": "EXPLICIT",
+      "source": "Rather, stronger purifying selection removes pleiotropic variants from the population, resulting in a reduced standing genetic variation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "28844bed-417e-4dcd-9443-ecc036153843",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C72",
+      "claim": "The reduced variation in more pleiotropic genes could reflect historical hard sweeps or purifying selection.",
+      "claim_type": "EXPLICIT",
+      "source": "The reduced variation in more pleiotropic genes could reflect historical hard sweeps or purifying selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "81d4d2d9-f7b2-4ee1-a1e8-15c4bd79761d",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C73",
+      "claim": "Less sequence divergence is seen in pleiotropic genes over longer evolutionary timescales.",
+      "claim_type": "EXPLICIT",
+      "source": "A similar pattern is seen over longer evolutionary timescales: less sequence divergence in pleiotropic genes (Fraser et al., 2002; Hahn and Kern, 2005; Masalia et al., 2017; Josephs et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies showing this pattern.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "48472587-4a01-4e8a-9603-62bb4a1e6602",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C74",
+      "claim": "Pleiotropic genes are less likely to contribute to parallel evolution from de novo mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "While pleiotropic genes are less likely to contribute to parallel evolution from de novo mutations (Bolnick et al., 2018), our results show that adaptation from standing genetic variation favors parallel selection responses of pleiotropic genes (Figure 2, Appendix 1\u2014figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript cites a previous study and contrasts it with the current results.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "7602b251-760b-489f-82fb-e08630eace91",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C75",
+      "claim": "Adaptation from standing genetic variation favors parallel selection responses of pleiotropic genes.",
+      "claim_type": "EXPLICIT",
+      "source": "While pleiotropic genes are less likely to contribute to parallel evolution from de novo mutations (Bolnick et al., 2018), our results show that adaptation from standing genetic variation favors parallel selection responses of pleiotropic genes (Figure 2, Appendix 1\u2014figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "01bb99bf-7345-498c-991a-f293f4551e6b",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C76",
+      "claim": "Sequence polymorphism and expression variation are correlated.",
+      "claim_type": "EXPLICIT",
+      "source": "While it is possible that these two types of variation behave differently, we do not believe that this is the case as sequence polymorphism and expression variation are correlated (Lawniczak et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "e71f9076-fdf7-4289-8185-581f6866a7a6",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C77",
+      "claim": "A recent study focusing on genomic changes reached similar conclusions.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, a recent study focusing on genomic changes (Rennison and Peichel, 2022) reached similar conclusions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting the current findings.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "f4cfdf3d-bc74-4743-ab06-d3fa07a37f1f",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C78",
+      "claim": "The high correlation in the variance of gene expression between two replicate groups of individuals indicates that the measures do not reflect technical noise but have a biological basis.",
+      "claim_type": "EXPLICIT",
+      "source": "The high correlation in the variance of gene expression between two replicate groups of individuals indicates that our measures do not reflect technical noise but have a biological basis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "c8eaaf38-4f9a-4eeb-af4f-b09ecbd03c82",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C79",
+      "claim": "Genetic variation in cis-regulatory regions correlates with expression variation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we do not think this is a likely scenario, especially in the light of previous results showing that genetic variation in cis-regulatory regions correlates with expression variation (H\u00e4m\u00e4l\u00e4 et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "49084182-68c0-465b-9cac-92810a8c64bd",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C80",
+      "claim": "Whole-body gene expression in Drosophila is highly heritable, suggesting that gene expression is not stochastic.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, whole-body gene expression in Drosophila is highly heritable, suggesting that gene expression is not stochastic (Ayroles et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting this claim.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "3ad82409-d44f-4a58-87dd-739b970215f6",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C81",
+      "claim": "The causal analysis showed a consistent indirect effect of pleiotropy on parallelism regardless of the measure of pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "Regardless of the measure of pleiotropy, our causal analysis showed a consistent indirect effect of pleiotropy on parallelism (Tables 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents results from causal analysis shown in Tables 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "dfc62186-a482-49a2-a11e-a30602dcd43d",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C82",
+      "claim": "The estimated indirect effects were very similar for both measures of pleiotropy.",
+      "claim_type": "EXPLICIT",
+      "source": "The estimated indirect effects were very similar for both measures of pleiotropy (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents results from path analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "0895cc71-5980-4465-a1e4-503edd686521",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C83",
+      "claim": "The indirect effect of pleiotropy could be explained by the reduced variation in the expression of more pleiotropic genes in the ancestral population leading to a more parallel selection response of gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "This indirect effect of pleiotropy could be explained by the reduced variation in the expression of more pleiotropic genes in the ancestral population leading to a more parallel selection response of gene expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the causal analysis results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "231f2702-c575-4f02-aef2-ec1c9da33e9f",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C84",
+      "claim": "Only tissue specificity had a significant direct effect, which was even larger than the indirect effect.",
+      "claim_type": "EXPLICIT",
+      "source": "For the direct effect, however, the results differed between the two measures of pleiotropy. Only tissue specificity had a significant direct effect, which was even larger than the indirect effect (Table 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents results from path analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "f649cb7f-7cb1-4bf2-9d65-dfb4176933b3",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C85",
+      "claim": "No significant direct effect was found for network connectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "No significant direct effect was found for network connectivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript presents results from path analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "dcd19a2c-8c9d-431f-8db9-2cf8777f5c81",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C86",
+      "claim": "The discrepancy between the two measures of pleiotropy suggests that both measures capture aspects of pleiotropy that differ in their biological implications.",
+      "claim_type": "EXPLICIT",
+      "source": "The discrepancy between the two measures of pleiotropy is particularly interesting given their significant correlation (Appendix 1\u2014figure 1). This suggests that both measures capture aspects of pleiotropy that differ in their biological implications.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "eb1b7e16-e83b-4476-a9f0-d82f1ecdd213",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C87",
+      "claim": "The direct effects of pleiotropy most likely arise from the positively correlated fitness effects of non-focal traits (synergistic pleiotropy).",
+      "claim_type": "EXPLICIT",
+      "source": "The direct effects of pleiotropy, most likely arise from the positively correlated fitness effects of non-focal traits (synergistic pleiotropy).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "c507de87-5f77-40f3-801a-38325e2af6a7",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C88",
+      "claim": "The synergistic pleiotropic effects result in a stronger fitness advantage, which translates into a more parallel selection response.",
+      "claim_type": "EXPLICIT",
+      "source": "The synergistic pleiotropic effects result in a stronger fitness advantage, which translates into a more parallel selection response - as previously shown (MacPherson and Nuismer, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites a previous study supporting this interpretation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "6c5a4064-a576-43d5-b13e-2ad85ea573a9",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C89",
+      "claim": "It is conceivable that positive pleiotropy for temperature adaptation-related traits is common and thus determines the positive contribution of pleiotropy to the parallel evolution observed here.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, it is conceivable that positive pleiotropy for temperature adaptation-related traits is common and thus determines the positive contribution of pleiotropy to the parallel evolution observed here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides a speculative interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "7a65d828-60cf-43c3-ba8b-5a5e3a872be4",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C90",
+      "claim": "When comparing pleiotropy between DE genes and non-DE genes, significantly higher pleiotropy was observed in the non-DE gene group.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, when comparing pleiotropy between DE genes (those showing adaptive responses) and non-DE genes (those that did not change their response during evolution), we observed significantly higher pleiotropy in the non-DE gene group (Appendix 1\u2014figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The manuscript presents data shown in Appendix 1\u2014figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "20cbdae2-836a-4060-bf98-3bfc71eb4882",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C91",
+      "claim": "Extremely high levels of pleiotropy may constrain evolutionary responses.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding suggests that extremely high levels of pleiotropy may constrain evolutionary responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript provides an interpretation of the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "05b6a2dd-95a8-447a-b6e3-85ea53bcd30d",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C92",
+      "claim": "The pattern of increased pleiotropy associated with evolutionary parallelism supports the idea that low to intermediate levels of pleiotropy are more favorable for adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the pattern of increased pleiotropy associated with evolutionary parallelism supports the idea that low to intermediate levels of pleiotropy are more favorable for adaptation (Rennison and Peichel, 2022; Frachon et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript cites previous studies supporting this interpretation.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "47562c7c-eae7-4adb-97dd-b185bb6eb665",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "claim_id": "C93",
+      "claim": "Additional factors such as diminishing return epistasis, population size (drift), and the contribution of gene expression to the selected traits may also affect the parallelism of gene evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, diminishing return epistasis, population size (drift), and the contribution of gene expression to the selected traits may also affect the parallelism of gene evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The manuscript discusses potential additional factors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7464fade-0644-4e86-ab7c-559b62ad8bd4",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The study used an experimental evolution design with 10 replicated D. simulans populations derived from 202 isofemale lines, evolved for >100 generations at 28/18\u00b0C. Gene expression was measured in evolved populations and a reconstituted ancestral population after a common garden experiment to assess adaptive responses.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C32-C34, C46-C51 collectively describe a well-designed experimental evolution study with appropriate controls. The use of isofemale lines, common garden experiments, and multiple replicates provides a solid foundation for studying parallel evolution from standing genetic variation. The experimental design is clearly documented and addresses potential confounds.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "5d9205a1-a326-4508-a321-c5fab6bccab0",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "1775 putatively adaptive genes were identified showing significant expression changes in the same direction in at least 3 populations. The replicate frequency spectrum showed heterogeneity, with parallelism varying substantially among genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C55 describe the identification of adaptive genes using appropriate statistical filtering (requiring changes in \u22653 populations to reduce false positives from drift). The observed heterogeneity in parallelism across genes (Figure 1b,c) provides the phenotypic variation necessary for subsequent correlation analyses.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "0936e103-cb17-43ad-8000-e211b7886b5c",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Parallelism of gene expression evolution is positively correlated with pleiotropy, with significant correlations for both tissue specificity (rho=0.26, p<2.2e-16) and network connectivity (rho=0.11, p<5.6e-07). This contrasts with expectations from de novo mutation-based adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C35, C56, C75 present statistically significant positive correlations between pleiotropy and parallelism (Figure 2), supported by appropriate statistical tests. The effect sizes are modest but highly significant given the large sample size (n=1775 genes). This represents a key empirical finding distinguishing adaptation from standing variation versus de novo mutations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "3e9295ae-5e45-4d91-b827-8ce008bf9bb5",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Pleiotropy is negatively correlated with ancestral variation in gene expression (rho=-0.34 for tissue specificity, rho=-0.37 for network connectivity, both p<2.2e-16), and ancestral variation is negatively correlated with parallelism (rho=-0.22, p<2.2e-16).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4, C36-C37, C57-C58, C69 report highly significant negative correlations with appropriate statistical support (Figure 3). The negative relationship between pleiotropy and ancestral variation confirms previous observations in the literature. These correlations are essential for establishing the indirect pathway in the causal analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "811ba862-112d-4896-bc8a-5b089bd8fffe",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Lower ancestral phenotypic variation leads to more parallel trait evolution, as demonstrated by computer simulations of replicated polygenic adaptation showing a negative correlation (rho=-0.26, p<1.77e-07) between ancestral variation and parallelism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C59-C61 are supported by simulation results (Figure 4) that validate the empirical observation. The simulations appropriately model polygenic traits with different levels of standing variation and demonstrate the mechanistic link between reduced variation and increased parallelism. This provides important theoretical support for the empirical findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "50ab1331-1851-45a9-8e7e-4330169cf20a",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Causal analysis using Bayesian model selection indicates that pleiotropy affects parallelism both directly and indirectly via ancestral variation. For tissue specificity, Model III (both direct and indirect effects) had the lowest BIC. Path analysis confirmed significant indirect effects for both pleiotropy measures (effect sizes ~0.055-0.068), but only tissue specificity showed a significant direct effect (0.127).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5, C37, C62-C67, C81-C82 describe a rigorous causal analysis using established statistical methods (Schadt et al., 2005). The BIC-based model selection (Table 1) and path analysis (Table 2) provide quantitative support for both direct and indirect effects. The consistency of indirect effects across both pleiotropy measures strengthens the conclusion, though the direct effect is only supported for tissue specificity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "1f2e6343-5eb7-4dbc-acfa-1137994749c1",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The indirect effect of pleiotropy on parallelism operates via historic selective constraint that reduces standing variation in pleiotropic genes, leading to more parallel selection responses due to reduced genetic redundancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C38, C70-C71, C83 provide a mechanistic interpretation of the indirect pathway supported by the causal analysis. The interpretation is consistent with the observed negative correlations and is supported by both empirical data and simulation results. The mechanism invokes well-established evolutionary principles (purifying selection on pleiotropic genes).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The direct effect of pleiotropy (significant only for tissue specificity) likely reflects synergistic pleiotropy arising from genetic correlations among adaptive traits, resulting in stronger selection and higher parallelism. This may be particularly relevant for temperature adaptation where positive genetic correlations among adaptive traits are expected.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C8-C9, C39, C84-C89 propose a mechanistic interpretation for the direct effect, but this is largely speculative (evidence_type: SPECULATION). While the interpretation is plausible and consistent with theory (MacPherson and Nuismer, 2017), the manuscript provides no direct evidence for synergistic pleiotropy or genetic correlations among adaptive traits. The direct effect is also only significant for one of two pleiotropy measures, raising questions about its generality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "fc9ea9f5-88c7-4601-a653-a08a0724d23c",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Two measures of pleiotropy were used: tissue specificity (1-\u03c4) based on expression breadth across tissues, and network connectivity based on transcriptional regulatory networks. These measures are significantly correlated (rho=0.54) and tissue specificity estimates from D. melanogaster can be applied to D. simulans based on high cross-species conservation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C45 describe the pleiotropy measures with appropriate justification. The correlation between measures (Appendix 1-figure 1) indicates they capture related but distinct aspects of pleiotropy. The use of D. melanogaster data for D. simulans is justified by citing studies showing high conservation of tissue-specific expression across species. However, the discrepancy in results between the two measures (direct effects) suggests they may capture different biological properties.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "981615a3-0cdc-4697-9c07-f76d736faaad",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The variance in gene expression measured in the ancestral population reflects biological variation with a genetic basis rather than technical or stochastic noise, as evidenced by high correlation between replicate groups and literature showing heritability of expression and correlation with cis-regulatory variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C80 address an important assumption about the nature of expression variation. The high correlation between replicate ancestral populations (rho=0.8 for variance) supports biological rather than technical variation. Citations to studies showing heritability of expression (Ayroles et al., 2009) and correlation with genetic variation (H\u00e4m\u00e4l\u00e4 et al., 2020b) provide additional support.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "2aea5390-0f84-49ac-b199-dc7f2147808c",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Non-differentially expressed genes show significantly higher pleiotropy than adaptive genes, suggesting that extremely high pleiotropy may constrain evolutionary responses. The pattern supports the idea that low to intermediate levels of pleiotropy are most favorable for adaptation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C92 describe an additional analysis comparing DE and non-DE genes (Appendix 1-figure 5). This finding is consistent with the main results and provides evidence for an upper limit to the positive effect of pleiotropy. The interpretation is supported by citations to similar findings (Rennison and Peichel, 2022; Frachon et al., 2017).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "3598800c-bdc4-44de-8cfd-1ac0a110f642",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Adaptation from standing genetic variation results in complex interplays between pleiotropy, ancestral variation, and parallelism that differ from adaptation via de novo mutations. While pleiotropic genes are less likely to contribute to parallel evolution from de novo mutations, they favor parallel responses when adapting from standing variation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68, C74, C76-C77 synthesize the key findings and contrast them with expectations from de novo mutation-based adaptation. The contrast is well-supported by the data and consistent with recent genomic studies (Rennison and Peichel, 2022). This represents an important conceptual advance in understanding parallel evolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The introduction establishes theoretical background on pleiotropy and parallelism, including the cost of pleiotropy model, synergistic pleiotropy, and the role of standing genetic variation in short-term adaptation. Previous empirical studies have shown mixed results regarding the effect of pleiotropy on parallel evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C31 provide literature context and theoretical background. These are appropriately cited and establish the motivation for the study. The claims accurately represent prior work and identify the gap in knowledge regarding pleiotropy's role in adaptation from standing variation (C20, C24).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "7fd418d8-5bd6-4c0e-9c60-73f3f262d223",
+      "content_id": "561de102-16d5-41c7-9634-7084eb842dea",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Additional factors beyond those examined may affect parallelism, including historical selective sweeps, diminishing returns epistasis, population size effects, and the contribution of gene expression to selected traits.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C72-C73, C93 acknowledge limitations and alternative explanations. C72 is appropriately speculative about mechanisms underlying reduced variation. C73 cites supporting literature. C93 appropriately identifies additional factors that could influence parallelism, acknowledging that the study does not provide a complete explanation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "53588d92-8cfd-4a56-94cf-95f854d4218f",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The study used 10 replicated populations of Drosophila simulans, founded from 202 isofemale lines, adapted to a hot temperature regime (28/18\u00b0C) for over 100 generations. Gene expression was compared between ancestral and evolved populations to assess parallel evolution.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the experimental design. One reviewer states 'The study uses highly replicated outbred laboratory lines of Drosophila simulans evolved in the lab under constant hot regime for over 100 generations. This allows for robust comparisons of evolutionary responses among lines.' Another notes the study uses 'state-of-the art experimental evolution approach.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "4281f042-8f46-440c-81c8-d95737289592",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Parallel evolution of gene expression from standing genetic variation is positively correlated with pleiotropy. The study found a significant positive correlation between parallelism and degree of pleiotropy (rho = 0.26, p<2.2e-16 for tissue specificity; rho = 0.11, p<5.6e-07 for network connectivity).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this as the main finding. One states 'This study makes the important finding that pleiotropy is positively associated with parallelism of evolutionary responses in gene expression.' Another notes 'highly pleiotropic genes show more replicated evolution.' The editor confirms 'the experimental results are convincing.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "a96a6511-3b65-47ff-98ad-4547aa4998c4",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Ancestral variation in gene expression is negatively correlated with parallelism. The study found significant negative correlations between pleiotropy and ancestral variation (rho = -0.34, p<2.2e-16) and between ancestral variation and parallelism (rho = -0.22, p<2.2e-16).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these correlations. One reviewer summarizes 'pleiotropic genes typically have a smaller range in variation/expression' and notes the results show 'parallelism in gene expression responses is positively associated with pleiotropy and negatively associated with expression variation.' No concerns are raised about these statistical findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Causal analysis indicated both direct and indirect effects of pleiotropy contribute to parallel evolution. For tissue specificity, Model III (both direct and indirect effects) had the lowest BIC. Path analysis confirmed significant direct effects for tissue specificity but not network connectivity, while indirect effects were similar for both measures.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the causal analysis. One states 'The authors have run a causal analysis to understand the causal dependencies between pleiotropy and expression variation on parallelism.' Another notes 'such effect seems to be driven by direct effects...and indirect effect through low variance in pleiotropic genes.' The analysis methodology is not challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "0e2a83c1-b38c-46e6-a3be-f2680f5a2b3d",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The indirect effect of pleiotropy is mediated by historic selective constraint, which reduces standing variation in pleiotropic genes, leading to more parallel selection responses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this interpretation. One reviewer summarizes the findings as showing 'indirect effect through low variance in pleiotropic genes (which the authors indirectly link to genetic variation underlying gene expression variance).' The mechanistic interpretation through reduced variation is not contested.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "6f1451c5-26da-45f0-9aad-c6d5829c2c31",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The direct effect of pleiotropy likely reflects synergistic pleiotropy\u2014genetic correlation among adaptive traits with positively correlated fitness effects\u2014resulting in stronger selection and higher parallelism.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers note this interpretation is speculative. One states 'The authors have not attempted to estimate synergistic pleiotropy among genes, nor how selection acts on gene expression modules. It makes their conclusion regarding the role of synergistic pleiotropy rather speculative.' Another notes the authors 'can only speculate on' the direct effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "4b6736be-e7d1-466a-9f19-56a6662e9ac7",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Natural variation in gene expression was measured from 20 individual flies from the ancestral population. The authors argue this reflects biological variation rather than technical noise, citing high correlation between replicate groups and literature showing expression variation correlates with genetic variation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "Reviewers explicitly challenge this claim. One states 'The accuracy of the estimate of ancestral phenotypic variation in gene expression is likely low because estimated from a small sample of 20 males from a reconstructed outbred line.' Another notes 'There are no estimates of the standing genetic variation of expression levels of the genes under study, only estimates of their phenotypic variation...The authors do not present evidence that sequence variation correlates with expression variation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "d1b65473-7fa2-470d-a034-1acf2b24a153",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Computer simulations confirmed that lower ancestral phenotypic variation leads to more parallel trait evolution, supporting the role of ancestral variation in determining parallel adaptive responses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer raises a fundamental conceptual concern about the interpretation, stating 'Gene expression is a trait, not a SNP, and therefore the fact that a gene expression doesn't replicate cannot be explained by polygenic basis, because again the trait is gene expression itself.' The reviewer questions whether the polygenic adaptation framework can be applied to gene expression parallelism, suggesting the simulations may not support the authors' interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "48537cee-6457-4ea6-8b8a-03f9a1a66a4c",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The study used two measures of pleiotropy: tissue specificity (1-\u03c4) and network connectivity. These measures are correlated (rho = 0.54) and capture similar but not identical aspects of pleiotropy. Tissue specificity estimates from one species can be used for close relatives based on cross-species consistency.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the pleiotropy measures or their justification. The use of these proxies is implicitly accepted in discussions of the results. One reviewer notes the study examines 'the pleiotropic properties of genes' without questioning the measurement approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "314f2fc7-1fcc-4987-8ff3-0aa29a69cb1b",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "1775 putatively selected genes were identified showing significant expression changes in the same direction in at least three populations. The replicate frequency spectrum shows heterogeneity, with parallelism varying between genes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these findings without challenge. One notes the study examines 'genes which expression evolved in response to fluctuating temperature for over 100 generations' and discusses the 'degree of parallelisms in the experimental evolution set up.' The identification of differentially expressed genes is not questioned.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "1cbb77df-aef3-4907-afa5-0e44dac3e89d",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Non-differentially expressed genes showed significantly higher pleiotropy than differentially expressed genes, suggesting extremely high pleiotropy may constrain evolutionary responses. This supports the idea that low to intermediate pleiotropy levels are more favorable for adaptation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this finding. It is consistent with the overall interpretation that pleiotropy has complex effects on evolution, which reviewers acknowledge. The pattern fits with the accepted main findings about pleiotropy's role.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "3572a3b3-f770-4107-8b63-c5381c849015",
+      "content_id": "a3786691-bd41-46fb-a87a-89d8ab01ed18",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Adaptation during isofemale line maintenance is unlikely due to small effective population size, lack of genetic differentiation after 50 generations, and recessive nature of laboratory mutations that would be masked in heterozygotes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question these methodological justifications for the experimental design. The claims are based on cited literature and are accepted as part of the experimental framework.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d98b9962-f7b2-474d-bc0a-c3c2bf46645f",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "80da3d70-f8a6-4950-9805-f76b2dcf1bef",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "1ae4dc4d-8a36-4d7b-b3a7-7e65ec902fd6",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "8728906a-4d0b-478c-acb7-5a62cfc17910",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "a7eb0dbb-ba11-424d-94f2-19aa0e700461",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "c5e3a2cd-cd7e-4ced-91f8-ef67c96837b7",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "35727247-8e1b-4786-a896-d8a6348859a2",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "19b41845-2ea9-40ab-a02a-0694ca9b1785",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "12f917e6-3622-42bb-a342-b55c80b165a2",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "2a24d980-41b0-4528-9043-76c53b8311b6",
+      "result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4"
+    },
+    {
+      "claim_id": "efad2e18-d6a0-43a2-9b7f-54df78c850bc",
+      "result_id": "5d9205a1-a326-4508-a321-c5fab6bccab0"
+    },
+    {
+      "claim_id": "2df55e2c-819a-4b99-8f80-09123f4ab591",
+      "result_id": "5d9205a1-a326-4508-a321-c5fab6bccab0"
+    },
+    {
+      "claim_id": "0339248f-d3b6-4003-94f0-7b46d8c1cc40",
+      "result_id": "5d9205a1-a326-4508-a321-c5fab6bccab0"
+    },
+    {
+      "claim_id": "ffbd6fd5-638b-4e3f-b294-3d4a6e8722fa",
+      "result_id": "5d9205a1-a326-4508-a321-c5fab6bccab0"
+    },
+    {
+      "claim_id": "75ecafb4-c31f-4ba7-8474-93d41013a914",
+      "result_id": "0936e103-cb17-43ad-8000-e211b7886b5c"
+    },
+    {
+      "claim_id": "c06d0a67-a214-4601-8570-5fbd0c0ea5d2",
+      "result_id": "0936e103-cb17-43ad-8000-e211b7886b5c"
+    },
+    {
+      "claim_id": "21d927d9-b198-4592-a75e-dc26efe906df",
+      "result_id": "0936e103-cb17-43ad-8000-e211b7886b5c"
+    },
+    {
+      "claim_id": "7602b251-760b-489f-82fb-e08630eace91",
+      "result_id": "0936e103-cb17-43ad-8000-e211b7886b5c"
+    },
+    {
+      "claim_id": "ac108278-a261-44c9-89d1-f1864f7f9951",
+      "result_id": "3e9295ae-5e45-4d91-b827-8ce008bf9bb5"
+    },
+    {
+      "claim_id": "509e911c-a6a3-4345-8b80-57d8ee038613",
+      "result_id": "3e9295ae-5e45-4d91-b827-8ce008bf9bb5"
+    },
+    {
+      "claim_id": "4818c3a5-1ede-4dc2-8e15-a3391f5e5058",
+      "result_id": "3e9295ae-5e45-4d91-b827-8ce008bf9bb5"
+    },
+    {
+      "claim_id": "f5d91bb8-f1ba-468f-b622-7f670e076fbc",
+      "result_id": "3e9295ae-5e45-4d91-b827-8ce008bf9bb5"
+    },
+    {
+      "claim_id": "cf64aac1-a001-4f84-b016-585ceccbb98c",
+      "result_id": "3e9295ae-5e45-4d91-b827-8ce008bf9bb5"
+    },
+    {
+      "claim_id": "186722bf-a997-4ee6-bc54-3b2f1ceb234f",
+      "result_id": "3e9295ae-5e45-4d91-b827-8ce008bf9bb5"
+    },
+    {
+      "claim_id": "fd4043d4-81c5-4a7a-b82a-1eaffd10d942",
+      "result_id": "811ba862-112d-4896-bc8a-5b089bd8fffe"
+    },
+    {
+      "claim_id": "759e1404-51a5-46f7-9e93-7ecb7c1e9581",
+      "result_id": "811ba862-112d-4896-bc8a-5b089bd8fffe"
+    },
+    {
+      "claim_id": "e1b5a761-2504-4887-9f0d-bb8339124b41",
+      "result_id": "811ba862-112d-4896-bc8a-5b089bd8fffe"
+    },
+    {
+      "claim_id": "7ede1a0d-3933-4c87-ae7a-c3bcfd072764",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "4f2ce9ef-2722-4afa-a011-d37d83ffc217",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "859599da-df3e-4994-888d-5680c692f64c",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "62182be2-3845-4519-b229-14cdfd49b9e4",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "c5332d9c-933c-41fe-a68b-afeceec361db",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "732f31e6-48e9-4a1a-b476-7476896cb03b",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "b90511d8-316d-4dfb-a63e-9c885c895a41",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "54ed62f2-328b-4f52-a064-061b09327aa4",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "3ad82409-d44f-4a58-87dd-739b970215f6",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "dfc62186-a482-49a2-a11e-a30602dcd43d",
+      "result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a"
+    },
+    {
+      "claim_id": "fa57633b-196e-4b92-a97f-2535b0378568",
+      "result_id": "1f2e6343-5eb7-4dbc-acfa-1137994749c1"
+    },
+    {
+      "claim_id": "0bbdf6c8-f226-40e6-b0ac-7e57fb31b50f",
+      "result_id": "1f2e6343-5eb7-4dbc-acfa-1137994749c1"
+    },
+    {
+      "claim_id": "54164fac-12b3-4f2a-a66b-a4782cc73461",
+      "result_id": "1f2e6343-5eb7-4dbc-acfa-1137994749c1"
+    },
+    {
+      "claim_id": "a7172a11-7e3e-425c-bc98-e1610609f63d",
+      "result_id": "1f2e6343-5eb7-4dbc-acfa-1137994749c1"
+    },
+    {
+      "claim_id": "8e7a80e1-ada4-4458-b5fb-262998a5c9e0",
+      "result_id": "1f2e6343-5eb7-4dbc-acfa-1137994749c1"
+    },
+    {
+      "claim_id": "0895cc71-5980-4465-a1e4-503edd686521",
+      "result_id": "1f2e6343-5eb7-4dbc-acfa-1137994749c1"
+    },
+    {
+      "claim_id": "6f696967-92b0-422e-9939-cfcf8188ef61",
+      "result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d"
+    },
+    {
+      "claim_id": "db8a88ff-b451-4c0e-9e4a-c133ca9044a8",
+      "result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d"
+    },
+    {
+      "claim_id": "1fb9f0d8-7853-4bbd-b009-0e273d577620",
+      "result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d"
+    },
+    {
+      "claim_id": "231f2702-c575-4f02-aef2-ec1c9da33e9f",
+      "result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d"
+    },
+    {
+      "claim_id": "f649cb7f-7cb1-4bf2-9d65-dfb4176933b3",
+      "result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d"
+    },
+    {
+      "claim_id": "dcd19a2c-8c9d-431f-8db9-2cf8777f5c81",
+      "result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d"
+    },
+    {
+      "claim_id": "eb1b7e16-e83b-4476-a9f0-d82f1ecdd213",
+      "result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d"
+    },
+    {
+      "claim_id": "c507de87-5f77-40f3-801a-38325e2af6a7",
+      "result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d"
+    },
+    {
+      "claim_id": "6c5a4064-a576-43d5-b13e-2ad85ea573a9",
+      "result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d"
+    },
+    {
+      "claim_id": "72e33e6a-7f25-4cfc-b029-f24172944fae",
+      "result_id": "fc9ea9f5-88c7-4601-a653-a08a0724d23c"
+    },
+    {
+      "claim_id": "95504740-0632-43d1-9d9b-100a289470b0",
+      "result_id": "fc9ea9f5-88c7-4601-a653-a08a0724d23c"
+    },
+    {
+      "claim_id": "2129286f-ebfa-4ed3-b488-2c55ce7c8623",
+      "result_id": "fc9ea9f5-88c7-4601-a653-a08a0724d23c"
+    },
+    {
+      "claim_id": "77f3aedc-f11f-4883-8682-adf1aa22e2cd",
+      "result_id": "fc9ea9f5-88c7-4601-a653-a08a0724d23c"
+    },
+    {
+      "claim_id": "00d5847c-431a-44db-b4a3-251390e079ef",
+      "result_id": "fc9ea9f5-88c7-4601-a653-a08a0724d23c"
+    },
+    {
+      "claim_id": "aae0786d-253e-4204-88e3-a4dcdee28229",
+      "result_id": "fc9ea9f5-88c7-4601-a653-a08a0724d23c"
+    },
+    {
+      "claim_id": "f4cfdf3d-bc74-4743-ab06-d3fa07a37f1f",
+      "result_id": "981615a3-0cdc-4697-9c07-f76d736faaad"
+    },
+    {
+      "claim_id": "c8eaaf38-4f9a-4eeb-af4f-b09ecbd03c82",
+      "result_id": "981615a3-0cdc-4697-9c07-f76d736faaad"
+    },
+    {
+      "claim_id": "49084182-68c0-465b-9cac-92810a8c64bd",
+      "result_id": "981615a3-0cdc-4697-9c07-f76d736faaad"
+    },
+    {
+      "claim_id": "7a65d828-60cf-43c3-ba8b-5a5e3a872be4",
+      "result_id": "2aea5390-0f84-49ac-b199-dc7f2147808c"
+    },
+    {
+      "claim_id": "20cbdae2-836a-4060-bf98-3bfc71eb4882",
+      "result_id": "2aea5390-0f84-49ac-b199-dc7f2147808c"
+    },
+    {
+      "claim_id": "05b6a2dd-95a8-447a-b6e3-85ea53bcd30d",
+      "result_id": "2aea5390-0f84-49ac-b199-dc7f2147808c"
+    },
+    {
+      "claim_id": "0ce6e054-fb82-4b04-81a8-da132224e8fb",
+      "result_id": "3598800c-bdc4-44de-8cfd-1ac0a110f642"
+    },
+    {
+      "claim_id": "48472587-4a01-4e8a-9603-62bb4a1e6602",
+      "result_id": "3598800c-bdc4-44de-8cfd-1ac0a110f642"
+    },
+    {
+      "claim_id": "01bb99bf-7345-498c-991a-f293f4551e6b",
+      "result_id": "3598800c-bdc4-44de-8cfd-1ac0a110f642"
+    },
+    {
+      "claim_id": "e71f9076-fdf7-4289-8185-581f6866a7a6",
+      "result_id": "3598800c-bdc4-44de-8cfd-1ac0a110f642"
+    },
+    {
+      "claim_id": "5b44fc0c-e1b0-481e-8710-987815fc0e65",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "06bf6cd4-4b1e-4d57-ae8a-cb70e6a89ccc",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "c2b0f2db-9e03-4e2e-a309-6d15e5078c4f",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "233f5b97-f888-489c-ac59-baac3595b82e",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "8a688745-6cc7-4b61-88ad-9abbfa34a4bb",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "6994a1f0-ff03-4628-ab86-6ff5b388a7e9",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "58ab7e1e-fe77-4731-9b1b-98e49fb734a7",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "13ef5256-5fa3-4dfa-9738-c74a1c06d4be",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "1dd02334-e4da-4fe3-b1a4-177a003e287e",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "65836503-9fed-422a-a64e-2e95e296ac41",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "fc0eadf7-84b1-414b-9f26-f55ffea7d65c",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "6a16fa9a-04d5-4eb6-b3c7-a22c0c0a1d7e",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "117076f8-0ac0-4d03-ab97-b1607da8895d",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "1b442191-aece-43ba-9a5c-ac400fe1b700",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "7245042d-10b1-46e4-a30c-dfc8033a752d",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "de74714f-6787-414c-8312-e711c7bd6cf5",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "c5f3239a-7145-41a7-84b5-59113a53bbd9",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "803dbb10-4103-4eb1-8f6d-430dcc315e57",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "20c59d9f-f42b-4bb5-a1a2-ebaa1d30ed4f",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "9e61aee0-8635-4d28-b939-a7d4112d3898",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "dd8bb477-fd8b-42de-b7d9-c5996052de99",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "553974d8-b4ad-4e86-b6a7-5bf3d0fce181",
+      "result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54"
+    },
+    {
+      "claim_id": "28844bed-417e-4dcd-9443-ecc036153843",
+      "result_id": "7fd418d8-5bd6-4c0e-9c60-73f3f262d223"
+    },
+    {
+      "claim_id": "81d4d2d9-f7b2-4ee1-a1e8-15c4bd79761d",
+      "result_id": "7fd418d8-5bd6-4c0e-9c60-73f3f262d223"
+    },
+    {
+      "claim_id": "47562c7c-eae7-4adb-97dd-b185bb6eb665",
+      "result_id": "7fd418d8-5bd6-4c0e-9c60-73f3f262d223"
+    },
+    {
+      "claim_id": "d98b9962-f7b2-474d-bc0a-c3c2bf46645f",
+      "result_id": "53588d92-8cfd-4a56-94cf-95f854d4218f"
+    },
+    {
+      "claim_id": "80da3d70-f8a6-4950-9805-f76b2dcf1bef",
+      "result_id": "53588d92-8cfd-4a56-94cf-95f854d4218f"
+    },
+    {
+      "claim_id": "1ae4dc4d-8a36-4d7b-b3a7-7e65ec902fd6",
+      "result_id": "53588d92-8cfd-4a56-94cf-95f854d4218f"
+    },
+    {
+      "claim_id": "a7eb0dbb-ba11-424d-94f2-19aa0e700461",
+      "result_id": "53588d92-8cfd-4a56-94cf-95f854d4218f"
+    },
+    {
+      "claim_id": "c5e3a2cd-cd7e-4ced-91f8-ef67c96837b7",
+      "result_id": "53588d92-8cfd-4a56-94cf-95f854d4218f"
+    },
+    {
+      "claim_id": "35727247-8e1b-4786-a896-d8a6348859a2",
+      "result_id": "53588d92-8cfd-4a56-94cf-95f854d4218f"
+    },
+    {
+      "claim_id": "75ecafb4-c31f-4ba7-8474-93d41013a914",
+      "result_id": "4281f042-8f46-440c-81c8-d95737289592"
+    },
+    {
+      "claim_id": "c06d0a67-a214-4601-8570-5fbd0c0ea5d2",
+      "result_id": "4281f042-8f46-440c-81c8-d95737289592"
+    },
+    {
+      "claim_id": "21d927d9-b198-4592-a75e-dc26efe906df",
+      "result_id": "4281f042-8f46-440c-81c8-d95737289592"
+    },
+    {
+      "claim_id": "7602b251-760b-489f-82fb-e08630eace91",
+      "result_id": "4281f042-8f46-440c-81c8-d95737289592"
+    },
+    {
+      "claim_id": "ac108278-a261-44c9-89d1-f1864f7f9951",
+      "result_id": "a96a6511-3b65-47ff-98ad-4547aa4998c4"
+    },
+    {
+      "claim_id": "4818c3a5-1ede-4dc2-8e15-a3391f5e5058",
+      "result_id": "a96a6511-3b65-47ff-98ad-4547aa4998c4"
+    },
+    {
+      "claim_id": "f5d91bb8-f1ba-468f-b622-7f670e076fbc",
+      "result_id": "a96a6511-3b65-47ff-98ad-4547aa4998c4"
+    },
+    {
+      "claim_id": "fd4043d4-81c5-4a7a-b82a-1eaffd10d942",
+      "result_id": "a96a6511-3b65-47ff-98ad-4547aa4998c4"
+    },
+    {
+      "claim_id": "7ede1a0d-3933-4c87-ae7a-c3bcfd072764",
+      "result_id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b"
+    },
+    {
+      "claim_id": "4f2ce9ef-2722-4afa-a011-d37d83ffc217",
+      "result_id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b"
+    },
+    {
+      "claim_id": "859599da-df3e-4994-888d-5680c692f64c",
+      "result_id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b"
+    },
+    {
+      "claim_id": "62182be2-3845-4519-b229-14cdfd49b9e4",
+      "result_id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b"
+    },
+    {
+      "claim_id": "c5332d9c-933c-41fe-a68b-afeceec361db",
+      "result_id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b"
+    },
+    {
+      "claim_id": "732f31e6-48e9-4a1a-b476-7476896cb03b",
+      "result_id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b"
+    },
+    {
+      "claim_id": "3ad82409-d44f-4a58-87dd-739b970215f6",
+      "result_id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b"
+    },
+    {
+      "claim_id": "dfc62186-a482-49a2-a11e-a30602dcd43d",
+      "result_id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b"
+    },
+    {
+      "claim_id": "fa57633b-196e-4b92-a97f-2535b0378568",
+      "result_id": "0e2a83c1-b38c-46e6-a3be-f2680f5a2b3d"
+    },
+    {
+      "claim_id": "0bbdf6c8-f226-40e6-b0ac-7e57fb31b50f",
+      "result_id": "0e2a83c1-b38c-46e6-a3be-f2680f5a2b3d"
+    },
+    {
+      "claim_id": "54164fac-12b3-4f2a-a66b-a4782cc73461",
+      "result_id": "0e2a83c1-b38c-46e6-a3be-f2680f5a2b3d"
+    },
+    {
+      "claim_id": "0895cc71-5980-4465-a1e4-503edd686521",
+      "result_id": "0e2a83c1-b38c-46e6-a3be-f2680f5a2b3d"
+    },
+    {
+      "claim_id": "6f696967-92b0-422e-9939-cfcf8188ef61",
+      "result_id": "6f1451c5-26da-45f0-9aad-c6d5829c2c31"
+    },
+    {
+      "claim_id": "db8a88ff-b451-4c0e-9e4a-c133ca9044a8",
+      "result_id": "6f1451c5-26da-45f0-9aad-c6d5829c2c31"
+    },
+    {
+      "claim_id": "1fb9f0d8-7853-4bbd-b009-0e273d577620",
+      "result_id": "6f1451c5-26da-45f0-9aad-c6d5829c2c31"
+    },
+    {
+      "claim_id": "eb1b7e16-e83b-4476-a9f0-d82f1ecdd213",
+      "result_id": "6f1451c5-26da-45f0-9aad-c6d5829c2c31"
+    },
+    {
+      "claim_id": "c507de87-5f77-40f3-801a-38325e2af6a7",
+      "result_id": "6f1451c5-26da-45f0-9aad-c6d5829c2c31"
+    },
+    {
+      "claim_id": "6c5a4064-a576-43d5-b13e-2ad85ea573a9",
+      "result_id": "6f1451c5-26da-45f0-9aad-c6d5829c2c31"
+    },
+    {
+      "claim_id": "8728906a-4d0b-478c-acb7-5a62cfc17910",
+      "result_id": "4b6736be-e7d1-466a-9f19-56a6662e9ac7"
+    },
+    {
+      "claim_id": "f4cfdf3d-bc74-4743-ab06-d3fa07a37f1f",
+      "result_id": "4b6736be-e7d1-466a-9f19-56a6662e9ac7"
+    },
+    {
+      "claim_id": "c8eaaf38-4f9a-4eeb-af4f-b09ecbd03c82",
+      "result_id": "4b6736be-e7d1-466a-9f19-56a6662e9ac7"
+    },
+    {
+      "claim_id": "49084182-68c0-465b-9cac-92810a8c64bd",
+      "result_id": "4b6736be-e7d1-466a-9f19-56a6662e9ac7"
+    },
+    {
+      "claim_id": "759e1404-51a5-46f7-9e93-7ecb7c1e9581",
+      "result_id": "d1b65473-7fa2-470d-a034-1acf2b24a153"
+    },
+    {
+      "claim_id": "e1b5a761-2504-4887-9f0d-bb8339124b41",
+      "result_id": "d1b65473-7fa2-470d-a034-1acf2b24a153"
+    },
+    {
+      "claim_id": "72e33e6a-7f25-4cfc-b029-f24172944fae",
+      "result_id": "48537cee-6457-4ea6-8b8a-03f9a1a66a4c"
+    },
+    {
+      "claim_id": "95504740-0632-43d1-9d9b-100a289470b0",
+      "result_id": "48537cee-6457-4ea6-8b8a-03f9a1a66a4c"
+    },
+    {
+      "claim_id": "2129286f-ebfa-4ed3-b488-2c55ce7c8623",
+      "result_id": "48537cee-6457-4ea6-8b8a-03f9a1a66a4c"
+    },
+    {
+      "claim_id": "77f3aedc-f11f-4883-8682-adf1aa22e2cd",
+      "result_id": "48537cee-6457-4ea6-8b8a-03f9a1a66a4c"
+    },
+    {
+      "claim_id": "00d5847c-431a-44db-b4a3-251390e079ef",
+      "result_id": "48537cee-6457-4ea6-8b8a-03f9a1a66a4c"
+    },
+    {
+      "claim_id": "aae0786d-253e-4204-88e3-a4dcdee28229",
+      "result_id": "48537cee-6457-4ea6-8b8a-03f9a1a66a4c"
+    },
+    {
+      "claim_id": "efad2e18-d6a0-43a2-9b7f-54df78c850bc",
+      "result_id": "314f2fc7-1fcc-4987-8ff3-0aa29a69cb1b"
+    },
+    {
+      "claim_id": "2df55e2c-819a-4b99-8f80-09123f4ab591",
+      "result_id": "314f2fc7-1fcc-4987-8ff3-0aa29a69cb1b"
+    },
+    {
+      "claim_id": "0339248f-d3b6-4003-94f0-7b46d8c1cc40",
+      "result_id": "314f2fc7-1fcc-4987-8ff3-0aa29a69cb1b"
+    },
+    {
+      "claim_id": "ffbd6fd5-638b-4e3f-b294-3d4a6e8722fa",
+      "result_id": "314f2fc7-1fcc-4987-8ff3-0aa29a69cb1b"
+    },
+    {
+      "claim_id": "7a65d828-60cf-43c3-ba8b-5a5e3a872be4",
+      "result_id": "1cbb77df-aef3-4907-afa5-0e44dac3e89d"
+    },
+    {
+      "claim_id": "20cbdae2-836a-4060-bf98-3bfc71eb4882",
+      "result_id": "1cbb77df-aef3-4907-afa5-0e44dac3e89d"
+    },
+    {
+      "claim_id": "05b6a2dd-95a8-447a-b6e3-85ea53bcd30d",
+      "result_id": "1cbb77df-aef3-4907-afa5-0e44dac3e89d"
+    },
+    {
+      "claim_id": "19b41845-2ea9-40ab-a02a-0694ca9b1785",
+      "result_id": "3572a3b3-f770-4107-8b63-c5381c849015"
+    },
+    {
+      "claim_id": "12f917e6-3622-42bb-a342-b55c80b165a2",
+      "result_id": "3572a3b3-f770-4107-8b63-c5381c849015"
+    },
+    {
+      "claim_id": "2a24d980-41b0-4528-9043-76c53b8311b6",
+      "result_id": "3572a3b3-f770-4107-8b63-c5381c849015"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b206d6f3-363f-4738-b407-7a921a1d5a82",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "5d9205a1-a326-4508-a321-c5fab6bccab0",
+      "peer_result_id": "314f2fc7-1fcc-4987-8ff3-0aa29a69cb1b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C52-C55 regarding identification of adaptive genes using statistical filtering. Both evaluations find the methodology for identifying differentially expressed genes and the requirement for changes in \u22653 populations to be well-supported and appropriate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "3cf3a946-fd15-4454-a220-00d85f112803",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0936e103-cb17-43ad-8000-e211b7886b5c",
+      "peer_result_id": "4281f042-8f46-440c-81c8-d95737289592",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C2, C35, C56, C75 regarding the positive correlation between pleiotropy and parallelism. Both evaluations recognize this as the main finding of the study and find it convincing with appropriate statistical support.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "29532a51-8f48-4a0f-bb14-84e0c490b31b",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "fc9ea9f5-88c7-4601-a653-a08a0724d23c",
+      "peer_result_id": "48537cee-6457-4ea6-8b8a-03f9a1a66a4c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C40-C45 regarding pleiotropy measures. Both evaluations accept the use of tissue specificity and number of tissues as valid proxies for pleiotropy, with appropriate justification for using D. melanogaster data for D. simulans.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "21e86dd1-71a4-4bbc-8104-28748f6fd3cf",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "2aea5390-0f84-49ac-b199-dc7f2147808c",
+      "peer_result_id": "1cbb77df-aef3-4907-afa5-0e44dac3e89d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C90-C92 regarding the comparison between DE and non-DE genes showing an upper limit to pleiotropy's positive effect. Both evaluations find this additional analysis consistent with the main results and well-supported.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "fc625532-3eaf-401a-a33f-cbfac107e19d",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "50ab1331-1851-45a9-8e7e-4330169cf20a",
+      "peer_result_id": "8d0f4aa0-8e73-43a6-8ce6-7f69292eae3b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C5, C37, C62-C65, C81-C82 regarding the causal analysis methodology. Both evaluations accept the BIC-based model selection and path analysis as rigorous and appropriate, acknowledging both direct and indirect effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "9df46a4f-87c0-40f0-8cb9-6cdf64f679be",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4",
+      "peer_result_id": "53588d92-8cfd-4a56-94cf-95f854d4218f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C1, C32-C33, C46-C48 regarding experimental design. Both evaluations affirm the use of isofemale lines, replicated populations, and common garden experiments as appropriate and robust. OpenEval covers additional design claims (C34, C49-C51) not explicitly addressed by peer reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "d4d6f92c-81a3-45aa-bcbb-ddffb79ede26",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "1f2e6343-5eb7-4dbc-acfa-1137994749c1",
+      "peer_result_id": "0e2a83c1-b38c-46e6-a3be-f2680f5a2b3d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C6-C7, C38, C83 regarding the indirect pathway mechanism through reduced variation. Both evaluations accept this interpretation as consistent with the data and supported by evolutionary principles, though peer review does not explicitly address claims C70-C71.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "6fd2cf82-1eb2-482e-b3a6-b1ce920f46b8",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "c8d75970-010a-4dc0-b7d3-64ba4cbbc22d",
+      "peer_result_id": "6f1451c5-26da-45f0-9aad-c6d5829c2c31",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C8-C9, C39, C87-C89 regarding the speculative nature of the direct effect mechanism. Both evaluations rate this as UNCERTAIN, noting the lack of direct evidence for synergistic pleiotropy and the speculative nature of the interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "727ba825-1b8a-42b6-8684-3b2d1b9884c5",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "3e9295ae-5e45-4d91-b827-8ce008bf9bb5",
+      "peer_result_id": "a96a6511-3b65-47ff-98ad-4547aa4998c4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C3, C36, C57 regarding negative correlations between pleiotropy and ancestral variation. Both evaluations find these correlations statistically significant and well-supported. OpenEval addresses additional related claims (C4, C58, C69) not explicitly covered by peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "ca7aa7ee-e3e9-4965-813a-2cfce61e355c",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "981615a3-0cdc-4697-9c07-f76d736faaad",
+      "peer_result_id": "4b6736be-e7d1-466a-9f19-56a6662e9ac7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disagree",
+      "comparison": "Strong disagreement on claims C78-C80 regarding ancestral variation representing genetic variation. OpenEval rates as SUPPORTED based on correlation between replicates and cited literature. Peer reviewers rate as UNSUPPORTED, explicitly challenging the small sample size (n=20) and lack of direct evidence linking sequence variation to expression variation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "ebbed9e6-462a-4dbf-8275-c3d3c1fcc294",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "811ba862-112d-4896-bc8a-5b089bd8fffe",
+      "peer_result_id": "d1b65473-7fa2-470d-a034-1acf2b24a153",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C60-C61 regarding simulation validation. OpenEval rates as SUPPORTED, finding simulations appropriately model polygenic traits and validate empirical observations. Peer review rates as UNCERTAIN, with one reviewer questioning whether the polygenic adaptation framework can be applied to gene expression parallelism itself.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "b5813fcb-c6de-41d3-ad6f-afeb1b3533c6",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "7464fade-0644-4e86-ab7c-559b62ad8bd4",
+      "peer_result_id": "3572a3b3-f770-4107-8b63-c5381c849015",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C49-C51 regarding methodological justifications for experimental design. Both evaluations accept these literature-based justifications without challenge. This represents partial overlap with OpenEval R1's broader coverage of experimental design.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "f42ee17b-63f4-487a-9fe7-43cf4d4db936",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "3598800c-bdc4-44de-8cfd-1ac0a110f642",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C68, C74, C76-C77 regarding synthesis of findings and contrast with de novo mutation expectations to be well-supported. No corresponding peer review evaluation explicitly addresses these synthetic/interpretive claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "635053d9-ef4b-4d69-a458-b42a6ff2182f",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "cfd633fb-0590-4ce4-ad53-765bab3c4d54",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C10-C31 providing literature context and theoretical background to be appropriately cited and supported. No corresponding peer review evaluation explicitly addresses these background claims, though they are implicitly accepted.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    },
+    {
+      "id": "9eab43e8-b18b-4bc8-bae2-695b1c916e7d",
+      "submission_id": "33efb8a1-bf45-4cae-ad17-cd33ff8594b6",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "7fd418d8-5bd6-4c0e-9c60-73f3f262d223",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds claims C72-C73, C93 acknowledging limitations and alternative explanations to be appropriately supported. No corresponding peer review evaluation explicitly addresses these limitation acknowledgments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T18:48:09.112743Z"
+    }
+  ]
+}

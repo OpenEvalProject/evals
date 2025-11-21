@@ -1,0 +1,242 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The authors establish that recurrent mutations (i \u2265 3 hits in TCGA with n=500-1000) represent high-probability cancer-driving nucleotides (CDNs) based on the premise that advantageous mutations should recur frequently in repeated cancer evolution, while nonrecurrent mutations are not advantageous.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states 'The evidence that recurrent SNVs or CDNs are common in true cancer driver genes is convincing.' Reviewer 3 affirms 'Empirically, mutation frequency is an excellent marker of a driver gene because canonical driver mutations typically have recurrent SNVs' and notes 'the authors provide a solid quantitative analysis that indicates many recurrent mutations are likely to be cancer-driver mutations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C71",
+      "C109"
+    ],
+    "result": "The study identifies 50-150 CDNs per cancer type in TCGA, with an average of ~76 strong CDNs confidently identified for each cancer type based on current sample sizes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 acknowledges 'Despite identifying 50-150 CDNs per cancer type' without questioning these numbers. Reviewer 3 confirms 'Using the TCGA database, the paper illustrates that CDNs can identify canonical driver mutations (Fig 3).' The identification of this range is accepted by all reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C72",
+      "C108",
+      "C116",
+      "C118"
+    ],
+    "result": "The authors project that approximately 10 times more CDNs remain undiscovered than currently identified, with hundreds to low thousands of A1 and A2 mutations expected to be CDNs, representing perhaps only 10% of all possible CDNs detected at the current threshold of i*=3.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor states there is 'more limited evidence that many more undiscovered cancer driver mutations will have CDNs.' Reviewer 2 notes 'a significant number remain undiscovered' but also points out 'The challenges in direct functional testing of CDNs due to the complexity of tumor evolution and unknown mutation combinations limit the practical applicability of the findings,' suggesting uncertainty about the projections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C22",
+      "C69"
+    ],
+    "result": "Current analysis shows only 0-2 CDNs identified per patient in most cancer types, whereas 5-8 CDNs are theoretically expected among the 50-100 coding region mutations each patient carries.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly acknowledges 'The authors found a significant number of CDNs remain undiscovered, with only 0-2 identified per patient out of an expected 5-8, indicating that many important mutations are still missing.' This finding is treated as a key observation by the reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C12",
+      "C67",
+      "C68",
+      "C120"
+    ],
+    "result": "The authors project that expanding sample size to 10^5-10^6 patients would enable identification of most CDNs, with sensitivity increasing 25-fold (requiring only 12 recurrences instead of 3/1000) and allowing discovery of most undiscovered CDNs in the A1 and A2 classes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor notes 'more limited evidence...that this approach could identify these undiscovered driver genes with about 100,000 samples,' indicating acceptance of the approach but uncertainty about the projections. No reviewer directly validates the specific calculations or sensitivity improvements claimed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35"
+    ],
+    "result": "CDNs tend to code for amino acids with divergent chemical properties (high \u0394Ui values), exposing changes to strong selection, while similar amino acids do not manifest strong fitness increases in CDNs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 states 'the paper illustrates...that most CDN are likely to disrupt protein function (Fig 2),' directly supporting the claim that CDNs alter amino acids in functionally significant ways. The \u0394Ui analysis in Figure 2 is accepted without challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C77"
+    ],
+    "result": "Type II genes (noncanonical cancer drivers with only 1-2 CDN sites) outnumber type I genes (canonical CDGs like TP53, PIK3CA, EGFR) by 5:1 (229:45), with type II genes showing only 23% overlap with canonical CDG lists and representing a new class of cancer drivers missed by conventional whole-gene definitions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes 'The study provides a detailed examination of cancer-driving mutations at the nucleotide level, offering a more precise understanding than traditional gene-level analyses.' Reviewer 3 acknowledges the identification of genes beyond canonical drivers, though notes 'There is an incomplete discussion of oncogenes...and tumor suppressor genes,' suggesting the finding is accepted but could benefit from more mechanistic discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C93",
+      "C94"
+    ],
+    "result": "CDNs are more widely shared among cancer types than canonical CDGs, with many CDNs observed in multiple cancer types (NC12 > 3) even when not qualifying as drivers in all types, suggesting pan-cancer driving potentials visible at nucleotide but not gene-level resolution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'In addition, CDNs can be shared between cancer types (Fig 4),' directly supporting this finding. The pan-cancer property demonstrated in Figure 4 is accepted without challenge by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C58"
+    ],
+    "result": "Analysis of TP53 shows that usually only one CDN change is observed per patient whereas two or three are expected, suggesting CDNs on the same gene are redundant in their tumorigenic effects such that the second hit may not yield additional advantages.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding from Figure 3B is not challenged by any reviewer. Reviewer 3's acknowledgment that 'the paper illustrates that CDNs can identify canonical driver mutations (Fig 3)' implicitly accepts the redundancy pattern shown in this figure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56"
+    ],
+    "result": "Survival analysis demonstrates that lung cancer patients with EGFR CDN mutations (group 1) have significantly higher survival rates with targeted therapy compared to patients with non-CDN EGFR mutations (group 2) or wild-type EGFR (p<0.001), supporting the hypothesis that non-CDN mutations, even on canonical genes, are not cancer drivers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'The study indicated that identifying more CDNs could potentially significantly impact the development of personalized cancer therapies, improving patient outcomes,' which implicitly accepts the survival analysis findings. The Figure 5 data is not challenged by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "In most cancer types, 10-30% of patients have no known CDNs (>50% in breast cancer), suggesting 33% of lung cancer patients and 27.7% who receive targeted treatment may not respond well based on current CDN identification.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 acknowledges 'the research reveals that a significant number remain undiscovered, limiting current therapeutic applications,' which aligns with the finding that many patients lack identifiable CDNs. The Table 4 data is accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors argue that missense mutations on tumor suppressor genes (TSGs) may often be gain-of-function (GOF) rather than loss-of-function (LOF), based on evidence that missense mutations are far more prevalent (>10\u00d7) than nonsense mutations in many TSGs, which cannot be explained by LOF mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 notes 'There is an incomplete discussion of oncogenes (where activating mutations tend to target a single amino acid or repeat) and tumor suppressor genes (where inactivating mutations may be more spread across the gene),' indicating this interpretation requires more thorough discussion and validation. The claim challenges conventional understanding without sufficient mechanistic evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The CDN approach can be applied to non-coding regions, though current whole-genome sequences are insufficient for systematic detection, and preliminary analysis suggests CDN density in non-coding regions is orders of magnitude lower than in coding regions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'The method could be more valuable when applied to the noncoding genome, where driver mutations in promoters or enhancers are relatively rare, or as yet to be discovered' and notes 'this method could potentially provide new noncoding driver CDNs,' supporting the potential application while acknowledging current limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C11",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The low level of CDN identification has hampered functional testing and gene-targeted therapy, though CDNs with their strong tumorigenic strength are suitable candidates for functional testing, which has only recently been done for best-known mutations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly notes 'The challenges in direct functional testing of CDNs due to the complexity of tumor evolution and unknown mutation combinations limit the practical applicability of the findings,' directly acknowledging both the current limitations and the potential for CDNs to guide functional testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study analyzed SNV data from TCGA (7,369 patients across 12 cancer types) downloaded from GDC Data Portal, filtering for mutations identified by at least two pipelines, excluding germline variants >1\u2030 frequency in gnomAD, and removing hypermutator patients with >3000 coding mutations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological approach is implicitly accepted by all reviewers. Reviewer 3 states 'Using the TCGA database, the paper illustrates that CDNs can identify canonical driver mutations,' confirming acceptance of the data source and filtering approach.",
+    "result_type": "MINOR"
+  }
+]

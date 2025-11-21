@@ -1,0 +1,331 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study performed hypothesis-free Mendelian randomization analysis using the IVW model as the primary method on 18,097 exposure traits and 16 AD outcome traits, generating 400,274 total data entries. The IVW analysis yielded 73,129 records with 4,840 exposure traits categorized into 10 groups, with sensitivity analyses conducted using six additional MR models. SNPs were selected using genome-wide significance thresholds (p<5\u00d710\u207b\u2078) and LD independence criteria (r\u00b2<0.001), with Bonferroni correction applied (p<1.727e-07).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological approach is clearly described with appropriate statistical rigor (C2, C116-C121). The data generation and categorization are explicitly quantified (C3-C5, C27-C37), and sensitivity analyses using multiple MR models strengthen the robustness assessment (C38-C40). The SNP selection criteria follow established GWAS standards, and the Bonferroni correction appropriately addresses multiple testing concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C41",
+      "C42",
+      "C122"
+    ],
+    "result": "The authors developed MRAD, an online interactive platform for AD Mendelian randomization research, built using R Shiny and hosted on Ubuntu 20.04. The platform contains six modules and allows users to search through 400,274 records with interactive visualization and download capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The platform development is explicitly described with technical details (C6, C122), module structure (C41), and functionality (C42). The claim of being the first comprehensive platform of its kind (C26) is stated but cannot be independently verified from the manuscript alone. However, the platform's existence and features are well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study identified 80 exposure traits with significant and consistent effects (p<0.05) across three main AD outcome traits, categorized into five groups: Medical laboratory science (n=51), Family history (n=10), Disease (n=9), Molecular trait (n=7), and Lifestyle trait (n=3). Of these, 63 were risk factors (positive associations) and 16 were protective factors (negative associations), with one exception showing inconsistent directionality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification of 80 traits with consistent effects is clearly stated with categorical breakdown (C43-C44). The directional associations are quantified (C45-C46), and the ulcerative colitis exception is explicitly noted (C47). However, the p<0.05 threshold is relatively permissive given the large number of tests, though Bonferroni correction is mentioned elsewhere for more stringent significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Blood lipids and lipoproteins showed significant associations with AD outcomes: 32 items were positively associated with main AD traits (including apolipoprotein B with both EOAD and LOAD), while 4 items were negatively associated (including apolipoprotein A-I with both EOAD and LOAD, with stronger effects for EOAD).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The lipid associations are clearly quantified (C48-C49, C53) with specific examples provided (C50-C52, C54-C56). The differential effect strength for apolipoprotein A-I between EOAD and LOAD (C55) adds nuance. These findings align with established AD research on lipid metabolism, though the manuscript should provide effect sizes and confidence intervals for complete evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Immunological and plasma protein markers showed associations with AD: 12 immunological test items (including CD33 on various cell types) were positively associated with AD outcomes, while 3 C-reactive protein measures were negatively associated with both EOAD and LOAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunological findings are quantified (C57-C58) and the C-reactive protein associations are clearly stated (C59-C60). However, the negative association with C-reactive protein contradicts some prior literature suggesting CRP as a risk factor for AD, which warrants discussion. The consistency across three CRP measures strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Family history of AD showed causal effects on AD risk, with parental or family history of AD positively associated with both EOAD and LOAD across 10 family history items.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The family history associations are clearly stated (C61-C62) and align with established genetic epidemiology of AD. However, using family history as an exposure in MR analysis may be problematic as it reflects both genetic and environmental factors, potentially violating MR assumptions. The manuscript should address this methodological concern.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63"
+    ],
+    "result": "Nine disease items showed causal effects on AD outcomes, categorized into dementia (n=5), neurodegenerative diseases (n=2), mental disorders associated with neurological diseases (n=1), and digestive system diseases (n=1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the categorization is clearly stated (C63), using other forms of dementia and neurodegenerative diseases as exposures for AD raises concerns about reverse causality and shared pathophysiology. The manuscript does not adequately address whether these represent true causal factors or reflect diagnostic overlap and shared genetic architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C64",
+      "C65",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CD33 (myeloid cell surface antigen) was identified as a novel therapeutic target, positively associated with AD, EOAD, and LOAD. CD33 is a 67 kDa transmembrane protein expressed in microglia that affects microglial activation and has been identified in GWAS as a high-risk gene for AD. Animal studies show CD33 knockdown reduces amyloid plaques, and the sialic acid-binding site represents a promising pharmacophore.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MR findings for CD33 are clearly stated (C7, C65) and supported by extensive literature on CD33 biology (C73-C80) and therapeutic potential (C81-C83). The convergence of MR evidence with prior GWAS, functional studies, and animal models strengthens the therapeutic target identification. However, the manuscript relies heavily on cited literature rather than presenting new mechanistic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C67",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "TBCA (tubulin-specific chaperone A) was identified as a protective factor, negatively associated with AD, EOAD, and LOAD at Bonferroni-corrected significance. TBCA regulates \u03b1/\u03b2-tubulin proportions and microtubule formation, with silencing leading to abnormal aggregation and apoptosis. Higher TBCA levels are associated with lower AD risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MR findings for TBCA are clearly stated with stringent statistical significance (C8, C67, C84). The biological rationale is well-supported by literature on TBCA function in microtubule dynamics (C85-C88) and prior association with AD risk (C89). The inference of TBCA as a protective factor (C90) is reasonable given the convergent evidence, though experimental validation would strengthen the claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C68",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "VPS29 (vacuolar protein sorting-associated protein 29) was identified as a protective factor, negatively associated with AD, EOAD, and LOAD at Bonferroni-corrected significance. VPS29 is a component of the retromer complex that regulates APP and \u03b2-secretase transport, with dysfunction leading to increased A\u03b2 production. Stabilizing the retromer complex represents a potential therapeutic approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MR findings for VPS29 are clearly stated with stringent significance (C9, C68, C91). The mechanistic rationale through retromer function is well-established in the literature (C92-C98), and the therapeutic potential is supported by studies on retromer stabilization (C99). The inference of VPS29 as a therapeutic target (C100) is well-justified by the convergent evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C69",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "GNAI3 (guanine nucleotide-binding protein G(k) subunit alpha) was negatively associated with AD and LOAD but showed no significant association with EOAD. GNAI3 is part of the G protein family involved in signal transduction, with the alpha subunit determining G protein specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MR findings for GNAI3 are clearly stated (C10, C69, C101), showing differential associations between LOAD and EOAD. The biological background on G proteins is provided (C102-C104), though the manuscript lacks detailed mechanistic explanation for how GNAI3 specifically relates to AD pathology. The differential association with LOAD versus EOAD is interesting but requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C11",
+      "C70",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "PSME1 (proteasome activator complex subunit 1) was negatively associated with AD and LOAD but showed no significant association with EOAD. PSME1 encodes PA28\u03b1, which increases proteasome activity and is involved in protein degradation. PA28\u03b1 overexpression in mice prevents hippocampal protein aggregation and enhances learning and memory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MR findings for PSME1 are clearly stated (C11, C70, C107) with differential associations between LOAD and EOAD. The biological rationale is supported by literature on proteasome function (C108-C112). The inference of PSME1 as a therapeutic target (C113) is reasonable but requires further validation. The differential association with LOAD versus EOAD warrants mechanistic investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C71"
+    ],
+    "result": "Two glutamine measures (met-c-860 and met-d-Gln) showed negative associations with main AD outcome traits but no significant associations with EOAD or LOAD subtypes (p>0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The findings show inconsistency between main outcome traits and AD subtypes (C66, C71), which raises questions about the robustness of the associations. The lack of significance with EOAD and LOAD despite associations with main outcomes suggests potential heterogeneity or statistical artifacts. Further investigation is needed to clarify these inconsistent findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72"
+    ],
+    "result": "Three lifestyle trait items showed causal effects on main AD outcome traits and associations with EOAD and LOAD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The claim is stated (C72) but lacks specific details about which lifestyle traits, their directionality, or effect sizes. Without this information, the result cannot be adequately evaluated. The manuscript should provide complete details on these lifestyle associations given their potential public health importance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "The study acknowledges limitations in population generalizability, as all GWAS datasets used were from European populations only, restricting the applicability of findings to other ancestries.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors explicitly acknowledge this important limitation (C114-C115), which is critical for interpreting the generalizability of results. This is a significant constraint given known differences in AD genetics across populations. The transparency in reporting this limitation is appropriate, though it substantially limits the global applicability of findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript provides epidemiological context for AD, including its classification into EOAD and LOAD, with LOAD comprising ~95% of cases and having stronger genetic predisposition. Current global prevalence exceeds 50 million with projections of 115 million by 2050, making AD the fifth leading cause of death worldwide.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are well-supported by cited literature (C12-C16) and represent established knowledge in the field. The epidemiological data provides important context for the study's significance. However, these are not novel findings from the current study but rather literature-based background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript reviews prior epidemiological associations between AD and various factors (metabolic comorbidities, serological parameters, lifestyle factors) while noting that most observational studies cannot establish causality due to reverse causality and confounding bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The review of prior associations is appropriately cited (C18-C20), and the critique of observational epidemiology (C21) correctly identifies key limitations that motivate the MR approach. This provides appropriate scientific context for the study's methodological choice, though these are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The manuscript describes the methodological advantages of Mendelian randomization for causal inference and the use of the MRC IEU OpenGWAS database, which contains 42,335 GWAS summary datasets and is described as the largest open GWAS database globally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MR methodological principles are correctly stated with appropriate citations (C22-C23). The description of the OpenGWAS database (C24-C25) provides important context for data sources. However, the claim of being the \"largest\" database globally (C24) may be time-sensitive and difficult to verify definitively.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1"
+    ],
+    "result": "AD is characterized as a complex degenerative disease of the central nervous system with challenging pathogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an accurate definitional statement (C1) that provides basic context for the study. It represents established knowledge rather than a novel finding.",
+    "result_type": "MINOR"
+  }
+]

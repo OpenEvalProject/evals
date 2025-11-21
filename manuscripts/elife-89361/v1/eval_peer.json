@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C6",
+      "C7",
+      "C13",
+      "C28",
+      "C70",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The authors propose a novel application of Local Moran's I coefficient for unsupervised image segmentation that does not require predefined thresholds or teaching algorithms. The method utilizes both spatial information and relative intensity of neighboring pixels to differentiate signal, background, and noise, making it particularly suitable for noisy images.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers explicitly affirm the novelty and value of the method. Reviewer 1 states the method is 'important and innovative' and 'significantly enhances accuracy over basic threshold-based techniques.' Reviewer 2 emphasizes it is 'exceptionally accessible to biologists' and provides 'a highly practical alternative to AI-based methods.' Reviewer 3 confirms 'the methods section is clear in explaining the rationale and the steps of the new method.' No concerns were raised about the methodological claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C78",
+      "C80"
+    ],
+    "result": "The authors demonstrate through artificially generated images with varying noise levels that Moran's method outperforms threshold-based methods, particularly in high noise conditions. The superior performance is attributed to effective elimination of false positive pixels from isolated high-intensity noise, with FPR remaining nearly constant while threshold-based FPR increases dramatically with noise.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly validate this finding. Reviewer 2 states the manuscript provides 'compelling evidence through multiple experiments, showcasing the method's superior performance over traditional threshold-based techniques, particularly in noisy environments.' Reviewer 3 notes 'several proof-of-concept experiments are performed to confirm the sensitivity and validity' and that the study 'is able to compare these approaches directly and reveal their relative power.' The quantitative comparisons in Figures 2 and 3 are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors establish that optimal Moran's order is independent of noise level and shows a linear correlation with object size (approximately 0.25 times the object size). The method is relatively insensitive to exact matrix size within a certain range (Moran's order 3-8), especially in noisy conditions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological findings are not questioned by any reviewer. Reviewer 2 notes the 'detailed figures and comprehensive references greatly enhance the manuscript's credibility,' which includes the supplementary data demonstrating these relationships. The systematic parameter testing shown in Figure 2 supplements is implicitly accepted as the reviewers raise no concerns about parameter selection or optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "In natural images, the distribution of false positive pixels differs between methods: threshold-based method produces homogeneously distributed false positives due to background noise, while Moran's method produces false positives primarily surrounding true objects, largely from detecting out-of-focus pixels not selected by human experts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly validates this application, stating 'dual immuno-electron microscopy was used to test the biological relevance of a colocalization that was revealed by Local Moran's segmentation approach' and calling it 'a strong approach to verify the validity of the new approach.' The comparison with human expert selections and the characterization of false positive distributions in Figure 3 are accepted without critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Using Moran's method on confocal microscopy images, the authors identified high-intensity Kv4.2 and Kv4.3 ion channel clusters in thalamic neuropil. Electron microscopy confirmed these channels are preferentially localized to large caliber proximal dendrites (>1.2 \u00b5m diameter) with more than three times higher density than thin dendrites, as demonstrated through preembedding immunogold and freeze-fracture replica labeling.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes the 'findings related to Kv4.2 in the thalamus are noteworthy' and that 'the authors have chosen to retain these results within the current manuscript to strengthen the overall narrative and relevance.' Reviewer 3 confirms the EM data 'revealed that the two markers were present in terminals and their post-synaptic partners, respectively,' validating the biological findings. The electron microscopy validation is explicitly praised as strengthening the method's credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors demonstrate that large Kv4.2/4.3 clusters (>5 \u00b5m\u00b2) show strong spatial correlation with vGluT2-positive subcortical sensory terminals, with colocalized clusters being significantly larger (12.21 \u00b1 18.63 \u00b5m\u00b2) and more intense than non-colocalized regions. This association was confirmed by electron microscopy showing >4-fold higher gold particle density at membrane segments contacted by vGluT2 boutons, revealing a novel association between voltage-gated ion channel clusters and specialized presynaptic terminals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly validates this finding, stating 'dual immuno-electron microscopy was used to test the biological relevance of a colocalization that was revealed by Local Moran's segmentation approach' and 'The EM revealed that the two markers were present in terminals and their post-synaptic partners, respectively. This is a strong approach to verify the validity of the new approach.' Reviewer 2 acknowledges these findings are 'noteworthy' and strengthen the manuscript. The biological discovery is accepted as valid proof-of-concept for the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The authors provide background context on the state of image segmentation, noting that unsupervised segmentation remains partially resolved and current methods either require arbitrary thresholds or large teaching datasets. They discuss limitations of threshold-based methods, including subjectivity in parameter selection and inability to guarantee exclusion of spatially inhomogeneous noise.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are implicitly accepted by all reviewers as they frame the problem the method addresses. Reviewer 1 acknowledges the method 'significantly enhances accuracy over basic threshold-based techniques,' implicitly accepting the characterization of current method limitations. Reviewer 2 notes it offers 'a highly practical alternative to AI-based methods, which often require significant training data,' supporting the claim about teaching dataset requirements. No reviewer challenges these contextual statements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors establish the origins of Moran's method in geoinformatics and document prior applications of the global version in biomedical imaging, while noting that the local version has not been previously used for image segmentation. They distinguish between global Moran's (which characterizes whole images) and local Moran's (which segments individual pixels).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The historical context and novelty claim are accepted by reviewers. Reviewer 1 calls it 'innovative' and Reviewer 2 describes it as 'valuable and innovative,' implicitly accepting the novelty of applying Local Moran's to image segmentation. Reviewer 2 explicitly notes it is 'non-AI computational method,' distinguishing it from current approaches. The citation-based claims about prior applications are not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The authors speculate about future extensions of the method to 3D image segmentation and temporal signal analysis, and discuss potential functional roles of the Kv4.2/vGluT2 association, noting that functional relevance remains to be determined but may involve timing precision of sensory integration or non-synaptic roles.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These speculative claims are implicitly accepted as appropriate discussion points. Reviewer 2 notes 'there are some concerns about the computational demands of the method, especially when applied to large-scale or 3D image analysis,' acknowledging the 3D extension as a relevant future direction without challenging its feasibility. The functional speculation about Kv4.2 is not critiqued, and reviewers accept the biological findings as strengthening the manuscript despite uncertain functional significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors provide biological context about voltage-gated ion channel distribution patterns in neurons and identify a knowledge gap regarding Kv4.2/4.3 subcellular distribution in thalamic cells. They describe the experimental approach using C57Bl/6 mice and vGluT2 as a marker for subcortical terminals.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These contextual and methodological details are accepted without challenge. Reviewer 3 notes 'The methods section is clear' and 'Figures are appropriate and effective in illustrating the methods and the results.' The biological rationale and experimental design are implicitly validated through reviewers' acceptance of the findings and their emphasis on the EM validation as strengthening the conclusions.",
+    "result_type": "MINOR"
+  }
+]

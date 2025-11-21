@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C34",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C87",
+      "C89",
+      "C90",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The study developed a multiscale texture analysis pipeline using radiomics to extract four central moments (mean, variance, skewness, kurtosis) from BigBrain histological data at multiple kernel sizes (2-10 voxels), capturing both fine-grain and coarse features of amygdala cytoarchitecture. The resulting feature bank showed heterogeneous spatial patterns across moments, with mean intensities increasing ventral-to-dorsal, variance highest at borders, and skewness/kurtosis co-varying within the lateral nucleus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological approach is well-documented with appropriate citations (C89, C147, C148) and clear description of parameters (C37, C38, C149). The observations about spatial patterns (C41-C43) are directly supported by the feature bank analysis shown in Figure 1B. The multiscale approach is theoretically grounded and appropriately captures microstructural variation at different spatial scales.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C91",
+      "C107",
+      "C150",
+      "C151"
+    ],
+    "result": "UMAP dimensionality reduction of the histological feature bank identified two principal components (U1 and U2) capturing distinct aspects of amygdala microstructure. U1 primarily reflected moment-specific variations (especially mean intensities), while U2 captured global intensity covariations across all moments. The UMAP parameters were kept at default settings (n_neighbors=15, min_dist=0.1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The UMAP application is well-justified (C45, C107, C150) with appropriate parameter documentation (C151). The interpretation of U1 and U2 (C48-C52, C91) is supported by systematic analysis of feature sorting shown in Figure 1E and Supplementary files. The distinction between moment-specific (U1) and global (U2) variations is clearly demonstrated through the data visualizations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "U1 showed strong spatial organization along the inferior-superior axis (r=0.8340, p<0.001) and posterior-anterior axis (r=-0.5282, p<0.001), but not the medial-lateral axis (r=0.1399, p=0.441). U2 showed significant correlation only with the posterior-anterior axis (r=0.2793, p=0.002), with no significant correlation to inferior-superior (p=0.909) or medial-lateral axes (p=0.068).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The spatial correlations are quantitatively reported with appropriate statistical testing using variogram matching (C55-C57). The strong correlation of U1 with the inferior-superior axis (C53, C56) is statistically robust (p<0.001) and consistent with known amygdala anatomy. The lack of significance for U2 along most axes (C56, C57) is appropriately reported and interpreted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C92"
+    ],
+    "result": "The UMAP-derived U1 component successfully distinguished established amygdala subdivisions (CM, SF, LB) from independent probabilistic maps based on 10 post-mortem brains. ANOVA revealed significant differences in U1 values across the three subdivisions (F=1630.8, p<0.001), while U2 showed no significant differences (F=30.3, p=0.581).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The validation against independent expert-labeled data (C58, C92) is a strength of the study. The statistical analysis (C61, C62) clearly demonstrates that U1 captures biologically meaningful subdivisions with very strong effect size (F=1630.8). The visualization in Figure 1H-I supports the quantitative findings. This provides strong evidence for the biological validity of the data-driven approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The histology-derived framework was successfully translated to in vivo 7T qT1 MRI data from 10 healthy participants. U1 showed consistent spatial organization across all subjects, with significant correlation to the inferior-superior axis in all participants (Supplementary file 1c). U2 showed lower consistency, with no coordinate axis significantly correlated in more than 7/10 subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The translation to in vivo data (C7, C65-C68) demonstrates generalizability of the method. The consistent finding of U1 spatial organization across all 10 subjects (C69) is a strength, though the small sample size (n=10) limits generalizability claims. The inconsistency of U2 (C71) is appropriately acknowledged and discussed as potentially reflecting artifacts or subject-specific variance (C98). The validation supports U1 as a robust microstructural axis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Microstructurally-defined amygdala subregions (top and bottom 25% of U1 values) showed significantly different functional connectivity profiles. The superior subregion (high U1) showed stronger connectivity to prefrontal cortex and all cortical networks, particularly limbic, frontoparietal, and default mode networks (pFWE<0.05). Analysis used mixed-effects models controlling for age, sex, and subject identity, with FWE correction using random field theory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The functional connectivity analysis is methodologically sound with appropriate statistical controls (C163) and multiple comparisons correction (C164). The seed region definition (C73-C74) is justified by the consistent U1 spatial organization. The findings (C75-C77) are clearly visualized in Figure 3B-C and align with prior literature on amygdala-prefrontal connectivity. The use of Fisher Z-transformation (C162) is appropriate for correlation-based connectivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C122",
+      "C123",
+      "C165"
+    ],
+    "result": "Meta-analytic decoding using NeuroSynth revealed functional dissociations between microstructurally-defined subregions. The high U1 region was associated with autobiographical memory terms, while the low U1 region was associated with emotional face processing (happy, neutral, fearful faces). The contrast map (high>low U1) was associated with self-referential processing, introspection, and reward-related terms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The meta-analytic decoding approach (C165) provides functional interpretation of connectivity patterns using an established database (NeuroSynth). The dissociation between cognitive (memory) and affective (face processing) functions (C78-C79, C122-C123) is consistent with known amygdala functional specialization. However, the method relies on reverse inference which has known limitations, and the specificity of the associations should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C125"
+    ],
+    "result": "The framework showed generalizability to the right hemisphere, with replication of main findings in right amygdala histological analysis. However, functional connectivity dissociations were more subtle in the right hemisphere, leading to similar functional decoding across subregions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The right hemisphere replication (C64) strengthens the findings by demonstrating bilateral consistency of the microstructural organization. The more subtle functional differences in the right hemisphere (C125) are appropriately reported and may reflect true hemispheric asymmetries in amygdala function or limitations in statistical power. The supplementary figure provides visual support for these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C109",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study acknowledges several limitations: small sample sizes (n=1 for BigBrain, n=10 for MRI), potential sensitivity of U2 to artifacts or subject-specific variance, spatial autocorrelation potentially emphasizing continuous rather than discrete boundaries, considerable overlap between subregional connectivity networks, and relatively low SNR in the amygdala region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The authors appropriately acknowledge multiple limitations (C97, C109, C118-C121). The small sample size (C97) is a significant constraint, particularly for the histological analysis (n=1). The discussion of U2 inconsistency (C98) and spatial autocorrelation effects (C109) shows critical self-assessment. The overlap in connectivity networks (C118) and low SNR (C121) are realistic technical challenges in amygdala imaging that appropriately temper the conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C84",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C99",
+      "C113",
+      "C129",
+      "C130"
+    ],
+    "result": "The study presents a comprehensive, data-driven framework for mapping amygdala microstructure-function relationships that complements existing manual and deep learning approaches. Key advantages include ease of application to new datasets, no requirement for manual expertise or large training datasets, and ability to recover anatomical pathways from microarchitectural information alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The framework's advantages (C94-C96) are well-articulated and represent genuine improvements over existing methods. The complementary nature to prior approaches (C93) is appropriately positioned. However, the claimed advantages should be balanced against the acknowledged limitations (small sample size, single histological specimen). The framework's utility (C99, C113, C129-C130) is supported by the successful validation and functional connectivity findings, though broader validation in larger cohorts would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C117",
+      "C124",
+      "C127",
+      "C128"
+    ],
+    "result": "The identified bipartite division along inferior-superior and medial-lateral axes aligns with previous structural and functional connectivity studies using diffusion MRI and rsfMRI. The findings are consistent with cortical principles of structure-function coupling and prior work on amygdala-prefrontal connectivity, as well as chemoarchitectural descriptions involving 5-HT receptor distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The contextualization with prior literature (C110-C111, C117, C124) strengthens the findings by demonstrating convergence across multiple methodologies. The parallel to cortical structure-function principles (C112) provides theoretical grounding. The connection to chemoarchitecture (C127-C128) is interesting but somewhat speculative (C128 is marked as INFERENCE), as the receptor distribution data comes from different studies and the spatial correspondence is qualitative rather than quantitative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C126"
+    ],
+    "result": "Qualitative anatomical correspondence showed that high U1 values (top 25%) overlapped with superficial and centromedial subregions, while low U1 values (bottom 25%) overlapped with laterobasal division. These microstructurally-defined subregions showed differential functional associations, potentially capturing dissociations in fear-related processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qualitative anatomical correspondence (C114-C115) is supported by the quantitative validation against probabilistic maps (C61). The functional connectivity findings (C116) align with established literature on CM/SF and LB connectivity patterns. However, the association with fear-related processes (C126) is more speculative and based primarily on the meta-analytic decoding and indirect comparison to chemoarchitectural data. This interpretation should be considered hypothesis-generating rather than definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The study utilized the BigBrain dataset (100 \u03bcm resolution, 65-year-old male donor) for histological analysis, with amygdala segmentation based on existing manual delineations warped to histological space using BigBrainWarp. Validation used probabilistic maps from 10 post-mortem brains, thresholded at top 5% probability values. Left hemisphere was used for main analyses, right hemisphere for validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data sources and preprocessing steps are well-documented (C135-C143) with appropriate citations. The use of established segmentation and registration tools (C140-C141) is appropriate. The conservative approach of eroding masks by 5 voxels (C142) and using high probability thresholds (C146) reduces false positives. The single-subject histological data (C135) is a limitation but is standard for ultra-high resolution histology. The validation strategy using independent probabilistic maps (C144-C145) is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "In vivo MRI data were acquired from 10 healthy adults (5 men, mean age 27.3\u00b15.71 years) at 7T using MP2RAGE for qT1 (0.5mm resolution) and multi-echo EPI for rsfMRI (1.9mm resolution). Processing used micapipe v0.2.3, FastSurfer 2.0.0 for surface reconstruction, and tedana for multi-echo denoising. Ethical approval and informed consent were obtained.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The MRI acquisition parameters (C155) and processing pipeline (C157-C160) are thoroughly documented with appropriate software citations. The use of 7T provides high resolution and SNR. The qT1 sequence sensitivity to myeloarchitecture (C156) is supported by citations. Multi-echo acquisition with tedana denoising (C160) is a strength for removing non-BOLD artifacts. The sample demographics (C152) and ethical procedures (C153-C154) are appropriately reported. The small sample size (n=10) limits statistical power but is reasonable for an ultra-high field study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "The authors position their work as setting the stage for future investigations of subcortico-cortical structure-function coupling, with potential applications to understanding brain-wide principles and clinical populations. The multimodal approach is presented as advancing knowledge of amygdala organization and offering resources for future neurological and psychiatric research, potentially informing personalized interventions for amygdala dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims (C85-C86, C133-C134) are largely speculative about future applications and clinical utility, as indicated by their SPECULATION evidence type. While the framework shows promise, the actual demonstration of utility in clinical populations or other brain regions is not provided in the current work. The contribution to the broader research program (C131-C132) is supported by the successful integration of histology and in vivo imaging, but the transformative impact on clinical practice remains to be demonstrated. These represent aspirational goals rather than established results.",
+    "result_type": "MINOR"
+  }
+]

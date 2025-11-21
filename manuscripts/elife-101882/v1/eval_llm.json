@@ -1,0 +1,329 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C96",
+      "C97"
+    ],
+    "result": "The authors constructed a comprehensive MET kinase domain variant library spanning amino acids 1059-1345, synthesized by Twist Bioscience with one mammalian high-usage codon per amino acid, containing >99% of all possible 5764 kinase domain mutations. The library included fill-in controls and mutations at positions with failed synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C96-C97 collectively describe the library construction with explicit methodological details. The library coverage (>99%) is stated and referenced to prior work (Estevam et al., 2024), and the methods describe quality control measures including fill-in controls and\u88dc\u5145 of failed synthesis positions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The authors used Ba/F3 cells with TPR-MET fusion as a selection system. Ba/F3 cells have undetectable endogenous RTK expression and IL-3 addiction, while TPR-MET fusion provides IL-3-independent constitutive activity. This system is sensitive for detecting growth reduction from inhibitors but loses membrane-proximal effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6 and C78-C80 describe the experimental system with appropriate citations. The properties of Ba/F3 cells and TPR-MET fusion are well-established in the literature (cited references), and the authors acknowledge both advantages and limitations of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The DMS was performed against a panel of 11 inhibitors including six type I inhibitors (crizotinib, capmatinib, tepotinib, glumetinib, savolitinib, NVP-BVU972), three type II inhibitors (cabozantinib, glesatinib analog, merestinib), and one proposed type III inhibitor (tivantinib).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 explicitly state the inhibitor panel composition with figure references. The classification and selection of inhibitors is clearly documented in the methods and results sections.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Tivantinib displayed equivalent inhibition regardless of IL-3 presence and showed high correlation with DMSO control (r=0.93), indicating MET-independent cytotoxicity. In contrast, crizotinib only showed inhibitory effects under IL-3 withdrawal, demonstrating MET-dependent action.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19, C68-C70 provide converging evidence from correlation analysis, dose-response experiments with/without IL-3, and literature citations. The experimental design (Figure 2E) directly tests MET-dependence, and results are consistent with prior contradictory reports about tivantinib's mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The highest frequency resistance mutations for crizotinib occurred at D1228, Y1230, and G1163, which mediate direct drug-protein interactions. G1163 is at the solvent front entrance and D1228 stabilizes an inactive A-loop conformation. These mutations have been noted in prior clinical reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C24 identify resistance hotspots with structural rationale and literature support. The DMS data (Figure 3) shows enrichment at these positions, and multiple citations confirm prior clinical observations of these specific mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "M1211 is a resistance site across all inhibitor types. Y1230 is a hotspot for type I and I\u00bd inhibitors (via pi-stacking) but not type II. F1200 and L1195 are hotspots for type II but not type I inhibitors due to direct contact differences. Seventeen variants showed resistance across all inhibitor types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C30 describe inhibitor-specific and pan-inhibitor resistance patterns with structural explanations. The data in Figures 5-6 support these patterns, and the structural rationale (pi-stacking for Y1230, direct contact for F1200/L1195) is consistent with known inhibitor binding modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "I1084 is enriched as a type I resistance site and is located at the P-loop solvent front. L1142 (R-spine residue) and L1140 (back of ATP-binding pocket) are enriched for type II resistance, consistent with their spatial locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 identify inhibitor-type-specific resistance sites with structural context and literature support (C31 cites Gu\u00e9rin et al., 2023). The spatial rationale for type-specific enrichment is logical given inhibitor binding modes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Cabozantinib showed the lowest average correlation with type I inhibitors. Statistical filtering identified 44 mutations with crizotinib resistance/cabozantinib sensitivity and 3 with the opposite profile. Y1093K showed ~10-fold crizotinib resistance with no cabozantinib difference, while L1195M was refractory to cabozantinib but sensitive to crizotinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 describe differential sensitivity analysis with correlation data (Figure 7A) and experimental validation via dose-response curves (Figure 7D). The statistical filtering approach is described in methods, and the dose-response experiments directly validate the DMS predictions for specific mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ESM-1b protein language model predicts DMSO fitness (r=0.50) better than inhibitor-treated datasets (r=0.28). An augmented XGBoost model incorporating biophysical and chemical features improved performance to r=0.37. The model used Umol-predicted structures and applied monotonic constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C41 and C86-C89 describe the machine learning approach with explicit performance metrics. The methods detail feature engineering, model architecture, and validation strategy. The improvement from 0.28 to 0.37 is modest but represents the challenge of predicting inhibitor-specific effects not captured by evolutionary data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C81"
+    ],
+    "result": "Time points were selected every two cell doublings over four time points, with cells maintained at IC50 for each inhibitor without IL-3. All samples were prepared in parallel and sequenced on the same flow cell. Fitness scores were calculated using Rosace and normalized to DMSO growth rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49, C81 describe the experimental design and analysis pipeline. The parallel processing and same-flow-cell sequencing minimize batch effects. The Rosace normalization approach is explicitly described in methods (C117-C120) to enable cross-condition comparisons.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Type II inhibitors showed high similarity (merestinib-glesatinib r=0.93, cabozantinib-glesatinib r=0.87). AMG-458 (type I\u00bd) showed higher similarity to type II than type I inhibitors. Capmatinib was an outlier among type I inhibitors, potentially due to overdosing difficulty from greater potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 describe correlation patterns from Figure 2C with structural rationale. The explanation for capmatinib's outlier status (C53) is speculative but supported by citations about its potency. The AMG-458 pattern is rationalized by its type I\u00bd classification and R-spine interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Previously discovered resistance mutations showed GOF distribution for reported inhibitors but neutral distribution for non-reported inhibitors. H1094Y showed slight glesatinib sensitivity in the assay, suggesting resistance may be linked to exon14 deletion, L1195V mutation, or cellular factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 validate the DMS against literature with Figure 4C showing distribution shifts. The H1094Y discrepancy (C55) is acknowledged with speculation about potential explanations, demonstrating appropriate scientific caution about system limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C82"
+    ],
+    "result": "Inhibitor-treated populations showed loss-of-function peaks (sensitive mutations) and right-skewed distributions with GOF enrichment. DMSO showed bimodal distribution centered at 0. Capmatinib showed greatest difference from DMSO (r=0.45).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67, C82 describe fitness score distributions from Figure 2A-B. The bimodal DMSO distribution and right-skewed inhibitor distributions are expected patterns for this type of selection experiment. The correlation values quantify inhibitor-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Sensitivity regions occurred throughout the kinase, primarily in loop regions. Mutations at Y1159, M1211, V1092 introduce charge or alter pocket conformation to clash with crizotinib but not ATP. I1084H clashes with crizotinib's hinge-binding moieties. Y1093 mutations may destabilize crizotinib via P-loop effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C76 describe resistance mechanisms with structural modeling (Figure 3E-F). The structural predictions are reasonable based on crystal structures, though some explanations (C75) are speculative. The identification of P-loop residues (C76) as design targets is a logical inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "L1195 is an \u03b1E-helix position with type II-only resistance. Mutations like Met or Phe at 1195 clash with cabozantinib's fluorophenyl moiety. Y1093 is in \u03b22 at the ATP-binding site roof and doesn't directly engage crizotinib, potentially contributing to resistance by perturbing \u03b21-\u03b22 packing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 provide structural explanations for resistance patterns. The L1195 mechanism (C57) is supported by structural analysis of cabozantinib binding. The Y1093 mechanism (C60) is speculative but reasonable given its location and the dose-response validation (C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "Structural mapping of divergent mutations between crizotinib and cabozantinib revealed enrichment at the N-lobe and typical protein-drug interaction sites like Y1230, G1163, and M1211.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 describes structural analysis from Figure 7B-C. The enrichment at known interaction sites is expected and validates the differential sensitivity analysis approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The authors classify inhibitors by type based on binding mode: Type I (adenosine pocket, hinge H-bonds, active conformation), Type II (adenosine pocket + R-spine opening, inactive conformation), Type I\u00bd (both pockets), Type III (allosteric). Type Ia inhibitors have solvent-front G1163 interaction, classifying tepotinib and capmatinib as type Ia despite other classifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 describe inhibitor classification with citations and structural analysis. The reclassification of tepotinib/capmatinib (C14-C15) is based on the authors' structural analysis and explicitly acknowledges disagreement with other studies, which is appropriate scientific practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Background claims about MET: Four FDA-approved inhibitors exist (crizotinib, cabozantinib, tepotinib, capmatinib). MET is an RTK proto-oncogene implicated in multiple cancers. Clinical reports document resistance mutations at D1228, Y1230, G1163, L1195. The exon 14 juxtamembrane domain has negative regulatory function and is recurrently excluded in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C42-C45 provide background context with appropriate citations. These are well-established facts in the MET literature and provide necessary context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C85",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Detailed methodological claims covering: resistance position definition, inhibitor docking, cell culture conditions, dose-response protocols, library transformation and packaging, DMS time point collection, gDNA isolation, PCR amplification, NGS library preparation, sequencing, read processing, Enrich2 analysis, and Rosace scoring modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C120 provide comprehensive methodological details. These are explicit procedural descriptions that enable reproducibility. The methods are standard for DMS experiments with appropriate modifications (e.g., Rosace normalization) clearly described.",
+    "result_type": "MINOR"
+  }
+]

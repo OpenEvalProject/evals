@@ -1,0 +1,311 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors developed an experimental system to study gene duplication by creating plasmids with one or two copies of the coGFP gene under independent inducible promoters, with opposing orientations to prevent recombination. They performed directed evolution through five generations using isothermal DNA amplification for mutagenesis (~2 amino acid substitutions per gene per generation), FACS for selection under six different regimes, and maintained large population sizes (>10^4) to minimize genetic drift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design is well-documented with appropriate controls (C51-C52), validated plasmid construction (C48-C50), and rigorous methodology (C54-C61). The system successfully addresses the challenge of maintaining stable copy number (C49) and provides independent regulation of gene copies (C50). Population sizes are sufficient to minimize drift effects (C55-C56), and the mutagenesis rate is quantified (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Gene duplication increases mutational robustness in early evolution. In generation 1, mutagenesis caused fluorescence loss in 73.7% of single-copy variants but only 59% of double-copy variants. This difference persisted through generation 2 (18.4% vs 36% fluorescent) and can be explained by probability calculations. Robustness increased from generation 3 onward in both populations, but only under selection pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The robustness measurements are quantitative and statistically significant (C62-C66, Figure 2). The probability calculation (C65) provides theoretical support for the observed difference. The control experiment without selection (C69-C70) demonstrates that selection is necessary for robustness increase, strengthening the causal interpretation. The pattern is consistent across multiple selection regimes (C68).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C126"
+    ],
+    "result": "Double-copy populations showed higher absolute green fluorescence than single-copy populations throughout evolution, but when normalized to ancestral fluorescence, single-copy populations showed equal or higher relative improvement. Gene duplication did not accelerate phenotypic evolution beyond the initial dosage effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical analysis is appropriate (Mann-Whitney test, p\u22640.05, n=3) and the normalization approach (C73) correctly accounts for the initial dosage difference. The conclusion that duplication does not accelerate evolution beyond dosage (C74) is logically derived from the normalized data. However, the interpretation is limited to the specific conditions tested (green fluorescence selection).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Double-copy populations evolved significantly greater phenotypic variance than single-copy populations. One gene copy rapidly became inactivated in double-copy populations, affecting 38% of cells after generation 1 and 81% after generation 4.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The increased variance is documented (C75, Figure 3\u2014figure supplement 2) and the inactivation data (C76-C77, Figure 3\u2014figure supplement 3) are directly measured by independent induction of each copy. The rapid inactivation provides a mechanistic explanation for why phenotypic evolution was not accelerated despite increased genetic diversity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Double-copy populations accumulated more mutations per gene than single-copy populations during the first two generations. Mean mutations per gene in generations 1-5 were 0.827/0.455, 1.155/0.956, 2.144/1.794, 3.34/3.436, and 4.488/3.758 for double/single-copy populations, with significant differences in generations 1-2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutation counts are quantified through high-throughput sequencing (C78-C79) with appropriate statistical testing (Mann-Whitney, p\u22640.05, C80). The pattern is consistent with increased mutational robustness in early generations (C81). The convergence in later generations aligns with the loss of robustness difference after generation 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Double-copy populations evolved higher genetic diversity than single-copy populations. Individual cogfp copies in double-copy populations diversified more rapidly than in single-copy populations, with significant differences in generations 1, 3, and 4 (average pairwise amino acid distance).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic diversity is measured using average pairwise distance (C84) with statistical validation (Mann-Whitney, p\u22640.05, n=3). The comparison between active and inactive copies in single-copy populations (C82-C83) provides an internal control showing that selection constrains diversity. The increased diversity is consistent with multiple other observations (C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Purifying selection was weaker in double-copy than single-copy populations. The inactive copy in single-copy populations had dN/dS\u22481 (neutral evolution), while double-copy populations had dN/dS<1 but significantly higher than the active copy in single-copy populations in generations 1-2, indicating relaxed purifying selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dN/dS analysis is appropriate for detecting selection pressure (C86-C87, Figure 5C-D). The interpretation that most mutations are deleterious (C88-C89) is correctly inferred from dN/dS<1. The relaxed selection in double-copy populations (C90) is consistent with increased robustness and rapid inactivation of one copy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Three key mutations reached high frequencies under green selection: G147S and V162D (green-shifting, creating polar environment around chromophore Y75) and L98M (stabilizing, increasing folded protein fraction). V162D reached 99% frequency in both populations. L98M appeared in all selection regimes. The triple mutant G147S/V162D/L98M was the brightest variant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mutation frequencies are quantified from sequencing data (C91-C93, C95-C96, Figure 6). The phenotypic effects are validated through engineered variants with in vitro and in vivo measurements (C98-C99, Figure 6\u2014figure supplements 2-5). Computational modeling supports the structural predictions (C100, Figure 6\u2014figure supplement 6). The combinatorial analysis (C101-C102) demonstrates epistatic effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Key beneficial mutations and their combinations emerged earlier in double-copy populations. Double-copy populations had higher frequencies of G147S (generations 2-3), V162D (generations 1-2), and L98M (generations 3-5). Multi-mutation combinations like V162D/L98M exceeded 1% frequency one generation earlier in double-copy populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The frequency differences are statistically validated (Generalized linear model, ANOVA p<0.05, C104-C106, C109). The earlier emergence of combinations (C107-C108) is documented with specific examples. The theoretical expectation of 2-fold higher mutation probability (C103) provides mechanistic support. This represents a clear advantage of duplication despite no acceleration in phenotypic evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The experiments confirm Ohno's hypothesis that gene duplication increases mutational robustness, but this effect is transient. Robustness differences disappeared after generation 2, likely due to rapid inactivation of one copy. Robustness increased in later generations due to accumulation of stabilizing mutations like L98M.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The confirmation of Ohno's hypothesis (C110-C111) is supported by experimental data. The transient nature (C112) and mechanistic explanation via rapid inactivation (C113) are well-documented. The later increase in robustness (C114-C115) is explained by stabilizing mutations and supported by prior literature (C116). The consistency with comparative genomics (C117-C118) strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125"
+    ],
+    "result": "The experimental design has a limitation: it cannot distinguish active from inactive copies in whole populations from sequencing data alone, making it uncertain whether increased diversity is primarily due to mutational robustness or rapid deactivation of one duplicate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an honest acknowledgment of experimental limitations (C124-C125). The authors correctly identify that without knowing which mutations are deleterious, they cannot definitively separate the contributions of robustness versus inactivation to increased diversity. This limitation does not invalidate the results but indicates areas for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The lack of accelerated phenotypic evolution in double-copy populations may be explained by: (1) simple genetic changes (single mutations G147S, V162D) providing larger fitness advantages than gene dosage, occurring early in both populations; and (2) rapid inactivation of one copy (38% by generation 1, 81% by generation 4), limiting the window for beneficial mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both explanations are supported by data. The fitness advantage of single mutations over dosage (C130) is demonstrated by comparing Figures 3 and 6\u2014figure supplement 2. Early occurrence of key mutations (C131) is documented. Rapid inactivation (C133) is directly measured. The speculation about gene-specific factors (C135) appropriately acknowledges limitations in generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "The experiments confirm that Ohno's dilemma (rapid inactivation by deleterious mutations before beneficial mutations accumulate) is highly relevant for post-duplication evolution. The experimental design, while not reflecting natural evolution, allowed isolation of duplication effects from dosage effects by preventing copy number increases beyond two.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The confirmation of Ohno's dilemma (C136-C137) is supported by the rapid inactivation data. The experimental design rationale (C139) is clearly stated, and the authors acknowledge its artificiality (C140) while noting it enables mechanistic dissection. The speculation about natural conditions (C141) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "Despite evidence for a trade-off between green and blue fluorescence, no specialization of gene copies was observed in double-copy populations selected for both colors. Key mutations at positions 147 and 162 remained at very low frequency (<1%) under dual selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trade-off is documented (C146, Figure 3\u2014figure supplement 1, Figure 6\u2014figure supplement 2). The lack of specialization (C148) is directly tested by analyzing individual clones with two active copies (Figure 6\u2014figure supplement 7). The low frequency of key mutations under dual selection (C149) supports the interpretation. This negative result is important for understanding the conditions under which subfunctionalization occurs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The experimental system successfully tested Ohno's hypothesis, confirming that gene duplication increases mutational robustness and genetic diversity, but did not observe accelerated phenotypic evolution or specialization for different phenotypes under the conditions tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary accurately reflects the major findings. The system's capabilities (C150) are demonstrated throughout. The support for increased robustness and diversity (C151-C152) is strong. The lack of accelerated evolution or specialization (C153) is clearly documented. The qualification 'under the conditions tested' is important for appropriate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The study used coGFP, a fluorescent protein from Cavernularia obesa with dual emission peaks at 456 nm (blue) and 507 nm (green) when excited at 388 nm. The ancestral variant (G147) fluoresces equally in both colors, and position 147 mutations affect the blue/green ratio.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The protein choice is well-justified with appropriate citations (C43-C44, C46). The dual phenotype is documented (Figure 1\u2014figure supplement 1). pH control (C45) is appropriate given pH sensitivity. The ancestral variant characterization (C47) provides a clear starting point. This establishes the experimental system's suitability for studying evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Only three key mutations reached high frequencies under green selection. The authors report V162D as a novel green-shifting mutation in coGFP. Both G147S and V162D create a more polar environment around chromophore Y75, while L98M increases structural stability without directly affecting fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scarcity of beneficial mutations (C119) is supported by literature and consistent with dN/dS<1. The identification of three key mutations (C120) is based on frequency analysis. The novelty claim for V162D (C121) is appropriately qualified ('to the best of our knowledge'). The mechanistic explanations (C122-C123) are supported by computational modeling and biochemical assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "The experimental system provides a platform for future studies on duplicated gene evolution, including questions about differential expression effects, evolution under temporally varying selection, and co-evolution of regulatory and coding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative claims about future applications (C154-C157). While the system's capabilities suggest these studies are feasible, they have not been demonstrated. The summary statement (C158) appropriately balances what was achieved (validation of Ohno's hypothesis) with future potential. These represent promising directions but not current results.",
+    "result_type": "MINOR"
+  }
+]

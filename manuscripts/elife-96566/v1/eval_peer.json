@@ -1,0 +1,145 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Reshaped RP models outperform standard RP models in accuracy and efficiency, particularly at low numbers of projections. The reshaped models achieve lower firing rates and lower correlations between projections compared to RP and backpropagation models, with sigmoid nonlinearity outperforming step functions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this as a main contribution, stating 'the reshaped RP model achieved higher performance in explaining the statistics of the spiking activity of cortical neurons with more efficient representations (=lower firing rate).' The reviewer notes the findings are 'logically demonstrated with clear visual presentations' and accepts the superiority of reshaped models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C24",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Incorporating synaptic normalization (homeostatic constraints) in reshaped RP models results in models that are more efficient while maintaining accuracy. Homeostatic models outperform bounded models across a wide range of synaptic budgets, exhibit lower firing rates and correlations, and demonstrate homeostasis in firing rates and synaptic weights.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support this as the second main contribution, stating 'synaptic homeostatic normalization in the reshaped RP model yields even more efficient representations without impairing the fitting performance.' They note the work 'successfully integrates two different elements, statistical modeling of the spikes and synaptic homeostasis' and accept the homeostatic effects demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Synaptic normalization has a dual functional role: maintaining spiking and synaptic homeostasis while optimizing network performance and efficiency. The similarity of performance across different homeostatic mechanisms suggests a universal computational role for homeostatic mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this interpretation, summarizing that 'synaptic normalization contributes to synaptic homeostasis as well as efficiency in neural encoding.' They note the work demonstrates 'the relationship between synaptic homeostasis, neural representations, and computational accuracy' convincingly, supporting the dual functional role claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C37"
+    ],
+    "result": "Optimizing thresholds has a small effect on model performance. The relationship between \u03bb values and performance depends on the number of projections, with opposite effects for low versus high projection numbers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers provide alternative interpretation noting that '\u03bb regulates the average firing rate' and that 'Suppl. Fig. 2B could be understood as demonstrating this homeostatic effect of \u03bb.' They accept the findings but offer additional mechanistic perspective, indicating the results are valid but can be understood through multiple lenses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "True and random connectivity models perform very similarly, both outperforming fully connected models except at high synaptic costs. Different synaptic budgets have different optimal in-degrees, with an optimal ratio between total resources and number of synapses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers note the work 'suggests the advantage of the sparse connectivity structure over the fully connected model for modeling spiking statistics' as a strength. They accept these findings about connectivity without raising concerns, treating them as supporting evidence for biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Different homeostatic mechanisms (input, output, circuit normalization) produce surprisingly similar performance in terms of likelihood, though they result in different reshaped projections. All variants show similar minimal rotation angles at the same synaptic cost.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly discuss this, noting the 'similarity of the performance of models that use different homeostatic synaptic mechanisms suggests a possible universal role for homeostatic mechanisms in computation.' They accept the robustness findings as supporting biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Sparse homeostatic reshaped RP models outperform fully connected neural network models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers note that 'the backprop model has higher firing rate than the reshaped model' and that 'backprop model overperforms reshaped model slightly but robustly,' suggesting the fully connected backpropagation model may actually have advantages. This creates ambiguity about the claim that sparse models definitively outperform fully connected ones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The biological plausibility of reshaped RP models is supported by the shallowness of the circuit (avoiding deep backpropagation), locality of the reshaping process, and robustness to connectivity and homeostatic mechanism choices.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this is 'an important contribution to the development of a biologically plausible theory' and that the authors 'convincingly implemented the statistical inference of input likelihood in a simple neural circuit.' They accept the biological plausibility arguments without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C20",
+      "C21",
+      "C22",
+      "C26",
+      "C27"
+    ],
+    "result": "Random Projection (RP) models have established properties of high accuracy, efficiency, scalability, biological plausibility as shallow networks, and ability to work with limited training data, as demonstrated in prior work on cortical recordings.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these as established background, noting 'A novel statistical model of neural population activity called the Random Projection model has been recently proposed' with the stated properties. These claims are treated as accepted prior work forming the foundation for the current study.",
+    "result_type": "MINOR"
+  }
+]

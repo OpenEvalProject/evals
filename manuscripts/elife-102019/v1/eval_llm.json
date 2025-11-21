@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C11",
+      "C13",
+      "C14",
+      "C15",
+      "C17",
+      "C18",
+      "C99",
+      "C100"
+    ],
+    "result": "ZFHX3 binds to 43,236 sites in the SCN genome, with 78% co-localizing with histone modifications (H3K4me3 and/or H3K27ac), predominantly near transcription start sites (TSS). The binding sites are categorized into four groups: 48.9% with both H3K4me3 and H3K27ac (active promoters), 20.7% with H3K4me3 only (poised regulation), 8.2% with H3K27ac only (enhancers), and 22% without histone modifications (distal intergenic regions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C18, C99-C100 provide comprehensive ChIP-seq data characterizing ZFHX3 genomic binding patterns. The quantitative measurements are internally consistent (percentages sum appropriately), supported by visual evidence in Figure 1, and the categorization is based on established histone modification functions cited from literature. The methodology is clearly described and the data analysis appears sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C12",
+      "C16",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "ZFHX3 binding sites co-localized with active histone marks (H3K4me3+H3K27ac) are associated with genes involved in circadian entrainment, timekeeping, neurodegeneration, axonal guidance, and synaptic processes. Sites with only H3K4me3 indicate poised transcriptional regulation, while H3K27ac-only sites suggest enhancer-mediated regulation. Sites without histone modifications or with only H3K4me3 are associated with fundamental processes like DNA replication and MAPK signaling, but not circadian rhythm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C24 integrate ChIP-seq binding data with functional annotation analysis (DAVID) to interpret biological significance. The interpretations are appropriately cautious (using terms like 'likely', 'suggestive', 'plausible') and are supported by cited literature for histone modification functions. The functional enrichment analysis is shown in Figure 1\u2014figure supplement 1A-C, providing visual support for the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C105",
+      "C106"
+    ],
+    "result": "ZFHX3 occupancy does not differ between ZT3 and ZT15 timepoints, binding consistently at the same genomic loci across the circadian cycle. This suggests ZFHX3 belongs to a family of poised transcription factors whose occupancy does not change during the day, but may act as a co-activator to modulate oscillating gene transcription, with temporal control conferred by other factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C105-C106 report a negative result (no differential binding) from ChIP-seq comparison at two timepoints. The data is clearly stated in Supplementary file 1, and the interpretation is appropriately speculative. However, only two timepoints were tested (12 hours apart), which limits the temporal resolution. Additional timepoints would strengthen the conclusion, but the data presented supports the claim as stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C104"
+    ],
+    "result": "ZFHX3-bound sites show enrichment for AT-rich motifs and co-occurrence with SCN developmental/maintenance transcription factors (DLX, LHX), RFX family TFs implicated in light responses, and SCN-enriched factors (RFX, LHX, ZIC). Notably, ZFHX3 peaks adjacent to active promoters (H3K4me3+H3K27ac) show enrichment of ARNT (bHLH) domains, suggesting shared binding with circadian clock TFs BMAL1:CLOCK at E-boxes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32, C104 report motif analysis (HOMER) results from ChIP-seq data. The AT-rich motif finding is consistent with cited literature (C28). The co-occurrence with other TFs is shown in Figure 1\u2014figure supplement 1D. The ARNT enrichment specifically at active promoters (C31) is a key finding linking ZFHX3 to the core circadian machinery, though the interpretation of 'shared binding' (C32) is appropriately presented as inference rather than direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Conditional deletion of Zfhx3 in adult mice significantly shortens free-running circadian period, reduces amplitude, increases intra-daily variability, and decreases inter-daily stability. Under light-dark cycles, mutant mice show poor entrainment with increased activity before lights-off (ZT 10.5-12.5, p<0.05) and decreased activity before lights-on (ZT 20-23, p<0.05), resulting in earlier activity onset. This phase advance is consistent with the shortened circadian period, demonstrating that ZFHX3 contributes to circadian timekeeping and entrainment in the adult SCN independently of developmental roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C43 present comprehensive behavioral analysis with wheel-running data shown in Figure 2 and Figure 2\u2014figure supplement 1. Statistical significance is reported (p<0.05), sample sizes are adequate (n=16 per group based on methods), and the use of adult-specific conditional knockout controls for developmental effects. The consistency between shortened period in DD and phase advance in LD strengthens the interpretation. Full statistical analysis is provided in Supplementary file 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C109"
+    ],
+    "result": "Loss of ZFHX3 affects 36% (5,637 genes) of the SCN transcriptome, with 2,725 genes downregulated and 2,912 upregulated. Of differentially expressed genes, 80% (4,543) show ZFHX3 occupancy at promoters with histone modifications (p=0, OR=6.3, Jaccard index=0.4), indicating strong direct interaction between ZFHX3 binding and gene expression. Only 7% (381 genes) with ZFHX3 binding alone show differential expression (p=0.37, OR=1, Jaccard index=0.1), indicating ZFHX3's effect on transcription is predominantly observed when jointly occupied by histone modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51, C109 integrate RNA-seq and ChIP-seq data to demonstrate functional consequences of ZFHX3 binding. The statistical analysis is rigorous with appropriate metrics (Fisher's exact test, odds ratio, Jaccard index). Both control groups (Cre-neg and -Tamoxifen) show consistent results (C47), controlling for tamoxifen effects. The strong association between ZFHX3+histone modifications and gene expression (C48-C49) versus weak association with ZFHX3 alone (C50) provides compelling evidence for the mechanistic interpretation (C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C56"
+    ],
+    "result": "Genes downregulated after Zfhx3 deletion are associated with neuropeptide signaling pathways (Vip, Grp), circadian rhythm, and neuron differentiation, consistent with previous studies. Upregulated genes show enrichment for cell differentiation and extracellular matrix organization. This suggests loss of ZFHX3 leads to physiological impairment by affecting diverse neuropeptide neurotransmitter systems and circadian-relevant transcripts in the SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C56 report functional enrichment analysis (DAVID) of differentially expressed genes, shown in Figure 3D. The findings are consistent with multiple cited previous studies (Hughes et al., 2021; Parsons et al., 2015; Wilcox et al., 2021; Wilcox et al., 2017), providing validation. The interpretation (C56) is appropriately cautious ('likely') and follows logically from the data. However, the claim of 'physiological impairment' is somewhat speculative without direct physiological measurements beyond behavior.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Time-course RNA-seq analysis of 20,521 genes using dryR framework categorized genes into five modules: Module 1 (82%, 16,832 genes) showed no 24h rhythm in either condition; Module 2 (42% of rhythmic genes, 1,566) lost rhythmicity in ZFHX3-KO; Module 3 (2%, 403) gained rhythmicity; Module 4 (45% of rhythmic genes, 1,653) showed no change; Module 5 (1.8%, 67) retained rhythmicity with altered amplitude/phase. Overall, ~18% of SCN genes exhibited daily rhythmicity, with ~55% of rhythmic transcripts showing alteration following ZFHX3 loss, demonstrating ZFHX3 contributes to a significant part of the daily rhythmic transcriptome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C69 present comprehensive rhythmicity analysis using the established dryR statistical framework (Weger et al., 2021) with appropriate threshold (BICW>0.4). The categorization is systematic and the percentages are internally consistent. Data is shown in Figures 4 and 5, and Figure 4\u2014figure supplements 1-2. The sample size is adequate (4 biological replicates per timepoint for controls, 2-4 for -Tamoxifen) with 6 timepoints covering 24 hours. The conclusion (C69) appropriately acknowledges both direct and indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Functional analysis of rhythmicity modules reveals: Module 2 genes (lost rhythmicity) are involved in intracellular protein transport, WNT-pathway linking circadian and cell-cycle processes, and oxidative stress response; Module 3 genes (gained rhythmicity) are associated with RNA processing, stress, and metabolic pathways; Module 4 genes (unchanged rhythmicity) are enriched for protein phosphorylation, cytoskeleton organization, and DNA repair. Only 1.8% of rhythmic genes (Module 5) showed substantial changes in phase/amplitude, but these are primarily involved in circadian rhythm generation, entrainment, and CCG expression, suggesting the core circadian mechanism is disrupted but not ablated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C76 provide functional interpretation of the rhythmicity modules through enrichment analysis shown in Figure 4\u2014figure supplement 2. The WNT-pathway connection to circadian/cell-cycle processes (C71) is supported by citation (Matsu-Ura et al., 2018). The key insight that only a small percentage of rhythmic genes show phase/amplitude changes (C74), but these are enriched for core circadian functions (C75), is well-supported and leads to the appropriate conclusion (C76) that the clock is disrupted but functional.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "ZFHX3 deletion severely affects core TTFL genes: Bmal1 shows complete loss of 24h rhythm, Clock shows reduced expression, Per1-3 show phase advance (Per2/Per3: ~2h, Per1: ~0.3h) with low amplitude, while Cry1-2 show no obvious change in rhythmic levels or phase. Rorb loses rhythmicity and Nr1d1 shows ~1h phase advance. This demonstrates ZFHX3 acts selectively on specific genes driving the cell-autonomous clock in the SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C87 present detailed analysis of core clock gene expression shown in Figures 4A, 4B, 5C, and Table 1. The complete loss of Bmal1 rhythm (C78) is a striking finding clearly shown in Figure 4A. The differential effects on Per genes (C80-C83) versus Cry genes (C84) are well-documented and lead to the appropriate conclusion of selective action (C85). The Per1 citation (Kuhlman et al., 2003) regarding light-responsive pathways provides context for its different behavior. The effects on Ror/Reverb genes (C86-C87) are consistent with their role in Bmal1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "ZFHX3 deletion affects clock-controlled genes and neuropeptides: Dbp shows ~1.66h phase advance with reduced amplitude; Creb3l1 (implicated in intercellular coupling) shows distinctive phase/amplitude changes; neuropeptides Vip and Grp show significantly reduced mean expression; Avp, Prok2, and Npy show severe loss of 24h rhythm with reduced transcript levels. For Avp, levels remain intermediate throughout the day without daytime increase, while Prok2 and Npy are reduced to minimal levels, possibly resulting in compromised intercellular coupling in the SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 document effects on CCGs and neuropeptides shown in Figures 3, 4A, and 5C. The neuropeptide findings are consistent with previous studies (Parsons et al., 2015) as noted in C117. The Avp citation (Arima et al., 2002) provides context for the expected daytime increase. However, the interpretation of 'compromised intercellular coupling' (C96) is appropriately marked as speculative ('possibly') since direct coupling measurements were not performed. The data clearly shows transcript level changes, but functional coupling consequences are inferred.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "TimeTeller analysis reveals the SCN daily clock is intact but advanced by approximately 2 hours after ZFHX3 loss compared to control groups. This phase advance is consistent with the observed daily behavioral activity in mutant mice showing earlier activity onset under light-dark cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 apply the TimeTeller method (Vlachou et al., 2024) to assess global clock state, shown in Figure 6. The model was properly validated using cross-validation (Figure 6\u2014figure supplement 1A) and independent published data (Deota et al., 2023). The theta parameter indicates clock functionality is maintained (Figure 6\u2014figure supplement 1B). The ~2h phase advance (median 1.83h, 95% CI 0.585-2.67) is statistically significant (p=0.0028) and consistent with behavioral data (Figure 2), providing strong support for the integration of molecular and behavioral phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "A considerable proportion of ZFHX3 sites lack joint histone modifications (H3K4me3+H3K27ac) and are enriched for CTCF binding sites. CTCF is a ubiquitous DNA binding protein with roles in genomic organization, chromatin looping, and gene regulation. This co-occurrence hints at a potential accessory role for ZFHX3 in modifying genome topology and chromosomal looping to regulate promoter-enhancer interactions. ZFHX3 sites are also enriched for SCN-enriched regulatory factors RFX, LHX, and ZIC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C104 present motif analysis data showing CTCF and other TF enrichment at ZFHX3 sites. While the co-occurrence data (C101, C104) is well-supported by ChIP-seq and motif analysis shown in Figure 1\u2014figure supplement 1D, the interpretation of ZFHX3's role in genome topology and chromosomal looping (C103) is highly speculative. The claim appropriately uses cautious language ('hints at potential accessory role'), but no direct evidence of 3D genome organization, chromatin looping, or promoter-enhancer interactions is provided. This would require additional experiments such as Hi-C, 4C, or similar techniques.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108"
+    ],
+    "result": "ZFHX3 was shown to be associated with chromatin remodeling and mRNA processing factors in a recent unpublished study. It is highly plausible that ZFHX3 occupies targeted TSS and partners with clock TFs such as BMAL1 to regulate rhythmic gene transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C107 cites an unpublished study (Del Roc\u00edo P\u00e9rez Baca et al., 2023), which cannot be independently verified. Claim C108 is appropriately presented as speculation ('highly plausible') based on the BMAL1 motif enrichment at ZFHX3 sites (C31), but direct evidence of physical interaction or co-binding is not provided. Co-immunoprecipitation, proximity ligation assays, or sequential ChIP would be needed to demonstrate partnership. The inference is reasonable given the data, but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "About 55% of rhythmic genes showed alteration in their daily transcriptional pattern following ZFHX3 loss. The authors discuss potential mechanisms for how arrhythmic Bmal1 transcript might still support rhythmic clock function, citing studies showing arrhythmic Bmal1 can possess posttranslational rhythm (Abe et al., 2022) or that constitutive Bmal1 expression can sustain rhythmic products by mathematical modeling (Mirsky et al., 2009), though in vitro studies show this may not sustain clear protein rhythmicity (Padlom et al., 2022). The CRY genes may be shielding the molecular clock.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C110 is well-supported by the dryR analysis. However, claims C111-C116 are primarily discussion of literature to interpret the surprising finding of arrhythmic Bmal1 mRNA (C78) alongside maintained rhythmicity in some clock components. The authors appropriately acknowledge uncertainty ('remains to be determined' in C111) and present alternative scenarios (C114-C115). The citations appear accurate, but the mechanistic explanations are speculative. The suggestion that CRY genes shield the clock (C116) is inference supported by their unchanged rhythmicity (C84) and a citation, but lacks direct experimental validation in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Lack of ZFHX3 results in severe reduction of SCN neuropeptides (Avp, Vip, Grp, Prok2), potentially compromising intercellular coupling and synchronization. The universal effect on all key SCN neuropeptides indicates ZFHX3 is prevalent in almost all neuronal populations within the SCN, potentially resulting in loosely coupled intercellular clocks that still drive 24h rhythms but with advanced phase. This is supported by analysis showing 60% of top 100 neuronal genes affected by ZFHX3 deletion, while only 20% of astrocytic genes were impacted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C122 integrate RNA-seq data with single-cell atlas comparisons to infer cellular distribution of ZFHX3 function. The neuropeptide reduction (C117) is well-documented and consistent with cited literature (Parsons et al., 2015). The interpretation of compromised coupling (C118) is appropriately cautious ('potentially'). The inference of widespread neuronal expression (C119) is supported by the differential impact on neuronal (60%) versus astrocytic (20%) genes (C121-C122), though this is an indirect measure. The conclusion about loosely coupled clocks (C120) integrates behavioral and molecular data reasonably, though direct coupling measurements would strengthen this claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C123",
+      "C124"
+    ],
+    "result": "Lack of Zfhx3 leads to aberrant daily transcriptional rhythms of several CCGs, with the majority losing daily oscillations. This could potentially result in hindrance of clock-regulated vital biological processes such as regulation of cell-cycle and metabolic pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 is directly supported by the dryR analysis showing Module 2 genes (1,566 genes that lost rhythmicity). However, claim C124 is speculative ('could potentially') about functional consequences. While the inference is reasonable given the known roles of CCGs, no direct measurements of cell-cycle or metabolic processes were performed. The claim is appropriately cautious in its language, but represents interpretation rather than direct evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "ZFHX3 is crucial for SCN development and could act as an 'integrator' of afferent signals. ZFHX3 has pleiotropic roles including effects on retinal light sensing, hypothalamic metabolic gene expression, angiogenesis, cardiac function, and spinocerebellar ataxia. The circadian effects observed in this study are independent of ZFHX3's pleiotropic roles in other tissues due to the use of adult-specific knockout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125, C127-C131 cite various studies documenting ZFHX3 functions in different tissues and contexts. These citations appear to be accurate summaries of published work. Claim C126 about ZFHX3 as an 'integrator' is speculative. Claim C132 argues that the adult-specific knockout isolates circadian effects from pleiotropic roles, but the knockout used (UBC-Cre) is global, not SCN-specific, as acknowledged in the discussion. While tamoxifen was administered in adulthood, ZFHX3 is deleted in all tissues, so effects in other tissues (retina, hypothalamus, etc.) could still contribute to the observed phenotypes. The authors acknowledge this limitation, noting SCN-specific knockout would be preferable for future studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "The current research maps genome-wide ZFHX3 binding and demonstrates its critical association with lineage- and clock-controlling TFs, regulating genes ranging from circadian timing to synaptic transmission and inflammatory responses. This highlights how ZFHX3 regulates the core-clock (TTFL) in addition to CCGs to drive sustained transcriptional rhythms in the SCN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C135 provide summary statements of the study's major findings. These are well-supported by the comprehensive ChIP-seq (genome-wide binding, TF associations) and RNA-seq (effects on diverse gene categories) data presented throughout the manuscript. The integration of binding data with functional consequences, and the demonstration of effects on both TTFL and CCGs, represents the core contribution of the work. The claims appropriately summarize the evidence without overstating the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "ZFHX3 is necessary for SCN development and influences circadian behavior in adult mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 are background statements supported by citations to existing literature. These are not novel findings of this study but provide context. The current study's behavioral data (C33-C43) provides additional support for C2 regarding adult circadian behavior.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study employed rigorous methodological practices including preregistration, blinded analysis, Bayesian statistics, multiverse analysis, and open data/code sharing to investigate aperiodic EEG activity in 149 chronic pain patients and 115 healthy controls. Data were collected from three datasets, preprocessed using standardized pipelines, and analyzed using source reconstruction focused on the mPFC with age correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34-C37, C80-C110 collectively describe a methodologically rigorous study design with appropriate sample sizes (N=264 total), preregistration, blinding procedures, and transparent reporting. The preprocessing and analysis pipeline is well-documented with appropriate quality control measures (C98-C108). The multiverse analysis approach (C37) strengthens confidence in findings by testing robustness across analytical choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "No difference in aperiodic exponents in the mPFC was found between people with chronic pain and healthy participants. The preregistered analysis showed moderate evidence against a difference (Cohen's d=-0.011, BF10=0.136), and this finding was robust across all 48 specifications in the multiverse analysis (all BF10 <0.22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38-C41 present convergent evidence from both preregistered and multiverse analyses showing no difference between groups. The Bayesian statistics provide appropriate quantification of evidence for the null hypothesis (BF10=0.136 indicates moderate evidence against a difference). The multiverse analysis confirms robustness across methodological choices, and statistical inference tests (pmedian=0.89, pshare=1, paggregate=0.95) support that the specification curve is not different from null.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "No correlation was found between aperiodic exponents in the mPFC and pain intensity in people with chronic pain. The preregistered analysis showed moderate evidence against a correlation (R=0.006, BF10=0.103), confirmed by multiverse analysis across all 48 specifications (all BF10 <0.26).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C42-C44 demonstrate consistent null findings from preregistered analysis and multiverse analysis. The Bayesian correlation test provides moderate evidence for no relationship (BF10=0.103), and the multiverse analysis confirms this across all analytical specifications. Statistical inference on the specification curve (pmedian=0.63, pshare=1, paggregate=0.74) supports the robustness of this negative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "Exploratory analysis of aperiodic offsets (rather than exponents) also showed moderate evidence against differences between groups (Cohen's d=-0.03, BF10=0.14) and against correlation with pain intensity (R=0.06, BF10=0.14).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C46 report exploratory findings on aperiodic offsets that parallel the main findings on aperiodic exponents. The Bayesian statistics provide moderate evidence for null effects. However, these are exploratory analyses without the same level of methodological rigor (no multiverse analysis) as the preregistered hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "In the chronic back pain (CBP) subgroup (N=80), there was moderate evidence against differences in mPFC aperiodic exponents compared to matched healthy controls (Cohen's d=-0.12, BF10=0.23) and against correlation with pain intensity (R=-0.09, BF10=0.19), with findings robust across multiverse specifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C47-C50 describe subgroup analysis in CBP patients showing consistent null findings. The matched control design (C100) strengthens the comparison. Multiverse analysis showed 46/48 specifications with evidence for null hypothesis, and statistical inference confirmed the specification curve was not different from null (pmedian=0.59, pshare=1, paggregate=0.61 for group comparison; pmedian=0.23, pshare=1, paggregate=0.35 for correlation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C47",
+      "C48",
+      "C51",
+      "C52"
+    ],
+    "result": "In the chronic widespread pain (CWP) subgroup (N=33), evidence was inconclusive regarding differences in mPFC aperiodic exponents compared to matched healthy controls (Cohen's d=0.26, BF10=0.41), but showed moderate evidence against correlation with pain intensity (R=0.03, BF10=0.22). Multiverse analysis showed mixed results with some specifications showing inconclusive evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C47-C48, C51-C52 describe findings in CWP patients that are less conclusive than other subgroups. The small sample size (N=33) limits statistical power. The preregistered analysis shows inconclusive evidence for group differences (BF10=0.41), and multiverse analysis revealed heterogeneity with 2/3 of specifications showing inconclusive evidence. The authors acknowledge this limitation (C69), suggesting larger samples are needed for this subgroup.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C53",
+      "C54"
+    ],
+    "result": "Whole-brain analysis across 100 brain regions found no significant differences in aperiodic exponents between chronic pain patients and healthy controls (all padj >0.05, -0.39<Cohen's d<0.06) and no significant correlations with pain intensity (all padj >0.05, -0.11<R<0.22) after FDR correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C53-C54 report comprehensive whole-brain analysis with appropriate multiple comparison correction (resampling-based FDR). The analysis extends findings beyond the mPFC to 100 brain regions, showing consistent null results. The effect sizes are small across all regions, and no region survives multiple comparison correction, supporting the robustness of the negative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C78"
+    ],
+    "result": "The study concludes that the EEG aperiodic component does not differentiate between people with chronic pain and healthy individuals, with findings supported by preregistration, multiverse analyses, and high standards of open science.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C10, C78 represent the main conclusion synthesizing all findings. The conclusion is well-supported by convergent evidence from preregistered analyses (C39, C42), multiverse analyses (C40-C41, C43-C44), subgroup analyses (C49-C52), and whole-brain analyses (C53-C54). The methodological rigor (preregistration, blinding, Bayesian statistics, multiverse analysis, open data) strengthens confidence in this negative finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The study is motivated by established knowledge that chronic pain is prevalent and debilitating, involves brain network changes including the mPFC, and is associated with E/I imbalances in animal and human studies, but lacks non-invasive, scalable whole-brain measurements of E/I balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C20 establish the scientific rationale based on prior literature. These claims are appropriately supported by citations to relevant prior work (C11-C19) and accurately characterize the gap in knowledge (C20). The motivation for studying E/I balance in chronic pain is well-established in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The aperiodic exponent of EEG power spectra has been proposed as a non-invasive proxy for E/I balance, with higher exponents indicating inhibition and lower exponents indicating excitation. Changes in aperiodic activity have been observed in other neuropsychiatric disorders including schizophrenia, ADHD, and Alzheimer's disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C21-C30 describe the theoretical basis for using aperiodic EEG activity as an E/I proxy. These claims are well-supported by citations to foundational work (Gao et al., 2017; Lombardi et al., 2017; Lendner et al., 2020) and studies in other disorders (C28-C30). The characterization of the aperiodic component and its interpretation is consistent with the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The study hypothesized that changes in aperiodic exponents would occur in the mPFC because it is a central hub for pain processing and E/I imbalances have been observed in this area in animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe the study hypothesis focused on the mPFC. The hypothesis is well-justified by citations to animal studies showing E/I imbalances in mPFC in chronic pain models (Bliss et al., 2016; Kummer et al., 2020; Shiers and Price, 2020; Tan and Kuner, 2021) and the established role of mPFC in pain processing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors discuss multiple possible explanations for the null findings, including: (1) E/I changes in chronic pain may be too subtle or heterogeneous for EEG detection, though evidence from other disorders argues against this; (2) the aperiodic component may not adequately reflect E/I despite supporting evidence from animal studies, computational models, and pharmacological studies; (3) E/I imbalances may be more prominent in specific pain subtypes like CWP or migraine, consistent with inconclusive findings in the small CWP subgroup.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C69 present a balanced discussion of alternative explanations for the null findings. The authors appropriately consider methodological limitations (C59-C61), measurement validity (C62-C65), and clinical heterogeneity (C66-C69). The discussion is well-supported by citations and acknowledges both the strengths of prior evidence for the aperiodic-E/I relationship and the limitations of the current study, particularly the small CWP sample size.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C79"
+    ],
+    "result": "The authors argue that despite negative findings, future research on EEG measures of E/I in chronic pain is warranted because: (1) cortical excitability is a critical mechanism in chronic pain related to central sensitization; (2) a non-invasive biomarker could have high clinical value for risk assessment, prognosis, and treatment prediction; (3) EEG is broadly available and cost-efficient. Future studies should focus on specific pain subtypes with larger, multi-site samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C77, C79 present a reasoned argument for future research despite null findings. The potential clinical value is well-justified by citations (C70-C73), and the authors appropriately acknowledge the fundamental importance of E/I balance in brain function (C74-C77). The recommendations for future research (C79) directly address limitations identified in the current study (small CWP sample, heterogeneous pain conditions).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "In random entrance experiments, mice showed persistent complex search trajectories with no significant spatial learning. While latency decreased and speed increased over trials, normalized trajectory length did not improve, mice spent similar time in all quadrants during probe trials, and hole checking density remained constant throughout trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C20 collectively demonstrate that mice failed to learn spatial location when entrance positions were randomized. The statistical analyses show significant correlations for latency (C15) and speed (C18) but critically, no improvement in trajectory efficiency (C19), no spatial preference in probe trials (C17), and no anticipatory hole checking (C20). These converging lines of evidence strongly support the conclusion that landmarks alone were insufficient for spatial learning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "In static entrance experiments, mice showed robust spatial learning with dramatic improvements in trajectory efficiency, reaching near-optimal performance by trial 14. Learning required approximately 6 trials for distance estimation, and hole checking behavior became concentrated near the food location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C29 provide comprehensive evidence of spatial learning with static entrances. Multiple quantitative measures (latency C23, speed C24, normalized trajectory length C25) show strong correlations (R=-0.96, p<10^-7) and significant first-to-last trial differences. The exponential fitting analysis (C26) provides a specific learning timescale. Hole checking analyses (C27-C29) demonstrate spatial anticipation. All statistical tests are appropriately conducted with adequate sample sizes (N=8).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C2",
+      "C3"
+    ],
+    "result": "The Target Estimation Vector (TEV) accurately predicted mouse navigation, with direction learned rapidly by trial 6 (deviation reduced to 5.16\u00b0\u00b10.20\u00b0) and distance approaching optimal by trial 14. TEV required learning both direction and distance components with different learning dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C30, and C31 demonstrate that the TEV computational framework successfully captures mouse spatial learning. The rapid and precise directional learning (C30) contrasts with slower distance learning (C3, C26), supporting the hypothesis of independent mechanisms. The significantly higher hole check density near the target (C31, p<0.01) validates the TEV magnitude estimation. The statistical methods for computing TEV are well-described and appropriately applied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C8"
+    ],
+    "result": "When mice were rotated to new start positions after learning, they navigated to the rotationally equivalent location (REL) rather than the actual food location, demonstrating reliance on self-motion cues rather than visual landmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C32, and C33 provide strong evidence that mice use idiothetic rather than allothetic cues. The REL behavior was consistent across all rotation conditions (90\u00b0, -90\u00b0, 180\u00b0) with and without visual cues (Figure 5). The trajectory kinetics to REL were indistinguishable from trained performance (C33), indicating the mice were executing learned motor programs anchored to start position. This is a critical control demonstrating path integration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Mice successfully learned food locations without visual cues, including when trained and tested in complete darkness, demonstrating that visual landmarks are not necessary for spatial learning in this task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 provide converging evidence from multiple control experiments that visual cues are not required. Learning curves were statistically indistinguishable between conditions with/without wall cues (C34), light/dark testing (C35), and training in darkness (C36). Sample sizes (N=4 per group) are adequate for these control comparisons. However, the manuscript notes that odor controls (exhaust fans) were only applied to the darkness experiments, which is a minor limitation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C4",
+      "C9"
+    ],
+    "result": "After learning two food locations sequentially, five of eight mice took unrehearsed shortcuts from location B to location A in probe trials, demonstrating formation of a cognitive map based solely on self-motion cues and a fixed start location.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C9, C38-C40 demonstrate shortcut behavior meeting Tolman's criteria for cognitive maps. The experimental design ensures shortcuts were unrehearsed (C37 shows mice avoided the future B location during A training). Statistical analyses (C40) show probe B-A performance was significantly different from naive trials but similar to trained performance. The claim of being 'first demonstration' in rodents (C9) is supported by literature citations (C79). However, only 5/8 mice showed the canonical B\u2192A route, with 2/8 going A\u2192B first, indicating some behavioral variability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "In rotated two-food-location experiments, mice took shortcuts from REL-B to REL-A rather than from actual B to A, confirming that the cognitive map is anchored to the start location via self-motion cues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 provide critical validation that the cognitive map is based on path integration. The displacement maps and hole check distributions (Figure 8) clearly point from REL-B to REL-A after 180\u00b0 rotation. This control experiment (N=8) rules out alternative explanations based on uncontrolled spatial cues and confirms the idiothetic basis of the cognitive map. The experimental design is rigorous and the result is unambiguous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C7"
+    ],
+    "result": "Mice learned to efficiently navigate to hidden food using only minimal cues: a stable start location, self-motion signals, and active sensing (hole checks), without requiring landmarks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7 represent the central finding of the manuscript, supported by the convergence of multiple experimental results: failure with random entrances (C14-C20), success with static entrances (C21-C29), REL behavior after rotation (C32-C33), and successful learning without visual cues (C34-C36). The comprehensive experimental design with appropriate controls strongly supports this conclusion. This is the primary novel contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C104",
+      "C105"
+    ],
+    "result": "The Hidden Food Maze apparatus is a 120 cm diameter arena with 100 rotationally symmetric holes, designed to eliminate geometric cues and control for odor trails through washing and rotation between trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12, C104-C105 describe the experimental apparatus design. These are straightforward methodological descriptions supported by figures and detailed methods. The rotational symmetry design (C12) is a key feature for eliminating geometric cues. The washing/rotation protocol (C104) is stated to occur 108 times over the full experiment (C99), demonstrating rigorous odor control. These design features are well-documented and appropriate for the experimental goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C13"
+    ],
+    "result": "Mice initially explored the maze by following the wall (thigmotaxis) before exploring the maze center, consistent with prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C13 is supported by pretraining trajectory data (Figure 1\u2014figure supplement 1A) and citation to prior work (Fonio et al., 2009). This is a well-established behavioral observation that validates the experimental setup. The pretraining protocol was designed to overcome this tendency and encourage central exploration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C97",
+      "C98"
+    ],
+    "result": "During training on target B, mice maintained greater distance from the previous target A location than expected by chance, indicating they did not learn unreinforced B-to-A routes during training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C97-C98 provide important controls for the shortcut experiment. The statistical analysis comparing actual distances to randomized controls (Figure 6\u2014figure supplement 2) demonstrates that shortcuts were not learned through incidental exposure during training. While some mice sporadically visited location A (C97), they did not rely on it to find B (C98). This control is essential for interpreting the shortcut behavior as evidence of cognitive mapping.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Hole checks within 3 seconds of finding food increased and converged to the target site during learning. The entropy of hole check numbers was consistently lower near (<20 cm) versus far (>20 cm) from the target and decreased with learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76, C94-C96 provide detailed analysis of hole checking behavior supporting the path integration hypothesis. The temporal analysis (C76, Figure 3\u2014figure supplement 1) and entropy analysis (C94-C96, Figure 6\u2014figure supplement 1G) demonstrate increasing spatial precision and consistency with learning. The entropy analysis is methodologically sound and provides quantitative evidence of reduced uncertainty near the goal. These analyses support the BTSP hypothesis discussed in the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "In static entrance experiments, heading direction is constantly updated throughout trajectories, with mice veering toward food only in the last segment (80-85%) of the trajectory.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C91 are supported by trajectory segment analysis (Figure 4\u2014figure supplement 3G). The heading angle analysis across different trajectory segments demonstrates that directional control is maintained throughout the run but final approach adjustments occur late. This finding is consistent with the path integration hypothesis and suggests continuous updating of position estimates. The analysis is appropriate and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Experiments used C57Bl/6 wild-type male and female mice (8-9 weeks old), with results pooled across sexes. All procedures were approved by the University of Ottawa Animal Care Committee.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C103 provide standard methodological information about experimental subjects and ethical approval. The statement that results were 'the same' in both sexes (C102) lacks supporting statistical analysis but is acceptable for a methods statement. Sample sizes (typically N=8) are adequate for the behavioral analyses performed. These are routine methodological details appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Experimental conditions included 50 lux illumination to allow mice to see maze details without disrupting nocturnal cycles. Tracking was performed at 30 fps using Ethovision XT15 with 3-point body tracking. Statistical significance threshold was set at p<0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C111 describe standard experimental conditions and data collection methods. The lighting level (C106-C107) is justified by citations (C108). The tracking methodology (C109-C110) is standard for behavioral neuroscience. The statistical threshold (C111) is conventional. These methodological details are adequately documented and appropriate for the experiments conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C43",
+      "C44"
+    ],
+    "result": "Target direction is likely estimated from head direction cell activity, while the neural mechanisms for distance estimation are not known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C43-C44 are speculative statements about neural mechanisms. C43 is an inference based on the rapid directional learning and known properties of head direction cells, but no neural recordings were performed. C44 acknowledges the lack of knowledge about distance encoding mechanisms. These are reasonable hypotheses for future work but are not directly tested in this study. The authors appropriately qualify these as inferences and unknowns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C88",
+      "C89"
+    ],
+    "result": "The manuscript provides extensive review of prior literature on spatial navigation, including landmark use, path integration, hippocampal place cells, head direction cells, and cognitive mapping in various species and experimental paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C45-C89 represent citations to and summaries of prior work. These are appropriately cited and accurately represent the referenced literature based on the citations provided. The literature review establishes context for the current findings and supports the novelty claims. While individual citations could be verified, the overall representation of the field appears accurate and comprehensive. These claims support the interpretation and significance of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The authors hypothesize that contextual visual cues of the starting point and arena boundary anchor directional information from optic flow, vestibular, and proprioceptive signals to fixed environmental features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C87 is explicitly stated as a hypothesis based on current findings and cited VR studies. While consistent with the data (mice learn with fixed start location), this specific mechanism is not directly tested. The claim appropriately acknowledges its speculative nature. This represents a reasonable interpretation for future investigation but lacks direct experimental support in the current work.",
+    "result_type": "MINOR"
+  }
+]

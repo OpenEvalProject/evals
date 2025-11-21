@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C33",
+      "C34",
+      "C35",
+      "C83"
+    ],
+    "result": "Factor analysis of 30,486 chirps revealed that beat frequency (DF), environmental experience, and social experience are the primary factors explaining chirp variability (52.3% of variance), while chirp parameters (duration and FM) do not correlate with specific behavioral or social contexts beyond their relationship to DF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C33-C35, and C83 are mutually reinforcing and supported by comprehensive factor analysis (Figure 2) of a large dataset. The statistical approach (FAMD) is appropriate for mixed data types, and the iterative model refinement strengthens the conclusions. The finding that DF dominates chirp variance is consistently demonstrated across multiple experimental paradigms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C85",
+      "C42"
+    ],
+    "result": "Playback experiments with different chirp types embedded in EOD mimics showed that brown ghosts do not respond in a chirp-type-specific manner, suggesting that chirp production and detection are independent processes primarily driven by DF rather than chirp semantic content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37, C85, and C42 are supported by systematic playback experiments (Figure 3) with appropriate controls (mode 0 = no chirps). The lack of differential responses to different chirp types across 16 fish and multiple DF values provides strong evidence against the communication hypothesis. However, the authors acknowledge that playback stimuli may not perfectly replicate natural signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Frequency ramp playback experiments demonstrated that chirp production increases at lower DF values, with individual fish showing stereotyped and reproducible chirping patterns across trials (R\u00b2=0.987 correlation between chirp count and trial duration), further confirming that chirp patterning is primarily determined by beat frequency rather than internal states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are strongly supported by frequency ramp experiments (Figure 4) showing remarkably high reproducibility (R\u00b2=0.987). The consistency across different trial durations and the individual stereotypy argue against motivational state explanations. However, the sample size (N=14 fish) is relatively small for such strong claims about general principles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C84"
+    ],
+    "result": "Analysis of chirp sequences revealed that type 2 chirps are the most frequently produced, with the most common transition being type 2-to-type 2 repeats. Chirp-type patterning is highly conservative and not connected to behavioral contexts except for DF-related differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 and C84 are supported by comprehensive transition analysis (Appendix 1\u2014figure 3) across multiple behavioral contexts. The consistency of findings across different social pairings strengthens the conclusion. However, the analysis is limited to pairwise transitions, and longer sequence patterns might reveal additional structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Cross-correlation analysis of chirp time series from interacting fish pairs showed that chirp transitions are predominantly self-referenced (1-1 or 2-2) with minimal sender-receiver correlations, indicating that chirp time series produced by different fish are largely independent, even during simulated courtship conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by systematic cross-correlation analysis (Figure 5) across multiple social contexts including breeding conditions. The low cross-correlation indices and predominance of self-referenced transitions provide strong evidence against coordinated chirp exchanges. The breeding experiment (N=8 pairs) provides a critical test of the communication hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C86"
+    ],
+    "result": "Behavioral analysis of freely swimming fish pairs using multiple approaches (PSTH, transition matrices, co-occurrence networks, multidimensional scaling) consistently showed that chirps occur more frequently during locomotion and scanning-related activities rather than during aggressive interactions, suggesting a link to environmental exploration rather than motivational states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C62 and C86 are supported by convergent evidence from four independent analytical methods (Figure 6) applied to 4,672 chirps from 12 fish pairs. The consistency across methods strengthens the conclusions. However, the temporal resolution (4s window) may miss finer-scale associations, and the sample size is modest for behavioral analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Computational analysis of beat interference showed that emitted chirps are localized in correspondence with areas of high beat interference, with strong matching between DF values producing maximum interference and those at which chirps were actually recorded. Type 2 chirps at low DFs can induce similar interference levels as larger chirps at higher beat frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 are supported by systematic computational modeling (Appendix 1\u2014figure 9) comparing predicted interference patterns with observed chirp distributions across 30,486 chirps. The methodology for calculating beat interference is clearly described, though it represents a simplified model that may not capture all physiological aspects of beat processing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "Boundary element model simulations demonstrated that chirps consistently alter beats and electric images at all reciprocal positions tested, with significant effects detected across 835 body nodes, supporting the hypothesis that chirp-triggered electric images contain usable spatial information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by sophisticated BEM simulations (Figure 7) incorporating realistic fish geometry and EOD characteristics. The analysis across multiple phases, distances, and body locations is comprehensive. However, the simulations use simplified chirp parameters and static fish positions, which may not fully represent dynamic natural conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Novel environment exploration assays revealed sex differences in exploratory behavior and showed that most chirps (90%) are produced within 30 cm of conspecifics at specific angles (30\u00b0, 150\u00b0, 330\u00b0), with different chirp types showing distinct spatial distributions. Variables associated with beat frequency explain 73.7% of chirp variance in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C78 are supported by detailed spatial analysis (Figure 8, Appendix 1\u2014figures 11-13) of 7,893 chirps from 30 fish in a naturalistic arena. The sex differences and spatial patterns are clearly documented. However, the caged conspecific design constrains natural interactions, and the angular biases might partly reflect the experimental geometry rather than purely biological preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Environmental manipulation experiments demonstrated that chirp rates increase in darkness and are further elevated in cluttered environments. Playback experiments confirmed that chirp rates specifically increase when EOD signals are partially concealed by clutter, indicating that chirping is significantly affected by environmental complexity and signal detectability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 are supported by two complementary experimental approaches (Figure 9): paired fish in different environments (N=6 pairs) and playback through clutter (N=8 fish). The convergent results strengthen the conclusions. Statistical analysis (Friedman's test) is appropriate for the repeated measures design. However, the sample sizes are relatively small, and the clutter manipulation is somewhat artificial.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C6",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "The authors propose that chirps function as specialized self-directed signals (homeoactive sensing) that enhance conspecific electrolocation during social encounters, potentially by improving beat temporal resolution, enhancing electrosensory responses, or maintaining optimal contrast levels analogous to sniffing, whisking, or saccades in other sensory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 represents the main hypothesis supported by multiple lines of evidence throughout the manuscript. However, C90-C92 are explicitly speculative mechanisms that require direct experimental validation. While the correlational evidence is strong, causal demonstration that chirps actually improve electrolocation performance is lacking. The analogy to other sensory systems (C92) is conceptually appealing but not empirically tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "K-means clustering of chirps based on duration and frequency modulation identified 2-3 optimal clusters (validated by silhouette method), leading to categorization using cut-off values of 50ms duration and 105 Hz FM to define four chirp types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 are supported by appropriate clustering analysis (Figure 1C) with validation. However, the authors acknowledge that the cut-off values were based on a preliminary dataset (N=11,342) and that the separation between type 1 and type 2 chirps was not obvious. The categorization scheme prioritizes consistency with literature over optimal clustering, which is a reasonable but somewhat arbitrary choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Males produced the majority of chirps, with rates affected by environmental experience, social status, and social experience. This sex difference reversed when fish interacted freely versus being separated by a mesh divider, and sex differences in chirp types were most evident in male-to-female exchanges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by data from 130 fish pairs (Appendix 1\u2014figure 2). The reversal of sex differences between divided and free conditions is particularly interesting. However, sex determination based solely on EOD frequency (>750 Hz = male) has acknowledged limitations, as immature males cannot be distinguished from females without gonadal inspection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Playback experiments revealed a transient decrease in chirping immediately surrounding playback chirps, type 2 chirps increased over time during trials, and rises were predominantly produced at the end of playback signals regardless of playback chirp content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 are supported by temporal analysis of playback responses (Appendix 1\u2014figures 5-6). The findings are consistent with previous literature (cited). These observations provide additional detail about chirp dynamics but are secondary to the main conclusions about chirp function.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C25",
+      "C93",
+      "C94"
+    ],
+    "result": "The study utilized 234 Apteronotus leptorhynchus (age 2-3 years) and collected 67,522 chirps from various experimental paradigms. Sex determination was based on normalized EOD frequency with a 750 Hz threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25, C93-C94 are straightforward methodological statements supported by Table 2 and methods description. The large dataset is a strength of the study. The sex determination method is standard in the field despite acknowledged limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Background claims establishing that weakly electric fish generate electric fields for navigation and communication, that brown ghost knifefish have a rich electric vocabulary with sex-specific signals characterized by chirps, and that the communication code remains unknown despite decades of research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 represent established knowledge and the existing communication hypothesis that the authors are challenging. These are appropriately cited and provide necessary context. C4 specifically represents the hypothesis being tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Background claims about echolocation in other species, brown ghost taxonomy and habitat, EOD characteristics, electrolocation ranges (passive: 0-5 cm, active: 10-12 cm, beat detection: 30-50 cm), sex differences in EOD frequency, electric field physics, and chirp classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C24 represent established knowledge appropriately cited from the literature. These provide essential background for understanding the study's context and the analogy to echolocation. The ranges and parameters cited are consistent across multiple sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Summary of the existing communication hypothesis: males chirp more than females, smaller chirps (type 2) are associated with agonistic male interactions, larger chirps (types 1 and 3) are associated with courtship, and high chirp rates with large chirps occur in mating pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C89 accurately represent the existing communication hypothesis from the literature (multiple citations provided). These claims establish the prevailing view that the authors are challenging with their alternative interpretation.",
+    "result_type": "MINOR"
+  }
+]

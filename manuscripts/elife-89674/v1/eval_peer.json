@@ -1,0 +1,202 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C13",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors introduce a neuronal least-action (NLA) principle that postulates voltage dynamics of cortical pyramidal neurons prospectively minimize local somato-dendritic mismatch errors, with the fundamental novelty being prospective (future-looking) error processing that overcomes integration delays and enables real-time correction of output errors through apical dendritic computation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm this theoretical framework as a core contribution. Reviewer 3 explicitly states the theory 'describes a theoretical framework to link predictive coding, error-based learning, and neuronal dynamics' and notes 'no theory had to my knowledge related adaptive dynamics widely observed in the brain...with the dynamics of learning rules.' Reviewer 1 confirms the manuscript 'describes the dynamics of neurons and rules of synaptic plasticity that minimize the integral of prediction errors over time.' The editor notes the framework is 'potentially important' with 'solid' evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C35",
+      "C37",
+      "C39"
+    ],
+    "result": "The NLA principle predicts prospective (phase-advanced) firing rates in cortical neurons, supported by experimental data showing phase-advanced spike responses to sinusoidal input (K\u00f6ndgen et al., 2008) and lag-less voltage propagation from apical dendrites to soma (Ulrich, 2002), with instantaneous voltage propagation being independent of network size and depth.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these claims linking theoretical predictions to experimental observations. Reviewer 3 specifically acknowledges that the theory 'captures a more extensive range of observations while satisfying normative constraints' and notes the manuscript 'illustrates how features of this model fits either normative or observational constraints.' The cited experimental data (K\u00f6ndgen et al., 2008; Ulrich, 2002) is presented without reviewer objection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C51"
+    ],
+    "result": "The theory connects to motor control through forward models and the moving equilibrium hypothesis, with supporting evidence from muscle spindle prospective coding (Dimitriou and Edin, 2010), preparatory spindle adjustments before movement (Papaioannou and Dimitriou, 2021), and error-dependent spindle activity during motor learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these connections to motor control without critique. Reviewer 1 notes the paper 'may help to understand the organization of cortical neurons, their properties, as well as the function of its particular components.' Reviewer 3 confirms the manuscript 'illustrates how features of this model fits either normative or observational constraints' and that the theory is 'likely going to be regarded as an important step towards a comprehensive theory of the brain.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65"
+    ],
+    "result": "Simulations demonstrate that recurrently connected networks following the NLA principle can learn to represent intracortical EEG data, generalize to unseen recordings with only partial input, and maintain continuous synaptic plasticity without reaching temporal steady states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the manuscript 'presents multiple and diverse simulations illustrating the model's functioning' and Reviewer 3 notes 'the manuscript describes and analyses the model in great detail.' The editor confirms 'the provided evidence is solid,' indicating acceptance of the simulation results demonstrating the model's capabilities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The prospective coding mechanism addresses a critical limitation of previous bio-plausible error backpropagation models by enabling instantaneous voltage propagation, which is necessary for network stability and allows continuous plasticity during realistic input presentation times, whereas networks without lookahead require plasticity to be switched off before reaching steady state.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this advantage over prior models. Reviewer 3 explicitly states 'no theory had to my knowledge related adaptive dynamics widely observed in the brain...with the dynamics of learning rules' and notes the theory 'captures a more extensive range of observations while satisfying normative constraints.' The simulation evidence (Figure 4) demonstrating these advantages is not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C77",
+      "C80",
+      "C83",
+      "C86"
+    ],
+    "result": "A cortical microcircuit with lateral inhibition is proposed to transport errors across the network, where learned feedback weights enable apical prediction errors to function as backpropagated errors (Theorem 2), demonstrated by successful MNIST digit classification while simultaneously learning the apical signal representation without parameter fine-tuning when using sufficiently large interneuron populations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the microcircuit proposal and its learning capabilities. Reviewer 3 notes 'the credit assignment problem is solved by an apical-compartment projecting set of interneurons with learning rules whose role is to align many weight matrices' and confirms 'an extensive method section and supplementary material expand on mathematical proofs.' Reviewer 1 acknowledges the 'multiple and diverse simulations' without raising concerns about the MNIST results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The theory integrates multiple prior frameworks including output nudging (Urbanczik and Senn, 2014), Equilibrium Propagation (Scellier and Bengio, 2017), least-control principle (Meulemans et al., 2022), and predictive coding (Rao and Ballard, 1999), but distinguishes itself by using prospective, soma-integrated prediction errors that extrapolate to future activities for real-time output improvement, covering both weak and strong nudging cases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly acknowledges this integration, stating 'experts would say that much of the article agglomerates previous theoretical papers by the same authors' but notes 'a number of adaptations to previous theoretical results were necessary, so the present article is not easily reduced to a compendium of previous pre-prints.' The reviewer confirms the theory 'captures a more extensive range of observations' than previous frameworks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C95"
+    ],
+    "result": "The NLA principle is positioned as a viable formalization program for neuroscience analogous to physics, offering a bottom-up theory that connects local neuronal errors to global behavioral errors within the principle formulation itself, contrasting with top-down approaches like the free energy principle, and integrating previous ideas on cortical processing and learning through a prospective variational principle.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 extensively discusses this positioning, noting 'Lagrangian and Hamiltonian pictures provide such powerful single equation' in physics and confirming the manuscript 'describes a theoretical framework' with this aspiration. The reviewer states the theory is 'likely going to be regarded as an important step towards a comprehensive theory of the brain,' though notes 'the manuscript is by no means easy to read' and 'there remain a few thorny assumptions.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "The model requires that apical feedback error representations be learned before they can teach feedforward synapses, with learning being more robust when error learning operates in phases without output teaching but with sensory activity, as may occur during sleep.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 notes 'there remain a few thorny assumptions (unobserved details of the learning rules or soma-dendrites interactions)' without specifying which assumptions are problematic. The sequential learning requirement and sleep-phase learning are presented as model features but the reviewers do not explicitly validate or challenge these specific mechanistic details, suggesting some uncertainty about their biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15"
+    ],
+    "result": "The manuscript establishes theoretical context by referencing the physical least-action principle, near-optimal computational strategies in machine learning and neuroscience, and prior motor control principles, positioning the NLA principle as reformulating the equilibrium point hypothesis in a dynamical setting while distinguishing living systems' future-oriented interactions from physics' present-state interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this contextual framing without objection. Reviewer 3 explicitly discusses the physics analogy, stating 'Lagrangian and Hamiltonian pictures provide such powerful single equation' and notes 'such energy pictures have been used in theoretical neuroscience since the 1980s.' The historical and conceptual positioning is treated as appropriate background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The NLA framework integrates multiple lines of prior work including energy-based network dynamics (Hopfield, 1982; Scellier and Bengio, 2017), dendritic computation for nonlinear processing and deep learning, predictive coding and active inference, prospective coding in retinal ganglion and cerebellar Purkinje cells, and Hodgkin-Huxley dynamics, positioning brain activity as a moving equilibrium during sensory-motor transformation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this integration of prior work. Reviewer 3 notes the theory 'captures a more extensive range of observations while satisfying normative constraints' and acknowledges 'the prospective variational principle introduced with the NLA allows for integrating previous ideas on formalizing the processing and learning in cortical networks.' The extensive citations and connections to prior literature are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors speculate about future extensions including links to reinforcement learning with delayed rewards, applications to neuromorphic hardware, and generalizations to spiking neurons, attentional mechanisms, second-order errors, and longer temporal processing through adaptation or realistic dendrite models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these speculative future directions. Reviewer 3 acknowledges the theory's current scope while noting 'there remain a few thorny assumptions' in the present formulation, implicitly accepting that extensions remain as future work. The speculative nature of these claims is appropriate for a discussion section and is not contested.",
+    "result_type": "MINOR"
+  }
+]

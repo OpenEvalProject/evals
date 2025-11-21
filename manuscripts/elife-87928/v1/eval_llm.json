@@ -1,0 +1,297 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study successfully generated whole-genome sequencing data from historical museum specimens of Xerces Blue and Silvery Blue butterflies, along with a modern Silvery Blue specimen and a novel reference genome from Green-Underside Blue. Four Xerces Blue and seven historical Silvery Blue genomes were sequenced, with DNA exhibiting typical ancient DNA characteristics including short read lengths and post-mortem deamination patterns. The historical genomes covered approximately 49-55% of the reference genome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C41, C94-C96 collectively demonstrate successful ancient DNA extraction and sequencing from museum specimens. The data quality metrics (read lengths, deamination patterns, coverage statistics) are consistent with ancient DNA and are well-documented. The generation of a high-quality reference genome (97.1% BUSCO completeness) provides appropriate support for the comparative analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C75",
+      "C76"
+    ],
+    "result": "Phylogenetic analyses using complete mitochondrial genomes confirm that Xerces Blue and Silvery Blue are distinct species, with divergence estimated between 0.9-2.4 Ma depending on calibration method. Both species form monophyletic clades with high statistical support (posterior probability = 1), confirming previous findings from Grewe et al. (2021) with more comprehensive genomic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7-C8, C46-C55, C75-C76 provide phylogenetic evidence for species distinction, but the wide range in divergence time estimates (0.9 Ma vs 2.4 Ma) depending on calibration method introduces substantial uncertainty. The abstract claims 'at least 850,000 years ago' (C8) which falls within the molecular clock estimate but not the fossil-calibrated estimate. The lack of fossil calibration points specific to this lineage and reliance on borrowed calibrations or variable molecular clock rates weakens confidence in precise divergence timing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C77",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Wolbachia screening found no evidence of infection in the sampled specimens, suggesting that the speciation of Xerces Blue and Silvery Blue is unrelated to cytoplasmic incompatibility caused by this endosymbiont.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57, C77, C105-C107 present Wolbachia screening results showing minimal reads assigned to Wolbachia (Table 4). The methodology using Kraken2 for taxonomic assignment is appropriate, and the low read counts across all specimens support the conclusion of no infection. However, the absence of evidence is not definitive evidence of absence, particularly given ancient DNA degradation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Principal component analysis of nuclear genome polymorphisms shows clear separation between Xerces Blue and Silvery Blue specimens, with both species equally distant from Green-Underside Blue in PC1 (52.81% variance) and separated from each other in PC2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 are directly supported by Figure 2 and the PCA analysis using PCAngsd. The clear clustering patterns and variance explained values are consistent with distinct species relationships. The analysis appropriately uses nuclear genome-wide SNP data (N=6,682,591 SNPs) providing robust support for the phylogenetic relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C79",
+      "C84"
+    ],
+    "result": "PSMC demographic analyses reveal that both species experienced population growth during Marine Isotopic Stage 7 (240,000-190,000 years ago), but subsequently diverged in trajectories: Xerces Blue underwent continuous population decline starting ~75,000 years ago during the Wisconsin Glacial Episode, while Silvery Blue populations were not negatively affected and remained stable or increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9-C11, C61-C64, C79, C84 present PSMC results showing contrasting demographic histories. However, C101 explicitly acknowledges that coverage <20\u00d7 may underestimate heterozygosity and infer lower effective population sizes. The correction for false negative rates (C99-C100) partially addresses this, but the authors acknowledge incomplete diversity capture. The temporal correlation with glacial periods is speculative (C64 uses 'suggesting'), and the causal link to climate is inferred rather than demonstrated. Figure 3 and supplements show the patterns, but the absolute population size estimates may be systematically biased downward.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Xerces Blue exhibited 22% lower heterozygosity compared to historical Silvery Blue samples, a difference that is statistically significant (T-test; p = 0.0072).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 are supported by Figure 4 and statistical testing. The T-test shows significant difference with p=0.0072. However, the analysis should account for the acknowledged coverage bias (C101) and the correction methods applied (C99-C100). The statistical test appears appropriate for comparing the two groups, though multiple testing correction is not mentioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C82",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Xerces Blue showed significantly greater runs of homozygosity (up to 6% of genome) compared to Silvery Blue, particularly in short RoH (100-500 kb), consistent with background inbreeding due to genetic drift. However, the limited presence of long RoH indicates that recent consanguinity was not common.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C67-C70, C82, C102-C104 present RoH analysis results supported by Figure 4 and supplements. The interpretation framework (short RoH = LD patterns, intermediate = background inbreeding, long = recent inbreeding) is appropriately cited to Ceballos et al. 2018. The distinction between background inbreeding and recent consanguinity is well-supported by the RoH size distribution. The statistical significance claim (C12) should be verified with explicit test results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C81"
+    ],
+    "result": "Xerces Blue exhibited higher Ka/Ks ratios and carried a higher fraction of nonsense and functionally high-to-moderate effect variants in homozygosity and within runs of homozygosity compared to Silvery Blue, indicating increased deleterious genetic load correlated with low population size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73, C81 are supported by Figure 5 and the use of SnpEff for variant effect prediction. The analysis appropriately examines deleterious variants in both homozygous sites and RoH regions. However, the functional predictions from SnpEff are computational predictions that may not reflect actual fitness effects. The correlation with low population size is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C78",
+      "C89",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors propose that genomic signals of population decline observed in Xerces Blue (low effective population size, reduced heterozygosity, increased RoH and deleterious load) could be used to identify and monitor other insects threatened by extinction, though insect extinction genomics may differ from vertebrates and requires further study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Claims C15, C78, C89, C91-C93 are speculative recommendations for future applications and research. While the genomic patterns are documented in Xerces Blue, the generalizability to other insects is untested. C92 explicitly acknowledges that insect extinction signals may differ from vertebrates, and C93 calls for further exploration. These are reasonable hypotheses but lack supporting evidence from other insect species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "Human habitat destruction was likely the final blow in the Xerces Blue extinction process, following tens of thousands of years of demographic decline associated with climatic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 combines demographic analysis results with historical knowledge to infer causation. While the PSMC shows long-term decline and historical records document habitat destruction, the causal link is inferred rather than demonstrated. The claim uses 'likely' indicating appropriate uncertainty, but alternative explanations are not systematically evaluated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "This study represents the first ancient genome generated from an extinct insect species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C74 asserts a priority claim based on the authors' knowledge ('to our knowledge'). While this may be accurate, comprehensive verification of this claim would require systematic review of the ancient DNA literature. The claim is plausible given the known difficulties of ancient insect DNA (C26) but cannot be definitively verified from the manuscript alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The reduced genome coverage (49.3% for Xerces Blue, 55.2% for Silvery Blue) compared to the mappable fraction (57.8%) is attributed to genomic divergence from the reference species, with 14 nuclear genes in unrecoverable regions identified for future study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 appropriately explain coverage limitations through mappability analysis and divergence. The simulation approach (fragmenting reference genome to match ancient DNA read lengths) is sound. The identification of 14 genes in unrecoverable regions (Table 3) provides specific targets for future investigation, though the functional significance remains to be determined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "PSMC analyses used a generation time of 1 year and mutation rate of 1.9\u00d710\u207b\u2079 (estimated from Heliconius melpomene), with false negative rate corrections applied to low-coverage samples, though coverage <20\u00d7 may result in underestimation of historical effective population sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 transparently describe PSMC parameters and limitations. The mutation rate is appropriately borrowed from a related butterfly species (C98), and the correction for low-coverage bias follows recommended practices (C99-C100). The explicit acknowledgment of limitations (C101) demonstrates appropriate scientific rigor, though it also indicates that absolute population size estimates should be interpreted cautiously.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C108"
+    ],
+    "result": "No fixed mutations were identified between G. lygdamus and G. xerces in colouration genes (optix, cortex, Wnt genes) in regions covered by both species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C108 reports negative results from colouration gene analysis. The methodology (identifying genes via BLAST, calling variants with GATK, filtering for fixed differences) is appropriate. However, the coverage limitations acknowledged elsewhere mean that not all regions of these genes may have been adequately sampled. The negative result is informative but does not rule out colour-related genetic differences in uncovered regions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The study demonstrates the value of museum insect specimens for estimating temporal changes in genetic diversity at a population scale.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 is supported by the successful generation of genomic data from 80-100 year old museum specimens and the resulting population genetic insights. The study provides a proof-of-concept for ancient DNA approaches in insects, though the broader applicability depends on specimen preservation and age.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Background information on Xerces Blue natural history, extinction, and previous research limitations is presented, establishing context for the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C16-C27 provide historical and contextual information supported by appropriate citations. These establish the significance of the study subject and the limitations of previous work (particularly C23-C26 regarding Grewe et al. 2021). The claims are primarily descriptive and well-supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors contextualize their findings by comparing to extinction genomics in other species, noting variable patterns of inbreeding and demographic decline across extinct vertebrates, and highlighting that insects are sensitive to climate fluctuations despite high abundance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C85-C88 appropriately cite comparative studies (van der Valk et al., D\u00edez-Del-Molino et al., Rogers and Slatkin, Pr\u00fcfer et al., Lord et al., Murray et al.) to contextualize findings. The comparisons are relevant and accurately represented. C88 regarding insect climate sensitivity is general knowledge appropriately applied to interpret results.",
+    "result_type": "MINOR"
+  }
+]

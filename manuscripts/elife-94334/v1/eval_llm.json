@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "In budding yeast, a single irreparable DSB activates the DDC and induces cell cycle arrest for approximately 12-15 hours, after which cells adapt by extinguishing the DDC and resuming the cell cycle. In contrast, cells with two persistent DSBs remain permanently arrested with sustained Rad53 hyperphosphorylation throughout a 24-hour time course.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C51-C55 are well-supported by experimental data in Figure 1, showing >90% G2/M arrest at 4 hours in both 1-DSB and 2-DSB strains, adaptation kinetics in 1-DSB cells by 12-15 hours correlating with Rad53 dephosphorylation, and permanent arrest in 2-DSB cells with persistent Rad53 hyperphosphorylation. The experimental design includes appropriate controls, multiple readouts (adaptation assay, DAPI staining, western blot), and clear temporal resolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "DDC proteins Ddc2, Rad9, Rad24, and Rad53 are required both to establish and maintain cell cycle arrest in response to DNA damage. Degradation of these proteins results in premature resumption of the cell cycle, with rapid depletion causing gradual Rad53 dephosphorylation and release from G2/M arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7 and C59-C63 are strongly supported by data in Figures 2 and Figure 2\u2014figure supplements 2-3. The AID system allows temporal control of protein depletion, and the results show that depletion of Ddc2-AID, Rad9-AID, or Rad24-AID at 4 hours after DSB induction causes rapid loss of arrest. Western blots confirm protein depletion and Rad53 dephosphorylation, while DAPI staining confirms cell cycle progression. The experimental design appropriately includes untreated controls and multiple timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C82"
+    ],
+    "result": "Rad53 depletion results in premature cell cycle resumption, but with a 4-hour delay compared to depletion of upstream DDC factors (Ddc2, Rad9, Rad24). This delay is characterized by a more gradual transition into late anaphase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C65, and C82 are supported by data in Figures 2D, 5C, and Figure 2\u2014figure supplement 3B. The 4-hour delay is consistently observed across different experimental systems (AID and AID2), and DAPI staining confirms the gradual progression. However, the mechanistic basis for this delay requires further investigation, as suggested by the authors' hypothesis about downstream targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Dun1 is required for the establishment but not the maintenance of cell cycle arrest. Deletion of DUN1 significantly impairs checkpoint activation (only 60% arrest at 4 hours, 25% at 7 hours), but depletion of Dun1-AID 4 hours after damage does not cause significant release from arrest unless CHK1 is also deleted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C72-C74 are supported by data in Figure 4. The differential requirement for Dun1 in establishment versus maintenance is clearly demonstrated through comparison of deletion mutants (Figure 4A) versus conditional depletion (Figure 4B-C). The genetic interaction with CHK1 deletion (Figure 4C) provides additional support. The experimental design appropriately distinguishes between establishment and maintenance phases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Chk1 is required for prolonged maintenance but not for initial establishment of mitotic arrest. Deletion of CHK1 does not impair arrest induction but causes >95% adaptation by 24 hours. Chk1 functions in conjunction with Rad53 to sustain arrest, as depletion of DDC factors in chk1\u0394 cells leads to more rapid cell cycle release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C66-C70 are well-supported by data in Figure 3. The temporal requirement for Chk1 is demonstrated through deletion analysis (Figure 3A-B) and genetic interactions with Rad53-AID and other DDC factors (Figure 3C-F). The data clearly show that Chk1 becomes important for maintenance rather than establishment. Statistical analysis would strengthen the claim of 'significant decrease' in C68.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C28",
+      "C29",
+      "C106"
+    ],
+    "result": "Tel1 is dispensable for DDC activation and maintenance in response to two DSBs. TEL1 deletion does not affect establishment or maintenance of checkpoint arrest up to 24 hours, supporting that cell cycle arrest in response to enzymatic DNA breaks is largely orchestrated by Mec1 with minor contribution from Tel1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C28-C29, and C106 are supported by data in Figure 3\u2014figure supplement 1 and consistent with prior literature (C29, C106 cite Dubrana et al., 2007). The experimental data directly demonstrate lack of effect on arrest maintenance, though the claim about 'minor contribution' relies partially on cited work. The result is consistent with the broader understanding of Mec1 versus Tel1 roles.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C78",
+      "C79",
+      "C80",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "After 15 hours following induction of 2 DSBs, DDC proteins Ddc2, Rad9, and Rad53 become dispensable for maintaining arrest. Depletion of these proteins at 15 hours leads to diminished Rad53 phosphorylation but does not alter the percentage of G2/M-arrested cells, indicating a transition to DDC-independent arrest maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12 and C78-C85 are supported by data in Figure 5 and Table 1. The temporal transition is clearly demonstrated by comparing depletion at 4 hours (causes release) versus 15 hours (no release). Western blots confirm protein depletion and changes in Rad53 phosphorylation. Statistical analysis in Table 1 confirms no significant difference in arrest. The use of both AID and AID2 systems strengthens the conclusion. However, the observation that Rad9-AID depletion at 15 hours maintains Rad53 hyperphosphorylation (C85) suggests complexity in the signaling pathway that warrants further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C115"
+    ],
+    "result": "Prolonged cell cycle arrest following induction of 2 DSBs becomes dependent on SAC proteins Mad1 and Mad2. Depletion of Mad1-AID or Mad2-AID at 15 hours causes immediate reduction in G2/M arrest and cell cycle re-entry, despite persistent Rad53 hyperphosphorylation. MAD2 deletion causes adaptation between 12-15 hours, and this occurs even when Ddc2 is overexpressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C86-C92, and C115 are strongly supported by data in Figures 6 and Figure 6\u2014figure supplements 1-2. The temporal requirement for Mad1/Mad2 is demonstrated through depletion at both 4 hours (cells remain arrested until ~15 hours then adapt) and 15 hours (immediate release). The striking observation that cells re-enter the cell cycle despite persistent Rad53 hyperphosphorylation (C89, C92) is well-documented. The genetic epistasis with Ddc2 overexpression (C87) further supports SAC dominance at late timepoints. DAPI staining confirms cell cycle progression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Simultaneous depletion of Ddc2-AID and Mad2-AID at 15 hours shows no statistically significant difference in cell cycle escape compared to Mad2-AID depletion alone, despite causing Rad53 dephosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 is supported by data in Figure 6\u2014figure supplement 3 and Table 1. Statistical analysis (one-way ANOVA with Sidak post-hoc test) confirms no significant difference at multiple timepoints. This result supports the model that SAC becomes dominant over DDC at late timepoints. The experimental design appropriately includes the necessary controls and statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C14",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C125",
+      "C126"
+    ],
+    "result": "Bub2, but not its binding partner Bfa1, is essential for prolonged cell cycle arrest in response to 2 DSBs. Degradation of Bub2-AID at both 4 and 15 hours suppresses G2/M arrest, while Bfa1-AID degradation does not trigger significant release or alter Rad53 phosphorylation. Neither inactivation leads to accumulation of cells with mitotic exit defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14, C94-C97, and C125-C126 are supported by data in Figure 7 and Figure 7\u2014figure supplements. The differential requirement for Bub2 versus Bfa1 is clearly demonstrated through parallel AID depletion experiments at multiple timepoints. DAPI staining confirms lack of mitotic exit defects. This surprising result reveals Bub2 has a Bfa1-independent role in DNA damage response, though the mechanism remains unclear. The experimental design is rigorous with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C121",
+      "C122"
+    ],
+    "result": "The distance between DSB sites and their corresponding centromeres determines whether cells remain permanently arrested. Strains with DSBs within ~50-86 kb of centromeres (YSL53, DW417) remain arrested at 24 hours, while a strain with one DSB 230 kb from the centromere (GEM188) shows only 37% arrest, indicating less robust SAC triggering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101, C121-C122 are supported by data in Figure 8. The correlation between DSB-centromere distance and arrest duration is clearly demonstrated across multiple strains. This result provides mechanistic insight into why not all 2-DSB combinations produce permanent arrest and supports the model that \u03b3-H2AX spreading to centromeres triggers SAC. However, only one strain (GEM188) with a distant DSB is tested, limiting generalizability. Additional strains with varying distances would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Histone H2A and/or H2B phosphomimetic mutations (H2A-S129E, H2B-T129E) do not affect growth rate, suggesting these modifications alone are not sufficient to cause SAC-dependent delay in mitosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by data in Figure 9 showing no growth rate differences across mutants. However, this is a negative result with important caveats: (1) the authors note H2A-S129E may not be fully phosphomimetic, (2) growth rate is an indirect measure of SAC activation, and (3) the experiment tests constitutive modifications rather than damage-induced spreading to centromeres. More direct assays of SAC activation or kinetochore function would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C104",
+      "C105",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Prolonged cell cycle arrest in response to 2 DSBs is achieved by a handoff from the DDC to specific SAC components. The establishment and maintenance of arrest require overlapping but different sets of factors: arrest up to ~15 hours requires continuous presence of DDC proteins (Ddc2, Rad9, Rad24, Rad53) with Dun1 playing an important but nonessential role and Chk1 contributing to maintenance. After 15 hours, arrest is enforced by SAC proteins Mad1, Mad2, and Bub2 rather than DDC proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C104-C105, C127-C131 represent the major integrative conclusions of the study, supported by the collective data from Figures 1-7. The temporal handoff model is well-supported by: (1) DDC protein requirement at early but not late timepoints, (2) SAC protein requirement at late timepoints, (3) cell cycle re-entry despite persistent Rad53 phosphorylation when SAC is depleted, and (4) distance-dependent effects consistent with centromere involvement. The model is internally consistent and explains the differential requirements. However, the molecular mechanism of the handoff and how SAC becomes activated remain unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C81"
+    ],
+    "result": "AID-tagged DDC proteins (RAD9-AID, RAD24-AID, RAD53-AID) are hypomorphic and show premature adaptation at 24 hours in the absence of exogenous IAA, likely due to basal IAA levels from amino acid biosynthesis. This effect is TIR1-dependent and does not occur in control strains without AID tags. The AID2 system partially restores function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 and C81 are supported by data in Figure 2\u2014figure supplements 1-2. The hypomorphic nature of AID tags is clearly demonstrated and appropriately controlled (TIR1 dependence, IAA-only controls). The authors' interpretation about endogenous IAA is reasonable given the citation (Rao et al., 2010). This technical limitation is important for interpreting the results and led to use of the AID2 system for some experiments. The transparency about this limitation strengthens confidence in the overall conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The experimental system uses strain JKM179 with GAL-HO to induce a single DSB at MAT on chromosome III, and a 2-DSB derivative with an additional HO site 52 kb from the centromere on chromosome IV. HO cleavage is nearly complete within 30-45 minutes, and with continuous expression, nonhomologous end-joining occurs in only 0.2% of cells, making both DSBs essentially irreparable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe the experimental system and are supported by citations to prior work (Lee et al., 1998, 2014; Moore and Haber, 1996) and confirmed by the data presented. The system is well-established and appropriate for studying checkpoint maintenance. The low rate of NHEJ is important for ensuring DSBs remain irreparable throughout the time course.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Background on DDC pathway components and their roles in checkpoint activation, including Mec1/ATR as the primary kinase, the 9-1-1 clamp loading mechanism, Ddc2/ATRIP recruitment, Rad9 scaffolding function, and downstream effector kinases Rad53/CHK2 and Chk1/CHK1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C40 represent established knowledge from the literature, appropriately cited throughout the Introduction. These claims provide necessary context for the current work and are not novel findings of this study. The citations appear appropriate and the descriptions are consistent with current understanding of the DDC pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Prior work has established crosstalk between DDC, SAC, and MEN pathways. SAC components contribute to DNA damage-induced arrest, and MEN components like Bub2/Bfa1 are modified in a Rad53/Dun1-dependent manner following damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 represent prior work from the literature, appropriately cited in the Introduction. These claims establish the rationale for investigating SAC and MEN involvement in checkpoint maintenance. The citations appear accurate based on the described findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Ddc2 protein abundance initially increases after DSB induction then decreases around the time of adaptation in 1-DSB strains. Ddc2 overexpression leads to permanent arrest. However, no difference in Ddc2 abundance changes was detected between 1-DSB and 2-DSB strains despite their different arrest outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 are supported by prior work (C75-C76 cite Memisoglu et al., 2019 and Clerici et al., 2001) and new data in Figure 5\u2014figure supplement 1. The observation that Ddc2 levels are similar between 1-DSB and 2-DSB strains (C77) is important as it rules out Ddc2 abundance as the determinant of permanent versus transient arrest. However, the western blot quantification could benefit from more replicates and statistical analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Discussion of mechanisms underlying checkpoint maintenance, including roles of phosphatases in Rad53 dephosphorylation, continuous 9-1-1 clamp reloading requirement, Rad9's role in maintaining Rad53 phosphorylation, Chk1's contribution through Pds1 stabilization, and Dun1's role via stable transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C107-C114 represent mechanistic interpretations and hypotheses discussed by the authors. C107 is reasonably supported by the data and citations. C108 is well-supported by the experimental data. C109 is a reasonable interpretation of the Rad24 depletion data. However, C110, C113, and C114 are explicitly speculative hypotheses (marked as 'posit,' 'postulate,' 'possible') that require experimental validation. These represent reasonable models but are not directly tested in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C123",
+      "C124"
+    ],
+    "result": "Discussion of SAC activation mechanism in response to DNA damage, including the hypothesis that \u03b3-H2AX spreading to centromeres impairs kinetochore attachment, the relationship between unattached kinetochore number and SAC strength, and interpretation of why some 2-DSB combinations don't produce permanent arrest.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C116-C117 are reasonable interpretations of the data. C118 cites prior work from the authors' lab but is presented as a hypothesis. C119 is established knowledge (cited). C120 and C124 are interpretations that are consistent with the data but not directly tested. C123 cites prior work. These claims represent a coherent model but include speculative elements that would benefit from direct testing of the proposed mechanism (e.g., measuring kinetochore attachment or SAC activation directly).",
+    "result_type": "MINOR"
+  }
+]

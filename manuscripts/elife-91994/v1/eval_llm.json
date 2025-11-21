@@ -1,0 +1,349 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The manuscript provides background on enhancers and their modes of interaction based on prior literature. Previous studies have shown that enhancers can combine additively, supra-additively (synergistically), or sub-additively (redundantly), but these studies tested only small numbers of enhancers in limited genomic loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 are all supported by appropriate citations to prior work and accurately represent the state of knowledge in the field. These claims establish the scientific context and motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C10",
+      "C14",
+      "C15",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors developed a three-way combinatorial MPRA to test approximately 69,000 enhancer-enhancer-promoter (EEP) combinations using 8 promoters, 59 enhancers, and 20 control sequences in mouse embryonic stem cells. After quality filtering, activities were determined for 110,180 (55%) combinations including 2,584 control-control, 38,390 enhancer-control, and 69,206 enhancer-enhancer combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C14-C15, C19-C25, C95-C96 describe the experimental design and scale with specific quantitative details. The methodology is clearly described with appropriate references to figures and supplementary materials, and the scale represents a substantial advance over prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Seven developmental promoters (Klf2, Sox2, Nanog, Otx2, Lefty1, Fgf5, Tbx3) involved in pluripotency regulation and one housekeeping promoter (Ap1m1) were selected. Each promoter included approximately -350 to +50 bp around the transcription start site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 describe the promoter selection with appropriate citations justifying the choices. The rationale for the promoter region size is supported by prior work (Martinez-Ara et al., 2022; van Arensbergen et al., 2017).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "Developmental promoter libraries showed high replicate correlations (Pearson's R=0.82-0.96), while the housekeeping promoter library showed lower correlations (Pearson's R=0.74-0.78), likely due to smaller dynamic range.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 report replicate reproducibility with specific correlation values and reference to Figure 2\u2014figure supplement 1. The interpretation of lower correlation for the housekeeping promoter is reasonable given the stated smaller dynamic range.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Single enhancers showed little position and orientation dependence. The majority of selected sequences acted as enhancers with significant activation of at least one promoter (FDR<0.01), though boost indices varied up to ~5 log2 units. Enhancers exhibited significant promoter selectivity, with particularly smaller boost indices for the housekeeping promoter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 describe single enhancer characterization with appropriate statistical thresholds (FDR<0.01) and references to figures. The promoter selectivity finding is confirmed by statistical analysis consistent with prior work (Martinez-Ara et al., 2022).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Enhancer-enhancer combinations were generally more active than enhancer-control combinations and tended to induce stronger activation than single enhancers, although some saturation occurred with the strongest enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 report quantitative comparisons with references to Figure 3. The observation of saturation at high enhancer activities is appropriately qualified as appearing to occur rather than being definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "For most promoters, an additive model fit the measured data better than a multiplicative model. The multiplicative model tended to overestimate activities at higher ranges for most promoters, except for the Ap1m1 promoter where both models were nearly indistinguishable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 describe model comparisons with references to figures. The conclusion favoring the additive model is supported by systematic comparison across promoters, though the authors appropriately note the exception for Ap1m1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "74.5% of measured enhancer-enhancer activities lie within one standard deviation and 94% within two standard deviations of additive model predictions. Most enhancers combine near-additively, with sub-additive and supra-additive effects being generally rare or weak.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 provide quantitative support for near-additive behavior using an error model. The statistical analysis with specific percentages and standard deviation thresholds appropriately supports the conclusion of predominant near-additivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Supra-additivity frequency varied across promoters, with Sox2, Lefty1, Tbx3, and Fgf5 showing relatively high proportions and Ap1m1 showing the lowest. Supra-additivity proportion correlated inversely with promoter baseline expression, with lowly active promoters allowing more supra-additive interactions (though still <40% of pairs). Sub-additive effects were similar across promoters, suggesting no strong saturation effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 describe promoter-dependent supra-additivity with statistical correlations and appropriate quantitative thresholds. The inference about lack of saturation (C50) is reasonably drawn from the observation about sub-additive effects being similar across promoters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "32.7% (19/58) of tested enhancers showed consistent supra-additivity in at least one promoter context, while only 10.3% (6/58) showed consistent supra-additivity in two or more promoter contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 provide specific quantitative data on enhancer supra-additivity across promoter contexts with clear thresholds (>0.5 log2 observed/expected) and reference to Figure 4C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Enhancer-enhancer combinations from the same genomic locus showed no higher observed/expected ratio than combinations from different loci, indicating no preferential synergy among enhancers from the same locus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 report a comparison of within-locus versus between-locus enhancer pairs with reference to Figure 4E. The conclusion of no preferential locus-specific synergy is appropriately drawn from the data showing slightly lower ratios for same-locus pairs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "All seven developmental promoters showed strong pairwise correlations of boost indices (Pearson's R=0.79-0.98) and correlated strongly with the average pattern (R=0.93-0.99). The housekeeping promoter correlated much less with developmental promoters (R=0.19-0.60) and with the average pattern (R=0.42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 report correlation analyses with specific values and reference to Figure 5\u2014figure supplement 1. The distinction between developmental and housekeeping promoters is clearly supported by the quantitative differences in correlation coefficients.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Developmental promoters differ in the scaling (steepness) of their responses to enhancer-enhancer pairs despite highly similar response patterns. Slopes relative to averaged promoters ranged fivefold (1.54 to 0.32) and negatively correlated with promoter baseline activity. Promoters with low intrinsic activity respond more steeply to changes in combined enhancer activity. This differential response also occurs with single enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 describe non-linear promoter scaling with quantitative slope analysis and correlation with baseline activity (Figure 5B). The extension to single enhancers (C63) is supported by Figure 5\u2014figure supplement 2. This represents a key mechanistic finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "This study is much larger scale than previous efforts and found that while a broad spectrum of functional interactions exists, near-additive effects predominate. Supra-additive interactions occur at lower frequency and depend on specific enhancer and promoter context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 summarize the main findings in context of prior work with appropriate citations. The scale comparison and conclusions about predominant additivity are well-supported by the data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Promoters substantially impact supra-additivity of enhancer-enhancer interactions and can be seen as 'interpreters' of enhancer combinations. Different promoters show different degrees of responsiveness, with stronger promoters being boosted less than weaker promoters. Promoter responses follow roughly a power-law function with promoter-dependent exponents, likely below 1 based on observed saturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 synthesize key findings about promoter function with appropriate references to figures. The power-law interpretation and inference about exponents <1 (C72) are reasonably drawn from the log-log scale plots and saturation observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "The findings resemble an earlier study (Hong and Cohen, 2022) showing that promoter activities are non-linearly scaled by genomic environment, with steepness negatively correlated with promoter strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 appropriately contextualizes the current findings with prior work through citation. This comparison strengthens the interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The MPRA reporters were not integrated into the genome, ensuring all combinations were tested under similar conditions without chromatin context confounding. Other studies indicate transiently transfected reporters behave quite similarly to integrated reporters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76 acknowledge a methodological consideration with appropriate citations to prior work (Inoue and Ahituv, 2015; Klein et al., 2020; Maricque et al., 2018) supporting the validity of the episomal approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "Results may be biased by the selection of enhancers and promoters focused on pluripotency genes in mouse ESCs, though the three-way MPRA protocol should be generally applicable to any enhancer and promoter set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 appropriately acknowledge potential limitations while noting the generalizability of the method. This represents appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "In the MPRA, enhancer and promoter elements are in fixed positions close together, not recapitulating genomic positioning. Genomic distance and chromatin contexts could act as thresholds or create non-linear relationships, as shown in prior studies of distance-dependent activation and spacing-dependent synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 acknowledge experimental limitations with appropriate citations to relevant prior work (Zuin et al., 2022; Lin et al., 2022). This represents appropriate discussion of caveats.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Comparisons with native genomic contexts show mixed results. The current study did not observe synergies reported in the Sox2 locus control region (Brosh et al., 2023), though data are not directly comparable. Results for Fgf5 locus in mESCs align with prior work showing no synergy in this cell type. The default mode of enhancer interplay may be additive, with chromatin context, spacing, and cellular state enabling synergy in some loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C87 appropriately compare findings with prior genomic studies, noting both consistencies and discrepancies with appropriate caveats. The speculation about default additivity (C87) is reasonable given the data but appropriately qualified as 'possibly'.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Two intermingled factors account for promoter differences: distinct promoter classes show different specificities (illustrated by housekeeping vs. developmental promoters), and promoters scale enhancer pair input differently. The compatibility differences observed in prior work likely reflect both specificity and responsiveness differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 synthesize current and prior findings (Martinez-Ara et al., 2022) to provide a more nuanced interpretation of enhancer-promoter compatibility. The inference is well-supported by the data showing both class-specific and scaling differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The findings have implications for understanding enhancer relevance across loci and promoter sensitivity to activating signals. Quantifying promoter responsiveness genome-wide could reveal which genes are more sensitive to environmental cues or non-coding mutations, particularly relevant for developmentally regulated transcription factors sensitive to dosage changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C94 discuss implications and future directions appropriately based on the findings. The speculation about future work (C93) is reasonable, and the relevance to developmental genes (C94) is supported by citation to Naqvi et al., 2023.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "DNase hypersensitive sites have been shown to retain enhancer activity individually, supporting the approach of testing smaller elements within enhancer clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 justifies the experimental design choice with appropriate citations to multiple prior studies (Barakat et al., 2018; Agrawal et al., 2021; Bergman et al., 2022; Martinez-Ara et al., 2022).",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,2370 @@
+{
+  "submission": {
+    "id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:53:03.571791Z",
+    "updated_at": "2025-11-21T20:53:03.571791Z"
+  },
+  "content": [
+    {
+      "id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "content_type": "manuscript",
+      "content_text": "# Eco-evolutionary dynamics of adapting pathogens and host immunity\n\n## Authors\n\n- Pierre Barrat-Charlaix<sup>1</sup> ([ORCID: 0000-0002-3816-3724](https://orcid.org/0000-0002-3816-3724))\n- Richard A Neher<sup>1</sup> ([ORCID: 0000-0003-2525-1407](https://orcid.org/0000-0003-2525-1407)) \u2020\n\n### Affiliations\n\n1. Biozentrum, Universit\u00e4t Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))\n2. Swiss Institute of Bioinformatics Basel Switzerland ([ROR:002n09z45](https://ror.org/002n09z45))\n3. DISAT, Politecnico di Torino Torino Italy ([ROR:00bgk9508](https://ror.org/00bgk9508))\n\n\u2020 Corresponding author\n\n## Abstract\n\nAs pathogens spread in a population of hosts, immunity is built up, and the pool of susceptible individuals are depleted. This generates selective pressure, to which many human RNA viruses, such as influenza virus or SARS-CoV-2, respond with rapid antigenic evolution and frequent emergence of immune evasive variants. However, the host\u2019s immune systems adapt, and older immune responses wane, such that escape variants only enjoy a growth advantage for a limited time. If variant growth dynamics and reshaping of host-immunity operate on comparable time scales, viral adaptation is determined by eco-evolutionary interactions that are not captured by models of rapid evolution in a fixed environment. Here, we use a Susceptible/Infected model to describe the interaction between an evolving viral population in a dynamic but immunologically diverse host population. We show that depending on strain cross-immunity, heterogeneity of the host population, and durability of immune responses, escape variants initially grow exponentially, but lose their growth advantage before reaching high frequencies. Their subsequent dynamics follows an anomalous random walk determined by future escape variants and results in variant trajectories that are unpredictable. This model can explain the apparent contradiction between the clearly adaptive nature of antigenic evolution and the quasi-neutral dynamics of high-frequency variants observed for influenza viruses.\n\n## Introduction\n\nMany human RNA viruses adapt rapidly to evade pre-existing immunity and re-infect humans multiple times over their lifetime. The most prominent examples of this evolution are influenza virus and SARS-CoV-2 (Roemer et al., 2023; Petrova and Russell, 2018), for which the changing virus population is surveilled in great detail and vaccines are updated regularly. To improve the match between the virus population and the vaccine, several groups are working on predictive models to anticipate the variants that dominate future viral populations (Morris et al., 2018; Meijers et al., 2023).\n\nA common framework to model the rapid evolutionary dynamics of RNA viruses is to consider a population located away from the fitness optimum and with many accessible beneficial mutations (Tsimring et al., 1996). In this setting, clones compete to accumulate beneficial mutations as quickly as possible. In a process called selective sweep, successful variants expand and tend to be the ancestors of the future population while less successful mutants eventually disappear. The resulting fitness distribution is a wave traveling along the fitness axis, the so-called traveling fitness waves Rouzine et al., 2003; Desai and Fisher, 2007; Neher, 2013. As the pathogen circulates, hosts develop immunity which leads to a \u2018deterioration of the environment\u2019 for the pathogen which approximately balances the increase in average fitness due to adaptation.\n\nThe traveling wave framework has been extensively used in this context as it allows for a straightforward ways to approach the prediction problem: each variant is assumed to have a fixed fitness relative to other variants, and inferring the fitness of all competing variants should allow prediction of the future composition of the population. Indeed, current methods typically infer the instantaneous growth advantage of a strain based on past and present circulation and then project this growth advantage forward in time Luksza and L\u00e4ssig, 2014; Neher et al., 2014; Huddleston et al., 2020. While future mutations can reshuffle the relative fitness of lineages and thereby limit predictability, in these models a lineage that is most fit at any given time is most likely to dominate in the long run.\n\nOne short-coming of the traveling wave approach is the lack of explicit representation of the epidemiological dynamics and of the host\u2019s immunity. Indeed, fitness is only an effective parameters that summarize the complex interplay between viral antigenic properties and the hosts\u2019 immune systems. As such, it cannot explicitly describe important phenomena such as the build-up of host immunity to new variants, variant-specific immunity, or the interaction between strains through antigenic cross-reactivity. Taking the hosts\u2019 immunity and viral cross-immunity into account has the potential to strongly improve predictions Meijers et al., 2023 or explain why prediction is difficult (Barrat-Charlaix et al., 2021).\n\nThe interaction between epidemiological dynamics and hosts\u2019 immunity are often modeled using generalizations of the Susceptible-Infected-Recovered model (SIR) to include multiple viral strains Gupta et al., 1998; Gog and Grenfell, 2002. In this setting, the natural question is that of the ultimate fate of the pathogen: will it go extinct, diversify to the point of speciation, or reach the so-called Red Queen State where new strains continuously replace old ones Yan et al., 2019; Marchi et al., 2021; Chard\u00e8s et al., 2023; Rouzine and Rozhnova, 2018. To remain tractable, these studies typically approximate population immunity as a low-dimensional landscape in which the viral population evolves and ignores the complex heterogeneity in the immunity of different individuals. Furthermore, immunity is often assumed to be long-lived, and evolution of the pathogen in a stable low dimensional landscape gives rise to traveling waves.\n\nHere, we study how novel variants of a virus shape the host population\u2019s immunity, which in turn changes their own growth dynamics. To do so, we use a multi-strain SIR model combining immune waning and heterogeneous immunity of the hosts. Such heterogeneity has been demonstrated for influenza virus in individuals of different ages Lee et al., 2019; Welsh et al., 2023. We show that this model generically leads to a situation where novel immune evasive variants emerge. In a homogeneous population of hosts, this leads to a succession of selective sweeps where novel variants compete against each other and replace previously circulating variants. However, in a heterogeneous population with a more rapid waning of immunity, initially growing variants lose their selective advantage before reaching fixation due to immunological adjustment of the host population. The phenomenology of our epidemiological model is reminiscent of ecological systems such as consumer-resource models, where adaptation by one species shifts the global equilibrium and distribution of other species but does not necessarily result in a selective sweep Good et al., 2018. In these systems, adaptation can usually not be modeled by a fixed fitness parameter for each strain but rather depends on the composition of the population Tikhonov and Monasson, 2018.\n\nStrain dynamics in our model differ qualitatively from what is expected in the traveling wave scenario. While adaptive mutations are highly overrepresented in genetic diversity, they cease having a growth advantage when reaching intermediate frequencies, a process we call \u2018expiring fitness.\u2019 Once the fitness effect of a mutation has expired, its frequency randomly changes up or down as subsequent adaptive mutations occur on the same or on different genomic backgrounds.\n\nThis resemblance to neutral evolution could have important consequences for predictability of viral evolution. It is interesting to relate this to the recent observations that the evolution of influenza is not as predictable as one would expect from typical models Huddleston et al., 2020; Barrat-Charlaix et al., 2021. In particular, we observed in Barrat-Charlaix et al., 2021 that the frequency trajectories of mutants of A/H3N2 influenza show features that are expected in neutral evolution but hard to explain in a traveling wave framework.\n\n## Results\n\n### Multi-strain SIR model\n\nWe describe the interaction of several viral strains and host immunity using a Susceptible/Infected compartmental model, similar to those used in Gog and Grenfell, 2002; Yan et al., 2019. In the most general form, the model describes $N$ variants of the virus labeled $a\\in{1\u2026N}$ circulating among $M$ groups of hosts with distinct exposure histories labeled $i\\in{1\u2026M}$ (immune groups). These groups could be different age cohorts or could be geographically separated. For each group $i$, we define compartments $I_{i}^{a}$ and $S_{i}^{a}$ as, respectively, the number of individuals of this group infected or susceptible to strain $a$. We assume that the total population of hosts is 1 so that we always have $0\\leqI_{i}^{a},S_{i}^{a}\\leq1$, and values of $I_{i}^{a}$ and $S_{i}^{a}$ can be interpreted as fractions of the host population.\n\nAs with usual compartmental models, we assume that the dynamics are driven by the interaction of susceptible and infected hosts, leading to infections and gains of immunity. The rate at which hosts of group $i$ susceptible to variant $a$ are infected by $a$ is $\\alphaS_{i}^{a}\\sumj=1MC_{ij}I_{j}^{a}$. Here, $\\alpha$ is an overall infection rate while $C_{ij}$ represents the probability of an encounter between individuals of groups $i$ and $j$. Thus, the above rate takes into account infections with strains $a$ caused by hosts of all groups. Considering that infected hosts recover at rate $\\delta$, we can thus write the dynamics for $I_{i}^{a}$:\n\n$$\nI\u02d9_{i}^{a}=\\alphaS_{i}^{a}\\sumj=1MC_{ij}I_{j}^{a}\u2212\\deltaI_{i}^{a}.\n$$\n\nWhen a host of group $i$ is infected by strain $b$, it gains immunity against the infecting strain $b$, but also to other strains $a$ with probability $0\\leqK_{i}^{ab}\\leq1$. Thus, $S_{i}^{a}$ decreases at a rate proportional to $K_{i}^{ab}$ and to the number of hosts infected by $b$ for every strain $b$. Since susceptibles to $a$ are depleted by infections from other strains, the dynamics of all strains are coupled. This coupling is determined by the matrices $K_{i}$ of dimension $N\\timesN$, which in general differ between groups $i$ with different prior exposure history. Additionally, the waning of immunity at a rate $\\gamma$ causes immune hosts to re-enter the susceptible compartment. We can now write the dynamics of $S_{i}^{a}$ as\n\n$$\nS\u02d9_{i}^{a}=\u2212\\alpha\\sumb=1N\\sumj=1MS_{i}^{a}K_{i}^{ab}C_{ij}I_{j}^{b}+\\gamma(1\u2212S_{i}^{a}),\n$$\n\nwhere the first term accounts for immunity gains (or loss of susceptibility) due to infections or cross-immunity while the second represents immune waning. This model introduced by Gog and Grenfell, 2002 assumes that immunity builds up through exposure and not only through infection. This explains that the change in $S_{i}^{a}$ is simply proportional to $S_{i}^{a}\u22c5I_{j}^{b}$, regardless of the susceptibility of hosts to strain $b$. Alternative models that require infection for acquisition of immunity have qualitatively similar dynamics, but are mathematically more complex (Appendix 1.5). We also represented loss of susceptibility to $a$ due to exposure to $a$ using a trivial cross-immunity term $K_{i}^{aa}=1$.\n\nAn important property of our model is that the probability of generating cross-immunity can differ between groups. The motivation is that strains $a$ and $b$ may be perceived as antigenically different by some immune systems, leading to a low $K_{i}^{ab}$, but as highly similar by others, leading to $K_{i}^{ab}\u22431$. Such a heterogeneous response by different immune systems has been observed experimentally in the case of influenza: in Lee et al., 2019; Welsh et al., 2023 for instance, it was found that a given mutation in an influenza strain may allow escape from the antibodies of some individuals, i.e., low $K_{i}^{ab}$, while it had little effect on the serum of other individuals, i.e., high $K_{i}^{ab}$. Heterogeneous immune response could be caused by varying histories of strain exposure for different individuals, for instance, due to differences in age or geographical region. If immune groups correspond to age cohorts, mixing between groups is rapid, and we can simplify the connectivity between groups to $C_{ij}=1/M$. If immune groups are shaped by geographic differences in exposure, the connectivity would be close to 1 on the diagonal ($1\u2212C_{ii}\u226a1$) while off-diagonal terms would be small ($C_{ij}\u226a1$ for $i\\neqj$).\n\n### Invasion of an adaptive variant\n\nHosts\u2019 immune heterogeneity and strain cross-immunity play two different roles in the model. The latter allows the model to reach a non-trivial equilibrium where multiple strains co-exist, while the former affects the convergence to the equilibrium.\n\nTo illustrate this, we design a simple scenario with only two strains: a wild-type and a variant. Accordingly, indices $(a,b)$ describing strains will take values ${wt,v}$. We consider that the two strains share the same infectivity rate $\\alpha$, which amounts to say that they would have the same reproductive rate in a fully naive population. The case where the two strains differ in intrinsic fitness is explored in detail in Appendix 1.7. In brief, as long as the difference in intrinsic fitness is not too large compared to cross-immunity effects, the qualitative results given below hold, while larger intrinsic fitness differences lead to more classical dynamics like selective sweeps.\n\nIn the first version of this scenario, we will only consider one immune group, that is $M=1$. We can thus skip the indices $i,j\\in{1\u2026M}$, and we only have one cross-immunity matrix $K$ that we parametrize as\n\n$$\nK=[1bf1],\n$$\n\nwith $0\\leqb,f\\leq1$ . $b$ quantifies the amount of \u2018backward\u2019-immunity to the wild-type caused by the variant: a large $b$ means that it is likely that an infection by the variant causes immunity to the wild-type. Conversely, $f$ quantifies the \u2018forward\u2019-immunity: infections by the wild-type causing immunity to the variant. If $f=b=1$, the two strains are antigenically indistinguishable, and thus essentially identical for the model. Conversely, if $f=b=0$, the two strains are completely distinct and do not interact through cross-immunity.\n\nThe dynamical equations now take a simplified form:\n\n$$\nS\u02d9^{a}=\u2212\\alphaS^{a}\\sumb\\in{wt,v}K^{ab}I^{b}+\\gamma(1\u2212S^{a}),I\u02d9^{a}=(\\alphaS^{a}\u2212\\delta)I^{a}.\n$$\n\nWe can immediately derive the equilibrium state for this simplified case. We first define the reproductive number of strain $a$ as $R^{a}=\\alphaS^{a}/\\delta$. $I^{a}$ grows when $R^{a}>1$ and declines when $R^{a}<1$. The equilibrium susceptibility is, therefore, $S^{a}=\\delta/\\alpha$, such that $R^{a}=1$. On the other hand, the equilibrium prevalence is determined by the inverse of the cross-immunity matrix $K$:\n\n$$\nI_{eq}^{a}=\\frac{\\gamma}{\\delta}(1\u2212\\frac{\\delta}{\\alpha})(K^{\u22121}1\u2192)_{a},\n$$\n\nwith $1\u2192$ being the vector $[1;1]$. The order of magnitude of the prevalence is given by the ratio of the rate of waning $\\gamma(1\u2212\\delta/\\alpha)$ and the recovery rate $\\delta$. In the following, we frequently use values $\\alpha=3$ and $\\gamma=5\u22c510^{\u22123}$ in units of inverse generations $\\delta$, i.e., we set $\\delta=1$. At equilibrium, this corresponds to a fraction of $\u223c0.003$ of the host population being infected at any time. If generation time is a week, which is roughly the case for respiratory viruses such as influenza virus or SARS-CoV-2, the fraction of hosts infected in any year is $\u223c0.15$, which is of similar magnitude as empirical estimates for influenza (Kucharski et al., 2018).\n\nIt is also straightforward to compute the fraction of infections caused by the variant at equilibrium, thereafter referred to as the frequency of the variant. We find that this frequency is\n\n$$\n\\beta=\\frac{1\u2212f}{(1\u2212b)+(1\u2212f)}.\n$$\n\nIn the case where $b=f$, the variant will ultimately settle at frequency 1/2. This includes the case where $b=f=0$, where the two strains are completely independent and do not interact. On the contrary if $b\\neqf$, the final frequency of the variant can in principle be anywhere between 0 and 1. For example if $b>f$, the variant is more likely to cause immunity to the wild-type than the wild-type is to cause immunity to the variant. In this case, $\\beta>1/2$ and the variant will be the dominant variant.\n\nWe are primarily interested in an \u2018invasion\u2019 scenario where only the wild-type is initially present in the population, that is $I^{v}=0$ at $t<0$. Cross-immunity with the resident strain reduces the fraction of hosts susceptible to the variant below one even though it has not circulated yet. But the number of susceptible hosts is always larger than the equilibrium value $\\delta/\\alpha$ unless $f=1$, As a result, the growth rate of the variant is initially positive and given by\n\n$$\ns(t=0)=\\frac{(1\u2212f)(\\alpha\u2212\\delta)}{\\delta+f(\\alpha\u2212\\delta)}\n$$\n\nThe variant thus increases initially exponentially until it has become sufficiently frequent that it starts having a substantial effect on the immunity landscape, before eventually settling into an equilibrium with the wild-type. The details of the equilibrium reached by the system in the absence of additional mutant variants is given in Appendix 1.1. Figure 1 explores different scenarios numerically.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97350/elife-97350-fig1-v1.jpg)\n\n**Figure 1.:** Top row: one immune group, Middle row: $M=10$ immune groups and fast mixing $C_{ij}=1/M$ and Bottom row $M=10$ immune groups and slow mixing $C_{ij}=1/10M$. Other parameters are the same for all rows: in units of $\\delta$, we set $\\alpha=3$ and $\\gamma=5\u22c510^{\u22123}$, and $f=0.65$, $b=0.8$, $\\epsilon=0.01$. For both rows, graphs represent: Left: number of hosts infectious with the wild-type and the variant; Middle: number of hosts susceptible to the wild-type and the variant, with the equilibrium value $\\delta/\\alpha$ as a gray line; Right: fraction of the infections due to the variant. The thick gray line shows the expected equilibrium frequency $\\beta$ in the case with one immune group, given in Equation 6. The dashed line shows the trajectory of a constant fitness logistic growth with the same initial growth rate.\n\nThe top row of Figure 1 shows the dynamics of the model after the introduction of the variant in a homogeneous population ($M=1$). As expected, the number of infections by the variant initially rises while the number of susceptibles $S^{v}$ decreases. However, as $S^{v}$ goes below the critical value $\\delta/\\alpha$, $I^{v}$ starts to decline and then oscillates around the equilibrium value before finally converging to it. The mathematical properties of these oscillations are discussed in Appendix 1.8.\n\nHowever, these strong and slowly damped oscillations are not what is observed in circulating viruses. For instance, in the first oscillation in the specific example of Figure 1, the prevalence of the wild-type $I^{wt}$ goes down to microscopic levels and the frequency of the variant approaches one, see Figure 1. During stochastic circulation in a finite population of hosts the wild-type would likely be lost. The theoretical equilibrium that is reached at long times is thus not very relevant, and what would be actually observed in reality is a selective sweep by the variant.\n\nOscillations are the consequence of the rapid rise of the variant followed by an overshoot. This effect is mitigated by immunological heterogeneity, as shown in the following example with $M=10$ groups. For group $i=1$, the cross-immunity matrix $K_{1}$ takes the same form as in the previous scenario, given by Equation 3. However, for other groups, we assume that the two strains are virtually identical, with the cross-immunity having the form\n\n$$\nK_{i>1}=[11\u2212\\epsilon1\u2212\\epsilon1],\n$$\n\nwhere $\\epsilon\u226a1$. Our reasoning is that we expect an adaptive variant to escape the existing immunity for part of the host population, here immune group 1, while having little effect on the rest of the hosts.\n\nOne consequence of many groups that are indifferent to the variant is that globally the excess susceptibility to the variant is lower. If mixing is rapid, the initial growth rate of the variant is smaller by a factor of $M$ compared to the one-group case. If mixing is slow, the initial growth of the variant is as rapid as in the one-group case, but then spreads only slowly across groups. Globally, the frequency of the variant thus never reaches values close to one and population-wide oscillations are reduced.\n\nThe central and bottom rows of Figure 1 show the result of the invasion for $M$ groups, respectively, for the rapid and slow mixing cases. In both scenarios, the initial number of hosts susceptible to the variant are now closer to $\\delta/\\alpha$. When mixing is fast, the frequency of the variant initially resembles a standard selective sweep (dashed line in Figure 1) before saturating, while dynamics are more complicated for the slow mixing case. Either way, the main effect of the immune groups is that the overshoot past the equilibrium is much smaller and the dampening of the oscillations stronger. As a result, the frequency of the variant approaches its equilibrium value without effectively sweeping to fixation before.\n\nNotably, the equilibrium frequency in the above examples does not depend on $M$ and Equation 6 remains valid for $\\epsilon=0$. This invariance is a consequence of the fact that for $\\epsilon=0$, the variant and wild-type strains are completely equivalent in immune groups $i>1$ and equilibrium is only determined by cross-immunity in group $i=1$ (Appendix 1.4). For small $\\epsilon$ the equilibrium shifts slightly, but Equation 6 remains a good approximation.\n\nWhile this simple two-strain model predicts that the two strains come to an equilibrium at frequency $\\beta$, their frequency will of course continue to change due to the emergence of additional strains, which we will discuss below.\n\nEven though the variant has a clear growth rate advantage when it appears, this does not result in it replacing the wild-type. This contrasts with the typical \u2018selective sweep\u2019 that occurs when the growth rate advantage stays constant, which is illustrated as a dashed line in the figure. We refer to frequency trajectories of a variant that at first rise exponentially before settling at an intermediate frequency as partial sweeps. As we will discuss below, such partial sweeps can lead to qualitatively different evolutionary dynamics and its predictability.\n\nIf the initial growth is due to higher susceptibility, it is misleading to think of it as an intrinsic fitness advantage of the variant. Instead, the initial growth is the result of an imbalance in the immune state of the host population, which gradually disappears as the variant becomes more frequent, as shown in the central panels of Figure 1. In this sense, our model is comparable to ecological systems where interaction between organisms cannot be fully explained using a fixed scalar fitness for each strain but rather depends on the composition of the viral and host population. In particular, the stalling of frequency increase gives rise to the partial sweep is reminiscent of consumer resource models Tikhonov and Monasson, 2018; Good et al., 2018, highlighting the link between ecological and epidemiological models. An important consequence of these dynamics is that predicting the equilibrium frequency reached by the variant and its ultimate fate is hard from the observation of a partial frequency trajectory.\n\n### Ultimate fate of the invading variant\n\nIn the invasion scenario discussed above, dynamics stop after the initial variant has reached an equilibrium frequency. However, as the viral population evolves, new adaptive mutants can appear. In the framework of the SIR model, a new strain translates into extending the cross-immunity matrix by one row and one column. Each new variant will perform its own partial sweep, and saturate at frequencies $\\beta_{2},\\beta_{3},\u2026$ sampled from some distribution $P_{\\beta}$. This process is shown in panel A of Figure 2, using the SIR model to simulate up to $N=7$ variants. For the sake of illustration, it shows a simple scenario where the initial variant appears at time 0 in a homogeneous wild-type population, and subsequent mutants appear at regular time intervals. Simulations are performed using $M=10$ immune groups, resulting in a slight overshoot of the equilibrium frequency for each trajectory.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97350/elife-97350-fig2-v1.jpg)\n\n**Figure 2.:** (A) Simulation of Susceptible-Infected-Recovered (SIR) Equation 1 & Equation 2 with additional strains appearing at regular time intervals. The fraction of infections (frequency) caused by each strain is shown as a function of time. The first strain to appear at $t=0$ is the variant of interest, and curves are shown in shades of red if they appear on the background of this variant, and of blue if they appear on the background of the wild-type. (B) Same as A but with frequencies stacked vertically. The black line delimiting the red and blue areas represents the frequency at which the mutations defining the original variant are found. (C) Three realizations of the random walk of Equation 9, all starting at $x\u22430.5$. Two instances converge rapidly to frequencies 0 and 1, corresponding to apparent selective sweeps, while the remaining one oscillates for a longer time. (D) Representation of a partial sweep using the expiring fitness parametrization of Equation 11. The frequency $x$ of the variant is shown as a blue line saturating at value $\\beta$ (gray line). The thin dashed line shows a selective sweep with constant fitness advantage $s_{0}$. The fitness $s$ is a red dashed line, using the right-axis.\n\nHere, we focus on the mutation or set of mutations $A$ that defines the initial variant. The initial growth rate advantage given by $A$ eventually disappears, meaning that after some times we can consider it as neutral. As subsequent mutants appear, they either do so on the background of the wild-type, in which case they do not carry $A$, or on the background of the initial variant in which case they do carry $A$. If we suppose that recombination is negligible, the frequency of $A$ increases or decreases as each new variant undergoes its own partial sweep. This process is shown in panel B of Figure 2, with shades of red (resp. blue) indicating a variant carrying $A$ (resp. not carrying $A$). The thick line in between the red and blue surfaces indicate the frequency at which mutation $A$ is found, and in practice moves up and down randomly.\n\nThe scenario illustrated in Figure 2 suggests that many aspects of the variant dynamics can be approximated by a simple abstraction: if $x$ is the frequency of a mutation $A$, a new variant has a probability $x$ to appear on the background of $A$ and thus carry $A$, and a probability $1\u2212x$ to not carry $A$. If new mutants emerge well separated in time with rate $\u03c1$, meaning that they reach equilibrium before the next variant emerges, and if new variants have a similar cross-immunity with all existing variants (see Appendix 1.6), the dynamics of $x(t)$ are described by a particular random walk: in each time interval $dt$, a partial sweep of amplitude $\\beta$ occurs with probability $\u03c1dt\u22c5P_{\\beta}(\\beta)$, changing $x$ in the following way:\n\n$$\nx(t+dt)=x(t)+\u0394x,where\u0394x={\u2212\\betaxwith probability(1\u2212x),\\beta(1\u2212x)with probabilityx.\n$$\n\nFor example, if a new mutant appearing in the background of $A$ does a partial sweep of amplitude $\\beta$, the frequency of $A$ among the fraction of strains $(1\u2212\\beta)$ not concerned by the sweep will still be $x$, and its frequency among the fraction $\\beta$ of strains concerned by the sweep will be 1. Overall, this gives a frequency change of $\u0394x=(1\u2212x)\\beta$. A similar reasoning gives us the frequency change when the new mutant appears on the wild-type background. Finally, if no sweep occurs in the time interval $dt$, that is with probability $1\u2212\u03c1dt$, $x$ remains unchanged. The resulting frequency dynamics of mutations have many similarities to the effect of \u2018genetic draft\u2019, that is the frequency dynamics of neutral mutations due to linked selective sweeps (Gillespie, 2000).\n\nExamples of trajectories from the random walk are shown on panel C of Figure 2, all initially starting around $x_{0}\u22431/2$. Two trajectories converge monotonically to 0 and 1. This is a consequence of one interesting property of Equation 9: the probability for $\u0394x$ to be positive increases with $x$, but the magnitude of the upward steps decreases as $1\u2212x$, and symmetrically with downward steps. This leads to trajectories leading almost exponentially to 0 and 1: it can in fact be shown that trajectories that always go downwards or upwards represent a finite and relatively large fraction of all possible trajectories (see Appendix 2.4). On the other hand, steps away from the closest boundary are unlikely but much larger, resulting in \u2018jack-pot\u2019 events (Hallatschek, 2018). This can be seen in the blue trajectory in Figure 2, which oscillates for a longer time.\n\nIt is also interesting to look at the moments of the step size $\u0394x$. The first two are easily computed, and we find\n\n$$\n\u27e8\u0394x\u27e9=0\u27e8\u0394x^{2}\u27e9=\u03c1\u27e8\\beta^{2}\u27e9_{P_{\\beta}}x(1\u2212x).\n$$\n\nThe first moment being 0 means that for the random walk, increasingly probable but small steps towards the closest boundary (0 or 1) are exactly compensated by rarer but larger steps away from the boundary. Importantly, this means that on average, the trajectory of mutation $A$ is not biased toward either fixation or loss, regardless of the frequency that the initial partial sweep brought it to. For instance, a mutation seen at frequency $x_{0}$ should on average stay at this frequency, which means in practice that in a finite population, it has a chance $x_{0}$ to reach 1 and fix, and a chance $1\u2212x_{0}$ to reach 0 and vanish.\n\nOn the other hand, the second moment resembles neutral drift Kimura, 1964: in neutral evolution, allele frequency also undergoes a zero-average random walk with the second moment having the form $x(1\u2212x)/N$ with $N$ being the population size. Therefore, this model would predict an \u2018effective population size\u2019 as $N_{e}^{\u22121}=\u03c1\u27e8\\beta^{2}\u27e9_{P_{\\beta}}$ completely independent of the size of the viral population. However, there are important differences to neutral drift: in neutral evolution, higher moments of order $k>2$ decay as $N^{1\u2212k}$ and are thus negligible in large populations, whereas here they are independent of $N$ and scale as $\u27e8\\beta^{k}\u27e9_{P_{\\beta}}$. Depending on higher moments of $P_{\\beta}$, allele dynamics will deviate qualitatively from neutral behavior.\n\n### Abstraction as \u2018expiring\u2019 fitness advantage\n\nIn general, the dynamics of the SIR model proposed in Equations 1&2 depend on the interactions between $N$ strains through an $N\\timesN$ cross-immunity matrix. While this model is useful to give a mechanistic explanation of partial sweeps, it is in general impractical to analyze and numerically simulate for many variants. The random walk model introduced above is simple to analyze and simulate, but assumes that variants rise to their equilibrium frequency instantaneously.\n\nTo explore the consequences of partial sweeps over broader parameter ranges, we propose an empirical model that has the same qualitative properties as the over-damped SIR, namely a growth rate that decreases as a strain becomes more frequent and partial sweep trajectories, but is simpler to analyze and simulate on a large scale. In this effective model, the growth rate $s$ of the variant is not explicitly set by the susceptibility dynamics in the host population, but instead decays at a rate proportional to the frequency $x$ of the variant:\n\n$$\nx\u02d9=sx(1\u2212x)ands\u02d9=\u2212\u03bdxs.\n$$\n\nThe dynamic of $x$ in the first equation is simply given by the usual logistic growth with fitness $s$. To mimic increasing immunity against the invading variant, the growth advantage $s$ decreases proportionally to the abundance of the variant (second part of Equation 11). The initial value of $s_{0}$ is connected to the invasion rate of the SIR models given in Equation 38.\n\nThe dynamics of this new model are represented in panel D of Figure 2, with an initial frequency $x_{0}\u226a1$ and an initial growth rate $s_{0}=0.05$. The initial growth of $x$ is identical to a classical selective sweep of fitness $s_{0}$ (represented as a dashed line). However, its fitness advantage gradually \u2018expires,\u2019 as shown by the red line in the figure. As the variant progressively \u2018runs out of steam,\u2019 its frequency finally saturates at a value $\\beta$ given by (Appendix 2.2)\n\n$$\n\\beta=1\u2212e^{\u2212s_{0}/\u03bd}.\n$$\n\nThis final value $\\beta$ depends only on the ratio between the initial fitness advantage $s_{0}$ and the rate of fitness decay $\u03bd$. For a large enough $s_{0}$, $\\beta$ can be arbitrarily close to 1, meaning that this model still accommodates for full selective sweeps as a special case. In the general case, $x$ reaches its final value $\\beta<1$ and remains there forever unless other variants appear.\n\nIt is important to state that the main aim of this effective model is to qualitatively reproduce the phenomenology of the SIR, and in particular the partial sweeps, while being is easier to simulate. It recapitulates the salient feature of invading immune evasive variants: (i) initial exponential growth, and (ii) eventual saturation at an intermediate frequency. We can thus use it to analyze the long-term consequences of the random walk dynamics of Figure 2. However, we do not expect the frequency of the variant $x$ to have quantitatively equivalent dynamics in the two models. In particular, due to its simplicity, this model does not show the complex oscillatory behavior of the SIR model. Appendix 1.9 discusses in more detail the links between the parameters of the two models and the fundamental differences. While we can express the rate $\u03bd$ at which the growth rate declines in terms of the parameters of the simplest SIR models, for models with many groups or with oscillatory dynamics, the decay rate of the growth advantage should be interpreted as an effective parameter that captures a generic effect of reduced growth with increasing circulation.\n\n### Consequences for predictability and population dynamics\n\nAccurate prediction of dominant viral variants of the future could improve the choice of antigens in vaccines against rapidly evolving viruses. Specifically, if a potentially adaptive mutation is observed in a viral population, one would want to know if the corresponding variants will grow in frequency, and if yes to what point? The typical traveling wave framework would predict that fast-growing variants should keep on growing until an even fitter one appears. This way of thinking about the prediction problem has shown mixed results. In the case of A/H3N2 influenza, for instance, we showed that there are few signatures that suggest fit variants grow in frequency consistently (Barrat-Charlaix et al., 2021).\n\nIn Figure 3, we reproduce some of our results of Barrat-Charlaix et al., 2021 and extend them to SARS-CoV-2. To quantify predictability, we ask the following question: given the state of a viral population at times $0,1,\u2026,t$, what can we say about variant frequencies at times $t+1,\u2026$? We performed a retrospective analysis of viral evolution and identified all amino-acid mutations that were observed to grow from frequency 0 to an arbitrary threshold $x^{\u22c6}$. Adaptive beneficial mutations should in principle be overrepresented in this group and if they provide a persistent fitness advantage, we would expect them on average to keep on growing beyond $x^{\u22c6}$. Figure 3 shows these trajectories for the amino acid substitutions in the HA protein of A/H3N2 influenza, using data from 2000\u20132023,, and the SARS-CoV-2 genome using data from 2020\u20132023. Panels on the left show all trajectories that reached $x^{\u22c6}=0.4$, with their average displayed in black. The panels on the right show the average trajectory for different threshold values $x^{\u22c6}$ between 0.1 and 0.8.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97350/elife-97350-fig3-v1.jpg)\n\n**Figure 3.:** Retrospective analysis of predictability of viral evolution: frequency trajectories of all amino acid substitutions that are observed to rise from frequency 0 to $x^{\u22c6}$ for Top: influenza virus A/H3N2 from 2000 to 2023, and Bottom: SARS-CoV-2 from 2020 to 2023.Left: all trajectories for $x^{\u22c6}=0.4$, with blue ones ultimately vanishing and red ones ultimately fixing. The average of all trajectories is shown as a thick black line. Right: showing only the average trajectories for different values of $x^{\u22c6}$ (gray lines).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97350/elife-97350-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** For the latter, parameters used are $\\alpha=s_{0}=0.03$ and three values of $\u03c1$ to illustrate different clonal interference regimes. In each case, 10 randomly selected trajectories are plotted, with blue color indicating final loss and red final fixation.\n\nWhile the dynamics of the variants of the two viruses can not be compared directly due to vastly different sampling intensities and different rates of adaptation, the qualitative patterns differ strikingly. In the case of influenza, trajectories of seemingly adaptive mutations show little inertia and on average hover around $x^{\u22c6}$ instead of growing. This surprising result is in line with the study in Barrat-Charlaix et al., 2021 which used data from the period 2000\u20132018. On the other hand, trajectories of SARS-CoV-2 mutations show a much smoother behavior with steady growth beyond $x^{\u22c6}$. On longer timescales, however, we observe a systematic decrease in frequency: this is explained by the particular initial dynamics of SARS-CoV-2, where new variants arose at a rapid pace and replaced old ones. This process is often called clonal interference and reduces long-term predictability.\n\nIn our setting of eco-evolutionary adaptation, the random walk model predicts that the probability of fixation of an immune evasive variant is given by the final frequency $\\beta$ of its initial partial sweep. Subsequent allele dynamics and diversity are governed by an anomalous coalescent process driven by the random walk defined in Equation 9, leading to little predictability of evolution. This abstraction should hold when partial sweeps are instant and do not overlap, meaning that the rate $\u03c1$ at which new variants emerge is small compared to their initial growth rate $s_{0}$.\n\nTo explore the behavior of our partial sweep model in a more general setting, we simulate the evolutionary dynamics of a population under a Wright-Fisher model with expiring fitness dynamics. Simulations involve a population of $N$ viruses with a genotype where each position can be in one of two possible states $\\sigma_{i}\\in{0,1}$. Fitness effects $s_{i}$ are associated with mutations at each position, and the total fitness of a virus is given by $F=\\sumi\\sigma_{i}s_{i}$. At each generation, viruses with a fitness $F$ expand by a factor $e^{F}$, and the next generation is constructed by sampling $N$ individuals from the previous one. Following Equation 11, mutational effects $s_{i}$ decrease by an amount $\u03bdx_{i}\u22c5s_{i}$, where $x_{i}$ is the frequency at which mutation $i$ is found in the population.\n\nWe simulate the emergence of adaptive variants in the following way. At a constant rate $\u03c1$, we pick one sequence position $i$ that has no polymorphism and set the fitness effect of the corresponding mutation to an initial value $s_{i}$, with an amplitude drawn from probability distribution $P_{s}$ and the sign chosen such that the mutation is adaptive. In practice, we use an exponential distribution $P_{s}\u221de^{\u2212s/s_{0}}$, meaning that the typical magnitude of initial fitness effects are described by only one parameter $s_{0}$. The corresponding distribution of partial sweep size is described Appendix 2.3. At the same time, we introduce the corresponding mutant in the population at a low frequency, picking its background genotype from a random existing strain. The behavior of the model is determined by (i) the distribution $P_{\\beta}$ of partial sweeps size depending on $\u03bd/s_{0}$, and (ii) the ratio of the variant emergence rate and their growth rate $\u03c1/s_{0}$, which determines how often sweeps overlap and interact. The probability of two sweeps overlapping is defined in Appendix 2, Equation 42.\n\nWe use this simulation to address the question of predictability: given the state of the population at generations $0,1,\u2026,t$, can we predict its state at future times $t+1,\u2026$? Specifically, we ask whether we can predict the frequency $x(t+\u0394t)$ of a variant $A$, given it is at frequency $x$ at time $t$, as we did previously for the influenza virus Barrat-Charlaix et al., 2021, see Figure 3. The dynamics of isolated selective sweeps ($\u03c1/s_{0}\u226a1$, $\u03bd/s_{0}\u226a1$) should be perfectly predictable: after an initial stochastic phase when the variant is very rare, its frequency grows monotonically to fixation. This predictability decreases with increasing $\u03c1/s_{0}$ due to clonal interference (Schiffels et al., 2011; Strelkowa and L\u00e4ssig, 2012), for example when an adaptive variant is outcompeted by an even more adaptive one. We also expects predictability to decrease with increasing $\u03bd/s_{0}$ since sweeps are then partial and their ultimate fixation is determined by subsequent variants with dynamics that resemble a random walk.\n\nTo quantify these effects, we select from a long simulation all rising frequency trajectories of adaptive mutations that cross an arbitrary threshold $x^{\u2217}$. The results are shown in panel A of Figure 4, where we show the average $x(t)$ of rising frequency trajectories after crossing the threshold $x^{\u2217}=0.5$. We use three rates of fitness decay: $\u03bd\\in[0,s_{0}/3,s_{0},3s_{0}]$ and low clonal interference $\u03c1/s_{0}=0.05$. The case $\u03bd=0$ corresponds to a classical traveling wave scenario with constant fitness effects, and, as expected, is the most predictable: the average trajectory rises well above 0.5. For larger values of $\u03bd/s_{0}$, corresponding to a quicker decay of fitness, predictability gradually declines and becomes negligible for $\u03bd/s\u226b1$. Note that this matches quite well with the predictions from the random walk model where the average change in frequency $\u27e8\u0394x\u27e9$ is null.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97350/elife-97350-fig4-v1.jpg)\n\n**Figure 4.:** (A) Average frequency dynamics of immune escape mutations that are found to cross the frequency threshold $x^{\u2217}=0.5$, for four different rates of fitness decay. If the growth advantage is lost rapidly (high $\u03bd/s_{0}$), the trajectories crossing $x^{\u2217}$ have little inertia, while stable growth advantage (small $\u03bd/s_{0}$) leads to steadily increasing frequencies. (B, C, D) Ultimate probability of $p_{fix}(x)$ of trajectories found crossing frequency threshold $x$. Each panel corresponds to a different rate of emergence of immune escape variants, with four rates of fitness decay per panel. Increased clonal interference $\u03c1/s_{0}$ and fitness decay $\u03bd/s_{0}$ both result in a gradual loss of predictability. We use $s_{0}=0.03$. (E) Time to most recent common ancestor $T_{MRCA}$ for the simulated population, as a function of the prediction obtained using the random walk $N_{e}=1/\u03c1\u27e8\\beta^{2}\u27e9$. Points correspond to different choices of parameters $\u03c1$ and $P_{\\beta}$, and a darker color indicates a higher probability of overlap as computed in Appendix 2.2.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97350/elife-97350-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Probability of fixation of mutation Probability of fixation of mutations $p_{fix}(x)$ of mutation frequency trajectories found crossing the frequency threshold $x$.Fitness effects are exponentially distributed with fixed scale $s_{0}=0.03$. The blue to red gradient in colors corresponds to the increasing rate $\u03c1$ at which mutations are introduced. Strong clonal interference regime is obtained when $\u03c1/s_{0}>1$, in which case good mutations are introduced in close succession and compete for fixation. At low $\u03c1/s_{0}$, trajectories are very predictable and an increasing trajectory almost certainly fixes. Even for the highest $\u03c1/s_{0}$, $p_{fix}(x)$ remains significantly larger than $x$ and dynamics are visibly not neutral.\n\nTo explore parameter space more systematically, we quantify predictability as the probability of fixation $p_{fix}$ of rising variants that cross threshold $x^{\u2217}$. In a perfectly predictable scenario with well-separated selective sweeps, $p_{fix}$ should be close to 1 regardless of $x^{\u2217}$, while it should be equal to $x^{\u2217}$ in an unpredictable setting such as neutral evolution.\n\nIn panels B, C, and D of Figure 4, the probability of fixations are shown for three values of $\u03c1/s_{0}$ and four values of $\u03bd/s_{0}$. Clonal interference increases when going from left to right among these panels (increasing $\u03c1/s_{0}$), while the intensity of fitness decay increases when going from blue to red curves (increasing $\u03bd$). Increasing either $\u03c1/s_{0}$ or $\u03bd/s_{0}$ reduces $p_{fix}$ towards the dashed diagonal corresponding to $p_{fix}=x^{\u2217}$. However, as observed previously (Barrat-Charlaix et al., 2021), in the classic scenario with stable fitness effects $\u03bd/s_{0}=0$ considerable predictability remains even in cases of strong interference (blue curve in panel D and Figure 4\u2014figure supplement 1). The strong interference setting is explored in more detail in Appendix 2.1 up to values $\u03c1/s_{0}\u224330$, using similar simulations but without expiring fitness $\u03bd=0$. Figure 4\u2014figure supplement 1 shows that even in these cases of strong interference, $p_{fix}$ remains significantly above the diagonal.\n\nFinally, we use our simulation to investigate typical levels of diversity in the population and the time to the most recent common ancestor. One quantity that can easily be estimated from the random walk model is the average pairwise coalescence time $T_{2}$, that is the typical times separating two random strains from their most recent common ancestor (MRCA). In Appendix 2.5, we show that under the random walk approximation $T_{2}=1/\u03c1\u27e8\\beta^{2}\u27e9_{P_{\\beta}}$, which in neutral models of evolution would correspond to the effective population size $N_{e}$. A more detailed analysis of the coalescent process reveals that the random walk approximation corresponds to the so-called $\u039b$-coalescent Schweinsberg, 2000; Berestycki, 2009.\n\nIn panel E of Figure 4, the average time to the common ancestor of pairs of strains in the population is plotted as a function of $T_{2}$ predicted by the random walk model. Each point in the figure corresponds to one simulation of long duration with a given distribution of partial sweep size $P_{\\beta}$ and a given $\u03c1$ setting $T_{2}$, with darker color indicating a higher probability of overlap as computed in Appendix 2.2. We find a good agreement between the empirical time to MRCA and the estimation from the random walk, at least as long as the probability of overlap between successive partial sweeps is small (indicated by shading). With increasing overlaps, coalescence slows down, and diversity increases: points in darker shades of red tend to have a larger time to MRCA than what is expected from the distribution of $\\beta$. This is expected intuitively: if another adaptive variant emerges before the previous one has reached its final frequency, it has a lower probability of landing on the same background and thus tends to be in competition with the first variant. This leads to a smaller effective $\\beta$ which slows the dynamics.\n\n## Discussion\n\nEvolutionary adaptation is often pictured as an optimization problem in a static environment. In many cases, however, this environment is changed by the presence of the evolving species, for example, because a host population develops immunity or a dynamic ecology. Here, we have explored the consequences of such eco-evolutionary dynamics in a case of host-pathogen co-evolution where different variants of a pathogen shape each other\u2019s environment through generation of cross-immunity.\n\nInfluenza virus evolution has been the subject of intense research with efforts to predict the composition of future viral populations (Bush et al., 1999; Luksza and L\u00e4ssig, 2014; Neher et al., 2014; Huddleston et al., 2020). The A/H3N2 subtype in particular undergoes rapid antigenic change through frequent substitutions in prominent epitopes on its surface proteins (Smith et al., 2004; Bhatt et al., 2011; Neher et al., 2016; Kistler and Bedford, 2023). Given the clear signal of adaptive evolution, one might expect A/H3N2 to be predictable in the sense that variants that grow keep growing. Yet, it has been difficult to find convincing signals of fit, antigenically novel, variants that consistently grow and replace their competitors (Barrat-Charlaix et al., 2021; Huddleston et al., 2020). In contrast, SARS-CoV-2 evolution has been consistently predictable in the sense that dynamics are well modeled by exponentially growing variants that compete for a common pool of susceptible hosts. However, even in this case, taking into account the immune adaptation of hosts leads to a better description of variant dynamics Meijers et al., 2023.\n\nWe have shown that depending on (i) the heterogeneity of immunity in the population, (ii) the asymmetry between backward and forward cross-immune recognition, and (iii) waning or turn-over of immunity, the immune escape can either lead to dynamics dominated by selective sweeps, or to one were escape mutations have an initial growth advantage that dissipates before the variant fixes. The former scenario is observed when initial growth is fast, backward immunity high, and waning slow compared to variant dynamics. In this case, new variants can rise to high frequency driven by their own advantage and fix. Immunological heterogeneity slows down the initial rise, allowing for population immunity to respond and adjust before the variant has been fixed.\n\nThis process of partial sweeps reconciles two seemingly contradicting observations: HA evolution in human influenza A virus is clearly driven by adaptive immune escape and most substitutions are clustered in epitope regions (Bhatt et al., 2013). On the other hand, most substitutions does not sweep to fixation but tends to meander in a quasi-neutral fashion (Barrat-Charlaix et al., 2021). In the partial sweep scenario proposed here, diversity is dominated by immune escape mutations that are rapidly brought to macroscopic frequency by their initial growth advantage, but their ultimate fate is determined mostly by subsequent mutations.\n\nIn any real-world scenario, there will be a variety of mutations, including some mutations that perform complete selective sweeps, either because they escape immunity of a large fraction of the population ($M$ small), because they generate robust immunity against previous strains (\u2018back-boost\u2019 Fonville et al., 2014), or because of the increase in the intrinsic transmissibility of the virus (for example reverting a previous escape mutation that had a deleterious effect on transmissibility). The degree to which partial sweeps matter will vary from virus to virus and will change over time. Recently emerged viruses circulate in a homogeneous immune landscape and adapt to the new host for some time, consistent with rapid and complete sweeps of variants in SARS-CoV-2. Similarly, the influenza virus A/H1N1pdm, which emerged in humans in 2009, exhibited more consistent trajectory dynamics than A/H3N2 (Barrat-Charlaix et al., 2021).\n\nMore generally, qualitative features of the partial sweep dynamics investigated here are expected to exist in any system where the environment responds to evolutionary changes on time scales comparable to the time it takes for the adaptive variants to take over, leading to eco-evolutionary dynamics (Pelletier et al., 2009). In ecological systems involving eukaryotes, it is the evolutionary part of this interaction that is thought of as slow, while ecology is fast. In the cases of rapidly adapting RNA viruses in human populations with long-lived immunological memory, models often assume that viral adaptation is fast while hosts have long-lasting memory. The most complex and least predictable dynamics are expected when the evolutionary and ecological time scales are similar and different host-pathogen systems will fall on different points along this axis.\n\n## Materials and methods\n\n### Code availability\n\n### Data availability\n\nSequence data of influenza viruses was obtained from GISAID (Shu and McCauley, 2017). We thank the teams involved in sample collection, sequencing, and processing of these data for their contribution to global surveillance of influenza virus circulation. A table acknowledging all originating and submitting laboratories is provided as supplementary information.\n\nSequence data of SARS-CoV-2 viruses was obtained from NCBI and restricted to data from North America to ensure more homogeneous sampling. We are grateful to all teams involved in the collection and generation of these data for generously sharing these data openly.\n",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Armita Nourmohammad, University of Washington United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97350.3.sa0](https://doi.org/10.7554/eLife.97350.3.sa0)\n\nThis important study provides a new perspective on how human immunity shapes the antigenic evolution of pathogens. By combining theory and simulation the authors make a compelling case for the importance of eco-evolutionary interactions in population-level virus-host dynamics, which arise due to coupling between the dynamics of immune memories and viral variants. Although the work does not propose improved data-driven viral forecasting methods, it makes a conceptual contribution that advances the field's understanding of this problem's intrinsic difficulty.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97350.3.sa1](https://doi.org/10.7554/eLife.97350.3.sa1)\n\nIn this work, the authors study the dynamics of fast-adapting pathogens under immune pressure in a host population with prior immunity. In an immunologically diverse population, an antigenically escaping variant can perform a partial sweep, as opposed to a sweep in a homogeneous population. In a certain parameter regime, the frequency dynamics can be mapped onto a random walk with zero mean, which is reminiscent of neutral dynamics, albeit with differences in higher order moments. Next, they develop a simplified effective model of time dependent selection with expiring fitness advantage, and posit that the resulting partial sweep dynamics could explain the behaviour of influenza trajectories empirically found in earlier work (Barrat-Charlaix et al. Molecular Biology and Evolution, 2021). Finally, the authors put forward an interesting hypothesis: the mode of evolution is connected to the age of a lineage since ingression into the human population. A mode of meandering frequency trajectories and delayed fixation has indeed been observed in one of the long-established subtypes of human influenza, albeit so far only over a limited period from 2013 to 2020. The paper is overall interesting and well-written.\n\nIn the revised version, the authors have addressed questions on the role of clonal interference by new simulations in the SI, clarified the connection between the SIR model and vanishing-fitness models, and placed their analysis into the broader context of consumer resource dynamics.\n\nHowever, the general conclusion, as stated in the abstract, that variant trajectories become unpredictable as a consequence of the SIR dynamics remains somewhat misleading. Two aspects contribute to this problem. (1) The empirical observation of ``quasi-neutrality', i.e. the absence of a net frequency increase inferred as an average of many trajectories at intermediate frequencies, does not imply that individual trajectories are neutral (i.e., fully stochastic and unpredictable) over the time span of observation. Rather, it just says that some have a positive and some have a negative selection coefficient over that time span. (2) As stated by the authors, the observation of average quasi-neutrality is indeed incompatible with the travelling wave model, where initially successful new variants are assumed to retain a fixed, positive selection coefficient from origination to fixation. This observation also limits predictions by extrapolation, where a positive selection coefficient inferred at small frequency is assumed to remain the same at later times and higher frequencies. However, predictions derived from Gog and Grenfell's multi-strain SIR model, as used by several authors, do not make the assumption of fixed selection coefficients and incorporate trajectory-specific, time-dependent expiration effects into their model predictions. This distinction remains blurred throughout the text of the paper.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97350.3.sa2](https://doi.org/10.7554/eLife.97350.3.sa2)\n\nIn this work the authors present a multi-strain SIR model in which viruses circulate in a heterogeneous population with different groups characterized by different cross-immunity structures. They reformulate the qualitative features of these SIR dynamics as a random walk characterized by new variants saturating at intermediate frequencies. Then they recast their microscopic description to an effective formalism in which viral strains lose fitness independently from one another. They study several features of this process numerically and analytically, such as the average variants frequency, the probability of fixation, and the coalescent time. They compare qualitatively the dynamics of this model to variants dynamics in RNA viruses such as flu and SARS-CoV-2\n\nThe idea that vanishing fitness mechanisms that produce partial sweeps may explain important features of flu evolution is very interesting. Its simplicity and potential generality make it a powerful framework. As noted by the authors, this may have important implications for predictability of virus evolution and such a framework may be beneficial when trying to build predictive models for vaccine design. The vanishing fitness model is well analyzed and produces interesting structures in the strains coalescent. Even though the comparison with data is largely qualitative, this formalism would be helpful when developing more accurate microscopic ingredients that could reproduce viral dynamics quantitatively.\n\nThis general framework has the potential to be more universal than human RNA viruses, in situations where invading mutants would saturate at intermediate frequencies.\n\nThe qualitative connection between the coarse-grained features of these vanishing fitness dynamics and structured SIR processes offers additional intuition relevant to host-pathogens interactions, although as noted by the authors other ecological processes could drive similar evolutionary patterns. The additions in the revised manuscript, substantiating more thoroughly the connection between the SIR and the vanishing fitness description, are important to better appreciate the scope of the work.\n",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "c7bc1872-4921-4a5f-a46f-4d7d975e8448",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C1",
+      "claim": "Many human RNA viruses, such as influenza virus or SARS-CoV-2, respond to selective pressure from host immunity with rapid antigenic evolution and frequent emergence of immune evasive variants.",
+      "claim_type": "EXPLICIT",
+      "source": "As pathogens spread in a population of hosts, immunity is built up, and the pool of susceptible individuals are depleted. This generates selective pressure, to which many human RNA viruses, such as influenza virus or SARS-CoV-2, respond with rapid antigenic evolution and frequent emergence of immune evasive variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge about RNA virus evolution and references to well-studied viruses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "ff493e7f-f867-4729-9fe0-e2c53070562a",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C2",
+      "claim": "Escape variants only enjoy a growth advantage for a limited time when variant growth dynamics and reshaping of host-immunity operate on comparable time scales.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the host's immune systems adapt, and older immune responses wane, such that escape variants only enjoy a growth advantage for a limited time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical claim based on the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "49c74245-77e9-4bc7-907f-1b31367d55a4",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C3",
+      "claim": "Depending on strain cross-immunity, heterogeneity of the host population, and durability of immune responses, escape variants initially grow exponentially but lose their growth advantage before reaching high frequencies.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that depending on strain cross-immunity, heterogeneity of the host population, and durability of immune responses, escape variants initially grow exponentially, but lose their growth advantage before reaching high frequencies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "97d8d0f1-781b-42e8-be47-ce90f3693c31",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C4",
+      "claim": "The subsequent dynamics of escape variants follows an anomalous random walk determined by future escape variants and results in variant trajectories that are unpredictable.",
+      "claim_type": "EXPLICIT",
+      "source": "Their subsequent dynamics follows an anomalous random walk determined by future escape variants and results in variant trajectories that are unpredictable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "03ee14be-b7da-47ee-9a41-05fd12e02147",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C5",
+      "claim": "The model can explain the apparent contradiction between the clearly adaptive nature of antigenic evolution and the quasi-neutral dynamics of high-frequency variants observed for influenza viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "This model can explain the apparent contradiction between the clearly adaptive nature of antigenic evolution and the quasi-neutral dynamics of high-frequency variants observed for influenza viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary conclusion of the manuscript based on the model and empirical observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "37e96cbe-2a41-4376-b742-38ac45b13ed4",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C6",
+      "claim": "Influenza virus and SARS-CoV-2 are prominent examples of viruses that adapt rapidly to evade pre-existing immunity and re-infect humans multiple times over their lifetime.",
+      "claim_type": "EXPLICIT",
+      "source": "The most prominent examples of this evolution are influenza virus and SARS-CoV-2 (Roemer et al., 2023; Petrova and Russell, 2018), for which the changing virus population is surveilled in great detail and vaccines are updated regularly.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "572ba785-46c4-488c-9c9b-792b38f02c79",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C7",
+      "claim": "Several groups are working on predictive models to anticipate the variants that dominate future viral populations.",
+      "claim_type": "EXPLICIT",
+      "source": "To improve the match between the virus population and the vaccine, several groups are working on predictive models to anticipate the variants that dominate future viral populations (Morris et al., 2018; Meijers et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "69ba969d-ab1f-4db4-a24a-1f8c3c34b88a",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C8",
+      "claim": "A common framework to model the rapid evolutionary dynamics of RNA viruses is to consider a population located away from the fitness optimum with many accessible beneficial mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "A common framework to model the rapid evolutionary dynamics of RNA viruses is to consider a population located away from the fitness optimum and with many accessible beneficial mutations (Tsimring et al., 1996).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "c51c0c78-323f-4aba-a8b6-40897a1e619d",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C9",
+      "claim": "In the traveling fitness wave framework, successful variants expand and tend to be the ancestors of the future population while less successful mutants eventually disappear.",
+      "claim_type": "EXPLICIT",
+      "source": "In a process called selective sweep, successful variants expand and tend to be the ancestors of the future population while less successful mutants eventually disappear. The resulting fitness distribution is a wave traveling along the fitness axis, the so-called traveling fitness waves Rouzine et al., 2003; Desai and Fisher, 2007; Neher, 2013.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature describing the traveling wave framework.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "4fa9483b-8026-4117-a161-1b173297736b",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C10",
+      "claim": "As the pathogen circulates, hosts develop immunity which leads to a 'deterioration of the environment' for the pathogen which approximately balances the increase in average fitness due to adaptation.",
+      "claim_type": "EXPLICIT",
+      "source": "As the pathogen circulates, hosts develop immunity which leads to a 'deterioration of the environment' for the pathogen which approximately balances the increase in average fitness due to adaptation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical statement based on established understanding of host-pathogen dynamics.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f0d66496-3d01-41e6-b830-8ae908fc0476",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C11",
+      "claim": "Current methods typically infer the instantaneous growth advantage of a strain based on past and present circulation and then project this growth advantage forward in time.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, current methods typically infer the instantaneous growth advantage of a strain based on past and present circulation and then project this growth advantage forward in time Luksza and L\u00e4ssig, 2014; Neher et al., 2014; Huddleston et al., 2020.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on prediction methods.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "8784aa6c-e8bf-4186-8673-c7c27188cd5f",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C12",
+      "claim": "The traveling wave approach lacks explicit representation of the epidemiological dynamics and of the host's immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "One short-coming of the traveling wave approach is the lack of explicit representation of the epidemiological dynamics and of the host's immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of existing models based on the authors' analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "9e712fbf-6bfb-47c5-82e9-9f892d41e233",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C13",
+      "claim": "Taking the hosts' immunity and viral cross-immunity into account has the potential to strongly improve predictions or explain why prediction is difficult.",
+      "claim_type": "EXPLICIT",
+      "source": "Taking the hosts' immunity and viral cross-immunity into account has the potential to strongly improve predictions Meijers et al., 2023 or explain why prediction is difficult (Barrat-Charlaix et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "c17e58d7-ab68-425a-bc4a-7a31aee0ef87",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C14",
+      "claim": "The interaction between epidemiological dynamics and hosts' immunity are often modeled using generalizations of the Susceptible-Infected-Recovered model (SIR) to include multiple viral strains.",
+      "claim_type": "EXPLICIT",
+      "source": "The interaction between epidemiological dynamics and hosts' immunity are often modeled using generalizations of the Susceptible-Infected-Recovered model (SIR) to include multiple viral strains Gupta et al., 1998; Gog and Grenfell, 2002.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature on SIR models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "9236d5ce-1ff4-47fb-864b-d7f68f3a988c",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C15",
+      "claim": "Multi-strain SIR studies typically approximate population immunity as a low-dimensional landscape in which the viral population evolves and ignores the complex heterogeneity in the immunity of different individuals.",
+      "claim_type": "EXPLICIT",
+      "source": "To remain tractable, these studies typically approximate population immunity as a low-dimensional landscape in which the viral population evolves and ignores the complex heterogeneity in the immunity of different individuals.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of existing models based on the authors' analysis.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f3889d01-1897-4b00-ac4f-4ef5a1d251ef",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C16",
+      "claim": "The model generically leads to a situation where novel immune evasive variants emerge.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that this model generically leads to a situation where novel immune evasive variants emerge.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "156fcfe8-fc12-4387-8d51-4965f7b0e84c",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C17",
+      "claim": "In a homogeneous population of hosts, the emergence of immune evasive variants leads to a succession of selective sweeps where novel variants compete against each other and replace previously circulating variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In a homogeneous population of hosts, this leads to a succession of selective sweeps where novel variants compete against each other and replace previously circulating variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "77baa47f-21ae-47b2-bc0f-8fb992d5ce9c",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C18",
+      "claim": "In a heterogeneous population with more rapid waning of immunity, initially growing variants lose their selective advantage before reaching fixation due to immunological adjustment of the host population.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in a heterogeneous population with a more rapid waning of immunity, initially growing variants lose their selective advantage before reaching fixation due to immunological adjustment of the host population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "dbb388bf-814b-4ec6-9a08-1fea0895f3b8",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C19",
+      "claim": "The phenomenology of the epidemiological model is reminiscent of ecological systems such as consumer-resource models.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenomenology of our epidemiological model is reminiscent of ecological systems such as consumer-resource models, where adaptation by one species shifts the global equilibrium and distribution of other species but does not necessarily result in a selective sweep Good et al., 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison with cited ecological models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "5052de0d-e775-42e1-9e68-1ea58e3aa764",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C20",
+      "claim": "In consumer-resource models, adaptation can usually not be modeled by a fixed fitness parameter for each strain but rather depends on the composition of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "In these systems, adaptation can usually not be modeled by a fixed fitness parameter for each strain but rather depends on the composition of the population Tikhonov and Monasson, 2018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature on ecological models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "40cd5b42-e0fb-4b91-a172-2f1b2f7355ab",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C21",
+      "claim": "While adaptive mutations are highly overrepresented in genetic diversity, they cease having a growth advantage when reaching intermediate frequencies, a process called 'expiring fitness.'",
+      "claim_type": "EXPLICIT",
+      "source": "While adaptive mutations are highly overrepresented in genetic diversity, they cease having a growth advantage when reaching intermediate frequencies, a process we call 'expiring fitness.'",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding and concept introduced in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f27b9018-8ba2-4212-9fce-ab942f959a82",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C22",
+      "claim": "Once the fitness effect of a mutation has expired, its frequency randomly changes up or down as subsequent adaptive mutations occur on the same or on different genomic backgrounds.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the fitness effect of a mutation has expired, its frequency randomly changes up or down as subsequent adaptive mutations occur on the same or on different genomic backgrounds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f606e750-74d3-48a8-9aeb-61a693d7781e",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C23",
+      "claim": "The resemblance to neutral evolution could have important consequences for predictability of viral evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "This resemblance to neutral evolution could have important consequences for predictability of viral evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the implications of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "a075fba0-d64b-4ecd-bb31-e171efede145",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C24",
+      "claim": "The evolution of influenza is not as predictable as one would expect from typical models.",
+      "claim_type": "EXPLICIT",
+      "source": "It is interesting to relate this to the recent observations that the evolution of influenza is not as predictable as one would expect from typical models Huddleston et al., 2020; Barrat-Charlaix et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "9a31e51e-dda5-4edd-b44f-14d8175d9cc7",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C25",
+      "claim": "The frequency trajectories of mutants of A/H3N2 influenza show features that are expected in neutral evolution but hard to explain in a traveling wave framework.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, we observed in Barrat-Charlaix et al., 2021 that the frequency trajectories of mutants of A/H3N2 influenza show features that are expected in neutral evolution but hard to explain in a traveling wave framework.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "cf36facd-b680-4388-81da-1bad3a1fcba2",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C28",
+      "claim": "The dynamics are driven by the interaction of susceptible and infected hosts, leading to infections and gains of immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "As with usual compartmental models, we assume that the dynamics are driven by the interaction of susceptible and infected hosts, leading to infections and gains of immunity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model assumptions based on standard compartmental models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "218392b4-1f7a-4f6b-b327-511df6631eb4",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C31",
+      "claim": "The model assumes that immunity builds up through exposure and not only through infection.",
+      "claim_type": "EXPLICIT",
+      "source": "This model introduced by Gog and Grenfell, 2002 assumes that immunity builds up through exposure and not only through infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the model assumptions with a citation to the original source.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "2d787a27-29ed-4358-9d03-e29b2f596f0e",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C32",
+      "claim": "Alternative models that require infection for acquisition of immunity have qualitatively similar dynamics, but are mathematically more complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Alternative models that require infection for acquisition of immunity have qualitatively similar dynamics, but are mathematically more complex (Appendix 1.5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about alternative models with reference to an appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "12a80a0c-89c6-429f-9ec7-83a6a2fd1e71",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C33",
+      "claim": "The probability of generating cross-immunity can differ between groups.",
+      "claim_type": "EXPLICIT",
+      "source": "An important property of our model is that the probability of generating cross-immunity can differ between groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of a key feature of the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "12171203-9f69-4bdd-9652-2438e1b42e20",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C36",
+      "claim": "Heterogeneous immune response could be caused by varying histories of strain exposure for different individuals, for instance, due to differences in age or geographical region.",
+      "claim_type": "EXPLICIT",
+      "source": "Heterogeneous immune response could be caused by varying histories of strain exposure for different individuals, for instance, due to differences in age or geographical region.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the biological basis of model assumptions.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "79a39622-fcc7-4b94-a610-45d3c77e5e0c",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C37",
+      "claim": "Hosts' immune heterogeneity and strain cross-immunity play two different roles in the model: the latter allows the model to reach a non-trivial equilibrium where multiple strains co-exist, while the former affects the convergence to the equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "Hosts' immune heterogeneity and strain cross-immunity play two different roles in the model. The latter allows the model to reach a non-trivial equilibrium where multiple strains co-exist, while the former affects the convergence to the equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "ab7b240e-1bdf-4ba3-be43-20314ecf0526",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C45",
+      "claim": "Cross-immunity with the resident strain reduces the fraction of hosts susceptible to the variant below one even though it has not circulated yet.",
+      "claim_type": "EXPLICIT",
+      "source": "Cross-immunity with the resident strain reduces the fraction of hosts susceptible to the variant below one even though it has not circulated yet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the model presented in the manuscript.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "e3dea8b4-5896-418e-95d2-86bc9141f901",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C48",
+      "claim": "The variant increases initially exponentially until it has become sufficiently frequent that it starts having a substantial effect on the immunity landscape, before eventually settling into an equilibrium with the wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "The variant thus increases initially exponentially until it has become sufficiently frequent that it starts having a substantial effect on the immunity landscape, before eventually settling into an equilibrium with the wild-type.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the analysis of the model presented in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "6065fac0-3e1e-4d19-aedf-4f1a9cffa3ea",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C50",
+      "claim": "Strong and slowly damped oscillations are not what is observed in circulating viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "However, these strong and slowly damped oscillations are not what is observed in circulating viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between model predictions and empirical observations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "ce71b0ba-0dc0-41a9-9c73-399f30437c14",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C51",
+      "claim": "During stochastic circulation in a finite population of hosts the wild-type would likely be lost when prevalence goes down to microscopic levels.",
+      "claim_type": "EXPLICIT",
+      "source": "During stochastic circulation in a finite population of hosts the wild-type would likely be lost.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about stochastic effects in finite populations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "5d7ed489-739c-42b9-bd5c-6ffb6eddaf01",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C52",
+      "claim": "Oscillations are the consequence of the rapid rise of the variant followed by an overshoot.",
+      "claim_type": "EXPLICIT",
+      "source": "Oscillations are the consequence of the rapid rise of the variant followed by an overshoot.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "d8daac68-f912-4c1f-a562-db2f5ad73391",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C54",
+      "claim": "One consequence of many groups that are indifferent to the variant is that globally the excess susceptibility to the variant is lower.",
+      "claim_type": "EXPLICIT",
+      "source": "One consequence of many groups that are indifferent to the variant is that globally the excess susceptibility to the variant is lower.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the model structure with multiple immune groups.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f57c6d06-c490-405f-9831-7b3ea49a9b10",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C56",
+      "claim": "If mixing is slow, the initial growth of the variant is as rapid as in the one-group case, but then spreads only slowly across groups.",
+      "claim_type": "EXPLICIT",
+      "source": "If mixing is slow, the initial growth of the variant is as rapid as in the one-group case, but then spreads only slowly across groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model simulations with slow mixing between groups.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "9580b5c3-5858-4a42-9926-27af1e48fb2c",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C57",
+      "claim": "The main effect of the immune groups is that the overshoot past the equilibrium is much smaller and the dampening of the oscillations stronger.",
+      "claim_type": "EXPLICIT",
+      "source": "Either way, the main effect of the immune groups is that the overshoot past the equilibrium is much smaller and the dampening of the oscillations stronger.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "3cae2c12-90a7-4e25-960c-fd129b21ecb0",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C58",
+      "claim": "The frequency of the variant approaches its equilibrium value without effectively sweeping to fixation.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the frequency of the variant approaches its equilibrium value without effectively sweeping to fixation before.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "7a48340f-de52-4dbc-a6bf-7013f9e3c4dd",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C61",
+      "claim": "Even though the variant has a clear growth rate advantage when it appears, this does not result in it replacing the wild-type, which contrasts with the typical 'selective sweep'.",
+      "claim_type": "EXPLICIT",
+      "source": "Even though the variant has a clear growth rate advantage when it appears, this does not result in it replacing the wild-type. This contrasts with the typical 'selective sweep' that occurs when the growth rate advantage stays constant, which is illustrated as a dashed line in the figure.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 1 with comparison to standard selective sweep dynamics.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "ed656ac2-b061-40ff-8ae1-1c586370b58f",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C62",
+      "claim": "Frequency trajectories of a variant that at first rise exponentially before settling at an intermediate frequency are referred to as partial sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "We refer to frequency trajectories of a variant that at first rise exponentially before settling at an intermediate frequency as partial sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definition of terminology introduced in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "49a9704c-45d1-4666-b4eb-c8cd5c8a9ffb",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C63",
+      "claim": "Partial sweeps can lead to qualitatively different evolutionary dynamics and its predictability.",
+      "claim_type": "EXPLICIT",
+      "source": "As we will discuss below, such partial sweeps can lead to qualitatively different evolutionary dynamics and its predictability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative statement about the implications of the model.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "96b16a27-582f-4bd1-9916-7f057ad751f0",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C64",
+      "claim": "If the initial growth is due to higher susceptibility, it is misleading to think of it as an intrinsic fitness advantage of the variant.",
+      "claim_type": "EXPLICIT",
+      "source": "If the initial growth is due to higher susceptibility, it is misleading to think of it as an intrinsic fitness advantage of the variant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the model dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "b90900af-72de-45a0-a8ca-0dbec57d1c0b",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C65",
+      "claim": "The initial growth is the result of an imbalance in the immune state of the host population, which gradually disappears as the variant becomes more frequent.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the initial growth is the result of an imbalance in the immune state of the host population, which gradually disappears as the variant becomes more frequent, as shown in the central panels of Figure 1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the model simulations shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "6a4ba656-d21d-4e4b-a9be-29dd9744f272",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C66",
+      "claim": "The model is comparable to ecological systems where interaction between organisms cannot be fully explained using a fixed scalar fitness for each strain but rather depends on the composition of the viral and host population.",
+      "claim_type": "EXPLICIT",
+      "source": "In this sense, our model is comparable to ecological systems where interaction between organisms cannot be fully explained using a fixed scalar fitness for each strain but rather depends on the composition of the viral and host population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison between the model and ecological systems.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "16dc0b25-876f-4a92-b740-d04c3764abb4",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C67",
+      "claim": "The stalling of frequency increase gives rise to the partial sweep is reminiscent of consumer resource models, highlighting the link between ecological and epidemiological models.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, the stalling of frequency increase gives rise to the partial sweep is reminiscent of consumer resource models Tikhonov and Monasson, 2018; Good et al., 2018, highlighting the link between ecological and epidemiological models.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparison with cited ecological models.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "b866ffbe-7c61-4795-94ce-04d40cabb58b",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C68",
+      "claim": "Predicting the equilibrium frequency reached by the variant and its ultimate fate is hard from the observation of a partial frequency trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "An important consequence of these dynamics is that predicting the equilibrium frequency reached by the variant and its ultimate fate is hard from the observation of a partial frequency trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference about the implications of the model for predictability.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "e7f5f221-2320-40d5-8323-3c2365642697",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C69",
+      "claim": "As the viral population evolves, new adaptive mutants can appear, which translates into extending the cross-immunity matrix by one row and one column.",
+      "claim_type": "EXPLICIT",
+      "source": "However, as the viral population evolves, new adaptive mutants can appear. In the framework of the SIR model, a new strain translates into extending the cross-immunity matrix by one row and one column.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of how the model is extended to include new variants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "a5ba062e-913a-48c1-983c-bf176570f626",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C74",
+      "claim": "Trajectories that always go downwards or upwards represent a finite and relatively large fraction of all possible trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "This leads to trajectories leading almost exponentially to 0 and 1: it can in fact be shown that trajectories that always go downwards or upwards represent a finite and relatively large fraction of all possible trajectories (see Appendix 2.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical result with reference to an appendix.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "0fe6ae0a-1936-4f10-8f96-7fc7e03042b1",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C81",
+      "claim": "The random walk model assumes that variants rise to their equilibrium frequency instantaneously.",
+      "claim_type": "EXPLICIT",
+      "source": "The random walk model introduced above is simple to analyze and simulate, but assumes that variants rise to their equilibrium frequency instantaneously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of an assumption in the random walk abstraction.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "57a415f3-8bd9-4247-82ea-e78772127edd",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C82",
+      "claim": "An empirical model is proposed that has the same qualitative properties as the over-damped SIR, namely a growth rate that decreases as a strain becomes more frequent and partial sweep trajectories, but is simpler to analyze and simulate on a large scale.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the consequences of partial sweeps over broader parameter ranges, we propose an empirical model that has the same qualitative properties as the over-damped SIR, namely a growth rate that decreases as a strain becomes more frequent and partial sweep trajectories, but is simpler to analyze and simulate on a large scale.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the expiring fitness model introduced in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "444bee78-3819-467b-be8d-8de1a2ea1545",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C87",
+      "claim": "The main aim of the expiring fitness model is to qualitatively reproduce the phenomenology of the SIR, and in particular the partial sweeps, while being easier to simulate.",
+      "claim_type": "EXPLICIT",
+      "source": "It is important to state that the main aim of this effective model is to qualitatively reproduce the phenomenology of the SIR, and in particular the partial sweeps, while being is easier to simulate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the purpose of the expiring fitness model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "85af1769-ae40-4f7d-9d7b-eaf227cae161",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C88",
+      "claim": "The expiring fitness model recapitulates the salient features of invading immune evasive variants: (i) initial exponential growth, and (ii) eventual saturation at an intermediate frequency.",
+      "claim_type": "EXPLICIT",
+      "source": "It recapitulates the salient feature of invading immune evasive variants: (i) initial exponential growth, and (ii) eventual saturation at an intermediate frequency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the key features of the expiring fitness model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "8c7134a0-1724-45fc-94fb-4acccc447805",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C90",
+      "claim": "Due to its simplicity, the expiring fitness model does not show the complex oscillatory behavior of the SIR model.",
+      "claim_type": "EXPLICIT",
+      "source": "In particular, due to its simplicity, this model does not show the complex oscillatory behavior of the SIR model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the limitations of the expiring fitness model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "22bf6f11-b033-4ff3-8bb8-c2a18ab32b69",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C92",
+      "claim": "Accurate prediction of dominant viral variants of the future could improve the choice of antigens in vaccines against rapidly evolving viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "Accurate prediction of dominant viral variants of the future could improve the choice of antigens in vaccines against rapidly evolving viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the practical motivation for studying predictability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "04a3c48a-ba03-41c9-802c-63f5c151c2fe",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C93",
+      "claim": "The typical traveling wave framework would predict that fast-growing variants should keep on growing until an even fitter one appears.",
+      "claim_type": "EXPLICIT",
+      "source": "The typical traveling wave framework would predict that fast-growing variants should keep on growing until an even fitter one appears.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of predictions from the traveling wave framework.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "4f8dcf48-e8b6-49b1-8704-08e9ad3bf513",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C94",
+      "claim": "In the case of A/H3N2 influenza, there are few signatures that suggest fit variants grow in frequency consistently.",
+      "claim_type": "EXPLICIT",
+      "source": "In the case of A/H3N2 influenza, for instance, we showed that there are few signatures that suggest fit variants grow in frequency consistently (Barrat-Charlaix et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "012816b3-9076-40db-9473-934b932e9333",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C97",
+      "claim": "The surprising result for influenza is in line with the study in Barrat-Charlaix et al., 2021 which used data from the period 2000\u20132018.",
+      "claim_type": "EXPLICIT",
+      "source": "This surprising result is in line with the study in Barrat-Charlaix et al., 2021 which used data from the period 2000\u20132018.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "b5919778-bad6-48bc-b258-805cc1d28836",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C99",
+      "claim": "On longer timescales for SARS-CoV-2, a systematic decrease in frequency is observed, which is explained by the particular initial dynamics where new variants arose at a rapid pace and replaced old ones.",
+      "claim_type": "EXPLICIT",
+      "source": "On longer timescales, however, we observe a systematic decrease in frequency: this is explained by the particular initial dynamics of SARS-CoV-2, where new variants arose at a rapid pace and replaced old ones.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an interpretation of the empirical observations shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "dc480f9c-75bd-419a-994d-eae5b4c07b38",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C100",
+      "claim": "The process where new variants arise at a rapid pace and replace old ones is often called clonal interference and reduces long-term predictability.",
+      "claim_type": "EXPLICIT",
+      "source": "This process is often called clonal interference and reduces long-term predictability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement based on established knowledge about clonal interference.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "aa2cfd12-9679-4062-9779-b4efdccef077",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C102",
+      "claim": "Subsequent allele dynamics and diversity are governed by an anomalous coalescent process driven by the random walk, leading to little predictability of evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "Subsequent allele dynamics and diversity are governed by an anomalous coalescent process driven by the random walk defined in Equation 9, leading to little predictability of evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction from the random walk model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "b5cb3c39-440b-4e13-9d18-447db4dbf5c1",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C115",
+      "claim": "There is good agreement between the empirical time to MRCA and the estimation from the random walk, at least as long as the probability of overlap between successive partial sweeps is small.",
+      "claim_type": "EXPLICIT",
+      "source": "We find a good agreement between the empirical time to MRCA and the estimation from the random walk, at least as long as the probability of overlap between successive partial sweeps is small (indicated by shading).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the Wright-Fisher simulations shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "fd7df1a3-30da-42be-96cf-7cbe950178ee",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C118",
+      "claim": "Evolutionary adaptation is often pictured as an optimization problem in a static environment.",
+      "claim_type": "EXPLICIT",
+      "source": "Evolutionary adaptation is often pictured as an optimization problem in a static environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common conceptualizations of evolution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "e95cd851-6d02-4f80-b4f9-ad776ccb28b6",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C119",
+      "claim": "In many cases, the environment is changed by the presence of the evolving species, for example, because a host population develops immunity or a dynamic ecology.",
+      "claim_type": "EXPLICIT",
+      "source": "In many cases, however, this environment is changed by the presence of the evolving species, for example, because a host population develops immunity or a dynamic ecology.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about eco-evolutionary dynamics based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f31ddea3-3525-4bd9-926f-75b926177e9c",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C120",
+      "claim": "Influenza virus evolution has been the subject of intense research with efforts to predict the composition of future viral populations.",
+      "claim_type": "EXPLICIT",
+      "source": "Influenza virus evolution has been the subject of intense research with efforts to predict the composition of future viral populations (Bush et al., 1999; Luksza and L\u00e4ssig, 2014; Neher et al., 2014; Huddleston et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "df7992a0-64e3-49d3-bcb8-0ce6245dd221",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C121",
+      "claim": "The A/H3N2 subtype undergoes rapid antigenic change through frequent substitutions in prominent epitopes on its surface proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The A/H3N2 subtype in particular undergoes rapid antigenic change through frequent substitutions in prominent epitopes on its surface proteins (Smith et al., 2004; Bhatt et al., 2011; Neher et al., 2016; Kistler and Bedford, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "7192b7a3-c8ed-47c8-a04e-c588e8615872",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C122",
+      "claim": "Given the clear signal of adaptive evolution, one might expect A/H3N2 to be predictable in the sense that variants that grow keep growing.",
+      "claim_type": "EXPLICIT",
+      "source": "Given the clear signal of adaptive evolution, one might expect A/H3N2 to be predictable in the sense that variants that grow keep growing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about expectations based on adaptive evolution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "df50f1e8-ff5c-4a68-9fc7-ba83a6ab0549",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C123",
+      "claim": "It has been difficult to find convincing signals of fit, antigenically novel, variants that consistently grow and replace their competitors for A/H3N2.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, it has been difficult to find convincing signals of fit, antigenically novel, variants that consistently grow and replace their competitors (Barrat-Charlaix et al., 2021; Huddleston et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "08b2929c-93e0-4980-8f06-6d2615145dd5",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C124",
+      "claim": "SARS-CoV-2 evolution has been consistently predictable in the sense that dynamics are well modeled by exponentially growing variants that compete for a common pool of susceptible hosts.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, SARS-CoV-2 evolution has been consistently predictable in the sense that dynamics are well modeled by exponentially growing variants that compete for a common pool of susceptible hosts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about SARS-CoV-2 evolution based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "870870ba-66eb-4a62-aaaf-fb249d0e624f",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C125",
+      "claim": "Even for SARS-CoV-2, taking into account the immune adaptation of hosts leads to a better description of variant dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "However, even in this case, taking into account the immune adaptation of hosts leads to a better description of variant dynamics Meijers et al., 2023.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "60cc4c3c-53df-4950-8246-bac1346e7480",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C126",
+      "claim": "Depending on the heterogeneity of immunity in the population, the asymmetry between backward and forward cross-immune recognition, and waning or turn-over of immunity, the immune escape can either lead to dynamics dominated by selective sweeps, or to one where escape mutations have an initial growth advantage that dissipates before the variant fixes.",
+      "claim_type": "EXPLICIT",
+      "source": "We have shown that depending on (i) the heterogeneity of immunity in the population, (ii) the asymmetry between backward and forward cross-immune recognition, and (iii) waning or turn-over of immunity, the immune escape can either lead to dynamics dominated by selective sweeps, or to one were escape mutations have an initial growth advantage that dissipates before the variant fixes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the main findings from the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f70317be-dcbe-4917-bc5e-57f5004e6da3",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C127",
+      "claim": "The former scenario (selective sweeps) is observed when initial growth is fast, backward immunity high, and waning slow compared to variant dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "The former scenario is observed when initial growth is fast, backward immunity high, and waning slow compared to variant dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of conditions leading to selective sweeps from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "4a5f2e16-8d5b-4ee5-9298-c00a859b7261",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C128",
+      "claim": "In the selective sweep scenario, new variants can rise to high frequency driven by their own advantage and fix.",
+      "claim_type": "EXPLICIT",
+      "source": "In this case, new variants can rise to high frequency driven by their own advantage and fix.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the selective sweep scenario.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "05c886fc-beed-42a6-904a-7588902fb84d",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C129",
+      "claim": "Immunological heterogeneity slows down the initial rise, allowing for population immunity to respond and adjust before the variant has been fixed.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunological heterogeneity slows down the initial rise, allowing for population immunity to respond and adjust before the variant has been fixed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the model about the effect of heterogeneity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "e2e9cfad-e284-4861-a6bb-d8a5a48af9c9",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C130",
+      "claim": "The process of partial sweeps reconciles two seemingly contradicting observations: HA evolution in human influenza A virus is clearly driven by adaptive immune escape and most substitutions are clustered in epitope regions, but most substitutions do not sweep to fixation and tend to meander in a quasi-neutral fashion.",
+      "claim_type": "EXPLICIT",
+      "source": "This process of partial sweeps reconciles two seemingly contradicting observations: HA evolution in human influenza A virus is clearly driven by adaptive immune escape and most substitutions are clustered in epitope regions (Bhatt et al., 2013). On the other hand, most substitutions does not sweep to fixation but tends to meander in a quasi-neutral fashion (Barrat-Charlaix et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of how the model explains empirical observations with citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "2c7e0522-6dd3-4f4c-acaf-47323f71f075",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C131",
+      "claim": "In the partial sweep scenario, diversity is dominated by immune escape mutations that are rapidly brought to macroscopic frequency by their initial growth advantage, but their ultimate fate is determined mostly by subsequent mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In the partial sweep scenario proposed here, diversity is dominated by immune escape mutations that are rapidly brought to macroscopic frequency by their initial growth advantage, but their ultimate fate is determined mostly by subsequent mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the partial sweep dynamics from the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "9cd5261d-2b32-4101-ad09-07fd7e35efdc",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C133",
+      "claim": "The degree to which partial sweeps matter will vary from virus to virus and will change over time.",
+      "claim_type": "EXPLICIT",
+      "source": "The degree to which partial sweeps matter will vary from virus to virus and will change over time.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the generality and context-dependence of the findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "7b3fcea8-5a80-4bc8-bd3d-eb316aa90809",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C134",
+      "claim": "Recently emerged viruses circulate in a homogeneous immune landscape and adapt to the new host for some time, consistent with rapid and complete sweeps of variants in SARS-CoV-2.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently emerged viruses circulate in a homogeneous immune landscape and adapt to the new host for some time, consistent with rapid and complete sweeps of variants in SARS-CoV-2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of SARS-CoV-2 dynamics based on the model.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "2bf8ee53-da2f-4c2d-b1c8-888e72a88ce7",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C135",
+      "claim": "The influenza virus A/H1N1pdm, which emerged in humans in 2009, exhibited more consistent trajectory dynamics than A/H3N2.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the influenza virus A/H1N1pdm, which emerged in humans in 2009, exhibited more consistent trajectory dynamics than A/H3N2 (Barrat-Charlaix et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "d611e9e2-4498-491a-b285-17bc4dd932ac",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C136",
+      "claim": "Qualitative features of the partial sweep dynamics are expected to exist in any system where the environment responds to evolutionary changes on time scales comparable to the time it takes for the adaptive variants to take over, leading to eco-evolutionary dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, qualitative features of the partial sweep dynamics investigated here are expected to exist in any system where the environment responds to evolutionary changes on time scales comparable to the time it takes for the adaptive variants to take over, leading to eco-evolutionary dynamics (Pelletier et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a generalization of the findings with a citation to eco-evolutionary dynamics literature.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "b7ff1fd9-2272-4e00-9f0d-3d1e9ce95a7d",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C137",
+      "claim": "In ecological systems involving eukaryotes, it is the evolutionary part of the eco-evolutionary interaction that is thought of as slow, while ecology is fast.",
+      "claim_type": "EXPLICIT",
+      "source": "In ecological systems involving eukaryotes, it is the evolutionary part of this interaction that is thought of as slow, while ecology is fast.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about ecological systems based on general knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "ad7bc8b4-e56e-4462-99b1-796fc954e4a5",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C138",
+      "claim": "In the cases of rapidly adapting RNA viruses in human populations with long-lived immunological memory, models often assume that viral adaptation is fast while hosts have long-lasting memory.",
+      "claim_type": "EXPLICIT",
+      "source": "In the cases of rapidly adapting RNA viruses in human populations with long-lived immunological memory, models often assume that viral adaptation is fast while hosts have long-lasting memory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about common assumptions in viral evolution models.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "befbcb2b-4570-487a-879f-cfa2e5a74ec5",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C139",
+      "claim": "The most complex and least predictable dynamics are expected when the evolutionary and ecological time scales are similar and different host-pathogen systems will fall on different points along this axis.",
+      "claim_type": "EXPLICIT",
+      "source": "The most complex and least predictable dynamics are expected when the evolutionary and ecological time scales are similar and different host-pathogen systems will fall on different points along this axis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion about the conditions for complex dynamics.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "a9975519-d2c8-4248-93a1-3fc95ff12024",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C140",
+      "claim": "Sequence data of influenza viruses was obtained from GISAID.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence data of influenza viruses was obtained from GISAID (Shu and McCauley, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data sources with a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "245a47d6-5819-4ed5-a0b6-61818853b9c3",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "claim_id": "C141",
+      "claim": "Sequence data of SARS-CoV-2 viruses was obtained from NCBI and restricted to data from North America to ensure more homogeneous sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence data of SARS-CoV-2 viruses was obtained from NCBI and restricted to data from North America to ensure more homogeneous sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about data sources and processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "48f7a075-3201-49e2-ba01-df1e6bdbda91",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "RNA viruses like influenza A/H3N2 and SARS-CoV-2 undergo rapid antigenic evolution driven by immune pressure, with A/H3N2 showing particularly rapid antigenic change through frequent epitope substitutions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C6, C120, and C121 establish well-documented background knowledge about RNA virus evolution, supported by multiple citations to established literature. These claims provide the empirical motivation for the modeling work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "c01bbd1d-0d6b-41d2-93aa-7f87b292f98b",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The traveling wave framework is commonly used to model RNA virus evolution but lacks explicit representation of epidemiological dynamics and host immunity, which could improve predictions or explain prediction difficulties.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C13 accurately describe the traveling wave framework and its limitations, supported by appropriate citations. The critical assessment of existing approaches (C12, C13) is well-justified and provides clear motivation for the new model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "10905f22-8481-46e8-860a-40a71c4f0b09",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors develop a multi-strain SIR model with heterogeneous host immunity groups that can differ in cross-immunity responses, where immunity builds through exposure rather than only infection.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14, C15, C28, C31-C33 describe the model structure with appropriate citations to prior SIR models. The model assumptions are clearly stated, including the key innovation of heterogeneous cross-immunity between groups (C33) and the exposure-based immunity mechanism (C31).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "3e1ff395-8e21-4b93-ae71-6820687fc1e6",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "In the multi-strain SIR model with heterogeneous immunity, immune evasive variants initially grow exponentially but lose their growth advantage before fixation, resulting in 'partial sweeps' where variants settle at intermediate frequencies rather than replacing the wild-type.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37, C45, C48, C57, C58, C61, C62 describe the core finding of partial sweeps, supported by Figure 1 simulations. The distinction between homogeneous (oscillatory) and heterogeneous (damped) population dynamics is clearly demonstrated, and the partial sweep phenomenon is well-defined.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f80e4a7d-7a9c-4bc9-a24f-d141ec777976",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Homogeneous populations show strong oscillations that would lead to stochastic extinction in finite populations, while heterogeneous immunity dampens these oscillations by reducing excess susceptibility and slowing variant spread across groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50-C52, C54, C56 explain why heterogeneous immunity is necessary for realistic dynamics. The reasoning about stochastic extinction (C51) and the mechanistic explanation for dampening (C54, C56) are logically sound and supported by Figure 1 simulations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f0b3ef5b-58d6-4a9e-9fc5-5ef4a5569236",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The initial growth advantage of variants results from immunological imbalance in the host population rather than intrinsic fitness, making the model comparable to ecological consumer-resource systems where fitness depends on population composition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C68 provide important conceptual interpretation of the model dynamics, with appropriate comparisons to ecological models (C66, C67) supported by citations. The inference about prediction difficulty (C68) follows logically from the frequency-dependent dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "ff030486-f28f-4575-b78b-8845e38c057a",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "When multiple variants emerge sequentially, the frequency of initial mutations follows an anomalous random walk with zero mean change, where trajectories monotonically reaching 0 or 1 represent a finite fraction of outcomes, leading to unpredictable evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69, C74, C102 describe the random walk abstraction with mathematical support referenced in appendices. The zero-mean property and the existence of monotonic trajectories (C74) are mathematically derived, though full verification would require checking the appendix calculations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "79613547-b4fa-4db7-bd34-9bcd9c4b0d08",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors introduce an 'expiring fitness' model where growth rate decays proportionally to variant frequency, qualitatively reproducing partial sweep dynamics while being simpler to simulate than the full SIR model, though lacking oscillatory behavior.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C82, C87, C88, C90 describe the expiring fitness model and its purpose. The model is clearly defined (Equation 11), its qualitative correspondence to SIR dynamics is stated (C88), and its limitations are acknowledged (C90). This provides a useful computational tool for exploring parameter space.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "d3f0cbd3-ec4b-48b5-939b-0c83c63ad98c",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Retrospective analysis shows A/H3N2 influenza mutations lack consistent growth beyond intermediate frequencies, while SARS-CoV-2 shows more predictable exponential growth with eventual decline due to clonal interference.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C94, C97, C99, C100, C123, C124 describe empirical observations from Figure 3, supported by citations to prior work. The contrasting dynamics between influenza and SARS-CoV-2 are clearly demonstrated, though the analysis is retrospective and descriptive rather than predictive.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f4804b5f-97d6-47a4-a48e-17f2742b0833",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Wright-Fisher simulations show good agreement between empirical time to MRCA and random walk predictions when partial sweep overlap probability is small.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C115 describes validation of the random walk model using Wright-Fisher simulations (Figure 4E). The agreement is demonstrated empirically, with appropriate caveats about the regime of validity (small overlap probability).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "76dd9d2f-d650-49ac-a177-8e662726fa5c",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The model reconciles the apparent contradiction between adaptive antigenic evolution and quasi-neutral high-frequency dynamics in influenza by showing that escape mutations have expiring fitness advantages, with ultimate fate determined by subsequent mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5, C126, C130, C131 present the main synthesis of the work. The reconciliation of adaptive evolution with quasi-neutral dynamics (C5, C130) is well-supported by the combination of model results and empirical observations, providing a coherent explanation for previously puzzling patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "57a53445-e23c-4167-acae-ee07d8e369f8",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The relative importance of selective sweeps versus partial sweeps depends on parameter regimes and varies across viruses and over time, with recently emerged viruses like SARS-CoV-2 and A/H1N1pdm showing more complete sweeps than established A/H3N2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C127-C129, C133-C135 describe conditions determining sweep completeness and provide empirical context. The parameter dependencies (C127) are derived from the model, and the virus-specific patterns (C134, C135) are supported by citations and consistent with the model predictions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "1d981374-5070-4304-a28f-ff95243d1373",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The partial sweep dynamics are expected to occur generally in eco-evolutionary systems where evolutionary and ecological timescales are comparable, with the most complex dynamics arising when these timescales are similar.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C136-C139 generalize the findings to broader eco-evolutionary contexts with appropriate citations. The reasoning about timescale matching (C139) is logical and well-supported, though empirical validation in other systems would strengthen this generalization.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "8760aa1d-1ccb-4b17-9a53-a43bcfa7ab52",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The multi-strain SIR model generically produces immune evasive variants that lead to selective sweeps in homogeneous populations but partial sweeps in heterogeneous populations with rapid immunity waning.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C16-C18 summarize key model behaviors. These are well-supported by the simulations in Figure 1 and the mathematical analysis, clearly distinguishing between homogeneous and heterogeneous population dynamics.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "fe6140a4-29f2-4712-bebe-94d3d1028791",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The model exhibits frequency-dependent fitness similar to consumer-resource ecological models, where adaptive mutations are overrepresented in diversity but cease having growth advantages at intermediate frequencies ('expiring fitness'), with subsequent dynamics resembling neutral evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C23 draw important connections to ecological theory with appropriate citations (C19, C20). The 'expiring fitness' concept (C21) is clearly defined and demonstrated. The resemblance to neutral evolution (C23) is appropriately framed as having 'important consequences' rather than being complete equivalence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "5b9e9c0e-5898-4293-a9fb-d746282011da",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "Influenza A/H3N2 evolution is less predictable than expected from traveling wave models, with fit variants not consistently growing, contrasting with expectations from adaptive evolution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C24, C25, C92, C93, C122, C123 describe the prediction problem and empirical observations, well-supported by citations to prior work (Barrat-Charlaix et al., 2021; Huddleston et al., 2020). This provides strong empirical motivation for the model.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "e79b6b98-5efa-4e8f-b0bd-b850a19dd3a2",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Sequence data for influenza was obtained from GISAID and for SARS-CoV-2 from NCBI (North America only).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C140, C141 describe data sources with appropriate citations and acknowledgments. The geographic restriction for SARS-CoV-2 (C141) is justified for sampling homogeneity.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "a9ee5323-ad13-4583-b660-c595dd5da675",
+      "content_id": "11f94bd3-fa4a-459e-9ae0-420822724472",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Heterogeneous immune responses could arise from varying exposure histories due to age or geography, and partial sweeps may affect evolutionary predictability, while evolutionary adaptation often occurs in changing rather than static environments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C36, C63, C118, C119 are largely speculative or provide general context. C36 offers plausible biological mechanisms but lacks direct evidence. C63 suggests consequences without demonstration. C118-C119 provide conceptual framing but are not tested claims.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "In a heterogeneous population with immune diversity and waning immunity, escape variants initially grow exponentially but lose their growth advantage before reaching fixation, resulting in 'partial sweeps' where variants settle at intermediate frequencies rather than completing selective sweeps. This contrasts with homogeneous populations where variants undergo complete selective sweeps.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm this core finding. The editor states the authors 'make a compelling case for the importance of eco-evolutionary interactions' arising from coupling between immune memories and viral variants. Reviewer 1 acknowledges 'an antigenically escaping variant can perform a partial sweep, as opposed to a sweep in a homogeneous population.' Reviewer 2 states 'The idea that vanishing fitness mechanisms that produce partial sweeps may explain important features of flu evolution is very interesting.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "f8f22415-8a09-4320-80e4-adc9a3d4a745",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "After the initial growth phase, variant dynamics follow an anomalous random walk where fitness advantages expire and subsequent frequency changes are determined by future escape variants, leading to unpredictable trajectories that resemble neutral evolution despite being driven by adaptive mutations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 raises significant concerns about the unpredictability claim, stating it 'remains somewhat misleading.' They note that 'quasi-neutrality' (absence of net frequency increase on average) 'does not imply that individual trajectories are neutral (i.e., fully stochastic and unpredictable)' but rather 'just says that some have a positive and some have a negative selection coefficient.' This directly challenges the strong unpredictability conclusion while accepting the quasi-neutral appearance.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "5f76ba64-c17c-4a93-a785-0108fa44d1cb",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The partial sweep model reconciles the apparent contradiction in influenza evolution: HA evolution is clearly adaptive with substitutions clustered in epitope regions, yet most substitutions do not sweep to fixation and instead meander in a quasi-neutral fashion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly endorses this reconciliation, stating 'The idea that vanishing fitness mechanisms that produce partial sweeps may explain important features of flu evolution is very interesting.' Reviewer 1 acknowledges the model explains observations 'incompatible with the travelling wave model' and accepts the partial sweep dynamics, though they question the strength of the unpredictability conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "5c47618b-d45c-4313-9573-bd87d94d4dc3",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors develop an 'expiring fitness' model that qualitatively reproduces the phenomenology of the SIR model (initial exponential growth and saturation at intermediate frequencies) but is simpler to analyze and simulate, though it does not capture the complex oscillatory behavior of the full SIR model.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 states 'The vanishing fitness model is well analyzed and produces interesting structures in the strains coalescent' and notes 'The additions in the revised manuscript, substantiating more thoroughly the connection between the SIR and the vanishing fitness description, are important to better appreciate the scope of the work.' Reviewer 1 acknowledges the authors 'develop a simplified effective model of time dependent selection with expiring fitness advantage.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "93e4f047-ec70-4d74-9657-ee118d7017b8",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Current prediction methods based on the traveling wave framework project instantaneous growth advantages forward in time and lack explicit representation of epidemiological dynamics and host immunity, which could improve predictions or explain prediction difficulties.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 challenges this characterization, stating 'predictions derived from Gog and Grenfell's multi-strain SIR model, as used by several authors, do not make the assumption of fixed selection coefficients and incorporate trajectory-specific, time-dependent expiration effects into their model predictions. This distinction remains blurred throughout the text of the paper.' This indicates the critique of existing methods may be overstated.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "3a3b2d47-549e-44f1-a406-d4e303850c88",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "For A/H3N2 influenza, there are few signatures suggesting fit variants grow in frequency consistently, making prediction difficult despite clear signals of adaptive evolution.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges 'A mode of meandering frequency trajectories and delayed fixation has indeed been observed in one of the long-established subtypes of human influenza, albeit so far only over a limited period from 2013 to 2020.' This confirms the empirical observation while noting its temporal limitations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "9a437d1e-e753-43f0-a0fd-b8adaa552373",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "SARS-CoV-2 evolution has been consistently predictable with exponentially growing variants competing for susceptible hosts, consistent with rapid complete sweeps in a homogeneous immune landscape, though clonal interference reduces long-term predictability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 accepts the hypothesis that 'the mode of evolution is connected to the age of a lineage since ingression into the human population,' which encompasses the SARS-CoV-2 observations. No reviewer challenges the characterization of SARS-CoV-2 dynamics as more predictable than influenza.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "02e37a6f-fb94-4bc9-87a6-217c39ef749a",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The epidemiological model is reminiscent of consumer-resource ecological models where fitness depends on population composition rather than being a fixed parameter, highlighting links between ecological and epidemiological dynamics.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly endorses this connection, stating the authors 'placed their analysis into the broader context of consumer resource dynamics' and that 'The qualitative connection between the coarse-grained features of these vanishing fitness dynamics and structured SIR processes offers additional intuition relevant to host-pathogens interactions.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "ca1040d6-1a57-4547-ac32-c6dad3b27893",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Wright-Fisher simulations show good agreement between empirical time to MRCA and estimations from the random walk model, at least when the probability of overlap between successive partial sweeps is small.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "No reviewer challenges this validation result. Reviewer 2 notes 'The vanishing fitness model is well analyzed and produces interesting structures in the strains coalescent,' implicitly accepting the coalescent time predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "32d73b29-4466-4b54-ae90-aaa6015cae9d",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The model shows that depending on immune heterogeneity, cross-immunity asymmetry, and waning rates, immune escape can lead either to selective sweeps (when growth is fast, backward immunity high, and waning slow) or to partial sweeps where immunological heterogeneity allows population immunity to adjust before variant fixation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers accept this parameter-dependent dichotomy. The editor notes the authors demonstrate 'the importance of eco-evolutionary interactions' and Reviewer 1 explicitly states 'In an immunologically diverse population, an antigenically escaping variant can perform a partial sweep, as opposed to a sweep in a homogeneous population.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "73c6c033-6c95-4b4c-a9b5-1be221051c21",
+      "content_id": "3835e798-852c-4230-90dd-3f40dab68dbc",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The partial sweep dynamics are expected to exist generally in systems where environmental responses to evolutionary changes occur on timescales comparable to adaptive variant takeover, with the most complex and least predictable dynamics when evolutionary and ecological timescales are similar.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 endorses this generalization, stating 'This general framework has the potential to be more universal than human RNA viruses, in situations where invading mutants would saturate at intermediate frequencies' and noting 'other ecological processes could drive similar evolutionary patterns.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "c7bc1872-4921-4a5f-a46f-4d7d975e8448",
+      "result_id": "48f7a075-3201-49e2-ba01-df1e6bdbda91"
+    },
+    {
+      "claim_id": "37e96cbe-2a41-4376-b742-38ac45b13ed4",
+      "result_id": "48f7a075-3201-49e2-ba01-df1e6bdbda91"
+    },
+    {
+      "claim_id": "f31ddea3-3525-4bd9-926f-75b926177e9c",
+      "result_id": "48f7a075-3201-49e2-ba01-df1e6bdbda91"
+    },
+    {
+      "claim_id": "df7992a0-64e3-49d3-bcb8-0ce6245dd221",
+      "result_id": "48f7a075-3201-49e2-ba01-df1e6bdbda91"
+    },
+    {
+      "claim_id": "69ba969d-ab1f-4db4-a24a-1f8c3c34b88a",
+      "result_id": "c01bbd1d-0d6b-41d2-93aa-7f87b292f98b"
+    },
+    {
+      "claim_id": "c51c0c78-323f-4aba-a8b6-40897a1e619d",
+      "result_id": "c01bbd1d-0d6b-41d2-93aa-7f87b292f98b"
+    },
+    {
+      "claim_id": "4fa9483b-8026-4117-a161-1b173297736b",
+      "result_id": "c01bbd1d-0d6b-41d2-93aa-7f87b292f98b"
+    },
+    {
+      "claim_id": "f0d66496-3d01-41e6-b830-8ae908fc0476",
+      "result_id": "c01bbd1d-0d6b-41d2-93aa-7f87b292f98b"
+    },
+    {
+      "claim_id": "8784aa6c-e8bf-4186-8673-c7c27188cd5f",
+      "result_id": "c01bbd1d-0d6b-41d2-93aa-7f87b292f98b"
+    },
+    {
+      "claim_id": "9e712fbf-6bfb-47c5-82e9-9f892d41e233",
+      "result_id": "c01bbd1d-0d6b-41d2-93aa-7f87b292f98b"
+    },
+    {
+      "claim_id": "c17e58d7-ab68-425a-bc4a-7a31aee0ef87",
+      "result_id": "10905f22-8481-46e8-860a-40a71c4f0b09"
+    },
+    {
+      "claim_id": "9236d5ce-1ff4-47fb-864b-d7f68f3a988c",
+      "result_id": "10905f22-8481-46e8-860a-40a71c4f0b09"
+    },
+    {
+      "claim_id": "218392b4-1f7a-4f6b-b327-511df6631eb4",
+      "result_id": "10905f22-8481-46e8-860a-40a71c4f0b09"
+    },
+    {
+      "claim_id": "2d787a27-29ed-4358-9d03-e29b2f596f0e",
+      "result_id": "10905f22-8481-46e8-860a-40a71c4f0b09"
+    },
+    {
+      "claim_id": "12a80a0c-89c6-429f-9ec7-83a6a2fd1e71",
+      "result_id": "10905f22-8481-46e8-860a-40a71c4f0b09"
+    },
+    {
+      "claim_id": "cf36facd-b680-4388-81da-1bad3a1fcba2",
+      "result_id": "10905f22-8481-46e8-860a-40a71c4f0b09"
+    },
+    {
+      "claim_id": "79a39622-fcc7-4b94-a610-45d3c77e5e0c",
+      "result_id": "3e1ff395-8e21-4b93-ae71-6820687fc1e6"
+    },
+    {
+      "claim_id": "ab7b240e-1bdf-4ba3-be43-20314ecf0526",
+      "result_id": "3e1ff395-8e21-4b93-ae71-6820687fc1e6"
+    },
+    {
+      "claim_id": "e3dea8b4-5896-418e-95d2-86bc9141f901",
+      "result_id": "3e1ff395-8e21-4b93-ae71-6820687fc1e6"
+    },
+    {
+      "claim_id": "9580b5c3-5858-4a42-9926-27af1e48fb2c",
+      "result_id": "3e1ff395-8e21-4b93-ae71-6820687fc1e6"
+    },
+    {
+      "claim_id": "3cae2c12-90a7-4e25-960c-fd129b21ecb0",
+      "result_id": "3e1ff395-8e21-4b93-ae71-6820687fc1e6"
+    },
+    {
+      "claim_id": "7a48340f-de52-4dbc-a6bf-7013f9e3c4dd",
+      "result_id": "3e1ff395-8e21-4b93-ae71-6820687fc1e6"
+    },
+    {
+      "claim_id": "ed656ac2-b061-40ff-8ae1-1c586370b58f",
+      "result_id": "3e1ff395-8e21-4b93-ae71-6820687fc1e6"
+    },
+    {
+      "claim_id": "6065fac0-3e1e-4d19-aedf-4f1a9cffa3ea",
+      "result_id": "f80e4a7d-7a9c-4bc9-a24f-d141ec777976"
+    },
+    {
+      "claim_id": "ce71b0ba-0dc0-41a9-9c73-399f30437c14",
+      "result_id": "f80e4a7d-7a9c-4bc9-a24f-d141ec777976"
+    },
+    {
+      "claim_id": "5d7ed489-739c-42b9-bd5c-6ffb6eddaf01",
+      "result_id": "f80e4a7d-7a9c-4bc9-a24f-d141ec777976"
+    },
+    {
+      "claim_id": "d8daac68-f912-4c1f-a562-db2f5ad73391",
+      "result_id": "f80e4a7d-7a9c-4bc9-a24f-d141ec777976"
+    },
+    {
+      "claim_id": "f57c6d06-c490-405f-9831-7b3ea49a9b10",
+      "result_id": "f80e4a7d-7a9c-4bc9-a24f-d141ec777976"
+    },
+    {
+      "claim_id": "96b16a27-582f-4bd1-9916-7f057ad751f0",
+      "result_id": "f0b3ef5b-58d6-4a9e-9fc5-5ef4a5569236"
+    },
+    {
+      "claim_id": "b90900af-72de-45a0-a8ca-0dbec57d1c0b",
+      "result_id": "f0b3ef5b-58d6-4a9e-9fc5-5ef4a5569236"
+    },
+    {
+      "claim_id": "6a4ba656-d21d-4e4b-a9be-29dd9744f272",
+      "result_id": "f0b3ef5b-58d6-4a9e-9fc5-5ef4a5569236"
+    },
+    {
+      "claim_id": "16dc0b25-876f-4a92-b740-d04c3764abb4",
+      "result_id": "f0b3ef5b-58d6-4a9e-9fc5-5ef4a5569236"
+    },
+    {
+      "claim_id": "b866ffbe-7c61-4795-94ce-04d40cabb58b",
+      "result_id": "f0b3ef5b-58d6-4a9e-9fc5-5ef4a5569236"
+    },
+    {
+      "claim_id": "e7f5f221-2320-40d5-8323-3c2365642697",
+      "result_id": "ff030486-f28f-4575-b78b-8845e38c057a"
+    },
+    {
+      "claim_id": "a5ba062e-913a-48c1-983c-bf176570f626",
+      "result_id": "ff030486-f28f-4575-b78b-8845e38c057a"
+    },
+    {
+      "claim_id": "aa2cfd12-9679-4062-9779-b4efdccef077",
+      "result_id": "ff030486-f28f-4575-b78b-8845e38c057a"
+    },
+    {
+      "claim_id": "0fe6ae0a-1936-4f10-8f96-7fc7e03042b1",
+      "result_id": "79613547-b4fa-4db7-bd34-9bcd9c4b0d08"
+    },
+    {
+      "claim_id": "57a415f3-8bd9-4247-82ea-e78772127edd",
+      "result_id": "79613547-b4fa-4db7-bd34-9bcd9c4b0d08"
+    },
+    {
+      "claim_id": "444bee78-3819-467b-be8d-8de1a2ea1545",
+      "result_id": "79613547-b4fa-4db7-bd34-9bcd9c4b0d08"
+    },
+    {
+      "claim_id": "85af1769-ae40-4f7d-9d7b-eaf227cae161",
+      "result_id": "79613547-b4fa-4db7-bd34-9bcd9c4b0d08"
+    },
+    {
+      "claim_id": "8c7134a0-1724-45fc-94fb-4acccc447805",
+      "result_id": "79613547-b4fa-4db7-bd34-9bcd9c4b0d08"
+    },
+    {
+      "claim_id": "4f8dcf48-e8b6-49b1-8704-08e9ad3bf513",
+      "result_id": "d3f0cbd3-ec4b-48b5-939b-0c83c63ad98c"
+    },
+    {
+      "claim_id": "012816b3-9076-40db-9473-934b932e9333",
+      "result_id": "d3f0cbd3-ec4b-48b5-939b-0c83c63ad98c"
+    },
+    {
+      "claim_id": "b5919778-bad6-48bc-b258-805cc1d28836",
+      "result_id": "d3f0cbd3-ec4b-48b5-939b-0c83c63ad98c"
+    },
+    {
+      "claim_id": "dc480f9c-75bd-419a-994d-eae5b4c07b38",
+      "result_id": "d3f0cbd3-ec4b-48b5-939b-0c83c63ad98c"
+    },
+    {
+      "claim_id": "df50f1e8-ff5c-4a68-9fc7-ba83a6ab0549",
+      "result_id": "d3f0cbd3-ec4b-48b5-939b-0c83c63ad98c"
+    },
+    {
+      "claim_id": "08b2929c-93e0-4980-8f06-6d2615145dd5",
+      "result_id": "d3f0cbd3-ec4b-48b5-939b-0c83c63ad98c"
+    },
+    {
+      "claim_id": "b5cb3c39-440b-4e13-9d18-447db4dbf5c1",
+      "result_id": "f4804b5f-97d6-47a4-a48e-17f2742b0833"
+    },
+    {
+      "claim_id": "49c74245-77e9-4bc7-907f-1b31367d55a4",
+      "result_id": "76dd9d2f-d650-49ac-a177-8e662726fa5c"
+    },
+    {
+      "claim_id": "97d8d0f1-781b-42e8-be47-ce90f3693c31",
+      "result_id": "76dd9d2f-d650-49ac-a177-8e662726fa5c"
+    },
+    {
+      "claim_id": "03ee14be-b7da-47ee-9a41-05fd12e02147",
+      "result_id": "76dd9d2f-d650-49ac-a177-8e662726fa5c"
+    },
+    {
+      "claim_id": "60cc4c3c-53df-4950-8246-bac1346e7480",
+      "result_id": "76dd9d2f-d650-49ac-a177-8e662726fa5c"
+    },
+    {
+      "claim_id": "e2e9cfad-e284-4861-a6bb-d8a5a48af9c9",
+      "result_id": "76dd9d2f-d650-49ac-a177-8e662726fa5c"
+    },
+    {
+      "claim_id": "2c7e0522-6dd3-4f4c-acaf-47323f71f075",
+      "result_id": "76dd9d2f-d650-49ac-a177-8e662726fa5c"
+    },
+    {
+      "claim_id": "f70317be-dcbe-4917-bc5e-57f5004e6da3",
+      "result_id": "57a53445-e23c-4167-acae-ee07d8e369f8"
+    },
+    {
+      "claim_id": "4a5f2e16-8d5b-4ee5-9298-c00a859b7261",
+      "result_id": "57a53445-e23c-4167-acae-ee07d8e369f8"
+    },
+    {
+      "claim_id": "05c886fc-beed-42a6-904a-7588902fb84d",
+      "result_id": "57a53445-e23c-4167-acae-ee07d8e369f8"
+    },
+    {
+      "claim_id": "9cd5261d-2b32-4101-ad09-07fd7e35efdc",
+      "result_id": "57a53445-e23c-4167-acae-ee07d8e369f8"
+    },
+    {
+      "claim_id": "7b3fcea8-5a80-4bc8-bd3d-eb316aa90809",
+      "result_id": "57a53445-e23c-4167-acae-ee07d8e369f8"
+    },
+    {
+      "claim_id": "2bf8ee53-da2f-4c2d-b1c8-888e72a88ce7",
+      "result_id": "57a53445-e23c-4167-acae-ee07d8e369f8"
+    },
+    {
+      "claim_id": "d611e9e2-4498-491a-b285-17bc4dd932ac",
+      "result_id": "1d981374-5070-4304-a28f-ff95243d1373"
+    },
+    {
+      "claim_id": "b7ff1fd9-2272-4e00-9f0d-3d1e9ce95a7d",
+      "result_id": "1d981374-5070-4304-a28f-ff95243d1373"
+    },
+    {
+      "claim_id": "ad7bc8b4-e56e-4462-99b1-796fc954e4a5",
+      "result_id": "1d981374-5070-4304-a28f-ff95243d1373"
+    },
+    {
+      "claim_id": "befbcb2b-4570-487a-879f-cfa2e5a74ec5",
+      "result_id": "1d981374-5070-4304-a28f-ff95243d1373"
+    },
+    {
+      "claim_id": "ff493e7f-f867-4729-9fe0-e2c53070562a",
+      "result_id": "8760aa1d-1ccb-4b17-9a53-a43bcfa7ab52"
+    },
+    {
+      "claim_id": "f3889d01-1897-4b00-ac4f-4ef5a1d251ef",
+      "result_id": "8760aa1d-1ccb-4b17-9a53-a43bcfa7ab52"
+    },
+    {
+      "claim_id": "156fcfe8-fc12-4387-8d51-4965f7b0e84c",
+      "result_id": "8760aa1d-1ccb-4b17-9a53-a43bcfa7ab52"
+    },
+    {
+      "claim_id": "77baa47f-21ae-47b2-bc0f-8fb992d5ce9c",
+      "result_id": "8760aa1d-1ccb-4b17-9a53-a43bcfa7ab52"
+    },
+    {
+      "claim_id": "dbb388bf-814b-4ec6-9a08-1fea0895f3b8",
+      "result_id": "fe6140a4-29f2-4712-bebe-94d3d1028791"
+    },
+    {
+      "claim_id": "5052de0d-e775-42e1-9e68-1ea58e3aa764",
+      "result_id": "fe6140a4-29f2-4712-bebe-94d3d1028791"
+    },
+    {
+      "claim_id": "40cd5b42-e0fb-4b91-a172-2f1b2f7355ab",
+      "result_id": "fe6140a4-29f2-4712-bebe-94d3d1028791"
+    },
+    {
+      "claim_id": "f27b9018-8ba2-4212-9fce-ab942f959a82",
+      "result_id": "fe6140a4-29f2-4712-bebe-94d3d1028791"
+    },
+    {
+      "claim_id": "f606e750-74d3-48a8-9aeb-61a693d7781e",
+      "result_id": "fe6140a4-29f2-4712-bebe-94d3d1028791"
+    },
+    {
+      "claim_id": "a075fba0-d64b-4ecd-bb31-e171efede145",
+      "result_id": "5b9e9c0e-5898-4293-a9fb-d746282011da"
+    },
+    {
+      "claim_id": "9a31e51e-dda5-4edd-b44f-14d8175d9cc7",
+      "result_id": "5b9e9c0e-5898-4293-a9fb-d746282011da"
+    },
+    {
+      "claim_id": "22bf6f11-b033-4ff3-8bb8-c2a18ab32b69",
+      "result_id": "5b9e9c0e-5898-4293-a9fb-d746282011da"
+    },
+    {
+      "claim_id": "04a3c48a-ba03-41c9-802c-63f5c151c2fe",
+      "result_id": "5b9e9c0e-5898-4293-a9fb-d746282011da"
+    },
+    {
+      "claim_id": "7192b7a3-c8ed-47c8-a04e-c588e8615872",
+      "result_id": "5b9e9c0e-5898-4293-a9fb-d746282011da"
+    },
+    {
+      "claim_id": "df50f1e8-ff5c-4a68-9fc7-ba83a6ab0549",
+      "result_id": "5b9e9c0e-5898-4293-a9fb-d746282011da"
+    },
+    {
+      "claim_id": "a9975519-d2c8-4248-93a1-3fc95ff12024",
+      "result_id": "e79b6b98-5efa-4e8f-b0bd-b850a19dd3a2"
+    },
+    {
+      "claim_id": "245a47d6-5819-4ed5-a0b6-61818853b9c3",
+      "result_id": "e79b6b98-5efa-4e8f-b0bd-b850a19dd3a2"
+    },
+    {
+      "claim_id": "12171203-9f69-4bdd-9652-2438e1b42e20",
+      "result_id": "a9ee5323-ad13-4583-b660-c595dd5da675"
+    },
+    {
+      "claim_id": "49a9704c-45d1-4666-b4eb-c8cd5c8a9ffb",
+      "result_id": "a9ee5323-ad13-4583-b660-c595dd5da675"
+    },
+    {
+      "claim_id": "fd7df1a3-30da-42be-96cf-7cbe950178ee",
+      "result_id": "a9ee5323-ad13-4583-b660-c595dd5da675"
+    },
+    {
+      "claim_id": "e95cd851-6d02-4f80-b4f9-ad776ccb28b6",
+      "result_id": "a9ee5323-ad13-4583-b660-c595dd5da675"
+    },
+    {
+      "claim_id": "49c74245-77e9-4bc7-907f-1b31367d55a4",
+      "result_id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5"
+    },
+    {
+      "claim_id": "77baa47f-21ae-47b2-bc0f-8fb992d5ce9c",
+      "result_id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5"
+    },
+    {
+      "claim_id": "e3dea8b4-5896-418e-95d2-86bc9141f901",
+      "result_id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5"
+    },
+    {
+      "claim_id": "9580b5c3-5858-4a42-9926-27af1e48fb2c",
+      "result_id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5"
+    },
+    {
+      "claim_id": "3cae2c12-90a7-4e25-960c-fd129b21ecb0",
+      "result_id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5"
+    },
+    {
+      "claim_id": "7a48340f-de52-4dbc-a6bf-7013f9e3c4dd",
+      "result_id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5"
+    },
+    {
+      "claim_id": "ed656ac2-b061-40ff-8ae1-1c586370b58f",
+      "result_id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5"
+    },
+    {
+      "claim_id": "97d8d0f1-781b-42e8-be47-ce90f3693c31",
+      "result_id": "f8f22415-8a09-4320-80e4-adc9a3d4a745"
+    },
+    {
+      "claim_id": "40cd5b42-e0fb-4b91-a172-2f1b2f7355ab",
+      "result_id": "f8f22415-8a09-4320-80e4-adc9a3d4a745"
+    },
+    {
+      "claim_id": "f27b9018-8ba2-4212-9fce-ab942f959a82",
+      "result_id": "f8f22415-8a09-4320-80e4-adc9a3d4a745"
+    },
+    {
+      "claim_id": "aa2cfd12-9679-4062-9779-b4efdccef077",
+      "result_id": "f8f22415-8a09-4320-80e4-adc9a3d4a745"
+    },
+    {
+      "claim_id": "03ee14be-b7da-47ee-9a41-05fd12e02147",
+      "result_id": "5f76ba64-c17c-4a93-a785-0108fa44d1cb"
+    },
+    {
+      "claim_id": "e2e9cfad-e284-4861-a6bb-d8a5a48af9c9",
+      "result_id": "5f76ba64-c17c-4a93-a785-0108fa44d1cb"
+    },
+    {
+      "claim_id": "2c7e0522-6dd3-4f4c-acaf-47323f71f075",
+      "result_id": "5f76ba64-c17c-4a93-a785-0108fa44d1cb"
+    },
+    {
+      "claim_id": "57a415f3-8bd9-4247-82ea-e78772127edd",
+      "result_id": "5c47618b-d45c-4313-9573-bd87d94d4dc3"
+    },
+    {
+      "claim_id": "444bee78-3819-467b-be8d-8de1a2ea1545",
+      "result_id": "5c47618b-d45c-4313-9573-bd87d94d4dc3"
+    },
+    {
+      "claim_id": "85af1769-ae40-4f7d-9d7b-eaf227cae161",
+      "result_id": "5c47618b-d45c-4313-9573-bd87d94d4dc3"
+    },
+    {
+      "claim_id": "8c7134a0-1724-45fc-94fb-4acccc447805",
+      "result_id": "5c47618b-d45c-4313-9573-bd87d94d4dc3"
+    },
+    {
+      "claim_id": "f0d66496-3d01-41e6-b830-8ae908fc0476",
+      "result_id": "93e4f047-ec70-4d74-9657-ee118d7017b8"
+    },
+    {
+      "claim_id": "8784aa6c-e8bf-4186-8673-c7c27188cd5f",
+      "result_id": "93e4f047-ec70-4d74-9657-ee118d7017b8"
+    },
+    {
+      "claim_id": "9e712fbf-6bfb-47c5-82e9-9f892d41e233",
+      "result_id": "93e4f047-ec70-4d74-9657-ee118d7017b8"
+    },
+    {
+      "claim_id": "4f8dcf48-e8b6-49b1-8704-08e9ad3bf513",
+      "result_id": "3a3b2d47-549e-44f1-a406-d4e303850c88"
+    },
+    {
+      "claim_id": "012816b3-9076-40db-9473-934b932e9333",
+      "result_id": "3a3b2d47-549e-44f1-a406-d4e303850c88"
+    },
+    {
+      "claim_id": "df50f1e8-ff5c-4a68-9fc7-ba83a6ab0549",
+      "result_id": "3a3b2d47-549e-44f1-a406-d4e303850c88"
+    },
+    {
+      "claim_id": "b5919778-bad6-48bc-b258-805cc1d28836",
+      "result_id": "9a437d1e-e753-43f0-a0fd-b8adaa552373"
+    },
+    {
+      "claim_id": "dc480f9c-75bd-419a-994d-eae5b4c07b38",
+      "result_id": "9a437d1e-e753-43f0-a0fd-b8adaa552373"
+    },
+    {
+      "claim_id": "08b2929c-93e0-4980-8f06-6d2615145dd5",
+      "result_id": "9a437d1e-e753-43f0-a0fd-b8adaa552373"
+    },
+    {
+      "claim_id": "7b3fcea8-5a80-4bc8-bd3d-eb316aa90809",
+      "result_id": "9a437d1e-e753-43f0-a0fd-b8adaa552373"
+    },
+    {
+      "claim_id": "dbb388bf-814b-4ec6-9a08-1fea0895f3b8",
+      "result_id": "02e37a6f-fb94-4bc9-87a6-217c39ef749a"
+    },
+    {
+      "claim_id": "5052de0d-e775-42e1-9e68-1ea58e3aa764",
+      "result_id": "02e37a6f-fb94-4bc9-87a6-217c39ef749a"
+    },
+    {
+      "claim_id": "6a4ba656-d21d-4e4b-a9be-29dd9744f272",
+      "result_id": "02e37a6f-fb94-4bc9-87a6-217c39ef749a"
+    },
+    {
+      "claim_id": "16dc0b25-876f-4a92-b740-d04c3764abb4",
+      "result_id": "02e37a6f-fb94-4bc9-87a6-217c39ef749a"
+    },
+    {
+      "claim_id": "b5cb3c39-440b-4e13-9d18-447db4dbf5c1",
+      "result_id": "ca1040d6-1a57-4547-ac32-c6dad3b27893"
+    },
+    {
+      "claim_id": "60cc4c3c-53df-4950-8246-bac1346e7480",
+      "result_id": "32d73b29-4466-4b54-ae90-aaa6015cae9d"
+    },
+    {
+      "claim_id": "f70317be-dcbe-4917-bc5e-57f5004e6da3",
+      "result_id": "32d73b29-4466-4b54-ae90-aaa6015cae9d"
+    },
+    {
+      "claim_id": "4a5f2e16-8d5b-4ee5-9298-c00a859b7261",
+      "result_id": "32d73b29-4466-4b54-ae90-aaa6015cae9d"
+    },
+    {
+      "claim_id": "05c886fc-beed-42a6-904a-7588902fb84d",
+      "result_id": "32d73b29-4466-4b54-ae90-aaa6015cae9d"
+    },
+    {
+      "claim_id": "d611e9e2-4498-491a-b285-17bc4dd932ac",
+      "result_id": "73c6c033-6c95-4b4c-a9b5-1be221051c21"
+    },
+    {
+      "claim_id": "befbcb2b-4570-487a-879f-cfa2e5a74ec5",
+      "result_id": "73c6c033-6c95-4b4c-a9b5-1be221051c21"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "a1dc7b93-9a04-4782-98e0-123b1e80551a",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "f4804b5f-97d6-47a4-a48e-17f2742b0833",
+      "peer_result_id": "ca1040d6-1a57-4547-ac32-c6dad3b27893",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on C115. Both evaluations support the validation of the random walk model using Wright-Fisher simulations. OpenEval notes empirical agreement with caveats about regime validity; peer review implicitly accepts this through endorsement of coalescent time predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "e8643390-e80d-429d-ae72-4a58dcfcd804",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "79613547-b4fa-4db7-bd34-9bcd9c4b0d08",
+      "peer_result_id": "5c47618b-d45c-4313-9573-bd87d94d4dc3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on C82, C87, C88, C90 regarding the expiring fitness model. Both evaluations support the model's validity and analysis. OpenEval emphasizes clear definition and acknowledged limitations; peer review explicitly praises the analysis and notes important additions substantiating the SIR connection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "11eeabad-a5fb-48e1-af99-0f966ad69509",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "3e1ff395-8e21-4b93-ae71-6820687fc1e6",
+      "peer_result_id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on C48, C57, C58, C61, C62 regarding partial sweeps as core finding. Both evaluations support this central result. OpenEval emphasizes Figure 1 demonstration of distinction between homogeneous and heterogeneous dynamics; peer review provides explicit affirmation from all three reviewers and editor.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "59e8b7d6-04b3-421a-86a5-21241e5d71f4",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "76dd9d2f-d650-49ac-a177-8e662726fa5c",
+      "peer_result_id": "5f76ba64-c17c-4a93-a785-0108fa44d1cb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C5, C130, C131 regarding reconciliation of adaptive evolution with quasi-neutral dynamics. Both evaluations support this synthesis. OpenEval finds it well-supported by model and empirical observations; peer review explicitly endorses the reconciliation as interesting and explanatory.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "226417b5-118f-42ca-a370-9701d53c3d95",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "1d981374-5070-4304-a28f-ff95243d1373",
+      "peer_result_id": "73c6c033-6c95-4b4c-a9b5-1be221051c21",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C136, C139 regarding generalization to broader eco-evolutionary contexts. Both evaluations support this extension. OpenEval notes logical reasoning with caveat about needing empirical validation in other systems; peer review endorses potential universality beyond human RNA viruses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "041cc0d8-9035-4e42-8aca-f0c8c77f3350",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "c01bbd1d-0d6b-41d2-93aa-7f87b292f98b",
+      "peer_result_id": "93e4f047-ec70-4d74-9657-ee118d7017b8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on C11, C12, C13 regarding critique of traveling wave framework. OpenEval supports the critical assessment as well-justified; peer review rates as uncertain, with Reviewer 1 challenging that the characterization of existing methods may be overstated and that the distinction 'remains blurred.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "4346fca1-1908-4f55-b388-71da257e7223",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "d3f0cbd3-ec4b-48b5-939b-0c83c63ad98c",
+      "peer_result_id": "3a3b2d47-549e-44f1-a406-d4e303850c88",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C94, C97, C123 regarding influenza empirical observations. Both evaluations support these findings. OpenEval notes clear demonstration with caveat about retrospective nature; peer review confirms observation while noting temporal limitations (2013-2020 period).",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "179d9fd3-33f9-4647-85f7-e85bd3e6d983",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "57a53445-e23c-4167-acae-ee07d8e369f8",
+      "peer_result_id": "32d73b29-4466-4b54-ae90-aaa6015cae9d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C127, C128, C129 regarding parameter-dependent conditions for sweep completeness. Both evaluations support this dichotomy. OpenEval notes derivation from model; peer review explicitly accepts the distinction between homogeneous and immunologically diverse populations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "e8401d2c-d9d2-49f8-8df4-fa69ba2041ab",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "fe6140a4-29f2-4712-bebe-94d3d1028791",
+      "peer_result_id": "02e37a6f-fb94-4bc9-87a6-217c39ef749a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C19, C20 regarding connections to ecological theory. Both evaluations support this conceptual link. OpenEval notes appropriate citations and clear framing; peer review explicitly endorses placement into broader context of consumer resource dynamics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "65ea9b33-d0ac-46e4-8157-fac7f38f7c88",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "f0b3ef5b-58d6-4a9e-9fc5-5ef4a5569236",
+      "peer_result_id": "02e37a6f-fb94-4bc9-87a6-217c39ef749a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C66, C67 regarding ecological model comparisons. Both evaluations support these connections. OpenEval emphasizes appropriate citations; peer review endorses the qualitative connection offering additional intuition for host-pathogen interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "0abba2f7-e1df-40f3-ae63-c337ffcd6e21",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "d3f0cbd3-ec4b-48b5-939b-0c83c63ad98c",
+      "peer_result_id": "9a437d1e-e753-43f0-a0fd-b8adaa552373",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on C99, C100, C124 regarding SARS-CoV-2 dynamics. Both evaluations support these observations. OpenEval notes clear demonstration with caveat about retrospective analysis; peer review accepts characterization of SARS-CoV-2 as more predictable than influenza without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "d6d6facd-178c-4188-8744-091833f16977",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ff030486-f28f-4575-b78b-8845e38c057a",
+      "peer_result_id": "f8f22415-8a09-4320-80e4-adc9a3d4a745",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on C102 and related unpredictability claims (C4, C21, C22 in peer R2). OpenEval supports the random walk abstraction and zero-mean property; peer review rates as uncertain, with Reviewer 1 stating the unpredictability claim 'remains somewhat misleading' and challenging that quasi-neutrality does not imply full stochasticity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "0a1ea1cc-a9d1-42f0-b7a8-8b4875047901",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "8760aa1d-1ccb-4b17-9a53-a43bcfa7ab52",
+      "peer_result_id": "dda3bf43-3e7b-492a-97cd-01afc7a5f5e5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on C18 regarding model behaviors. OpenEval supports summary of key behaviors from simulations; peer review focuses on C3 and partial sweep findings (C48, C57, C58, C61, C62) with strong support, implicitly accepting C18 as part of core finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "749bc7c3-e9f8-4fe9-97ad-eb7ea7eaba8a",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "48f7a075-3201-49e2-ba01-df1e6bdbda91",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports C1, C6, C120, C121 as well-documented background on RNA virus evolution. No corresponding peer review evaluation found for these specific background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "87efea63-07aa-4541-bf2e-3b3ac1f57f55",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "10905f22-8481-46e8-860a-40a71c4f0b09",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports C14, C15, C28, C31, C32, C33 describing model structure and assumptions. No corresponding peer review evaluation found specifically addressing these model construction claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "08c66b6c-1ac9-40a0-97a9-5ae685957ccf",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "f80e4a7d-7a9c-4bc9-a24f-d141ec777976",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports C50, C51, C52, C54, C56 explaining why heterogeneous immunity is necessary for realistic dynamics. No corresponding peer review evaluation found for these mechanistic explanations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "7c87ea6d-f27b-4e26-9da7-8f090ef8a1c6",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "5b9e9c0e-5898-4293-a9fb-d746282011da",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports C24, C25, C92, C93, C122, C123 regarding prediction problem and empirical motivation. While C123 appears in peer R6, the full set of prediction difficulty claims is not directly evaluated by peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "57ad5548-f460-435b-a738-25461d06e518",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "e79b6b98-5efa-4e8f-b0bd-b850a19dd3a2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports C140, C141 describing data sources and methods. No corresponding peer review evaluation found for these methodological claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    },
+    {
+      "id": "b92986e1-0d62-4910-8996-084131a1c17d",
+      "submission_id": "b1bccb05-a566-45e9-a181-b9c54d276de1",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "a9ee5323-ad13-4583-b660-c595dd5da675",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates C36, C63, C118, C119 as uncertain, noting they are largely speculative or provide general context without direct evidence. No corresponding peer review evaluation found for these claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:53:03.571791Z"
+    }
+  ]
+}

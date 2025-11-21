@@ -1,0 +1,373 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study collected 34,398 brood cells from 13,267 tubes over 5 years, identifying 6 host families (56 species: 12 bees, 44 wasps) and 17 parasitoid families (50 species: 38 Hymenoptera, 12 Diptera), with mean plot-level abundances and richness of 400 and 45 for hosts, and 14 and 9 for parasitoids, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 provide comprehensive sampling data with specific counts and taxonomic breakdowns. The data are internally consistent and supported by supplementary materials (Supplementary file 1a). Sample completeness was evaluated (Figure 1\u2014figure supplement 1), confirming adequate sampling for analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Host and parasitoid species and phylogenetic compositions were significantly related to multiple tree community metrics (species composition, phylogenetic composition, MPD, functional diversity), canopy cover, and environmental factors (elevation, eastness), with particularly strong effects of parasitoid composition on host phylogenetic composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C13 report NMDS analysis results with supporting statistical evidence in Table 1 and Figure 1. The analyses appropriately use Morisita-Horn distances and permutation tests (n=999). Results are validated with Mantel tests and PERMANOVA (Supplementary file 1f-j), strengthening confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Phylogenetic associations between hosts and parasitoids exhibited nonrandom structure (parafit test: p=0.032), though this pattern was detected by NMDS but not Mantel test, suggesting interactions cannot be solely explained by community similarity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C42-C44 report parafit test results with appropriate statistical significance (p=0.032, 9999 permutations). The discrepancy between NMDS and Mantel test results is acknowledged and interpreted appropriately. Figure 2 provides visual support for the phylogenetic structure.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C47",
+      "C48",
+      "C54"
+    ],
+    "result": "Tree species richness significantly increased host vulnerability and linkage density but did not significantly affect parasitoid generality, based on linear regression models controlling for environmental covariates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C47-C48, C54 report linear model results with appropriate statistical methodology (Table 2, Figure 3). Models were simplified using AICc, and multicollinearity was checked (Figure 3\u2014figure supplement 1). The site-specific effects are noted, with consistent directional patterns across sites.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C58",
+      "C59"
+    ],
+    "result": "Parasitoid robustness was negatively related to tree species richness, potentially explained by dilution effects in higher diversity plots where individual tree species are less abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C58 report significant negative relationships from linear models (Table 2, Figure 3c). However, C59 proposes dilution effects as a speculative explanation without direct empirical testing. The statistical result is solid, but the mechanistic interpretation remains hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C65"
+    ],
+    "result": "Interaction evenness was significantly negatively associated with canopy cover and eastness, supporting the role of canopy-modulated microclimate in structuring trophic interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22, C65 report significant negative relationships from linear models (Table 2, Figure 4c). The interpretation is supported by citations to previous work on microclimate effects (Sobek et al., 2009; Fornoff et al., 2021). The statistical evidence is clear and appropriately analyzed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C53"
+    ],
+    "result": "Parasitoid generality showed only marginal association with canopy cover and no significant relationship with tree species richness or tree MPD, suggesting complex and difficult-to-predict effects when considering all host types together.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C24, C53 report non-significant results from linear models, which are appropriately documented. The authors acknowledge the complexity and provide reasonable interpretation for the lack of clear patterns. Null results are properly reported rather than hidden.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C60",
+      "C63"
+    ],
+    "result": "In alternative models using tree MPD instead of species richness, host vulnerability and linkage density were positively related to tree MPD, while parasitoid robustness was negatively related, showing consistent patterns with species richness effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C27, C60, C63 report alternative model results addressing collinearity between tree richness and MPD (r=0.74, p<0.01). The approach is methodologically sound, and results are supported by Figure 4a-b and Supplementary file 1k. The consistency between richness and MPD effects strengthens the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Null model analysis (Patefield models, 10,000 simulations) showed that observed network metrics significantly differed from random distributions for most values (72-77 out of 85 for generality, vulnerability, and linkage density; all values for robustness and interaction evenness), demonstrating non-random species interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 report null model results with appropriate methodology (Patefield models with 10,000 simulations). The high proportion of significant values (>84% for most metrics, 100% for robustness and evenness) provides strong evidence against random assembly. The statistical approach is standard for network analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Tree species richness, phylogenetic diversity, and canopy cover play key roles in modulating host-parasitoid communities and their interaction networks, with phylogenetic associations showing nonrandom structure and effects mediated through trophic links in species-rich ecosystems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C107-C110 synthesize the main findings from multiple analyses (NMDS, parafit tests, linear models). These summary claims are well-supported by the collective evidence from C1-C30. The conclusions appropriately integrate results across different analytical approaches and are consistent with the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C62",
+      "C64"
+    ],
+    "result": "Producer communities (trees) structure higher trophic level communities (parasitoids) via intermediate trophic levels (hosts), with higher trophic levels sensitive to both plant phylogenetic relatedness and taxonomic dissimilarity through trophic cascades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C62, C64 draw inferences from the observed patterns of community composition relationships. The trophic cascade interpretation is supported by the NMDS results showing tree effects on both hosts and parasitoids, and the parafit test showing phylogenetic structure. The inference is logical given the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C67",
+      "C68"
+    ],
+    "result": "Host and parasitoid compositions were related to canopy cover, which is important for microclimate, potentially affecting Hymenoptera species evenness and favoring parasitoids of dominant hosts in high-canopy plots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C46 report significant relationships supported by NMDS and linear models. However, C67-C68 propose mechanisms (species evenness changes, host nesting preferences) that are speculative without direct empirical testing. The statistical associations are clear, but the mechanistic pathways remain hypothetical.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "The effects of parasitoids on hosts were more pronounced than those of hosts on parasitoids, with different trophic levels and functional groups responding differently to plant community changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 summarizes a key asymmetric pattern from the NMDS results (particularly C12 showing strong parasitoid effects on host phylogenetic composition). C70 cites previous studies at the same site supporting differential responses. The conclusion is supported by the data and consistent with prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The study was conducted in the BEF-China experiment (largest tree diversity experiment worldwide) in subtropical China, with 88 plots across two sites featuring a tree species richness gradient (1-24 species) based on 40 local broadleaved species in a broken-stick design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C80 describe the experimental design with specific details on location, climate, plot dimensions, tree planting, and species richness gradient. The design is well-documented with appropriate citations (Bruelheide et al., 2014). The experimental setup is clearly described and appropriate for testing the stated hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Trap nests (PVC tubes with reed internodes) were installed on poles 1.5 m above ground, positioned 11 m apart within plots and 9 m from adjacent plots, and collected monthly from September-November 2015 and April-November 2016-2020.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C84 describe the sampling methodology with specific details on trap nest design, placement, and collection schedule. The methods are standard for cavity-nesting bee and wasp studies and are appropriately cited (Staab et al., 2014, 2018; Fornoff et al., 2021). The design is replicable and appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "All specimens were DNA barcoded using COI gene sequences, with DNA extracted using QIAGEN kits and amplified using standard primers (LCO1490, HCO2198/HCOout).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 describe standard molecular methods for DNA barcoding with appropriate citations (Hebert et al., 2003). The methodology is well-established and appropriate for species identification and phylogenetic analysis. PCR conditions are specified in detail.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Tree phylogenetic diversity was quantified using wood volume-weighted MPD and MNTD, while functional diversity was calculated as Rao's Q based on seven leaf traits (specific leaf area, toughness, dry matter content, carbon content, C:N ratio, magnesium, calcium) related to higher trophic levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 describe appropriate methods for quantifying tree diversity with proper citations (Tucker et al., 2017; Webb, 2000; Ricotta and Moretti, 2011). The trait selection is justified by citations showing relevance to herbivores and predators (Wang et al., 2020; Chen et al., 2023). The methodology is sound and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Statistical analyses pooled 5 years of data at plot level, used NMDS (k=2) with Morisita-Horn distances for composition, parafit tests for phylogenetic associations, and linear models for network indices, with appropriate handling of collinearity and model simplification using AICc.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C104 describe comprehensive statistical methodology with appropriate techniques for each analysis type. The handling of collinearity (r=0.74 between richness and MPD) through alternative models is methodologically sound. Null models (Patefield, 10,000 simulations) appropriately test for non-randomness. The statistical approach is rigorous and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C39",
+      "C40",
+      "C41",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C55",
+      "C56",
+      "C57",
+      "C61",
+      "C66"
+    ],
+    "result": "The findings are consistent with previous studies showing effects of plant diversity on host-parasitoid systems, including microclimate effects, plant-herbivore-parasitoid cascades, niche differentiation, and the enemies hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36, C39-C41, C49-C52, C55-C57, C61, C66 cite relevant prior work to contextualize findings. The citations appear appropriate and accurately represent the cited studies. The integration of current results with prior literature strengthens the interpretation, though some mechanistic explanations remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C121"
+    ],
+    "result": "Knowledge gaps exist regarding how biotic factors (plant diversity, phylogenetic and functional composition) and abiotic factors (microclimate) determine host-parasitoid network structure and community dynamics, particularly for phylogenetic aspects of interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C106, C121 accurately identify knowledge gaps in the literature. The characterization of what is poorly understood is supported by the limited prior work cited (e.g., Staab et al., 2016 as an exception). The gap identification appropriately motivates the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Background literature establishes that ecological networks are important for ecosystem stability, that trophic cascades and microclimate affect higher trophic levels, that host-parasitoid systems are sensitive to environmental change, and that phylogenetic dependencies are important for understanding species interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C129 provide background context with appropriate citations to establish the conceptual framework. The cited literature appears accurately represented and relevant to the study's objectives. The background appropriately motivates the research questions and hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "Parasitoids might be more active or efficient with increasing tree community dissimilarity due to higher prey resources or lower intraguild parasitism in more diverse habitats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C37 proposes a mechanism for observed patterns but is explicitly speculative (\"might also be\"). While supported by citations (Chen et al., 2023; Finke and Denno, 2002), the mechanism is not directly tested in this study. The speculation is reasonable but lacks direct empirical support from the current data.",
+    "result_type": "MINOR"
+  }
+]

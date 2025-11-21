@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C71",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C83"
+    ],
+    "result": "HSPA2 exhibits asymmetric expression beginning at the late 2-cell stage of mouse embryos. HSPA2 is symmetrically distributed at the early 2-cell stage (C26) but becomes asymmetrically expressed at the late 2-cell stage (C2, C27) and 4-cell stage (C71). Hspa2 mRNA is maternally stored, decreases at the 2-cell stage, then increases from 2-cell to 4-cell stage coinciding with ZGA (C22, C23), with higher expression in blastocysts (C25). This asymmetry persists even after siRNA knockdown (C83).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C26, C27, and C71 are well-supported by multiple orthogonal methods (qRT-PCR, western blot, FISH) shown in Figure 1. The temporal expression pattern (C22-C25) is supported by qRT-PCR data in Figure 1D. The observation that asymmetry persists after knockdown (C83) provides additional evidence that this is a robust developmental phenomenon. The convergence of multiple experimental approaches strengthens this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "HSPA2 levels correlate with ICM-associated genes. The correlation between Hspa2 and Nanog expression (R=0.624) is stronger than random gene pairs (R=0.029), as shown in Figure 1C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is supported by correlation analysis shown in Figure 1C. However, the statistical significance of this correlation is not explicitly stated with a p-value. While the correlation coefficient appears meaningful compared to random pairs, the sample size and statistical testing details are not fully described. The correlation is suggestive but would benefit from additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Knockdown of Hspa2 reduces blastocyst formation and specifically downregulates ICM-marker genes without affecting TE markers. Hspa2-KD resulted in significantly lower blastocyst formation (52.3% vs 81.6%, C28), reduced expression of ICM markers (Pou5f1, Sox2, Nanog) at mRNA and protein levels (C30, C32), while TE marker Cdx2 remained unchanged (C31, C33). RNA-seq identified 506 DEGs (C72) enriched in cell fate commitment and stem cell differentiation pathways (C73, C74).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are well-supported by multiple experimental approaches including qRT-PCR, western blot, and immunofluorescence (Figures 2G-M). The RNA-seq data (C72-C74) provides transcriptome-wide support for the specific role in ICM differentiation. The consistency across mRNA and protein levels, and across embryos and mESCs, strengthens the conclusion. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C76"
+    ],
+    "result": "Knockdown of Hspa2 in one blastomere at the 2-cell stage prevents its progeny from adopting ICM fate. Single-blastomere Hspa2-KD resulted in significantly reduced ICM cell numbers (C35), reduced ratio of GFP+ progeny in ICM (33.8% vs 48.2%, C36), and reduced OCT4+ cells (27.1% vs 37.0%, C37), while TE cells were unaffected (C35). This led to developmental defects (C76).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are supported by lineage tracing experiments with GFP labeling shown in Figure 3. The experimental design allows direct assessment of cell fate decisions. Statistical significance is reported for key measurements. However, the authors note that approximately half of ICM cells still form despite HSPA2 deficiency (C64), suggesting incomplete penetrance or redundant pathways, which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3"
+    ],
+    "result": "The knockdown of Hspa2 in one of the 2-cell blastomeres prevented its progeny predominantly towards the ICM fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 is the primary conclusion supported by the lineage tracing experiments detailed in claims C35-C37. The word 'prevented' may be slightly strong given that some ICM cells still form, but the data clearly show a significant reduction in ICM contribution. The result is well-supported by Figure 3 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Overexpression of Hspa2 does not induce blastomere cells to bias toward ICM fate. Hspa2 overexpression did not affect blastocyst formation rate (C39), ICM/TE marker gene expression (C41), ICM/TE cell numbers (C42), or lineage allocation in single-blastomere experiments (C43).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by multiple experimental approaches shown in Figure 4, including qRT-PCR, immunofluorescence, and lineage tracing. The negative result is important for understanding that HSPA2 is necessary but not sufficient for ICM fate determination. The authors appropriately interpret this as suggesting a threshold effect (C65), though this remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C4"
+    ],
+    "result": "The overexpression of Hspa2 in one of the 2-cell blastomeres did not induce the blastomere to differentiate towards the ICM fate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C4 is the primary conclusion supported by the overexpression experiments detailed in claims C39-C43. The negative result is well-documented across multiple assays shown in Figure 4. This is an important control demonstrating that HSPA2 alone is not sufficient to drive ICM fate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C5",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "HSPA2 interacts with CARM1 and regulates H3R26me2 modification. Molecular docking (C50) and STRING database analysis (C51) predicted HSPA2-CARM1 interaction, which was confirmed by co-IP (C54). Hspa2-KD reduced CARM1 levels in embryos (C52) and mESCs (C53), and decreased H3R26me2 modification at the 4-cell stage (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by multiple lines of evidence including computational prediction, co-IP experiments (Figure 5F-G), and immunofluorescence (Figure 5H). The co-IP provides direct biochemical evidence of interaction. The reduction in CARM1 levels and H3R26me2 upon HSPA2 knockdown supports a functional relationship. However, the mechanism by which HSPA2 regulates CARM1 levels (transcriptional vs. post-translational) is not fully elucidated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Proteomics analysis of Hspa2-KD embryos reveals differential expression of proteins involved in post-translational modification and cell fate decisions. A total of 43 DEPs were identified (C77), enriched in post-translational modification (C78), Wnt signaling and cellular development (C79), and methylome/methyltransferase complexes (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C77-C80 are supported by proteomics data shown in Figure 5\u2014figure supplement 1. However, the sample sizes are concerning: 4 replicates for NC group but only 2 replicates for KD group. This limited replication raises questions about statistical power and reproducibility. The inference in C81 is reasonable but would benefit from validation of key DEPs by orthogonal methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "HSPA2 knockdown affects multiple signaling pathways involved in cell fate determination. DEGs in Hspa2-KD embryos were enriched in Wnt and Hippo signaling pathways (C66), which are known to regulate cell proliferation, polarity, and fate decisions (C67), suggesting multiple mechanisms may contribute to the asymmetric hypothesis (C68).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 are supported by RNA-seq and pathway enrichment analysis shown in Figure 2E-F, with appropriate citations for the known roles of these pathways. Claim C68 is a reasonable inference acknowledging that multiple mechanisms may be at play. This appropriately recognizes the complexity of early embryonic development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Speculative mechanisms for HSPA2 asymmetry and function. The authors speculate that HSPA2 heterogeneity may be initiated with ZGA (C60) or by pre-existing asymmetric factors (C61), that reduced ICM cells may result from cell cycle interference (C62) or cytokinesis defects (C63), that incomplete knockdown or redundant pathways explain partial ICM formation (C64), and that threshold effects explain lack of overexpression phenotype (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C60-C65 are explicitly speculative, as acknowledged in the evidence descriptions. While these are reasonable hypotheses based on the data and prior literature, they lack direct experimental support in this study. These represent important questions for future investigation but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C57",
+      "C58",
+      "C59",
+      "C75"
+    ],
+    "result": "Background knowledge claims about embryonic development, HSPA2, and CARM1. These claims establish the context for the study, including the nature of the first cell-fate decision (C7-C10), prior knowledge about CARM1's role in cell fate (C11-C13, C45-C49), examples of other asymmetrically expressed factors (C14-C16), HSPA2's known functions (C1, C17-C21), and established concepts about early embryonic heterogeneity (C57-C59, C75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C21, C45-C49, C57-C59, and C75 represent established knowledge from prior literature, appropriately cited. These provide necessary context for interpreting the novel findings. The authors accurately represent prior work, though independent verification of these citations was not performed.",
+    "result_type": "MINOR"
+  }
+]

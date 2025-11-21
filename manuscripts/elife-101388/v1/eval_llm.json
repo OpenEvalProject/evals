@@ -1,0 +1,415 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C23",
+      "C24"
+    ],
+    "result": "The authors created a barcoded S. Typhimurium library containing ~55,000 unique strains that are isogenic except for their barcodes. The STAMPR analytical pipeline accurately predicted the number of colony-forming units up to ~700,000 CFU in validation experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C23, and C24 describe the creation and validation of the barcoded library. The library size is directly stated and supported by sequencing data (Figure 2\u2014figure supplement 1). The validation experiment (C24) demonstrates the resolution limit through serial dilution experiments, providing empirical support for the method's accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C25",
+      "C26"
+    ],
+    "result": "A severe intestinal colonization bottleneck reduces the oral inoculum by approximately one million-fold, with only ~100 unique founders establishing niches in most parts of the intestine after inoculation with 10^8 CFU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C25, and C26 describe the severe intestinal bottleneck. The founding population data (Figure 2B) directly supports the ~10^2 founders from 10^8 CFU inoculum, yielding the ~10^6-fold bottleneck calculation. The data are consistent across multiple intestinal regions and animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "S. Typhimurium populations are compartmentalized throughout the intestine, with separate bottlenecks in different regions causing stochastic differences in founder identity. When founders replicate, they remain compartmentalized with little mixing between intestinal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C29, C30, and C31 describe intestinal compartmentalization. The genetic distance data (Figure 2D) show dissimilar populations between intestinal regions (GD 0.369-0.729), and barcode frequency analysis (Figure 2\u2014figure supplement 2) demonstrates lack of barcode overlap between regions, supporting the compartmentalization conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C27",
+      "C28",
+      "C10"
+    ],
+    "result": "Streptomycin treatment widened the intestinal colonization bottleneck by 10-100-fold and created a more permissive niche for pathogen expansion, suggesting the microbiota plays a key role in restricting pathogen colonization and movement within the intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C27, C28, and C10 describe streptomycin's effects. The founding population data (Figure 2B) show 10-100-fold increases in founders, and CFU/Ns ratios (Figure 2C) demonstrate increased replication. The inference that microbiota restricts colonization (C10) is reasonable given that streptomycin depletes microbiota, though the mechanism is indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C92"
+    ],
+    "result": "Streptomycin treatment reduced compartmentalization of S. Typhimurium populations in the intestine, increasing similarity between different intestinal regions (Avg. GD 0.157-0.407) and increasing mixing between intestinal compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, and C92 describe reduced compartmentalization after streptomycin treatment. The genetic distance data (Figure 2D) show increased similarity between intestinal regions in streptomycin-treated animals compared to untreated animals, supporting the conclusion of increased mixing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "In approximately half of untreated animals, fecal barcodes were highly dissimilar from intestinal barcodes (GD >0.75), indicating that the majority of intestinal S. Typhimurium are not shed into feces. Streptomycin treatment increased similarity between intestinal and fecal populations (Avg. GD = 0.299 \u00b1 0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, and C36 describe fecal-intestinal population relationships. The genetic distance data (Figure 2E) support the high dissimilarity in untreated animals and increased similarity after streptomycin treatment. The inference that intestinal bacteria are not being shed (C35) is reasonable given the high genetic distance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C41",
+      "C42"
+    ],
+    "result": "There was minimal sharing of barcodes between intestine and extraintestinal sites (Avg. GD >0.75), indicating that S. Typhimurium disseminates to extraintestinal organs early following inoculation, before establishing a replicative niche in the intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C41, and C42 describe early dissemination. The genetic distance data (Figure 3C) show high dissimilarity between intestinal and extraintestinal populations regardless of streptomycin treatment. The inference of early dissemination (C42) is well-supported by the population genetics data and is further validated by the 5-hour time point experiments (C46-C51).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "At 5 hours after orogastric inoculation, ~100 S. Typhimurium CFU and ~100 founders were present in liver samples, with similar founder numbers at 5 days, indicating that the pathogen transits to the liver within 5 hours and that initial rapid dissemination seeds the majority of clones observed at later time points.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe the kinetics of dissemination. The experimental data (Figure 3G-H) show ~100 CFU and ~100 founders at 5 hr, with similar founder numbers at 120 hr, supporting the conclusion that early dissemination establishes the extraintestinal population. The ~1 CFU per founder calculation (C48) is consistent with minimal replication at 5 hr.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "There were more founders in intestinal samples at 5 hr versus 120 hr, indicating that many founders observed at 5 hr are shed in feces prior to establishing a replicative niche, and that forces restricting the S. Typhimurium population in the intestine act over a period >5 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C53, and C54 describe intestinal founder dynamics over time. The experimental data (Figure 3H) show higher founder numbers at 5 hr than 120 hr in intestinal samples, particularly in the colon. The inferences about fecal shedding (C53) and prolonged bottleneck action (C54) are reasonable interpretations of these data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Comparison of orogastric gavage and drinking inoculation methods yielded very similar founding population sizes in all organs, providing strong support that orogastric gavage did not routinely lead to tissue damage enabling S. Typhimurium entry into the bloodstream.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C44, and C45 address a potential confound. The experimental data (Figure 3E) show similar founding populations between gavage and drinking methods. The inference that gavage does not cause routine bloodstream entry (C45) is well-supported by the similarity in outcomes between methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Streptomycin treatment increased S. Typhimurium burdens in the intestine by 100-10,000-fold but did not markedly increase burdens in extraintestinal immune-rich organs, indicating that streptomycin does not significantly alter pathogen burden at sites beyond the intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C38, C20, C21, and C22 describe differential effects of streptomycin on intestinal versus extraintestinal burdens. The CFU data (Figure 1Ci-ii) clearly show marked increases in intestinal organs but similar burdens in immune-rich organs between treated and untreated groups, supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C95"
+    ],
+    "result": "Streptomycin treatment increased the founding population in extraintestinal organs by ~10-fold, suggesting that the net bottleneck to dissemination is relaxed by streptomycin treatment, likely contributing to more rapid disease progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, and C95 describe streptomycin's effect on extraintestinal dissemination. The founding population data (Figure 3A) show ~10-fold increases in extraintestinal organs. The inference linking this to disease progression (C40) is reasonable given the weight loss data (Figure 1A), though the causal link is not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "Without streptomycin treatment at a dose of 10^4 CFU, orogastric gavage did not lead to extraintestinal infection, indicating that the net bottleneck to extraintestinal dissemination results in less than 1 founder after inoculation of 10^4 CFU.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C56 describe the bottleneck at lower inoculum doses. The experimental data show no detectable S. Typhimurium in extraintestinal organs at this dose without streptomycin treatment. The inference of <1 founder (C56) is a logical conclusion from the absence of detectable infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C63"
+    ],
+    "result": "Following IV and IP inoculation, pathogen burden and founder numbers in immune-rich organs were similar to the inoculum size, suggesting minimal bottleneck when colonizing these organs. The most restrictive bottleneck to S. Typhimurium dissemination occurs within or while the pathogen exits the intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C58, C59, and C63 describe bottlenecks after systemic inoculation. The data (Figure 4B-C) show similar burdens and founder numbers between IV and IP routes, with founders approaching inoculum size. The inference that the primary bottleneck is intestinal (C63) is well-supported by comparing oral versus systemic inoculation routes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "More than half of animals with pathogen in bile contained only a single founder, indicating a very tight bottleneck to gallbladder colonization. Once established, bacteria can replicate to very high burdens (~3\u00d710^6 CFU for IP, ~9\u00d710^4 CFU for IV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C61, and C62 describe the gallbladder bottleneck. The founding population data (Figure 4E) show frequent clonality in bile, and CFU data (Figure 4D) show high burdens despite low founder numbers. The inference of a tight bottleneck (C61) is well-supported by the clonality data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The route of inoculation (IV versus IP) resulted in divergent population dynamics. IP inoculation led to 100-1000-fold higher burdens in pancreas, adipose, and peritoneal wash compared to IV. Spleen and liver showed high similarity (Avg. GD <0.25), indicating they are within the same compartment, but other extraintestinal sites showed route-dependent compartmentalization patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64, C65, C66, C68, C69, and C70 describe route-dependent population dynamics. The CFU data (Figure 4D) and genetic distance data (Figure 4F) support the differential burdens and compartmentalization patterns between IV and IP routes. The inference of divergent dynamics (C70) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "S. Typhimurium shedding was not observed until 4 days after IV or IP inoculation, indicating routes for S. Typhimurium to spread back into the intestine from extraintestinal organs exist, but the pathogen encounters substantial bottlenecks on these routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C72, and C73 describe intestinal re-seeding after systemic inoculation. The fecal shedding data (Figure 5A) show delayed shedding after IV/IP compared to oral inoculation. The inferences about re-seeding routes (C72) and bottlenecks (C73) are reasonable given the delayed and incomplete shedding patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The number of founders in intestinal samples after IV/IP inoculation had a bimodal distribution, indicating at least two routes for intestinal re-seeding: one with little bottleneck yielding diverse populations, and another through the bile with a tight bottleneck often resulting in clonal intestinal populations. 7 of 9 animals with clonal colons had identical bile clones.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C75, C76, and C77 describe two re-seeding pathways. The founding population data (Figure 5C) show bimodal distribution, and genetic distance data (Figure 5D) show clonal colons matching bile clones. The inference of two pathways (C75) is well-supported by the bimodal distribution and barcode matching data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Animals with clonal colon populations often had clonal bile populations and visible biliary pathology (darkening, cloudiness, or hardening). Increased pathogen burden in bile correlated with cloudy or hardened pathology, loss of biliary epithelial cells, and cellular infiltrates. Hardened or cloudy biliary pathology reflects robust S. Typhimurium replication in the gallbladder and correlates with intestinal seeding and fecal shedding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C88 describe the relationship between bile pathology, bacterial burden, and intestinal re-seeding. The observational data (Figure 6A-B), CFU data (Figure 6D), histology (Figure 6C), barcode sharing data (FRD, Figure 6E), and correlation with fecal shedding (Figure 6F) provide strong converging evidence for these relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "A moderate increase in Salmonella disease markers (diarrhea, weight loss, fecal shedding) was observed in female mice compared to males. 9/10 mice with hardened bile were female, suggesting a strong correlation of this phenotype with sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108 and C109 describe sex differences in infection outcomes. The experimental data (Figure 3\u2014figure supplement 2, Figure 4\u2014figure supplement 1) show moderate sex differences in disease markers, and the observation that 9/10 hardened bile cases were female is directly stated. However, the sample size for hardened bile is small (n=10), limiting the strength of the correlation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "There was up to 1000-fold variation in the number of S. Typhimurium founders in the intestine between genetically identical mice from the same vendor. This variation was present between mice but not within mice, with individual mice having consistent founder numbers throughout the GI tract.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110 and C111 describe inter-animal variation. The founding population data (Figure 2B) show large variation between animals despite genetic identity. The observation of consistency within individual animals (C111) is stated but not shown with specific data, though it is consistent with the overall patterns observed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Streptomycin-treated animals lost weight more rapidly than untreated animals and were sacrificed at day 4 post-inoculation after >20% weight loss. Animals pretreated with streptomycin rapidly and uniformly began shedding S. Typhimurium, with fecal burdens higher than the inoculum by 24 hr post-inoculation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 describe disease progression and shedding kinetics. The weight loss data (Figure 1A) and fecal shedding data (Figure 1B) directly support these observations. These are straightforward descriptive results consistent with prior literature (cited in C18).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The bottleneck characterizing the more permissive route to seeding the intestine from extraintestinal sites was even more permissive than the bottleneck following orogastric inoculation. The authors speculate this represents a reversal of known mechanisms the pathogen employs to escape from the intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 is supported by the founding population data (Figure 5C) showing higher Ns values for permissive IP/IV groups compared to oral groups. However, claim C81 is explicitly speculative and lacks direct experimental support. The mechanism underlying the permissive re-seeding pathway remains unclear and requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C94",
+      "C96",
+      "C97"
+    ],
+    "result": "The S. Typhimurium populations in the liver and MLN of untreated mice were somewhat similar (Avg. GD = 0.556 \u00b1 0.139), suggesting lymphatic dissemination. In streptomycin-treated animals, the liver population became more dissimilar from the MLN (Avg. GD = 0.760 \u00b1 0.056), suggesting that increased founders reaching disseminated organs did not correlate with replication in the lymphatic system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C96, and C97 describe dissemination mechanisms. The genetic distance data (Figure 3C, Figure 3\u2014figure supplement 1) support the similarity/dissimilarity patterns. The inference about lymphatic dissemination (C94) is reasonable given prior literature, and the inference about non-lymphatic mechanisms after streptomycin (C97) is supported by the increased dissimilarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "High diversity libraries increase the upper limit of founding population measurements and reduce the likelihood that two tissue samples share the same barcode(s) due to random chance. A library with only 10 barcodes has a resolution limit of ~200 founders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C90, and C91 describe general principles of barcode analysis. These are theoretical considerations that are well-established in the field and are supported by the validation experiments (C24, Figure 2\u2014figure supplement 1). The example calculation in C90 is illustrative of the resolution limitations of low-diversity libraries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C16",
+      "C17"
+    ],
+    "result": "Background information on Salmonella enterica epidemiology, classification, pathogenicity islands, murine models, and prior barcode studies. Streptomycin pretreatment is commonly used to sensitize mice to S. Typhimurium infection by reducing microbiota.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5, C16, and C17 provide background context supported by citations to prior literature. These are established facts in the field and are appropriately cited. They provide necessary context for the current study but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C67",
+      "C93",
+      "C98",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Background information from prior studies on Salmonella population dynamics, streptomycin effects, bile colonization, and sex differences in infection and gallstone formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C93, C98, C101-C107 cite prior research to provide context for the current findings. These are appropriately cited and provide important background for interpreting the results, particularly regarding bile colonization and sex differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C99",
+      "C100"
+    ],
+    "result": "The authors speculate that the pathogen may take advantage of streptomycin's indirect effects to disseminate more efficiently, and that dissemination into extraintestinal organs is an evolutionary advantage for the pathogen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99 and C100 are explicitly speculative interpretations of the data. While the speculation is reasonable given the observed effects of streptomycin on dissemination, these claims lack direct experimental support and represent hypotheses for future testing rather than established results.",
+    "result_type": "MINOR"
+  }
+]

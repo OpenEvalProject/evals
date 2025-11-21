@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C39",
+      "C40",
+      "C41",
+      "C130"
+    ],
+    "result": "Tree-based machine learning models (Random Forest, XGBoost, LightGBM) demonstrated superior predictive performance for post-stroke epilepsy, achieving AUC scores above 0.95 (up to 0.99), with Random Forest achieving the highest positive predictive value (PPV) of 0.864, outperforming traditional logistic regression and other machine learning approaches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the models show 'very good explicative performance' and 'seem to have very good predictive ability,' they raise significant concerns about validation methodology. One reviewer notes 'lack of cross-validation' and 'possible bias in external validation results,' specifically that the external validation 'focused more on collecting positive cases' which 'may result in overoptimistic PPV and Sensitivity estimations.' Another reviewer states the evidence is 'convincing, although there are some validation issues.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "The Random Forest model demonstrated excellent calibration with a Brier score of 0.006 and decision curve analysis (DCA) indicated strong practical value in clinical decision-making.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these calibration and clinical utility metrics. One reviewer explicitly states 'The design and implementation of the trial are acceptable, with the credibility of the results,' and another notes the models have 'very good explicative performance.' The calibration results are presented without specific critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C31",
+      "C99"
+    ],
+    "result": "In the external validation cohort of 536 patients from three hospitals, the Random Forest model achieved a sensitivity of 0.91 and a PPV of 0.95. The external validation cohort focused on collecting positive cases to test the model's ability to identify them.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewers explicitly challenge the external validation methodology and results. One reviewer states 'External validation results may be biased/overoptimistic, since the authors informed that \"The external validation cohort focused more on collecting positive cases to examine the model's ability to identify positive samples\", which may result in overoptimistic PPV and Sensitivity estimations. The specificity for the external validation set has not been disclosed.' This represents a fundamental critique of the validation approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C43",
+      "C44",
+      "C133",
+      "C134"
+    ],
+    "result": "Female patients, older individuals, and those with higher NIHSS scores were more likely to develop post-stroke epilepsy. NIHSS score, WBC count, and D-dimer were identified as the most crucial predictors, with NIHSS ranking second only to WBC and D-dimer in predictive importance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings about demographic and clinical predictors. One reviewer notes 'The design and implementation of the trial are acceptable, with the credibility of the results,' and another states the study 'may provide clinical researchers with ideas for further research on the underlying aetiology of PSE.' The identification of key predictors is treated as a valid contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C61",
+      "C25",
+      "C127"
+    ],
+    "result": "Laboratory indicators associated with higher PSE risk included elevated WBC, D-dimer, CRP, AST, CK-MB, HbA1c, bilirubin, TCO2, and LDH levels, while lower levels of HBDH, Plt, and APTT were also associated with higher risk. WBC had significant impact, even surpassing NIHSS in SHAP analysis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the study identifies laboratory predictors and one notes 'Analysis of features contributing to PSE may provide clinical researchers with ideas for further research,' another reviewer raises a critical temporal concern: 'The authors have clarified that the first features available for each patient have been used. However, they have not shown that these features did not occur before the time of post-stroke epilepsy. Explicit clarification of this should be performed.' This temporal ambiguity undermines confidence in the laboratory findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C131",
+      "C132"
+    ],
+    "result": "Patients with complications such as uremia, DVT, atrial fibrillation, hyperuricemia, cerebral hernia, and hydrocephalus had higher likelihood of developing PSE. Affected brain regions included frontal, parietal, occipital, and temporal lobes, along with cortex, subcortex, basal ganglia, and hypothalamus.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings about complications and brain regions. One reviewer states 'The design and implementation of the trial are acceptable, with the credibility of the results,' implicitly accepting these clinical associations. The regression analyses identifying these factors are not specifically critiqued.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C58"
+    ],
+    "result": "Specific brain regions did not have a significant individual effect on the outcome. Both cortical and subcortical involvement were associated with increased likelihood of PSE, but these regions had smaller influence compared to other features and were not selected in LASSO regression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings about the limited individual impact of specific brain regions. The statistical methodology (LASSO regression) used to determine feature importance is not critiqued, and one reviewer notes 'The Statistical Approach section is very well written. The approaches used in this section are very sensible for the data in question.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Hypertension was more strongly associated with PSE development, while conditions such as coronary heart disease, diabetes, hyperlipidemia, and fatty liver were less likely to be related. Patients with multiple comorbidities often fall into large artery atherosclerosis and cardioembolism categories (more clearly defined and easier to treat), resulting in lower likelihood of epilepsy, while strokes of undetermined etiology have worse prognoses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings about comorbidity patterns and their relationship to PSE risk. The interpretation based on TOAST classification is presented as inference but is not contested. One reviewer notes the study 'may provide evidence of seizure prevention in the field of stroke treatment,' suggesting acceptance of these clinical associations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C114"
+    ],
+    "result": "The extreme imbalance between negative and positive samples (PSE incidence of 4.3%) was addressed using the SMOTEENN technique, which improved model performance by augmenting positive data in the training set.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the use of SMOTEENN for handling class imbalance. One reviewer explicitly states 'The Statistical Approach section is very well written. The approaches used in this section are very sensible for the data in question,' which would encompass the SMOTEENN methodology. The approach is treated as methodologically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "LASSO regression was used to select the 20 most important features from the dataset. Nine machine learning methods were employed (Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, Multi-Layer Perceptron, XGBoost, LightGBM, K-Nearest Neighbors), with hyperparameters optimized through grid search. SHAP algorithm was applied to interpret feature contributions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise the statistical methodology. One states 'The Statistical Approach section is very well written. The approaches used in this section are very sensible for the data in question.' Another notes 'improved interpretability has been added to the paper, which is appreciated,' referring to the SHAP analysis. The methodological approach is well-received.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C97",
+      "C98",
+      "C100",
+      "C101"
+    ],
+    "result": "The study included 21,459 patients total (15,021 training, 6,438 test, both with 4.3% PSE incidence), derived from 42,079 records from Chongqing Emergency Center (June 2017-June 2022), with external validation from 536 patients across three hospitals (July 2022-July 2023).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this is a 'large cohort' and note 'The models have been derived from real-world large-scale data.' One reviewer states 'This is a large cohort of ischemic stroke patients from a single centre,' accepting the dataset characteristics. The sample size is treated as a strength, though geographic limitations are noted separately.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study acknowledges several limitations: the dataset may not be fully representative and is predominantly from the Chongqing region (limiting geographic generalizability); the retrospective nature led to missing important predictive indicators (hemorheology, thromboelastography, hormone levels); and the analysis used only initial admission data without leveraging subsequent examinations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept these limitations as the authors acknowledge them. One reviewer notes 'the model's generalizability requires further evaluation' and another states 'lack of cross-validation' as a concern, which aligns with the authors' own acknowledgment of limitations. The temporal data limitation is specifically highlighted by a reviewer who notes features 'did not occur before the time of post-stroke epilepsy' needs clarification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The model's transparency and interpretability can build trust among clinicians and support decision-making, though further prospective studies are necessary to validate clinical utility before real-world application.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers agree with this assessment. One states 'If this model works as claimed, it will be useful for predicting PSE. This has some direct clinical utility,' while also noting the need for validation. Another reviewer notes the study is 'valuable' and 'may be of interest in the field of clinical neurology,' but emphasizes validation concerns. The conditional nature of clinical utility pending further validation is accepted.",
+    "result_type": "MINOR"
+  }
+]

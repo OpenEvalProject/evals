@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors developed a pentapeptide library screening approach using an ER-targeted tandem fluorescent timer (tFT) and identified sequences enriched in unstable proteins. The sequence 4X(IHPYW), termed DegV1, was identified as an ER-localized degron that destabilizes proteins comparably to the known ERAD substrate KHN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The library design is sound with 1.2M transformants representing ~38% of theoretical diversity (C67-C68), and >10X oversampling during FACS (C70-C71). The enrichment calculations for isoleucine (3.8-fold, C23) and leucine (1.6-fold, C24) are appropriately normalized to codon usage. The functional validation showing DegV1 destabilizes proteins to KHN levels (C25-C27) with appropriate controls (C26) strongly supports the identification of a functional degron.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "DegV1 functions as an N-terminal degron when positioned after the ER signal sequence, but not when placed internally or at the C-terminus of ER proteins. Signal sequence cleavage occurs normally (~90% processed, C28), and DegV1 destabilizes ER-NbGFP with a half-life of ~30 min when N-terminal (C29).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The position-dependence is clearly demonstrated through systematic testing at N-terminal (C29), internal (C30), and C-terminal (C31) positions with appropriate controls. The molecular weight analysis (C28) addresses the important control that signal sequence cleavage is not contributing to degron function. However, the C-terminal test is complicated by the HDEL retention signal requirement, which could mask C-terminal degron activity through steric or mechanistic interference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DegV1-mediated degradation occurs through the Hrd1-ERAD pathway and requires proteasome activity. Degradation requires Hrd1, Hrd3, Der1, and Usa1, but notably not Yos9 or Doa10 (C36-C37). When DegV1 is localized to the cytosol, degradation becomes Hrd1-independent (C38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic characterization is thorough with appropriate use of proteasome inhibitor (bortezomib, C33) and genetic deletions (C34-C37). The Yos9-independence (C36) is interesting and distinguishes this from some other ERAD substrates. The cytosolic localization control (C38) is critical and demonstrates that DegV1 specifically engages ERAD machinery only when in the ER lumen, supporting the specificity of the degron. The data converge on a clear ERAD-L mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "DegV1 functions as an N-terminal degron for endogenous S. cerevisiae proteins with diverse topologies, including the soluble luminal protein Suc2 (C39), single-pass transmembrane protein Big1 (C40), and multi-spanning membrane protein Elo1 (C41). All show proteasome-dependent degradation (C43-C44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The application to endogenous proteins with different topologies (soluble, single-pass, multi-pass) is a critical validation that DegV1 is a portable degron tag. The bortezomib sensitivity for membrane proteins (C43) confirms proteasomal involvement. However, the manuscript would benefit from quantitative half-life measurements for these endogenous proteins to compare degradation kinetics across different substrate types. The glycosylation pattern changes for Suc2 (C39) suggest some ER escape, which could complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C57"
+    ],
+    "result": "DegV1 functions as an ER-localized degron in mammalian cells (U2OS and HEK293), showing Hrd1-dependent, proteasome-mediated degradation. ER-DegV1-mNG has a half-life of ~4 hr (C47) and is stabilized by proteasome inhibition (bortezomib, C48-C49), VCP/p97 inhibition (CB5083, C50-C51), or Hrd1 deletion (C52).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cross-species validation is compelling with multiple orthogonal approaches (proteasome inhibitor, VCP inhibitor, genetic knockout). The longer half-life in mammalian cells (~4 hr, C47) compared to yeast (~30 min, C29) is notable but not unexpected given species differences in ERAD kinetics. The accumulation to similar levels as control proteins after 24 hr bortezomib treatment (C49) elegantly demonstrates that low steady-state levels reflect active degradation rather than expression problems. This cross-species conservation strongly supports the utility of DegV1 as a tool.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "DegV1 is a versatile degron that works with folded, luminal, and soluble proteins as well as integral membrane proteins with different topologies (C54), functions with both exogenous and endogenous proteins (C55), and is degraded through the Hrd1-ERAD axis using the proteasome (C56).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary claims (C54-C56) accurately reflect the collective experimental evidence from the study. The claim that DegV1 works with 'folded' proteins is supported by the nanobody data, which is known to fold in the ER. The breadth of protein types tested (luminal, single-pass, multi-pass membrane proteins; exogenous and endogenous) provides strong support for versatility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The IHPYW sequence forming the basis of DegV1 is uncommon in nature, not present in the S. cerevisiae genome (C58), and absent from currently annotated fungal genomes in the Saccharomyces Genome Database (C59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The bioinformatic analysis is straightforward and the absence of IHPYW from yeast and related fungal genomes is verifiable. This supports that DegV1 is an artificial degron rather than a naturally occurring sequence, which has implications for its use as a tool. However, the manuscript does not address whether related sequences exist or whether the degron consensus could be broader than IHPYW.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The degradation rates of DegV1-containing proteins are similar to other well-characterized ERAD substrates (C60), suggesting DegV1 is degraded in a manner consistent with endogenous ERAD substrates (C61).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to known ERAD substrates (particularly KHN with t1/2 <30 min, C20) supports this interpretation. The half-lives observed (~30 min in yeast, ~4 hr in mammalian cells) are within the range reported for ERAD substrates. This validates that DegV1 engages physiological ERAD machinery rather than triggering an artificial degradation pathway.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "The authors speculate that proteins could be transported in a fully folded state (C64) but favor the interpretation that targeted proteins are recognized and transported in an unfolded state after ERAD complex engagement (C65).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative claims (C64-C65) about the mechanism of retrotranslocation. While the authors appropriately acknowledge this as speculation, the current data do not distinguish between these possibilities. The observation that folded nanobodies are degraded does not prove they remain folded during retrotranslocation. Additional experiments (e.g., disulfide bond mapping, protease sensitivity assays) would be needed to address this question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C13"
+    ],
+    "result": "Prior to this work, all identified degrons functioned within the cytosol to target proteins for ubiquitination and proteasomal degradation (C1-C3, C13). Degrons are minimal protein features sufficient to confer degradation when transferred to stable proteins (C1, C11), with specificity driven by E3 ubiquitin ligases (C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C3, C10-C11, C13) accurately represent the state of the field prior to this study and are supported by appropriate citations. The claim that 'all known degrons target cytosolic proteins' (C13) establishes the novelty of identifying ER luminal degrons. These are well-established concepts in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C12",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C62",
+      "C63"
+    ],
+    "result": "Background claims about the ubiquitin-proteasome system (C7-C9), degron history (C12), ER protein flux (C14), ERAD conservation (C15), Hrd1 complex composition (C16-C19), and retrotranslocation mechanisms (C62-C63) establish the context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims are appropriately cited and represent established knowledge in the field. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the claims are consistent with current understanding of ERAD mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The authors claim to have created the first tool for targeting proteins for degradation from the previously unreachable ER lumen (C66).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by the collective experimental evidence showing DegV1 functions as a portable degron tag for ER luminal proteins in both yeast and mammalian cells. The novelty claim is justified given that prior degrons only functioned in the cytosol (C3, C13). However, the tool has limitations (N-terminal position requirement, C32) that should be acknowledged when considering its utility.",
+    "result_type": "MAJOR"
+  }
+]

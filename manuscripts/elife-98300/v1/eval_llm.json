@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C66"
+    ],
+    "result": "ONT R10.4.1 pore with the latest basecalling models achieves high read accuracy, with duplex sup reads reaching 99.93% (Q32) median identity, duplex hac at 99.79% (Q27), simplex sup at 99.26% (Q21), simplex hac at 98.31% (Q18), and simplex fast at 94.09% (Q12). These results are consistent with previous studies showing read accuracies greater than 99.0% (Q20) and 99.9% (Q30) for simplex and duplex reads, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 and C66 are directly supported by experimental data shown in Figure 1 and Supplementary file 1a. The measurements are straightforward read identity calculations from alignment to reference assemblies, and the results align with previously published work (Sanderson et al., 2024; Sanderson et al., 2023; Sereika et al., 2022), providing independent validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35"
+    ],
+    "result": "Deep learning-based variant callers Clair3 and DeepVariant significantly outperform traditional methods on bacterial nanopore data, achieving the highest F1 scores for both SNPs (99.99%) and indels (99.53-99.61%) when using sup-basecalled data. The sup basecalling model leads to the highest F1 scores across all variant callers, while the fast model performs an order of magnitude worse than hac and sup models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29-C33, and C35 are well-supported by comprehensive experimental data shown in Figure 2 and Figure 3, with detailed metrics in Supplementary files 1c-1e. The benchmarking includes seven variant callers across 14 bacterial species with multiple basecalling models and read types, providing robust evidence for the superior performance of deep learning methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Deep learning-based variant callers (Clair3, DeepVariant, Medaka, NanoCaller) on ONT hac or sup data match or exceed Illumina sequencing accuracy (median SNP F1: 99.45%, indel F1: 95.76%) for all variant and read types. Traditional callers (Longshot, BCFtools, FreeBayes) match or slightly exceed Illumina for SNP calls with hac and sup data, though BCFtools shows reduced indel accuracy. Fast model ONT data performs worse than Illumina except in the best case for SNPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C36-C41 are supported by direct comparison data in Figure 2 and Figure 3. The same DNA extractions were used for both Illumina and ONT sequencing (C18), eliminating culture-induced mutation bias. The truthset methodology (C19, C77-C81) provides a reliable benchmark for comparison. The results are consistent across 14 diverse bacterial species (C20).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C94",
+      "C95"
+    ],
+    "result": "ONT's superior performance over Illumina is attributed to its ability to overcome Illumina's alignment difficulties in repetitive and variant-dense genomic regions. Illumina's lower F1 score is mainly due to reduced recall rather than precision, with false negatives showing a bimodal distribution of variant density peaking at 20 variants per 100 bp. Illumina's F1 score increases from 99.3% to 99.7% when repetitive regions are masked, while Clair3 100\u00d7 simplex sup data shows only a 0.003% increase, indicating minimal impact of repetitive regions on ONT variant calling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42-C48, C94-C95 are supported by detailed analysis in Figure 4 and supplementary figures showing variant density distributions, alignment visualizations, and the impact of masking repetitive regions. The mechanistic explanation is well-supported by the observation that 20 variants per 100 bp represents a larger portion of an Illumina read (~150 bp) than an ONT read (median >10 kb), making alignment more challenging for short reads.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C67",
+      "C96"
+    ],
+    "result": "High-performing variant callers with ONT's super-accuracy data mitigate ONT's traditional homopolymer errors. While fast-basecalled reads often miscalculate homopolymer lengths by 1-2 bp, the sup model significantly reduces false indel calls to match Illumina's error profile. For Clair3 on sup data, only 8 false indel calls were observed (5 homopolymers, 3 near similar insertions). Deep learning methods like Clair3 and DeepVariant further mitigate bias beyond the sup basecaller by training models to account for systematic issues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C49-C55, C67, C96 are supported by detailed error analysis in Figure 5 and supplementary figures. The characterization of false positive indels by homopolymer length and indel size provides strong evidence for the mitigation of this historically problematic error mode. The comparison across basecalling models and variant callers demonstrates both the improvement from better basecalling and the additional benefit of deep learning variant calling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C99"
+    ],
+    "result": "10\u00d7 depth of ONT super-accuracy data can achieve precision and recall comparable to or better than full-depth Illumina sequencing for both SNPs and indels when using Clair3 or DeepVariant. The same is true for 10\u00d7 duplex hac or sup reads. At 5\u00d7 depth, F1 scores are generally lower than Illumina, though SNP precision remains above Illumina for most methods with duplex reads. The authors recommend a minimum of 25\u00d7 depth for optimal clinical and public health applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C56-C60, C68-C71, C99 are supported by systematic depth analysis shown in Figure 6 and Figure 7. The subsampling approach (C97-C98) provides controlled comparison across depths. However, the recommendation for 25\u00d7 depth (C70) is based on inference rather than explicit statistical criteria or clinical validation, which represents a minor limitation. The practical significance for resource-limited settings is well-articulated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Computational resource requirements vary widely among variant callers. DeepVariant is the slowest (median 5.7 s/Mbp, 38 min for 4 Mbp at 100\u00d7) and most memory-intensive (median 8 GB), while FreeBayes shows the largest runtime variation (max 597 s/Mbp, 2.75 days for 4 Mbp). Most methods run in less than 40 min with Clair3 having a median runtime of ~6 min and 1.6 GB memory. All methods use less than 8 GB memory, making them laptop-compatible. Basecalling with a single GPU using the sup model is generally faster than variant calling (median 0.77 s/Mbp, ~5 min for 4 Mbp at 100\u00d7).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65, C100-C102 are supported by runtime and memory usage data in Figure 8 and Figure 8\u2014figure supplement 1, with detailed metrics in Supplementary file 1f-1g. The measurements are straightforward and provide practical guidance for users. The consistency of GPU usage (C114) ensures fair comparison of basecalling times.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study developed a novel pseudo-real approach for generating variant truthsets by selecting donor genomes with ANI closest to 99.5%, identifying variants using minimap2 and mummer, and applying these variants to the sample's reference to create a mutated reference. This approach combines the certainty of simulation with the biological realism of real genomic differences. The same DNA extractions were used for both Illumina and ONT sequencing to eliminate culture-induced mutation bias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C77-C81 describe the methodological approach that is well-documented in the Methods section and supported by Table 1 showing the ANI and variant counts. The pseudo-real approach is a reasonable compromise between simulation and real data, though it has acknowledged limitations (C73) regarding the narrow ANI range used. The use of identical DNA extractions is a strength that eliminates a potential confounding factor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C20",
+      "C21"
+    ],
+    "result": "The study analyzed 14 samples from different bacterial species spanning a wide range of GC content (30-66%), with SNP counts varying from 2,102 to 57,887 but consistent indel numbers across samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 are directly supported by the data presented in Table 1 and Supplementary file 1b. The diversity of species and GC content provides good coverage of bacterial genome diversity, though the study acknowledges limitations regarding structural variants (C72) and ANI diversity (C73).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C127",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The study benchmarked seven variant callers (BCFtools, Clair3, DeepVariant, FreeBayes, Longshot, Medaka, NanoCaller) on ONT data and Snippy on Illumina data. ONT data were basecalled with Dorado using fast, hac, and sup models (v4.3.0), with duplex reads generated for hac and sup. Reads were filtered (\u22651000 bp, Q\u226510) and subsampled to 100\u00d7 depth. Variant calls were assessed using vcfdist, calculating precision, recall, and F1 scores.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C28, C82-C89, C127-C130 describe the experimental methods that are well-documented and appropriate. The use of pretrained models for deep learning callers is standard practice, though the use of hac models for fast-basecalled data (C128, C130) due to unavailability of fast models is a minor limitation. The consistency of GPU hardware (C114) and software versions is a methodological strength.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study has three main limitations: (1) only small variants (<50 bp) were assessed, excluding structural variants; (2) a narrow range of ANI values (~99.5%) was used for selecting donor genomes; (3) Illumina sequencing was performed on different models (NextSeq 500 for 3 samples, NextSeq 2000 for others), though the absolute differences in error rates between these models are minor and unlikely to significantly impact results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 honestly acknowledge study limitations. The exclusion of structural variants (C72) is a significant limitation given ONT's advantages for detecting such variants. The narrow ANI range (C73) limits understanding of performance across different levels of divergence, though the authors provide reasonable justification for this choice. The mixed Illumina platforms (C74-C76) is a minor limitation, appropriately contextualized by noting that Illumina's lower performance was due to missed calls rather than false calls.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "Due to the right-angle-like shape of Clair3 and DeepVariant precision-recall curves, filtering based on low-value variant quality improves precision considerably without losing much recall. The best F1 scores are obtained with no quality filtering on sup data, except for indels from duplex data where a quality filter of 4 provides the best F1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 are supported by the precision-recall curves in Figure 3 and detailed filtering analysis in Supplementary file 1e. The observation about the shape of the curves and the optimal filtering strategy is well-documented and provides practical guidance for users.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104"
+    ],
+    "result": "Previous work by Bush et al. found that diversity threshold for selecting reference genomes is a main differentiating factor in Illumina variant calling accuracy. The current study's results mirror this to some extent, showing reduction in Illumina accuracy as variant density increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C104 appropriately cite and contextualize prior work (Bush et al., 2020) and relate it to the current findings shown in Figure 4. The comparison is reasonable, though the authors acknowledge that investigating the effect of reference genome divergence on ONT variant calling would be valuable future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The introduction establishes the context for the study: variant calling is fundamental in bacterial genomics; Illumina has been the mainstay for 15 years due to high accuracy; ONT offers advantages in real-time sequencing and portability but has historically been limited by lower basecalling accuracy; ONT recently released the R10.4.1 pore with improved basecallers and duplex capability; previous benchmarking focused on human genomes with older pores; deep learning variant callers are trained on human DNA only; and human and bacterial genomes differ substantially in k-mer distribution and DNA modification patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C17 provide appropriate background context supported by citations to relevant literature. These claims represent established knowledge in the field and accurately frame the motivation for the current study. The citations appear appropriate and the characterization of prior work is accurate.",
+    "result_type": "MINOR"
+  }
+]

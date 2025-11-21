@@ -1,0 +1,256 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "NAP-CNB is a machine learning-based platform that uses RNA-seq data and LSTM neural networks to predict tumor neoantigens with MHC I affinity, incorporating post-processing for robust scoring. The platform is automatic, freely available online, and provides an integrated pipeline for neoepitope classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C10, and C40-C43 collectively describe the NAP-CNB platform's technical features and capabilities. These are well-documented methodological descriptions that are internally consistent and supported by the prior publication (Wert-Carvajal et al., 2021).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12"
+    ],
+    "result": "NAP-CNB demonstrates comparable or superior performance to state-of-the-art methods (NetH2pan, MHCflurry 2.0) with 95% AUC for H-2Kb typings and high positive predictive value in blind benchmarking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C11-C12 report performance metrics from prior benchmarking, but the current manuscript does not present the underlying data, validation methodology, or statistical comparisons. Without access to the benchmarking details, independent verification is not possible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The study used B16 F10 melanoma in C57BL/6J mice to validate NAP-CNB predictions, selecting five peptides (*Pnp, *Adar, *Lrrc28, *Wiz, *Herc6) based on NAP-CNB scores and expression levels, with appropriate controls and ethical approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C16 and C52-C77 describe the experimental design, model selection, peptide synthesis, and ethical compliance. The methodology is clearly documented with appropriate controls (*Herc6 as negative control, Trp2 as positive control) and follows standard practices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C68",
+      "C69",
+      "C72"
+    ],
+    "result": "NAP-CNB-predicted TNAs induced robust immune responses in mice as measured by ELISpot and ICS assays, with *Herc6 (predicted non-immunogenic) showing no response and other peptides showing elevated IFN\u03b3-secreting cells and CD8+ T-cell activation markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are supported by appropriate immunological assays (ELISpot, ICS) with proper statistical analysis (C72: one-way ANOVA with Dunnett correction). The negative control (*Herc6) performed as predicted, and the positive results validate NAP-CNB's immunogenicity predictions. Sample size (n=5) is adequate for immunogenicity screening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C56",
+      "C58",
+      "C59",
+      "C60",
+      "C71",
+      "C74"
+    ],
+    "result": "Control experiments established baseline tumor growth and survival in non-vaccinated mice, validated the positive control (Trp2), and confirmed *Herc6 as a true negative control in the B16 F10 tumor challenge model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 describe appropriate positive and negative controls with clear outcomes. The methodology (C56, C58-C60, C71, C74) is standard for tumor challenge studies. Statistical analysis using log-rank test is appropriate for survival data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Individual vaccination with *Pnp and *Lrrc28 showed variable antitumor responses with modest, non-significant survival improvements, while *Adar (lowest expression) showed no efficacy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C27-C29 report variable outcomes with small sample sizes (n=4 per group, C61). The high variability within groups and lack of statistical significance (C28) make it difficult to draw firm conclusions about these individual peptides. Larger sample sizes would be needed to determine if the observed trends are meaningful.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C34"
+    ],
+    "result": "Vaccination with a mixture of three predicted TNAs (*Pnp, *Adar, *Lrrc28) induced strong antitumor responses comparable to or better than the positive control Trp2, with 100% of animals showing tumors <100 mm\u00b3 at day 15 and significantly increased survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C34 demonstrate the efficacy of multiantigen vaccination with clear quantitative outcomes (100% effectiveness at day 15) and statistically significant survival improvement (Figure 3A, p<0.05). This represents a key finding supporting the multiantigen approach, though the small sample size (n=4) limits generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C31",
+      "C34"
+    ],
+    "result": "Vaccination with *Wiz alone (high expression, identified after post-processing) elicited powerful antitumor responses with 100% effectiveness at day 15 and considerably improved survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C34 show that *Wiz, despite weaker immunogenicity in ELISpot (C18), produced excellent antitumor efficacy. This supports the value of considering expression levels and post-processing in neoantigen selection. However, the small sample size (n=4) limits confidence in the generalizability of this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C3",
+      "C37"
+    ],
+    "result": "Optimal antitumor activity was observed with *Wiz, which had higher tumor expression but weaker immunogenicity, suggesting that prioritizing TNAs with higher expression levels may be more effective than selecting based solely on immunogenicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3 and C37 propose that expression level is more important than immunogenicity based on *Wiz performance. However, this conclusion is based on a single peptide comparison with small sample sizes. The relationship between expression, immunogenicity, and efficacy requires more systematic investigation across multiple antigens to establish this as a general principle.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C38"
+    ],
+    "result": "Multiantigen vaccination targeting various tumor epitopes simultaneously showed vastly improved responses compared to individual antigens and holds significant potential for preventing immune escape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C38 are supported by the superior performance of the peptide mixture compared to individual peptides (C30, C34). The data demonstrate synergistic effects of combining antigens, though the mechanism for preventing immune escape is inferred rather than directly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C35",
+      "C36"
+    ],
+    "result": "NAP-CNB effectively identifies tumor neoantigens that elicit potent antitumor responses in mice, demonstrating that machine learning-based in silico approaches can identify TNAs for anticancer targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22, C35, and C36 are supported by the experimental validation showing that NAP-CNB predictions correlated with immunogenicity and antitumor efficacy. The negative control (*Herc6) and positive results with predicted TNAs validate the platform's predictive capability, though the small sample sizes and single tumor model limit generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Vaccination effectiveness at day 15 ranged from 0% (PBS, *Herc6, *Adar) to 50-75% (*Lrrc28, *Pnp) to 100% (Trp2, *Wiz, peptide mixture).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 provide quantitative effectiveness metrics based on tumor size at day 15. These are clearly presented in Figure 2J and provide a useful summary measure, though the small sample size (n=4) means these percentages have wide confidence intervals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C73"
+    ],
+    "result": "ICS assay methodology used 4\u00d710\u2076 splenocytes stimulated for 12 hours, with results analyzed using bootstrap distribution and 95% confidence intervals for the ratio of vaccinated to unvaccinated groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70 and C73 describe appropriate ICS methodology and statistical analysis. The bootstrap approach for analyzing ratios is valid, though the manuscript does not specify the number of bootstrap iterations or provide details on handling zero values in the denominator.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Current cancer immunotherapies face challenges including low response rates, relapses, severe side effects, and the need for better neoantigen identification and multiantigen approaches, representing an important but relatively unexplored area where deep learning methods show promise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C44-C49 provide appropriate background context supported by relevant citations. These claims accurately represent the current state of the field and the challenges motivating the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "Trp2 is a well-established tumor-associated antigen that induces potent cellular responses and serves as an appropriate positive control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by citation to Castle et al., 2012, and Trp2's performance in the experiments (C25) validates its use as a positive control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The proof-of-concept experiments bolster prospects for translating TNA identification into practical personalized cancer treatments, with rapid neoantigen identification potentially allowing treatment of currently untreatable tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 make broad translational claims based on a single tumor model with small sample sizes. While the results are promising, the leap from B16 F10 melanoma in mice to clinical applications in diverse human cancers requires substantial additional validation. These are speculative statements about future impact rather than demonstrated results.",
+    "result_type": "MAJOR"
+  }
+]

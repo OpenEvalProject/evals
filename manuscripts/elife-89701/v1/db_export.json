@@ -1,0 +1,2429 @@
+{
+  "submission": {
+    "id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:35:35.242941Z",
+    "updated_at": "2025-11-21T22:35:35.242941Z"
+  },
+  "content": [
+    {
+      "id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "content_type": "manuscript",
+      "content_text": "# Systems analysis of miR-199a/b-5p and multiple miR-199a/b-5p targets during chondrogenesis\n\n## Authors\n\n- Krutik Patel<sup>1</sup> ([ORCID: 0000-0001-6806-8675](https://orcid.org/0000-0001-6806-8675)) \u2020\n- Matt Barter<sup>2</sup>\n- Jamie Soul<sup>2</sup>\n- Peter Clark<sup>1</sup>\n- Carole Proctor<sup>1</sup>\n- Ian Clark<sup>4</sup> ([ORCID: 0000-0003-2619-0896](https://orcid.org/0000-0003-2619-0896))\n- David Young<sup>2</sup> ([ORCID: 0000-0002-7078-6745](https://orcid.org/0000-0002-7078-6745)) \u2020\n- Daryl P Shanley<sup>1</sup>\n\n### Affiliations\n\n1. Campus for Ageing and Vitality, Biosciences Institute, Newcastle University Newcastle-upon-Tyne United Kingdom ([ROR:01kj2bm70](https://ror.org/01kj2bm70))\n2. Regenerative Medicine, Stem Cells, Transplantation, Biosciences Institute, Newcastle University Newcastle upon Tyne United Kingdom ([ROR:01kj2bm70](https://ror.org/01kj2bm70))\n3. Computational Biology Facility, Faculty of Health and Life Sciences, University of Liverpool Liverpool United Kingdom ([ROR:04xs57h96](https://ror.org/04xs57h96))\n4. School of Biological Sciences, University of East Anglia Norwich United Kingdom ([ROR:026k5mg93](https://ror.org/026k5mg93))\n\n\u2020 Corresponding author\n\n## Abstract\n\nChanges in chondrocyte gene expression can contribute to the development of osteoarthritis (OA), and so recognition of the regulative processes during chondrogenesis can lead to a better understanding of OA. microRNAs (miRNAs) are key regulators of gene expression in chondrocytes/OA, and we have used a combined experimental, bioinformatic, and systems biology approach to explore the multiple miRNA\u2013mRNA interactions that regulate chondrogenesis. A longitudinal chondrogenesis bioinformatic analysis identified paralogues miR-199a-5p and miR-199b-5p as pro-chondrogenic regulators. Experimental work in human cells demonstrated alteration of miR-199a-5p or miR-199b-5p expression led to significant inverse modulation of key chondrogenic genes and extracellular matrix production. miR-199a/b-5p targets FZD6, ITGA3 and CAV1 were identified by inhibition experiments and verified as direct targets by luciferase assay. The experimental work was used to generate and parameterise a multi-miRNA 14-day chondrogenesis kinetic model to be used as a repository for the experimental work and as a resource for further investigation of this system. This is the first multi-miRNA model of a chondrogenesis-based system, and highlights the complex relationships between regulatory miRNAs, and their target mRNAs.\n\n## Introduction\n\nDifferentiation of mesenchymal stem cells (MSCs) into chondrocytes occurs by the process of chondrogenesis (Bosnakovski et al., 2006). This is an important process during development as it is a pre-requisite for skeletogenesis. Chondrocytes perform the vital role of generating cartilage during embryogenesis, but also maintain cartilage throughout life, including at the ends of long bones in articulating joints (Akkiraju and Nohe, 2015). The master transcription factor responsible for chondrogenesis is SOX9 and during this process chondrocytes secrete anabolic proteins such as type II collagen and aggrecan, encoded by COL2A1 and ACAN, which constitute a significant functional portion of the cartilaginous extracellular matrix (ECM) (Akkiraju and Nohe, 2015; Hoshi et al., 2017). With increasing age and influenced by a mixture of factors such as (epi)genetics, obesity, and mechanical injury/stress, chondrocytes will increasingly express catabolic proteins such as matrix metalloproteinases which degrade the cartilage ECM (Hoshi et al., 2017). Ultimately the chronic loss of cartilage contributes to the extremely debilitating condition osteoarthritis (OA), which remains incurable with treatment options limited to pain relief medication and end-stage joint replacement surgery (Gr\u00e4ssel and Muschter, 2020; Loeser et al., 2012).\n\nmiRNAs are short non-coding RNAs \u2013 roughly 19-22 nt long that negatively regulate target mRNAs (Bartel, 2009; Sevignani et al., 2006). Mammalian miRNA\u2013mRNA interactions occur via complementary sequence specificity between a 7 and 8 nt stretch of the miRNA known as the seed sequence, and positions along the 3\u2032UTR of the target mRNA (Lai, 2002; Doench and Sharp, 2004). miRNA\u2013mRNA interactions are complex because a single mRNA can be targeted by many miRNAs, and a single miRNA can target many mRNAs. Our previous work identified significantly altered miRNAs during chondrogenesis and demonstrated the role of miR-140 in regulating chondrocyte gene expression (Barter et al., 2015). miR-140 has emerged as a vital regulator of chondrogenesis, cartilage, and OA, and have been hypothesized as effective drug targets due to their pro-chondrogenic regulation (Miyaki et al., 2009; Katoh et al., 2021; Swingler et al., 2012; Karlsen et al., 2016). Additional miRNAs, such as miR-455, have also been shown to be important regulators in maintaining healthy cartilage and protecting against OA development (Hu et al., 2019; Ito et al., 2021).\n\nTo identify further important miRNAs from this dataset, and to overcome the complexity of miRNA\u2013mRNA interactions, we performed a combined bioinformatic, experimental and systems biology approach to better understand the relationship between miRNAs which may be important to chondrogenesis, and their predicted targets. We identified miR-199a-5p and miR-199b-5p as pro-chondrogenic miRNAs. Just as with miR-140-5p and miR-455, we anticipated miR-199a-5p and miR-199b-5p (miR-199a/b-5p) to target multiple mRNAs during chondrogenesis. To this end we used experimental, informatic, and literary data to build kinetic models to explain how miR-199a/b-5p regulated chondrogenesis. The models included three targets identified through RNAseq analysis (FZD6, ITGA3, and CAV1), and were used to make predictions to fill experimental gaps and predict novel interactions between miR-199a/b-5p and the chondrogenesis machinery.\n\n## Results\n\n### Analysis with TimiRGeN identified miR-199b-5p to be upregulated during chondrogenesis\n\nOur previously generated 14-day chondrogenesis time-series dataset was analysed with the TimiRGeN R/ Bioconductor package \u2013 a novel tool we developed to analyse longitudinal miRNA\u2013mRNA expression datasets (Barter et al., 2015; Patel et al., 2021). Prior to using TimiRGeN, the transcriptomic data underwent timepoint-based differential expression analysis using the day 0 timepoint (MSCs) as the control group for chondrogenesis samples measured at days 1, 3, 6, 10, and 14, and thus created differential expression data over five timepoints. TimiRGeN identified signalling pathways of interest over the 14-day time-series data (Supplementary file 1a). Eight signalling pathways were found enriched in at least three of the five timepoints (Figure 1). The TimiRGeN pipeline was then used to predict miRNA\u2013mRNA interactions that may regulate each of the eight pathways. miRNA\u2013mRNA interactions were kept if the miRNA and mRNA involved in the interaction has a Pearson correlation <\u22120.75 across the time series and if the interaction was predicted in at least two of the following three databases: TargetScan, miRDB, or miRTarBase (Agarwal et al., 2015; Huang et al., 2020; Chen and Wang, 2020). To identify which miRNAs involved in the miRNA\u2013mRNA interactions were positively changing in each of the eight signalling pathways, we scaled the log2FC values from limma (Ritchie et al., 2015). By using scaled log2FC values, we could highlight magnitude of change, rather than total change (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89701/elife-89701-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overrepresentation analysis (ORA) of the differentially expressed miRNAs and mRNAs at each timepoint contrasted to D0. For each significantly enriched pathway identified, the number of associated genes found from the pathway is shown on the x-axis. (B) Line plots displaying scaled log2FC values over the 14-day time course for the indicated pathways. Acronyms are defined the text. MRCC = metabolic reprogramming in colon cancer. Here, individual genes found in the filtered miRNA\u2013mRNA interactions for each pathway are plotted along a time course. Only genes (miRNAs or mRNAs) that have a scaled log2FC value of at least 1 at any point of the line plot are highlighted and labelled.\n\nmiR-140-5p was the most positively changing miRNA in the following seven pathways: adipogenesis, clear cell renal cell carcinoma pathways (CCRCCP), epidermal growth factor/epidermal growth factor receptor (EGF/EGFR), endochondral ossification, endochondral ossification with skeletal dysplasia (EOSD), gastrin signalling pathway, and vascular endothelial growth factor-A/vascular endothelial growth factor receptor 2 signalling pathway (VEGFA-VEGFR2). miR-199b-5p was the second most positively changing microRNA in the following six pathways: CCRCCP, EGF/EGFR, endochondral ossification, EOSD, gastrin signalling pathway, and VEGFA-VEGFR2. Other miRNA/genes such as hsa-miR-455-5p and BMP2 were also of interest, but we focused on hsa-miR-199b-5p and its paralogue miR-199a-5p since these are comparatively under-researched miRNAs within the context of chondrogenesis (Barter et al., 2015).\n\n### Expression of chondrogenic biomarkers and glycosaminoglycan levels change over time after altering miR-199a-5p or miR-199b-5p expression\n\nTo identify if miR-199a-5p and miR-199b-5p regulate chondrogenesis, we performed MSC chondrogenic differentiation and measured the consequences of miR-199 overexpression and inhibition (Figure 2\u2014figure supplement 1) on chondrogenic biomarkers ACAN, COL2A1, and SOX9 and glycosaminoglycan (GAG) levels. Significant upregulation was seen in ACAN, COL2A1, and GAG (DMB) levels following miR-199a-5p overexpression (Figure 2A). In contrast, when miR-199a-5p expression was inhibited ACAN, COL2A1, and SOX9 were significantly downregulated at multiple timepoints (Figure 2B). GAG levels were also significantly decreased, by ~40%, at day 7. When miR-199b-5p was inhibited, similar significant downregulation of ACAN, COL2A1, and GAG levels occurred (Figure 2C). Inhibition of miR-199a-5p and -199b-5p together caused a more consistent reduction of ACAN, COL2A1, and SOX9 expression.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89701/elife-89701-fig2-v1.jpg)\n\n**Figure 2.:** Mesenchymal stem cells (MSCs) were transfected for 24 hr with miR-199a-5p, miR-199b-5p, or non-targeting miRNA control mimics or inhibitors prior to the induction of chondrogenesis. (A) Overexpression of miR-199a-5p. (B\u2013D) Inhibition of (B) miR-199a-5p (C), miR-199b-5p, or (D) miR-199a-5p and -199b-5p. (A\u2013D) At days 0, 1, 3, and 7 after initiation of chondrogenesis, RNA was extracted and measurements of ACAN, COL2A1, and SOX9 gene expression were taken. qPCR results for day 0 were undetectable for COL2A1. Gene expression was normalised to 18S. Values are the mean \u00b1 SEM of data pooled from 3 to 4 separate MSC donors (N=3-4), with 4\u20136 biological replicates per donor (n=4-6). Presented as % of non-targeting control levels. The p-values calculated by paired two-tailed Student\u2019s t-test, NS = not significant, *<0.05, **<0.01, ***<0.001.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89701/elife-89701-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** RNA was extracted, reverse transcribed, and (A) miR-199a-5p or (B) miR-199a-5p/199b-5p expression measured by qRT-PCR normalised to U6.\n\n### FZD6, ITGA3, and CAV1 are the most significantly upregulated miR-199a/b-5p targets during MSC chondrogenesis\n\nMultiple mRNA targets of miR-199a/b-5p are likely regulated during chondrogenesis. To elucidate which genes are most affected by miR-199 inhibition, we performed an RNAseq experiment to identify candidate targets during the early phase of MSC chondrogenesis comparing MSC samples which were undifferentiated (day 0) and MSC samples which were in the early stages of chondrogenesis (day 1). Chondrogenic markers were downregulated by miR-199 inhibition in the early stages of chondrogenesis (Figure 2), so we reasoned that identifying mRNAs which are positively enriched during the first few days of chondrogenesis may identify the most important mRNA targets of miR-199a/b-5p. We chose to inhibit miR-199a-5p or miR-199b-5p since supraphysiological overexpression of miRNA mimics can lead to spurious findings (Jin et al., 2015). Initial comparison between day 1 differentiated and day 0 undifferentiated control samples identified 4391 upregulated and 4168 downregulated significantly differentially expressed genes (DEGs) (<0.05 adjusted p-value). Positively changing genes included COL2A1 (log2fc = 11.6), ACAN (log2fc = 9.18), and SOX9 (log2fc = 3.37). Gene Ontology (GO) term analysis on the upregulated genes confirmed that the cells were differentiating towards chondrocytes with terms such as skeletal system development, ECM organisation, and regulation of cartilage development significantly (adjusted p-values<0.05) enriched (Supplementary file 1b).\n\nTo identify miR-199-regulated genes, undifferentiated control MSC samples were contrasted against undifferentiated MSCs with either miR-199a-5p or miR-199b-5p inhibition, which respectively resulted in 87 and 46 significantly DEGs (adjusted p-values<0.05) (Supplementary file 1). Similar comparisons at day 1 of chondrogenesis revealed inhibition of miR-199a-5p or miR-199b-5p respectively resulted in 674 and 817 DEGs. Here, 25 and 341 genes intersected between day 0 and day 1 chondrogenesis inhibition experiments, indicating that both microRNAs may share functional repertoire of targets (chi-square observed vs. expected day 0 = 0.003477, day 1 = 0.000624). COL2A1, ACAN, and SOX9 were significantly lower in expression in day 1 samples after miR-199 inhibition, validating the negative impact on chondrogenesis. GO term analysis was conducted to identify biological processes linked to miR-199a/b-5p inhibition (Figure 3A). Interestingly several terms associated with chondrogenesis were suppressed/less activated during day 1 analyses, including ECM constituents, skeletal system morphogenesis, ECM, and collagen containing ECM.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89701/elife-89701-fig3-v1.jpg)\n\n**Figure 3.:** Results from RNAseq analysis of control miRNA, miR-199a-5p, and miR-199b-5p inhibition experiments. (A) Gene Ontology (GO) analysis for the significantly differentially expressed genes found from miR-199a-5p or miR-199b-5p inhibition at day 0 and day 1 of chondrogenesis. Up to five activated and five suppressed pathways are displayed for each contrast. All GO terms shown have an adjusted p-value of <0.05. Count size represents the genes found in a pathway and this determined the size of the circles. (B) Volcano plots to display gene expression changes following inhibition of miR-199a or miR-199b at day 0 (D0) or day 1 (D1). The miRNAtap-selected 21 miR-199a/b-5p targets are identified (and labelled, space permitting) in red or blue if up- or downregulated The cut-off for significance was an adjusted (BH) p-value of <0.05. miR-199a/b-5p targets were upregulated by miR-199a/b-5p inhibition.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89701/elife-89701-fig3-figsupp1-v1.jpg)\n\nThe significantly differentially expressed genes were also analysed using the miRNAtap R package to predict miR-199a-5p and miR-199b-5p targets (Figure 3B). Twenty-one potential mRNA targets were predicted to be targeted by both miRNAs, and in alphabetical order they were ABHD17C, ATP13A2, CAV1, CTSL, DDR1, FZD6, GIT1, HIF1A, HK2, HSPA5, ITGA3, M6PR, MYH9, NECTIN2, NINL, PDE4D, PLXND1, PXN, SLC35A3, SLC35D1, VPS26A. The expression patterns of these 21 miR-199 target genes were also explored in our microarray study (Supplementary file 1c; Barter et al., 2015). SkeletalVis was used to contrast the behaviour of the 21 genes in other MSC-derived chondrogenesis studies (Supplementary file 1d; Soul et al., 2019; Huang et al., 2010; Huynh et al., 2019). The tables showed many of genes found through our bioinformatic analysis to be significantly downregulated during chondrogenesis in multiple studies, and this included CAV1, FZD6, ITGA3, and MYH9. We decided to further explore if FZD6, ITGA3, and CAV1 were true targets of miR-199a/b-5p because in terms of adjusted p-values these three showed the most significant change (Figure 3B, Figure 3\u2014figure supplement 1).\n\nTo confirm the effects miR-199a-5p and miR-199b-5p had on the targets identified through RNAseq, we performed a series of inhibition experiments. Since the miRNAs shared the same seed site sequence (nucleotides 2\u20138; 5\u2032-CCAGUGUU-3\u2032), we tested if inhibition of one miRNA would lead to similar or different effects to inhibition of both miRNAs (Figure 2\u2014figure supplement 1). For this, we picked to suppress expression of miR-199a-5p as it was the more highly expressed of the two paralogues and contrasted it to inhibition of miR-199a/b-5p. We tested the effects of the inhibition by measuring the expression of the three most significantly enriched predicted miR-199a/b-5p targets from our bioinformatic analysis \u2013 FZD6, ITGA3, and CAV1 (Figure 4A1). We saw significant upregulation of FZD6, ITGA3, and CAV1 after miR-199a-5p inhibition and miR-199a/b-5p inhibition. There was no consistent improvement of the combination of miR-199a-5p and miR-199b-5p over miR-199a-5p alone. We also tested the third most significant predicted target of miR-199a/b-5p \u2013 CAV1, and how its expression changed after miR-199b-5p inhibition over the same time course, and we saw CAV1 levels were significantly increased post miR-199b-5p inhibition (Lino Cardenas et al., 2013; Figure 4A2).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89701/elife-89701-fig4-v1.jpg)\n\n**Figure 4.:** (A1\u20132) Mesenchymal stem cells (MSCs) were transfected for 24 hr with miR-199a-5p, miR-199a/b-5p, miR-199b-5p, or non-targeting miRNA control inhibitors prior to the induction of chondrogenesis. At days 0, 1, 3, and 7 after the initiation of chondrogenesis, RNA was extracted and (A1) FZD6, ITGA3, and CAV1 expression was measured after miR-199a-5p and miR-199a/b-5p inhibition, or (A2) CAV1 levels were also measured after miR-199b-5p inhibition. Gene expression was normalised to 18S. Presented as % of non-targeting control levels. (B1\u20132) Luciferase expression in SW1353 cells following co-transfection of miR-199a-5p or non-targeting control mimic and miR-199a-5p target 3\u2032UTR reporter constructs for 24 hr. (B1) FZD6 and ITGA3 3\u2032UTR-regulated expression normalised to renilla luciferase. (B2) Wildtype and mutant FZD6 and ITGA3 3\u2032UTR-regulated expression normalised to renilla and presented as percentage of non-targeting control levels. Values shown are the mean \u00b1 SEM of data pooled from (A) three separate MSC donors (N=3), with 4\u20136 biological replicates per donor (n=4-6), or (B) three independent experiments (n=3). p-Values were calculated using paired two-tailed Student\u2019s t-test, NS = not significant, *<0.05, **<0.01, ***<0.001.\n\nUnlike FZD6 and ITGA3, CAV1 has previously been established to be a direct target of miR-199a-5p (Lino Cardenas et al., 2013). To identify if FZD6 and ITGA3 were also direct miRNA targets, we cloned the 3\u2032UTR regions of FZD6 and ITGA3 directly downstream of the firefly luciferase gene and demonstrated reduced expression compared to empty control vector, suggesting that these contain potentially repressive elements (Figure 4B1). Introduction of an excess of miR-199a-5p into the cells further repressed expression, suggesting that both FZD6 and ITGA3 3\u2019UTRs are direct miR-199a-5p targets. This was confirmed by mutation of the predicted miR-199-5p seed sequence within the 3\u2032UTR of each gene which reduced the extent of inhibition of luciferase levels caused by the miRNA (Figure 4B2).\n\n### Kinetic modelling creates an in silico demonstration of how miR-199a-5p/miR-199b-5p regulates chondrogenesis\n\nWe attempted to capture the complexity of how miR-199a/b-5p regulated chondrogenesis using an in silico model (Figure 5A). Only using the experimental data presented in this article, and our previous microarray work, we developed a model to demonstrate the relationships between chondrogenic biomarkers and the targets of miR-199a/b-5p we identified through RNAseq and subsequent inhibition experiments. Finally, we used events to simulate inhibition of miR-199a-5p or miR-199b-5p (Figure 5B). The experiments shown in Figures 2A, C, 4A were used to parameterise the model, and since the experiments were performed in a staggered manner, we can use the model to make predictions to fill experimental gaps. Using this model, we predicted the dynamics of the chondrogenesis biomarkers and CAV1 after miR-199a-5p inhibition and the dynamics of FZD6 and ITGA3 after miR-199b-5p inhibition. Most objects within the model were based on experimental data, and the differences between the experimental data and simulated data are calculated by mean squared error (MSE). In the initial model, 15/18 modelled objects with experimental data had an MSE of lower than 3, indicating that most of the experimental data was captured by the model, and the average MSE for the model was 15.96.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/89701/elife-89701-fig5-v1.jpg)\n\n**Figure 5.:** (A) Schematic of how miR-199a/b-5p modulation effects the predicted miR-199a/b-5p FZD6, ITGA3, and CAV1, and the chondrogenic biomarkers SOX9, COL2A1, ACAN, and GAG. (B) Simulations (blue lines) from the kinetic modelling were contrasted against the experimental data \u2013 if available (red line) and a mean squared error (MSE) score is provided in these cases. Alternatively, if no experimental data was available, a dashed blue line displays the predicted behaviour of the gene. If multiple measurements were available, they have been displayed using red crosses. (C) A more detailed model displaying how miR-199a/b-5p regulates chondrogenesis via FZD6, ITGA3, and CAV1 mRNAs, in GRN form. Here, information from the literature was added and miR-140-5p was added to the model. The GRN shown here is a minimalistic version of Figure 5\u2014figure supplement 1. This was used to inform the topology of a kinetic model which aimed to explain how miR-199a-5p and miR-199b-5p act as pro-chondrogenic regulators by downregulating activity of FZD6, ITGA3, and CAV1 mRNAs. This GRN contained 18 species including two proteins (TGFB3, SOX9), one phospho-protein (phospho-SOX9), three mRNAs (SOX9, ACAN, COL2A1), three miRNAs (miR-140-5p, miR-199a-5p, miR-199b-5p), two drugs (hpmiR-199a-5p, hpmiR-199b-5p), six protein activity (SRC, CAV1, FZD6, ITGA3, OtherTargets, OtherTargetsRegulator), and one phenotype (GAG). Each species has a sink and a source. Species are also shaped based on their properties: Proteins are rectangles, RNAs are rhombus, phenotypes are hexagons, drugs are oval, and gene activity are rectangles with dotted lines. Species are also highlighted with a white box if they are found in the extracellular matrix (ECM) or pink if they are found within a chondrocyte. Edges between species are solid if there is literature/data supporting an interaction or dotted if there the interaction is hypothetical. Species are also colour coded: green if there is associated data, blue if there is some data and the rest has been inferred based on literature, or grey if there is no data associated with the species. (D) Simulations from modelling the more detailed miR-199a/b-5p chondrogenesis model. Notations follow (B).\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89701/elife-89701-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** This broader GRN contained 40 species including 12 proteins (TGFB3, SRC Kinase, CAV1, FZD6, ITGA3, SOX9, IL-1, NfkB, MMP13, ADAMTS5, SMAD2, SMAD3), 6 phospho-protein (phospho-SRC kinase, phospho-SOX9, phospho-CAV1, phospho-ROCK1, phospho-SMAD2, phospho-SMAD3), 2 RHOA states (GDP-RHOA, GTP-RHOA), 6 mRNAs (SOX9, ACAN, COL2A1, CAV1, FZD6, ITGA3), 3 miRNAs (miR-140-5p, miR-199a-5p, miR-199b-5p), and 6 phenotypes/ECM constructs (GAG, chondrogenesis, fibrillogenesis, ECM fibronectin, fibronectin-chondrocyte binding, fibronectin fragments). Each species as a sink and a source. Species are also shaped based on their properties: Proteins are rectangles, RNAs are rhombus, phenotypes are hexagons, and drugs are oval. Species are also highlighted with a white box if they are found in the ECM or pink if they are found within a chondrocyte. Species are also colour coded: green if there is associated data, blue if there is some data and the rest has been inferred based on literature, or grey if there is no data associated with the species.\n\nTo enhance our initial model, we added further detail to increase biological relevance. This included the addition of transforming growth factor beta (TGFB) as a trigger for chondrogenesis initiation \u2013 just as we had during our chondrogenesis MSC experiments. We found strong mechanistic links between TGFB signalling and CAV1 expression via SRC kinase. Based on our previous work, we also included miR-140-5p as it has been proven as a vital regulator of chondrogenesis, and with our kinetic model we predicted how miR-199a-5p or miR-199b-5p inhibition indirectly affected miR-140-5p. Further to this, we identified several flaws in our initial model, which we attempted to rectify using the enhanced chondrogenesis model. Firstly, by simulating the miR-199a-5p and miR-199b-5p inhibition to last until day 7, we saw that SOX9 mRNA, COL2A1 mRNA, and ACAN mRNA dynamics between days 1 and 7 of miR-199b-5p inhibition were flat. Furthermore, our CAV1 dynamics were also flat during miR-199b-5p inhibition. Figure 2C shows, from miR-199b-5p inhibition, the chondrogenesis biomarkers had a sharp decrease followed by a steady rise until day 7, and to match the effect of the miR-199b-5p inhibition experiments, we simulated the inhibition to last until day 4.5 instead of day 7. Doing so increased the similarities between our experimental data and simulations. Secondly, we wanted to include other miR-199a/b-5p targets which were alluded to in our RNAseq experiment, but not further explored, such as MYH9 and PDE4D. We added a blackbox named \u2018OtherTargets\u2019 to represent other targets which miR-199a/b-5p regulate during chondrogenesis. Also, to delay the decrease in ACAN, COL2A1, and GAG levels after miR-199a/b-5p inhibition, we slowed down the interactions between the miR-199a/b-5p targets and SOX9 by including SOX9 protein and SOX9 phospho-protein as objects in the model (Figure 5C and D). In the enhanced model, 14/18 (77.7%) of the objects with experimental data had an MSE of >3, indicating the model \u2013 even with additional data from the literature \u2013 still captured much of the experimental data. Also, the average MSE was 12.08, indicating an improvement over the initial model.\n\nFrom the enhanced model, we saw improved dynamics for several model objects, for example, GAG, CAV1, SOX9, ACAN, COL2A1. Our MSE values which were used to quantify how similar our models\u2019 simulations were in contrast to our experimental data. Generally, our MSE values were better in our enhanced model for the chondrogenesis biomarkers and GAG levels, though our MSE values were better in our initial model for the miR-199a/b-5p targets. Overall, we saw the dynamics improved in the enhanced model, and in addition, we could make predictions on how miR-140-5p levels would indirectly be influenced from knock-down of miR-199a-5p or miR-199b-5p and such a multi-miRNA model has not yet been created before. Further pathways such as the Wnt signalling pathway may also play an important role in this system but could not be explored via modelling with our current level of data. We developed a hypothesis-rich GRN to display further pathways which were not in the scope of this project (Figure 5\u2014figure supplement 1).\n\n## Discussion\n\nOur initial work in this area used a combined experimental and bioinformatics approach to identify and study the roles of miR-140 and miR-455 which were highly important to chondrogenesis (Barter et al., 2015; Swingler et al., 2012). This current work extends this, to identify other miRNAs of regulatory importance during chondrogenesis utilising a recently developed tool (TimiRGeN R/Bioconductor package) (Patel et al., 2021). Here, we combined experimental, bioinformatic, and systems biology approaches to identify and study the role of miR-199a/b-5p during chondrogenesis. The MIR199 family were identified as pro-chondrogenic in mouse mesenchymal C3H10T1/2 cells, reportedly by targeting SMAD1 (miR-199a-3p) and JAG1 (miR-199a/b-5p), respectively (Zhang et al., 2020; Lin et al., 2009). Having previously shown the substantial upregulation of miR-199a/b-5p during chondrogenesis, we now show through both loss- and gain-of-function experiments that miR-199a/b-5p also promotes SOX9, COL2A1, and ACAN expression in human MSC chondrogenesis, thus enhancing cartilage formation (Barter et al., 2015). RNAseq analysis identified key targets of miR-199a/b-5p including FZD6, ITGA3, and CAV1, which were experimentally validated and subsequently incorporated into an in silico kinetic model.\n\nmiR-199a and miR-199b are vertebrate-specific miRNAs which exhibit an expression pattern associated with mesenchymal tissues and the skeleton (Desvignes et al., 2014). Antisense transcript Dmn3os encodes miR-199a and miR214 and its deletion in mice causes skeletal defects including short stature and cranial deformity (Watanabe et al., 2008). Similar phenotypic consequences caused by the loss of DNM3OS and therefore MIR199A and MIR214 have also been reported in humans (Lefroy et al., 2018). miR-214 has since been reported to negatively impact on chondrocyte differentiation, through targeting ATF4 (Roberto et al., 2018). Thus, our demonstration of the pro-chondrogenic nature of miR-199a-5p and miR-199b-5p in human MSCs, in addition to the previous demonstration in mouse C3H10T1/2 cells, further supports the role of these miRNAs in the chondrogenesis and formation of the skeleton.\n\nWe show for the first time functional evidence for the miR-199b-5p-CAV1 interaction to occur in human MSCs. Several mechanisms reported in the literature may also support how miR-199a/b-5p-CAV1 could regulate chondrogenesis, such as TGFB triggering phosphorylation of CAV1 via SRC-kinase (Lino Cardenas et al., 2013). In contrast to CAV1, FZD6 and ITGA3 have been less well studied as miR-199a/b-5p targets though, miR-199a-5p-FZD6 has been predicted previously (Lin et al., 2009; Kim et al., 2015). Our luciferase assays validate for the first time that FZD6 is a target of miR-199a-5p. Previous work by our group has validated FZD6 as a target of miR-140-5p, so it is likely a highly important gene in chondrogenesis. ITGA3 meanwhile has been found to be a target of miR-199a-5p in neck and head cancer cells, and our results confirm this interaction in humans MSCs (Tian et al., 2020).\n\nThe presented model topology (Figure 5A and C) was based on our experimental work. Our initial model (Figure 5A) was reworked to better match the experimental patterns seen and to include additional genes which we can make prediction from. The enhanced chondrogenesis model (Figure 5C) was initiated with TGFB3, which was used to initiate chondrogenesis in our experiments and was therefore used as the proxy for chondrogenic initiation. As such, TGFB3 promoted miR-199a/b-5p levels to match our microarray data, though based on our previous data TGFB may not directly regulate miR-199a/b-5p levels (Barter et al., 2015). TGFB3 also induced CAV1 via SRC kinase and induced SOX9 via the SMAD2-SMAD3 pathway, which then stimulated SOX9 protein production (SMAD2/3 were not included in the models) (Coricor and Serra, 2016; Peng et al., 2008; Mishra et al., 2007). However, our microarray data showed CAV1 gene expression decreased during early chondrogenesis, but then increased again \u2013 perhaps indicating CAV1 has a smaller negative regulative effect on chondrogenesis, or only effects early chondrogenesis. Gene expression of FZD6, ITGA3, CAV1 and the OtherTargets blackbox all had inverse relationships with miR-199a-5p and miR-199b-5p, and FZD6 was also negatively regulated by miR-140-5p. SOX9 mRNA, SOX9, and P-SOX9 were all treated as separate objects in this model. P-SOX9 promoted COL2A1, ACAN, and miR-140-5p expression. ACAN contributed directly, and to the greatest extent, to GAG levels (since most cartilage GAGs are post-translationally added to Aggrecan, the protein product of ACAN) which was used as the phenotypic level output for the model and a proxy for chondrogenesis progression (Barter et al., 2015; Roughley and Mort, 2014; Hardingham and Fosang, 1992; Huang et al., 2000). Precise mechanisms of how FZD6 and ITGA3 regulated chondrogenesis are unclear, with potentially implicated pathways included in the larger GRN (Figure 5\u2014figure supplement 1). FZD6 is a transmembrane protein which functions as a receptor for WNT signalling proteins to, most commonly, activate the non-canonical planar cell polarity pathway. However, elements of the Wnt signalling pathway have been implicated to act antagonistically to chondrogenesis (Corda and Sala, 2017; Snelling et al., 2016). ITGA3 is a cell surface integrin which forms a heterodimer with ITGB1 to form \u03b13\u03b21 heterodimers through which chondrocyte\u2013fibronectin ECM connections can be created (LaPointe et al., 2013; Loeser, 2014). Conditional deletion of Itgb1 in cartilage impacts profoundly on skeletogenesis in mice (Aszodi et al., 2003). \u03b13 integrins have been found to increase in OA cartilage, though a direct mechanism between ITGA3 regulating SOX9 is not clear. Regulation of SOX9 via CAV1 has been more studied, which has shown that the relationship between SOX9 and CAV1 is complex and requires further testing. CAV1 may be affecting SOX9 levels, via its activation of RHOA/ROCK1 signalling, which leads to phosphorylation of SOX9. RHOA/ROCK1 inhibition has been shown to both increase levels of SOX9 and chondrogenesis biomarkers in mouse ATDC5 cells, but also decrease levels of SOX9 and chondrogenesis biomarkers in 3D-chondrocytes (Peng et al., 2008; Xu et al., 2012; Woods and Beier, 2006; Woods et al., 2005). It is likely that other mRNA targets of miR-199a/b-5p also contributed towards chondrogenesis regulation, such as the other genes identified as miR-199a/b-5p targets from the RNAseq analysis, for example, MYH9, NECTIN2. Based on this limitation, a \u2018blackbox\u2019 called OtherTargets was added to the kinetic model to represent all other anti-chondrogenic miR-199a/b-5p targets during chondrogenesis which were not explored in this study. A major limitation of the kinetic models is that we were not able to provide any multi-omic data \u2013 as no protein level, or phosphor-protein data were available. We generated a broader GRN (Figure 5\u2014figure supplement 1), which showcases how the models we created could be enhanced with such data.\n\nWhile the in silico model can serve as a resource for researchers interested in this system, there were certain genes such as CAV1 and FZD6 which proved difficult to model. At the time of building the models we assumed, miR-199a-5p inhibition would lead to a greater effect than miR-199b-5p inhibition due to miR-199a-5p being more abundant. However, we clearly see now this was a misconception and miR-199b-5p inhibition leads to a greater decrease in GAG levels and a greater increase in FZD6, ITGA3, and CAV1 levels. This could be because miR-199b-5p increases by a greater magnitude than miR-199a-5p; therefore, the inhibition of miR-199b-5p has a bigger effect on chondrogenesis. Such time-series analysis would have been unavailable by only using differential expression analysis, and the TimiRGeN R package was highly useful in finding this microRNA during our reanalysis.\n\nOur results validate miR-199a/b-5p interacting with FZD6, ITGA3, and CAV1 and for miR-199a/b-5p to provide vital pro-chondrogenic regulatory effects, as observed previously for miR-140 and miR-455. Deletion of miR-140 in both humans and mice affects skeletal development (Miyaki et al., 2010; Grigelioniene et al., 2019). Further, from in vivo mouse models miR-140 and miR-455 were additionally shown to be pivotal in protecting from OA. Recently, intra-articular injection of a miR-199a-5p mimic has been shown to reduce cartilage damage in a rat post-traumatic OA model (Huang et al., 2023). Mouse genetic studies examining the loss of both \u2013199a/b-5p, specifically in cartilage, are required to better understand the function of these miRNAs in skeletogenesis and chondrocyte development. Our results demonstrate early interest and provide a detailed kinetic model to aid researchers interested in this important topic.\n\n### Conclusion\n\nOur combined bioinformatic, laboratory, and systems biology methodology was a multi-faceted approach to explore miR-199a-5p and miR-199b-5p as pro-chondrogenic regulators. Based on our bioinformatic analysis, the three most significantly positively changing miR-199a/b-5p were predicted targets FZD6, ITGA3, and CAV. Laboratory experiments validated these as direct miR-199a/b-5p targets and confirmed that miR-199a/b-5p positively regulate chondrogenesis. However, the complex nature of miRNA function means there are likely multiple mRNA targets of miR-199a/b-5p which may work synergistically to modulate chondrogenesis. The GRN and kinetic models were created to capture the behaviours of the system which act as a useful resource for further experimental design.\n\n## Materials and methods\n\n### Data processing and differential expression analysis\n\nmRNA and miRNA data were produced using Illumina and Exiqon microarray technologies, respectively (Barter et al., 2015). mRNA data was processed using the lumi R package, and the miRNA data was processed using the affy R package (Du et al., 2008; Gautier et al., 2004). limma was then used to perform pairwise differential expression (DE) analysis (Ritchie et al., 2015). Here, the zero timepoint was used as the common denominator for all DE analyses. The timepoint-based DE analyses were D1/D0, D3/D0, D6/D0, D10/D0, and D14/D0. This type of timepoint-based DE analysis was ideal for pairwise differential expression analysis approach, as explained by Spies et al., 2019. Genes which were significantly differentially expressed (BH adjusted p-values<0.05) in at least one of the DE analyses have their adjusted p-values and log2FC values were kept for analysis by the TimiRGeN R package. All data wrangling and processing took place in R.\n\n### Analysis with the TimiRGeN R package\n\nDataframes containing mRNA and miRNA DE results were analysed using the combined mode of TimiRGeN (Patel et al., 2021). The threshold for timepoint-specific gene filtration was set as <0.05 and adjusted p-values were used for filtration. Timepoint-specific pathway enrichment used microarray probe IDs as the background dataset. Our data was from microarrays, so for more accurate overrepresentation analysis we required the microarray-specific gene lists to use as the background set of genes. GPL10558 (mRNA) and GPL11434 (miRNA) were downloaded from GEO, and the probes were annotated with entrez gene IDs using BiomaRt (Durinck et al., 2009; Edgar et al., 2002). Eight signalling pathways were enriched for at least three of the five timepoint-based DE analyses performed. miRNA\u2013mRNA interactions were retained if they had a negative Pearson correlation of <\u20130.75 and if they identified two of the three target databases used by TimiRGeN.\n\n### Human bone marrow MSC culture\n\nHuman bone marrow MSCs (from seven donors, 18\u201325\u2005years of age, three females and four males) were isolated from human bone marrow mononuclear cells (Lonza Biosciences) and cultured and phenotype-tested as described previously (Barter et al., 2015). Experiments were performed using cells between passages 2 and 10, and all experiments were repeated with cells from a minimum of three donors.\n\n### Chondrogenic differentiation\n\nMSCs were resuspended in chondrogenic culture medium consisting high-glucose DMEM containing 100 \u00b5g/ml sodium pyruvate, 10\u2005ng/ml TGF\u03b23, 100\u2005nM dexamethasone, 1\u00d7ITS-1 premix, 40\u2005\u00b5g/ml proline, and 25\u2005 \u00b5g/ml ascorbate-2-phosphate. 5 \u00d7 105 MSCs in 500\u2005\u00b5l chondrogenic medium were pipetted into 15 ml falcon tubes or 5 \u00d7 104 MSCs in 150\u2005\u00b5l chondrogenic medium were pipetted into a UV-sterilised V-bottom 96-well plate, and then centrifuged at 500 \u00d7\u2005g for 5 \u2005min. Media were replaced every 2 or 3\u2005days for up to 7days.\n\n### Dimethylmethylene blue assay\n\nChondrogenic pellets and transwell discs were digested with papain (10\u2005U/ml) at 60\u00b0C (Murdoch et al., 2007). The sulphated GAG content was measured by 1,9-dimethylmethylene blue binding (Sigma) using chondroitin sulphate (Sigma) as standard (Farndale et al., 1982).\n\n### RNA and miRNA extraction and real\u2010time reverse transcription PCR\n\nMSC chondrogenic pellets were disrupted in Ambion Cells-to-cDNA II Cell Lysis buffer (for real-time RT-PCR) or mirVana miRNA Isolation Kit Phenol (for RNA-seq) (both Life Technologies) using a small disposable plastic pestle and an aliquot of Molecular Grinding Resin (G-Biosciences/Genotech). Total RNA was then extracted and converted to cDNA using MMLV reverse transcriptase (Invitrogen) and TaqMan real-time RT-PCR was performed, and gene expression levels were calculated as described previously (Barter et al., 2010). Primer sequences and assay details can be found in the supporting information materials. For single miRNA-specific analysis, RNA was reverse-transcribed with Applied Biosystems TaqMan MicroRNA Reverse Transcription Kit (Life Technologies) and real-time RT-PCR performed with TaqMan MicroRNA assays (Life Technologies). All values are presented as the mean \u00b1\u2009SEM of replicates in pooled experiments. For experiments with multiple MSC donors, statistical testing was performed using a matched paired two-tailed Student\u2019s t-test on log-transformed values to account for non-normal distribution. Primer details are in Supplementary file 1e.\n\n### miRNA mimic/inhibitor transfection in MSC\n\nFor modulation of miR-199 levels in MSC, Dharmacon miRIDIAN mimics (C-300607) or miRIDIAN hairpin inhibitors (IH-300607) were transfected into 40\u201350% confluent MSC using Dharmafect 1 lipid reagent (Horizon Discovery) at 100 nM final concentration. Analysis was performed in comparison with Dharmacon miRIDIAN miRNA mimic nontargeting Control #2 (CN-002000-01) or Dharmacon miRIDIAN miRNA hairpin inhibitor nontargeting Control #2 (IN-002005-01). For all experiments, cells were subject to a single transfection prior to induction of MSC differentiation.\n\n### Cloning and plasmid transfection in SW1353 cells\n\nSW1353 cells were purchased from ATCC (https://www.atcc.org/products/htb-94). Cell identity is authenticated by ATCC by STR profiling. Cells are routinely checked for mycoplasma status (MycoAlert Mycoplasma Detection Kit, Lonza Biosciences). Full-length miRNA target 3\u2032UTRs were amplified from human genomic DNA using PCR primers (Supplementary file 1e) to enable Clontech In-Fusion HD cloning (Takara Bio Europe, Saint-Germain-en-Laye, France) into the pmirGLO Dual-Luciferase miRNA Target Expression Vector (Promega, Southampton, UK) following the manufacturer\u2019s instructions. Mutation of the miRNA seed\u2010binding sites was performed using the QuikChange II Site\u2010Directed Mutagenesis Kit (Agilent Technologies) (Supplementary file 1e). All vectors were sequence verified. SW1353 chondrosarcoma cells were plated overnight in 96-well plates at 50% confluence (1.5 \u00d7 104 cells/cm2). Cells were first transfected with 3\u2032UTR luciferase constructs (10 ng) using FuGENE HD transfection reagent (Promega) for 4 hr, then transfected with Dharmacon miR-199a-5p mimic (50 nM) or miRNA mimic nontargeting Control #2 using Dharmafect 1. After 24 hr of transfection, the SW1353 cells were washed and lysed using Reporter Lysis Buffer (Promega) and firefly and renilla luciferase levels determined using the Promega Dual-Luciferase Reporter Assay System and a GloMax 96 Microplate Luminometer (Promega).\n\n### RNAseq\n\nRNA isolated as described above was quality assessed with the Agilent Technology 4200 TapeStation system using an RNA screentape assay (Agilent). cDNA libraries were generated using the Illumina TruSeq Stranded mRNA protocol, combinatorial dual index adapters were used to multiplex/pool libraries. Single-read sequencing, 76 cycles (75 + 1 cycle for index sequences), on an Illumina NextSeq500 instrument using a high-output 75 cycle kit. Kallisto was used for alignment free RNAseq processing (Bray et al., 2016). Tximport was used to import the RNAseq data into R for further processing (Soneson et al., 2015).\n\n### RNAseq DE and miRNA target identification\n\nTime-matched MSC miRNA inhibition (miR-199a-5p and miR-199b-5p) and MSC controls were contrasted by DE using DESeq2 (Love et al., 2014). miRNAtap was used to score and identify all potential mRNA targets of both miR-199a-5p and miR-199b-5p (Pajak and Simpson, 2021). Using several target databases, potential mRNA targets were scored and ranked. Low-level scoring miRNA targets (50 or below) and negatively changing genes from the time-series dataset were removed, leaving 21 genes that were significantly (adjusted p-values<0.05) upregulated during day 0 or day 1 following miR-199a-5p and miR-199b-5p inhibition.\n\n### Chi-square tests\n\nTo determine if the number of overlapping genes found from differential expression analysis of 199a/b inhibition at days 0 and 1 were significant, chi-square tests were performed. Observed numbers were used to determine the estimated numbers. Expected number of differentially expressed overlapping/non-overlapping genes = (Row Total * Column Total/Grand Total). Chi-square p-value calculation is performed with the following formula: (Observed \u2013 Expected)^2/Expected.\n\n### GRN development\n\nFor the enhanced kinetic model, we used CellDesigner, SMBL-style GRNs are created to represent the biological processed of interest (Funahashi et al., 2008). A literature search provided information of GRN topology. Once the whole GRN was created (Figure 5C), a more advanced GRN was created to hypothesise further pathways and important players in the system which could not be modelled as we lacked the experimental data to do so (Figure 5\u2014figure supplement 1).\n\n### Kinetic modelling\n\nBase data (microarray experiments) and the validation data (Figures 2 and 4) from qPCR data were converted to numbers compatible to the calibration data from the microarrays using the following formula: $KD/C*M$, KD being the mean miR-199a-5p or miR-199b-5p value, C being the mean control value, and M being the mean microarray value. The initial conditions (zero timepoint) for the calibration and validation datasets were assumed to be the same, so the model can have a single initial condition for each validated species. Thus, KD/C = 1 was fixed for each zero timepoint, for each species where validation data was available. For GAG levels, the control level at day 7 was treated as 100%, and the change in GAG expression during miR-199b-5p inhibition was measured in contrast to the control to calculate the percentage change. Species selected from the modelled GRN were modelled using COPASI (Hoops et al., 2006). Calibration was performed using parameter estimation via the Particle swarm algorithm. Inhibition of miR-199a-5p and miR-199b-5p was simulated using events, where the miRNA in question was reduced by 90\u201395%, until day 7 in the initial model and day 4.5 in the enhanced model. Parameters were altered using sliders to make the model perform miR-199a-5p or miR-199b-5p inhibition behaviour. MSE was calculated between actual and simulated data where possible, $1/n\u00a0.\\sumi=1n(yi\u00a0\u2212\u00a0y^i)$ (Akkiraju and Nohe, 2015). Model formulas and parameters are in the supplementary materials. Data from COPASI was imported into R for plotting. All model parameters and equations have been recorded in the supplementary materials, and the model has been uploaded onto the Biomodels public repository (Malik-Sheriff et al., 2020).\n",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "11572bbf-5e0f-4826-8195-1728af36f76c",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Marisa Nicol\u00e1s, Laborat\u00f3rio Nacional de Computa\u00e7\u00e3o Cient\u00edfica Brazil\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89701.4.sa0](https://doi.org/10.7554/eLife.89701.4.sa0)\n\nThis study provides valuable insight into the role of miR-199a/b-5p in cartilage formation. The evidence supporting the significance of the identified miRNA and its target mRNA transcripts is convincing. This article will likely primarily benefit scientists focused on diseases related to this biological process, such as osteoarthritis. Furthermore, researchers with a broader interest in miRNAs may find the computational model to identify novel RNA\u2013RNA interactions particularly helpful.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89701.4.sa1](https://doi.org/10.7554/eLife.89701.4.sa1)\n\nThe comments below are from my review of the first submission of this article. I would now like to thank the authors for their hard work in responding to my comments. I am happy with the changes they have made, in particular the inclusion of further experimental evidence in Figures 2 and 4. I have no further comments to make.\n\nIn 'Systems analysis of miR-199a/b-5p and multiple miR-199a/b-5p targets during chondrogenesis', Patel et al. present a variety of analyses using different methodologies to investigate the importance of two miRNAs in regulating gene expression in a cellular model of cartilage development. They first re-analysed existing data to identify these miRNAs as one of the most dynamic across a chondrogenesis development timecourse. Next, they manipulated the expression of these miRNAs and showed that this affected the expression of various marker genes as expected. An RNA-seq experiment on these manipulations identified putative mRNA targets of the miRNAs which were also supported by bioinformatics predictions. These top hits were validated experimentally and, finally, a kinetic model was developed to demonstrate the relationship between the miRNAs and mRNAs studied throughout the paper.\n\nI am convinced that the novel relationships reported here between miR-199a/b-5p and target genes FZD6, ITGA3 and CAV1 are likely to be genuine. It is important for researchers working on this system and related diseases to know all the miRNA/mRNA relationships but, as the authors have already published work studying the most dynamic miRNA (miR-140-5p) in this biological system I was not convinced that this study of the second miRNA in their list provided a conceptual advance on their previous work.\n\nI was also concerned with the lack of reporting of details of the manipulation experiments. The authors state that they have over-expressed miR-199a-5p (Figure 2A) and knocked down miR-199b-5p (Figure 2B) but they should have reported their proof that these experiments had worked as predicted, e.g. showing the qRT-PCR change in miRNA expression. Similarly, I was concerned that one miRNA was over-expressed while the other was knocked down - why did the authors not attempt to manipulate both miRNAs in both directions? Were they unable to achieve a significant change in miRNA expression or did these experiments not confirm the results reported in the manuscript?\n\nI had a number of issues with the way in which some of the data is presented. Table 1 only reported whether a specific pathway was significant or not for a given differential expression analysis but this concealed the extent of this enrichment or the level of statistical significance reported. Could it be redrawn to more similarly match the format of Figure 3A? The various shades of grey in Figure 2 and Figure 4 made it impossible to discriminate between treatments and therefore identify whether these data supported the conclusions made in the text. It also appeared that the same results were reported in Figure 3B and 3C and, indeed, Figure 3B was not referred to in the main text. Perhaps this figure could be made more concise by removing one of these two sets of panels?\n\nOverall, while I think that this is an interesting and valuable paper, I think its findings are relatively limited to those interested in the role of miRNAs in this specific biomedical context.\n",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2bb284c8-7998-4437-9d86-50a3af648d59",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C1",
+      "claim": "Changes in chondrocyte gene expression can contribute to the development of osteoarthritis (OA).",
+      "claim_type": "EXPLICIT",
+      "source": "Changes in chondrocyte gene expression can contribute to the development of osteoarthritis (OA), and so recognition of the regulative processes during chondrogenesis can lead to a better understanding of OA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about OA pathogenesis that draws from established scientific understanding in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "7e3da644-b8f0-441c-9beb-419df5e50247",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C2",
+      "claim": "microRNAs (miRNAs) are key regulators of gene expression in chondrocytes/OA.",
+      "claim_type": "EXPLICIT",
+      "source": "microRNAs (miRNAs) are key regulators of gene expression in chondrocytes/OA, and we have used a combined experimental, bioinformatic, and systems biology approach to explore the multiple miRNA\u2013mRNA interactions that regulate chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established scientific knowledge about miRNA function in chondrocytes and OA.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "d572973c-6e05-4166-bc85-c68173a2ce6e",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C3",
+      "claim": "A longitudinal chondrogenesis bioinformatic analysis identified paralogues miR-199a-5p and miR-199b-5p as pro-chondrogenic regulators.",
+      "claim_type": "EXPLICIT",
+      "source": "A longitudinal chondrogenesis bioinformatic analysis identified paralogues miR-199a-5p and miR-199b-5p as pro-chondrogenic regulators.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the bioinformatic analysis described in the manuscript using TimiRGeN.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "e0ca6ee6-69ec-4139-88b6-6513db08ad99",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C4",
+      "claim": "Alteration of miR-199a-5p or miR-199b-5p expression led to significant inverse modulation of key chondrogenic genes and extracellular matrix production.",
+      "claim_type": "EXPLICIT",
+      "source": "Experimental work in human cells demonstrated alteration of miR-199a-5p or miR-199b-5p expression led to significant inverse modulation of key chondrogenic genes and extracellular matrix production.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 demonstrating changes in ACAN, COL2A1, SOX9, and GAG levels.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "4e80b4d0-a860-494f-a2d2-59c397cd2f28",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C5",
+      "claim": "miR-199a/b-5p targets FZD6, ITGA3 and CAV1 were identified by inhibition experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-199a/b-5p targets FZD6, ITGA3 and CAV1 were identified by inhibition experiments and verified as direct targets by luciferase assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by RNAseq data (Figure 3) and inhibition experiments (Figure 4A).",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "2dc86ea0-7022-430d-a86d-4f6c42a35a74",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C6",
+      "claim": "FZD6, ITGA3 and CAV1 were verified as direct targets of miR-199a/b-5p by luciferase assay.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-199a/b-5p targets FZD6, ITGA3 and CAV1 were identified by inhibition experiments and verified as direct targets by luciferase assay.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "6eb08b77-a99f-4f85-b187-6fbe82caea75",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C7",
+      "claim": "This is the first multi-miRNA model of a chondrogenesis-based system.",
+      "claim_type": "EXPLICIT",
+      "source": "This is the first multi-miRNA model of a chondrogenesis-based system, and highlights the complex relationships between regulatory miRNAs, and their target mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the work, which is a statement of fact about the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "d6868474-45b9-4e8a-af20-2c86f5916031",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C8",
+      "claim": "Differentiation of mesenchymal stem cells (MSCs) into chondrocytes occurs by the process of chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Differentiation of mesenchymal stem cells (MSCs) into chondrocytes occurs by the process of chondrogenesis (Bosnakovski et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to Bosnakovski et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "f714e77b-28c9-4d59-be75-c5f0093dd508",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C9",
+      "claim": "Chondrogenesis is an important process during development as it is a pre-requisite for skeletogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This is an important process during development as it is a pre-requisite for skeletogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge about developmental biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "ed3a92fe-ca1c-47cb-9a1e-f516029fc989",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C10",
+      "claim": "Chondrocytes perform the vital role of generating cartilage during embryogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Chondrocytes perform the vital role of generating cartilage during embryogenesis, but also maintain cartilage throughout life, including at the ends of long bones in articulating joints (Akkiraju and Nohe, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Akkiraju and Nohe, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "2e6b75a3-40c9-4ac2-969b-62bef8dbc429",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C11",
+      "claim": "Chondrocytes maintain cartilage throughout life, including at the ends of long bones in articulating joints.",
+      "claim_type": "EXPLICIT",
+      "source": "Chondrocytes perform the vital role of generating cartilage during embryogenesis, but also maintain cartilage throughout life, including at the ends of long bones in articulating joints (Akkiraju and Nohe, 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Akkiraju and Nohe, 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "bea02d11-06f3-4954-8d4c-1103ec700952",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C12",
+      "claim": "The master transcription factor responsible for chondrogenesis is SOX9.",
+      "claim_type": "EXPLICIT",
+      "source": "The master transcription factor responsible for chondrogenesis is SOX9 and during this process chondrocytes secrete anabolic proteins such as type II collagen and aggrecan, encoded by COL2A1 and ACAN, which constitute a significant functional portion of the cartilaginous extracellular matrix (ECM) (Akkiraju and Nohe, 2015; Hoshi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Akkiraju and Nohe, 2015 and Hoshi et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "79483410-7671-4f30-9f71-5c0aca2bb6b2",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C13",
+      "claim": "During chondrogenesis chondrocytes secrete anabolic proteins such as type II collagen and aggrecan, encoded by COL2A1 and ACAN.",
+      "claim_type": "EXPLICIT",
+      "source": "The master transcription factor responsible for chondrogenesis is SOX9 and during this process chondrocytes secrete anabolic proteins such as type II collagen and aggrecan, encoded by COL2A1 and ACAN, which constitute a significant functional portion of the cartilaginous extracellular matrix (ECM) (Akkiraju and Nohe, 2015; Hoshi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Akkiraju and Nohe, 2015 and Hoshi et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "b83f9a7b-ded2-409e-8e1d-09364a38ddf3",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C14",
+      "claim": "Type II collagen and aggrecan constitute a significant functional portion of the cartilaginous extracellular matrix (ECM).",
+      "claim_type": "EXPLICIT",
+      "source": "The master transcription factor responsible for chondrogenesis is SOX9 and during this process chondrocytes secrete anabolic proteins such as type II collagen and aggrecan, encoded by COL2A1 and ACAN, which constitute a significant functional portion of the cartilaginous extracellular matrix (ECM) (Akkiraju and Nohe, 2015; Hoshi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Akkiraju and Nohe, 2015 and Hoshi et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "fa05b852-693c-4b95-ab9d-7e2abec6f35c",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C15",
+      "claim": "With increasing age and influenced by a mixture of factors such as (epi)genetics, obesity, and mechanical injury/stress, chondrocytes will increasingly express catabolic proteins such as matrix metalloproteinases which degrade the cartilage ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "With increasing age and influenced by a mixture of factors such as (epi)genetics, obesity, and mechanical injury/stress, chondrocytes will increasingly express catabolic proteins such as matrix metalloproteinases which degrade the cartilage ECM (Hoshi et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hoshi et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "84785380-bef4-4372-ace6-945278ada7cf",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C16",
+      "claim": "The chronic loss of cartilage contributes to the extremely debilitating condition osteoarthritis (OA).",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately the chronic loss of cartilage contributes to the extremely debilitating condition osteoarthritis (OA), which remains incurable with treatment options limited to pain relief medication and end-stage joint replacement surgery (Gr\u00e4ssel and Muschter, 2020; Loeser et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gr\u00e4ssel and Muschter, 2020 and Loeser et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "35ddf5f0-dbc3-4313-a812-171cbadc33ab",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C17",
+      "claim": "Osteoarthritis remains incurable with treatment options limited to pain relief medication and end-stage joint replacement surgery.",
+      "claim_type": "EXPLICIT",
+      "source": "Ultimately the chronic loss of cartilage contributes to the extremely debilitating condition osteoarthritis (OA), which remains incurable with treatment options limited to pain relief medication and end-stage joint replacement surgery (Gr\u00e4ssel and Muschter, 2020; Loeser et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Gr\u00e4ssel and Muschter, 2020 and Loeser et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "7914ab63-4712-411f-958c-2a03832c2213",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C18",
+      "claim": "miRNAs are short non-coding RNAs \u2013 roughly 19-22 nt long that negatively regulate target mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "miRNAs are short non-coding RNAs \u2013 roughly 19-22 nt long that negatively regulate target mRNAs (Bartel, 2009; Sevignani et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Bartel, 2009 and Sevignani et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "107bf053-f632-4d23-8249-12fff06e6de1",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C19",
+      "claim": "Mammalian miRNA\u2013mRNA interactions occur via complementary sequence specificity between a 7 and 8 nt stretch of the miRNA known as the seed sequence, and positions along the 3\u2032UTR of the target mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "Mammalian miRNA\u2013mRNA interactions occur via complementary sequence specificity between a 7 and 8 nt stretch of the miRNA known as the seed sequence, and positions along the 3\u2032UTR of the target mRNA (Lai, 2002; Doench and Sharp, 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lai, 2002 and Doench and Sharp, 2004.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "e5679134-176b-468a-b998-20842e1d0448",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C20",
+      "claim": "miRNA\u2013mRNA interactions are complex because a single mRNA can be targeted by many miRNAs, and a single miRNA can target many mRNAs.",
+      "claim_type": "EXPLICIT",
+      "source": "miRNA\u2013mRNA interactions are complex because a single mRNA can be targeted by many miRNAs, and a single miRNA can target many mRNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge about miRNA biology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "541dabb5-32b1-4d1c-8a63-fd618040f8be",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C21",
+      "claim": "Previous work identified significantly altered miRNAs during chondrogenesis and demonstrated the role of miR-140 in regulating chondrocyte gene expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Our previous work identified significantly altered miRNAs during chondrogenesis and demonstrated the role of miR-140 in regulating chondrocyte gene expression (Barter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barter et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "deafac38-183c-484f-b1ff-0b52c22c9bd3",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C22",
+      "claim": "miR-140 has emerged as a vital regulator of chondrogenesis, cartilage, and OA.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-140 has emerged as a vital regulator of chondrogenesis, cartilage, and OA, and have been hypothesized as effective drug targets due to their pro-chondrogenic regulation (Miyaki et al., 2009; Katoh et al., 2021; Swingler et al., 2012; Karlsen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Miyaki et al., 2009; Katoh et al., 2021; Swingler et al., 2012; Karlsen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "a7ee4d06-6df9-4f7d-ba5d-dd06d4d37f16",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C23",
+      "claim": "miR-140 has been hypothesized as effective drug targets due to their pro-chondrogenic regulation.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-140 has emerged as a vital regulator of chondrogenesis, cartilage, and OA, and have been hypothesized as effective drug targets due to their pro-chondrogenic regulation (Miyaki et al., 2009; Katoh et al., 2021; Swingler et al., 2012; Karlsen et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Miyaki et al., 2009; Katoh et al., 2021; Swingler et al., 2012; Karlsen et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "013f7f9e-65e4-488b-9531-b21d5b7d6a14",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C24",
+      "claim": "miR-455 has been shown to be important regulators in maintaining healthy cartilage and protecting against OA development.",
+      "claim_type": "EXPLICIT",
+      "source": "Additional miRNAs, such as miR-455, have also been shown to be important regulators in maintaining healthy cartilage and protecting against OA development (Hu et al., 2019; Ito et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Hu et al., 2019 and Ito et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "f80900f7-27f0-46ed-8c9f-31437e49b5f3",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C25",
+      "claim": "Eight signalling pathways were found enriched in at least three of the five timepoints during chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Eight signalling pathways were found enriched in at least three of the five timepoints (Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by the TimiRGeN analysis and shown in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "3a7e1deb-102a-46f9-a9d6-cc61cda932ac",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C26",
+      "claim": "miR-140-5p was the most positively changing miRNA in seven pathways: adipogenesis, clear cell renal cell carcinoma pathways (CCRCCP), epidermal growth factor/epidermal growth factor receptor (EGF/EGFR), endochondral ossification, endochondral ossification with skeletal dysplasia (EOSD), gastrin signalling pathway, and vascular endothelial growth factor-A/vascular endothelial growth factor receptor 2 signalling pathway (VEGFA-VEGFR2).",
+      "claim_type": "EXPLICIT",
+      "source": "miR-140-5p was the most positively changing miRNA in the following seven pathways: adipogenesis, clear cell renal cell carcinoma pathways (CCRCCP), epidermal growth factor/epidermal growth factor receptor (EGF/EGFR), endochondral ossification, endochondral ossification with skeletal dysplasia (EOSD), gastrin signalling pathway, and vascular endothelial growth factor-A/vascular endothelial growth factor receptor 2 signalling pathway (VEGFA-VEGFR2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the TimiRGeN analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "c993954d-768b-4946-9e64-c6a4e4df1b1e",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C27",
+      "claim": "miR-199b-5p was the second most positively changing microRNA in six pathways: CCRCCP, EGF/EGFR, endochondral ossification, EOSD, gastrin signalling pathway, and VEGFA-VEGFR2.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-199b-5p was the second most positively changing microRNA in the following six pathways: CCRCCP, EGF/EGFR, endochondral ossification, EOSD, gastrin signalling pathway, and VEGFA-VEGFR2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the TimiRGeN analysis shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "47dd5b59-a1bb-456c-ab69-e9da4920da99",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C28",
+      "claim": "Significant upregulation was seen in ACAN, COL2A1, and GAG (DMB) levels following miR-199a-5p overexpression.",
+      "claim_type": "EXPLICIT",
+      "source": "Significant upregulation was seen in ACAN, COL2A1, and GAG (DMB) levels following miR-199a-5p overexpression (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "e4ef83d1-06bb-451c-aff5-578b5fcaa0b4",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C29",
+      "claim": "When miR-199a-5p expression was inhibited ACAN, COL2A1, and SOX9 were significantly downregulated at multiple timepoints.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, when miR-199a-5p expression was inhibited ACAN, COL2A1, and SOX9 were significantly downregulated at multiple timepoints (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "447b9b30-1652-40ed-904a-2e4610cd84ac",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C30",
+      "claim": "GAG levels were significantly decreased, by ~40%, at day 7 following miR-199a-5p inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "GAG levels were also significantly decreased, by ~40%, at day 7.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "30869fce-13ff-465a-b7ff-a6d592f33488",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C31",
+      "claim": "When miR-199b-5p was inhibited, significant downregulation of ACAN, COL2A1, and GAG levels occurred.",
+      "claim_type": "EXPLICIT",
+      "source": "When miR-199b-5p was inhibited, similar significant downregulation of ACAN, COL2A1, and GAG levels occurred (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "f41a0b92-8322-4430-9fbf-59f052f3ca51",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C32",
+      "claim": "Inhibition of miR-199a-5p and -199b-5p together caused a more consistent reduction of ACAN, COL2A1, and SOX9 expression.",
+      "claim_type": "EXPLICIT",
+      "source": "Inhibition of miR-199a-5p and -199b-5p together caused a more consistent reduction of ACAN, COL2A1, and SOX9 expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "b06f9162-a052-4c38-bee9-dae83acd8f5c",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C34",
+      "claim": "Positively changing genes during early chondrogenesis included COL2A1 (log2fc = 11.6), ACAN (log2fc = 9.18), and SOX9 (log2fc = 3.37).",
+      "claim_type": "EXPLICIT",
+      "source": "Positively changing genes included COL2A1 (log2fc = 11.6), ACAN (log2fc = 9.18), and SOX9 (log2fc = 3.37).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "f8b6d90e-ce73-4a04-8503-ee8239ead64e",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C35",
+      "claim": "Gene Ontology (GO) term analysis on the upregulated genes confirmed that the cells were differentiating towards chondrocytes with terms such as skeletal system development, ECM organisation, and regulation of cartilage development significantly enriched.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene Ontology (GO) term analysis on the upregulated genes confirmed that the cells were differentiating towards chondrocytes with terms such as skeletal system development, ECM organisation, and regulation of cartilage development significantly (adjusted p-values<0.05) enriched (Supplementary file 1b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on GO term analysis of RNAseq data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "18779c0a-6c29-4137-97fb-ae81b6b4e2fb",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C36",
+      "claim": "Inhibition of miR-199a-5p resulted in 87 significantly differentially expressed genes at day 0.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify miR-199-regulated genes, undifferentiated control MSC samples were contrasted against undifferentiated MSCs with either miR-199a-5p or miR-199b-5p inhibition, which respectively resulted in 87 and 46 significantly DEGs (adjusted p-values<0.05) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "58299c7a-0386-494a-9d00-c59efef4f436",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C37",
+      "claim": "Inhibition of miR-199b-5p resulted in 46 significantly differentially expressed genes at day 0.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify miR-199-regulated genes, undifferentiated control MSC samples were contrasted against undifferentiated MSCs with either miR-199a-5p or miR-199b-5p inhibition, which respectively resulted in 87 and 46 significantly DEGs (adjusted p-values<0.05) (Supplementary file 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "a6488e20-bd85-462f-95b6-59e7eaa3b22d",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C38",
+      "claim": "Inhibition of miR-199a-5p resulted in 674 significantly differentially expressed genes at day 1 of chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar comparisons at day 1 of chondrogenesis revealed inhibition of miR-199a-5p or miR-199b-5p respectively resulted in 674 and 817 DEGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "7cb4d8f4-60c7-46ff-a523-f79924d641dd",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C39",
+      "claim": "Inhibition of miR-199b-5p resulted in 817 significantly differentially expressed genes at day 1 of chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar comparisons at day 1 of chondrogenesis revealed inhibition of miR-199a-5p or miR-199b-5p respectively resulted in 674 and 817 DEGs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "5c4fd3eb-c1dc-4d1a-8876-1b0d2ac0074c",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C40",
+      "claim": "25 genes intersected between day 0 and day 1 chondrogenesis miR-199a-5p inhibition experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, 25 and 341 genes intersected between day 0 and day 1 chondrogenesis inhibition experiments, indicating that both microRNAs may share functional repertoire of targets (chi-square observed vs. expected day 0 = 0.003477, day 1 = 0.000624).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq differential expression analysis and chi-square test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "1ca6cae9-ff96-4c92-93e7-2a51569d30b8",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C41",
+      "claim": "341 genes intersected between day 0 and day 1 chondrogenesis miR-199b-5p inhibition experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, 25 and 341 genes intersected between day 0 and day 1 chondrogenesis inhibition experiments, indicating that both microRNAs may share functional repertoire of targets (chi-square observed vs. expected day 0 = 0.003477, day 1 = 0.000624).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq differential expression analysis and chi-square test.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "a05b3d32-5391-4fc2-b143-7b63fef43bc2",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C42",
+      "claim": "Both miR-199a-5p and miR-199b-5p may share functional repertoire of targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, 25 and 341 genes intersected between day 0 and day 1 chondrogenesis inhibition experiments, indicating that both microRNAs may share functional repertoire of targets (chi-square observed vs. expected day 0 = 0.003477, day 1 = 0.000624).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the overlap of differentially expressed genes and supported by chi-square statistical test.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "353264d1-f8a4-478d-ac64-e31bb28781de",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C43",
+      "claim": "COL2A1, ACAN, and SOX9 were significantly lower in expression in day 1 samples after miR-199 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "COL2A1, ACAN, and SOX9 were significantly lower in expression in day 1 samples after miR-199 inhibition, validating the negative impact on chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on RNAseq differential expression analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "7f52472c-0966-4f28-86a9-61874aee8fce",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C44",
+      "claim": "Several terms associated with chondrogenesis were suppressed/less activated during day 1 analyses, including ECM constituents, skeletal system morphogenesis, ECM, and collagen containing ECM.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly several terms associated with chondrogenesis were suppressed/less activated during day 1 analyses, including ECM constituents, skeletal system morphogenesis, ECM, and collagen containing ECM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on GO term analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "4d3fbddb-4fa8-4d37-baf0-f15fda0d037d",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C45",
+      "claim": "Twenty-one potential mRNA targets were predicted to be targeted by both miR-199a-5p and miR-199b-5p.",
+      "claim_type": "EXPLICIT",
+      "source": "Twenty-one potential mRNA targets were predicted to be targeted by both miRNAs, and in alphabetical order they were ABHD17C, ATP13A2, CAV1, CTSL, DDR1, FZD6, GIT1, HIF1A, HK2, HSPA5, ITGA3, M6PR, MYH9, NECTIN2, NINL, PDE4D, PLXND1, PXN, SLC35A3, SLC35D1, VPS26A.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on miRNAtap prediction analysis of RNAseq data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "b3dde4e7-3c0b-4749-af18-991d8c5fdc1f",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C46",
+      "claim": "Many of genes found through bioinformatic analysis were significantly downregulated during chondrogenesis in multiple studies, including CAV1, FZD6, ITGA3, and MYH9.",
+      "claim_type": "EXPLICIT",
+      "source": "The tables showed many of genes found through our bioinformatic analysis to be significantly downregulated during chondrogenesis in multiple studies, and this included CAV1, FZD6, ITGA3, and MYH9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on SkeletalVis analysis comparing to other studies.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "c7526efb-01c4-4f9d-9b53-1166e1a2c617",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C47",
+      "claim": "Significant upregulation of FZD6, ITGA3, and CAV1 occurred after miR-199a-5p inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw significant upregulation of FZD6, ITGA3, and CAV1 after miR-199a-5p inhibition and miR-199a/b-5p inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "a7a2ba98-f797-422c-81fc-730b4214d2ac",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C48",
+      "claim": "Significant upregulation of FZD6, ITGA3, and CAV1 occurred after miR-199a/b-5p inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We saw significant upregulation of FZD6, ITGA3, and CAV1 after miR-199a-5p inhibition and miR-199a/b-5p inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "655cbb5c-2adb-4748-b98c-bd47007d4402",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C49",
+      "claim": "There was no consistent improvement of the combination of miR-199a-5p and miR-199b-5p inhibition over miR-199a-5p inhibition alone.",
+      "claim_type": "EXPLICIT",
+      "source": "There was no consistent improvement of the combination of miR-199a-5p and miR-199b-5p over miR-199a-5p alone.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of experimental data shown in Figure 4A1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "f2e9de3c-7bec-4506-9af9-b7cfb7667093",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C50",
+      "claim": "CAV1 levels were significantly increased post miR-199b-5p inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the third most significant predicted target of miR-199a/b-5p \u2013 CAV1, and how its expression changed after miR-199b-5p inhibition over the same time course, and we saw CAV1 levels were significantly increased post miR-199b-5p inhibition (Lino Cardenas et al., 2013; Figure 4A2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "6c4b3782-f3bb-44ed-91f6-7c44d1aa6208",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C51",
+      "claim": "CAV1 has previously been established to be a direct target of miR-199a-5p.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike FZD6 and ITGA3, CAV1 has previously been established to be a direct target of miR-199a-5p (Lino Cardenas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lino Cardenas et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "82a19446-4f08-4bef-860f-57d0ff61f980",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C52",
+      "claim": "FZD6 and ITGA3 3'UTRs contain potentially repressive elements.",
+      "claim_type": "EXPLICIT",
+      "source": "To identify if FZD6 and ITGA3 were also direct miRNA targets, we cloned the 3\u2032UTR regions of FZD6 and ITGA3 directly downstream of the firefly luciferase gene and demonstrated reduced expression compared to empty control vector, suggesting that these contain potentially repressive elements (Figure 4B1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 4B1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "946f0785-f356-42cb-aeca-3a3f572713d9",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C53",
+      "claim": "Introduction of an excess of miR-199a-5p into cells further repressed FZD6 and ITGA3 3'UTR luciferase expression, suggesting that both FZD6 and ITGA3 3'UTRs are direct miR-199a-5p targets.",
+      "claim_type": "EXPLICIT",
+      "source": "Introduction of an excess of miR-199a-5p into the cells further repressed expression, suggesting that both FZD6 and ITGA3 3'UTRs are direct miR-199a-5p targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 4B1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "eb6d9a6b-0c16-42de-9397-764900ee7fb8",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C54",
+      "claim": "Mutation of the predicted miR-199-5p seed sequence within the 3\u2032UTR of FZD6 and ITGA3 reduced the extent of inhibition of luciferase levels caused by the miRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "This was confirmed by mutation of the predicted miR-199-5p seed sequence within the 3\u2032UTR of each gene which reduced the extent of inhibition of luciferase levels caused by the miRNA (Figure 4B2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by luciferase assay data shown in Figure 4B2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "843b6375-545a-4b93-860a-600605e554f7",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C55",
+      "claim": "In the initial model, 15/18 modelled objects with experimental data had a mean squared error of lower than 3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initial model, 15/18 modelled objects with experimental data had an MSE of lower than 3, indicating that most of the experimental data was captured by the model, and the average MSE for the model was 15.96.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of model simulations to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "ffa80522-c077-4da8-a44c-5d345fe28a78",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C56",
+      "claim": "The average mean squared error for the initial model was 15.96.",
+      "claim_type": "EXPLICIT",
+      "source": "In the initial model, 15/18 modelled objects with experimental data had an MSE of lower than 3, indicating that most of the experimental data was captured by the model, and the average MSE for the model was 15.96.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of model simulations to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "8282137c-13ba-44ca-adcb-88de8ef0eef8",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C57",
+      "claim": "In the enhanced model, 14/18 (77.7%) of the objects with experimental data had a mean squared error of >3.",
+      "claim_type": "EXPLICIT",
+      "source": "In the enhanced model, 14/18 (77.7%) of the objects with experimental data had an MSE of >3, indicating the model \u2013 even with additional data from the literature \u2013 still captured much of the experimental data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of model simulations to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "72c3d7af-3522-4879-81fe-2b369e7d0877",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C58",
+      "claim": "The average mean squared error for the enhanced model was 12.08.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, the average MSE was 12.08, indicating an improvement over the initial model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on comparison of model simulations to experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "829fc793-7a3d-40aa-90fc-b142d9e71b53",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C59",
+      "claim": "The MIR199 family were identified as pro-chondrogenic in mouse mesenchymal C3H10T1/2 cells, reportedly by targeting SMAD1 (miR-199a-3p) and JAG1 (miR-199a/b-5p).",
+      "claim_type": "EXPLICIT",
+      "source": "The MIR199 family were identified as pro-chondrogenic in mouse mesenchymal C3H10T1/2 cells, reportedly by targeting SMAD1 (miR-199a-3p) and JAG1 (miR-199a/b-5p), respectively (Zhang et al., 2020; Lin et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Zhang et al., 2020 and Lin et al., 2009.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "fa0b5194-afc6-4604-97d0-177d4f9c89c3",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C60",
+      "claim": "miR-199a/b-5p promotes SOX9, COL2A1, and ACAN expression in human MSC chondrogenesis, thus enhancing cartilage formation.",
+      "claim_type": "EXPLICIT",
+      "source": "Having previously shown the substantial upregulation of miR-199a/b-5p during chondrogenesis, we now show through both loss- and gain-of-function experiments that miR-199a/b-5p also promotes SOX9, COL2A1, and ACAN expression in human MSC chondrogenesis, thus enhancing cartilage formation (Barter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2 and cited work from Barter et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "fae0c16a-028d-427f-8776-1264b12f7373",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C61",
+      "claim": "miR-199a and miR-199b are vertebrate-specific miRNAs which exhibit an expression pattern associated with mesenchymal tissues and the skeleton.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-199a and miR-199b are vertebrate-specific miRNAs which exhibit an expression pattern associated with mesenchymal tissues and the skeleton (Desvignes et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Desvignes et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "b50aa2ca-8193-43eb-86ab-f1c16d4021ff",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C62",
+      "claim": "Antisense transcript Dmn3os encodes miR-199a and miR214 and its deletion in mice causes skeletal defects including short stature and cranial deformity.",
+      "claim_type": "EXPLICIT",
+      "source": "Antisense transcript Dmn3os encodes miR-199a and miR214 and its deletion in mice causes skeletal defects including short stature and cranial deformity (Watanabe et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Watanabe et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "3164b544-3eb9-4ec2-bf8a-75f9d122535a",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C63",
+      "claim": "Similar phenotypic consequences caused by the loss of DNM3OS and therefore MIR199A and MIR214 have been reported in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar phenotypic consequences caused by the loss of DNM3OS and therefore MIR199A and MIR214 have also been reported in humans (Lefroy et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lefroy et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "179702da-3774-48cb-9365-1c6bb42cac8a",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C64",
+      "claim": "miR-214 has been reported to negatively impact on chondrocyte differentiation, through targeting ATF4.",
+      "claim_type": "EXPLICIT",
+      "source": "miR-214 has since been reported to negatively impact on chondrocyte differentiation, through targeting ATF4 (Roberto et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roberto et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "76b43d02-f996-4a9f-968f-c6b2abb6ad26",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C65",
+      "claim": "TGFB triggers phosphorylation of CAV1 via SRC-kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "Several mechanisms reported in the literature may also support how miR-199a/b-5p-CAV1 could regulate chondrogenesis, such as TGFB triggering phosphorylation of CAV1 via SRC-kinase (Lino Cardenas et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lino Cardenas et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "40d03054-5f02-4086-9635-d0abaad2fd4a",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C66",
+      "claim": "miR-199a-5p-FZD6 interaction has been predicted previously.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to CAV1, FZD6 and ITGA3 have been less well studied as miR-199a/b-5p targets though, miR-199a-5p-FZD6 has been predicted previously (Lin et al., 2009; Kim et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lin et al., 2009 and Kim et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "c614ce1b-edf8-4c2e-b23d-144d59a1ec52",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C67",
+      "claim": "Previous work by the authors has validated FZD6 as a target of miR-140-5p.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work by our group has validated FZD6 as a target of miR-140-5p, so it is likely a highly important gene in chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This refers to previous work by the authors' group.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "29a02045-d468-44f5-8365-33f79354c4ef",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C68",
+      "claim": "FZD6 is likely a highly important gene in chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work by our group has validated FZD6 as a target of miR-140-5p, so it is likely a highly important gene in chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the fact that FZD6 is targeted by multiple pro-chondrogenic miRNAs.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "0b7202aa-b050-480f-9e33-8e6492a910bd",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C69",
+      "claim": "ITGA3 has been found to be a target of miR-199a-5p in neck and head cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "ITGA3 meanwhile has been found to be a target of miR-199a-5p in neck and head cancer cells, and our results confirm this interaction in humans MSCs (Tian et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Tian et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "8394bfa8-d701-49ae-9050-5cb0020d8576",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C70",
+      "claim": "The results confirm the miR-199a-5p-ITGA3 interaction in human MSCs.",
+      "claim_type": "EXPLICIT",
+      "source": "ITGA3 meanwhile has been found to be a target of miR-199a-5p in neck and head cancer cells, and our results confirm this interaction in humans MSCs (Tian et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "b2e8251e-e200-49ae-bdb9-4800f62d43cb",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C71",
+      "claim": "TGFB3 was used to initiate chondrogenesis in the experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The enhanced chondrogenesis model (Figure 5C) was initiated with TGFB3, which was used to initiate chondrogenesis in our experiments and was therefore used as the proxy for chondrogenic initiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods and model description.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "c5bd6cc7-d7af-4262-bf38-eb3a0d023514",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C72",
+      "claim": "TGFB3 promoted miR-199a/b-5p levels to match microarray data.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, TGFB3 promoted miR-199a/b-5p levels to match our microarray data, though based on our previous data TGFB may not directly regulate miR-199a/b-5p levels (Barter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the model design to match experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "5b8642ad-95d7-4dc7-baac-40e7dd81072b",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C73",
+      "claim": "Based on previous data TGFB may not directly regulate miR-199a/b-5p levels.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, TGFB3 promoted miR-199a/b-5p levels to match our microarray data, though based on our previous data TGFB may not directly regulate miR-199a/b-5p levels (Barter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Barter et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "75e654e5-f671-4f63-801e-ca28be134691",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C74",
+      "claim": "TGFB3 induced CAV1 via SRC kinase.",
+      "claim_type": "EXPLICIT",
+      "source": "TGFB3 also induced CAV1 via SRC kinase and induced SOX9 via the SMAD2-SMAD3 pathway, which then stimulated SOX9 protein production (SMAD2/3 were not included in the models) (Coricor and Serra, 2016; Peng et al., 2008; Mishra et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on literature citations to Coricor and Serra, 2016; Peng et al., 2008; Mishra et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "8e9aa59e-841c-4f87-a70a-5af56a6a1937",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C75",
+      "claim": "TGFB3 induced SOX9 via the SMAD2-SMAD3 pathway, which then stimulated SOX9 protein production.",
+      "claim_type": "EXPLICIT",
+      "source": "TGFB3 also induced CAV1 via SRC kinase and induced SOX9 via the SMAD2-SMAD3 pathway, which then stimulated SOX9 protein production (SMAD2/3 were not included in the models) (Coricor and Serra, 2016; Peng et al., 2008; Mishra et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on literature citations to Coricor and Serra, 2016; Peng et al., 2008; Mishra et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "f195ac27-3b2b-4836-8a7d-a3b86f8144cc",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C76",
+      "claim": "Microarray data showed CAV1 gene expression decreased during early chondrogenesis, but then increased again.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our microarray data showed CAV1 gene expression decreased during early chondrogenesis, but then increased again \u2013 perhaps indicating CAV1 has a smaller negative regulative effect on chondrogenesis, or only effects early chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on microarray data from Barter et al., 2015.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "434e67b4-0ea9-4cfc-ab90-4e7d182f0803",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C77",
+      "claim": "CAV1 may have a smaller negative regulative effect on chondrogenesis, or only effects early chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, our microarray data showed CAV1 gene expression decreased during early chondrogenesis, but then increased again \u2013 perhaps indicating CAV1 has a smaller negative regulative effect on chondrogenesis, or only effects early chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculated based on the observed expression pattern of CAV1.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "0b1f4045-de45-429f-948b-994e1603af99",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C78",
+      "claim": "FZD6 was negatively regulated by miR-140-5p in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene expression of FZD6, ITGA3, CAV1 and the OtherTargets blackbox all had inverse relationships with miR-199a-5p and miR-199b-5p, and FZD6 was also negatively regulated by miR-140-5p.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the model design incorporating literature data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "3a1c27cd-badb-47be-bb01-4dcddfad5fe1",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C79",
+      "claim": "P-SOX9 promoted COL2A1, ACAN, and miR-140-5p expression in the model.",
+      "claim_type": "EXPLICIT",
+      "source": "P-SOX9 promoted COL2A1, ACAN, and miR-140-5p expression.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the model design.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "b05d4371-d3d7-47a6-82ec-c5b2ca25648b",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C80",
+      "claim": "Most cartilage GAGs are post-translationally added to Aggrecan, the protein product of ACAN.",
+      "claim_type": "EXPLICIT",
+      "source": "ACAN contributed directly, and to the greatest extent, to GAG levels (since most cartilage GAGs are post-translationally added to Aggrecan, the protein product of ACAN) which was used as the phenotypic level output for the model and a proxy for chondrogenesis progression (Barter et al., 2015; Roughley and Mort, 2014; Hardingham and Fosang, 1992; Huang et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Barter et al., 2015; Roughley and Mort, 2014; Hardingham and Fosang, 1992; Huang et al., 2000.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "ce73f7d7-ddc3-4419-ace4-6c4f95244024",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C81",
+      "claim": "FZD6 is a transmembrane protein which functions as a receptor for WNT signalling proteins to, most commonly, activate the non-canonical planar cell polarity pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "FZD6 is a transmembrane protein which functions as a receptor for WNT signalling proteins to, most commonly, activate the non-canonical planar cell polarity pathway.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge about FZD6 function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "231354be-eed5-453f-b0d6-cb0bbe3e82c2",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C82",
+      "claim": "Elements of the Wnt signalling pathway have been implicated to act antagonistically to chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "However, elements of the Wnt signalling pathway have been implicated to act antagonistically to chondrogenesis (Corda and Sala, 2017; Snelling et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Corda and Sala, 2017 and Snelling et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "0f089a41-54ff-4a80-8c66-1aa4cd048862",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C83",
+      "claim": "ITGA3 is a cell surface integrin which forms a heterodimer with ITGB1 to form \u03b13\u03b21 heterodimers through which chondrocyte\u2013fibronectin ECM connections can be created.",
+      "claim_type": "EXPLICIT",
+      "source": "ITGA3 is a cell surface integrin which forms a heterodimer with ITGB1 to form \u03b13\u03b21 heterodimers through which chondrocyte\u2013fibronectin ECM connections can be created (LaPointe et al., 2013; Loeser, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to LaPointe et al., 2013 and Loeser, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "187eb2e4-b374-4b00-b4d3-16408a496e43",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C84",
+      "claim": "Conditional deletion of Itgb1 in cartilage impacts profoundly on skeletogenesis in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "Conditional deletion of Itgb1 in cartilage impacts profoundly on skeletogenesis in mice (Aszodi et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Aszodi et al., 2003.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "fc70fa01-1b1d-4d2a-99b6-e97f6019babf",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C85",
+      "claim": "\u03b13 integrins have been found to increase in OA cartilage.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b13 integrins have been found to increase in OA cartilage, though a direct mechanism between ITGA3 regulating SOX9 is not clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects knowledge from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "10d5cb7e-5961-44c7-a241-e1cacced149a",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C86",
+      "claim": "A direct mechanism between ITGA3 regulating SOX9 is not clear.",
+      "claim_type": "EXPLICIT",
+      "source": "\u03b13 integrins have been found to increase in OA cartilage, though a direct mechanism between ITGA3 regulating SOX9 is not clear.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "17cf5756-9cac-4209-9ac4-cc7e9dff8361",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C87",
+      "claim": "The relationship between SOX9 and CAV1 is complex and requires further testing.",
+      "claim_type": "EXPLICIT",
+      "source": "Regulation of SOX9 via CAV1 has been more studied, which has shown that the relationship between SOX9 and CAV1 is complex and requires further testing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "b1dbc2aa-baea-4d4c-a9fa-9feeaa0ce793",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C88",
+      "claim": "CAV1 may be affecting SOX9 levels, via its activation of RHOA/ROCK1 signalling, which leads to phosphorylation of SOX9.",
+      "claim_type": "EXPLICIT",
+      "source": "CAV1 may be affecting SOX9 levels, via its activation of RHOA/ROCK1 signalling, which leads to phosphorylation of SOX9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative mechanism based on literature.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "d3ad75bb-d709-4147-ba20-1195ab2b8279",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C89",
+      "claim": "RHOA/ROCK1 inhibition has been shown to both increase levels of SOX9 and chondrogenesis biomarkers in mouse ATDC5 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "RHOA/ROCK1 inhibition has been shown to both increase levels of SOX9 and chondrogenesis biomarkers in mouse ATDC5 cells, but also decrease levels of SOX9 and chondrogenesis biomarkers in 3D-chondrocytes (Peng et al., 2008; Xu et al., 2012; Woods and Beier, 2006; Woods et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Peng et al., 2008; Xu et al., 2012; Woods and Beier, 2006; Woods et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "e3d89d64-74ab-41f7-83e1-bb5c6282b7f2",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C90",
+      "claim": "RHOA/ROCK1 inhibition has been shown to decrease levels of SOX9 and chondrogenesis biomarkers in 3D-chondrocytes.",
+      "claim_type": "EXPLICIT",
+      "source": "RHOA/ROCK1 inhibition has been shown to both increase levels of SOX9 and chondrogenesis biomarkers in mouse ATDC5 cells, but also decrease levels of SOX9 and chondrogenesis biomarkers in 3D-chondrocytes (Peng et al., 2008; Xu et al., 2012; Woods and Beier, 2006; Woods et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Peng et al., 2008; Xu et al., 2012; Woods and Beier, 2006; Woods et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "5771bef6-3de0-4b83-b4ba-2bae1741723a",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C91",
+      "claim": "Other mRNA targets of miR-199a/b-5p likely contributed towards chondrogenesis regulation, such as MYH9 and NECTIN2.",
+      "claim_type": "EXPLICIT",
+      "source": "It is likely that other mRNA targets of miR-199a/b-5p also contributed towards chondrogenesis regulation, such as the other genes identified as miR-199a/b-5p targets from the RNAseq analysis, for example, MYH9, NECTIN2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the RNAseq data showing multiple targets.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "19e168f4-fafa-4293-9a35-4dfd39f9f7cd",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C92",
+      "claim": "miR-199b-5p inhibition leads to a greater decrease in GAG levels than miR-199a-5p inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we clearly see now this was a misconception and miR-199b-5p inhibition leads to a greater decrease in GAG levels and a greater increase in FZD6, ITGA3, and CAV1 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "b94209ab-bdc0-489a-8481-bfaa0f30312c",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C93",
+      "claim": "miR-199b-5p inhibition leads to a greater increase in FZD6, ITGA3, and CAV1 levels than miR-199a-5p inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we clearly see now this was a misconception and miR-199b-5p inhibition leads to a greater decrease in GAG levels and a greater increase in FZD6, ITGA3, and CAV1 levels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on experimental data shown in Figures 2 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "0aa4d757-9e89-455d-95e6-d36d40026f8e",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C94",
+      "claim": "miR-199b-5p increases by a greater magnitude than miR-199a-5p during chondrogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be because miR-199b-5p increases by a greater magnitude than miR-199a-5p; therefore, the inhibition of miR-199b-5p has a bigger effect on chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "520182ca-09a0-4ff3-a3cb-a89cc3a66105",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C95",
+      "claim": "The inhibition of miR-199b-5p has a bigger effect on chondrogenesis than miR-199a-5p inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This could be because miR-199b-5p increases by a greater magnitude than miR-199a-5p; therefore, the inhibition of miR-199b-5p has a bigger effect on chondrogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "d119895d-f359-46cf-8336-c23dec77c111",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C96",
+      "claim": "Deletion of miR-140 in both humans and mice affects skeletal development.",
+      "claim_type": "EXPLICIT",
+      "source": "Deletion of miR-140 in both humans and mice affects skeletal development (Miyaki et al., 2010; Grigelioniene et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Miyaki et al., 2010 and Grigelioniene et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "36e1c221-0416-406f-a789-fbaa1b5a1a27",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C97",
+      "claim": "From in vivo mouse models miR-140 and miR-455 were shown to be pivotal in protecting from OA.",
+      "claim_type": "EXPLICIT",
+      "source": "Further, from in vivo mouse models miR-140 and miR-455 were additionally shown to be pivotal in protecting from OA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects knowledge from the literature.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "84e19540-34ba-438c-a83a-8b392713a376",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C98",
+      "claim": "Intra-articular injection of a miR-199a-5p mimic has been shown to reduce cartilage damage in a rat post-traumatic OA model.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, intra-articular injection of a miR-199a-5p mimic has been shown to reduce cartilage damage in a rat post-traumatic OA model (Huang et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Huang et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "edc4e002-5489-41f3-b92f-cd4bd0a49878",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C99",
+      "claim": "miR-199a-5p and miR-199b-5p share the same seed site sequence (nucleotides 2\u20138; 5\u2032-CCAGUGUU-3\u2032).",
+      "claim_type": "EXPLICIT",
+      "source": "Since the miRNAs shared the same seed site sequence (nucleotides 2\u20138; 5\u2032-CCAGUGUU-3\u2032), we tested if inhibition of one miRNA would lead to similar or different effects to inhibition of both miRNAs (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a factual statement about the miRNA sequences.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "e35bb92a-23d5-4114-b4bd-aa84b85b62f7",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C100",
+      "claim": "Human bone marrow MSCs were isolated from human bone marrow mononuclear cells from seven donors, 18\u201325 years of age, three females and four males.",
+      "claim_type": "EXPLICIT",
+      "source": "Human bone marrow MSCs (from seven donors, 18\u201325 years of age, three females and four males) were isolated from human bone marrow mononuclear cells (Lonza Biosciences) and cultured and phenotype-tested as described previously (Barter et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental materials and methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "9a6e818a-00e2-4217-8c96-fee112a9736a",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C101",
+      "claim": "Experiments were performed using MSC cells between passages 2 and 10.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed using cells between passages 2 and 10, and all experiments were repeated with cells from a minimum of three donors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "6cd371e6-aa6c-4195-bbd6-6ff8127735b7",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "claim_id": "C102",
+      "claim": "All experiments were repeated with cells from a minimum of three donors.",
+      "claim_type": "EXPLICIT",
+      "source": "Experiments were performed using cells between passages 2 and 10, and all experiments were repeated with cells from a minimum of three donors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental methods.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "631c34d6-6d4d-42f5-9a06-3867b52d9f18",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TimiRGeN bioinformatic analysis of longitudinal chondrogenesis data identified miR-199a-5p and miR-199b-5p as pro-chondrogenic regulators. Eight signaling pathways were enriched in at least three of five timepoints, with miR-140-5p being the most positively changing miRNA in seven pathways and miR-199b-5p being the second most positively changing in six pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C25, C26, and C27 are supported by the TimiRGeN bioinformatic analysis shown in Figure 1. The analysis used appropriate differential expression methods (limma) and pathway enrichment approaches. The identification of miR-199b-5p as a key regulator is well-documented with specific pathway associations and statistical support.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "70b4f389-8406-41f9-99bb-fb94703d3ce3",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Experimental manipulation of miR-199a-5p or miR-199b-5p expression led to significant inverse modulation of key chondrogenic genes (ACAN, COL2A1, SOX9) and extracellular matrix production (GAG levels). Overexpression of miR-199a-5p increased these markers, while inhibition of either miR-199a-5p or miR-199b-5p decreased them, with combined inhibition showing more consistent reduction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C28-C32, and C60 are well-supported by experimental data in Figure 2 showing both gain- and loss-of-function experiments. The experiments used appropriate controls (non-targeting miRNA), multiple timepoints (days 0, 1, 3, 7), biological replicates (N=3-4 donors, n=4-6 replicates per donor), and statistical testing (paired two-tailed Student's t-test). The inverse relationship between miRNA expression and chondrogenic markers is consistently demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "75c0bff4-2f2e-438f-bfff-9c06920bf621",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "RNAseq analysis identified FZD6, ITGA3, and CAV1 as targets of miR-199a/b-5p during chondrogenesis. Inhibition of miR-199a-5p or miR-199b-5p resulted in hundreds of differentially expressed genes at day 0 and day 1, with significant overlap suggesting shared target repertoires. Twenty-one potential mRNA targets were predicted to be targeted by both miRNAs, with FZD6, ITGA3, CAV1, and MYH9 being significantly downregulated during chondrogenesis in multiple studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C34-C46 are supported by comprehensive RNAseq analysis using appropriate methods (DESeq2, miRNAtap, GO term analysis). The identification of differentially expressed genes is statistically rigorous (adjusted p-values <0.05), and the chi-square tests support the conclusion that miR-199a-5p and miR-199b-5p share functional targets. The integration with SkeletalVis data provides additional validation across multiple studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "FZD6, ITGA3, and CAV1 were verified as direct targets of miR-199a/b-5p through luciferase assays and inhibition experiments. Inhibition of miR-199a-5p or miR-199a/b-5p led to significant upregulation of these targets, with no consistent improvement from combined inhibition. Luciferase assays demonstrated that FZD6 and ITGA3 3'UTRs contain repressive elements, and mutation of the miR-199-5p seed sequence reduced miRNA-mediated inhibition.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C47-C50, C52-C54, and C70 are well-supported by experimental data in Figure 4. The luciferase assays provide direct evidence of miRNA-target interactions, with appropriate controls (empty vector, non-targeting miRNA, seed sequence mutations). The inhibition experiments show consistent upregulation of targets with statistical significance. The combination of luciferase validation and functional inhibition experiments provides strong evidence for direct targeting.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "2f7fca48-4dec-4897-81d2-a7053b66b87a",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Kinetic modeling of the miR-199a/b-5p-chondrogenesis system was developed, with an initial model showing 15/18 objects with MSE <3 (average MSE 15.96) and an enhanced model showing 14/18 objects with MSE >3 (average MSE 12.08), indicating improvement in capturing experimental data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C55-C58 present modeling results, but there are concerns about the evaluation. First, C57 states that 14/18 objects had MSE >3, which would indicate worse fit, yet the text claims this 'still captured much of the experimental data.' This is contradictory. Second, the average MSE improved from 15.96 to 12.08, but without knowing the scale of the data or what constitutes a 'good' MSE, it's difficult to assess model quality. The manuscript lacks validation against independent data or cross-validation approaches.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "c278c7f2-d153-486a-8aaf-c1f972212b23",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "This work represents the first multi-miRNA model of a chondrogenesis-based system, highlighting complex relationships between regulatory miRNAs and their target mRNAs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C7 asserts novelty but provides no systematic literature review or citation to support that this is indeed the first multi-miRNA model of chondrogenesis. While the model may be novel, the claim of being 'first' requires more rigorous documentation of prior work in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "1d8ecc1e-40f6-4f54-9cd5-a6f01fbefa21",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "miR-199b-5p inhibition leads to greater effects on chondrogenesis than miR-199a-5p inhibition, with greater decreases in GAG levels and greater increases in FZD6, ITGA3, and CAV1 levels. This is attributed to miR-199b-5p increasing by a greater magnitude during chondrogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C92-C95 are supported by experimental data in Figures 2 and 4 showing differential effects of miR-199a-5p versus miR-199b-5p inhibition. The interpretation that miR-199b-5p increases by greater magnitude is reasonable based on the observed functional effects, though direct quantification of the magnitude of increase would strengthen this conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "8f6d478d-30e0-49e5-88bc-c073f309ab47",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Background claims establishing the biological context of chondrogenesis, osteoarthritis, and miRNA function, including the role of SOX9 as master transcription factor, the importance of COL2A1 and ACAN in cartilage ECM, and the contribution of cartilage loss to OA development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C8-C20 are well-established background knowledge supported by appropriate citations to the literature. These claims provide necessary context for the study but do not represent novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Prior work has established miR-140 and miR-455 as important regulators of chondrogenesis and cartilage health, with miR-140 deletion affecting skeletal development in humans and mice. The MIR199 family has been identified as pro-chondrogenic in mouse cells, and miR-199a and miR-199b are vertebrate-specific miRNAs associated with mesenchymal tissues and skeleton.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C24, C59, C61-C64, C96-C98 accurately represent prior work in the field with appropriate citations. These claims establish the scientific context and rationale for studying miR-199a/b-5p but do not represent novel findings from this manuscript.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "24203dcc-88cb-4648-b71f-ab978393114c",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Literature-based claims about known miRNA-target interactions and signaling pathways relevant to chondrogenesis, including CAV1 as a target of miR-199a-5p, FZD6 as a target of miR-140-5p, TGFB signaling mechanisms, and the roles of integrins and Wnt signaling in cartilage biology.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C51, C65-C67, C69, C73-C75, C80, C82-C84, C89-C90 are supported by appropriate citations to the literature. These claims provide mechanistic context for interpreting the experimental findings but represent prior knowledge rather than novel discoveries.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "a9b89ba5-f9d9-4662-b7e0-bf6786c2a1e8",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Speculative and inferential claims about mechanisms and importance of identified targets, including FZD6 being highly important in chondrogenesis, CAV1's role in early versus late chondrogenesis, unclear mechanisms between ITGA3 and SOX9, and potential contributions of other miR-199a/b-5p targets like MYH9 and NECTIN2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C68, C77, C85-C88, C91 represent reasonable inferences and speculation based on the data, but lack direct experimental validation. These are appropriately presented as hypotheses or interpretations rather than definitive conclusions, but would benefit from additional experimental testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "20947635-3079-4f46-8ed6-7c987027f5d2",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Model design and parameterization details, including use of TGFB3 to initiate chondrogenesis, relationships between model components, and incorporation of literature data on regulatory interactions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C71-C72, C76, C78-C79 accurately describe the model design and are supported by the methods and Figure 5. These are methodological details that support the modeling approach but do not represent primary biological findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "6c782bef-7d20-4c88-94dd-0b7aae1b72f3",
+      "content_id": "b2de6f39-8cd0-4e10-aeb6-448534c4963c",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Methodological details and established biological facts, including FZD6 function, miRNA seed sequences, and experimental design parameters (donor characteristics, cell passages, replication).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81, C99-C102 represent either established biological knowledge (C81, C99) or accurate descriptions of experimental methods (C100-C102). These provide necessary methodological transparency but do not represent novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "17ebbbd1-f04d-401a-b30d-7682a30398d7",
+      "content_id": "11572bbf-5e0f-4826-8195-1728af36f76c",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Bioinformatic analysis using TimiRGeN identified miR-199a-5p and miR-199b-5p as pro-chondrogenic regulators. Eight signaling pathways were enriched across multiple timepoints during chondrogenesis, with miR-140-5p being the most positively changing miRNA in seven pathways and miR-199b-5p being the second most positively changing in six pathways.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer states that 'the evidence supporting the significance of the identified miRNA and its target mRNA transcripts is convincing.' The anonymous reviewer confirms they 'are convinced that the novel relationships reported here between miR-199a/b-5p and target genes...are likely to be genuine,' indicating acceptance of the bioinformatic identification of these miRNAs as pro-chondrogenic regulators.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "64c604f6-e232-4758-88cd-b383c8392bd2",
+      "content_id": "11572bbf-5e0f-4826-8195-1728af36f76c",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Experimental manipulation of miR-199a-5p and miR-199b-5p expression (both overexpression and inhibition) led to significant inverse modulation of key chondrogenic genes (ACAN, COL2A1, SOX9) and extracellular matrix production (GAG levels). Overexpression of miR-199a-5p increased these markers, while inhibition of either miR-199a-5p or miR-199b-5p decreased them, with combined inhibition showing more consistent reduction.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer initially raised concerns about 'the lack of reporting of details of the manipulation experiments' and requested proof that experiments worked as predicted. However, in their final comments they state 'I would now like to thank the authors for their hard work in responding to my comments. I am happy with the changes they have made, in particular the inclusion of further experimental evidence in Figures 2 and 4.' This indicates the experimental manipulation data is now accepted as convincing.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "cb73bbdc-602e-4120-b012-3f3e190f142f",
+      "content_id": "11572bbf-5e0f-4826-8195-1728af36f76c",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "FZD6, ITGA3, and CAV1 were identified as direct targets of miR-199a/b-5p through multiple lines of evidence: RNAseq data showing upregulation after miR-199 inhibition, bioinformatic prediction identifying 21 potential targets, and luciferase assays demonstrating direct binding. Mutation of the predicted miR-199-5p seed sequence in the 3'UTR of FZD6 and ITGA3 reduced the extent of luciferase inhibition, confirming direct targeting.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer explicitly states 'I am convinced that the novel relationships reported here between miR-199a/b-5p and target genes FZD6, ITGA3 and CAV1 are likely to be genuine.' They also note being 'happy with the changes they have made, in particular the inclusion of further experimental evidence in Figures 2 and 4,' indicating the target validation experiments are convincing.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "2089a088-51a9-4844-95de-e686aff0a1c2",
+      "content_id": "11572bbf-5e0f-4826-8195-1728af36f76c",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "RNAseq analysis during early chondrogenesis showed positive changes in COL2A1, ACAN, and SOX9 expression, with GO term analysis confirming chondrocyte differentiation. Inhibition of miR-199a-5p or miR-199b-5p resulted in hundreds of differentially expressed genes (87 and 46 at day 0; 674 and 817 at day 1, respectively), with significant overlap suggesting shared functional targets. Key chondrogenic markers were significantly lower after miR-199 inhibition, and chondrogenesis-associated GO terms were suppressed.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer states 'the evidence supporting the significance of the identified miRNA and its target mRNA transcripts is convincing.' The anonymous reviewer confirms acceptance of the RNA-seq data by stating they are 'happy with the changes' and found the evidence convincing for the novel relationships. No specific concerns were raised about the RNAseq methodology or differential expression analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "cab9f516-851d-4baa-a340-117701d7fef8",
+      "content_id": "11572bbf-5e0f-4826-8195-1728af36f76c",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "A kinetic model of miR-199a/b-5p regulation during chondrogenesis was developed and validated. The initial model captured most experimental data (15/18 objects with MSE <3, average MSE 15.96), and the enhanced model showed improvement (14/18 objects with MSE <3, average MSE 12.08).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer specifically notes that 'researchers with a broader interest in miRNAs may find the computational model to identify novel RNA\u2013RNA interactions particularly helpful,' indicating acceptance of the modeling approach. The anonymous reviewer raised no specific concerns about the model validation or its fit to experimental data, and their overall acceptance of the work suggests implicit support for this component.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "194b574d-5201-4128-b646-d0502f0c3d74",
+      "content_id": "11572bbf-5e0f-4826-8195-1728af36f76c",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors claim this is the first multi-miRNA model of a chondrogenesis-based system, highlighting complex relationships between regulatory miRNAs and their target mRNAs.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The anonymous reviewer expresses concern about novelty, stating 'as the authors have already published work studying the most dynamic miRNA (miR-140-5p) in this biological system I was not convinced that this study of the second miRNA in their list provided a conceptual advance on their previous work.' This suggests the reviewer questions whether the novelty claim is fully justified, though they do not explicitly refute that it is the first multi-miRNA model.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "3b76ce44-2b77-4a64-95a4-bd9bd4418271",
+      "content_id": "11572bbf-5e0f-4826-8195-1728af36f76c",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Comparison of miR-199a-5p versus miR-199b-5p effects showed that miR-199b-5p inhibition led to greater decreases in GAG levels and greater increases in target gene expression (FZD6, ITGA3, CAV1) compared to miR-199a-5p inhibition alone. Combined inhibition showed no consistent improvement over miR-199a-5p inhibition alone. The authors suggest this may be because miR-199b-5p increases by a greater magnitude during chondrogenesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer initially questioned 'why did the authors not attempt to manipulate both miRNAs in both directions?' but later states they are 'happy with the changes they have made, in particular the inclusion of further experimental evidence in Figures 2 and 4,' suggesting these comparative experiments were added and are now accepted. No further concerns were raised about these differential effects.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d572973c-6e05-4166-bc85-c68173a2ce6e",
+      "result_id": "631c34d6-6d4d-42f5-9a06-3867b52d9f18"
+    },
+    {
+      "claim_id": "f80900f7-27f0-46ed-8c9f-31437e49b5f3",
+      "result_id": "631c34d6-6d4d-42f5-9a06-3867b52d9f18"
+    },
+    {
+      "claim_id": "3a7e1deb-102a-46f9-a9d6-cc61cda932ac",
+      "result_id": "631c34d6-6d4d-42f5-9a06-3867b52d9f18"
+    },
+    {
+      "claim_id": "c993954d-768b-4946-9e64-c6a4e4df1b1e",
+      "result_id": "631c34d6-6d4d-42f5-9a06-3867b52d9f18"
+    },
+    {
+      "claim_id": "e0ca6ee6-69ec-4139-88b6-6513db08ad99",
+      "result_id": "70b4f389-8406-41f9-99bb-fb94703d3ce3"
+    },
+    {
+      "claim_id": "47dd5b59-a1bb-456c-ab69-e9da4920da99",
+      "result_id": "70b4f389-8406-41f9-99bb-fb94703d3ce3"
+    },
+    {
+      "claim_id": "e4ef83d1-06bb-451c-aff5-578b5fcaa0b4",
+      "result_id": "70b4f389-8406-41f9-99bb-fb94703d3ce3"
+    },
+    {
+      "claim_id": "447b9b30-1652-40ed-904a-2e4610cd84ac",
+      "result_id": "70b4f389-8406-41f9-99bb-fb94703d3ce3"
+    },
+    {
+      "claim_id": "30869fce-13ff-465a-b7ff-a6d592f33488",
+      "result_id": "70b4f389-8406-41f9-99bb-fb94703d3ce3"
+    },
+    {
+      "claim_id": "f41a0b92-8322-4430-9fbf-59f052f3ca51",
+      "result_id": "70b4f389-8406-41f9-99bb-fb94703d3ce3"
+    },
+    {
+      "claim_id": "fa0b5194-afc6-4604-97d0-177d4f9c89c3",
+      "result_id": "70b4f389-8406-41f9-99bb-fb94703d3ce3"
+    },
+    {
+      "claim_id": "4e80b4d0-a860-494f-a2d2-59c397cd2f28",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "b06f9162-a052-4c38-bee9-dae83acd8f5c",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "f8b6d90e-ce73-4a04-8503-ee8239ead64e",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "18779c0a-6c29-4137-97fb-ae81b6b4e2fb",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "58299c7a-0386-494a-9d00-c59efef4f436",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "a6488e20-bd85-462f-95b6-59e7eaa3b22d",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "7cb4d8f4-60c7-46ff-a523-f79924d641dd",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "5c4fd3eb-c1dc-4d1a-8876-1b0d2ac0074c",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "1ca6cae9-ff96-4c92-93e7-2a51569d30b8",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "a05b3d32-5391-4fc2-b143-7b63fef43bc2",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "353264d1-f8a4-478d-ac64-e31bb28781de",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "7f52472c-0966-4f28-86a9-61874aee8fce",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "4d3fbddb-4fa8-4d37-baf0-f15fda0d037d",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "b3dde4e7-3c0b-4749-af18-991d8c5fdc1f",
+      "result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621"
+    },
+    {
+      "claim_id": "2dc86ea0-7022-430d-a86d-4f6c42a35a74",
+      "result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6"
+    },
+    {
+      "claim_id": "c7526efb-01c4-4f9d-9b53-1166e1a2c617",
+      "result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6"
+    },
+    {
+      "claim_id": "a7a2ba98-f797-422c-81fc-730b4214d2ac",
+      "result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6"
+    },
+    {
+      "claim_id": "655cbb5c-2adb-4748-b98c-bd47007d4402",
+      "result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6"
+    },
+    {
+      "claim_id": "f2e9de3c-7bec-4506-9af9-b7cfb7667093",
+      "result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6"
+    },
+    {
+      "claim_id": "82a19446-4f08-4bef-860f-57d0ff61f980",
+      "result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6"
+    },
+    {
+      "claim_id": "946f0785-f356-42cb-aeca-3a3f572713d9",
+      "result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6"
+    },
+    {
+      "claim_id": "eb6d9a6b-0c16-42de-9397-764900ee7fb8",
+      "result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6"
+    },
+    {
+      "claim_id": "8394bfa8-d701-49ae-9050-5cb0020d8576",
+      "result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6"
+    },
+    {
+      "claim_id": "843b6375-545a-4b93-860a-600605e554f7",
+      "result_id": "2f7fca48-4dec-4897-81d2-a7053b66b87a"
+    },
+    {
+      "claim_id": "ffa80522-c077-4da8-a44c-5d345fe28a78",
+      "result_id": "2f7fca48-4dec-4897-81d2-a7053b66b87a"
+    },
+    {
+      "claim_id": "8282137c-13ba-44ca-adcb-88de8ef0eef8",
+      "result_id": "2f7fca48-4dec-4897-81d2-a7053b66b87a"
+    },
+    {
+      "claim_id": "72c3d7af-3522-4879-81fe-2b369e7d0877",
+      "result_id": "2f7fca48-4dec-4897-81d2-a7053b66b87a"
+    },
+    {
+      "claim_id": "6eb08b77-a99f-4f85-b187-6fbe82caea75",
+      "result_id": "c278c7f2-d153-486a-8aaf-c1f972212b23"
+    },
+    {
+      "claim_id": "19e168f4-fafa-4293-9a35-4dfd39f9f7cd",
+      "result_id": "1d8ecc1e-40f6-4f54-9cd5-a6f01fbefa21"
+    },
+    {
+      "claim_id": "b94209ab-bdc0-489a-8481-bfaa0f30312c",
+      "result_id": "1d8ecc1e-40f6-4f54-9cd5-a6f01fbefa21"
+    },
+    {
+      "claim_id": "0aa4d757-9e89-455d-95e6-d36d40026f8e",
+      "result_id": "1d8ecc1e-40f6-4f54-9cd5-a6f01fbefa21"
+    },
+    {
+      "claim_id": "520182ca-09a0-4ff3-a3cb-a89cc3a66105",
+      "result_id": "1d8ecc1e-40f6-4f54-9cd5-a6f01fbefa21"
+    },
+    {
+      "claim_id": "2bb284c8-7998-4437-9d86-50a3af648d59",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "7e3da644-b8f0-441c-9beb-419df5e50247",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "d6868474-45b9-4e8a-af20-2c86f5916031",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "f714e77b-28c9-4d59-be75-c5f0093dd508",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "ed3a92fe-ca1c-47cb-9a1e-f516029fc989",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "2e6b75a3-40c9-4ac2-969b-62bef8dbc429",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "bea02d11-06f3-4954-8d4c-1103ec700952",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "79483410-7671-4f30-9f71-5c0aca2bb6b2",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "b83f9a7b-ded2-409e-8e1d-09364a38ddf3",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "fa05b852-693c-4b95-ab9d-7e2abec6f35c",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "84785380-bef4-4372-ace6-945278ada7cf",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "35ddf5f0-dbc3-4313-a812-171cbadc33ab",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "7914ab63-4712-411f-958c-2a03832c2213",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "107bf053-f632-4d23-8249-12fff06e6de1",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "e5679134-176b-468a-b998-20842e1d0448",
+      "result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47"
+    },
+    {
+      "claim_id": "541dabb5-32b1-4d1c-8a63-fd618040f8be",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "deafac38-183c-484f-b1ff-0b52c22c9bd3",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "a7ee4d06-6df9-4f7d-ba5d-dd06d4d37f16",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "013f7f9e-65e4-488b-9531-b21d5b7d6a14",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "829fc793-7a3d-40aa-90fc-b142d9e71b53",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "fae0c16a-028d-427f-8776-1264b12f7373",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "b50aa2ca-8193-43eb-86ab-f1c16d4021ff",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "3164b544-3eb9-4ec2-bf8a-75f9d122535a",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "179702da-3774-48cb-9365-1c6bb42cac8a",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "d119895d-f359-46cf-8336-c23dec77c111",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "36e1c221-0416-406f-a789-fbaa1b5a1a27",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "84e19540-34ba-438c-a83a-8b392713a376",
+      "result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6"
+    },
+    {
+      "claim_id": "6c4b3782-f3bb-44ed-91f6-7c44d1aa6208",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "76b43d02-f996-4a9f-968f-c6b2abb6ad26",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "40d03054-5f02-4086-9635-d0abaad2fd4a",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "c614ce1b-edf8-4c2e-b23d-144d59a1ec52",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "0b7202aa-b050-480f-9e33-8e6492a910bd",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "5b8642ad-95d7-4dc7-baac-40e7dd81072b",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "75e654e5-f671-4f63-801e-ca28be134691",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "8e9aa59e-841c-4f87-a70a-5af56a6a1937",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "b05d4371-d3d7-47a6-82ec-c5b2ca25648b",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "231354be-eed5-453f-b0d6-cb0bbe3e82c2",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "0f089a41-54ff-4a80-8c66-1aa4cd048862",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "187eb2e4-b374-4b00-b4d3-16408a496e43",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "d3ad75bb-d709-4147-ba20-1195ab2b8279",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "e3d89d64-74ab-41f7-83e1-bb5c6282b7f2",
+      "result_id": "24203dcc-88cb-4648-b71f-ab978393114c"
+    },
+    {
+      "claim_id": "29a02045-d468-44f5-8365-33f79354c4ef",
+      "result_id": "a9b89ba5-f9d9-4662-b7e0-bf6786c2a1e8"
+    },
+    {
+      "claim_id": "434e67b4-0ea9-4cfc-ab90-4e7d182f0803",
+      "result_id": "a9b89ba5-f9d9-4662-b7e0-bf6786c2a1e8"
+    },
+    {
+      "claim_id": "fc70fa01-1b1d-4d2a-99b6-e97f6019babf",
+      "result_id": "a9b89ba5-f9d9-4662-b7e0-bf6786c2a1e8"
+    },
+    {
+      "claim_id": "10d5cb7e-5961-44c7-a241-e1cacced149a",
+      "result_id": "a9b89ba5-f9d9-4662-b7e0-bf6786c2a1e8"
+    },
+    {
+      "claim_id": "17cf5756-9cac-4209-9ac4-cc7e9dff8361",
+      "result_id": "a9b89ba5-f9d9-4662-b7e0-bf6786c2a1e8"
+    },
+    {
+      "claim_id": "b1dbc2aa-baea-4d4c-a9fa-9feeaa0ce793",
+      "result_id": "a9b89ba5-f9d9-4662-b7e0-bf6786c2a1e8"
+    },
+    {
+      "claim_id": "5771bef6-3de0-4b83-b4ba-2bae1741723a",
+      "result_id": "a9b89ba5-f9d9-4662-b7e0-bf6786c2a1e8"
+    },
+    {
+      "claim_id": "b2e8251e-e200-49ae-bdb9-4800f62d43cb",
+      "result_id": "20947635-3079-4f46-8ed6-7c987027f5d2"
+    },
+    {
+      "claim_id": "c5bd6cc7-d7af-4262-bf38-eb3a0d023514",
+      "result_id": "20947635-3079-4f46-8ed6-7c987027f5d2"
+    },
+    {
+      "claim_id": "f195ac27-3b2b-4836-8a7d-a3b86f8144cc",
+      "result_id": "20947635-3079-4f46-8ed6-7c987027f5d2"
+    },
+    {
+      "claim_id": "0b1f4045-de45-429f-948b-994e1603af99",
+      "result_id": "20947635-3079-4f46-8ed6-7c987027f5d2"
+    },
+    {
+      "claim_id": "3a1c27cd-badb-47be-bb01-4dcddfad5fe1",
+      "result_id": "20947635-3079-4f46-8ed6-7c987027f5d2"
+    },
+    {
+      "claim_id": "ce73f7d7-ddc3-4419-ace4-6c4f95244024",
+      "result_id": "6c782bef-7d20-4c88-94dd-0b7aae1b72f3"
+    },
+    {
+      "claim_id": "edc4e002-5489-41f3-b92f-cd4bd0a49878",
+      "result_id": "6c782bef-7d20-4c88-94dd-0b7aae1b72f3"
+    },
+    {
+      "claim_id": "e35bb92a-23d5-4114-b4bd-aa84b85b62f7",
+      "result_id": "6c782bef-7d20-4c88-94dd-0b7aae1b72f3"
+    },
+    {
+      "claim_id": "9a6e818a-00e2-4217-8c96-fee112a9736a",
+      "result_id": "6c782bef-7d20-4c88-94dd-0b7aae1b72f3"
+    },
+    {
+      "claim_id": "6cd371e6-aa6c-4195-bbd6-6ff8127735b7",
+      "result_id": "6c782bef-7d20-4c88-94dd-0b7aae1b72f3"
+    },
+    {
+      "claim_id": "d572973c-6e05-4166-bc85-c68173a2ce6e",
+      "result_id": "17ebbbd1-f04d-401a-b30d-7682a30398d7"
+    },
+    {
+      "claim_id": "f80900f7-27f0-46ed-8c9f-31437e49b5f3",
+      "result_id": "17ebbbd1-f04d-401a-b30d-7682a30398d7"
+    },
+    {
+      "claim_id": "3a7e1deb-102a-46f9-a9d6-cc61cda932ac",
+      "result_id": "17ebbbd1-f04d-401a-b30d-7682a30398d7"
+    },
+    {
+      "claim_id": "c993954d-768b-4946-9e64-c6a4e4df1b1e",
+      "result_id": "17ebbbd1-f04d-401a-b30d-7682a30398d7"
+    },
+    {
+      "claim_id": "e0ca6ee6-69ec-4139-88b6-6513db08ad99",
+      "result_id": "64c604f6-e232-4758-88cd-b383c8392bd2"
+    },
+    {
+      "claim_id": "47dd5b59-a1bb-456c-ab69-e9da4920da99",
+      "result_id": "64c604f6-e232-4758-88cd-b383c8392bd2"
+    },
+    {
+      "claim_id": "e4ef83d1-06bb-451c-aff5-578b5fcaa0b4",
+      "result_id": "64c604f6-e232-4758-88cd-b383c8392bd2"
+    },
+    {
+      "claim_id": "447b9b30-1652-40ed-904a-2e4610cd84ac",
+      "result_id": "64c604f6-e232-4758-88cd-b383c8392bd2"
+    },
+    {
+      "claim_id": "30869fce-13ff-465a-b7ff-a6d592f33488",
+      "result_id": "64c604f6-e232-4758-88cd-b383c8392bd2"
+    },
+    {
+      "claim_id": "f41a0b92-8322-4430-9fbf-59f052f3ca51",
+      "result_id": "64c604f6-e232-4758-88cd-b383c8392bd2"
+    },
+    {
+      "claim_id": "fa0b5194-afc6-4604-97d0-177d4f9c89c3",
+      "result_id": "64c604f6-e232-4758-88cd-b383c8392bd2"
+    },
+    {
+      "claim_id": "4e80b4d0-a860-494f-a2d2-59c397cd2f28",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "2dc86ea0-7022-430d-a86d-4f6c42a35a74",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "4d3fbddb-4fa8-4d37-baf0-f15fda0d037d",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "c7526efb-01c4-4f9d-9b53-1166e1a2c617",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "a7a2ba98-f797-422c-81fc-730b4214d2ac",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "f2e9de3c-7bec-4506-9af9-b7cfb7667093",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "82a19446-4f08-4bef-860f-57d0ff61f980",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "946f0785-f356-42cb-aeca-3a3f572713d9",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "eb6d9a6b-0c16-42de-9397-764900ee7fb8",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "8394bfa8-d701-49ae-9050-5cb0020d8576",
+      "result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f"
+    },
+    {
+      "claim_id": "b06f9162-a052-4c38-bee9-dae83acd8f5c",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "f8b6d90e-ce73-4a04-8503-ee8239ead64e",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "18779c0a-6c29-4137-97fb-ae81b6b4e2fb",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "58299c7a-0386-494a-9d00-c59efef4f436",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "a6488e20-bd85-462f-95b6-59e7eaa3b22d",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "7cb4d8f4-60c7-46ff-a523-f79924d641dd",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "5c4fd3eb-c1dc-4d1a-8876-1b0d2ac0074c",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "1ca6cae9-ff96-4c92-93e7-2a51569d30b8",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "a05b3d32-5391-4fc2-b143-7b63fef43bc2",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "353264d1-f8a4-478d-ac64-e31bb28781de",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "7f52472c-0966-4f28-86a9-61874aee8fce",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "b3dde4e7-3c0b-4749-af18-991d8c5fdc1f",
+      "result_id": "2089a088-51a9-4844-95de-e686aff0a1c2"
+    },
+    {
+      "claim_id": "843b6375-545a-4b93-860a-600605e554f7",
+      "result_id": "cab9f516-851d-4baa-a340-117701d7fef8"
+    },
+    {
+      "claim_id": "ffa80522-c077-4da8-a44c-5d345fe28a78",
+      "result_id": "cab9f516-851d-4baa-a340-117701d7fef8"
+    },
+    {
+      "claim_id": "8282137c-13ba-44ca-adcb-88de8ef0eef8",
+      "result_id": "cab9f516-851d-4baa-a340-117701d7fef8"
+    },
+    {
+      "claim_id": "72c3d7af-3522-4879-81fe-2b369e7d0877",
+      "result_id": "cab9f516-851d-4baa-a340-117701d7fef8"
+    },
+    {
+      "claim_id": "6eb08b77-a99f-4f85-b187-6fbe82caea75",
+      "result_id": "194b574d-5201-4128-b646-d0502f0c3d74"
+    },
+    {
+      "claim_id": "655cbb5c-2adb-4748-b98c-bd47007d4402",
+      "result_id": "3b76ce44-2b77-4a64-95a4-bd9bd4418271"
+    },
+    {
+      "claim_id": "19e168f4-fafa-4293-9a35-4dfd39f9f7cd",
+      "result_id": "3b76ce44-2b77-4a64-95a4-bd9bd4418271"
+    },
+    {
+      "claim_id": "b94209ab-bdc0-489a-8481-bfaa0f30312c",
+      "result_id": "3b76ce44-2b77-4a64-95a4-bd9bd4418271"
+    },
+    {
+      "claim_id": "0aa4d757-9e89-455d-95e6-d36d40026f8e",
+      "result_id": "3b76ce44-2b77-4a64-95a4-bd9bd4418271"
+    },
+    {
+      "claim_id": "520182ca-09a0-4ff3-a3cb-a89cc3a66105",
+      "result_id": "3b76ce44-2b77-4a64-95a4-bd9bd4418271"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b3ee7e85-0161-4b47-afbd-ff9905f9e05b",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "631c34d6-6d4d-42f5-9a06-3867b52d9f18",
+      "peer_result_id": "17ebbbd1-f04d-401a-b30d-7682a30398d7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C3, C25-C27 regarding TimiRGeN bioinformatic identification of miR-199b-5p. Both evaluations find the evidence convincing and support the identification of these miRNAs as pro-chondrogenic regulators.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "379252ff-978f-4c2c-95d9-9bfb798aa518",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "70b4f389-8406-41f9-99bb-fb94703d3ce3",
+      "peer_result_id": "64c604f6-e232-4758-88cd-b383c8392bd2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C4, C28-C32, C60 regarding gain- and loss-of-function experiments. Peer reviewer initially had concerns about experimental details but after revisions (additional evidence in Figure 2) accepted the manipulation data as convincing, aligning with OpenEval's supported evaluation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "03ccac9f-35c0-4ec8-877e-62f1e25d9aea",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2f7fca48-4dec-4897-81d2-a7053b66b87a",
+      "peer_result_id": "cab9f516-851d-4baa-a340-117701d7fef8",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C55-C58 regarding computational modeling. OpenEval rates as UNCERTAIN due to concerns about MSE interpretation and lack of validation, while peer reviewers find the model helpful and implicitly support it with no specific concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "045cae11-aaa5-4fe5-8f67-1966343bc442",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "c278c7f2-d153-486a-8aaf-c1f972212b23",
+      "peer_result_id": "194b574d-5201-4128-b646-d0502f0c3d74",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C7 regarding novelty. Both evaluations express UNCERTAIN status - OpenEval notes lack of systematic literature review to support 'first' claim, while peer reviewer questions conceptual advance given prior work on miR-140-5p.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "a47bef11-52fb-4c16-8932-91113393e92f",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "75c0bff4-2f2e-438f-bfff-9c06920bf621",
+      "peer_result_id": "2089a088-51a9-4844-95de-e686aff0a1c2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on RNAseq analysis claims C34-C44, C46. OpenEval finds comprehensive support for differential expression analysis and statistical rigor. Peer reviewers find the evidence convincing with no specific concerns about methodology, supporting the same claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "8707ced5-ce7f-4fa7-9167-bae942485d39",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "08a125fd-d72b-4f3d-8f70-6e375ab30ee6",
+      "peer_result_id": "cb73bbdc-602e-4120-b012-3f3e190f142f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on target validation claims C6, C47-C50, C52-C54, C70. Both evaluations support the luciferase assays and direct miRNA-target interactions. Peer reviewer explicitly states conviction that relationships between miR-199a/b-5p and targets FZD6, ITGA3, CAV1 are genuine.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "1fd6cb7f-0f81-40a1-9288-30eed5f78186",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "1d8ecc1e-40f6-4f54-9cd5-a6f01fbefa21",
+      "peer_result_id": "3b76ce44-2b77-4a64-95a4-bd9bd4418271",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C92-C95 regarding differential effects of miR-199a-5p versus miR-199b-5p. OpenEval finds support based on Figures 2 and 4. Peer reviewer initially questioned why both miRNAs weren't manipulated in both directions but accepted additional experimental evidence, supporting these comparative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "249edb5f-4254-4acd-ba42-67d95e65338a",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "8f6d478d-30e0-49e5-88bc-c073f309ab47",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated background/context claims C1, C2, C8-C20 as supported by literature citations. No corresponding peer review evaluation found for these background knowledge claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "d8ef612d-1a24-40bc-ba6f-62433434ff5e",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "cb6d869e-6064-4e58-ae7f-99e411f7c1e6",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated prior work claims C21-C24, C59, C61-C64, C96-C98 as supported with appropriate citations. No corresponding peer review evaluation found for these literature context claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "02b92262-344e-47ec-bc77-5e2d4c81cd01",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "24203dcc-88cb-4648-b71f-ab978393114c",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated mechanistic context claims C51, C65-C67, C69, C73-C75, C80, C82-C84, C89-C90 as supported by literature. No corresponding peer review evaluation found for these prior knowledge claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "ae02fc44-d7ea-4d2d-92aa-4841b08b2dbc",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a9b89ba5-f9d9-4662-b7e0-bf6786c2a1e8",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rated claims C68, C77, C85-C88, C91 as UNCERTAIN, noting they are reasonable inferences but lack direct experimental validation. No corresponding peer review evaluation found for these speculative/interpretive claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "db9a90fb-20ef-42f5-8337-7a7fb679114c",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "20947635-3079-4f46-8ed6-7c987027f5d2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated model design claims C71-C72, C76, C78-C79 as supported methodological details. No corresponding peer review evaluation found for these specific modeling methodology claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    },
+    {
+      "id": "084fceaa-40ad-43fc-a50e-c4b323645e69",
+      "submission_id": "3be07bb6-ad87-4334-9133-fa3deafcd4eb",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "6c782bef-7d20-4c88-94dd-0b7aae1b72f3",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claims C81, C99-C102 as supported, representing established knowledge or methodological descriptions. No corresponding peer review evaluation found for these claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:35.242941Z"
+    }
+  ]
+}

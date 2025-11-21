@@ -1,0 +1,258 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C50"
+    ],
+    "result": "The authors developed miniML, a CNN-LSTM deep learning model trained on ~30,000 labeled synaptic event samples, achieving 98.4% validation accuracy and an area under the ROC curve close to 1, with the model focusing on data around event peaks for classification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C11-C13, C43-C46, and C50 collectively describe the development and performance of the miniML model. The training dataset size (C44), model architecture (C43, C45), validation accuracy (C12), ROC curve performance (C13), and saliency analysis (C50) provide converging evidence for a well-trained classifier. Training time (C46) demonstrates computational feasibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "miniML outperforms existing synaptic event detection methods (template matching, deconvolution, threshold-based, Bayesian, SimplyFire, MiniAnalysis) in benchmarking tests using simulated ground-truth data, showing highest precision (no false positives at any SNR), highest F1 scores, robustness to variable event kinetics, and minimal threshold dependence (5-195% range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C16-C23 provide comprehensive benchmarking evidence. The use of simulated ground-truth data with known event positions allows rigorous quantitative comparison. Multiple performance metrics (precision, recall, F1 score) across varying SNR and event kinetics demonstrate superiority. The threshold independence (C22) is particularly important for practical application. However, the benchmarking uses synthetic data which may not fully capture real-world complexity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "miniML reliably detects synaptic events in out-of-sample electrophysiological recordings from diverse preparations including mouse cerebellar granule cells, calyx of Held, Golgi cells, and human iPSC-derived neurons, detecting more events than previous methods despite differences in event kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15, C24-C27 demonstrate generalization across multiple experimental preparations. The model trained on MF-GC data successfully detects events in preparations with different kinetics (C26: Golgi cells with 1.83 ms vs 0.9 ms decay) and different species (C27: human iPSC neurons). Comparison with other methods (C24) provides validation. The diversity of preparations tested strengthens the generalization claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C51",
+      "C52",
+      "C62"
+    ],
+    "result": "Transfer learning enables miniML to be adapted to new datasets with as few as 400-500 labeled samples, achieving comparable performance (95.4% vs 96.1% accuracy) to full training with 10\u00d7 more samples, significantly reducing the time-consuming process of data annotation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C51-C52, and C62 demonstrate the effectiveness of transfer learning. The quantitative comparison (C29: 95.4% vs 96.1% accuracy with 400 vs 4000 samples) shows minimal performance loss with dramatically reduced training data. Cross-validation across multiple datasets (C52) strengthens this conclusion. This addresses a practical limitation of supervised learning approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C61"
+    ],
+    "result": "Transfer learning-trained miniML models enable consistent event detection across different recording modes (voltage-clamp vs current-clamp), with highly correlated event frequencies (0.49 Hz vs 0.54 Hz, n=15) between the two modes in the same neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30 and C61 demonstrate that TL enables adaptation to different recording conditions. The paired recordings from the same neurons (C30) provide strong validation, with nearly identical frequencies and high correlation. This addresses a practical challenge where different recording modes typically require different detection schemes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C53"
+    ],
+    "result": "miniML analysis of zebrafish telencephalon recordings revealed broad distributions of synaptic event properties, with correlations between decay and rise times across neurons, and negative correlation between input resistance and decay times, consistent with cell size determining event kinetics through filtering during propagation to the soma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C53 demonstrate miniML's utility in analyzing complex datasets with diverse event properties. The correlations observed (C32: decay vs rise time; C33: input resistance vs decay time) support a mechanistic hypothesis about event propagation. However, the mechanistic interpretation (C32, C33) is inferential and would benefit from additional validation. The sample size for input resistance measurements is not specified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C54"
+    ],
+    "result": "miniML applied to Drosophila NMJ recordings detected significant differences in GluRIIA mutants compared to wild-type: 54% reduction in mEPSC amplitude, 64% reduction in event frequency, and faster kinetics (\u221258% decay time, \u221218% rise time), consistent with previous reports.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 and C54 demonstrate miniML's application to two-electrode voltage clamp recordings and ability to detect genetic perturbations. The results are consistent with previous literature (C34, C36 cite DiAntonio et al., 1999), providing validation. However, statistical details (sample sizes, p-values) are not provided in the claims. The consistency with prior work strengthens confidence but doesn't constitute independent validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C55"
+    ],
+    "result": "miniML reliably detects optical miniature events in iGluSnFR3 fluorescence recordings from rat neuronal cultures, with detected event kinetics (median 21.8 ms rise time, 48.7 ms decay time) matching previous reports and event frequencies showing power-law distribution consistent with fractal glutamate release.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 and C55 demonstrate miniML's generalization to optical imaging data. The kinetics match previous reports (C37 cites Aggarwal et al., 2023), and the power-law distribution (C38) is consistent with established phenomena (cites Lowen et al., 1997). This extends miniML beyond electrophysiology. However, no quantitative comparison with other detection methods is provided for this dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C57"
+    ],
+    "result": "miniML detects ~40% of mEPSPs in ASAP5 voltage imaging data with superior recall compared to template-based methods at comparable precision, despite lower SNR (2.26 vs 4.79) compared to electrophysiology, with detected amplitudes linearly correlated with electrophysiological measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 and C57 demonstrate miniML's application to voltage imaging with simultaneous electrophysiological validation. The ground-truth comparison (C41-C42) provides rigorous validation. The linear correlation (C40) confirms accurate amplitude reporting. However, the 40% recall (C42) indicates substantial room for improvement, which the authors acknowledge (C56). The lower SNR (C39) explains the reduced performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "miniML eliminates the trade-off between false positive and false negative rates typical of other methods, overcomes the need for manual event inspection, and enables automated analysis suitable for large-scale datasets through its Python-based implementation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C60 summarize key advantages demonstrated by the benchmarking results. The elimination of the precision-recall trade-off (C58) is supported by the threshold independence data (C22). The automation claims (C59-C60) are logical inferences from the performance characteristics, though the actual implementation of large-scale automated pipelines is not demonstrated in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "Model performance gains were marginal (<0.2%) when training dataset size exceeded 5000 samples, indicating relatively small datasets suffice for effective training.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C14 is supported by data in Figure 1\u2014figure supplement 2 showing the relationship between training set size and performance. This finding is important for practical application as it reduces the burden of data annotation. However, this may be specific to the relatively homogeneous MF-GC training data and might not generalize to more diverse datasets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The deep learning approach generalizes easily to diverse synaptic preparations, different electrophysiological and optical recording techniques, and across animal species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is a summary statement supported by multiple experimental results across different preparations (C25-C27 for electrophysiology, C37-C42 for optical imaging) and species (mouse, rat, zebrafish, Drosophila, human). The evidence collectively demonstrates broad generalization, though 'easily' may overstate the case given that transfer learning was often required.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Despite its deep learning approach, miniML runs at relatively rapid speed on commodity hardware.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by runtime measurements shown in Figure 2\u2014figure supplement 1, demonstrating analysis of 120-second recordings in ~15 seconds on a laptop. This addresses practical concerns about computational requirements of deep learning methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C56",
+      "C63",
+      "C64",
+      "C66",
+      "C68",
+      "C70"
+    ],
+    "result": "The authors speculate about future improvements and applications including more extensive training for voltage imaging, combination with advanced imaging techniques, extension to clinical applications, use of unsupervised learning, implementation of additional signal processing techniques, and broader impact on understanding synaptic physiology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56, C63-C64, C66, C68, and C70 are speculative statements about future directions and potential applications. While reasonable based on the demonstrated results, these represent hypotheses rather than demonstrated findings. They are appropriately framed as speculation in the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C67"
+    ],
+    "result": "The supervised learning approach requires labeled training data, and at very high event frequencies, overlapping events may be difficult to separate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65 and C67 acknowledge limitations of the approach. C65 is inherent to supervised learning. C67 is a logical inference about overlapping events, though the manuscript doesn't systematically test performance at very high frequencies. These are honest assessments of method limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Background claims establish that spontaneous synaptic events carry fundamental information about synaptic function and plasticity, arise from random vesicle fusion, play important roles in development and stability, and are altered in disease models, but present analytical challenges due to stochastic nature and low SNR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C6-C10 provide background context supported by citations to established literature. These are well-accepted principles in the field that motivate the need for improved analysis methods. The citations appear appropriate for the claims made.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Experimental details indicate recording periods typically lasted 120 seconds and synaptic events were observed in ~51% of human iPSC-derived neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are straightforward methodological details. C48 describes standard recording duration. C49 provides a quantitative observation about the fraction of neurons showing synaptic activity in iPSC cultures, which is useful context for interpreting those results.",
+    "result_type": "MINOR"
+  }
+]

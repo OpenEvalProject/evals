@@ -1,0 +1,356 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "Cystinosis is a rare autosomal recessive lysosomal storage disease caused by CTNS mutations, with the 57 kb deletion being most common in northern Europe. Despite cystine depletion therapy, patients develop progressive renal failure, suggesting Cystinosin has functions beyond cystine transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide well-established background information about cystinosis, all supported by appropriate citations to published literature. These claims establish the clinical context and unmet medical need that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior research has identified multiple functional roles for Cystinosin including effects on mTOR signaling, autophagy, mitophagy, and lysosomal biogenesis. Renal biopsies from cystinosis patients show abnormal mitochondria, increased ROS, and reduced lysosomal enzyme activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C13 summarize established knowledge from prior work, all appropriately cited. These claims establish the scientific foundation for investigating lysosomal and mitochondrial dysfunction in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C62",
+      "C94"
+    ],
+    "result": "Transcriptional profiling revealed tissue-specific changes in cystinosis, with 1926 genes dysregulated in RPTECs and 745 in fibroblasts (FDR <0.05), with 219 overlapping genes. Eleven pathways were uniquely affected in cystinotic RPTECs, including metabolic pathways and oxidative phosphorylation. The abnormalities present in RPTECs were absent in fibroblasts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C17, C62, C94 describe microarray findings with appropriate statistical thresholds (FDR <0.05) and pathway analysis. The tissue-specific nature of the transcriptional changes is well-documented in Figure 2. However, the study would benefit from validation of key differentially expressed genes by qPCR in independent samples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C63",
+      "C45"
+    ],
+    "result": "Ten lysosomal v-ATPases were downregulated in cystinotic RPTECs, with ATP6V0A1 being the most significantly affected. Five v-ATPases play important roles in proximal tubule H+ secretion. Additionally, several amino acid and sialic acid transporters (SLC17A1, SLC17A3, SLC17A5, SLC3A1, SLC7A7) were significantly downregulated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C63, C45 identify specific gene families affected in cystinotic RPTECs, supported by microarray data in Tables 1-2 and Figure 2 supplement. The focus on ATP6V0A1 as the most significantly downregulated v-ATPase is data-driven and provides rationale for subsequent mechanistic studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C61",
+      "C100"
+    ],
+    "result": "A CRISPR/Cas9-mediated CTNS knockout model was generated in immortalized RPTECs with 94% efficiency, validated by TIDE analysis, qPCR, and functional cystine accumulation assays. CTNS-/- cells showed cystine accumulation (5-6 nmol/mg protein) similar to patient cells. All eight patients had the same 57 kb mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C61, C100 describe the generation and validation of the CRISPR model with multiple complementary approaches (TIDE, qPCR with two primer sets, HPLC-MS/MS). The 94% knockout efficiency is well-documented in Figure 3B. The use of patients with the same mutation reduces genetic heterogeneity. This represents a significant methodological advance over CDME loading.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C53"
+    ],
+    "result": "ATP6V0A1 protein expression was significantly decreased in both primary cystinotic and CTNS-/- RPTECs, with an eightfold reduction in isolated lysosomal fractions. Confocal imaging confirmed reduced immunopositivity for both LAMP2 and ATP6V0A1 in cystinotic RPTECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23, C53 demonstrate ATP6V0A1 downregulation at the protein level using immunoblotting and confocal microscopy in both patient-derived and CRISPR-generated cells. The lysosomal fractionation with LAMP2 as a purity marker strengthens the findings. Statistical significance is reported (p-values shown in Figure 4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C54",
+      "C64",
+      "C92",
+      "C93"
+    ],
+    "result": "Cystinotic RPTECs showed significantly elevated intracellular pH (pH 5.0 vs 4.2 in normal; pH 6.6 vs 5.8 in CTNS-/- vs control immortalized cells). An increase of 0.8 pH units represents a 6.3-fold difference in hydrogen ion concentration. However, BCECF-AM measures whole cell rather than lysosomal pH, and direct lysosomal pH measurement was not possible due to cell fragility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C24-C25, C54, C64, C92-C93 report pH changes with statistical significance (Figure 4E-F). However, the authors acknowledge a critical limitation: BCECF-AM measures whole-cell pH, not specifically lysosomal pH. While the pH changes are substantial and statistically significant, the inability to directly measure lysosomal pH weakens the mechanistic interpretation linking ATP6V0A1 to lysosomal acidification. The calculation in C64 is mathematically correct but applies to whole-cell measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C57"
+    ],
+    "result": "Cystinotic RPTECs showed increased LC3B puncta by confocal microscopy and reduced phosphorylated and total p70S6 kinase protein expression, indicating altered autophagy and reduced mTORC1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27, C57 demonstrate autophagy alterations using confocal microscopy (Figure 5A-B) and quantitative immunoblotting (Figure 5C-D) with statistical significance reported. The findings are consistent across primary cystinotic and CTNS-/- cells. However, LC3B-II accumulation could indicate either increased autophagy induction or impaired autophagosome clearance\u2014the authors appropriately acknowledge this ambiguity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C56",
+      "C74"
+    ],
+    "result": "Both cystinotic and CTNS-/- RPTECs exhibited significantly compromised mitochondrial function with decreased basal, maximal, and ATP-linked respiration, as well as reduced spare respiratory capacity and proton leak. The decline in ATP-linked respiration is primarily due to reduced mitochondrial ATP production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29, C56, C74 report comprehensive mitochondrial functional assessment using Seahorse XF analyzer (Figure 6) with appropriate statistical analysis and multiple replicates. The pattern is consistent across primary and CRISPR-generated cells. The interpretation in C74 is reasonable given the data, though it remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C70",
+      "C73"
+    ],
+    "result": "Plasmid-mediated ATP6V0A1 correction in CTNS-/- RPTECs reduced LC3-II accumulation and improved mitochondrial respiration (basal, maximal, ATP-linked), but had no effect on intracellular cystine levels. This supports that Cystinosin has multiple functions and its cystine transport activity is not mediated by ATP6V0A1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32, C70, C73 demonstrate partial rescue of the cystinotic phenotype by ATP6V0A1 overexpression (Figure 7A-C). The lack of effect on cystine levels (C32) is an important negative control that supports the interpretation that ATP6V0A1 acts downstream or parallel to cystine accumulation. The inference in C73 is logical given the data and prior knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C46",
+      "C47",
+      "C55"
+    ],
+    "result": "TEM revealed increased autophagic vacuoles, decreased mitochondrial number with abnormal cristae, swollen ER, and lipid droplets in CTNS-/- RPTECs. ATP6V0A1 correction significantly reduced autophagic vacuoles and increased mitochondria with preserved cristae, but did not rescue ER-wrapping of mitochondria (MAMs) or lipid droplet accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36, C46-C47, C55 provide ultrastructural validation of functional findings using TEM (Figure 7D-G) with quantification from multiple fields. The partial rescue by ATP6V0A1 correction is consistent with the functional data. The persistence of MAMs and lipid droplets suggests additional pathogenic mechanisms beyond ATP6V0A1 deficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C52",
+      "C58"
+    ],
+    "result": "Among antioxidants tested (cysteamine, vitamin E, ATX), only ATX (20 \u00b5M, 48h) increased ATP6V0A1 protein expression in CTNS-/- RPTECs and significantly reduced the LC3-II/LC3-I ratio, indicating improved autophagosome turnover.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C52, C58 demonstrate specificity of ATX effect compared to other antioxidants (Figure 8A-C). The experimental design includes appropriate controls. Statistical significance is reported. However, the mechanism by which ATX specifically upregulates ATP6V0A1 remains unexplored and requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C60"
+    ],
+    "result": "CTNS-/- RPTECs showed significantly increased mitochondrial ROS production (p<0.0001) and decreased mitochondrial membrane potential (p<0.04). ATX treatment rescued both ROS production and membrane potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C60 demonstrate ATX effects on mitochondrial function using MitoSox and JC-1 assays (Figure 8D-E) with appropriate statistical analysis and normalization to cell viability. The rescue of mitochondrial parameters by ATX is consistent with its effects on ATP6V0A1 and autophagy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C99"
+    ],
+    "result": "This is the first study to show that ATX can induce ATP6V0A1 expression and has protective effects against cystinosis-induced autophagosome formation and mitochondrial dysfunction. ATX can ameliorate cystinosis-associated dysfunctional pathways in vitro.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C99 represent the novel therapeutic findings of the study, supported by data in Figures 7-8. The novelty claim appears justified based on the literature cited. However, the authors appropriately acknowledge this is a pilot in vitro study requiring validation in animal models and clinical settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "According to published literature, elevation of 0.2-0.3 pH units in lysosomes impairs degradation and autophagy, which can be reversed by re-acidification. In cystinotic RPTECs, loss of Cystinosin affects v-ATPase expression, disrupts lysosomal pH, and impairs mitochondrial function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C69 integrate published knowledge (C65-C68, appropriately cited) with the current findings (C69, supported by Figures 4 and 6). The mechanistic model is logical and consistent with the data, though the pH measurements have the limitation noted in Result 7.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Mitochondrial dysfunction likely results in ER stress or vice versa. ER stress was previously demonstrated in cystinosis. MAMs mediate apoptosis, which is elevated in cystinosis. Lipid droplets are induced by inflammation and ROS and linked to neurodegenerative disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C78 provide context for the observed MAMs and lipid droplets. C76-C78 cite established knowledge. However, C75 is speculative about the directionality of the mitochondrial-ER relationship. While the observations are valid, the mechanistic connections require further experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "ATX has the highest known antioxidant activity and has demonstrated anti-inflammatory, anti-tumoral, immunomodulatory, anti-cancer, and cytoprotective activities in various models. ATX regulates MAPK, AMPK/mTOR, LC3 expression, and JAK/STAT3 pathways, and ameliorates oxidative stress, ER stress, and mitochondrial dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C80-C84 summarize published literature on ATX's biological activities, all appropriately cited. This background supports the rationale for testing ATX in the cystinosis model and provides potential mechanistic explanations for its effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Some reports show preservation of renal function when cysteamine is initiated early after birth, but patients still develop ESRD in their second decade. Cysteamine is typically initiated at one year of age, when irreversible tubular damage may already be progressing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 cite published literature and established clinical practice. C87 is somewhat speculative but represents a reasonable clinical inference about the timing of irreversible damage relative to treatment initiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C101"
+    ],
+    "result": "CDME loading exposes cells to increased lysosomal cystine for only 30 minutes, after which normal Cystinosin allows cystine loss. This short exposure cannot be compared to longstanding cystine accumulation in knockout cells, explaining why CDME-loaded cells do not transcriptionally mimic the cystinotic phenotype. CDME has been used previously but its accuracy for functional analysis is unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90, C101 acknowledge important methodological limitations of CDME loading as a disease model. The authors appropriately recognize these limitations and justify their development of the CRISPR model. This critical self-assessment strengthens the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C91",
+      "C95",
+      "C96"
+    ],
+    "result": "Some epithelial markers were lost in patient-derived RPTECs over time. Differences between RPTECs and fibroblasts are partly due to tissue-specific v-ATPase expression. Extra-renal organ dysfunction may be due to cystine accumulation rather than v-ATPase changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91, C95-C96 acknowledge limitations and provide interpretations. C91 notes a limitation of primary cells. C95 is a reasonable inference based on known tissue-specific expression. C96 is speculative and would require additional tissue-specific studies to validate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C97",
+      "C98"
+    ],
+    "result": "Understanding the mechanism of injury is critical for early detection of kidney damage, as functional detection is delayed due to compensatory mechanisms that delay serum creatinine rise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C98 discuss clinical implications of the findings. C98 cites established knowledge about kidney function assessment. These claims appropriately contextualize the potential clinical impact of the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C48",
+      "C71",
+      "C72",
+      "C79"
+    ],
+    "result": "Lipid droplets have been shown in muscle biopsies from cystinosis patients. Cystinosin is crucial for mTORC1 activation by interacting with v-ATPases. Cysteamine does not affect mTORC1 signaling. V-ATPases are needed for ATP-driven proton transport.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C71-C72, C79 cite established knowledge from published literature that provides context for the current findings. These claims support the mechanistic model proposed by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "The immortalized RPTECs used are derived from primary cells immortalized with human telomerase and SV40 T antigen. All cells were verified to be free of mycoplasma contamination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 describe basic methodological details about cell lines and quality control. These are standard practices appropriately documented.",
+    "result_type": "MINOR"
+  }
+]

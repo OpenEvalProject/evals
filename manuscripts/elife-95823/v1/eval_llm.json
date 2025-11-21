@@ -1,0 +1,314 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C22",
+      "C23",
+      "C27",
+      "C47",
+      "C48",
+      "C122"
+    ],
+    "result": "The study extends normative modeling to longitudinal data by introducing a 'z-diff' score that quantifies individual temporal changes relative to population standards. Using pre-trained models from 58,000+ individuals and warped Bayesian linear regression, the method provides a statistic to determine whether centile crossings are statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C5, C22-C23, C27, C47-C48, and C122 collectively describe the core methodological contribution. The mathematical derivation (Equations 10-11), simulation studies (Figure 2), and theoretical framework provide strong support for the validity of the z-diff score approach. The method is grounded in established normative modeling techniques and extends them appropriately to longitudinal settings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C44",
+      "C45"
+    ],
+    "result": "The framework assumes stationarity of the normative model parameters across time and comparability of individuals regardless of birth cohort. These assumptions are acknowledged as imperfect in reality but deemed necessary for practical application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41, C44-C45 articulate the theoretical assumptions underlying the method. The authors explicitly acknowledge these assumptions (illustrated in Figure 1) and discuss their limitations (C41), demonstrating appropriate scientific rigor. The assumptions are standard for cross-sectional normative models and their extension to longitudinal analysis is logically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C91",
+      "C124"
+    ],
+    "result": "The z-diff method revealed significant normalization of grey matter thickness in frontal lobe regions (bilateral superior frontal sulcus, middle frontal sulcus, middle frontal gyrus, and right superior frontal gyrus) in early schizophrenia patients over one year\u2014an effect undetected by traditional longitudinal methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C91, and C124 describe the primary clinical finding. Figure 6 shows the specific regions with significant changes after FDR correction (C80). The comparison with ANCOVA (C113-C115) demonstrates superior sensitivity. However, the finding contradicts historical expectations (C94), requiring careful interpretation supported by recent literature (C95-C103).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Traditional ANCOVA analysis identified 6 significant regions before multiple comparison correction, but none survived FDR correction, demonstrating the superior sensitivity of the z-diff method.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C115 provide direct comparative evidence for the method's advantages. The ANCOVA analysis used appropriate covariates (age, gender, baseline thickness per C81) and proper multiple comparison correction. The failure to detect effects with traditional methods that were detected with z-diff supports the claimed methodological improvement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "PCA analysis revealed that the first component (global thickness change) correlated with GAF score changes (R=0.19, p=0.06 at baseline), while the second component correlated with PANSS improvements, suggesting that symptom amelioration accompanies grey matter normalization in frontal regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C92-C93 and C106-C112 describe correlations between z-diff PCA components and clinical outcomes. However, the first component's correlation with GAF is not statistically significant (p=0.06, C108) and shows an unexpected negative relationship with improvement (C106-C107). The interpretation that baseline GAF predicts subsequent thinning (C110) is speculative. Only the PANSS correlation (C93, C111) appears robust, but effect sizes and significance levels are not fully reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C89",
+      "C90"
+    ],
+    "result": "Cross-sectional analysis showed that schizophrenia patients had significantly lower grey matter thickness in most brain areas at the first visit, indicating structural changes prior to diagnosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C89-C90 describe cross-sectional findings shown in Figure 5. The analysis used appropriate statistical methods (Mann-Whitney U test with FDR correction per C77). This finding is consistent with established literature on schizophrenia and provides important context for interpreting the longitudinal changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Cross-sectional preprocessing yielded mostly consistent results with longitudinal preprocessing (6/7 regions remained significant), though with increased between-visit variance and decreased statistical power.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 address an important methodological question about preprocessing approaches. The comparison (shown in Figure 4 and Appendix 5\u2014figure 2) demonstrates robustness of findings across preprocessing methods while acknowledging the power advantage of longitudinal preprocessing. This supports the practical applicability of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "The observed cortical normalization contradicts historical assumptions of progressive grey matter thinning in schizophrenia but aligns with recent evidence showing variable trajectories and potential normalization with early treatment, particularly in frontal regions where raw thickness also increased.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C104 contextualize the findings within existing literature. The authors appropriately cite recent studies (Berthet et al. 2024, Canal-Rivero et al. 2023, Merritt et al. 2021) showing similar patterns of normalization in early-treated patients. The speculation about compensatory mechanisms (C104) is appropriately qualified. Claim C105 provides additional support by showing raw thickness increases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C76"
+    ],
+    "result": "The study used pre-trained normative models (lifespan_58_82_sites) trained on 58,836 participants across 82 sites, modeling cortical thickness and subcortical volumes, validated on 24,000 manually quality-checked participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C37, and C76 describe the pre-trained models used. These are factual statements about published models (Rutherford et al., 2022) with appropriate citations. The large sample size and validation procedures support the reliability of the base normative models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The clinical dataset comprised 98 early-stage schizophrenia patients and 67 controls from the Early Stages of Schizophrenia study, with appropriate inclusion/exclusion criteria, ethical approval, and data acquisition using Siemens MAGNETOM Prisma 3T.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C69 describe the clinical dataset and study procedures. Table 1 provides demographic details. The inclusion/exclusion criteria are clearly specified, ethical procedures are documented, and technical specifications are provided. This represents appropriate study design and reporting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "All T1 images were preprocessed using FreeSurfer v7.2, with both cross-sectional and longitudinal pipelines tested. Quality control excluded subjects with rescaled Euler number >10.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C71, C73-C75 describe preprocessing procedures. The use of both preprocessing approaches (C71) addresses an important methodological consideration given the cross-sectional training data (C73). Quality control procedures follow established protocols (Rutherford et al., 2022).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The study conducted cross-sectional z-score analysis, group-level z-diff analysis using Wilcoxon tests with FDR correction, ANCOVA for traditional comparison, and PCA-based correlation analysis with clinical scales (PANSS and GAF).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77, C79-C83 describe the analytical pipeline. The statistical methods are appropriate: Wilcoxon test for non-parametric group comparisons (C80), ANCOVA with proper covariates (C81), PCA for dimensionality reduction (C82-C83), and FDR correction for multiple comparisons. The multi-pronged analytical approach strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C16",
+      "C26"
+    ],
+    "result": "The authors argue that cross-sectional models contain sufficient information for precise longitudinal assessments despite lacking explicit intra-subject dynamics, though such models may underestimate variance in longitudinal data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C16 and C26 present somewhat contradictory positions. C16 (citing Di Biase et al., 2023) suggests cross-sectional models underestimate longitudinal variance, while C26 argues they contain sufficient information. The authors address this by estimating additional parameters (\u03c3\u00b2_\u03be), but the fundamental tension remains. The simulation studies (Figure 2) provide some support, but real-world validation is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The method has limitations including challenges in estimating intra-subject variability, necessary assumptions about healthy subject behavior, inability to incorporate initial position into z-diff scores, and potential selection bias in the clinical sample.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 appropriately acknowledge methodological limitations. The authors recognize challenges with noise estimation (C116), required assumptions (C117), current scope limitations (C119), and potential biases (C121). They also identify future directions (C118, C120). This demonstrates appropriate scientific caution and self-critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C21",
+      "C24",
+      "C25"
+    ],
+    "result": "Longitudinal normative models have not been systematically explored, and densely sampled longitudinal data across the lifespan are not currently available. The study therefore leverages existing cross-sectional models rather than building true longitudinal normative models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15, C21, C24-C25 establish the rationale for the methodological approach. The statements about data availability and current state of the field are supported by citations (Di Biase et al., 2023; Bethlehem et al., 2022; Rutherford et al., 2022). The explicit acknowledgment that this is not a true longitudinal normative model (C24) is important for proper interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Longitudinal neuroimaging provides valuable insights into brain development and disease, but current analytical approaches are primarily designed for cross-sectional studies. Normative modeling enables individual-level assessment rather than just group comparisons and has provided insights into various neurological and psychiatric disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C13 provide background context supported by appropriate citations. These represent established knowledge in the field and motivate the need for the proposed methodological development. The statements accurately characterize the current state of neuroimaging analysis and normative modeling applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Cross-sectional models describe group-level population variation with smoothly interpolated centiles, but these centiles do not necessarily correspond to individual trajectories. Current normative brain charts provide no information about the frequency of centile crossings and represent a trajectory of distributions rather than a distribution over trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 articulate important theoretical distinctions about cross-sectional models, drawing on pediatric growth chart literature (Cole, 2012). These conceptual points are well-established and correctly applied to neuroimaging. The distinction between 'trajectory of distributions' vs. 'distribution over trajectories' (C20) is particularly important for understanding the method's scope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C28",
+      "C29"
+    ],
+    "result": "Training normative models requires significant data and computational resources, but pre-trained models have made normative modeling more accessible to researchers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C29 describe practical considerations in normative modeling. These statements are supported by citation (Rutherford et al., 2022) and represent accurate characterization of the field. The availability of pre-trained models is a key enabler for the proposed method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "The framework was applied to 98 early-stage schizophrenia patients scanned shortly after diagnosis and one year later.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 accurately describes the clinical application. This is supported by Table 1 showing sample characteristics and the detailed methods section. The sample size is modest but reasonable for a longitudinal neuroimaging study with careful clinical characterization.",
+    "result_type": "MINOR"
+  }
+]

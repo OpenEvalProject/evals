@@ -1,0 +1,305 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C90",
+      "C95"
+    ],
+    "result": "MChIP-C is a novel MNase-based proximity ligation method that combines chromatin immunoprecipitation with MNase digestion, avoiding biotin enrichment to yield highly complex libraries. The method was applied to K562 cells using H3K4me3 antibodies, generating ~3.5B read pairs with ~4% informative reads (>5kb apart), comparable to MCC but lower than restriction enzyme-based methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C28, C90, and C95 collectively describe the MChIP-C method and its experimental implementation. The experimental design is clearly documented in the Methods section, sequencing statistics are provided, and the low fraction of informative reads is acknowledged and compared to other methods. The technical approach is well-supported by the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C91",
+      "C92"
+    ],
+    "result": "MChIP-C demonstrates superior resolution and sensitivity compared to restriction enzyme-based methods (PLAC-seq, Hi-C) and outperforms whole-genome Micro-C for promoter-centered interactions. MChIP-C shows 2.66-fold median enrichment at DHS centers versus PLAC-seq (1.25-fold) and Micro-C (1.51-fold), with 60.7% recall for CRISPRi-verified E-P pairs compared to 14.0% (PLAC-seq), 19.9% (Micro-C), and 2.2% (Hi-C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C41-C48, C77-C81, C91-C92 are strongly supported by systematic comparative analyses shown in Figures 2 and 4. Both visual comparisons and quantitative metrics (signal-to-noise ratios, recall/precision statistics) consistently demonstrate MChIP-C's advantages. The downsampling analysis (C79-C80) controls for sequencing depth differences, strengthening the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "MChIP-C identified 11,743 consensus H3K4me3 peaks that colocalize with active RNA Pol II TSSs, yielding single-nucleosome resolution interaction profiles for 10,955 active promoters. The method detected 112,087 promoter-promoter (P-P) and 128,986 promoter-nonpromoter (P-PIR) interactions, with 70-87% of interactions in each replicate reproducible across replicates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C37 describe the data processing and interaction calling results. The high inter-replicate correlations (0.83-0.97 for merged profiles, 0.62-0.75 for viewpoint-specific profiles) and reproducibility statistics (70-87% of interactions present in multiple replicates) support the quality and reliability of the identified interactions. The numbers are clearly documented in the Results and supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C94"
+    ],
+    "result": "MChIP-C profiles show clear, highly-localized interaction peaks at known regulatory elements, including detection of interactions between the MYC promoter and five of seven characterized K562-specific enhancers (e1-e7), and previously identified contacts such as globin gene promoter-enhancer interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C94 are supported by visual inspection of MChIP-C profiles at well-characterized loci (Figure 2a, Figure 2\u2014figure supplement 1a). The ability to detect known E-P interactions serves as positive validation of the method's sensitivity and accuracy. The specific example of MYC enhancers provides concrete evidence of the method's performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C98",
+      "C99"
+    ],
+    "result": "Promoters preferentially interact with CTCF-bound sites when CTCF motifs are oriented towards the promoter (79% towards vs 21% away), regardless of CTCF binding at the promoter side or position relative to transcription direction. Only ~2.7% of promoter-CTCF interactions with bilateral CTCF binding correspond to previously reported CTCF-CTCF loops, suggesting the orientation bias may involve loop extrusion mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54, C98-C99 are supported by systematic analysis of CTCF motif orientation in PIRs (Figure 3a, Figure 3\u2014figure supplement 1). The orientation bias is quantified and shown to be consistent across different configurations. The comparison with Hi-C loops (C50) provides important context. The mechanistic interpretation (C54) is appropriately presented as a hypothesis based on the observed bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C128"
+    ],
+    "result": "Most transcription-related factors and histone modifications are substantially enriched in MChIP-C PIRs (4-25X), with CTCF, RAD21, and SMC3 among the most highly enriched. Notable exceptions include H3K27me3 (not enriched) and 20.6% of PIRs colocalizing with CTCF-bound sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 and C128 are supported by systematic enrichment analysis of 271 ChIP-seq profiles (Figure 3b, Supplementary file 1). The enrichment calculations compare observed overlaps with expected values from random permutations, providing statistical rigor. The identification of exceptions (H3K27me3, ZNF146) demonstrates thorough analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Hierarchical clustering of 19,129 PIR-overlapping DHSs identified four major clusters: clusters 1-2 (structural, CTCF/cohesin-bound, ~92kb median distance) and clusters 3-4 (regulatory, CTCF/cohesin-depleted, enriched for enhancer-specific factors). Cluster 3 DHSs show significant enrichment for CRISPRi-verified enhancers (171/297, p=1.64\u00d710\u207b\u2075\u2077) and 7,214 regulatory interactions with shorter median distance (~47kb).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C64, C103-C105 describe a comprehensive clustering analysis supported by Figure 3c and Figure 3\u2014figure supplement 2. The statistical enrichment of CRISPRi-verified enhancers in cluster 3 (C62) provides strong validation. The observation of cohesin absence in regulatory interactions (C64) is supported by data and consistent with recent literature. The characterization of different interaction types is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C3",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C120",
+      "C121"
+    ],
+    "result": "Random forest modeling identified EP300 and SWI/SNF complex subunits (DPF2, ARID1B, SMARCE1) as strong predictors of MChIP-C signal, increasing model R\u00b2 from ~37% (distance + CTCF) to ~43% with addition of RAD21 and EP300. EP300 and SWI/SNF subunits are highly enriched in cluster 3 regulatory DHSs (92.2-97.8% binding) and outperform previously proposed mediators (mediator complex, BRD4, YY1, RNA Pol II).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C65-C73, C120-C121 are supported by systematic random forest modeling (Figure 3d, Figure 3\u2014figure supplement 2c). The greedy forward feature selection approach is methodologically sound, and the predictive power of EP300/SWI/SNF is clearly demonstrated. The high correlation between EP300 and SWI/SNF binding profiles (0.65-0.70) and their co-enrichment in regulatory interactions provide converging evidence. The comparison with other factors strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C74",
+      "C75",
+      "C76",
+      "C88",
+      "C89",
+      "C109",
+      "C113"
+    ],
+    "result": "60.7% (222/366, 95% CI [55.7%-65.7%]) of CRISPRi-verified E-P pairs show underlying spatial interactions in MChIP-C, compared to only 6.5% of non-regulatory DHS-P pairs. This fraction is likely underestimated due to technical limitations, supporting the conclusion that most functionally verified enhancers physically interact with their cognate promoters, consistent with the E-P looping model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C74-C76, C88-C89, C109, C113 represent the central biological conclusion of the study. The comparison with CRISPRi data (Figure 4a) provides strong functional validation. The statistical analysis includes confidence intervals and appropriate controls (non-regulatory pairs). The discussion of potential underestimation (C88) due to low coverage, imprecise enhancer mapping, and indirect effects (C82-C87) demonstrates critical evaluation of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Analysis of CRISPRi-verified E-P pairs without detected MChIP-C interactions reveals several explanations: weak interactions missed by calling algorithms (especially in low-coverage viewpoints, with 68.1% detection in high-coverage viewpoints), imprecise enhancer positioning from CRISPRi screens, indirect regulatory effects (median distance 71kb for non-interacting vs 30kb for interacting pairs), and CTCF-mediated insulator effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C87 provide critical analysis of false negatives, supported by visual inspection (Figure 4b) and distance analysis (Figure 4c). The reanalysis of high-coverage viewpoints (C83) showing 68.1% detection rate strengthens the argument for underestimation. The mechanistic explanations (indirect effects, CTCF insulators) are supported by specific examples and distance distributions. This thorough analysis of limitations enhances the credibility of the main conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C130"
+    ],
+    "result": "MChIP-C currently requires significant sequencing depth due to the small fraction (~4%) of informative reads, though 50% downsampling maintains 76.3% of detected interactions. Further experimental optimizations could potentially increase the method's yield.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 and C130 acknowledge a key limitation of the method. The downsampling analysis (Figure 4\u2014figure supplement 1c-d) demonstrates that the data is not yet saturated, supporting C96. The statement about future optimizations (C97) is appropriately presented as speculation. This honest assessment of limitations is important for method evaluation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Two mechanistic hypotheses are proposed to explain the observed CTCF orientation bias: (i) active promoters may block loop extrusion complex movement, establishing promoter-CTCF loops with preferentially oriented motifs, or (ii) the bias may result from architectural stripes where CTCF sites block loop extrusion directionally, causing nonspecific interactions with nearby regions including promoters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C101 present mechanistic hypotheses supported by citations to modeling studies (Banigan et al., 2022; Vian et al., 2018). While the observed orientation bias is well-documented (C51-C53), these mechanistic explanations are speculative interpretations. The study does not provide direct experimental evidence to distinguish between these mechanisms or confirm either hypothesis. The claims are appropriately presented as possibilities rather than conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C111"
+    ],
+    "result": "MChIP-C identified many apparently non-functional interactions (6.5% of non-regulatory DHS-P pairs), which could represent CRISPRi false negatives, structural loops, or pre-established interactions with conditionally-activated regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110-C111 acknowledge the presence of interactions not validated by CRISPRi screens. While the observation is data-supported (C75), the proposed explanations are speculative. The study does not provide additional experiments to characterize these interactions or test the proposed explanations. The claim appropriately notes that these interactions 'warrant further investigation,' acknowledging the uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C112",
+      "C114"
+    ],
+    "result": "The study acknowledges that DNA ends may scan a territory within fixed nuclei, so detected interactions may not represent exact direct physical contacts. Additionally, while enhancers generally interact with target promoters, the study cannot determine whether spatial interaction is necessary for gene activation, which would require understanding the physical nature of these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112 and C114 represent important caveats about the interpretation of proximity ligation data. These are appropriately presented as limitations of the C-methods approach in general, not specific failures of the study. The acknowledgment that correlation between spatial proximity and function does not prove causation (C114) demonstrates scientific rigor. These are honest assessments of what can and cannot be concluded from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "EP300 and SWI/SNF are known as chromatin modifiers rather than structural proteins, suggesting their participation in E-P interactions may be indirect. Recent studies identified H2B N-terminus lysine residues acetylated by EP300 that correlate more strongly with enhancer activity than H3K27ac, potentially qualifying them for involvement in E-P interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C122-C127 present mechanistic speculation about how EP300/SWI/SNF might mediate E-P interactions. While the predictive power of these factors is well-established (C66-C71), the mechanistic interpretation is speculative. The citations to studies on H2B acetylation (C125-C126) provide some support, but the study does not experimentally test whether these modifications are involved in E-P interactions. The claims are appropriately hedged with 'possible' and 'may,' but remain speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C106",
+      "C107",
+      "C108",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "The Introduction provides historical context on the E-P looping model, C-methods development, and previous attempts to identify factors mediating E-P interactions. It notes that direct evidence for E-P looping has been scarce, some enhancers lack detectable spatial proximity to targets, and recent studies found limited roles for previously proposed mediators (cohesin, mediator, BRD4, YY1, RNA Pol II).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C20 and C106-C119 provide literature review and context. These are well-supported by appropriate citations to foundational and recent papers. The characterization of the field's state of knowledge appears accurate based on the cited literature. These claims establish the rationale for the study but do not represent novel findings from the current work.",
+    "result_type": "MINOR"
+  }
+]

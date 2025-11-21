@@ -1,0 +1,316 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The authors generated a comprehensive scRNA-seq dataset of FAPs from nine samples (uninjured control and nerve injury-affected muscles at 3, 7, 14, and 28 dpi for both SNC and DEN), yielding 44,597 cells after quality control. Integration with published data confirmed that 97.7% of cells clustered with denervation-affected FAPs, validating the dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 describe the scRNA-seq experimental design, data quality control, and validation against published datasets. The integration analysis with Nicoletti et al., 2023 data provides independent validation of cell identity, and the methods section details appropriate quality control procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "SNC-affected FAPs returned to homeostatic states at later regeneration stages (14 and 28 dpi), while DEN-affected FAPs remained chronically activated. The number of DEGs between SNC- and DEN-affected FAPs increased with time post-injury, with chronic upregulation of Il6 and Stat3 in DEN-affected FAPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 are supported by UMAP visualizations (Figure 1B), DEG analyses (Figures 2A-D), and expression patterns (Figure 2\u2014figure supplement 2). The bifurcation of FAP responses correlates with the regenerative versus non-regenerative nature of the injuries, consistent with prior literature on chronic FAP activation in denervation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Pathway enrichment analysis revealed distinct functional profiles: DEN-28dpi FAPs showed enrichment in immune cell recruitment, inflammation, ECM regulation, and negative regulation of neuron apoptosis, while SNC-28dpi FAPs showed enrichment in negative regulation of chemotaxis and prostaglandin metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 are supported by ORA results (Figures 2E-F and supplements) and are consistent with the biological context\u2014DEN requires prolonged neuroprotective and inflammatory responses, while SNC involves immune resolution. The interpretations align with cited literature on FAP functions in fibrosis and regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Unsupervised clustering identified seven FAP subpopulations with distinct gene expression profiles. Cluster 1 was predominantly present in uninjured or reinnervated muscles, while clusters 2 and 3 appeared transiently in SNC and chronically in DEN. RNA velocity and hierarchical clustering analyses supported the hypothesis that clusters 2 and 3 originate from cluster 1 upon nerve injury.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 are supported by multiple complementary analyses: unsupervised clustering (Figure 3A-C), temporal distribution patterns (Figure 3D-E), RNA velocity predictions (Figure 3\u2014figure supplement 2), and hierarchical clustering (Figure 3\u2014figure supplement 3). The convergence of these independent analytical approaches strengthens the conclusion about cluster relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "Marker genes Hsd11b1, Mme, Ret, and Gfra1 were enriched in cluster 1, with Hsd11b1 and Mme also enriched in clusters 2 and 3, supporting the hypothesis that these clusters arise from cluster 1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by expression data (Figure 3\u2014figure supplement 4) and align with prior identification of Hsd11b1+ FAPs as nerve injury-responsive (Leinroth et al., 2022). The shared expression of some markers across clusters 1-3 provides molecular evidence for their lineage relationship.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Cluster 1 FAPs highly express GDNF receptors Ret and Gfra1, with both genes among the top 10 DEGs. RT-qPCR confirmed robust co-expression in FAPs compared to other muscle cell types. Pathway analysis revealed enrichment of GDNF receptor signaling and downstream MAPK pathway components in clusters 1-3, with transcription factors Fos, Jun, and NF-\u03baB predicted to regulate genes in clusters 2 and 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by scRNA-seq data (Figure 4A), RT-qPCR validation (Figures 4B-C), ORA results (Figure 4\u2014figure supplements 1-4), and TRRUST predictions (Figures 4E-F). The convergence of transcriptomic, pathway, and TF prediction analyses provides strong evidence for GDNF signaling involvement in FAP activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Through systematic filtering for secreted proteins that regulate neurons/glial cells and are expressed exclusively in activated FAPs, Bdnf was identified as the sole candidate effector gene. Bdnf showed transient upregulation in SNC-affected FAPs and chronic expression in DEN-affected FAPs, with expression mostly limited to cluster 2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 are supported by the filtering strategy (Figure 5A), expression patterns on UMAP plots (Figure 5B), and violin plots (Figure 5C). The systematic approach to candidate identification is logical, though the reliance on a single gene warrants caution. The expression patterns correlate appropriately with regeneration timelines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "Sequential upregulation of Gdnf in Schwann cells (peaking at 1 dpi) followed by Bdnf in FAPs (peaking at 3 dpi) was observed post-SNC. Western blot confirmed that mature BDNF protein was detected only in SNC-affected FAPs, not in uninjured FAPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 are supported by RT-qPCR time course data (Figure 5E) and western blot analysis (Figure 5F). The sequential expression pattern supports the GDNF-BDNF signaling axis hypothesis. The protein-level validation strengthens the mRNA findings, though the western blot shows relatively modest differences in band intensity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Intramuscular injection of recombinant GDNF sufficiently induced Bdnf expression in FAPs without nerve injury. Injection of GDNF-blocking antibodies showed a tendency to reduce Bdnf expression, though results were not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is supported by RT-qPCR data (Figure 5H) showing significant induction of Bdnf by GDNF. However, claim C59 acknowledges lack of statistical significance for the blocking antibody experiment (Figure 5\u2014figure supplement 2), which weakens the necessity argument. The sufficiency is demonstrated but necessity remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Prrx1Cre; Bdnffl/fl (cKO) mice showed delayed nerve regeneration compared to littermate controls, measured by EMG. At 4 wpi, both genotypes showed incomplete recovery; at 6 wpi, controls recovered while cKO mice remained impaired; by 12 wpi, cKO mice achieved comparable recovery to controls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by EMG measurements (Figures 6A-D) with appropriate statistical analyses. The temporal progression demonstrates delayed but not failed regeneration. Sample size (n=5) is modest but adequate for the observed effect sizes. The use of littermate controls and blinded evaluation strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "At 6 wpi, cKO mice showed significantly reduced myelin thickness compared to controls, confirmed by toluidine blue staining and higher G-ratio values. Axon diameters were comparable between genotypes, indicating no axonal loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by histological analysis (Figure 6E), quantitative G-ratio measurements (Figure 6F and supplements), and axon diameter quantification (Figure 6G). The semi-automated quantification method is appropriate, and the finding that axon diameter is preserved while myelin is reduced specifically implicates remyelination defects rather than axonal pathology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67"
+    ],
+    "result": "Bdnf expression in FAPs at 7 dpi post-SNC was significantly reduced in aged mice (24 months) compared to adult mice (5-6 months).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C67 is supported by RT-qPCR data (Figures 7A-B) showing statistically significant reduction in aged mice. Sample size (n=5) is adequate. This finding suggests clinical relevance for age-related delays in nerve regeneration, though the mechanistic link requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The study demonstrates that a subset of FAPs expressing GDNF receptors Ret and Gfra1 responds to peripheral nerve injury by sensing GDNF from Schwann cells, becomes activated, and expresses Bdnf. FAP-specific Bdnf inactivation resulted in delayed nerve regeneration due to defective remyelination. Reduced Bdnf expression in aged mice suggests clinical relevance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C71 represent the main conclusions synthesized from multiple lines of evidence: scRNA-seq data, RT-qPCR validation, GDNF injection experiments, cKO mouse phenotyping, and aging studies. The convergence of these independent approaches provides strong support for the GDNF-BDNF axis in nerve regeneration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The authors conclude that muscle-resident FAPs recognize distant nerve injury by sensing GDNF from Schwann cells, and that FAP-derived BDNF promotes remyelination during nerve regeneration. The endogenous BDNF supply from FAPs in control mice likely supported remyelination, while its absence in cKO mice caused delayed remyelination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 represent interpretive conclusions supported by the experimental data. The GDNF-sensing mechanism is well-supported by receptor expression and GDNF injection experiments. The remyelination role is supported by cKO phenotypes. However, claim C74 involves inference about endogenous mechanisms that could benefit from additional direct evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Analysis of published scRNA-seq data revealed that muscle-resident FAPs robustly express both GDNF receptor genes (Ret and Gfra1), while epineurial and perineurial mesenchymal cells do not express significant levels, suggesting the GDNF-BDNF axis is unique to muscle-resident FAPs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by analysis of published datasets (Figure 8) and appropriate citations. This comparative analysis strengthens the specificity argument for muscle-resident FAPs as GDNF responders. However, the Prrx1Cre line used in the study also targets nerve-resident mesenchymal cells, which the authors acknowledge as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The introduction reviews established knowledge about FAP functions in muscle development, homeostasis, and regeneration, including their roles in ECM regulation, muscle stem cell support, debris clearance, and the consequences of FAP dysregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are background claims supported by appropriate citations to published literature. These establish the context for the current study and are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The introduction reviews prior work from the authors' group on FAP roles in neuromuscular junction maturation and maintenance through the BAP1/SMN axis and BMP3B signaling, including consequences of FAP dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 are background claims from the authors' previous publications, appropriately cited. These establish the rationale for investigating FAP responses to nerve injury.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The introduction reviews published literature on FAP heterogeneity, including dynamic transitions between subpopulations during development and regeneration, and the identification of functionally distinct FAP subsets in different contexts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C25 are background claims supported by appropriate citations. These establish the context for the scRNA-seq approach used in the current study to identify nerve injury-responsive FAP subsets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The introduction reviews published knowledge about GDNF expression by Schwann cells upon nerve injury, GDNF receptor signaling mechanisms, downstream pathways, and the beneficial effects of exogenous GDNF on nerve regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 are background claims supported by appropriate citations. These establish the rationale for investigating GDNF as a potential signal that FAPs might sense during nerve injury.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The discussion cites published evidence that intramuscular BDNF injection accelerates nerve regeneration, BDNF-neutralizing antibodies delay regeneration, and multiple cell types including bone marrow-derived cells and Schwann cells can serve as BDNF sources during regeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79 are discussion points supported by appropriate citations. These contextualize the current findings within existing literature on BDNF's role in nerve regeneration and acknowledge other cellular sources of BDNF.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The discussion reviews published literature on age-related factors that delay nerve regeneration, including Schwann cell dysfunction, macrophage alterations, chronic inflammation, and defective Wallerian degeneration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are discussion points supported by appropriate citations. These contextualize the finding of reduced Bdnf expression in aged FAPs within the broader literature on aging and nerve regeneration.",
+    "result_type": "MINOR"
+  }
+]

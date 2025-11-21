@@ -1,0 +1,333 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript establishes the context that rare genetic diseases collectively affect over 300 million people worldwide, with over 80% affecting children, yet 95% lack approved treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C8, C9, and C10 are all supported by appropriate citations to peer-reviewed literature (Nguengang Wakap et al., 2020; Bavisetty et al., 2013). These claims provide well-established background context for the study and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Advances in genome/exome sequencing and CRISPR technology have enabled rapid identification of disease-associated genetic lesions and facilitated creation of disease models, with over half of human disease genes conserved in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 are supported by appropriate citations (Gonzaga-Jauregui et al., 2012; Kropp et al., 2021) and represent well-established knowledge in the field. The conservation statistics for C. elegans provide important justification for the model organism choice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Prior drug repurposing screens in model organisms have shown translational potential, with pimozide showing benefits in ALS clinical trials and epalrestat currently in trials for PMM2-CDG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15 and C16 are supported by appropriate citations (Patten et al., 2017) and clinical trial registration (NCT04925960). These examples provide important precedent for the feasibility of the authors' approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C34"
+    ],
+    "result": "Approximately 74% of rare genetic diseases affect nervous system function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17 and C34 (duplicates) are supported by citation to Lee et al., 2020. This statistic justifies the focus on neuromuscular phenotypes in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The authors filtered conserved genes to identify 767 C. elegans genes with human orthologs associated with Mendelian diseases, from which 25 genes were selected with high sequence similarity (22 genes >60%, 11 genes >90%), strong orthology predictions (24/25 across >3 algorithms), and low BLAST E-values (<3\u00d710\u207b\u00b9\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 describe the gene selection process with specific quantitative criteria supported by data in Figure 1B-C and Supplementary file 1. The filtering approach is systematic and well-documented, though the final selection of 25 genes involved subjective criteria ('interestingness').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C4"
+    ],
+    "result": "The authors created 25 C. elegans disease model strains using CRISPR-Cas9 to generate large deletions (mean 4.4 kb) removing >55% (average 76%) of each target gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23, C24, and C4 describe the mutant generation strategy. The approach is clearly documented with specific quantitative details. Large deletions are appropriate for generating loss-of-function alleles, though the authors acknowledge in the Discussion that this approach could delete regulatory elements or non-coding RNAs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The mutated genes are associated with 31 rare genetic disorders and >70 clinical presentations according to OMIM and Human Disease Ontology databases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25 and C26 are supported by references to established disease databases (OMIM, Human Disease Ontology) and Supplementary file 3. This demonstrates the clinical relevance of the selected genes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C3"
+    ],
+    "result": "The authors developed a standardized high-throughput phenotyping assay that extracts 8289 features (2763 per recording across three conditions) covering morphology, posture, and motion from 16-minute recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29 and C3 describe the phenotyping methodology supported by multiple citations to prior work and detailed methods. The multidimensional approach is well-justified for detecting diverse phenotypes. However, the manuscript does not fully validate that all 8289 features are independent or non-redundant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C32",
+      "C5",
+      "C76"
+    ],
+    "result": "23 out of 25 disease model strains showed significant differences from wild-type in at least one feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C5, and C76 report the primary finding that 92% of strains had detectable phenotypes. This is supported by statistical analysis (Figure 2E) using block permutation t-tests with multiple comparison correction (Benjamini-Yekutieli). The high success rate validates the systematic approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C6"
+    ],
+    "result": "Mutations in functionally related genes produced similar phenotypes, with bbs-1, bbs-2, and tub-1 (cilia-related) clustering together, as did kcc-2, snf-11, and unc-25 (GABAergic function).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C31, and C6 describe clustering of functionally related mutants supported by hierarchical clustering analysis (Figure 2C) and PCA (Figure 2D). This provides biological validation that the phenotyping captures functionally relevant differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "Some strains (bbs-1, bbs-2, glr-1, unc-43) displayed sustained photophobic responses that did not recover in post-stimulus recordings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C33 is supported by PCA analysis showing movement through phenotype space (Figure 2D). This demonstrates that the multi-condition assay reveals phenotypes not apparent in baseline recordings alone.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The authors selected four cilia-related genes from 35 candidates (6.4% of 543 disease genes), including bbs-1 and bbs-2 which are associated with Bardet-Biedl syndrome (BBS1 mutations account for 23.4% of cases, BBS2 for 8%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 provide context for ciliopathy model selection, supported by citations (Forsyth and Gunay-Aygun, 2023; Forsythe and Beales, 2013). The selection rationale is clear and clinically relevant.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C42"
+    ],
+    "result": "bbs-1 and bbs-2 mutants exhibited morphological changes (shorter, wider, decreased curvature), hyperactivity, faster body bends, and attenuated blue light sensitivity with delayed forward but enhanced backward photophobic responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C42 describe BBS mutant phenotypes supported by quantitative data in Figure 3A-H with statistical testing. The phenotypes are consistent with prior knowledge of BBS protein function (C41). Multiple features show significant differences providing robust characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "tub-1 mutants showed similar but less severe phenotypes to BBS mutants (shorter, wider, hyperactive, blue light response defects), consistent with maintained cilia integrity in tub-1 mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 describe tub-1 phenotypes supported by Figure 3 data and citation (Mak et al., 2006). The comparison to BBS mutants and interpretation based on cilia integrity is reasonable, though the causal connection is inferred rather than directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "tmem-231 mutants showed no significant morphological or postural differences from wild-type, with only slightly increased baseline activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C47 report negative/weak results for tmem-231 supported by Figure 3 and gene cards. This represents one of the two strains without strong detectable phenotypes, which is appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "NALCN is a voltage-independent cation channel expressed in nervous, endocrine, respiratory and cardiac systems that regulates resting potential and neuromodulation. NALCN knockout is lethal in mice, while C. elegans has two functionally redundant homologs (NCA-2, UNC-77) regulated by UNC-80.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 provide background on NALCN biology supported by appropriate citations (Cochet-Bissuel et al., 2014; Senatore et al., 2013; Lu et al., 2007; Zhou et al., 2020). This establishes the rationale for studying these genes as disease models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Unlike mouse models, C. elegans nca-2, unc-77, and unc-80 loss-of-function mutants are viable. nca-2 and unc-80 mutants are significantly shorter than wild-type, with nca-2 showing reduced speed but normal curvature, while unc-80 shows the most severe phenotype with decreased curvature and speed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 describe NALCN mutant phenotypes supported by quantitative data in Figure 4A-C with statistical testing. The viability of C. elegans mutants (unlike mice) is demonstrated by the existence of the strains. Phenotypic differences between the three mutants are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Blue light stimulation revealed a novel 'fainting' phenotype in nca-2 and unc-80 mutants (increased pausing, decreased forward escape), while unc-77 did not faint but both unc-77 and unc-80 failed to initiate backward escape responses, representing a novel screenable phenotype for NALCN channelopathies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 describe light-induced phenotypes supported by Figure 4E-H and citation to prior work (Pierce-Shimomura et al., 2008). The identification of blue light-induced fainting as a novel screenable phenotype is a significant finding, though 'novel' should be qualified as this is the first report of blue light (vs. mechanical) stimulation producing this effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "A drug repurposing screen of 743 FDA-approved compounds at 100 \u03bcM with 1% DMSO was performed using a reduced feature set (3 core features), as testing larger feature sets (including 256 predefined features) reduced statistical power and detected no hits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 describe the drug screen methodology and feature selection strategy. The finding that larger feature sets reduce power (C64, C65) is supported by Figure 4\u2014figure supplement 1. However, the choice to use only 3 features is pragmatic but risks missing compounds that rescue other aspects of the phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "In the confirmation screen with increased replicates, 13 of 30 initial hits were reproduced, with about half showing >1000 side effects. Liranaftate and atorvastatin showed good rescue of core unc-80 phenotypes with fewer side effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 report drug screen results supported by Figure 5B-C. The confirmation rate (13/30 = 43%) is reasonable for a primary screen. The 'side effects' metric (features different from wild-type) is a useful innovation, though it may not predict human side effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Both hit compounds (liranaftate and atorvastatin) act on the mevalonate biosynthesis pathway, with atorvastatin inhibiting HMG-CoA reductase and liranaftate inhibiting squalene epoxidase. The authors hypothesize that membrane composition changes may affect NALCN channel localization or function, though C. elegans lacks the squalene-to-cholesterol conversion pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C74 describe drug mechanisms and propose a hypothesis. While the drug mechanisms are well-established (C70, C71 supported by citations), the mechanistic hypothesis (C74) is speculative. The fact that C. elegans lacks the squalene-to-cholesterol pathway (C72) complicates interpretation of liranaftate's effects, suggesting possible off-target activity. Further validation is needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C75",
+      "C77",
+      "C80"
+    ],
+    "result": "The study demonstrates that systematic creation and phenotyping of diverse disease models is feasible using a uniform assay, with approximately half of strains showing strong phenotypes suitable for high-throughput drug screens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C77, and C80 represent the main conclusions of the study. These are supported by the experimental data showing 23/25 strains with detectable phenotypes and successful drug screening in one model. However, C77's claim about 'approximately half' having 'strong phenotypes' is somewhat subjective and not rigorously quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "With >100 new genetic diseases discovered annually, CRISPR genome editing in C. elegans enables disease model creation at the required rate and cost to keep pace with disease discovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C79 are supported by citation (Boycott et al., 2017) and general knowledge of CRISPR capabilities. This provides important context for the scalability argument, though actual cost and time comparisons to other approaches are not provided.",
+    "result_type": "MINOR"
+  }
+]

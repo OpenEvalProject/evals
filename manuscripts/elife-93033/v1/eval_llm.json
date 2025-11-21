@@ -1,0 +1,421 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Experiment 1 measured perceptual dissimilarities between 32 natural objects using an oddball detection task, yielding highly accurate (98.8\u00b10.9%) and consistent (r=0.91, p<0.0001) responses across 16 participants. The reciprocal of response time was used as a measure of perceptual distance, and multidimensional scaling was applied to reconstruct the underlying perceptual space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C27 describe a well-established behavioral paradigm with appropriate sample size (n=16), high accuracy, and strong inter-subject reliability. The use of reciprocal RT as perceptual distance is supported by citation (C26), and the MDS approach for reconstructing perceptual space is standard and validated by prior work (C27).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "In Experiment 2, 16 participants performed a target present/absent search task during fMRI. Visual homogeneity (distance from an optimized center in perceptual space) was significantly smaller for target-present than target-absent arrays. Response times for target-present searches were positively correlated with visual homogeneity (r=0.68, p<0.0001), while target-absent searches showed a negative correlation (r=\u22120.71, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 report the core behavioral finding with appropriate statistics, significant p-values, and opposite correlations as predicted. The model has only 5 free parameters (C163) and was validated through multiple control analyses (C37-C39). The opposite correlations for present/absent conditions are theoretically motivated and empirically robust.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The range of visual homogeneity values for target-present and target-absent searches overlap, suggesting that visual homogeneity contributes to but does not fully determine task performance. The authors propose that visual homogeneity provides an initial first guess that can be refined through detailed scrutiny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 acknowledge an important limitation: the model does not fully explain all variance. This is a reasonable interpretation given the observed overlap in VH values and is consistent with the authors' framing of VH as contributing to the initial phase of target selection (C90).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Multiple validation analyses confirmed the robustness of the visual homogeneity model: (1) deep neural network representations yielded similar predictions (C37), (2) optimization converged to the same center across random initializations (C38), (3) leave-one-out cross-validation yielded similar correlations (r=0.63 for present, r=\u22120.63 for absent; C39), (4) average distance to other objects predicted VH (C40), and (5) equal weighting of target and distractor was optimal in LO (C41).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C41 describe rigorous validation analyses that address potential concerns about circularity, overfitting, and model assumptions. The cross-validation (C39) and convergence tests (C38) are appropriate, and the use of DNNs (C37) provides independent support for the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Visual homogeneity can explain oddball target present/absent judgements during visual search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is a summary conclusion supported by the combined evidence from C32-C34 (behavioral correlations), C37-C41 (validation analyses), and the theoretical framework (C9-C14). The conclusion is appropriately qualified by acknowledging that VH does not explain all variance (C35, C90).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43"
+    ],
+    "result": "Same/different responses can be predicted using visual homogeneity, with 'same' responses correlated with target-absent judgements and 'different' responses correlated with target-present judgements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C43 reports results from Appendix 4, which is not provided in the main text. Without access to the appendix, we cannot evaluate sample size, statistical tests, effect sizes, or potential confounds. The claim is plausible given the theoretical framework but requires verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Visual homogeneity is an image-computable property that remains stable across tasks and experimental contexts, and can be empirically estimated as the reciprocal of target-absent response times in visual search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C44-C46 make strong assertions about the stability and generalizability of VH across contexts, but the supporting evidence is in Appendix 5 (not provided). While the theoretical motivation is clear, empirical validation of context-independence requires careful experimental manipulation and is critical to the claim that VH is an intrinsic image property (C100, C128).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "fMRI analysis revealed that visual homogeneity is encoded in a localized region (VH) just anterior to the lateral occipital cortex. Mean activations in VH were strongly correlated with visual homogeneity but uncorrelated with response times overall. By contrast, EVC and LO showed negative correlations with RT, while parietal and prefrontal regions showed positive correlations with RT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 report the key neuroimaging finding with appropriate searchlight analysis, cross-validation across participant groups (C49), and dissociation from RT-related activations (C50-C52). The localization is anatomically specific and the pattern of correlations is consistent with the theoretical predictions (C20-C21).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Neural dissimilarities in the lateral occipital (LO) region best matched perceptual dissimilarities measured in visual search, consistent with previous studies. This suggests that neural representations in LO correspond to the perceptual space on which visual homogeneity computations are performed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55 report a standard representational similarity analysis with results consistent with prior literature (multiple citations in C55). The finding that LO encodes perceptual dissimilarities provides the foundation for the VH computation and is well-supported by both current data and previous work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "Neural responses to target-present displays can be predicted as a linear sum of target and distractor responses with roughly equal weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C56 reports results from Appendix 6 (not provided). This is an important validation of the averaging assumption (C9-C11) underlying the VH model, but without access to the appendix, we cannot evaluate the quality of the fits, statistical tests, or whether equal weighting was significantly better than alternatives.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Experiment 3 measured perceptual dissimilarities for 64 baton shapes (32 symmetric, 32 asymmetric) using oddball detection. Participants (n=15) were highly accurate (98.5\u00b11.33%) and consistent (r=0.88, p<0.0001). Multidimensional scaling revealed that symmetric objects are generally more spread apart than asymmetric objects in perceptual space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 describe a well-designed experiment with appropriate sample size, high accuracy, and strong reliability. The observation that symmetric objects are more spread apart (C60) is a key prediction of the VH framework and is supported by the MDS visualization (Figure 5B).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "In Experiment 4, 14 participants performed a symmetry detection task during fMRI. Visual homogeneity was significantly larger for symmetric than asymmetric objects (p<0.05). For asymmetric objects, response times were positively correlated with VH (r=0.56, p<0.001), while for symmetric objects, response times were negatively correlated with VH (r=\u22120.39, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 report the symmetry detection results with appropriate statistics and opposite correlations as predicted. The correlations are somewhat weaker than in Experiment 2 (C33-C34), but still significant and in the predicted directions. The lower correlation for symmetric objects (r=\u22120.39) may reflect greater task difficulty or individual differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The range of visual homogeneity values for asymmetric and symmetric objects overlap, suggesting that VH contributes to but does not fully determine symmetry detection. Leave-one-out cross-validation yielded similar correlations (r=0.44 for asymmetric, r=\u22120.39 for symmetric, p<0.05 in both cases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 appropriately acknowledge the limitations of the VH model for symmetry detection and provide cross-validation evidence. The overlap in VH values (C66) and the interpretation that VH provides an initial guess (C67) are consistent with the authors' framing for visual search (C35-C36).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Visual homogeneity can predict symmetry perception, and the same computation (distance from a center in perceptual space) explains two disparate property-based visual tasks: symmetry perception and visual search.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C70 are summary conclusions supported by the combined evidence from Experiments 1-4. The finding that a single computational principle (distance-to-center) explains both tasks is novel and well-supported by the behavioral and neuroimaging data, though the model does not explain all variance in either task.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "During symmetry detection, visual homogeneity is encoded in a localized VH region that overlaps with the VH region identified during visual search. Mean activations in VH were poorly correlated with response times overall, while parietal and prefrontal regions showed strong correlations with RT, consistent with their role in attentional modulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 report the key neuroimaging finding for symmetry detection with appropriate searchlight analysis and dissociation from RT-related activations. The overlap with the VH region from Experiment 2 (C72) is reported with reference to Appendix 8, and the pattern of correlations is consistent with theoretical predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "During symmetry detection, neural dissimilarities in LO best matched perceptual dissimilarities from visual search, while mean activations in VH best matched visual homogeneity. This suggests that visual homogeneity is encoded by the VH region using object representations from the adjoining LO region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C78 report representational similarity analyses that are consistent with the findings from Experiment 2 (C53-C55) and support the proposed computational architecture. The finding that LO encodes perceptual space while VH encodes distance-to-center is theoretically motivated and empirically supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C79",
+      "C80"
+    ],
+    "result": "Target-absent response times predict symmetry detection with opposite correlations for asymmetric (positive) and symmetric (negative) objects. This reconfirms that a common decision variable, visual homogeneity, drives both target present/absent and symmetry judgements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 report results from Appendix 9 (not provided). This is an important cross-task validation showing that VH estimated from one task (visual search) predicts performance in another (symmetry detection), but without access to the appendix, we cannot evaluate the strength of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "By adjusting the center of perceptual space, visual homogeneity can predict categorization responses for animals, dogs, and Labradors. The default VH (reciprocal of target-absent search time) also predicts categorization responses, suggesting that VH computations can serve as a decision variable for object categorization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C83 report reanalysis of prior data (Mohan and Arun, 2012) showing that VH can explain categorization. This is an interesting extension, but the evidence is in Appendix 10 (not provided). The claim that default VH predicts categorization (C82) is particularly strong and requires careful evaluation of whether the category centers are indeed close to the default center.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "A single decision variable (visual homogeneity) can be used to solve three disparate visual tasks (visual search, same/different, and symmetry detection). Visual homogeneity is the underlying decision variable at least for oddball visual search tasks and could be an additional driving factor for making decisions during visual search more generally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 are the main conclusions of the study, supported by the combined evidence from Experiments 1-4 and the additional analyses. The claim is appropriately qualified (C85: 'at least for oddball visual search'; C86: 'could be an additional driving factor'), acknowledging that VH does not explain all variance and may not apply to all forms of visual search.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Visual homogeneity resolves the puzzle of systematic variation in target-absent search times, which cannot be explained by target-distractor dissimilarity alone. It also explains why we sometimes know a target is present without knowing its exact location, because VH arises in high-level visual areas with coarse spatial information. However, VH does not completely explain all variance in oddball search times.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 provide important context and interpretation of the findings. The observation that target-absent slopes are typically twice target-present slopes (C87) is well-established (Wolfe, 1998), and the explanation via VH (C88) is novel and supported by the data. The acknowledgment of limitations (C90) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Visual homogeneity resolves the puzzle in same-different tasks that 'same' responses are faster than 'different' responses, contrary to the prediction that zero difference should be slowest. VH provides a simple decision rule and explains why some images elicit faster 'same' responses than others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C91-C93 provide an interesting interpretation of how VH resolves a known puzzle in same-different tasks. However, the empirical support is in Appendix 4 (not provided), and the interpretation assumes that VH is the primary driver of same-different responses, which may be an oversimplification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Visual homogeneity indicates an indirect mechanism for symmetry detection that does not invoke special symmetry computations. Symmetric objects have high VH because they have repeated parts, while asymmetric objects have low VH because they have disparate parts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 contrast the VH account with traditional symmetry detection models (C94, supported by citations) and provide a mechanistic explanation for why symmetric objects have higher VH (C96-C97, supported by citation to Pramod and Arun, 2018). The indirect mechanism is supported by the data from Experiments 3-4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "Visual homogeneity is correlated with the average distance to other objects (as in Pramod and Arun, 2018), but VH is an intrinsic image property that is independent of experimental context, whereas average distance depends on the set of objects used for averaging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98-C101 make an important conceptual distinction between VH and average distance. The correlation between VH and average distance (C99) is reported in Appendix 1, and the context-independence of VH (C101) is reported in Appendix 4. Without access to these appendices, we cannot fully evaluate whether VH is truly context-independent or whether the distinction from average distance is empirically justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Visual homogeneity is encoded in a specific brain region (VH) located just anterior to the lateral occipital (LO) region in both visual search and symmetry detection tasks. This finding is consistent with norm-based encoding in IT neurons and face recognition. The proximity of VH to LO suggests that VH computations are based on object representations in LO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C110 summarize the key neuroimaging findings with appropriate citations to prior work on norm-based encoding (C108). The localization of VH anterior to LO is consistent across tasks (C107, C109), and the speculation that VH computations are based on LO representations (C110) is reasonable given the proximity and the RSA results (C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The VH region overlaps with the recently reported ventral stream attention module. Previous studies found larger activations for animate vs. inanimate objects in this region, which can be explained by the current finding that animate objects have smaller VH and thus weaker VH region activation. Visual homogeneity may be an additional organizing factor in human ventral temporal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C121 relate the current findings to prior literature with appropriate citations (C117, C118). The explanation of animate/inanimate differences via VH (C119-C120) is supported by the data (p<0.05) and provides a novel interpretation of previous findings. The suggestion that VH is an organizing factor (C121) is appropriately tentative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C122",
+      "C123"
+    ],
+    "result": "Previous studies reported larger activations for symmetric vs. asymmetric objects in the vicinity of VH. This can be explained by the current finding that symmetric objects have larger visual homogeneity, leading to greater VH region activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C123 relate the current findings to prior literature (Sasaki et al., 2005; Van Meel et al., 2019) and provide a mechanistic explanation. The explanation is supported by the data from Experiment 4 (C63, C76) and is consistent with the VH framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Visual homogeneity is defined as the distance of a visual image to a central point in the underlying perceptual representation. It can be reliably estimated as the inverse of target-absent response time in visual search and appears to be an intrinsic image property unaffected by experimental context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C128 provide the operational definition of VH. The definition (C126) is clear, and the estimation method (C127) is supported by the data from Experiments 1-2. However, the claim that VH is context-independent (C128) relies on Appendix 4 (not provided), which is critical for establishing VH as an intrinsic image property.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Many property-based visual tasks can be solved using visual homogeneity as a decision variable, localized to a specific region anterior to the lateral occipital cortex. This represents an important first step in demonstrating a quantitative, falsifiable model and localized neural substrate for property-based visual tasks. Visual homogeneity computations might contribute to a variety of other visual tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134 are the main conclusions of the study, appropriately qualified as a 'first step' (C133) and with speculation about future applications (C134). The conclusions are supported by the combined evidence from behavioral and neuroimaging experiments across multiple tasks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "The visual homogeneity model has only 5 free parameters (the coordinates of the center in perceptual space). The optimum center remained stable across random initializations. The number of dimensions (5) was selected based on analysis showing that correlations with RT increased from 1-5 dimensions, plateaued from 5-9, and decreased beyond 9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C166 describe the model specification and validation. The model is parsimonious (5 parameters for predicting both present and absent RTs), the optimization is stable (C164), and the dimensionality selection is data-driven (C165-C166). This is appropriate methodological rigor.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,465 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C29",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "ChIP-seq analysis of 170 TFs in Psph 1448A revealed binding characteristics including over 26,000 DNA-binding peaks distributed across different genomic regions, with TFs categorized into 25 families and showing preferential binding to promoter regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C29, C38-C43 collectively describe the ChIP-seq experimental design and binding characteristics. The methodology is clearly stated (170 TF-overexpressing strains, ChIP-seq analysis), and specific quantitative results are provided (>26,000 peaks, 25 families, promoter enrichment). The data are supported by figures and supplementary materials.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A hierarchical transcriptional regulatory network was constructed with 270 TFs categorized into three levels: 54 top-level (20%), 62 middle-level (23%), and 147 bottom-level (54%) TFs, with 1757 TF interactions identified and transcriptional regulation predominantly directed by top-level TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C44-C54 describe the hierarchical network construction and analysis. The methodology for calculating hierarchy height (H=(O\u2212I)/(O+I)) is clearly defined, and specific quantitative results are provided with supporting figures. The interpretation that top-level TFs direct information flow is consistent with the data showing TB pairs account for nearly half of direct interactions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C32",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Network motif analysis identified 40,307 TF pairs classified into 13 three-node submodules, with M1 (spire loop, n=24,479) being the most prevalent and M13 (feedforward loop, n=696) being the most enriched locked loop, plus 92 auto-regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C32, C55-C58 describe the submodule analysis with specific counts. The methodology references established algorithms (Shen-Orr et al., 2002), and the results are supported by Figure 1c. The identification of specific module types and their frequencies is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C31",
+      "C65",
+      "C66",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C85"
+    ],
+    "result": "Bottom-level TFs exhibited high co-association scores with their target genes, with 125 TFs showing high co-association patterns classified into four clusters (C1-C4), and 83% of bottom-level TFs in C4 exhibiting coregulation at the same peak locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C31, C65-C66, C73-C79, C85 describe co-association patterns with specific quantitative data. The analysis is supported by Figure 2 and supplementary figures. The finding that bottom-level TFs show high co-association scores (e.g., 0.92 for PhnF and PSPPH4692) is well-documented with specific examples.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C33",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Three master virulence TFs (PSPPH1951, PSPPH2193, PSPPH3268) were identified with specific head-to-head binding motifs, and 35 TFs were recognized as master regulators in virulence pathways, with 68% at top levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C33, C86-C93 describe the identification of virulence master TFs with supporting motif analysis. The seven virulence pathways are clearly defined, and the hierarchical organization is documented. The specific binding motifs (17 bp, 15 bp, 10 bp) are identified through de novo analysis and shown in Figure 3b-d.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "PSPPH1951 acts as an activator of T3SS by directly regulating hrpR, hopAE1, and hopAH2, while PSPPH2193 serves as an activator of motility by regulating fleQ and flhF, with deletion mutants showing reduced expression and phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C105 describe experimental validation of PSPPH1951 and PSPPH2193 functions. Multiple lines of evidence support these conclusions: ChIP-seq data, EMSA validation, RT-qPCR showing 2-4 fold changes, motility assays, and plant infection assays. Growth curve controls (C94) confirm phenotypes are not due to growth defects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "PSPPH3268 acts as a master regulator of biofilm formation by negatively regulating alg44, algX, and pilM, with deletion mutants showing enhanced biofilm and EPS production, while PSPPH3798 regulates flagellar assembly genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C110 describe PSPPH3268 and PSPPH3798 functions with multiple experimental validations. ChIP-seq, EMSA, RT-qPCR, biofilm assays, and Congo red assays provide converging evidence. The negative regulatory role of PSPPH3268 is supported by enhanced phenotypes in deletion mutants that are restored in complemented strains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "25 master metabolic TFs were identified regulating eight metabolic pathways, with CysB and PSPPH3268 regulating all eight pathways, and specific TFs (PSPPH0755, PSPPH3798, PSPPH4638) validated by EMSA for binding to metabolic genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34, C116-C129 describe metabolic master TFs with comprehensive pathway analysis. The eight metabolic pathways are clearly defined, and specific TFs are validated through EMSA. Binding motifs are identified (monomer CTGAA for PSPPH0755, head-to-head ATCG-N7-CGAT for PSPPH3798, monomer ATTTTCAA for PSPPH4638), supporting the regulatory roles.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C35",
+      "C36",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Evolutionary analysis across four P. syringae strains revealed functional variability and conservation of TFs, with Irp binding 19 conserved targets and PSPPH4127 binding 4 conserved targets across all strains, while most targets showed strain-specific binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C35-C36, C136-C153 describe comparative analysis across strains with specific quantitative data. The presence of all 301 TFs across strains is documented, and specific examples of conserved (Irp: 19 targets, PSPPH4127: 4 targets) and divergent binding are provided. Motif analysis and functional enrichment support the conclusion of functional variability despite sequence conservation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C37",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Topological modularity analysis divided the network into 16 modules with specific biological functions, including Module 2 (443 nodes, transcription regulation), Module 12 (327 nodes, transcription regulation), and Module 14 (432 nodes, flagellar assembly).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C155-C173 describe modularity analysis with clear methodology (Gephi, resolution 0.9) and specific results. Each module is characterized by size and function through GO/KEGG enrichment analysis (BH-adjusted p<0.05). The finding that 15 of 16 modules are enriched in specific functions is well-supported by Figure 6c-d.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C177",
+      "C204",
+      "C207"
+    ],
+    "result": "The most complete transcriptional regulatory network for P. syringae was generated, profiling 270 TFs (100 from HT-SELEX + 170 from this study) in Psph 1448A, and the PSTRnet database was established.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C177, C204, C207 describe the main achievement of the study. The integration of previous (100 TFs) and new (170 TFs) data is clearly stated, and the database URL is provided. This represents a comprehensive resource for the field, though the claim of being 'most complete' is somewhat subjective.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Auto-regulators maintain cellular stability, with LexA and CysB acting as negative auto-regulators, Lon identified as a dual-function auto-regulator, and DksA2 identified as a new bistable switch.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 describe auto-regulation with support from both literature (C59-C61, C63) and new findings (C62, C64). The identification of Lon and DksA2 as auto-regulators is based on ChIP-seq data showing self-binding. However, the functional characterization as 'bistable switch' for DksA2 is not experimentally validated in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "TF cooperation patterns show that top-level TFs PSPPH3798 and CysB co-bind to flhB, middle-level TF PSPPH1100 cooperates across levels, and middle-level TFs show weakest internal correlations, with 12 TFs in C3 binding to overlapping regions of CysI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C84 describe specific examples of TF cooperation with supporting data from Figure 2. The finding that middle-level TFs show weak internal correlations but cooperate with other levels is consistent with their proposed role as information transmission centers. The UpSet plot analysis of CysI binding is clearly documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Regulatory cascades were identified including PSPPH2555 indirectly regulating virulence through PSPPH4920, and PSPPH3504 involved in multi-step pathways, with PSPPH0755, PSPPH4920, and PSPPH4012 identified as key performer TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C114 describe regulatory cascades with support from Supplementary file 3 and Figure 3\u2014figure supplement 1h. The identification of 'one-step', 'one jump-point', and 'two jump-point' triggers provides a framework for understanding regulatory complexity. However, these cascades are inferred from binding data without direct functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "TFs in functional categories tend to bind genes in the same category (similar to yeast), with examples including Irp binding to other methyl-accepting pathway regulators, and oxidative phosphorylation regulators binding to methyl-accepting pathway TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 describe functional organization patterns with comparison to yeast. The examples of Irp and oxidative phosphorylation regulators are supported by Figure 4c-d. The conclusion about coregulation by multifunctional TFs is reasonable based on the network structure, though the comparison to yeast is somewhat superficial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192"
+    ],
+    "result": "Comparison with human and E. coli networks reveals that Psph 1448A shows enriched TT collaborations and distinct bottom-level TF cooperativity patterns, with bottom-level TFs preferring to coregulate targets at the same peak locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C183-C192 compare network properties across species with support from literature and Figure 1B. The finding that Psph 1448A shows an 'inverse relationship' compared to yeast/E. coli in co-association patterns is interesting, though the biological significance is not fully explored. The identification of 7 independent TFs is a minor observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202"
+    ],
+    "result": "Network motif analysis reveals that M1 (spire loop) is most prevalent in Psph 1448A (24,479) unlike M3 in humans (868), and feedforward loops (M13, n=696) provide temporal switches for rapid response, suggesting Psph 1448A prefers simple regulatory modes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C193-C202 describe network motif properties with comparisons to other organisms. The prevalence of M1 over M13 is well-documented, and the interpretation about rapid response is supported by literature (C199-C200). However, the conclusion that Psph 1448A 'prefers' simple regulation is somewhat speculative and based primarily on module distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C205",
+      "C206"
+    ],
+    "result": "New functions were uncovered for previously characterized TFs, with MexT identified to regulate fleQ and shcF in addition to the previously reported mexEF-oprN operon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C205-C206 describe new findings about MexT with clear documentation of novel targets (fleQ, shcF) beyond previously known targets. This demonstrates the value of the comprehensive network approach for discovering new functions of characterized TFs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C211",
+      "C212"
+    ],
+    "result": "Crosstalk between pathways was observed, with PSPPH4700 directly and indirectly regulating fleQ and hrpR through cascades, and binding to promoters of genes in seven metabolic pathways, demonstrating pathway interconnection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C208-C212 describe pathway crosstalk with specific examples. The PSPPH4700 example shows both direct regulation and feedforward loop regulation, consistent with coherent feedforward modules (C210). The broad regulatory role across seven pathways supports the conclusion of pathway interconnection, though functional validation is limited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C30"
+    ],
+    "result": "Background and context claims establish that P. syringae uses hundreds of TFs to regulate virulence and metabolism, with limited comprehensive TF-binding datasets available for microbial pathogens, and previous work has characterized specific regulatory systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C28, C30 provide background context supported by extensive literature citations. These establish the importance of the study and the knowledge gap being addressed. The claims about previous work (C23-C27) cite the authors' own publications, which is appropriate for establishing the foundation of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Functional annotations show top-level TF PSPPH4700 involved in siderophore/phosphorelay transport, middle-level Lon in GTP binding/ribosome transcription, and bottom-level TFs in specific functions, with top TFs exhibiting many peaks without cooperating TFs, suggesting direct binding over tethered binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 describe functional annotations and binding patterns with support from GO/KEGG analysis and supplementary data. The interpretation that top TFs use 'direct binding' rather than 'tethered binding' (C71) is reasonable based on the observation of many peaks with low co-association scores, though this distinction is not experimentally validated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C174",
+      "C175",
+      "C176",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C203"
+    ],
+    "result": "Discussion claims establish that comprehensive TF networks exist for yeast and E. coli but are limited for other prokaryotes, transcriptional networks show both conservation and variability, and understanding of P. syringae global regulatory networks remains inadequate despite 20 years of research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C174-C176, C178-C182, C203 provide discussion context supported by literature citations. These establish the novelty and significance of the current work. The observation of large differences in Irp binding between strains (C181) is supported by the data, and the interpretation about target gene content as a determinant (C182) is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C213",
+      "C214"
+    ],
+    "result": "The global transcriptional regulatory network can contribute to novel drug development against P. syringae infections and advance research on TF mechanisms in other pathogens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C213-C214 are speculative statements about potential applications. While the comprehensive network is a valuable resource, the claims about drug development and broader impact are not supported by experimental evidence in this study. These represent future possibilities rather than demonstrated results.",
+    "result_type": "MINOR"
+  }
+]

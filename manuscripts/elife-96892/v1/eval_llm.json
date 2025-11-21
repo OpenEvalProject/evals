@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed an untargeted R package workflow for pixel-by-pixel ratio imaging of all metabolites detected in MSI experiments. The R codes are available on GitHub and can work with data from SCiLS Lab API or directly from .imzml files using Cardinal 3.0 software.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C34, and C35 describe the development and availability of the computational tool, which is the primary methodological contribution. The code availability on GitHub and compatibility with multiple data formats are clearly stated and represent verifiable deliverables.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C38",
+      "C39",
+      "C43"
+    ],
+    "result": "Ratio imaging minimizes systematic data variation introduced by sample handling and non-uniform matrix coating. The approach produces sharper images with enhanced brain structure definition compared to diffuse non-ratio images of individual metabolites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C38, C39, and C43 are supported by comparative imaging data shown in Figure 2, demonstrating that ratio images of LPEs show markedly sharper definition than individual metabolite images. The mechanistic explanation regarding variable waiting times during cryosection mounting (C39) is reasonable based on established knowledge of tissue handling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Ratio imaging markedly enhances spatial image contrast and reveals previously unrecognized metabotype-distinct tissue regions. Individual metabolite images of glutamate, aspartate, and glutamine failed to show clear structural distribution, but ratio imaging revealed distinct arc-shaped regions with 1.59-fold and 1.63-fold enrichments in specific brain areas, reproducible across independent cohorts and section orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C58-C63 are well-supported by quantitative imaging data in Figures 5 and related supplements. The identification of 'moon arc' regions with specific fold-changes and pixel counts provides quantitative evidence. Reproducibility across independent cohorts (C62) and different section orientations (C63) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C36",
+      "C37"
+    ],
+    "result": "Missing values in MSI data are annotated with 1/5 the minimum detected value for each metabolite. Ratio imaging does not require absolute metabolite quantification, as similar ratio images are obtained from abundance data compared to quantified concentration data for lactate, glucose, and ascorbate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33, C36, and C37 describe the missing value imputation strategy and demonstrate that abundance-based ratios are sufficient. Figure 1\u2014figure supplement 3 provides experimental validation comparing abundance and concentration ratios for three metabolites, supporting the claim that absolute quantification is not required for the ratio imaging approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Pixel-wise specific enzyme activity may be inferred from pixel-by-pixel ratio imaging of substrate-product metabolite pairs, with the limitation that comparisons are only valid for equivalent pixels/regions across samples. Examples include enhanced glycolytic activity in E8.5 embryo amnion and visceral yolk sac, elevated SCD and AMPD activities in hippocampal neurons, and compartmented PLA1/PLA2 activities in embryonic tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C45-C51 present ratio imaging as a proxy for enzyme activity, which is conceptually reasonable but requires validation. While C47-C51 show spatial patterns consistent with expected enzyme activities (supported by Figure 3 and citation C51), the fundamental assumption that metabolite ratios reflect enzyme activity (C45) is speculative. The important caveat about ionization efficiency (C46) is acknowledged but limits interpretability. Without orthogonal validation of enzyme activities, these remain hypothesis-generating observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "Neurons display a relatively lower level of DHA (\u03c93) to AA (\u03c96) fatty acids compared to other cell types in mouse hippocampus, contrary to expectations from literature suggesting higher \u03c93:\u03c96 ratios predict improved hippocampal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by ratio imaging data in Figure 3 and explicitly contrasts with cited literature expectations (Andruchow et al., 2017). This unexpected finding is clearly demonstrated in the imaging data, though the biological interpretation would benefit from further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "COX10 KO adipose tissue shows decreased \u03c93:\u03c96 fatty acid ratios. Lower adipose \u03c93:\u03c96 ratios have been associated with inflammation, obesity, and altered gut microbiota. The authors speculate this may arise from altered gut microbiome and suggest \u03c93 supplementation might restore normalized adipose composition in human COX10 patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C54 is supported by ratio imaging data in Figure 4A. Claim C55 is supported by multiple literature citations. However, claims C56 and C57 are explicitly speculative, based on unpublished preliminary findings. The connection between the observed ratio changes and gut microbiome alterations lacks sufficient evidence in the current manuscript. The therapeutic speculation (C57) is premature without mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C79",
+      "C124",
+      "C125"
+    ],
+    "result": "Mitochondrial myopathy alters glutamine, glutamate, and aspartate signaling near the NAc. An elevated glutamine to glutamate ratio in COX10 KO brain positively correlates with ferrous iron levels and NAT8L enzymatic activity. These associations are consistent with whole-body feed-forward action of mitochondrial myopathy on brain leptin, corticosteroids, and neurotransmitter signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C72, C76, C124 are supported by correlation analysis (Table 2) and imaging data. The positive association between FeCl2 and glutamate:glutamine ratio is unexpected but well-documented. Claims C73-C75 provide literature support for iron-glutamate relationships. The connection to prior published work on COX10 KO mice (C79, C125) provides biological context. While correlative, the findings are reproducible and consistent with established biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71"
+    ],
+    "result": "An unknown metabolite [M-H] 375.23059 was negatively correlated with PA:LPA ratios in adipose tissue, suggesting association with PLA1/PLA2 activity. The unknown could be a reduction product of CPA 16:0 after loss of one oxygen atom, matching formula C19H37O5P with 0.013 ppm mass accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is supported by correlation analysis in Table 1. However, claim C71 is speculative structural assignment based solely on accurate mass and correlation patterns. Without MS/MS fragmentation, isotope labeling, or authentic standards, the structural identification remains tentative. This demonstrates the hypothesis-generating utility of the approach but requires follow-up validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C98"
+    ],
+    "result": "PCA analysis using metabolite ratios generates biologically meaningful tissue segmentation. Ratios of 10 glutamate-related metabolites revealed an arc-shaped region encompassing hypothalamus, striatum, and NAc not detected with non-ratio data. Ratio-based PCA showed genotype-specific differences in striatum and thalamus regions between COX10 KO and WT brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, and C98 are supported by PCA results in Figures 6 and 7. The comparative analysis clearly demonstrates that ratio-based segmentation reveals anatomical structures not visible with non-ratio data. The genotype-specific differences (C98) are visually apparent in Figure 7F vs 7G. The biological relevance of the segmented regions is supported by their correspondence to known anatomical structures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C111"
+    ],
+    "result": "UMAP analysis of metabolite ratios, followed by K-means clustering, generates much more defined and biologically relevant ROIs than non-ratioed metabolites. Non-ratio segmented ROIs did not provide comparable ROIs among replicates, while ratio-segmented data indicate distinct LPE profiles between brain regions. UMAP-generated ROIs are consistent with brain anatomy across different section orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 and C111 are supported by UMAP results in Figure 8 and supplements. The comparison between ratio and non-ratio segmentation clearly shows improved reproducibility and biological relevance with ratio data. Figure 8\u2014figure supplement 1 demonstrates poor reproducibility of non-ratio segmentation, while Figure 8\u2014figure supplement 2 shows consistent ratio-based segmentation. Cross-validation with different section orientations (C111, Figure 8\u2014figure supplement 6) strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "UMAP-segmented ROIs reveal decreased aspartate:NAA ratios in COX10 KO brain (suggesting diminished NAT8L activity) but increased NAAG:NAA ratios in ROI 7 (suggesting elevated NAAG synthase activity). The authors infer increased NAA and NAAG synthesis as feedback to inhibit excessive glutamate signaling, with glutamate being used for glutamine and NAAG synthesis in ROI 7.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103 and C104 are supported by ratio imaging data in Figure 8\u2014figure supplement 3. However, the mechanistic inferences (C108, C109) are speculative interpretations not directly validated. Claim C110 shows correlations consistent with the interpretation, but correlation does not establish causation. The biological interpretation is plausible and consistent with known NAAG function (C107), but requires orthogonal validation of enzyme activities and metabolic flux.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "Ratios among homocarnosine, glutamine, and aspartate show genotype-specific differences in COX10 KO vs WT brains. Homocarnosine and glutamine are elevated in COX10 KO striatum despite unchanged aspartate and glutamate levels. The elevated homocarnosine:glutamine and glutamine:glutamate ratios could indicate increased homocarnosine synthesis via the glutamine-glutamate-GABA axis, consistent with altered food intake and starvation response in COX10 KO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85, C95, and C96 are supported by imaging data in Figures 5 and 7. The biochemical relationships (C86-C88) and biological roles (C89-C94) are well-supported by literature citations. The inference about increased homocarnosine synthesis (C97) is reasonable given the observed ratio changes and prior characterization of COX10 KO metabolic phenotype (Southwell et al., 2023). While mechanistic validation would strengthen the conclusion, the interpretation is well-grounded in established biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C114",
+      "C123",
+      "C129",
+      "C130"
+    ],
+    "result": "Ratio imaging facilitates identification of novel regional biomarkers and provides anatomical information regarding spatial distribution of metabolite-linked biochemical pathways. The approach adds a powerful tool to mitigate sample preparation artifacts, spatially metabotype tissue microenvironments, and reveal spatially distinct functional variations in enzymatic and metabolic pathway activities. Metabolite ratios may serve as potential biomarkers to distinguish anatomically distinct metabolic tissue regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C114, C123, C129, and C130 represent summary statements about the utility of the ratio imaging approach. These are well-supported by the multiple examples presented throughout the manuscript, including: artifact reduction (Figures 2, 1\u2014figure supplement 2), discovery of novel tissue regions (Figures 5-7), improved segmentation (Figures 6, 8), and pathway mapping (Figures 3-4). The collective evidence from multiple tissue types and biological contexts supports these broad conclusions about the method's utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C118",
+      "C119",
+      "C120",
+      "C131",
+      "C132"
+    ],
+    "result": "The algorithm is applicable to any MSI dataset containing spatial information for metabolites, peptides, or proteins. Untargeted pixel-by-pixel ratios can be derived from all detected features regardless of structural identity. The approach offers potential for single-cell multiomics integration and extension to stable isotope tracing applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C10 and C118 describe the generalizability of the method based on its design principles, which is reasonable given the algorithm operates on pixel intensity data regardless of analyte type. However, the manuscript only demonstrates application to metabolite data. Claims C119, C120, C131, and C132 are explicitly speculative about future applications (single-cell integration, isotope tracing) without experimental demonstration. While conceptually sound, these remain untested hypotheses requiring validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C81",
+      "C113"
+    ],
+    "result": "The research community lacks an easy tool for untargeted metabolite ratio imaging in MSI. Existing hyperspectral imaging tools require additional programming for untargeted MSI ratio analysis. Tissue segmentation using pixel-by-pixel metabolite ratio data has not been reported previously. An unbiased strategy for pixel-by-pixel imaging of targeted and untargeted metabolite ratios for MSI data interpretation has been lacking.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C22, C81, and C113 identify gaps in existing tools and methods that the current work addresses. These claims are supported by review of existing software capabilities (C21-C22) and the novelty of the ratio-based segmentation approach. While other fields use ratio imaging (C16-C20), the specific application to untargeted MSI data analysis represents a genuine methodological advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "MSI has limited coverage of known metabolite structures (typically 200-300 species) compared to LC/MS. Combined ratio and non-ratio data can be used for segmentation but may be confounded by artifact-prone non-ratio data. Combining metabolite ratios from different pathways may generate ROIs more representative of real metabotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C126 accurately describes a known limitation of MSI compared to LC/MS based on established knowledge. Claim C127 is a reasonable inference based on the demonstrated benefits of ratio imaging for artifact reduction. Claim C128 is speculative but logically follows from the observation that pathway-specific ratios reveal distinct biological regions. These represent honest assessment of limitations and future directions.",
+    "result_type": "MINOR"
+  }
+]

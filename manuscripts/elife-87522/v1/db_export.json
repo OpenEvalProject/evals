@@ -1,0 +1,1762 @@
+{
+  "submission": {
+    "id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:37:58.172876Z",
+    "updated_at": "2025-11-21T20:37:58.172876Z"
+  },
+  "content": [
+    {
+      "id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "content_type": "manuscript",
+      "content_text": "# Sibling similarity can reveal key insights into genetic architecture\n\n## Authors\n\n- Tade Souaiaia<sup>1</sup> ([ORCID: 0000-0003-3922-1372](https://orcid.org/0000-0003-3922-1372)) \u2020\n- Hei Man Wu<sup>2</sup>\n- Clive Hoggart<sup>2</sup> \u2020\n- Paul F O'Reilly<sup>2</sup> ([ORCID: 0000-0001-7515-0845](https://orcid.org/0000-0001-7515-0845)) \u2020\n\n### Affiliations\n\n1. Department of Cellular Biology, SUNY Downstate Health Sciences Brooklyn United States ([ROR:0041qmd21](https://ror.org/0041qmd21))\n2. Department of Genetics and Genomic Sciences, Icahn School of Medicine, Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe use of siblings to infer the factors influencing complex traits has been a cornerstone of quantitative genetics. Here, we utilise siblings for a novel application: the inference of genetic architecture, specifically that relating to individuals with extreme trait values (e.g. in the top 1%). Inferring the genetic architecture most relevant to this group of individuals is important because they are at the greatest risk of disease and may be more likely to harbour rare variants of large effect due to natural selection. We develop a theoretical framework that derives expected distributions of sibling trait values based on an index sibling\u2019s trait value, estimated trait heritability, and null assumptions that include infinitesimal genetic effects and environmental factors that are either controlled for or have combined Gaussian effects. This framework is then used to develop statistical tests powered to distinguish between trait tails characterised by common polygenic architecture from those that include substantial enrichments of de novo or rare variant (Mendelian) architecture. We apply our tests to UK Biobank data here, although we note that they can be used to infer genetic architecture in any cohort or health registry that includes siblings and their trait values, since these tests do not use genetic data. We describe how our approach has the potential to help disentangle the genetic and environmental causes of extreme trait values, and to improve the design and power of future sequencing studies to detect rare variants.\n\n## Introduction\n\nThe fields of quantitative genetics and genetic epidemiology have exploited the shared genetics and environment of siblings in many applications, notably to estimate heritability, using theory developed a century ago (Fisher, 1919; Lush, 1940), and more recently to infer a so-called \u2018household effect\u2019 (Selzam et al., 2018), which contributes to genetic risk indirectly via correlation between genetics and household environment. Here, we leverage sibling trait data to infer genetic architecture departing from polygenicity, specifically affecting the tails of the trait distribution and consistent with enrichment in rare variants of large effect.\n\nThe genetic architecture of a complex trait is typically inferred from findings of multiple independent studies: genome-wide association studies (GWAS) identifying common variants (Yengo et al., 2022; Selvaraj et al., 2022), whole-exome or whole-genome sequencing studies detecting rare variants (Singh et al., 2022), and family sequencing studies designed to identify de novo and rare Mendelian mutations (Iyegbe and O\u2019Reilly, 2022). The relative contribution of each type of variant to trait heritability is a function of historical selection pressures on the trait in the population (Koch et al., 2024; Uricchio, 2020). If selection has recently acted to increase the average value of a trait, then the lower tail of the trait distribution may become enriched for large-effect rare variants over time because trait-reducing alleles will be subject to negative selection, and so those with large effects \u2013 most likely to \u2018push\u2019 individuals to the lower tail \u2013 will be reduced to low frequencies (Corte et al., 2023). Similarly, if the trait is subject to stabilising selection, then both tails of the trait distribution may be enriched for rare variant aetiology (Momozawa and Mizukami, 2021). This can result in less accurate polygenic scores in the tails of the trait distribution (Chan et al., 2011) and can also produce dissimilarity between siblings beyond what is expected under polygenicity. For example, studies on the intellectual ability of sibling pairs have demonstrated similarity for average intellectual ability (Shakeshaft et al., 2015), regression-to-the-mean for siblings at the upper tail of the distribution (Shakeshaft et al., 2015), and complete discordance when one sibling is at the lower extreme tail of the distribution (Reichenberg et al., 2016). However, no theoretical framework has been developed to formally infer genetic architecture from sibling trait data.\n\nWe introduce a novel theoretical framework that allows widely available sibling trait data in population cohorts and health registries to be leveraged to perform statistical tests that can infer complex genetic architecture in the tails of the trait distribution. These tests are powered to differentiate between polygenic, de novo, and Mendelian (i.e. rare variants of large effect) architectures (see Figure 1); while these are simplifications of true complex architectures, our tests allow enrichments of the different architectures to be inferred and compared across traits. This framework establishes expectations about the trait distributions of siblings of index individuals with extreme trait values (e.g. the top 1% of the trait) according to null assumptions of polygenicity, random mating, and environmental factors that are either controlled for or have combined Gaussian effects. Critical to our framework is our derivation of the \u2018conditional sibling trait distribution\u2019, which describes the trait distribution for one individual given the quantile value of one or more \u2018index\u2019 siblings. Our statistical framework, derivation of the conditional sibling trait distribution, and simulation study allow us to develop statistical tests to infer genetic architecture from data on siblings (Hur et al., 2013) without the need for genetic data (see \u2018Model and methods\u2019). We validate the statistical power of our tests using simulated data and apply our tests across a range of traits from the UK Biobank. We also release sibArc, an open-source software tool that can be used to apply our tests to sibling trait data (sibArc:Software for Inference of Genetic Architecture, 2024). Our novel framework can be extended to applications such as estimating heritability, characterising mating patterns, and inferring historical selection pressures.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87522/elife-87522-fig1-v1.jpg)\n\n**Figure 1.:** Left to right: When an individual\u2019s extreme trait value (top 1%) is due to many alleles of small effect (\u2018polygenic\u2019), then their siblings\u2019 trait values are expected to show regression-to-the-mean (grey). When an individual\u2019s extreme trait value is due to a de novo mutation of large effect, then their siblings are expected to have trait values that correspond to the background distribution (green). When an individual\u2019s extreme trait value is the result of an inherited rare allele of large effect (\u2018Mendelian\u2019), then their siblings are expected to have either similarly extreme trait values or trait values that are drawn from the background distribution (red), depending on whether or not they inherited the same large effect allele.\n\n## Model and methods\n\nHere, we outline a framework that models the conditional sibling trait distribution, which describes an individual\u2019s trait distribution conditioned on an index sibling\u2019s trait value. In this section, we describe our derivation of the distribution for a completely polygenic trait, outline the development of statistical tests that infer enrichments of rare genetic architectures via departures from polygenicity, and describe the simulation study used to validate and benchmark our results. Full derivations that complement this high-level summary of our methodology, as well as extended results from application of our tests to UK Biobank data, are included in the Appendices.\n\n### Conditional sibling inference framework\n\nAssuming completely polygenic (i.e. infinitesimal) architecture, siblings of individuals with extreme trait values are expected to be less extreme. This regression-to-the-mean can be understood through the two factors (Falconer and Mackay, 1983; Alberts et al., 2002) that determine inherited genetic variation: (i) average genetic contribution of the parents (mid-parent) to the trait value and (ii) random genetic reassortment occurring during meiosis. Assuming that an individual presenting an upper-tail trait value does so due to both high mid-parent trait value and genetic reassortment favouring a higher value, then a sibling sharing common mid-parent trait value \u2013 but subject to independent reassortment \u2013 is likely to be less extreme. How much less extreme can be derived by first considering the conditional distribution that relates mid-parents and their offspring? In the simplest case, for a completely heritable continuous polygenic trait in a large population, the offspring trait values, $s$, are normally distributed around their mid-parent trait value, $m$, irrespective of selection and population structure (Johnson and Barton, 2005; Barton et al., 2017):\n\n$$\np(s\u2223m)=N(m,\\sigma_{f}^{2})\n$$\n\nwhere $\\sigma_{f}^{2}$ represents within-family variance, which is constant across the population. This result does not require the trait distribution across the population to be Gaussian. If we assume that the population distribution is Gaussian and there is random mating and no selection, then $\\sigma_{f}^{2}=$ half the population variance (Bulmer, 1998; Johnson and Barton, 2005; Baselmans et al., 2021). For a trait with heritability $h^{2}$, trait variance can be partitioned into genetic, $\\sigma_{g}^{2}$, and environmental, $\\sigma_{e}^{2}$, contributions, such that $\\sigma^{2}=\\sigma_{g}^{2}+\\sigma_{e}^{2}$ and $h^{2}=\\sigma_{g}^{2}/(\\sigma_{g}^{2}+\\sigma_{e}^{2})$. Assuming mean-centred genetic and environmental trait contributions, and a trait variance of 1 (a standard normalised trait), the distribution for offspring conditioned on the mid-parent genetic trait value, $m_{g}$, is\n\n$$\np(s\u2223m_{g})=N(m_{g},\\sigma_{g}^{2}/2+\\sigma_{e}^{2})=N(m_{g},1\u2212\\frac{h^{2}}{2})\n$$\n\nSince $p(m_{g})=N(0,h^{2}/2)$, from Bayes\u2019 theorem, it can be shown that the mid-parent genetic trait value conditional on offspring trait value, $s$, is distributed as follows:\n\n$$\np(m_{g}\u2223s)=N(\\frac{1}{2}sh^{2},\\frac{h^{2}}{2}(1\u2212\\frac{h^{2}}{2}))\n$$\n\nFrom Equations 2 and 3, the sibling trait distribution conditional on an index sibling can be calculated as\n\n$$\np(s_{2}\u2223s_{1})=\\intp(s_{2}\u2223m_{g})p(m_{g}\u2223s_{1})dm_{g}=N(\\frac{1}{2}s_{1}h^{2},1\u2212\\frac{h^{4}}{4})\n$$\n\nA full derivation is provided in Appendix 1. This derivation via mid-parents can be generalised to cases where assumptions of random mating, Gaussian population trait distribution, and no selection do not hold. When these assumptions do hold, then the conditional sibling distribution can also be derived from the joint sibling distribution defined by the relationship matrix (Lencz et al., 2021). In the Appendices, we use the joint sibling distribution to derive the distribution conditional on two sibling values. From Equation 4, we can infer that under complete heritability the siblings of an individual with a standard normal trait value of $z$ will have a mean trait value of $\\frac{z}{2}$, with variance equal to three quarters of the population variance. In Appendix 1, we further generalise the result to binary phenotypes, increasing the utility of this framework for further applications and theoretical development.\n\n### Statistical tests for complex tail architecture\n\nIn Figure 2, the strategy employed to develop statistical tests for complex tail architecture is depicted. Our approach corresponds to testing for deviations from the expected conditional sibling trait distribution under the null hypothesis of complete polygenicity in trait tails (see above for other null assumptions): excess discordance is indicative of an enrichment of de novo mutations, while excess concordance indicates an enrichment of Mendelian variants, that is, large effect variants segregating in the population. The heritability, $h^{2}$, required to define the null distribution, is estimated by maximising the log-likelihood of the conditional sibling trait distribution (Equation 4) with respect to $h^{2}$:\n\n$$\nlog\u2061L\u221d\u2212nlog\u2061(1\u2212\\frac{h^{4}}{4})\u2212\\frac{1}{1\u2212\\frac{h^{4}}{4}}\\sumi=1n(s_{2}^{(i)}\u2212\\frac{s_{1}^{(i)}h^{2}}{2})^{2}\n$$\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87522/elife-87522-fig2-v1.jpg)\n\n**Figure 2.:** Conditional sibling z-values plotted against index sibling quantiles. Grey depicts complete polygenic architecture across index sibling values. In the lower tail, an extreme scenario of de novo architecture is shown in green, resulting in sibling discordance. In the upper tail, extreme Mendelian architecture is shown in red, whereby siblings are half concordant and half discordant, resulting in a bimodal conditional sibling trait distribution. Statistical tests to infer each type of complex tail architecture are designed to exploit these expected trait distributions.\n\nwhere $s_{1}$ and $s_{2}$ represent index and conditional sibling trait values, respectively, and $n$ is the number of sibling pairs. This allows $h^{2}$ to be estimated for given quantiles of the trait distribution by restricting sibling pair observations to those index siblings in the quantile of interest. To maximise power to detect non-polygenic architecture in the tails of the trait distribution, we estimate \u2018polygenic heritability\u2019, $h_{p}^{2}$, from sibling pairs for which the index sibling trait value is between the 5th and 95th percentile (labelled \u2018Distribution body\u2019 in Figure 2).\n\nTests for complex architecture are then performed in relation to index siblings whose trait values are in the tails of the distribution (e.g. the lower and upper 1%). Below, $A_{q}$ denotes the set of sibling pairs for which the index sibling is in quantile $q$, such that $s_{1}>\u03a6^{\u22121}(1\u2212q)$ and $s_{1}<\u03a6^{\u22121}(q)$ for the upper and lower tails, respectively, where $\u03a6^{\u22121}$ is the inverse normal cumulative distribution function.\n\nIt should be noted that our estimate of $h^{2}$ in Equation 5 assumes no effects of shared environment. Polderman et al., 2015 found limited contribution of shared environment for most complex traits and, critically, our statistical tests are robust to shared environmental effects with consistent effects throughout the trait distribution (see \u2018Discussion\u2019).\n\n### Statistical test for de novo architecture\n\nFor inference of de novo architecture in the tails of the trait distribution, we introduce a parameter, $\\alpha$, to the log-likelihood defined by the conditional sibling trait distribution Equation 5:\n\n$$\nlog\u2061L\u221d\\frac{1}{2(1\u2212\\frac{h^{4}}{4})}\\sumi\\inA_{q}(s_{2}^{(i)}\u2212(\\frac{1}{2}s_{1}^{(i)}h^{2}+\\alpha))^{2}\n$$\n\nValues of $\\alpha>0$ in the lower tail and $\\alpha<0$ in the upper tail indicate excess regression-to-the-mean and, thus, high sibling discordance, consistent with an enrichment of de novo mutations among the index siblings. The z-statistic of the one-sided score test for $\\alpha>0$ in the lower quantile, $q$, relative to the null of $\\alpha=0$ is (see Appendix 2 for derivation):\n\n$$\nz=\\frac{\\sumi\\inA_{q}s_{2}^{(i)}\u2212\\frac{1}{2}s_{1}^{(i)}h^{2}}{\\sqrt{n(1\u2212\\frac{h^{4}}{4})}}\n$$\n\nFor the upper tail test of $\\alpha<0$, the above is multiplied by \u20131.\n\n### Statistical test for Mendelian architecture\n\nFor inference of Mendelian architecture in the tails of the trait distribution, we compare the observed and expected tail sibling concordance, defined by the number of sibling pairs for which both siblings have trait values in the tail. For each index sibling in $A_{q}$, we calculate the probability that the conditional sibling is also in $A_{q}$, which, for the upper tail, is given by\n\n$$\nP(s_{2}>\u03a6^{\u22121}(q)\u2223s_{1})=1\u2212\u03a6(\\frac{\u03a6^{\u22121}(q)\u2212\\frac{s_{1}h^{2}}{2}}{\\sqrt{1\u2212\\frac{h^{4}}{4}}})\n$$\n\nwhere $\u03a6$ represents the normal cumulative distribution function. Denoting the mean of $P(s_{2}^{(i)}>\u03a6^{\u22121}(q))$ across all index siblings in $A_{q}$ by $\\pi_{o}$, the expected sibling concordance is $n\\pi_{o}$, where $n$ is the number of index siblings in $A_{q}$. Given an observed number of concordant siblings, $r$, the z-statistic for a one-sided score test for excess concordance is (see Appendix 2 for derivation) given by\n\n$$\nz=\\frac{r\u2212n\\pi_{0}}{\\sqrt{n\\pi_{0}(1\u2212\\pi_{0})}}\n$$\n\n### Simulation of conditional sibling data\n\nWe perform simulations using publicly available GWAS data on multiple traits to validate our analytical model and benchmark our tests for complex architecture. Figure 3 depicts the different stages of our simulation procedure. We start by simulating a \u2018parent population\u2019 (step A), utilising the allele frequencies and effect sizes of the first 100k SNPs from a trait GWAS to sample genotypes and subsequently trait values assuming an additive model. Next, parents are randomly paired and their genetic trait values averaged to produce mid-parent trait values (step B), and genotypes of two offspring (Equation 1) and corresponding genetic trait values, $G$, are calculated (step C) assuming independent reassortment of parental alleles and unlinked SNPs.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87522/elife-87522-fig3-v1.jpg)\n\n**Figure 3.:** Publicly available genome-wide association studies (GWAS) allele frequency and effect size data is used to simulate parent genetic trait value (A). Mid-parent genetic trait value (B) is simulated assuming random mating. Offspring genotype and genetic trait value (C) is simulated assuming complete recombination. Environmental variation (D) is added to compare with theoretical polygenic conditional sibling distribution. De novo and Mendelian rare-variant effects are simulated (E) to benchmark tests for complex architecture (F).\n\nIn step D, we generate offspring trait values for different degrees of heritability by adding a Gaussian environmental effect. For heritability, $h^{2}$, offspring trait values are given by $T=hG+E$, where $G$ is the genetic effect, standardised to have mean 0 and variance 1, and the environmental effect $E$ is drawn from a normal distribution with mean 0 and variance $(1\u2212h^{2})$. The simulated trait has a $N(0,1)$ distribution.\n\nIn step E, we simulate the effect of complex tail architecture on the conditional sibling trait distribution. We assume that rare variants are sufficiently penetrant to move individuals into the tails of the distribution, independent of their polygenic contribution. We, thus, modify sibling trait values for individuals already in the tails (from step D) to minimise perturbation of the trait distribution. We simulate de novo tail architecture by resampling the less extreme sibling from the background distribution and simulate Mendelian tail architecture by resampling the less extreme sibling from the background distribution with probability 0.5, and from the same tail as the extreme sibling with probability 0.5.\n\n### Application to UK Biobank data\n\nThe UK Biobank includes data from over 21,000 siblings (Lello et al., 2023). To apply our tests to this dataset, we began by identifying continuous traits (at least 50 unique values) with at least 5000 sibling pairs, as defined by kinship coefficient 0.18\u20130.35 and >0.1% SNPs with IBS0 to distinguish from parent-offspring (Cheesman et al., 2020; Bycroft et al., 2018). After removing outliers with absolute trait value >8 standard deviations from the mean, we removed all traits with absolute skew or excess kurtosis greater than $0.5$ to reduce the likelihood that skewed or heavy-tailed trait distributions impact our statistical tests. The remaining traits were standardised using rank-based inverse normal transformation and adjusted for age, sex, recruitment centre, batch covariates, and the first 40 principal components. After this, to ensure a primarily additive polygenic aetiology, we required that traits have heritability $h_{SNP}^{2}>0.1$(Ni et al., 2018) and that no single SNP contribute more than 0.01 to $h^{2}$.\n\nWe applied our method to estimate heritability from sibling pairs (Equation 5) across the distribution and within the trait body (5th to 95th percentiles) on the remaining traits and selected the 18 traits for which both measures exceeded 30% for further analysis. For each of these 18 traits, siblings were randomly assigned index and conditional status and both trait tails were tested for departures from polygenicity using our de novo and Mendelian tests, as well as a general Kolmogorov\u2013Smirnov test (Marozzi, 2013) to identify departures from the conditional sibling distribution assuming polygenicity (Appendix 2).\n\n## Results\n\nHere, we illustrate the conditional sibling trait distribution, validate the accuracy of our analytical model using simulation, perform power analyses for our statistical tests for complex genetic tail architecture (see \u2018Model and methods), and apply our tests to trait data on thousands of siblings from the UK Biobank.\n\n### Conditional sibling trait distribution\n\nIn Figure 4A, the conditional sibling trait distribution (Equation 4) is illustrated at different index sibling trait values (ranked percentiles). For an almost entirely heritable polygenic trait (orange), siblings of individuals at the 99th percentile ($z=2.32$) have mean z-scores approximately halfway between the population mean and index mean (i.e. $z=1.1$). This regression-to-the-mean is greater when trait heritability is lower (blue), assuming (as here) independent environmental risk among siblings.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87522/elife-87522-fig4-v1.jpg)\n\n**Figure 4.:** (A) The conditional sibling trait distribution according to Equation 4 for index siblings at the 1st, 25th, 50th, 75th, and 99th percentile of the standardised trait distribution, when heritability is high ($h^{2}=0.95$, in orange) and moderate ($h^{2}=0.5$, in blue). When heritability is 0.95, conditional sibling expectation is almost half of the index sibling z-score; when heritability is 0.5, the conditional sibling expectation is equal to $1/4$ of the index sibling z-score. (B) The conditional distribution transformed into rank space. An individual whose sibling is at the 99% percentile is expected to have a trait value in the 80% percentile when heritability is high and in the 67% percentile when heritability is moderate.\n\nIn Figure 4B, the conditional sibling z-distribution is transformed into percentiles for interpretation in rank space. This distribution is skewed, especially at the tails, due to truncation at extreme quantiles (i.e. siblings cannot be more extreme than the top 1%). For a trait with $h^{2}=0.95$, siblings of individuals at the 99th percentile (z = 2.32) have a mean trait value at the 80th percentile. Note that this is less extreme than the result of transforming their expected z-value into percentile space ($\u03a6^{\u22121}(1.1)=86%$), which is a consequence of Jensen\u2019s inequality (Jensen, 1906) given that the inverse cumulative distribution function of the normal is convex above zero.\n\nWe compared the theoretical conditional sibling trait distributions to those generated from simulated data (see Appendix 3) and found that irrespective of the trait used to simulate data (e.g. fluid intelligence, height) the two distributions did not differ significantly, suggesting that our analytically derived distributions are a valid model for the conditional sibling trait distribution (Equation 4).\n\n### Power of statistical tests to identify complex tail architecture\n\nBuilding on the theoretical framework introduced in the section \u2018Model and methods\u2019 and illustrated in the previous section, we develop statistical tests to identify complex architecture in the tails of the trait distribution. These tests leverage the fact that the similarity (or dissimilarity) in trait values among siblings provides information about the underlying genetic architecture (see Figure 1). For example, high-impact de novo mutations generate large dissimilarity between siblings when only one carries the unique mutant allele, while Mendelian variants can create excess similarity in the tails of the distribution when siblings both inherit the same mutant allele.\n\nIn Appendix 2, we provide detailed derivations for the statistical tests described at a high level in the section \u2018Model and methods\u2019 and explain how they identify tail signatures in contrast to a polygenic background where conditional siblings regress-to-the-mean at a rate proportional to $h^{2}/2$ (Equation 4). The performance of the two tests evaluated using simulated sibling data is shown in Figure 5. These tests demonstrate that power to identify de novo architecture is greatest when heritability is high, while power to identify Mendelian architecture is greatest when heritability is low. These patterns can be explained by the fact that high heritability should lead to relatively high similarity among siblings, and low heritability to low similarity, under polygenicity. When heritability is estimated near 50% and at least 0.1% of the population has high-impact rare aetiology, both tests are well-powered to identify each class of complex tail architecture.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87522/elife-87522-fig5-v1.jpg)\n\n**Figure 5.:** Simulation assumes highly penetrant de novo and Mendelian frequencies of 0.05, 0.1, 0.2, 0.3, and 0.5%. The false-positive rate was set at 0.05. Null simulations (red dashed line) demonstrate tests are well calibrated.\n\n### Identifying complex tail architecture in UK Biobank data\n\nWe applied our statistical tests for complex tail architecture to sibling-pair data on 18 traits from the UK Biobank (Sudlow et al., 2015). Here (Figure 6), were present results from a set of six traits with varied tail architecture: Sitting Height, Forced Expiratory Volume, Urate, Ankle Spacing, Left Hand Grip Strength, and Waist Circumference. For each trait, we estimated conditional sibling heritability via Equation 5 and performed tests to identify de novo and Mendelian architecture in the lower and upper tails of the distribution of each trait. Additionally, we also performed a Kolmogorov\u2013Smirnov test (Marozzi, 2013) to provide a general test for departures from our null model. We observed expected polygenic architecture in both tails for Ankle Spacing. We inferred Mendelian architecture in the lower tail for Urate and the upper tail for Wait Circumference and Left Hand Grip Strength. De novo architecture was inferred in the lower tail for Forced Expiratory Volume and strongly inferred in both tails for Sitting Height, which is supported by evidence from deep sequencing studies indicating that rare variants play a substantial role in the genetic aetiology for this trait (Tcheandjieu et al., 2020; Bjornsdottir et al., 2022). In the lower tail for Left Hand Grip Strength, we infer the presence of both de novo (greater than expected mean) and Mendelian (more concordant siblings than expected) architecture. We note that this could occur as a result of highly penetrant variants that are only shared among some siblings or perhaps because at the extremes siblings with different handedness are unexpectedly divergent and siblings with matching handedness are unexpectedly concordant. Extended results for all 18 traits analysed can be found in Appendix 4 (Appendix 4\u2014table 1).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/87522/elife-87522-fig6-v1.jpg)\n\n**Figure 6.:** Application of statistical tests for Mendelian and de novo tail architecture to sibling trait data of six UK Biobank traits. For each trait, the conditional sibling mean is plotted under polygenicity (black line) for the heritability estimated from the data. The red (high) and blue (low) bands represent the expected conditional sibling mean under polygenicity at different heritability values. Statistical tests for de novo architecture, Mendelian architecture, and general departure from polygenicity (Kolmogorov\u2013Smirnov test, Dist P-val) were applied to conditional siblings with index siblings in the upper and lower 1% of the distribution. Significant associations for the Mendelian and de novo tests are shown in red and green, respectively. Tail architecture that is not distinct from polygenic expectation is denoted in grey.\n\n## Discussion\n\nIn this article, we present a novel approach to infer the genetic architecture of continuous traits, specifically in the tails of the distributions, from sibling trait data alone. Our approach is based on a theoretical framework that we develop, which derives the expected trait distributions of siblings conditional on the trait value of an index sibling and the trait heritability, assuming polygenicity, random mating, and environmental factors that are either controlled for or have combined Gaussian effects. The key intuition underlying the approach is that departures from the expected conditional sibling trait distribution in relation to index siblings selected from the trait tails may be due to non-polygenic architecture in the tails.\n\nWe demonstrate the validity of our conditional sibling analytical derivations through simulations and show that our tests for identifying de novo and Mendelian architecture in the tails of trait distributions are well-powered when large effect alleles are present in the population on the order of 1 out of 1000 individuals. Applying our test to a subset of well-powered traits in the UK Biobank, we find evidence of complex genetic architecture in at least one tail ($\\alpha<0.05$) in 16 of 18 traits and find de novo architecture occurring more frequently than Mendelian architecture (19 vs 6 of 36 total tails).\n\nThere are several areas in which our work could have short-term utility. Firstly, those individuals inferred as having rare variants of large effect could be followed up in multiple ways to gain individual-level insights. For example, they could undergo clinical genetic testing to identify potential pathogenic variants with effects beyond the examined trait, either in the form of diseases or disorders that the individual has already been diagnosed with or else that they have yet to present with but may be at high future risk for. Furthermore, investigation of their environmental risk profile may indicate an alternative \u2013 environmental \u2013 explanation for their extreme trait value (see below), rather than the rare genetic architecture inferred by our tests.\n\nOur framework could also help refine the design of sequencing studies for identifying rare variants of large effect. Such studies either sequence entire cohorts at relatively high cost (Uffelmann et al., 2021) or else perform more targeted sequencing of individuals in the trait tails with the goal of optimising power per cost (Yang et al., 2015). However, even the latter approach is usually performed blind to evidence of enrichment of rare variant aetiology in the tails. Since our approach enables the identification of individuals that may be most likely to harbour rare variants, then these individuals could be prioritised for (deep) sequencing. Moreover, our ability to distinguish between de novo and Mendelian architecture could influence the broad study design, with the former suggesting that a family trio design may be more effective than population sequencing, which may be favoured if Mendelian architecture is inferred. Furthermore, our approach could be applied as a screening step to prioritise those traits, and corresponding tails, most likely to harbour rare variant architecture. Finally, if sequence data have already been collected, either cohort-wide or using a more targeted design, then our approach could be utilised to increase the power of statistical methods for detecting rare variants by upweighting individuals most likely to harbour rare variants.\n\nThis study has several limitations. First and foremost, departures from the expected conditional sibling trait distributions could be due to environmental risk factors, such as medication-use or work-related exposures, rather than rare genetic architecture. Thus, while we believe that tail-specific deviations from polygenic expectation are interesting whether they arise primarily from genetic or environmental factors, we caution against over-interpretation of our results. Rejection of the null hypothesis from our tests should be considered only as indicating effects consistent with non-polygenic genetic architecture, alongside alternative explanations such as tail-specific unshared (de novo) or shared (\u2018Mendelian\u2019) environmental risks. We suggest that further investigation of individuals\u2019 clinical, environmental, and genetic profiles is required to achieve greater certainty about the causes of their extreme trait values. Nevertheless, given knowledge that rare variants of large effect contribute to complex trait architecture, we expect that traits for which we infer non-polygenic architecture will, on average, be more enriched for rare architecture in the tail(s) than other traits. Secondly, our modelling assumes that the environmental risk factors of siblings are independent of each other. If in fact shared environmental risk factors contribute significantly to trait similarity among siblings, then our heritability estimates will be upwardly biased. However, this would only impact our tests if the degree of shared environmental risk differed in the tails relative to the rest of the trait distribution. Moreover, a large meta-analysis of heritability estimates from twin studies (Polderman et al., 2015) concluded that the contribution of shared environment among siblings (even twins) is insubstantial, and so we might expect this to have a limited impact on results from our tests. Thirdly, our modelling assumes random mating, and so the results from our tests in relation to traits that may be the subject of assortative mating should be considered with caution. Likewise, our modelling assumes additivity of genetic effects, and so, while additivity is well-supported by much statistical genetics research (Wray et al., 2018; Hivert et al., 2021), results from our tests should be reconsidered for any traits with evidence for significant non-additive genetic effects.\n\nOur approach not only provides a novel way of inferring genetic architecture (without genetic data) but can do so specifically in the tails of trait distributions, which are most likely to harbour complex genetic architecture, due to selection, and are a key focus in biomedical research given their enrichment for disease. This work could also have broader implications in quantitative genetics since we derive fundamental results about the relationship among family members\u2019 complex trait values. The conditional sibling trait distribution provides a simple way of understanding the expected trait values of individuals according to their sibling\u2019s trait value, which could be used to answer questions of societal importance and inform future research. For example, it can be used to answer questions such as: as a consequence of genetics alone, how much overlap should there be in the traits of offspring of mid-parents at the 5th and 95th percentile and how does that contrast with what we observe in highly structured societies? Moreover, further development of the theory described here could lead to a range of other applications, for example, estimating levels of assortative mating, inferring historical selection pressures, and quantifying heritability in specific strata of the population.\n",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "4fc02459-e626-4fba-9008-c4afa0ce09b4",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Sohini Ramachandran, Brown University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87522.3.sa0](https://doi.org/10.7554/eLife.87522.3.sa0)\n\nThe authors present a solid statistical framework for using sibling phenotype data to assess whether there is evidence for de novo or rare variants causing extreme trait values. Their valuable method is promising and will be of interest to researchers studying complex trait genetics.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87522.3.sa1](https://doi.org/10.7554/eLife.87522.3.sa1)\n\nThis is a clever and well-done paper. The authors sought to craft a method, applicable to biobank-scale data but without necessarily using genotyping or sequencing, to detect the presence of de novo mutations and rare variants that stand out from the polygenic background of a given trait. Their method depends essentially on sibling pairs where one sibling is in an extreme tail of the phenotypic distribution and whether the other sibling's regression to the mean shows a systematic deviation from what is expected under a simple polygenic architecture.\n\nTheir method is successful in that it builds on a compelling intuition, rests on a rigorous derivation, and seems to show reasonable statistical power in the UK Biobank. (More biobanks of this size will probably become available in the near future.) It is somewhat unsuccessful in that rejection of the null hypothesis does not necessarily point to the favored hypothesis of de novo or rare variants. The authors discuss the alternative possibility of rare environmental events of large effect.\n\nComments on current version:\n\nThe authors have addressed the concerns of the reviewers. I have no further comments.\n",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2ffe616d-3bc9-472b-a04f-99117e22b178",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C1",
+      "claim": "The use of siblings to infer the factors influencing complex traits has been a cornerstone of quantitative genetics.",
+      "claim_type": "EXPLICIT",
+      "source": "The use of siblings to infer the factors influencing complex traits has been a cornerstone of quantitative genetics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the historical use of siblings in quantitative genetics, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "b65377eb-f796-4593-80d4-db3c8185d520",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C2",
+      "claim": "Individuals with extreme trait values (e.g. in the top 1%) are at the greatest risk of disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Inferring the genetic architecture most relevant to this group of individuals is important because they are at the greatest risk of disease and may be more likely to harbour rare variants of large effect due to natural selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the relationship between extreme trait values and disease risk.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "2d33338c-82fa-4ea0-a401-68ed5b454bf9",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C3",
+      "claim": "Individuals with extreme trait values may be more likely to harbour rare variants of large effect due to natural selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Inferring the genetic architecture most relevant to this group of individuals is important because they are at the greatest risk of disease and may be more likely to harbour rare variants of large effect due to natural selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about the relationship between natural selection and rare variants in extreme trait values.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "4054c02f-fd01-4054-9eb0-cfd5d9adfd8d",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C4",
+      "claim": "The theoretical framework derives expected distributions of sibling trait values based on an index sibling's trait value, estimated trait heritability, and null assumptions.",
+      "claim_type": "EXPLICIT",
+      "source": "We develop a theoretical framework that derives expected distributions of sibling trait values based on an index sibling's trait value, estimated trait heritability, and null assumptions that include infinitesimal genetic effects and environmental factors that are either controlled for or have combined Gaussian effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology developed in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "96b0be47-d254-4454-9fdb-a441a16f9509",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C5",
+      "claim": "The null assumptions include infinitesimal genetic effects and environmental factors that are either controlled for or have combined Gaussian effects.",
+      "claim_type": "EXPLICIT",
+      "source": "We develop a theoretical framework that derives expected distributions of sibling trait values based on an index sibling's trait value, estimated trait heritability, and null assumptions that include infinitesimal genetic effects and environmental factors that are either controlled for or have combined Gaussian effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific assumptions used in the theoretical framework.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "c37e70e7-8e69-41d0-bcdc-4531e4c27f27",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C6",
+      "claim": "The statistical tests can distinguish between trait tails characterised by common polygenic architecture from those that include substantial enrichments of de novo or rare variant (Mendelian) architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "This framework is then used to develop statistical tests powered to distinguish between trait tails characterised by common polygenic architecture from those that include substantial enrichments of de novo or rare variant (Mendelian) architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the capability of the statistical tests developed in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "acc385c3-f34f-43c4-a599-e5ac3ce187ba",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C7",
+      "claim": "The tests can be used to infer genetic architecture in any cohort or health registry that includes siblings and their trait values.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply our tests to UK Biobank data here, although we note that they can be used to infer genetic architecture in any cohort or health registry that includes siblings and their trait values, since these tests do not use genetic data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the broad applicability of the tests.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "6c711b32-2ccd-405b-9766-34fe634c06df",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C8",
+      "claim": "The tests do not use genetic data.",
+      "claim_type": "EXPLICIT",
+      "source": "We apply our tests to UK Biobank data here, although we note that they can be used to infer genetic architecture in any cohort or health registry that includes siblings and their trait values, since these tests do not use genetic data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a key feature of the methodology described.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "0d4e3998-ba8b-4469-8173-fb9ca4e79ba0",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C9",
+      "claim": "Fisher (1919) developed theory for estimating heritability using siblings.",
+      "claim_type": "IMPLICIT",
+      "source": "The fields of quantitative genetics and genetic epidemiology have exploited the shared genetics and environment of siblings in many applications, notably to estimate heritability, using theory developed a century ago (Fisher, 1919; Lush, 1940), and more recently to infer a so-called 'household effect' (Selzam et al., 2018), which contributes to genetic risk indirectly via correlation between genetics and household environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fisher's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "67aaf5e0-e1b5-49bc-a043-b2ca068e03a3",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C10",
+      "claim": "Lush (1940) developed theory for estimating heritability using siblings.",
+      "claim_type": "IMPLICIT",
+      "source": "The fields of quantitative genetics and genetic epidemiology have exploited the shared genetics and environment of siblings in many applications, notably to estimate heritability, using theory developed a century ago (Fisher, 1919; Lush, 1940), and more recently to infer a so-called 'household effect' (Selzam et al., 2018), which contributes to genetic risk indirectly via correlation between genetics and household environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lush's work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "e5c5093f-92d6-4573-8726-b7bac46f67e0",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C11",
+      "claim": "A 'household effect' contributes to genetic risk indirectly via correlation between genetics and household environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The fields of quantitative genetics and genetic epidemiology have exploited the shared genetics and environment of siblings in many applications, notably to estimate heritability, using theory developed a century ago (Fisher, 1919; Lush, 1940), and more recently to infer a so-called 'household effect' (Selzam et al., 2018), which contributes to genetic risk indirectly via correlation between genetics and household environment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Selzam et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "a7f8727f-d564-486a-b1ad-c21461a53a30",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C12",
+      "claim": "The genetic architecture of a complex trait is typically inferred from findings of multiple independent studies including GWAS, sequencing studies, and family sequencing studies.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic architecture of a complex trait is typically inferred from findings of multiple independent studies: genome-wide association studies (GWAS) identifying common variants (Yengo et al., 2022; Selvaraj et al., 2022), whole-exome or whole-genome sequencing studies detecting rare variants (Singh et al., 2022), and family sequencing studies designed to identify de novo and rare Mendelian mutations (Iyegbe and O'Reilly, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations describing different study types.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "9953a931-bb37-4b4c-8001-747f6711b0f4",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C13",
+      "claim": "GWAS identify common variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic architecture of a complex trait is typically inferred from findings of multiple independent studies: genome-wide association studies (GWAS) identifying common variants (Yengo et al., 2022; Selvaraj et al., 2022), whole-exome or whole-genome sequencing studies detecting rare variants (Singh et al., 2022), and family sequencing studies designed to identify de novo and rare Mendelian mutations (Iyegbe and O'Reilly, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yengo et al., 2022 and Selvaraj et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "4786e310-7126-43e6-81df-2f0f3af21c71",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C14",
+      "claim": "Whole-exome or whole-genome sequencing studies detect rare variants.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic architecture of a complex trait is typically inferred from findings of multiple independent studies: genome-wide association studies (GWAS) identifying common variants (Yengo et al., 2022; Selvaraj et al., 2022), whole-exome or whole-genome sequencing studies detecting rare variants (Singh et al., 2022), and family sequencing studies designed to identify de novo and rare Mendelian mutations (Iyegbe and O'Reilly, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Singh et al., 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "9eab639e-841b-4cf8-afc2-d661b00c50bb",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C15",
+      "claim": "Family sequencing studies are designed to identify de novo and rare Mendelian mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The genetic architecture of a complex trait is typically inferred from findings of multiple independent studies: genome-wide association studies (GWAS) identifying common variants (Yengo et al., 2022; Selvaraj et al., 2022), whole-exome or whole-genome sequencing studies detecting rare variants (Singh et al., 2022), and family sequencing studies designed to identify de novo and rare Mendelian mutations (Iyegbe and O'Reilly, 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Iyegbe and O'Reilly, 2022.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "c8cc6858-c5ab-437a-a9a0-1a3568d222b5",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C16",
+      "claim": "The relative contribution of each type of variant to trait heritability is a function of historical selection pressures on the trait in the population.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative contribution of each type of variant to trait heritability is a function of historical selection pressures on the trait in the population (Koch et al., 2024; Uricchio, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Koch et al., 2024 and Uricchio, 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "16a80ef4-b074-407a-acba-8679ec5810d1",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C17",
+      "claim": "If selection has recently acted to increase the average value of a trait, then the lower tail of the trait distribution may become enriched for large-effect rare variants over time.",
+      "claim_type": "EXPLICIT",
+      "source": "If selection has recently acted to increase the average value of a trait, then the lower tail of the trait distribution may become enriched for large-effect rare variants over time because trait-reducing alleles will be subject to negative selection, and so those with large effects \u2013 most likely to 'push' individuals to the lower tail \u2013 will be reduced to low frequencies (Corte et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Corte et al., 2023 and represents inference about evolutionary processes.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "7fae898c-18ca-47da-b372-9a08b4ff9bec",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C18",
+      "claim": "Trait-reducing alleles will be subject to negative selection when selection acts to increase the average value of a trait.",
+      "claim_type": "EXPLICIT",
+      "source": "If selection has recently acted to increase the average value of a trait, then the lower tail of the trait distribution may become enriched for large-effect rare variants over time because trait-reducing alleles will be subject to negative selection, and so those with large effects \u2013 most likely to 'push' individuals to the lower tail \u2013 will be reduced to low frequencies (Corte et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established evolutionary theory and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "089aae4c-b140-4624-b844-ae3ca4ed1d67",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C19",
+      "claim": "If the trait is subject to stabilising selection, then both tails of the trait distribution may be enriched for rare variant aetiology.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, if the trait is subject to stabilising selection, then both tails of the trait distribution may be enriched for rare variant aetiology (Momozawa and Mizukami, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Momozawa and Mizukami, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "6ed35594-0361-4a6d-9c44-3bd6c03e3513",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C20",
+      "claim": "Enrichment of rare variants in trait tails can result in less accurate polygenic scores in the tails of the trait distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "This can result in less accurate polygenic scores in the tails of the trait distribution (Chan et al., 2011) and can also produce dissimilarity between siblings beyond what is expected under polygenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Chan et al., 2011.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "462762c3-a9e8-4443-ad47-defb79d430eb",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C21",
+      "claim": "Enrichment of rare variants in trait tails can produce dissimilarity between siblings beyond what is expected under polygenicity.",
+      "claim_type": "EXPLICIT",
+      "source": "This can result in less accurate polygenic scores in the tails of the trait distribution (Chan et al., 2011) and can also produce dissimilarity between siblings beyond what is expected under polygenicity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about the effects of rare variants on sibling similarity.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "beb73b4c-2f3b-4740-acdb-86955d58ad25",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C22",
+      "claim": "Studies on the intellectual ability of sibling pairs have demonstrated similarity for average intellectual ability.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies on the intellectual ability of sibling pairs have demonstrated similarity for average intellectual ability (Shakeshaft et al., 2015), regression-to-the-mean for siblings at the upper tail of the distribution (Shakeshaft et al., 2015), and complete discordance when one sibling is at the lower extreme tail of the distribution (Reichenberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shakeshaft et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "7df719ac-59dd-4cca-a31f-e8abe428c365",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C23",
+      "claim": "Studies on the intellectual ability of sibling pairs have demonstrated regression-to-the-mean for siblings at the upper tail of the distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies on the intellectual ability of sibling pairs have demonstrated similarity for average intellectual ability (Shakeshaft et al., 2015), regression-to-the-mean for siblings at the upper tail of the distribution (Shakeshaft et al., 2015), and complete discordance when one sibling is at the lower extreme tail of the distribution (Reichenberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Shakeshaft et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "d5556ca3-f762-4fd5-ba1c-60a9d63f13dd",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C24",
+      "claim": "Studies on the intellectual ability of sibling pairs have demonstrated complete discordance when one sibling is at the lower extreme tail of the distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, studies on the intellectual ability of sibling pairs have demonstrated similarity for average intellectual ability (Shakeshaft et al., 2015), regression-to-the-mean for siblings at the upper tail of the distribution (Shakeshaft et al., 2015), and complete discordance when one sibling is at the lower extreme tail of the distribution (Reichenberg et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Reichenberg et al., 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "eac6526b-16da-4c48-8079-e6d4c0fb307c",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C25",
+      "claim": "No theoretical framework has been developed to formally infer genetic architecture from sibling trait data.",
+      "claim_type": "EXPLICIT",
+      "source": "However, no theoretical framework has been developed to formally infer genetic architecture from sibling trait data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the gap in the literature that this work addresses.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "f93694f3-93d0-4ee9-b456-8a8d9822be7f",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C26",
+      "claim": "When an individual's extreme trait value (top 1%) is due to many alleles of small effect ('polygenic'), then their siblings' trait values are expected to show regression-to-the-mean.",
+      "claim_type": "EXPLICIT",
+      "source": "Left to right: When an individual's extreme trait value (top 1%) is due to many alleles of small effect ('polygenic'), then their siblings' trait values are expected to show regression-to-the-mean (grey).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and represents a theoretical prediction based on polygenic architecture.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "1d4bc2e4-da2e-44c7-80b5-ff49594156ab",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C27",
+      "claim": "When an individual's extreme trait value is due to a de novo mutation of large effect, then their siblings are expected to have trait values that correspond to the background distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "When an individual's extreme trait value is due to a de novo mutation of large effect, then their siblings are expected to have trait values that correspond to the background distribution (green).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and represents a theoretical prediction based on de novo mutations.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "14f5b902-b29b-410c-96c3-16d9115a723f",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C28",
+      "claim": "When an individual's extreme trait value is the result of an inherited rare allele of large effect ('Mendelian'), then their siblings are expected to have either similarly extreme trait values or trait values that are drawn from the background distribution, depending on whether or not they inherited the same large effect allele.",
+      "claim_type": "EXPLICIT",
+      "source": "When an individual's extreme trait value is the result of an inherited rare allele of large effect ('Mendelian'), then their siblings are expected to have either similarly extreme trait values or trait values that are drawn from the background distribution (red), depending on whether or not they inherited the same large effect allele.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is illustrated in Figure 1 and represents a theoretical prediction based on Mendelian inheritance.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "283f56fe-a5c9-4bca-9fa2-8709afa327da",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C29",
+      "claim": "Assuming completely polygenic (i.e. infinitesimal) architecture, siblings of individuals with extreme trait values are expected to be less extreme.",
+      "claim_type": "EXPLICIT",
+      "source": "Assuming completely polygenic (i.e. infinitesimal) architecture, siblings of individuals with extreme trait values are expected to be less extreme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a theoretical prediction based on polygenic architecture.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "46c7d34e-bf36-4d45-9912-f4c58fec0f02",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C30",
+      "claim": "Regression-to-the-mean can be understood through two factors: (i) average genetic contribution of the parents (mid-parent) to the trait value and (ii) random genetic reassortment occurring during meiosis.",
+      "claim_type": "EXPLICIT",
+      "source": "This regression-to-the-mean can be understood through the two factors (Falconer and Mackay, 1983; Alberts et al., 2002) that determine inherited genetic variation: (i) average genetic contribution of the parents (mid-parent) to the trait value and (ii) random genetic reassortment occurring during meiosis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Falconer and Mackay, 1983 and Alberts et al., 2002.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "869bad8d-4833-43a0-b035-fb4863477dee",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C37",
+      "claim": "Excess discordance between siblings is indicative of an enrichment of de novo mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "These tests leverage the fact that the similarity (or dissimilarity) in trait values among siblings provides information about the underlying genetic architecture (see Figure 1). For example, high-impact de novo mutations generate large dissimilarity between siblings when only one carries the unique mutant allele, while Mendelian variants can create excess similarity in the tails of the distribution when siblings both inherit the same mutant allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about the effects of de novo mutations on sibling similarity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "ac44e8f7-ee40-4719-a8f8-f83291256729",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C38",
+      "claim": "Excess concordance between siblings indicates an enrichment of Mendelian variants.",
+      "claim_type": "EXPLICIT",
+      "source": "These tests leverage the fact that the similarity (or dissimilarity) in trait values among siblings provides information about the underlying genetic architecture (see Figure 1). For example, high-impact de novo mutations generate large dissimilarity between siblings when only one carries the unique mutant allele, while Mendelian variants can create excess similarity in the tails of the distribution when siblings both inherit the same mutant allele.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about the effects of Mendelian variants on sibling similarity.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "803ccefc-64c7-4ffa-a077-b750000413ad",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C39",
+      "claim": "Power to identify de novo architecture is greatest when heritability is high.",
+      "claim_type": "EXPLICIT",
+      "source": "These tests demonstrate that power to identify de novo architecture is greatest when heritability is high, while power to identify Mendelian architecture is greatest when heritability is low.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "a1b558bb-82b9-4d3d-9519-ce7295f707b5",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C40",
+      "claim": "Power to identify Mendelian architecture is greatest when heritability is low.",
+      "claim_type": "EXPLICIT",
+      "source": "These tests demonstrate that power to identify de novo architecture is greatest when heritability is high, while power to identify Mendelian architecture is greatest when heritability is low.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "c6c25e59-91c2-4bc2-913a-330a5fdcb49c",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C41",
+      "claim": "When heritability is estimated near 50% and at least 0.1% of the population has high-impact rare aetiology, both tests are well-powered to identify each class of complex tail architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "When heritability is estimated near 50% and at least 0.1% of the population has high-impact rare aetiology, both tests are well-powered to identify each class of complex tail architecture.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "4c595552-1ebe-4434-a61d-dba8c1e4b646",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C42",
+      "claim": "The UK Biobank includes data from over 21,000 siblings.",
+      "claim_type": "EXPLICIT",
+      "source": "The UK Biobank includes data from over 21,000 siblings (Lello et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Lello et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "49cbe928-ec99-4260-99e0-3a01854f683e",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C43",
+      "claim": "Expected polygenic architecture was observed in both tails for Ankle Spacing.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed expected polygenic architecture in both tails for Ankle Spacing.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the tests to UK Biobank data, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "d30a056d-c904-486c-8676-5d4e9d6e6f3d",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C44",
+      "claim": "Mendelian architecture was inferred in the lower tail for Urate.",
+      "claim_type": "EXPLICIT",
+      "source": "We inferred Mendelian architecture in the lower tail for Urate and the upper tail for Wait Circumference and Left Hand Grip Strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the tests to UK Biobank data, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "09bfd1a7-0972-4e81-aa37-382cb945c68a",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C45",
+      "claim": "Mendelian architecture was inferred in the upper tail for Waist Circumference.",
+      "claim_type": "EXPLICIT",
+      "source": "We inferred Mendelian architecture in the lower tail for Urate and the upper tail for Wait Circumference and Left Hand Grip Strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the tests to UK Biobank data, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "2f11058c-6155-4db6-a8b7-dc5705219d62",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C46",
+      "claim": "Mendelian architecture was inferred in the upper tail for Left Hand Grip Strength.",
+      "claim_type": "EXPLICIT",
+      "source": "We inferred Mendelian architecture in the lower tail for Urate and the upper tail for Wait Circumference and Left Hand Grip Strength.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the tests to UK Biobank data, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "4bd2b27e-f125-4deb-a5e3-d35fb7052b03",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C47",
+      "claim": "De novo architecture was inferred in the lower tail for Forced Expiratory Volume.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo architecture was inferred in the lower tail for Forced Expiratory Volume and strongly inferred in both tails for Sitting Height, which is supported by evidence from deep sequencing studies indicating that rare variants play a substantial role in the genetic aetiology for this trait (Tcheandjieu et al., 2020; Bjornsdottir et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the tests to UK Biobank data, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "406cf301-2fee-4cb0-a703-e8de941695b0",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C48",
+      "claim": "De novo architecture was strongly inferred in both tails for Sitting Height.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo architecture was inferred in the lower tail for Forced Expiratory Volume and strongly inferred in both tails for Sitting Height, which is supported by evidence from deep sequencing studies indicating that rare variants play a substantial role in the genetic aetiology for this trait (Tcheandjieu et al., 2020; Bjornsdottir et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the tests to UK Biobank data, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "c9d3ed39-504c-4b75-8e35-f3db4eadfcc6",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C49",
+      "claim": "Deep sequencing studies indicate that rare variants play a substantial role in the genetic aetiology for Sitting Height.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo architecture was inferred in the lower tail for Forced Expiratory Volume and strongly inferred in both tails for Sitting Height, which is supported by evidence from deep sequencing studies indicating that rare variants play a substantial role in the genetic aetiology for this trait (Tcheandjieu et al., 2020; Bjornsdottir et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tcheandjieu et al., 2020 and Bjornsdottir et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "dec773a8-5ec0-4107-a034-ba61f0891de7",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C50",
+      "claim": "In the lower tail for Left Hand Grip Strength, both de novo and Mendelian architecture were inferred.",
+      "claim_type": "EXPLICIT",
+      "source": "In the lower tail for Left Hand Grip Strength, we infer the presence of both de novo (greater than expected mean) and Mendelian (more concordant siblings than expected) architecture.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from applying the tests to UK Biobank data, shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "218d7519-9625-43f5-84a3-2c58bba2fa72",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C51",
+      "claim": "The theoretical framework could be extended to applications such as estimating heritability, characterising mating patterns, and inferring historical selection pressures.",
+      "claim_type": "EXPLICIT",
+      "source": "Our novel framework can be extended to applications such as estimating heritability, characterising mating patterns, and inferring historical selection pressures.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications of the framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "aa32cf39-3653-4dc1-8857-9fe272c2e6c5",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C52",
+      "claim": "Departures from the expected conditional sibling trait distributions could be due to environmental risk factors rather than rare genetic architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "First and foremost, departures from the expected conditional sibling trait distributions could be due to environmental risk factors, such as medication-use or work-related exposures, rather than rare genetic architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a limitation acknowledged by the authors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "bdc7ba6d-9703-48e8-a80a-99fac6e5d397",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C53",
+      "claim": "Rejection of the null hypothesis from the tests should be considered only as indicating effects consistent with non-polygenic genetic architecture, alongside alternative explanations such as tail-specific unshared or shared environmental risks.",
+      "claim_type": "EXPLICIT",
+      "source": "Rejection of the null hypothesis from our tests should be considered only as indicating effects consistent with non-polygenic genetic architecture, alongside alternative explanations such as tail-specific unshared (de novo) or shared ('Mendelian') environmental risks.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a cautionary statement about interpretation of results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "342a3112-daa1-433d-9c80-e7b3e22c3382",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C54",
+      "claim": "If shared environmental risk factors contribute significantly to trait similarity among siblings, then heritability estimates will be upwardly biased.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, our modelling assumes that the environmental risk factors of siblings are independent of each other. If in fact shared environmental risk factors contribute significantly to trait similarity among siblings, then our heritability estimates will be upwardly biased.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about the effects of shared environment on heritability estimates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "1a86a914-096f-4982-bfed-ccad66d96dc0",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C55",
+      "claim": "A large meta-analysis of heritability estimates from twin studies concluded that the contribution of shared environment among siblings is insubstantial.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, a large meta-analysis of heritability estimates from twin studies (Polderman et al., 2015) concluded that the contribution of shared environment among siblings (even twins) is insubstantial, and so we might expect this to have a limited impact on results from our tests.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Polderman et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "37c2defb-3603-477f-8d12-172db22bc949",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C56",
+      "claim": "The modelling assumes random mating.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, our modelling assumes random mating, and so the results from our tests in relation to traits that may be the subject of assortative mating should be considered with caution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "b1b04569-8c97-49cc-8614-0d87b61bde18",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C57",
+      "claim": "The modelling assumes additivity of genetic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, our modelling assumes additivity of genetic effects, and so, while additivity is well-supported by much statistical genetics research (Wray et al., 2018; Hivert et al., 2021), results from our tests should be reconsidered for any traits with evidence for significant non-additive genetic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a stated assumption of the model, supported by citations to Wray et al., 2018 and Hivert et al., 2021.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "0ecc21f0-d980-4a95-9d89-d4a681b6dc64",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C58",
+      "claim": "Additivity of genetic effects is well-supported by much statistical genetics research.",
+      "claim_type": "EXPLICIT",
+      "source": "Likewise, our modelling assumes additivity of genetic effects, and so, while additivity is well-supported by much statistical genetics research (Wray et al., 2018; Hivert et al., 2021), results from our tests should be reconsidered for any traits with evidence for significant non-additive genetic effects.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Wray et al., 2018 and Hivert et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "7ad436e2-ebfe-4d29-9c75-439f8cd3172c",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C59",
+      "claim": "The approach provides a novel way of inferring genetic architecture without genetic data.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach not only provides a novel way of inferring genetic architecture (without genetic data) but can do so specifically in the tails of trait distributions, which are most likely to harbour complex genetic architecture, due to selection, and are a key focus in biomedical research given their enrichment for disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the key contribution of the work.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "a9d2407d-8cc9-4244-b120-9f34b267ddf7",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C60",
+      "claim": "Trait tails are most likely to harbour complex genetic architecture due to selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach not only provides a novel way of inferring genetic architecture (without genetic data) but can do so specifically in the tails of trait distributions, which are most likely to harbour complex genetic architecture, due to selection, and are a key focus in biomedical research given their enrichment for disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on inference about the effects of selection on trait distributions.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "b7d38175-1f01-4e58-8431-8faaf00f6be8",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C61",
+      "claim": "Trait tails are a key focus in biomedical research given their enrichment for disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Our approach not only provides a novel way of inferring genetic architecture (without genetic data) but can do so specifically in the tails of trait distributions, which are most likely to harbour complex genetic architecture, due to selection, and are a key focus in biomedical research given their enrichment for disease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the relationship between extreme trait values and disease.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "fbd000ee-aaea-49b1-b912-560e5da76149",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C62",
+      "claim": "The conditional sibling trait distribution provides a simple way of understanding the expected trait values of individuals according to their sibling's trait value.",
+      "claim_type": "EXPLICIT",
+      "source": "The conditional sibling trait distribution provides a simple way of understanding the expected trait values of individuals according to their sibling's trait value, which could be used to answer questions of societal importance and inform future research.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the utility of the derived distribution.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "be8d6899-8a26-4c1e-aece-ebf62dccb9e4",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C63",
+      "claim": "Further development of the theory could lead to applications such as estimating levels of assortative mating, inferring historical selection pressures, and quantifying heritability in specific strata of the population.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, further development of the theory described here could lead to a range of other applications, for example, estimating levels of assortative mating, inferring historical selection pressures, and quantifying heritability in specific strata of the population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential future applications of the framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "18909435-2dfb-4abe-ba30-ee5170ee9d38",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C64",
+      "claim": "The tests are well calibrated as demonstrated by null simulations.",
+      "claim_type": "EXPLICIT",
+      "source": "Null simulations (red dashed line) demonstrate tests are well calibrated.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated through simulation results shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "f5d3b209-3efe-4676-9dc7-98127d407164",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C67",
+      "claim": "Individuals inferred as having rare variants of large effect could undergo clinical genetic testing to identify potential pathogenic variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, those individuals inferred as having rare variants of large effect could be followed up in multiple ways to gain individual-level insights. For example, they could undergo clinical genetic testing to identify potential pathogenic variants with effects beyond the examined trait, either in the form of diseases or disorders that the individual has already been diagnosed with or else that they have yet to present with but may be at high future risk for.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "316c58f5-8db4-4989-af09-af0476924234",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C68",
+      "claim": "The framework could help refine the design of sequencing studies for identifying rare variants of large effect.",
+      "claim_type": "EXPLICIT",
+      "source": "Our framework could also help refine the design of sequencing studies for identifying rare variants of large effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the framework.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "708f29a8-9ebe-4879-b362-b1bf89d0a7da",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C69",
+      "claim": "The approach enables the identification of individuals that may be most likely to harbour rare variants, who could be prioritised for deep sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Since our approach enables the identification of individuals that may be most likely to harbour rare variants, then these individuals could be prioritised for (deep) sequencing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "504e6ff3-4ee3-4f1f-b8ec-cb8efb9939b6",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C70",
+      "claim": "The ability to distinguish between de novo and Mendelian architecture could influence study design, with de novo architecture suggesting that a family trio design may be more effective than population sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, our ability to distinguish between de novo and Mendelian architecture could influence the broad study design, with the former suggesting that a family trio design may be more effective than population sequencing, which may be favoured if Mendelian architecture is inferred.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "5d4ca612-1325-42cc-86a0-db964ef6a311",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C71",
+      "claim": "The approach could be applied as a screening step to prioritise those traits, and corresponding tails, most likely to harbour rare variant architecture.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, our approach could be applied as a screening step to prioritise those traits, and corresponding tails, most likely to harbour rare variant architecture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "7d82ffc1-b6b8-45d9-bfef-e0f2869df32f",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C72",
+      "claim": "If sequence data have already been collected, the approach could be utilised to increase the power of statistical methods for detecting rare variants by upweighting individuals most likely to harbour rare variants.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, if sequence data have already been collected, either cohort-wide or using a more targeted design, then our approach could be utilised to increase the power of statistical methods for detecting rare variants by upweighting individuals most likely to harbour rare variants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about potential applications of the approach.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "9b7ba15c-d46f-49a3-a5b2-22754b2389e5",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C74",
+      "claim": "The theoretically derived conditional sibling trait distributions do not differ significantly from those generated from simulated data.",
+      "claim_type": "EXPLICIT",
+      "source": "We compared the theoretical conditional sibling trait distributions to those generated from simulated data (see Appendix 3) and found that irrespective of the trait used to simulate data (e.g. fluid intelligence, height) the two distributions did not differ significantly, suggesting that our analytically derived distributions are a valid model for the conditional sibling trait distribution (Equation 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation result from comparing theoretical and simulated distributions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "3c04ce93-ea9c-49bc-956f-c024064606b8",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "claim_id": "C77",
+      "claim": "The statistical tests are robust to shared environmental effects with consistent effects throughout the trait distribution.",
+      "claim_type": "EXPLICIT",
+      "source": "Polderman et al., 2015 found limited contribution of shared environment for most complex traits and, critically, our statistical tests are robust to shared environmental effects with consistent effects throughout the trait distribution (see 'Discussion').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the robustness of the tests, supported by citation to Polderman et al., 2015.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "41b58b4d-6f54-46a3-866d-1b708a1604e3",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors develop a theoretical framework that derives the conditional sibling trait distribution under polygenic architecture, assuming infinitesimal genetic effects, random mating, and Gaussian environmental effects. The framework predicts regression-to-the-mean for siblings of individuals with extreme trait values, with different patterns expected for de novo and Mendelian architectures.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C5, C26-C30 describe the theoretical framework and its predictions, which are validated by simulation (C74). The derivation is mathematically grounded in quantitative genetics theory (C30 cites Falconer and Mackay, 1983; Alberts et al., 2002), and the validation shows the theoretical distributions match simulated data. The framework's assumptions are clearly stated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "9fa6acd0-e0da-4777-967d-a2e408d5df26",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The authors develop statistical tests that can distinguish between polygenic, de novo, and Mendelian genetic architectures in trait tails. The tests are well-calibrated and demonstrate that power to detect de novo architecture is greatest at high heritability, while power to detect Mendelian architecture is greatest at low heritability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6, C37-C41, and C64 describe the statistical tests and their power characteristics. The tests are validated through simulation (C64, Figure 5), showing proper calibration and quantified power under different scenarios. The power analysis (C39-C41) is supported by simulation data showing the relationship between heritability and detection power for each architecture type.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Application of the statistical tests to UK Biobank data (>21,000 siblings, 18 traits) reveals varied genetic architectures: polygenic architecture for Ankle Spacing, Mendelian architecture in specific tails for Urate, Waist Circumference, and Left Hand Grip Strength, and de novo architecture for Forced Expiratory Volume and Sitting Height.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C42-C50 report results from UK Biobank application. While the data source is documented (C42) and results are presented with statistical tests (Figure 6), the interpretation faces significant limitations acknowledged by the authors (C52-C53): departures from expected distributions could be due to environmental factors rather than genetic architecture. The finding for Sitting Height is supported by independent sequencing studies (C49), but other findings lack external validation. The tests cannot definitively distinguish genetic from environmental causes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "8ddd83b9-eac4-4132-944a-c6e06bde2361",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The approach provides a novel method for inferring genetic architecture without requiring genetic data, applicable to any cohort with sibling trait data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7, C8, and C59 describe the key methodological innovation. The approach is demonstrated to work on phenotypic data alone (C8), validated through simulation and UK Biobank application. The broad applicability (C7) is supported by the method's reliance only on sibling trait values and heritability estimates, which are widely available.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "9dfb4a53-bbc1-4038-9269-e21bd501c430",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors acknowledge several important limitations: departures from expected distributions could be due to environmental rather than genetic factors, the model assumes independent environmental effects among siblings, random mating, and additive genetic effects. The tests are claimed to be robust to shared environmental effects that are consistent across the trait distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C52-C58 and C77 describe limitations and assumptions. While the authors acknowledge key limitations (C52-C54, C56-C57), the claim of robustness to shared environmental effects (C77) is not directly demonstrated with data\u2014it is stated but not validated. The assumption of independent environmental effects (C54) is critical but only partially addressed by citing Polderman et al., 2015 (C55), which may not apply to all traits studied. The impact of violations of random mating (C56) and additivity (C57) assumptions on the specific traits analyzed is not quantified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "6c5f558a-3a5a-416c-8e3d-d430b795d80b",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The use of siblings in quantitative genetics has historical precedent (Fisher, 1919; Lush, 1940) for heritability estimation and household effects, but no prior theoretical framework existed for inferring genetic architecture from sibling trait data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C9-C11, and C25 establish the historical context and novelty. The historical use of siblings is well-documented through citations (C9-C11), and the gap in the literature (C25) is a reasonable characterization that motivates the current work. This represents accurate assessment of prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Individuals with extreme trait values are at greatest disease risk and may harbor rare variants of large effect due to natural selection. Selection pressures can enrich trait tails for rare variants, affecting polygenic score accuracy and sibling similarity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2-C3, C16-C21, C60-C61 describe the biological and evolutionary context. These claims are supported by appropriate citations (Koch et al., 2024; Uricchio, 2020; Corte et al., 2023; Momozawa and Mizukami, 2021; Chan et al., 2011) and represent established knowledge in evolutionary genetics and complex trait architecture. The logical connections between selection, rare variants, and trait tails are well-founded.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "c84a7cde-c19b-4381-af04-b1df2da2eff8",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Genetic architecture is typically inferred from multiple study types (GWAS, sequencing, family studies), and prior sibling studies on intellectual ability have shown patterns consistent with different genetic architectures in different parts of the trait distribution.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C15 and C22-C24 describe standard approaches and prior empirical findings. These are well-supported by citations (Yengo et al., 2022; Selvaraj et al., 2022; Singh et al., 2022; Iyegbe and O'Reilly, 2022; Shakeshaft et al., 2015; Reichenberg et al., 2016) and represent accurate characterization of the field and prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605",
+      "content_id": "c70745b0-a92a-4c96-bcd4-a608a886ce35",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The framework could be extended to multiple future applications including heritability estimation, characterizing mating patterns, inferring selection pressures, clinical genetic testing prioritization, and improving sequencing study design.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51, C62-C63, C67-C72 describe potential future applications. These are speculative (as noted in evidence_type) and represent possibilities rather than demonstrated capabilities. While the suggestions are reasonable extensions of the framework, they require additional development and validation. These claims about future work cannot be evaluated as supported without actual implementation and testing.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "a22f26be-dfde-4d93-a46f-5f2845d58a87",
+      "content_id": "4fc02459-e626-4fba-9008-c4afa0ce09b4",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors developed a theoretical framework that derives expected distributions of sibling trait values under polygenic null assumptions (infinitesimal genetic effects and Gaussian environmental factors) and created statistical tests to distinguish polygenic architecture from enrichments of de novo or rare Mendelian variants. The framework predicts distinct sibling trait patterns: regression-to-the-mean under polygenic architecture, background distribution similarity for de novo mutations, and bimodal distributions for Mendelian variants.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly affirm the theoretical framework. The first reviewer states the authors \"present a solid statistical framework\" and calls it \"valuable.\" The second reviewer describes it as \"clever and well-done,\" noting it \"builds on a compelling intuition, rests on a rigorous derivation,\" indicating acceptance of the theoretical foundation and its logical basis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "8e120887-0794-4ec9-a2a1-e20f36144188",
+      "content_id": "4fc02459-e626-4fba-9008-c4afa0ce09b4",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Simulation studies demonstrate that the statistical tests are well-calibrated and show differential power characteristics: power to detect de novo architecture is greatest when heritability is high, while power to detect Mendelian architecture is greatest when heritability is low. When heritability is near 50% and at least 0.1% of the population has high-impact rare variants, both tests are well-powered.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer explicitly states the method \"seems to show reasonable statistical power in the UK Biobank,\" indicating acceptance of the power analysis results. The first reviewer calls the method \"promising\" without raising concerns about the simulation-based power assessments, suggesting implicit acceptance of these technical validation results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "52354dd5-3700-4420-aca8-b873081e22a4",
+      "content_id": "4fc02459-e626-4fba-9008-c4afa0ce09b4",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Application of the tests to UK Biobank data (>21,000 siblings) revealed trait-specific genetic architectures: polygenic architecture for Ankle Spacing in both tails; Mendelian architecture in the lower tail for Urate and upper tail for Waist Circumference and Left Hand Grip Strength; de novo architecture in the lower tail for Forced Expiratory Volume and both tails for Sitting Height (supported by independent sequencing studies); and mixed de novo and Mendelian architecture in the lower tail for Left Hand Grip Strength.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer acknowledges the method \"seems to show reasonable statistical power in the UK Biobank,\" indicating acceptance of the empirical application results. Neither reviewer challenges the specific trait findings, and the first reviewer's statement that the method \"will be of interest to researchers studying complex trait genetics\" suggests the UK Biobank results are viewed as credible demonstrations of the method's utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "20942826-3651-4a15-ba34-574dc3abab6e",
+      "content_id": "4fc02459-e626-4fba-9008-c4afa0ce09b4",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors acknowledge that departures from expected sibling trait distributions could result from environmental risk factors rather than rare genetic architecture, and that shared environmental factors could bias heritability estimates upward. However, they note that meta-analyses suggest shared environmental contributions among siblings are generally insubstantial.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The second reviewer explicitly identifies this as a limitation, stating the method is \"somewhat unsuccessful in that rejection of the null hypothesis does not necessarily point to the favored hypothesis of de novo or rare variants\" and notes \"the authors discuss the alternative possibility of rare environmental events of large effect.\" This indicates the reviewer views the environmental confounding issue as unresolved, though the authors' acknowledgment of this limitation is noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "120919c0-1fb5-46b8-bc91-ec95030ed12b",
+      "content_id": "4fc02459-e626-4fba-9008-c4afa0ce09b4",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The modeling framework assumes random mating and additivity of genetic effects, with the authors noting that additivity is well-supported by statistical genetics research but cautioning that results should be reconsidered for traits with evidence of assortative mating or non-additive genetic effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer challenges these modeling assumptions. The second reviewer's overall assessment that the method \"rests on a rigorous derivation\" suggests acceptance of the stated assumptions as reasonable for the framework. The lack of specific critique about these assumptions indicates implicit reviewer support.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "16c925ac-75f2-4e72-80d7-00b06e06afc5",
+      "content_id": "4fc02459-e626-4fba-9008-c4afa0ce09b4",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The tests can be applied to any cohort or health registry with sibling pairs and trait values without requiring genetic data, providing a novel approach for inferring genetic architecture specifically in trait distribution tails where complex architecture is most likely due to selection and disease risk is highest.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer explicitly calls the method \"valuable\" and states it \"will be of interest to researchers studying complex trait genetics,\" indicating acceptance of its broad applicability. The second reviewer notes the method is \"applicable to biobank-scale data but without necessarily using genotyping or sequencing,\" affirming this key feature. Both reviewers' positive overall assessments support the claimed utility and novelty.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "5d687cb4-37c1-40b9-bee1-15db2f3fb915",
+      "content_id": "4fc02459-e626-4fba-9008-c4afa0ce09b4",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Validation analyses showed that theoretically derived conditional sibling trait distributions do not differ significantly from simulated data, and the statistical tests are robust to shared environmental effects with consistent effects throughout the trait distribution.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The second reviewer's statement that the method \"rests on a rigorous derivation\" and shows \"reasonable statistical power\" suggests acceptance of these validation results. Neither reviewer raises concerns about the theoretical-empirical correspondence or robustness claims, indicating implicit support for these technical validation findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "6e8d4864-0d4b-466b-9491-e8384f409b0e",
+      "content_id": "4fc02459-e626-4fba-9008-c4afa0ce09b4",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose multiple potential future applications including: extending the framework to estimate heritability, characterize mating patterns, and infer selection pressures; using the approach to identify individuals for clinical genetic testing or to prioritize individuals for sequencing studies; and informing study design choices between family trio versus population sequencing approaches based on inferred architecture type.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The first reviewer's statement that the method \"will be of interest to researchers studying complex trait genetics\" and is \"promising\" suggests acceptance of its potential for future applications. The second reviewer notes \"more biobanks of this size will probably become available in the near future,\" implicitly supporting the method's future utility. Neither reviewer challenges these proposed applications.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "4054c02f-fd01-4054-9eb0-cfd5d9adfd8d",
+      "result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3"
+    },
+    {
+      "claim_id": "96b0be47-d254-4454-9fdb-a441a16f9509",
+      "result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3"
+    },
+    {
+      "claim_id": "f93694f3-93d0-4ee9-b456-8a8d9822be7f",
+      "result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3"
+    },
+    {
+      "claim_id": "1d4bc2e4-da2e-44c7-80b5-ff49594156ab",
+      "result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3"
+    },
+    {
+      "claim_id": "14f5b902-b29b-410c-96c3-16d9115a723f",
+      "result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3"
+    },
+    {
+      "claim_id": "283f56fe-a5c9-4bca-9fa2-8709afa327da",
+      "result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3"
+    },
+    {
+      "claim_id": "46c7d34e-bf36-4d45-9912-f4c58fec0f02",
+      "result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3"
+    },
+    {
+      "claim_id": "9b7ba15c-d46f-49a3-a5b2-22754b2389e5",
+      "result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3"
+    },
+    {
+      "claim_id": "c37e70e7-8e69-41d0-bcdc-4531e4c27f27",
+      "result_id": "9fa6acd0-e0da-4777-967d-a2e408d5df26"
+    },
+    {
+      "claim_id": "869bad8d-4833-43a0-b035-fb4863477dee",
+      "result_id": "9fa6acd0-e0da-4777-967d-a2e408d5df26"
+    },
+    {
+      "claim_id": "ac44e8f7-ee40-4719-a8f8-f83291256729",
+      "result_id": "9fa6acd0-e0da-4777-967d-a2e408d5df26"
+    },
+    {
+      "claim_id": "803ccefc-64c7-4ffa-a077-b750000413ad",
+      "result_id": "9fa6acd0-e0da-4777-967d-a2e408d5df26"
+    },
+    {
+      "claim_id": "a1b558bb-82b9-4d3d-9519-ce7295f707b5",
+      "result_id": "9fa6acd0-e0da-4777-967d-a2e408d5df26"
+    },
+    {
+      "claim_id": "c6c25e59-91c2-4bc2-913a-330a5fdcb49c",
+      "result_id": "9fa6acd0-e0da-4777-967d-a2e408d5df26"
+    },
+    {
+      "claim_id": "18909435-2dfb-4abe-ba30-ee5170ee9d38",
+      "result_id": "9fa6acd0-e0da-4777-967d-a2e408d5df26"
+    },
+    {
+      "claim_id": "4c595552-1ebe-4434-a61d-dba8c1e4b646",
+      "result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1"
+    },
+    {
+      "claim_id": "49cbe928-ec99-4260-99e0-3a01854f683e",
+      "result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1"
+    },
+    {
+      "claim_id": "d30a056d-c904-486c-8676-5d4e9d6e6f3d",
+      "result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1"
+    },
+    {
+      "claim_id": "09bfd1a7-0972-4e81-aa37-382cb945c68a",
+      "result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1"
+    },
+    {
+      "claim_id": "2f11058c-6155-4db6-a8b7-dc5705219d62",
+      "result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1"
+    },
+    {
+      "claim_id": "4bd2b27e-f125-4deb-a5e3-d35fb7052b03",
+      "result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1"
+    },
+    {
+      "claim_id": "406cf301-2fee-4cb0-a703-e8de941695b0",
+      "result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1"
+    },
+    {
+      "claim_id": "c9d3ed39-504c-4b75-8e35-f3db4eadfcc6",
+      "result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1"
+    },
+    {
+      "claim_id": "dec773a8-5ec0-4107-a034-ba61f0891de7",
+      "result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1"
+    },
+    {
+      "claim_id": "6c711b32-2ccd-405b-9766-34fe634c06df",
+      "result_id": "8ddd83b9-eac4-4132-944a-c6e06bde2361"
+    },
+    {
+      "claim_id": "acc385c3-f34f-43c4-a599-e5ac3ce187ba",
+      "result_id": "8ddd83b9-eac4-4132-944a-c6e06bde2361"
+    },
+    {
+      "claim_id": "7ad436e2-ebfe-4d29-9c75-439f8cd3172c",
+      "result_id": "8ddd83b9-eac4-4132-944a-c6e06bde2361"
+    },
+    {
+      "claim_id": "aa32cf39-3653-4dc1-8857-9fe272c2e6c5",
+      "result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430"
+    },
+    {
+      "claim_id": "bdc7ba6d-9703-48e8-a80a-99fac6e5d397",
+      "result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430"
+    },
+    {
+      "claim_id": "342a3112-daa1-433d-9c80-e7b3e22c3382",
+      "result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430"
+    },
+    {
+      "claim_id": "1a86a914-096f-4982-bfed-ccad66d96dc0",
+      "result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430"
+    },
+    {
+      "claim_id": "37c2defb-3603-477f-8d12-172db22bc949",
+      "result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430"
+    },
+    {
+      "claim_id": "b1b04569-8c97-49cc-8614-0d87b61bde18",
+      "result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430"
+    },
+    {
+      "claim_id": "0ecc21f0-d980-4a95-9d89-d4a681b6dc64",
+      "result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430"
+    },
+    {
+      "claim_id": "3c04ce93-ea9c-49bc-956f-c024064606b8",
+      "result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430"
+    },
+    {
+      "claim_id": "2ffe616d-3bc9-472b-a04f-99117e22b178",
+      "result_id": "6c5f558a-3a5a-416c-8e3d-d430b795d80b"
+    },
+    {
+      "claim_id": "0d4e3998-ba8b-4469-8173-fb9ca4e79ba0",
+      "result_id": "6c5f558a-3a5a-416c-8e3d-d430b795d80b"
+    },
+    {
+      "claim_id": "67aaf5e0-e1b5-49bc-a043-b2ca068e03a3",
+      "result_id": "6c5f558a-3a5a-416c-8e3d-d430b795d80b"
+    },
+    {
+      "claim_id": "e5c5093f-92d6-4573-8726-b7bac46f67e0",
+      "result_id": "6c5f558a-3a5a-416c-8e3d-d430b795d80b"
+    },
+    {
+      "claim_id": "eac6526b-16da-4c48-8079-e6d4c0fb307c",
+      "result_id": "6c5f558a-3a5a-416c-8e3d-d430b795d80b"
+    },
+    {
+      "claim_id": "b65377eb-f796-4593-80d4-db3c8185d520",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "2d33338c-82fa-4ea0-a401-68ed5b454bf9",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "c8cc6858-c5ab-437a-a9a0-1a3568d222b5",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "16a80ef4-b074-407a-acba-8679ec5810d1",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "7fae898c-18ca-47da-b372-9a08b4ff9bec",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "089aae4c-b140-4624-b844-ae3ca4ed1d67",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "6ed35594-0361-4a6d-9c44-3bd6c03e3513",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "462762c3-a9e8-4443-ad47-defb79d430eb",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "a9d2407d-8cc9-4244-b120-9f34b267ddf7",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "b7d38175-1f01-4e58-8431-8faaf00f6be8",
+      "result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010"
+    },
+    {
+      "claim_id": "a7f8727f-d564-486a-b1ad-c21461a53a30",
+      "result_id": "c84a7cde-c19b-4381-af04-b1df2da2eff8"
+    },
+    {
+      "claim_id": "9953a931-bb37-4b4c-8001-747f6711b0f4",
+      "result_id": "c84a7cde-c19b-4381-af04-b1df2da2eff8"
+    },
+    {
+      "claim_id": "4786e310-7126-43e6-81df-2f0f3af21c71",
+      "result_id": "c84a7cde-c19b-4381-af04-b1df2da2eff8"
+    },
+    {
+      "claim_id": "9eab639e-841b-4cf8-afc2-d661b00c50bb",
+      "result_id": "c84a7cde-c19b-4381-af04-b1df2da2eff8"
+    },
+    {
+      "claim_id": "beb73b4c-2f3b-4740-acdb-86955d58ad25",
+      "result_id": "c84a7cde-c19b-4381-af04-b1df2da2eff8"
+    },
+    {
+      "claim_id": "7df719ac-59dd-4cca-a31f-e8abe428c365",
+      "result_id": "c84a7cde-c19b-4381-af04-b1df2da2eff8"
+    },
+    {
+      "claim_id": "d5556ca3-f762-4fd5-ba1c-60a9d63f13dd",
+      "result_id": "c84a7cde-c19b-4381-af04-b1df2da2eff8"
+    },
+    {
+      "claim_id": "218d7519-9625-43f5-84a3-2c58bba2fa72",
+      "result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605"
+    },
+    {
+      "claim_id": "fbd000ee-aaea-49b1-b912-560e5da76149",
+      "result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605"
+    },
+    {
+      "claim_id": "be8d6899-8a26-4c1e-aece-ebf62dccb9e4",
+      "result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605"
+    },
+    {
+      "claim_id": "f5d3b209-3efe-4676-9dc7-98127d407164",
+      "result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605"
+    },
+    {
+      "claim_id": "316c58f5-8db4-4989-af09-af0476924234",
+      "result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605"
+    },
+    {
+      "claim_id": "708f29a8-9ebe-4879-b362-b1bf89d0a7da",
+      "result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605"
+    },
+    {
+      "claim_id": "504e6ff3-4ee3-4f1f-b8ec-cb8efb9939b6",
+      "result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605"
+    },
+    {
+      "claim_id": "5d4ca612-1325-42cc-86a0-db964ef6a311",
+      "result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605"
+    },
+    {
+      "claim_id": "7d82ffc1-b6b8-45d9-bfef-e0f2869df32f",
+      "result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605"
+    },
+    {
+      "claim_id": "4054c02f-fd01-4054-9eb0-cfd5d9adfd8d",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "96b0be47-d254-4454-9fdb-a441a16f9509",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "c37e70e7-8e69-41d0-bcdc-4531e4c27f27",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "6c711b32-2ccd-405b-9766-34fe634c06df",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "f93694f3-93d0-4ee9-b456-8a8d9822be7f",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "1d4bc2e4-da2e-44c7-80b5-ff49594156ab",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "14f5b902-b29b-410c-96c3-16d9115a723f",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "283f56fe-a5c9-4bca-9fa2-8709afa327da",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "46c7d34e-bf36-4d45-9912-f4c58fec0f02",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "869bad8d-4833-43a0-b035-fb4863477dee",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "ac44e8f7-ee40-4719-a8f8-f83291256729",
+      "result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87"
+    },
+    {
+      "claim_id": "803ccefc-64c7-4ffa-a077-b750000413ad",
+      "result_id": "8e120887-0794-4ec9-a2a1-e20f36144188"
+    },
+    {
+      "claim_id": "a1b558bb-82b9-4d3d-9519-ce7295f707b5",
+      "result_id": "8e120887-0794-4ec9-a2a1-e20f36144188"
+    },
+    {
+      "claim_id": "c6c25e59-91c2-4bc2-913a-330a5fdcb49c",
+      "result_id": "8e120887-0794-4ec9-a2a1-e20f36144188"
+    },
+    {
+      "claim_id": "18909435-2dfb-4abe-ba30-ee5170ee9d38",
+      "result_id": "8e120887-0794-4ec9-a2a1-e20f36144188"
+    },
+    {
+      "claim_id": "49cbe928-ec99-4260-99e0-3a01854f683e",
+      "result_id": "52354dd5-3700-4420-aca8-b873081e22a4"
+    },
+    {
+      "claim_id": "d30a056d-c904-486c-8676-5d4e9d6e6f3d",
+      "result_id": "52354dd5-3700-4420-aca8-b873081e22a4"
+    },
+    {
+      "claim_id": "09bfd1a7-0972-4e81-aa37-382cb945c68a",
+      "result_id": "52354dd5-3700-4420-aca8-b873081e22a4"
+    },
+    {
+      "claim_id": "2f11058c-6155-4db6-a8b7-dc5705219d62",
+      "result_id": "52354dd5-3700-4420-aca8-b873081e22a4"
+    },
+    {
+      "claim_id": "4bd2b27e-f125-4deb-a5e3-d35fb7052b03",
+      "result_id": "52354dd5-3700-4420-aca8-b873081e22a4"
+    },
+    {
+      "claim_id": "406cf301-2fee-4cb0-a703-e8de941695b0",
+      "result_id": "52354dd5-3700-4420-aca8-b873081e22a4"
+    },
+    {
+      "claim_id": "c9d3ed39-504c-4b75-8e35-f3db4eadfcc6",
+      "result_id": "52354dd5-3700-4420-aca8-b873081e22a4"
+    },
+    {
+      "claim_id": "dec773a8-5ec0-4107-a034-ba61f0891de7",
+      "result_id": "52354dd5-3700-4420-aca8-b873081e22a4"
+    },
+    {
+      "claim_id": "aa32cf39-3653-4dc1-8857-9fe272c2e6c5",
+      "result_id": "20942826-3651-4a15-ba34-574dc3abab6e"
+    },
+    {
+      "claim_id": "bdc7ba6d-9703-48e8-a80a-99fac6e5d397",
+      "result_id": "20942826-3651-4a15-ba34-574dc3abab6e"
+    },
+    {
+      "claim_id": "342a3112-daa1-433d-9c80-e7b3e22c3382",
+      "result_id": "20942826-3651-4a15-ba34-574dc3abab6e"
+    },
+    {
+      "claim_id": "1a86a914-096f-4982-bfed-ccad66d96dc0",
+      "result_id": "20942826-3651-4a15-ba34-574dc3abab6e"
+    },
+    {
+      "claim_id": "37c2defb-3603-477f-8d12-172db22bc949",
+      "result_id": "120919c0-1fb5-46b8-bc91-ec95030ed12b"
+    },
+    {
+      "claim_id": "b1b04569-8c97-49cc-8614-0d87b61bde18",
+      "result_id": "120919c0-1fb5-46b8-bc91-ec95030ed12b"
+    },
+    {
+      "claim_id": "0ecc21f0-d980-4a95-9d89-d4a681b6dc64",
+      "result_id": "120919c0-1fb5-46b8-bc91-ec95030ed12b"
+    },
+    {
+      "claim_id": "acc385c3-f34f-43c4-a599-e5ac3ce187ba",
+      "result_id": "16c925ac-75f2-4e72-80d7-00b06e06afc5"
+    },
+    {
+      "claim_id": "7ad436e2-ebfe-4d29-9c75-439f8cd3172c",
+      "result_id": "16c925ac-75f2-4e72-80d7-00b06e06afc5"
+    },
+    {
+      "claim_id": "fbd000ee-aaea-49b1-b912-560e5da76149",
+      "result_id": "16c925ac-75f2-4e72-80d7-00b06e06afc5"
+    },
+    {
+      "claim_id": "9b7ba15c-d46f-49a3-a5b2-22754b2389e5",
+      "result_id": "5d687cb4-37c1-40b9-bee1-15db2f3fb915"
+    },
+    {
+      "claim_id": "3c04ce93-ea9c-49bc-956f-c024064606b8",
+      "result_id": "5d687cb4-37c1-40b9-bee1-15db2f3fb915"
+    },
+    {
+      "claim_id": "218d7519-9625-43f5-84a3-2c58bba2fa72",
+      "result_id": "6e8d4864-0d4b-466b-9491-e8384f409b0e"
+    },
+    {
+      "claim_id": "be8d6899-8a26-4c1e-aece-ebf62dccb9e4",
+      "result_id": "6e8d4864-0d4b-466b-9491-e8384f409b0e"
+    },
+    {
+      "claim_id": "f5d3b209-3efe-4676-9dc7-98127d407164",
+      "result_id": "6e8d4864-0d4b-466b-9491-e8384f409b0e"
+    },
+    {
+      "claim_id": "316c58f5-8db4-4989-af09-af0476924234",
+      "result_id": "6e8d4864-0d4b-466b-9491-e8384f409b0e"
+    },
+    {
+      "claim_id": "708f29a8-9ebe-4879-b362-b1bf89d0a7da",
+      "result_id": "6e8d4864-0d4b-466b-9491-e8384f409b0e"
+    },
+    {
+      "claim_id": "504e6ff3-4ee3-4f1f-b8ec-cb8efb9939b6",
+      "result_id": "6e8d4864-0d4b-466b-9491-e8384f409b0e"
+    },
+    {
+      "claim_id": "5d4ca612-1325-42cc-86a0-db964ef6a311",
+      "result_id": "6e8d4864-0d4b-466b-9491-e8384f409b0e"
+    },
+    {
+      "claim_id": "7d82ffc1-b6b8-45d9-bfef-e0f2869df32f",
+      "result_id": "6e8d4864-0d4b-466b-9491-e8384f409b0e"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "7728cc54-c0a2-4f01-b659-24c1dee204c6",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3",
+      "peer_result_id": "a22f26be-dfde-4d93-a46f-5f2845d58a87",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the theoretical framework (C4, C5, C26-C30). OpenEval emphasizes mathematical grounding and simulation validation (C74), while peer reviewers describe it as 'solid,' 'clever and well-done,' and 'rigorous.' Both agree the framework is well-founded. Peer R1 also includes C6, C8, C37-C38 which OpenEval addresses separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "126abd00-80c8-4d53-abb8-8193933af1cf",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "9fa6acd0-e0da-4777-967d-a2e408d5df26",
+      "peer_result_id": "8e120887-0794-4ec9-a2a1-e20f36144188",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the statistical power analysis (C39-C41, C64). OpenEval provides detailed validation through simulation showing proper calibration and power characteristics. Peer reviewers affirm 'reasonable statistical power in the UK Biobank' and find the method 'promising.' Complete agreement on power analysis validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "876a148d-5ae3-4f32-9cca-403dfd72bbcd",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "c471baee-2dc3-4e7a-9f01-bb1d5c368ba1",
+      "peer_result_id": "52354dd5-3700-4420-aca8-b873081e22a4",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on UK Biobank results (C43-C50). OpenEval rates as UNCERTAIN due to inability to distinguish genetic from environmental causes and lack of external validation for most traits. Peer reviewers rate as SUPPORTED, accepting the results as credible demonstrations despite acknowledging the same limitations. Peer reviewers view the application more favorably.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "3379d019-2d4e-4c48-9fca-6d4c19e4bbc5",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430",
+      "peer_result_id": "20942826-3651-4a15-ba34-574dc3abab6e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations address environmental confounding limitations (C52-C55) and rate as UNCERTAIN. OpenEval notes the lack of direct demonstration of robustness claims. Peer reviewers explicitly identify this as unresolved, stating rejection of null 'does not necessarily point to the favored hypothesis.' Strong agreement on this limitation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "b9080415-2d8e-409d-b74f-949ce2f40082",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "9dfb4a53-bbc1-4038-9269-e21bd501c430",
+      "peer_result_id": "120919c0-1fb5-46b8-bc91-ec95030ed12b",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on modeling assumptions (C56-C58). OpenEval rates as UNCERTAIN, noting the impact of violations is not quantified for specific traits analyzed. Peer reviewers rate as SUPPORTED, accepting assumptions as reasonable without specific critique. OpenEval is more critical of unvalidated assumptions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "ec52386f-70a9-4f50-a7e0-b028d6da1277",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "8ddd83b9-eac4-4132-944a-c6e06bde2361",
+      "peer_result_id": "16c925ac-75f2-4e72-80d7-00b06e06afc5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the methodological innovation and broad applicability (C7, C8, C59). OpenEval emphasizes validation through simulation and UK Biobank application. Peer reviewers call it 'valuable' and affirm it 'will be of interest to researchers,' noting applicability without genotyping. Complete agreement on novelty and utility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "e4645649-f9ac-4061-8149-f405b357f856",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "41b58b4d-6f54-46a3-866d-1b708a1604e3",
+      "peer_result_id": "5d687cb4-37c1-40b9-bee1-15db2f3fb915",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address simulation validation (C74). OpenEval includes this in theoretical framework support, showing theoretical distributions match simulated data. Peer reviewers note the method 'rests on a rigorous derivation' and accept validation results. Also addresses C77 (robustness) which OpenEval evaluates separately as uncertain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "829e77c5-e233-40de-b2c1-6d9503dab3ce",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "7d82ec0b-7da6-4a5a-9ae7-c26280df2605",
+      "peer_result_id": "6e8d4864-0d4b-466b-9491-e8384f409b0e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on future applications (C51, C62-C63, C67-C72). OpenEval rates as UNCERTAIN, noting these are speculative possibilities requiring additional development and validation. Peer reviewers rate as SUPPORTED, accepting the method as 'promising' with future utility. Peer reviewers are more optimistic about proposed extensions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "44429797-4932-4607-81fe-983a80026335",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "6c5f558a-3a5a-416c-8e3d-d430b795d80b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates historical context and novelty claims (C1, C9-C11, C25) as SUPPORTED, noting well-documented prior work and reasonable characterization of the literature gap. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "2127b261-32ef-405f-97ed-53eb27b67f9a",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "57f5ce6f-7e4e-4e85-a2a2-490d0ba0e010",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates biological and evolutionary context claims (C2-C3, C16-C21, C60-C61) as SUPPORTED, noting appropriate citations and established knowledge in evolutionary genetics. No corresponding peer review evaluation found for these contextual claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    },
+    {
+      "id": "86ccd77a-ccf8-4471-b182-c95294dd2346",
+      "submission_id": "40563b90-2d88-42b0-9f7a-9eacd81c3a59",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "c84a7cde-c19b-4381-af04-b1df2da2eff8",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates standard approaches and prior empirical findings (C12-C15, C22-C24) as SUPPORTED, noting well-supported citations and accurate characterization of the field. No corresponding peer review evaluation found for these literature review claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:37:58.172876Z"
+    }
+  ]
+}

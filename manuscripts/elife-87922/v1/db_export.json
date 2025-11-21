@@ -1,0 +1,2225 @@
+{
+  "submission": {
+    "id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:48:24.988041Z",
+    "updated_at": "2025-11-21T22:48:24.988041Z"
+  },
+  "content": [
+    {
+      "id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "content_type": "manuscript",
+      "content_text": "# A unique cell division protein critical for the assembly of the bacterial divisome\n\n## Authors\n\n- Xiao Chu<sup>1</sup> ([ORCID: 0009-0007-0779-6688](https://orcid.org/0009-0007-0779-6688)) \u2020\n- Lidong Wang<sup>1</sup>\n- Yiheng Zhu<sup>1</sup>\n- Zhengshan Feng<sup>1</sup>\n- Qingtian Guan<sup>2</sup>\n- Lei Song<sup>1</sup> ([ORCID: 0000-0002-4115-065X](https://orcid.org/0000-0002-4115-065X)) \u2020\n- Zhaoqing Luo<sup>1</sup> ([ORCID: 0000-0001-8890-6621](https://orcid.org/0000-0001-8890-6621)) \u2020\n\n### Affiliations\n\n1. Department of Respiratory Medicine, Infectious Diseases and Pathogen Biology Center State Key Laboratory for Diagnosis and Treatment of Severe Zoonotic Infectious Diseases, Key Laboratory for Zoonosis Research of the Ministry of Education, The First Hospital of Jilin University Changchun China ([ROR:034haf133](https://ror.org/034haf133))\n2. Bioinformatics Laboratory, The First Hospital of Jilin University Changchun China ([ROR:034haf133](https://ror.org/034haf133))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIdentification of unique essential bacterial genes is important for not only the understanding of their cell biology but also the development of new antimicrobials. Here, we report a previously unrecognized core component of the Acinetobacter baumannii divisome. Our results reveal that the protein, termed Aeg1 interacts with multiple cell division proteins, including FtsN, which is required for components of the divisome to localize to the midcell. We demonstrate that the FtsAE202K and FtsBE65A mutants effectively bypassed the need of Aeg1 by A. baumannii, as did the activation variants FtsWM254I and FtsWS274G. Our results suggest that Aeg1 is a cell division protein that arrives at the division site to initiate cell division by recruiting FtsN, which activates FtsQLB and FtsA to induce the septal peptidoglycan synthase FtsWI. The discovery of the new essential cell division protein has provided a new target for the development of antibacterial agents.\n\n## Introduction\n\nAcinetobacter baumannii is a Gram-negative bacterial pathogen that causes a wide variety of nosocomial infections (Wong et al., 2017; Piperaki et al., 2019), including urinary tract infections, gastrointestinal and skin/wound infections, and secondary meningitis (Peleg et al., 2008; Nasr, 2020; Doi et al., 2015). The challenge posed by this pathogen is compounded by the emergence of isolates that are resistant to almost all of the available antibiotics, including some of the last resort for treatment of infections caused by bacterial pathogens, including colistin, tigecycline, and carbapenems (Piperaki et al., 2019; Karakonstantis, 2021). As a result, the World Health Organization (WHO) has classified A. baumannii as a pathogen for which new antibiotics are urgently needed (Whiteway et al., 2022). Meeting this challenge requires the discovery of antimicrobials of new mechanisms with action or other mitigation strategies that enable reduction of disease burden caused by this pathogen.\n\nHistorically, the discovery of antibiotics was largely based on the search for secondary metabolites produced by soil-dwelling microbes (Clardy et al., 2006; Wright, 2017). The majority of clinically used antibiotic classes originate from soil bacteria, including lactams, aminoglycosides, polymyxins, and glycopeptides (Hutchings et al., 2019). Unfortunately, natural products discovery is now plagued by problems of so-called \u2018dereplication problem\u2019, wherein rediscovery of molecules or their close relatives (Cox et al., 2017). As a result, there has not been a novel antibiotic discovered in over 30 years using traditional methods of screening environmental samples (Lewis, 2020). The overuse of these merely variants of existing compounds has further accelerated the problem associated with antibiotic resistance. Thus, identification of novel therapeutic targets in the pathogen may serve as an effective alternative to the problem.\n\nA better understanding of gene function associated with A. baumannii pathogenesis and biology will provide us strategies to develop antibiotics with potentially novel mechanisms of action. One extensively explored avenue in this regard is the identification of previously unrecognized essential genes by methods enabled by new DNA sequencing technologies, including insertion sequencing (INSeq) (Goodman et al., 2009), transposon sequencing (Tn-seq) (van Opijnen et al., 2009), transposon-directed insertion site sequencing (TraDIS) (Langridge et al., 2009), and high-throughput insertion tracking sequencing (HITS) (Gawronski et al., 2009). Application of these methods has identified genes believed to be required for bacterial viability under various conditions in such important pathogens as Streptococcus pneumoniae (van Opijnen et al., 2009), Pseudomonas aeruginosa (Gallagher et al., 2011), Vibrio cholerae (Dong et al., 2013), and A. baumannii (Bai et al., 2021; Gallagher et al., 2015; Wang et al., 2014).\n\nSimilar to candidate genes identified by other methods, putative essential genes obtained by In-seq were deduced from sequencing results of surviving mutants, some of which can be false positives or negatives due to unsaturated mutant libraries or polar effects on downstream genes of the insertion sites. Using In-seq Wang et al. identified 453 candidate essential genes for the growth of A. baumannii strain ATCC 17978 on rich medium (Wang et al., 2014). Among these, genes annotated as hypotheticals with orthologs in other taxonomically distant microorganisms are of particular interest because their potential role in cellular processes that can be explored as targets for the development of novel antimicrobials. We thus set out to test a subgroup of the predicted essential genes by a conditional gene deletion strategy based on the arabinose-inducible promoter (Guzman et al., 1995). From 10 genes examined, three were found to be essential for A. baumannii viability on rich medium. Further study revealed that one of these genes codes for a novel bacterial cell division protein.\n\n## Results\n\n### Identification of genes required for A. baumannii viability\n\nAnalysis of strains of A. baumannii, including the model strain 17,978 by In-seq technologies have led to the identification of at least 453 genes potentially required for bacterial growth on rich medium (Gallagher et al., 2015; Wang et al., 2014). Whereas many of these genes are involved in known cellular processes fundamental for cell viability such as DNA replication, transcription, and translation, some code for proteins of unknown activity, are thus of great interest as potentially new antimicrobial targets (Gallagher et al., 2015). To determine the function of the candidate essential genes annotated as hypotheticals, we first confirmed their essentiality by a conditional gene deletion method. To this end, we employed a set of plasmids that allow inducible gene expression in A. baumannii (Jie et al., 2021). Each gene of interest was expressed from the arabinose-inducible promoter (Guzman et al., 1995), and the corresponding gene was deleted from the chromosome by the standard allele exchange method (Merriam et al., 1997; Figure 1A). Chromosomal deletion mutants harboring the arabinose-inducible gene were tested for essentiality by spotting serially diluted cells onto solid medium with or without arabinose (ara) (Figure 1A). If the gene of interest is essential, the bacterium should fail to grow on plates without ara.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig1-v1.jpg)\n\n**Figure 1.:** (A) A diagram depicting the method for conditional deletion of potential essential genes. The gene to be examined was expressed from the arabinose-inducible promoter on a plasmid and the gene was deleted from the chromosome using the standard allele exchange method (upper panel) and strains lacking the chromosomal gene were tested for essentiality by spotting diluted cells on media with and without arabinose, respectively (lower panel). (B) Identification of A1S_0137, A1S_2249, and A1S_3387 as A. baumannii essential genes. Each of the 10 genes predicted to be essential were deleted by the method described in A and the resulting bacterial strains were tested for growth by spotting serially diluted cells on medium with or without 1% arabinose. Images were acquired after incubation at 37\u00b0C for 18 hr. Similar results were obtained in at least three independent experiments. (C) Cells harboring differentially regulated HA-Aeg1 and HA-Aeg1\u2206N spotted onto Luria Bertani (LB) agar supplemented with 0.5 mM isopropyl-\u03b2-D-thiogalactopyranoside (IPTG) or 1% ara, images were acquired after 18 hr incubation at 37\u00b0C (C, upper two panels). The expression of the Aeg1 and Aeg1\u2206N were examined by immunoblotting with the HA-specific antibody. The metabolic enzyme isocitrate dehydrogenase (ICDH) was probed as a loading control (C, lower two panels). Similar results were obtained in three independent experiments. The red asterisk denotes that the deletion of this gene results in pronounced growth defects in the cells.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Strains were tested for growth by spotting serially diluted cells on medium with or without 1% arabinose. Images were acquired after incubation at 37\u00b0C for 18 hr. Similar results were obtained in at least three independent experiments.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** Aeg1 of A. baumannii and its homologs from a member of the Moraxellaceae family, E. coli (strain s_6558), Klebsiella pneumoniae (strain 4300STDY7045912), and Salmonella enterica (strain 350627) were compared with Jalview. Homology from high to low was presented in dark red, orange, yellow, light yellow, or no highlight.\n\nOur initial analysis of 10 genes (Supplementary file 1) identified A1S_0137, A1S_2249, and A1S_3387 (Smith et al., 2007) that met the criteria of being required for growth on Luria Bertani (LB) agar (Figure 1B). Importantly, gene A1S_3387 is also essential for A. baumannii growth in the Vogel\u2013Bonner minimal medium with succinate (VBS) as the sole carbon source (Vogel and Bonner, 1956; Figure 1\u2014figure supplement 1). These genes were thus designated as A. baumannii essential genes (Aeg) and Aeg1 (A1S_3387) was chosen for detailed study.\n\nSequence analysis revealed that Aeg1 has orthologs in a number of Gram-negative bacteria, including Klebsiella pneumoniae, Salmonella enterica members of the Moraxellaceae family and some strains of Escherichia coli, with sequence similarity ranging from 80% to identical (Figure 1\u2014figure supplement 2). Aeg1 is predicted to harbor a single transmembrane domain, however, the precise location of this transmembrane segment has been predicted differently across various analyses. SMART Web site (K\u00e4ll et al., 2004) predicted the transmembrane region to be located at the N-terminus of Aeg1 (7\u201329 aa). In contrast, Phobius, based on HMM(HMMTOP (enzim.hu)) suggested the transmembrane segment is situated more centrally within the Aeg1 protein (134\u2013151 aa), and further proposed that the N-terminus may correspond to a signal peptide (K\u00e4ll et al., 2007; Geisinger et al., 2020). Regardless of the specific transmembrane topology prediction, the N-terminal region of Aeg1 appears to be a critical domain. Therefore, to further elucidate the structural and functional importance of the Aeg1 close to its N-terminus end, we employed a dual inducible system with two compatible plasmids that use promoters that respond to ara and isopropyl-\u03b2-D-thiogalactopyranoside (IPTG), respectively. Strain \u0394aeg1(PBAD::Aeg1, PTAC::Aeg1) was able to grow on medium containing 1% ara or 0.5 mM IPTG (Figure 1C) indicating that the chromosomal deletion can be complemented by either of the constructs when expression of Aeg1 was induced. Importantly, expression of the Aeg1 mutant lacking N-terminal region was unable to restore the growth of the strain (Figure 1C), suggesting that N-terminal domain of Aeg1 is essential for its activity.\n\n### Depletion of Aeg1 caused cell filamentation in A. baumannii\n\nWe next examined the morphology of A. baumannii lacking Aeg1 by optical and scanning electron microscopy. Cultures of strain \u0394aeg1(PBAD::Aeg1) were induced by ara for 14 hr, cells diluted into fresh LB with or without ara were allowed to grow for 18 hr. We found that cells of cultures grown in medium containing 1% ara exhibited a short rod cell shape similar to that of the wild-type strain (Figure 2A). In medium without ara most cells of strain \u2206aeg1(PBAD::Aeg1) displayed an elongated morphology which is in sharp contrast to those of wild-type cells grew under identical conditions (Figure 2A). Quantitative analysis indicated that in medium supplemented with ara, more than 95% of the cells of strain \u2206aeg1(PBAD::Aeg1) were shorter than 5 \u03bcm. Incubation in medium without ara for 18 hr caused more than 96% of the cells to become elongated with cell lengths ranging from 5 \u03bcm to over 10 \u03bcm (Figure 2B). The phenotype can be partially reversed after growing the elongated cells in medium containing 1% ara for 4 hr (Figure 2C). These results indicate that depletion of Aeg1 causes cell elongation, a phenotype that had been observed in recent studies using transposon insertion sequencing (Bai et al., 2021; Pichoff et al., 2012).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig2-v1.jpg)\n\n**Figure 2.:** (A) Cell morphology of the wild-type and strain \u0394aeg1(PBAD::Aeg1) grown in medium with or without ara. The \u0394aeg1(PBAD::Aeg1) and the wild-type strains were grown in medium with or without ara for 18 hr, samples were processed for scanning electron microscope imaging. Images shown are representative of three parallel cultures. Bar, 2 \u00b5m. (B, C) Expression of Aeg1 reversed the cell elongation phenotype caused by its depletion. Saturated bacterial cultures of \u0394aeg1(PBAD::Aeg1) diluted in fresh Luria Bertani (LB) broth with (I) or without (II) ara were incubated for 18 hr. The culture from the uninduced sample was split into two subcultures, ara was added to one of the subcultures and the morphology of the cells was determined at 4 hr (III) post induction. Images are representative of three parallel cultures. Bar, 10 \u00b5m (B). Quantitation of the cell length in samples differently expressing Aeg1. Cell length was categorized into groups of 0\u20135 \u03bcm, 5\u201310 \u03bcm, and more than 10 \u03bcm. At least 300 cells were counted for each sample (C). Results shown were from the average of three independent experiments. Statistical analysis in each panel was performed by Student\u2019s t-test.\n\n### Mutations in the cell division gene ftsA bypasses the requirement of Aeg1\n\nTo explore the cellular process participated by Aeg1, we sought to isolate suppressor mutants that can survive in standard medium under conditions the gene is not expressed. To this end, cells of strain \u2206aeg1(PBAD::Aeg1) grown in medium supplemented with ara were exposed to the mutagen ethyl methanesulfonate (EMS), and the treated cells were plated on LB agar without ara. A few colonies were obtained from approximately 6 \u00d7 108 cells and two independent mutants M1 and M2 were chosen for further analysis. In spotting assays using diluted cells, each of these two mutants derived from strain \u2206aeg1(PBAD::Aeg1) was able to grow on medium without ara at rates comparable to those of wild-type bacteria (Figure 3A). We then performed whole-genome sequencing analysis of these two mutants, which revealed that M1 and M2 had 320 and 328 substitution mutations, respectively. In addition, 659 insertion\u2013deletion (InDel) mutations were found in M1 and 665 such mutations were associated with M2 (Supplementary file 2).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig3-v1.jpg)\n\n**Figure 3.:** (A) Isolation of two suppressor mutants that gained viability in the absence of Aeg1. Cells serially diluted with water were spotted onto Luria Bertani (LB) agar with or without ara. Note that the \u0394aeg1(PBAD::Aeg1) strain (top row) cannot grow on medium without ara and the wild-type strain (second row) can grow on both conditions. Similar results were obtained in three independent experiments. (B) The FtsAE202K mutant suppressed the requirement of Aeg1. Cells of strains derived from \u0394aeg1(PBAD::aeg1) that harbored the vector (I), pHA-Aeg1 (II), pHA-FtsA (III), or pHA-FtsAE202K (IV) were spotted onto LB agar containing ara (left) or isopropyl-\u03b2-D-thiogalactopyranoside (IPTG; right), Images were acquired after 18 hr incubation at 37\u00b0C (B, upper panels). Expression of Aeg1, FtsA, or FtsAE202K in these strains were detected by immunoblotting with the HA-specific antibody after lysates of IPTG-induced cells being resolved by SDS\u2013PAGE (Sodium Dodecyl Sulfate Polyacrylamide Gel Electrophoresis). Isocitrate dehydrogenase (ICDH) was probed as a loading control (B, lower panels). Similar results were obtained in three independent experiments. (C) The suppression mutants assumed normal cell morphology. Bacterial strains derived from \u0394aeg1(PBAD::aeg1) grown in LB broth containing ara for 6 hr were diluted into fresh medium with the inducer and the cultures were induced with IPTG for 4 hr prior to being processed for imaging. Images were representatives of three parallel cultures. Bar, 10 \u00b5m. (D) Additional FtsA mutants bypassed the need of Aeg1. Mutant FtsAD124A, FtsAV144A, or FtsAQ285A expressed from the IPTG-inducible PTAC was introduced into strain \u0394aeg1(PBAD::Aeg1) and serially diluted cells of resulting strains were spotted onto LB agar supplemented with ara or IPTG. Images were acquired after incubation at 37\u00b0C for 18 hr (upper panels). Expression of Aeg1, FtsAD124A, FtsAV144A, and FtsAQ285A in these strains. Total protein of IPTG-induced cells resolved by SDS\u2013PAGE and proteins transferred onto nitrocellulose membranes were detected by immunoblotting with the HA-specific antibody. ICDH was probed as a loading control (lower panels). Similar results were obtained in three independent experiments. (E) The Aeg1-mCherry fusion localizes to division constrictions. Wild-type A. baumannii harboring PBAD::Aeg1-mCherry grown to the mid-log phase in LB broth containing 1% ara were processed for imaging. Bar, 10 \u00b5m. Images are representative of three parallel cultures.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The FtsA proteins from A. baumannii and E. coli were compared using Jalview. The residues highlighted by blue boxes indicate the site of dominant active sites in E. coli proteins, and corresponding mutations were made in their A. baumannii counterparts.\n\nBecause depletion of Aeg1 caused cell elongation, we first examined mutated genes whose functions are known to be involved in cell division. An E202K mutation caused by a G to A substitution in the first position of the codon was found in the cell division protein FtsA in both M1 and M2 (Supplementary file 2). We thus verified the suppression phenotype by introducing a plasmid expressing FtsA or FtsAE202K into strain \u2206aeg1(PBAD::Aeg1) and examined the growth of the resulting bacterial strains under different induction conditions. Expression of FtsAE202K allowed strain \u2206aeg1(PBAD::Aeg1) to gain the ability to grow in the absence of ara. In contrast, although the protein was expressed at a comparable level, FtsA cannot suppress the growth defect caused by Aeg1 depletion (Figure 3B). Consistent with the growth phenotypes, expression of FtsAE202K in strain \u2206aeg1(PBAD::Aeg1) under conditions in which the complementation gene was not expressed displayed a morphology similar to that of wild-type bacteria (Figure 3C).\n\nPrevious studies have found that several mutations in FtsA bypassed the requirement of a number of essential cell division proteins in E. coli, including ZipA (Berezuk et al., 2020), FtsK (Bernard et al., 2007), and FtsN (Geissler et al., 2003). Among these, FtsAR286W (FtsA*) was the first gain-of-function mutation found in E. coli, which allowed the survival of mutants lacking ZipA (\u0394zipA) or FtsK (\u0394ftsK) (Berezuk et al., 2020; Bernard et al., 2007; Liu et al., 2015). Additionally, FtsAI143L(Park et al., 2021) and FtsAE124A(Geissler et al., 2003) weakly bypassed the requirement of FtsN. These mutations also rescued the FtsLL86F/E87K mutant when overexpressed (Karimova et al., 1998). We thus examined whether similar mutations in FtsA of A. baumannii can bypass the need of Aeg1 by constructing substitution FtsA mutants D124A, V144L, and Q285W, which correspond to E124A, I143L, and R286W in its E. coli counterpart, respectively (Figure 3\u2014figure supplement 1) and tested them in strain \u2206aeg1(PBAD::Aeg1). Whereas FtsAQ285W cannot detectably suppress Aeg1 depletion, expression of FtsAD124A or FtsAV144L partially resecured the growth of strain \u2206aeg1(PBAD::Aeg1) in medium without ara (Figure 3D). Despite multiple attempts, we were unable to detect the expression of these FtsA mutants by immunoblotting using antibody specific to the Flag epitope fused to these alleles (Figure 3D, lower panels), suggesting that the low activity exhibited by these mutants may result from low protein levels.\n\nThe observation that mutations in genes involved in cell division bypass the need of Aeg1 suggests that this protein participate in the same cellular process. We thus analyzed the cellular localization of Aeg1 in A. baumannii by introducing a plasmid that expresses Aeg1-mCherry from the PBAD promoter. Fluorescence microscopy analysis revealed that Aeg1 localized at the septum of dividing cells (Figure 3E), which validated the genetic evidence for its role in cell division.\n\n### Aeg1 interacts with multiple core components of the A. baumannii divisome\n\nTo further explore the possibility that Aeg1 is a component of the A. baumannii divisome, we determined its interactions with known cell division proteins using the Cya-based bacterial two-hybrid method (Tsang and Bernhardt, 2015). Effective complementation between the fused T25 and T18 domains requires their localization to the cytoplasmic compartment. Because the predicted transmembrane topology of Aeg1 is not unequivocal, with one model suggesting an N-terminal transmembrane segment and another proposing a more centrally located membrane-spanning domain. To circumvent potential artifacts arising from the ambiguous topological models of Aeg1, we generated two distinct fusion constructs, tethering the T25 domain to either the N- or C-terminus of the Aeg1 protein. We then assessed the complementation between these Aeg1\u2013T25 fusions and the potential binding partners fused to the T18 domain to evaluate the interaction between Aeg1 and other Fts proteins. Among the tested proteins FtsZ, FtsA, ZipA, FtsK, FtsQ, FtsL, FtsB, FtsW, FtsI, and FtsN, Aeg1 detectably interacts with ZipA, FtsK, FtsL, FtsB, and FtsN. Intriguingly, ZipA and FtsN appearing to have higher binding affinity with Aeg1 whether the T25 reporter domain was fused to the N- or C-terminus of the Aeg1 construct (Figure 4A\u2013D), as indicated by the hydrolysis of X-gal by derivatives of the E. coli reporter strain BTH101 (Tsang and Bernhardt, 2015) harboring appropriate protein fusions. When the interactions were quantitatively determined by measuring galactosidase activity, the binding of FtsN or ZipA to Aeg1 appeared the strongest among all examined protein pairs (Figure 4A\u2013D). This observation suggests that the precise topology of Aeg1 does not significantly impact its ability to engage these binding partners.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig4-v1.jpg)\n\n**Figure 4.:** (A\u2013D) Derivatives of strain E. coli BTH101 containing T18-Aeg1 and T25 fusion of the indicated proteins were spotted onto Luria Bertani (LB) agar containing X-gal. T25 domain was fused to the N-terminus (A, B) or C-terminus (C, D) of Aeg1. Images were acquired after incubation for 18 hr at 37\u00b0C (A, C). Interactions determined by quantitative measurement of \u03b2-galactosidase activity (B, D). Results shown were from three independent experiments. Statistical analysis was performed by Student\u2019s t-test. (E) Aeg1 colocalized with a set of core divisome proteins. GFP(Green Fluorescent Protein). fusion of ZipA, FtsL, FtsB, or FtsN was expressed in strain WT(pJL03::mCherry-Aeg1). Saturated cultures of bacterial strains harboring the GFP and mCherry fusions were diluted into fresh LB broth. After the cell density of the subcultures reached until OD600 = 0.6, isopropyl-\u03b2-D-thiogalactopyranoside (IPTG) (0.25 mM) and ara (0.25%) were added to induce the expression of fusion proteins for 4 hr prior to being processed for imaging. Red arrows indicate the sites of colocalization. Cells in which the proteins did not colocalize were shown by white arrows. Bar, 10 \u00b5m. Images are representative of three independent cultures.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** zipA, ftsB, ftsL, and ftsN are essential cell division genes which were deleted by the method described in Figure 1A. The resulting bacterial strains were tested for growth by spotting serially diluted cells on medium with 1% arabinose or 0.5 mM isopropyl-\u03b2-D-thiogalactopyranoside (IPTG) (A). Strain \u0394aeg1(PBAD::mCherry-Aeg1) expressing mCherry fusion of Aeg1 from the PBAD promoter grown in medium with or without ara were processed for imaging (B). Images were acquired after incubation at 37\u00b0C for 18 hr. Similar results were obtained in at least three independent experiments.\n\nWe next analyzed the localization of putative Aeg1-interacting proteins identified in our bacterial two-hybrid experiments. To this end, we coexpressed the mCherry-Aeg1 fusion with GFP fusion of ZipA, FtsL, FtsB, or FtsN in the WT strain from the ara- and IPTG-inducible promoter, respectively. Prior to localization studies, we first sought to examine the functionality of the GFP fusions by individually deleting the chromosomal gene of zipA, ftsB, ftsL, and ftsN in A. baumannii strains expressing the fusion proteins from a plasmid. Our results indicate that each GFP fusion was capable of complementing the growth defects caused by deleting the corresponding gene (Figure 4\u2014figure supplement 1A). Similarly, we found that expression of the mCherry-Aeg1 fusion allowed the deletion of the aeg1 gene (Figure 4\u2014figure supplement 1B). In each case, the growth of the strain expressing the fusion protein complementing the chromosomal deletion was comparable to that of the wild-type strain (Figure 4\u2014figure supplement 1A). These strains were then used in experiments aiming at investigating the localization of the relevant proteins. Saturated cultures of strains derived from WT(PBAD::mCherry-Aeg1) (grown for 16 hr) that harbored the GFP fusions were diluted into fresh LB broth. When the cell density of the subcultures reached OD600 = 0.6, IPTG (0.25 mM) or ara (0.25%) were added to induce the expression of fusion proteins for 4 hr and samples were processed for microscopic analysis. Consistent with results from the protein interaction experiments using the bacterial two-hybrid assay, we found that Aeg1 colocalized with ZipA, FtsL, FtsB, and FtsN (Figure 4E, red arrows), but occasional non-colocalization was also observed (Figure 4E, white arrows). Thus, Aeg1 interacts with multiple core cell divisome proteins of A. baumannii.\n\n### Aeg1 is an essential core cell division protein in A. baumannii\n\nThe interaction map between Aeg1 and core divisome proteins prompted us to postulate that the absence of Aeg1 prevented these proteins from localizing to the midcell. To test this hypothesis, we introduced plasmids that direct the expression of GFP fusion of each of the divisome proteins into strain \u0394aeg1(PBAD::mCherry-Aeg1). We evaluated the protein of Aeg1-mCherry at 2, 4, and 6 hr after withdrawing arabinose and found that at the 2 and 4 hr time points mCherry-Aeg1 was still readily detectable (Figure 5\u2014figure supplement 1). Importantly, we found that removal of arabinose for 6 hr rendered Aeg1-mCherry undetectable in approximately 90% of the cells. We thus used the 6 hr inducer withdraw to examine the effects of Aeg1 depletion. In cells depleted of Aeg1, all of the examined core division proteins displayed midcell mistargeting, including ZipA, FtsB, FtsL, and FtsN (Figure 5A). These results suggest that Aeg1 is a new member of cell division protein, which plays a role in positioning several other core proteins at the septum of A. baumannii.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig5-v1.jpg)\n\n**Figure 5.:** (A) Aeg1 deficiency prevented core divisome proteins from localizing to the middle cell. Cells of derivatives of strain \u0394aeg1(pJL03::mCherry-Aeg1) expressing GFP fusion of each of the divisome proteins from the PTAC promoter grown in medium with ara were processed for imaging. The red arrows representative examples of the inability of fusion proteins to target to the septal ring. Bar, 5 \u00b5m. Images are representative of three parallel cultures. A few dominant active mutants of FtsB and FtsW bypassed the need of Aeg1 by A. baumannii. Mutant FtsBE65A (B), FtsBD68H (B), FtsLQ70K (C), FtsWM254I (D), or FtsWS274G (D) was expressed from the isopropyl-\u03b2-D-thiogalactopyranoside (IPTG)-inducible promoter PTAC in strain \u0394aeg1(pJL03::Aeg1). Serially diluted cells were spotted onto Luria Bertani (LB) agar containing ara or IPTG. Images were acquired after incubation at 37\u00b0C for 18 hr (B\u2013D). Similar results were obtained in three independent experiments. The expression of the protein was probed with the HA-specific antibody after IPTG induction (B\u2013D). Isocitrate dehydrogenase (ICDH) was probed as a loading control.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** Cells of derivatives of strain \u0394aeg1(PBAD::mCherry-Aeg1) expressing mCherry fusion of Aeg1 from the PBAD promoter grown in medium with ara were processed for imaging. Bar, 10 \u00b5m. Images are representative of three parallel cultures.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** The FtsB, FtsL, FtsW, and FtsI proteins from A. baumannii and E. coli were compared using Jalview. The residues highlighted by blue boxes indicate the site of dominant active sites in E. coli proteins, and corresponding mutations were made in their A. baumannii counterparts.\n\nDuring the formation of the divisome, FtsN was believed to be the last protein being recruited to the septum where it converts FtsQLB and FtsA into their active forms, which subsequently activate the septal peptidoglycan synthase FtsWI (Park et al., 2021; Park et al., 2020). If the interaction between Aeg1 and FtsN is critical for the ability of the latter to switch on FtsQLB and FtsA, constitutively active mutants of FtsQLB or FtsA should suppress the need of Aeg1 for cell viability. To test this hypothesis, we expressed HA-FtsBE65A and HA-FtsLQ70K of A. baumannii (equivalent to mutants of their E. coli counterparts that allow the bypass of the requirement of FtsN) (Figure 5\u2014figure supplement 2; Park et al., 2021; Li et al., 2021) in strain \u0394aeg1(PBAD::Aeg1) on medium without ara. Although the expression of HA-FtsBE65A was not detectable with the HA-specific antibody, induction of this mutant completely restored the growth of the \u0394aeg1 mutant in the absence of Aeg1 (Figure 5B). In contrast, a similarly constructed plasmid that directs the expression of HA-FtsBD68H cannot bypass the requirement of Aeg1 under the same conditions (Figure 5B). Similarly, expressed HA-FtsLQ70K detectably rescued bacterial growth without Aeg1 at a level considerably lower than that of FtsBE65A (Figure 5C). The low or undetectable activity exhibited by FtsLQ70K and FtsBD68H may result from the low protein levels in strain \u0394aeg1(PBAD::Aeg1). Nevertheless, these results support our hypothesis that Aeg1 functions upstream of FtsN, probably by functioning as its activator or recruiting factor.\n\nIt is known that expression of mutants FtsIK211I, FtsWM269I, and FtsWE289G driven by a strong promoter can bypass the need of FtsN in E. coli (de Boer, 2010). The ability of FtsBE65A and FtsAE202K to suppress the growth defect of the \u0394aeg1 mutant prompted us to examine whether constitutively active alleles of FtsW or FtsI have the same effects. Overexpression of FtsWM254I and FtsWS274G of A. baumannii detectably rescued the growth of the strain in which Aeg1 had been depleted (Figure 5D). FtsI from A. baumannii does not have a residue corresponding to K211 of its E. coli counterpart (Figure 5\u2014figure supplement 2), we thus did not test the effect of this mutation. Therefore, our results demonstrate that Aeg1 may collaborate with FtsN to activate at least a part of FtsQLB and FtsA for subsequently activation of FtsWI during cell division. Together with results that the variant FtsAE202K suppressed the growth defect caused by aeg1 depletion (Figure 3B), these observations support a model in which the Aeg1\u2013FtsN complex is involved in the activation of FtsQLB and FtsA.\n\n## Discussion\n\nPowerful In-seq DNA sequencing technologies based on saturated transposon insertion libraries have allowed the identification of genes essential for bacterial viability under specific conditions, including commonly used rich media such as LB broth (Wang et al., 2014). Using a conditional gene deletion method, we have revealed that from 10 putative essential genes identified by this method, three previously annotated as hypotheticals are essential for A. baumannii viability, suggesting that assignment of essentiality to genes identified by methods of this kind needs to be individually verified.\n\nOur assignment of aeg1 as an essential gene is consistent with a recent study which revealed its essentiality (termed advA) by transposon insertion sequencing, which also observed cell elongation upon the depletion of this gene (Pichoff et al., 2012). Our results provided at least two additional lines of evidence to support the notion that Aeg1 is a core cell division protein in A. baumannii. First, random suppression mutations that bypassed the requirement of Aeg1 mapped to a classic cell division gene and mutations in some cell division genes known to circumvent the need of specific cell division proteins rescued the growth defect caused by Aeg1 depletion (Figure 3). Second, Aeg1 interacts with at least a subset of proteins involved in cell division (Figure 4A\u2013D).\n\nIn the process of bacterial cell division, over 30 distinct proteins are assembled into a complex typically referred to as \u2018divisome\u2019 (Haeusser and Margolin, 2016). Ten of these are normally essential for both cell division and survival, and they are now mainly suggested to be the core of the divisome in various bacteria (Haeusser and Margolin, 2016; Lutkenhaus, 2017). These essential division proteins are mostly named Fts (filamentation temperature sensitive), which stems from the fact that inactivating one of these fts genes causes cells to become filamentous, which eventually failed to survive (Haeusser and Margolin, 2016; Carson et al., 1991). Among these, the FtsQLB complex not only serves as a scaffold for recruitment of subsequent divisome proteins (Guzman et al., 1997; Craven et al., 2024), but also plays an important role in regulating the activity of the divisome (Park et al., 2021; Park et al., 2020). The constriction control domain (CCD) of FtsL was previously defined as a critical component for switching the conformation of FtsLB from an off to an on state in order to activate FtsWI by enabling the interaction between FtsIperi and the AWI (activation of FtsWI) region of FtsL (Park et al., 2021; Park et al., 2020; S\u00e1nchez et al., 1994). Division obstruction caused by Aeg1 depletion can be effectively circumvented by suppression mutations (FtsBE65A) in its CCD domain and by activation mutations (M254I and S274G) of FtsW (Figure 5D), suggesting that Aeg1 functions upstream of these proteins.\n\nIn addition to FtsQLB-mediated activation of FtsI in the periplasm, the constitutively active form of FtsA (FtsA*) acting on FtsW in the cytoplasm, these two events functions synergistically to activate FtsWI for sPG synthesis (Karimova et al., 1998). FtsA is a member of the actin family (van den Ent and L\u00f6we, 2000; Szwedziak et al., 2012), which interacts with FtsN via a unique IC domain positioned between the IA and IIA domains (Baranova et al., 2020; Pichoff et al., 2015; Goehring and Beckwith, 2005). Little is known about the function of the IA and IIA domains of FtsA. That the E202K mutation in the IIA domain bypasses the requirement of Aeg1 by A. baumannii (Figure 3B) suggests that Aeg1 and FtsA work together to activate FtsW.\n\nThe maturation of the core divisome is facilitated by the recruitment in a nearly sequential order of the late-division proteins FtsK, FtsQ, FtsL/FtsB, FtsW, FtsI, and FtsN (Du et al., 2019; Addinall et al., 1997; Lyu et al., 2022). Once the latest division protein, FtsN, is recruited, division-specific peptidoglycan synthesis conferred by the FtsWI complex is activated to build the septum (Lyu et al., 2022; Weiss, 2015). More recent studies suggest that by binding to FtsA, a small amount of FtsN is recruited to the division site earlier than previously thought (Park et al., 2021; Goehring and Beckwith, 2005; Piehaud and Second, 1951) where it induces a conformational switch in both FtsA and the FtsQLB subcomplex on both sides of the membrane (Park et al., 2021). Furthermore, binding between FtsA and FtsN is regulated by ZipA (Goehring and Beckwith, 2005). Our observation of strong binding of Aeg1 to ZipA and FtsN (Figure 4A\u2013D) prompted us to propose a model in which Aeg1 participates in cell division by anchoring to the division site together with ZipA where it recruits FtsN, which in turn signals to both the cytoplasmic and periplasmic branches of peptidoglycan synthesis involving FtsA and the FtsQLB complex, respectively (Park et al., 2021; Figure 6A). The placement of Aeg1 as one of the early arrivals in the hierarchical sequential assembly of the divisome is consistent with the fact that the requirement of Aeg1 can be bypassed by constitutively active mutants of FtsAE202K (Figure 3), FtsB (FtsBE65A), FtsL (FtsLQ70K), and of FtsW (FtsWM254I and FtsWS274G) (Figure 5).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/87922/elife-87922-fig6-v1.jpg)\n\n**Figure 6.:** In the early stages of Z-ring assembly, anchor proteins FtsA and ZipA tether FtsZ to the inner face of the plasma membrane. In the initial phase of cell division, a small amount of FtsN is recruited to the divisome in a FtsA-dependent manner (left, recruitment phase) (Wroblewska et al., 2007). The Aeg1\u2013ZipA\u2013FtsN complex acts as a dynamic scaffold for recruiting downstream of Fts proteins. Once more FtsN is recruited to the divisome, it will activate both FtsA and the FtsQLB complex, which in turn activates FtsI in the periplasm (Li et al., 2021). Note that constitutively active form of FtsA (FtsA*) acts on FtsW in the cytoplasm (Karimova et al., 1998) so did the hyperactive mutants FtsAE202K. These mutants all bypassed the need of Aeg1 (right, activation phase). Constitutively active mutants were indicated by a star. The red arrows next to FtsAE202K or FtsBE65A indicate overexpression of these mutants.\n\nIt is worth noting that that although homologs of Aeg1 are present in many Gram-negative bacteria, including some recent isolate of E. coli, it appears to be absent in more extensively studied model strains such as K12 (Figure 1\u2014figure supplement 2). It is possible that in strain K12, its activity is conferred by a yet unidentified protein that employs a conserved mechanism in cell division. Future study aiming at elucidating the biochemical and structural basis of the activity of Aeg1 and its homologs, and their relationship with other components of the divisome may provide not only insights into the mechanism of bacterial cell division but also leads for the design of antibiotics with novel mechanism of action.\n\n## Materials and methods\n\n### Bacterial strains, growth conditions, and plasmids construction\n\nAll bacterial strains and plasmids used in this study are listed in Supplementary file 3. All A. baumannii strains were derivatives of strain ATCC17978 (Yildirim et al., 2016). Bacteria were grown in LB broth or agar. Antibiotics were added to media when necessary. For E. coli, the concentrations used were: ampicillin, 100 \u00b5g/ml, kanamycin, 30 \u03bcg/ml, chloramphenicol, 30 \u00b5g/ml, and gentamicin, 10 \u03bcg/mL. For A. baumannii, kanamycin, 30 \u03bcg/ml, gentamicin, 10 \u03bcg/ml, and streptomycin, 100 \u03bcg/ml.\n\nTo construct pUT18C-Flag, two oligos with sequences coding for the Flag tag and appropriate restriction sites were mixed at a 1: 1 ratio, heated to 100\u00b0C for 5 min and allowed the mixed DNA to anneal by gradually cooling down to room temperature (RT). The resultant DNA fragment was then inserted into SalI/ClaI digested pUT18C (Tsang and Bernhardt, 2015). We introduced an EcoRV site into the inserted DNA fragment to facilitate the identification of plasmids carrying the intended insert. To make pJL05 that allows PTAC-driven expression of HA-tagged protein, primers containing the coding sequence of the HA tag were used to amplified the promoter region of pJL02 (Jie et al., 2021), PCR product was inserted as a PciI/BamHI fragment. This manipulation replaced the Flag tag on pJL02 with an HA tag. pJL03 is a pVRL1-based plasmid harboring PBAD, which allows expressing Flag-tagged proteins in A. baumannii (Jie et al., 2021).\n\nThe DNA fragment were amplified from genomic DNA of A. baumannii strain and digested with appropriate restriction enzyme (Supplementary file 3), following insert into similarly digested plasmids. The experimental procedure entails fusion of the GFP gene with the target gene, followed by ligation of the resulting construct into the pJL05 vector for subsequent expression.\n\n### Introduction of plasmids into A. baumannii\n\nPlasmids were introduced into A. baumannii by electroporation (Finan et al., 1986) or by triparental mating. Electrocompetent cells were prepared using a previously described protocol (Jhjeimg, 1972) with minor modifications. Briefly, saturated cultures of A. baumannii were diluted 1:100 into 50 ml LB medium to grow for 18 hr at 37\u00b0C and cells were harvested by centrifugation (4000 \u00d7 g) at RT for 5 min. Cells were washed twice with 10 ml of 10% glycerol, resuspended in 1 ml of 10% glycerol, cells aliquoted in 50 \u03bcl. were stored at \u221280\u00b0C. For transformation, 1 \u03bcg of plasmid DNA was mixed with 50 \u03bcl competent cells and electroporation was performed in 0.2 cm cuvettes on a Bio-Rad Gene Pulser system (2.5 kV/cm, 25 \u03bcF, 200 \u03a9).\n\nThe E. coli MT607 harboring pRK600was used for triparental mating. Briefly, 100 \u03bcl of overnight cultures of the donor, recipient, and the helper strain were mixed and cells were harvest by centrifugation (4000 \u00d7 g) for 5 min. Mixed cells washed twice with 1 ml of sterile water were spotted onto LB agar and the mating was allowed to proceeded for 4\u20136 hr at 37\u00b0C before plating onto selective medium.\n\n### Construction of in-frame deletion mutants of A. baumannii\n\nTo delete the putative essential genes, we first introduced a plasmid expressing the gene of interest into A. baumannii and the resulting strains were used to construct chromosomal deletion mutants using a method based on the suicide plasmid pSR47s (Merriam et al., 1997). Briefly, the coding region of the gene was inserted into pJL03, which allows expression of Flag-tagged protein from the PBAD promoter (Jie et al., 2021) and the resulting plasmid was introduced into A. baumannii by electroporation. Strains in which the chromosomal deletion is complemented by GFP or mCherry fusions of the relevant Fts proteins were similarly constructed.\n\nTo construct the plasmid used for in-frame deletion of A. baumannii genes, 1.0 kilobase DNA fragment was amplified from the upstream and downstream of the gene to delete, respectively, digested with appropriate restriction enzymes and inserted into similarly digested pSR47s (Merriam et al., 1997). The primers were designed so that in each case the gene to be deleted was replaced with an open reading frame consisting of the first and last 15 residues linked by two amino acids encoded by the sequence of the restriction enzyme used to fuse the two DNA fragments (Supplementary file 3). The plasmid was then introduced into the A. baumannii strain harboring the pJL03 derivative expressing the gene to be deleted from the PBAD promoter by triparental mating. Transconjugants obtained on LB agar containing 1% ara were grown in LB broth containing 5% sucrose for 18 hr prior to being streaked onto LB agar supplemented with 5% sucrose. Deletion mutants were identified by colony PCR with primers corresponding to the 5\u2032 end of the upstream fragment and the 3\u2032 of the downstream fragments.\n\n### EMS mutagenesis\n\nThe A. baumannii strain \u0394aeg1(PBAD::Aeg1) was grown in LB broth containing 1% ara to saturation, cells from 2 ml culture collected by centrifugation were washed twice with cold buffer A [60 mM K2HPO4, 33 mM KH2PO4, 7.6 mM (NH4)2SO4, 1.7 mM sodium citrate, pH = 7]. Cells resuspended in 2\u00d7 buffer A supplemented with 1.4% EMS were incubated in a shaker (220 rpm) at 37\u00b0C for 15 min for 30, 45, and 60 min, respectively. Treated cells harvested by centrifugation were washed twice with buffer A prior to being plated onto LB agar supplemented with 5% glucose. Colonies appeared were purified and tested by spotting diluted cells onto LB agar with or without ara, respectively, to confirm the ability to grown in the absence Aeg1. To eliminate the possibility that the ara-independent growth phenotype was due to mutations in the PBAD promoter, the plasmid from each mutant candidate was rescued and the promoter region was sequenced. Only mutants harboring an intact PBAD promoter were retained for further study.\n\nGenome sequencing was performed by Suzhou Golden Wisdom Biological Technology Co, Ltd, and mutations were identified using the genome of the parent strain ATCC 17978 as reference (Smith et al., 2007).\n\n### Bacterial two-hybrid assays\n\nTo assess interactions between Aeg1 and A. baumannii Fts proteins, we employed the Bordetella pertussis adenylate cyclase (Cya)-based bacterial two-hybrid system (Tsang and Bernhardt, 2015). The coding region of Aeg1 was fused to the T25 fragment of Cya and testing Fts proteins were individually fused to the T18 fragment on pUT18C-Flag, which allows the detection of the fusion protein with the Flag-specific antibody (Supplementary file 3). Interaction was evaluated in the cya\u2212 E. coli strain BTH101 (Tsang and Bernhardt, 2015) by the ability of the testing strains to hydrolyze X-Gal. Quantitative measurement of \u03b2-galactosidase activity with performed with ortho-nitrophenyl-\u03b2-galactoside (ONPG) using an established protocol (Busiek and Margolin, 2014). Testing bacterial strains were cultured in 2 ml LB broth containing 0.5 mM IPTG for 18 hr, and 0.2 ml cells were harvest and resuspended in 1 ml Z-buffer (60 mM Na2HPO4, 40 mM NaH2PO4\u00b7H2O, 1 mM MgSO4, 10 mM KCl, and 7 ml of 2-mercaptoethanol per liter). After adding 50 \u00b5l 1% (m/v) SDS and 100 \u03bcl of chloroform, cells were lysed by 30 s vortex and 50 \u03bcl of ONPG (40 mg/ml) was added. The reaction was terminated with 500 \u00b5l of 1 M Na2CO3 after ONPG hydrolysis had occurred as determined the presence of the yellow color product. \u03b2-Galactosidase activity is defined as in Miller units using the following equation: (OD420 \u00d7 1000)/[(time of incubation in min) \u00d7 (volume of cell suspension in ml) \u00d7 (cell density of the culture in OD600)]. All assays were done in triplicate.\n\n### Antibodies and immunoblotting\n\nHA-specific antibody (1:1000) was purchased from Santa Cruz (Cat #sc-7392), and rabbit anti-ICDH (1:2000) was described previously (Jie et al., 2021). To prepare protein samples, we diluted (1:100) saturated bacterial cultures into fresh LB broth. When OD600 of the cultures reached 0.6, IPTG was added to a final concentration of 0.5 mM. Approximately 1 \u00d7 109 cells were collected, resuspended in 100 \u03bcl SDS sample buffer and were boiled for 5 min. Proteins separated by SDS\u2013PAGE were transferred onto nitrocellulose membranes, which were first blocked with 5% nonfat milk for 1 hr followed by incubation with appropriate primary antibodies for 14 hr. Washed membranes were incubated with the appropriate IRDye-labeled secondary antibodies and signals were detected using an Odyssey CLx system (LI-COR).\n\n### Fluorescence imaging\n\nTo determine the cellular localization of Aeg1 and its colocalization with members of the divisome, we constructed pJL03::Aeg1-mCherry, which expressed the fusion from the PBAD promoter (Guzman et al., 1995). GFP chimera of Fts proteins were expressed from pJL05 driven by the PTAC promoter inducible by IPTG. Each of the GFP-Fts fusion was introduced into strain WT(PBAD::mCherry-Aeg1).\n\nTo visualize the localization of the fusions, bacterial strains were grown to saturation in LB broth containing ara and the cells washed twice with PBS were diluted to a density of approximately 5 \u00d7 106 cells/ml. The cultures were split into two 2 ml subcultures, the one used to determine how the absence of Aeg1 impacted the cellular localization of Fts proteins received only IPTG but not ara. Cultures were incubated in a shaker for an additional 6 hr, and 100 \u03bcl cells were withdrawn and fixed by incubation in glutaraldehyde for 20 min at RT. After washing twice with PBS, samples were stained with Hoechst 33342 (1:5000) (Invitrogen, cat#H3570) and mounted on slides for observation with an Olympus IX-83 fluorescence microscope.\n\n### Bioinformatics analysis\n\nAeg1 homologs were identified using tBLASTn (Gertz et al., 2006) using the Aeg1 protein (A1S_3387) from strain ATCC17978 (GenBank: CP000521.1) as the query sequence. Clustal omega (https://www.ebi.ac.uk/Tools/msa/clustalo/) was used to perform multiple sequence alignments. The homology comparison of Fts proteins between E. coli and A. baumannii was also performed using Clustal omega. Jalview was used for editing and viewing sequence alignments (Waterhouse et al., 2009). The transmembrane regions of Aeg1 were predicted by the SMART Web sites (K\u00e4ll et al., 2004) and Phobius web server (K\u00e4ll et al., 2007; Geisinger et al., 2020).\n\n### Data quantitation, statistical analyses\n\nStudent\u2019s t-test was used to compare the mean between two groups each with at least three independent samples.\n",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jie Xiao, Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87922.4.sa0](https://doi.org/10.7554/eLife.87922.4.sa0)\n\nThis useful study shows that the essential Acinetobacter baumannii gene Aeg1 likely plays an key role in cell division. The strength of the work is the discovery that the depletion of Aeg1 leads to cell filamentation and that gain-of-function mutations in cell division genes FtsB and FtsL rescue the lethality of Aeg1 depletion. However, Aeg1's localization pattern and its requirement for other division proteins' localizations require further characterization of the functionality of fluorescent fusion proteins, fluorescence images of higher quality, and improvements in statistic qualifications, leaving the study' evidence for Aeg1's exact role in cell division incomplete at this time. In conclusion, the critical role of Aeg1 in the assembly of the A. baumannii divisome has yet to be established unambiguously.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87922.4.sa1](https://doi.org/10.7554/eLife.87922.4.sa1)\n\nIn this study, the authors confirm that one of the genes classified as essential in a Tn-mutagenesis study in A. baumannii, Aeg1, is, in fact, an essential gene. The strength of the work is that it discovered that the depletion of Aeg1 leads to cell filamentation and that activation mutations in various cell division genes can suppress the requirement for Aeg1. These results suggest that Aeg1 plays an important role in cell division. The work's weakness is that it lacks convincing evidence to define Aeg1's place or role in the divisome assembly pathway. It is unclear whether proteins are at the division site under the wildtype condition and when Aeg1 is depleted, and whether Aeg1 is indeed required for a set of division proteins to the division site.\n\nReviewer comments:\n\nThe revised manuscript partially addressed two of the three major concerns from the previous assessment: (1) the functionality test of fluorescent fusion proteins using a spotting assay, and (2) membrane protein topology in the bacterial two-hybrid assays by constructing a C-terminal T25 fusion.\n\n(1) In the spotting assay, all fluorescent fusion proteins rescued the growth of the corresponding deletion strain, which suggests these fusion proteins are functional. However, fluorescent images of these fusion proteins were diffusive, and only a few cells showed the expected midcell/membrane localization pattern for cell division proteins. This observation raised the concern that these fusion proteins may be cleaved in the middle, leading to the separation of the untagged fusion partner and diffusive fluorescent protein in the cytoplasm, which would explain the positive spotting rescue results. This phenomenon is commonly observed in other bacterial species. A western blot using an antibody targeting either the fluorescent protein or the fusion partner is widely used to examine whether the fusion protein is expressed at its full length.\n\n(2) The authors constructed a C-terminal fusion of Aeg1 and showed that it still interacted with ZipA and FtsN. This result supports the authors' suggestion that the N-terminus of Aeg1 may not be the predicated membrane-targeting domain. Along the same line, the membrane topology of ZipA should also be considered. ZipA's N terminus is in the membrane facing the periplasm, and its C terminal domain is in the cytoplasm. Therefore, the PUT18C fusion will place the T18 domain of ZipA in the periplasm. All other division proteins' N termini are in the cytoplasm.\n\n(3) Colocalization images did not show significant midcell localizations for each fluorescent protein; most cells showed diffusive cytoplasmic fluorescence. In all other species, midcell localization of cell division proteins is prominent in dividing cells, especially for early division proteins such as ZipA (at least 40-50% of cells show midcell bands). In A. baumannii, divisome localization timing may differ from other species, but this possibility needs to be established before the colocalization pattern is examined. Compounding this issue is that in Aeg1 depletion strains, some cells expressing ZipA, FtsB, FtsL, and FtsN fusions showed roughly regularly spaced puncta in long filamentous cells. It is hard to explain why this was observed if, under the WT condition, these fusions do not localize to the midcell. These results again raised concerns that these fusion proteins may not be functional and the observations are protein aggregates.\n\nBesides these major issues, experimental observations did not support some claims in the main text. For example: (1) In the two-hybrid assay, only ZipA and FtsN showed significant interactions with Aeg1, as judged by the darkness of the blue spots. FtsL and FtsB showed pale spots. The quantified values accompanying this figure did not appear to agree with the image. (2) The spotting rescue assay showed that only FtsB-E56A and FtsA-E202K was able to bypass Aeg1 depletion (full dilution set comparable to that of Aeg1 complementation), but the main text claimed that FtsA-D124A and V144L, and FtsW-M254I and S274G also rescued the growth. These claims could be misleading.\n",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "0e839505-4b9a-4a5e-a25a-70d2fa75b378",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C1",
+      "claim": "Acinetobacter baumannii is a Gram-negative bacterial pathogen that causes a wide variety of nosocomial infections.",
+      "claim_type": "EXPLICIT",
+      "source": "Acinetobacter baumannii is a Gram-negative bacterial pathogen that causes a wide variety of nosocomial infections (Wong et al., 2017; Piperaki et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Wong et al., 2017 and Piperaki et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "4bd52f3e-bde1-43f9-9263-db5345195ab4",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C2",
+      "claim": "Acinetobacter baumannii causes urinary tract infections, gastrointestinal and skin/wound infections, and secondary meningitis.",
+      "claim_type": "EXPLICIT",
+      "source": "including urinary tract infections, gastrointestinal and skin/wound infections, and secondary meningitis (Peleg et al., 2008; Nasr, 2020; Doi et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Peleg et al., 2008; Nasr, 2020; and Doi et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "37fd62ad-08f4-4ba5-8cf2-725a1116626e",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C3",
+      "claim": "Isolates of Acinetobacter baumannii have emerged that are resistant to almost all available antibiotics, including colistin, tigecycline, and carbapenems.",
+      "claim_type": "EXPLICIT",
+      "source": "The challenge posed by this pathogen is compounded by the emergence of isolates that are resistant to almost all of the available antibiotics, including some of the last resort for treatment of infections caused by bacterial pathogens, including colistin, tigecycline, and carbapenems (Piperaki et al., 2019; Karakonstantis, 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Piperaki et al., 2019 and Karakonstantis, 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "2e57c17d-693b-495d-8fa6-160823d0066a",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C4",
+      "claim": "The World Health Organization has classified A. baumannii as a pathogen for which new antibiotics are urgently needed.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, the World Health Organization (WHO) has classified A. baumannii as a pathogen for which new antibiotics are urgently needed (Whiteway et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Whiteway et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "3c77895f-bab5-4cde-b1a2-eda87f8894e7",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C5",
+      "claim": "The majority of clinically used antibiotic classes originate from soil bacteria, including lactams, aminoglycosides, polymyxins, and glycopeptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of clinically used antibiotic classes originate from soil bacteria, including lactams, aminoglycosides, polymyxins, and glycopeptides (Hutchings et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Hutchings et al., 2019",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "bfb6e3a5-094f-4a64-baa1-a581c8c43901",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C6",
+      "claim": "There has not been a novel antibiotic discovered in over 30 years using traditional methods of screening environmental samples.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, there has not been a novel antibiotic discovered in over 30 years using traditional methods of screening environmental samples (Lewis, 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Lewis, 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "85265611-7f7d-4635-aeca-7bbd767e4a00",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C7",
+      "claim": "Wang et al. identified 453 candidate essential genes for the growth of A. baumannii strain ATCC 17978 on rich medium using In-seq.",
+      "claim_type": "EXPLICIT",
+      "source": "Using In-seq Wang et al. identified 453 candidate essential genes for the growth of A. baumannii strain ATCC 17978 on rich medium (Wang et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Wang et al., 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "55c4b385-0574-47f0-9cbb-cfedc0e37780",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C8",
+      "claim": "From 10 genes examined, three were found to be essential for A. baumannii viability on rich medium.",
+      "claim_type": "EXPLICIT",
+      "source": "From 10 genes examined, three were found to be essential for A. baumannii viability on rich medium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "8fc6a98f-b527-4041-a2f0-dc9c1610a562",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C9",
+      "claim": "A1S_0137, A1S_2249, and A1S_3387 are required for growth on Luria Bertani agar.",
+      "claim_type": "EXPLICIT",
+      "source": "Our initial analysis of 10 genes (Supplementary file 1) identified A1S_0137, A1S_2249, and A1S_3387 (Smith et al., 2007) that met the criteria of being required for growth on Luria Bertani (LB) agar (Figure 1B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "f700a3d9-3012-4381-937f-4dccbecbbd0f",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C10",
+      "claim": "Gene A1S_3387 is essential for A. baumannii growth in the Vogel\u2013Bonner minimal medium with succinate as the sole carbon source.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, gene A1S_3387 is also essential for A. baumannii growth in the Vogel\u2013Bonner minimal medium with succinate (VBS) as the sole carbon source (Vogel and Bonner, 1956; Figure 1\u2014figure supplement 1)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1\u2014figure supplement 1 and a citation to Vogel and Bonner, 1956",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "49bf1b75-8d1b-4665-9990-bb09c52d8126",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C11",
+      "claim": "Aeg1 has orthologs in a number of Gram-negative bacteria, including Klebsiella pneumoniae, Salmonella enterica, members of the Moraxellaceae family and some strains of Escherichia coli, with sequence similarity ranging from 80% to identical.",
+      "claim_type": "EXPLICIT",
+      "source": "Sequence analysis revealed that Aeg1 has orthologs in a number of Gram-negative bacteria, including Klebsiella pneumoniae, Salmonella enterica members of the Moraxellaceae family and some strains of Escherichia coli, with sequence similarity ranging from 80% to identical (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "90b8745d-b021-4ed8-848c-34698c39a37c",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C12",
+      "claim": "Aeg1 is predicted to harbor a single transmembrane domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Aeg1 is predicted to harbor a single transmembrane domain, however, the precise location of this transmembrane segment has been predicted differently across various analyses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is based on computational predictions using bioinformatics tools",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "035616c9-73c2-43f2-8a31-341ab9d1f04b",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C13",
+      "claim": "Expression of the Aeg1 mutant lacking N-terminal region was unable to restore the growth of the strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, expression of the Aeg1 mutant lacking N-terminal region was unable to restore the growth of the strain (Figure 1C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "304623cc-426b-46b9-a350-379174a709d2",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C14",
+      "claim": "The N-terminal domain of Aeg1 is essential for its activity.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that N-terminal domain of Aeg1 is essential for its activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observation that the N-terminal deletion mutant cannot complement the growth defect",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "70e32eb3-cd39-48e9-bc3d-72714d356c57",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C15",
+      "claim": "Depletion of Aeg1 causes cell elongation in A. baumannii.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that depletion of Aeg1 causes cell elongation, a phenotype that had been observed in recent studies using transposon insertion sequencing (Bai et al., 2021; Pichoff et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data in the manuscript and citations to Bai et al., 2021 and Pichoff et al., 2012",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "d3119464-17ce-479d-812d-2801474d9531",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C16",
+      "claim": "In medium without ara, more than 96% of the cells of strain \u2206aeg1(PBAD::Aeg1) become elongated with cell lengths ranging from 5 \u03bcm to over 10 \u03bcm after 18 hr incubation.",
+      "claim_type": "EXPLICIT",
+      "source": "Incubation in medium without ara for 18 hr caused more than 96% of the cells to become elongated with cell lengths ranging from 5 \u03bcm to over 10 \u03bcm (Figure 2B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by quantitative data shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "1f571ba0-4ac3-40c6-bc85-21769e9fd6f5",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C17",
+      "claim": "The cell elongation phenotype caused by Aeg1 depletion can be partially reversed after growing the elongated cells in medium containing 1% ara for 4 hr.",
+      "claim_type": "EXPLICIT",
+      "source": "The phenotype can be partially reversed after growing the elongated cells in medium containing 1% ara for 4 hr (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "c6013afa-7f0e-43f3-adf2-cf0a94aab23c",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C18",
+      "claim": "Two suppressor mutants M1 and M2 derived from strain \u2206aeg1(PBAD::Aeg1) were able to grow on medium without ara at rates comparable to those of wild-type bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "In spotting assays using diluted cells, each of these two mutants derived from strain \u2206aeg1(PBAD::Aeg1) was able to grow on medium without ara at rates comparable to those of wild-type bacteria (Figure 3A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "20bc2727-c944-47c2-8485-feea94736091",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C19",
+      "claim": "Mutant M1 had 320 substitution mutations and 659 insertion\u2013deletion mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed whole-genome sequencing analysis of these two mutants, which revealed that M1 and M2 had 320 and 328 substitution mutations, respectively. In addition, 659 insertion\u2013deletion (InDel) mutations were found in M1 and 665 such mutations were associated with M2 (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole-genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "ae55c4ac-3ec9-4a7a-a4fb-216962b15e7b",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C20",
+      "claim": "Mutant M2 had 328 substitution mutations and 665 insertion\u2013deletion mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "We then performed whole-genome sequencing analysis of these two mutants, which revealed that M1 and M2 had 320 and 328 substitution mutations, respectively. In addition, 659 insertion\u2013deletion (InDel) mutations were found in M1 and 665 such mutations were associated with M2 (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole-genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "948f6cd7-3ed3-4fe7-8200-f7c803f0ec78",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C21",
+      "claim": "An E202K mutation in the cell division protein FtsA was found in both suppressor mutants M1 and M2.",
+      "claim_type": "EXPLICIT",
+      "source": "An E202K mutation caused by a G to A substitution in the first position of the codon was found in the cell division protein FtsA in both M1 and M2 (Supplementary file 2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by whole-genome sequencing data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "b7945221-4f52-4378-b6ad-aa68de84ded0",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C22",
+      "claim": "Expression of FtsAE202K allowed strain \u2206aeg1(PBAD::Aeg1) to gain the ability to grow in the absence of ara.",
+      "claim_type": "EXPLICIT",
+      "source": "Expression of FtsAE202K allowed strain \u2206aeg1(PBAD::Aeg1) to gain the ability to grow in the absence of ara.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "b6409af5-14d5-451f-a185-f49ae0a0ef9c",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C23",
+      "claim": "FtsA cannot suppress the growth defect caused by Aeg1 depletion despite being expressed at a comparable level to FtsAE202K.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, although the protein was expressed at a comparable level, FtsA cannot suppress the growth defect caused by Aeg1 depletion (Figure 3B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "5c89838f-b1fe-4d0d-8b5f-aaf4c1b2bc18",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C24",
+      "claim": "Expression of FtsAE202K in strain \u2206aeg1(PBAD::Aeg1) under conditions in which the complementation gene was not expressed displayed a morphology similar to that of wild-type bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the growth phenotypes, expression of FtsAE202K in strain \u2206aeg1(PBAD::Aeg1) under conditions in which the complementation gene was not expressed displayed a morphology similar to that of wild-type bacteria (Figure 3C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "31e4b28e-ee62-44ff-a301-6a34bde43734",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C25",
+      "claim": "FtsAR286W (FtsA*) was the first gain-of-function mutation found in E. coli, which allowed the survival of mutants lacking ZipA or FtsK.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, FtsAR286W (FtsA*) was the first gain-of-function mutation found in E. coli, which allowed the survival of mutants lacking ZipA (\u0394zipA) or FtsK (\u0394ftsK) (Berezuk et al., 2020; Bernard et al., 2007; Liu et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Berezuk et al., 2020; Bernard et al., 2007; and Liu et al., 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "134c20e9-759c-44eb-9978-f881634727c2",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C26",
+      "claim": "FtsAI143L and FtsAE124A weakly bypassed the requirement of FtsN in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, FtsAI143L(Park et al., 2021) and FtsAE124A(Geissler et al., 2003) weakly bypassed the requirement of FtsN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Park et al., 2021 and Geissler et al., 2003",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "2f0077b8-fd2b-4972-a674-88d56c89e459",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C27",
+      "claim": "Expression of FtsAD124A or FtsAV144L partially rescued the growth of strain \u2206aeg1(PBAD::Aeg1) in medium without ara.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas FtsAQ285W cannot detectably suppress Aeg1 depletion, expression of FtsAD124A or FtsAV144L partially resecured the growth of strain \u2206aeg1(PBAD::Aeg1) in medium without ara (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "e4eccb9c-849e-4c71-bb63-e7770996e738",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C28",
+      "claim": "FtsAQ285W cannot detectably suppress Aeg1 depletion.",
+      "claim_type": "EXPLICIT",
+      "source": "Whereas FtsAQ285W cannot detectably suppress Aeg1 depletion, expression of FtsAD124A or FtsAV144L partially resecured the growth of strain \u2206aeg1(PBAD::Aeg1) in medium without ara (Figure 3D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "be9552dc-1d49-4106-b31d-bcdd64d6bced",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C29",
+      "claim": "Aeg1 localized at the septum of dividing cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Fluorescence microscopy analysis revealed that Aeg1 localized at the septum of dividing cells (Figure 3E)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 3E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "ea1fafb2-7435-4976-8d44-160e5f282acc",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C30",
+      "claim": "Aeg1 interacts with ZipA, FtsK, FtsL, FtsB, and FtsN.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the tested proteins FtsZ, FtsA, ZipA, FtsK, FtsQ, FtsL, FtsB, FtsW, FtsI, and FtsN, Aeg1 detectably interacts with ZipA, FtsK, FtsL, FtsB, and FtsN.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by bacterial two-hybrid assay data shown in Figure 4A-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "1d55ff0a-6ff1-4d05-8204-51ceef1f769e",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C31",
+      "claim": "ZipA and FtsN have higher binding affinity with Aeg1 whether the T25 reporter domain was fused to the N- or C-terminus of the Aeg1 construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, ZipA and FtsN appearing to have higher binding affinity with Aeg1 whether the T25 reporter domain was fused to the N- or C-terminus of the Aeg1 construct (Figure 4A\u2013D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by bacterial two-hybrid assay data shown in Figure 4A-D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "913a8a77-0344-429a-874f-6df0fe9dee85",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C32",
+      "claim": "Aeg1 colocalized with ZipA, FtsL, FtsB, and FtsN.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with results from the protein interaction experiments using the bacterial two-hybrid assay, we found that Aeg1 colocalized with ZipA, FtsL, FtsB, and FtsN (Figure 4E, red arrows)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 4E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "52a4fff3-816d-4415-ae25-d971971a18c0",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C33",
+      "claim": "In cells depleted of Aeg1, all of the examined core division proteins displayed midcell mistargeting, including ZipA, FtsB, FtsL, and FtsN.",
+      "claim_type": "EXPLICIT",
+      "source": "In cells depleted of Aeg1, all of the examined core division proteins displayed midcell mistargeting, including ZipA, FtsB, FtsL, and FtsN (Figure 5A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by fluorescence microscopy data shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "9a3066c2-9a1d-40a1-950b-d24bbf034b33",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C34",
+      "claim": "Aeg1 is a new member of cell division protein, which plays a role in positioning several other core proteins at the septum of A. baumannii.",
+      "claim_type": "EXPLICIT",
+      "source": "These results suggest that Aeg1 is a new member of cell division protein, which plays a role in positioning several other core proteins at the septum of A. baumannii.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observation that Aeg1 depletion causes mislocalization of core division proteins",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "1ff05dfa-4d8b-4c8f-b97d-94c935e3331f",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C35",
+      "claim": "Induction of HA-FtsBE65A completely restored the growth of the \u0394aeg1 mutant in the absence of Aeg1.",
+      "claim_type": "EXPLICIT",
+      "source": "Although the expression of HA-FtsBE65A was not detectable with the HA-specific antibody, induction of this mutant completely restored the growth of the \u0394aeg1 mutant in the absence of Aeg1 (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "f17ca73a-39bb-4e92-a0f9-85f92023575e",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C36",
+      "claim": "HA-FtsBD68H cannot bypass the requirement of Aeg1.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, a similarly constructed plasmid that directs the expression of HA-FtsBD68H cannot bypass the requirement of Aeg1 under the same conditions (Figure 5B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "b09c3448-783d-44fd-b652-9735098f8a87",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C37",
+      "claim": "Expressed HA-FtsLQ70K detectably rescued bacterial growth without Aeg1 at a level considerably lower than that of FtsBE65A.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, expressed HA-FtsLQ70K detectably rescued bacterial growth without Aeg1 at a level considerably lower than that of FtsBE65A (Figure 5C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "7f69bdc6-1297-40c5-8bb7-c47496833fb3",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C38",
+      "claim": "Overexpression of FtsWM254I and FtsWS274G of A. baumannii detectably rescued the growth of the strain in which Aeg1 had been depleted.",
+      "claim_type": "EXPLICIT",
+      "source": "Overexpression of FtsWM254I and FtsWS274G of A. baumannii detectably rescued the growth of the strain in which Aeg1 had been depleted (Figure 5D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "f716005e-07f7-41d0-955a-ce86cdc83b74",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C39",
+      "claim": "Aeg1 may collaborate with FtsN to activate at least a part of FtsQLB and FtsA for subsequently activation of FtsWI during cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, our results demonstrate that Aeg1 may collaborate with FtsN to activate at least a part of FtsQLB and FtsA for subsequently activation of FtsWI during cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the experimental observations that constitutively active mutants of FtsQLB, FtsA, and FtsW can bypass the requirement of Aeg1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "3b2e2eb3-922e-4eee-b7fe-6af9de45c3bc",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C40",
+      "claim": "The Aeg1\u2013FtsN complex is involved in the activation of FtsQLB and FtsA.",
+      "claim_type": "EXPLICIT",
+      "source": "Together with results that the variant FtsAE202K suppressed the growth defect caused by aeg1 depletion (Figure 3B), these observations support a model in which the Aeg1\u2013FtsN complex is involved in the activation of FtsQLB and FtsA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from multiple experimental observations including suppression by FtsAE202K and constitutively active mutants of FtsQLB",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "109b41f7-66df-48cf-bcf4-1ecc18ebaf5d",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C41",
+      "claim": "From 10 putative essential genes identified by In-seq, three previously annotated as hypotheticals are essential for A. baumannii viability.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a conditional gene deletion method, we have revealed that from 10 putative essential genes identified by this method, three previously annotated as hypotheticals are essential for A. baumannii viability",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data from conditional gene deletion experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "43557174-93e6-4acd-96ba-b4fd2baadb6d",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C42",
+      "claim": "Assignment of essentiality to genes identified by In-seq methods needs to be individually verified.",
+      "claim_type": "EXPLICIT",
+      "source": "suggesting that assignment of essentiality to genes identified by methods of this kind needs to be individually verified.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that only 3 out of 10 tested genes were confirmed to be essential",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "31da0186-bc37-4990-9473-560f0e550cc4",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C43",
+      "claim": "The assignment of aeg1 as an essential gene is consistent with a recent study which revealed its essentiality (termed advA) by transposon insertion sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "Our assignment of aeg1 as an essential gene is consistent with a recent study which revealed its essentiality (termed advA) by transposon insertion sequencing, which also observed cell elongation upon the depletion of this gene (Pichoff et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Pichoff et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "476516f8-2d68-4ef5-acd8-363ec16a0016",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C44",
+      "claim": "Over 30 distinct proteins are assembled into the bacterial divisome.",
+      "claim_type": "EXPLICIT",
+      "source": "In the process of bacterial cell division, over 30 distinct proteins are assembled into a complex typically referred to as 'divisome' (Haeusser and Margolin, 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Haeusser and Margolin, 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "271bbe69-d379-412f-a226-bdc757e3cf22",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C45",
+      "claim": "Ten proteins are normally essential for both cell division and survival, and they are now mainly suggested to be the core of the divisome in various bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "Ten of these are normally essential for both cell division and survival, and they are now mainly suggested to be the core of the divisome in various bacteria (Haeusser and Margolin, 2016; Lutkenhaus, 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Haeusser and Margolin, 2016 and Lutkenhaus, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "40a566a7-92c5-4eb6-8146-01fe37b99c83",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C46",
+      "claim": "The FtsQLB complex serves as a scaffold for recruitment of subsequent divisome proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the FtsQLB complex not only serves as a scaffold for recruitment of subsequent divisome proteins (Guzman et al., 1997; Craven et al., 2024)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Guzman et al., 1997 and Craven et al., 2024",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "3ce3f9a0-1a66-4562-aa70-b4f2f19d58ed",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C47",
+      "claim": "The FtsQLB complex plays an important role in regulating the activity of the divisome.",
+      "claim_type": "EXPLICIT",
+      "source": "Among these, the FtsQLB complex not only serves as a scaffold for recruitment of subsequent divisome proteins (Guzman et al., 1997; Craven et al., 2024), but also plays an important role in regulating the activity of the divisome (Park et al., 2021; Park et al., 2020)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Park et al., 2021 and Park et al., 2020",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "5e667433-01bd-4cee-8a88-bc25ab4ab82d",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C48",
+      "claim": "The constriction control domain (CCD) of FtsL is a critical component for switching the conformation of FtsLB from an off to an on state in order to activate FtsWI.",
+      "claim_type": "EXPLICIT",
+      "source": "The constriction control domain (CCD) of FtsL was previously defined as a critical component for switching the conformation of FtsLB from an off to an on state in order to activate FtsWI by enabling the interaction between FtsIperi and the AWI (activation of FtsWI) region of FtsL (Park et al., 2021; Park et al., 2020; S\u00e1nchez et al., 1994)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Park et al., 2021; Park et al., 2020; and S\u00e1nchez et al., 1994",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "d67ce103-583a-417c-bda7-249c9f970d87",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C49",
+      "claim": "Aeg1 functions upstream of FtsB and FtsW.",
+      "claim_type": "IMPLICIT",
+      "source": "Division obstruction caused by Aeg1 depletion can be effectively circumvented by suppression mutations (FtsBE65A) in its CCD domain and by activation mutations (M254I and S274G) of FtsW (Figure 5D), suggesting that Aeg1 functions upstream of these proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that constitutively active mutants of FtsB and FtsW can bypass the requirement of Aeg1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "8d84cb71-e801-4701-a3c6-3d932662d791",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C50",
+      "claim": "The constitutively active form of FtsA (FtsA*) acts on FtsW in the cytoplasm.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to FtsQLB-mediated activation of FtsI in the periplasm, the constitutively active form of FtsA (FtsA*) acting on FtsW in the cytoplasm, these two events functions synergistically to activate FtsWI for sPG synthesis (Karimova et al., 1998)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Karimova et al., 1998",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "00e8b6ba-5966-486d-8a2b-c1b6601ba181",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C51",
+      "claim": "FtsA is a member of the actin family.",
+      "claim_type": "EXPLICIT",
+      "source": "FtsA is a member of the actin family (van den Ent and L\u00f6we, 2000; Szwedziak et al., 2012)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to van den Ent and L\u00f6we, 2000 and Szwedziak et al., 2012",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "4d9d5cea-dd39-4f8e-aa2e-5e2defc231fa",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C52",
+      "claim": "FtsA interacts with FtsN via a unique IC domain positioned between the IA and IIA domains.",
+      "claim_type": "EXPLICIT",
+      "source": "which interacts with FtsN via a unique IC domain positioned between the IA and IIA domains (Baranova et al., 2020; Pichoff et al., 2015; Goehring and Beckwith, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Baranova et al., 2020; Pichoff et al., 2015; and Goehring and Beckwith, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "3f17d7eb-fb1f-4501-8f5e-9de04fd5fcf8",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C53",
+      "claim": "The E202K mutation in the IIA domain of FtsA bypasses the requirement of Aeg1 by A. baumannii.",
+      "claim_type": "EXPLICIT",
+      "source": "That the E202K mutation in the IIA domain bypasses the requirement of Aeg1 by A. baumannii (Figure 3B) suggests that Aeg1 and FtsA work together to activate FtsW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 3B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "cb39b85a-ea13-4511-b4c7-a659115ad1fb",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C54",
+      "claim": "Aeg1 and FtsA work together to activate FtsW.",
+      "claim_type": "IMPLICIT",
+      "source": "That the E202K mutation in the IIA domain bypasses the requirement of Aeg1 by A. baumannii (Figure 3B) suggests that Aeg1 and FtsA work together to activate FtsW.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that the FtsAE202K mutation can bypass the requirement of Aeg1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "a79d18a4-efa6-4adc-b612-5acfbd13a313",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C55",
+      "claim": "The maturation of the core divisome is facilitated by the recruitment in a nearly sequential order of the late-division proteins FtsK, FtsQ, FtsL/FtsB, FtsW, FtsI, and FtsN.",
+      "claim_type": "EXPLICIT",
+      "source": "The maturation of the core divisome is facilitated by the recruitment in a nearly sequential order of the late-division proteins FtsK, FtsQ, FtsL/FtsB, FtsW, FtsI, and FtsN (Du et al., 2019; Addinall et al., 1997; Lyu et al., 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Du et al., 2019; Addinall et al., 1997; and Lyu et al., 2022",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "ee90e5fe-770c-41ee-9623-e5e11dd4ace0",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C56",
+      "claim": "Once FtsN is recruited, division-specific peptidoglycan synthesis conferred by the FtsWI complex is activated to build the septum.",
+      "claim_type": "EXPLICIT",
+      "source": "Once the latest division protein, FtsN, is recruited, division-specific peptidoglycan synthesis conferred by the FtsWI complex is activated to build the septum (Lyu et al., 2022; Weiss, 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Lyu et al., 2022 and Weiss, 2015",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "09675a37-d063-4606-b546-244324890771",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C57",
+      "claim": "By binding to FtsA, a small amount of FtsN is recruited to the division site earlier than previously thought.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent studies suggest that by binding to FtsA, a small amount of FtsN is recruited to the division site earlier than previously thought (Park et al., 2021; Goehring and Beckwith, 2005; Piehaud and Second, 1951)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by citations to Park et al., 2021; Goehring and Beckwith, 2005; and Piehaud and Second, 1951",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "b10fd5fb-5048-42b5-9bbb-b8d89077ec7f",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C58",
+      "claim": "FtsN induces a conformational switch in both FtsA and the FtsQLB subcomplex on both sides of the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "More recent studies suggest that by binding to FtsA, a small amount of FtsN is recruited to the division site earlier than previously thought (Park et al., 2021; Goehring and Beckwith, 2005; Piehaud and Second, 1951) where it induces a conformational switch in both FtsA and the FtsQLB subcomplex on both sides of the membrane (Park et al., 2021)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Park et al., 2021",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "c085324f-f709-40f7-af92-953d77b3c864",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C59",
+      "claim": "Binding between FtsA and FtsN is regulated by ZipA.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, binding between FtsA and FtsN is regulated by ZipA (Goehring and Beckwith, 2005)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to Goehring and Beckwith, 2005",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "68e932e9-4ac0-4eac-b0fe-82cb973133b7",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C60",
+      "claim": "Aeg1 participates in cell division by anchoring to the division site together with ZipA where it recruits FtsN, which in turn signals to both the cytoplasmic and periplasmic branches of peptidoglycan synthesis involving FtsA and the FtsQLB complex, respectively.",
+      "claim_type": "IMPLICIT",
+      "source": "Our observation of strong binding of Aeg1 to ZipA and FtsN (Figure 4A\u2013D) prompted us to propose a model in which Aeg1 participates in cell division by anchoring to the division site together with ZipA where it recruits FtsN, which in turn signals to both the cytoplasmic and periplasmic branches of peptidoglycan synthesis involving FtsA and the FtsQLB complex, respectively (Park et al., 2021; Figure 6A)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is a proposed model based on the experimental observations of protein interactions and suppression by constitutively active mutants",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "874ed4f6-c39a-48da-82f7-eb35f9fbd5a5",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C61",
+      "claim": "Aeg1 is one of the early arrivals in the hierarchical sequential assembly of the divisome.",
+      "claim_type": "IMPLICIT",
+      "source": "The placement of Aeg1 as one of the early arrivals in the hierarchical sequential assembly of the divisome is consistent with the fact that the requirement of Aeg1 can be bypassed by constitutively active mutants of FtsAE202K (Figure 3), FtsB (FtsBE65A), FtsL (FtsLQ70K), and of FtsW (FtsWM254I and FtsWS274G) (Figure 5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is inferred from the observation that constitutively active mutants of downstream proteins can bypass the requirement of Aeg1",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "2c463a27-3000-4fbc-8eab-19b604a6109b",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C62",
+      "claim": "Homologs of Aeg1 are present in many Gram-negative bacteria, including some recent isolate of E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that that although homologs of Aeg1 are present in many Gram-negative bacteria, including some recent isolate of E. coli, it appears to be absent in more extensively studied model strains such as K12 (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "7a800de4-87e8-4dde-b82c-90625359ddce",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C63",
+      "claim": "Aeg1 appears to be absent in E. coli K12.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that that although homologs of Aeg1 are present in many Gram-negative bacteria, including some recent isolate of E. coli, it appears to be absent in more extensively studied model strains such as K12 (Figure 1\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence analysis data shown in Figure 1\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "c5d87446-05bc-4ea5-b883-ab663a29dcfc",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C64",
+      "claim": "In E. coli K12, the activity of Aeg1 may be conferred by a yet unidentified protein that employs a conserved mechanism in cell division.",
+      "claim_type": "IMPLICIT",
+      "source": "It is possible that in strain K12, its activity is conferred by a yet unidentified protein that employs a conserved mechanism in cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about how E. coli K12 might compensate for the absence of Aeg1",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "fff42084-cc14-4d6f-a468-b32dba11bd49",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C65",
+      "claim": "Aeg1 interacts with multiple cell division proteins, including FtsN, which is required for components of the divisome to localize to the midcell.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results reveal that the protein, termed Aeg1 interacts with multiple cell division proteins, including FtsN, which is required for components of the divisome to localize to the midcell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by bacterial two-hybrid and colocalization data presented in the manuscript",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "7f2fb69c-7af7-4348-9fec-e849a232f7b4",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C66",
+      "claim": "The FtsAE202K and FtsBE65A mutants effectively bypassed the need of Aeg1 by A. baumannii.",
+      "claim_type": "EXPLICIT",
+      "source": "We demonstrate that the FtsAE202K and FtsBE65A mutants effectively bypassed the need of Aeg1 by A. baumannii",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figures 3B and 5B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "3afd713f-e39e-4014-8418-e13dfa252188",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C67",
+      "claim": "The activation variants FtsWM254I and FtsWS274G bypassed the need of Aeg1 by A. baumannii.",
+      "claim_type": "EXPLICIT",
+      "source": "as did the activation variants FtsWM254I and FtsWS274G.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "a291c500-728c-4f1b-b277-7be4e23b44a2",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C68",
+      "claim": "Aeg1 is a cell division protein that arrives at the division site to initiate cell division by recruiting FtsN, which activates FtsQLB and FtsA to induce the septal peptidoglycan synthase FtsWI.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that Aeg1 is a cell division protein that arrives at the division site to initiate cell division by recruiting FtsN, which activates FtsQLB and FtsA to induce the septal peptidoglycan synthase FtsWI.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a proposed model based on multiple experimental observations including protein interactions, localization, and suppression by constitutively active mutants",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "1ede84fc-9e34-435f-949d-6ddadba261fa",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C69",
+      "claim": "The discovery of the new essential cell division protein has provided a new target for the development of antibacterial agents.",
+      "claim_type": "EXPLICIT",
+      "source": "The discovery of the new essential cell division protein has provided a new target for the development of antibacterial agents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is speculative reasoning about the potential application of the discovery",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "fd2c580f-b243-4ded-949f-8cb4139a81e7",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C70",
+      "claim": "All A. baumannii strains used in this study were derivatives of strain ATCC17978.",
+      "claim_type": "EXPLICIT",
+      "source": "All A. baumannii strains were derivatives of strain ATCC17978 (Yildirim et al., 2016)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is a statement about the materials used in the study, supported by a citation to Yildirim et al., 2016",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "662b179a-5d00-44e5-9f5c-c77818c85198",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C71",
+      "claim": "Removal of arabinose for 6 hr rendered Aeg1-mCherry undetectable in approximately 90% of the cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, we found that removal of arabinose for 6 hr rendered Aeg1-mCherry undetectable in approximately 90% of the cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by experimental data shown in Figure 5\u2014figure supplement 1",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "3c022320-8cd1-4188-88f0-e237d5edb7d8",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C72",
+      "claim": "Expression of mutants FtsIK211I, FtsWM269I, and FtsWE289G driven by a strong promoter can bypass the need of FtsN in E. coli.",
+      "claim_type": "EXPLICIT",
+      "source": "It is known that expression of mutants FtsIK211I, FtsWM269I, and FtsWE289G driven by a strong promoter can bypass the need of FtsN in E. coli (de Boer, 2010)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The claim is supported by a citation to de Boer, 2010",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "99420e31-f405-45f9-a3cd-f95455b37e77",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "claim_id": "C73",
+      "claim": "FtsI from A. baumannii does not have a residue corresponding to K211 of its E. coli counterpart.",
+      "claim_type": "EXPLICIT",
+      "source": "FtsI from A. baumannii does not have a residue corresponding to K211 of its E. coli counterpart (Figure 5\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by sequence alignment data shown in Figure 5\u2014figure supplement 2",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7f817e02-8a5b-430e-aabb-f557acd36ae3",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors validated the essentiality of three genes (A1S_0137, A1S_2249, and A1S_3387/Aeg1) from 10 candidate essential genes identified by In-seq, using conditional gene deletion. Only 3 out of 10 tested genes were confirmed essential, suggesting that In-seq predictions require individual verification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C10 and C41 provide experimental validation using conditional deletion showing that 3/10 genes are essential on rich medium, with Aeg1 also essential on minimal medium. Claim C42's inference that In-seq predictions need verification is logically supported by the 30% validation rate. The experimental approach is sound and data are presented in Figure 1B.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "88697b94-38bb-4722-aa9e-7e3893009baa",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Aeg1 has orthologs in multiple Gram-negative bacteria with 80-100% sequence similarity and contains a predicted transmembrane domain. The N-terminal region of Aeg1 is essential for its activity, as deletion of this region abolishes complementation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C14 are supported by sequence analysis (Figure 1\u2014figure supplement 2) and functional complementation experiments (Figure 1C). The N-terminal deletion mutant's inability to restore growth provides clear evidence for the essentiality of this domain. However, the precise transmembrane topology remains ambiguous across prediction tools.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "54a1568d-3f3d-4d97-a49c-910cdc31d0eb",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Depletion of Aeg1 causes cell elongation in A. baumannii, with >96% of cells becoming 5-10+ \u03bcm in length after 18 hr without arabinose. This phenotype is partially reversible upon re-induction of Aeg1 expression.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C15-C17 are well-supported by quantitative microscopy data (Figure 2A-C) showing dramatic cell elongation upon Aeg1 depletion and partial rescue upon re-induction. The phenotype is consistent with prior transposon sequencing studies (C15 cites Bai et al., 2021; Pichoff et al., 2012), providing independent validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "6e194a2e-42fc-4ece-9068-99911e43e2e8",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Suppressor mutants M1 and M2 that bypass Aeg1 requirement both carry an E202K mutation in FtsA. Expression of FtsAE202K, but not wild-type FtsA, suppresses the growth defect and restores normal cell morphology in Aeg1-depleted strains.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C18-C24 are supported by whole-genome sequencing identifying the common FtsAE202K mutation (C19-C21), complementation experiments (Figure 3B), and morphology analysis (Figure 3C). The specificity of suppression by FtsAE202K versus wild-type FtsA (C22-C23) strengthens the conclusion that this is a gain-of-function mutation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "aec3c87f-e59f-4769-8a39-aec525882ba8",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "FtsA mutants D124A and V144L (corresponding to E. coli bypass mutants) partially rescue Aeg1 depletion, while FtsAQ285W (corresponding to E. coli FtsA*) does not detectably suppress.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C27-C28 are supported by growth assays (Figure 3D), but the authors note they could not detect protein expression of these mutants by immunoblotting. The low/undetectable activity may result from low protein levels rather than lack of suppression capability, making the functional interpretation uncertain.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "1111da18-7530-4663-882a-fecd00f723e7",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Aeg1 localizes to the septum of dividing cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C29 is supported by fluorescence microscopy showing Aeg1-mCherry fusion at division sites (Figure 3E). The functionality of the fusion was validated by its ability to complement chromosomal deletion (Figure 4\u2014figure supplement 1B).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "cc265cce-9d59-440c-b723-0480899622f6",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Aeg1 interacts with multiple divisome proteins (ZipA, FtsK, FtsL, FtsB, FtsN) as shown by bacterial two-hybrid assays, with strongest interactions observed with ZipA and FtsN. Colocalization studies confirm that Aeg1 colocalizes with ZipA, FtsL, FtsB, and FtsN at the septum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C32 are supported by bacterial two-hybrid data (Figure 4A-D) showing interactions with multiple Fts proteins, with quantitative \u03b2-galactosidase assays confirming strongest binding to ZipA and FtsN. Colocalization microscopy (Figure 4E) provides independent validation, though occasional non-colocalization is noted.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "5030983f-310b-4e68-a553-b356880d49af",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Depletion of Aeg1 causes mislocalization of core divisome proteins (ZipA, FtsB, FtsL, FtsN) from the midcell, suggesting Aeg1 is required for proper positioning of these proteins at the septum.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C34 are supported by fluorescence microscopy showing mislocalization of all examined divisome proteins upon Aeg1 depletion (Figure 5A). Claim C71 validates that Aeg1-mCherry is undetectable in ~90% of cells after 6 hr arabinose withdrawal, confirming effective depletion. The inference that Aeg1 positions these proteins (C34) is reasonable given the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "d54e5bc1-df15-4990-b9aa-48fa1e2ba17c",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Constitutively active FtsB mutant (FtsBE65A) completely bypasses Aeg1 requirement, while FtsBD68H does not. FtsLQ70K provides partial rescue at lower levels than FtsBE65A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C35-C37 show differential suppression by FtsB/FtsL mutants (Figure 5B-C). However, the authors note that HA-FtsBE65A expression was not detectable by immunoblotting despite complete rescue (C35), and FtsLQ70K showed low activity with undetectable protein (C37). The inability to detect protein expression raises concerns about whether the observed effects are due to the intended mutations or other factors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "b6d69fa9-6962-4ffc-98d5-99f2b44cab20",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Constitutively active FtsW mutants (FtsWM254I and FtsWS274G) bypass Aeg1 requirement. FtsI from A. baumannii lacks the residue corresponding to E. coli K211, so this mutation was not tested.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C38 is supported by growth assays (Figure 5D) showing rescue by FtsW mutants. Claim C73 is supported by sequence alignment (Figure 5\u2014figure supplement 2) showing absence of the corresponding K211 residue. The logic for not testing FtsI mutations is sound given the sequence divergence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "1dc546f8-aacc-4ff8-b4d9-3dd166ff83fa",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Aeg1 functions upstream of FtsQLB, FtsA, and FtsW, likely collaborating with FtsN to activate these components for subsequent activation of the FtsWI peptidoglycan synthase complex during cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C40 and C49, C54 present a model supported by the genetic epistasis data: constitutively active mutants of downstream components (FtsA, FtsB, FtsL, FtsW) bypass Aeg1 requirement, placing Aeg1 upstream. The strong interaction between Aeg1 and FtsN (C30-C31) and the ability of FtsAE202K to suppress (C22) support the proposed Aeg1-FtsN-FtsQLB/FtsA pathway.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "6b170f3b-fe9e-4e8d-ab88-0358b94a6e01",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors propose a model where Aeg1 is an early-arriving divisome component that anchors with ZipA at the division site to recruit FtsN, which then activates FtsQLB and FtsA to induce the septal peptidoglycan synthase FtsWI.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C61 and C68 present a mechanistic model that integrates multiple lines of evidence: Aeg1 localization (C29), strong interactions with ZipA and FtsN (C30-C31), requirement for divisome protein localization (C33), and genetic suppression by constitutively active downstream mutants (C35-C38). While speculative, the model is well-supported by the experimental data and consistent with known divisome assembly mechanisms.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "ac1a9946-1440-4a7e-a7c2-d7da58bcc37b",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Aeg1 homologs are present in many Gram-negative bacteria but absent from E. coli K12. The authors speculate that K12 may have an unidentified functional equivalent employing a conserved mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C63 are supported by sequence analysis (Figure 1\u2014figure supplement 2) showing Aeg1 homologs in various bacteria but not in E. coli K12. Claim C64 is explicitly speculative, appropriately acknowledging uncertainty about how K12 compensates for Aeg1 absence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "bf40d3bc-466c-4289-8edf-f4a8f91a8225",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The essentiality of Aeg1 is consistent with a recent transposon insertion sequencing study that identified the same gene (termed advA) and observed cell elongation upon depletion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C43 is supported by citation to Pichoff et al., 2012, providing independent validation of Aeg1 essentiality and the cell elongation phenotype from a different methodological approach.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "0a645829-10ce-4afc-89e8-1d693d4198be",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Aeg1 interacts with multiple cell division proteins including FtsN and is required for divisome component localization. Constitutively active mutants FtsAE202K, FtsBE65A, FtsWM254I, and FtsWS274G bypass Aeg1 requirement.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C67 summarize key findings supported by bacterial two-hybrid assays (C30-C31), localization studies (C33), and suppression experiments (C22, C35, C38). These are well-documented throughout the manuscript with multiple independent lines of evidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "564857c5-ba47-4ca6-8a46-154b865ccb80",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The discovery of Aeg1 as a new essential cell division protein provides a potential target for antibacterial agent development.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C69 is speculative about future applications. While Aeg1 is demonstrated to be essential (C8-C10), no data are presented on druggability, target validation in infection models, or whether inhibiting Aeg1 would be therapeutically viable. The claim is aspirational rather than evidence-based.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "92059248-005a-4818-a79d-8eae130f30c2",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background claims establishing A. baumannii as a clinically important pathogen with antibiotic resistance, the historical context of antibiotic discovery from soil bacteria, and prior In-seq identification of essential genes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C7 are background/context claims supported by appropriate citations to the literature. These establish the rationale for studying A. baumannii essential genes but are not novel findings of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "Background claims about known divisome components, FtsA gain-of-function mutations in E. coli, and the established roles of FtsQLB, FtsA, FtsN, and FtsWI in bacterial cell division.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C26 and C44-C59, C72 are literature-based background claims appropriately cited to establish context for interpreting the Aeg1 findings. These are not novel results but provide the framework for understanding Aeg1's role in the divisome.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "514dd21a-8d9f-4dd4-8a8b-ad8db5c4ea76",
+      "content_id": "17951923-c8ae-41e5-b932-c33a60955937",
+      "result_id": "R19",
+      "result_category": "llm",
+      "result": "All A. baumannii strains used were derivatives of ATCC17978.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 is a methodological statement about strain background, appropriately cited and important for reproducibility.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "2b0190bb-5175-4858-a283-99f4a934394e",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors tested 10 putative essential genes identified by In-seq and confirmed that three genes (A1S_0137, A1S_2249, and A1S_3387/Aeg1) are essential for A. baumannii viability on rich medium, with Aeg1 also essential on minimal medium. This led to the conclusion that essentiality assignments from In-seq require individual verification.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the confirmation of Aeg1 as an essential gene and do not challenge the validation approach or the conclusion that only 3 of 10 tested genes were confirmed essential. The editor states 'the authors confirm that one of the genes classified as essential in a Tn-mutagenesis study in A. baumannii, Aeg1, is, in fact, an essential gene.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "3a6c0262-425d-4f36-ba4c-e1136e9eec7d",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Depletion of Aeg1 causes cell elongation/filamentation in A. baumannii, with >96% of cells becoming elongated (5-10+ \u03bcm) after 18 hr without arabinose, and this phenotype can be partially reversed by re-addition of arabinose.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly acknowledge this finding as a strength. The editor states 'the strength of the work is the discovery that the depletion of Aeg1 leads to cell filamentation' and the anonymous reviewer similarly notes 'the strength of the work is that it discovered that the depletion of Aeg1 leads to cell filamentation.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "8528a900-067c-4215-bb48-826837da3e25",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Suppressor mutants M1 and M2 that can grow without Aeg1 both carry an E202K mutation in FtsA. Expression of FtsAE202K, but not wild-type FtsA, suppresses the growth defect and restores normal cell morphology in Aeg1-depleted strains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this as a key finding. The editor notes 'gain-of-function mutations in cell division genes FtsB and FtsL rescue the lethality of Aeg1 depletion' and the anonymous reviewer states 'activation mutations in various cell division genes can suppress the requirement for Aeg1.' The FtsAE202K suppression is not specifically challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "c3ec0de6-9745-4b99-aafa-ab6f1ca3c3bc",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "FtsA variants D124A and V144L partially rescue growth of Aeg1-depleted strains, while FtsAQ285W cannot detectably suppress Aeg1 depletion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "The reviewer explicitly challenges this claim, stating 'the spotting rescue assay showed that only FtsB-E56A and FtsA-E202K was able to bypass Aeg1 depletion (full dilution set comparable to that of Aeg1 complementation), but the main text claimed that FtsA-D124A and V144L...also rescued the growth. These claims could be misleading.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "2e588afd-ee30-4141-b496-2d637e9eff33",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Aeg1 localizes to the septum of dividing cells as shown by fluorescence microscopy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raise significant concerns about localization data quality and functionality of fusion proteins. The editor states 'Aeg1's localization pattern...require further characterization of the functionality of fluorescent fusion proteins, fluorescence images of higher quality.' The reviewer notes 'fluorescent images of these fusion proteins were diffusive, and only a few cells showed the expected midcell/membrane localization pattern' and suggests fusion proteins may be cleaved, requiring Western blot validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "0eb12438-f931-4649-bacd-f0358e8993ad",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Aeg1 interacts with multiple divisome proteins (ZipA, FtsK, FtsL, FtsB, FtsN) in bacterial two-hybrid assays, with ZipA and FtsN showing higher binding affinity regardless of T25 fusion orientation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The reviewer challenges the strength of these interactions, stating 'In the two-hybrid assay, only ZipA and FtsN showed significant interactions with Aeg1, as judged by the darkness of the blue spots. FtsL and FtsB showed pale spots. The quantified values accompanying this figure did not appear to agree with the image.' Additionally, concerns about membrane topology of ZipA in the assay are raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "e03d635f-4e81-498d-b916-4f61724b60a4",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Aeg1 colocalizes with ZipA, FtsL, FtsB, and FtsN at the division site.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express serious concerns about colocalization data. The reviewer states 'Colocalization images did not show significant midcell localizations for each fluorescent protein; most cells showed diffusive cytoplasmic fluorescence' and notes 'In all other species, midcell localization of cell division proteins is prominent in dividing cells, especially for early division proteins such as ZipA (at least 40-50% of cells show midcell bands).' Concerns about protein aggregates versus functional localization are raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "cecd7578-0bea-4aa5-8f1f-69fa5d0ac100",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "In Aeg1-depleted cells, core division proteins (ZipA, FtsB, FtsL, FtsN) display midcell mistargeting, suggesting Aeg1 plays a role in positioning these proteins at the septum.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor states 'it is unclear whether proteins are at the division site under the wildtype condition and when Aeg1 is depleted, and whether Aeg1 is indeed required for a set of division proteins to the division site.' The reviewer notes the paradox that 'in Aeg1 depletion strains, some cells...showed roughly regularly spaced puncta in long filamentous cells. It is hard to explain why this was observed if, under the WT condition, these fusions do not localize to the midcell.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "f833683f-e54f-4d0b-8934-a19a8bd5132b",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Constitutively active mutants of FtsB (FtsBE65A) and FtsL (FtsLQ70K) can bypass the requirement for Aeg1, with FtsBE65A showing complete rescue and FtsLQ70K showing partial rescue, while FtsBD68H cannot suppress.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge suppression by gain-of-function mutants as a strength, the anonymous reviewer specifically challenges the extent of rescue, stating 'the spotting rescue assay showed that only FtsB-E56A and FtsA-E202K was able to bypass Aeg1 depletion (full dilution set comparable to that of Aeg1 complementation),' suggesting FtsL rescue may be overstated.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "f3374edb-e2bb-46f9-9d85-1fdb84728b47",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Overexpression of FtsW activation mutants (FtsWM254I and FtsWS274G) detectably rescues growth of Aeg1-depleted strains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNSUPPORTED",
+      "evaluation": "The reviewer explicitly challenges this claim, stating 'the spotting rescue assay showed that only FtsB-E56A and FtsA-E202K was able to bypass Aeg1 depletion (full dilution set comparable to that of Aeg1 complementation), but the main text claimed that...FtsW-M254I and S274G also rescued the growth. These claims could be misleading.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "The authors propose a model in which Aeg1 functions as an early-arriving divisome component that collaborates with FtsN to activate FtsQLB and FtsA, which subsequently activate FtsWI for septal peptidoglycan synthesis. This model is based on suppression by constitutively active mutants and protein interaction data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor concludes 'the critical role of Aeg1 in the assembly of the A. baumannii divisome has yet to be established unambiguously' and 'the work's weakness is that it lacks convincing evidence to define Aeg1's place or role in the divisome assembly pathway.' While suppression data support an upstream role, the localization and interaction data underlying the specific mechanistic model are questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "bf9883e8-4fc7-4d11-8e8f-28e9b0d60e05",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Aeg1 has orthologs in many Gram-negative bacteria including Klebsiella pneumoniae, Salmonella enterica, Moraxellaceae, and some E. coli strains (80-100% identity), but appears absent in E. coli K12.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge the sequence analysis or distribution of Aeg1 orthologs. This bioinformatic finding is presented as context and is not disputed.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "41f6b5de-efed-4ae6-bda2-010ee4734808",
+      "content_id": "8ea2e224-1e9d-4e67-9777-c32954c94621",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The N-terminal domain of Aeg1 is essential for its activity, as an N-terminal deletion mutant cannot restore growth.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this finding. The result from C-terminal fusion constructs that still show activity (C31) actually supports the interpretation that the N-terminus is functionally important, which the reviewer acknowledges positively.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "55c4b385-0574-47f0-9cbb-cfedc0e37780",
+      "result_id": "7f817e02-8a5b-430e-aabb-f557acd36ae3"
+    },
+    {
+      "claim_id": "8fc6a98f-b527-4041-a2f0-dc9c1610a562",
+      "result_id": "7f817e02-8a5b-430e-aabb-f557acd36ae3"
+    },
+    {
+      "claim_id": "f700a3d9-3012-4381-937f-4dccbecbbd0f",
+      "result_id": "7f817e02-8a5b-430e-aabb-f557acd36ae3"
+    },
+    {
+      "claim_id": "109b41f7-66df-48cf-bcf4-1ecc18ebaf5d",
+      "result_id": "7f817e02-8a5b-430e-aabb-f557acd36ae3"
+    },
+    {
+      "claim_id": "43557174-93e6-4acd-96ba-b4fd2baadb6d",
+      "result_id": "7f817e02-8a5b-430e-aabb-f557acd36ae3"
+    },
+    {
+      "claim_id": "49bf1b75-8d1b-4665-9990-bb09c52d8126",
+      "result_id": "88697b94-38bb-4722-aa9e-7e3893009baa"
+    },
+    {
+      "claim_id": "90b8745d-b021-4ed8-848c-34698c39a37c",
+      "result_id": "88697b94-38bb-4722-aa9e-7e3893009baa"
+    },
+    {
+      "claim_id": "035616c9-73c2-43f2-8a31-341ab9d1f04b",
+      "result_id": "88697b94-38bb-4722-aa9e-7e3893009baa"
+    },
+    {
+      "claim_id": "304623cc-426b-46b9-a350-379174a709d2",
+      "result_id": "88697b94-38bb-4722-aa9e-7e3893009baa"
+    },
+    {
+      "claim_id": "70e32eb3-cd39-48e9-bc3d-72714d356c57",
+      "result_id": "54a1568d-3f3d-4d97-a49c-910cdc31d0eb"
+    },
+    {
+      "claim_id": "d3119464-17ce-479d-812d-2801474d9531",
+      "result_id": "54a1568d-3f3d-4d97-a49c-910cdc31d0eb"
+    },
+    {
+      "claim_id": "1f571ba0-4ac3-40c6-bc85-21769e9fd6f5",
+      "result_id": "54a1568d-3f3d-4d97-a49c-910cdc31d0eb"
+    },
+    {
+      "claim_id": "c6013afa-7f0e-43f3-adf2-cf0a94aab23c",
+      "result_id": "6e194a2e-42fc-4ece-9068-99911e43e2e8"
+    },
+    {
+      "claim_id": "20bc2727-c944-47c2-8485-feea94736091",
+      "result_id": "6e194a2e-42fc-4ece-9068-99911e43e2e8"
+    },
+    {
+      "claim_id": "ae55c4ac-3ec9-4a7a-a4fb-216962b15e7b",
+      "result_id": "6e194a2e-42fc-4ece-9068-99911e43e2e8"
+    },
+    {
+      "claim_id": "948f6cd7-3ed3-4fe7-8200-f7c803f0ec78",
+      "result_id": "6e194a2e-42fc-4ece-9068-99911e43e2e8"
+    },
+    {
+      "claim_id": "b7945221-4f52-4378-b6ad-aa68de84ded0",
+      "result_id": "6e194a2e-42fc-4ece-9068-99911e43e2e8"
+    },
+    {
+      "claim_id": "b6409af5-14d5-451f-a185-f49ae0a0ef9c",
+      "result_id": "6e194a2e-42fc-4ece-9068-99911e43e2e8"
+    },
+    {
+      "claim_id": "5c89838f-b1fe-4d0d-8b5f-aaf4c1b2bc18",
+      "result_id": "6e194a2e-42fc-4ece-9068-99911e43e2e8"
+    },
+    {
+      "claim_id": "2f0077b8-fd2b-4972-a674-88d56c89e459",
+      "result_id": "aec3c87f-e59f-4769-8a39-aec525882ba8"
+    },
+    {
+      "claim_id": "e4eccb9c-849e-4c71-bb63-e7770996e738",
+      "result_id": "aec3c87f-e59f-4769-8a39-aec525882ba8"
+    },
+    {
+      "claim_id": "be9552dc-1d49-4106-b31d-bcdd64d6bced",
+      "result_id": "1111da18-7530-4663-882a-fecd00f723e7"
+    },
+    {
+      "claim_id": "ea1fafb2-7435-4976-8d44-160e5f282acc",
+      "result_id": "cc265cce-9d59-440c-b723-0480899622f6"
+    },
+    {
+      "claim_id": "1d55ff0a-6ff1-4d05-8204-51ceef1f769e",
+      "result_id": "cc265cce-9d59-440c-b723-0480899622f6"
+    },
+    {
+      "claim_id": "913a8a77-0344-429a-874f-6df0fe9dee85",
+      "result_id": "cc265cce-9d59-440c-b723-0480899622f6"
+    },
+    {
+      "claim_id": "52a4fff3-816d-4415-ae25-d971971a18c0",
+      "result_id": "5030983f-310b-4e68-a553-b356880d49af"
+    },
+    {
+      "claim_id": "9a3066c2-9a1d-40a1-950b-d24bbf034b33",
+      "result_id": "5030983f-310b-4e68-a553-b356880d49af"
+    },
+    {
+      "claim_id": "662b179a-5d00-44e5-9f5c-c77818c85198",
+      "result_id": "5030983f-310b-4e68-a553-b356880d49af"
+    },
+    {
+      "claim_id": "1ff05dfa-4d8b-4c8f-b97d-94c935e3331f",
+      "result_id": "d54e5bc1-df15-4990-b9aa-48fa1e2ba17c"
+    },
+    {
+      "claim_id": "f17ca73a-39bb-4e92-a0f9-85f92023575e",
+      "result_id": "d54e5bc1-df15-4990-b9aa-48fa1e2ba17c"
+    },
+    {
+      "claim_id": "b09c3448-783d-44fd-b652-9735098f8a87",
+      "result_id": "d54e5bc1-df15-4990-b9aa-48fa1e2ba17c"
+    },
+    {
+      "claim_id": "7f69bdc6-1297-40c5-8bb7-c47496833fb3",
+      "result_id": "b6d69fa9-6962-4ffc-98d5-99f2b44cab20"
+    },
+    {
+      "claim_id": "99420e31-f405-45f9-a3cd-f95455b37e77",
+      "result_id": "b6d69fa9-6962-4ffc-98d5-99f2b44cab20"
+    },
+    {
+      "claim_id": "f716005e-07f7-41d0-955a-ce86cdc83b74",
+      "result_id": "1dc546f8-aacc-4ff8-b4d9-3dd166ff83fa"
+    },
+    {
+      "claim_id": "3b2e2eb3-922e-4eee-b7fe-6af9de45c3bc",
+      "result_id": "1dc546f8-aacc-4ff8-b4d9-3dd166ff83fa"
+    },
+    {
+      "claim_id": "d67ce103-583a-417c-bda7-249c9f970d87",
+      "result_id": "1dc546f8-aacc-4ff8-b4d9-3dd166ff83fa"
+    },
+    {
+      "claim_id": "cb39b85a-ea13-4511-b4c7-a659115ad1fb",
+      "result_id": "1dc546f8-aacc-4ff8-b4d9-3dd166ff83fa"
+    },
+    {
+      "claim_id": "68e932e9-4ac0-4eac-b0fe-82cb973133b7",
+      "result_id": "6b170f3b-fe9e-4e8d-ab88-0358b94a6e01"
+    },
+    {
+      "claim_id": "874ed4f6-c39a-48da-82f7-eb35f9fbd5a5",
+      "result_id": "6b170f3b-fe9e-4e8d-ab88-0358b94a6e01"
+    },
+    {
+      "claim_id": "a291c500-728c-4f1b-b277-7be4e23b44a2",
+      "result_id": "6b170f3b-fe9e-4e8d-ab88-0358b94a6e01"
+    },
+    {
+      "claim_id": "2c463a27-3000-4fbc-8eab-19b604a6109b",
+      "result_id": "ac1a9946-1440-4a7e-a7c2-d7da58bcc37b"
+    },
+    {
+      "claim_id": "7a800de4-87e8-4dde-b82c-90625359ddce",
+      "result_id": "ac1a9946-1440-4a7e-a7c2-d7da58bcc37b"
+    },
+    {
+      "claim_id": "c5d87446-05bc-4ea5-b883-ab663a29dcfc",
+      "result_id": "ac1a9946-1440-4a7e-a7c2-d7da58bcc37b"
+    },
+    {
+      "claim_id": "31da0186-bc37-4990-9473-560f0e550cc4",
+      "result_id": "bf40d3bc-466c-4289-8edf-f4a8f91a8225"
+    },
+    {
+      "claim_id": "fff42084-cc14-4d6f-a468-b32dba11bd49",
+      "result_id": "0a645829-10ce-4afc-89e8-1d693d4198be"
+    },
+    {
+      "claim_id": "7f2fb69c-7af7-4348-9fec-e849a232f7b4",
+      "result_id": "0a645829-10ce-4afc-89e8-1d693d4198be"
+    },
+    {
+      "claim_id": "3afd713f-e39e-4014-8418-e13dfa252188",
+      "result_id": "0a645829-10ce-4afc-89e8-1d693d4198be"
+    },
+    {
+      "claim_id": "1ede84fc-9e34-435f-949d-6ddadba261fa",
+      "result_id": "564857c5-ba47-4ca6-8a46-154b865ccb80"
+    },
+    {
+      "claim_id": "0e839505-4b9a-4a5e-a25a-70d2fa75b378",
+      "result_id": "92059248-005a-4818-a79d-8eae130f30c2"
+    },
+    {
+      "claim_id": "4bd52f3e-bde1-43f9-9263-db5345195ab4",
+      "result_id": "92059248-005a-4818-a79d-8eae130f30c2"
+    },
+    {
+      "claim_id": "37fd62ad-08f4-4ba5-8cf2-725a1116626e",
+      "result_id": "92059248-005a-4818-a79d-8eae130f30c2"
+    },
+    {
+      "claim_id": "2e57c17d-693b-495d-8fa6-160823d0066a",
+      "result_id": "92059248-005a-4818-a79d-8eae130f30c2"
+    },
+    {
+      "claim_id": "3c77895f-bab5-4cde-b1a2-eda87f8894e7",
+      "result_id": "92059248-005a-4818-a79d-8eae130f30c2"
+    },
+    {
+      "claim_id": "bfb6e3a5-094f-4a64-baa1-a581c8c43901",
+      "result_id": "92059248-005a-4818-a79d-8eae130f30c2"
+    },
+    {
+      "claim_id": "85265611-7f7d-4635-aeca-7bbd767e4a00",
+      "result_id": "92059248-005a-4818-a79d-8eae130f30c2"
+    },
+    {
+      "claim_id": "31e4b28e-ee62-44ff-a301-6a34bde43734",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "134c20e9-759c-44eb-9978-f881634727c2",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "476516f8-2d68-4ef5-acd8-363ec16a0016",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "271bbe69-d379-412f-a226-bdc757e3cf22",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "40a566a7-92c5-4eb6-8146-01fe37b99c83",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "3ce3f9a0-1a66-4562-aa70-b4f2f19d58ed",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "5e667433-01bd-4cee-8a88-bc25ab4ab82d",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "8d84cb71-e801-4701-a3c6-3d932662d791",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "00e8b6ba-5966-486d-8a2b-c1b6601ba181",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "4d9d5cea-dd39-4f8e-aa2e-5e2defc231fa",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "a79d18a4-efa6-4adc-b612-5acfbd13a313",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "ee90e5fe-770c-41ee-9623-e5e11dd4ace0",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "09675a37-d063-4606-b546-244324890771",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "b10fd5fb-5048-42b5-9bbb-b8d89077ec7f",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "c085324f-f709-40f7-af92-953d77b3c864",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "3c022320-8cd1-4188-88f0-e237d5edb7d8",
+      "result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597"
+    },
+    {
+      "claim_id": "fd2c580f-b243-4ded-949f-8cb4139a81e7",
+      "result_id": "514dd21a-8d9f-4dd4-8a8b-ad8db5c4ea76"
+    },
+    {
+      "claim_id": "55c4b385-0574-47f0-9cbb-cfedc0e37780",
+      "result_id": "2b0190bb-5175-4858-a283-99f4a934394e"
+    },
+    {
+      "claim_id": "8fc6a98f-b527-4041-a2f0-dc9c1610a562",
+      "result_id": "2b0190bb-5175-4858-a283-99f4a934394e"
+    },
+    {
+      "claim_id": "f700a3d9-3012-4381-937f-4dccbecbbd0f",
+      "result_id": "2b0190bb-5175-4858-a283-99f4a934394e"
+    },
+    {
+      "claim_id": "109b41f7-66df-48cf-bcf4-1ecc18ebaf5d",
+      "result_id": "2b0190bb-5175-4858-a283-99f4a934394e"
+    },
+    {
+      "claim_id": "43557174-93e6-4acd-96ba-b4fd2baadb6d",
+      "result_id": "2b0190bb-5175-4858-a283-99f4a934394e"
+    },
+    {
+      "claim_id": "70e32eb3-cd39-48e9-bc3d-72714d356c57",
+      "result_id": "3a6c0262-425d-4f36-ba4c-e1136e9eec7d"
+    },
+    {
+      "claim_id": "d3119464-17ce-479d-812d-2801474d9531",
+      "result_id": "3a6c0262-425d-4f36-ba4c-e1136e9eec7d"
+    },
+    {
+      "claim_id": "1f571ba0-4ac3-40c6-bc85-21769e9fd6f5",
+      "result_id": "3a6c0262-425d-4f36-ba4c-e1136e9eec7d"
+    },
+    {
+      "claim_id": "c6013afa-7f0e-43f3-adf2-cf0a94aab23c",
+      "result_id": "8528a900-067c-4215-bb48-826837da3e25"
+    },
+    {
+      "claim_id": "20bc2727-c944-47c2-8485-feea94736091",
+      "result_id": "8528a900-067c-4215-bb48-826837da3e25"
+    },
+    {
+      "claim_id": "ae55c4ac-3ec9-4a7a-a4fb-216962b15e7b",
+      "result_id": "8528a900-067c-4215-bb48-826837da3e25"
+    },
+    {
+      "claim_id": "948f6cd7-3ed3-4fe7-8200-f7c803f0ec78",
+      "result_id": "8528a900-067c-4215-bb48-826837da3e25"
+    },
+    {
+      "claim_id": "b7945221-4f52-4378-b6ad-aa68de84ded0",
+      "result_id": "8528a900-067c-4215-bb48-826837da3e25"
+    },
+    {
+      "claim_id": "b6409af5-14d5-451f-a185-f49ae0a0ef9c",
+      "result_id": "8528a900-067c-4215-bb48-826837da3e25"
+    },
+    {
+      "claim_id": "5c89838f-b1fe-4d0d-8b5f-aaf4c1b2bc18",
+      "result_id": "8528a900-067c-4215-bb48-826837da3e25"
+    },
+    {
+      "claim_id": "2f0077b8-fd2b-4972-a674-88d56c89e459",
+      "result_id": "c3ec0de6-9745-4b99-aafa-ab6f1ca3c3bc"
+    },
+    {
+      "claim_id": "e4eccb9c-849e-4c71-bb63-e7770996e738",
+      "result_id": "c3ec0de6-9745-4b99-aafa-ab6f1ca3c3bc"
+    },
+    {
+      "claim_id": "be9552dc-1d49-4106-b31d-bcdd64d6bced",
+      "result_id": "2e588afd-ee30-4141-b496-2d637e9eff33"
+    },
+    {
+      "claim_id": "ea1fafb2-7435-4976-8d44-160e5f282acc",
+      "result_id": "0eb12438-f931-4649-bacd-f0358e8993ad"
+    },
+    {
+      "claim_id": "1d55ff0a-6ff1-4d05-8204-51ceef1f769e",
+      "result_id": "0eb12438-f931-4649-bacd-f0358e8993ad"
+    },
+    {
+      "claim_id": "913a8a77-0344-429a-874f-6df0fe9dee85",
+      "result_id": "e03d635f-4e81-498d-b916-4f61724b60a4"
+    },
+    {
+      "claim_id": "52a4fff3-816d-4415-ae25-d971971a18c0",
+      "result_id": "cecd7578-0bea-4aa5-8f1f-69fa5d0ac100"
+    },
+    {
+      "claim_id": "9a3066c2-9a1d-40a1-950b-d24bbf034b33",
+      "result_id": "cecd7578-0bea-4aa5-8f1f-69fa5d0ac100"
+    },
+    {
+      "claim_id": "1ff05dfa-4d8b-4c8f-b97d-94c935e3331f",
+      "result_id": "f833683f-e54f-4d0b-8934-a19a8bd5132b"
+    },
+    {
+      "claim_id": "f17ca73a-39bb-4e92-a0f9-85f92023575e",
+      "result_id": "f833683f-e54f-4d0b-8934-a19a8bd5132b"
+    },
+    {
+      "claim_id": "b09c3448-783d-44fd-b652-9735098f8a87",
+      "result_id": "f833683f-e54f-4d0b-8934-a19a8bd5132b"
+    },
+    {
+      "claim_id": "7f69bdc6-1297-40c5-8bb7-c47496833fb3",
+      "result_id": "f3374edb-e2bb-46f9-9d85-1fdb84728b47"
+    },
+    {
+      "claim_id": "3afd713f-e39e-4014-8418-e13dfa252188",
+      "result_id": "f3374edb-e2bb-46f9-9d85-1fdb84728b47"
+    },
+    {
+      "claim_id": "f716005e-07f7-41d0-955a-ce86cdc83b74",
+      "result_id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df"
+    },
+    {
+      "claim_id": "3b2e2eb3-922e-4eee-b7fe-6af9de45c3bc",
+      "result_id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df"
+    },
+    {
+      "claim_id": "d67ce103-583a-417c-bda7-249c9f970d87",
+      "result_id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df"
+    },
+    {
+      "claim_id": "cb39b85a-ea13-4511-b4c7-a659115ad1fb",
+      "result_id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df"
+    },
+    {
+      "claim_id": "68e932e9-4ac0-4eac-b0fe-82cb973133b7",
+      "result_id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df"
+    },
+    {
+      "claim_id": "874ed4f6-c39a-48da-82f7-eb35f9fbd5a5",
+      "result_id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df"
+    },
+    {
+      "claim_id": "a291c500-728c-4f1b-b277-7be4e23b44a2",
+      "result_id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df"
+    },
+    {
+      "claim_id": "49bf1b75-8d1b-4665-9990-bb09c52d8126",
+      "result_id": "bf9883e8-4fc7-4d11-8e8f-28e9b0d60e05"
+    },
+    {
+      "claim_id": "2c463a27-3000-4fbc-8eab-19b604a6109b",
+      "result_id": "bf9883e8-4fc7-4d11-8e8f-28e9b0d60e05"
+    },
+    {
+      "claim_id": "7a800de4-87e8-4dde-b82c-90625359ddce",
+      "result_id": "bf9883e8-4fc7-4d11-8e8f-28e9b0d60e05"
+    },
+    {
+      "claim_id": "035616c9-73c2-43f2-8a31-341ab9d1f04b",
+      "result_id": "41f6b5de-efed-4ae6-bda2-010ee4734808"
+    },
+    {
+      "claim_id": "304623cc-426b-46b9-a350-379174a709d2",
+      "result_id": "41f6b5de-efed-4ae6-bda2-010ee4734808"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b8493c89-30ce-4aa3-8b2a-c1feb4f25117",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "7f817e02-8a5b-430e-aabb-f557acd36ae3",
+      "peer_result_id": "2b0190bb-5175-4858-a283-99f4a934394e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both OpenEval and peer reviewers agree that claims C8-C10, C41-C42 are supported. Both acknowledge the validation of Aeg1 as essential and accept the 30% validation rate (3/10 genes) from the conditional deletion experiments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "56c4db67-3cd2-4aff-b987-499172b15c1e",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "54a1568d-3f3d-4d97-a49c-910cdc31d0eb",
+      "peer_result_id": "3a6c0262-425d-4f36-ba4c-e1136e9eec7d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both OpenEval and peer reviewers agree that claims C15-C17 regarding cell filamentation upon Aeg1 depletion are well-supported. Both explicitly identify this as a strength of the work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "790076cf-fc5a-4fc0-abc8-40ca5def7e2f",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "6e194a2e-42fc-4ece-9068-99911e43e2e8",
+      "peer_result_id": "8528a900-067c-4215-bb48-826837da3e25",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both OpenEval and peer reviewers support claims C18-C24 regarding FtsAE202K suppression and the gain-of-function nature of this mutation. Peer reviewers acknowledge this as a key finding without challenging the specific FtsAE202K data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "8da67409-aef4-4f9d-b27b-1db45aa5186f",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "aec3c87f-e59f-4769-8a39-aec525882ba8",
+      "peer_result_id": "c3ec0de6-9745-4b99-aafa-ab6f1ca3c3bc",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval rates claims C27-C28 as UNCERTAIN due to undetectable protein expression, while peer reviewers rate them as UNSUPPORTED, explicitly stating that the spotting assay shows only FtsB-E56A and FtsA-E202K provide full rescue, and that claims about FtsA-D124A and V144L are misleading.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "e0e31aa3-c14d-48f4-a44f-e9e8c36b0acb",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "1111da18-7530-4663-882a-fecd00f723e7",
+      "peer_result_id": "2e588afd-ee30-4141-b496-2d637e9eff33",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval supports claim C29 regarding Aeg1 localization to division sites, while peer reviewers rate it UNCERTAIN, raising concerns about fusion protein functionality, image quality, diffusive fluorescence patterns, and potential protein cleavage requiring Western blot validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "e72eed6e-a1d1-4028-9906-e6cfaede856d",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "cc265cce-9d59-440c-b723-0480899622f6",
+      "peer_result_id": "0eb12438-f931-4649-bacd-f0358e8993ad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval supports claims C30-C31 regarding Aeg1 interactions with ZipA and FtsN based on bacterial two-hybrid data, while peer reviewers rate this UNCERTAIN, questioning the strength of interactions (noting pale spots for FtsL/FtsB) and raising concerns about ZipA membrane topology in the assay.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "9fb50922-1304-4cb3-b1b7-01fe5de317b9",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "cc265cce-9d59-440c-b723-0480899622f6",
+      "peer_result_id": "e03d635f-4e81-498d-b916-4f61724b60a4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval supports claim C32 regarding colocalization with divisome proteins, while peer reviewers rate this UNCERTAIN, noting that most cells show diffusive cytoplasmic fluorescence rather than prominent midcell localization, and questioning whether observed signals represent functional localization or protein aggregates.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "f926cae0-283f-4b58-b494-79ba630ed64a",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "5030983f-310b-4e68-a553-b356880d49af",
+      "peer_result_id": "cecd7578-0bea-4aa5-8f1f-69fa5d0ac100",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval supports claims C33-C34 regarding mislocalization of divisome proteins upon Aeg1 depletion, while peer reviewers rate this UNCERTAIN, noting it is unclear whether proteins are at division sites under wildtype conditions and questioning the paradox of regularly spaced puncta in Aeg1-depleted filaments.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "94f1bff2-fec3-42b8-8239-07d8872c8c26",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "d54e5bc1-df15-4990-b9aa-48fa1e2ba17c",
+      "peer_result_id": "f833683f-e54f-4d0b-8934-a19a8bd5132b",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both OpenEval and peer reviewers rate claims C35-C37 as UNCERTAIN. OpenEval cites undetectable protein expression for some mutants, while peer reviewers specifically challenge the extent of rescue, stating only FtsB-E56A and FtsA-E202K show full rescue comparable to Aeg1 complementation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "6333960a-d702-46c7-969f-a6782640ab4f",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "b6d69fa9-6962-4ffc-98d5-99f2b44cab20",
+      "peer_result_id": "f3374edb-e2bb-46f9-9d85-1fdb84728b47",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "disagree",
+      "comparison": "OpenEval supports claims C38 and C73 regarding FtsW mutant suppression, while peer reviewers rate this UNSUPPORTED, explicitly stating that the spotting assay shows only FtsB-E56A and FtsA-E202K provide full rescue, and that claims about FtsW-M254I and S274G are misleading.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "7b364b3f-dbb2-4744-be29-6b6a8d79fdbb",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1dc546f8-aacc-4ff8-b4d9-3dd166ff83fa",
+      "peer_result_id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval supports claims C39-C40, C49, C54 regarding the epistasis model placing Aeg1 upstream in the divisome pathway, while peer reviewers rate the broader mechanistic model (including C60-C61, C68) as UNCERTAIN, concluding that Aeg1's critical role and place in the divisome assembly pathway has yet to be established unambiguously.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "22c83f58-accf-4c46-9a37-d4b98168a26a",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "6b170f3b-fe9e-4e8d-ab88-0358b94a6e01",
+      "peer_result_id": "0cf3a4ec-2c6b-4c41-9fb5-a2be83c371df",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval supports the mechanistic model in claims C60-C61, C68 integrating multiple lines of evidence, while peer reviewers rate this UNCERTAIN, stating the work lacks convincing evidence to define Aeg1's place or role in the divisome assembly pathway, though they acknowledge the suppression data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "9ec7246a-8828-4149-85d5-c842b18a989d",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "88697b94-38bb-4722-aa9e-7e3893009baa",
+      "peer_result_id": "41f6b5de-efed-4ae6-bda2-010ee4734808",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both OpenEval and peer reviewers support claims C13-C14 regarding the essentiality of the N-terminal domain. Peer reviewers do not challenge this finding, and the C-terminal fusion activity supports the N-terminal importance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "c0f2facf-4f1a-4a18-aab2-a12c84255628",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "ac1a9946-1440-4a7e-a7c2-d7da58bcc37b",
+      "peer_result_id": "bf9883e8-4fc7-4d11-8e8f-28e9b0d60e05",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both OpenEval and peer reviewers support claims C62-C63 regarding the distribution of Aeg1 orthologs across bacterial species. This bioinformatic analysis is not disputed by reviewers.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "76a5b60e-643a-4a04-b11e-27a20d0cbc29",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "88697b94-38bb-4722-aa9e-7e3893009baa",
+      "peer_result_id": "bf9883e8-4fc7-4d11-8e8f-28e9b0d60e05",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address Aeg1 sequence analysis (C11). OpenEval supports the transmembrane domain predictions despite ambiguity across tools, while peer reviewers accept the sequence analysis showing Aeg1 distribution without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "4a423e8f-ce9b-453b-ac98-178b88bab796",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "0a645829-10ce-4afc-89e8-1d693d4198be",
+      "peer_result_id": "f3374edb-e2bb-46f9-9d85-1fdb84728b47",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNSUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "disagree",
+      "comparison": "OpenEval supports claim C67 as part of a summary of key findings, while peer reviewers rate claims involving C67 (regarding FtsW suppression) as UNSUPPORTED, stating that FtsW mutants do not provide full rescue comparable to complementation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "75a0209b-db3e-4bcc-9d55-d4f5367a4fd2",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "bf40d3bc-466c-4289-8edf-f4a8f91a8225",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports claim C43 citing independent validation from Pichoff et al., 2012. No corresponding peer review evaluation found for this specific citation-based claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "bd64d39e-59e8-4298-95bf-f8c7e15a19b3",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "564857c5-ba47-4ca6-8a46-154b865ccb80",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates claim C69 regarding therapeutic potential as UNCERTAIN, noting it is aspirational without supporting data. No corresponding peer review evaluation found for this forward-looking claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "57f20b51-b33c-4e4c-bfec-e44f12e77fec",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "92059248-005a-4818-a79d-8eae130f30c2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports claims C1-C7 as appropriate background/context from literature. No corresponding peer review evaluation found for these introductory claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "9c4f8d2c-122a-4e5a-917e-05ccf070d10a",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "d6bc3b54-396c-4d5f-ae89-9ca55604f597",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports claims C25-C26, C44-C59, C72 as appropriate literature-based background establishing context for divisome biology. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    },
+    {
+      "id": "1a05a811-a4b8-45d3-a840-2fc95f49d1cc",
+      "submission_id": "8584433d-6615-4b25-8d40-31b4e09be6be",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "514dd21a-8d9f-4dd4-8a8b-ad8db5c4ea76",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports claim C70 as a methodological statement about strain background. No corresponding peer review evaluation found for this methods detail.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:48:24.988041Z"
+    }
+  ]
+}

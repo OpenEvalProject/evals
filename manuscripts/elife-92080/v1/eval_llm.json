@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "The authors developed a novel coarse-graining method that systematically removes morphological details smaller than a specified spatial scale while preserving surface integrity, based on an extension of the box-counting algorithm. The method requires pial and white matter surfaces as input, voxelizes the cortical ribbon at different scales, and applies isometric rescaling to enable comparison across scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C42 collectively describe a methodological innovation that is well-documented with visual evidence (Figure 1) and technical details. The method is clearly defined, its properties are stated, and the rescaling procedure is justified. The approach is presented as both theoretically motivated and practically implemented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C16",
+      "C17",
+      "C87",
+      "C88",
+      "C89",
+      "C103"
+    ],
+    "result": "All primate cortices analyzed (11 species) are approximations of the same archetypal fractal shape with fractal dimension df=2.5, following a universal self-similar scaling law across spatial scales. The morphological diversity among species is primarily explained by species-specific ranges of spatial scales over which the fractal approximation is valid, with the smallest scale being an invariant multiple of cortical thickness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C16-C17, C87-C89, and C103 represent the central finding supported by extensive empirical data shown in Figure 2 (power law with slope \u03b1=1.255, R\u00b2>0.999 for all species) and Figure 3 (invariant K across scales and species with variance <0.01). The fractal dimension of 2.5 is derived from the scaling exponent 1.25\u00d72, and the universality is demonstrated across 11 primate species with overlapping morphometric trajectories.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C96"
+    ],
+    "result": "Coarse-grained primate cortices at different spatial scales are morphometrically similar to actual existing mammalian cortices from over 70 species, sharing key shape properties beyond just fractal dimension. Different primate species overlap substantially in offset (K) and differ primarily in the range of scales over which the approximation is valid. Non-brain objects (walnut, bell pepper) do not show this pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60, C70-C73, and C96 are supported by Figure 2A showing overlap between coarse-grained primate data and comparative mammalian data, and Figure 3D demonstrating invariant K across species and scales. The control comparison with non-brain objects (C73, Appendix 5) strengthens the specificity of the finding. The authors appropriately clarify that comparisons are at the level of whole-cortex morphometrics, not local fold patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C19",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C91",
+      "C132",
+      "C133"
+    ],
+    "result": "Human aging shows highly scale-dependent effects on cortical morphology, with maximum effect size (~8 standard deviations) at approximately 2 mm spatial scale, representing a more than fourfold increase compared to native-scale analysis (~2 standard deviations). Effects are minimal at scales >5 mm and <0.5 mm. Results were reproduced in an independent dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C19, C78-C83, C91, C132-C133 are well-supported by Figure 4A showing the U-shaped effect size curve with peak at ~2 mm, comparing 20-year-olds (n=27) and 80-year-olds (n=86). Visual evidence in Figure 4B illustrates the scale-dependent differences. Replication in an independent dataset (C79, Appendix 7.2) strengthens the finding. Statistical analysis using Cohen's D is appropriate for effect size quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C98"
+    ],
+    "result": "This work advances beyond previous literature by showing for the first time that primate species follow the exact same fractal scaling (not just similar fractal dimension), demonstrating direct morphometric agreement between coarse-grained primate brains and other mammalian species, and showing that multiscale morphometrics can achieve much larger effect sizes (four times) for classification applications compared to single-scale metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95 and C98 accurately characterize the advances over prior work (Hofman 1985, 1991) which showed similar slopes but could not compare offsets. The demonstration of identical K values across species and scales (Figure 3D) and the fourfold increase in effect size for aging (Figure 4A) support these claims. The citations to prior work appear accurate based on the stated limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C99",
+      "C100",
+      "C101",
+      "C134"
+    ],
+    "result": "The multiscale coarse-graining approach provides a more detailed and informative characterization of cortical morphology than traditional single-scale summary measures, enabling identification of scale-specific biological processes and representing a substantial advance for classification applications in biology and medicine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C99-C101, and C134 are supported by the demonstrated scale-dependent effects of aging (Figure 4) showing that biological processes can act at specific spatial scales. The fourfold increase in effect size provides concrete evidence for improved classification performance. These claims represent reasonable interpretations of the methodological and practical advantages demonstrated in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The scaling law At\u00b7T^(1/2) = k\u00b7Ae^(5/4) was previously shown to be valid across mammalian species, within the human species, and for structures and substructures of individual brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 accurately cite prior work (Mota and Herculano-Houzel 2015; Wang et al. 2016, 2019; Leiberg et al. 2021) establishing the scaling law. These are appropriate citations to the authors' own previous work that forms the empirical foundation for the current study. The claims serve as necessary background context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The study analyzed cortical surfaces from 11 primate species using multiple datasets: Human Connectome Project (HCP) data with 0.7 mm resolution, Cam-CAN dataset with 1 mm resolution (644 subjects, with 27 subjects aged 17-25 and 86 subjects aged 77-85 selected for aging analysis), rhesus macaque data from Newcastle University, marmoset ex vivo data, and other non-human primate data from published sources.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C55 provide detailed data acquisition information that is standard for neuroimaging studies. The sample sizes, age ranges, scanner specifications, and data sources are clearly stated. The preprocessing pipeline using FreeSurfer is standard and appropriate. Quality control procedures (visual inspection, manual correction) are mentioned. These methodological details are adequately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C18",
+      "C97",
+      "C106",
+      "C123"
+    ],
+    "result": "The results indicate conservation of morphological relationships across evolution, suggesting a universal blueprint for mammalian brain shape and a common set of mechanisms governing cortical folding. The dual universality (constant K across scales and species) suggests a single highly conserved mechanism operating self-similarly on all length scales with few morphological degrees of freedom.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18, C97, C106, and C123 represent interpretations and speculations about evolutionary and mechanistic implications. While the empirical findings (invariant K) are well-supported, the causal claims about evolutionary conservation and underlying mechanisms go beyond what the morphometric data alone can demonstrate. These are reasonable hypotheses but would require additional evolutionary, developmental, or mechanistic studies to fully support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The dual universality hints at the possibility of deriving cortical scaling from a variational principle and provides a more stringent test for gyrification models. Models that simulate cortical surfaces could be coarse-grained and compared to actual cortices, though the scaling itself does not favor any particular gyrification model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C111 appropriately characterize the implications for theoretical modeling and model validation. The statement that the scaling provides a stringent test is justified by the dual constraint (constant K across scales and species). The acknowledgment that the scaling itself is agnostic about mechanism (C111) is an important and appropriate caveat. These represent reasonable implications for future theoretical work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C112",
+      "C115",
+      "C116",
+      "C119"
+    ],
+    "result": "The authors' previously proposed model assumes a self-avoiding cortex of finite thickness experiencing pressures, correctly predicts the scaling law, but a complete explanation for cortical gyrification is likely more complex. There are challenges to the axonal tension hypothesis, and white matter tension may contribute to whole-brain scale pressure during development rather than explaining specific fold locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112, C115-C116, and C119 appropriately discuss the authors' previous model (Mota and Herculano-Houzel 2015) and its limitations. The acknowledgment that the model correctly predicts the scaling law but that a complete explanation is more complex (C119, citing Quezada et al. 2020) demonstrates appropriate scientific humility. The discussion of challenges to axonal tension (C115, citing Xu et al. 2010) and alternative interpretations (C116) is balanced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Gyri and sulci patterns are variable but heritable in humans and relatively preserved in macaques. The current work does not explain this variability or heritability, and coarse-grained human brains are not meant to resemble the exact location/pattern of gyri and sulci of other primates. The similarities are at the level of summary metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C123 appropriately acknowledge limitations of the work and clarify the scope of the findings. The distinction between summary morphometrics (which show universality) and specific fold patterns (which are not explained) is an important clarification. This demonstrates appropriate interpretation of what the results do and do not show.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C102",
+      "C127",
+      "C131",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Future work could extend the approach to cortical development, degenerative and congenital conditions, specific cortical regions, and comparative neuroanatomy. The framework could become a powerful tool to characterize and compare cortices across species, individuals, development, aging, health, and disease.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C127, C131, C135-C137 appropriately describe potential future applications with relevant citations to prior work showing regional applications (Wang et al. 2019; Leiberg et al. 2021). These are reasonable extensions of the demonstrated methodology. The speculative nature is appropriately conveyed through language like 'could,' 'may,' and 'hope.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C24",
+      "C25",
+      "C27",
+      "C28"
+    ],
+    "result": "Background context: The mammalian cerebral cortex exhibits diversity in shapes and sizes but folds into stereotypical hierarchical structures. Regularities in cortical scaling have been observed. Fractal scaling has been postulated for cortical morphology, with recent estimates of fractal dimension close to 2.5. The fractal dimension is the power exponent between intrinsic and extrinsic size measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9, C24-C25, C27-C28 provide appropriate background context with relevant citations. The definition of fractal dimension (C24) is standard. The citations to prior work on cortical scaling regularities (C9) and fractal estimates (C27-C28, citing King et al. 2010; Madan and Kensinger 2016, 2017; Marzi et al. 2020) appear accurate and provide proper context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C15",
+      "C117",
+      "C118",
+      "C126"
+    ],
+    "result": "The universality of the scaling law is presumed to arise from universal physical principles and evolutionarily conserved biomechanics. The simplicity parallels other complex phenomena in nature with universal scaling derivable from first principles, and recent results suggest simplicity and symmetry are favored by evolution on statistical grounds. The scaling law can be understood as physically and biologically plausible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C15, C117-C118, and C126 make broad statements about physical principles and evolutionary mechanisms. While the citations to analogous phenomena (Barenblatt 1996; West et al. 1997; Gagler et al. 2022) and evolutionary theory (Johnston et al. 2022) are appropriate, these claims represent speculations about underlying causes rather than demonstrated findings. The plausibility arguments (C126) are reasonable but not empirically tested in this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90"
+    ],
+    "result": "The coarse-graining method represents a proof-by-construction of fractality, going beyond the usual box-counting approach by yielding scale-dependent morphometrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C90 accurately characterizes the methodological advance. The method does construct explicit cortical surfaces at each scale (Figure 1) rather than just measuring fractal dimension, and it does yield morphometric measurements as functions of scale (Figure 4). This represents a legitimate advance over traditional box-counting that only estimates fractal dimension.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Larger cortical features appear earlier during development and are more broadly conserved over kinship and phylogeny.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 cite appropriate literature (Zilles et al. 2013; Garcia et al. 2018; Pizzagalli et al. 2020; Heuer et al. 2019; Valk et al. 2020) for established knowledge about developmental timing and evolutionary conservation of cortical features. These claims provide relevant context for interpreting the scale-dependent findings but are not tested in the current work.",
+    "result_type": "MINOR"
+  }
+]

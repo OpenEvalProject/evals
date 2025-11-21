@@ -1,0 +1,317 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The study employed DP-pCASL MRI to simultaneously measure BBB water exchange rate (kw), cerebral blood flow (CBF), and arterial transit time (ATT) in 186 cognitively normal participants aged 8-92 years with diverse racial backgrounds. The methodology included MARS analysis for nonlinear age relationships and GLM for voxel-wise analysis, with race included as a covariate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C50-C53, and C158-C177 collectively describe a well-designed cross-sectional study with appropriate methodology. The sample size (N=186) is adequate for detecting age and sex effects, the DP-pCASL technique is validated (C30, C35), and statistical approaches (MARS, GLM) are appropriate for detecting nonlinear relationships. The inclusion of race as a covariate (C52) and diverse recruitment sources (C162) strengthen the generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C61",
+      "C102",
+      "C117"
+    ],
+    "result": "BBB kw remained relatively stable until age 62, then declined with a yearly slope of -0.82 min\u207b\u00b9 (95% CI: [-1.35, -0.28], p=0.003), with no significant sex differences in gray matter. This pattern differed from ATT (turning point ~36 years) and CBF (turning point ~22 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58, C61, C102, and C117 present a major finding with appropriate statistical support (p=0.003, confidence intervals provided). The MARS analysis appropriately identified the nonlinear relationship and turning point at age 62. The finding is consistent with prior literature on BBB aging (C110-C117) and represents a novel characterization of the temporal trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C118",
+      "C87"
+    ],
+    "result": "Sex differences in BBB kw decline were evident in specific brain regions including parietal lobe (p=0.01), temporal lobe (p=0.001), medial temporal lobe (p=0.008), hippocampus (p=0.02), and parahippocampal gyrus (p=0.006), with males showing more pronounced decline than females.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67, C118, and C87 demonstrate region-specific sex differences with appropriate statistical testing and multiple comparison correction (C177). The p-values are significant and the findings are supported by both MARS regional analysis and voxel-wise GLM analysis. The consistency across analytical approaches strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C69",
+      "C70",
+      "C9",
+      "C8"
+    ],
+    "result": "In older participants (62-92 years), males had 14.7% lower kw compared to females (p<0.001), while minimal differences (<2%) were observed in younger and middle-aged cohorts. This represents an ~18% decline in males in their early 60s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79, C69-C70, C9, and C8 quantify the sex difference in the oldest age group with appropriate statistical testing (one-way ANOVA, p<0.001). The age-stratified analysis (Figure 3) provides clear visual and quantitative support. However, the cross-sectional design limits causal inference about the timing and progression of decline.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Simulation analyses demonstrated that sex differences in kw are not predominantly driven by differences in ATT or CBF, as adjusting females' ATT to match males' values (+60ms) resulted in only marginally higher kw values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 present important control analyses addressing potential confounding. The simulation approach (C81) and consideration of the SPA model's algorithm (C83) provide mechanistic support that kw differences reflect true BBB function rather than hemodynamic confounds. This strengthens the interpretation of the primary findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C75",
+      "C76",
+      "C77",
+      "C90"
+    ],
+    "result": "Across the lifespan, ATT was longer in males (8.6%, 3.7%, 3.9% across age groups, p<0.001) and CBF was higher in females (14.8%, 14.3%, 19.4% across age groups, p<0.001), consistent with prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60, C75-C77, and C90 report sex differences in CBF and ATT that are well-established in the literature (citations to Parkes et al., 2004; Liu et al., 2012). The findings serve as positive controls demonstrating the validity of the DP-pCASL measurements and are appropriately supported by statistical testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C68",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Males showed more rapid age-related CBF decline in the hippocampus compared to females (p<0.001), which may be linked to accelerated hippocampal volume loss in males and increased vulnerability to cognitive decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68 and C93 present a statistically significant finding (p<0.001), but claims C94-C96 make inferential leaps to hippocampal volume loss and cognitive vulnerability based on citations to other studies. The cross-sectional design and lack of cognitive or volumetric data in this study limit the strength of these mechanistic and clinical inferences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C106"
+    ],
+    "result": "Voxel-wise analysis revealed that age-related kw decreases were region-specific (lateral/ventromedial prefrontal cortex, cingulate cortex, precuneus, temporal lobes, occipital lobe, insula), while CBF and ATT changes were widespread across the brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C86 and C106 are supported by voxel-wise GLM analysis with appropriate multiple comparison correction (AlphaSim, C177). The spatial specificity of kw decline contrasts with widespread CBF/ATT changes, suggesting distinct mechanisms. Figure 4 provides clear visualization of these patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "BBB kw showed age-dependent associations with CBF and ATT that differed between age groups: kw was negatively associated with CBF in specific regions in younger participants (8-61 years) but not in older participants (62-92 years), while negative associations with ATT became more widespread in older participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C101 present novel findings about age-dependent relationships between BBB function and hemodynamics. The linear regression analyses appropriately controlled for sex as a covariate. The differential patterns across age groups (C101) suggest changing neurovascular coupling with aging, though the cross-sectional design limits mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The findings suggest that BBB dysfunction (indicated by kw decline) might precede detectable cognitive impairment in cognitively normal participants and could negatively affect executive functions, memory, emotional regulation, and sensory perception. DP-pCASL may contribute to identifying individuals at risk for vascular cognitive impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C103-C105 appropriately cite prior work, but claims C107-C109 make speculative inferences about cognitive impacts and clinical utility without cognitive assessment data in the current study. The participants were cognitively normal (C160), so the claim that BBB dysfunction 'might precede' cognitive impairment (C108) is speculative. Longitudinal data with cognitive outcomes would be needed to support these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Prior animal and human studies suggest sex differences in BBB function may be influenced by hormonal factors, with estrogen showing protective effects on BBB permeability in young but not aged rats, and females showing lower CSF/serum albumin ratios and reduced BBB permeability to gadolinium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 and C123-C127 appropriately summarize prior literature with proper citations. The hormonal hypothesis is well-supported by animal studies (C23-C24) and human studies (C25-C26), though the age-dependent effects (C124) and regional variation in estrogen receptors (C126) add important nuance. These claims provide appropriate context for interpreting the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Alternative mechanisms for sex differences in BBB function include X-chromosome-linked immune function genes (e.g., TIMP) and lifestyle factors such as sleep apnea prevalence in older males, which has been associated with compromised glymphatic clearance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C128-C129 cite relevant genetic mechanisms, but claim C131 makes a speculative inference that sleep apnea 'could partially explain' the lower kw in older males without data on sleep apnea prevalence in the study cohort. While C130 appropriately cites the association between sleep apnea and glymphatic function, the application to the current findings is speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study used a single PLD of 1800 ms, which was sufficient for the observed ATT values but may be inadequate for populations with longer ATT (e.g., stroke patients). Future improvements could include multi-PLD protocols and motion-compensated diffusion-weighted pCASL for higher spatial resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C139 appropriately acknowledge methodological limitations and suggest improvements. The justification for the single PLD (C135) is supported by the observed ATT values and citation to St Lawrence et al., 2012. The recommendations for multi-PLD (C137) and MCDW-pCASL (C139) are appropriately cited and represent reasonable future directions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "The study's findings of reduced kw with aging contrast with other studies reporting reduced BBB exchange time (Tex) in older participants. The authors hypothesize this reflects different BBB components assessed by different techniques, with DP-pCASL potentially measuring delayed exchange across astrocyte end-feet due to AQP-4 loss rather than tight junction leakage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C143 appropriately cite contrasting findings from other studies. However, claims C144-C146 present speculative mechanistic hypotheses about intermediate water exchange compartments and AQP-4 function that are not directly tested in the current study. Claim C147 appropriately acknowledges that these hypotheses require further investigation, particularly with animal models targeting specific BBB components.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "The study included race as a covariate to account for potential variations in brain perfusion, but acknowledges that race-related differences may reflect complex interactions with education, lifestyle, healthcare access, and social determinants of health. Other factors (hematocrit, menopausal status, vascular risk factors) were not included due to limited availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C155 appropriately acknowledge limitations and confounding factors. The inclusion of race as a covariate (C148) is justified by prior literature (C150), and the authors appropriately note that race is not a biological variable but may reflect social determinants (C149). The acknowledgment of unmeasured confounders (C152-C153) and the attempt to minimize their impact through diverse sampling (C154) demonstrate appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "DP-pCASL measures BBB water exchange rate (kw) using endogenous water as a tracer, which exchanges across the BBB through passive diffusion, active co-transport, and facilitated diffusion via AQP4. This approach may provide a more sensitive metric of BBB function than DCE MRI and has been validated in animal models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C35 appropriately describe the DP-pCASL technique with proper citations (St Lawrence et al., 2012; Shao et al., 2019; Papadopoulos and Verkman, 2013; Ohene et al., 2019; Tiwari, 2015; Tiwari et al., 2017). The validation in animal models (C35) and the mechanistic basis for water exchange (C32) provide strong support for the technique's validity. The claim that kw may be more sensitive than DCE MRI (C34) is an inference but is reasonably supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Prior studies have found reduced BBB kw in multiple CNS disorders (obstructive sleep apnea, schizophrenia, multiple sclerosis, hereditary cSVD) and associations with glymphatic function, amyloid deposition, APOE \u03b54 alleles, and lower CSF A\u03b2-42, suggesting links between BBB water exchange, glymphatic clearance, and AQP4 dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C48 appropriately summarize prior literature with proper citations. The associations between reduced kw and various pathological conditions (C36-C39, C42-C44) are well-documented. The mechanistic links to AQP4 dysfunction (C41, C46) and glymphatic function (C40, C46-C48) provide important context for interpreting the current findings, though these remain correlative rather than causal.",
+    "result_type": "MINOR"
+  }
+]

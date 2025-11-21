@@ -1,0 +1,462 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C45",
+      "C46",
+      "C54"
+    ],
+    "result": "The htSMT platform achieves unprecedented throughput, capable of imaging >10^6 cells/day from >13,000 assay wells and screening >10^4 compounds. This throughput is achieved by imaging six fields of view per well for 1.5 seconds each, yielding >10,000 trajectories sufficient for accurate protein dynamics estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C45, C46 consistently report the platform's throughput capabilities with specific quantitative values. Claim C54 provides the methodological basis showing that 6 FOVs at 1.5s each yields sufficient trajectories (>10,000) for accurate measurements. The consistency across multiple claims and the detailed experimental validation support these throughput specifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "The htSMT platform can comprehensively characterize compound hits in a single experimental modality, determining potency, pathway selectivity, target engagement, and mechanism of action. Chemical screening using htSMT is specific, robust, and reproducible, enabling classical drug discovery activities including compound library screening and structure-activity relationship elucidation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 enumerate specific capabilities that are demonstrated throughout the manuscript with concrete examples (e.g., potency measurements in C78, selectivity in C81, pathway analysis in C100-C103). Claims C47-C49 provide overall validation of the platform's performance characteristics. The extensive experimental data including dose-response curves, kinetic measurements, and multi-target comparisons support these capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Kinetic htSMT experiments can distinguish between on-target and on-pathway modulators based on temporal dynamics. Direct ER modulators act rapidly (t1/2 = 1.6 min for estradiol), HSP90 inhibitors show a 5-7 min delay followed by slower kinetics (t1/2 = 17.5-19.3 min), and proteasome inhibitors act even more slowly with effects emerging after 40 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 provide detailed quantitative kinetic data for different compound classes with specific time constants. Claim C7 and C125 state the capability to distinguish on-target from on-pathway modulators, which is directly supported by the distinct temporal profiles observed. The kinetic data are internally consistent and provide clear mechanistic differentiation between compound classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The htSMT system achieves a localization error of 39 nm, which is comparable to other benchmark stroboscopic illumination datasets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 provides a specific quantitative measurement (39 nm) with reference to supporting figure data. Claim C53 validates this performance by comparison to published benchmarks with appropriate citations (Hansen et al., 2018; Heckert et al., 2022). The measurement methodology using immobile H2B-Halo trajectories is appropriate for determining localization error.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "In the absence of hormone, all four SHR proteins exhibit similar dynamic profiles with 3.4-4.3 \u00b5m\u00b2/s diffusion coefficients, showing no correlation with molecular weight. Upon agonist addition, a dramatic increase in immobile trajectories occurs, attributed to chromatin binding, with ER showing the most pronounced effect (34% to 87% bound fraction).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 provide consistent quantitative measurements of SHR dynamics with specific values for diffusion coefficients and bound fractions. The lack of correlation with molecular weight (C56) is an important observation distinguishing cellular from in vitro behavior. The attribution to chromatin binding (C58) is reasonable given the use of a 0.1 \u00b5m\u00b2/s threshold validated against H2B (C59). The data are internally consistent and supported by figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "SMT can detect functionally relevant changes in transcription factor dynamics and accurately differentiate ligand/target specificity directly within the cellular environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by the extensive dose-response data showing receptor-specific responses to cognate ligands (C60, Figure 2), the lack of cross-reactivity with non-cognate antagonists (C81), and the correlation with functional outcomes demonstrated in RNA-seq experiments. The specificity and sensitivity demonstrated across multiple SHRs validate these capabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The bioactive compound screen demonstrated high reproducibility and robustness, with high agreement between replicates (R\u00b2 = 0.92 for active molecules), robust assay window (Z'-factor = 0.79), consistent control potency (within 3-fold), and tight negative control distribution. All 30 expected ER modulators significantly increased fbound.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C68 provide comprehensive quality metrics for the screening campaign with specific quantitative values. The Z'-factor of 0.79 (C64) indicates excellent assay quality. The detection of all 30 expected ER modulators (C68) demonstrates sensitivity and validates the approach. The consistency metrics (C65, C66) and cell numbers (C67) support the robustness of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70"
+    ],
+    "result": "Cell-to-cell variability was the single largest contributor to overall assay variability and stabilized after approximately 1000 jumps.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are supported by the variance decomposition analysis shown in Figure 3\u2014figure supplement 3B,C. The finding that cell-to-cell variability dominates over technical sources (microscope, plate, well, FOV) is important for assay design. The stabilization after ~1000 jumps provides a rational basis for the imaging parameters chosen (C54).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "All known ER modulators\u2014both agonists and antagonists including SERDs and SERMs\u2014increased fbound with potencies ranging from 9 pM (GDC-0927) to 4.8 nM (GDC-0810). All five tested modulators increased fbound within minutes of compound addition with no evidence of transient intermediate states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 describe a surprising but well-documented finding that both agonists and antagonists increase chromatin binding. The potency range (C78) spans three orders of magnitude, demonstrating assay sensitivity. The rapid kinetics (C79) and lack of transient states (C80) are supported by time-course data in Figure 4C. This counter-intuitive finding is validated by comparison to prior FRAP studies (C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "SERMs show lower maximal increases in fbound compared to SERDs. Both agonist and antagonist treatment increase residence times (decrease k*off), but changes in dissociation rate are not proportional to increases in fbound, suggesting that ligand-imposed increases in k*on also contribute to chromatin association.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C89 describe mechanistic insights from residence time measurements. The differential effects of SERMs vs SERDs (C82) are quantified in Figure 4D. The FRAP validation (C83-C84) provides orthogonal confirmation. The residence time analysis (C85-C87) and kinetic modeling (C88-C89) provide mechanistic insight, though the inference about k*on (C89) is indirect since it cannot be measured directly. The logic is sound given the constraints of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "For GDC-0927 structural analogs, SMT measurements of fbound strongly correlate with cell viability (R\u00b2 = 0.83-0.84) while ER degradation shows poor correlation. SMT EC50 values were on average 10-fold lower than cell growth assays, suggesting higher sensitivity for identifying novel therapeutic agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C93, and C94 provide direct comparisons between assay modalities with specific correlation coefficients. The strong correlation between SMT and cell viability (R\u00b2 = 0.83-0.84, C94) versus poor correlation for ER degradation (C91, C93) is clearly demonstrated in Figure 5. The 10-fold sensitivity advantage (C95) is quantified. However, claim C96 about identifying compounds that wouldn't show effects in other assays is speculative and represents a potential future application rather than demonstrated capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Using a 5% change in fbound threshold, 239 compounds affected ER mobility with high reproducibility between replicates (R\u00b2 = 0.92, slope = 0.94). Compounds clustered by target class: HSP90 and proteasome inhibitors increased fbound, while CDK and mTOR inhibitors decreased fbound. CDK9-specific inhibitors affected ER dynamics more strongly than CDK4/6 inhibitors, while ALK, BTK, and FLT3 inhibitors showed no effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 establish the screening threshold and reproducibility metrics. Claims C100-C105 describe pathway-specific effects that are consistent across structurally distinct compounds targeting the same pathway, supporting the biological relevance of the observations. The selectivity demonstrated by lack of effect from ALK/BTK/FLT3 inhibitors (C105) and differential CDK family effects (C104) validate the specificity of the measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Pathway inhibitors showed potencies ranging from sub-nanomolar to low micromolar, similar to reported cellular target potencies. Each SHR (ER, AR, PR) showed distinct response profiles to the compound set, with HSP90 inhibitors increasing fbound for ER, AR, and PR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C106-C107 validate the biological relevance of the measurements by showing agreement with known target potencies (supported by extensive citations). Claims C108-C109 demonstrate that the effects are target-specific and biologically meaningful. The consistency of HSP90 effects across multiple SHRs (C109) supports a conserved mechanism consistent with the known chaperone function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "HSP90 inhibition increases fbound but decreases the number of long binding events (2-4 fold) while maintaining similar binding times, suggesting increased k*on with k*off largely unaffected. Proteasome inhibition increases both the number and duration of long binding events. Each compound class (direct ER modulators, HSP90 inhibitors, proteasome inhibitors) alters ER dynamics through distinct mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C131 describe mechanistic differentiation based on residence time measurements shown in Figure 6D,E. The contrasting effects of HSP90 vs proteasome inhibition (C126, C128) provide clear mechanistic distinction. The inference about k*on and k*off (C127) is reasonable given the data, though indirect. Claim C131 synthesizes the kinetic and residence time data to conclude distinct mechanisms, which is well-supported by the totality of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C8",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Integrated pathway analysis using htSMT recapitulated the network of known ER interaction partners. The impact of HSP90 inhibition on ER-chromatin association and the link between CDK/mTOR inhibition and ER dynamics have not been previously described.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C8 and C132 state that known interactions were recapitulated, which is supported by the identification of expected pathway components (HSP90, proteasome) and validation against literature. Claims C133-C134 assert novelty for specific findings. While the authors state these have not been described, this is difficult to verify comprehensively. However, the findings are well-documented in the manuscript and represent genuine contributions regardless of absolute novelty.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C9",
+      "C50",
+      "C51"
+    ],
+    "result": "Integrated pathway analysis suggested potentially novel, kinase-mediated regulatory mechanisms for ER. Analysis of protein motion at scale reveals detailed information about pathway interactions and signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C50, and C51 describe the discovery potential of the platform. The identification of CDK9 and mTOR pathway effects on ER dynamics (C102-C103, C114-C115) provides concrete examples of pathway interactions revealed by the approach. The phosphorylation mutant experiments (C116-C118) provide additional mechanistic insight, though they also reveal complexity requiring further investigation. The claims are appropriately qualified as \"suggested\" and \"potentially novel.\"",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C94",
+      "C146",
+      "C147",
+      "C148"
+    ],
+    "result": "htSMT revealed a new correlation between ER dynamics and the ability of ER antagonists to suppress cancer cell growth (R\u00b2 = 0.83-0.84). SMT measurements proved more reliable than ER degradation assays for predicting cell proliferation effects, with saturable dose responses observed at much lower concentrations, suggesting higher sensitivity for identifying novel therapeutic agents.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C94, and C146 describe the correlation between SMT measurements and functional outcomes with specific quantitative values. Claim C147 documents the sensitivity advantage with concrete data. However, claim C148 about future utility for identifying novel agents is somewhat speculative\u2014it's a reasonable inference from the data but represents potential rather than demonstrated capability. The core finding of correlation with cell growth is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "An ER triple point mutant (S104A/S106A/S118A) lacking previously defined phosphorylation sites still responded to CDK and mTOR pathway inhibitors, suggesting that additional phosphorylation sites can mediate these effects or that other molecular targets act indirectly to alter ER motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C116 presents experimental data showing the mutant still responds to pathway inhibitors. Claims C117-C118 offer two alternative mechanistic explanations. The data clearly show the mutant responds (Figure 6\u2014figure supplement 3), which is surprising given the mutation of known sites. The alternative explanations are reasonable hypotheses but cannot be distinguished with the current data. This represents an important observation requiring follow-up work to resolve the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The finding that both agonism and antagonism can increase chromatin binding has been reported for ER but is not a general feature of SHRs. PR antagonist mifepristone behaves similarly to ER, while AR antagonists (Enzalutamide, Darolutamide) and GR antagonist (AL082D06) cause decreased chromatin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 cites prior work (Guan et al., 2019) establishing the ER behavior. Claims C72-C74 provide experimental data showing differential behavior across SHR family members, supported by Figure 3\u2014figure supplement 4 and appropriate citations. This demonstrates that the mechanism is receptor-specific rather than universal, which is an important biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "Selective antagonists of AR and GR did not induce significant modulation of ER dynamics, highlighting the specificity of htSMT for characterizing interactions between small molecules and their cognate targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is supported by experimental data in Figure 4\u2014figure supplement 1D showing lack of cross-reactivity. This negative control is important for validating the specificity of the platform and demonstrating that observed effects are target-specific rather than artifacts or non-specific cellular responses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "CDK4/6 inhibitors are co-administered with SERDs and SERMs to improve therapeutic outcomes, but CDK4/6 inhibition only minimally affects ER dynamics in SMT, supporting the view that this combination functions through a non-redundant ER-independent mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 establishes clinical context with appropriate citations. Claim C136 presents experimental data showing minimal effect on ER dynamics (Figure 3). Claim C137 interprets this finding in light of prior work (Finn et al., 2016). The logic is sound: if CDK4/6 inhibitors worked through ER dynamics, they should show effects in the SMT assay. The lack of effect supports an ER-independent mechanism, consistent with cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C138",
+      "C139"
+    ],
+    "result": "Mechanistically, an increase in fbound suggests that molecular interactions have been stabilized (made more probable or longer-lasting), while a decrease suggests interactions have been made less robust.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide a mechanistic framework for interpreting fbound changes. The interpretation is supported by the residence time measurements (C85-C89, C126-C128) showing that fbound changes can result from alterations in either k*on or k*off. This framework is consistent with basic principles of binding equilibria and is validated by the experimental data showing different mechanisms for different compound classes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "ER antagonists may function by promoting binding to non-specific decoy chromatin sites. Previous work showed that SERDs induce an alternate ER conformation inhibiting co-factor recruitment. If co-factors like CBP and p300 stabilize ER-chromatin binding, efficacious inhibitors might exhibit shorter binding times compared to agonists.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims present mechanistic hypotheses based on prior work (Guan et al., 2019; Van Royen et al., 2014, 2012). Claims C140 and C142 are explicitly speculative (\"may function,\" \"might exhibit\"). Claim C141 cites prior structural work. While the hypotheses are reasonable and consistent with the data, they represent interpretive frameworks rather than directly demonstrated mechanisms. The residence time data (C143-C144) provide some support but don't definitively prove the decoy site or co-factor stabilization models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "SERMs (4-OHT, GDC-0810) dramatically increase ER-chromatin binding frequency but only modestly increase binding times, while SERDs (fulvestrant, GDC-0927) strongly increase both frequency and residence time. This suggests agonists and antagonists operate through a previously unappreciated, unified mechanism of chromatin immobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C144 present quantitative observations from residence time measurements that clearly differentiate SERMs from SERDs. Claim C145 synthesizes these findings into a mechanistic model. The data support differential effects on k*on vs k*off for different compound classes. However, calling it a \"unified mechanism\" may be overstated given the clear differences between SERMs and SERDs. The finding merits further investigation as stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "SMT can identify promising compounds whose activity might not otherwise be measurable, provide mechanistic insight in the native cellular environment, and will prove broadly applicable to elucidating biological mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C150 are supported by the 10-fold sensitivity advantage over cell growth assays (C95) and the ability to detect subtle effects like the ~5% fbound changes with mTOR inhibitors. Claim C151 about broad applicability is a reasonable extrapolation given the successful application to multiple SHRs and diverse compound classes, though it represents future potential rather than demonstrated fact. The claims are appropriately qualified and supported by the extensive validation presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The introduction establishes the biological and technical context for the work, reviewing prior literature on protein dynamics in cells, microscopy techniques, SMT applications, and steroid hormone receptor biology. The authors identify a gap: SMT has not been adapted to high-throughput settings despite its potential for analyzing complex systems and identifying compounds affecting protein motion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C44 are primarily literature review and background context, all supported by appropriate citations to prior work. These claims establish the rationale for developing htSMT by documenting: (1) the importance of protein dynamics in cells, (2) the evolution of microscopy techniques, (3) applications of SMT, (4) the lack of high-throughput SMT, and (5) the biological importance of SHRs. The citations appear appropriate and the characterization of the field is reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Prior work has shown that proteasome inhibition leads to ER immobilization on chromatin, and that ER is phosphorylated by CDK, Src, and GSK-3 through MAPK and PI3K/AKT signaling pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims cite specific prior work (Stenoien et al., 2001; Franco et al., 2018; Shah and Rowan, 2005; Anbalagan and Rowan, 2015) establishing known regulatory mechanisms for ER. The citations provide context for interpreting the screening results and are used appropriately to support the biological plausibility of the observed effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "CDK inhibition led to an increase in ER mobility (decreased fbound), while inhibition of PI3K, AKT, or other upstream kinases showed no effect on ER mobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims present experimental observations from the screening data shown in Figure 3. The differential effects of CDK vs PI3K/AKT inhibition are clearly documented. This finding is somewhat surprising given prior literature (C111-C113) suggesting PI3K/AKT pathway involvement, highlighting the value of unbiased screening approaches.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C45",
+      "C46",
+      "C47",
+      "C188",
+      "C189",
+      "C190",
+      "C191"
+    ],
+    "result": "Between October 2017 and September 2019, 215 livestock abortion cases (71 cattle, 44 sheep, 100 goats) were investigated across 15 wards in northern Tanzania, with most households (115/150) having only one event investigated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C45-C47, and C188-C191 provide consistent descriptive statistics about the study design, location, and case distribution. The data are directly reported from the study records and represent basic operational metrics that are internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C8",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C148"
+    ],
+    "result": "Aetiological attribution was achieved in 19.5% (42/215) of abortion cases, with 41 cases attributed using PCR and one using serology alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C88-C91, and C148 consistently report the attribution rate and diagnostic methods used. The data are directly reported from the study and represent a straightforward calculation (42/215 = 19.5%).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C92",
+      "C93",
+      "C107",
+      "C134"
+    ],
+    "result": "The timeliness of investigation significantly affected attribution success, with each daily delay decreasing the odds of attribution by 46.1% (z=-2.1, p=0.03).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C92-C93, C107, and C134 consistently report the statistical relationship between delay and attribution. The analysis is supported by regression modeling (Table 2) and the p-value indicates statistical significance. The effect size is substantial and biologically plausible given sample degradation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C10",
+      "C135",
+      "C136"
+    ],
+    "result": "Histopathology proved less useful than PCR due to rapid deterioration of samples, which affected diagnostic utility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C135-C136 are supported by citation to Thomas et al., 2022, which provides the detailed diagnostic comparison. The conclusion is consistent with the finding that delays negatively impact attribution (C92-C93) and is biologically plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C65",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Vaginal swabs provided practical and sensitive material for pathogen detection, being collected in 99.1% of cases and yielding more attributions than placental or foetal samples due to greater accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C65, and C141-C145 are supported by the high collection rate (213/215 cases) and Figure 5 showing diagnostic yields by sample type. The practical advantages (less handling, more reliable access) are documented in the operational data (C62-C64).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C94",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Attribution was significantly less likely in goats than cattle, possibly because fewer data are available worldwide on goat abortion causes and the diagnostic panel may not have been as relevant for goats.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 reports a statistically significant finding from regression analysis. However, claims C156-C158 offer only speculative explanations without supporting data. Alternative explanations (sample quality, pathogen prevalence differences, reporting bias) are not adequately explored. The result requires additional investigation to determine causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The availability of placenta, foetus, or milk samples did not significantly affect the odds of achieving aetiological attribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C97 are supported by the regression analysis (Table 2) showing non-significant effects for these variables. This finding is somewhat counterintuitive but may reflect the effectiveness of vaginal swabs (C11, C142) in compensating for missing tissue samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C108",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "There was wide variation in case reporting by LFOs (median=5, range 0-84), with 70% of cases reported by just 3 LFOs, and this variation was not associated with distance from headquarters but suggested differential engagement and motivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 and C126-C127 provide consistent descriptive statistics. Claim C61 (supported by C108, C125) shows no correlation with distance (R\u00b2=-0.07, p=0.75). Claim C128 offers a reasonable inference about engagement/motivation based on the observed variation, though direct measurement of these factors was not conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C60",
+      "C61"
+    ],
+    "result": "The median interval between report and investigation was 1 day (range 0-4 days), with no significant association between this interval and the distance from ward to headquarters (R\u00b2=-0.07, p=0.75).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61 are supported by direct data reporting and Pearson correlation analysis. The lack of correlation with distance is surprising but statistically documented. Figure 2 provides visual confirmation of the delay distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C119",
+      "C120"
+    ],
+    "result": "The overall sensitivity of the surveillance platform was low (0-12.4% for cattle, 0-1.2% for goats, 0-0.3% for sheep), with the highest ward-level sensitivity (12.4%) below the 34% mean reported for French bovine abortion surveillance systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C48-C50 report calculated sensitivity metrics, but the denominator (expected abortions) relies on uncertain estimates from ministry records and cross-sectional studies (acknowledged in text). The comparison to French systems (C119) may not be appropriate given substantial differences in infrastructure, resources, and farming systems. The conclusion about low sensitivity (C120) is reasonable but should be interpreted cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C109",
+      "C163"
+    ],
+    "result": "Livestock abortion was common in the study area, with 28.3% of cattle herds, 58.3% of goat herds, and 66.4% of sheep herds experiencing abortion in the preceding 12 months, with mean cases per affected herd of 3.7 (cattle), 9.0 (goats), and 6.7 (sheep).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56, C109, and C163 consistently report household questionnaire data on abortion prevalence. The data are internally consistent and represent direct reports from farmers. The high prevalence in small ruminants compared to cattle is notable and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C110",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Reported abortions occurred significantly more often than expected in non-indigenous (cross-bred and exotic) cattle and goats compared to local breeds, consistent with studies from Ethiopia, Nigeria, and India showing breed effects on abortion risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C70 report statistically significant findings with appropriate confidence intervals and p-values. However, claim C167 acknowledges that results may reflect reporting bias rather than true biological differences (higher-value animals more closely monitored). The comparison to other studies (C165-C166) supports biological plausibility but doesn't resolve the reporting bias issue. Additional data on actual breed-specific abortion rates (not just reported cases) would be needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "Among dams with previous pregnancies, 16.7-33.3% had experienced previous abortions, with 41.7% of cattle and 47.1% of goats having multiple previous abortions, and non-indigenous breeds more likely to have previous abortion history.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 and C168-C170 consistently report questionnaire data on abortion history. The data are internally consistent and the finding about non-indigenous breeds (C170) aligns with the breed-specific abortion patterns (C67-C69). The extreme cases (C77-C78) are documented but represent outliers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Recent stressful events were reported in 22.5-37.7% of aborting dams, but dams with attribution were no more likely to have experienced stress than those without attribution, and attribution to stress is challenging given its common occurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C82 report questionnaire data and statistical analysis showing no association between stress and attribution. Claims C153-C155 appropriately acknowledge the difficulty in establishing causation when the exposure (stress) is common. The conclusion is appropriately cautious.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C111",
+      "C184"
+    ],
+    "result": "Abortion cases were reported throughout the 24-month study period with more cases during drier periods, but there was no significant correlation between monthly rainfall and case numbers (r=-0.005, p=0.8).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C85-C87 report observational data and correlation analysis. The visual pattern (C86, Figure 4) suggests seasonality, but the statistical test (C87) shows no significant correlation. This discrepancy may reflect insufficient power, non-linear relationships, or confounding by reporting patterns. Claim C184 appropriately suggests further investigation is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "Zoonotic pathogens were detected in 79.2% of cases with pathogen detection, and 23.5% of all abortion cases involved human assistance with delivery (likely without PPE), with 20% of assistants being females of reproductive age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C101 and C174-C176 consistently report data on zoonotic exposure risk. The calculations are straightforward (61/77=79.2%, 40/215=23.5%). The inference about lack of PPE (C175) is reasonable given the rural setting. Claim C176 appropriately identifies a high-risk group based on established knowledge about Toxoplasma gondii.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C44",
+      "C115",
+      "C116"
+    ],
+    "result": "The platform identified important livestock pathogens including RVFV (6.6%), Neospora caninum (4.7%), pestiviruses (4.2%), Coxiella burnetii (2.8%), Brucella sp. (0.5%), and Toxoplasma gondii (0.5%), including previously unrecognized problems like Neospora and novel pestiviruses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C44 reports primary diagnostic data with clear percentages. Claims C115-C116 are supported by citation to Thomas et al., 2022, which provides detailed diagnostic methods and validation. The identification of previously unrecognized pathogens demonstrates the value of the surveillance approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C117",
+      "C118"
+    ],
+    "result": "The surveillance platform provided early warning of an RVF outbreak in peri-urban smallholder cattle, which catalyzed public health investigations identifying several human RVF cases including one fatality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C118 are supported by citations to de Glanville et al., 2022 and Madut et al., 2024. This demonstrates the practical utility of abortion surveillance for detecting zoonotic disease outbreaks with public health significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C112",
+      "C113",
+      "C114",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The study demonstrated the feasibility of establishing a livestock abortion surveillance system in Tanzania that can generate valuable aetiological and epidemiological information not captured by existing systems, with key success factors including community engagement, practical sample collection, and molecular diagnostics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C13, C102-C106, C112-C114, and C177-C180 represent the main conclusions of the study. These are well-supported by the operational data (215 cases investigated, 19.5% attribution rate, detection of novel pathogens, early warning of RVF outbreak). The identification of key success factors (C180) is based on the documented operational experience.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The 19.5% attribution rate was comparable to the 25-45% range in industrialized systems, and could likely be improved by testing for additional pathogens, using locally-relevant diagnostic panels, and applying metagenomic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C149 compares the study's attribution rate to published benchmarks (supported by citations). However, the comparison may not be appropriate given substantial differences in resources, infrastructure, and sample quality between settings. Claim C151 is speculative about potential improvements without supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "Despite being the first abortion surveillance platform of this kind in the study area and facing logistical challenges, the study demonstrates feasibility and utility, though wide variation in sensitivity across wards has implications for data representativeness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C124 provide appropriate context and caveats for interpreting the results. The acknowledgment of limitations (C124) regarding representativeness is important given the low and variable sensitivity documented in C48-C50 and C57-C59.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "The LFO infrastructure in Tanzania provides a valuable but underutilized platform for disease surveillance, and future efforts should focus on engaging, training, and motivating farmers and front-line workers to improve reporting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C133 represent reasonable recommendations based on the documented variation in LFO performance (C57-C59) and the lack of association with distance (C61). The conclusion about underutilization (C133) is supported by the authors' knowledge of existing systems.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Delays in investigation were caused by remoteness and multiple simultaneous reports, underscoring the importance of rapid response and locally suitable transport, with future systems requiring protocols that don't depend on long-distance travel by trained investigators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 documents operational challenges from the study experience. Claims C138-C140 represent reasonable recommendations based on the documented impact of delays on attribution (C92-C93). The suggestions are practical and address identified limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Recent studies estimate annual gross losses from livestock abortion in Tanzania at $262 million USD, indicating that data on case numbers and affected species/breeds will be valuable for highlighting the syndrome's importance for productivity, livelihoods, and food security.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C161 are supported by citation to Semango et al., 2024. Claim C162 represents a reasonable inference about the value of surveillance data given the documented economic impact. This provides important context for the public health and development significance of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173"
+    ],
+    "result": "Chronic repeat abortions can arise from pathogens like Neospora caninum and pestiviruses detected in this study, and repeat aborting dams could be candidates for slaughter to improve herd productivity and reduce zoonotic transmission risk, though this may result in sale rather than slaughter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C171 is supported by veterinary knowledge and the study's diagnostic findings (C44). Claims C172-C173 represent recommendations with potential benefits but also acknowledged risks. The suggestion lacks supporting data on the effectiveness or feasibility of such interventions in the study context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C181",
+      "C182",
+      "C183",
+      "C185",
+      "C186",
+      "C187"
+    ],
+    "result": "Future research should include larger-scale surveillance, investigation of point-of-care testing and mobile technology, examination of the abortion-rainfall relationship, and broader syndromic surveillance to provide evidence for effective livestock health interventions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181-C187 represent appropriate recommendations for future research based on the study's findings and limitations. These are reasonable extensions of the work that would address identified gaps and uncertainties.",
+    "result_type": "MINOR"
+  }
+]

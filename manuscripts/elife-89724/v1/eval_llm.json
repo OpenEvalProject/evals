@@ -1,0 +1,315 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "hiPSCs cultured in suspension conditions without microcarriers or ECM components show increased spontaneous differentiation compared to adherent culture. Suspension-cultured hiPSCs formed round cell assemblies and exhibited increased expression of differentiation markers (PAX6, SOX17, T) at both mRNA and protein levels, decreased TRA1-60 expression, and altered global gene expression patterns favoring differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence converge to support this result: RT-qPCR (C13), reporter cell lines with flow cytometry (C14-C16), Western blot (C17), flow cytometry for pluripotency markers (C18), and RNA-seq with bioinformatics analysis (C19-C20). The experimental design includes appropriate controls (adherent culture) and multiple technical approaches validate the same conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Wnt signaling inhibitors (IWR-1-endo, IWP2) suppress spontaneous mesendodermal differentiation in suspension-cultured hiPSCs but are insufficient to suppress ectodermal differentiation. Treatment with Wnt inhibitors reduced T and SOX17 expression to adherent culture levels, while PAX6 expression showed minimal or no reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is well-supported by RT-qPCR data (C26-C27), Western blot analysis (C28), and morphological observations (C24-C25). The use of both inhibitors (IWR-1-endo, IWP2) and an activator (CHIR99021) as controls strengthens the conclusion. The differential effect on mesendoderm versus ectoderm markers is consistently demonstrated across multiple experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "PKC inhibitors, particularly those targeting PKC\u03b2, suppress spontaneous neuroectodermal differentiation in suspension-cultured hiPSCs. Screening identified G\u00f66983 as effective in inhibiting PAX6 expression, and PKC\u03b1 and PKC\u03b2 expression and activation were elevated in suspension conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screening approach (C30) identified PKC inhibitors, dose-response experiments confirmed the effect (C32), and mechanistic data showed elevated PKC\u03b2 expression and phosphorylation in suspension conditions (C36-C37). However, some PKC inhibitors (sotrastaurin, Ro-32-0432) showed growth inhibition (C35), indicating specificity issues that were appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Combined treatment with PKC\u03b2 inhibitor (LY333531) and Wnt inhibitor (IWR-1-endo) maintains hiPSC self-renewal in suspension conditions by suppressing both ectodermal and mesendodermal differentiation. This combination increased pluripotency marker expression, decreased differentiation markers, and upregulated na\u00efve pluripotency markers (KLF2, KLF5) without affecting cell survival.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is comprehensively supported across five different hiPSC lines (C45-C47) using multiple assays: morphology (C39), RT-qPCR (C40-C41, C48), Western blot (C42), flow cytometry (C43), and apoptosis assays (C49). The consistency across multiple cell lines and the lack of cytotoxic effects (C49-C50) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Long-term suspension culture (10 passages) with PKC\u03b2 and Wnt inhibitors maintains hiPSC self-renewal, pluripotency, and genomic integrity. LY333531 treatment resulted in more uniform spherical aggregates and higher OCT4-positive cell numbers compared to G\u00f66983, with maintained differentiation capacity and normal karyotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by cell growth data (C51), morphological analysis (C52), immunostaining (C53), EB formation assay demonstrating tri-lineage differentiation (C54), and CNV array analysis showing normal karyotype (C55). The comparison between LY333531 and G\u00f66983 provides internal validation of the specific PKC\u03b2 inhibitor's superiority.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The suppressive effect of PKC\u03b2 and Wnt inhibitors on spontaneous differentiation is generalizable across multiple conventional culture media (StemFit AK02N, StemScale, mTeSR1). In all tested media, suspension culture without inhibitors led to spontaneous differentiation, which was suppressed by adding the inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by consistent findings across three different commercial media using morphology, RT-qPCR, RNA-seq (C57-C58), and flow cytometry/immunocytochemistry (C59). Testing multiple media types strengthens the generalizability of the approach, though the number of replicates and cell lines tested per medium varies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Global transcriptome analysis reveals that PKC\u03b2 and Wnt inhibitors (IWRLY condition) regulate gene expression to suppress spontaneous differentiation while maintaining expression signatures of suspension culture. IWRLY conditions upregulated pluripotency genes (KLF4, ID1), epithelial cell-cell interaction genes (CDH1), and na\u00efve pluripotency markers (KLF2, KLF4, KLF5, DPPA3), while downregulating differentiation-associated transcription factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by comprehensive RNA-seq analysis with hierarchical clustering (C62-C63), differential gene expression analysis (C64-C65), and pathway enrichment analysis (C66-C69). The interpretation that IWRLY conditions may shift hiPSCs toward na\u00efve pluripotent states (C72) is appropriately presented as suggestive rather than definitive, supported by both RNA-seq and RT-qPCR data across multiple cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Bioreactor culture of hiPSCs with PKC\u03b2 and Wnt inhibitors maintains undifferentiated state at optimized conditions (seeding density 1-2\u00d710\u2075 cells/mL, stirring speed 50-150 rpm). Cells showed active proliferation with energy consumption, maintained expression of pluripotency markers (>90% positive for NANOG, OCT4, SOX2), and retained normal karyotype after five passages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by systematic optimization experiments (C73-C75), flow cytometry showing suppression of differentiation markers (C76), metabolite measurements indicating active metabolism (C79-C81), RT-qPCR and flow cytometry for pluripotency markers (C82-C83), and karyotype analysis (C84). The optimization approach and comprehensive characterization provide strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Large-scale bioreactor culture (320 mL) with PKC\u03b2 and Wnt inhibitors enables mass production of clinical-grade hiPSCs with quality equivalent to adherent culture. Starting from 1\u00d710\u2075 cells/mL, cells proliferated ~10-fold in 3-4 days producing ~300 vials, with comparable proliferation rates, high viability (>90%), maintained pluripotency markers (>90% positive), normal karyotype, and equivalent differentiation capacity to adherent-cultured cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is comprehensively supported by production data (C86), proliferation rate comparison (C87), viability and growth measurements (C88-C89), flow cytometry (C90), karyotype analysis (C91), and functional differentiation assays into three germ layers and specific cell types (C92-C93). The use of a clinical-grade hiPSC line and GMP-compliant medium strengthens the translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Single-cell cloning of hiPSCs in suspension conditions is feasible with IWR-1-endo treatment. Cloning efficiency in suspension without treatment was <10% compared to ~30% in adherent culture, but IWR-1-endo treatment increased efficiency to >20%. Single-cell-derived clones expanded to >3 million cells with high OCT4 and TRA1-60 expression by day 28.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by cloning efficiency measurements (C96-C99) and characterization of expanded clones (C101). However, LY333531 decreased cloning efficiency (C99), suggesting the optimal condition for cloning differs from maintenance culture. The successful expansion and characterization of seven clones provides adequate validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Direct cryopreservation and thawing of hiPSCs in suspension conditions is successful. Frozen hiPSCs cultured in suspension with IWR-1-endo and LY333531 recovered and expanded to >3 million cells with high OCT4 and TRA1-60 expression by day 10 after thawing, demonstrated across multiple hiPSC lines and media.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by successful recovery experiments with the 201B7 line (C103) and validation across three additional lines in mTeSR1 medium (C104). The consistency across multiple lines and media types strengthens the conclusion, though the number of replicates (n=3-4) is modest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Transgene-free hiPSC lines can be generated from PBMCs using SeVdp infection in suspension conditions with PKC\u03b2 and Wnt inhibitors. Bulk reprogrammed cells showed uniform spherical morphology, high OCT4/TRA-1-60 expression, tri-lineage differentiation capacity in vitro and in vivo, normal karyotype, and near-complete SeVdp clearance. Single-cell-derived clones maintained these characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by morphological observations (C106), pluripotency marker expression (C107), functional differentiation assays (C108-C109, C113-C114), karyotype analysis (C110, C115), and vector clearance data (C116). The successful generation of both bulk populations and single-cell clones with comprehensive characterization provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "hiPSC lines can be generated from PBMCs using episomal vector transfection in suspension conditions with PKC\u03b2 and Wnt inhibitors. Treatment with inhibitors increased the percentage of TRA-1-60/SSEA4 double-positive cells from 59% to 78% by day 36, resulted in uniform spherical aggregates, and enabled establishment of single-cell-derived clones with pluripotency, tri-lineage differentiation capacity, and normal karyotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The result is supported by flow cytometry showing increased undifferentiated cell populations (C118), morphological observations (C119-C121), immunocytochemistry (C122), and comprehensive characterization of established clones including pluripotency markers (C123), differentiation capacity (C124-C125), and karyotype (C126). The comparison between treated and untreated conditions strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2"
+    ],
+    "result": "hiPSCs are promising for regenerative medicine, and suspension culture without microcarriers offers advantages for industrialized production including massive production, automation, cost-effectiveness, and safety assurance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established concepts in the field. C1 represents general knowledge about hiPSC potential, while C2 is a logical inference about manufacturing advantages that is widely accepted in the field and supported by the study's own results demonstrating scalability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Previous work established that hiPSCs are generally cultured under adherent conditions, and while several studies achieved suspension culture and mass expansion, complete processes from clonal generation to mass production with precise cell status control had not been achieved prior to this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize the state of the field based on appropriate citations (C7-C9) and identify the gap addressed by the current study (C10). The extensive citation list in Table 1 supports the comprehensive literature review.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study successfully completed comprehensive culture processes for hiPSCs in suspension conditions including generation from PBMCs, expansion of bulk and single-cell clones, long-term culture, single-cell cloning, direct cryopreservation/recovery, and mass production of clinical-grade lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a summary claim that is supported by the detailed experimental results presented throughout the manuscript (covered in other result groups). It accurately represents the scope of achievements demonstrated in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14"
+    ],
+    "result": "PAX6-tdTomato and SOX17-tdTomato knock-in reporter hiPSC lines were established to monitor spontaneous differentiation at single-cell resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The establishment of reporter lines is supported by data in Figure 1\u2014figure supplement 1, including genotyping, characterization of pluripotency markers, karyotype analysis, and functional validation showing tdTomato expression correlates with endogenous protein expression during differentiation.",
+    "result_type": "MINOR"
+  }
+]

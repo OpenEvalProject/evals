@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Centrosomes are membraneless organelles composed of pericentriolar material (PCM) around centrioles that grow during maturation and achieve equal sizes, which is essential for proper spindle formation and error-free cell division. Aberrations in centrosome size can lead to chromosome segregation errors and aneuploidy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 provide well-established background on centrosome structure, function, and the cell cycle. All claims are supported by appropriate citations to prior literature. These are standard facts in the field and serve as foundational context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C63",
+      "C64",
+      "C67"
+    ],
+    "result": "The autocatalytic growth model fails to ensure size equality between centrosome pairs. While it captures sigmoidal growth for single centrosomes, initial size differences are amplified during growth, with the larger centrosome outcompeting the smaller one, and the system cannot achieve equal size in physiologically relevant timescales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14, C63-C64, and C67 are supported by theoretical analysis and stochastic simulations presented in Figures 1C, 2A-C, and supplementary figures. The mathematical framework and computational results consistently demonstrate the failure of autocatalytic models to robustly control size equality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C53"
+    ],
+    "result": "Non-cooperative growth models produce non-sigmoidal growth curves that fail to match experimental data. The autocatalytic model only ensures small size differences in a narrow parameter regime with weak feedback, and diffusion does not resolve robustness issues in size control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C27-C28, and C53 are supported by parameter space analysis (Figure 2A), reaction-diffusion simulations (Appendix 4, Figure 2\u2014figure supplement 4), and comparison with experimental data. The analysis systematically explores model limitations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "PCM assembly is driven by positive feedback between scaffold proteins (Spd-2 and Cnn in Drosophila) facilitated by Polo kinase, with this mechanism conserved across organisms. Spd-2 recruits Cnn via Polo phosphorylation, and without Polo, Cnn binding is unstable and centrosome maturation is diminished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C16 and C29-C33, C54-C56 accurately summarize experimental findings from multiple cited studies (Conduit et al., Alvarez Rodrigo et al., Raff, etc.). These are well-established molecular mechanisms in the field and provide the biological foundation for the catalytic growth model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C68",
+      "C70",
+      "C75"
+    ],
+    "result": "The enzyme Polo kinase has faster turnover (~1 min) than scaffold proteins (~10 min) and high diffusivity, suggesting the active enzyme pool is shared between centrosomes. The kinase dynamics is not diffusion-limited, consistent with negligible cytoplasmic Polo gradients observed experimentally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C68, C70, and C75 are supported by FRAP data citations and theoretical diffusion calculations presented in Materials and Methods. The inference of enzyme sharing is reasonable given the timescale separation, though direct experimental validation of shared pools is acknowledged as needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C60",
+      "C62"
+    ],
+    "result": "The catalytic growth model with shared enzyme pools ensures robust size equality (~2% difference) independent of initial size differences, captures sigmoidal growth dynamics, and predicts an enzyme activation pulse at growth onset. The model matches experimental growth curves in C. elegans and Polo dynamics in Drosophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C36-C41, C60, and C62 are supported by stochastic simulations (Figure 3C-D), linear stability analysis (Appendix 3), and quantitative fits to experimental data (Figure 3E, 6C). The model successfully reproduces multiple experimental observations across organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "A finite enzyme pool is not required for robust size control in the catalytic growth model. Size equality and cooperative growth are maintained even with an unlimited pool of inactive enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by simulations with constant enzyme concentration shown in Figure 3G-H. The theoretical analysis demonstrates that the shared catalysis mechanism, rather than enzyme limitation, is the key feature ensuring size equality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The catalytic growth model captures centrosome size scaling with cell size in excellent agreement with C. elegans data. The extent of scaling depends on assembly rates and is connected to subunit pool depletion, with strong scaling occurring when assembly rates significantly exceed disassembly rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C48 are supported by model predictions fitted to experimental data (Figure 4A), parameter analysis (Figure 4B-C), and analytical derivations (Appendix 2). The model successfully explains size scaling behavior observed in different organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C77",
+      "C78"
+    ],
+    "result": "The catalytic growth model predicts that centrosomes with more active centrioles grow larger, and that final size differences are uncorrelated with initial size disparities (unlike autocatalytic models where they are strongly correlated). Final size inequality increases with decreasing subunit pool size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C77-C78 are supported by simulations (Figure 5, Figure 3\u2014figure supplement 2) and comparison with experimental observations of asymmetric centrosome sizes in Drosophila. These predictions provide testable differences between the catalytic and autocatalytic models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "In a two-component model with localized enzyme interaction, the enzyme exclusively enhances growth of individual centrosomes, creating autocatalytic feedback that leads to size inequality. Steady-state size differences increase with initial size differences, resulting in failure of robust size control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 are supported by simulations of the localized enzyme model shown in Figure 6B and Figure 6\u2014figure supplement 1. This demonstrates that enzyme localization (non-sharing) leads to the same robustness problems as simple autocatalytic models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C59",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Experimental observations show dynamic enzyme populations with fast turnover. Model predictions show centrosome size increases with enzyme concentration, growth is inhibited without enzyme, and continuous Polo activity is required to maintain the PCM scaffold, consistent with experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59, C71-C74 are supported by citations to experimental studies and model simulations (Figure 6\u2014figure supplement 2). The model predictions align with experimental observations of enzyme-dependent centrosome growth and maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76"
+    ],
+    "result": "The catalytic growth model makes explicit testable predictions about enzyme influence on centrosome size and growth, including increased size with enzyme concentration, modulation of sigmoidal growth curves, and manipulation of size scaling patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 is supported by the model framework and simulations throughout the manuscript. These predictions are clearly stated and provide experimental tests to distinguish the catalytic model from alternatives.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C17"
+    ],
+    "result": "Prior work suggests centrosomes grow cooperatively through coordinated PCM assembly mediated by signaling pathways and regulatory proteins. A previous model showed localized assembly with distributed turnover can ensure size equality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C17 accurately cite prior literature. C5 references established views on cooperative growth, and C17 cites the authors' own prior work. These provide appropriate context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "Theoretical estimates indicate diffusion timescales (~1 s for scaffold proteins over 5-10 \u03bcm) are much faster than reaction timescales (~100 s turnover), supporting a reaction-limited model for centrosome maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20, C80, C82-C83 are supported by theoretical calculations in Materials and Methods and comparison with FRAP data from cited studies. The timescale separation justifies the reaction-limited modeling approach used throughout the paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C35"
+    ],
+    "result": "The assumption of a limiting subunit pool is supported by prior research on C. elegans showing centrosome size scaling with centrosome number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C35 is supported by citation to Decker et al., 2011. This provides justification for the limiting pool assumption in the model, though the authors acknowledge this may not apply universally across organisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Centrosomes in Drosophila grow in a non-sigmoidal fashion, as suggested by prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C42 cites Zwicker et al., 2014 but the authors note they could not find direct quantitative measurements of centrosome size dynamics in Drosophila. The claim relies on indirect evidence from PCM assembly dynamics, making the support uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65"
+    ],
+    "result": "The positive feedback between Spd-2 and Cnn in Drosophila centrosomes results in accumulation of more Cnn where Spd-2 is abundant, amplifying retention and binding in a size-dependent positive feedback akin to autocatalytic feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C65 is an inference based on understanding of molecular interactions from experimental studies. The reasoning is sound and consistent with cited experimental findings, though it represents an interpretation rather than direct experimental observation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Ostwald ripening can be suppressed by catalytic activity of the centriole, stabilizing centrosomes against coarsening.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 accurately cites results from Zwicker et al., 2014. The authors use this to distinguish their findings about growth-induced size inequality from Ostwald ripening effects.",
+    "result_type": "MINOR"
+  }
+]

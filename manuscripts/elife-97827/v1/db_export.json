@@ -1,0 +1,2368 @@
+{
+  "submission": {
+    "id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:40:21.379308Z",
+    "updated_at": "2025-11-21T21:40:21.379308Z"
+  },
+  "content": [
+    {
+      "id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "content_type": "manuscript",
+      "content_text": "# CPT1A mediates radiation sensitivity in colorectal cancer\n\n## Authors\n\n- Zhenhui Chen<sup>1</sup>\n- Lu Yu<sup>2</sup> ([ORCID: 0000-0003-4073-3842](https://orcid.org/0000-0003-4073-3842))\n- Zhihao Zheng<sup>2</sup>\n- Xusheng Wang<sup>2</sup>\n- Qiqing Guo<sup>2</sup>\n- Yuchuan Chen<sup>3</sup>\n- Yaowei Zhang<sup>2</sup>\n- Yuqin Zhang<sup>2</sup>\n- Jianbiao Xiao<sup>4</sup>\n- Keli Chen<sup>5</sup> \u2020\n- Hongying Fan<sup>1</sup> \u2020\n- Yi Ding<sup>2</sup> ([ORCID: 0000-0001-5035-9255](https://orcid.org/0000-0001-5035-9255)) \u2020\n\n### Affiliations\n\n1. Department of Microbiology, Guangdong Provincial Key Laboratory of Tropical Disease Research, School of Public Health, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))\n2. Department of Radiation Oncology, Nanfang Hospital, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))\n3. State Key Laboratory of Organ Failure Research, Key Laboratory of Infectious Diseases Research in South China, Ministry of Education, Guangdong Provincial Key Laboratory of Viral Hepatitis Research, Guangdong Provincial Clinical Research Center for Viral Hepatitis, Department of Infectious Diseases, Nanfang Hospital, Southern Medical University Guangzhou China ([ROR:01eq10738](https://ror.org/01eq10738))\n4. Department of Pathology, Nanfang Hospital and School of Basic Medical Science, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))\n5. HuiQiao Medical Center, Nanfang Hospital, Southern Medical University Guangzhou China ([ROR:01eq10738](https://ror.org/01eq10738))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe prevalence and mortality rates of colorectal cancer (CRC) are increasing worldwide. Radiation resistance hinders radiotherapy, a standard treatment for advanced CRC, leading to local recurrence and metastasis. Elucidating the molecular mechanisms underlying radioresistance in CRC is critical to enhance therapeutic efficacy and patient outcomes. Bioinformatic analysis and tumour tissue examination were conducted to investigate the CPT1A mRNA and protein levels in CRC and their correlation with radiotherapy efficacy. Furthermore, lentiviral overexpression and CRISPR/Cas9 lentiviral vectors, along with in vitro and in vivo radiation experiments, were used to explore the effect of CPT1A on radiosensitivity. Additionally, transcriptomic sequencing, molecular biology experiments, and bioinformatic analyses were employed to elucidate the molecular mechanisms by which CPT1A regulates radiosensitivity. CPT1A was significantly downregulated in CRC and negatively correlated with responsiveness to neoadjuvant radiotherapy. Functional studies suggested that CPT1A mediates radiosensitivity, influencing reactive oxygen species (ROS) scavenging and DNA damage response. Transcriptomic and molecular analyses highlighted the involvement of the peroxisomal pathway. Mechanistic exploration revealed that CPT1A downregulates the FOXM1-SOD1/SOD2/CAT axis, moderating cellular ROS levels after irradiation and enhancing radiosensitivity. CPT1A downregulation contributes to radioresistance in CRC by augmenting the FOXM1-mediated antioxidant response. Thus, CPT1A is a potential biomarker of radiosensitivity and a novel target for overcoming radioresistance, offering a future direction to enhance CRC radiotherapy.\n\n## Introduction\n\nColorectal cancer (CRC) is the second-highest cause of cancer-related mortality (Siegel et al., 2023). Radiotherapy is crucial for CRC management, especially in patients with locally advanced rectal cancer (cT3-4N+) (Glynne-Jones et al., 2017). Neoadjuvant therapies show clinical or pathological complete response in 16\u201330% of patients, realising downstaging in approximately 60% of patients, significantly enhancing local control, and facilitating curative surgery (Cercek et al., 2018). Moreover, radiotherapy is beneficial in initially unresectable and recurrent cases with limited metastasis to organs, such as the liver and lungs (Cervantes et al., 2023). Nonetheless, the effectiveness of radiotherapy is affected by radioresistance, which precipitates tumour relapse and metastasis and currently lacks an efficacious clinical resolution. Unlocking the molecular mechanisms underlying CRC radioresistance will enhance outcomes and improve patient prognoses.\n\nReactive oxygen species (ROS) are byproducts of normal cellular metabolism occurring in organelles, such as mitochondria, endoplasmic reticulum, and peroxisomes (Bhattacharyya et al., 2014). Within mitochondria, 90% of cellular ROS are generated by complexes I, II, and IV of the electron transport chain (Glasauer and Chandel, 2014). Exogenous stimuli, including radiation, can cause significant, acute elevations in ROS levels (Hecht et al., 2024). ROS function ambivalently in the intracellular signalling and redox homoeostasis of tumour cells (Shah et al., 2024). ROS amplify oncogenic phenotypes, such as proliferation and differentiation, hasten the accumulation of metastasis-inducing mutations, and aid tumour cell survival under hypoxic conditions (Palma et al., 2024). However, excess ROS precipitate apoptosis and other cell death types from oxidative stress (Palma et al., 2024). Thus, intracellular ROS generation is meticulously monitored and regulated by a comprehensive ROS-scavenging system encompassing antioxidants and antioxidative enzymes (Palma et al., 2024; Shah et al., 2024).\n\nRadiation ionises water molecules, creating an intracellular surge of ROS, which indirectly cause two-thirds of DNA damage (Chio and Tuveson, 2017). Consequently, ROS scavenging inevitably influences cancer cell radiosensitivity (Skvortsova et al., 2015). Increased expression and activity of antioxidative enzymes, such as peroxidase (POD), catalase (CAT), glutathione peroxidase, and glutathione reductase, are correlated with radiosensitivity (Hecht et al., 2024).\n\nCarnitine palmitoyltransferase 1 (CPT1) is an outer mitochondrial membrane that catalyses the rate-limiting step of fatty acid oxidation and is absent in several tumours (Melone et al., 2018). The CPT1 family contains three isoforms: CPT1A, CPT1B, and CPT1C. Research on CPT1A has been detailed (Schlaepfer and Joshi, 2020). CPT1A is critical to cancer cell growth, survival, and drug resistance, making it an attractive target (Qu et al., 2016). CPT1A also interacts with other key pathways and factors regulating gene expression and apoptosis in cancer cell (Qu et al., 2016). However, its role in CRC and radiotherapy resistance is unclear.\n\nPreviously, we found that various metabolic pathways, including fatty acid metabolism, are closely related to tumour radioresistance. Therefore, this study mainly focused on CPT1A, which affects CRC radiosensitivity, to reveal novel therapeutic strategies to mitigate radiotherapy resistance and improve clinical outcomes.\n\n## Results\n\n### Low expression of CPT1A in CRC tumours\n\nAnalysis of CRC mRNA sequencing arrays from GEO consistently indicated low CPT1A mRNA levels in CRC (Figure 1A). The transcript levels of CPT1A were lower in most colon cancers (19/24 pairs) than in the adjacent non-tumour tissues (Figure 1B). Meanwhile, CPT1A protein levels were lower in most CRC tissues (14/16 pairs) than in the adjacent non-tumour tissues (Figure 1C). Further exploration of CPT1A expression in TCGA revealed that CPT1A mRNA levels were significantly lower in colon adenocarcinoma (COAD) tissues than in the adjacent non-tumour tissues (Figure 1D). Similar results were observed for rectal adenocarcinoma (READ) (Figure 1E). Immunohistochemistry (IHC) staining of the cancer-adjacent borders of two patients showed that CPT1A protein levels were lower in CRC tissues than in the nearby non-tumour tissues (Figure 1F). These findings provide comprehensive evidence supporting the downregulation of CPT1A expression at both mRNA and protein levels in CRC.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig1-v1.jpg)\n\n**Figure 1.:** (A) The expression of CPT1A in six GEO microarrays. (B) Real-time PCR for CPT1A in 24-paired CRC and adjacent non-tumour tissues. (C) Western blot for CPT1A in 16-paired CRC and adjacent non-tumour tissues. (D) Lower CPT1A mRNA level in colon adenocarcinoma (COAD) than the normal counterparts from TCGA in UALCAN database. (E) Lower CPT1A mRNA level in rectal adenocarcinoma (READ) than the normal counterparts from TCGA in UALCAN database. (F) Immunohistochemistry (IHC) assay for CPT1A in two patients, scale bar = 100\u03bcm. ***p<0.001, **p<0.01, *p<0.05.\n\n### Low CPT1A CRC exhibits radioresistance and poor overall survival\n\nBased on the IHC scores, patients were divided into CPT1A high- and low-expression groups (Figure 2A). Kaplan-Meier survival analysis indicated that low CPT1A-expressing patients had low overall survival (OS) (Figure 2B). Survival analysis of READ patients with low CPT1A using GEPIA also suggested a low OS; the difference was statistically close but not significant (p=0.061, Figure 2C). To further investigate the correlation between CPT1A and radiotherapy efficacy, IHC staining and scoring for CPT1A were performed on samples from 43 patients with rectal cancer who received neoadjuvant radiochemotherapy. Among patients with a tumour regression grade (TRG) score of 1, which indicates a minimal number of residual tumour cells, a high IHC score for CPT1A is often observed. Conversely, patients with a TRG score of 2, indicating more residual tumour cells, exhibited relatively lower IHC staining intensity and overall scores (Figure 2D). A comparison of groups with TRG 2\u20133 and TRG 1 revealed significantly higher IHC scores in the TRG 1 group (Figure 2E). The TRG and IHC scores for CPT1A showed a negative correlation (R=\u22120.3430 and p=0.024) (Figure 2F). In summary, low CPT1A expression was associated with poor OS, high TRG scores, and a high probability of radioresistance.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig2-v1.jpg)\n\n**Figure 2.:** (A) Immunohistochemistry (IHC) assay for CPT1A in two groups of patients, upper with low CPT1A expression and lower with high CPT1A expression (IHC score\u22656). (B) The OS was estimated by the Kaplan-Meier method in rectal cancer patients with low (n=33) or high CPT1A expression (n=43). (C) The OS was estimated by the Kaplan-Meier method in rectal cancer patients in TCGA database with low (n=46) or high CPT1A expression (n=46). (D) IHC assay for CPT1A in two groups of patients, upper with TRG-1 and lower with TRG-2 (TRG means tumour regression grade, AJCC standard, 0, complete response: no remaining viable cancer cells; 1, moderate response: only small clusters or single cancer cells remaining; 2, minimal response: residual cancer remaining, but with predominant fibrosis), scale bar = 100\u03bcm. . (E) Dot plot showing the IHC score and TRG score of patients. (F) Correlation of CPT1A with TRG score, size of dot represents the number. ***p<0.001, **p<0.01, *p<0.05.\n\n### Decreased CPT1A expression contributes to radiation resistance in CRC cells\n\nThrough a colony formation assay (CFA) and multi-target single-hit survival model, we found that SW480, Caco-2, SW620, HT-29, and cells were more resistant to radiation than HCT15, RKO, and HCT 116 cells (Figure 3\u2014figure supplement 1A and B, Supplementary file 1). Furthermore, the background expression levels of CPT1A in the above cells revealed that CPT1A transcription and protein levels were higher in radiation-resistant cells than in radiosensitive cells (Figure 3\u2014figure supplement 1C and D).\n\nAccordingly, we constructed stable CRC cell lines with CPT1A knockout/overexpression. We transfected the CRISPR/Cas9 lentivirus into HCT 116 cells (highest CPT1A expression and radiosensitive) and used western blotting to verify that the knockout efficiency of the second site was the highest, while mRNA levels were significantly reduced (Figure 3A and B). We used the second knockout site for subsequent in vitro and in vivo experiments. We also transfected the CPT1A-overexpressing lentivirus into SW480 cells (lowest CPT1A expression and radioresistant) and verified that CPT1A protein and mRNA levels increased (Figure 3A and B).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig3-v1.jpg)\n\n**Figure 3.:** (A) The protein level of CPT1A in HCT 116-NC, HCT 116-KO1, HCT 116-KO2, HCT 116-KO3, SW480-RFP, and SW480-OE cell lines. (B) The mRNA level of CPT1A in HCT 116-NC, HCT 116-KO (KO2), SW480-RFP, and SW480-OE cell lines. (C) Colony-forming assay of HCT 116-NC and HCT 116-KO cell lines. (D) The map of multi-target single-hit model. (E) Colony-forming assay of SW480-RFP and SW480-OE cell lines. (F) The map of multi-target single-hit model. (G) Comet assay of HCT 116-NC, HCT 116-KO, SW480-RFP, and SW480-OE. (H) Protein expression of \u03b3-H2A.X in HCT 116-NC and HCT 116-KO cell lines. (I) Protein expression of \u03b3-H2A.X in SW480-RFP and SW480-OE cell lines. ***p<0.001, **p<0.01, *p<0.05.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) Colony-forming assay in different cell lines. (B) The map of multi-target single-hit model. (C) The mRNA level of CPT1A in different cell lines. (D) The protein level of CPT1A in different cell lines. ***p<0.001.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** (A) Workflow of establishment of radioresistance cells. F, fraction; W, week. (B) Colony-forming assay in different cell lines. (C) The map of multi-target single-hit model. (D) The protein level of CPT1A in radioresistance cells. (E) Western blot for CPT1A in HCT-15-25F cell line after transfected with overexpression lentivirus. (F) Protein expression of \u03b3-H2A.X in HCT-15-25F-NC and HCT-15-25F-OE cell lines. (G) Colony-forming assay in different cell lines. (H) The map of multi-target single-hit model. ***p<0.001, **p<0.01, *p<0.05.\n\nThe CFA and multi-target single-hit survival model suggested that radioresistance increased with CPT1A knockout (D0=1.526 vs 1.993, p<0.05, Figure 3C and D), whereas the radioresistance of cells decreased with CPT1A overexpression (D0=2.724 vs 1.963, p<0.01, Figure 3E and F). The comet assay suggested that the proportion of DNA in the tail of cells decreased with CPT1A knockout, indicating improved damage repair. With CPT1A overexpression, the proportion of DNA in the tail increased, indicating reduced damage repair capabilities (Figure 3G). We also detected \u03b3-H2A.X expression at different time points after 6 Gy irradiation; with CPT1A knockout, \u03b3-H2A.X disappeared from cells faster, indicating improved cell damage repair (Figure 3H). With CPT1A overexpression, the disappearance rate of \u03b3-H2A.X in cells was slower, remaining detectable even after 24 hr, indicating diminished cellular repair capability (Figure 3I). Collectively, our data suggest that CPT1A radiosensitises intrinsically radioresistant cells.\n\nWe generated radioresistant cell lines (HCT-15-25F and HCT-15-5F) from the HCT-15 parent line by fractionated irradiation (Figure 3\u2014figure supplement 2A). Using CFAs and the multi-target single-hit survival model, we observed increased radioresistance in these new cell lines, as indicated by higher D0 values than those of the parental cells (HCT-15 D0=2.957, HCT-15-5F D0=3.240, HCT-15-25F D0=3.822) (Figure 3\u2014figure supplement 2B and C). We also found significantly decreased CPT1A protein expression in HCT-15-25F and HCT-15-5F cells compared with that in the original cells (Figure 3\u2014figure supplement 2D). Thus, HCT-15-25F cells were selected for further analysis. Transfection with the CPT1A-overexpressing lentivirus led to stable overexpression in HCT-15-25F cells (Figure 3\u2014figure supplement 2E). To assess the impact of CPT1A overexpression on DNA repair capacity, we monitored \u03b3-H2A.X expression at different time points following 6 Gy irradiation. CPT1A overexpression resulted in a slow disappearance of intracellular \u03b3-H2A.X, suggesting enhanced DNA damage repair capability (Figure 3\u2014figure supplement 2F). CFAs and the multi-target single-hit survival model revealed that CPT1A overexpression increased the radiosensitivity of radioresistant cells (D0=2.871 vs 2.581, p<0.05; Figure 3\u2014figure supplement 2G and H), indicating that CPT1A exerts a radiosensitising effect in inducible radioresistant cell lines.\n\n### Diminished CPT1A expression in vivo also leads to tumour radioresistance\n\nTo further validate the impact of CPT1A on radiation resistance in vivo, we established a xenograft model using HCT116-NC and HCT116-KO cell lines in nude mice (Figure 4A). CPT1A-stabilising knockout increased tumour weights in mice, which persisted after radiotherapy (Figure 4B), suggesting that CPT1A knockout promotes tumour growth and confers increased resistance to radiation. IHC staining demonstrated a significant increase in Ki-67 staining intensity and the percentage of positive cells in CPT1A knockout tumours, indicating enhanced proliferative capacity that was further pronounced after radiotherapy (Figure 4C and D). In the absence of CPT1A knockdown, radiotherapy reduced the percentage of Ki67-positive cells in the xenograft tumours by 32.9% (approximately 39.6% of the pre-irradiation baseline). In contrast, upon CPT1A knockdown, radiotherapy only led to a 14.5% reduction in the percentage of Ki67-positive cells (approximately 15.6% of the pre-irradiation baseline; Figure 4D). Similarly, we performed xenograft model experiments using the SW480-RFP and SW480-OE cell lines (Figure 4E). CPT1A overexpression resulted in reduced tumour weight in mice, a trend that persisted even after radiotherapy (Figure 4F). Furthermore, as illustrated in Figure 4E and F, in the absence of CPT1A overexpression, radiotherapy resulted in a 0.10 g decrease in tumour weight (approximately 52.5% of the pre-irradiation weight), whereas with CPT1A overexpression, radiotherapy induced a more pronounced 0.12 g reduction in tumour weight (approximately 89.7% of the pre-irradiation weight). These findings suggested that CPT1A overexpression inhibits tumour growth and sensitises tumour cells to radiation. IHC staining for Ki-67 revealed significantly decreased staining intensity and percentage of positive cells in CPT1A-overexpressing tumours, indicating weakened proliferative capacity, which was further accentuated after radiotherapy (Figure 4G and H).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig4-v1.jpg)\n\n**Figure 4.:** (A) Image of tumours formed in nude mice, with knockout of CPT1A and radiation. (B) Scattergram showing the weight of tumours. (C) Immunohistochemical staining of Ki67 in tumours, scale bar = 100\u03bcm. . (D) Bar chart demonstrating the percentage of positively stained Ki67 cells. (E) Image of tumours formed in nude mice, with overexpression of CPT1A and radiation. (F) Scattergram showing the weight of tumours. (G) Immunohistochemical staining of Ki67 in tumours, scale bar = 100\u03bcm. (H) Bar chart demonstrating the percentage of positively stained Ki67 cells. ***p<0.001, **p<0.01, *p<0.05.\n\n### Low CPT1A levels accelerate post-radiation ROS scavenging\n\nTo study the mechanism of low CPT1A expression in radiotherapy resistance, we conducted differential gene expression analysis between HCT116-KO and HCT116-NC cells. The gene expression heatmap demonstrated high consistency among technical replicates for both HCT 116-NC and HCT 116-KO cells (Figure 5\u2014figure supplement 1A). With CPT1A knockdown, we found 363 upregulated and 1290 downregulated genes (|log2(fold change)|>1 and q<0.05) (Figure 5\u2014figure supplement 1B). We conducted Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis and Gene Ontology (GO) annotation for all differentially expressed genes (DEGs; Figure 5A; Figure 5\u2014figure supplement 1C\u2013E), showing that the peroxisomes, cell cycle nucleotide excision repair, and fatty acid degradation pathways were among the enriched KEGG pathways (Figure 5A). Peroxisomes are important organelles that maintain cellular redox balance by clearing ROS. Therefore, we targeted peroxisomal pathways. ROS levels in the cells were dynamically balanced, including ROS production and scavenging (Figure 5B). To investigate the effect of CPT1A on ROS, we examined them in stable CPT1A knockout/overexpression cells following 6 Gy irradiation and 1 hr of incubation with 2',7'-dichlorodihydrofluorescein diacetate (DCFH-DA), a fluorescent redox probe used to detect ROS in cells (Figure 5C). The total ROS levels in CPT1A knockout cells decreased, whereas those in CPT1A-overexpressing cells increased (Figure 5D). The main mechanism by which cells produce ROS under irradiation is through the X-ray ionisation of water molecules, which far exceeds those from oxidative phosphorylation and NOX enzymes (Figure 5B). Therefore, we speculated that the regulation of CPT1A by intracellular ROS levels may be attributed to increased ROS scavenging. We examined the GSH/GSSG ratio (Figure 5E and F) and SOD (Figure 5G and H), CAT (Figure 5I), and POD enzyme activities (results were unchanged, data not shown) in stable CPT1A knockout/overexpression cells; in CPT1A knockout cells, the GSH/GSSG ratio and SOD and CAT enzyme activities increased, and these changes were also observed under 6 Gy irradiation (Figure 5I). In contrast, in CPT1A-overexpressing cells, the GSH/GSSG ratio, and SOD and CAT activities decreased, and these changes were also observed after 6 Gy irradiation (Figure 5I).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig5-v1.jpg)\n\n**Figure 5.:** (A) Enriched Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway of differentially expressed genes (DEGs) in mRNA sequencing. (B) Generation and scavenging of ROS in cell. (C) ROS of HCT 116-KO cell, SW480-OE cell and their control with 2',7'-dichlorodihydrofluorescein diacetate (DCFH-DA) by flow cytometry. (D) Bar graph to show the mean of DCFH-DA in HCT 116-KO, HCT 116-NC cells, SW480-NC, and SW480-OE cells. (E) GSH/GSSG ratio measurement under CPT1A knockout and radiation. (F) GSH/GSSG ratio measurement under CPT1A overexpression and radiation. (G) Effect of the CPT1A knockout on SOD activity. (H) Effect of the CPT1A overexpression on SOD activity. (I) Effect of the CPT1A on catalase (CAT) activity. ***p<0.001, **p<0.01, *p<0.05.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) Heatmap of all genes. (B) Volcanic map of all genes. (C) Enriched Gene Ontology (GO) terms of biological process. (D) Enriched GO terms of cellular component. (E) Enriched GO terms of molecular function.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (A) ROS of HCT-15-25F and HCT-15 with 2',7'-dichlorodihydrofluorescein diacetate (DCFH-DA) by flow cytometry. (B) ROS of HCT-15-25F-OE cell and its control with DCFH-DA by flow cytometry. (C) Bar graph to show the mean of DCFH-DA in HCT-15-25F and HCT-15 cells. (D) Bar graph to show the mean of DCFH-DA in HCT-15-25F-OE and HCT-15-25F-NC cells. (E) GSH/GSSG ratio after CPT1A overexpression. (F) GSH/GSSG ratio after CPT1A overexpression and 6 Gy radiation. (G) Effect of the CPT1A overexpression on SOD activity. (H) Effect of the CPT1A overexpression on SOD activity after 6 Gy radiation. (I) Effect of the CPT1A overexpression on peroxidase (POD) activity. (J) Effect of the CPT1A overexpression on POD activity after 6 Gy radiation. (K) Effect of the CPT1A on catalase (CAT) activity. ***p<0.001, **p<0.01, *p<0.05.\n\nWe further validated the effect of CPT1A on ROS scavenging in radioresistant cells. Total ROS significantly reduced in radioresistant cells compared to those in HCT-15 control cells following 6 Gy irradiation (Figure 5\u2014figure supplement 2A and C). Furthermore, CPT1A overexpression increased total ROS levels in radioresistant cells (Figure 5\u2014figure supplement 2B and D), suggesting that CPT1A enhances ROS accumulation in radioresistant cells. Additionally, we assessed the GSH/GSSG ratio (Figure 5\u2014figure supplement 2E and F) and SOD (Figure 5\u2014figure supplement 2G and H), POD (Figure 5\u2014figure supplement 2I and J), and CAT enzyme activities (Figure 5\u2014figure supplement 2K) in radioresistant cells, both at baseline and after 6 Gy irradiation, revealing an increased GSH/GSSG ratio and elevated activities of SOD, POD, and CAT enzymes in radioresistant cells compared to those in parental HCT-15 control cells. Furthermore, these changes persisted under 6 Gy irradiation.\n\nTo explore the influence of CPT1A overexpression on radiation resistance, we examined the GSH/GSSG ratio (Figure 5\u2014figure supplement 2E and F) and SOD (Figure 5\u2014figure supplement 2G and H), POD (Figure 5\u2014figure supplement 2I and J), and CAT enzyme activities (Figure 5\u2014figure supplement 2K) in HCT-15-25F-OE cells compared to those in control cells, showing that CPT1A overexpression restored the GSH/GSSG ratio and increased SOD and CAT enzyme activities but failed to restore POD enzyme activity. Additionally, under 6 Gy irradiation, the GSH/GSSG ratio and SOD enzyme activity were restored in CPT1A-overexpressing cells (Figure 5\u2014figure supplement 2E\u2013K).\n\n### Reduced CPT1A expression mediates radioresistance in CRC through increased expression of ROS-scavenging genes, facilitated by FOXM1\n\nThe reasons underlying the changes in SOD and CAT enzyme activities require further investigation. We examined the transcriptional and protein levels of SOD (SOD1, SOD2, and SOD3) and CAT (Figure 6A and B) and found that CPT1A knockout in cells increased both the mRNA and protein levels of SOD1, SOD2, and CAT, whereas the overexpression of CPT1A decreased them (Figure 6A and B). However, the function of CPT1A as a transcription factor is hitherto unreported, suggesting a potential regulatory mechanism mediated by other transcription factors. Thus, we employed a bioinformatics analysis by intersecting predicted or reported transcription factors known to regulate SOD1, SOD2, and CAT with upregulated DEGs. The Venn diagram highlights three transcription factors that met the criteria: FOXM1, LMNB1, and SAP30 (Figure 6C). FOXM1 transcription and protein levels were significantly increased in CPT1A knockout cells but decreased when CPT1A was overexpressed (Figure 6A and B). Other transcription factors showed no significant changes in protein levels (data not shown).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig6-v1.jpg)\n\n**Figure 6.:** (A) The protein level of FOXM1, CPT1A, catalase (CAT), SOD1, SOD2, SOD3 after knockout and overexpression of CPT1A. (B) The mRNA level of FOXM1, CAT, SOD1, SOD2, SOD3 after knockout and overexpression of CPT1A. (C) Venn diagram showing the potential transcription factor of SOD1, SOD2, and CAT. (D) The protein level of FOXM1, CPT1A, CAT, SOD1, SOD2 after overexpression of FOXM1 in HCT116-CPT1AKO cells. (E) Schematic diagram summarising our working model, namely, decreased CPT1A promotes the transcription factor activity of FOXM1, increasing the mRNA and protein level of CAT, SOD1, and SOD2, followed by increasing ROS scavenge after irradiation and therefore colorectal cancer (CRC) cells become radioresistance. ***p<0.001, **p<0.01, *p<0.05.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97827/elife-97827-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) The correlation of FOXM1 with SOD1. (B) The correlation of FOXM1 with SOD2.\n\nAdditionally, we explored the correlation between FOXM1 and the downstream enzymes SOD1, SOD2, and CAT in READ and COAD. The results (Figure 6\u2014figure supplement 1A and B) indicate a positive correlation between FOXM1 and SOD1 as well as SOD2. Furthermore, we used hTFtarget and JASPAR to predict FOXM1 binding sites in the promoters of SOD1, SOD2, and CAT (Table 1). Finally, a rescue experiment was conducted by overexpressing FOXM1 in HCT 116-NC and HCT 116-KO cells, demonstrating that downstream SOD1, SOD2, and CAT protein levels were restored by FOXM1 overexpression (Figure 6D). In summary, the downregulation of CPT1A increases FOXM1 mRNA and protein levels in CRC, promoting the transcription and translation of SOD1, SOD2, and CAT, thereby accelerating the scavenging of ROS produced after radiation exposure and ultimately leading to radiation resistance in CRC cells (Figure 6E).\n\n**Table 1.**\n Potential binding site of SOD1, SOD2, catalase (CAT) promoter predicted by hTFtarget and JASPAR.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>TF</th>\n      <th>Target gene</th>\n      <th>Sequence name</th>\n      <th>Start</th>\n      <th>Stop</th>\n      <th>Strand</th>\n      <th>Score</th>\n      <th>p-Value</th>\n      <th>q-Value</th>\n      <th>Matched motif</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>FOXM1</td>\n      <td>SOD1</td>\n      <td>NC_000021.9:31657693\u201331659693</td>\n      <td>1166</td>\n      <td>1178</td>\n      <td>-</td>\n      <td>14.4412</td>\n      <td>0.00000152</td>\n      <td>0.00599</td>\n      <td>TTTGTTTGATTTT</td>\n    </tr>\n    <tr>\n      <td>FOXM1</td>\n      <td>SOD2</td>\n      <td>NC_000006.12:c159669069-159667069</td>\n      <td>1152</td>\n      <td>1160</td>\n      <td>+</td>\n      <td>12.685</td>\n      <td>0.00000403</td>\n      <td>0.0159</td>\n      <td>AGATGGAGT</td>\n    </tr>\n    <tr>\n      <td>FOXM1</td>\n      <td>CAT</td>\n      <td>NC_000011.10:34436934\u201334438934</td>\n      <td>1410</td>\n      <td>1422</td>\n      <td>+</td>\n      <td>11.3333</td>\n      <td>0.0000499</td>\n      <td>0.197</td>\n      <td>TCAGAGTGTTTTT</td>\n    </tr>\n  </tbody>\n</table>\n\n## Discussion\n\nWe elucidated the role of CPT1A in CRC and the molecular mechanisms involved in mediating radiosensitivity. CPT1A is often downregulated in CRC, and low CPT1A expression can worsen OS and increase the probability of radiochemotherapy resistance. Low CPT1A expression increases FOXM1 activity, promoting the transcription and translation of downstream SOD1, SOD2, and CAT, thereby facilitating the scavenging of radiation-induced ROS. Our study establishes CPT1A as an effective biomarker to predict CRC prognosis and radiotherapy sensitivity and proposes the molecular mechanism by which it mediates radiosensitivity through the FOXM1-SOD1/SOD2/CAT axis.\n\nCPT1A is crucial to CRC initiation and progression (Mazzarelli et al., 2007). However, its role in CRC remains unclear. Using a weighted gene co-expression network analysis to explore hub genes in CRC development, we found that CPT1A is expressed at low levels in CRC and acts as a central anticancer gene, exhibiting excellent prognostic value (Wang et al., 2023). Sinomenine improves colitis-associated cancer by upregulating CPT1A (Zhang et al., 2022). In contrast, high CPT1A expression is associated with malignancy in CRC, and its inhibition ameliorates malignant phenotypes. CPT1A-mediated fatty acid oxidation promotes CRC metastasis (Wang et al., 2018). DHP-B, a CPT1A inhibitor, disrupts CPT1A-VDAC1 interaction in the mitochondria, increasing mitochondrial permeability and reducing oxygen consumption and energy metabolism in CRC cells (Hu et al., 2023). We observed significant downregulation of CPT1A expression in CRC, and low CPT1A expression was associated with worse prognosis and greater radiochemotherapy resistance, contrary to previous reports. This discrepancy may be related to the inherent heterogeneity of tumour tissue and differences in tumour stage.\n\nThe PGC1\u03b1/CEBPB/CPT1A axis, which enhances lipid \u03b2-oxidation, increases ATP and NADPH levels and promotes cellular radiation resistance in nasopharyngeal carcinoma (Tan et al., 2018). Tan et al. also discovered an interaction between CPT1A and Rab14, which transports fatty acids into the mitochondria, thereby facilitating lipid oxidation and cell survival under irradiation (Du et al., 2019). The HER1/2-MEK-ERK1/2-CPT1A/CPT2 axis reportedly enhances cell proliferation and confers radiation resistance in breast cancer (Han et al., 2019). However, no studies have investigated the association between CPT1A and radiosensitivity in CRC. Our research revealed that CPT1A is a radiation sensitivity gene, contradicting previous literature, possibly due to differences in cancer types.\n\nTranscriptomic sequencing revealed that CPT1A regulates multiple pathways, including the peroxisomal pathway, which is responsible for ROS scavenging. CPT1A knockdown upregulated FOXM1, which, in turn, stimulated the transcription and translation of crucial antioxidative enzymes, SOD1, SOD2, and CAT, thereby expediting ROS clearance. This contradicts previous findings that CPT1A overexpression accelerates ROS production by increasing fatty acid \u03b2-oxidation, thereby promoting ageing phenotypes or augmenting cancer cells\u2019 oxidative defences (Jiang et al., 2022; Joshi et al., 2020; Luo et al., 2021). Our findings diverge from those of other studies for two main reasons: first, previous research into the effects of CPT1A on ROS largely centred around mitochondria rather than the peroxisome; second, previous studies did not account for radiation, which significantly increases ROS production above cellular oxidative processes.\n\nForkhead box M1 (FOXM1) is a critical transcription factor for many cellular processes (Kalathil et al., 2020). Besides benefitting normal cell functions, it also regulates cancer processes, including growth, metastasis, and recurrence (Alimardan et al., 2023; Khan et al., 2023). FOXM1 also affects radiotherapy outcomes in many cancer types, including CRC (Kwon et al., 2021; Li et al., 2022; Liu et al., 2019; Pal et al., 2018; Takeshita et al., 2023; Xiu et al., 2018). In this study, we identified FOXM1 as a key regulator connecting CPT1A to ROS scavenging in CRC, exhibiting an inverse correlation with both CPT1A and ROS levels. FOXM1 is an essential transcription factor in intracellular redox, specifically in regulating the redox state of malignant mesothelioma cells (Cunniff et al., 2014). FOXM1-dependent fatty acid oxidation-mediated ROS modulation is a cell-intrinsic drug resistance mechanism in cancer stem cells (Choi et al., 2020). FOXM1 knockdown increases intracellular ROS levels and decreases the transcription levels of SOD2, CAT, PRDX, and GPX2 (Smirnov et al., 2016). Overall, our findings align with existing literature, highlighting the crucial role of FOXM1 in orchestrating the interplay between CPT1A and ROS homoeostasis. We further revealed that FOXM1 participates in the transcriptional regulation of SOD1.\n\nOur study has some limitations. We only conducted radiosensitivity investigations of CPT1A in nude mice, which only demonstrated its regulatory role in CRC cell radiosensitivity. It remains unclear whether CPT1A can regulate the radiosensitivity of the entire tumour microenvironment in immunocompetent mice. The cell lines used in our study have different genetic backgrounds; specifically, HCT116 is microsatellite instable, whereas SW480 is not. Additionally, FOXM1 primarily localises to the nucleus, whereas CPT1A is a cytoplasmic protein; there is no known physiological basis for their co-localisation. Therefore, the specific mechanism through which CPT1A regulates FOXM1 expression requires further investigation. The reasons for the decreased expression of CPT1A in tumour cells remain unclear. Future studies should explore this in greater detail.\n\n## Materials and methods\n\n### Reagents and materials\n\nThe reagent suppliers are indicated in Key resources table.\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HCT-15</td>\n      <td>ATCC (USA)</td>\n      <td>CCL-225</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>RKO</td>\n      <td>ATCC (USA)</td>\n      <td>CRL-2577</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HCT 116</td>\n      <td>ATCC (USA)</td>\n      <td>CCL-247</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>HT-29</td>\n      <td>ATCC (USA)</td>\n      <td>HTB-38</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>Caco-2</td>\n      <td>ATCC (USA)</td>\n      <td>HTB-37</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>SW480</td>\n      <td>ATCC (USA)</td>\n      <td>CCL-228</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (human)</td>\n      <td>SW620</td>\n      <td>ATCC (USA)</td>\n      <td>CCL-227</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pLV[Exp]-Puro-CMV&gt;hCPT1A</td>\n      <td>VectorBuilder (China)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pLV[CRISPR]-hCas9:T2A:Puro-U6&gt;hCPT1A</td>\n      <td>VectorBuilder (China)</td>\n      <td></td>\n      <td>Including 3 gRNA</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pLV[Exp]-G418-CMV&gt;hFOXM1</td>\n      <td>VectorBuilder (China)</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>CPT1A (D3B3) Rabbit mAb</td>\n      <td>Cell Signaling Technology (USA)</td>\n      <td>12252</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>\u03b2-Actin (8H10D10) Mouse mAb</td>\n      <td>Cell Signaling Technology (USA)</td>\n      <td>3770</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-Ki67 monoclonal antibody</td>\n      <td>Cell Signaling Technology (USA)</td>\n      <td>9449</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PPARA Rabbit Polyclonal antibody</td>\n      <td>Proteintech (China)</td>\n      <td>15540-1-AP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PPAR gamma Rabbit Polyclonal antibody</td>\n      <td>Proteintech (China)</td>\n      <td>22061-1-AP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>PGC1a Mouse Monoclonal antibody</td>\n      <td>Proteintech (China)</td>\n      <td>66369-1-Ig</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>SOD1 Rabbit Polyclonal antibody</td>\n      <td>Proteintech (China)</td>\n      <td>10269-1-AP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>SOD2 Rabbit Polyclonal antibody</td>\n      <td>Proteintech (China)</td>\n      <td>24127-1-AP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>SOD3 Rabbit Polyclonal antibody</td>\n      <td>Proteintech (China)</td>\n      <td>14316-1-AP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Catalase Rabbit Polyclonal antibody</td>\n      <td>Proteintech (China)</td>\n      <td>21260-1-AP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>FOXM1 Rabbit Polyclonal antibody</td>\n      <td>Proteintech (China)</td>\n      <td>13147-1-AP</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-rabbit IgG, HRP-linked Antibody</td>\n      <td>Cell Signaling Technology (USA)</td>\n      <td>7074</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>TRIzol</td>\n      <td>TakaraBio (Japan)</td>\n      <td>9108</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Evo M-MLV RT Mix Kit</td>\n      <td>Accurate Biotechnology (China)</td>\n      <td>AG11728</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SYBR Green Premix Pro Taq HS qPCR Kit</td>\n      <td>Accurate Biotechnology (China)</td>\n      <td>AG11701</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Protein extraction kit</td>\n      <td>KeyGen BioTech (China)</td>\n      <td>KGP113-SDS</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Comet assay kit</td>\n      <td>KeyGen BioTech (China)</td>\n      <td>KGA240</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PI</td>\n      <td>Beyotime (China)</td>\n      <td>ST511</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DAPI</td>\n      <td>Beyotime (China)</td>\n      <td>C1002</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>ROS detection kit</td>\n      <td>Beyotime (China)</td>\n      <td>S0033S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>GSH detection kit</td>\n      <td>Solarbio (China)</td>\n      <td>BC1175</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>GSSG detection kit</td>\n      <td>Solarbio (China)</td>\n      <td>BC1180</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>SOD enzyme activity kit</td>\n      <td>Solarbio (China)</td>\n      <td>BC0170</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>CAT enzyme activity kit</td>\n      <td>Solarbio (China)</td>\n      <td>BC0200</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>POD enzyme activity kit</td>\n      <td>Solarbio (China)</td>\n      <td>BC0090</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Bioinformatic analyses\n\nRaw mRNA expression profiles and clinical features from GSE9348, GSE20916, GSE37364, GSE44076, GSE68468, and GSE110223 were downloaded from GEO (http://www.ncbi.nlm.nih.gov/geo/). The CPT1A mRNA expression in cancer and paired normal tissues was analysed using UALCAN (https://ualcan.path.uab.edu/) (Chandrashekar et al., 2022). Correlation analyses between genes were conducted using GEPIA2 (http://gepia2.cancer-pku.cn/) (Tang et al., 2019). Transcription factor prediction and promoter binding site analysis for SOD1, SOD2, and CAT were conducted using the hTF target database (http://bioinfo.life.hust.edu.cn/hTFtarget#) (Zhang et al., 2020). Additionally, JASPAR (http://jaspar.genereg.net/) was used to predict the binding sites of FOXM1 (Rauluseviciute et al., 2024).\n\n### Human\n\nHuman samples were collected from the Nanfang Hospital of Southern Medical University, Guangzhou, for CRC patients with or without radiochemotherapy with age over 18 and below 75 years. Two to four biopsies from each patient were collected to be used for qRT-PCR, western blotting, and sectioning. Informed consent forms were acquired from all the patients. Ethics approval for the use of human samples was obtained from Ethics Committee of Nanfang Hospital, Southern Medical University (No. NFEC-202304-K13).\n\n### RNA isolation and qRT-PCR\n\nA total of 48 rectal adenocarcinoma samples and their paired normal tissues were used for RNA isolation and qRT-PCR. Total RNA was extracted using TRIzol following the manufacturer\u2019s instructions. cDNA was generated using the Evo M-MLV RT Mix Kit. mRNA expression was analysed using the SYBR Green Premix Pro Taq HS qPCR Kit on a QuantStudio6 Real-time PCR system, and \u03b2-actin was used for normalisation. Data were analysed using the 2-\u0394\u0394CT method. The PCR primers are listed in Supplementary file 2.\n\n### Protein extraction and western blotting\n\nProteins of rectal adenocarcinoma and paired normal tissues were extracted from tissues and cells using a protein extraction kit, according to the manufacturer\u2019s instructions. Briefly, NanoDrop was used to determine the protein concentration. The proteins were mixed in a 4:1 ratio with 5\u00d7 loading buffer and denatured at 100\u00b0C in a water bath for 5 min. Subsequently, 20 \u03bcg of proteins were subjected to SDS-PAGE at 95 V. Subsequently, proteins were transferred onto PVDF membranes at a constant current. The membrane was blocked with 5% BSA and incubated with the corresponding primary antibody overnight at 4\u00b0C. Subsequently, the membrane was incubated with an HRP-conjugated secondary antibody (1:2000 dilution), and protein levels were detected using enhanced chemiluminescence.\n\n### Immunohistochemistry\n\nAll colon cancer (n=76) and rectal adenocarcinoma tissues (n=45) were collected before treatment and sectioned at 4 \u03bcm. Clinicopathological features of the patients were provided by the Department of Pathology (Table 2). Staining intensity was independently evaluated by two senior pathologists. The staining intensity was scored on a 4-point scale, where 0 represented no positive staining (negative), 1 represented light yellow (weak positive), 2 represented brownish yellow (positive), and 3 represented brown (strong positive) staining. The percentage of positive cells was also scored on a 4-point scale, where 1 point was assigned for \u226425% positive cells, 2 points for 26\u201350% positive cells, 3 points for 51\u201375% positive cells, and 4 points for >75% positive cells. The IHC score was calculated by multiplying the staining intensity score with the positive cell percentage score. Patients with an IHC score \u22656 were classified as the CPT1A-high group.\n\n**Table 2.**\n Correlation between clinicopathological features and the expression of CPT1A in tumour paraffin section.\n\n\n<table>\n  <thead>\n    <tr>\n      <th rowspan=\"2\">Variables</th>\n      <th rowspan=\"2\">Categories</th>\n      <th colspan=\"3\">CPT1A</th>\n      <th rowspan=\"2\">p-Value</th>\n    </tr>\n    <tr>\n      <th>Low</th>\n      <th>High</th>\n      <th>Total (n)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Age</td>\n      <td>&lt;50</td>\n      <td>13</td>\n      <td>13</td>\n      <td>26</td>\n      <td rowspan=\"2\">0.411</td>\n    </tr>\n    <tr>\n      <td>\u226550</td>\n      <td>20</td>\n      <td>30</td>\n      <td>50</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Gender</td>\n      <td>Male</td>\n      <td>13</td>\n      <td>18</td>\n      <td>31</td>\n      <td rowspan=\"2\">0.831</td>\n    </tr>\n    <tr>\n      <td>Female</td>\n      <td>20</td>\n      <td>25</td>\n      <td>45</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">Histological grade</td>\n      <td>Well differentiated</td>\n      <td>3</td>\n      <td>5</td>\n      <td>8</td>\n      <td rowspan=\"3\">0.640</td>\n    </tr>\n    <tr>\n      <td>Moderately differentiated</td>\n      <td>26</td>\n      <td>32</td>\n      <td>58</td>\n    </tr>\n    <tr>\n      <td>Poorly differentiated</td>\n      <td>4</td>\n      <td>6</td>\n      <td>10</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">UICC/ AJCC Stage</td>\n      <td>Stage I</td>\n      <td>3</td>\n      <td>1</td>\n      <td>4</td>\n      <td rowspan=\"4\">0.379</td>\n    </tr>\n    <tr>\n      <td>Stage II</td>\n      <td>14</td>\n      <td>16</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>Stage III</td>\n      <td>14</td>\n      <td>24</td>\n      <td>38</td>\n    </tr>\n    <tr>\n      <td>Stage IV</td>\n      <td>2</td>\n      <td>2</td>\n      <td>4</td>\n    </tr>\n    <tr>\n      <td rowspan=\"4\">T-class</td>\n      <td>T1</td>\n      <td>1</td>\n      <td>1</td>\n      <td>2</td>\n      <td rowspan=\"4\">0.272</td>\n    </tr>\n    <tr>\n      <td>T2</td>\n      <td>3</td>\n      <td>3</td>\n      <td>6</td>\n    </tr>\n    <tr>\n      <td>T3</td>\n      <td>15</td>\n      <td>15</td>\n      <td>30</td>\n    </tr>\n    <tr>\n      <td>T4</td>\n      <td>14</td>\n      <td>24</td>\n      <td>38</td>\n    </tr>\n    <tr>\n      <td rowspan=\"3\">N-class</td>\n      <td>N0</td>\n      <td>18</td>\n      <td>17</td>\n      <td>35</td>\n      <td rowspan=\"3\">0.189</td>\n    </tr>\n    <tr>\n      <td>N1</td>\n      <td>10</td>\n      <td>16</td>\n      <td>26</td>\n    </tr>\n    <tr>\n      <td>N2</td>\n      <td>5</td>\n      <td>10</td>\n      <td>15</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">M-class</td>\n      <td>M0</td>\n      <td>31</td>\n      <td>41</td>\n      <td>72</td>\n      <td rowspan=\"2\">0.788</td>\n    </tr>\n    <tr>\n      <td>M1</td>\n      <td>2</td>\n      <td>2</td>\n      <td>4</td>\n    </tr>\n  </tbody>\n</table>\n\n### Cell culture and lentiviral infection\n\nThe CRC cell lines HCT-15, RKO, HCT 116, HT-29, Caco-2, SW480, and SW620 were purchased from ATCC (Manassas, VA, USA). All cell lines were authenticated with STR profiling, using cell line authentication services offered by ATCC, to avoid misidentification and tested negative for mycoplasma contamination. All cell lines were cultured in RPMI-1640 medium supplemented with 10% FBS. Cells were cultured at 37\u00b0C with 5% CO2. To establish radiation-resistant strains, HCT-15-25F and HCT-15-5F cells were generated using both conventional fractionated irradiation (2 Gy/fraction, 25 fractions, 5 fractions/week over 5 weeks) and large-fractionated irradiation (5 Gy/fraction, 5 fractions, for 1 week).\n\nThe full-length lentiviral expression of CPT1A with puromycin was constructed by VectorBuilder. CPT1A-targeting CRISPR/Cas9 lentiviral vectors (hCpt1a[gRNA#1]: AAATCTCTACTACACGGCCGATGTTACGACAGGTACCGTCCTT, hCpt1a[gRNA#2]: AGAAGGTAAGGACGGTACCTGTCGTAACATCGGCCGTGTAGTA, hCpt1a[gRNA#3]: CTGAACACTCCTGGGCAGATGCGCCGATCGTGGCCCACCTTTG) with RFP and Puro were constructed by VectorBuilder. Infection and in vitro transfection of cell lines were performed following the manufacturer\u2019s protocol. The lentiviral full-length expression of FOXM1 with G418 was constructed using VectorBuilder.\n\n### CFA and multi-target single-hit survival model\n\nThe radiosensitivity of all human CRC cell lines was determined using a CFA with a multi-target single-hit model to the surviving fractions. Cells were plated in six-well plates and irradiated at doses of 0, 2, 4, 6, 8, and 10 Gy (6 MeV X-rays). The cells were then cultured for 10 days, stained with 1% crystal violet, and quantified using ImageJ version 1.8.0.\n\nThe surviving fraction for each dose was calculated using the following formula:\n\n[(number of surviving colonies at dose X)/(number of cells seeded at dose X (average colonies arising from non-irradiated cells (0 Gy))/number of non-irradiated cells seeded)]. Survival curves were used to develop the multi-target single-hit model, SF = 1 \u2212 (1 \u2212 e\u2212D/D0)\u00d7N, where SF is the surviving fraction, D is the radiation dose, and N is the extrapolation number. The multi-target single-hit model provides parameters related to radiation sensitivity and sensitisation ratios, thereby directly reflecting the cells\u2019 radiation sensitivity.\n\n### Comet assay\n\nThe comet assay is a classical technique for assessing cellular radiation sensitivity. Essentially, cells that are more susceptible to radiation damage exhibit more DNA fragmentation post-irradiation, leading to a greater proportion of DNA in the tail (with less in the head). The comet assay was performed as previously described (Yu et al., 2022). Briefly, slides were covered with 100 \u03bcL of pre-warmed normal melting point agarose (2%) and placed on ice to solidify the first gel layer. Cells irradiated with 6 Gy were digested to obtain a cell suspension. Ten microlitres of the cell suspension were mixed with 80 \u03bcL of pre-warmed low melting point agarose (0.75%) and poured onto the slides. The slides were dipped in a cold lysis solution for 2 hr. After cell lysis, the slides were placed in a horizontal electrophoresis chamber filled with cold TAE solution, incubated for 25 min in the dark, and electrophoresed (1 V/cm). The slides were then neutralised in PBS for 5 min and stained with propidium iodide (PI) or DAPI. Comet images were captured using a fluorescence microscope. The percentage of DNA in the tail was analysed using the CASP 1.2.3 beta 1.\n\n### Animal model\n\nAll animal experiments were approved by the Institutional Animal Care and Use Committee of Nanfang Hospital (IACUC-PROJECT-20221128-003). Male BALB/c nude mice (5 weeks of age) were purchased from the Southern Medical University Laboratory Animal Center, China, and raised under specific pathogen-free conditions. All in vivo experiments were performed following institutional guidelines. To develop the xenograft tumour model, 5\u00d7106 cells were subcutaneously injected into the left flank of mice. On reaching a volume of 100 mm3, the tumours were irradiated twice at 8 Gy, and other parts of the mouse body were protected with a lead shield. The tumour volume was measured using Vernier callipers and calculated as 1/2\u00d7length\u00d7width\u00d7width. After the mice were euthanised with phenobarbital sodium, the tumours were excised, weighed, and embedded in paraffin for further experiments.\n\n### Transcriptomics\n\nHCT 116-NC and HCT 116-KO cells were collected and sent to RIBOBIO (Guangzhou, China) for polyA-seq transcriptome sequencing. RNA extraction, library preparation, and sequencing were performed according to the manufacturer\u2019s instructions. To identify the DEGs between the two groups, the expression level of each transcript was calculated according to the transcript per million reads method. RSEM was used to quantify the gene abundance. Differential expression analysis was performed using DESeq2 (Liu et al., 2021). Genes with |log2(fold change)|>1 and q<0.05 were considered significantly differentially expressed. In addition, functional enrichment analysis, including using GO and KEGG, was performed to identify significantly enriched DEGs in GO terms and metabolic pathways at a Bonferroni-corrected p-value of 0.05 compared with the whole-transcriptome background. The heatmap and volcano of mRNA sequencing were conducted on ImageGP (https://www.bic.ac.cn/ImageGP) (Chen et al., 2022). GO functional enrichment and KEGG pathway analyses were performed using the ClusterProfiler package in R (Wu et al., 2021).\n\n### ROS detection\n\nROS were stained with a DCFH-DA probe and detected using flow cytometry. Briefly, the probe was diluted in cell culture media at a 1:1000 ratio to yield a final concentration of 10 \u03bcmol/L. The culture medium was replaced with 1 mL of DCFH-DA solution. The cells were incubated at 37\u00b0C for 20 min. After incubation, the cells were washed thrice with serum-free medium to remove any excess DCFH-DA.\n\nOne hour after 6 Gy irradiation, the cells were digested into single-cell suspensions and washed once with PBS. Finally, cells were resuspended in PBS, and the fluorescence intensity was analysed using flow cytometry at excitation and emission wavelengths of 488 and 525 nm, respectively.\n\n### GSH/oxidised GSH ratio\n\nCells (5\u00d7105 cells/well) were seeded into 10 cm wells until they reached 80% confluence. One hour after 6 Gy irradiation, the GSH/oxidised GSH (GSSG) ratio was determined using a GSH/GSSG ratio detection assay kit following the manufacturer\u2019s protocols.\n\n### Enzyme activity\n\nCells (5\u00d7105 cells/well) were seeded into 10 cm wells until reaching 80% confluence before. One hour after irradiation with 6 Gy, crude enzyme extract was prepared. The cells were digested, collected, and centrifuged to remove the supernatant. Next, 1 mL of HPLC-grade water was added to each pellet. The cells were disrupted by ultrasonication (20% power, 3 s on and 10 s off, repeated 25\u201340 times). The resulting mixture was centrifuged at 8000\u00d7g and 4\u00b0C for 10 min, and the supernatant was collected as the crude enzyme extract. The enzyme activities of SOD1, SOD2, CAT, and POD were detected using respective enzyme activity kits, according to the manufacturer\u2019s protocols.\n\n### Statistical analysis\n\nData are expressed as the mean \u00b1 standard deviation (SD), and p-values<0.05 were considered statistically significant in all experiments. Data were analysed using one-way analysis of variance (ANOVA), Spearman\u2019s correlation, and Kaplan-Meier estimates. Statistical analyses were performed using SPSS software (version 20.0). All experiments were performed in triplicate.\n",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Norma Ybarra, Research Institute McGill University Health Center Canada\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97827.3.sa0](https://doi.org/10.7554/eLife.97827.3.sa0)\n\nThis study reports a valuable finding for the treatment of colorectal cancer (CRC), as the authors demonstrated that the enzyme CPT1A plays an significant role in the response to radiotherapy in CRC patients. However, the reviewers found that the results presented are still incomplete.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97827.3.sa1](https://doi.org/10.7554/eLife.97827.3.sa1)\n\nSummary:\n\nFats and lipids serve many important roles in cancers, including serving as important fuels for energy metabolism in cancer cells by being oxidized in the mitochondria. The process of fatty acid oxidation is initiated by the enzyme carnitine palmitoyltransferase 1A (CPT1A), and the function and targetability of CPT1A in cancer metabolism and biology has been heavily investigated. This includes studies that have found important roles for CPT1A in colorectal cancer growth and metastasis.\n\nIn this study, Chen and colleagues use analysis of patient samples and functional interrogation in animal models to examine the role CPT1A plays in colorectal cancer (CRC). The authors find that CPT1A expression is decreased in CRC compared to paired healthy tissue and that lower expression correlates with decreased patient survival over time, suggesting that CPT1A may suppress tumor progression. To functionally interrogate this hypothesis, the authors both use CRISPR to knockout CPT1A in a CRC cell line that expresses CPT1A, and overexpress CPT1A in a CRC cell line with low expression. In both systems, increased CPT1A expression decreased cell survival and DNA repair in response to radiation in culture. Further, in xenograft models CPT1A decreased tumor growth basally and radiotherapy could further decrease tumor growth in CPT1A expressing tumors. As CRC is often treated with radiotherapy, the authors argue this radiosensitization driven by CPT1A could explain why CPT1A expression correlates with increased patient survival.\n\nLastly, Chen and colleagues sought to understand why CPT1A suppresses CRC tumor growth and sensitizes the tumors to radiotherapy in culture. Antioxidant capacity of cells can increase cell survival, so the authors examine antioxidant gene expression and levels in CPT1A expressing and non-expressing cells. CPT1A expression suppresses expression of antioxidant metabolism genes and lowers levels of antioxidants. Antioxidant metabolism genes can be regulated by the FOXM1 transcription factor, and the authors find that CPT1A expression regulates FOXM1 levels and that antioxidant gene expression can be partially rescued in CPT1A expressing CRC cells. This leads the authors to propose the following model: CPT1A expression downregulates FOXM1 (via some yet undescribed mechanism) which then leads to decreased antioxidant capacity in CRC cells and thus suppressing tumor progression and increasing radiosensitivity. This is an interesting model that could explain suppression of CPT1A expression in CRC, but key tenets of the model are untested and speculative.\n\nStrengths:\n\n\u2022 Analysis of CPT1A in paired CRC tumors and non-tumor tissue using multiple modalities combined with analysis of independent datasets rigorously show that CPT1A is downregulated in CRC tumors at the RNA and protein level.\n\n\u2022 The authors use paired cell line model systems where CPT1A is both knocked out and overexpressed in cells lines that endogenously express or repress CPT1A respectively. These complementary model systems increase the rigor of the study.\n\n\u2022 The finding that a metabolic enzyme generally thought to support tumor energetics actually is a tumor suppressor in some settings is theoretically quite interesting.\n\nWeaknesses:\n\n\u2022 The authors propose that CPT1A expression modulates antioxidant capacity in cells by suppressing FOXM1 and that this pathway alters CRC growth and radiotherapy response. However, key aspects of this model are not tested. The authors do not show that FOXM1 contributes to regulation of antioxidant levels in CRC cells and tumors or if FOXM1 suppression is key to inhibition of CRC tumor growth and radiosensitization by CPT1A. Thus, the model the authors propose is speculative and not supported by the existing data.\n\n\u2022 The authors propose two mechanisms by which CPT1A expression triggers radiosensitization: decreasing DNA repair capacity (Fig. 3) and decreasing antioxidant capacity (Fig. 5). However, while CPT1A expression does alter these capacities in CRC cells, neither is functionally tested to determine if altered DNA repair or antioxidant capacity (or both) are the reason why CRC cells are more sensitive to radiotherapy or are delayed in causing tumors in vivo. Thus, this aspect of the proposed model is also speculative.\n\n\u2022 The authors find that CPT1A affects radiosensitization in cell culture and assess this in vivo. In vivo, CPT1A expression slows tumor growth even in the absence of radiotherapy, and radiotherapy only proportionally decreases tumor growth to the same extent as it does in CPT1A non-expressing CRC tumors. The authors propose from this data that CPT1A expression also sensitizes tumors to radiotherapy in vivo. However, it is unclear that CPT1A expression causes radiosensitization in vivo or if CPT1A expression acts as independent tumor suppressor to which radiotherapy has an additive effect. Additional experiments would be necessary to differentiate between these possibilities.\n\n\u2022 The authors propose in Figure 3 that DNA repair capacity is inhibited in CRC cells by CPT1A expression. However, the gH2AX immunoblots performed in Figure 3H-I that measure DNA repair kinetics are not convincing that CPT1A expression impairs DNA repair kinetics. Separate blots are shown for CPT1A expressing and non-expressing cell lines, not allowing for rigorous comparison of gH2AX levels and resolution as CPT1A expression is modulated.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97827.3.sa2](https://doi.org/10.7554/eLife.97827.3.sa2)\n\nThe manuscript by Chen et al. describes how low levels of CPT1A in colorectal cancer (CRC) confer radioresistance by expediting radiation-induced ROS clearance. The authors propose that this mechanism of ROS homeostasis is regulated through FOXM1. CPT1A is known for its role in fatty acid metabolism via beta-oxidation of long-chain fatty acids, making it important in many metabolic disorders and cancers.\n\nPrevious studies have suggested that upregulation of CPT1A is essential for the tumor-promoting effect in colorectal cancers (CRC) (PMID: 32913185). For example, CPT1A-mediated fatty acid oxidation promotes colorectal cancer cell metastasis (PMID: 29995871), and repression of CPT1A activity renders cancer cells more susceptible to killing by cytotoxic T lymphocytes (PMID: 37722058). Additionally, CPT1A-mediated fatty acid oxidation (FAO) sensitizes nasopharyngeal carcinomas to radiation therapy (PMID: 29721083). While this suggests a tumor-promoting effect for CPT1A, the work by Chen et al. suggests instead a tumor-suppressive function for CPT1A in CRC, specifically that loss or low expression of CPT1A confers radioresistance in CRC. This makes the findings important given that they oppose the previously proposed tumorigenic function of CPT1A.\n\nThe study has several strengths. The authors employ both in vitro and in vivo models to demonstrate that low CPT1A levels lead to radioresistance in CRC cells. They use isogenic HCT15 CRC cell lines that are radioresistant and show that overexpression of CPT1A sensitizes these cells to radiotherapy. Interestingly, the radioresistant cells exhibit lower CPT1A levels, suggesting that downregulation of CPT1A may be involved in the acquisition of radioresistance. Throughout the manuscript, the authors acknowledge the limitations of their work and avoid overextending their conclusions.\n\nHowever, there are some major limitations to the study:\n\n(1) Unexplored Contradictions with Previous Studies\n\nWhile the authors propose a tumor-suppressive function for CPT1A in CRC, they do not sufficiently address the contradiction with prior studies that indicate a tumor-promoting role for CPT1A. The discussion briefly mentions that this discrepancy may stem from heterogeneity or differences in tumor stages, but a more thorough exploration is needed. Delving deeper into the contexts and conditions under which CPT1A exhibits differing roles would be critical for reconciling these findings and guiding future research.\n\n(2) Limited Patient Data Analysis\n\nThe authors demonstrate that CPT1A levels are significantly lower in COAD (colon adenocarcinoma) and READ (rectal adenocarcinoma) compared to normal tissues. However, data from TCGA indicate that CPT1A expression levels are lower in 26 out of 31 tumor types compared to COAD or READ (as noted in the authors' response to the previous review). It is possible that reduced CPT1A expression might be a common feature across various cancers, not just CRC. A more comprehensive analysis comparing matched normal and tumor tissues across different cancer types would clarify whether the observed phenomenon is unique to CRC or part of a broader pattern. This is particularly important since several studies have reported CPT1A overexpression in tumors.\n\n(3) Limitations in Experimental Scope\n\nThe experimental design primarily involves CPT1A knockout in HCT116 cells and CPT1A overexpression in SW480 cells, which may limit the generalizability of the findings. Utilizing additional cell lines would account for genetic heterogeneity and enhance the robustness of the conclusions. Moreover, while the authors suggest an opposing effect of CPT1A in CRC compared to other studies, they have not investigated this through pharmacological means. Previous studies have shown that pharmacological inhibition of CPT1A can limit cancer progression (e.g., PMID: 33528867, PMID: 32198139) and sensitize cells to radiation therapy (PMID: 30175155). Testing whether pharmacological inhibitors like etomoxir or ST1326 replicate the effects observed with genetic knockout would provide valuable insights and have significant implications for therapeutic strategies in CRC patients.\n\nConclusion\n\nThis study offers valuable insights into the role of CPT1A in CRC radioresistance, proposing a tumor-suppressive function that challenges previous findings of its tumor-promoting role. While the findings are interesting and could have significant implications for cancer therapy, the limitations in experimental scope and the lack of a thorough discussion reconciling contradictory evidence warrant caution. Expanding the research to include a wider range of CRC cell lines, conducting pharmacological inhibition studies, and performing more detailed analyses would strengthen the conclusions and enhance our understanding of CPT1A's complex role in cancer progression and treatment response.\n",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "dc20db01-bfb3-4a66-99ef-58f896001de4",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C1",
+      "claim": "Colorectal cancer (CRC) is the second-highest cause of cancer-related mortality.",
+      "claim_type": "EXPLICIT",
+      "source": "Colorectal cancer (CRC) is the second-highest cause of cancer-related mortality (Siegel et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Siegel et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "4b797219-5f34-4f7f-b586-6a088604cf48",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C2",
+      "claim": "Radiotherapy is crucial for CRC management, especially in patients with locally advanced rectal cancer (cT3-4N+).",
+      "claim_type": "EXPLICIT",
+      "source": "Radiotherapy is crucial for CRC management, especially in patients with locally advanced rectal cancer (cT3-4N+) (Glynne-Jones et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glynne-Jones et al., 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "d9cf4b9d-9c39-4e80-861f-45aefe11e7fd",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C3",
+      "claim": "Neoadjuvant therapies show clinical or pathological complete response in 16\u201330% of patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Neoadjuvant therapies show clinical or pathological complete response in 16\u201330% of patients, realising downstaging in approximately 60% of patients, significantly enhancing local control, and facilitating curative surgery (Cercek et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cercek et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "55338cf2-a71e-47ae-bf3c-9dda880205ce",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C4",
+      "claim": "Neoadjuvant therapies realize downstaging in approximately 60% of patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Neoadjuvant therapies show clinical or pathological complete response in 16\u201330% of patients, realising downstaging in approximately 60% of patients, significantly enhancing local control, and facilitating curative surgery (Cercek et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cercek et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "d6c3efad-2b9b-4300-9db6-6e6501c7cc30",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C5",
+      "claim": "Radiotherapy is beneficial in initially unresectable and recurrent cases with limited metastasis to organs, such as the liver and lungs.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, radiotherapy is beneficial in initially unresectable and recurrent cases with limited metastasis to organs, such as the liver and lungs (Cervantes et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Cervantes et al., 2023",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "f8259581-9d08-46cc-afdf-ebb39cdc8f53",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C6",
+      "claim": "Within mitochondria, 90% of cellular ROS are generated by complexes I, II, and IV of the electron transport chain.",
+      "claim_type": "EXPLICIT",
+      "source": "Within mitochondria, 90% of cellular ROS are generated by complexes I, II, and IV of the electron transport chain (Glasauer and Chandel, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glasauer and Chandel, 2014",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "7303df5b-4bee-4581-9af7-d7e2d0cd41fc",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C7",
+      "claim": "Radiation ionises water molecules, creating an intracellular surge of ROS, which indirectly cause two-thirds of DNA damage.",
+      "claim_type": "EXPLICIT",
+      "source": "Radiation ionises water molecules, creating an intracellular surge of ROS, which indirectly cause two-thirds of DNA damage (Chio and Tuveson, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Chio and Tuveson, 2017",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "5f3c8b43-9762-4956-a52e-fca42944f591",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C8",
+      "claim": "CPT1A is absent in several tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "Carnitine palmitoyltransferase 1 (CPT1) is an outer mitochondrial membrane that catalyses the rate-limiting step of fatty acid oxidation and is absent in several tumours (Melone et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Melone et al., 2018",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "ed2e04e6-c240-45d3-a9a4-1f177efb3eb7",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C9",
+      "claim": "CPT1A mRNA levels were lower in CRC tissues compared to adjacent non-tumour tissues in six GEO microarrays.",
+      "claim_type": "EXPLICIT",
+      "source": "Analysis of CRC mRNA sequencing arrays from GEO consistently indicated low CPT1A mRNA levels in CRC (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by data from GEO microarray analysis shown in Figure 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "22531d5d-3637-4114-aeab-68ed0cf817e9",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C10",
+      "claim": "CPT1A transcript levels were lower in most colon cancers (19/24 pairs) than in the adjacent non-tumour tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcript levels of CPT1A were lower in most colon cancers (19/24 pairs) than in the adjacent non-tumour tissues (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by qRT-PCR data shown in Figure 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "e13cb457-ed1f-4801-89c0-99848e03b0fc",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C11",
+      "claim": "CPT1A protein levels were lower in most CRC tissues (14/16 pairs) than in the adjacent non-tumour tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Meanwhile, CPT1A protein levels were lower in most CRC tissues (14/16 pairs) than in the adjacent non-tumour tissues (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 1C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "13f0e81e-f403-4b6a-ab55-592bc32fb7c9",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C12",
+      "claim": "CPT1A mRNA levels were significantly lower in colon adenocarcinoma (COAD) tissues than in the adjacent non-tumour tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Further exploration of CPT1A expression in TCGA revealed that CPT1A mRNA levels were significantly lower in colon adenocarcinoma (COAD) tissues than in the adjacent non-tumour tissues (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TCGA data analysis shown in Figure 1D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "17f6a4c0-85c8-4010-9be0-4a64e5a27ba7",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C13",
+      "claim": "CPT1A mRNA levels were significantly lower in rectal adenocarcinoma (READ) tissues than in the adjacent non-tumour tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar results were observed for rectal adenocarcinoma (READ) (Figure 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by TCGA data analysis shown in Figure 1E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "b6c4dedd-e68a-4ed4-baa7-4b82a7ef5571",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C14",
+      "claim": "CPT1A protein levels were lower in CRC tissues than in the nearby non-tumour tissues as shown by IHC staining.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunohistochemistry (IHC) staining of the cancer-adjacent borders of two patients showed that CPT1A protein levels were lower in CRC tissues than in the nearby non-tumour tissues (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 1F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "48ef0b6b-c6f7-4ead-a369-fbf7118d9052",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C15",
+      "claim": "Low CPT1A-expressing patients had low overall survival.",
+      "claim_type": "EXPLICIT",
+      "source": "Kaplan-Meier survival analysis indicated that low CPT1A-expressing patients had low overall survival (OS) (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by Kaplan-Meier survival analysis shown in Figure 2B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "a1a377e1-0d9c-4d2c-aa80-442edb519f00",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C16",
+      "claim": "READ patients with low CPT1A had low overall survival with p=0.061.",
+      "claim_type": "EXPLICIT",
+      "source": "Survival analysis of READ patients with low CPT1A using GEPIA also suggested a low OS; the difference was statistically close but not significant (p=0.061, Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GEPIA survival analysis shown in Figure 2C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "84b1e539-e23c-44ea-b42b-adaeebddfb1d",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C17",
+      "claim": "Patients with TRG score of 1 often have high IHC score for CPT1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Among patients with a tumour regression grade (TRG) score of 1, which indicates a minimal number of residual tumour cells, a high IHC score for CPT1A is often observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by IHC scoring data from patient samples",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "e54278da-eb36-457f-a7d5-07bca0c2b4e9",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C18",
+      "claim": "Patients with TRG score of 2 exhibited relatively lower IHC staining intensity and overall scores for CPT1A.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, patients with a TRG score of 2, indicating more residual tumour cells, exhibited relatively lower IHC staining intensity and overall scores (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "0fc95207-e21a-4a97-bade-d40d94227c04",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C19",
+      "claim": "IHC scores were significantly higher in the TRG 1 group compared to TRG 2-3 group.",
+      "claim_type": "EXPLICIT",
+      "source": "A comparison of groups with TRG 2\u20133 and TRG 1 revealed significantly higher IHC scores in the TRG 1 group (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comparative IHC scoring data shown in Figure 2E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "6891765b-dca7-4b15-b105-d695e87c23bc",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C20",
+      "claim": "TRG and IHC scores for CPT1A showed a negative correlation (R=\u22120.3430 and p=0.024).",
+      "claim_type": "EXPLICIT",
+      "source": "The TRG and IHC scores for CPT1A showed a negative correlation (R=\u22120.3430 and p=0.024) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "79edafdf-8deb-4aac-9c33-57cfd23c32a9",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C21",
+      "claim": "SW480, Caco-2, SW620, HT-29 cells were more resistant to radiation than HCT15, RKO, and HCT 116 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Through a colony formation assay (CFA) and multi-target single-hit survival model, we found that SW480, Caco-2, SW620, HT-29, and cells were more resistant to radiation than HCT15, RKO, and HCT 116 cells (Figure 3\u2014figure supplement 1A and B, Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CFA and survival model data shown in Figure 3\u2014figure supplement 1A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "2005378d-002e-4057-bb07-af6ca1cf7989",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C22",
+      "claim": "CPT1A transcription and protein levels were higher in radiation-resistant cells than in radiosensitive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the background expression levels of CPT1A in the above cells revealed that CPT1A transcription and protein levels were higher in radiation-resistant cells than in radiosensitive cells (Figure 3\u2014figure supplement 1C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by expression analysis shown in Figure 3\u2014figure supplement 1C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "125680d5-f609-4c06-9c91-eed03902bee6",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C23",
+      "claim": "CPT1A knockout increased radioresistance in HCT116 cells (D0=1.526 vs 1.993, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The CFA and multi-target single-hit survival model suggested that radioresistance increased with CPT1A knockout (D0=1.526 vs 1.993, p<0.05, Figure 3C and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CFA and survival model data shown in Figure 3C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "3e4aba34-4d95-4228-bbc6-808bfb8deebb",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C24",
+      "claim": "CPT1A overexpression decreased radioresistance in SW480 cells (D0=2.724 vs 1.963, p<0.01).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the radioresistance of cells decreased with CPT1A overexpression (D0=2.724 vs 1.963, p<0.01, Figure 3E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CFA and survival model data shown in Figure 3E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "723d82cd-9443-46ef-8e87-fcdca4598f7a",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C25",
+      "claim": "CPT1A knockout improved DNA damage repair as shown by decreased proportion of DNA in the tail of cells in comet assay.",
+      "claim_type": "EXPLICIT",
+      "source": "The comet assay suggested that the proportion of DNA in the tail of cells decreased with CPT1A knockout, indicating improved damage repair.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comet assay data",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "c98f0fc7-cc00-423f-b839-dcf0a5057533",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C26",
+      "claim": "CPT1A overexpression reduced DNA damage repair capabilities as shown by increased proportion of DNA in the tail in comet assay.",
+      "claim_type": "EXPLICIT",
+      "source": "With CPT1A overexpression, the proportion of DNA in the tail increased, indicating reduced damage repair capabilities (Figure 3G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by comet assay data shown in Figure 3G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "80066f00-48ca-4df2-ae17-90a8e509dfb9",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C27",
+      "claim": "CPT1A knockout resulted in faster disappearance of \u03b3-H2A.X from cells after 6 Gy irradiation, indicating improved cell damage repair.",
+      "claim_type": "EXPLICIT",
+      "source": "We also detected \u03b3-H2A.X expression at different time points after 6 Gy irradiation; with CPT1A knockout, \u03b3-H2A.X disappeared from cells faster, indicating improved cell damage repair (Figure 3H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by \u03b3-H2A.X expression data shown in Figure 3H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "706905c9-d1af-45d9-a823-cfffb0f99494",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C28",
+      "claim": "CPT1A overexpression resulted in slower disappearance of \u03b3-H2A.X in cells, remaining detectable even after 24 hr, indicating diminished cellular repair capability.",
+      "claim_type": "EXPLICIT",
+      "source": "With CPT1A overexpression, the disappearance rate of \u03b3-H2A.X in cells was slower, remaining detectable even after 24 hr, indicating diminished cellular repair capability (Figure 3I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by \u03b3-H2A.X expression data shown in Figure 3I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "b5ff7199-8f53-48e0-9264-61898d5b30ab",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C29",
+      "claim": "CPT1A knockout increased tumour weights in mice xenograft model, which persisted after radiotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "CPT1A-stabilising knockout increased tumour weights in mice, which persisted after radiotherapy (Figure 4B)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by xenograft tumor weight data shown in Figure 4B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "e5ed4dc9-e58c-4e38-a4e5-e33dad7b2ead",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C30",
+      "claim": "CPT1A knockout increased Ki-67 staining intensity and percentage of positive cells in xenograft tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "IHC staining demonstrated a significant increase in Ki-67 staining intensity and the percentage of positive cells in CPT1A knockout tumours, indicating enhanced proliferative capacity that was further pronounced after radiotherapy (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 4C and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "effb7da8-c90e-4592-bae4-503ec866fbfa",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C31",
+      "claim": "In the absence of CPT1A knockdown, radiotherapy reduced the percentage of Ki67-positive cells in xenograft tumours by 32.9%.",
+      "claim_type": "EXPLICIT",
+      "source": "In the absence of CPT1A knockdown, radiotherapy reduced the percentage of Ki67-positive cells in the xenograft tumours by 32.9% (approximately 39.6% of the pre-irradiation baseline).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by quantitative IHC analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "bfecb2d7-7a77-4e12-83ae-ccc0dc09a810",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C32",
+      "claim": "Upon CPT1A knockdown, radiotherapy only led to a 14.5% reduction in the percentage of Ki67-positive cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, upon CPT1A knockdown, radiotherapy only led to a 14.5% reduction in the percentage of Ki67-positive cells (approximately 15.6% of the pre-irradiation baseline; Figure 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by quantitative IHC analysis shown in Figure 4D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "e41acb38-d94a-4e70-937f-ea40baa474b6",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C33",
+      "claim": "CPT1A overexpression resulted in reduced tumour weight in SW480 xenograft mice.",
+      "claim_type": "EXPLICIT",
+      "source": "CPT1A overexpression resulted in reduced tumour weight in mice, a trend that persisted even after radiotherapy (Figure 4F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by xenograft tumor weight data shown in Figure 4F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "6fd57d68-9af6-49f6-be23-b5befe8aad26",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C34",
+      "claim": "In the absence of CPT1A overexpression, radiotherapy resulted in a 0.10 g decrease in tumour weight (approximately 52.5% of the pre-irradiation weight).",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, as illustrated in Figure 4E and F, in the absence of CPT1A overexpression, radiotherapy resulted in a 0.10 g decrease in tumour weight (approximately 52.5% of the pre-irradiation weight)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by tumor weight measurements shown in Figure 4E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "fa167681-c95f-4718-ba9e-8ca1103fb402",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C35",
+      "claim": "With CPT1A overexpression, radiotherapy induced a 0.12 g reduction in tumour weight (approximately 89.7% of the pre-irradiation weight).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas with CPT1A overexpression, radiotherapy induced a more pronounced 0.12 g reduction in tumour weight (approximately 89.7% of the pre-irradiation weight).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by tumor weight measurements",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "eefa766e-5f95-4499-90c8-b2a79daa3a83",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C36",
+      "claim": "CPT1A overexpression decreased Ki-67 staining intensity and percentage of positive cells in xenograft tumours.",
+      "claim_type": "EXPLICIT",
+      "source": "IHC staining for Ki-67 revealed significantly decreased staining intensity and percentage of positive cells in CPT1A-overexpressing tumours, indicating weakened proliferative capacity, which was further accentuated after radiotherapy (Figure 4G and H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by IHC data shown in Figure 4G and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "37d5b236-8925-4c98-9096-6d99fc20f75b",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C37",
+      "claim": "With CPT1A knockdown, 363 genes were upregulated and 1290 genes were downregulated (|log2(fold change)|>1 and q<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "With CPT1A knockdown, we found 363 upregulated and 1290 downregulated genes (|log2(fold change)|>1 and q<0.05) (Figure 5\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by transcriptomic sequencing data shown in Figure 5\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "0cd61219-3e25-4ccf-aa76-6be498e52812",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C38",
+      "claim": "Peroxisomes, cell cycle nucleotide excision repair, and fatty acid degradation pathways were among the enriched KEGG pathways in CPT1A knockdown cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We conducted Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis and Gene Ontology (GO) annotation for all differentially expressed genes (DEGs; Figure 5A; Figure 5\u2014figure supplement 1C\u2013E), showing that the peroxisomes, cell cycle nucleotide excision repair, and fatty acid degradation pathways were among the enriched KEGG pathways (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by KEGG pathway analysis shown in Figure 5A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "01664681-56d7-42a0-8df6-4470cfbd9492",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C39",
+      "claim": "Total ROS levels in CPT1A knockout cells decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "The total ROS levels in CPT1A knockout cells decreased, whereas those in CPT1A-overexpressing cells increased (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROS detection data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "ee0f2497-1348-4e9d-88fc-2fbbc14c8e15",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C40",
+      "claim": "Total ROS levels in CPT1A-overexpressing cells increased.",
+      "claim_type": "EXPLICIT",
+      "source": "The total ROS levels in CPT1A knockout cells decreased, whereas those in CPT1A-overexpressing cells increased (Figure 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROS detection data shown in Figure 5D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "31ab4f51-d1c4-48e2-bb6e-831fda4a3486",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C41",
+      "claim": "In CPT1A knockout cells, the GSH/GSSG ratio increased.",
+      "claim_type": "EXPLICIT",
+      "source": "in CPT1A knockout cells, the GSH/GSSG ratio and SOD and CAT enzyme activities increased, and these changes were also observed under 6 Gy irradiation (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSH/GSSG ratio measurements shown in Figure 5E",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "450a3198-35f7-4027-af4c-9b3f8d878772",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C42",
+      "claim": "In CPT1A knockout cells, SOD enzyme activity increased.",
+      "claim_type": "EXPLICIT",
+      "source": "in CPT1A knockout cells, the GSH/GSSG ratio and SOD and CAT enzyme activities increased, and these changes were also observed under 6 Gy irradiation (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SOD enzyme activity measurements shown in Figure 5G",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "d76f5e76-9ccc-4af8-b88d-d2f9b99f12a1",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C43",
+      "claim": "In CPT1A knockout cells, CAT enzyme activity increased.",
+      "claim_type": "EXPLICIT",
+      "source": "in CPT1A knockout cells, the GSH/GSSG ratio and SOD and CAT enzyme activities increased, and these changes were also observed under 6 Gy irradiation (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CAT enzyme activity measurements shown in Figure 5I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "b730157a-b9bf-4b14-8357-86b4caed74db",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C44",
+      "claim": "In CPT1A-overexpressing cells, the GSH/GSSG ratio decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in CPT1A-overexpressing cells, the GSH/GSSG ratio, and SOD and CAT activities decreased, and these changes were also observed after 6 Gy irradiation (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSH/GSSG ratio measurements shown in Figure 5F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "6968bfbc-de92-4925-b6bf-051a0bd4bab8",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C45",
+      "claim": "In CPT1A-overexpressing cells, SOD enzyme activity decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in CPT1A-overexpressing cells, the GSH/GSSG ratio, and SOD and CAT activities decreased, and these changes were also observed after 6 Gy irradiation (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SOD enzyme activity measurements shown in Figure 5H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "3d1e75d8-ef08-43dd-ac54-40a6db7fe488",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C46",
+      "claim": "In CPT1A-overexpressing cells, CAT enzyme activity decreased.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in CPT1A-overexpressing cells, the GSH/GSSG ratio, and SOD and CAT activities decreased, and these changes were also observed after 6 Gy irradiation (Figure 5I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CAT enzyme activity measurements shown in Figure 5I",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "ed8685d1-0eec-420f-a79f-b6170bc18152",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C47",
+      "claim": "CPT1A knockout in cells increased both the mRNA and protein levels of SOD1, SOD2, and CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "We examined the transcriptional and protein levels of SOD (SOD1, SOD2, and SOD3) and CAT (Figure 6A and B) and found that CPT1A knockout in cells increased both the mRNA and protein levels of SOD1, SOD2, and CAT",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot and qRT-PCR data shown in Figure 6A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "2a81bf37-91cf-4cfb-889f-36323bcb8471",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C48",
+      "claim": "CPT1A overexpression decreased the mRNA and protein levels of SOD1, SOD2, and CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the overexpression of CPT1A decreased them (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot and qRT-PCR data shown in Figure 6A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "248ac3b1-e121-4136-af82-fb6181b18ac9",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C49",
+      "claim": "FOXM1, LMNB1, and SAP30 are predicted transcription factors that regulate SOD1, SOD2, and CAT and are upregulated in CPT1A knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, we employed a bioinformatics analysis by intersecting predicted or reported transcription factors known to regulate SOD1, SOD2, and CAT with upregulated DEGs. The Venn diagram highlights three transcription factors that met the criteria: FOXM1, LMNB1, and SAP30 (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by bioinformatics analysis shown in Figure 6C",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "492df149-5b4b-4e25-8317-18340aa55d50",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C50",
+      "claim": "FOXM1 transcription and protein levels were significantly increased in CPT1A knockout cells.",
+      "claim_type": "EXPLICIT",
+      "source": "FOXM1 transcription and protein levels were significantly increased in CPT1A knockout cells but decreased when CPT1A was overexpressed (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot and qRT-PCR data shown in Figure 6A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "4bdf824d-cbda-452e-93e1-0e41b95832eb",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C51",
+      "claim": "FOXM1 transcription and protein levels decreased when CPT1A was overexpressed.",
+      "claim_type": "EXPLICIT",
+      "source": "FOXM1 transcription and protein levels were significantly increased in CPT1A knockout cells but decreased when CPT1A was overexpressed (Figure 6A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot and qRT-PCR data shown in Figure 6A and B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "30f416f4-7eb2-4a4a-a2ca-74faf14f2299",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C52",
+      "claim": "FOXM1 overexpression restored downstream SOD1, SOD2, and CAT protein levels in HCT 116-KO cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, a rescue experiment was conducted by overexpressing FOXM1 in HCT 116-NC and HCT 116-KO cells, demonstrating that downstream SOD1, SOD2, and CAT protein levels were restored by FOXM1 overexpression (Figure 6D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by rescue experiment data shown in Figure 6D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "48c323aa-cd9a-41a8-bd22-f0479af7d4df",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C53",
+      "claim": "FOXM1 positively correlates with SOD1 in READ and COAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we explored the correlation between FOXM1 and the downstream enzymes SOD1, SOD2, and CAT in READ and COAD. The results (Figure 6\u2014figure supplement 1A and B) indicate a positive correlation between FOXM1 and SOD1 as well as SOD2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 6\u2014figure supplement 1A",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "fc2f50a4-b2e6-44fd-af0a-2c8eaa14c3f3",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C54",
+      "claim": "FOXM1 positively correlates with SOD2 in READ and COAD.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we explored the correlation between FOXM1 and the downstream enzymes SOD1, SOD2, and CAT in READ and COAD. The results (Figure 6\u2014figure supplement 1A and B) indicate a positive correlation between FOXM1 and SOD1 as well as SOD2.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by correlation analysis shown in Figure 6\u2014figure supplement 1B",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "c3e0104b-6a8a-46f8-95b9-1e7d3e38d18a",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C55",
+      "claim": "The downregulation of CPT1A increases FOXM1 mRNA and protein levels in CRC, promoting the transcription and translation of SOD1, SOD2, and CAT.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the downregulation of CPT1A increases FOXM1 mRNA and protein levels in CRC, promoting the transcription and translation of SOD1, SOD2, and CAT, thereby accelerating the scavenging of ROS produced after radiation exposure and ultimately leading to radiation resistance in CRC cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by multiple experimental data and summarized in Figure 6E",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "f1156c12-ab35-48b4-b341-f7bf73059e36",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C56",
+      "claim": "CPT1A downregulation accelerates the scavenging of ROS produced after radiation exposure.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the downregulation of CPT1A increases FOXM1 mRNA and protein levels in CRC, promoting the transcription and translation of SOD1, SOD2, and CAT, thereby accelerating the scavenging of ROS produced after radiation exposure and ultimately leading to radiation resistance in CRC cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROS detection and enzyme activity data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "c2dfe58a-99c9-464d-b314-203665f8fc8f",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C57",
+      "claim": "CPT1A downregulation leads to radiation resistance in CRC cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, the downregulation of CPT1A increases FOXM1 mRNA and protein levels in CRC, promoting the transcription and translation of SOD1, SOD2, and CAT, thereby accelerating the scavenging of ROS produced after radiation exposure and ultimately leading to radiation resistance in CRC cells (Figure 6E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by colony formation assays, in vivo experiments, and mechanistic studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "330b4116-8948-4e41-87d0-710a5ec27f35",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C58",
+      "claim": "CPT1A was significantly downregulated in CRC.",
+      "claim_type": "EXPLICIT",
+      "source": "CPT1A was significantly downregulated in CRC and negatively correlated with responsiveness to neoadjuvant radiotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by multiple expression analyses from GEO, TCGA, qRT-PCR, western blot, and IHC",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "316253ad-1f7e-4234-9a32-d3c4deae2b3b",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C59",
+      "claim": "CPT1A was negatively correlated with responsiveness to neoadjuvant radiotherapy.",
+      "claim_type": "EXPLICIT",
+      "source": "CPT1A was significantly downregulated in CRC and negatively correlated with responsiveness to neoadjuvant radiotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by TRG scoring and correlation analysis",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "634c5e0c-2854-4377-89af-3f9e65ceaa95",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C60",
+      "claim": "CPT1A mediates radiosensitivity, influencing reactive oxygen species (ROS) scavenging and DNA damage response.",
+      "claim_type": "EXPLICIT",
+      "source": "Functional studies suggested that CPT1A mediates radiosensitivity, influencing reactive oxygen species (ROS) scavenging and DNA damage response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by functional studies including ROS detection, enzyme activity assays, and DNA damage assays",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "dbbc40a1-9af7-435e-8144-342225b7d346",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C61",
+      "claim": "CPT1A downregulates the FOXM1-SOD1/SOD2/CAT axis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistic exploration revealed that CPT1A downregulates the FOXM1-SOD1/SOD2/CAT axis, moderating cellular ROS levels after irradiation and enhancing radiosensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by western blot, qRT-PCR, and rescue experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "268ec085-548e-4fe5-981c-1d1c5bab0545",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C62",
+      "claim": "CPT1A moderates cellular ROS levels after irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistic exploration revealed that CPT1A downregulates the FOXM1-SOD1/SOD2/CAT axis, moderating cellular ROS levels after irradiation and enhancing radiosensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by ROS detection experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "3aaa9cdb-bf6e-4457-b358-5b54dabbee7b",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C63",
+      "claim": "CPT1A enhances radiosensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistic exploration revealed that CPT1A downregulates the FOXM1-SOD1/SOD2/CAT axis, moderating cellular ROS levels after irradiation and enhancing radiosensitivity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by colony formation assays and in vivo experiments",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "1b502dc1-fa23-4039-b277-e1c8707a3dbf",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C64",
+      "claim": "CPT1A downregulation contributes to radioresistance in CRC by augmenting the FOXM1-mediated antioxidant response.",
+      "claim_type": "EXPLICIT",
+      "source": "CPT1A downregulation contributes to radioresistance in CRC by augmenting the FOXM1-mediated antioxidant response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by comprehensive mechanistic studies",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "c0a086b9-5700-4a8a-9a9e-2aa5555e75f7",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C65",
+      "claim": "CPT1A is a potential biomarker of radiosensitivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CPT1A is a potential biomarker of radiosensitivity and a novel target for overcoming radioresistance, offering a future direction to enhance CRC radiotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from correlation with TRG scores and survival data",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "ba5f9b8a-37d8-4221-9ccc-e46877a5e52c",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C66",
+      "claim": "CPT1A is a novel target for overcoming radioresistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, CPT1A is a potential biomarker of radiosensitivity and a novel target for overcoming radioresistance, offering a future direction to enhance CRC radiotherapy.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from functional studies showing CPT1A modulates radiosensitivity",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "42a98059-3423-4023-b1e8-f8b1cb8a0576",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C67",
+      "claim": "Total ROS significantly reduced in radioresistant cells compared to HCT-15 control cells following 6 Gy irradiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Total ROS significantly reduced in radioresistant cells compared to those in HCT-15 control cells following 6 Gy irradiation (Figure 5\u2014figure supplement 2A and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROS detection data shown in Figure 5\u2014figure supplement 2A and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "6b77076a-52fa-4e36-9e9e-83392e478c15",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C68",
+      "claim": "CPT1A overexpression increased total ROS levels in radioresistant cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, CPT1A overexpression increased total ROS levels in radioresistant cells (Figure 5\u2014figure supplement 2B and D)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by ROS detection data shown in Figure 5\u2014figure supplement 2B and D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "37ae3516-8b65-4dff-846d-1559d2119de6",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C69",
+      "claim": "Radioresistant cells showed increased GSH/GSSG ratio compared to parental HCT-15 control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we assessed the GSH/GSSG ratio (Figure 5\u2014figure supplement 2E and F) and SOD (Figure 5\u2014figure supplement 2G and H), POD (Figure 5\u2014figure supplement 2I and J), and CAT enzyme activities (Figure 5\u2014figure supplement 2K) in radioresistant cells, both at baseline and after 6 Gy irradiation, revealing an increased GSH/GSSG ratio and elevated activities of SOD, POD, and CAT enzymes in radioresistant cells compared to those in parental HCT-15 control cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSH/GSSG ratio measurements shown in Figure 5\u2014figure supplement 2E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "d628c3c0-097d-487a-8631-4d79defef5a1",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C70",
+      "claim": "Radioresistant cells showed elevated activities of SOD, POD, and CAT enzymes compared to parental HCT-15 control cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we assessed the GSH/GSSG ratio (Figure 5\u2014figure supplement 2E and F) and SOD (Figure 5\u2014figure supplement 2G and H), POD (Figure 5\u2014figure supplement 2I and J), and CAT enzyme activities (Figure 5\u2014figure supplement 2K) in radioresistant cells, both at baseline and after 6 Gy irradiation, revealing an increased GSH/GSSG ratio and elevated activities of SOD, POD, and CAT enzymes in radioresistant cells compared to those in parental HCT-15 control cells.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by enzyme activity measurements shown in Figure 5\u2014figure supplement 2G-K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "4b59e729-8824-448b-9182-25b5ff4d1b94",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C71",
+      "claim": "CPT1A overexpression restored the GSH/GSSG ratio in HCT-15-25F-OE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the influence of CPT1A overexpression on radiation resistance, we examined the GSH/GSSG ratio (Figure 5\u2014figure supplement 2E and F) and SOD (Figure 5\u2014figure supplement 2G and H), POD (Figure 5\u2014figure supplement 2I and J), and CAT enzyme activities (Figure 5\u2014figure supplement 2K) in HCT-15-25F-OE cells compared to those in control cells, showing that CPT1A overexpression restored the GSH/GSSG ratio and increased SOD and CAT enzyme activities but failed to restore POD enzyme activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by GSH/GSSG ratio measurements shown in Figure 5\u2014figure supplement 2E and F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "c80479bf-f7e4-4e2a-9471-6faca864a148",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C72",
+      "claim": "CPT1A overexpression increased SOD enzyme activity in HCT-15-25F-OE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the influence of CPT1A overexpression on radiation resistance, we examined the GSH/GSSG ratio (Figure 5\u2014figure supplement 2E and F) and SOD (Figure 5\u2014figure supplement 2G and H), POD (Figure 5\u2014figure supplement 2I and J), and CAT enzyme activities (Figure 5\u2014figure supplement 2K) in HCT-15-25F-OE cells compared to those in control cells, showing that CPT1A overexpression restored the GSH/GSSG ratio and increased SOD and CAT enzyme activities but failed to restore POD enzyme activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by SOD enzyme activity measurements shown in Figure 5\u2014figure supplement 2G and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "fe8ead44-c7e7-4d92-a7e9-47d8f2f37d03",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C73",
+      "claim": "CPT1A overexpression increased CAT enzyme activity in HCT-15-25F-OE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the influence of CPT1A overexpression on radiation resistance, we examined the GSH/GSSG ratio (Figure 5\u2014figure supplement 2E and F) and SOD (Figure 5\u2014figure supplement 2G and H), POD (Figure 5\u2014figure supplement 2I and J), and CAT enzyme activities (Figure 5\u2014figure supplement 2K) in HCT-15-25F-OE cells compared to those in control cells, showing that CPT1A overexpression restored the GSH/GSSG ratio and increased SOD and CAT enzyme activities but failed to restore POD enzyme activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CAT enzyme activity measurements shown in Figure 5\u2014figure supplement 2K",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "43daba49-5110-49e2-a588-ce2244ee3815",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C74",
+      "claim": "CPT1A overexpression failed to restore POD enzyme activity in HCT-15-25F-OE cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To explore the influence of CPT1A overexpression on radiation resistance, we examined the GSH/GSSG ratio (Figure 5\u2014figure supplement 2E and F) and SOD (Figure 5\u2014figure supplement 2G and H), POD (Figure 5\u2014figure supplement 2I and J), and CAT enzyme activities (Figure 5\u2014figure supplement 2K) in HCT-15-25F-OE cells compared to those in control cells, showing that CPT1A overexpression restored the GSH/GSSG ratio and increased SOD and CAT enzyme activities but failed to restore POD enzyme activity.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by POD enzyme activity measurements shown in Figure 5\u2014figure supplement 2I and J",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "ae6dabfb-fcbd-448d-ba4c-4932ca4b8ab3",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C75",
+      "claim": "CPT1A overexpression increased the radiosensitivity of radioresistant cells (D0=2.871 vs 2.581, p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "CFAs and the multi-target single-hit survival model revealed that CPT1A overexpression increased the radiosensitivity of radioresistant cells (D0=2.871 vs 2.581, p<0.05; Figure 3\u2014figure supplement 2G and H)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CFA and survival model data shown in Figure 3\u2014figure supplement 2G and H",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "54f20303-1cf9-464f-a834-d6743d722ffe",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C76",
+      "claim": "HCT-15-25F and HCT-15-5F cells showed increased radioresistance compared to parental HCT-15 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using CFAs and the multi-target single-hit survival model, we observed increased radioresistance in these new cell lines, as indicated by higher D0 values than those of the parental cells (HCT-15 D0=2.957, HCT-15-5F D0=3.240, HCT-15-25F D0=3.822) (Figure 3\u2014figure supplement 2B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by CFA and survival model data shown in Figure 3\u2014figure supplement 2B and C",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "be08d65e-5d1d-449c-9b3a-553e1858148a",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C77",
+      "claim": "CPT1A protein expression was significantly decreased in HCT-15-25F and HCT-15-5F cells compared with the original cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found significantly decreased CPT1A protein expression in HCT-15-25F and HCT-15-5F cells compared with that in the original cells (Figure 3\u2014figure supplement 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by western blot data shown in Figure 3\u2014figure supplement 2D",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "38808ca8-a985-4cfe-b363-343bea02713a",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C78",
+      "claim": "CPT1A overexpression resulted in a slow disappearance of intracellular \u03b3-H2A.X in HCT-15-25F cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To assess the impact of CPT1A overexpression on DNA repair capacity, we monitored \u03b3-H2A.X expression at different time points following 6 Gy irradiation. CPT1A overexpression resulted in a slow disappearance of intracellular \u03b3-H2A.X, suggesting enhanced DNA damage repair capability (Figure 3\u2014figure supplement 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by \u03b3-H2A.X expression data shown in Figure 3\u2014figure supplement 2F",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "5444906d-65c8-44f9-a959-a76a12060f8a",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "claim_id": "C79",
+      "claim": "FOXM1 has potential binding sites in the promoters of SOD1, SOD2, and CAT as predicted by hTFtarget and JASPAR.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we used hTFtarget and JASPAR to predict FOXM1 binding sites in the promoters of SOD1, SOD2, and CAT (Table 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by bioinformatics prediction using hTFtarget and JASPAR databases",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "1e1fb119-d48a-4e75-923e-59f208c3f009",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Background claims establish that CRC is a major cause of cancer mortality, radiotherapy is crucial for management, and neoadjuvant therapies show variable response rates. These claims provide context for the study's focus on radioresistance mechanisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 are all supported by appropriate citations to prior literature (Siegel et al., 2023; Glynne-Jones et al., 2017; Cercek et al., 2018; Cervantes et al., 2023). These are standard background claims establishing the clinical context and are appropriately referenced.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "420de63f-6f38-48ed-b146-dde598fb1be4",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Background claims establish that mitochondria generate 90% of cellular ROS, radiation-induced ROS cause two-thirds of DNA damage, and CPT1A is absent in several tumors. These provide mechanistic context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 are supported by citations to prior work (Glasauer and Chandel, 2014; Chio and Tuveson, 2017; Melone et al., 2018). These establish the biological rationale for investigating CPT1A in the context of radiation-induced ROS and DNA damage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "7a07737f-4438-4012-bde8-92c64a6d9799",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "CPT1A expression is significantly downregulated in CRC tissues compared to adjacent normal tissues, as demonstrated by multiple independent approaches including GEO microarray analysis, qRT-PCR, western blot, TCGA database analysis, and IHC staining.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 and C58 are well-supported by convergent evidence from multiple methodologies (GEO arrays, qRT-PCR on 24 paired samples, western blot on 16 paired samples, TCGA analysis, and IHC). The consistency across different datasets and techniques strengthens the conclusion. Sample sizes are adequate for the analyses performed.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Low CPT1A expression correlates with poor overall survival and reduced responsiveness to neoadjuvant radiotherapy, as evidenced by Kaplan-Meier survival analysis and negative correlation between CPT1A IHC scores and tumor regression grade (TRG) scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C15-C20 show associations between CPT1A expression and clinical outcomes. However, C16 reports a non-significant p-value (p=0.061), which undermines the strength of the survival association. The TRG correlation (C20, R=-0.343, p=0.024) is statistically significant but modest. The sample size for TRG analysis (n=43) is relatively small, and no multivariate analysis controlling for confounders is reported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "4242d03c-424c-421b-be40-4809c08f85fe",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Baseline CPT1A expression levels correlate with intrinsic radiosensitivity across CRC cell lines, with higher CPT1A expression in radiosensitive cells (HCT15, RKO, HCT116) compared to radioresistant cells (SW480, Caco-2, SW620, HT-29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C22 are supported by colony formation assays with multi-target single-hit survival modeling and expression analysis across multiple cell lines. The correlation between baseline CPT1A expression and radiosensitivity provides important context for subsequent manipulation experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "CPT1A modulates radiosensitivity in CRC cells, with knockout increasing radioresistance and overexpression increasing radiosensitivity, as demonstrated by colony formation assays, comet assays, and \u03b3-H2A.X kinetics following irradiation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C28 are well-supported by multiple complementary assays. The D0 values from survival curves show statistically significant changes (p<0.05 for knockout, p<0.01 for overexpression). Comet assays and \u03b3-H2A.X kinetics provide mechanistic support for altered DNA damage repair. The use of both loss-of-function and gain-of-function approaches strengthens the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "ed214809-8499-453f-aced-32fb26c11ead",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Radioresistant cell lines (HCT-15-25F and HCT-15-5F) generated by fractionated irradiation show decreased CPT1A expression, and CPT1A overexpression in these cells restores radiosensitivity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C78 and C75 demonstrate that acquired radioresistance is associated with CPT1A downregulation, and that restoring CPT1A expression can reverse this phenotype. The D0 values show significant differences (p<0.05), and the \u03b3-H2A.X kinetics support altered DNA repair. This provides additional evidence that CPT1A loss is functionally linked to radioresistance.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "CPT1A modulates tumor radiosensitivity in vivo, with knockout increasing tumor growth and radioresistance, and overexpression decreasing tumor growth and enhancing radiosensitivity, as measured by tumor weight and Ki-67 proliferation markers in xenograft models.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C36 demonstrate in vivo validation of the in vitro findings. The xenograft experiments show consistent effects on tumor weight and Ki-67 staining. The quantitative analysis of radiotherapy effects (32.9% vs 14.5% reduction in Ki-67 for control vs knockout; 52.5% vs 89.7% tumor weight reduction for control vs overexpression) provides strong evidence. However, the manuscript does not specify the number of mice per group or provide statistical analysis details for the in vivo experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "2d87101e-5902-416d-8195-143290ff475f",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Transcriptomic analysis of CPT1A knockout cells reveals differential expression of 1,653 genes, with enrichment in peroxisomal pathways, cell cycle, nucleotide excision repair, and fatty acid degradation pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C38 are supported by RNA-seq data with appropriate statistical thresholds (|log2FC|>1, q<0.05). The KEGG pathway analysis identifies biologically relevant pathways. However, the manuscript does not specify the number of biological replicates used for RNA-seq, though Figure 5\u2014figure supplement 1A suggests technical replicates were consistent.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "9c536196-03ba-466b-8eb0-cd1e8877d96a",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "CPT1A modulates cellular ROS levels and antioxidant capacity, with knockout decreasing ROS and increasing GSH/GSSG ratio, SOD, and CAT activities, while overexpression has opposite effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C46 and C62 are supported by multiple biochemical assays measuring ROS (DCFH-DA flow cytometry), GSH/GSSG ratio, and enzyme activities. The effects are consistent across different manipulations and are observed both at baseline and after irradiation. The data provide mechanistic insight into how CPT1A affects radiosensitivity.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Radioresistant cells show reduced ROS levels and elevated antioxidant enzyme activities compared to parental cells, and CPT1A overexpression partially restores these parameters except for POD activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C67-C74 provide additional validation in the radioresistant cell model. The data show consistent patterns with the knockout/overexpression experiments. The observation that POD activity is not restored by CPT1A overexpression (C74) suggests specificity in the mechanism and is appropriately reported as a negative result.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "39013806-b35e-4928-8446-c56619a22872",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "CPT1A regulates expression of antioxidant enzymes SOD1, SOD2, and CAT at both mRNA and protein levels, and bioinformatic analysis identifies FOXM1, LMNB1, and SAP30 as candidate transcription factors, with FOXM1 showing inverse correlation with CPT1A.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C51 are supported by western blot and qRT-PCR data showing coordinated regulation of multiple antioxidant enzymes. The bioinformatic approach to identify candidate transcription factors (C49) is reasonable, though it relies on prediction algorithms. The observation that FOXM1 protein levels change inversely with CPT1A (C50-C51) provides a mechanistic link.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "197df177-0d40-4fb8-997d-44d3d19406f3",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "FOXM1 directly regulates SOD1, SOD2, and CAT expression, as demonstrated by rescue experiments showing FOXM1 overexpression restores antioxidant enzyme levels in CPT1A knockout cells, correlation analysis in TCGA data, and predicted binding sites in target gene promoters.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C52 shows that FOXM1 overexpression can restore SOD1, SOD2, and CAT protein levels, which is strong functional evidence. Claims C53-C54 show positive correlations in TCGA data. However, C79 relies only on bioinformatic prediction of binding sites without experimental validation (e.g., ChIP, luciferase assays). The mechanism by which CPT1A regulates FOXM1 is not elucidated, and the authors acknowledge this limitation in the Discussion. Direct binding evidence for FOXM1 to target promoters is lacking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "01a58f19-56c8-4372-8e93-3d6d1f9a2c70",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The proposed mechanism is that CPT1A downregulation increases FOXM1 expression, which promotes transcription of SOD1, SOD2, and CAT, thereby accelerating ROS scavenging after radiation and leading to radioresistance in CRC cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57, C61, and C64 synthesize the experimental findings into a coherent mechanistic model. The model is supported by the convergent evidence from expression studies, functional assays, ROS measurements, enzyme activities, and rescue experiments. However, the direct mechanism linking CPT1A to FOXM1 regulation remains unclear, as acknowledged by the authors.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "4fa4a094-d1ba-477e-92fb-4c40e4f6d8c9",
+      "content_id": "38f3d775-e75e-4b47-95d9-2e92b9925b66",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "CPT1A is proposed as a potential biomarker of radiosensitivity and a novel therapeutic target for overcoming radioresistance in CRC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C66 are speculative and represent future directions rather than demonstrated results. While the correlation with TRG scores (C20) and survival data (C15-C16) provide some support for biomarker potential, the clinical utility has not been validated in independent cohorts. The therapeutic potential (C66) is inferred from functional studies but would require extensive additional work including drug development and clinical trials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "946499b2-e0e4-441f-a864-9703716b66a1",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "CPT1A expression is significantly downregulated in CRC tissues compared to adjacent non-tumor tissues, as demonstrated through multiple independent datasets (GEO microarrays, TCGA), patient samples (qRT-PCR, western blot), and IHC staining.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 explicitly states as a strength: 'Analysis of CPT1A in paired CRC tumors and non-tumor tissue using multiple modalities combined with analysis of independent datasets rigorously show that CPT1A is downregulated in CRC tumors at the RNA and protein level.' This finding is accepted without challenge.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "868ac7b5-de1d-41cc-89b4-7e220caabe1d",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Low CPT1A expression correlates with decreased patient survival in CRC, with significant association in COAD and near-significant trend in READ (p=0.061).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges that 'lower expression correlates with decreased patient survival over time, suggesting that CPT1A may suppress tumor progression.' The survival data is accepted as part of the overall finding that CPT1A acts as a tumor suppressor.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "c9e02d2b-a2f6-4074-b7c5-4314c679d598",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "CPT1A expression negatively correlates with tumor regression grade (TRG) after neoadjuvant radiotherapy, with higher CPT1A IHC scores in TRG 1 (minimal residual tumor) compared to TRG 2-3 groups (R=-0.3430, p=0.024).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This clinical correlation is not explicitly challenged by reviewers and is accepted as part of the evidence that CPT1A relates to radiotherapy response. Reviewer 1 summarizes that the authors 'argue this radiosensitization driven by CPT1A could explain why CPT1A expression correlates with increased patient survival.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "4437b8f9-f1b3-4351-ba9b-087959fe5a10",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Baseline CPT1A expression levels are higher in radiation-resistant CRC cell lines (SW480, Caco-2, SW620, HT-29) compared to radiosensitive cell lines (HCT15, RKO, HCT116).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While this finding is presented, it appears contradictory to the main model and is not directly addressed by reviewers. Reviewer 2 notes the study 'suggests instead a tumor-suppressive function for CPT1A in CRC' but highlights that 'they do not sufficiently address the contradiction with prior studies that indicate a tumor-promoting role for CPT1A.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "f6e0c641-12a0-4b7a-b959-f746ded27cf6",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "CPT1A modulates radiosensitivity in CRC cells, with knockout increasing radioresistance (D0=1.526 vs 1.993, p<0.05) and overexpression decreasing radioresistance (D0=2.724 vs 1.963, p<0.01) in colony formation assays.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges this as a strength: 'The authors use paired cell line model systems where CPT1A is both knocked out and overexpressed in cells lines that endogenously express or repress CPT1A respectively. These complementary model systems increase the rigor of the study.' The in vitro radiosensitivity data is accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "e46f9416-f37d-426c-afc2-352ba6858dfe",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "CPT1A expression affects DNA damage repair capacity, with knockout improving repair (faster \u03b3-H2A.X disappearance, decreased DNA in comet tail) and overexpression reducing repair (slower \u03b3-H2A.X disappearance, increased DNA in comet tail).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 explicitly challenges this finding: 'The authors propose in Figure 3 that DNA repair capacity is inhibited in CRC cells by CPT1A expression. However, the gH2AX immunoblots performed in Figure 3H-I that measure DNA repair kinetics are not convincing that CPT1A expression impairs DNA repair kinetics. Separate blots are shown for CPT1A expressing and non-expressing cell lines, not allowing for rigorous comparison.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "cf455805-a9b6-4177-924a-1fb088c8b1c0",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "CPT1A modulates tumor growth and radiotherapy response in xenograft models, with knockout increasing tumor weight and Ki-67 proliferation, while overexpression reduces tumor weight and Ki-67 staining, with differential responses to radiotherapy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 raises a critical concern: 'In vivo, CPT1A expression slows tumor growth even in the absence of radiotherapy, and radiotherapy only proportionally decreases tumor growth to the same extent as it does in CPT1A non-expressing CRC tumors... it is unclear that CPT1A expression causes radiosensitization in vivo or if CPT1A expression acts as independent tumor suppressor to which radiotherapy has an additive effect.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "CPT1A expression inversely regulates cellular ROS levels and antioxidant capacity, with knockout decreasing ROS and increasing GSH/GSSG ratio and SOD/CAT enzyme activities, while overexpression has opposite effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges: 'CPT1A expression suppresses expression of antioxidant metabolism genes and lowers levels of antioxidants.' While the mechanism is questioned, the observation that CPT1A modulates antioxidant capacity is accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "7672eb4f-37ec-4ceb-9016-4d53dbf9af8b",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "CPT1A regulates expression of antioxidant enzymes (SOD1, SOD2, CAT) and the transcription factor FOXM1, with knockout increasing and overexpression decreasing their mRNA and protein levels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states: 'the authors find that CPT1A expression regulates FOXM1 levels and that antioxidant gene expression can be partially rescued in CPT1A expressing CRC cells.' The expression changes are accepted, though the mechanistic link is questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "CPT1A downregulation leads to radioresistance through a FOXM1-mediated mechanism, where increased FOXM1 upregulates SOD1/SOD2/CAT expression, enhancing ROS scavenging capacity after radiation exposure.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 1 explicitly challenges this model: 'key aspects of this model are not tested. The authors do not show that FOXM1 contributes to regulation of antioxidant levels in CRC cells and tumors or if FOXM1 suppression is key to inhibition of CRC tumor growth and radiosensitization by CPT1A. Thus, the model the authors propose is speculative and not supported by the existing data.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "308f97b9-4510-4eae-b975-3000eacf17f7",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "CPT1A knockdown results in differential gene expression with 363 upregulated and 1290 downregulated genes, enriching pathways including peroxisomes, cell cycle, nucleotide excision repair, and fatty acid degradation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This transcriptomic data is presented as supporting evidence and is not challenged by reviewers. It provides context for the mechanistic studies.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "426d75d9-5476-4421-bec2-58a613de2f16",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "In radioresistant HCT-15 derivative cell lines (HCT-15-5F, HCT-15-25F), CPT1A expression is decreased, ROS levels are reduced, and antioxidant enzyme activities are elevated; CPT1A overexpression partially reverses these phenotypes and increases radiosensitivity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 acknowledges this as a strength: 'They use isogenic HCT15 CRC cell lines that are radioresistant and show that overexpression of CPT1A sensitizes these cells to radiotherapy. Interestingly, the radioresistant cells exhibit lower CPT1A levels, suggesting that downregulation of CPT1A may be involved in the acquisition of radioresistance.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "ac28ec18-2a9b-427d-ba5f-59c58790354e",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "FOXM1 has predicted binding sites in the promoters of SOD1, SOD2, and CAT genes based on bioinformatics analysis using hTFtarget and JASPAR databases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This bioinformatics prediction is presented as supporting evidence for the proposed mechanism and is not challenged, though reviewers note the overall mechanism requires more functional validation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "7cb9bc81-96a3-4c71-ac1c-340d2c34f4c1",
+      "content_id": "92dfa1f2-92a7-49b6-8f7d-5ea6ec6c3824",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "CPT1A is proposed as a potential biomarker of radiosensitivity and a novel therapeutic target for overcoming radioresistance in CRC.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 notes: 'While the findings are interesting and could have significant implications for cancer therapy, the limitations in experimental scope and the lack of a thorough discussion reconciling contradictory evidence warrant caution.' Reviewer 2 also highlights that 'they have not investigated this through pharmacological means' and that testing CPT1A inhibitors would be important.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "dc20db01-bfb3-4a66-99ef-58f896001de4",
+      "result_id": "1e1fb119-d48a-4e75-923e-59f208c3f009"
+    },
+    {
+      "claim_id": "4b797219-5f34-4f7f-b586-6a088604cf48",
+      "result_id": "1e1fb119-d48a-4e75-923e-59f208c3f009"
+    },
+    {
+      "claim_id": "d9cf4b9d-9c39-4e80-861f-45aefe11e7fd",
+      "result_id": "1e1fb119-d48a-4e75-923e-59f208c3f009"
+    },
+    {
+      "claim_id": "55338cf2-a71e-47ae-bf3c-9dda880205ce",
+      "result_id": "1e1fb119-d48a-4e75-923e-59f208c3f009"
+    },
+    {
+      "claim_id": "d6c3efad-2b9b-4300-9db6-6e6501c7cc30",
+      "result_id": "1e1fb119-d48a-4e75-923e-59f208c3f009"
+    },
+    {
+      "claim_id": "f8259581-9d08-46cc-afdf-ebb39cdc8f53",
+      "result_id": "420de63f-6f38-48ed-b146-dde598fb1be4"
+    },
+    {
+      "claim_id": "7303df5b-4bee-4581-9af7-d7e2d0cd41fc",
+      "result_id": "420de63f-6f38-48ed-b146-dde598fb1be4"
+    },
+    {
+      "claim_id": "5f3c8b43-9762-4956-a52e-fca42944f591",
+      "result_id": "420de63f-6f38-48ed-b146-dde598fb1be4"
+    },
+    {
+      "claim_id": "ed2e04e6-c240-45d3-a9a4-1f177efb3eb7",
+      "result_id": "7a07737f-4438-4012-bde8-92c64a6d9799"
+    },
+    {
+      "claim_id": "22531d5d-3637-4114-aeab-68ed0cf817e9",
+      "result_id": "7a07737f-4438-4012-bde8-92c64a6d9799"
+    },
+    {
+      "claim_id": "e13cb457-ed1f-4801-89c0-99848e03b0fc",
+      "result_id": "7a07737f-4438-4012-bde8-92c64a6d9799"
+    },
+    {
+      "claim_id": "13f0e81e-f403-4b6a-ab55-592bc32fb7c9",
+      "result_id": "7a07737f-4438-4012-bde8-92c64a6d9799"
+    },
+    {
+      "claim_id": "17f6a4c0-85c8-4010-9be0-4a64e5a27ba7",
+      "result_id": "7a07737f-4438-4012-bde8-92c64a6d9799"
+    },
+    {
+      "claim_id": "b6c4dedd-e68a-4ed4-baa7-4b82a7ef5571",
+      "result_id": "7a07737f-4438-4012-bde8-92c64a6d9799"
+    },
+    {
+      "claim_id": "330b4116-8948-4e41-87d0-710a5ec27f35",
+      "result_id": "7a07737f-4438-4012-bde8-92c64a6d9799"
+    },
+    {
+      "claim_id": "48ef0b6b-c6f7-4ead-a369-fbf7118d9052",
+      "result_id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d"
+    },
+    {
+      "claim_id": "a1a377e1-0d9c-4d2c-aa80-442edb519f00",
+      "result_id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d"
+    },
+    {
+      "claim_id": "84b1e539-e23c-44ea-b42b-adaeebddfb1d",
+      "result_id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d"
+    },
+    {
+      "claim_id": "e54278da-eb36-457f-a7d5-07bca0c2b4e9",
+      "result_id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d"
+    },
+    {
+      "claim_id": "0fc95207-e21a-4a97-bade-d40d94227c04",
+      "result_id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d"
+    },
+    {
+      "claim_id": "6891765b-dca7-4b15-b105-d695e87c23bc",
+      "result_id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d"
+    },
+    {
+      "claim_id": "316253ad-1f7e-4234-9a32-d3c4deae2b3b",
+      "result_id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d"
+    },
+    {
+      "claim_id": "79edafdf-8deb-4aac-9c33-57cfd23c32a9",
+      "result_id": "4242d03c-424c-421b-be40-4809c08f85fe"
+    },
+    {
+      "claim_id": "2005378d-002e-4057-bb07-af6ca1cf7989",
+      "result_id": "4242d03c-424c-421b-be40-4809c08f85fe"
+    },
+    {
+      "claim_id": "125680d5-f609-4c06-9c91-eed03902bee6",
+      "result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e"
+    },
+    {
+      "claim_id": "3e4aba34-4d95-4228-bbc6-808bfb8deebb",
+      "result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e"
+    },
+    {
+      "claim_id": "723d82cd-9443-46ef-8e87-fcdca4598f7a",
+      "result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e"
+    },
+    {
+      "claim_id": "c98f0fc7-cc00-423f-b839-dcf0a5057533",
+      "result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e"
+    },
+    {
+      "claim_id": "80066f00-48ca-4df2-ae17-90a8e509dfb9",
+      "result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e"
+    },
+    {
+      "claim_id": "706905c9-d1af-45d9-a823-cfffb0f99494",
+      "result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e"
+    },
+    {
+      "claim_id": "634c5e0c-2854-4377-89af-3f9e65ceaa95",
+      "result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e"
+    },
+    {
+      "claim_id": "3aaa9cdb-bf6e-4457-b358-5b54dabbee7b",
+      "result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e"
+    },
+    {
+      "claim_id": "54f20303-1cf9-464f-a834-d6743d722ffe",
+      "result_id": "ed214809-8499-453f-aced-32fb26c11ead"
+    },
+    {
+      "claim_id": "be08d65e-5d1d-449c-9b3a-553e1858148a",
+      "result_id": "ed214809-8499-453f-aced-32fb26c11ead"
+    },
+    {
+      "claim_id": "ae6dabfb-fcbd-448d-ba4c-4932ca4b8ab3",
+      "result_id": "ed214809-8499-453f-aced-32fb26c11ead"
+    },
+    {
+      "claim_id": "38808ca8-a985-4cfe-b363-343bea02713a",
+      "result_id": "ed214809-8499-453f-aced-32fb26c11ead"
+    },
+    {
+      "claim_id": "b5ff7199-8f53-48e0-9264-61898d5b30ab",
+      "result_id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7"
+    },
+    {
+      "claim_id": "e5ed4dc9-e58c-4e38-a4e5-e33dad7b2ead",
+      "result_id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7"
+    },
+    {
+      "claim_id": "effb7da8-c90e-4592-bae4-503ec866fbfa",
+      "result_id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7"
+    },
+    {
+      "claim_id": "bfecb2d7-7a77-4e12-83ae-ccc0dc09a810",
+      "result_id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7"
+    },
+    {
+      "claim_id": "e41acb38-d94a-4e70-937f-ea40baa474b6",
+      "result_id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7"
+    },
+    {
+      "claim_id": "6fd57d68-9af6-49f6-be23-b5befe8aad26",
+      "result_id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7"
+    },
+    {
+      "claim_id": "fa167681-c95f-4718-ba9e-8ca1103fb402",
+      "result_id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7"
+    },
+    {
+      "claim_id": "eefa766e-5f95-4499-90c8-b2a79daa3a83",
+      "result_id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7"
+    },
+    {
+      "claim_id": "37d5b236-8925-4c98-9096-6d99fc20f75b",
+      "result_id": "2d87101e-5902-416d-8195-143290ff475f"
+    },
+    {
+      "claim_id": "0cd61219-3e25-4ccf-aa76-6be498e52812",
+      "result_id": "2d87101e-5902-416d-8195-143290ff475f"
+    },
+    {
+      "claim_id": "01664681-56d7-42a0-8df6-4470cfbd9492",
+      "result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a"
+    },
+    {
+      "claim_id": "ee0f2497-1348-4e9d-88fc-2fbbc14c8e15",
+      "result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a"
+    },
+    {
+      "claim_id": "31ab4f51-d1c4-48e2-bb6e-831fda4a3486",
+      "result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a"
+    },
+    {
+      "claim_id": "450a3198-35f7-4027-af4c-9b3f8d878772",
+      "result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a"
+    },
+    {
+      "claim_id": "d76f5e76-9ccc-4af8-b88d-d2f9b99f12a1",
+      "result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a"
+    },
+    {
+      "claim_id": "b730157a-b9bf-4b14-8357-86b4caed74db",
+      "result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a"
+    },
+    {
+      "claim_id": "6968bfbc-de92-4925-b6bf-051a0bd4bab8",
+      "result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a"
+    },
+    {
+      "claim_id": "3d1e75d8-ef08-43dd-ac54-40a6db7fe488",
+      "result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a"
+    },
+    {
+      "claim_id": "268ec085-548e-4fe5-981c-1d1c5bab0545",
+      "result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a"
+    },
+    {
+      "claim_id": "42a98059-3423-4023-b1e8-f8b1cb8a0576",
+      "result_id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc"
+    },
+    {
+      "claim_id": "6b77076a-52fa-4e36-9e9e-83392e478c15",
+      "result_id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc"
+    },
+    {
+      "claim_id": "37ae3516-8b65-4dff-846d-1559d2119de6",
+      "result_id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc"
+    },
+    {
+      "claim_id": "d628c3c0-097d-487a-8631-4d79defef5a1",
+      "result_id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc"
+    },
+    {
+      "claim_id": "4b59e729-8824-448b-9182-25b5ff4d1b94",
+      "result_id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc"
+    },
+    {
+      "claim_id": "c80479bf-f7e4-4e2a-9471-6faca864a148",
+      "result_id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc"
+    },
+    {
+      "claim_id": "fe8ead44-c7e7-4d92-a7e9-47d8f2f37d03",
+      "result_id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc"
+    },
+    {
+      "claim_id": "43daba49-5110-49e2-a588-ce2244ee3815",
+      "result_id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc"
+    },
+    {
+      "claim_id": "ed8685d1-0eec-420f-a79f-b6170bc18152",
+      "result_id": "39013806-b35e-4928-8446-c56619a22872"
+    },
+    {
+      "claim_id": "2a81bf37-91cf-4cfb-889f-36323bcb8471",
+      "result_id": "39013806-b35e-4928-8446-c56619a22872"
+    },
+    {
+      "claim_id": "248ac3b1-e121-4136-af82-fb6181b18ac9",
+      "result_id": "39013806-b35e-4928-8446-c56619a22872"
+    },
+    {
+      "claim_id": "492df149-5b4b-4e25-8317-18340aa55d50",
+      "result_id": "39013806-b35e-4928-8446-c56619a22872"
+    },
+    {
+      "claim_id": "4bdf824d-cbda-452e-93e1-0e41b95832eb",
+      "result_id": "39013806-b35e-4928-8446-c56619a22872"
+    },
+    {
+      "claim_id": "30f416f4-7eb2-4a4a-a2ca-74faf14f2299",
+      "result_id": "197df177-0d40-4fb8-997d-44d3d19406f3"
+    },
+    {
+      "claim_id": "48c323aa-cd9a-41a8-bd22-f0479af7d4df",
+      "result_id": "197df177-0d40-4fb8-997d-44d3d19406f3"
+    },
+    {
+      "claim_id": "fc2f50a4-b2e6-44fd-af0a-2c8eaa14c3f3",
+      "result_id": "197df177-0d40-4fb8-997d-44d3d19406f3"
+    },
+    {
+      "claim_id": "5444906d-65c8-44f9-a959-a76a12060f8a",
+      "result_id": "197df177-0d40-4fb8-997d-44d3d19406f3"
+    },
+    {
+      "claim_id": "c3e0104b-6a8a-46f8-95b9-1e7d3e38d18a",
+      "result_id": "01a58f19-56c8-4372-8e93-3d6d1f9a2c70"
+    },
+    {
+      "claim_id": "f1156c12-ab35-48b4-b341-f7bf73059e36",
+      "result_id": "01a58f19-56c8-4372-8e93-3d6d1f9a2c70"
+    },
+    {
+      "claim_id": "c2dfe58a-99c9-464d-b314-203665f8fc8f",
+      "result_id": "01a58f19-56c8-4372-8e93-3d6d1f9a2c70"
+    },
+    {
+      "claim_id": "dbbc40a1-9af7-435e-8144-342225b7d346",
+      "result_id": "01a58f19-56c8-4372-8e93-3d6d1f9a2c70"
+    },
+    {
+      "claim_id": "1b502dc1-fa23-4039-b277-e1c8707a3dbf",
+      "result_id": "01a58f19-56c8-4372-8e93-3d6d1f9a2c70"
+    },
+    {
+      "claim_id": "c0a086b9-5700-4a8a-9a9e-2aa5555e75f7",
+      "result_id": "4fa4a094-d1ba-477e-92fb-4c40e4f6d8c9"
+    },
+    {
+      "claim_id": "ba5f9b8a-37d8-4221-9ccc-e46877a5e52c",
+      "result_id": "4fa4a094-d1ba-477e-92fb-4c40e4f6d8c9"
+    },
+    {
+      "claim_id": "ed2e04e6-c240-45d3-a9a4-1f177efb3eb7",
+      "result_id": "946499b2-e0e4-441f-a864-9703716b66a1"
+    },
+    {
+      "claim_id": "22531d5d-3637-4114-aeab-68ed0cf817e9",
+      "result_id": "946499b2-e0e4-441f-a864-9703716b66a1"
+    },
+    {
+      "claim_id": "e13cb457-ed1f-4801-89c0-99848e03b0fc",
+      "result_id": "946499b2-e0e4-441f-a864-9703716b66a1"
+    },
+    {
+      "claim_id": "13f0e81e-f403-4b6a-ab55-592bc32fb7c9",
+      "result_id": "946499b2-e0e4-441f-a864-9703716b66a1"
+    },
+    {
+      "claim_id": "17f6a4c0-85c8-4010-9be0-4a64e5a27ba7",
+      "result_id": "946499b2-e0e4-441f-a864-9703716b66a1"
+    },
+    {
+      "claim_id": "b6c4dedd-e68a-4ed4-baa7-4b82a7ef5571",
+      "result_id": "946499b2-e0e4-441f-a864-9703716b66a1"
+    },
+    {
+      "claim_id": "330b4116-8948-4e41-87d0-710a5ec27f35",
+      "result_id": "946499b2-e0e4-441f-a864-9703716b66a1"
+    },
+    {
+      "claim_id": "48ef0b6b-c6f7-4ead-a369-fbf7118d9052",
+      "result_id": "868ac7b5-de1d-41cc-89b4-7e220caabe1d"
+    },
+    {
+      "claim_id": "a1a377e1-0d9c-4d2c-aa80-442edb519f00",
+      "result_id": "868ac7b5-de1d-41cc-89b4-7e220caabe1d"
+    },
+    {
+      "claim_id": "84b1e539-e23c-44ea-b42b-adaeebddfb1d",
+      "result_id": "c9e02d2b-a2f6-4074-b7c5-4314c679d598"
+    },
+    {
+      "claim_id": "e54278da-eb36-457f-a7d5-07bca0c2b4e9",
+      "result_id": "c9e02d2b-a2f6-4074-b7c5-4314c679d598"
+    },
+    {
+      "claim_id": "0fc95207-e21a-4a97-bade-d40d94227c04",
+      "result_id": "c9e02d2b-a2f6-4074-b7c5-4314c679d598"
+    },
+    {
+      "claim_id": "6891765b-dca7-4b15-b105-d695e87c23bc",
+      "result_id": "c9e02d2b-a2f6-4074-b7c5-4314c679d598"
+    },
+    {
+      "claim_id": "316253ad-1f7e-4234-9a32-d3c4deae2b3b",
+      "result_id": "c9e02d2b-a2f6-4074-b7c5-4314c679d598"
+    },
+    {
+      "claim_id": "79edafdf-8deb-4aac-9c33-57cfd23c32a9",
+      "result_id": "4437b8f9-f1b3-4351-ba9b-087959fe5a10"
+    },
+    {
+      "claim_id": "2005378d-002e-4057-bb07-af6ca1cf7989",
+      "result_id": "4437b8f9-f1b3-4351-ba9b-087959fe5a10"
+    },
+    {
+      "claim_id": "125680d5-f609-4c06-9c91-eed03902bee6",
+      "result_id": "f6e0c641-12a0-4b7a-b959-f746ded27cf6"
+    },
+    {
+      "claim_id": "3e4aba34-4d95-4228-bbc6-808bfb8deebb",
+      "result_id": "f6e0c641-12a0-4b7a-b959-f746ded27cf6"
+    },
+    {
+      "claim_id": "634c5e0c-2854-4377-89af-3f9e65ceaa95",
+      "result_id": "f6e0c641-12a0-4b7a-b959-f746ded27cf6"
+    },
+    {
+      "claim_id": "3aaa9cdb-bf6e-4457-b358-5b54dabbee7b",
+      "result_id": "f6e0c641-12a0-4b7a-b959-f746ded27cf6"
+    },
+    {
+      "claim_id": "723d82cd-9443-46ef-8e87-fcdca4598f7a",
+      "result_id": "e46f9416-f37d-426c-afc2-352ba6858dfe"
+    },
+    {
+      "claim_id": "c98f0fc7-cc00-423f-b839-dcf0a5057533",
+      "result_id": "e46f9416-f37d-426c-afc2-352ba6858dfe"
+    },
+    {
+      "claim_id": "80066f00-48ca-4df2-ae17-90a8e509dfb9",
+      "result_id": "e46f9416-f37d-426c-afc2-352ba6858dfe"
+    },
+    {
+      "claim_id": "706905c9-d1af-45d9-a823-cfffb0f99494",
+      "result_id": "e46f9416-f37d-426c-afc2-352ba6858dfe"
+    },
+    {
+      "claim_id": "b5ff7199-8f53-48e0-9264-61898d5b30ab",
+      "result_id": "cf455805-a9b6-4177-924a-1fb088c8b1c0"
+    },
+    {
+      "claim_id": "e5ed4dc9-e58c-4e38-a4e5-e33dad7b2ead",
+      "result_id": "cf455805-a9b6-4177-924a-1fb088c8b1c0"
+    },
+    {
+      "claim_id": "effb7da8-c90e-4592-bae4-503ec866fbfa",
+      "result_id": "cf455805-a9b6-4177-924a-1fb088c8b1c0"
+    },
+    {
+      "claim_id": "bfecb2d7-7a77-4e12-83ae-ccc0dc09a810",
+      "result_id": "cf455805-a9b6-4177-924a-1fb088c8b1c0"
+    },
+    {
+      "claim_id": "e41acb38-d94a-4e70-937f-ea40baa474b6",
+      "result_id": "cf455805-a9b6-4177-924a-1fb088c8b1c0"
+    },
+    {
+      "claim_id": "6fd57d68-9af6-49f6-be23-b5befe8aad26",
+      "result_id": "cf455805-a9b6-4177-924a-1fb088c8b1c0"
+    },
+    {
+      "claim_id": "fa167681-c95f-4718-ba9e-8ca1103fb402",
+      "result_id": "cf455805-a9b6-4177-924a-1fb088c8b1c0"
+    },
+    {
+      "claim_id": "eefa766e-5f95-4499-90c8-b2a79daa3a83",
+      "result_id": "cf455805-a9b6-4177-924a-1fb088c8b1c0"
+    },
+    {
+      "claim_id": "01664681-56d7-42a0-8df6-4470cfbd9492",
+      "result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908"
+    },
+    {
+      "claim_id": "ee0f2497-1348-4e9d-88fc-2fbbc14c8e15",
+      "result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908"
+    },
+    {
+      "claim_id": "31ab4f51-d1c4-48e2-bb6e-831fda4a3486",
+      "result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908"
+    },
+    {
+      "claim_id": "450a3198-35f7-4027-af4c-9b3f8d878772",
+      "result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908"
+    },
+    {
+      "claim_id": "d76f5e76-9ccc-4af8-b88d-d2f9b99f12a1",
+      "result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908"
+    },
+    {
+      "claim_id": "b730157a-b9bf-4b14-8357-86b4caed74db",
+      "result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908"
+    },
+    {
+      "claim_id": "6968bfbc-de92-4925-b6bf-051a0bd4bab8",
+      "result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908"
+    },
+    {
+      "claim_id": "3d1e75d8-ef08-43dd-ac54-40a6db7fe488",
+      "result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908"
+    },
+    {
+      "claim_id": "268ec085-548e-4fe5-981c-1d1c5bab0545",
+      "result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908"
+    },
+    {
+      "claim_id": "ed8685d1-0eec-420f-a79f-b6170bc18152",
+      "result_id": "7672eb4f-37ec-4ceb-9016-4d53dbf9af8b"
+    },
+    {
+      "claim_id": "2a81bf37-91cf-4cfb-889f-36323bcb8471",
+      "result_id": "7672eb4f-37ec-4ceb-9016-4d53dbf9af8b"
+    },
+    {
+      "claim_id": "492df149-5b4b-4e25-8317-18340aa55d50",
+      "result_id": "7672eb4f-37ec-4ceb-9016-4d53dbf9af8b"
+    },
+    {
+      "claim_id": "4bdf824d-cbda-452e-93e1-0e41b95832eb",
+      "result_id": "7672eb4f-37ec-4ceb-9016-4d53dbf9af8b"
+    },
+    {
+      "claim_id": "dbbc40a1-9af7-435e-8144-342225b7d346",
+      "result_id": "7672eb4f-37ec-4ceb-9016-4d53dbf9af8b"
+    },
+    {
+      "claim_id": "248ac3b1-e121-4136-af82-fb6181b18ac9",
+      "result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2"
+    },
+    {
+      "claim_id": "30f416f4-7eb2-4a4a-a2ca-74faf14f2299",
+      "result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2"
+    },
+    {
+      "claim_id": "48c323aa-cd9a-41a8-bd22-f0479af7d4df",
+      "result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2"
+    },
+    {
+      "claim_id": "fc2f50a4-b2e6-44fd-af0a-2c8eaa14c3f3",
+      "result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2"
+    },
+    {
+      "claim_id": "c3e0104b-6a8a-46f8-95b9-1e7d3e38d18a",
+      "result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2"
+    },
+    {
+      "claim_id": "f1156c12-ab35-48b4-b341-f7bf73059e36",
+      "result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2"
+    },
+    {
+      "claim_id": "c2dfe58a-99c9-464d-b314-203665f8fc8f",
+      "result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2"
+    },
+    {
+      "claim_id": "1b502dc1-fa23-4039-b277-e1c8707a3dbf",
+      "result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2"
+    },
+    {
+      "claim_id": "37d5b236-8925-4c98-9096-6d99fc20f75b",
+      "result_id": "308f97b9-4510-4eae-b975-3000eacf17f7"
+    },
+    {
+      "claim_id": "0cd61219-3e25-4ccf-aa76-6be498e52812",
+      "result_id": "308f97b9-4510-4eae-b975-3000eacf17f7"
+    },
+    {
+      "claim_id": "42a98059-3423-4023-b1e8-f8b1cb8a0576",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "6b77076a-52fa-4e36-9e9e-83392e478c15",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "37ae3516-8b65-4dff-846d-1559d2119de6",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "d628c3c0-097d-487a-8631-4d79defef5a1",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "4b59e729-8824-448b-9182-25b5ff4d1b94",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "c80479bf-f7e4-4e2a-9471-6faca864a148",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "fe8ead44-c7e7-4d92-a7e9-47d8f2f37d03",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "43daba49-5110-49e2-a588-ce2244ee3815",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "ae6dabfb-fcbd-448d-ba4c-4932ca4b8ab3",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "54f20303-1cf9-464f-a834-d6743d722ffe",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "be08d65e-5d1d-449c-9b3a-553e1858148a",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "38808ca8-a985-4cfe-b363-343bea02713a",
+      "result_id": "426d75d9-5476-4421-bec2-58a613de2f16"
+    },
+    {
+      "claim_id": "5444906d-65c8-44f9-a959-a76a12060f8a",
+      "result_id": "ac28ec18-2a9b-427d-ba5f-59c58790354e"
+    },
+    {
+      "claim_id": "c0a086b9-5700-4a8a-9a9e-2aa5555e75f7",
+      "result_id": "7cb9bc81-96a3-4c71-ac1c-340d2c34f4c1"
+    },
+    {
+      "claim_id": "ba5f9b8a-37d8-4221-9ccc-e46877a5e52c",
+      "result_id": "7cb9bc81-96a3-4c71-ac1c-340d2c34f4c1"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "b4ab1b75-151c-4e43-9086-11ea23c5ff9b",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "7a07737f-4438-4012-bde8-92c64a6d9799",
+      "peer_result_id": "946499b2-e0e4-441f-a864-9703716b66a1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both evaluations find claims C9-C14 and C58 (CPT1A downregulation in CRC tumors across multiple modalities) to be SUPPORTED. Peer reviewer explicitly acknowledges this as a strength with rigorous multi-modal validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "019d9e76-cd85-4c95-9c05-876f5847d9f1",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "4242d03c-424c-421b-be40-4809c08f85fe",
+      "peer_result_id": "4437b8f9-f1b3-4351-ba9b-087959fe5a10",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on evaluation type. OpenEval finds C21-C22 (baseline CPT1A expression correlates with radiosensitivity) SUPPORTED, while peer review rates it UNCERTAIN, noting it appears contradictory to the main model and conflicts with prior studies showing tumor-promoting role for CPT1A.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "2a68e3fc-2006-4446-a5d5-bbcbc6b351f1",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1bbd5a4d-fabf-4dd2-b745-395a8eefb2a7",
+      "peer_result_id": "cf455805-a9b6-4177-924a-1fb088c8b1c0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement. OpenEval finds C29-C36 (in vivo xenograft validation) SUPPORTED despite noting missing statistical details. Peer review rates UNCERTAIN, critically noting that CPT1A may act as independent tumor suppressor rather than radiosensitizer, questioning whether effects are truly radiosensitization or additive.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "2e624375-d526-43da-a7a4-a632a36885d5",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "2d87101e-5902-416d-8195-143290ff475f",
+      "peer_result_id": "308f97b9-4510-4eae-b975-3000eacf17f7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both find C37-C38 (RNA-seq and pathway analysis) SUPPORTED. The transcriptomic data is accepted without challenge as supporting evidence for mechanistic studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "8c10cd10-4b7a-471f-a898-e73047084a8d",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "9c536196-03ba-466b-8eb0-cd1e8877d96a",
+      "peer_result_id": "4d3ca029-2713-41a0-b1f8-10ab5a7ce908",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both find C39-C46 and C62 (ROS, GSH/GSSG, antioxidant enzyme activities) SUPPORTED. Peer reviewer acknowledges CPT1A suppresses antioxidant metabolism genes and lowers antioxidant levels.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "87aff3e9-9a2b-493c-8cf6-5b586412bdf3",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4fa4a094-d1ba-477e-92fb-4c40e4f6d8c9",
+      "peer_result_id": "7cb9bc81-96a3-4c71-ac1c-340d2c34f4c1",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both rate C65-C66 (biomarker and therapeutic potential) as UNCERTAIN/speculative. Both note these represent future directions requiring validation, with peer reviewer emphasizing limitations and need for pharmacological testing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "e685ca32-f3cf-437c-855b-39eab7662b39",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d",
+      "peer_result_id": "c9e02d2b-a2f6-4074-b7c5-4314c679d598",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on evaluation type. OpenEval rates C17-C20 and C59 (clinical correlations with radiotherapy response) as UNCERTAIN due to modest correlation and small sample size. Peer review rates SUPPORTED, accepting these correlations as evidence relating CPT1A to radiotherapy response.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "6fba373b-34f6-4026-ac08-5aaf7b80ea39",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "3b56ebed-fc9b-40dc-910b-2c7b47e1302d",
+      "peer_result_id": "868ac7b5-de1d-41cc-89b4-7e220caabe1d",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on evaluation type. OpenEval rates C15-C16 (survival correlations) as UNCERTAIN, specifically noting non-significant p-value (p=0.061) and lack of multivariate analysis. Peer review rates SUPPORTED, acknowledging lower CPT1A correlates with decreased survival.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "6ee3dc90-c927-496c-b1b4-60dff7c15365",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "9551aba4-cab9-43ed-bdaf-c77a6ac9b6cc",
+      "peer_result_id": "426d75d9-5476-4421-bec2-58a613de2f16",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both find C67-C74 and C75-C78 (radioresistant cell model validation) SUPPORTED. Peer reviewer explicitly acknowledges this as a strength, noting radioresistant cells have lower CPT1A and overexpression sensitizes them.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "76e1031f-914d-44af-b9da-6de97651a2b8",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "39013806-b35e-4928-8446-c56619a22872",
+      "peer_result_id": "7672eb4f-37ec-4ceb-9016-4d53dbf9af8b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both find C47-C48 and C50-C51 (coordinated antioxidant enzyme regulation and FOXM1 inverse correlation) SUPPORTED. Peer reviewer accepts the expression changes though questions the mechanistic link.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "d6c3a5ec-d5db-41b8-9dce-6a5fdb7c73a3",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e",
+      "peer_result_id": "f6e0c641-12a0-4b7a-b959-f746ded27cf6",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both find C23-C24, C60, and C63 (CPT1A manipulation affects radiosensitivity in vitro) SUPPORTED. Peer reviewer acknowledges complementary knockout/overexpression model systems increase rigor.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "d3ad4ae7-5348-447b-b28b-fa5bf7853e45",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "1d6a5aba-31a9-4271-aa7c-983dbe81ef1e",
+      "peer_result_id": "e46f9416-f37d-426c-afc2-352ba6858dfe",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement. OpenEval finds C25-C28 (DNA damage repair kinetics) SUPPORTED by comet assays and \u03b3-H2A.X data. Peer review rates UNCERTAIN, explicitly challenging that the \u03b3-H2A.X immunoblots are not convincing and separate blots don't allow rigorous comparison.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "d326d48f-53ef-4e39-b3c1-b3fee4eba694",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "01a58f19-56c8-4372-8e93-3d6d1f9a2c70",
+      "peer_result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on evaluation type. OpenEval finds C55-C57, C61, and C64 (mechanistic model synthesis) SUPPORTED while acknowledging CPT1A-FOXM1 link unclear. Peer review rates UNCERTAIN, explicitly stating the model is speculative and key aspects untested, particularly FOXM1's role in antioxidant regulation and radiosensitization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "9ead5e7f-8a65-4e7b-85b1-4d8972513613",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "197df177-0d40-4fb8-997d-44d3d19406f3",
+      "peer_result_id": "8f6c26f5-67b4-4790-93a3-b1928e8094a2",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Disagreement on evaluation type. OpenEval rates C52-C54 and C79 as UNCERTAIN, noting lack of direct binding evidence and mechanism unclear. Peer review rates the overall FOXM1 mechanism as UNCERTAIN but accepts individual expression correlations (C52-C54) as part of broader mechanistic concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "07310327-aa5f-4d1a-b94b-288c3c4903c3",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "197df177-0d40-4fb8-997d-44d3d19406f3",
+      "peer_result_id": "ac28ec18-2a9b-427d-ba5f-59c58790354e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement with caveats. OpenEval rates C79 (FOXM1 binding site prediction) as UNCERTAIN, noting it relies only on bioinformatic prediction without experimental validation. Peer review rates SUPPORTED but within context that overall mechanism requires more functional validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "005c1f41-b3d9-4847-b801-1c370393c5f9",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "ed214809-8499-453f-aced-32fb26c11ead",
+      "peer_result_id": "426d75d9-5476-4421-bec2-58a613de2f16",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement. Both find C75-C78 (acquired radioresistance associated with CPT1A downregulation, reversible by restoration) SUPPORTED. This is part of the radioresistant cell model validation accepted by both evaluations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "2f565a6a-119c-4cae-ac18-a32f74965c5b",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "1e1fb119-d48a-4e75-923e-59f208c3f009",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C1-C5 (background claims about CRC epidemiology and treatment) SUPPORTED by appropriate literature citations. No corresponding peer review evaluation found, as these are standard background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    },
+    {
+      "id": "929ab0d8-34cd-40b4-a233-7d3b9ec704ee",
+      "submission_id": "8a4a2a36-c81c-408e-aa4a-bc50a95cfbb3",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "420de63f-6f38-48ed-b146-dde598fb1be4",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval finds C6-C8 (biological rationale for CPT1A investigation regarding ROS and DNA damage) SUPPORTED by prior literature citations. No corresponding peer review evaluation found for these background/rationale claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:40:21.379308Z"
+    }
+  ]
+}

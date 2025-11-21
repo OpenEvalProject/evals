@@ -1,0 +1,424 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C24",
+      "C25",
+      "C26",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C56"
+    ],
+    "result": "The \u03b1C-\u03b24 loop is a stable, conserved element of secondary structure in all protein kinases that is essential for mediating synergistic high-affinity binding of ATP and IP20. The loop is stabilized by a \u03b2-turn motif and anchors to the \u03b1E helix.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C25, C48-51, and C56 provide structural evidence from crystal structures and sequence alignments showing the \u03b1C-\u03b24 loop is conserved and stable across kinases. Claim C26 establishes its functional importance for ATP/IP20 binding. The structural details (\u03b2-turn, water molecules, anchoring) are well-documented with references to figures and prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The hydrophobic spine architecture (R-spine and C-spine) was discovered using LSP alignment and defines the conserved hydrophobic core of protein kinases. The C-spine includes the unusual hydrophobic \u03b1F-helix that spans the C-lobe and connects to the catalytic machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-35 establish the discovery and functional significance of the spine architecture with appropriate citations. Claims C36-47 provide detailed structural characterization of the C-spine and \u03b1F-helix with references to figures and prior work. The structural claims are well-supported by cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C91",
+      "C92"
+    ],
+    "result": "The F100A mutation in the \u03b1C-\u03b24 loop completely abolishes synergistic high-affinity binding of ATP and IP20, while maintaining similar Km values for Kemptide and ATP compared to wild-type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C91, and C92 are explicitly stated with citation to Olivieri et al., 2023. The biochemical characterization distinguishes between peptide substrate kinetics (unchanged) and high-affinity inhibitor binding (abolished), providing clear functional evidence for the mutation's specific effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C9",
+      "C10",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "LSP analysis of the F100A mutant reveals increased betweenness centrality in the \u03b1C-\u03b24 loop and decreased stability in key catalytic residues (K72, D184), suggesting disruption of dynamic communication between N- and C-lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-123 present a coherent LSP analysis with quantitative centrality measures (DC and BC) mapped to protein structure. The findings show rigidification of the \u03b1C-\u03b24 loop (C118) and destabilization of catalytic connectors (C119), with appropriate references to Figures 6-8. The interpretation is consistent with the computational methodology described.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Crystal structures show no significant backbone changes in the \u03b1C-\u03b24 loop across different states, but the side chain of K105 shows altered positioning in the apo protein, flipping to interact with \u03b2-turn carbonyls and N99.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, and C124-127 are based on direct structural observations from crystal structures with references to Figure 4 and Figure 9. The distinction between backbone stability (C7, C124) and side chain dynamics (C8, C126) is clearly documented with specific distance measurements and interaction partners.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "MD simulations of the binary complex show the wt C-subunit has one global energy minimum with K105 predominantly interacting with E107, while the F100A mutant shows two energy basins with the major minimum having K105 interacting with N99.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-134 present MD simulation results with free energy landscapes (Figure 10) and probability distributions of specific interactions. The data clearly distinguish wt from mutant behavior with quantitative measures. The findings are internally consistent and supported by the computational methodology described in Materials and Methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "MD simulations of the ternary complex show the F100A mutation introduces enhanced dynamics with multiple energy basins and a novel K105-E121 interaction not seen in wt, consistent with NMR predictions of altered \u03b1C-\u03b24 loop dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-147 present ternary complex MD results with free energy landscapes (Figure 11) and probability distributions. The key finding of enhanced K105-E121 interaction in the mutant (C141, C147) is well-documented. Claim C146 explicitly states agreement with NMR results, providing cross-validation. The data support the conclusion of disrupted allosteric communication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "MD simulations and structural analyses across multiple kinases (PKA, LRRK2, Src, BRAF) demonstrate that the \u03b1C-\u03b24 loop remains anchored to the C-lobe in both open and closed conformations, functioning as a stable connector between lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-55 are supported by cited MD simulations (Tsigelny et al., 1999) and structural comparisons across multiple kinases with references to Figure 4. The conservation of this structural feature across different kinases and conformational states provides strong evidence for its fundamental importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The \u03b1E helix plays a critical structural role through key residues: Y156 anchors to N99 in the \u03b1C-\u03b24 loop, H158 connects to the catalytic machinery, and I150 anchors to the hydrophobic core and catalytic loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-64 provide detailed structural characterization of the \u03b1E helix with specific residue interactions documented in crystal structures (Figure 2). The functional importance is validated by disease mutations in BRaf (C58) and EGFR (C59) with appropriate citations. The structural claims are well-supported by cited NMR work (C63).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "ATP binding affinity changes dramatically in the presence of PKI/IP20: from 15 \u03bcM (with Kemptide) to ~60 nM (with PKI/IP20), while IP20 affinity changes from ~200 nM alone to ~1 nM with MgATP. This synergistic binding requires two Mg2+ ions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-76 provide quantitative binding data with specific affinity values. The synergistic effect is clearly documented with >200-fold changes in affinity. Claim C76 provides the mechanistic requirement for Mg2+ ions with citation (Herberg et al., 1999). The data are internally consistent and well-established in the literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Computational analyses (Markov State modeling and NMR-restrained RAM) predicted a flip of the \u03b1C-\u03b24 loop in the apo protein and F100A mutant, but this flip has not been observed in crystal structures. NMR studies highlighted V104 and I150 as critical residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C94 presents computational predictions with citation, while C95 explicitly states these predictions are not observed in crystal structures. This discrepancy between computational predictions and experimental structures creates uncertainty. Claim C96 identifies critical residues from NMR but doesn't resolve the backbone flip question. The result requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C148"
+    ],
+    "result": "In the ternary complex crystal structure, E121 forms critical hydrogen bonds: its backbone amide to K105 backbone carbonyl, and its backbone carbonyl directly to the adenine ring of ATP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-150 describe specific hydrogen bonding interactions observed in the crystal structure with reference to Figure 12A. Claim C148 establishes E121's functional importance for ATP binding. The structural observations are clearly documented and consistent with the overall model of ATP binding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "NMR studies identified three conformational states of the PKA C-subunit (uncommitted, committed, quenched) and demonstrated that side chain labeling captures entropy-driven allostery through correlated motions of the hydrophobic core.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-82 describe NMR findings with appropriate citations (Masterson et al., 2011; Kim et al., 2017; Ahuja et al., 2019a). The progression from backbone to side chain dynamics is well-documented. The claims establish the methodological foundation for understanding kinase dynamics and are supported by cited experimental work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "LSP alignment is a computational method that captures conserved patterns of C\u03b1-C\u03b2 vectors to analyze thermal vibrations and protein stability, providing information on local stability (DC) and global connectivity (BC).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-105 describe the LSP methodology with appropriate citations (Kornev et al., 2006, 2008, 2022) and references to Figure 6. The method is well-established in prior work and the centrality measures are standard graph theory approaches. The methodological description is clear and supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "The authors conclude that the \u03b1C-\u03b24 loop should be examined in all kinases as a focal point for ATP/peptide binding and predict that K105 side chain flexibility may precede backbone changes, requiring experimental validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C151-153 are forward-looking conclusions and predictions. C151 is a recommendation based on the work, C152 is an explicit prediction requiring validation, and C153 acknowledges the need for experimental validation. These are reasonable hypotheses but represent future work rather than established results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C154",
+      "C155"
+    ],
+    "result": "The Y156-N99 hydrogen bond is stable in binary/ternary complexes and the mutant but weakened in apo protein, consistent with predictions that the \u03b2-turn is more flexible without ligands but stabilized differently in F100A.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C154-155 present probability distribution data from MD simulations (Figure 10E) showing differential hydrogen bond stability across conditions. The interpretation (C155) is presented as a prediction but is consistent with the simulation data. The findings support the model of ligand-dependent stabilization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C156",
+      "C157"
+    ],
+    "result": "The \u03b1C-\u03b24 loop is proposed as a therapeutic target because mechanistically important residues (N99, K105) vary across kinases, unlike conserved ATP-binding residues, and cancer mutations are located in this region.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C156 is a therapeutic proposal based on sequence variability, which is reasonable but speculative. Claim C157 cites cancer mutations (Ruan and Kannan, 2018) as supporting evidence. However, the therapeutic potential is not experimentally validated in this work and represents a hypothesis for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C158",
+      "C159"
+    ],
+    "result": "The authors suggest LSP could be used as a rapid, inexpensive predictor of dynamics for any mutant or alanine scan, based on correlation with NMR results and Markov State model predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C158-159 propose LSP as a general predictive tool based on the correlation observed in this study. While the correlation with NMR is noted (C146), the generalizability to any protein or mutant is speculative. The suggestion is reasonable but requires broader validation beyond the single F100A mutant studied here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Multiple mutations (E230Q, Y204A, F327A, L205R, W196R, E31V) uncouple ATP and inhibitor binding through different mechanisms: conformational freezing, altered dynamics, disrupted tethering, or loss of key interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-90 describe various mutations with specific functional effects, all supported by citations to prior work (Wu et al., 2005; Kennedy et al., 2009; Walker et al., 2019, 2021; Omar et al., 2022). The claims establish that multiple mechanisms can disrupt synergistic binding, providing context for understanding the F100A mutation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "PKI is a classic intrinsically disordered protein and pseudosubstrate inhibitor with an N-terminal inhibitory region (residues 5-24) requiring an alanine at the P-site and hydrophobic residues forming an amphipathic helix for high-affinity binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-71 provide historical and structural characterization of PKI with appropriate citations (Walsh et al., 1971; Scott et al., 1985a,b; Olivieri et al., 2020; Glass et al., 1989a,b). The structural requirements for high-affinity binding are well-established in the literature. These claims provide essential background for understanding the synergistic binding phenomenon.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Protein kinases are highly regulated molecular switches that transfer the \u03b3-phosphate of ATP to protein substrates. PKA C-subunit is used as a model system and is regulated by R-subunits and PKI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-17 provide foundational background on protein kinase function and the PKA system. These are well-established facts in the field and set up the rationale for using PKA as a model system. The claims are appropriately cited and provide necessary context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The conserved motifs defining the kinase core were first recognized in 1982, with the first kinase structure solved in 1991 (PKA-IP20 binary complex), followed by ternary complex structures in 1993. Computational tools later revealed the hydrophobic core architecture.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-23 provide accurate historical context with appropriate citations (Barker and Dayhoff, 1982; Hanks et al., 1988; Knighton et al., 1991a,b; Zheng et al., 1993; Kornev et al., 2006, 2008). This historical progression establishes how understanding of kinase structure evolved and provides context for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The PKA C-subunit has short N- and C-terminal tails and is assembled as an inactive holoenzyme with R-subunits. PKI and RI\u03b1/RI\u03b2 are pseudosubstrates with synergistic high-affinity binding to ATP (~60 nM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-30 describe the PKA system architecture and regulation with appropriate citations (Kannan et al., 2007; Taylor et al., 2012). The quantitative binding data (C30) establishes the synergistic binding phenomenon that is central to the paper. These claims provide essential background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C93",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Adjacent residues in the \u03b1C-\u03b24 loop (V104I, L103F/I, P101A) are oncogenic mutations in several kinases. V104 is a shell residue that touches ATP via a methyl side chain. ITC results show F100A is more stable than wt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C97-98 describe V104's structural role with citations (Meharena et al., 2013; Kennedy et al., 2009). Claim C99 reports ITC stability data. However, C93 notes the oncogenic mutations are not validated, introducing some uncertainty about their functional significance. The structural claims are well-supported.",
+    "result_type": "MINOR"
+  }
+]

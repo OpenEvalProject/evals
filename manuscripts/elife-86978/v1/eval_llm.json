@@ -1,0 +1,270 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Transcriptomic analysis of E13.5 and adult cortical endothelial cells reveals distinct gene cohorts involved in BBB formation versus maintenance. Genes such as Cldn1, Mfsd2a, and Zic3 are highly expressed at E13.5 and downregulated in adults, while Cldn5 and Sox17 are upregulated in adults, supporting the hypothesis that different gene programs regulate BBB establishment and maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C12-C14 collectively demonstrate distinct transcriptional programs at E13.5 versus adult stages through RNA-seq and qPCR validation. The data show 3738 upregulated and 5650 downregulated genes in adults compared to E13.5, with specific BBB genes showing stage-specific expression patterns. The experimental design is sound with appropriate biological replicates (N=3-4), and the findings are validated across multiple developmental timepoints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C53"
+    ],
+    "result": "HDAC2 regulates BBB gene expression through direct chromatin binding. Class-I HDAC inhibitor MS-275 and HDAC2 siRNA knockdown upregulate embryonic BBB genes (Cldn1, Mfsd2a, Zic3) and downregulate adult BBB genes (Cldn5) in adult ECs. ChIP-qPCR demonstrates differential HDAC2 occupancy at BBB gene promoters between E13.5 and adult stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C15-C20, C53 provide converging evidence from pharmacological inhibition, genetic knockdown, and ChIP-qPCR showing HDAC2 directly regulates BBB genes. The data demonstrate both functional effects (gene expression changes) and mechanistic evidence (chromatin occupancy). However, the manuscript notes discrepancies between in vitro adult EC data and in vivo Hdac2 ECKO data for some genes (Cldn1, Cldn5), which the authors attribute to developmental stage, culture conditions, or sequencing depth.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "PRC2 (via EZH2) contributes to BBB gene regulation through H3K27me3-mediated repression. EZH2 knockdown increases expression of embryonic BBB genes in adult ECs. ChIP-qPCR shows abundant H3K27me3 enrichment on Cldn1, Mfsd2a, and Zic3 in adult ECs compared to E13.5, while active histone marks (H3K4me3) show the opposite pattern.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C21-C24 demonstrate PRC2's role through siRNA knockdown and comprehensive histone modification profiling. The ChIP-qPCR data across multiple histone marks (H3K27me3, H3K4me3, H3K9ac) provide strong mechanistic evidence. The data are internally consistent and show appropriate controls (IgG). Sample sizes are adequate (N=3-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C54",
+      "C66"
+    ],
+    "result": "HDAC2 is critical for BBB maturation and angiogenesis control during development. Endothelial-specific deletion of Hdac2 (Hdac2 ECKO) at E12.5 results in dilated vessels, increased angiogenesis, and BBB leakage at E17.5, demonstrating that HDAC2 is required for proper vascular and BBB development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C28, C31, C54, C66 provide strong in vivo evidence through conditional knockout experiments. The phenotypic data (vessel dilation, increased vascularization, BBB permeability) are quantified and statistically significant. The tamoxifen-inducible system allows temporal control. However, the conclusion that HDAC2 'plays a key role in angiogenesis' (C28) is somewhat inferential from the increased vascularization phenotype and would benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C32",
+      "C55",
+      "C56"
+    ],
+    "result": "PRC2 (EZH2) is dispensable or plays a supporting role in BBB maturation. Ezh2 ECKO shows dilated vessels and only subtle BBB leakage at E17.5, contrasting with the severe phenotype of Hdac2 ECKO. This suggests HDAC2 initiates transcriptional control during BBB differentiation while PRC2 functions in a supporting mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30, C32, C55-C56 demonstrate differential requirements for HDAC2 versus PRC2 through comparative knockout studies. The milder Ezh2 ECKO phenotype compared to Hdac2 ECKO supports the hierarchical model. However, the interpretation that PRC2 is 'dispensable' may be overstated given the subtle leakage observed and the possibility that PRC2 functions at later developmental stages not examined here. The whole-brain mRNA analysis showing no difference in BBB genes (C55) is limited by tissue heterogeneity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C59",
+      "C70",
+      "C71"
+    ],
+    "result": "The Wnt pathway shows differential activity between E13.5 and adult CNS ECs. While upstream Wnt components (Fzd4/6, Lrp5, Ctnnb1) are upregulated in adults, downstream target genes (Axin2, Lef1, Vegfa) are downregulated. Adult ECs can translocate \u03b2-catenin to the nucleus upon Wnt stimulation but fail to activate target genes, indicating the upstream pathway remains competent but target genes are epigenetically silenced.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C38, C59, C70-C71 provide comprehensive evidence for differential Wnt pathway regulation through transcriptomics, functional assays (Wnt3a/CHIR99021 treatment), and immunofluorescence. The data clearly demonstrate that adult ECs can respond to Wnt stimulation at the level of \u03b2-catenin nuclear translocation but not target gene activation. This is a key mechanistic insight. The experiments are well-controlled with appropriate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "HDAC2 and PRC2 epigenetically repress Wnt target genes in adult CNS ECs. Knockdown of HDAC2 or EZH2, or treatment with MS-275, significantly upregulates Wnt target genes (Axin2, Lef1) in adult ECs. ChIP-qPCR shows increased HDAC2 and H3K27me3 occupancy, and decreased H3K4me3 and H3K9ac, at the Axin2 promoter in adults compared to E13.5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C39-C41 mechanistically link epigenetic regulators to Wnt pathway silencing through genetic and pharmacological perturbations combined with ChIP-qPCR. The data are internally consistent and demonstrate both functional (gene expression) and mechanistic (chromatin occupancy) evidence. The experiments include appropriate controls and replicates. This provides a molecular explanation for reduced Wnt signaling in adult ECs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C43",
+      "C46",
+      "C60",
+      "C61"
+    ],
+    "result": "Low Wnt activity during development induces epigenetic modifications that promote BBB maturation. Inhibiting Wnt signaling in E13.5 ECs with LF3 induces an adult-like gene expression pattern (decreased Cldn1, Zic3, Mfsd2a; increased Cldn5, Sox17) and increases HDAC2 occupancy at BBB gene promoters, demonstrating that Wnt pathway reduction drives epigenetic remodeling necessary for BBB formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42-C43, C46, C60-C61 provide strong evidence that Wnt inhibition drives BBB maturation through epigenetic mechanisms. The LF3 treatment experiments in E13.5 ECs show both gene expression changes and increased HDAC2 occupancy, establishing a causal link. The data are consistent with the \u03b2-catenin siRNA experiments. However, the ChIP-qPCR data after LF3 treatment show variable effects across different genes and histone marks, suggesting gene-specific regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C62"
+    ],
+    "result": "Constitutive Wnt activation during development prevents BBB maturation. \u03b2-catenin gain-of-function (GOF) embryos show increased angiogenesis and BBB leakage at E17.5, demonstrating that sustained Wnt signaling inhibits proper BBB and vascular development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C62 provide in vivo validation that excessive Wnt signaling impairs BBB development through conditional \u03b2-catenin stabilization. The phenotype (increased angiogenesis, BBB leakage) mirrors aspects of the Hdac2 ECKO phenotype, supporting the model that HDAC2 promotes BBB maturation by suppressing Wnt signaling. The experiments are well-controlled with appropriate tamoxifen timing and quantification. Pharmacological Wnt activation with LiCl shows similar results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C65",
+      "C66"
+    ],
+    "result": "Embryonic deletion of HDAC2 causes widespread transcriptional dysregulation in endothelial cells. Ultra-low mRNA sequencing of E17.5 Hdac2 ECKO ECs reveals 2257 upregulated and 1723 downregulated genes, affecting multiple EC functions including angiogenesis, barrier genesis, and Wnt signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C65-C66 demonstrate the broad transcriptional impact of HDAC2 loss through unbiased RNA-seq of FACS-sorted CD31+ cells. The functional categorization shows dysregulation across multiple BBB-relevant pathways. However, the manuscript notes discrepancies between the embryonic knockout transcriptome and adult EC knockdown data for some genes (Cldn1, Cldn5), which limits direct comparisons. The use of FACS-sorted cells improves cell-type specificity compared to whole-brain analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C9",
+      "C48",
+      "C68"
+    ],
+    "result": "Class-I HDAC inhibitor MS-275 induces adult CNS ECs to reacquire developmental BBB gene signatures. MS-275 treatment upregulates 3436 genes and downregulates 3050 genes in adult ECs, partially recapitulating the E13.5 transcriptional program including genes involved in BBB formation, angiogenesis, and Wnt signaling. This effect is observed in both mouse and human vessels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C48, C68 demonstrate the therapeutic potential of HDAC inhibition through comprehensive transcriptomic analysis and validation in human tissue. The RNA-seq data show substantial transcriptional reprogramming, and the heatmap (Figure 7F) illustrates partial reversion to E13.5-like expression patterns. The human vessel experiments (C50) provide translational relevance, though the response is 'partial' and limited to specific genes. The experiments are well-controlled with adequate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C67"
+    ],
+    "result": "Epigenetic changes induced by MS-275 are reversible. Gene expression changes in adult ECs (Cldn1 upregulation, Cldn5 downregulation) return to baseline 7 days after MS-275 withdrawal, demonstrating the reversibility of pharmacologically-induced epigenetic modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C67 provide important evidence for the reversibility of HDAC inhibitor effects through a time-course experiment. This addresses a key concern about sustained epigenetic reprogramming and supports the therapeutic potential of transient HDAC inhibition. The experiment is straightforward and well-controlled, though limited to two genes (Cldn1, Cldn5). Broader transcriptomic analysis of reversibility would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "MS-275 treatment activates BBB formation genes in human brain vessels. Human temporal lobe vessels treated with MS-275 show significantly increased expression of Cldn1 and Axin2, with no change in Cldn5, partially recapitulating the mouse response.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 provides critical translational validation in human tissue. The experiments use vessels from epilepsy surgery patients and show MS-275 can activate some BBB formation genes in human ECs. However, the response is 'partial' (only 2 of 3 genes tested respond), and the study lacks information about patient demographics, vessel heterogeneity, or disease effects. The sample size (N=5) is modest but reasonable for human tissue. This represents an important proof-of-concept but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "BBB genes exhibit unique epigenetic signatures defined by specific combinations of histone modifications. H3K27me3 mediates repression of BBB formation genes (no H3K9me3 detected), and each of the five BBB genes analyzed shows a distinct pattern of histone acetylation and methylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C58 provide detailed epigenetic profiling across multiple BBB genes and histone marks. The ChIP-qPCR data demonstrate gene-specific patterns of histone modifications, supporting the concept of unique epigenetic signatures. The absence of H3K9me3 is noted but not extensively validated (stated as 'not shown'). The authors acknowledge that other important marks (H3K27ac, H3K14ac) were not examined, limiting the completeness of the epigenetic landscape. The data are well-controlled with IgG controls and adequate replicates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Wnt7a expression is developmentally regulated in CNS ECs and can be reactivated by HDAC inhibition. Wnt7a shows high expression in E13.5 ECs with null expression in adults, but MS-275 treatment considerably activates Wnt7a in adult ECs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 identify Wnt7a as a developmentally-regulated Wnt ligand in ECs that can be reactivated by HDAC inhibition. This suggests ECs may have intrinsic Wnt signaling capacity. The data are from RNA-seq and are consistent with the model. However, the functional significance of EC-derived Wnt7a is not tested, and the manuscript notes that Wnt7a/7b are typically thought to be produced by neural progenitors. Additional validation (protein level, functional studies) would strengthen this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Primary endothelial cell cultures achieve >90% purity as determined by CD31 and isolectin B4 staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 describes the quality control for EC isolation. The purity assessment is appropriate and the >90% threshold is acceptable for primary EC cultures. Figure 1\u2014figure supplement 1A shows high expression of EC markers and low expression of other cell type markers, supporting the purity claim. This is a methodological validation rather than a primary result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C51",
+      "C52",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Background knowledge and prior work establish the importance of BBB integrity, the role of Wnt signaling in BBB development, and the therapeutic potential of epigenetic regulators.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C51-C52, C70-C78 represent background knowledge and literature citations that establish the context for the study. These are appropriately cited and provide the rationale for investigating epigenetic regulation of BBB genes. The citations appear accurate based on the stated claims. These are not primary results but essential context.",
+    "result_type": "MINOR"
+  }
+]

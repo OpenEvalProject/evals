@@ -1,0 +1,2733 @@
+{
+  "submission": {
+    "id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T23:06:59.130760Z",
+    "updated_at": "2025-11-21T23:06:59.130760Z"
+  },
+  "content": [
+    {
+      "id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "content_type": "manuscript",
+      "content_text": "# Cryo-EM structure of the CBC-ALYREF complex\n\n## Authors\n\n- Bradley P Clarke<sup>1</sup> ([ORCID: 0000-0002-9413-9905](https://orcid.org/0000-0002-9413-9905))\n- Alexia E Angelos<sup>1</sup>\n- Menghan Mei<sup>1</sup>\n- Pate S Hill<sup>1</sup> ([ORCID: 0000-0001-9550-2713](https://orcid.org/0000-0001-9550-2713))\n- Yihu Xie<sup>1</sup> \u2020\n- Yi Ren<sup>1</sup> ([ORCID: 0000-0003-4531-0910](https://orcid.org/0000-0003-4531-0910)) \u2020\n\n### Affiliations\n\n1. Department of Biochemistry, Vanderbilt University School of Medicine Basic Sciences Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))\n2. Center for Structural Biology, Vanderbilt University School of Medicine Basic Sciences Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn eukaryotes, RNAs transcribed by RNA Pol II are modified at the 5\u2032 end with a 7-methylguanosine (m7G) cap, which is recognized by the nuclear cap binding complex (CBC). The CBC plays multiple important roles in mRNA metabolism, including transcription, splicing, polyadenylation, and export. It promotes mRNA export through direct interaction with a key mRNA export factor, ALYREF, which in turn links the TRanscription and EXport (TREX) complex to the 5\u2032 end of mRNA. However, the molecular mechanism for CBC-mediated recruitment of the mRNA export machinery is not well understood. Here, we present the first structure of the CBC in complex with an mRNA export factor, ALYREF. The cryo-EM structure of CBC-ALYREF reveals that the RRM domain of ALYREF makes direct contact with both the NCBP1 and NCBP2 subunits of the CBC. Comparing CBC-ALYREF with other cellular complexes containing CBC and/or ALYREF components provides insights into the coordinated events during mRNA transcription, splicing, and export.\n\n## Introduction\n\nThe nuclear cap binding complex (CBC) binds to the m7G cap of RNAs transcribed by RNA pol II. It is comprised of NCBP1 (also known as CBP80) and NCBP2 (also known as CBP20). This heterodimeric CBC can form a variety of interactions with different proteins to promote mRNA processing and influence the fate of the transcript. As such, the CBC regulates gene expression at multiple levels, ranging from transcription and splicing to nuclear export and translation (Gonatopoulos-Pournatzis and Cowling, 2014; Rambout and Maquat, 2020).\n\nThe CBC is one of a myriad of protein factors that associate with newly synthesized transcripts. These factors package mRNAs into compacted ribonucleoprotein particles (mRNPs). While the overall structural arrangement of mRNPs is not known, factors such as serine/arginine-rich (SR) proteins are suggested to contribute to mRNP compaction. Prior to export, mRNPs acquire the export receptor NXF1-NXT1 to gain access to the nuclear pore complex (NPC) (Xie and Ren, 2019). NXF1-NXT1 can interact with the FG repeats of the nucleoporin proteins in the NPC to mediate mRNA export (Fribourg et al., 2001; Grant et al., 2003). Intriguingly, early electron microscopic studies on the Balbiani ring mRNPs in Chironomus tentans showed that mRNPs translocate through the NPC in a 5\u2032 to 3\u2032 direction (Mehlin et al., 1992). Recent single-molecule work on human mRNPs also suggests mRNA is exported 5\u2032 end first (Ashkenazy-Titelman et al., 2022).\n\nThe CBC promotes nuclear mRNA export through its interaction with a key mRNA export factor ALYREF. ALYREF in turn binds to DDX39B (also known as UAP56) and by extension, the entire TRanscription-EXport (TREX) complex at the 5\u2032 end of the RNA (Cheng et al., 2006). The TREX complex is conserved from yeast to humans (Str\u00e4sser et al., 2002; Ren et al., 2017; Xie et al., 2021a; Pacheco-Fiallos et al., 2023; Schuller et al., 2020). The human TREX complex is composed of THOC1, 2, 3, 5, 6, 7, and the DEAD-box helicase DDX39B (Masuda et al., 2005). Interestingly, ALYREF was also identified as the THOC4 subunit of the TREX complex, indicating that the function of ALYREF is tightly integrated with the TREX complex. ALYREF and its yeast ortholog Yra1 contain UBMs (UAP56-binding motifs) that mediate the interaction with DDX39B and Sub2, respectively (Ren et al., 2017; Luo et al., 2001; Chang et al., 2013; Str\u00e4sser and Hurt, 2001). The yeast CBC was also shown to facilitate the recruitment of Yra1 onto nascent RNA (Sen et al., 2019). ALYREF and TREX play central roles in mRNA export through direct interactions with various factors including the export receptor NXF1-NXT1 (Viphakone et al., 2012; Str\u00e4sser and Hurt, 2000; Stutz et al., 2000). Their association with the 5\u2032 cap of mRNAs in particular is a key step in the export process. However, thus far the molecular mechanism underlying how ALYREF bridges the CBC and TREX remains unclear.\n\nALYREF and the associated TREX complex are not only required for cellular mRNA export but also can be hijacked for nuclear export of some viral mRNAs, such as those of herpes viruses. Two well-studied examples are Herpes simplex virus (HSV-1) ICP27 and Herpesvirus saimiri (HVS) ORF57 (Boyne et al., 2008; Sandri-Goldin, 2008). Both HSV-1 ICP27 and HVS ORF57 directly target the host ALYREF protein (Tunnicliffe et al., 2011; Tunnicliffe et al., 2014). Structural studies show that they recognize overlapping surfaces on the RRM domain of ALYREF. How these viral factors affect host CBC-ALYREF interaction and function is not known.\n\nThe highly integrated nuclear mRNA processing and mRNP packaging also require the actions of multi-functional splicing factors, such as the SR protein SRSF1 and the exon junction complex (EJC). SRSF1 couples transcription, splicing, and export through direct interactions with the CBC, spliceosome, NXF1-NXT1, and RNA (Huang et al., 2004; Cl\u00e9ry et al., 2013; Townsend et al., 2020). Of note, ALYREF also has binding activities to these factors. Therefore, the functions of ALYREF and SRSF1 in mRNA processing and export are likely interconnected. In higher eukaryotes, the EJC is deposited 20\u201324 nucleotides upstream of the exon junctions during splicing (Le Hir et al., 2000; Andersen et al., 2006; Bono et al., 2006). The EJC was initially shown to associate with ALYREF through a WxHD motif in the N-terminal unstructured region of ALYREF (Gromadzka et al., 2016). More recently, multiple binding interfaces were shown between ALYREF and the EJC (Pacheco-Fiallos et al., 2023). How the CBC-ALYREF connection affects the function of EJC-ALYREF remains elusive.\n\nTo better understand the multiple functions of ALYREF and the CBC in RNA metabolism, we carried out structural and biochemical studies. We present cryo-EM structures of the CBC and CBC-ALYREF complexes at 3.38 \u00c5 and 3.22 \u00c5 resolution, respectively. The CBC-ALYREF structure reveals that both the NCBP1 and NCBP2 subunits of the CBC interact with ALYREF. HSV-1 ICP27 and HVS ORF57 target the binding interface between the RRM domain of ALYREF and the CBC. We suggest that these viruses not only hijack host pathways to export their own RNA but could also inhibit host RNA metabolism through their interactions with ALYREF. Structural overlay of CBC-ALYREF and EJC-ALYREF reveals that both the CBC and the EJC bind to the RRM domain of ALYREF in a mutually exclusive manner. This suggests that ALYREF\u2019s interaction with the EJC is favored after ALYREF dissociates from the CBC, or as an independent event.\n\n## Results and discussion\n\n### ALYREF directly interacts with the CBC\n\nThe recombinant human ALYREF protein was shown to interact with the CBC in RNase-treated nuclear extracts (Cheng et al., 2006). Here, we used purified recombinant proteins to further investigate the molecular interactions between ALYREF and the CBC (Figure 1). It is well known that RS domain-containing proteins, including ALYREF, exhibit low solubility and are prone to aggregation. The addition of glutamic acid and arginine to the buffer can increase protein solubility and stability (Golovanov et al., 2004). Indeed, with a 1:1 mixture of glutamic acid and arginine, we were able to purify a GST-tagged ALYREF (residues 1\u2013183) protein containing the N-terminal region and the RRM domain of ALYREF (Figure 1A). This construct includes the WxHD motif (residues 87\u201390), whose mutation was shown to affect interaction with the CBC in an immunoprecipitation study (Gromadzka et al., 2016). GST pull-down assays showed that ALYREF directly interacts with the CBC (Figure 1B).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematics of the NCBP1 and NCBP2 subunits of the human CBC and ALYREF. ALYREF contains a central RRM domain. The RRM domain is connected to two conserved motifs (UBMs) at both termini through variable regions (N-vr and C-vr). Protein constructs used in GST pull-down assays in panel (B) (NCBP1, residues 1\u2013790; NCBP2, residues 1\u2013156; ALYREF, residues 1\u2013183) are indicated by black lines under the respective proteins. (B) ALYREF directly interacts with the CBC. In vitro GST pull-down assays were performed with purified recombinant human CBC and GST-tagged ALYREF or the corresponding construct of mouse ALYREF2 (mALYREF2, residues 1\u2013155). Results are representative of three technical repeats.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Sequence alignment of ALYREF and mALYREF2 (Robert and Gouet, 2014). The DDX39B binding motifs (N-UBM and C-UBM), the WxHD motif, and the RRM domain are indicated.\n\nWe next attempted to characterize the CBC-ALYREF interaction using cryo-EM. We found that human ALYREF is prone to aggregation in the absence of a GST tag. To obtain an untagged ALYREF protein amenable for structural studies, we tested the solubility of several ALYREF orthologs and found that mouse ALYREF2 (mALYREF2, residues 1\u2013155) exhibited better solubility than the ALYREF construct utilized above. The conserved UBM motifs, the WxHD motif, and the RRM domain are nearly identical between ALYREF and mALYREF2 (Figure 1\u2014figure supplement 1). Indeed, like ALYREF, mALYREF2 directly interacts with the CBC (Figure 1B). As the ALYREF/mALYREF2 interaction with the CBC is conserved and mALYREF2 exhibits better solubility, we focused on mALYREF2 in the cryo-EM investigations.\n\n### Cryo-EM structures of the CBC and CBC-ALYREF complexes\n\nWe collected cryo-EM data from the mixture of the CBC complex and mALYREF2 in the presence of the cap analog m7GpppG. The data yielded two maps that correspond to the CBC complex and the CBC-mALYREF2 complex, respectively. The CBC map was refined to an overall resolution of 3.38 \u00c5 (Figure 2A, Figure 2\u2014figure supplement 1\u20133, Table 1). The electron density of the cap analog is clearly visible bound to NCBP2 (Figure 2\u2014figure supplement 3C). Compared to unliganded CBC, the cap analog induces significant rearrangements in both the N-terminal extension and the C-terminal tail of NCBP2 (Figure 2B) to form critical interactions. For example, the N-terminal extension (residues 16\u201328) swings toward the central globular domain of NCBP2 and positions the Y20 residue to sandwich the cap analog with Y43 of NCBP2. These conformational changes were also observed in the crystal structures of ligand-bound CBC (Calero et al., 2002; Mazza et al., 2002). Overall, the cryo-EM structure of the CBC determined here resembles the previously reported crystal structures of the liganded CBC, with root mean squared deviation (RMSD) of 0.81 \u00c5 and 0.71 \u00c5 for NCBP1 and NCBP2, respectively (Calero et al., 2002).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig2-v1.jpg)\n\n**Figure 2.:** (A) Overall architecture of the CBC complex. NCBP1 and NCBP2 are colored in yellow and teal, respectively. The cap analog is shown as orange sticks. (B) Comparison of the CBC cryo-EM structure to the unliganded CBC crystal structure (PDB ID 1N54). The cryo-EM structure is colored as in (A). The unliganded CBC crystal structure is colored in light blue. Arrow indicates the conformational change in the N-terminal extension of NCBP2 upon cap analog binding. (C) Overall architecture of the CBC-mALYREF2 complex. NCBP1, NCBP2, and mALYREF2 are colored in yellow, teal, and red, respectively. The RRM domain of mALYREF2 binds to the CBC. (D) Comparison of the CBC-mALYREF2 and the CBC cryo-EM structures. CBC structure is colored in gray.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** Data were processed in CryoSPARC. A set of 241,915 particles yielded a reconstruction of a CBC-mALYREF2 map at 3.22 \u00c5 resolution. A set of 78,039 particles yielded a reconstruction of a CBC map at 3.38 \u00c5 resolution.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Selective 2D class averages from the final particle set of the CBC. (B) The gold-standard FSC curves of the final reconstruction of the CBC. (C) Angular distribution of the final reconstruction of the CBC computed in CryoSPARC. (D) 3DFSC analysis of the CBC reconstruction. The sphericity and global resolution values are noted within the graph window. (E) Cryo-EM map of the CBC complex. NCBP1 and NCBP2 are colored in yellow and teal, respectively. (F) Local resolution of the CBC cryo-EM map.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** (A) Map versus model FSC curves with or without mask calculated using Phenix. A resolution of 3.6 \u00c5 is estimated at FSC = 0.5. (B, C) Electron density map and structural model of CBC at the interface between NCBP1 and NCBP2 (B) and near m7G (C).\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** (A) Selective 2D class averages from the final particle set of CBC-mALYREF2. (B) The gold-standard Fourier shell correlation (FSC) curves of the final reconstruction of CBC-mALYREF2. (C) Angular distribution of the final reconstruction of CBC-mALYREF2 computed in CryoSPARC. (D) 3DFSC analysis of the CBC-mALYREF2 reconstruction. The sphericity and global resolution values are noted within the graph window. (E) Cryo-EM map of the CBC-mALYREF2 complex. NCBP1, NCBP2, and mALYREF2 are colored in yellow, teal, and red, respectively. (F) Local resolution of the CBC-mALYREF2 cryo-EM map.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig2-figsupp5-v1.jpg)\n\n**Figure 2\u2014figure supplement 5.:** (A) Map versus model Fourier shell correlation (FSC) curves with or without mask calculated using Phenix. A resolution of 3.5 \u00c5 is estimated at FSC = 0.5. (B, C) Electron density map and structural model of CBC-mALYREF2 at the interface between NCBP1 and NCBP2 (B) and near m7G (C). (D) Comparison of the CBC-mALYREF2 (colored as in Figure 2C) and the CBC (gray) cryo-EM structures. A loop (residues 38\u201345) of NCBP1, indicated by the arrow, becomes ordered upon mALYREF2 binding.\n\n**Table 1.**\n Cryo-EM data collection, refinement, and validation statistics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th>CBC-mALYREF2(EMDB EMD-40739)(PDB 8SRR)</th>\n      <th>CBC(EMDB EMD-40780)(PDB 8SUY)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Data collection and processing</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Microscope/camera</td>\n      <td colspan=\"2\">Glacios/Falcon 4i</td>\n    </tr>\n    <tr>\n      <td>Voltage (kV)</td>\n      <td colspan=\"2\">200</td>\n    </tr>\n    <tr>\n      <td>Electron exposure (e\u2013/\u00c52)</td>\n      <td colspan=\"2\">52</td>\n    </tr>\n    <tr>\n      <td>Defocus range (\u03bcm)</td>\n      <td colspan=\"2\">\u20131.0 to \u20132.0</td>\n    </tr>\n    <tr>\n      <td>Pixel size (\u00c5)</td>\n      <td colspan=\"2\">0.732</td>\n    </tr>\n    <tr>\n      <td>Box size (pixels)</td>\n      <td colspan=\"2\">288</td>\n    </tr>\n    <tr>\n      <td>Initial particle images (no.)</td>\n      <td colspan=\"2\">1,625,826</td>\n    </tr>\n    <tr>\n      <td>Final particle images (no.)</td>\n      <td>241,915</td>\n      <td>78,039</td>\n    </tr>\n    <tr>\n      <td>Map resolution (masked, \u00c5)</td>\n      <td>3.22</td>\n      <td>3.38</td>\n    </tr>\n    <tr>\n      <td>Fourier shell correlation (FSC) threshold</td>\n      <td>0.143</td>\n      <td>0.143</td>\n    </tr>\n    <tr>\n      <td>Refinement</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Model resolution (masked, \u00c5)</td>\n      <td>3.5</td>\n      <td>3.6</td>\n    </tr>\n    <tr>\n      <td>FSC threshold</td>\n      <td>0.5</td>\n      <td>0.5</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">Model composition</td>\n    </tr>\n    <tr>\n      <td>Protein residues</td>\n      <td>975</td>\n      <td>895</td>\n    </tr>\n    <tr>\n      <td>Ligands</td>\n      <td>1</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <td colspan=\"3\">B factors (\u00c52)</td>\n    </tr>\n    <tr>\n      <td>Protein</td>\n      <td>162.9</td>\n      <td>180.1</td>\n    </tr>\n    <tr>\n      <td>Ligand</td>\n      <td>157.5</td>\n      <td>163.2</td>\n    </tr>\n    <tr>\n      <td>r.m.s. deviations</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Bond lengths (\u00c5)</td>\n      <td>0.003</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>Bond angles (\u00b0)</td>\n      <td>0.417</td>\n      <td>0.413</td>\n    </tr>\n    <tr>\n      <td>Validation</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>MolProbity score</td>\n      <td>1.34</td>\n      <td>1.48</td>\n    </tr>\n    <tr>\n      <td>Clashscore</td>\n      <td>6.24</td>\n      <td>7.37</td>\n    </tr>\n    <tr>\n      <td>Poor rotamers (%)</td>\n      <td>0.7</td>\n      <td>0.9</td>\n    </tr>\n    <tr>\n      <td>Ramachandran plot</td>\n      <td></td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Favored (%)</td>\n      <td>98.0</td>\n      <td>97.6</td>\n    </tr>\n    <tr>\n      <td>Allowed (%)</td>\n      <td>2.0</td>\n      <td>2.4</td>\n    </tr>\n    <tr>\n      <td>Disallowed (%)</td>\n      <td>0.0</td>\n      <td>0.0</td>\n    </tr>\n  </tbody>\n</table>\n\nThe CBC-mALYREF2 map was refined to an overall resolution of 3.22 \u00c5 (Figure 2C, Figure 2\u2014figure supplements 1, 4 and Figure 2\u2014figure supplement 5, Table 1). The cap analog is bound to NCBP2 within the CBC-mALYREF2 complex (Figure 2\u2014figure supplement 5C). The structure shows that the RRM domain of mALYREF2 binds to both NCBP1 and NCBP2 subunits (Figure 2C and D). The N-terminal region of mALYREF2 (residues 1\u201373) does not show traceable density and is possibly disordered. mALRYEF binding does not induce a significant overall conformational change in CBC (Figure 2D, Figure 2\u2014figure supplement 5D). Comparing CBC and CBC-mALYREF2, NCBP1 and NCBP2 have an RMSD of 0.32 \u00c5 and 0.30 \u00c5, respectively. Locally, an NCBP1 loop in proximity to mALYREF2, formed by residues 38\u201345, becomes more ordered.\n\n### CBC-ALYREF interfaces\n\nThe interfaces between mALYREF2 and the CBC involve 16, 18, and 6 residues of mALYREF2, NCBP1, and NCBP2, respectively (Figure 3). The RRM domain of mALYREF2 assumes a canonical \u03b21\u03b11\u03b22\u03b23\u03b12\u03b24 topology (Figure 3A), forming an \u03b1-helical surface and a \u03b2-sheet surface. The \u03b1-helical surface recognizes the CBC through extensive hydrophilic and hydrophobic interactions (Figure 3B, Figure 3\u2014figure supplement 1A and B). The \u03b11 helix of mALYREF2 is enriched with acidic residues and makes key hydrophilic interactions with NCBP1. For example, E97 forms salt bridges with K330 and K381 of NCBP1. Y135 on the \u03b12 helix of mALYREF2 makes a hydrogen bond with K330 of NCBP1. In addition, the loop between \u03b12 and \u03b24 of mALYREF2 forms hydrophobic interactions with NCBP1. V138, P139, and L140 of mALYREF2 bind to a hydrophobic pocket on NCBP1 formed by A334, V337, and L382.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig3-v1.jpg)\n\n**Figure 3.:** (A) Sequence alignment of the RRM domain of mALYREF2 and ALYREF (Robert and Gouet, 2014). The residues that interface with the CBC are indicated by triangles below the sequence. The triangles colored in purple correspond to residues subjected to mutagenesis in Figure 4. (B) Details of the interaction between NCBP1 and mALYREF2. As a reference, an overall model is shown on the top to indicate the zoomed-in area. (C) Details of the interaction between NCBP2 and mALYREF2. (D) mALYREF2 features a positively charged surface near the cap analog bound to NCBP2. The surface of mALYREF2 is colored according to the electrostatic potential, ranging from red (\u20135 kBT/e) to blue (+5 kBT/e). Dotted line indicates a putative RNA binding path.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Electron density map and structural model of CBC-mALYREF2 are shown in the same views as in Figure 3B, left panel (A), Figure 3B, right panel (B), and Figure 3C (C).\n\nThe interface between mALYREF2 and NCBP2 is near the m7G binding pocket (Figure 3C, Figure 3\u2014figure supplement 1C). The \u03b12 helix of mALYREF2 contacts S13 and Y14 in the N-terminal extension of NCBP2. S13 and Y14 also directly interact with NCBP1 and are thought to enable the hinged motion of the N-terminal extension (residues 16\u201328) upon binding to the cap (Mazza et al., 2002). In addition, the \u03b11 helix of mALYREF2 is in proximity to the R105 and I110 residues of NCBP2. NCBP2 exhibits a positively charged groove extending from the cap binding site, which is suggested to be an RNA binding site (Calero et al., 2002). Upon mALYREF2 binding, this groove is buried. Interestingly, mALYREF2 features a positively charged surface near the m7G site (Figure 3D). Conceivably, this positively charged surface on mALYREF2 could serve as an RNA binding site for the nucleotides following the cap.\n\nBased on the CBC-mALYREF2 structure, we generated mutations (mut-1 and mut-2) on the RRM domain of human ALYREF (ALYREF-RRM, residues 103\u2013183) to validate its interaction with the CBC. For ALYREF-RRM-mut-1 (Y166R/V169R/P170R), mutated residues are localized on the \u03b12-\u03b24 loop and correspond to residues Y135/V138/P139 in mALYREF2 (Figure 3A and B). For ALYREF-RRM-mut-2 (E124R/E128R), mutated residues are localized on the \u03b11 helix and correspond to residues E93/E97 in mALYREF2 (Figure 3A and B). In agreement with the CBC-ALYREF structure, we found that the RRM domain of ALYREF directly interacts with the CBC, albeit with weaker interaction compared to ALYREF (residues 1\u2013183) (Figures 1B and 4A). The difference likely results from the WxHD motif (residues 87\u201390) localized in the N-terminal region of ALYREF. Evidence suggests that mutation of the WxHD motif reduces ALYREF\u2019s interaction with the CBC (Gromadzka et al., 2016). The WxHD motif may represent a second binding site for the CBC that remains to be characterized. Importantly, compared to the wild type protein, both ALYREF-mut-1 and mut-2 show reduced binding to the CBC (Figure 4A). Together, the mutagenesis studies validate the CBC-ALYREF interfaces observed in the structure.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig4-v1.jpg)\n\n**Figure 4.:** (A) Mutations of key interface residues on ALYREF reduced CBC binding. In vitro GST pull-down assays were performed with purified recombinant human CBC and GST-tagged ALYREF-RRM wild type or mutants (mut-1, Y166R/V169R/P170R; mut-2, E124R/E128R). (B) NCBP1 is sufficient to interact with ALYREF. In vitro GST pull-down assays were performed with purified recombinant GST-tagged ALYREF and individual CBC subunits. Results are representative of three technical repeats.\n\nThe CBC-mALYREF2 structure reveals that the interaction between ALYREF and the CBC mainly involves the NCBP1 subunit (Figure 3B and C). We further dissected the interaction between ALYREF and individual NCBP1 and NCBP2 subunits using GST pull-down assays. NCBP1 can be efficiently pulled down by GST-ALYREF, whereas NCBP2 did not show detectable interaction (Figure 4B). These results are consistent with the structural observations and indicate that NCBP1 is the major subunit of the CBC to interact with ALYREF.\n\n### CBC-ALYREF and 5\u2032 cap-dependent mRNP export\n\nALYREF recruits the mRNP export machinery TREX complex to the 5\u2032 end of mRNA through direct interactions with both the CBC and TREX (Cheng et al., 2006; Ren et al., 2017). The UBMs of ALYREF directly interact with the DDX39B component of the TREX complex (Ren et al., 2017). The N-terminal UBM is included in the ALYREF construct used for our cryo-EM studies but did not show visible electron density. Thus, this UBM is likely exposed and available to interact with DDX39B, which further connects to the entire TREX complex (Figure 5A). Consistently, ALYREF, DDX39B, THOC1, and THOC2 are present in NCBP1 immunoprecipitations from RNase-treated HeLa cell nuclear extracts (Cheng et al., 2006). In yeast, mutually exclusive interactions were shown between Yra1 with Sub2 and the NXF1-NXT1 ortholog Mex67-Mtr2 (Str\u00e4sser et al., 2002). So, the ALYREF-dependent NXF1-NXT1 loading on mRNA likely occurs after DDX39B dissociates from ALYREF. The CBC could also function as a landing pad for ALYREF as previously proposed (Viphakone et al., 2019). After recruitment to the 5\u2032 end of mRNA by the CBC, ALYREF could then transfer away from the 5\u2032 end, to other sites enriched with export factors and participate in different complexes located along the mRNA. In addition to the ALYREF-NXF1-NXT1 complex, some other ALYREF containing complexes could exist on the same mRNP, such as the complex of ALYREF/DDX39B/SARNP, which facilitates high-order mRNP assembly (Dufu et al., 2010; Xie et al., 2023).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig5-v1.jpg)\n\n**Figure 5.:** (A) ALYREF links the TREX complex to the CBC. The RRM domain of ALYREF recognizes the CBC at the 5\u2032 end of mRNA. The UBM of ALYREF binds to the DDX39B subunit of TREX; their complex is represented using their yeast orthologs Yra1 and Sub2, respectively (PDB ID 5SUP). DDX39B in turn associates with the THO subcomplex of TREX. (B) HVS ORF57 binds to the RRM domain of ALYREF and interferes with the CBC-ALYREF interaction. (Left) NMR structure of the ALYREF-ORF57 complex (PDB ID 2YKA). (Right) The CBC-ALYREF structure is overlayed with the ALYREF-ORF57 structure. (C) Proposed model of viral mRNA export mediated by herpes viral ORF57 homologs. On viral transcripts, ALYREF associates with the CBC and ORF57 via the WxHD motif and the RRM domain, respectively. Both ALYREF and ORF57 feature RNA binding regions to form contacts with the RNA. ALYREF recruits the other TREX complex components to facilitate the nuclear export of viral mRNAs.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) NMR structure of the ALYREF-ICP27 complex (PDB ID 2KT5). (B) The CBC-ALYREF structure is overlayed with the ALYREF-ICP27 structure.\n\nThe process of mRNP export, with the 5\u2032 end exiting first from the NPC, has been shown in both insect and human systems using electron microscopy and single-molecule imaging techniques (Mehlin et al., 1992; Ashkenazy-Titelman et al., 2022). Interestingly, in the latter study, several adjacent NPCs were found to engage in the export of the same mRNA (Blobel, 1985). This observation is reminiscent of the gene gating hypothesis, which suggested that transcriptionally active genes are physically tethered to the site of mRNA export at the NPC (Blobel, 1985). Gated genes have been shown in yeast, worms, flies, and humans (Burns and Wente, 2014; Scholz et al., 2019). For these gated genes, the 5\u2032 directionality of mRNA export could be primarily driven by the key placement of crucial RNA export factors at the 5\u2032 end of the gene as illustrated here (Figure 5A), and this localization of export factors could greatly increase the efficiency of co-transcriptional processing and export.\n\n### CBC-ALYREF and viral hijacking of host mRNA export pathway\n\nHSV-1 ICP27 and HVS ORF57 hijack the host mRNA export pathway through interactions with ALYREF. The RRM domain of ALYREF is targeted by both HSV-1 ICP27 and HVS ORF57 with overlapping interfaces (Figure 5B, Figure 5\u2014figure supplement 1). Structural comparison between CBC-ALYREF, ALYREF-ICP27, and ALYREF-ORF57 reveals that the interface between ALYREF\u2019s RRM domain with the CBC is not compatible with the ICP27/ORF57-ALYREF interactions (Figure 5B, Figure 5\u2014figure supplement 1). In addition, in vivo data show that the ORF57 ortholog from Kaposi\u2019s Sarcoma-Associated Herpesvirus (KSHV) can still form a complex with ALYREF and the CBC (Boyne et al., 2008). So, it is likely that although ALYREF\u2019s RRM domain interface with the CBC could be disrupted by ORF57, ALYREF can still use the WxHD motif to interact with the CBC (Figure 5C). Using this strategy, a virus can hijack the host pathway while simultaneously disrupting host interactions and processes. It should also be noted that the CBC, ALYREF, ICP27, and ORF57 are all RNA binding proteins. In addition to the protein-mediated interactions discussed above, RNA interactions should be considered, especially under the in vivo setting (Figure 5C). NXF1-NXT1 and DDX39B, the cellular ALYREF interacting proteins, are also hijacked by other factors from viruses. NXF1-NXT1 is targeted by influenza A virus NS1 protein (Zhang et al., 2019b) and SARS-CoV-2 Nsp1 protein (Zhang et al., 2021; Mei et al., 2024). DDX39B is targeted by influenza A virus NP protein (Momose et al., 2001; Morris et al., 2020). The molecular mechanisms revealed here and from previous studies pave the way for new useful targets in antiviral therapeutics.\n\n### Functional interplay of CBC-ALYREF and mRNP export factors\n\nTranscription, splicing, and export are all tightly linked processes. The CBC promotes splicing through its binding partners, such as SRSF1 (Lenasi et al., 2011; Pabis et al., 2013). The detailed molecular interaction between the CBC and SRSF1 is revealed in a human pre-Bact-1 spliceosome structure (Townsend et al., 2020). The NCBP2 subunit of the CBC is the major binding site for SRSF1. Structural overlay of this structure with the CBC-ALYREF structure shows no significant steric hindrance between SRSF1 and ALYREF (Figure 6A). However, whether the CBC-ALYREF-SRSF1 complex exits in vivo and how their functions might be coordinated require further studies. After splicing, SRSF1 is mainly deposited on exons (Das and Krainer, 2014; Pandit et al., 2013). SRSF1 functions in mRNA export through interaction with the export receptor NXF1-NXT1 (Huang et al., 2004; Reed and Cheng, 2005; M\u00fcller-McNicoll et al., 2016). Of note, the interaction between both ALYREF and SR proteins with NXF1-NXT1 is regulated by phosphorylation. Only hypophosphorylated SR proteins can bind to NXF1-NXT1 efficiently (Huang et al., 2004; Okada et al., 2008; Xie et al., 2021b). Interestingly, SR proteins, such as Gbp2 and Hrb1 in Saccharomyces cerevisiae, also interact directly with the TREX complex (Xie et al., 2021a; Hurt et al., 2004), suggesting coordinated actions of TREX and SR proteins in mRNA export.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/91432/elife-91432-fig6-v1.jpg)\n\n**Figure 6.:** (A) Overlay of the CBC-ALYREF structure with the CBC-SRSF1 structure (PDB ID 7ABG). CBC-ALYREF is colored as in Figure 2B. CBC-SRSF1 is colored with the CBC in white and SRSF1 in orange. (B) ALYREF interaction with the CBC and the EJC is mutually exclusive. (Left) ALYREF binds to the MAGOH subunit of the EJC (PDB ID 7ZNJ). (Right) The CBC-ALYREF structure is overlayed with the ALYREF-MAGOH structure. (C) Proposed model of the mRNP export receptor NXF1-NXT1 recruitment by CBC-ALYREF and other factors during mRNA maturation.\n\nUnlike the CBC and SRSF1 interfaces discussed above, the interaction between the ALYREF RRM domain and the CBC is incompatible with the interface between the ALYREF RRM domain and the EJC subunit MAGOH (Pacheco-Fiallos et al., 2023; Figure 6B). Mutation of the ALYREF WxHD motif affects its interaction with both the CBC and the EJC subunit eIF4A3 (Gromadzka et al., 2016). As both the WxHD motif and the RRM domain of ALYREF are mutually exclusive binding sites for the CBC and the EJC, the formation of the EJC-ALYREF complex likely happens after ALYREF dissociates from the CBC. It is also possible that the EJC-ALYREF interaction is independent of the CBC (Figure 6C). This possibility is supported by the report that ALYREF can be recruited to RNA by both CBC-dependent and -independent mechanisms (Nojima et al., 2007). The resulting mRNP with multiple copies of ALYREF and NXF1-NXT1, each recruited through different mechanisms and at different sites on the mRNP (Figure 6C), could exhibit increased export efficiency.\n\n### Conclusion and perspectives\n\nThe CBC plays important roles in multiple steps of mRNA metabolism through interactions with a plethora of factors. Here, we present the structural basis of the interaction between the CBC and a key mRNA export factor, ALYREF. The CBC-ALYREF structure reveals molecular insights into the ALYREF-mediated recruitment of mRNA export machinery to the 5\u2032 end of nascent transcripts. We suggest working models for the coordinated events mediated by the CBC and ALYREF during splicing and mRNA export. Notably, both the CBC and ALYREF have been implicated in cancer. Mutations of the CBC residues interfacing with ALYREF, including K330N of NCBP1, R105C of NCBP2, and I110M of NCBP2, are found in several forms of cancers (Tate et al., 2019; Heath et al., 2021; Zhang et al., 2019a). These mutations could reduce ALYREF interaction and subsequently cause dysregulation of mRNA export and the processes that are coordinated by CBC and ALYREF. In addition, ALYREF has been shown to be frequently upregulated in various cancerous tissues (Dom\u00ednguez-S\u00e1nchez et al., 2011). Determining whether dysregulation of the CBC-ALYREF interaction contributes to cancer pathogenesis, including characterization of the impact of cancer-associated mutations of the CBC, is an interesting area for future studies.\n\nTo date, it is unclear whether the functional connection between the CBC and ALYREF is conserved in yeast. In humans, recruitment of the mRNA export machinery is mediated by ALYREF in a CBC and EJC-dependent manner (Cheng et al., 2006; Gromadzka et al., 2016). Our work and studies by others (Pacheco-Fiallos et al., 2023; Gromadzka et al., 2016) reveal that both the CBC and the EJC recognize ALYREF through the WxHD motif and the RRM domain of ALYREF. There are notable differences between yeast and humans regarding ALYREF function: (1) the EJC is not present in the budding yeast, S. cerevisiae, and (2) the yeast ortholog of ALYREF, Yra1, does not contain a WxHD motif. Nevertheless, a study conducting transcriptome-wide mapping of mRNA biogenesis factors showed that Yra1 is enriched at the 5\u2032 region of the mRNA (Baejen et al., 2014), raising the possibility that Yra1 localization could be mediated by the CBC. Further studies are required to reveal the mechanism of Yra1 in the context of the CBC and recruitment of the mRNA export machinery in yeast.\n\n## Materials and methods\n\n### Plasmids\n\nHuman NCBP1 (UniProt Q09161) was cloned into the pFastBac HTc vector with an N-terminal TEV cleavable His tag. Human NCBP2 (UniProt P52298) was cloned into a modified pFastBac1 vector containing an N-terminal TEV cleavable GST tag. Human ALYREF (UniProt Q86V81) and mouse ALYREF2 (UniProt Q4KL64) constructs were cloned into a modified pGST-4T-1 vector containing an N-terminal TEV cleavable GST tag.\n\n### Protein expression and purification\n\nThe NCBP1-NCBP2 complex was expressed in High-Five insect cells (Invitrogen) by coinfection of recombinant baculoviruses. Individual NCBP1 and NCBP2 subunits were expressed in High-Five insect cells infected with the respective recombinant baculovirus. High-Five cells were harvested 48 hr after infection and lysed in a buffer containing 50 mM Tris pH 8.0, 300 mM NaCl, 0.2 mM AEBSF, 2 mg/L aprotinin, 1 mg/L pepstatin, 1 mg/L leupeptin, and 0.5 mM TCEP. Proteins were purified using Glutathione Sepharose 4B resin (Cytiva) for NCBP2 and NCBP1-NCBP2, or Ni Sepharose 6FF resin (Cytiva) for NCBP1 alone. The proteins were further purified on a mono Q column (Cytiva). The expression tags were removed by overnight incubation with GST-TEV (for NCBP2 and NCBP1-NCBP2) or His-TEV (for NCBP1) at 4\u00b0C. The samples were passed through Glutathione Sepharose 4B resin (for NCBP2 and NCBP1-NCBP2) or Ni Sepharose 6FF resin (for NCBP1) to remove undigested protein and TEV. The proteins were further purified on a Superdex 200 column (Cytiva) in 10 mM Tris pH 8.0, 300 mM NaCl, and 0.5 mM TCEP.\n\nGST-tagged ALYREF (residues 1\u2013183), ALYREF-RRM (residues 103\u2013183), ALYREF-RRM-mut-1 (Y166R/V169R/P170R), ALYREF-RRM-mut-2 (E124R/E128R), and mALYREF2 (residues 1\u2013155) were expressed in Escherichia coli Rosetta cells (Sigma-Aldrich). Protein expression was induced with 0.5 mM IPTG at 16\u00b0C overnight. Cells were lysed in a buffer containing 50 mM Tris, pH 8.0, 500 mM NaCl, 50 mM glutamic acid, 50 mM arginine, 0.5 mM TCEP, 0.2 mM AEBSF, and 2 mg/L aprotinin. The GST-tagged proteins were pulled down using Glutathione Sepharose 4B resin. GST-tagged ALYREF-RRM wild type and mutant proteins were purified on a Superdex 200 column in 10 mM Tris pH 8.0, 300 mM NaCl, and 5 mM DTT. GST-tagged ALYREF (residues 1\u2013183) was purified by a cation exchange column (source 15S, Cytiva), followed by a Superdex 200 column equilibrated with 10 mM Tris, pH 8.0, 500 mM NaCl, 50 mM glutamic acid, 50 mM arginine, and 0.5 mM TCEP. GST-tagged mALYREF2 (residues 1\u2013155) was purified by an anion exchange column (Q Sepharose, Cytiva), followed by a cation exchange column (SP Sepharose, Cytiva). For untagged mALYREF2 used in cryo-EM studies, the GST tag was removed by overnight incubation with GST-TEV at 4\u00b0C. Untagged mALYREF2 was further purified on a cation exchange HiTrap SP column (Cytiva), followed by a Superdex 200 column equilibrated with 10 mM Tris, pH 8.0, 150 mM NaCl, 50 mM glutamic acid, 50 mM arginine, and 0.5 mM TCEP.\n\nAll purified proteins were flash frozen in liquid nitrogen, and stored at \u201380 \u00b0C.\n\n### Cryo-EM sample preparation and data collection\n\nNCBP1-NCBP2 at 1.2 \u03bcM was incubated with mALYREF2 (residues 1\u2013155) at 3.6 \u03bcM in the presence of the 5\u2032 cap analog m7GpppG (NEB) at 500 \u03bcM at 4\u00b0C for 0.5 hr. The sample was deposited on glow-discharged UltrAuFoil R 1.2/1.3 grids (Quantifoil). Grids were blotted for 6 s with a blotting force of 6 at 4\u00b0C and 100% humidity and plunged into liquid ethane using a FEI Vitrobot Mark IV (Thermo Fisher). The data were collected with a Glacios Cryo-TEM (Thermo Fisher) equipped with a Falcon 4i detector (Thermo Fisher). Movies were collected with EPU at a magnification of 190,000\u00d7, corresponding to a calibrated pixel size of 0.732 \u00c5/pixel. A total of 5858 movies recorded in EER format were collected with a defocus range from 1.0 \u03bcm to 2.0 \u03bcm. A full description of the cryo-EM data collection parameters can be found in Table 1.\n\n### Cryo-EM image processing and model building\n\nCryo-EM data were processed with cryoSPARC (Punjani et al., 2017). Movies in EER format were gain normalized, aligned, and dose-weighted using patch motion correction, followed by patch CTF estimation. A subset of 100 micrographs was subjected to blob particle picking followed by 2D classification to obtain particles for Topaz training. 1,625,826 particles were picked by Topaz from the entire dataset and were extracted with a box size of 288 \u00d7 288 pixels. 1,453,188 particles were retained after 2D classification. The particles were subjected to ab initio model reconstruction and heterogeneous refinement, resulting in one good class from 637,185 particles, which showed robust CBC densities as well as densities corresponding to mALYREF2 along with \u2018junk\u2019 classes. Further heterogeneous refinement resulted in a set of 366,410 particles corresponding to the CBC-mALREF2 complex and a set of 121,056 particles corresponding to the CBC complex. The CBC-mALYREF2 particles were subjected to another round of heterogeneous refinement and homogeneous refinement, which yielded a reconstruction from 241,915 particles with an overall resolution of 3.22 \u00c5. Directional anisotropy of the CBC-mALYREF2 map was assessed using the 3DFSC server (Tan et al., 2017; https://3dfsc.salk.edu), which indicates a sphericity of 0.946. The CBC particles were subjected to another round of heterogeneous refinement, homogeneous refinement, and non-uniform refinement, which yielded a reconstruction from 78,039 particles with an overall resolution of 3.38 \u00c5. 3DFSC analysis of the CBC map indicates a sphericity of 0.962.\n\nAn initial model of CBC was obtained by docking AlphaFold models of NCBP1 (AF-Q09161-F1) and NCBP2 (AF-P52298-F1). An initial model of CBC-mALYREF2 was obtained by docking AlphaFold models of NCBP1, NCBP2, and mALYREF2 into the cryo-EM density map. The models were adjusted in Coot (Emsley et al., 2010), followed by real-space refinement in Phenix (Afonine et al., 2012). The final CBC model contains NCBP1, NCBP2, and the m7G moiety of m7GpppG. The final CBC-mALYREF2 model contains NCBP1, NCBP2, the RRM domain of mALYREF2, and the m7G moiety of m7GpppG. Figures were prepared using PyMOL (Molecular Graphics System, Schrodinger, LLC) and Chimera (Luo et al., 2001).\n\n### GST pull-down\n\nGST or GST-tagged proteins were pre-incubated with GST resin in binding buffer (10 mM Tris pH 8.0, 500 mM NaCl, 50 mM glutamic acid, 50 mM arginine, 0.5 mM TCEP) on ice for 0.5 hr and were mixed with gentle tapping every 3\u20135 min. The beads were then washed three times with 600 \u03bcl of buffer containing 10 mM Tris pH 8.0, 100 mM NaCl (Figures 1B and 4B) or 50 mM NaCl (Figure 4A), and 0.5 mM TCEP. NCBP1, NCPB2, or the NCBP1-NCBP2 complex was incubated with the 5\u2032 cap analog m7GpppG at 20 \u03bcM, adjusted salt concentration to 100 mM NaCl (Figures 1B and 4B) or 50 mM NaCl (Figure 4A), and then added to beads. The samples were incubated on ice for 0.5 hr and mixed with gentle tapping every 3\u20135 min. Beads were then washed three times with 600 \u03bcl of wash buffer (10 mM Tris pH 8.0, 50 mM NaCl, 0.5 mM TCEP) before bound proteins were eluted in 10 mM Tris pH 8.0, 500 mM NaCl (Figures 1B and 4B) or 150 mM NaCl (Figure 4A), 25 mM glutathione, and 0.5 mM TCEP. 6% (Figures 1B and 4B) or 3% (Figure 4A) of the input and 60% of the eluted proteins were analyzed using Coomassie stained SDS-PAGE gels. The experiments were repeated three times independently.\n",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "676ca0b4-3d93-4484-9b2e-c4eb7d72413f",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Yang Yang, Iowa State University\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91432.3.sa0](https://doi.org/10.7554/eLife.91432.3.sa0)\n\nThis important study reports the cryo-electron microscopy structure of a multi-protein complex that recognizes the 5'-end cap of mRNAs and plays a critical role in mRNA export. The structural and biochemical analyses in this study provide convincing evidence to support the major claims of the authors, with the inclusion of more functional characterizations in cell-based systems having corroborated the claims further and thus strengthening the study. This paper would be of interest to structural biologists and RNA biologists working on mRNA metabolism.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91432.3.sa1](https://doi.org/10.7554/eLife.91432.3.sa1)\n\nSummary:\n\nThe authors use a combination of biochemistry and cryo-EM studies to explore a complex between the cap binding complex and an RNA binding protein, ALYREF, that coordinates mRNA processing and export.\n\nStrengths:\n\nThe biochemistry and structural biology are supported by mutagenesis that tests the model in vitro. The structure provides new insight into how key events in RNA processing and export are likely to be coordinated.\n\nWeaknesses:\n\nThe authors provide biochemical studies to confirm the interactions that they identify; however, they do not perform any studies to test these models in cells or explore the consequences for mRNA export from the nucleus. In fact, several of the amino acids that they identified in ALYREF that are critical for the interaction, as determined by their own biochemical studies are conserved in budding yeast Yra1 (residues E124/E128 are E/Q in budding yeast and residues Y135/V138/P139 are F/S/P), where the impact on poly(A) RNA export from the nucleus could be readily evaluated. The authors mention the potential for future studies in the manuscript, but they do not perform any analysis in this study that would explore the contributions of these new interactions.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91432.3.sa2](https://doi.org/10.7554/eLife.91432.3.sa2)\n\nSummary:\n\nIn this manuscript, Bradley and his colleagues represented the cryo-EM structure of the nuclear cap-binding complex (CBC) in complex with an mRNA export factor, ALYREF, providing a structural basis for understanding CBC regulating gene expression.\n\nStrengths:\n\nThe authors successfully modeled the N-terminal region and the RRM domain of ALYREF (residues 1-183) within the CBC-ALYREF structure, which revealed that both the NCBP1 and NCBP2 subunits of the CBC interact with the RBM domain of ALYREF. Further mutagenesis and pull-down studies provided additional evidence to the observed CBC-ALYREF interface. Additionally, the authors engaged in a comprehensive discussion regarding other cellular complexes containing CBC and/or ALYREF components. They proposed potential models that elucidated coordinated events during mRNA maturation. This study provided structural evidence to show how CBC effectively recruits mRNA export factor machinery, enhancing our understanding of CBC regulating gene expression during mRNA transcription, splicing, and export.\n\nWeaknesses:\n\nAbsence of functional data to support the proposed models in this study.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91432.3.sa3](https://doi.org/10.7554/eLife.91432.3.sa3)\n\nSummary:\n\nThe authors carried out structural and biochemical studies to investigate the multiple functions of CBC and ALYREF in RNA metabolism.\n\nStrengths:\n\nFor the structural study part, the authors successfully revealed how NCBP1 and NCBP2 subunits interact with mALYREF (residues 1-155). Their binding interface was then confirmed by biochemical assays (mutagenesis and pull-down assays) presented in this study.\n\nWeaknesses:\n\nThe model derived from the cryo-EM structure will likely need to be validated in future functional studies.\n",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1650f45e-d628-4812-b937-741250e5c705",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C1",
+      "claim": "In eukaryotes, RNAs transcribed by RNA Pol II are modified at the 5\u2032 end with a 7-methylguanosine (m7G) cap.",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, RNAs transcribed by RNA Pol II are modified at the 5\u2032 end with a 7-methylguanosine (m7G) cap, which is recognized by the nuclear cap binding complex (CBC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about eukaryotic RNA processing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "33f52773-50d1-466e-bf47-84840957b5ef",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C2",
+      "claim": "The m7G cap is recognized by the nuclear cap binding complex (CBC).",
+      "claim_type": "EXPLICIT",
+      "source": "In eukaryotes, RNAs transcribed by RNA Pol II are modified at the 5\u2032 end with a 7-methylguanosine (m7G) cap, which is recognized by the nuclear cap binding complex (CBC).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about CBC function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "e880087d-0811-49d4-b56a-902ec6328030",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C3",
+      "claim": "The CBC plays multiple important roles in mRNA metabolism, including transcription, splicing, polyadenylation, and export.",
+      "claim_type": "EXPLICIT",
+      "source": "The CBC plays multiple important roles in mRNA metabolism, including transcription, splicing, polyadenylation, and export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by established scientific knowledge and citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "a4d0c216-32bf-465c-97c9-28cae2e0600b",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C4",
+      "claim": "The CBC promotes mRNA export through direct interaction with ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "It promotes mRNA export through direct interaction with a key mRNA export factor, ALYREF, which in turn links the TRanscription and EXport (TREX) complex to the 5\u2032 end of mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the experimental data presented in the manuscript and prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "74d83778-af0b-420c-b396-c1decddf8810",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C5",
+      "claim": "ALYREF links the TREX complex to the 5\u2032 end of mRNA.",
+      "claim_type": "EXPLICIT",
+      "source": "It promotes mRNA export through direct interaction with a key mRNA export factor, ALYREF, which in turn links the TRanscription and EXport (TREX) complex to the 5\u2032 end of mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "56dc9b20-cf4f-40ba-ba75-cc2eb5e5c58c",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C6",
+      "claim": "The cryo-EM structure of CBC-ALYREF was determined at 3.22 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We present cryo-EM structures of the CBC and CBC-ALYREF complexes at 3.38 \u00c5 and 3.22 \u00c5 resolution, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "5f8de790-5519-4684-bcb7-e97513f2c57d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C7",
+      "claim": "The cryo-EM structure of CBC was determined at 3.38 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "We present cryo-EM structures of the CBC and CBC-ALYREF complexes at 3.38 \u00c5 and 3.22 \u00c5 resolution, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "f5fd5d9b-b04c-4b27-9879-6bb57efe29a9",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C8",
+      "claim": "The RRM domain of ALYREF makes direct contact with both the NCBP1 and NCBP2 subunits of the CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "The cryo-EM structure of CBC-ALYREF reveals that the RRM domain of ALYREF makes direct contact with both the NCBP1 and NCBP2 subunits of the CBC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c8a80fa1-84b2-49b0-877a-6f734cdce88d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C9",
+      "claim": "The CBC is comprised of NCBP1 (also known as CBP80) and NCBP2 (also known as CBP20).",
+      "claim_type": "EXPLICIT",
+      "source": "It is comprised of NCBP1 (also known as CBP80) and NCBP2 (also known as CBP20).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge about CBC composition.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "75966f79-89e9-4c4b-b285-78cbee38de48",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C10",
+      "claim": "The CBC regulates gene expression at multiple levels, ranging from transcription and splicing to nuclear export and translation.",
+      "claim_type": "EXPLICIT",
+      "source": "As such, the CBC regulates gene expression at multiple levels, ranging from transcription and splicing to nuclear export and translation (Gonatopoulos-Pournatzis and Cowling, 2014; Rambout and Maquat, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "3a15479b-1579-4572-add2-9d2e846a6d9e",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C11",
+      "claim": "Early electron microscopic studies on the Balbiani ring mRNPs in Chironomus tentans showed that mRNPs translocate through the NPC in a 5\u2032 to 3\u2032 direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, early electron microscopic studies on the Balbiani ring mRNPs in Chironomus tentans showed that mRNPs translocate through the NPC in a 5\u2032 to 3\u2032 direction (Mehlin et al., 1992).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "abe9fa7b-ea9f-4a01-ab6a-4b150f790194",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C12",
+      "claim": "Recent single-molecule work on human mRNPs suggests mRNA is exported 5\u2032 end first.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent single-molecule work on human mRNPs also suggests mRNA is exported 5\u2032 end first (Ashkenazy-Titelman et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "4bfa044e-2aae-4c16-869e-500611e1dd3c",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C13",
+      "claim": "The CBC promotes nuclear mRNA export through its interaction with ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "The CBC promotes nuclear mRNA export through its interaction with a key mRNA export factor ALYREF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "83aa11ba-0a34-4125-986f-8ed990993eec",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C14",
+      "claim": "ALYREF binds to DDX39B (also known as UAP56).",
+      "claim_type": "EXPLICIT",
+      "source": "ALYREF in turn binds to DDX39B (also known as UAP56) and by extension, the entire TRanscription-EXport (TREX) complex at the 5\u2032 end of the RNA (Cheng et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c888e36e-b34f-4b89-8b50-f49b6639a83b",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C15",
+      "claim": "The TREX complex is conserved from yeast to humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The TREX complex is conserved from yeast to humans (Str\u00e4sser et al., 2002; Ren et al., 2017; Xie et al., 2021a; Pacheco-Fiallos et al., 2023; Schuller et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "1ab9b2e9-c030-48bc-a336-27f5a2464be3",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C16",
+      "claim": "The human TREX complex is composed of THOC1, 2, 3, 5, 6, 7, and the DEAD-box helicase DDX39B.",
+      "claim_type": "EXPLICIT",
+      "source": "The human TREX complex is composed of THOC1, 2, 3, 5, 6, 7, and the DEAD-box helicase DDX39B (Masuda et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "d569f393-67ef-4343-a3a2-780cab088042",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C17",
+      "claim": "ALYREF was identified as the THOC4 subunit of the TREX complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, ALYREF was also identified as the THOC4 subunit of the TREX complex, indicating that the function of ALYREF is tightly integrated with the TREX complex.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "cc7b2d79-8fe8-41d6-a9de-d51e8f5c44aa",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C18",
+      "claim": "ALYREF and its yeast ortholog Yra1 contain UBMs (UAP56-binding motifs) that mediate the interaction with DDX39B and Sub2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "ALYREF and its yeast ortholog Yra1 contain UBMs (UAP56-binding motifs) that mediate the interaction with DDX39B and Sub2, respectively (Ren et al., 2017; Luo et al., 2001; Chang et al., 2013; Str\u00e4sser and Hurt, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "2ee1bb11-669f-4d64-ae14-80fb19ad2f86",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C19",
+      "claim": "The yeast CBC was shown to facilitate the recruitment of Yra1 onto nascent RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The yeast CBC was also shown to facilitate the recruitment of Yra1 onto nascent RNA (Sen et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "f373951c-0ff6-4e59-a49d-ff96413b3c39",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C20",
+      "claim": "ALYREF and TREX play central roles in mRNA export through direct interactions with the export receptor NXF1-NXT1.",
+      "claim_type": "EXPLICIT",
+      "source": "ALYREF and TREX play central roles in mRNA export through direct interactions with various factors including the export receptor NXF1-NXT1 (Viphakone et al., 2012; Str\u00e4sser and Hurt, 2000; Stutz et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "6ce5ba1f-752a-4e9d-b097-6c61944d23de",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C21",
+      "claim": "ALYREF and the associated TREX complex can be hijacked for nuclear export of some viral mRNAs, such as those of herpes viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "ALYREF and the associated TREX complex are not only required for cellular mRNA export but also can be hijacked for nuclear export of some viral mRNAs, such as those of herpes viruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "27008ec8-6c10-483f-9e14-09212afa7df5",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C22",
+      "claim": "HSV-1 ICP27 and HVS ORF57 directly target the host ALYREF protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Both HSV-1 ICP27 and HVS ORF57 directly target the host ALYREF protein (Tunnicliffe et al., 2011; Tunnicliffe et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "f230900d-84bd-444f-99a3-ab1927596031",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C23",
+      "claim": "HSV-1 ICP27 and HVS ORF57 recognize overlapping surfaces on the RRM domain of ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural studies show that they recognize overlapping surfaces on the RRM domain of ALYREF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural studies cited in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "1fefec24-0c2d-4681-82ce-7fbbf2844251",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C24",
+      "claim": "SRSF1 couples transcription, splicing, and export through direct interactions with the CBC, spliceosome, NXF1-NXT1, and RNA.",
+      "claim_type": "EXPLICIT",
+      "source": "SRSF1 couples transcription, splicing, and export through direct interactions with the CBC, spliceosome, NXF1-NXT1, and RNA (Huang et al., 2004; Cl\u00e9ry et al., 2013; Townsend et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "b6d6ba21-9b10-4d02-92a4-25baafb73918",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C25",
+      "claim": "In higher eukaryotes, the EJC is deposited 20\u201324 nucleotides upstream of the exon junctions during splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "In higher eukaryotes, the EJC is deposited 20\u201324 nucleotides upstream of the exon junctions during splicing (Le Hir et al., 2000; Andersen et al., 2006; Bono et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "dffc5c61-ec34-45d7-92db-350f783554f6",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C26",
+      "claim": "The EJC was initially shown to associate with ALYREF through a WxHD motif in the N-terminal unstructured region of ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "The EJC was initially shown to associate with ALYREF through a WxHD motif in the N-terminal unstructured region of ALYREF (Gromadzka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "9ab5e17e-e3ef-4b4b-b954-00175f3c63bf",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C27",
+      "claim": "Multiple binding interfaces were shown between ALYREF and the EJC.",
+      "claim_type": "EXPLICIT",
+      "source": "More recently, multiple binding interfaces were shown between ALYREF and the EJC (Pacheco-Fiallos et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "616624f0-d76d-479a-94bd-735e41e42275",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C28",
+      "claim": "The recombinant human ALYREF protein was shown to interact with the CBC in RNase-treated nuclear extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "The recombinant human ALYREF protein was shown to interact with the CBC in RNase-treated nuclear extracts (Cheng et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c0cbb207-b855-48c3-87ac-795bda8c7ca8",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C29",
+      "claim": "The addition of glutamic acid and arginine to the buffer can increase protein solubility and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "The addition of glutamic acid and arginine to the buffer can increase protein solubility and stability (Golovanov et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "8146d774-276c-4714-b917-77430c15cce5",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C30",
+      "claim": "GST pull-down assays showed that ALYREF directly interacts with the CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "GST pull-down assays showed that ALYREF directly interacts with the CBC (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c5f9a1d7-f161-4633-8d66-34113cee451d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C31",
+      "claim": "Mouse ALYREF2 (mALYREF2, residues 1\u2013155) exhibited better solubility than the ALYREF construct.",
+      "claim_type": "EXPLICIT",
+      "source": "To obtain an untagged ALYREF protein amenable for structural studies, we tested the solubility of several ALYREF orthologs and found that mouse ALYREF2 (mALYREF2, residues 1\u2013155) exhibited better solubility than the ALYREF construct utilized above.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "311a4577-96fc-42d4-a4df-a56d30f2b6ef",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C32",
+      "claim": "The conserved UBM motifs, the WxHD motif, and the RRM domain are nearly identical between ALYREF and mALYREF2.",
+      "claim_type": "EXPLICIT",
+      "source": "The conserved UBM motifs, the WxHD motif, and the RRM domain are nearly identical between ALYREF and mALYREF2 (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by sequence alignment data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "798cb3d0-3b91-4847-8d65-9b384130cef4",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C33",
+      "claim": "mALYREF2 directly interacts with the CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, like ALYREF, mALYREF2 directly interacts with the CBC (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "e723e0cf-875d-4ef5-8cbf-da87e4cba1ed",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C34",
+      "claim": "The electron density of the cap analog is clearly visible bound to NCBP2.",
+      "claim_type": "EXPLICIT",
+      "source": "The electron density of the cap analog is clearly visible bound to NCBP2 (Figure 2\u2014figure supplement 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the cryo-EM density map shown in Figure 2\u2014figure supplement 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "395e435f-e0e7-4121-8443-829dcd9b595c",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C35",
+      "claim": "The cap analog induces significant rearrangements in both the N-terminal extension and the C-terminal tail of NCBP2.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to unliganded CBC, the cap analog induces significant rearrangements in both the N-terminal extension and the C-terminal tail of NCBP2 (Figure 2B) to form critical interactions.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "ced8ef75-0611-4120-89f7-92d37b5e3219",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C36",
+      "claim": "The N-terminal extension (residues 16\u201328) of NCBP2 swings toward the central globular domain of NCBP2 and positions the Y20 residue to sandwich the cap analog with Y43 of NCBP2.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, the N-terminal extension (residues 16\u201328) swings toward the central globular domain of NCBP2 and positions the Y20 residue to sandwich the cap analog with Y43 of NCBP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "600dcfa7-4e4c-4aa9-b7e1-e6d584ebaf08",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C37",
+      "claim": "The cryo-EM structure of the CBC resembles the previously reported crystal structures of the liganded CBC, with RMSD of 0.81 \u00c5 and 0.71 \u00c5 for NCBP1 and NCBP2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, the cryo-EM structure of the CBC determined here resembles the previously reported crystal structures of the liganded CBC, with root mean squared deviation (RMSD) of 0.81 \u00c5 and 0.71 \u00c5 for NCBP1 and NCBP2, respectively (Calero et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural comparison with previously published structures.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "691a3bfd-0f0b-4140-bf6e-8d360d0e0c61",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C38",
+      "claim": "The RRM domain of mALYREF2 binds to both NCBP1 and NCBP2 subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure shows that the RRM domain of mALYREF2 binds to both NCBP1 and NCBP2 subunits (Figure 2C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "85e827a0-50a6-47f7-b012-11002e6155c3",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C39",
+      "claim": "The N-terminal region of mALYREF2 (residues 1\u201373) does not show traceable density and is possibly disordered.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal region of mALYREF2 (residues 1\u201373) does not show traceable density and is possibly disordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the absence of electron density in the cryo-EM map.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "4fb123e0-38bc-4d3b-9346-35f2f8015dbd",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C40",
+      "claim": "mALYREF binding does not induce a significant overall conformational change in CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "mALRYEF binding does not induce a significant overall conformational change in CBC (Figure 2D, Figure 2\u2014figure supplement 5D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 2D and Figure 2\u2014figure supplement 5D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "012b98da-e4d0-4af1-81aa-be6a20d0dc16",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C41",
+      "claim": "Comparing CBC and CBC-mALYREF2, NCBP1 and NCBP2 have an RMSD of 0.32 \u00c5 and 0.30 \u00c5, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Comparing CBC and CBC-mALYREF2, NCBP1 and NCBP2 have an RMSD of 0.32 \u00c5 and 0.30 \u00c5, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "3fdb3bf6-0475-4097-94fc-c9fc86a7b81a",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C42",
+      "claim": "An NCBP1 loop formed by residues 38\u201345 becomes more ordered upon mALYREF2 binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Locally, an NCBP1 loop in proximity to mALYREF2, formed by residues 38\u201345, becomes more ordered.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "952a44c3-e363-4066-9115-8aeda2a6dcdf",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C43",
+      "claim": "The interfaces between mALYREF2 and the CBC involve 16, 18, and 6 residues of mALYREF2, NCBP1, and NCBP2, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "The interfaces between mALYREF2 and the CBC involve 16, 18, and 6 residues of mALYREF2, NCBP1, and NCBP2, respectively (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "9faad3f1-d35c-418c-be5f-698b08fa7694",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C44",
+      "claim": "The RRM domain of mALYREF2 assumes a canonical \u03b21\u03b11\u03b22\u03b23\u03b12\u03b24 topology.",
+      "claim_type": "EXPLICIT",
+      "source": "The RRM domain of mALYREF2 assumes a canonical \u03b21\u03b11\u03b22\u03b23\u03b12\u03b24 topology (Figure 3A), forming an \u03b1-helical surface and a \u03b2-sheet surface.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "044dcab8-5628-49d1-af52-25b0f6fd39df",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C45",
+      "claim": "E97 of mALYREF2 forms salt bridges with K330 and K381 of NCBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, E97 forms salt bridges with K330 and K381 of NCBP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "496e650a-01d1-4eb7-9249-4491824d3ae8",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C46",
+      "claim": "Y135 on the \u03b12 helix of mALYREF2 makes a hydrogen bond with K330 of NCBP1.",
+      "claim_type": "EXPLICIT",
+      "source": "Y135 on the \u03b12 helix of mALYREF2 makes a hydrogen bond with K330 of NCBP1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "cb9056c8-8fe8-4d36-ac1b-f60f62443455",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C47",
+      "claim": "V138, P139, and L140 of mALYREF2 bind to a hydrophobic pocket on NCBP1 formed by A334, V337, and L382.",
+      "claim_type": "EXPLICIT",
+      "source": "V138, P139, and L140 of mALYREF2 bind to a hydrophobic pocket on NCBP1 formed by A334, V337, and L382.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "a49897ef-9277-4eaa-baa3-11fb2e56a5a8",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C48",
+      "claim": "The interface between mALYREF2 and NCBP2 is near the m7G binding pocket.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface between mALYREF2 and NCBP2 is near the m7G binding pocket (Figure 3C, Figure 3\u2014figure supplement 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "66706a09-05fe-4321-b2ae-1dc48de557f3",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C49",
+      "claim": "The \u03b12 helix of mALYREF2 contacts S13 and Y14 in the N-terminal extension of NCBP2.",
+      "claim_type": "EXPLICIT",
+      "source": "The \u03b12 helix of mALYREF2 contacts S13 and Y14 in the N-terminal extension of NCBP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "f85ef7ed-ea70-41d9-9c2a-b0cbfe6a6bfe",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C50",
+      "claim": "S13 and Y14 of NCBP2 directly interact with NCBP1 and are thought to enable the hinged motion of the N-terminal extension upon binding to the cap.",
+      "claim_type": "EXPLICIT",
+      "source": "S13 and Y14 also directly interact with NCBP1 and are thought to enable the hinged motion of the N-terminal extension (residues 16\u201328) upon binding to the cap (Mazza et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature and structural data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "a542f342-d36b-4538-ae6a-ed592e5496b1",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C51",
+      "claim": "The \u03b11 helix of mALYREF2 is in proximity to the R105 and I110 residues of NCBP2.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, the \u03b11 helix of mALYREF2 is in proximity to the R105 and I110 residues of NCBP2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "56bebf61-5ace-4f1a-8f85-f46f4fd4c0b5",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C52",
+      "claim": "NCBP2 exhibits a positively charged groove extending from the cap binding site, which is suggested to be an RNA binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "NCBP2 exhibits a positively charged groove extending from the cap binding site, which is suggested to be an RNA binding site (Calero et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "dd7b4242-d245-422a-8aac-e3f1695ba80b",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C53",
+      "claim": "Upon mALYREF2 binding, the positively charged groove on NCBP2 is buried.",
+      "claim_type": "EXPLICIT",
+      "source": "Upon mALYREF2 binding, this groove is buried.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "ed99e8a8-a699-4657-b97d-e79dbc56fe0f",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C54",
+      "claim": "mALYREF2 features a positively charged surface near the m7G site.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, mALYREF2 features a positively charged surface near the m7G site (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "102d251d-635d-4571-b697-ba08bc12a1b2",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C55",
+      "claim": "The positively charged surface on mALYREF2 could serve as an RNA binding site for the nucleotides following the cap.",
+      "claim_type": "EXPLICIT",
+      "source": "Conceivably, this positively charged surface on mALYREF2 could serve as an RNA binding site for the nucleotides following the cap.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the structural features observed.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "edd6fc75-f44e-4934-a4c3-729c1e6ef822",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C56",
+      "claim": "The RRM domain of ALYREF directly interacts with the CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the CBC-ALYREF structure, we found that the RRM domain of ALYREF directly interacts with the CBC, albeit with weaker interaction compared to ALYREF (residues 1\u2013183) (Figures 1B and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figures 1B and 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c674dd73-048c-4a9c-80a0-1f56eb704a47",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C57",
+      "claim": "The RRM domain of ALYREF has weaker interaction with the CBC compared to ALYREF (residues 1\u2013183).",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the CBC-ALYREF structure, we found that the RRM domain of ALYREF directly interacts with the CBC, albeit with weaker interaction compared to ALYREF (residues 1\u2013183) (Figures 1B and 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figures 1B and 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "5caf3aaf-8520-4947-83a8-09d7e96138a0",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C58",
+      "claim": "The WxHD motif (residues 87\u201390) is localized in the N-terminal region of ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "The difference likely results from the WxHD motif (residues 87\u201390) localized in the N-terminal region of ALYREF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the structural and sequence information.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "3d8922e0-00ff-432c-8f2e-0e027ae28a6f",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C59",
+      "claim": "Mutation of the WxHD motif reduces ALYREF's interaction with the CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "Evidence suggests that mutation of the WxHD motif reduces ALYREF's interaction with the CBC (Gromadzka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "a10f36bb-944b-43df-b80f-be1920b3db2c",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C60",
+      "claim": "The WxHD motif may represent a second binding site for the CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "The WxHD motif may represent a second binding site for the CBC that remains to be characterized.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "5391a537-db1a-4030-84b4-bada9baaaa09",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C61",
+      "claim": "ALYREF-mut-1 and mut-2 show reduced binding to the CBC compared to the wild type protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, compared to the wild type protein, both ALYREF-mut-1 and mut-2 show reduced binding to the CBC (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "d87b2bc1-ed48-429a-8385-8a82227cf4ee",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C62",
+      "claim": "The interaction between ALYREF and the CBC mainly involves the NCBP1 subunit.",
+      "claim_type": "EXPLICIT",
+      "source": "The CBC-mALYREF2 structure reveals that the interaction between ALYREF and the CBC mainly involves the NCBP1 subunit (Figure 3B and C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by the structural data shown in Figure 3B and C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "b3683178-ab68-4672-89de-ab28b775fb34",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C63",
+      "claim": "NCBP1 can be efficiently pulled down by GST-ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "NCBP1 can be efficiently pulled down by GST-ALYREF, whereas NCBP2 did not show detectable interaction (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c61c003f-b3e2-4c3d-a2cc-b706bd1f75d4",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C64",
+      "claim": "NCBP2 did not show detectable interaction with GST-ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "NCBP1 can be efficiently pulled down by GST-ALYREF, whereas NCBP2 did not show detectable interaction (Figure 4B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly supported by experimental data shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "b41f5686-c30b-4f65-83e8-af0c84745933",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C65",
+      "claim": "NCBP1 is the major subunit of the CBC to interact with ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "These results are consistent with the structural observations and indicate that NCBP1 is the major subunit of the CBC to interact with ALYREF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural and biochemical data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c7e2eb87-d3bf-4b27-8354-22f92ff6cf80",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C66",
+      "claim": "ALYREF recruits the mRNP export machinery TREX complex to the 5\u2032 end of mRNA through direct interactions with both the CBC and TREX.",
+      "claim_type": "EXPLICIT",
+      "source": "ALYREF recruits the mRNP export machinery TREX complex to the 5\u2032 end of mRNA through direct interactions with both the CBC and TREX (Cheng et al., 2006; Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "03f45f30-56e5-4f4d-bea4-3d949491f552",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C67",
+      "claim": "The UBMs of ALYREF directly interact with the DDX39B component of the TREX complex.",
+      "claim_type": "EXPLICIT",
+      "source": "The UBMs of ALYREF directly interact with the DDX39B component of the TREX complex (Ren et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "58eb4b95-6bdc-4d89-bdcb-5a727fb79938",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C68",
+      "claim": "The N-terminal UBM of ALYREF is likely exposed and available to interact with DDX39B.",
+      "claim_type": "EXPLICIT",
+      "source": "The N-terminal UBM is included in the ALYREF construct used for our cryo-EM studies but did not show visible electron density. Thus, this UBM is likely exposed and available to interact with DDX39B, which further connects to the entire TREX complex (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the absence of electron density in the cryo-EM map.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "281268ac-9138-4f44-b1c1-0198185462d1",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C69",
+      "claim": "ALYREF, DDX39B, THOC1, and THOC2 are present in NCBP1 immunoprecipitations from RNase-treated HeLa cell nuclear extracts.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, ALYREF, DDX39B, THOC1, and THOC2 are present in NCBP1 immunoprecipitations from RNase-treated HeLa cell nuclear extracts (Cheng et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "d9952bf3-2ebc-4cc9-9a08-8d626d0c29fe",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C70",
+      "claim": "In yeast, mutually exclusive interactions were shown between Yra1 with Sub2 and the NXF1-NXT1 ortholog Mex67-Mtr2.",
+      "claim_type": "EXPLICIT",
+      "source": "In yeast, mutually exclusive interactions were shown between Yra1 with Sub2 and the NXF1-NXT1 ortholog Mex67-Mtr2 (Str\u00e4sser et al., 2002).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "61538fbf-87de-49fb-b00a-91fd0724b546",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C71",
+      "claim": "The ALYREF-dependent NXF1-NXT1 loading on mRNA likely occurs after DDX39B dissociates from ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "So, the ALYREF-dependent NXF1-NXT1 loading on mRNA likely occurs after DDX39B dissociates from ALYREF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the mutually exclusive interactions observed in yeast.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "b75f3c1a-613b-4521-bb7f-6ffb3202d891",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C72",
+      "claim": "The CBC could function as a landing pad for ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "The CBC could also function as a landing pad for ALYREF as previously proposed (Viphakone et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "ab5777e3-d7be-4bc8-8948-b73a33e55c9c",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C73",
+      "claim": "After recruitment to the 5\u2032 end of mRNA by the CBC, ALYREF could transfer away from the 5\u2032 end to other sites enriched with export factors.",
+      "claim_type": "EXPLICIT",
+      "source": "After recruitment to the 5\u2032 end of mRNA by the CBC, ALYREF could then transfer away from the 5\u2032 end, to other sites enriched with export factors and participate in different complexes located along the mRNA.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the structural and functional data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "7fe16067-12e4-4e03-9ada-925aee4f8899",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C74",
+      "claim": "The complex of ALYREF/DDX39B/SARNP facilitates high-order mRNP assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the ALYREF-NXF1-NXT1 complex, some other ALYREF containing complexes could exist on the same mRNP, such as the complex of ALYREF/DDX39B/SARNP, which facilitates high-order mRNP assembly (Dufu et al., 2010; Xie et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "674ec89b-8b51-4540-9806-72158a9f903c",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C75",
+      "claim": "HSV-1 ICP27 and HVS ORF57 hijack the host mRNA export pathway through interactions with ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "HSV-1 ICP27 and HVS ORF57 hijack the host mRNA export pathway through interactions with ALYREF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "de2782c6-84b1-4017-a976-d6c994d7d9dc",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C76",
+      "claim": "The RRM domain of ALYREF is targeted by both HSV-1 ICP27 and HVS ORF57 with overlapping interfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The RRM domain of ALYREF is targeted by both HSV-1 ICP27 and HVS ORF57 with overlapping interfaces (Figure 5B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 5B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "78812502-268d-47d8-a7dd-817c1217a62f",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C77",
+      "claim": "The interface between ALYREF's RRM domain with the CBC is not compatible with the ICP27/ORF57-ALYREF interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural comparison between CBC-ALYREF, ALYREF-ICP27, and ALYREF-ORF57 reveals that the interface between ALYREF's RRM domain with the CBC is not compatible with the ICP27/ORF57-ALYREF interactions (Figure 5B, Figure 5\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 5B and Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "789e5520-48b5-4495-9d8a-bd4f445008b6",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C78",
+      "claim": "The ORF57 ortholog from KSHV can form a complex with ALYREF and the CBC in vivo.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, in vivo data show that the ORF57 ortholog from Kaposi's Sarcoma-Associated Herpesvirus (KSHV) can still form a complex with ALYREF and the CBC (Boyne et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "527cd28b-f1cd-494c-95ba-7d1a9fd1026d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C79",
+      "claim": "ALYREF can use the WxHD motif to interact with the CBC even when the RRM domain interface is disrupted by ORF57.",
+      "claim_type": "EXPLICIT",
+      "source": "So, it is likely that although ALYREF's RRM domain interface with the CBC could be disrupted by ORF57, ALYREF can still use the WxHD motif to interact with the CBC (Figure 5C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the structural and in vivo data.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "cc941ec2-2fe7-49eb-9e98-68491e47c7db",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C80",
+      "claim": "A virus can hijack the host pathway while simultaneously disrupting host interactions and processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Using this strategy, a virus can hijack the host pathway while simultaneously disrupting host interactions and processes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural and functional data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "53912072-c7b6-42de-8425-a80e470706dd",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C81",
+      "claim": "The CBC, ALYREF, ICP27, and ORF57 are all RNA binding proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "It should also be noted that the CBC, ALYREF, ICP27, and ORF57 are all RNA binding proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c5e65df9-6640-43e6-ac25-a1350a30b26f",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C82",
+      "claim": "NXF1-NXT1 is targeted by influenza A virus NS1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "NXF1-NXT1 is targeted by influenza A virus NS1 protein (Zhang et al., 2019b) and SARS-CoV-2 Nsp1 protein (Zhang et al., 2021; Mei et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "630c0152-67ed-44df-b07c-03840fd70928",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C83",
+      "claim": "NXF1-NXT1 is targeted by SARS-CoV-2 Nsp1 protein.",
+      "claim_type": "EXPLICIT",
+      "source": "NXF1-NXT1 is targeted by influenza A virus NS1 protein (Zhang et al., 2019b) and SARS-CoV-2 Nsp1 protein (Zhang et al., 2021; Mei et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "ebf00893-51a4-4833-bae6-59d438519bac",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C84",
+      "claim": "DDX39B is targeted by influenza A virus NP protein.",
+      "claim_type": "EXPLICIT",
+      "source": "DDX39B is targeted by influenza A virus NP protein (Momose et al., 2001; Morris et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "df97274f-864c-443a-b79b-43aa96233c70",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C85",
+      "claim": "The CBC promotes splicing through its binding partners, such as SRSF1.",
+      "claim_type": "EXPLICIT",
+      "source": "The CBC promotes splicing through its binding partners, such as SRSF1 (Lenasi et al., 2011; Pabis et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "e8e75614-7748-4794-afcf-4fac51f81403",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C86",
+      "claim": "The detailed molecular interaction between the CBC and SRSF1 is revealed in a human pre-Bact-1 spliceosome structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The detailed molecular interaction between the CBC and SRSF1 is revealed in a human pre-Bact-1 spliceosome structure (Townsend et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "4f3da443-428e-43a0-b51a-28d19c97f1bc",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C87",
+      "claim": "The NCBP2 subunit of the CBC is the major binding site for SRSF1.",
+      "claim_type": "EXPLICIT",
+      "source": "The NCBP2 subunit of the CBC is the major binding site for SRSF1.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by structural data from prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "658b4052-88f3-4f42-8754-d4ee1ff7a83f",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C88",
+      "claim": "Structural overlay of CBC-ALYREF and CBC-SRSF1 shows no significant steric hindrance between SRSF1 and ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "Structural overlay of this structure with the CBC-ALYREF structure shows no significant steric hindrance between SRSF1 and ALYREF (Figure 6A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "f01f9954-065f-463d-b4b2-82a222ea54e8",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C89",
+      "claim": "After splicing, SRSF1 is mainly deposited on exons.",
+      "claim_type": "EXPLICIT",
+      "source": "After splicing, SRSF1 is mainly deposited on exons (Das and Krainer, 2014; Pandit et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "6054e310-54fb-48a2-8892-cb974b4d71d3",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C90",
+      "claim": "SRSF1 functions in mRNA export through interaction with the export receptor NXF1-NXT1.",
+      "claim_type": "EXPLICIT",
+      "source": "SRSF1 functions in mRNA export through interaction with the export receptor NXF1-NXT1 (Huang et al., 2004; Reed and Cheng, 2005; M\u00fcller-McNicoll et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "cb9af21b-818b-4688-975c-56147cd229b2",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C91",
+      "claim": "The interaction between both ALYREF and SR proteins with NXF1-NXT1 is regulated by phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the interaction between both ALYREF and SR proteins with NXF1-NXT1 is regulated by phosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by established scientific knowledge and citations.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "0a6bf7bf-07f9-4d4f-9278-4f5a9dcff527",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C92",
+      "claim": "Only hypophosphorylated SR proteins can bind to NXF1-NXT1 efficiently.",
+      "claim_type": "EXPLICIT",
+      "source": "Only hypophosphorylated SR proteins can bind to NXF1-NXT1 efficiently (Huang et al., 2004; Okada et al., 2008; Xie et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "1c8ca7aa-787c-4cc2-9492-4806d76f92ef",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C93",
+      "claim": "SR proteins, such as Gbp2 and Hrb1 in Saccharomyces cerevisiae, interact directly with the TREX complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, SR proteins, such as Gbp2 and Hrb1 in Saccharomyces cerevisiae, also interact directly with the TREX complex (Xie et al., 2021a; Hurt et al., 2004), suggesting coordinated actions of TREX and SR proteins in mRNA export.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "5a30316e-1eb0-436c-9bf2-47fd7249c9f8",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C94",
+      "claim": "The interaction between the ALYREF RRM domain and the CBC is incompatible with the interface between the ALYREF RRM domain and the EJC subunit MAGOH.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike the CBC and SRSF1 interfaces discussed above, the interaction between the ALYREF RRM domain and the CBC is incompatible with the interface between the ALYREF RRM domain and the EJC subunit MAGOH (Pacheco-Fiallos et al., 2023; Figure 6B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by structural comparison shown in Figure 6B and citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "25383053-7d16-4891-aa67-233c1d9a7065",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C95",
+      "claim": "Mutation of the ALYREF WxHD motif affects its interaction with both the CBC and the EJC subunit eIF4A3.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutation of the ALYREF WxHD motif affects its interaction with both the CBC and the EJC subunit eIF4A3 (Gromadzka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "4e65b184-fda4-4adb-99bd-bb4c0e2b6bf7",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C96",
+      "claim": "The formation of the EJC-ALYREF complex likely happens after ALYREF dissociates from the CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "As both the WxHD motif and the RRM domain of ALYREF are mutually exclusive binding sites for the CBC and the EJC, the formation of the EJC-ALYREF complex likely happens after ALYREF dissociates from the CBC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the structural data showing mutually exclusive binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "f88b01b4-598c-4c65-b11b-07bed1301885",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C97",
+      "claim": "The EJC-ALYREF interaction may be independent of the CBC.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also possible that the EJC-ALYREF interaction is independent of the CBC (Figure 6C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation based on the structural and functional data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "1a52ad91-3367-4572-8b8a-cc730b97dc81",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C98",
+      "claim": "ALYREF can be recruited to RNA by both CBC-dependent and -independent mechanisms.",
+      "claim_type": "EXPLICIT",
+      "source": "This possibility is supported by the report that ALYREF can be recruited to RNA by both CBC-dependent and -independent mechanisms (Nojima et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "67506d25-3b0f-4a34-995f-f5c82401611b",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C99",
+      "claim": "Mutations of CBC residues interfacing with ALYREF, including K330N of NCBP1, R105C of NCBP2, and I110M of NCBP2, are found in several forms of cancers.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations of the CBC residues interfacing with ALYREF, including K330N of NCBP1, R105C of NCBP2, and I110M of NCBP2, are found in several forms of cancers (Tate et al., 2019; Heath et al., 2021; Zhang et al., 2019a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "3010fb2e-124c-488d-9dd6-14b3a390b42d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C100",
+      "claim": "Cancer-associated mutations in CBC could reduce ALYREF interaction and cause dysregulation of mRNA export.",
+      "claim_type": "EXPLICIT",
+      "source": "These mutations could reduce ALYREF interaction and subsequently cause dysregulation of mRNA export and the processes that are coordinated by CBC and ALYREF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the structural data and cancer mutation information.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c0b5d42e-975c-4bd1-9f2d-1c98ff5c48ba",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C101",
+      "claim": "ALYREF has been shown to be frequently upregulated in various cancerous tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, ALYREF has been shown to be frequently upregulated in various cancerous tissues (Dom\u00ednguez-S\u00e1nchez et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "f6519704-dfae-43ab-a967-fb2f956d1851",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C102",
+      "claim": "In humans, recruitment of the mRNA export machinery is mediated by ALYREF in a CBC and EJC-dependent manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In humans, recruitment of the mRNA export machinery is mediated by ALYREF in a CBC and EJC-dependent manner (Cheng et al., 2006; Gromadzka et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "67d957d5-e4b9-45a3-8b5a-32887171adea",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C103",
+      "claim": "Both the CBC and the EJC recognize ALYREF through the WxHD motif and the RRM domain of ALYREF.",
+      "claim_type": "EXPLICIT",
+      "source": "Our work and studies by others (Pacheco-Fiallos et al., 2023; Gromadzka et al., 2016) reveal that both the CBC and the EJC recognize ALYREF through the WxHD motif and the RRM domain of ALYREF.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by the structural data presented in this manuscript and citations to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "ef9369c0-7fbe-4baa-8841-2eec5a468962",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C104",
+      "claim": "The EJC is not present in the budding yeast, S. cerevisiae.",
+      "claim_type": "EXPLICIT",
+      "source": "There are notable differences between yeast and humans regarding ALYREF function: (1) the EJC is not present in the budding yeast, S. cerevisiae, and (2) the yeast ortholog of ALYREF, Yra1, does not contain a WxHD motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "8c608b01-ea16-41e2-92da-5159bb90cd20",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C105",
+      "claim": "The yeast ortholog of ALYREF, Yra1, does not contain a WxHD motif.",
+      "claim_type": "EXPLICIT",
+      "source": "There are notable differences between yeast and humans regarding ALYREF function: (1) the EJC is not present in the budding yeast, S. cerevisiae, and (2) the yeast ortholog of ALYREF, Yra1, does not contain a WxHD motif.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "d528b43b-eeb0-410f-a2ca-d5bd5f067112",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C106",
+      "claim": "Yra1 is enriched at the 5\u2032 region of the mRNA in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a study conducting transcriptome-wide mapping of mRNA biogenesis factors showed that Yra1 is enriched at the 5\u2032 region of the mRNA (Baejen et al., 2014), raising the possibility that Yra1 localization could be mediated by the CBC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "235c9e7d-4237-4c90-b687-d7df7c1efd1d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C107",
+      "claim": "Yra1 localization could be mediated by the CBC in yeast.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, a study conducting transcriptome-wide mapping of mRNA biogenesis factors showed that Yra1 is enriched at the 5\u2032 region of the mRNA (Baejen et al., 2014), raising the possibility that Yra1 localization could be mediated by the CBC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on the observation that Yra1 is enriched at the 5\u2032 region.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "b13668ab-18de-416e-8324-248dbde4a12b",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C108",
+      "claim": "Human NCBP1 was cloned into the pFastBac HTc vector with an N-terminal TEV cleavable His tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Human NCBP1 (UniProt Q09161) was cloned into the pFastBac HTc vector with an N-terminal TEV cleavable His tag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "753fb296-f63e-46f0-9285-962168516802",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C109",
+      "claim": "Human NCBP2 was cloned into a modified pFastBac1 vector containing an N-terminal TEV cleavable GST tag.",
+      "claim_type": "EXPLICIT",
+      "source": "Human NCBP2 (UniProt P52298) was cloned into a modified pFastBac1 vector containing an N-terminal TEV cleavable GST tag.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "5cd9084e-9668-4aac-a615-0f25891bbb73",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C110",
+      "claim": "The NCBP1-NCBP2 complex was expressed in High-Five insect cells by coinfection of recombinant baculoviruses.",
+      "claim_type": "EXPLICIT",
+      "source": "The NCBP1-NCBP2 complex was expressed in High-Five insect cells (Invitrogen) by coinfection of recombinant baculoviruses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "74446096-bc3b-4433-a88a-1320aa170dda",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C111",
+      "claim": "GST-tagged ALYREF constructs were expressed in Escherichia coli Rosetta cells.",
+      "claim_type": "EXPLICIT",
+      "source": "GST-tagged ALYREF (residues 1\u2013183), ALYREF-RRM (residues 103\u2013183), ALYREF-RRM-mut-1 (Y166R/V169R/P170R), ALYREF-RRM-mut-2 (E124R/E128R), and mALYREF2 (residues 1\u2013155) were expressed in Escherichia coli Rosetta cells (Sigma-Aldrich).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "c182ebb6-8ac9-48a6-bf4a-a81fe84a0a38",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C112",
+      "claim": "Cryo-EM data were collected with a Glacios Cryo-TEM equipped with a Falcon 4i detector.",
+      "claim_type": "EXPLICIT",
+      "source": "The data were collected with a Glacios Cryo-TEM (Thermo Fisher) equipped with a Falcon 4i detector (Thermo Fisher).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental methods used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "7fcf5542-7291-4414-84d2-2ca4e0d37ef6",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C113",
+      "claim": "A total of 5858 movies were collected for the CBC-ALYREF complex.",
+      "claim_type": "EXPLICIT",
+      "source": "A total of 5858 movies recorded in EER format were collected with a defocus range from 1.0 \u03bcm to 2.0 \u03bcm.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the experimental data collection.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "e0e9f87f-d491-4d70-9c42-c62199252b4b",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C114",
+      "claim": "Cryo-EM data were processed with cryoSPARC.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-EM data were processed with cryoSPARC (Punjani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data processing methods used.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "3915db6a-9dec-4600-aff8-068af116561a",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C115",
+      "claim": "The final CBC-mALYREF2 model contains NCBP1, NCBP2, the RRM domain of mALYREF2, and the m7G moiety of m7GpppG.",
+      "claim_type": "EXPLICIT",
+      "source": "The final CBC-mALYREF2 model contains NCBP1, NCBP2, the RRM domain of mALYREF2, and the m7G moiety of m7GpppG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the final structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "d4510b87-6c65-4c12-9523-25b6dbc04784",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C116",
+      "claim": "The final CBC model contains NCBP1, NCBP2, and the m7G moiety of m7GpppG.",
+      "claim_type": "EXPLICIT",
+      "source": "The final CBC model contains NCBP1, NCBP2, and the m7G moiety of m7GpppG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the final structural model.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "086a0c5e-27a6-4843-b535-deb6fc3ce649",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C117",
+      "claim": "3DFSC analysis of the CBC-mALYREF2 map indicates a sphericity of 0.946.",
+      "claim_type": "EXPLICIT",
+      "source": "Directional anisotropy of the CBC-mALYREF2 map was assessed using the 3DFSC server (Tan et al., 2017; https://3dfsc.salk.edu), which indicates a sphericity of 0.946.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the 3DFSC analysis of the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "b97e39c4-99ea-4a92-b3bc-3bf4d34beb22",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "claim_id": "C118",
+      "claim": "3DFSC analysis of the CBC map indicates a sphericity of 0.962.",
+      "claim_type": "EXPLICIT",
+      "source": "3DFSC analysis of the CBC map indicates a sphericity of 0.962.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is directly supported by the 3DFSC analysis of the cryo-EM map.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "e8909356-a2eb-43ab-a411-7eb427285efd",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors determined cryo-EM structures of CBC (3.38 \u00c5) and CBC-ALYREF (3.22 \u00c5) complexes, revealing that the RRM domain of ALYREF directly contacts both NCBP1 and NCBP2 subunits of the CBC through specific molecular interfaces involving 16, 18, and 6 residues of mALYREF2, NCBP1, and NCBP2, respectively.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7 establish the resolution of both structures. Claims C8, C38, C43-C51 provide detailed structural characterization of the CBC-ALYREF interface with specific residue interactions. The cryo-EM data quality metrics (C117-C118) and model validation statistics in Table 1 support the structural conclusions. The structures are validated by FSC curves, 3DFSC analysis, and comparison to prior crystal structures (C37).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "92a3489a-510f-41e4-bfa4-53661cfb1176",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Biochemical validation demonstrates that ALYREF directly interacts with the CBC, primarily through the RRM domain binding to NCBP1, with mutations in key interface residues (mut-1 and mut-2) reducing CBC binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30, C33 show direct interaction by GST pull-down. Claims C56-C57, C61 demonstrate that the RRM domain is necessary but not sufficient for full binding strength. Claims C62-C65 establish NCBP1 as the major binding partner through both structural (C62) and biochemical (C63-C64) evidence. The mutagenesis data (C61) validates the structural interface observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "ff85f946-7b0f-4fbb-84f2-771d7fc5d2c4",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Structural comparison reveals that viral proteins HSV-1 ICP27 and HVS ORF57 target the RRM domain of ALYREF with interfaces incompatible with CBC binding, suggesting a mechanism where viruses hijack host mRNA export while disrupting CBC-ALYREF interaction, though ALYREF may retain CBC binding through the WxHD motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C76-C77 are supported by structural overlays shown in Figure 5B and Figure 5\u2014figure supplement 1, demonstrating steric incompatibility. Claim C79 is an inference supported by in vivo data (C78) showing ORF57 can form complexes with both ALYREF and CBC. The proposed dual hijacking/disruption mechanism (C80) is a reasonable inference from the structural data, though direct functional validation is not provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "4d179c3d-453f-4bae-8d7f-e22cc8714fca",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The CBC and EJC recognize ALYREF through mutually exclusive binding sites involving both the WxHD motif and RRM domain, suggesting that EJC-ALYREF complex formation occurs after ALYREF dissociates from the CBC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C94 is supported by structural overlay data in Figure 6B showing incompatible interfaces between CBC-ALYREF and EJC-ALYREF. Claim C95 provides biochemical evidence from prior literature. Claims C96 and C103 synthesize the structural and biochemical data to propose a sequential binding model. The mutually exclusive binding is well-supported by structural data, though the temporal sequence (C96) is an inference rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "b5600e5c-bf4c-453a-9118-f3e9039cfe5a",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Structural overlay shows no steric hindrance between SRSF1 and ALYREF on the CBC, suggesting potential for coordinated function in mRNA export, where SRSF1 deposited on exons after splicing interacts with NXF1-NXT1 in a phosphorylation-regulated manner.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C88 is directly supported by structural overlay in Figure 6A. Claims C89-C93 are supported by citations to prior literature establishing SRSF1 function and regulation. However, the manuscript does not provide direct experimental evidence for the existence or function of a CBC-ALYREF-SRSF1 ternary complex in vivo, which the authors acknowledge requires further study. The structural compatibility is demonstrated, but functional coordination remains speculative.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "6a7d22e4-2243-4d77-b070-2ebf4879ae8d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Mouse ALYREF2 (mALYREF2, residues 1-155) exhibits better solubility than human ALYREF while maintaining nearly identical conserved motifs (UBMs, WxHD, RRM domain), making it suitable for structural studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C31 is supported by experimental observations of protein behavior during purification. Claim C32 is validated by sequence alignment data in Figure 1\u2014figure supplement 1. The functional equivalence is further supported by C33 showing mALYREF2 directly interacts with CBC. This methodological choice is well-justified and validated.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "98391855-7b2e-4373-9997-23c5e472966d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The WxHD motif (residues 87-90) in the N-terminal region of ALYREF may represent a second CBC binding site, as its mutation reduces CBC interaction, though this interface remains structurally uncharacterized.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C58 is factual (sequence location). Claim C59 is supported by citation to prior literature (Gromadzka et al., 2016). However, claim C60 is explicitly speculative ('may represent') and the authors acknowledge this interface 'remains to be characterized.' The N-terminal region including the WxHD motif showed no traceable density in the cryo-EM structure (C39), preventing direct structural validation of this proposed second binding site.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "750bd153-4874-478b-8aa5-6f8bbb4a59ea",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The CBC may function as a landing pad for ALYREF recruitment to the 5' end of mRNA, after which ALYREF could transfer to other sites along the mRNA, with NXF1-NXT1 loading likely occurring after DDX39B dissociation from ALYREF.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C68 is an inference based on absence of electron density. Claim C71 is an inference from yeast data (C70) that may not directly apply to human system. Claims C72-C73 are speculative models supported by citation (C72) but lacking direct experimental validation in this study. While these models are reasonable interpretations of the structural data and prior literature, they represent hypotheses rather than demonstrated mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "786536d0-c52a-4fc9-baa2-ab8d6f6b3c08",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Cancer-associated mutations in CBC residues that interface with ALYREF (K330N in NCBP1, R105C and I110M in NCBP2) could reduce ALYREF interaction and dysregulate mRNA export, while ALYREF is frequently upregulated in cancerous tissues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C99 is supported by citations to cancer databases. Claim C101 is supported by citation to prior literature. However, claim C100 is explicitly speculative ('could reduce') with no experimental validation of the functional effects of these mutations on ALYREF binding or mRNA export. The structural data provides a plausible mechanism, but the causal link to cancer pathogenesis remains undemonstrated and requires future studies as the authors acknowledge.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "75f08884-b550-4768-98f4-bad4ad948e95",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "The positively charged surface on mALYREF2 near the m7G site could serve as an RNA binding site for nucleotides following the cap.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C55 is explicitly speculative ('Conceivably...could serve') based on structural features (C54). While the presence of a positively charged surface is demonstrated, no RNA binding experiments or structural data with RNA are provided to validate this proposed function. This remains a hypothesis requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "d6181af4-5d7d-4f92-ad1a-bc7105958d9d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "In yeast, Yra1 (ALYREF ortholog) is enriched at the 5' region of mRNA, raising the possibility that Yra1 localization could be mediated by the CBC despite lacking a WxHD motif.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C106 is supported by citation to prior transcriptome-wide mapping study. However, claim C107 is explicitly speculative ('raising the possibility') and contradicts the established differences between yeast and human systems (C104-C105). No experimental evidence is provided to support CBC-mediated Yra1 recruitment in yeast. This remains an untested hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "23df8557-8cf0-4be1-a9ca-9f94a365519d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "In eukaryotes, RNA Pol II transcripts are modified with a 5' m7G cap recognized by the CBC (NCBP1/NCBP2), which regulates gene expression at multiple levels including transcription, splicing, and export.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims represent established scientific knowledge about eukaryotic RNA processing and CBC function, supported by the evidence_type of KNOWLEDGE and CITATION. They provide essential background context for the study but are not novel findings from this work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The CBC promotes mRNA export through interaction with ALYREF, which links the TREX complex to the 5' end of mRNA via direct interactions with DDX39B, with this pathway being conserved from yeast to humans.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are primarily supported by citations to prior literature (evidence_type: CITATION) and represent established knowledge about the CBC-ALYREF-TREX pathway. While this provides important context for the structural work, these are not novel findings from this manuscript. The current work provides the first structural basis for these previously known interactions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "ALYREF and associated export machinery are targeted by various viral proteins including herpesvirus ICP27/ORF57, influenza A virus NS1/NP, and SARS-CoV-2 Nsp1, representing a common viral strategy to hijack host mRNA export.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are supported by citations to prior literature (evidence_type: CITATION, KNOWLEDGE) and provide important context for understanding the biological significance of the CBC-ALYREF structure. However, they represent established knowledge rather than novel findings from this study. The novel contribution is the structural explanation for how these viral proteins might disrupt CBC-ALYREF interaction (covered in a separate result).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "84fc07da-7b74-4562-9a86-a05780499acd",
+      "content_id": "3a3ca74b-8cd7-46cf-a91f-da7bc58562fc",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Protein constructs were expressed in insect cells (CBC) or E. coli (ALYREF variants), and cryo-EM data were collected on a Glacios microscope with Falcon 4i detector, yielding 5858 movies processed with cryoSPARC.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims describe the experimental methods used and are directly supported by the Materials and Methods section. They represent standard methodological details necessary for reproducibility but are not scientific findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "efa69fd5-036f-48b1-81e5-cefce99b900b",
+      "content_id": "676ca0b4-3d93-4484-9b2e-c4eb7d72413f",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors determined cryo-EM structures of CBC at 3.38 \u00c5 and CBC-ALYREF at 3.22 \u00c5 resolution, revealing that the RRM domain of ALYREF makes direct contact with both NCBP1 and NCBP2 subunits of the CBC, with detailed molecular interfaces involving specific residues.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly acknowledge the structural determination and interface characterization. Reviewer 1 states 'The structural and biochemical analyses in this study provide convincing evidence to support the major claims.' Reviewers 2 and 3 both confirm 'The authors successfully modeled the N-terminal region and the RRM domain of ALYREF' and 'successfully revealed how NCBP1 and NCBP2 subunits interact with mALYREF.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463",
+      "content_id": "676ca0b4-3d93-4484-9b2e-c4eb7d72413f",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "GST pull-down assays and mutagenesis studies demonstrated that ALYREF directly interacts with the CBC, with NCBP1 being the major binding subunit. Mutations in the RRM domain (mut-1 and mut-2) reduced CBC binding, and the RRM domain alone showed weaker interaction than full-length ALYREF.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly validate the biochemical confirmation of the structural findings. Reviewer 1 notes 'The biochemistry and structural biology are supported by mutagenesis that tests the model in vitro.' Reviewers 2 and 3 state 'Further mutagenesis and pull-down studies provided additional evidence to the observed CBC-ALYREF interface' and 'Their binding interface was then confirmed by biochemical assays.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "b0cef6b4-ccb4-4ae7-ba18-6a2e99da3e76",
+      "content_id": "676ca0b4-3d93-4484-9b2e-c4eb7d72413f",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The CBC structure shows clear electron density for the m7G cap analog bound to NCBP2, inducing conformational rearrangements in NCBP2's N-terminal extension and C-terminal tail. ALYREF binding does not induce significant overall conformational changes in CBC (RMSD 0.32 \u00c5 for NCBP1, 0.30 \u00c5 for NCBP2), though a local NCBP1 loop becomes more ordered.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These structural observations are part of the overall structural characterization that reviewers found convincing. The detailed structural features are not specifically questioned by any reviewer, and are encompassed in the general approval of the 'structural and biochemical analyses' providing 'convincing evidence.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "59def998-6bb2-477a-8b90-7c3a23cb5bd4",
+      "content_id": "676ca0b4-3d93-4484-9b2e-c4eb7d72413f",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors propose that ALYREF recruits the TREX complex to the 5' end of mRNA through interactions with both CBC and DDX39B, with the CBC potentially functioning as a landing pad for ALYREF, which could then transfer to other sites along the mRNA to participate in different export complexes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "All three reviewers note the absence of functional validation for the proposed models. Reviewer 1 states 'they do not perform any studies to test these models in cells or explore the consequences for mRNA export from the nucleus.' Reviewers 2 and 3 both cite 'Absence of functional data to support the proposed models' and note 'The model derived from the cryo-EM structure will likely need to be validated in future functional studies.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "35f334e3-153c-40b6-8956-4756421cce82",
+      "content_id": "676ca0b4-3d93-4484-9b2e-c4eb7d72413f",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Structural comparison reveals that viral proteins HSV-1 ICP27 and HVS ORF57 target the RRM domain of ALYREF with interfaces incompatible with CBC binding. The authors propose that ALYREF can still interact with CBC via the WxHD motif when the RRM interface is disrupted, allowing viruses to hijack the host pathway while disrupting host interactions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the structural comparison is accepted as part of the overall structural work, the mechanistic interpretation about how viruses hijack the pathway lacks functional validation. Reviewers consistently note the absence of cell-based studies to test these models, which would be necessary to confirm the proposed viral hijacking mechanism.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "d3f9b3b7-704a-4bd2-9b75-b4dd7c559e52",
+      "content_id": "676ca0b4-3d93-4484-9b2e-c4eb7d72413f",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Structural overlays show that CBC-ALYREF and CBC-SRSF1 interactions are compatible with no significant steric hindrance, while ALYREF's RRM domain binding to CBC is incompatible with EJC-ALYREF interaction. The authors propose that EJC-ALYREF complex formation occurs after ALYREF dissociates from CBC, or that EJC-ALYREF interaction may be CBC-independent.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The structural comparisons are accepted, but the mechanistic models about sequential binding and CBC-dependent versus independent recruitment lack experimental validation. All reviewers emphasize the need for functional studies in cells to test these coordination models, with Reviewer 1 specifically noting 'they do not perform any analysis in this study that would explore the contributions of these new interactions.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "d3ca5a14-25f0-4e6d-83e1-a4632f464db8",
+      "content_id": "676ca0b4-3d93-4484-9b2e-c4eb7d72413f",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Cancer-associated mutations in CBC residues that interface with ALYREF (K330N in NCBP1, R105C and I110M in NCBP2) could reduce ALYREF interaction and cause dysregulation of mRNA export. ALYREF is frequently upregulated in various cancers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While the identification of cancer-associated mutations at the interface is based on literature citations, the functional consequences are speculative. Reviewers note the absence of functional data to support proposed models, which would include testing whether these mutations actually affect ALYREF binding and mRNA export in cellular contexts.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "1a825bcb-5821-4338-84d5-804aa5ee03b2",
+      "content_id": "676ca0b4-3d93-4484-9b2e-c4eb7d72413f",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Mouse ALYREF2 (mALYREF2, residues 1-155) exhibited better solubility than human ALYREF and was used for structural studies. The conserved UBM motifs, WxHD motif, and RRM domain are nearly identical between ALYREF and mALYREF2.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This methodological choice is implicitly accepted by all reviewers as they discuss the CBC-ALYREF structure without questioning the use of the mouse ortholog. The sequence conservation justifies the use of mALYREF2 as a proxy for human ALYREF in structural studies.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "56dc9b20-cf4f-40ba-ba75-cc2eb5e5c58c",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "5f8de790-5519-4684-bcb7-e97513f2c57d",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "f5fd5d9b-b04c-4b27-9879-6bb57efe29a9",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "e723e0cf-875d-4ef5-8cbf-da87e4cba1ed",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "395e435f-e0e7-4121-8443-829dcd9b595c",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "ced8ef75-0611-4120-89f7-92d37b5e3219",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "600dcfa7-4e4c-4aa9-b7e1-e6d584ebaf08",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "691a3bfd-0f0b-4140-bf6e-8d360d0e0c61",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "4fb123e0-38bc-4d3b-9346-35f2f8015dbd",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "012b98da-e4d0-4af1-81aa-be6a20d0dc16",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "3fdb3bf6-0475-4097-94fc-c9fc86a7b81a",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "952a44c3-e363-4066-9115-8aeda2a6dcdf",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "9faad3f1-d35c-418c-be5f-698b08fa7694",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "044dcab8-5628-49d1-af52-25b0f6fd39df",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "496e650a-01d1-4eb7-9249-4491824d3ae8",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "cb9056c8-8fe8-4d36-ac1b-f60f62443455",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "a49897ef-9277-4eaa-baa3-11fb2e56a5a8",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "66706a09-05fe-4321-b2ae-1dc48de557f3",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "f85ef7ed-ea70-41d9-9c2a-b0cbfe6a6bfe",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "a542f342-d36b-4538-ae6a-ed592e5496b1",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "3915db6a-9dec-4600-aff8-068af116561a",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "d4510b87-6c65-4c12-9523-25b6dbc04784",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "086a0c5e-27a6-4843-b535-deb6fc3ce649",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "b97e39c4-99ea-4a92-b3bc-3bf4d34beb22",
+      "result_id": "e8909356-a2eb-43ab-a411-7eb427285efd"
+    },
+    {
+      "claim_id": "8146d774-276c-4714-b917-77430c15cce5",
+      "result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176"
+    },
+    {
+      "claim_id": "798cb3d0-3b91-4847-8d65-9b384130cef4",
+      "result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176"
+    },
+    {
+      "claim_id": "edd6fc75-f44e-4934-a4c3-729c1e6ef822",
+      "result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176"
+    },
+    {
+      "claim_id": "c674dd73-048c-4a9c-80a0-1f56eb704a47",
+      "result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176"
+    },
+    {
+      "claim_id": "5391a537-db1a-4030-84b4-bada9baaaa09",
+      "result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176"
+    },
+    {
+      "claim_id": "d87b2bc1-ed48-429a-8385-8a82227cf4ee",
+      "result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176"
+    },
+    {
+      "claim_id": "b3683178-ab68-4672-89de-ab28b775fb34",
+      "result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176"
+    },
+    {
+      "claim_id": "c61c003f-b3e2-4c3d-a2cc-b706bd1f75d4",
+      "result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176"
+    },
+    {
+      "claim_id": "b41f5686-c30b-4f65-83e8-af0c84745933",
+      "result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176"
+    },
+    {
+      "claim_id": "de2782c6-84b1-4017-a976-d6c994d7d9dc",
+      "result_id": "ff85f946-7b0f-4fbb-84f2-771d7fc5d2c4"
+    },
+    {
+      "claim_id": "78812502-268d-47d8-a7dd-817c1217a62f",
+      "result_id": "ff85f946-7b0f-4fbb-84f2-771d7fc5d2c4"
+    },
+    {
+      "claim_id": "527cd28b-f1cd-494c-95ba-7d1a9fd1026d",
+      "result_id": "ff85f946-7b0f-4fbb-84f2-771d7fc5d2c4"
+    },
+    {
+      "claim_id": "cc941ec2-2fe7-49eb-9e98-68491e47c7db",
+      "result_id": "ff85f946-7b0f-4fbb-84f2-771d7fc5d2c4"
+    },
+    {
+      "claim_id": "5a30316e-1eb0-436c-9bf2-47fd7249c9f8",
+      "result_id": "4d179c3d-453f-4bae-8d7f-e22cc8714fca"
+    },
+    {
+      "claim_id": "25383053-7d16-4891-aa67-233c1d9a7065",
+      "result_id": "4d179c3d-453f-4bae-8d7f-e22cc8714fca"
+    },
+    {
+      "claim_id": "4e65b184-fda4-4adb-99bd-bb4c0e2b6bf7",
+      "result_id": "4d179c3d-453f-4bae-8d7f-e22cc8714fca"
+    },
+    {
+      "claim_id": "67d957d5-e4b9-45a3-8b5a-32887171adea",
+      "result_id": "4d179c3d-453f-4bae-8d7f-e22cc8714fca"
+    },
+    {
+      "claim_id": "658b4052-88f3-4f42-8754-d4ee1ff7a83f",
+      "result_id": "b5600e5c-bf4c-453a-9118-f3e9039cfe5a"
+    },
+    {
+      "claim_id": "f01f9954-065f-463d-b4b2-82a222ea54e8",
+      "result_id": "b5600e5c-bf4c-453a-9118-f3e9039cfe5a"
+    },
+    {
+      "claim_id": "6054e310-54fb-48a2-8892-cb974b4d71d3",
+      "result_id": "b5600e5c-bf4c-453a-9118-f3e9039cfe5a"
+    },
+    {
+      "claim_id": "cb9af21b-818b-4688-975c-56147cd229b2",
+      "result_id": "b5600e5c-bf4c-453a-9118-f3e9039cfe5a"
+    },
+    {
+      "claim_id": "0a6bf7bf-07f9-4d4f-9278-4f5a9dcff527",
+      "result_id": "b5600e5c-bf4c-453a-9118-f3e9039cfe5a"
+    },
+    {
+      "claim_id": "1c8ca7aa-787c-4cc2-9492-4806d76f92ef",
+      "result_id": "b5600e5c-bf4c-453a-9118-f3e9039cfe5a"
+    },
+    {
+      "claim_id": "c5f9a1d7-f161-4633-8d66-34113cee451d",
+      "result_id": "6a7d22e4-2243-4d77-b070-2ebf4879ae8d"
+    },
+    {
+      "claim_id": "311a4577-96fc-42d4-a4df-a56d30f2b6ef",
+      "result_id": "6a7d22e4-2243-4d77-b070-2ebf4879ae8d"
+    },
+    {
+      "claim_id": "5caf3aaf-8520-4947-83a8-09d7e96138a0",
+      "result_id": "98391855-7b2e-4373-9997-23c5e472966d"
+    },
+    {
+      "claim_id": "3d8922e0-00ff-432c-8f2e-0e027ae28a6f",
+      "result_id": "98391855-7b2e-4373-9997-23c5e472966d"
+    },
+    {
+      "claim_id": "a10f36bb-944b-43df-b80f-be1920b3db2c",
+      "result_id": "98391855-7b2e-4373-9997-23c5e472966d"
+    },
+    {
+      "claim_id": "58eb4b95-6bdc-4d89-bdcb-5a727fb79938",
+      "result_id": "750bd153-4874-478b-8aa5-6f8bbb4a59ea"
+    },
+    {
+      "claim_id": "61538fbf-87de-49fb-b00a-91fd0724b546",
+      "result_id": "750bd153-4874-478b-8aa5-6f8bbb4a59ea"
+    },
+    {
+      "claim_id": "b75f3c1a-613b-4521-bb7f-6ffb3202d891",
+      "result_id": "750bd153-4874-478b-8aa5-6f8bbb4a59ea"
+    },
+    {
+      "claim_id": "ab5777e3-d7be-4bc8-8948-b73a33e55c9c",
+      "result_id": "750bd153-4874-478b-8aa5-6f8bbb4a59ea"
+    },
+    {
+      "claim_id": "67506d25-3b0f-4a34-995f-f5c82401611b",
+      "result_id": "786536d0-c52a-4fc9-baa2-ab8d6f6b3c08"
+    },
+    {
+      "claim_id": "3010fb2e-124c-488d-9dd6-14b3a390b42d",
+      "result_id": "786536d0-c52a-4fc9-baa2-ab8d6f6b3c08"
+    },
+    {
+      "claim_id": "c0b5d42e-975c-4bd1-9f2d-1c98ff5c48ba",
+      "result_id": "786536d0-c52a-4fc9-baa2-ab8d6f6b3c08"
+    },
+    {
+      "claim_id": "102d251d-635d-4571-b697-ba08bc12a1b2",
+      "result_id": "75f08884-b550-4768-98f4-bad4ad948e95"
+    },
+    {
+      "claim_id": "d528b43b-eeb0-410f-a2ca-d5bd5f067112",
+      "result_id": "d6181af4-5d7d-4f92-ad1a-bc7105958d9d"
+    },
+    {
+      "claim_id": "235c9e7d-4237-4c90-b687-d7df7c1efd1d",
+      "result_id": "d6181af4-5d7d-4f92-ad1a-bc7105958d9d"
+    },
+    {
+      "claim_id": "1650f45e-d628-4812-b937-741250e5c705",
+      "result_id": "23df8557-8cf0-4be1-a9ca-9f94a365519d"
+    },
+    {
+      "claim_id": "33f52773-50d1-466e-bf47-84840957b5ef",
+      "result_id": "23df8557-8cf0-4be1-a9ca-9f94a365519d"
+    },
+    {
+      "claim_id": "e880087d-0811-49d4-b56a-902ec6328030",
+      "result_id": "23df8557-8cf0-4be1-a9ca-9f94a365519d"
+    },
+    {
+      "claim_id": "c8a80fa1-84b2-49b0-877a-6f734cdce88d",
+      "result_id": "23df8557-8cf0-4be1-a9ca-9f94a365519d"
+    },
+    {
+      "claim_id": "75966f79-89e9-4c4b-b285-78cbee38de48",
+      "result_id": "23df8557-8cf0-4be1-a9ca-9f94a365519d"
+    },
+    {
+      "claim_id": "a4d0c216-32bf-465c-97c9-28cae2e0600b",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "74d83778-af0b-420c-b396-c1decddf8810",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "4bfa044e-2aae-4c16-869e-500611e1dd3c",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "83aa11ba-0a34-4125-986f-8ed990993eec",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "c888e36e-b34f-4b89-8b50-f49b6639a83b",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "1ab9b2e9-c030-48bc-a336-27f5a2464be3",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "d569f393-67ef-4343-a3a2-780cab088042",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "cc7b2d79-8fe8-41d6-a9de-d51e8f5c44aa",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "2ee1bb11-669f-4d64-ae14-80fb19ad2f86",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "f373951c-0ff6-4e59-a49d-ff96413b3c39",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "c7e2eb87-d3bf-4b27-8354-22f92ff6cf80",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "03f45f30-56e5-4f4d-bea4-3d949491f552",
+      "result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5"
+    },
+    {
+      "claim_id": "6ce5ba1f-752a-4e9d-b097-6c61944d23de",
+      "result_id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d"
+    },
+    {
+      "claim_id": "27008ec8-6c10-483f-9e14-09212afa7df5",
+      "result_id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d"
+    },
+    {
+      "claim_id": "f230900d-84bd-444f-99a3-ab1927596031",
+      "result_id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d"
+    },
+    {
+      "claim_id": "674ec89b-8b51-4540-9806-72158a9f903c",
+      "result_id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d"
+    },
+    {
+      "claim_id": "53912072-c7b6-42de-8425-a80e470706dd",
+      "result_id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d"
+    },
+    {
+      "claim_id": "c5e65df9-6640-43e6-ac25-a1350a30b26f",
+      "result_id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d"
+    },
+    {
+      "claim_id": "630c0152-67ed-44df-b07c-03840fd70928",
+      "result_id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d"
+    },
+    {
+      "claim_id": "ebf00893-51a4-4833-bae6-59d438519bac",
+      "result_id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d"
+    },
+    {
+      "claim_id": "b13668ab-18de-416e-8324-248dbde4a12b",
+      "result_id": "84fc07da-7b74-4562-9a86-a05780499acd"
+    },
+    {
+      "claim_id": "753fb296-f63e-46f0-9285-962168516802",
+      "result_id": "84fc07da-7b74-4562-9a86-a05780499acd"
+    },
+    {
+      "claim_id": "5cd9084e-9668-4aac-a615-0f25891bbb73",
+      "result_id": "84fc07da-7b74-4562-9a86-a05780499acd"
+    },
+    {
+      "claim_id": "74446096-bc3b-4433-a88a-1320aa170dda",
+      "result_id": "84fc07da-7b74-4562-9a86-a05780499acd"
+    },
+    {
+      "claim_id": "c182ebb6-8ac9-48a6-bf4a-a81fe84a0a38",
+      "result_id": "84fc07da-7b74-4562-9a86-a05780499acd"
+    },
+    {
+      "claim_id": "7fcf5542-7291-4414-84d2-2ca4e0d37ef6",
+      "result_id": "84fc07da-7b74-4562-9a86-a05780499acd"
+    },
+    {
+      "claim_id": "e0e9f87f-d491-4d70-9c42-c62199252b4b",
+      "result_id": "84fc07da-7b74-4562-9a86-a05780499acd"
+    },
+    {
+      "claim_id": "56dc9b20-cf4f-40ba-ba75-cc2eb5e5c58c",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "5f8de790-5519-4684-bcb7-e97513f2c57d",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "f5fd5d9b-b04c-4b27-9879-6bb57efe29a9",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "691a3bfd-0f0b-4140-bf6e-8d360d0e0c61",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "952a44c3-e363-4066-9115-8aeda2a6dcdf",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "9faad3f1-d35c-418c-be5f-698b08fa7694",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "044dcab8-5628-49d1-af52-25b0f6fd39df",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "496e650a-01d1-4eb7-9249-4491824d3ae8",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "cb9056c8-8fe8-4d36-ac1b-f60f62443455",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "a49897ef-9277-4eaa-baa3-11fb2e56a5a8",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "66706a09-05fe-4321-b2ae-1dc48de557f3",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "a542f342-d36b-4538-ae6a-ed592e5496b1",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "d87b2bc1-ed48-429a-8385-8a82227cf4ee",
+      "result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b"
+    },
+    {
+      "claim_id": "8146d774-276c-4714-b917-77430c15cce5",
+      "result_id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463"
+    },
+    {
+      "claim_id": "798cb3d0-3b91-4847-8d65-9b384130cef4",
+      "result_id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463"
+    },
+    {
+      "claim_id": "edd6fc75-f44e-4934-a4c3-729c1e6ef822",
+      "result_id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463"
+    },
+    {
+      "claim_id": "c674dd73-048c-4a9c-80a0-1f56eb704a47",
+      "result_id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463"
+    },
+    {
+      "claim_id": "5391a537-db1a-4030-84b4-bada9baaaa09",
+      "result_id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463"
+    },
+    {
+      "claim_id": "b3683178-ab68-4672-89de-ab28b775fb34",
+      "result_id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463"
+    },
+    {
+      "claim_id": "c61c003f-b3e2-4c3d-a2cc-b706bd1f75d4",
+      "result_id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463"
+    },
+    {
+      "claim_id": "b41f5686-c30b-4f65-83e8-af0c84745933",
+      "result_id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463"
+    },
+    {
+      "claim_id": "e723e0cf-875d-4ef5-8cbf-da87e4cba1ed",
+      "result_id": "b0cef6b4-ccb4-4ae7-ba18-6a2e99da3e76"
+    },
+    {
+      "claim_id": "395e435f-e0e7-4121-8443-829dcd9b595c",
+      "result_id": "b0cef6b4-ccb4-4ae7-ba18-6a2e99da3e76"
+    },
+    {
+      "claim_id": "ced8ef75-0611-4120-89f7-92d37b5e3219",
+      "result_id": "b0cef6b4-ccb4-4ae7-ba18-6a2e99da3e76"
+    },
+    {
+      "claim_id": "600dcfa7-4e4c-4aa9-b7e1-e6d584ebaf08",
+      "result_id": "b0cef6b4-ccb4-4ae7-ba18-6a2e99da3e76"
+    },
+    {
+      "claim_id": "4fb123e0-38bc-4d3b-9346-35f2f8015dbd",
+      "result_id": "b0cef6b4-ccb4-4ae7-ba18-6a2e99da3e76"
+    },
+    {
+      "claim_id": "012b98da-e4d0-4af1-81aa-be6a20d0dc16",
+      "result_id": "b0cef6b4-ccb4-4ae7-ba18-6a2e99da3e76"
+    },
+    {
+      "claim_id": "3fdb3bf6-0475-4097-94fc-c9fc86a7b81a",
+      "result_id": "b0cef6b4-ccb4-4ae7-ba18-6a2e99da3e76"
+    },
+    {
+      "claim_id": "c7e2eb87-d3bf-4b27-8354-22f92ff6cf80",
+      "result_id": "59def998-6bb2-477a-8b90-7c3a23cb5bd4"
+    },
+    {
+      "claim_id": "03f45f30-56e5-4f4d-bea4-3d949491f552",
+      "result_id": "59def998-6bb2-477a-8b90-7c3a23cb5bd4"
+    },
+    {
+      "claim_id": "58eb4b95-6bdc-4d89-bdcb-5a727fb79938",
+      "result_id": "59def998-6bb2-477a-8b90-7c3a23cb5bd4"
+    },
+    {
+      "claim_id": "281268ac-9138-4f44-b1c1-0198185462d1",
+      "result_id": "59def998-6bb2-477a-8b90-7c3a23cb5bd4"
+    },
+    {
+      "claim_id": "b75f3c1a-613b-4521-bb7f-6ffb3202d891",
+      "result_id": "59def998-6bb2-477a-8b90-7c3a23cb5bd4"
+    },
+    {
+      "claim_id": "ab5777e3-d7be-4bc8-8948-b73a33e55c9c",
+      "result_id": "59def998-6bb2-477a-8b90-7c3a23cb5bd4"
+    },
+    {
+      "claim_id": "7fe16067-12e4-4e03-9ada-925aee4f8899",
+      "result_id": "59def998-6bb2-477a-8b90-7c3a23cb5bd4"
+    },
+    {
+      "claim_id": "de2782c6-84b1-4017-a976-d6c994d7d9dc",
+      "result_id": "35f334e3-153c-40b6-8956-4756421cce82"
+    },
+    {
+      "claim_id": "78812502-268d-47d8-a7dd-817c1217a62f",
+      "result_id": "35f334e3-153c-40b6-8956-4756421cce82"
+    },
+    {
+      "claim_id": "527cd28b-f1cd-494c-95ba-7d1a9fd1026d",
+      "result_id": "35f334e3-153c-40b6-8956-4756421cce82"
+    },
+    {
+      "claim_id": "cc941ec2-2fe7-49eb-9e98-68491e47c7db",
+      "result_id": "35f334e3-153c-40b6-8956-4756421cce82"
+    },
+    {
+      "claim_id": "658b4052-88f3-4f42-8754-d4ee1ff7a83f",
+      "result_id": "d3f9b3b7-704a-4bd2-9b75-b4dd7c559e52"
+    },
+    {
+      "claim_id": "5a30316e-1eb0-436c-9bf2-47fd7249c9f8",
+      "result_id": "d3f9b3b7-704a-4bd2-9b75-b4dd7c559e52"
+    },
+    {
+      "claim_id": "4e65b184-fda4-4adb-99bd-bb4c0e2b6bf7",
+      "result_id": "d3f9b3b7-704a-4bd2-9b75-b4dd7c559e52"
+    },
+    {
+      "claim_id": "f88b01b4-598c-4c65-b11b-07bed1301885",
+      "result_id": "d3f9b3b7-704a-4bd2-9b75-b4dd7c559e52"
+    },
+    {
+      "claim_id": "1a52ad91-3367-4572-8b8a-cc730b97dc81",
+      "result_id": "d3f9b3b7-704a-4bd2-9b75-b4dd7c559e52"
+    },
+    {
+      "claim_id": "67506d25-3b0f-4a34-995f-f5c82401611b",
+      "result_id": "d3ca5a14-25f0-4e6d-83e1-a4632f464db8"
+    },
+    {
+      "claim_id": "3010fb2e-124c-488d-9dd6-14b3a390b42d",
+      "result_id": "d3ca5a14-25f0-4e6d-83e1-a4632f464db8"
+    },
+    {
+      "claim_id": "c0b5d42e-975c-4bd1-9f2d-1c98ff5c48ba",
+      "result_id": "d3ca5a14-25f0-4e6d-83e1-a4632f464db8"
+    },
+    {
+      "claim_id": "c5f9a1d7-f161-4633-8d66-34113cee451d",
+      "result_id": "1a825bcb-5821-4338-84d5-804aa5ee03b2"
+    },
+    {
+      "claim_id": "311a4577-96fc-42d4-a4df-a56d30f2b6ef",
+      "result_id": "1a825bcb-5821-4338-84d5-804aa5ee03b2"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "e5f6ae89-7343-4fc8-8e60-07bb39805fdb",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "e8909356-a2eb-43ab-a411-7eb427285efd",
+      "peer_result_id": "efa69fd5-036f-48b1-81e5-cefce99b900b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both strongly support the structural determination and interface characterization (C6-C8, C38, C43-C51). OpenEval provides detailed technical validation including cryo-EM metrics (C117-C118), while peer reviewers emphasize the convincing nature of structural and biochemical analyses. OpenEval includes additional claims about data quality and validation that peer reviewers implicitly accept.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "1dea02cb-1805-4c2e-bead-78928905c3f8",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "92a3489a-510f-41e4-bfa4-53661cfb1176",
+      "peer_result_id": "7ffb8c03-d5ca-4cd5-8583-2bcba3128463",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on biochemical validation of CBC-ALYREF interaction (C30, C33, C56-C57, C61, C63-C65). Both recognize the mutagenesis data validates structural observations. OpenEval explicitly notes NCBP1 as major binding partner (C62-C65), while peer reviewers focus on the overall confirmation of the interface through biochemical assays.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "eed216d9-b819-469f-a43f-b3c6cb93fede",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "ff85f946-7b0f-4fbb-84f2-771d7fc5d2c4",
+      "peer_result_id": "35f334e3-153c-40b6-8956-4756421cce82",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address viral hijacking mechanism (C76-C77, C79-C80). OpenEval rates as SUPPORTED based on structural overlays and in vivo data, acknowledging lack of direct functional validation. Peer reviewers rate as UNCERTAIN, emphasizing the absence of cell-based studies to test the proposed viral hijacking mechanism. Key disagreement on sufficiency of structural evidence alone.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "d1f8c0cb-fdbc-4178-bb3b-8bffac2245b1",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "6a7d22e4-2243-4d77-b070-2ebf4879ae8d",
+      "peer_result_id": "1a825bcb-5821-4338-84d5-804aa5ee03b2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on methodological choice to use mouse ALYREF2 (C31-C32). Both support this decision based on sequence conservation and functional equivalence. OpenEval provides detailed justification from purification behavior and sequence alignment, while peer reviewers implicitly accept by not questioning the approach.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "89fdedd2-19c8-40c9-811a-04d812b595c7",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "786536d0-c52a-4fc9-baa2-ab8d6f6b3c08",
+      "peer_result_id": "d3ca5a14-25f0-4e6d-83e1-a4632f464db8",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both rate cancer-associated mutations (C99-C101) as UNCERTAIN. OpenEval notes the speculative nature of functional claims ('could reduce') lacking experimental validation. Peer reviewers similarly emphasize absence of functional data to test whether mutations affect ALYREF binding and mRNA export in cellular contexts. Strong agreement on need for validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "a0d73d79-33eb-494b-a6f7-3ef25c2fae03",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4d179c3d-453f-4bae-8d7f-e22cc8714fca",
+      "peer_result_id": "d3f9b3b7-704a-4bd2-9b75-b4dd7c559e52",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both address EJC-ALYREF incompatibility and sequential binding models (C94, C96). OpenEval rates as SUPPORTED based on structural overlay data, noting temporal sequence is inference. Peer reviewers rate as UNCERTAIN, emphasizing lack of functional studies in cells to test coordination models. Disagreement on whether structural data alone sufficiently supports mechanistic claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "f2d35344-f375-4f5e-a86b-069d7bd8e5fd",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "750bd153-4874-478b-8aa5-6f8bbb4a59ea",
+      "peer_result_id": "59def998-6bb2-477a-8b90-7c3a23cb5bd4",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address flexibility and mechanistic models (C68, C72-C73). OpenEval rates as UNCERTAIN, noting claims are speculative models lacking direct experimental validation. Peer reviewers similarly note absence of functional data to support proposed models. Strong agreement that these represent hypotheses requiring validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "0ccd6d27-23e6-472a-9a0d-025e48771f07",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "b5600e5c-bf4c-453a-9118-f3e9039cfe5a",
+      "peer_result_id": "d3f9b3b7-704a-4bd2-9b75-b4dd7c559e52",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on SRSF1 ternary complex (C88). OpenEval rates as SUPPORTED for structural compatibility but notes functional coordination remains speculative. Peer reviewers include this in broader UNCERTAIN evaluation about sequential binding and coordination models, emphasizing need for functional studies. Both recognize gap between structural and functional evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "6a8ebeda-eebc-4541-b718-373ca041b020",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "e8909356-a2eb-43ab-a411-7eb427285efd",
+      "peer_result_id": "b0cef6b4-ccb4-4ae7-ba18-6a2e99da3e76",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval's comprehensive structural characterization (C34-C37, C40-C42) is encompassed in peer reviewers' general approval of structural analyses. Peer reviewers do not specifically question these detailed structural features, accepting them as part of the convincing structural evidence. Implicit agreement on structural observations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "7116c8e3-2699-4878-aef4-1aad650c1cb2",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "98391855-7b2e-4373-9997-23c5e472966d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates WxHD motif second binding site (C58-C60) as UNCERTAIN due to lack of structural density and explicit speculation. No corresponding peer review evaluation found, though this would likely fall under peer reviewers' general concern about absence of functional validation for proposed models.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "14399b4f-51c0-47c5-853b-21772983caae",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "75f08884-b550-4768-98f4-bad4ad948e95",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates proposed RNA binding function (C55) as UNCERTAIN, noting it is explicitly speculative without experimental validation. No corresponding peer review evaluation found, though this represents the type of untested hypothesis peer reviewers generally flagged as requiring functional studies.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "96def59b-cab2-4afc-90d3-f43d5a7f1265",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "d6181af4-5d7d-4f92-ad1a-bc7105958d9d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates yeast Yra1 recruitment speculation (C106-C107) as UNCERTAIN, noting it contradicts established differences between yeast and human systems without experimental support. No corresponding peer review evaluation found for this specific evolutionary comparison.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "52f4171c-8bcf-418c-a19c-7046db8657cd",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "23df8557-8cf0-4be1-a9ca-9f94a365519d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies background knowledge claims (C1-C3, C9-C10) as SUPPORTED but notes they represent established context rather than novel findings. Peer reviewers do not separately evaluate background knowledge claims, focusing instead on novel contributions and their validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "cc92522e-aed4-4016-8f46-713b349ea24b",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "fc75ca09-ee5b-4c32-bb62-4161fe4d35b5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies literature-based context claims (C4-C5, C13-C20, C66-C67) as SUPPORTED but distinguishes them from novel findings. Peer reviewers do not separately evaluate these contextual claims, though C66-C67 appear in peer R4's UNCERTAIN evaluation as part of mechanistic models requiring validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "4bfb8eef-94ae-4cdd-bfaa-8b9361190999",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "6d67cd9d-292f-4d73-bc18-fb893a05e16d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies viral protein literature claims (C21-C23, C75, C81-C84) as SUPPORTED context but not novel findings. Peer reviewers do not separately evaluate these background claims, focusing instead on the novel structural explanations for viral disruption mechanisms.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    },
+    {
+      "id": "bd6dd18c-be72-44c5-a279-c88f1186573a",
+      "submission_id": "12b00b5c-6a11-4a97-94a6-7a5a4dd1db8d",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "84fc07da-7b74-4562-9a86-a05780499acd",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval identifies methodological details (C108-C114) as SUPPORTED standard procedures. Peer reviewers do not separately evaluate methods claims, implicitly accepting them as adequate for the structural determination they validated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T23:06:59.130760Z"
+    }
+  ]
+}

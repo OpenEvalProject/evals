@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C14",
+      "C20",
+      "C67",
+      "C68"
+    ],
+    "result": "The HMM-Fisher kernel approach accurately and reliably predicts individual traits from brain dynamics by preserving the mathematical structure of the underlying Hidden Markov Model through a mathematically principled construction that leverages time-varying amplitude and functional connectivity information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C8, C14, C20, C67-C68 collectively establish the core methodological contribution and its validation. The approach is described as mathematically principled (C6, C14), empirically validated as accurate and reliable in fMRI data (C7, C20, C67), and the mechanism by which it works is clearly articulated (C8, C68). The convergence of theoretical foundation, methodological description, and empirical validation provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C69"
+    ],
+    "result": "The linear Fisher kernel demonstrates higher prediction accuracy than most alternative methods, significantly outperforming the linear na\u00efve kernel and Selected Edges method, though many comparisons with other methods were not statistically significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C37 and C69 provide detailed statistical comparisons showing the linear Fisher kernel's performance. While the kernel shows the highest average accuracy among time-varying methods (C28, C69), only two comparisons reach statistical significance (C29: vs. na\u00efve kernel, p=0.031; C34: vs. Selected Edges, p=0.031). The lack of significance in most comparisons (C30, C32, C33, C35, C36) is acknowledged by the authors (C69), providing an honest assessment of the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C70"
+    ],
+    "result": "The linear Fisher kernel demonstrates superior reliability compared to other methods, with 0% risk of large errors and the most robust performance across cross-validation iterations among time-varying methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C50 and C70 provide comprehensive reliability assessment. The 0% risk of large errors for the linear Fisher kernel (C44, C45) is a concrete, quantitative finding. Robustness comparisons show the linear Fisher kernel as most robust among time-varying methods (C48, C49), with significant advantages over time-averaged KL divergence and Selected Edges methods (C50). The Gaussian na\u00efve normalised kernel's poor performance (C46: 1.229% risk of large errors) provides a clear contrast.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C78"
+    ],
+    "result": "The Fisher kernel is most sensitive to differences in state parameters (amplitude and functional connectivity patterns) rather than transition probabilities, as demonstrated through both simulations and real data analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C62 and C78 provide converging evidence from simulations and real data. Simulations show perfect recovery of state mean differences (C51, C52) but poor recovery of transition probability differences (C53, C54), leading to the interpretation in C55. When state parameters are excluded, the Fisher kernel can recover transition differences (C56, C57). Real data analysis confirms state parameters drive predictions (C58, C59), with this effect not explained by parameter count differences (C60). The consistency across simulation and real data strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C80"
+    ],
+    "result": "Training the HMM on all subjects versus only training subjects has no significant effect on prediction accuracy in the real dataset (N=1001), but simulations reveal that the Fisher kernel's performance degrades when training and test sets are highly different due to its reference-based feature definition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C66 and C80 address train-test separation effects. Real data shows no significant effects (C63, C64), but simulations reveal a principled limitation: the Fisher kernel defines features relative to a group average (C65), causing performance degradation with increasing group differences when training separately (C66, C80). This is an honest assessment of a methodological consideration with practical implications for heterogeneous datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C71"
+    ],
+    "result": "Working in Riemannian space improves prediction accuracy for both time-varying (HMM-based) and time-averaged functional connectivity methods, indicating that respecting the geometry of parameter spaces is important for predictive modeling in neuroscience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C71 establish a general principle supported by statistical evidence. The significant improvement for time-averaged methods using tangent space embedding (C37: Ridge regression in Riemannian space vs. Ridge regression, p=0.0313) parallels the improvement seen in HMM-based methods. This convergence across different feature types (C71) supports the broader principle about the importance of geometric considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "The Fisher kernel approach significantly outperforms methods that do not account for model structure and methods based on time-averaged functional connectivity that ignore brain dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C21 and C22 make broad statements about significant outperformance, but the detailed results (C29-C36) show that only 2 of many comparisons reached statistical significance. While the Fisher kernel shows numerically higher accuracy in most comparisons, the lack of statistical significance in most cases makes the claim of 'significant outperformance' overstated. The claims appear to be summary statements that don't fully align with the nuanced statistical results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C75"
+    ],
+    "result": "The Fisher kernel maintains superior performance when using less data per subject (single session) or when modeling only covariance-based states, though overall accuracies decrease with less data, indicating that more timepoints enable better individual characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 and C75 demonstrate robustness of the main findings across different data configurations. The Fisher kernel's relative advantage persists in alternative analyses (C39, C41), while the overall accuracy decrease with less data (C40, C75) is a reasonable finding that more data improves characterization. These supplementary analyses strengthen confidence in the main results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Gaussian versions of the kernels are more error-prone, less robust to training set changes, and computationally more expensive than linear versions, making them less practical despite potentially higher accuracy in some cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 summarize findings about Gaussian kernels supported by detailed results (e.g., C46 showing high error risk for Gaussian na\u00efve normalised kernel). The computational expense claim (C77) is reasonable given the additional hyperparameter \u03c4 requiring cross-validation. This provides practical guidance for method selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38"
+    ],
+    "result": "Non-kernel-based Euclidean time-averaged FC models (Ridge regression and Selected Edges) make predictions in a restricted range close to variable means, leading to weak relationships but smaller errors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C38 describes an observation about prediction behavior, with reference to Figure 2\u2014figure supplement 1 providing supporting evidence. This represents a methodological insight about how different approaches behave, explaining why correlation coefficients and error metrics can give different impressions of performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Among the behavioral variables tested, age was best predicted, followed by language-related cognitive items (PicVocab, ReadEng).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 reports a straightforward empirical finding about which variables were most predictable. This is a descriptive result supported by the data analysis, providing context about the differential predictability of various traits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study used resting-state fMRI data from 1001 subjects from the Human Connectome Project, with each subject having four scanning sessions (4800 timepoints total), and estimated group-level HMMs followed by subject-specific dual estimation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C25 and C92-C96 describe the dataset and basic methodological approach. These are straightforward descriptions of the data source, sample characteristics, and HMM estimation procedure, well-documented with appropriate citations (C92) and clear specification of data usage (C96).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "A data-driven 50-parcel functional parcellation was estimated using multi-session spatial ICA, chosen because dynamic FC changes are better detected in this parcellation, and timecourses were normalized to prevent amplitude/variance differences from driving the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 describe preprocessing choices with clear rationale. The parcellation choice is justified by citation (C98), and the normalization step (C99) has a clear methodological purpose. The acknowledgment of potential data leakage in C97 with citation to work showing minimal effects demonstrates methodological transparency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The study used kernel ridge regression with nested 10-fold cross-validation repeated 100 times, accounting for family structure, regressing out confounds within CV, and using the same partitions across all methods for fair comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C132 describe the prediction and validation framework with appropriate methodological rigor. Family structure consideration (C129), proper confound handling (C130), repeated CV for robustness assessment (C131), and consistent partitions across methods (C132) all represent sound methodological practices with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The study defined reliability as encompassing both absence of excessive errors (0% risk of NMAXAE >10) and robustness to training set variations (low standard deviation across CV iterations), using appropriate statistical tests with multiple comparison correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C134-C140 define the evaluation criteria and statistical approach. The two-component reliability definition (C134) is well-justified, the normalization of maximum errors (C135-C137) enables fair comparison across variables, robustness quantification (C138) is appropriate, and statistical testing (C139, C140) follows established methods with proper multiple comparison correction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C111",
+      "C112",
+      "C113",
+      "C115"
+    ],
+    "result": "The na\u00efve kernels ignore the Riemannian manifold structure by treating HMM parameters as Euclidean, failing to account for relationships between parameters and treating changes in different parameter types (e.g., transition probabilities vs. covariance entries) as equivalent despite their different scales and meanings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, and C111-C113, C115 describe the conceptual and mathematical limitations of na\u00efve kernels. These are accurate characterizations of what these kernels do (or fail to do) geometrically, with C113 providing a concrete example illustrating the problem. This establishes the motivation for the Fisher kernel approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "The Fisher kernel preserves the structure of the HMM by defining similarity between subjects based on Fisher scores (gradients of log-likelihood), where subjects are similar if the group-level model would need to change in similar directions to better fit their data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C117, C119-C120 describe the Fisher kernel's mathematical foundation with appropriate citations (C116). The explanation of how similarity is defined (C117, C119) and the mathematical definition of Fisher score (C120) are accurate descriptions of this established method applied to HMMs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C19"
+    ],
+    "result": "Current approaches to predicting individual traits from brain signals typically use structural or time-averaged measures, missing the temporal dynamics of brain activity, partly because dynamic patterns require complex high-dimensional models that are difficult to use for prediction, and reliability is often not considered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C10, and C19 establish the motivation and context for the study. These represent reasonable characterizations of the field's state, with C10 supported by multiple citations. The identification of gaps (C3, C4, C19) provides clear motivation for the proposed approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "The method has broad potential applications: it can be applied to other neuroimaging modalities (MEG/EEG), other kernel-based classifiers, other probabilistic generative models, combined with other data types through stacking or Multi Kernel Learning, and may benefit clinical applications, though generalization to other datasets remains to be demonstrated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C72-C74 and C82-C87 describe potential applications and future directions. While the flexibility claims (C73, C74) are reasonable given the mathematical framework, and multimodal combination approaches (C84-C86) are supported by citations, these are largely speculative (C72, C74, C82, C87 are marked as SPECULATION). The limitation acknowledgment (C82) is appropriate, but the broad applicability claims require empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The Fisher kernel can be modified to recognize changes in transition probabilities if these are of interest for specific research questions, as demonstrated in simulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C79 is directly supported by the simulation results in C56-C57, which show that excluding state parameters allows the Fisher kernel to recover transition probability differences. This demonstrates the method's flexibility for different research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C9",
+      "C11",
+      "C12",
+      "C13",
+      "C15",
+      "C100",
+      "C101",
+      "C102",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "The study uses Hidden Markov Models as state-space models to capture recurring patterns of brain activity and functional connectivity, with HMM parameters lying on a Riemannian manifold, and employs dual estimation to obtain subject-specific parameters; kernels provide a computationally efficient way to work with these high-dimensional parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C11-C13, C15, and C100-C102, C105-C108, C110 provide background on HMMs and kernels. These are accurate descriptions of established methods (with appropriate citations: C12, C13, C100, C101, C107) and their properties (C15, C102, C105, C108, C110). The dual estimation procedure (C106) is clearly defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The study evaluates methods based on two criteria: prediction accuracy (high correlation between predicted and actual values) and reliability (no excessive errors and robustness to training set variations), with reliability being especially important for interpreting prediction errors in applications like brain age assessment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C18 define the evaluation framework with clear rationale. The two criteria (C16, C17) are well-justified, and the importance of reliability (C18) is supported by citations to relevant work on brain age. This establishes a comprehensive evaluation approach beyond simple accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The HCP 1200 Young Adult dataset used in this study is a large sample from a healthy, young population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 is a straightforward description of the dataset characteristics, acknowledged as a limitation in the context of generalization (C82). This is an accurate characterization of the HCP dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Clinical neuroscience has focused mainly on static or structural information, leaving brain dynamics information untapped; reliable predictions are essential for clinical applications, but standard cross-validation does not resolve issues of extreme errors and large variation; the proposed approach addresses this by accounting for model structure and thoroughly assessing accuracy, errors, and robustness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C91 provide clinical context and implications. The gap identification (C88) is reasonable, the reliability requirement for clinical use (C89) is supported by citations, the finding about cross-validation limitations (C90) is demonstrated in the study, and the summary of the contribution (C91) accurately reflects the work's scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C123"
+    ],
+    "result": "In the linear Fisher kernel, gradients of typical subjects (similar to group-level model) are close to zero while gradients of atypical subjects can be very large, which may underestimate similarity between typical subjects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C123 describes a known property of Fisher kernels that motivates the use of Gaussian versions. This is an accurate characterization of a potential issue with the linear Fisher kernel, providing context for why Gaussian kernels might be considered despite their other limitations.",
+    "result_type": "MINOR"
+  }
+]

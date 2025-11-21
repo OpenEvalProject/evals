@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C71"
+    ],
+    "result": "HIV-1 infection induces host genomic R-loop accumulation at early post-infection timepoints (3-12 hpi) in multiple cell types (HeLa, CD4+, Jurkat), as demonstrated by DRIPc-seq, dot blot, immunofluorescence, and DRIP-qPCR. This R-loop enrichment originates from the host genome and occurs independently of viral reverse transcription or integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal methods (DRIPc-seq, dot blot, immunofluorescence, DRIP-qPCR) consistently demonstrate R-loop accumulation upon HIV-1 infection across different cell types (C23-C28). The use of reverse transcription and integration inhibitors (C29) and alignment analysis (C30) convincingly demonstrate that the R-loops originate from the host genome rather than viral processes. The data are internally consistent and appropriately controlled with RNase H sensitivity tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C70",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "HIV-1-induced R-loops are distributed across both genic and non-genic regions (including intergenic regions and repetitive elements like SINEs, LINEs, and LTRs), occupy larger genomic regions than baseline R-loops, and show weak or negative correlation with gene expression levels (Pearson's r=0.21 at 3 hpi, r=-0.34 at 6 hpi).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "DRIPc-seq peak analysis (C31-C34) combined with RNA-seq data (C35-C36) provide strong evidence that HIV-1-induced R-loops are widely distributed and not simply driven by transcriptional activity. The correlation analysis with appropriate statistical testing (C36, C76) demonstrates that R-loop formation is independent of transcriptional bursts. The consistency of genomic distribution over time (C34) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C6",
+      "C67",
+      "C68"
+    ],
+    "result": "Using engineered pgR-rich and pgR-poor cell lines that independently control transcription and R-loop formation, the authors demonstrate that R-loop formation (not transcriptional activity alone) directs HIV-1 integration site selection. Integration events and luciferase activity were significantly higher in pgR-rich cells only when R-loops were induced by DOX treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pgR-rich/pgR-poor cell model system provides a clever experimental design to decouple transcription from R-loop formation (C37-C40). The data show that comparable transcriptional activity in both cell lines yields different integration outcomes based on R-loop formation capacity, directly supporting the conclusion that R-loops, not transcription per se, drive integration site selection (C67-C68). This is a key mechanistic result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C5",
+      "C77",
+      "C91",
+      "C92"
+    ],
+    "result": "HIV-1 preferentially integrates into R-loop-rich regions of the host genome. Integration site sequencing across multiple cell types (HeLa, CD4+, Jurkat) shows 3-4 fold enrichment of integration events in R-loop regions compared to non-R-loop regions, with integration sites preferring the central and nearby areas of R-loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Integration site sequencing data across multiple cell types (C41) combined with distance distribution analysis (C42) and specific locus validation (C43-C44) provide strong, convergent evidence for preferential HIV-1 integration into R-loop regions. The use of multiple cell types and randomization controls (as shown in figures) strengthens the conclusion. The 3-4 fold enrichment is substantial and consistent across cell types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C7"
+    ],
+    "result": "HIV-1 integrase proteins physically interact with R-loop structures. EMSA shows higher binding affinity of integrase to R-loop substrates compared to dsDNA. Co-immunoprecipitation experiments demonstrate that integrase co-IPs with R-loops in an RNase H-sensitive manner, and proximity ligation assays show increased PLA signals upon HIV-1 infection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal biochemical approaches (EMSA, co-IP, reciprocal co-IP, PLA) consistently demonstrate physical interaction between HIV-1 integrase and R-loops (C45-C52). The use of appropriate controls (RNase H sensitivity, negative control proteins like LaminA/C and Actin, single antibody PLA controls) and the use of catalytically inactive integrase (E152Q) in EMSA strengthen the conclusions. The convergence of in vitro and cellular data is compelling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C83"
+    ],
+    "result": "The authors propose that HIV-1 infection regulates R-loop dynamics by inducing new R-loop formation or stabilizing existing R-loops, possibly through virion-associated HIV-1 proteins, though the specific mechanism remains to be determined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the data clearly show R-loop accumulation upon HIV-1 infection (C71, C73), the mechanistic claims about how this occurs (C72, C83) are speculative. The authors acknowledge this uncertainty with phrases like 'possibly' and 'it is possible that.' The inhibitor experiments (C29) rule out some mechanisms but don't identify the actual cause. This represents an important future direction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C78",
+      "C79",
+      "C80",
+      "C82",
+      "C93",
+      "C97"
+    ],
+    "result": "The authors propose several mechanistic models for why HIV-1 preferentially integrates into R-loop regions, including: R-loops as a mechanism for 'invisible' integration in non-genic regions; intrinsic preferential binding of intasomes to R-loop structures based on B-to-A form transitions; R-loops as intermediate regulators working with host factors; and R-loops driving chromatin accessibility and genome dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative mechanistic interpretations (C66, C78-C80, C82, C93, C97) that extend beyond the direct experimental evidence. While the proposals are reasonable and grounded in the data and literature, they represent hypotheses for future testing rather than demonstrated results. The authors appropriately use qualifying language ('may,' 'possible,' 'propose') indicating these are interpretative models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "The manuscript establishes background knowledge about HIV-1 integration preferences, retroviral biology, and R-loop biology, citing that HIV-1 integration favors active transcription units but can occur in non-genic regions, that R-loops are three-stranded structures enriched in both genic and non-genic regions, and that various structural features (G4 DNA, B-to-A transitions) are relevant to integration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C22) represent established knowledge from the literature, appropriately cited and used to provide context for the study. They are not novel findings of this work but rather background information that frames the research questions. The citations appear appropriate and the knowledge claims are consistent with the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The discussion contextualizes the findings within existing literature on R-loop biology, HIV-1 integration host factors (LEDGF/p75, CPSF6), DNA damage responses, viral accessory proteins (Vpr, Vif), and the clinical significance of proviruses in non-genic regions and elite controllers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C53-C65, C84-C89, C94-C96) represent appropriate contextualization of the study's findings within the existing literature. The citations appear accurate and relevant. These are not novel findings but rather appropriate discussion of how the current work relates to and extends prior knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C81",
+      "C90"
+    ],
+    "result": "The authors conclude that R-loops are important components of the host genomic environment for HIV-1 integration site determination, that R-loop regions exhibit increased chromatin accessibility, and that HIV-1 preferentially targets R-loops enriched in both genic and non-genic regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These summary conclusions (C69, C81, C90) are well-supported by the collective experimental evidence from the pgR-rich/poor system, integration site sequencing, and biochemical interaction studies. They represent appropriate synthesis of the major findings. C81 is stated as established knowledge about R-loops rather than a novel finding of this study.",
+    "result_type": "MAJOR"
+  }
+]

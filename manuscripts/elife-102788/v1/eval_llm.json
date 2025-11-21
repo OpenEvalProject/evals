@@ -1,0 +1,298 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C17",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C48",
+      "C50",
+      "C52",
+      "C54",
+      "C56"
+    ],
+    "result": "Pro-PRIME was used in a zero-shot setting to predict and experimentally validate 45 single-point mutations of a VHH antibody, achieving a 30% success rate for alkali resistance and 77.8% for thermal stability. Six mutants showed improvements in all three properties (alkali resistance, thermal stability, and affinity), and four mutants retained higher affinity than wild-type after harsh alkali treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C39 provide direct experimental evidence for the performance of single-point mutants across multiple properties. The success rates (C50, C54) and quantitative improvements (C52, C56) are clearly stated and supported by experimental data shown in Figure 1. The methodology (C17, C48) is well-described, establishing a clear link between predictions and experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C49",
+      "C51",
+      "C53",
+      "C55",
+      "C57",
+      "C60",
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Pro-PRIME was fine-tuned using single-point mutation data to predict 20 multi-point mutants, achieving 35% success for alkali resistance and 100% for thermal stability. Five multi-point mutants surpassed the best single-point mutant in alkali resistance, with the best achieving 67.7% improvement over wild-type and a Tm increase of 10.02\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C51-C53, C55, C57, and C60 provide clear experimental evidence for multi-point mutant performance. The fine-tuning methodology (C49, C117-C119) is well-documented, and the results demonstrate significant improvements over single-point mutations. The 100% success rate for thermal stability (C55) and substantial improvements in alkali resistance are directly supported by experimental data in Figures 1B and 2B.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C106"
+    ],
+    "result": "Pro-PRIME successfully captured epistatic interactions, including 'double negative yields positive' phenomena where individually deleterious mutations (A57D;P29T and P29T;G134R) produced beneficial multi-point mutants. The model incorporated negative single-point mutations into the combinatorial space, expanding the design space beyond traditional rational design approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 provide specific quantitative evidence of epistatic effects (e.g., P29T EC50 was 5\u00d7 worse than WT, but P29T;G134R was 3\u00d7 better). Claims C67-C68 document negative epistasis. The structural analysis (C66) and distribution of mutations (C70) support the claim that the model explores beyond obvious combinations. This demonstrates a key advantage of the LLM approach over traditional methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Mass spectrometry identified 13 specific breakage sites in the VHH antibody after alkali treatment. Pro-PRIME predictions aligned with rational design principles, with 4 of the top 10 mutations occurring at breakage sites, though beneficial mutations were also found at non-breakage sites. Multi-point mutants reduced degradation from 61.1% to as low as 13.6%.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73 provide direct experimental evidence from SDS-PAGE and mass spectrometry. Claim C74 shows alignment between AI predictions and rational design, while C76 demonstrates the model's ability to identify non-obvious beneficial mutations. The quantitative reduction in degradation (C77) is well-supported by experimental data in Figure 3A.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "Pro-PRIME predictions both aligned with and contradicted traditional rational design principles. Some mutations (P29T, L49V) followed consensus sequence approaches, while others (A15P, R20T) contradicted expert expectations by mutating conserved residues or reducing favorable interactions, yet still improved alkali resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C80 show alignment with rational design through sequence conservation analysis (Figure 3C). Claims C81-C82 document predictions that contradict established biochemical principles, while C83 provides experimental validation that these counterintuitive mutations were beneficial. This demonstrates the model's ability to explore beyond traditional design constraints.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Molecular dynamics simulations of the A57D;P29T mutant revealed increased structural rigidity (lower RMSD), reduced fluctuations at specific residues, and increased hydrogen bonds, without dramatic structural changes. The enhanced alkali resistance is attributed to overall stability improvement rather than conformational changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C92 provide comprehensive MD simulation data from Figure 3\u2014figure supplement 1, including RMSD, RMSF, hydrogen bond analysis, and SASA measurements. The inference (C93) that stability rather than conformational change drives improvement is well-supported by the simulation data showing similar overall structures but enhanced local interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "Selected mutants (A57D;P29T and A15P;R20T) demonstrated multi-stress resistance, showing improved tolerance to acid, salt, high temperature, and alkali while maintaining affinity, making them suitable for industrial applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is directly supported by experimental data in Figures 4A and 2B showing resistance across multiple stress conditions. Claim C96 appropriately infers industrial applicability based on the multi-property improvements. The experimental validation of multiple stress conditions strengthens this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C21",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "In industrial-scale testing, designed mutants retained 60-90% residual dynamic binding capacity after 6 hours of alkali treatment (vs. 25.9% for wild-type) and maintained activity for over 140 cycles (vs. 60 for wild-type), substantially reducing production costs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 provide quantitative experimental data from Figure 4B-C showing dramatic improvements in DBC retention and cycle stability. The inference about cost reduction (C104) is reasonable given the extended operational lifetime. These results demonstrate practical industrial viability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C22",
+      "C23",
+      "C97",
+      "C105",
+      "C109",
+      "C110"
+    ],
+    "result": "The selected mutant has been deployed in mass production at 5000L scale, reducing costs by over $1 million annually. The design process required only 65 mutants tested over 2 months, representing the first LLM-designed protein successfully applied in mass production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C105, C109 state industrial deployment, and C22 claims $1M cost savings, but these lack detailed supporting data or independent verification. Claim C7 asserts this is the 'first' such application, which is difficult to verify comprehensively. While C23 and C97 document the efficiency of the design process with clear timelines, the industrial application claims require more rigorous documentation for full support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "The Spearman correlation between EC50 after alkali treatment and Tm for single-point mutants was -0.29, indicating weak correlation between thermal stability and alkali resistance, making simultaneous optimization challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C40 provides a specific statistical measure directly supported by Figure 1\u2014figure supplement 3. Claim C41 is a reasonable inference from this weak correlation. The statistical analysis is appropriate for the data type, though the negative correlation value seems counterintuitive (higher Tm associated with slightly higher EC50, meaning lower affinity).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Zero-shot predictions for multi-point mutants showed poor performance, with a Spearman correlation of -0.71 between predictions and experimental results, demonstrating the necessity of fine-tuning for multi-point mutation design.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide clear experimental evidence that zero-shot approaches failed for multi-point mutations. The strongly negative correlation (-0.71) indicates predictions were worse than random, justifying the fine-tuning approach. This is an important methodological finding about the limitations of zero-shot predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C107"
+    ],
+    "result": "Deep learning methods offer advantages over traditional rational design by exploring larger sequence spaces, avoiding local optima, capturing epistatic interactions, and recommending mutations beyond expert experience, with greater potential to find global optima.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims are well-supported by the experimental results showing successful incorporation of negative mutations (C25, C63-C64), counterintuitive beneficial mutations (C81-C83), and superior multi-point mutants. Claims C27 cite literature support for limitations of traditional methods. The experimental evidence throughout the paper supports these comparative advantages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C16",
+      "C111"
+    ],
+    "result": "This study demonstrates that AI models trained primarily on natural proteins can successfully design mutants for extreme unnatural environments (pH >13, concentrated salt) that are largely absent from training data, expanding AI applications beyond natural protein properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C13, C16 establish the research gap and uncertainty about AI capabilities in this domain. Claim C111 and the experimental results throughout the paper demonstrate successful design for extreme conditions. The achievement is significant because it shows AI can extrapolate beyond training data distributions, though the mechanism enabling this extrapolation could be better explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C4",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C14",
+      "C15",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C94",
+      "C113",
+      "C114"
+    ],
+    "result": "Background context establishing AI applications in protein engineering, challenges in industrial protein design, Pro-PRIME model architecture and scoring system, and experimental methodology for assessing mutant properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims provide essential background and methodological context. Claims C1, C8-C15 are well-supported by citations. Claims C29-C32 describe Pro-PRIME methodology from the original publication. Claims C31-C32, C94 describe established experimental and theoretical principles. All are appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C42",
+      "C115",
+      "C120"
+    ],
+    "result": "Methodological rationale: The most effective multi-point mutations may not include the most effective single-point mutations; unsupervised fine-tuning on homologous sequences improves results; affinity was not optimized because excessive affinity hinders growth hormone purification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by literature citation and experimental results showing beneficial multi-point mutants without top single-point mutations. Claim C115 describes a methodological choice supported by the cited Pro-PRIME paper. Claim C120 provides practical rationale for experimental design choices. All are reasonable and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C24",
+      "C47",
+      "C61",
+      "C106",
+      "C108",
+      "C112"
+    ],
+    "result": "General conclusions about Pro-PRIME's capabilities: consistency with rational design principles, multi-objective optimization, epistatic effect capture, efficiency with limited data, and potential for broader applications in medicine, agriculture, and bioengineering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C47, C106 are reasonable inferences well-supported by the experimental results. Claims C108, C112 are appropriate forward-looking statements about potential applications based on demonstrated capabilities. These conclusions are proportionate to the evidence presented.",
+    "result_type": "MINOR"
+  }
+]

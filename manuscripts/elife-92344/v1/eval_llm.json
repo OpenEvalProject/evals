@@ -1,0 +1,364 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "TBM is a severe form of TB with high mortality rates, particularly in HIV-positive individuals. Of 7.1 million TB cases in 2019, TBM developed in 164,000 adults (25% HIV-positive), with overall mortality around 25% but rising to 50% in HIV-positive patients, with most deaths in the first 3 months of treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are all supported by citations to published literature (Dodd et al., 2021; Stadelman et al., 2020). These are background claims establishing the clinical significance of TBM and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Prior literature suggests TBM outcomes are associated with inflammatory responses, with both excessive and insufficient inflammation linked to death. Immune responses appear compartmentalized in the CNS, though evidence suggests a greater systemic component than previously thought.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C13 summarize prior literature with appropriate citations (Wilkinson et al., 2017; Marais et al., 2017; van Laarhoven et al., 2019; Rohlwink et al., 2019, etc.). These establish the research context and are well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The MRC grading system has been used for nearly 80 years to categorize TBM severity and strongly predicts mortality. New prognostic models incorporating clinical and laboratory parameters predict outcomes more accurately than MRC grade alone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16 are supported by appropriate citations to historical and recent literature (Streptomycin in Tuberculosis Trials Committee, 1948; Thao et al., 2018; Huynh et al., 2022). These establish the rationale for developing improved prognostic models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The study cohorts comprised 281 Vietnamese adults with TBM (207 HIV-negative, 74 HIV-positive), 295 with PTB, and 30 healthy controls. HIV-positive TBM patients differed from HIV-negative patients in demographics and clinical characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C27 and C82-C86 describe the study cohorts with specific demographic and clinical data presented in Table 1. The data are clearly presented with appropriate summary statistics (medians, IQRs, percentages) and appear internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C80",
+      "C81"
+    ],
+    "result": "Three-month mortality was 21.7% overall (16.4% HIV-negative, 36.5% HIV-positive, p<0.001). Greater disease severity (MRC grades 2-3) was associated with increased mortality. Those who died had higher neutrophil counts and lower lymphocyte counts in blood and CSF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C32 and C80-C81 present mortality data from Table 2 with appropriate statistical testing (Cox regression, p-values). The associations between clinical variables and mortality are clearly documented with hazard ratios and confidence intervals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "RNA-seq generated high-quality data (35.1M reads/sample, 89.4% mapping accuracy). PCA showed distinct profiles between healthy controls and TB cases, with substantial overlap between PTB and TBM, and some separation between HIV-negative and HIV-positive TBM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 describe RNA-seq quality metrics and PCA results shown in Figure 2A. The quality metrics are appropriate and the PCA visualization supports the described patterns of separation and overlap between groups.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "Inflammatory response, cytokine signaling, interferon signaling, TNF signaling, and inflammasome activation pathways were enriched in PTB and TBM compared to healthy controls, with generally higher enrichment in HIV-positive than HIV-negative TBM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C37 are supported by ssGSEA enrichment analysis shown in Figure 2B-G. The pathway enrichment patterns are clearly visualized and the differences between groups are apparent in the boxplots.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Differential expression analysis identified 724 genes (3.6%) differentially expressed in TBM. WGCNA identified 15 gene modules in the discovery cohort, all preserved in the validation cohort, with 5 modules significantly associated with mortality (FDR<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C41 describe the WGCNA analysis with results shown in Figures 3A, 4, and supplementary figures. The module preservation analysis (Figure 4\u2014figure supplement 2) demonstrates strong preservation (Zsummary>10) for all modules, validating the reproducibility of the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The blue (799 genes) and cyan (44 genes) modules were upregulated in death (HR: 2.2-3.0), while the black (207 genes), brown (698 genes), and red (229 genes) modules involved in adaptive immunity were downregulated in death (HR: 0.36-0.59).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C43 present module-trait associations from Figure 4A with specific hazard ratios and FDR values. The results are validated in both discovery and validation cohorts, strengthening the findings. The biological annotations are consistent with the gene content.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Hub gene analysis identified 26 genes associated with mortality: 7 upregulated genes from the blue module (including MCEMP1, FCAR) and 19 downregulated genes from brown, red, and black modules involved in adaptive immunity (including NELL2, CD28, PLCG1, CD247).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C47 describe hub genes identified through WGCNA shown in Figure 5E-H. The hub gene identification methodology is clearly described (MM>0.85, high GS rank) and the genes show appropriate connectivity patterns within their respective modules.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C48"
+    ],
+    "result": "qPCR validation in an independent cohort of 132 HIV-negative TBM patients confirmed 8 of 11 hub genes were significantly associated with mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C48 reports qPCR validation results in Table 3. However, 3 genes (FCAR, PGD, ETS2) showed associations in the reverse direction compared to RNA-seq, which raises concerns about the validation. The authors note this discrepancy but do not adequately explain it, suggesting potential technical issues or biological complexity not fully understood.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Pathway enrichment analysis revealed mortality was associated with upregulated inflammatory/innate immune pathways (acute inflammation, neutrophil activation, TLR signaling, TNF signaling, NF-kappa B) and downregulated adaptive immunity pathways (T/B cell activation, lymphocyte proliferation, NK cell cytotoxicity).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 describe pathway enrichment results from Figure 5A-D using ORA with GO and KEGG databases. The pathways are biologically coherent with the module annotations and show appropriate FDR correction. The findings align with known TB immunology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "TNF signaling expression was significantly higher in HIV-negative adults who died compared to survivors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 is supported by pathway enrichment analysis shown in Figure 7. The statistical comparison using Wilcoxon rank sum test shows significant differences (p<0.01) in TNF signaling between death and survival in HIV-negative TBM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Differential expression analysis stratified by HIV status identified 786 genes (3.9%) differentially expressed in HIV-negative TBM and 1620 genes (8.1%) in HIV-positive TBM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 present differential expression results shown in Figure 3B-C. The higher number of DEGs in HIV-positive TBM (8.1% vs 3.9%) suggests greater transcriptional dysregulation, which is biologically plausible given HIV's effects on immune function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Consensus WGCNA identified 16 modules, with 12 forming consensus associations with mortality. Two HIV-specific modules were identified: blue-angiogenesis (upregulated in HIV-positive death, HR:1.7) and yellow-EMO (downregulated in HIV-negative death, HR:0.31).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe consensus WGCNA results shown in Figure 8A. The analysis appropriately identifies HIV-specific signals by looking for modules that fail to form consensus associations. The statistical significance (FDR<0.05) and effect sizes are clearly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Hub gene analysis of HIV-specific modules identified 5 genes in the blue-angiogenesis module (ZNF354C, ZNF721, ETAA1, CEP295NL, RNF24) and 5 genes in the yellow-EMO module (IL11RA, CD4, ZNF395, BCL9L, PPP4R2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 present hub genes from HIV-specific modules shown in Figure 8D-E. The hub gene identification follows the same rigorous methodology as the primary analysis, providing consistency in approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The blue-angiogenesis module was enriched for angiogenesis, blood vessel development, leukocyte/neutrophil activation, and signal transduction. The yellow-EMO module was enriched for extracellular matrix organization, cell-substrate adhesion, and protein localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 describe pathway enrichment for HIV-specific modules shown in Figure 8B-C. The pathway annotations are biologically coherent with the module names and provide mechanistic insights into HIV-specific mortality pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "A four-gene signature (MCEMP1, NELL2, ZNF354C, CD4) combined with clinical predictors (age, MRC grade) achieved AUC 0.80 for HIV-negative and 0.86 for HIV-positive TBM in predicting three-month mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C64 present prediction model results from Table 4 and Figure 9\u2014figure supplement 3. The models were developed using elastic-net Cox regression with appropriate internal validation (1000 bootstrap iterations). The AUCs represent optimism-corrected estimates, which is methodologically sound. The performance exceeds the reference model (Thao et al., 2018).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "TBM mortality was associated with increased neutrophil activation and decreased T/B cell activation across HIV status. HIV-specific associations included increased angiogenesis in HIV-positive mortality and elevated TNF signaling with impaired extracellular matrix organization in HIV-negative mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 synthesize findings from multiple analyses (WGCNA, pathway enrichment, consensus analysis). The conclusions are well-supported by the data presented in Figures 4-9, though the mechanistic interpretations remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C98",
+      "C99"
+    ],
+    "result": "Mortality was strongly associated with downregulation of adaptive immune responses (T cell activation, T/B cell receptor signaling) with little impact of HIV status, suggesting inadequate adaptive immunity contributes to TBM pathogenesis regardless of HIV status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C99 are supported by pathway enrichment analysis shown in Figure 9. The ssGSEA scores demonstrate consistent downregulation of adaptive immunity pathways in death across both HIV-negative and HIV-positive cohorts, supporting the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "TBM induces a systemic inflammatory response similar to PTB, as evidenced by overlapping transcriptional profiles and shared pathway enrichment patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by PCA analysis (Figure 2A) showing substantial overlap between PTB and TBM profiles, and pathway enrichment analysis (Figure 2B-G) showing similar activation of inflammatory pathways in both conditions. However, the claim of 'similar' response may oversimplify the differences observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C87",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The study employed rigorous computational methods including WGCNA for module identification, Cox regression adjusted for confounders, Benjamini-Yekutieli FDR correction, ORA for pathway enrichment, ssGSEA for pathway scoring, consensus WGCNA for HIV-stratified analysis, and elastic-net Cox regression with bootstrap validation for prediction modeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C97 describe the statistical and computational methodology. The methods are appropriate for the research questions, well-established in the field, and properly applied. The use of discovery/validation cohorts, FDR correction, and bootstrap validation demonstrates methodological rigor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study provides new insights into TBM pathogenesis through dysregulation of innate and adaptive immunity, identifies HIV-specific inflammatory differences that may explain differential corticosteroid responses, and proposes a four-gene biomarker for mortality prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C102 represent the authors' summary conclusions. While the data support the findings of immune dysregulation and the predictive value of the gene signature, the claims about explaining corticosteroid responses (C101) and the clinical utility of the biomarker (C102) are somewhat speculative and would require additional validation studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Prior literature supports roles for neutrophils and impaired T/B cell function in TB/TBM pathogenesis, differential corticosteroid efficacy by HIV status, and the importance of angiogenesis in TB. Previous prognostic models have shown moderate-to-high accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C79 summarize relevant prior literature with appropriate citations (Berry et al., 2010; Marais et al., 2017; van Laarhoven et al., 2019; Thwaites et al., 2004; Donovan et al., 2023; Kumar et al., 2016, etc.). These provide important context for interpreting the current findings.",
+    "result_type": "MINOR"
+  }
+]

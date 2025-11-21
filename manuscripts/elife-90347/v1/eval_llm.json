@@ -1,0 +1,210 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C73"
+    ],
+    "result": "The authors developed the ThermoMaze apparatus consisting of 25 individually controlled Peltier elements that can create spatial temperature gradients (10-30\u00b0C) with temperature reaching steady state within 31\u00b110.3 seconds and measurement accuracy of \u00b13\u00b0C (potentially <1\u00b0C with calibration).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C19 and C73 provide detailed technical specifications with quantitative measurements from calibration experiments (Figure 2). The apparatus design is well-documented with construction details, control mechanisms, and validated temperature dynamics. This represents solid engineering work with appropriate characterization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Mice readily learned to find unmarked warm spots in a cold environment (median 3 training sessions), spending significantly more time immobile during cooling (76.74\u00b112.41%) compared to pre-cooling (59\u00b119%) and post-cooling (66\u00b116%), with rapid departure from warm spots when heating ceased (median 12.99s) and quick location of new warm spots (median 23.45s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C27 provide quantitative behavioral data with appropriate sample sizes (n=20 sessions from 7 mice) and statistical comparisons. The behavioral responses are consistent, reproducible, and supported by trajectory data (Figure 3). The paradigm successfully exploits natural thermotactic behavior without extensive training, as claimed in C54-C56.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Environmental cooling did not correlate with brain temperature changes, confirming that brain temperature is strongly regulated and independent of ambient temperature. Local field potential (1-40 Hz) showed no significant changes between ThermoMaze and home cage during wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C30 are supported by direct brain temperature measurements (n=2 mice, Figure 3\u2014figure supplement 2) and LFP analysis (Figure 3\u2014figure supplement 3). The findings are consistent with cited prior work (Kiyatkin, 2010) and demonstrate that the behavioral paradigm does not induce confounding physiological changes in brain state or temperature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The cooling sub-session induced moderate decorrelation of pyramidal cell rate maps across sub-sessions, potentially due to place field remapping from temperature gradient changes. However, 40-45% of pyramidal cells maintained place fields across all sub-sessions, with 17.36% showing stable place fields throughout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 present quantitative analysis of spatial firing patterns with appropriate statistical testing (Figure 3\u2014figure supplement 6). The decorrelation is interpreted as remapping due to environmental cue changes, supported by citation to Leutgeb et al., 2005. The substantial proportion of place cells (40-45%) demonstrates adequate spatial encoding despite the small arena size.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "SPW-Rs occurred predominantly in corners during rest, with more uniform spatial distribution during cooling compared to room temperature controls. SPW-R duration and amplitude were comparable between ThermoMaze and home cage, but peak frequency was significantly lower in ThermoMaze, explained by lower brain temperature during sleep.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide quantitative SPW-R characterization with appropriate comparisons (Figures 4A-D, Figure 3\u2014figure supplement 4). The spatial distribution analysis demonstrates successful experimental control over SPW-R locations. The frequency difference interpretation (C39) is supported by citation to Petersen et al., 2022, though this remains somewhat speculative without direct simultaneous brain temperature measurements during all SPW-Rs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Hippocampal CA1 neurons during SPW-Rs encode the animal's current position, with pyramidal cells showing significantly higher spatial tuning scores than interneurons (medians: 0.3432 vs 0.2934, p<0.001). Bayesian decoding reliably identified the animal's quadrant above chance level, and firing rate ratios during SPW-Rs and movement were positively correlated (r=0.321, p<0.001), indicating that place-specific firing persists during waking immobility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, and C40-C47 present comprehensive analysis of spatial coding during SPW-Rs with appropriate statistical tests, shuffle controls, and population-level analyses (Figure 5). The findings extend prior work (O'Neill et al., 2006) with quantitative evidence. Sample size is substantial (n=1150 pyramidal cells, 20 sessions, 7 mice). The correlation between movement and SPW-R firing patterns is modest (r=0.321) but statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Using prolonged warm spot duration (20 min vs 5 min), mice spent significantly more time in sleep (p=0.003). Place-specific coding during SPW-Rs persisted into sleep, with highest correlation observed when comparing SPW-Rs across different brain states rather than comparing SPW-Rs to movement. Awake ripple peak frequency was significantly higher than NREM ripples (p<0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 provide quantitative comparison between protocols with appropriate statistical testing (Figure 6). The persistence of spatial coding into sleep (C50-C51) is a novel finding, though the weakening of correlation compared to waking (C67) suggests complexity. The interpretation that sensory inputs affect SPW-R content (C52) is reasonable but somewhat speculative. Sample size for 20-min protocol is smaller (n=7 sessions, 4 mice) than main experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Neurons active during SPW-Rs replay waking experience, with neurons whose place fields overlapped with the maze quadrant showing higher participation probability in SPW-Rs at that location. When mice fell asleep at the same location, this relationship weakened but did not disappear, supporting the view that waking replay can be biased by environmental perception while sleep replay may involve additional factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C57 and C65-C67 present findings consistent with prior literature (C63-C64, C70). However, the interpretations regarding mechanisms (C66, C68-C69) are speculative with competing explanations offered. The weakening of correlation during sleep (C67) is observed but the underlying cause\u2014time-dependent deterioration (C68) vs. different replay mechanisms (C69)\u2014cannot be distinguished with the current data. This represents an important observation requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Brain states fluctuate between exploratory (preparatory) and consummatory phases, affecting internal computation and sensory responses. In mammals, these states can be identified electrophysiologically and are associated with differential neuromodulator release. In hippocampus, preparatory and consummatory behaviors correspond to theta oscillations and sharp-wave ripples, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C8-C11 provide established background knowledge supported by multiple citations to prior literature. These claims frame the scientific context appropriately and are well-supported by the neuroscience literature, though they represent prior knowledge rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "The ThermoMaze is analogous to the Morris water maze but without the inconvenience of a wet environment, allowing collection of physiological data in many trials.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 makes a reasonable comparison between paradigms. Both involve spatial navigation motivated by aversive stimuli (cold vs. water), but ThermoMaze avoids water-related confounds and allows extended recording sessions. The analogy is appropriate though the learning mechanisms may differ (thermotaxis vs. escape behavior).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C12",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Standard laboratory temperatures (20-24\u00b0C) are below the thermoneutral zone of mice (26-34\u00b0C). The hypothalamic preoptic area serves as the thermoregulatory center, connected to limbic and cortical areas for allostatic temperature regulation. Allostatic mechanisms induce exploratory behavior for warmer environments. Mice are acrophobic and agoraphobic, preferring corners and walls.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C58-C62 provide relevant background on thermoregulation and rodent behavior, all supported by appropriate citations. These establish the biological rationale for the ThermoMaze paradigm and explain why the approach exploits natural behavior. This represents well-established prior knowledge appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "All experiments were approved by IACUC (Protocol IA15-01466). A total of 1438 putative single units were isolated from 7 animals in 20 sessions during ThermoMaze behavior, with additional control recordings (228 cells from 2 animals in 3 sessions) and extended protocol recordings (434 units from 4 mice in 7 sessions).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C72 and C74-C76 document ethical approval and provide quantitative summary of experimental subjects and recordings. Sample sizes are appropriate for electrophysiological studies. The inclusion of control sessions (C75) and extended protocol (C76) strengthens the experimental design.",
+    "result_type": "MINOR"
+  }
+]

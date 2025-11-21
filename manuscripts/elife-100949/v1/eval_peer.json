@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C5",
+      "C16",
+      "C18",
+      "C19"
+    ],
+    "result": "The authors define root causal genes as initial changes in gene expression that generate patient symptoms downstream, and claim that no existing algorithms identify such genes from data. They position RCSP as the first method to identify patient-specific root causal genes using a novel statistic.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the novelty and importance of the framework. The editor states 'This work provides an important framework for understanding the primary causes of disease,' and Reviewer 1 notes 'The authors tackle an important and ambitious problem - the identification of causal contributors to disease in the context of a causal inference framework.' Reviewer 2 affirms 'This is a novel use of the causal graph framework to infer root causes in a graph.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C37",
+      "C38"
+    ],
+    "result": "RCSP leverages Perturb-seq data to learn causal order between genes and transfers this structure to bulk RNA-seq. The algorithm identifies surrogate parents using perturbation data and transfers only the binary presence/absence of causal relations rather than exact functional relationships.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raises concerns about transferring graph structure from Perturb-seq to bulk RNA-seq, asking 'To what extent are K562 cells, which are derived from a leukemia cell line, suitable for learning the regulatory structure of CD4+ cells from individuals with an MS diagnosis?' While the reviewer notes that 'The authors perform an analysis of this scenario in Supplementary Figure 4, which shows that RCSP is robust to some degree of departure from the underlying true structure,' they suggest 'it would be ideal for the RCSP to model or reflect the challenges in correctly identifying the regulatory structure.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In simulation experiments, RCSP demonstrated large improvements in performance compared to baseline methods (ANM, LiNGAM, CausalCell, multivariate and univariate regression), achieving the lowest RMSE by a large margin with statistical significance at Bonferroni-corrected thresholds. RCSP maintained robust performance even with cyclic graphs and differences between bulk and Perturb-seq data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the simulation results without raising concerns. Reviewer 1 notes 'They also benchmark RCSP under multiple challenging simulation settings, including an analysis of RCSP when the underlying graph is not a DAG.' The editor states the authors 'provide solid empirical evidence that the framework is robust to modest violations of these assumptions.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "In AMD analysis, RCSP correctly detected age as a root cause with D-RCS of 0.46 (more than double the nearest gene). The majority of gene D-RCS scores concentrated around zero, whereas D-SD scores concentrated around 0.10, indicating RCSP identified few root causal genes rather than many correlated genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the AMD validation results. The editor's statement that authors 'provide solid empirical evidence' and Reviewer 1's acknowledgment that 'they apply RCSP to two real human datasets: 513 individuals age-related macular degeneration and 137 individuals with multiple sclerosis' indicate acceptance of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "For AMD, identified root causal genes (MIPEP, SLC7A5, HEATR1) lie on known pathogenic pathways related to oxidative stress. Pathway enrichment analysis revealed 'amino acid transport across the plasma membrane' pathway, with genes SLC7A5 and SLC1A5 functioning to increase amino acid efflux that activates mTORC1 and increases oxidative stress.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the biological interpretation of AMD results. The pathway connections to known AMD pathogenesis through oxidative stress are presented with appropriate citations and are not challenged in the reviews.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Drug enrichment analysis for AMD identified compounds with therapeutic potential including busulfan (decreases anti-VEGF injection requirements), genistein (attenuates neovascularization), and a metabolite of 3'-azido-3'-deoxythymidine (inhibits neovascularization and mitigates RPE degeneration).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the drug enrichment findings. These results are supported by appropriate citations and are not questioned in the reviews.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Hierarchical clustering of patient-specific RCS values revealed four clear clusters of AMD patients by the elbow method. RCSP detected a subgroup whose root causal genes have large RCS scores and involve known pathogenic pathways related to oxidative stress.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the clustering analysis or patient subgroup identification. These findings are presented as part of the overall AMD analysis that reviewers accept.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "For MS, identified root causal genes include MNT (modulates T cell proliferation), CERCAM (increases leukocyte transmigration across blood-brain barrier), and HERPUD2 (involved in degradation of unfolded proteins), all connecting to known MS pathogenic mechanisms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the MS gene identification results. These findings are supported by appropriate citations to the literature on MS pathogenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Pathway enrichment analysis for MS discovered two significant pathways: 'APC truncation mutants have impaired AXIN binding' (related to Wnt/beta-catenin signaling that causes CD4+ T cell infiltration) and 'EPH-ephrin signaling' (regulates T cell migration and is overexpressed in MS lesions).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the MS pathway enrichment results. These findings connect to known MS biology through appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Hierarchical clustering revealed three MS patient clusters. The green cluster identified cathepsin inhibitors with known therapeutic efficacy in interferon-responsive MS patients. The pink cluster showed enrichment for relapsing-remitting MS subtype and EPH-ephrin signaling, matching known biology.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the MS clustering and subtype-specific findings. These results demonstrate biological validation by matching known disease subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Application to AMD and MS recovers an 'omnigenic root causal model' where a small set of root causal genes drive pathogenesis but impact many downstream genes, resulting in nearly all genes being correlated with diagnosis at the population level. This differs from the omnigenic core gene model by assuming sparsity in upstream root causal genes rather than downstream direct causal genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the omnigenic root causal model interpretation. Reviewer 2 notes the work has 'a solid theoretical background' and the conceptual framework is accepted as part of the overall contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "RCSP assumes a directed acyclic graph (DAG), though directed graphs with cycles can be transformed into acyclic ones under equilibrium. Real biological distributions vary across time, presenting a limitation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 identifies this as 'an important weakness,' stating 'it simply is a large simplification of human biology to draw out a DAG including hundreds of genes and a phenotype Y and to claim that the true graph contains no cycles.' The reviewer provides the example of IL2-mediated feedback loops in MS T cell regulation. However, the reviewer acknowledges 'To the authors' credit, in the supplementary materials they do consider a simulated example with a cyclic underlying causal graph, finding that RCSP performed well.' The editor notes the theoretical results 'rely on strong assumptions' but that authors provide 'solid empirical evidence that the framework is robust to modest violations.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "RCSP has several acknowledged limitations: it achieves patient but not cell-type specificity due to reliance on bulk RNA-seq; modern Perturb-seq datasets only perturb a few thousand genes rather than all genes; and RCSP can only identify root causal genes within the perturbed and measured subset.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly addresses these limitations, stating 'it should also be noted that in most perturb-seq experiments, the entire genome is not perturbed, and frequently important TFs (that presumably are very far \"upstream\" and thus candidate \"root\" causal genes) are not expressed highly enough to be detected with scRNA-seq.' The reviewer suggests 'perhaps slightly modifying the language regarding RCSP's capabilities might be helpful for the manuscript - perhaps it would be better to describe it has an algorithm for causal discovery among a set of genes that were perturbed and measured, rather than a truly complete search for causal factors.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "RNA-seq introduces challenges including measurement error, high dimensionality, and non-linearity. RCSP addresses measurement error by showing the Poisson distribution approximates the sequencing error distribution to high accuracy, and eliminates the need for normalization by sequencing depth using an asymptotic argument where library size N approaches infinity (N \u2265 10 million in bulk RNA-seq).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the technical handling of RNA-seq measurement error. The editor's statement that authors 'provide solid empirical evidence that the framework is robust' implicitly accepts these methodological choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The RCS statistic directly measures root causal strength (not effect) without recovering error term values, imposing distributional assumptions, or functional restrictions. RCS is patient-specific and equals zero when the error term is not a cause of Y. The method cannot identify the direction of unconditional root causal effect, though signed RCS and root causal effect do not differ much in practice.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the mathematical properties of the RCS statistic. Reviewer 2 notes 'The methodology has a solid theoretical background,' indicating acceptance of these technical claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C99"
+    ],
+    "result": "RCSP accounts for known batch effects and measurement error but cannot adjust for unknown confounding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This limitation is acknowledged by the authors and not challenged by reviewers. It is a standard limitation of causal inference methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C102"
+    ],
+    "result": "The authors conclude that RCSP is a novel, accurate, scalable and disease-agnostic procedure for performing patient-specific root causal gene discovery.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers support this overall conclusion. The editor states the work 'provides an important framework,' Reviewer 1 acknowledges it addresses 'an important and ambitious problem,' and Reviewer 2 confirms 'This is a novel use of the causal graph framework.' Reviewer 2 explicitly states in revision comments: 'The authors addressed all of my comments.'",
+    "result_type": "MAJOR"
+  }
+]

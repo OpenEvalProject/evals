@@ -1,0 +1,2530 @@
+{
+  "submission": {
+    "id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T19:48:01.044828Z",
+    "updated_at": "2025-11-21T19:48:01.044828Z"
+  },
+  "content": [
+    {
+      "id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "content_type": "manuscript",
+      "content_text": "# Aeromonas hydrophila CobQ is a new type of NAD+- and Zn2+-independent protein lysine deacetylase\n\n## Authors\n\n- Yuqian Wang<sup>1</sup> ([ORCID: 0000-0002-9216-9553](https://orcid.org/0000-0002-9216-9553))\n- Guibin Wang<sup>1</sup>\n- Lishan Zhang<sup>1</sup>\n- Qilan Cai<sup>1</sup>\n- Meizhen Lin<sup>1</sup>\n- Dongping Huang<sup>1</sup>\n- Yuyue Xie<sup>1</sup>\n- Wenxiong Lin<sup>1</sup>\n- Xiangmin Lin<sup>1</sup> ([ORCID: 0000-0003-2216-0198](https://orcid.org/0000-0003-2216-0198)) \u2020\n\n### Affiliations\n\n1. Fujian Provincial Key Laboratory of Agroecological Processing and Safety Monitoring Fuzhou China\n2. Agricultural College, Anhui Science and Technology University Chuzhou China ([ROR:01pn91c28](https://ror.org/01pn91c28))\n3. State Key Laboratory of Proteomics, Beijing Proteome Research Center, National Center for Protein Sciences (Beijing), Beijing Institute of Lifeomics Beijing China ([ROR:019bev041](https://ror.org/019bev041))\n4. Key Laboratory of Crop Ecology and Molecular Physiology (Fujian Agriculture and Forestry University), Fujian Province University Fuzhou China ([ROR:04kx2sy84](https://ror.org/04kx2sy84))\n5. Key Laboratory of Marine Biotechnology of Fujian Province, Institute of Oceanology, Fujian Agriculture and Forestry University Fuzhou China ([ROR:018yw5541](https://ror.org/018yw5541))\n\n\u2020 Corresponding author\n\n## Abstract\n\nProtein N\u0190-lysine acetylation (Kac) modifications play crucial roles in diverse physiological and pathological functions in cells. In prokaryotic cells, there are only two types of lysine deacetylases (KDACs) that are Zn2+- or NAD+-dependent. In this study, we reported a protein, AhCobQ, in Aeromonas hydrophila ATCC 7966 that presents NAD+- and Zn2+-independent KDAC activity. Furthermore, its KDAC activity is located in an unidentified domain (from 195 to 245 aa). Interestingly, AhCobQ has no homology with current known KDACs, and no homologous protein was found in eukaryotic cells. A protein substrate analysis showed that AhCobQ has specific protein substrates in common with other known KDACs, indicating that these KDACs can dynamically co-regulate the states of Kac proteins. Microbiological methods employed in this study affirmed AhCobQ\u2019s positive regulation of isocitrate dehydrogenase (ICD) enzymatic activity at the K388 site, implicating AhCobQ in the modulation of bacterial enzymatic activities. In summary, our findings present compelling evidence that AhCobQ represents a distinctive type of KDAC with significant roles in bacterial biological functions.\n\n## Introduction\n\nIn recent years, due to the development of specific antibody enrichment technologies and high-resolution mass spectrometry, the research on protein post-translational modifications (PTMs) is increasing dramatically, and it provides a new platform for the study of bacterial function and regulation. PTMs refer to small molecular moieties that dynamically affect the structure and function of proteins through chemical modification of specific amino acid residues, so as to regulate many important biological processes, including cell metabolism, DNA transcription and replication, host infection, and stress resistance, therefore, play an important role in almost all physiological functions (Carabetta et al., 2019). Among them, the Kac modification on protein is widely found in bacteria and participates in almost all key biological processes in bacterial life activities and is attracting the attention of microbiologists (Yu et al., 2023).\n\nAlthough there are many reports on the identification of acetylation modification patterns of bacterial protein lysine residues in recent years, two fundamental questions have not been solved: how do these acetylation modifications arise (acetylation modifiers; writers) and how are they removed (deacetylation modifiers; erasers) (Wang and Cole, 2020a). On the one hand, acetyl groups can be transferred to the target protein by acetyltransferases or non-enzymatic (chemical) mechanisms VanDrisse and Escalante-Semerena, 2019; on the other hand, proteins need to remove acetyl groups from modified proteins to reversibly regulate the function of target proteins. At present, the research on the functions and types of lysine deacetylases (KDACs) has been well-documented in eukaryotes, and most of them are histone deacetylases (HDACs). There are currently at least 18 types of HDACs in four classes (I\u2013IV) in mammals and four plant-specific histone deacetylase 2 (HD2) members in the plant (Yoshida et al., 2017; Chen et al., 2020). Of these, HDAC types I, II, and IV are Zn2+-dependent, while type III deacetylases are NAD+-dependent sirtuins. Moreover, sirtuins can be divided into seven types (SIRT 1\u20137), which are distributed in different compartments of eukaryotic cells and perform important biological functions (Narita et al., 2019). Besides these, ABHD14B, a novel KDAC, was reported to deacetylate non-histone substrates and influence glucose metabolism in mammals (Rajendran et al., 2022; Rajendran et al., 2020).\n\nThe currently known KDACs in bacteria include Zn2 +-dependent RpLdaA or Kdac1 (homologous to eukaryotic type II KDACs), Zn2+-dependent AcuC (homologous to type I), and NAD+-dependent sirtuin (homologous to type III) family proteins (Watson and Christianson, 2023). Sirtuins, represented by Escherichia coli CobB, are the most widely distributed KDACs in many bacterial species and are involved in the regulation of a variety of important physiological functions (Burckhardt et al., 2019; Liu et al., 2018; Wang et al., 2020b). However, since the first report of the deacetylase function of CobB in Salmonella typhimurium in 1998, only two types (three classes) of KDACs have been confirmed in bacteria (Tsang and Escalante-Semerena, 1998; Macek et al., 2019). The reasons that hinder new KDAC discovery in bacteria may be the following: (1) due to the in-depth study of KDACs in eukaryotes, almost all the current research on bacterial deacetylases are based on the characteristics of their homologous proteins in eukaryotes, but less attention is paid to bacteria-specific KDACs, and (2) the deacetylation process between protein substrates and KDACs may be a transient and reversible weak interaction. Moreover, there are thousands of lysine acetylation modification sites in cellular proteins (Chen et al., 2022); so, it is difficult to speculate the characteristics of their specific binding deacetylase, which makes the efficiency of enriching specific KDACs by common protein-protein interaction methods, such as co-immunoprecipitation and pull-down technologies, challenging. As a result, the identification and mechanism of new deacetylases in prokaryotic cells are lagging. Therefore, the screening and identification of new deacetylases, especially for new types of KDACs that may not depend on NAD+ or Zn2+, have been a bottleneck limiting the research on the regulatory mechanisms of bacterial acetylation/deacetylation modifications.\n\nIn this study, we fortuitously identified the protein AhCobQ in Aeromonas hydrophila ATCC 7966 (UniProt ID A0KI27, gene ID AHA_1389) that presents NAD+- and Zn2+-independent protein lysine deacetylase activity. Interestingly, although this protein is described as a CobQ/CobB/MinD/ParA family protein in the UniProt database, it is homologous with cobyric acid synthase in other bacterial species but shares no homology with CobB sirtuin family proteins. In addition to deacetylating lysine-acetylated sites common to AhCobB (UniProt ID A0KKN9, gene ID AHA_2317) sirtuin and another deacetylase AhAcuC (UniProt ID A0KLZ2, gene ID AHA_2788) in A. hydrophila, we also confirmed that AhCobQ deacetylated specific lysine-acetylated sites as did other KDACs, even in the same protein. In general, our results demonstrated a new type of bacterial KDAC, which shares no homology with currently known lysine deacetylases, including those in eukaryotic cells, and extends our understanding of the complicated regulatory mechanism of bacterial lysine acetylation modifications.\n\n## Results\n\n### The physiological phenotypes of AhCobQ are different from those of AhCobB\n\nThis project proceeded from the misunderstanding that AhCobQ and AhCobB may be homologous proteins because AhCobQ is annotated as a CobQ/CobB/MinD/ParA family protein in the UniProt database. Therefore, we constructed ahcobB and ahcobQ mutant strains (Figure 1A) and compared their general physiological phenotypes. When compared to the wild-type strain (WT), the deletion of ahcobB did not affect the hemolytic or swarming ability of A. hydrophila. Notably, \u0394ahcobQ did not affect the hemolytic ability either but significantly increased the swarming ability (Figure 1B, C and Figure 1\u2014figure supplement 1). Most interestingly, \u0394ahcobB sharply increased, while \u0394ahcobQ significantly decreased, the bacterial biofilm formation ability (Figure 1D). These results indicated that CobB and CobQ in A. hydrophila may play different roles in biological functions.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig1-v1.jpg)\n\n**Figure 1.:** (A) Construction of ahcobB- and ahcobQ-defective strains. M: Marker; Lanes 1 and 3: PCR products of wild-type (WT) using the P7/P8 primer pairs of ahcobB and ahcobQ, respectively; Lanes 2 and 6: PCR products of \u0394ahcobB and \u0394ahcobQ, respectively, using P7/P8 primer pairs; Lanes 5 and 7: PCR products of WT using P5/P6 primer pairs of ahcobB and ahcobQ, respectively; Lanes 4 and 8: PCR products of \u0394ahcobB and \u0394ahcobQ, respectively, using the P5/P6 primer pairs. (B) Bacterial migration ability; (C) hemolytic activity; (D) histogram of the biofilm formation ability (OD 595 nm). **p<0.005.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig1-figsupp1-v1.jpg)\n\n### AhCobQ and AhCobB are not homologous proteins\n\nWe then further investigated the evolutionary relationship between AhCobQ and AhCobB. To our surprise, we found that the proteins belong to different protein families. AhCobB (UniProt ID A0KKN9) belongs to a well-known NAD+-dependent protein deacylase sirtuin family and shares a highly homologous SIR2 domain with CobB sirtuins in many bacterial species, such as E. coli (NPD_ECOLI), S. typhimurium (NPD_SALTY), Pseudomonas nitroreducens (A0A246F352_9PSED), and even seven types of sirtuins in humans (Figure 2A). However, AhCobQ (UniProt ID A0KI27) shares an AAA_31 ATPase domain with several homologous proteins, such as cobalamin biosynthesis protein CobQ in P. nitroreducens (A0A246FC44_9PSED), probable plasmid partitioning protein in P. aeruginosa (G3XCW7_PSEAE), and chromosome partitioning ATPase in S. typhimurium (A0A0F6B556_SALT1). Moreover, AhCobQ also shares homology with Soj protein (A0KQY7_AERHH) and cell division inhibitor MinD (A0KK56_AERHH) in A. hydrophila as well (Figure 2B and Figure 2\u2014figure supplement 1). Interestingly, this protein was not found to have homologous proteins in humans or mice species, indicating the significant evolutionary difference between AhCobQ and sirtuins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Homologous and conserved domain analysis of AhCobQ and AhCobB family proteins. (C, D) Dot blot and western blot verified the whole cell protein Kac level among WT, \u0394ahcobB, and \u0394ahcobQ strains. (E\u2013H) Effect of NAD+, NAM, Zn2+, and ATP on KDAC enzymatic activity of AhCobQ.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) PCR amplification results of ahcobQ, ahcobB, and ahacuC gene, respectively; (B) SDS-PAGE gels of purified recombinant proteins AhCobQ, AhCoB, and AhAcuC, respectively. Lane M represents the DNA or protein marker. M: Marker; Lane 1: AhCobQ; Lane 2: AhCobB; Lane 3: AhAcuC.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp3-v1.jpg)\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Purified His-tag (A) and GST-fused (B) recombinant AhCobQ incubated with the substrate Kac-BSA, both in the absence and presence of 150 \u00b5M EDTA treatment, respectively.\n\n![Figure 2\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig2-figsupp5-v1.jpg)\n\n### AhCobQ is an NAD- and Zn2+-independent lysine deacetylase\n\nDot blot and western blot experiments showed that the deletion of ahcobQ or ahcobB both significantly increased the whole protein lysine acetylation levels in A. hydrophila cells (Figure 2C and D), which aroused our interest as to whether AhCobQ is a lysine deacetylase or not. To test this possibility, we purified AhCobQ, AhAcuC, and AhCobB proteins and incubated them in vitro with lysine acetylated-bovine serum albumin (Kac-BSA) as a protein substrate with and without NAD+ or Zn2+ treatment (Figure 2\u2014figure supplement 2 and Figure 2\u2014figure supplement 3). As a positive control, AhCobB and AhAcuC significantly deacetylated Kac-BSA in the presence of NAD+ or Zn2 + buffer, which met our expectations. However, AhCobQ clearly deacetylated Kac-BSA regardless of whether NAD+ or Zn2+ were present (Figure 2E and G). Moreover, the KDAC activity of AhCobB was inhibited when the sirtuin inhibitor nicotinamide (NAM) was added, but this did not affect the deacetylase activity of AhCobQ (Figure 2F). Furthermore, the introduction of the metal ion chelator, EDTA, had no discernible effect on the deacetylase activity of AhCobQ (Figure 2\u2014figure supplement 4). These results strongly indicate that AhCobQ is an NAD+- and Zn2+-independent protein deacetylase. Additionally, since AhCobQ has an ATPase domain at the N-terminal, we also tested its deacetylase activity with or without ATP (Figure 2H and Figure 2\u2014figure supplement 5). The results demonstrated that the KDAC activity of AhCobQ was ATP-independent, suggesting its enzymatic activity was downstream of the ATPase domain.\n\nWe further digested Kac-BSA to peptides after AhCobQ incubation and then subjected the peptides to LC MS/MS to identify their acetylated sites (Supplementary file 1a). The results showed that the MS intensities of at least 15 Kac peptides in BSA were significantly decreased after AhCobQ treatment. To further validate the KDAC characteristics of AhCobQ and exclude the possibility that AhCobQ may hydrolyze Kac peptides or switch the lysine acetylation to other unknown PTMs, we selected and synthetized an acetylated peptide sequence (YNGVFQECCQAEDKacGACLLPK) with its unacetylated peptide as negative control and subjected them to additional deacetylation assays. The synthetized acetylated (STD*Kac) and deacetylated (STD) peptides were incubated with AhCobB and AhCobQ and then identified by LC MS/MS. As shown in Figure 3, the masses of the STD*Kac and STD peptides were 786.35538 (3+) and 772.35175 (3+), respectively. When the STD*Kac peptide was incubated with AhCobB or AhCobQ, the corresponding retention time in the C18 chromatography and the MS1 peak of the deacetylated peptide were found in both treatments (Figure 3A and B). Moreover, the deacetylated and acetylated peptides were further validated in MS2 by LC MS/MS (Figure 3C and D). These results indicate that AhCobQ is not a hydrolase that hydrolyzes target proteins but likely a protein deacetylase similar to AhCobB.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig3-v1.jpg)\n\n**Figure 3.:** (A) Retention time of synthetic peptides YNGVFQECCQAEDKGACLLPK (STD) and YNGVFQECCQAEDKacGACL-L-PK (STD*Kac) with or without AhCobB and AhCoQ treatment; (B) MS1 spectrum of synthetic peptides STD and STD*Kac with or without AhCobB and AhCobQ treatment; (C, D) MS2 spectrum of acetylated and unmodified peptides.\n\n### The deacetylase activity of AhCobQ is in an unidentified domain\n\nBecause AhCobQ has a conservative N-terminal AAA family ATPase domain (1\u2013179 aa) and its KDAC activity was not affected by ATP, we then asked whether this domain has deacetylase activity. We divided and purified recombinant AhCobQ protein into two truncated protein fragments of 1\u2013179 aa and 179\u2013264 aa and then tested their deacetylase activities. To our surprise, the 179\u2013264 aa protein fragment but not the 1\u2013179 aa fragment showed NAD+- and Zn2+-independent deacetylase activity (Figure 4A). To better understand the deacetylase domain of AhCobQ, a total of 12 truncated protein fragments were constructed and purified, and their deacetylase activities were evaluated (Figure 4\u2014figure supplement 1 and Figure 4A). As shown in Figure 4, the 1\u2013179 aa, 200\u2013255 aa, and 189\u2013240 aa shortened proteins disrupted the deacetylase activity of AhCobQ to some extent, whereas the 179\u2013264 aa, 189\u2013264 aa, 199\u2013264 aa, 195\u2013264 aa, 195\u2013255 aa, 189\u2013245 aa, 189\u2013250 aa, 189\u2013255 aa, and 189\u2013264 aa shortened proteins did not, indicating that the deacetylase activity may be in the 195\u2013245 aa range. Interestingly, although the full amino acid sequence of AhCobQ (1\u2013254 aa) is homologous with Soj protein (A0KQYT), site-determining protein (A0KI19 and A0KK56), and ParA family protein (A0KQG8) in A. hydrophila, the KDAC activity domain (195\u2013245 aa) does not share homology with these proteins, which suggests the different biological roles among them. Moreover, AhCobQ (195\u2013245 aa) also shares homology with several prokaryotic species, such as Aeromonas sp., Aliivibrio sp., Enterovibri sp., Oceanimonas sp., Photobacterium sp., and Vibrio sp., most of which are marine prokaryotes based on a PSI-BLAST program searching, but the search failed to find homologous proteins in eukaryotic cells (Figure 5). Therefore, the 195\u2013245 aa shortened protein of AhCobQ may represent a new domain that exhibits NAD+- and Zn2+-independent deacetylase activity.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig4-v1.jpg)\n\n**Figure 4.:** Western blot analysis of the lysine acetylases and deacetylases (KDAC) activity of (A) AhCobQ1\u2013179, AhCobQ179\u2013264, AhCobQ1\u2013264, AhCobQ189\u2013264, AhCobQ199\u2013264, AhCobQ195\u2013264, AhCobQ195\u2013255, and AhCobQ200\u2013255; (C) AhCobQ179\u2013264, AhCobQ189\u2013264, AhCobQ189\u2013255, AhCobQ189\u2013250, AhCobQ189\u2013245, and AhCobQ189\u2013240 truncated proteins treated with Kac-BSA. The first lane represents Kac-BSA without AhCobQ truncated proteins. The upper part of the figure shows the WB results of the Kac level of truncated proteins with Kac-BSA, and the lower part shows the PVDF membrane R350 staining for the loading amount control. (B) Design of the series of truncated proteins and the summary of the WB results in this experiment. Blue indicates the AAA_31 domain (1\u2013179 aa), and red indicates the unknown range (180\u2013264 aa) in AhCobQ. Black and white indicate the positive and negative WB results, respectively, in this study.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** The PCR amplification and SDS-PAGE results of purified recombinant truncated proteins (GST-fusion) 1: AhCobQ1\u2013179; 2: AhCobQ179\u2013265; 3: AhCobQ189\u2013265; 4: AhCobQ189\u2013255; 5: AhCobQ189\u2013250; 6: AhCobQ189\u2013245; 7: AhCobQ189\u2013240; 8: AhCobQ195\u2013255; 9: AhCobQ200\u2013255; 10: AhCobQ179\u2013225; 11: AhCobQ179\u2013235; 12: AhCobQ179\u2013245; 13: AhCobQ179\u2013255; 14: AhCobQ189\u2013265; 15: AhCobQ199\u2013265; 16: AhCobQ209\u2013265; 17: AhCobQ219\u2013265.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig5-v1.jpg)\n\n**Figure 5.:** Different colors indicate different branches, and Aeromonas hydrophila spp. is highlighted in red.\n\n### AhCobQ, AhCobB, and AhAcuC deacetylate different acetylated proteins and sites\n\nWe then identified the proteins that were substrates of AhCobQ and analyzed the substrate differences among AhCobQ, AhCobB, and a predicted Zn2+-dependent deacetylase AhAcuC of A. hydrophila that is homologous to type I KDACs in eukaryotes. A quantitative lysine acetylome was generated to compare the differential expression of lysine-acetylated peptides among ahcobQ, ahcobB, and ahacuC gene-deficient strains and their WT strain (Figure 6, Figure 6\u2014figure supplement 1, Figure 6\u2014figure supplement 2, Figure 6\u2014figure supplement 3 and Supplementary file 1b). We only focused on the upregulated lysine-acetylated peptides between the mutant and WT strains. When compared to WT, the deletion of ahcobQ, ahcobB, and ahacuC led to increased abundances at 52 Kac sites (corresponding to 47 Kac proteins), 370 Kac sites (291 proteins), and 197 Kac sites (176 proteins), respectively. Moreover, there were 19 increased Kac peptides common between the \u0394ahcobQ and \u0394ahacuC strains, 10 increased Kac peptides common between the \u0394ahcobQ and \u0394ahcobB strains, 69 increased Kac peptides common between the \u0394ahcobB and \u0394ahacuC strains, and four peptides common among the \u0394ahcobQ, \u0394ahcobB, and \u0394ahacuC strains (Figure 6A). We also found that there were only 531 Kac peptides directly regulated by these three deacetylases, which is only a small proportion of the total Kac peptides (accounting for 10.28% of all 3163 Kac peptides identified in the current study), indicating the presence of other unknown KDACs in this bacterium.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig6-v1.jpg)\n\n**Figure 6.:** (A) Venn diagrams visualized the overlapped upregulated N\u0190-lysine acetylation (Kac) proteins and Kac peptides among the \u0394ahcobB, \u0394ahcobQ, \u0394ahacuC, and WT strains. The number of acetylated proteins and peptides (sites) are shown in the figure. (B) Kyoto Encyclopedia of Genes and Genomes (KEGG) metabolic pathway enrichment analysis of upregulated Kac proteins and peptides by the three lysine acetylases and deacetylases (KDACs). Unique and overlapped Kac proteins and peptides (sites) are presented in different colors.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** hydrophila ahacuC knockout mutant strain. M: Marker; Lanes 1 and 2: PCR products of wild-type (WT) and \u0394ahacuC using the P7/P8 primer pairs; Lanes 3 and 4: PCR products of WT and \u0394ahacuC using the P5/P6 primer pairs.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig6-figsupp2-v1.jpg)\n\n![Figure 6\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig6-figsupp3-v1.jpg)\n\n**Figure 6\u2014figure supplement 3.:** (A) Mass error distribution of total identified N\u0190-lysine acetylation (Kac) peptides; (B\u2013D) Volcano plot of the p-values vs. the log2 Kac peptide abundance differences between \u0394ahcobQ vs. WT, \u0394ahcobB vs. WT, and \u0394ahacuC vs. WT, with upregulated Kac proteins outside the significance lines colored in red. Some representative Kac protein names are highlighted.\n\nA KEGG pathway analysis showed that biosynthesis of amino acids and antibiotics was enriched in the unique upregulated Kac proteins in the \u0394ahcobQ strain (Figure 6B). Furthermore, five pathways, namely, pyrimidine metabolism, metabolic pathways, purine metabolism, pyruvate metabolism, and RNA polymerase, were enriched in upregulated Kac proteins under AhCobB-regulation. Of these three deacetylase mutants, \u0394ahacuC enriched the most metabolic pathways, although \u0394ahcobB regulated more Kac sites. Carbon metabolism, biosynthesis of antibiotics, and glycolysis/gluconeogenesis pathways were the top three enrichment pathways in the unique 119 Kac sites regulated by AhAcuC. Phosphotransferase system (PTS), microbial metabolism in diverse environments, and metabolic pathways were enriched in the upregulated Kac proteins common to the \u0394ahacuC and \u0394ahcobB mutants. In general, although there are different pathways involved in the activity of different deacetylases, most of the Kac proteins regulated by these KDACs were enzymes and normally had important roles in metabolic pathways.\n\n### Validation of the specificity of Kac proteins and sites by deacetylases\n\nWe further validated the specificity of Kac proteins and the sites regulated by these deacetylases. A total of three target proteins (SUN, ENO, and ArcA-2) were selected for validation due to their significantly upregulated Kac levels in the \u0394ahcobQ strain, potentially indicating their roles as substrates for AhCobQ. These proteins were first cloned and purified in E. coli. The anti-Kac western blot showed that these purified proteins did not have lysine acetylation signals, which may be because of the heterologous expression in an engineered bacterial strain. This was ideal for excluding signal interference from the background (Figure 7\u2014figure supplement 1). Next, site-specific lysine acetylation of the target protein substrates was constructed using a two-plasmid-based system of genetically encoded N\u0190-acetyllysine, which was purified and incubated with AhCobQ, AhCobB, and AhAcuC for western blot analysis against anti-lysine acetylation antibodies (Figure 7\u2014figure supplement 2). As shown in Figure 7, when compared to untreated Kac proteins, the acetylation level of three Kac sites (K103 and K148 in SUN, K195 in ENO) that were uniquely regulated by AhCobQ according to quantitative acetylome analysis was significantly reduced after incubation with AhcobQ but unchanged after incubation with AhCobB or AhAcuC. Moreover, K26 in ArcA-2 was reduced in both AhCobB and AhCobQ incubations. These results were consistent with our quantitative acetylome results.\n\n![Figure 7.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig7-v1.jpg)\n\n![Figure 7\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig7-figsupp1-v1.jpg)\n\n**Figure 7\u2014figure supplement 1.:** 1: SUN, 2: ENO, 3 ArcA-2, CK: Kac-BSA, M: prestained protein marker. CK is Kac-BSA as a positive control. The lower section presents the PVDF membrane R350 staining for the loading amount control.\n\n![Figure 7\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig7-figsupp2-v1.jpg)\n\n**Figure 7\u2014figure supplement 2.:** The PCR products (right) and SDS-PAGE results of the target recombinant or site-directed acetylated proteins. (A) ArcA-2 and ArcA-2-K26; (B) SUN, SUN-K103, and SUN-K148; (C) ENO and ENO-K195.\n\n### AhCobQ positively regulates the enzymatic activity of isocitrate dehydrogenase (ICD) at K388 site\n\nTo further understand the effect of AhCobQ on bacterial biological function, an AhCobQ substrate, A. hydrophila ICD was cloned and purified in E. coli (Figure 7\u2014figure supplement 2). Western blot assay showed that this protein didn\u2019t display lysine acetylation modification in E. coli (Figure 8A). Therefore, site-specific lysine acetylation was constructed at the K388 site of ICD for further enzymatic activity determination. As shown in Figure 8B, AhCobQ can significantly deacetylated ICD at K388, while the other two deacetylases, AhCobB and AhAcuC didn\u2019t. This result is consistent with the proteomics conclusions. When compared with unKac ICD protein, the Kac at K388 of ICD significantly decreased the product of NADPH with the addition of NADP+ substrate, which indicates the Kac at K388 negatively regulates the enzymatic activity of ICD. Moreover, the adding of AhCobQ significantly increased the enzymatic activity of K388 acetylated ICD and quickly reached the platform period in 10 min, while AhCobB and AhAcuC didn\u2019t affect ICD enzymatic activity (Figure 8C and D). These results indicate that AhCobQ positively regulates the enzymatic activity of isocitrate dehydrogenase by deacetylating the ICD protein at the K388 site.\n\n![Figure 8.](https://cdn.elifesciences.org/articles/97511/elife-97511-fig8-v1.jpg)\n\n**Figure 8.:** (A) Western blot verified the deacetylation effect of AhCobQ on ICD and ICD-K388; (B) Western blot verified the deacetylation effect of AhCobQ, AhCobB, and AhAcuC on ICD-K388. The PVDF membrane R350 staining for the loading amount control was displayed under the WB results; (C) Enzymatic activities of ICD (yellow), ICD-Kac388(blue), ICD-Kac388 treated with AhCobQ (red), ICD-Kac388 treated with AhCobB (green), ICD-Kac388 treated with AhAcuC (brown); (D) The histogram showed the effect of AhCobQ/AhcobB on ICD or ICD-Kac388 enzymatic activities at 5 min. ***p<0.001.\n\n## Discussion\n\nLysine acetylation has been confirmed to play crucial roles in almost all essential biological functions in both eukaryotic and prokaryotic cells. Normally, reversibility and dynamicity are necessary characteristics of lysine acetylation. The regulatory mechanism of deacetylation has received as much attention as that of acetylation. In different bacterial species, there are hundreds to thousands of protein lysine acetylation modification sites, which are theoretically unlikely to be regulated by one or a few deacetylases, and there must be some unknown deacetylases in bacteria that act on specific protein substrates to maintain the normal physiological function of cells. Therefore, finding new bacterial deacetylases and identifying their modified protein substrates, so as to better understand the molecular mechanism of their regulation, are important in the research on protein acetylation modification regulation.\n\nHere, we reported that the CobQ protein in A. hydrophila is an NAD+- and Zn2+-independent deacetylase, and it is very different from currently known deacetylases. We were first interested in the function of AhCobQ based on its annotation as a CobQ/CobB/MinD/ParA family protein in the UniProt database. The deacetylation assay suggested that AhCobQ deacetylated Kac-BSA in the same manner as AhCobB. To our surprise, AhCobQ does not share homology with any prokaryotic sirtuin CobB or currently known eukaryotic deacetylases. We then asked why this was the case since both proteins appeared to belong to the same protein family. Actually, CobB has a conflicting naming phenomenon in the UniProt annotation. There are two distinct CobB annotations in the UniProt database: one is the well-known NAD-dependent protein deacylase, such as NPD_ECOLI in E. coli, and the other is the ATP-dependent a,c-diamide synthase, such as CobB_SINSX in Sinorhizobium sp. that plays an important role in cobalamin biosynthesis (Galperin and Grishin, 2000). In some bacterial species, a,c-diamide synthase is also annotated as CbiA (such as CBIA_SALTY, for example), indicating the controversial assignment of CobB. Interestingly, there is not an a,c-diamide synthase homologous protein in A. hydrophila ATCC 7966, and the CobB annotation in A. hydrophila ATCC 7966 is specific for NAD-dependent protein deacylase. In general, the CobQ protein is annotated as cobyric acid synthase and belongs to a,c-diamide synthase (CobB or CbiA) but not the sirtuin protein (CobB) family. The role of AhCobQ is unknown to date because A. hydrophila may import rather than synthesize cobalamin (vitamin B12) (Seshadri et al., 2006).\n\nThe LC MS/MS analysis of synthesized Kac peptides treated by AhCobQ further validated that this protein is a deacetylase and excluded the possibility of it being a hydrolase. Surprisingly, the enzymatic activity of AhCobB was not affected by NAD+, Zn2+, or the sirtuin inhibitor NAM. Given that AhCobQ was reported to be an ATP-dependent cobyric acid synthase (Galperin and Grishin, 2000), we also tested the effect of ATP on deacetylase activity but obtained negative results. Thus, the deacetylase activity of AhCobQ was determined to be NAD+-, Zn2+-, and ATP-independent. Subsequent assays showed that the deacetylase activity of AhCobQ was mediated by an unknown C-terminal domain in the 195\u2013245 aa range that was downstream of the predicted ATPase domain, suggesting a new domain was responsible for deacetylation. However, the intrinsic enzymatic mechanism needs to be further investigated.\n\nWe then further asked whether the protein substrates of AhCobQ were the same as the unknown bacterial KDAC homologs in A. hydrophila, AhCobB, and AhAcuC. Although the CobB substrates were identified in E. coli, the AcuC substrates and their comparison with the CobB substrates at a high throughput level had not been determined (Kuhn et al., 2014; Weinert et al., 2017). The characteristics of Kac sites regulated by CobB and AcuC are not yet known. Here, we compared the differential expression of Kac proteins and sites among ahcobQ, ahcobB, and ahacuC mutant and wild-type strains using a quantitative proteomics method. We only focused on the high abundance of Kac proteins or sites (fold change >1.5) when comparing the mutant and WT strains. The results showed that 9.9% of the acetylated proteins (312/3164 Kac protein) were regulated by ahcobB, which is consistent with the proportion in the E. coli cobB mutant and the previous conclusion that CobB is the predominate deacetylase in some bacterial species (Weinert et al., 2013; AbouElfetouh et al., 2015). We also found 47 and 186 significantly enriched Kac proteins in \u0394ahcobQ and \u0394ahacuC, respectively. Interestingly, there were unique and overlapping Kac substrates among three KDACs, indicating that these KDACs may construct a complicated network for the co-regulation of acetylation proteins. Furthermore, although the enriched GO terms and related substrates were different, all the KDACs appeared to be involved in metabolic pathways.\n\nTo further validate our proteomics results, plasmid-based site-specific acetylation was introduced as a target of the recombinant proteins, and the deacetylase activity of the KDACs was determined in vitro. The behavior of the three KDACs on 4 target site-specific acetylated proteins was consistent with our proteomics results. AhCobQ regulated certain proteins at specific Kac sites, which implied that it is involved in specific biological functions. Moreover, AhCobQ and AhCobB also co-regulated the same Kac sites on ArcA-2 (Arginine deiminase), indicating that the cooperation of these KDACs may play an important role during the maintenance of cellular acetylation homeostasis. Most importantly, our results also showed that AhCobQ deacetylated different Kac sites on the same protein as AhCobB or AhAcuC. For example, the bacterial topoisomerase DNA gyrase GyrB is an essential enzyme that controls the topological state of DNA during replication (Tari et al., 2013). Previous studies reported the important role of GyrB in bacterial fluoroquinolone resistance (Chauffour et al., 2021; Li et al., 2022). The 3D structure prediction showed that GyrB K331 is located in the ATPase domain that is responsible for supercoiling DNA, whereas K449 is located in the Toprim domain that is required for the interaction with GyrA (Brino et al., 2000). Our current data showed that K331 and K449 were deacetylated by AhCobQ and AhCobB, respectively, indicating the delicate regulatory mechanisms in both functional domains. To our knowledge, this is the first evidence that different KDACs regulate the Kac level at specific sites of the same protein and that they may be involved in differential biological functions in prokaryotic cells. To our knowledge, it is the first evidence that different KADCs regulates the Kac level at specific-site of one protein and that may involve in differential biological functions in prokaryotic cell. We then further wondered the role of AhCobQ in bacterial biological functions. ICD is a key enzyme in the tricarboxylic acid cycle pathway, and also affects bacterial biofilm formation and virulence in several species (Venkat et al., 2018). Diverse Kac sites of bacterial ICD have been well identified. In E. coli K12, there are at least 15 Kac sites on ICD, and the Kac at K55 and K350 have been determined to play crucial roles on the enzymatic activity by a positively regulatory manner, while Kac at K100, K230, and K235 in a negatively regulatory manner. However, only four Kac sites including K55, K142, K177, and K350 have been proved to be deacetylated by CobB sirtuin obviously. In our quantitative MS data, there are at least ten Kac sites in ICD protein, while only the Kac level of ICD K388 was AhCobQ regulated and others were not altered in KADCs deleted strains. The following assay confirmed that the enzymatic activity of ICD was negatively regulated in a dose-dependent manner by deaectylated ICD K388 site by AhCobQ, whereas not affected by AhCobB and AhAcuC. These results indicate the important role of AhCobQ in bacterial metabolic regulation.\n\n### Conclusion\n\nIn summary, here, we identified a novel NAD+- and Zn2+-independent deacetylase, AhCobQ, in prokaryotic cells, which does not share homology with current known deacetylases and is unique in prokaryotes. The deacetylase activity of this KDAC is through an unknown domain. Moreover, AhCobQ acetylates at least 47 protein substrates involved in many biological processes, especially metabolic pathways. We provide evidences that AhCobQ negatively regulates the enzymatic activity of bacterial isocitrate dehydrogenase at K388 site. These results indicate that AhCobQ has an important regulatory role in bacterial metabolic pathways. AhCobQ is a novel deacetylase in prokaryotic cells and its biological functions need to be further investigated.\n\n### Chemicals and reagents\n\nNi-NTA agarose beads were purchased from Yeasen Biotechnology; C18 ZipTips from Millipore Corporation; water and acetonitrile from Thermo Fisher Scientific; and formic acid (FA), dithiothreitol, acetone, and iodoacetamide from Sigma Aldrich. Synthesized peptides were purchased from Science Peptide (Shanghai, China) with 95\u201399% purity. All chemicals and reagents used in this study are listed in Supplementary file 1c. Critical commercial assay kits used in this study are listed in Supplementary file 1d.\n\n## Methods\n\n### Bacterial strains and growth conditions\n\nAll strains and vectors involved in this study were preserved or constructed in our laboratory; these are listed in Supplementary file 1e. A. hydrophila was cultured at 30 \u00b0C, and E. coli was cultured at 37 \u00b0C. All bacterial solutions were transferred at 1:100 (v:v; bacterial solution: LB) and cultured continuously for 16 hr at 200 rpm, unless otherwise specified.\n\n### Generation of gene-deleted strains\n\nAccording to the whole genome sequence of the A. hydrophila ATCC 7966 strain, upstream and downstream fragments of the target gene of about 500 bp were amplified. The amplified gene fragments were ligated with the digested pRE112 plasmid using the restriction sites SacI and XbaI and then transformed first into E. coli MC1061. The plasmid was collected and transformed into E. coli S17 and then introduced into A. hydrophila by bacterial conjugation. The positive clones were selected on resistant LB plates (100 \u03bcg/mL ampicillin and 30 \u03bcg/mL chloramphenicol). Finally, the positive mutants from the previous step were spread on LB plates containing 20% sucrose, and a single clone was picked. The positive result was sent to Shanghai Sangon Biological Co., Ltd. for sequencing, and the bacteria were kept at \u221280 \u00b0C for later use (Li et al., 2019; Kou et al., 2022).\n\n### Physiological phenotype assay\n\nThe physiological phenotyping was performed as previously described (Li et al., 2019; Cai et al., 2019). Briefly, for hemolytic and swarming motility assays, bacteria cultured overnight were spotted on 0.7% sheep blood or 0.4% agar plates, respectively, at 30 \u00b0C for 16 hr, and the diameter of the hemolytic or swarming circle was observed and measured in three independent experiments. The bacterial biofilm formation ability was measured with a SpectraMax i3 multifunctional microplate reader using the crystal violet staining method, and the absorbance at an optical density (OD) of 595 nm wavelength was measured, as previously described (Li et al., 2019). All these experiments were independently repeated three times, and the one-way ANOVA method was used for statistical analysis.\n\n### BSA acetylation in vitro\n\nBriefly, 1 mg of BSA powder was dissolved in 1 mL of ddH2O containing 0.1 M Na2CO3 and 0.04 g of acetic anhydride and then incubated at 37 \u00b0C to react for 3 hr to produce Kac-BSA. Finally, 20 \u00b5L of 1 M Tris (pH 8.0) was added to stop the reaction (Guan et al., 2010).\n\n### Protein deacetylation assay in vitro\n\nBriefly, 1 \u00b5g of protein or peptides were mixed with 0.2 \u00b5g of purified KDAC protein in basic buffer (150 mM Tris-HCl, pH 8.0, and 10% glycerol) with 10 mM ZnCl2, 0.5 mM ATP, 0.25 mM NAD+, or 0.5 mM NAM, as appropriate, and then incubated at 37 \u00b0C for 3 hr (Li et al., 2024).\n\n### Quantitative acetylome analysis\n\nThe quantitative acetylome was performed as previously described (Zhang et al., 2022). Briefly, the protein samples from bacteria cultured overnight were collected by centrifugation and then sonicated in an ice bath. A 10 mg protein sample was reduced by 10 mM dithiothreitol (DTT), alkylated by 20 mM iodoacetamide (IAA), and then digested to peptides by trypsin at a 1:50 ratio at 37 \u00b0C for 16 hr. The lysine acetylation peptides were enriched by an immuno-affinity enrichment method using an agarose-conjugated anti-lysine-acetylated antibody (Hangzhou Jingjie, PTM 101).\n\n### LC MS/MS\n\nFor BSA acetylation identification, the digested peptides were analyzed on an Orbitrap Q Exactive HF mass spectrometer (Thermo Fisher Scientific) equipped with an EASY-nLC 1200 system (Thermo Fisher Scientific). The peptides were first loaded into a C18 trap column (1.9 \u03bcm, 100 \u03bcm, 20 mm) and separated on an EASY-nLC 1200 UPLC system. The precursor ions were selected for fragmentation in the higher energy collision-activated dissociation (HCD) cell at a normalized collision energy of 27% and then detected using the Orbitrap analyzer at a resolution of 15,000 at m/z 200.\n\nThe synthetic peptides YNGVFQECCQAEDKGACLLPK (STD) and YNGVFQECCQA EDKacGACLLPK (STD*Kac) were analyzed using an Orbitrap Fusion mass spectrometer (Thermo Fisher Scientific) equipped with an EASY-nLC 1200 system (Thermo Fisher Scientific). For the quantitative acetylome, the enriched peptides were analyzed using an Orbitrap Exploris 480 mass spectrometer equipped with a high-field asymmetric waveform ion mobility (FAIMS) Pro spectrometer and an EASY-nLC 1200 system (Thermo Fisher Scientific).\n\nThe data obtained were compared and annotated with the BSA (UniProt ID P02769) or A. hydrophila ATCC 7966 database from the UniProt database using MaxQuant v1.6.2.10 software. The mass error of the search was set to 10 ppm, the main search was set to 5 ppm, the fragment ion was set to 0.02 Da, and the variable modification was acetylation modification. The maximum false discovery rate (FDR) threshold for proteins, peptides, and modification sites was set at 1%. In addition, the localization probability threshold was specified as >0.75, and the modification site score threshold was set to 40. The precursor area for quantification of synthetic peptides YNGVFQECCQAEDKGACLLPK (STD) and YNGVFQECCQAEDKacGACLLPK (STD*Kac) was manually exacted with Thermo Xcalibur (v.3.0.63). When performing a label-free quantitative (LFQ) comparison, in addition to the above settings, label-free quantification was also set to LFQ, and the intensity signal ratio of the corresponding modified peptides in the identification results (ratio) was >1.5. p<0.05 (Student\u2019s t-test) among the three biological replicates in each group was considered a significant difference.\n\n### Western blot\n\nThe protein samples (0.2 \u00b5g) were separated on a 12% sodium dodecyl-sulfate polyacrylamide gel electrophoresis (SDS-PAGE) gel and then transferred to polyvinylidene fluoride (PVDF) membranes using a semi-dry transfer system (Bio-Rad, USA) at 25 V for 20 min. The membranes were blocked with Tris-buffered saline with 0.1% Tween 20 (TBST) containing 5% skim milk for 1 hr and incubated with the diluted primary antibody (PTM-101 1:1,000) for 5 hr at room temperature. After washing three times with TBST, the membranes were incubated with the secondary antibody, horseradish peroxidase-conjugated goat anti-mouse IgG (1:5,000), at room temperature for 1 hr. Finally, the membranes were covered with Clarity western ECL (Bio-Rad) chromogenic solution and exposed with a ChemiDoc MP (Bio-Rad, Hercules, CA, USA). The exposed PVDF membranes were stained with Coomassie R-350 to verify whether the loading amounts were consistent (Peng et al., 2015).\n\n### Dot blot\n\n10 mg protein was diluted and spotted on the PVDF membrane. Once the samples had air-dried, the membranes underwent a blocking process with Tris-buffered saline with Tween 20 (TBST) containing 5% BSA for a duration of 3\u20135 hr. Following this, they were incubated with the PTM-101 antibody at a 1:1000 dilution for 5 hr. Afterward, the membranes were washed three times in TBST, then incubated with a secondary antibody, goat anti-mouse HRP-IgG, at a 1:5000 dilution and containing 3% BSA, for 1 hr at room temperature. This was followed by five washes in TBST, each lasting 5 min. To conclude the process, the membrane was treated with Clarity Western ECL Substrate (Bio-Rad) chromogenic solution, exposed using a ChemiDoc MP imaging system (Bio-Rad, Hercules, CA, USA), and finally stained with Coomassie R-350 to ensure consistent sample loading.\n\n### Recombinant protein production and purification\n\nThe target genes were amplified and ligated to the digested pET-21b/32 a plasmid using the restriction sites EcoRI and HindIII. Then, the recombinant plasmid was transformed into competent E. coli BL21 (DE3), and the positive clones were selected from an agar plate with 100 \u03bcg/mL ampicillin. For the construction of site-directed mutant strains, the target gene was mutated using a Fast Mutagenesis System kit according to the manufacturer\u2019s protocol (Transgen Biotech Co., Beijing, China). All primer pairs used in this study are listed in Supplementary file 1f.\n\nThe successfully constructed recombinant strains were transferred to 200 mL of LB medium containing 100 \u03bcg/mL ampicillin, and then, 200 \u03bcL of 1 M isopropyl \u03b2-D-1-thiogalactopyranoside (IPTG) was added until the OD at 600 nm reached about 0.6. After washing three times with phosphate-buffered saline (PBS) and dissolving in 10 mL of a solution (5 mM imidazole, 0.5 mM NaCl, 0.05 M Tris-HCl pH = 8.0), the bacterial cells were ultrasonically disrupted for 20 min on ice. The supernatant was collected by centrifuging at 10,000 rpm at 4 \u00b0C for 15 min, and the recombinant proteins were purified using an Ni+-NTA column as previously described (Jiang et al., 2022).\n\n### Expression and purification of site-specific Kac proteins\n\nWe used two genetic code expansion systems in E. coli BL21 to express site-specific acetylated proteins (Vidali et al., 1968\uff1bBryson et al., 2017). First, the target gene was inserted into the pET-21b plasmid as described above, and the lysine codon at the target position of the gene was substituted with an amber stop (TAG) codon by site-directed mutagenesis. Then, equal amounts of pTECH-MbAcK3RS (IPYE) and recombinant pET-21b plasmid were co-transfected into competent E. coli BL21 (DE3) on agar plates containing 100 \u03bcg/mL ampicillin and 30 \u03bcg/mL chloramphenicol. After culturing for 5 h at 37 \u00b0C and 200 rpm, the successful PCR products were confirmed with DNA sequencing.\n\nThe successfully site-specific acetylated mutants were cultured overnight in 5 mL of LB medium and then transferred to 200 mL of fresh LB medium containing 100 \u03bcg/mL ampicillin and 30 \u03bcg/mL chloramphenicol and incubated at 200 rpm and 37 \u00b0C. To express the acetyl proteins, 2 mM N-acetyllysine and 20 mM NAM were added to the medium at 37 \u00b0C and vortexed at 200 rpm until the OD at 600 nm reached about 0.8. Then, 200 \u03bcL of 1 M IPTG was added to the medium, and the cells were cultured at 16 \u00b0C and vortexed at 200 rpm for 18 h to express the proteins. The procedure of site-specific Kac protein purification was the same as the method described above.\n\n### Bioinformatics and data analysis\n\nAmino acid sequences were obtained from the UniProt database (https://www.uniprot.org/uniprot). The pfam database (https://www.pfam.org/) was used to predict protein domains, and the online software iTOL (https://itol.embl.de/) was used to generate graphs. The amino acid sequence homology analysis was carried out using position-specific iterated BLAST (PSI-BLAST) software after two iterations (https://blast.ncbi.nlm.nih.gov/Blast.cgi). MEGA v7.0.26 software was used to construct the evolutionary tree that was visualized by online Chiplot software (https://www.chiplot.online/). The online software STRING v.11.5 (http://string-db.org/) was used to perform Kyoto Encyclopedia of Genes and Genomes (KEGG) metabolic pathway enrichment analysis for upregulated proteins, and these proteins were finally visualized using Cytoscape v.3.9.0. Except where otherwise stated, each experiment in this study was independently repeated three times, and the one-way ANOVA method was used for statistical analysis.\n\n### ICD enzymatic activity assay\n\nThe enzymatic activity of ICD was detected by measuring the amount of NADPH generated by NADP substrate. 10 \u03bcg purified ICD or site-specifically Kac ICD protein was mixed with or without 3 \u03bcg purified AhCobQ in 180 \u03bcL solution buffer (100 mM Tris-HCl, pH 8.0, 0.5 mM NADP, 3 mM MgCl2, 10% glycerol, 1.5 mM isocitrate), and the absorbance of NADPH at OD340nm was detected by SpectraMax i3(Molecular Devices) once a minute. Simultaneously, serial concentrations of NADPH (0\u20130.8 mM) was incubated with ICD for standard curve determination.\n",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97511.4.sa0](https://doi.org/10.7554/eLife.97511.4.sa0)\n\nIn this valuable study, the authors studied a novel Zn2+- and NAD+-independent KDAC protein, AhCobQ, in Aeromonas hydrophila, which lacks homology with eukaryotic counterparts, thus underscoring its unique evolutionary trajectory within the bacterial domain. They attempt to demonstrate deacetylase activity, however, whilst the revised manuscript has been improved, significant aspects of the data are still incomplete and require further refinement. The work will be of interest to microbiologists studying metabolism and post-translational modifications.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97511.4.sa1](https://doi.org/10.7554/eLife.97511.4.sa1)\n\nSummary:\n\nThis study by Wang et al. identifies a new type of deacetylase, CobQ, in Aeromonas hydrophila. Notably, the identification of this deacetylase reveals a lack of homology with eukaryotic counterparts, thus underscoring its unique evolutionary trajectory within the bacterial domain.\n\nStrengths:\n\nThe manuscript convincingly illustrates CobQ's deacetylase activity through robust in vitro experiments, establishing its distinctiveness from known prokaryotic deacetylases. Additionally, the authors elucidate CobQ's potential cooperation with other deacetylases in vivo to regulate bacterial cellular processes. Furthermore, the study highlights CobQ's significance in the regulation of acetylation within prokaryotic cells.\n\nWeaknesses:\n\nThe problem I raised has been well resolved. I have no further questions.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97511.4.sa2](https://doi.org/10.7554/eLife.97511.4.sa2)\n\nIn recent years, lots of researchers tried to explore the existence of new acetyltransferase and deacetylase by using specific antibody enrichment technologies and high resolution mass spectrometry. Here is an example for this effort. Yuqian Wang et al. studied a novel Zn2+- and NAD+-independent KDAC protein, AhCobQ, in Aeromonas hydrophila. They studied the biological function of AhCobQ by using biochemistry method and MS identification technology to confirm it. These results extended our understanding of the regulatory mechanism of bacterial lysine acetylation modifications. However, I find this conclusion is a little speculative, and unfortunately it also doesn't totally support the conclusion as the authors provided.\n\nMajor concerns:\n\n-It is a little arbitrary to come to the title \"Aeromonas hydrophila CobQ is a new type of NAD+- and Zn2+-independent protein lysine deacetylase in prokaryotes.\" It should be modified to delete the \"in the prokaryotes\" except that the authors get new more evidence in the other prokaryotes for the existence of the AhCobQ.\n\n-I was confused about the arrangement of the supplementary results. Because there are no citations for Figures S9-S19.\n\n-Same to the above, there are no data about Tables S1-S6.\n\n-All the load control is not integrated. Please provide all of the load controls with whole PAGE gel or whole membrane western blot results. Without these whole results, it is not convincing to come the conclusion as the authors mentioned in the context.\n\n-Thoroughly review the materials & methods section. It is unclear to me what exactly the authors describe in the method. All the experimental designs and protocols should be described in detail, including growth conditions, assay conditions, and purification conditions, etc.\n\n-Include relevant information about the experiments performed in the figure legends, such as experimental conditions, replicates, etc. Often it is not clear what was done based on the figure legend description.\n",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5c6b1fb6-a53a-4e74-a455-6e95050c41fa",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C1",
+      "claim": "Protein N\u0190-lysine acetylation (Kac) modifications play crucial roles in diverse physiological and pathological functions in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Protein N\u0190-lysine acetylation (Kac) modifications play crucial roles in diverse physiological and pathological functions in cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the importance of Kac modifications, drawing from established scientific knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "36f7bd5a-dd07-4103-a260-8e8edc7fddce",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C2",
+      "claim": "In prokaryotic cells, there are only two types of lysine deacetylases (KDACs) that are Zn2+- or NAD+-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "In prokaryotic cells, there are only two types of lysine deacetylases (KDACs) that are Zn2+- or NAD+-dependent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations in the introduction section discussing currently known bacterial KDACs.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "f49933c0-e2aa-4068-a3d8-70bf7033c6df",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C4",
+      "claim": "The KDAC activity of AhCobQ is located in an unidentified domain from 195 to 245 aa.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, its KDAC activity is located in an unidentified domain (from 195 to 245 aa).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data from truncation studies shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "bb951a85-b0cd-4e72-a60f-af3c9e1525c1",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C5",
+      "claim": "AhCobQ has no homology with current known KDACs.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AhCobQ has no homology with current known KDACs, and no homologous protein was found in eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatics analysis shown in Figure 2A, B and Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "86d5d4d7-6b88-4d0a-84f1-800829373b3c",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C6",
+      "claim": "No homologous protein to AhCobQ was found in eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, AhCobQ has no homology with current known KDACs, and no homologous protein was found in eukaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PSI-BLAST analysis results described in the text and shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "0a5c162b-7628-4780-b554-0b29ed88cbde",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C7",
+      "claim": "AhCobQ has specific protein substrates in common with other known KDACs.",
+      "claim_type": "EXPLICIT",
+      "source": "A protein substrate analysis showed that AhCobQ has specific protein substrates in common with other known KDACs, indicating that these KDACs can dynamically co-regulate the states of Kac proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative acetylome data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "52478f57-d508-47ed-bdea-20c3a3579fe5",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C8",
+      "claim": "AhCobQ positively regulates isocitrate dehydrogenase (ICD) enzymatic activity at the K388 site.",
+      "claim_type": "EXPLICIT",
+      "source": "Microbiological methods employed in this study affirmed AhCobQ's positive regulation of isocitrate dehydrogenase (ICD) enzymatic activity at the K388 site, implicating AhCobQ in the modulation of bacterial enzymatic activities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assays shown in Figure 8C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "545793b3-0d5d-4523-9f9b-296e10643780",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C9",
+      "claim": "The deletion of ahcobB did not affect the hemolytic ability of A. hydrophila.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to the wild-type strain (WT), the deletion of ahcobB did not affect the hemolytic or swarming ability of A. hydrophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "8ba86f32-3bf7-4507-b37a-c2b448b29278",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C10",
+      "claim": "The deletion of ahcobB did not affect the swarming ability of A. hydrophila.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to the wild-type strain (WT), the deletion of ahcobB did not affect the hemolytic or swarming ability of A. hydrophila.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "f70d20e7-d889-4f62-a265-07bc02e98093",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C11",
+      "claim": "\u0394ahcobQ did not affect the hemolytic ability of A. hydrophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, \u0394ahcobQ did not affect the hemolytic ability either but significantly increased the swarming ability (Figure 1B, C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "4ee7d71d-5149-49d0-9241-bfb76fa79d0d",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C12",
+      "claim": "\u0394ahcobQ significantly increased the swarming ability of A. hydrophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, \u0394ahcobQ did not affect the hemolytic ability either but significantly increased the swarming ability (Figure 1B, C and Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "bb6fd1b1-e45b-4655-b1ff-c92a5ca7e614",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C13",
+      "claim": "\u0394ahcobB sharply increased bacterial biofilm formation ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, \u0394ahcobB sharply increased, while \u0394ahcobQ significantly decreased, the bacterial biofilm formation ability (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "ecd56178-045e-4e70-826d-8009e0c5b146",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C14",
+      "claim": "\u0394ahcobQ significantly decreased bacterial biofilm formation ability.",
+      "claim_type": "EXPLICIT",
+      "source": "Most interestingly, \u0394ahcobB sharply increased, while \u0394ahcobQ significantly decreased, the bacterial biofilm formation ability (Figure 1D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "41923b05-f11e-4558-bdf9-433c34e8da6e",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C15",
+      "claim": "CobB and CobQ in A. hydrophila may play different roles in biological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicated that CobB and CobQ in A. hydrophila may play different roles in biological functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the differential phenotypic effects observed in deletion mutants shown in Figure 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "2e223ca9-e505-4801-abd5-76197e91480c",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C16",
+      "claim": "AhCobB belongs to a NAD+-dependent protein deacylase sirtuin family.",
+      "claim_type": "EXPLICIT",
+      "source": "AhCobB (UniProt ID A0KKN9) belongs to a well-known NAD+-dependent protein deacylase sirtuin family and shares a highly homologous SIR2 domain with CobB sirtuins in many bacterial species, such as E. coli (NPD_ECOLI), S. typhimurium (NPD_SALTY), Pseudomonas nitroreducens (A0A246F352_9PSED), and even seven types of sirtuins in humans (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by homology analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "d24b2322-733e-4fe1-8b45-174309cb7fcc",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C17",
+      "claim": "AhCobB shares a highly homologous SIR2 domain with CobB sirtuins in many bacterial species and human sirtuins.",
+      "claim_type": "EXPLICIT",
+      "source": "AhCobB (UniProt ID A0KKN9) belongs to a well-known NAD+-dependent protein deacylase sirtuin family and shares a highly homologous SIR2 domain with CobB sirtuins in many bacterial species, such as E. coli (NPD_ECOLI), S. typhimurium (NPD_SALTY), Pseudomonas nitroreducens (A0A246F352_9PSED), and even seven types of sirtuins in humans (Figure 2A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by homology analysis shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "0ce498c7-829f-47fb-a186-f2a789e9da4c",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C18",
+      "claim": "AhCobQ shares an AAA_31 ATPase domain with several homologous proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "However, AhCobQ (UniProt ID A0KI27) shares an AAA_31 ATPase domain with several homologous proteins, such as cobalamin biosynthesis protein CobQ in P. nitroreducens (A0A246FC44_9PSED), probable plasmid partitioning protein in P. aeruginosa (G3XCW7_PSEAE), and chromosome partitioning ATPase in S. typhimurium (A0A0F6B556_SALT1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by domain analysis shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "c255739e-18a6-4b26-8759-1fbd70ca35ce",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C19",
+      "claim": "AhCobQ shares homology with Soj protein and cell division inhibitor MinD in A. hydrophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AhCobQ also shares homology with Soj protein (A0KQY7_AERHH) and cell division inhibitor MinD (A0KK56_AERHH) in A. hydrophila as well (Figure 2B and Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by homology analysis shown in Figure 2B and Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "1df5076b-74dc-499d-a458-ba551d05f285",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C20",
+      "claim": "The deletion of ahcobQ significantly increased the whole protein lysine acetylation levels in A. hydrophila cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Dot blot and western blot experiments showed that the deletion of ahcobQ or ahcobB both significantly increased the whole protein lysine acetylation levels in A. hydrophila cells (Figure 2C and D)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by dot blot and western blot data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "665c168e-e851-481b-a67e-625e6b1dbdaf",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C21",
+      "claim": "The deletion of ahcobB significantly increased the whole protein lysine acetylation levels in A. hydrophila cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Dot blot and western blot experiments showed that the deletion of ahcobQ or ahcobB both significantly increased the whole protein lysine acetylation levels in A. hydrophila cells (Figure 2C and D)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by dot blot and western blot data shown in Figure 2C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "e7cab9d8-26e5-4bff-bb18-3c49b6deca3e",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C22",
+      "claim": "AhCobB significantly deacetylated Kac-BSA in the presence of NAD+.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, AhCobB and AhAcuC significantly deacetylated Kac-BSA in the presence of NAD+ or Zn2 + buffer, which met our expectations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "1e98d08e-04a0-488c-a2dd-d5d2808ba1eb",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C23",
+      "claim": "AhAcuC significantly deacetylated Kac-BSA in the presence of Zn2+.",
+      "claim_type": "EXPLICIT",
+      "source": "As a positive control, AhCobB and AhAcuC significantly deacetylated Kac-BSA in the presence of NAD+ or Zn2 + buffer, which met our expectations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "7088cc30-ce6b-4153-87d5-f9f6cba35f93",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C24",
+      "claim": "AhCobQ clearly deacetylated Kac-BSA regardless of whether NAD+ or Zn2+ were present.",
+      "claim_type": "EXPLICIT",
+      "source": "However, AhCobQ clearly deacetylated Kac-BSA regardless of whether NAD+ or Zn2+ were present (Figure 2E and G).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2E and G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "b33584a2-3cdb-4843-86b2-3d68139d430c",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C25",
+      "claim": "The KDAC activity of AhCobB was inhibited when the sirtuin inhibitor nicotinamide (NAM) was added.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the KDAC activity of AhCobB was inhibited when the sirtuin inhibitor nicotinamide (NAM) was added, but this did not affect the deacetylase activity of AhCobQ (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "e733c2d2-62d5-4100-806e-ea067241f692",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C26",
+      "claim": "NAM did not affect the deacetylase activity of AhCobQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the KDAC activity of AhCobB was inhibited when the sirtuin inhibitor nicotinamide (NAM) was added, but this did not affect the deacetylase activity of AhCobQ (Figure 2F).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "26368626-fad8-4943-911f-4152cb135d4d",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C27",
+      "claim": "The introduction of the metal ion chelator EDTA had no discernible effect on the deacetylase activity of AhCobQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the introduction of the metal ion chelator, EDTA, had no discernible effect on the deacetylase activity of AhCobQ (Figure 2\u2014figure supplement 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2\u2014figure supplement 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "16660267-151d-43d5-8e3b-6d624d04b2f1",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C28",
+      "claim": "The KDAC activity of AhCobQ was ATP-independent.",
+      "claim_type": "EXPLICIT",
+      "source": "The results demonstrated that the KDAC activity of AhCobQ was ATP-independent, suggesting its enzymatic activity was downstream of the ATPase domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 2H and Figure 2\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "e1a3b75f-be1f-4528-b7c8-902aeb449c35",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C29",
+      "claim": "The MS intensities of at least 15 Kac peptides in BSA were significantly decreased after AhCobQ treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the MS intensities of at least 15 Kac peptides in BSA were significantly decreased after AhCobQ treatment.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by LC MS/MS data referenced in Supplementary file 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "95820204-6990-4008-9acd-0bab09267478",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C30",
+      "claim": "AhCobQ is not a hydrolase that hydrolyzes target proteins but likely a protein deacetylase similar to AhCobB.",
+      "claim_type": "EXPLICIT",
+      "source": "These results indicate that AhCobQ is not a hydrolase that hydrolyzes target proteins but likely a protein deacetylase similar to AhCobB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from LC MS/MS data shown in Figure 3 demonstrating that AhCobQ removes acetyl groups without hydrolyzing peptides.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "a39657c0-100b-440c-b762-4940ea029c50",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C31",
+      "claim": "The 179\u2013264 aa protein fragment of AhCobQ showed NAD+- and Zn2+-independent deacetylase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, the 179\u2013264 aa protein fragment but not the 1\u2013179 aa fragment showed NAD+- and Zn2+-independent deacetylase activity (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "bfd63917-05c1-44fa-b9dd-7669d77c84d7",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C32",
+      "claim": "The 1\u2013179 aa protein fragment of AhCobQ did not show deacetylase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "To our surprise, the 179\u2013264 aa protein fragment but not the 1\u2013179 aa fragment showed NAD+- and Zn2+-independent deacetylase activity (Figure 4A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "976e9900-118d-4b39-8448-196ed6541818",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C33",
+      "claim": "The deacetylase activity of AhCobQ may be in the 195\u2013245 aa range.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4, the 1\u2013179 aa, 200\u2013255 aa, and 189\u2013240 aa shortened proteins disrupted the deacetylase activity of AhCobQ to some extent, whereas the 179\u2013264 aa, 189\u2013264 aa, 199\u2013264 aa, 195\u2013264 aa, 195\u2013255 aa, 189\u2013245 aa, 189\u2013250 aa, 189\u2013255 aa, and 189\u2013264 aa shortened proteins did not, indicating that the deacetylase activity may be in the 195\u2013245 aa range.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data from truncation studies shown in Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "5185d78b-22a6-42eb-a26b-7793f9abefe7",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C34",
+      "claim": "The KDAC activity domain (195\u2013245 aa) of AhCobQ does not share homology with Soj protein, site-determining protein, and ParA family protein in A. hydrophila.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although the full amino acid sequence of AhCobQ (1\u2013254 aa) is homologous with Soj protein (A0KQYT), site-determining protein (A0KI19 and A0KK56), and ParA family protein (A0KQG8) in A. hydrophila, the KDAC activity domain (195\u2013245 aa) does not share homology with these proteins, which suggests the different biological roles among them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from bioinformatics analysis comparing the KDAC domain with homologous proteins.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "6b82e07a-1a24-4b03-9e7f-bd1b76bec8fd",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C35",
+      "claim": "AhCobQ (195\u2013245 aa) shares homology with several prokaryotic species, most of which are marine prokaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AhCobQ (195\u2013245 aa) also shares homology with several prokaryotic species, such as Aeromonas sp., Aliivibrio sp., Enterovibri sp., Oceanimonas sp., Photobacterium sp., and Vibrio sp., most of which are marine prokaryotes based on a PSI-BLAST program searching, but the search failed to find homologous proteins in eukaryotic cells (Figure 5).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by PSI-BLAST analysis shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "d6f43c79-9f16-44d8-8c40-e5c014503ff4",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C36",
+      "claim": "The deletion of ahcobQ led to increased abundances at 52 Kac sites corresponding to 47 Kac proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to WT, the deletion of ahcobQ, ahcobB, and ahacuC led to increased abundances at 52 Kac sites (corresponding to 47 Kac proteins), 370 Kac sites (291 proteins), and 197 Kac sites (176 proteins), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative acetylome data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "7366028b-1bf7-4e21-bb33-be61386fd922",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C37",
+      "claim": "The deletion of ahcobB led to increased abundances at 370 Kac sites corresponding to 291 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to WT, the deletion of ahcobQ, ahcobB, and ahacuC led to increased abundances at 52 Kac sites (corresponding to 47 Kac proteins), 370 Kac sites (291 proteins), and 197 Kac sites (176 proteins), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative acetylome data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "c90197f4-8c72-4339-b233-2bc6cdde4567",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C38",
+      "claim": "The deletion of ahacuC led to increased abundances at 197 Kac sites corresponding to 176 proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared to WT, the deletion of ahcobQ, ahcobB, and ahacuC led to increased abundances at 52 Kac sites (corresponding to 47 Kac proteins), 370 Kac sites (291 proteins), and 197 Kac sites (176 proteins), respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative acetylome data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "b533f21a-b204-48fd-b494-d0f5fd77394f",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C39",
+      "claim": "There were 19 increased Kac peptides common between the \u0394ahcobQ and \u0394ahacuC strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there were 19 increased Kac peptides common between the \u0394ahcobQ and \u0394ahacuC strains, 10 increased Kac peptides common between the \u0394ahcobQ and \u0394ahcobB strains, 69 increased Kac peptides common between the \u0394ahcobB and \u0394ahacuC strains, and four peptides common among the \u0394ahcobQ, \u0394ahcobB, and \u0394ahacuC strains (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Venn diagram analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "6c000818-f883-4c43-aae5-0592337f0c92",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C40",
+      "claim": "There were 10 increased Kac peptides common between the \u0394ahcobQ and \u0394ahcobB strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there were 19 increased Kac peptides common between the \u0394ahcobQ and \u0394ahacuC strains, 10 increased Kac peptides common between the \u0394ahcobQ and \u0394ahcobB strains, 69 increased Kac peptides common between the \u0394ahcobB and \u0394ahacuC strains, and four peptides common among the \u0394ahcobQ, \u0394ahcobB, and \u0394ahacuC strains (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Venn diagram analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "2647860c-7258-4fa1-bada-4bcecd14dadf",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C41",
+      "claim": "There were 69 increased Kac peptides common between the \u0394ahcobB and \u0394ahacuC strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there were 19 increased Kac peptides common between the \u0394ahcobQ and \u0394ahacuC strains, 10 increased Kac peptides common between the \u0394ahcobQ and \u0394ahcobB strains, 69 increased Kac peptides common between the \u0394ahcobB and \u0394ahacuC strains, and four peptides common among the \u0394ahcobQ, \u0394ahcobB, and \u0394ahacuC strains (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Venn diagram analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "774d3566-7502-480c-b0e8-83c03447233c",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C42",
+      "claim": "There were four peptides common among the \u0394ahcobQ, \u0394ahcobB, and \u0394ahacuC strains.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, there were 19 increased Kac peptides common between the \u0394ahcobQ and \u0394ahacuC strains, 10 increased Kac peptides common between the \u0394ahcobQ and \u0394ahcobB strains, 69 increased Kac peptides common between the \u0394ahcobB and \u0394ahacuC strains, and four peptides common among the \u0394ahcobQ, \u0394ahcobB, and \u0394ahacuC strains (Figure 6A).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by Venn diagram analysis shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "d71b1502-47e2-4f11-9a80-9244f0a91b43",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C43",
+      "claim": "Only 531 Kac peptides are directly regulated by the three deacetylases, accounting for 10.28% of all 3163 Kac peptides identified.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that there were only 531 Kac peptides directly regulated by these three deacetylases, which is only a small proportion of the total Kac peptides (accounting for 10.28% of all 3163 Kac peptides identified in the current study), indicating the presence of other unknown KDACs in this bacterium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from quantitative acetylome data shown in Figure 6.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "3bfecaa5-cc00-45d6-b5f6-5dd63fa06e5f",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C44",
+      "claim": "There are other unknown KDACs in A. hydrophila.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found that there were only 531 Kac peptides directly regulated by these three deacetylases, which is only a small proportion of the total Kac peptides (accounting for 10.28% of all 3163 Kac peptides identified in the current study), indicating the presence of other unknown KDACs in this bacterium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that only a small proportion of Kac peptides are regulated by the three known KDACs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "764a96d7-8cda-4fe1-934e-c21eb3cec9fa",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C45",
+      "claim": "Biosynthesis of amino acids and antibiotics was enriched in the unique upregulated Kac proteins in the \u0394ahcobQ strain.",
+      "claim_type": "EXPLICIT",
+      "source": "A KEGG pathway analysis showed that biosynthesis of amino acids and antibiotics was enriched in the unique upregulated Kac proteins in the \u0394ahcobQ strain (Figure 6B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by KEGG pathway enrichment analysis shown in Figure 6B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "97c317ec-7830-453c-b86a-59b04a4b771f",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C46",
+      "claim": "AhCobQ can significantly deacetylate ICD at K388.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 8B, AhCobQ can significantly deacetylated ICD at K388, while the other two deacetylases, AhCobB and AhAcuC didn't.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "64eac817-65a0-4054-bd76-e52054bb60a1",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C47",
+      "claim": "AhCobB did not deacetylate ICD at K388.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 8B, AhCobQ can significantly deacetylated ICD at K388, while the other two deacetylases, AhCobB and AhAcuC didn't.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "78bb7b84-c989-4d60-91f3-9337ca1da55a",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C48",
+      "claim": "AhAcuC did not deacetylate ICD at K388.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 8B, AhCobQ can significantly deacetylated ICD at K388, while the other two deacetylases, AhCobB and AhAcuC didn't.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by western blot data shown in Figure 8B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "abd6bf90-274a-46a3-9490-5022a3181c50",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C49",
+      "claim": "Kac at K388 of ICD significantly decreased the product of NADPH with the addition of NADP+ substrate.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared with unKac ICD protein, the Kac at K388 of ICD significantly decreased the product of NADPH with the addition of NADP+ substrate, which indicates the Kac at K388 negatively regulates the enzymatic activity of ICD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assay data shown in Figure 8C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "526e5e92-dff5-4bc8-9c83-0535c9809833",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C50",
+      "claim": "Kac at K388 negatively regulates the enzymatic activity of ICD.",
+      "claim_type": "EXPLICIT",
+      "source": "When compared with unKac ICD protein, the Kac at K388 of ICD significantly decreased the product of NADPH with the addition of NADP+ substrate, which indicates the Kac at K388 negatively regulates the enzymatic activity of ICD.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from enzymatic activity assay data showing decreased NADPH production in acetylated ICD.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "fbce16e3-bc61-47a5-ae57-652a8cc34f2a",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C51",
+      "claim": "The addition of AhCobQ significantly increased the enzymatic activity of K388 acetylated ICD.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the adding of AhCobQ significantly increased the enzymatic activity of K388 acetylated ICD and quickly reached the platform period in 10 min, while AhCobB and AhAcuC didn't affect ICD enzymatic activity (Figure 8C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assay data shown in Figure 8C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "f71e5f7a-2ee3-44dd-994c-a22c8f64eb2d",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C52",
+      "claim": "AhCobB did not affect ICD enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the adding of AhCobQ significantly increased the enzymatic activity of K388 acetylated ICD and quickly reached the platform period in 10 min, while AhCobB and AhAcuC didn't affect ICD enzymatic activity (Figure 8C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assay data shown in Figure 8C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "68298e56-5452-4e49-bb1e-b75fb3b7b729",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C53",
+      "claim": "AhAcuC did not affect ICD enzymatic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the adding of AhCobQ significantly increased the enzymatic activity of K388 acetylated ICD and quickly reached the platform period in 10 min, while AhCobB and AhAcuC didn't affect ICD enzymatic activity (Figure 8C and D).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assay data shown in Figure 8C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "6d8ba9e6-7e78-427e-a164-c8463c3f9354",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C54",
+      "claim": "There are currently at least 18 types of HDACs in four classes (I\u2013IV) in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "There are currently at least 18 types of HDACs in four classes (I\u2013IV) in mammals and four plant-specific histone deacetylase 2 (HD2) members in the plant (Yoshida et al., 2017; Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yoshida et al., 2017 and Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "235a5b8c-3434-4fe8-b117-776a8dc1c561",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C55",
+      "claim": "There are four plant-specific histone deacetylase 2 (HD2) members in plants.",
+      "claim_type": "EXPLICIT",
+      "source": "There are currently at least 18 types of HDACs in four classes (I\u2013IV) in mammals and four plant-specific histone deacetylase 2 (HD2) members in the plant (Yoshida et al., 2017; Chen et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yoshida et al., 2017 and Chen et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "86f3e2c4-da7f-43e4-addc-599ec6124609",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C56",
+      "claim": "HDAC types I, II, and IV are Zn2+-dependent.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, HDAC types I, II, and IV are Zn2+-dependent, while type III deacetylases are NAD+-dependent sirtuins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HDAC classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "6eaf9b9f-a19e-4d88-ba29-ba12c9233b23",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C57",
+      "claim": "Type III deacetylases are NAD+-dependent sirtuins.",
+      "claim_type": "EXPLICIT",
+      "source": "Of these, HDAC types I, II, and IV are Zn2+-dependent, while type III deacetylases are NAD+-dependent sirtuins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about HDAC classification.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "033c5595-d938-46d8-b3bc-4cc99c0f90e9",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C58",
+      "claim": "Sirtuins can be divided into seven types (SIRT 1\u20137) distributed in different compartments of eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, sirtuins can be divided into seven types (SIRT 1\u20137), which are distributed in different compartments of eukaryotic cells and perform important biological functions (Narita et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Narita et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "c2368c80-c92f-4be0-afd1-cc8e59ad0f4e",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C59",
+      "claim": "ABHD14B is a novel KDAC that deacetylates non-histone substrates and influences glucose metabolism in mammals.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides these, ABHD14B, a novel KDAC, was reported to deacetylate non-histone substrates and influence glucose metabolism in mammals (Rajendran et al., 2022; Rajendran et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Rajendran et al., 2022 and Rajendran et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "9e85159a-5985-48d9-bf36-3f93210c03f9",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C60",
+      "claim": "The currently known KDACs in bacteria include Zn2+-dependent RpLdaA or Kdac1, Zn2+-dependent AcuC, and NAD+-dependent sirtuin family proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The currently known KDACs in bacteria include Zn2 +-dependent RpLdaA or Kdac1 (homologous to eukaryotic type II KDACs), Zn2+-dependent AcuC (homologous to type I), and NAD+-dependent sirtuin (homologous to type III) family proteins (Watson and Christianson, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Watson and Christianson, 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "a6d06af8-54be-421c-b48a-0aa6712464d6",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C61",
+      "claim": "Sirtuins are the most widely distributed KDACs in many bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Sirtuins, represented by Escherichia coli CobB, are the most widely distributed KDACs in many bacterial species and are involved in the regulation of a variety of important physiological functions (Burckhardt et al., 2019; Liu et al., 2018; Wang et al., 2020b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Burckhardt et al., 2019; Liu et al., 2018; Wang et al., 2020b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "0df540e0-99cc-4a78-b194-e84db5412d13",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C62",
+      "claim": "Since the first report of the deacetylase function of CobB in Salmonella typhimurium in 1998, only two types (three classes) of KDACs have been confirmed in bacteria.",
+      "claim_type": "EXPLICIT",
+      "source": "However, since the first report of the deacetylase function of CobB in Salmonella typhimurium in 1998, only two types (three classes) of KDACs have been confirmed in bacteria (Tsang and Escalante-Semerena, 1998; Macek et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Tsang and Escalante-Semerena, 1998 and Macek et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "84cb59b6-7ac2-4529-8b8f-1bfbf99d7ec3",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C63",
+      "claim": "AhCobQ is annotated as a CobQ/CobB/MinD/ParA family protein in the UniProt database.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although this protein is described as a CobQ/CobB/MinD/ParA family protein in the UniProt database, it is homologous with cobyric acid synthase in other bacterial species but shares no homology with CobB sirtuin family proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about database annotation.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "c17c6473-667b-4e40-bc81-99dde73fcc94",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C64",
+      "claim": "AhCobQ is homologous with cobyric acid synthase in other bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although this protein is described as a CobQ/CobB/MinD/ParA family protein in the UniProt database, it is homologous with cobyric acid synthase in other bacterial species but shares no homology with CobB sirtuin family proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by bioinformatics analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "b07eef95-ec02-46fc-8388-ece48e4fa0b0",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C65",
+      "claim": "AhCobQ shares no homology with CobB sirtuin family proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, although this protein is described as a CobQ/CobB/MinD/ParA family protein in the UniProt database, it is homologous with cobyric acid synthase in other bacterial species but shares no homology with CobB sirtuin family proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by homology analysis shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "02c4d58d-a3a9-420a-8448-c6a6b3d94e9f",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C66",
+      "claim": "AhCobQ deacetylated lysine-acetylated sites common to AhCobB sirtuin and AhAcuC in A. hydrophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to deacetylating lysine-acetylated sites common to AhCobB (UniProt ID A0KKN9, gene ID AHA_2317) sirtuin and another deacetylase AhAcuC (UniProt ID A0KLZ2, gene ID AHA_2788) in A. hydrophila, we also confirmed that AhCobQ deacetylated specific lysine-acetylated sites as did other KDACs, even in the same protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative acetylome data shown in Figure 6 and validation experiments in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "d6b039e6-bfd2-48b4-b32f-2c306f1ea1c0",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C67",
+      "claim": "AhCobQ deacetylated specific lysine-acetylated sites different from other KDACs, even in the same protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to deacetylating lysine-acetylated sites common to AhCobB (UniProt ID A0KKN9, gene ID AHA_2317) sirtuin and another deacetylase AhAcuC (UniProt ID A0KLZ2, gene ID AHA_2788) in A. hydrophila, we also confirmed that AhCobQ deacetylated specific lysine-acetylated sites as did other KDACs, even in the same protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by validation experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "5716d2d3-ba32-4240-8fc1-9d126098e494",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C68",
+      "claim": "There are two distinct CobB annotations in the UniProt database: NAD-dependent protein deacylase and ATP-dependent a,c-diamide synthase.",
+      "claim_type": "EXPLICIT",
+      "source": "Actually, CobB has a conflicting naming phenomenon in the UniProt annotation. There are two distinct CobB annotations in the UniProt database: one is the well-known NAD-dependent protein deacylase, such as NPD_ECOLI in E. coli, and the other is the ATP-dependent a,c-diamide synthase, such as CobB_SINSX in Sinorhizobium sp. that plays an important role in cobalamin biosynthesis (Galperin and Grishin, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Galperin and Grishin, 2000 and database analysis.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "69c40bed-9782-4f89-a94a-58cacb6cbac6",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C69",
+      "claim": "In some bacterial species, a,c-diamide synthase is also annotated as CbiA.",
+      "claim_type": "EXPLICIT",
+      "source": "In some bacterial species, a,c-diamide synthase is also annotated as CbiA (such as CBIA_SALTY, for example), indicating the controversial assignment of CobB.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about database annotation variability.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "e420e392-87e7-4e7e-9541-0c25968913b9",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C70",
+      "claim": "There is not an a,c-diamide synthase homologous protein in A. hydrophila ATCC 7966.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there is not an a,c-diamide synthase homologous protein in A. hydrophila ATCC 7966, and the CobB annotation in A. hydrophila ATCC 7966 is specific for NAD-dependent protein deacylase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on bioinformatics analysis of the A. hydrophila genome.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "285bc067-e652-484c-a1aa-4a502484bc68",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C71",
+      "claim": "The CobB annotation in A. hydrophila ATCC 7966 is specific for NAD-dependent protein deacylase.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, there is not an a,c-diamide synthase homologous protein in A. hydrophila ATCC 7966, and the CobB annotation in A. hydrophila ATCC 7966 is specific for NAD-dependent protein deacylase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on database annotation and functional characterization.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "723b3827-573f-4cae-9719-9c9f5025cb3e",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C72",
+      "claim": "The CobQ protein is annotated as cobyric acid synthase and belongs to a,c-diamide synthase (CobB or CbiA) but not the sirtuin protein (CobB) family.",
+      "claim_type": "EXPLICIT",
+      "source": "In general, the CobQ protein is annotated as cobyric acid synthase and belongs to a,c-diamide synthase (CobB or CbiA) but not the sirtuin protein (CobB) family.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on database annotation and homology analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "0000191b-a21f-4d34-b31b-6dad7b75fa10",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C73",
+      "claim": "The role of AhCobQ is unknown because A. hydrophila may import rather than synthesize cobalamin (vitamin B12).",
+      "claim_type": "EXPLICIT",
+      "source": "The role of AhCobQ is unknown to date because A. hydrophila may import rather than synthesize cobalamin (vitamin B12) (Seshadri et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Seshadri et al., 2006.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "1dc2ee48-d97b-4b38-b077-dbdf4abcb360",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C74",
+      "claim": "9.9% of the acetylated proteins (312/3164 Kac protein) were regulated by ahcobB.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that 9.9% of the acetylated proteins (312/3164 Kac protein) were regulated by ahcobB, which is consistent with the proportion in the E. coli cobB mutant and the previous conclusion that CobB is the predominate deacetylase in some bacterial species (Weinert et al., 2013; AbouElfetouh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative acetylome data and citations to Weinert et al., 2013 and AbouElfetouh et al., 2015.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "5501467c-c46f-489b-a501-32df5b96dcf0",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C75",
+      "claim": "CobB is the predominate deacetylase in some bacterial species.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that 9.9% of the acetylated proteins (312/3164 Kac protein) were regulated by ahcobB, which is consistent with the proportion in the E. coli cobB mutant and the previous conclusion that CobB is the predominate deacetylase in some bacterial species (Weinert et al., 2013; AbouElfetouh et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Weinert et al., 2013 and AbouElfetouh et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "dac48e3c-07fd-4240-b686-5e5a8773719d",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C76",
+      "claim": "AhCobQ and AhCobB co-regulated the same Kac sites on ArcA-2 (Arginine deiminase).",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AhCobQ and AhCobB also co-regulated the same Kac sites on ArcA-2 (Arginine deiminase), indicating that the cooperation of these KDACs may play an important role during the maintenance of cellular acetylation homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by validation experiments shown in Figure 7.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "831c1a22-5477-44bf-bf99-adee585bc321",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C77",
+      "claim": "The cooperation of KDACs may play an important role during the maintenance of cellular acetylation homeostasis.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, AhCobQ and AhCobB also co-regulated the same Kac sites on ArcA-2 (Arginine deiminase), indicating that the cooperation of these KDACs may play an important role during the maintenance of cellular acetylation homeostasis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that multiple KDACs can regulate the same acetylation sites.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "96a2db14-48d9-4416-ae7f-4265ada490f3",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C78",
+      "claim": "GyrB K331 is located in the ATPase domain that is responsible for supercoiling DNA.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D structure prediction showed that GyrB K331 is located in the ATPase domain that is responsible for supercoiling DNA, whereas K449 is located in the Toprim domain that is required for the interaction with GyrA (Brino et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by 3D structure prediction and citation to Brino et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "20e1b27c-cd03-4822-8e12-b3b896e11957",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C79",
+      "claim": "GyrB K449 is located in the Toprim domain that is required for the interaction with GyrA.",
+      "claim_type": "EXPLICIT",
+      "source": "The 3D structure prediction showed that GyrB K331 is located in the ATPase domain that is responsible for supercoiling DNA, whereas K449 is located in the Toprim domain that is required for the interaction with GyrA (Brino et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by 3D structure prediction and citation to Brino et al., 2000.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "6229b123-a728-4b4d-b5df-750d97e374a6",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C80",
+      "claim": "K331 of GyrB was deacetylated by AhCobQ.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current data showed that K331 and K449 were deacetylated by AhCobQ and AhCobB, respectively, indicating the delicate regulatory mechanisms in both functional domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative acetylome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "45991da1-d7d3-498d-bfc3-97ff0e8ccccb",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C81",
+      "claim": "K449 of GyrB was deacetylated by AhCobB.",
+      "claim_type": "EXPLICIT",
+      "source": "Our current data showed that K331 and K449 were deacetylated by AhCobQ and AhCobB, respectively, indicating the delicate regulatory mechanisms in both functional domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative acetylome data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "97e471c6-e175-47ef-984c-8df9215fae5e",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C82",
+      "claim": "This is the first evidence that different KDACs regulate the Kac level at specific sites of the same protein in prokaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "To our knowledge, this is the first evidence that different KDACs regulate the Kac level at specific sites of the same protein and that they may be involved in differential biological functions in prokaryotic cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a claim about the novelty of the findings based on the authors' knowledge of the literature.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "0679acac-258e-4844-bfae-4f1b364be018",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C83",
+      "claim": "ICD is a key enzyme in the tricarboxylic acid cycle pathway.",
+      "claim_type": "EXPLICIT",
+      "source": "ICD is a key enzyme in the tricarboxylic acid cycle pathway, and also affects bacterial biofilm formation and virulence in several species (Venkat et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Venkat et al., 2018.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "43c70d9e-5ca5-41a9-a15b-0051b5304dfb",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C84",
+      "claim": "ICD affects bacterial biofilm formation and virulence in several species.",
+      "claim_type": "EXPLICIT",
+      "source": "ICD is a key enzyme in the tricarboxylic acid cycle pathway, and also affects bacterial biofilm formation and virulence in several species (Venkat et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Venkat et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "3967d072-b799-4b03-88f8-b95898c25867",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C85",
+      "claim": "In E. coli K12, there are at least 15 Kac sites on ICD.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli K12, there are at least 15 Kac sites on ICD, and the Kac at K55 and K350 have been determined to play crucial roles on the enzymatic activity by a positively regulatory manner, while Kac at K100, K230, and K235 in a negatively regulatory manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies on E. coli ICD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "e64a574c-2af1-4270-855f-d5267a3e8150",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C86",
+      "claim": "The Kac at K55 and K350 of E. coli ICD play crucial roles on the enzymatic activity by a positively regulatory manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli K12, there are at least 15 Kac sites on ICD, and the Kac at K55 and K350 have been determined to play crucial roles on the enzymatic activity by a positively regulatory manner, while Kac at K100, K230, and K235 in a negatively regulatory manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies on E. coli ICD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "0c4cbb48-2730-409f-ba37-397257c7dcd5",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C87",
+      "claim": "The Kac at K100, K230, and K235 of E. coli ICD play crucial roles on the enzymatic activity by a negatively regulatory manner.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli K12, there are at least 15 Kac sites on ICD, and the Kac at K55 and K350 have been determined to play crucial roles on the enzymatic activity by a positively regulatory manner, while Kac at K100, K230, and K235 in a negatively regulatory manner.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies on E. coli ICD.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "9d115b65-580e-4424-a4e1-8cd99a04518c",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C88",
+      "claim": "Only four Kac sites including K55, K142, K177, and K350 of E. coli ICD have been proved to be deacetylated by CobB sirtuin.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only four Kac sites including K55, K142, K177, and K350 have been proved to be deacetylated by CobB sirtuin obviously.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge from previous studies on E. coli CobB.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "b371ccd3-357f-4c2c-9f76-e91e9d023b21",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C89",
+      "claim": "There are at least ten Kac sites in A. hydrophila ICD protein.",
+      "claim_type": "EXPLICIT",
+      "source": "In our quantitative MS data, there are at least ten Kac sites in ICD protein, while only the Kac level of ICD K388 was AhCobQ regulated and others were not altered in KADCs deleted strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "2bb47caf-f880-4111-be2e-03a4bde1f7c4",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C90",
+      "claim": "Only the Kac level of ICD K388 was AhCobQ regulated in A. hydrophila.",
+      "claim_type": "EXPLICIT",
+      "source": "In our quantitative MS data, there are at least ten Kac sites in ICD protein, while only the Kac level of ICD K388 was AhCobQ regulated and others were not altered in KADCs deleted strains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by quantitative MS data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "a4c3f054-26b0-48d4-9010-51150101cea6",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C91",
+      "claim": "The enzymatic activity of ICD was negatively regulated by acetylation at K388 site by AhCobQ.",
+      "claim_type": "EXPLICIT",
+      "source": "The following assay confirmed that the enzymatic activity of ICD was negatively regulated in a dose-dependent manner by deaectylated ICD K388 site by AhCobQ, whereas not affected by AhCobB and AhAcuC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by enzymatic activity assay data shown in Figure 8.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "4ea66551-f5c5-46fe-8e3a-9b28543cb42d",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "claim_id": "C92",
+      "claim": "AhCobQ represents a distinctive type of KDAC with significant roles in bacterial biological functions.",
+      "claim_type": "EXPLICIT",
+      "source": "In summary, our findings present compelling evidence that AhCobQ represents a distinctive type of KDAC with significant roles in bacterial biological functions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion based on all the experimental data presented in the study.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "39306dae-4017-4b60-8dce-fb4174eda53f",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Deletion of ahcobB and ahcobQ in A. hydrophila produces distinct phenotypic effects. While \u0394ahcobB did not affect hemolytic or swarming ability but sharply increased biofilm formation, \u0394ahcobQ did not affect hemolytic ability but significantly increased swarming and decreased biofilm formation, suggesting different biological roles for these proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C14 present consistent phenotypic data from deletion mutants shown in Figure 1, with appropriate controls and statistical analysis (C13, C14 show p<0.005). The inference in C15 that CobB and CobQ play different roles is well-supported by the contrasting phenotypes, particularly the opposite effects on biofilm formation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "f4675149-c607-45e8-93eb-5cda33e3c6c4",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "AhCobB and AhCobQ belong to different protein families. AhCobB is a NAD+-dependent sirtuin with a conserved SIR2 domain homologous to bacterial CobB and human sirtuins, while AhCobQ shares an AAA_31 ATPase domain with cobalamin biosynthesis proteins and is homologous to cobyric acid synthase but not to CobB sirtuin family proteins.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C16-C19 and C63-C65 are supported by bioinformatics analysis shown in Figure 2A-B and database annotations. The homology analyses clearly demonstrate that despite similar naming, these proteins belong to distinct families with different conserved domains.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "AhCobQ exhibits NAD+-, Zn2+-, and ATP-independent lysine deacetylase activity. Deletion of either ahcobQ or ahcobB increased whole protein lysine acetylation levels. In vitro assays demonstrated that AhCobQ deacetylated Kac-BSA regardless of NAD+ or Zn2+ presence, was not inhibited by the sirtuin inhibitor NAM or metal chelator EDTA, and did not require ATP for activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C28 are well-supported by multiple complementary experiments (dot blot, western blot) shown in Figure 2C-H. The controls with AhCobB (NAD+-dependent) and AhAcuC (Zn2+-dependent) provide appropriate comparisons. The independence from cofactors is demonstrated through systematic testing with inhibitors and chelators.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "82c46de1-9d8d-4c40-a001-200ac05690f9",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "AhCobQ functions as a deacetylase rather than a hydrolase. LC MS/MS analysis showed that at least 15 Kac peptides in BSA had significantly decreased MS intensities after AhCobQ treatment, and synthetic peptide experiments confirmed that AhCobQ removes acetyl groups without hydrolyzing peptides.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C29-C30 are supported by LC MS/MS data (Supplementary file 1a) and synthetic peptide experiments shown in Figure 3. The MS2 spectra clearly demonstrate deacetylation without peptide hydrolysis, providing strong evidence for the deacetylase mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "e75d37b8-e2b4-405d-a855-c884f75b1a4b",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The KDAC activity of AhCobQ is located in an unidentified domain from amino acids 195-245. Truncation studies showed that the 179-264 aa fragment retained deacetylase activity while the 1-179 aa fragment did not. This KDAC domain does not share homology with Soj protein, site-determining protein, or ParA family protein in A. hydrophila.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C33, C4, and C34 are supported by systematic truncation analysis shown in Figure 4. Multiple truncated proteins were tested (12 total), and the results consistently narrow the active domain to the 195-245 aa range. The bioinformatics analysis confirms this domain is distinct from homologous regions in related proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "608143a9-1572-45a8-965f-8932b10e3b4a",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "AhCobQ represents a novel type of KDAC with no homology to currently known KDACs. The KDAC domain (195-245 aa) shares homology with several prokaryotic species, predominantly marine prokaryotes, but no homologous proteins were found in eukaryotic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C6 and C35 are supported by comprehensive bioinformatics analysis including PSI-BLAST searches shown in Figure 5. The phylogenetic analysis demonstrates homology restricted to specific bacterial genera, with no eukaryotic homologs identified, supporting the novelty of this KDAC type.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "fe86b652-0cf5-4df5-922c-f9c668e19a59",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Quantitative acetylome analysis revealed distinct substrate specificities for three KDACs in A. hydrophila. Deletion of ahcobQ, ahcobB, and ahacuC led to increased abundances at 52, 370, and 197 Kac sites, respectively, with both unique and overlapping substrates. Only 531 Kac peptides (10.28% of 3163 total) were directly regulated by these three deacetylases, suggesting the presence of additional unknown KDACs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C44 are supported by comprehensive quantitative acetylome data shown in Figure 6 with appropriate statistical analysis (fold change >1.5, p<0.05). The Venn diagram analysis clearly demonstrates both unique and shared substrates. The inference about additional KDACs (C44) is reasonable given that ~90% of Kac sites are not regulated by the three known KDACs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "43c2c0b5-cee3-426b-aace-4883c793fee8",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "KEGG pathway analysis showed that biosynthesis of amino acids and antibiotics was enriched in the unique upregulated Kac proteins in the \u0394ahcobQ strain.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C45 is supported by KEGG pathway enrichment analysis shown in Figure 6B. The pathway analysis is appropriate for the dataset and provides functional context for AhCobQ substrates.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "4daac3be-bedc-48f7-ab21-443eb2398088",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "AhCobQ deacetylates both common and specific lysine-acetylated sites compared to other KDACs. Validation experiments confirmed that AhCobQ deacetylates sites common to AhCobB and AhAcuC, as well as unique sites, and co-regulates the same Kac sites on ArcA-2 with AhCobB.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 and C76 are supported by validation experiments shown in Figure 7 using site-specific acetylation. The western blot data clearly demonstrate both unique and shared substrate specificity, with appropriate controls for each KDAC tested.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "AhCobQ positively regulates ICD enzymatic activity by deacetylating K388. Western blot showed that AhCobQ, but not AhCobB or AhAcuC, significantly deacetylated ICD at K388. Acetylation at K388 decreased NADPH production, and addition of AhCobQ significantly increased the enzymatic activity of K388-acetylated ICD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C46-C53, C8, C90-C91 are supported by multiple complementary experiments shown in Figure 8, including western blot validation of deacetylation specificity and enzymatic activity assays measuring NADPH production. The data show statistical significance (p<0.001) and appropriate controls with other KDACs.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "b7fc60dc-05b4-46ea-bedb-62cd5db2a79b",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AhCobQ has specific protein substrates in common with other known KDACs, and the cooperation of these KDACs may play an important role in maintaining cellular acetylation homeostasis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7 and C77 are supported by the quantitative acetylome data (Figure 6) showing overlapping substrates and validation experiments (Figure 7) demonstrating co-regulation of specific sites. The inference about cooperation in acetylation homeostasis is reasonable based on the observed substrate overlap.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "ee47219b-0ee3-470e-8994-d99446ff5a50",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "9.9% of acetylated proteins (312/3164 Kac proteins) were regulated by ahcobB, consistent with the proportion in E. coli cobB mutant and supporting that CobB is the predominate deacetylase in some bacterial species.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are supported by quantitative acetylome data and appropriate citations (Weinert et al., 2013; AbouElfetouh et al., 2015). The comparison to E. coli provides context for the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "427e98fa-dc27-47a2-af41-d164597928e9",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Different KDACs regulate specific Kac sites on the same protein. K331 and K449 of GyrB were deacetylated by AhCobQ and AhCobB, respectively, representing the first evidence of site-specific regulation by different KDACs on the same protein in prokaryotic cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C80-C81 are supported by quantitative acetylome data. However, C82's claim of being \"first evidence\" is based on the authors' knowledge of the literature without systematic review. While the finding is novel and well-supported experimentally, the priority claim should be viewed cautiously.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "26046349-dd56-4e9a-ba68-cb45d45cb981",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "There is conflicting CobB annotation in UniProt database, with two distinct functions: NAD-dependent protein deacylase and ATP-dependent a,c-diamide synthase. In A. hydrophila ATCC 7966, CobB annotation is specific for NAD-dependent protein deacylase, and there is no a,c-diamide synthase homolog. The role of AhCobQ is unknown because A. hydrophila may import rather than synthesize cobalamin.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C73 are supported by database analysis and appropriate citations (Galperin and Grishin, 2000; Seshadri et al., 2006). The discussion of annotation conflicts provides important context for understanding the protein nomenclature and functional predictions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "c82a557c-cbf4-4dbc-9f48-9767ba215e4b",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Structural analysis shows that GyrB K331 is located in the ATPase domain responsible for supercoiling DNA, while K449 is located in the Toprim domain required for interaction with GyrA.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C78-C79 are supported by 3D structure prediction and citation to Brino et al., 2000. The structural context provides mechanistic insight into the differential regulation of these sites.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "81cfa2dc-3e00-43ab-9e41-97088147e1f0",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "ICD is a key enzyme in the TCA cycle that affects bacterial biofilm formation and virulence. In E. coli K12, there are at least 15 Kac sites on ICD with known regulatory effects, and only four sites are deacetylated by CobB. In A. hydrophila, at least ten Kac sites were identified in ICD protein.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C83-C89 provide established background knowledge about ICD acetylation (supported by citation to Venkat et al., 2018) and new data from this study. The comparison between E. coli and A. hydrophila ICD acetylation provides important context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "767cf1e5-4193-4c7c-be16-300a2afcab29",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "Background on lysine acetylation and deacetylases: Kac modifications play crucial roles in cellular functions. In prokaryotes, only two types of KDACs (Zn2+- or NAD+-dependent) have been confirmed. In eukaryotes, there are at least 18 types of HDACs in four classes in mammals, with sirtuins being NAD+-dependent and types I, II, and IV being Zn2+-dependent.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C54-C62 provide established background knowledge supported by appropriate citations. These claims set the context for the novelty of the findings but are not primary results of this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "d9159b60-b1c8-4124-b9a5-38d88b6df2b2",
+      "content_id": "01b2c93e-68e3-4382-b69c-0045a820220a",
+      "result_id": "R18",
+      "result_category": "llm",
+      "result": "AhCobQ represents a distinctive type of KDAC with significant roles in bacterial biological functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C92 is a summary conclusion supported by the collective experimental evidence presented throughout the study, including the novel cofactor-independent mechanism, unique domain structure, specific substrate profile, and functional regulation of ICD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "323e7ac8-010e-4ab2-908a-af5b15598624",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "AhCobQ represents a novel type of deacetylase with no homology to known KDACs or eukaryotic proteins. The active domain (195-245 aa) shares homology only with marine prokaryotes, establishing AhCobQ as a prokaryote-specific enzyme.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer explicitly challenges the generalization to 'prokaryotes,' stating it is 'a little arbitrary' to claim this is a new type in prokaryotes without evidence from other species. The editor notes 'significant aspects of the data are still incomplete,' suggesting the novelty claim requires further support. However, another reviewer accepts the finding, noting AhCobQ 'lacks homology with eukaryotic counterparts, thus underscoring its unique evolutionary trajectory within the bacterial domain.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "60609c12-4537-4963-b74a-9efefbd51a0a",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "AhCobQ exhibits NAD+- and Zn2+-independent deacetylase activity that is also ATP-independent and insensitive to EDTA and nicotinamide inhibitors, distinguishing it from known bacterial deacetylases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While one reviewer states the manuscript 'convincingly illustrates CobQ's deacetylase activity through robust in vitro experiments,' the editor notes 'significant aspects of the data are still incomplete and require further refinement.' A third reviewer raises concerns about missing loading controls and requests 'all of the load controls with whole PAGE gel or whole membrane western blot results,' indicating methodological concerns that affect confidence in the deacetylase activity claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "2351bd10-9747-4a0a-b445-cb9acb2139d4",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The KDAC activity of AhCobQ is localized to an unidentified domain spanning amino acids 195-245, as determined by truncation analysis showing that fragments containing this region retain deacetylase activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The editor states 'significant aspects of the data are still incomplete and require further refinement,' and one reviewer requests complete loading controls and better documentation of experimental conditions. The lack of complete methodological transparency raises uncertainty about the domain mapping conclusions, though the basic finding is not directly challenged.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "9d15f659-c9c3-41c7-a370-7f965f5455e0",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Deletion of ahcobQ, ahcobB, or ahacuC increases global protein lysine acetylation levels and leads to increased acetylation at 52, 370, and 197 sites respectively, as measured by dot blot, western blot, and quantitative acetylome analysis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer explicitly requests 'all of the load controls with whole PAGE gel or whole membrane western blot results,' stating 'Without these whole results, it is not convincing to come the conclusion as the authors mentioned.' The editor notes the data are 'still incomplete,' indicating the acetylome quantification requires better documentation and controls before the claims can be fully supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "0f476259-63fe-4848-b2e3-eaae4abca038",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "AhCobQ shares overlapping substrates with other KDACs (19 sites with AhAcuC, 10 with AhCobB) but also deacetylates unique sites, and can co-regulate the same sites as AhCobB on proteins like ArcA-2, demonstrating substrate specificity and cooperation among deacetylases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "One reviewer explicitly states the authors 'elucidate CobQ's potential cooperation with other deacetylases in vivo to regulate bacterial cellular processes,' accepting this finding. While methodological concerns are raised about loading controls, the substrate overlap and cooperation findings are not directly challenged and appear to be accepted as demonstrating functional relationships among the deacetylases.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "ef092080-f74d-4568-a6f6-84813f4aef40",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "AhCobQ specifically deacetylates ICD at K388, which negatively regulates ICD enzymatic activity. Addition of AhCobQ increases NADPH production from acetylated ICD, while AhCobB and AhAcuC do not affect ICD activity at this site.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While one reviewer notes the study 'highlights CobQ's significance in the regulation of acetylation within prokaryotic cells,' the editor states 'significant aspects of the data are still incomplete.' One reviewer requests complete experimental documentation including 'experimental conditions, replicates, etc.' in figure legends, and another requests all loading controls. These methodological concerns create uncertainty about the ICD regulation claims despite their biological significance.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "18bcc835-4f58-4298-9548-801d0e3411d4",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Deletion of ahcobB and ahcobQ produces differential phenotypic effects: \u0394ahcobB increases biofilm formation while \u0394ahcobQ decreases it; \u0394ahcobQ increases swarming ability while neither deletion affects hemolytic activity, indicating distinct biological roles for these deacetylases.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These phenotypic observations are not challenged by any reviewer. One reviewer explicitly accepts that the authors demonstrate CobQ and CobB have different roles, and the differential effects on biofilm and swarming are presented as straightforward experimental observations without methodological critique.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "63bc917d-4dac-4858-987d-1e13c43ebfd1",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Mass spectrometry analysis shows AhCobQ treatment decreases the intensity of at least 15 acetylated peptides in BSA, demonstrating that AhCobQ removes acetyl groups without hydrolyzing the protein substrate.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer notes concerns about missing supplementary data, stating 'there are no data about Tables S1-S6,' which may include the MS data supporting these claims. The editor's comment that 'significant aspects of the data are still incomplete' suggests the MS evidence requires better documentation, though the basic conclusion is not directly refuted.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "db4c4711-7620-4b5f-88a1-0bf593282e28",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "AhCobB belongs to the NAD+-dependent sirtuin family with a conserved SIR2 domain, while AhCobQ contains an AAA_31 ATPase domain and shares homology with Soj and MinD proteins. Both proteins function as expected based on their domain architecture in control experiments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These bioinformatics and control characterizations are not challenged by reviewers. The domain analyses and positive control experiments with AhCobB and AhAcuC are accepted as establishing the expected properties of known deacetylase types, providing context for the novel AhCobQ findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "1e848d69-f8d8-49ae-a479-3ae63a09ad0c",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Only 531 Kac peptides (10.28% of 3163 total identified) are directly regulated by the three known deacetylases, suggesting the presence of additional unknown KDACs in A. hydrophila.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This inference from the acetylome data is not challenged by reviewers. It represents a logical conclusion from the quantitative data showing that most acetylation sites are not affected by deletion of the three characterized deacetylases, though it is a supporting rather than central finding.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "c98111e5-b55b-4c0a-be0c-0408d4729296",
+      "content_id": "dedadef5-ab9e-4fbc-a86a-f0a4d6608e47",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "KEGG pathway analysis shows that biosynthesis of amino acids and antibiotics is enriched among proteins with unique upregulated acetylation in the \u0394ahcobQ strain.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This bioinformatics analysis result is not challenged by reviewers and represents a straightforward pathway enrichment finding that helps characterize AhCobQ's cellular roles, though it is a supporting detail rather than a primary conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "545793b3-0d5d-4523-9f9b-296e10643780",
+      "result_id": "39306dae-4017-4b60-8dce-fb4174eda53f"
+    },
+    {
+      "claim_id": "8ba86f32-3bf7-4507-b37a-c2b448b29278",
+      "result_id": "39306dae-4017-4b60-8dce-fb4174eda53f"
+    },
+    {
+      "claim_id": "f70d20e7-d889-4f62-a265-07bc02e98093",
+      "result_id": "39306dae-4017-4b60-8dce-fb4174eda53f"
+    },
+    {
+      "claim_id": "4ee7d71d-5149-49d0-9241-bfb76fa79d0d",
+      "result_id": "39306dae-4017-4b60-8dce-fb4174eda53f"
+    },
+    {
+      "claim_id": "bb6fd1b1-e45b-4655-b1ff-c92a5ca7e614",
+      "result_id": "39306dae-4017-4b60-8dce-fb4174eda53f"
+    },
+    {
+      "claim_id": "ecd56178-045e-4e70-826d-8009e0c5b146",
+      "result_id": "39306dae-4017-4b60-8dce-fb4174eda53f"
+    },
+    {
+      "claim_id": "41923b05-f11e-4558-bdf9-433c34e8da6e",
+      "result_id": "39306dae-4017-4b60-8dce-fb4174eda53f"
+    },
+    {
+      "claim_id": "2e223ca9-e505-4801-abd5-76197e91480c",
+      "result_id": "f4675149-c607-45e8-93eb-5cda33e3c6c4"
+    },
+    {
+      "claim_id": "d24b2322-733e-4fe1-8b45-174309cb7fcc",
+      "result_id": "f4675149-c607-45e8-93eb-5cda33e3c6c4"
+    },
+    {
+      "claim_id": "0ce498c7-829f-47fb-a186-f2a789e9da4c",
+      "result_id": "f4675149-c607-45e8-93eb-5cda33e3c6c4"
+    },
+    {
+      "claim_id": "c255739e-18a6-4b26-8759-1fbd70ca35ce",
+      "result_id": "f4675149-c607-45e8-93eb-5cda33e3c6c4"
+    },
+    {
+      "claim_id": "84cb59b6-7ac2-4529-8b8f-1bfbf99d7ec3",
+      "result_id": "f4675149-c607-45e8-93eb-5cda33e3c6c4"
+    },
+    {
+      "claim_id": "c17c6473-667b-4e40-bc81-99dde73fcc94",
+      "result_id": "f4675149-c607-45e8-93eb-5cda33e3c6c4"
+    },
+    {
+      "claim_id": "b07eef95-ec02-46fc-8388-ece48e4fa0b0",
+      "result_id": "f4675149-c607-45e8-93eb-5cda33e3c6c4"
+    },
+    {
+      "claim_id": "1df5076b-74dc-499d-a458-ba551d05f285",
+      "result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f"
+    },
+    {
+      "claim_id": "665c168e-e851-481b-a67e-625e6b1dbdaf",
+      "result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f"
+    },
+    {
+      "claim_id": "e7cab9d8-26e5-4bff-bb18-3c49b6deca3e",
+      "result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f"
+    },
+    {
+      "claim_id": "1e98d08e-04a0-488c-a2dd-d5d2808ba1eb",
+      "result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f"
+    },
+    {
+      "claim_id": "7088cc30-ce6b-4153-87d5-f9f6cba35f93",
+      "result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f"
+    },
+    {
+      "claim_id": "b33584a2-3cdb-4843-86b2-3d68139d430c",
+      "result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f"
+    },
+    {
+      "claim_id": "e733c2d2-62d5-4100-806e-ea067241f692",
+      "result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f"
+    },
+    {
+      "claim_id": "26368626-fad8-4943-911f-4152cb135d4d",
+      "result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f"
+    },
+    {
+      "claim_id": "16660267-151d-43d5-8e3b-6d624d04b2f1",
+      "result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f"
+    },
+    {
+      "claim_id": "e1a3b75f-be1f-4528-b7c8-902aeb449c35",
+      "result_id": "82c46de1-9d8d-4c40-a001-200ac05690f9"
+    },
+    {
+      "claim_id": "95820204-6990-4008-9acd-0bab09267478",
+      "result_id": "82c46de1-9d8d-4c40-a001-200ac05690f9"
+    },
+    {
+      "claim_id": "a39657c0-100b-440c-b762-4940ea029c50",
+      "result_id": "e75d37b8-e2b4-405d-a855-c884f75b1a4b"
+    },
+    {
+      "claim_id": "bfd63917-05c1-44fa-b9dd-7669d77c84d7",
+      "result_id": "e75d37b8-e2b4-405d-a855-c884f75b1a4b"
+    },
+    {
+      "claim_id": "976e9900-118d-4b39-8448-196ed6541818",
+      "result_id": "e75d37b8-e2b4-405d-a855-c884f75b1a4b"
+    },
+    {
+      "claim_id": "f49933c0-e2aa-4068-a3d8-70bf7033c6df",
+      "result_id": "e75d37b8-e2b4-405d-a855-c884f75b1a4b"
+    },
+    {
+      "claim_id": "5185d78b-22a6-42eb-a26b-7793f9abefe7",
+      "result_id": "e75d37b8-e2b4-405d-a855-c884f75b1a4b"
+    },
+    {
+      "claim_id": "bb951a85-b0cd-4e72-a60f-af3c9e1525c1",
+      "result_id": "608143a9-1572-45a8-965f-8932b10e3b4a"
+    },
+    {
+      "claim_id": "86d5d4d7-6b88-4d0a-84f1-800829373b3c",
+      "result_id": "608143a9-1572-45a8-965f-8932b10e3b4a"
+    },
+    {
+      "claim_id": "6b82e07a-1a24-4b03-9e7f-bd1b76bec8fd",
+      "result_id": "608143a9-1572-45a8-965f-8932b10e3b4a"
+    },
+    {
+      "claim_id": "d6f43c79-9f16-44d8-8c40-e5c014503ff4",
+      "result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59"
+    },
+    {
+      "claim_id": "7366028b-1bf7-4e21-bb33-be61386fd922",
+      "result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59"
+    },
+    {
+      "claim_id": "c90197f4-8c72-4339-b233-2bc6cdde4567",
+      "result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59"
+    },
+    {
+      "claim_id": "b533f21a-b204-48fd-b494-d0f5fd77394f",
+      "result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59"
+    },
+    {
+      "claim_id": "6c000818-f883-4c43-aae5-0592337f0c92",
+      "result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59"
+    },
+    {
+      "claim_id": "2647860c-7258-4fa1-bada-4bcecd14dadf",
+      "result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59"
+    },
+    {
+      "claim_id": "774d3566-7502-480c-b0e8-83c03447233c",
+      "result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59"
+    },
+    {
+      "claim_id": "d71b1502-47e2-4f11-9a80-9244f0a91b43",
+      "result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59"
+    },
+    {
+      "claim_id": "3bfecaa5-cc00-45d6-b5f6-5dd63fa06e5f",
+      "result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59"
+    },
+    {
+      "claim_id": "764a96d7-8cda-4fe1-934e-c21eb3cec9fa",
+      "result_id": "43c2c0b5-cee3-426b-aace-4883c793fee8"
+    },
+    {
+      "claim_id": "02c4d58d-a3a9-420a-8448-c6a6b3d94e9f",
+      "result_id": "4daac3be-bedc-48f7-ab21-443eb2398088"
+    },
+    {
+      "claim_id": "d6b039e6-bfd2-48b4-b32f-2c306f1ea1c0",
+      "result_id": "4daac3be-bedc-48f7-ab21-443eb2398088"
+    },
+    {
+      "claim_id": "dac48e3c-07fd-4240-b686-5e5a8773719d",
+      "result_id": "4daac3be-bedc-48f7-ab21-443eb2398088"
+    },
+    {
+      "claim_id": "97c317ec-7830-453c-b86a-59b04a4b771f",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "64eac817-65a0-4054-bd76-e52054bb60a1",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "78bb7b84-c989-4d60-91f3-9337ca1da55a",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "abd6bf90-274a-46a3-9490-5022a3181c50",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "526e5e92-dff5-4bc8-9c83-0535c9809833",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "fbce16e3-bc61-47a5-ae57-652a8cc34f2a",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "f71e5f7a-2ee3-44dd-994c-a22c8f64eb2d",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "68298e56-5452-4e49-bb1e-b75fb3b7b729",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "52478f57-d508-47ed-bdea-20c3a3579fe5",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "2bb47caf-f880-4111-be2e-03a4bde1f7c4",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "a4c3f054-26b0-48d4-9010-51150101cea6",
+      "result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e"
+    },
+    {
+      "claim_id": "0a5c162b-7628-4780-b554-0b29ed88cbde",
+      "result_id": "b7fc60dc-05b4-46ea-bedb-62cd5db2a79b"
+    },
+    {
+      "claim_id": "831c1a22-5477-44bf-bf99-adee585bc321",
+      "result_id": "b7fc60dc-05b4-46ea-bedb-62cd5db2a79b"
+    },
+    {
+      "claim_id": "1dc2ee48-d97b-4b38-b077-dbdf4abcb360",
+      "result_id": "ee47219b-0ee3-470e-8994-d99446ff5a50"
+    },
+    {
+      "claim_id": "5501467c-c46f-489b-a501-32df5b96dcf0",
+      "result_id": "ee47219b-0ee3-470e-8994-d99446ff5a50"
+    },
+    {
+      "claim_id": "6229b123-a728-4b4d-b5df-750d97e374a6",
+      "result_id": "427e98fa-dc27-47a2-af41-d164597928e9"
+    },
+    {
+      "claim_id": "45991da1-d7d3-498d-bfc3-97ff0e8ccccb",
+      "result_id": "427e98fa-dc27-47a2-af41-d164597928e9"
+    },
+    {
+      "claim_id": "97e471c6-e175-47ef-984c-8df9215fae5e",
+      "result_id": "427e98fa-dc27-47a2-af41-d164597928e9"
+    },
+    {
+      "claim_id": "5716d2d3-ba32-4240-8fc1-9d126098e494",
+      "result_id": "26046349-dd56-4e9a-ba68-cb45d45cb981"
+    },
+    {
+      "claim_id": "69c40bed-9782-4f89-a94a-58cacb6cbac6",
+      "result_id": "26046349-dd56-4e9a-ba68-cb45d45cb981"
+    },
+    {
+      "claim_id": "e420e392-87e7-4e7e-9541-0c25968913b9",
+      "result_id": "26046349-dd56-4e9a-ba68-cb45d45cb981"
+    },
+    {
+      "claim_id": "285bc067-e652-484c-a1aa-4a502484bc68",
+      "result_id": "26046349-dd56-4e9a-ba68-cb45d45cb981"
+    },
+    {
+      "claim_id": "723b3827-573f-4cae-9719-9c9f5025cb3e",
+      "result_id": "26046349-dd56-4e9a-ba68-cb45d45cb981"
+    },
+    {
+      "claim_id": "0000191b-a21f-4d34-b31b-6dad7b75fa10",
+      "result_id": "26046349-dd56-4e9a-ba68-cb45d45cb981"
+    },
+    {
+      "claim_id": "96a2db14-48d9-4416-ae7f-4265ada490f3",
+      "result_id": "c82a557c-cbf4-4dbc-9f48-9767ba215e4b"
+    },
+    {
+      "claim_id": "20e1b27c-cd03-4822-8e12-b3b896e11957",
+      "result_id": "c82a557c-cbf4-4dbc-9f48-9767ba215e4b"
+    },
+    {
+      "claim_id": "0679acac-258e-4844-bfae-4f1b364be018",
+      "result_id": "81cfa2dc-3e00-43ab-9e41-97088147e1f0"
+    },
+    {
+      "claim_id": "43c70d9e-5ca5-41a9-a15b-0051b5304dfb",
+      "result_id": "81cfa2dc-3e00-43ab-9e41-97088147e1f0"
+    },
+    {
+      "claim_id": "3967d072-b799-4b03-88f8-b95898c25867",
+      "result_id": "81cfa2dc-3e00-43ab-9e41-97088147e1f0"
+    },
+    {
+      "claim_id": "e64a574c-2af1-4270-855f-d5267a3e8150",
+      "result_id": "81cfa2dc-3e00-43ab-9e41-97088147e1f0"
+    },
+    {
+      "claim_id": "0c4cbb48-2730-409f-ba37-397257c7dcd5",
+      "result_id": "81cfa2dc-3e00-43ab-9e41-97088147e1f0"
+    },
+    {
+      "claim_id": "9d115b65-580e-4424-a4e1-8cd99a04518c",
+      "result_id": "81cfa2dc-3e00-43ab-9e41-97088147e1f0"
+    },
+    {
+      "claim_id": "b371ccd3-357f-4c2c-9f76-e91e9d023b21",
+      "result_id": "81cfa2dc-3e00-43ab-9e41-97088147e1f0"
+    },
+    {
+      "claim_id": "5c6b1fb6-a53a-4e74-a455-6e95050c41fa",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "36f7bd5a-dd07-4103-a260-8e8edc7fddce",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "6d8ba9e6-7e78-427e-a164-c8463c3f9354",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "235a5b8c-3434-4fe8-b117-776a8dc1c561",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "86f3e2c4-da7f-43e4-addc-599ec6124609",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "6eaf9b9f-a19e-4d88-ba29-ba12c9233b23",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "033c5595-d938-46d8-b3bc-4cc99c0f90e9",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "c2368c80-c92f-4be0-afd1-cc8e59ad0f4e",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "9e85159a-5985-48d9-bf36-3f93210c03f9",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "a6d06af8-54be-421c-b48a-0aa6712464d6",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "0df540e0-99cc-4a78-b194-e84db5412d13",
+      "result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29"
+    },
+    {
+      "claim_id": "4ea66551-f5c5-46fe-8e3a-9b28543cb42d",
+      "result_id": "d9159b60-b1c8-4124-b9a5-38d88b6df2b2"
+    },
+    {
+      "claim_id": "bb951a85-b0cd-4e72-a60f-af3c9e1525c1",
+      "result_id": "323e7ac8-010e-4ab2-908a-af5b15598624"
+    },
+    {
+      "claim_id": "86d5d4d7-6b88-4d0a-84f1-800829373b3c",
+      "result_id": "323e7ac8-010e-4ab2-908a-af5b15598624"
+    },
+    {
+      "claim_id": "6b82e07a-1a24-4b03-9e7f-bd1b76bec8fd",
+      "result_id": "323e7ac8-010e-4ab2-908a-af5b15598624"
+    },
+    {
+      "claim_id": "b07eef95-ec02-46fc-8388-ece48e4fa0b0",
+      "result_id": "323e7ac8-010e-4ab2-908a-af5b15598624"
+    },
+    {
+      "claim_id": "7088cc30-ce6b-4153-87d5-f9f6cba35f93",
+      "result_id": "60609c12-4537-4963-b74a-9efefbd51a0a"
+    },
+    {
+      "claim_id": "b33584a2-3cdb-4843-86b2-3d68139d430c",
+      "result_id": "60609c12-4537-4963-b74a-9efefbd51a0a"
+    },
+    {
+      "claim_id": "e733c2d2-62d5-4100-806e-ea067241f692",
+      "result_id": "60609c12-4537-4963-b74a-9efefbd51a0a"
+    },
+    {
+      "claim_id": "26368626-fad8-4943-911f-4152cb135d4d",
+      "result_id": "60609c12-4537-4963-b74a-9efefbd51a0a"
+    },
+    {
+      "claim_id": "16660267-151d-43d5-8e3b-6d624d04b2f1",
+      "result_id": "60609c12-4537-4963-b74a-9efefbd51a0a"
+    },
+    {
+      "claim_id": "f49933c0-e2aa-4068-a3d8-70bf7033c6df",
+      "result_id": "2351bd10-9747-4a0a-b445-cb9acb2139d4"
+    },
+    {
+      "claim_id": "a39657c0-100b-440c-b762-4940ea029c50",
+      "result_id": "2351bd10-9747-4a0a-b445-cb9acb2139d4"
+    },
+    {
+      "claim_id": "bfd63917-05c1-44fa-b9dd-7669d77c84d7",
+      "result_id": "2351bd10-9747-4a0a-b445-cb9acb2139d4"
+    },
+    {
+      "claim_id": "976e9900-118d-4b39-8448-196ed6541818",
+      "result_id": "2351bd10-9747-4a0a-b445-cb9acb2139d4"
+    },
+    {
+      "claim_id": "1df5076b-74dc-499d-a458-ba551d05f285",
+      "result_id": "9d15f659-c9c3-41c7-a370-7f965f5455e0"
+    },
+    {
+      "claim_id": "665c168e-e851-481b-a67e-625e6b1dbdaf",
+      "result_id": "9d15f659-c9c3-41c7-a370-7f965f5455e0"
+    },
+    {
+      "claim_id": "d6f43c79-9f16-44d8-8c40-e5c014503ff4",
+      "result_id": "9d15f659-c9c3-41c7-a370-7f965f5455e0"
+    },
+    {
+      "claim_id": "7366028b-1bf7-4e21-bb33-be61386fd922",
+      "result_id": "9d15f659-c9c3-41c7-a370-7f965f5455e0"
+    },
+    {
+      "claim_id": "c90197f4-8c72-4339-b233-2bc6cdde4567",
+      "result_id": "9d15f659-c9c3-41c7-a370-7f965f5455e0"
+    },
+    {
+      "claim_id": "0a5c162b-7628-4780-b554-0b29ed88cbde",
+      "result_id": "0f476259-63fe-4848-b2e3-eaae4abca038"
+    },
+    {
+      "claim_id": "b533f21a-b204-48fd-b494-d0f5fd77394f",
+      "result_id": "0f476259-63fe-4848-b2e3-eaae4abca038"
+    },
+    {
+      "claim_id": "6c000818-f883-4c43-aae5-0592337f0c92",
+      "result_id": "0f476259-63fe-4848-b2e3-eaae4abca038"
+    },
+    {
+      "claim_id": "2647860c-7258-4fa1-bada-4bcecd14dadf",
+      "result_id": "0f476259-63fe-4848-b2e3-eaae4abca038"
+    },
+    {
+      "claim_id": "774d3566-7502-480c-b0e8-83c03447233c",
+      "result_id": "0f476259-63fe-4848-b2e3-eaae4abca038"
+    },
+    {
+      "claim_id": "02c4d58d-a3a9-420a-8448-c6a6b3d94e9f",
+      "result_id": "0f476259-63fe-4848-b2e3-eaae4abca038"
+    },
+    {
+      "claim_id": "d6b039e6-bfd2-48b4-b32f-2c306f1ea1c0",
+      "result_id": "0f476259-63fe-4848-b2e3-eaae4abca038"
+    },
+    {
+      "claim_id": "dac48e3c-07fd-4240-b686-5e5a8773719d",
+      "result_id": "0f476259-63fe-4848-b2e3-eaae4abca038"
+    },
+    {
+      "claim_id": "97c317ec-7830-453c-b86a-59b04a4b771f",
+      "result_id": "ef092080-f74d-4568-a6f6-84813f4aef40"
+    },
+    {
+      "claim_id": "64eac817-65a0-4054-bd76-e52054bb60a1",
+      "result_id": "ef092080-f74d-4568-a6f6-84813f4aef40"
+    },
+    {
+      "claim_id": "78bb7b84-c989-4d60-91f3-9337ca1da55a",
+      "result_id": "ef092080-f74d-4568-a6f6-84813f4aef40"
+    },
+    {
+      "claim_id": "abd6bf90-274a-46a3-9490-5022a3181c50",
+      "result_id": "ef092080-f74d-4568-a6f6-84813f4aef40"
+    },
+    {
+      "claim_id": "526e5e92-dff5-4bc8-9c83-0535c9809833",
+      "result_id": "ef092080-f74d-4568-a6f6-84813f4aef40"
+    },
+    {
+      "claim_id": "fbce16e3-bc61-47a5-ae57-652a8cc34f2a",
+      "result_id": "ef092080-f74d-4568-a6f6-84813f4aef40"
+    },
+    {
+      "claim_id": "f71e5f7a-2ee3-44dd-994c-a22c8f64eb2d",
+      "result_id": "ef092080-f74d-4568-a6f6-84813f4aef40"
+    },
+    {
+      "claim_id": "68298e56-5452-4e49-bb1e-b75fb3b7b729",
+      "result_id": "ef092080-f74d-4568-a6f6-84813f4aef40"
+    },
+    {
+      "claim_id": "52478f57-d508-47ed-bdea-20c3a3579fe5",
+      "result_id": "ef092080-f74d-4568-a6f6-84813f4aef40"
+    },
+    {
+      "claim_id": "545793b3-0d5d-4523-9f9b-296e10643780",
+      "result_id": "18bcc835-4f58-4298-9548-801d0e3411d4"
+    },
+    {
+      "claim_id": "8ba86f32-3bf7-4507-b37a-c2b448b29278",
+      "result_id": "18bcc835-4f58-4298-9548-801d0e3411d4"
+    },
+    {
+      "claim_id": "f70d20e7-d889-4f62-a265-07bc02e98093",
+      "result_id": "18bcc835-4f58-4298-9548-801d0e3411d4"
+    },
+    {
+      "claim_id": "4ee7d71d-5149-49d0-9241-bfb76fa79d0d",
+      "result_id": "18bcc835-4f58-4298-9548-801d0e3411d4"
+    },
+    {
+      "claim_id": "bb6fd1b1-e45b-4655-b1ff-c92a5ca7e614",
+      "result_id": "18bcc835-4f58-4298-9548-801d0e3411d4"
+    },
+    {
+      "claim_id": "ecd56178-045e-4e70-826d-8009e0c5b146",
+      "result_id": "18bcc835-4f58-4298-9548-801d0e3411d4"
+    },
+    {
+      "claim_id": "41923b05-f11e-4558-bdf9-433c34e8da6e",
+      "result_id": "18bcc835-4f58-4298-9548-801d0e3411d4"
+    },
+    {
+      "claim_id": "e1a3b75f-be1f-4528-b7c8-902aeb449c35",
+      "result_id": "63bc917d-4dac-4858-987d-1e13c43ebfd1"
+    },
+    {
+      "claim_id": "95820204-6990-4008-9acd-0bab09267478",
+      "result_id": "63bc917d-4dac-4858-987d-1e13c43ebfd1"
+    },
+    {
+      "claim_id": "2e223ca9-e505-4801-abd5-76197e91480c",
+      "result_id": "db4c4711-7620-4b5f-88a1-0bf593282e28"
+    },
+    {
+      "claim_id": "d24b2322-733e-4fe1-8b45-174309cb7fcc",
+      "result_id": "db4c4711-7620-4b5f-88a1-0bf593282e28"
+    },
+    {
+      "claim_id": "0ce498c7-829f-47fb-a186-f2a789e9da4c",
+      "result_id": "db4c4711-7620-4b5f-88a1-0bf593282e28"
+    },
+    {
+      "claim_id": "c255739e-18a6-4b26-8759-1fbd70ca35ce",
+      "result_id": "db4c4711-7620-4b5f-88a1-0bf593282e28"
+    },
+    {
+      "claim_id": "e7cab9d8-26e5-4bff-bb18-3c49b6deca3e",
+      "result_id": "db4c4711-7620-4b5f-88a1-0bf593282e28"
+    },
+    {
+      "claim_id": "1e98d08e-04a0-488c-a2dd-d5d2808ba1eb",
+      "result_id": "db4c4711-7620-4b5f-88a1-0bf593282e28"
+    },
+    {
+      "claim_id": "d71b1502-47e2-4f11-9a80-9244f0a91b43",
+      "result_id": "1e848d69-f8d8-49ae-a479-3ae63a09ad0c"
+    },
+    {
+      "claim_id": "3bfecaa5-cc00-45d6-b5f6-5dd63fa06e5f",
+      "result_id": "1e848d69-f8d8-49ae-a479-3ae63a09ad0c"
+    },
+    {
+      "claim_id": "764a96d7-8cda-4fe1-934e-c21eb3cec9fa",
+      "result_id": "c98111e5-b55b-4c0a-be0c-0408d4729296"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "4beb934d-b39f-4d6f-a4f7-9198f0de18df",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "39306dae-4017-4b60-8dce-fb4174eda53f",
+      "peer_result_id": "18bcc835-4f58-4298-9548-801d0e3411d4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on phenotypic claims C9-C15. Both evaluations support the differential roles of CobB and CobQ based on deletion mutant phenotypes. OpenEval emphasizes statistical significance and appropriate controls, while peer reviewers accept these observations without methodological critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "69be152b-ecc6-4dc5-b32e-58cb53c6df24",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "82c46de1-9d8d-4c40-a001-200ac05690f9",
+      "peer_result_id": "63bc917d-4dac-4858-987d-1e13c43ebfd1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on MS/MS evidence for deacetylation mechanism (C29-C30). OpenEval finds the LC MS/MS data and synthetic peptide experiments provide strong support, while peer reviewers express uncertainty due to missing supplementary data documentation and incomplete data presentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "c1cae04a-65dd-4b53-90ee-58a9b20fad07",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "43c2c0b5-cee3-426b-aace-4883c793fee8",
+      "peer_result_id": "c98111e5-b55b-4c0a-be0c-0408d4729296",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Complete agreement on KEGG pathway enrichment analysis (C45). Both evaluations accept this bioinformatics finding as appropriately supporting the functional characterization of AhCobQ substrates, treating it as a straightforward supporting result.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "a5335541-7c5b-4c5a-bdde-471608a01704",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "ad20cd5d-d2af-4ab6-80cf-7fa988ab067e",
+      "peer_result_id": "ef092080-f74d-4568-a6f6-84813f4aef40",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on ICD regulation claims (C46-C53, C8, C90-C91). OpenEval finds the western blot and enzymatic activity data with statistical significance provide strong support, while peer reviewers express uncertainty due to incomplete experimental documentation and missing loading controls.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "006e66f9-f3f3-409d-bace-a1e401d43c26",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "e75d37b8-e2b4-405d-a855-c884f75b1a4b",
+      "peer_result_id": "2351bd10-9747-4a0a-b445-cb9acb2139d4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on domain mapping claims (C31-C33, C4, C34). OpenEval finds the systematic truncation analysis of 12 proteins provides consistent support for the 195-245 aa active domain, while peer reviewers express uncertainty due to incomplete methodological transparency and missing loading controls.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "3790c274-fcf2-4325-aedc-8673e31b9ae6",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "608143a9-1572-45a8-965f-8932b10e3b4a",
+      "peer_result_id": "323e7ac8-010e-4ab2-908a-af5b15598624",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on novelty claims (C5-C6, C35, C65). OpenEval supports the phylogenetic analysis demonstrating this as a novel KDAC type, while peer reviewers express uncertainty, with one explicitly challenging the generalization to 'prokaryotes' as arbitrary without evidence from other species.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "de78c272-a01d-4e7d-b44c-67999277ec5e",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "050a0edc-5ef4-4e5a-9883-874dd4ba485f",
+      "peer_result_id": "60609c12-4537-4963-b74a-9efefbd51a0a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on cofactor-independent deacetylase activity (C20-C28). OpenEval finds the dot blot, western blot, and systematic cofactor testing with appropriate controls provide strong support, while peer reviewers express uncertainty due to missing loading controls and incomplete methodological documentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "985644eb-3e4d-4f5c-a99b-c097269c58a0",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f4675149-c607-45e8-93eb-5cda33e3c6c4",
+      "peer_result_id": "db4c4711-7620-4b5f-88a1-0bf593282e28",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on bioinformatics characterization (C16-C19, C22-C23). Both evaluations accept the homology analyses and control experiments with AhCobB and AhAcuC as establishing the distinct protein families and expected properties of known deacetylase types.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "9aed49ee-9cab-4e48-823e-939aabd66047",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "4daac3be-bedc-48f7-ab21-443eb2398088",
+      "peer_result_id": "0f476259-63fe-4848-b2e3-eaae4abca038",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on substrate specificity (C66-C67, C76). OpenEval supports the validation experiments showing unique and shared substrate specificity, while peer reviewers accept the cooperation findings (C7, C39-C42) but raise methodological concerns about loading controls that create some uncertainty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "91afdd1e-e532-48bb-8d2e-40193fc420ee",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59",
+      "peer_result_id": "9d15f659-c9c3-41c7-a370-7f965f5455e0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on acetylome quantification (C36-C38). OpenEval finds the quantitative acetylome data with appropriate statistical analysis provides strong support, while peer reviewers express uncertainty, explicitly requesting complete loading controls and stating the data are insufficient to support the conclusions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "2496f426-1312-4235-a9ce-59d3d117218b",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59",
+      "peer_result_id": "0f476259-63fe-4848-b2e3-eaae4abca038",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on substrate overlap and cooperation (C39-C42, C7). Both evaluations support the findings of shared substrates and functional cooperation among deacetylases, with peer reviewers explicitly accepting the cooperation claims despite raising methodological concerns about other aspects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "782c2005-b562-4f75-924a-cc36bb44cb6e",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "fe86b652-0cf5-4df5-922c-f9c668e19a59",
+      "peer_result_id": "1e848d69-f8d8-49ae-a479-3ae63a09ad0c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on inference of additional KDACs (C43-C44). Both evaluations accept this logical inference from the acetylome data showing ~90% of acetylation sites are not regulated by the three characterized deacetylases, treating it as a reasonable supporting conclusion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "eab9acad-fbd7-441d-9dd0-5e75ddb46454",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "b7fc60dc-05b4-46ea-bedb-62cd5db2a79b",
+      "peer_result_id": "0f476259-63fe-4848-b2e3-eaae4abca038",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on cooperation in acetylation homeostasis (C7, C77). Both evaluations support the inference about cooperation among KDACs based on overlapping substrates and co-regulation data, with peer reviewers explicitly accepting this finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "e7952847-b8a2-4b0d-8b5e-5d17a0b57a41",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "ee47219b-0ee3-470e-8994-d99446ff5a50",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports the quantitative acetylome comparisons to E. coli (C74-C75) based on data and appropriate citations. No corresponding peer review evaluation found for these specific comparative claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "18c8e9d5-42dd-47b7-9fe0-ea7a11185342",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "427e98fa-dc27-47a2-af41-d164597928e9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports the acetylome findings (C80-C81) but notes caution about the priority claim (C82) lacking systematic review. No corresponding peer review evaluation found for these specific claims about first evidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "f007aec0-c8da-4737-862b-93e046d2b91b",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "26046349-dd56-4e9a-ba68-cb45d45cb981",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports the database analysis and discussion of annotation conflicts (C68-C73) based on appropriate citations. No corresponding peer review evaluation found for these nomenclature and annotation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "f3c27e3e-1ff3-4318-8dbf-0968a681a38e",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "c82a557c-cbf4-4dbc-9f48-9767ba215e4b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports the 3D structure prediction and mechanistic insights (C78-C79) based on structural analysis and citations. No corresponding peer review evaluation found for these structural claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "0b1dd534-3bbb-44cd-a075-54a0f7da47d4",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "81cfa2dc-3e00-43ab-9e41-97088147e1f0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports the ICD acetylation background and comparative analysis (C83-C89) based on established knowledge and new data. No corresponding peer review evaluation found for these specific ICD acetylation comparisons.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "04485210-81ba-4855-ac8e-65d1d36c7dfc",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "767cf1e5-4193-4c7c-be16-300a2afcab29",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports the background knowledge claims (C1-C2, C54-C62) as appropriately cited context-setting information. No corresponding peer review evaluation found for these background claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    },
+    {
+      "id": "c76351e1-9a47-45b6-b65e-4f8b07062a96",
+      "submission_id": "4e7b8dfa-0379-49fe-ab54-4e085a9906ee",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "d9159b60-b1c8-4124-b9a5-38d88b6df2b2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval supports the summary conclusion (C92) as appropriately synthesizing the collective experimental evidence. No corresponding peer review evaluation found for this overall conclusion claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:48:01.044828Z"
+    }
+  ]
+}

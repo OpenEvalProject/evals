@@ -1,0 +1,2081 @@
+{
+  "submission": {
+    "id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:02:15.775990Z",
+    "updated_at": "2025-11-21T22:02:15.775990Z"
+  },
+  "content": [
+    {
+      "id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "content_type": "manuscript",
+      "content_text": "# Identification of ERAD-dependent degrons for the endoplasmic reticulum lumen\n\n## Authors\n\n- Rachel Sharninghausen<sup>1</sup>\n- Jiwon Hwang<sup>1</sup>\n- Devon D Dennison<sup>2</sup>\n- Ryan D Baldridge<sup>1</sup> ([ORCID: 0000-0001-7158-7812](https://orcid.org/0000-0001-7158-7812)) \u2020\n\n### Affiliations\n\n1. Department of Biological Chemistry, University of Michigan Medical School Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n2. Cellular and Molecular Biology Program, University of Michigan Medical School Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))\n\n\u2020 Corresponding author\n\n## Abstract\n\nDegrons are minimal protein features that are sufficient to target proteins for degradation. In most cases, degrons allow recognition by components of the cytosolic ubiquitin proteasome system. Currently, all of the identified degrons only function within the cytosol. Using Saccharomyces cerevisiae, we identified the first short linear sequences that function as degrons from the endoplasmic reticulum (ER) lumen. We show that when these degrons are transferred to proteins, they facilitate proteasomal degradation through the endoplasmic reticulum associated degradation (ERAD) system. These degrons enable degradation of both luminal and integral membrane ER proteins, expanding the types of proteins that can be targeted for degradation in budding yeast and mammalian tissue culture. This discovery provides a framework to target proteins for degradation from the previously unreachable ER lumen and builds toward therapeutic approaches that exploit the highly conserved ERAD system.\n\n## Introduction\n\nProtein degradation plays an essential role in regulating diverse cellular processes including cellular signaling, metabolic adaptation, and cell cycle regulation. The ubiquitin proteasome system is the primary cellular degradation route, accounting for over 80% of protein degradation (Collins and Goldberg, 2017). Ubiquitination requires the concerted action of the ubiquitination cascade comprising E1 ubiquitin activating enzymes, E2 ubiquitin conjugating enzymes, and E3 ubiquitin ligases. For ubiquitin, in Saccharomyces cerevisiae there is 1 E1, 11 E2s, and >60 E3s whereas mammals have 2 E1s, ~40 E2s, and >600 E3s (Clague et al., 2015). The specificity of the ubiquitination process is primarily driven by the E3 ubiquitin ligases and a major challenge in ubiquitin biology is the identification of the sequences that target proteins for degradation (called \u2018degrons\u2019).\n\nDegrons are usually short linear motifs and, by definition, are sufficient to confer degradation when transferred to otherwise stable proteins. Degrons can be acquired, or inherent. Acquired degrons are generally post-translational modifications that can be based on proteolytic cleavage, phosphorylation, or acetylation. Inherent degrons are features of the primary polypeptide sequence formed by linear or conformational epitopes. Inherent degrons can be shielded when proteins are appropriately folded or incorporated into larger protein complexes. The first degrons to be discovered were at the amino-terminus of proteins (Bachmair et al., 1986) and these N-degrons were eventually summarized as the \u2018N-end rule\u2019 (Varshavsky, 2011), and later the \u2018N-degron pathways\u2019 (Varshavsky, 2019). Recent systems-level analyses have expanded the availability of known degrons broadly (Geffen et al., 2016; Mashahreh et al., 2022), with a series of \u2018C-end rules\u2019 (Koren et al., 2018; Lin et al., 2018), and additional variations of the N-degron pathways (reviewed in Timms and Koren, 2020). Even with a wide range of physiological roles for protein degradation, degrons are still unidentified for most E3 ubiquitin ligases. All known degrons target cytosolic proteins for ubiquitination and degradation by the proteasome and the identification of degrons for a few key ubiquitin ligases has enabled exploitation of the proteasome to facilitate targeted protein degradation of \u2018undruggable\u2019 cytosolic proteins (Samarasinghe and Crews, 2021). However, many proteins that originate from the lumen of membrane-encapsulated organelles are also degraded using the proteasome and degrons for these organelles are mysterious (Christianson and Carvalho, 2022). Therefore, targeting proteins for degradation from within organelles requires a detailed understanding of local organellar protein quality control systems.\n\nThe endoplasmic reticulum (ER) represents the organelle with the largest flux of proteins, with over 40% of proteins translocated into the ER before trafficking to other organelles or secretion from the cell. Both soluble luminal proteins and integral membrane proteins are folded in the ER and undergo quality control before being released into the secretory pathway. At the ER, the primary protein quality control pathways are, collectively, referred to as endoplasmic reticulum associated degradation (ERAD) and these systems are highly conserved among all eukaryotes (Huyer et al., 2004; Vashist and Ng, 2004; Carvalho et al., 2006; Denic et al., 2006; Foresti et al., 2014; Khmelinskii et al., 2014). One such system, the Hrd1-centric ERAD complex, recognizes proteins not passing quality control and retrotranslocates them from the ER lumen to the cytosol for ubiquitin-mediated proteasomal degradation. In S. cerevisiae, the Hrd1 complex comprises five proteins: Hrd1, Hrd3, Usa1, Der1, and Yos9. In the cytosol, this pathway requires a highly conserved AAA-ATPase (Cdc48), its cofactors (Ufd1 and Npl4), and the ubiquitination proteasome system to degrade ERAD substrates (Bays et al., 2001; Ye et al., 2001; Jarosch et al., 2002; Rabinovich et al., 2002). Soluble, luminal ERAD substrates are retrotranslocated by hetero-oligomers of Hrd1/Der1 (Mehnert et al., 2014; Wu et al., 2020; Pisa and Rapoport, 2022), or in some cases, homo-oligomers of Hrd1 (Carvalho et al., 2010; Baldridge and Rapoport, 2016; Schoebel et al., 2017). Hrd1 is sufficient for the basic functions of ERAD but without the other complex components, loses the specificity that normally defines the system (Denic et al., 2006). This system has broad specificity and seems to be able to distinguish folded and unfolded proteins (Stein et al., 2014). Despite nearly three decades of study, degrons (neither sequences nor features) that allow degradation through the Hrd1-centric ERAD pathway remain a complete mystery (Needham et al., 2019).\n\nHere, we have identified the first short luminal degrons of the Hrd1-centric ERAD pathway. We demonstrate that a degron can be functionalized to drive protein degradation from the ER lumen, a previously inaccessible cellular location. We show that this technology can drive degradation of both soluble, luminal ER proteins and integral membrane ER proteins. This degron works in both budding yeast and mammalian tissue culture. This work provides an exciting and simple method of targeting proteins for degradation from within the ER by exploiting the highly conserved ERAD system.\n\n## Results\n\n### Identification of ER-localized degrons\n\nThe ER is the primary location for protein quality control within the secretory pathway, but how ER protein quality control systems distinguish folded from unfolded proteins is unclear. We wanted to understand the degrons recognized within the ER lumen and started by designing an ER-targeted reporter of protein stability. We targeted a tandem fluorescent protein timer (tFT) to the ER to function as a reporter of protein stability (ER-tFT, Figure 1A and Figure 1\u2014figure supplement 1A). tFTs contain a fast-maturing fluorescent protein (here, superfastGFP; Fisher and DeLisa, 2008) and a slower-maturing fluorescent protein (here, mCherry; Shaner et al., 2004) and have been used effectively to identify N-terminal degrons that function in the cytosol and nucleus (Khmelinskii et al., 2012; Kats et al., 2018). By measuring the ratio of mCherry to GFP fluorescence, a protein\u2019s stability can be assessed; the lower the ratio, the more unstable the protein. To test whether the ER-tFT could successfully distinguish stable from unstable proteins, we compared the ER-tFT to a well-characterized, unstable, luminal ERAD substrate, KHN, tagged with the tFT (KHN-tFT, Figure 1A). Using a cycloheximide chase followed by immunoblotting, we found the ER-tFT was quite stable, while the KHN-tFT was degraded with a half-life of less than 30 min (Figure 1B), consistent with previous reports (Vashist et al., 2001). Using flow cytometry, the two proteins were also distinguishable following cycloheximide treatment (Figure 1C and D and Figure 1\u2014figure supplement 1B). After establishing the tFT reporter could distinguish protein stability within the ER, we turned our attention to identifying luminal degrons.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic depicting the ER-tandem fluorescent protein timer (tFT) and KHN-tFT constructs, which contain an ER-targeting signal sequence (SS), mCherry (red), superfastGFP (green), and the HDEL ER retention sequence. KHN-tFT functions as a quickly degraded ER associated degradation (ERAD) substrate (a positive control for degradation). (B) Wild-type yeast expressing the constructs described in (A) were treated with cycloheximide (CHX) for 0, 30, 60, or 90 min, harvested, and protein levels were assessed by immunoblotting using anti-GFP antibodies. Total protein was visualized in gel using stain-free technology (Loading). (C) Flow cytometry of yeast expressing the constructs in (A) treated with CHX for 2 hr. The mCherry/GFP fluorescence intensity ratio of each cell was calculated and plotted. (D) Quantification of the mean mCherry/GFP ratio of four biological replicates as in (C). (E) Overview of the pentapeptide library generation and isolation of unstable variants using fluorescence-activated cell sorting (FACS). A DNA fragment containing the pentapeptide-ER-tFT library was electroporated with linearized ER-tFT plasmid. The resulting yeast library contains a mixture of variants that are separated by FACS, with less stable variants having decreased mCherry/GFP fluorescence intensity compared to stable variants. (F) Heatmap of amino acid enrichments at each position within the unstable pentapeptide library. Values are displayed relative to either codon usage (left) or relative to the input library (right). (G) As in (C) with strains expressing either ER-tFT (yellow fill), KHN-tFT (green fill), individual FACS isolates from the \u2018unstable\u2019 pentapeptide sequences (green lines), or randomly selected pentapeptide-ER-tFT sequences from the input library (gray lines). (H) Quantification of at least two biological replicates conducted as in (G). The unstable groups (green) and random groups (gray) were significantly different from each other using a one-way ANOVA and Tukey\u2019s multiple comparisons tests. (I) As in (C) with strains expressing either ER-tFT (yellow fill), KHN-tFT (green fill), a single IHPYW (1X), 2X repeat of IHPYW (2X), or 4X repeat of IHPYW at the N-terminus of ER-tFT. (J) Quantification of two to three biological replicates of (I).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) The tandem fluorescent protein timer (tFT) was targeted to the endoplasmic reticulum (ER) with two different signal peptides, either that of mating factor alpha (Mat\u03b1) or of Ost1. The GFP and mCherry fluorescence were displayed as a contour plot (left panel). The mCherry/GFP fluorescence intensity ratio of each cell was calculated displayed as a histogram (right panel). Based on the superior brightness of cells expressing the mating factor alpha signal sequence, we selected this signal peptide for further experimentation. (B) Flow cytometry of yeast strains expressing an ER-tFT and endoplasmic reticulum associated degradation (ERAD)-substrate KHN-tFT treated with cycloheximide for 2 hr. (C) Schematic of the PCR-mediated library generation (left) using degenerate primers (upper right) and homologous recombination in yeast (lower right). (D) Heatmap of input library amino acid enrichments at each position displayed relative to codon frequency. (E) Gating strategy for analyzing single cells by flow cytometry. (F) Sorting bins defined relative to ER-tFT and KHN-tFT. (G) Comparison of mCherry/GFP ratios for alternate signal sequences on ER-tFT and IHPYW-tFT.\n\nTo identify degrons that function within the ER lumen, we generated a library of short, linear peptide sequences embedded into the ER-tFT. Using PCR with degenerate primers, we generated an unbiased pentapeptide library encoded in a DNA fragment to use for homologous recombination in cells (Figure 1E, Figure 1\u2014figure supplement 1C and D). The theoretical amino acid diversity of a pentapeptide library is 3.2 million (205). We transformed the library into wild-type yeast and obtained 1.2 million transformants. Using fluorescence-activated cell sorting we separated cells expressing the pentapeptide-ER-tFT by their mCherry/GFP ratio (Figure 1\u2014figure supplement 1E and F). We collected an \u2018unstable\u2019 bin (exhibiting a low mCherry/GFP ratio), which encompassed 4% of the sorted cells, for sequencing (Figure 1\u2014figure supplement 1F).\n\nThe sequencing results of the unstable sorted bin illuminated an enrichment of pentapeptides beginning with isoleucine and leucine (Source data 1). Specifically, isoleucine at the first position was present in 17.7% of unstable pentapeptides while leucine was present in 14.8%. Based on codon usage in a random sampling, isoleucine was predicted to appear 4.7% of the time (3/64 codons) giving a 3.8-fold enrichment in our dataset. Leucine was predicted to appear at a specific position 9.4% of the time (6/64 codons) giving a 1.6-fold enrichment in our dataset (Figure 1F). When compared to the input library abundance, enrichment corresponds to 2.7- and 1.5-fold, respectively (Figure 1F). Rather than attempting to build a consensus sequence that would have to report on many steps in ER quality control, we selected pentapeptide sequences present in the unstable bins that broadly represented the enrichment trends we observed to individually clone and characterize (Figure 1F and Source data 1).\n\nWe compared the stability of six different pentapeptides with isoleucine or leucine at position one to ER-tFT alone, to KHN-tFT, and to a set of randomly selected pentapeptides. KHN-tFT was the least stable, followed by pentapeptides selected from the unstable bin and containing isoleucine or leucine at position one. Several of the randomly selected pentapeptides exhibited a slight reduction in stability, relative to ER-tFT alone, but pentapeptides selected from the unstable bin were consistently less stable (Figure 1G and H, and Figure 1\u2014figure supplement 1G). Encouraged by our results, we sought to find a peptide sequence that would match KHN-tFT instability. We found that repeats of IHPYW, one of the most unstable sequences, dramatically decreased protein stability, with a 20 amino acid 4X(IHPYW) repeat successfully resembling the KHN control (Figure 1I and J). On the other hand, simply repeating a stable control sequence (GNRWG) did not destabilize the protein (control variant 1 [ConV1], Figure 1J). Based on these results, we concluded that the 4X(IHPYW) sequence, which we called DegV1 (Degron Variant 1), functions as an ER-localized degron.\n\n### DegV1 is an ERAD-dependent degron degraded by the proteasome\n\nWe next tested whether DegV1 functioned as an ER luminal degron by transferring it from the original ER-tFT reporter (Figure 1) to a second protein known to fold in the ER lumen. We targeted the LaG16 anti-GFP nanobody (Fridy et al., 2014) to the ER using the mating factor alpha signal sequence and an ER retention signal (ER-NbGFP, Figure 2\u2014figure supplement 1A). First, to ensure the signal sequence was removed and did not contribute to the DegV1 degron, we compared the molecular weight of a cytosolic NbGFP (without signal sequence), a cytosolic DegV1-NbGFP (without signal sequence), and the ER-DegV1-NbGFP (with signal sequence) (Figure 2A). Based on the size of the ER-DegV1-NbGFP compared to DegV1-NbGFP, we concluded that ~90% of the ER-targeted construct had the signal sequence removed and uncleaved signal sequence was unlikely to factor into the function of DegV1 (Figure 2A). Using a cycloheximide chase, the ER-NbGFP protein alone was quite stable, but embedding DegV1 after the N-terminal signal sequence destabilized ER-NbGFP with a half-life of approximately 30 min (Figure 2B). This result validated DegV1 as the first, relatively short, degron sequence that can be used for targeting ER luminal substrates for degradation. Next, we tested if DegV1 could also function as an internal or C-terminal degron. To test whether the DegV1 sequence worked within internal loops, we used the same nanobody scaffold but replaced the complementary determining region 3 with DegV1 and found that the presence of an internal DegV1 made no difference in protein stability when compared to the nanobody alone (Figure 2C and Figure 2\u2014figure supplement 1A). Testing DegV1 at the C-terminus of the NbGFP was complicated by the requirement for an ER retention signal. We integrated the DegV1 sequence immediately before the HDEL retention signal, and, again, this resulted in no change in the stability of the NbGFP target protein (Figure 2D and Figure 2\u2014figure supplement 1A). The ER retention signal is an important component of this construct\u2019s innate stability, because loss of the HDEL signal, with or without the DegV1 sequence at the extreme C-terminus, results in degradation in the vacuole or secretion from the cell (Figure 2D). Together, these results suggest that the DegV1 degron was capable of acting as an ER luminal degron, but only when positioned at the N-terminus of ER-localized proteins.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig2-v1.jpg)\n\n**Figure 2.:** (A) The apparent molecular weight of anti-GFP nanobodies were assessed (NbGFP-Flag) either with or without signal sequence, in the presence or absence of DegV1, were assessed by SDS-PAGE electrophoresis followed by immunoblotting with anti-Flag antibody. This panel is representative of two biological replicates. (B) The degradation of ER-targeted anti-GFP nanobodies (ER-NbGFP-Flag) either with, or without, DegV1 were monitored following addition of cycloheximide (CHX), using SDS-PAGE and immunoblotting. Loading controls were visualized by stain-free technology. (C) The degradation of ER-NbGFP-Flag with DegV1 replacing the CDR3 region was analyzed as in (B). (D) The degradation of a nanobody with DegV1 located either directly preceding the C-terminal HDEL ER retention signal (left) or directly at the C-terminus of the nanobody (right) was analyzed as in (B). (E) Degradation of the ER-targeted proteins ER-GFP (top panel), ER-DegV1-GFP (middle panel), or ER-ConV1-GFP (bottom) were analyzed in a pdr5\u0394 strain by flow cytometry following either ethanol (EtOH) or CHX treatment for 2 hr. Where indicated, cells were pretreated with bortezomib (Btz) for 2 hr. (F) As in (E), but in a hrd1\u0394pdr5\u0394 strain. (G) Degradation of ER-DegV1-NbGFP was followed in pdr5\u0394 or hrd1\u0394pdr5\u0394 strain as in (B). Where indicated, cells were pretreated with Btz for 2 hr. (H) Quantification of (G) with error bars representing the standard deviation. (I) Degradation of ER-ConV1-NbGFP (top panel) or ER-DegV1-NbGFP (bottom panel) was followed in of ERAD component deletion strains as in (B). This panel is representative of two independent biological replicates. (J) The degradation of ER-ConV-GFP (left), or ER-DegV-GFP (right), were analyzed in the indicated ERAD component deletion strains by flow cytometry following cycloheximide treatment for 2 hr. All panels in this figure are representative of at least three independent biological replicates, unless otherwise indicated.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Linear diagram of degradation constructs used in this work. SS, mating factor alpha signal sequence; AS, alanine and serine dipeptide linker; NbGFP, LaG16 anti-GFP nanobody; HDEL, endoplasmic reticulum (ER) retention signal. (B) Localization of ER-targeted GFP proteins (ER-ConV1-GFP and ER-DegV1-GFP) in wild-type yeast cells. Proteins were observed in both the ER and vacuolar localization. The scale bar is 5 \u00b5m. (C) The degradation of ER-targeted GFP proteins (ER-GFP (top), ER-DegV1-GFP (middle), or ER-ConV1-GFP (bottom)) were analyzed by flow cytometry following either ethanol (EtOH) or with bortezomib (Btz) for 2 hr. (D) As in (C), but in a hrd1\u0394pdr5\u0394 strain. (E) Degradation of ER-targeted GFP with an ER retention signal (HDEL) with, or without, DegV1 was followed in a hrd1\u0394 strain complemented with either an empty vector or with Hrd1 on a centromeric plasmid. Using a cycloheximide chase and immunoblotting, we found in the absence of Hrd1, we observe transport of the proteins to the vacuole, where free GFP accumulates. The asterisk indicates the vacuolar-localized GFP fragment. (F) As in (E), except with CPY*-GFP-HDEL. The asterisk indicates the vacuolar-localized GFP fragment. (G) Degradation of ER-DegV1-NbAlfa, ER-DegV1-NbGFP, or ER-NbGFP was followed using a cycloheximide chase in the presence or absence of Btz in a pdr5\u0394 or hrd1\u0394pdr5\u0394 strain. All panels in this figure are representative of at least three independent biological replicates.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Degradation of a cytosolically localized anti-GFP nanobody (cytosolic NbGFP) or with DegV1 (cytosolic DegV1-NbGFP) was followed in pdr5\u0394 or hrd1\u0394pdr5\u0394 strains with, or without, bortezomib (Btz) using a cycloheximide (CHX) chase. Note that Hrd1 is not required for the degradation of cytosolic DegV1-NbGFP. (B) Quantification of three independent biological replicates from (A). Error bars represent the standard deviation.\n\nDegV1 was able to actively target proteins for degradation from the ER lumen. The majority of protein degradation occurs at the proteasome, so we next tested whether DegV1-tagged proteins were degraded by the proteasome. We confirmed ER-GFP was ER-localized (Figure 2\u2014figure supplement 1B) and examined the stability of the fluorescent ER-localized construct GFP alone, or with DegV1 or ConV1 in cells treated for 2 hr with the proteasomal inhibitor bortezomib and/or cycloheximide. The stability of ER-GFP alone was similar either in the presence (dashed outline) or absence (solid outline) of bortezomib (panel 1, Figure 2E). Appending DegV1 immediately after the signal sequence resulted in degradation of ER-GFP (solid blue line), which was inhibited by adding bortezomib (dashed line, panel 2, Figure 2E). This indicated DegV1 targets the luminal ER-GFP for proteasomal degradation. As expected, appending a control sequence (ConV1) of the same length was similarly stable to ER-GFP alone and stability was not affected by bortezomib (solid line versus dashed line, panel 3, Figure 2E, see also Figure 2\u2014figure supplement 1C). Therefore, DegV1-targeted luminal ER substrates were degraded by the proteasome.\n\nProteasomal degradation of luminal ER proteins is mediated by the Hrd1-ERAD system (Bordallo et al., 1998). Consequently, we suspected that Hrd1-centered ERAD mediates DegV1-targeted proteasomal degradation. Again, we tested the stability of ER-GFP in cells lacking the central component to the Hrd1-ERAD system, the ubiquitin ligase Hrd1. The steady-state levels of ER-GFP alone or with ConV1 were similar in the absence of Hrd1 and remained unaffected by proteasome inhibition (panels 1 and 3, Figure 2F). In contrast, DegV1-containing ER-GFP was more stable in an hrd1\u0394 strain, and bortezomib resulted in little further stabilization of DegV1-containing GFP (panel 2, Figure 2F, see also Figure 2\u2014figure supplement 1D), possibly from a small fraction being incompletely translocated into the ER. In the absence of Hrd1, we observed some ER leakage of ER-DegV1-GFP to the vacuole and appearance of a degradation resistant GFP fragment that resembled the known luminal ERAD substrate, CPY*-GFP (indicated by * in Figure 2\u2014figure supplement 1E and F). Altogether, these results are consistent with a role for Hrd1 in the degradation of ER-DegV1-GFP.\n\nTo further test the role of Hrd1 in DegV1-targeted degradation of luminal ER substrates, we tested additional soluble ER proteins (Figure 2G and Figure 2\u2014figure supplement 1G) that were, otherwise, relatively stable in the ER lumen (Figure 2\u2014figure supplement 1G). As expected, when DegV1 was appended to the ER-NbGFP, we found the protein was unstable, with a half-life of approximately 30 min in a cycloheximide chase (Figure 2G and H, and Figure 2\u2014figure supplement 1G). Next, we tested whether other known components of the Hrd1 ERAD complex were required for DegV1 degradation. We found that, with the notable exception of Yos9, the previously identified components of the ERAD-L complex (Hrd1, Hrd3, Der1, and Usa1) were required for DegV1 degradation (Figure 2I and J). Conversely, the Doa10 ubiquitin ligase was not required (Figure 2I and J). Consistently, degradation of each of DegV1-containing proteins were inhibited by either treating cells with bortezomib or genetic deletion of Hrd1.\n\nWhen DegV1-containing proteins were targeted to the ER lumen, Hrd1-ERAD was required for their degradation (Figure 2E\u2013J). We tested whether DegV1 would also function as a degron in the cytosol by removing the signal sequence. Somewhat surprisingly, we found that DegV1 also mediated proteasome-dependent degradation when localized to the cytosol (Figure 2\u2014figure supplement 2). However, in contrast to ER-localized DegV1, when DegV1-containing proteins were localized to the cytosol, Hrd1 was not required for their degradation through the proteasome (Figure 2\u2014figure supplement 2).\n\nIn these experiments, we confirmed that DegV1 targets heterologously expressed ER luminal proteins for ERAD-mediated proteasomal degradation. We next tested whether DegV1 could target endogenous S. cerevisiae proteins for degradation. We transplanted DegV1 onto three different classes of endogenous, ER-localized proteins. First, we used the endogenous protein Suc2. We used the Suc2 signal sequence followed by either DegV1, or ConV1, an HA tag, the Suc2 coding sequence, a Flag tag, and an HDEL (Figure 3A). With ConV1, Suc2 was stable over several hours, and, based on the modified glycosylation pattern, even appeared to be partially trafficked from the ER. In contrast, with DegV1 Suc2 was dramatically destabilized (Figure 3A). Next, we attached DegV1 to a type I integral membrane ER protein, called Big1, that has its N-terminus in the ER lumen and contains a single transmembrane segment (Azuma et al., 2002). We replaced the signal sequence of Big1 with the signal sequence of mating factor alpha followed by either DegV1 or ConV1, an HA tag, and the Big1 coding sequence. DegV1 was also able to destabilize the integral membrane protein Big1 (Figure 3B). Finally, we attached DegV1 or the control sequence to the N-terminus of Elo1, a multi-spanning integral membrane protein with seven probable transmembrane segments and the N-terminus in the ER lumen (Toke and Martin, 1996; Nie et al., 2021). We found that DegV1 was capable of driving degradation for the multi-spanning membrane protein Elo1 (Figure 3C). These results support that DegV1 functions as an N-terminal degron for endogenous proteins with a range of topologies.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig3-v1.jpg)\n\n**Figure 3.:** (A) The degradation of an endogenous secretory protein with a C-terminal Flag (ER-Suc2-Flag) containing either DegV1 or ConV1 was monitored following addition of cycloheximide (CHX), using SDS-PAGE and immunoblotting. Loading controls were visualized by stain-free technology. (B) The degradation of a single transmembrane segment ER resident protein (Big1) with the N-terminus in the ER lumen, appended with either DegV1 or ConV1, was followed as in (A). (C) The degradation of polytopic integral membrane ER resident protein (Elo1) with the N-terminus in the ER lumen, appended with either DegV1 or ConV1, was followed as in (A). (D) The degradation of Big1 with DegV1 or ConV1 was followed as in (A) but following a 2 hr pretreatment with either ethanol (EtOH) or bortezomib (Btz) in a pdr5\u0394 strain. (E) The degradation of Elo1 with DegV1 or ConV1 was followed as in (D). All panels in this figure are representative of at least three independent biological replicates.\n\nSoluble, luminal DegV1-containing proteins are targeted to the proteasome by the Hrd1-ERAD pathway (Figure 2E\u2013J). To test whether DegV1-containing integral membrane proteins are also degraded by the proteasome, we followed Big1 and Elo1 degradation after treatment with cycloheximide and bortezomib. Both membrane proteins were significantly stabilized upon treatment with bortezomib (Figure 3D and E). Therefore, DegV1 targets both luminal and integral membrane ER proteins for recognition by ERAD and subsequent degradation by the proteasome.\n\n### DegV1 is a functional degron in mammalian cells\n\nDegV1 is a degron facilitating degradation from the ER lumen and also represents the first short, portable degron tag (<180 amino acids; Carvalho et al., 2010) identified for the Hrd1-ERAD system. We turned our attention to the possibility of using DegV1 as a tool in mammalian cells. To determine whether DegV1 functioned as an ER degron in mammalian cells, we generated an ER-targeted mNeonGreen (Shaner et al., 2013) by appending an N-terminal BiP signal sequence, the HA epitope tag, and the C-terminal ER retention peptide (KDEL) (ER-HA-mNG). We transfected U2OS cells with the ER-mNG containing either ConV1 or DegV1. The addition of DegV1, but not ConV1, reduced the steady-state ER-mNG levels compared to the control (Figure 4A, compare lanes 1, 4, and 7). When we inhibited translation with emetine, we found that ER-mNG and ER-ConV1-mNG were quite stable (Figure 4A and B). In contrast, ER-DegV1-mNG was unstable, with a half-life of approximately 4 hr (Figure 4A and B).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/89606/elife-89606-fig4-v1.jpg)\n\n**Figure 4.:** (A) Endoplasmic reticulum (ER)-targeted mNeonGreen (ER-HA-mNG) was expressed alone (-), with ConV1, or DegV1 in U-2 OS cells by transient transfection. The degradation of ER-mNG was followed by immunoblotting with anti-HA antibody after treatment with 50 \u03bcM emetine. \u03b2-Actin was used as a loading control. (B) Anti-HA band intensities from (A) were quantified and normalized to the corresponding \u03b2-actin level. (C) As in (A) but after treatment with 50 nM bortezomib (Btz) for the indicated times. (D) Quantification of (C) normalized to the control protein (ER-HA-mNG). (E) As in (A) but after treatment with 1 \u00b5M CB5083, a p97 inhibitor, for the indicated times. (F) Quantification of (E) normalized to the control protein (ER-HA-mNG). (G) ER-HA-mNG with either ConV1 (left panel) or DegV1 (right panel) were expressed in U-2 OS pretreated with either 50 nM Btz or 1 \u00b5M CB5083 for 16 hr prior to an emetine chase. (H) The degradation of ER-HA-mNG with either ConV1 or DegV1 was followed in HEK293T cells or HRD1-/- cells using an emetine chase. (I) Quantification of (H). All panels in this figure are representative of at least three independent biological replicates and the quantification is presented as the mean \u00b1 standard deviation.\n\nIn S. cerevisiae, DegV1 degradation was dependent on the proteasome and mediated through ERAD. In U-2 OS cells, we tested whether degradation of DegV1 was also proteasome-dependent. We treated cells with bortezomib and found that, after an 8 hr treatment, ER-mNG and ER-ConV1-mNG levels remained largely unchanged, but after 24 hr we observed an ~50% increase. In contrast, for ER-DegV1-mNG proteasomal inhibition resulted in a dramatic accumulation of protein within 8 hr of treatment (Figure 4C and D). Remarkably, at 24 hr of bortezomib treatment ER-DegV1-mNG accumulated to similar levels compared to ER-ConV1-mNG, suggesting that the low steady-state level of ER-DegV1-mNG was caused by continuous degradation, rather than a general expression problem.\n\nERAD-dependent proteasomal degradation also requires the AAA-ATPase p97/VCP (Cdc48 in yeast). Therefore, we tested the stability of the ER-mNG proteins after treatment with the VCP inhibitor CB5083 (Anderson et al., 2015). Similar to the bortezomib treatment, we found that treatment with CB5083 resulted in stabilization of ER-DegV1-mNG (Figure 4E and F). As the CB5083 incubation length increased, we found that the levels of ER-DegV1-mNG approached those of the stable, control proteins. To confirm that bortezomib and CB5083 were preventing the active degradation of ER-DegV1-mNG, rather than just improving expression, we analyzed the degradation of the ER-mNG proteins in the presence of bortezomib or CB5083. We confirmed that, without addition of bortezomib or CB5083, ER-ConV1-mNG was stable while ER-DegV1-mNG was degraded (Figure 4G). When we pretreated cells with either bortezomib or CB5083 and inhibited translation with emetine, we found that the degradation of ER-DegV1-mNG was completely inhibited. Finally, we tested whether Hrd1 was required for degradation of ER-DegV1-mNG in mammalian cells. Using either wild-type or Hrd1 knockout cells (Shi et al., 2017), we followed degradation of ER-DegV1-mNG and found that the degron-containing protein was stabilized in the absence of Hrd1 (Figure 4H and I). Taken together, these data indicate that DegV1 functions as an Hrd1-dependent ER-localized degron in mammalian cells.\n\n## Discussion\n\nIn this study, we identified the first short, linear, degron motifs that target proteins for degradation from the ER (Figure 1). We focused on functionalizing these motifs and found that DegV1 works with folded, luminal, and completely soluble proteins as well as integral membrane proteins with differing topologies. It works with both exogenous and endogenous proteins that are otherwise stable. This degron appears to only work at the N-terminus of nascent proteins, rather than internally or C-terminally. Importantly, DegV1 is degraded through the Hrd1-ERAD axis using the proteasome (Figures 2 and 3). Furthermore, we found that DegV1 works across eukaryotes in the mammalian cell culture system (Figure 4). Our data highlight a robust, highly potent degron that can be used for targeted protein degradation from the ER lumen and membrane.\n\nDespite a growing understanding of how the ERAD system functions, the fundamental question of how degrons are recognized by ERAD remains unanswered. Here, we identified a number of different degrons, that remain to be completely characterized, but focused on a single degron (DegV1). It is somewhat surprising that DegV1 seems to only work as an N-terminal degron, but it is possible that when DegV1 is positioned anywhere except the N-terminus, DegV1 could be buried within other parts of the proteins. Although this position-dependent effect is simply a result of the methods used to identify this particular degron, it highlights the importance of future work to identify degrons capable of acting in different positions within a protein (amino terminal, internal, and carboxyl terminal). However, the sequence \u2018IHPYW\u2019 forming the basis of DegV1 appears to be relatively uncommon in nature and is not present in other proteins encoded in the S. cerevisiae genome. In fact, DegV1 appears to be absent from the currently annotated and available fungal genomes in the Saccharomyces Genome Database (Cherry et al., 2012). Based on our selection criteria, IHPYW alone is unlikely to be the most potent ER degron. In fact, we were able to demonstrate that just by increasing the length of our short degron, we could improve the degron to be more like that of a full ERAD substrate protein. We expect that in most unfolded proteins, multiple short linear degrons would contribute to effective recognition and degradation by quality control systems.\n\nEven with the limitations, we were able to demonstrate the utility of DegV1 and future degrons by illuminating that degrons can function even in evolutionarily distant species (S. cerevisiae and Homo sapiens). This was somewhat surprising because specific degrons transferred between fungi and animals are not always functionally conserved (Timms et al., 2019). It should be noted that the degradation rates of our degron-containing proteins are similar to the rates of other well-characterized ERAD substrates. We interpret these results to mean that DegV1 is degraded in a manner consistent with that of endogenous ERAD substrates. The retrotranslocation process itself appears to function by unfolding, or mostly unfolding, its substrates. Few protein transport systems can transport fully folded proteins across a lipid bilayer with the notable exceptions being the twin arginine transporter system (for review, see Berks, 2015) and peroxisomal import machinery (Glover et al., 1994; McNew and Goodman, 1994; Romano et al., 2019; Gao et al., 2022; Skowyra and Rapoport, 2022). However, previous studies in the ERAD field provide conflicting accounts over the ability to transport fully folded proteins from the ER to cytosol (Tirosh et al., 2003; Bhamidipati et al., 2005; Shi et al., 2019). What is certain is that glycosylated ERAD substrate proteins are retrotranslocated across the ER membrane, with the N-linked glycans representing a similar steric challenge compared to secondary structure or smaller folded proteins (Grotzke et al., 2013). Because DegV1 allows degradation of fully folded proteins, it is possible that the proteins are transported in a fully folded state. Although, it seems unlikely that a single heterodimeric channel (Wu et al., 2020) or homodimeric channel (Schoebel et al., 2017) would be able to transport a fully folded substrate. Perhaps, a substrate could occupy multiple ERAD complexes, could require other unidentified proteins, or could use mechanics similar to the peroxisomal machinery (Gao et al., 2022). However, we favor the idea that the targeted proteins are likely recognized and transported in an unfolded state after ERAD complex engagement. Future studies are needed to identify and characterize the molecular mechanisms that underpin this unexpected observation and it will be important to understand whether the core ERAD machinery, ER chaperones, or perhaps additional unidentified components are required.\n\nHere, we have created the first tool that can be used to begin to answer these outstanding questions. We\u2019ve identified a genetically encoded sequence that is easily manipulatable for targeting proteins for degradation from a previously unreachable cellular localization. The approach we\u2019ve used will, eventually, enable targeted protein degradation from the ER to target physiologically, or pathophysiologically, relevant proteins. We anticipate that this platform will allow targeting and manipulation of a wide range of previously inaccessible proteins, not only for basic research, but for translational studies and, eventually, biomedical therapies.\n\n## Methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>HRD1</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YOL013C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>HRD3</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YLR207W</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>USA1</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YML029W</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>DER1</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YBR201W</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>YOS9</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YDR057W</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>UBC7</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YMR022W</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>DOA10</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YIL030C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>PDR5</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YOR153W</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>SUC2</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YIL162W</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>BIG1</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YHR101C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Gene (S. cerevisiae)</td>\n      <td>ELO1</td>\n      <td>Saccharomyces Genome Database (SGD) (Wong et al., 2023)</td>\n      <td>YJL196C</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (S. cerevisiae)</td>\n      <td>For strains, see Supplementary file 1</td>\n      <td>This study</td>\n      <td>NA</td>\n      <td>For strains, see Supplementary file 1</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK293</td>\n      <td>Shi et al., 2017</td>\n      <td>NA</td>\n      <td>Ling Qi lab (University of Virginia)</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>HEK293 Hrd1 Knockout</td>\n      <td>Shi et al., 2017</td>\n      <td>NA</td>\n      <td>Ling Qi lab (University of Virginia)</td>\n    </tr>\n    <tr>\n      <td>Cell line (H. sapiens)</td>\n      <td>U-2 OS</td>\n      <td>ATCC</td>\n      <td>ATCC HTB-96</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected constructs (H. sapiens)</td>\n      <td>For plasmids, see Supplementary file 2</td>\n      <td>This study</td>\n      <td>NA</td>\n      <td>For plasmids, see Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Transfected constructs (S. cerevisiae)</td>\n      <td>For plasmids, see Supplementary file 2</td>\n      <td>This study</td>\n      <td>NA</td>\n      <td>For plasmids, see Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>For plasmids, see Supplementary file 2</td>\n      <td>This study</td>\n      <td>NA</td>\n      <td>For plasmids, see Supplementary file 2</td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>For primers, see Supplementary file 3</td>\n      <td>This study</td>\n      <td>NA</td>\n      <td>For primers, see Supplementary file 3</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>THE DYKDDDDK Tag Antibody, mAb (mouse monoclonal)</td>\n      <td>GenScript</td>\n      <td>A00187; RRID:AB_1720813</td>\n      <td>Used at 1:2000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-GFP(rabbit polyclonal)</td>\n      <td>GenScript</td>\n      <td>A01704; RRID:AB_2622199</td>\n      <td>Used at 1:2000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-HA High Affinity antibody (clone 3F10) (rat monoclonal)</td>\n      <td>Roche</td>\n      <td>11867423001; RRID:AB_390918</td>\n      <td>Used at 1:2500 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>THE V5 Tag Antibody, mAb, (mouse monoclonal)</td>\n      <td>GenScript</td>\n      <td>A01724; RRID:AB_2622216</td>\n      <td>Used at 1:2500 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Amersham ECL Rat IgG, HRP-linked whole antibody (from goat) (polyclonal secondary)</td>\n      <td>Cytiva</td>\n      <td>NA935; RRID:AB_772207</td>\n      <td>Used at 1:4000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Amersham ECL Rabbit IgG, HRP-linked whole Ab (from donkey) (polyclonal secondary)</td>\n      <td>Cytiva</td>\n      <td>NA934; RRID:AB_772206</td>\n      <td>Used at 1:4000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Amersham ECL Mouse IgG, HRP-linked whole Ab (from sheep) (polyclonal secondary)</td>\n      <td>Cytiva</td>\n      <td>NA931; RRID:AB_772210</td>\n      <td>Used at 1:4000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor Plus 800 (polyclonal secondary)</td>\n      <td>Invitrogen</td>\n      <td>A32730; RRID:AB_2633279</td>\n      <td>Used at 1:4000 dilution</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Anti-\u03b2-actin</td>\n      <td>Cell Signaling</td>\n      <td>NA</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Phusion High-Fidelity DNA Polymerase</td>\n      <td>New England Biolabs</td>\n      <td>M0530S</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Peptide, recombinant protein</td>\n      <td>Zymolyase 100T</td>\n      <td>AMSBIO</td>\n      <td>120493-1</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>ECL Select Western Blotting Detection Reagent</td>\n      <td>Cytiva</td>\n      <td>RPN2235</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>BCA assay</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>23225</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>NEBuilder HiFi DNA Assembly Master Mix</td>\n      <td>New England Biolabs</td>\n      <td>E2621</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>QIAquick PCR Purification Kit</td>\n      <td>QIAGEN</td>\n      <td>28104</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay, kit</td>\n      <td>Invitrogen dsDNA HS assay</td>\n      <td>Invitrogen</td>\n      <td>Q32854</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Cycloheximide</td>\n      <td>Sigma-Aldrich</td>\n      <td>239763</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical Compound, drug</td>\n      <td>Emetine</td>\n      <td>Calbiochem</td>\n      <td>324693</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>CB-5083</td>\n      <td>Cayman Chemicals</td>\n      <td>19311</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Bortezomib</td>\n      <td>APExBIO</td>\n      <td>A2614</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SYTOX Blue Nucleic Acid Stain - 5 mM Solution in DMSO</td>\n      <td>Invitrogen</td>\n      <td>S11348</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Invitrogen UltraPure Salmon Sperm DNA Solution</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>15061</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Fetal Bovine Serum, Regular, USDA Approved Origin</td>\n      <td>Corning</td>\n      <td>35-010-CV</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMEM (Dulbecco\u2019s Modified Eagle\u2019s Medium)</td>\n      <td>Corning</td>\n      <td>10-013-CV</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Lipofectamine 2000 Transfection Reagent</td>\n      <td>Invitrogen</td>\n      <td>11668019</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>DMSO</td>\n      <td>Sigma-Aldrich</td>\n      <td>D2650</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageJ</td>\n      <td>Schneider et al., 2012</td>\n      <td>RRID:SCR_003070</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>ImageLab version 6.1</td>\n      <td>Bio-Rad</td>\n      <td>https://www.bio-rad.com/en-us/product/image-lab-software?ID=KRE6P5E8Z</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>FlowJo version 10.7.1</td>\n      <td>Becton, Dickinson and Company</td>\n      <td>https://www.flowjo.com/solutions/flowjo</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GraphPad Prism</td>\n      <td>Dotmatics</td>\n      <td>https://www.graphpad.com/</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Illustrator</td>\n      <td>Adobe</td>\n      <td>https://www.adobe.com/products/illustrator.html</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Yeast strains and plasmids\n\nYeast were cultured at 30\u00b0C in synthetic complete medium (SC) supplemented with the appropriate amino acids. The hrd1\u0394 and pdr5\u0394 strain used in this study were derivatives of BY4741 (MATa his3\u03941 leu2\u03940 met15\u03940 ura3\u03940) or BY4742 (MAT\u03b1 his3\u03941 leu2\u03940505lys2\u03940 ura3\u03940). The hrd1\u0394pdr5\u0394 strain was generated by crossing hrd1\u0394 and pdr5\u0394 strains, sporulating the diploids, and screening the appropriate loci by PCR. For a list of yeast strains used in this study, see Supplementary file 1. For a list of plasmids used in this study, see Supplementary file 2. Plasmids were constructed using restriction enzyme cloning or NEB HiFi assembly. Plasmids used in this study were either centromeric (Sikorski and Hieter, 1989) or custom integrating plasmids (Hwang et al., 2023). For a list of primers used to generate the pentapeptide library, see Supplementary file 3. Plasmids were transformed into yeast using the LiAc/PEG method (Gietz and Schiestl, 2007). Following transformation into yeast, three to four independent transformants were passaged one to two times on selection media before using in experiments.\n\n### Mammalian cell culture and transfection\n\nU-2 OS and HEK293 cells were cultured in DMEM containing 4.5 g/L glucose and L-glutamine, and supplemented with 10% fetal bovine serum (Corning) at 37\u00b0C and 5% CO2. Cells at 60\u201380% confluence were transiently transfected with the indicated plasmids using Lipofectamine 2000 (Invitrogen, 11668019) according to the manufacturer\u2019s protocols. After 24 hr, cells were split for emetine chase or chemical treatment assays.\n\n### Mammalian cell lysis\n\nCells were treated with a translation inhibitor, 50 \u03bcM emetine (Calbiochem, 324693) for the indicated time periods. For chemical treatments, cells were either mock treated with DMSO, treated with 50 nM bortezomib (APExBIO, A2614), or treated with 1 \u03bcM CB5083 (Cayman Chemicals, 19311) for the indicated time periods prior to collection. For combination treatments, cells were pretreated with either bortezomib, or CB5083, for 16 hr prior to emetine chase. The cells were collected and washed once in 1\u00d7 PBS (0.01 M phosphate buffered saline, pH 7.4, 0.138 M NaCl, 0.0027 M KCl) before lysis in 50 mM Tris, pH 7.4, 150 mM NaCI, 1% Triton X-100, 1 mM PMSF, and protease inhibitor cocktail for 10\u201320 min at 4\u00b0C. The lysates were cleared by centrifugation at 20,000\u00d7g for 10 min at 4\u00b0C. Protein concentrations were determined using a BCA assay (Thermo Fisher Scientific, 23225). Cell lysates were normalized to the same concentrations in Laemmli sample buffer and heated to 65\u00b0C for 5 min prior to separation by SDS-PAGE, transferred to a PVDF membrane, immunoblotted with antibodies (anti-HA from Roche, anti-\u03b2-actin from Cell Signaling, HRP-linked ECL rabbit-IgG and rat-IgG from Cytiva), and detected by chemiluminescence (ECL Select Western blotting detection reagent, Cytiva) using a ChemiDoc MP (Bio-Rad). For quantification of the immunoblot band intensities, we used ImageLab version 6.1 (Bio-Rad). Band intensities were normalized to \u03b2-actin protein in the sample quantified within each lane.\n\n### Yeast pentapeptide library generation\n\nWe designed an in vivo gap repair strategy for cloning our pentapeptide libraries into the ER-tFT. The plasmid backbone was based on pRS416 (Christianson et al., 1992) and contained a TDH3 promoter (also known as GPD or GAPDH), the signal sequence from mating factor alpha, mCherry, GFP, an HDEL ER retention signal, and the CYC1 terminator. To prevent the peptide library from potentially disrupting signal sequence cleavage, two amino acids (Ala and Ser) after the signal sequence cleavage site were left upstream of the library. The final N-terminal amino acid sequence of the ER-tFT library after translocation and signal peptide cleavage is ASXXXXX.\n\nTo generate the pentapeptide DNA library fragment with homology arms to ER-tFT, four PCRs were performed (Figure 1\u2014figure supplement 1C) with Phusion polymerase (New England Biolabs, M0530S). We started by generating a linear DNA template to reduce bias in our PCRs. Using pRP01 and primers prRP07 and prRP08, we amplified a 1025 bp fragment with 524 bp upstream (overlapping the TDH3 promoter and signal sequence) and 495 bp downstream (overlapping mCherry) of the library insertion (EcoRI) site in pRP01. This fragment (fragment 1) was gel-purified (QIAGEN, 28104) to remove any residual plasmid and contain only a linear template.\n\nFragment 2, containing the upstream homology arm, was generated through PCR using fragment 1 (the linear DNA template) with primers prRP10 and prRP29 to amplify a 512 bp fragment, which included homology with both the TDH3 promoter and signal sequence and contained the random DNA library insertions. Fragment 3, containing the downstream homology arm, was generated in a PCR using fragment 1 (the linear DNA template) from the first PCR with primers prRP09 and prRP51 to generate a 146 bp fragment, which included random DNA in the library position along with homology arms in mCherry. Only 102 bp of homology was included in the mCherry coding region to limit the number of mutations found in mCherry included by homologous recombination. When we included longer homology arms into mCherry, we found that our screening procedure was selective enough to identify mutations in mCherry which could lead to false \u2018unstable\u2019 hits (data not shown).\n\nTo generate the PCR product for homologous recombination containing overlapping homology arms to the target plasmid (pRP01), we gel-purified fragments 2 and 3 and mixed the DNA in an equimolar ratio. Using primers prRP29 and prRP51, we used 25 PCR cycles to generate a 605 bp fragment 4 (containing the pentapeptide library and homology arms covering 488 bp upstream and 111 bp downstream of the library cut site). Fragment 4 was purified and mixed at a 30:1 molar ratio with purified pRP01 (digested with EcoRI) immediately before yeast electroporation.\n\nThe library transformation into yeast strain yRB203 was performed as previously described (Benatuil et al., 2010). Cells were grown overnight to stationary phase in YPD media, shaking at 225 rpm and 30\u00b0C. An aliquot of the overnight culture was used to inoculate 400 mL of YPD media at 0.3 OD600/mL. Cells were grown for approximately 5 hr until 1.6 OD600/mL was reached and collected by centrifugation at 3200\u00d7g for 5 min. The cell pellet was washed twice by 200 mL of ice-cold water and once by 200 mL of electroporation buffer (1 M sorbitol/1 mM CaCl2, sterile filtered). The cell pellet was then resuspended in 80 mL of 100 mM LiAc/10 mM DTT, split into two aliquots of 40 mL, and each was incubated in a 250 mL culture flask for 30 min at 30\u00b0C, shaking at 225 rpm. Next, cells were collected by centrifugation, washed once with 200 mL of ice-cold electroporation buffer, and resuspended to 2.4 mL in electroporation buffer. The cell resuspension was evenly divided into six pre-chilled Bio-Rad Gene Pulser cuvettes (0.2 cm electrode gap) and kept on ice for 10 min with DNA. One reaction was used as a no DNA control, one reaction received digested vector only, and four cuvettes received 3 \u00b5g of digested vector and 9 \u00b5g fragment 4. Cells were electroporated at 2.5 kV and 25 \u00b5F, with time constants varying from 4.0 to 4.3 ms. Cells were gently transferred from each cuvette into 8 mL of a 1:1 mix of 1 M sorbitol:YPD in culture tubes (25 m diameter) and incubated at 30\u00b0C, with shaking at 220 rpm. After 1 hr, cells were pelleted by centrifugation and inoculated into 1 L SC dropout media (-ura) at 0.2 OD600/mL. Dilutions from the electroporated cells were also plated on SC dropout plates and grown for 2 days at 30\u00b0C to determine the library transformation size (approximately 1.2 million for the library described here).\n\nElectroporated cells were grown for ~18 hr while shaking at 30\u00b0C until reaching 0.5 OD600/mL. Control strains expressing ER-tFT (pRP01) and KHN-tFT (pRP08) were also cultured in parallel. The strains and library were then treated with DMSO only (Sigma-Aldrich, D2650) or 50 \u00b5g/mL cycloheximide (EMD Millipore, 239763) for 2 hr. After treatment, the cells were pelleted, washed once in 1\u00d7 PBS, resuspended in 1\u00d7 PBS containing 1 \u00b5M Sytox Blue (Invitrogen, S11348), and incubated at 4\u00b0C prior to cell sorting.\n\n### Fluorescence-activated cell sorting\n\nCells were sorted on a MoFlo Astrios Cell Sorter (Beckman Coulter) running Summit software. The instrument was set with a 100 \u00b5m tip, 405 nm laser with 448/59 nm bandpass filter, 488 nm laser with 514/20 nm bandpass filter, and 561 nm laser with 620/29 nm bandpass filter. Events were gated to select for yeast cell-sized events, single cells, live cells, and mCherry-GFP positive cells (Figure 1\u2014figure supplement 1A). The mCherry/GFP ratio for each cell in the final gated population was displayed as a histogram. The ER-tFT and KHN-tFT controls were used to help define where to draw the low mCherry/GFP ratio (unstable) bin for sorting (Figure 1\u2014figure supplement 1D). In total, 13 million mCherry-GFP positive events were sorted from the pentapeptide-ER-tFT library, >10 times over the library size. The sorted cells were grown at 30\u00b0C with shaking in 5 mL of SC dropout media for 24 hr and expanded to 25 mL cultures overnight. 10 OD600 of both the \u2018unstable\u2019 bin and unsorted pentapeptide-ER-tFT library were pelleted and flash-frozen in liquid nitrogen and stored at \u201380\u00b0C prior to DNA extraction.\n\n### DNA extraction and amplicon sequencing preparation\n\nDNA extraction was performed essentially as previously described (Kats et al., 2018). The frozen 10 OD600 pellets were resuspended in 500 \u00b5L of 10 mM K2HPO4 pH 7.2, 10 mM EDTA, 50 mM 2-mercaptoethanol and incubated with 50 mg/mL zymolyase 100T (AMSBIO) at 37\u00b0C for 30\u201360 min until the mixture became clear. 100 \u00b5L of lysis buffer (25 mM Tris-HCl pH 7.5, 25 mM EDTA, 2.5% SDS [wt/vol]) was added and the suspension was incubated at 65\u00b0C for 45 min. Proteins were precipitated by adding 166 \u00b5L of 3 M potassium acetate and incubating on ice for 10 min. Samples were then centrifuged at 21,000\u00d7g for 10 min at 4\u00b0C. The supernatant containing DNA was collected and the DNA was precipitated by the addition of 800 \u00b5L of 100% ethanol, followed by centrifugation at 21,000\u00d7g for 10 min at 4\u00b0C. Precipitated DNA was washed with 70% (vol/vol) ethanol and resuspended in 80 \u00b5L of water.\n\nNext, 5 \u00b5L of the isolated DNA solution to amplify a 217 bp fragment encompassing the pentapeptide sequences. Partial adapters for Illumina sequencing were added by 25 cycles of PCR using primers prRP37 and prRP38 (annealing temperature of 60\u00b0C using Phusion DNA polymerase). PCR products were purified (QIAGEN, 28104), normalized to 20 ng/\u00b5L using a QuBit 3 (Invitrogen, Q32854), and sent for amplicon sequencing using Genewiz Amplicon-EZ (now Azenta Life Sciences).\n\n### Amplicon-EZ analysis\n\nSequences from the two Amplicon-EZ samples (unstable bin and input library) were analyzed for quality, trimmed, aligned, and translated by Genewiz (now Azenta Life Sciences). The sequences and translations can be found in Source data 1, sheets labeled Library Data and Sorted Bin Data. From the translated sequences, the pentapeptide region was isolated and divided into positions #1\u20135 (P1-P5). The amino acid count was the sum of occurrences for each amino acid at each position (Source data 1, AA Analysis Sheet). We then divided the amino acid frequency at each position for the library or unstable sorted bin by the expected amino acid frequency based on the number of codons that encode a given amino acid. This gave us the relative enrichment of each amino acid at each of the five positions (Figure 1F).\n\n### Flow cytometry-based degradation assays\n\nFor each experiment, two biological replicates were transferred into SC dropout media in a 96-well plate (Fisherbrand, 12566611) sealed with gas-permeable membranes (Sigma-Aldrich, Z763624) and grown overnight shaking at 1000 rpm at 30\u00b0C. Overnight cell density was typically around ~4\u20135 OD600/mL. In the morning, cells were diluted to 0.2 OD600/mL in SC dropout media and grown at 30\u00b0C shaking at 1000 rpm for ~5 hr or until the OD600/mL of the cultures was \u22650.5. Cells were pelleted at 3200\u00d7g and the supernatant was removed by aspiration prior to resuspension in SC dropout media at 2 OD600/mL. For experiments using cells treated with 50 \u00b5g/mL cycloheximide or 50 \u00b5M bortezomib, cells were transferred directly into new 96-well plates (Grenier Bio-One, 650185). To account for slowed growth by these treatments, in the same plates the untreated/DMSO-treated cells were diluted by \u2153 with fresh media. During the treatment periods, cells were incubated at 30\u00b0C while shaking at 600 rpm. After treatment, cells were pelleted at 3200\u00d7g, washed once with 1\u00d7 PBS, and resuspended in 1\u00d7 PBS with 1 \u00b5M Sytox Blue (Invitrogen). Cells were maintained at 4\u00b0C during flow cytometry analysis on a MACSQuant VYB (Miltenyi) running MACSQuantify software (version 2.13.2). Sytox Blue was followed using the 405 nm laser and 452/45 nm emission filters. SuperfastGFP was followed using the 488 nm laser and 452/45 nm emission filters. mCherry was followed using the 561 nm laser 615/20 nm emission filters. Downstream analyses were performed in FlowJo (version 10.7.1) with event gating to select yeast cell-sized events, single cells, live cells, and mCherry-GFP positive cells (Figure 1\u2014figure supplement 1A). The mCherry/GFP ratio of mCherry-GFP positive cells was calculated in FlowJo and analyzed using a one-way ANOVA and Tukey\u2019s multiple comparisons tests in GraphPad Prism.\n\n### Immunoblotting-based degradation assays\n\nCycloheximide-chase degradation assays were performed as described previously (Hwang et al., 2023; Peterson et al., 2023) with the following modifications. Starter cultures were grown overnight in SC dropout media while shaking at 30\u00b0C. Cultures were diluted to 0.2 OD600/mL in SC dropout media and grown for 4\u20135 hr to mid-log phase (0.4\u20131.0 OD600/mL). Cultures were pelleted at 3200\u00d7g for 5 min and resuspended to 2.0 OD600/mL in fresh media before treatment with 50 \u00b5g/mL cycloheximide. Samples were incubated at 30\u00b0C with shaking and, at the indicated time points, shifted to 4\u00b0C and collected by centrifugation at 21,000\u00d7g for 5 min. The supernatant was removed and cell pellets were incubated on dry ice prior to storage at \u201380\u00b0C or cell lysis. For experiments with bortezomib treatment, cells were pretreated with 50 \u00b5M bortezomib for 15 min prior to cycloheximide addition.\n\nCells were resuspended in SUME lysis buffer (1% SDS, 8 M urea, 10 mM MOPS, pH 6.8, 10 mM EDTA) (Gardner et al., 1998) at 20 OD600/mL with acid-washed glass beads (0.1 mm, Bio-Spec). Cells were vortexed for 2 min and an equal volume of sample buffer (4% SDS, 8 M urea, 125 mM Tris pH 6.8, 10% \u03b2-mercaptoethanol, 0.02% bromophenol blue) was added and briefly vortexed. The samples were incubated at 65\u00b0C for 5 min, separated by SDS-PAGE, transferred to a PVDF membrane, immunoblotted with antibodies (anti-GFP from GenScript, anti-DYKDDDK from GenScript, anti-HA from Roche, anti-V5 from GenScript, HRP-linked ECL rabbit-IgG and mouse-IgG from Cytiva, Goat anti-Mouse IgG Alexa Fluor Plus 800 from Invitrogen), and detected by chemiluminescence (ECL Select Western Blotting Detection Reagent, Cytiva) or by Dylight800 fluorescence using a ChemiDoc MP (Bio-Rad). For quantification of the immunoblot band intensities, we used ImageLab version 6.1 (Bio-Rad). Band intensities were normalized to total protein in the sample quantified within each lane using Stain-Free Dye Imaging (Bio-Rad).\n\n### Materials availability statement\n\nFurther information and requests for resources should be directed to and will be fulfilled by the lead contact, Ryan Baldridge (ryanbald@umich.edu).\n",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Benjamin S Glick, The University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.89606.3.sa0](https://doi.org/10.7554/eLife.89606.3.sa0)\n\nThis important study identifies a short amino acid sequence that, when fused in multimeric form to the amino termini of luminal ER proteins, initiates proteasomal degradation via the Hrd1 ER quality control ubiquitin ligase complex. The authors provide solid evidence that this sequence functions as a \"degron\" for ER proteins. Future work is required to obtain a more detailed view of the properties of this degron, the mechanisms underlying its recognition by ER-resident and cytoplasmic factors, and the in vivo relevance of the findings.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89606.3.sa1](https://doi.org/10.7554/eLife.89606.3.sa1)\n\nThe authors use a previously established reporter comprising a slow- and a fast-folding fluorescent protein fused to a randomly-generated library of penta-peptides at its amino-terminus and a signal sequence for import into the endoplasmic reticulum (ER). They then determine the stability of these constructs in a high throughput FACS-sorting procedure and identify a set of peptides that route the construct to proteasomal degradation. Increasing the copy number of one of these peptides further decreases the stability of the construct. This polypeptide resembles a \"degron\" for ER proteins, because it also targets other ER proteins with different topological and folding properties for degradation. It only works when placed at the amino-terminus of a protein and utilizes components of the Hrd1 ubiquitin ligase complex, a well-established quality control ubiquitin ligase in the ER membrane. Importantly, the degron also targets ER-proteins in mammalian cells.\n\nThe authors convincingly show that fusion of their newly identified degron to the amino terminus of ER-resident proteins with different topology suffices to target them for proteasomal degradation. The data for this are well-founded and contain appropriate controls. While technically sound, the study does only give superficial information on general properties of the degron and its recognition by cellular factors. Further simple experiments would have addressed a number of important points. The authors only provide data about the composition of the identified amino acid sections from the high-throughput approach and the statistical preference for certain amino acids at individual positions. They do not study degron composition experimentally by substituting individual amino acids with other residues and analyzing protein stability. Increasing the numbers of the initially identified degron pentamer increases substrate turnover, but the basis for this remains unclear. Each copy may be actively involved in better recognition, elongation of the degron may facilitate accessibility by recognition factors or multiplying the short amino acid stretch may generate new signatures at the amino-terminus that are more readily recognized by a quality control machinery. Consequently, this study does not allow conclusions to be drawn about general properties of degron composition and/or structure. The degron also functions with cytoplasmic proteins, suggesting that similar characteristics of a polypeptide attract the attention of quality control systems also in other cellular compartments. However, the authors did not pursue this finding further, e.g. by identifying factors for degron recognition in the cytoplasm. It would have been particularly interesting to test whether the degron would initiate degradation when placed at cytoplasmically-exposed amino termini of membrane-bound ER proteins. Information on degron properties is required to better understand principles of substrate recognition by protein quality control pathways and to design constructs for targeting endogenous proteins via proteolysis targeting chimeras (PROTACs).\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.89606.3.sa2](https://doi.org/10.7554/eLife.89606.3.sa2)\n\nSummary:\n\nSharninghausen et al use a generic screening platform to search for short (5 amino acid) degrons that function in the lumen of the endoplasmic reticulum (ER) of budding yeast. The screen did indeed identify a number of sequences which increased the rate of degradation of their test proteins. Although the effect of the single degron was rather modest the authors could show that by mutimerising the sequence (4x) they obtained degrons that functioned fairly efficiently. Further characterisation indicated that the degrons only functioned when placed at the N-terminus of the target protein and, were dependent on both the proteasome and the segregase Cdc48 (p97) for degradation. The authors also demonstrated that degradation was via the ERAD pathway.\n\nStrengths:\n\nIn general, the data presented is supportive of the conclusions drawn and the authors have thus identified a sequence that can be appended onto other ER targeted proteins to mediate their degradation within the lumen of the ER. How useful this will be to the community remains to be seen.\n\nWeaknesses:\n\nWhile the observation that such mutimerised sequences can act as degrons is an interesting curiosity, it is not clear that such sequences function in vivo. In fact the DegV1 sequence used throughout the paper is not present in any yeast or fungal proteins and the fact that it has to be located at the N-terminus of the protein to induce degradation is at odds with the idea that proteins to be degraded need to be unfolded. Thus, the role of such sequences in vivo is questionable.\n\nComments on revised manuscript:\n\nAlthough the role of such degron sequences remains to be determined in vivo, it is clear that the authors have developed a tool that could be useful to the scientific community. The specific points raised were appropriately addressed by the authors.\n",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "e4cd13c6-c555-43a7-8397-d970fce6c097",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C1",
+      "claim": "Degrons are minimal protein features that are sufficient to target proteins for degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Degrons are minimal protein features that are sufficient to target proteins for degradation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement presented in the abstract that establishes the concept of degrons.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "d4640f8b-5a28-4b15-87e0-32215a4bb99c",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C2",
+      "claim": "In most cases, degrons allow recognition by components of the cytosolic ubiquitin proteasome system.",
+      "claim_type": "EXPLICIT",
+      "source": "In most cases, degrons allow recognition by components of the cytosolic ubiquitin proteasome system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is presented as established knowledge about degron function.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "29a4459d-5aaa-4a74-b428-e9f630bbb40d",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C3",
+      "claim": "Currently, all of the identified degrons only function within the cytosol.",
+      "claim_type": "EXPLICIT",
+      "source": "Currently, all of the identified degrons only function within the cytosol.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes the state of knowledge prior to this study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "fe4569fd-00f6-4a73-9896-4d3584f0aa28",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C4",
+      "claim": "The authors identified the first short linear sequences that function as degrons from the endoplasmic reticulum (ER) lumen.",
+      "claim_type": "EXPLICIT",
+      "source": "Using Saccharomyces cerevisiae, we identified the first short linear sequences that function as degrons from the endoplasmic reticulum (ER) lumen.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by experimental data throughout the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "4d34ca88-d49a-4fd3-8354-3360c1174cb0",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C5",
+      "claim": "The identified degrons facilitate proteasomal degradation through the endoplasmic reticulum associated degradation (ERAD) system when transferred to proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We show that when these degrons are transferred to proteins, they facilitate proteasomal degradation through the endoplasmic reticulum associated degradation (ERAD) system.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by experimental data in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "5f18e6f0-7574-48e8-97df-9d54c73b61cd",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C6",
+      "claim": "These degrons enable degradation of both luminal and integral membrane ER proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "These degrons enable degradation of both luminal and integral membrane ER proteins, expanding the types of proteins that can be targeted for degradation in budding yeast and mammalian tissue culture.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing degradation of different protein types in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "30293d34-1e41-4b38-9c70-432c89689ec8",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C7",
+      "claim": "The ubiquitin proteasome system accounts for over 80% of protein degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "The ubiquitin proteasome system is the primary cellular degradation route, accounting for over 80% of protein degradation (Collins and Goldberg, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Collins and Goldberg, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "6ca31dca-2ac3-4ebb-a563-26bae537c376",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C8",
+      "claim": "In Saccharomyces cerevisiae there is 1 E1, 11 E2s, and >60 E3s for ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "For ubiquitin, in Saccharomyces cerevisiae there is 1 E1, 11 E2s, and >60 E3s whereas mammals have 2 E1s, ~40 E2s, and >600 E3s (Clague et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Clague et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "ac925b42-3c7d-41ec-8fa2-9490b98eeb57",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C9",
+      "claim": "Mammals have 2 E1s, ~40 E2s, and >600 E3s for ubiquitin.",
+      "claim_type": "EXPLICIT",
+      "source": "For ubiquitin, in Saccharomyces cerevisiae there is 1 E1, 11 E2s, and >60 E3s whereas mammals have 2 E1s, ~40 E2s, and >600 E3s (Clague et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Clague et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "9b160854-cac7-4063-a2de-0ed788dd2367",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C10",
+      "claim": "The specificity of the ubiquitination process is primarily driven by the E3 ubiquitin ligases.",
+      "claim_type": "EXPLICIT",
+      "source": "The specificity of the ubiquitination process is primarily driven by the E3 ubiquitin ligases and a major challenge in ubiquitin biology is the identification of the sequences that target proteins for degradation (called 'degrons').",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "fbecb2ac-5308-4ad5-aeb1-a9203c580403",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C11",
+      "claim": "Degrons are usually short linear motifs and, by definition, are sufficient to confer degradation when transferred to otherwise stable proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Degrons are usually short linear motifs and, by definition, are sufficient to confer degradation when transferred to otherwise stable proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a definitional statement about degrons based on established knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "ce43cb8b-470b-49d5-a425-0730f9d45172",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C12",
+      "claim": "The first degrons to be discovered were at the amino-terminus of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "The first degrons to be discovered were at the amino-terminus of proteins (Bachmair et al., 1986) and these N-degrons were eventually summarized as the 'N-end rule' (Varshavsky, 2011), and later the 'N-degron pathways' (Varshavsky, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by citations to Bachmair et al., 1986, Varshavsky, 2011, and Varshavsky, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "b873f960-f49e-41ad-bb3d-371ded16288f",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C13",
+      "claim": "All known degrons target cytosolic proteins for ubiquitination and degradation by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Even with a wide range of physiological roles for protein degradation, degrons are still unidentified for most E3 ubiquitin ligases. All known degrons target cytosolic proteins for ubiquitination and degradation by the proteasome and the identification of degrons for a few key ubiquitin ligases has enabled exploitation of the proteasome to facilitate targeted protein degradation of 'undruggable' cytosolic proteins (Samarasinghe and Crews, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement summarizes the state of knowledge prior to this study, supported by citation to Samarasinghe and Crews, 2021.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "ed05d1f5-d66e-469d-a730-a8d498b5da6d",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C14",
+      "claim": "Over 40% of proteins are translocated into the ER before trafficking to other organelles or secretion from the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "The endoplasmic reticulum (ER) represents the organelle with the largest flux of proteins, with over 40% of proteins translocated into the ER before trafficking to other organelles or secretion from the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about ER protein trafficking.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "1f23518e-182a-4def-b393-78282dea3233",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C15",
+      "claim": "ERAD systems are highly conserved among all eukaryotes.",
+      "claim_type": "EXPLICIT",
+      "source": "At the ER, the primary protein quality control pathways are, collectively, referred to as endoplasmic reticulum associated degradation (ERAD) and these systems are highly conserved among all eukaryotes (Huyer et al., 2004; Vashist and Ng, 2004; Carvalho et al., 2006; Denic et al., 2006; Foresti et al., 2014; Khmelinskii et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "66318dc8-9c85-4218-b5ba-e9d72d7e360e",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C16",
+      "claim": "In S. cerevisiae, the Hrd1 complex comprises five proteins: Hrd1, Hrd3, Usa1, Der1, and Yos9.",
+      "claim_type": "EXPLICIT",
+      "source": "In S. cerevisiae, the Hrd1 complex comprises five proteins: Hrd1, Hrd3, Usa1, Der1, and Yos9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as established knowledge about the composition of the Hrd1 complex.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "2a21de16-0c6f-4e07-9dc4-b704f5727ff7",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C17",
+      "claim": "Soluble, luminal ERAD substrates are retrotranslocated by hetero-oligomers of Hrd1/Der1.",
+      "claim_type": "EXPLICIT",
+      "source": "Soluble, luminal ERAD substrates are retrotranslocated by hetero-oligomers of Hrd1/Der1 (Mehnert et al., 2014; Wu et al., 2020; Pisa and Rapoport, 2022), or in some cases, homo-oligomers of Hrd1 (Carvalho et al., 2010; Baldridge and Rapoport, 2016; Schoebel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "892fcf9c-89a9-4688-948b-ac29113d4170",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C18",
+      "claim": "Soluble, luminal ERAD substrates are retrotranslocated by homo-oligomers of Hrd1 in some cases.",
+      "claim_type": "EXPLICIT",
+      "source": "Soluble, luminal ERAD substrates are retrotranslocated by hetero-oligomers of Hrd1/Der1 (Mehnert et al., 2014; Wu et al., 2020; Pisa and Rapoport, 2022), or in some cases, homo-oligomers of Hrd1 (Carvalho et al., 2010; Baldridge and Rapoport, 2016; Schoebel et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "71feb1c5-f615-408b-9936-3f81d69b7d00",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C19",
+      "claim": "Hrd1 is sufficient for the basic functions of ERAD but without the other complex components, loses the specificity that normally defines the system.",
+      "claim_type": "EXPLICIT",
+      "source": "Hrd1 is sufficient for the basic functions of ERAD but without the other complex components, loses the specificity that normally defines the system (Denic et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Denic et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "cc9b3970-7521-43bb-8a73-1068b2368a7b",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C20",
+      "claim": "The ER-tFT was quite stable, while the KHN-tFT was degraded with a half-life of less than 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a cycloheximide chase followed by immunoblotting, we found the ER-tFT was quite stable, while the KHN-tFT was degraded with a half-life of less than 30 min (Figure 1B), consistent with previous reports (Vashist et al., 2001).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1B and is consistent with previous reports.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "953165d1-e8cf-4873-af5a-70959731c776",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C21",
+      "claim": "The two proteins (ER-tFT and KHN-tFT) were distinguishable following cycloheximide treatment using flow cytometry.",
+      "claim_type": "EXPLICIT",
+      "source": "Using flow cytometry, the two proteins were also distinguishable following cycloheximide treatment (Figure 1C and D and Figure 1\u2014figure supplement 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C, D, and Figure 1\u2014figure supplement 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "cf45b391-d276-42a4-b35a-653f9bceb356",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C22",
+      "claim": "Isoleucine at the first position was present in 17.7% of unstable pentapeptides while leucine was present in 14.8%.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequencing results of the unstable sorted bin illuminated an enrichment of pentapeptides beginning with isoleucine and leucine (Source data 1). Specifically, isoleucine at the first position was present in 17.7% of unstable pentapeptides while leucine was present in 14.8%.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by sequencing data from the pentapeptide library screen.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "4b6e4d65-b05c-4aba-b969-da7810962f0d",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C23",
+      "claim": "Isoleucine showed a 3.8-fold enrichment in the unstable dataset based on codon usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on codon usage in a random sampling, isoleucine was predicted to appear 4.7% of the time (3/64 codons) giving a 3.8-fold enrichment in our dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the sequencing data and codon usage predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "fe6788b3-e7a2-430d-9dd4-907b97f2b658",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C24",
+      "claim": "Leucine showed a 1.6-fold enrichment in the unstable dataset based on codon usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Leucine was predicted to appear at a specific position 9.4% of the time (6/64 codons) giving a 1.6-fold enrichment in our dataset (Figure 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is calculated from the sequencing data and codon usage predictions, shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "5c91ad45-17c9-4a82-b144-0785ef2fdf3a",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C25",
+      "claim": "Repeats of IHPYW dramatically decreased protein stability, with a 20 amino acid 4X(IHPYW) repeat successfully resembling the KHN control.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that repeats of IHPYW, one of the most unstable sequences, dramatically decreased protein stability, with a 20 amino acid 4X(IHPYW) repeat successfully resembling the KHN control (Figure 1I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "3e7e0c61-776e-4564-8897-2b495347e9ea",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C26",
+      "claim": "Simply repeating a stable control sequence (GNRWG) did not destabilize the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, simply repeating a stable control sequence (GNRWG) did not destabilize the protein (control variant 1 [ConV1], Figure 1J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "bcf6cdf3-52a5-4bd7-89a0-2696410c3cfc",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C27",
+      "claim": "The 4X(IHPYW) sequence, called DegV1 (Degron Variant 1), functions as an ER-localized degron.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on these results, we concluded that the 4X(IHPYW) sequence, which we called DegV1 (Degron Variant 1), functions as an ER-localized degron.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is based on the experimental data showing destabilization of proteins containing this sequence.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "16a9c391-e90f-4742-8ede-b6b025f475da",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C28",
+      "claim": "Approximately 90% of the ER-targeted construct had the signal sequence removed.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on the size of the ER-DegV1-NbGFP compared to DegV1-NbGFP, we concluded that ~90% of the ER-targeted construct had the signal sequence removed and uncleaved signal sequence was unlikely to factor into the function of DegV1 (Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the molecular weight comparison shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "8984dc1b-9711-4ccd-811c-ae9326170984",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C29",
+      "claim": "Embedding DegV1 after the N-terminal signal sequence destabilized ER-NbGFP with a half-life of approximately 30 min.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a cycloheximide chase, the ER-NbGFP protein alone was quite stable, but embedding DegV1 after the N-terminal signal sequence destabilized ER-NbGFP with a half-life of approximately 30 min (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "e7215998-1b6c-47ca-badd-fa6a91a2bd1c",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C30",
+      "claim": "The presence of an internal DegV1 made no difference in protein stability when compared to the nanobody alone.",
+      "claim_type": "EXPLICIT",
+      "source": "To test whether the DegV1 sequence worked within internal loops, we used the same nanobody scaffold but replaced the complementary determining region 3 with DegV1 and found that the presence of an internal DegV1 made no difference in protein stability when compared to the nanobody alone (Figure 2C and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2C and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "c75254c1-3649-44dd-9359-7efac92ca0d7",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C31",
+      "claim": "Integrating the DegV1 sequence immediately before the HDEL retention signal resulted in no change in the stability of the NbGFP target protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Testing DegV1 at the C-terminus of the NbGFP was complicated by the requirement for an ER retention signal. We integrated the DegV1 sequence immediately before the HDEL retention signal, and, again, this resulted in no change in the stability of the NbGFP target protein (Figure 2D and Figure 2\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2D and Figure 2\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "6966047d-47a8-4db1-b36f-2afafe7a333f",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C32",
+      "claim": "The DegV1 degron was capable of acting as an ER luminal degron, but only when positioned at the N-terminus of ER-localized proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these results suggest that the DegV1 degron was capable of acting as an ER luminal degron, but only when positioned at the N-terminus of ER-localized proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing position-dependent effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "adc7cac6-d271-4bce-b510-1c73eb018ef5",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C33",
+      "claim": "DegV1-targeted luminal ER substrates were degraded by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Appending DegV1 immediately after the signal sequence resulted in degradation of ER-GFP (solid blue line), which was inhibited by adding bortezomib (dashed line, panel 2, Figure 2E). This indicated DegV1 targets the luminal ER-GFP for proteasomal degradation.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data showing bortezomib-sensitive degradation in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "27aeaa03-c38b-4737-9fb8-8d34725205e8",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C34",
+      "claim": "DegV1-containing ER-GFP was more stable in an hrd1\u0394 strain.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, DegV1-containing ER-GFP was more stable in an hrd1\u0394 strain, and bortezomib resulted in little further stabilization of DegV1-containing GFP (panel 2, Figure 2F, see also Figure 2\u2014figure supplement 1D), possibly from a small fraction being incompletely translocated into the ER.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2F and Figure 2\u2014figure supplement 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "a7b3fb93-4f62-4508-af99-2dd3f31f7bbb",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C35",
+      "claim": "When DegV1 was appended to the ER-NbGFP, the protein was unstable, with a half-life of approximately 30 min in a cycloheximide chase.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, when DegV1 was appended to the ER-NbGFP, we found the protein was unstable, with a half-life of approximately 30 min in a cycloheximide chase (Figure 2G and H, and Figure 2\u2014figure supplement 1G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2G, H, and Figure 2\u2014figure supplement 1G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "5027b5a0-76c2-4cf5-8645-25dfbd596cb0",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C36",
+      "claim": "With the notable exception of Yos9, the previously identified components of the ERAD-L complex (Hrd1, Hrd3, Der1, and Usa1) were required for DegV1 degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that, with the notable exception of Yos9, the previously identified components of the ERAD-L complex (Hrd1, Hrd3, Der1, and Usa1) were required for DegV1 degradation (Figure 2I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "843bfd31-e4ab-42de-950b-c7a57af03195",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C37",
+      "claim": "The Doa10 ubiquitin ligase was not required for DegV1 degradation.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the Doa10 ubiquitin ligase was not required (Figure 2I and J).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2I and J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "13468098-c422-4917-b5ff-85a8cdaed992",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C38",
+      "claim": "When DegV1-containing proteins were localized to the cytosol, Hrd1 was not required for their degradation through the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in contrast to ER-localized DegV1, when DegV1-containing proteins were localized to the cytosol, Hrd1 was not required for their degradation through the proteasome (Figure 2\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "7d19da3a-bddc-4fc1-8f8b-470ce2bf030d",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C39",
+      "claim": "DegV1 was able to destabilize the endogenous protein Suc2.",
+      "claim_type": "EXPLICIT",
+      "source": "With ConV1, Suc2 was stable over several hours, and, based on the modified glycosylation pattern, even appeared to be partially trafficked from the ER. In contrast, with DegV1 Suc2 was dramatically destabilized (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "c9d660d4-c4a2-49b1-9556-72176a0ed6d1",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C40",
+      "claim": "DegV1 was able to destabilize the integral membrane protein Big1.",
+      "claim_type": "EXPLICIT",
+      "source": "We replaced the signal sequence of Big1 with the signal sequence of mating factor alpha followed by either DegV1 or ConV1, an HA tag, and the Big1 coding sequence. DegV1 was also able to destabilize the integral membrane protein Big1 (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "a16b15a8-681e-40ee-9bd7-205c58a017b9",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C41",
+      "claim": "DegV1 was capable of driving degradation for the multi-spanning membrane protein Elo1.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that DegV1 was capable of driving degradation for the multi-spanning membrane protein Elo1 (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "772dafbe-b333-4735-84cb-8a621243cd81",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C42",
+      "claim": "DegV1 functions as an N-terminal degron for endogenous proteins with a range of topologies.",
+      "claim_type": "EXPLICIT",
+      "source": "These results support that DegV1 functions as an N-terminal degron for endogenous proteins with a range of topologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing degradation of different protein types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "56a39f40-6b0c-47be-ae65-77a6cebbe72c",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C43",
+      "claim": "Both membrane proteins (Big1 and Elo1) were significantly stabilized upon treatment with bortezomib.",
+      "claim_type": "EXPLICIT",
+      "source": "Both membrane proteins were significantly stabilized upon treatment with bortezomib (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3D and E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "f74d261c-5e34-4bdc-b2ff-e4deb04e6db3",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C44",
+      "claim": "DegV1 targets both luminal and integral membrane ER proteins for recognition by ERAD and subsequent degradation by the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, DegV1 targets both luminal and integral membrane ER proteins for recognition by ERAD and subsequent degradation by the proteasome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing proteasome-dependent degradation of different protein types.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "4642a488-4407-4cf1-ab5d-683d4ab689f4",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C45",
+      "claim": "The addition of DegV1, but not ConV1, reduced the steady-state ER-mNG levels compared to the control in U2OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We transfected U2OS cells with the ER-mNG containing either ConV1 or DegV1. The addition of DegV1, but not ConV1, reduced the steady-state ER-mNG levels compared to the control (Figure 4A, compare lanes 1, 4, and 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "3d1ce473-3b53-41b8-ba44-ad04effb79aa",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C46",
+      "claim": "ER-mNG and ER-ConV1-mNG were quite stable after translation inhibition with emetine.",
+      "claim_type": "EXPLICIT",
+      "source": "When we inhibited translation with emetine, we found that ER-mNG and ER-ConV1-mNG were quite stable (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "db8bd98e-e915-493e-8d2c-b4b280f32204",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C47",
+      "claim": "ER-DegV1-mNG was unstable, with a half-life of approximately 4 hr in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, ER-DegV1-mNG was unstable, with a half-life of approximately 4 hr (Figure 4A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "d68154cd-d4f3-4b3d-9366-2f2449d87571",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C48",
+      "claim": "Treatment with bortezomib resulted in a dramatic accumulation of ER-DegV1-mNG protein within 8 hr of treatment in U-2 OS cells.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, for ER-DegV1-mNG proteasomal inhibition resulted in a dramatic accumulation of protein within 8 hr of treatment (Figure 4C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "8f549534-7845-46df-9aff-bbc77187f17e",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C49",
+      "claim": "At 24 hr of bortezomib treatment ER-DegV1-mNG accumulated to similar levels compared to ER-ConV1-mNG.",
+      "claim_type": "EXPLICIT",
+      "source": "Remarkably, at 24 hr of bortezomib treatment ER-DegV1-mNG accumulated to similar levels compared to ER-ConV1-mNG, suggesting that the low steady-state level of ER-DegV1-mNG was caused by continuous degradation, rather than a general expression problem.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data and provides inference about the mechanism.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "adff976b-271b-4972-a6ec-2dfa23399e94",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C50",
+      "claim": "Treatment with CB5083 resulted in stabilization of ER-DegV1-mNG.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar to the bortezomib treatment, we found that treatment with CB5083 resulted in stabilization of ER-DegV1-mNG (Figure 4E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "5d8e7d71-ffa4-4c11-b752-5dd7d264c7bf",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C51",
+      "claim": "The degradation of ER-DegV1-mNG was completely inhibited when cells were pretreated with either bortezomib or CB5083.",
+      "claim_type": "EXPLICIT",
+      "source": "When we pretreated cells with either bortezomib or CB5083 and inhibited translation with emetine, we found that the degradation of ER-DegV1-mNG was completely inhibited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data showing stabilization with inhibitor pretreatment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "5da68e0d-a72a-4377-98f9-791c87bec8bf",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C52",
+      "claim": "The degron-containing protein (ER-DegV1-mNG) was stabilized in the absence of Hrd1 in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Using either wild-type or Hrd1 knockout cells (Shi et al., 2017), we followed degradation of ER-DegV1-mNG and found that the degron-containing protein was stabilized in the absence of Hrd1 (Figure 4H and I).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4H and I.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "0e42802b-97be-4c29-b3c6-bad7a6280c11",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C53",
+      "claim": "DegV1 functions as an Hrd1-dependent ER-localized degron in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that DegV1 functions as an Hrd1-dependent ER-localized degron in mammalian cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This conclusion is inferred from the experimental data showing Hrd1-dependent degradation in mammalian cells.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "e8161446-46b4-45c3-8c44-3685ceb01be4",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C54",
+      "claim": "DegV1 works with folded, luminal, and completely soluble proteins as well as integral membrane proteins with differing topologies.",
+      "claim_type": "EXPLICIT",
+      "source": "We focused on functionalizing these motifs and found that DegV1 works with folded, luminal, and completely soluble proteins as well as integral membrane proteins with differing topologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "83478c9c-75e4-44e8-a549-ecb319e8e4ae",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C55",
+      "claim": "DegV1 works with both exogenous and endogenous proteins that are otherwise stable.",
+      "claim_type": "EXPLICIT",
+      "source": "It works with both exogenous and endogenous proteins that are otherwise stable.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the experimental findings from the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "a070b427-1cdf-454e-b332-943f98a0e0e2",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C56",
+      "claim": "DegV1 is degraded through the Hrd1-ERAD axis using the proteasome.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, DegV1 is degraded through the Hrd1-ERAD axis using the proteasome (Figures 2 and 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "cb04ebd9-862e-47b1-9933-ee1ce44aef86",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C57",
+      "claim": "DegV1 works across eukaryotes in the mammalian cell culture system.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we found that DegV1 works across eukaryotes in the mammalian cell culture system (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "4cd26057-a64d-44b4-b416-b51b4f39643f",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C58",
+      "claim": "The sequence 'IHPYW' forming the basis of DegV1 appears to be relatively uncommon in nature and is not present in other proteins encoded in the S. cerevisiae genome.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the sequence 'IHPYW' forming the basis of DegV1 appears to be relatively uncommon in nature and is not present in other proteins encoded in the S. cerevisiae genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from analysis of the S. cerevisiae genome.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "5699f858-3d64-428f-a66d-a47f2c39368e",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C59",
+      "claim": "DegV1 appears to be absent from the currently annotated and available fungal genomes in the Saccharomyces Genome Database.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, DegV1 appears to be absent from the currently annotated and available fungal genomes in the Saccharomyces Genome Database (Cherry et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from database analysis, with citation to Cherry et al., 2012.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "5f381219-73c1-4757-baa4-d11308eaec3f",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C60",
+      "claim": "The degradation rates of degron-containing proteins are similar to the rates of other well-characterized ERAD substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "It should be noted that the degradation rates of our degron-containing proteins are similar to the rates of other well-characterized ERAD substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison with known ERAD substrates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "0387c831-0be7-4345-a573-bd78c8826942",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C61",
+      "claim": "DegV1 is degraded in a manner consistent with that of endogenous ERAD substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "We interpret these results to mean that DegV1 is degraded in a manner consistent with that of endogenous ERAD substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "9e372654-10cf-4180-a72b-d1956598aee9",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C62",
+      "claim": "The retrotranslocation process itself appears to function by unfolding, or mostly unfolding, its substrates.",
+      "claim_type": "EXPLICIT",
+      "source": "The retrotranslocation process itself appears to function by unfolding, or mostly unfolding, its substrates.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as a general understanding of the retrotranslocation process.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "9aaaec1b-689a-45e9-bc6c-57d07d19a1ca",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C63",
+      "claim": "Glycosylated ERAD substrate proteins are retrotranslocated across the ER membrane, with the N-linked glycans representing a similar steric challenge compared to secondary structure or smaller folded proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "What is certain is that glycosylated ERAD substrate proteins are retrotranslocated across the ER membrane, with the N-linked glycans representing a similar steric challenge compared to secondary structure or smaller folded proteins (Grotzke et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement is supported by a citation to Grotzke et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "fbf90292-6f4b-4751-81d4-988b8544330d",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C64",
+      "claim": "Because DegV1 allows degradation of fully folded proteins, it is possible that the proteins are transported in a fully folded state.",
+      "claim_type": "EXPLICIT",
+      "source": "Because DegV1 allows degradation of fully folded proteins, it is possible that the proteins are transported in a fully folded state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the experimental observations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "dddcb0e5-82af-4b0f-bcf6-961a261be13a",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C65",
+      "claim": "The targeted proteins are likely recognized and transported in an unfolded state after ERAD complex engagement.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we favor the idea that the targeted proteins are likely recognized and transported in an unfolded state after ERAD complex engagement.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about the mechanism based on the authors' interpretation.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "210c90f8-403f-4237-875a-44d7be67be1a",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C66",
+      "claim": "The authors have created the first tool that can be used to target proteins for degradation from a previously unreachable cellular localization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we have created the first tool that can be used to begin to answer these outstanding questions. We've identified a genetically encoded sequence that is easily manipulatable for targeting proteins for degradation from a previously unreachable cellular localization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary claim about the significance of the work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "04ed5187-e099-4e09-b12e-cdd74d9c8c17",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C67",
+      "claim": "The theoretical amino acid diversity of a pentapeptide library is 3.2 million (20^5).",
+      "claim_type": "EXPLICIT",
+      "source": "The theoretical amino acid diversity of a pentapeptide library is 3.2 million (205).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mathematical calculation based on the number of amino acids and positions.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "05e7762d-d484-4e80-8d7b-4b35cc43d199",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C68",
+      "claim": "The authors obtained 1.2 million transformants from the pentapeptide library.",
+      "claim_type": "EXPLICIT",
+      "source": "We transformed the library into wild-type yeast and obtained 1.2 million transformants.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the library generation.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "f3adc2f3-475b-4167-9144-a4af73a29991",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C69",
+      "claim": "The 'unstable' bin encompassed 4% of the sorted cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We collected an 'unstable' bin (exhibiting a low mCherry/GFP ratio), which encompassed 4% of the sorted cells, for sequencing (Figure 1\u2014figure supplement 1F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an experimental observation from the FACS sorting, shown in Figure 1\u2014figure supplement 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "e66d4688-fb76-4946-8050-2386754f272a",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C70",
+      "claim": "In total, 13 million mCherry-GFP positive events were sorted from the pentapeptide-ER-tFT library.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 13 million mCherry-GFP positive events were sorted from the pentapeptide-ER-tFT library, >10 times over the library size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an experimental observation from the FACS sorting.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "25f4d99c-127e-4ca7-ba23-e95920151892",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "claim_id": "C71",
+      "claim": "The sorted cells represented >10 times over the library size.",
+      "claim_type": "EXPLICIT",
+      "source": "In total, 13 million mCherry-GFP positive events were sorted from the pentapeptide-ER-tFT library, >10 times over the library size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the number of sorted events and the library size.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "ddaf30bf-e000-4baf-b2fe-23779813b760",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors developed a pentapeptide library screening approach using an ER-targeted tandem fluorescent timer (tFT) and identified sequences enriched in unstable proteins. The sequence 4X(IHPYW), termed DegV1, was identified as an ER-localized degron that destabilizes proteins comparably to the known ERAD substrate KHN.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The library design is sound with 1.2M transformants representing ~38% of theoretical diversity (C67-C68), and >10X oversampling during FACS (C70-C71). The enrichment calculations for isoleucine (3.8-fold, C23) and leucine (1.6-fold, C24) are appropriately normalized to codon usage. The functional validation showing DegV1 destabilizes proteins to KHN levels (C25-C27) with appropriate controls (C26) strongly supports the identification of a functional degron.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "9fb5f73e-f157-4602-b33a-a1b6c0cdad18",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "DegV1 functions as an N-terminal degron when positioned after the ER signal sequence, but not when placed internally or at the C-terminus of ER proteins. Signal sequence cleavage occurs normally (~90% processed, C28), and DegV1 destabilizes ER-NbGFP with a half-life of ~30 min when N-terminal (C29).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The position-dependence is clearly demonstrated through systematic testing at N-terminal (C29), internal (C30), and C-terminal (C31) positions with appropriate controls. The molecular weight analysis (C28) addresses the important control that signal sequence cleavage is not contributing to degron function. However, the C-terminal test is complicated by the HDEL retention signal requirement, which could mask C-terminal degron activity through steric or mechanistic interference.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "fde7910e-b7c1-4dd6-9751-1031e3dfc31e",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "DegV1-mediated degradation occurs through the Hrd1-ERAD pathway and requires proteasome activity. Degradation requires Hrd1, Hrd3, Der1, and Usa1, but notably not Yos9 or Doa10 (C36-C37). When DegV1 is localized to the cytosol, degradation becomes Hrd1-independent (C38).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The mechanistic characterization is thorough with appropriate use of proteasome inhibitor (bortezomib, C33) and genetic deletions (C34-C37). The Yos9-independence (C36) is interesting and distinguishes this from some other ERAD substrates. The cytosolic localization control (C38) is critical and demonstrates that DegV1 specifically engages ERAD machinery only when in the ER lumen, supporting the specificity of the degron. The data converge on a clear ERAD-L mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "f9be6187-8929-49e9-998f-645f23872c03",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "DegV1 functions as an N-terminal degron for endogenous S. cerevisiae proteins with diverse topologies, including the soluble luminal protein Suc2 (C39), single-pass transmembrane protein Big1 (C40), and multi-spanning membrane protein Elo1 (C41). All show proteasome-dependent degradation (C43-C44).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The application to endogenous proteins with different topologies (soluble, single-pass, multi-pass) is a critical validation that DegV1 is a portable degron tag. The bortezomib sensitivity for membrane proteins (C43) confirms proteasomal involvement. However, the manuscript would benefit from quantitative half-life measurements for these endogenous proteins to compare degradation kinetics across different substrate types. The glycosylation pattern changes for Suc2 (C39) suggest some ER escape, which could complicate interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "97054ea9-31ae-4119-9eda-b5efc66aaa65",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "DegV1 functions as an ER-localized degron in mammalian cells (U2OS and HEK293), showing Hrd1-dependent, proteasome-mediated degradation. ER-DegV1-mNG has a half-life of ~4 hr (C47) and is stabilized by proteasome inhibition (bortezomib, C48-C49), VCP/p97 inhibition (CB5083, C50-C51), or Hrd1 deletion (C52).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cross-species validation is compelling with multiple orthogonal approaches (proteasome inhibitor, VCP inhibitor, genetic knockout). The longer half-life in mammalian cells (~4 hr, C47) compared to yeast (~30 min, C29) is notable but not unexpected given species differences in ERAD kinetics. The accumulation to similar levels as control proteins after 24 hr bortezomib treatment (C49) elegantly demonstrates that low steady-state levels reflect active degradation rather than expression problems. This cross-species conservation strongly supports the utility of DegV1 as a tool.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "6ef1a0a9-01d4-4e2e-80e7-49c46351a92d",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "DegV1 is a versatile degron that works with folded, luminal, and soluble proteins as well as integral membrane proteins with different topologies (C54), functions with both exogenous and endogenous proteins (C55), and is degraded through the Hrd1-ERAD axis using the proteasome (C56).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These summary claims (C54-C56) accurately reflect the collective experimental evidence from the study. The claim that DegV1 works with 'folded' proteins is supported by the nanobody data, which is known to fold in the ER. The breadth of protein types tested (luminal, single-pass, multi-pass membrane proteins; exogenous and endogenous) provides strong support for versatility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "1641ba5f-1ea7-4d45-b69b-aa44db0d1ebf",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The IHPYW sequence forming the basis of DegV1 is uncommon in nature, not present in the S. cerevisiae genome (C58), and absent from currently annotated fungal genomes in the Saccharomyces Genome Database (C59).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The bioinformatic analysis is straightforward and the absence of IHPYW from yeast and related fungal genomes is verifiable. This supports that DegV1 is an artificial degron rather than a naturally occurring sequence, which has implications for its use as a tool. However, the manuscript does not address whether related sequences exist or whether the degron consensus could be broader than IHPYW.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "ed089fb7-c5d9-437f-8e2d-369b8f5b284e",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The degradation rates of DegV1-containing proteins are similar to other well-characterized ERAD substrates (C60), suggesting DegV1 is degraded in a manner consistent with endogenous ERAD substrates (C61).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The comparison to known ERAD substrates (particularly KHN with t1/2 <30 min, C20) supports this interpretation. The half-lives observed (~30 min in yeast, ~4 hr in mammalian cells) are within the range reported for ERAD substrates. This validates that DegV1 engages physiological ERAD machinery rather than triggering an artificial degradation pathway.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "0b45ec57-cf55-42c1-9a9a-ac199f7f8b43",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The authors speculate that proteins could be transported in a fully folded state (C64) but favor the interpretation that targeted proteins are recognized and transported in an unfolded state after ERAD complex engagement (C65).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "These are explicitly speculative claims (C64-C65) about the mechanism of retrotranslocation. While the authors appropriately acknowledge this as speculation, the current data do not distinguish between these possibilities. The observation that folded nanobodies are degraded does not prove they remain folded during retrotranslocation. Additional experiments (e.g., disulfide bond mapping, protease sensitivity assays) would be needed to address this question.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "fb3536e9-fb77-4071-ab83-6a1db45923cd",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Prior to this work, all identified degrons functioned within the cytosol to target proteins for ubiquitination and proteasomal degradation (C1-C3, C13). Degrons are minimal protein features sufficient to confer degradation when transferred to stable proteins (C1, C11), with specificity driven by E3 ubiquitin ligases (C10).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims (C1-C3, C10-C11, C13) accurately represent the state of the field prior to this study and are supported by appropriate citations. The claim that 'all known degrons target cytosolic proteins' (C13) establishes the novelty of identifying ER luminal degrons. These are well-established concepts in the field.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims about the ubiquitin-proteasome system (C7-C9), degron history (C12), ER protein flux (C14), ERAD conservation (C15), Hrd1 complex composition (C16-C19), and retrotranslocation mechanisms (C62-C63) establish the context for the study.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are appropriately cited and represent established knowledge in the field. They provide necessary context but are not novel findings of this study. The citations appear appropriate and the claims are consistent with current understanding of ERAD mechanisms.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "0c6c348e-bfd3-48ed-8d97-af7142b2ee6a",
+      "content_id": "b7f8a00c-98bd-4b0e-a52f-9191e5289eb4",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors claim to have created the first tool for targeting proteins for degradation from the previously unreachable ER lumen (C66).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This claim is supported by the collective experimental evidence showing DegV1 functions as a portable degron tag for ER luminal proteins in both yeast and mammalian cells. The novelty claim is justified given that prior degrons only functioned in the cytosol (C3, C13). However, the tool has limitations (N-terminal position requirement, C32) that should be acknowledged when considering its utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "c8d767e7-57ca-4630-914e-698cca4afd18",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors identified the first short linear sequences (DegV1, a 4X repeat of IHPYW) that function as degrons from the ER lumen, facilitating proteasomal degradation through ERAD when transferred to proteins. These degrons enable degradation of both luminal and integral membrane ER proteins.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states this is an 'important study' that 'identifies a short amino acid sequence' functioning as a 'degron for ER proteins' and provides 'solid evidence.' Reviewers confirm the authors 'convincingly show' the degron targets ER proteins for degradation with 'well-founded' data and 'appropriate controls.' All reviewers accept the core finding without challenging its validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Using a pentapeptide library screen with FACS sorting, the authors identified sequences enriched in unstable proteins, particularly those beginning with isoleucine (3.8-fold enrichment) and leucine (1.6-fold enrichment). Multimerization of the IHPYW sequence (4X repeat) dramatically decreased protein stability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the screening approach and findings without criticism. One reviewer notes the authors 'use a previously established reporter' and 'determine the stability of these constructs in a high throughput FACS-sorting procedure' to 'identify a set of peptides.' The methodology and results are accepted as technically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "ba23ed35-375f-4ad1-a3a2-4e9323358090",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "DegV1 functions as an ER luminal degron only when positioned at the N-terminus of ER-localized proteins. Internal or C-terminal placement of DegV1 did not affect protein stability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge this finding without challenge. One reviewer explicitly states 'the degrons only functioned when placed at the N-terminus of the target protein.' The position-dependent activity is accepted as demonstrated by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "DegV1-targeted luminal ER substrates are degraded by the proteasome through the Hrd1-ERAD pathway. Components of the ERAD-L complex (Hrd1, Hrd3, Der1, Usa1) except Yos9 were required for DegV1 degradation, while Doa10 was not required.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers confirm the authors 'demonstrated that degradation was via the ERAD pathway' and note the degron 'utilizes components of the Hrd1 ubiquitin ligase complex.' The editor states the sequence 'initiates proteasomal degradation via the Hrd1 ER quality control ubiquitin ligase complex.' The mechanistic characterization is accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "88f61959-a592-451b-b440-9efaf82f574b",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "DegV1 functions as an N-terminal degron for endogenous proteins with diverse topologies, including the luminal protein Suc2, single-pass membrane protein Big1, and multi-spanning membrane protein Elo1. Degradation is proteasome-dependent as shown by bortezomib sensitivity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge the authors 'identified a sequence that can be appended onto other ER targeted proteins to mediate their degradation' and that it 'targets other ER proteins with different topological and folding properties.' The data showing degradation of diverse protein types is accepted as supportive of the conclusions.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "e90a9f2e-6028-4121-838c-7cda6c328fbc",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "DegV1 functions as an Hrd1-dependent ER-localized degron in mammalian cells (U2OS), with ER-DegV1-mNG showing instability (half-life ~4 hr) that is reversed by proteasome inhibition (bortezomib) or p97 inhibition (CB5083), and stabilized in Hrd1 knockout cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note 'the degron also targets ER-proteins in mammalian cells' without expressing doubt. The editor acknowledges the work demonstrates conservation across eukaryotes. The mammalian cell data is accepted as extending the yeast findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "bc672f8a-f266-407d-96d4-540e1daea281",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The IHPYW sequence forming DegV1 is uncommon in nature, absent from S. cerevisiae and fungal genomes, yet degron-containing proteins show degradation rates similar to well-characterized ERAD substrates, suggesting DegV1 is degraded in a manner consistent with endogenous ERAD substrates.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer raises concern that 'the DegV1 sequence used throughout the paper is not present in any yeast or fungal proteins' and questions whether 'such sequences function in vivo,' stating 'the role of such sequences in vivo is questionable.' The editor notes 'the in vivo relevance of the findings' requires future work. This creates uncertainty about physiological relevance despite technical validity.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "9d4763c8-d9e4-424e-811d-2d54b98a706a",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors speculate about whether DegV1-tagged proteins are transported in a folded or unfolded state, favoring the idea that proteins are recognized and transported in an unfolded state after ERAD complex engagement.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "One reviewer notes 'the fact that it has to be located at the N-terminus of the protein to induce degradation is at odds with the idea that proteins to be degraded need to be unfolded,' highlighting a conceptual tension. The editor states 'future work is required to obtain a more detailed view of the properties of this degron' and 'the mechanisms underlying its recognition.' These mechanistic questions remain unresolved.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about degrons, the ubiquitin proteasome system, ERAD pathways, and the Hrd1 complex composition establish the context that all previously identified degrons function in the cytosol.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are background/contextual claims supported by citations. Reviewers do not challenge these established facts and use them as the basis for understanding the novelty of the work. The editor and reviewers accept the premise that prior degrons were cytosolic.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "9635aa68-7ac0-4d1e-aff7-98db2e4a84ee",
+      "content_id": "0d197da6-a365-4bfe-b82a-7f2085741488",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Approximately 90% of the ER-targeted construct had the signal sequence removed, indicating uncleaved signal sequence was unlikely to factor into DegV1 function.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This technical detail about signal sequence cleavage is presented with supporting data (Figure 2A) and is not questioned by reviewers. It serves as a control to ensure the degron effect is not due to uncleaved signal sequences.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "fe4569fd-00f6-4a73-9896-4d3584f0aa28",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "cc9b3970-7521-43bb-8a73-1068b2368a7b",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "953165d1-e8cf-4873-af5a-70959731c776",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "cf45b391-d276-42a4-b35a-653f9bceb356",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "4b6e4d65-b05c-4aba-b969-da7810962f0d",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "fe6788b3-e7a2-430d-9dd4-907b97f2b658",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "5c91ad45-17c9-4a82-b144-0785ef2fdf3a",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "3e7e0c61-776e-4564-8897-2b495347e9ea",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "bcf6cdf3-52a5-4bd7-89a0-2696410c3cfc",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "04ed5187-e099-4e09-b12e-cdd74d9c8c17",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "05e7762d-d484-4e80-8d7b-4b35cc43d199",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "f3adc2f3-475b-4167-9144-a4af73a29991",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "e66d4688-fb76-4946-8050-2386754f272a",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "25f4d99c-127e-4ca7-ba23-e95920151892",
+      "result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760"
+    },
+    {
+      "claim_id": "16a9c391-e90f-4742-8ede-b6b025f475da",
+      "result_id": "9fb5f73e-f157-4602-b33a-a1b6c0cdad18"
+    },
+    {
+      "claim_id": "8984dc1b-9711-4ccd-811c-ae9326170984",
+      "result_id": "9fb5f73e-f157-4602-b33a-a1b6c0cdad18"
+    },
+    {
+      "claim_id": "e7215998-1b6c-47ca-badd-fa6a91a2bd1c",
+      "result_id": "9fb5f73e-f157-4602-b33a-a1b6c0cdad18"
+    },
+    {
+      "claim_id": "c75254c1-3649-44dd-9359-7efac92ca0d7",
+      "result_id": "9fb5f73e-f157-4602-b33a-a1b6c0cdad18"
+    },
+    {
+      "claim_id": "6966047d-47a8-4db1-b36f-2afafe7a333f",
+      "result_id": "9fb5f73e-f157-4602-b33a-a1b6c0cdad18"
+    },
+    {
+      "claim_id": "adc7cac6-d271-4bce-b510-1c73eb018ef5",
+      "result_id": "fde7910e-b7c1-4dd6-9751-1031e3dfc31e"
+    },
+    {
+      "claim_id": "27aeaa03-c38b-4737-9fb8-8d34725205e8",
+      "result_id": "fde7910e-b7c1-4dd6-9751-1031e3dfc31e"
+    },
+    {
+      "claim_id": "a7b3fb93-4f62-4508-af99-2dd3f31f7bbb",
+      "result_id": "fde7910e-b7c1-4dd6-9751-1031e3dfc31e"
+    },
+    {
+      "claim_id": "5027b5a0-76c2-4cf5-8645-25dfbd596cb0",
+      "result_id": "fde7910e-b7c1-4dd6-9751-1031e3dfc31e"
+    },
+    {
+      "claim_id": "843bfd31-e4ab-42de-950b-c7a57af03195",
+      "result_id": "fde7910e-b7c1-4dd6-9751-1031e3dfc31e"
+    },
+    {
+      "claim_id": "13468098-c422-4917-b5ff-85a8cdaed992",
+      "result_id": "fde7910e-b7c1-4dd6-9751-1031e3dfc31e"
+    },
+    {
+      "claim_id": "7d19da3a-bddc-4fc1-8f8b-470ce2bf030d",
+      "result_id": "f9be6187-8929-49e9-998f-645f23872c03"
+    },
+    {
+      "claim_id": "c9d660d4-c4a2-49b1-9556-72176a0ed6d1",
+      "result_id": "f9be6187-8929-49e9-998f-645f23872c03"
+    },
+    {
+      "claim_id": "a16b15a8-681e-40ee-9bd7-205c58a017b9",
+      "result_id": "f9be6187-8929-49e9-998f-645f23872c03"
+    },
+    {
+      "claim_id": "772dafbe-b333-4735-84cb-8a621243cd81",
+      "result_id": "f9be6187-8929-49e9-998f-645f23872c03"
+    },
+    {
+      "claim_id": "56a39f40-6b0c-47be-ae65-77a6cebbe72c",
+      "result_id": "f9be6187-8929-49e9-998f-645f23872c03"
+    },
+    {
+      "claim_id": "f74d261c-5e34-4bdc-b2ff-e4deb04e6db3",
+      "result_id": "f9be6187-8929-49e9-998f-645f23872c03"
+    },
+    {
+      "claim_id": "4642a488-4407-4cf1-ab5d-683d4ab689f4",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "3d1ce473-3b53-41b8-ba44-ad04effb79aa",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "db8bd98e-e915-493e-8d2c-b4b280f32204",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "d68154cd-d4f3-4b3d-9366-2f2449d87571",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "8f549534-7845-46df-9aff-bbc77187f17e",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "adff976b-271b-4972-a6ec-2dfa23399e94",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "5d8e7d71-ffa4-4c11-b752-5dd7d264c7bf",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "5da68e0d-a72a-4377-98f9-791c87bec8bf",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "0e42802b-97be-4c29-b3c6-bad7a6280c11",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "cb04ebd9-862e-47b1-9933-ee1ce44aef86",
+      "result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65"
+    },
+    {
+      "claim_id": "e8161446-46b4-45c3-8c44-3685ceb01be4",
+      "result_id": "6ef1a0a9-01d4-4e2e-80e7-49c46351a92d"
+    },
+    {
+      "claim_id": "83478c9c-75e4-44e8-a549-ecb319e8e4ae",
+      "result_id": "6ef1a0a9-01d4-4e2e-80e7-49c46351a92d"
+    },
+    {
+      "claim_id": "a070b427-1cdf-454e-b332-943f98a0e0e2",
+      "result_id": "6ef1a0a9-01d4-4e2e-80e7-49c46351a92d"
+    },
+    {
+      "claim_id": "4cd26057-a64d-44b4-b416-b51b4f39643f",
+      "result_id": "1641ba5f-1ea7-4d45-b69b-aa44db0d1ebf"
+    },
+    {
+      "claim_id": "5699f858-3d64-428f-a66d-a47f2c39368e",
+      "result_id": "1641ba5f-1ea7-4d45-b69b-aa44db0d1ebf"
+    },
+    {
+      "claim_id": "5f381219-73c1-4757-baa4-d11308eaec3f",
+      "result_id": "ed089fb7-c5d9-437f-8e2d-369b8f5b284e"
+    },
+    {
+      "claim_id": "0387c831-0be7-4345-a573-bd78c8826942",
+      "result_id": "ed089fb7-c5d9-437f-8e2d-369b8f5b284e"
+    },
+    {
+      "claim_id": "fbf90292-6f4b-4751-81d4-988b8544330d",
+      "result_id": "0b45ec57-cf55-42c1-9a9a-ac199f7f8b43"
+    },
+    {
+      "claim_id": "dddcb0e5-82af-4b0f-bcf6-961a261be13a",
+      "result_id": "0b45ec57-cf55-42c1-9a9a-ac199f7f8b43"
+    },
+    {
+      "claim_id": "e4cd13c6-c555-43a7-8397-d970fce6c097",
+      "result_id": "fb3536e9-fb77-4071-ab83-6a1db45923cd"
+    },
+    {
+      "claim_id": "d4640f8b-5a28-4b15-87e0-32215a4bb99c",
+      "result_id": "fb3536e9-fb77-4071-ab83-6a1db45923cd"
+    },
+    {
+      "claim_id": "29a4459d-5aaa-4a74-b428-e9f630bbb40d",
+      "result_id": "fb3536e9-fb77-4071-ab83-6a1db45923cd"
+    },
+    {
+      "claim_id": "9b160854-cac7-4063-a2de-0ed788dd2367",
+      "result_id": "fb3536e9-fb77-4071-ab83-6a1db45923cd"
+    },
+    {
+      "claim_id": "fbecb2ac-5308-4ad5-aeb1-a9203c580403",
+      "result_id": "fb3536e9-fb77-4071-ab83-6a1db45923cd"
+    },
+    {
+      "claim_id": "b873f960-f49e-41ad-bb3d-371ded16288f",
+      "result_id": "fb3536e9-fb77-4071-ab83-6a1db45923cd"
+    },
+    {
+      "claim_id": "30293d34-1e41-4b38-9c70-432c89689ec8",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "6ca31dca-2ac3-4ebb-a563-26bae537c376",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "ac925b42-3c7d-41ec-8fa2-9490b98eeb57",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "ce43cb8b-470b-49d5-a425-0730f9d45172",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "ed05d1f5-d66e-469d-a730-a8d498b5da6d",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "1f23518e-182a-4def-b393-78282dea3233",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "66318dc8-9c85-4218-b5ba-e9d72d7e360e",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "2a21de16-0c6f-4e07-9dc4-b704f5727ff7",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "892fcf9c-89a9-4688-948b-ac29113d4170",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "71feb1c5-f615-408b-9936-3f81d69b7d00",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "9e372654-10cf-4180-a72b-d1956598aee9",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "9aaaec1b-689a-45e9-bc6c-57d07d19a1ca",
+      "result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9"
+    },
+    {
+      "claim_id": "210c90f8-403f-4237-875a-44d7be67be1a",
+      "result_id": "0c6c348e-bfd3-48ed-8d97-af7142b2ee6a"
+    },
+    {
+      "claim_id": "fe4569fd-00f6-4a73-9896-4d3584f0aa28",
+      "result_id": "c8d767e7-57ca-4630-914e-698cca4afd18"
+    },
+    {
+      "claim_id": "4d34ca88-d49a-4fd3-8354-3360c1174cb0",
+      "result_id": "c8d767e7-57ca-4630-914e-698cca4afd18"
+    },
+    {
+      "claim_id": "5f18e6f0-7574-48e8-97df-9d54c73b61cd",
+      "result_id": "c8d767e7-57ca-4630-914e-698cca4afd18"
+    },
+    {
+      "claim_id": "bcf6cdf3-52a5-4bd7-89a0-2696410c3cfc",
+      "result_id": "c8d767e7-57ca-4630-914e-698cca4afd18"
+    },
+    {
+      "claim_id": "210c90f8-403f-4237-875a-44d7be67be1a",
+      "result_id": "c8d767e7-57ca-4630-914e-698cca4afd18"
+    },
+    {
+      "claim_id": "cc9b3970-7521-43bb-8a73-1068b2368a7b",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "953165d1-e8cf-4873-af5a-70959731c776",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "cf45b391-d276-42a4-b35a-653f9bceb356",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "4b6e4d65-b05c-4aba-b969-da7810962f0d",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "fe6788b3-e7a2-430d-9dd4-907b97f2b658",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "5c91ad45-17c9-4a82-b144-0785ef2fdf3a",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "3e7e0c61-776e-4564-8897-2b495347e9ea",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "04ed5187-e099-4e09-b12e-cdd74d9c8c17",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "05e7762d-d484-4e80-8d7b-4b35cc43d199",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "f3adc2f3-475b-4167-9144-a4af73a29991",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "e66d4688-fb76-4946-8050-2386754f272a",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "25f4d99c-127e-4ca7-ba23-e95920151892",
+      "result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf"
+    },
+    {
+      "claim_id": "8984dc1b-9711-4ccd-811c-ae9326170984",
+      "result_id": "ba23ed35-375f-4ad1-a3a2-4e9323358090"
+    },
+    {
+      "claim_id": "e7215998-1b6c-47ca-badd-fa6a91a2bd1c",
+      "result_id": "ba23ed35-375f-4ad1-a3a2-4e9323358090"
+    },
+    {
+      "claim_id": "c75254c1-3649-44dd-9359-7efac92ca0d7",
+      "result_id": "ba23ed35-375f-4ad1-a3a2-4e9323358090"
+    },
+    {
+      "claim_id": "6966047d-47a8-4db1-b36f-2afafe7a333f",
+      "result_id": "ba23ed35-375f-4ad1-a3a2-4e9323358090"
+    },
+    {
+      "claim_id": "adc7cac6-d271-4bce-b510-1c73eb018ef5",
+      "result_id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f"
+    },
+    {
+      "claim_id": "27aeaa03-c38b-4737-9fb8-8d34725205e8",
+      "result_id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f"
+    },
+    {
+      "claim_id": "a7b3fb93-4f62-4508-af99-2dd3f31f7bbb",
+      "result_id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f"
+    },
+    {
+      "claim_id": "5027b5a0-76c2-4cf5-8645-25dfbd596cb0",
+      "result_id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f"
+    },
+    {
+      "claim_id": "843bfd31-e4ab-42de-950b-c7a57af03195",
+      "result_id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f"
+    },
+    {
+      "claim_id": "13468098-c422-4917-b5ff-85a8cdaed992",
+      "result_id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f"
+    },
+    {
+      "claim_id": "a070b427-1cdf-454e-b332-943f98a0e0e2",
+      "result_id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f"
+    },
+    {
+      "claim_id": "7d19da3a-bddc-4fc1-8f8b-470ce2bf030d",
+      "result_id": "88f61959-a592-451b-b440-9efaf82f574b"
+    },
+    {
+      "claim_id": "c9d660d4-c4a2-49b1-9556-72176a0ed6d1",
+      "result_id": "88f61959-a592-451b-b440-9efaf82f574b"
+    },
+    {
+      "claim_id": "a16b15a8-681e-40ee-9bd7-205c58a017b9",
+      "result_id": "88f61959-a592-451b-b440-9efaf82f574b"
+    },
+    {
+      "claim_id": "772dafbe-b333-4735-84cb-8a621243cd81",
+      "result_id": "88f61959-a592-451b-b440-9efaf82f574b"
+    },
+    {
+      "claim_id": "56a39f40-6b0c-47be-ae65-77a6cebbe72c",
+      "result_id": "88f61959-a592-451b-b440-9efaf82f574b"
+    },
+    {
+      "claim_id": "f74d261c-5e34-4bdc-b2ff-e4deb04e6db3",
+      "result_id": "88f61959-a592-451b-b440-9efaf82f574b"
+    },
+    {
+      "claim_id": "e8161446-46b4-45c3-8c44-3685ceb01be4",
+      "result_id": "88f61959-a592-451b-b440-9efaf82f574b"
+    },
+    {
+      "claim_id": "83478c9c-75e4-44e8-a549-ecb319e8e4ae",
+      "result_id": "88f61959-a592-451b-b440-9efaf82f574b"
+    },
+    {
+      "claim_id": "4642a488-4407-4cf1-ab5d-683d4ab689f4",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "3d1ce473-3b53-41b8-ba44-ad04effb79aa",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "db8bd98e-e915-493e-8d2c-b4b280f32204",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "d68154cd-d4f3-4b3d-9366-2f2449d87571",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "8f549534-7845-46df-9aff-bbc77187f17e",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "adff976b-271b-4972-a6ec-2dfa23399e94",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "5d8e7d71-ffa4-4c11-b752-5dd7d264c7bf",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "5da68e0d-a72a-4377-98f9-791c87bec8bf",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "0e42802b-97be-4c29-b3c6-bad7a6280c11",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "cb04ebd9-862e-47b1-9933-ee1ce44aef86",
+      "result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc"
+    },
+    {
+      "claim_id": "4cd26057-a64d-44b4-b416-b51b4f39643f",
+      "result_id": "bc672f8a-f266-407d-96d4-540e1daea281"
+    },
+    {
+      "claim_id": "5699f858-3d64-428f-a66d-a47f2c39368e",
+      "result_id": "bc672f8a-f266-407d-96d4-540e1daea281"
+    },
+    {
+      "claim_id": "5f381219-73c1-4757-baa4-d11308eaec3f",
+      "result_id": "bc672f8a-f266-407d-96d4-540e1daea281"
+    },
+    {
+      "claim_id": "0387c831-0be7-4345-a573-bd78c8826942",
+      "result_id": "bc672f8a-f266-407d-96d4-540e1daea281"
+    },
+    {
+      "claim_id": "fbf90292-6f4b-4751-81d4-988b8544330d",
+      "result_id": "9d4763c8-d9e4-424e-811d-2d54b98a706a"
+    },
+    {
+      "claim_id": "dddcb0e5-82af-4b0f-bcf6-961a261be13a",
+      "result_id": "9d4763c8-d9e4-424e-811d-2d54b98a706a"
+    },
+    {
+      "claim_id": "e4cd13c6-c555-43a7-8397-d970fce6c097",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "d4640f8b-5a28-4b15-87e0-32215a4bb99c",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "29a4459d-5aaa-4a74-b428-e9f630bbb40d",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "30293d34-1e41-4b38-9c70-432c89689ec8",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "6ca31dca-2ac3-4ebb-a563-26bae537c376",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "ac925b42-3c7d-41ec-8fa2-9490b98eeb57",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "9b160854-cac7-4063-a2de-0ed788dd2367",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "fbecb2ac-5308-4ad5-aeb1-a9203c580403",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "ce43cb8b-470b-49d5-a425-0730f9d45172",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "b873f960-f49e-41ad-bb3d-371ded16288f",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "ed05d1f5-d66e-469d-a730-a8d498b5da6d",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "1f23518e-182a-4def-b393-78282dea3233",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "66318dc8-9c85-4218-b5ba-e9d72d7e360e",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "2a21de16-0c6f-4e07-9dc4-b704f5727ff7",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "892fcf9c-89a9-4688-948b-ac29113d4170",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "71feb1c5-f615-408b-9936-3f81d69b7d00",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "9e372654-10cf-4180-a72b-d1956598aee9",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "9aaaec1b-689a-45e9-bc6c-57d07d19a1ca",
+      "result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0"
+    },
+    {
+      "claim_id": "16a9c391-e90f-4742-8ede-b6b025f475da",
+      "result_id": "9635aa68-7ac0-4d1e-aff7-98db2e4a84ee"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "a56c255a-0ce0-4b57-ba2d-74bd43f9b9fc",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "97054ea9-31ae-4119-9eda-b5efc66aaa65",
+      "peer_result_id": "e90a9f2e-6028-4121-838c-7cda6c328fbc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on mammalian cell validation (C45-C53, C57). Both evaluations support the cross-species conservation of DegV1 function. OpenEval provides more detailed analysis of kinetics and mechanistic controls, while peer reviewers accept the findings without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "7578c8bd-3d5a-46e5-9215-9ea1b2fc5e10",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0b45ec57-cf55-42c1-9a9a-ac199f7f8b43",
+      "peer_result_id": "9d4763c8-d9e4-424e-811d-2d54b98a706a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address mechanistic speculation about retrotranslocation (C64-C65) and rate as UNCERTAIN. OpenEval notes the data cannot distinguish between possibilities and suggests additional experiments. Peer reviewers highlight conceptual tension with N-terminal requirement and note mechanistic questions remain unresolved.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "6adc5501-764b-419d-9507-0303deb35363",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760",
+      "peer_result_id": "2b86c416-1323-420b-80d5-7b1b4b3b4ddf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong overlap on library design and screening methodology (C20-C27, C67-C71). Both support the technical soundness of the approach. OpenEval provides detailed analysis of enrichment calculations and oversampling, while peer reviewers accept the methodology without criticism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "5500b516-412f-4572-9765-1bcd5ae8a024",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "fde7910e-b7c1-4dd6-9751-1031e3dfc31e",
+      "peer_result_id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address ERAD mechanism characterization (C33-C38). Both evaluations are SUPPORTED. OpenEval emphasizes the thoroughness of proteasome inhibitor and genetic deletion experiments, while peer reviewers confirm the Hrd1 pathway involvement is demonstrated.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "fa16116c-1194-4628-b2b8-0f9e569a18fc",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "9fb5f73e-f157-4602-b33a-a1b6c0cdad18",
+      "peer_result_id": "ba23ed35-375f-4ad1-a3a2-4e9323358090",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address position-dependence of degron activity (C29-C32) and rate as SUPPORTED. OpenEval notes the C-terminal test complication with HDEL signal, while peer reviewers explicitly accept that degrons only function at N-terminus without expressing concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "83a62e87-b879-483f-9428-bb5e7365215b",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "f9be6187-8929-49e9-998f-645f23872c03",
+      "peer_result_id": "88f61959-a592-451b-b440-9efaf82f574b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address application to endogenous proteins with different topologies (C39-C44, C54-C55). Both are SUPPORTED. OpenEval suggests quantitative half-life measurements would strengthen the work, while peer reviewers accept the diversity of protein types tested without requesting additional data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "c46d200f-1111-4740-b40f-21dc5fde41aa",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "4b7ffd43-a969-4745-bfa1-fb56eb580ec9",
+      "peer_result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address background/contextual claims about ERAD and degrons (C7-C9, C12, C14-C19, C62-C63). Both rate as SUPPORTED. These establish the field context and novelty basis. OpenEval notes appropriate citations; peer reviewers use these as premise for understanding novelty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "7db94eea-d3eb-41dd-bb49-e85bc0a08325",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "1641ba5f-1ea7-4d45-b69b-aa44db0d1ebf",
+      "peer_result_id": "bc672f8a-f266-407d-96d4-540e1daea281",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address bioinformatic analysis showing DegV1 absence from yeast genomes (C58-C59). OpenEval rates SUPPORTED for the technical finding but notes broader consensus not addressed. Peer reviewers rate UNCERTAIN, questioning physiological relevance and in vivo role of artificial sequences.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "9bafac3e-8986-4d38-9852-43c7448b8ee9",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "ed089fb7-c5d9-437f-8e2d-369b8f5b284e",
+      "peer_result_id": "bc672f8a-f266-407d-96d4-540e1daea281",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval addresses comparison to known ERAD substrates and degradation kinetics (C60-C61) as SUPPORTED. Peer R7 addresses related bioinformatic claims (C58-C59) as UNCERTAIN due to physiological relevance concerns. Partial overlap in addressing whether DegV1 represents physiologically relevant ERAD substrate behavior.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "50d8b974-4488-4a0e-bf91-d0fcd6c2065d",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "fb3536e9-fb77-4071-ab83-6a1db45923cd",
+      "peer_result_id": "03e348e0-1354-4da0-b53f-05f9b8eb35e0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address background claims (C1-C3, C10-C11, C13) establishing prior state of field. Both rate as SUPPORTED. OpenEval emphasizes these establish novelty of ER luminal degrons; peer reviewers accept these as basis for understanding the work's contribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "b2e5ebd7-ddb5-452a-9c35-7db40a8d362e",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "6ef1a0a9-01d4-4e2e-80e7-49c46351a92d",
+      "peer_result_id": "88f61959-a592-451b-b440-9efaf82f574b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R6 addresses summary claims about DegV1 versatility (C54-C56). Peer R5 addresses endogenous protein applications (C39-C44, C54-C55). Both SUPPORTED with partial overlap on C54-C55. OpenEval emphasizes breadth of validation; peer reviewers accept diverse protein targeting.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "d0fab256-423e-4b57-8cc8-00c8ae2adc4c",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "9fb5f73e-f157-4602-b33a-a1b6c0cdad18",
+      "peer_result_id": "9635aa68-7ac0-4d1e-aff7-98db2e4a84ee",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on signal sequence cleavage control (C28). Both SUPPORTED. OpenEval notes this addresses important control for degron function mechanism. Peer reviewers accept this technical detail without challenge as supporting data quality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "95f6ad49-7628-44af-a9fd-bf57b0be85ed",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "0c6c348e-bfd3-48ed-8d97-af7142b2ee6a",
+      "peer_result_id": "c8d767e7-57ca-4630-914e-698cca4afd18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R12 addresses overall novelty claim (C66) as SUPPORTED with noted limitations. Peer R1 addresses core finding (C4-C6, C27, C66) as SUPPORTED, with editor and reviewers confirming this is 'important study' with 'solid evidence.' Both agree on fundamental contribution.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "fe80ea06-f1e7-4abc-aa3f-1fe8157d7a05",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "ddaf30bf-e000-4baf-b2fe-23779813b760",
+      "peer_result_id": "c8d767e7-57ca-4630-914e-698cca4afd18",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Limited overlap on library design context (C4) and functional validation (C27). OpenEval R1 focuses on technical details of screening methodology. Peer R1 focuses on overall acceptance of core finding. Both SUPPORTED but address different aspects of the work.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    },
+    {
+      "id": "8fa4d03e-2f4c-4d64-8fe2-4272a1795375",
+      "submission_id": "af3cc72a-06bc-41e9-b618-eb4515333876",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "6ef1a0a9-01d4-4e2e-80e7-49c46351a92d",
+      "peer_result_id": "db3c3dee-d2a4-4b4e-ba55-60b577c90c7f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on versatility claim (C56). OpenEval R6 addresses summary claims about DegV1 working with folded proteins and diverse substrates. Peer R4 addresses ERAD mechanism. Both SUPPORTED but focus on different experimental aspects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:02:15.775990Z"
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "The authors developed a spiking network model (pDpsim) constrained by experimental data from zebrafish posterior Dp (pDp), comprising 4000 E and 1000 I neurons receiving input from 1500 mitral cells. The model reproduced key experimental features including sparse firing rates (~1 Hz during odor presentation), odor-specific activity patterns, recurrent-dominated synaptic input (>80% of excitatory conductance), balanced state dynamics, and inhibition-stabilized activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C47 collectively establish that pDpsim successfully reproduces multiple experimentally observed features of pDp. The model parameters are constrained by published experimental data (C36-C38, C40-C42, C44) and unpublished observations (C35). The model's behavior matches experimental observations across multiple metrics including firing rates, synaptic balance, and network dynamics (C40-C46), supporting the claim that it recapitulates key features of the biological system (C47).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "The authors created assemblies in the model by identifying 100 E neurons most densely connected to activated mitral cells and increasing connection probability between them by factor \u03b1. Networks contained 15 assemblies representing uncorrelated odors, with ~30% of E neurons participating. Activity within assemblies increased with \u03b1, and networks became unstable at \u03b1 ~6.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe the assembly creation procedure and its effects. The methodology is clearly specified (C48-C49), and the resulting network properties (C50-C52) are documented with quantitative results shown in figures. The instability threshold (C52) provides an important constraint on the model parameter space.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C60"
+    ],
+    "result": "Scaled I networks (with global inhibition scaling) showed near-zero E/I correlations and did not enhance E/I co-tuning, failing to account for experimental observations. In contrast, Tuned networks (with E/I assemblies) exhibited significantly higher E/I correlations and co-tuning along the balanced axis, preventing excessive amplification while maintaining global network activity consistent with experimental data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 and C60 demonstrate a key distinction between network architectures. The quantitative measurements of E/I correlations (C53, C56) and co-tuning metrics (C57) are shown in figures and compared to experimental observations from Rupprecht and Friedrich, 2018. The inference that Scaled I networks cannot account for experimental observations (C55) is justified by the data, and the functional consequence (C60) is supported by comparison to experimental studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "In Tuned networks, activity within assemblies was substantially lower and more irregular than in Scaled I networks, and mean firing rates evoked by novel odors were indistinguishable from those evoked by learned odors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 describe firing rate properties of Tuned networks shown in multiple figures. The comparison between network types is quantitative and demonstrates that E/I assemblies prevent the biologically unrealistic firing rate divergence observed in Scaled I networks while maintaining similar responses to novel and learned odors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Network models with assemblies but without E/I co-tuning generated persistent attractor dynamics and biologically unrealistic firing rate distributions. Introducing E/I assemblies established E/I co-tuning, stabilized firing rate distributions, and abolished persistent attractor states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 present the core finding regarding the effect of E/I assemblies on network dynamics. These results are demonstrated through computational simulations with quantitative metrics shown in figures. The contrast between networks with and without E/I co-tuning is well-documented, though the mechanistic understanding could be deeper (as acknowledged by the authors in claims C64-C65, C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Rand networks showed transient, variable responses consistent with balanced state networks. Scaled I networks exhibited persistent firing and high pattern correlations implying attractor dynamics. Tuned networks showed transient responses similar to rand networks and did not exhibit stable attractor states, presumably because precise synaptic balance prevented strong recurrent amplification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 characterize network dynamics across different architectures. The observations are supported by quantitative data in figures (C61-C63), and the interpretation regarding attractor dynamics is consistent with theoretical understanding (C62). The mechanistic explanation (C64-C65) is presented as an inference, which is appropriate given the complexity of the system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "All structured networks showed assembly recruitment when subsets were stimulated. With naturalistic odor morphing stimuli, rand networks showed linear correlation increases without pattern completion, Scaled I networks showed typical pattern completion signatures, while Tuned networks showed intermediate behavior without steep correlation increases near learned odors. Analysis of synaptic currents revealed that modest amplification in Tuned networks involves imperfect synaptic balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C74 systematically characterize pattern completion behavior across network types using two different approaches. The results are quantitative and shown in figures. The synaptic current analysis (C71-C73) provides mechanistic insight into the differences between network types. The inference about imperfect balance (C74) is supported by the data showing slightly larger E than I currents near learned odors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Using an odor subspace with pure odors at vertices and mixtures in between, the authors found that OB activity patterns reflected the square geometry. Scaled I networks produced discrete distributions at three locations (two learned odors and residual), while Tuned networks generated continuous representations with geometry distorted near learned odors. E/I assemblies introduced local curvature that partially separated learned from novel odors without disrupting continuity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 describe geometric transformations of odor representations. The odor subspace design is clearly specified (C75-C76), and the contrasting behaviors of Scaled I versus Tuned networks are documented with PC projections in figures (C78-C80). The interpretation about local curvature (C81) is an inference but is well-supported by the visualization and consistent with the quantitative analyses that follow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Dimensionality (measured by participation ratio) was highest in rand networks and very low in Scaled I networks. In Tuned networks, dimensionality was intermediate\u2014high compared to Scaled I but lower than rand networks. When analyzing only novel odors, dimensionality was similar between rand and Tuned networks, supporting the hypothesis that E/I assemblies locally constrain activity onto lower-dimensional manifolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 present dimensionality analysis with quantitative results shown in figures. The participation ratio measurements are appropriate for the analysis, and the comparison across network types and stimulus conditions (C84) strengthens the interpretation. The hypothesis about local manifolds (C85) is supported by the data and consistent with recent theoretical work cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "In Tuned networks, variance of activity patterns related to novel odors decreased only slightly across PCs, while patterns related to learned odors showed substantially higher variance along the first few PCs. Angles between activity pattern edges were smaller near learned patterns. Assembly neurons had large loadings on first PCs and increased firing rates, while non-assembly neurons showed slightly decreased rates. Variance along first PCs was higher and along higher-order PCs was lower in Tuned versus rand networks, indicating manifolds are delineated by both amplification along preferred directions and suppression along others.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C93 provide detailed characterization of manifold geometry through multiple complementary analyses (variance across PCs, angular distributions, neuron loadings). The results are quantitative and shown in figures. The inference about bidirectional effects (amplification and suppression, C93) is well-supported by the data showing both increased variance in some dimensions and decreased variance in others (C91-C92).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C95"
+    ],
+    "result": "Equalizing biophysical parameters of E and I neurons had little impact on network behavior, indicating effects do not depend on specific biophysical differences. Additional analyses indicate that modest amplification of activity within E/I assemblies contributes to the geometry of neural manifolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C95 address the robustness and mechanisms underlying manifold geometry. The control analysis (C94) is important for establishing that the results are not artifacts of specific parameter choices. The mechanistic interpretation (C95) is supported by the manipulations described in Figure 4\u2014figure supplement 3, though the authors appropriately note that further analysis is needed for complete mechanistic understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Mahalanobis distance (dM) was asymmetrically increased in Tuned E+I networks, with large increases for distances from learned to novel odor classes, particularly enhancing discriminability of learned odors. Classification probability by QDA was significantly higher for mixtures similar to learned odors. When neurons were drawn from assemblies rather than the whole population, dM was higher, indicating assembly neurons convey higher-than-average information. The network supported classification of learned odors particularly when readout focused on assembly neurons, though it did not function as a categorical classifier.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C102 demonstrate enhanced pattern classification in Tuned networks through multiple metrics (dM, QDA classification probability). The results are quantitative with statistical comparisons shown in figures. The asymmetry of dM increases (C96) is an important finding supported by detailed analysis in supplementary figures. The interpretation about information content in assembly neurons (C101) is well-supported by the comparison between assembly and whole-population readouts (C100). The nuanced conclusion (C102) appropriately distinguishes between categorical classification and the more subtle classification enhancement observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Lowest prediction errors for odor concentration were observed for learned odors in Tuned networks using multilinear regression. Support vector machines also showed highest accuracy for learned odors in Tuned networks. These results show that networks with E/I assemblies enable quantitative analysis of selected stimulus components in the presence of distractors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 demonstrate an additional computational capability of Tuned networks beyond classification. Two different methods (regression and SVM) converge on the same conclusion, strengthening the result. The interpretation (C105) is appropriate given the odor mixture paradigm where concentration of one odor must be estimated in the presence of others.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "In a continual learning scenario with overlapping assemblies, Tuned networks maintained stable firing rates and increased discriminability of new odor representations, while Scaled I networks showed convergence of representations and substantial firing rate increases. This supports the assumption that precise balance in E/I assemblies protects against instabilities during continual learning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 address continual learning through a toy model with overlapping assemblies. The contrasting behaviors of Tuned versus Scaled I networks are documented in figures. While this is a limited exploration of continual learning (only two additional assemblies), it provides initial evidence for the stability benefits of E/I assemblies. The conclusion (C108) is appropriately framed as consistent with an assumption rather than definitive proof.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "Global inhibition was insufficient to stabilize population activity in networks with assemblies, leading to broadened firing rate distributions and loss of synaptic balance in Scaled I networks. In contrast, networks with E/I assemblies maintained realistic firing rates and balanced state. Tuned networks showed no discrete attractor states but transformed coding space geometry by confining activity to continuous manifolds near learned inputs. pDpsim recapitulated characteristic properties of a biological memory network with precise synaptic balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C114 synthesize key findings about network stability and dynamics. The failure of global inhibition (C109, C111-C112) and success of E/I assemblies (C113-C114) are well-documented through quantitative comparisons. The summary statement (C110) is justified by the extensive validation against experimental data presented throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The observation that Tuned networks lack discrete attractor states is consistent with the hypothesis that E/I co-tuning decreases the probability of multistable attractor states. Transformations became more discrete when amplification was increased and balance precision reduced, and less discrete when amplification was decreased. Precise synaptic balance may generally favor intermediate over discrete transformations by linearizing the relationship between input and output firing rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C118 place the results in theoretical context and explore the parameter space. The consistency with theoretical predictions (C115) is supported by appropriate citations. The parameter manipulations (C116-C117) are documented in supplementary figures and support the interpretation about a continuum between discrete and continuous representations. The general principle (C118) is appropriately framed as a suggestion supported by the results and consistent with theoretical work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "Balanced networks with E/I assemblies are generally consistent with experimental observations in piriform cortex and Dp. While pattern completion has been observed in piriform cortex, odor-evoked firing patterns are typically irregular, variable, transient and less reproducible than in the OB even after learning, indicating activity does not converge onto stable attractor states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C121 compare model predictions to experimental observations in the biological systems. The citations to experimental studies (C120-C121) support the characterization of biological network behavior. The claim that E/I assembly networks are consistent with these observations (C119) is justified by the model results showing transient, variable responses without stable attractors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C122"
+    ],
+    "result": "The hypothesis that memory networks contain E/I assemblies and operate in precise synaptic balance can be derived from basic assumptions that synaptic plasticity establishes assemblies and firing rate distributions remain stable as network structure is modified by experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C122 provides theoretical justification for the modeling approach. The derivation from basic principles is supported by appropriate citations to theoretical work. This framing helps position the specific model in a broader theoretical context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "In networks with E/I assemblies, population activity was locally constrained onto manifolds representing learned and related inputs by focusing activity into neuronal subspaces. The covariance structure of these manifolds supported pattern classification when information was retrieved from selected neuronal subsets. Networks transformed the geometry of neuronal coding space, resulting in continuous representations reflecting both input relatedness and individual experience.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 summarize key findings about manifold geometry and its functional consequences. These claims are supported by the detailed analyses in C75-C93 (manifold characterization) and C96-C102 (classification). The integration of geometric transformation with functional capabilities is a central contribution of the work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Continuous representations in networks with E/I assemblies enable fast pattern classification, can support continual learning, and may provide a basis for higher-order learning and cognitive computations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C20-C21 are inferences based on the computational results, while C22 is explicitly speculative. Fast pattern classification is demonstrated (C20, supported by C96-C102), and continual learning is explored in a limited way (C21, supported by C106-C108). However, the support for continual learning is preliminary (only two additional assemblies tested), and the claim about higher-order learning (C22) is appropriately marked as speculative. More extensive testing would be needed to fully support C21, and C22 remains a hypothesis for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The authors establish the biological context for their model: zebrafish Dp is homologous to mammalian piriform cortex, both receive direct input from olfactory bulb mitral cells and have been proposed to function as autoassociative memory networks. Odors evoke spatially distributed activity patterns dominated by recurrent connections and modified by experience. Experimental recordings showed neurons in pDp receive large, co-tuned excitatory and inhibitory inputs during odor responses, demonstrating precise synaptic balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 establish the biological foundation for the modeling work through citations to published experimental studies. The homology claim (C1) and functional proposals (C2-C4) are supported by appropriate citations. The characterization of odor-evoked activity (C5-C7) and synaptic balance (C8-C10) are based on published experimental data, with C8-C10 specifically citing the authors' own prior work (Rupprecht and Friedrich, 2018) that provides key constraints for the model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors review theoretical background on autoassociative memory, balanced state networks, and E/I co-tuning. Classical theories proposed assemblies define discrete attractor states, but brain areas with memory functions often show irregular, variable activity atypical of attractors. Balanced state networks with enhanced E connectivity require matched I connectivity to prevent runaway activity. E/I co-tuning has been observed experimentally and emerged in simulations with spike-timing-dependent plasticity. E/I co-tuning can be established by including I neurons in assemblies, though exploring this in biological networks is challenging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C33 provide theoretical and experimental context through citations to established literature. These are primarily review statements that set up the motivation for the current work. The citations appear appropriate for the claims made, covering classical theory (C23-C25), experimental observations (C26, C30), theoretical understanding of balanced networks (C27-C29), and computational approaches (C31-C32). The challenge statement (C33) is supported by citation to relevant work on connectomics.",
+    "result_type": "MINOR"
+  }
+]

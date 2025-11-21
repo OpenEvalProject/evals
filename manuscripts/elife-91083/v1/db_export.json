@@ -1,0 +1,2590 @@
+{
+  "submission": {
+    "id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:03:04.142596Z",
+    "updated_at": "2025-11-21T21:03:04.142596Z"
+  },
+  "content": [
+    {
+      "id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "content_type": "manuscript",
+      "content_text": "# Intramolecular feedback regulation of the LRRK2 Roc G domain by a LRRK2 kinase-dependent mechanism\n\n## Authors\n\n- Bernd K Gilsbach<sup>1</sup>\n- Franz Y Ho<sup>2</sup>\n- Benjamin Riebenbauer<sup>1</sup>\n- Xiaojuan Zhang<sup>2</sup>\n- Giambattista Guaitoli<sup>1</sup>\n- Arjan Kortholt<sup>2</sup> ([ORCID: 0000-0001-8174-6397](https://orcid.org/0000-0001-8174-6397)) \u2020\n- Christian Johannes Gloeckner<sup>1</sup> ([ORCID: 0000-0001-6494-6944](https://orcid.org/0000-0001-6494-6944)) \u2020\n\n### Affiliations\n\n1. German Center for Neurodegenerative diseases (DZNE) T\u00fcbingen Germany ([ROR:043j0f473](https://ror.org/043j0f473))\n2. Department of Cell Biochemistry, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))\n3. YETEM-Innovative Technologies Application and Research Centre, Suleyman Demirel University West Campus Isparta Turkey ([ROR:04fjtte88](https://ror.org/04fjtte88))\n4. Core Facility for Medical Bioanalytics, Institute for Ophthalmic Research, Center for Ophthalmology, University of T\u00fcbingen T\u00fcbingen Germany ([ROR:03a1kwz48](https://ror.org/03a1kwz48))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe Parkinson\u2019s disease (PD)-linked protein Leucine-Rich Repeat Kinase 2 (LRRK2) consists of seven domains, including a kinase and a Roc G domain. Despite the availability of several high-resolution structures, the dynamic regulation of its unique intramolecular domain stack is nevertheless still not well understood. By in-depth biochemical analysis, assessing the Michaelis\u2013Menten kinetics of the Roc G domain, we have confirmed that LRRK2 has, similar to other Roco protein family members, a KM value of LRRK2 that lies within the range of the physiological GTP concentrations within the cell. Furthermore, the R1441G PD variant located within a mutational hotspot in the Roc domain showed an increased catalytic efficiency. In contrast, the most common PD variant G2019S, located in the kinase domain, showed an increased KM and reduced catalytic efficiency, suggesting a negative feedback mechanism from the kinase domain to the G domain. Autophosphorylation of the G1+2 residue (T1343) in the Roc P-loop motif is critical for this phosphoregulation of both the KM and the kcat values of the Roc-catalyzed GTP hydrolysis, most likely by changing the monomer\u2013dimer equilibrium. The LRRK2 T1343A variant has a similar increased kinase activity in cells compared to G2019S and the double mutant T1343A/G2019S has no further increased activity, suggesting that T1343 is crucial for the negative feedback in the LRRK2 signaling cascade. Together, our data reveal a novel intramolecular feedback regulation of the LRRK2 Roc G domain by a LRRK2 kinase-dependent mechanism. Interestingly, PD mutants differently change the kinetics of the GTPase cycle, which might in part explain the difference in penetrance of these mutations in PD patients.\n\n## Introduction\n\nNonsynonymous sequence variants within the Leucine-Rich Repeat Kinase 2 (LRRK2) are associated with familial forms of Parkinson\u2019s disease (PD) and are phenotypically indistinguishable from idiopathic forms of PD (iPD) (Pais\u00e1n-Ru\u00edz et al., 2004; Zimprich et al., 2004). In addition to defined pathogenic as well as PD-risk coding variants, the LRRK2 locus also contributes to an increased risk of developing iPD more generally, as shown in genome-wide association studies (Sim\u00f3n-S\u00e1nchez et al., 2009). LRRK2 is a multidomain protein, which belongs to the Roco protein family (Mar\u00edn et al., 2008). Besides a core module, conserved among the Roco proteins, consisting of a Roc (Ras of complex proteins) G domain and a COR (C-terminal of Roc) dimerization domain, which is followed by a kinase domain, it contains four predicted solenoid domains. The three N-terminal solenoid domains consist of Armadillo repeats followed by an Ankyrin domain and the namesake leucine-rich repeats, while the C-terminus is formed by a seven-bladed WD40 domain (Mills et al., 2012). By similarity, these domains are involved in protein\u2013protein interactions and, based on recent structural models and high-resolution structures, are likely to be involved in the intramolecular regulation of the protein, as well as, for example, by keeping the kinase domain in an auto-inhibited state (Deniston et al., 2020; Gloeckner and Porras, 2020; Guaitoli et al., 2016; Taylor et al., 2020). Moreover, membrane-bound LRRK2 has been demonstrated to phosphorylate a specific set of Rab proteins at a conserved threonine residue within their switch II motif, including Rab8a and Rab10 (Gomez et al., 2019; Steger et al., 2016). In addition, LRRK2 kinase activity has been demonstrated to be involved in endo-lysosomal pathways, thereby being a regulator of the innate immunity (Ahmadi Rastegar and Dzamko, 2020; Bonet-Ponce and Cookson, 2019; Erb and Moore, 2020). Despite these findings, the molecular mechanisms underlying LRRK2 activation and regulation are still not completely understood.\n\nIt is clear that the kinase activity of LRRK2 is dependent on the guanine nucleotide-binding capacity of the Roc domain. Despite the availability of high-resolution structures, the complete mechanism of G-nucleotide action remains to be determined, in particular if the nucleotide state of the Roc domain influences kinase activity (Biosa et al., 2013; Ito et al., 2007; Taymans et al., 2011).\n\nPrevious work on the conserved RocCOR module of a bacterial Roco protein has suggested that the nucleotide state of the Roc domain regulates dimerization (Deyaert et al., 2017). Consistently, also accumulating data shows that a monomer dimer/oligomer transition plays a critical role in LRRK2 protein activation (Berger et al., 2010; Schapansky et al., 2014; Wu et al., 2006). Cellular data suggest that LRRK2 shuttles between a monomeric cytosolic states and kinase-active oligomeric forms localized at the membrane (Berger et al., 2010; James et al., 2012). Further support comes from recent high-resolution structures, indicating that a Rab29-induced tetramerization represents the kinase active state (Wu et al., 2006). Our recent data revealed that autophosphorylation induces LRRK2 monomerization (Guaitoli et al., 2023). Interestingly, the Roc domain has been identified as a major target of LRRK2 autophosphorylation by phospho-proteomic analysis (Gloeckner et al., 2010; Greggio et al., 2009; Webber et al., 2011). Furthermore, there are indications that autophosphorylation of the Roc G domain modifies GTP-binding activities (Webber et al., 2011) and that trans-phosphorylation by the kinase domain of the LRRK2 orthologue Dictyostelium Roco4 enhances GTPase activity (Liu et al., 2016). In this study, we analyzed the GTPase activity of LRRK2 and its PD mutants in depth and by combining systematic mutational analysis with the determination of the Michaelis\u2013Menten kinetics. Based on this analysis, we identified an intramolecular negative feedback loop defined by LRRK2 autophosphorylation and its impact on the monomer\u2013dimer equilibrium and GTPase activity.\n\n## Results\n\n### Impact of PD variants on LRRK2 GTPase activity\n\nWe and others have previously determined a full Michaelis\u2013Menten kinetics for the GTPase hydrolysis mediated by Roco proteins as well as for wild-type LRRK2 (Liu et al., 2010; Wauters et al., 2018). LRRK2 has kinetic parameters comparable to other Roco protein family members. Strikingly, the KM value of LRRK2 lies within the range of the physiological GTP concentrations (around 500 \u00b5M; Traut, 1994) within the cell. Therefore, changes in global cellular or local GTP concentration might have a high impact on protein activity. For this reason, we here fully assessed the enzyme kinetics of disease-associated PD variants, in particular those with confirmed disease co-segregation. For this purpose, we selected three pathogenic variants, R1441G, localized within the Roc domain, the Y1699C variant in the COR-A domain, as well as the kinase-domain variant G2019S. All three variants significantly increase the phosphorylation of the LRRK2 substrates Rab8a, Rab10, and Rab12 (Kalogeropulou et al., 2022). In addition to full-length LRRK2 expressed in HEK293T cells, we included a LRRK2 RocCOR domain construct expressed as an MBP fusion protein from Escherichia coli in this study. Besides the wild-type, the variants R1441G and Y1699C have been successfully expressed and purified from E. coli. For full-length LRRK2, only the Roc-domain variant R1441G as well as the kinase-domain variant G2019S could be analyzed due to considerable low expression and stability of a full-length LRRK2 Y1699C construct in HEK293T cells. LRRK2 wt, R1441G, as well as Y1699C MBP-RocCOR constructs showed similar kinetic parameters in the standard radiolabeling assay (charcoal assay), which determines the release of free inorganic phosphate (Pi) (Kolch, 2000). While slight differences were observed in the individual KM as well as kcat values, the catalytic efficiency determined by kcat/KM was identical (Figure 1A\u2013D; Supplementary file 1a and b). For full-length LRRK2, we have chosen an HPLC-based assay to overcome limitations in the amount of protein necessary to determine a full Michaelis\u2013Menten kinetics. This assay determines the production of Guanosine Diphosphate (GDP) by chromatographic separation of the nucleotides (Ahmadian et al., 1997). To ensure that both assays result in comparable results, we compared GTP hydrolysis rates (kobs) of full-length LRRK2 wt in both assays at two different GTP concentrations. Both assays, the HPLC-based assay as well as the charcoal assay, resulted in overall comparable kinetics, ensuring that the results of both assays can be directly compared (Figure 1E and F, Table 1). For the wild-type full-length LRRK2 protein, we have determined a kcat of 0.36 \u00b1 0.02 min\u20131 and a KM of 554 \u00b1 62 \u00b5M confirming our previously published data, thus demonstrating the robustness of the used HPLC-based assay (Wauters et al., 2018).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig1-v1.jpg)\n\n**Figure 1.:** (A) Michaelis\u2013Menten kinetics for pathogenic variant within the RocCOR module. (B) Comparison of KM values (n: wt=5, R1441G=6, Y1699C=5). (C) Comparison of kcat values (n: wt=5, R1441G=6, Y1699C=5). (D) Catalytic efficiency (kcat/KM) (n: wt=5, R1441G=6, Y1699C=5). (E\u2013G) Determination of kobs values for full-length LRRK2 at 100 \u00b5M (E) and 2000 \u00b5M (F) GTP (both: n=4). (H) Domain structure of LRRK2 and the position of PD variants analyzed in this study.\n\n**Table 1.**\n HPLC-based full-length LRRK2 Michaelis\u2013Menten kinetics.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>LRRK2 variant</th>\n      <th>KM (\u00b5M)</th>\n      <th>kcat (min\u20131)</th>\n      <th>kcat/KM (min\u20131/mM)</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>wt</td>\n      <td>554 \u00b1 62</td>\n      <td>0.36 \u00b1 0.02</td>\n      <td>0.71 \u00b1 0.08</td>\n    </tr>\n    <tr>\n      <td>wt+ATP</td>\n      <td>1036 \u00b1 169</td>\n      <td>0.14 \u00b1 0.01</td>\n      <td>0.13 \u00b1 0.02</td>\n    </tr>\n    <tr>\n      <td>R1441G</td>\n      <td>272 \u00b1 28</td>\n      <td>0.43 \u00b1 0.02</td>\n      <td>1.57 \u00b1 0.23</td>\n    </tr>\n    <tr>\n      <td>G2019S</td>\n      <td>867 \u00b1 110</td>\n      <td>0.37 \u00b1 0.03</td>\n      <td>0.42 \u00b1 0.06</td>\n    </tr>\n    <tr>\n      <td>K1906M</td>\n      <td>181 \u00b1 58</td>\n      <td>0.28 \u00b1 0.03</td>\n      <td>1.52 \u00b1 0.52</td>\n    </tr>\n    <tr>\n      <td>T1343A</td>\n      <td>265 \u00b1 25</td>\n      <td>0.10 \u00b1 0.01</td>\n      <td>0.38 \u00b1 0.04</td>\n    </tr>\n    <tr>\n      <td>T1343A+ATP</td>\n      <td>328 \u00b1 34</td>\n      <td>0.10 \u00b1 0.01</td>\n      <td>0.30 \u00b1 0.03</td>\n    </tr>\n  </tbody>\n</table>\n\nInterestingly, full-length LRRK2 bearing the R1441G variant showed a decreased Michaelis\u2013Menten constant (KM = 271 \u00b1 27 \u00b5M) while the kcat increased compared to the wt (Figure 2A), leading to an augmented catalytic efficiency of that variant. In contrast, full-length G2019S LRRK2 showed a significantly increased KM value of 867 \u00b1 110 \u00b5M compared to a wt reference (554 \u00b1 62 \u00b5M), while no significant change in the kcat parameter (kcat = 0.36 min\u20131) was observed (Figure 2B). Together, our data show that LRRK2 has a KM value that lies within the range of the physiological GTP concentrations and full-length G2019S LRRK2 showed a significantly increased KM value.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig2-v1.jpg)\n\n**Figure 2.:** (A) Michaelis\u2013Menten kinetics for the R1441G Roc-domain variant compared to LRRK2 wt. (B) Michaelis\u2013Menten kinetics for the G2019S kinase-domain variant compared to LRRK2 wt. (C) Michaelis\u2013Menten kinetics for a kinase-dead variant compared to LRRK2 wt.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig2-figsupp1-v1.jpg)\n\n### Autophosphorylation regulates GTPase activity\n\nSince the pathogenic G2019S variant has increased kinase activity, we next tested if a kinase-inactive variant has the opposite effect on GTPase activity. In fact, the KM value (KM = 181 \u00b1 58 \u00b5M) for a K1906M kinase-dead LRRK2 variant is approximately three times lower compared to wt LRRK2 while the kcat value was only slightly reduced (Figure 2C). Consistently, MLi-2 treated fl. wt LRRK2 also has a lower KM value (Figure 2\u2014figure supplement 1), which also ensures that the GTPase and not the kinase domain is the driver of the GTP consumption in our experimental setup (Liu and West, 2017). This strongly suggests a negative feedback signal on the Roc domain conferred by an active kinase conformation, most likely mediated via autophosphorylation. To further test this hypothesis, we incubated wild-type LRRK2 with ATP, in vitro. In fact, an incubation of the full-length wild-type protein with ATP for 2 hr at 30\u00b0C prior to determining its GTPase activity leads to altered Michaelis\u2013Menten parameters, impacting the KM as well as kcat values. An approximately twofold increase in KM (1036 \u00b1 168 \u00b5M) and an approximately twofold decrease in kcat (0.13 \u00b1 0.01 min\u20131) demonstrate a strong reduction in LRRK2 GTPase activity by enforced autophosphorylation (Figure 3A). As a control condition, to rule out inactivation of the LRRK2 protein by degradation during pre-incubation, we incubated a dead variant (K1906M) with ATP, the same way as the wild-type, resulting in no significant change in KM and kcat values. This shows that autophosphorylation indeed negatively regulates the GTPase activity of LRRK2.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig3-v1.jpg)\n\n**Figure 3.:** (A) Michaelis\u2013Menten kinetics for LRRK2 wt+/-ATP, (B) Phosphosite screen: position of the LRRK2 phosho-sites within the Roc domain which were included in the screen mapped on PDB:7LHW (Myasnikov et al., 2021). Individual domains are highlighted in color as follows: Armadillo (gray), Ankyrin (green), LRR (yellow), Roc (magenta), COR (wheat), Kinase (blue), and WD40 (dark green). (C) Michaelis\u2013Menten kinetics for T1343A LRRK2+/-ATP.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Michaelis\u2013Menten parameters were determined in dependence of ATP pre-incubation. (A) KM values. (B) kcat values. The number of replicates is indicated.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Besides the residue pT1343, R1398 is highlighted in the structures. R1398 is in the homologous position to an invariant glutamine in the structure of small G proteins. The Q61 residue in Ras has been shown to be essential for the hydrolysis reaction as it coordinates the catalytic water molecule (Vetter and Wittinghofer, 2001). Distances shown in yellow report values in \u00c5ngstr\u00f6m. Overall, the AF3 model represents the open (auto-inhibited state of LRRK2).\n\n### The P-loop site T1343 is a critical site for LRRK2 phosphoregulation\n\nTo identify the phosphosites that are important for the feedback mechanism, we tested several serine/ threonine to alanine mutants (Figure 3B), expecting that the critical autophosphorylation site would show no change in kcat and KM values for GTP hydrolysis upon in vitro ATP treatment. By mass-spectrometric mapping, we and others have previously demonstrated that the Roc domain is a hub for LRRK2 autophosphorylation (Gloeckner et al., 2010; Greggio et al., 2009; Webber et al., 2011).\n\nAll Roc autophosphorylation site mutants tested, with the exception of T1343A, showed wild-type behavior upon ATP treatment. A detailed overview of the kinetic analysis of T1343A in comparison to pathogenic variants as well as kinase-dead LRRK2 is shown in Figure 4. In fact, T1343A showed no increase in KM value after ATP treatment, suggesting that this is the regulatory site which is crucial for the feedback mechanism (Figure 3C, Figure 3\u2014figure supplement 1). In addition to the lower KM value compared to wild-type that remains unaffected upon ATP treatment, also a reduced kcat value was observed for the T1343A mutant, which might suggest that the mutation is not completely structurally neutral. However, the T1343A mutant does not result in instable or aggregated protein (see below) and, importantly, the T1343A mutant in the RocCOR domain is the only construct that does not significantly affect the GTPase activity (Supplementary file 1c).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig4-v1.jpg)\n\n**Figure 4.:** (A) KM values. (B) kcat values. (C) Catalytic efficiency (kcat/KM). Significant differences have been determined by an ANOVA followed by a post hoc test (n: wt=5, wt+ATP=2, R1441G=4, G2019S=4, K1906M=3, T1343A=4, T1343A+ATP=4, *p=0.05).\n\nGiven that LRRK2 oligomerization is an important mechanism of LRRK2 regulation, at least for LRRK2 kinase activity, we reasoned if the impact of LRRK2 autophosphorylation on the enzymatic properties of the Roc domain is mediated by changes in the oligomeric state of LRRK2. Furthermore, for the Roco protein found in the bacterium Chlorobium tepidum, dimerization has been demonstrated to modulate GTPase activity (Deyaert et al., 2017; Gotthardt et al., 2008). In fact, in a recent work we could demonstrate that LRRK2 dimerization is impacted by LRRK2 autophosphorylation (Guaitoli et al., 2023). In this work, we could demonstrate that autophosphorylation is shifting the monomer/dimer (m/d) equilibrium toward the monomeric form. Given the relevance for T1343 phosphorylation on LRRK2 GTPase activity, we wondered if the observed negative feedback might be mediated via a modulation of the m/d equilibrium. For this reason, we analyzed the relative abundance of monomers and dimers by mass photometry after ATP treatment for 30 min at 30\u00b0C (Guaitoli et al., 2023; Pathak et al., 2023). In contrast to the wild-type, for which the m/d equilibrium could be shifted toward the monomer by in vitro autophosphorylation, ATP incubation does not affect the percentage of dimer for the T1343A variant of LRRK2 (Figure 5). This suggests that the underlying mechanism of the negative feedback phosphorylation toward lower GTPase activity might be mediated by an increased monomerization of LRRK2.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig5-v1.jpg)\n\n**Figure 5.:** (A) Mass photometry assays for LRRK2 wt and (B) T1343A LRRK2. Significance has been determined by a t-test (n=3, *p=0.05; **p=0.01).\n\n### The phospho-null mutant T1343A is sufficient to disrupt the negative feedback in the LRRK2 signaling cascade in cells\n\nHaving identified an intramolecular negative feedback on LRRK2 GTP hydrolysis mediated by autophosphorylation, we were next interested to investigate its relevance in a cellular context. First, we analyzed the kinase activity of T1343A using an in vitro LRRKtide assay (Jaleel et al., 2007) to rule out that the unchanged KM and kcat values observed upon ATP treatment in our GTPase activity assays are the result of kinase-inactive protein. For this purpose, we compared the kinase activities for LRRK2 T1343A with the wild-type protein, as well as the hyperactive G2019S variant and a kinase-dead control. By this assay, we could clearly demonstrate that T1343A confers specific kinase activity at a level comparable to the LRRK2 wt, while G2019S was clearly more active (Figure 6A, Figure 6\u2014figure supplement 1). Next, we performed cell-based assays, comparing the phosphorylation levels of the LRRK2 substrate Rab10. To this end, we quantified established markers (pRab10 and pS935) for LRRK2 activity by western blot analysis (Kalogeropulou et al., 2022; Figure 6B). In agreement with published data (Kalogeropulou et al., 2022), the other PD mutations R1441G and I2020T showed an approximately eightfold increase in Rab10 phosphorylation (Figure 6C and D). Interestingly, the T1343A variant showed an approximately twofold increase in activity, which is comparable with G2019S, while the double mutant T1343A/G2019S did not further increase Rab10 phosphorylation (Figure 6 and Supplementary file 1). The images used for quantification of the western blots are shown in Figure 6\u2014figure supplement 2. Together, our results suggest that T1343 is crucial for the negative feedback in the LRRK2 signaling cascade in cells and the mutation to alanine disrupts this regulation. Therefore, the T1343A variant has a similar activity compared to G2019S and the double mutant T1343A/G2019S has no further increased activity.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig6-v1.jpg)\n\n**Figure 6.:** (A) In vitro LRRKtide HPLC-based kinase assay (n=2). (B) Western blot for LRRK2 pS935, total LRRK2, Rab10 pT73, and total Rab10. (C) Relative Rab phosphorylation levels. (D) Relative LRRK2 pS935 levels. Significant differences have been determined by an ANOVA followed by a post hoc test (n=3, *p=0.05).\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (A) LRRK2 G2019S, (B) LRRK2 wt, (C) LRRK2 T1343A, and (D) kinase-dead (KD) LRRK2 K1906M.\n\n![Figure 6\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/91083/elife-91083-fig6-figsupp2-v1.jpg)\n\n**Figure 6\u2014figure supplement 2.:** (A\u2013C) Biological replicates. Panel (C) shows the total-LRRK2 blot (24D8) for panel (B) (replication of the western blot B to allow quantification of the reference). The blots were sliced and upper and lower parts were incubated with different antibodies (see \u2018Materials and methods\u2019). After incubation with the ECL+ reagent, the membranes shown in one panel were imaged together using the Stella system (Raytest). Raw images used for quantification with ImageJ are deposited on Zenodo (https://doi.org/10.5281/zenodo.11242229).\n\n## Discussion\n\nAlthough there is significant progress toward functional characterization of LRRK2 in the past two decades, including the availability of high-resolution structures covering almost the entire protein in different conformations, the precise molecular mechanisms underlying LRRK2 activation and regulation have yet to be determined (Taymans et al., 2023). One entry point into these mechanisms is based on conserved mechanisms in kinase-associated cellular signaling. Kinases and G-proteins are often found within the same signaling cascade, but with the exception of Roco proteins, never on the same protein. On the contrary, the usual scheme of signaling is from the G-protein via a kinase cascade toward gene expression is often regulated by the formation of signaling modules orchestrated by scaffolding proteins as given in the well-studied MAP-kinase signaling networks (Birtwistle and Kolch, 2011; Kolch, 2000). In addition, these pathways often include a negative feedback loop allowing a stable signal, a context-specific fine-tuning, as well as shutdown of the system (Birtwistle and Kolch, 2011). For example, an EphA2-mediated negative feedback inhibition of the Ras\u2013PI3K\u2013AKT module leads to a cell cycle arrest (Menges and McCance, 2008).\n\nGiven that LRRK2 combines a G domain with a kinase domain, resembling canonical signaling modules, besides the investigation of the kinase activity (Taylor et al., 2020), quite some attention has been laid on the analysis of the GTPase activity (Biosa et al., 2013; Ho et al., 2016; Lewis et al., 2007; Liu et al., 2010; Liu et al., 2016; Webber et al., 2011; Wu et al., 2019). Nevertheless, knowledge of the interplay between these two domains is still limited. In addition, observations by most of the studies are based on single kobs values at considerable low GTP concentrations around or below the KM for full-length LRRK2-mediated GTP hydrolysis and/or worked with truncated LRRK2 constructs (Liu et al., 2010; Wauters et al., 2018). In this study, we have elucidated a negative feedback loop from kinase to GTPase, increasing the KM value of the Roc domain via autophosphorylation. Given an average physiological GTP concentration of approximately 500 \u00b5M within cells (Traut, 1994), the physiological impact of the differences in the KM values reported in this study, in combination with a negative feedback loop, is expected to lead to a strong perturbation of the tightly regulated LRRK2 activity. We could observe large changes in the KM induced by autophosphorylation, which supports our idea of an intramolecular negative feedback. This feedback loop has an inhibitory effect on LRRK2 Roc-mediated GTP hydrolysis. Furthermore, our study revealed that different PD variants not only alter kinase but also change the kinetics of the Roc-mediated GTP hydrolysis. In fact, when looking at the catalytic efficiency, it is striking that we found it to be increased for the R1441G variant located within a mutational hotspot of the Roc domain, also containing the PD variants R1441C, H, and S, which is in good agreement with the penetrance of these variants (Haugarvoll et al., 2008). In contrast, the most prevalent LRRK2 PD variant G2019S shows an increase in KM, while the catalytic efficiency remains unchanged. This finding is also in well agreement with the different impact of these pathogenic variants on the Rab phosphorylation. While R1441G shows a strong Rab phosphorylation in cells, the effect mediated by G2019S is considerably weaker (Kalogeropulou et al., 2022). Furthermore, we could demonstrate that LRRK2 kinase activity is negatively regulating the Roc-mediated GTP hydrolysis.\n\nBy a systematic mutational analysis, removing confirmed phosphosites within the Roc domain, we identified with T1343 a critical residue, involved in the autophosphorylation-mediated negative feedback, which, in contrast to LRRK2 wt, also showed no difference in dimer\u2013monomer formation upon ATP treatment. T1343 has initially been mapped by phosphoproteomic studies (Gloeckner et al., 2010; Greggio et al., 2009). Furthermore, it has been shown to be quantitatively phosphorylated in the C-terminal four-domain \u2018RCKW\u2019 construct, allowing resolving the phospho-threonine in the recently published cryo-EM structure (Deniston et al., 2020). T1343A and T1343G variants have already been tested in two previous studies, however, only at basal conditions and/or in vitro where similar activity was observed in comparison to wild-type LRRK2 (Biosa et al., 2013; St\u00f6rmer et al., 2023). In agreement with our data, no effect of T1343G on in vitro kinase activity was observed (St\u00f6rmer et al., 2023). Furthermore, replacing T1343 by a non-phosphorylatable residue reduced P33 incorporation in phosphorylation assays by 50% (Greggio et al., 2009). As the new AlphaFold3 deep learning-based modeling software became available, recently, allowing to consider PTMs as well as small molecules, we compared the models of the GDP vs the GTP state of pT1343 LRRK2 (Abramson et al., 2024). Interestingly, the AF3 model suggests that the phosphate of the pT1343 is orientated inward, thereby substituting the gamma phosphate (see Figure 3\u2014figure supplement 2). This finding is well in agreement with MD simulations published recently (St\u00f6rmer et al., 2023). As we are determining GTP hydrolysis in a multi-turnover situation, the pT1343 might hamper the hydrolysis by competing with GTP re-binding. Interestingly, according to phosphoproteomes curated in the PhosphoSitePlus database (https://www.phosphosite.org) also other Rabs are phosphorylated either at a conserved serine or threonine residue at the homologous position (G1+2) within the P-loop (for a P-loop alignment of all Rabs, see Mishra et al., 2013), including Rab1a, Rab5a, Rab7a, Rab8a, Rab10, Rab13, Rab15, Rab17, and Rab35, as well as Rab2 and Rab22a, respectively. In addition, also Rab4, Rab34 are phosphorylated at a P-loop residue. Furthermore, the atypical Rab protein Rab24 has a phosphorylatable tyrosine (Y17) at this position (Ding et al., 2003). In agreement with the findings for LRRK2 described here, Rab24 Y17A shows an increase in intrinsic GTP hydrolysis rate (Wu et al., 2006). Together, these findings suggest that P-loop phosphorylation is a relevant and conserved regulatory mechanism for Rab proteins.\n\nWhat might be the biological consequence of this mechanism? As shown for its bacterial ortholog (Deyaert et al., 2017), increasing the GTP-loaded portion of LRRK2 favors its monomeric state. GTP hydrolysis leads, at least transiently, to a GDP-bound state of LRRK2, potentially inducing dimerization at a critical local protein concentration. LRRK2 kinase activity might counteract this mechanism by autophosphorylation of the P-loop residue T1343, shifting the equilibrium back to the monomeric state. This hypothesis is supported by recently determined EM structures of the bacterial LRRK2 homolog ctRoco (Galicia et al., 2024). This CtRoco dimer structure revealed a dimer-stabilized orientation of the P-loop, which would prevent direct nucleotide binding on the dimer. This therefore further supports a critical role of the P-loop conformation in the nucleotide-induced monomerization. Removing of this regulatory phosphosite leads to an LRRK2 activity comparable to G2019S and cannot be further increased by introducing the double mutant T1343A/G2019S. This suggests that there is a tight regulation between GTPase activity, phosphorylation, and monomer dimer equilibrium, which all interplay with each other to regulate the LRRK2 signal output. Consistently, compounds target either the kinase, G domain, or dimerization can block LRRK2 activity and signaling (Helton et al., 2021; Pathak et al., 2023; Wojewska and Kortholt, 2021).\n\nHowever, to fully understand the LRRK2 mechanism and further explore allosteric targeting of LRRK2, a better understanding of the complex and dynamic conformational changes underlying the local orchestration and activation of LRRK2, in particular in the context of membrane localization and oligomerization as well as effector binding, such as Rab12 and Rab29 or 14-3-3 (reviewed in Alessi and Pfeffer, 2024), is necessary.\n\nIn conclusion, our study describes a novel intramolecular feedback mechanism of LRRK2, which is based on autophosphorylation. Similar to MAPK pathways where negative feedback mechanisms are essential to guarantee a robust signal, and also allowing a tight and context-specific shutdown of the pathway, the kinase domain in its active conformation negatively regulates GTP hydrolysis.\n\n## Materials and methods\n\n### DNA constructs\n\nCloning of the LRRK2 cDNA from human lymphoblasts is described in Gloeckner et al., 2006. The LRRK2 cDNA was cloned into pDONR202 vector and further subcloned by the Gateway LR-reaction (Invitrogen) into the pDEST-NSF-TAP vector for the expression of an N-terminal FLAG/tandem-STREP tag II tagged fusion protein (Gloeckner et al., 2007). Variants were introduced into the ENTRY construct by site-directed mutagenesis using the QuikChange II XL kit (Agilent). For the expression of the RocCOR construct in bacteria, a cDNA sequence corresponding to the LRRK2 amino acids 1293\u20131840 was subcloned into the pDEST-566 vector (N-terminal 6xHIS-MBP tag) using the Gateway system. pDEST-566 was a gift from Dominic Esposito (Addgene plasmid #11517; http://n2t.net/addgene:11517; RRID: Addgene_11517).\n\n### Cell lines\n\nHEK293T cells (CVCL_0063) were used for cell-based experiments. The genetic characteristics of this cell line were analyzed using PCR single-locus technology (Eurofins). Its identity was confirmed by comparing genetic markers with the Cellosaurus database (https://www.Cellosaurus.org). Additionally, the cell lines undergo regular testing to ensure they are free from mycoplasma contamination.\n\n### Purification of full-length LRRK2 from HEK293T cells\n\nThe purification of NSF-tagged full-length LRRK2 has been performed as described previously with minor adaptations (Guaitoli et al., 2016). Briefly, HEK293T cells were transfected between 50 and 70% confluence with 8 \u00b5g of plasmid DNA/14 cm culture dish using polyethyleneimine (PEI) 25 kDa (Polysciences), and cultured post-transfection for 48 hr in 14 cm dishes in Dulbecco's Modified Eagle Medium (DMEM; Sigma-Aldrich) supplemented with 10% (vol/vol) Fetal Bovine Serum (FBS; Sigma-Aldrich) and appropriate antibiotics. After removal of the medium, the cells were resuspended in lysis buffer (1 mL/14 cm dish) containing 30 mM Tris (pH 8.0), 150 mM NaCl, 5 mM MgCl2, 3 mM Dithioerythritol (DTE), 5% glycerol, and supplemented with 0.5% (v/v) Nonidet P-40 substitute, cOmplete protease inhibitor (Roche), and 0.1 mM GDP. Cell lysis was allowed to proceed for 1 hr at 4\u00b0C on a rotating shaker (10 rpm), and cell debris and nuclei were removed by centrifugation at 10,000 \u00d7 g for 10 min. The lysate was incubated with Strep-Tactin beads (IBA, 500 \u00b5L bed volume/15 mL cell lysate) for 2 hr at 4\u00b0C on a rotating shaker. The beads were transferred to a microspin column (GE Healthcare) and washed extensively 5\u00d7 with washing buffer (30 mM Tris [pH 8.0], 150 mM NaCl, 3 mM DTT, 5 mM MgCl2, 5% [vol/vol] glycerol) containing 0.1 mM GDP. Elution was performed with 500 \u00b5L of the same washing buffer containing 2.5 mM of d-desthiobiotin (IBA) and 0.1 mM GDP. Purified proteins were further concentrated using ultracell-30 centrifugal filter units (30 kDa cutoff, Amicon) to reduce relative GDP amounts.\n\n### Purification of 6xHIS-MBP-RocCOR from E. coli\n\n6xHIS-MBP-RocCOR was purified according to standard protocols with minor adaptations (Riggs, 1994). Briefly, the RocCOR pDEST-566 vector was transformed in the E. coli BL21(DE3) strain. An overnight culture was used to inoculate into 2 L LB medium and grown at 37\u00b0C. When the culture reached an OD at 600 nm of about 0.7, protein expression was induced with 0.6 mM IPTG for 4 hr at 20\u00b0C. Cells were harvested and resuspended in resuspension buffer (50 mM HEPES pH 8, 150 mM NaCl, 10 mM MgCl2, 10% glycerol, 0.5 mM GDP, and 5 mM \u03b2-mercaptoethanol, supplemented with 1 mM Phenylmethylsulfonyl Fluoride (PMSF) and 1\u00d7 cOmplete EDTA-free protease inhibitor cocktail [Roche]), and then lysed by sonication. The cell lysate was clarified by centrifugation at 70,000 \u00d7 g, 4\u00b0C for 1 hr. The cleared cell lysate was loaded on a 5 mL MBPTrap column (GE Healthcare). The captured proteins were washed with 5 CV wash buffer (20 mM HEPES pH 8, 200 mM NaCl, 10 mM MgCl2, 10% glycerol, 0.5 mM GDP, and 5 mM \u03b2-mercaptoethanol), then 10 CV wash buffer supplemented with 5 mM ATP, and finally again with 5 CV wash buffer. The MBP fused protein was eluted in wash buffer containing 10 mM maltose.\n\n### HPLC-based GTP hydrolysis assay\n\nSteady-state kinetic measurements of LRRK2-mediated GTP hydrolysis were performed as previously described (Ahmadian et al., 1997). Briefly, 0.1 \u00b5M of full-length LRRK2 was incubated with different amounts of GTP (0, 25, 75, 150, 250, 500, 1000, 2000, 3000, and 5000 \u00b5M) and production of GDP was monitored by reversed-phase C18 HPLC. To this end, the samples (10 \u00b5L) were directly injected on a reversed-phase C18 column (pre-column: Hypersil Gold, 3 \u00b5m particle size, 4.6 \u00d7 10 mm; main column: Hypersil Gold, 5 \u00b5m particle size, 4.6 \u00d7 250 mm, Thermo Scientific) using an Ultimate 3000 HPLC system (Thermo Scientific, Waltham, MA) in HPLC buffer containing 50 mM KH2PO4/K2HPO4 pH 6.0, 10 mM tetrabutylammonium bromide, and 10\u201315% acetonitrile. Subsequently, samples were analyzed using the HPLC integrator (Chromeleon 7.2, Thermo Scientific). Initial rates of GDP production were plotted against the GTP concentration using GraFit5 (v.5.0.13, Erithacus Software). The number of experiments is indicated in the graph, and data point is the average (\u00b1 s.e.m.) of indicated repetitions. The Michaelis\u2013Menten equation was fitted to determine KM (\u00b1 s.e.) and kcat (\u00b1 s.e.).\n\n### HPLC-based LRRKtide assay\n\nLRRK2, LRRKtide, and ATP were mixed on ice to a final concentration 0.1 \u00b5M LRRK2, 200 \u00b5M LRRKtide, and 1 mM ATP, in 30 mM Tris/HCl pH 8.0, 150 mM NaCl, 10 mM MgCl2, 5 mM DTE, 5% glycerol, 0.1 mM GDP. Samples were taken at 0, 5, 10, 25, 45, 65, 90, and 120 min. To stop the reaction, Trifluoroacetic Acid (TFA) was added to a final concentration of 0.1% and the samples were kept on ice before HPLC analysis. To separate phospho from non-phospho LRRKtide, the following HPLC protocol was used: Hypersil Gold C18 (2.1 \u00d7 150 mm; 3 \u00b5m particle size, Thermo Scientific), buffer A: 5% Acetonitrile (ACN), 0.1% TFA; buffer B: 80% ACN, 0.1% TFA, flow rate at 0.5 mL/min, detection at 202 nm. The elution profile was as follows: 0\u20131 min 100% buffer A, 1\u201315 min gradient up to 60% buffer B, 15\u201317 min 100% buffer B, 17\u201322 min 100% buffer A. Subsequently, samples were analyzed using the HPLC integrator (Chromeleon 7.2, Thermo Scientific). Rates of phospho-LRRKtide production were plotted against the time using GraFit5 (v.5.0.13, Erithacus Software).\n\n### Charcoal GTP hydrolysis assay\n\nThe [\u03b3\u201332P]GTP charcoal assay was performed as previously described (Bollag and McCormick, 1995). Briefly, 0.1 \u00b5M full-length LRRK2 or 0.5 \u00b5M 6xHIS-MBP-RocCOR was incubated with different GTP concentrations, ranging from 75 \u00b5M to 8 mM, in the presence of [\u03b3-32P] GTP in GTPase assay buffer (30 mM Tris pH 8, 150 mM NaCl, 10 mM MgCl2, 5% [v/v] glycerol, and 3 mM DTT). Samples were taken at different time points and immediately quenched with 5% activated charcoal in 20 mM phosphoric acid. All non-hydrolyzed GTP and proteins were stripped by the activated charcoal and sedimented by centrifugation. The radioactivity of the isolated inorganic phosphates was then measured by scintillation counting. The initial rates of \u03b3-phosphate release and the Michaelis\u2013Menten kinetics were calculated as described above.\n\n### Mass photometry (MP)\n\nMP was performed as described in Guaitoli et al., 2023. Briefly, the dimer ratio of LRRK2 was determined on a Refeyn Two MP instrument (Refeyn). Prior to the experiment, a standard curve relating particle contrasts to molecular weight was established using a native molecular weight standard (Invitrogen, 1:200 dilution in HEPES-based elution buffer: 50 mM HEPES [pH 8.0], 150 mM NaCl, 5 mM MgCl2, 5% [vol/vol] glycerol, 200 \u00b5M desthiobiotin, and 0.1 mM GDP). LRRK2 protein was divided into two tubes and further incubated with 0.5 mM ATP or buffer (control) for 30 min at 30\u2103. The LRRK2 protein was then diluted to 2\u00d7 of the final concentration (end concentration: 75 nM and 100 nM) in elution buffer. The optical setup was focused in 10 \u03bcL elution buffer before adding 10 \u00b5L of the adjusted protein sample. Depending on the obtained count numbers, acquisition times were chosen between 20 s and 1 min. The dimer ratio in each measurement was normalized according to the equation\n\n$$\nNormalizeddimer%=\\frac{Dimer%}{Monomer%+Dimer%}\n$$\n\nThree measurements were processed for each experimental condition, and data were analyzed using GraphPad Prism.\n\n### Cell-based Rab assay\n\nCell-based LRRK2 activity assays were performed as previously described (Singh et al., 2022). Briefly, HEK293T cells were cultured in DMEM (supplemented with 10% fetal bovine serum and 0.5% Pen/Strep). For the assay, the cells were seeded onto six-well plates and transfected at a confluency of 50\u201370% with SF-tagged LRRK2 variants using PEI-based lipofection. After 48 hr, cells were lysed in lysis buffer 30 mM Tris-HCl [pH 7.4], 150 mM NaCl, 1% Nonident P-40 substitute, cOmplete protease inhibitor cocktail, PhosStop phosphatase inhibitors [Roche]. Lysates were cleared by centrifugation at 10,000 \u00d7 g and adjusted to a protein concentration of 1 \u00b5g/\u00b5L in 1\u00d7 Laemmli buffer. Samples were subsequently subjected to SDS-PAGE and western blot analysis to determine LRRK2 pS935 and Rab10 T73 phosphorylation levels, as described below. Total LRRK2 and Rab10 levels were determined as a reference for normalization. For western blot analysis, protein samples were separated by SDS-PAGE using NuPAGE 10% Bis-Tris gels (Invitrogen) and transferred onto the PVDF membranes (Thermo Fisher). To allow simultaneous probing for LRRK2, on the one hand, and Rab10, on the other hand, membranes were cut horizontally at the 140 kDa MW marker band. After blocking non-specific binding sites with 5% non-fat dry milk in TBST (1 hr, room temperature) (25 mM Tris, pH 7.4, 150 mM NaCl, 0.1% Tween-20), membranes were incubated overnight at 4\u00b0C with primary antibodies at dilutions specified below. Phospho-specific antibodies were diluted in TBST/5% Bovine Serum Albumin (BSA; Roth GmbH). Non-phospho-specific antibodies were diluted in TBST/5% non-fat dry milk powder (Bio-Rad). Phospho-Rab10 levels were determined by the site-specific rabbit monoclonal antibody anti-pRAB10(pT73) (Abcam, ab230261) and LRRK2 pS935 was determined by the site-specific rabbit monoclonal antibody UDD2 (Abcam, ab133450), both at a dilution of 1:2000. Total LRRK2 levels were determined by the in-house rat monoclonal antibody anti-pan-LRRK2 (clone 24D8; 1:10,000) (Carrion et al., 2017). Total Rab10 levels were determined by the rabbit monoclonal antibody anti-RAB10/ERP13424 (Abcam, ab181367) at a dilution of 1:5000. For detection, goat anti-rat IgG or anti-rabbit IgG HRP-coupled secondary antibodies (Jackson ImmunoResearch) were used at a dilution of 1:15,000 in TBST/5% non-fat dry milk powder. Antibody\u2013antigen complexes were visualized using the ECL plus chemiluminescence detection system (GE Healthcare) using the Stella imaging system (Raytest) for detection and quantification.\n\n### Data analysis\n\nGTP hydrolysis was determined from metadata extracted from the chromatograms. Based on these data, Michaelis\u2013Menten fits were performed using GraFit5 (v5.0.13). Statistical significance of reported differences between the conditions was determined by ANOVA using Tukey post hoc test.\n",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Volker D\u00f6tsch, Goethe University Frankfurt Germany\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91083.4.sa0](https://doi.org/10.7554/eLife.91083.4.sa0)\n\nThis valuable article reports on the relationship between GTP hydrolysis parameters and kinase activity of LRRK2, which is associated with Parkinson's disease. The authors provide a detailed accounting of the catalytic efficiency of the ROC GTPase domain of pathogenic variants of LRRK2, in comparison with the wild-type enzyme. The authors propose that phosphorylation of T1343 inhibits kinase activity and influences monomer\u2013dimer transitions, but the experimental evidence is currently incomplete.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91083.4.sa1](https://doi.org/10.7554/eLife.91083.4.sa1)\n\nSummary:\n\nThis study presents careful biochemical experiments to understand the relationship between LRRK2 GTP hydrolysis parameters and LRRK2 kinase activity. The authors report that incubation of LRRK2 with ATP increases the KM for GTP and decreases the kcat. From this they suppose an autophosphorylation process is responsible for enzyme inhibition. LRRK2 T1343A showed no change, consistent with it needing to be phosphorylated to explain the changes in G-domain properties. The authors propose that phosphorylation of T1343 inhibits kinase activity and influences monomer-dimer transitions.\n\nStrengths:\n\nThe strengths of the work are the very careful biochemical analyses and interesting results for wild type LRRK2.\n\nWeaknesses:\n\nThe conclusions related to the involvement of a monomer-dimer transition are to this reviewer, premature and an independent method needs to be utilized to bolster this aspect of the story.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91083.4.sa2](https://doi.org/10.7554/eLife.91083.4.sa2)\n\nAs discussed in the original review, this manuscript is an important contribution to a mechanistic understanding of LRRK2 kinase. Kinetic parameters for the GTPase activity of the ROC domain have been determined in the absence/presence of kinase activity. A feedback mechanism from the kinase domain to GTP/GDP hydrolysis by the ROC domain is convincingly demonstrated through these kinetic analyses. However, a regulatory mechanism directly linking the T1343 phospho-site and a monomer/dimer equilibrium is not fully supported. The T1343A mutant has reduced catalytic activity and can form similar levels of dimer as WT. The revised manuscript does point out that other regulatory mechanisms can also play a role in kinase activity and GTP/GDP hydrolysis (Discussion section). The environmental context in cells cannot be captured from the kinetic assays performed in this manuscript, and the introduction contains some citations regarding these regulatory factors. This is not a criticism, the detailed kinetics here are rigorous, but it is simply a limitation of the approach.\n",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "09bc4bb8-6f04-44ca-936e-1498e5504b61",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C1",
+      "claim": "LRRK2 is a Parkinson's disease (PD)-linked protein consisting of seven domains, including a kinase and a Roc G domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The Parkinson's disease (PD)-linked protein Leucine-Rich Repeat Kinase 2 (LRRK2) consists of seven domains, including a kinase and a Roc G domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a basic characterization of LRRK2 structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "42a3a7a7-abed-43cc-ba01-55492a9fd716",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C2",
+      "claim": "LRRK2 has a KM value that lies within the range of the physiological GTP concentrations within the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "By in-depth biochemical analysis, assessing the Michaelis\u2013Menten kinetics of the Roc G domain, we have confirmed that LRRK2 has, similar to other Roco protein family members, a KM value of LRRK2 that lies within the range of the physiological GTP concentrations within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental Michaelis-Menten kinetics data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "ff6f09a3-464f-44a6-b7c6-d41630fee848",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C3",
+      "claim": "The R1441G PD variant located within the Roc domain showed an increased catalytic efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the R1441G PD variant located within a mutational hotspot in the Roc domain showed an increased catalytic efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental kinetic measurements comparing R1441G to wild-type LRRK2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "5cdd0afd-19be-47f4-845f-dd7a189a63b6",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C4",
+      "claim": "The G2019S PD variant, located in the kinase domain, showed an increased KM and reduced catalytic efficiency.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the most common PD variant G2019S, located in the kinase domain, showed an increased KM and reduced catalytic efficiency, suggesting a negative feedback mechanism from the kinase domain to the G domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental kinetic measurements and suggests a mechanistic interpretation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "0a6702d8-97e0-4415-9d98-e868996a405e",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C5",
+      "claim": "Autophosphorylation of the G1+2 residue (T1343) in the Roc P-loop motif is critical for phosphoregulation of both the KM and the kcat values of the Roc-catalyzed GTP hydrolysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Autophosphorylation of the G1+2 residue (T1343) in the Roc P-loop motif is critical for this phosphoregulation of both the KM and the kcat values of the Roc-catalyzed GTP hydrolysis, most likely by changing the monomer\u2013dimer equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by mutational analysis and kinetic measurements of T1343A variant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "5ac526d5-d82d-4ef3-b81e-112b188d04c9",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C6",
+      "claim": "The LRRK2 T1343A variant has a similar increased kinase activity in cells compared to G2019S.",
+      "claim_type": "EXPLICIT",
+      "source": "The LRRK2 T1343A variant has a similar increased kinase activity in cells compared to G2019S and the double mutant T1343A/G2019S has no further increased activity, suggesting that T1343 is crucial for the negative feedback in the LRRK2 signaling cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell-based Rab10 phosphorylation assays.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "c11db684-7478-4950-89be-ad0149db63ab",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C7",
+      "claim": "The double mutant T1343A/G2019S has no further increased activity compared to T1343A alone.",
+      "claim_type": "EXPLICIT",
+      "source": "The LRRK2 T1343A variant has a similar increased kinase activity in cells compared to G2019S and the double mutant T1343A/G2019S has no further increased activity, suggesting that T1343 is crucial for the negative feedback in the LRRK2 signaling cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cell-based Rab10 phosphorylation assays comparing single and double mutants.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "4309b896-0dde-4826-b66b-20759d649b02",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C8",
+      "claim": "T1343 is crucial for the negative feedback in the LRRK2 signaling cascade.",
+      "claim_type": "EXPLICIT",
+      "source": "The LRRK2 T1343A variant has a similar increased kinase activity in cells compared to G2019S and the double mutant T1343A/G2019S has no further increased activity, suggesting that T1343 is crucial for the negative feedback in the LRRK2 signaling cascade.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that T1343A mutation phenocopies G2019S and the double mutant shows no additive effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "1db9a418-5a71-4291-befd-2beaca82ee6f",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C9",
+      "claim": "PD mutants differently change the kinetics of the GTPase cycle, which might in part explain the difference in penetrance of these mutations in PD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, PD mutants differently change the kinetics of the GTPase cycle, which might in part explain the difference in penetrance of these mutations in PD patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculative interpretation of the kinetic data in relation to clinical observations.",
+      "evidence_type": "[\"DATA\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "aab3c635-e3cb-4907-95bb-1e46189354ff",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C10",
+      "claim": "Nonsynonymous sequence variants within LRRK2 are associated with familial forms of Parkinson's disease.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonsynonymous sequence variants within the Leucine-Rich Repeat Kinase 2 (LRRK2) are associated with familial forms of Parkinson's disease (PD) and are phenotypically indistinguishable from idiopathic forms of PD (iPD) (Pais\u00e1n-Ru\u00edz et al., 2004; Zimprich et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "e4829209-9cf0-41f4-a9f7-80b7e55a7438",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C11",
+      "claim": "LRRK2-associated familial PD is phenotypically indistinguishable from idiopathic forms of PD.",
+      "claim_type": "EXPLICIT",
+      "source": "Nonsynonymous sequence variants within the Leucine-Rich Repeat Kinase 2 (LRRK2) are associated with familial forms of Parkinson's disease (PD) and are phenotypically indistinguishable from idiopathic forms of PD (iPD) (Pais\u00e1n-Ru\u00edz et al., 2004; Zimprich et al., 2004).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "b1537b46-64f2-4a32-8ad2-3d5c8593eb4a",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C12",
+      "claim": "The LRRK2 locus contributes to an increased risk of developing idiopathic PD.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to defined pathogenic as well as PD-risk coding variants, the LRRK2 locus also contributes to an increased risk of developing iPD more generally, as shown in genome-wide association studies (Sim\u00f3n-S\u00e1nchez et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to genome-wide association studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "fdce119d-0569-4ed2-9869-ed81c4f21e52",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C13",
+      "claim": "LRRK2 is a multidomain protein which belongs to the Roco protein family.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRK2 is a multidomain protein, which belongs to the Roco protein family (Mar\u00edn et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "1c9810c2-c0ae-4e2b-ab63-ce67fd08fd74",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C14",
+      "claim": "LRRK2 contains a core module conserved among Roco proteins, consisting of a Roc G domain and a COR dimerization domain, followed by a kinase domain.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides a core module, conserved among the Roco proteins, consisting of a Roc (Ras of complex proteins) G domain and a COR (C-terminal of Roc) dimerization domain, which is followed by a kinase domain, it contains four predicted solenoid domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about LRRK2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "761d7cb7-21b1-4106-9437-151396df21b6",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C15",
+      "claim": "LRRK2 contains four predicted solenoid domains.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides a core module, conserved among the Roco proteins, consisting of a Roc (Ras of complex proteins) G domain and a COR (C-terminal of Roc) dimerization domain, which is followed by a kinase domain, it contains four predicted solenoid domains.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge about LRRK2.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "60b598fe-b90d-4a2f-adae-8a8180bdd482",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C16",
+      "claim": "The three N-terminal solenoid domains of LRRK2 consist of Armadillo repeats followed by an Ankyrin domain and leucine-rich repeats.",
+      "claim_type": "EXPLICIT",
+      "source": "The three N-terminal solenoid domains consist of Armadillo repeats followed by an Ankyrin domain and the namesake leucine-rich repeats, while the C-terminus is formed by a seven-bladed WD40 domain (Mills et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "e76572f0-e3b7-400d-955f-b31a82d109b8",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C17",
+      "claim": "The C-terminus of LRRK2 is formed by a seven-bladed WD40 domain.",
+      "claim_type": "EXPLICIT",
+      "source": "The three N-terminal solenoid domains consist of Armadillo repeats followed by an Ankyrin domain and the namesake leucine-rich repeats, while the C-terminus is formed by a seven-bladed WD40 domain (Mills et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established structural knowledge supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "e83830ad-cdf9-4969-9696-c0cf623e1c8c",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C18",
+      "claim": "The solenoid domains of LRRK2 are involved in protein-protein interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "By similarity, these domains are involved in protein\u2013protein interactions and, based on recent structural models and high-resolution structures, are likely to be involved in the intramolecular regulation of the protein, as well as, for example, by keeping the kinase domain in an auto-inhibited state (Deniston et al., 2020; Gloeckner and Porras, 2020; Guaitoli et al., 2016; Taylor et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural similarity and supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "ffef378f-edde-4417-bbf5-cef3c6d7d542",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C19",
+      "claim": "The solenoid domains of LRRK2 are likely involved in intramolecular regulation of the protein.",
+      "claim_type": "EXPLICIT",
+      "source": "By similarity, these domains are involved in protein\u2013protein interactions and, based on recent structural models and high-resolution structures, are likely to be involved in the intramolecular regulation of the protein, as well as, for example, by keeping the kinase domain in an auto-inhibited state (Deniston et al., 2020; Gloeckner and Porras, 2020; Guaitoli et al., 2016; Taylor et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural models and high-resolution structures cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "736b98db-553a-459a-80dd-1e5d9a1606fe",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C20",
+      "claim": "The solenoid domains of LRRK2 keep the kinase domain in an auto-inhibited state.",
+      "claim_type": "EXPLICIT",
+      "source": "By similarity, these domains are involved in protein\u2013protein interactions and, based on recent structural models and high-resolution structures, are likely to be involved in the intramolecular regulation of the protein, as well as, for example, by keeping the kinase domain in an auto-inhibited state (Deniston et al., 2020; Gloeckner and Porras, 2020; Guaitoli et al., 2016; Taylor et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural models and high-resolution structures cited.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "e3a1ae30-2e8c-44cb-bfbb-320c38770733",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C21",
+      "claim": "Membrane-bound LRRK2 phosphorylates a specific set of Rab proteins at a conserved threonine residue within their switch II motif.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, membrane-bound LRRK2 has been demonstrated to phosphorylate a specific set of Rab proteins at a conserved threonine residue within their switch II motif, including Rab8a and Rab10 (Gomez et al., 2019; Steger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "3354f05e-15cb-4aa8-b692-d5ca612e581b",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C22",
+      "claim": "LRRK2 phosphorylates Rab8a and Rab10.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, membrane-bound LRRK2 has been demonstrated to phosphorylate a specific set of Rab proteins at a conserved threonine residue within their switch II motif, including Rab8a and Rab10 (Gomez et al., 2019; Steger et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "ff7c7c64-1675-4f3c-a9b2-2651334c2376",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C23",
+      "claim": "LRRK2 kinase activity is involved in endo-lysosomal pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, LRRK2 kinase activity has been demonstrated to be involved in endo-lysosomal pathways, thereby being a regulator of the innate immunity (Ahmadi Rastegar and Dzamko, 2020; Bonet-Ponce and Cookson, 2019; Erb and Moore, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "cafb3f5b-9e39-4f2d-9bfb-451d32bda035",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C24",
+      "claim": "LRRK2 is a regulator of innate immunity.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, LRRK2 kinase activity has been demonstrated to be involved in endo-lysosomal pathways, thereby being a regulator of the innate immunity (Ahmadi Rastegar and Dzamko, 2020; Bonet-Ponce and Cookson, 2019; Erb and Moore, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "cba03485-600b-48ae-a62c-adca5c06f959",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C25",
+      "claim": "The kinase activity of LRRK2 is dependent on the guanine nucleotide-binding capacity of the Roc domain.",
+      "claim_type": "EXPLICIT",
+      "source": "It is clear that the kinase activity of LRRK2 is dependent on the guanine nucleotide-binding capacity of the Roc domain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "87e7e59a-789c-4429-bbc8-96144949cc9c",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C26",
+      "claim": "The nucleotide state of the Roc domain has been suggested to regulate dimerization in a bacterial Roco protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work on the conserved RocCOR module of a bacterial Roco protein has suggested that the nucleotide state of the Roc domain regulates dimerization (Deyaert et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to previous work on bacterial Roco proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "9c368846-8483-4c09-9ba3-5db8670c4823",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C27",
+      "claim": "A monomer-dimer/oligomer transition plays a critical role in LRRK2 protein activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, also accumulating data shows that a monomer dimer/oligomer transition plays a critical role in LRRK2 protein activation (Berger et al., 2010; Schapansky et al., 2014; Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to multiple previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "98dff4b2-57c2-4d36-a825-dc2966280e61",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C28",
+      "claim": "LRRK2 shuttles between a monomeric cytosolic state and kinase-active oligomeric forms localized at the membrane.",
+      "claim_type": "EXPLICIT",
+      "source": "Cellular data suggest that LRRK2 shuttles between a monomeric cytosolic states and kinase-active oligomeric forms localized at the membrane (Berger et al., 2010; James et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to cellular studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "37675272-2eb3-4317-acd3-ef097ba25034",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C29",
+      "claim": "Rab29-induced tetramerization represents the kinase active state of LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Further support comes from recent high-resolution structures, indicating that a Rab29-induced tetramerization represents the kinase active state (Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to structural studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "aa436d23-8cbb-4cae-be38-ad1897071733",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C30",
+      "claim": "Autophosphorylation induces LRRK2 monomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Our recent data revealed that autophosphorylation induces LRRK2 monomerization (Guaitoli et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "2f3f3bdd-abbb-4e1e-b56c-96158e42fe8e",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C31",
+      "claim": "The Roc domain has been identified as a major target of LRRK2 autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the Roc domain has been identified as a major target of LRRK2 autophosphorylation by phospho-proteomic analysis (Gloeckner et al., 2010; Greggio et al., 2009; Webber et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to phospho-proteomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "2ab20d03-7738-47e4-828b-dc7696912052",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C32",
+      "claim": "Autophosphorylation of the Roc G domain modifies GTP-binding activities.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there are indications that autophosphorylation of the Roc G domain modifies GTP-binding activities (Webber et al., 2011) and that trans-phosphorylation by the kinase domain of the LRRK2 orthologue Dictyostelium Roco4 enhances GTPase activity (Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "b6cdf4dc-8272-40b3-9958-01b236510846",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C33",
+      "claim": "Trans-phosphorylation by the kinase domain of Dictyostelium Roco4 enhances GTPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, there are indications that autophosphorylation of the Roc G domain modifies GTP-binding activities (Webber et al., 2011) and that trans-phosphorylation by the kinase domain of the LRRK2 orthologue Dictyostelium Roco4 enhances GTPase activity (Liu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on Dictyostelium Roco4.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "1f126e64-b6d1-446b-b79e-650b8c3a9b25",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C34",
+      "claim": "LRRK2 has kinetic parameters comparable to other Roco protein family members.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRK2 has kinetic parameters comparable to other Roco protein family members.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on comparison with previous studies on Roco proteins.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "e67e4336-fdcf-40eb-89c9-91ee3d7acd69",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C35",
+      "claim": "The physiological GTP concentration within the cell is around 500 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, the KM value of LRRK2 lies within the range of the physiological GTP concentrations (around 500 \u00b5M; Traut, 1994) within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a reference on cellular GTP concentrations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "f13fe047-ff92-4812-a8a8-ef6803df099a",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C36",
+      "claim": "Changes in global cellular or local GTP concentration might have a high impact on LRRK2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, changes in global cellular or local GTP concentration might have a high impact on protein activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that LRRK2's KM is near physiological GTP concentrations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "07a97357-e6e1-4689-b8ce-5d4ab839e20f",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C37",
+      "claim": "R1441G, Y1699C, and G2019S are pathogenic LRRK2 variants with confirmed disease co-segregation.",
+      "claim_type": "EXPLICIT",
+      "source": "For this reason, we here fully assessed the enzyme kinetics of disease-associated PD variants, in particular those with confirmed disease co-segregation. For this purpose, we selected three pathogenic variants, R1441G, localized within the Roc domain, the Y1699C variant in the COR-A domain, as well as the kinase-domain variant G2019S.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as the selection criteria for the study.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "da3275c8-7496-4a65-ba1b-4bede08a35be",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C38",
+      "claim": "R1441G, Y1699C, and G2019S variants significantly increase the phosphorylation of LRRK2 substrates Rab8a, Rab10, and Rab12.",
+      "claim_type": "EXPLICIT",
+      "source": "All three variants significantly increase the phosphorylation of the LRRK2 substrates Rab8a, Rab10, and Rab12 (Kalogeropulou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "c1d682a5-e7e0-4bee-8b82-b34f2acde1e7",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C39",
+      "claim": "LRRK2 wt, R1441G, and Y1699C MBP-RocCOR constructs showed similar kinetic parameters in the charcoal assay.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRK2 wt, R1441G, as well as Y1699C MBP-RocCOR constructs showed similar kinetic parameters in the standard radiolabeling assay (charcoal assay), which determines the release of free inorganic phosphate (Pi) (Kolch, 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1A-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "84a3f1d5-bd02-4f72-9fb9-50d3087908ca",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C40",
+      "claim": "The catalytic efficiency (kcat/KM) was identical for LRRK2 wt, R1441G, and Y1699C MBP-RocCOR constructs.",
+      "claim_type": "EXPLICIT",
+      "source": "While slight differences were observed in the individual KM as well as kcat values, the catalytic efficiency determined by kcat/KM was identical (Figure 1A\u2013D; Supplementary file 1a and b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "2393caca-f4e9-41a2-a755-b63e057a7572",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C41",
+      "claim": "The HPLC-based assay and charcoal assay result in comparable GTP hydrolysis rates for full-length LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "To ensure that both assays result in comparable results, we compared GTP hydrolysis rates (kobs) of full-length LRRK2 wt in both assays at two different GTP concentrations. Both assays, the HPLC-based assay as well as the charcoal assay, resulted in overall comparable kinetics, ensuring that the results of both assays can be directly compared (Figure 1E and F, Table 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental comparison shown in Figure 1E and F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "17a5157b-7e7c-4c1a-b44d-1d5282f77080",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C42",
+      "claim": "Wild-type full-length LRRK2 has a kcat of 0.36 \u00b1 0.02 min\u20131 and a KM of 554 \u00b1 62 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "For the wild-type full-length LRRK2 protein, we have determined a kcat of 0.36 \u00b1 0.02 min\u20131 and a KM of 554 \u00b1 62 \u00b5M confirming our previously published data, thus demonstrating the robustness of the used HPLC-based assay (Wauters et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental kinetic measurements and confirms previous published data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "72325fcf-866d-41f8-bab7-be6d962ef540",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C43",
+      "claim": "Full-length LRRK2 R1441G has a decreased KM (271 \u00b1 27 \u00b5M) compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, full-length LRRK2 bearing the R1441G variant showed a decreased Michaelis\u2013Menten constant (KM = 271 \u00b1 27 \u00b5M) while the kcat increased compared to the wt (Figure 2A), leading to an augmented catalytic efficiency of that variant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental kinetic measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "b2da153a-0b00-46d3-84fc-e39a8beeb497",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C44",
+      "claim": "Full-length LRRK2 R1441G has an increased kcat compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, full-length LRRK2 bearing the R1441G variant showed a decreased Michaelis\u2013Menten constant (KM = 271 \u00b1 27 \u00b5M) while the kcat increased compared to the wt (Figure 2A), leading to an augmented catalytic efficiency of that variant.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental kinetic measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "8975002a-43b6-48f4-b30f-c76296f02141",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C45",
+      "claim": "Full-length LRRK2 G2019S has a significantly increased KM value of 867 \u00b1 110 \u00b5M compared to wild-type (554 \u00b1 62 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, full-length G2019S LRRK2 showed a significantly increased KM value of 867 \u00b1 110 \u00b5M compared to a wt reference (554 \u00b1 62 \u00b5M), while no significant change in the kcat parameter (kcat = 0.36 min\u20131) was observed (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental kinetic measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "65e52b9d-2485-4117-bdd0-0a4eeb62b5f0",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C46",
+      "claim": "Full-length LRRK2 G2019S shows no significant change in kcat compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, full-length G2019S LRRK2 showed a significantly increased KM value of 867 \u00b1 110 \u00b5M compared to a wt reference (554 \u00b1 62 \u00b5M), while no significant change in the kcat parameter (kcat = 0.36 min\u20131) was observed (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental kinetic measurements shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "c6f2829e-8d70-45d0-943b-16f854ef0093",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C47",
+      "claim": "The kinase-dead K1906M LRRK2 variant has a KM value (181 \u00b1 58 \u00b5M) approximately three times lower compared to wild-type LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the KM value (KM = 181 \u00b1 58 \u00b5M) for a K1906M kinase-dead LRRK2 variant is approximately three times lower compared to wt LRRK2 while the kcat value was only slightly reduced (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental kinetic measurements shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "bd7214c2-f9fe-4e50-ad39-c609f8adc44b",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C48",
+      "claim": "The kinase-dead K1906M LRRK2 variant has a slightly reduced kcat compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, the KM value (KM = 181 \u00b1 58 \u00b5M) for a K1906M kinase-dead LRRK2 variant is approximately three times lower compared to wt LRRK2 while the kcat value was only slightly reduced (Figure 2C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental kinetic measurements shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "d333d9b8-27b3-4fc3-8889-75f43b91eeaf",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C49",
+      "claim": "MLi-2 treated full-length wild-type LRRK2 has a lower KM value.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, MLi-2 treated fl. wt LRRK2 also has a lower KM value (Figure 2\u2014figure supplement 1), which also ensures that the GTPase and not the kinase domain is the driver of the GTP consumption in our experimental setup (Liu and West, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 2\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "6852e151-1a91-4d9f-bf85-f661d1bd9158",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C50",
+      "claim": "The GTPase domain and not the kinase domain is the driver of GTP consumption in the experimental setup.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, MLi-2 treated fl. wt LRRK2 also has a lower KM value (Figure 2\u2014figure supplement 1), which also ensures that the GTPase and not the kinase domain is the driver of the GTP consumption in our experimental setup (Liu and West, 2017).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the MLi-2 treatment experiment and supported by citation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "56c123f1-0a6b-45f2-8a44-168d158786b4",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C51",
+      "claim": "An active kinase conformation provides a negative feedback signal on the Roc domain, most likely mediated via autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "This strongly suggests a negative feedback signal on the Roc domain conferred by an active kinase conformation, most likely mediated via autophosphorylation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the kinase-dead mutant data showing opposite effects to G2019S.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "d550bc04-4210-457c-9205-1b85761b3124",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C52",
+      "claim": "Incubation of wild-type LRRK2 with ATP for 2 hr at 30\u00b0C leads to an approximately twofold increase in KM (1036 \u00b1 168 \u00b5M).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, an incubation of the full-length wild-type protein with ATP for 2 hr at 30\u00b0C prior to determining its GTPase activity leads to altered Michaelis\u2013Menten parameters, impacting the KM as well as kcat values. An approximately twofold increase in KM (1036 \u00b1 168 \u00b5M) and an approximately twofold decrease in kcat (0.13 \u00b1 0.01 min\u20131) demonstrate a strong reduction in LRRK2 GTPase activity by enforced autophosphorylation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "2c20aef9-e5b1-4cf6-ac5b-12c9357b7c08",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C53",
+      "claim": "Incubation of wild-type LRRK2 with ATP for 2 hr at 30\u00b0C leads to an approximately twofold decrease in kcat (0.13 \u00b1 0.01 min\u20131).",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, an incubation of the full-length wild-type protein with ATP for 2 hr at 30\u00b0C prior to determining its GTPase activity leads to altered Michaelis\u2013Menten parameters, impacting the KM as well as kcat values. An approximately twofold increase in KM (1036 \u00b1 168 \u00b5M) and an approximately twofold decrease in kcat (0.13 \u00b1 0.01 min\u20131) demonstrate a strong reduction in LRRK2 GTPase activity by enforced autophosphorylation (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "e90de628-8e2f-430a-b457-9f085b71d232",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C54",
+      "claim": "Incubation of the kinase-dead K1906M variant with ATP results in no significant change in KM and kcat values.",
+      "claim_type": "EXPLICIT",
+      "source": "As a control condition, to rule out inactivation of the LRRK2 protein by degradation during pre-incubation, we incubated a dead variant (K1906M) with ATP, the same way as the wild-type, resulting in no significant change in KM and kcat values.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data serving as a control.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "95c72b06-ca89-4f3a-a262-d1fe80889f8a",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C55",
+      "claim": "Autophosphorylation negatively regulates the GTPase activity of LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that autophosphorylation indeed negatively regulates the GTPase activity of LRRK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is concluded from the ATP incubation experiments comparing wild-type and kinase-dead variants.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "5d1edb0f-e721-4402-9173-d923a0eaccfe",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C56",
+      "claim": "T1343 has been mapped as a phosphosite by phosphoproteomic studies.",
+      "claim_type": "EXPLICIT",
+      "source": "T1343 has initially been mapped by phosphoproteomic studies (Gloeckner et al., 2010; Greggio et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to phosphoproteomic studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "579d61ed-9df2-48d2-bf77-570ddd4164a6",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C57",
+      "claim": "T1343 is quantitatively phosphorylated in the C-terminal four-domain 'RCKW' construct.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, it has been shown to be quantitatively phosphorylated in the C-terminal four-domain 'RCKW' construct, allowing resolving the phospho-threonine in the recently published cryo-EM structure (Deniston et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a cryo-EM structure study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "aa9987bf-018c-48d5-9761-99e406f86cec",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C58",
+      "claim": "T1343A showed no increase in KM value after ATP treatment.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, T1343A showed no increase in KM value after ATP treatment, suggesting that this is the regulatory site which is crucial for the feedback mechanism (Figure 3C, Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "fca2257c-acbe-4ba0-8c73-20ac61ba51f5",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C59",
+      "claim": "T1343A has a reduced kcat value compared to wild-type.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition to the lower KM value compared to wild-type that remains unaffected upon ATP treatment, also a reduced kcat value was observed for the T1343A mutant, which might suggest that the mutation is not completely structurally neutral.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental kinetic measurements.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "5fae8542-32a2-4d8b-9e78-0b1deaa9eca6",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C60",
+      "claim": "The T1343A mutant does not result in unstable or aggregated protein.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the T1343A mutant does not result in instable or aggregated protein (see below) and, importantly, the T1343A mutant in the RocCOR domain is the only construct that does not significantly affect the GTPase activity (Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on experimental observations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "5c8c2edf-e363-4afa-b34b-308cce95cb64",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C61",
+      "claim": "The T1343A mutant in the RocCOR domain is the only construct that does not significantly affect the GTPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the T1343A mutant does not result in instable or aggregated protein (see below) and, importantly, the T1343A mutant in the RocCOR domain is the only construct that does not significantly affect the GTPase activity (Supplementary file 1c).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data in Supplementary file 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "e51b620a-d5c0-4724-956a-6956100e66f2",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C62",
+      "claim": "For the bacterium Chlorobium tepidum Roco protein, dimerization has been demonstrated to modulate GTPase activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, for the Roco protein found in the bacterium Chlorobium tepidum, dimerization has been demonstrated to modulate GTPase activity (Deyaert et al., 2017; Gotthardt et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on bacterial Roco proteins.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "c508f0c8-464f-4152-9a0d-b4784a5fafcc",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C63",
+      "claim": "LRRK2 dimerization is impacted by LRRK2 autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, in a recent work we could demonstrate that LRRK2 dimerization is impacted by LRRK2 autophosphorylation (Guaitoli et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "8e81a75e-54ee-4657-9e8c-3c07ec115641",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C64",
+      "claim": "Autophosphorylation shifts the monomer/dimer equilibrium toward the monomeric form.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we could demonstrate that autophosphorylation is shifting the monomer/dimer (m/d) equilibrium toward the monomeric form.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to the authors' recent work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "35f68120-f655-4649-9499-7c6aa7d087bd",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C65",
+      "claim": "For wild-type LRRK2, the monomer/dimer equilibrium can be shifted toward the monomer by in vitro autophosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the wild-type, for which the m/d equilibrium could be shifted toward the monomer by in vitro autophosphorylation, ATP incubation does not affect the percentage of dimer for the T1343A variant of LRRK2 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass photometry data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "5b0b4048-9d61-4ed6-9517-7127bac1f3f3",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C66",
+      "claim": "ATP incubation does not affect the percentage of dimer for the T1343A variant of LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast to the wild-type, for which the m/d equilibrium could be shifted toward the monomer by in vitro autophosphorylation, ATP incubation does not affect the percentage of dimer for the T1343A variant of LRRK2 (Figure 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by mass photometry data shown in Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "842d1ed6-c4b0-43cf-a28c-8418a3724427",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C67",
+      "claim": "The underlying mechanism of the negative feedback phosphorylation toward lower GTPase activity might be mediated by an increased monomerization of LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that the underlying mechanism of the negative feedback phosphorylation toward lower GTPase activity might be mediated by an increased monomerization of LRRK2.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observation that T1343A does not show ATP-induced changes in dimer percentage.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "82acc8b7-441d-41f9-b25a-737ae91d568f",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C68",
+      "claim": "T1343A LRRK2 has specific kinase activity at a level comparable to wild-type LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "By this assay, we could clearly demonstrate that T1343A confers specific kinase activity at a level comparable to the LRRK2 wt, while G2019S was clearly more active (Figure 6A, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro LRRKtide assay data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "73c84634-20ac-4624-b84a-e5fd6314ded1",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C69",
+      "claim": "G2019S LRRK2 is more active than wild-type in the LRRKtide assay.",
+      "claim_type": "EXPLICIT",
+      "source": "By this assay, we could clearly demonstrate that T1343A confers specific kinase activity at a level comparable to the LRRK2 wt, while G2019S was clearly more active (Figure 6A, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by in vitro LRRKtide assay data shown in Figure 6A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "fb0ef126-5ca2-40f0-8630-cda10e349089",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C70",
+      "claim": "R1441G and I2020T PD mutations showed an approximately eightfold increase in Rab10 phosphorylation.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with published data (Kalogeropulou et al., 2022), the other PD mutations R1441G and I2020T showed an approximately eightfold increase in Rab10 phosphorylation (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell-based assay data shown in Figure 6C and D and agrees with published data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "b32e716d-3438-413b-8c24-631f35da38e9",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C71",
+      "claim": "The T1343A variant showed an approximately twofold increase in Rab10 phosphorylation, which is comparable with G2019S.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the T1343A variant showed an approximately twofold increase in activity, which is comparable with G2019S, while the double mutant T1343A/G2019S did not further increase Rab10 phosphorylation (Figure 6 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell-based assay data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "e3eea7e5-ac21-4de3-a9ba-9b68ae975cdc",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C72",
+      "claim": "The double mutant T1343A/G2019S did not further increase Rab10 phosphorylation compared to single mutants.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the T1343A variant showed an approximately twofold increase in activity, which is comparable with G2019S, while the double mutant T1343A/G2019S did not further increase Rab10 phosphorylation (Figure 6 and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cell-based assay data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "d5ba5c98-0081-4984-afba-4d28f05efff4",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C73",
+      "claim": "The T1343A variant disrupts the negative feedback regulation in the LRRK2 signaling cascade in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, our results suggest that T1343 is crucial for the negative feedback in the LRRK2 signaling cascade in cells and the mutation to alanine disrupts this regulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the cell-based assay results showing T1343A has similar activity to G2019S.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "72874311-2907-439f-a5ce-d841b1fdb430",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C74",
+      "claim": "Kinases and G-proteins are often found within the same signaling cascade but never on the same protein except for Roco proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Kinases and G-proteins are often found within the same signaling cascade, but with the exception of Roco proteins, never on the same protein.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about signaling proteins.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "5af54f44-daa8-4353-a96f-af0686adfd40",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C75",
+      "claim": "MAP-kinase signaling networks often include a negative feedback loop allowing stable signal, context-specific fine-tuning, and shutdown of the system.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, these pathways often include a negative feedback loop allowing a stable signal, a context-specific fine-tuning, as well as shutdown of the system (Birtwistle and Kolch, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a review on MAP-kinase signaling.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "88805ca4-f6ce-4709-aac0-cdbca99d8d35",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C76",
+      "claim": "EphA2-mediated negative feedback inhibition of the Ras\u2013PI3K\u2013AKT module leads to cell cycle arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, an EphA2-mediated negative feedback inhibition of the Ras\u2013PI3K\u2013AKT module leads to a cell cycle arrest (Menges and McCance, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on EphA2 signaling.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "64169a2d-985c-4305-a416-7e91423d124b",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C77",
+      "claim": "Most previous studies on LRRK2 GTPase activity are based on single kobs values at GTP concentrations around or below the KM for full-length LRRK2.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, knowledge of the interplay between these two domains is still limited. In addition, observations by most of the studies are based on single kobs values at considerable low GTP concentrations around or below the KM for full-length LRRK2-mediated GTP hydrolysis and/or worked with truncated LRRK2 constructs (Liu et al., 2010; Wauters et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of previous studies, supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "ab564edd-253d-44a1-b321-444233f7e39c",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C78",
+      "claim": "The physiological impact of differences in KM values is expected to lead to strong perturbation of tightly regulated LRRK2 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "Given an average physiological GTP concentration of approximately 500 \u00b5M within cells (Traut, 1994), the physiological impact of the differences in the KM values reported in this study, in combination with a negative feedback loop, is expected to lead to a strong perturbation of the tightly regulated LRRK2 activity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the kinetic data in the context of physiological GTP concentrations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "655877cd-8c3c-46d7-ad1e-8a0cee2abf1c",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C79",
+      "claim": "The increased catalytic efficiency of R1441G is in good agreement with the penetrance of R1441 variants.",
+      "claim_type": "EXPLICIT",
+      "source": "In fact, when looking at the catalytic efficiency, it is striking that we found it to be increased for the R1441G variant located within a mutational hotspot of the Roc domain, also containing the PD variants R1441C, H, and S, which is in good agreement with the penetrance of these variants (Haugarvoll et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the kinetic data and supported by citation to a study on penetrance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "439af928-6dc8-43a1-9089-d03a4ff420be",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C80",
+      "claim": "R1441G shows strong Rab phosphorylation in cells while the effect mediated by G2019S is considerably weaker.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is also in well agreement with the different impact of these pathogenic variants on the Rab phosphorylation. While R1441G shows a strong Rab phosphorylation in cells, the effect mediated by G2019S is considerably weaker (Kalogeropulou et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on Rab phosphorylation by LRRK2 variants.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "13f93acc-537c-4bed-9bb2-8966c29cd018",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C81",
+      "claim": "T1343A and T1343G variants have been tested in previous studies showing similar activity to wild-type LRRK2 at basal conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "T1343A and T1343G variants have already been tested in two previous studies, however, only at basal conditions and/or in vitro where similar activity was observed in comparison to wild-type LRRK2 (Biosa et al., 2013; St\u00f6rmer et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to previous studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "8d4c9e0e-4b66-4e11-bf9a-fdf2422979d4",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C82",
+      "claim": "Replacing T1343 by a non-phosphorylatable residue reduced P33 incorporation in phosphorylation assays by 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, replacing T1343 by a non-phosphorylatable residue reduced P33 incorporation in phosphorylation assays by 50% (Greggio et al., 2009).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a previous study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "06d8dec6-6c7c-4a59-b71c-c538dbbfe4f0",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C83",
+      "claim": "The AlphaFold3 model suggests that the phosphate of pT1343 is oriented inward, thereby substituting the gamma phosphate.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the AF3 model suggests that the phosphate of the pT1343 is orientated inward, thereby substituting the gamma phosphate (see Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on AlphaFold3 modeling shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "34c0ead9-8edf-4ce0-a563-5a4f63c3a593",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C84",
+      "claim": "The AlphaFold3 model finding is in agreement with MD simulations published recently.",
+      "claim_type": "EXPLICIT",
+      "source": "This finding is well in agreement with MD simulations published recently (St\u00f6rmer et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent MD simulation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "adbe2803-769c-422d-b3d3-314c6f0ea1a4",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C85",
+      "claim": "pT1343 might hamper GTP hydrolysis by competing with GTP re-binding.",
+      "claim_type": "EXPLICIT",
+      "source": "As we are determining GTP hydrolysis in a multi-turnover situation, the pT1343 might hamper the hydrolysis by competing with GTP re-binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic speculation based on the structural model and experimental setup.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "7dbf7f5d-6539-4744-9441-5f835c953e2f",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C86",
+      "claim": "Other Rab proteins are phosphorylated at a conserved serine or threonine residue at the homologous position within the P-loop.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, according to phosphoproteomes curated in the PhosphoSitePlus database (https://www.phosphosite.org) also other Rabs are phosphorylated either at a conserved serine or threonine residue at the homologous position (G1+2) within the P-loop (for a P-loop alignment of all Rabs, see Mishra et al., 2013), including Rab1a, Rab5a, Rab7a, Rab8a, Rab10, Rab13, Rab15, Rab17, and Rab35, as well as Rab2 and Rab22a, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on database information and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "f957f0ee-4f85-4e31-91e4-29b7dd03205f",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C87",
+      "claim": "Rab24 has a phosphorylatable tyrosine (Y17) at the P-loop position.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the atypical Rab protein Rab24 has a phosphorylatable tyrosine (Y17) at this position (Ding et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on Rab24.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "1f825d23-054b-4173-ae5b-49ae2b3cc643",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C88",
+      "claim": "Rab24 Y17A shows an increase in intrinsic GTP hydrolysis rate.",
+      "claim_type": "EXPLICIT",
+      "source": "In agreement with the findings for LRRK2 described here, Rab24 Y17A shows an increase in intrinsic GTP hydrolysis rate (Wu et al., 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a study on Rab24.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "4f94bf18-7445-4468-8d41-20d929be9346",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C89",
+      "claim": "P-loop phosphorylation is a relevant and conserved regulatory mechanism for Rab proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these findings suggest that P-loop phosphorylation is a relevant and conserved regulatory mechanism for Rab proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the observations about P-loop phosphorylation in multiple Rab proteins.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "274a6d50-0ec7-428f-bcea-036c0e6011c8",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C90",
+      "claim": "Increasing the GTP-loaded portion of LRRK2 favors its monomeric state, as shown for its bacterial ortholog.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown for its bacterial ortholog (Deyaert et al., 2017), increasing the GTP-loaded portion of LRRK2 favors its monomeric state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from studies on bacterial orthologs and supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "4941e7c4-5ef0-446e-b4fd-08b6b50ab385",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C91",
+      "claim": "GTP hydrolysis leads to a GDP-bound state of LRRK2, potentially inducing dimerization at a critical local protein concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "GTP hydrolysis leads, at least transiently, to a GDP-bound state of LRRK2, potentially inducing dimerization at a critical local protein concentration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic inference based on the GTPase cycle and dimerization data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "efe64ab1-f641-483c-aac1-104d2f66e8ff",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C92",
+      "claim": "LRRK2 kinase activity might counteract dimerization by autophosphorylation of T1343, shifting the equilibrium back to the monomeric state.",
+      "claim_type": "EXPLICIT",
+      "source": "LRRK2 kinase activity might counteract this mechanism by autophosphorylation of the P-loop residue T1343, shifting the equilibrium back to the monomeric state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis based on the experimental data.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "9c0015cd-24ec-4c89-935b-280559f15ef9",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C93",
+      "claim": "The CtRoco dimer structure revealed a dimer-stabilized orientation of the P-loop that would prevent direct nucleotide binding on the dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis is supported by recently determined EM structures of the bacterial LRRK2 homolog ctRoco (Galicia et al., 2024). This CtRoco dimer structure revealed a dimer-stabilized orientation of the P-loop, which would prevent direct nucleotide binding on the dimer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to a recent EM structure study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "20ef2c81-a0c2-4fe0-b860-d3f3db01f4fb",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C94",
+      "claim": "The CtRoco structure supports a critical role of the P-loop conformation in nucleotide-induced monomerization.",
+      "claim_type": "EXPLICIT",
+      "source": "This therefore further supports a critical role of the P-loop conformation in the nucleotide-induced monomerization.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the CtRoco structure and its implications.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "69365167-1de3-4224-85a3-2d6a73b0c5b0",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C95",
+      "claim": "There is tight regulation between GTPase activity, phosphorylation, and monomer-dimer equilibrium that interplay to regulate LRRK2 signal output.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that there is a tight regulation between GTPase activity, phosphorylation, and monomer dimer equilibrium, which all interplay with each other to regulate the LRRK2 signal output.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the collective experimental observations.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "f174e0f7-190c-4c8c-82dc-2ad1320e3626",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C96",
+      "claim": "Compounds targeting either the kinase, G domain, or dimerization can block LRRK2 activity and signaling.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, compounds target either the kinase, G domain, or dimerization can block LRRK2 activity and signaling (Helton et al., 2021; Pathak et al., 2023; Wojewska and Kortholt, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to studies on LRRK2 inhibitors.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "765d3020-70e3-439b-873a-88f49019837e",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "claim_id": "C97",
+      "claim": "The kinase domain in its active conformation negatively regulates GTP hydrolysis, similar to MAPK pathways where negative feedback mechanisms are essential.",
+      "claim_type": "EXPLICIT",
+      "source": "In conclusion, our study describes a novel intramolecular feedback mechanism of LRRK2, which is based on autophosphorylation. Similar to MAPK pathways where negative feedback mechanisms are essential to guarantee a robust signal, and also allowing a tight and context-specific shutdown of the pathway, the kinase domain in its active conformation negatively regulates GTP hydrolysis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, drawing an analogy to MAPK pathways.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "caee8838-3f7f-4b1b-95da-97b9d16b1c71",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "LRRK2 has a KM value (554 \u00b1 62 \u00b5M) that lies within the range of physiological GTP concentrations (~500 \u00b5M), similar to other Roco protein family members. This was determined using HPLC-based Michaelis-Menten kinetics and confirmed previous published data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C34, C35, and C42 collectively establish that LRRK2's KM is physiologically relevant. The experimental kinetic measurements (C42) are reproducible, confirm prior work, and the comparison to physiological GTP concentrations (C35) is well-cited. The conclusion that LRRK2 behaves like other Roco proteins (C34) is appropriately supported.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "70460e99-2a8c-4084-8614-2e2998e2bfe0",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The R1441G PD variant shows increased catalytic efficiency compared to wild-type LRRK2, with decreased KM (271 \u00b1 27 \u00b5M) and increased kcat. This increased efficiency correlates with the high penetrance of R1441 variants in PD patients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C43, and C44 provide direct experimental kinetic data showing R1441G has enhanced catalytic efficiency. Claim C79 appropriately connects this to clinical penetrance data with citation support. The kinetic measurements appear robust with error estimates provided.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "8ca190f8-906a-4103-b8ff-55b91b8d794b",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The G2019S PD variant shows increased KM (867 \u00b1 110 \u00b5M) with no significant change in kcat, resulting in reduced catalytic efficiency. This correlates with weaker Rab phosphorylation in cells compared to R1441G.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C45, and C46 provide consistent experimental kinetic data. The connection to cellular Rab phosphorylation (C80) is supported by citation. The interpretation of reduced catalytic efficiency is mathematically correct given the KM increase without kcat change.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "849a2286-f55c-41b7-9894-8ec2f06cf658",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The kinase-dead K1906M variant has a KM approximately three times lower than wild-type (181 \u00b1 58 \u00b5M), and MLi-2 kinase inhibitor treatment similarly lowers KM. This suggests an active kinase conformation provides negative feedback to the Roc domain, likely via autophosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C47-C49 provide converging experimental evidence from both genetic (K1906M) and pharmacological (MLi-2) kinase inhibition showing opposite effects to G2019S. The inference of negative feedback (C51) is logical and well-supported. Claim C50 appropriately validates that GTPase, not kinase, drives GTP consumption in the assay.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "12b44c07-a2ba-45a3-9b56-0d38226168d6",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "ATP incubation of wild-type LRRK2 (enforced autophosphorylation) leads to approximately twofold increase in KM and twofold decrease in kcat, demonstrating that autophosphorylation negatively regulates GTPase activity. The kinase-dead K1906M control shows no change with ATP treatment.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C52-C54 provide direct experimental evidence with appropriate controls. The ATP incubation experiment is well-designed with the K1906M control ruling out protein degradation artifacts. The conclusion (C55) that autophosphorylation negatively regulates GTPase activity is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "31baa805-96fd-4a08-9cb3-2a957c83a359",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "T1343 in the Roc P-loop is critical for phosphoregulation of both KM and kcat. The T1343A mutant shows no increase in KM after ATP treatment, has reduced kcat, but does not produce unstable protein. In the RocCOR domain construct, T1343A is the only mutant that does not significantly affect GTPase activity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5 and C56-C61 collectively identify T1343 as the critical regulatory phosphosite through systematic mutational analysis. The experimental data (C58) showing no ATP-induced KM change for T1343A is compelling. The observation about reduced kcat (C59) is acknowledged with appropriate caveats about structural neutrality, and protein stability is confirmed (C60).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "4795f144-5181-4391-8667-c0d3fd35a000",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Autophosphorylation shifts the monomer/dimer equilibrium toward the monomeric form in wild-type LRRK2, but ATP incubation does not affect dimer percentage for T1343A. This suggests the negative feedback mechanism operates through increased monomerization mediated by T1343 phosphorylation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C66 provide mass photometry data showing differential effects of ATP on wild-type versus T1343A oligomerization. The mechanistic inference (C67) connecting phosphorylation-induced monomerization to reduced GTPase activity is logical and supported by the data, though the authors appropriately use cautious language ('might be mediated').",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "b26fcb67-2d04-4c36-828c-e5e7b2244880",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "T1343A has similar increased kinase activity in cells as G2019S (~2-fold increase in Rab10 phosphorylation), and the double mutant T1343A/G2019S shows no further increase. T1343A has wild-type-level kinase activity in vitro. This demonstrates T1343 is crucial for negative feedback in the LRRK2 signaling cascade.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C8 and C68-C73 provide converging evidence from in vitro kinase assays (C68-C69) and cell-based Rab10 phosphorylation assays (C71-C72). The lack of additivity in the double mutant (C7, C72) strongly supports that T1343 and G2019S act in the same pathway. The conclusion about negative feedback disruption (C8, C73) is well-justified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "8cdd4ad7-66b6-4a55-9bf3-8846e6d9260c",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Different PD mutants alter GTPase kinetics differently, which combined with the negative feedback loop and physiological GTP concentrations (~500 \u00b5M), is expected to strongly perturb LRRK2 activity. This might partially explain differences in penetrance among PD mutations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C9 and C78 make speculative connections between kinetic parameters and clinical penetrance. While the kinetic data are solid, the link to penetrance is correlative and acknowledged as speculative (C9 uses 'might'). No direct clinical or genetic data are provided to test this hypothesis, making it an interesting but unvalidated interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "0346b5d7-0388-412d-a12f-7e790f44f171",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "MBP-RocCOR constructs (wt, R1441G, Y1699C) showed similar kinetic parameters with identical catalytic efficiency in the charcoal assay. The HPLC-based and charcoal assays produce comparable GTP hydrolysis rates for full-length LRRK2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 establish methodological validity. The comparison between assays (C41) is important for validating that results can be compared across methods. The RocCOR data (C39-C40) provide context but show that isolated domains may not recapitulate full-length behavior, which is appropriately addressed by focusing on full-length protein for key conclusions.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "bbde991d-e34f-4d78-bc09-ed92a6824ab0",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "AlphaFold3 modeling suggests phosphorylated T1343 is oriented inward, substituting for the gamma phosphate, consistent with MD simulations. This might hamper GTP hydrolysis by competing with GTP re-binding in multi-turnover conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C83-C85 present computational modeling results. While the AlphaFold3 model is mentioned and agrees with MD simulations (C84), the mechanistic interpretation (C85) is speculative. The model is not experimentally validated in this study, and AlphaFold3 predictions for post-translational modifications should be interpreted cautiously. This remains a plausible but unproven hypothesis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "aae2c730-1f23-4a84-8513-7536c5ec1018",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Multiple Rab proteins are phosphorylated at conserved P-loop residues (G1+2 position), including Rab24 which has a phosphorylatable tyrosine. Rab24 Y17A shows increased GTP hydrolysis rate, similar to LRRK2 T1343A, suggesting P-loop phosphorylation is a conserved regulatory mechanism.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C86-C89 draw on database information and published studies to place LRRK2 findings in broader context. The parallel with Rab24 (C88) strengthens the generalizability of the mechanism. However, this is primarily a literature-based observation rather than new experimental data from this study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "0c693cd4-30e1-49c3-967a-7b99f57c3708",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "A mechanistic model is proposed where GTP loading favors monomeric LRRK2, GTP hydrolysis leads to GDP-bound dimers, and kinase-mediated T1343 phosphorylation shifts equilibrium back to monomers. Recent CtRoco structures support a critical role for P-loop conformation in nucleotide-induced monomerization.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C90-C95 synthesize the experimental findings into a coherent mechanistic model. The model is supported by the authors' data on T1343 phosphorylation and oligomerization, and is strengthened by structural data from bacterial homologs (C93-C94). While some aspects remain inferential (C91-C92), the model is well-grounded in the experimental observations and appropriately uses cautious language.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "0d31b544-800f-4225-9228-b29b71c746c4",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "R1441G and I2020T PD mutations show approximately eightfold increase in Rab10 phosphorylation in cells, consistent with published data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C70 reports cell-based assay results that confirm published findings. The data are presented with appropriate citation and appear consistent with the literature. This serves as a positive control and validation of the cellular assay system.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "85306415-703d-4503-bb06-b0117023d4ec",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Background information on LRRK2 structure, function, disease association, and prior work on GTPase activity, kinase activity, dimerization, and autophosphorylation. This includes limitations of previous studies and context from MAP-kinase signaling pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C10-C38, C74-C77, C81-C82, and C96 provide established background knowledge appropriately cited from the literature. These claims set the context for the current work and are not new findings from this study. The citations appear appropriate and the characterization of prior work limitations (C77) is fair.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "ba5feeb0-c14c-42b9-bfd0-a4cee6760006",
+      "content_id": "2e484662-20a9-4b69-9fcb-b0cd639b44ed",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The study describes a novel intramolecular feedback mechanism where the kinase domain in its active conformation negatively regulates GTP hydrolysis through autophosphorylation, analogous to negative feedback in MAPK pathways.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C97 represents the main conclusion synthesizing all major findings. The negative feedback mechanism is well-supported by multiple lines of evidence: kinase-dead and G2019S mutants showing opposite effects, ATP-induced changes in kinetics, identification of T1343 as the critical site, and effects on oligomerization. The analogy to MAPK pathways provides useful conceptual framing.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "3e82c5f7-f7e6-42b2-b78c-7b3ef33de854",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors determined that wild-type full-length LRRK2 has a KM of 554 \u00b1 62 \u00b5M and kcat of 0.36 \u00b1 0.02 min\u207b\u00b9, which lies within the range of physiological GTP concentrations (~500 \u00b5M), and is comparable to other Roco protein family members.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly acknowledge the 'very careful biochemical analyses' and describe the kinetic parameters as 'rigorous' and 'detailed.' The editor notes the authors 'provide a detailed accounting of the catalytic efficiency of the ROC GTPase domain,' indicating acceptance of these fundamental kinetic measurements.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "c64064fc-735a-44e3-829f-79a47944f96b",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The R1441G PD variant shows increased catalytic efficiency with decreased KM (271 \u00b1 27 \u00b5M) and increased kcat compared to wild-type, which correlates with the high penetrance of R1441 variants.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the kinetic characterization of pathogenic variants as part of the 'detailed accounting of the catalytic efficiency' and do not challenge these specific measurements. The comparison to wild-type is treated as part of the rigorous biochemical analyses that constitute a strength of the work.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "faebe213-ae8e-44eb-82a2-d8590899abb5",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The G2019S PD variant shows significantly increased KM (867 \u00b1 110 \u00b5M) with no significant change in kcat compared to wild-type, resulting in reduced catalytic efficiency.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These kinetic measurements for G2019S are part of the 'careful biochemical experiments' praised by reviewers. The data on G2019S kinetics are not questioned and are treated as contributing to the understanding of the 'relationship between GTP hydrolysis parameters and kinase activity.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "ce174794-4562-4a41-96fc-5e16e857d10f",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The kinase-dead K1906M variant and MLi-2 treated LRRK2 both show decreased KM values (~181 \u00b5M and lower, respectively) compared to wild-type, suggesting that an active kinase conformation provides negative feedback to the Roc domain, with the GTPase domain driving GTP consumption.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe these experiments as part of the 'careful biochemical experiments' and explicitly state that 'a feedback mechanism from the kinase domain to GTP/GDP hydrolysis by the ROC domain is convincingly demonstrated through these kinetic analyses.' This directly supports the negative feedback interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "0c46b410-ee5d-4594-917a-1043133b3e05",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "ATP incubation of wild-type LRRK2 for 2 hours at 30\u00b0C leads to approximately twofold increase in KM (1036 \u00b1 168 \u00b5M) and twofold decrease in kcat (0.13 \u00b1 0.01 min\u207b\u00b9), demonstrating that autophosphorylation negatively regulates GTPase activity, while the kinase-dead K1906M variant shows no change upon ATP treatment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly state that the authors 'report that incubation of LRRK2 with ATP increases the KM for GTP and decreases the kcat' and that 'from this they suppose an autophosphorylation process is responsible for enzyme inhibition.' The control with K1906M is accepted as part of the rigorous experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "5488d0ad-26bf-44aa-a73b-1e2219bc84da",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The T1343A mutation in the Roc P-loop prevents the ATP-induced increase in KM, identifying T1343 as critical for phosphoregulation of both KM and kcat values, though T1343A shows a reduced kcat that may indicate the mutation is not completely structurally neutral.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers note that 'LRRK2 T1343A showed no change, consistent with it needing to be phosphorylated to explain the changes in G-domain properties.' This acceptance of the T1343A data as supporting the phosphorylation-dependent mechanism indicates reviewer support for these claims, though they note limitations in the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "41426a13-ace5-4cca-8603-5c5de2d5ec4f",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Autophosphorylation shifts the monomer/dimer equilibrium toward the monomeric form in wild-type LRRK2, while ATP incubation does not affect dimer percentage for T1343A, suggesting the negative feedback mechanism operates through increased monomerization.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers explicitly state that 'a regulatory mechanism directly linking the T1343 phospho-site and a monomer/dimer equilibrium is not fully supported' and that 'conclusions related to the involvement of a monomer-dimer transition are...premature.' One reviewer notes 'The T1343A mutant has reduced catalytic activity and can form similar levels of dimer as WT,' indicating the mechanistic link is questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "369c69c6-cddd-499e-a02f-b019676638d0",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "In cell-based assays, T1343A shows approximately twofold increased Rab10 phosphorylation comparable to G2019S, while the double mutant T1343A/G2019S shows no further increase, suggesting T1343 is crucial for negative feedback in the LRRK2 signaling cascade, though T1343A has kinase activity comparable to wild-type in vitro.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers acknowledge these cellular data as part of the 'careful biochemical experiments' and note the consistency between the T1343A mutation preventing ATP-induced changes and its effects on kinase activity. The editor states the work provides 'interesting results' though notes limitations in extrapolating to cellular context.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "46c38723-ae00-41ee-9e89-dce12cb2e864",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "LRRK2 wild-type, R1441G, and Y1699C MBP-RocCOR constructs showed similar kinetic parameters and identical catalytic efficiency in the charcoal assay, and both HPLC-based and charcoal assays produce comparable GTP hydrolysis rates for full-length LRRK2.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These methodological validations are part of the 'rigorous' and 'careful biochemical analyses' praised by reviewers. The comparison of assay methods and truncated constructs is accepted as supporting the robustness of the kinetic measurements.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "925b38fa-18cf-433a-bdc3-38f9d32acd89",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "R1441G and I2020T PD mutations show approximately eightfold increase in Rab10 phosphorylation in cells, with R1441G showing strong Rab phosphorylation while G2019S shows considerably weaker effects.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These cellular data are cited as being 'in agreement with published data' and are not challenged by reviewers. They are treated as confirmatory findings supporting the differential effects of pathogenic variants.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "bb8dafca-0574-4fdc-a757-36bb01dd5cde",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "PD mutants differently change the kinetics of the GTPase cycle, which might explain differences in penetrance; given physiological GTP concentrations of ~500 \u00b5M, differences in KM values are expected to strongly perturb tightly regulated LRRK2 activity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers accept the kinetic data, one reviewer explicitly notes 'the environmental context in cells cannot be captured from the kinetic assays performed in this manuscript' and that 'this is...a limitation of the approach.' The speculative connection to penetrance is not directly addressed but falls under concerns about physiological relevance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "fca31ad8-d8ae-492b-afcd-50703e9d3134",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "AlphaFold3 modeling suggests that phosphorylated T1343 is oriented inward, substituting the gamma phosphate, which is consistent with MD simulations and might hamper GTP hydrolysis by competing with GTP re-binding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These structural modeling interpretations are presented as supporting mechanistic hypotheses and are not challenged by reviewers. They are treated as reasonable interpretations consistent with the experimental data, though the mechanistic speculation is acknowledged as such.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "33143ed9-4ebb-4e24-95ef-720a01beb7ed",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The authors propose a model where GTP-loading favors monomeric LRRK2, GTP hydrolysis leads to GDP-bound dimers, and kinase activity counteracts dimerization through T1343 autophosphorylation, supported by bacterial ctRoco structures showing P-loop conformations that prevent nucleotide binding in dimers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers state that 'a regulatory mechanism directly linking the T1343 phospho-site and a monomer/dimer equilibrium is not fully supported' and note that 'an independent method needs to be utilized to bolster this aspect of the story.' While the model is acknowledged, the evidence linking all components is considered incomplete.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "6ec6d84e-123f-4a24-a408-0e66369f2a66",
+      "content_id": "09f0dab1-1a8c-46a1-8e46-2ef591db5778",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "The study describes a novel intramolecular feedback mechanism where the kinase domain in its active conformation negatively regulates GTP hydrolysis, analogous to MAPK pathways where negative feedback mechanisms are essential for robust signaling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor explicitly states that 'a feedback mechanism from the kinase domain to GTP/GDP hydrolysis by the ROC domain is convincingly demonstrated through these kinetic analyses.' This core conclusion about negative feedback is accepted, though mechanistic details about monomer-dimer transitions remain uncertain.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "42a3a7a7-abed-43cc-ba01-55492a9fd716",
+      "result_id": "caee8838-3f7f-4b1b-95da-97b9d16b1c71"
+    },
+    {
+      "claim_id": "1f126e64-b6d1-446b-b79e-650b8c3a9b25",
+      "result_id": "caee8838-3f7f-4b1b-95da-97b9d16b1c71"
+    },
+    {
+      "claim_id": "e67e4336-fdcf-40eb-89c9-91ee3d7acd69",
+      "result_id": "caee8838-3f7f-4b1b-95da-97b9d16b1c71"
+    },
+    {
+      "claim_id": "17a5157b-7e7c-4c1a-b44d-1d5282f77080",
+      "result_id": "caee8838-3f7f-4b1b-95da-97b9d16b1c71"
+    },
+    {
+      "claim_id": "ff6f09a3-464f-44a6-b7c6-d41630fee848",
+      "result_id": "70460e99-2a8c-4084-8614-2e2998e2bfe0"
+    },
+    {
+      "claim_id": "72325fcf-866d-41f8-bab7-be6d962ef540",
+      "result_id": "70460e99-2a8c-4084-8614-2e2998e2bfe0"
+    },
+    {
+      "claim_id": "b2da153a-0b00-46d3-84fc-e39a8beeb497",
+      "result_id": "70460e99-2a8c-4084-8614-2e2998e2bfe0"
+    },
+    {
+      "claim_id": "655877cd-8c3c-46d7-ad1e-8a0cee2abf1c",
+      "result_id": "70460e99-2a8c-4084-8614-2e2998e2bfe0"
+    },
+    {
+      "claim_id": "5cdd0afd-19be-47f4-845f-dd7a189a63b6",
+      "result_id": "8ca190f8-906a-4103-b8ff-55b91b8d794b"
+    },
+    {
+      "claim_id": "8975002a-43b6-48f4-b30f-c76296f02141",
+      "result_id": "8ca190f8-906a-4103-b8ff-55b91b8d794b"
+    },
+    {
+      "claim_id": "65e52b9d-2485-4117-bdd0-0a4eeb62b5f0",
+      "result_id": "8ca190f8-906a-4103-b8ff-55b91b8d794b"
+    },
+    {
+      "claim_id": "439af928-6dc8-43a1-9089-d03a4ff420be",
+      "result_id": "8ca190f8-906a-4103-b8ff-55b91b8d794b"
+    },
+    {
+      "claim_id": "c6f2829e-8d70-45d0-943b-16f854ef0093",
+      "result_id": "849a2286-f55c-41b7-9894-8ec2f06cf658"
+    },
+    {
+      "claim_id": "bd7214c2-f9fe-4e50-ad39-c609f8adc44b",
+      "result_id": "849a2286-f55c-41b7-9894-8ec2f06cf658"
+    },
+    {
+      "claim_id": "d333d9b8-27b3-4fc3-8889-75f43b91eeaf",
+      "result_id": "849a2286-f55c-41b7-9894-8ec2f06cf658"
+    },
+    {
+      "claim_id": "6852e151-1a91-4d9f-bf85-f661d1bd9158",
+      "result_id": "849a2286-f55c-41b7-9894-8ec2f06cf658"
+    },
+    {
+      "claim_id": "56c123f1-0a6b-45f2-8a44-168d158786b4",
+      "result_id": "849a2286-f55c-41b7-9894-8ec2f06cf658"
+    },
+    {
+      "claim_id": "d550bc04-4210-457c-9205-1b85761b3124",
+      "result_id": "12b44c07-a2ba-45a3-9b56-0d38226168d6"
+    },
+    {
+      "claim_id": "2c20aef9-e5b1-4cf6-ac5b-12c9357b7c08",
+      "result_id": "12b44c07-a2ba-45a3-9b56-0d38226168d6"
+    },
+    {
+      "claim_id": "e90de628-8e2f-430a-b457-9f085b71d232",
+      "result_id": "12b44c07-a2ba-45a3-9b56-0d38226168d6"
+    },
+    {
+      "claim_id": "95c72b06-ca89-4f3a-a262-d1fe80889f8a",
+      "result_id": "12b44c07-a2ba-45a3-9b56-0d38226168d6"
+    },
+    {
+      "claim_id": "0a6702d8-97e0-4415-9d98-e868996a405e",
+      "result_id": "31baa805-96fd-4a08-9cb3-2a957c83a359"
+    },
+    {
+      "claim_id": "5d1edb0f-e721-4402-9173-d923a0eaccfe",
+      "result_id": "31baa805-96fd-4a08-9cb3-2a957c83a359"
+    },
+    {
+      "claim_id": "579d61ed-9df2-48d2-bf77-570ddd4164a6",
+      "result_id": "31baa805-96fd-4a08-9cb3-2a957c83a359"
+    },
+    {
+      "claim_id": "aa9987bf-018c-48d5-9761-99e406f86cec",
+      "result_id": "31baa805-96fd-4a08-9cb3-2a957c83a359"
+    },
+    {
+      "claim_id": "fca2257c-acbe-4ba0-8c73-20ac61ba51f5",
+      "result_id": "31baa805-96fd-4a08-9cb3-2a957c83a359"
+    },
+    {
+      "claim_id": "5fae8542-32a2-4d8b-9e78-0b1deaa9eca6",
+      "result_id": "31baa805-96fd-4a08-9cb3-2a957c83a359"
+    },
+    {
+      "claim_id": "5c8c2edf-e363-4afa-b34b-308cce95cb64",
+      "result_id": "31baa805-96fd-4a08-9cb3-2a957c83a359"
+    },
+    {
+      "claim_id": "c508f0c8-464f-4152-9a0d-b4784a5fafcc",
+      "result_id": "4795f144-5181-4391-8667-c0d3fd35a000"
+    },
+    {
+      "claim_id": "8e81a75e-54ee-4657-9e8c-3c07ec115641",
+      "result_id": "4795f144-5181-4391-8667-c0d3fd35a000"
+    },
+    {
+      "claim_id": "35f68120-f655-4649-9499-7c6aa7d087bd",
+      "result_id": "4795f144-5181-4391-8667-c0d3fd35a000"
+    },
+    {
+      "claim_id": "5b0b4048-9d61-4ed6-9517-7127bac1f3f3",
+      "result_id": "4795f144-5181-4391-8667-c0d3fd35a000"
+    },
+    {
+      "claim_id": "842d1ed6-c4b0-43cf-a28c-8418a3724427",
+      "result_id": "4795f144-5181-4391-8667-c0d3fd35a000"
+    },
+    {
+      "claim_id": "5ac526d5-d82d-4ef3-b81e-112b188d04c9",
+      "result_id": "b26fcb67-2d04-4c36-828c-e5e7b2244880"
+    },
+    {
+      "claim_id": "c11db684-7478-4950-89be-ad0149db63ab",
+      "result_id": "b26fcb67-2d04-4c36-828c-e5e7b2244880"
+    },
+    {
+      "claim_id": "4309b896-0dde-4826-b66b-20759d649b02",
+      "result_id": "b26fcb67-2d04-4c36-828c-e5e7b2244880"
+    },
+    {
+      "claim_id": "82acc8b7-441d-41f9-b25a-737ae91d568f",
+      "result_id": "b26fcb67-2d04-4c36-828c-e5e7b2244880"
+    },
+    {
+      "claim_id": "73c84634-20ac-4624-b84a-e5fd6314ded1",
+      "result_id": "b26fcb67-2d04-4c36-828c-e5e7b2244880"
+    },
+    {
+      "claim_id": "b32e716d-3438-413b-8c24-631f35da38e9",
+      "result_id": "b26fcb67-2d04-4c36-828c-e5e7b2244880"
+    },
+    {
+      "claim_id": "e3eea7e5-ac21-4de3-a9ba-9b68ae975cdc",
+      "result_id": "b26fcb67-2d04-4c36-828c-e5e7b2244880"
+    },
+    {
+      "claim_id": "d5ba5c98-0081-4984-afba-4d28f05efff4",
+      "result_id": "b26fcb67-2d04-4c36-828c-e5e7b2244880"
+    },
+    {
+      "claim_id": "1db9a418-5a71-4291-befd-2beaca82ee6f",
+      "result_id": "8cdd4ad7-66b6-4a55-9bf3-8846e6d9260c"
+    },
+    {
+      "claim_id": "ab564edd-253d-44a1-b321-444233f7e39c",
+      "result_id": "8cdd4ad7-66b6-4a55-9bf3-8846e6d9260c"
+    },
+    {
+      "claim_id": "c1d682a5-e7e0-4bee-8b82-b34f2acde1e7",
+      "result_id": "0346b5d7-0388-412d-a12f-7e790f44f171"
+    },
+    {
+      "claim_id": "84a3f1d5-bd02-4f72-9fb9-50d3087908ca",
+      "result_id": "0346b5d7-0388-412d-a12f-7e790f44f171"
+    },
+    {
+      "claim_id": "2393caca-f4e9-41a2-a755-b63e057a7572",
+      "result_id": "0346b5d7-0388-412d-a12f-7e790f44f171"
+    },
+    {
+      "claim_id": "06d8dec6-6c7c-4a59-b71c-c538dbbfe4f0",
+      "result_id": "bbde991d-e34f-4d78-bc09-ed92a6824ab0"
+    },
+    {
+      "claim_id": "34c0ead9-8edf-4ce0-a563-5a4f63c3a593",
+      "result_id": "bbde991d-e34f-4d78-bc09-ed92a6824ab0"
+    },
+    {
+      "claim_id": "adbe2803-769c-422d-b3d3-314c6f0ea1a4",
+      "result_id": "bbde991d-e34f-4d78-bc09-ed92a6824ab0"
+    },
+    {
+      "claim_id": "7dbf7f5d-6539-4744-9441-5f835c953e2f",
+      "result_id": "aae2c730-1f23-4a84-8513-7536c5ec1018"
+    },
+    {
+      "claim_id": "f957f0ee-4f85-4e31-91e4-29b7dd03205f",
+      "result_id": "aae2c730-1f23-4a84-8513-7536c5ec1018"
+    },
+    {
+      "claim_id": "1f825d23-054b-4173-ae5b-49ae2b3cc643",
+      "result_id": "aae2c730-1f23-4a84-8513-7536c5ec1018"
+    },
+    {
+      "claim_id": "4f94bf18-7445-4468-8d41-20d929be9346",
+      "result_id": "aae2c730-1f23-4a84-8513-7536c5ec1018"
+    },
+    {
+      "claim_id": "274a6d50-0ec7-428f-bcea-036c0e6011c8",
+      "result_id": "0c693cd4-30e1-49c3-967a-7b99f57c3708"
+    },
+    {
+      "claim_id": "4941e7c4-5ef0-446e-b4fd-08b6b50ab385",
+      "result_id": "0c693cd4-30e1-49c3-967a-7b99f57c3708"
+    },
+    {
+      "claim_id": "efe64ab1-f641-483c-aac1-104d2f66e8ff",
+      "result_id": "0c693cd4-30e1-49c3-967a-7b99f57c3708"
+    },
+    {
+      "claim_id": "9c0015cd-24ec-4c89-935b-280559f15ef9",
+      "result_id": "0c693cd4-30e1-49c3-967a-7b99f57c3708"
+    },
+    {
+      "claim_id": "20ef2c81-a0c2-4fe0-b860-d3f3db01f4fb",
+      "result_id": "0c693cd4-30e1-49c3-967a-7b99f57c3708"
+    },
+    {
+      "claim_id": "69365167-1de3-4224-85a3-2d6a73b0c5b0",
+      "result_id": "0c693cd4-30e1-49c3-967a-7b99f57c3708"
+    },
+    {
+      "claim_id": "fb0ef126-5ca2-40f0-8630-cda10e349089",
+      "result_id": "0d31b544-800f-4225-9228-b29b71c746c4"
+    },
+    {
+      "claim_id": "09bc4bb8-6f04-44ca-936e-1498e5504b61",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "aab3c635-e3cb-4907-95bb-1e46189354ff",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "e4829209-9cf0-41f4-a9f7-80b7e55a7438",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "b1537b46-64f2-4a32-8ad2-3d5c8593eb4a",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "fdce119d-0569-4ed2-9869-ed81c4f21e52",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "1c9810c2-c0ae-4e2b-ab63-ce67fd08fd74",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "761d7cb7-21b1-4106-9437-151396df21b6",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "60b598fe-b90d-4a2f-adae-8a8180bdd482",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "e76572f0-e3b7-400d-955f-b31a82d109b8",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "e83830ad-cdf9-4969-9696-c0cf623e1c8c",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "ffef378f-edde-4417-bbf5-cef3c6d7d542",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "736b98db-553a-459a-80dd-1e5d9a1606fe",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "e3a1ae30-2e8c-44cb-bfbb-320c38770733",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "3354f05e-15cb-4aa8-b692-d5ca612e581b",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "ff7c7c64-1675-4f3c-a9b2-2651334c2376",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "cafb3f5b-9e39-4f2d-9bfb-451d32bda035",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "cba03485-600b-48ae-a62c-adca5c06f959",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "87e7e59a-789c-4429-bbc8-96144949cc9c",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "9c368846-8483-4c09-9ba3-5db8670c4823",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "98dff4b2-57c2-4d36-a825-dc2966280e61",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "37675272-2eb3-4317-acd3-ef097ba25034",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "aa436d23-8cbb-4cae-be38-ad1897071733",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "2f3f3bdd-abbb-4e1e-b56c-96158e42fe8e",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "2ab20d03-7738-47e4-828b-dc7696912052",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "b6cdf4dc-8272-40b3-9958-01b236510846",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "07a97357-e6e1-4689-b8ce-5d4ab839e20f",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "da3275c8-7496-4a65-ba1b-4bede08a35be",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "72874311-2907-439f-a5ce-d841b1fdb430",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "5af54f44-daa8-4353-a96f-af0686adfd40",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "88805ca4-f6ce-4709-aac0-cdbca99d8d35",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "64169a2d-985c-4305-a416-7e91423d124b",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "13f93acc-537c-4bed-9bb2-8966c29cd018",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "8d4c9e0e-4b66-4e11-bf9a-fdf2422979d4",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "f174e0f7-190c-4c8c-82dc-2ad1320e3626",
+      "result_id": "85306415-703d-4503-bb06-b0117023d4ec"
+    },
+    {
+      "claim_id": "765d3020-70e3-439b-873a-88f49019837e",
+      "result_id": "ba5feeb0-c14c-42b9-bfd0-a4cee6760006"
+    },
+    {
+      "claim_id": "42a3a7a7-abed-43cc-ba01-55492a9fd716",
+      "result_id": "3e82c5f7-f7e6-42b2-b78c-7b3ef33de854"
+    },
+    {
+      "claim_id": "1f126e64-b6d1-446b-b79e-650b8c3a9b25",
+      "result_id": "3e82c5f7-f7e6-42b2-b78c-7b3ef33de854"
+    },
+    {
+      "claim_id": "e67e4336-fdcf-40eb-89c9-91ee3d7acd69",
+      "result_id": "3e82c5f7-f7e6-42b2-b78c-7b3ef33de854"
+    },
+    {
+      "claim_id": "17a5157b-7e7c-4c1a-b44d-1d5282f77080",
+      "result_id": "3e82c5f7-f7e6-42b2-b78c-7b3ef33de854"
+    },
+    {
+      "claim_id": "ff6f09a3-464f-44a6-b7c6-d41630fee848",
+      "result_id": "c64064fc-735a-44e3-829f-79a47944f96b"
+    },
+    {
+      "claim_id": "72325fcf-866d-41f8-bab7-be6d962ef540",
+      "result_id": "c64064fc-735a-44e3-829f-79a47944f96b"
+    },
+    {
+      "claim_id": "b2da153a-0b00-46d3-84fc-e39a8beeb497",
+      "result_id": "c64064fc-735a-44e3-829f-79a47944f96b"
+    },
+    {
+      "claim_id": "655877cd-8c3c-46d7-ad1e-8a0cee2abf1c",
+      "result_id": "c64064fc-735a-44e3-829f-79a47944f96b"
+    },
+    {
+      "claim_id": "5cdd0afd-19be-47f4-845f-dd7a189a63b6",
+      "result_id": "faebe213-ae8e-44eb-82a2-d8590899abb5"
+    },
+    {
+      "claim_id": "8975002a-43b6-48f4-b30f-c76296f02141",
+      "result_id": "faebe213-ae8e-44eb-82a2-d8590899abb5"
+    },
+    {
+      "claim_id": "65e52b9d-2485-4117-bdd0-0a4eeb62b5f0",
+      "result_id": "faebe213-ae8e-44eb-82a2-d8590899abb5"
+    },
+    {
+      "claim_id": "c6f2829e-8d70-45d0-943b-16f854ef0093",
+      "result_id": "ce174794-4562-4a41-96fc-5e16e857d10f"
+    },
+    {
+      "claim_id": "bd7214c2-f9fe-4e50-ad39-c609f8adc44b",
+      "result_id": "ce174794-4562-4a41-96fc-5e16e857d10f"
+    },
+    {
+      "claim_id": "d333d9b8-27b3-4fc3-8889-75f43b91eeaf",
+      "result_id": "ce174794-4562-4a41-96fc-5e16e857d10f"
+    },
+    {
+      "claim_id": "6852e151-1a91-4d9f-bf85-f661d1bd9158",
+      "result_id": "ce174794-4562-4a41-96fc-5e16e857d10f"
+    },
+    {
+      "claim_id": "56c123f1-0a6b-45f2-8a44-168d158786b4",
+      "result_id": "ce174794-4562-4a41-96fc-5e16e857d10f"
+    },
+    {
+      "claim_id": "d550bc04-4210-457c-9205-1b85761b3124",
+      "result_id": "0c46b410-ee5d-4594-917a-1043133b3e05"
+    },
+    {
+      "claim_id": "2c20aef9-e5b1-4cf6-ac5b-12c9357b7c08",
+      "result_id": "0c46b410-ee5d-4594-917a-1043133b3e05"
+    },
+    {
+      "claim_id": "e90de628-8e2f-430a-b457-9f085b71d232",
+      "result_id": "0c46b410-ee5d-4594-917a-1043133b3e05"
+    },
+    {
+      "claim_id": "95c72b06-ca89-4f3a-a262-d1fe80889f8a",
+      "result_id": "0c46b410-ee5d-4594-917a-1043133b3e05"
+    },
+    {
+      "claim_id": "0a6702d8-97e0-4415-9d98-e868996a405e",
+      "result_id": "5488d0ad-26bf-44aa-a73b-1e2219bc84da"
+    },
+    {
+      "claim_id": "aa9987bf-018c-48d5-9761-99e406f86cec",
+      "result_id": "5488d0ad-26bf-44aa-a73b-1e2219bc84da"
+    },
+    {
+      "claim_id": "fca2257c-acbe-4ba0-8c73-20ac61ba51f5",
+      "result_id": "5488d0ad-26bf-44aa-a73b-1e2219bc84da"
+    },
+    {
+      "claim_id": "5fae8542-32a2-4d8b-9e78-0b1deaa9eca6",
+      "result_id": "5488d0ad-26bf-44aa-a73b-1e2219bc84da"
+    },
+    {
+      "claim_id": "5c8c2edf-e363-4afa-b34b-308cce95cb64",
+      "result_id": "5488d0ad-26bf-44aa-a73b-1e2219bc84da"
+    },
+    {
+      "claim_id": "c508f0c8-464f-4152-9a0d-b4784a5fafcc",
+      "result_id": "41426a13-ace5-4cca-8603-5c5de2d5ec4f"
+    },
+    {
+      "claim_id": "8e81a75e-54ee-4657-9e8c-3c07ec115641",
+      "result_id": "41426a13-ace5-4cca-8603-5c5de2d5ec4f"
+    },
+    {
+      "claim_id": "35f68120-f655-4649-9499-7c6aa7d087bd",
+      "result_id": "41426a13-ace5-4cca-8603-5c5de2d5ec4f"
+    },
+    {
+      "claim_id": "5b0b4048-9d61-4ed6-9517-7127bac1f3f3",
+      "result_id": "41426a13-ace5-4cca-8603-5c5de2d5ec4f"
+    },
+    {
+      "claim_id": "842d1ed6-c4b0-43cf-a28c-8418a3724427",
+      "result_id": "41426a13-ace5-4cca-8603-5c5de2d5ec4f"
+    },
+    {
+      "claim_id": "5ac526d5-d82d-4ef3-b81e-112b188d04c9",
+      "result_id": "369c69c6-cddd-499e-a02f-b019676638d0"
+    },
+    {
+      "claim_id": "c11db684-7478-4950-89be-ad0149db63ab",
+      "result_id": "369c69c6-cddd-499e-a02f-b019676638d0"
+    },
+    {
+      "claim_id": "4309b896-0dde-4826-b66b-20759d649b02",
+      "result_id": "369c69c6-cddd-499e-a02f-b019676638d0"
+    },
+    {
+      "claim_id": "82acc8b7-441d-41f9-b25a-737ae91d568f",
+      "result_id": "369c69c6-cddd-499e-a02f-b019676638d0"
+    },
+    {
+      "claim_id": "73c84634-20ac-4624-b84a-e5fd6314ded1",
+      "result_id": "369c69c6-cddd-499e-a02f-b019676638d0"
+    },
+    {
+      "claim_id": "b32e716d-3438-413b-8c24-631f35da38e9",
+      "result_id": "369c69c6-cddd-499e-a02f-b019676638d0"
+    },
+    {
+      "claim_id": "e3eea7e5-ac21-4de3-a9ba-9b68ae975cdc",
+      "result_id": "369c69c6-cddd-499e-a02f-b019676638d0"
+    },
+    {
+      "claim_id": "d5ba5c98-0081-4984-afba-4d28f05efff4",
+      "result_id": "369c69c6-cddd-499e-a02f-b019676638d0"
+    },
+    {
+      "claim_id": "c1d682a5-e7e0-4bee-8b82-b34f2acde1e7",
+      "result_id": "46c38723-ae00-41ee-9e89-dce12cb2e864"
+    },
+    {
+      "claim_id": "84a3f1d5-bd02-4f72-9fb9-50d3087908ca",
+      "result_id": "46c38723-ae00-41ee-9e89-dce12cb2e864"
+    },
+    {
+      "claim_id": "2393caca-f4e9-41a2-a755-b63e057a7572",
+      "result_id": "46c38723-ae00-41ee-9e89-dce12cb2e864"
+    },
+    {
+      "claim_id": "fb0ef126-5ca2-40f0-8630-cda10e349089",
+      "result_id": "925b38fa-18cf-433a-bdc3-38f9d32acd89"
+    },
+    {
+      "claim_id": "439af928-6dc8-43a1-9089-d03a4ff420be",
+      "result_id": "925b38fa-18cf-433a-bdc3-38f9d32acd89"
+    },
+    {
+      "claim_id": "1db9a418-5a71-4291-befd-2beaca82ee6f",
+      "result_id": "bb8dafca-0574-4fdc-a757-36bb01dd5cde"
+    },
+    {
+      "claim_id": "f13fe047-ff92-4812-a8a8-ef6803df099a",
+      "result_id": "bb8dafca-0574-4fdc-a757-36bb01dd5cde"
+    },
+    {
+      "claim_id": "ab564edd-253d-44a1-b321-444233f7e39c",
+      "result_id": "bb8dafca-0574-4fdc-a757-36bb01dd5cde"
+    },
+    {
+      "claim_id": "06d8dec6-6c7c-4a59-b71c-c538dbbfe4f0",
+      "result_id": "fca31ad8-d8ae-492b-afcd-50703e9d3134"
+    },
+    {
+      "claim_id": "34c0ead9-8edf-4ce0-a563-5a4f63c3a593",
+      "result_id": "fca31ad8-d8ae-492b-afcd-50703e9d3134"
+    },
+    {
+      "claim_id": "adbe2803-769c-422d-b3d3-314c6f0ea1a4",
+      "result_id": "fca31ad8-d8ae-492b-afcd-50703e9d3134"
+    },
+    {
+      "claim_id": "274a6d50-0ec7-428f-bcea-036c0e6011c8",
+      "result_id": "33143ed9-4ebb-4e24-95ef-720a01beb7ed"
+    },
+    {
+      "claim_id": "4941e7c4-5ef0-446e-b4fd-08b6b50ab385",
+      "result_id": "33143ed9-4ebb-4e24-95ef-720a01beb7ed"
+    },
+    {
+      "claim_id": "efe64ab1-f641-483c-aac1-104d2f66e8ff",
+      "result_id": "33143ed9-4ebb-4e24-95ef-720a01beb7ed"
+    },
+    {
+      "claim_id": "9c0015cd-24ec-4c89-935b-280559f15ef9",
+      "result_id": "33143ed9-4ebb-4e24-95ef-720a01beb7ed"
+    },
+    {
+      "claim_id": "20ef2c81-a0c2-4fe0-b860-d3f3db01f4fb",
+      "result_id": "33143ed9-4ebb-4e24-95ef-720a01beb7ed"
+    },
+    {
+      "claim_id": "69365167-1de3-4224-85a3-2d6a73b0c5b0",
+      "result_id": "33143ed9-4ebb-4e24-95ef-720a01beb7ed"
+    },
+    {
+      "claim_id": "765d3020-70e3-439b-873a-88f49019837e",
+      "result_id": "6ec6d84e-123f-4a24-a408-0e66369f2a66"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "511f09dd-7cd5-40dd-9a44-160049a897db",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "caee8838-3f7f-4b1b-95da-97b9d16b1c71",
+      "peer_result_id": "3e82c5f7-f7e6-42b2-b78c-7b3ef33de854",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C2, C34, C35, C42. Both evaluations find the kinetic measurements of LRRK2's GTPase activity rigorous and well-supported, with reviewers explicitly praising the 'very careful biochemical analyses' and 'detailed accounting of catalytic efficiency.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "f175f98d-4013-4b5a-9ba6-ddf00e15585b",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "70460e99-2a8c-4084-8614-2e2998e2bfe0",
+      "peer_result_id": "c64064fc-735a-44e3-829f-79a47944f96b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C3, C43, C44, C79. Both evaluations support the kinetic characterization of R1441G variant, with reviewers accepting these measurements as part of the rigorous biochemical analyses without challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "b9af3cae-baf1-47fa-b5b0-6c498f7e2ab3",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "8ca190f8-906a-4103-b8ff-55b91b8d794b",
+      "peer_result_id": "faebe213-ae8e-44eb-82a2-d8590899abb5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C4, C45, C46 regarding G2019S kinetics. Both evaluations support these measurements as part of careful biochemical experiments. Peer review R3 does not explicitly mention C80, while OpenEval R3 includes it; however, peer R10 addresses C80 separately and supports it.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "c5f1ed65-1a51-4a1b-9aa9-0aa6f4c118d0",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "849a2286-f55c-41b7-9894-8ec2f06cf658",
+      "peer_result_id": "ce174794-4562-4a41-96fc-5e16e857d10f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C47, C48, C49, C50, C51. Both evaluations strongly support the negative feedback mechanism demonstrated through kinase-dead and pharmacological inhibition experiments, with reviewers explicitly stating the feedback is 'convincingly demonstrated.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "4edc685c-6245-46ba-aa74-9111a9c8fbcb",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "12b44c07-a2ba-45a3-9b56-0d38226168d6",
+      "peer_result_id": "0c46b410-ee5d-4594-917a-1043133b3e05",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C52, C53, C54, C55. Both evaluations support the ATP incubation experiments and the conclusion that autophosphorylation negatively regulates GTPase activity, with reviewers accepting the K1906M control as rigorous.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "50c1a1d6-43f0-4ab5-927f-e351340db8fc",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "31baa805-96fd-4a08-9cb3-2a957c83a359",
+      "peer_result_id": "5488d0ad-26bf-44aa-a73b-1e2219bc84da",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C5, C58, C59, C60, C61 regarding T1343 as the critical phosphosite. Both evaluations support the mutational analysis data, though peer review does not explicitly address claims C56, C57 included in OpenEval R6. Reviewers accept T1343A data as consistent with phosphorylation-dependent mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "7c094d42-ba8e-4628-b97c-fb6de587d624",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "4795f144-5181-4391-8667-c0d3fd35a000",
+      "peer_result_id": "41426a13-ace5-4cca-8603-5c5de2d5ec4f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Significant disagreement on claims C63, C64, C65, C66, C67. OpenEval finds the mass photometry data and mechanistic inference about oligomerization SUPPORTED, while peer reviewers rate it UNCERTAIN, explicitly stating the 'regulatory mechanism directly linking the T1343 phospho-site and a monomer/dimer equilibrium is not fully supported' and conclusions are 'premature.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "9fcc4c91-4aa5-41c3-9db9-d99ead71072a",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "b26fcb67-2d04-4c36-828c-e5e7b2244880",
+      "peer_result_id": "369c69c6-cddd-499e-a02f-b019676638d0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C6, C7, C8, C68, C69, C71, C72, C73. Both evaluations support the cellular and in vitro data showing T1343A effects on kinase activity and the lack of additivity with G2019S, though peer reviewers note limitations in extrapolating to cellular context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "671c70bc-e684-4444-9854-8394a1a39faa",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0346b5d7-0388-412d-a12f-7e790f44f171",
+      "peer_result_id": "46c38723-ae00-41ee-9e89-dce12cb2e864",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C39, C40, C41. Both evaluations support the methodological validations and assay comparisons as part of rigorous experimental design, with reviewers praising the careful biochemical analyses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "2cee0c51-1d2d-42bc-a9af-a13a525519dc",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "bbde991d-e34f-4d78-bc09-ed92a6824ab0",
+      "peer_result_id": "fca31ad8-d8ae-492b-afcd-50703e9d3134",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial disagreement on claims C83, C84, C85. OpenEval rates computational modeling as UNCERTAIN due to lack of experimental validation, while peer reviewers rate it SUPPORTED as reasonable interpretation consistent with data, though both acknowledge the speculative nature of mechanistic claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "17bfca3c-5e4b-4440-bf5a-432c1e9bb4ac",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "0c693cd4-30e1-49c3-967a-7b99f57c3708",
+      "peer_result_id": "33143ed9-4ebb-4e24-95ef-720a01beb7ed",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C90, C91, C92, C93, C94, C95. OpenEval finds the mechanistic model SUPPORTED with appropriate caveats, while peer reviewers rate it UNCERTAIN, stating the mechanism linking T1343 phosphorylation and monomer/dimer equilibrium is 'not fully supported' and requires independent validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "7c0d7edb-06a4-496a-876b-f4e561993bac",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ba5feeb0-c14c-42b9-bfd0-a4cee6760006",
+      "peer_result_id": "6ec6d84e-123f-4a24-a408-0e66369f2a66",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C97. Both evaluations support the main conclusion about negative feedback mechanism, with peer reviewers explicitly stating it is 'convincingly demonstrated,' though they note mechanistic details about oligomerization remain uncertain.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "ab32a7fd-ba8e-455e-85a4-61cbc71cb6e7",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "8cdd4ad7-66b6-4a55-9bf3-8846e6d9260c",
+      "peer_result_id": "bb8dafca-0574-4fdc-a757-36bb01dd5cde",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C9, C78. Both evaluations rate the connection between kinetic parameters and clinical penetrance as UNCERTAIN/speculative. OpenEval notes lack of direct clinical data, while peer reviewers note the limitation that 'environmental context in cells cannot be captured from kinetic assays.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "3fa771ee-9954-4230-90fa-0e19978fe24e",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "0d31b544-800f-4225-9228-b29b71c746c4",
+      "peer_result_id": "925b38fa-18cf-433a-bdc3-38f9d32acd89",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C70. Both evaluations support the cell-based assay results as confirmatory data consistent with published findings. Peer R10 also addresses C80 which OpenEval includes in R3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "d77ebafa-293f-46d4-9f36-ffd9c727dc73",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "aae2c730-1f23-4a84-8513-7536c5ec1018",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R12 addresses claims C86, C87, C88, C89 regarding database information and literature context (Rab24 parallel). These literature-based contextual claims are not explicitly evaluated separately in peer review results, though they may be implicitly accepted as background.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    },
+    {
+      "id": "969119b4-54f3-4586-a801-3ff2b12949a2",
+      "submission_id": "73407c3c-0bb1-43d6-a921-075d415d55f0",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "85306415-703d-4503-bb06-b0117023d4ec",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R15 addresses extensive background claims C1, C10-C38, C74-C77, C81-C82, C96 from the literature. These established background claims are not separately evaluated in peer review results, as they represent cited prior work rather than new findings requiring validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:03:04.142596Z"
+    }
+  ]
+}

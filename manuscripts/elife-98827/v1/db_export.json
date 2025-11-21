@@ -1,0 +1,2023 @@
+{
+  "submission": {
+    "id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T19:12:16.147888Z",
+    "updated_at": "2025-11-21T19:12:16.147888Z"
+  },
+  "content": [
+    {
+      "id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "content_type": "manuscript",
+      "content_text": "# Induction of hepatitis B core protein aggregation targeting an unconventional binding site\n\n## Authors\n\n- Vladimir Khayenko<sup>1</sup>\n- Cihan Makbul<sup>1</sup>\n- Clemens Schulte<sup>1</sup>\n- Naomi Hemmelmann<sup>1</sup>\n- Sonja Kachler<sup>1</sup>\n- Bettina B\u00f6ttcher<sup>1</sup> ([ORCID: 0000-0002-7962-4849](https://orcid.org/0000-0002-7962-4849)) \u2020\n- Hans Michael Maric<sup>1</sup> ([ORCID: 0000-0002-2719-4752](https://orcid.org/0000-0002-2719-4752)) \u2020\n\n### Affiliations\n\n1. Rudolf Virchow Center, Center for Integrative and Translational Bioimaging; University of W\u00fcrzburg W\u00fcrzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))\n2. Biocenter, University of W\u00fcrzburg W\u00fcrzburg Germany ([ROR:00fbnyb24](https://ror.org/00fbnyb24))\n\n\u2020 Corresponding author\n\n## Abstract\n\nThe hepatitis B virus (HBV) infection is a major global health problem, with chronic infection leading to liver complications and high death toll. Current treatments, such as nucleos(t)ide analogs and interferon-\u03b1, effectively suppress viral replication but rarely cure the infection. To address this, new antivirals targeting different components of the HBV molecular machinery are being developed. Here we investigated the hepatitis B core protein (HBc) that forms the viral capsids and plays a vital role in the HBV life cycle. We explored two distinct binding pockets on the HBV capsid: the central hydrophobic pocket of HBc-dimers and the pocket at the tips of capsid spikes. We synthesized a geranyl dimer that binds to the central pocket with micromolar affinity, and dimeric peptides that bind the spike-tip pocket with sub-micromolar affinity. Cryo-electron microscopy further confirmed the binding of peptide dimers to the capsid spike tips and their capsid-aggregating properties. Finally, we show that the peptide dimers induce HBc aggregation in vitro and in living cells. Our findings highlight two tractable sites within the HBV capsid and provide an alternative strategy to affect HBV capsids.\n\n## Introduction\n\nThe hepatitis B virus (HBV) infects the liver and can cause acute and chronic hepatitis. In childhood and infancy, the virus is particularly dangerous as the recovery rate among children is approximately 50%, while among infants infected through perinatal transmission, only 10% will naturally recover, the remainder will develop chronic infection (Thomas, 2019; Block et al., 2021). On the global scale, the most effective approach to address hepatitis B is through preventive treatment with vaccinations. However, the goals of achieving sufficient vaccination coverage and timely immunization have yet to be met (Thomas, 2019; Cox et al., 2020). Furthermore, vaccinations are ineffective for individuals who are already infected (Dienstag et al., 1982). With about 300 million chronic carriers and over 800,000 hepatitis-related yearly deaths, chronic hepatitis B is a global health problem (Block et al., 2021; World Health Organisation, 2022) that requires a solution.\n\nCurrently, there are two approved classes of medications for the treatment of chronic hepatitis B: nucleos(t)ide analogs (NAs) and interferon-\u03b1 and its derivatives (IFN-\u03b1) (Hepatitis B Foundation, 2023; Jeng et al., 2023). NAs compete for binding with the natural nucleotide substrates, inhibiting the viral protein P in charge of the reverse transcription of the viral pre-genomic RNA (pgRNA) into HBV DNA (Men\u00e9ndez-Arias et al., 2014) IFN-\u03b1 serves as both an immunomodulator and immunostimulant, activating genes with diverse antiviral functions to target various steps of viral replication. Additionally, it indirectly suppresses HBV infection by modifying cell-mediated immunity (Liang et al., 2015).\n\nPresent treatments effectively suppress HBV replication, reduce liver inflammation, fibrosis, and the risk of cirrhosis and hepatocellular carcinoma (HCC), but IFN-\u03b1 treatment is associated with significant adverse effects and NAs typically require long-term oral administration, often lifelong, as treatment discontinuation often results in viral rebound and disease recurrence in many patients. While current therapies manage the disease, a clinical cure is seldom achieved, and the risk of HCC, although reduced, remains (Jeng et al., 2023). Consequently, various classes of direct-acting antivirals and immunomodulatory therapies are currently under development, aiming to achieve a functional cure following a finite treatment duration (Cornberg et al., 2020).\n\nNew HBV antivirals capitalize on the enhanced understanding of the viral life cycle and can be categorized into several classes (Table 1): entry inhibitors that disrupt HBV entry into hepatocytes by blocking the binding to the sodium/taurocholate co-transporting polypeptide (NTCP) receptor (Yan et al., 2012). HBsAg inhibitors based on nucleic acid polymers that interfere with the production of HBV surface antigens, and viral gene repressors based on nucleases. Translation inhibitors based on small interfering RNAs or antisense oligonucleotides that silence HBV RNA, thereby decreasing the viral antigen production. Finally, the capsid assembly modulators (CAMs) target the hepatitis B core protein (HBc) that participates in multiple essential steps of the HBV life cycle (Jeng et al., 2023).\n\n**Table 1.**\n Direct-acting hepatitis B virus (HBV) antivirals.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Class</th>\n      <th>Mechanism of action</th>\n      <th>Examples</th>\n      <th>Development stage (Hepatitis B Foundation, 2023)</th>\n      <th>Molecule type</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td rowspan=\"2\">Entry inhibitors</td>\n      <td rowspan=\"2\">NTCP (sodium/taurocholate co-transporting polypeptide) receptor (Watashi and Wakita, 2015) inhibition.</td>\n      <td>Bulevirtide (Ligat et al., 2021)</td>\n      <td>Phase III</td>\n      <td>Lipopeptide</td>\n    </tr>\n    <tr>\n      <td>A2342 (Bonn et al., 2022)</td>\n      <td>Preclinical</td>\n      <td>Small molecule</td>\n    </tr>\n    <tr>\n      <td>HBsAg inhibitor</td>\n      <td>Inhibition of the host HSP40 chaperone DNAJB12 that mediates spherical HBV assembly. Reduces the HBsAg in the circulation and lowers intracellular HBsAg (Vaillant, 2022).</td>\n      <td>REP 2139 (Vaillant, 2019)</td>\n      <td>Phase II</td>\n      <td>Nucleic acid polymer</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Translation inhibitors</td>\n      <td rowspan=\"2\">Antisense oligonucleotide (ASO) or small interfering RNAs (siRNA) (Gareri et al., 2022) that target HBV messenger RNAs and act to decrease levels of viral proteins.</td>\n      <td>Bepirovirsen (Yuen et al., 2022)</td>\n      <td>Phase III</td>\n      <td>ASO</td>\n    </tr>\n    <tr>\n      <td>VIR-2218 (Gane et al., 2023)</td>\n      <td>Phase II</td>\n      <td>siRNA</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Viral gene repressors</td>\n      <td rowspan=\"2\">Specific cleavage mediation of viral covalently closed circular DNA (cccDNA) via nucleases (Ono and Bassit, 2021).</td>\n      <td>PBGENE-HBV (Gorsuch et al., 2022)</td>\n      <td>Preclinical</td>\n      <td>Endonuclease I-CreI</td>\n    </tr>\n    <tr>\n      <td>EBT107 (Ono and Bassit, 2021)</td>\n      <td>Preclinical</td>\n      <td>CRISPR-Cas9</td>\n    </tr>\n    <tr>\n      <td rowspan=\"2\">Capsid assembly modulators</td>\n      <td rowspan=\"2\">Target the hydrophobic pocket located at the dimer-dimer interface near the C termini of HBc subunits and induce misassembly of the core protein, thereby impeding the formation of infectious progeny virions (Ono and Bassit, 2021; Kim et al., 2021; Zheng et al., 2023).</td>\n      <td>Canocapavir (Zheng et al., 2023)</td>\n      <td>Phase II</td>\n      <td>Small molecule</td>\n    </tr>\n    <tr>\n      <td>EDP-514 (Feld et al., 2022)</td>\n      <td>Phase I</td>\n      <td>Small molecule</td>\n    </tr>\n  </tbody>\n</table>\n\nAmong the direct acting antivirals that are in preclinical or clinical studies, a third are CAMs (Hepatitis B Foundation, 2023). Capsids are attractive targets due to the absence of human homologues for HBc and their involvement in crucial stages of the HBV life cycle, including nuclear entry, encapsulation of the pgRNA and polymerase, optional nuclear recycling to replenish the covalently closed circular DNA (cccDNA) pool, and eventual coating and secretion from infected cells (Jeng et al., 2023; Kim et al., 2021).\n\nThe capsid is composed of 120 units of HBc dimers, assembling into a T = 4 icosahedron. Within this structure, 60 asymmetric units are formed by four HBc monomers each, designated as A, B, C, and D, or AB dimers and CD dimers (Crowther et al., 1994). The ultrastructure formed by the HBc dimer reveals several binding pockets that can be exploited as potential targets for modulating protein activity (Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig1-v1.jpg)\n\n**Figure 1.:** (A) Left: close-up view of the three addressable effector sites within HBc-dimers (shown as cartoon model with transparent surface in gray) together with representative ligands shown as stick models: SLLGRM peptide (marine blue, PDB: 7PZN); geraniol, resolved here (cyan); heteroaryldihydropyrimidine (HAP [(2S)-1-[[(4R)-4-(2-chloranyl-4-fluoranyl-phenyl)-5-methoxycarbonyl-2-(1,3-thiazol-2-yl)-1,4-dihydropyrimidin-6-yl]methyl]-4,4-bis(fluoranyl)-pyrrolidine-2-carboxylic acid], green, PDB: 5WRE). HAP is a representative example of a canonical capsid assembly modulator (CAM) that targets a hydrophobic pocket mediating HBc-dimer multimerization, an essential step in capsid assembly. A blue arrow indicates how dimeric peptide-based ligands may induce aggregation. Right: the general architecture of an HBc-dimer is depicted as a cartoon with transparent surface model in gray and the three ligands that target distinct binding pockets are in color. The binding sites of two HBc dimers can be linked by dimeric ligands, here exemplified with the peptide ligand. (B) Hypothetical mode of action of HBc aggregation triggered by cross-linking the spikes of individual HBc dimers, HBc multimers or the whole capsid.\n\nCAMs target the hydrophobic pocket at the HBc dimer\u2013dimer interface, upon binding they strengthen the association energy between HBc-dimer subunits, thereby promoting capsid assembly, rather than inhibiting it (Venkatakrishnan et al., 2016; Stray et al., 2005). As a result, abnormal or empty capsids may form, sometimes accompanied by the aggregation of core proteins, consequently inhibiting HBV DNA replication. Additionally, CAMs can disrupt the disassembly of incoming virions and the intracellular recycling of capsids, thereby impeding the establishment and replenishment of cccDNA (Jeng et al., 2023; Kim et al., 2021; Zoulim et al., 2022; Schlicksup and Zlotnick, 2020).\n\nRecently, a new potentially druggable site was discovered in the HBc dimer\u2014a hydrophobic pocket formed at the base of the spike. This site was targeted by the detergent Triton X-100 (TX100), ultimately causing conformational alterations in the capsid structure (Lecoq et al., 2021; Makbul et al., 2021b). In addition to the spike base hydrophobic pocket, there is another less-explored interacting domain located on the spike tip of the HBc dimer. Previous studies have shown that peptides targeting the cleft on the spike tip reduced viral replication in a cell model, likely by interfering with viral assembly through modulation of the HBc interaction with the surface antigen (B\u00f6ttcher et al., 1998). These two effector sites could serve as a foundation for the development of new types of HBc modulators and provide alternatives ways for controlling HBV infections.\n\nIn this study, we characterize and explore these alternative HBc binding pockets at the inner-dimer interface in the center and at the tips of capsid spikes (Lecoq et al., 2021; Makbul et al., 2021b; Makbul et al., 2021a), and unveil the HBc aggregating properties of a spike-binding dimeric peptide.\n\n## Results\n\nHBV capsid assembly modulation via the binding pockets on the HBc multimer ultrastructure represents a promising pharmacological strategy but until now only one site located on the HBc dimer\u2013dimer interface was explored (Figure 1A; Kim et al., 2021; Zheng et al., 2023). We designed and synthesized bivalent binders specifically targeting two distinct regions of the HBV core protein (HBc)\u2014the hydrophobic pocket at the dimer interface and the tips of the capsid spikes (Figure 1). These binders, designed to engage both sites with avidity enhanced affinity, were evaluated for their binding affinity and their effects on HBV capsids in both in vitro assays and living cell models.\n\n### Geranyl dimer targets the central hydrophobic pocket of HBc-dimers with micromolar affinity\n\nHydrophobic post-translational modifications, such as myristylation of the large hepatitis B virus surface protein (L-HBs), are essential for HBV infectivity and play a role in mediating viral assembly (Gripon et al., 1995). Additionally, farnesylation, another hydrophobic post-translational modification, is involved in the envelopment of hepatitis D virus (HDV) (Koh et al., 2015), which relies on the presence of HBV and its protein machinery for propagation. Recently, TX100, a nonionic surfactant sharing a similar hydrocarbon binding motif as the natural HBV post-translational modifications, was identified as a ligand of a distinct hydrophobic pocket in the center of HBc-dimers (Lecoq et al., 2021; Makbul et al., 2021b; Roseman et al., 2005).\n\nSeveral of the pocket forming amino acids, such as K96 and 129-PPAY-132 (Rost et al., 2006) and the natural occurring point mutations HBcP5T, L60V, F97L, and P130T (; Le Pogam et al., 2000; Yuan and Shih, 2000; Yuan et al., 1999a; Ehata et al., 1992) are involved in the secretion of enveloped virions from the cell. These findings lead to the infectious HBV particles signal hypothesis where this hydrophobic pocket is involved in the regulation of the envelopment of nucleocapsids and thus could be an alternative druggable pocket to block virus envelopment (Roseman et al., 2005).\n\nWe reasoned that compounds mimicking the natural HBV/HDV compounds and sharing a hydrophobic motif similar to that of TX100 can prove to be potent binders of this key hydrophobic pocket. Therefore, we set out to test n-decyl-beta-d-maltopyranoside (DM) (1), geraniol (2), and its synthesized dimer (3), as the mimetics of myristic acid and farnesyl, respectively.\n\nThe isothermal calorimetric titration (ITC) of HBc capsids with DM (1) resolved micromolar affinity (KD = 133 \u00b1 38 \u00b5M) to all four hydrophobic pockets of HBc capsids\u2019 asymmetric unit (N = 1.05 \u00b1 0.1) (Figure 2B, Figure 2\u2014figure supplement 1). ITC of geraniol with HBc showed a slightly enhanced micromolar affinity (KD = 94 \u00b1 8 \u00b5M) (Figure 2A and B, Supplementary file 1, Supplementary file 2 and Figure 2\u2014figure supplement 1) and a stoichiometry of N = 1.01 \u00b1 0.04, implying that all four hydrophobic pockets of the asymmetric unit are occupied simultaneously. To confirm geraniol\u2019s binding to the capsids and resolve the molecular details of this interaction, we conducted cryo-EM of a mixture of HBc with excess of geraniol followed by single-particle analysis. This experiment resolved an additional density for geraniol in all four hydrophobic pockets within the asymmetric unit of HBc capsids (Figure 2D, Figure 2\u2014figure supplement 2), confirming the thermodynamic binding data and further defining the underlying molecular interactions of the involved HBV residues P5, L60, K96, and F97.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig2-v1.jpg)\n\n**Figure 2.:** (A) Structures of different substances used for the isothermal calorimetric titration (ITC) and cryo-EM experiments. N-Decyl-beta-d-maltopyranoside (DM) (1) and geraniol (2). Using geranic acid, we synthesized geranyl dimer (3), a dimeric binder forked by a lysine and having a linker of six dioxaoctanoic units. (B) Representative ITC heat signatures of DM (1), geraniol (2), and the geranyl dimer (3) with HBc capsids. Heat release is detected upon titration of the ligands to the HBc solution, indicating stoichiometric binding interaction. 4 mM geraniol (2) was titrated into a solution of 210 \u00b5M HBc. A solution of 2 mM geranyl dimer (3) was titrated into a solution 200 \u00b5M HBc. 1.6\u20132 mM solutions of DM (1) were titrated into solutions with 90, 100, and 150 \u00b5M HBc, respectively. The control experiments where geraniol, geranyl dimer, and DM were titrated into buffer are shown in Figure 2\u2014figure supplement 1. Integrated heat signatures in kcal\u22c5mol\u20131 plotted against the molar ratio of titrants to HBc. Binding isotherms (solid lines) were determined using a curve fitting procedure based on a one-site model. Among the ligands, the geranyl dimer has the strongest affinity to HBc, expectedly surpassing the monovalent geraniol by twofold. (C) Structure of the geraniol (magenta) within the HBc binding site (yellow and red) together with close-up view of the binding site with the EM-densities. Geraniol and residues (P5, L60, K96, E64, and V13) involved in hepatitis B virus\u2019s (HBV) envelopment with natural phenotypes are depicted in stick representation. The EM density of geraniol is shown in the zoom-out in blue. (D) Side-by-side comparison of the overlapping HBc geraniol and TX100 (Makbul et al., 2021b) binding sites suggests conformational flexibility and the ability of the hydrophobic pocket to accommodate larger hydrophobic molecules.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** All substances were dissolved in buffer A and titrated into buffer A as a control for experiments where equal concentrations of these substances were titrated into solutions of HBc (see Figures 2 and 3). (A) 4 mM geraniol, (B) 2 mM geranyl dimer, (C) 1.7 mM DM, (D) 0.3 mM P1d, (E) 0.5 mM P2d, and (F) 1.5 mM SLLGRM dimer. X and Y axes are scaled differently in the panels.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Slice of the EM-map with fitted model: The slice shows the center of the two quasi-equivalent spikes with the fitted models of geraniol in brown. One geraniol molecule is bound to each of the quasi-equivalent sites. The surface of the EM-map is transparent and colored according to the chains. For clarity, the density attributed to geraniol is highlighted in green (color blob option of Chimera; Pettersen et al., 2004). Geraniol binds to the same site as Triton X100 (Makbul et al., 2021b) but does not change the rotamer conformation of F97. Binding of geraniol is not linked to conformational changes in the HBc-dimers. (B) Slices of the EM-map at the center of the spikes shown above. The surface of the map is colored according to the relative occupancy estimated with \u2018OccuPy\u2019 (Forsberg et al., 2023) based on the gray value distribution. The relative occupancies at the geraniol moiety are somewhat lower than the surrounding protein. Considering that flexibility and occupancy have a similar effect on the gray value distribution, the geraniol has an increasing flexibility towards the outside of the pocket and has at least 80\u201390% occupancy at the interior of the pockets. The color key for the relative occupancy is shown below.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** This figure illustrates the rationale behind the design of the PEG linker length in the peptide- and geraniol-dimers. The binding site A, where the peptide or geranyl dimer binds, is located at the tip of a capsid spike or in a hydrophobic pocket (depicted as a yellow circle). The possible additional interactions of the dimers are shown as yellow circles labeled B1, B2, B3, and B4. The PEG linker, depicted as a dotted blue line, has been carefully chosen to allow simultaneous binding between two opposing sites. (I) The distance between the tip of a \u2018central\u2019 capsid spike A and the surrounding four spikes B1, B2, B3, and B4 is approximately 6 nm (60 \u00c5). The PEG linker, with a length of about 8 nm (80 \u00c5), was selected to provide flexibility and ensure the dimer can potentially bridge two adjacent spike tips, optimizing binding avidity by enabling interaction with any combination of the adjacent spikes. (II) For geranyl dimers, the hydrophobic pockets are separated by a distance of approximately 4 nm (40 \u00c5), and the designed PEG linker (~3.8 nm or 38 \u00c5) was chosen to match this distance, allowing for optimal interaction with two pockets in close proximity.\n\nEncouraged by structural confirmation of geraniol binding to the central hydrophobic pocket, we designed and synthesized a dimeric version of geraniol potentially capable of simultaneous binding to the HBc dimer. We connected the two geranyl moieties with a polyethylene glycol (PEG) linker that could bridge the distance of 38 \u00c5 between the two opposing hydrophobic pockets (see Figure 2\u2014figure supplement 3 for the design rationale). After synthesis, purification and mass spectrometric validation (Appendix 1) we determined the HBc capsid binding parameters of the geranyl dimer via ITC. The analysis suggested that the dimer engages with both HBc binding sites simultaneously, resulting, however, only in a moderately enhanced micromolar affinity of 63 \u00b1 8 \u00b5M (Figure 2B).\n\n### Targeting the pocket of capsid spike tips with sub-micromolar affinity peptide dimers\n\nAlthough geraniol and geranyl dimer displayed improved affinity to HBc and allowed structural insights on a binding pocket located at the center of HBc dimers, micromolar affinity is suboptimal for a functional compound. Therefore, we proceeded to explore another binding site located on the capsid spike tips formed by HBc dimers (Figure 1; B\u00f6ttcher et al., 1998).\n\nEarlier studies have shown that phage display-derived peptides were binding to the spike tips of recombinant HBc capsids. These peptides were also observed to disrupt the interaction between HBc and HBV\u2019s surface protein, L-HBs (Wang et al., 1995). Recently, we have shown that these peptides MHRSLLGRMKGA (P1), GSLLGRMKGA (P2), and the core binding motif SLLGRM bind to wild-type (wt) and mutant HBc variants (P5T, L60V and F97L) with intermediate micromolar KDs of 26, 68, and 130 \u00b5M, respectively (Makbul et al., 2021a).\n\nHere, we designed dimeric peptides with a PEG linker capable of bridging the distance of 50 \u00c5 between the capsid spikes, thus tailoring our binders for simultaneous binding of two HBc dimers (Figure 1B, Figure 2\u2014figure supplement 3). The three distinct dimeric peptides, the minimal SLLGRM dimer (4), the P2 dimer (P2d) (5), and two P1 dimers (P1d) (6) and P1dC (7), were synthesized, purified, and validated using mass spectrometry (Appendix 1). Subsequently, their binding to the HBV capsid was evaluated through ITC (Figure 3A, Supplementary file 2, Figure 2\u2014figure supplement 1, Figure 3\u2014figure supplement 1). With a KD value of 4.9 \u00b1 0.7 \u00b5M, the SLLGRM-dimer (4) has the lowest affinity to HBc, followed by the P2-dimer (5) (KD = 1.9 \u00b1 0.4 \u00b5M). Finally, the P1-dimers (6) and (7) displayed sub-micromolar affinities of 312 nM and 420 nM. Thus, P1-, P2-, and SLLGRM-dimers show 83-, 36-, and 27-fold increased affinities compared to their monomeric counterparts.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig3-v1.jpg)\n\n**Figure 3.:** (A) Chemical structures of the dimeric peptides, all contain the core binding sequence -SLLGRM and share the same PEG linker and a lysine as the branching element of the dimer. (B) Exemplary isothermal calorimetric titration (ITC) thermograms showing the titration heat signature of HBc with dimers. A solution of 1500 \u00b5M (4) was titrated into a solution 150 \u00b5M HBc. A solution of 125 \u00b5M (5) was titrated into a solution 25 \u00b5M HBc. A solution of 200 \u00b5M (6) was titrated into a solution 25 \u00b5M HBc. A solution of 100 \u00b5M (7) was titrated into a solution 25 \u00b5M HBc. (C) The peptide dimers display low micromolar to sub-micromolar affinity to HBc, the affinity increases with the elongation of the binding sequence. (D) Sequence requirements of the HBc Spike binding site. Full positional scan of the P1 peptide sequence in microarray format, in which each residue was varied to each other proteogenic amino acid. Note that a drop in binding intensity upon variation of the core motif SLLGRM (highlighted in bold) substantiates its critical involvement in HBc binding. Refer to Supplementary file 3 for the corresponding absolute grayscale values. Affinity gains observed for exchanging positively charged for negatively charged amino acids may be assay-specific false-positives as highlighted previously (Makbul et al., 2021a).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (A) 0.1 mM solution of the scrP1dC-dimer (scrambled version of the P1dC-dimer) was titrated into a solution of 0.025 mM HBc. (B, C) 0.1 mM solutions of scrP1dC-dimer and P1dC-dimer were titrated into buffer A as additional controls. In all cases no heat change was examined, validating the lack of HBc\u2013scrambled peptide interaction and excluding residual binding interactions from the handle or linker. (D) Heat fluctuations from Figure 3B on identical y-axis scaling.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** The asymmetric unit of HBc capsids (T = 4) consists of a tetramer which is composed of the A/B (closest to the fivefold symmetry axes in the icosahedron) (in blue) and the C/D-dimer (closest to the threefold symmetry axes) (in red). The peptide moiety of the dimers is depicted as yellow filled circles connected by a flexible PEG linker symbolized as a dotted line. Peptide dimers interact with the asymmetric unit in four different states (S1, S2, S3, and S4). The concentration of every state is dictated by the energetics of the respective state and the concentration of the peptide-dimer. At low concentrations, S1 and the possible degenerative permutations could be expected to be favored and at high concentrations S4. For the sake of simplicity, only a single (abstract) asymmetric unit is depicted here, which represents capsid with 60 asymmetric units.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Assessment of turbidity of capsid solutions induced by peptide dimers. The optical densities (OD) of HBc solutions (10 or 50 \u00b5M) with and increasing peptide-dimer concentrations were measured at a wavelength of 350 nm and plotted against peptide-dimer concentrations. All peptides showed increased turbidity with increasing concentrations, with P1 (7) and P2 (5) dimers inducing turbidity at low micromolar concentrations, while the SLLGRM dimer (4) induced turbidity at high micromolar concentrations.\n\nThe significant increase in affinity of the P1-dimer over the monomer, by almost two orders of magnitude, may not be solely attributed to binding to two sites simultaneously. Once the P1-dimer binds, it can interact with up to four binding partners in its vicinity (Figure 3\u2014figure supplement 2; Wynne et al., 1999). This may enable detachment and immediate reattachment to a nearby binding partner, further enhancing the local concentration and the overall binding strength of the P1 dimer.\n\nNotably, while performing the ITC titrations we have noticed fast fluctuations of the heat signature baseline across the tested ligands (Figure 3, Figure 3\u2014figure supplement 1), at least for the P1 dimer this phenomenon may be attributed to aggregation. To rule out any non-specific interactions caused by the PEG linker or handle for both the geranyl dimers as well as the P1/2 dimers, a scrambled dimeric peptide was used as a negative control. This scrambled peptide showed no detectable binding (Figure 3C), thereby confirming that the observed binding is specific to the designed peptide sequence and not influenced by the linker or other structural components.\n\nTo further substantiate and quantify a possible dimer-induced HBc aggregation, we next performed a turbidity assay (Zhao et al., 2016). We found that P1 dimer induces turbidity of a HBc solution already at 1:10 equivalents of HBc, whereas the P2 dimer was slightly less potent and the SLLGRM dimer did not induce turbidity at the same conditions and further required significantly higher concentrations ratio relative to HBc (Figure 3\u2014figure supplement 3). To shed light on the seemingly sequence-specific aggregation properties of the different dimers, we analyzed the binding of 240-point mutated P1 peptide variants in array format (Figure 3D, Supplementary file 3). The analysis recapitulated our earlier resolved sequence requirement for HBc binding and substantiated that the minimal sequence SLLGRM is the major mediator of HBc binding. Importantly, it further indicates that the additional N-terminal residues in P1 sequence are neither conserved nor critically required for binding despite their importance in inducing HBc aggregation.\n\n### P1dC aggregates HBc in living HEK293 cells\n\nThe sub-micromolar affinity of the P1-dimer, along with its ability to induce capsid aggregation in vitro, prompted us to evaluate its effect on HBV core protein in living cells. To adapt the peptide for the intracellular delivery, we synthesized a C-terminally cysteinated version of P1-dimer, P1dC (7) (Figure 3A), and its scrambled counterpart scrP1dC scr(7), as well as a thiol-reactive polyarginine-based cell penetrating peptide (CPP), containing a cysteine, with a 5-thio-2-nitrobenzoic acid (TNB)-modified thiol (Figure 4A, Appendix 1). At the core of this intracellular delivery method is the in situ conjugation of the cargo molecule to a molar excess of a CPP via a disulfide bond, and the application of this reaction mix on living cells. The excess of the CPP over the active compound enable the reaction of CPP-thiols with the cellular surface, facilitating the penetration of the cargo-CPP conjugate. In turn, the disulfide bond between CPP and the cargo is reduced in the cytosol, separating the cargo from the CPP, allowing unhindered activity of the cargo molecule within the cell (Figure 4B; Schneider et al., 2021a; Schneider et al., 2021b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig4-v1.jpg)\n\n**Figure 4.:** (A) A polyarginine cell-penetrating peptide containing a cysteine with a TNB-activated thiol (gray highlight (8)). (B) The live cell experiment flow. First, mammalian cells are transfected with HBc coding plasmid. Then, after the cells express the protein, a mix of (8) and (7) is applied. The excess CPP facilitates membrane permeation, allowing (7) to enter the cell after a brief incubation. Once inside, (7) is separated from the CPP and can interact with the capsids. (C) After 1 hour incubation with (7) or scr(7), the cells were immediately washed, fixed, and labeled with anti HBc mAb16988 and a secondary DyLight650 conjugated antibody. The cells were visualized on wide-field fluorescent microscope with identical conditions and are presented with the same grayscale range. Transfected and untreated cells display diffuse HBc distribution, with clear fluorescence at the nucleus. Transfected cells treated with (7) display bright aggregates, whereas transfected cells treated with scr(7) have similar diffuse labeling as the untreated cells. Non-transfected cells are non-fluorescent. Scale bar 20 \u00b5m.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Live HEK293 cells expressing HBc were treated with either P1dC or with the scrambled (scr) P1dC analogue together with the cell penetrating peptide. After treatment, the live cells were fixed and labeled with HBc antibody and a secondary DyLight650 conjugated antibody (1:500). The imaging showed HBc aggregates in P1dC treated cells (A), while scrP1dC-treated cells showed little to none aggregates (B). All images shown with identical grayscale range. Scale bar 10 \u03bcm.\n\nTo verify that the P1dC performs similarly to P1-dimer,, we performed another ITC assay to determine the affinity of the compound to HBc. The ITC confirmed that P1dC has an affinity of 420 \u00b1 38 nM, comparable to P1-dimer, while the scrambled peptide did not display binding to HBc (Figure 3, Figure 3\u2014figure supplement 1, Supplementary file 2). Thereafter we transfected mammalian cells (HEK293) with a plasmid coding for HBc. The cells expressed the protein for 2 days and were then treated for 1 hour with the thiol-activated cell penetrating peptide and P1dC or the respective negative control peptide scrP1dC (Figure 4B). Afterward, the cells were immediately washed and fixed and HBc was visualized with anti-HBc antibody and a secondary DyLight650 conjugated antibody. Transfected but otherwise untreated cells showed a homogeneous distribution of recombinant HBc molecules in the nucleus and to a lesser extent in the cytoplasm (Figure 4C). Yet, upon administration of 10 \u00b5M of P1dC (7), we observed aggregates of HBc (in the form of large bright spots) within the cells (Figure 4C, Figure 4\u2014figure supplement 1). At a concentration of 10 \u00b5M, the scrambled dimer scrP1dC did not induce aggregation and the distribution of HBc remained largely homogenous.\n\nOur live cell experiments have corroborated our in vitro findings, providing us a visual proof of P1dC-mediated HBc aggregation in a living cell. Thus, the peptide dimer causes an aggregation that resembles the HAP induced aggregation of the core protein and, like CAMs, can be expected to have the potential to disrupt the HBV life cycle.\n\n### Cryo-EM confirms peptide-induced HBc aggregation\n\nTo affirm the capsid-aggregation property of our peptide dimers, we incubated solubilized purified capsid-like particles (CLPs, spherical capsid-like HBc multimers purified from Escherichia coli) with an excess of SLLGRM-dimer or P1dC, applied them on carbon grids, and imaged them using cryo-EM. The effect of peptide dimers on CLPs was already seen on the microscale cryo-EM images (Figure 5\u2014figure supplements 1 and 2), with P1dC inducing large protein aggregates with multimicron diameter. The less potent SLLGRM-dimer also induced visible aggregation, although with smaller aggregate size, while geraniol-treated samples showed minimal aggregation, and the smallest observed aggregate sizes. In the nanoscale, we observed clumped CLPs (Figure 5\u2014figure supplement 3) and resolved the binding of both peptide dimers to the spike tips (Figure 5, Figure 5\u2014figure supplement 3). The densities corresponding to bound peptide-dimers in both EM-reconstructions have volumes, which can accommodate a peptide chain of approximately six amino acid residues (Figure 5, Figure 5\u2014figure supplement 3).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig5-v1.jpg)\n\n**Figure 5.:** Close-up of the surface representation of the EM-maps of capsid-like particle (CLP) incubated with geraniol (2), with SLLGRM-dimer (4) and P1dC (7). (A) The surface of the map is colored according to the local resolution. The map of (7) has a lower overall resolution, which is consistent with the lower number of particles in the reconstruction (Supplementary file 4). In all three maps the tips of the spikes are less well resolved than the capsid shell regardless of whether peptides are bound or not. This is in line with the general flexibility of the protruding spikes in HBc-CLPs (B\u00f6ttcher et al., 1998; Hadden et al., 2018). (B) The surface of the maps is colored according to the relative occupancy based on the gray value distribution as determined with OccuPy (Forsberg et al., 2023). Low relative occupancy cannot be distinguished from local flexibility. As the tips of the spike are flexible, they show generally lower occupancy than the protein shell. Comparing the relative occupancies in samples incubated with (4) and (7) suggests a lower occupancy with (4) than with (7). (C) Fit between the model and the map (gray, translucent) at the tips of spikes. Binding of an (4) or of (7) splays the helices at the tips apart similar as previously reported for binding of a P2-monomer (Makbul et al., 2021a). (4) binds to both quasi equivalent sites in contrast to SLLGRM-monomers, which binds only to the CD-dimer and does not show such a prominent splaying (Makbul et al., 2021a). Geraniol binds at the center of the spikes and does not change the conformation at the tips of the spikes.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (A) CLPs with bound geraniol, (B) HBc-CLPs with bound SLLGRM-dimer, and (C) HBC-CLPs with bound P1dC. (a) shows a representative micrograph. All micrographs are shown at the same scale; (b) shows the 2D-class averages of the five most populated classes after automated template picking. All class averages are shown at the same scale; (c) shows a close-up of the surface representation of the final map after post-processing with relion (filtered by Fourier shell correlation [FSC], B-factor sharpened). One unit cell is colored according to the density covered by the model (HBc chains A, B, C, D in blue, cyan, yellow, and red respectively) and binders (geraniol, SLLGM-dimer and P1dC in green); (d) FSC plot of the final map. FSC = 0.143 is marked by a thin, solid line. Green curve: FSC between unmasked half-maps; blue curve: FSC between masked half-maps; red curve: FSC between phase-randomized masked half-maps; black curve: FSC corrected for the contribution of the mask.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** Low-magnification cryo-EM images of CLPs + P1 dC (7) (A), (B) CLPs + SLLGRM-dimer (4), and (C) CLPs + geraniol (2). The micrographs are part of the grid-atlas of the respective data acquisition. Each image shows four meshes of the respective grid atlas at a similar ice thickness. For representation, the images were aligned to show a similar orientation of the meshes. CLP aggregates are seen as dark speckles (yellow arrow). The size of the aggregates is largest in P1dC-treated samples, while aggregates are frequent and smaller in samples treated with SLLGRM-dimer. Geraniol treated samples have very few aggregates, which are generally smaller than 1 \u00b5m.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/98827/elife-98827-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** HBc capsids with bound SLLGRM-dimer (4) or P1dC-dimer (7) imaged by electron cryo-microscopy. (A) and (B) show selected areas of micrographs of CLPs treated with (4) or with (7). One exemplary aggregate of multiple HBc capsids is indicated by an arrow in each micrograph. (C) and (D) show close-ups of the asymmetric unit of HBc capsids with bound SLLGRM dimers or with bound P1dC. Models of a single asymmetric unit consisting of two HBc dimers are fitted into the asymmetric unit. Both maps show a density at the tips of the spikes (arrow) that accounts for approximately six amino acids of the peptide-dimer. The flexible linker between the peptides was not resolved. The position of the symmetry axes of the icosahedral capsid is labeled with numbers in (C).\n\nThe asymmetric unit of HBc capsids (T = 4) is a tetramer consisting of an A/B- and C/D-dimer, which have slightly different 3D structures. Interestingly, the SLLGRM-dimer binds the A/B-dimer as well as the C/D-dimer, in contrast to the monomeric SLLGRM, which binds only to the tip of the C/D-dimer (Makbul et al., 2021a; Figure 5), in line with the multivalent binding and the higher affinity we measured with ITC. A possible mode of action of the peptide-dimer-induced aggregation is shown in Figure 1B.\n\nThe live cell experiments showed the formation of HBc aggregates upon incubation with P1dC. Yet, in live cells HBc may exist as a monomer, a dimer, a multimer, or a whole capsid; therefore, the observed aggregates were not necessarily formed by whole capsids. The cryo-EM experiment, however, provides confirmation that the peptide dimers have the capability to interact with complete CLPs, an important feature, which implies that the dimers have the potential to affect intact capsids upon cell infection.\n\n## Discussion\n\nIn this study, we focused on the HBV core protein, a protein essential for HBV proliferation and virulence. We explored the druggability of two alternative, non-HAP, binding pockets on the HBc ultrastructure and developed synthetic dimers that target these pockets with sub-micromolar affinity, resulting in the aggregation of HBc.\n\nDM and geraniol were selected as the water-soluble mimetics of the natural post-translational modifications of HBV/HDV components. We have demonstrated their ability to interact with the vital central hydrophobic pocket of HBV and showed a binding affinity improvement upon dimerization of the geraniol ligand. Higher affinity ligands may be developed into even more potent binders of the hydrophobic pocket using the outlined linker design, potentially exerting a pharmacological effect on HBV (Briday et al., 2022).\n\nEarlier works demonstrated that point mutations within the HBc can significantly affect HBV infectivity, particularly through disruptions in HBc interactions (Yuan et al., 1999b; Bruss, 2007; Ponsel and Bruss, 2003; Koschel et al., 1999). These mutations at the base of the spike and the groove between spikes highlight the importance of these regions in viral replication. Using our structural knowledge of the capsid, particularly the distances between the spikes, we designed peptide dimers with the ability to simultaneously bind to neighboring spikes on the same capsid or attach to two distinct capsids (Figure 3\u2014figure supplement 2). Our in vitro assays demonstrated that these peptide dimers display a robust affinity ranging from low micromolar to sub-micromolar levels (Figure 3 and Supplementary file 2). Specifically, the peptide dimer (P1dC) with sub-micromolar affinity (KD = 420 \u00b1 40 nM) is a promising candidate for a lead molecule for new a new class of CAMs. The peptide dimer, but not its scrambled dimeric counterpart, induced HBc aggregation in live mammalian cells expressing HBc. An effect resembling the aggregation was observed after a treatment with the classical CAM HAP (Wu et al., 2013).\n\nAn intriguing possibility would be that the spike and hydrophobic pocket interact or influence each other when binding different ligands. Molecular dynamics simulations reveal notable flexibility in HBV capsids, suggesting that structural asymmetry might impact ligand binding. Structural analysis of the HBV capsid shows that P2 peptide binding to the capsid spikes increases flexibility, while exerting a minimal impact on the underlying hydrophobic pocket. However, TX100 binding within the hydrophobic pocket influences the spike tips by flipping Phe97, whereas geraniols bound within the same pocket do not induce this change, indicating that this interaction is ligand-specific. Nevertheless, simultaneous application of spike binders and hydrophobic pocket ligands that modify spike conformation may offer valuable structural and functional insights into HBV capsids.\n\nAn intriguing possibility would be that the spike and the hydrophobic pocket could interact or exert an effect on each other upon binding various ligands. Molecular dynamics simulations revealed significant flexibility of the HBV capsids and suggested that structural asymmetry may affect ligand binding (Pavlova et al., 2018; Perilla et al., 2016; Pavlova et al., 2022). HBV capsid structural analysis showed that P2 peptide binding to the capsid spikes increases flexibility (Makbul et al., 2021a) while exerting a minimal impact on the hydrophobic pocket beneath. However, TX100 binding to the hydrophobic pocket affected the spike tips by flipping Phe97 (Makbul et al., 2021b) in the pocket, but the geraniols resolved within the hydrophobic pocket did not flip Phe97, thus suggesting that this cross-talk is ligand-specific. Nevertheless, a simultaneous application of spike binders and hydrophobic pocket ligands able to affect the spike conformation may provide valuable structural and functional insights into HBV capsids.\n\nWhile our results are highly encouraging, application in complex organisms may require alternative delivery methods, investigation of HBV proliferation in infection models, and further study of immunogenicity and stability. Future studies should thoroughly assess the cytotoxic potential of peptide-induced HBc aggregation to determine any adverse effects at the cellular level, which will be crucial for evaluating the therapeutic potential of these compounds. Long-term cytotoxicity studies on cellular viability are essential to optimize these binders for clinical applications. Although our study targets two ligand-binding pockets on the capsid surface, a direct effect on HBV infectivity remains to be demonstrated. Prior mutational data, however, suggest that even minor perturbations, such as ligand binding, could mimic deleterious mutations and impair viral function. This study\u2019s insights into the unexplored pharmacological potential of these binding pockets and the compounds targeting them may lead to the development of new agents that impact viral capsids. Unlike classical CAMs, the peptide dimers exhibit a different mechanism of action and may act synergistically with CAMs or other antivirals. Further biological investigations will clarify the antiviral potential, applicability, and potency of compounds targeting the non-HAP binding pockets.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Gene (hepatitis B virus genome)</td>\n      <td>CLP coding region; complement (733.1371)</td>\n      <td>GenBank: V01460.1</td>\n      <td></td>\n      <td>Genotype D; strain ayw</td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>HEK293</td>\n      <td>DSMZ</td>\n      <td>Cat# ACC 305RRID:VCL_0045</td>\n      <td>Epithelial morphology; embryo kidney</td>\n    </tr>\n    <tr>\n      <td>Transfected construct (human)</td>\n      <td>pEGFP-C2</td>\n      <td>Clontech</td>\n      <td></td>\n      <td>Donor vector for CLP expression</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Mouse anti-Hepatitis B Virus Antibody; core Antigen; clone C1-5, monoclonal; a.a. 74\u201389</td>\n      <td>MilliporeSigma</td>\n      <td>Cat# MAB16988RRID:AB_11212378</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Antibody</td>\n      <td>Goat anti-Mouse IgG (H+L), polyclonal</td>\n      <td>Invitrogen</td>\n      <td>Cat# 84545RRID:AB_2633280</td>\n      <td>IF (1:500)</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>n-Decyl-\u03b2-D-maltopyranoside (DM)</td>\n      <td>Anatrace</td>\n      <td>Cat# D310</td>\n      <td>Used in binding assays.</td>\n    </tr>\n    <tr>\n      <td>Software algorithm</td>\n      <td>Relion 3.1. and 4.0</td>\n      <td>https://github.com/3dem/relion; Scheres, 2012a; Scheres, 2012b</td>\n      <td></td>\n      <td>Image processing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Cryosparc 4.0</td>\n      <td>https://Cryosparc.com/</td>\n      <td></td>\n      <td>Image processing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCorr2</td>\n      <td>Zheng et al., 2017</td>\n      <td></td>\n      <td>Movie processing</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Phenix</td>\n      <td>https://phenix-online.org/</td>\n      <td></td>\n      <td>Model building</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Coot</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/binaries/</td>\n      <td></td>\n      <td>Model building</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera</td>\n      <td>https://www.rbvi.ucsf.edu/chimera</td>\n      <td></td>\n      <td>Preparation of figures from pdb models and EM-maps</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MicroCal ITC200 Analysis</td>\n      <td>Malvern Panalytical, Malvern</td>\n      <td></td>\n      <td>Processing of the ITC dataimplemented in Origin and supplied with the MicroCal iTC200</td>\n    </tr>\n  </tbody>\n</table>\n\nUnless otherwise noted, all resins and reagents were purchased from IRIS biotechnologies or Carl Roth and used without further purification. All solvents were HPLC grade. All water-sensitive reactions were performed in anhydrous solvents under positive pressure of argon.\n\n### Peptide synthesis\n\nThe peptides were produced using standard solid-phase peptide synthesis with Fmoc chemistry. Shortly, 2-chlorotrityl resin (1.6 mmol/g) was swollen in dry dichloromethane (DCM) for 30 minutes, then, the desired amino acid (AA) (1eq) and the Boc-Gly-OH (1eq) with 4 eq. of dry N,N-diisopropylethylamine (DIEA) were added to the resin slurry. After overnight (ON) reaction at room temperature (RT) with agitation, the resin was capped with MeOH and washed with DCM and dimethylformamide (DMF). For the synthesis of cysteinated peptides, a 1% divinylbenzene Wang resin, preloaded with a 9-fluorenylmethyloxycarbonyl-Cysteine(Trityl)-OH [Fmoc-Cys(Trt)-OH] (0.4 mmol/g), was swollen in DMF for 30 minutes. Then, regardless of the resin type, Fmoc was removed using 20% piperidine in DMF solution and the resin was washed with DMF and DCM. After washes, the peptide chain was elongated by adding the desired amino acid (AA, 3 eq.) with ethylcyanohydroxyiminoacetate (Oxyma, 3 eq.) and N,N'-diisopropylcarbodiimide (DIC, 3 eq.). Capping was done with DIEA (50 eq.) and acetic anhydride (50 eq.) in N-methyl-2-pyrrolidone for 30 minutes. Coupling efficiency was monitored by measuring the absorption of the dibenzofulvene\u2013piperidine adduct after deprotection. The peptide chain was elongated with further identical deprotection-conjugation cycles and after the completion the peptides were cleaved from the resin using a cocktail of 94% trifluoracetic acid (TFA), 3% H2O, 3% triisopropylsilane (TIPS), for 4 hours at RT. The peptides were precipitated in ice-cold ether and then purified with semi-preparative HPLC and analyzed by LC-MS, as described below.\n\n### Geranyl-dimer synthesis\n\n2-Chlorotrityl resin (1.6 mmol/g) was swollen in dry DCM for 30 minutes. Then, 4 equivalents of Fmoc-Lys(Fmoc)-OH and 8 equivalents of dry DIEA were added to the resin slurry. The reaction was carried out ON at RT with agitation. After completion, the resin was capped with MeOH and washed with DCM and DMF. Fmoc deprotection was performed using a 20% piperidine solution in DMF, followed by thorough washing with DMF and DCM. The linker chain was then elongated by coupling 8-(9-fluorenylmethyloxycarbonyl-amino)\u20133,6-dioxaoctanoic acid (Fmoc-O2Oc-OH, 6 eq.) with Oxyma (6 eq.) and DIC (6 eq.). Capping was performed using 50 equivalents of DIEA and acetic anhydride in N-methyl-2-pyrrolidone for 30 minutes. Coupling efficiency was monitored by measuring the absorption of the dibenzofulvene\u2013piperidine adduct after deprotection. The linker chain was further extended through two additional deprotection-conjugation cycles with Fmoc-O2Oc-OH. Subsequently, conjugation with geranic acid was carried out under similar conditions. The resulting dimer was cleaved from the resin using a 20% hexafluoroisopropanol solution in DCM. The solvents were removed via rotary evaporation, and the compound was purified using semi-preparative HPLC and analyzed by LC-MS, as described below.\n\n### 5-(thio)-2-nitrobenzoate conjugation to the thiolated cell penetrating peptide (CPP)\n\nA 10-mer oligoarginine peptide connected to a cysteine (C-RRRRRRRRRR) was reacted with 10 equivalents of 5,5-dithio-bis-(2-nitrobenzoic acid) in 1:1 DMF: 0.1 M phosphate buffer for 30 minutes with agitation at RT. Then the reaction mixture was directly injected in semi-preparative HPLC, purified, and analyzed by LC-MS, as described below.\n\n### Purification and characterization of peptide-based probes\n\nThe compounds were purified from the crude reaction mix by reverse-phase HPLC using a water acetonitrile gradient with 0.1% formic acid (FA). Semi-preparative HPLC was performed on Shimadzu Prominence equipped with a diode-array detector (DAD) system using a C18 reverse-phase column (Phenomenex Onyx Monolithic HD-C18 100\u00d74.6 mm or Onyx Monolithic C18 100\u00d710 mm). Purity and structural identity were verified using a DAD equipped 1260 Infinity II HPLC with a C18 reverse-phase column (Onyx Monolithic C18 50\u00d72 mm), coupled to a mass selective detector single quadruple system (Agilent Technologies). Compounds analyzed in ESI+ mode were run in a water-acetonitrile gradient with 0.1% FA. Compounds analyzed in ESI- mode were run in a 10 mM pH = 7 ammonium bicarbonate \u2013 acetonitrile gradient.\n\n### Protein expression and purification HBc CLPs\n\nThe expression and purification of CLPs were done as previously described (Makbul et al., 2021b). Shortly, the recombinant HBV core protein (HBc) was overexpressed in E. coli (BL-21) and formed CLPs. CLPs were purified by fractionated ammonium sulfate precipitation followed by sucrose density gradient centrifugation. The major capsid type (ca. 95%) was formed by 240 subunits (Triangulation: T = 4).\n\n### Isothermal titration calorimetry (ITC)\n\nSamples (ca. 8 mL) of purified capsids were filtered (Rotilabo syringe filter with a pore size of 220 nm, Carl Roth GmbH Co. KG, Karlsruhe, Germany), dialyzed against 1.4 L buffer A (40 mM HEPES, 200 mM NaCl, 1 mM MgCl2, 1 mM CaCl2, pH 7.5) using a dialysis membrane tube (Spectra Por Biotech cellulose ester tube, 1 MDa MWCO, Spectrum Laboratories, Inc, Rancho Dominguez, CA, USA). The dialysis was performed at 4\u00b0C under gentle stirring for 16 hours ON. The next day, the dialyzed sample was removed from the dialysis tube and concentrated in a centrifuge using a concentrator (30 kDa MWCO Spin-X UF 6 mL, Corning Inc, Corning, NY, USA). The concentrate was filtered (centrifugal filter unit Ultrafree MC, pore size of 100 nm, Merck KGaA, Darmstadt, Germany) and the concentration determined by the Bradford assay (Roti Nanoquant, Carl Roth GmbH Co. KG).\n\nThe peptide dimers were dissolved in the buffer from the dialysis of the capsids. In this buffer, SLLGRM dimer and P2 dimer have solubilities of at >8 mM and the P1 dimer of >2 mM. 4 mM geraniol was titrated into a solution of 210 \u00b5M HBc.\n\nA solution of 2 mM geranyl dimer was titrated into a solution 200 \u00b5M HBc. 1.6\u20132 mM solutions of DM were titrated into solutions with 90, 100, and 150 \u00b5M HBc, respectively.\n\nBefore filling the ITC cell and syringe, all samples were degassed for 10 minutes at 20\u00b0C (ThermoVac, Malvern Panalytical, Malvern, Worcestershire, UK). Solutions of peptide dimers were titrated into solutions of capsids using a MicroCal iTC200 instrument (Malvern Panalytical) according to the specifications in Supplementary file 1. The resulting thermograms and isotherms were processed and fitted using the Origin software supplied with the iTC200 instrument. The thermograms were integrated and the corresponding isotherms were fitted using a one-site model. The peptide and geranyl dimers are bivalent and have 120 or 240 potential binding sites on CLPs, respectively. The two binding sites of peptide and geranyl dimers are not identical but very similar. This also true for the binding sites on capsids, so the binding energetics of the dimers are very similar and are best represented by a one-site model. All obtained thermodynamic parameters refer to concentrations of monomeric HBc. All ITC experiments were complemented with control experiments where solutions of peptide dimers were titrated into the dialysis buffer.\n\n### Turbidity assay\n\nAll peptides were dissolved in buffer A (40 mM HEPES, 200 mM NaCl, 1 mM MgCl2, 1 mM CaCl2, pH 7.5) and the capsid solutions were filtered once (centrifugal filter unit Ultrafree MC, pore size of 100 nm, Merck KGaA). The concentrations of the P1, P2, and SLLGRM dimers were varied between 0.1 and 100 \u00b5M, and the concentration of HBc was kept constant at 10 \u00b5M for the P1 and P2 dimer and at 50 \u00b5M for the SLLGRM dimer. All experiments were performed using a standard photometer (GENESYS UV/VIS spectral photometer, Thermo Fisher Scientific, Hillsboro, OR, USA) at RT and at a wavelength of 350 nm using disposable UV transparent cuvettes (SARSTEDT AG & Co. KG, Sarstedtstra\u00dfe 1, 51588 N\u00fcmbrecht/Germany).\n\n### Cryogenic grid preparation of capsids in complex with peptide-dimers\n\nIn a plasma cleaner (model PDC-002. Harrick Plasma, Ithaca, NY, USA) holey carbon grids (R1.2/1.3, 300 mesh Cu grids, Quantifoil Micro Tools, Jena, Germany) were made hydrophilic by plasma cleaning. This was done at a pressure of 29 Pa for 2 minutes using ambient air as plasma medium at \u2018medium power\u2019 of the instrument. Solutions of purified HBc (200 \u00b5M) in complex with the P1dC- and the SLLGRM-dimer (each 400 \u00b5M) were prepared in buffer A. After the end of ITC experiment with geraniol and HBc (Figure 2), a sample from the cell of the ITC instrument was retrieved and used for freezing grids. 3.5 \u00b5L aliquots of each sample were applied onto the grids. For plunge freezing of grids, ethane was used as medium (liquefied by liquid nitrogen) with the help of a Vitrobot (mark IV, FEI Company, Hillsboro, OR, USA) using Whatman filter papers (type 541). The Vitrobot had the following settings: no wait and drain times, 6 s of blot time, blot force of 25 and a nominal humidity of 100%. The frozen grids were stored in liquid nitrogen for at least one night before being used for image acquisition.\n\n### Cryo-EM and image processing\n\nCryo-EM was done as previously described (Makbul et al., 2021b). Shortly, movies were acquired with the software EPU on a Krios G3 electron microscope equipped with a Falcon III camera (Thermo Fisher Scientific) in integrating mode at a magnification of 75,000 with an accelerating voltage of 300 kV. The total exposure was 40 e\u2212/\u00c5\u00b2 and was fractionated over 20 fractions. For HBc CLPs with bound P1dC, three movies were acquired per hole and one hole was acquired per stage position. For HBc CLPs with bound SLLGRM dimers or bound geraniol, at each stage position three movies were acquired per hole from the central hole and from the four closest neighboring holes. The different movie positions at the same stage position were centered with image shift. Movies were motion corrected, exposure weighted, and averaged with MotionCorr2. Figure 5\u2014figure supplement 1A shows representative corrected movie averages, which were imported to Relion for further processing. Each image shift position was treated as a different optics group in the subsequent image processing. Image processing was done with Relion 3.1 or Relion 4. As previously described (Makbul et al., 2021b), imposing icosahedral symmetry. At the end of the image processing with Relion (for CLPs with bound P1dC or SLLGRM-dimers), particle images were imported into CryoSparc 4.02 and were further refined with none uniform refinement (Punjani et al., 2020), including global and local CTF refinement and Ewald\u2019s sphere correction. Final maps were filtered with deepemhancer, or B-factor sharpened (CryoSPARC \u2018Sharpen\u2019 or \u2018relion_postprocess\u2019). The resolution of the final maps was estimated by Fourier shell correlation (FSC = 0.143; after gold standard refinement) with \u2018relion_postprocess\u2019 (Figure 5\u2014figure supplement 1). Parameters of the image acquisition and the processing are summarized in Supplementary file 4.\n\n### Modeling of cryo-EM maps, refinement of PDB files and their validation\n\nFor modeling of the EM densities of HBc in complex with the peptide dimers, the PDB file 7od6 (Makbul et al., 2021a) was used as a starting model. This model represents the asymmetric unit of the HBc capsids with T = 4 packing. After slight modifications, the PDB model was fitted into the EM-map as a rigid body and refined iteratively using the software packages Coot (Casa\u00f1al et al., 2020) and Phenix (Liebschner et al., 2019) and validated with MolProbidity (Prisant et al., 2020). The resolution of the density at the tips of the capsids which we attributed to the binding segments of the peptide dimers was low. Therefore, these densities could only be modeled as poly-alanine chains. All figures showing EM-densities with or without the corresponding PDB models were prepared with Chimera (Yang et al., 2012).\n\n### Cloning\n\nFull-length wild-type (fl wt) HBc (genotype D; strain ayw; GenBank: V01460.1, MQLFHLCLIISCSCPTVQASKLCLGWLWGMDIDPYKEFGATVELSFLPSDFFPSVRDLLDTASALYREALESPEHCSPHHTALRQAILCWGELMTLATWVGVNLEDPASRDLVVSYVNTNMGLKFRQLLWFHISCLTFGRETVIEYLVSFGVWIRTPPAYRPPNAPILSTLPETTVVRRRGRSPRRRTPSPRRRRSQSPRRRRSQSRESQC) (Galibert et al., 1979) was cloned into the pEGFP-C2 vector (Clontech) using Gibson assembly Gibson, 2011 by replacing the gene sequence coding for eGFP. The vector and insert were amplified by PCR and purified by gel extraction (FastGene Gel/PCR Extraction Kit, Nippon Genetics Europe GmbH, D\u00fcren, Germany). The purified PCR products were assembled into a single plasmid construct using a home-made Gibson assembly reaction mixture. An aliquot of the reaction product was transformed into XL1 blue cells, plated onto LB-amp agar-plates, and grown at 37\u00b0C ON. Six colonies were used for the inoculation of 6 \u00d7 5 mL LB-amp medium. The cell cultures were grown under vigorous shaking in an incubator at 37\u00b0C ON. The next day, the plasmid DNA was extracted from the cell cultures (FastGene Plasmid Mini Kit, Nippon Genetics Europe GmbH) and sequenced by Sanger sequencing (Microsynth Seqlab GmbH, G\u00f6ttingen, Germany). A plasmid construct containing the correct gene sequence of HBc was used for endotoxin-free plasmid DNA preparation (NucleoBond Xtra Midi EF, Macherey Nagel GmbH & Co. KG, D\u00fcren, Germany).\n\n### HEK293 cell cultures and transfection\n\nHEK293 cells were cultured in DMEM (Gibco), supplemented with GlutaMax and pyruvate (Gibco), 10% fetal bovine serum (FBS) (Gibco) and 1% Penicillin/Streptomycin (Sigma) at 37\u00b0C and with 5% CO2. The cells were plated on 0.15-mm-thick 18 mm glass coverslips coated with 35 \u00b5g/mL poly-d-lysine in a 12-well plate and were transfected with the cloned 1 \u00b5g plasmid DNA per coverslip using polyethylenimine (PEI). The transfection was performed at 60\u201380% confluence. Shortly before transfection, the medium was changed to fresh DMEM. The DNA was added to 100 \u00b5L DMEM without additives and mixed, 4 \u00b5L fresh PEI (1 mg/mL) was added, mixed immediately, and incubated for 20 minutes at RT. The transfection mix was pipetted drop-wise on cells while swirling and incubated ON. The medium was changed to fresh DMEM with 2% FBS after 12\u201324 hours, and on the following day the cells were used for live assays, then fixed and stained.\n\n### Cell assays and immunocytochemistry\n\nLive HEK293 cells expressing HBc were incubated in DMEM with 10 \u00b5M P1dC and with 10 \u00b5M of the scrambled version of the peptide, both peptides in situ activated with the reactive CPP. After 1 hour incubation at 37\u00b0C, the treated and untreated live HEK293 cells expressing HBc and the untransfected HEK293 cells were washed and fixed with 0.1 M sodium phosphate buffer pH 7.4 containing 4% paraformaldehyde (EM grade, Polysciences) and 1% sucrose for 10\u201320 minutes at 37\u00b0C. After three rinses in phosphate-buffered saline (PBS), the cells were permeabilized with 0.1% Triton X-100 in PBS for 10 minutes at RT, rinsed again and blocked for 1 hour in PBS with 3% bovine serum albumin. Then, primary mAb16988 (#6B9780, MilliporeSigma) and secondary DyLight650 (#84545, Invitrogen) antibodies were applied sequentially with 1:500 dilution in blocking solution for 1 hour.\n\n### Wide-field fluorescence microscopy\n\nThe coverslips with the cell samples were inserted in an imaging chamber (Ludin Chamber Type 1, Life Imaging Services) and imaged in PBS. The measurements were taken from distinct samples with a sample size \u22652 for each group. A series of images, used to generate the datapoints, were acquired from different regions of the sample, each region having a distinct group of cells.\n\nThe samples were imaged on an inverted Leica DMI6000B microscope with a \u00d7100 oil-immersion objective (NA 1.49) using a Leica DFC9000 GTC VSC-05760 sCMOS camera (16-bit, image pixel size: 130 nm). The 628/40 excitation and 692/40 emission filter was used for DyLight650, 10 images were acquired at a frame rate (exposure time) of 100 ms, and constant illumination intensity to ensure comparability (n\u226510).\n\n### Automated solid-phase peptide synthesis\n\n\u03bcSPOT peptide arrays (Dikmans et al., 2006) were synthesized using a MultiPep RSi robot (CEM GmbH, Kamp-Lindford, Germany) on in-house produced, acid-labile, amino-functionalized, cellulose membrane discs containing 9-fluorenylmethyloxycarbonyl-\u03b2-alanine (Fmoc-\u03b2-Ala) linkers (average loading: 130\u2009nmol/disc \u2013 4\u2009mm diameter). Synthesis was initiated by Fmoc deprotection using 20% piperidine (pip) in DMF followed by washing with DMF and ethanol (EtOH). Peptide chain elongation was achieved using a coupling solution consisting of preactivated amino acids (aas, 0.5\u2009M) with ethyl 2-cyano-2-(hydroxyimino)acetate (oxyma, 1\u2009M) and DIC (1 \u2009M) in DMF (1:1:1, aa:oxyma:DIC). Couplings were carried out for 3\u2009\u00d7\u200930 \u2009min, followed by capping (4% acetic anhydride in DMF) and washes with DMF and EtOH. Synthesis was finalized by deprotection with 20% pip in DMF (2\u2009\u00d7\u20094 \u2009\u00b5L/disc for 10 min each), followed by washing with DMF and EtOH. Dried discs were transferred to 96 deep-well blocks and treated, while shaking, with sidechain deprotection solution, consisting of 90% TFA, 2% DCM, 5% H2O, and 3% TIPS (150 \u2009\u00b5L/well) for 1.5\u2009hours at RT. Afterward, the deprotection solution was removed, and the discs were solubilized ON at RT, while shaking, using a solvation mixture containing 88.5% TFA, 4% trifluoromethanesulfonic acid (TFMSA), 5% H2O, and 2.5% TIPS (250 \u2009\u00b5L/well). The resulting peptide-cellulose conjugates (PCCs) were precipitated with ice-cold ether (0.7 \u2009mL/well) and spun down at 2000\u2009\u00d7\u2009g for 10\u2009minutes at 4\u00b0C, followed by two additional washes of the formed pellet with ice-cold ether. The resulting pellets were dissolved in DMSO (250\u2009\u00b5L/well) to give final stocks. PCC solutions were mixed 2:1 with saline-sodium citrate (SSC) buffer (150\u2009mM NaCl, 15\u2009mM trisodium citrate, pH 7.0) and transferred to a 384-well plate. For transfer of the PCC solutions to white-coated CelluSpot blank slides (76\u2009\u00d7\u200926\u2009mm, Intavis AG), a SlideSpotter (CEM GmbH) was used. After completion of the printing procedure, slides were left to dry ON.\n\n### Peptide microarray-binding assay\n\nThe microarray slides were blocked for 60 minutes in 5% (w/v) skimmed milk powder (Carl Roth) PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4, pH 7.4). After blocking, the slides were incubated for 15 minutes with 55 nM (monomer equivalent) of HBc in the blocking buffer, then washed 3\u00d7 with PBS. HBc was detected with a primary 1:2500 diluted mAb16988 (anti-HBV antibody, core antigen, clone C1-5, aa 74\u201389, MilliporeSigma, Darmstadt, Germany) and a secondary 1:5000 diluted HRP-coupled anti-mouse antibody (31430, Invitrogen). The antibodies were applied in blocking buffer for 15 minutes, with three PBS washes between the antibodies and after applying the secondary antibody. The chemiluminescent readout was obtained using SuperSignal West Femto maximum sensitive substrate (Thermo Scientific GmbH, Schwerte, Germany) with a c400 Azure imaging system (lowest sensitivity, 90 s exposure time).\n\nBinding intensities were quantified with FIJI (Schindelin et al., 2012) using the \u2018microarray profile\u2019 plugin (OptiNav Inc, Bellevue, WA, USA). The raw grayscale intensities for each position were obtained for the left and right sides of the internal duplicate on each microarray slide, n = 3 arrays in total. Blank spots were used to determine the average background grayscale value that was subtracted from the raw grayscale intensities of non-blank spots. Afterward, the spot intensities were normalized to the average grayscale value of the 14 replicates of peptide binder P1 (\u2018MHRSLLGRMKGA\u2019).\n",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "1300fca5-f32e-4bfe-b791-0f966732fe98",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mauricio Comas-Garcia, Universidad Aut\u00f3noma de San Luis Potos\u00ed Mexico\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98827.3.sa0](https://doi.org/10.7554/eLife.98827.3.sa0)\n\nThis valuable work presents an interesting strategy to interfere with the HBV infectious cycle as it identifies two previously unexplored HBc-Ag binding pockets. The experimental data is compelling and opens the door to generating and testing novel anti-HBV therapies.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98827.3.sa1](https://doi.org/10.7554/eLife.98827.3.sa1)\n\nSummary:\n\nIn this paper, the authors present an interesting strategy to interfere with the HBV life cycle: the preparation of geranyl and peptides' dimers that could impede the correct assembly of hepatitis B core protein HBc into viable capsids. These dimers are of different nature, depending on the HBc site the authors plan to target. A preliminary study with geranyl dimers (targeting a hydrophobic site of HBc) was first investigated. The second series deals with peptide-PEG linker-peptide dimers, targeting the tips of HBc dimer spikes.\n\nStrengths:\n\nThis work is very well conducted, combining ITC experiments (for determination of dimers' KD), cellular effects (thanks to the grafting of previously developed dimers with polyarginine-based cell penetrating peptide) HBV infected HEK293 cells and Cryo-EM studies.\n\nThe findings of these research teams unambiguously demonstrated the interest of such dimeric structures in impeding the correct HBV life cycle and thus, could bring solutions in the control of its development. Ultimately, a new class of HBV Capside Assembly Modulators could arise from this study.\n\nThere is no doubt that this work could bring very interesting information for people working on VHB.\n\nComments on revisions:\n\nMinor corrections have been made in this revised version of this work, according to the remarks of the reviewers.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98827.3.sa2](https://doi.org/10.7554/eLife.98827.3.sa2)\n\nSummary:\n\nVladimir Khayenko et al. discovered two novel binding pockets on HBc with in vitro binding and electron microscopy experiments. While the geranyl dimer targeting a central hydrophobic pocket displayed a micromolar affinity, the P1-dimer binding to the spike tip of HBc has a nanomolar affinity. In the turbidity assay and at the cellular level, an HBc aggregation from peptide crosslinking was demonstrated.\n\nStrengths:\n\nThe study identifies two previously unexplored binding pockets on HBc capsids and develops novel binders targeting these sites with promising affinities.\n\nWeaknesses:\n\nWhile the in vitro and cellular HBc aggregation effects are demonstrated, the antiviral potential against HBV infection is not directly evaluated in this study.\n",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "8fd456ab-5ccd-431c-9a7f-81cac80b43b5",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C1",
+      "claim": "HBV infection is a major global health problem, with chronic infection leading to liver complications and high death toll.",
+      "claim_type": "EXPLICIT",
+      "source": "The hepatitis B virus (HBV) infection is a major global health problem, with chronic infection leading to liver complications and high death toll.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about HBV's public health impact, drawing from established scientific consensus.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "127e2c1e-1b5e-4e03-ba7f-46cf5d793131",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C2",
+      "claim": "Current treatments such as nucleos(t)ide analogs and interferon-\u03b1 effectively suppress viral replication but rarely cure the infection.",
+      "claim_type": "EXPLICIT",
+      "source": "Current treatments, such as nucleos(t)ide analogs and interferon-\u03b1, effectively suppress viral replication but rarely cure the infection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This statement reflects established knowledge about current HBV treatment outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "c5828374-1bc2-4a44-94f2-e4073ba041e1",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C3",
+      "claim": "A geranyl dimer binds to the central hydrophobic pocket of HBc-dimers with micromolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "We synthesized a geranyl dimer that binds to the central pocket with micromolar affinity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by ITC experimental data presented in the manuscript showing KD values.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "f5f571b3-8a65-46f4-b3d3-246a9d0a59e6",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C4",
+      "claim": "Dimeric peptides bind the spike-tip pocket with sub-micromolar affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "dimeric peptides that bind the spike-tip pocket with sub-micromolar affinity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC measurements showing KD values in the sub-micromolar range for P1 dimers.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "a84a7046-1a1e-42e1-81e2-a7647160469c",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C5",
+      "claim": "Cryo-electron microscopy confirmed the binding of peptide dimers to the capsid spike tips.",
+      "claim_type": "EXPLICIT",
+      "source": "Cryo-electron microscopy further confirmed the binding of peptide dimers to the capsid spike tips and their capsid-aggregating properties.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM structural data showing density at spike tips corresponding to bound peptides.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "0f546db9-6721-4b75-9ef1-4e1634ac5b73",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C6",
+      "claim": "Peptide dimers induce HBc aggregation in vitro.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that the peptide dimers induce HBc aggregation in vitro and in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by turbidity assays and cryo-EM observations showing aggregated capsids.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "98edcaae-2a53-49ab-9685-dea7689dfe6a",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C7",
+      "claim": "Peptide dimers induce HBc aggregation in living cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we show that the peptide dimers induce HBc aggregation in vitro and in living cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence microscopy data showing HBc aggregates in transfected HEK293 cells treated with P1dC.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "4fcfaa38-8642-4150-a700-923658b85147",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C8",
+      "claim": "Among children, the recovery rate from HBV infection is approximately 50%.",
+      "claim_type": "EXPLICIT",
+      "source": "In childhood and infancy, the virus is particularly dangerous as the recovery rate among children is approximately 50%, while among infants infected through perinatal transmission, only 10% will naturally recover, the remainder will develop chronic infection (Thomas, 2019; Block et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Thomas, 2019 and Block et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "87a2c67d-5dc4-422e-be87-8d1d2274f4e4",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C9",
+      "claim": "Among infants infected through perinatal transmission, only 10% will naturally recover from HBV infection.",
+      "claim_type": "EXPLICIT",
+      "source": "In childhood and infancy, the virus is particularly dangerous as the recovery rate among children is approximately 50%, while among infants infected through perinatal transmission, only 10% will naturally recover, the remainder will develop chronic infection (Thomas, 2019; Block et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Thomas, 2019 and Block et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "6e67a47e-cc54-47ed-9b6e-73dc98f38460",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C10",
+      "claim": "There are about 300 million chronic HBV carriers globally.",
+      "claim_type": "EXPLICIT",
+      "source": "With about 300 million chronic carriers and over 800,000 hepatitis-related yearly deaths, chronic hepatitis B is a global health problem (Block et al., 2021; World Health Organisation, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Block et al., 2021 and World Health Organisation, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "17ca1a96-0728-4c05-8ae8-1ed01a92cfc9",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C11",
+      "claim": "There are over 800,000 hepatitis-related yearly deaths.",
+      "claim_type": "EXPLICIT",
+      "source": "With about 300 million chronic carriers and over 800,000 hepatitis-related yearly deaths, chronic hepatitis B is a global health problem (Block et al., 2021; World Health Organisation, 2022)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Block et al., 2021 and World Health Organisation, 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "b179a4da-52c3-4c07-b5c6-820034664820",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C12",
+      "claim": "Nucleos(t)ide analogs compete for binding with natural nucleotide substrates, inhibiting viral protein P.",
+      "claim_type": "EXPLICIT",
+      "source": "NAs compete for binding with the natural nucleotide substrates, inhibiting the viral protein P in charge of the reverse transcription of the viral pre-genomic RNA (pgRNA) into HBV DNA (Men\u00e9ndez-Arias et al., 2014)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citation to Men\u00e9ndez-Arias et al., 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "efc17fbd-7057-47f1-8c53-32f8b66e3f54",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C13",
+      "claim": "IFN-\u03b1 activates genes with diverse antiviral functions to target various steps of viral replication.",
+      "claim_type": "EXPLICIT",
+      "source": "IFN-\u03b1 serves as both an immunomodulator and immunostimulant, activating genes with diverse antiviral functions to target various steps of viral replication. Additionally, it indirectly suppresses HBV infection by modifying cell-mediated immunity (Liang et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citation to Liang et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "00162a75-2d54-44e0-86a7-1845a6feeceb",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C14",
+      "claim": "Current HBV treatments effectively suppress viral replication and reduce liver inflammation, fibrosis, and the risk of cirrhosis and hepatocellular carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Present treatments effectively suppress HBV replication, reduce liver inflammation, fibrosis, and the risk of cirrhosis and hepatocellular carcinoma (HCC)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge about the efficacy of current HBV treatments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "dd70698c-d254-4456-abe5-188d7f490b0f",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C15",
+      "claim": "IFN-\u03b1 treatment is associated with significant adverse effects.",
+      "claim_type": "EXPLICIT",
+      "source": "but IFN-\u03b1 treatment is associated with significant adverse effects",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about IFN-\u03b1 side effects.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "c14a4902-c0a9-4bcf-bd17-e2deebfd66d8",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C16",
+      "claim": "NAs typically require long-term oral administration, often lifelong.",
+      "claim_type": "EXPLICIT",
+      "source": "NAs typically require long-term oral administration, often lifelong, as treatment discontinuation often results in viral rebound and disease recurrence in many patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established clinical knowledge about NA treatment duration.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "77ae23e2-998d-4f6a-ac45-c7dda09cfaa4",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C17",
+      "claim": "Treatment discontinuation of NAs often results in viral rebound and disease recurrence.",
+      "claim_type": "EXPLICIT",
+      "source": "NAs typically require long-term oral administration, often lifelong, as treatment discontinuation often results in viral rebound and disease recurrence in many patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established clinical knowledge about NA treatment outcomes.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "51d4b256-a696-4745-bbba-13152aa8db3f",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C18",
+      "claim": "A clinical cure of HBV is seldom achieved with current therapies.",
+      "claim_type": "EXPLICIT",
+      "source": "While current therapies manage the disease, a clinical cure is seldom achieved, and the risk of HCC, although reduced, remains (Jeng et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jeng et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "f7b2845a-53ad-4fad-93ef-2f89b32683f4",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C19",
+      "claim": "Entry inhibitors disrupt HBV entry into hepatocytes by blocking binding to the NTCP receptor.",
+      "claim_type": "EXPLICIT",
+      "source": "entry inhibitors that disrupt HBV entry into hepatocytes by blocking the binding to the sodium/taurocholate co-transporting polypeptide (NTCP) receptor (Yan et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citation to Yan et al., 2012.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "1665d24d-b9a6-4caa-bc28-66d993870f49",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C20",
+      "claim": "CAMs target the hepatitis B core protein (HBc) that participates in multiple essential steps of the HBV life cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the capsid assembly modulators (CAMs) target the hepatitis B core protein (HBc) that participates in multiple essential steps of the HBV life cycle (Jeng et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Jeng et al., 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "c04f356f-c0b6-4c0f-8a55-de40b596c2a8",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C21",
+      "claim": "Among direct acting antivirals in preclinical or clinical studies, a third are CAMs.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the direct acting antivirals that are in preclinical or clinical studies, a third are CAMs (Hepatitis B Foundation, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Hepatitis B Foundation, 2023.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "a8328e0f-1b35-4a0c-9998-0b2e34d599d2",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C22",
+      "claim": "The HBV capsid is composed of 120 units of HBc dimers, assembling into a T = 4 icosahedron.",
+      "claim_type": "EXPLICIT",
+      "source": "The capsid is composed of 120 units of HBc dimers, assembling into a T = 4 icosahedron. Within this structure, 60 asymmetric units are formed by four HBc monomers each, designated as A, B, C, and D, or AB dimers and CD dimers (Crowther et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This structural information is supported by citation to Crowther et al., 1994.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "317c7748-6395-4023-8bf6-7e591a16ece3",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C23",
+      "claim": "CAMs strengthen the association energy between HBc-dimer subunits, thereby promoting capsid assembly.",
+      "claim_type": "EXPLICIT",
+      "source": "CAMs target the hydrophobic pocket at the HBc dimer\u2013dimer interface, upon binding they strengthen the association energy between HBc-dimer subunits, thereby promoting capsid assembly, rather than inhibiting it (Venkatakrishnan et al., 2016; Stray et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by citations to Venkatakrishnan et al., 2016 and Stray et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "1abe86b9-2dd7-4140-a8fc-1d98e07a7121",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C24",
+      "claim": "CAMs can result in the formation of abnormal or empty capsids, sometimes accompanied by aggregation of core proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, abnormal or empty capsids may form, sometimes accompanied by the aggregation of core proteins, consequently inhibiting HBV DNA replication.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the mechanism of CAM action described in the context.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "19780827-8074-4ec1-99f2-7b2dcdd250ee",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C25",
+      "claim": "CAMs can disrupt the disassembly of incoming virions and the intracellular recycling of capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, CAMs can disrupt the disassembly of incoming virions and the intracellular recycling of capsids, thereby impeding the establishment and replenishment of cccDNA (Jeng et al., 2023; Kim et al., 2021; Zoulim et al., 2022; Schlicksup and Zlotnick, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This mechanism is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "fcd80f60-e355-44fa-b6ad-b1c6a17fa7e9",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C26",
+      "claim": "TX100 targets a hydrophobic pocket formed at the base of the HBc spike, causing conformational alterations in the capsid structure.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, a new potentially druggable site was discovered in the HBc dimer\u2014a hydrophobic pocket formed at the base of the spike. This site was targeted by the detergent Triton X-100 (TX100), ultimately causing conformational alterations in the capsid structure (Lecoq et al., 2021; Makbul et al., 2021b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lecoq et al., 2021 and Makbul et al., 2021b.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "fa750993-a792-402f-acb5-3a4ac9a84312",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C27",
+      "claim": "Peptides targeting the cleft on the spike tip reduced viral replication in a cell model.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous studies have shown that peptides targeting the cleft on the spike tip reduced viral replication in a cell model, likely by interfering with viral assembly through modulation of the HBc interaction with the surface antigen (B\u00f6ttcher et al., 1998).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to B\u00f6ttcher et al., 1998.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "75805aae-e1fa-415e-8e86-b9c847924d17",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C28",
+      "claim": "Myristylation of the large hepatitis B virus surface protein (L-HBs) is essential for HBV infectivity.",
+      "claim_type": "EXPLICIT",
+      "source": "Hydrophobic post-translational modifications, such as myristylation of the large hepatitis B virus surface protein (L-HBs), are essential for HBV infectivity and play a role in mediating viral assembly (Gripon et al., 1995).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Gripon et al., 1995.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "bdcc07d3-959f-444e-9cfc-4cd893dfa464",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C29",
+      "claim": "Farnesylation is involved in the envelopment of hepatitis D virus (HDV).",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, farnesylation, another hydrophobic post-translational modification, is involved in the envelopment of hepatitis D virus (HDV) (Koh et al., 2015)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Koh et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "b1efa862-2d5c-4037-b6bd-94ba3f20aae0",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C30",
+      "claim": "TX100 was identified as a ligand of a distinct hydrophobic pocket in the center of HBc-dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, TX100, a nonionic surfactant sharing a similar hydrocarbon binding motif as the natural HBV post-translational modifications, was identified as a ligand of a distinct hydrophobic pocket in the center of HBc-dimers (Lecoq et al., 2021; Makbul et al., 2021b; Roseman et al., 2005).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Lecoq et al., 2021, Makbul et al., 2021b, and Roseman et al., 2005.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "ce9d499a-e05e-47b2-83a5-639b71feae02",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C31",
+      "claim": "Amino acids K96 and 129-PPAY-132 are involved in the secretion of enveloped virions from the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of the pocket forming amino acids, such as K96 and 129-PPAY-132 (Rost et al., 2006) and the natural occurring point mutations HBcP5T, L60V, F97L, and P130T (; Le Pogam et al., 2000; Yuan and Shih, 2000; Yuan et al., 1999a; Ehata et al., 1992) are involved in the secretion of enveloped virions from the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Rost et al., 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "d1309ad1-154a-4e4d-8dd3-fac164dc39c7",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C32",
+      "claim": "Natural occurring point mutations HBcP5T, L60V, F97L, and P130T are involved in the secretion of enveloped virions from the cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Several of the pocket forming amino acids, such as K96 and 129-PPAY-132 (Rost et al., 2006) and the natural occurring point mutations HBcP5T, L60V, F97L, and P130T (; Le Pogam et al., 2000; Yuan and Shih, 2000; Yuan et al., 1999a; Ehata et al., 1992) are involved in the secretion of enveloped virions from the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Le Pogam et al., 2000, Yuan and Shih, 2000, Yuan et al., 1999a, and Ehata et al., 1992.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "321b22e3-2a1e-47ad-a43f-0f1890610e83",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C33",
+      "claim": "DM binds to HBc capsids with a KD of 133 \u00b1 38 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "The isothermal calorimetric titration (ITC) of HBc capsids with DM (1) resolved micromolar affinity (KD = 133 \u00b1 38 \u00b5M) to all four hydrophobic pockets of HBc capsids' asymmetric unit (N = 1.05 \u00b1 0.1) (Figure 2B, Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "3bfde44f-fe89-4859-98ef-5d3e260f7f8e",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C34",
+      "claim": "Geraniol binds to HBc with a KD of 94 \u00b1 8 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "ITC of geraniol with HBc showed a slightly enhanced micromolar affinity (KD = 94 \u00b1 8 \u00b5M) (Figure 2A and B, Supplementary file 1, Supplementary file 2 and Figure 2\u2014figure supplement 1) and a stoichiometry of N = 1.01 \u00b1 0.04",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "f41927c0-4112-4373-8067-2db068ce5f66",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C35",
+      "claim": "Geraniol occupies all four hydrophobic pockets within the asymmetric unit of HBc capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment resolved an additional density for geraniol in all four hydrophobic pockets within the asymmetric unit of HBc capsids (Figure 2D, Figure 2\u2014figure supplement 2)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM structural data showing density in all four pockets.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "55790109-5724-4314-8cb8-b725b4a5f888",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C36",
+      "claim": "Geraniol binding involves HBV residues P5, L60, K96, and F97.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment resolved an additional density for geraniol in all four hydrophobic pockets within the asymmetric unit of HBc capsids (Figure 2D, Figure 2\u2014figure supplement 2), confirming the thermodynamic binding data and further defining the underlying molecular interactions of the involved HBV residues P5, L60, K96, and F97.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM structural analysis showing molecular interactions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "42406034-6c5a-490b-9c93-f284b407a111",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C37",
+      "claim": "The geranyl dimer has an affinity of 63 \u00b1 8 \u00b5M to HBc capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis suggested that the dimer engages with both HBc binding sites simultaneously, resulting, however, only in a moderately enhanced micromolar affinity of 63 \u00b1 8 \u00b5M (Figure 2B).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "abf5a8e5-0830-4e48-89c5-253424daa2c0",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C38",
+      "claim": "Phage display-derived peptides MHRSLLGRMKGA (P1), GSLLGRMKGA (P2), and SLLGRM bind to wild-type HBc with KDs of 26, 68, and 130 \u00b5M, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, we have shown that these peptides MHRSLLGRMKGA (P1), GSLLGRMKGA (P2), and the core binding motif SLLGRM bind to wild-type (wt) and mutant HBc variants (P5T, L60V and F97L) with intermediate micromolar KDs of 26, 68, and 130 \u00b5M, respectively (Makbul et al., 2021a).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Makbul et al., 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "d0dc5c75-73b8-46aa-b2b5-8a156824c88b",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C39",
+      "claim": "The SLLGRM-dimer has a KD of 4.9 \u00b1 0.7 \u00b5M to HBc.",
+      "claim_type": "EXPLICIT",
+      "source": "With a KD value of 4.9 \u00b1 0.7 \u00b5M, the SLLGRM-dimer (4) has the lowest affinity to HBc",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "e3d39e4c-d618-4311-b05c-07c5f1f30011",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C40",
+      "claim": "The P2-dimer has a KD of 1.9 \u00b1 0.4 \u00b5M to HBc.",
+      "claim_type": "EXPLICIT",
+      "source": "followed by the P2-dimer (5) (KD = 1.9 \u00b1 0.4 \u00b5M).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "fa7c6424-e397-452d-8bb6-40e238beb874",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C41",
+      "claim": "The P1-dimers display sub-micromolar affinities of 312 nM and 420 nM to HBc.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the P1-dimers (6) and (7) displayed sub-micromolar affinities of 312 nM and 420 nM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "793af785-7822-460a-8b8e-27e303cd0972",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C42",
+      "claim": "P1-, P2-, and SLLGRM-dimers show 83-, 36-, and 27-fold increased affinities compared to their monomeric counterparts.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, P1-, P2-, and SLLGRM-dimers show 83-, 36-, and 27-fold increased affinities compared to their monomeric counterparts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is calculated from the comparison of dimer and monomer KD values presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "01ae4ef9-c135-41ef-a819-967d1c1eb81b",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C43",
+      "claim": "The minimal sequence SLLGRM is the major mediator of HBc binding.",
+      "claim_type": "EXPLICIT",
+      "source": "The analysis recapitulated our earlier resolved sequence requirement for HBc binding and substantiated that the minimal sequence SLLGRM is the major mediator of HBc binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by peptide microarray binding assay data showing reduced binding when SLLGRM is varied.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "4e02f128-c037-4eac-bab9-c4b1342995fd",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C44",
+      "claim": "The additional N-terminal residues in P1 sequence are neither conserved nor critically required for binding despite their importance in inducing HBc aggregation.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it further indicates that the additional N-terminal residues in P1 sequence are neither conserved nor critically required for binding despite their importance in inducing HBc aggregation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the peptide microarray data and turbidity assay results.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "89c6a70f-d752-4edf-a78d-b1a6bccd931a",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C45",
+      "claim": "P1dC has an affinity of 420 \u00b1 38 nM to HBc.",
+      "claim_type": "EXPLICIT",
+      "source": "The ITC confirmed that P1dC has an affinity of 420 \u00b1 38 nM, comparable to P1-dimer",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "43c74669-30e4-4523-b55c-0bf3c3d58763",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C46",
+      "claim": "The scrambled peptide scrP1dC did not display binding to HBc.",
+      "claim_type": "EXPLICIT",
+      "source": "while the scrambled peptide did not display binding to HBc (Figure 3, Figure 3\u2014figure supplement 1, Supplementary file 2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by ITC experimental data showing no heat change.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "91b3e211-ea73-4c2d-8a1d-16aa0818fcdf",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C47",
+      "claim": "P1dC induces aggregates of HBc in transfected HEK293 cells at 10 \u00b5M concentration.",
+      "claim_type": "EXPLICIT",
+      "source": "Yet, upon administration of 10 \u00b5M of P1dC (7), we observed aggregates of HBc (in the form of large bright spots) within the cells (Figure 4C, Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by fluorescence microscopy images showing bright aggregates in treated cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "6e076eb9-226c-46c8-8b74-ac8af38e0045",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C48",
+      "claim": "The scrambled dimer scrP1dC at 10 \u00b5M did not induce HBc aggregation in cells.",
+      "claim_type": "EXPLICIT",
+      "source": "At a concentration of 10 \u00b5M, the scrambled dimer scrP1dC did not induce aggregation and the distribution of HBc remained largely homogenous.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by fluorescence microscopy images showing diffuse HBc distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "6d77c437-f7ea-4e8b-b774-d65431be4cbf",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C49",
+      "claim": "P1dC induces large protein aggregates with multimicron diameter when incubated with CLPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The effect of peptide dimers on CLPs was already seen on the microscale cryo-EM images (Figure 5\u2014figure supplements 1 and 2), with P1dC inducing large protein aggregates with multimicron diameter.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM micrographs showing large dark aggregates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "981f2305-6329-4773-bbb3-7acb0c1ac3a4",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C50",
+      "claim": "SLLGRM-dimer induces visible aggregation of CLPs with smaller aggregate size than P1dC.",
+      "claim_type": "EXPLICIT",
+      "source": "The less potent SLLGRM-dimer also induced visible aggregation, although with smaller aggregate size",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM micrographs showing aggregates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "f1af3e72-dd54-436c-9a54-b4985227f5ff",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C51",
+      "claim": "Geraniol-treated CLP samples showed minimal aggregation with the smallest observed aggregate sizes.",
+      "claim_type": "EXPLICIT",
+      "source": "while geraniol-treated samples showed minimal aggregation, and the smallest observed aggregate sizes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM micrographs showing few small aggregates.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "c0aac440-4b07-407c-8b8d-6ce7f2c209a5",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C53",
+      "claim": "The densities corresponding to bound peptide-dimers have volumes that can accommodate a peptide chain of approximately six amino acid residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The densities corresponding to bound peptide-dimers in both EM-reconstructions have volumes, which can accommodate a peptide chain of approximately six amino acid residues (Figure 5, Figure 5\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on analysis of the EM density volumes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "662d39a3-0fff-4f49-8132-3ef34dcbc5a0",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C54",
+      "claim": "The SLLGRM-dimer binds to both the A/B-dimer and the C/D-dimer of HBc capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the SLLGRM-dimer binds the A/B-dimer as well as the C/D-dimer, in contrast to the monomeric SLLGRM, which binds only to the tip of the C/D-dimer (Makbul et al., 2021a; Figure 5)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM structural data and comparison with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "a012b514-372c-478c-af96-9e68df6514a5",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C55",
+      "claim": "Monomeric SLLGRM binds only to the tip of the C/D-dimer.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the SLLGRM-dimer binds the A/B-dimer as well as the C/D-dimer, in contrast to the monomeric SLLGRM, which binds only to the tip of the C/D-dimer (Makbul et al., 2021a; Figure 5)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Makbul et al., 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "a97ca73e-976b-4f16-8e90-7ed21d0f7d55",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C56",
+      "claim": "Point mutations within HBc can significantly affect HBV infectivity through disruptions in HBc interactions.",
+      "claim_type": "EXPLICIT",
+      "source": "Earlier works demonstrated that point mutations within the HBc can significantly affect HBV infectivity, particularly through disruptions in HBc interactions (Yuan et al., 1999b; Bruss, 2007; Ponsel and Bruss, 2003; Koschel et al., 1999).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yuan et al., 1999b, Bruss, 2007, Ponsel and Bruss, 2003, and Koschel et al., 1999.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "64999c82-1c41-44ea-bce8-86484a92208a",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C57",
+      "claim": "TX100 binding within the hydrophobic pocket influences the spike tips by flipping Phe97.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TX100 binding within the hydrophobic pocket influences the spike tips by flipping Phe97, whereas geraniols bound within the same pocket do not induce this change, indicating that this interaction is ligand-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from comparison of structural data for TX100 and geraniol binding.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "196ec32d-f52b-4a51-a739-be68164cdafa",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C58",
+      "claim": "Geraniols bound within the hydrophobic pocket do not induce flipping of Phe97.",
+      "claim_type": "EXPLICIT",
+      "source": "However, TX100 binding within the hydrophobic pocket influences the spike tips by flipping Phe97, whereas geraniols bound within the same pocket do not induce this change, indicating that this interaction is ligand-specific.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by cryo-EM structural data showing no conformational change in Phe97.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "0f55a7da-047e-4173-9512-c8f5bd0bd21d",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C59",
+      "claim": "P2 peptide binding to the capsid spikes increases flexibility.",
+      "claim_type": "EXPLICIT",
+      "source": "HBV capsid structural analysis showed that P2 peptide binding to the capsid spikes increases flexibility (Makbul et al., 2021a)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Makbul et al., 2021a.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "84e51ae1-6091-4679-84eb-67611ec1ca5f",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C60",
+      "claim": "P2 peptide binding exerts minimal impact on the hydrophobic pocket beneath the spike.",
+      "claim_type": "EXPLICIT",
+      "source": "HBV capsid structural analysis showed that P2 peptide binding to the capsid spikes increases flexibility (Makbul et al., 2021a) while exerting a minimal impact on the hydrophobic pocket beneath.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis cited in Makbul et al., 2021a.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "2294680a-047e-4b68-9403-3d39f9460445",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C61",
+      "claim": "Molecular dynamics simulations reveal significant flexibility of HBV capsids.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations revealed significant flexibility of the HBV capsids and suggested that structural asymmetry may affect ligand binding (Pavlova et al., 2018; Perilla et al., 2016; Pavlova et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Pavlova et al., 2018, Perilla et al., 2016, and Pavlova et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "86f50c41-83f0-4d61-9b9f-dccd4e27a100",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C62",
+      "claim": "Structural asymmetry in HBV capsids may affect ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "Molecular dynamics simulations revealed significant flexibility of the HBV capsids and suggested that structural asymmetry may affect ligand binding (Pavlova et al., 2018; Perilla et al., 2016; Pavlova et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a suggestion from molecular dynamics simulations cited.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "b9d217d8-3dd1-4d38-a3eb-544eae568b43",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C63",
+      "claim": "The major capsid type formed by recombinant HBc in E. coli is composed of 240 subunits (T = 4) and represents approximately 95% of CLPs.",
+      "claim_type": "EXPLICIT",
+      "source": "The major capsid type (ca. 95%) was formed by 240 subunits (Triangulation: T = 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on characterization of purified CLPs used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "364d7b5d-9efa-40ae-b011-be3e5532f5e9",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C64",
+      "claim": "Binding of SLLGRM-dimer or P1dC splays the helices at the tips of spikes apart.",
+      "claim_type": "EXPLICIT",
+      "source": "Binding of an (4) or of (7) splays the helices at the tips apart similar as previously reported for binding of a P2-monomer (Makbul et al., 2021a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM structural data and comparison with previous work.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "68d58f08-a1b6-40c3-8d41-eecb74aae2a5",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C65",
+      "claim": "Geraniol binds at the center of the spikes and does not change the conformation at the tips of the spikes.",
+      "claim_type": "EXPLICIT",
+      "source": "Geraniol binds at the center of the spikes and does not change the conformation at the tips of the spikes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by cryo-EM structural data showing no conformational change at spike tips.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "01bd6c0f-090e-40cd-a051-2e884a636d64",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C66",
+      "claim": "P1 dimer induces turbidity of HBc solution at 1:10 equivalents of HBc.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that P1 dimer induces turbidity of a HBc solution already at 1:10 equivalents of HBc",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by turbidity assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "1443c078-1790-411d-a9f0-024b8f692147",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C67",
+      "claim": "P2 dimer is slightly less potent than P1 dimer at inducing turbidity.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas the P2 dimer was slightly less potent",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by turbidity assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "29cfa172-389b-400a-a888-c71f14c78722",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C68",
+      "claim": "SLLGRM dimer requires significantly higher concentration ratios relative to HBc to induce turbidity compared to P1 and P2 dimers.",
+      "claim_type": "EXPLICIT",
+      "source": "and the SLLGRM dimer did not induce turbidity at the same conditions and further required significantly higher concentrations ratio relative to HBc (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by turbidity assay data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "88c94e1d-63b7-41a8-b52a-dca87a5d9b5e",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C69",
+      "claim": "Capsids are attractive targets for HBV therapy due to the absence of human homologues for HBc.",
+      "claim_type": "EXPLICIT",
+      "source": "Capsids are attractive targets due to the absence of human homologues for HBc and their involvement in crucial stages of the HBV life cycle",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This reflects established knowledge about why capsids are good drug targets.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "2b75dac6-fb4f-46ae-b6e9-5ab3ffbd1e6a",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C70",
+      "claim": "HBc is involved in nuclear entry, encapsulation of pgRNA and polymerase, optional nuclear recycling to replenish the cccDNA pool, and eventual coating and secretion from infected cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Capsids are attractive targets due to the absence of human homologues for HBc and their involvement in crucial stages of the HBV life cycle, including nuclear entry, encapsulation of the pgRNA and polymerase, optional nuclear recycling to replenish the covalently closed circular DNA (cccDNA) pool, and eventual coating and secretion from infected cells (Jeng et al., 2023; Kim et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Jeng et al., 2023 and Kim et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "f44c6a9b-1133-4b6e-9f99-263298ab00b5",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "claim_id": "C71",
+      "claim": "Vaccinations are ineffective for individuals who are already infected with HBV.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, vaccinations are ineffective for individuals who are already infected (Dienstag et al., 1982).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Dienstag et al., 1982.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "66de3ae7-a235-4784-9157-de5e2a4b1e34",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "HBV infection is a major global health problem with chronic infection leading to severe liver complications. Current treatments (nucleos(t)ide analogs and interferon-\u03b1) effectively suppress viral replication but rarely cure the infection, requiring long-term administration and having significant limitations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C8-C11, C14-C18, and C71 collectively establish the public health burden of HBV and limitations of current therapies. These claims are supported by established knowledge and appropriate citations to the literature, providing consistent context for the study's motivation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "867cd964-35d7-4d77-8a81-5a22eb384620",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "CAMs represent a major class of HBV antivirals targeting the hepatitis B core protein (HBc), which participates in multiple essential steps of the HBV life cycle. CAMs strengthen HBc-dimer association, promoting capsid assembly and potentially forming abnormal capsids or aggregates.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C13, C19-C25, C69-C70 provide well-cited background on current HBV treatment mechanisms and the rationale for targeting HBc. The structural and mechanistic information about CAMs is supported by appropriate citations and establishes the scientific context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "edc6c583-7f9a-4dcf-b722-069bebde2e8f",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Two alternative binding pockets on HBc have been identified: a hydrophobic pocket at the spike base (targeted by TX100) and a pocket at the spike tip (targeted by peptides). These sites are associated with viral secretion and assembly functions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 establish prior work identifying alternative HBc binding sites beyond the canonical CAM pocket. These claims are well-supported by citations and provide the rationale for exploring these sites as drug targets in the current study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "0a937747-a5c4-4092-bbf6-4f086da16d94",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Geraniol and its dimer bind to the central hydrophobic pocket of HBc-dimers with micromolar affinity (geraniol KD = 94 \u00b1 8 \u00b5M; geranyl dimer KD = 63 \u00b1 8 \u00b5M). Cryo-EM confirmed geraniol occupies all four hydrophobic pockets within the asymmetric unit.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C37 are supported by ITC experimental data showing binding affinities and cryo-EM structural data confirming binding sites. The stoichiometry (N \u2248 1) and structural evidence are consistent, demonstrating successful targeting of the central hydrophobic pocket.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "b73048dc-c32c-43cc-9d50-cc2d376577ac",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Dimeric peptides targeting the spike-tip pocket show dramatically enhanced affinity compared to monomers, with P1-dimers achieving sub-micromolar affinity (312-420 nM). The SLLGRM sequence is the major mediator of binding, with P1-, P2-, and SLLGRM-dimers showing 83-, 36-, and 27-fold increased affinities over monomers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44 are supported by ITC data showing consistent affinity improvements for dimeric peptides and peptide microarray data identifying the critical SLLGRM binding motif. The fold-change calculations are appropriate and the sequence-activity relationships are well-characterized.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "e33b5688-6fb3-4dae-962f-71ca46b429f4",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "P1dC induces HBc aggregation in living HEK293 cells at 10 \u00b5M concentration, while the scrambled control peptide does not. P1dC maintains sub-micromolar affinity (420 \u00b1 38 nM) comparable to P1-dimer.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 are supported by ITC data confirming P1dC affinity and fluorescence microscopy showing specific aggregation in cells treated with P1dC but not scrambled control. The negative control strengthens the conclusion that aggregation is sequence-specific.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "2bd68052-a673-497c-b8f1-e17c13305ee4",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Cryo-EM confirms peptide dimers bind to capsid spike tips and induce capsid aggregation in vitro. P1dC induces large multimicron aggregates, SLLGRM-dimer induces smaller aggregates, while geraniol shows minimal aggregation. The SLLGRM-dimer binds both A/B and C/D dimers, unlike monomeric SLLGRM.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C51, C53-C54, C64-C65 are supported by cryo-EM micrographs showing aggregates of varying sizes and structural data showing peptide density at spike tips. The differential binding of dimeric vs. monomeric SLLGRM to quasi-equivalent sites is well-documented structurally.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "f5ebc01b-0d31-4fe4-a02c-4036c03363b5",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Peptide dimers induce HBc aggregation both in vitro and in living cells, with potency correlating with binding affinity. P1 dimer induces turbidity at 1:10 equivalents, P2 dimer is slightly less potent, and SLLGRM dimer requires significantly higher concentrations.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C7, C66-C68 are supported by turbidity assay data, cryo-EM observations, and fluorescence microscopy in cells. The correlation between binding affinity and aggregation potency is consistent across multiple assays, strengthening the conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "89ffceeb-3c07-4216-ac2b-3aff1c20f533",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The study successfully developed bivalent binders targeting two distinct HBc pockets: a geranyl dimer binding the central hydrophobic pocket with micromolar affinity and dimeric peptides binding the spike-tip pocket with sub-micromolar affinity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C5 summarize the main findings and are directly supported by the experimental data in claims C33-C54. The ITC and cryo-EM data provide strong evidence for the binding affinities and structural confirmation of binding sites.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7",
+      "content_id": "0c549b0d-1424-4097-bba5-5f580b10d653",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Point mutations and ligand binding at HBc pockets can affect HBV infectivity through conformational changes. TX100 binding flips Phe97 while geraniol does not, indicating ligand-specific effects. Capsid flexibility and structural asymmetry may influence ligand binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C63 are supported by citations to prior work and structural comparisons in the current study. The observation that geraniol does not induce Phe97 flipping (unlike TX100) is supported by cryo-EM data, demonstrating ligand-specific conformational effects.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "1c4e0726-383c-4952-929d-fc19e81dd058",
+      "content_id": "1300fca5-f32e-4bfe-b791-0f966732fe98",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors synthesized geraniol and geranyl dimers that bind to a central hydrophobic pocket in HBc-dimers with micromolar affinities (KD values of 94 \u00b1 8 \u00b5M for geraniol and 63 \u00b1 8 \u00b5M for the geranyl dimer). Cryo-EM confirmed geraniol occupies all four hydrophobic pockets and identified the molecular interactions involving residues P5, L60, K96, and F97.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers acknowledge the identification of two novel binding pockets on HBc as a key strength. The editor states the work 'identifies two previously unexplored HBc-Ag binding pockets' and the experimental data is described as 'compelling.' Reviewer 1 notes the work is 'very well conducted, combining ITC experiments' and Reviewer 2 explicitly states 'the study identifies two previously unexplored binding pockets on HBc capsids' with 'promising affinities.' No concerns are raised about the geraniol binding data or structural characterization.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f",
+      "content_id": "1300fca5-f32e-4bfe-b791-0f966732fe98",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors developed dimeric peptides (P1, P2, and SLLGRM dimers) that bind to the spike-tip pocket of HBc with enhanced affinities compared to monomers. P1-dimers achieved sub-micromolar affinities (312-420 nM), representing 83-fold improvement over monomers. The minimal binding sequence SLLGRM was identified as the major mediator of HBc binding, while additional N-terminal residues in P1 are important for aggregation but not binding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers consistently praise the peptide dimer development and binding characterization. Reviewer 2 specifically highlights 'the P1-dimer binding to the spike tip of HBc has a nanomolar affinity' as a strength. Reviewer 1 commends the work as 'very well conducted, combining ITC experiments' with no concerns raised about the binding affinity measurements or sequence-activity relationships. The editor describes the experimental data as 'compelling.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "d1013e92-a6ed-4688-998e-2625b94f8b53",
+      "content_id": "1300fca5-f32e-4bfe-b791-0f966732fe98",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Cryo-EM structural analysis confirmed peptide dimers bind to capsid spike tips, with densities accommodating approximately six amino acid residues. The SLLGRM-dimer binds both A/B-dimer and C/D-dimer spike tips, unlike monomeric SLLGRM which binds only C/D-dimer tips. Binding splays the helices at spike tips apart, while geraniol binding at the center does not alter spike tip conformation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The cryo-EM structural confirmation is explicitly praised by reviewers. Reviewer 1 states the work combines 'Cryo-EM studies' effectively, and Reviewer 2 notes 'in vitro binding and electron microscopy experiments' as strengths. The editor describes the experimental data as 'compelling' and no concerns are raised about the structural characterization or binding site identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "5ba47767-0029-4fe3-8448-e71783123f11",
+      "content_id": "1300fca5-f32e-4bfe-b791-0f966732fe98",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Peptide dimers induce HBc aggregation in vitro, as demonstrated by turbidity assays and cryo-EM. P1dC induces large multimicron aggregates at low concentrations (1:10 equivalents), P2 dimer is slightly less potent, and SLLGRM-dimer requires higher concentrations. Geraniol-treated samples showed minimal aggregation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly acknowledges 'the in vitro and cellular HBc aggregation effects are demonstrated' and Reviewer 1 notes the findings 'unambiguously demonstrated the interest of such dimeric structures in impeding the correct HBV life cycle.' The turbidity and cryo-EM aggregation data are not questioned by any reviewer, indicating acceptance of these in vitro findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "85ed67bd-b077-40b7-b60b-e08b0cead3cd",
+      "content_id": "1300fca5-f32e-4bfe-b791-0f966732fe98",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "P1dC induces HBc aggregation in living cells. At 10 \u00b5M concentration, P1dC caused large bright aggregates of HBc in transfected HEK293 cells, while the scrambled control peptide (scrP1dC) did not induce aggregation and HBc distribution remained homogenous.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 states 'at the cellular level, an HBc aggregation from peptide crosslinking was demonstrated' and notes both 'in vitro and cellular HBc aggregation effects are demonstrated.' Reviewer 1 praises the demonstration of 'cellular effects (thanks to the grafting of previously developed dimers with polyarginine-based cell penetrating peptide)' in HEK293 cells. No concerns are raised about the cellular aggregation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "8cf7633a-47bb-4632-be46-5b46802e6d12",
+      "content_id": "1300fca5-f32e-4bfe-b791-0f966732fe98",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Different ligands binding to HBc pockets induce distinct conformational effects. TX100 binding flips Phe97 at spike tips, while geraniol does not induce this change. P2 peptide binding increases spike flexibility with minimal impact on the hydrophobic pocket beneath.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These mechanistic details about ligand-specific conformational changes are not questioned by any reviewer. The structural analysis is part of the 'compelling' experimental data noted by the editor, and Reviewer 1 describes the work as 'very well conducted' with cryo-EM studies. The ligand-specific effects support the overall finding of two distinct binding pockets.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "93c545fd-7dc7-48fb-a958-a50a32e5b804",
+      "content_id": "1300fca5-f32e-4bfe-b791-0f966732fe98",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Background claims about HBV epidemiology, current treatments, viral structure, and existing therapeutic approaches including CAMs. These establish the context for targeting HBc capsids as a therapeutic strategy.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background and contextual claims are not questioned by any reviewer. They provide the established scientific foundation for the study and are accepted as part of the manuscript's introduction and rationale. Reviewers focus their evaluation on the novel experimental findings rather than these contextual claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "16c3df8a-b056-4b19-8db8-0d3f520aeea2",
+      "content_id": "1300fca5-f32e-4bfe-b791-0f966732fe98",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Supporting structural and mechanistic context about HBc, including that point mutations can affect infectivity, capsids show significant flexibility in molecular dynamics simulations, structural asymmetry may affect ligand binding, and the major capsid type is T=4 with 240 subunits.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These supporting claims provide methodological and structural context but are not the focus of reviewer evaluation. They are accepted as part of the experimental framework. Reviewers do not raise concerns about the capsid characterization or the cited literature on HBc structure and dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "8fd456ab-5ccd-431c-9a7f-81cac80b43b5",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "127e2c1e-1b5e-4e03-ba7f-46cf5d793131",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "4fcfaa38-8642-4150-a700-923658b85147",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "87a2c67d-5dc4-422e-be87-8d1d2274f4e4",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "6e67a47e-cc54-47ed-9b6e-73dc98f38460",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "17ca1a96-0728-4c05-8ae8-1ed01a92cfc9",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "00162a75-2d54-44e0-86a7-1845a6feeceb",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "dd70698c-d254-4456-abe5-188d7f490b0f",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "c14a4902-c0a9-4bcf-bd17-e2deebfd66d8",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "77ae23e2-998d-4f6a-ac45-c7dda09cfaa4",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "51d4b256-a696-4745-bbba-13152aa8db3f",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "f44c6a9b-1133-4b6e-9f99-263298ab00b5",
+      "result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34"
+    },
+    {
+      "claim_id": "b179a4da-52c3-4c07-b5c6-820034664820",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "efc17fbd-7057-47f1-8c53-32f8b66e3f54",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "f7b2845a-53ad-4fad-93ef-2f89b32683f4",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "1665d24d-b9a6-4caa-bc28-66d993870f49",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "c04f356f-c0b6-4c0f-8a55-de40b596c2a8",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "a8328e0f-1b35-4a0c-9998-0b2e34d599d2",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "317c7748-6395-4023-8bf6-7e591a16ece3",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "1abe86b9-2dd7-4140-a8fc-1d98e07a7121",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "19780827-8074-4ec1-99f2-7b2dcdd250ee",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "88c94e1d-63b7-41a8-b52a-dca87a5d9b5e",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "2b75dac6-fb4f-46ae-b6e9-5ab3ffbd1e6a",
+      "result_id": "867cd964-35d7-4d77-8a81-5a22eb384620"
+    },
+    {
+      "claim_id": "fcd80f60-e355-44fa-b6ad-b1c6a17fa7e9",
+      "result_id": "edc6c583-7f9a-4dcf-b722-069bebde2e8f"
+    },
+    {
+      "claim_id": "fa750993-a792-402f-acb5-3a4ac9a84312",
+      "result_id": "edc6c583-7f9a-4dcf-b722-069bebde2e8f"
+    },
+    {
+      "claim_id": "75805aae-e1fa-415e-8e86-b9c847924d17",
+      "result_id": "edc6c583-7f9a-4dcf-b722-069bebde2e8f"
+    },
+    {
+      "claim_id": "bdcc07d3-959f-444e-9cfc-4cd893dfa464",
+      "result_id": "edc6c583-7f9a-4dcf-b722-069bebde2e8f"
+    },
+    {
+      "claim_id": "b1efa862-2d5c-4037-b6bd-94ba3f20aae0",
+      "result_id": "edc6c583-7f9a-4dcf-b722-069bebde2e8f"
+    },
+    {
+      "claim_id": "ce9d499a-e05e-47b2-83a5-639b71feae02",
+      "result_id": "edc6c583-7f9a-4dcf-b722-069bebde2e8f"
+    },
+    {
+      "claim_id": "d1309ad1-154a-4e4d-8dd3-fac164dc39c7",
+      "result_id": "edc6c583-7f9a-4dcf-b722-069bebde2e8f"
+    },
+    {
+      "claim_id": "321b22e3-2a1e-47ad-a43f-0f1890610e83",
+      "result_id": "0a937747-a5c4-4092-bbf6-4f086da16d94"
+    },
+    {
+      "claim_id": "3bfde44f-fe89-4859-98ef-5d3e260f7f8e",
+      "result_id": "0a937747-a5c4-4092-bbf6-4f086da16d94"
+    },
+    {
+      "claim_id": "f41927c0-4112-4373-8067-2db068ce5f66",
+      "result_id": "0a937747-a5c4-4092-bbf6-4f086da16d94"
+    },
+    {
+      "claim_id": "55790109-5724-4314-8cb8-b725b4a5f888",
+      "result_id": "0a937747-a5c4-4092-bbf6-4f086da16d94"
+    },
+    {
+      "claim_id": "42406034-6c5a-490b-9c93-f284b407a111",
+      "result_id": "0a937747-a5c4-4092-bbf6-4f086da16d94"
+    },
+    {
+      "claim_id": "abf5a8e5-0830-4e48-89c5-253424daa2c0",
+      "result_id": "b73048dc-c32c-43cc-9d50-cc2d376577ac"
+    },
+    {
+      "claim_id": "d0dc5c75-73b8-46aa-b2b5-8a156824c88b",
+      "result_id": "b73048dc-c32c-43cc-9d50-cc2d376577ac"
+    },
+    {
+      "claim_id": "e3d39e4c-d618-4311-b05c-07c5f1f30011",
+      "result_id": "b73048dc-c32c-43cc-9d50-cc2d376577ac"
+    },
+    {
+      "claim_id": "fa7c6424-e397-452d-8bb6-40e238beb874",
+      "result_id": "b73048dc-c32c-43cc-9d50-cc2d376577ac"
+    },
+    {
+      "claim_id": "793af785-7822-460a-8b8e-27e303cd0972",
+      "result_id": "b73048dc-c32c-43cc-9d50-cc2d376577ac"
+    },
+    {
+      "claim_id": "01ae4ef9-c135-41ef-a819-967d1c1eb81b",
+      "result_id": "b73048dc-c32c-43cc-9d50-cc2d376577ac"
+    },
+    {
+      "claim_id": "4e02f128-c037-4eac-bab9-c4b1342995fd",
+      "result_id": "b73048dc-c32c-43cc-9d50-cc2d376577ac"
+    },
+    {
+      "claim_id": "89c6a70f-d752-4edf-a78d-b1a6bccd931a",
+      "result_id": "e33b5688-6fb3-4dae-962f-71ca46b429f4"
+    },
+    {
+      "claim_id": "43c74669-30e4-4523-b55c-0bf3c3d58763",
+      "result_id": "e33b5688-6fb3-4dae-962f-71ca46b429f4"
+    },
+    {
+      "claim_id": "91b3e211-ea73-4c2d-8a1d-16aa0818fcdf",
+      "result_id": "e33b5688-6fb3-4dae-962f-71ca46b429f4"
+    },
+    {
+      "claim_id": "6e076eb9-226c-46c8-8b74-ac8af38e0045",
+      "result_id": "e33b5688-6fb3-4dae-962f-71ca46b429f4"
+    },
+    {
+      "claim_id": "6d77c437-f7ea-4e8b-b774-d65431be4cbf",
+      "result_id": "2bd68052-a673-497c-b8f1-e17c13305ee4"
+    },
+    {
+      "claim_id": "981f2305-6329-4773-bbb3-7acb0c1ac3a4",
+      "result_id": "2bd68052-a673-497c-b8f1-e17c13305ee4"
+    },
+    {
+      "claim_id": "f1af3e72-dd54-436c-9a54-b4985227f5ff",
+      "result_id": "2bd68052-a673-497c-b8f1-e17c13305ee4"
+    },
+    {
+      "claim_id": "c0aac440-4b07-407c-8b8d-6ce7f2c209a5",
+      "result_id": "2bd68052-a673-497c-b8f1-e17c13305ee4"
+    },
+    {
+      "claim_id": "662d39a3-0fff-4f49-8132-3ef34dcbc5a0",
+      "result_id": "2bd68052-a673-497c-b8f1-e17c13305ee4"
+    },
+    {
+      "claim_id": "364d7b5d-9efa-40ae-b011-be3e5532f5e9",
+      "result_id": "2bd68052-a673-497c-b8f1-e17c13305ee4"
+    },
+    {
+      "claim_id": "68d58f08-a1b6-40c3-8d41-eecb74aae2a5",
+      "result_id": "2bd68052-a673-497c-b8f1-e17c13305ee4"
+    },
+    {
+      "claim_id": "0f546db9-6721-4b75-9ef1-4e1634ac5b73",
+      "result_id": "f5ebc01b-0d31-4fe4-a02c-4036c03363b5"
+    },
+    {
+      "claim_id": "98edcaae-2a53-49ab-9685-dea7689dfe6a",
+      "result_id": "f5ebc01b-0d31-4fe4-a02c-4036c03363b5"
+    },
+    {
+      "claim_id": "01bd6c0f-090e-40cd-a051-2e884a636d64",
+      "result_id": "f5ebc01b-0d31-4fe4-a02c-4036c03363b5"
+    },
+    {
+      "claim_id": "1443c078-1790-411d-a9f0-024b8f692147",
+      "result_id": "f5ebc01b-0d31-4fe4-a02c-4036c03363b5"
+    },
+    {
+      "claim_id": "29cfa172-389b-400a-a888-c71f14c78722",
+      "result_id": "f5ebc01b-0d31-4fe4-a02c-4036c03363b5"
+    },
+    {
+      "claim_id": "c5828374-1bc2-4a44-94f2-e4073ba041e1",
+      "result_id": "89ffceeb-3c07-4216-ac2b-3aff1c20f533"
+    },
+    {
+      "claim_id": "f5f571b3-8a65-46f4-b3d3-246a9d0a59e6",
+      "result_id": "89ffceeb-3c07-4216-ac2b-3aff1c20f533"
+    },
+    {
+      "claim_id": "a84a7046-1a1e-42e1-81e2-a7647160469c",
+      "result_id": "89ffceeb-3c07-4216-ac2b-3aff1c20f533"
+    },
+    {
+      "claim_id": "a97ca73e-976b-4f16-8e90-7ed21d0f7d55",
+      "result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7"
+    },
+    {
+      "claim_id": "64999c82-1c41-44ea-bce8-86484a92208a",
+      "result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7"
+    },
+    {
+      "claim_id": "196ec32d-f52b-4a51-a739-be68164cdafa",
+      "result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7"
+    },
+    {
+      "claim_id": "0f55a7da-047e-4173-9512-c8f5bd0bd21d",
+      "result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7"
+    },
+    {
+      "claim_id": "84e51ae1-6091-4679-84eb-67611ec1ca5f",
+      "result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7"
+    },
+    {
+      "claim_id": "2294680a-047e-4b68-9403-3d39f9460445",
+      "result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7"
+    },
+    {
+      "claim_id": "86f50c41-83f0-4d61-9b9f-dccd4e27a100",
+      "result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7"
+    },
+    {
+      "claim_id": "b9d217d8-3dd1-4d38-a3eb-544eae568b43",
+      "result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7"
+    },
+    {
+      "claim_id": "c5828374-1bc2-4a44-94f2-e4073ba041e1",
+      "result_id": "1c4e0726-383c-4952-929d-fc19e81dd058"
+    },
+    {
+      "claim_id": "321b22e3-2a1e-47ad-a43f-0f1890610e83",
+      "result_id": "1c4e0726-383c-4952-929d-fc19e81dd058"
+    },
+    {
+      "claim_id": "3bfde44f-fe89-4859-98ef-5d3e260f7f8e",
+      "result_id": "1c4e0726-383c-4952-929d-fc19e81dd058"
+    },
+    {
+      "claim_id": "f41927c0-4112-4373-8067-2db068ce5f66",
+      "result_id": "1c4e0726-383c-4952-929d-fc19e81dd058"
+    },
+    {
+      "claim_id": "55790109-5724-4314-8cb8-b725b4a5f888",
+      "result_id": "1c4e0726-383c-4952-929d-fc19e81dd058"
+    },
+    {
+      "claim_id": "42406034-6c5a-490b-9c93-f284b407a111",
+      "result_id": "1c4e0726-383c-4952-929d-fc19e81dd058"
+    },
+    {
+      "claim_id": "f5f571b3-8a65-46f4-b3d3-246a9d0a59e6",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "abf5a8e5-0830-4e48-89c5-253424daa2c0",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "d0dc5c75-73b8-46aa-b2b5-8a156824c88b",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "e3d39e4c-d618-4311-b05c-07c5f1f30011",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "fa7c6424-e397-452d-8bb6-40e238beb874",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "793af785-7822-460a-8b8e-27e303cd0972",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "01ae4ef9-c135-41ef-a819-967d1c1eb81b",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "4e02f128-c037-4eac-bab9-c4b1342995fd",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "89c6a70f-d752-4edf-a78d-b1a6bccd931a",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "43c74669-30e4-4523-b55c-0bf3c3d58763",
+      "result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f"
+    },
+    {
+      "claim_id": "a84a7046-1a1e-42e1-81e2-a7647160469c",
+      "result_id": "d1013e92-a6ed-4688-998e-2625b94f8b53"
+    },
+    {
+      "claim_id": "c0aac440-4b07-407c-8b8d-6ce7f2c209a5",
+      "result_id": "d1013e92-a6ed-4688-998e-2625b94f8b53"
+    },
+    {
+      "claim_id": "662d39a3-0fff-4f49-8132-3ef34dcbc5a0",
+      "result_id": "d1013e92-a6ed-4688-998e-2625b94f8b53"
+    },
+    {
+      "claim_id": "a012b514-372c-478c-af96-9e68df6514a5",
+      "result_id": "d1013e92-a6ed-4688-998e-2625b94f8b53"
+    },
+    {
+      "claim_id": "364d7b5d-9efa-40ae-b011-be3e5532f5e9",
+      "result_id": "d1013e92-a6ed-4688-998e-2625b94f8b53"
+    },
+    {
+      "claim_id": "68d58f08-a1b6-40c3-8d41-eecb74aae2a5",
+      "result_id": "d1013e92-a6ed-4688-998e-2625b94f8b53"
+    },
+    {
+      "claim_id": "0f546db9-6721-4b75-9ef1-4e1634ac5b73",
+      "result_id": "5ba47767-0029-4fe3-8448-e71783123f11"
+    },
+    {
+      "claim_id": "6d77c437-f7ea-4e8b-b774-d65431be4cbf",
+      "result_id": "5ba47767-0029-4fe3-8448-e71783123f11"
+    },
+    {
+      "claim_id": "981f2305-6329-4773-bbb3-7acb0c1ac3a4",
+      "result_id": "5ba47767-0029-4fe3-8448-e71783123f11"
+    },
+    {
+      "claim_id": "f1af3e72-dd54-436c-9a54-b4985227f5ff",
+      "result_id": "5ba47767-0029-4fe3-8448-e71783123f11"
+    },
+    {
+      "claim_id": "01bd6c0f-090e-40cd-a051-2e884a636d64",
+      "result_id": "5ba47767-0029-4fe3-8448-e71783123f11"
+    },
+    {
+      "claim_id": "1443c078-1790-411d-a9f0-024b8f692147",
+      "result_id": "5ba47767-0029-4fe3-8448-e71783123f11"
+    },
+    {
+      "claim_id": "29cfa172-389b-400a-a888-c71f14c78722",
+      "result_id": "5ba47767-0029-4fe3-8448-e71783123f11"
+    },
+    {
+      "claim_id": "98edcaae-2a53-49ab-9685-dea7689dfe6a",
+      "result_id": "85ed67bd-b077-40b7-b60b-e08b0cead3cd"
+    },
+    {
+      "claim_id": "91b3e211-ea73-4c2d-8a1d-16aa0818fcdf",
+      "result_id": "85ed67bd-b077-40b7-b60b-e08b0cead3cd"
+    },
+    {
+      "claim_id": "6e076eb9-226c-46c8-8b74-ac8af38e0045",
+      "result_id": "85ed67bd-b077-40b7-b60b-e08b0cead3cd"
+    },
+    {
+      "claim_id": "64999c82-1c41-44ea-bce8-86484a92208a",
+      "result_id": "8cf7633a-47bb-4632-be46-5b46802e6d12"
+    },
+    {
+      "claim_id": "196ec32d-f52b-4a51-a739-be68164cdafa",
+      "result_id": "8cf7633a-47bb-4632-be46-5b46802e6d12"
+    },
+    {
+      "claim_id": "0f55a7da-047e-4173-9512-c8f5bd0bd21d",
+      "result_id": "8cf7633a-47bb-4632-be46-5b46802e6d12"
+    },
+    {
+      "claim_id": "84e51ae1-6091-4679-84eb-67611ec1ca5f",
+      "result_id": "8cf7633a-47bb-4632-be46-5b46802e6d12"
+    },
+    {
+      "claim_id": "8fd456ab-5ccd-431c-9a7f-81cac80b43b5",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "127e2c1e-1b5e-4e03-ba7f-46cf5d793131",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "4fcfaa38-8642-4150-a700-923658b85147",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "87a2c67d-5dc4-422e-be87-8d1d2274f4e4",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "6e67a47e-cc54-47ed-9b6e-73dc98f38460",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "17ca1a96-0728-4c05-8ae8-1ed01a92cfc9",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "b179a4da-52c3-4c07-b5c6-820034664820",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "efc17fbd-7057-47f1-8c53-32f8b66e3f54",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "00162a75-2d54-44e0-86a7-1845a6feeceb",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "dd70698c-d254-4456-abe5-188d7f490b0f",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "c14a4902-c0a9-4bcf-bd17-e2deebfd66d8",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "77ae23e2-998d-4f6a-ac45-c7dda09cfaa4",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "51d4b256-a696-4745-bbba-13152aa8db3f",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "f7b2845a-53ad-4fad-93ef-2f89b32683f4",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "1665d24d-b9a6-4caa-bc28-66d993870f49",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "c04f356f-c0b6-4c0f-8a55-de40b596c2a8",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "a8328e0f-1b35-4a0c-9998-0b2e34d599d2",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "317c7748-6395-4023-8bf6-7e591a16ece3",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "1abe86b9-2dd7-4140-a8fc-1d98e07a7121",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "19780827-8074-4ec1-99f2-7b2dcdd250ee",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "fcd80f60-e355-44fa-b6ad-b1c6a17fa7e9",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "fa750993-a792-402f-acb5-3a4ac9a84312",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "75805aae-e1fa-415e-8e86-b9c847924d17",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "bdcc07d3-959f-444e-9cfc-4cd893dfa464",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "b1efa862-2d5c-4037-b6bd-94ba3f20aae0",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "ce9d499a-e05e-47b2-83a5-639b71feae02",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "d1309ad1-154a-4e4d-8dd3-fac164dc39c7",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "88c94e1d-63b7-41a8-b52a-dca87a5d9b5e",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "2b75dac6-fb4f-46ae-b6e9-5ab3ffbd1e6a",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "f44c6a9b-1133-4b6e-9f99-263298ab00b5",
+      "result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804"
+    },
+    {
+      "claim_id": "a97ca73e-976b-4f16-8e90-7ed21d0f7d55",
+      "result_id": "16c3df8a-b056-4b19-8db8-0d3f520aeea2"
+    },
+    {
+      "claim_id": "2294680a-047e-4b68-9403-3d39f9460445",
+      "result_id": "16c3df8a-b056-4b19-8db8-0d3f520aeea2"
+    },
+    {
+      "claim_id": "86f50c41-83f0-4d61-9b9f-dccd4e27a100",
+      "result_id": "16c3df8a-b056-4b19-8db8-0d3f520aeea2"
+    },
+    {
+      "claim_id": "b9d217d8-3dd1-4d38-a3eb-544eae568b43",
+      "result_id": "16c3df8a-b056-4b19-8db8-0d3f520aeea2"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "620e9edf-f60d-4db3-be82-7be08314b8ce",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "0a937747-a5c4-4092-bbf6-4f086da16d94",
+      "peer_result_id": "1c4e0726-383c-4952-929d-fc19e81dd058",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on geraniol binding to central hydrophobic pocket (C33-C37). Both evaluations find ITC and cryo-EM data compelling and support the identification of this novel binding site. OpenEval emphasizes stoichiometry consistency while peer reviewers highlight this as a key strength with no concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "cb4abc57-5307-4e01-b0a9-01a432a5361e",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b73048dc-c32c-43cc-9d50-cc2d376577ac",
+      "peer_result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on peptide dimer development and binding characterization (C38-C44). Both evaluations support the nanomolar affinity findings and sequence-activity relationships. OpenEval details fold-change calculations and microarray data, while peer reviewers specifically praise the P1-dimer nanomolar affinity as a strength.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "93221b01-e091-487b-b46e-dc0e4eee9add",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2bd68052-a673-497c-b8f1-e17c13305ee4",
+      "peer_result_id": "d1013e92-a6ed-4688-998e-2625b94f8b53",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on cryo-EM structural confirmation (C53-C54, C64-C65). Both evaluations support the structural characterization of binding sites and peptide density at spike tips. OpenEval emphasizes differential binding to quasi-equivalent sites, while peer reviewers praise the combination of cryo-EM with other techniques.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "7fc2648f-bdbb-45ad-9458-78a1fd74ddef",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "f5ebc01b-0d31-4fe4-a02c-4036c03363b5",
+      "peer_result_id": "5ba47767-0029-4fe3-8448-e71783123f11",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on in vitro aggregation effects (C6, C66-C68). Both evaluations support turbidity assay and cryo-EM aggregation data. OpenEval emphasizes correlation between binding affinity and aggregation potency across multiple assays, while peer reviewers acknowledge the demonstrated in vitro aggregation effects.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "f519ffb3-6b25-49e9-a9eb-b9226c30fa0f",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "e33b5688-6fb3-4dae-962f-71ca46b429f4",
+      "peer_result_id": "85ed67bd-b077-40b7-b60b-e08b0cead3cd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on cellular aggregation effects (C47-C48). Both evaluations support fluorescence microscopy data showing HBc aggregation in cells. OpenEval emphasizes the negative control with scrambled peptide, while peer reviewers praise the cellular demonstration enabled by cell-penetrating peptide grafting.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "680b9c8d-1ae4-4694-a614-af00397371c9",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7",
+      "peer_result_id": "8cf7633a-47bb-4632-be46-5b46802e6d12",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on ligand-specific conformational effects (C57-C60). Both evaluations support the structural observations about geraniol not inducing Phe97 flipping. OpenEval provides detailed structural comparisons, while peer reviewers accept these findings as part of the compelling experimental framework without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "1ca9fa1c-c6ab-4379-974f-c3132bf588a2",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "66de3ae7-a235-4784-9157-de5e2a4b1e34",
+      "peer_result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on background and contextual claims about HBV burden and treatment landscape (C1-C2, C8-C11, C14-C18, C71). Both evaluations support these established knowledge claims. OpenEval emphasizes appropriate citations and consistency, while peer reviewers accept these as unquestioned scientific foundation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "95976450-d660-43d7-8fcc-de404e6ca7ed",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "867cd964-35d7-4d77-8a81-5a22eb384620",
+      "peer_result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on HBV treatment mechanisms and CAM rationale (C12-C13, C19-C25, C69-C70). Both evaluations support these background claims. OpenEval highlights well-cited structural and mechanistic information, while peer reviewers accept these contextual claims without question as part of the manuscript rationale.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "f4f9fcbc-3bef-4af4-a88a-177b4ed4cd3c",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "edc6c583-7f9a-4dcf-b722-069bebde2e8f",
+      "peer_result_id": "93c545fd-7dc7-48fb-a958-a50a32e5b804",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on prior work establishing alternative HBc binding sites (C26-C32). Both evaluations support these literature-based claims. OpenEval emphasizes citations providing rationale for exploring these sites, while peer reviewers accept these as part of the established scientific context.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "6e7f6b1b-e3c1-45bc-b355-22d785389916",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "89ffceeb-3c07-4216-ac2b-3aff1c20f533",
+      "peer_result_id": "1c4e0726-383c-4952-929d-fc19e81dd058",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address main findings summary (C3-C5). OpenEval R9 groups summary claims together and links them to experimental data (C33-C54). Peer R1 addresses C3 specifically about novel binding pockets along with the supporting experimental claims. Both find these claims supported by ITC and cryo-EM data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "c8b36f64-ea20-4034-bfd1-4eae16db513c",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "89ffceeb-3c07-4216-ac2b-3aff1c20f533",
+      "peer_result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on main findings. OpenEval R9 includes C4 (peptide dimer binding) as part of summary claims supported by experimental data. Peer R2 addresses C4 along with detailed peptide characterization claims (C38-C46). Both evaluations support the peptide dimer findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "a92230da-c8fa-4302-9bf6-b6e058ed7cdb",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "89ffceeb-3c07-4216-ac2b-3aff1c20f533",
+      "peer_result_id": "d1013e92-a6ed-4688-998e-2625b94f8b53",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on structural confirmation. OpenEval R9 includes C5 (cryo-EM confirmation) as part of summary claims. Peer R3 addresses C5 along with specific structural characterization claims (C53-C55, C64-C65). Both evaluations support the cryo-EM structural data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "5df2de18-7911-4666-b8d3-f96829b8814f",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "2bd68052-a673-497c-b8f1-e17c13305ee4",
+      "peer_result_id": "5ba47767-0029-4fe3-8448-e71783123f11",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on aggregation observations. OpenEval R7 includes cryo-EM aggregate observations (C49-C51) as part of structural characterization. Peer R4 addresses these claims in context of in vitro aggregation effects (C6, C66-C68). Both evaluations support the aggregation findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "6e23545f-1ae2-4706-b23e-d16a3ed8a59b",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "f5ebc01b-0d31-4fe4-a02c-4036c03363b5",
+      "peer_result_id": "85ed67bd-b077-40b7-b60b-e08b0cead3cd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on cellular effects. OpenEval R8 includes C7 (cellular aggregation) as part of broader aggregation analysis with turbidity and cryo-EM data. Peer R5 focuses specifically on cellular aggregation (C7, C47-C48). Both evaluations support the cellular findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "7067f74b-c6e7-4d5c-83af-066f6b109a6e",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "e33b5688-6fb3-4dae-962f-71ca46b429f4",
+      "peer_result_id": "240a3c9d-8e65-48f7-8c14-b89670f94f8f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on P1dC characterization. OpenEval R6 addresses P1dC affinity and cellular aggregation (C45-C48). Peer R2 includes C45-C46 as part of broader peptide dimer characterization (C38-C46). Both evaluations support the P1dC binding data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    },
+    {
+      "id": "33f27e27-ca06-476e-8eb4-b88121aa67db",
+      "submission_id": "3e1aa43f-da99-4061-b438-85bed823e9ae",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "ca50e92d-1389-4dfb-a6ab-33448dcf8ab7",
+      "peer_result_id": "16c3df8a-b056-4b19-8db8-0d3f520aeea2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on supporting structural and methodological claims (C56, C61-C63). Both evaluations support these contextual claims about capsid characterization and cited literature. OpenEval emphasizes structural comparisons, while peer reviewers accept these as part of the experimental framework without concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:12:16.147888Z"
+    }
+  ]
+}

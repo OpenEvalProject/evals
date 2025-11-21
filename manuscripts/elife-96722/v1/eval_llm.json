@@ -1,0 +1,483 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Treacle is essential for maintaining the tripartite nucleolar structure in human cells. In Treacle-positive cells, Treacle co-localizes with FC markers (UBF1, RPA194) in fibrillar centers, while FBL localizes to the DFC and B23/nucleolin surround the DFC. Depletion of Treacle causes disappearance of distinct FC and DFC structures, mixing of FC/DFC components, and partial redistribution of nucleolar proteins to the nucleoplasm, while minimally affecting GC organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are well-supported by immunocytochemical staining data shown in Figure 1A-B and supplementary figures across multiple cell types (HeLa cells and human skin fibroblasts). The co-localization patterns are clearly demonstrated through microscopy images with quantitative line profile analysis. The structural changes upon Treacle depletion are consistently observed and documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "Treacle amplifies recruitment of transcription machinery to rDNA rather than initiating primary binding. ChIP analysis shows that Treacle depletion decreases occupancy of UBF and RPA194 within the rDNA coding region, while mock sgRNA transfection has no such effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13 are supported by ChIP-qPCR data (Figure 1C and Figure 1\u2014figure supplement 2A) showing reduced but not absent binding of transcription factors upon Treacle depletion. The mock sgRNA control appropriately demonstrates specificity. The interpretation that Treacle amplifies rather than initiates binding is reasonable given the partial reduction observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Treacle depletion substantially suppresses rDNA transcription and impairs 5\u2032 external transcribed spacer processing, particularly at the A\u2032 site cleavage step in 18S rRNA maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by EU incorporation assays (Figure 1D-E, Figure 1\u2014figure supplement 2B) and RT-qPCR data (Figure 1F) with appropriate quantification. The distinction between substantial but incomplete suppression (unlike AMD-induced complete repression) is clearly demonstrated. Statistical significance is shown with appropriate replicates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Treacle is a fully intrinsically disordered protein with three functional domains: N-terminal domain (ND) containing LisH motif and NLS, central repeating domain (RD) with 15 S/E-rich LCRs interspersed with linkers showing high homology, and C-terminal domain (CD) with additional NLSs, UBF binding site, and K-rich LCR functioning as NoLS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 are supported by computational predictions (Figure 2\u2014figure supplement 1A) and citations to established literature (G\u00e1l et al., 2022; Jaberi Lashkari et al., 2023). The structural characterization is consistent with known protein features and provides the foundation for subsequent functional studies. The domain organization is clearly illustrated in Figure 2A.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "A recombinant Treacle fragment (amino acids 291\u2013426) forms liquid-like condensates in vitro in the presence of 5% polyethylene glycol, exhibiting spherical morphology and frequent fusion events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C24 are directly supported by in vitro condensation assays shown in Figure 2B-C with microscopy images demonstrating spherical morphology and time-lapse imaging documenting fusion events. These are classic characteristics of liquid-liquid phase separation and provide strong evidence for Treacle's condensation capacity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "Opto-Treacle (Treacle-FusionRed-Cry2 fusion) forms foci in nucleoli in the absence of blue light and forms multiple small foci throughout the nucleoplasm under blue light illumination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26 are supported by live-cell imaging data (Figure 2D and Figure 2\u2014figure supplement 1B) with appropriate controls. The optogenetic approach provides additional evidence for Treacle's condensation properties and demonstrates light-inducible condensate formation, consistent with phase separation behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Treacle fusion proteins form foci exclusively in nucleoli at low expression levels (16\u201324 hr post-transfection) but generate large spherical extranucleolar structures at high expression levels (48\u201372 hr post-transfection). These structures exhibit spherical morphology with aspect ratio close to one and internal homogeneity, independent of fluorescent protein oligomerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C31 are well-supported by confocal microscopy (Figure 2E, supplementary figures 1C-E), 3D shape analysis, and transmission electron microscopy (Figure 2\u2014figure supplement 1F). The control experiment showing condensate formation without fluorescent protein tags (C29) is critical for ruling out artifacts. The spherical morphology and internal homogeneity are consistent with liquid-like condensates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Nucleolar caps form during AMD-induced or DNA damage-induced rDNA transcriptional repression through fusion of intranucleolar Treacle foci. Extranucleolar condensates from highly overexpressed Treacle frequently fuse, indicating dynamic clustering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C33 are supported by time-lapse imaging (Figure 2F-G, supplementary figures 1G-H, and associated videos). The fusion events are directly visualized and quantified, providing strong evidence for liquid-like behavior. The observation across different conditions (AMD treatment, DNA damage, overexpression) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "FRAP analysis reveals that Treacle condensates exhibit preferential internal mixing with slow external exchange. Half-FRAP shows fluorescence equilibration between bleached and non-bleached halves without significant boundary exchange. Full-FRAP shows slow recovery. Similar dynamics are observed for FCs, nucleolar caps, and smaller extranucleolar condensates, while the largest extranucleolar condensates show reduced dynamics suggesting gel-like properties and potential liquid-to-gel phase transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 are supported by comprehensive FRAP analysis (Figure 2H-M, supplementary figures 2A-D, and associated videos) across multiple condensate types. The half-FRAP and full-FRAP experiments are well-designed to distinguish internal mixing from boundary exchange. The observation of reduced dynamics in larger condensates (C39) and speculation about liquid-to-gel transition (C40) is reasonable but the latter is appropriately presented as speculation rather than established fact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42"
+    ],
+    "result": "The \u03941\u201383 mutant (lacking N-terminal domain) demonstrates condensation properties indistinguishable from full-length Treacle, forming FCs, nucleolar caps, and extranucleolar condensates with high molecular exchange rates in all condensate types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 are supported by microscopy data (Figure 3A and supplementary figures) and partial FRAP analysis (Figure 3B-C). The comprehensive characterization across multiple condensate models with quantitative FRAP measurements provides strong evidence that the N-terminal domain is dispensable for condensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The \u039483\u20131121 mutant (lacking repeating domain) exhibits significantly compromised condensation properties. At low expression, it fails to concentrate in FCs and diffusely localizes in nucleolus with high dynamics. During transcriptional repression, it forms nucleoplasmic condensates that transition to solid-like state. At high expression, it forms a unified pan-nuclear solid network rather than distinct condensates, suggesting altered interaction patterns with increased reliance on rRNA and nucleolar proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 are supported by microscopy (Figure 3D-F and supplementary figures) and FRAP data showing altered condensation behavior and liquid-to-solid transitions. The comprehensive characterization across expression levels and conditions demonstrates the critical role of the RD. The interpretation about altered interaction patterns (C48) is reasonable inference from the observed phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The \u03941121\u20131488 mutant (lacking C-terminal domain) fails to condense. Even with artificial NLS from SV40, it successfully translocates to nucleus but remains diffusely distributed throughout nucleoplasm, indicating that the CD is required as a nucleation factor for autonomous condensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by microscopy data (Figure 3G and Figure 3\u2014figure supplement 1G). The use of artificial NLS is an appropriate control to separate localization from condensation defects. The conclusion that CD acts as nucleation factor (C51) is reasonable inference from the complete loss of condensation despite nuclear localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Intracellular Treacle condensation depends on cooperative interaction between RD and CD, with the ND playing negligible role. The K-rich LCR in CD facilitates nucleation while alternating charge blocks in RD stabilize condensates, ensuring Treacle behavior remains independent of subnuclear localization or transcriptional activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C71-C74 represent synthesis of findings from deletion mutant studies (C41-C51). The conclusions are well-supported by the comprehensive characterization of \u03941\u201383, \u039483\u20131121, and \u03941121\u20131488 mutants. The cooperative model is consistent with all observed phenotypes and represents appropriate integration of the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Treacle condensation is primarily governed by electrostatic interactions rather than hydrophobic forces. Treatment with ammonium acetate disrupts condensates while 1,6-HD has no effect, both in vitro and in vivo. In vitro condensation is also sensitive to pH changes, with optimal efficiency at pH 7.0.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C58 are supported by both cellular experiments (Figure 4A) and in vitro assays (Figure 4B) testing sensitivity to salt, 1,6-HD, and pH. The convergence of in vitro and in vivo results strengthens the conclusion about electrostatic interactions. The pH sensitivity data provides additional support for the role of charged residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Deletion of S/E-rich LCRs (\u0394SE mutant) significantly compromises Treacle's condensation properties. Like \u039483\u20131121 mutant, \u0394SE cannot form FCs or nucleolar caps, remains liquid in nucleolus, and undergoes liquid-solid phase transition during transcriptional repression or high overexpression, indicating that RD determines condensation properties through S/E-rich LCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by microscopy and FRAP data (Figure 4C-E and supplementary figures). The phenotypic similarity between \u0394SE and \u039483\u20131121 mutants provides strong evidence that the S/E-rich LCRs are the critical functional elements within the RD. The conclusion (C61) is well-supported by the experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The \u0394NoLS mutant (lacking K-rich LCR) does not localize to nucleolus but forms individual perinucleolar condensates whose volume increases with expression level while number remains constant, suggesting limited nucleation sites. These condensates display high molecular dynamics with exchange across boundaries rather than internal mixing, indicating the K-rich LCR acts as both nucleation element and regulator of volumetric dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C67 are supported by microscopy (Figure 4F and supplementary figures) and FRAP data (Figure 4G-H and supplementary figures 1C-D). The observation of limited nucleation sites (C63) and altered exchange dynamics (C66) compared to full-length Treacle provides strong evidence for the dual role of K-rich LCR in nucleation and dynamics regulation (C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Each S/E-rich LCR with its adjacent linker constitutes a strong diblock ampholyte with positively charged linker followed by negatively charged LCR. Charge scrambling in RD (CS mutant) fully reproduces the condensation-defective phenotype of \u039483\u20131121 and \u0394SE mutants, demonstrating that condensation properties depend not only on net negative charge but critically on specific charge distribution within RD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 are supported by charge distribution analysis (Figure 4I) and microscopy data of CS mutant (Figure 4J and supplementary figures). The charge-scrambling experiment is a critical control that demonstrates the importance of charge patterning rather than just charge content. This is a sophisticated experimental design that strongly supports the diblock ampholyte model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Full-length Treacle exhibits normal nucleolar localization and co-localizes with FC markers (RPA194, UBF) while FBL localizes to DFC periphery and NCL/B23 surround DFC. In contrast, \u039483\u20131121 or CS mutants cause dispersal and mixing of FC/DFC components, still co-localize with UBF1 but show reduced co-localization with RPA194, and show partial overlap with NCL but not B23, suggesting altered interaction preferences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C79 are supported by immunocytochemical data with co-localization analysis (Figure 5A-B and supplementary figures). The quantitative line profile analysis provides objective assessment of co-localization patterns. The observation of differential effects on different protein interactions (preserved UBF1, reduced RPA194, new NCL interaction) is well-documented and supports the conclusion about altered interaction preferences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "After AMD treatment, full-length Treacle co-localizes with UBF1 and RPA194 at nucleolar caps, with FBL partially merging and NCL/B23 displaced. Condensation-defective mutants (\u039483\u20131121 or CS) show opposite behavior: still co-localize with UBF1 but reduced RPA194, displace FBL and incorporate NCL. This shift in interaction repertoire (preserved UBF1, diminished RNA Pol I and FBL, new NCL interaction) suggests correct condensation contributes to cooperative FC/DFC structure formation through mediating functional protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by immunocytochemical data after AMD treatment (Figure 5C-D and supplementary figures). The systematic comparison between full-length and condensation-defective mutants reveals consistent patterns of altered interactions. The conclusion that condensation properties mediate functional interactions (C86) is reasonable inference from the observed correlation between condensation defects and altered protein partnerships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Expression of condensation-defective Treacle mutants significantly reduces rRNA transcription compared to full-length Treacle, correlating with reduced ability to maintain RPA194 and UBF1 association at rDNA promoter and diminished intrinsic binding to rDNA. This suggests condensation properties underlie Treacle's ability to concentrate transcriptional machinery in FC and separate from DFC, which is required for efficient rDNA transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C91 are supported by RT-qPCR (Figure 6A), ChIP-seq (Figure 6B), and ChIP-qPCR (Figure 6C) data with appropriate statistical analysis and replicates. The correlation between condensation defects, reduced protein recruitment, and decreased transcription is well-established. The mechanistic interpretation (C90-C91) is reasonable inference from the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Newly synthesized 47S pre-rRNA clusters at FC periphery in full-length Treacle-expressing cells and at periphery of large Treacle condensates, reflecting radial flow. In condensation-defective mutants or Treacle-depleted cells, rRNA is diffusely mixed without apparent clustering. Cells with condensation-defective mutants show impaired 5\u2032 ETS processing. This indicates Treacle's condensation properties separate FC and DFC, enabling spatial segregation of rRNA synthesis and processing, with mixing reducing efficiency of both processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C98 are supported by smFISH data (Figure 6D-F) and RT-qPCR (Figure 6G) with clear visualization of rRNA localization patterns. The loss of spatial organization in condensation-defective mutants and correlation with processing defects provides strong evidence for the functional importance of FC/DFC separation. The mechanistic model (C97-C98) is well-supported by the comprehensive data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "VP16 treatment (90 \u00b5M, 30 min) results in rapid recruitment of TOPBP1 to nucleoli and co-localization with Treacle in HeLa and MCF7 cells, with physical association confirmed by PLA. Reducing endogenous Treacle levels through RNAi or CRISPR/Cas9 effectively blocks TOPBP1 relocalization to nucleoli and its occupancy of rDNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by immunocytochemical data (Figure 7A, 7D and supplementary figures), PLA analysis (Figure 7B and supplementary figures), and ChIP data (Figure 7C). The convergence of multiple techniques (immunofluorescence, PLA, ChIP) provides strong evidence for the interaction. The observation across two cell lines strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C102",
+      "C103"
+    ],
+    "result": "Expressing siRNA-resistant full-length Treacle in Treacle kd cells effectively restores VP16-induced Treacle-TOPBP1 interaction and TOPBP1 enrichment at rDNA promoters, while expressing condensation-defective forms (\u039483\u20131121 or CS) does not restore these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102-C103 are supported by immunocytochemical analysis and ChIP data (Figure 7E-F and supplementary figures). The rescue experiment with full-length Treacle and failure to rescue with condensation-defective mutants provides strong evidence that condensation properties are required for TOPBP1 interaction. This is a well-designed experiment with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "VP16 induces DDR at rDNA promoters including ATM/ATR activation, H2AX phosphorylation, and 53BP1/BRCA1 recruitment. Nucleolar DDR is fully controlled by Treacle-TOPBP1 interaction, as knockdown of either protein dramatically reduces VP16-induced repair signaling. DDR can be restored by overexpressing full-length Treacle but not condensation-defective mutants, indicating Treacle's phase separation is crucial for TOPBP1 binding and DDR activation in response to genotoxic damage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C107 are supported by comprehensive ChIP-qPCR analysis of multiple DDR markers (Figure 7G-H and supplementary figures) with appropriate controls including knockdowns and rescue experiments. The systematic demonstration that condensation-defective mutants cannot restore DDR despite having intact phosphoserines 1227/1228 (mentioned in discussion) provides strong evidence that phase separation is required for functional TOPBP1 interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Treacle serves as scaffold protein for nucleolar FCs in human cells, consistent with evolutionary correlation between Treacle emergence and three-partite nucleolus appearance in amniotes. Introducing human Treacle into zebrafish induces reorganization from bipartite to tripartite nucleolar structure with FC-like structure formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C110 integrate findings from the current study (loss of FC structure upon Treacle depletion) with cited literature (Jaberi Lashkari et al., 2023) on evolutionary and cross-species observations. While C110 is stated as established knowledge rather than data from this study, the overall conclusion about Treacle as FC scaffold (C108) is well-supported by the comprehensive structural and functional data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "Treacle's condensation properties are governed by synergistic interplay between RD and CD. While RD can form liquid-like condensates alone in vitro, its cellular condensation requires positively charged CD as nucleation platform. Zebrafish Treacle ortholog shows sequence homology only in RD, lacking homologous CD sequence, likely accounting for its inability to undergo condensation and form FC-like structures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are well-supported by the comprehensive deletion mutant analysis and in vitro studies. C114-C115 integrate current findings with cited literature (Hill-Ter\u00e1n et al., 2024) to provide evolutionary context. The model of RD-CD cooperation is strongly supported by the experimental data, though the zebrafish comparison (C114-C115) relies on cited work rather than direct experimental evidence in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Treacle functions as block polyampholyte with condensation governed by alternating charges in RD and positive charge in CD, likely driven by coacervation mechanisms. Both homotypic (through K-rich LCR/E-rich LCR interactions and E-rich LCR/K-rich linker dynamics) and heterotypic (with UBF and RNA Pol I) coacervation may drive Treacle condensation. Charge scrambling or RD deletion partially disrupts RNA Pol I interaction, reduces rDNA recruitment, and impairs condensation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C120 represent reasonable mechanistic interpretation supported by charge distribution analysis (Figure 4I) and sensitivity to electrostatic disruption. C121-C122 are appropriately presented as speculative mechanisms. C123-C124 integrate current findings with cited literature on partner protein properties. C125 provides experimental support for the heterotypic interaction model through co-localization and ChIP data. The overall model is well-reasoned though some aspects remain speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Endogenous Treacle undergoes post-translational modifications (phosphorylation and ubiquitination in RD). Phosphorylation can modulate phase separation by altering polyampholytic properties. Post-translational modifications may fine-tune Treacle's condensation properties by modulating partner interactions and altering RD ampholytic properties through charge ratio changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C126-C127 are supported by cited literature (Mooser et al., 2020; Werner et al., 2015, 2018; Yamazaki et al., 2022) establishing that Treacle is modified and that PTMs can affect phase separation. However, C128 is explicitly speculative and no direct experimental evidence is provided in this study testing the effects of PTMs on Treacle condensation. This represents a reasonable hypothesis for future work but is not experimentally validated here.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "47S pre-rRNA is synthesized at FC/DFC boundary with primary processing beginning in DFC. DFC formation is mediated by FBL phase separation on rRNA scaffold maintained by radial rRNA flow. While Treacle's role in rRNA processing has been described, the mechanism was unclear. Impaired processing in condensation-defective mutants correlates with loss of FBL association, increased rRNA/nucleolin association, and FC/DFC disorganization, which may compromise radial rRNA flow and hinder normal processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C131 represent established knowledge supported by cited literature (Wu et al., 2021; Yao et al., 2019; Calo et al., 2018; Gonzales et al., 2005). C132-C134 integrate this knowledge with current findings on condensation-defective mutants. The mechanistic model linking FC/DFC disorganization to impaired processing (C134) is reasonable inference from the spatial organization and processing defect data, though the causal relationship could be more directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "TOPBP1 plays crucial role in activating ATR during DNA replication stress, and its interaction with Treacle (via phosphoserines 1227/1228 in CD) is essential for nucleolar DDR. However, Treacle with intact phosphoserines but unable to condense loses ability to interact with TOPBP1 during genotoxic stress, indicating that Treacle's interaction with TOPBP1 and nucleolar DDR activation requires phase separation ability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C135-C137 are supported by cited literature (Day et al., 2021; Mooser et al., 2020; Velichko et al., 2019). C138-C139 represent key findings from this study showing that condensation-defective mutants (which retain phosphoserines 1227/1228) fail to interact with TOPBP1 and activate DDR. This is strong evidence that phase separation is required beyond the known phosphorylation sites, representing an important mechanistic advance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C140"
+    ],
+    "result": "Treacle serves as nucleolar hub protein integrating functions in rDNA transcription, rRNA processing, and rDNA repair, functioning not only as structural scaffold for FC/DFC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C140 represents the overarching conclusion synthesizing all major findings of the study. It is well-supported by the comprehensive demonstration of Treacle's roles in: (1) FC/DFC structure formation, (2) transcription machinery recruitment and rDNA transcription, (3) rRNA processing through spatial organization, and (4) DDR activation through TOPBP1 interaction. The integration of these functions through phase separation properties is the central contribution of this work.",
+    "result_type": "MAJOR"
+  }
+]

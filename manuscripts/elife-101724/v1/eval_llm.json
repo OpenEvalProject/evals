@@ -1,0 +1,283 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The PERSIST study enrolled 141 patients with high-risk HER2-positive breast cancer at 23 sites in China between January 2019 and February 2022, with patients receiving extended adjuvant pyrotinib (400 mg/day) for up to 1 year after completing trastuzumab-based adjuvant therapy. The median follow-up was 24 months, with 92 patients completing 1-year treatment and 49 discontinuing (11 due to adverse events, 38 due to COVID-19/personal reasons).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C29, C66-C69, C74-C78, C82-C84 provide comprehensive study design, enrollment, and baseline characteristics that are internally consistent and clearly documented. The study methodology is well-defined with appropriate eligibility criteria, endpoints, and follow-up procedures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C13",
+      "C30"
+    ],
+    "result": "The primary efficacy outcome showed a 2-year iDFS rate of 94.59% (95% CI: 88.97-97.38) in all 141 patients, with 7 patients experiencing iDFS events including local recurrence, brain metastases, lung metastases, and one death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C30 are directly supported by the study data with appropriate statistical reporting including confidence intervals. The Kaplan-Meier curve (Figure 2) visually confirms the reported iDFS rate, and the specific breakdown of events provides transparency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C14",
+      "C15"
+    ],
+    "result": "Subgroup analysis by treatment duration showed 2-year iDFS rates of 94.90% (95% CI: 86.97-98.06) in patients completing 1-year treatment versus 90.32% (95% CI: 72.93-96.77) in those completing only 6-month treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the point estimates suggest better outcomes with longer treatment (C14, C15), the overlapping confidence intervals and small sample size in the 6-month group (n=31) limit definitive conclusions. The authors acknowledge this as a limitation (C61), and no statistical comparison between groups is provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C37",
+      "C38",
+      "C73"
+    ],
+    "result": "HR-positive patients showed numerically higher 2-year iDFS rates (96.74%, 95% CI: 87.57-99.18) compared to HR-negative patients (92.77%, 95% CI: 83.48-96.93), potentially explained by cross-talk between HR and HER2 pathways and concurrent endocrine therapy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observed difference in iDFS rates (C16, C17) is numerically present but lacks statistical testing for significance. The mechanistic explanation (C37, C38) is speculative and based on preclinical data with neratinib, not pyrotinib. The contribution of concurrent endocrine therapy (C73) as a confounder is acknowledged but not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Lymph node-negative patients had a 2-year iDFS rate of 96.88% (95% CI: 79.82-99.55) compared to 93.85% (95% CI: 86.81-97.20) in lymph node-positive patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reported rates (C18, C19) show overlapping confidence intervals, particularly the wide CI for node-negative patients (n=34), limiting interpretation. No statistical comparison is provided, and the small sample size in the node-negative group reduces precision.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C41",
+      "C55",
+      "C72"
+    ],
+    "result": "Patients who received prior adjuvant trastuzumab plus pertuzumab showed a 2-year iDFS rate of 97.30% (95% CI: 82.32-99.61) versus 93.48% (95% CI: 86.06-97.02) for trastuzumab alone, with authors suggesting lasting benefits from dual HER2 blockade.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the numerical difference exists (C20, C21), the wide confidence intervals overlap substantially, and no statistical testing is provided. The interpretation that dual blockade benefits persist (C72) is speculative inference based on APHINITY results (C41) rather than demonstrated in this study. The unequal group sizes (49 vs 92) further complicate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C70"
+    ],
+    "result": "The most common adverse event was diarrhea (79.4%), with 30.5% experiencing grade 3 diarrhea leading to treatment discontinuation in 8 patients, though no grade 4 or higher adverse events occurred.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C31-C34, C70 provide consistent and detailed safety data with specific frequencies and grades. The absence of grade 4+ events (C32) and clear documentation of discontinuations (C33) demonstrate adequate safety monitoring and transparent reporting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C53"
+    ],
+    "result": "The 2-year iDFS rate in PERSIST (94.59%) was comparable to the ExteNET study (93.9% for neratinib vs 91.6% for placebo), suggesting similar efficacy of extended adjuvant pyrotinib versus neratinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The comparison (C36) is inappropriate as it lacks a control group in PERSIST. Comparing single-arm results to the treatment arm of a randomized trial (C35, C53) without accounting for patient selection, treatment differences, or temporal trends is methodologically flawed. The claim of \"comparable\" efficacy requires head-to-head comparison or proper indirect comparison methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C60",
+      "C63"
+    ],
+    "result": "The 30.5% incidence of grade 3 diarrhea was consistent with previous pyrotinib studies, and evidence from PANDORA and CONTROL trials suggests this could be controlled with loperamide prophylaxis, though primary prophylaxis was not mandatory in PERSIST.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The consistency with prior studies (C63) is appropriately cited. The discussion of loperamide prophylaxis (C46-C49) is well-supported by external evidence, and the acknowledgment that prophylaxis was not mandatory (C60) provides important context for interpreting the high diarrhea rates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "The PHARE trial demonstrated that 6-month adjuvant trastuzumab was not non-inferior to 1-year treatment for disease-free survival, establishing 1-year trastuzumab as the standard treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39 and C40 accurately represent established clinical trial results that provide context for treatment duration decisions. These are appropriately cited background claims supporting the rationale for 1-year extended adjuvant therapy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C71"
+    ],
+    "result": "T-DM1 is standard of care for HER2-positive patients with residual disease after neoadjuvant therapy, but was not used in PERSIST patients; authors speculate that extended adjuvant pyrotinib after T-DM1 may provide benefit based on real-world metastatic data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The standard of care status (C42) and Chinese approval timeline (C43) are factual. However, the speculation about benefit after T-DM1 (C71) extrapolates from metastatic disease data (C44) to the adjuvant setting without supporting evidence, representing hypothesis generation rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors conclude this is the first prospective study of extended adjuvant pyrotinib after trastuzumab-based therapy, showing promising efficacy in high-risk HER2-positive breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The novelty claim (C54) appears reasonable but cannot be independently verified. The conclusions (C64, C65) of \"promising efficacy\" are limited by the single-arm design, short follow-up (median 24 months), high discontinuation rate (27%), and lack of control group. The term \"promising\" is appropriately cautious but the evidence base is preliminary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Sample size calculation assumed a 2-year iDFS rate of 91% based on ExteNET, requiring 126 patients to achieve a 95% CI width \u22640.1, with 140 recruited accounting for 10% dropout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C81 provide transparent statistical planning with appropriate justification. The actual enrollment of 141 patients (C11) closely matched the target, though the actual dropout rate (27%, C61) exceeded the planned 10%, which is appropriately acknowledged as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C51",
+      "C52"
+    ],
+    "result": "Background context establishes that HER2-positive breast cancer represents 15-20% of cases, standard trastuzumab reduces recurrence but 31% still recur within 10 years, and extended adjuvant neratinib improved iDFS but not overall survival except in HR-positive patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6, C51-C52 accurately represent established epidemiological and clinical trial data with appropriate citations. These provide valid scientific context for the study rationale and are consistent with current knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Pyrotinib is an irreversible pan-HER TKI targeting EGFR, HER2, and HER4, with demonstrated efficacy in phase III trials for metastatic (PHOEBE, PHILA) and neoadjuvant (PHEDRA) settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C9 accurately describe pyrotinib's mechanism and prior clinical evidence with appropriate citations. This provides valid rationale for investigating pyrotinib in the extended adjuvant setting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Pertuzumab was approved in China in 2018 and covered by insurance since 2020; neratinib is the only FDA-approved extended adjuvant therapy and is recommended in NCCN guidelines for high-risk HR-positive HER2-positive breast cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C59 provide factual regulatory and guideline information that contextualizes treatment availability and standards of care. These are verifiable facts that support the study's clinical relevance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C50",
+      "C61"
+    ],
+    "result": "A phase III trial of extended adjuvant pyrotinib (NCT03980054) is ongoing, and 27% of PERSIST patients did not complete 1-year treatment due to COVID-19 or personal reasons, acknowledged as a study limitation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 is verifiable through trial registries, and C61 transparently acknowledges a significant limitation affecting treatment completion. This demonstrates appropriate recognition of study weaknesses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "The mechanism of TKI-related gastrointestinal adverse events is hypothesized to involve inhibition of epithelial cell growth and healing in the gastrointestinal tract.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C62 appropriately presents this as a hypothesis (\"mainstream hypothesis\") rather than established fact, with supporting citations. The cautious language acknowledging uncertainty (\"not clear yet\") is scientifically appropriate.",
+    "result_type": "MINOR"
+  }
+]

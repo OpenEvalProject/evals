@@ -1,0 +1,337 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "A targeted RNAi modifier screen in developing Drosophila eyes with mtDNA deficiency identified 77 transcription factors as potential regulators of mitochondrial biogenesis from 638 TFs screened. The pilot screen demonstrated efficacy with 82.5% of known ETC biogenesis genes emerging as enhancers, compared to 20.2% for other mitochondrial genes and 8.6% for non-mitochondrial genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen design (C3, C39) is well-justified and the pilot screen (C40-C43) demonstrates strong enrichment for known ETC biogenesis genes (82.5% vs 20.2% and 8.6%), validating the approach. The main screen (C44-C45) successfully recovered known factors (Myc, TFAM) and identified 77 enhancers plus 20 suppressors (C46), providing convergent evidence for the screen's validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Network analysis of 49 TFs with available ChIP-seq data revealed a hierarchical regulatory network where 47 TFs form strongly connected core/bottom layers collectively binding 89% of nuclear-encoded mitochondrial genes (851 genes), with two top-layer TFs (Crg-1 and CG15011) potentially responding to physiological cues. No single TF covered all mitochondrial genes, indicating absence of a master regulator.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The network analysis is based on published ChIP-seq data (C47) and demonstrates comprehensive coverage (C48-C49) with appropriate hierarchical structure (C53-C55). The interpretation that no master regulator exists (C51-C52) is well-supported by the data. However, the functional speculation about top-layer TFs (C58) is based on known properties of Crg-1 and CG15011 but lacks direct experimental validation in this context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "CG1603 RNAi in Drosophila midgut clones showed synergistic effects with mtDNA deficiency in eye development and caused marked reductions in TFAM-GFP levels, mtDNA nucleoid numbers, SDHA-mNG levels, and total mitochondrial volume, demonstrating that CG1603 regulates both nuclear-encoded ETC genes and mtDNA maintenance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent measurements (C66, C68, C70) using different reporters (TFAM-GFP, SDHA-mNG) consistently show reduced mitochondrial biogenesis in CG1603 RNAi clones. The synergistic effect with mtDNA deficiency (C62) validates the screen design. The conclusion (C71) is well-supported by convergent evidence from multiple experimental approaches with appropriate quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "A PiggyBac insertion mutant (CG1603PBac) causes larval lethality with reduced mtDNA, mitochondrial mass, and ETC complex integrity. The lethality is rescued by a genomic transgene, confirming loss of CG1603 function. Mutant clones in ovaries show severely reduced TFAM levels, abolished mitochondrial membrane potential, and defects in cell growth and proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic characterization is rigorous with proper rescue experiments (C79) confirming the mutation is in CG1603 (C80). Multiple independent phenotypes (C77-C78, C81-C82, C84, C87) are documented with appropriate quantification. The conclusion (C88) is well-supported by convergent evidence from larval lethality, biochemical defects, and cellular phenotypes in clones.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CG1603 protein localizes exclusively to nuclei and binds to less condensed chromatin regions. RNA-seq analysis revealed 7635 differentially expressed genes in CG1603 mutant larvae, including 86% of nuclear-encoded mitochondrial genes, with nearly half of mitochondrial genes among the 1698 genes reduced >2-fold. GO enrichment analysis showed all top 10 enriched processes were mitochondria-related.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Nuclear localization is demonstrated in multiple tissues (C89-C91) and chromatin binding is directly visualized (C92). RNA-seq data (C93-C94) shows strong enrichment for mitochondrial genes with validation by qPCR. GO enrichment analysis (C95) provides independent confirmation of mitochondrial function. The convergence of localization, binding, and transcriptional data strongly supports CG1603 as a nuclear TF regulating mitochondrial genes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "ChIP-seq analysis identified 8963 CG1603 binding sites, with 6799 at promoter regions near transcription start sites. CG1603 binds to 50% of nuclear-encoded mitochondrial genes, and 79.5% of these bound genes were down-regulated in the mutant. The binding motif 'TATCGATA' was identified, and most bound and down-regulated genes were ETC-related.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ChIP-seq data (C96-C98) shows typical TF characteristics with promoter enrichment and a defined binding motif. The strong concordance between ChIP-seq and RNA-seq data (C99-C100: 79.5% of bound genes down-regulated) provides robust evidence for direct transcriptional regulation. The enrichment for ETC genes (C101) is consistent with all other findings. The conclusion (C102) is well-supported by the integrated genomic data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Network analysis positioned CG1603 in the middle layer with seven upstream TFs. Among these, only YL-1 RNAi reduced CG1603 protein levels in midgut clones, and CG1603 overexpression rescued the mitochondrial defects caused by YL-1 RNAi, establishing YL-1 as an upstream regulator of CG1603.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The network prediction (C103) is tested systematically by RNAi of upstream TFs (C105), with only YL-1 showing the predicted effect on CG1603 protein (C106). The genetic epistasis experiment (C107) provides strong evidence for the regulatory relationship by showing rescue of multiple phenotypes (eye size, TFAM-GFP, SDHA-mNG, mtDNA levels). This represents a successful validation of the network analysis approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C119",
+      "C145",
+      "C147",
+      "C148"
+    ],
+    "result": "CG1603 coordinates nuclear and mitochondrial genome expression in ETC biogenesis by promoting expression of both nuclear-encoded ETC subunits and factors required for mtDNA maintenance and gene expression. The YL-1 to CG1603 cascade may represent a chromatin-level regulatory mechanism that acts in concert with known TFs like NRF1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The coordination function (C119) is well-supported by the combined ChIP-seq and RNA-seq data showing CG1603 directly regulates both nuclear ETC genes and mtDNA maintenance factors. The mechanistic insight about chromatin regulation (C145) is supported by the YL-1 connection and known functions of SRCAP complex. However, the speculation about integration with NRF1 (C148) lacks direct experimental evidence and represents a hypothesis for future work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C2",
+      "C22",
+      "C23"
+    ],
+    "result": "The mechanisms coordinating nuclear and mitochondrial genomes in ETC biogenesis are largely unknown, and current understanding of transcriptional regulation of mitochondrial biogenesis appears incomplete given the complexity and diverse evolutionary origins of mitochondrial genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C2, C22, C23) establish the knowledge gap that motivates the study. They are supported by the cited literature and the observation that known regulators (NRFs, PPARs, ERRs) show tissue-specific expression and regulate only subsets of mitochondrial genes (C21). The study then addresses this gap by identifying CG1603 and the regulatory network.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The screen identified 20 suppressors where RNAi+MitoXhoI flies had larger eyes than RNAi-only flies. Five suppressors were lethal alone but viability was restored by MitoXhoI expression, potentially through retrograde signaling that boosts stress responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The suppressor phenotypes (C120-C122) are clearly documented, but the mechanistic explanation (C123) is purely speculative without supporting data. The paradoxical rescue of lethality by mtDNA deficiency is intriguing but unexplained. This finding requires additional investigation to determine the underlying mechanism and whether it represents a genuine biological phenomenon or a technical artifact.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C136",
+      "C137"
+    ],
+    "result": "CG1603 binds 4687 genes genome-wide, with 602 decreased and 562 increased >2-fold in the mutant, suggesting dual-function TF activity. However, CG1603 had no impact on expression of one-third of its binding genes, highlighting that DNA binding profiling alone is insufficient to predict TF function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ChIP-seq and RNA-seq integration (C126-C127) clearly demonstrates both activation and repression activities, supporting the dual-function interpretation (C128). The observation that binding doesn't always correlate with expression changes (C136-C137) is well-documented and represents an important caveat about interpreting ChIP-seq data. This finding emphasizes the value of the integrated approach used in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "CG1603 has negatively charged N-terminal domains (C2H2-ZF and MADF-1) and positively charged C-terminal domains (zinc fingers and MADF-2) in a predicted 3D structure resembling Ying Yang 1. The MADF domains may interact with histone tails, suggesting CG1603 may play a role in chromatin remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The structural predictions (C130-C131) are based on computational modeling and charge calculations, which are reasonable but not experimentally validated. The speculation about chromatin remodeling function (C135) is based on domain similarity to known chromatin remodelers (C132-C134) but lacks direct experimental evidence. The enrichment on less condensed chromatin (C92) provides some support, but functional validation of chromatin remodeling activity is needed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C32",
+      "C35",
+      "C36",
+      "C37",
+      "C56",
+      "C74",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C124",
+      "C125",
+      "C129",
+      "C132",
+      "C133",
+      "C134",
+      "C143",
+      "C144",
+      "C146"
+    ],
+    "result": "Background knowledge about mitochondrial biogenesis, dual genetic control, known transcriptional regulators (NRFs, PPARs, ERRs, PGC-1\u03b1), the Drosophila model system, the MitoXhoI system, C2H2-ZF TF structure, and recent findings on coordinated expression of ETC components.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the scientific context and are appropriately supported by citations to the literature. They provide the foundation for understanding the significance of the study and the rationale for the experimental approach. The knowledge claims are accurate representations of the cited work and current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C33",
+      "C34",
+      "C38",
+      "C39"
+    ],
+    "result": "RNAi against tfam, myc, or CycB reduced adult eye size, but assaying eye morphology alone is insufficient to enrich for ETC biogenesis regulators because many genes essential for cell viability, proliferation, or differentiation also affect eye development. MitoXhoI expression in heteroplasmic background resulted in slightly smaller eyes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental observations (C31, C33, C38) are clearly documented with images. The logical inference (C34, C39) that eye size alone is insufficient for specificity is sound and motivates the modifier screen design. This reasoning is validated by the pilot screen results showing much higher enrichment (82.5%) for known ETC genes compared to other essential genes (8.6%).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C72",
+      "C73"
+    ],
+    "result": "The Drosophila midgut is a monolayer epithelium ideal for imaging mitochondria and evaluating impacts on cell proliferation and differentiation. CG1603 RNAi produced very few enterocyte clones, consistent with mitochondrial respiration being necessary for intestinal stem cell differentiation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The description of the midgut model (C63-C65) is accurate and well-supported by citation. The observation of few EC clones with CG1603 RNAi (C72) is documented with quantification. The interpretation (C73) is consistent with cited prior work showing mitochondrial respiration is required for ISC differentiation, though this represents a secondary observation rather than a primary focus of the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C115",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Concordant expression patterns of nuclear and mtDNA-encoded ETC genes suggest potential transcriptional coordination. Network analysis constructed a regulatory network that served as a blueprint for genetic validation. Among seven upstream TFs, five affected TFAM levels but only YL-1 was confirmed by epistasis, demonstrating the necessity of combining genomic, bioinformatic, and genetic approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about transcriptional coordination (C115) is reasonable based on cited expression data. The methodological conclusion (C142) is well-supported by the finding that network predictions required genetic validation (C139-C141), with only 1 of 7 predicted upstream regulators confirmed by epistasis. This demonstrates both the value and limitations of network analysis, supporting the integrated approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C58"
+    ],
+    "result": "Top-layer TFs Crg-1 and CG15011 may sense physiological oscillations and stresses to modulate mitochondrial biogenesis through the underlying network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This speculation is based on known properties of Crg-1 (circadian-regulated, C56) and CG15011 (X-box binding protein similar to stress-responsive Xbp1, C57), combined with their position in the network (C55). However, there is no direct experimental evidence in this study that these TFs actually respond to physiological cues to regulate mitochondrial biogenesis. This represents a reasonable hypothesis for future investigation but is not experimentally validated here.",
+    "result_type": "MINOR"
+  }
+]

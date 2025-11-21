@@ -1,0 +1,273 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript provides background on salt stress as a major agricultural threat, its geographic distribution, and its effects on plant growth and development. These claims establish the scientific context for studying salt stress responses in plants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C16 are well-supported by citations to established literature and represent accepted knowledge in the field. These background claims appropriately contextualize the study and are not contested findings requiring experimental validation within this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "A novel tool was developed to quantify root and shoot projected area from agar-grown seedlings. The tool was validated by showing high correlation between projected area and fresh weight. Salt stress caused dose-dependent reductions in both root and shoot growth, with roots being more sensitive. While the mean root:shoot ratio remained unchanged under salt stress, the variance significantly increased, indicating loss of coordination between root and shoot growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C22 are well-supported by experimental data including validation experiments (Figure 1\u2014figure supplement 1), growth measurements across a natural diversity panel, and statistical analyses. The tool validation is rigorous, and the observation of increased variance in root:shoot ratio under salt stress is a novel finding supported by appropriate statistical tests (Bartlett test).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "GWAS using 250k and 4M SNP panels identified genetic loci associated with salt-induced changes in root:shoot ratio. The most significant locus (locus 30) on chromosome 3 contained nine SNPs associated with AT3G50160 (SR3G), encoding a DUF247 domain protein. Haplotype analysis revealed significant phenotypic differences between Col-0 and Blh-1 accessions. Sequencing showed the Blh-1 allele carries a large insertion leading to a premature stop codon, resulting in a truncated SR3G protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C31 are supported by comprehensive GWAS analysis using two SNP panels, haplotype analysis with appropriate statistical tests, and DNA sequencing data. The identification of SR3G as the candidate gene is well-justified by multiple lines of evidence including association strength, haplotype-phenotype correlations, and molecular characterization of natural allelic variation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Phylogenetic and evolutionary analysis of DUF247 genes across Brassicaceae revealed that SR3G is a recent duplicate of AT3G50150, likely specific to the A/C clade. The SR3G branch shows evidence of directional selection with three amino acid sites under positive selection (posterior probability >0.90), two of which are located in the putative Ca2+ binding domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C41 are supported by rigorous phylogenetic analysis using appropriate methods (RAxML, PAML branch-site model A test, Bayes Empirical Bayes). The identification of positive selection is statistically significant (p=0.00418), and the mapping of selected sites to functional domains provides biological insight. The comparative genomic analysis across multiple species strengthens the evolutionary conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "SR3G expression is relatively low and restricted to early seedling development, predominantly in the root stele. SR3G expression is induced by salt stress specifically in roots but not in shoots, as confirmed by both public expression data and RT-qPCR experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by publicly available expression data from the eFP Browser and validated by RT-qPCR experiments with appropriate biological replicates and statistical analysis. The tissue-specific and stress-responsive expression pattern is consistent across both data sources, providing strong support for these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Full-length SR3G localizes to the plasma membrane, as demonstrated by co-localization with the plasma membrane marker FM4-64. Truncated SR3G constructs lacking the transmembrane domain (fragments A, B, and AB) localize to both nucleus and cytosol, indicating that the transmembrane domain (fragment C) is responsible for plasma membrane localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are supported by confocal microscopy data showing clear co-localization patterns. The domain deletion analysis provides strong evidence for the role of the transmembrane domain in subcellular localization. However, the study only uses transient expression in tobacco, not stable expression in Arabidopsis, which could be considered a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The sr3g-5 mutant shows reduced SR3G expression and exhibits significantly reduced lateral root growth rate under 75 mM NaCl but not 125 mM NaCl. The mutant shows reduced Stress Tolerance Index for lateral root length at 75 mM NaCl. However, no significant differences in Na+ and K+ accumulation were observed between Col-0 and sr3g-5 in plate-grown seedlings, suggesting SR3G affects root development but not ion accumulation at early developmental stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are supported by RT-qPCR data confirming knockdown status, detailed root system architecture analysis, and ICP-AES measurements of ion content. The phenotypic characterization is thorough with appropriate statistical tests. The salt concentration-specific effect (75 mM but not 125 mM) is interesting but could benefit from mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In soil-grown plants, sr3g-5 mutants show no difference from Col-0 under control conditions but display increased rosette growth rate and area when exposed to salt stress at an early developmental stage. The mutant shows reduced ion leakage and reduced Na+ accumulation compared to Col-0 under early salt stress, indicating SR3G acts as a negative regulator of salt stress tolerance, particularly during early vegetative development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 are supported by comprehensive phenotyping using automated imaging, ion leakage assays, and ICP-AES analysis. The developmental stage-specific effect is well-documented with appropriate controls. The integration of multiple physiological measurements (growth, membrane integrity, ion content) provides strong support for SR3G's role as a negative regulator of salt tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The sr3g-5 mutant shows increased root suberization compared to Col-0 under both control and salt stress conditions, as demonstrated by fluorol yellow staining and confocal microscopy. GC-MS analysis confirmed increased levels of specific suberin monomers (FA, DCA, \u03c9OH-FA) in sr3g-5 roots, supporting the conclusion that SR3G negatively regulates root suberization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 are supported by both histochemical staining (fluorol yellow) and biochemical analysis (GC-MS) of suberin monomers. The use of two complementary methods strengthens the conclusion. However, the fluorol yellow quantification shows some non-significant differences, and the study could benefit from additional replicates or analysis of suberin biosynthesis gene expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "WRKY75 was identified as a transcriptional regulator of SR3G through in silico analysis and tissue-specific expression patterns. RT-qPCR showed SR3G expression is undetectable in wrky75 mutants, while WRKY75 expression is unchanged in sr3g-5. Yeast one-hybrid assays confirmed WRKY75 directly binds to the SR3G promoter but not to the promoter of the adjacent gene AT3G50150, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C71 are supported by multiple lines of evidence including in silico prediction, RT-qPCR with appropriate biological replicates, and yeast one-hybrid assays with proper controls. The demonstration of binding specificity (SR3G but not AT3G50150) strengthens the conclusion. However, the study lacks in planta validation of the WRKY75-SR3G interaction (e.g., ChIP-qPCR).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Double mutant analysis of wrky75/sr3g showed that under control conditions, both single mutants have reduced main root length, but double mutants resemble Col-0. Under 75 mM salt, only wrky75-3 shows reduced main root length. At 125 mM salt, double mutants maintain lower shoot Na+/K+ ratios compared to Col-0 and single mutants, indicating the sr3g mutation compensates for increased Na+ accumulation in wrky75.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 are supported by root system architecture analysis and ICP-AES measurements in double mutants. The epistasis analysis provides strong genetic evidence for the WRKY75-SR3G regulatory relationship. The rescue of the wrky75 salt-sensitive phenotype by sr3g mutation is a key finding supporting the model that WRKY75 positively regulates SR3G, which in turn negatively regulates salt tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "Unlike drought stress, which causes a directional increase in root:shoot ratio to optimize water uptake while limiting transpiration, salt stress results in a loss of coordination between root and shoot growth rather than a clear directional change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by the root:shoot ratio analysis across the HapMap population and citations to previous drought stress studies. The distinction between drought and salt stress responses in terms of root:shoot coordination is a novel observation. However, the mechanistic basis for this difference is not explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Previous studies associated DUF247 genes with self-incompatibility in grasses and defense responses in Arabidopsis, but the SR3G associated with defense (AT3G60470) is different from the SR3G identified in this study (AT3G50160). Analysis of T-DNA insertion lines and RNAi lines targeting neighboring DUF247 genes revealed no redundancy between SR3G and other DUF247s. Only SR3G is regulated by WRKY75.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by extensive mutant screening (T-DNA lines and RNAi lines), RT-qPCR analysis, and yeast one-hybrid assays. The demonstration of functional specificity among closely related paralogs is important for understanding SR3G's unique role. However, the lack of consistent phenotypes in some mutant lines could indicate technical issues or subtle phenotypic effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "Loss-of-function SR3G mutants maintain higher shoot growth rate and larger rosette area under salt stress in soil, likely due to reduced Na+ accumulation and lower cellular damage. The increased salt tolerance is explained by increased root suberization, as suberin-deficient mutants are known to be susceptible to salt stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C83 integrate multiple lines of evidence from growth measurements, ion content analysis, ion leakage assays, and suberization analysis. The mechanistic link between increased suberization and reduced Na+ accumulation is supported by citations to previous work on suberin-deficient mutants. However, the causal relationship could be strengthened by additional experiments (e.g., testing whether blocking suberization eliminates the sr3g salt tolerance phenotype).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The manuscript provides background on the role of suberin in root function, particularly in the context of salt stress. Suberin deposition in Casparian strips creates a barrier to apoplastic transport and limits Na+ accumulation under salt stress. The root stele, where SR3G is expressed, is central to water and nutrient transport and ion exclusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 are well-supported by citations to established literature and provide important context for understanding SR3G's function. These background claims connect SR3G's expression pattern (root stele) with its proposed function (regulating suberization and ion transport).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "The manuscript discusses SR3G in the context of other salt stress regulators, particularly HKT1 and WRKY75. While HKT1 overexpression causes severe reduction in lateral root development and negative effects on early plant performance, sr3g mutants show increased salt tolerance during early vegetative growth. This suggests that reduced lateral root development under salt stress can have varying effects on salt tolerance depending on the underlying physiological mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C99 provide important context by comparing SR3G's function with other known salt stress regulators. The comparison with HKT1 is particularly insightful, showing that similar phenotypes (reduced lateral root development) can have opposite effects on salt tolerance depending on the mechanism. These claims are supported by citations and the experimental data from this study.",
+    "result_type": "MINOR"
+  }
+]

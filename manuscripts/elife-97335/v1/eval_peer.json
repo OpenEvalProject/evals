@@ -1,0 +1,148 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "The authors performed scRNA-seq on 15 cervical cancer samples (11 ADC, 4 SCC), analyzing 102,012 cells categorized into 9 distinct cell types. They report differential cellular composition between ADC and SCC, including higher neutrophil proportions in ADC (20.05% vs 4.23%) and higher epithelial cell proportions in SCC (47.43% vs 16.48%).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers acknowledge the dataset as useful and valuable for the community. While reviewers raise concerns about batch correction methodology and clustering parameters, they do not dispute the basic cellular composition findings or the overall quality of the scRNA-seq data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors identified 12 epithelial sub-clusters, with Epi_10_CYSTM1 being exclusively present in stage IIIC ADC patients and showing the highest malignancy score. This cluster was enriched for SLC26A3 and showed increased activity in immunity-related pathways and cell-to-cell interactions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Multiple reviewers express serious concerns about the Epi_10_CYSTM1 cluster. Reviewer 2 notes it is 'essentially exclusive to one sample' and questions whether it represents epithelial cells or dendritic/macrophage cells based on antigen presentation pathways. Reviewer 3 states this population 'only contains cells from one of the 11 ADC samples' and questions the generalizability. The IF validation is acknowledged but deemed limited in scope.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The authors propose SLC26A3 as a biomarker for lymph node metastasis, showing higher expression in stage IIIC ADC patients compared to early stages by IHC. Clinical cohort data showed upstaging rates of 10.85% and 15.31% in two cohorts, with higher misdiagnosis rates in HPV-negative and ADC patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant concerns about the linkage between the Epi_10_CYSTM1 cluster and SLC26A3 as a biomarker. Reviewer 2 notes 'most of the strongly cluster associated markers were not predictive' and states 'it may be premature to say this is due to the same Epi_10_CYSTM1 cluster.' Reviewer 3 questions why SLC26A3 is 'so rare in the scRNA-seq data, but abundant in the IHC,' suggesting potential specificity issues. The clinical correlations are acknowledged but the mechanistic link remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The authors identified four T cell subtypes (exhausted, cytotoxic, regulatory, and activated) from 52,297 T cells, reporting that ADC had a significantly higher proportion of Tregs compared to SCC.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 2 identifies 'multiple issues in the classification of T cells,' noting that 'all CD4+ T cells are currently scored as Tregs' and questioning what happened to T-helper cells. The reviewer also notes that 'Activated T and Cytotoxic T both seem to contain CD8+ cells' with equivalent CD69 expression, and that 'Cytotoxic' cells express exhaustion markers (TIGIT, HAVCR2, LAG3), indicating problematic cell type definitions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors identified three neutrophil subtypes (pro-tumor TANs, anti-tumor TANs, and TANs with interferon-stimulated genes), reporting higher pro-tumor TANs in ADC versus SCC. Higher expression of pro-tumor TAN gene signatures correlated with poorer prognosis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises concerns about neutrophil classification, noting 'several obviously different clusters have been grouped together (Neu_1 containing two diametrically opposite cell clouds being an obvious example).' Reviewer 3 mentions 'KRT+ neutrophils, which may reflect doublets with cancer cells' as potential artifacts. While the prognostic association is noted, the underlying cell type definitions are questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The authors identified six plasma/B cell clusters, with Plasma/B_01_IGHA2 being higher in ADC versus SCC and in HPV-negative versus HPV-positive cases. Higher expression of Plasma/B_01_IGHA2 signature genes predicted poorer prognosis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise specific concerns about the plasma/B cell analysis or challenge these findings. The identification and characterization of these clusters appears to be accepted as part of the overall cellular landscape description.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C70",
+      "C71",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The authors propose that ADC-enriched epithelial clusters interact with Tregs through ALCAM and MHC-II signaling pathways, with TGF\u03b2-TGFBR interactions activated in ADC but not SCC. IF analysis showed Treg recruitment near SLC26A3-high regions, suggesting an immunosuppressive microenvironment mechanism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Multiple reviewers criticize the causal language used to describe these interactions. Reviewer 1 states 'the data show localization that supports a possible interaction and probable cytokines, but functional experiments would be needed to establish causality.' Reviewer 2 emphasizes 'these are just possible interactions, not validated ones' and notes 'this still is only correlative and doesn't prove causality.' The co-localization data is acknowledged as supportive but insufficient for mechanistic claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C57",
+      "C59"
+    ],
+    "result": "The authors report that SLC26A3-high tumor regions showed increased ALDH1A1 expression (a cancer stem cell marker) and reduced E-cadherin expression, suggesting increased stemness and EMT features.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge the IF data showing these associations, the mechanistic interpretation is questioned in the context of broader concerns about the Epi_10_CYSTM1 cluster and causal language. Reviewer 3 notes 'many of the proposed conclusions are over-interpretations or unwarranted generalizations' and states 'many of the conclusions are inferred from the data analysis with little follow-up in experimental models or orthogonal assays.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73"
+    ],
+    "result": "The authors suggest that ADC-specific epithelial sub-clusters may actively recruit pro-tumor TANs, and that increased malignancy in ADC may be related to pro-tumor TAN enrichment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These claims are inferential and based on correlative data. Given reviewers' concerns about neutrophil clustering artifacts (potential doublets) and the general criticism of over-interpretation without functional validation, these mechanistic suggestions lack strong support despite the observed associations.",
+    "result_type": "MINOR"
+  }
+]

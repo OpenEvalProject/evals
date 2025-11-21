@@ -1,0 +1,292 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C25",
+      "C95",
+      "C96"
+    ],
+    "result": "Hepatocyte-specific RIPK1 deficiency sensitizes mice to short-term fasting-induced liver injury and apoptosis. Ripk1-hepKO mice showed significantly elevated serum ALT/AST levels, increased TUNEL-positive cells, and increased cleaved caspase-3-positive cells after 12-hour fasting, but no change in phospho-MLKL-positive cells, indicating apoptosis rather than necroptosis. This phenotype was observed in both male and female mice, and apoptosis occurred primarily in hepatocytes (albumin-positive cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C17-C23, C25 provide converging evidence from multiple assays (serum transaminases, TUNEL, cleaved caspase-3, phospho-MLKL, co-localization with albumin) demonstrating liver injury and apoptosis specifically in Ripk1-hepKO mice after fasting. The data are consistent across male and female mice, and appropriate controls (Ripk1-Con mice) show no such phenotype. The conclusion that apoptosis rather than necroptosis is responsible is well-supported by the presence of cleaved caspase-3 but absence of phospho-MLKL.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Short-term fasting triggered hepatic inflammation and compensatory proliferation in Ripk1-hepKO mice. Inflammatory markers (Ccl2, Tnfa, Ifng, Il6) and proliferation markers (Afp, Mki67) were significantly elevated at the mRNA level, and MKI67-positive cells were increased as measured by immunohistochemistry and flow cytometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C28-C31 demonstrate inflammation and proliferation through multiple complementary approaches (qPCR, immunohistochemistry, flow cytometry). The data consistently show upregulation of inflammatory and proliferation markers specifically in Ripk1-hepKO mice after fasting, with appropriate controls showing no such changes. The use of multiple detection methods strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Transcriptomic analysis revealed that RIPK1 deficiency reorients the hepatic microenvironment into a proinflammatory state during fasting. RNA-seq showed 85 upregulated and 29 downregulated genes in Ripk1-hepKO mice during fasting, enriched in inflammation-associated pathways (TNF, IL-17, TLR, NF-\u03baB signaling). Expression of chemokine-related genes (Itgam, Ccr2, Cx3cr1) and immune cell recruitment markers was increased, validated by immunofluorescence showing increased CD11b-, CCR2-, and CX3CR1-positive cells but unchanged F4/80 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C37-C42 provide comprehensive transcriptomic evidence supported by pathway enrichment analysis and protein-level validation. The RNA-seq data show clear differential gene expression with appropriate statistical thresholds (p<0.05, |log2FC|\u22651), and KEGG pathway analysis appropriately identifies inflammation-related pathways. Immunofluorescence validation of key chemokine receptors strengthens the conclusions. The contrast between unchanged resident immune cells (F4/80) and increased recruited immune cells (CD11b, CCR2, CX3CR1) is particularly informative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Single-cell RNA sequencing confirmed altered cellular composition in Ripk1-hepKO livers during fasting, with increased recruitment of macrophages and NK&T cells. Sub-clustering analysis revealed that recruited macrophages (RMs), not liver-resident macrophages (LrMs), were specifically increased in Ripk1-hepKO mice. RMs showed enrichment in inflammation-associated pathways (IL-17, antigen processing, TNF signaling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C43-C51 provide detailed single-cell analysis with 22,274 cells analyzed, appropriate clustering methods (t-SNE), and marker-based cell type identification. The distinction between LrMs (F4/80+, Clec4f+) and RMs (CD11b+, Ccr2+, Cx3cr1+) is well-established in the literature and appropriately applied. Flow cytometry validation (C51) confirms the scRNA-seq findings. The pathway enrichment analysis on macrophage-specific DEGs is appropriate and supports the inflammatory phenotype.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Cell-cell communication analysis revealed enhanced intercellular signaling in Ripk1-hepKO livers during fasting, particularly between macrophages and other cell types. Enriched signaling pathways included inflammation-related (MHC I, OSM, GAS, HSPG) and proliferation-related (IGF, KIT, NOTCH, LAMININ) pathways. SAA signaling from hepatocytes was amplified in Ripk1-hepKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 use CellChat analysis appropriately to infer cell-cell communication from scRNA-seq data. The increased number of ligand-receptor pairs and interaction strength in Ripk1-hepKO mice is consistent with the inflammatory phenotype. The identification of SAA signaling is supported by transcriptome data showing elevated SAA2, SAA3, SAA4 expression. However, C56 is somewhat speculative as it proposes a mechanism (SAA-mediated inflammation exacerbation) that is not directly tested, though it is supported by cited literature (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "ER stress is involved in fasting-induced liver injury and inflammation in Ripk1-hepKO mice. Fasting increased expression of ER stress markers (CHOP, BIP, IRE1\u03b1, phospho-IRE1\u03b1), and treatment with the ER stress inhibitor 4-PBA reduced liver injury (ALT/AST), apoptosis (TUNEL), and inflammation (Ccl2, Tnfa, Ifng, Il6) in fasted Ripk1-hepKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C57-C61 provide mechanistic evidence through pharmacological intervention. The demonstration that ER stress markers are elevated during fasting (C57) and that 4-PBA treatment reduces these markers (C58) confirms the efficacy of the intervention. The rescue of liver injury, apoptosis, and inflammation by 4-PBA (C59-C60) provides strong evidence for ER stress involvement. The experimental design with appropriate controls (saline treatment) and multiple readouts strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "AAV8-TBG-Cre-mediated hepatocyte-specific RIPK1 deletion phenocopies Ripk1-hepKO mice. AAV8-TBG-Cre treated mice showed increased liver injury (ALT/AST), apoptosis (TUNEL, cleaved caspase-3), inflammation (Ccl2, Tnfa, Il1b), and ER stress markers during fasting, with no effect on lipid metabolism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C68 provide independent validation of the main findings using an alternative genetic approach (AAV-mediated deletion vs. Cre-lox). The phenocopy of Ripk1-hepKO mice strengthens confidence that the observed phenotypes are specifically due to hepatocyte RIPK1 loss rather than developmental compensation or off-target effects. Western blot confirmation of RIPK1 deletion (C62) and consistent phenotypes across multiple parameters (C63-C67) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Short-term high-fat diet (HFD) feeding induces liver injury, apoptosis, inflammation, and ER stress in Ripk1-hepKO mice but not in control mice. Six days of HFD increased lipid deposition in both genotypes, but only Ripk1-hepKO mice showed elevated ALT/AST, TUNEL-positive cells, inflammatory markers, Afp expression, and ER stress markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C73 demonstrate that the protective role of hepatocyte RIPK1 extends beyond fasting to other metabolic challenges. The experimental design appropriately includes both ND and HFD conditions in both genotypes. The observation that short-term HFD does not cause liver injury in control mice (C70), consistent with previous literature, validates the model. The selective vulnerability of Ripk1-hepKO mice to HFD-induced injury (C71-C73) supports the broader conclusion about RIPK1's role in metabolic homeostasis (C74).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C27",
+      "C64"
+    ],
+    "result": "RIPK1 deficiency does not affect lipid metabolism during fasting or short-term HFD feeding. No significant differences were observed between Ripk1-Con and Ripk1-hepKO mice in blood glucose, serum TG, TC, FFA, \u03b2-hydroxybutyrate, or hepatic TG levels during fasting. Similarly, AAV8-TBG-Cre treatment did not alter these metabolic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24, C27, C64 demonstrate that the liver injury phenotype in Ripk1-hepKO mice is not due to altered lipid metabolism. The comprehensive assessment of multiple metabolic parameters (glucose, TG, TC, FFA, ketone bodies, hepatic TG) and consistent findings across different genetic models (Ripk1-hepKO, Ripk1-K45A, AAV-mediated deletion) support this conclusion. This is an important control showing that RIPK1 deficiency specifically affects stress responses rather than baseline metabolic function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C32"
+    ],
+    "result": "RIPK1 kinase activity is not required for protection against fasting-induced liver injury. Ripk1-K45A mice (kinase-dead mutant) showed no increase in serum ALT/AST levels after fasting and no changes in inflammatory or proliferation markers, unlike Ripk1-hepKO mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26, C27, C32 provide critical evidence distinguishing RIPK1's scaffold function from its kinase activity. The use of Ripk1-K45A mice (kinase-dead but scaffold intact) as a control is appropriate and demonstrates that the protective effect requires the scaffold function, not kinase activity. This is consistent with the known dual functions of RIPK1 and strengthens the mechanistic interpretation. The data are clear and consistent across multiple parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C87",
+      "C91"
+    ],
+    "result": "RIPK1 has a novel physiological role as a scaffold in maintaining liver homeostasis during metabolic challenges. The RIPK1-TAK1-NF-\u03baB axis constitutes an essential scaffold platform for the liver's adaptation to metabolic fluctuations, and hepatocyte RIPK1 serves as a critical mechanism for preserving immune tolerance within the liver microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C76, C87, C91 represent the main conclusions of the study, synthesizing findings from multiple experiments. The conclusion that RIPK1's scaffold function (not kinase activity) is critical is well-supported by the Ripk1-K45A data. The proposal that the RIPK1-TAK1-NF-\u03baB axis is important (C87) is supported by integration with previous literature on TAK1 and NEMO deficiency. The conclusion about immune tolerance (C91) is supported by the observation that RIPK1 deficiency leads to inflammation during normally non-inflammatory fasting. These are appropriate high-level interpretations of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C92",
+      "C93"
+    ],
+    "result": "The physiological inflammation observed in RIPK1-deficient livers during fasting is milder but similar to pathological hepatic inflammation, characterized by upregulation of inflammatory molecules (Ccl2, Tnfa, Ifng, Il6) and macrophage recruitment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 appropriately characterize the inflammatory response as 'physiological inflammation' induced by loss of homeostatic regulation. The characterization as 'milder but akin to' pathological inflammation is reasonable given that the stimulus (fasting) is physiological but the response (inflammation) is pathological. The molecular and cellular features (C93) are well-documented in the data. This represents an interesting conceptual contribution to understanding inflammation in physiological contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "Background claims about liver metabolism, RIPK1 function, and previous findings on Ripk1-hepKO mice. These include established knowledge about liver adaptability to fasting, RIPK1's dual functions (scaffold vs. kinase), and prior observations that Ripk1-hepKO mice are normal under steady-state conditions but vulnerable to pathogen challenges.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C16 are background/context claims supported by appropriate citations to previous literature. These establish the rationale for the study and are not novel findings. The citations appear appropriate and the claims are consistent with established knowledge in the field. C15 is also confirmed by the current study's observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Discussion claims integrating current findings with previous literature on RIPK1's role in metabolism. These include connections to NASH pathogenesis, AMPK-RIPK1 signaling, aspartate metabolism, and comparisons with TAK1/NEMO deficiency phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C86 are discussion/integration claims that appropriately place the current findings in the context of previous literature. All claims are supported by appropriate citations. These represent valid synthesis of the field but are not novel experimental findings from this study. The integration with AMPK signaling (C81-C82) and TAK1/NEMO studies (C83, C85-C86) appropriately contextualizes the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Mechanistic discussion claims about upstream signals and liver immune tolerance. Both fasting and HFD increase FFA leading to hepatic accumulation and potential lipotoxicity through ER stress. The liver normally maintains immune tolerance to bloodstream antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C90 are discussion claims that integrate established knowledge (C88-C89 supported by citations; C90 is general immunology knowledge) with the current findings. These provide mechanistic context for interpreting the results but are not novel experimental findings. The connections are reasonable and well-supported by the literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Transcriptomic characterization of wild-type liver response to fasting and baseline differences in Ripk1-hepKO mice. Fasting remodeled expression of 999 genes in wild-type mice, enriched in metabolic pathways, and suppressed immune/inflammation genes. RIPK1 deficiency had minimal effects under fed conditions (79 DEGs).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C36 provide important baseline characterization and controls for the main transcriptomic findings. The observation that fasting normally suppresses immune genes in wild-type mice (C35) provides important context for the aberrant inflammatory response in Ripk1-hepKO mice. The minimal baseline differences in fed Ripk1-hepKO mice (C36) confirm that the phenotype is specifically stress-induced. These are appropriate control analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "SAA signaling may contribute to inflammation in Ripk1-hepKO mice. SAA released by hepatocytes has been reported to regulate immune responses and tumor development, and enhanced SAA signaling in Ripk1-hepKO mice may exacerbate inflammatory responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C55 is supported by appropriate citations about SAA's role in immunity and tumor development. However, C56 is speculative as it proposes a mechanism (SAA-mediated inflammation exacerbation) that is not directly tested in this study. While the observation of increased SAA signaling (C54) is supported by data, the causal role in inflammation is inferred rather than demonstrated. Additional experiments (e.g., SAA blockade or knockdown) would be needed to establish causality.",
+    "result_type": "MINOR"
+  }
+]

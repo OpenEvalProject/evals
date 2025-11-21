@@ -1,0 +1,357 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C30",
+      "C64",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C84",
+      "C85",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The authors collected 20,225 hand-drawn ROCF images from 90 countries and obtained unbiased ground truth scores using crowdsourced human intelligence. Approximately 5,000 crowdsourcing workers scored each figure element (average 13.38 raters per figure), with quality control measures excluding workers with >20% disagreement with clinician ratings. Ground truth was derived by computing the median score for each item.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C101 provide comprehensive documentation of the data collection and ground truth labeling methodology. The crowdsourcing approach with quality control measures (C72, C99-C100) and use of median scores (C71, C101) is well-justified and appropriately described. The dataset size and diversity (C84-C85) are clearly stated with supporting figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C103"
+    ],
+    "result": "Human raters achieved an average MSE of 16.3 and MAE of 2.41, while professional clinicians performed better with MSE of 9.25 and MAE of 2.15. The mean empirical standard deviation of crowdsourced scores was 3.25.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C36 and C103 establish baseline human performance metrics that are essential for evaluating the AI model. The quantitative results are clearly stated and the comparison between average raters and clinicians (C36) is appropriately inferred from the data. These metrics provide the benchmark against which the model is evaluated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The multilabel classification network achieved MSE of 3.56 and MAE of 1.22, outperforming human raters. Progressive improvements were achieved through data augmentation (MSE 3.37, MAE 1.16), test-time augmentation (MSE 3.32, MAE 1.15), and regression modeling (MSE 3.07, MAE 1.14). The best model combined regression and classification approaches, achieving MSE of 3.00 and MAE of 1.11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 document a systematic progression of model improvements with clear quantitative metrics at each stage. The final combined model (C42) shows substantial improvement over human performance (MSE 3.00 vs 16.3 for humans, 9.25 for clinicians). The observation that DA/TTA benefits classification but not regression (C43-C44) is appropriately noted as surprising but is supported by experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C89",
+      "C90",
+      "C102"
+    ],
+    "result": "Model performance was successfully replicated in a pre-registered independent prospective validation study with 2,498 ROCF images from 961 healthy adults and 288 patients, achieving MSE of 3.32 and MAE of 1.13.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C89-C90, and C102 demonstrate rigorous validation methodology with pre-registration (C89) and independent data collection (C90). The prospective validation performance (MSE 3.32, MAE 1.13) is nearly identical to the retrospective test set performance (MSE 3.00, MAE 1.11), strongly supporting generalizability. Pre-registration is a gold standard for reducing bias.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C81"
+    ],
+    "result": "The model performs in a highly unbiased manner with errors concentrated around zero and more evenly distributed than clinician errors. The model outperforms both online raters and clinicians, with no considerable bias toward specific figure elements and balanced MAE across individual items.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 and C47-C51 are well-supported by the error distribution analysis shown in Figure 3. The model's superior performance is demonstrated by lower MSE/MAE compared to both human raters and clinicians (C8, C81). The lack of item-specific bias (C50-C51) is an important finding supported by Figure 3C,F. The slight bias toward higher scores (C49) is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C9",
+      "C79"
+    ],
+    "result": "The scoring system can reliably identify and accurately score individual figure elements in previously unseen ROCF drawings, maintaining explainability by providing visualization of detailed score breakdowns for each item.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C79 are supported by the item-specific performance metrics (Figure 2B, Figure 3C) and the application interface (Figure 1\u2014figure supplement 5). The multihead architecture explicitly predicts scores for each of 18 elements, enabling item-level explainability. This is a critical feature for clinical acceptance of AI systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C74",
+      "C75"
+    ],
+    "result": "The model maintains high accuracy and generalizes well across various demographics and clinical conditions, including children and patients with neurological disorders. The system delivers accurate scores even for distorted drawings or those with omissions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55, C74-C75 are supported by the comprehensive performance analysis in Figure 4 showing consistent performance across age groups, genders, clinical conditions, and test types. The dataset diversity (C74) provides the foundation for this generalization. However, the claim about accuracy with distorted drawings (C75) is somewhat inferential\u2014while the diverse dataset likely includes such cases, specific quantitative evidence for this claim is not explicitly provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C76",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The scoring system is highly robust against realistic semantic transformations including rotations, perspective changes, brightness, and contrast variations. Data augmentation significantly improves robustness against rotations and perspective changes. Performance degrades only under unrealistic and extreme transformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C121-C123 are well-supported by the comprehensive robustness analysis in Figure 5 and Figure 5\u2014figure supplement 1. The systematic testing across different transformation types and magnitudes provides strong evidence. The finding that DA improves robustness to geometric transformations but not brightness/contrast (C121) is appropriately explained by the DA pipeline design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C86",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Convergence analysis revealed that after approximately 8,000-10,000 images, no substantial improvements could be achieved by including more data. The acquired dataset is rich and diverse enough to obtain a powerful model, suggesting future improvements should focus on algorithmic rather than data-centric efforts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46 and C86-C94 are supported by the convergence analysis shown in Figure 2D. The finding that performance plateaus around 8,000-10,000 images is clearly demonstrated. The conclusion about dataset sufficiency (C93) is appropriately drawn from this analysis. However, the speculation about future algorithmic improvements (C94) is reasonable but remains speculative\u2014it's possible that different types of data (not just more data) could still improve performance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The model exhibits comparable MAE across the entire range of total scores, with a trend toward lower MAEs for high scores. This is explained by high-score images having fewer possible element combinations and proportionally more training data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 are supported by Figure 3G showing score-specific performance. The explanations for better performance on high scores (C53-C54) are logical and well-reasoned. The combinatorial argument (C53) is sound, and the dataset composition observation (C54) is verifiable from Figure 1F showing the score distribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "Two neural network architectures were implemented: a regression-based network and a multilabel classification network. Both use a shared feature extractor with 18 parallel decision heads. The model was trained on 12,944 images with 3,236 for validation and 4,045 for testing, using PyTorch 1.8.1 with Adam optimizer and specific hyperparameters including learning rate decay, dropout, and balanced batch sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C117 provide comprehensive documentation of the model architecture and training methodology. The architectural design (C105-C106) is clearly described and shown in Figure 2A. Training details including data splits (C109-C110), optimization parameters (C113-C114), and regularization (C115) are appropriately specified. The balanced sampling strategy (C116) addresses the dataset imbalance issue. These methodological details are sufficient for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Data augmentation using Gaussian blur, random perspective changes, and rotations (\u00b110\u00b0) was applied during training. Test-time augmentation using five deterministic rotations uniformly distributed between -2\u00b0 and 2\u00b0 improved performance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C107-C120 describe the augmentation strategies. The DA transformations (C108) are appropriate for the task. The TTA approach (C119-C120) is well-justified\u2014deterministic rotations worked better than random transformations. The general principle (C107) is established knowledge. These augmentation choices are reasonable and their effects are demonstrated in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "ROCF images in the dataset have varying resolutions from 100\u00d7140 to 3500\u00d75300 pixels. Experiments showed that inputs of size 232\u00d7300 yielded the best performance for both augmented and non-augmented models, and this resolution was used for all subsequent analyses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by the image resolution analysis shown in Figure 2E. The systematic testing of different resolutions (C125) provides empirical justification for the chosen resolution. The decision to standardize on 232\u00d7300 (C126) is appropriate given the experimental results. This analysis addresses an important practical consideration for model deployment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "The model has been integrated into a tablet and smartphone application that provides instant scoring from photos of ROCF drawings. The application is currently in beta testing with selected clinicians in real-world settings.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 describe the practical implementation and current deployment status. The application interface is shown in Figure 1\u2014figure supplement 5. The beta testing status (C78) is appropriately stated as ongoing. This demonstrates translation of research to clinical practice, though full validation of real-world performance is still pending.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The ROCF is a widely-used neuropsychological test for assessing non-verbal visual memory, but manual scoring is time-consuming (5-15 minutes), requires training, and suffers from inter-rater variability. The test consists of 18 elements scored 0-2 points each across three conditions (Copy, Immediate Recall, Delayed Recall).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 establish the clinical context and motivation for the study. These are well-supported by citations to established literature (C2, C13-C14, C16-C19, C24) and represent accepted knowledge in neuropsychology. The description of the ROCF test procedure (C20-C22) is standard. The limitations of manual scoring (C3, C23-C24) are well-documented in the cited literature and provide clear motivation for automation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Previous automated scoring attempts include: Canham et al. (2000) identifying 6 of 18 elements with precision; Vogt et al. (2019) achieving r=0.88 correlation but not strictly equivalent scores; and Petilli et al. (2021) proposing a tablet-based system with spatial, procedural, and kinematic parameters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C29 accurately summarize prior work on automated neuropsychological test scoring. These are appropriately cited and provide context for the current study's contributions. The critical assessment of Vogt et al.'s work (C27-C28) noting the lack of equivalence despite good correlation is particularly important for establishing the novelty of the current approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Manual ROCF scoring requires training, depends on subjective judgments introducing human biases, and has low inter-rater reliability. An automated system can overcome intra- and inter-rater variability, reduce clinician workload, and support more accurate and timely healthcare decisions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C61 articulate the problems with manual scoring and benefits of automation. The issues with manual scoring (C56-C58) are supported by citations and Figure 3\u2014figure supplement 2. The proposed benefits of automation (C59-C61) are logical inferences well-supported by the demonstrated model performance. These claims effectively motivate the study and contextualize its clinical significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Deep learning has achieved above human-level performance on well-specified computer vision tasks, but depends on large training sets with accurate labels. Electronic health records are increasingly available but challenges remain in handling big health data. High-quality labeled datasets are the foundation of successful computer vision systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 and C65-C68 provide general context about deep learning and healthcare data challenges. These represent established knowledge in the field. The citation about EHR growth (C65) provides specific supporting evidence. These claims appropriately frame the data collection and labeling challenges addressed by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C73",
+      "C82",
+      "C83"
+    ],
+    "result": "The twofold approach combining digitization and crowdsourced scoring can provide a roadmap for AI in neuropsychological testing more generally, as it can be adapted to other tests like the Clock Drawing Test, Taylor Complex Figure Test, and Hamasch 5-point test. This demonstrates that automated scoring systems can advance neuropsychological assessment quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73, C82-C83 make broader claims about the generalizability and impact of the approach. These are reasonable inferences supported by the demonstrated success with ROCF. The citations to other neuropsychological tests (C73) show awareness of the broader landscape. However, actual demonstration of transferability to other tests would strengthen these claims\u2014they remain somewhat speculative though well-reasoned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The automated scoring is completely reproducible and facilitates valid large-scale comparisons of ROCF data, enabling population-based cognitive screening and assisted self-assessments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is a logical inference from the automated nature of the system. Reproducibility is inherent in algorithmic scoring (same input always produces same output). The potential for large-scale applications is reasonable given the demonstrated performance, though actual implementation at scale remains to be demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The study received ethical approval from the Kantonale Ethikkommission (BASEC-Nr. 2020-00206) and all collaborators obtained written informed consent and/or data usage agreements from participants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 document ethical compliance. These are straightforward statements about regulatory approvals and consent procedures. Proper documentation of ethical approval is essential for human subjects research and is appropriately included.",
+    "result_type": "MINOR"
+  }
+]

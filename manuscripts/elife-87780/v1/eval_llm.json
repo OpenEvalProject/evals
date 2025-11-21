@@ -1,0 +1,396 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C73",
+      "C83"
+    ],
+    "result": "Whole brain volume across 16 primate species is best explained by body mass (\u03b2=0.47\u00b10.15), daily traveled distance (\u03b2=0.05\u00b10.01), and population density (\u03b2=0.007\u00b10.003), with body mass showing the strongest effect followed by ecological constraints (daily traveled distance) and then social constraints (population density).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C16, C73, and C83 collectively demonstrate that PGLS model comparison identified these three variables as the best predictors of whole brain volume. The statistical coefficients are explicitly reported with standard errors, and the relative magnitudes differ by orders of magnitude. The leave-one-out validation (C17-C19) confirms robustness, particularly for body mass and daily traveled distance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C22",
+      "C23",
+      "C76",
+      "C77",
+      "C78",
+      "C86"
+    ],
+    "result": "Frontal pole (FP) volume is predicted by the same three variables as whole brain, but shows a more balanced influence between social (population density, \u03b2=0.011\u00b10.004) and ecological (daily traveled distance, \u03b2=0.07\u00b10.02) constraints compared to whole brain, with both having similar orders of magnitude.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C23, C76-C78, and C86 provide converging evidence that FP volume shows equivalent sensitivity to both social and ecological variables, contrasting with the whole brain pattern. The statistical coefficients are reported with standard errors, and the interpretation of 'same order of magnitude' is explicitly stated. This differential sensitivity across brain regions is a key finding supporting the mosaic brain hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C80",
+      "C81",
+      "C88",
+      "C101"
+    ],
+    "result": "DLPFC volume is significantly predicted by body mass (\u03b2=0.47\u00b10.18) and daily traveled distance (\u03b2=0.047\u00b10.01), but population density shows weak and non-significant influence (\u03b2=0.006\u00b10.003, p=0.067), indicating DLPFC is much less sensitive to social constraints than FP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C26, C80-C81, C88, and C101 demonstrate that DLPFC shows a distinct pattern from FP, with strong ecological but weak social influences. The failure to reach significance for population density (p=0.067) is explicitly reported, and leave-one-out validation confirms this pattern is robust. This differential sensitivity between FP and DLPFC is central to the study's conclusions about region-specific socio-ecological pressures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C74"
+    ],
+    "result": "Leave-one-out validation for whole brain volume shows body mass effects are highly robust (significant in all 16 models), daily traveled distance is nearly as robust (significant in 15/16 models), while population density is less reliable (loses significance in 4/16 models), confirming ecological constraints are stronger and more reliable than social constraints for whole brain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C19 and C74 provide explicit validation results showing differential robustness across predictors. This sensitivity analysis strengthens confidence in the relative ordering of effects (body mass > ecological > social) and addresses concerns about sample size limitations. The pattern is consistent with the main PGLS results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C75",
+      "C79",
+      "C82"
+    ],
+    "result": "All three brain measures (whole brain, FP, DLPFC) are highly intercorrelated (r=0.99), and including whole brain as a covariate eliminates the effects of all socio-ecological variables for both FP and DLPFC, leaving only whole brain volume as a significant predictor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C75, C79, and C82 document the strong collinearity between regional and whole brain volumes. This is expected given that FP and DLPFC are parts of the whole brain, but it creates analytical challenges for demonstrating regional specificity. The authors address this by comparing effect sizes across regions rather than using residualized measures, which is a reasonable approach given their theoretical framework (C71-C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C84",
+      "C102",
+      "C103"
+    ],
+    "result": "The strong influence of daily traveled distance (ecological constraints) on both FP and DLPFC volumes suggests that metacognition and working memory are critical for foraging in primates, supporting the ecological brain hypothesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C84, C102-C103 draw inferences from the statistical findings (daily traveled distance significantly predicts both FP and DLPFC volumes) to functional interpretations based on laboratory studies linking these regions to metacognition and working memory. The inference is reasonable given the established functional associations (C1-C2, C9-C10), though it remains correlational and cannot establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C85",
+      "C92",
+      "C93",
+      "C100"
+    ],
+    "result": "FP shows greater sensitivity to social constraints (population density) than DLPFC, and FP is influenced by both social and ecological variables with similar magnitude, suggesting FP belongs to both the 'social brain' and 'ecological brain' networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C85, C92-C93, and C100 integrate the differential sensitivity findings (FP more sensitive to population density than DLPFC) with theoretical frameworks from laboratory studies. The conclusion that FP serves dual social-ecological functions is supported by the balanced effect sizes for population density and daily traveled distance on FP volume, contrasting with DLPFC's weak social sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C99",
+      "C105",
+      "C110"
+    ],
+    "result": "The evolution of executive functions in FP and DLPFC is driven by both ecological and social constraints, but the relative influence varies across regions, confirming that 'social brain' and 'ecological brain' concepts are not mutually exclusive and supporting the mosaic brain evolution framework.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90, C99, C105, and C110 synthesize the main findings into evolutionary interpretations. The data support differential regional sensitivity to socio-ecological variables (FP: balanced social-ecological; DLPFC: primarily ecological), which aligns with the mosaic brain hypothesis. However, the evolutionary claims are inferential and would benefit from additional phylogenetic analyses beyond PGLS.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C113",
+      "C70"
+    ],
+    "result": "The study measured FP and DLPFC volumes in 31 brain MRI scans from 16 primate species, chosen to cover a wide range of phylogenetic distances and socio-ecological diversity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C113, and C70 describe the sample composition. The sample size is modest (16 species, 31 scans) but reasonable for comparative neuroanatomy given the difficulty of obtaining primate brain scans. The species selection strategy (phylogenetic and ecological diversity) is appropriate for the research questions, though larger samples would strengthen conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C69"
+    ],
+    "result": "FP boundaries were defined using macroscopic anatomical landmarks: anterior limit at brain's anterior edge, posterior at cingulate sulcus, ventral at dorsal limit of gyrus rectus, and dorsal at fundus of superior frontal sulcus (apes/humans) or principal sulcus (monkeys), prioritizing functional maps and reliable landmarks over cytoarchitectonic criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 and C69 detail the FP delineation protocol. The approach is pragmatic for cross-species comparison, using visible sulcal landmarks rather than cytoarchitectonic boundaries that would require histology. The authors acknowledge this is conservative (especially the dorsal boundary in monkeys) and conducted sensitivity analyses with alternative boundaries (Supplementary file 4). The methodology is transparent and justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "DLPFC boundaries were defined using species-specific landmarks: for apes/humans, from cingulate sulcus anteriorly to precentral sulcus posteriorly, bounded ventrally by frontal inferior sulcus; for monkeys, in/around principal sulcus, from cingulate sulcus to end of arcuate sulcus, bounded ventrally by principal sulcus fundus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C45 describe DLPFC delineation with different landmarks for monkeys versus apes/humans due to sulcal pattern differences. This species-specific approach is necessary and well-justified by anatomical differences. The boundaries are based on established literature (C9, C69) and represent a reasonable compromise between precision and cross-species comparability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C117"
+    ],
+    "result": "Eleven socio-ecological variables were collected from literature on wild populations, including body mass, dietary quality index (DQI = 1s+2r+3.5a, where low ~100 indicates folivory, high ~200 indicates diverse diets), tool use, daily traveled distance, group size, population density, social system, mating system, mate guarding, seasonal breeding, and weaning age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C49 and C117 describe the socio-ecological data collection. The DQI formula is cited (Sailer et al., 1985), and the interpretation of values is reasonable. Using literature-based averages for species-level variables is standard practice in comparative studies, though it introduces uncertainty from intra-specific variation (acknowledged in C120). The variable selection covers relevant social and ecological dimensions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C53",
+      "C54"
+    ],
+    "result": "Phylogenetic relationships were obtained from 10ktrees version 3 (Bayesian inference from 11 mitochondrial and 6 autosomal genes across 301 primate species), and phylogenetic generalized least squares (PGLS) was used to account for phylogenetic non-independence when evaluating socio-ecological influences on neuroanatomy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C51, C53-C54 describe the phylogenetic methods. Using 10ktrees is appropriate and standard for primate comparative studies. PGLS is the correct statistical approach for phylogenetically structured data, properly accounting for shared ancestry. The methodology is well-established and appropriately applied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C52",
+      "C55",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Brain measurements were log10-transformed, cerebellum was excluded (missing in some scans), whole brain was semi-automatically segmented using Avizo v9.0 with gray-level thresholding, and FP/DLPFC were manually segmented slice-by-slice using the brush tool.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C55, C114-C116 describe data processing. Log-transformation is standard for allometric analyses. Excluding cerebellum due to missing data is a limitation but necessary for consistency. Manual segmentation of FP/DLPFC is labor-intensive but appropriate given the need for anatomical precision across species. The methods are clearly described and reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C68",
+      "C71"
+    ],
+    "result": "Brain region size provides a reliable proxy for the strength of its behavioral influence because regional volume estimates neuron number, and there is a known positive relationship between cortical neuron number and cognitive skills in primates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C29, C68, and C71 articulate the core theoretical assumption linking brain structure to function. This is supported by extensive citations (Herculano-Houzel 2017, 2018; Barton & Harvey 2000; etc.). While the assumption is widely accepted in comparative neuroscience, it remains an assumption\u2014larger regions don't always mean better function, and the relationship may vary across species and regions. The authors acknowledge this is a proxy measure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C107"
+    ],
+    "result": "The study used absolute rather than scaled (relative to whole brain) volume measures because scaling procedures would distort the relationship between volume and neural counts, and more specific brain measures capture ecology-neurobiology-cognition relationships better than crude brain size measures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72 and C107 justify the methodological choice to use absolute volumes. This is supported by citations (Barton et al. 1995; Herculano-Houzel 2017; etc.) and represents a defensible position in an ongoing debate in comparative neuroscience. The authors acknowledge that relative measures are common but argue absolute measures better preserve the neuron-function relationship. The strong intercorrelations (C13) make this choice consequential for interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Human data used averaged values between industrialized and hunter-gatherer societies; effects of captivity and sex were neglected as they are small compared to inter-species differences; intra-specific brain variability is negligible compared to inter-specific variability; humans were included because biological laws should apply across primates and frontal cortex organization is qualitatively similar.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C118-C122 address several methodological decisions. Averaging human socio-ecological values across vastly different societies (C118) is problematic and introduces substantial uncertainty. Neglecting captivity and sex effects (C119) is justified by citation but may still introduce noise. Including humans (C121-C122) is reasonable but their extreme brain size could disproportionately influence results. The leave-one-out analyses partially address this, but more sensitivity analyses would strengthen confidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "FP is involved in metacognition and DLPFC in working memory, as demonstrated by extensive work in humans and macaques; these regions and their cognitive functions are relatively well conserved between species; FP strongly overlaps with BA10 and has specific connectivity patterns with temporal cortex and superior temporal sulcus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C9-C10, and C30-C32 establish the functional associations that motivate the study. These are well-supported by citations to established literature (Fuster 2008; Mansouri et al. 2017; Petrides 2005; Sallet et al. 2013; etc.). The functional conservation assumption is critical for the study's logic\u2014if FP and DLPFC have different functions across species, the socio-ecological correlations would be difficult to interpret. The evidence for conservation is reasonable but not definitive.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The social brain hypothesis proposes social interactions drove brain size increases; the ecological brain hypothesis proposes foraging demands drove increases; laboratory studies have identified social brain networks in macaques and specific regions underlying foraging; social and foraging brain systems partially overlap in frontal lobes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8, C58-C62 review established theoretical frameworks and prior findings. These are well-supported by citations to foundational papers (Dunbar 1998; Milton 1981; Rushworth et al. 2013; etc.). This background establishes the context for the current study's attempt to bridge laboratory neuroscience with field-based socio-ecology. The review is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Executive functions allow organisms to organize behavior over space and time to reach goals and rely on prefrontal cortex; group hunting occurs in few primate species with developed metacognition; DLPFC is rarely associated with social interactions in laboratory studies, though working memory and planning could be involved in natural social interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 provide additional background on executive functions and their potential roles. C63-C66 are well-supported by citations. C67 is speculative (acknowledged as such) but reasonable\u2014the gap between laboratory findings (DLPFC not social) and potential natural functions (working memory useful for social interactions) motivates the empirical investigation. The speculation is appropriately qualified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Daily traveled distance is defined as an index of ecological constraints, and population density is defined as an index of social constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4-C5 define the key socio-ecological proxies. While these are reasonable proxies, they are simplifications. Daily traveled distance reflects foraging ecology but also habitat structure, predation risk, and other factors. Population density reflects social complexity but imperfectly\u2014group size, social system, and interaction quality may matter more than density per se. The authors acknowledge these are proxies, but the validity of these specific proxies for the intended constructs could be questioned. Alternative or additional measures might capture social/ecological complexity better.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Social and ecological constraints remain strongly related in the wild (though not strongly correlated in this dataset); greater population density implies greater food competition and potentially increased travel distances; benefits of increased FP volume could relate to both social and ecological functions; executive function development could enable both complex social interactions and complex foraging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C98 discuss the interconnection of social and ecological factors. C95 notes the lack of strong correlations in the dataset contradicts the assertion that these factors are 'strongly related' in nature. C96-C98 are logical inferences about how social and ecological pressures might interact, but they remain speculative. The lack of correlation between population density and daily traveled distance in the data (Supplementary file 7) weakens the argument that these variables capture overlapping pressures, though it could also mean they represent independent dimensions of selection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "A previous study on VMPFC found its size was predicted by distinct ecological variables (dietary quality and weaning age) with little modulation by group size; combined results suggest specific neuro-cognitive entities can be related to specific socio-ecological challenges in natural conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 reference prior work by the same authors (Louail et al. 2019) showing region-specific socio-ecological correlates. This strengthens the current findings by demonstrating consistency across studies and brain regions. However, the prior study had only 5 species and couldn't use PGLS, limiting comparability. The convergence across studies is encouraging but would benefit from replication with larger samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C91",
+      "C106",
+      "C111",
+      "C112"
+    ],
+    "result": "Neuro-cognitive entities defined in laboratory conditions can be articulated with socio-ecological processes in the wild to better understand primate cognition and behavior; results integrate into the mosaic brain evolution framework; this approach provides insight into neuro-cognitive operations in the wild and their evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91, C106, C111-C112 articulate the study's broader implications. The successful demonstration of region-specific socio-ecological correlates that align with laboratory-defined functions supports the feasibility of bridging laboratory neuroscience and field ecology. This is a valuable contribution to comparative cognitive neuroscience. However, the approach remains correlational and cannot establish causal mechanisms or definitively link structure to function across species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C94",
+      "C104"
+    ],
+    "result": "The data are compatible with the ecological brain hypothesis; social interactions rely more on rostro-medial prefrontal regions than DLPFC according to laboratory studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C104 interpret findings in relation to existing hypotheses. C94's compatibility with the ecological brain hypothesis is supported by the strong effects of daily traveled distance on all brain measures. C104 is supported by citations to laboratory studies and aligns with the weak population density effect on DLPFC. Both interpretations are reasonable given the data.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,371 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Growth rate in E. coli cells is dependent on genome copy number. 1N cells (single chromosome) show sub-exponential growth with absolute growth rate plateauing at large cell sizes, while multi-N cells (multiple chromosomes) display exponential growth similar to wild-type cells. This growth rate difference is apparent within physiological cell sizes and is consistent across different methods of blocking DNA replication (CRISPRi oriC and dnaC2 mutant). Each additional nucleoid contributes to higher cellular growth at a given cell size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C39 provide converging evidence from multiple experimental approaches (CRISPRi oriC, dnaC2 mutant) showing that genome copy number affects growth rate. The data include single-cell growth trajectories (C26), quantitative measurements of absolute and relative growth rates (C27-C30), and validation that multi-N cells grow identically to WT while 1N cells grow slower (C31). The dose-response relationship between nucleoid number and growth rate (C37-C38) strengthens the causal interpretation. However, the claims rely on accurate cell segmentation and area measurements, and potential artifacts from cell segmentation are acknowledged but not fully resolved (Figure 1\u2014figure supplement 3).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C112",
+      "C113"
+    ],
+    "result": "DNA concentration-dependent growth limitation is conserved in C. crescentus, suggesting this is a broadly conserved bacterial phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C112, and C113 demonstrate that the DNA limitation phenotype observed in E. coli is also present in the distantly related bacterium C. crescentus, which has different cell wall growth patterns and DNA replication control mechanisms. This cross-species validation strengthens the generalizability of the findings. However, the C. crescentus data appear less extensive than the E. coli data (Figure 1\u2014figure supplement 8), and the claim of broad conservation (C113) is an inference based on only two bacterial species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Ribosomal protein concentration remains constant in 1N cells despite reduced growth rate, indicating that ribosome concentration does not explain the growth rate difference between 1N and multi-N cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C44 use two independent methods (fluorescence microscopy of RpsB-msfGFP and TMT-MS of 54 ribosomal proteins) to demonstrate that ribosomal protein concentration remains constant across cell sizes in both 1N and multi-N cells. This rules out ribosome concentration as the explanation for growth rate differences. The only exception is L31B (C43), a stationary phase paralog, which is appropriately noted. The consistency between methods and the comprehensive coverage of ribosomal proteins strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The fraction of active (translationally engaged) ribosomes decreases with cell size in 1N cells but remains constant in multi-N cells. The total number of active ribosomes matches the observed growth rate differences between 1N and multi-N cells, indicating that DNA limitation reduces growth rate by decreasing ribosome activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C57 use single-molecule tracking to demonstrate that ribosome activity (measured by diffusion coefficient) decreases in 1N cells but not in multi-N or WT cells. The validation with rifampicin treatment (C51) confirms that slow-diffusing ribosomes are translationally active. The quantitative match between total active ribosomes and growth rate (C55) provides strong mechanistic support. However, the interpretation relies on the assumption that diffusion coefficient accurately reflects translational activity, which is validated but could be affected by other factors like ribosome clustering or cytoplasmic viscosity changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "RNAP concentration increases in 1N cells, but the fraction of active RNAPs decreases, resulting in a plateau in total active RNAP amount. This indicates that DNA substrate limitation, not RNAP availability, reduces transcription in 1N cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C74 demonstrate that RNAP concentration increases in 1N cells (ruling out RNAP scarcity as the limiting factor), while the fraction of active RNAPs decreases, leading to a plateau in total active RNAPs. The use of both fluorescence microscopy (RpoC-YFP) and TMT-MS for multiple RNAP subunits (C62) strengthens the concentration measurements. Single-molecule tracking with rifampicin validation (C68) confirms the activity measurements. The exclusion of Rsd as a confounding factor (C72-C73) is appropriate. The conclusion that DNA substrate limitation reduces transcription (C74) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "mRNA concentration decreases more rapidly than rRNA concentration upon genome dilution in 1N cells, as measured by SYTO RNASelect and EUB338 FISH staining.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C81 use two complementary fluorescent probes (SYTO RNASelect for total RNA and EUB338 for 16S rRNA) to show differential decay rates of mRNA vs. rRNA in 1N cells. The control experiments with JF549 staining (C79) rule out membrane permeability changes. The validation with WT cells in different media (Figure 4\u2014figure supplement 3) confirms the method can detect rRNA concentration differences. However, the interpretation that RNASelect primarily reflects mRNA (C80) is an inference based on differential decay rates and prior literature, not direct measurement. The ~50% reduction in RNASelect vs. ~5% reduction in EUB338 (C75-C76) provides strong support for the differential effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Mathematical modeling (ODE models A and B) recapitulates the experimental observations and demonstrates that DNA limitation leads to reduced transcription, decreased mRNA concentration, reduced ribosome activity, and ultimately sub-exponential growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C92 describe two ODE models that successfully recapitulate the experimental data on growth rates and active fractions of RNAPs and ribosomes. The models provide a mechanistic framework linking DNA concentration to growth rate through a cascade of effects. Both models perform similarly after optimization (C85), suggesting the conclusions are robust to model assumptions. However, the models are phenomenological and rely on parameter fitting to experimental data. The parameters are constrained by literature values (Supplementary files 2-3), but the optimization process could potentially overfit the data. The model predictions about the cascade of events (C88-C92) are interpretations rather than direct experimental observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Genome dilution rapidly limits transcription in both nutrient-rich and nutrient-poor media, but the downstream effects on ribosome activity and growth are delayed in nutrient-poor conditions, suggesting the existence of cellular buffering mechanisms that are more effective under slow growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C97 and C133-C136 demonstrate that while RNAP activity is rapidly affected by genome dilution in all media tested (C93-C94), the effects on ribosome activity and growth are delayed in M9gly and M9ala compared to M9glyCAAT (C95-C96, C134). This suggests buffering mechanisms (C97, C135-C136), though the specific mechanisms are speculative. The data are consistent across multiple measurements (RNAP activity, ribosome activity, growth rate) and media conditions. However, the interpretation of buffering mechanisms is speculative (C97, C135-C136 are marked as SPECULATION), and alternative explanations are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C138",
+      "C152"
+    ],
+    "result": "Genome dilution globally remodels the proteome composition in 1N cells, with ~63% of proteins showing altered scaling with cell size, while ~94% of proteins maintain constant concentration in multi-N cells. Protein abundance scales with cell size only when ploidy also scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C102, C138, and C152 use TMT-MS to demonstrate global proteome remodeling in 1N cells. The high reproducibility between biological replicates (C98) and the principal component analysis (C102) strengthen the findings. The contrast between 1N cells (~37% proteins with slopes near zero) and multi-N cells (~94% proteins with slopes near zero) is striking. However, the TMT-MS data are from '1N-rich' populations that contain ~10-15% multi-N cells, which could affect the measurements. The claim that protein abundance scales with cell size only when ploidy scales (C138) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C141",
+      "C142"
+    ],
+    "result": "Proteome remodeling in 1N cells occurs primarily at the mRNA level, with a strong correlation (\u03c1=0.76) between mRNA and protein slopes. Short-lived mRNAs are slightly more susceptible to subscaling behavior, likely due to faster dilution with cell growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C108 and C141-C142 use RNA-seq and TMT-MS to demonstrate that proteome changes are driven by mRNA changes. The strong correlation (\u03c1=0.76, p<10^-10) between mRNA and protein slopes (C103) is compelling. The lack of correlation with transcription initiation rates (C105) and mRNA abundance (C106) suggests the effect is not simply due to highly transcribed genes. The negative correlation with mRNA decay rate for short-lived transcripts (C107) is statistically significant but weak (\u03c1=-0.18), and the authors appropriately acknowledge uncertainty about indirect effects (C108). The interpretation is reasonable but could benefit from additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C143",
+      "C144"
+    ],
+    "result": "Essential genes display superscaling behavior in 1N cells, with enrichment in positive RNA slopes, suggesting regulatory mechanisms that prioritize expression of essential genes when genome concentration becomes limiting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C110 and C143-C144 demonstrate that essential genes (from three independent datasets) show superscaling behavior (positive RNA slopes) in 1N cells, despite having similar mRNA decay rates as other genes. The statistical significance (Mann-Whitney p<10^-10) and consistency across datasets strengthen the finding. However, the interpretation that this reflects evolved regulatory mechanisms (C110, C144) is an inference. The molecular mechanisms underlying this prioritization are not identified, and alternative explanations (e.g., essential genes having different promoter architectures) are not fully explored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C145",
+      "C146"
+    ],
+    "result": "Protein slopes, but not RNA slopes, show a slight positive correlation with oriC proximity for genes within 1.35 Mb from oriC, suggesting that mRNA-independent mechanisms contribute to protein scaling behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C146 identify a subtle but statistically significant correlation (\u03c1=0.23, p<10^-10) between protein slopes and oriC proximity that is not present for RNA slopes. This suggests post-transcriptional mechanisms contribute to protein scaling. However, the correlation is weak (\u03c1=0.23), and the authors acknowledge uncertainty about the mechanism (C146). The biological significance of this observation is unclear, and it could reflect technical artifacts or indirect effects. Additional validation would strengthen this finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "Cells live at the cusp of DNA limitation for transcription, with \u226440% DNA dilution sufficient to affect transcription in rich media and <10% dilution sufficient in poor media. This suggests cells make enough\u2014but not too much\u2014DNA, presumably due to the energy cost of DNA replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C122 provide estimates of the DNA dilution threshold for transcription limitation based on experimental data and calculations. The observation that cells are sensitive to relatively small DNA dilutions (C118-C120) is supported by the data in Figures 3H and 6A-B. The interpretation that cells live at the cusp of DNA limitation (C121) is reasonable. However, the speculation about energy costs (C122) is not directly tested and relies on a single citation for the energy budget estimate. The 'crude estimations' (C119-C120) are described in Materials and methods but the accuracy of these estimates is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "The slower growth of 1N cells is not due to time spent on agarose pads or induction of stress responses (SOS or stringent response).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 provide important controls ruling out experimental artifacts and stress responses. The time-on-pad control (C35) addresses a potential concern about the microscopy setup. The deletion of recA (SOS response) and spoT/relA (stringent response) (C36) rules out major stress pathways. These controls strengthen the interpretation that the growth defect is specifically due to DNA limitation. However, other stress responses or adaptive mechanisms are not fully explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C115",
+      "C116",
+      "C117",
+      "C139",
+      "C140"
+    ],
+    "result": "DNA concentration-dependent scaling principles are conserved across domains of life, with similar phenomena observed in yeast and mammalian cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C115-C117, C139-C140 draw parallels between the bacterial findings and published eukaryotic studies. The comparison is appropriate and strengthens the significance of the findings. However, these claims rely heavily on citations to prior work rather than new experimental data. The conservation claim (C11) is based on experiments in C. crescentus (one additional bacterial species) and comparison with eukaryotic literature, which is somewhat limited evidence for 'broad conservation across domains of life.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background knowledge claims about bacterial growth, ribosome limitation, DNA replication timing, and eukaryotic genome concentration control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C12-C25 represent established knowledge in the field, appropriately cited. These provide context for the study but are not new findings. The citations appear appropriate and the knowledge claims are generally accepted in the field. Claim C19 (that DNA concentration impact on growth has not been formally tested) is a statement about the state of the field that motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Summary of main findings from the abstract: genome dilution limits RNAP activity, causes sub-linear ribosome scaling and sub-exponential growth, with effects detectable immediately in rich media but delayed in poor media, and globally remodels transcriptome and proteome composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C10 are high-level summary statements from the abstract that are supported by the detailed experimental results described in other claim groups. These represent the main conclusions of the paper and are well-supported by the comprehensive experimental evidence. The qualification 'presumably due to cellular buffering activities' in C7 appropriately acknowledges uncertainty about the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C153",
+      "C154"
+    ],
+    "result": "Speculation about future research directions and potential implications of the findings for understanding growth rate heterogeneity, deviations from exponential growth, natural bacterial populations, and bioengineering applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C125-C132 and C153-C154 are explicitly speculative (marked as SPECULATION in evidence_type) about future research directions and potential implications. These are reasonable hypotheses based on the findings but are not tested in the current study. They represent appropriate discussion of the broader significance and future directions but should not be evaluated as supported results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C45",
+      "C58",
+      "C59"
+    ],
+    "result": "Background knowledge and reasoning about ribosome dynamics and RNAP activity calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C58-C59 represent established knowledge (C45) and logical reasoning (C58-C59) that support the experimental design and interpretation. These are appropriately cited and provide necessary context for the experimental approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Analysis of nucleoid-associated proteins and comparison with eukaryotic histones shows variable scaling behavior, with some proteins (H-NS, HU, Dps) decreasing and others (IHF, Fis) showing superscaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C151 provide additional characterization of specific protein classes. The lack of GO term trends (C147) is a negative result that is appropriately reported. The comparison with eukaryotic histones (C148-C149) provides context. The variable behavior of nucleoid-associated proteins (C150-C151) is interesting but not deeply explored. These are descriptive findings that add detail but are not central to the main conclusions.",
+    "result_type": "MINOR"
+  }
+]

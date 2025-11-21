@@ -1,0 +1,520 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "EC cells constitute less than 1% of intestinal epithelial cells but produce >90% of the body's serotonin and modulate diverse physiological functions. Dysregulation of peripheral 5-HT levels is implicated in gastrointestinal diseases, cardiovascular disease, osteoporosis, sudden infant death syndrome, and psychiatric disorders including autism spectrum disorders.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 are all supported by citations to prior literature and represent established knowledge about EC cells and serotonin. These claims provide important background context for the study but do not represent novel findings from the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "The Tph1-bacTRAP reporter line successfully labels EC cells, with all GFP+ cells in the duodenum and >95% in jejunum and large intestine immunoreactive for 5-HT. scRNA-seq confirmed that 88.9% of GFP+ cells express Tph1, and 97.3% and 98.8% express the established EC markers Chga and Chgb, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C15 are well-supported by immunofluorescence and scRNA-seq data shown in Figure 1a,b and Figure 1\u2014figure supplement 1e. The validation of the Tph1-bacTRAP line is critical for the subsequent analyses and demonstrates high specificity for EC cells.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17"
+    ],
+    "result": "23% of GFP+ cells clustered with GFP\u2212 cells in the initial analysis, though these cells had higher levels of EC marker genes compared to the GFP\u2212 cells they clustered with.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C17 are supported by cluster analysis data shown in Figure 1\u2014figure supplement 1d-f. The authors appropriately acknowledge this heterogeneity and provide a reasonable interpretation that these may represent cells not fully committed to the EC lineage or low-level expression in other cell types.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "A total of 3,526 EC cells were retained for analysis from the second profiling experiment. The most significant transcriptomic distinction was observed between small intestinal and colonic EC cells by PCA, even though all EC cells expressed a core set of EC markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C20 are supported by the data processing methods and PCA shown in Figure 1\u2014figure supplement 1h,i. The regional distinction is a key finding that motivates the subsequent detailed characterization of EC subpopulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Regional transcription factor expression patterns distinguish EC cells along the rostro-caudal axis. Pitx2 and Osr2 show preferential enrichment in different gut segments, while Hox genes are observed only in the colon, with Hoxb13 specifically in the distal colon. This pattern is largely conserved in human gut mucosa, with OSR2 and HOXB13 enriched in ileum and rectum, respectively. Olfr78 and Olfr558 are enriched in colon but not small intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 are supported by expression data shown in Figure 1e,f and citations to prior literature. The conservation of regional TF patterns in human samples (C25-C27) strengthens the translational relevance of the findings. The consistency with prior work on Olfr78/Olfr558 (C28) provides additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "14 EC clusters were identified using the Louvain method, mostly demarcated by regions: duodenum (clusters 1-6), jejunum (clusters 7-10), proximal colon (clusters 11-12), and distal colon (clusters 13-14). EC cells from duodenum and jejunum displayed a continuum in tSNE space, indicating gradual transcriptomic change in the small intestine, whereas colonic EC cells formed distinct clusters. Cluster 6 (duodenum) was projected away from other SI EC cells, suggesting a distinct molecular profile.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C34 are supported by clustering analysis and tSNE visualization shown in Figure 1g,h. The identification of 14 distinct EC clusters is a major finding of the study. The observation about cluster 6 (C34) is appropriately noted as requiring further investigation, which is provided later in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "All intestinal EEC cells, including EC cells, derive from Neurog3+ cells. Crypt EC cells preferentially express Tac1, while villus EC cells preferentially express Sct. Based on these markers, clusters 4/5 (duodenum) and 8/9 (jejunum) were annotated as crypt clusters, and clusters 2/3/6 (duodenum) and 10 (jejunum) as villus clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by established knowledge (C35) and citations to prior lineage tracing studies (C36-C37). The cluster annotations (C38-C39) are supported by expression data shown in Figure 2a and validated in Figure 2\u2014figure supplement 1b-e. The authors appropriately note that this division reflects a gradient rather than a precise boundary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "EC cells exhibit differential expression of sensors and hormones along the crypt-villus axis. Ucn3 was frequently observed in crypt clusters 4/5, while Cartpt was enriched in villus cluster 3. smRNA-FISH validated that Ucn3 and Cartpt are selectively co-expressed with Tph1 but not Cck. Ucn3 was found in 57.0% of Tph1+ cells at the crypt/neck but only 24.0% in the villus. Cartpt was found in 63% of Tph1+ cells in the villus but only 16% in the crypt. Similarly, Trpa1 was detected in crypt cluster 5, while Trpm2 was co-expressed with 75% of Tph1+ cells in villi but only 12.5% in crypts. These findings suggest EC cells switch from Tac1/Ucn3/Trpa1 to Sct/Cartpt/Trpm2 as they migrate from crypt to villus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C50 are well-supported by scRNA-seq data shown in Figure 2a and validated by smRNA-FISH shown in Figure 2b-e. The quantification provides precise percentages with error estimates. The inference about signature switching (C50) is reasonable based on the spatial distribution data, though it remains correlative rather than demonstrating a causal developmental trajectory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Genes associated with oxidative detoxification were preferentially enriched in crypt clusters 5/4. GO enrichment analysis revealed that cluster 1 (progenitor) was enriched with terms 'translation' and 'ribosome biogenesis', crypt clusters 4/5 with metabolism and detoxification terms, and villus clusters 2/3 with 'hemostasis', 'viral process', and 'neutrophil degranulation', suggesting involvement in host defense.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by scRNA-seq data shown in Figure 2\u2014figure supplement 1f and GO enrichment analysis shown in Figure 2f. The functional interpretations are reasonable based on the GO terms, though direct functional validation would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Cluster 6 expressed the highest levels of Sct, Cck, and Ghrl, followed by Gcg and Nts. This cluster was almost exclusively duodenal EC cells (198/203, 97.5%) and comprised 10.9% of all retained duodenal EC cells. Immunohistochemistry validated that 5.8% of 5-HT+ cells were CCK+, representing 30.9% of CCK+ cells. Of the 5-HT/CCK double-positive cells, 82% were positive for ghrelin, 39.5% for oxyntomodulin, 8.9% for neurotensin, and 3.0% for GIP.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C63 are supported by scRNA-seq data shown in Figure 2\u2014figure supplement 1i and immunohistochemistry shown in Figure 2g-i. The identification of this rare multi-hormonal EC subpopulation is a significant finding. The validation by orthogonal methods (scRNA-seq and immunohistochemistry) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Onecut3 (Oc3) was highly enriched in cluster 6 cells. smRNA-FISH revealed that 100% of Cck+/Tph1+ cells were Oc3+, while only 11.4% of Cck-/Tph1+ cells and 58% of Cck+/Tph1\u2212 cells were Oc3+. Oc3 single-positive cells were rarely observed (1.8%). Triple-positive cells (Cck+/Oc3+/Tph1+) were more frequently observed in the villus (25%) than in the crypt (6%). The fraction of Cck+/Oc3+ cells decreased from 69.3% in the crypt to 22.8% in the villus, while Tph1+/Oc3+ cells increased from 17.3% to 38.0%, suggesting Cck+/Oc3+ cells gradually acquire Tph1 expression during migration to the villus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 are supported by scRNA-seq data shown in Figure 2j and smRNA-FISH data shown in Figure 3a-d. The identification of Oc3 as a marker for Cck+/Tph1+ cells is a significant finding. The inference about gradual acquisition of Tph1 expression (C72) is reasonable based on the spatial distribution data, though it remains correlative and would benefit from lineage tracing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Cluster 6 cells express a dual molecular signature. Crp was discretely expressed in cluster 6 and mapped to Cck+/Tph1+ cells by smRNA-FISH. Pathogen-associated molecular pattern recognition genes (Tlr2, Tlr5) were found in cluster 6 and validated by smRNA-FISH to be specific to Cck+/Tph1+ cells. Nutrient sensing GPCRs (Mc4r, Casr) were distinctly identified in cluster 6 and validated by smRNA-FISH to be specific to Cck+/Tph1+ cells. Among Mc4r+ or Casr+ cells, >85% co-expressed at least one pathogen/toxin recognition gene, suggesting a dual molecular signature associated with disparate functions in Cck+/Tph1+/Oc3+ cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C80 are supported by scRNA-seq data shown in Figure 3e and smRNA-FISH validation shown in Figure 3g,h and Figure 3\u2014figure supplement 1. The identification of this dual sensory signature is a significant finding. The high co-expression rate (>85%) of nutrient sensors with pathogen/toxin recognition genes (C79) strongly supports the conclusion of a dual signature (C80).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "In the Neurod1+ EEC dataset, a discrete cluster with high levels of Cck, Sct, Tph1, Ghrl, Gcg, and Nts was identified and annotated as a Cck+/Tph1+ cluster. Oc3 and key signature genes from cluster 6 were specifically identified in this population, confirming that the Cck+/Tph1+ population in the Neurod1-tdTomato dataset is equivalent to cluster 6 in the Tph1-GFP dataset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 are supported by scRNA-seq data shown in Figure 3i,j and Figure 3\u2014figure supplement 1. The validation of cluster 6 findings in an independent dataset using a different genetic model (Neurod1-tdTomato) significantly strengthens the conclusions about this EC subpopulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "In the Neurod1+ dataset, SI EC cells were preferentially enriched with Trpa1, Trpm2, Cartpt, and Ucn3. Casr was enriched in Cck+/Tph1+ cells, while Mc4r was primarily found in Cck+/Tph1+ cells from SI and additionally in distal colonic L cells. ~99% of Casr+ or Mc4r+ cells in the Cck+/Tph1+ cluster co-expressed at least one pathogen/toxin recognition sensor gene.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C87 are supported by scRNA-seq data from the Neurod1-tdTomato dataset shown in Figure 3j and Figure 3\u2014figure supplement 1j. These findings provide independent validation of the key observations from the Tph1-bacTRAP dataset, strengthening the overall conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Distinct molecular sensors were identified in EC cells versus other EEC cells. Cnr1 was enriched in Gip-dominant K cells, Asic5 in delta cells, and Gper1 in K cells. Stra6 was exclusively identified in distal colonic L cells and mapped to Pyy+ cells. Gpbar1 was found in proximal/distal colonic L cells rather than EC cells. Ffar1 was found in almost all Cck+ cells and Gcg+ L cells from both SI and colon. Ffar2 was widely observed in all EEC cells except K cells, while Ffar3 was primarily detected in L, I, and N cells. Almost all molecular sensors were confined to EEC cells with little or no expression in other epithelial cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 are supported by scRNA-seq data shown in Figure 3j and smRNA-FISH validation shown in Figure 3\u2014figure supplement 2. The comprehensive characterization of sensor expression across EEC subtypes is a significant contribution. The validation by smRNA-FISH and comparison with public datasets strengthens the conclusions. However, the claim about Gpbar1 (C92) should be interpreted cautiously as the authors note they may not have detected low expression levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Proximal colonic EC cells encompassed two clusters: Iapp+/Cpb2+/Serpine1+/Sct+ cluster 11 and Il12a+/Olfr558+/Olfr78+/Tac1+ cluster 12. GO analysis indicated involvement in coagulation regulation, supported by expression of Cpb2 and Serpine1. Iapp was validated in cluster 11 by smRNA-FISH. Olfr558 and Olfr78 (short-chain fatty acid sensors) were enriched in cluster 12. Il12a was concomitantly expressed in cluster 12 and validated by smRNA-FISH. smRNA-FISH mapped Olfr558 and Il12a to separate subsets of EC cells expressing Cpb2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 are supported by scRNA-seq data shown in Figure 4a, GO analysis shown in Figure 4\u2014figure supplement 1a, and smRNA-FISH validation shown in Figure 4b,c and Figure 4\u2014figure supplement 1b. The identification of functionally distinct proximal colonic EC subpopulations is a significant finding. The validation by smRNA-FISH strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Ascl1, encoding a TF required for early neural tube specification, was found in distal colonic EC cells (clusters 13 and 14) and exclusively mapped to Tph1+ cells but not Pyy+ cells in the distal colon, nor to any cells in proximal colon or jejunum. This feature was conserved in human gut mucosa, where ASCL1 was only detected in TPH1+ cells from the rectum.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C105 are supported by scRNA-seq data shown in Figures 1e and 4a, smRNA-FISH shown in Figure 4d and Figure 4\u2014figure supplement 1c, and human data shown in Figure 4\u2014figure supplement 1. The unexpected finding of Ascl1 in distal colonic EC cells is significant, and the conservation in human samples strengthens the translational relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Distal colonic EC cells were overwhelmingly associated with GO terms 'neuron projection morphogenesis', 'axon development', and 'microtubule-based process'. Numerous genes indicative of neuronal identity were mutually enriched in distal colonic ECs. Consistently, EC cells in the distal colon exhibited unique long basal processes (50-100 \u00b5m) with 5-HT concentrated in the processes, in contrast to typical flask-shaped EEC cells in proximal colon or SI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C108 are supported by GO analysis shown in Figure 4e and Figure 4\u2014figure supplement 1e, scRNA-seq data shown in Figure 4g, and immunofluorescence shown in Figure 4f and Figure 4\u2014figure supplement 1f. The identification of neuron-like features in distal colonic EC cells is a major finding. The morphological validation by immunofluorescence provides strong support for the transcriptomic observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "Foxj1 and Dnah9, genes required for cilia formation, were selectively enriched in cluster 13 and validated by smRNA-FISH in distal colonic EC cells but not in proximal colonic EC cells or Pyy+ L cells. Genes associated with GO terms 'cilium assembly/organization' were enriched in distal colonic EC cells. Cilia were identified by immunostaining against IFT88 and found to exclusively co-stain with 5-HT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C111 are supported by scRNA-seq data shown in Figure 4a, smRNA-FISH shown in Figure 4h and Figure 4\u2014figure supplement 1g, GO analysis shown in Figure 4\u2014figure supplement 1a,h, and immunostaining shown in Figure 4i. The identification of ciliated EC cells in the distal colon is a novel finding with potential functional implications for chemosensation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Piezo2, encoding a mechanosensitive ion channel, was identified in almost all distal colonic EC cells. smRNA-FISH revealed robust expression of Piezo2 in Ascl1+/Tph1+ cells in the epithelial layer of distal colon mucosa. Low levels of Piezo2 signals were observed in the lamina propria throughout the gut. Piezo1 transcripts were either undetectable or sparsely observed in epithelium and lamina propria. Piezo2 was not detected in Tph1+ cells from proximal colon, ileum, jejunum, and duodenum via smRNA-FISH. qPCR showed a significant enrichment of Piezo2 (up to 360-fold) in GFP+ cells from distal colon compared to other regions. Based on multiple lines of evidence, Piezo2 is preferentially enriched in neuron-like distal colonic EC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C118 are supported by scRNA-seq data shown in Figure 4a, smRNA-FISH shown in Figure 5a-c and Figure 5\u2014figure supplement 1a,b, and qPCR shown in Figure 5d. The identification of Piezo2 in distal colonic EC cells is a major finding. The validation by multiple orthogonal methods (scRNA-seq, smRNA-FISH, qPCR) provides strong support. However, the authors appropriately note that previous studies detected Piezo2 in small intestine by RT-PCR and immunohistochemistry, suggesting expression below the detection threshold of the current methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "Concomitant expression of Piezo2 with Foxj1 and Olfr78 was revealed by scRNA-seq and validated by smRNA-FISH, suggesting that a subpopulation of Piezo2+/Tph1+ cells are mechanosensory cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C120 are supported by scRNA-seq data shown in Figure 4a and smRNA-FISH shown in Figure 4\u2014figure supplement 1i. The inference that these cells are mechanosensory (C120) is reasonable based on the co-expression of Piezo2 (mechanosensor), Foxj1 (cilia), and Olfr78 (chemosensor), though direct functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "Chemogenetic activation of Piezo2+ cells leads to serotonin release. 15 min after intracolonic CNO administration, a robust elevation (2.1-fold) of serum serotonin was observed in Piezo2-CHRM3* mice but not in WT or Rosa26-LSL-CHRM3* mice. In vitro, CNO stimulation elevated serotonin release from mCitrine+/Epcam+ cells of distal colon by 1.9-fold, whereas mCitrine\u2212/Epcam+ cells failed to respond. This demonstrates that CNO-mediated activation of Piezo2+ cells leads to robust serotonin release from epithelial EC cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C125 are supported by ELISA data shown in Figure 5f and Figure 5\u2014figure supplement 2a, and in vitro serotonin release assay shown in Figure 5\u2014figure supplement 2d,e. The chemogenetic approach provides strong evidence for the functional capacity of Piezo2+ cells to release serotonin. The appropriate controls (WT, Rosa26-LSL-CHRM3*, saline) strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "Chemogenetic activation of Piezo2+ cells accelerates colon motility. Increased fecal pellet output was observed from Piezo2-CHRM3* mice within 15 min after CNO administration. In a bead expulsion assay, colon motility was significantly accelerated after CNO treatment, with time to expel shortened from 7.24 min in WT controls to 1.16 min in Piezo2-CHRM3*/mCitrine animals. No difference was observed in untreated or saline-treated cohorts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C128 are supported by fecal pellet assay data shown in Figure 5g and bead expulsion assay shown in Figure 5h and Figure 5\u2014figure supplement 2f. The dramatic acceleration of colon motility upon Piezo2+ cell activation is a major finding. The appropriate controls strengthen the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C129",
+      "C130"
+    ],
+    "result": "Htr4, encoding the prokinetic 5-HT4 receptor, was selectively expressed by epithelium in the deep crypts of distal colon. The long basal processes of EC cells filled with 5-HT extend toward the base of the crypts where Htr4 is preferentially expressed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C129-C130 are supported by smRNA-FISH data shown in Figure 5\u2014figure supplement 1e. This observation suggests a potential mechanism for 5-HT signaling from EC cells to Htr4+ epithelial cells, though functional validation would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "Genetic depletion of Piezo2+ cells impairs colon motility. Intraluminal DT administration in Piezo2-DTR mice caused profound co-depletion of Piezo2 and Tph1 transcripts and substantial loss of 5-HT+ cells in the distal colon, while general epithelial architecture was maintained. This resulted in 42% reduction in fecal pellet output, substantial delay in bead expulsion (36.9 min vs 8.2 min in WT), and delayed whole gut transit time (181.8 min vs 136.7 min in WT). Gastric emptying was not affected, but small intestine transit time showed a small but statistically significant slowdown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C138 are supported by smRNA-FISH shown in Figure 6b,c and Figure 6\u2014figure supplement 1, immunofluorescence shown in Figure 6b,d, and motility assays shown in Figure 6e-i. The loss-of-function experiments provide strong evidence that Piezo2+ EC cells are required for normal colon motility. The appropriate controls (WT, Rosa26-LSL-DTR) strengthen the conclusions. The small effect on small intestine transit (C137) is interesting and the authors provide reasonable explanations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145"
+    ],
+    "result": "Epithelial-specific deletion of Piezo2 using Villin-cre resulted in 15.9% early mortality around 21-34 days after birth, with affected animals showing 42% reduction in body weight. Piezo2 depletion was observed in the isolated epithelial layer of distal colon by qPCR and smRNA-FISH. Tph1 and Chga levels remained unaltered, and no change was observed in basal serotonin levels. Residual Piezo2 signals were observed in some Tph1+ cells, suggesting incomplete depletion. Importantly, Piezo2 signals in the lamina propria remained largely unaltered, indicating only epithelial Piezo2 was abolished.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C145 are supported by survival data shown in Figure 7\u2014figure supplement 1a, body weight data shown in Figure 7\u2014figure supplement 1a-c, qPCR shown in Figure 7a, smRNA-FISH shown in Figure 7b, and ELISA shown in Figure 7\u2014figure supplement 1g,h. The early mortality phenotype (C139) is an important observation suggesting a critical role for epithelial Piezo2. The incomplete depletion (C144) and preservation of lamina propria Piezo2 (C145) are important caveats that the authors appropriately acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Epithelial-specific deletion of Piezo2 impairs colon motility. BEA revealed significant slowing of expulsion in Piezo2 CKO mice (33.7 min male, 32.3 min female) compared to Piezo2fl/fl controls (9.25 min male, 8.9 min female). Prolonged whole gut transit time was observed in Piezo2 CKO mice (182 min male, 175 min female) compared to controls (146 min male, 143 min female). No difference was observed in small intestinal transit. Fluorescent dye travel in colon at 120 min was significantly shorter in Piezo2 CKO mice (51.2%) compared to controls (72.1%). Loss of Piezo2 in epithelial EC cells primarily affected colon motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C146-C150 are supported by bead expulsion assay shown in Figure 7d, whole gut transit time shown in Figure 7e, small intestinal transit shown in Figure 7\u2014figure supplement 1k, and colon transit shown in Figure 7f,g. The epithelial-specific deletion provides strong evidence that epithelial Piezo2 is required for normal colon motility. The lack of effect on small intestinal transit (C148) contrasts with the DTR experiments, which the authors appropriately discuss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "Piezo2+/Ascl1+/Tph1+ cells are required for normal colon motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C151 is supported by the combined evidence from chemogenetic activation (C121-C128) and genetic depletion experiments (C131-C150). The gain- and loss-of-function approaches provide strong converging evidence for this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "14 EC subpopulations were resolved characterized by distinct chemical and mechanical sensors, TFs, subcellular structures, and spatial distribution. The transcriptome diversity of EC cells is closely related to their spatial distribution. The first layer of complexity is defined along the rostro-caudal axis between small intestine and colon, with gradual enrichment of neuron-like transcriptome from small intestine to distal colon, including specific expression of Ascl1 in distal colonic EC cells. A second layer of complexity is resolved along the crypt-villus axis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156 are supported by the comprehensive scRNA-seq and spatial imaging data presented throughout the manuscript and summarized in Figure 8. These claims represent the major conclusions of the study and are well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Piezo2 is preferentially expressed in distal colonic EC cells that also have neuronal expression profiles. Depletion of Piezo2 from these cells caused a fourfold increase in bead expulsion time, implying that mechanical stimulus caused 5-HT release and initiation of colon propulsion. Consistent with this, 5-HT released from EC has been shown to cause colorectal propulsion in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C159 are supported by the combined evidence from scRNA-seq, smRNA-FISH, and genetic ablation experiments shown throughout the manuscript. The inference about mechanical stimulus causing 5-HT release (C158) is reasonable based on the bead expulsion data, and the citation to prior literature (C159) provides additional support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162"
+    ],
+    "result": "Piezo2 signals were observed in the lamina propria throughout the intestine. Piezo2 was detected via scRNA-seq in a subset of sensory DRG neurons innervating the colon. It is possible that both distal colonic EC cells and sensory DRG neurons contribute to mechanosensory sensing and motility control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C162 are supported by smRNA-FISH data shown in Figure 5\u2014figure supplement 1b and citation to prior literature (Hockley et al., 2019). The suggestion of dual contribution (C162) is appropriately presented as a possibility rather than a definitive conclusion, acknowledging the need for further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "A cluster of Cck+/Oc3+/Tph1+ EC cells in duodenal villi was enriched with two sets of sensory molecules: pathogen/toxin recognition enzymes/receptors and nutrient sensing/homeostasis receptors, suggesting these cells react to gastric content entering the duodenum. The gut has a well-established defensive role to expel noxious chemicals and toxins by nausea and vomiting initiated by 5-HT release. The findings suggest Cck+/Oc3+/Tph1+ cells equipped with pathogen/toxin recognition receptors may play a role in this defense mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C166 are supported by scRNA-seq and smRNA-FISH data shown in Figures 3e-h and Figure 3\u2014figure supplement 1, and citations to prior literature (Mawe and Hoffman, 2013; Andrews et al., 1998). The identification of the dual sensory signature is well-supported (C163). The inference about reacting to gastric content (C164) and role in defense (C166) are reasonable based on the molecular signatures and established knowledge (C165), though direct functional validation would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  }
+]

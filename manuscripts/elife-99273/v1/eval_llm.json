@@ -1,0 +1,284 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C49",
+      "C50",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "AgmT is a lytic transglycosylase (LTG) homologous to E. coli MltG. The putative active site Glu223 is conserved, and purified AgmT displays LTG activity in vitro by solubilizing dye-labeled peptidoglycan, while the AgmTEAEA variant (with mutated active site) does not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C49, C50, C60, C61, and C62 collectively demonstrate that AgmT is an LTG with conserved active site residues and enzymatic activity. The in vitro RBB assay (C60-C62) provides direct biochemical evidence, and the loss of activity in the AgmTEAEA mutant confirms the importance of the predicted active site.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "AgmT is required for efficient gliding motility in M. xanthus. Cells lacking AgmT display slow, aberrant gliding with frequent pauses and reversals, consistent with the prediction that loss of connection between bFACs and PG produces inefficient movements. AgmT is not an essential structural component of bFACs but regulates their assembly and stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C51-C57 provide converging evidence from colony edge assays, single-cell tracking, and velocity/persistency measurements showing that \u0394agmT cells have impaired gliding. The phenotype matches theoretical predictions (C55), and the observation that cells still move (albeit poorly) supports the conclusion that AgmT is regulatory rather than structural (C56-C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "The putative LTG activity of AgmT is required for gliding motility. Cells expressing AgmTEAEA (with mutated active site) form sharp colony edges, indicating loss of efficient gliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58 and C59 demonstrate that the enzymatic activity of AgmT is necessary for gliding. The colony edge assay (C59) provides clear phenotypic evidence that the active site mutation abolishes gliding function, linking enzymatic activity to motility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Cells lacking AgmT or expressing AgmTEAEA are shorter and wider than wild-type cells, but altered morphology alone does not account for abolished gliding. A \u03943 mutant with similar morphology retains gliding motility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C65 show that AgmT affects cell morphology but this is not the primary cause of gliding defects. The comparison with the \u03943 mutant (C65) provides a critical control demonstrating that similar morphological changes do not necessarily impair gliding, supporting the conclusion that AgmT's role in gliding is distinct from its morphological effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "AgmT is important for maintaining cell integrity under mecillinam stress. Wild-type cells largely mitigate mecillinam stress, while \u0394agmT cells show drastic width increases, surface irregularity, and frequent lysis. Cells expressing AgmTEAEA show even stronger phenotypes, suggesting that while other LTGs can partially substitute AgmT, AgmTEAEA blocks their access to PG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 demonstrate AgmT's role in PG integrity under stress. The mecillinam assay provides clear phenotypic evidence (C68-C70), and the differential responses of \u0394agmT versus agmTEAEA cells (C72) support the inference about competitive inhibition by the inactive variant. This is consistent with V. cholerae MltG function (C66, C71).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "AgmT is the only LTG required for M. xanthus gliding. The genome contains 13 other putative LTG genes, but mutants lacking each of these genes retain gliding motility. AgmT is the only M. xanthus LTG belonging to the YceG/MltG family.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 provide comprehensive genetic evidence that AgmT is uniquely required for gliding among M. xanthus LTGs. The systematic knockout screen of all 13 other LTG genes (C75) is thorough and supports the specificity of AgmT's role. The unique family membership (C73) provides a potential mechanistic explanation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "bFAC assembly is sensitive to mechanical cues from substrate hardness. As agar concentration increases, more AglR motors become immotile (from 10.7% on 0.5% agar to 45.2% on 5.0% agar), and bFACs increase in size. The stationary population of AglR-PAmCherry particles reflects motors in fully assembled bFACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C83 demonstrate mechanosensitivity of bFAC assembly using sptPALM. The dose-response relationship between agar concentration and immotile motor fraction (C82) is clear and quantitative. The interpretation that stationary particles represent assembled bFACs (C83) is supported by prior work and the correlation with bFAC size (C81).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The LTG activity of AgmT is essential for proper bFAC assembly. In cells lacking AgmT or expressing AgmTEAEA, AglR particles are hypermotile with drastically reduced immotile populations (~10-12% vs 32% in wild-type), and bFACs are rarely detectable even on hard surfaces. AglZ-YFP also fails to form bFAC clusters in these mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 provide strong evidence from sptPALM and fluorescence microscopy that AgmT is essential for bFAC assembly. The quantitative reduction in stationary AglR particles (C85), loss of visible bFACs (C86), and failure of AglZ clustering (C87-C88) all converge on the same conclusion. The phenotype is consistent across both \u0394agmT and agmTEAEA mutants, confirming the requirement for enzymatic activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "AgmT does not assemble into bFACs. AgmT-PAmCherry is functional and ~50 times more abundant than AglR-PAmCherry, but localizes diffusely along cell bodies without forming clusters. AgmT particles move diffusively with no significant immotile population and diffuse faster than motile AglR particles. AgmT and gliding motors show no correlation in localization or dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C100 provide comprehensive evidence that AgmT does not localize to bFACs. Multiple lines of evidence converge: functional fusion protein (C90), diffuse localization (C94-C95), lack of co-localization with AglZ (C94), absence from pull-down experiments (C96), diffusive dynamics (C97), and faster diffusion than AglR (C98). The conclusion (C100) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Heterologous expression of E. coli MltG rescues gliding motility and mecillinam resistance in \u0394agmT cells but not in agmTEAEA cells. This demonstrates that LTG activity, rather than specific AgmT-bFAC interactions, is required for gliding. The failure to rescue agmTEAEA cells suggests that the inactive AgmT variant still binds PG and blocks MltG access.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C110 provide strong functional complementation evidence. The rescue of \u0394agmT by MltGEc (C101, C105) demonstrates functional equivalence of LTG activity. The failure to rescue agmTEAEA cells (C103, C108) supports the dominant-negative model (C104, C109). The conclusion that LTG activity rather than specific interactions is required (C110) is well-supported by the complementation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115"
+    ],
+    "result": "AgmT connects bFACs to PG through its LTG activity. Coprecipitation assays show that eliminating AgmT or disabling its active site significantly reduces AglR in PG-containing pellets, while AglR expression/stability is unaffected. Heterologous expression of MltGEc enriches AglR in PG pellets from \u0394agmT cells but not agmTEAEA cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 provide direct biochemical evidence for AgmT-mediated connection between bFACs and PG. The coprecipitation assay is appropriate for testing PG association. The lysozyme control (C112) rules out indirect effects on AglR stability. The MltGEc rescue experiment (C114) confirms that LTG activity is sufficient to restore the connection. The conclusion (C115) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "AgmT and MltGEc do not regulate bFAC assembly by modulating PG stiffness. GRABS assays show that neither AgmT nor MltGEc significantly affects cell stiffness (GRABS scores ~-0.06 to -0.10). Instead, these LTGs likely connect bFACs to PG by generating structural features irrelevant to stiffness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C121 address a potential mechanism and rule it out with appropriate methodology. The GRABS assay (C119) provides quantitative evidence that cell stiffness is not significantly affected. The conclusion (C120-C121) appropriately distinguishes between PG flexibility being important for gliding (which remains possible) and AgmT/MltGEc acting through stiffness modulation (which is ruled out).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "AgmT is the factor that facilitates persistent gliding by connecting bFACs to PG. AgmT does not assemble into bFACs itself, and MltGEc can substitute for it, indicating that AgmT facilitates bFAC assembly indirectly through its LTG activity rather than through direct protein-protein interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 synthesize the major findings into a coherent model. The conclusion is supported by the collective evidence from localization studies (AgmT doesn't localize to bFACs), complementation experiments (MltGEc rescues), and coprecipitation assays (AgmT connects bFACs to PG). The inference that AgmT acts indirectly through enzymatic activity (C126) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "AgmT may function as a glycan terminase that generates short glycan strands, producing small pores in PG that retain bFAC inner subcomplexes. Mutants lacking active AgmT may produce PG with increased strand length that blocks bFAC binding. However, this mechanism is speculative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C127-C131 propose a mechanistic model based on analogy to E. coli MltG (C129) and logical inference. However, the model is explicitly speculative (C130-C131 are labeled as speculation). No direct evidence for glycan strand length changes or pore formation is provided. The reasoning is plausible but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "While AgmT potentially modifies the entire PG layer, MreB filaments determine the loci for bFAC assembly in response to mechanical cues. MreB assembles into bFACs, positions them periodically, and responds to membrane curvature and substrate hardness. Assembled bFACs distort the cell envelope, generating surface undulations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 integrate AgmT function with the known role of MreB in bFAC positioning. The mechanosensitivity of bFAC assembly (C134) is supported by data in this study. The role of MreB (C132-C133) is supported by citations to prior work. The synthesis (C136) appropriately distinguishes between AgmT's global PG modification and MreB's role in spatial organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "This work provides an example of bacterial machineries domesticating non-specialized LTGs for specialized functions. Other examples include MltD in H. pylori flagellum and MltE in E. coli type VI secretion system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C137-C139 place the findings in broader context. The conclusion (C138) is supported by the demonstration that AgmT, a general PG-modifying enzyme, is specifically required for gliding. The cited examples (C139) support the generality of this phenomenon. This is appropriate contextualization of the work's significance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "AgmT belongs to the YceG/MltG family, which is conserved in both Gram-negative and Gram-positive bacteria and encoded by ~70% of bacterial genomes. The unique inner membrane localization of this family and the fact that AgmT is the only M. xanthus LTG in this family may explain why it is uniquely required for gliding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C143 provide evolutionary and structural context for AgmT's unique role. The family classification and conservation (C140-C142) are supported by citations. The inference about why AgmT is uniquely required (C143) is reasonable given the inner membrane localization and unique family membership, though it remains somewhat speculative.",
+    "result_type": "MINOR"
+  }
+]

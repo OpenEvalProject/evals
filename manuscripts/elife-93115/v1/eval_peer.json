@@ -1,0 +1,171 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C19",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "The mechanistic model demonstrates that intraspecific interference among consumers enables multiple consumer species to coexist at constant population densities with only one or a handful of resource species, breaking the competitive exclusion principle. This coexistence is stable, globally attractive, and occurs across a non-zero volume of parameter space.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this core finding. The editor states the authors 'convincingly show that predator interference allows for the coexistence of multiple species on a single resource, beyond the competitive exclusion principle.' Reviewer 2 notes 'This work provides additional support for the idea that predator interference allows multiple predators to persist with a shared resource.' Reviewer 3 confirms 'the negative feedback loop created by the intraspecific interference allows a diverse range of consumer species to coexist with only one or a few types of resources.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C20",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The facilitated biodiversity through intraspecific interference is resistant to stochasticity, as demonstrated through both stochastic simulation algorithm (SSA) and individual-based modeling (IBM). The coexistence persists indefinitely in SSA simulations, with parameter regions for coexistence similar between SSA and ODE studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the robustness to stochasticity. The editor notes the model is assessed 'using a mathematical model' with no concerns raised. Reviewer 2 states the authors 'demonstrate that this result is robust to demographic stochasticity.' Reviewer 3 confirms 'some patterns of their model agree with experimental data' and notes no additional weaknesses after revision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C21",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "The model naturally explains classical experiments by Ayala (1969) and Park (1954) that invalidate the competitive exclusion principle, showing good consistency between SSA simulation results and experimental time series data. The fluctuations in experimental data can be mainly accounted for by stochasticity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise this application. Reviewer 1 states 'The comparison with the experiments that reject the competitive exclusion principle is promising' and suggests future work to quantify interference dynamics in insects. Reviewer 2 acknowledges the model 'provides additional support' for predator interference theory. No concerns are raised about the comparison with classical experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C46",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The model quantitatively illustrates the universal S-shaped pattern of rank-abundance curves across a wide range of ecological communities (ocean plankton, tropical fish, bats, birds, butterflies, etc.). The simulation results agree quantitatively with experimental data, sharing roughly equal Shannon entropies and passing Kolmogorov-Smirnov statistical tests, though there is a discrepancy for species with very low abundances (<10 individuals).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly affirm this finding. The editor states 'Notably, the model matches observed rank-abundance curves in several natural ecosystems.' Reviewer 1 emphasizes 'The application of the theory to natural rank-abundance curves is impressive.' Reviewer 3 confirms 'some patterns of their model agree with experimental data, including...the rank-abundance curves from several natural communities.' The acknowledged discrepancy at low abundances is explained by sampling effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "The analytical steady-state solutions are highly consistent with numerical results and can quantitatively predict the coexistence region of parameter space.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the technical soundness of the work. Reviewer 1 states 'The results are clearly presented; the methods adequately described; the supplement is rich with details.' Reviewer 2 notes 'while it is technically sound' and appreciates 'the effort to rigorously derive interaction rates from models of individual behaviors.' No concerns are raised about the analytical solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C27",
+      "C28"
+    ],
+    "result": "In scenarios involving only chasing pairs or chasing pairs with interspecific interference, consumer species cannot stably coexist at steady state\u2014the fixed points are either non-existent (except for special parameters) or unstable, leading to competitive exclusion.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these baseline comparisons without challenge. Reviewer 2 acknowledges the model formulation 'allows for 'chasing pairs', where a predator and prey engage with one another to the exclusion of other interactions' and notes this differs from previous work. The demonstration that these scenarios fail to break CEP is implicitly accepted as it sets up the main finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The classical Beddington-DeAngelis (B-D) model can be formally derived from a scenario involving only chasing pairs without accounting for pairwise encounters among consumers, which is subject to CEP constraints. The authors' mechanistic model shows that the B-D model corresponds to a special case without the escape rate, resolving questions about the validity of applying B-D to break CEP.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge this theoretical contribution. Reviewer 2 provides detailed context: 'the Beddington-DeAngelis has been influential in theoretical ecology, it has also been criticized at times for several unusual assumptions' and notes 'This paper represents another effort to more rigorously derive a model of predator interference.' The resolution of B-D model issues is implicitly accepted as part of the technical soundness affirmed by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The model is broadly applicable to explain biodiversity in many ecosystems.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers praise the broad applications shown, Reviewer 2 raises a limitation: 'The formulation of chasing-pair engagements assumes that prey being chased by a predator are unavailable to other predators. While this may hold in some predator-prey, it does not hold for many others, perhaps limiting some results' generality.' This suggests the claim of broad applicability may be overstated for some systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims about biodiversity patterns, the competitive exclusion principle, and existing mechanisms proposed to overcome CEP constraints.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established ecological knowledge claims that reviewers do not question. They serve as context and motivation for the study. Reviewer comments focus on the novel contributions rather than challenging these foundational concepts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C75"
+    ],
+    "result": "Contextual claims about microbial systems, evolutionary factors, ongoing challenges in ecology, and methodological parameter choices.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These supporting claims are not challenged by reviewers. Reviewer 1 notes 'Though more and better data could be used to constrain and validate the modeling, given this is a theory-driven manuscript, their results are sufficient,' accepting the methodological choices. Reviewer 3 states 'The authors did a great job of satisfactorily addressing each of my concerns raised in the previous round.'",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,166 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C21"
+    ],
+    "result": "The SR-EV model is developed from the SRRW model by incorporating excluded volume interactions to transform overlapping beads into a linear polymer chain. The model uses a 10 nm unit length representing nucleosomes with 147 bp of DNA, producing linker DNA lengths averaging 39.6 bp that agree with experimental values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C11-C18, and C21 collectively describe the model construction and parameterization. The SRRW foundation (C11-C13), the physical modifications to include excluded volume (C2, C13, C21), and the nucleosome-scale parameterization (C14-C18) are internally consistent and supported by citations to established nucleosome structure. The predicted linker DNA lengths match literature values (C18).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C22",
+      "C23",
+      "C57",
+      "C58"
+    ],
+    "result": "The SR-EV model generates biphasic chromatin structures with conformationally defined packing domains separated by dilute regions, resembling disordered bi-continuous phases. High-frequency short returns create individual packing domains while low-frequency large steps produce corrugated structures at ~100 nm scales that enable genomic accessibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20, C22, C23, C57, and C58 describe the structural features arising from the model. The qualitative agreement between model-generated structures and ChromSTEM imaging (C20, Figure 4) supports the biphasic topology claims. The mechanistic explanations for domain formation (C57) and accessibility (C58) are consistent with the model's stochastic return rules, though these remain computational predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The SR-EV model predicts that chromatin volume concentration (CVC) distributions depend on both model parameters (\u03a6 and \u03b1), with contact probability measures being insensitive to volume concentrations. The model-predicted CVC distributions match experimental ChromEMT results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C33-C35 describe CVC properties and their relationship to connectivity measures. Figure 6 demonstrates the parameter dependence (C33, C34), and comparison with Ou et al. 2017 data supports the quantitative agreement (C35). The prediction that Hi-C measures are insensitive to volume concentration (C28) is supported by Figure 5B showing minimal \u03a6 dependence and cited agreement with Liu and Dekker 2022.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C41",
+      "C45"
+    ],
+    "result": "The SR-EV model demonstrates that chromatin packing domain organization is strongly associated with local volume concentrations rather than return probability, and that population heterogeneity arises intrinsically from the stochastic model, matching experimental observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C41, and C45 describe the relationship between local density and domain organization. Figure 9 provides strong evidence for the correlation between local volume fraction and packing parameter D (C45). The distribution of Di values across configurations (Figure 8C) demonstrates intrinsic heterogeneity (C41) that matches PWS microscopy data from U2OS cells, supporting the stochastic nature of the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Upon RAD21 depletion, the SR-EV model predicts and experiments confirm that ~80% of chromatin packing domains are retained with minimal changes in density, radius, and D values, and that chromatin population diversity remains largely unaffected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 describe predictions and experimental validation of RAD21 depletion effects. The model predictions (C47, C48) are directly tested with ChromSTEM and PWS microscopy experiments (C49, C50). The quantitative agreement between predicted ~20% domain loss and observed 80% retention (62/78 domains) with minimal structural changes provides strong experimental support. However, the experimental data is cited to 'Li, 2024' which may not be fully available for independent verification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53"
+    ],
+    "result": "The model suggests that chromatin organization is inherently robust and resistant to perturbations like RAD21 degradation because stochastic returns arise from multiple biochemical processes, not solely cohesin-mediated loop extrusion, providing organizational redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C52, and C53 present an interpretation of the RAD21 depletion results. The experimental observation that domain structure persists after RAD21 depletion (C5, supported by C49-C50) is consistent with the interpretation that multiple mechanisms contribute to stochastic returns (C52, C53). This represents a reasonable inference from the data, though alternative explanations (e.g., incomplete RAD21 depletion, compensatory mechanisms) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C56"
+    ],
+    "result": "The SR-EV model predicts that connectivity-based methods (Hi-C) will be insensitive to volume concentration changes while density-based methods (ChromEM, super-resolution) will show profound changes, and that domain organization arises directly from chromatin concentration and nuclear size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54 and C56 present testable predictions from the model. The insensitivity of contact probability to volume fraction (Figure 5B) supports the Hi-C prediction, with cited agreement from Liu and Dekker work. The strong correlation between local volume fraction and packing parameter D (Figure 9) supports the density-method prediction. These predictions are logical extensions of the model results, though full experimental validation across multiple density conditions is not presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C67"
+    ],
+    "result": "The SR-EV model is a stochastic framework that captures both ensemble and individual chromosome properties across spatial scales from ~10 nm to ~1 \u03bcm, with nucleosome-scale resolution producing physiologically accurate linker lengths (35-45 bp) and configurations comparable to human chromosome 16.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 and C67 describe the model's scope and capabilities. The stochastic nature enabling both ensemble and single-configuration analysis (C60) is demonstrated throughout the results. The spatial scale (C63), nucleosome resolution with accurate linker lengths (C61, Table 1), and chromosome-scale reach (C62) are directly stated and supported by the simulation parameters. The claim that the model captures many key chromatin properties (C67) is supported by the multiple experimental validations presented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55"
+    ],
+    "result": "Variations in nuclear size and density are the oldest hallmarks of malignancy whose functional consequences remain poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C55 is a statement about cancer biology supported by citation to Hansemann, 1890. This is established historical knowledge in cancer pathology and is appropriately cited. The claim serves as motivation for the model's relevance but is not a result of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Chromatin is a complex macromolecular fiber resulting from DNA assembly with histone and non-histone proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C6 is established scientific knowledge about chromatin structure. This is a background statement that provides context for the work and is not a novel finding of this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Experimental methods include cell culture of U2OS and A549 cells under standard conditions, and PWS microscopy that measures chromatin density heterogeneities with sensitivity to 20-300 nm length scales.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 describe experimental methods. These are straightforward methodological descriptions with appropriate citations (C70 cites Li et al., 2021 for PWS methodology). The cell culture conditions (C68, C69) are standard and adequately described. These are methodological details rather than results.",
+    "result_type": "MINOR"
+  }
+]

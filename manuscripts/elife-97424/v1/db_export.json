@@ -1,0 +1,1768 @@
+{
+  "submission": {
+    "id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:10:24.201023Z",
+    "updated_at": "2025-11-21T20:10:24.201023Z"
+  },
+  "content": [
+    {
+      "id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "content_type": "manuscript",
+      "content_text": "# A model-based factorization method for scRNA data unveils bifurcating transcriptional modules underlying cell fate determination\n\n## Authors\n\n- Jun Ren<sup>1</sup> ([ORCID: 0000-0002-9027-2303](https://orcid.org/0000-0002-9027-2303))\n- Ying Zhou<sup>1</sup>\n- Yudi Hu<sup>1</sup>\n- Jing Yang<sup>1</sup>\n- Hongkun Fang<sup>4</sup>\n- Xuejing Lyu<sup>1</sup>\n- Jintao Guo<sup>4</sup>\n- Xiaodong Shi<sup>3</sup>\n- Qiyuan Li<sup>1</sup> ([ORCID: 0000-0002-8934-8948](https://orcid.org/0000-0002-8934-8948)) \u2020\n\n### Affiliations\n\n1. National Institute for Data Science in Health and Medicine, School of Medicine, Xiamen University Xiamen China ([ROR:00mcjh785](https://ror.org/00mcjh785))\n2. Department of Hematology, The First Affiliated Hospital of Xiamen University and Institute of Hematology, School of Medicine, Xiamen University Xiamen China ([ROR:0006swh35](https://ror.org/0006swh35))\n3. School of Informatics, Xiamen University, Xiamen Xiamen China ([ROR:00mcjh785](https://ror.org/00mcjh785))\n4. Department of Scientific Research Management, Weifang People\u2019s Hospital, Shandong Second Medical University Weifang China ([ROR:01xd2tj29](https://ror.org/01xd2tj29))\n\n\u2020 Corresponding author\n\n## Abstract\n\nManifold-learning is particularly useful to resolve the complex cellular state space from single-cell RNA sequences. While current manifold-learning methods provide insights into cell fate by inferring graph-based trajectory at cell level, challenges remain to retrieve interpretable biology underlying the diverse cellular states. Here, we described MGPfactXMBD, a model-based manifold-learning framework and capable to factorize complex development trajectories into independent bifurcation processes of gene sets, and thus enables trajectory inference based on relevant features. MGPfactXMBD offers a more nuanced understanding of the biological processes underlying cellular trajectories with potential determinants. When bench-tested across 239 datasets, MGPfactXMBD showed advantages in major quantity-control metrics, such as branch division accuracy and trajectory topology, outperforming most established methods. In real datasets, MGPfactXMBD recovered the critical pathways and cell types in microglia development with experimentally valid regulons and markers. Furthermore, MGPfactXMBD discovered evolutionary trajectories of tumor-associated CD8+ T cells and yielded new subtypes of CD8+ T cells with gene expression signatures significantly predictive of the responses to immune checkpoint inhibitor in independent cohorts. In summary, MGPfactXMBD offers a manifold-learning framework in scRNA-seq data which enables feature selection for specific biological processes and contributing to advance our understanding of biological determination of cell fate.\n\n## Introduction\n\nData-mining of single-cell RNA sequencing (scRNA-seq) is often transformed into learning of lower-dimensional embedding (Becht et al., 2019; Haghverdi et al., 2015; Maaten and Hinton, 2008) of the expression vectors, which represents the variation in the cellular space and helps explain the biological background. Previous single-cell studies used various embedding methods to characterize and visualize clustering of cells with unique biological functions (Saelens et al., 2019). Among the existing methods, graph-based embedding can better capture nonlinear biological signals among cells hence yielded more insights of the diversity of cells. More recent studies also use graph-based embedding (Costa et al., 2018) to reveal the dependency among cells and thereby reconstruct the evolutionary trajectory in the cellular space, which helps in understanding the determination of cell fate in development, differentiation and cancer.\n\nTo date, more and more manifold-learning methods are developed to infer lower-dimensional graphic embedding (manifolds) of scRNA-seq data, and yielded a number of trajectories corresponding to important cellular processes, such as TSCAN (Ji and Ji, 2016), DPT (Haghverdi et al., 2016), and scShaper (Smolander et al., 2022) belong to linear topological classes and reveal major linear pathways based on embedding spaces or cell clustering. TSCAN employs the construction of minimum spanning trees to discover pathways, while DPT reconstructs cellular trajectories using random walks, and scShaper integrates multiple pseudo-temporal solutions to deduce the shortest trajectory within a linear context. Additionally, there have been many approaches capable of inferring complex tree topological structures, such as the widely used Monocle series of algorithms includes Monocle 2 and 3 (Cao et al., 2019; Qiu et al., 2017b, Qiu et al., 2017a). They leverage sophisticated graphing techniques to map intricate cell hierarchies; Monocle 2 creates DDRtree based on reversed graph embedding techniques, while Monocle 3 utilizes UMAP (Becht et al., 2019) for embedding. TinGa (Todorov et al., 2020) and scFates (Faure et al., 2023) represent more recent innovations. TinGa utilizes the Growing Neural Gas (GNG) algorithm (Fritzke, 1994) to construct an adaptive graph structure that effectively captures the density structure of the dataset. scFates, streamlines pseudotime analysis with flexible tree learning options, advanced feature extraction tasks, and specific functionalities for fork analysis.\n\nMoreover, recent studies based on RNA velocity have provided insights into cell state transitions. These methods measure RNA synthesis and degradation rates based on the abundance of spliced and unspliced mRNA, such as CellRank (Lange et al., 2022). Nevertheless, current RNA velocity analyses are still unable to resolve cell-fates with complex branching trajectory. Deep learning methods such as scTour (Li, 2023) and TIGON (Sha et al., 2024) circumvent some of these limitations, offering continuous state assumptions or requiring prior cell sampling information.\n\nDespite these advances, trajectory prediction remains a major challenge in single-cell analysis. First, graph-based trajectories represent synergic effects of multiple biological processes, making it difficult to disentangle the effects of specific process, hence limited model interpretability and the power to gain novel biological insights. Second, the inference of trajectory is highly dependent on the biases in the gene-selection, whereas conventional statistical feature-selection methods are less efficient for the learning of complex topologies, and adds to the difficulty of suggesting candidate genes for downstream functional study. Additionally, many approaches require additional prior information, which further limits the applicability.\n\nHere, we describe MGPfactXMBD (Factorization based on Mixtures of Gaussian Processes), a model-based, unsupervised manifold-learning method which factorizes complex cellular trajectories into interpretable bifurcation Gaussian processes of transcription, and thereby enables discovery of specific biological determinants of cell fate. In the validation datasets, MGPfact recapitulated developmental trajectory of microglia and recovered key regulatory factors which have been proved experimentally. Moreover, MGPfact discovered highly specific subtypes of tumor-associated CD8+ T cells which are associated with benefit to cancer immunotherapy.\n\nBring together, MGPfact is a knowledge discovery tool which conducts manifold-learning and factorization simultaneously. MGPfact offers two advantages in future scRNA-seq analyses: first, it provides highly interpretable, factorizable cellular trajectories with matched gene expression modules; then, it provides efficient feature-selection for graph-based embedding, thus enhancing our understanding of the determination of cell fate.\n\n## Results\n\n### Design of MGPfact\n\nThe analytical pipeline of MGPfact consists of two major stages (Figure 1). An algorithmic description is given in Algorithm 1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig1-v1.jpg)\n\n**Figure 1.:** The complete workflow comprises two major stages: minimum unbiased representative points (MURP) downsampling with preprocessed data and trajectory reconstruction. In the stage of trajectory reconstruction, the single-cell RNA sequencing (scRNA-seq) data were first factorized into independent bifurcation processes based on mixtures of Gaussian processes, which were then merged into a consensus trajectory.\n\nFirst, we performed downsampling of the preprocessed scRNA-seq data $Y$ to yield a $M$-by-$N$ expression matrix $Y^{\u2032}$ based on the \u2018minimum unbiased representative points (MURP)\u2019 as described previously (Ren et al., 2022), where $M$ representative points were considered as landmarks of the cellular trajectory and $N$ is the number of genes. Then, we computed $L$ principal components (PCs) of the downsampled expression matrix to obtain the matrix $Y^{\u2217}={y_{1}^{\u2217},y_{2}^{\u2217},y_{3}^{\u2217},\u2026y_{L}^{\u2217}}$ ($M$-by-$L$),\n\n$$\ny_{l}^{\u2217}=Y^{\u2032}\u22c5v_{l}\n$$\n\nwhere $v_{l}$ is projection vector, $y_{l}^{\u2217}$ serve as the $l$-th initial state of embedding.\n\nNext, we used typical Gaussian Process Regression of $y_{l}^{\u2217}$ on pseudotime $T$:\n\n$$\ny_{l}^{\u2217}=f(T)+\\epsilon\n$$\n\nwhere $f(T)$ is a Gaussian Process (GP) with covariance matrix $S$.\n\n$$\nf(T)=GP(0,S+\\sigma_{S}^{2}\u22c5I)\n$$\n\nAnd for all features:\n\n$$\np(Y^{\u2217},f(T))=p(Y^{\u2217}\u2223f(T))\u22c5p(f(T))\n$$\n\nwhere $p(Y^{\u2217}\u2223f(T))$ is defined as follows:\n\n$$\np(Y^{\u2217}\u2223f(T))=\\prodl=1Lp(y_{l}^{\u2217}\u2223f(T))=\\prodl=1LN(y_{l}^{\u2217}\u22230,S+\\sigma_{S}^{2}\u22c5I)\n$$\n\nSpecifically, we consider $S$ as a mixture of $L$ independent bifurcation Gaussian processes (Schulz et al., 2018),\n\n$$\nS=\\suml=1Ls_{l}\n$$\n\nTo cope with the bifurcation processes in cell fate, each of the Gaussian processes is defined with a bifurcation point at $b_{l}$, branching labels $c_{l}$, and the necessary hyperparameters. The branching labels $c_{l}\\in{0,1,2}$, correspond to different phases and states of cell fate, where $c_{l}=0$ corresponds the phase before branching, and $c_{l}\\in{1,2}$. corresponds to the two cellular states of the bifurcation process, respectively. For any landmark (MURP) $x$,\n\n$$\n{c_{l,x}=0,t_{x}<b_{l}c_{l,x}\\in{1,2},t_{x}\\geqb_{l}\n$$\n\nThe covariance matrix $s_{l}$ for trajectory $l$ can be expressed as follows,\n\n$$\n[s_{l}]_{x,y}=K(t_{x},t_{y})\n$$\n\nwhere $K$ is a kernel function. We employ radial basis function (rbf) and polynomial kernel function (pl). We chose these two kernel functions for the effectiveness in handling nonlinear and polynomial relationships, achieving a balance between model performance and computational efficiency.\n\n$$\nk_{rbf}(t_{x},t_{y})=\\lambda_{rbf}\u22c5e^{(\u2212\\alpha_{rbf}||t_{x}\u2212t_{y}||^{2})}\n$$\n\n\n\n$$\nk_{pl}(t_{x},t_{y})=(\\lambda_{pl}\u22c5t_{x}^{T}t_{y}+c_{pl})^{d_{pl}}\n$$\n\nAnd the $K(t_{x},t_{y})$ is calculated as follows:\n\n$$\nK(t_{x},t_{y})={k_{rbf}(t_{x},t_{y})+k_{pl}(t_{x},t_{y})t_{x},t_{y}<b_{l}k_{rbf}(t_{x},t_{y})+k_{pl}(t_{x}\u2212b_{l},t_{y}\u2212b_{l})t_{x},t_{y}>b_{l},c_{l,x}=c_{l,y}\\frac{k_{rbf}(t_{x},b_{l})\u22c5k_{rbf}(b_{l},t_{y})}{k_{rbf}(b_{l},b_{l})}c_{l,x}\\neqc_{l,y}\n$$\n\nTherefore, $p(Y^{\u2217}\u2223f(T))$ is updated as follows:\n\n$$\np(Y^{\u2217}\u2223f(T))=\\prodl=1LN(y_{l}^{\u2217}\u22230,\\suml=1Ls_{l}^{\u2217}+\\sigma_{S}^{2})\n$$\n\nWe infer all parameters by maximizing the posterior likelihood using Markov Chain Monte Carlo (MCMC) methods available in Mamba (Brian, 2014). The posterior distribution of pseudotime $T$ can be represented as:\n\n$$\np(T\u2223Y^{\u2217})\u221dp(Y^{\u2217}\u2223f(T))\u22c5p(f(T))\n$$\n\nwhere $p(Y^{\u2217}\u2223f(T))$ is the likelihood function of the observed data $Y^{\u2217}$, and $p(f(T))$ is the prior distribution of the Gaussian process. This posterior distribution integrates the observed data with model priors, enabling inference of pseudotime and trajectory simultaneously. Due to the high autocorrelation of $T$ in the posterior distribution, we use Adaptive Metropolis within Gibbs (AMWG) sampling (Roberts and Rosenthal, 2009; Tierney, 1994). Other parameters are estimated using the more efficient SLICE sampling technique (Neal, 2003).\n\n<table>\n  <thead>\n    <tr>\n      <th>Algorithm 1 MGPfact: infer cell fate trajectory</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>INPUT: expression matrix Y, independent trajectories number LOUTPUT: \u03b8={T,B,C,other hyperparameters} ; trajectory toplogy1: initialize all parameters in \u03b8\u20022: covariance matrix S\u20023: object function L=0\u20024: Y\u2032 \u2190 MURP downsampling Yp,n;5: Y\u2217 \u2190 PCA analysis6: \u03b8 \u2190 Opmized ObjectF7: Graph\u2003\u2190 Greate independent trajectory using \u03b8\u20028: function ObjectF (Y\u2217,T,bl,cl)\u20029:\u2002\u2002\u2002Q\u2190dim(Y\u2217)[2]\u200210: \u2002\u2002\u2002\u2002for q=1;q&lt;Q;q++ do \u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2009\u25b9 object function11:\u2002\u2002\u2002\u2002\u2002\u2002\u2002 v\u2190[Y\u2217]q\u200212: \u2002\u2002\u2002\u2002\u2002\u2002\u2002for l=1;l&lt;L;l++ do13:\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002sl\u2190Cov(T,bl,cl)\u200214:\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002S\u2190S+sl\u200215:\u2002\u2002\u2002\u2002\u2002\u2002 end for16:\u2002\u2002\u2002\u2002\u2003L\u2190L+MultivariateNormalPDF(v,0,S)\u200217: \u2002\u2002\u2002\u2002end for18:\u2002\u2002\u2002\u2002 returnL\u200219: end function20: function\u2002Cov (T,bl,cl) \u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2009\u25b9 construct covariance matrix21:\u2002\u2003P\u2190length(T)\u200222:\u2002\u2002\u2002for i=1;i&lt;P;i++ do23:\u2002\u2002\u2002\u2002\u2002\u2002for j=1;j&lt;P;j++ do24:\u2002\u2002\u2002\u2002\u2002\u2002\u2002\u2003sl[i,j]\u2190KERNEL(ti,tj,bl,cl)\u200225:\u2002\u2002\u2002\u2002\u2002\u2002end for26:\u2002\u2002\u2002end for27:\u2002\u2002\u2002return\u2003sl28: end function29: function KERNEL(ti,tj,bl,cl,i,cl,j) \u2009\u25b9 kernel function30:\u2002\u2002\u2002\u2002if ti,tj&lt;bl then31:\u2002\u2002\u2002\u2002\u2002\u2002\u2002return\u2003krbf(ti,tj)+kpl(ti,tj)\u200932:\u2002\u2002\u2002\u2002else if\u2003ti,tj&gt;bl\u2227cl,i=cl,j then33:\u2002\u2002\u2002\u2002\u2002\u2002\u2002returnkrbf(ti,tj)+kpl(ti\u2212bl,tj\u2212bl)\u200934:\u2002\u2002\u2002\u2002else ifcl,i\u2260cl,j then35:\u2003\u2002\u2002\u2002\u2002\u2002return krbf(ti,bl)\u22c5krbf(bl,tj)krbf(bl,bl)\u200936:\u2002\u2002\u2002\u2002end if37: end function</td>\n    </tr>\n  </tbody>\n</table>\n\nThen, MGPfact can identify genes that have significant impacts on the branching events in the trajectories. We introduce a rotation matrix $R={r_{1},r_{2},...,r_{L}}$ to obtain factor score $w_{l}$ for each trajectory $l$ by rotating $Y^{\u2217}$.\n\n$$\nw_{l}=Y^{\u2217}\u22c5r_{l}+e_{l}^{2}\n$$\n\nFor all trajectories,\n\n$$\np(W\u2223Y^{\u2217})=\\prodl=1L[N(Y^{\u2217}\u22c5r_{l}+e_{l}\u22230,s_{l})\u22c5N(e_{l}\u22230,\\sigma_{error}^{2})]\n$$\n\nwhere $e_{l}$ is the error term for the $l$-th trajectory.\n\nSpecifically, the factor scores $w_{l}$ for each gene onto the $l$-th trajectory can be expressed using equations (1) and (14) as follows,\n\n$$\nw_{l}=[Y^{\u2032}\u22c5v_{l}]\u22c5r_{l}+e_{l}^{2}=Y^{\u2032}\u22c5u_{l}+e_{l}^{2}\n$$\n\nHere, $u_{l}$ is used to represent the contribution (gene weight) of each gene to the $l$-th trajectory, thus enabling gene-selection based on the inferred trajectories.\n\nAdditionally, we can combine independent bifurcation processes to form a consensus diffusion tree to represent the trajectory of cell fate (Supplementary file 1).\n\n### Performance evaluation of MGPfact\n\n#### Robustness analysis of MGPfact\n\nBefore the performance evaluation, we performed a grid search on the number of independent trajectories in 100 training datasets and selected $L=3$ for downstream testing (Figure 2\u2014figure supplements 1\u20132, Methods).\n\nTo further validate the efficacy of MURP downsampling step in MGPfact, we employed an alternative downsampling using randomly selected cells for trajectory inference (Methods). This comparison revealed that the prediction accuracy substantially diminished without MURP, evidenced by a notable reduction in branch assignment ($F1_{branches}$, 20.5%) and cell ordering ($cor_{dist}$, 64.9%) (Figure 2\u2014figure supplement 3). In contrast, trajectory predictions utilizing MURP-based downsampling realized an overall score increase of 5.31 to 185%, underscoring the indispensable role of MURP in the trajectory inference capabilities of MGPfact.\n\nFurthermore, we performed a robustness analysis on the topological consistency of the predicted consensus trajectory by comparing prediction results from randomly sampled subsets of the original data. As a result, the consensus trajectory predicted from random subsets by MGPfact retained a high degree of congruence with those from the original datasets (Figure 2\u2014figure supplement 4, $HIM_{mean}=0.686$). This outcome attests to MGPfact\u2019s robustness and generalizability under varying data conditions, hence the capability of retrieving conserved bifurcation trajectories in the data.\n\n#### MGPfact predicts cellular trajectories\n\nThen, we assessed the performance of MGPfact for prediction of cellular trajectories in 239 test datasets, including 171 synthetic and 68 real datasets, alongside with another seven existing algorithms. For the overall performance score, MGPfact ($Overall_{mean}=0.534$) ranked second only to TinGa ($Overall_{mean}=0.563$) and outperformed the rest of six algorithms (Figure 2a). Particularly, MGPfact demonstrated the highest accuracy in predicting cell fate in branching trajectory (Figure 2b, $F1_{branches_{mean}}=0.482$). As for other three individual metrics, MGPfact ranked the fourth in $HIM$ ($HIM_{mean}=0.606$), the sixth in $cor_{dist}$ ($cor_{dist_{mean}}=0.507$), and the fourth in $wcor_{features}$ ($wcor_{features_{mean}}=0.712$) (Figure 2c\u2013e).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig2-v1.jpg)\n\n**Figure 2.:** (a) Overall scores; (b) $F1_{branches}$; (c) $HIM$; (d) $cor_{dist}$ ; (e) $wcor_{features}$.All results are color-coded based on the trajectory types, with the black line representing the mean value. The \u2018Overall\u2019 assessment is calculated as the geometric mean of all four metrics.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** The 339 datasets were randomly split into two groups, serving as the training set and test set, respectively. The training set consists of 100 datasets, while the testing set includes 239 datasets.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** With L=3 set as the default, we tested the impact of different L values (1, 2, 4, and 5) on the prediction results. In all box plots, the asterisk represents the mean value, while the whiskers extend to the farthest data points within 1.5 times the interquartile range. Significance is denoted as follows: not annotated indicates non-significant; * P<0.05; ** P<0.01; *** P<0.001; two-sided paired Student\u2019s T-tests.\n\n![Figure 2\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig2-figsupp3-v1.jpg)\n\n**Figure 2\u2014figure supplement 3.:** Trajectory inference was conducted by randomly selecting 20, 40, 60, 80, and 100 cells from the original dataset. The results were mapped back to the original data using a KNN graph structure to obtain the final predictions, which were then compared with those obtained through MURP downsampling. In all box plots, the asterisk represents the mean value, while the whiskers extend to the farthest data points within 1.5 times the interquartile range. Significance is denoted as follows: not annotated indicates non-significant; * P<0.05; ** P<0.01; *** P<0.001; two-sided paired Student\u2019s T-tests.\n\n![Figure 2\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig2-figsupp4-v1.jpg)\n\n**Figure 2\u2014figure supplement 4.:** Random sampling is performed on the original data at different proportions of 60%, 70%, 80%, and 90%. The MGPfact consensus trajectory predictions are compared with that based on the original, unsampled data using $HIM$. In all box plots, the asterisk represents the mean value, while the whiskers extend to the farthest data points within 1.5 times the interquartile range.\n\nNext, we compared the performance of MGPfact with the other algorithms in nine different trajectory types, respectively, for predicting differentiated cell fate ($F1_{branches}$). As a result, MGPfact significantly outperformed more than half of the algorithms tested in the following trajectory types (T-test p<0.1, Table 1): disconnected graph (N=5), linear (N=5), bifurcation (N=4), multifurcation (N=4), and tree (N=4). As for the other three metrics, MGPfact also showed advantages in $HIM$ in linear (N=5), bifurcation (N=3), convergence (N=3); and in $wcor_{features}$ in multifurcation (N=6), bifurcation (N=5). Nevertheless, MGPfact showed limited predictive performance for $cor_{dist}$ (Supplementary file 2).\n\n**Table 1.**\n MGPfact outperformed state-of-the-art methods in $F1_{branches}$.P-values based one-sided paired t-tests suggest that the $F1_{branches}$ scores of MGPfact were significantly higher than those of the other methods for different trajectory types in the test set.\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Trajectory Type</th>\n      <th>DPT</th>\n      <th>MonocleDDRTree</th>\n      <th>Monocle3</th>\n      <th>scFates Tree</th>\n      <th>scShaper</th>\n      <th>TinGa</th>\n      <th>TSCAN</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Acyclic Graph</td>\n      <td>0.169</td>\n      <td>0.735</td>\n      <td>0.341</td>\n      <td>0.167</td>\n      <td>0.006</td>\n      <td>0.485</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>Bifurcation</td>\n      <td>0.559</td>\n      <td>0.001</td>\n      <td>0.015</td>\n      <td>0.298</td>\n      <td>0.010</td>\n      <td>0.772</td>\n      <td>0.002</td>\n    </tr>\n    <tr>\n      <td>Convergence</td>\n      <td>0.275</td>\n      <td>0.059</td>\n      <td>0.000</td>\n      <td>0.027</td>\n      <td>0.120</td>\n      <td>0.871</td>\n      <td>0.008</td>\n    </tr>\n    <tr>\n      <td>Cycle</td>\n      <td>0.000</td>\n      <td>0.000</td>\n      <td>0.002</td>\n      <td>0.114</td>\n      <td>0.991</td>\n      <td>0.659</td>\n      <td>0.982</td>\n    </tr>\n    <tr>\n      <td>Disconnected Graph</td>\n      <td>0.020</td>\n      <td>0.001</td>\n      <td>0.108</td>\n      <td>0.007</td>\n      <td>0.001</td>\n      <td>0.475</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>Connected Graph</td>\n      <td>0.053</td>\n      <td>0.214</td>\n      <td>0.114</td>\n      <td>0.285</td>\n      <td>0.005</td>\n      <td>0.057</td>\n      <td>0.001</td>\n    </tr>\n    <tr>\n      <td>Linear</td>\n      <td>0.000</td>\n      <td>0.000</td>\n      <td>0.000</td>\n      <td>0.000</td>\n      <td>1.000</td>\n      <td>0.000</td>\n      <td>0.980</td>\n    </tr>\n    <tr>\n      <td>Multifurcation</td>\n      <td>0.033</td>\n      <td>0.001</td>\n      <td>0.041</td>\n      <td>0.717</td>\n      <td>0.552</td>\n      <td>0.758</td>\n      <td>0.051</td>\n    </tr>\n    <tr>\n      <td>Tree</td>\n      <td>0.021</td>\n      <td>0.809</td>\n      <td>0.918</td>\n      <td>0.086</td>\n      <td>0.000</td>\n      <td>0.993</td>\n      <td>0.000</td>\n    </tr>\n  </tbody>\n</table>\n\nIt is also worth noting that in 68 test datasets of real cell populations, MGPfact ranked the top of all seven algorithms for \u2018overall score\u2019 (Figure 3a). As for the individual metric, MGPfact ranked to top for predicting trajectory topology ($HIM_{mean}=0.721,$Figure 3c); and the second in trajectory branching ($F1_{branches_{mean}}=0.600$, Figure 3b) with no significant difference with that of the top predictor (scShaper, T-test, p=0.829). These data show that MGPfact can effectively reconstruct the trajectory of cell fate and retrieve relevant biological processes. As for the other metrics in real test datasets, MGPfact was the fifth in the similarity of cell locations ($cor_{dist_{mean}}=0.46$), and the third in the similarity of gene significance ($wcor_{features_{mean}}=0.735$). The differences between the metrics of MGPfact and those of the top performers were subtle (Figure 3d\u2013e, $\u0394cor_{dist_{mean}}=0.07,\u0394wcor_{features_{mean}}=0.05$).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig3-v1.jpg)\n\n**Figure 3.:** (a) Overall scores; (b) $F1_{branches}$; (c) $HIM$; (d) $cor_{dist}$; (e) $wcor_{features}$. All results are color-coded based on the trajectory types, with the black line representing the mean value for ranking all methods. The \u2018Overall\u2019 assessment is calculated as the geometric mean of all four metrics.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** The first column of each row presents the actual cell development trajectory (\u2018ground truth\u2019), with black lines representing the trajectory structure and the colored dots indicating cells at different stages. These elements highlight the main paths and key bifurcation points of cell differentiation as a reference for evaluating prediction results. Subsequent columns show the trajectory reconstruction results of MGPfact and other methods. The overall score for each method reflects its accuracy in trajectory inference relative to the gold standard, which is represented in the top-left figure.\n\nWe also analyzed three real-world datasets (Saelens et al., 2019), each representing a unique topology of trajectory: linear, single bifurcation, and multiple bifurcations. MGPfact excelled in capturing key developmental trajectory with branch points (Figure 3\u2014figure supplement 1). In the linear trajectory, MGPfact accurately predicted the absence of bifurcations, aligning well with the ground truth ($overall=0.871$). For the bifurcation trajectory, MGPfact successfully identified the main bifurcation ($overall=0.636$). As for the multifurcation trajectory, MGPfact\u2019s prediction is also close to the ground truth, as reflected by the overall score ($overall=0.566$).\n\nIn summary, our data suggest that MGPfact is highly efficient in predicting cell fate in branching trajectory ($F1_{branches}$) and topological structure ($HIM$). These capabilities align with the primary objectives of the algorithm, namely, effective identification of the branching events in the development processes of cells. In addition, MGPfact performed better in real datasets, suggesting its robustness to noise from real experimental conditions. Nevertheless, trajectory inference by MGPfact is based on factorization of the covariance matrix, hence less performance in $wcor_{features}$ and $cor_{dist}$  than methods based on full covariance matrix.\n\n#### Comparative of time efficiency and memory consumption\n\nWe also compared the runtime and memory usage of different algorithms across 239 test datasets (Supplementary file 3). MGPfact\u2019s average maximum memory consumption ($memory_{mean}^{(max)}=0.75GB$) is comparable to those of the other algorithms ($memory_{mean}^{(max)}\\in[0.55,0.91]GB$). As a trade-off for its advantages in feature-selection and factorization, MGPfact requires moderately longer execution time than the other algorithms ($time_{mean}=3.42min$).\n\n### MGPfact recovers the trajectory of early postnatal microglia development\n\nThe main advantage of MGPfact lies in the capability to factorize a complex cellular trajectory into bifurcation processes of selected co-expressed genes. To illustrate how MGPfact elucidates the biological process underlying cell fate determination, we applied MGPfact to a scRNA-seq data of microglia development and validated the results with experimental evidences (Li et al., 2019).\n\n#### MGPfact recovers the determinants of the microglia development\n\nUtilizing MGPfact, we reconstructed the developmental trajectories of microglia from immature microglia (IM at pseudotime 0) to homeostatic microglia (HM) and proliferative-region-associated microglia (PAM) (Figure 4a\u2013c, left panel). MGPfact identified three bifurcation processes (Supplementary file 4), each corresponding to 74\u201390 highly weighted genes (HWG, absolute gene weight >0.05) (Figure 4a\u2013c, right panel).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig4-v1.jpg)\n\n**Figure 4.:** (a-c) The inferred independent bifurcation processes with respect to the unique cell types (color-coded) of microglia development, where phase 0 corresponds to the state before bifurcation; and phases 1 and 2 correspond to the states post-bifurcation. Each colored dot represents a metacell of unique cell type defined by MURP. The most highly weighted regulons in each trajectory were labeled by the corresponding transcription factors (left panels). The HWG of each bifurcation process include a set of highly weighted genes, of which the expression levels differ significantly among phases 1, 2, and 3 (right panels). (d) The most highly weighted regulons influencing the three developmental trajectories of microglia. (e) The expression levels of the transcription factors of highly weighted regulons in each trajectory significantly differ among different phases. (f) The consensus developmental trajectory by merging the three bifurcation processes. Point 0 denotes the initial of differentiation, whereas the notion of \u2018n-m\u2019 denotes the m-th branch from the branching point n. Each colored circle represents a landmark (MURP) of the trajectory, showing the fraction of cell types. The transcription factors of highly weighted regulons in each bifurcation process were used to label each branching point. Particularly, PAM-T1 and PAM-T2 are the two newly defined subtypes of PAM. (g) Selected differently expressed genes between PAM-T1 and PAM-T2 (|logfc|>0.25, adjusted P-value <0.1) are shown by colored-dots corresponding to the mean expression levels in either cell type. The IDs validated marker genes for PAM are labeled in green. In all box plots, the horizontal line represents the median value, and the whisker extends to the furthest data point within 1.5 times the interquartile range. Significance is denoted as: ns, not significant, * P<0.05, ** P<0.01, *** P<0.001, **** P<0.0001, Wilcoxon rank-sum test.\n\nThe first bifurcation determines the differentiated cell fates of PAM and HM, which involves a set of notable marker genes of both cell types, such as Apoe, Selplg (HM), and Gpnmb (PAM). The second bifurcation determines the proliferative status, which is crucial for the development and function of PAM and HM (Guzm\u00e1n, 2022; Li et al., 2019). The genes affected by the second bifurcation are associated with cell cycle and proliferation, such as Mki67, Tubb5, Top2a. The third bifurcation influences the development and maturity of microglia, of which the highly weighted genes, such as Tmem119, P2ry12, and Sepp1 are all previously annotated markers for the establishment of the fates of microglia (Anderson et al., 2022; Li et al., 2019; Supplementary file 4).\n\nMoreover, we retrieved highly active regulons from the HWG by MGPfact, of which the significance is quantified by the overall weights of the member genes. These data unveiled highly active transcription regulations in each bifurcation processes, which further traced back to the influential transcription factors as determinants of microglia development, such as Hif1a, E2f5, and Nfkb1 (Figure 4d\u2013e, Methods). Specifically, Hif1a is crucial for microglial activation and directly linked to neurodegenerative disease progression (Wang et al., 2022). Our data showed an upregulation of Hif1a in the PAM-branch (phase 1) of the first bifurcation, reaffirming the role of Hif1a in PAM differentiation. The other two transcription factors, E2f5 and Nfkb1, were active in phase 2 of the second bifurcation and the third bifurcation, respectively. Both are known for the roles in microglial development (Dresselhaus and Meffert, 2019; Nawal, 2017).\n\n#### Using consensus trajectories to delineate the development of microglial cells\n\nWe generated a consensus trajectory of microglial development from three independent bifurcation processes (Methods). Of note, the consensus trajectory revealed two distinct subtypes of proliferative-region-associated microglia (PAM), PAM-T1 (Hif1a+/E2f5-/Nfkb1+), and PAM-T2 (Hif1a+/E2f5-/Nfkb1-) (Figure 4f). Particularly, the highly expressed genes in PAM-T2, including Spp1, Gpnmb, Lgals1, and Cd63, are previously identified in disease-associated microglia (DAM) (Li et al., 2019). Thus, our finding reaffirmed the connection between the two cell types, DAM and PAM, and suggested Nfkb1 as a potential determinant of differentiation of PAM (Figure 4g, Supplementary file 5).\n\nIn conclusion, MGPfact reconstructed the cellular trajectory of microglial development, identified distinct cell types with marker genes and key regulators which are highly consistent to the experimental evidences (Dresselhaus and Meffert, 2019; Li et al., 2019; Nawal, 2017; Wang et al., 2022).\n\n### Using MGPfact to decipher the evolution of tumor-associated CD8+ T cells\n\nNext, we applied MGPfact to two populations of tumor-associated CD8+ T cells from non-small cell lung cancer (NSCLC)(Guo et al., 2018) and colorectal cancer (CRC) (Zhang et al., 2018), respectively. Using the same analytical pipeline as above, we identified a set of CD8+ T cell gene expression signatures (GES) from MGPfact-inferred trajectories, which are significantly predictive of clinical outcomes and immune treatment responses. Additionally, our data unveiled novel subtypes of tumor-associated CD8+ T cells with strong clinical implications.\n\n#### MGPfact better explains the fate of tumor-associated CD8+ T cells\n\nWe assessed the goodness-of-fit (adjusted R-square) of the consensus trajectory derived by MGPfact and three methods (Monocle 2, Monocle 3, and scFates Tree) for the CD8+ T cell subtypes described in the original studies (Guo et al., 2018; Zhang et al., 2018). The data showed that MGPfact significantly improved the explanatory power for most CD8+ T cell subtypes over Monocle 2, which was used in the original studies (p<0.05, see Table 2 and Supplementary file 6), except for the CD8-GZMK cells in the CRC dataset. Additionally, MGPfact demonstrated better explanatory power in specific cell types when compared to Monocle 3 and scFates Tree. For instance, in the NSCLC dataset, MGPfact exhibited higher explanatory power for CD8-LEF1 cells (Table 2, R-squared=0.935), while Monocle 3 and scFates Tree perform better in other cell types.\n\n**Table 2.**\n Comparison of the explanatory power for CD8+ T cell fate for MGPfact and three other different methods.Adjusted R-squared values and P-values based on F-tests demonstrate the relative performance of MGPfact, Monocle 2, Monocle 3, and scFates Tree in fitting the experimentally characterized and annotated CD8+ T cell subtypes.\n\n\n<table>\n  <thead>\n    <tr>\n      <th></th>\n      <th></th>\n      <th colspan=\"2\">MGPfact</th>\n      <th colspan=\"2\">Monocle 2</th>\n      <th colspan=\"2\">Monocle 3</th>\n      <th colspan=\"2\">scFates Tree</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td></td>\n      <td></td>\n      <td>Adjust R2</td>\n      <td>p</td>\n      <td>Adjust R2</td>\n      <td>p</td>\n      <td>Adjust R2</td>\n      <td>p</td>\n      <td>Adjust R2</td>\n      <td>p</td>\n    </tr>\n    <tr>\n      <td rowspan=\"6\">NSCLC (GSE99254)</td>\n      <td>CD8-LEF1</td>\n      <td>0.935</td>\n      <td>0.000</td>\n      <td>0.176</td>\n      <td>0.000</td>\n      <td>0.089</td>\n      <td>0.08</td>\n      <td>0.902</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>CD8-CD28</td>\n      <td>0.195</td>\n      <td>0.002</td>\n      <td>0.170</td>\n      <td>0.000</td>\n      <td>0.108</td>\n      <td>0.06</td>\n      <td>0.006</td>\n      <td>0.145</td>\n    </tr>\n    <tr>\n      <td>CD8-CX3CR1</td>\n      <td>0.634</td>\n      <td>0.000</td>\n      <td>0.259</td>\n      <td>0.000</td>\n      <td>0.629</td>\n      <td>0.000</td>\n      <td>0.882</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>CD8-GZMK</td>\n      <td>0.259</td>\n      <td>0.000</td>\n      <td>0.189</td>\n      <td>0.000</td>\n      <td>0.855</td>\n      <td>0.000</td>\n      <td>0.547</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>CD8-ZNF683</td>\n      <td>0.232</td>\n      <td>0.001</td>\n      <td>0.051</td>\n      <td>0.043</td>\n      <td>0.625</td>\n      <td>0.003</td>\n      <td>0.039</td>\n      <td>0.003</td>\n    </tr>\n    <tr>\n      <td>CD8-LAYN</td>\n      <td>0.435</td>\n      <td>0.000</td>\n      <td>0.031</td>\n      <td>0.027</td>\n      <td>0.503</td>\n      <td>0.018</td>\n      <td>0.523</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td rowspan=\"7\">CRC (GSE108989)</td>\n      <td>CD8-LEF1</td>\n      <td>0.311</td>\n      <td>0.000</td>\n      <td>0.027</td>\n      <td>0.036</td>\n      <td>0.461</td>\n      <td>0.007</td>\n      <td>0.99</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>CD8-GPR183</td>\n      <td>0.380</td>\n      <td>0.000</td>\n      <td>0.032</td>\n      <td>0.025</td>\n      <td>0.474</td>\n      <td>0.006</td>\n      <td>0.139</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>CD8-CX3CR1</td>\n      <td>0.648</td>\n      <td>0.000</td>\n      <td>0.047</td>\n      <td>0.008</td>\n      <td>0.454</td>\n      <td>0.007</td>\n      <td>0.817</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>CD8-GZMK</td>\n      <td>0.130</td>\n      <td>0.013</td>\n      <td>0.550</td>\n      <td>0.000</td>\n      <td>0.855</td>\n      <td>0.000</td>\n      <td>0.236</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>CD8-CD6</td>\n      <td>0.277</td>\n      <td>0.000</td>\n      <td>0.109</td>\n      <td>0.007</td>\n      <td>0.45</td>\n      <td>0.008</td>\n      <td>0.054</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>CD8-CD160</td>\n      <td>0.124</td>\n      <td>0.016</td>\n      <td>0.080</td>\n      <td>0.025</td>\n      <td>0.856</td>\n      <td>0.000</td>\n      <td>0.707</td>\n      <td>0.000</td>\n    </tr>\n    <tr>\n      <td>CD8-LAYN</td>\n      <td>0.741</td>\n      <td>0.000</td>\n      <td>0.172</td>\n      <td>0.000</td>\n      <td>0.373</td>\n      <td>0.021</td>\n      <td>0.505</td>\n      <td>0.000</td>\n    </tr>\n  </tbody>\n</table>\n\n#### MGPfact identifies T-cell gene expression signatures with clinical implications\n\nMGPfact discerned the different cellular fates of tumor-associated CD8+ T cells by distinct bifurcation processes. To reveal the clinical implications of these bifurcation processes, we retrieved the mean expression vectors corresponding to either phase (branch) as GES, and stratified cancer cohorts by quantifying the propensities to certain destiny of CD8+ T cells (Methods). Our data demonstrated pronounced disparities in the clinical outcomes associated with different fates of CD8+ T cells among patients (Figure 5a-b, Figure 5\u2014figure supplement 2c). In NSCLC, trajectory 1 is associated with cytotoxic T cells (96%, phase 1) and higher overall survival in TCGA-lung adenocarcinoma (LUAD) patients. Trajectory 2 is associated with exhausted T cells (91%, phase 2), and lower overall survival in the same cohort (Figure 5a, Figure 5\u2014figure supplement 1a-b). Similarly, in the CRC, trajectory 1 is associated with exhausted T cells (95%, phase 1) and poor overall survival in TCGA-COAD patients (Figure 5b, Figure 5\u2014figure supplement 2a-b).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig5-v1.jpg)\n\n**Figure 5.:** (a) Gene expression signatures (GES) corresponding to HWG in CD8+ T cells trajectory 1 and 2 in non-small cell lung cancer (NSCLC) predict overall survival of the TCGA-LUAD cohort. (b) GES corresponding to HWG in CD8+ T cells trajectory 1 in colorectal cancer (CRC) predict overall survival of the TCGA-COAD cohort. (c) ROC curve showing the weighted mean of HWG in Trajectories 1 and 2 in NSCLC significantly associated with ICI response across three independent studies. (d) ROC curve showing the weighted mean of HWG in trajectories 1 and 2 in CRC significantly associated with ICI response across four independent studies.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) The independent trajectories, where phase 0 represents the juncture before bifurcation, while phases 1 and 2 represent the diverging branches post-bifurcation. (b) Proportions of cell types in different phases of independent trajectories; (c) The regulon weight of top regulons of two trajectories. (d) The differential expression of top transcription factors among different phases for each trajectory. In all box plots, the horizontal line represents the median value, and the whisker extends to the furthest data point within 1.5 times the interquartile range. Significance denoted as: *p<0.05, ****p<0.0001, two-sided unpaired Student\u2019s t-test.\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** (a) The independent trajectories, where phase 0 represents the juncture before bifurcation, while phases 1 and 2 represent the diverging branches post-bifurcation. (b) Proportions of cell types in different phases of independent trajectories; (c) The regulon weight of top regulons of two trajectories. (d) The differential expression of top transcription factors among different phases for each trajectory. (e) Survival analysis of the patients from TCGA-COAD cohort. The patients are stratified by utilizing the branch event within trajectory 2 from MGPfact analysis. p-values are calculated using multivariate Cox regression, with HR representing the hazard ratio. (f) ROC curve for immune checkpoint inhibitor (ICI) treatment response associated with highly weighted genes related to Trajectories 2 in CRC across four independent studies. In all box plots, the horizontal line represents the median value, and the whisker extends to the furthest data point within 1.5 times the interquartile range. Significance denoted as: ns, not significant, *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, two-sided unpaired Student\u2019s t-test.\n\n![Figure 5\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig5-figsupp3-v1.jpg)\n\n**Figure 5\u2014figure supplement 3.:** (a-b) The HWG obtained from the first branching event. (c-d) The HWG obtained from the first branching event. In all box plots, the horizontal line represents the median value, and the whisker extends to the furthest data point within 1.5 times the interquartile range. Significance denoted as: ns, not significant, *p<0.05, two-sided unpaired Student\u2019s t-test.\n\n![Figure 5\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig5-figsupp4-v1.jpg)\n\n**Figure 5\u2014figure supplement 4.:** (a-b) The HWG obtained from the first branching event. (c-d) The HWG obtained from the first branching event. In all box plots, the horizontal line represents the median value, and the whisker extends to the furthest data point within 1.5 times the interquartile range. Significance denoted as: ns, not significant, *p<0.05, ****p<0.0001, two-sided unpaired Student\u2019s t-test.\n\nIn addition, for each trajectory identified in NSCLC and CRC, we selected a set of HWG (absolute gene weight >0.05) to characterize the underlying biological processes and key transcription factors determining the bifurcation (Supplementary file 7, Supplementary file 8, Figure 5\u2014figure supplement 1a\u2013b, Figure 5\u2014figure supplement 2a\u2013b). In NSCLC, the HWG of trajectory 1 are primarily implicated in immune responses associated with antigen processing and presentation (Supplementary file 9), while trajectory 2-HWG involves processes of immune cell migration (Supplementary file 9). For CRC, trajectory 1 is enriched for genes of T cell activation and regulation (Supplementary file 10).\n\nNotably, our data showed that the weighted mean expression of the HWG of CD8+ T cell trajectories (Methods) are associated with responses to immune checkpoint inhibitors (ICIs) in multiple independent cohorts (Figure 5c-d, Figure 5\u2014figure supplement 2f). For instance, the weighted means of HWG of trajectories 1 and 2 in NSCLC which are associated with high activities of cytotoxic T cells, predicted better responses to anti-PD-130 and anti-CTLA-4 (Cho et al., 2020; Liu et al., 2018), as well as their combination therapies (Auslander et al., 2018) ($AUC\\in{0.813,0.964}$, P<0.1, Figure 5\u2014figure supplement 3). Similarly, HWG pertaining to trajectory 1 in CRC is associated with high proportion of $EMRA$(87%, phase 1), hence better responses to immunotherapies in 4 cohorts (Auslander et al., 2018; Cho et al., 2020; Jung et al., 2019; Liu et al., 2018) ($AUC\\in{0.796,0.964}$, p<0.01, Figure 5\u2014figure supplement 4).\n\nTaken together, the factorization of scRNA-seq data by MGPfact provides highly relevant gene expression signatures of the fate of tumor-associated CD8+ T cells, which advances the understanding of the evolution of tumor immune microenvironment (TIME) and predicts clinical outcomes.\n\n#### MGPfact identified new subtypes of CD8+ T cells with clinical implications\n\nFurthermore, the consensus trajectories of tumor-associated CD8+ T cells inferred by MGPfact from NSCLC and CRC revealed new subtypes of lymphocytes. In NSCLC, we characterized CD8-ZNF683-T1 (LEF+/TBX21-) and CD8-ZNF683-T2 (LEF+/TBX21+) from CD8-ZNF683 (Figure 6a). The CD8-ZNF683-T2 cells highly expressed genes associated with \u2018pre-exhausted\u2019 state, such as ITGAL, SAMD3, and SLAMF7 (Pritchard et al., 2023), many of which are target genes of TBX21. In contrast, CD8-ZNF683-T1 showed lower expression of these genes, hence repellency to the \u2018pre-exhausted\u2019 state (Figure 6b, Supplementary file 11). In CRC, we identified two subtypes of effector memory T cells (CD8-GZMK), CD8-GZMK-T1 (EOMES-/BHLHE40+), and CD8-GZMK-T2 (EOMES-/BHLHE40-) (Figure 6d). CD8-GZMK-T2 strongly resembles CD8-GZMK, and potentially differentiating into CD8-CD6 (resident memory T cells, $T_{RM}$) and CD8-CD160 (intraepithelial lymphocytes, $IEL$); whereas CD8-GZMK-T1 cells demonstrated higher expression of GZMB, indicating an active cytotoxic cell-killing capability (Trapani, 2001). Simultaneously, these cells also marked by high expression levels of immune related genes, including OASL, RBPJ, and CTLA4, which are known targets of BHLHE40 (Lutter et al., 2022; Salmon et al., 2022), implying that BHLHE40 is a modulator of the higher effector activity in CD8-GZMK-T1 (Figure 6e, Supplementary file 12).\n\n![Figure 6.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig6-v1.jpg)\n\n**Figure 6.:** (a) The consensus trajectory of tumor-associated CD8+ T cells in non-small cell lung cancer (NSCLC) identified CD8-ZNF683-T1 and CD8-ZNF683-T2 as two subtypes of CD8-ZNF683, which are influenced by TBX21. (b) Selected differently expressed genes between CD8-ZNF683-T1 and CD8-ZNF683-T2 (|logfc|>0.25, adjusted p-value <0.1). (c) High expression of CD8-ZNF683-T1 signatures predicts good overall survival in the TCGA LUAD cohort (Methods). p-values were calculated through multivariate Cox regression analysis, and HR represents hazard ratio. (d) The consensus trajectory of tumor-associated CD8+ T cells in colorectal cancer (CRC) identified CD8-GZMK-T1 and CD8-GZMK-T2 as two subtypes of CD8-GZMK. (e) Selected differently expressed genes between CD8-GZMK-T1 and CD8-GZMK-T2 (|logfc|>0.25, adjusted p-value <0.1). (f) ROC curve showing high expression of CD8-GZMK-T1 signature associated with ICI treatment response in three independent studies. The consensus trajectory is formed by merging three bifurcation processes. Each colored circle represents a landmark (minimum unbiased representative points, MURP), indicating the cell type.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/97424/elife-97424-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** In all box plots, the horizontal line represents the median value, and the whisker extends to the furthest data point within 1.5 times the interquartile range. Significance denoted as: ns, not significant, *p<0.05, two-sided unpaired Student\u2019s t-test.\n\nWe further derived scores based on the differentially expressed genes of CD8-ZNF683-T1 and CD8-GZMK-T1 (Methods), as measures of the fraction of each subtype in cancer cohorts. In the LUAD cohort of TCGA, increased fraction of CD8-ZNF683-T1 in TIME was associated with favorable outcomes (Figure 6c). And increased fractions of CD8-GZMK-T1 in TIME were associated with better responses to ICI therapy across three independent cohorts31\u201333 (Figure 6f, Figure 6\u2014figure supplement 1, $AUC\\in{0.782,0.917}$, p<0.1), which were treated with anti-PD-1, anti-CTLA-4 and their combination therapies.\n\nIn conclusion, our data showed the cellular trajectory inferred by MGPfact can be used to elucidate the complex evolutionary processes of tumor-associated CD8+ T cells, and further inform the characterization of new subtypes of T cells with significant clinical implications.\n\n## Discussion\n\nscRNA-seq provides a direct, quantitative snapshot of a population of cells in certain biological conditions, thereby revealing the actual cell states and functions. Although existing clustering and embedding algorithms can effectively reveal discrete biological states of cells, these methods become less efficient when depicting continuous evolving of cells over the temporal domain. The introduction of manifold learning offers a new dimension for discovery of relevant biological knowledge in cell fate determination, allowing for a better representation of continuous changes in cells, especially in time-dependent processes such as development, differentiation, and clonal evolution. However, current manifold learning methods face major limitations, such as the need for prior information on pseudotime and cell clustering, and lack of explainability, which restricts their applicability. Additionally, many existing trajectory inference methods do not support gene selection, making it difficult to annotate the results to known biological entities, thereby hindering the interpretation of results and subsequent functional studies.\n\nWe developed MGPfact to overcome the limitations of the existing methods. Inspired by recent studies, MGPfact model the cell fate as mixture of Gaussian processes, which accommodate both continuous evolution pathway and biphasic destiny of cell fate. Thus, MGPfact is capable to distinguish discrete and continuous events in the same trajectory. In addition, by factorizing the mixture of Gaussian processes, MGPfact offers the advantage to select genes corresponding to each bifurcation process and thereby enables full biological annotation and interpretation of the trajectory. As a validation, we showed that gene-selection by MGPfact consistently recapitulated the development of microglia and tumor-associated CD8+ T cells; and recovered key regulators of distinct cell fate. So far, MGPfact is the only model-based manifold-learning framework which factorizes complex development trajectories into independent bifurcation processes of gene sets.\n\nWe conducted a comprehensive comparison of MGPfact with existing TI methods from various perspectives. This comparison included the correlation of cell sorting, accuracy of branch allocation, similarity of topological structures, and differentially expressed features. It ought to be mentioned that number of principal components used should be determined by the intrinsic biological characteristics of the cell fate-determination. Our experiment based on a limited number of datasets may not represent more complex scenarios in other cell types. For the overall TI-performance, MGPfact demonstrated leading performance across 239 datasets, second only to TinGa. For the performance in branch allocation, which directly reflects the fitness to the outcomes of cell-fate, MGPfact outperformed its counterparts, especially in the topology groups of linear and bifurcation. As for $wcor_{features}$ and $cor_{dist}$, MGPfact performed less well mainly for two reasons. First, MGPfact is designed for bifurcation topology in the cellular trajectory, hence less efficient in inferring complex topologies. Then, MGPfact inference is based on selected gene sets instead of the whole transcriptome, the resulted trajectory correspond only to the bifurcation processes of interest and hence does not necessarily reflect the whole topology of cellular trajectory. Furthermore, MGPfact performed significantly better in trajectory prediction in real cell population compared to the synthetic ones, suggesting the algorithm fit better to the true biological variation and noises.\n\nTo reconstruct the trajectory of cell fate, we merged all the bifurcation processes into a consensus trajectory. In the validation by microglia and tumor-associated CD8+ T cells, the consensus trajectory revealed highly consistent findings recovering known biology and the marker genes of specific cell states which further inform the transcription factor (TF) determining the fate of cell. In addition, the consensus trajectory revealed new subtypes of cells demonstrating highly relevant transcriptional characteristics. Particularly, we reported new subtypes of tumor-associated CD8+ T cells characterized by different TBX21 and BHLHE40 activity, both of which are known regulators of CD8+ T cell functionality (Lutter et al., 2022; Pritchard et al., 2023; Salmon et al., 2022; Trapani, 2001). These data suggest that MGPfact is capable to discover gene modules with strong and consistent transcriptional background hence better interpretability. Moreover, the results of MGPfact demonstrated strong clinical relevance. Using MGPfact we retrieved GES which quantitatively measure the propensity and fraction of different fates of CD8+ T cell. These signatures correspond to important biological processes of T cell activity; and predict clinical outcome and ICI treatment responses from transcriptome data of bulk tumor biopsies, independent of any endogenous feature of the tumor cells.\n\nNevertheless, MGPfact also has some limitations, which shall be addressed in future study. Firstly, the complex definition of the bifurcation kernel introduces unfavorable singularity to the Gaussian kernel when considering highly complex trajectories. Additionally, the current trajectory inference by MGPfact is solely based on the temporal domain, neglecting bifurcation processes occurring in space. To overcome these limitations, future models should incorporate spatial dynamics of transcription and RNA velocity data to provide more comprehensive insights of cell fate. Moreover, the reconstruction of cellular trajectories by MGPfact implies independence of each bifurcation processes, which may not reflect real cellular behavior. Therefore, predictions from MGPfact should be interpreted with caution and validated experimentally.\n\n## Methods\n\n### Benchmarking MGPfact to state-of-the-art methods\n\nWe adopted a comprehensive evaluation framework from previous scRNA-seq study to assess the TI performance of MGPfact (Saelens et al., 2019; Smolander et al., 2022; Todorov et al., 2020). The validation dataset comprises 110 real data and 229 synthetic data, encompassing nine different cellular trajectory topologies. The ground truth of cellular trajectories of each dataset were inferred and validated by the original study (Saelens et al., 2019). The synthetic datasets were generated using four simulators: dyngen (Saelens et al., 2019), dyntoy (Saelens et al., 2019), PROSSTT (Papadopoulos et al., 2019), and Splatter (Zappia et al., 2017), each modeling different trajectory topologies such as linear, branching, and cyclic. Splatter simulates branching events by setting expression states and transition probabilities, dyntoy generates random expression gradients to reflect dynamic changes, and dyngen focuses on complex branching structures within gene regulatory networks.\n\nThe evaluation of TI performance was based on five metrics.\n\nThe dataset is divided into two groups: a training set and a testing set (Figure 2\u2014figure supplement 1). We use 100 training datasets to perform the following tasks:\n\nSubsequently, in 239 test datasets, we compare MGPfact with seven state-of-the-art TI methods using the aforementioned metrics, including Monocle DDRTree (Qiu et al., 2017b, Qiu et al., 2017a), TSCAN (Ji and Ji, 2016), and DPT (Haghverdi et al., 2016), as well as four new methods from recent studies: Monocle 3 (Cao et al., 2019), scShaper (Smolander et al., 2022), scFates Tree (Faure et al., 2023), and TinGa (Todorov et al., 2020).\n\nThe experimental comparisons were conducted on a CentOS system equipped with 48 CPU cores running at 2.2 GHz and 250 GB of memory. To ensure a uniform comparison, all experiments were performed using a single CPU core. For MGPfact, we tested each resulted trajectory and selected the one with the best \u2018overall\u2019 score for comparison. For the other seven methods, default settings are used unless otherwise specified.\n\n### Application of MGPfact in a microglia single-cell RNA-seq dataset\n\nWe utilized the MGPfact reconstructed the developmental trajectory of microglia from a scRNA-seq dataset, including IM, PAM, and HM (Li et al., 2019). In this analysis, we provided a detailed explanation of the analytical steps of MGPfact and the key results. First, we identified three independent developmental pathways and pinpointed HWG associated with each bifurcation process. Then, we retrieved highly active regulons within each bifurcation process, tracing back to the potential influential determinants (transcription factors) in the development of microglia. Finally, we combined all the bifurcation processes into a consensus trajectory, which recovered the known biology of disease-related microglia (PAM), as represented by distinct cellular states and marker genes.\n\n### Predicting the evolutionary trajectory of tumor-associated CD8+ T cells\n\nWe utilized MGPfact to conduct an exploratory analysis of the evolution of tumor-associated CD8+ T cells of non-small cell lung cancer (NSCLC) and colorectal cancer (CRC). We evaluated the goodness-of-fitness of the consensus trajectories from MGPfact to the CD8+ T cell subtypes identified in the original studies. For comparison, we used Monocle 2 (Qiu et al., 2017b, Qiu et al., 2017a) as a baseline model.\n\nFor the survival analysis, we extracted GES from each independent bifurcation process to develop classifiers for evolutionary propensity of CD8+ T cells towards specific fates, based on which we stratified TCGA cancer cohorts and verified their association with clinical outcome.\n\nTo evaluat the association to ICI responses, we used HWG to retrieve key transcription factors related to each bifurcation process and characterized the underlying biological processes. We then assessed their connection to immunotherapy response using weighted means of the HWG.\n\nFinally, we identified new subtypes based on distinct endpoints of the consensus trajectory and validated their association with clinical outcome and immunotherapy response using the mean of the differently expressed gene (DEG).\n\n### Single-cell sequencing data processing\n\nWe obtained the original mouse developmental microglia single-cell sequencing data from the GEO accession number GSE123025 (Li et al., 2019). Using Seurat (Butler et al., 2018; Stuart et al., 2019), we replicated the processing steps described in the original study: (1) Normalization by dividing gene expression values by total RNA count, followed by log2 transformation; (2) Selection of highly variable genes (HVGs) using Seurat\u2019s mean.var.plot function, with controlled average expression $[0.0125,3]$ and variance $[0.5,\u221e]$; (3) Scaling and centering of the normalized matrix for HVGs, with regression of cell cycle effects. After preprocessing, we grouped cells into IM (P7-C0), PAM (P7-C1 and P7-GPNMB+CLEC7A+), and HM (P60), resulting in a 4889-gene expression matrix across 1009 cells.\n\nFor analyzing tumor-associated CD8+ T cells, we utilized scRNA-seq data from lung cancer (GSE99254) (Guo et al., 2018) and colorectal cancer (GSE108989) (Zhang et al., 2018) in the GEO database. We extracted preprocessed and centralized gene expression matrices of CD8+ T cells and analyzed them using the same genes and the same method (Monocle 2) as in the original papers or MGPfact for trajectory construction for a direct comparison. The NSCLC data yielded an 888-gene expression matrix across 3700 cells, while the CRC data resulted in a 700-gene expression matrix across 3177 cells.\n\n### Functional enrichment of highly weighted genes\n\nFor the highly weighted genes (HWG, absolute gene weight >0.05) obtained from independent bifurcation processes, we utilized the R package clusterprofiler (Yu et al., 2012) to perform functional annotation using GO terms (Harris et al., 2004), including biological process (BP), cellular component (CC), and molecular function (MF). The results with a Benjamini\u2013Hochberg-adjusted p-value less than 0.05 were retained.\n\n### Transcription factor program analysis\n\nTo comprehensively assess key regulatory factors within each independent trajectory, we performed SCENIC (Aibar et al., 2017) transcription factor regulatory program estimation for each analysis case. GENIE3 (Huynh-Thu et al., 2010) was used to identify co-expressed modules from the results of MURP (Ren et al., 2022) downsampling. RCisTarget (Aerts et al., 2010; Aibar et al., 2017) was then used to identify regulons before AUCell (Aibar et al., 2017) was used to estimate the activity of each regulon. Each regulon comprises a specific transcription factor and its target genes. Finally, we utilize gene weights obtained from MGPfact analysis to evaluate the distinct impact of top regulons on each trajectory.\n\n### Generating the consensus trajectory\n\nFollowing MGPfact decomposition, we obtained multiple independent bifurcation trajectories, each corresponds to a binary tree within the temporal domain. These trajectories were then merged to construct a coherent diffusion tree, representing the consensus trajectory of cells\u2019 fate. The merging process involves initially sorting all trajectories by their bifurcation time. The first (earliest) bifurcation trajectory is chosen as the initial framework, and subsequent trajectories are integrated to the initial framework iteratively by adding the corresponding branches at the bifurcation timepoints. As a result, the trajectories are ultimately merged into a comprehensive binary tree, serving as the consensus trajectory.\n\n### Assessing consistency of MGPfact-derived CD8+ T cell subtype trajectories\n\nIn the case study of CD8+ T cells, by combining independent trajectories, we derive a consensus trajectory representing the complex developmental pathway. To assess the goodness-of-fitness to the CD8+ T cell subtypes from the original study, we classified the trajectories into several states based on bifurcation points, each corresponding to a distinct stage of the evolutionary process. Then, we evaluated the interactive effects between the states and pseudotime on the fraction of the cell types using F-test (ANOVA). The resulted R-squared (R2), p-values, and F-statistics were used to evaluate the goodness-of-fitness of the models tested hence the explanatory power. For comparison, we used the Monocle 2 as the baseline model for trajectory inference. The differentiation trajectories of Monocle 2 were replicated following the workflow in the original study (Guo et al., 2018; Zhang et al., 2018).\n\n### Survival analysis\n\nWe assessed the association of bifurcation processes and specific cell types with the clinical outcomes two cohorts of lung adenocarcinoma (LUAD, N=563) and colon adenocarcinoma (COAD, N=320) data from The Cancer Genome Atlas (TCGA). The gene expression and clinical data were downloaded from UCSC Xena platform (http://xena.ucsc.edu/).\n\nWe assessed the survival impacts of NSCLC and CRC bifurcation processes in the TCGA LUAD and COAD cohorts, respectively. For each independent bifurcation process, we defined GES by the mean expression vectors of all trajectories in phase 1 and 2, respectively. Subsequently, we calculated the Pearson\u2019s correlation coefficients for each individual expression profile in TCGA LUAD or COAD cohorts to the phase 1 and 2 GES, where higher correlation corresponds to a stronger propensity to specific cell fate. This allowed us to classify patients into two groups: those exhibiting propensity to phase 1 and those exhibiting propensity to phase 2.\n\nTo assess the survival impacts of specific cell states defined by the consensus trajectory, we developed a CD8-ZNF683-T1 score based on the signed average expression level of DEG associated with CD8-ZNF683-T1. Subsequently, we classified the TCGA LUAD cohorts into two groups using the median of CD8-ZNF683-T1 scores, identifying those demonstrating a propensity towards CD8-ZNF683-T1 and those demonstrating a propensity towards CD8-ZNF683-T2.\n\nTo adjust for possible confounding effects, the relevant clinical features including age, sex, and tumor stage were used as covariates. The Cox regression model was implemented using R-4.2 package \u2018survival.\u2019 And, we generated Kaplan-Meier survival curves based on different classifiers to illustrate differences in survival time and report the statistical significance based on Log-rank test.\n\n### Immune-checkpoint inhibitor treatment response analysis\n\nFor the prediction of Immune-checkpoint inhibitor treatment response, we collected four datasets containing ICI treatment responses. These datasets consist of two non-small cell lung cancer-related datasets (GSE135222 [Jung et al., 2019], n=27; GSE126044 [Cho et al., 2020], n=16) and two melanoma-related datasets (GSE115821 [Auslander et al., 2018], n=14; TCGA-MENO [Liu et al., 2018], n=10). All data were processed with DESeq2 (Love et al., 2014) to fit gene dispersion to a negative binomial distribution, normalize raw counts, and stabilize variance, achieving standardization.\n\nTo validate the bifurcation processes identified by MGPfact predicting patients' response to immune-checkpoint inhibitor (ICI) treatments, we selected highly weighted genes (HWG) with absolute weights greater than 0.05 from each independent bifurcation process. Then, we calculated the weighted mean expression of HWG in each ICI dataset to generate ROC curves for patient drug response.\n\nTo validate the specific cell states defined by the consensus trajectory predicting patients' response to ICI treatments, we used CD8-GZMK-T1 score based on the average expression level differences of upregulated and downregulated genes associated with CD8- GZMK-T1. Then, we calculated the CD8-GZMK-T1 score in each ICI dataset to generate ROC curves for patient drug response.\n",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "8cdb30d6-f9c2-4568-b6ce-8037c4812b4b",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Mohammad M Karimi, King's College London United Kingdom\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.97424.3.sa0](https://doi.org/10.7554/eLife.97424.3.sa0)\n\nMGPfactXMBD is a novel computational method for investigating cell evolutionary trajectory for scRNA-seq samples. It is important, with several potential future applications. The authors benchmarked this method using synthetic and real-world samples and showed superior performance for some of the tasks in cell trajectory analysis compared to other methods with compelling evidence.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97424.3.sa1](https://doi.org/10.7554/eLife.97424.3.sa1)\n\nSummary:\n\nRen et al developed a novel computational method to investigate cell evolutionary trajectory for scRNA-seq samples. This method, MGPfact, estimates pseudotime and potential branches in the evolutionary path through explicitly modeling the bifurcations in a Gaussian process. They benchmarked this method using synthetic as well as real world samples and showed superior performance for some of the tasks in cell trajectory analysis. They further demonstrated the utilities of MGPfact using single cell RNA-seq samples derived from microglia or T cells and showed that it can accurately identify the differentiation timepoint and uncover biologically relevant gene signatures.\n\nStrengths:\n\nOverall I think this is a useful new tool that could deliver novel insights for the large body of scRNA-seq data generated in the public domain. The manuscript is written is a logical way and most parts of the method are well described.\n\nComments on revisions:\n\nIn this revision, the authors have sufficiently addressed all of my concerns. I don't have any follow-up comments.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.97424.3.sa2](https://doi.org/10.7554/eLife.97424.3.sa2)\n\nSummary of the manuscript:\n\nAuthors present MGPfactXMBD, a novel model-based manifold-learning framework designed to address the challenges of interpreting complex cellular state spaces from single-cell RNA sequences. To overcome current limitations, MGPfactXMBD factorizes complex development trajectories into independent bifurcation processes of gene sets, enabling trajectory inference based on relevant features. As a result, it is expected that the method provides a deeper understanding of the biological processes underlying cellular trajectories and their potential determinants.\n\nMGPfactXMBD was tested across 239 datasets, and the method demonstrated similar to slightly superior performance in key quality-control metrics to state-of-the-art methods. When applied to case studies, MGPfactXMBD successfully identified critical pathways and cell types in microglia development, validating experimentally identified regulons and markers. Additionally, it uncovered evolutionary trajectories of tumor-associated CD8+ T cells, revealing new subtypes with gene expression signatures that predict responses to immune checkpoint inhibitors in independent cohorts.\n\nOverall, MGPfactXMBD represents a relevant tool in manifold-learning for scRNA-seq data, enabling feature selection for specific biological processes and enhancing our understanding of the biological determinants of cell fate.\n\nSummary of the outcome:\n\nThe novel method addresses core state-of-the-art questions in biology related to trajectory identification. The design and the case studies are of relevance.\n\nComments on revisions:\n\nThe authors have addressed all my previous comments to satisfaction.\n",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "2896a5e6-1d5b-469a-a9f7-df6147797018",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C1",
+      "claim": "MGPfactXMBD is a model-based manifold-learning framework capable of factorizing complex development trajectories into independent bifurcation processes of gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we described MGPfactXMBD, a model-based manifold-learning framework and capable to factorize complex development trajectories into independent bifurcation processes of gene sets, and thus enables trajectory inference based on relevant features.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a direct statement from the abstract describing the method's capabilities.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "295efc5c-fc4f-4c62-9965-712bdbe81177",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C2",
+      "claim": "MGPfactXMBD outperformed most established methods when bench-tested across 239 datasets in major quantity-control metrics such as branch division accuracy and trajectory topology.",
+      "claim_type": "EXPLICIT",
+      "source": "When bench-tested across 239 datasets, MGPfactXMBD showed advantages in major quantity-control metrics, such as branch division accuracy and trajectory topology, outperforming most established methods.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental benchmarking data presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "0accfc2b-9eb2-48c0-aa9a-b40358837811",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C3",
+      "claim": "MGPfactXMBD recovered critical pathways and cell types in microglia development with experimentally valid regulons and markers.",
+      "claim_type": "EXPLICIT",
+      "source": "In real datasets, MGPfactXMBD recovered the critical pathways and cell types in microglia development with experimentally valid regulons and markers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by validation against experimental data in the microglia development case study.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "f56346e0-a818-4bae-b996-7b7152814988",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C4",
+      "claim": "MGPfactXMBD discovered evolutionary trajectories of tumor-associated CD8+ T cells and yielded new subtypes with gene expression signatures significantly predictive of responses to immune checkpoint inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, MGPfactXMBD discovered evolutionary trajectories of tumor-associated CD8+ T cells and yielded new subtypes of CD8+ T cells with gene expression signatures significantly predictive of the responses to immune checkpoint inhibitor in independent cohorts.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by analysis of CD8+ T cell data and validation in independent clinical cohorts.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "cd7f1282-b105-4034-93b8-cad2533f5a27",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C5",
+      "claim": "Graph-based embedding can better capture nonlinear biological signals among cells compared to other embedding methods.",
+      "claim_type": "EXPLICIT",
+      "source": "Among the existing methods, graph-based embedding can better capture nonlinear biological signals among cells hence yielded more insights of the diversity of cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general statement about the advantages of graph-based methods, drawing on established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "ddc4d4a8-1b2b-4c10-8d97-a7d4f3ae2f77",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C6",
+      "claim": "TSCAN employs the construction of minimum spanning trees to discover pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "TSCAN employs the construction of minimum spanning trees to discover pathways, while DPT reconstructs cellular trajectories using random walks, and scShaper integrates multiple pseudo-temporal solutions to deduce the shortest trajectory within a linear context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of TSCAN, referencing established methods in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "088fd98b-b016-4db3-b00b-40505f0c0237",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C7",
+      "claim": "DPT reconstructs cellular trajectories using random walks.",
+      "claim_type": "EXPLICIT",
+      "source": "TSCAN employs the construction of minimum spanning trees to discover pathways, while DPT reconstructs cellular trajectories using random walks, and scShaper integrates multiple pseudo-temporal solutions to deduce the shortest trajectory within a linear context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of DPT, referencing established methods in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "5c0cbe0e-3cfa-448c-a4c6-dc17b070aef6",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C8",
+      "claim": "scShaper integrates multiple pseudo-temporal solutions to deduce the shortest trajectory within a linear context.",
+      "claim_type": "EXPLICIT",
+      "source": "TSCAN employs the construction of minimum spanning trees to discover pathways, while DPT reconstructs cellular trajectories using random walks, and scShaper integrates multiple pseudo-temporal solutions to deduce the shortest trajectory within a linear context.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of scShaper, referencing established methods in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "063c5c32-05a5-4b53-9419-8abdeeec42e3",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C9",
+      "claim": "Monocle 2 creates DDRtree based on reversed graph embedding techniques.",
+      "claim_type": "EXPLICIT",
+      "source": "They leverage sophisticated graphing techniques to map intricate cell hierarchies; Monocle 2 creates DDRtree based on reversed graph embedding techniques, while Monocle 3 utilizes UMAP (Becht et al., 2019) for embedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of Monocle 2, referencing established methods in the field.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "ce2ff009-95fc-4071-af26-7ccb964c04da",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C10",
+      "claim": "Monocle 3 utilizes UMAP for embedding.",
+      "claim_type": "EXPLICIT",
+      "source": "They leverage sophisticated graphing techniques to map intricate cell hierarchies; Monocle 2 creates DDRtree based on reversed graph embedding techniques, while Monocle 3 utilizes UMAP (Becht et al., 2019) for embedding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of Monocle 3, with citation to UMAP.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "979db30b-2830-4818-9a5a-76ce8d6c582a",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C11",
+      "claim": "TinGa utilizes the Growing Neural Gas (GNG) algorithm to construct an adaptive graph structure that effectively captures the density structure of the dataset.",
+      "claim_type": "EXPLICIT",
+      "source": "TinGa (Todorov et al., 2020) and scFates (Faure et al., 2023) represent more recent innovations. TinGa utilizes the Growing Neural Gas (GNG) algorithm (Fritzke, 1994) to construct an adaptive graph structure that effectively captures the density structure of the dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the methodology of TinGa with citations to the original work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "ae203af2-f95d-496b-9c2c-1dcebb8bdfbf",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C12",
+      "claim": "Current RNA velocity analyses are unable to resolve cell-fates with complex branching trajectory.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, current RNA velocity analyses are still unable to resolve cell-fates with complex branching trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about limitations of current methods based on the authors' assessment of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "49b44548-d0ae-46c6-b10e-e9d451c3372e",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C13",
+      "claim": "Current trajectory prediction methods have limited model interpretability and power to gain novel biological insights due to difficulty in disentangling effects of specific processes.",
+      "claim_type": "EXPLICIT",
+      "source": "First, graph-based trajectories represent synergic effects of multiple biological processes, making it difficult to disentangle the effects of specific process, hence limited model interpretability and the power to gain novel biological insights.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of existing methods based on the authors' analysis of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "fce742ba-f431-4de9-8b77-4abaacf78aa5",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C14",
+      "claim": "Conventional statistical feature-selection methods are less efficient for the learning of complex topologies.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the inference of trajectory is highly dependent on the biases in the gene-selection, whereas conventional statistical feature-selection methods are less efficient for the learning of complex topologies, and adds to the difficulty of suggesting candidate genes for downstream functional study.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of existing methods based on the authors' analysis of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "5e9d28a8-c21d-476d-9fa7-ed11b09c133a",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C15",
+      "claim": "MGPfact provides highly interpretable, factorizable cellular trajectories with matched gene expression modules.",
+      "claim_type": "EXPLICIT",
+      "source": "MGPfact offers two advantages in future scRNA-seq analyses: first, it provides highly interpretable, factorizable cellular trajectories with matched gene expression modules; then, it provides efficient feature-selection for graph-based embedding, thus enhancing our understanding of the determination of cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the method's capabilities based on the design and results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "3f17d07e-d1ab-4ad1-b765-ad4fb645cfe5",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C16",
+      "claim": "MGPfact provides efficient feature-selection for graph-based embedding.",
+      "claim_type": "EXPLICIT",
+      "source": "MGPfact offers two advantages in future scRNA-seq analyses: first, it provides highly interpretable, factorizable cellular trajectories with matched gene expression modules; then, it provides efficient feature-selection for graph-based embedding, thus enhancing our understanding of the determination of cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement of the method's capabilities based on the design and results presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "023e8fac-e4cb-49e6-a9e0-081cbafe9192",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C17",
+      "claim": "The analytical pipeline of MGPfact consists of two major stages: MURP downsampling with preprocessed data and trajectory reconstruction.",
+      "claim_type": "EXPLICIT",
+      "source": "The complete workflow comprises two major stages: minimum unbiased representative points (MURP) downsampling with preprocessed data and trajectory reconstruction.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is directly stated in the text and illustrated in Figure 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "28015771-908e-40a7-96e3-bf1866ff107a",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C18",
+      "claim": "MGPfact uses radial basis function (rbf) and polynomial kernel function (pl) as kernel functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We employ radial basis function (rbf) and polynomial kernel function (pl). We chose these two kernel functions for the effectiveness in handling nonlinear and polynomial relationships, achieving a balance between model performance and computational efficiency.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the specific kernel functions used in the method with justification.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "8fa0dd27-8d96-4bae-82d9-c8fe3d8fb0dd",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C19",
+      "claim": "MGPfact infers all parameters by maximizing the posterior likelihood using Markov Chain Monte Carlo (MCMC) methods.",
+      "claim_type": "EXPLICIT",
+      "source": "We infer all parameters by maximizing the posterior likelihood using Markov Chain Monte Carlo (MCMC) methods available in Mamba (Brian, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the inference method used in MGPfact with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "be82a468-3dd3-4da0-b6f7-78662c3e4bf5",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C21",
+      "claim": "MGPfact uses SLICE sampling technique for estimating parameters other than pseudotime.",
+      "claim_type": "EXPLICIT",
+      "source": "Other parameters are estimated using the more efficient SLICE sampling technique (Neal, 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a specific sampling method used in the algorithm with citation.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "fcdd34d5-31b8-4722-9048-b3455b694a5b",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C22",
+      "claim": "The validation dataset comprises 110 real data and 229 synthetic data, encompassing nine different cellular trajectory topologies.",
+      "claim_type": "EXPLICIT",
+      "source": "The validation dataset comprises 110 real data and 229 synthetic data, encompassing nine different cellular trajectory topologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the composition of the validation dataset used for benchmarking.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "39d1e2c9-792c-4769-af73-19d7246f2a15",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C23",
+      "claim": "The synthetic datasets were generated using four simulators: dyngen, dyntoy, PROSSTT, and Splatter.",
+      "claim_type": "EXPLICIT",
+      "source": "The synthetic datasets were generated using four simulators: dyngen (Saelens et al., 2019), dyntoy (Saelens et al., 2019), PROSSTT (Papadopoulos et al., 2019), and Splatter (Zappia et al., 2017), each modeling different trajectory topologies such as linear, branching, and cyclic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the data generation methods with citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "77c9f052-d18d-4520-bdc7-616c28b2d0c4",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C26",
+      "claim": "Trajectory predictions utilizing MURP-based downsampling realized an overall score increase of 5.31 to 185%.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, trajectory predictions utilizing MURP-based downsampling realized an overall score increase of 5.31 to 185%, underscoring the indispensable role of MURP in the trajectory inference capabilities of MGPfact.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative analysis data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "c309bcfb-33be-4f93-a4a6-5448ea1acbae",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C33",
+      "claim": "MGPfact significantly outperformed more than half of the algorithms tested in disconnected graph, linear, bifurcation, multifurcation, and tree trajectory types for F1_branches (T-test p<0.1).",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, MGPfact significantly outperformed more than half of the algorithms tested in the following trajectory types (T-test p<0.1, Table 1): disconnected graph (N=5), linear (N=5), bifurcation (N=4), multifurcation (N=4), and tree (N=4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical comparison data shown in Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "cac75766-f428-4f6b-a777-8054baaa1893",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C36",
+      "claim": "MGPfact ranked top of all seven algorithms for overall score in 68 test datasets of real cell populations.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also worth noting that in 68 test datasets of real cell populations, MGPfact ranked the top of all seven algorithms for 'overall score' (Figure 3a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by benchmarking data shown in Figure 3a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "520e362f-8999-4f08-9b36-2a7ff5fb2de5",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C43",
+      "claim": "MGPfact reconstructed the developmental trajectories of microglia from immature microglia (IM) to homeostatic microglia (HM) and proliferative-region-associated microglia (PAM).",
+      "claim_type": "EXPLICIT",
+      "source": "Utilizing MGPfact, we reconstructed the developmental trajectories of microglia from immature microglia (IM at pseudotime 0) to homeostatic microglia (HM) and proliferative-region-associated microglia (PAM) (Figure 4a\u2013c, left panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by trajectory reconstruction results shown in Figure 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "d33384d1-0941-4593-9438-af1a6c37fbc0",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C44",
+      "claim": "MGPfact identified three bifurcation processes in microglia development, each corresponding to 74\u201390 highly weighted genes.",
+      "claim_type": "EXPLICIT",
+      "source": "MGPfact identified three bifurcation processes (Supplementary file 4), each corresponding to 74\u201390 highly weighted genes (HWG, absolute gene weight >0.05) (Figure 4a\u2013c, right panel).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by factorization results shown in Figure 4 and Supplementary file 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "c9b2fc5d-54dc-45fa-8167-1c7a207b8ce1",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C45",
+      "claim": "The first bifurcation in microglia development determines the differentiated cell fates of PAM and HM, involving marker genes such as Apoe, Selplg (HM), and Gpnmb (PAM).",
+      "claim_type": "EXPLICIT",
+      "source": "The first bifurcation determines the differentiated cell fates of PAM and HM, which involves a set of notable marker genes of both cell types, such as Apoe, Selplg (HM), and Gpnmb (PAM).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression analysis of the first bifurcation process.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "6a14b4ad-267a-4cdb-bc1a-9c91564689a6",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C46",
+      "claim": "The second bifurcation in microglia development determines the proliferative status, involving genes associated with cell cycle and proliferation such as Mki67, Tubb5, Top2a.",
+      "claim_type": "EXPLICIT",
+      "source": "The second bifurcation determines the proliferative status, which is crucial for the development and function of PAM and HM (Guzm\u00e1n, 2022; Li et al., 2019). The genes affected by the second bifurcation are associated with cell cycle and proliferation, such as Mki67, Tubb5, Top2a.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression analysis with citations to relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "ce4557c2-b943-4017-aade-08c1400270db",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C47",
+      "claim": "The third bifurcation in microglia development influences the development and maturity of microglia, with highly weighted genes including Tmem119, P2ry12, and Sepp1 as previously annotated markers.",
+      "claim_type": "EXPLICIT",
+      "source": "The third bifurcation influences the development and maturity of microglia, of which the highly weighted genes, such as Tmem119, P2ry12, and Sepp1 are all previously annotated markers for the establishment of the fates of microglia (Anderson et al., 2022; Li et al., 2019; Supplementary file 4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression analysis with citations to relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "363a16d8-df12-41e7-848a-b382c94852d1",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C48",
+      "claim": "MGPfact identified Hif1a, E2f5, and Nfkb1 as influential transcription factors determining microglia development.",
+      "claim_type": "EXPLICIT",
+      "source": "These data unveiled highly active transcription regulations in each bifurcation processes, which further traced back to the influential transcription factors as determinants of microglia development, such as Hif1a, E2f5, and Nfkb1 (Figure 4d\u2013e, Methods).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by regulon analysis shown in Figure 4d-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "30d1b8de-9287-49f2-8ed0-22ff9db339b4",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C49",
+      "claim": "Hif1a is crucial for microglial activation and directly linked to neurodegenerative disease progression.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, Hif1a is crucial for microglial activation and directly linked to neurodegenerative disease progression (Wang et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "df02bf07-6465-4529-9f57-5de64dfc7ed5",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C50",
+      "claim": "Hif1a showed upregulation in the PAM-branch (phase 1) of the first bifurcation, reaffirming its role in PAM differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data showed an upregulation of Hif1a in the PAM-branch (phase 1) of the first bifurcation, reaffirming the role of Hif1a in PAM differentiation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by gene expression analysis in the microglia dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "fdc83793-5805-4b1a-9c0c-5f067c80dc44",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C51",
+      "claim": "E2f5 and Nfkb1 are known for their roles in microglial development.",
+      "claim_type": "EXPLICIT",
+      "source": "The other two transcription factors, E2f5 and Nfkb1, were active in phase 2 of the second bifurcation and the third bifurcation, respectively. Both are known for the roles in microglial development (Dresselhaus and Meffert, 2019; Nawal, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "18775713-d4cf-4f1c-83b1-059293c28478",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C52",
+      "claim": "The consensus trajectory of microglia development revealed two distinct subtypes of PAM: PAM-T1 (Hif1a+/E2f5-/Nfkb1+) and PAM-T2 (Hif1a+/E2f5-/Nfkb1-).",
+      "claim_type": "EXPLICIT",
+      "source": "Of note, the consensus trajectory revealed two distinct subtypes of proliferative-region-associated microglia (PAM), PAM-T1 (Hif1a+/E2f5-/Nfkb1+), and PAM-T2 (Hif1a+/E2f5-/Nfkb1-) (Figure 4f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by consensus trajectory analysis shown in Figure 4f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "3d814e3e-410e-466b-ac93-428bf7e0243c",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C53",
+      "claim": "Highly expressed genes in PAM-T2, including Spp1, Gpnmb, Lgals1, and Cd63, are previously identified in disease-associated microglia (DAM).",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, the highly expressed genes in PAM-T2, including Spp1, Gpnmb, Lgals1, and Cd63, are previously identified in disease-associated microglia (DAM) (Li et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by differential gene expression analysis with citation to relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "374293a2-f5da-4b5a-b81a-d6cc9a92e58c",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C54",
+      "claim": "Nfkb1 is suggested as a potential determinant of differentiation of PAM.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, our finding reaffirmed the connection between the two cell types, DAM and PAM, and suggested Nfkb1 as a potential determinant of differentiation of PAM (Figure 4g, Supplementary file 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference based on the differential expression analysis and trajectory results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "6acff3d7-958c-417c-97df-4f6dd8f9eeaa",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C55",
+      "claim": "MGPfact significantly improved the explanatory power for most CD8+ T cell subtypes over Monocle 2 (p<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "The data showed that MGPfact significantly improved the explanatory power for most CD8+ T cell subtypes over Monocle 2, which was used in the original studies (p<0.05, see Table 2 and Supplementary file 6), except for the CD8-GZMK cells in the CRC dataset.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by statistical comparison data shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "352bd2d4-4574-41ea-aba1-5f0cb52ed9e2",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C56",
+      "claim": "MGPfact exhibited higher explanatory power for CD8-LEF1 cells in NSCLC dataset (R-squared=0.935).",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in the NSCLC dataset, MGPfact exhibited higher explanatory power for CD8-LEF1 cells (Table 2, R-squared=0.935), while Monocle 3 and scFates Tree perform better in other cell types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by goodness-of-fit analysis shown in Table 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "3d069ac2-376f-4f22-9c1c-8aad50e0238d",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C57",
+      "claim": "In NSCLC, trajectory 1 is associated with cytotoxic T cells (96%, phase 1) and higher overall survival in TCGA-LUAD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "In NSCLC, trajectory 1 is associated with cytotoxic T cells (96%, phase 1) and higher overall survival in TCGA-lung adenocarcinoma (LUAD) patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by survival analysis data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "ecd2c834-f4e2-4cbe-99c7-b5e7f15f3809",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C58",
+      "claim": "In NSCLC, trajectory 2 is associated with exhausted T cells (91%, phase 2) and lower overall survival in TCGA-LUAD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Trajectory 2 is associated with exhausted T cells (91%, phase 2), and lower overall survival in the same cohort (Figure 5a, Figure 5\u2014figure supplement 1a-b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis data shown in Figure 5a and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "16e36366-c160-409c-856e-15417906716e",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C59",
+      "claim": "In CRC, trajectory 1 is associated with exhausted T cells (95%, phase 1) and poor overall survival in TCGA-COAD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, in the CRC, trajectory 1 is associated with exhausted T cells (95%, phase 1) and poor overall survival in TCGA-COAD patients (Figure 5b, Figure 5\u2014figure supplement 2a-b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis data shown in Figure 5b and supplementary figures.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "247a2891-ea49-40b8-abf4-94eb3059ce70",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C60",
+      "claim": "The weighted mean of HWG in Trajectories 1 and 2 in NSCLC significantly associated with ICI response across three independent studies.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, our data showed that the weighted mean expression of the HWG of CD8+ T cell trajectories (Methods) are associated with responses to immune checkpoint inhibitors (ICIs) in multiple independent cohorts (Figure 5c-d, Figure 5\u2014figure supplement 2f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by ROC analysis shown in Figure 5c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "ac2bd56a-7fd0-4db0-8a82-cb23236025fc",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C63",
+      "claim": "In NSCLC, MGPfact characterized CD8-ZNF683-T1 (LEF+/TBX21-) and CD8-ZNF683-T2 (LEF+/TBX21+) from CD8-ZNF683.",
+      "claim_type": "EXPLICIT",
+      "source": "In NSCLC, we characterized CD8-ZNF683-T1 (LEF+/TBX21-) and CD8-ZNF683-T2 (LEF+/TBX21+) from CD8-ZNF683 (Figure 6a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by consensus trajectory analysis shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "6d7caec0-5ab5-484d-adb1-67370fecb875",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C64",
+      "claim": "CD8-ZNF683-T2 cells highly expressed genes associated with 'pre-exhausted' state, such as ITGAL, SAMD3, and SLAMF7, many of which are target genes of TBX21.",
+      "claim_type": "EXPLICIT",
+      "source": "The CD8-ZNF683-T2 cells highly expressed genes associated with 'pre-exhausted' state, such as ITGAL, SAMD3, and SLAMF7 (Pritchard et al., 2023), many of which are target genes of TBX21.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by differential gene expression analysis with citation to relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "6fbd68e0-8ae2-4a62-a8a5-d8b743e1a6fb",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C65",
+      "claim": "CD8-ZNF683-T1 showed lower expression of pre-exhausted genes, hence repellency to the 'pre-exhausted' state.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, CD8-ZNF683-T1 showed lower expression of these genes, hence repellency to the 'pre-exhausted' state (Figure 6b, Supplementary file 11).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by differential gene expression analysis shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "410ee6ba-46f6-48c6-953a-33ee60fde4e6",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C66",
+      "claim": "In CRC, MGPfact identified two subtypes of effector memory T cells (CD8-GZMK): CD8-GZMK-T1 (EOMES-/BHLHE40+) and CD8-GZMK-T2 (EOMES-/BHLHE40-).",
+      "claim_type": "EXPLICIT",
+      "source": "In CRC, we identified two subtypes of effector memory T cells (CD8-GZMK), CD8-GZMK-T1 (EOMES-/BHLHE40+), and CD8-GZMK-T2 (EOMES-/BHLHE40-) (Figure 6d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by consensus trajectory analysis shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "ce96e0a4-29bc-468d-95e4-39dd058e3770",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C68",
+      "claim": "CD8-GZMK-T1 cells demonstrated higher expression of GZMB, indicating an active cytotoxic cell-killing capability.",
+      "claim_type": "EXPLICIT",
+      "source": "whereas CD8-GZMK-T1 cells demonstrated higher expression of GZMB, indicating an active cytotoxic cell-killing capability (Trapani, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by differential gene expression analysis with citation to relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "343c49ae-8d89-4764-9213-0b9b1750288c",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C69",
+      "claim": "CD8-GZMK-T1 cells are marked by high expression levels of immune related genes including OASL, RBPJ, and CTLA4, which are known targets of BHLHE40.",
+      "claim_type": "EXPLICIT",
+      "source": "Simultaneously, these cells also marked by high expression levels of immune related genes, including OASL, RBPJ, and CTLA4, which are known targets of BHLHE40 (Lutter et al., 2022; Salmon et al., 2022), implying that BHLHE40 is a modulator of the higher effector activity in CD8-GZMK-T1 (Figure 6e, Supplementary file 12).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by differential gene expression analysis with citations to relevant literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "24eaef00-da20-4fac-96d6-2c2d2c872369",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C70",
+      "claim": "Increased fraction of CD8-ZNF683-T1 in TIME was associated with favorable outcomes in the LUAD cohort of TCGA.",
+      "claim_type": "EXPLICIT",
+      "source": "In the LUAD cohort of TCGA, increased fraction of CD8-ZNF683-T1 in TIME was associated with favorable outcomes (Figure 6c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by survival analysis shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "b85e5486-64d7-40b1-9833-ce7e565bba21",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C72",
+      "claim": "MGPfact is the only model-based manifold-learning framework which factorizes complex development trajectories into independent bifurcation processes of gene sets.",
+      "claim_type": "EXPLICIT",
+      "source": "So far, MGPfact is the only model-based manifold-learning framework which factorizes complex development trajectories into independent bifurcation processes of gene sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the uniqueness of the method based on the authors' assessment of the field.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "0ee97614-4cee-470d-851b-ce759cd0862a",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C73",
+      "claim": "MGPfact demonstrated leading performance across 239 datasets, second only to TinGa for overall TI-performance.",
+      "claim_type": "EXPLICIT",
+      "source": "For the overall TI-performance, MGPfact demonstrated leading performance across 239 datasets, second only to TinGa.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by benchmarking data presented in the results section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "a68dea6e-efd8-43bb-a9b6-41ed926a352c",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C74",
+      "claim": "MGPfact performed significantly better in trajectory prediction in real cell population compared to synthetic ones.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, MGPfact performed significantly better in trajectory prediction in real cell population compared to the synthetic ones, suggesting the algorithm fit better to the true biological variation and noises.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by comparative analysis of performance on real vs. synthetic datasets.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "2b584d19-deb6-4726-a420-e7a419a94a84",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C75",
+      "claim": "MGPfact is designed for bifurcation topology in the cellular trajectory, hence less efficient in inferring complex topologies.",
+      "claim_type": "EXPLICIT",
+      "source": "First, MGPfact is designed for bifurcation topology in the cellular trajectory, hence less efficient in inferring complex topologies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the design limitations of the method.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "4d0eb071-4506-4f9a-8773-58e95e720b3f",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C76",
+      "claim": "MGPfact inference is based on selected gene sets instead of the whole transcriptome, so the resulted trajectory corresponds only to the bifurcation processes of interest.",
+      "claim_type": "EXPLICIT",
+      "source": "Then, MGPfact inference is based on selected gene sets instead of the whole transcriptome, the resulted trajectory correspond only to the bifurcation processes of interest and hence does not necessarily reflect the whole topology of cellular trajectory.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the design characteristics and limitations of the method.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "5f4b8fe9-9688-4405-b9b1-c9068cea55e4",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C77",
+      "claim": "TBX21 and BHLHE40 are known regulators of CD8+ T cell functionality.",
+      "claim_type": "EXPLICIT",
+      "source": "Particularly, we reported new subtypes of tumor-associated CD8+ T cells characterized by different TBX21 and BHLHE40 activity, both of which are known regulators of CD8+ T cell functionality (Lutter et al., 2022; Pritchard et al., 2023; Salmon et al., 2022; Trapani, 2001).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to relevant literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "385d1c44-8c4f-4316-9c84-f93c5ce45bc2",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C78",
+      "claim": "The complex definition of the bifurcation kernel introduces unfavorable singularity to the Gaussian kernel when considering highly complex trajectories.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, the complex definition of the bifurcation kernel introduces unfavorable singularity to the Gaussian kernel when considering highly complex trajectories.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "a77490e6-e6b3-444b-93ec-2312abc896f7",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C79",
+      "claim": "The current trajectory inference by MGPfact is solely based on the temporal domain, neglecting bifurcation processes occurring in space.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the current trajectory inference by MGPfact is solely based on the temporal domain, neglecting bifurcation processes occurring in space.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "3368829b-6f0f-471f-a3c5-9c42c9074f00",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C80",
+      "claim": "The reconstruction of cellular trajectories by MGPfact implies independence of each bifurcation processes, which may not reflect real cellular behavior.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the reconstruction of cellular trajectories by MGPfact implies independence of each bifurcation processes, which may not reflect real cellular behavior.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about a limitation of the method.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "084d1c5d-2431-4704-a568-b48e07499b61",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C81",
+      "claim": "Future models should incorporate spatial dynamics of transcription and RNA velocity data to provide more comprehensive insights of cell fate.",
+      "claim_type": "EXPLICIT",
+      "source": "To overcome these limitations, future models should incorporate spatial dynamics of transcription and RNA velocity data to provide more comprehensive insights of cell fate.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation for future work based on identified limitations.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "506bf30a-bc22-4a4b-b626-f3f218d7e7da",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "claim_id": "C82",
+      "claim": "Predictions from MGPfact should be interpreted with caution and validated experimentally.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, predictions from MGPfact should be interpreted with caution and validated experimentally.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a recommendation based on the limitations of the method.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "MGPfact is a novel model-based manifold-learning framework that factorizes complex cellular trajectories into independent bifurcation processes of gene sets, enabling interpretable trajectory inference with efficient feature selection. The method uses MURP downsampling, Gaussian process mixtures with bifurcation kernels (RBF and polynomial), and MCMC inference (AMWG and SLICE sampling).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C15-C19, C21, and C72 collectively describe the methodological innovation and capabilities of MGPfact. The mathematical framework is clearly defined with appropriate kernel functions and inference methods. The claim of uniqueness (C72) is supported by the comprehensive literature review showing no other method performs trajectory factorization in this manner. The two-stage pipeline (C17) is well-documented with both text and figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "6ec8bd05-c4d4-4354-9508-c243157e066b",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "MGPfact demonstrates competitive performance in trajectory inference benchmarking across 239 datasets (110 real, 229 synthetic), ranking second overall to TinGa but achieving top performance in branch division accuracy (F1_branches) and ranking first in real datasets. MURP downsampling provides substantial performance improvements (5.31-185% increase in overall score).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C22-C23, C26, C33, C36, C73-C74 are supported by comprehensive benchmarking data presented in Figures 2-3 and Table 1. Statistical tests (t-tests, p<0.1) support claims of significant outperformance in specific trajectory types. The validation dataset composition is clearly described, and performance metrics are appropriate for trajectory inference evaluation. The better performance on real vs. synthetic data (C74) is an interesting finding supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "MGPfact successfully reconstructed microglia developmental trajectories from immature microglia (IM) to homeostatic microglia (HM) and proliferative-region-associated microglia (PAM), identifying three bifurcation processes with 74-90 highly weighted genes each. The method identified key transcription factors (Hif1a, E2f5, Nfkb1) and discovered two PAM subtypes (PAM-T1 and PAM-T2), with PAM-T2 showing similarity to disease-associated microglia (DAM).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C54 are well-supported by the microglia case study data shown in Figure 4 and supplementary files. The identified marker genes (Apoe, Selplg, Gpnmb, Mki67, Tubb5, Top2a, Tmem119, P2ry12, Sepp1) and transcription factors are validated by citations to experimental literature. The discovery of PAM subtypes and their connection to DAM is supported by differential expression analysis. The biological interpretations are consistent with known microglia biology.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "4da1f01d-0988-44ad-931f-89da2a4fa279",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "MGPfact significantly improved explanatory power for CD8+ T cell subtypes compared to Monocle 2 (p<0.05) in both NSCLC and CRC datasets. The identified trajectories showed strong clinical associations: in NSCLC, trajectory 1 (cytotoxic T cells, 96%) associated with better survival while trajectory 2 (exhausted T cells, 91%) associated with worse survival. Gene expression signatures from these trajectories predicted immune checkpoint inhibitor responses across multiple independent cohorts (AUC 0.796-0.964).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C60 are supported by statistical comparisons in Table 2, survival analyses in Figure 5a-b, and ROC analyses in Figure 5c-d. The goodness-of-fit improvements are quantified with R-squared values and p-values from F-tests. The survival associations are validated in TCGA cohorts with appropriate Cox regression and hazard ratios. The ICI response predictions are validated across 3-4 independent cohorts with significant AUC values, demonstrating clinical utility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "39f4ce11-8743-4ebc-9614-05b5a403dbb2",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "MGPfact identified novel CD8+ T cell subtypes with clinical significance: in NSCLC, CD8-ZNF683-T1 (LEF+/TBX21-) and CD8-ZNF683-T2 (LEF+/TBX21+), where T2 cells expressed pre-exhaustion markers; in CRC, CD8-GZMK-T1 (EOMES-/BHLHE40+) and CD8-GZMK-T2 (EOMES-/BHLHE40-), where T1 cells showed higher cytotoxic activity. Increased CD8-ZNF683-T1 fractions associated with favorable outcomes in LUAD, and CD8-GZMK-T1 signatures predicted ICI responses (AUC 0.782-0.917).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C70 are supported by consensus trajectory analyses in Figure 6, differential expression data, and clinical validation. The subtype characterizations are based on transcription factor activity and differential gene expression with appropriate statistical thresholds (|logfc|>0.25, adjusted p<0.1). The clinical associations are validated through survival analysis (Figure 6c) and ICI response prediction across three independent cohorts (Figure 6f). The biological interpretations are supported by citations to relevant literature on TBX21 and BHLHE40 function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "802741d8-4116-464e-851d-9aa9369ec2c8",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The manuscript provides background on existing trajectory inference methods, describing the approaches used by TSCAN (minimum spanning trees), DPT (random walks), scShaper (pseudo-temporal solutions), Monocle 2 (DDRtree), Monocle 3 (UMAP), and TinGa (Growing Neural Gas algorithm), and notes that graph-based embedding methods better capture nonlinear biological signals.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C11 accurately describe established methods in the field with appropriate citations. These are factual descriptions of prior work that provide context for the development of MGPfact. The characterization of graph-based methods as better for capturing nonlinear signals (C5) is a reasonable general statement supported by the literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "c73db984-b2ce-4e36-8108-f649ec5cd9d9",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Current trajectory inference methods have significant limitations: RNA velocity analyses cannot resolve complex branching trajectories, graph-based methods have limited interpretability due to difficulty disentangling specific biological processes, and conventional feature-selection methods are inefficient for learning complex topologies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C12-C14 represent reasonable critical assessments of the field that motivate the development of MGPfact. These limitations are well-recognized in the trajectory inference community and are supported by the authors' comprehensive literature review. The claims appropriately identify gaps that MGPfact aims to address.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "MGPfact has acknowledged limitations: it is designed specifically for bifurcation topologies and is less efficient for complex topologies; it infers trajectories based on selected gene sets rather than the whole transcriptome; the bifurcation kernel definition introduces singularities for highly complex trajectories; it operates only in the temporal domain, neglecting spatial dynamics; and it assumes independence of bifurcation processes. The authors recommend experimental validation and future incorporation of spatial dynamics and RNA velocity data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C75-C82 represent honest and appropriate acknowledgment of methodological limitations. These are clearly stated in the Discussion section and are consistent with the observed performance data (e.g., lower performance on complex topologies). The recommendations for future work (C81) and caution in interpretation (C82) are appropriate given these limitations. This transparent discussion of limitations strengthens the overall credibility of the work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "e1e1bfa7-8281-40d3-bf95-02296ee29b26",
+      "content_id": "2913a77c-6828-47d8-a725-98053b7244ef",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The manuscript cites established biological knowledge about key transcription factors: Hif1a is crucial for microglial activation and linked to neurodegenerative disease; E2f5 and Nfkb1 have known roles in microglial development; and TBX21 and BHLHE40 are known regulators of CD8+ T cell functionality.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49, C51, and C77 are factual statements about established biology, each supported by appropriate citations to the literature (Wang et al. 2022; Dresselhaus and Meffert 2019; Nawal 2017; Lutter et al. 2022; Pritchard et al. 2023; Salmon et al. 2022; Trapani 2001). These provide biological validation for the computational findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "7fb58d80-8a6c-4e98-9bf0-c95ac1ad473a",
+      "content_id": "8cdb30d6-f9c2-4568-b6ce-8037c4812b4b",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "MGPfactXMBD is a novel model-based manifold-learning framework that factorizes complex development trajectories into independent bifurcation processes of gene sets, providing highly interpretable trajectories with matched gene expression modules and efficient feature selection for graph-based embedding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm the novelty and utility of the method. Reviewer 1 states it is 'a useful new tool that could deliver novel insights,' Reviewer 2 describes it as 'a novel computational method' that is 'important, with several potential future applications,' and Reviewer 3 confirms it 'addresses core state-of-the-art questions in biology' and represents 'a relevant tool in manifold-learning for scRNA-seq data.' No concerns were raised about the core methodological claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "46ca7ecd-417b-49e4-bfd0-78dceca6a04e",
+      "content_id": "8cdb30d6-f9c2-4568-b6ce-8037c4812b4b",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "MGPfactXMBD demonstrated superior or competitive performance when benchmarked across 239 datasets in key quality-control metrics such as branch division accuracy and trajectory topology, outperforming most established methods and ranking second only to TinGa for overall trajectory inference performance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the benchmarking results. Reviewer 2 states the method 'showed superior performance for some of the tasks in cell trajectory analysis compared to other methods with compelling evidence,' and Reviewer 3 notes it 'demonstrated similar to slightly superior performance in key quality-control metrics to state-of-the-art methods.' The revision comments indicate all previous concerns were addressed to satisfaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c",
+      "content_id": "8cdb30d6-f9c2-4568-b6ce-8037c4812b4b",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "In microglia development analysis, MGPfactXMBD reconstructed developmental trajectories from immature to homeostatic and proliferative-region-associated microglia, identified three bifurcation processes with 74-90 highly weighted genes each, and discovered influential transcription factors (Hif1a, E2f5, Nfkb1) determining microglia development, revealing two distinct PAM subtypes with connections to disease-associated microglia.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly validate the microglia case study. Reviewer 1 confirms the method 'can accurately identify the differentiation timepoint and uncover biologically relevant gene signatures,' Reviewer 2 states it 'showed superior performance' and notes compelling evidence, and Reviewer 3 affirms it 'successfully identified critical pathways and cell types in microglia development, validating experimentally identified regulons and markers.' All revision concerns were addressed.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b",
+      "content_id": "8cdb30d6-f9c2-4568-b6ce-8037c4812b4b",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "MGPfactXMBD discovered evolutionary trajectories of tumor-associated CD8+ T cells, yielding new subtypes characterized by differential TBX21 and BHLHE40 activity with gene expression signatures significantly predictive of responses to immune checkpoint inhibitors in independent cohorts, and associated with patient survival outcomes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm the CD8+ T cell findings. Reviewer 1 notes the method 'can accurately identify the differentiation timepoint and uncover biologically relevant gene signatures' in T cells, Reviewer 2 confirms it 'showed superior performance' with compelling evidence, and Reviewer 3 states it 'uncovered evolutionary trajectories of tumor-associated CD8+ T cells, revealing new subtypes with gene expression signatures that predict responses to immune checkpoint inhibitors in independent cohorts.' All concerns were addressed to satisfaction.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "1bdc2551-d57a-4d17-a45e-9251dd3fad23",
+      "content_id": "8cdb30d6-f9c2-4568-b6ce-8037c4812b4b",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Trajectory predictions utilizing MURP-based downsampling realized an overall score increase of 5.31 to 185% compared to methods without MURP, demonstrating the indispensable role of MURP in MGPfact's trajectory inference capabilities.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "While not explicitly discussed in detail by reviewers, this methodological component is implicitly accepted as part of the overall method validation. Reviewers affirm the method's superior performance and note that all previous concerns were addressed, suggesting acceptance of the MURP downsampling contribution to the method's success.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "b5f9c05f-91f0-44e5-b12a-6da1a2312143",
+      "content_id": "8cdb30d6-f9c2-4568-b6ce-8037c4812b4b",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "MGPfact's analytical pipeline consists of MURP downsampling and trajectory reconstruction stages, using radial basis function and polynomial kernel functions with MCMC-based parameter inference, validated across 110 real and 229 synthetic datasets encompassing nine trajectory topologies.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'most parts of the method are well described' and notes the manuscript is 'written in a logical way.' The revision comments indicate 'all previous concerns were addressed to satisfaction,' suggesting acceptance of the methodological details and validation approach.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "e730e54f-1118-4e1d-93ea-187f30e77b80",
+      "content_id": "8cdb30d6-f9c2-4568-b6ce-8037c4812b4b",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "MGPfact performed significantly better in trajectory prediction in real cell populations compared to synthetic datasets, suggesting the algorithm fits better to true biological variation and noise.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is implicitly accepted as part of the overall benchmarking results that reviewers explicitly affirmed. Reviewer 2 notes the method was 'benchmarked using synthetic as well as real world samples and showed superior performance,' and Reviewer 3 confirms it was 'tested across 239 datasets' with similar to superior performance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "b6d8e843-a2f7-473f-acef-638328636148",
+      "content_id": "8cdb30d6-f9c2-4568-b6ce-8037c4812b4b",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "MGPfact has acknowledged limitations including being designed specifically for bifurcation topology (less efficient for complex topologies), inference based on selected gene sets rather than whole transcriptome, potential singularity issues with complex trajectories, temporal-only inference neglecting spatial dynamics, and assumption of independence between bifurcation processes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These limitations are author-acknowledged and implicitly accepted by reviewers. The fact that all reviewers note their concerns were addressed to satisfaction and provide positive overall assessments suggests they find the authors' acknowledgment of limitations appropriate and transparent.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "2896a5e6-1d5b-469a-a9f7-df6147797018",
+      "result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e"
+    },
+    {
+      "claim_id": "5e9d28a8-c21d-476d-9fa7-ed11b09c133a",
+      "result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e"
+    },
+    {
+      "claim_id": "3f17d07e-d1ab-4ad1-b765-ad4fb645cfe5",
+      "result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e"
+    },
+    {
+      "claim_id": "023e8fac-e4cb-49e6-a9e0-081cbafe9192",
+      "result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e"
+    },
+    {
+      "claim_id": "28015771-908e-40a7-96e3-bf1866ff107a",
+      "result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e"
+    },
+    {
+      "claim_id": "8fa0dd27-8d96-4bae-82d9-c8fe3d8fb0dd",
+      "result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e"
+    },
+    {
+      "claim_id": "be82a468-3dd3-4da0-b6f7-78662c3e4bf5",
+      "result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e"
+    },
+    {
+      "claim_id": "b85e5486-64d7-40b1-9833-ce7e565bba21",
+      "result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e"
+    },
+    {
+      "claim_id": "295efc5c-fc4f-4c62-9965-712bdbe81177",
+      "result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b"
+    },
+    {
+      "claim_id": "fcdd34d5-31b8-4722-9048-b3455b694a5b",
+      "result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b"
+    },
+    {
+      "claim_id": "39d1e2c9-792c-4769-af73-19d7246f2a15",
+      "result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b"
+    },
+    {
+      "claim_id": "77c9f052-d18d-4520-bdc7-616c28b2d0c4",
+      "result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b"
+    },
+    {
+      "claim_id": "c309bcfb-33be-4f93-a4a6-5448ea1acbae",
+      "result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b"
+    },
+    {
+      "claim_id": "cac75766-f428-4f6b-a777-8054baaa1893",
+      "result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b"
+    },
+    {
+      "claim_id": "0ee97614-4cee-470d-851b-ce759cd0862a",
+      "result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b"
+    },
+    {
+      "claim_id": "a68dea6e-efd8-43bb-a9b6-41ed926a352c",
+      "result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b"
+    },
+    {
+      "claim_id": "520e362f-8999-4f08-9b36-2a7ff5fb2de5",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "d33384d1-0941-4593-9438-af1a6c37fbc0",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "c9b2fc5d-54dc-45fa-8167-1c7a207b8ce1",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "6a14b4ad-267a-4cdb-bc1a-9c91564689a6",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "ce4557c2-b943-4017-aade-08c1400270db",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "363a16d8-df12-41e7-848a-b382c94852d1",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "30d1b8de-9287-49f2-8ed0-22ff9db339b4",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "df02bf07-6465-4529-9f57-5de64dfc7ed5",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "fdc83793-5805-4b1a-9c0c-5f067c80dc44",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "18775713-d4cf-4f1c-83b1-059293c28478",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "3d814e3e-410e-466b-ac93-428bf7e0243c",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "374293a2-f5da-4b5a-b81a-d6cc9a92e58c",
+      "result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8"
+    },
+    {
+      "claim_id": "6acff3d7-958c-417c-97df-4f6dd8f9eeaa",
+      "result_id": "4da1f01d-0988-44ad-931f-89da2a4fa279"
+    },
+    {
+      "claim_id": "352bd2d4-4574-41ea-aba1-5f0cb52ed9e2",
+      "result_id": "4da1f01d-0988-44ad-931f-89da2a4fa279"
+    },
+    {
+      "claim_id": "3d069ac2-376f-4f22-9c1c-8aad50e0238d",
+      "result_id": "4da1f01d-0988-44ad-931f-89da2a4fa279"
+    },
+    {
+      "claim_id": "ecd2c834-f4e2-4cbe-99c7-b5e7f15f3809",
+      "result_id": "4da1f01d-0988-44ad-931f-89da2a4fa279"
+    },
+    {
+      "claim_id": "16e36366-c160-409c-856e-15417906716e",
+      "result_id": "4da1f01d-0988-44ad-931f-89da2a4fa279"
+    },
+    {
+      "claim_id": "247a2891-ea49-40b8-abf4-94eb3059ce70",
+      "result_id": "4da1f01d-0988-44ad-931f-89da2a4fa279"
+    },
+    {
+      "claim_id": "ac2bd56a-7fd0-4db0-8a82-cb23236025fc",
+      "result_id": "39f4ce11-8743-4ebc-9614-05b5a403dbb2"
+    },
+    {
+      "claim_id": "6d7caec0-5ab5-484d-adb1-67370fecb875",
+      "result_id": "39f4ce11-8743-4ebc-9614-05b5a403dbb2"
+    },
+    {
+      "claim_id": "6fbd68e0-8ae2-4a62-a8a5-d8b743e1a6fb",
+      "result_id": "39f4ce11-8743-4ebc-9614-05b5a403dbb2"
+    },
+    {
+      "claim_id": "410ee6ba-46f6-48c6-953a-33ee60fde4e6",
+      "result_id": "39f4ce11-8743-4ebc-9614-05b5a403dbb2"
+    },
+    {
+      "claim_id": "ce96e0a4-29bc-468d-95e4-39dd058e3770",
+      "result_id": "39f4ce11-8743-4ebc-9614-05b5a403dbb2"
+    },
+    {
+      "claim_id": "343c49ae-8d89-4764-9213-0b9b1750288c",
+      "result_id": "39f4ce11-8743-4ebc-9614-05b5a403dbb2"
+    },
+    {
+      "claim_id": "24eaef00-da20-4fac-96d6-2c2d2c872369",
+      "result_id": "39f4ce11-8743-4ebc-9614-05b5a403dbb2"
+    },
+    {
+      "claim_id": "cd7f1282-b105-4034-93b8-cad2533f5a27",
+      "result_id": "802741d8-4116-464e-851d-9aa9369ec2c8"
+    },
+    {
+      "claim_id": "ddc4d4a8-1b2b-4c10-8d97-a7d4f3ae2f77",
+      "result_id": "802741d8-4116-464e-851d-9aa9369ec2c8"
+    },
+    {
+      "claim_id": "088fd98b-b016-4db3-b00b-40505f0c0237",
+      "result_id": "802741d8-4116-464e-851d-9aa9369ec2c8"
+    },
+    {
+      "claim_id": "5c0cbe0e-3cfa-448c-a4c6-dc17b070aef6",
+      "result_id": "802741d8-4116-464e-851d-9aa9369ec2c8"
+    },
+    {
+      "claim_id": "063c5c32-05a5-4b53-9419-8abdeeec42e3",
+      "result_id": "802741d8-4116-464e-851d-9aa9369ec2c8"
+    },
+    {
+      "claim_id": "ce2ff009-95fc-4071-af26-7ccb964c04da",
+      "result_id": "802741d8-4116-464e-851d-9aa9369ec2c8"
+    },
+    {
+      "claim_id": "979db30b-2830-4818-9a5a-76ce8d6c582a",
+      "result_id": "802741d8-4116-464e-851d-9aa9369ec2c8"
+    },
+    {
+      "claim_id": "ae203af2-f95d-496b-9c2c-1dcebb8bdfbf",
+      "result_id": "c73db984-b2ce-4e36-8108-f649ec5cd9d9"
+    },
+    {
+      "claim_id": "49b44548-d0ae-46c6-b10e-e9d451c3372e",
+      "result_id": "c73db984-b2ce-4e36-8108-f649ec5cd9d9"
+    },
+    {
+      "claim_id": "fce742ba-f431-4de9-8b77-4abaacf78aa5",
+      "result_id": "c73db984-b2ce-4e36-8108-f649ec5cd9d9"
+    },
+    {
+      "claim_id": "2b584d19-deb6-4726-a420-e7a419a94a84",
+      "result_id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9"
+    },
+    {
+      "claim_id": "4d0eb071-4506-4f9a-8773-58e95e720b3f",
+      "result_id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9"
+    },
+    {
+      "claim_id": "385d1c44-8c4f-4316-9c84-f93c5ce45bc2",
+      "result_id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9"
+    },
+    {
+      "claim_id": "a77490e6-e6b3-444b-93ec-2312abc896f7",
+      "result_id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9"
+    },
+    {
+      "claim_id": "3368829b-6f0f-471f-a3c5-9c42c9074f00",
+      "result_id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9"
+    },
+    {
+      "claim_id": "084d1c5d-2431-4704-a568-b48e07499b61",
+      "result_id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9"
+    },
+    {
+      "claim_id": "506bf30a-bc22-4a4b-b626-f3f218d7e7da",
+      "result_id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9"
+    },
+    {
+      "claim_id": "30d1b8de-9287-49f2-8ed0-22ff9db339b4",
+      "result_id": "e1e1bfa7-8281-40d3-bf95-02296ee29b26"
+    },
+    {
+      "claim_id": "fdc83793-5805-4b1a-9c0c-5f067c80dc44",
+      "result_id": "e1e1bfa7-8281-40d3-bf95-02296ee29b26"
+    },
+    {
+      "claim_id": "5f4b8fe9-9688-4405-b9b1-c9068cea55e4",
+      "result_id": "e1e1bfa7-8281-40d3-bf95-02296ee29b26"
+    },
+    {
+      "claim_id": "2896a5e6-1d5b-469a-a9f7-df6147797018",
+      "result_id": "7fb58d80-8a6c-4e98-9bf0-c95ac1ad473a"
+    },
+    {
+      "claim_id": "5e9d28a8-c21d-476d-9fa7-ed11b09c133a",
+      "result_id": "7fb58d80-8a6c-4e98-9bf0-c95ac1ad473a"
+    },
+    {
+      "claim_id": "3f17d07e-d1ab-4ad1-b765-ad4fb645cfe5",
+      "result_id": "7fb58d80-8a6c-4e98-9bf0-c95ac1ad473a"
+    },
+    {
+      "claim_id": "b85e5486-64d7-40b1-9833-ce7e565bba21",
+      "result_id": "7fb58d80-8a6c-4e98-9bf0-c95ac1ad473a"
+    },
+    {
+      "claim_id": "295efc5c-fc4f-4c62-9965-712bdbe81177",
+      "result_id": "46ca7ecd-417b-49e4-bfd0-78dceca6a04e"
+    },
+    {
+      "claim_id": "c309bcfb-33be-4f93-a4a6-5448ea1acbae",
+      "result_id": "46ca7ecd-417b-49e4-bfd0-78dceca6a04e"
+    },
+    {
+      "claim_id": "cac75766-f428-4f6b-a777-8054baaa1893",
+      "result_id": "46ca7ecd-417b-49e4-bfd0-78dceca6a04e"
+    },
+    {
+      "claim_id": "0ee97614-4cee-470d-851b-ce759cd0862a",
+      "result_id": "46ca7ecd-417b-49e4-bfd0-78dceca6a04e"
+    },
+    {
+      "claim_id": "520e362f-8999-4f08-9b36-2a7ff5fb2de5",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "d33384d1-0941-4593-9438-af1a6c37fbc0",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "c9b2fc5d-54dc-45fa-8167-1c7a207b8ce1",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "6a14b4ad-267a-4cdb-bc1a-9c91564689a6",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "ce4557c2-b943-4017-aade-08c1400270db",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "363a16d8-df12-41e7-848a-b382c94852d1",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "30d1b8de-9287-49f2-8ed0-22ff9db339b4",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "df02bf07-6465-4529-9f57-5de64dfc7ed5",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "fdc83793-5805-4b1a-9c0c-5f067c80dc44",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "18775713-d4cf-4f1c-83b1-059293c28478",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "3d814e3e-410e-466b-ac93-428bf7e0243c",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "374293a2-f5da-4b5a-b81a-d6cc9a92e58c",
+      "result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c"
+    },
+    {
+      "claim_id": "f56346e0-a818-4bae-b996-7b7152814988",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "6acff3d7-958c-417c-97df-4f6dd8f9eeaa",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "352bd2d4-4574-41ea-aba1-5f0cb52ed9e2",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "3d069ac2-376f-4f22-9c1c-8aad50e0238d",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "ecd2c834-f4e2-4cbe-99c7-b5e7f15f3809",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "16e36366-c160-409c-856e-15417906716e",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "247a2891-ea49-40b8-abf4-94eb3059ce70",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "ac2bd56a-7fd0-4db0-8a82-cb23236025fc",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "6d7caec0-5ab5-484d-adb1-67370fecb875",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "6fbd68e0-8ae2-4a62-a8a5-d8b743e1a6fb",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "410ee6ba-46f6-48c6-953a-33ee60fde4e6",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "ce96e0a4-29bc-468d-95e4-39dd058e3770",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "343c49ae-8d89-4764-9213-0b9b1750288c",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "24eaef00-da20-4fac-96d6-2c2d2c872369",
+      "result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b"
+    },
+    {
+      "claim_id": "77c9f052-d18d-4520-bdc7-616c28b2d0c4",
+      "result_id": "1bdc2551-d57a-4d17-a45e-9251dd3fad23"
+    },
+    {
+      "claim_id": "023e8fac-e4cb-49e6-a9e0-081cbafe9192",
+      "result_id": "b5f9c05f-91f0-44e5-b12a-6da1a2312143"
+    },
+    {
+      "claim_id": "28015771-908e-40a7-96e3-bf1866ff107a",
+      "result_id": "b5f9c05f-91f0-44e5-b12a-6da1a2312143"
+    },
+    {
+      "claim_id": "8fa0dd27-8d96-4bae-82d9-c8fe3d8fb0dd",
+      "result_id": "b5f9c05f-91f0-44e5-b12a-6da1a2312143"
+    },
+    {
+      "claim_id": "be82a468-3dd3-4da0-b6f7-78662c3e4bf5",
+      "result_id": "b5f9c05f-91f0-44e5-b12a-6da1a2312143"
+    },
+    {
+      "claim_id": "fcdd34d5-31b8-4722-9048-b3455b694a5b",
+      "result_id": "b5f9c05f-91f0-44e5-b12a-6da1a2312143"
+    },
+    {
+      "claim_id": "39d1e2c9-792c-4769-af73-19d7246f2a15",
+      "result_id": "b5f9c05f-91f0-44e5-b12a-6da1a2312143"
+    },
+    {
+      "claim_id": "a68dea6e-efd8-43bb-a9b6-41ed926a352c",
+      "result_id": "e730e54f-1118-4e1d-93ea-187f30e77b80"
+    },
+    {
+      "claim_id": "2b584d19-deb6-4726-a420-e7a419a94a84",
+      "result_id": "b6d8e843-a2f7-473f-acef-638328636148"
+    },
+    {
+      "claim_id": "4d0eb071-4506-4f9a-8773-58e95e720b3f",
+      "result_id": "b6d8e843-a2f7-473f-acef-638328636148"
+    },
+    {
+      "claim_id": "385d1c44-8c4f-4316-9c84-f93c5ce45bc2",
+      "result_id": "b6d8e843-a2f7-473f-acef-638328636148"
+    },
+    {
+      "claim_id": "a77490e6-e6b3-444b-93ec-2312abc896f7",
+      "result_id": "b6d8e843-a2f7-473f-acef-638328636148"
+    },
+    {
+      "claim_id": "3368829b-6f0f-471f-a3c5-9c42c9074f00",
+      "result_id": "b6d8e843-a2f7-473f-acef-638328636148"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "2790904e-b342-4feb-8a71-1ae712ec930c",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "66329459-c2cf-4e2f-a1e3-b3c2be9d96d8",
+      "peer_result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect alignment on microglia case study (C43-C54). Both evaluations find the marker genes, transcription factors, PAM subtypes, and DAM connections well-supported. OpenEval emphasizes validation through differential expression and literature citations, while peer reviewers highlight accurate identification of differentiation timepoints and biologically relevant gene signatures with experimental validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "9b5c0630-6d30-415e-bec5-ab26cb44d615",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9",
+      "peer_result_id": "b6d8e843-a2f7-473f-acef-638328636148",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong alignment on methodological limitations (C75-C76, C78-C80). Both evaluations accept the authors' transparent acknowledgment of limitations including lower performance on complex topologies. OpenEval explicitly praises this transparency as strengthening credibility, while peer reviewers implicitly accept these limitations as appropriate given their overall satisfaction with revisions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "4e8c6af0-ad5a-4271-b9be-01c59c37ddf3",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e",
+      "peer_result_id": "7fb58d80-8a6c-4e98-9bf0-c95ac1ad473a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on core methodological novelty and innovation (C1, C15-C16, C72). Both evaluations affirm the method's uniqueness and well-defined mathematical framework. OpenEval emphasizes the comprehensive literature review supporting uniqueness claims, while peer reviewers explicitly confirm novelty and utility across all three reviewers with no concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "6f2291ca-46b5-48a0-a1c8-cda323dab22d",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b",
+      "peer_result_id": "46ca7ecd-417b-49e4-bfd0-78dceca6a04e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on benchmarking performance (C2, C33, C36, C73). Both evaluations support claims of superior performance with compelling evidence. OpenEval details statistical tests and validation dataset composition, while peer reviewers affirm superior performance on some tasks and similar-to-superior performance on quality-control metrics.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "546e3c64-c13c-4cfa-9d04-075fb9d2ff94",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "2db560b2-0f42-480e-8aac-bfa4b3de2d7e",
+      "peer_result_id": "b5f9c05f-91f0-44e5-b12a-6da1a2312143",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on methodological description (C17-C19, C21). Both evaluations find the two-stage pipeline and methodological details well-documented. OpenEval focuses on the clarity of the pipeline documentation, while peer reviewers note the method is well-described and written logically with all concerns addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "abc4ec34-784a-4853-a713-0e534a655a70",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "4da1f01d-0988-44ad-931f-89da2a4fa279",
+      "peer_result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on CD8+ T cell clinical validation (C55-C60). Both evaluations support the survival associations, goodness-of-fit improvements, and ICI response predictions. OpenEval emphasizes quantitative validation with R-squared, p-values, Cox regression, and ROC analyses across multiple cohorts. Peer reviewers affirm superior performance and compelling evidence for these clinical findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "2ba436de-7566-4390-a107-d3a35c861ebf",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "39f4ce11-8743-4ebc-9614-05b5a403dbb2",
+      "peer_result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on CD8+ T cell subtype characterization and clinical utility (C63-C70). Both evaluations support the consensus trajectory analyses, subtype characterizations, and clinical associations. OpenEval details the statistical thresholds and validation across independent cohorts, while peer reviewers highlight the discovery of new subtypes with gene expression signatures predicting ICI responses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "0d9a20a8-40ad-4e37-bbad-85e0d8c18512",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b",
+      "peer_result_id": "b5f9c05f-91f0-44e5-b12a-6da1a2312143",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on validation approach (C22-C23). Both evaluations accept the benchmarking methodology. OpenEval emphasizes the comprehensive benchmarking data in figures and tables, while peer reviewers implicitly accept these details as part of their overall satisfaction with the method description.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "ea43700f-b64a-4b38-8c6a-1f516dd9fe10",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b",
+      "peer_result_id": "1bdc2551-d57a-4d17-a45e-9251dd3fad23",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on MURP downsampling contribution (C26). OpenEval explicitly supports this methodological component with benchmarking data, while peer reviewers implicitly accept it as part of the overall method validation without detailed discussion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "3ad3fb88-5004-45a1-8ed0-e1a8e8940388",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "6ec8bd05-c4d4-4354-9508-c243157e066b",
+      "peer_result_id": "e730e54f-1118-4e1d-93ea-187f30e77b80",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on real vs. synthetic data performance (C74). Both evaluations accept the finding of better performance on real data. OpenEval characterizes this as an interesting finding supported by data, while peer reviewers implicitly accept it as part of the overall benchmarking results across 239 datasets.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "a11c521f-faa0-4136-a8e9-d9862c3f4199",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "e1e1bfa7-8281-40d3-bf95-02296ee29b26",
+      "peer_result_id": "ed4da31c-2dd0-4103-8bdf-10c3c9316a3c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on biological validation literature (C49, C51). OpenEval explicitly validates these as factual statements about established biology with appropriate citations, while peer reviewers implicitly accept these biological interpretations as part of their validation of the microglia case study findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "cdbf30f8-29d8-4b25-a824-c99d3e6763af",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "802741d8-4116-464e-851d-9aa9369ec2c8",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval explicitly evaluates background literature and context claims (C5-C11) as accurately describing established methods with appropriate citations. No corresponding peer review evaluation found, though these contextual claims likely informed peer reviewers' assessment of novelty.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "106165d4-0413-4562-a731-9b481835eb21",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "c73db984-b2ce-4e36-8108-f649ec5cd9d9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval explicitly evaluates field limitations and motivation claims (C12-C14) as reasonable critical assessments that justify MGPfact development. No corresponding peer review evaluation found, though these gap-identification claims likely informed peer reviewers' assessment of the method's importance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "5acaa904-7670-4dfb-bbd2-cb8d49a9b890",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "e1e1bfa7-8281-40d3-bf95-02296ee29b26",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval explicitly validates biological literature citations (C49, C51, C77) as factual statements with appropriate references. No direct peer review evaluation of these specific citation claims, though peer reviewers validated the overall biological interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "2a8c5bbb-c362-4d11-9cef-8515c8cbbc8a",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "d68f4f1a-ed4e-4962-a699-2fba0f0851f9",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval explicitly evaluates future work recommendations and interpretation cautions (C81-C82) as appropriate given acknowledged limitations. No corresponding peer review evaluation found for these specific forward-looking claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    },
+    {
+      "id": "4641fd0f-ff2c-4ea5-b9bc-b1df556ea3b9",
+      "submission_id": "9a6b9c79-0296-4278-be18-387e391bf12b",
+      "comparison_id": "CMP16",
+      "openeval_result_id": null,
+      "peer_result_id": "4f63b22c-dcf3-49db-9a85-53ed19f17d2b",
+      "openeval_evaluation_type": null,
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": null,
+      "peer_result_type": "MAJOR",
+      "comparison_type": "disjoint",
+      "comparison": "Peer reviewers evaluate claim C4 (not specified in detail but part of CD8+ T cell analysis) as supported. No corresponding OpenEval result explicitly addresses C4, though related CD8+ T cell claims are covered in OpenEval R4 and R5.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:10:24.201023Z"
+    }
+  ]
+}

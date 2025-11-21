@@ -1,0 +1,425 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C180",
+      "C181"
+    ],
+    "result": "E. coli proteins with pKa values of 4.5\u20138 diffuse freely in HeLa cell cytoplasm with Dconfocal values of 18\u201330 \u00b5m\u00b2s\u207b\u00b9 and full FRAP recovery, indicating that acidic and neutral proteins do not stick to HeLa cell cytoplasm or membranes even in a non-native environment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 are well-supported by FRAP measurements on 16 E. coli proteins showing typical cytoplasmic diffusion coefficients and complete recovery. The pKa range (C3) is computationally predicted but reasonable. The conclusion (C4, C181) that hindered diffusion is mainly a problem for small molecules rather than proteins is supported by the contrast with basic drug behavior shown later.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Fluorescein (pKa ~3) shows reduced diffusion in HeLa cytoplasm (38.5\u00b12.0 \u00b5m\u00b2s\u207b\u00b9) compared to PBS (56.5\u00b12.4 \u00b5m\u00b2s\u207b\u00b9), with intermediate values in nucleus and cell extract. After 24 hr incubation, fractional recovery drops from 0.95 to 0.65, suggesting partial immobilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The diffusion measurements (C5-C8) are well-documented with error bars. The correlation with crowding density (C10) is reasonable but somewhat speculative (C9). The 24 hr incubation result (C11-C12) is concerning as it suggests time-dependent changes that could complicate interpretation, but the observation is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "CCF2 (pKa ~5.1) diffuses about half as fast as fluorescein with fractional recovery of ~0.7 and no visible aggregation, suggesting obstructed diffusion within cells that may explain substrate-limited enzymatic degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pKa value (C13) is cited from literature. Diffusion measurements (C14-C15) are comparative and well-documented. The lack of aggregation (C16) is based on microscopy. The interpretation of obstructed diffusion (C17) is reasonable, and the connection to previous work on CCF2 degradation (C18) provides independent support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "CF514 (pKa ~3) shows similar behavior to fluorescein with ~90% FRAP recovery and diffusion rates of 61.1\u00b13.0 \u00b5m\u00b2s\u207b\u00b9 in PBS and 26.3\u00b11.9 \u00b5m\u00b2s\u207b\u00b9 in cytoplasm, supporting the conclusion that acidic small molecules diffuse well inside cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The pKa determination from UV spectroscopy (C19) is appropriate. Diffusion measurements (C20-C22) are well-documented. The high recovery (C23) and attribution to crowding (C24) are consistent with fluorescein data. The summary conclusion (C25) is well-supported by the three acidic molecules studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "GSK3 inhibitor SB216763 (pKa 7.0) shows very slow diffusion in HeLa cytoplasm (0.61\u00b10.03 \u00b5m\u00b2s\u207b\u00b9) with ~40-fold reduction compared to BSA solution, colocalizes with lysosomes with time-dependent accumulation, and shows concentration-independent slow diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dramatic reduction in diffusion (C30-C32) is well-documented. The comparison with BSA solution (C33-C35) provides important context showing the drug doesn't aggregate in protein solution. Lysosomal colocalization (C41-C42) is demonstrated by microscopy. The concentration independence (C43-C44) strengthens the conclusion that slow diffusion is not due to self-aggregation at these concentrations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Quinacrine DHC shows fast diffusion in PBS (41.9\u00b13.0 \u00b5m\u00b2s\u207b\u00b9) but dramatically reduced diffusion in HeLa cytoplasm (2.5\u00b10.1 \u00b5m\u00b2s\u207b\u00b9), with visible aggregation, lysosomal sequestration, and time-dependent decrease in diffusion and fractional recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The diffusion measurements (C46-C49) show dramatic differences between buffer and cells. Microscopy evidence of aggregation (C50) and lysosomal colocalization (C51-C52) is clear. The time-dependent changes (C54-C57) are particularly important, showing diffusion decreases from 4.2 to 2.2 \u00b5m\u00b2s\u207b\u00b9 over 2 hours and fractional recovery drops below 0.25 after 24 hours. This suggests progressive sequestration or aggregation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Mitoxantrone and primaquine show low quantum yields, weak photostability, very low fractional recovery, and sequestration in cellular cytoplasm and lysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The photophysical properties (C60) explain why standard XY-FRAP was used instead of Line-FRAP (C61). The low fractional recovery (C62) and sequestration (C63-C65) are documented by FRAP and colocalization microscopy. However, the inability to measure diffusion coefficients for these compounds limits quantitative comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Lysosomal pH (~4.5) is maintained by V-H+-ATPase, and weakly basic drugs accumulate in lysosomes through cationic ion trapping, reaching millimolar concentrations. Bafilomycin A1 and sodium azide can inhibit this process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C66-C73) represent established knowledge from the literature and are appropriately cited. They provide the mechanistic framework for interpreting the experimental observations. The citations appear appropriate and the mechanisms are well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Bafilomycin A1 strongly reduces lysosomal volumes but does not significantly alter diffusion coefficients of GSK3 inhibitor (0.60\u00b10.02 \u00b5m\u00b2s\u207b\u00b9) or Quinacrine (2.4\u00b10.1 \u00b5m\u00b2s\u207b\u00b9), suggesting lysosomal accumulation is not the primary cause of slow diffusion. Time-dependent changes in Quinacrine diffusion support self-aggregation or aggregation with cellular molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a critical result. The microscopy clearly shows reduced lysosomal volumes (C74-C75), but diffusion rates remain slow (C76-C79). This surprising finding (C80) challenges the initial hypothesis that lysosomal sequestration explains slow diffusion. The time-dependent analysis (C81-C82) and interpretation (C83-C85) provide additional mechanistic insight, though the interpretation remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Sodium azide inhibits lysosomal accumulation and causes modest further reductions in diffusion rates (Quinacrine: 2.4 to 1.8 \u00b5m\u00b2s\u207b\u00b9; GSK3 inhibitor: 0.6 to 0.45 \u00b5m\u00b2s\u207b\u00b9), with the difference from Bafilomycin possibly due to cytosolic acidification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The microscopy evidence (C86) and diffusion measurements (C87-C88) are clear. The observation that sodium azide causes a small decrease rather than increase in diffusion (unlike Bafilomycin) is interesting. The interpretation (C90) about cytosolic acidification is speculative but reasonable. Both treatments eliminate lysosomal confinement (C89), yet diffusion remains slow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "5-amino fluorescein (pKa ~9) differs from fluorescein only by an -NH2 group but shows much slower FRAP recovery (0.4 vs complete) and lysosomal sequestration. Sodium azide alleviates sequestration but has minimal effect on FRAP, strongly suggesting the primary amine group is the main contributor to slow diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an elegant experiment. The structural similarity (C91) makes this a near-perfect comparison. The dramatic difference in recovery (C92) and sequestration (C93-C94) is clear. The sodium azide experiment (C95-C96) is crucial: it eliminates lysosomal sequestration but doesn't restore fast diffusion, supporting the conclusion (C97) that the amine group itself causes slow diffusion through cytoplasmic interactions, not just lysosomal trapping.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C117",
+      "C118"
+    ],
+    "result": "N-acetylation of primary amines increases fractional recovery and diffusion: primaquine (0.27) vs primaquine-NHAc (0.6); BODIPY-NH2 (57%) vs BODIPY-NHAc (67%), with faster recovery half-life for acetylated forms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chemical modification strategy is well-designed. The improvements in fractional recovery (C98-C101) and recovery kinetics (C102) are clearly documented. These results (C117-C118) provide strong support for the role of protonatable amines in causing slow diffusion and suggest a potential drug design strategy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "No colocalization was found between basic drugs and lipid droplets, ER, or cytoplasmic nucleic acids, leaving the location of cytoplasmic sequestration unidentified except for lysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The negative results (C103-C105) are important to report and appropriately documented. The conclusion (C106) honestly acknowledges the limitation that the sequestration site remains unknown. This suggests the drugs may interact with multiple cellular components or form small aggregates below the resolution limit.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Many small molecules, particularly cationic ones, get trapped in cellular cytoplasm with extremely slow diffusion (0.2\u20132 \u00b5m\u00b2s\u207b\u00b9) and low fractional recovery (0.2\u20130.5), showing 20- to 40-fold lower Dconfocal than acidic molecules. This behavior is not mimicked by cell extract.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary result integrates multiple observations. The quantitative comparisons (C109, C111, C113) are well-documented. The contrast with proteins (C112) is important. The observation that cell extract doesn't mimic in vivo behavior (C110) is a critical finding for the field, suggesting that simple crowding models are insufficient.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C128",
+      "C136",
+      "C137"
+    ],
+    "result": "Pre-treatment with sodium azide or Bafilomycin A1 inhibits lysosomal accumulation but has minimal effect on diffusion or fractional recovery. In contrast, blocking protonation by N-acetylation greatly enhances diffusion and fractional recovery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result synthesizes the key mechanistic findings. The lysosomal inhibitor experiments (C114-C115) show that lysosomal sequestration is not the primary cause of slow diffusion. The N-acetylation experiments (C116, C128, C137) demonstrate that protonatable groups are the key factor. This is the central mechanistic insight of the paper.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C179"
+    ],
+    "result": "There is a strong correlation between pKa and intracellular diffusion, with diffusion strongly slowed at higher pKa values. LogP, molecular weight, and number of aromatic rings do not correlate with Dconfocal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation analysis (C119, C179) is clearly shown in Figure 9C and represents a key finding. The lack of correlation with other properties (C120) strengthens the conclusion that pKa is the critical parameter. However, the correlation is based on a limited number of compounds, and the relationship appears non-linear, which could benefit from more detailed analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Drug activity depends on active concentration, which is reduced by sequestration. Slow diffusion lowers association rate constants and affinity, requiring higher doses with potential off-target effects. Standard drug design rules don't consider intracellular stickiness of basic molecules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C121-C127) represent logical inferences about the implications of the findings. The reasoning is sound: slow diffusion and sequestration will affect drug-target interactions kinetically and thermodynamically. The critique of current drug design practices (C127) is justified by the data. However, these are implications rather than directly tested hypotheses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C129",
+      "C130",
+      "C138"
+    ],
+    "result": "Blocking protonation potentially increases drug activity, and N-acetylation may improve intracellular availability and distribution of weakly basic drugs, with potential consequences for future drug development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the diffusion and FRAP data (C128, C137) clearly show improved mobility with N-acetylation, the claims about increased activity (C129) and improved drug performance (C138) are speculative. No actual drug activity assays are presented. The potential for drug development (C130) is reasonable but would require extensive additional work including activity assays, pharmacokinetics, and toxicity studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Over half of pharmaceutical drugs are weakly basic and protonated at physiological pH, facilitating membrane-impermeable ionic forms and ion trapping. The cellular cytoplasm is complex with varying pH in organelles, making drug diffusion prediction challenging and requiring consideration of intracellular distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C131-C159) represent established knowledge from the literature and provide important context. They are appropriately cited and accurately represent current understanding of drug properties, cellular complexity, and drug distribution challenges. This background justifies the importance of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "Drug mobility is a good proxy for intracellular delivery. FRAP is suitable for weakly fluorescent molecules, while FCS cannot be applied to most drugs. Line-FRAP has higher temporal resolution (800 Hz vs 50 Hz) and measures faster diffusion than standard FRAP, with validation against FCS for proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-supported by citations to previous work (C160, C162-C166). The technical specifications (C163-C164) are clearly stated. The validation against FCS (C165) is important. The limitation for small molecules (C166) is honestly acknowledged. These claims establish the appropriateness of the methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176"
+    ],
+    "result": "The drugs studied include antimalarials (quinacrine, primaquine, amodiaquine), anti-cancer (mitoxantrone), GSK3 inhibitor (SB216763), diagnostic agents (fluorescein), and fluorescent markers (CCF2, BODIPY). Lysosome diffusion (0.03\u20130.071 \u00b5m\u00b2s\u207b\u00b9) is much slower than measured drug diffusion, validating that FRAP doesn't measure lysosome movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims establish the identity and properties of the compounds studied (C167-C174) with appropriate citations. The comparison with lysosome diffusion rates (C175-C176) is important for validating that the FRAP measurements reflect drug diffusion rather than organelle movement. This is a critical control.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C177",
+      "C178"
+    ],
+    "result": "Weakly basic small-molecule drugs display 10- to 20-fold slower diffusion rates and lower fractional recovery in cells compared to aqueous solutions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary claim is well-supported by the extensive FRAP data throughout the manuscript comparing buffer and cellular measurements. The quantitative range (10- to 20-fold) is consistent with the specific measurements reported for individual drugs. This represents a key finding of the study.",
+    "result_type": "MAJOR"
+  }
+]

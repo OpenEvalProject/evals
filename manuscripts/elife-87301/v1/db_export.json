@@ -1,0 +1,2157 @@
+{
+  "submission": {
+    "id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:46:09.936426Z",
+    "updated_at": "2025-11-21T21:46:09.936426Z"
+  },
+  "content": [
+    {
+      "id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "content_type": "manuscript",
+      "content_text": "# Cancers adapt to their mutational load by buffering protein misfolding stress\n\n## Authors\n\n- Susanne Tilk<sup>1</sup> ([ORCID: 0000-0002-9156-9360](https://orcid.org/0000-0002-9156-9360)) \u2020\n- Judith Frydman<sup>1</sup> ([ORCID: 0000-0003-2302-6943](https://orcid.org/0000-0003-2302-6943))\n- Christina Curtis<sup>2</sup> ([ORCID: 0000-0003-0166-3802](https://orcid.org/0000-0003-0166-3802)) \u2020\n- Dmitri A Petrov<sup>1</sup> ([ORCID: 0000-0002-3664-9130](https://orcid.org/0000-0002-3664-9130)) \u2020\n\n### Affiliations\n\n1. Department of Biology, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n2. Department of Medicine, Division of Oncology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n3. Department of Genetics, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n4. Stanford Cancer Institute, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn asexual populations that don\u2019t undergo recombination, such as cancer, deleterious mutations are expected to accrue readily due to genome-wide linkage between mutations. Despite this mutational load of often thousands of deleterious mutations, many tumors thrive. How tumors survive the damaging consequences of this mutational load is not well understood. Here, we investigate the functional consequences of mutational load in 10,295 human tumors by quantifying their phenotypic response through changes in gene expression. Using a generalized linear mixed model (GLMM), we find that high mutational load tumors up-regulate proteostasis machinery related to the mitigation and prevention of protein misfolding. We replicate these expression responses in cancer cell lines and show that the viability in high mutational load cancer cells is strongly dependent on complexes that degrade and refold proteins. This indicates that the upregulation of proteostasis machinery is causally important for high mutational burden tumors and uncovers new therapeutic vulnerabilities.\n\n## Introduction\n\nCancer develops from an accumulation of somatic mutations over time. While a small subset of these mutations drive tumor progression, the vast majority of remaining mutations, known as passengers, don\u2019t help and might hinder cancer growth. The role that passengers play in tumor progression has traditionally received little attention despite their abundance and variation across cancer types. The number of passengers in a tumor can vary by over four orders of magnitude, even within the same cancer type, from just a few to tens of thousands of point mutations (Lawrence et al., 2013).\n\nWhether these passengers are neutral or damaging to tumors has long been a matter of debate (Bakhoum and Landau, 2017; Martincorena et al., 2017; Bozic et al., 2019; McFarland et al., 2017; McFarland et al., 2013; Zapata et al., 2018; Williams et al., 2016; Cannataro and Townsend, 2018; Tilk et al., 2022). Some have argued that passengers are functionally unimportant to tumors given that most non-synonymous mutations are not removed by negative selection in somatic tissues (Bakhoum and Landau, 2017; Martincorena et al., 2017). This is in direct contrast to the human germ line, where non-synonymous mutations are functionally damaging to most genes (Eyre-Walker and Keightley, 2007) and signals of negative selection are pervasive (Martincorena et al., 2017). The common explanation for why damaging protein-coding mutations are removed in the human-germline but maintained in somatic tissues is that most genes are only important for multi-cellular function at the organismal level (e.g. during development), but not during somatic growth (Bakhoum and Landau, 2017; Martincorena et al., 2017).\n\nHowever, the notion that non-synonymous mutations are only selectively neutral in somatic tissues is surprising given their known functional consequences in the germ-line. Non-synonymous mutations are known to be damaging in the human germ-line due to their effects on protein folding and stability (Drummond and Wilke, 2008), which ought to be shared between somatic and germline evolution. An alternative explanation is that non-synonymous mutations are indeed damaging in somatic evolution, but negative selection is too inefficient at removing them due to linkage effects driven by the lack of recombination in somatic cells (Tilk et al., 2022). Without recombination to break apart combinations of mutations, selection must act on beneficial drivers and deleterious passengers that arise in the same genome together. This makes it less efficient for selection to individually favor beneficial drivers or remove deleterious passengers (Hill and Robertson, 2007). As a result, a substantial number of weakly damaging passengers can accrue in cancer due to inefficient negative selection over time. In support of this model, tumors with very small numbers of passengers \u2013 where linkage effects are expected to be negligible \u2013 have recently been shown to exhibit signatures of negative selection and weed out damaging non-synonymous mutations (Tilk et al., 2022). In contrast, the remaining majority (>95%) of tumors, which contain much larger numbers of linked mutations, display patterns of inefficient negative selection. This provides evidence in favor of the inefficient selection model and implies that most tumors carry a correspondingly large deleterious mutational load.\n\nIf individual passengers are in fact substantially damaging in cancer, successful tumors with thousands of linked mutations must find ways to maintain their viability by mitigating this large mutational load. While paths to mitigation are difficult to predict for non-coding mutations, tumors with mutations in protein-coding genes are expected to minimize the damaging phenotypic effects of protein misfolding stress. Here, we investigate this hypothesis by analyzing tumor tissues with paired mutational and gene expression profiles to assess how the physiological state of cancer cells change as they accumulate protein-coding mutations. Using a GLMM, we leverage variation across 10,295 tumors from 33 cancer types and find that complexes that re-fold proteins (chaperones), degrade proteins (proteasome) and splice mRNA (spliceosome) are up-regulated in high mutation load tumors. We validate these results by showing that similar physiological responses occur in high mutational load cancer cell lines as well. Finally, we establish a causal connection by showing that high mutational load cell lines are particularly sensitive when proteasome and chaperone function is disrupted through downregulation of expression via short-hairpin RNA (shRNA) knock-down or targeted therapies. Collectively, these data indicate that the viability of high mutational load tumors is strongly dependent on the up-regulation of complexes that degrade and refold proteins, revealing a generic vulnerability of cancer that can potentially be therapeutically exploited.\n\n## Results\n\n### Quantifying transcriptional response to mutational load in human tumors\n\nWe first performed a genome-wide screen to systematically identify which genes are transcriptionally upregulated in response to mutational load in human tumors. To do so, we utilized publicly available whole-exome and gene expression data from 10,295 human tumors across 33 cancer types from The Cancer Genome Atlas (TCGA) (Weinstein et al., 2013; Ellrott et al., 2018). We considered multiple classes of mutations to define mutational load and investigated their degree of collinearity, focusing on protein-coding regions since the use of whole-exome data limits the ability to accurately assess mutations in non-coding regions. We find that there is a high degree of collinearity among synonymous, non-synonymous, and nonsense point mutations in protein-coding genes (R>0.9) but weak collinearity between point mutations and copy number alterations (R<0.05) (Figure 1\u2014figure supplement 1). Thus, we decided to focus on the aggregate effects of protein-coding mutations and for all analyses defined mutational load as log10 of the total number of point mutations in protein-coding genes. For simplicity, we used all mutations rather than focusing only on passenger mutations since identifying genuine drivers against a background of linked passenger events can be difficult, especially for tumors with many mutations.\n\nSince gene expression can vary across tumors due to many factors, such as cancer type, tumor purity, and other unknown factors, we utilized a GLMM to measure the association of mutational load and gene expression while accounting for these potential confounders (Figure 1A). Within the GLMM, tumor purity and mutational load were modeled as fixed effects whereas cancer type was modeled as a random effect since it varies across groups of patients and can be interpreted as repeated measurements across groups. The following GLMM was applied separately to each gene,\n\n$$\nY\u223c\\beta_{0}+\\beta_{1}X_{1}+\\beta_{2}X_{2}+v+e\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig1-v1.jpg)\n\n**Figure 1.:** (A) Overview of the GLMM used to measure the association of mutation load with gene expression while controlling for potential co-variates (purity and cancer type). Genes with a significant, positive $\\beta_{1}$ regression coefficient and false discovery rate (FDR)<0.05 are used for gene set enrichment analysis. (B, C) Bar plots of protein complexes from the CORUM database (left) and pathways from the KEGG database (right) that are significantly enriched (p<0.05) in response to mutational load. Length of bars denotes negative log10 of adjusted p-value and colors denote broad functional groups enriched in both databases.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** Heatmap of Pearson\u2019s correlation coefficients between different classes of mutations in (A) CCLE (cancer cell lines) and (B) TCGA (human tumors). Colors denote the magnitude of correlation coefficients and whether the relationship is positive (red), negative (blue), or negligible (white). Copy number alterations (CNAs) are defined as the combined number of amplifications and deletions, while SNVs are the combined number of all point mutations.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Volcano plot of positive $\\beta_{1}$ regression coefficients and negative log10 adjusted p-values measuring the association of mutation load and the expression of individual genes from the transcriptional screen in Figure 1A. Colors denote the lower (Q1 in red), median (Q2 in green), and upper (Q3 in red) quartiles of each positive beta coefficient from the regression model. Genes that are significantly expressed from the transcriptional screen mostly fall into the upper quartile. (B) Barplot of significant protein complexes in the CORUM database identified using gene set enrichment analysis only on genes that fall into the upper quartile of effect sizes. Genes in the upper quartile of effect sizes contain half of the genes that were identified as significant previously (n=2152 vs n=5330), yet still identify protein degradation, translation, and chaperones as the top significant protein complexes.\n\nwhere $Y$ is a vector of normalized expression values across all tumors, $\\beta_{0}$ is the fixed intercept, $\\beta_{1}$ is the fixed slope for the predictor variable $X_{1}$ which is a vector of mutational load values for each tumor, $\\beta_{2}$ is the fixed slope for the predictor variable $X_{2}$ which is a vector of the purity of each tumor, v is the random intercept for each cancer type, and $e$ is a Gaussian error term (Methods).\n\nUsing this approach, we applied the GLMM to all tumors in TCGA and identified 5330 genes that are significantly up-regulated in response to mutational load ($\\beta_{1}$>0, FDR<0.05). Next, we linked these genes to cellular function by performing gene set enrichment to known protein complexes CORUM database (Giurgiu et al., 2019, Figure 1B) and pathways KEGG database (Tanabe and Kanehisa, 2012, Figure 1C) using gprofiler2 (Kolberg et al., 2020). As expected for tumors with many mutations, pathways, and protein complexes related to the cell cycle, DNA replication, and DNA repair were enriched in tumors with a high mutational load. However, some of the most significant enrichment terms were for protein complexes and pathways that regulate translation (mitochondrial ribosomes), protein degradation (proteasome complex), and protein folding (CCT complex/HSP60), consistent with the hypothesis that high mutational load tumors experience protein misfolding stress. Surprisingly, we also found that the spliceosome, a large protein complex that regulates alternative splicing in cells, is up-regulated in response to mutational load. This suggests that transcription itself could also be regulated in response to protein misfolding stress, as seen in other studies (Biamonti and Caceres, 2009; Dutertre et al., 2011). In addition, we confirmed that the same proteostasis complexes are identified when performing gene set enrichment analysis only genes with the largest effect sizes from the transcriptional screen (in the upper quartile of $\\beta_{1}$ regression coefficients), which contain half the number of significant genes as identified previously (N=2152 vs 5330; Figure 1\u2014figure supplement 2).\n\n### Gene silencing through alternative splicing in high mutational load tumors\n\nWe next investigated in detail how these protein complexes could mitigate the damaging effects of protein misfolding in high mutational load tumors by examining the role of the spliceosome in gene silencing. We hypothesized that the up-regulation of the spliceosome in high mutational load tumors prevents further protein misfolding by regulating pre-mRNA transcripts to be degraded rather than translated. The down-regulation of gene expression via alternative splicing events, such as intron retention, is one known mechanism to silence genes by funneling transcripts to mRNA decay pathways (Ge and Porse, 2014; Lindeboom et al., 2016; Lareau et al., 2007).\n\nTo test whether gene expression is down-regulated in high mutational load tumors through intron retention, we utilized previously called alternative splicing events in TCGA (Ryan et al., 2016). Alternative splicing events within this dataset were quantified through a metric called percent spliced in or PSI. PSI is calculated as the number of reads that overlap the alternative splicing event (e.g. for intron retention, either at intronic regions or those at the boundary of exon to intron junctions) divided by the total number of reads that support and don\u2019t support the alternative splicing event. Thus, PSI estimates the probability of alternative splicing events only at specific exonic boundaries in the entire transcript population without requiring information on the complete underlying composition of each full-length-transcript.\n\nUsing these alternative splicing calls, we reasoned that if a transcript contains an intron retention event and is downregulated in expression, the transcript is more likely to have been degraded by mRNA decay pathways. For all genes, we first quantified whether intron retention events were present based on a threshold value >80% PSI. For each gene with an intron retention event, we quantified whether the expression of the same gene was under-expressed. Each gene was counted as under-expressed if it was one standard deviation below the mean expression within the same cancer type. To control for mutations that might affect patterns of expression, (i.e. expression quantitative trait loci or eQTL effects), alternative splicing events that contained a point mutation within the same gene were removed from the analysis (which only represent ~1% of intron retention events across all tumors; Methods). We find that relative to all transcripts with intron retention events, the number of transcripts that are under-expressed increases with tumor mutational load (Figure 2A), suggesting that the degree of intron-retention-driven mRNA decay is elevated in high mutational load tumors. This trend is robust to other PSI value thresholds (>50\u201390% PSI), even for other alternative splicing events (e.g. exon skipping, mutually exclusive exons, etc.) and when not filtering for potential eQTL effects (Figure 2\u2014figure supplements 1 and 2).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig2-v1.jpg)\n\n**Figure 2.:** (A) Counts of the number of under-expressed transcripts with intron retention events, relative to counts of all intron retention events in tumors binned by the total number of protein-coding mutations. Intron retention events with PSI>80% are counted. Error bars are 95% confidence intervals determined by bootstrap sampling. (B) Barplot of significant protein complexes in the CORUM database (in red) and Reactome pathway database (in blue) with more (bottom) and less (top) intron retention events in high mutational load tumors compared to low mutational load tumors.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (A) Counts of the number of intron retention events filtered (in red) due to overlap with a mutation present in the same gene (and thus corresponding to potential eQTLs) compared the number of remaining alternative splicing events with no overlap with a mutation (in blue). Alternative splicing events filtered represent ~1% of all alternative splicing events across all tumors. (B, C) Counts of the number of under-expressed transcripts with intron retention events, relative to counts of all intron retention events in tumors binned by the total number of protein-coding mutations. Shown are when trends when (B) not filtering alternative splicing events due to overlap with mutations and (C) when events are filtered (same as Figure 2A). Intron retention events with PSI >80% are counted. Error bars are 95% confidence intervals determined by bootstrap sampling. These results further support the prediction that gene silencing is elevated in high mutational load tumors and likely mediated by the coupling of intron retention with mRNA decay.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Counts of the number of under-expressed transcripts with intron retention events, relative to counts of all intron retention events in tumors binned by the total number of protein-coding mutations. Intron retention events with different PSI thresholds are shown in color. (B) Counts of the number of under-expressed transcripts that contain different classes alternative of splicing events, relative to counts of all alternative splicing events of the same class in tumors binned by the total number of protein-coding mutations. Alternative splicing events of different classes are shown colored (AA = Alternate Acceptor Sites, AD = Alternate Donor Sites, AP = Alternate Promoter, AT = Alternate Terminator, ES = Exon Skip, ME = Mutually Exclusive Exons, RI = Retained Intron). Error bars are 95% confidence intervals determined by bootstrap sampling.\n\nWe next investigated which genes are more likely to be silenced through mRNA decay between low and high mutational load tumors. For each intron retention event, we calculated whether PSI values were significantly different in low mutational load tumors (<10 total protein-coding mutations) compared to high mutational load tumors (>1000 total protein-coding mutations) using a t-test. This approach identified 606 and 201 genes that have more and less intron retention events in high mutational load tumors, respectively. Using gene set enrichment analysis, we find that cytoplasmic ribosomes contain more intron retention events in high mutational load tumors, potentially leading to their down-regulation through mRNA decay to prevent further protein mis-folding (Figure 2B). Genes that contain fewer intron retention events in high mutational load tumors, which are less likely to undergo mRNA decay, are primarily related to mRNA splicing.\n\n### Regulation of translation, protein folding, and protein degradation in high mutational load tumors\n\nNext, we investigated in detail how the remaining proteostasis complexes that were significant in our genome-wide screen, which regulate protein synthesis, degradation, and folding, could mitigate protein misfolding in high mutational load tumors. To do so, we expanded our gene sets to include other chaperone families, all ribosomal complexes, and proteasomal subunits (Figure 3A). Using the GLMM framework detailed above, we find that the expression of nearly all individual genes in chaperone families that participate in protein folding (HSP60, HSP70, and HSP90), protein disaggregation (HSP100), and have organelle-specific roles (ER and mitochondrial) are significantly up-regulated in response to mutational load. Interestingly, however, small heat shock proteins, which don\u2019t participate in protein folding or disaggregation, are significantly down-regulated in response to increased protein-coding mutations. The role of small heat shock proteins is primarily to hold unfolded proteins in a reversible state for re-folding or degradation by other chaperones (Sun and MacRae, 2005) and thus, could possibly be down-regulated due to their inefficiency in mitigating protein misfolding.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig3-v1.jpg)\n\n**Figure 3.:** Box plots of $\\beta_{1}$ regression coefficients (top panels) and negative log10 adjusted p-values (bottom panels) measuring the association of mutation load and the expression of individual genes in chaperone (purple), proteasome (yellow), and ribosome (green) complexes. Shown are regression coefficients from human tumors (TCGA) on the left and cell lines (CCLE) on the right. Percentages and gray lines on top panels show the quantile distribution of regression coefficients measuring the association of mutational load and expression for all genes in the genome within each dataset. Vertical gray line on the bottom panels shows the threshold of significance (p=0.05).\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** Box plots of regression coefficients from the generalized linear mixed model (GLMM) measuring the association of the expression of each individual gene with the mutational load of tumors in TCGA colored by different proteostasis complexes. Shown are regression estimates after removing each individual cancer type (x-axis) and re-running the GLMM.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig3-figsupp2-v1.jpg)\n\n**Figure 3\u2014figure supplement 2.:** Heatmap of $\\beta_{1}$ regression coefficients measuring the effect of mutational load on gene expression in proteostasis complexes while controlling for tumor purity within cancer types which have enough samples to accurately measure effect sizes (n>150) and contain a sufficiently large enough mutational load to potentially generate a proteostasis response (median protein-coding mutations >25). \u2018MutLoad\u2019 shows log10 of the median number of protein-coding mutations for each cancer type.\n\n![Figure 3\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig3-figsupp3-v1.jpg)\n\n**Figure 3\u2014figure supplement 3.:** Boxplots of regression coefficients from the generalized linear mixed model (GLMM) measuring the association of the expression of each individual gene with the mutational load of tumors from The Cancer Genome Atlas (TCGA) colored by different proteostasis complexes. Shown are regression coefficients when running the GLMM on tumors stratified by different age groups (x-axis).\n\n![Figure 3\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig3-figsupp4-v1.jpg)\n\n**Figure 3\u2014figure supplement 4.:** Box plots of regression coefficients from the generalized linear model (GLM) measuring the association of the expression of each individual gene with the mutational load of tumors colored by different proteostasis complexes. Shown are regression estimates after removing each cancer type in CCLE (x-axis) and re-running the GLM.\n\n![Figure 3\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig3-figsupp5-v1.jpg)\n\n**Figure 3\u2014figure supplement 5.:** Box plots of $\\beta_{1}$ regression coefficients measuring the association of mutation load and protein abundance (right) or gene expression (left) of individual genes in chaperone (purple), proteasome (yellow), and ribosome (green) complexes. Shown are regression coefficients from cancer cell lines (CCLE), which contain the largest dataset available of RNA (n=1377) and protein (n=373) abundances which are harmonized across samples. Percentages and gray lines on top panels show the quantile distribution of regression coefficients measuring the association of mutational load and expression for all genes in the genome within each dataset.\n\nWe further examined differences in the expression of different structural components of the proteasome, a large protein complex responsible for the degradation of intracellular proteins. Consistent with the over-expression of chaperone families that mitigate protein misfolding, both the 19 s regulatory particle (which recognizes and imports proteins for degradation) and the 20 s core (which cleaves peptides) of the proteasome are up-regulated in response to mutational load in TCGA (Figure 3A). In addition, we find that specifically mitochondrial \u2014 but not cytoplasmic \u2014 ribosome complexes are up-regulated in high mutational load tumors. As previously reported in yeast (Ruan et al., 2017) and human cells (Shcherbakov et al., 2019), mitochondrial ribosome biogenesis has been shown to occur under conditions of chronic protein misfolding as a mechanism of compartmentalization and degradation of proteins. In contrast, the translation of proteins through cytosolic ribosome biogenesis has been previously characterized to be attenuated and slowed to prevent further protein mis-folding (Stein and Frydman, 2019). This decrease in expression of cytoplasmic ribosomes is also consistent with observed patterns of alternative splicing coupled to mRNA decay pathways in high mutational load tumors (Figure 2B).\n\nFinally, we performed a jackknife re-sampling procedure to confirm that specific cancer types aren\u2019t driving patterns of association within the GLMM. This was achieved by removing each cancer type from the regression model one at a time, and re-calculating regression coefficients on the remaining set of samples. Overall, regression coefficients were stable across cancer types and trends were unchanged (Figure 3\u2014figure supplement 1). In addition, we also performed linear regression within cancer types and found similar expression responses to mutational load across proteostasis complexes (Figure 3\u2014figure supplement 2). Finally, we also confirmed that patient age was not driving patterns of association of mutational load and gene expression within the GLMM (Figure 3\u2014figure supplement 3). Taken together, this suggests that protein re-folding, protein disaggregation, protein degradation, and down-regulation of cytoplasmic translation are potential mechanisms to mitigate and prevent protein misfolding in high mutational load tumors.\n\n### Validating proteostasis expression responses in cancer cell lines and establishing a causal connection through perturbation experiments\n\nWe next sought to validate these results by first examining whether the expression patterns observed in human tumors replicate within cancer cell lines from the Cancer Cell Line Encyclopedia (CCLE) (Barretina et al., 2012). Unlike TCGA, samples within each cancer type in CCLE can be small and are unbalanced (i.e. some cancer types have <10 samples and others have >100 samples). Since GLMMs may not be able to estimate among-population variance accurately in these cases (Harrison et al., 2018), we utilized a simple generalized linear model (GLM) instead to measure the effect of mutational load on patterns of expression without over-constraining the model. Indeed, we find that expression patterns seen in human tumors broadly replicate in cancer cell lines (Figure 3). Similar to the expression analysis in TCGA, we also confirmed through a jackknife re-sampling procedure that specific cancer types aren\u2019t driving patterns of association within the GLM (Figure 3\u2014figure supplement 4). Finally, we further validated these trends by incorporating protein abundance estimates in CCLE, which contains the largest dataset available of RNA (n=1377) and protein (n=373) abundances that are harmonized across samples. We find similar patterns of expression and protein abundances in response to mutational load in CCLE within proteostasis complexes (Figure 3\u2014figure supplement 5).\n\nOverall, this indicated that the expression patterns observed are cell autonomous (i.e. independent of organismal effects such as the immune system, age or microenvironment) and consistent across high mutational load cancer cells. Importantly, it also demonstrates that cancer cell lines are a reasonable model to causally interrogate these effects further through functional and pharmacological perturbation experiments.\n\nTo establish a causal relationship between the over-expression of proteostasis machinery and maintenance of cell viability under high mutational load, we utilized expression knock-down (shRNA) estimates from project Achilles (Tsherniak et al., 2017) for the same cancer cell lines as in CCLE. We sought to measure how mutational load impacts cell viability when protein complexes and gene families undergo a loss of function through expression knock-down. Since the shRNA screen was performed on an individual gene basis, we utilized a GLM framework that aggregates expression knock-down estimates of all genes within a given proteostasis gene family to jointly measure how mutational load impacts cell viability after loss of function. Specifically, we included an additional categorical variable of the gene name within each gene family to allow for a change in the intercept within each gene in the GLM when measuring the association of mutational load and cell viability after expression knock-down. In addition, we similarly evaluated whether specific cancer types were driving patterns of association within the GLM through jackknife re-sampling by cancer type (Figure 4A).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig4-v1.jpg)\n\n**Figure 4.:** (A) Heatmap of $\\beta_{1}$ regression coefficients jointly measuring the association of mutational load and cell viability after expression knockdown of individual genes in proteostasis complexes. (B) Heatmap of $\\beta_{1}$ regression coefficients measuring the association mutational load and cell viability after inhibition of proteostasis machinery via drugs. Both panels show how stable regression estimates are when including all cancer types (\u2018All Cancers\u2019) shown in black boxes and when removing each individual cancer type on the y-axis. Colors denote a positive (blue), zero (gray), or negative (red) relationship between mutational load and cell viability after expression knockdown or drug inhibition. Stars denote whether the relationship is significant (*p<0.05; **p<0.005; ***p<0.0005).\n\nOverall, we find that elevated mutational load is associated with decreased cell viability when the function of most chaperone gene families are disrupted through expression knock-down (Figure 4A). However, only chaperones within the HSP100 family, which have the unique ability to rescue and reactivate existing protein aggregates in cooperation with other chaperone families (Zolkiewski et al., 2012), show a significant negative relationship between mutational load and cell viability across almost all cancer types. Similarly, we find specificity in the vulnerability that mutational load generates when the function of the proteasome and different ribosomal complexes are disrupted (Figure 4A). Mutational load significantly decreases cell viability only when expression knock-down of the 19 s regulatory particle of the proteasome is disrupted, suggesting that targeting the protein import machinery of the proteasome is more effective than targeting the protein cleaving machinery in the 20 s core. Finally, mutational load significantly increases cell viability when cytoplasmic ribosomes \u2013 which are already down-regulated in response to mutational load (Figure 2B) \u2013 undergo a loss of function through expression knock-down. Conversely, expression knock-down of mitochondrial ribosomes significantly decreases viability with increased mutational load in cell lines, which is also consistent with the patterns of expression observed.\n\nSince functional redundancy in the human genome can make expression knock-down estimates within individual genes noisy, we also examined how drugs targeting the function of whole complexes impact viability with mutational load across all cancer types and when removing individual cancer types through jackknife re-sampling. To do so, we utilized drug sensitivity screening data in project PRISM (Corsello et al., 2020) within CCLE and used a simple GLM to measure the association of mutational load and cell viability after drug inhibition. We find that treatment with the majority of proteasome inhibitors (6/8) and ubiquitin-specific proteasome inhibitors (2/3), which target protein degradation complexes, are significantly associated with a decrease in cell viability in high mutational load cell lines. Similarly, most HSP90 inhibitors decrease cell viability with mutational load (8/10), although only a few drugs show a significant relationship. This variability in the efficacy of drugs with similar mechanisms of action likely reflects that the efficacy to disrupt the function of proteostasis machinery is dependent on the specific molecular affinity of a compound to its target and downstream effectors. While these are the only relevant proteostasis drugs in the PRISM dataset that are currently available, we anticipate that drugs targeting other chaperone machinery or splicing complexes could also target other potential vulnerabilities in high mutational load cancers. Collectively, these results indicate that elevated expression of protein degradation and folding machinery is causally related to the maintenance of viability in high mutational load cell lines, and likely in high mutational load tumors by extension.\n\nLastly, we find that most drugs in the PRISM database do not significantly decrease cell viability with mutational load (Figure 5A), suggesting that high mutational load cancer cells are not generically vulnerable to all classes of drugs. Specifically, we find that drugs which inhibit transcription, cytoskeleton organization, protein degradation, chaperones, protein synthesis, and promote apoptosis are most effective at targeting high mutational load cancer cells \u2013 delineating additional potential therapeutic vulnerabilities in high mutational burden tumors (Figure 5B).\n\n![Figure 5.](https://cdn.elifesciences.org/articles/87301/elife-87301-fig5-v1.jpg)\n\n**Figure 5.:** (A) Bar plot of the number of drugs in the PRISM database significantly (black) and not significantly (gray) associated with mutational load and cell viability using a simple generalized linear model (GLM). (B) Fraction of drugs in broad functional categories significantly negatively associated with mutational load and cell viability from the GLM. Confidence intervals were determined by randomly sampling 50 drugs in each functional category 100 times. Dashed line is the median of randomly sampled drugs across all categories.\n\n## Discussion\n\nHere, we test the hypothesis that cancer cells regulate their proteostasis machinery to mitigate the damaging effects of passenger mutations, which can destabilize and misfold proteins. Misfolded proteins can arise from non-synonymous or nonsense passengers which cause abnormal amino acid modifications or pre-mature truncations in proteins. Even synonymous passengers, which are traditionally thought to be functionally silent, can lead to misfolding of proteins through changes in mRNA stability (Kristofich et al., 2018), translational pausing (Spencer et al., 2012; Zhang et al., 2009), and non-optimal codon usage (Walsh et al., 2020; Plotkin and Kudla, 2011). As a result, protein misfolding can be damaging in cells not only due to a loss of function of the original protein, but also due to a gain in toxicity caused by the aggregation of aberrant peptides. It is intriguing to consider the possibility that the need to manage protein misfolding stress is a hallmark of somatic evolution in cancer.\n\nTo maintain viability by minimizing these cytotoxic effects, we find that high mutational load tumors \u2013 similar to yeast (Bobula et al., 2006), bacteria (Maisnier-Patin et al., 2005; Fares et al., 2002), and viruses (Elena et al., 2006) \u2013 up-regulate the expression of chaperones, which allow mutated proteins that would otherwise be misfolded to retain function. We find evidence suggesting that specific chaperone families that actively participate in protein re-folding (HSP60, HSP90, and HSP70) or disaggregation (HSP100) are up-regulated in response to mutational load, while other chaperone machinery that salvage proteins (Small HS) are downregulated. In addition, we find degradation of mutated proteins through up-regulation of the proteasome to be another possible strategy high mutational load tumors use to mitigate protein misfolding stress.\n\nFinally, we find additional mechanisms that high mutational load tumors use to not just mitigate but also prevent protein misfolding. By utilizing post-transcriptional processes that couple alternative splicing with mRNA decay pathways known to occur in normal human tissues (Ge and Porse, 2014; Pan et al., 2006; Green et al., 2003), high mutational load tumors appear to selectively prevent protein production by regulating certain pre-mRNA transcripts to be degraded rather than translated. We find evidence suggesting that the targets of this coordinated un-productive splicing are primarily related to cytoplasmic ribosomal gene expression that controls the translation of proteins, consistent with observations in other organisms (Cuccurese et al., 2005; Mitrovich and Anderson, 2000; Parenteau et al., 2011). Intriguingly, we find that while cytoplasmic ribosome expression is attenuated, mitochondrial ribosome biogenesis in human tumors is up-regulated in response to mutational load. This could both be another mechanism that high mutational load tumors use to compartmentalize and degrade proteins (Ruan et al., 2017) and reflect the increased energetic demands of proteostasis maintenance (Kalapis et al., 2015).\n\nThe expression responses observed here are not only consistent with protein misfolding stress in other organisms, but also cross-validate in cancer cell lines, where we find similar expression responses to mutational load. This provides further evidence of a generic, cell-intrinsic phenomenon occurring that cannot be explained by extrinsic organismal effects, such as aging, changes in the immune system, or microenvironment. Furthermore, we move beyond correlations of gene expression responses to mutational load and establish a causal connection by demonstrating that mitigation of protein misfolding through protein degradation and re-folding is necessary for high mutational load cancer cells to maintain viability through perturbation experiments via knockdown experiments with shRNA and drug profiling.\n\nThe results presented here have many implications. First, they suggest that while there is direct selection during somatic evolution for pathogenic drivers that allow cancer cells to continually proliferate, damaging passengers that destabilize proteins must also cause cancer cells to experience second-order indirect selection for alterations that allow tumors to overcome this proteostasis imbalance. This could occur through phenotypic plasticity, shifts in methylation and chromatin structure, or through compensatory point mutations and duplications, consistent with other studies (Tokheim et al., 2021; Mart\u00ednez-Jim\u00e9nez et al., 2020). Indeed, gene duplication, where one copy can still perform the required function while the other copy is non-functional, is another known mechanism that allows cells to maintain robustness to damaging mutations in many eukaryotic organisms (Conant and Wagner, 2004; Gu et al., 2003). In support of this, whole genome duplication, which is common in cancer, has recently been shown as another potential mechanism that tumor cells could use to maintain robustness to deleterious passengers (L\u00f3pez et al., 2020). However, duplication events are also known to be deleterious due to gene dosage effects that cause protein imbalance (Torres et al., 2007), which could further exacerbate protein misfolding. Further experimental studies are needed to distinguish how cancer cells compensate for protein misfolding and the role that genome duplication may play in this process.\n\nSecond, the extra demands of proteostasis maintenance present important vulnerabilities in high mutational load cancers that could be exploited. The clinical use of chaperone inhibitors for cancer treatment has been explored for over two decades (Neckers and Workman, 2012; Pacey et al., 2006; Kim et al., 2009) but no study, to our knowledge, has compared the efficacy of chaperone inhibitor use in tumors stratified by mutational load. Similarly, the clinical use of proteasome inhibitors, which are currently only approved for the treatment of multiple myeloma and mantle-cell lymphoma (Manasanch and Orlowski, 2017; Park et al., 2018), has not been directed specifically to high mutational load tumors. While the efficacy of proteasome inhibitors in multiple myeloma patients is linked to the protein misfolding stress response (Bianchi et al., 2009; Ling et al., 2012), it is currently unknown whether high mutational load tumors are more susceptible to these inhibitors. Outside of drugs in the clinic, the need for cancers to compensate for protein misfolding could also present additional vulnerabilities due to evolutionary trade-offs, where the improvement in fitness of one trait comes at the expense of another. Previous work in yeast has identified strong trade-offs between the adaptive mechanisms that allow for the tolerance of mistranslation and survival under conditions of starvation (Kalapis et al., 2015). Whether similar conditions could be exploited in high mutational load cancer cells warrants additional further investigation.\n\nFinally, our results contribute to an accumulating body of evidence that cancer and aging are different manifestations of related underlying evolutionary processes (Martincorena et al., 2018; Martincorena et al., 2015; Kennedy et al., 2019). The same forces of mutation and inefficient selection in somatic evolution generate a persistent problem of deleterious mutation accumulation in normal somatic tissues and during tumor growth. Disruption of proteostasis is a known hallmark of aging in normal tissues (L\u00f3pez-Ot\u00edn et al., 2013). Many transcriptional responses observed in high mutational load tumors \u2014 such as shifts in regulation of alternative splicing (Adusumalli et al., 2019), protein degradation (L\u00f6w, 2011), and protein re-folding (Soti and Csermely, 2003) \u2014 are also observed in normal aging tissues which contain somatic mutations. Despite this, aging tissues appear to utilize different strategies to deal with proteostasis disruption \u2014 such as up-regulation of chaperones in the Small HS family (Charmpilas et al., 2017) and autophagy (Aman et al., 2021) \u2014 which are not a pre-dominant response observed here in high mutational load tumors. Whether different combinations of strategies are used by high mutational load cancer cells use to overcome their mutational load or whether all the strategies identified here are needed to maintain proteostasis is unclear. Differences in these proteostasis strategies could be due to different selection pressures during somatic evolution, the degree of mutational load required to induce a stress response, differences in energetic costs of protein maintenance, or the interplay that exists between apoptosis and proteostasis. Further studies are needed to elucidate the precise dynamics and physiological consequences of inefficient negative selection in somatic evolution, how this impacts cellular growth, and the mechanisms somatic cells use to maintain robustness to proteostasis disruption.\n\n## Methods\n\n### Statistical analysis\n\nThe lmerTest and lmer package in R was used to apply a separate generalized linear mixed model (GLMM) for each gene in the genome to identify groups of genes whose expression is up-regulated in response to mutational load in TCGA. For each gene, expression values across all patients were z-score normalized in all analyses to ensure fair comparisons across genes. Known co-variates of tumor purity and cancer type were included in the GLMM. Tumor purity and mutational load were modeled as fixed effects, whereas cancer type was modeled as a random effect (i.e. random intercept) since it varies across groups of patients and can be interpreted as repeated measurements across groups. For all analyses, mutational load was defined as log10 of the number of synonymous, nonsynonymous, and nonsense mutations per tumor. For each gene, the parameters used in the GLMM were as follows,\n\n$$\nY\u223c\\beta_{0}+\\beta_{1}X_{1}+\\beta_{2}X_{2}+v+e\n$$\n\nwhere $Y$ is a vector of expression values of each tumor, $\\beta_{0}$ is the fixed intercept, $\\beta_{1}$ is the fixed slope for the predictor variable $X_{1}$ which is a vector of mutational load values for each tumor, $\\beta_{2}$ is the fixed slope for the predictor variable $X_{2}$ which is a vector of the purity of each tumor, v is the random intercept for each cancer type, and $e$ is a Gaussian error term. To examine expression responses to mutational load within a given protein complex and cancer type, the same normalization procedures were applied as above within cancer types and a separate GLM for each cancer type was ran as follows,\n\n$$\nY\u223c\\beta_{0}+\\beta_{1}X_{1}+\\beta_{2}X_{2}+\\beta_{3}X_{3}+e\n$$\n\nwhere $Y$ is a vector of expression values of each tumor in a given cancer type, $\\beta_{0}$ is the fixed intercept, $\\beta_{1}$ is the fixed slope for the predictor variable $X_{1}$ which is a vector of mutational load values for each tumor, $\\beta_{2}$ is the fixed slope for the predictor variable $X_{2}$ which is a vector of the purity of each tumor, $\\beta_{3}$ is a change in the intercept for $X_{3}$ which is a categorical variable of individual genes within each proteostasis complex and $e$ is a Gaussian error term.\n\nUnlike TCGA, samples within each cancer type in CCLE can be small and is unbalanced (i.e. some cancer types have <10 samples and others have >100 samples). In these cases, mixed effects models may not be able to estimate among-population variance accurately (Harrison et al., 2018). Thus, for all regression-based analyses in CCLE, a simple GLM was used instead. Cell viability values across all cell lines were z-score normalized by gene in all analyses to ensure fair comparisons across genes. To assess whether the same sets of genes are up-regulated in response to mutational load in CCLE using the GLM, a similar procedure to the GLMM was performed. A separate GLM was applied for each gene with the following parameters,\n\n$$\nY\u223c\\beta_{0}+\\beta_{1}X_{1}+e\n$$\n\nwhere $Y$ is a vector normalized expression values of each cell line, $\\beta_{0}$ is the fixed intercept, $\\beta_{1}$ is the fixed slope for the predictor variable $X_{1}$ which is a vector of mutational load values for each tumor, and $e$ is a Gaussian error term. To assess whether protein abundances are similarly up-regulated in response to mutational load in CCLE in proteostasis complexes, a separate GLM was applied to each gene with the following parameters,\n\n$$\nY\u223c\\beta_{0}+\\beta_{1}X_{1}+\\beta_{2}X_{2}+e\n$$\n\nwhere $Y$ is a vector of protein abundance values within each cell line, $\\beta_{0}$ is the fixed intercept, $\\beta_{1}$ is the fixed slope for the predictor variable $X_{1}$ which is a vector of mutational load values for each tumor, and $e$ is a Gaussian error term. A similar GLM framework as above was used to estimate the association of mutational load and cell viability after the shRNA knock-down of individual genes in proteostasis complexes with the following parameters,\n\n$$\nY\u223c\\beta_{0}+\\beta_{1}X_{1}+\\beta_{2}X_{2}+e\n$$\n\nwhere $Y$ is a vector of normalized cell viability estimates after expression knock-down of an individual gene across all cell lines, $\\beta_{0}$ is the fixed reference intercept, $\\beta_{1}$ is the fixed slope for the predictor variable $X_{1}$ which is a vector of mutational load values for each cell line, $\\beta_{2}$ is a change in the intercept for $X_{2}$ which is a categorical variable of individual genes within each proteostasis complex, and $e$ is a Gaussian error term. To estimate the association of mutational load and cell viability after pharmacologic inhibition of proteostasis machinery, the following GLM was applied to each relevant drug in PRISM:\n\n$$\nY\u223c\\beta_{0}+\\beta_{1}X_{1}+e\n$$\n\nwhere $Y$ is a vector normalized cell viability estimates after drug inhibition across all cell lines, $\\beta_{0}$ is the fixed intercept, $\\beta_{1}$ is the fixed slope for the predictor variable $X_{1}$ which is a vector of mutational load values for each tumor, and $e$ is a Gaussian error term.\n\n### Model validation\n\nFor both the GLM and GLMM, model assumptions of homogeneity of variance were verified by plotting residuals versus fitted values in the model and residuals versus each covariate in the model. Multi-collinearity with other mutational classes (e.g. such as CNAs) were considered but not found to correlate with point mutations (Figure 1\u2014figure supplement 1). A jackknife re-sampling procedure was used for outlier analysis and to determine whether specific cancer types are driving patterns of association within the GLM and GLMM. Briefly, each cancer type was removed from the regression model one at a time, and regression coefficients were re-estimated. Overall, regression coefficients were fairly stable across cancer types and trends remained the same (Figure 3\u2014figure supplements 1 and 4).\n\n### Proteostasis gene sets\n\nGenes for chaperone complexes were identified from Hadizadeh Esfahani et al., 2018 and genes that are co-chaperones were not considered. Proteasome and ribosomal complexes were identified from CORUM (Giurgiu et al., 2019).\n\n### Gene set enrichment analysis\n\nAll gene set enrichment analysis was performed using gprofiler2 with default parameters. For all sets of genes, significance was determined after correcting for multiple hypothesis testing (FDR<0.05). For gene set enrichment analysis used to identify genes up-regulated in TCGA in response to mutational load, all terms in the CORUM database were reported and enrichment terms in the KEGG database of diseases not related to cancer (e.g. \u2018Influenza A\u2019) were omitted from the main figures for clarity and space. For gene sets used to identify terms differentially spliced in between high and low mutational load tumors, all terms in the CORUM and the REACTOME database were reported in the main figures. The full set of enrichment terms for all analyses is reported in Supplementary file 1.\n\n### Alternative splicing analysis\n\nAlternative splicing events were quantified through a previously established metric called PSI. PSI is calculated as the number of reads that overlap the alternative splicing event (e.g. for intron retention, either at intronic regions or those at the boundary of exon to intron junctions) divided by the total number of reads that support and don\u2019t support the alternative splicing event. PSI summarizes alternative splicing events at specific exonic boundaries in the entire transcript population without needing to know the complete underlying composition of each full-length-transcript.\n\nAlternative splicing calls for all tumors in TCGA were downloaded from TCGA SpliceSeq (Ryan et al., 2016). Default splice event filters (percentage of samples with PSI values >75%) from the database were applied. To test whether gene expression is down-regulated in high mutational load tumors through alternative splicing, we calculated whether alternative splicing events were present based on different threshold values of percent spliced in (PSI) from 90\u201350% (Figure 2\u2014figure supplement 2). For each alternative splicing event in a gene, we quantified whether the expression of the same gene was under-expressed. Each gene was counted as under-expressed if it was one standard deviation below the mean expression within each cancer type. Genes that contained a point mutation within the same alternative splicing event were removed to control for eQTL effects. We note that intron retention events removed from this analysis represent only ~1% of intron retention events across all tumors and similar trends are found when this filtering scheme is not applied (Figure 2\u2014figure supplement 1). In addition, we evaluated whether this trend is robust to other alternative splicing events (i.e. Alternate Donor Sites, Alternate Promoters, Alternate Terminators, Exon Skipping Events, ME = Mutually Exclusive Exon; Figure 2\u2014figure supplement 2).\n\nTo investigate which genes are differentially spliced in between low and high mutational load tumors for specific alternative splicing events (i.e. intron retention), a t-test was used to calculate whether PSI values were significantly different in tumors with <10 protein-coding mutations compared to tumors with >1000 protein-coding mutations. Each alternative splicing event within a gene was required to have less than 25% of missing PSI values and a mean difference between the two groups of >0.01 to be considered. This approach identified 606 and 201 significant genes that have more and fewer intron retention events in high mutational load tumors, respectively, after correcting for multiple hypothesis testing (FDR<0.05).\n\n### Drug category annotation and enrichment analysis\n\nA separate GLM was ran for all drugs in the PRISM database to evaluate whether they are associated with mutational load and cell viability. All drugs that were negatively associated with mutational load and viability were queried on PubMed based on their reported mechanism of action in PRISM and grouped into broad categories (Supplementary file 1). Categories of drug mechanism of action were first chosen based on their role in metabolism and known hallmarks of cancer. Additional categories not directly related to known cancer-associated functional groups were made for drugs that could not otherwise be grouped (i.e. \u2018Ion Channel Regulation,\u2019 Viral Replication Inhibitor,\u2019 etc.). Drugs with an ambiguous mechanism of action (e.g. \u2018cosmetic,\u2019 \u2018coloring agent\u2019) were grouped into \u2018Other.\u2019 The abstracts of up to 10 associated papers were used to examine for evidence connecting drug mechanisms of action to 33 broad categories. In total, 700 drug mechanisms of action were grouped and annotated into 33 broad categories. These broad categories were used to assess whether high mutational load cancer cell lines are generically vulnerable to drugs or whether certain categories are more likely to contain drugs effective against high mutational load cell lines. To control for differences in the number of drugs within each category, 50 drugs were randomly sampled, and the fraction of drugs significantly associated with mutational load in each category was calculated 100 times to generate confidence intervals.\n",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "3e177f92-207c-4724-ac5e-badc8807d84c",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Richard A Neher, University of Basel Switzerland\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.87301.2.sa0](https://doi.org/10.7554/eLife.87301.2.sa0)\n\nTilk and colleagues present a computational analysis of tumor transcriptomes to investigate the hypothesis that the large number of somatic mutations in some tumors is detrimental such that these detrimental effects are mitigated by an up-regulation by pathways and mechanisms that prevent protein misfolding. The authors address this question by fitting a model that explains the log expression of a gene as a linear function of the log number of mutations in the tumor and show that specific categories of genes (proteasome, chaperones, ...) tend to be upregulated in tumors with a large number of somatic mutations. Some of the associations presented could arise through confounding, but overall the authors present solid evidence that mutational load is associated with higher expression of genes involved in mitigation of protein misfolding \u2013 an important finding with general implications for our understanding of cancer evolution.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.87301.2.sa1](https://doi.org/10.7554/eLife.87301.2.sa1)\n\nTilk and colleagues present a computational investigation of tumor transcriptomes to investigate the hypothesis that the large number of somatic mutations in some tumors is detrimental and that these detrimental effects are mitigated by an up-regulation by pathways and mechanisms that prevent protein misfolding.\n\nThe authors address this question by fitting a model that explains the log expression of a gene as a linear function of the log number of mutations in the tumor and additional effects for tumor homogeneity and type. This analysis identified a large number of genes (5000) that are more highly expressed at high mutational load at a FDR of 0.05. These genes are enriched in many core categories, most prominently in the proteasome, translation, and mitochondral translation. The authors then proceed to investigate specific categories of upregulated genes further.\n\nThe individual reviews, and the discussion among the reviewers, raised several issues that could potentially undermine or weaken some of the findings presented in this paper.\n\n1. Systematic differences in expression of some genes from one tumor class to another might generate spurious associations with mutational load (ML), which would affect the results presented in Figs 1 and 3. The case of a causal link between ML and over-expression of genes that mitigate deleterious effects of misfolding would be stronger if these results were replicated within single cancer types with many samples with different ML (similar to how Fig S6 relates to Fig 3). A related concern might be an association between increased variance of expression and ML. The compositional nature of expression data could generate trends like the ones shown in Fig. 2 with changing variance.\n\n2. Fig 4, Fig S5 and Fig S8 show results for the regression coefficient of expression on ML after leaving out one cancer at a time. All of us initially read this as results for 'one cancer at a time', rather than 'leave-one-out'. These figures are used to argue that the results are not driven by specific cancer types. However, this analysis would not reveal if the signal was driven by a (small) subset of cancer types. To justify claims like \"significant negative relationship between mutational load and cell viability across almost all cancer types\", one needs to analyze individual cancer types. Results for specific genes, rather than broad groups would also help interpret these results.\n\n3. You use different model architecture for the TCGA and CCLE analysis because you suspect that the sample size imbalance in the latter might mean that a GLMM can not capture the different variance components accurately. Did you test this? Could you downsample to avoid this? Cancer type is likely a strong confounder of ML.\n\n4. In the splicing analysis (Fig 2 and Fig S4), you report a 10% variation in splicing for a 100-fold variation in ML. This weak trend is replicated in very similar ways for many different types of alternative splicing events. It is not clear why different events (exon skipping, intron retention, etc) should respond in the same way to ML. A weak but homogeneous effect like the one shown here might result from some common confounder (see point 1). Similarly, it is not clear why with increasing intron retention PSI threshold the fraction of under-expressed transcripts would decrease and not increase.\n",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "42179e57-3ce3-4a46-aba3-7ab3d3ce714c",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C1",
+      "claim": "In asexual populations that don't undergo recombination, such as cancer, deleterious mutations are expected to accrue readily due to genome-wide linkage between mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In asexual populations that don't undergo recombination, such as cancer, deleterious mutations are expected to accrue readily due to genome-wide linkage between mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on established knowledge about the effects of linkage and lack of recombination on mutation accumulation in asexual populations.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "fcd38656-7138-4cfb-a363-629ed22fed29",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C2",
+      "claim": "Many tumors thrive despite a mutational load of often thousands of deleterious mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this mutational load of often thousands of deleterious mutations, many tumors thrive.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general observation about tumor behavior that is supported by the study's investigation of 10,295 tumors.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "dbc0c06d-d6c6-4aea-bbaa-8da31f9e2e73",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C3",
+      "claim": "High mutational load tumors up-regulate proteostasis machinery related to the mitigation and prevention of protein misfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Using a generalized linear mixed model (GLMM), we find that high mutational load tumors up-regulate proteostasis machinery related to the mitigation and prevention of protein misfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the GLMM analysis of 10,295 human tumors showing upregulation of proteostasis machinery.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "58b3e725-794a-404d-b53b-5ec27d76f34f",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C4",
+      "claim": "The viability in high mutational load cancer cells is strongly dependent on complexes that degrade and refold proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We replicate these expression responses in cancer cell lines and show that the viability in high mutational load cancer cells is strongly dependent on complexes that degrade and refold proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from cancer cell lines showing dependency on protein degradation and refolding complexes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "77c1223b-62c6-42a3-9983-2f111d80cb79",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C5",
+      "claim": "The upregulation of proteostasis machinery is causally important for high mutational burden tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "This indicates that the upregulation of proteostasis machinery is causally important for high mutational burden tumors and uncovers new therapeutic vulnerabilities.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by perturbation experiments using shRNA knockdown and drug treatments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "0aa7d555-b9f0-4d82-b03d-ab305e43ea44",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C6",
+      "claim": "The number of passengers in a tumor can vary by over four orders of magnitude, even within the same cancer type, from just a few to tens of thousands of point mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of passengers in a tumor can vary by over four orders of magnitude, even within the same cancer type, from just a few to tens of thousands of point mutations (Lawrence et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Lawrence et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "7cdf11dc-8663-4fb5-8325-29870dbc18c3",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C7",
+      "claim": "Most non-synonymous mutations are not removed by negative selection in somatic tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Some have argued that passengers are functionally unimportant to tumors given that most non-synonymous mutations are not removed by negative selection in somatic tissues (Bakhoum and Landau, 2017; Martincorena et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Bakhoum and Landau, 2017 and Martincorena et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "e10eb630-338a-4693-879f-3efd66cb2886",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C8",
+      "claim": "Non-synonymous mutations are functionally damaging to most genes in the human germ line.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in direct contrast to the human germ line, where non-synonymous mutations are functionally damaging to most genes (Eyre-Walker and Keightley, 2007) and signals of negative selection are pervasive (Martincorena et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Eyre-Walker and Keightley, 2007 and Martincorena et al., 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "1f772205-071c-42bc-bec7-350888610b06",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C9",
+      "claim": "Non-synonymous mutations are known to be damaging in the human germ-line due to their effects on protein folding and stability.",
+      "claim_type": "EXPLICIT",
+      "source": "Non-synonymous mutations are known to be damaging in the human germ-line due to their effects on protein folding and stability (Drummond and Wilke, 2008), which ought to be shared between somatic and germline evolution.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Drummond and Wilke, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "056a3fc7-a297-4d18-9315-95a3e0942173",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C10",
+      "claim": "Negative selection is inefficient at removing deleterious mutations in somatic cells due to linkage effects driven by the lack of recombination.",
+      "claim_type": "EXPLICIT",
+      "source": "An alternative explanation is that non-synonymous mutations are indeed damaging in somatic evolution, but negative selection is too inefficient at removing them due to linkage effects driven by the lack of recombination in somatic cells (Tilk et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tilk et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "26b4bc49-ad65-4157-95ff-a30e8e3157a0",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C11",
+      "claim": "Without recombination to break apart combinations of mutations, selection must act on beneficial drivers and deleterious passengers that arise in the same genome together.",
+      "claim_type": "EXPLICIT",
+      "source": "Without recombination to break apart combinations of mutations, selection must act on beneficial drivers and deleterious passengers that arise in the same genome together. This makes it less efficient for selection to individually favor beneficial drivers or remove deleterious passengers (Hill and Robertson, 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Hill and Robertson, 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "a43449fa-d393-4ec4-9726-8f91fd332f92",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C12",
+      "claim": "Tumors with very small numbers of passengers exhibit signatures of negative selection and weed out damaging non-synonymous mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this model, tumors with very small numbers of passengers \u2013 where linkage effects are expected to be negligible \u2013 have recently been shown to exhibit signatures of negative selection and weed out damaging non-synonymous mutations (Tilk et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Tilk et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "c536f1ee-9876-4ad3-8acd-bfe37d80ea1c",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C13",
+      "claim": "The remaining majority (>95%) of tumors, which contain much larger numbers of linked mutations, display patterns of inefficient negative selection.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the remaining majority (>95%) of tumors, which contain much larger numbers of linked mutations, display patterns of inefficient negative selection.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on inference from the study by Tilk et al., 2022 mentioned in the previous sentence.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "705a9633-d201-44bb-b4a6-85d19ef15528",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C14",
+      "claim": "Most tumors carry a correspondingly large deleterious mutational load.",
+      "claim_type": "EXPLICIT",
+      "source": "This provides evidence in favor of the inefficient selection model and implies that most tumors carry a correspondingly large deleterious mutational load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference drawn from the evidence of inefficient negative selection in tumors.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "dc57f7e9-4ca9-4a30-9567-0563b837071a",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C15",
+      "claim": "Successful tumors with thousands of linked mutations must find ways to maintain their viability by mitigating this large mutational load.",
+      "claim_type": "EXPLICIT",
+      "source": "If individual passengers are in fact substantially damaging in cancer, successful tumors with thousands of linked mutations must find ways to maintain their viability by mitigating this large mutational load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is a logical inference based on the premise that passengers are damaging.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "7077149f-f711-4626-b950-a69cfb076677",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C16",
+      "claim": "Tumors with mutations in protein-coding genes are expected to minimize the damaging phenotypic effects of protein misfolding stress.",
+      "claim_type": "EXPLICIT",
+      "source": "While paths to mitigation are difficult to predict for non-coding mutations, tumors with mutations in protein-coding genes are expected to minimize the damaging phenotypic effects of protein misfolding stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the known effects of protein-coding mutations on protein folding.",
+      "evidence_type": "[\"KNOWLEDGE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "f622339a-97bc-48d8-a749-3b65bc1a17e3",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C17",
+      "claim": "The study analyzed 10,295 tumors from 33 cancer types from The Cancer Genome Atlas (TCGA).",
+      "claim_type": "EXPLICIT",
+      "source": "To do so, we utilized publicly available whole-exome and gene expression data from 10,295 human tumors across 33 cancer types from The Cancer Genome Atlas (TCGA) (Weinstein et al., 2013; Ellrott et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a description of the data used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "3c975f33-e146-4e72-a872-8789ce54bc02",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C18",
+      "claim": "There is a high degree of collinearity among synonymous, non-synonymous, and nonsense point mutations in protein-coding genes (R>0.9).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that there is a high degree of collinearity among synonymous, non-synonymous, and nonsense point mutations in protein-coding genes (R>0.9) but weak collinearity between point mutations and copy number alterations (R<0.05) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "66f21a0f-94b6-411a-9875-fa0d704904e5",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C19",
+      "claim": "There is weak collinearity between point mutations and copy number alterations (R<0.05).",
+      "claim_type": "EXPLICIT",
+      "source": "We find that there is a high degree of collinearity among synonymous, non-synonymous, and nonsense point mutations in protein-coding genes (R>0.9) but weak collinearity between point mutations and copy number alterations (R<0.05) (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by correlation analysis shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "f1d45521-d248-4168-aefe-cdb9d9ec9659",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C21",
+      "claim": "Pathways and protein complexes related to the cell cycle, DNA replication, and DNA repair were enriched in tumors with a high mutational load.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected for tumors with many mutations, pathways, and protein complexes related to the cell cycle, DNA replication, and DNA repair were enriched in tumors with a high mutational load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene set enrichment analysis of the upregulated genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "cd9b600e-deba-4a07-90c8-39ebc92dc15b",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C22",
+      "claim": "Protein complexes and pathways that regulate translation (mitochondrial ribosomes), protein degradation (proteasome complex), and protein folding (CCT complex/HSP60) are enriched in high mutational load tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "However, some of the most significant enrichment terms were for protein complexes and pathways that regulate translation (mitochondrial ribosomes), protein degradation (proteasome complex), and protein folding (CCT complex/HSP60), consistent with the hypothesis that high mutational load tumors experience protein misfolding stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene set enrichment analysis shown in Figure 1B and 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "e3681dc8-d94f-47fd-80ca-857ddf00f58f",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C23",
+      "claim": "The spliceosome is up-regulated in response to mutational load.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, we also found that the spliceosome, a large protein complex that regulates alternative splicing in cells, is up-regulated in response to mutational load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene set enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "0105be7f-d793-418e-a0fd-9dd32a8570db",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C24",
+      "claim": "Transcription could be regulated in response to protein misfolding stress.",
+      "claim_type": "EXPLICIT",
+      "source": "This suggests that transcription itself could also be regulated in response to protein misfolding stress, as seen in other studies (Biamonti and Caceres, 2009; Dutertre et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is an inference supported by citations to Biamonti and Caceres, 2009 and Dutertre et al., 2011.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "9f21de12-81e2-491f-8b9b-68bbd1c5f075",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C26",
+      "claim": "The up-regulation of the spliceosome in high mutational load tumors prevents further protein misfolding by regulating pre-mRNA transcripts to be degraded rather than translated.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesized that the up-regulation of the spliceosome in high mutational load tumors prevents further protein misfolding by regulating pre-mRNA transcripts to be degraded rather than translated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "788239c5-4c35-4f20-acb3-59d5060976e8",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C27",
+      "claim": "The down-regulation of gene expression via alternative splicing events, such as intron retention, is one known mechanism to silence genes by funneling transcripts to mRNA decay pathways.",
+      "claim_type": "EXPLICIT",
+      "source": "The down-regulation of gene expression via alternative splicing events, such as intron retention, is one known mechanism to silence genes by funneling transcripts to mRNA decay pathways (Ge and Porse, 2014; Lindeboom et al., 2016; Lareau et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ge and Porse, 2014; Lindeboom et al., 2016; and Lareau et al., 2007.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "44a99da8-2d8b-47ac-ba5b-efefc8a8bf79",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C28",
+      "claim": "The number of transcripts that are under-expressed increases with tumor mutational load relative to all transcripts with intron retention events.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that relative to all transcripts with intron retention events, the number of transcripts that are under-expressed increases with tumor mutational load (Figure 2A), suggesting that the degree of intron-retention-driven mRNA decay is elevated in high mutational load tumors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "03888bfa-c1f5-436c-b10a-b0fc8765a29a",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C29",
+      "claim": "The degree of intron-retention-driven mRNA decay is elevated in high mutational load tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that relative to all transcripts with intron retention events, the number of transcripts that are under-expressed increases with tumor mutational load (Figure 2A), suggesting that the degree of intron-retention-driven mRNA decay is elevated in high mutational load tumors.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference drawn from the data shown in Figure 2A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "404a8cf0-b2b7-4d77-9847-cc1ed359701f",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C30",
+      "claim": "The trend of increased under-expressed transcripts with intron retention is robust to other PSI value thresholds (>50\u201390% PSI) and other alternative splicing events.",
+      "claim_type": "EXPLICIT",
+      "source": "This trend is robust to other PSI value thresholds (>50\u201390% PSI), even for other alternative splicing events (e.g. exon skipping, mutually exclusive exons, etc.) and when not filtering for potential eQTL effects (Figure 2\u2014figure supplements 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by additional analyses shown in Figure 2\u2014figure supplements 1 and 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "f2a1c95d-2eba-43fa-90be-246c012227f7",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C31",
+      "claim": "Cytoplasmic ribosomes contain more intron retention events in high mutational load tumors, potentially leading to their down-regulation through mRNA decay.",
+      "claim_type": "EXPLICIT",
+      "source": "Using gene set enrichment analysis, we find that cytoplasmic ribosomes contain more intron retention events in high mutational load tumors, potentially leading to their down-regulation through mRNA decay to prevent further protein mis-folding (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene set enrichment analysis shown in Figure 2B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "b5aeaeaf-270f-48a0-9908-9fe29dbdcd6c",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C32",
+      "claim": "Genes that contain fewer intron retention events in high mutational load tumors are primarily related to mRNA splicing.",
+      "claim_type": "EXPLICIT",
+      "source": "Genes that contain fewer intron retention events in high mutational load tumors, which are less likely to undergo mRNA decay, are primarily related to mRNA splicing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by gene set enrichment analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "9021961a-d837-4ad7-b7c2-a4ed43afdd0e",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C33",
+      "claim": "The expression of nearly all individual genes in chaperone families that participate in protein folding (HSP60, HSP70, and HSP90), protein disaggregation (HSP100), and have organelle-specific roles (ER and mitochondrial) are significantly up-regulated in response to mutational load.",
+      "claim_type": "EXPLICIT",
+      "source": "Using the GLMM framework detailed above, we find that the expression of nearly all individual genes in chaperone families that participate in protein folding (HSP60, HSP70, and HSP90), protein disaggregation (HSP100), and have organelle-specific roles (ER and mitochondrial) are significantly up-regulated in response to mutational load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GLMM analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "d422df10-9ddd-473b-84d5-05ca74797702",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C34",
+      "claim": "Small heat shock proteins are significantly down-regulated in response to increased protein-coding mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, however, small heat shock proteins, which don't participate in protein folding or disaggregation, are significantly down-regulated in response to increased protein-coding mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GLMM analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "3a1b6e02-5b53-4ae0-9178-94795ac7bbe6",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C35",
+      "claim": "The role of small heat shock proteins is primarily to hold unfolded proteins in a reversible state for re-folding or degradation by other chaperones.",
+      "claim_type": "EXPLICIT",
+      "source": "The role of small heat shock proteins is primarily to hold unfolded proteins in a reversible state for re-folding or degradation by other chaperones (Sun and MacRae, 2005) and thus, could possibly be down-regulated due to their inefficiency in mitigating protein misfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Sun and MacRae, 2005, and includes speculation about why they are down-regulated.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "a1c92d6b-a831-474c-aaa3-e0a0d3d2324a",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C36",
+      "claim": "Both the 19s regulatory particle and the 20s core of the proteasome are up-regulated in response to mutational load in TCGA.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the over-expression of chaperone families that mitigate protein misfolding, both the 19 s regulatory particle (which recognizes and imports proteins for degradation) and the 20 s core (which cleaves peptides) of the proteasome are up-regulated in response to mutational load in TCGA (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GLMM analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "824dc337-3562-4a1e-8199-5d5955e505ea",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C37",
+      "claim": "Mitochondrial \u2014 but not cytoplasmic \u2014 ribosome complexes are up-regulated in high mutational load tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we find that specifically mitochondrial \u2014 but not cytoplasmic \u2014 ribosome complexes are up-regulated in high mutational load tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by GLMM analysis shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "45ac6b23-2f75-4330-93bf-8cac4fbfabd4",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C38",
+      "claim": "Mitochondrial ribosome biogenesis has been shown to occur under conditions of chronic protein misfolding as a mechanism of compartmentalization and degradation of proteins in yeast and human cells.",
+      "claim_type": "EXPLICIT",
+      "source": "As previously reported in yeast (Ruan et al., 2017) and human cells (Shcherbakov et al., 2019), mitochondrial ribosome biogenesis has been shown to occur under conditions of chronic protein misfolding as a mechanism of compartmentalization and degradation of proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to Ruan et al., 2017 and Shcherbakov et al., 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "695853f0-ed4c-42e2-a456-9c9118e9e196",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C39",
+      "claim": "The translation of proteins through cytosolic ribosome biogenesis has been previously characterized to be attenuated and slowed to prevent further protein mis-folding.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the translation of proteins through cytosolic ribosome biogenesis has been previously characterized to be attenuated and slowed to prevent further protein mis-folding (Stein and Frydman, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation to Stein and Frydman, 2019.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "24aab3b4-c476-43ed-b620-c6611a5d131d",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C40",
+      "claim": "The decrease in expression of cytoplasmic ribosomes is consistent with observed patterns of alternative splicing coupled to mRNA decay pathways in high mutational load tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "This decrease in expression of cytoplasmic ribosomes is also consistent with observed patterns of alternative splicing coupled to mRNA decay pathways in high mutational load tumors (Figure 2B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is an inference connecting the ribosome expression data with the alternative splicing data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "6d36e8fd-ff3c-4ea5-9972-92f71d757011",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C41",
+      "claim": "Regression coefficients were stable across cancer types and trends were unchanged when removing each cancer type from the regression model one at a time.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, regression coefficients were stable across cancer types and trends were unchanged (Figure 3\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by jackknife resampling analysis shown in Figure 3\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "6994a29c-2f08-4859-be17-53827803e08f",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C42",
+      "claim": "Similar expression responses to mutational load across proteostasis complexes were found when performing linear regression within cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we also performed linear regression within cancer types and found similar expression responses to mutational load across proteostasis complexes (Figure 3\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by within-cancer-type analysis shown in Figure 3\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "5d7dfb85-a792-4997-a533-9d3c7ad6cd8d",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C43",
+      "claim": "Patient age was not driving patterns of association of mutational load and gene expression within the GLMM.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we also confirmed that patient age was not driving patterns of association of mutational load and gene expression within the GLMM (Figure 3\u2014figure supplement 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by age-stratified analysis shown in Figure 3\u2014figure supplement 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "4a3be411-5c09-4ec1-a836-b6cc042fc71d",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C44",
+      "claim": "Protein re-folding, protein disaggregation, protein degradation, and down-regulation of cytoplasmic translation are potential mechanisms to mitigate and prevent protein misfolding in high mutational load tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, this suggests that protein re-folding, protein disaggregation, protein degradation, and down-regulation of cytoplasmic translation are potential mechanisms to mitigate and prevent protein misfolding in high mutational load tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the combined expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "92b04078-da37-46de-8efe-cd0c40c6a43e",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C45",
+      "claim": "Expression patterns observed in human tumors broadly replicate in cancer cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we find that expression patterns seen in human tumors broadly replicate in cancer cell lines (Figure 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by GLM analysis of CCLE data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "91ccccac-922e-48eb-bd3f-36a2b5b095be",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C46",
+      "claim": "Similar patterns of expression and protein abundances in response to mutational load are found in CCLE within proteostasis complexes.",
+      "claim_type": "EXPLICIT",
+      "source": "We find similar patterns of expression and protein abundances in response to mutational load in CCLE within proteostasis complexes (Figure 3\u2014figure supplement 5).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by protein abundance analysis shown in Figure 3\u2014figure supplement 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "a639a4da-5c2f-4195-880c-5d1915df90d8",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C47",
+      "claim": "The expression patterns observed are cell autonomous (i.e. independent of organismal effects such as the immune system, age or microenvironment).",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, this indicated that the expression patterns observed are cell autonomous (i.e. independent of organismal effects such as the immune system, age or microenvironment) and consistent across high mutational load cancer cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the replication of results in cancer cell lines.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "93c5b773-535b-472c-9443-29be2afb4312",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C48",
+      "claim": "Cancer cell lines are a reasonable model to causally interrogate these effects through functional and pharmacological perturbation experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Importantly, it also demonstrates that cancer cell lines are a reasonable model to causally interrogate these effects further through functional and pharmacological perturbation experiments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the validation of expression patterns in cell lines.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "8afa09f2-5c27-4e28-bc86-75d8170cde36",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C49",
+      "claim": "Elevated mutational load is associated with decreased cell viability when the function of most chaperone gene families are disrupted through expression knock-down.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, we find that elevated mutational load is associated with decreased cell viability when the function of most chaperone gene families are disrupted through expression knock-down (Figure 4A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by shRNA knockdown data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "67fb3ed7-9d70-40ea-bc60-4afca61c3f5f",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C50",
+      "claim": "Only chaperones within the HSP100 family show a significant negative relationship between mutational load and cell viability across almost all cancer types.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only chaperones within the HSP100 family, which have the unique ability to rescue and reactivate existing protein aggregates in cooperation with other chaperone families (Zolkiewski et al., 2012), show a significant negative relationship between mutational load and cell viability across almost all cancer types.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by shRNA knockdown data and a citation to Zolkiewski et al., 2012.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "22f9bcba-69ba-4d3f-8c24-f6838c89d082",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C51",
+      "claim": "Mutational load significantly decreases cell viability only when expression knock-down of the 19s regulatory particle of the proteasome is disrupted.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutational load significantly decreases cell viability only when expression knock-down of the 19 s regulatory particle of the proteasome is disrupted, suggesting that targeting the protein import machinery of the proteasome is more effective than targeting the protein cleaving machinery in the 20 s core.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by shRNA knockdown data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "aa7f0e26-33a0-4656-99a4-62ce6f087760",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C52",
+      "claim": "Mutational load significantly increases cell viability when cytoplasmic ribosomes undergo a loss of function through expression knock-down.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, mutational load significantly increases cell viability when cytoplasmic ribosomes \u2013 which are already down-regulated in response to mutational load (Figure 2B) \u2013 undergo a loss of function through expression knock-down.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by shRNA knockdown data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "47412e5f-5d1b-46a7-87ff-a4e3c48660b3",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C53",
+      "claim": "Expression knock-down of mitochondrial ribosomes significantly decreases viability with increased mutational load in cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, expression knock-down of mitochondrial ribosomes significantly decreases viability with increased mutational load in cell lines, which is also consistent with the patterns of expression observed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by shRNA knockdown data shown in Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "714a3e8d-2f03-4004-b2c4-ef517786f61a",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C54",
+      "claim": "Treatment with the majority of proteasome inhibitors (6/8) and ubiquitin-specific proteasome inhibitors (2/3) are significantly associated with a decrease in cell viability in high mutational load cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that treatment with the majority of proteasome inhibitors (6/8) and ubiquitin-specific proteasome inhibitors (2/3), which target protein degradation complexes, are significantly associated with a decrease in cell viability in high mutational load cell lines.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by drug sensitivity data from PRISM shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "0bc339c7-569a-4457-99b8-1a4bf1f7e5cb",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C55",
+      "claim": "Most HSP90 inhibitors decrease cell viability with mutational load (8/10), although only a few drugs show a significant relationship.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, most HSP90 inhibitors decrease cell viability with mutational load (8/10), although only a few drugs show a significant relationship.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by drug sensitivity data from PRISM shown in Figure 4B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "0f9f3429-c596-4186-961d-ed4af13c0b03",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C56",
+      "claim": "The variability in the efficacy of drugs with similar mechanisms of action likely reflects that the efficacy to disrupt the function of proteostasis machinery is dependent on the specific molecular affinity of a compound to its target and downstream effectors.",
+      "claim_type": "EXPLICIT",
+      "source": "This variability in the efficacy of drugs with similar mechanisms of action likely reflects that the efficacy to disrupt the function of proteostasis machinery is dependent on the specific molecular affinity of a compound to its target and downstream effectors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation about why drug efficacy varies.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "a41796ae-058d-49d4-849e-692aa833e590",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C57",
+      "claim": "Elevated expression of protein degradation and folding machinery is causally related to the maintenance of viability in high mutational load cell lines.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results indicate that elevated expression of protein degradation and folding machinery is causally related to the maintenance of viability in high mutational load cell lines, and likely in high mutational load tumors by extension.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference drawn from the perturbation experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "38f4862c-31d3-46a8-ae74-2f287ed41e1a",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C58",
+      "claim": "Most drugs in the PRISM database do not significantly decrease cell viability with mutational load.",
+      "claim_type": "EXPLICIT",
+      "source": "Lastly, we find that most drugs in the PRISM database do not significantly decrease cell viability with mutational load (Figure 5A), suggesting that high mutational load cancer cells are not generically vulnerable to all classes of drugs.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by drug screening data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "849e7b17-d240-472a-bfd9-0481c95f362d",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C59",
+      "claim": "Drugs which inhibit transcription, cytoskeleton organization, protein degradation, chaperones, protein synthesis, and promote apoptosis are most effective at targeting high mutational load cancer cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, we find that drugs which inhibit transcription, cytoskeleton organization, protein degradation, chaperones, protein synthesis, and promote apoptosis are most effective at targeting high mutational load cancer cells \u2013 delineating additional potential therapeutic vulnerabilities in high mutational burden tumors (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by drug category analysis shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "ac4d13fd-294d-48af-b795-02c03c60eda7",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C60",
+      "claim": "Misfolded proteins can arise from non-synonymous or nonsense passengers which cause abnormal amino acid modifications or pre-mature truncations in proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "Misfolded proteins can arise from non-synonymous or nonsense passengers which cause abnormal amino acid modifications or pre-mature truncations in proteins.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about the effects of mutations on protein structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "5285bb0b-1b44-47f1-9ca8-a3a1494d481f",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C61",
+      "claim": "Synonymous passengers can lead to misfolding of proteins through changes in mRNA stability, translational pausing, and non-optimal codon usage.",
+      "claim_type": "EXPLICIT",
+      "source": "Even synonymous passengers, which are traditionally thought to be functionally silent, can lead to misfolding of proteins through changes in mRNA stability (Kristofich et al., 2018), translational pausing (Spencer et al., 2012; Zhang et al., 2009), and non-optimal codon usage (Walsh et al., 2020; Plotkin and Kudla, 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by multiple citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "dfe5df51-1de8-4ad4-a44f-2d31a3e2561c",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C62",
+      "claim": "Protein misfolding can be damaging in cells not only due to a loss of function of the original protein, but also due to a gain in toxicity caused by the aggregation of aberrant peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "As a result, protein misfolding can be damaging in cells not only due to a loss of function of the original protein, but also due to a gain in toxicity caused by the aggregation of aberrant peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on established knowledge about protein misfolding.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "5bd1bfd7-b435-4813-a464-023ee860021e",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C63",
+      "claim": "The need to manage protein misfolding stress is a hallmark of somatic evolution in cancer.",
+      "claim_type": "EXPLICIT",
+      "source": "It is intriguing to consider the possibility that the need to manage protein misfolding stress is a hallmark of somatic evolution in cancer.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation based on the study's findings.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "7da9040e-c653-4832-937f-af34e79c3455",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C64",
+      "claim": "High mutational load tumors up-regulate the expression of chaperones, similar to yeast, bacteria, and viruses.",
+      "claim_type": "EXPLICIT",
+      "source": "To maintain viability by minimizing these cytotoxic effects, we find that high mutational load tumors \u2013 similar to yeast (Bobula et al., 2006), bacteria (Maisnier-Patin et al., 2005; Fares et al., 2002), and viruses (Elena et al., 2006) \u2013 up-regulate the expression of chaperones, which allow mutated proteins that would otherwise be misfolded to retain function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the study's data and citations to similar findings in other organisms.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "37eec734-d7f1-4a5e-a285-8323050d9a5f",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C65",
+      "claim": "Specific chaperone families that actively participate in protein re-folding (HSP60, HSP90, and HSP70) or disaggregation (HSP100) are up-regulated in response to mutational load, while other chaperone machinery that salvage proteins (Small HS) are downregulated.",
+      "claim_type": "EXPLICIT",
+      "source": "We find evidence suggesting that specific chaperone families that actively participate in protein re-folding (HSP60, HSP90, and HSP70) or disaggregation (HSP100) are up-regulated in response to mutational load, while other chaperone machinery that salvage proteins (Small HS) are downregulated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the expression data findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "c703b81e-09b3-45c9-8032-ab54adb1b752",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C66",
+      "claim": "Degradation of mutated proteins through up-regulation of the proteasome is another possible strategy high mutational load tumors use to mitigate protein misfolding stress.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, we find degradation of mutated proteins through up-regulation of the proteasome to be another possible strategy high mutational load tumors use to mitigate protein misfolding stress.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the expression data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "a8b4add4-525c-49f0-b589-729fffa168a2",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C67",
+      "claim": "High mutational load tumors use post-transcriptional processes that couple alternative splicing with mRNA decay pathways to prevent protein misfolding.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, we find additional mechanisms that high mutational load tumors use to not just mitigate but also prevent protein misfolding. By utilizing post-transcriptional processes that couple alternative splicing with mRNA decay pathways known to occur in normal human tissues (Ge and Porse, 2014; Pan et al., 2006; Green et al., 2003), high mutational load tumors appear to selectively prevent protein production by regulating certain pre-mRNA transcripts to be degraded rather than translated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the alternative splicing data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "624b68a3-b1a7-4d72-a531-0d79af211ecb",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C68",
+      "claim": "The targets of coordinated un-productive splicing are primarily related to cytoplasmic ribosomal gene expression that controls the translation of proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "We find evidence suggesting that the targets of this coordinated un-productive splicing are primarily related to cytoplasmic ribosomal gene expression that controls the translation of proteins, consistent with observations in other organisms (Cuccurese et al., 2005; Mitrovich and Anderson, 2000; Parenteau et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by the alternative splicing data and citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "6a3db898-5c17-48e2-9ef3-ae4ef98c07c3",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C69",
+      "claim": "While cytoplasmic ribosome expression is attenuated, mitochondrial ribosome biogenesis in human tumors is up-regulated in response to mutational load.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, we find that while cytoplasmic ribosome expression is attenuated, mitochondrial ribosome biogenesis in human tumors is up-regulated in response to mutational load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary of the expression data findings.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "b019e458-0366-41b9-9694-5c67484185b0",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C70",
+      "claim": "Up-regulation of mitochondrial ribosome biogenesis could be a mechanism that high mutational load tumors use to compartmentalize and degrade proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "This could both be another mechanism that high mutational load tumors use to compartmentalize and degrade proteins (Ruan et al., 2017) and reflect the increased energetic demands of proteostasis maintenance (Kalapis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "5fce4be5-f2dc-4c4b-8a93-f9050deef4b8",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C71",
+      "claim": "Up-regulation of mitochondrial ribosome biogenesis could reflect the increased energetic demands of proteostasis maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "This could both be another mechanism that high mutational load tumors use to compartmentalize and degrade proteins (Ruan et al., 2017) and reflect the increased energetic demands of proteostasis maintenance (Kalapis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by a citation.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "da56c710-16ef-4be2-85ad-f7b78ba3b48d",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C72",
+      "claim": "While there is direct selection during somatic evolution for pathogenic drivers, damaging passengers that destabilize proteins must also cause cancer cells to experience second-order indirect selection for alterations that allow tumors to overcome this proteostasis imbalance.",
+      "claim_type": "EXPLICIT",
+      "source": "First, they suggest that while there is direct selection during somatic evolution for pathogenic drivers that allow cancer cells to continually proliferate, damaging passengers that destabilize proteins must also cause cancer cells to experience second-order indirect selection for alterations that allow tumors to overcome this proteostasis imbalance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "4626c0fb-d8e0-4bc8-b7a9-65f8d3d4a394",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C73",
+      "claim": "Cancer cells could overcome proteostasis imbalance through phenotypic plasticity, shifts in methylation and chromatin structure, or through compensatory point mutations and duplications.",
+      "claim_type": "EXPLICIT",
+      "source": "This could occur through phenotypic plasticity, shifts in methylation and chromatin structure, or through compensatory point mutations and duplications, consistent with other studies (Tokheim et al., 2021; Mart\u00ednez-Jim\u00e9nez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is speculation supported by citations.",
+      "evidence_type": "[\"SPECULATION\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "91689b35-d158-40b5-87b6-a85ee9057743",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C74",
+      "claim": "Gene duplication is a known mechanism that allows cells to maintain robustness to damaging mutations in many eukaryotic organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, gene duplication, where one copy can still perform the required function while the other copy is non-functional, is another known mechanism that allows cells to maintain robustness to damaging mutations in many eukaryotic organisms (Conant and Wagner, 2004; Gu et al., 2003).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "e3b73f06-e7e2-4e74-8db8-02ec6e9017b0",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C75",
+      "claim": "Whole genome duplication has recently been shown as another potential mechanism that tumor cells could use to maintain robustness to deleterious passengers.",
+      "claim_type": "EXPLICIT",
+      "source": "In support of this, whole genome duplication, which is common in cancer, has recently been shown as another potential mechanism that tumor cells could use to maintain robustness to deleterious passengers (L\u00f3pez et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "f047e1e1-bcda-4c44-a315-69328cfcd807",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C76",
+      "claim": "Duplication events are known to be deleterious due to gene dosage effects that cause protein imbalance.",
+      "claim_type": "EXPLICIT",
+      "source": "However, duplication events are also known to be deleterious due to gene dosage effects that cause protein imbalance (Torres et al., 2007), which could further exacerbate protein misfolding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "2f8bd10c-59c0-4906-92ae-e1748bc62e67",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C77",
+      "claim": "The extra demands of proteostasis maintenance present important vulnerabilities in high mutational load cancers that could be exploited.",
+      "claim_type": "EXPLICIT",
+      "source": "Second, the extra demands of proteostasis maintenance present important vulnerabilities in high mutational load cancers that could be exploited.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from the study's findings.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "492681bd-8040-4f80-9d2f-7a41335070b9",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C78",
+      "claim": "The clinical use of chaperone inhibitors for cancer treatment has been explored for over two decades.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical use of chaperone inhibitors for cancer treatment has been explored for over two decades (Neckers and Workman, 2012; Pacey et al., 2006; Kim et al., 2009) but no study, to our knowledge, has compared the efficacy of chaperone inhibitor use in tumors stratified by mutational load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "c5df1256-4ce0-4cec-b4a0-84ab051df638",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C79",
+      "claim": "No study has compared the efficacy of chaperone inhibitor use in tumors stratified by mutational load.",
+      "claim_type": "EXPLICIT",
+      "source": "The clinical use of chaperone inhibitors for cancer treatment has been explored for over two decades (Neckers and Workman, 2012; Pacey et al., 2006; Kim et al., 2009) but no study, to our knowledge, has compared the efficacy of chaperone inhibitor use in tumors stratified by mutational load.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "5a560016-323a-458f-b61b-0da930e35d3b",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C80",
+      "claim": "Proteasome inhibitors are currently only approved for the treatment of multiple myeloma and mantle-cell lymphoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the clinical use of proteasome inhibitors, which are currently only approved for the treatment of multiple myeloma and mantle-cell lymphoma (Manasanch and Orlowski, 2017; Park et al., 2018), has not been directed specifically to high mutational load tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "12e05b97-bcdf-4a3b-a23a-3a2847a5305e",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C81",
+      "claim": "The efficacy of proteasome inhibitors in multiple myeloma patients is linked to the protein misfolding stress response.",
+      "claim_type": "EXPLICIT",
+      "source": "While the efficacy of proteasome inhibitors in multiple myeloma patients is linked to the protein misfolding stress response (Bianchi et al., 2009; Ling et al., 2012), it is currently unknown whether high mutational load tumors are more susceptible to these inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "d0c3e4f9-5220-49ee-855b-1437239daf43",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C82",
+      "claim": "It is currently unknown whether high mutational load tumors are more susceptible to proteasome inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "While the efficacy of proteasome inhibitors in multiple myeloma patients is linked to the protein misfolding stress response (Bianchi et al., 2009; Ling et al., 2012), it is currently unknown whether high mutational load tumors are more susceptible to these inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a statement about the current state of research.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "dc28f7d9-5fc9-4f8b-8418-28ff7d7d96a8",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C83",
+      "claim": "Previous work in yeast has identified strong trade-offs between the adaptive mechanisms that allow for the tolerance of mistranslation and survival under conditions of starvation.",
+      "claim_type": "EXPLICIT",
+      "source": "Previous work in yeast has identified strong trade-offs between the adaptive mechanisms that allow for the tolerance of mistranslation and survival under conditions of starvation (Kalapis et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "124b9ede-fb69-4110-a15c-bcdaa80dd4b2",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C84",
+      "claim": "Cancer and aging are different manifestations of related underlying evolutionary processes.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, our results contribute to an accumulating body of evidence that cancer and aging are different manifestations of related underlying evolutionary processes (Martincorena et al., 2018; Martincorena et al., 2015; Kennedy et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "3c7c50b7-b22a-473a-86f9-349f672dc927",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C85",
+      "claim": "The same forces of mutation and inefficient selection in somatic evolution generate a persistent problem of deleterious mutation accumulation in normal somatic tissues and during tumor growth.",
+      "claim_type": "EXPLICIT",
+      "source": "The same forces of mutation and inefficient selection in somatic evolution generate a persistent problem of deleterious mutation accumulation in normal somatic tissues and during tumor growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting cancer and aging through evolutionary processes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "df6f3a0c-03bf-43b6-8ad1-13becfd4f418",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C86",
+      "claim": "Disruption of proteostasis is a known hallmark of aging in normal tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Disruption of proteostasis is a known hallmark of aging in normal tissues (L\u00f3pez-Ot\u00edn et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by a citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "4ab3d9cf-0177-482e-8302-dd28d765e15e",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C87",
+      "claim": "Many transcriptional responses observed in high mutational load tumors \u2014 such as shifts in regulation of alternative splicing, protein degradation, and protein re-folding \u2014 are also observed in normal aging tissues which contain somatic mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "Many transcriptional responses observed in high mutational load tumors \u2014 such as shifts in regulation of alternative splicing (Adusumalli et al., 2019), protein degradation (L\u00f6w, 2011), and protein re-folding (Soti and Csermely, 2003) \u2014 are also observed in normal aging tissues which contain somatic mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "e48e59cc-a777-4986-9608-28a618005e24",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "claim_id": "C88",
+      "claim": "Aging tissues appear to utilize different strategies to deal with proteostasis disruption \u2014 such as up-regulation of chaperones in the Small HS family and autophagy \u2014 which are not a pre-dominant response observed in high mutational load tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite this, aging tissues appear to utilize different strategies to deal with proteostasis disruption \u2014 such as up-regulation of chaperones in the Small HS family (Charmpilas et al., 2017) and autophagy (Aman et al., 2021) \u2014 which are not a pre-dominant response observed here in high mutational load tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations and comparison with the study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "d87b6884-068e-473d-a0f2-091a672b771d",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the theoretical framework that deleterious passenger mutations accumulate in tumors due to inefficient negative selection caused by lack of recombination, despite these mutations being damaging. This is based on prior work showing that tumors with few passengers exhibit negative selection, while the majority (>95%) with many passengers show inefficient selection, implying most tumors carry a large deleterious mutational load.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C15 collectively establish a well-supported theoretical framework based on established evolutionary principles (C1, C9, C11) and recent empirical findings (C10, C12, C13). The logic connecting lack of recombination to inefficient selection to mutational load accumulation is sound and properly cited. The inference that successful tumors must mitigate this load (C15) follows logically from the established premises.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "6ccbd708-cb88-4cfa-a7bc-765da120445a",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The study analyzed 10,295 tumors from 33 cancer types from TCGA and found high collinearity among different types of point mutations (R>0.9) but weak collinearity with copy number alterations (R<0.05), justifying the focus on protein-coding point mutations as a measure of mutational load.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C19 describe the dataset and correlation analysis that justify the methodological choice to use protein-coding mutations as the mutational load metric. The correlation analysis is clearly presented in Figure 1\u2014figure supplement 1, and the high collinearity among mutation types supports aggregating them while the weak correlation with CNAs justifies excluding them.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "bc587329-9a89-442d-ba72-38e30fafa752",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Using GLMM analysis of 10,295 tumors, high mutational load tumors significantly up-regulate proteostasis machinery including protein degradation (proteasome), protein folding (chaperones), translation (mitochondrial ribosomes), and surprisingly, the spliceosome involved in alternative splicing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3, C21-C23 describe the primary finding from the genome-wide GLMM screen. The statistical approach is appropriate, controlling for tumor purity and cancer type. Gene set enrichment analysis (Figure 1B, 1C) provides strong support for the upregulation of these specific complexes. The finding is robust and well-documented.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "ec3b4e19-1832-4b1e-85be-bee75d2e2fd6",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "High mutational load tumors show increased intron retention-driven mRNA decay, particularly targeting cytoplasmic ribosomal transcripts, suggesting a mechanism to prevent further protein misfolding by selectively degrading transcripts rather than translating them. This trend is robust across different PSI thresholds and alternative splicing events.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 describe the alternative splicing analysis. While C26 is stated as a hypothesis, C28-C32 provide data supporting this mechanism. The analysis appropriately controls for eQTL effects by filtering mutations overlapping splicing events (~1% of events). The robustness analysis (C30) and gene set enrichment showing cytoplasmic ribosomes are targeted (C31) strengthen the conclusion. However, the causal direction (whether increased splicing causes decay or vice versa) is inferential.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "77519628-5d2b-4523-884b-9b53798d4195",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Detailed GLMM analysis reveals specific patterns of proteostasis machinery regulation: chaperones involved in active protein folding/disaggregation (HSP60/70/90/100) are up-regulated while small heat shock proteins are down-regulated; both proteasome subunits (19s and 20s) are up-regulated; mitochondrial but not cytoplasmic ribosomes are up-regulated, consistent with known responses to chronic protein misfolding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C40 provide detailed characterization of proteostasis responses supported by GLMM analysis (Figure 3A). The specificity of responses (e.g., mitochondrial vs cytoplasmic ribosomes, different chaperone families) is well-documented. The interpretation is strengthened by citations to prior work showing similar patterns in other organisms (C38, C39). The consistency between ribosome expression and splicing data (C40) provides internal validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "07c3c5fa-1b76-454b-8777-8ebb263ac3f1",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The observed expression patterns are robust across cancer types (jackknife resampling), consistent within individual cancer types, and not driven by patient age. The combined evidence suggests protein re-folding, disaggregation, degradation, and down-regulation of cytoplasmic translation are mechanisms to mitigate protein misfolding in high mutational load tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C44 describe validation analyses that strengthen the main findings. Jackknife resampling (C41), within-cancer-type analysis (C42), and age stratification (C43) all support the robustness of the associations. The synthesis in C44 is a reasonable inference from the combined expression data, though it remains correlational at this stage.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "b893b30c-075c-456d-ad6b-f39cefa27889",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Expression patterns observed in human tumors replicate in cancer cell lines (CCLE), including both mRNA and protein abundance levels, indicating the responses are cell-autonomous and validating cell lines as appropriate models for causal perturbation experiments.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C48 describe validation in cell lines. The replication of expression patterns in CCLE (C45) using GLM analysis is well-supported by Figure 3. Protein abundance validation (C46, Figure 3\u2014figure supplement 5) strengthens the findings beyond transcriptional changes. The inference that patterns are cell-autonomous (C47) is reasonable given the in vitro replication. The conclusion that cell lines are suitable for perturbation experiments (C48) logically follows.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "65e87ec9-6f4a-4625-b6c3-1833ac7e510b",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "shRNA knockdown experiments establish causal relationships: elevated mutational load decreases cell viability when most chaperone families are disrupted, with HSP100 showing the strongest effect across cancer types; disrupting the 19s regulatory particle of the proteasome (but not 20s core) significantly decreases viability; cytoplasmic ribosome knockdown increases viability while mitochondrial ribosome knockdown decreases viability with increased mutational load.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C53 describe perturbation experiments that establish causality. The shRNA data (Figure 4A) shows specific dependencies consistent with the expression patterns. The specificity of effects (HSP100 vs other chaperones, 19s vs 20s proteasome, mitochondrial vs cytoplasmic ribosomes) strengthens the conclusions. The GLM framework appropriately aggregates effects across genes within families. Jackknife resampling by cancer type confirms robustness.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "e5dc5fcc-f472-41b9-909c-db0e7e33f77c",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Drug sensitivity screening shows that proteasome inhibitors (6/8) and ubiquitin-specific proteasome inhibitors (2/3) significantly decrease viability in high mutational load cell lines, while most HSP90 inhibitors (8/10) show the same trend with fewer reaching significance. This variability likely reflects differences in molecular affinity. Collectively, these results indicate elevated proteostasis machinery expression is causally related to viability maintenance in high mutational load cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C54-C57 describe drug screening validation. The PRISM data (Figure 4B) provides independent validation of the causal relationships established by shRNA. The majority of proteasome inhibitors showing significant effects (C54) is strong evidence. The variability in HSP90 inhibitor efficacy (C55) is acknowledged, and the speculation about molecular affinity (C56) is reasonable. The synthesis (C57) appropriately integrates shRNA and drug data to support causality.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "4cd98c23-7ed9-490d-8eb0-aee63946ccf4",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Broad drug screening reveals that high mutational load cancer cells are not generically vulnerable to all drug classes. Specifically, drugs inhibiting transcription, cytoskeleton organization, protein degradation, chaperones, protein synthesis, and promoting apoptosis are most effective, delineating specific therapeutic vulnerabilities.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C59 describe systematic drug screening analysis. The finding that most drugs do not decrease viability (C58, Figure 5A) is important for establishing specificity. The identification of specific drug categories that are effective (C59, Figure 5B) is supported by appropriate statistical analysis with confidence intervals from random sampling. This provides translational relevance to the findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "6133df5b-c6c2-4788-a26b-c98f2da20259",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The discussion synthesizes findings to propose that protein misfolding from various mutation types (non-synonymous, nonsense, and even synonymous) creates stress that high mutational load tumors mitigate through multiple coordinated mechanisms: up-regulating specific chaperones for refolding/disaggregation, increasing proteasome-mediated degradation, coupling alternative splicing with mRNA decay to prevent translation, and differentially regulating mitochondrial vs cytoplasmic ribosome biogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C60-C71 synthesize the findings into a coherent model. The mechanisms by which different mutation types cause misfolding (C60-C61) are well-supported by citations. The proposed mitigation strategies (C64-C69) are directly supported by the study's data. The speculations about mitochondrial ribosome function (C70-C71) are appropriately qualified and supported by citations. The overall synthesis is reasonable given the evidence, though some aspects remain speculative.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "7eee1087-654c-4a72-920c-9b25e1617c41",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The findings suggest that damaging passengers create second-order indirect selection for compensatory alterations to overcome proteostasis imbalance, which could occur through phenotypic plasticity, epigenetic changes, or genetic mechanisms like compensatory mutations or whole genome duplication, though the latter may exacerbate protein imbalance through dosage effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C72-C76 propose evolutionary implications and potential compensatory mechanisms. While the inference about indirect selection (C72) follows logically from the findings, the specific mechanisms proposed (C73) are speculative and supported only by citations to other work. The discussion of whole genome duplication (C75-C76) presents a paradox (it could help but also harm) that remains unresolved. These ideas require additional experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "a40d2d25-d05b-4cb2-9d01-72b0b2b929d0",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The proteostasis dependencies in high mutational load cancers present therapeutic vulnerabilities. While chaperone and proteasome inhibitors have been explored clinically for decades, no studies have stratified efficacy by mutational load, representing a gap in knowledge and potential opportunity for targeted therapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C77-C82 discuss therapeutic implications. The inference that proteostasis dependencies create vulnerabilities (C77) is well-supported by the perturbation and drug data. The statements about current clinical use (C78, C80, C81) are properly cited. The identification of a knowledge gap (C79, C82) is accurate and highlights the translational relevance of the findings. The mention of evolutionary trade-offs (C83) adds additional context.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "0fd1cdd5-bcbd-4179-af92-b7a1744e9b62",
+      "content_id": "a53d71a7-34e3-4777-a755-eca85a771217",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The results contribute to evidence that cancer and aging are related evolutionary processes, both involving deleterious mutation accumulation and proteostasis disruption. While many transcriptional responses (alternative splicing, protein degradation, refolding) are shared between high mutational load tumors and aging tissues, aging tissues utilize different strategies (Small HS chaperones, autophagy) not predominant in tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C88 connect the findings to aging biology. The parallel between cancer and aging (C84-C85) is well-supported by citations. The shared transcriptional responses (C87) are properly cited. The identification of differences in strategies (C88) is supported by citations and comparison with the study's data showing Small HS downregulation in tumors. This provides broader biological context for the findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "0d3f0c37-7e30-42f8-8f4a-b6fcd55e2c9c",
+      "content_id": "3e177f92-207c-4724-ac5e-badc8807d84c",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "High mutational load tumors upregulate proteostasis machinery including proteasome, chaperones, mitochondrial ribosomes, and spliceosome. Gene set enrichment analysis of ~5000 significantly upregulated genes (FDR < 0.05) identified these pathways as most enriched in response to mutational load across 10,295 TCGA tumors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers acknowledge the finding as important but raise critical concerns about potential confounding. They note that 'systematic differences in expression of some genes from one tumor class to another might generate spurious associations with mutational load' and that 'some of the associations presented could arise through confounding.' Reviewers request within-cancer-type validation to strengthen causal claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "1fef638a-27a6-45af-81e0-645d07475e82",
+      "content_id": "3e177f92-207c-4724-ac5e-badc8807d84c",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "High mutational load tumors show increased intron retention coupled with transcript under-expression, particularly affecting cytoplasmic ribosomes. The trend shows ~10% variation in splicing for 100-fold variation in mutational load and is robust across different PSI thresholds and alternative splicing event types.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers express significant skepticism about this finding. They note the effect is 'weak' and question why 'different events (exon skipping, intron retention, etc) should respond in the same way to ML.' They suggest 'a weak but homogeneous effect like the one shown here might result from some common confounder' and question why 'with increasing intron retention PSI threshold the fraction of under-expressed transcripts would decrease and not increase.'",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a",
+      "content_id": "3e177f92-207c-4724-ac5e-badc8807d84c",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Individual gene-level analysis shows specific chaperone families (HSP60, HSP70, HSP90, HSP100), proteasome components (19S and 20S), and mitochondrial ribosomes are upregulated with mutational load, while small heat shock proteins and cytoplasmic ribosomes are downregulated. These patterns are stable in jackknife resampling, within-cancer-type analyses, and age-stratified analyses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "While reviewers acknowledge 'solid evidence that mutational load is associated with higher expression of genes involved in mitigation of protein misfolding,' they raise concerns about the robustness analyses. Reviewers note that jackknife (leave-one-out) analysis 'would not reveal if the signal was driven by a (small) subset of cancer types' and request true within-cancer-type analyses with 'results for specific genes, rather than broad groups' to justify claims about effects 'across almost all cancer types.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "68e925aa-6dcc-4f33-9615-306900a753d5",
+      "content_id": "3e177f92-207c-4724-ac5e-badc8807d84c",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Expression patterns observed in TCGA tumors replicate in cancer cell lines (CCLE), including both mRNA expression and protein abundance, indicating the responses are cell-autonomous and independent of organismal effects like immune system or microenvironment.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers raise methodological concerns about the CCLE analysis. They note 'you use different model architecture for the TCGA and CCLE analysis' and question whether this was properly validated, asking 'Did you test this? Could you downsample to avoid this?' They emphasize that 'cancer type is likely a strong confounder of ML,' which could affect the interpretation of cell-autonomous effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "4dc79a88-a17b-4b7c-884d-058f65c84914",
+      "content_id": "3e177f92-207c-4724-ac5e-badc8807d84c",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "shRNA knockdown experiments show that disrupting chaperones (especially HSP100), the 19S proteasome regulatory particle, and mitochondrial ribosomes decreases viability in high mutational load cells, while disrupting cytoplasmic ribosomes increases viability. The claim states HSP100 shows effects 'across almost all cancer types.'",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers directly challenge the generalizability claims, stating that to justify claims like 'significant negative relationship between mutational load and cell viability across almost all cancer types, one needs to analyze individual cancer types.' The leave-one-out analysis presented 'would not reveal if the signal was driven by a (small) subset of cancer types.' Reviewers request individual cancer type analyses with specific genes rather than broad groups.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "c77d4980-3b9e-4ea3-b48d-41bc8bbed67f",
+      "content_id": "3e177f92-207c-4724-ac5e-badc8807d84c",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Drug sensitivity screens show that proteasome inhibitors (6/8 significant) and some HSP90 inhibitors decrease viability in high mutational load cell lines, indicating elevated proteostasis machinery expression is causally related to viability maintenance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise specific concerns about the drug screening results. The editor notes 'overall the authors present solid evidence' for the association between mutational load and proteostasis upregulation, and the drug data supports the causal interpretation of this relationship.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "623ceaa5-58dc-4aef-8f8d-db73c7c922b1",
+      "content_id": "3e177f92-207c-4724-ac5e-badc8807d84c",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Broad drug screening shows most drugs do not decrease viability with mutational load, but specific categories (transcription inhibitors, cytoskeleton organization inhibitors, protein degradation inhibitors, chaperone inhibitors, protein synthesis inhibitors, and pro-apoptosis drugs) are most effective against high mutational load cells.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not raise concerns about these drug category findings. The specificity of the effect (most drugs showing no effect while specific categories show strong effects) addresses potential concerns about generic drug sensitivity.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "cb2aaaef-8d68-4074-a005-de6342254c99",
+      "content_id": "3e177f92-207c-4724-ac5e-badc8807d84c",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Correlation analysis shows high collinearity among synonymous, non-synonymous, and nonsense point mutations (R>0.9) but weak collinearity between point mutations and copy number alterations (R<0.05) in TCGA tumors.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this descriptive finding about mutation type correlations. This serves as methodological justification for using total mutational load as the primary predictor variable.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "42179e57-3ce3-4a46-aba3-7ab3d3ce714c",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "fcd38656-7138-4cfb-a363-629ed22fed29",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "0aa7d555-b9f0-4d82-b03d-ab305e43ea44",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "7cdf11dc-8663-4fb5-8325-29870dbc18c3",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "e10eb630-338a-4693-879f-3efd66cb2886",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "1f772205-071c-42bc-bec7-350888610b06",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "056a3fc7-a297-4d18-9315-95a3e0942173",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "26b4bc49-ad65-4157-95ff-a30e8e3157a0",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "a43449fa-d393-4ec4-9726-8f91fd332f92",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "c536f1ee-9876-4ad3-8acd-bfe37d80ea1c",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "705a9633-d201-44bb-b4a6-85d19ef15528",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "dc57f7e9-4ca9-4a30-9567-0563b837071a",
+      "result_id": "d87b6884-068e-473d-a0f2-091a672b771d"
+    },
+    {
+      "claim_id": "f622339a-97bc-48d8-a749-3b65bc1a17e3",
+      "result_id": "6ccbd708-cb88-4cfa-a7bc-765da120445a"
+    },
+    {
+      "claim_id": "3c975f33-e146-4e72-a872-8789ce54bc02",
+      "result_id": "6ccbd708-cb88-4cfa-a7bc-765da120445a"
+    },
+    {
+      "claim_id": "66f21a0f-94b6-411a-9875-fa0d704904e5",
+      "result_id": "6ccbd708-cb88-4cfa-a7bc-765da120445a"
+    },
+    {
+      "claim_id": "dbc0c06d-d6c6-4aea-bbaa-8da31f9e2e73",
+      "result_id": "bc587329-9a89-442d-ba72-38e30fafa752"
+    },
+    {
+      "claim_id": "f1d45521-d248-4168-aefe-cdb9d9ec9659",
+      "result_id": "bc587329-9a89-442d-ba72-38e30fafa752"
+    },
+    {
+      "claim_id": "cd9b600e-deba-4a07-90c8-39ebc92dc15b",
+      "result_id": "bc587329-9a89-442d-ba72-38e30fafa752"
+    },
+    {
+      "claim_id": "e3681dc8-d94f-47fd-80ca-857ddf00f58f",
+      "result_id": "bc587329-9a89-442d-ba72-38e30fafa752"
+    },
+    {
+      "claim_id": "9f21de12-81e2-491f-8b9b-68bbd1c5f075",
+      "result_id": "ec3b4e19-1832-4b1e-85be-bee75d2e2fd6"
+    },
+    {
+      "claim_id": "788239c5-4c35-4f20-acb3-59d5060976e8",
+      "result_id": "ec3b4e19-1832-4b1e-85be-bee75d2e2fd6"
+    },
+    {
+      "claim_id": "44a99da8-2d8b-47ac-ba5b-efefc8a8bf79",
+      "result_id": "ec3b4e19-1832-4b1e-85be-bee75d2e2fd6"
+    },
+    {
+      "claim_id": "03888bfa-c1f5-436c-b10a-b0fc8765a29a",
+      "result_id": "ec3b4e19-1832-4b1e-85be-bee75d2e2fd6"
+    },
+    {
+      "claim_id": "404a8cf0-b2b7-4d77-9847-cc1ed359701f",
+      "result_id": "ec3b4e19-1832-4b1e-85be-bee75d2e2fd6"
+    },
+    {
+      "claim_id": "f2a1c95d-2eba-43fa-90be-246c012227f7",
+      "result_id": "ec3b4e19-1832-4b1e-85be-bee75d2e2fd6"
+    },
+    {
+      "claim_id": "b5aeaeaf-270f-48a0-9908-9fe29dbdcd6c",
+      "result_id": "ec3b4e19-1832-4b1e-85be-bee75d2e2fd6"
+    },
+    {
+      "claim_id": "9021961a-d837-4ad7-b7c2-a4ed43afdd0e",
+      "result_id": "77519628-5d2b-4523-884b-9b53798d4195"
+    },
+    {
+      "claim_id": "d422df10-9ddd-473b-84d5-05ca74797702",
+      "result_id": "77519628-5d2b-4523-884b-9b53798d4195"
+    },
+    {
+      "claim_id": "3a1b6e02-5b53-4ae0-9178-94795ac7bbe6",
+      "result_id": "77519628-5d2b-4523-884b-9b53798d4195"
+    },
+    {
+      "claim_id": "a1c92d6b-a831-474c-aaa3-e0a0d3d2324a",
+      "result_id": "77519628-5d2b-4523-884b-9b53798d4195"
+    },
+    {
+      "claim_id": "824dc337-3562-4a1e-8199-5d5955e505ea",
+      "result_id": "77519628-5d2b-4523-884b-9b53798d4195"
+    },
+    {
+      "claim_id": "45ac6b23-2f75-4330-93bf-8cac4fbfabd4",
+      "result_id": "77519628-5d2b-4523-884b-9b53798d4195"
+    },
+    {
+      "claim_id": "695853f0-ed4c-42e2-a456-9c9118e9e196",
+      "result_id": "77519628-5d2b-4523-884b-9b53798d4195"
+    },
+    {
+      "claim_id": "24aab3b4-c476-43ed-b620-c6611a5d131d",
+      "result_id": "77519628-5d2b-4523-884b-9b53798d4195"
+    },
+    {
+      "claim_id": "6d36e8fd-ff3c-4ea5-9972-92f71d757011",
+      "result_id": "07c3c5fa-1b76-454b-8777-8ebb263ac3f1"
+    },
+    {
+      "claim_id": "6994a29c-2f08-4859-be17-53827803e08f",
+      "result_id": "07c3c5fa-1b76-454b-8777-8ebb263ac3f1"
+    },
+    {
+      "claim_id": "5d7dfb85-a792-4997-a533-9d3c7ad6cd8d",
+      "result_id": "07c3c5fa-1b76-454b-8777-8ebb263ac3f1"
+    },
+    {
+      "claim_id": "4a3be411-5c09-4ec1-a836-b6cc042fc71d",
+      "result_id": "07c3c5fa-1b76-454b-8777-8ebb263ac3f1"
+    },
+    {
+      "claim_id": "92b04078-da37-46de-8efe-cd0c40c6a43e",
+      "result_id": "b893b30c-075c-456d-ad6b-f39cefa27889"
+    },
+    {
+      "claim_id": "91ccccac-922e-48eb-bd3f-36a2b5b095be",
+      "result_id": "b893b30c-075c-456d-ad6b-f39cefa27889"
+    },
+    {
+      "claim_id": "a639a4da-5c2f-4195-880c-5d1915df90d8",
+      "result_id": "b893b30c-075c-456d-ad6b-f39cefa27889"
+    },
+    {
+      "claim_id": "93c5b773-535b-472c-9443-29be2afb4312",
+      "result_id": "b893b30c-075c-456d-ad6b-f39cefa27889"
+    },
+    {
+      "claim_id": "8afa09f2-5c27-4e28-bc86-75d8170cde36",
+      "result_id": "65e87ec9-6f4a-4625-b6c3-1833ac7e510b"
+    },
+    {
+      "claim_id": "67fb3ed7-9d70-40ea-bc60-4afca61c3f5f",
+      "result_id": "65e87ec9-6f4a-4625-b6c3-1833ac7e510b"
+    },
+    {
+      "claim_id": "22f9bcba-69ba-4d3f-8c24-f6838c89d082",
+      "result_id": "65e87ec9-6f4a-4625-b6c3-1833ac7e510b"
+    },
+    {
+      "claim_id": "aa7f0e26-33a0-4656-99a4-62ce6f087760",
+      "result_id": "65e87ec9-6f4a-4625-b6c3-1833ac7e510b"
+    },
+    {
+      "claim_id": "47412e5f-5d1b-46a7-87ff-a4e3c48660b3",
+      "result_id": "65e87ec9-6f4a-4625-b6c3-1833ac7e510b"
+    },
+    {
+      "claim_id": "714a3e8d-2f03-4004-b2c4-ef517786f61a",
+      "result_id": "e5dc5fcc-f472-41b9-909c-db0e7e33f77c"
+    },
+    {
+      "claim_id": "0bc339c7-569a-4457-99b8-1a4bf1f7e5cb",
+      "result_id": "e5dc5fcc-f472-41b9-909c-db0e7e33f77c"
+    },
+    {
+      "claim_id": "0f9f3429-c596-4186-961d-ed4af13c0b03",
+      "result_id": "e5dc5fcc-f472-41b9-909c-db0e7e33f77c"
+    },
+    {
+      "claim_id": "a41796ae-058d-49d4-849e-692aa833e590",
+      "result_id": "e5dc5fcc-f472-41b9-909c-db0e7e33f77c"
+    },
+    {
+      "claim_id": "38f4862c-31d3-46a8-ae74-2f287ed41e1a",
+      "result_id": "4cd98c23-7ed9-490d-8eb0-aee63946ccf4"
+    },
+    {
+      "claim_id": "849e7b17-d240-472a-bfd9-0481c95f362d",
+      "result_id": "4cd98c23-7ed9-490d-8eb0-aee63946ccf4"
+    },
+    {
+      "claim_id": "ac4d13fd-294d-48af-b795-02c03c60eda7",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "5285bb0b-1b44-47f1-9ca8-a3a1494d481f",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "dfe5df51-1de8-4ad4-a44f-2d31a3e2561c",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "5bd1bfd7-b435-4813-a464-023ee860021e",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "7da9040e-c653-4832-937f-af34e79c3455",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "37eec734-d7f1-4a5e-a285-8323050d9a5f",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "c703b81e-09b3-45c9-8032-ab54adb1b752",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "a8b4add4-525c-49f0-b589-729fffa168a2",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "624b68a3-b1a7-4d72-a531-0d79af211ecb",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "6a3db898-5c17-48e2-9ef3-ae4ef98c07c3",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "b019e458-0366-41b9-9694-5c67484185b0",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "5fce4be5-f2dc-4c4b-8a93-f9050deef4b8",
+      "result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259"
+    },
+    {
+      "claim_id": "da56c710-16ef-4be2-85ad-f7b78ba3b48d",
+      "result_id": "7eee1087-654c-4a72-920c-9b25e1617c41"
+    },
+    {
+      "claim_id": "4626c0fb-d8e0-4bc8-b7a9-65f8d3d4a394",
+      "result_id": "7eee1087-654c-4a72-920c-9b25e1617c41"
+    },
+    {
+      "claim_id": "91689b35-d158-40b5-87b6-a85ee9057743",
+      "result_id": "7eee1087-654c-4a72-920c-9b25e1617c41"
+    },
+    {
+      "claim_id": "e3b73f06-e7e2-4e74-8db8-02ec6e9017b0",
+      "result_id": "7eee1087-654c-4a72-920c-9b25e1617c41"
+    },
+    {
+      "claim_id": "f047e1e1-bcda-4c44-a315-69328cfcd807",
+      "result_id": "7eee1087-654c-4a72-920c-9b25e1617c41"
+    },
+    {
+      "claim_id": "2f8bd10c-59c0-4906-92ae-e1748bc62e67",
+      "result_id": "a40d2d25-d05b-4cb2-9d01-72b0b2b929d0"
+    },
+    {
+      "claim_id": "492681bd-8040-4f80-9d2f-7a41335070b9",
+      "result_id": "a40d2d25-d05b-4cb2-9d01-72b0b2b929d0"
+    },
+    {
+      "claim_id": "c5df1256-4ce0-4cec-b4a0-84ab051df638",
+      "result_id": "a40d2d25-d05b-4cb2-9d01-72b0b2b929d0"
+    },
+    {
+      "claim_id": "5a560016-323a-458f-b61b-0da930e35d3b",
+      "result_id": "a40d2d25-d05b-4cb2-9d01-72b0b2b929d0"
+    },
+    {
+      "claim_id": "12e05b97-bcdf-4a3b-a23a-3a2847a5305e",
+      "result_id": "a40d2d25-d05b-4cb2-9d01-72b0b2b929d0"
+    },
+    {
+      "claim_id": "d0c3e4f9-5220-49ee-855b-1437239daf43",
+      "result_id": "a40d2d25-d05b-4cb2-9d01-72b0b2b929d0"
+    },
+    {
+      "claim_id": "dc28f7d9-5fc9-4f8b-8418-28ff7d7d96a8",
+      "result_id": "a40d2d25-d05b-4cb2-9d01-72b0b2b929d0"
+    },
+    {
+      "claim_id": "124b9ede-fb69-4110-a15c-bcdaa80dd4b2",
+      "result_id": "0fd1cdd5-bcbd-4179-af92-b7a1744e9b62"
+    },
+    {
+      "claim_id": "3c7c50b7-b22a-473a-86f9-349f672dc927",
+      "result_id": "0fd1cdd5-bcbd-4179-af92-b7a1744e9b62"
+    },
+    {
+      "claim_id": "df6f3a0c-03bf-43b6-8ad1-13becfd4f418",
+      "result_id": "0fd1cdd5-bcbd-4179-af92-b7a1744e9b62"
+    },
+    {
+      "claim_id": "4ab3d9cf-0177-482e-8302-dd28d765e15e",
+      "result_id": "0fd1cdd5-bcbd-4179-af92-b7a1744e9b62"
+    },
+    {
+      "claim_id": "e48e59cc-a777-4986-9608-28a618005e24",
+      "result_id": "0fd1cdd5-bcbd-4179-af92-b7a1744e9b62"
+    },
+    {
+      "claim_id": "dbc0c06d-d6c6-4aea-bbaa-8da31f9e2e73",
+      "result_id": "0d3f0c37-7e30-42f8-8f4a-b6fcd55e2c9c"
+    },
+    {
+      "claim_id": "f1d45521-d248-4168-aefe-cdb9d9ec9659",
+      "result_id": "0d3f0c37-7e30-42f8-8f4a-b6fcd55e2c9c"
+    },
+    {
+      "claim_id": "cd9b600e-deba-4a07-90c8-39ebc92dc15b",
+      "result_id": "0d3f0c37-7e30-42f8-8f4a-b6fcd55e2c9c"
+    },
+    {
+      "claim_id": "e3681dc8-d94f-47fd-80ca-857ddf00f58f",
+      "result_id": "0d3f0c37-7e30-42f8-8f4a-b6fcd55e2c9c"
+    },
+    {
+      "claim_id": "44a99da8-2d8b-47ac-ba5b-efefc8a8bf79",
+      "result_id": "1fef638a-27a6-45af-81e0-645d07475e82"
+    },
+    {
+      "claim_id": "03888bfa-c1f5-436c-b10a-b0fc8765a29a",
+      "result_id": "1fef638a-27a6-45af-81e0-645d07475e82"
+    },
+    {
+      "claim_id": "404a8cf0-b2b7-4d77-9847-cc1ed359701f",
+      "result_id": "1fef638a-27a6-45af-81e0-645d07475e82"
+    },
+    {
+      "claim_id": "f2a1c95d-2eba-43fa-90be-246c012227f7",
+      "result_id": "1fef638a-27a6-45af-81e0-645d07475e82"
+    },
+    {
+      "claim_id": "b5aeaeaf-270f-48a0-9908-9fe29dbdcd6c",
+      "result_id": "1fef638a-27a6-45af-81e0-645d07475e82"
+    },
+    {
+      "claim_id": "9021961a-d837-4ad7-b7c2-a4ed43afdd0e",
+      "result_id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a"
+    },
+    {
+      "claim_id": "d422df10-9ddd-473b-84d5-05ca74797702",
+      "result_id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a"
+    },
+    {
+      "claim_id": "a1c92d6b-a831-474c-aaa3-e0a0d3d2324a",
+      "result_id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a"
+    },
+    {
+      "claim_id": "824dc337-3562-4a1e-8199-5d5955e505ea",
+      "result_id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a"
+    },
+    {
+      "claim_id": "6d36e8fd-ff3c-4ea5-9972-92f71d757011",
+      "result_id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a"
+    },
+    {
+      "claim_id": "6994a29c-2f08-4859-be17-53827803e08f",
+      "result_id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a"
+    },
+    {
+      "claim_id": "5d7dfb85-a792-4997-a533-9d3c7ad6cd8d",
+      "result_id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a"
+    },
+    {
+      "claim_id": "92b04078-da37-46de-8efe-cd0c40c6a43e",
+      "result_id": "68e925aa-6dcc-4f33-9615-306900a753d5"
+    },
+    {
+      "claim_id": "91ccccac-922e-48eb-bd3f-36a2b5b095be",
+      "result_id": "68e925aa-6dcc-4f33-9615-306900a753d5"
+    },
+    {
+      "claim_id": "a639a4da-5c2f-4195-880c-5d1915df90d8",
+      "result_id": "68e925aa-6dcc-4f33-9615-306900a753d5"
+    },
+    {
+      "claim_id": "93c5b773-535b-472c-9443-29be2afb4312",
+      "result_id": "68e925aa-6dcc-4f33-9615-306900a753d5"
+    },
+    {
+      "claim_id": "8afa09f2-5c27-4e28-bc86-75d8170cde36",
+      "result_id": "4dc79a88-a17b-4b7c-884d-058f65c84914"
+    },
+    {
+      "claim_id": "67fb3ed7-9d70-40ea-bc60-4afca61c3f5f",
+      "result_id": "4dc79a88-a17b-4b7c-884d-058f65c84914"
+    },
+    {
+      "claim_id": "22f9bcba-69ba-4d3f-8c24-f6838c89d082",
+      "result_id": "4dc79a88-a17b-4b7c-884d-058f65c84914"
+    },
+    {
+      "claim_id": "aa7f0e26-33a0-4656-99a4-62ce6f087760",
+      "result_id": "4dc79a88-a17b-4b7c-884d-058f65c84914"
+    },
+    {
+      "claim_id": "47412e5f-5d1b-46a7-87ff-a4e3c48660b3",
+      "result_id": "4dc79a88-a17b-4b7c-884d-058f65c84914"
+    },
+    {
+      "claim_id": "714a3e8d-2f03-4004-b2c4-ef517786f61a",
+      "result_id": "c77d4980-3b9e-4ea3-b48d-41bc8bbed67f"
+    },
+    {
+      "claim_id": "0bc339c7-569a-4457-99b8-1a4bf1f7e5cb",
+      "result_id": "c77d4980-3b9e-4ea3-b48d-41bc8bbed67f"
+    },
+    {
+      "claim_id": "a41796ae-058d-49d4-849e-692aa833e590",
+      "result_id": "c77d4980-3b9e-4ea3-b48d-41bc8bbed67f"
+    },
+    {
+      "claim_id": "38f4862c-31d3-46a8-ae74-2f287ed41e1a",
+      "result_id": "623ceaa5-58dc-4aef-8f8d-db73c7c922b1"
+    },
+    {
+      "claim_id": "849e7b17-d240-472a-bfd9-0481c95f362d",
+      "result_id": "623ceaa5-58dc-4aef-8f8d-db73c7c922b1"
+    },
+    {
+      "claim_id": "3c975f33-e146-4e72-a872-8789ce54bc02",
+      "result_id": "cb2aaaef-8d68-4074-a005-de6342254c99"
+    },
+    {
+      "claim_id": "66f21a0f-94b6-411a-9875-fa0d704904e5",
+      "result_id": "cb2aaaef-8d68-4074-a005-de6342254c99"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "bc7788cf-e849-4c44-ad40-5640717167d9",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "bc587329-9a89-442d-ba72-38e30fafa752",
+      "peer_result_id": "0d3f0c37-7e30-42f8-8f4a-b6fcd55e2c9c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate the primary genome-wide GLMM finding (C3, C21-C23). OpenEval rates as SUPPORTED, finding the statistical approach appropriate and gene set enrichment robust. Peer reviewers rate as UNCERTAIN, acknowledging importance but raising critical concerns about potential confounding from systematic expression differences between tumor classes and requesting within-cancer-type validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "b871ef36-72a7-4f36-b08d-8f0e21e58855",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "b893b30c-075c-456d-ad6b-f39cefa27889",
+      "peer_result_id": "68e925aa-6dcc-4f33-9615-306900a753d5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate cell line validation in CCLE (C45-C48). OpenEval rates as SUPPORTED, finding replication of expression patterns and protein abundance validation strengthen findings, with cell-autonomous inference reasonable. Peer reviewers rate as UNCERTAIN, raising methodological concerns about different model architectures between TCGA and CCLE analyses and questioning whether cancer type confounding was properly addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "7cbaffce-4665-4b9e-ba15-a04034c94e14",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "65e87ec9-6f4a-4625-b6c3-1833ac7e510b",
+      "peer_result_id": "4dc79a88-a17b-4b7c-884d-058f65c84914",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate shRNA perturbation experiments (C49-C53). OpenEval rates as SUPPORTED, finding the data establishes causality with appropriate specificity and robustness via jackknife resampling. Peer reviewers rate as UNCERTAIN, directly challenging generalizability claims and stating that leave-one-out analysis would not reveal if signal was driven by a small subset of cancer types, requesting individual cancer type analyses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "f417cb91-ac8c-4a2d-bcc4-83293b0c77a6",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "4cd98c23-7ed9-490d-8eb0-aee63946ccf4",
+      "peer_result_id": "623ceaa5-58dc-4aef-8f8d-db73c7c922b1",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate systematic drug screening (C58-C59). OpenEval rates as SUPPORTED, finding that most drugs showing no effect establishes specificity while identification of effective drug categories provides translational relevance. Peer reviewers rate as SUPPORTED with no specific concerns raised about these findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "5ce13d37-a1bd-4e80-b12a-1bdfe0fbd746",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "e5dc5fcc-f472-41b9-909c-db0e7e33f77c",
+      "peer_result_id": "c77d4980-3b9e-4ea3-b48d-41bc8bbed67f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate drug screening validation (C54-C57). OpenEval rates as SUPPORTED, finding PRISM data provides independent validation with strong evidence from proteasome inhibitors. Peer reviewers rate as SUPPORTED, with editor noting solid evidence for the association and drug data supporting causal interpretation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "02e5c82f-a583-40ff-b06b-072051e2fd32",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "ec3b4e19-1832-4b1e-85be-bee75d2e2fd6",
+      "peer_result_id": "1fef638a-27a6-45af-81e0-645d07475e82",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate alternative splicing analysis (C28-C32). OpenEval rates as SUPPORTED, finding appropriate controls for eQTL effects and robustness analysis strengthens conclusions, though causal direction is inferential. Peer reviewers rate as UNCERTAIN, expressing significant skepticism about the weak effect and questioning why different splicing events should respond uniformly, suggesting potential common confounder.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "7216d49d-ac59-425f-93ea-fbd339d24ccc",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "6ccbd708-cb88-4cfa-a7bc-765da120445a",
+      "peer_result_id": "cb2aaaef-8d68-4074-a005-de6342254c99",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate mutation type correlation analysis (C17-C19). OpenEval rates as SUPPORTED, finding correlation analysis clearly presented and justifying methodological choice to aggregate protein-coding mutations. Peer reviewers rate as SUPPORTED, not challenging this descriptive finding that serves as methodological justification.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "a82fa1e2-5a4d-4396-8dcb-e63497e980f1",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "77519628-5d2b-4523-884b-9b53798d4195",
+      "peer_result_id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluate proteostasis response characterization (C33-C40) and robustness analyses (C41-C43). OpenEval rates as SUPPORTED for both, finding detailed characterization well-documented and validation analyses strengthen findings. Peer reviewers rate as UNCERTAIN, acknowledging solid evidence but raising concerns that jackknife analysis would not reveal subset-driven signals and requesting true within-cancer-type analyses with specific genes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "f88ed02a-c945-4f62-8318-cfdb04c44364",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "07c3c5fa-1b76-454b-8777-8ebb263ac3f1",
+      "peer_result_id": "ff008f2f-11c0-47ee-8bbc-d0592fd71d8a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval evaluates validation analyses (C41-C44) as SUPPORTED, finding jackknife resampling, within-cancer-type analysis, and age stratification support robustness. Peer reviewers evaluate overlapping robustness claims (C41-C43) as UNCERTAIN, noting jackknife would not reveal if signal was driven by small subset of cancer types and requesting more granular within-cancer-type analyses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "186ec8b2-4e89-49ab-971b-4272403df98c",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "d87b6884-068e-473d-a0f2-091a672b771d",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates the theoretical framework (C1-C15) as SUPPORTED, finding evolutionary principles and empirical findings establish sound logic connecting lack of recombination to mutational load accumulation. No corresponding peer review evaluation found for these foundational theoretical claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "9412fc1d-9091-4e10-9a3d-8ecb854acbe8",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "6133df5b-c6c2-4788-a26b-c98f2da20259",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates the synthesized mechanistic model (C60-C71) as SUPPORTED, finding mechanisms well-supported by citations and mitigation strategies directly supported by study data, though some aspects remain speculative. No corresponding peer review evaluation found for this synthesis section.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "078063cf-4d64-41c3-90b8-b290c70d1819",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "7eee1087-654c-4a72-920c-9b25e1617c41",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates evolutionary implications and compensatory mechanisms (C72-C76) as UNCERTAIN, finding indirect selection inference logical but specific mechanisms speculative and whole genome duplication paradox unresolved. No corresponding peer review evaluation found for these evolutionary speculation claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "4a921a95-c48a-4e8d-a611-011c0a2d507c",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "a40d2d25-d05b-4cb2-9d01-72b0b2b929d0",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates therapeutic implications (C77-C83) as SUPPORTED, finding inference about proteostasis vulnerabilities well-supported by perturbation and drug data with proper citations for clinical use. No corresponding peer review evaluation found for these therapeutic discussion claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    },
+    {
+      "id": "e08e5f77-15b5-4abf-b866-62201720dafe",
+      "submission_id": "c159b185-3a99-4f0e-b92a-15b01c3f9282",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "0fd1cdd5-bcbd-4179-af92-b7a1744e9b62",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval rates connections to aging biology (C84-C88) as SUPPORTED, finding parallels well-supported by citations and identification of strategic differences properly documented. No corresponding peer review evaluation found for these aging biology connections.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:46:09.936426Z"
+    }
+  ]
+}

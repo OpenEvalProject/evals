@@ -1,0 +1,598 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C29",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The tgt gene is required for optimal growth of V. cholerae in sub-MIC tobramycin. Deletion of tgt confers a strong growth defect in sub-MIC tobramycin, which is rescued by tgt complementation. The \u0394tgt strain shows reduced tolerance to lethal tobramycin concentrations but no impact on tolerance to ciprofloxacin or carbenicillin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C29, C47-C50 are supported by competition experiments (Figure 1A-B) and survival assays (Figure 1C-F) showing specific growth defects and reduced tolerance of \u0394tgt in tobramycin but not other antibiotics. The complementation experiment provides strong evidence for the specific role of tgt.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "The growth defect of \u0394tgt in tobramycin is not due to increased aminoglycoside entry or changes in proton-motive force.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are supported by PMF measurements and neomycin-Cy5 uptake assays (Figure 1G-H) showing no differences between WT and \u0394tgt, ruling out these mechanisms as explanations for the tobramycin sensitivity phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Overexpression of tRNATyrGUA, but not tRNATyrAUA, rescues the \u0394tgt growth defect in sub-MIC tobramycin. The absence of Q34 does not affect endogenous tRNA-GUN levels, and changes in Tyr codon decoding are primarily responsible for the tobramycin susceptibility phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 are supported by qRT-PCR data (Figure 1\u2014figure supplement 1A) showing unchanged tRNA levels and competition experiments (Figure 1I) demonstrating specific rescue by tRNATyrGUA overexpression. The lack of rescue by other tRNAs supports the conclusion about Tyr codon decoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Tgt is the enzyme that modifies guanine to queuosine at position 34 in four tRNAs with GUN anticodons (tRNAAsp, tRNAAsn, tRNATyr, tRNAHis). These tRNAs decode two synonymous codons each, differing in the third position.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C30-C32 represent established knowledge about Tgt function and tRNA wobble base pairing, supported by citations and genomic analysis. This provides essential background for interpreting the experimental results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C40",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Q34 modification impacts the efficiency of decoding at tyrosine TAT and TAC codons. The absence of Q34 leads to increased amino acid incorporation at Tyr TAT codons but does not significantly affect Asp or Asn codons. Q34 strongly impacts Tyr codon decoding and to a lesser extent His codon decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C40, C60-C66 are supported by GFP reporter experiments with codon stretches (Figure 2A-E) showing differential effects on different codons. The data clearly demonstrate the specific impact on tyrosine codon decoding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Overexpression of tRNATyrGUA facilitates TAC decoding and rescues \u0394tgt in tobramycin, suggesting that issues with TAC codon decoding contribute to the fitness defect. Overexpression of tRNATyrAUA increases TAT decoding in WT but not in \u0394tgt, and unexpectedly also increases TAC decoding in WT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C72 are supported by GFP reporter data with tRNA overexpression (Figure 1\u2014figure supplement 1C) and rescue experiments (Figure 1I). The unexpected TAC decoding increase with tRNATyrAUA overexpression is acknowledged as speculation (C72).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "\u03b2-lactamase reporters demonstrate that the Tyr103 TAT version is translated more efficiently than the TAC version in stressed \u0394tgt strain. The GAC version at position 129 does not produce functional \u03b2-lactamase in \u0394tgt, suggesting increased mistranslation or inefficient decoding of GAC by tRNAAsp in the absence of Q.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C79 are supported by growth data with \u03b2-lactamase reporters (Figure 3A-B) showing differential translation efficiency based on codon usage. The \u03b2-lactamase system provides a biologically relevant validation of the GFP reporter findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Q34 modification is involved in translation fidelity during antibiotic stress. \u0394tgt shows increased readthrough at stop codons UAA and UAG, and non-modified tRNATyr mistakenly decodes multiple codons in the presence of tobramycin. The absence of Q34 increases misdecoding by tRNATyr at Asp codons but decreases misdecoding by tRNAAsp at Tyr UAU, demonstrating that effects can differ on different tRNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C86 are supported by stop codon readthrough data (Figure 3\u2014figure supplement 1), GFP reporter data with near-cognate codons, and \u03b2-lactamase tolerance tests (Figure 3D). The data demonstrate both increased mistranslation and tRNA-specific effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C4",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92"
+    ],
+    "result": "Proteomics analysis reveals that RsxA is 13-fold more abundant in \u0394tgt compared to WT in tobramycin. RsxA has 83% TAT codon usage (vs 53% genome average). Loss of Q34 results in generally decreased detection of many proteins but increases in 96 proteins. SodA and AcrA (SoxR regulon members) are decreased in \u0394tgt.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C87-C89, C91-C92 are supported by proteomics data (Figure 4A-B) and bioinformatic analysis of codon usage. The identification of RsxA as a key differentially expressed protein with TAT bias is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Proteomics data alone cannot predict codon decoding efficiencies in \u0394tgt. However, ribosome profiling (Ribo-seq) analysis determined 159 transcripts with increased and 197 with decreased translation in \u0394tgt. TAT codon usage was increased in transcripts with increased translation efficiency and decreased in transcripts with decreased translation efficiency. No difference was detected for AAT and CAT codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C99 are supported by proteomics and ribosome profiling data (Figure 4D-G). The acknowledgment that proteomics alone is insufficient (C93-C94) and the use of Ribo-seq to address this limitation demonstrates appropriate scientific reasoning.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C41",
+      "C42",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "RsxA is upregulated in \u0394tgt at the translational level, not transcriptional level. RsxA displays a codon bias toward TAT (83% vs 53% genome average), and proteins with TAT codon bias are more efficiently translated in the absence of Q modification. This is dependent on sequence context. RsxA prevents activation of the SoxR oxidative stress regulon, and its overabundance leads to decreased expression of SoxR regulon genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C41-C42, C105-C116 are supported by multiple lines of evidence: digital RT-PCR (Figure 5A), transcriptional and translational GFP fusions (Figure 5B-C), flow cytometry (Figure 5\u2014figure supplement 1), and sequence context experiments (Figure 5\u2014figure supplement 1G). The data consistently demonstrate translational regulation of RsxA.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "rsxA is essential in V. cholerae and cannot be deleted. Overexpression of rsxA in WT strongly reduces growth in tobramycin, while overexpression of tgt restores growth of \u0394tgt. Increased rsxA levels are toxic during growth in sub-MIC tobramycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C120 are supported by TN-seq data (cited), growth curve experiments (Figure 5D), and competition experiments. The toxicity of increased RsxA levels provides a mechanistic link between tgt deletion and tobramycin sensitivity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Unlike V. cholerae, rsxA is not essential in E. coli and does not bear a TAT bias, though it has the same function. Differences exist between E. coli and V. cholerae regarding oxidative stress and respiration processes. In E. coli, inactivation of rsxA in \u0394tgt restores fitness in tobramycin, and overproduction of RsxA decreases growth in tobramycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C129 are supported by bioinformatic analysis, competition experiments in E. coli (Figure 5\u2014figure supplement 2B), and citations to previous work. The comparative analysis between species strengthens the mechanistic understanding while acknowledging species-specific differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Sub-MIC tobramycin and the stringent response mildly increase tgt transcript levels, while CRP represses tgt expression. Sub-MIC tobramycin induces the stringent response in both WT and \u0394tgt. Tobramycin may induce tgt through stringent response activation or through an independent pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C134, C139-C142 are supported by digital RT-PCR data (Figure 6A) and stringent response reporter data (Figure 6B). The speculation about mechanisms (C141-C142) is appropriately qualified and based on observed correlations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Q34 modification levels are dynamic and correlate with tgt expression. There is a 1.6-fold increase in Q34 levels in \u0394crp. Q34 is present in V. cholerae tRNAs Asp, His, and Asn GTT2. Q34 content for tRNAHis and tRNAAsn is increased in \u0394crp, while tRNAAsp Q34 level remains constant. Sub-MIC tobramycin increases Q34 in tRNATyr, though this effect is variable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C153 are supported by mass spectrometry (Figure 6C), deep sequencing (Figure 6\u2014figure supplement 1), and APB northern blot data (Figure 6D). The acknowledgment of variability (C152) and technical limitations (C149) demonstrates appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C8",
+      "C45",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "DNA repair genes are among candidate genes subject to Q34-dependent translational regulation. GO enrichment analysis highlights DNA repair with p=2.28\u00d710\u207b\u00b2 for TAT-biased genes. Five DNA repair genes (recO, recR, recA, ruvA, ruvB) are TAT-biased in V. cholerae, while LexA is TAC-biased. V. cholerae \u0394tgt is 4-9 times more resistant to UV irradiation than WT, consistent with increased DNA repair efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C45, C154-C160 are supported by GO enrichment analysis (Figure 7\u2014figure supplement 1C), codon usage analysis (Figure 7A), ribosome profiling data, and UV survival experiments (Figure 7B). The in silico prediction validated by phenotypic testing demonstrates the predictive power of the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166"
+    ],
+    "result": "DNA repair genes in E. coli show 51% TAT bias (expected for random genes) with TAC bias for recOR and recA, and TAT bias for lexA\u2014the exact opposite of V. cholerae. E. coli \u0394tgt did not show increased UV resistance. This is consistent with modification-tuned translation being an additional means of regulation building upon transcriptional regulation pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C166 are supported by codon usage analysis (Figure 7C, Figure 7\u2014figure supplement 1B) and UV survival data (Figure 7D). The species comparison strengthens the argument that codon bias patterns are functionally significant and species-specific.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C7",
+      "C43",
+      "C44",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "The authors propose a model where exposure to aminoglycosides increases tgt expression and Q34 modification, impacting tyrosine codon decoding. This leads to translational reprogramming of transcripts with biased tyrosine codon usage. Sub-MIC aminoglycosides trigger oxidative stress in V. cholerae, and Q34 modification leads to reprogramming of the whole proteome through effects on codon usage bias, stop codon readthrough, and mistranslation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C43-C44, C167-C172 represent the integrated model supported by multiple lines of evidence throughout the manuscript: tgt regulation data, Q34 measurements, decoding efficiency experiments, proteomics, and phenotypic assays. The model is well-supported by the collective data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184"
+    ],
+    "result": "In V. cholerae, more efficient decoding of TAT vs TAC codons is observed in the absence of Q. This is consistent with findings in human tRNAs but opposite to E. coli. Better decoding of U-ending codons in \u0394tgt is observed only with tyrosine, not with other NAC/U codons, suggesting this may be specific to tRNATyr rather than a general rule. There appear to be additional parameters affecting tyrosine UAU decoding in V. cholerae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C173-C184 are supported by the experimental data and extensive comparison with literature (multiple citations). The acknowledgment of organism-specific differences and tRNA-specific effects demonstrates thorough analysis and appropriate interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C185",
+      "C186",
+      "C241",
+      "C242",
+      "C243",
+      "C245",
+      "C246",
+      "C247",
+      "C251"
+    ],
+    "result": "Additional factors such as mRNA secondary structures, mistranslation, codon position (5' vs 3'), sequence context, distance between codons, transcript abundance, and aminoacylation may contribute to translation efficiency and the observed effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C185-C186, C241-C243, C245-C247, C251 are speculative suggestions about factors that could influence the observed effects. While reasonable hypotheses supported by some citations, these are not directly tested in the current study and represent areas for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C206",
+      "C207"
+    ],
+    "result": "The findings are in accordance with the concept of MoTTs (modification tunable transcripts). In V. cholerae, a protein's codon content can influence its translation in a Q34 modification-dependent way, including antibiotic resistance genes like \u03b2-lactamase. Candidates for Q34-modulated translation can be predicted in silico using codon usage analysis, and this approach is adaptable to other tRNA modifications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C187-C190, C206-C207 are supported by the experimental validation of in silico predictions (DNA repair genes, UV resistance) and the \u03b2-lactamase reporter data. The generalizability of the bioinformatic approach is a reasonable conclusion from the successful predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195"
+    ],
+    "result": "Essential/housekeeping genes and ribosomal proteins are generally TAC-biased in both V. cholerae and E. coli. Codon bias at highly expressed genes may guarantee proper expression and avoid tRNA titration. Induction of tgt by stress could signal the cell to favor synthesis of essential factors. The results are consistent with synonymous mutations influencing gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C191-C195 are supported by codon usage analysis (Figure 7\u2014figure supplement 1A-B) and citations to previous literature. The interpretation about biological significance is reasonable and consistent with established models of codon usage optimization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203",
+      "C204",
+      "C205"
+    ],
+    "result": "tRNA modifications are dynamic and depend on growth, environmental changes, and stress. Stress-regulated tRNA modification levels impact translation of regulators, triggering translational reprogramming. tgt expression is regulated by tobramycin, stringent response, and CRP, and tRNATyr Q34 levels increase with tgt expression. The correlation between tgt expression and Q34 levels does not occur for all tRNAs, indicating other parameters influence Q34 modification levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C196-C205 are supported by the experimental data on tgt regulation and Q34 measurements, along with extensive citations to literature. The speculation about mechanisms (C204-C205) is appropriately qualified and supported by citations to relevant literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C208",
+      "C209",
+      "C210",
+      "C219",
+      "C222",
+      "C224",
+      "C225",
+      "C226",
+      "C227",
+      "C233"
+    ],
+    "result": "The authors speculate that tRNA modification-dependent translational regulation may tune expression of essential or newly acquired genes with different GC content, explain some antibiotic resistance profiles, and play a role during horizontal gene transfer and natural competence. Different organisms may have evolved species-specific post-transcriptional regulations according to their environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C208-C210, C219, C222, C224-C227, C233 are speculative hypotheses about broader implications and evolutionary significance. While reasonable and supported by some data (e.g., CRP regulation, codon usage patterns), these represent ideas for future investigation rather than directly tested hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C234",
+      "C235",
+      "C236",
+      "C237",
+      "C238",
+      "C239"
+    ],
+    "result": "The authors propose that E. coli \u0394tgt resistance to nickel toxicity can be explained by TAT-biased NikR (repressor) and RcnA (exporter) being more efficiently translated, while TAC-biased NikD (importer subunit) is less efficiently translated in the absence of Q34.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C234-C239 are supported by citation to previous literature showing the nickel resistance phenotype and codon usage analysis of the relevant genes. This provides a mechanistic explanation for a previously unexplained observation, though direct experimental validation in the current study would strengthen the conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C240",
+      "C248",
+      "C249",
+      "C250"
+    ],
+    "result": "Protein levels are not always in line with codon bias predictions. The search for MoTTs could be facilitated by comparing transcriptomics to proteomics data, and additional experiments are needed to elucidate post-transcriptional regulation-related phenotypes. The differential expression of specific TAT/TAC-biased proteins allows proposing a model for the pleiotropic phenotype caused by Q34 deficiency in E. coli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C240, C248-C250 acknowledge limitations and suggest future directions. The observation that protein levels don't always match predictions (C240) is supported by the data and demonstrates appropriate scientific caution. The suggestions for future work are reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C252",
+      "C253",
+      "C254",
+      "C255",
+      "C256"
+    ],
+    "result": "Both TAT and TAC codons are decoded by the same tRNA (tRNATyrGUA). The results do not support an aminoacylation problem because decoding efficiency decreases for TAC but not TAT in \u0394tgt, and the difference is clearer in tobramycin. This is consistent with rescue by tRNATyrGUA but not tRNATyrAUA overexpression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C252-C256 represent logical reasoning that rules out aminoacylation defects as an explanation. The argument is sound and supported by the differential effects on TAC vs TAT decoding and the tRNA overexpression rescue experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C257",
+      "C258"
+    ],
+    "result": "Stress-regulated tRNA modifications can facilitate homeostasis by reprogramming translation of stress response genes. The diversity of tRNA modifications and their specific effects make them a promising field of study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C257-C258 are general conclusions supported by this study and cited literature. These represent appropriate summary statements about the significance of the research area.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C90",
+      "C130",
+      "C131",
+      "C136",
+      "C193",
+      "C214",
+      "C215",
+      "C216",
+      "C217",
+      "C218",
+      "C220",
+      "C221",
+      "C223",
+      "C228",
+      "C229",
+      "C230",
+      "C231",
+      "C232",
+      "C244"
+    ],
+    "result": "Background information and literature context about tRNA modifications, MoTTs, Q34 function in various organisms, RsxA/SoxR function, tgt regulation, tyrosine transport, CRP function, and species comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from literature (supported by citations) or data from previous studies by the authors. They provide essential context for interpreting the current results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Transcriptomic analysis showed differential gene expression in \u0394tgt vs WT, with GO enrichment showing bacteriocin transport and iron import in MH, and proteolysis and heat response in tobramycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C104 are supported by RNA-seq data and GO enrichment analysis. These provide additional context about transcriptional changes, though the main focus is on translational regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C135",
+      "C137",
+      "C138",
+      "C212",
+      "C213"
+    ],
+    "result": "A sequence in the tgt promoter shows similarity to the CRP binding consensus, though CRP binding was not detected by ChIP-seq. The mechanism of CRP repression and tobramycin induction of tgt remains unclear.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C135, C137-C138, C212-C213 acknowledge gaps in understanding about regulatory mechanisms. The sequence similarity is noted but not validated, and alternative mechanisms are appropriately presented as speculation.",
+    "result_type": "MINOR"
+  }
+]

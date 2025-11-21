@@ -1,0 +1,192 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C23",
+      "C36",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C67",
+      "C68",
+      "C75"
+    ],
+    "result": "All six PSEN1 FAD mutations (S169L, S170F, G378E, F386S, A431E, A434T) exhibit deficiencies in multiple proteolytic steps of APP processing by \u03b3-secretase. Five mutations (S169L, S170F, G378E, A431E, A434T) show deficiencies in \u03b5 cleavage, while F386S is uniquely deficient only in specific trimming steps (A\u03b243\u2192A\u03b240, A\u03b248\u2192A\u03b245, A\u03b245\u2192A\u03b242, A\u03b242\u2192A\u03b238) but not in \u03b5 cleavage. Mutations A431E and A434T in the PALP motif show the most severe deficiencies across all cleavage events.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claims are supported by comprehensive quantitative MS analysis (MALDI-TOF for AICDs, LC-MS/MS for small peptide coproducts) with appropriate controls (light vs heavy isotope-labeled substrates). Standard curves were generated for quantification, and statistical significance was assessed. The F386S mutation's unique profile is particularly well-documented with multiple independent measurements. The data are internally consistent across different analytical methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "FLIM analysis reveals that all six PSEN1 FAD mutations lead to stabilized enzyme-substrate/intermediate complexes. Five mutations (S169L, S170F, G378E, A431E, A434T) show reduced Alexa Fluor 488 fluorescence lifetime overall, indicating increased E-S complex stability. The F386S mutation uniquely shows reduced fluorescence lifetime only in A\u03b2-rich regions, not in C99-rich regions, consistent with its selective deficiency in trimming steps rather than \u03b5 cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The FLIM data are supported by appropriate controls showing that C99-720 intensities and PSEN1 CTF levels are not significantly different between WT and FAD mutants, ruling out expression artifacts. The spatial resolution distinguishing C99-rich from A\u03b2-rich regions for F386S provides strong mechanistic consistency with the proteolytic analysis. Statistical analysis (ANOVA with multiple comparisons) was performed with adequate sample sizes (n=40-47 ROIs from 6-8 cells).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C99"
+    ],
+    "result": "ELISA measurements show that all six PSEN1 FAD-mutant enzymes produce lower levels of A\u03b240 and A\u03b242 compared to WT. Three mutants (S169L, G378E, F386S) show increased A\u03b242/A\u03b240 ratios, while S170F shows a ratio equivalent to WT. Cross-reactivity testing revealed that both A\u03b240- and A\u03b242-specific ELISAs cross-react with A\u03b243, explaining discrepancies observed with F386S enzyme which produces high levels of A\u03b243.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The ELISA results are validated by parallel LC-MS/MS measurements showing consistent trends. The discovery of A\u03b243 cross-reactivity in the ELISAs is a critical methodological finding that explains apparent discrepancies and strengthens confidence in the LC-MS/MS data. The consistency between ELISA and LC-MS/MS for most mutants (except F386S where cross-reactivity explains differences) supports the reliability of both methods.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C40"
+    ],
+    "result": "Validation experiments demonstrate that heavy isotope-labeled C100 substrate does not affect the concentrations of proteolytic products. Equal concentrations of AICD species and tri/tetrapeptides were produced when comparing WT protease with light-isotope C100 versus WT protease with heavy-isotope C100.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a critical methodological validation that supports the use of the light/heavy isotope mixing strategy for quantitative comparison of WT and mutant enzymes. The validation was performed for both \u03b5 cleavage products (AICDs) and trimming products (small peptides), demonstrating that isotope labeling does not introduce artifacts. This strengthens confidence in all subsequent comparative measurements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "The F386S mutation shows a unique proteolytic profile: significantly increased production of AICD 49-99 (coproduct of A\u03b248) and similar levels of AICD 50-99 compared to WT, biasing \u03b5 cleavage toward the A\u03b248\u2192A\u03b242 pathway. This mutation is adjacent to the catalytic aspartate D385.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding is well-supported by quantitative MALDI-TOF MS data with appropriate standards and statistical analysis. The unique behavior of F386S is consistently observed across multiple measurements and is mechanistically interesting given its proximity to the catalytic site. The bias toward AICD 49-99 production is consistent with previous reports cited in the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "The S169L mutation shows the second least deficiency in \u03b5 cleavage among the six mutants and the smallest decrease in overall fluorescence lifetime after F386S. Recent cryoEM structures identify S169 as a key residue in processive proteolysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative data from MALDI-TOF and FLIM support the relative ranking of S169L deficiency. The connection to structural data from recent cryoEM studies provides mechanistic context. However, the authors appropriately note that static structures cannot fully account for dynamic conformational changes observed in their functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The S170F mutation does not increase the A\u03b242/A\u03b240 ratio, contrary to the commonly cited hallmark of FAD mutations. This finding is consistent with a previous large-scale study showing that many FAD PSEN1 mutations do not elevate A\u03b242/A\u03b240, and when they do, it is primarily due to reduced A\u03b240 production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The finding is supported by both ELISA and LC-MS/MS measurements showing equivalent A\u03b242/A\u03b240 ratios for S170F compared to WT. The citation to Sun et al. 2017 analyzing 138 FAD PSEN1 mutations provides strong external validation. This challenges a common assumption in the field and is an important negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C11",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose that stalled enzyme-substrate/intermediate complexes, rather than the products of \u03b3-secretase proteolysis (such as A\u03b242), are the pathogenic trigger in FAD. This 'stalled complex hypothesis' is supported by previous C. elegans studies showing that stalled complexes trigger synaptic degeneration independently of A\u03b2 production.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the current data demonstrate that all FAD mutations lead to both proteolytic deficiencies and stabilized E-S complexes, the causal relationship between stalled complexes and pathogenesis relies heavily on prior C. elegans work (cited but not reproduced here). The current study provides correlative evidence but does not directly test whether stalled complexes cause pathology in mammalian systems. The hypothesis is plausible and consistent with the data, but requires additional validation in more disease-relevant models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The authors propose that \u03b3-secretase activators that rescue stalled E-S complexes could offer a therapeutic strategy by rescuing deficient proteolytic function and reducing stalled complex levels, distinct from \u03b3-secretase modulators that selectively reduce A\u03b242 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative therapeutic proposal based on the stalled complex hypothesis. While mechanistically logical given the data presented, no experimental evidence for such activators or their efficacy is provided in this study. The distinction from modulators is conceptually clear, but the feasibility and safety of this approach remain untested. This represents future work rather than a supported conclusion from the current data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "The authors acknowledge that effects of FAD mutations on \u03b3-secretase processing may vary between detergent-solubilized systems and natural membrane environments, but note that previous work showed similar AICD and A\u03b2 ratios in detergent-solubilized versus reconstituted proteoliposome systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate acknowledgment of a study limitation with a reasonable counterargument based on prior work. The citation to previous comparative studies (Devkota et al., 2021) provides some validation that the detergent system is representative, though the limitation remains valid. The authors appropriately present both the concern and the mitigating evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33"
+    ],
+    "result": "The wild-type \u03b3-secretase enzyme has a kcat of 2 hr\u207b\u00b9, and the 16-hour incubation period used in the assays remains within the linear range for product formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The kcat value is cited from previous work (Devkota et al., 2021) and the calculation that 16 hours remains in the linear range is straightforward given the slow turnover rate and saturating substrate conditions (5 \u03bcM substrate with 30 nM enzyme). This justifies the long incubation time used in the assays.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "All mutations were deficient in the A\u03b248\u2192A\u03b245 cleavage step except for S170F, which exhibited an increase in this trimming step. However, the calculated percent efficiency for S170F exceeded 200%, which is impossible.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "The authors correctly identify that a percent efficiency over 200% is impossible, suggesting either under-detection of AICD 49-99 (A\u03b248 production) or over-detection of VIT (A\u03b248 degradation) for S170F. This discrepancy undermines confidence in the quantification for this specific mutation and step. The authors acknowledge the issue but do not resolve it, leaving this particular finding uncertain. Additional validation or methodological refinement would be needed.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,231 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24"
+    ],
+    "result": "The study quantified over 871,000 thermal stability measurements from 96 compounds (70 kinase inhibitors, 26 other targets) tested at 10 \u00b5M in K562 cells in biological duplicate, arranged into 16 TMTpro experiments. Using thresholds of |log2FC| > 0.2 and |nSD| > 3.5, the authors identified 3,156 putative hits representing compound-dependent changes in protein thermal stability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the scale of the dataset but express significant concerns about the experimental design and statistical approach. One reviewer criticizes the use of only duplicate experiments and heuristic thresholds instead of proper statistical tests, noting this 'will likely reduce the robustness of their findings.' The reviewer states the fold-change threshold likely caused the authors to 'miss many small, but biologically relevant changes' and questions the assumption that fold-changes are comparable across 16 TMT multiplexes. Another reviewer notes 'the inclusion of more replicate experiments and more statistical rigor would have strengthened the study.' The use of a single high concentration (10 \u00b5M) is also criticized as making it 'difficult to assess the relevance of the off-target effects identified.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40"
+    ],
+    "result": "The authors report that approximately 80% of compounds with quantifiable targets caused a significant change in thermal stability of an annotated target. Specifically, 79 of 96 compounds (84%) had at least one known target quantified, and 56 of these 79 compounds (71%) induced a change in target solubility.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers do not directly challenge these percentages, the underlying statistical methodology is questioned. One reviewer notes the 'heuristic thresholds' and lack of proper replication 'will likely reduce the robustness of their findings,' which directly impacts the reliability of these hit rate calculations. The reviewer requests clarification on 'if any of the missed targets passed the z-score threshold but fell below the fold-change threshold,' suggesting the reported hit rates may underestimate true target engagement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C26",
+      "C27",
+      "C31"
+    ],
+    "result": "The study identified evidence of off-target engagement for many compounds. For example, OTS167 affected 154 proteins including kinases beyond its primary target MELK, consistent with previous reports that its mechanism involves off-target engagement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers acknowledge the identification of off-target effects as a strength of the study. One reviewer notes 'a wealth of information related to on- and off-target engagement is uncovered.' However, the clinical relevance is questioned due to the high concentration used: one reviewer states the single 10 \u00b5M dose 'makes it difficult to assess the relevance of the off-target effects identified to clinical applications.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C67",
+      "C68",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors performed lysate-based PISA experiments with 70 compounds, generating 627,176 thermal stability measurements and 2,176 significant changes. Combining cell and lysate data increased the on-target hit rate from ~72% (each dataset alone) to ~82% (49/60 compounds), demonstrating that the combined approach aids in classifying primary (direct binding) versus secondary (indirect) changes in thermal stability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently identify the combination of cell and lysate experiments as a major strength. One reviewer states 'The major strength of this study is the combination of live and whole cell lysates experiments' which 'enables the authors to separate primary and secondary effects.' Another reviewer notes 'The most valuable aspect of the study is the demonstration that combining live cell and whole cell lysate PISA assays across multiple related compounds can help to elucidate the mechanisms of action.' The improved hit rate from combining datasets is implicitly accepted through these positive assessments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Palbociclib and NVP-TAE-226 impacted PLK1 solubility similarly to known PLK1 inhibitors BI 2536 and volasertib, though with lower potency. Dose-response PISA experiments and western blots for PLK1-dependent TCTP phosphorylation confirmed that palbociclib and NVP-TAE-226 are weak PLK1 inhibitors, with 100 nM BI 2536 impacting PLK1 to the same extent as 10 \u00b5M of the other compounds.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise specific concerns about these findings. The dose-response validation experiments address the general criticism about using a single high concentration, and the concordance between PISA data and western blots strengthens the conclusions. One reviewer notes the study benefits from 'the number of compounds tested within the same framework, which allows the authors to make direct comparisons between compounds,' which supports this comparative analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Four compounds (GSK-2656167, GSK-2606414, tozasertib, and AZD-5438) increased RIPK1 solubility in both cells and lysates. While three were known RIPK1 off-target inhibitors, AZD-5438 (a CDK inhibitor) had not been previously attributed this activity. Dose-response PISA and western blots for RIPK1 autophosphorylation confirmed all four compounds inhibit RIPK1, with necrostatin-2 and GSK-2606414 being more potent than AZD-5438 and tozasertib.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings. One reviewer specifically highlights this as an example of the study's strengths, noting the combination of cell and lysate data 'can help to elucidate the mechanisms of action' and mentions the CHEK1 inhibitor example (related analysis). The identification of AZD-5438 as a novel RIPK1 inhibitor, validated by orthogonal assays, represents a concrete discovery enabled by the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Cell-based experiments can identify secondary changes in protein thermal stability independent of direct ligand binding. CDK inhibitors induced RB1 thermal destabilization in cells but not lysates, attributed to changes in RB1 phosphorylation. Similarly, PF-3758309 caused 102 significant changes in cells versus 21 in lysates, with the disparity driven by spliceosome subunits affected in cells but not lysates, indicating secondary rather than direct effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly recognize this as a key strength. One states the combination of approaches 'enables the authors to separate primary and secondary effects of the compounds within the live cell assay.' The RB1 and spliceosome examples are not specifically challenged and serve as clear demonstrations of the methodology's ability to distinguish direct from indirect effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "BCR-ABL inhibitors did not change BCR-ABL thermal stability but induced changes in substrates CRKL and CRK only in cells, not lysates. The CHEK1 inhibitor AZD-7762 also decreased CRKL solubility in cells, but other CHEK1 inhibitors did not, suggesting this effect stems from off-target engagement of tyrosine kinases (FER, LYN, CSK, YES1) confirmed in lysate experiments. Phosphoproteomic profiling showed both bafetinib and AZD-7762 decreased phosphorylation of CRKL Y207 and other pY sites, with AZD-7762 causing more total changes, consistent with it being a promiscuous kinase inhibitor.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers highlight this analysis as exemplifying the study's strengths. One reviewer specifically states 'These two strengths are combined when they compare between CHEK1 inhibitors and suggest that AZD-7762 likely induces secondary destabilisation of CRKL through off-target engagement with tyrosine kinases.' The multi-layered analysis (cell vs. lysate PISA, comparison across related inhibitors, phosphoproteomics validation) is implicitly endorsed through this positive assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C125",
+      "C126",
+      "C128",
+      "C129",
+      "C131",
+      "C132",
+      "C133",
+      "C135",
+      "C136"
+    ],
+    "result": "Network analysis of correlated solubility changes across 396 kinases revealed coordinated responses within and between kinase families. Examples include highly correlated profiles for RPS6KA1/2/3, p38\u03b1/MAPK14 with MAPKAPK2/3, AKT1/2 with ROCK1/2, PIP4K2A/B/C, SRPK1/2 with RIOK2, and CDK16 with GSK3A/B. Some proteins (SRPK1/2, RIOK2) showed consistent responses despite not being called as hits, suggesting initial filters may mask real protein-compound engagements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about the network analysis. The observation that some proteins with consistent responses were missed by the initial thresholds actually aligns with reviewer criticism that the fold-change threshold likely caused the authors to 'miss many small, but biologically relevant changes.' This self-critical acknowledgment by the authors strengthens rather than weakens the evaluation of this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "PISA uses TMT-based proteomics to estimate the area under protein melting curves, measuring change in solubility (\u0394SM) rather than melting temperature (\u0394TM). There is strong correlation between \u0394TM and \u0394SM, making PISA a reliable surrogate for measuring thermal stability changes, with an eightfold theoretical throughput improvement over TPP and CETSA.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the methodological description of PISA or its theoretical advantages. However, one reviewer notes that despite PISA's stated benefit of allowing more replicates due to reduced sample numbers, 'the authors of this study performed only duplicate experiments,' suggesting the throughput advantage was not fully leveraged for robustness.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C14"
+    ],
+    "result": "A temperature range of 48\u201358\u00b0C was selected for PISA experiments, encompassing the back half of most protein melting curves in K562 cells. Using this narrower window, CDK4/6 inhibitors caused statistically significant changes in CDK4 and CDK6 thermal stability, whereas the full melting curve showed minimal changes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the temperature range selection or the CDK4/6 validation experiments. These methodological details are presented as part of the workflow establishment and are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Some targets showed differential responses between cell and lysate experiments. GSK-1070916 and MK-2206 increased AURKA and AKT1 solubility in both settings. Sotrastaurin increased PRKCA solubility in lysates but decreased it in cells, suggesting complex biophysical rearrangement. BRD4 inhibitors caused larger changes in cells than lysates, while BRAF inhibitors affected BRAF in lysates but not cells, indicating certain targets are more prone to solubility changes in one experimental setting.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these observations of differential responses. These examples support the overall conclusion that combining cell and lysate data provides complementary information, which reviewers identify as a major strength of the study.",
+    "result_type": "MINOR"
+  }
+]

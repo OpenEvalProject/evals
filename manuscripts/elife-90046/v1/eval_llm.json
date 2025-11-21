@@ -1,0 +1,287 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Sensory-evoked astrocyte calcium responses originate in arborization domains and propagate to the soma when >23% of the arborization is activated. The majority of responses (57.7%) occurred in both soma and arborization, with significant linear correlations between domain activity and soma activation (R\u00b2=0.87-0.90).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C26-C31 provide converging evidence from in vivo imaging showing the spatial threshold phenomenon. The statistical correlations (p<0.001) and quantitative measurements across ~1000 astrocytes from multiple animals provide robust support. The data clearly demonstrate the relationship between domain activation and soma responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Calcium responses initiate in arborizations (11.1\u00b10.3 s delay) and precede soma activation (13.2\u00b10.2 s delay), with faster kinetics in somas than arborizations. This temporal sequence supports the hypothesis that synaptic inputs are accessed at the arborization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C37 present temporal analysis with significant differences (p<0.001-0.01) and appropriate sample sizes (n=30 populations, 3 animals). The kinetic measurements are internally consistent and support the centripetal model of calcium propagation. The inference about synaptic access is reasonable given the data and cited literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "A spatial threshold of 22.6% (95% CI: 21.2-24.0%) of active domains is required for soma activation, determined by intrinsic astrocyte properties rather than stimulus parameters. Exceeding this threshold triggers calcium surge throughout the arborization (45.0\u00b11.8% post-soma vs 23.9\u00b10.8% pre-soma).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C44 establish the core finding using Heaviside step function fitting (R\u00b2=0.42) and demonstrate threshold independence from stimulus parameters (p=0.29-0.50). The large sample size (n=995 astrocytes) and consistency across conditions strengthen the conclusion. However, the R\u00b2 value of 0.42 indicates substantial variability, suggesting biological heterogeneity or measurement noise.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Temporal clustering of domain activation, rather than spatial clustering, distinguishes subthreshold from suprathreshold responses. The average time between domain responses decreases from 9.4\u00b10.3 s (no-soma) to 4.4\u00b10.2 s (pre-soma) to 2.1\u00b10.1 s (post-soma). General linear modeling shows percent area has the largest effect on soma activation (p=3.5e-70).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 provide detailed spatiotemporal analysis with appropriate statistics. The GLM analysis properly identifies percent area as the primary driver while controlling for other variables. The lack of spatial clustering differences (p=0.31-0.75) contrasts with significant temporal differences (p<0.001), supporting the interpretation. However, C47 involves speculation about synaptic activity that is not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Calcium propagation follows a centripetal pattern (distal to soma) before threshold is reached, then switches to centrifugal propagation (soma to distal) during calcium surge. This demonstrates astrocyte integration of local synaptic activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C56 present novel findings about bidirectional calcium propagation with significant correlations (R\u00b2=0.67-0.89, p<0.01-0.05). The data support the centripetal-to-centrifugal switch model. However, the inference about synaptic integration (C56) extends beyond direct measurement and represents interpretation rather than direct observation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Type-2 IP3 receptors are necessary for astrocyte calcium surge. In Itpr2-/- mice, domain responses are preserved but reduced (14.5\u00b11.0% vs 34.5\u00b10.8% in WT), remaining below the spatial threshold, with dramatically reduced soma activation (4.5\u00b12.2% vs 61.0\u00b11.6% in WT).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8 and C57-C72 use genetic knockout mice to establish necessity of IP3R2. The data show preserved domain activity but abolished surge, consistent with the spatial threshold model. However, the sample size for Itpr2-/- mice is smaller (n=2 animals, 5 populations) compared to WT (n=3 animals, 30 populations), which limits statistical power. The results align with cited prior work, strengthening the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C74"
+    ],
+    "result": "The spatial threshold for calcium surge determines gliotransmitter release. In brain slices, the threshold (22.9%) matches in vivo measurements, and SIC frequency correlates with domain activity (R\u00b2=0.95, p<0.001) but increases only beyond the spatial threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C62-C67, C74 link the spatial threshold to functional output using patch-clamp recordings. The correlation between domain activity and SIC frequency is strong (R\u00b2=0.95), and the threshold consistency between in vivo and in situ (within 95% CI) validates the finding. However, C102 acknowledges that SICs likely reflect population-level gliotransmission from multiple astrocytes, complicating single-cell interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Temporal but not spatial clustering changes before and after calcium surge. Percent area is the most significant parameter for soma activation threshold. Soma activation switches calcium propagation directionality from centripetal to centrifugal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C92 provide mechanistic details about the surge phenomenon using GLM and spatiotemporal analysis. The findings extend prior work (Fedotova et al., 2023; Rupprecht et al., 2024) by demonstrating the directional switch. The statistical support is adequate, though the biological interpretation of why spatial clustering doesn't change requires further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C96"
+    ],
+    "result": "A novel computational tool (Calsee) was developed to analyze ~1000 astrocyte responses, using SR101-positive pixels to define ROIs and avoid including neighboring cells or extracellular space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93 and C96 describe methodological advances enabling the study. The tool is publicly available (GitHub) and has been used in prior publications, supporting its validity. The conservative approach to ROI definition is appropriate but may miss fine processes, as acknowledged by the authors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C41",
+      "C68",
+      "C78",
+      "C86",
+      "C88"
+    ],
+    "result": "The spatial threshold is an intrinsic property of astrocyte physiology analogous to neuronal action potential threshold, revealing novel integrative properties that may add computational capabilities to brain information processing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C41, C68, C78, C86, and C88 present the conceptual framework and broader implications. The analogy to action potential threshold is reasonable given the all-or-none nature of the response. The independence from stimulus parameters (C40-C41) supports the intrinsic property claim. However, the computational capabilities (C78) remain speculative and require future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Background claims establish that astrocytes respond to synaptic activity with calcium elevations that regulate neuronal function, with calcium signals occurring at multiple spatial scales from discrete domains to whole-cell surges. A single astrocyte contacts ~100,000 synapses, making calcium signal control functionally important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C25 provide established background knowledge supported by extensive citations. These claims contextualize the study but do not represent novel findings. The claim about 100,000 synapses (C5) is well-cited (Bushong et al., 2002) and widely accepted in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C95"
+    ],
+    "result": "Experiments were conducted under anesthesia, which reduces astrocyte activity but likely preserves subcellular machinery. Future work in awake animals is proposed as the next logical step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C80 and C95 acknowledge experimental limitations. While C79 is supported by citation (Thrane et al., 2012), C80 is speculative. The slice experiments without anesthesia (C62) partially address this concern but don't fully validate the in vivo findings under anesthesia. This represents a significant limitation that could affect the generalizability of results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C94",
+      "C103",
+      "C107",
+      "C108"
+    ],
+    "result": "Future directions include 3D imaging to refine spatial threshold measurements, investigating different astrocyte outputs beyond SICs, and examining altered subcellular activity in neurological disorders for potential diagnostics and therapeutics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94, C103, C107, and C108 are speculative proposals for future work. While reasonable extensions of the current findings, they represent hypotheses rather than tested results. The potential clinical applications (C108) are particularly speculative without supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C69",
+      "C73",
+      "C75",
+      "C76",
+      "C84",
+      "C87",
+      "C97",
+      "C98",
+      "C100",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Additional background claims about IP3R2 function, gliotransmitter release mechanisms, neuronal information processing, and disease contexts from prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69, C73, C75, C76, C84, C87, C97, C98, C100, C104, C105, and C106 cite established literature to provide context. These are not novel findings but appropriate background information supporting the study's rationale and interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C81",
+      "C82",
+      "C83",
+      "C85",
+      "C99",
+      "C102"
+    ],
+    "result": "Summary claims synthesizing the main findings: astrocyte responses initiate in arborizations, extend intracellularly after reaching the IP3R2-dependent spatial threshold, and impact neuronal signaling. The spatial threshold represents an astrocyte analogue to neuronal action potential threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77 and C81-C85, C99, C102 summarize and interpret the experimental findings. These integrative claims are supported by the collective evidence from the study, though they involve some inference beyond direct measurement. The analogy to action potential (C99) is conceptually useful but should not be taken as mechanistic equivalence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C101"
+    ],
+    "result": "The study does not rule out the possibility of extracellular Ca2+ entry contributing to astrocyte calcium dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C101 appropriately acknowledges a limitation. The study focused on IP3R2-mediated intracellular release but did not exclude other calcium sources. This is an honest assessment of what the data can and cannot conclude.",
+    "result_type": "MINOR"
+  }
+]

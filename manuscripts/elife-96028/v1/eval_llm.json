@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Met4 and Met32 form co-localized puncta-like structures in yeast nuclei upon methionine depletion, as demonstrated by microscopy showing puncta formation with significantly higher coefficient of variance (CV) and Fano numbers compared to controls, and high Pearson correlation (0.75) between Met4-GFP and Met32-mCherry signals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C10-C14 provide converging evidence from multiple quantitative metrics (CV, Fano number, Pearson correlation) and microscopy data showing Met4 and Met32 form co-localized puncta structures under -met conditions. The statistical significance (p<0.001) and comparison with appropriate controls (free GFP, other nuclear proteins) strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Met32 forms condensates with LLPS properties in vitro, while Met4 partitions into Met32 droplets. Met32-mCherry forms droplets at physiological salt concentrations (1-20 \u00b5M) that exhibit fusion and FRAP recovery (64\u00b19.7s half-time), and Met4-MBP co-localizes with these droplets showing slightly slower FRAP recovery (83\u00b111s).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C15-C23 provide comprehensive in vitro evidence including computational predictions (FuzDrop), protein structure analysis, droplet formation assays, fusion experiments, and FRAP measurements. The FRAP recovery times are comparable to established LLPS proteins, supporting the LLPS mechanism. However, C18 notes Met4 alone remains diffusive at physiological conditions, suggesting Met32 may serve as scaffold.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Met4 puncta co-localize with target genes. ChIP-seq identifies 34 regions co-bound by Met4, Met32, Met28, and Cbf1 under -met conditions, regulating 40 genes with significantly increased expression. Imaging shows MET13 and MET6 loci have higher probability of co-localization with Met4 puncta compared to control loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24-C29 integrate ChIP-seq, RNA-seq, and imaging data to demonstrate Met4 puncta co-localize with target genes. The identification of 34 co-bound regions with 40/46 genes showing increased expression provides strong evidence. Quantitative imaging analysis showing heightened GFP intensity at MET13/MET6 loci further supports co-localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "A subset of Met4 target genes cluster in 3D in a Met4-dependent manner. MTAC detects long-distance intra- and inter-chromosomal interactions among Met4 target genes (MET13, MET6, MUP1, STR3, YKG9) under -met conditions, which disappear upon Met4 degradation. Hi-C did not detect these interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C30-C34 demonstrate Met4-dependent 3D gene clustering using MTAC, a more sensitive method than Hi-C for detecting fine-scale interactions. The auxin-induced Met4 degradation experiment provides strong evidence for Met4 dependency. The observation that interactions disappear in four different conditions (C33) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "A MET3pr-GFP reporter inserted near Met4-binding sites shows enhanced transcriptional activity over a ~40kb range. Reporter activity is ~50% higher at hotspot loci (CWC23, RSM23, MET6, MET17, RMD6) compared to basal loci, with increased GFP mRNA, Pol II occupancy, and Met4/Met32 enrichment. This enhancement is pathway-specific as GAL1Spr shows no such effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C35-C37, C40-C45 provide comprehensive evidence for enhanced reporter activity at hotspots through multiple measurements (GFP intensity, mRNA levels, Pol II ChIP, TF ChIP). The distance-dependent effect (C43-C45) and pathway specificity (C42, C44) strengthen the conclusion. Statistical significance (p<1e-4) is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Met4 IDR truncations reduce puncta formation and selectively decrease reporter activity at hotspots. Met4 \u0394IDR2 and \u0394IDR3 show reduced Fano numbers, with \u0394IDR2.3 showing decreased binding at Met4 sites (especially at clustered genes: 42\u00b14% vs 61\u00b18%, p=0.02), reduced expression of 22/40 target genes, and strong decreases in reporter activity at hotspots but minimal effect at basal loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C46-C53 provide strong functional evidence linking Met4 condensation to gene regulation through systematic IDR truncation analysis. The selective effect on hotspots vs basal loci (C53, C75) is particularly compelling, as it demonstrates the truncation specifically affects condensate-mediated enhancement rather than general Met4 function. Multiple complementary measurements (microscopy, ChIP-seq, RNA-seq, reporter assays) support the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C34",
+      "C39",
+      "C76",
+      "C77",
+      "C86",
+      "C87"
+    ],
+    "result": "Met4 and co-activators form condensates that bring multiple target genes into proximity with higher local TF concentrations, facilitating a strong response to methionine depletion. This model is supported by observations of puncta formation, gene clustering, enhanced transcription at hotspots, and selective effects of IDR truncations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C34, C39, C76-C77, C86-C87 represent the integrative model synthesizing all experimental observations. While C76-C77 and C86 are explicitly speculative about mechanism, the model is well-supported by the totality of evidence from puncta formation, 3D clustering, enhanced transcription, and functional perturbations. The pathway specificity and selective effects of IDR truncations provide strong support for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Insertion of S.kud MET3pr reporter alone does not increase local Met4 intensity or nucleate new condensates. Despite being bound and activated by Met4, the reporter insertion at MET6 and PUT1 does not alter Met4-GFP intensity profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C39 are supported by quantitative imaging analysis (Figure 6B, C) showing no increase in local Met4 intensity upon reporter insertion. This negative result is important for understanding condensate formation requirements and is appropriately interpreted as inference (C39) from the imaging data (C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Background and context claims establishing prior knowledge about 3D genome organization, transcription factories, LLPS mechanisms, gene clustering, the Met4 pathway, and related phenomena in other systems. These include established facts about chromosomal contacts, TF condensates, the role of methionine metabolism, and comparisons with other stress-responsive TFs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C85 represent background knowledge and literature citations that provide context for the study. These are appropriately supported by citations to published literature (C54-C65, C70-C72, C78-C80, C83-C84) or established biological knowledge (C81). Some claims (C68-C69, C82, C85) involve inference from prior observations but are appropriately contextualized.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "Met4 \u0394IDR2.3 does not strongly affect transcriptional activity of MET3pr reporter at basal loci, suggesting the truncation does not directly impact Met4 integrity and activation function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 is supported by experimental data (Figure 7G) showing similar reporter activity at basal loci for full-length and truncated Met4. This control experiment is critical for interpreting the selective effects at hotspots and demonstrates the truncation specifically affects condensate-mediated functions rather than general transcriptional activity.",
+    "result_type": "MINOR"
+  }
+]

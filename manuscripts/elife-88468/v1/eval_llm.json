@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C36",
+      "C38",
+      "C40",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The study developed a statistical framework that estimates nuclear export rates from single-timepoint imaging data by exploiting cell-to-cell variation in transcript abundance. The method uses MERFISH with 6-bit encoding requiring only three rounds of hybridization to simultaneously detect all eight influenza viral segments in situ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C36, C38, C40 establish the methodological approach, while C54-C56 describe the MERFISH implementation. The experimental data in Figures 2 and 3 demonstrate successful simultaneous detection of eight segments and show the expected relationship between nuclear fraction and total transcript count, validating the conceptual framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C39",
+      "C59",
+      "C60",
+      "C61",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The kinetic model revealed differential nuclear export rates across the eight viral segments, with HA and NA showing the slowest export rates (~70% nuclear fraction) compared to PB1, NP, and NS (~30% nuclear fraction). The model parameter \u03bc (nuclear export rate) was estimated by fitting the relationship between nuclear fraction and total mRNA count, agreeing with historical classification of early and late viral genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 provide quantitative measurements from Figure 2C showing differential nuclear fractions. Claims C76-C81 describe the kinetic model formulation and parameter estimation shown in Figure 4. The model fitting in Figure 4C shows clear differences in curvature between segments, and the estimated export rates in Figure 4D align with known temporal expression patterns, providing strong support for the result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C70",
+      "C73",
+      "C74"
+    ],
+    "result": "The statistical model exploits stochastic variation in the timing of viral transcription initiation across cells to create a pseudo-time-course from single-timepoint data. Time-course validation at low MOI confirmed that cells progress along the predicted trajectory from high nuclear fraction (early) to lower nuclear fraction (late) as total mRNA count increases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C68 establish the conceptual basis that stochastic variation in infection timing creates cells at different stages. Claims C70, C73-C74 describe observations from Figures 3B and 3C showing the expected curved relationship and time-course progression. The time-course data in Figure 3C directly validates the model concept by showing cells progress along the predicted trajectory over 80-200 minutes post-infection.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Time-course measurements after transcription inhibition with baloxavir validated the model for HA (0.243 hr\u207b\u00b9 estimated vs model prediction) but underestimated the export rate for rapidly exported NP mRNAs (0.631 hr\u207b\u00b9 vs higher model estimate). This demonstrates the advantage of the single-timepoint method for rapidly exported transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 describe the experimental design and observation of stable mRNA levels (Figure 5B). Claims C86-C90 provide quantitative comparisons showing good agreement for HA but poor agreement for NP. Claim C89 provides a mechanistic explanation for the underestimation. The data in Figure 5C clearly shows the nuclear ratio for NP approaches baseline by the first timepoint, supporting the interpretation that time-course methods fail for rapidly exported transcripts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C7",
+      "C82",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The study proposes that nuclear export rate, rather than transcription initiation timing, controls temporal protein expression in early infection. Delayed export of HA and NA antigens may allow the virus to delay immune recognition while early export of polymerase subunits and NP facilitates viral replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C82, C95 are explicitly speculative interpretations marked by phrases like 'suggesting the possibility' and 'might be beneficial.' While claims C92-C94 present the proposal about concurrent transcription initiation, this is an inference from the data rather than a directly tested hypothesis. The functional significance claims lack direct experimental validation of the proposed immune evasion mechanism or demonstration that transcription initiation is truly concurrent across segments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C50",
+      "C51",
+      "C57",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Single-molecule quantification revealed median mRNA counts of 145-310 molecules per cell for different segments at 2 hours post-infection, with gene length partially explaining abundance differences. The cell population showed heterogeneity in transcript abundance, with cells carrying abundant mRNAs of one segment tending to carry abundant mRNAs of other segments, indicating stochastic variation in viral transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C50, C57 provide quantitative measurements from Figures 1D, 1I, and 2C. Claims C47, C62-C63 describe observations of heterogeneity and correlation from Figures 1E, 2D, and 2E. The data clearly show both the absolute counts and the patterns of variation. Claim C46 appropriately notes the partial agreement with gene length predictions. The clustering and pairwise analyses provide strong evidence for the stochastic nature of infection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C48",
+      "C49"
+    ],
+    "result": "The experimental approach used smFISH with fluorescent oligonucleotide probes to visualize individual viral mRNA molecules in A549 cells infected at MOI ~2 for 2 hours. Validation showed that ~80% of mRNAs in the 2D nuclear projection were above the baseline Z-position, confirming that 2D nuclear projection is a good approximation for nuclear mRNA content.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C44 describe the experimental setup and are supported by citations and Figure 1A-B. Claims C48-C49 describe the validation of the 2D approximation shown in Figures 1G-H. The Z-distribution analysis provides quantitative support that nuclear projection captures true nuclear localization, with 80% of projected spots above the peripheral baseline.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53"
+    ],
+    "result": "The fluorescent probes can detect both viral mRNA and complementary RNA (cRNA), but signals at 2 hours post-infection are deemed to be predominantly from mRNAs because cRNA production occurs much later than mRNA synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 correctly identifies a technical limitation of probe specificity. Claim C53 provides a temporal argument supported by citations (Phan et al., 2021; Kawakami et al., 2011) that cRNA production is delayed. The 2-hour timepoint is early enough that cRNA contamination should be minimal, making this a reasonable inference supported by prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The statistical framework has broad applicability beyond influenza infection for systems with concurrent de novo mRNA synthesis (e.g., immediate-early gene activation), but is not appropriate for systems with repeated random transcription bursts. The method does not require synchronized infection and actually benefits from biological variation in transcript levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 propose broader applications supported by citations to relevant systems. Claims C98-C101 explain how the method exploits rather than requires synchronization, which is conceptually sound given the model's reliance on population variation. Claims C102-C103 clarify model properties. Claim C104 appropriately identifies limitations with citation support. These are logical extensions of the demonstrated methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study was conducted at early infection timepoints (up to 200 min) to enable single-molecule quantification and to minimize confounding effects of NS1 protein, which alters nuclear export at later timepoints. This allowed measurement of intrinsic nuclear export rates for each segment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 explain the rationale for early timepoint selection based on technical feasibility of single-molecule detection. Claims C108-C109 explain the biological rationale regarding NS1 effects, supported by citation (Pereira et al., 2017). These are reasonable experimental design choices that are well-justified by both technical and biological considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117"
+    ],
+    "result": "While influenza mRNAs are dependent on the NXF1 export pathway, the eight segments show differential dependencies on this pathway. However, the nuclear export rates measured in this study do not correlate with previously reported NXF1 dependencies, as HA and NS both depend on NXF1/UAP56 but show significantly different export rates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C115 summarize prior literature on NXF1 dependencies with appropriate citations. Claims C116-C117 identify the discrepancy between this study's export rate measurements and prior NXF1 dependency data. This is a valid observation that the measured export rates don't align with a simple model based on NXF1 dependence alone, suggesting additional regulatory mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The current system cannot discriminate between unspliced and spliced forms of M and NS segments, though the majority of detected NS segments are inferred to be unspliced based on comparison with intron-specific probes. RNA structure (spliced vs unspliced) does not correlate with NXF1 dependency or nuclear export rate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C118 acknowledges a technical limitation. Claim C119 provides an inference based on Figure 6 comparison with intron-specific probes, which is reasonable. Claim C120 cites supporting literature. Claim C121 is a valid inference from the data showing no clear pattern based on splicing status. This appropriately identifies limitations while drawing reasonable conclusions from available data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C110",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The molecular mechanisms underlying differential nuclear export remain incompletely understood. The study suggests that nuclear export is intrinsic to nucleotide sequences of each segment, potentially involving differential binding affinities of host factors like hnRNPAB. The study provides reference values for nuclear export rates and opens new research directions on regulation and viral pathogenesis implications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110, C124 identify knowledge gaps. Claims C122-C123, C125 are speculative interpretations about mechanisms. Claim C126 cites recent supporting work on sequence-dependent export. Claims C127-C128 make broad statements about the study's contribution. While the reference values are well-supported, the mechanistic proposals are speculative and the claims about opening new research directions are aspirational rather than demonstrated outcomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C41"
+    ],
+    "result": "The study addresses a knowledge gap regarding the kinetics of viral transcription and nuclear export across influenza A virus segments, providing a framework that can be widely applied to investigate nuclear retention of nascent transcripts in transcription bursts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C1 provides background context. Claim C2 identifies the knowledge gap being addressed. Claims C8 and C41 state the contributions of the study. These are appropriate framing claims that accurately represent the study's scope and contributions, supported by the experimental results demonstrating the framework's utility.",
+    "result_type": "MINOR"
+  }
+]

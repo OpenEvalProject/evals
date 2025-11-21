@@ -1,0 +1,265 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C63",
+      "C65"
+    ],
+    "result": "The study demonstrates that both coarticulated and separated movement sequences can emerge from the same optimal feedback control (OFC) framework by varying task constraints at intermediate goals. Simulations show that penalizing velocity at the first target produces apparent separation of reaches, while removing this constraint allows coarticulation, even though the controller is computed jointly for both reaches in both cases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C21, C22 are directly supported by simulation data (Figures 2C, 2D). The theoretical framework (C19, C20) is validated by both simulations and human experiments (C23-C25). The interpretation that both patterns arise from the same control framework (C63, C65) is well-justified by the convergence of computational and empirical evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In Experiment 1 (GO task), human participants showed coarticulation where the second target influenced the first reach trajectory. Hand speed at the first target remained high (~0.2 m/s), lateral hand deviation differed significantly between sequence conditions (p<10\u207b\u2074), and this effect was present from the first trial within blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 provide converging behavioral evidence with appropriate statistical tests and effect sizes. The data in Figure 3A-B and Figure 3\u2014figure supplement 1 support the presence of coarticulation. Sample size (n=15) appears adequate, and the block design analysis (C43) addresses potential confounds from practice effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "During perturbations in the GO task, both hand kinematics and baseline muscle activity showed sequence-dependent modulation. Counterintuitively, lateral hand deviation was smaller when perturbations were in the direction of the second target, with both stretched and shortened muscles showing larger responses when the second reach required movement reversal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C49 are supported by kinematic and EMG data with significant statistical effects (p<10\u207b\u2075 to p<10\u207b\u2076). The counterintuitive finding (C46) is explained by the model's optimization principles (C34). The EMG evidence (C47-C49) provides mechanistic support for the behavioral observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Long-latency stretch responses (R2 and R3 epochs, 45-105ms) in shoulder muscles were significantly modulated by the location of the second target during the first reach in coarticulated sequences. Both PEC and PD muscles showed sequence-dependent responses in long-latency but not short-latency (R1) epochs, indicating involvement of transcortical feedback circuits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 provide detailed statistical evidence for sequence-dependent modulation in long-latency epochs with appropriate one-tailed tests and significant p-values. The absence of R1 modulation (C55) strengthens the interpretation by ruling out baseline differences. The temporal specificity supports the involvement of feedback control circuits (C56).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In Experiment 2 (STOP task), when participants were required to slow down at the first target (velocity <0.5 cm/s), the second target did not influence the first reach. Hand deviation, velocity, and muscle responses showed no significant differences between sequence conditions during the first reach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C61 provide consistent null results across kinematic and EMG measures with appropriate statistical tests (n=14 participants). The lack of sequence effects in the STOP task (C62) contrasts with the GO task results, supporting the model prediction that task constraints modulate coarticulation. The statistical power appears adequate given the clear effects observed in Experiment 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Model simulations without velocity constraints at the first target showed early overlap of control gains (k2 non-zero during first reach), resulting in the second target influencing first reach trajectories. Perturbation responses showed smaller lateral deviation when perturbations were in the direction of the second target, explained by minimizing acceleration costs at T1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by simulation data shown in Figures 2C and supplementary figures. The counterintuitive perturbation response (C33) is explained mechanistically by the model's cost function (C34). These predictions were subsequently validated in human experiments, strengthening confidence in the model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Model simulations with velocity constraints at the first target showed delayed onset of k2 control gain (becoming non-zero only at the end of first reach), resulting in minimal influence of the second target on first reach trajectories and perturbation responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by simulation data in Figures 2D and Figure 2\u2014figure supplement 3A. The model predictions align with the empirical results from Experiment 2 (STOP task), providing convergent validity for the computational framework.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The results are consistent with recent behavioral and neural network studies showing integration of future targets during motor planning. Long-latency feedback control modulation by future targets supports theories that planning involves deriving a control policy, with the primary motor cortex contributing to these feedback responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64 and C66 appropriately contextualize the findings within existing literature with proper citations. Claim C67 cites recent neural network modeling (Wang et al., 2024) that reproduced M1 activity with simultaneous target processing. Claim C68 is well-established knowledge. The integration is logical and well-supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The OFC framework provides a novel computational definition of motor chunking as the formation of overlapping control policies rather than unified preparatory signals. This predicts that preparatory activity may not distinguish coarticulated from independent sequences, and that even motor chunks may appear independently controlled depending on intermediate goal constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C69-C75 present theoretical interpretations and predictions based on the OFC framework. While logically consistent with the model and data (C69 has citation support), these claims about neural representation (C71, C72) and motor chunking (C73-C75) are speculative inferences that extend beyond the direct evidence. The study did not record neural activity to test these predictions, making them hypotheses for future work rather than demonstrated results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The linearized OFC model, despite limitations in capturing nonlinear biomechanics, was crucial for determining relationships between task demands, coarticulation, and feedback control. The model's core principle of task-dependent state feedback generalizes to nonlinear control policies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C76 provides a reasonable inference from comparing straight paths in Experiment 2 to curved paths in Experiment 1. Claim C77 acknowledges biomechanical influences with citation support. Claims C78-C79 appropriately discuss model limitations and generalizability with citations. The evaluation is balanced and scientifically sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The study examined two-reach sequences, with the expectation that longer sequences would be formed similarly since the model has no theoretical constraint on the number of intermediate goals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C80 accurately describes the scope of the study. However, C81 is speculative\u2014while the model can theoretically handle more targets (as shown in Figure 2\u2014figure supplement 4), the empirical validation was limited to two-reach sequences. The generalization to longer sequences remains untested and represents a limitation of the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The study proposes two mechanisms for sequence combination operating at different timescales: slow habituation involving de novo controller learning (days to months), and fast task-dependent modulation of existing controllers (within trials). These mechanisms are potentially dissociable with perturbations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82, C84, C85, C87 are supported by appropriate citations and the experimental design showing rapid coarticulation after minimal training (~100 trials). Claim C86 is a reasonable inference from the discussion. Claim C88 is appropriately framed as speculative about future research. The distinction between timescales is conceptually sound and well-grounded in cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The study employed appropriate methods including 29 participants (15 in Experiment 1, 14 in Experiment 2), a robotic manipulandum (KINARM) for precise control and perturbation delivery, EMG recording from shoulder muscles (PEC and PD), and a computational model of point-mass dynamics with optimal feedback control.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C102 describe the experimental methods and are supported by the Methods section. Sample sizes appear adequate given the large effect sizes observed. The experimental design with block randomization, perturbation trials, and EMG recording is appropriate for testing the hypotheses. The computational model is clearly specified with equations and parameters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The introduction establishes the scientific context by contrasting classical theories proposing holistic sequence specification with recent neural recordings suggesting independent execution of sequence elements. Prior behavioral studies show coarticulation across various motor domains, while recent M1 recordings show conflicting evidence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 appropriately summarize prior work with proper citations. The contrast between classical theories (C1) and recent findings (C2, C9-C12) versus earlier studies (C13) establishes the scientific debate. The behavioral evidence for coarticulation (C6-C8) is well-documented. This provides appropriate context for the study's contribution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C27",
+      "C28"
+    ],
+    "result": "The study is grounded in optimal feedback control (OFC) theory, which has been useful for predicting task-dependent control and feedback responses. The OFC framework proposes that all targets can be considered simultaneously, with control gains determining when each target influences the sequence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 establish the theoretical foundation with extensive citations to OFC literature. Claims C27-C28 describe the specific model implementation. The theoretical framework is well-established and appropriately applied to the sequence production problem. The citations are relevant and comprehensive.",
+    "result_type": "MINOR"
+  }
+]

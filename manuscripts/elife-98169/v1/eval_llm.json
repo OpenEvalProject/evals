@@ -1,0 +1,300 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "The study cohort of 6603 subjects was randomly divided into derivation (n=4622) and validation (n=1981) sets at a 7:3 ratio. The two sets showed no significant differences in PH prevalence (Grade I or higher: 39.57% vs 39.27%, p=0.820; Grade II or higher: 8.55% vs 8.58%, p=0.962) or age distribution (42.43\u00b116.93 vs 42.05\u00b116.41 years, p=0.390).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C11 provide consistent data on the study design and baseline characteristics. The randomization procedure is clearly stated, sample sizes match the 7:3 ratio, and statistical tests confirm no significant differences between derivation and validation sets for key variables. This demonstrates appropriate study design for model development and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "For PH \u2265 Grade I, LASSO regression with \u03bb_1se criterion selected 9 variables from 22 candidates. Multivariate logistic regression identified 7 independent risk factors: gender (OR 0.74), Tibetan ethnicity (OR 1.40), age (OR 1.03), IRBBB (OR 3.02), AF (OR 4.18), ST (OR 1.45), and TC (OR 1.36), all with p<0.003.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C51 describe a systematic variable selection process using LASSO followed by multivariate logistic regression. The reported ORs, confidence intervals, and p-values are internally consistent. The trade-off between \u03bb_min and \u03bb_1se (fewer variables but lower AUC) is acknowledged, showing appropriate model refinement for clinical applicability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "For PH \u2265 Grade II, LASSO regression with \u03bb_1se selected 11 variables. Multivariate logistic regression identified 9 independent risk factors: Tibetan ethnicity (OR 1.99), age (OR 1.04), RAD (OR 2.12), HVRV (OR 1.63), IRBBB (OR 4.53), AF (OR 8.18), PP (OR 4.42), ST (OR 3.48), and TC (OR 1.81), with p\u22640.007.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C63 present a parallel analysis for Grade II PH with consistent methodology. The larger ORs for several factors (especially AF: 8.18 vs 4.18) suggest stronger associations with more severe PH, which is biologically plausible. All statistical results include appropriate confidence intervals and significance levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C64",
+      "C65",
+      "C66",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "NomogramI (for PH \u2265 Grade I) was constructed using 7 risk factors and achieved AUC of 0.716 (derivation) and 0.718 (validation). Using a cut-off score of 45, the high-risk group showed significantly elevated PH risk compared to low-risk group (OR 4.210 in derivation, OR 4.207 in validation). NomogramI's AUC significantly exceeded that of any single independent factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14, C64-C66, C70-C73 demonstrate consistent model performance across derivation and validation sets. The similar AUCs (0.716 vs 0.718) indicate good generalizability. The high ORs for risk stratification and superiority over individual factors support clinical utility. However, the moderate AUC (~0.72) suggests limited discriminative ability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C67",
+      "C68",
+      "C69",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "NomogramII (for PH \u2265 Grade II) was constructed using 9 risk factors and achieved AUC of 0.844 (derivation) and 0.801 (validation). Using a cut-off score of 76, the high-risk group showed markedly elevated PH risk (OR 11.591 in derivation, OR 7.103 in validation). NomogramII's AUC significantly exceeded that of any single independent factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C67-C69, C77-C80 show NomogramII has substantially better discrimination than NomogramI (AUC 0.84 vs 0.72). The higher ORs for risk stratification (11.6 vs 4.2) indicate stronger predictive capability for more severe PH. The modest decrease in validation AUC (0.844\u21920.801) suggests some overfitting but acceptable generalizability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C81",
+      "C82",
+      "C83",
+      "C18"
+    ],
+    "result": "Both nomograms demonstrated good calibration. NomogramI showed high agreement between predicted and actual values with Hosmer-Lemeshow test p=0.109 (derivation) and p=0.317 (validation). NomogramII showed similar calibration with p=0.377 (derivation) and p=0.127 (validation). Both nomograms demonstrated satisfactory clinical consistency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C76, C81-C83, C18 provide calibration assessment through multiple methods. All Hosmer-Lemeshow p-values >0.05 indicate no significant deviation from perfect calibration. The calibration curves (referenced in figures) and statistical tests consistently support good model fit in both derivation and validation sets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Decision curve analysis showed NomogramI provided net benefit at threshold probabilities of 20-91% (derivation) and 14-74% (validation), outperforming individual factors. NomogramII showed net benefit at 1-70% (derivation) and 1-82% (validation), also exceeding individual factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 demonstrate clinical utility through DCA. The wider threshold ranges for NomogramII (1-82% vs 14-74%) suggest broader clinical applicability. Both nomograms consistently outperform individual predictors across derivation and validation sets, supporting their composite value.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C19"
+    ],
+    "result": "Comparison between nomograms showed that for PH \u2265 Grade I, NomogramI vs NomogramII had IDI=-0.0012 (p=0.278), categorical NRI=0.0117 (p=0.058), continuous NRI=-0.2423 (p<0.001). For PH \u2265 Grade II, NomogramII vs NomogramI had IDI=0.0366 (p<0.001), categorical NRI=0.0301 (p<0.05), continuous NRI=0.2785 (p<0.001), confirming NomogramII outperformed NomogramI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95, C19 provide rigorous statistical comparison using IDI and NRI metrics. The results logically show NomogramII (with more ECG features) performs better for Grade II PH but not for Grade I. The significant continuous NRI but borderline categorical NRI for Grade I suggests subtle differences. All metrics consistently support NomogramII's superiority for Grade II prediction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Age and Tibetan ethnicity were identified as independent predictors of PH, consistent with prior studies. The authors hypothesize this relates to longer hypoxic exposure at high altitude. AF emerged as the strongest predictor (highest OR in both nomograms), which the authors attribute to PH-induced pulmonary vascular remodeling causing myocardial fibrosis and apoptosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C110, C112 are supported by the regression analyses (C45-C51, C55-C63) and cited literature. However, C111 is explicitly labeled as a hypothesis without direct evidence. C113 cites literature but represents a mechanistic interpretation rather than a finding from this study. The causal direction between AF and PH cannot be established from this cross-sectional design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C114"
+    ],
+    "result": "No single predictor alone was effective in distinguishing PH, exhibiting poor clinical utility compared to the comprehensive nomogram approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C114 is supported by the comparative ROC and DCA analyses (C72-C73, C79-C80, C86, C89) showing nomograms consistently outperform individual factors. This justifies the multivariable approach and demonstrates added value of combining predictors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Data were collected from patients undergoing both TTE and ECG at the General Hospital of Tibet Military Command (April 2021-October 2023). Inclusion criteria: age >14 years, TTE-ECG interval <2 months, shortest interval selected for multiple examinations. PH was graded by sPAP: Grade I (30-50 mmHg), Grade II (50-70 mmHg), Grade III (\u226570 mmHg). Ethics approval obtained (2024-KD002-01), data anonymized, informed consent waived.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C107 clearly describe study methodology, inclusion criteria, PH classification system, and ethical procedures. The definitions are explicit and appropriate. The waiver of informed consent for retrospective anonymized data is standard practice. However, the study lacks information about exclusion criteria and potential selection bias.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "Statistical analysis was performed using R software version 4.3.2 with significance threshold p<0.05 (two-tailed).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 specify the software and significance threshold used. While the software version is stated, the manuscript lacks details about specific R packages, random seeds for reproducibility, or handling of missing data, which limits full reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Study limitations include: (1) TTE is a screening method, not the gold standard for PH diagnosis; (2) the dataset was exclusively from Tibet, China, lacking external validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C116 appropriately acknowledge important limitations. C115 correctly notes TTE estimates PH risk but RHC is the gold standard (consistent with C26-C27). C116 identifies a critical limitation\u2014lack of external validation means generalizability to other high-altitude populations or different ethnic groups is uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C96"
+    ],
+    "result": "A free web-based dynamic NomogramII is available at https://dapeng.shinyapps.io/dynnomapp-1/.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C96 states the availability of an online tool with a specific URL and references Figure 3G showing a screenshot. This enhances clinical applicability and reproducibility, though the long-term maintenance and accessibility of the web tool cannot be verified from the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "The authors argue that ECG-based prediction is practical for high-altitude regions because ECG is easy to administer, cost-effective, and feasible for telemedicine. ECG results correlate with PH severity and can aid clinicians in identifying potential PH patients in remote areas. The nomograms offer straightforward evaluation without medical professional intervention and are anticipated to serve as effective clinical tools.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C117-C118 cite literature support for ECG utility. However, C119-C122 make assertions about clinical utility and future application that extend beyond the study's validation. The nomograms were only internally validated in one Tibetan hospital; claims about effectiveness in \"remote plateau areas\" (C119) or serving as \"effective clinical tools\" (C122) require prospective external validation and implementation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The introduction provides background on PH pathophysiology, epidemiology, diagnosis, and high-altitude PH mechanisms, all supported by citations to prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C40 present established medical knowledge about PH with appropriate citations. These provide context for the study but are not original findings. The information appears accurate based on the cited sources, though verification of citation accuracy is beyond the scope of this review.",
+    "result_type": "MINOR"
+  }
+]

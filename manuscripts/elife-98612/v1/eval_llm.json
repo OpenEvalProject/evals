@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C17",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "aqp1a.1 and aqp8a.1 are differentially expressed in newly formed vascular sprouts during zebrafish development, with aqp1a.1 enriched in tip cells and aqp8a.1 enriched in stalk cells. Expression was confirmed by in situ hybridization and scRNAseq at multiple developmental stages (30 hpf, 2-4 dpf, 20-22 hpf).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary techniques (whole-mount in situ hybridization, RNAscope, scRNAseq) consistently demonstrate differential spatial and temporal expression patterns of aqp1a.1 and aqp8a.1 in endothelial cells. The quantitative data (61% of ISVs with higher aqp1a.1 in tip cells, 78% with higher aqp8a.1 in stalk cells at 22 hpf) supports the differential expression claim. The data is well-documented across multiple figures.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C122",
+      "C123"
+    ],
+    "result": "VEGFR2 activity upregulates aqp1a.1 and aqp8a.1 expression in zebrafish and AQP1 expression in human endothelial cells. Treatment with VEGFR2 inhibitor ki8751 suppressed aqp1a.1 by 52% (p<0.0001) and aqp8a.1 by 17% (p=0.0028) in zebrafish, and AQP1 by 31% (p=0.0023) in human cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The qPCR data demonstrates statistically significant suppression of aquaporin expression upon VEGFR2 inhibition in both zebrafish and human cells. The cross-species validation strengthens the finding. However, C45 reports p=0.1032 for 10 nM ki8751, which is not statistically significant, creating some inconsistency in the dose-response relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C18",
+      "C124"
+    ],
+    "result": "Aqp1a.1 and Aqp8a.1 proteins localize to membrane clusters at the leading edge of migrating tip cells and in filopodia, as demonstrated by time-lapse imaging of transgenic zebrafish expressing fluorescently-tagged aquaporins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The localization data from transgenic lines provides direct visualization of Aqp1a.1 and Aqp8a.1 protein distribution. Time-lapse imaging demonstrates sustained enrichment at the migrating front during ISV formation (24-30 hpf). The polarized localization is consistent with a role in directional water flux, though C51 appropriately notes this is suggestive rather than definitive.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "CRISPR/Cas9-generated mutations in aqp1a.1 (rk28 allele) and aqp8a.1 (rk29 allele) result in premature termination codons and significantly decreased mRNA expression, suggesting loss of functional protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The molecular characterization of the mutant alleles is thorough, with DNA sequencing confirming frameshift mutations leading to premature stop codons. The decreased mRNA expression detected by in situ hybridization and qPCR is consistent with nonsense-mediated decay. However, C55 acknowledges that protein loss is inferred rather than directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C20"
+    ],
+    "result": "Loss of aqp1a.1 and/or aqp8a.1 function results in defective ISV formation with reduced vessel length at 28 hpf and increased truncated vessels at 3 dpf. The phenotype shows additive effects, with double mutants more severely affected than single mutants, and aqp1a.1 loss having greater impact than aqp8a.1 loss.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The vascular phenotypes are well-documented with quantitative measurements of ISV length and detailed classification of vessel defects. The additive genetic interaction is clearly demonstrated by comparing single and double mutants. The spatial distribution of defects (trunk vs. tail) and temporal progression (28 hpf to 3 dpf) are thoroughly characterized. Statistical significance is reported for key comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72"
+    ],
+    "result": "The dorsal longitudinal vein (DLV) length is reduced in aqp1a.1rk28/rk28 embryos at 4 dpf (p=0.0098), and 2 out of 21 mutant embryos completely lack the DLV.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The DLV phenotype is quantified with statistical significance and appropriate sample size (n=21). The complete absence of DLV in ~10% of mutants represents a severe phenotype. The comparison to vegfab-/- and vegfc-/- mutants provides useful context, though the penetrance differs (10% vs. 50%).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Reduced EC number per vessel in aquaporin double mutants at 2-3 dpf is not due to decreased cell division, as mitotic events are similar between control and mutant embryos between 21-30 hpf.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The EC counting data demonstrates reduced cell numbers in mutant vessels. The mitotic event quantification appropriately rules out proliferation defects as the cause. This negative result is important for understanding the mechanism and is supported by quantitative data. However, the conclusion in C74 that defects \"may result from insufficient EC number\" is somewhat circular.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C4",
+      "C5"
+    ],
+    "result": "Tip cell emergence from the dorsal aorta is delayed in aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 embryos (22-28 hpf) compared to controls (20-24 hpf), and some mutant tip cells retract rather than extending dorsally.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Time-lapse imaging provides direct evidence of delayed tip cell emergence with clear temporal quantification. The observation of retracting protrusions in mutants is documented with video evidence. The data directly supports the claim of impaired tip cell behavior, though sample sizes for time-lapse experiments are not explicitly stated in these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C19"
+    ],
+    "result": "Aquaporin double mutant tip cells show reduced filopodia number (9.8\u00b15.5 vs. 18.73\u00b15.1 per 100 \u00b5m in wildtype) and length (4.5\u00b12.2 vs. 5.5\u00b12.8 \u00b5m), with decreased actin polymerization rate (0.029\u00b10.011 vs. 0.055\u00b10.013 \u00b5m/s, p<0.0001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The filopodia phenotypes are quantified with appropriate statistics and clear differences between genotypes. The actin polymerization rate measurement using Lifeact-mCherry tracking provides mechanistic insight. The claim in C85 that reduced filopodia \"can be accounted for by\" decreased actin polymerization is reasonable but somewhat inferential. The data supports reduced membrane protrusions as stated in C19.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Aquaporin double mutant embryos show slower tip cell membrane expansion, decreased nuclear displacement, and reduced migration velocity, but maintain normal cell polarity. Aqp1a.1 and Aqp8a.1 regulate sprouting angiogenesis by promoting tip cell emergence, membrane protrusion formation, and EC migration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The migration defects are documented with time-lapse imaging and quantitative measurements. The polarity analysis (Golgi positioning) appropriately rules out a general polarity defect. C92 represents a reasonable synthesis of the findings, though it is somewhat interpretive. The multiple lines of evidence (emergence timing, protrusion dynamics, migration velocity) converge to support the overall conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Tip cell volume is reduced by 26% in aqp1a.1rk28/rk28;aqp8a.1rk29/rk29 mutants (709.8\u00b1293.5 \u00b5m\u00b3 vs. 964.6\u00b1270.2 \u00b5m\u00b3, p=0.015) and increased by 36% with Aqp1a.1 overexpression (1313\u00b1527.4 \u00b5m\u00b3, p=0.0069), supporting water influx as the direction of flow mediated by aquaporins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The cell volume measurements provide direct evidence for aquaporin-mediated water flux. The bidirectional manipulation (loss-of-function and gain-of-function) strengthens the conclusion. The 3D reconstruction methodology is appropriate for volume measurement. However, the relatively large standard deviations and modest sample sizes (n=20-32 cells) suggest some measurement variability. The inference about water influx direction (C99) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C145"
+    ],
+    "result": "The anion channel SWELL1 (lrrc8aa) is expressed in endothelial tip cells and co-expressed with aquaporins in a subset of ECs. DCPIB inhibition of SWELL1 impairs ISV formation, tip cell migration, and filopodia formation, suggesting SWELL1 establishes osmotic gradients to direct water flow.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNAseq data documents lrrc8aa expression and co-expression with aquaporins. RNAscope confirms expression in tip cells. The DCPIB treatment experiments show phenotypes similar to aquaporin mutants, supporting a functional relationship. However, the interpretation in C106 and C110 about osmotic gradient establishment is somewhat speculative. The pharmacological approach has limitations (potential off-target effects, unclear whether effects are cell-autonomous), which are acknowledged in the discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C6",
+      "C21",
+      "C22",
+      "C133"
+    ],
+    "result": "Combined inhibition of actin polymerization (Latrunculin B treatment) and water influx (aquaporin double mutants) results in greater impairment of ISV formation (43.10\u00b124.42 \u00b5m) than either perturbation alone (61.53\u00b123.27 \u00b5m for Lat.B, 63.75\u00b130.24 \u00b5m for mutants), demonstrating additive functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The experimental design directly tests the hypothesis of two independent mechanisms by combining genetic and pharmacological perturbations. The quantitative data shows statistically significant additive effects (p=0.0028 and p<0.0001 for relevant comparisons). This is a key result supporting the dual mechanism model. The controls are appropriate (DMSO-treated wildtype and mutants, Lat.B-treated wildtype).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C2",
+      "C7",
+      "C120",
+      "C121",
+      "C131",
+      "C132",
+      "C156"
+    ],
+    "result": "Endothelial tip cells employ two concurrent mechanisms of migration during sprouting angiogenesis: actin polymerization and hydrostatic pressure generated by aquaporin-mediated water inflow. This study highlights the role of hydrostatic pressure in tissue morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This represents the central conclusion of the manuscript, synthesizing multiple lines of evidence: aquaporin expression and localization, loss-of-function phenotypes, cell volume changes, and additive effects with actin inhibition. The evidence collectively supports the dual mechanism model. However, hydrostatic pressure itself is not directly measured but inferred from water influx and cell volume changes. The broader implication for tissue morphogenesis (C7, C156) is reasonable but somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Water influx leads to elevated hydrostatic pressure due to water's incompressibility, which expands and deforms membranes to generate protrusions. Water influx can also reduce cytoplasmic viscosity and promote actin polymerization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "C128 represents established biophysical principles (water incompressibility). C129 is a reasonable mechanistic proposal but is not directly tested in this study\u2014hydrostatic pressure is not measured, and membrane deformation is not quantified independently of other factors. C130 cites literature support but this mechanism is not experimentally validated in the current study. These represent plausible mechanisms consistent with the data but require further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C15",
+      "C111",
+      "C112"
+    ],
+    "result": "ECs can still migrate and form ISVs after inhibition of actin polymerization, as previously demonstrated by the authors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a key prior observation that motivates the current study. It is appropriately cited to previous work (Phng et al., 2013). The current study builds on this observation to identify the alternative mechanism. This represents established prior knowledge from the authors' laboratory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C16",
+      "C23",
+      "C81",
+      "C93",
+      "C101",
+      "C102",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Background knowledge about endothelial cell biology, aquaporin function, hydrostatic pressure in morphogenesis, and ion channel regulation of cell migration, as established in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from the literature, appropriately cited. They provide necessary context for interpreting the current findings. The citations appear appropriate and the knowledge claims are consistent with the field. These are not novel findings of the current study but important background.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C94",
+      "C113",
+      "C114"
+    ],
+    "result": "Hypotheses proposed by the authors: water flux can change tip cell volume, ECs employ water influx when actin polymerization is compromised, and depleting both mechanisms will cause greater impairment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These represent explicit hypotheses that are subsequently tested in the study. C94 is tested by cell volume measurements (supported). C113-C114 are tested by the Latrunculin B experiments in aquaporin mutants (supported). It is appropriate to state hypotheses before testing them.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C134",
+      "C157"
+    ],
+    "result": "Speculation about broader implications: dual mode migration is advantageous in confined spaces, and other tissues may depend on aquaporin function and hydrostatic pressure for morphogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These represent reasonable speculation based on the findings but are not directly tested. C134 is a plausible interpretation of why the dual mechanism exists. C157 extrapolates to other tissues without direct evidence. These are appropriate as discussion points but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C139"
+    ],
+    "result": "This study demonstrates for the first time a role of Aqp8a.1 in promoting EC migration and sprouting angiogenesis in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The loss-of-function data for aqp8a.1 single mutants clearly demonstrates a role in ISV formation, though less severe than aqp1a.1. This appears to be a novel finding for this specific gene in this context. The claim of novelty is reasonable given the literature cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C146"
+    ],
+    "result": "Enrichment of Aqp1a.1 and Aqp8a.1 proteins at the leading edge of migrating tip cells and apical membranes during lumen formation was observed (data not shown).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This claim references unpublished observations. Without the data, it cannot be evaluated. If the lumen formation data is important for the conclusions, it should be included. The leading edge localization is shown in Figure 2, but the lumen formation observation is not documented in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

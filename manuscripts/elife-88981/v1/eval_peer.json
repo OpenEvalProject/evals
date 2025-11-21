@@ -1,0 +1,128 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors developed DGRPool, a web-based tool that aggregates phenotyping data from 1034 phenotypes across 135 DGRP studies (43 curated, 80 under curation, 12 submitted), enabling users to download data and run GWAS and PheWAS analyses. The tool uses Ruby-on-Rails backend with PostgreSQL database and implements GWAS using PLINK2 on ~4M DGRP variants with correction for six known covariates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers acknowledge the tool's development and utility. The editor states the tool 'makes data and results from the Drosophila Genetic Reference Panel accessible' with 'convincing evidence using appropriate and validated methodology.' Reviewer 1 calls it 'technically sound' and 'a useful resource,' while Reviewer 2 acknowledges 'considerable efforts were dedicated toward curating the many DRG studies provided.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C51",
+      "C52"
+    ],
+    "result": "The manuscript provides background on the DGRP resource, noting it consists of 205 fully sequenced inbred lines (192 available), has been used in 155 publications from 2012-2024, and that the existing DGRP2 website hosts limited data (31 phenotypes from 12 studies) and has not been updated since 2015.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these background claims about DGRP. The editor affirms that 'genetic analysis of complex traits in Drosophila provides a resource for exploring the relationship between genetic and phenotypic variation,' implicitly accepting the characterization of DGRP's value and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C53"
+    ],
+    "result": "Analysis of phenotype correlations reveals that within-study phenotypes correlate more strongly than cross-study phenotypes, though the longevity phenotype shows strong correlation across sexes and robustness between laboratories. Expected correlations are observed between studies examining similar traits (e.g., morphology studies, Wolbachia studies).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these correlation analyses. The editor describes findings as 'supported by convincing evidence using appropriate and validated methodology,' and Reviewer 2 acknowledges the tool 'lets users view association results for phenotypes and compare mean phenotype ~ phenotype correlations between studies' without raising concerns about the correlation findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Using DGRPool to study longevity as proof-of-concept, the authors identified 33 phenotypes significantly correlated with longevity at 5% FDR, including expected correlations (starvation resistance, oxidative stress resistance) and less intuitive ones (desiccation survival, locomotor activity anti-correlation, food intake anti-correlation).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these longevity correlation findings. Reviewer 2 specifically mentions the authors 'highlight cross-trait correlations by comparing studies focused on longevity with phenotypes such as oxphos and activity' without critique. The editor's statement that findings are 'supported by convincing evidence' encompasses these proof-of-concept analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "DGRPool pre-calculated GWAS analyses for all phenotypes using PLINK2, considering ~4M variants with covariate correction. The authors propose p\u22641\u00d710\u207b\u2076 as a practical threshold (vs. Bonferroni p\u22642.67\u00d710\u207b\u2078 which yielded median=0 hits). As validation, GWAS on azinphos-methyl survival correctly identified the Accord LTR insertion upstream of Cyp6g1 as the top variant associated with organophosphate resistance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the GWAS implementation or threshold selection. The editor affirms the methodology is 'appropriate and validated' and 'in line with current state of the art.' The successful identification of the known Cyp6g1 association serves as validation that reviewers implicitly accept by not questioning it.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Analysis of 'fraction of extremeness' across DGRP lines revealed modest correlation between sexes (\u03c1=0.3514) and identified some lines with consistently lower longevity (DGRP_757, DGRP_765), but found no evidence of 'super normals' or inherently biased lines that would significantly affect genetic studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question this extremeness analysis. The editor's statement that findings are 'supported by convincing evidence' and Reviewer 1's assessment of the paper as 'technically sound' encompass acceptance of these analytical results without specific critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C54",
+      "C55"
+    ],
+    "result": "The manuscript presents examples of cross-study phenotype correlations from the literature, including the correlation between remating proportion and fecundity, cross-pathogen defense correlations (Ma549 and Pa14), and correlations between brain structure size and behavioral phenotypes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are literature-based examples cited to contextualize the tool's utility. Reviewers do not challenge these cited findings, and they serve as supporting context rather than novel claims requiring evaluation.",
+    "result_type": "MINOR"
+  }
+]

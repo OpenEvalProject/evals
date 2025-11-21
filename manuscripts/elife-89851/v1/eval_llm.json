@@ -1,0 +1,214 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "One-dimensional (1D) attractors align grid cells as effectively as two-dimensional (2D) attractors. Both 1D and 2D attractor architectures produce grid maps with hexagonal symmetry, shared spacing and orientation, and similar gridness scores, with only minor differences in spacing and spread metrics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C14-C18 collectively demonstrate through simulation data (100 simulations per condition) that 1D attractors produce grid cell alignment comparable to 2D attractors. The quantitative metrics (gridness, spacing, spread) and visual evidence (Figures 1-2) provide strong convergent support. The statistical comparisons show marked differences only between attractor conditions and the no-attractor control, not between different attractor types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Population activity from 1D, 2D, and stripe (1DL) attractors forms a toroidal manifold in high-dimensional space. Topological data analysis reveals that >90% of data points have local dimensionality of 2, local homology \u03b2\u2081=1 (no boundaries/singularities), orientability, and Betti numbers [1,2,1] characteristic of a torus, with 82% of 1D and 76% of 2D simulations classified as toroidal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C21-C29 provide rigorous mathematical evidence using persistent homology and topological data analysis. The systematic application of the classification theorem for closed surfaces (local dimension, boundary/singularity analysis, orientability testing) is methodologically sound. The high percentages (>90% local dim=2, 82-76% toroidal classification) across 100 simulations per condition provide strong statistical support. The use of established TDA methods (Ripser, GUDHI) with appropriate parameters (k=10) strengthens the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C33"
+    ],
+    "result": "The architecture and representation manifold of an attractor network need not have the same dimensionality or topology. While 1D (ring) and 1DL (stripe) attractors have 1D architecture, they produce 2D toroidal population activity, whereas analysis of the transpose matrix preserves the architectural topology (ring [1,1,0] for 1D, stripe [1,0,0] for 1DL).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C33 are strongly supported by the dual topological analyses showing different results for population activity (matrix M) versus network architecture (transpose of M). The demonstration that 1D architectures produce 2D toroidal dynamics is a novel finding with clear mathematical evidence. This represents a proof of principle against the common assumption that attractor architecture and representation space must match in dimensionality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "One-dimensional flexible attractors allow multiple configuration orders (O0-O3) in physical space, with the constraint imposed by hexagonal symmetry compatible with countably infinite configurations. The weak constraint allows many solutions to coexist as local minima in the self-organization energy landscape.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34-C36 are supported by the classification of 100 simulations into 4 distinct configuration orders (Figure 6) and the mathematical reasoning about hexagonal periodicity. The observation of multiple stable configurations demonstrates flexibility. However, the claim of \"countably infinite\" configurations (C35) is a mathematical inference that depends on the assumption that attractors can stretch arbitrarily, which may have practical limits not fully explored in the simulations with only 100 neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C19",
+      "C20"
+    ],
+    "result": "During learning, individual grid cell spacing decreases over time with strong negative correlations (R: -0.74 to -0.78, p<10\u207b\u2077\u00b9) in all attractor conditions, qualitatively similar to experimental observations in animals familiarizing with novel environments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C20 are supported by clear statistical evidence with very strong correlations and highly significant p-values. The comparison to experimental data (C20, Barry et al., 2007) is appropriately qualified as \"qualitative\" since the model shows trends similar to but not quantitatively matching experimental observations. The authors appropriately note this is only a qualitative similarity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39"
+    ],
+    "result": "When attractors are inactive, weak, or shuffled, grid maps show markedly lower hexagonal symmetry, fail to align, and do not constrain population activity into a torus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C39 is supported by control experiments shown in Figure 2 and supplementary figures. The comparison of different attractor strengths (Figure 2\u2014supplement 1) and shuffled conditions demonstrates the necessity of properly structured attractors for grid cell alignment. This provides important negative controls validating that the observed effects are specifically due to attractor architecture.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Analysis of the transpose matrix (individual neuron maps) reveals architectural signatures: 86% of 1D simulations show ring topology [1,1,0], 97% of 1DL show stripe topology [1,0,0], but only 27% of 2D simulations show clear toroidal topology [1,2,1] with 69% showing [1,2,0].",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by the data, though the authors appropriately note the difficulty in detecting the cavity in 2D individual simulations (C30) is likely due to low sample size (100 neurons vs 625 pixels). The high percentages for 1D (86%) and 1DL (97%) provide strong evidence that simpler architectures are more readily detected in this analysis. The methodological limitation for 2D is acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C60"
+    ],
+    "result": "Three-dimensional Isomap projections visualize the twisted torus but produce variable representations (tetrahedron vs torus-like shapes) for different simulations using identical parameters, demonstrating that dimensionality reduction does not guarantee preservation of topology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38, C60 are well-supported and include appropriate caveats about the limitations of dimensionality reduction methods. The observation that identical Isomap parameters produce different visualizations (Figure 7) is important for the field and the authors correctly warn against over-interpreting such visualizations. This represents good scientific practice in acknowledging methodological limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Grid cells implement hexagonal spatial codes with cells in the same module sharing spacing and orientation. Previous computational models typically use 2D continuous attractors with local synaptic interactions to achieve alignment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C9 represent established background knowledge appropriately cited from the literature. These provide the necessary context for understanding why the current work (showing 1D attractors can achieve similar results) is significant. The citations are appropriate and the characterization of prior work appears accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Grid cells can represent variables beyond 2D space (1D space, time, sound frequency, 3D space) with poor or no periodicity, can undergo local/global map modifications under experimental manipulations, and recent experiments show 1D ring rather than 2D toroidal dynamics when animals navigate without sensory/vestibular feedback.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 accurately summarize experimental findings from the literature with appropriate citations. These observations motivate the exploration of simpler attractor architectures. The characterization of prior experimental work appears accurate and the citations are appropriate. Claim C12 about recent experimental findings (Gonzalo Cogno et al., 2024) provides particularly relevant motivation for the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C13",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The model consists of 225 place cell-like inputs projecting to 100 grid cells with Hebbian plasticity on feedforward weights and fixed recurrent weights. Different attractor architectures (2D toroidal, 1D ring, 1DL stripe) were implemented with specific connectivity functions. Topological analyses used kNN-distance (k=10) and persistent homology with local PCA using k=70 (attractors) or k=20 (no attractor).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C48-C56 provide clear methodological descriptions. The model parameters are explicitly stated and the analysis methods are described with appropriate technical detail and citations to established methods (Ripser, GUDHI). The choice of parameters (k values) is justified as producing stable results. The methods appear sound and reproducible, though some details about parameter optimization are in supplementary materials.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25"
+    ],
+    "result": "Data clouds in the No attractor condition do not meet the conditions for classification as closed surfaces, showing boundaries at the perimeter of the analyzed region and forming a 2D sheet rather than a closed manifold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C25 is supported by the local dimensionality and homology analyses (Figure 3) showing systematic \u03b2\u2081=0 at boundaries in the No condition. This provides an important negative control demonstrating that the toroidal topology specifically requires attractor connectivity. The spatial structure of deviations (concentrated at edges) supports the interpretation of a bounded sheet.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Discussion claims about grid cell versatility across dimensions, experimental evidence for path integration, developmental changes, and distribution across brain areas, along with gaps in direct experimental proof of path integration involvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 represent discussion points appropriately citing relevant literature. These contextualize the findings and suggest future directions. The characterization of experimental findings and gaps in knowledge appears accurate with appropriate citations. Claim C45 appropriately identifies a limitation in current experimental evidence regarding path integration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59"
+    ],
+    "result": "Isomap is a non-linear dimensionality reduction method that preserves geodesic distances while mapping data to lower-dimensional Euclidean space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C59 accurately describes the Isomap method. This is established knowledge appropriately presented to explain the visualization approach used in the study.",
+    "result_type": "MINOR"
+  }
+]

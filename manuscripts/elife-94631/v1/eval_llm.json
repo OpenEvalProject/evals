@@ -1,0 +1,302 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "OVO is required for female germline viability and is continuously expressed throughout oogenesis and embryogenesis. OVO positively regulates its own expression and that of ovarian tumor (otu) by binding to their transcriptional start sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C38-C43 are well-supported by extensive prior work cited throughout the manuscript. These establish the essential role of OVO in female germline development and its autoregulatory function, providing the foundation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C69",
+      "C70"
+    ],
+    "result": "ChIP-seq analysis identified 3,094 overlapping OVO binding peaks genome-wide. De novo motif analysis revealed the core OVO-binding sequence is 5'-TAACNGT-3', present in 72% of ChIP peaks, with ChIP read density centered on motif locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C70 are supported by rigorous ChIP-seq methodology using two independent tagged alleles (OVO-HA and OVO-GFP) with high concordance (91% overlap). The motif analysis using STREME is appropriate and the identified motif matches previously published in vitro motifs, providing strong validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C78"
+    ],
+    "result": "OVO preferentially binds at or near transcriptional start sites genome-wide. 45% of OVO ChIP peaks directly overlap TSSs, with additional peaks in gene bodies (43%) and intergenic regions (12%). CAGE-seq analysis confirmed OVO binding at actively transcribed ovary TSSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C71-C78 are well-supported by multiple complementary analyses including relative distance measurements, CAGE-seq validation, and read density plots. The integration of empirically-determined TSSs from CAGE-seq with ChIP-seq data strengthens the conclusion that OVO binds near active promoters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "OVO binding is significantly associated with open chromatin and transcriptionally active histone marks (H3K27ac, H3K4me3) while depleted at repressive marks (H3K27me3, H3K9me3). This association is maintained across developmental stages from GSCs to stage 5 egg chambers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C79-C94 are supported by comprehensive integration of ChIP-seq with published ATAC-seq and histone ChIP-seq datasets. Fisher's exact tests demonstrate statistically significant enrichments and depletions with appropriate p-values and odds ratios. The stage-specific analysis adds temporal resolution to the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "OVO DNA binding motifs show broad distribution around TSSs without precise spacing characteristic of core promoter elements. OVO-bound promoters are enriched for INR, DPE, and MTE elements but depleted for TATA-box elements, suggesting OVO facilitates rather than directly anchors the transcriptional machinery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C95-C110 are supported by detailed promoter architecture analysis using CAGE-seq data and motif enrichment analysis. The lack of precise motif spacing (C9, C108) is a key negative result that appropriately rules out OVO as a core polymerase complex member. Statistical enrichments for promoter elements are properly calculated with Fisher's exact tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "RNA-seq comparing hypomorphic ovo alleles with rescue constructs revealed 1,994 genes increased and 2,924 genes decreased in expression. Among expressed genes, 666 that were OVO-bound showed significant upregulation (p<0.01, OR=2.21), while OVO-bound genes were depleted among downregulated genes (p<0.01, OR=0.85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C121 are supported by well-designed RNA-seq experiments using a clever genetic system to overcome lethality. The differential expression analysis with appropriate cutoffs (p-adj<0.05, |log2FC|>0.5) and integration with ChIP-seq data using Fisher's exact tests provides strong evidence for OVO as a positive transcriptional regulator. The use of vas and GAL4 as internal controls is appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "Genes upregulated by OVO are enriched for expression in 0-2 hour embryos (71%, p<0.01, OR=2.8), indicating they are maternally deposited. Downregulated genes are depleted in embryos (21%, p<0.01, OR=0.17), suggesting they are soma-specific and likely reflect technical differences in tissue composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C129 are supported by appropriate cross-referencing with modENCODE embryo data and statistical testing. The interpretation that downregulated genes reflect somatic contamination rather than direct OVO repression (C128-C129) is reasonable given OVO's germline-specific expression, though this remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C10",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "525 genes bound by OVO at their TSS and upregulated in rescue experiments are enriched for 45 GO terms related to female reproduction and maternal control of embryonic development, indicating OVO is essential for constructing eggs and depositing maternal RNAs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10 and C134-C137 are supported by stringent filtering criteria (TSS overlap + upregulation) and appropriate GO term enrichment analysis using gProfiler with proper background controls. The biological interpretation is well-justified by the specific GO terms identified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "OVO directly regulates essential maternal pathways including anterior/posterior specification (bcd, exu, swa, osk, nos), germ plasm specification (aub, pgc, gcl), egg activation (png, plu, gnu, wisp, C(3)g, mtrm), and translational regulation (cup, orb, bru1, me31B), as evidenced by OVO binding at their promoters and transcriptional upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C14 and C130-C143, C157-C160 are supported by integration of ChIP-seq showing OVO binding at specific loci, RNA-seq showing upregulation, and motif analysis showing OVO binding sites near TSSs. The validation of known targets (ovo, otu) strengthens confidence in novel targets. Figure 6 provides visual confirmation of these patterns at representative loci.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C144",
+      "C153",
+      "C156"
+    ],
+    "result": "OVO functions as a master transcriptional regulator of oocyte development, responsible for expression of structural egg components and maternally-provided RNAs required for early embryonic development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17, C144, C153, and C156 represent the main conclusion synthesizing all experimental results. This is well-supported by the comprehensive ChIP-seq, RNA-seq, and functional genomics data showing OVO regulates hundreds of essential maternal genes across multiple developmental pathways.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152"
+    ],
+    "result": "OVO regulates vitelline membrane genes fs(1)N, fs(1)M3, and closca, which are required for egg integrity. The phenotypic similarity between loss-of-function of these genes and the ovoD3 dominant-negative allele suggests OVOD3 may repress these targets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C145-C152 are supported by ChIP-seq and RNA-seq data showing OVO binding and transcriptional regulation of vitelline membrane genes. However, the connection to ovoD3 phenotype (C151) is speculative, appropriately qualified as 'plausible' in the text. The phenotypic similarity provides circumstantial support but direct testing would strengthen this conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C161",
+      "C162"
+    ],
+    "result": "Important germ plasm factors staufen and tudor are not bound by or transcriptionally responsive to OVO, indicating other transcription factors regulate these genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C161-C162 are supported by negative results from ChIP-seq and RNA-seq data. This is an important finding demonstrating OVO is not universally required for all germline genes, though the inference about other transcription factors (C162) is logical but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "OVO is unlikely to be a core RNA polymerase complex component or analogous to male germline TATA-associated factors, but rather functions as a transcriptional activator based on lack of precise motif spacing and prior reporter studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C163-C165 are supported by the motif spacing analysis (C108-C109) and integration with prior functional studies. The negative conclusions (C163-C164) are appropriately drawn from the lack of precise motif positioning. The positive conclusion about activation (C165) is supported by both current RNA-seq data and cited prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "OVO may function as a pioneer factor or chromatin remodeler, maintaining chromatin accessibility at target loci even when transcription decreases during egg chamber differentiation, as evidenced by increased ATAC-seq association but decreased H3K27ac in stage 5 chambers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C166-C170 are speculative interpretations (appropriately qualified with 'might' in the text) based on stage-specific chromatin data. While the observation of maintained open chromatin with reduced active histone marks (C168) is data-supported, the mechanistic interpretation as pioneer activity (C169-C170) requires direct functional testing. This represents an interesting hypothesis for future work rather than a demonstrated result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178"
+    ],
+    "result": "Prior studies show OVO binding site removal reduces but does not abolish reporter expression, similar to the pioneer factor zelda. Whether OVO achieves similar effects through pioneering activity or cooperation with other factors requires further exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C178 accurately summarize prior work on OVO and zelda reporter constructs. These are appropriately cited and the comparison is reasonable. However, this represents discussion of prior work and analogy rather than new results from the current study. The conclusion that the mechanism needs further exploration (C178) is appropriately cautious.",
+    "result_type": "MINOR"
+  }
+]

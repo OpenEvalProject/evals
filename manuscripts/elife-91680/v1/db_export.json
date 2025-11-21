@@ -1,0 +1,1698 @@
+{
+  "submission": {
+    "id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:55:34.579927Z",
+    "updated_at": "2025-11-21T22:55:34.579927Z"
+  },
+  "content": [
+    {
+      "id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "content_type": "manuscript",
+      "content_text": "# The exchange dynamics of biomolecular condensates\n\n## Authors\n\n- Yaojun Zhang<sup>1</sup> ([ORCID: 0000-0003-4587-6834](https://orcid.org/0000-0003-4587-6834)) \u2020\n- Andrew GT Pyo<sup>4</sup>\n- Ross Kliegman<sup>2</sup>\n- Yoyo Jiang<sup>2</sup>\n- Clifford P Brangwynne<sup>5</sup> ([ORCID: 0000-0002-1350-9960](https://orcid.org/0000-0002-1350-9960))\n- Howard A Stone<sup>7</sup> ([ORCID: 0000-0002-9670-0639](https://orcid.org/0000-0002-9670-0639))\n- Ned S Wingreen<sup>8</sup> ([ORCID: 0000-0001-7384-2821](https://orcid.org/0000-0001-7384-2821)) \u2020\n\n### Affiliations\n\n1. Center for the Physics of Biological Function, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n2. Department of Physics and Astronomy, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n3. Department of Biophysics, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))\n4. Department of Physics, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n5. Department of Chemical and Biological Engineering, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n6. Howard Hughes Medical Institute Chevy Chase United States ([ROR:006w34k90](https://ror.org/006w34k90))\n7. Department of Mechanical and Aerospace Engineering, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n8. Department of Molecular Biology, Princeton University Princeton United States ([ROR:00hx57361](https://ror.org/00hx57361))\n9. Lewis-Sigler Institute for Integrative Genomics Princeton United States\n\n\u2020 Corresponding author\n\n## Abstract\n\nA hallmark of biomolecular condensates formed via liquid-liquid phase separation is that they dynamically exchange material with their surroundings, and this process can be crucial to condensate function. Intuitively, the rate of exchange can be limited by the flux from the dilute phase or by the mixing speed in the dense phase. Surprisingly, a recent experiment suggests that exchange can also be limited by the dynamics at the droplet interface, implying the existence of an \u2018interface resistance\u2019. Here, we first derive an analytical expression for the timescale of condensate material exchange, which clearly conveys the physical factors controlling exchange dynamics. We then utilize sticker-spacer polymer models to show that interface resistance can arise when incident molecules transiently touch the interface without entering the dense phase, i.e., the molecules \u2018bounce\u2019 from the interface. Our work provides insight into condensate exchange dynamics, with implications for both natural and synthetic systems.\n\n## Introduction\n\nThe interior of cells is organized in both space and time by biomolecular condensates, which form and dissolve as needed (Shin and Brangwynne, 2017; Banani et al., 2017). These condensates play key roles in processes ranging from transcription to translation, metabolism, signaling, and more (An et al., 2008; Su et al., 2016; Sabari et al., 2018; Formicola et al., 2019). The complex interactions among their components endow condensates with distinct physical properties, including low surface tension, viscoelasticity, aging, etc. These distinct properties are crucial to the ability of condensates to carry out their biological functions. Here, we focus on one important physical property of condensates \u2013 the rate of exchange of material between condensed and dilute phases. This rate of exchange can impact biochemical processes taking place in condensates by limiting the escape of completed products (e.g. ribosomes produced in nucleoli; Yao et al., 2019), or limiting the availability of components or regulatory molecules (e.g. snoRNAs and ribosomal proteins entering nucleoli, or mRNAs entering P bodies or stress granules). The rate of exchange can also control the dynamical response of condensates to a changing environment, and, as exchange between dense and dilute phase is central to coarsening via Ostwald ripening, it can regulate the number, size, and location of condensates within the cell.\n\nThe material exchange between a condensate and the surrounding dilute phase can be probed via FRAP experiments, a commonly used approach for measuring condensate fluidity and molecular diffusion coefficients. Exchange dynamics are thus readily measurable and have been reported for a variety of systems (Li et al., 2012; Patel et al., 2015; Burke et al., 2015; Banani et al., 2016; Jain et al., 2016; Aumiller et al., 2016). However, only a very limited number of studies (Taylor et al., 2019; Hubatsch et al., 2021; Bo et al., 2021; Folkmann et al., 2021; Lee, 2021) aimed to understand what controls the timescales of condensate component exchange. Briefly, Taylor et al., 2019 combined FRAP experiments on condensates in vitro and in vivo with different theoretical models to examine the impact of model choice on the physical parameters derived from data fitting (Taylor et al., 2019). Folkmann et al., 2021 and Lee, 2021 proposed that the rate of molecular absorption to the condensate can be \u2018conversion-limited\u2019 instead of diffusion-limited and established a mathematical framework for the temporal evolution of droplet sizes in this limit (Folkmann et al., 2021; Lee, 2021). In all these cases, the modeling of interface resistance (Taylor et al., 2019) or conversion-limited material transfer (Folkmann et al., 2021; Lee, 2021) was conducted at the phenomenological level, without aiming to understand the underlying physical mechanism that gives rise to interface resistance. Hubatsch et al., 2021 and Bo et al., 2021 tackled the exchange dynamics problem by developing, respectively, a continuum theory of macroscopic phase separation (Hubatsch et al., 2021) and a stochastic Langevin equation of single-molecule trajectories (Bo et al., 2021). However, the mean-field approaches in Hubatsch et al., 2021 and Bo et al., 2021 neglect the potentially complex dynamics of molecules at the condensate interface, which can slow down material exchange significantly as suggested by Taylor et al., 2019 and Folkmann et al., 2021.\n\nIn the following, we first derive an analytical expression for the timescale of condensate material exchange, which conveys a clear physical picture of what controls this timescale. We then utilize a \u2018sticker-spacer\u2019 polymer model to investigate the mechanism of interface resistance. We find that a large interface resistance can occur when molecules bounce off the interface rather than being directly absorbed. We finally discuss the characteristic features of the FRAP recovery pattern of droplets when the exchange dynamics is limited by different factors.\n\n## Results\n\n### Mathematical formulation of exchange dynamics\n\nThe exchange of molecules between a condensate and the dilute phase can be investigated through FRAP-type experiments in which, e.g., fluorescence is locally bleached and recovery as a function of time recorded (Figure 1A and B). Theoretically, the time evolution of the concentration profile $c(r,t)$ of the molecules initially located in a spherical condensate of radius $R$ (bleached population) can be described by the following continuum diffusion equations (Taylor et al., 2019):\n\n$$\n\\frac{\u2202}{\u2202t}c(r,t)=D_{den}(\\frac{\u2202^{2}}{\u2202r^{2}}+\\frac{2}{r}\\frac{\u2202}{\u2202r})c(r,t),r<R;\\frac{\u2202}{\u2202t}c(r,t)=D_{dil}(\\frac{\u2202^{2}}{\u2202r^{2}}+\\frac{2}{r}\\frac{\u2202}{\u2202r})c(r,t),r>R,\n$$\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91680/elife-91680-fig1-v1.jpg)\n\n**Figure 1.:** (A) Schematic of a FRAP experiment in which an entire droplet is photobleached and the recovery of fluorescence is recorded. Material exchange between the condensate and the surrounding dilute phase can be limited by the flux of unbleached molecules coming from the dilute phase, the speed of internal mixing in the dense phase, or the flux passing through the interface. (B) The recovery time $\\tau$ is defined as the time required for fluorescence to return 63% (i.e. $1\u22121/e$) of the way back to its original level. (C) Experimental data from Taylor et al., 2019 in which a LAF-1 droplet of radius $R=1\u00b5m$ recovers from photobleaching. (Left) Images before bleaching, immediately after bleaching of the entire droplet region, and at two subsequent times. (Right) Expected recovery times $\\tau_{dil}=c_{den}R^{2}/(3c_{dil}D_{dil})=4.2\\pm3.2s$ and $\\tau_{den}=R^{2}/(\\pi^{2}D_{den})=60\\pm18s$ if the slowest recovery process was either the flux from the dilute phase or diffusion within the droplet, respectively, with $D_{den}=0.0017\\pm0.0005\u00b5m^{2}/s$, $D_{dil}=94\\pm11\u00b5m^{2}/s$, and $c_{den}/c_{dil}=1190\\pm880$ taken from Taylor et al., 2019. While the timescale associated with interface resistance $\\tau_{int}$ is unknown, the measured recovery time $\\tau=4570\\pm470s$ is much longer than $\\tau_{dil}$ and $\\tau_{den}$, suggesting the recovery is limited by flux through the interface, with an interface conductance of $\u03ba=R/3/(\\tau\u2212\\tau_{dil}\u2212\\tau_{den})=(7.4\\pm0.8)\\times10^{\u22125}\u00b5m/s$.\n\nwith the initial condition:\n\n$$\nc(r,0)={c_{den},r<R;0,r>R,\n$$\n\nand boundary conditions:\n\n$$\n\\frac{\u2202}{\u2202r}c(r,t)|_{r=0}=c(+\u221e,t)=0;\u2212D_{den}\\frac{\u2202}{\u2202r}c(r,t)|_{r=R_{\u2212}}=\u2212D_{dil}\\frac{\u2202}{\u2202r}c(r,t)|_{r=R_{+}}=\u03ba[c(R_{\u2212},t)\u2212\\frac{c_{den}}{c_{dil}}c(R_{+},t)],\n$$\n\nwhere $D_{den}$ and $D_{dil}$ are, respectively, the diffusion coefficients of molecules in the dense and dilute phases, and $c_{den}$ and $c_{dil}$ are, respectively, the equilibrium concentrations in the dense and dilute phases. The second boundary condition corresponds to flux balance at the interface of the condensate. Specifically, the flux exiting the dense phase (left) equals the flux entering the dilute phase (middle) and also equals the flux passing through the interface (right).\n\nTo understand the physical origin of the last term in the second boundary condition in Equation 3, we note that the net outward flux across the interface can be written as $k_{\u2212}c(R_{\u2212},t)\u2212k_{+}c(R_{+},t)$, where $k_{+/\u2212}$ denotes the entering/exiting rate of molecules at the interface and $c(R_{+/\u2212},t)$ the concentration of bleached molecules immediately outside/inside of the boundary. At thermal equilibrium, this net flux goes to zero, i.e., $k_{\u2212}c_{den}=k_{+}c_{dil}$ so $k_{+}=k_{\u2212}(c_{den}/c_{dil})$. The net outward flux is therefore $k_{\u2212}[c(R_{\u2212},t)\u2212(c_{den}/c_{dil})c(R_{+},t)]$. The parameter $\u03ba\u2261k_{\u2212}$ is a transfer coefficient that governs the magnitude of this net flux. When the ratio of the concentrations on the two sides of the interface deviates from the equilibrium ratio, a small $\u03ba$ can kinetically limit the flux going through the interface. We therefore term $\u03ba$ the interface conductance, the inverse of interface resistance.\n\nFor the model described by Equations 1\u20133, the fraction of molecules in the condensate which are unbleached at time $t$ is\n\n$$\nf(t)=1\u2212\\frac{\\int_{0}^{R}4\\pir^{2}c(r,t)dr}{\\int_{0}^{R}4\\pir^{2}c_{den}dr}.\n$$\n\nClearly, how quickly $f(t)$ recovers from 0 to 1 quantifies the timescale of material exchange between the condensate and the surrounding dilute phase.\n\n### Timescale of condensate component exchange\n\nThe authors of Taylor et al., 2019 derived an exact solution for $f(t)$ in an integral form using Laplace transforms. However, it is not directly apparent from the integral expression what physics governs the timescale of fluorescence recovery. In addition, the lengthy integral form of the expression also presents an impediment to its practical experimental applications. To obtain a more intuitive and concise result, we note that diffusion of biomolecules in the dilute phase is typically much faster than diffusion in the dense phase, with measured $D_{dil}/D_{den}$ in the range of 102\u2013105 (Freeman Rosenzweig et al., 2017; Taylor et al., 2019). We therefore employed the exact solution to derive an approximate solution in the parameter regime $D_{dil}\u226bD_{den}$:\n\n$$\nf(t)=1\u2212exp\u2061(\u2212\\frac{t}{\\tau}),\n$$\n\nwhere the timescale of fluorescence recovery is given by\n\n$$\n\\tau=\\frac{R^{2}}{\\pi^{2}D_{den}}+\\frac{c_{den}R^{2}}{3c_{dil}D_{dil}}+\\frac{R}{3\u03ba}.\n$$\n\nPlease refer to Appendix 1 for a detailed derivation. We note that, in practice, $D_{dil}>20D_{den}$ is sufficient for the validity of the approximation with the approximate $\\tau$ in Equation 6 within 10% of the exact value.\n\nEquation 6 conveys a clear physical picture of what controls the timescale of condensate material exchange. First, for large condensates and slow internal diffusion, exchange is limited by the rate of mixing within the condensate, so that $\\tau\u2243R^{2}/(\\pi^{2}D_{den})$. Second, if instead diffusion in the dilute phase is sufficiently slow, or the concentration in the dilute phase is very low, then $\\tau\u2243c_{den}R^{2}/(3c_{dil}D_{dil})$, which is the time required to replace all molecules in the condensate if molecules incident from the dilute phase are immediately absorbed (see Appendix 1). Finally, if the interface conductance $\u03ba$ is very small, the interfacial flux can be rate limiting for exchange, yielding $\\tau\u2243R/(3\u03ba)$.\n\n### Can interface resistance be much larger than predicted by mean-field theory?\n\nWhat determines the magnitude of the interface conductance $\u03ba$? From a theoretical perspective, transitions between dense and dilute phases have been modeled both from the continuum theory approach (Hubatsch et al., 2021) and by considering single-molecule trajectories (Bo et al., 2021). However, for any particular systems, the magnitude of the interface conductance depends on microscopic features of the biomolecules, such as internal states, which may not be captured by Flory-Huggins and Cahn-Hilliard-type mean-field theories. Indeed, if we start with the continuum approach in Hubatsch et al., 2021, where the concentration of bleached components $c({r},t)$ is governed by\n\n$$\n\\frac{\u2202c(r,t)}{\u2202t}=\u2207\u22c5{D[c_{eq}(r)][\u2207c(r,t)\u2212c(r,t)\\frac{\u2207c_{eq}(r)}{c_{eq}(r)}]}\n$$\n\nwith $c_{eq}({r})$ the equilibrium concentration profile and $D[c_{eq}({r})]$ the diffusion coefficient which depends on the local equilibrium concentration, one can obtain an expression for $\u03ba$ (see Appendix 1):\n\n$$\n\u03ba^{\u22121}=\\int\\frac{c_{den}}{c_{eq}(r)D(r)}dr,\n$$\n\nwhere the integral is over the interface region. We would then conclude $\u03ba^{\u22121}<\\delta/D_{den}+\\deltac_{den}/(c_{dil}D_{dil})$, where $\\delta$ is the width of the interface. As the interface is typically narrow, this inequality would imply that in practice the interfacial term in Equation 6 would always be smaller than the sum of the other two terms, and thus could be neglected.\n\nHowever, a recent FRAP experiment on LAF-1 protein droplets (Taylor et al., 2019) contradicts the above mean-field result. In the experiment, a micron-sized LAF-1 droplet ($R=1\u00b5m$) was bleached and fluorescence recovery measured as a function of time (Figure 1C). It was observed that recovery of that droplet occurs on a timescale of \u223c 1.3hr. Given the measured parameters of the system, one can estimate the recovery time in the mean-field approach to be $\\tau=R^{2}/(\\pi^{2}D_{den})+c_{den}R^{2}/(3c_{dil}D_{dil})=64\\pm18s$, much shorter than the measured recovery time. A large interface resistance was proposed as a possible explanation for this discrepancy (Taylor et al., 2019). Motivated by this surprising experimental result, we sought to investigate if it is possible for the interface resistance to be much larger than predicted by mean-field theory, and if so, what could be the underlying mechanisms and how does the interface resistance depend on the microscopic features of phase-separating molecules?\n\n### Coarse-grained simulation of \u2018sticker-spacer\u2019 polymer phase separation\n\nAs noted above, if all molecules incident from the dilute phase are immediately absorbed into the dense phase, the interfacial flux can\u2019t be rate limiting. The existence of a large interface resistance then necessarily implies a strongly reduced flux of molecules successfully crossing the interface. This can occur either because the molecules incident from the dilute phase fail to incorporate into the interface, or they transiently incorporate but fail to enter the dense phase. In both cases, the molecules effectively \u2018bounce\u2019 from the interface leading to a large interface resistance. Mechanistically, bouncing can occur for a variety of reasons, which we discuss in the Discussion section below. Here, we employ a \u2018sticker-spacer\u2019 polymer model (Choi et al., 2020; Semenov and Rubinstein, 1998) to explore one possible mechanism in which molecules can assume non-sticking conformations by saturating all their possible binding sites. These molecules incident from the dilute phase typically fail to form bonds with the dense phase, thus \u2018bouncing\u2019 off of the condensate.\n\nThe \u2018sticker-spacer\u2019 model provides a conceptual framework for understanding biomolecular phase separation, wherein the \u2018stickers\u2019 represent residues or larger domains that are capable of forming saturable bonds, while the \u2018spacers\u2019 connect the stickers to form polymers. Specifically, we simulated polymers consisting of type A and type B stickers connected by implicit spacers in the form of stretchable bonds (Kremer and Grest, 1990; Figure 2A):\n\n$$\nU_{b}(r)=\u2212\\frac{1}{2}KR_{0}^{2}ln\u2061[1\u2212(\\frac{r}{R_{0}})^{2}],r<R_{0},\n$$\n\nwhere $r$ is the distance between two stickers. One-to-one heterotypic bonds between A and B are implemented via an attractive potential:\n\n$$\nU_{a}(r)=\u2212\\frac{1}{2}U_{0}(1+cos\u2061\\frac{\\pir}{r_{0}}),r<r_{0},\n$$\n\nwhile stickers of the same type interact through a repulsive potential to prevent many-to-one binding:\n\n$$\nU_{r}(r)=4\u03f5[(\\frac{\\sigma}{r})^{12}\u2212(\\frac{\\sigma}{r})^{6}]+\u03f5,r\\leqr_{c}.\n$$\n\nWe take $K=0.15k_{B}T/nm^{2}$, $R_{0}=10nm$, $U_{0}=14k_{B}T$, $r_{0}=1nm$, $\u03f5=1k_{B}T$, $\\sigma=2nm$, and $r_{c}=1.12\\sigma$ in all simulations, except in the simulations of Figure 3F where we vary $U_{0}$ systematically from 13.5 to $15k_{B}T$. For all simulation results we reported below, the standard error of the mean is typically smaller than the symbol size and therefore not shown.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91680/elife-91680-fig2-v1.jpg)\n\n**Figure 2.:** (A) Each polymer is composed of monomers (\u2018stickers\u2019) of type A (blue) or B (red), and modeled as a linear chain of spherical particles each with a diameter of 2 nm, connected by stretchable bonds with an equilibrium length of 3.9 nm. Stickers of different types have an attractive interaction, while stickers of the same type interact repulsively, ensuring one-to-one binding between the A and B stickers. (B) Snapshot of a simulation of 1000 A6B6 polymers in a 500 nm \u00d7 50 nm \u00d7 50 nm box with periodic boundary conditions. The system undergoes phase separation into a dense phase (middle region) and a dilute phase (two sides), driven by the one-to-one A-B bonds. (C) Polymer concentration profile for the simulation in (B) with the center of the dense phase aligned at $x=0$ and averaged over time and over 10 simulation repeats. (D) Average total polymer concentrations in the dense (top) and dilute (bottom) phases from simulations of the five types of polymers shown in (A). (E) Polymer diffusion coefficients in the dense (top) and dilute (bottom) phases. All simulations were performed and snapshots were obtained using LAMMPS Plimpton, 1995. Please refer to Appendix 2 for simulation details.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91680/elife-91680-fig3-v1.jpg)\n\n**Figure 3.:** (A) Illustration of simulation protocol: At $t=0$ only polymers in the dilute phase are \u2018labeled\u2019 (solid balls), any polymer that enters the dense phase (forms an A-B bond lasting >10 times the average bond lifetime of an isolated A-B pair) becomes permanently \u2018unlabeled\u2019 (hollow balls). (B) Fraction of labeled polymers in the dilute phase as a function of time for simulations of the five types of polymers shown in Figure 2A. (C) Decay time of labeled polymers from exponential fits to curves in (B) (top), and corresponding calculated values of interface conductance $\u03ba$ (bottom). (D) For all simulated polymers, interface conductance scaled by $\u03ba_{0}$ (Equation 13) is approximately a linear function of a parameter $u$ which reflects the fraction of unbound stickers in the dense and dilute phases. Inset illustration: Polymers in the dilute phase with few or no unbound stickers may \u2018bounce\u2019 off the dense phase, which contributes to the interface resistance. (E) Example of simulated trajectory in which a dilute-phase A6B6 polymer \u2018bounces\u2019 multiple times before finally joining the dense phase. (F) Interface conductance $\u03ba$ of A6B6 system as a function of binding strength $U_{0}$ between A and B stickers.\n\nFor each of the five sequences shown in Figure 2A, we simulated 1000 polymers in a $500nm\\times50nm\\times50nm$ box with periodic boundary conditions using Langevin dynamics (see Appendix 2 for details). Simulations were performed using LAMMPS molecular-dynamics simulator (Plimpton, 1995). Figure 2B shows a snapshot of coexisting dense and dilute phases after equilibration of the A6B6 polymers (6A stickers followed by 6B stickers), while Figure 2C shows the time-averaged profile of the total polymer concentration. The five different polymer sequences we simulated were chosen to yield a range of dilute- and dense-phase sticker concentrations (Figure 2D) as well as a range of dilute- and dense-phase diffusion coefficients (Figure 2E). As found previously (Weiner et al., 2021), polymers like A6B6 with long blocks of stickers of the same type have low dilute-phase concentrations. This follows because it is entropically unfavorable for these polymers to form multiple self-bonds, which favors the dense phase where these polymers can readily form multiple trans-bonds. These long-block polymers also have low dense-phase diffusion coefficients because of their large number of trans-bonds, which need to be repeatedly broken for the polymers to diffuse.\n\n### Interface conductance \u03ba from simulations\n\nHaving determined the concentrations and diffusion coefficients in the dense and dilute phases, we are now in a position to extract the values of interface conductance from simulations. Figure 3 depicts a simple protocol that allows us to infer $\u03ba$ by applying the 1D, slab-geometry version of Equations 1\u20136 to simulation results (see Appendices 1 and 2 for details): (i) All polymers in the dilute phase are initially considered \u2018labeled\u2019, (ii) any labeled polymer that forms a lasting A-B bond with a polymer in the dense phase becomes permanently unlabeled (Figure 3A), (iii) the remaining fraction of labeled dilute phase polymers is fit to an exponential decay (Figure 3B), and (iv) the resulting decay time constant $\\tau$ is used together with the known dense and dilute phase parameters to infer $\u03ba$ from:\n\n$$\n\u03ba=\\frac{c_{dil}}{c_{den}}\\sqrt{\\frac{D_{dil}}{\\tau}}tan\u2061\\frac{d}{\\sqrt{\\tauD_{dil}}},\n$$\n\nwhere $d$ is the half-width of the dilute phase. As shown in Figure 3C, the resulting values of $\u03ba$ span more than an order of magnitude for our selected polymer sequences, despite the fact that all five polymers can in principle form the same number (6) of self-bonds.\n\nWe note that one can alternatively obtain $\u03ba$ by directly measuring the flux of molecules that enter the dense phase. Mathematically, this flux equals $k_{+}c_{dil}=\u03bac_{den}$. We show in Appendix 2 that the values of $\u03ba$ found via this method are consistent with results reported in Figure 3C.\n\n### \u2018Bouncing\u2019 of molecules can lead to large interface resistance\n\nWhat gives rise to the very different values of $\u03ba$? To address this question, we first consider the predicted interface conductance $\u03ba_{0}$ if polymers incident from the dilute phase simply move through the interface region with a local diffusion coefficient that crosses over from $D_{dil}$ to $D_{den}$. Then according to Equation 8 (see Appendix 1)\n\n$$\n\u03ba_{0}=\\frac{c_{dil}D_{dil}}{\\deltac_{den}}.\n$$\n\nHowever, as shown in Figure 3D, the actual values of $\u03ba$ in our simulations can be a factor of \u223c50 smaller than $\u03ba_{0}$. This reduction can be traced to a \u2018bouncing\u2019 effect. As shown schematically in the inset to Figure 3D and for an exemplary simulated trajectory in Figure 3E (more trajectories can be found in Appendix 2), molecules incident from the dilute phase may fail to form bonds with the dense phase, effectively \u2018bouncing\u2019 off of the condensate. The differing extent of this bouncing effect for the five sequences we studied reflects differences in their numbers of free stickers in both their dilute- and dense-phase conformations. The fewer such available stickers, the fewer ways for a polymer incident from the dilute phase to bond with polymers at the surface of the dense phase, and thus the more likely the incident polymer is to bounce. More generally, we find that the interface conductance of the sticker-spacer polymers is controlled by the encounter rate of a pair of unbound stickers and the availability of these stickers, which in turn depends on the sticker-sticker binding strength, the dilute- and dense-phase polymer concentrations, and the width of the interface:\n\n$$\n\u03ba=\\frac{4\\pir_{0}\\deltaD_{dil}n^{2}c_{dil}}{2+s+s^{\u22121}}(f_{dilA}f_{denB}+f_{dilB}f_{denA}),\n$$\n\nwhere $n$ is the number of monomers in a polymer, $s$ is the global stoichiometry (i.e. $c_{A}/c_{B}$), $f_{dilA/dilB}$ and $f_{denA/denB}$ are the fractions of unbound $A/B$ monomers in the dilute and dense phases, respectively. In support of this picture, we find that all our simulation results for $\u03ba/\u03ba_{0}$ collapse as a linear function of a lumped parameter $u$ (Figure 3D):\n\n$$\nu=\\frac{4\\pir_{0}\\delta^{2}n^{2}c_{den}}{2+s+s^{\u22121}}(f_{dilA}f_{denB}+f_{dilB}f_{denA}),\n$$\n\nwhich expresses the availability of free stickers, where all parameters in $u$ are determined directly from simulations. See Appendix 1 for derivations of Equations 14 and 15.\n\nComparing sequences with unequal sticker stoichiometry A8B6 and A10B6 to their most closely related equal-stoichiometry sequence A6B6, we find that the extra A stickers substantially increase the interface conductance $\u03ba$. Intuitively, the excess As in both dense and dilute phases of A8B6 and A10B6 provide a pool of available stickers for any unbound B to bind to. By contrast, at equal stoichiometry, both free As and free Bs are rare which maximizes the bouncing effect. This reduction in potential binding partners at equal stoichiometry has also been observed experimentally (Brassinne et al., 2017), and theoretically Ronceray et al., 2022, to cause an anomalous slowing of diffusion within condensates at equal stoichiometry in the regime of strong binding.\n\nFinally, we expect the interface resistance to increase approximately exponentially with the increase of binding strength $U_{0}$ between A and B stickers, as the tighter the binding, the fewer available stickers, and hence the more bouncing of molecules at the interface. We demonstrate in Figure 3F that the interface conductance $\u03ba$ of the A6B6 system indeed drops by a factor of 5 as the value of $U_{0}$ increases from 13.5 to $15k_{B}T$.\n\n### Direct simulation of droplet FRAP\n\nAbove we simulated phase separation of sticker-spacer polymers in a slab geometry, and discussed how the extracted interface conductance $\u03ba$ depends on sequence pattern, sticker stoichiometry, and binding strength between stickers. In principle, with the parameters measured from such simulations, Equation 6 and Equations 1\u20134 can be used to predict FRAP recovery times for simulated 3D droplets. To check the consistency between theory and simulation, we simulated a small droplet of the A6B6 polymers and measured its FRAP recovery time. Briefly, we simulated 2000 A6B6 polymers in a cubic box of side length $286nm$ with periodic boundaries using Langevin dynamics. All interaction potentials and parameters are the same as the simulations in Figure 2. Figure 4A shows a snapshot of the droplet coexisting with the surrounding dilute phase after equilibration. Figure 4B shows the mean polymer concentration profile, which is consistent with the dense- and dilute-phase concentrations of the A6B6 system reported in Figure 2D. We note that both concentrations are slightly higher than their counterparts in the slab geometry due to a surface tension effect (Thomson, 1872). At time $t=0$, we labeled all the molecules inside the droplet as \u2018bleached\u2019 and tracked the time evolution of the concentration profile of the bleached population (Figure 4C) and obtained the FRAP recovery curve (Figure 4D, black circle). We note that the recovery curve plateaus at $A\u22480.5$ instead of 1 due to limited number of polymers in the dilute phase. Using parameters of the droplet system, we numerically integrated Equation 1 with modified initial and boundary conditions to account for the system\u2019s finite size. The resulting numerical curve agrees almost perfectly with the simulation result (Figure 4D), which validates both our theoretical and simulation approaches.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91680/elife-91680-fig4-v1.jpg)\n\n**Figure 4.:** (A) Snapshot of 2000 A6B6 polymers in a 286 nm \u00d7 286 nm \u00d7 286 nm box with periodic boundary conditions. The system phase separates into a dense droplet (middle) and a surrounding dilute phase. (B) Polymer concentration profile for the simulation in (A) with the center of the droplet aligned to the origin and averaged over time and over 10 simulation repeats. The dilute- and dense-phase concentrations obtained from simulations in the slab geometry are denoted by green lines. The effective radius $R$ of the droplet is determined through $4\\piR^{3}c_{den}^{d}/3+(V_{box}\u22124\\piR^{3}/3)c_{dil}^{d}=N_{total}$, where $V_{box}$ is the volume of the simulation box and $N_{total}$ is the total number of polymers. (C) Average concentration profile of bleached population measured at different times. (D) Comparison of the FRAP recovery curves obtained by tracking the simulated fraction of unbleached molecules inside the droplet as a function of time (black dots) and by numerical integration (red curve) of Equation 1 in a sphere of the same volume as $V_{box}$ using the measured parameters of the droplet system: $c_{den}^{d}=8.1mM$, $c_{dil}^{d}=0.073mM$, $D_{den}=0.013\\mum^{2}/s$, $D_{dil}=17\\mum^{2}/s$, $R=0.037\\mum$, and $\u03ba^{d}=0.20\\mum/s$. For details of simulation and theory, refer to Appendix 2.\n\nFitting the recovery curve by\n\n$$\nf(t)=A[1\u2212exp\u2061(\u2212\\frac{t}{A\\tau})],\n$$\n\nwhich takes into account the effect of the finite-size dilute phase (see Appendix 2 for a derivation), yielded a recovery time $\\tau=0.071s$. We compare the measured FRAP recovery time for the small droplet $R=37nm$ (green circle) to theoretical predictions from Equation 6 (gray) and Equations 1\u20134 (black) in Figure 5A. The FRAP recovery of the simulated droplet is clearly limited by the interface resistance. We note that the small deviation between theory and simulation in Figure 5A is due to the utilization of parameters from the slab geometry for the theory prediction, including a $\u03ba=0.14\u00b5m/s$ lower than the measured $\u03ba^{d}=0.20\u00b5m/s$ of the droplet system, which in turn reflects the difference in the dilute-phase concentrations of the two systems, as $\u03ba\u223cc_{dil}$ from Equation 14.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/91680/elife-91680-fig5-v1.jpg)\n\n**Figure 5.:** (A) Expected relaxation time as a function of droplet radius for in silico \u2018FRAP experiments\u2019 on the A6B6 system. The interface resistance dominates recovery times for smaller droplets, whereas dense-phase diffusion dominates recovery times for larger droplets. Green circle: FRAP recovery time obtained from direct simulation of an A6B6 droplet of radius 37 nm. Black curve: the recovery time as a function of droplet radius from a single exponential fit of the exact solution of the recovery curve from Equation 1\u20134. Gray curve: the recovery time predicted by Equation 6. Yellow, blue, and red curves: the recovery time when dense-phase, dilute-phase, and interface flux limit the exchange dynamics, i.e., the first, second, and last term in Equation 6, respectively. Parameters matched to the simulated A6B6 system in the slab geometry: $c_{den}=7.7mM$, $c_{dil}=0.05mM$, $D_{den}=0.013\\mum^{2}/s$, $D_{dil}=17\\mum^{2}/s$, and $\u03ba=0.14\\mum/s$. (B) Time courses of fluorescence profiles for A6B6 droplets of radius $1\\mum$ (top) and $0.1\\mum$ (bottom); red is fully bleached, green is fully recovered. These concentration profiles are the numerical solutions of Equations 1\u20133 using parameters provided in (A).\n\n### Signatures of interface resistance\n\nUnder what circumstances is interface resistance experimentally measurable? If there were no bouncing effect, i.e., if all molecules incident from the dilute phase that touch the interface get immediately absorbed into the condensate, then interface resistance would never dominate the recovery time in FRAP-type experiments, making it very difficult to measure $\u03ba$. However, as shown in Figure 3, the bouncing effect can reduce $\u03ba$ substantially. For such systems, the interface conductance can be inferred quantitatively from Equation 6 or by fitting FRAP recovery curves as in Taylor et al., 2019, using the experimentally measured dense- and dilute-phase concentrations and diffusion coefficients.\n\nEven without knowing all parameters, one may still be able to infer the presence of a large interface resistance by observing the pattern of fluorescence recovery in droplets of different sizes. According to Equation 6 the recovery time associated with interface resistance increases linearly with radius $R$ while the other terms increase as $R^{2}$ (Figure 5A). Therefore, one expects a cross-over for the recovery from being interface-resistance dominated (small $R$) to being either dilute-phase-diffusion or dense-phase-mixing dominated (large $R$). In the latter case, the fluorescence profile during recovery will be notably different in large versus small droplets as shown in Figure 5B \u2013 for large droplets progressive diffusion of fluorescence into the droplet will be apparent, whereas small droplets will recover uniformly as internal mixing will be fast compared to exchange with the surroundings. Thus observation of such a cross-over of the recovery pattern as a function of droplet size provides evidence for the presence of a large interface resistance, which can be followed up by more quantitative studies. For example, the uniform recovery of the LAF-1 droplet in Figure 1C and the simulated droplet in Figure 4C are indicative of a large interface resistance, as the diffusion in the dilute phase is too fast to be rate limiting. We also predict the cross-over for LAF-1 droplets to be around $R=71\\mum$, which in principle can be tested experimentally.\n\n## Discussion\n\nThe dynamic exchange of condensate components with the surroundings is a key feature of membraneless organelles, and can significantly impact condensate biological function. In this work, we combined analytical theory and coarse-grained simulations to uncover physical mechanisms that can control this exchange dynamics. Specifically, we first derived an analytical expression for the exchange rate, which conveys the clear physical picture that this rate can be limited by the flux of molecules from the dilute phase, by the speed of mixing inside the dense phase, or by the dynamics of molecules at the droplet interface. Motivated by recent FRAP measurements (Taylor et al., 2019) that the exchange rate of LAF-1 droplets can be limited by interface resistance, which contradicts predictions of conventional mean-field theory, we investigated possible physical mechanisms underlying interface resistance using a \u2018sticker-spacer\u2019 model. Specifically, we demonstrated via simulations a notable example in which incident molecules have formed all possible internal bonds, and thus bounce from the interface, giving rise to a large interface resistance. Finally, we discussed the signatures in FRAP recovery patterns when the exchange dynamics is limited by different factors.\n\nWhat are potential mechanisms that could lead to the bouncing of molecules from the interface and hence to a substantial interface resistance? The essential requirement is that molecules in the dilute phase and molecules at the interface should not present \u2018sticky\u2019 surfaces to each other. Since these same molecules must be capable of sticking to each other in order to phase separate, a natural scenario is that these molecules assume non-sticky conformations due to the shielding of interacting regions, e.g., burial of hydrophobic residues in the core of a protein, or, in the scenario explored in the simulations, the saturation of sticker-like bonds. Examples of systems with strong enough bonds to allow bond saturation include SIM-SUMO (Banani et al., 2016) and nucleic acids with strong intramolecular base-pairing. Interestingly, a recent coarse-grained simulation of RNA droplets of (CAG)47 (Nguyen et al., 2022) illustrated that a (CAG)47 molecule in a closed hairpin conformation fails to integrate into a droplet but rather bounces off the droplet interface. Another possible scenario is that charged molecules could arrange themselves to form a charged layer at the interface, resulting in a high energetic barrier from electrostatic repulsion for a dilute-phase component to reach and cross the interface (Ray et al., 2023; Dai et al., 2023; Majee et al., 2024). In the case of LAF-1, we note that the values of interface conductance $\u03ba$ obtained in our simulations are a factor of 103 to 104 higher than the experimentally measured $\u03ba$ for the LAF-1 droplet. While we do not aim to specifically simulate the LAF-1 system in this work and the value of $\u03ba$ in simulations can in principle be tuned by adjusting the bond strength $U_{0}$, the large disparity between simulation and experiment renders the mechanism responsible for the inferred large interface resistance in LAF-1 droplets unclear. We hope that our study will motivate further experimental investigations into the anomalous exchange dynamics of LAF-1 droplets and potentially other condensates, and the mechanisms underlying interface resistance.\n\nIn this work, we focused on the exchange dynamics of in vitro single-component condensates. How is the picture modified for condensates inside cells? It has been shown that Ddx4-YFP droplets in the cell nucleus exhibit negligible interface resistance (Taylor et al., 2019), which raises the question whether interface resistance is relevant to natural condensates in vivo. Future quantitative FRAP and single-molecule tracking experiments on different types of droplets in the cell will address this question. One complication is that condensates in cells are almost always multi-component, which can increase the complexity of the exchange dynamics. Interestingly, formation of multiple layers or the presence of excess molecules of one species coating the droplet is likely to increase interface resistance. A notable example is the Pickering effect, in which adsorbed particles partially cover the interface, thereby reducing the accessible area and the overall condensate surface tension, slowing down the exchange dynamics (Folkmann et al., 2021). The development of theory and modeling for the exchange dynamics of multi-component condensates is currently underway.\n\nBiologically, the interface exchange dynamics also influences the coarsening of condensates. The same interface resistance that governs exchange between phases at equilibrium will control the flux of material from the dilute phase to the dense phase during coarsening, so that bouncing will slow down the coarsening process. Indeed, a recent theoretical study (Ranganathan and Shakhnovich, 2020) of coarsening via mergers of small polymer clusters found anomalously slow coarsening dynamics due to exhaustion of binding sites, paralleling the single-polymer bouncing effect explored here. Other mechanisms that may slow coarsening include the formation of metastable microemulsions (Welsh et al., 2022; Kelley et al., 2021) and the Pickering effect (Folkmann et al., 2021) mentioned above. In the latter study, additional slow coarsening of PGL-3 condensates was attributed to a conversion-limited (i.e. interface resistance) rather than a diffusion-limited flux of particles from the dilute phase into the dense phase. Interestingly, a conversion-limited flux has been shown to lead to qualitatively distinct scaling of condensate size with time (Lee, 2021). As many condensates dissolve and reform every cell cycle (or as needed), we anticipate that interfacial exchange will constitute an additional means of regulating condensate dynamics.\n\n## Methods\n\nWe perform coarse-grained molecular-dynamics simulations using LAMMPS (Plimpton, 1995) to simulate phase separation of \u2018sticker and spacer\u2019 polymers. Individual polymers are modeled as linear chains of spherical stickers of types A and B connected by implicit spacers (Figure 2A) with the interaction potentials in Equations 9\u201311, which ensure one-to-one binding between A and B stickers. For each of the five selected polymer sequences, we perform 10 simulation replicates with different random seeds in a slab geometry. Consistency of results is checked across replicates and across the first and second halves of the recorded data. The agreement indicates that the system has reached equilibrium. For details see Appendix 2, Simulation procedures and data recording.\n\nTo measure the dilute- and dense-phase concentrations, we first group polymers into connected clusters in each recording. Two stickers are considered connected if they are part of the same polymer, or if they are within the attraction distance $r_{0}=1nm$. Connected stickers are then grouped into clusters. To find the concentrations of each phase, we identify the center of mass of the largest cluster in each recording, and recenter the simulation box to this center of mass. The resulting polymer concentration profile has high values in the middle corresponding to the dense-phase concentration, and low values on the two sides corresponding to the dilute-phase concentration (Figure 2C). For details, see Appendix 2, Determining the dilute- and dense-phase concentrations.\n\nTo measure the dilute- and dense-phase diffusion coefficients, we perform simulations with a pure dilute phase or dense phase, i.e., with polymers at the measured dilute- and dense-phase concentrations. To find the diffusion coefficients, we compute the time-averaged mean squared displacement (MSD) for each polymer as a function of the lag time $t_{lag}$, and average over all polymers in a simulation box and over five replicates. The time- and ensemble-averaged MSD is then linearly fit to $MSD=6Dt_{lag}$ to extract the diffusion coefficient. For details, see Appendix 2, Determining the dilute- and dense-phase diffusion coefficients.\n\nTo measure the interface conductance $\u03ba$, we follow the simple protocol depicted in Figure 3A. Specifically, in this protocol we first define a \u2018survival\u2019 variable $S$ for each polymer in the dilute phase as a function of time: $S=1$ if the polymer has remained in the dilute phase, and $S=0$ if the polymer has ever entered the dense-phase cluster. The obtained $S(t)$ is the average survival probability of polymers in the dilute phase that have never entered the dense phase. We fit $S(t)$ to a decaying exponential to extract the decay time $\\tau$. The interface conductance $\u03ba$ is then calculated using Equation 12 with the measured decay time and dilute- and dense-phase parameters. For details, see Appendix 2, Determining the interface conductance.\n\nSimulations of the A6B6 spherical droplet system largely follow their counterparts in the slab geometry. To obtain the concentration profile in Figure 4B, we identify the center of mass of the droplet and recenter the simulation box to this center of mass in each recording. We then compute the time- and ensemble-averaged polymer concentration histogram along the radial direction. The dilute- and dense-phase concentrations ($c_{dil}^{d}$ and $c_{den}^{d}$) of the droplet system are calculated by averaging the concentration profile over the relevant regions. To obtain the concentration profile of the bleached population at time $t$ after photobleaching in Figure 4C, we label all polymers in the droplet at time $t_{0}$ as bleached and track the concentration profile of these polymers at a later time $t_{0}+t$. Results are averaged over all possible choices of $t_{0}$. To obtain the theory curve in Figure 4D, we numerically integrate Equation 1 using a finite-difference method. Interface conductance of the droplet system is determined using the flux method. For details, see Appendix 2, Details of simulation and theory of FRAP recovery of an A6B6 droplet.\n\nThe codes for generating simulated data following the above-mentioned methods are uploaded as Source code 1. Source code 1 contains MATLAB codes used to generate input files for the LAMMPS Molecular Dynamics Simulator, as well as the generated LAMMPS input files. All data in the manuscript can be reproduced using these files. LAMMPS input files are contained in the folders: FullSystem, DensePhase, and DilutePhase. Codes in FullSystem/In are for simulations in slab geometry at a fixed interaction strength $U_{0}=14k_{B}T$, which generate the data shown in Figures 2 and 3. Codes in FullSystem/In_A are for simulations in slab geometry at varying interaction strengths, which generate the data shown in Figure 2F. Codes in FullSystem/In_Droplet are for simulations of a 3D droplet, which generate the data shown in Figure 4. Codes in DensePhase and DilutePhase are used to measure the diffusion coefficients of molecules in dense and dilute phases, respectively, which generate the data shown in Figure 2E.\n",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Arvind Murugan, University of Chicago United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91680.3.sa0](https://doi.org/10.7554/eLife.91680.3.sa0)\n\nThis valuable contribution studies factors that impact molecular exchange between dense and dilute phases of biomolecular condensates through continuum models and coarse-grained simulations. The authors provide convincing evidence that the bouncing of molecules off the interface can lead to interfacial resistance and limit mixing. Results like these can inform how experimental results in the field of biological condensates are interpreted.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91680.3.sa1](https://doi.org/10.7554/eLife.91680.3.sa1)\n\nSummary:\n\nIn this paper by Zhang, the authors build a physical framework to probe the mechanisms that underlie exchange of molecules between coexisting dense and dilute liquid-like phases of condensates. They first propose a continuum model, in the context of a FRAP-like experiment where the fluorescently labeled molecules inside the condensate are bleached at t=0 and the recovery of fluorescence is measured. Through this model, they identify how the key timescales of internal molecular mixing, replenishment from dilute phase, and interface transfer contribute to molecular exchange timescale. Motivated by a recent experiment reported by some of the co-authors previously (Brangwynne et al. in 2019) finding strong interfacial resistance in in vitro protein droplets of LAF-1, they seek to understand the microscopic features contributing to the interfacial conductance (inversely proportional to the resistance). To check, they perform coarse-grained MD-simulations of sticker-spacer self-associative polymers and report how conductance varies significantly even across the few explored sequences. Further, by looking at individual trajectories, they postulate the \"bouncing\" i.e., molecules that approach the interface but are not successfully absorbed is a strong contributor to this mass transfer limitation. Consistent with their predictions, sequences that have more free unbound stickers (i.e., for example through imbalance sequence sticker stoichiometries) have higher conductances and they show a simple linear scaling between number of unbound stickers and conductance. Finally, they predict that an droplet-size dependent transition in recovery time behavior.\n\nStrengths:\n\n(1) This paper is overall well-written and clear to understand.\n\n(2) By combining coarse-grained simulations, continuum modeling, and comparison to published data, the authors provide a solid picture of how their proposed framework relates to molecular exchange mechanisms that are dominated by interface resistance and LAF-1 droplets.\n\n(3) The choice of different ways to estimate conductance from simulation and reported data are thoughtful and convincing on their near-agreement (although a little discussion of why and when they differ would be merited as well).\n\nUpdated re-review:\n\nThis revised update by Zhang et al. is improved and addresses many of the concerns raised by myself and the other reviewer, especially with the expanded discussion, contextualized text in model description, and the addition of a nice example case-study in revised Fig. 4. I believe the paper provides solid evidence of how \"bouncing\" may contribute to interfacial resistance/exchange dynamics in biomolecular condensates and is a useful study for the community.\n\nNote: In their response, the authors bring up an important point in references for LAF1 mutant FRAP data. While I found a few papers, for example https://www.pnas.org/doi/abs/10.1073/pnas.2000223117 and https://www.cell.com/biophysj/fulltext/S0006-3495(23)00464-2, these are likely to be not whole droplet bleaches. I wonder whether it may be possible to approximately predict the conductance from other parameters (such as from effective expressions in eq 14) to roughly estimate what the effect maybe since LAF-1 has fairly \"known\" stickers and spacers. Note that this is not required at all, but I just bring this up in case it may be of interest to authors!\n",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "18b0a532-9074-4d46-b55c-f7409e61dc86",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C1",
+      "claim": "Biomolecular condensates formed via liquid-liquid phase separation dynamically exchange material with their surroundings.",
+      "claim_type": "EXPLICIT",
+      "source": "A hallmark of biomolecular condensates formed via liquid-liquid phase separation is that they dynamically exchange material with their surroundings, and this process can be crucial to condensate function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a hallmark property in the abstract, representing established knowledge in the field.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "3eeb00c6-3800-49c3-aa66-1c853ece0819",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C2",
+      "claim": "Material exchange can be crucial to condensate function.",
+      "claim_type": "EXPLICIT",
+      "source": "A hallmark of biomolecular condensates formed via liquid-liquid phase separation is that they dynamically exchange material with their surroundings, and this process can be crucial to condensate function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general principle in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "7c7f2245-aa9c-4a6f-8f03-32f13c93da64",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C3",
+      "claim": "The rate of exchange can be limited by the flux from the dilute phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, the rate of exchange can be limited by the flux from the dilute phase or by the mixing speed in the dense phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an intuitive understanding in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "0a76def6-87d0-4aa8-ab88-1cd41ff04d45",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C4",
+      "claim": "The rate of exchange can be limited by the mixing speed in the dense phase.",
+      "claim_type": "EXPLICIT",
+      "source": "Intuitively, the rate of exchange can be limited by the flux from the dilute phase or by the mixing speed in the dense phase.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is presented as an intuitive understanding in the abstract.",
+      "evidence_type": "[\"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "9ef232a5-813b-46e8-be81-f10c25f834af",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C5",
+      "claim": "A recent experiment suggests that exchange can be limited by the dynamics at the droplet interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Surprisingly, a recent experiment suggests that exchange can also be limited by the dynamics at the droplet interface, implying the existence of an 'interface resistance'.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This references experimental findings from Taylor et al., 2019 as discussed later in the manuscript.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "eb7a7a99-0288-4ba6-8eed-3006a2bd298a",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C6",
+      "claim": "Interface resistance can arise when incident molecules transiently touch the interface without entering the dense phase.",
+      "claim_type": "EXPLICIT",
+      "source": "We then utilize sticker-spacer polymer models to show that interface resistance can arise when incident molecules transiently touch the interface without entering the dense phase, i.e., the molecules 'bounce' from the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' modeling work presented in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "864e8f82-a654-4401-bc56-b43e7c7f34ef",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C7",
+      "claim": "Biomolecular condensates organize the interior of cells in both space and time.",
+      "claim_type": "EXPLICIT",
+      "source": "The interior of cells is organized in both space and time by biomolecular condensates, which form and dissolve as needed (Shin and Brangwynne, 2017; Banani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "da93814b-c332-49cd-8e80-a2f20a38c267",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C8",
+      "claim": "Biomolecular condensates form and dissolve as needed.",
+      "claim_type": "EXPLICIT",
+      "source": "The interior of cells is organized in both space and time by biomolecular condensates, which form and dissolve as needed (Shin and Brangwynne, 2017; Banani et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "23ce8f8c-6d93-45dd-b0f4-903371892e7f",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C9",
+      "claim": "Condensates play key roles in processes ranging from transcription to translation, metabolism, signaling, and more.",
+      "claim_type": "EXPLICIT",
+      "source": "These condensates play key roles in processes ranging from transcription to translation, metabolism, signaling, and more (An et al., 2008; Su et al., 2016; Sabari et al., 2018; Formicola et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "32386129-d468-41ef-8216-8c291d8ddc5b",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C10",
+      "claim": "Complex interactions among condensate components endow condensates with distinct physical properties including low surface tension, viscoelasticity, and aging.",
+      "claim_type": "EXPLICIT",
+      "source": "The complex interactions among their components endow condensates with distinct physical properties, including low surface tension, viscoelasticity, aging, etc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about condensate properties.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "d88f5881-dab3-47e6-927a-f60f0d1af643",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C11",
+      "claim": "The rate of exchange can impact biochemical processes by limiting the escape of completed products.",
+      "claim_type": "EXPLICIT",
+      "source": "This rate of exchange can impact biochemical processes taking place in condensates by limiting the escape of completed products (e.g. ribosomes produced in nucleoli; Yao et al., 2019), or limiting the availability of components or regulatory molecules (e.g. snoRNAs and ribosomal proteins entering nucleoli, or mRNAs entering P bodies or stress granules).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and specific examples.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "f6171a3e-ca1c-4643-b688-6704d1e04537",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C12",
+      "claim": "The rate of exchange can limit the availability of components or regulatory molecules in condensates.",
+      "claim_type": "EXPLICIT",
+      "source": "This rate of exchange can impact biochemical processes taking place in condensates by limiting the escape of completed products (e.g. ribosomes produced in nucleoli; Yao et al., 2019), or limiting the availability of components or regulatory molecules (e.g. snoRNAs and ribosomal proteins entering nucleoli, or mRNAs entering P bodies or stress granules).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with specific examples of biological systems.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "3c51b5cd-047b-43be-97a6-a94cb5bfa6ea",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C13",
+      "claim": "The rate of exchange can control the dynamical response of condensates to a changing environment.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of exchange can also control the dynamical response of condensates to a changing environment, and, as exchange between dense and dilute phase is central to coarsening via Ostwald ripening, it can regulate the number, size, and location of condensates within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a logical consequence of exchange dynamics.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "ae63a8e7-54a5-49a5-a361-ab6b73a25458",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C14",
+      "claim": "Exchange between dense and dilute phase is central to coarsening via Ostwald ripening.",
+      "claim_type": "EXPLICIT",
+      "source": "The rate of exchange can also control the dynamical response of condensates to a changing environment, and, as exchange between dense and dilute phase is central to coarsening via Ostwald ripening, it can regulate the number, size, and location of condensates within the cell.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about phase separation physics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "f596584a-a4b0-466b-a563-68702c223b26",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C15",
+      "claim": "Material exchange can be probed via FRAP experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "The material exchange between a condensate and the surrounding dilute phase can be probed via FRAP experiments, a commonly used approach for measuring condensate fluidity and molecular diffusion coefficients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a commonly used experimental approach.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "2e97f8e4-9968-4850-b09d-6f20560a198a",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C16",
+      "claim": "Exchange dynamics have been reported for a variety of systems.",
+      "claim_type": "EXPLICIT",
+      "source": "Exchange dynamics are thus readily measurable and have been reported for a variety of systems (Li et al., 2012; Patel et al., 2015; Burke et al., 2015; Banani et al., 2016; Jain et al., 2016; Aumiller et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by multiple citations to prior experimental work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "b205c200-8bce-4f29-95a4-c440ad2bd9de",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C17",
+      "claim": "Only a very limited number of studies aimed to understand what controls the timescales of condensate component exchange.",
+      "claim_type": "EXPLICIT",
+      "source": "However, only a very limited number of studies (Taylor et al., 2019; Hubatsch et al., 2021; Bo et al., 2021; Folkmann et al., 2021; Lee, 2021) aimed to understand what controls the timescales of condensate component exchange.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with specific citations to the limited prior work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "88399cfa-a7e0-4017-be2b-8d8d8bc24baf",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C18",
+      "claim": "Taylor et al., 2019 combined FRAP experiments on condensates in vitro and in vivo with different theoretical models to examine the impact of model choice on physical parameters derived from data fitting.",
+      "claim_type": "EXPLICIT",
+      "source": "Briefly, Taylor et al., 2019 combined FRAP experiments on condensates in vitro and in vivo with different theoretical models to examine the impact of model choice on the physical parameters derived from data fitting (Taylor et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the approach of a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "fa0b3e96-961b-4dbd-bc96-46cdbf2b9fb9",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C19",
+      "claim": "Folkmann et al., 2021 and Lee, 2021 proposed that the rate of molecular absorption to the condensate can be 'conversion-limited' instead of diffusion-limited.",
+      "claim_type": "EXPLICIT",
+      "source": "Folkmann et al., 2021 and Lee, 2021 proposed that the rate of molecular absorption to the condensate can be 'conversion-limited' instead of diffusion-limited and established a mathematical framework for the temporal evolution of droplet sizes in this limit (Folkmann et al., 2021; Lee, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes findings from cited studies.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "cc67ccc0-4dec-4b1d-a5fb-758d54297708",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C20",
+      "claim": "The modeling of interface resistance in prior studies was conducted at the phenomenological level without aiming to understand the underlying physical mechanism.",
+      "claim_type": "EXPLICIT",
+      "source": "In all these cases, the modeling of interface resistance (Taylor et al., 2019) or conversion-limited material transfer (Folkmann et al., 2021; Lee, 2021) was conducted at the phenomenological level, without aiming to understand the underlying physical mechanism that gives rise to interface resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of prior work by the authors.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "c8ecbc19-dab1-427c-89f9-2c959b1b6a0e",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C21",
+      "claim": "Mean-field approaches in Hubatsch et al., 2021 and Bo et al., 2021 neglect the potentially complex dynamics of molecules at the condensate interface.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the mean-field approaches in Hubatsch et al., 2021 and Bo et al., 2021 neglect the potentially complex dynamics of molecules at the condensate interface, which can slow down material exchange significantly as suggested by Taylor et al., 2019 and Folkmann et al., 2021.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a critical assessment of prior work supported by citations.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "ed58a8c5-25a8-4666-8916-90d39b18b53d",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C33",
+      "claim": "A large interface resistance was proposed as a possible explanation for the discrepancy between measured and predicted LAF-1 recovery times.",
+      "claim_type": "EXPLICIT",
+      "source": "A large interface resistance was proposed as a possible explanation for this discrepancy (Taylor et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis from a cited study.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "c4867afd-dcbb-4ff6-a37e-76ea92176c68",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C34",
+      "claim": "The existence of a large interface resistance necessarily implies a strongly reduced flux of molecules successfully crossing the interface.",
+      "claim_type": "EXPLICIT",
+      "source": "The existence of a large interface resistance then necessarily implies a strongly reduced flux of molecules successfully crossing the interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference from the definition of interface resistance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "76b4c297-4a96-48e8-8f9b-cbec82602e10",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C35",
+      "claim": "Bouncing can occur because molecules incident from the dilute phase fail to incorporate into the interface, or they transiently incorporate but fail to enter the dense phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This can occur either because the molecules incident from the dilute phase fail to incorporate into the interface, or they transiently incorporate but fail to enter the dense phase. In both cases, the molecules effectively 'bounce' from the interface leading to a large interface resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "5671168b-dd49-4ad4-bac7-10ec17965190",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C36",
+      "claim": "The 'sticker-spacer' model provides a conceptual framework for understanding biomolecular phase separation.",
+      "claim_type": "EXPLICIT",
+      "source": "The 'sticker-spacer' model provides a conceptual framework for understanding biomolecular phase separation, wherein the 'stickers' represent residues or larger domains that are capable of forming saturable bonds, while the 'spacers' connect the stickers to form polymers.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about the sticker-spacer model.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "b635d524-4eb9-4999-9b97-4573556f31c4",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C37",
+      "claim": "Polymers like A6B6 with long blocks of stickers of the same type have low dilute-phase concentrations.",
+      "claim_type": "EXPLICIT",
+      "source": "As found previously (Weiner et al., 2021), polymers like A6B6 with long blocks of stickers of the same type have low dilute-phase concentrations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation and confirmed by the authors' simulations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "b00921c0-8071-4dda-b53f-c95c4438129a",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C38",
+      "claim": "Long-block polymers have low dense-phase diffusion coefficients because of their large number of trans-bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "These long-block polymers also have low dense-phase diffusion coefficients because of their large number of trans-bonds, which need to be repeatedly broken for the polymers to diffuse.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from simulation results with physical reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "0ae1fb39-fe80-4652-b91d-309aa7a73561",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C41",
+      "claim": "The reduction in interface conductance can be traced to a 'bouncing' effect where molecules incident from the dilute phase fail to form bonds with the dense phase.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction can be traced to a 'bouncing' effect. As shown schematically in the inset to Figure 3D and for an exemplary simulated trajectory in Figure 3E (more trajectories can be found in Appendix 2), molecules incident from the dilute phase may fail to form bonds with the dense phase, effectively 'bouncing' off of the condensate.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a finding from the authors' simulations with visual evidence in Figure 3D and 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "c12ce4c3-6bdc-4057-b16c-10a796490753",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C42",
+      "claim": "The interface conductance of sticker-spacer polymers is controlled by the encounter rate of a pair of unbound stickers and the availability of these stickers.",
+      "claim_type": "EXPLICIT",
+      "source": "More generally, we find that the interface conductance of the sticker-spacer polymers is controlled by the encounter rate of a pair of unbound stickers and the availability of these stickers, which in turn depends on the sticker-sticker binding strength, the dilute- and dense-phase polymer concentrations, and the width of the interface:",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from the authors' analysis of simulation results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "2b3772bd-0de7-482c-8975-edd7d025721e",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C45",
+      "claim": "At equal stoichiometry, both free As and free Bs are rare which maximizes the bouncing effect.",
+      "claim_type": "EXPLICIT",
+      "source": "By contrast, at equal stoichiometry, both free As and free Bs are rare which maximizes the bouncing effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from simulation results with mechanistic reasoning.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "c8ecead4-2edf-42f8-9290-69e5b7033c35",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C46",
+      "claim": "The reduction in potential binding partners at equal stoichiometry causes an anomalous slowing of diffusion within condensates in the regime of strong binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This reduction in potential binding partners at equal stoichiometry has also been observed experimentally (Brassinne et al., 2017), and theoretically Ronceray et al., 2022, to cause an anomalous slowing of diffusion within condensates at equal stoichiometry in the regime of strong binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to experimental and theoretical work.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "688860fb-b855-476c-a3d2-be1b451d126b",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C48",
+      "claim": "The FRAP recovery curve obtained from simulation agrees almost perfectly with the numerical integration of the theoretical model.",
+      "claim_type": "EXPLICIT",
+      "source": "The resulting numerical curve agrees almost perfectly with the simulation result (Figure 4D), which validates both our theoretical and simulation approaches.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a validation result shown in Figure 4D comparing simulation and theory.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "c96bcd22-c358-4d7c-996f-0f7d7c367474",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C49",
+      "claim": "The FRAP recovery of the simulated droplet is clearly limited by the interface resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "The FRAP recovery of the simulated droplet is clearly limited by the interface resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference from comparing the measured recovery time to theoretical predictions shown in Figure 5A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "24fe0b44-c52a-4f53-9ecf-079a2713d48e",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C50",
+      "claim": "For small droplets, interface resistance dominates recovery times, whereas for large droplets, dense-phase diffusion dominates recovery times.",
+      "claim_type": "EXPLICIT",
+      "source": "The interface resistance dominates recovery times for smaller droplets, whereas dense-phase diffusion dominates recovery times for larger droplets.",
+      "source_type": "[\"IMAGE\"]",
+      "evidence": "This is shown in Figure 5A caption and the figure itself.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "4d00909a-5093-4dcc-be98-64f02f842d9f",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C52",
+      "claim": "For large droplets, progressive diffusion of fluorescence into the droplet will be apparent, whereas small droplets will recover uniformly.",
+      "claim_type": "EXPLICIT",
+      "source": "In the latter case, the fluorescence profile during recovery will be notably different in large versus small droplets as shown in Figure 5B \u2013 for large droplets progressive diffusion of fluorescence into the droplet will be apparent, whereas small droplets will recover uniformly as internal mixing will be fast compared to exchange with the surroundings.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a prediction from the theoretical model illustrated in Figure 5B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "3a6234ea-013e-4da0-b960-63ed92fef593",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C55",
+      "claim": "The dynamic exchange of condensate components with the surroundings is a key feature of membraneless organelles.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic exchange of condensate components with the surroundings is a key feature of membraneless organelles, and can significantly impact condensate biological function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge in the Discussion.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "edf2f7de-e383-488e-8679-de25cba4dfee",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C56",
+      "claim": "The essential requirement for bouncing is that molecules in the dilute phase and molecules at the interface should not present 'sticky' surfaces to each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The essential requirement is that molecules in the dilute phase and molecules at the interface should not present 'sticky' surfaces to each other.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic principle inferred from the simulation results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "03f7064a-6dfb-4733-bde0-83fdc682821d",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C57",
+      "claim": "A natural scenario for bouncing is that molecules assume non-sticky conformations due to the shielding of interacting regions.",
+      "claim_type": "EXPLICIT",
+      "source": "Since these same molecules must be capable of sticking to each other in order to phase separate, a natural scenario is that these molecules assume non-sticky conformations due to the shielding of interacting regions, e.g., burial of hydrophobic residues in the core of a protein, or, in the scenario explored in the simulations, the saturation of sticker-like bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanistic hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "6ee4b819-8182-42ec-b028-4d4b573c905b",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C58",
+      "claim": "Examples of systems with strong enough bonds to allow bond saturation include SIM-SUMO and nucleic acids with strong intramolecular base-pairing.",
+      "claim_type": "EXPLICIT",
+      "source": "Examples of systems with strong enough bonds to allow bond saturation include SIM-SUMO (Banani et al., 2016) and nucleic acids with strong intramolecular base-pairing.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a citation to support one example.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "ed825453-8df0-47cd-844d-ad0f7f01acaf",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C59",
+      "claim": "A coarse-grained simulation of RNA droplets of (CAG)47 illustrated that a molecule in a closed hairpin conformation fails to integrate into a droplet but rather bounces off the droplet interface.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a recent coarse-grained simulation of RNA droplets of (CAG)47 (Nguyen et al., 2022) illustrated that a (CAG)47 molecule in a closed hairpin conformation fails to integrate into a droplet but rather bounces off the droplet interface.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited simulation study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "4f7f5f5a-4cc6-4c70-a8d9-8adaef75b071",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C60",
+      "claim": "Charged molecules could arrange themselves to form a charged layer at the interface, resulting in a high energetic barrier from electrostatic repulsion.",
+      "claim_type": "EXPLICIT",
+      "source": "Another possible scenario is that charged molecules could arrange themselves to form a charged layer at the interface, resulting in a high energetic barrier from electrostatic repulsion for a dilute-phase component to reach and cross the interface (Ray et al., 2023; Dai et al., 2023; Majee et al., 2024).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis supported by citations to recent work.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "c9640742-ca2d-4104-9331-f0eed5b62839",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C63",
+      "claim": "Ddx4-YFP droplets in the cell nucleus exhibit negligible interface resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "It has been shown that Ddx4-YFP droplets in the cell nucleus exhibit negligible interface resistance (Taylor et al., 2019), which raises the question whether interface resistance is relevant to natural condensates in vivo.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited experimental study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "0a1af4ac-b6c4-46bd-a4b1-cce967192d27",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C64",
+      "claim": "Formation of multiple layers or the presence of excess molecules of one species coating the droplet is likely to increase interface resistance.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, formation of multiple layers or the presence of excess molecules of one species coating the droplet is likely to increase interface resistance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "9e28fbd7-fbb2-42a4-ad18-6932ecec2aaa",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C65",
+      "claim": "The Pickering effect involves adsorbed particles partially covering the interface, thereby reducing the accessible area and the overall condensate surface tension, slowing down the exchange dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "A notable example is the Pickering effect, in which adsorbed particles partially cover the interface, thereby reducing the accessible area and the overall condensate surface tension, slowing down the exchange dynamics (Folkmann et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a mechanism described with a citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "21aad76e-e497-4a6e-8fa2-14ab7bf2d835",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C66",
+      "claim": "The same interface resistance that governs exchange between phases at equilibrium will control the flux of material from the dilute phase to the dense phase during coarsening.",
+      "claim_type": "EXPLICIT",
+      "source": "The same interface resistance that governs exchange between phases at equilibrium will control the flux of material from the dilute phase to the dense phase during coarsening, so that bouncing will slow down the coarsening process.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a logical inference about the implications of interface resistance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "cabc241e-0364-40ca-9842-855aaffe3bf5",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C67",
+      "claim": "A theoretical study of coarsening via mergers of small polymer clusters found anomalously slow coarsening dynamics due to exhaustion of binding sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, a recent theoretical study (Ranganathan and Shakhnovich, 2020) of coarsening via mergers of small polymer clusters found anomalously slow coarsening dynamics due to exhaustion of binding sites, paralleling the single-polymer bouncing effect explored here.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited theoretical study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "cf3fa62b-d823-4fea-9536-574a5a66e416",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C68",
+      "claim": "A conversion-limited flux has been shown to lead to qualitatively distinct scaling of condensate size with time.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, a conversion-limited flux has been shown to lead to qualitatively distinct scaling of condensate size with time (Lee, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a finding from a cited study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "3b2d23c6-e85f-4495-b943-38731f902d35",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C69",
+      "claim": "Many condensates dissolve and reform every cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "As many condensates dissolve and reform every cell cycle (or as needed), we anticipate that interfacial exchange will constitute an additional means of regulating condensate dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge about condensate behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "c020431c-13d1-4cbd-987f-74a9dd4ed961",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C70",
+      "claim": "Interfacial exchange will constitute an additional means of regulating condensate dynamics.",
+      "claim_type": "EXPLICIT",
+      "source": "As many condensates dissolve and reform every cell cycle (or as needed), we anticipate that interfacial exchange will constitute an additional means of regulating condensate dynamics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis proposed by the authors.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "0a248d59-3962-4770-9c82-8d758170bee8",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C71",
+      "claim": "Individual polymers are modeled as linear chains of spherical stickers of types A and B connected by implicit spacers.",
+      "claim_type": "EXPLICIT",
+      "source": "Individual polymers are modeled as linear chains of spherical stickers of types A and B connected by implicit spacers (Figure 2A) with the interaction potentials in Equations 9\u201311, which ensure one-to-one binding between A and B stickers.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the simulation methodology used by the authors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "33cbc27a-3245-455b-8484-daeef908bcff",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "claim_id": "C72",
+      "claim": "The system has reached equilibrium as indicated by consistency of results across replicates and across the first and second halves of the recorded data.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistency of results is checked across replicates and across the first and second halves of the recorded data. The agreement indicates that the system has reached equilibrium.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a validation of the simulation methodology.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "518f2228-fd1e-4f95-80b1-6ad3d358064f",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The authors derive an analytical expression showing that condensate material exchange can be limited by three factors: dilute-phase flux, dense-phase mixing, or interface resistance. They propose that interface resistance arises when molecules 'bounce' from the interface without entering the dense phase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 establish the theoretical framework for exchange dynamics. The derivation of Equation 6 (referenced throughout) provides clear mathematical support for the three limiting factors. The bouncing mechanism (C6) is demonstrated through simulations (C41, Figure 3D-E), providing both theoretical and computational evidence for this novel mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "a8aa50f8-6244-45b2-8938-089d7eed1b52",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Analysis of LAF-1 droplet FRAP data reveals a large discrepancy between measured recovery time (~1.3 hr) and mean-field predictions (~64 s), suggesting significant interface resistance that could arise from molecular bouncing at the interface.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C35 are supported by reanalysis of published experimental data (Taylor et al., 2019, Figure 1C). The quantitative discrepancy between measured and predicted recovery times is clearly documented. However, the bouncing mechanism for LAF-1 specifically remains speculative, as acknowledged in the Discussion where the authors note a 10\u00b3-10\u2074 factor difference between their simulation \u03ba values and LAF-1 experimental values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "0fa381b0-2422-416c-9c45-de9606e72884",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors implement a sticker-spacer polymer model with heterotypic A-B binding to simulate phase separation, demonstrating that polymer sequence affects dilute/dense phase concentrations and diffusion coefficients.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C38, C71-C72 describe the simulation methodology and basic results (Figure 2). The model is well-defined with explicit interaction potentials (Equations 9-11). Equilibration is validated through consistency checks across replicates and time windows (C72). The finding that long-block polymers have lower dilute-phase concentrations (C37) is supported by both citation and simulation data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "2a0d379a-e704-42c3-9d68-86a2feabbe1f",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Simulations reveal that interface conductance is reduced by a 'bouncing' effect where molecules fail to form bonds with the dense phase. The conductance depends on the availability of unbound stickers, which is minimized at equal stoichiometry.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C41-C42, C45 are directly supported by simulation data (Figure 3D-E). The bouncing mechanism is visualized in trajectories (Figure 3E, Appendix 2). The dependence on unbound sticker availability is quantified through the parameter u (Equation 15), and all simulation results collapse onto a linear relationship (Figure 3D), providing strong evidence for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "777dcbf2-64b5-47cc-ad6c-9404ffee4529",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The reduction in binding partners at equal stoichiometry causes anomalous slowing of diffusion within condensates in the strong binding regime.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C46 is supported by citations to both experimental (Brassinne et al., 2017) and theoretical (Ronceray et al., 2022) work. This provides independent validation of the equal-stoichiometry effect observed in the authors' simulations, strengthening the mechanistic interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "7982d075-82ea-4e7c-b8a7-4ffa661a0f94",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Direct simulation of FRAP recovery for an A6B6 droplet shows near-perfect agreement with theoretical predictions, validating both approaches and confirming that recovery is interface-resistance limited.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C49 are supported by Figure 4D showing excellent agreement between simulation and numerical integration of the theoretical model. The conclusion that interface resistance dominates (C49) is justified by comparison with theoretical predictions in Figure 5A, where the measured recovery time matches the interface-limited regime.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "ad91dea4-eb5e-426a-9b7f-7601013e9c3d",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The authors predict a size-dependent crossover in FRAP recovery patterns: small droplets recover uniformly (interface-limited), while large droplets show progressive diffusion (mixing-limited).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C50 and C52 are supported by theoretical analysis (Equation 6) and numerical solutions (Figure 5A-B). The R vs R\u00b2 scaling argument is mathematically sound. The predicted fluorescence profiles (Figure 5B) provide testable predictions. The crossover radius for LAF-1 (~71 \u03bcm) is calculated from measured parameters.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "d78f945b-8188-42b7-bcdb-b61045113697",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose multiple molecular mechanisms that could lead to bouncing: bond saturation (as in their simulations), hydrophobic burial, intramolecular base-pairing, or electrostatic repulsion from charged interfacial layers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C56-C60 are largely speculative (C57, C60) or based on limited examples (C58-C59). While the bond saturation mechanism is demonstrated in simulations, the generalization to other systems lacks direct experimental validation. The RNA hairpin example (C59) from Nguyen et al., 2022 provides some support, but the electrostatic mechanism (C60) remains hypothetical despite citations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "95a5be69-5acb-4331-890e-f59c9b2e8d39",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The biological relevance of interface resistance is uncertain, as Ddx4-YFP droplets show negligible interface resistance, though multi-component systems with layering or Pickering effects may exhibit increased resistance.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C63 cites experimental evidence that some in vivo condensates lack interface resistance, which contradicts the generality of the phenomenon. Claims C64-C65 are speculative about conditions that might increase resistance. The authors acknowledge this uncertainty, noting that the relevance to natural condensates requires further investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "81b80edb-70d5-4f9e-9359-b761a5afdb5d",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Interface resistance is predicted to slow condensate coarsening dynamics, with conversion-limited flux leading to qualitatively distinct scaling of condensate size with time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C68 are supported by logical inference (C66) and citations to theoretical/experimental work (C67-C68). The connection between equilibrium exchange and coarsening is physically sound. The cited work by Ranganathan and Shakhnovich (2020) on binding site exhaustion parallels the bouncing mechanism, and Lee (2021) demonstrates distinct scaling laws.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "28d7ab39-8917-421c-b7da-dd7a815a5380",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The manuscript establishes background knowledge about biomolecular condensates: they dynamically exchange material with surroundings, organize cellular processes, possess distinct physical properties, and their exchange dynamics impacts biological function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2, C7-C16, C55, C69 represent established knowledge supported by multiple citations to prior work. These claims provide context and motivation but are not novel findings of this study. They are appropriately cited and accurately represent the current understanding of condensate biology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "46ee527a-a8b3-4872-b886-7642fec78254",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The authors critically assess prior work on exchange dynamics, noting that only limited studies have addressed this question and that previous modeling was phenomenological or used mean-field approaches that neglect interfacial complexity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C21 provide a critical literature review supported by appropriate citations. The assessment that prior work was phenomenological (C20) or neglected interfacial dynamics (C21) is fair and establishes the gap this study addresses. The citations are accurate representations of the cited work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "383fc4e6-b5b1-4e53-8b00-3a754219e690",
+      "content_id": "42f54c4f-82f0-47e7-b408-40e175497662",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors hypothesize that interfacial exchange will constitute an additional means of regulating condensate dynamics as condensates dissolve and reform during the cell cycle.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C70 is speculative about future biological implications. While the hypothesis is reasonable given the demonstrated interface resistance mechanism, it lacks experimental validation in biological systems. This represents a prediction rather than a demonstrated result.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "1afdff3c-0438-4c1c-9ab9-ec074a58eb31",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors propose and demonstrate through coarse-grained simulations that interface resistance arises from a 'bouncing' mechanism where molecules incident from the dilute phase fail to form bonds with the dense phase and are repelled from the interface. This occurs when molecules do not present 'sticky' surfaces to each other, either through failure to incorporate into the interface or transient incorporation without entry into the dense phase.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers explicitly affirm this finding. The editor states the authors 'provide convincing evidence that the bouncing of molecules off the interface can lead to interfacial resistance,' and the anonymous reviewer confirms 'the paper provides solid evidence of how \"bouncing\" may contribute to interfacial resistance/exchange dynamics in biomolecular condensates.' The reviewers treat this as a central, well-supported contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "141c119f-fca0-4dd3-b3e2-6d94c48c5b8b",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors find that interface conductance in sticker-spacer polymers is controlled by the encounter rate and availability of unbound stickers, which depends on binding strength, concentrations, and interface width. At equal stoichiometry, both free A and B stickers are rare, maximizing the bouncing effect and causing anomalous slowing of diffusion in the strong binding regime.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer states that 'sequences that have more free unbound stickers (i.e., for example through imbalance sequence sticker stoichiometries) have higher conductances and they show a simple linear scaling between number of unbound stickers and conductance.' This indicates reviewer acceptance of the mechanistic relationship between unbound stickers and conductance. No concerns are raised about these findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "5c756e6e-3733-456c-a5bb-5203b47c38ba",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The authors validate their theoretical framework by showing near-perfect agreement between FRAP recovery curves from simulation and numerical integration of their model. They demonstrate that for small droplets, interface resistance dominates recovery times with uniform recovery profiles, whereas for large droplets, dense-phase diffusion dominates with progressive diffusion of fluorescence into the droplet.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer explicitly notes 'The choice of different ways to estimate conductance from simulation and reported data are thoughtful and convincing on their near-agreement' and praises 'the addition of a nice example case-study in revised Fig. 4.' The reviewer confirms the validation approach is solid, though suggests 'a little discussion of why and when they differ would be merited as well,' indicating minor room for improvement rather than fundamental concerns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "3be0e25d-7b35-4978-a83c-9430a68a3d46",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors find that polymers with long blocks of stickers of the same type (like A6B6) have low dilute-phase concentrations and low dense-phase diffusion coefficients due to their large number of trans-bonds that must be repeatedly broken for diffusion.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer summarizes the authors' simulation findings without raising concerns about these specific claims regarding polymer properties. The reviewer's overall assessment that the authors 'provide a solid picture of how their proposed framework relates to molecular exchange mechanisms' implicitly accepts these supporting simulation results.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "9dd2f886-4ace-45fd-81eb-c672eec3f772",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The authors describe their simulation methodology where individual polymers are modeled as linear chains of spherical stickers connected by implicit spacers, with validation showing the system has reached equilibrium through consistency across replicates and temporal halves of data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer states the paper combines 'coarse-grained simulations, continuum modeling, and comparison to published data' and finds the overall approach convincing. The reviewer notes 'This paper is overall well-written and clear to understand,' suggesting the methodology is adequately described and accepted. No methodological concerns are raised.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "284fb55d-ad9a-45ab-a7a1-660b29c46e2f",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors reference prior experimental work (Taylor et al., 2019) showing that exchange can be limited by dynamics at the droplet interface, with a large interface resistance proposed to explain discrepancies between measured and predicted LAF-1 recovery times, necessarily implying reduced flux of molecules crossing the interface.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer explicitly states the authors were 'Motivated by a recent experiment reported by some of the co-authors previously (Brangwynne et al. in 2019) finding strong interfacial resistance in in vitro protein droplets of LAF-1.' This confirms reviewer acceptance of the experimental motivation and prior findings that frame the current study.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "3cc3930c-4572-4e28-8b02-4e9516276a71",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors discuss various biological systems and mechanisms that could exhibit or modulate interface resistance, including SIM-SUMO, nucleic acids with base-pairing, RNA droplets showing bouncing behavior, charged layers creating electrostatic barriers, and the Pickering effect. They note that Ddx4-YFP droplets show negligible interface resistance, raising questions about in vivo relevance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer notes 'the expanded discussion' as an improvement in the revision, suggesting acceptance of the broader contextualization of the findings. The reviewer's comment about LAF1 mutant FRAP data and suggestion to 'approximately predict the conductance from other parameters' indicates engagement with the biological relevance discussion rather than skepticism about the claims.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "00d7e128-415d-4ab0-ab3f-ac2b87c26b4e",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The authors propose that interface resistance will affect coarsening dynamics by controlling material flux during Ostwald ripening, potentially slowing coarsening and leading to distinct scaling of condensate size with time. They suggest interfacial exchange constitutes an additional means of regulating condensate dynamics as condensates dissolve and reform during cell cycles.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These broader implications are not explicitly critiqued by reviewers. The editor's statement that 'Results like these can inform how experimental results in the field of biological condensates are interpreted' suggests acceptance of the broader significance and implications of the findings for understanding condensate dynamics.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors establish background knowledge about biomolecular condensates, including their dynamic material exchange, biological functions, physical properties, and the limited prior understanding of exchange timescale controls. They critique prior phenomenological approaches for not addressing underlying physical mechanisms of interface resistance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer's summary accurately reflects this background without raising concerns, stating 'the authors build a physical framework to probe the mechanisms that underlie exchange of molecules between coexisting dense and dilute liquid-like phases of condensates.' The reviewer's acknowledgment that the paper addresses a gap in understanding implicitly accepts the characterization of prior work and the motivation for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "615bca9e-9ee5-4a78-98c9-20a51af7119a",
+      "content_id": "36ad2755-ce07-4918-b328-27485cbf2d08",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors utilize the sticker-spacer model as a conceptual framework for understanding biomolecular phase separation, where stickers form saturable bonds and spacers connect them to form polymers.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer describes the authors' use of 'coarse-grained MD-simulations of sticker-spacer self-associative polymers' without questioning the appropriateness of this model choice. The reviewer's positive assessment of the overall approach indicates acceptance of the sticker-spacer framework as suitable for investigating the research questions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7c7f2245-aa9c-4a6f-8f03-32f13c93da64",
+      "result_id": "518f2228-fd1e-4f95-80b1-6ad3d358064f"
+    },
+    {
+      "claim_id": "0a76def6-87d0-4aa8-ab88-1cd41ff04d45",
+      "result_id": "518f2228-fd1e-4f95-80b1-6ad3d358064f"
+    },
+    {
+      "claim_id": "9ef232a5-813b-46e8-be81-f10c25f834af",
+      "result_id": "518f2228-fd1e-4f95-80b1-6ad3d358064f"
+    },
+    {
+      "claim_id": "eb7a7a99-0288-4ba6-8eed-3006a2bd298a",
+      "result_id": "518f2228-fd1e-4f95-80b1-6ad3d358064f"
+    },
+    {
+      "claim_id": "ed58a8c5-25a8-4666-8916-90d39b18b53d",
+      "result_id": "a8aa50f8-6244-45b2-8938-089d7eed1b52"
+    },
+    {
+      "claim_id": "c4867afd-dcbb-4ff6-a37e-76ea92176c68",
+      "result_id": "a8aa50f8-6244-45b2-8938-089d7eed1b52"
+    },
+    {
+      "claim_id": "76b4c297-4a96-48e8-8f9b-cbec82602e10",
+      "result_id": "a8aa50f8-6244-45b2-8938-089d7eed1b52"
+    },
+    {
+      "claim_id": "5671168b-dd49-4ad4-bac7-10ec17965190",
+      "result_id": "0fa381b0-2422-416c-9c45-de9606e72884"
+    },
+    {
+      "claim_id": "b635d524-4eb9-4999-9b97-4573556f31c4",
+      "result_id": "0fa381b0-2422-416c-9c45-de9606e72884"
+    },
+    {
+      "claim_id": "b00921c0-8071-4dda-b53f-c95c4438129a",
+      "result_id": "0fa381b0-2422-416c-9c45-de9606e72884"
+    },
+    {
+      "claim_id": "0a248d59-3962-4770-9c82-8d758170bee8",
+      "result_id": "0fa381b0-2422-416c-9c45-de9606e72884"
+    },
+    {
+      "claim_id": "33cbc27a-3245-455b-8484-daeef908bcff",
+      "result_id": "0fa381b0-2422-416c-9c45-de9606e72884"
+    },
+    {
+      "claim_id": "0ae1fb39-fe80-4652-b91d-309aa7a73561",
+      "result_id": "2a0d379a-e704-42c3-9d68-86a2feabbe1f"
+    },
+    {
+      "claim_id": "c12ce4c3-6bdc-4057-b16c-10a796490753",
+      "result_id": "2a0d379a-e704-42c3-9d68-86a2feabbe1f"
+    },
+    {
+      "claim_id": "2b3772bd-0de7-482c-8975-edd7d025721e",
+      "result_id": "2a0d379a-e704-42c3-9d68-86a2feabbe1f"
+    },
+    {
+      "claim_id": "c8ecead4-2edf-42f8-9290-69e5b7033c35",
+      "result_id": "777dcbf2-64b5-47cc-ad6c-9404ffee4529"
+    },
+    {
+      "claim_id": "688860fb-b855-476c-a3d2-be1b451d126b",
+      "result_id": "7982d075-82ea-4e7c-b8a7-4ffa661a0f94"
+    },
+    {
+      "claim_id": "c96bcd22-c358-4d7c-996f-0f7d7c367474",
+      "result_id": "7982d075-82ea-4e7c-b8a7-4ffa661a0f94"
+    },
+    {
+      "claim_id": "24fe0b44-c52a-4f53-9ecf-079a2713d48e",
+      "result_id": "ad91dea4-eb5e-426a-9b7f-7601013e9c3d"
+    },
+    {
+      "claim_id": "4d00909a-5093-4dcc-be98-64f02f842d9f",
+      "result_id": "ad91dea4-eb5e-426a-9b7f-7601013e9c3d"
+    },
+    {
+      "claim_id": "edf2f7de-e383-488e-8679-de25cba4dfee",
+      "result_id": "d78f945b-8188-42b7-bcdb-b61045113697"
+    },
+    {
+      "claim_id": "03f7064a-6dfb-4733-bde0-83fdc682821d",
+      "result_id": "d78f945b-8188-42b7-bcdb-b61045113697"
+    },
+    {
+      "claim_id": "6ee4b819-8182-42ec-b028-4d4b573c905b",
+      "result_id": "d78f945b-8188-42b7-bcdb-b61045113697"
+    },
+    {
+      "claim_id": "ed825453-8df0-47cd-844d-ad0f7f01acaf",
+      "result_id": "d78f945b-8188-42b7-bcdb-b61045113697"
+    },
+    {
+      "claim_id": "4f7f5f5a-4cc6-4c70-a8d9-8adaef75b071",
+      "result_id": "d78f945b-8188-42b7-bcdb-b61045113697"
+    },
+    {
+      "claim_id": "c9640742-ca2d-4104-9331-f0eed5b62839",
+      "result_id": "95a5be69-5acb-4331-890e-f59c9b2e8d39"
+    },
+    {
+      "claim_id": "0a1af4ac-b6c4-46bd-a4b1-cce967192d27",
+      "result_id": "95a5be69-5acb-4331-890e-f59c9b2e8d39"
+    },
+    {
+      "claim_id": "9e28fbd7-fbb2-42a4-ad18-6932ecec2aaa",
+      "result_id": "95a5be69-5acb-4331-890e-f59c9b2e8d39"
+    },
+    {
+      "claim_id": "21aad76e-e497-4a6e-8fa2-14ab7bf2d835",
+      "result_id": "81b80edb-70d5-4f9e-9359-b761a5afdb5d"
+    },
+    {
+      "claim_id": "cabc241e-0364-40ca-9842-855aaffe3bf5",
+      "result_id": "81b80edb-70d5-4f9e-9359-b761a5afdb5d"
+    },
+    {
+      "claim_id": "cf3fa62b-d823-4fea-9536-574a5a66e416",
+      "result_id": "81b80edb-70d5-4f9e-9359-b761a5afdb5d"
+    },
+    {
+      "claim_id": "18b0a532-9074-4d46-b55c-f7409e61dc86",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "3eeb00c6-3800-49c3-aa66-1c853ece0819",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "864e8f82-a654-4401-bc56-b43e7c7f34ef",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "da93814b-c332-49cd-8e80-a2f20a38c267",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "23ce8f8c-6d93-45dd-b0f4-903371892e7f",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "32386129-d468-41ef-8216-8c291d8ddc5b",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "d88f5881-dab3-47e6-927a-f60f0d1af643",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "f6171a3e-ca1c-4643-b688-6704d1e04537",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "3c51b5cd-047b-43be-97a6-a94cb5bfa6ea",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "ae63a8e7-54a5-49a5-a361-ab6b73a25458",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "f596584a-a4b0-466b-a563-68702c223b26",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "2e97f8e4-9968-4850-b09d-6f20560a198a",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "3a6234ea-013e-4da0-b960-63ed92fef593",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "3b2d23c6-e85f-4495-b943-38731f902d35",
+      "result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380"
+    },
+    {
+      "claim_id": "b205c200-8bce-4f29-95a4-c440ad2bd9de",
+      "result_id": "46ee527a-a8b3-4872-b886-7642fec78254"
+    },
+    {
+      "claim_id": "88399cfa-a7e0-4017-be2b-8d8d8bc24baf",
+      "result_id": "46ee527a-a8b3-4872-b886-7642fec78254"
+    },
+    {
+      "claim_id": "fa0b3e96-961b-4dbd-bc96-46cdbf2b9fb9",
+      "result_id": "46ee527a-a8b3-4872-b886-7642fec78254"
+    },
+    {
+      "claim_id": "cc67ccc0-4dec-4b1d-a5fb-758d54297708",
+      "result_id": "46ee527a-a8b3-4872-b886-7642fec78254"
+    },
+    {
+      "claim_id": "c8ecbc19-dab1-427c-89f9-2c959b1b6a0e",
+      "result_id": "46ee527a-a8b3-4872-b886-7642fec78254"
+    },
+    {
+      "claim_id": "c020431c-13d1-4cbd-987f-74a9dd4ed961",
+      "result_id": "383fc4e6-b5b1-4e53-8b00-3a754219e690"
+    },
+    {
+      "claim_id": "eb7a7a99-0288-4ba6-8eed-3006a2bd298a",
+      "result_id": "1afdff3c-0438-4c1c-9ab9-ec074a58eb31"
+    },
+    {
+      "claim_id": "76b4c297-4a96-48e8-8f9b-cbec82602e10",
+      "result_id": "1afdff3c-0438-4c1c-9ab9-ec074a58eb31"
+    },
+    {
+      "claim_id": "0ae1fb39-fe80-4652-b91d-309aa7a73561",
+      "result_id": "1afdff3c-0438-4c1c-9ab9-ec074a58eb31"
+    },
+    {
+      "claim_id": "edf2f7de-e383-488e-8679-de25cba4dfee",
+      "result_id": "1afdff3c-0438-4c1c-9ab9-ec074a58eb31"
+    },
+    {
+      "claim_id": "03f7064a-6dfb-4733-bde0-83fdc682821d",
+      "result_id": "1afdff3c-0438-4c1c-9ab9-ec074a58eb31"
+    },
+    {
+      "claim_id": "c12ce4c3-6bdc-4057-b16c-10a796490753",
+      "result_id": "141c119f-fca0-4dd3-b3e2-6d94c48c5b8b"
+    },
+    {
+      "claim_id": "2b3772bd-0de7-482c-8975-edd7d025721e",
+      "result_id": "141c119f-fca0-4dd3-b3e2-6d94c48c5b8b"
+    },
+    {
+      "claim_id": "c8ecead4-2edf-42f8-9290-69e5b7033c35",
+      "result_id": "141c119f-fca0-4dd3-b3e2-6d94c48c5b8b"
+    },
+    {
+      "claim_id": "688860fb-b855-476c-a3d2-be1b451d126b",
+      "result_id": "5c756e6e-3733-456c-a5bb-5203b47c38ba"
+    },
+    {
+      "claim_id": "c96bcd22-c358-4d7c-996f-0f7d7c367474",
+      "result_id": "5c756e6e-3733-456c-a5bb-5203b47c38ba"
+    },
+    {
+      "claim_id": "24fe0b44-c52a-4f53-9ecf-079a2713d48e",
+      "result_id": "5c756e6e-3733-456c-a5bb-5203b47c38ba"
+    },
+    {
+      "claim_id": "4d00909a-5093-4dcc-be98-64f02f842d9f",
+      "result_id": "5c756e6e-3733-456c-a5bb-5203b47c38ba"
+    },
+    {
+      "claim_id": "b635d524-4eb9-4999-9b97-4573556f31c4",
+      "result_id": "3be0e25d-7b35-4978-a83c-9430a68a3d46"
+    },
+    {
+      "claim_id": "b00921c0-8071-4dda-b53f-c95c4438129a",
+      "result_id": "3be0e25d-7b35-4978-a83c-9430a68a3d46"
+    },
+    {
+      "claim_id": "0a248d59-3962-4770-9c82-8d758170bee8",
+      "result_id": "9dd2f886-4ace-45fd-81eb-c672eec3f772"
+    },
+    {
+      "claim_id": "33cbc27a-3245-455b-8484-daeef908bcff",
+      "result_id": "9dd2f886-4ace-45fd-81eb-c672eec3f772"
+    },
+    {
+      "claim_id": "9ef232a5-813b-46e8-be81-f10c25f834af",
+      "result_id": "284fb55d-ad9a-45ab-a7a1-660b29c46e2f"
+    },
+    {
+      "claim_id": "ed58a8c5-25a8-4666-8916-90d39b18b53d",
+      "result_id": "284fb55d-ad9a-45ab-a7a1-660b29c46e2f"
+    },
+    {
+      "claim_id": "c4867afd-dcbb-4ff6-a37e-76ea92176c68",
+      "result_id": "284fb55d-ad9a-45ab-a7a1-660b29c46e2f"
+    },
+    {
+      "claim_id": "6ee4b819-8182-42ec-b028-4d4b573c905b",
+      "result_id": "3cc3930c-4572-4e28-8b02-4e9516276a71"
+    },
+    {
+      "claim_id": "ed825453-8df0-47cd-844d-ad0f7f01acaf",
+      "result_id": "3cc3930c-4572-4e28-8b02-4e9516276a71"
+    },
+    {
+      "claim_id": "4f7f5f5a-4cc6-4c70-a8d9-8adaef75b071",
+      "result_id": "3cc3930c-4572-4e28-8b02-4e9516276a71"
+    },
+    {
+      "claim_id": "c9640742-ca2d-4104-9331-f0eed5b62839",
+      "result_id": "3cc3930c-4572-4e28-8b02-4e9516276a71"
+    },
+    {
+      "claim_id": "0a1af4ac-b6c4-46bd-a4b1-cce967192d27",
+      "result_id": "3cc3930c-4572-4e28-8b02-4e9516276a71"
+    },
+    {
+      "claim_id": "9e28fbd7-fbb2-42a4-ad18-6932ecec2aaa",
+      "result_id": "3cc3930c-4572-4e28-8b02-4e9516276a71"
+    },
+    {
+      "claim_id": "21aad76e-e497-4a6e-8fa2-14ab7bf2d835",
+      "result_id": "00d7e128-415d-4ab0-ab3f-ac2b87c26b4e"
+    },
+    {
+      "claim_id": "cabc241e-0364-40ca-9842-855aaffe3bf5",
+      "result_id": "00d7e128-415d-4ab0-ab3f-ac2b87c26b4e"
+    },
+    {
+      "claim_id": "cf3fa62b-d823-4fea-9536-574a5a66e416",
+      "result_id": "00d7e128-415d-4ab0-ab3f-ac2b87c26b4e"
+    },
+    {
+      "claim_id": "3b2d23c6-e85f-4495-b943-38731f902d35",
+      "result_id": "00d7e128-415d-4ab0-ab3f-ac2b87c26b4e"
+    },
+    {
+      "claim_id": "c020431c-13d1-4cbd-987f-74a9dd4ed961",
+      "result_id": "00d7e128-415d-4ab0-ab3f-ac2b87c26b4e"
+    },
+    {
+      "claim_id": "18b0a532-9074-4d46-b55c-f7409e61dc86",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "3eeb00c6-3800-49c3-aa66-1c853ece0819",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "7c7f2245-aa9c-4a6f-8f03-32f13c93da64",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "0a76def6-87d0-4aa8-ab88-1cd41ff04d45",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "864e8f82-a654-4401-bc56-b43e7c7f34ef",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "da93814b-c332-49cd-8e80-a2f20a38c267",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "23ce8f8c-6d93-45dd-b0f4-903371892e7f",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "32386129-d468-41ef-8216-8c291d8ddc5b",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "d88f5881-dab3-47e6-927a-f60f0d1af643",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "f6171a3e-ca1c-4643-b688-6704d1e04537",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "3c51b5cd-047b-43be-97a6-a94cb5bfa6ea",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "ae63a8e7-54a5-49a5-a361-ab6b73a25458",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "f596584a-a4b0-466b-a563-68702c223b26",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "2e97f8e4-9968-4850-b09d-6f20560a198a",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "b205c200-8bce-4f29-95a4-c440ad2bd9de",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "88399cfa-a7e0-4017-be2b-8d8d8bc24baf",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "fa0b3e96-961b-4dbd-bc96-46cdbf2b9fb9",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "cc67ccc0-4dec-4b1d-a5fb-758d54297708",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "c8ecbc19-dab1-427c-89f9-2c959b1b6a0e",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "3a6234ea-013e-4da0-b960-63ed92fef593",
+      "result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f"
+    },
+    {
+      "claim_id": "5671168b-dd49-4ad4-bac7-10ec17965190",
+      "result_id": "615bca9e-9ee5-4a78-98c9-20a51af7119a"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "13d52c14-5f95-441e-959c-7f87ebb44351",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "28d7ab39-8917-421c-b7da-dd7a815a5380",
+      "peer_result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on background and motivation claims (C1-C2, C7-C16, C17-C21, C55). Both evaluations find these contextual claims well-supported by citations. OpenEval notes they represent established knowledge; peer reviewers accept the characterization of prior work and the gap being addressed.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "92fcf2b3-552d-46db-99e5-969b599612d3",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "518f2228-fd1e-4f95-80b1-6ad3d358064f",
+      "peer_result_id": "1afdff3c-0438-4c1c-9ab9-ec074a58eb31",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on the bouncing mechanism (C6, C41). OpenEval finds theoretical and computational evidence convincing; peer reviewers explicitly affirm 'convincing evidence that the bouncing of molecules off the interface can lead to interfacial resistance.' Both treat this as a central, well-supported contribution. OpenEval also addresses C3-C5 (theoretical framework) which peer reviewers touch on in R6.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "5f59524a-aacc-42c3-9f95-5c48c177e0ad",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "2a0d379a-e704-42c3-9d68-86a2feabbe1f",
+      "peer_result_id": "141c119f-fca0-4dd3-b3e2-6d94c48c5b8b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on unbound sticker mechanism (C42, C45). OpenEval finds simulation data (Figure 3D-E) provides strong evidence for linear relationship. Peer reviewers confirm acceptance of 'simple linear scaling between number of unbound stickers and conductance.' OpenEval also addresses C41 separately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "d520c4d6-de79-48ca-b48f-955a0f1ab6b2",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "777dcbf2-64b5-47cc-ad6c-9404ffee4529",
+      "peer_result_id": "141c119f-fca0-4dd3-b3e2-6d94c48c5b8b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on equal-stoichiometry effect (C46). OpenEval finds citations to experimental and theoretical work provide independent validation. Peer reviewers accept the mechanistic relationship between unbound stickers and conductance without raising concerns about this supporting claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "99f5c592-8a6f-4e79-8e4c-1f8732bde24d",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "7982d075-82ea-4e7c-b8a7-4ffa661a0f94",
+      "peer_result_id": "5c756e6e-3733-456c-a5bb-5203b47c38ba",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on interface resistance dominance (C48-C49). OpenEval finds excellent agreement between simulation and theory. Peer reviewers explicitly praise 'thoughtful and convincing' validation approach, though suggest minor discussion of differences would be merited.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "a9f3835c-6970-4f61-85ee-87e01c69c8d6",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "ad91dea4-eb5e-426a-9b7f-7601013e9c3d",
+      "peer_result_id": "5c756e6e-3733-456c-a5bb-5203b47c38ba",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on scaling predictions (C50, C52). OpenEval finds theoretical analysis and numerical solutions mathematically sound with testable predictions. Peer reviewers' positive assessment of validation approach implicitly accepts these theoretical predictions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "748a7e50-0a96-4fdd-827a-234bf9cfd9df",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "a8aa50f8-6244-45b2-8938-089d7eed1b52",
+      "peer_result_id": "284fb55d-ad9a-45ab-a7a1-660b29c46e2f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on LAF-1 experimental motivation (C33-C35). OpenEval notes quantitative discrepancy is documented but bouncing mechanism for LAF-1 remains speculative. Peer reviewers explicitly accept the experimental motivation from Taylor et al. 2019 without raising concerns about the reanalysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "ee5290b2-f955-4f8a-badc-72d41de7a402",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "0fa381b0-2422-416c-9c45-de9606e72884",
+      "peer_result_id": "3be0e25d-7b35-4978-a83c-9430a68a3d46",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on simulation methodology and polymer properties (C36-C38, C71-C72). OpenEval finds model well-defined with validated equilibration. Peer reviewers (R4) accept simulation findings on polymer properties; R5 confirms methodology is adequately described and accepted.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "4dc13b17-9825-4f72-9a71-5efd001f688b",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "0fa381b0-2422-416c-9c45-de9606e72884",
+      "peer_result_id": "9dd2f886-4ace-45fd-81eb-c672eec3f772",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on simulation methodology validation (C71-C72). OpenEval validates equilibration through consistency checks. Peer reviewers find the overall approach combining simulations, modeling, and data comparison convincing, with no methodological concerns raised.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "36c37e96-852e-4fc6-859d-f5f268df56c1",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "0fa381b0-2422-416c-9c45-de9606e72884",
+      "peer_result_id": "615bca9e-9ee5-4a78-98c9-20a51af7119a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on sticker-spacer model choice (C36). OpenEval describes model as well-defined with explicit interaction potentials. Peer reviewers accept the sticker-spacer framework as suitable without questioning its appropriateness.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "0b4c74b7-68bf-4d6a-81a6-0102b3475735",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "81b80edb-70d5-4f9e-9359-b761a5afdb5d",
+      "peer_result_id": "00d7e128-415d-4ab0-ab3f-ac2b87c26b4e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on broader implications for coarsening and dynamics (C66-C68). OpenEval finds claims supported by logical inference and citations. Peer reviewers accept broader significance, with editor noting results 'can inform how experimental results in the field of biological condensates are interpreted.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "99adf9a1-b8a3-44c3-b627-1b8cae7c2233",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "d78f945b-8188-42b7-bcdb-b61045113697",
+      "peer_result_id": "1afdff3c-0438-4c1c-9ab9-ec074a58eb31",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement in certainty level on generalization (C56-C57). OpenEval rates these claims as UNCERTAIN, noting they are largely speculative and lack direct experimental validation beyond limited examples. Peer reviewers rate as SUPPORTED, treating the bouncing mechanism as a central, well-supported contribution without expressing uncertainty about generalization.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "2370031b-0b21-46b5-99e5-3637de320c5d",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "d78f945b-8188-42b7-bcdb-b61045113697",
+      "peer_result_id": "3cc3930c-4572-4e28-8b02-4e9516276a71",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement in certainty level on biological relevance (C58-C60). OpenEval rates UNCERTAIN due to limited examples and hypothetical mechanisms. Peer reviewers rate SUPPORTED, noting 'expanded discussion' as improvement and engaging with biological relevance without expressing skepticism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "59b316c2-4051-43e3-9bcc-59c0e2214bf8",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "95a5be69-5acb-4331-890e-f59c9b2e8d39",
+      "peer_result_id": "3cc3930c-4572-4e28-8b02-4e9516276a71",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement in certainty level on conditions affecting resistance (C63-C65). OpenEval rates UNCERTAIN, noting C63 contradicts generality and C64-C65 are speculative. Peer reviewers rate SUPPORTED, accepting the broader contextualization without raising concerns about speculation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "5e0ee3e1-a07a-470f-a24c-b319b6afe5fc",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "383fc4e6-b5b1-4e53-8b00-3a754219e690",
+      "peer_result_id": "00d7e128-415d-4ab0-ab3f-ac2b87c26b4e",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement in certainty level on future biological implications (C70). OpenEval rates UNCERTAIN, noting it represents a prediction rather than demonstrated result lacking experimental validation. Peer reviewers rate SUPPORTED as part of broader implications, with no explicit critique of speculative nature.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    },
+    {
+      "id": "eee46059-a72f-42cf-a208-d55fd229cc70",
+      "submission_id": "c5cc0bd0-8840-428b-90dd-d102664fec7f",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "46ee527a-a8b3-4872-b886-7642fec78254",
+      "peer_result_id": "7a6ebfef-fb9e-42d7-af5e-360871ee6e6f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on literature review and gap identification (C17-C21). OpenEval finds critical review appropriately cited and fair in assessing prior work as phenomenological. Peer reviewers implicitly accept this characterization by acknowledging the paper addresses a gap in understanding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:55:34.579927Z"
+    }
+  ]
+}

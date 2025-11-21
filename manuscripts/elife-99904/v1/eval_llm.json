@@ -1,0 +1,179 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "The manuscript establishes the biological and physical context for the study by reviewing prior work on electrical synapses, subthreshold oscillations in inferior olive neurons, the C. elegans connectome, and Anderson localization physics. These background claims justify using C. elegans as a model system to study wave interference on electrical synapse networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C20 are well-supported by appropriate citations to established literature in neuroscience and physics. The authors correctly cite the C. elegans connectome (Cook et al., 2019), properties of electrical synapses, and Anderson localization theory. The absence of subthreshold oscillations in C. elegans (C16) is appropriately noted as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C67"
+    ],
+    "result": "The authors constructed a circuit model of the C. elegans electrical synapse network by treating cells as nodes, inserting two virtual nodes between each gap junction, normalizing anatomical weights to transmission coefficients (0-1), and representing the system as a 3335\u00d73335 tight-binding Anderson Hamiltonian without signal attenuation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C67 describe a methodologically sound circuit construction. The normalization scheme (C58: w_ij = min{1, g_ij/40}) is clearly defined, and the matrix dimensions (C67) are mathematically consistent with 469 cells + 2\u00d71433 virtual nodes. However, the biological justification for the normalization threshold (40) and the exclusion of signal attenuation (C64) are not provided, which may limit biological realism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C27"
+    ],
+    "result": "The computational model reveals that transmission coefficients between cell-pairs depend on wavenumber (E value), with all transmission disappearing beyond a threshold (E=\u00b15.650), strong transmission concentrated in body-wall muscles at E=0.225, and complete isolation at the mobility edge. This wavenumber-dependent pattern is termed the Wavenumber-Dependent Transmission Map (WDTM).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C25, C27 are supported by computational data shown in Figure 2. The identification of a signal mobility edge (C3) at E=\u00b15.650 using a 10^-7 threshold is reasonable, though the threshold choice is somewhat arbitrary. The WDTM concept (C27) is a novel contribution clearly demonstrated by the heatmaps showing different transmission patterns at different E values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C4"
+    ],
+    "result": "In the E value range [1.275, 1.575], only intra-strand body-wall muscle cell-pairs showed strong transmission, exhibiting regular patterned transmission with distances that are multiples of specific integers (3, 2, 7, or 4 depending on E value).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C30, C4 are supported by Figure 3 and supplementary figures showing WDTMs at different E values. The regular patterns with specific distance multiples are clearly visible in the network diagrams. This represents a key finding about long-distance, structured transmission in body-wall muscles, though the biological significance of these specific patterns is not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C36",
+      "C37",
+      "C45",
+      "C46"
+    ],
+    "result": "The head mesodermal cell (hmc) plays a critical bridging role in the network, being strongly connected to neck body-wall muscles (7th-8th) across all four strands, enabling inter-strand transmission and long-distance signal propagation. Cell-pairs between hmc and ventral-left neck muscles were identified as major hub cell-pairs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32, C33, C36, C37, C45, C46 are supported by network diagram analysis and distance calculations in Appendix 1-table 5. The strong connectivity of hmc (C33, C46) is evident from the network structure, and its role in bridging inter-strand connections (C32) is a reasonable inference from the WDTM patterns. The identification as a major hub (C45) is supported by Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C38",
+      "C39"
+    ],
+    "result": "Among non-body-wall muscle cell-pairs with strong transmission, most showed short distances (1-3), while specific neurons (AVBR interneuron, AS11 and VD04 motor neurons, and CEPDL, IL1R, IL1DR, OLQDL sensory neurons) formed long-distance cell-pairs with strong transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35, C38, C39 are supported by Appendix 1-table 5 data. The identification of specific neurons with long-distance transmission is a concrete finding, though the functional significance of these particular neurons is not explored. The data clearly distinguish short-distance (most cell-pairs) from long-distance (specific neurons) transmission patterns.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C5"
+    ],
+    "result": "Major hub cell-pairs (appearing in \u226510% of WDTMs) were predominantly intra-strand body-wall muscle pairs from neck to tail. The simple linear connectivity of these strands reduces multi-path interference compared to complex neuronal connections, enabling strong transmission across multiple wavenumbers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44, C5 are supported by Figure 4 showing average appearance rates. Note: C40 contains a typo ('x<0' should be '\u22650.1'). The mechanistic explanation (C43-C44) linking simple connectivity to reduced destructive interference is physically sound and represents an important insight. However, the threshold of 0.1 for defining major hubs is arbitrary and not justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C47",
+      "C49"
+    ],
+    "result": "Cell-pairs among sensory neurons PVDL/PVDR and organ cells CANL/CANR/exc_cell were identified as major hub cell-pairs, with CANL-CANR showing the highest appearance rate (7/31\u22480.23). Strong anatomical connectivity alone is not sufficient to predict major hub status.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C49 are supported by Figure 4 data. The identification of these specific cell-pairs as hubs is clear from the appearance rate analysis. The insight that strong edges don't guarantee hub status (C49) is important and demonstrates that interference effects, not just connectivity strength, determine transmission patterns. This distinguishes the wave-based model from simple connectivity analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Comparing models with and without interference reveals that interneurons show high effective conductance (without interference) but poor wave transmission (with interference) due to destructive interference from multiple paths. Effective transmission occurs only in strongly connected small groups or regularly connected large groups (body-wall muscles).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 are supported by Figure 5 comparing effective conductance (no interference) versus transmission coefficients (with interference). This comparison is a key contribution showing that complex connectivity paradoxically reduces wave transmission. The mechanistic explanation (C51-C52) is physically sound. However, the effective conductance calculation assumes DC conditions, which may not fully capture the relevant comparison for oscillatory signals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "The authors speculate that synchronized rhythmic activity in mammalian inferior olive nucleus might arise from strong or regular electrical synapse connectivity enabling constructive interference of subthreshold waves at specific wavenumbers, though no such activity has been observed in C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C54-C56 are explicitly speculative (C55-C56 use 'might' and 'may'). While C54 correctly notes the absence of subthreshold oscillations in C. elegans, the extrapolation to inferior olive (C55-C56) is not supported by data from this study. The model uses C. elegans connectivity, which differs substantially from mammalian systems. This speculation requires experimental validation and connectome data from inferior olive to be supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Computational errors occurred in 0.006% of calculations (5,213 cell-pairs at three E values where T+R>1), which were post-corrected to T=0, R=1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C70 transparently reports computational errors and their correction. The error rate is very low (0.006%), and the correction method (setting T=0, R=1) is conservative. However, the root cause of these errors is not explained, and it's unclear whether they indicate numerical instability at specific E values or implementation issues. This transparency is commendable but raises questions about numerical robustness.",
+    "result_type": "MINOR"
+  }
+]

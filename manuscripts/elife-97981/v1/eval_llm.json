@@ -1,0 +1,386 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "Different mouse tissues exhibit varying levels of intrinsic RNase activity during nucleus isolation, with brain showing the lowest activity and adipose tissues (especially eWAT) and pancreas showing high degradation. Standard recombinant RNase inhibitors (0.4-4 U/\u00b5l) had no discernible effect on RNA quality, but vanadyl ribonucleoside complex (VRC) significantly improved RNA quality across most tissues except pancreas and spleen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C40 provide systematic experimental evidence showing tissue-specific RNA degradation patterns (Figure 1A-D) and the superior effectiveness of VRC over standard RNase inhibitors. The data demonstrate clear differences in bioanalyzer profiles across conditions, supporting the conclusion that VRC is necessary for preserving RNA quality in tissues with high RNase activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The optimized nucleus isolation protocol using VRC maintains both RNA quality and nuclear structural integrity across tissue types, with nuclei showing smoother membranes, larger size, and stable RNA for up to 24 hours post-homogenization, even after flow cytometry sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46 are well-supported by microscopy data (Figure 1E-F) showing improved nuclear morphology and bioanalyzer data (Figure 1G) demonstrating temporal RNA stability. The preservation of RNA quality through additional handling steps (sorting) strengthens the practical utility of the method. Citation to Shieh et al., 2018 provides independent validation of VRC's preservative properties.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C133"
+    ],
+    "result": "VRC does not interfere with accurate gene expression profiling, as demonstrated by cell-type-specific marker expression in sorted adipocyte versus non-adipocyte nuclei, with the protocol successfully reducing VRC concentration before reverse transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C48 are supported by qRT-PCR data (Figure 2-supplement 1A) showing appropriate cell-type-specific marker expression. The methodological solution of reducing VRC before cDNA synthesis (C133) addresses the known inhibitory effect on reverse transcriptase, with successful downstream applications validating the approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C2"
+    ],
+    "result": "The optimized snRNA-seq protocol produces superior data quality compared to published datasets, with nearly twofold higher UMI and gene counts per nucleus, significantly lower mitochondrial read proportions (<1% vs 2-39%), higher fractions of reads in nuclei, and clearer distinction between intact nuclei and background barcodes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C54 are strongly supported by comprehensive comparative analyses (Figure 2B-G) showing consistent improvements across multiple quality metrics. The barcode rank plots and CellBender analysis provide orthogonal validation of reduced ambient RNA contamination. The magnitude of improvement (twofold) and consistency across metrics support the claim of superior data quality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C3"
+    ],
+    "result": "snRNA-seq of mouse adipose tissues identified 53,395 nuclei across 10 distinct cell types, with notably improved recovery of vascular cells (endothelial cells and pericytes/smooth muscle cells) compared to previous studies, likely due to robust two-step tissue homogenization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C60 are supported by UMAP visualization (Figure 2H) and comparative analyses (Figure 2-supplement 2B-D) showing cell type distributions and quality metrics. The improved vascular cell recovery is a notable advancement, though the mechanistic explanation (C59) is inferential. Higher UMI/gene counts across most cell types validate the technical improvements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "High-fat diet feeding induced depot-specific changes in cellular composition, with both eWAT and iWAT showing reduced adipocyte and increased macrophage/monocyte fractions (more prominent in eWAT), while dendritic cells increased specifically in eWAT and mast cells were more abundant in iWAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C65 are supported by proportional data (Figure 2J, Figure 2-supplement 2E) showing consistent depot-specific and diet-induced changes. The patterns align with known biology of adipose tissue remodeling during obesity, and the quantitative data support the stated differences between depots and conditions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Four APC subpopulations were identified with distinct marker profiles: APC1/APC2 (adipocyte progenitors with APC2 showing fibrotic gene expression), APC3 (adipose regulatory cells), and APC4 (committed preadipocytes). During obesity, eWAT specifically showed expansion of APC4 and reduction of APC1/APC2, suggesting depot-specific promotion of de novo adipogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C72 are well-supported by UMAP clustering (Figure 3A-B), marker gene expression data (Figure 3-supplement 1), and proportional changes (Figure 3C). The characterization aligns with previous literature (citations to Merrick et al., Hepler et al., Schwalie et al.). The inference about de novo adipogenesis (C73) is reasonable given the observed APC dynamics and is supported by citation to Wang et al., 2013.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Seven macrophage/monocyte subpopulations were identified, including M2 macrophages (MC1: perivascular-like, MC2: non-perivascular-like with antigen presentation features), lipid-associated macrophages (MC3/LAMs), regulatory macrophages (MC6/RegM), collagen-expressing macrophages (MC7/CEM), and classical/non-classical monocytes (MC4/MC5). HFD feeding induced depot-specific changes, with eWAT showing marked reduction in MC1/MC2 and substantial increase in LAMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C82 are supported by comprehensive marker gene analysis (Figure 3D-E, Figure 3-supplement 2A-D) and proportional data (Figure 3F). The characterization is consistent with previous literature (citation to S\u00e1rv\u00e1ri et al., 2021). The pathway enrichment analysis (Figure 3-supplement 2B-C) provides functional validation of subpopulation identities. The depot-specific response to HFD is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Lymphocyte populations included four T cell subpopulations (Treg, CD4+, CD8+, NKT) and two B cell subpopulations, with depot-specific distributions (CD4+/CD8+ more abundant in iWAT, Treg in eWAT). HFD feeding induced emergence of a proliferative B cell subpopulation (BC2) specifically in eWAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 are supported by UMAP clustering (Figure 3G-H), marker gene expression (Figure 3-supplement 2E-F), and proportional data (Figure 3I). The identification of BC2 expressing proliferation markers (Prkar2b, Mcc) in HFD eWAT represents a novel observation with clear supporting data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C141",
+      "C142"
+    ],
+    "result": "Nine vascular cell subpopulations were identified, including blood endothelial cells (venous, arterial, capillary subtypes), angiogenic endothelial cells, lipid-associated endothelial cells, mural cells (pericytes, smooth muscle cells), and lymphatic endothelial cells. HFD feeding induced expansion of angiogenic and lipid-associated endothelial cells in both depots, but caused drastic reduction in venous capillary endothelial cells and lymphatic endothelial cells specifically in eWAT, suggesting impaired metabolic drainage as a pathological feature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C96 are well-supported by detailed marker gene analysis (Figure 3J-K, Figure 3-supplement 3A-D) and proportional data (Figure 3L). The improved vascular cell recovery enables this comprehensive characterization. The reduction in VcapEC in eWAT during HFD (C93) is consistent with known capillary rarefaction (C141, citations provided). The inference about impaired metabolic drainage (C97, C142) is reasonable but requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C4"
+    ],
+    "result": "Six adipocyte subpopulations were identified with gradient gene expression signatures. Ad1-Ad3 represent mature adipocytes with high insulin signaling and lipid metabolism genes (Ad2 particularly robust), Ad3-Ad4 show elevated cell junction/ECM/calcium homeostasis genes, and Ad6 exhibits pronounced stress/inflammation markers. HFD feeding reduced Ad1/Ad2 proportions while increasing Ad6 substantially in eWAT and moderately in iWAT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C103 are supported by UMAP visualization (Figure 4A-B), gene expression analysis (Figure 4-supplement 1A-C), and proportional data (Figure 4C). The characterization of adipocyte subpopulations by functional gene expression patterns is well-documented. The depot-specific responses to HFD are clearly demonstrated and biologically plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C143"
+    ],
+    "result": "Adipocyte nucleus size correlates positively with cell size in both depots. Bulk RNA-seq of size-sorted adipocyte nuclei from HFD iWAT identified hypertrophy signature genes enriched in large adipocytes, which promote insulin response/vascularization/DNA repair while inhibiting cell migration/metabolism/cytoskeleton. These signatures map to Ad3-Ad4 and Ad5-Ad6 subpopulations in snRNA-seq data, establishing cell size as a key determinant of adipocyte clustering in mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 are supported by microscopy (Figure 4D), correlation analysis (Figure 4E, Figure 4-supplement 1E), flow cytometry (Figure 4F-G), bulk RNA-seq with GO analysis (Figure 4-supplement 1G-H), and overlay with snRNA-seq data (Figure 4H-I). The integration of nucleus size as a surrogate for cell size is validated by strong correlation data. The conclusion about size as a determinant of clustering (C143) is well-supported by the comprehensive dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C5"
+    ],
+    "result": "Pseudotime trajectory analysis revealed two divergent adipocyte trajectories from Ad1-Ad2: an 'adaptive healthy transition' toward Ad3-Ad4 (metabolically healthy hypertrophic adipocytes) and a 'maladaptive dysfunctional transition' toward Ad5-Ad6 (metabolically unhealthy hypertrophic adipocytes). The dysfunctional trajectory dominated in eWAT while the adaptive trajectory was more prevalent in iWAT during HFD feeding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 are supported by pseudotime analysis (Figure 4J) and proportional data (Figure 4C). The classification of Ad3 as MHH and Ad6 as MUH (C111) is based on differential expression of insulin signaling and lipid metabolism genes, which is inferential but well-reasoned. The depot-specific trajectory preferences align with known differences in metabolic outcomes between visceral and subcutaneous fat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Differential gene expression analysis identified four gene clusters with distinct patterns across adipocyte subpopulations during HFD feeding. Cluster 1 (upregulated broadly, most in Ad3) involves cell junctions/ECM/cytoskeleton related to adaptive tissue remodeling. Clusters 2/3 (up/down-regulated most in Ad6/Ad5) reflect stress/inflammation/cell death and impaired gene expression machinery. Cluster 4 (down-regulated across all subpopulations) involves core metabolic functions (lipid metabolism, insulin signaling), indicating general metabolic decline.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C118 and C158-C161 are supported by heatmap analysis (Figure 5A) and pathway enrichment (Figure 5B). The clustering approach effectively separates subpopulation-specific from pan-adipocyte changes. The biological interpretation of each cluster is consistent with the enriched pathways and aligns with known adipose pathology during obesity. This analysis provides important insights into differential contributions of adipocyte subpopulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C6",
+      "C149",
+      "C150"
+    ],
+    "result": "Ad6 adipocytes represent stressed and dying cells with global transcriptional shutdown, validated by elevated ROS (H2DCFDA staining, especially in eWAT), B2M expression in crown-like structures and neighboring adipocytes, PPAR\u03b3 deficiency in eWAT HFD adipocyte nuclei, and substantially lower UMI/gene counts. Ad6 does not represent dedifferentiating adipocytes (no APC marker expression).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C124 are supported by multiple orthogonal validation approaches: H2DCFDA fluorescence microscopy (Figure 6A-B), whole-mount B2M immunostaining (Figure 6C-D), PPAR\u03b3 immunostaining (Figure 6E-F), and UMI/gene count analysis (Figure 6G). The absence of APC markers (Figure 4-supplement 1I) rules out dedifferentiation. The convergent evidence from multiple modalities strongly supports the characterization of Ad6 as dysfunctional adipocytes with transcriptional shutdown.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C156",
+      "C157"
+    ],
+    "result": "A comparable adipocyte population (mAd3) was identified in Emont et al., 2022 with similar marker expression and low transcript abundance, but was much smaller and showed inconsistent obesity-related changes. The discrepancy may reflect different technical robustness, with the dysfunctional state of this population (severely compromised RNA) making it difficult to capture using standard protocols, while the optimized protocol enabled robust detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C127 are supported by integration analysis (Figure 6-supplement 1A-D) showing comparable populations with similar characteristics but different proportions and consistency. The inference about technical robustness (C127, C156-C157) is reasonable given the demonstrated RNA quality improvements and the known challenges of capturing cells with low RNA content. However, this remains somewhat speculative without direct experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C131",
+      "C132",
+      "C134",
+      "C135",
+      "C137"
+    ],
+    "result": "VRC functions as a transition state analog inhibiting a broad range of RNases, but its application in gene expression studies has been limited due to inhibitory effects on reverse transcriptase. Recent protocols have used VRC for kidney and pancreas snRNA-seq, but applicability to other tissues remained untested. VRC has preservative properties protecting tissue morphology and nucleic acid quality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C131-C132, C134-C135, C137 are supported by appropriate citations (Gray 1974, Berger and Birkenmeier 1979, Soccio et al. 2014, Tosti et al. 2021, Shieh et al. 2018). These claims accurately represent prior knowledge and provide important context for the methodological innovation. The citations appear appropriate for the stated claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C139",
+      "C162",
+      "C163"
+    ],
+    "result": "The optimized protocol enables flexible experimental logistics (e.g., patient biopsies analyzed at different facilities). The differential contributions of adipocyte subpopulations may explain the superior effectiveness of PPAR\u03b3 agonists over anti-inflammatory/anti-stress reagents, emphasizing the need to tailor therapeutic approaches based on specific biological processes targeted.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C139 is speculative about future clinical applications without experimental validation. Claims C162-C163 present reasonable inferences about therapeutic implications based on the observed differential contributions of adipocyte subpopulations, but these remain hypotheses requiring experimental testing. The citations provided (Soccio et al. 2014, Kraakman et al. 2015, Chen et al. 2016, da Cruz Nascimento et al. 2022) support the comparative effectiveness of different therapeutic approaches, but the mechanistic explanation based on subpopulation-specific effects requires validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Background claims establishing the context for the study, including advantages and limitations of scRNA-seq and snRNA-seq technologies, biological properties of adipose tissue, and prior work on adipose tissue characterization using single-cell approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C31 represent background knowledge and literature review, supported by appropriate citations. These claims accurately represent the state of the field and provide necessary context for understanding the significance of the methodological improvements and biological findings. The citations appear appropriate and the characterizations of prior work are accurate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C140",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "Discussion claims comparing findings to previous studies and placing results in broader context, including species differences in adipocyte heterogeneity determinants (size in mice vs. insulin sensitivity in humans), genetic variation effects, and connections to prior observations in the literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140, C144-C148, C151-C155 represent discussion points supported by appropriate citations (Massier et al. 2023, Emont et al. 2022, Varlamov et al. 2015, Giordano et al. 2013, Roh et al. 2020, S\u00e1rv\u00e1ri et al. 2021). These claims accurately contextualize the findings within the broader literature and identify important species differences and connections to prior work. The inferences are reasonable given the data presented.",
+    "result_type": "MINOR"
+  }
+]

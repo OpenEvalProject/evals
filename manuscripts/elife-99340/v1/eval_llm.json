@@ -1,0 +1,352 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C38",
+      "C49",
+      "C62",
+      "C63",
+      "C64",
+      "C93"
+    ],
+    "result": "The authors establish that mutations recurring at i\u22653 in the TCGA database (n<1000) are cancer-driving nucleotides (CDNs) because neutral mutations cannot reach this recurrence threshold. The mathematical model shows that S3<1 and A3<1, meaning no neutral mutation is expected to recur 3 or more times at current sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C62-C64, and C93 collectively establish the i*=3 threshold through mathematical modeling (Equations 2-3) showing that Si and Ai decrease by 2-3 orders of magnitude per increment of i, making neutral recurrences at i\u22653 extremely unlikely. The model is grounded in empirical mutation rate data (C56-C58) and validated against observed patterns in Figure 2 (C44-C48). The conclusion is mathematically sound given the stated assumptions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C36",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C135"
+    ],
+    "result": "Part I of the study comprehensively tests whether high-recurrence sites (i\u22653) can be explained by mutational hotspots. Using AI-based analysis (Dig framework), motif analysis (3-mer to 7-mer), and consensus sequence comparisons (21-101 bp), the authors find no association between mutation recurrence and local sequence mutability. Even the most mutable 7-mer motif shows only 11.52-fold higher mutation rate, insufficient to explain the observed recurrences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C127 present multiple independent lines of evidence (AI prediction, motif analysis, consensus sequences) all converging on the same conclusion: high-recurrence sites do not exhibit elevated mutability. The AI analysis (C116) found no significant difference in mutation rate as a function of i, and the two exceptional sites in CNS cancer (C117-C118) were known driver mutations, suggesting selection rather than mutability. The motif analysis (C122-C124) quantitatively shows that even extreme mutability differences (~11-fold) are insufficient given the theoretical requirement of ~500-fold increase per increment of i. The methodological approaches are sound and complementary.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Patient-level features (mutation load and mutational signatures) do not explain mutation recurrence patterns. Patients with high-recurrence sites do not bias toward high mutation loads, and mutational signature compositions remain statistically indistinguishable across different recurrence cutoffs in lung and breast cancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C134 are supported by Figure 5 data showing that mutation load (C128-C129) and signature composition (C130-C132) do not correlate with recurrence levels. The statistical analysis appropriately uses K-S tests and accounts for population size effects. The exception in CNS cancer (C133) is properly attributed to treatment effects (Temozolomide), not underlying mutational processes. This complements the sequence-level analysis to rule out mutational explanations for high recurrences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The mathematical model assumes mutation rates follow a Gamma distribution with parameters \u03b8 and k, with E(u) typically (1-5)\u00d710^-6 per site and n between 300-1000 in TCGA data. This yields nE(u) between 0.001-0.005, causing Si and Ai to decrease by 2-3 orders of magnitude with each increment of i.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 establish the mathematical foundation of the model. The choice of Gamma distribution (C54-C55) is justified by its flexibility and long tail properties. The empirical parameters (C56-C58) are stated as typical values from cancer genomic data, and the mathematical consequence (C59) follows directly from Equations 2-3. The genomic composition values (C60-C61) are standard in molecular evolution. The model assumptions are clearly stated and mathematically consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors test whether outlier sites with extremely high mutation rates (\u03b1-fold higher than average, occurring at frequency p) could explain high recurrences. Even with conjectured outliers, the model shows i*=4 is too high a cutoff, supporting the i*=3 threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 describe sensitivity analysis presented in Table 2. The outlier model tests extreme scenarios (p from 10^-5 to 10^-2, \u03b1 up to 1000) and shows that even these cannot produce sufficient S4 values to explain observed recurrences. The analysis strengthens the main conclusion by demonstrating robustness to potential unknown mutational mechanisms. The approach is conservative and appropriate for testing the null hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C71"
+    ],
+    "result": "While mutational bias alone cannot account for high recurrences, positive selection can easily explain them. The model shows that selective advantage (w) and mutation rate E(u) jointly affect recurrence through Equation 4, predicting that CpG sites should be strongly represented among high-recurrence sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69 and C71 present the alternative selection model (Equation 4) showing that even modest selective advantage (w>10) can produce A*i/Si ratios >100 at i=3. This contrasts sharply with the neutral model's inability to explain high recurrences. The prediction about CpG sites (C71) is testable and consistent with observed data (C50). The mathematical reasoning is sound and provides a parsimonious explanation for the observations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C9",
+      "C65",
+      "C81",
+      "C88",
+      "C96",
+      "C97"
+    ],
+    "result": "The theory predicts that increasing sample size to n=100,000 will enable identification of almost all CDNs. At this sample size, i* increases to 12, and any mutation with prevalence >12/100,000 (0.012%) would be a CDN\u201425-fold more sensitive than current TCGA data. The number of CDNs is predicted to increase more than 10-fold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C65, C81, C88, C96-C97 present predictions from extending the mathematical model to large sample sizes. Figure 6 shows how i* scales with n, and the calculations are based on Equations 6-11. The prediction is mathematically sound given the model assumptions. The 25-fold sensitivity improvement (C97) is a straightforward calculation comparing 3/1000 to 12/100,000. However, this remains a theoretical prediction requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "Validation using the GENIE database (n 10-20\u00d7 larger than TCGA) confirms theoretical predictions: prevalence (i/n) correlates well between databases, and the number of CDNs increases 3-5 fold in GENIE. Many newly discovered CDNs in GENIE were in the A1 and A2 classes in TCGA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C87 present empirical validation shown in Figure 7B-E. The correlation of i/n ratios between databases (C85) validates the model assumption that prevalence is sample-size independent. The 3-5 fold increase in CDNs (C86) is consistent with theoretical predictions from Figure 6, though somewhat lower than the predicted 10-fold increase for n=100,000. The observation that new CDNs come from lower recurrence classes in TCGA (C87) directly supports the theory that many CDNs remain hidden in current data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "Current databases identify only 1-2 CDNs per patient on average, far below the estimated 5-10 driver mutations required for tumorigenesis. The companion study estimates 500-2000 total CDNs per cancer type, while current i\u22653 criteria identify only 50-100, indicating that most CDNs remain hidden in A1 and A2 sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C79 establish the gap between observed and expected CDNs. The comparison to literature estimates of required drivers (C73, citing multiple sources) provides context. The calculation in C76 is straightforward arithmetic. The discrepancy between companion study estimates (500-2000) and current counts (50-100) is substantial and logically leads to the conclusion that most CDNs are in lower recurrence classes (C79). However, the companion study estimates are cited rather than derived here, creating some dependency on external work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Analysis of lung cancer data (n=1035) shows that mutation sites decrease sharply with increasing recurrence (A1=195,958, A2=2,946, A3=99), but the Ai/Si ratio increases from 2.89 to 4.71, suggesting stronger positive selection at higher i values. The decrease rate slows as i increases, deviating from neutral expectations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C48 present empirical observations from Table 1 and Figure 2. The data clearly show the sharp decrease in site numbers (C41-C42) and the increasing Ai/Si ratio (C43, C47), which are inconsistent with neutral evolution. The interpretation that selection strengthens at higher i (C46-C47) is reasonable given the data patterns. The extrapolation to i*=3 (C48) is supported by the visual analysis in Figure 2, though the precise cutoff depends on the mathematical model developed in Part II.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "CpG sites account for ~6.5% of coding sequences but contribute ~22% of mutated sites, representing a ~7-fold enrichment. While CpG methylation and deamination increase mutation rates 5-10 fold, even a 10-fold increase would only reduce the decrease rate to 0.02, insufficient to explain high recurrences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C53 address the well-known CpG mutational bias. The empirical observation (C50) is supported by Figure 2 and Figure 2\u2014figure supplement 1. The mechanistic explanation (C51) is well-established in the literature (cited). The calculation (C53) correctly shows that even extreme CpG effects cannot account for the ~500-fold increase needed per increment of i. This analysis appropriately incorporates known mutational biases into the model while showing they are insufficient to explain the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The best approach to identify hidden CDNs is to dramatically increase sample size. At n=100,000, each patient would have ~5 targetable CDNs (compared to <1 currently). CDN analysis identifies 1.6\u00d7 more driver genes than whole-gene selection methods.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C82-C84 present recommendations and predictions. While C80 logically follows from the theory, C82 is speculative (\"would have, say, 5 CDNs\"). Claims C83-C84 cite the companion study rather than presenting independent evidence. The prediction of 5 CDNs per patient depends on assumptions about total CDN numbers and their distribution. The comparison to whole-gene methods (C84) is interesting but not evaluated here. These claims represent reasonable extrapolations but require future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The authors claim this is the first comprehensive test of the mutational hotspot null hypothesis. They conclude that the mutational hotspot and selection hypotheses are incompatible, and that the null hypothesis can be rejected for recurrences as low as i=3 in TCGA data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 frame the study's contribution. The claim of novelty (C92) is difficult to verify but the comprehensive approach (AI, motifs, signatures, mathematical modeling) does appear more thorough than prior work. The logical incompatibility (C90-C91) is valid: if mutational hotspots fully explain recurrences, selection-based CDN identification is unnecessary. The conclusion (C93) is supported by the combined evidence from Parts I and II. However, the claim of being \"first\" (C92) is somewhat speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C6",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "The study's theoretical foundation rests on the principle that cancer evolution is massively repeated across millions of individuals, enabling advantageous mutations to recur frequently while neutral mutations remain rare. This allows unprecedented power to detect driver mutations through recurrence patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5-C6, C22-C25 establish the conceptual framework. The premise that cancer evolution is massively repeated (C5, C22) is factually correct\u2014millions of cancer cases occur. The logical inference that advantageous mutations should recur frequently (C6, C24) while neutral ones do not (C25) is sound under standard population genetics theory. Figure 1 illustrates this concept clearly. This framework is well-established in evolutionary biology and appropriately applied to cancer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The study analyzed 7,369 TCGA samples across 12 cancer types, focusing on coding region mutations (missense, nonsense, synonymous) after filtering for quality (\u22652 pipelines), germline variants (gnomAD frequency <1\u2030), and hypermutated samples (>3000 mutations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C113 describe data collection and quality control procedures. The filtering criteria are appropriate: requiring detection by multiple pipelines (C109) reduces false positives, gnomAD filtering (C110) removes germline variants, and excluding hypermutators (C112) prevents bias from defective DNA repair. The focus on coding regions (C111) is justified given the study's goals. The final dataset size (C113) is clearly stated. These methods are standard and well-justified.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C3",
+      "C10",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors argue that identifying all CDNs is necessary and perhaps sufficient for understanding and treating cancer. They speculate that targeting multiple CDNs simultaneously would be highly effective and reduce drug resistance, as cancer cells would need to evolve multiple escape routes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C3, C10, C100-C104 present the study's translational vision. While the logic is appealing\u2014targeting multiple drivers should be more effective (C101-C102) and reduce resistance (C103)\u2014these remain speculative (all marked as SPECULATION in evidence_type). The claim that CDNs are \"necessary and perhaps sufficient\" (C3) is particularly strong and unsupported by direct evidence. The current identification of <10% of CDNs (C10) is based on the model but not independently validated. These claims represent reasonable hypotheses requiring experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors contextualize cancer as a complex genetic trait requiring multiple mutations (6-10 drivers) to achieve cancer hallmarks, drawing parallels to other multi-mutation systems like speciation and SARS-CoV-2 evolution. They focus on clonal point mutations (CDNs) as the most quantifiable driver type.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C21 provide background and rationale. The cancer hallmarks framework (C11) is well-established (Hanahan & Weinberg). The multi-hit nature of cancer (C12-C13, C17-C18) is supported by extensive literature citations. The parallels to other systems (C14-C16) are appropriate analogies. The focus on clonal mutations (C21) and point mutations (C19-C20) is justified methodologically, though the claim that CDNs \"may be the only type\" fully identifiable (C20) is somewhat speculative. Overall, this provides solid context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "The literature on recurrent mutations is divided between mutational hotspot and functional hotspot (selection) interpretations. The authors note that studies often make implicit assumptions about the relative importance of mutation versus selection, and that these assumptions influence conclusions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C35 accurately summarize the controversy in the field, supported by extensive citations to both sides of the debate (C33-C34). The conceptual distinction between mutational and functional hotspots (C28-C30) is clearly defined. The methodological critique (C35) about implicit assumptions is insightful and well-supported by Elliott & Larsson 2021. This framing appropriately motivates the study's comprehensive approach to testing the null hypothesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C98",
+      "C99",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The authors speculate about future applications of the theory, including searching for unknown mutation mechanisms, detecting negative selection, studying mutation mechanism evolution, and potentially unraveling cancer as the first complex genetic system through massively repeated evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95, C98-C99, C105-C107 are all explicitly speculative (marked as SPECULATION in evidence_type). While these represent interesting potential applications, they are not tested or validated in this study. The claim that cancers \"may be the first\" complex system to be fully unraveled (C107) is particularly speculative. The suggestion about prevalence-potence correlation (C99) is conditional and based on companion study findings. These represent reasonable future directions but should not be considered established results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C40",
+      "C114",
+      "C136"
+    ],
+    "result": "Methodological justifications include using TCGA for its comprehensive coding region coverage, treating fourfold degenerate sites as neutral, and approximating mutation rate variation with a continuous distribution based on the finding that high-recurrence sites do not show distinctive mutational characteristics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C114, C136 provide methodological justifications. The choice of TCGA (C40) is well-justified and cited. The treatment of fourfold degenerate sites as neutral (C114) is standard in molecular evolution. The approximation of mutation rate variation by a continuous distribution (C136) is justified by the empirical findings in Part I showing no distinctive mutational characteristics at high-recurrence sites. These methodological choices are appropriate and well-reasoned.",
+    "result_type": "MINOR"
+  }
+]

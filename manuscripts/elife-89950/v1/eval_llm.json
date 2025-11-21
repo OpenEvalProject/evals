@@ -1,0 +1,211 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C39"
+    ],
+    "result": "Transient suppression of auditory cortex impairs sound detection. Pharmacological silencing with muscimol abolishes sound detection in rodents (C1, C39), while optogenetic suppression significantly impairs performance (C2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C39 are supported by citations to prior work showing complete abolition of sound detection with muscimol. Claim C2 is supported by experimental data (Figure 1B-C) showing significant impairment with optogenetic silencing. The convergence of pharmacological and optogenetic approaches provides strong evidence, though the authors note lack of a control group for the optogenetic experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C38"
+    ],
+    "result": "Bilateral lesions of auditory cortex leave sound detection performance intact. Lesioned and non-lesioned mice showed no differences in learning speed (C4) or psychometric functions (C5), consistent with prior literature (C3, C38).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C5 are supported by statistical analyses (p>0.05, mixed-design ANOVAs) and data in Figure 3. Claims C3 and C38 provide supporting citations to prior work. The convergence of current experimental data with established literature strengthens this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C17"
+    ],
+    "result": "Anatomical characterization of corticocollicular projections and lesion extent. Most corticocollicular neurons project ipsilaterally (C6), are located in temporal/auditory cortex (C7), and were labeled using AAV1.hSyn.Cre.WPRE with transsynaptic properties (C8). Four of seven lesioned mice had near-complete lesions (C17).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C8 are supported by appropriate citations. Claim C7 is supported by data in Figure 2\u2014figure supplement 1. Claim C17 is supported by histological data in Figure 2 and supplements. The anatomical characterization appears thorough with appropriate controls and validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Corticorecipient IC neurons encode information beyond stimulus properties. Nearly half (1272/2649) showed significant differences between hit and miss trials (C9), while only a small fraction (97/2649) showed significant sound responses (C10), suggesting most neurons encode non-acoustic information (C11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C10 provide specific numerical data from statistical analyses. Claim C11 is a reasonable inference from the disparity between task-modulated and sound-responsive neurons. However, the low number of sound-responsive neurons could also reflect the brief, low-intensity stimuli used, as the authors acknowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C50"
+    ],
+    "result": "Behavioral outcomes can be decoded from IC neural activity with high accuracy. Model performance was significantly above baseline in both lesioned and non-lesioned mice (C14), though better in non-lesioned mice (C15). This difference was not due to neuron number differences (C16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C15 are supported by statistical analyses (p<0.05) and data in Figure 6A. Claim C16 is supported by analysis in Figure 6\u2014figure supplement 2. The decoding analysis appears methodologically sound with appropriate cross-validation and controls for class imbalance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Mice with near-complete lesions show better decoding performance than those with partial lesions. Decoding performance in near-complete lesions was significantly better than partial lesions (C18) and largely indistinguishable from intact cortex (C19).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C18 and C19 are based on statistical comparisons shown in Figure 6B. However, the authors acknowledge this finding is based on only three mice with partial lesions, limiting statistical power. While the pattern is consistent with prior work (Hong et al., 2018), the small sample size and counterintuitive nature of the result warrant caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Pre-stimulus IC activity predicts trial outcomes. Decoding accuracy was above baseline before stimulus onset (C20), potentially reflecting arousal/motivation changes (C21) or stimulus anticipation, as mice learned the inter-trial interval distribution (C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C20 is supported by decoding results in Figure 6. Claim C21 is supported by citations to relevant literature. Claim C22 is supported by data in Figure 6\u2014figure supplement 4A-D showing lick rate approximating the ITI distribution. The interpretation is reasonable though multiple mechanisms could contribute.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "Lick-related sounds are unlikely to drive IC activity. Lick sounds are estimated at 12 dB SPL (C12) and responses are largely canceled at the cochlear nucleus level (C13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Both claims are supported by citations to Singla et al., 2017, with C13 also citing Shaheen et al., 2021 as a counterpoint. The authors use this to argue against lick sounds as a major driver of observed IC activity, which is a reasonable interpretation given the low sound level.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "IC neurons show task-related activity consistent with prior literature. The recordings are consistent with previous studies showing behavioral variable representations in auditory midbrain (C36). Most neurons were facilitated and about a third suppressed during the task (C37).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C36 is supported by extensive citations to prior work. Claim C37 is supported by current data and citations to previous studies showing similar patterns. The consistency with prior literature strengthens confidence in the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Rapid recovery after cortical lesions suggests homeostatic mechanisms rather than circuit rewiring. Mice achieve pre-lesion performance within 48 hours (C40), consistent with synaptic scaling timescales (C41). Smaller lesions can be more disruptive than larger ones (C42).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three claims are supported by citations to relevant literature (Ceballo et al., 2019; O'Sullivan et al., 2019; Hong et al., 2018; Keck et al., 2013). The authors use these to support their interpretation of mechanisms, though they acknowledge their data cannot directly address the rewiring question.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Multiple subcortical pathways can provide non-acoustic information to IC. Non-acoustic sensory input can reach IC via brainstem nuclei (C43) and superior colliculus (C44). Motor signals may arrive via substantia nigra (C45) and globus pallidus (C46). State changes may impact IC via neuromodulatory structures (C47).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations to anatomical studies. These provide plausible alternative sources for the non-acoustic information observed in IC neurons after cortical lesions. The anatomical evidence is well-established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "IC neurons show task-related activity independent of auditory cortex. IC neurons show task-related activity in the absence of auditory cortical input (C48), demonstrating that subcortical structures have independent access to non-acoustic information (C49).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C48 is supported by experimental data showing similar activity patterns in lesioned and non-lesioned mice. Claim C49 is a reasonable inference from these findings combined with the anatomical evidence. This represents the main conclusion of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on auditory cortex, descending projections, and corticocollicular system. These claims establish the scientific context regarding the role of auditory cortex (C23), descending projections (C24-C25), IC anatomy (C26-C27), historical context (C28), effects of cortical manipulations (C29, C34-C35), and contextual influences in sensory processing (C30-C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims are supported by appropriate citations to established literature. These provide necessary background and context for the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Methodological details including ethical approval, housing conditions, and imaging parameters. Experiments were approved by appropriate committees (C51), mice were housed under standard conditions (C52), and imaging was performed at 50-150 \u03bcm depth (C53) with 512\u00d7512 pixel resolution at ~28 Hz (C54) using 500 or 666 \u03bcm fields of view (C55).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All claims describe standard methodological details that are appropriately documented. These are necessary for reproducibility but represent routine experimental procedures.",
+    "result_type": "MINOR"
+  }
+]

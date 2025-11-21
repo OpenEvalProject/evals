@@ -1,0 +1,2756 @@
+{
+  "submission": {
+    "id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T21:45:14.872739Z",
+    "updated_at": "2025-11-21T21:45:14.872739Z"
+  },
+  "content": [
+    {
+      "id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "content_type": "manuscript",
+      "content_text": "# High-density sampling reveals volume growth in human tumours\n\n## Authors\n\n- Arman Angaji<sup>1</sup>\n- Michel Owusu<sup>2</sup>\n- Christoph Velling<sup>1</sup>\n- Nicola Dick<sup>2</sup>\n- Donate Weghorn<sup>2</sup> ([ORCID: 0000-0001-7722-8618](https://orcid.org/0000-0001-7722-8618)) \u2020\n- Johannes Berg<sup>1</sup> ([ORCID: 0000-0001-6569-3061](https://orcid.org/0000-0001-6569-3061)) \u2020\n\n### Affiliations\n\n1. Institute for Biological Physics, University of Cologne Cologne Germany ([ROR:00rcxh774](https://ror.org/00rcxh774))\n2. Centre for Genomic Regulation Barcelona Spain ([ROR:03wyzt892](https://ror.org/03wyzt892))\n3. Universitat Pompeu Fabra Barcelona Spain ([ROR:04n0g0b29](https://ror.org/04n0g0b29))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn growing cell populations such as tumours, mutations can serve as markers that allow tracking the past evolution from current samples. The genomic analyses of bulk samples and samples from multiple regions have shed light on the evolutionary forces acting on tumours. However, little is known empirically on the spatio-temporal dynamics of tumour evolution. Here, we leverage published data from resected hepatocellular carcinomas, each with several hundred samples taken in two and three dimensions. Using spatial metrics of evolution, we find that tumour cells grow predominantly uniformly within the tumour volume instead of at the surface. We determine how mutations and cells are dispersed throughout the tumour and how cell death contributes to the overall tumour growth. Our methods shed light on the early evolution of tumours in vivo and can be applied to high-resolution data in the emerging field of spatial biology.\n\n## Introduction\n\nThe evolution of a solid tumour is governed by the division, motion, and death of cancer cells. Genetic mutations arising during cell divisions can serve as cell markers to track this dynamics. From the observed spatial distribution of mutations, it should in principle be possible to infer the spatio-temporal principles of tumour evolution: Is the growth rate uniform across the tumour, or does growth predominantly take place near the edge of the tumour? What is the interplay between the tissue dynamics of the tumour and its genetic evolution? These broad modes of tumour evolution affect for instance the signature of neutral evolution, the response to selection, or the number of low-frequency mutants which can confer therapy resistance (Waclaw et al., 2015; Chkhaidze et al., 2019).\n\nHowever, to answer such questions on the basis of genetic tumour data is challenging because only partial information is available: (i) The sequencing depth (average number of reads covering a nucleotide in NGS sequencing) is finite. This means that only high-frequency mutations are observed. (ii) Usually only a small number of samples are taken from different parts of a solid tumour, which limits the information on mutations present in the full tumour (Gerlinger et al., 2012; McGranahan and Swanton, 2015). (iii) Longitudinal data from ctDNA measurements are highly limited in the observable range of mutations and provide noisy frequency estimates.\n\nOver the next years, some of these restrictions will be lifted by the advent of spatial genomics (Takei et al., 2021; Zhao et al., 2022; Lomakin et al., 2021). These techniques allow assaying the genomic information almost at single-cell level in intact tissue sections. Currently, the attainable sequencing depth is too low to identify point mutations across different parts of the tumour. However, it is clear that the coming-of-age of spatial genomics will bring new opportunities to understand the past evolution of a population of tumour cells from a late-stage snapshot. This implies a need for new tools to analyse spatio-temporal evolution, since standard tools of population genetics, like the site-frequency spectrum, are designed for spatially mixed populations and disregard spatial information.\n\nOne particular question concerns two different modes in which a tumour can grow; surface growth and volume growth. Under surface growth, the cancer cells divide predominantly at the border with healthy tissue. The potential reasons for this spatial dependence include higher nutrient levels near normal tissue, higher levels of metabolic waste products in the tumour bulk, or mechanical stress in the tumour centre (Shraiman, 2005; Montel et al., 2011). A faster growth rate at the edge of the tumour leads to a radially outward growth of the cell population. The surface growth mode is well-known from bacterial growth (Hallatschek et al., 2007). In tumours, some evidence for surface growth comes from histological stainings, which show an enhanced level of the Ki-67 protein (a cellular marker for proliferation) near a tumour surface (Br\u00fa et al., 2003; Waclaw et al., 2015; Hoefflin et al., 2016). However, the reverse situation has been found as well (Zhao et al., 2022), with elevated Ki-67 levels near the centre of a renal carcinoma. The surface growth mode also has a long history in the modelling of tumour evolution (Greenspan, 1972; Ward and King, 1997; Baish and Jain, 2000; Gonz\u00e1lez-Garc\u00eda et al., 2002; Komarova, 2006; Sottoriva et al., 2010; Waclaw et al., 2015; Sottoriva et al., 2015; Iwasaki and Innan, 2017; Sun et al., 2017; van der Heijden et al., 2019) and has been used to analyze multi-region tumour sequencing data (Sottoriva et al., 2015; Sun et al., 2017; Chkhaidze et al., 2019; Sinha et al., 2022; Li et al., 2022; Noble et al., 2022; Fu et al., 2022).\n\nIn volume growth, on the other hand, cancer cells grow irrespective of their location in the tumour: although each cell has a physical location, and upon division its offspring is in a similar location, location does not affect cell division or death. Under volume growth, subclones can originate from any location in the tumour (Zhao et al., 2022). As a result, under volume growth mutation frequencies evolve exactly in the same way they would do in a well-mixed population, even though the resulting tumour will generally be spatially heterogeneous (see below). Mixed population models have been used extensively to model all aspects of tumor evolution, from tumorigenesis to the formation of metastases and the response to therapy (Luebeck and Moolgavkar, 2002; Michor et al., 2004; Durrett, 2013; Bozic et al., 2013; Foo and Michor, 2014; Heyde et al., 2019). They also form the basis of almost all population-genetic approaches to analyzing tumour data (Attolini et al., 2010; Williams et al., 2016; Williams et al., 2018).\n\nTo tell between these two different evolutionary dynamics, we use high-resolution data on the spatial distribution of mutations found in solid tumours. We use whole-exome mutation data obtained from hepatocellular carcinomas and published previously (Ling et al., 2015; Li et al., 2022). From these snapshots of late-stage tumours we infer how the tumours grew in earlier stages. To this end, we develop metrics of intra-tumour heterogeneity which leverage the information from the spatial position of all samples.\n\n## Methods\n\n### Spatially resolved data\n\nWe analyze two datasets where large numbers of samples (> 100) were taken from different hepatocellular tumours, once from a two-dimensional section (Ling et al., 2015), and once from a three-dimensional microsampling (Li et al., 2022).\n\nIn Ling et al., 2015, 285 samples of a planar section of a hepatocellular carcinoma of diameter 35mm were taken and analyzed. Each sample consisted of about 20,000 cells (Ling et al., 2015) determined by cell counting. 23 of these samples were subjected to whole-exome sequencing (average read depth of 74 reads per nucleotide), and loci with mutations found in these 23 samples were probed by genotyping (by Sequenom and Sanger sequencing) in all 285 samples (Ling et al., 2015). Figure 1A shows the positions of the samples and the mutations found at each position. The data thus effectively consist of a set of 285 samples at high spatial resolution, but with limited genomic information (genotyping), and a subset of 23 samples at high genomic resolution from whole-exome genomic sequencing, but limited spatial resolution. We reanalyzed the whole-exome data as described in Appendix 4.2. The genotyped data consists of 35 mutated loci. Calling variants jointly on all 23 whole-exome samples and filtering as described in Appendix 4.2 returned 217 mutated loci.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95338/elife-95338-fig1-v1.jpg)\n\n**Figure 1.:** A shows the spatially resolved sequencing data of 285 samples of a hepatocellular carcinoma analyzed by Ling et al., 2015. Each sample is indicated by a small pie chart in which colors indicate specific mutations, and slice sizes indicate the mutation frequencies within each sample. The 23 samples highlighted by a black outline were also subjected to whole-exome sequencing. The samples form a honey-comb structure, because the tumour slice had been cut into four quadrants, see Fig S1 in Ling et al., 2015. (B and C) Results of a cell-based simulation in the surface growth mode (B) and the volume growth mode (C). In each case, 280 evenly spaced samples were taken from the population of 10000 cells of a 2D simulation, see text. The most frequent mutations are shown as in (A), superimposed on the structure of the simulated tumour.\n\nIn the second data set, Li et al., 2022, samples were taken from multiple planar sections of two different hepatocellular tumours from the same patient. This gives a three-dimensional picture of the genetic heterogeneity of these tumours. 169 samples were taken from 11 sections of tumour T1, which was approximately of 20mm diameter, and 160 samples from 6 sections of tumour T2, which was of approximately of 15mm diameter. Each sample consisted of ca. 3200 cells. 16 (9) samples from T1 (T2) were whole-genome sequenced and the remainder genotyped using the Ampliseq method. Li et al. report 906 (564) mutations used for genotyping of T1 (T2), of which 563 (259) pass our filters.\n\n### Computational model of volume and surface growth\n\nWe use an off-lattice cell-based model, well-known from simulations of tissue mechanics (Drasdo and H\u00f6hme, 2005; Van Liedekerke et al., 2019; Malmi-Kakkada et al., 2018; Metzcar et al., 2019), which we endow with mutations entering the population at a constant rate per cell division.\n\nIn this model, each tumour cell is described by a sphere centered on a particular point in 3D space or 2D space, as well as a genome. Each cell division introduces a new point adjacent to its parent in a random (uniformly distributed) direction, and each cell death removes a point. At division both mother and daughter cell can acquire mutations, the number of mutations is Poisson distributed with mean $\\mu$. The spheres are not allowed to overlap and can push one another out of the way to achieve this. This off-lattice approach differs from cellular automaton models of tumour growth, where cells occupy discrete lattice sites (Waclaw et al., 2015; Chkhaidze et al., 2019). Specifically, in off-lattice models like the one we use, cells can gradually push one another out of the way during growth, see below. Cells cannot move by themselves but as they divide overlaps are introduced and resolved by pushing the neighboring cells.\n\nWe implement the resolution of overlaps introduced by a cell division using a \u2018width-first\u2019 pushing-algorithm, where the immediate neighborhood of the newly placed cell is resolved first before proceeding to the new overlaps this step introduces. A fast search first identifies overlaps with the current cell in its close neighborhood. The cell then pushes its neighbor along their connecting axis only by the overlap plus a small margin which acts as a buffer and avoids many tiny recurring overlaps. The neighboring cell is then added to a queue for subsequent iterations. Neighborhoods are shuffled such that there is no particular order in which cells are pushed. After each overlapping cell in the neighborhood is pushed and added to the queue, the search for overlaps is repeated on the first cell in the queue, adding new pairs to the queue, which are in turn iteratively resolved until the queue is empty. Thereby each cell division can set off a cascade of rearrangements of cell positions. This level of microscopic detail of course comes at a computational cost. Using off-lattice cell-based modelling, population sizes of several ten thousand cells can be simulated, compared to billions of cells with a cellular automaton (Waclaw et al., 2015).\n\nIn regions of high cancer cell density, the division rate may be reduced (for instance due to lack of nutrients, toxic metabolic products, or mechanical stress). We effectively encode such potential spatial effects in the rate at which individual cells divide: the cell division rate $b=b(\u03c1)$ depends on the local density of cells $\u03c1=\u03c1(\ud835\udc2b)$. For simplicity, we consider a division rate $b(\u03c1)$ which decreases in a straight line from $b(\u03c1=0)=b_{0}$ to $b(\u03c1=\u03c1_{c})=0$, see Fig. S1. Setting $\u03c1_{c}=\u221e$ leads to a constant division rate for all cells, irrespective of their local density. This growth mode is termed volume growth. Lower values of $\u03c1_{c}$ lead to an increased growth rate in parts of the tumour where the local density of cancer cell is low, and hence enhance the growth rate at the surface of the tumour relative to the bulk of the tumour. Surface growth is characterized by a $\u03c1_{c}$ equal to the density defined by the minimal cell distance. By changing $\u03c1_{c}$ one can thus tune the dynamics of this model continuously from volume to surface growth. To describe the genetic changes in the tumour, we use an infinite-sites model and a constant mutation rate per cell division. Figure 1B and C show the resulting tumor sections for the surface and volume growth mode, respectively.\n\nFor a detailed description of the model, its implementation and performance in comparison with variants of the kinetic Monte Carlo and pushing algorithms, see Appendix 1. The code is available as a Julia package at https://github.com/aangaji/TumorGrowth (copy archived at Angaji, 2024).\n\n## Results\n\n### Volume versus surface growth\n\nUnder surface growth, cells divide predominantly near the edge of a tumour. Under volume growth on the other hand, cells divide uniformly across the entire tumour mass. To distinguish these two modes in empirical data, we look at the angle between a line from the tumour centre to a parent clone and from the parent to their offspring, see Figure 2A and Appendix 2. Under surface growth, offspring tend to lie radially outward from their parents, leading to a distribution of these direction angles centered around zero. Under volume growth, cells divide isotropically, leading to a uniform distribution of angles. The distribution of direction angles is a model-independent metric, it does not rely on a particular model of cell dynamics, population dynamics or sampling. It is also robust against the presence of selected subclones: if a subclone grows isotropically from some point, but at an elevated rate, it will contribute to a flat distribution of angles like all other clones.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95338/elife-95338-fig2-v1.jpg)\n\n**Figure 2.:** (A) The direction angle \u03b8 quantifies the direction of a new mutant clone relative to its parent clone. In this illustration, a new mutant clone indicated in blue appears and grows radially outward on a red parental background, resulting in an angle \u03b8 near zero. Each pair of cells indicated in red and blue contributes to the distribution of \u03b8, with the statistical weight of each mutant clone adding to one (see Appendix 2). (B) The distribution of angles \u03b8 for different mutant clones found in the spatially-resolved data of Ling et al., 2015. The peaks at $\\theta\u2248\u2212180^{deg\u2061},\u221290^{deg\u2061},0^{deg\u2061}$ come from individual clones. The contributions from different clones to the distribution of angles is shown in Appendix 2\u2014figure 1. (C and D) show the corresponding distribution of angles for numerical simulations. Subfigure C shows simulations of surface growth, resulting in a distribution of direction angles with a pronounced maximum near zero. Under volume growth (D) a nearly flat distribution is seen. For C and D, simulations were run in three dimensions with a maximum population size of 40,000 cells grown at division rate $b=1$, a rate of cell death $d=0.4$ and $d=0.8$ for surface and volume growth respectively, and a whole-exome mutation rate $\\mu=0.3$ before taking a two-dimensional cross-section of 280 samples mimicking the sampling procedure in Ling et al., 2015. (The different death rates were chosen to make the extinction probabilities of the populations comparable for the two cases. Changing these rates did not affect the distributions of angles.).\n\nIn Figure 2B we show the distribution of direction angles found in the spatially resolved data of Ling et al., 2015. The empirical data clearly show a uniform distribution of the direction angle, and thus no evidence for radially outward growth caused by faster growth near the edge of the tumour. For comparison, we look at the distribution of direction angles in simulations of different growth modes. For surface growth, the histogram of direction angles shows a pronounced maximum at $\\theta=0$ produced by the radial outgrowth of clones (Figure 2C), in a simulation of volume growth, we find a flat distribution (Figure 2D). These simulations were done with samples placed in the same positions as in the real tumour to eliminate effects from uneven sampling.\n\nThis result is corroborated by the average number of mutations of a clone as a function of its distance from the tumour centre. Under surface growth and neutral evolution, the number of cell divisions since tumorigenesis, and hence the number of mutations found in a cell, increases with distance from the tumour centre. However, we do not find this signature of surface growth in the tumour data. Instead, we find that the number of mutations at different distances from the centre is compatible with volume growth (see Appendix 3\u2014figure 4).\n\nSimilarly, the dataset of Li et al., 2022 with three-dimensional sampling also shows the signature of volume growth, both in the distribution of direction angles (Appendix 2.2) and in the number of mutations as a function of distance from the tumour centre, see Appendix 3.3.\n\nThis result is at variance with a recent spatio-phylogenetic analysis performed by Lewinsohn et al., 2023, which finds a signal of surface growth on the same data. In Appendix 3, we show that the findings of Lewinsohn et al., 2023 are compatible with volume growth; on artificially generated volume-growth data sampled like in Li et al., the algorithm used in Lewinsohn et al., 2023 also returns a spurious signal of surface growth.\n\n### Spatial dispersion of cells\n\nAnother aspect where surface and volume growth lead to qualitatively different behaviour is the spatial dispersion of mutations. Cells carrying a particular mutation can in principle form a tightly spaced colony or be dispersed throughout the tumour mass, see Figure 3A. It turns out this dispersion of mutants differs between surface and volume growth.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95338/elife-95338-fig3-v1.jpg)\n\n**Figure 3.:** (A) Cells with a particular mutation can form tight spatial clusters within a tumour (simulated example here: mutant shown in blue), or they can be more widely dispersed (mutant shown in red). We quantify the dispersion of a mutation using the dispersion parameter \u03c3, see text and Appendix 4. In this illustrative example, the blue mutation has a small dispersion parameter $\\sigma=1.3$, the red one has $\\sigma=2.5$. (B) Histogram of the dispersion parameters \u03c3 across 217 mutations in the whole-exome data of Ling et al., 2015. The red line indicates the mean of the histogram. (C) and (D) show the corresponding histograms for simulations of surface growth and volume growth, respectively. The simulations were run in 3D with populations grown up to 40,000 cells before taking 23 evenly spaced samples from a 2D cross-section. Only mutations with a whole-tumour frequency larger than 1/40 were considered, mimicking the limited sequencing resolution in the Ling et al. data. Simulation parameters were division rate $b=1$, mutation rate $\\mu=0.3$, and death rates $d=0.4$ and $d=0.8$ for surface growth and bulk growth, respectively.\n\nTo quantify the spatial dispersion of a mutation, we define the dispersion parameter \u03c3: For a given mutation, we compute the average distance of all pairs of samples carrying that mutation and divide by the average distance these cells would have if they were arranged next to one another in a spherical shape (the tightest configuration possible). Values of \u03c3 much larger than one can arise when a mutation is scattered throughout the tumour, with many cells that do not carry that mutation located between cells that do. The dispersion \u03c3 can be estimated from mutation frequencies in the whole-exome sequencing data of Ling et al., 2015, see Appendix 4 for details.\n\nFigure 3B shows a histogram of the dispersion parameter \u03c3 for 217 mutations in the whole-exome sequencing data of Ling et al., 2015. We find an average value of the dispersion of approximately 3.5, but the values for specific mutations can be much higher than that (up to 9). Figure 3C and D show the corresponding distributions for simulations of volume and surface growth, respectively. The distribution of dispersion parameters found under volume growth agrees with that in the empirical data (Kolmogorov-Smirnov statistics 1.13), whereas surface growth generates lower values of the dispersion parameter (Kolmogorov-Smirnov statistics 5.74 indicating a poorer match with the empirical data, see Appendix 4.3 for details). Also in the three-dimensional dataset of Li et al., 2022, we find higher values of the dispersion parameter than expected under surface growth (Appendix 4.4). However, the larger distances between samples in three dimensions, compared to the samples in a single plane, turn out to limit the accuracy with which the dispersion parameters can be computed. A higher number of samples would be needed to make the distances between samples comparable between the two- and three-dimensionally sampled data.\n\nVolume growth offers a simple mechanism causing the dispersion of mutations: Tumour cells displace one another when new cells are born and grow. In this way, two cells which are initially close to one another and share a mutation can be pushed apart by the birth and growth of adjacent cells that do not share the mutation. The further apart a pair of cells becomes, the higher the probability that they will be moved even further apart due to the motion of the increasing number of cells between them. This amplification of initially small distances leads to an instability that can generate the large values of the dispersion \u03c3 found both in the data of Ling et al., 2015 and in numerical simulations of the volume growth model (Figure 3B and D, respectively). On the other hand, under surface growth, cells do not push each other apart, leading to lower values of the dispersion parameter. Also, high values of the dispersion parameter cannot arise spuriously due to positive selection, as selected clones would enter the population later than neutral ones (given the same final frequency), and thus do not have as much time to be moved within the tumour.\n\nThe dispersion of cells in a growing population via this pushing effect is well known in tissue mechanics (Ranft et al., 2010; Malmi-Kakkada et al., 2018). In the context of cancer, it provides a mechanism for the clonal mixing found by ultra-deep sequencing of multiple samples from a solid tumour (Sottoriva et al., 2015; Suzuki et al., 2017; Sun et al., 2017), which leads to mutations that occur at high frequencies in some samples being present at low (but non-zero) frequencies in other samples. Dispersion and clonal mixing thus arise as a by-product of volume growth. This is in contrast to surface growth, where a specific dispersal mechanism has been postulated to account for the observed spatial distribution of mutations (Waclaw et al., 2015).\n\nTo probe how this migration of cells between different regions of a tumour affects multi-region sampling, we look at the number of mutations detectable in a limited number of samples. Specifically, we consider the fraction of mutations present in a certain subset of samples (relative to the mutations appearing in all the samples taken together) and ask how this fraction is affected by migration. Figure 4A shows the fraction of mutations detectable in a given number of samples randomly picked from the 23 whole-exome samples of Ling et al., 2015. One finds that typically about 75% of all the mutations can be detected with only five samples. We repeat this analysis but do not count mutations in a sample that occur with a higher frequency in some other sample. The rationale is that these mutations have arisen elsewhere (where they are present at higher frequency) and have migrated into the sample, where they are now present at a lower frequency. With such mutations removed, five samples typically only contain about one-fifth of the mutations. This is in line with 5 samples representing only about one-fifth of the 23 whole-exome samples. Migration of cells thus makes a single sample capture a far larger share of the genetic variability than expected from its share of the sampled tumour volume and provides an a-posteriori rationale for assessing the genetic variation found in a tumour on the basis of only a few samples.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/95338/elife-95338-fig4-v1.jpg)\n\n**Figure 4.:** (A) We ask how a limited number of samples identify mutations. We pick a subset of the whole-exome sequenced samples of Ling et al., 2015 and plot the fraction of mutations present at least in one of these samples against the number of samples in the subset (red symbols, fractions are relative to the number of mutations present in at least one of the 23 samples. Mutations must be supported by at least 5 reads at a coverage of at least 150). The procedure is repeated (blue symbols) with those mutations removed that occur in some other sample with a higher frequency than the frequencies with which the mutation occurs in the subset of samples. Error bars indicate the range of the 95-percentile. (B) The schematic Muller plot shows how cell death leads to the loss of clones, some of which have extant offspring. Time runs on the horizontal axis, the vertical shows a number of different clones indicated by different colours. In the example shown here, the clone shown in light red becomes extinct, leaving behind its darker-shaded offspring clone with no parental clone. The rate of this loss of parental clones depends on the rate of cell death, and can be used for inference, see text. (C) shows the inferred rate of cell death and (D) the inferred rate of mutation per generation. The violin plots show how the inferred values vary when subsampling different fractions of all mutations and scaling the inferred mutation rate correspondingly, with the dashed lines indicating the mean inferred values. (The fraction of mutations sampled ranges from 0.5 to 0.9, with the results shown separately in Appendix 9).\n\n### Cell turnover\n\nAt low rates of cell death, tumours grow nearly at the rate at which tumour cells divide. Higher rates of cell death slow down the net growth of the population and lead to a constant turnover of cells. The relative rates of cell birth and death have been studied in cell cultures since the classic work of Steel, 1967 using thymidine labelling. Also in cell cultures, live cell imaging has been used to track individual cell divisions (Lorenzo et al., 2011). In the following, we use the genetic record in spatially resolved genomic data to probe the role of cell death in vivo during early tumour evolution.\n\nCell death removes cells, some of which have had offspring prior to death. This can lead to clones without extant parents (Figure 4B), and the rate at which such \u2018orphan clones\u2019 arise can be used to infer the rate of cell death. We consider two metrics which quantify how frequently parental cells are removed from the population by cell death. The clone turnover gives the fraction of genotypes whose parental genotype is no longer extant in the tumour. The clade turnover gives the fraction of clades that coincide with their ancestral clade. (A clade is defined by a given mutation. Without backmutations, it comprises all individuals carrying this mutation.) These two metrics depend on the rate of cell death (relative to the birth rate) and on the mutation rate per cell division. Increasing the rate of cell death increases both clade and clone turnover, whereas increasing the mutation rate leads to a larger clone turnover only. These relationships have been determined analytically for a simple model of a growing population (Angaji et al., 2021). Inverting these relationships, the relative rate of cell death and the mutation rate can be determined from these metrics, see Appendix 5 and Angaji et al., 2021 for details and extensive tests.\n\nFigure 4C and D show the violin plots for the relative death rate and the mutation rate per cell division inferred in this way from the genotyped data of Ling et al., 2015. We find a rate of cell death nearly as high as the rate of birth (relative death rate 0.975 with 90% confidence interval [0.83, 0.995]). Hence during its early stage, the tumour was balanced nearly perfectly between growth and extinction. The inferred exome-wide mutation rate $\\mu$ per cell division is 0.015 with 90% confidence interval [0.002, 0.1]. This result is at variance with a recent analysis based on the distribution of mutational distances between samples. Werner et al., 2020 find low rates of cell death across many cancer data sets. In Appendix 6, we show that this discrepancy arises because widely different rates of cell deaths are compatible with a given distribution of pairwise distances between samples.\n\nTo obtain the mutation rate per nucleotide, we need to divide $\\mu$ by the effective genome size, that is the number of sites in the genome that could have acquired detectable mutations. For many sites only few or no reads are retrieved during sequencing, so dividing $\\mu$ by the size of the whole exome would underestimate the mutation rate. Ling et al. apply a set of criteria to filter out sites with poor coverage (Ling et al., 2015, SI): A site must have (1) a total coverage of more than 150 reads when summed over all samples, (2) at least one sample with a coverage of 10 reads or more, and (3) a coverage of 6 reads or more in the normal tissue sample. We find that $4.8\\times10^{5}$ sites in the exome fulfill these criteria, and the resulting mutation rate estimate per nucleotide is $1.6\\times10^{\u22128}$ with 90% confidence interval $[2e\u22129,1e\u22127]$. This coincides with the result of $2.9\\times10^{\u22128}$ SNV per basepair and per generation found in a colon cancer cell line by lineage sequencing (Brody et al., 2018). Comparing this result to a mutation rate estimate from a healthy human fibroblasts cell line of $2.7\\times10^{\u22129}$ (Milholland et al., 2017), this would mean the tumour mutation rate was enhanced by a factor of 5. We note that the relatively small number of mutations in our data likely affects these estimates, and that analyses of larger datasets in the future may lead to more accurate results.\n\n### Mutational signatures and temporal heterogeneity\n\nSomatic mutations in cancer tumours are caused by different mutational processes, which can be identified by their mutational signatures (Alexandrov et al., 2020). To investigate which processes were active in the tumours analysed here, we decomposed the mutational profiles of all three tumours into mutational signature components. Figure 5 shows that the strongest signature in all tumours is the single-base-substitution signature 22 (SBS22). This signature has been associated with exposure to the exogenous mutagen aristolochic acid (Hoang et al., 2013), a herbal component used in traditional Chinese medicine. (The cancer patients of the Ling et al. and Li et al. lived in China.) To ask if there is a pseudo-temporal heterogeneity in the mutational processes, we divided the mutations from each tumour into clonal (early) and subclonal (late) mutations. While the Li et al. tumours maintain similar mutational signatures over pseudo-time, we find that the exposure to aristolochic acid of the patient from Ling et al. appears to have ceased over the course of tumour evolution: while the mutational signature SBS22 dominates the clonal mutations, it is absent in the subclonal mutations, see Figure 5. The probability of not observing subclonal SBS22 due to sampling noise (p-value) was estimated to be less than 10\u22124, see Appendix 9.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/95338/elife-95338-fig5-v1.jpg)\n\n**Figure 5.:** Relative weights of single-base substitution (SBS) mutational signatures Brody et al., 2018 in all three tumours were derived with SigNet Refitter where possible (highlighted pie charts), otherwise with non-negative least squares (Alexandrov et al., 2020) (Methods). (left) Ling et al., (centre) tumour T1 of Li et al., (right) tumour T2 of Li et al. Top: all mutations, bottom: mutations stratified by their clonality. Signature SBS22 is associated with exposure to aristolochic acid. In the Ling et al. data, this signature is prominent among clonal mutations, but absent in subclonal mutations. Also shown are signatures with relative weight larger than 1% and attributed to endogenous mutational processes (SBS5 and SBS40), tobacco smoking (SBS4) and a signature that resembles SBS22 (SBS25). All other signatures were combined into a single category (\u2018Others\").\n\n### Population size\n\nThe results on the mode of evolution, migration, and cell turnover characterize the early stages of the tumours analysed here. The reason is that in an exponentially growing population, late-stage mutations have frequencies too low to be detected: Under neutral evolution and neglecting fluctuations in clone sizes, the final frequency (in the entire population) of a mutation that arose when a tumour consisted of $N$ cells is given by $f=1/N$ (Durrett, 2013). A lower limit on the frequency $f$ thus corresponds to an upper limit on the population size. In order to determine the population size the tumour had when the mutations we analysed here arose, we generalize this result to include the effects of spatial sampling and stochastic population dynamics, see Appendix 7. The higher the spatial resolution, the lower the whole-tumour frequency of a detectable mutation can be. For this reason, a high spatial resolution means that late-coming (low frequency) mutations can be detected. We find that the mutations detected in the samples with high spatial resolution (surface growth/volume growth analysis and genetic turnover) arose when the tumour consisted of about 80,000 cells. The mutations in the whole-exome samples used to measure the dispersion of mutations arose when the tumour size was around 7000 cells.\n\n## Discussion\n\n### Modes of tumour evolution\n\nWe have used genetic data taken from hepatocellular tumours at high spatial resolution (Ling et al., 2015; Li et al., 2022) to analyse the early evolution of a tumour in vivo. We are not the first to link spatial tumour sampling with evolution: on a larger spatial scale, phylogenetic comparison of samples from primary and metastatic tumours has elucidated the dynamics of metastasis (Jones et al., 2008; Zhao et al., 2016; Alves et al., 2019; Hu et al., 2020). Analyses of multiple samples from the same tumour have established intra-tumour heterogeneity and found neutral evolution in many cases (Gerlinger et al., 2012; Sottoriva et al., 2015; Ling et al., 2015; Williams et al., 2016; Sun et al., 2017; see Tarabichi et al., 2018 for a critique), as well as instances of selection (Williams et al., 2018; Caravagna et al., 2018). The mode of growth of a tumour affects the resulting genetic diversity of a tumour (Noble et al., 2022; Fu et al., 2022).\n\nHere, we have used the spatial information contained in data based on hundreds of samples from single tumours. We found that the tumour evolved under uniform volume growth; there was no evidence of spatial constraints leading to radially outward growth. We also found a substantial turnover of cells with a rate of cell death comparable to the rate of cell division.\n\nThe rate of cell death being comparable to that of cell division implies that the tumour grew much more slowly than suggested by the rate of cell division. Instead, in its early stage, the tumour was balanced precariously between continued growth to macroscopic size and shrinkage: A small increase in the rate of cell death, or a small decrease in the growth rate would have caused the small net growth rate to become negative, possibly even leading to the extinction of the tumour.\n\nThe high spatial resolution also allows to track changes in the mutational processes over evolutionary time far more easily than in bulk data. Based on the high-resolution data of Ling et al., 2015, we found a drastic difference between the mutational signature of early and late mutations. In this data, the dominant mutational signature in early mutations is associated with an exogenous mutagen (aristolochic acid) found in herbal traditional Chinese medicine and thought to cause liver cancer (Ng et al., 2017). This signature is absent in late mutations, compatible with a discontinued dose of the mutagen. In the data set of Li et al., 2022, the same signature is dominant both in the early and late mutations, compatible with a continuous dose of the mutagen.\n\n### Mutation dispersion and sampling\n\nWe have found mutations in the tumour that are widely dispersed throughout the tumour; as a result they can have low frequencies in one particular sample but high frequencies in other parts of the tumour. We find the same level of dispersal of mutations in off-lattice simulations of growing tissues, where it is due to cells pushing each other out of the way as a part of the growth process. Hence, cells that were initially adjacent to each other and share a mutation can get pushed apart during the course of tumour growth and end up with a large distance between them. We found that this effect can be highly advantageous when assessing the mutations in a tumour from a limited number of samples: cells carrying a particular mutation can migrate into a spatial region that is later sampled. Mutations might thus be present at low frequency in a particular sample, because the cells carrying it migrated from afar, rather than because the mutation either arose late during the growth of the tumour (Williams et al., 2016) or was under negative selection (Weghorn and Sunyaev, 2017).\n\nOur results are based on three well-encapsulated hepatocellular tumours, resected and sampled in two and three dimensions (Ling et al., 2015; Li et al., 2022). Potentially, different types of tumours or tumours at different stages may exhibit other growth modes. For instance, tumours that are not encapsulated might have a more heterogeneous environment, and evolve under surface growth. Also, the spatial and genomic resolution of any data set imposes limits on how late stage events can be observed. We estimate that the data analysed here capture the evolutionary dynamics up to 80,000 cells. Increasing the genomic and spatial resolution will allow to identify mutations of lower frequency and thus characterize the in-vivo evolution beyond the early stages. Future techniques to sequence resected tumours at higher spatial and genomic resolution than currently possible will allow to trace key later-stage evolutionary changes like angiogenesis, effects of the tumour microenvironment, or the development of genetic instability.\n",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jennifer Flegg, The University of Melbourne Australia\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95338.3.sa0](https://doi.org/10.7554/eLife.95338.3.sa0)\n\nThe article uses a cell-based model to investigate how mutations and cells spread throughout a tumour. The paper uses published data and the proposed model to understand how growth and death mechanisms lead to the observed data. This work provides an important insight into the early stages of tumour development. From the work provided here, the results are convincing, using a thorough analysis.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95338.3.sa1](https://doi.org/10.7554/eLife.95338.3.sa1)\n\nSummary:\n\nArman Angaji and his team delved into the intricate world of tumor growth and evolution, utilizing a blend of computer simulations and real patient data from liver cancer.\n\nStrengths:\n\nTheir analysis of how mutations and clones are distributed within tumors revealed an interesting finding: tumors don't just spread from their edges as previously believed. Instead, they expand both from within and the edges simultaneously, suggesting a unique growth mode. This mode naturally indicates that external forces may play a role in cancer cells dispersion within the tumor. Moreover, their research hints at an intriguing phenomenon - the high death rate of progenitor cells and extremely slow pace in growth in the initial phase of tumor expansion. Understanding this dynamic could significantly impact our comprehension of cancer development.\n\nWeaknesses:\n\nIt's important to note, however, that this study relies on specific computer models, metrics derived from inferred clones, and a limited number of patient data. While the insights gained are promising, further investigation is essential to validate these findings. Nonetheless, this work opens up exciting avenues for comprehending the evolution of cancers.\n\nComments on revised submission:\n\nThe authors have effectively addressed my concerns. This revision is excellent.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95338.3.sa2](https://doi.org/10.7554/eLife.95338.3.sa2)\n\nSummary:\n\nThe article uses a cell-based model to investigate how mutations and cells spread throughout a tumour. The paper uses published data and the proposed model to understand how growth and death mechanisms lead to the observed data. This work provides an insight into the early stages of tumour development. From the work provided here, the results are solid, showing a thorough analysis. The article is well written and presents a very suitable and rigorous analysis to describe the data. The authors did a particularly nice job of the discussion and decision of their \"metrics of interest\", though this is not the main aim of this work.\n\nStrengths:\n\nDue to the particularly nice and tractable cell-based model, the authors are able to perform a thorough analysis to compare the published data to that simulated with their model. They then used their computational model to investigate different growth mechanisms of volume growth and surface growth. With this approach, the authors are able to compare the metric of interest (here, the direction angle of a new mutant clone, the dispersion of mutants throughout the tumour) to quantify how the different growth models compare to the observed data. The authors have also used inference methods to identify model parameters based on the data observed. The authors performed a rigorous analysis and have chosen the metrics in an appropriate manner to compare the different growth mechanisms.\n\nContext:\n\nImproved mechanistic understanding into the early developmental stages of tumours will further assist in disease treatment and quantification. Understanding how readily and quickly a tumour is evolving is key to understanding how it will develop and progress. This work provides a solid example as to how this can be achieved with data alongside simulated models.\n",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "d1458f29-2edf-4d9e-8cf8-b5ea35c82253",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C1",
+      "claim": "285 samples were taken from a planar section of a hepatocellular carcinoma of diameter 35mm analyzed by Ling et al., 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "In Ling et al., 2015, 285 samples of a planar section of a hepatocellular carcinoma of diameter 35mm were taken and analyzed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement from the manuscript describing the dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "16e45611-f04d-4d7e-ace1-1c60bea1b95d",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C2",
+      "claim": "Each sample in the Ling et al., 2015 study consisted of about 20,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Each sample consisted of about 20,000 cells (Ling et al., 2015) determined by cell counting.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cites Ling et al., 2015 as the source for cell counting data.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "2a268bb1-b2bf-4d21-b520-ea7778fdd674",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C3",
+      "claim": "23 samples from the Ling et al., 2015 study were subjected to whole-exome sequencing with average read depth of 74 reads per nucleotide.",
+      "claim_type": "EXPLICIT",
+      "source": "23 of these samples were subjected to whole-exome sequencing (average read depth of 74 reads per nucleotide)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about sequencing methodology and depth.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "f54d2785-393a-41d7-855c-56771572442a",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C4",
+      "claim": "Loci with mutations found in the 23 whole-exome sequenced samples were probed by genotyping in all 285 samples using Sequenom and Sanger sequencing.",
+      "claim_type": "EXPLICIT",
+      "source": "loci with mutations found in these 23 samples were probed by genotyping (by Sequenom and Sanger sequencing) in all 285 samples (Ling et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the genotyping methodology applied to the full sample set.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "9aaada28-e4be-4078-8abf-69a784a565ed",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C5",
+      "claim": "The genotyped data from Ling et al., 2015 consists of 35 mutated loci.",
+      "claim_type": "EXPLICIT",
+      "source": "The genotyped data consists of 35 mutated loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of mutated loci in genotyped data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "fb0727cc-e696-4a79-9bf9-ba762cdc27b5",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C6",
+      "claim": "Joint variant calling and filtering on all 23 whole-exome samples from Ling et al., 2015 returned 217 mutated loci.",
+      "claim_type": "EXPLICIT",
+      "source": "Calling variants jointly on all 23 whole-exome samples and filtering as described in Appendix 4.2 returned 217 mutated loci.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of the number of mutated loci after reanalysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "75a03c50-4bf7-41a8-8847-6cbac21950dd",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C7",
+      "claim": "169 samples were taken from 11 sections of tumour T1 in the Li et al., 2022 study, with the tumour being approximately 20mm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "169 samples were taken from 11 sections of tumour T1, which was approximately of 20mm diameter",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about sampling and tumour dimensions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "d6cce312-9e3c-402b-a3a6-bb9e3bcdec87",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C8",
+      "claim": "160 samples were taken from 6 sections of tumour T2 in the Li et al., 2022 study, with the tumour being approximately 15mm in diameter.",
+      "claim_type": "EXPLICIT",
+      "source": "160 samples from 6 sections of tumour T2, which was of approximately of 15mm diameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about sampling and tumour dimensions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "0124bfdc-3aa0-422f-a15a-073e912770ae",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C9",
+      "claim": "Each sample in the Li et al., 2022 study consisted of approximately 3200 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Each sample consisted of ca. 3200 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about cell count per sample.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "571b6618-92d4-4c88-8f22-e23156f638fa",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C10",
+      "claim": "16 samples from T1 and 9 samples from T2 in the Li et al., 2022 study were whole-genome sequenced.",
+      "claim_type": "EXPLICIT",
+      "source": "16 (9) samples from T1 (T2) were whole-genome sequenced",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the number of samples subjected to whole-genome sequencing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "0128e022-ff88-4fa0-bf75-6b597036571d",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C11",
+      "claim": "Li et al., 2022 reported 906 mutations for T1 and 564 mutations for T2 used for genotyping.",
+      "claim_type": "EXPLICIT",
+      "source": "Li et al. report 906 (564) mutations used for genotyping of T1 (T2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing the number of mutations reported by Li et al.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "2a2a15c3-c13a-4247-98d8-09a0b30d809b",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C12",
+      "claim": "563 mutations from T1 and 259 mutations from T2 passed the authors' filters.",
+      "claim_type": "EXPLICIT",
+      "source": "of which 563 (259) pass our filters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the number of mutations passing quality filters.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "056fdd6f-43a3-46af-b02f-03f807f8e179",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C13",
+      "claim": "Under surface growth, offspring clones tend to lie radially outward from their parent clones, leading to a distribution of direction angles centered around zero.",
+      "claim_type": "EXPLICIT",
+      "source": "Under surface growth, offspring tend to lie radially outward from their parents, leading to a distribution of these direction angles centered around zero.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the expected distribution under surface growth model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b6cc7fe4-af93-4eb5-825e-eb0d9b4a8639",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C14",
+      "claim": "Under volume growth, cells divide isotropically, leading to a uniform distribution of direction angles.",
+      "claim_type": "EXPLICIT",
+      "source": "Under volume growth, cells divide isotropically, leading to a uniform distribution of angles.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the expected distribution under volume growth model.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "91997018-09d5-44e3-998d-23fafb1b178b",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C15",
+      "claim": "The empirical data from Ling et al., 2015 show a uniform distribution of the direction angle.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical data clearly show a uniform distribution of the direction angle",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 2B showing the distribution.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "ecbf1339-a72c-436e-bebf-c9029cfb09a2",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C16",
+      "claim": "The empirical data from Ling et al., 2015 show no evidence for radially outward growth caused by faster growth near the edge of the tumour.",
+      "claim_type": "EXPLICIT",
+      "source": "The empirical data clearly show a uniform distribution of the direction angle, and thus no evidence for radially outward growth caused by faster growth near the edge of the tumour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct conclusion drawn from the uniform distribution of direction angles.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "40ae47dd-9f3a-4afa-92be-def883690df3",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C17",
+      "claim": "Simulations of surface growth show a pronounced maximum at \u03b8=0 in the histogram of direction angles.",
+      "claim_type": "EXPLICIT",
+      "source": "For surface growth, the histogram of direction angles shows a pronounced maximum at \u03b8=0 produced by the radial outgrowth of clones (Figure 2C)",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by simulation results shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b3b58fa1-3386-4217-9219-3ddb9e9df9b9",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C18",
+      "claim": "Simulations of volume growth show a flat distribution of direction angles.",
+      "claim_type": "EXPLICIT",
+      "source": "in a simulation of volume growth, we find a flat distribution (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by simulation results shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "ff7945c1-52b3-49d8-b884-62f35baba74d",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C19",
+      "claim": "Under surface growth and neutral evolution, the number of cell divisions since tumorigenesis increases with distance from the tumour centre.",
+      "claim_type": "EXPLICIT",
+      "source": "Under surface growth and neutral evolution, the number of cell divisions since tumorigenesis, and hence the number of mutations found in a cell, increases with distance from the tumour centre.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about expected pattern under surface growth.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "e5cdb7c5-e941-4127-80c4-a0eebd499c54",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C20",
+      "claim": "The number of mutations at different distances from the centre in the Ling et al., 2015 data is compatible with volume growth.",
+      "claim_type": "EXPLICIT",
+      "source": "we find that the number of mutations at different distances from the centre is compatible with volume growth (see Appendix 3\u2014figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement with reference to supporting figure.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "601de99a-8051-4676-95f8-7d5ada5decec",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C21",
+      "claim": "The dataset of Li et al., 2022 with three-dimensional sampling shows the signature of volume growth in the distribution of direction angles.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, the dataset of Li et al., 2022 with three-dimensional sampling also shows the signature of volume growth, both in the distribution of direction angles (Appendix 2.2)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about findings in the Li et al. dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "5ac75be3-3823-43d7-9b36-8e3431e3c649",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C22",
+      "claim": "The dataset of Li et al., 2022 shows the signature of volume growth in the number of mutations as a function of distance from the tumour centre.",
+      "claim_type": "EXPLICIT",
+      "source": "the dataset of Li et al., 2022 with three-dimensional sampling also shows the signature of volume growth, both in the distribution of direction angles (Appendix 2.2) and in the number of mutations as a function of distance from the tumour centre, see Appendix 3.3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about findings in the Li et al. dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "4b0226cd-9e82-4c63-a90a-4c4b809eb06c",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C23",
+      "claim": "Lewinsohn et al., 2023 performed a spatio-phylogenetic analysis that found a signal of surface growth on the same data.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is at variance with a recent spatio-phylogenetic analysis performed by Lewinsohn et al., 2023, which finds a signal of surface growth on the same data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing findings from another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "cf54412d-17ba-4b08-98bb-f1c88553ee1f",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C24",
+      "claim": "The findings of Lewinsohn et al., 2023 are compatible with volume growth.",
+      "claim_type": "EXPLICIT",
+      "source": "In Appendix 3, we show that the findings of Lewinsohn et al., 2023 are compatible with volume growth",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about reanalysis of Lewinsohn et al. findings.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "d23b2b67-2797-4fd4-a3da-8bc13325c405",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C25",
+      "claim": "On artificially generated volume-growth data sampled like in Li et al., the algorithm used in Lewinsohn et al., 2023 returns a spurious signal of surface growth.",
+      "claim_type": "EXPLICIT",
+      "source": "on artificially generated volume-growth data sampled like in Li et al., the algorithm used in Lewinsohn et al., 2023 also returns a spurious signal of surface growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about testing the Lewinsohn et al. algorithm on simulated data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "a4c2369a-8cb4-4324-9f27-cb45042906cb",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C26",
+      "claim": "The dispersion parameter \u03c3 quantifies the spatial dispersion of a mutation by computing the average distance of all pairs of samples carrying that mutation divided by the average distance if they were arranged in a spherical shape.",
+      "claim_type": "EXPLICIT",
+      "source": "To quantify the spatial dispersion of a mutation, we define the dispersion parameter \u03c3: For a given mutation, we compute the average distance of all pairs of samples carrying that mutation and divide by the average distance these cells would have if they were arranged next to one another in a spherical shape (the tightest configuration possible).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of the dispersion parameter.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "9404a986-2839-48a9-932d-488359fc8bad",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C27",
+      "claim": "Values of \u03c3 much larger than one arise when a mutation is scattered throughout the tumour with many cells that do not carry that mutation located between cells that do.",
+      "claim_type": "EXPLICIT",
+      "source": "Values of \u03c3 much larger than one can arise when a mutation is scattered throughout the tumour, with many cells that do not carry that mutation located between cells that do.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct explanation of what high dispersion values indicate.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "7b948ae9-eceb-4b54-9554-a49209ef63d3",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C28",
+      "claim": "The average value of the dispersion parameter in the Ling et al., 2015 whole-exome sequencing data is approximately 3.5.",
+      "claim_type": "EXPLICIT",
+      "source": "We find an average value of the dispersion of approximately 3.5",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of measured average dispersion, supported by Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b592b17d-1f6a-4d62-b472-a8cc3bba41f3",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C29",
+      "claim": "The dispersion parameter values for specific mutations in the Ling et al., 2015 data can be as high as 9.",
+      "claim_type": "EXPLICIT",
+      "source": "but the values for specific mutations can be much higher than that (up to 9).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the range of dispersion values observed.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "4ed4395d-e7f1-4f87-a5eb-5c864a4f7f10",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C30",
+      "claim": "The distribution of dispersion parameters found under volume growth agrees with that in the empirical data from Ling et al., 2015 (Kolmogorov-Smirnov statistics 1.13).",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of dispersion parameters found under volume growth agrees with that in the empirical data (Kolmogorov-Smirnov statistics 1.13)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with statistical test result comparing simulated and empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "63a14af6-2bdd-4e27-9757-4d8dd9adfb79",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C31",
+      "claim": "Surface growth generates lower values of the dispersion parameter than observed in the empirical data (Kolmogorov-Smirnov statistics 5.74).",
+      "claim_type": "EXPLICIT",
+      "source": "whereas surface growth generates lower values of the dispersion parameter (Kolmogorov-Smirnov statistics 5.74 indicating a poorer match with the empirical data, see Appendix 4.3 for details).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement with statistical test result comparing simulated and empirical data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "00524fa5-1e70-4f56-99ed-0db180f118c6",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C32",
+      "claim": "Higher values of the dispersion parameter than expected under surface growth are found in the three-dimensional dataset of Li et al., 2022.",
+      "claim_type": "EXPLICIT",
+      "source": "Also in the three-dimensional dataset of Li et al., 2022, we find higher values of the dispersion parameter than expected under surface growth (Appendix 4.4).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about findings in the Li et al. dataset.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "a33102f8-8e50-4650-b1db-7d69b049b913",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C33",
+      "claim": "Volume growth causes dispersion of mutations through tumour cells displacing one another when new cells are born and grow.",
+      "claim_type": "EXPLICIT",
+      "source": "Volume growth offers a simple mechanism causing the dispersion of mutations: Tumour cells displace one another when new cells are born and grow.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement explaining the mechanism of dispersion under volume growth.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "3c537f73-9313-4531-9a69-d23b0f5d55f1",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C34",
+      "claim": "Two cells that are initially close and share a mutation can be pushed apart by the birth and growth of adjacent cells that do not share the mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "In this way, two cells which are initially close to one another and share a mutation can be pushed apart by the birth and growth of adjacent cells that do not share the mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement explaining the pushing mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "f2cd5e3d-213e-4530-8839-a61a9c3478a2",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C35",
+      "claim": "The further apart a pair of cells becomes, the higher the probability that they will be moved even further apart due to the motion of cells between them.",
+      "claim_type": "EXPLICIT",
+      "source": "The further apart a pair of cells becomes, the higher the probability that they will be moved even further apart due to the motion of the increasing number of cells between them.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the amplification mechanism.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "1bdedb7f-bbff-456c-b62f-1cec97829c73",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C36",
+      "claim": "This amplification of initially small distances leads to an instability that can generate large values of the dispersion \u03c3.",
+      "claim_type": "EXPLICIT",
+      "source": "This amplification of initially small distances leads to an instability that can generate the large values of the dispersion \u03c3 found both in the data of Ling et al., 2015 and in numerical simulations of the volume growth model",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement linking the mechanism to observed dispersion values.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "55575742-db3d-43ee-a656-457392c491a0",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C37",
+      "claim": "Under surface growth, cells do not push each other apart, leading to lower values of the dispersion parameter.",
+      "claim_type": "EXPLICIT",
+      "source": "On the other hand, under surface growth, cells do not push each other apart, leading to lower values of the dispersion parameter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement contrasting surface growth with volume growth.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "d8cd7a02-7d7b-4346-b4ab-5937b9a69656",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C38",
+      "claim": "High values of the dispersion parameter cannot arise spuriously due to positive selection.",
+      "claim_type": "EXPLICIT",
+      "source": "Also, high values of the dispersion parameter cannot arise spuriously due to positive selection, as selected clones would enter the population later than neutral ones (given the same final frequency), and thus do not have as much time to be moved within the tumour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement ruling out selection as a confounding factor.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "a2971e33-5ed4-4a7f-b088-445176a59d3a",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C39",
+      "claim": "The dispersion of cells in a growing population via pushing is well known in tissue mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "The dispersion of cells in a growing population via this pushing effect is well known in tissue mechanics (Ranft et al., 2010; Malmi-Kakkada et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing prior work on cell dispersion in tissue mechanics.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "2a542e55-bf4b-407b-a734-07d2fc7bc86c",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C40",
+      "claim": "Ultra-deep sequencing of multiple samples from solid tumours has found clonal mixing.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of cancer, it provides a mechanism for the clonal mixing found by ultra-deep sequencing of multiple samples from a solid tumour (Sottoriva et al., 2015; Suzuki et al., 2017; Sun et al., 2017)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing studies that found clonal mixing.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "6a5d68b3-772c-402b-849f-59e3d05fcd59",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C41",
+      "claim": "Clonal mixing leads to mutations that occur at high frequencies in some samples being present at low frequencies in other samples.",
+      "claim_type": "EXPLICIT",
+      "source": "which leads to mutations that occur at high frequencies in some samples being present at low (but non-zero) frequencies in other samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing the pattern of clonal mixing.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b7fc5208-f904-4940-8730-b4d7735fd19f",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C42",
+      "claim": "Dispersion and clonal mixing arise as a by-product of volume growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Dispersion and clonal mixing thus arise as a by-product of volume growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement linking dispersion and clonal mixing to volume growth.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "3161e78c-4b69-4fe4-a08c-09dbd08e8635",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C43",
+      "claim": "Under surface growth, a specific dispersal mechanism has been postulated to account for the observed spatial distribution of mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "This is in contrast to surface growth, where a specific dispersal mechanism has been postulated to account for the observed spatial distribution of mutations (Waclaw et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing prior work on surface growth models.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b4508b18-07bd-4f90-aa2f-3d11e6e1f98b",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C44",
+      "claim": "About 75% of all mutations can be detected with only five samples from the 23 whole-exome samples of Ling et al., 2015.",
+      "claim_type": "EXPLICIT",
+      "source": "One finds that typically about 75% of all the mutations can be detected with only five samples.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 4A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "26c1990d-f850-4783-ba13-6015aefc3666",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C45",
+      "claim": "When mutations present at higher frequency in other samples are removed, five samples typically contain only about one-fifth of the mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "With such mutations removed, five samples typically only contain about one-fifth of the mutations.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the effect of removing migrated mutations.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "ad41cbf6-a098-42f0-a276-c778fa549d7a",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C46",
+      "claim": "Migration of cells makes a single sample capture a far larger share of the genetic variability than expected from its share of the sampled tumour volume.",
+      "claim_type": "EXPLICIT",
+      "source": "Migration of cells thus makes a single sample capture a far larger share of the genetic variability than expected from its share of the sampled tumour volume",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct conclusion drawn from the analysis of mutation detection.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "a3d0321c-0638-44f2-b646-3435a387e050",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C47",
+      "claim": "The inferred rate of cell death from the Ling et al., 2015 data is nearly as high as the rate of birth (relative death rate 0.975 with 90% confidence interval [0.83, 0.995]).",
+      "claim_type": "EXPLICIT",
+      "source": "We find a rate of cell death nearly as high as the rate of birth (relative death rate 0.975 with 90% confidence interval [0.83, 0.995]).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of inferred parameter with confidence interval, supported by Figure 4C.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "8137c1be-a7c7-4b94-a153-d05fa652c5a8",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C48",
+      "claim": "During its early stage, the tumour was balanced nearly perfectly between growth and extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence during its early stage, the tumour was balanced nearly perfectly between growth and extinction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct conclusion drawn from the high death rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "1b6d0012-effd-43ed-add1-f5c6cded6952",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C49",
+      "claim": "The inferred exome-wide mutation rate \u03bc per cell division is 0.015 with 90% confidence interval [0.002, 0.1].",
+      "claim_type": "EXPLICIT",
+      "source": "The inferred exome-wide mutation rate \u03bc per cell division is 0.015 with 90% confidence interval [0.002, 0.1].",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement of inferred parameter with confidence interval, supported by Figure 4D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "c75201af-091c-4a30-a043-0c1dc237eb71",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C50",
+      "claim": "Werner et al., 2020 found low rates of cell death across many cancer data sets.",
+      "claim_type": "EXPLICIT",
+      "source": "This result is at variance with a recent analysis based on the distribution of mutational distances between samples. Werner et al., 2020 find low rates of cell death across many cancer data sets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing findings from another study.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "f3e557ce-9bea-42de-a64b-edea39688041",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C51",
+      "claim": "Widely different rates of cell deaths are compatible with a given distribution of pairwise distances between samples.",
+      "claim_type": "EXPLICIT",
+      "source": "In Appendix 6, we show that this discrepancy arises because widely different rates of cell deaths are compatible with a given distribution of pairwise distances between samples.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement explaining the discrepancy with Werner et al.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "e757f0cd-4490-45f2-80bf-28ccc2d51933",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C56",
+      "claim": "The tumour mutation rate was enhanced by a factor of 5 compared to healthy human fibroblasts.",
+      "claim_type": "EXPLICIT",
+      "source": "this would mean the tumour mutation rate was enhanced by a factor of 5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement comparing tumour and normal mutation rates.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "bd64b05f-57c9-414c-ad34-cf8fd253507e",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C57",
+      "claim": "The strongest mutational signature in all three tumours is single-base-substitution signature 22 (SBS22).",
+      "claim_type": "EXPLICIT",
+      "source": "Figure 5 shows that the strongest signature in all tumours is the single-base-substitution signature 22 (SBS22).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "1e762315-ea6a-4ad6-a050-ca94c4e33286",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C58",
+      "claim": "Mutational signature SBS22 has been associated with exposure to the exogenous mutagen aristolochic acid.",
+      "claim_type": "EXPLICIT",
+      "source": "This signature has been associated with exposure to the exogenous mutagen aristolochic acid (Hoang et al., 2013)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing the association of SBS22 with aristolochic acid.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "265cdd12-07d3-426e-bb34-49653a3b2848",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C59",
+      "claim": "Aristolochic acid is a herbal component used in traditional Chinese medicine.",
+      "claim_type": "EXPLICIT",
+      "source": "aristolochic acid (Hoang et al., 2013), a herbal component used in traditional Chinese medicine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement describing aristolochic acid.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "4712e99c-e1b6-4cec-9254-dfafa5eb86e2",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C60",
+      "claim": "The cancer patients of Ling et al. and Li et al. lived in China.",
+      "claim_type": "EXPLICIT",
+      "source": "(The cancer patients of the Ling et al. and Li et al. lived in China.)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about patient location.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "36214f9f-d092-4023-a985-e87e401fbf87",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C61",
+      "claim": "The Li et al. tumours maintain similar mutational signatures over pseudo-time.",
+      "claim_type": "EXPLICIT",
+      "source": "While the Li et al. tumours maintain similar mutational signatures over pseudo-time",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "eb0ac56a-26da-42e6-b01e-afbbcbf7923e",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C62",
+      "claim": "In the Ling et al. patient, exposure to aristolochic acid appears to have ceased over the course of tumour evolution.",
+      "claim_type": "EXPLICIT",
+      "source": "we find that the exposure to aristolochic acid of the patient from Ling et al. appears to have ceased over the course of tumour evolution",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct conclusion drawn from the mutational signature analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "30428199-9390-44f0-8524-97fbcc6930e8",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C63",
+      "claim": "Mutational signature SBS22 dominates the clonal mutations in the Ling et al. data but is absent in the subclonal mutations.",
+      "claim_type": "EXPLICIT",
+      "source": "while the mutational signature SBS22 dominates the clonal mutations, it is absent in the subclonal mutations, see Figure 5.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct statement supported by Figure 5.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b8ec3157-9a36-43bf-a3a5-92a6f88eb7cb",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C64",
+      "claim": "The probability of not observing subclonal SBS22 due to sampling noise (p-value) was estimated to be less than 10^\u22124.",
+      "claim_type": "EXPLICIT",
+      "source": "The probability of not observing subclonal SBS22 due to sampling noise (p-value) was estimated to be less than 10\u22124, see Appendix 9.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of statistical significance.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "efa011c5-c72b-4dfd-a442-59fc5597a386",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C65",
+      "claim": "Under neutral evolution and neglecting fluctuations in clone sizes, the final frequency of a mutation that arose when a tumour consisted of N cells is given by f=1/N.",
+      "claim_type": "EXPLICIT",
+      "source": "Under neutral evolution and neglecting fluctuations in clone sizes, the final frequency (in the entire population) of a mutation that arose when a tumour consisted of N cells is given by f=1/N (Durrett, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing a theoretical result.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "41bc9489-546b-44cc-989f-d660cb5c670c",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C66",
+      "claim": "A lower limit on the frequency f corresponds to an upper limit on the population size.",
+      "claim_type": "EXPLICIT",
+      "source": "A lower limit on the frequency f thus corresponds to an upper limit on the population size.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct logical inference from the relationship between frequency and population size.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "1f826183-2139-4495-924e-8159a502a71f",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C67",
+      "claim": "The mutations detected in the samples with high spatial resolution arose when the tumour consisted of about 80,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that the mutations detected in the samples with high spatial resolution (surface growth/volume growth analysis and genetic turnover) arose when the tumour consisted of about 80,000 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of inferred population size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "71ca6d5b-2026-495d-a96c-a52022723ced",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C68",
+      "claim": "The mutations in the whole-exome samples used to measure the dispersion of mutations arose when the tumour size was around 7000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutations in the whole-exome samples used to measure the dispersion of mutations arose when the tumour size was around 7000 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of inferred population size.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "79c87fc1-0b61-460d-9002-bb05251bdf06",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C69",
+      "claim": "Phylogenetic comparison of samples from primary and metastatic tumours has elucidated the dynamics of metastasis.",
+      "claim_type": "EXPLICIT",
+      "source": "on a larger spatial scale, phylogenetic comparison of samples from primary and metastatic tumours has elucidated the dynamics of metastasis (Jones et al., 2008; Zhao et al., 2016; Alves et al., 2019; Hu et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing prior work on metastasis dynamics.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "acfa1d83-0be5-40c7-8b2e-719b70370ae6",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C70",
+      "claim": "Analyses of multiple samples from the same tumour have established intra-tumour heterogeneity.",
+      "claim_type": "EXPLICIT",
+      "source": "Analyses of multiple samples from the same tumour have established intra-tumour heterogeneity",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about findings from multi-region sequencing studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b495412e-9853-4a78-9c33-0b09eb566db6",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C71",
+      "claim": "Neutral evolution has been found in many tumours through multi-region sampling analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "and found neutral evolution in many cases (Gerlinger et al., 2012; Sottoriva et al., 2015; Ling et al., 2015; Williams et al., 2016; Sun et al., 2017; see Tarabichi et al., 2018 for a critique)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing studies that found neutral evolution.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "13d2e9d8-4d74-4320-a43a-3f8ccef2f1e1",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C72",
+      "claim": "Instances of selection have been found in tumours through multi-region sampling analyses.",
+      "claim_type": "EXPLICIT",
+      "source": "as well as instances of selection (Williams et al., 2018; Caravagna et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing studies that found selection.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "cb38cafb-423c-4237-b003-85b0292f12fa",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C73",
+      "claim": "The mode of growth of a tumour affects the resulting genetic diversity of a tumour.",
+      "claim_type": "EXPLICIT",
+      "source": "The mode of growth of a tumour affects the resulting genetic diversity of a tumour (Noble et al., 2022; Fu et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing studies on the relationship between growth mode and genetic diversity.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b90a3ef9-e9f7-43af-aaf4-5d73b8f3bbca",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C74",
+      "claim": "The tumour evolved under uniform volume growth with no evidence of spatial constraints leading to radially outward growth.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the tumour evolved under uniform volume growth; there was no evidence of spatial constraints leading to radially outward growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct summary statement of main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "c1dbf025-88c9-4b3f-8c35-a519485171e7",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C75",
+      "claim": "A substantial turnover of cells was found with a rate of cell death comparable to the rate of cell division.",
+      "claim_type": "EXPLICIT",
+      "source": "We also found a substantial turnover of cells with a rate of cell death comparable to the rate of cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct summary statement of main finding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b48bae57-d8fb-4497-8289-163490fca255",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C76",
+      "claim": "In its early stage, the tumour was balanced precariously between continued growth to macroscopic size and shrinkage.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, in its early stage, the tumour was balanced precariously between continued growth to macroscopic size and shrinkage",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct conclusion drawn from the high death rate.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "6e16d660-3e99-43f5-b374-d9a03a18a327",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C77",
+      "claim": "A small increase in the rate of cell death or a small decrease in the growth rate would have caused the small net growth rate to become negative, possibly leading to tumour extinction.",
+      "claim_type": "EXPLICIT",
+      "source": "A small increase in the rate of cell death, or a small decrease in the growth rate would have caused the small net growth rate to become negative, possibly even leading to the extinction of the tumour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the implications of the growth-death balance.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "d58be6aa-528c-4c26-8d9e-c475793b5c06",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C78",
+      "claim": "The data analysed capture the evolutionary dynamics up to 80,000 cells.",
+      "claim_type": "EXPLICIT",
+      "source": "We estimate that the data analysed here capture the evolutionary dynamics up to 80,000 cells.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the temporal scope of the analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "693325c8-9160-48ae-9912-a4f0800d6fe0",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C79",
+      "claim": "Increasing the genomic and spatial resolution will allow to identify mutations of lower frequency and characterize in-vivo evolution beyond the early stages.",
+      "claim_type": "EXPLICIT",
+      "source": "Increasing the genomic and spatial resolution will allow to identify mutations of lower frequency and thus characterize the in-vivo evolution beyond the early stages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about future possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "076a38df-95d3-4a25-b495-0e50e91a0cd1",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C80",
+      "claim": "Future techniques to sequence resected tumours at higher spatial and genomic resolution will allow to trace key later-stage evolutionary changes like angiogenesis, effects of the tumour microenvironment, or the development of genetic instability.",
+      "claim_type": "EXPLICIT",
+      "source": "Future techniques to sequence resected tumours at higher spatial and genomic resolution than currently possible will allow to trace key later-stage evolutionary changes like angiogenesis, effects of the tumour microenvironment, or the development of genetic instability.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about future possibilities.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "f796ee6d-e6ab-4829-83f3-44228e344e96",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C81",
+      "claim": "The distribution of direction angles is a model-independent metric that does not rely on a particular model of cell dynamics, population dynamics or sampling.",
+      "claim_type": "EXPLICIT",
+      "source": "The distribution of direction angles is a model-independent metric, it does not rely on a particular model of cell dynamics, population dynamics or sampling.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the properties of the metric.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "1470c1ce-2df9-43d8-80ea-53ae367a25f0",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C82",
+      "claim": "The distribution of direction angles is robust against the presence of selected subclones.",
+      "claim_type": "EXPLICIT",
+      "source": "It is also robust against the presence of selected subclones: if a subclone grows isotropically from some point, but at an elevated rate, it will contribute to a flat distribution of angles like all other clones.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about the robustness of the metric.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "6abfe6bb-200c-4620-8668-c3fc26a50146",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C83",
+      "claim": "The samples in the Ling et al. study form a honey-comb structure because the tumour slice had been cut into four quadrants.",
+      "claim_type": "EXPLICIT",
+      "source": "The samples form a honey-comb structure, because the tumour slice had been cut into four quadrants, see Fig S1 in Ling et al., 2015.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct explanation of the spatial arrangement shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b42367fd-ad11-4030-823c-78954c93fb0f",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C84",
+      "claim": "An off-lattice cell-based model was used that is well-known from simulations of tissue mechanics.",
+      "claim_type": "EXPLICIT",
+      "source": "We use an off-lattice cell-based model, well-known from simulations of tissue mechanics (Drasdo and H\u00f6hme, 2005; Van Liedekerke et al., 2019; Malmi-Kakkada et al., 2018; Metzcar et al., 2019)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement citing prior work on the modeling approach.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "940530bc-7248-4b2b-955d-e96e86a1b0e8",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C85",
+      "claim": "Each tumour cell in the model is described by a sphere centered on a particular point in 3D or 2D space, as well as a genome.",
+      "claim_type": "EXPLICIT",
+      "source": "In this model, each tumour cell is described by a sphere centered on a particular point in 3D space or 2D space, as well as a genome.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "278eb031-ace9-4c13-8aaa-78a6d620af41",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C86",
+      "claim": "Each cell division introduces a new point adjacent to its parent in a random uniformly distributed direction.",
+      "claim_type": "EXPLICIT",
+      "source": "Each cell division introduces a new point adjacent to its parent in a random (uniformly distributed) direction",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "a3763d7e-b1dc-49e7-8e67-aaa33032c6d0",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C87",
+      "claim": "At division, both mother and daughter cell can acquire mutations, with the number of mutations being Poisson distributed with mean \u03bc.",
+      "claim_type": "EXPLICIT",
+      "source": "At division both mother and daughter cell can acquire mutations, the number of mutations is Poisson distributed with mean \u03bc.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the mutation model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "fec7cfed-8e35-4947-bd82-41d8b5836460",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C88",
+      "claim": "The spheres representing cells are not allowed to overlap and can push one another out of the way.",
+      "claim_type": "EXPLICIT",
+      "source": "The spheres are not allowed to overlap and can push one another out of the way to achieve this.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the model mechanics.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "3b6bb0c9-aa42-4db9-b9a2-140995bb2d86",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C89",
+      "claim": "The off-lattice approach differs from cellular automaton models where cells occupy discrete lattice sites.",
+      "claim_type": "EXPLICIT",
+      "source": "This off-lattice approach differs from cellular automaton models of tumour growth, where cells occupy discrete lattice sites (Waclaw et al., 2015; Chkhaidze et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct comparison with other modeling approaches.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b59b0e32-f7f0-4851-9979-959f1e45de1b",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C90",
+      "claim": "In off-lattice models, cells can gradually push one another out of the way during growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Specifically, in off-lattice models like the one we use, cells can gradually push one another out of the way during growth, see below.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about model behavior.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "35344981-4841-4b4a-b83f-156e78dcff3a",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C92",
+      "claim": "The division rate b(\u03c1) decreases linearly from b(\u03c1=0)=b_0 to b(\u03c1=\u03c1_c)=0.",
+      "claim_type": "EXPLICIT",
+      "source": "For simplicity, we consider a division rate b(\u03c1) which decreases in a straight line from b(\u03c1=0)=b0 to b(\u03c1=\u03c1c)=0, see Fig. S1.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Direct description of the model with reference to figure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b58ffadc-4514-4b2e-86f6-5b214f12ca07",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C93",
+      "claim": "Setting \u03c1_c=\u221e leads to a constant division rate for all cells, irrespective of their local density, termed volume growth.",
+      "claim_type": "EXPLICIT",
+      "source": "Setting \u03c1c=\u221e leads to a constant division rate for all cells, irrespective of their local density. This growth mode is termed volume growth.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of volume growth in the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "120fcc06-65a2-4187-a8d5-dfafe302c5c1",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C94",
+      "claim": "Lower values of \u03c1_c lead to an increased growth rate in parts of the tumour where the local density of cancer cells is low, enhancing the growth rate at the surface relative to the bulk.",
+      "claim_type": "EXPLICIT",
+      "source": "Lower values of \u03c1c lead to an increased growth rate in parts of the tumour where the local density of cancer cell is low, and hence enhance the growth rate at the surface of the tumour relative to the bulk of the tumour.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of how the model parameter affects growth mode.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "d906e5c5-5ab1-438f-b0be-3ca3c3b5bc86",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C95",
+      "claim": "Surface growth is characterized by a \u03c1_c equal to the density defined by the minimal cell distance.",
+      "claim_type": "EXPLICIT",
+      "source": "Surface growth is characterized by a \u03c1c equal to the density defined by the minimal cell distance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct definition of surface growth in the model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "4272815d-80b1-4268-b44d-1ef0abf52b5c",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C96",
+      "claim": "An infinite-sites model and a constant mutation rate per cell division were used to describe genetic changes in the tumour.",
+      "claim_type": "EXPLICIT",
+      "source": "To describe the genetic changes in the tumour, we use an infinite-sites model and a constant mutation rate per cell division.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct description of the mutation model.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "97fdf714-d8dc-4985-a333-da6f50d2f1f7",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C97",
+      "claim": "Using off-lattice cell-based modelling, population sizes of several ten thousand cells can be simulated.",
+      "claim_type": "EXPLICIT",
+      "source": "Using off-lattice cell-based modelling, population sizes of several ten thousand cells can be simulated, compared to billions of cells with a cellular automaton (Waclaw et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement about computational capabilities.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "9dc31b01-1b93-4700-8325-22ed1ab86688",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "claim_id": "C98",
+      "claim": "Cellular automaton models can simulate billions of cells.",
+      "claim_type": "EXPLICIT",
+      "source": "compared to billions of cells with a cellular automaton (Waclaw et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct comparison citing another modeling approach.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript analyzes two high-resolution spatially-resolved datasets from hepatocellular carcinomas: Ling et al., 2015 (285 samples from a 2D section, 23 whole-exome sequenced) and Li et al., 2022 (169 and 160 samples from two 3D tumors, with subset whole-genome sequenced). The authors reanalyzed the data with their own filtering, identifying 217 mutated loci in Ling et al. and 563/259 mutations in Li et al. T1/T2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C12 provide detailed descriptions of the datasets used, including sample numbers, sequencing methods, and filtering results. These are primarily descriptive claims about data provenance and processing, which are well-documented and internally consistent. The reanalysis is described with reference to methods in appendices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "3e030995-3131-4d12-9ad8-2ed88a6e9956",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Using the distribution of direction angles (angle between tumor center-to-parent and parent-to-offspring vectors), the authors distinguish volume growth (uniform, isotropic division) from surface growth (radially outward division). The empirical data from both Ling et al. and Li et al. show uniform distributions of direction angles, consistent with volume growth and inconsistent with surface growth. This is corroborated by mutation counts as a function of distance from tumor center.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C22 present a novel spatial metric (direction angles) with clear theoretical predictions for each growth mode. The empirical data (Figure 2B) show a flat distribution matching volume growth simulations (Figure 2D) rather than the peaked distribution from surface growth simulations (Figure 2C). The metric is model-independent and the results are consistent across two independent datasets and multiple analytical approaches.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "60ad5513-a8de-4a3b-86a5-23f07d4f0864",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The authors address a discrepancy with Lewinsohn et al., 2023, which found surface growth signals in the same data. The authors show that Lewinsohn et al.'s findings are compatible with volume growth and that their algorithm produces spurious surface growth signals when applied to simulated volume growth data.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C23-C25 critique prior work, but the evidence is relegated to appendices not provided in the main text. Without access to the detailed reanalysis and simulation tests, it's difficult to fully evaluate whether the Lewinsohn et al. algorithm genuinely produces false positives or whether there are legitimate methodological differences. This requires careful examination of the appendix materials.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "c1ba6ab1-89cd-4ca7-a1a1-6fd612a36556",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "The authors define a dispersion parameter \u03c3 that quantifies spatial scattering of mutations. In the Ling et al. data, the average dispersion is ~3.5 (up to 9 for individual mutations). The distribution of \u03c3 values matches volume growth simulations (KS statistic 1.13) better than surface growth simulations (KS statistic 5.74). Similar patterns are found in the Li et al. 3D dataset.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C26-C32 introduce a quantitative metric for spatial dispersion with clear definition (C26). The empirical measurements (C28-C29, Figure 3B) are compared to simulations using Kolmogorov-Smirnov statistics (C30-C31), providing statistical support. The consistency across datasets (C32) strengthens the finding, though the authors note limitations in 3D sampling resolution.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "9c1370d8-12e0-4a58-8b14-ab91638d486e",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors propose that volume growth causes mutation dispersion through a mechanical pushing mechanism: as new cells are born, they displace neighboring cells, causing initially adjacent cells sharing a mutation to be pushed apart. This amplification mechanism generates high dispersion values and explains clonal mixing observed in prior studies. Under surface growth, cells don't push each other apart, leading to lower dispersion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C33-C43 provide a mechanistic explanation for the observed dispersion patterns, linking tissue mechanics (C39, well-established in prior work) to genetic observations (C40-C41, clonal mixing). The mechanism is logically consistent with the off-lattice model used and explains why volume growth produces higher dispersion than surface growth. The argument that selection cannot spuriously create high dispersion (C38) is reasonable but could benefit from more rigorous demonstration.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "d716e57e-d7a4-4bfa-a5ba-e9fbe18335e6",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Cell migration due to volume growth affects multi-region sampling efficiency. About 75% of mutations can be detected with only 5 samples from the 23 whole-exome samples. When removing mutations that migrated from elsewhere (present at higher frequency in other samples), only ~20% of mutations are detected with 5 samples, consistent with the sampling fraction.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C44-C46 demonstrate a practical consequence of cell dispersion for sampling strategies. The analysis (Figure 4A) shows clear differences between detecting all mutations versus only non-migrated mutations. The interpretation that migration increases apparent sampling efficiency is logical and well-supported by the data, providing practical implications for multi-region sequencing studies.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "09e439a1-873b-4b45-9ce2-82bb8fd4e664",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Using clone and clade turnover metrics, the authors infer a high cell death rate (relative death rate 0.975, 90% CI [0.83, 0.995]) nearly balancing the birth rate, and an exome-wide mutation rate of 0.015 per cell division (90% CI [0.002, 0.1]). This indicates the tumor was precariously balanced between growth and extinction during early stages.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C47-C49 present parameter inference with confidence intervals (Figure 4C-D), but the methods rely on analytical relationships derived elsewhere (Angaji et al., 2021) and described in appendices. The very high death rate (97.5% of birth rate) is a striking finding but the wide confidence intervals and reliance on specific model assumptions raise questions about robustness. The biological interpretation (C48) is reasonable given the inferred parameters, but independent validation would strengthen confidence.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "120bf57d-111a-468f-bfa3-bb0837184ab4",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors address a discrepancy with Werner et al., 2020, which found low cell death rates. They argue that widely different death rates can be compatible with the same distribution of pairwise mutational distances, explaining the discrepancy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C51 identify a conflict with prior work but the resolution is relegated to Appendix 6. Without seeing the detailed analysis, it's difficult to evaluate whether the pairwise distance metric is genuinely non-informative about death rates or whether there are other methodological differences. This is an important point that deserves more transparent presentation in the main text.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "374bb0eb-56b0-4bbd-a643-910ed434b835",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The tumor mutation rate was enhanced by a factor of 5 compared to healthy human fibroblasts.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C56 compares tumor mutation rates to normal tissue, but this comparison depends on the effective genome size calculation and the choice of reference normal tissue (fibroblasts vs. hepatocytes). The authors acknowledge uncertainty about this estimate, and the comparison across different cell types and measurement methods introduces additional uncertainty.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mutational signature analysis reveals SBS22 (associated with aristolochic acid exposure) as the dominant signature in all three tumors. In the Ling et al. tumor, SBS22 dominates clonal (early) mutations but is absent in subclonal (late) mutations (p<10^-4), suggesting cessation of exposure. The Li et al. tumors maintain similar signatures over time.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C57-C64 present mutational signature analysis (Figure 5) showing clear temporal heterogeneity in the Ling et al. tumor. The statistical significance (C64, p<10^-4) supports the conclusion that SBS22 cessation is not due to sampling noise. The biological interpretation linking this to discontinued aristolochic acid exposure is reasonable given the patients' location (C60) and the known association of SBS22 with this mutagen (C58). The contrast with Li et al. tumors (C61) provides an internal control.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "7867baf0-1989-44b9-83b0-db0fea99f287",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Using the relationship between mutation frequency and population size at mutation origin (f=1/N under neutral evolution), the authors estimate that detectable mutations arose when tumors were ~80,000 cells (high spatial resolution data) or ~7,000 cells (whole-exome data), defining the temporal window captured by the analysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C65-C68 apply established population genetics theory (C65, citing Durrett 2013) to estimate the temporal scope of the analysis. The logic is sound: lower frequency detection limits allow inference of mutations from earlier (smaller) population sizes. The distinction between different sampling resolutions (C67 vs C68) is appropriate. However, the estimates assume neutral evolution and neglect stochastic fluctuations, as acknowledged.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "366911a9-c734-4904-85ee-9392302afd94",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The main conclusions are: (1) tumors evolved under uniform volume growth without spatial constraints causing radial outward growth, (2) substantial cell turnover with death rate comparable to division rate, (3) early-stage tumors were precariously balanced between growth and extinction, and (4) the analysis captures dynamics up to ~80,000 cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C78 summarize the major findings. The volume growth conclusion (C74) is well-supported by multiple independent lines of evidence (direction angles, dispersion, mutation-distance relationships). The high cell death rate (C75) is supported by the turnover analysis, though with caveats about model assumptions. The biological interpretation about precarious balance (C76-C77) follows logically from the inferred parameters. The temporal scope (C78) is appropriately qualified.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "49ab5e7b-d117-4e3d-9d3d-5233168eab2c",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The authors suggest that future higher-resolution spatial genomics techniques will enable characterization of later-stage evolutionary changes including angiogenesis, microenvironment effects, and genetic instability.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are forward-looking statements about future possibilities. These are reasonable extrapolations given the demonstrated utility of spatial resolution for early-stage inference, but they are speculative by nature. The claims are appropriately framed as future possibilities rather than current findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "260ef118-b8f6-4183-b6fb-9893b57fba90",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The direction angle metric is model-independent, not relying on specific models of cell dynamics, population dynamics, or sampling, and is robust against selected subclones growing isotropically.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C81-C82 describe important properties of the direction angle metric. The model-independence (C81) is valid in that the metric directly measures spatial patterns without assuming specific growth mechanisms. The robustness to selection (C82) is logically argued: isotropic growth of a selected clone would still produce uniform angles. These properties strengthen the reliability of the volume growth conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The authors use an off-lattice cell-based model where cells are spheres that can push each other during growth, with division rates potentially dependent on local cell density. Volume growth (\u03c1c=\u221e) has constant division rates; surface growth has density-dependent rates. The model includes Poisson-distributed mutations and can simulate tens of thousands of cells.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C84-C98 describe the computational model in detail. The off-lattice approach is well-established in tissue mechanics (C84, with appropriate citations). The model components (C85-C88, C92-C96) are clearly defined. The distinction between volume and surface growth modes (C93-C95) is explicit and tunable. The computational limitations (C97-C98) are honestly stated. The model is appropriate for testing the spatial predictions of different growth modes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "32e6682d-afda-4878-9258-797e8480998a",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The authors contextualize their work within prior studies showing that phylogenetic analysis has elucidated metastasis dynamics, multi-region sampling has established intra-tumor heterogeneity and found both neutral evolution and selection, and growth mode affects genetic diversity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C69-C73 provide appropriate context by citing relevant prior work. These are accurate summaries of the literature with proper citations. The claims establish the background for why spatial analysis of growth modes is important and how it relates to existing knowledge about tumor evolution.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "50f3b642-d20d-4069-95cc-552ebc8506f2",
+      "content_id": "3556aee1-d9a2-4e31-b047-7ec444a57bf9",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The honey-comb structure of samples in the Ling et al. data is due to the tumor slice being cut into four quadrants.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C83 explains a technical detail about the spatial arrangement visible in Figure 1A. This is a straightforward descriptive claim about sample collection methodology with appropriate citation to the original study's supplementary materials.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "2aaa888f-d15e-413c-916f-bc6b6a87a845",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors analyzed published datasets from Ling et al. (2015) and Li et al. (2022), describing the sampling methodology, sequencing approaches, and data processing for hepatocellular carcinomas.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All three reviewers explicitly affirm the use of published data and the proposed model. Reviewer 1 states 'the paper uses published data and the proposed model,' Reviewer 2 notes the use of 'real patient data from liver cancer,' and Reviewer 3 confirms 'the paper uses published data.' No concerns were raised about the datasets or their processing.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Analysis of direction angles of mutant clones shows uniform distribution in empirical data from Ling et al. and Li et al., consistent with volume growth rather than surface growth. Simulations confirm that volume growth produces flat distributions while surface growth produces peaked distributions centered at \u03b8=0.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding as a key result. Reviewer 2 states 'tumors don't just spread from their edges as previously believed. Instead, they expand both from within and the edges simultaneously,' and Reviewer 3 notes 'the authors are able to compare the metric of interest (here, the direction angle of a new mutant clone)' with 'a rigorous analysis.' All reviewers describe the results as 'convincing' or 'solid.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "74d8b4bd-d1db-4ac3-94a9-bd2faacd2a15",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The number of mutations as a function of distance from the tumor center in the Ling et al. data is compatible with volume growth, not showing the increase expected under surface growth.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is implicitly accepted as part of the overall volume growth conclusion. Reviewer 3 states 'the authors performed a rigorous analysis' and reviewers collectively affirm the volume growth findings without questioning this specific metric.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "6995830c-51bf-44b2-b8e2-55129b61248c",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The authors reconcile their volume growth findings with Lewinsohn et al. (2023)'s surface growth signal, showing that Lewinsohn's algorithm produces spurious surface growth signals on simulated volume growth data.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this reanalysis. The overall acceptance of the volume growth conclusion and the statement that results are 'convincing' (Reviewer 1) and show 'thorough analysis' (Reviewers 1 and 3) implicitly supports this reconciliation of conflicting prior findings.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "19fae5c1-f974-4baa-9f6d-4e7f2308a093",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The dispersion parameter \u03c3 quantifies spatial scattering of mutations. Empirical data show high dispersion values (average ~3.5, up to 9), which match volume growth simulations (KS=1.13) but not surface growth (KS=5.74).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this analysis. Reviewer 2 highlights 'external forces may play a role in cancer cells dispersion within the tumor' and Reviewer 3 states 'the authors are able to compare the metric of interest...the dispersion of mutants throughout the tumour' with appropriate methodology. The finding is described as part of the 'convincing' and 'solid' results.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Volume growth provides a mechanistic explanation for mutation dispersion through cell displacement and pushing, leading to clonal mixing. This differs from surface growth where cells don't push each other apart.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly notes this mechanism: 'external forces may play a role in cancer cells dispersion within the tumor.' Reviewer 3 affirms 'the particularly nice and tractable cell-based model' enables understanding of these mechanisms. No reviewer challenges the mechanistic interpretation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "a54b545f-e9b6-4723-b800-f9f9e4fdffef",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Cell migration under volume growth causes single samples to capture a larger share of genetic variability than expected from their volume fraction. About 75% of mutations can be detected with only 5 samples, but only ~20% without migrated mutations.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is implicitly accepted as part of the overall analysis. Reviewers describe the work as showing 'thorough analysis' (Reviewers 1 and 3) without raising concerns about this consequence of volume growth and dispersion.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "a5a8a779-b8ae-47fc-b3d4-46660fc4c56c",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Inference from the data reveals high cell death rates (relative death rate 0.975, 90% CI [0.83, 0.995]), indicating the tumor was precariously balanced between growth and extinction in early stages.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly highlights this as a key finding: 'their research hints at an intriguing phenomenon - the high death rate of progenitor cells and extremely slow pace in growth in the initial phase of tumor expansion. Understanding this dynamic could significantly impact our comprehension of cancer development.' This is treated as an important discovery.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "04801b7e-565d-4d1c-91de-5f2f7fddc831",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The inferred exome-wide mutation rate is 0.015 per cell division (90% CI [0.002, 0.1]), representing a 5-fold enhancement compared to healthy human fibroblasts.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept the parameter inference methodology. Reviewer 3 notes 'the authors have also used inference methods to identify model parameters based on the data observed' as part of the rigorous analysis. No concerns are raised about mutation rate estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "50c503ea-a7c7-4d07-bf18-cdc6feac0e9a",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The high death rate finding contrasts with Werner et al. (2020), but the authors show that widely different death rates are compatible with the same distribution of pairwise distances between samples.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This reconciliation is implicitly accepted as reviewers do not challenge the high death rate finding or the explanation for discrepancy with prior work. The overall acceptance of results as 'convincing' supports this interpretation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "83457b5e-d01a-4778-a4d2-02b25365c4b5",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Mutational signature analysis reveals SBS22 (associated with aristolochic acid exposure) dominates clonal mutations in Ling et al. but is absent in subclonal mutations (p<10^-4), suggesting exposure ceased during tumor evolution. Li et al. tumors maintain similar signatures over time.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not question the mutational signature analysis. The finding is accepted as part of the comprehensive analysis that reviewers describe as 'thorough' and 'rigorous.' No concerns are raised about this temporal pattern.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "1c5bce2a-bde1-4e80-a41b-d9ef2628caa0",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Using the relationship between mutation frequency and population size under neutral evolution, the authors estimate that analyzed mutations arose when tumors consisted of ~7,000-80,000 cells, defining the temporal scope of the analysis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept this inference as part of understanding 'the early stages of tumour development' (Reviewers 1 and 3). Reviewer 2 notes the work provides insight into 'the initial phase of tumor expansion,' implicitly accepting the temporal scope estimates.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "e956cd86-e5b2-4a42-9dd5-96e19f7de3e0",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R13",
+      "result_category": "peer",
+      "result": "The main conclusion is that the tumor evolved under uniform volume growth with no evidence of spatial constraints leading to radially outward growth.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm this central finding. Reviewer 1 states 'the results are convincing,' Reviewer 2 describes the finding that 'tumors don't just spread from their edges as previously believed' as 'interesting,' and Reviewer 3 calls the results 'solid' with 'rigorous analysis.' This is the paper's primary conclusion.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "0896d202-7399-42b3-8463-602c4a210651",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R14",
+      "result_category": "peer",
+      "result": "The authors propose that future higher-resolution sequencing techniques will enable characterization of later-stage evolutionary changes like angiogenesis and genetic instability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers implicitly accept these forward-looking statements. Reviewer 2 notes the work 'opens up exciting avenues for comprehending the evolution of cancers,' and Reviewer 3 states it will 'further assist in disease treatment and quantification,' supporting the proposed future directions.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "4029d5e7-2162-49d1-90e3-7b2d7122d118",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R15",
+      "result_category": "peer",
+      "result": "The direction angle distribution is presented as a model-independent metric that is robust against selected subclones.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly praises 'a particularly nice job of the discussion and decision of their \"metrics of interest\"' and notes the metrics were 'chosen in an appropriate manner.' This affirms the methodological choices regarding metric properties.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "1b7dec6b-73cf-49eb-b167-fa913273bab8",
+      "content_id": "c3a04a6f-6f51-4c5e-80ca-52bd7ee0dcb5",
+      "result_id": "R16",
+      "result_category": "peer",
+      "result": "The authors use an off-lattice cell-based model where cells are represented as spheres that can push each other, with division rates dependent on local density to simulate volume vs. surface growth modes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly affirm the modeling approach. Reviewer 3 states 'Due to the particularly nice and tractable cell-based model, the authors are able to perform a thorough analysis' and notes it enables appropriate comparison between growth mechanisms. Reviewer 2 praises the 'blend of computer simulations and real patient data.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "d1458f29-2edf-4d9e-8cf8-b5ea35c82253",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "16e45611-f04d-4d7e-ace1-1c60bea1b95d",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "2a268bb1-b2bf-4d21-b520-ea7778fdd674",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "f54d2785-393a-41d7-855c-56771572442a",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "9aaada28-e4be-4078-8abf-69a784a565ed",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "fb0727cc-e696-4a79-9bf9-ba762cdc27b5",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "75a03c50-4bf7-41a8-8847-6cbac21950dd",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "d6cce312-9e3c-402b-a3a6-bb9e3bcdec87",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "0124bfdc-3aa0-422f-a15a-073e912770ae",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "571b6618-92d4-4c88-8f22-e23156f638fa",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "0128e022-ff88-4fa0-bf75-6b597036571d",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "2a2a15c3-c13a-4247-98d8-09a0b30d809b",
+      "result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2"
+    },
+    {
+      "claim_id": "056fdd6f-43a3-46af-b02f-03f807f8e179",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "b6cc7fe4-af93-4eb5-825e-eb0d9b4a8639",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "91997018-09d5-44e3-998d-23fafb1b178b",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "ecbf1339-a72c-436e-bebf-c9029cfb09a2",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "40ae47dd-9f3a-4afa-92be-def883690df3",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "b3b58fa1-3386-4217-9219-3ddb9e9df9b9",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "ff7945c1-52b3-49d8-b884-62f35baba74d",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "e5cdb7c5-e941-4127-80c4-a0eebd499c54",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "601de99a-8051-4676-95f8-7d5ada5decec",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "5ac75be3-3823-43d7-9b36-8e3431e3c649",
+      "result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956"
+    },
+    {
+      "claim_id": "4b0226cd-9e82-4c63-a90a-4c4b809eb06c",
+      "result_id": "60ad5513-a8de-4a3b-86a5-23f07d4f0864"
+    },
+    {
+      "claim_id": "cf54412d-17ba-4b08-98bb-f1c88553ee1f",
+      "result_id": "60ad5513-a8de-4a3b-86a5-23f07d4f0864"
+    },
+    {
+      "claim_id": "d23b2b67-2797-4fd4-a3da-8bc13325c405",
+      "result_id": "60ad5513-a8de-4a3b-86a5-23f07d4f0864"
+    },
+    {
+      "claim_id": "a4c2369a-8cb4-4324-9f27-cb45042906cb",
+      "result_id": "c1ba6ab1-89cd-4ca7-a1a1-6fd612a36556"
+    },
+    {
+      "claim_id": "9404a986-2839-48a9-932d-488359fc8bad",
+      "result_id": "c1ba6ab1-89cd-4ca7-a1a1-6fd612a36556"
+    },
+    {
+      "claim_id": "7b948ae9-eceb-4b54-9554-a49209ef63d3",
+      "result_id": "c1ba6ab1-89cd-4ca7-a1a1-6fd612a36556"
+    },
+    {
+      "claim_id": "b592b17d-1f6a-4d62-b472-a8cc3bba41f3",
+      "result_id": "c1ba6ab1-89cd-4ca7-a1a1-6fd612a36556"
+    },
+    {
+      "claim_id": "4ed4395d-e7f1-4f87-a5eb-5c864a4f7f10",
+      "result_id": "c1ba6ab1-89cd-4ca7-a1a1-6fd612a36556"
+    },
+    {
+      "claim_id": "63a14af6-2bdd-4e27-9757-4d8dd9adfb79",
+      "result_id": "c1ba6ab1-89cd-4ca7-a1a1-6fd612a36556"
+    },
+    {
+      "claim_id": "00524fa5-1e70-4f56-99ed-0db180f118c6",
+      "result_id": "c1ba6ab1-89cd-4ca7-a1a1-6fd612a36556"
+    },
+    {
+      "claim_id": "a33102f8-8e50-4650-b1db-7d69b049b913",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "3c537f73-9313-4531-9a69-d23b0f5d55f1",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "f2cd5e3d-213e-4530-8839-a61a9c3478a2",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "1bdedb7f-bbff-456c-b62f-1cec97829c73",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "55575742-db3d-43ee-a656-457392c491a0",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "d8cd7a02-7d7b-4346-b4ab-5937b9a69656",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "a2971e33-5ed4-4a7f-b088-445176a59d3a",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "2a542e55-bf4b-407b-a734-07d2fc7bc86c",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "6a5d68b3-772c-402b-849f-59e3d05fcd59",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "b7fc5208-f904-4940-8730-b4d7735fd19f",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "3161e78c-4b69-4fe4-a08c-09dbd08e8635",
+      "result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e"
+    },
+    {
+      "claim_id": "b4508b18-07bd-4f90-aa2f-3d11e6e1f98b",
+      "result_id": "d716e57e-d7a4-4bfa-a5ba-e9fbe18335e6"
+    },
+    {
+      "claim_id": "26c1990d-f850-4783-ba13-6015aefc3666",
+      "result_id": "d716e57e-d7a4-4bfa-a5ba-e9fbe18335e6"
+    },
+    {
+      "claim_id": "ad41cbf6-a098-42f0-a276-c778fa549d7a",
+      "result_id": "d716e57e-d7a4-4bfa-a5ba-e9fbe18335e6"
+    },
+    {
+      "claim_id": "a3d0321c-0638-44f2-b646-3435a387e050",
+      "result_id": "09e439a1-873b-4b45-9ce2-82bb8fd4e664"
+    },
+    {
+      "claim_id": "8137c1be-a7c7-4b94-a153-d05fa652c5a8",
+      "result_id": "09e439a1-873b-4b45-9ce2-82bb8fd4e664"
+    },
+    {
+      "claim_id": "1b6d0012-effd-43ed-add1-f5c6cded6952",
+      "result_id": "09e439a1-873b-4b45-9ce2-82bb8fd4e664"
+    },
+    {
+      "claim_id": "c75201af-091c-4a30-a043-0c1dc237eb71",
+      "result_id": "120bf57d-111a-468f-bfa3-bb0837184ab4"
+    },
+    {
+      "claim_id": "f3e557ce-9bea-42de-a64b-edea39688041",
+      "result_id": "120bf57d-111a-468f-bfa3-bb0837184ab4"
+    },
+    {
+      "claim_id": "e757f0cd-4490-45f2-80bf-28ccc2d51933",
+      "result_id": "374bb0eb-56b0-4bbd-a643-910ed434b835"
+    },
+    {
+      "claim_id": "bd64b05f-57c9-414c-ad34-cf8fd253507e",
+      "result_id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043"
+    },
+    {
+      "claim_id": "1e762315-ea6a-4ad6-a050-ca94c4e33286",
+      "result_id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043"
+    },
+    {
+      "claim_id": "265cdd12-07d3-426e-bb34-49653a3b2848",
+      "result_id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043"
+    },
+    {
+      "claim_id": "4712e99c-e1b6-4cec-9254-dfafa5eb86e2",
+      "result_id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043"
+    },
+    {
+      "claim_id": "36214f9f-d092-4023-a985-e87e401fbf87",
+      "result_id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043"
+    },
+    {
+      "claim_id": "eb0ac56a-26da-42e6-b01e-afbbcbf7923e",
+      "result_id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043"
+    },
+    {
+      "claim_id": "30428199-9390-44f0-8524-97fbcc6930e8",
+      "result_id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043"
+    },
+    {
+      "claim_id": "b8ec3157-9a36-43bf-a3a5-92a6f88eb7cb",
+      "result_id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043"
+    },
+    {
+      "claim_id": "efa011c5-c72b-4dfd-a442-59fc5597a386",
+      "result_id": "7867baf0-1989-44b9-83b0-db0fea99f287"
+    },
+    {
+      "claim_id": "41bc9489-546b-44cc-989f-d660cb5c670c",
+      "result_id": "7867baf0-1989-44b9-83b0-db0fea99f287"
+    },
+    {
+      "claim_id": "1f826183-2139-4495-924e-8159a502a71f",
+      "result_id": "7867baf0-1989-44b9-83b0-db0fea99f287"
+    },
+    {
+      "claim_id": "71ca6d5b-2026-495d-a96c-a52022723ced",
+      "result_id": "7867baf0-1989-44b9-83b0-db0fea99f287"
+    },
+    {
+      "claim_id": "b90a3ef9-e9f7-43af-aaf4-5d73b8f3bbca",
+      "result_id": "366911a9-c734-4904-85ee-9392302afd94"
+    },
+    {
+      "claim_id": "c1dbf025-88c9-4b3f-8c35-a519485171e7",
+      "result_id": "366911a9-c734-4904-85ee-9392302afd94"
+    },
+    {
+      "claim_id": "b48bae57-d8fb-4497-8289-163490fca255",
+      "result_id": "366911a9-c734-4904-85ee-9392302afd94"
+    },
+    {
+      "claim_id": "6e16d660-3e99-43f5-b374-d9a03a18a327",
+      "result_id": "366911a9-c734-4904-85ee-9392302afd94"
+    },
+    {
+      "claim_id": "d58be6aa-528c-4c26-8d9e-c475793b5c06",
+      "result_id": "366911a9-c734-4904-85ee-9392302afd94"
+    },
+    {
+      "claim_id": "693325c8-9160-48ae-9912-a4f0800d6fe0",
+      "result_id": "49ab5e7b-d117-4e3d-9d3d-5233168eab2c"
+    },
+    {
+      "claim_id": "076a38df-95d3-4a25-b495-0e50e91a0cd1",
+      "result_id": "49ab5e7b-d117-4e3d-9d3d-5233168eab2c"
+    },
+    {
+      "claim_id": "f796ee6d-e6ab-4829-83f3-44228e344e96",
+      "result_id": "260ef118-b8f6-4183-b6fb-9893b57fba90"
+    },
+    {
+      "claim_id": "1470c1ce-2df9-43d8-80ea-53ae367a25f0",
+      "result_id": "260ef118-b8f6-4183-b6fb-9893b57fba90"
+    },
+    {
+      "claim_id": "b42367fd-ad11-4030-823c-78954c93fb0f",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "940530bc-7248-4b2b-955d-e96e86a1b0e8",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "278eb031-ace9-4c13-8aaa-78a6d620af41",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "a3763d7e-b1dc-49e7-8e67-aaa33032c6d0",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "fec7cfed-8e35-4947-bd82-41d8b5836460",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "3b6bb0c9-aa42-4db9-b9a2-140995bb2d86",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "b59b0e32-f7f0-4851-9979-959f1e45de1b",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "35344981-4841-4b4a-b83f-156e78dcff3a",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "b58ffadc-4514-4b2e-86f6-5b214f12ca07",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "120fcc06-65a2-4187-a8d5-dfafe302c5c1",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "d906e5c5-5ab1-438f-b0be-3ca3c3b5bc86",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "4272815d-80b1-4268-b44d-1ef0abf52b5c",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "97fdf714-d8dc-4985-a333-da6f50d2f1f7",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "9dc31b01-1b93-4700-8325-22ed1ab86688",
+      "result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11"
+    },
+    {
+      "claim_id": "79c87fc1-0b61-460d-9002-bb05251bdf06",
+      "result_id": "32e6682d-afda-4878-9258-797e8480998a"
+    },
+    {
+      "claim_id": "acfa1d83-0be5-40c7-8b2e-719b70370ae6",
+      "result_id": "32e6682d-afda-4878-9258-797e8480998a"
+    },
+    {
+      "claim_id": "b495412e-9853-4a78-9c33-0b09eb566db6",
+      "result_id": "32e6682d-afda-4878-9258-797e8480998a"
+    },
+    {
+      "claim_id": "13d2e9d8-4d74-4320-a43a-3f8ccef2f1e1",
+      "result_id": "32e6682d-afda-4878-9258-797e8480998a"
+    },
+    {
+      "claim_id": "cb38cafb-423c-4237-b003-85b0292f12fa",
+      "result_id": "32e6682d-afda-4878-9258-797e8480998a"
+    },
+    {
+      "claim_id": "6abfe6bb-200c-4620-8668-c3fc26a50146",
+      "result_id": "50f3b642-d20d-4069-95cc-552ebc8506f2"
+    },
+    {
+      "claim_id": "d1458f29-2edf-4d9e-8cf8-b5ea35c82253",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "16e45611-f04d-4d7e-ace1-1c60bea1b95d",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "2a268bb1-b2bf-4d21-b520-ea7778fdd674",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "f54d2785-393a-41d7-855c-56771572442a",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "9aaada28-e4be-4078-8abf-69a784a565ed",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "fb0727cc-e696-4a79-9bf9-ba762cdc27b5",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "75a03c50-4bf7-41a8-8847-6cbac21950dd",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "d6cce312-9e3c-402b-a3a6-bb9e3bcdec87",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "0124bfdc-3aa0-422f-a15a-073e912770ae",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "571b6618-92d4-4c88-8f22-e23156f638fa",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "0128e022-ff88-4fa0-bf75-6b597036571d",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "2a2a15c3-c13a-4247-98d8-09a0b30d809b",
+      "result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845"
+    },
+    {
+      "claim_id": "056fdd6f-43a3-46af-b02f-03f807f8e179",
+      "result_id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf"
+    },
+    {
+      "claim_id": "b6cc7fe4-af93-4eb5-825e-eb0d9b4a8639",
+      "result_id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf"
+    },
+    {
+      "claim_id": "91997018-09d5-44e3-998d-23fafb1b178b",
+      "result_id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf"
+    },
+    {
+      "claim_id": "ecbf1339-a72c-436e-bebf-c9029cfb09a2",
+      "result_id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf"
+    },
+    {
+      "claim_id": "40ae47dd-9f3a-4afa-92be-def883690df3",
+      "result_id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf"
+    },
+    {
+      "claim_id": "b3b58fa1-3386-4217-9219-3ddb9e9df9b9",
+      "result_id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf"
+    },
+    {
+      "claim_id": "601de99a-8051-4676-95f8-7d5ada5decec",
+      "result_id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf"
+    },
+    {
+      "claim_id": "5ac75be3-3823-43d7-9b36-8e3431e3c649",
+      "result_id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf"
+    },
+    {
+      "claim_id": "ff7945c1-52b3-49d8-b884-62f35baba74d",
+      "result_id": "74d8b4bd-d1db-4ac3-94a9-bd2faacd2a15"
+    },
+    {
+      "claim_id": "e5cdb7c5-e941-4127-80c4-a0eebd499c54",
+      "result_id": "74d8b4bd-d1db-4ac3-94a9-bd2faacd2a15"
+    },
+    {
+      "claim_id": "4b0226cd-9e82-4c63-a90a-4c4b809eb06c",
+      "result_id": "6995830c-51bf-44b2-b8e2-55129b61248c"
+    },
+    {
+      "claim_id": "cf54412d-17ba-4b08-98bb-f1c88553ee1f",
+      "result_id": "6995830c-51bf-44b2-b8e2-55129b61248c"
+    },
+    {
+      "claim_id": "d23b2b67-2797-4fd4-a3da-8bc13325c405",
+      "result_id": "6995830c-51bf-44b2-b8e2-55129b61248c"
+    },
+    {
+      "claim_id": "a4c2369a-8cb4-4324-9f27-cb45042906cb",
+      "result_id": "19fae5c1-f974-4baa-9f6d-4e7f2308a093"
+    },
+    {
+      "claim_id": "9404a986-2839-48a9-932d-488359fc8bad",
+      "result_id": "19fae5c1-f974-4baa-9f6d-4e7f2308a093"
+    },
+    {
+      "claim_id": "7b948ae9-eceb-4b54-9554-a49209ef63d3",
+      "result_id": "19fae5c1-f974-4baa-9f6d-4e7f2308a093"
+    },
+    {
+      "claim_id": "b592b17d-1f6a-4d62-b472-a8cc3bba41f3",
+      "result_id": "19fae5c1-f974-4baa-9f6d-4e7f2308a093"
+    },
+    {
+      "claim_id": "4ed4395d-e7f1-4f87-a5eb-5c864a4f7f10",
+      "result_id": "19fae5c1-f974-4baa-9f6d-4e7f2308a093"
+    },
+    {
+      "claim_id": "63a14af6-2bdd-4e27-9757-4d8dd9adfb79",
+      "result_id": "19fae5c1-f974-4baa-9f6d-4e7f2308a093"
+    },
+    {
+      "claim_id": "00524fa5-1e70-4f56-99ed-0db180f118c6",
+      "result_id": "19fae5c1-f974-4baa-9f6d-4e7f2308a093"
+    },
+    {
+      "claim_id": "a33102f8-8e50-4650-b1db-7d69b049b913",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "3c537f73-9313-4531-9a69-d23b0f5d55f1",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "f2cd5e3d-213e-4530-8839-a61a9c3478a2",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "1bdedb7f-bbff-456c-b62f-1cec97829c73",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "55575742-db3d-43ee-a656-457392c491a0",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "d8cd7a02-7d7b-4346-b4ab-5937b9a69656",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "a2971e33-5ed4-4a7f-b088-445176a59d3a",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "2a542e55-bf4b-407b-a734-07d2fc7bc86c",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "6a5d68b3-772c-402b-849f-59e3d05fcd59",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "b7fc5208-f904-4940-8730-b4d7735fd19f",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "3161e78c-4b69-4fe4-a08c-09dbd08e8635",
+      "result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f"
+    },
+    {
+      "claim_id": "b4508b18-07bd-4f90-aa2f-3d11e6e1f98b",
+      "result_id": "a54b545f-e9b6-4723-b800-f9f9e4fdffef"
+    },
+    {
+      "claim_id": "26c1990d-f850-4783-ba13-6015aefc3666",
+      "result_id": "a54b545f-e9b6-4723-b800-f9f9e4fdffef"
+    },
+    {
+      "claim_id": "ad41cbf6-a098-42f0-a276-c778fa549d7a",
+      "result_id": "a54b545f-e9b6-4723-b800-f9f9e4fdffef"
+    },
+    {
+      "claim_id": "a3d0321c-0638-44f2-b646-3435a387e050",
+      "result_id": "a5a8a779-b8ae-47fc-b3d4-46660fc4c56c"
+    },
+    {
+      "claim_id": "8137c1be-a7c7-4b94-a153-d05fa652c5a8",
+      "result_id": "a5a8a779-b8ae-47fc-b3d4-46660fc4c56c"
+    },
+    {
+      "claim_id": "c1dbf025-88c9-4b3f-8c35-a519485171e7",
+      "result_id": "a5a8a779-b8ae-47fc-b3d4-46660fc4c56c"
+    },
+    {
+      "claim_id": "b48bae57-d8fb-4497-8289-163490fca255",
+      "result_id": "a5a8a779-b8ae-47fc-b3d4-46660fc4c56c"
+    },
+    {
+      "claim_id": "6e16d660-3e99-43f5-b374-d9a03a18a327",
+      "result_id": "a5a8a779-b8ae-47fc-b3d4-46660fc4c56c"
+    },
+    {
+      "claim_id": "1b6d0012-effd-43ed-add1-f5c6cded6952",
+      "result_id": "04801b7e-565d-4d1c-91de-5f2f7fddc831"
+    },
+    {
+      "claim_id": "e757f0cd-4490-45f2-80bf-28ccc2d51933",
+      "result_id": "04801b7e-565d-4d1c-91de-5f2f7fddc831"
+    },
+    {
+      "claim_id": "c75201af-091c-4a30-a043-0c1dc237eb71",
+      "result_id": "50c503ea-a7c7-4d07-bf18-cdc6feac0e9a"
+    },
+    {
+      "claim_id": "f3e557ce-9bea-42de-a64b-edea39688041",
+      "result_id": "50c503ea-a7c7-4d07-bf18-cdc6feac0e9a"
+    },
+    {
+      "claim_id": "bd64b05f-57c9-414c-ad34-cf8fd253507e",
+      "result_id": "83457b5e-d01a-4778-a4d2-02b25365c4b5"
+    },
+    {
+      "claim_id": "1e762315-ea6a-4ad6-a050-ca94c4e33286",
+      "result_id": "83457b5e-d01a-4778-a4d2-02b25365c4b5"
+    },
+    {
+      "claim_id": "265cdd12-07d3-426e-bb34-49653a3b2848",
+      "result_id": "83457b5e-d01a-4778-a4d2-02b25365c4b5"
+    },
+    {
+      "claim_id": "4712e99c-e1b6-4cec-9254-dfafa5eb86e2",
+      "result_id": "83457b5e-d01a-4778-a4d2-02b25365c4b5"
+    },
+    {
+      "claim_id": "36214f9f-d092-4023-a985-e87e401fbf87",
+      "result_id": "83457b5e-d01a-4778-a4d2-02b25365c4b5"
+    },
+    {
+      "claim_id": "eb0ac56a-26da-42e6-b01e-afbbcbf7923e",
+      "result_id": "83457b5e-d01a-4778-a4d2-02b25365c4b5"
+    },
+    {
+      "claim_id": "30428199-9390-44f0-8524-97fbcc6930e8",
+      "result_id": "83457b5e-d01a-4778-a4d2-02b25365c4b5"
+    },
+    {
+      "claim_id": "b8ec3157-9a36-43bf-a3a5-92a6f88eb7cb",
+      "result_id": "83457b5e-d01a-4778-a4d2-02b25365c4b5"
+    },
+    {
+      "claim_id": "efa011c5-c72b-4dfd-a442-59fc5597a386",
+      "result_id": "1c5bce2a-bde1-4e80-a41b-d9ef2628caa0"
+    },
+    {
+      "claim_id": "41bc9489-546b-44cc-989f-d660cb5c670c",
+      "result_id": "1c5bce2a-bde1-4e80-a41b-d9ef2628caa0"
+    },
+    {
+      "claim_id": "1f826183-2139-4495-924e-8159a502a71f",
+      "result_id": "1c5bce2a-bde1-4e80-a41b-d9ef2628caa0"
+    },
+    {
+      "claim_id": "71ca6d5b-2026-495d-a96c-a52022723ced",
+      "result_id": "1c5bce2a-bde1-4e80-a41b-d9ef2628caa0"
+    },
+    {
+      "claim_id": "d58be6aa-528c-4c26-8d9e-c475793b5c06",
+      "result_id": "1c5bce2a-bde1-4e80-a41b-d9ef2628caa0"
+    },
+    {
+      "claim_id": "b90a3ef9-e9f7-43af-aaf4-5d73b8f3bbca",
+      "result_id": "e956cd86-e5b2-4a42-9dd5-96e19f7de3e0"
+    },
+    {
+      "claim_id": "693325c8-9160-48ae-9912-a4f0800d6fe0",
+      "result_id": "0896d202-7399-42b3-8463-602c4a210651"
+    },
+    {
+      "claim_id": "076a38df-95d3-4a25-b495-0e50e91a0cd1",
+      "result_id": "0896d202-7399-42b3-8463-602c4a210651"
+    },
+    {
+      "claim_id": "f796ee6d-e6ab-4829-83f3-44228e344e96",
+      "result_id": "4029d5e7-2162-49d1-90e3-7b2d7122d118"
+    },
+    {
+      "claim_id": "1470c1ce-2df9-43d8-80ea-53ae367a25f0",
+      "result_id": "4029d5e7-2162-49d1-90e3-7b2d7122d118"
+    },
+    {
+      "claim_id": "b42367fd-ad11-4030-823c-78954c93fb0f",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "940530bc-7248-4b2b-955d-e96e86a1b0e8",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "278eb031-ace9-4c13-8aaa-78a6d620af41",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "a3763d7e-b1dc-49e7-8e67-aaa33032c6d0",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "fec7cfed-8e35-4947-bd82-41d8b5836460",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "3b6bb0c9-aa42-4db9-b9a2-140995bb2d86",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "b59b0e32-f7f0-4851-9979-959f1e45de1b",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "35344981-4841-4b4a-b83f-156e78dcff3a",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "b58ffadc-4514-4b2e-86f6-5b214f12ca07",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "120fcc06-65a2-4187-a8d5-dfafe302c5c1",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "d906e5c5-5ab1-438f-b0be-3ca3c3b5bc86",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "4272815d-80b1-4268-b44d-1ef0abf52b5c",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "97fdf714-d8dc-4985-a333-da6f50d2f1f7",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    },
+    {
+      "claim_id": "9dc31b01-1b93-4700-8325-22ed1ab86688",
+      "result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "87f86914-a26c-469e-a942-46793ad9a525",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "cf1eaafd-fe8a-4be7-9a21-8a924633d9d2",
+      "peer_result_id": "2aaa888f-d15e-413c-916f-bc6b6a87a845",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on dataset claims (C1-C12). Both OpenEval and peer reviewers find the data provenance and processing well-documented and supported. All three peer reviewers explicitly affirm the use of published data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "a1990746-5c35-41a5-9aec-fa44a06c27e9",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956",
+      "peer_result_id": "9ecb6a8a-23f3-4a0f-8e0a-dff0e5a817bf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on direction angle metric and volume growth findings (C13-C18, C21-C22). Both evaluations find the results convincing and well-supported. OpenEval emphasizes model-independence and consistency across datasets; peer reviewers describe findings as 'rigorous' and 'solid.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b06913a8-6ff7-4c50-88a0-e963db03fc50",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "3e030995-3131-4d12-9ad8-2ed88a6e9956",
+      "peer_result_id": "74d8b4bd-d1db-4ac3-94a9-bd2faacd2a15",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C19-C20 (simulation comparisons). OpenEval includes these in the direction angle analysis (R2) while peer reviewers implicitly accept them as part of the overall volume growth conclusion without specific comment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "21d93698-5485-4f91-a421-3a19ee9b5c3b",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "60ad5513-a8de-4a3b-86a5-23f07d4f0864",
+      "peer_result_id": "6995830c-51bf-44b2-b8e2-55129b61248c",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on reanalysis of prior work (C23-C25), but with different confidence levels. OpenEval rates as UNCERTAIN due to reliance on appendix materials not fully accessible, while peer reviewers accept the reconciliation as SUPPORTED without raising concerns about the reanalysis methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "ec9d6efe-16ce-4d0c-bf54-4b455aaaa3ac",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "c1ba6ab1-89cd-4ca7-a1a1-6fd612a36556",
+      "peer_result_id": "19fae5c1-f974-4baa-9f6d-4e7f2308a093",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on spatial dispersion metric (C26-C32). Both evaluations find the quantitative analysis well-supported with appropriate statistical methods. Peer reviewers explicitly affirm the dispersion findings as 'convincing.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "7669d962-3790-4bbe-889c-bec11728786a",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "9c1370d8-12e0-4a58-8b14-ab91638d486e",
+      "peer_result_id": "b9958eb4-63fc-4b9c-87cc-b4382b19e32f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on mechanistic explanation (C33-C43). Both evaluations support the link between tissue mechanics and observed dispersion patterns. Peer Reviewer 2 explicitly highlights the role of external forces; OpenEval notes the argument is reasonable but could benefit from more rigorous demonstration.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "5af6fb4e-f568-4014-80cb-8c00ef6514c3",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "d716e57e-d7a4-4bfa-a5ba-e9fbe18335e6",
+      "peer_result_id": "a54b545f-e9b6-4723-b800-f9f9e4fdffef",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on sampling strategy implications (C44-C46). Both evaluations accept this as a logical consequence of volume growth and dispersion. Peer reviewers implicitly accept as part of 'thorough analysis' without specific comment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "80fa7ca5-aee8-42f6-8ea2-214a8c0ca75e",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "09e439a1-873b-4b45-9ce2-82bb8fd4e664",
+      "peer_result_id": "a5a8a779-b8ae-47fc-b3d4-46660fc4c56c",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on parameter inference (C47-C48). OpenEval rates as UNCERTAIN due to wide confidence intervals and model assumptions, while peer reviewers find it SUPPORTED and highlight the high death rate as an 'intriguing phenomenon' with significant impact.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "f0e47c2e-c259-4a43-a2c9-7cde2742cd5b",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "09e439a1-873b-4b45-9ce2-82bb8fd4e664",
+      "peer_result_id": "04801b7e-565d-4d1c-91de-5f2f7fddc831",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on claim C49 (confidence intervals). OpenEval expresses uncertainty about parameter robustness, while peer reviewers accept the inference methodology as rigorous without raising concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "c8dd91b2-b70f-4d51-b625-6ae62ffe3d3e",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "120bf57d-111a-468f-bfa3-bb0837184ab4",
+      "peer_result_id": "50c503ea-a7c7-4d07-bf18-cdc6feac0e9a",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on reconciliation with prior work (C50-C51), but different confidence levels. OpenEval rates as UNCERTAIN wanting more transparent presentation in main text, while peer reviewers implicitly accept the explanation as part of overall 'convincing' results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "4099009c-1a28-4278-a36a-7282ce4add72",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "374bb0eb-56b0-4bbd-a643-910ed434b835",
+      "peer_result_id": "04801b7e-565d-4d1c-91de-5f2f7fddc831",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Overlap on mutation rate comparison (C56). OpenEval rates as UNCERTAIN due to calculation dependencies and cross-tissue comparisons, while peer reviewers accept without raising specific concerns about this estimate.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "616b97c2-caf2-40be-be89-e4bb17d71ee8",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "ded815ba-2db9-4ce8-a7cd-0e3d2fa52043",
+      "peer_result_id": "83457b5e-d01a-4778-a4d2-02b25365c4b5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on mutational signature analysis (C57-C64). Both evaluations find the temporal heterogeneity analysis well-supported with appropriate statistical significance. Peer reviewers accept as part of 'thorough' and 'rigorous' analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "3c2ac4d9-63f6-425c-9a1b-76b76e47297b",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "7867baf0-1989-44b9-83b0-db0fea99f287",
+      "peer_result_id": "1c5bce2a-bde1-4e80-a41b-d9ef2628caa0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on temporal scope inference (C65-C68, C78). Both evaluations accept the population genetics approach for estimating early tumor development timeframes. Peer reviewers explicitly note insights into 'initial phase of tumor expansion.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "a48c0f82-324d-4f1e-9508-d563b82c0424",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "366911a9-c734-4904-85ee-9392302afd94",
+      "peer_result_id": "e956cd86-e5b2-4a42-9dd5-96e19f7de3e0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on volume growth conclusion (C74). Both strongly support this central finding. OpenEval emphasizes multiple independent lines of evidence; peer reviewers describe as 'convincing' and 'solid' with all three reviewers explicitly affirming.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "4007dc1c-14e3-4e5a-b07f-c88a4b69c651",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "366911a9-c734-4904-85ee-9392302afd94",
+      "peer_result_id": "a5a8a779-b8ae-47fc-b3d4-46660fc4c56c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on high death rate and biological interpretation (C75-C77). OpenEval supports with caveats about model assumptions; peer Reviewer 2 highlights as key finding with significant impact on understanding cancer development.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "b376b0d4-f985-406b-9759-f9e8f1aa2c43",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "49ab5e7b-d117-4e3d-9d3d-5233168eab2c",
+      "peer_result_id": "0896d202-7399-42b3-8463-602c4a210651",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on forward-looking statements (C79-C80). Both evaluations accept these as reasonable extrapolations. OpenEval notes they are appropriately framed as speculative; peer reviewers see them as opening 'exciting avenues' for future research.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "6ea18119-e093-4c6d-9e8e-8b179aef5356",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "260ef118-b8f6-4183-b6fb-9893b57fba90",
+      "peer_result_id": "4029d5e7-2162-49d1-90e3-7b2d7122d118",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on metric properties (C81-C82). Both evaluations affirm the model-independence and robustness to selection. Peer Reviewer 3 explicitly praises the 'metrics of interest' as 'chosen in an appropriate manner.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "e4a791e8-17c2-44f6-ba9c-64fd61a3e4ec",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "cfd3ea84-c926-4ba7-ad3c-4b6e66d0cb11",
+      "peer_result_id": "1b7dec6b-73cf-49eb-b167-fa913273bab8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on computational model (C84-C98). Both evaluations strongly support the off-lattice modeling approach. OpenEval finds it appropriate for testing spatial predictions; peer reviewers praise the 'particularly nice and tractable cell-based model' enabling thorough analysis.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "74854225-8bd5-45fb-a15a-d042d5be1699",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "32e6682d-afda-4878-9258-797e8480998a",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval provides evaluation of literature context claims (C69-C73) as SUPPORTED, noting accurate summaries with proper citations. No corresponding specific peer review evaluation found for these background/context claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    },
+    {
+      "id": "7504b574-ad72-4710-8a19-f061e9e81f33",
+      "submission_id": "0b208a6e-1ddf-47d9-b386-19e8d1e3d5f8",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "50f3b642-d20d-4069-95cc-552ebc8506f2",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates technical detail about spatial arrangement (C83) as SUPPORTED. No corresponding specific peer review evaluation found for this methodological detail claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T21:45:14.872739Z"
+    }
+  ]
+}

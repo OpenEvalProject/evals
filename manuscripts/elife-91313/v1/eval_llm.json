@@ -1,0 +1,271 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The manuscript provides background on pediatric diffuse midline gliomas (pDMG), describing their fatal prognosis, epigenetic basis (H3K27M mutations), and the role of ACVR1 mutations in activating BMP signaling in a subset of tumors. These claims establish the clinical and molecular context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C21 are well-supported by established knowledge and citations to prior literature. They accurately describe the clinical characteristics, epigenetic landscape, and known genetic alterations in pDMG, providing essential background for the study's rationale.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The authors demonstrate that BMP pathway activation is similar between ACVR1 wild-type and mutant pDMG tumors using transcriptomic analysis of patient cohorts. PCA, hierarchical clustering, and PROGENy scoring show no segregation by ACVR1 status, and BMP2/BMP7 are identified as highly expressed ligands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C23-C29 are supported by comprehensive transcriptomic analyses across two independent patient cohorts (Figures 1A-E). The use of multiple analytical approaches (PCA, clustering, PROGENy) strengthens the conclusion that BMP pathway activation is independent of ACVR1 mutation status.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors analyze developmental expression patterns of BMP ligands using public datasets, showing that BMP7 expression peaks during the mid-childhood period in midline brain structures, coinciding with the temporal window of pDMG occurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 are supported by analysis of developmental brain atlases (ALLEN, HBT) shown in Figures 1F-G. The temporal correlation between BMP7 expression and pDMG incidence is compelling, though the mechanistic link remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In isogenic glioma cell lines, H3.3K27M expression decreases BMP7 and increases BMP2 expression. BMP7 treatment potentiates BMP target gene expression in H3.3K27M cells compared to wild-type, while SMAD1/5/8 phosphorylation kinetics remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C39 are supported by qRT-PCR, RNA-seq, and western blot data from engineered cell lines (Figures 2A-B, Figure 2\u2014figure supplement 1A-D). The observation that canonical pathway activation (SMAD phosphorylation) is unchanged while downstream responses differ is intriguing and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "BMP7 treatment induces a quiescent cell state specifically in H3.3K27M cells, characterized by G0/G1 arrest, downregulation of E2F targets, increased CDKN1A expression, decreased RB1 phosphorylation, and reduced cell numbers, without inducing senescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C47 are well-supported by RNA-seq, flow cytometry, cell counting, and senescence assays (Figures 2C-H, Figure 2\u2014figure supplement 1E-I). The multi-modal evidence for BMP7-induced quiescence in the K27M context is convincing, with appropriate controls and quantification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "BMP7 synergizes with H3.3K27M to induce expression of invasion/migration-related genes and dramatically enhances invasive capacity (5.6-fold in K27M vs 2-fold in WT) in transwell assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 are supported by RNA-seq enrichment analysis and invasion assays (Figures 2I-K). The decision tree algorithm to identify K27M/BMP7 synergistic genes is methodologically sound, and the invasion data provide functional validation of the transcriptomic changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "In patient-derived DIPG cell lines, BMP7 is highly expressed while BMP2 is low but inducible by stress (hypoxia, ONC201). BMP2 treatment decreases proliferation (Ki67) and growth in a K27M-dependent manner, while BMP inhibition has opposite effects. Combined K27M knockout and BMP inhibition prevents gliosphere formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C61 are supported by qRT-PCR, western blot, growth monitoring, and immunohistochemistry data from DIPG spheroids (Figures 3A-C, Figure 3\u2014figure supplement 1A-D). The K27M-dependency experiments using CRISPR-edited lines strengthen the conclusions about the epigenetic context requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "BMP2 increases migration from DIPG spheroids while BMP inhibitor LDN-193189 decreases it, demonstrating opposing effects on invasive behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 are supported by Matrigel invasion assays (Figures 3D, Figure 3\u2014figure supplement 1E). The bidirectional manipulation (BMP2 vs LDN) provides strong evidence for BMP pathway involvement in invasion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Single-cell RNA-seq analysis of patient tumors reveals that BMP-responsive cells (high TGF-\u03b2/BMP PROGENy score) correlate with BMP receptor expression and are enriched for migration/adhesion genes while showing decreased transcription/translation genes consistent with quiescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by scRNA-seq analysis of 10 patient samples (Figures 3E-G, Figure 3\u2014figure supplement 1F-G). The correlation between BMP responsiveness and invasive/quiescent signatures across multiple patients strengthens the clinical relevance of the cell line findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Spatial transcriptomics of pDMG tumors shows BMP2/BMP7 are highly expressed, BMP receptor expression correlates with invasive niche scores, and the BMP-responsive invasive niche is characterized by markers of BMP activity (ID1), stemness (CD44, HEY1), and invasion (TNC, IGFBP7, ITGAV).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C70 are supported by spatial transcriptomic analysis of 3 pDMG tumors (Figures 3I-K, Figure 3\u2014figure supplement 1H-I). The spatial resolution provides critical validation that the BMP-responsive invasive phenotype exists in actual tumor tissue, not just cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors conclude that tumor-autonomous BMP2/BMP7 production synergizes to maintain a quiescent-invasive niche in H3.3K27M DIPG, that BMP7 is sufficient to induce this phenotype in the K27M context, and that the BMP pathway has a generic oncogenic role in pDMG.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C73 represent integrative conclusions supported by the convergence of evidence from transcriptomic analyses, cell line experiments, and spatial profiling. The multi-level validation across different experimental systems provides strong support for these summary statements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The authors propose a mechanistic model where BMP pathway activation in ACVR1 WT tumors involves both microenvironment-derived BMP7 and tumor-autonomous BMP2/7 production maintained by positive feedback loops, with BMP2 dynamically regulated by stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C74-C79 are mechanistic hypotheses that integrate the study's findings with prior knowledge. While the model is plausible and supported by the data, key aspects (e.g., the positive feedback loop, microenvironment priming) remain inferential and would require additional experiments to definitively establish causality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors cite prior work showing BMP target genes decrease when K27M is removed, and demonstrate that combining K27M knockout with BMP inhibition induces cell death, supporting the importance of K27M/BMP synergy for oncogenic potential.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C83 are supported by citation to prior work (C80) and experimental data (C82, Figure 3\u2014figure supplement 1D). The synthetic lethality observed with combined K27M loss and BMP inhibition provides strong functional evidence for the importance of this interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "The authors confirm BMP7 induces quiescence in K27M cells via E2F target downregulation, but propose this quiescent state may paradoxically represent an aggressive, treatment-resistant phenotype similar to observations in adult glioblastoma.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is well-supported by the study's data. Claim C85 is a reasonable hypothesis supported by citations to prior work in adult glioblastoma, though direct evidence for treatment resistance in this pDMG context is not provided in the current study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C22",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The authors discuss conflicting reports about BMP's role in pDMG, noting that CHRDL1 (overexpressed in ACVR1 WT tumors) may not be a simple BMP antagonist, and that different BMP ligands (BMP4 vs BMP2/7) may have different effects on tumor phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C86-C89 appropriately acknowledge complexity and conflicting prior reports. The discussion of CHRDL1's ambiguous role and ligand-specific effects is well-supported by citations and helps contextualize the study's focus on BMP2/7.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The authors discuss that BMP2/7 heterodimers may be particularly effective, that BMP pathway activation may be finely tuned to avoid tumor-suppressive effects, that the quiescent-invasive phenotype fits with prior glioma studies, and recommend targeting downstream effectors like ID1 or TNC rather than the BMP pathway directly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C95 represent discussion points that integrate the study's findings with prior literature. The therapeutic recommendation (C95) is reasonable given the complexity of BMP signaling and the pleiotropic roles of BMP proteins, though it remains speculative without experimental validation.",
+    "result_type": "MINOR"
+  }
+]

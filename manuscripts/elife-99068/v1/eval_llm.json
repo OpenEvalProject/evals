@@ -1,0 +1,324 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The Mpipi coarse-grained model accurately predicts phase behavior of hnRNPA1 PLD variants and is suitable for similar PLDs. The model was independently parameterized using atomistic simulations and bioinformatics data, achieving Pearson correlation >0.93 with experimental critical temperatures for 21 hnRNPA1 variants, and has been validated against radius of gyration data for 137 disordered proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C38 collectively demonstrate robust validation of the Mpipi model through multiple independent tests. The high correlation with experimental data (C34), independent parameterization (C32-C33), and external validation (C38) provide strong convergent evidence. The model's accuracy is well-established for the protein family studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C39",
+      "C40",
+      "C51",
+      "C136",
+      "C137"
+    ],
+    "result": "A large-scale computational dataset was generated comprising ~2000 Direct Coexistence simulations totaling 1.2 milliseconds of sampling for 140 PLD mutants from six proteins. System size (64 protein replicas, 200 ns trajectories) was determined through convergence testing. This dataset is over an order of magnitude larger than previous studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C39-C40, C51, C136-C137 describe the computational methodology and dataset scale. The convergence testing (C51) and comparison with prior work (C136) support the adequacy of the approach. The dataset size represents a substantial computational effort that enables the statistical power needed for scaling law identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C47",
+      "C130",
+      "C131",
+      "C168"
+    ],
+    "result": "Scaling laws exist that quantify changes in critical solution temperature of PLDs as a function of mutation number and type. These laws are consistent with physicochemical properties, extend across the entire PLD family tested, are cumulative for successive mutations, and can predict condensate stability changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C6, C47, C130-C131, C168 establish the existence and properties of scaling laws. The consistency across six different PLDs (C6), agreement with physicochemical properties (C5), and demonstrated predictive capability (C131) supported by extensive simulation data provide strong evidence. The cumulative nature (C130) is a key property that enhances utility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C52",
+      "C53",
+      "C55",
+      "C57",
+      "C58"
+    ],
+    "result": "Aromatic amino acid substitutions (Tyr\u2194Phe) show a linear relationship with critical temperature changes, with Tyr being a stronger driver of phase separation than Phe across all PLDs tested. Single Tyr\u2192Phe mutations cause ~0.4 K decreases in critical temperature, independent of protein length. These mutations affect interaction energetics but not the number of intermolecular contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C52-C53, C55, C57-C58 describe aromatic substitution effects with specific quantitative predictions. The linear scaling law (C53), consistent effect across PLDs (C52), and mechanistic interpretation (C58) are well-supported by simulation data shown in Figure 4A. The modest effect size (~0.4 K) is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C59",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C139",
+      "C141",
+      "C142"
+    ],
+    "result": "Aromatic deletions (replacing aromatic residues with uncharged non-aromatic residues) strongly reduce critical temperatures with effects that scale as ~56K/\u221aL, where L is protein length. Longer PLDs are more robust to aromatic deletions because each aromatic represents a smaller fraction of total valency. These mutations disrupt the network of molecular connections in condensates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42, C59, C62-C67, C139, C141-C142 describe aromatic deletion effects with a specific scaling law showing \u221aL dependence. The mechanistic explanation involving network disruption (C63-C64) and valency arguments (C66-C67, C141-C142) are consistent with the observed scaling. Figure 4C supports the quantitative relationship. The length-dependent buffering is a key insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C144",
+      "C146",
+      "C148",
+      "C149"
+    ],
+    "result": "Arginine deletions decrease critical temperatures with a scaling law of ~640K/L, showing inverse dependence on protein length. For a 100 amino acid PLD, each Arg deletion causes ~6.4 K decrease. Longer PLDs show increased resilience to Arg deletions compared to aromatic deletions, while shorter PLDs show the opposite trend. Higher NCPR correlates with larger decreases in phase separation propensity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C44, C76-C80, C144, C146, C148-C149 establish the Arg deletion scaling law with 1/L dependence, distinct from aromatic deletions. The length-dependent crossover in relative effects (C146) and mechanistic explanations based on valency and charge distribution (C148-C149) are well-reasoned. Figure 5B and the NCPR correlation (C80) provide supporting evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C153",
+      "C154",
+      "C155",
+      "C156"
+    ],
+    "result": "Arg\u2192Lys mutations are approximately twice as destabilizing as Arg deletions, with a scaling constant of ~1300K/L. This enhanced destabilization results from both replacement of stronger Arg-based interactions with weaker Lys-based ones and increased PLD solubility due to less favorable Lys hydration free energy compared to Arg.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86, C153-C156 quantify the Arg\u2192Lys effect with specific comparison to Arg deletions. The twofold difference (C83, C153) is supported by simulation data in Figure 5A. The mechanistic explanation invoking both interaction strength and hydration differences (C85-C86) is supported by citations to prior work and is physicochemically reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45",
+      "C95",
+      "C96",
+      "C98",
+      "C99",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Polar amino acid mutations (Asn\u2194Gln) have modest effects on phase separation, with Asn\u2192Gln mutations increasing phase separation propensity (scaling constant ~50K/L). The effect is attributed to Gln's higher dipole moment and longer side chain enabling more stable dipole-dipole contacts, though the impact is significantly smaller than aromatic or charged residue mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C95-C96, C98-C99, C162-C165 describe polar residue effects with quantitative scaling laws. The modest magnitude (C98-C99) and mechanistic explanation based on dipole moments (C96, C163-C165) are reasonable. Figure 6A supports the trends. The speculative nature of the mechanism (C163, C165) is appropriately acknowledged, though the model doesn't explicitly capture polarization (addressed in C93-C94, C166-C167).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C102",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C157",
+      "C158",
+      "C159",
+      "C160"
+    ],
+    "result": "Uncharged non-aromatic residue mutations (Gly, Ser, Thr, Ala) have minimal effects on critical temperatures (scaling constants ~0.08-0.16 K per mutation), requiring ~10 mutations for 1 K change. Effects result from competing influences of side chain size and solvation changes. These mutations show no significant length dependency and condensates remain stable to such mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C102, C104-C119, C157-C160 describe the subtle effects of neutral residue mutations with specific quantitative predictions. The small magnitude (C118, C159), lack of length dependence (C160), and competing effects explanation (C117) are supported by Figure 6B-C. The consistency with experimental observations (C119) strengthens the findings. The emergent nature of these effects (C106) is an important insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C120",
+      "C121",
+      "C123",
+      "C125"
+    ],
+    "result": "Beyond composition, aromatic residue patterning affects PLD phase behavior. Sequences with more dispersed aromatic residues (lower \u03c3_aro values) phase separate more readily due to greater effective valency and higher probability of forming percolated network structures. This finding agrees with previous studies on aromatic patterning importance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C120-C121, C123, C125 address sequence patterning effects using the \u03c3_aro order parameter. The inverse correlation between \u03c3_aro and critical temperature shown in Figure 7C supports the claim. The mechanistic explanation based on valency and network formation (C123) is consistent with the stickers-and-spacers framework. Agreement with prior work (C125) strengthens confidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C69",
+      "C70"
+    ],
+    "result": "The six PLDs investigated (hnRNPA1, TDP43, FUS, EWSR1, RBM14, TIA1) have similar compositional biases: highly rich in neutral, polar, and aromatic residues with <5% charged amino acids. Positively charged residue fraction is narrowly distributed around 0.015, except hnRNPA1 (0.09).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C69-C70 describe the compositional characteristics of the PLD family studied. These are directly supported by the compositional analysis shown in Figure 1B. The similar composition justifies treating these as a protein family for scaling law analysis and supports the generalizability of findings within this family.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "The Mpipi model has limitations: it does not account for temperature-dependent solvent effects, may not accurately predict mutations in proline/aliphatic-rich sequences, and is not predictive of folding or secondary structure. The study assumes mutations do not significantly alter secondary structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C129 acknowledge important model limitations. These are appropriately stated caveats that define the scope of applicability. The assumption about secondary structure preservation (C129) is a necessary simplification but represents a potential source of error for mutations that might induce structural changes. The transparency about limitations is scientifically appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C48",
+      "C68",
+      "C71",
+      "C72",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C100"
+    ],
+    "result": "Background context on PLDs, biomolecular condensates, phase separation, IDRs, aromatic residues, charged residues, and scaling laws is established through citations to prior work and general knowledge. This includes the role of PLDs in condensate formation, their propensity for misregulation, the importance of aromatic and charged residues, and the link to neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C30, C48, C68, C71-C72, C87-C92, C100 provide essential background and context. These are well-supported by extensive citations to prior literature and represent established knowledge in the field. This background appropriately motivates the study and situates it within existing understanding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C50",
+      "C93",
+      "C94",
+      "C166",
+      "C167"
+    ],
+    "result": "The Mpipi model is well-suited for PLDs because it balances \u03c0-\u03c0 and cation-\u03c0 interactions. While it doesn't explicitly account for polarity or polarization effects, these are implicitly incorporated through bioinformatics-based parameterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C93-C94, C166-C167 describe the model's design rationale and how it handles polarity. The implicit incorporation of polarity through bioinformatics data (C94, C167) is a reasonable approach, though it represents a limitation for explicit mechanistic interpretation. The model's suitability is supported by validation results (C31-C38).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C132",
+      "C133",
+      "C134",
+      "C169",
+      "C171"
+    ],
+    "result": "The authors suggest scaling laws can be used as predictive tools for PLD condensate stability, may exist for other protein families with different compositional biases, and have implications for understanding condensation and designing modifications to counter aberrant aggregation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C7, C46, C132-C134, C169, C171 make forward-looking statements about applications and extensions. While the scaling laws are well-established for the PLDs studied, their predictive utility for truly novel sequences, applicability to other protein families, and practical use in therapeutic design remain to be demonstrated. These represent reasonable hypotheses requiring future validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C135"
+    ],
+    "result": "Modern residue-resolution coarse-grained models can quantify protein phase behavior modulation due to mutations with near-quantitative agreement with experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C135 is supported by multiple citations to recent work and is demonstrated by the validation results in this study (C31-C38). This represents an important capability of current computational methods.",
+    "result_type": "MINOR"
+  }
+]

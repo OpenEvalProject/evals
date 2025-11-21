@@ -1,0 +1,381 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C5",
+      "C21",
+      "C22",
+      "C27",
+      "C28",
+      "C33",
+      "C95",
+      "C103",
+      "C105"
+    ],
+    "result": "The study identifies immature neuroblasts (iNB) as an abundant, clonogenic, and multipotent population in the adult mouse SVZ. iNB cells express both neuroblast markers (CD24, DCX) and progenitor markers (Mash1, Dlx2, SOX2), represent approximately 4.3% of total SVZ cells, and demonstrate clonogenic potential and multipotency in vitro, being able to differentiate into neurons, astrocytes, and oligodendrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C5, C21, C22, C27, C28, C33, C95, C103, and C105 collectively demonstrate that iNB cells are abundant, express both progenitor and neuroblast markers, and exhibit multipotency. The data from FACS sorting (C20-C22), immunofluorescence (C21, C27), clonogenicity assays (C27-C28), and differentiation experiments (C33) provide converging evidence for this characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C92",
+      "C93",
+      "C113"
+    ],
+    "result": "Transplantation experiments demonstrate that s-iNB cells possess regenerative potential in vivo, with transplanted cells migrating to the olfactory bulb, differentiating into neurons, and persisting in the SVZ where some express GFAP. The regenerative properties are primarily associated with Dcxlow iNB (iNB1) cells, as Dcxhigh (eGFP+) iNB cells did not persist long-term after transplantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 demonstrate successful engraftment and differentiation of s-iNB cells in transplantation experiments, while C92-C93 and C113 show that the regenerative capacity is specifically associated with Dcxlow cells. The data from Tables 1 and 2 and immunohistological analyses provide strong evidence, though the sample sizes are small (n=2-3 animals per group).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Transcriptomic profiling using microarrays reveals that s-iNB cells are molecularly distinct from other SVZ populations. Pseudotime analysis confirms lineage progression from s-qNSC through s-aNSC/s-TAP to s-iNB and finally s-mNB. Each population exhibits unique gene expression signatures: s-qNSC overexpress lipid metabolism genes, s-aNSC express glyoxylate metabolism genes, s-TAP express cell cycle genes, s-iNB express cell cycle and mitotic genes, and s-mNB express axon guidance and nervous system development genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C46 are supported by comprehensive microarray analysis using Clariom D arrays with appropriate bioinformatic analyses (pseudotime, Venn diagrams, functional profiling). The data show clear molecular distinctions between populations, though the number of biological replicates is not explicitly stated in the claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C116",
+      "C117"
+    ],
+    "result": "Alternative splicing analysis reveals major changes during SVZ neurogenesis, with dramatic increases in differentially spliced genes (DSG) at specific transitions: 9484 DSG between s-qNSC and s-aNSC, none between s-aNSC and s-TAP, 169 between s-TAP and s-iNB, and 3759 between s-iNB and s-mNB. These changes are associated with shifts in RNA splicing regulator (RSR) gene expression, particularly in s-iNB cells, with Ptbp1 downregulation correlating with increased splicing at the iNB-to-mNB transition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C56, C116, and C117 are supported by splicing index analysis from microarray data and functional profiling. The correlation between RSR expression changes and DSG numbers is logical and well-documented. However, the claim that splicing changes are \"clearly related\" to RSR expression (C117) is inferential rather than causally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Single-cell RNA sequencing of SVZ cells from control and irradiated mice identified 33 clusters, including 14 neurogenic/astrocyte clusters. UCell scoring using microarray-derived signatures allowed attribution of clusters to sorted populations: clusters 4 and 13 to s-qNSC, cluster 17 to s-aNSC, cluster 20 to s-TAP, clusters 5, 15, and 12 to s-iNB, and clusters 7, 9, 1, and 3 to s-mNB. Clusters related to s-iNB were enriched in S or G2/M phase cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C74 describe a comprehensive scRNAseq analysis with appropriate quality control (1500 genes/cell threshold), clustering (Leiden algorithm), and cell type annotation using both marker genes and UCell scoring. The integration of microarray signatures with scRNAseq data is methodologically sound, though some cluster assignments show overlap (C73), reflecting the continuous nature of differentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C75",
+      "C82",
+      "C108"
+    ],
+    "result": "An irradiation-based regeneration model reveals the temporal ordering of iNB cluster regeneration. After radiation-induced depletion of cycling progenitors, radiation-resistant qNSC repopulate SVZ populations sequentially. Analysis of cluster recovery ratios established a hierarchical ordering of iNB-related clusters (10, 5, 15, 12, 8), with Dcxlow cells recovering faster than Dcxhigh cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C61, C75, C82, and C108 describe the use of an irradiation model to establish temporal ordering of cell populations. The approach is innovative and the recovery ratio analysis (normalized to s-qNSC) is appropriate. However, the model relies on previous work (C60-C61) and the number of biological replicates (n=2 per condition) is limited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Expression analysis of RNA splicing regulator (RSR) genes in scRNAseq clusters confirms major switches occurring in iNB cells. RSR genes that increase with neurogenesis (Kdrbs3, Kdrbs1, Elavl3, Elavl2, Elavl4, Celf1) show progressive upregulation in iNB clusters, while genes that decrease (Mbnl1, Msi2) are downregulated. Ptbp1 expression is maintained in s-aNSC, s-TAP, and s-iNB clusters but progressively decreases in s-mNB clusters.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C79, C120-C123 demonstrate that scRNAseq data corroborate microarray findings regarding RSR gene expression patterns. The progressive changes in RSR expression across iNB clusters support the concept of sequential molecular switches. The inference that these switches are \"important\" for differentiation (C121) is reasonable but not causally proven.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "iNB cells can be subdivided into two molecularly distinct subtypes based on Dcx expression: iNB1 (Dcxlow) and iNB2 (Dcxhigh). Differential gene expression analysis identified 588 genes unique to Dcxlow cells (enriched for RNA metabolism genes) and 98 genes unique to Dcxhigh cells (enriched for GABAergic synapse and neuronal system genes, with 55% being s-mNB genes). Both subtypes remain molecularly distinct from TAP and mNB, with progressive transcriptomic changes occurring between them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C80-C89, C109-C112 establish the iNB1/iNB2 subdivision based on Dcx expression and demonstrate molecular differences through differential gene expression and functional enrichment analyses. The data support the existence of two subtypes, though the threshold for Dcx expression (expression \u22641 vs >1) appears somewhat arbitrary and is not statistically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C113"
+    ],
+    "result": "Using DCX-CreERT2::CAG-floxed-eGFP mice to distinguish Dcxhigh from Dcxlow iNB cells, functional assays demonstrate that both eGFP+ (Dcxhigh) and eGFP- (Dcxlow) iNB exhibit similar clonogenic potential and multipotency in vitro. However, only Dcxlow iNB cells show regenerative properties in vivo, as eGFP+ iNB cells did not persist after transplantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C93 and C113 use a genetic reporter system to functionally distinguish iNB subtypes. The in vitro data (C90-C91) show similar properties for both populations, while transplantation data (C92-C93) demonstrate differential in vivo behavior. However, the transplantation results are based on very small sample sizes (n=2-3 animals) and lack statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Hypoxic culture conditions (4% O2) differentially affect SVZ cell populations: they increase proliferation of s-aNSC, s-TAP, and s-iNB to similar levels, increase clonogenic potential of s-TAP and s-iNB but not s-aNSC, and have no effect on s-mNB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 describe the effects of hypoxia on different SVZ populations, supported by data in Figure 1A-B. The experiments include appropriate controls (normoxic conditions) and the results are consistent with prior literature (C29). Statistical significance is indicated in the figures, though sample sizes are not explicitly stated in the claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C97",
+      "C98",
+      "C107"
+    ],
+    "result": "Comparison of microarray data with published scRNAseq datasets reveals that s-iNB correspond to clusters previously termed 'Mitosis' or 'Mitotic TAP' in other studies, demonstrating that s-iNB comprise cycling cells with both TAP and NB features. This highlights difficulties in determining the exact nature of cell clusters identified by scRNAseq alone and demonstrates the value of combining FACS-sorted cell characterization with scRNAseq.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59, C97-C98, and C107 describe comparisons with published datasets and critique of previous scRNAseq studies. The comparisons are appropriate and the critique is fair, though somewhat subjective. The claim that previous studies \"lacked clear biological significance\" (C97) is an interpretation rather than an objective assessment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C20",
+      "C23",
+      "C60",
+      "C61"
+    ],
+    "result": "The authors previously developed a FACS-based method using LeX, EGFR, and CD24 markers to sort five distinct SVZ populations and demonstrated that after irradiation-induced depletion, qNSC sequentially repopulate aNSC, TAP, iNB, and mNB populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C23, C60, and C61 describe previously published methods and findings from the authors' prior work. These are appropriately cited and form the methodological foundation for the current study. The claims are supported by citations to the authors' previous publications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background claims establish that the SVZ is a major neurogenic niche in the adult mammalian brain where NSC generate TAP cells that produce neuroblasts, which migrate to the olfactory bulb and differentiate into interneurons. SVZ cells can also generate astrocytes and oligodendrocytes. Previous transcriptomic and scRNAseq studies have provided insights into SVZ cell populations and lineage progression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C9-C19 provide established background knowledge about SVZ neurogenesis, supported by appropriate citations to the literature. These claims accurately represent the current understanding of the field and provide context for the study's findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Age-related decline in SVZ neurogenesis is associated with TGF\u03b2 signaling and cell cycle changes in aNSC, including progressive lengthening of G1 phase, leading to decreased production of TAP, iNB, and mNB. Despite this decline, iNB remain more abundant than aNSC and TAP in aged brains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C26 describe findings from the authors' previous work on aging, supported by citations. These claims provide important context for the significance of iNB cells and are appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C47",
+      "C114",
+      "C115",
+      "C118",
+      "C119",
+      "C130"
+    ],
+    "result": "Alternative splicing plays important roles in neural cell differentiation and brain development, with neurons characterized by pervasive use of alternative exons. Specific RSR genes have known roles in stem cell maintenance (Msi1, Msi2) or neuronal processes (Elavl3, Elavl4), and dysregulation of RSR genes has been implicated in cancer and neurodegenerative diseases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47, C114-C115, C118-C119, and C130 provide established background knowledge about alternative splicing and RSR gene functions, supported by appropriate citations. These claims accurately represent current understanding and provide context for the study's splicing analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C29"
+    ],
+    "result": "Hypoxic conditions (4% O2) promote SVZ NSC proliferation and neurogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C29 is established knowledge supported by citations (Li et al., 2021; Ross et al., 2012) and provides context for the hypoxia experiments performed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C94",
+      "C100",
+      "C102",
+      "C104"
+    ],
+    "result": "Previous research has focused primarily on characterizing molecular mechanisms regulating qNSC and aNSC, with the transcriptional shift from progenitors to neuroblasts being less thoroughly analyzed. Prior studies have described subsets of neuroblasts co-expressing progenitor and neuroblast markers, and neuroblast plasticity in pathological contexts has been reported.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94, C100, C102, and C104 accurately characterize gaps in previous research and relevant prior findings, supported by appropriate citations. These claims provide justification for the current study's focus on iNB cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C2",
+      "C59",
+      "C97"
+    ],
+    "result": "Molecular profiling at the single-cell level struggles to distinguish different SVZ cell types, with previous scRNAseq studies grouping cycling progenitors into 'mitotic' or 'neural progenitor' clusters that lacked clear biological significance and prevented identification of progenitor subtypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C2, C59, and C97 critique previous scRNAseq studies, but the assessment is somewhat subjective. While the authors demonstrate that their FACS-sorted populations provide clearer biological distinctions, the claim that scRNAseq \"struggles\" (C2) or that previous clusters \"lacked clear biological significance\" (C97) represents interpretation rather than objective fact. The authors' approach does provide complementary information, but scRNAseq studies have successfully identified many cell types and states.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C4",
+      "C106"
+    ],
+    "result": "iNB cells are reversibly engaged in neuronal differentiation, and detection of GFAP-positive engrafted cells in the SVZ suggests that s-iNB may have the capacity to dedifferentiate in vivo and generate NSC.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4 and C106 propose that iNB cells can reverse their differentiation trajectory. While the multipotency data (C33, C91) and detection of GFAP+ cells after transplantation (C37) are supportive, these observations do not definitively demonstrate reversibility or dedifferentiation. The GFAP+ cells could represent direct differentiation to astrocytes rather than dedifferentiation to NSC. Additional lineage tracing or functional experiments would be needed to confirm reversibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C96",
+      "C124"
+    ],
+    "result": "Major splicing regulations in iNB might be critical for final commitment to neuronal fate, and Ptbp1 expression may play an important role in maintaining regenerative properties in iNB1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96 and C124 are speculative statements about the functional importance of splicing changes and Ptbp1 expression. While the correlations between RSR expression, splicing changes, and differentiation state are well-documented, causality has not been established. Functional experiments (e.g., Ptbp1 knockdown/overexpression) would be needed to test these hypotheses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C8",
+      "C99",
+      "C126",
+      "C127",
+      "C128",
+      "C131"
+    ],
+    "result": "Due to their plastic properties, iNB cells could represent a new target for regenerative therapy of brain damage. The transcriptional signatures provided may be useful for further characterization of neurogenic cells, and further characterization of iNB cells may be useful for determining therapeutic targeting in brain pathologies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C99, C126-C128, and C131 are speculative statements about potential applications and future utility of the findings. While the demonstrated plasticity and regenerative properties of iNB cells (particularly iNB1) provide a foundation for these suggestions, no therapeutic experiments or disease models were tested. These are reasonable hypotheses for future work but are not supported by data in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C101",
+      "C125"
+    ],
+    "result": "The transcriptional shift leading to differentiation of neural progenitors into neuroblasts occurs in immature neuroblasts, which form a relatively abundant subpopulation of SVZ cells. The study was performed on cells from the lateral walls of the ventricles of young adult mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101 and C125 accurately summarize a key finding and describe the experimental system. C101 is supported by the comprehensive molecular characterization of iNB cells, while C125 appropriately describes the scope and limitations of the study.",
+    "result_type": "MINOR"
+  }
+]

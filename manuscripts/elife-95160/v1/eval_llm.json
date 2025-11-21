@@ -1,0 +1,236 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The manuscript establishes that existing models fail to explain dynamic error patterns in visual working memory. Traditional continuous attractor memory models predict no biases and flat variance, while sensory encoding models only establish static relationships. Recent experiments show that orientation representations undergo gradual modifications during delay periods, which neither model type can address.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C13-C16 collectively establish the motivation for the study by documenting known error patterns (C1), recent experimental findings (C2, C13), and limitations of existing models (C14-C16). The claims are well-supported by appropriate citations and represent established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Cardinal orientations are most prevalent in natural images, and error patterns in estimation tasks show characteristic dependence on these statistics: repulsive bias away from cardinal orientations where variance is minimal, with both bias and variance increasing over delay periods while maintaining their characteristic shapes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 describe well-established empirical patterns supported by multiple citations and illustrated in Figure 1A-C. These claims accurately summarize prior experimental findings that motivate the modeling work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Analysis of low-dimensional attractor models reveals that continuous attractors with constant noise cannot explain observed error patterns (no drift, flat variance), and discrete attractors with constant noise yield inconsistent results. Only discrete attractors with maximum noise at oblique orientations can reproduce experimentally observed error patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C25 present a systematic analysis of different attractor model classes shown in Figure 1D-L. The mathematical analysis is sound and clearly demonstrates why only discrete attractors with nonuniform noise can match experimental observations. The logic is internally consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Extending Bayesian sensory models with efficient coding to include recursive sensory-memory interactions successfully reproduces correct error patterns observed in memory tasks. The sensory system enhances sensitivity around cardinal orientations through sharpened likelihood functions, and recursive interaction between sensory and memory systems during delay periods generates dynamic error patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 describe the extended Bayesian framework shown in Figure 2. The extension is conceptually sound and demonstrates how iterative sensory-memory interaction can generate time-evolving error patterns. The model successfully bridges sensory encoding and memory maintenance, supported by simulation results in Figure 2C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The two-module network architecture is necessary for generating correct error patterns. The sensory module exhibits heterogeneous tuning with stronger connections at obliques, producing sharper and denser tuning curves near cardinal orientations (consistent with experimental observations). The memory module supports homogeneous representation via continuous attractor dynamics when operating alone, but the fully connected network forms discrete attractors with moderate drift and nonuniform diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C30-C33 describe the core architecture and its properties, demonstrated in Figures 3-4. The network design is well-motivated by biological observations (C31-C33 cite appropriate neurophysiological studies). The claim that both modules are necessary (C3, C4) is supported by comparative analysis with single-module networks in Figures 8-9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The sensory-memory interacting network exhibits repulsive bias and minimum variance at cardinal orientations, with highest Fisher information at cardinals. Low-dimensional analysis reveals the network implements discrete attractor dynamics with attractors at obliques, uneven diffusion with maximum noise at obliques, and these nonuniform characteristics stem from heterogeneous connections in the sensory module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C38 describe key results from network simulations (Figures 4-5). The population vector decoding (C34) is appropriately justified by citation to Fischer 2010. The low-dimensional analysis (C36-C38) provides mechanistic insight into how network connectivity produces the observed error patterns. The analysis is mathematically sound and well-illustrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Heterogeneously tuned inhibition plays a critical role in generating correct error patterns. Stronger inhibitory modulation (larger \u03b2) is required to produce cardinal repulsion and minimum variance at cardinals, while weaker inhibitory modulation produces reversed patterns. This emphasizes the importance of inhibitory plasticity in shaping sensory responses for higher precision at cardinal orientations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe results from systematic parameter exploration in Figure 7. The analysis of excitatory vs. inhibitory modulation is thorough and demonstrates that inhibitory heterogeneity is critical for correct error patterns. The claim about inhibitory plasticity (C39) is supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C47",
+      "C48"
+    ],
+    "result": "Single-module memory networks with heterogeneous connections fail to reproduce correct error patterns. They require fine-tuning of heterogeneity at least one order of magnitude more precise than two-module networks, and produce reversed variance patterns (minimum at obliques). Two-module networks are advantageous due to additional degrees of freedom in intermodal connectivity strengths, allowing better control of drift speed and variance patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C47-C48 present comparative analysis between one-module and two-module architectures (Figures 8-9). The quantitative comparison of parameter sensitivity (C43) is clearly demonstrated. The mechanistic explanation for why two-module networks perform better (C45) is conceptually sound and supported by the low-dimensional analysis in Figure 9.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "The model makes testable predictions about perturbation effects: in two-module networks, disrupting feedforward signals will stop systematic drift toward obliques and reduce repulsion, while one-module networks will show no changes in error patterns because memory activities are less dependent on the sensory module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C50-C51 present predictions shown in Figure 10. While the predictions are logical consequences of the model architecture, they remain untested. The prediction for two-module networks (C50) is supported by simulation data, but the prediction for one-module networks (C51) is more speculative. These are valuable predictions but require experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C52"
+    ],
+    "result": "The model cannot predict effects of distractors during working memory, as such effects do not experimentally lead to changes in error patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C52 appropriately acknowledges a limitation of the model, supported by citation to Rademaker et al., 2019. This is an honest assessment of model scope.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "The work identifies denser and narrower tuning curves at cardinal orientations as the mechanism for efficient coding, consistent with neurophysiological recordings. The population vector decoder used approximates Bayesian optimal readout.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 summarize mechanistic insights with appropriate citations to neurophysiological studies (Li et al., 2003; Kreile et al., 2011; Shen et al., 2014) and the decoder method (Fischer, 2010). The claims accurately represent the model's biological plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "The model has limitations during stimulus presentation: it shows increasing bias throughout presentation (opposite to experimental observations with short presentations), and error variance during presentation is negligible compared to delay period because external input overwhelms internal noise.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 honestly acknowledge model limitations with appropriate citation (de Gardelle et al., 2010). The explanation for why these limitations exist (flat baseline, strong external input) is clear. This represents good scientific practice in acknowledging model boundaries.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The work extends traditional memory models by incorporating sensory-memory interactions, motivated by recent findings of memory signals in early sensory areas. The memory module with ring geometry could potentially be repurposed for various visual stimuli. Unlike flexible working memory models where memory is lost without sensory-control interactions, the current model's memory module can independently maintain memory while sensory interaction shapes representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C68-C70 place the work in broader context with appropriate citations. The comparison to flexible working memory models (C69-C70) is conceptually clear. However, C68 is somewhat speculative about generalization to other stimuli, though this is appropriately framed as a possibility rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Prior theoretical work established that cardinal repulsion reflects prevalence of cardinal orientations in natural scenes, variance of errors is inversely proportional to stimulus statistics, and these patterns result from sensory encoding optimized to enhance precision around common stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12 accurately summarize prior theoretical work with appropriate citations. These provide essential background for understanding the current study's contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The manuscript discusses relationships to other recent work on working memory, including models combining dynamic signal amplitude with static tuning curves, discrete attractor models for color memory (which cannot generalize to orientation), plasticity mechanisms for fine-tuning connections, robustness of continuous attractors, noise effects across modalities, and modularity in brain organization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C67 provide appropriate context by discussing related work with proper citations. These claims accurately represent the cited work and appropriately position the current study within the broader literature.",
+    "result_type": "MINOR"
+  }
+]

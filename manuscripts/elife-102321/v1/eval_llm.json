@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C32",
+      "C33",
+      "C34",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The study used an experimental evolution design with 10 replicated D. simulans populations derived from 202 isofemale lines, evolved for >100 generations at 28/18\u00b0C. Gene expression was measured in evolved populations and a reconstituted ancestral population after a common garden experiment to assess adaptive responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C32-C34, C46-C51 collectively describe a well-designed experimental evolution study with appropriate controls. The use of isofemale lines, common garden experiments, and multiple replicates provides a solid foundation for studying parallel evolution from standing genetic variation. The experimental design is clearly documented and addresses potential confounds.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "1775 putatively adaptive genes were identified showing significant expression changes in the same direction in at least 3 populations. The replicate frequency spectrum showed heterogeneity, with parallelism varying substantially among genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 describe the identification of adaptive genes using appropriate statistical filtering (requiring changes in \u22653 populations to reduce false positives from drift). The observed heterogeneity in parallelism across genes (Figure 1b,c) provides the phenotypic variation necessary for subsequent correlation analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C2",
+      "C35",
+      "C56",
+      "C75"
+    ],
+    "result": "Parallelism of gene expression evolution is positively correlated with pleiotropy, with significant correlations for both tissue specificity (rho=0.26, p<2.2e-16) and network connectivity (rho=0.11, p<5.6e-07). This contrasts with expectations from de novo mutation-based adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C35, C56, C75 present statistically significant positive correlations between pleiotropy and parallelism (Figure 2), supported by appropriate statistical tests. The effect sizes are modest but highly significant given the large sample size (n=1775 genes). This represents a key empirical finding distinguishing adaptation from standing variation versus de novo mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C36",
+      "C57",
+      "C58",
+      "C69"
+    ],
+    "result": "Pleiotropy is negatively correlated with ancestral variation in gene expression (rho=-0.34 for tissue specificity, rho=-0.37 for network connectivity, both p<2.2e-16), and ancestral variation is negatively correlated with parallelism (rho=-0.22, p<2.2e-16).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C36-C37, C57-C58, C69 report highly significant negative correlations with appropriate statistical support (Figure 3). The negative relationship between pleiotropy and ancestral variation confirms previous observations in the literature. These correlations are essential for establishing the indirect pathway in the causal analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Lower ancestral phenotypic variation leads to more parallel trait evolution, as demonstrated by computer simulations of replicated polygenic adaptation showing a negative correlation (rho=-0.26, p<1.77e-07) between ancestral variation and parallelism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C61 are supported by simulation results (Figure 4) that validate the empirical observation. The simulations appropriately model polygenic traits with different levels of standing variation and demonstrate the mechanistic link between reduced variation and increased parallelism. This provides important theoretical support for the empirical findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C37",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C81",
+      "C82"
+    ],
+    "result": "Causal analysis using Bayesian model selection indicates that pleiotropy affects parallelism both directly and indirectly via ancestral variation. For tissue specificity, Model III (both direct and indirect effects) had the lowest BIC. Path analysis confirmed significant indirect effects for both pleiotropy measures (effect sizes ~0.055-0.068), but only tissue specificity showed a significant direct effect (0.127).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C37, C62-C67, C81-C82 describe a rigorous causal analysis using established statistical methods (Schadt et al., 2005). The BIC-based model selection (Table 1) and path analysis (Table 2) provide quantitative support for both direct and indirect effects. The consistency of indirect effects across both pleiotropy measures strengthens the conclusion, though the direct effect is only supported for tissue specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C38",
+      "C70",
+      "C71",
+      "C83"
+    ],
+    "result": "The indirect effect of pleiotropy on parallelism operates via historic selective constraint that reduces standing variation in pleiotropic genes, leading to more parallel selection responses due to reduced genetic redundancy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7, C38, C70-C71, C83 provide a mechanistic interpretation of the indirect pathway supported by the causal analysis. The interpretation is consistent with the observed negative correlations and is supported by both empirical data and simulation results. The mechanism invokes well-established evolutionary principles (purifying selection on pleiotropic genes).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C39",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "The direct effect of pleiotropy (significant only for tissue specificity) likely reflects synergistic pleiotropy arising from genetic correlations among adaptive traits, resulting in stronger selection and higher parallelism. This may be particularly relevant for temperature adaptation where positive genetic correlations among adaptive traits are expected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8-C9, C39, C84-C89 propose a mechanistic interpretation for the direct effect, but this is largely speculative (evidence_type: SPECULATION). While the interpretation is plausible and consistent with theory (MacPherson and Nuismer, 2017), the manuscript provides no direct evidence for synergistic pleiotropy or genetic correlations among adaptive traits. The direct effect is also only significant for one of two pleiotropy measures, raising questions about its generality.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Two measures of pleiotropy were used: tissue specificity (1-\u03c4) based on expression breadth across tissues, and network connectivity based on transcriptional regulatory networks. These measures are significantly correlated (rho=0.54) and tissue specificity estimates from D. melanogaster can be applied to D. simulans based on high cross-species conservation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C45 describe the pleiotropy measures with appropriate justification. The correlation between measures (Appendix 1-figure 1) indicates they capture related but distinct aspects of pleiotropy. The use of D. melanogaster data for D. simulans is justified by citing studies showing high conservation of tissue-specific expression across species. However, the discrepancy in results between the two measures (direct effects) suggests they may capture different biological properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "The variance in gene expression measured in the ancestral population reflects biological variation with a genetic basis rather than technical or stochastic noise, as evidenced by high correlation between replicate groups and literature showing heritability of expression and correlation with cis-regulatory variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 address an important assumption about the nature of expression variation. The high correlation between replicate ancestral populations (rho=0.8 for variance) supports biological rather than technical variation. Citations to studies showing heritability of expression (Ayroles et al., 2009) and correlation with genetic variation (H\u00e4m\u00e4l\u00e4 et al., 2020b) provide additional support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Non-differentially expressed genes show significantly higher pleiotropy than adaptive genes, suggesting that extremely high pleiotropy may constrain evolutionary responses. The pattern supports the idea that low to intermediate levels of pleiotropy are most favorable for adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C92 describe an additional analysis comparing DE and non-DE genes (Appendix 1-figure 5). This finding is consistent with the main results and provides evidence for an upper limit to the positive effect of pleiotropy. The interpretation is supported by citations to similar findings (Rennison and Peichel, 2022; Frachon et al., 2017).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C68",
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "Adaptation from standing genetic variation results in complex interplays between pleiotropy, ancestral variation, and parallelism that differ from adaptation via de novo mutations. While pleiotropic genes are less likely to contribute to parallel evolution from de novo mutations, they favor parallel responses when adapting from standing variation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C74, C76-C77 synthesize the key findings and contrast them with expectations from de novo mutation-based adaptation. The contrast is well-supported by the data and consistent with recent genomic studies (Rennison and Peichel, 2022). This represents an important conceptual advance in understanding parallel evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "The introduction establishes theoretical background on pleiotropy and parallelism, including the cost of pleiotropy model, synergistic pleiotropy, and the role of standing genetic variation in short-term adaptation. Previous empirical studies have shown mixed results regarding the effect of pleiotropy on parallel evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C31 provide literature context and theoretical background. These are appropriately cited and establish the motivation for the study. The claims accurately represent prior work and identify the gap in knowledge regarding pleiotropy's role in adaptation from standing variation (C20, C24).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C93"
+    ],
+    "result": "Additional factors beyond those examined may affect parallelism, including historical selective sweeps, diminishing returns epistasis, population size effects, and the contribution of gene expression to selected traits.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C73, C93 acknowledge limitations and alternative explanations. C72 is appropriately speculative about mechanisms underlying reduced variation. C73 cites supporting literature. C93 appropriately identifies additional factors that could influence parallelism, acknowledging that the study does not provide a complete explanation.",
+    "result_type": "MINOR"
+  }
+]

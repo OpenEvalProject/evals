@@ -1,0 +1,227 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Marmosets successfully learned both Self-Reward and Mutual Cooperation tasks using MarmoAAP, with all three dyads reaching 50% proficiency in cooperative pulling within 33.7\u00b111.9 days. Animals performed an average of 146 trials per 20-minute session, with 47.9\u00b13.3 successful trials and 98.9\u00b16.6 unsuccessful attempts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C57 provide quantitative behavioral data with appropriate statistical reporting (means \u00b1 SEM). The proficiency criterion (50% success rate) is explicitly defined and justified by comparison to prior work (Jiang et al., 2021). Sample sizes (n=7 animals, 3 dyads) and session counts are reported, supporting the behavioral outcomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C56",
+      "C58",
+      "C78",
+      "C25"
+    ],
+    "result": "MarmoAAP enables a 15-fold increase in trial throughput compared to traditional cooperative pulling paradigms, with marmosets performing 146 trials per session versus the 10.4 trials per session reported in traditional manual paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56, C58, and C78 are supported by direct comparison between current data (146 trials) and literature-derived baseline (C25: 10.4 trials from 5 cited studies). The calculation (146/10.4 \u2248 14-15 fold) is mathematically correct. However, the comparison assumes equivalence across species and task designs, which may introduce confounds not fully addressed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C84"
+    ],
+    "result": "Task parameters including lever-pulling force (50g to 100g) and reward magnitude (0.1ml to 0.2ml) were systematically adjusted to optimize marmoset performance, demonstrating the apparatus's flexibility in accommodating individual capabilities and task demands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 describe empirical observations from training showing that parameter adjustments improved performance. While quantitative comparisons of performance before/after adjustments are not provided, the qualitative observations (smooth transition, enhanced motivation, consistent behaviors) are reasonable given the experimental context. C84 appropriately frames this as a design feature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C65",
+      "C66"
+    ],
+    "result": "MarmoAAP integrates multimodal data collection including millisecond-resolution lever position and force measurements, synchronized video from three cameras analyzed with DeepLabCut2 (270 training frames, 15,000 iterations, loss <0.001), and 3D pose reconstruction using Anipose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C47 provide specific technical details about video analysis methods with appropriate citations. Training parameters (270 frames, 15,000 iterations, loss threshold) are explicitly stated. C65-C66 are supported by Figure 2B showing temporal resolution. The integration of these modalities is demonstrated rather than merely claimed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "One marmoset showed increased chirp vocalizations (food calls) after lever pulls in Mutual Cooperation sessions compared to Self-Reward sessions, with statistically significant differences in specific time bins (Wilcoxon rank sum test, p<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C68 reports a statistical finding from one animal across 19 sessions (6 Self-Reward, 13 Cooperation). While a statistical test is mentioned, critical details are missing: exact p-values, correction for multiple comparisons across time bins, effect sizes, and whether this pattern generalizes across animals. The n=1 animal severely limits generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C89",
+      "C90"
+    ],
+    "result": "MarmoAAP successfully integrates with wireless neural recordings, enabling isolation of single-unit and multi-unit activity from prefrontal cortex (OFC and dlPFC) that showed increased firing rates time-locked to lever pulls during cooperative behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C74 demonstrate proof-of-concept neural recordings with appropriate methods (C48-C52: surgical procedures, 64-channel probe, 20kHz sampling, Kilosort2 spike sorting). Figure 3 shows example units with task-locked activity. However, this is presented as example data from one animal without statistical analysis of neural responses or quantification across units, limiting the strength of conclusions about neural mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C63",
+      "C64",
+      "C85",
+      "C86"
+    ],
+    "result": "MarmoAAP's modular design enables flexible adaptation to various behavioral paradigms through adjustable hardware configuration (number and positioning of levers) and programmable task parameters (timing windows, force requirements, reward contingencies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C63-C64, and C85-C86 describe design features that are demonstrated through the apparatus construction (C27-C32) and the parameter manipulations actually performed (C59-C62). The modular T-slotted frame design and programmable servo motors inherently support these capabilities. However, the breadth of possible applications remains largely speculative rather than empirically demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "The automated paradigm faces limitations including that only 47.9 of 146 trials (33%) resulted in successful cooperation, and challenges exist in sustaining motivation when both animals must be simultaneously engaged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 honestly acknowledge limitations of the approach. The success rate calculation (47.9/146 \u2248 33%) is consistent with the reported 50% proficiency criterion when considering that proficiency is defined per animal pull rather than per trial. The discussion of dual-animal motivation challenges is a reasonable inference from the experimental design.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Traditional cooperative pulling paradigms have significant limitations including low behavioral resolution (second-by-second measurements), labor-intensive manual coding, frequent experimenter intervention for apparatus reset, and low trial throughput (average 10.4 trials per session across five studies).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 characterize traditional methods based on cited literature (C25 provides quantitative data from 5 studies). These limitations are well-established in the field and provide appropriate motivation for the new apparatus. However, C22-C23 somewhat overstate the limitations\u2014many modern studies use video analysis with sub-second resolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Marmosets are an advantageous model for studying social cognition due to their small size enabling naturalistic studies, prosocial behaviors including cooperative breeding, advanced socio-cognitive abilities, and neural circuits for social cognition similar to humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C10, C12-C15 are well-supported by extensive citations to established literature. These represent accepted knowledge in the field rather than novel findings of this study. The characterization of marmosets as a model system is accurate and appropriately cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Seven adult marmosets (3 males, 4 females; 6.0\u00b11.7 years) were trained on MarmoAAP tasks, with all animals pair/group-housed, tested as familiar cage-mate pairs, and subjected to minimal food/water restriction (1-3 hours) under IACUC-approved protocols.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 provide standard methodological details about subjects and housing. Sample size (n=7), demographics, and ethical approvals are clearly stated. The minimal restriction protocol (C38, C83) is appropriate for the reward-based task design. These are descriptive claims adequately supported by the methods section.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "MarmoAAP consists of a modular T-slotted frame (18\"h \u00d7 24\"w \u00d7 18\"l) with servo motor-controlled levers instrumented with strain gauges (force measurement) and potentiometers (position measurement), enabling programmable force requirements and automated reward delivery based on position thresholds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C34 provide technical specifications supported by Figure 1 and Table 1. The apparatus design is clearly documented with specific dimensions, components, and functional descriptions. The sensor functions (C31-C32) are based on standard engineering principles. Task contingencies (C33-C34) are explicitly defined.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88"
+    ],
+    "result": "The MarmoAAP design could potentially be adapted for other species by modifying motor size and component durability to accommodate different force requirements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C88 are speculative about future applications without empirical validation. While the engineering reasoning is sound (larger animals require stronger motors), no data support cross-species applicability. This represents a reasonable hypothesis rather than a demonstrated result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C91"
+    ],
+    "result": "MarmoAAP bridges the gap between traditional animal behavior methodologies and modern demands for precision and adaptability, enabling ethologically relevant behaviors with precise neural investigation capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C91 are high-level summary statements supported by the collective evidence from apparatus design (C27-C34), behavioral performance (C53-C57), multimodal data collection (C43-C47, C65-C68), and neural recording integration (C71-C74). These represent appropriate synthesis of the demonstrated capabilities rather than overclaiming.",
+    "result_type": "MAJOR"
+  }
+]

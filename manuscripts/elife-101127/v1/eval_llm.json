@@ -1,0 +1,244 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The manuscript establishes background knowledge about PROTACs, including their mechanism of action through ternary complex formation and the observation that stable ternary complex formation does not always correlate with degradation potency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C1-C3, C10-C17) represent well-established knowledge in the PROTAC field, supported by multiple citations to prior literature. The claims accurately describe the mechanism of PROTAC action and the known discrepancy between ternary complex stability and degradation efficiency, which forms the scientific motivation for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Prior computational and modeling approaches have been developed to study PROTAC-mediated ternary complexes, including protein-protein docking, linker conformational searching, machine learning, and enhanced sampling MD techniques.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C18-C23) accurately summarize prior computational work in the field, supported by appropriate citations. They establish the methodological context and justify the computational approach taken in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "The dBET family of PROTACs targeting BRD4BD1 using the same warheads but different linkers exhibit varying degradation potencies (dBET70: ~5 nM, dBET23: ~50 nM, dBET1 and dBET57: ~500 nM DC50/5h) despite forming structurally similar ternary complexes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C24-C25, C27-C29) are supported by citations to experimental studies (Nowak et al., 2018; Zhou et al., 2018; Winter et al., 2015; Qin et al., 2018) and presented in Figure 1D. The experimental data from prior work establishes the key observation that motivates the computational investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C31",
+      "C32",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The study generated conformational ensembles of CRBN-dBETx-BRD4BD1 ternary complexes through protein-protein docking, yielding over 160 conformations for most dBETs except dBET57 (24 conformations), and constructed 5058 degradation machinery complexes by integrating these into nine CRL4A E3 ligase scaffolds clustered into ring-forming (cluster A) and ring-open (cluster B) conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C5, C7, C31-C32, C36-C38) describe the computational modeling workflow with specific quantitative results. The methodology is clearly documented in the Methods section and results are shown in Figures 1-2 and supplementary figures. The validation against crystal structures (RMSD of 1.99 \u00c5 and 2.60 \u00c5) supports the reliability of the docking approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C64",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "MD simulations (400 ns, NPT ensemble at 300 K, AMBER20 with ff14SB force field) revealed that PROTAC warheads bind tightly to CRBN and BRD4BD1 while linkers display high flexibility, with MD sampling additional low-energy conformations beyond protein-protein docking, including for the rigid dBET57.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C34-C35, C64, C80-C82) describe the MD simulation methodology and key observations about linker flexibility. The methods are well-documented with appropriate force field citations, and results are shown in Figure 3 and supplementary figures. The observation that MD reveals conformations not captured by docking is supported by the data, particularly for dBET57.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C39",
+      "C40"
+    ],
+    "result": "Using a distance criterion of <16 \u00c5 between lysine residues of BRD4BD1 and the C-terminal glycine of ubiquitin, 1226 degradation machinery complexes were identified from the 5058 modeled structures, though none showed lysine residues positioned for immediate ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C39-C40) describe the filtering criteria based on mechanistic requirements for ubiquitination (supported by citations to Lv et al., 2021; Valimberti et al., 2015) and the quantitative results shown in Table 2. The observation that no initial structures showed ready-for-ubiquitination positioning motivates the MD dynamics studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "MD simulations revealed that different dBETs recruit specific lysine residues of BRD4BD1 to the E2 catalytic pocket (K72/76/111 for dBET1, K99 for dBET23 and dBET70, K102 for dBET57), with dBET23 (~85%) and dBET70 (~78%) showing higher probability of fulfilling both ubiquitination criteria compared to dBET1 (~40%) and dBET57 (~22%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C43-C48) present the key findings from MD simulations shown in Figure 4 and supplementary figures. The quantitative analysis of distances and probabilities is clearly documented, and the results correlate with experimental degradation efficiencies. The two criteria (Lys-Gly distance <10 \u00c5 and Asp-Gly distance <6 \u00c5) are mechanistically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Principal component analysis revealed that PC1 and PC2 account for over 60% of overall motions, with two hinge regions (loops in Rbx1 and DDB1) contributing prominently to essential motions that shift E2/Ub/Rbx1/NEDD8 closer to BRD4BD1, and pairwise force analysis showed correlation between linker rotation and degradation complex movement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C49-C52) describe PCA and force analysis results shown in Figure 5 and supplementary figures. The quantitative data (>60% variance explained) and identification of hinge regions are clearly documented. The correlation between linker dynamics and complex motion is supported by the pairwise force network analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C68",
+      "C69"
+    ],
+    "result": "All four dBETs exhibited substantial shifts of BRD4BD1 (approximately 10-15 degrees) measured by pseudo-dihedral angles, with the movement of the degradation machinery correlating with rotations of specific dihedrals in the linker region, and dihedral rotation showing time-dependent correlation with Lys-Gly interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C53-C56, C68-C69) present quantitative analysis of protein motions shown in Figures 5-7. The pseudo-dihedral angle analysis, correlation coefficients, and time-dependent correlation analysis are clearly documented with specific numerical values. The correlation between linker rotation and Lys-Gly interaction provides mechanistic insight into degradation efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Dihedral entropy analysis showed dBET57 has ~0.3 kcal/mol lower entropy than other dBETs, and an alternative dBET57 conformation (B1_dBET57_#9_MD2) exhibited significantly more rigidity with minimal rotation (<5 degrees), limiting structural dynamics needed to bring BRD4BD1 closer to Ub for Lys-Gly interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C57-C59) present entropy calculations and analysis of an alternative dBET57 conformation shown in Figure 8 and Figure 5\u2014figure supplement 5. The quantitative entropy difference and the observation of rigidity in the alternative conformation support the conclusion that linker flexibility is important for degradation. The comparison of two dBET57 conformations strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C8",
+      "C9",
+      "C60"
+    ],
+    "result": "The study demonstrates that PROTAC-dependent protein dynamics facilitate arrangement of surface lysine residues of BRD4BD1 into the E2/ubiquitin catalytic pocket for ubiquitination, with linkers affecting residue-interaction networks and governing essential motions of the entire degradation machine despite identical warheads.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C4, C8-C9, C60) represent the central conclusions of the study, supported by the comprehensive MD simulation data, PCA, force analysis, and correlation analyses presented throughout the results. The claims are well-supported by multiple lines of computational evidence showing how linker properties influence protein dynamics and degradation efficiency.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The study demonstrates that forming a stable E3-PROTAC-POI complex is necessary but insufficient for degradation, and that using accurately modeled initial conformations from protein-protein docking and/or MD simulations, followed by classical MD simulations, can illustrate how protein structural dynamics orient surface lysine residues for ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C61-C63, C65-C67) represent methodological conclusions supported by the study's results. The integration of docking and MD approaches is validated by comparison with crystal structures and by the ability to explain experimental degradation differences. The specific lysine residues identified (K99, K102, K72/76/111) provide testable predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C73",
+      "C74"
+    ],
+    "result": "The length and composition of PROTAC linkers are critical for degradation efficiency, with dBET23 and dBET70 showing greater flexibility allowing BRD4BD1 to adopt diverse conformations for efficient degradation, while dBET1 recruited multiple lysine residues but had unstable Asp positioning that hindered ubiquitination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C70-C71, C73-C74) represent structure-activity relationship conclusions supported by the comparative analysis of all four dBETs. The differential behavior of dBET1 (multiple Lys recruitment but unstable Asp) versus dBET23/dBET70 (stable Lys-Gly and Asp-Gly interactions) is supported by the MD simulation data and explains the experimental degradation differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Classical MD trajectories with atomistic details provide information about overall protein motions and specific lysine residues critical for degradability, with the most stable ternary conformations from protein-protein docking facilitating sampling of correct orientations, though rigid linkers like dBET57 may require conformations from both docking and MD sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C75-C78) represent methodological insights and recommendations for future PROTAC design studies. They are supported by the study's successful application of the combined docking-MD approach and the specific challenges encountered with dBET57. The conclusion about examining dynamic nature of degradation complexes is well-justified by the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C6",
+      "C26",
+      "C30"
+    ],
+    "result": "All studied PROTACs formed ternary complexes with CRBN and BRD4BD1 but exhibited varying degradation potencies, with the proximity and accessibility of surface lysine residues to the E2/Ub cascade potentially influenced by different linkers, and finding energetically stable ternary conformations being a critical first step for degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims (C6, C26, C30) integrate experimental observations from prior work with the study's hypothesis. They are supported by citations to experimental data and represent the key observation that motivates the computational investigation. The claims accurately frame the scientific question addressed by the study.",
+    "result_type": "MAJOR"
+  }
+]

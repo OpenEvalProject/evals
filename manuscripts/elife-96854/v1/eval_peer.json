@@ -1,0 +1,228 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C63",
+      "C65"
+    ],
+    "result": "The study demonstrates that both coarticulated and separated sequential movements can arise from the same task-dependent optimal feedback controller by varying task constraints (specifically, velocity requirements at intermediate targets). Simulations show that planning for multiple reaches simultaneously allows either coarticulation or separation depending on instructions about intermediate goals, with control gains showing different amounts of overlap based on task requirements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm this core finding. The editor states the paper presents 'convincing evidence' for this claim. Reviewer 1 notes 'They successfully demonstrate that one reason the motor system sometimes coarticulates movements is due to high-level instructions on how to execute the sequence.' Reviewer 2 states 'the authors fairly convincingly show that a single control policy can lead to separated or coarticulated movements given an appropriate set of constraints.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Human behavioral experiments in the rapid transfer condition (Experiment 1) confirmed model predictions: participants showed coarticulation with the second target influencing the first reach trajectory. Hand speed at the first target remained high (~0.2 m/s), lateral hand deviation during the first reach differed significantly between sequences (p<10\u207b\u2074), and this effect was present from the first trial within a block.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor describes the evidence as 'convincing' and reviewers accept these behavioral findings without challenge. Reviewer 1 states 'humans also coarticulate the reaches only when they are instructed to treat the first target as a via point' and notes 'All experiments and analyses are standard and clearly explained.' The rapid emergence of coarticulation from the first trial supports the task-dependent modulation interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "In coarticulated sequences (rapid transfer condition), long-latency stretch responses to mechanical perturbations during the first reach were modulated by the location of the second target. EMG recordings showed that both stretched and shortened muscles exhibited larger responses when the second reach involved movement reversal, with significant differences in R2 and R3 epochs but not R1, indicating involvement of sensorimotor circuits mediating fast feedback control.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise this finding. Reviewer 1 states 'Their analysis of long-latency as a measure of coarticulation of sequence items is highly interesting and broadly useful for future experiment design.' The editor highlights this as a key contribution, noting the paper demonstrates 'their response to mechanical perturbations' differs with task constraints. Reviewer 2 acknowledges the authors 'demonstrate in human participants both by measuring movement kinematics as well as EMG' supporting their claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "In Experiment 2 (STOP task), when participants were required to slow down at the first target, the second target did not influence the first reach. Hand speed dropped to near zero at T1, hand path deviation was similar between sequences, and EMG perturbation responses showed no statistical differences across sequence types in any epoch (R1, R2, or R3).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This finding is accepted by reviewers as the critical comparison demonstrating task-dependent control. The editor explicitly notes 'changing the constraint of how long to stop at an intermediate target significantly influences the degree of coarticulation.' Reviewer 1 confirms the experimental design successfully tests the model predictions across both conditions. No reviewer challenges these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Computational simulations using optimal feedback control showed that in the rapid transfer scenario, control gain k2 (for the second target) became non-zero during the first reach, creating overlap with k1 and causing the second target to influence first reach trajectories and perturbation responses. With velocity constraints at T1, k2 activation was delayed, eliminating this influence and producing separated reaches despite joint planning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states the authors 'offer a normative explanation' using the optimal-control framework. Reviewer 2 notes 'The authors provide an interesting and novel extension of the stochastic optimal control model to demonstrate how different temporal constraints can lead to either individual or coarticulated movements.' Reviewer 1 confirms the model 'show that coarticulation occurs only when the controller is not required to slow down at T1' and that this 'holds true even though the controller has information about both targets in both scenarios.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C64",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The results are consistent with recent behavioral and neural studies showing integration of future target information during motor planning, and support theories that movement planning is synonymous with derivation of a control policy. The findings align with recent neural network models reproducing M1 population activity with simultaneous target processing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the consistency with prior literature without challenge. Reviewer 1 notes the work successfully demonstrates how 'high-level instructions can, in turn, determine how and to what extent information about future sequence items is utilized by the low-level controller.' The integration with existing theoretical frameworks is acknowledged as appropriate contextualization rather than questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The authors propose that in the OFC framework, intermediate goals function as via-point constraints, motor chunking represents formation of composite control policies with overlapping gains, and coarticulation may be processed similarly to other movement constraints. They argue that preparatory activity may not distinguish independently planned versus coarticulated sequences because these reflect different control policies rather than different initial states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 directly challenges this interpretation, stating 'it remains unknown whether there is a fundamental distinction between a coarticulated sequence and a single movement passing through a via point' and notes 'The notion of a coarticulated sequence brings with it the notion of sequential (sub)movements and temporal structure, whereas the latter can really be treated as more of a constraint on the production of a single continuous movement.' This represents a conceptual concern about whether the theoretical claims are experimentally distinguishable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors speculate that longer sequences would be formed similarly with no theoretical constraint on the number of intermediate goals, and propose that multiple mechanisms operate at different timescales: slow habituation learning to build novel controllers and fast task-dependent modulation of consolidated controllers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises significant concerns about generalization: 'in typical sequence tasks, while some movements become coarticulated, people also tend to form chunks with distinct chunk boundaries. This presumably means that there is at least some specification of the sequential ordering of these chunks that must exist beyond the control policy and that multiple control policies may still be warranted to execute an entire sequence.' This directly questions whether the two-target findings extend to longer sequences as claimed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C27",
+      "C28",
+      "C78",
+      "C79"
+    ],
+    "result": "The computational model is based on task-dependent state-feedback control derived from stochastic optimal control theory, where control gains depend on task requirements and vary within movements. The authors argue that despite using linearized models, the main feature of task-dependent motor output as a combination of state feedback applies to non-linear control policies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'The authors provide an interesting and novel extension of the stochastic optimal control model' and acknowledges the model 'make predictions about patterns of behavior (e.g., in response to perturbations), which they then demonstrate in human participants.' While noting limitations, reviewers accept the modeling approach as appropriate for the study's goals.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The manuscript reviews existing literature showing that classical theories propose holistic sequence specification leading to coarticulation, while recent neural recordings (particularly from M1) suggest independent execution of separately specified elements. Earlier behavioral studies showed coarticulation across various motor domains, but recent M1 recordings showed separate execution phases without kinematic coarticulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This literature review is accepted without challenge by reviewers as accurate contextualization of the debate. Reviewer 1 acknowledges the authors 'begin by examining this phenomenon' in the context of existing theories. The framing of the scientific question is not disputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The role of feedback control in the coarticulation debate has been unexplored, although human motor control involves continuous sensory feedback processing. Optimal feedback control theory has been useful in predicting task parameter influences on control and interpreting flexible long-latency feedback responses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this as valid motivation for the study. Reviewer 1 notes the work addresses 'why the motor system sometimes coarticulates movements' using the OFC framework, implicitly accepting that this was an unexplored angle. The theoretical foundation is not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The authors argue that non-linear biomechanical effects on limb trajectory could be suppressed by participants in Experiment 2 (evidenced by straight reach paths), making curvature in Experiment 1 more likely related to task constraints than biomechanics. They acknowledge that biomechanical factors can influence coarticulation but suggest this deserves dedicated future work.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While no reviewer explicitly challenges this interpretation, Reviewer 2's concern about distinguishing coarticulated sequences from via-point movements implicitly questions whether biomechanical versus control-policy explanations are adequately separated. The claim is presented as inference rather than directly tested, and the authors themselves acknowledge limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Participants received explicit information about dwell constraints at the intermediate goal, resulting in quick coarticulation without extended practice. This aligns with task-dependent modulation of existing reaching controllers that can be rapidly switched trial-to-trial, as opposed to slow habituation-based learning.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 acknowledges 'their work does not speak to where or how those constraints are specified' but does not challenge that the rapid switching occurred as described. The behavioral observation of quick adaptation is accepted, though its mechanistic interpretation remains an open question per Reviewer 2's comments about higher-level constraint specification.",
+    "result_type": "MINOR"
+  }
+]

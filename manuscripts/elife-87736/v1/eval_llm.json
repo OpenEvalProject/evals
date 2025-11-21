@@ -1,0 +1,199 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C5",
+      "C14",
+      "C15",
+      "C21"
+    ],
+    "result": "In mice, running strongly modulates V1 activity with large positive correlations. The geometric mean ratio of firing rate during running versus stationary was 1.523 for preferred stimuli, 69% of units showed increased firing, and shared gain was significantly higher during running (mean difference 0.970, p~0).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C5, C14, C15, and C21 collectively demonstrate strong, positive running-correlated modulations in mouse V1 through multiple converging analyses (session-level correlations, unit-level firing rates, and population-level shared gain modeling). The quantitative results are statistically significant with appropriate sample sizes and consistent across analytical approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C4",
+      "C12",
+      "C16",
+      "C17",
+      "C22",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "In marmoset foveal V1, running-correlated modulations were small and slightly suppressive. The median correlation was -0.033 (p=0.034), geometric mean ratio for preferred stimuli was 0.899, and shared gain was slightly lower during running (mean difference -0.125, p=0.002).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C4, C12, C16, C17, C22, C37, C38, and C39 provide consistent evidence across multiple analytical levels (session correlations, unit firing rates, shared gain) that marmoset foveal V1 shows small, slightly negative running modulations. Statistical tests are appropriate and results are internally consistent, though effect sizes are small.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C41",
+      "C42",
+      "C74"
+    ],
+    "result": "Population-level gain modulations are a general principle of mammalian V1 function. The shared-gain model improved descriptions of population data in both mice and marmosets, though the correlation with running differed between species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C24, C41, C42, and C74 demonstrate that shared gain modeling improves fit in both species (Figure 4b,c with significant p-values), supporting a common computational principle. The interpretation is strengthened by citations to prior work in multiple species, though the functional interpretation (C42) remains somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C40",
+      "C43"
+    ],
+    "result": "Peripheral marmoset V1 neurons showed slightly higher responses during running (geometric mean ratio 1.129) compared to foveal neurons, suggesting retinotopic differences in running modulation within marmoset V1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25 and C26 provide statistically significant evidence for peripheral-foveal differences, but this is based on limited data (only 2 sessions with simultaneous recordings, n=147 peripheral units). Claim C43 acknowledges this is speculative. The small sample size and lack of systematic retinotopic mapping limit confidence in this result.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C72"
+    ],
+    "result": "Eye movements differed slightly between running and stationary periods in marmosets (higher saccade frequency and magnitude during running), but these differences cannot explain the observed V1 suppression. Regression analysis predicted only 0.05 Hz increase (<1% gain) from saccades.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28, C29, C30, C31, and C72 provide quantitative evidence that eye movements differ during running but predict effects opposite in sign to observed V1 modulations. The regression analysis appropriately tests whether eye movements could be a confound. However, the analysis is limited by inability to perform comparable analysis in mouse data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33"
+    ],
+    "result": "Pupil size was approximately 8% larger during running in marmosets, consistent with higher arousal state during running.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32 and C33 provide quantitative pupil size measurements and reasonable interpretation based on established pupil-arousal relationships. However, the authors acknowledge that cross-species calibration of pupil size to arousal levels remains uncertain, limiting stronger conclusions about arousal state equivalence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The primate-rodent differences in V1 gain modulations are consistent with known species differences in neuromodulatory circuitry. In primates, cholinergic inputs suppress activity via GABAergic neurons, while in rodents, cholinergic effects include disinhibition that can increase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34, C35, and C36 connect the observed functional differences to mechanistic knowledge from cited literature. The interpretation is reasonable and well-supported by citations, though it remains correlative rather than causally demonstrated in this study. The mechanistic explanation is plausible but not directly tested.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The experimental methods included head-fixed marmosets on a custom treadmill with high-resolution visual stimuli, eye tracking, and electrophysiological recordings using both chronic N-Form arrays and acute Neuropixels probes. Mouse data from a public database were analyzed with the same code for direct comparison.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C9, C10, C44-C48, C51-C55 describe the experimental apparatus and methods. These are well-documented with appropriate technical specifications and citations. The use of identical analysis code for both species (C55) strengthens cross-species comparisons. Methods appear sound and appropriately detailed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Visual stimuli and behavioral protocols were adapted for marmosets to match mouse experiments while accounting for species differences in visual acuity and behavior. Full-field drifting gratings at higher spatial frequencies were used, and reward schemes motivated running behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C65 describe necessary methodological adaptations for cross-species comparison. The rationale for differences (higher spatial frequencies due to better acuity, rewards to motivate running) is sound. Claim C64 appropriately acknowledges that full-field stimuli likely induced surround suppression in marmosets, which could affect response magnitudes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Data inclusion criteria were applied consistently across species. For session-level analyses, 25/32 mouse sessions and 27/34 marmoset sessions met criteria. For unit-level analyses, 1168/2015 mouse units and 786/1837 marmoset units were included.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 document clear, consistent inclusion criteria applied to both species. The criteria (minimum trial numbers, running proportion ranges, firing rate thresholds) are reasonable and transparently reported. Sample sizes are adequate for the statistical tests performed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "The shared gain model was cross-validated using speckled holdout (p=0.25) and latent variable signs were anchored to population average firing rate for interpretability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76 and C77 describe appropriate model validation and interpretation methods. The speckled holdout approach is cited to prior work and is suitable for population models. Sign anchoring (C77) is a reasonable methodological choice to make latent variables interpretable, though it is somewhat arbitrary.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C6",
+      "C7"
+    ],
+    "result": "Neurons in V1 of virtually all mammals are selective for simple image features, and primates are more fundamentally visual organisms than rodents with specialized features like foveas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C7 represent established knowledge in the field, supported by multiple citations to foundational literature. These provide important context for the study but are not novel findings. The claims accurately represent current understanding of mammalian visual systems.",
+    "result_type": "MINOR"
+  }
+]

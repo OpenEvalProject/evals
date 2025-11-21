@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C44",
+      "C45",
+      "C48",
+      "C49",
+      "C50",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "The authors determined cryo-EM structures of FnSiaQM in both unliganded and Neu5Ac-bound forms at ~3.2 \u00c5 resolution. Both structures are in an inward-facing conformation with minimal structural changes between them. The unliganded structure contains two Na+-binding sites, while the liganded form contains two Na+-binding sites plus an additional metal-binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C63 collectively provide strong structural evidence from cryo-EM data at sufficient resolution (3.2 \u00c5) to support the determination of both structures. The structural characterization is well-documented with appropriate figures and density maps, and the comparison between unliganded and liganded forms is quantitatively supported (RMSD 0.3 \u00c5).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Two conserved Na+-binding sites (Na1 and Na2) were identified in FnSiaQM that are similar to those in previously reported SiaQM structures and VcINDY. These sites utilize both side chain and main chain carbonyl interactions, with Na1 interacting with HP1 and helix 5, and Na2 interacting with HP2 and a stretch splitting helix 11.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C71 are well-supported by structural data and comparison with prior structures. The conservation across multiple structures (HiSiaQM, PpSiaQM, VcINDY) strengthens the findings. The structural details of coordination are clearly shown in figures with appropriate density.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "A third metal-binding site was identified in FnSiaQM, located away from the Neu5Ac binding site toward the cytoplasmic side, interacting with HP1 and helix 5a. This site is similar to a third site observed in SSS Neu5Ac transporters and corresponds to a position where Asp304 mutation causes loss of function in prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the structural observation of a third metal-binding site is supported by density (C72-C74), the authors conservatively label it as a 'metal-binding site' rather than a Na+ site due to longer metal-ligand distances. The functional significance remains unclear beyond cited mutagenesis data (C76), and the authors acknowledge uncertainty about its role. Additional biochemical characterization would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Neu5Ac interacts with FnSiaQM primarily through residues in HP1 and HP2 loops. Ser300 and Ser345 interact with the C1-carboxylate of Neu5Ac, with transport assays showing Ser300 is critical for transport (S300A mutant inactive) while Ser345 is dispensable (S345A mutant functional). Asp521 interacts with the N5 atom of the N-acetyl group.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C96 are strongly supported by both structural data showing specific interactions and functional validation through mutagenesis and transport assays. The differential effects of S300A (inactive) versus S345A (functional) mutations provide clear functional evidence supporting the structural observations. The 3.5 \u00c5 distance for Ser345 interaction (C95) is consistent with its dispensability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C87",
+      "C88",
+      "C97"
+    ],
+    "result": "Neu5Ac binds primarily to the elevator domain without direct scaffold domain interactions, with conserved residues in HP1 and HP2 loops. The binding site can accommodate Neu5Gc conversion without breaking key interactions due to sufficient cavity space.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C97 are supported by structural data showing interaction patterns and sequence conservation analysis. The inference about Neu5Gc accommodation (C97) is reasonable based on structural analysis of cavity space, though direct experimental validation with Neu5Gc would strengthen this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Two phosphatidylethanolamine lipids were modeled in FnSiaQM structures. Lipid1 binds between the connector helix and Q-domain in both structures and is conserved with HiSiaQM. Lipid2 binds between stator and elevator domains only in the Neu5Ac-bound structure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While lipid densities were observed and modeled (C77-C78), the authors acknowledge in the text that many lipid densities are not well-defined enough to model as specific lipids. The differential presence of Lipid2 only in the liganded structure (C80) is interesting but requires additional validation to determine if this is functionally significant or an artifact of sample preparation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Proteoliposome-based transport assays demonstrated that FnSiaQM actively transports Neu5Ac in a Na+-dependent and membrane potential-dependent manner, requiring the periplasmic binding protein FnSiaP. Transport energetics are similar to other characterized SiaPQM systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are well-supported by systematic transport assay data with appropriate controls (ethanol control for valinomycin, absence of Na+, absence of K+, absence of FnSiaP). The experimental design properly tests the requirements for transport and comparison with prior literature (C85) provides context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C59"
+    ],
+    "result": "FnSiaQM architecture consists of Q-domain (four tilted helices) and M-domain (scaffold and transport subdomains) connected by a perpendicular helix that does not contact either domain. The Q and scaffold domains are least conserved, suggesting they are not directly involved in substrate transport. All reported SiaQM structures are in inward-open, elevator-down conformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C59 are supported by structural data and sequence conservation analysis. The inference about connecting helix redundancy (C54) is reasonable based on structural observations and comparison with PpSiaQM (C55). The conservation analysis supporting functional assignments (C59) is appropriately cautious as an inference.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "The Neu5Ac binding site architecture in FnSiaQM is similar to VcINDY but with different specificity residues. The binding pocket has high druggability (score 3631, cavity 1875 \u00c5\u00b3). FnSiaP binds Neu5Ac with nanomolar affinity (Kd = 45 nM) while SiaQM likely has poor affinity with few polar interactions, suggesting substrate specificity is determined by the binding protein component rather than the transporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C108 are supported by structural comparisons, computational analysis (C98), and cited binding data for FnSiaP (C100-C101). The inferences about differential affinity (C107) and specificity determination (C103-C104) are reasonable based on the structural observations and comparison with high-affinity SiaP binding, though direct Kd measurements for SiaQM would strengthen these conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "DDM was selected as the optimal detergent for FnSiaQM purification based on detergent screening, and the purified protein eluted as a monodisperse peak in size exclusion chromatography.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 are supported by experimental data from detergent screening and size exclusion chromatography results shown in figures. This represents standard methodology appropriately executed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C105",
+      "C109"
+    ],
+    "result": "This work represents the first structure of a TRAP-type SiaQM from Gram-negative bacteria with bound Neu5Ac, providing a starting point for structure-based drug discovery, though mechanistic questions require further investigation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C105 is supported by review of prior literature showing no previous Neu5Ac-bound structures. Claim C109 appropriately acknowledges limitations while stating implications. The novelty claim is verifiable and the drug discovery potential is reasonable given the druggability analysis (C98-C99) and absence of TRAP transporters in eukaryotes.",
+    "result_type": "MAJOR"
+  }
+]

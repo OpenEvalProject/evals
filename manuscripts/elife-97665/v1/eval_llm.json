@@ -1,0 +1,406 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C44",
+      "C59",
+      "C60",
+      "C61",
+      "C68",
+      "C139",
+      "C140"
+    ],
+    "result": "The TFH-to-TR1 cell transdifferentiation process involves massive chromatin closure, with most open chromatin regions (OCRs) in TR1 cells already present in TFH cells, and minimal generation of new OCRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C5, C44, C59-C61, C68, C139-C140 collectively demonstrate through single-cell and bulk ATACseq data (Figures 1C, 2A) that TFH-to-TR1 conversion involves extensive chromatin closure with limited new OCR formation. The scMultiome and bulk ATACseq analyses consistently show that the vast majority of OCRs remaining in TR1 cells were already open at the TFH stage, supporting the conclusion of massive chromatin contraction during transdifferentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C72",
+      "C74"
+    ],
+    "result": "Chromatin closure during TFH-to-TR1 conversion is strongly associated with gene downregulation, with 87.2% of differentially expressed genes being downregulated and 94% of genes with closed chromatin regions showing decreased expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C72, C74 are supported by scRNAseq data from the scMultiome dataset (Figure 1D-E) and bulk RNAseq/ATACseq analyses (Figure 2C), showing statistically significant associations (p=8.25e-14, p=1.38e-08) between chromatin closure and gene downregulation. The data consistently demonstrate that massive chromatin closure accompanies extensive gene silencing during the TFH-to-TR1 transition.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C8",
+      "C45",
+      "C47",
+      "C94",
+      "C141"
+    ],
+    "result": "TR1-associated genes, including Il10, are epigenetically poised for expression at the TFH cell stage, being accessible, hypomethylated, and enriched for H3K27ac-marked active enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C8, C45, C47, C94, C141 are supported by comprehensive epigenetic analyses including ATACseq, ChIPseq (H3K4me3, H3K27me3, H3K27ac), and methylation data (Figures 3, 4, 6C). The data show that genes upregulated during TFH-to-TR1 transdifferentiation have nearly identical histone modification patterns and methylation status in both TFH and TR1 cells, indicating epigenetic poising at the TFH stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C46",
+      "C99",
+      "C108",
+      "C142"
+    ],
+    "result": "TR1-associated genes are closed and hypermethylated in conventional T cells (Tconv), but share remarkably similar methylation patterns between TFH and TR1 cells, with the methylation status already imprinted at the TFH stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C46, C99, C108, C142 are supported by whole-genome bisulfite sequencing data (Figure 4) showing that 87.5% of genes with accessible chromatin in both TFH and TR1 cells have similar methylation status (p<1.85e-5). The data demonstrate that while these genes are hypermethylated in Tconv cells, they are hypomethylated in both TFH and TR1 cells, indicating methylation imprinting at the TFH stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Active enhancers linked to genes upregulated at the TR1 stage are enriched for binding sites for TFH-associated transcription factors TOX-2, IRF4, and c-MAF, with ~61% of these TF-binding enhancers already present in TFH cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C133-C137 are supported by integrated analysis of ChIPseq data for TOX-2, IRF4, and c-MAF with active enhancer predictions (Figure 7C, Figure 6C). The data show that 34.4%, 66.3%, and 70.1% of active enhancers have TOX-2, IRF4, and c-MAF binding sites respectively, with ~61% present in TFH cells vs. <2% in Tconv cells (p<3.03e-8), indicating these sites are likely occupied at the TFH stage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C10",
+      "C48",
+      "C138",
+      "C144"
+    ],
+    "result": "The TR1 gene expression program is genetically imprinted at the TFH cell stage, with TFH cells being epigenetically poised to become TR1 cells, representing a key enabler of the transdifferentiation process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C48, C138, C144 represent the main conclusion of the study, supported by the comprehensive integration of all epigenetic data (chromatin accessibility, histone modifications, DNA methylation, and active enhancers). The collective evidence from multiple orthogonal approaches consistently demonstrates that TR1-associated genes are epigenetically marked for expression at the TFH stage, supporting the concept of genomic imprinting as a key enabler of transdifferentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C104",
+      "C109",
+      "C111",
+      "C112",
+      "C119",
+      "C122",
+      "C129"
+    ],
+    "result": "For genes with chromatin regions that remain accessible during TFH-to-TR1 conversion, differential gene expression is not correlated with changes in chromatin accessibility, DNA methylation, or active enhancer distribution, suggesting regulation by other factors such as transcription factor availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C104, C109, C111-C112, C119, C122, C129 are supported by statistical analyses showing no significant correlations (p=0.92, p=0.76, p=1) between differential gene expression and various epigenetic marks for genes with shared chromatin accessibility. The data from Figures 1F, 4E, 6B, 7B consistently demonstrate that differential expression of these genes is dissociated from epigenetic modifications, supporting the conclusion that other factors (e.g., TF availability) regulate their expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C114",
+      "C115"
+    ],
+    "result": "Transcription factor-coding genes that are downregulated during TFH-to-TR1 conversion close a significant number of open chromatin regions (13/29 downregulated vs. 4/38 upregulated, p<0.0001), while upregulation of TF-coding genes is largely dissociated from epigenetic marks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115 are supported by integrated analysis of scMultiome and epigenetic data (Figure 5) showing a statistically significant association (p<0.0001) between TF gene downregulation and chromatin closure. The data demonstrate that loss of TFH-associated TF expression is driven in part by chromatin remodeling, while TR1-promoting TF upregulation occurs independently of the epigenetic marks studied.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C120",
+      "C121"
+    ],
+    "result": "Most genes that remain open during TFH-to-TR1 transdifferentiation harbor active enhancers that are shared between TFH and TR1 cells (89.6%, p<2.2e-16), with 68.9% of these genes being downregulated in TR1 cells despite maintaining active enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C118, C120-C121 are supported by integrated ATACseq and H3K27ac ChIPseq analyses (Figure 6A-B) showing that the Tet+ pool shares significantly more active enhancers with TFH cells (80.2%) than with Tconv cells (55.5%, p<2.2e-16). The data demonstrate that most genes with shared active enhancers are downregulated, indicating that active enhancer presence alone does not determine gene expression during transdifferentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The vast majority of differentially methylated regions (DMRs) mapping to active enhancers in TFH and Tet+ cells are hypomethylated (92.5% and 88.7% respectively, p<2.2e-16), with most differentially methylated enhancers shared between these cell types (65-66%), indicating that the methylation status of distal gene regulatory elements for TR1-specific genes is imprinted at the TFH stage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C128, C130-C132 are supported by integrated analysis of methylation, ATACseq, and ChIPseq data (Figure 7A-B, Figure 6C) showing that DMRs at active enhancers are predominantly hypomethylated and shared between TFH and Tet+ cells. The Il10 locus example (Figure 6C) demonstrates that genes upregulated at the TR1 stage have already demethylated their distal regulatory elements at the TFH stage, supporting the concept of epigenetic imprinting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C145"
+    ],
+    "result": "Transdifferentiation of TFH cells into TR1 cells is likely driven by changes in the expression of TFH-stabilizing and TR1-promoting transcription factors, possibly in response to sustained TCR ligation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C145 is supported by the comprehensive epigenetic data showing that TR1 genes are already poised for expression at the TFH stage, combined with previous work (cited) demonstrating that pMHCII-NPs trigger sustained TCR signaling. The observation that differential gene expression is dissociated from epigenetic changes, coupled with the finding that TF gene downregulation is associated with chromatin closure, supports the conclusion that changes in TF expression drive transdifferentiation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C58"
+    ],
+    "result": "Single-cell multiome analysis reveals distinct TFH and TR1 cell clusters, with the pMHCII-NP-induced TFH cells overlapping with KLH-induced effector TFH.1 cells (Bcl6hiTox2hiIl21+Pdcd1+), and these cell populations being more similar to each other than to other subsets despite arising from different stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C55, C58 are supported by scMultiome data (Figure 1A-B) showing cell clustering and hierarchical analysis. The data demonstrate that pMHCII-NP-induced TFH cells and KLH-induced TFH.1 cells have overlapping transcriptional and epigenetic profiles, validating the use of KLH-induced TFH cells as a comparison for studying the TFH-to-TR1 transdifferentiation process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "Bulk ATACseq analyses replicate single-cell findings, showing that KLH-induced TFH cells have 13-fold more differential OCRs than Tet+ cells, with 97.9% of Tet+ OCRs also present in TFH cells, and differential OCRs being significantly associated with gene upregulation (p<7.88e-11).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71, C73 are supported by bulk ATACseq and RNAseq data (Figure 2A-B) that faithfully replicate the scMultiome observations. The data provide independent validation of the chromatin closure phenomenon and its association with gene expression changes, strengthening the conclusions drawn from single-cell analyses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "H3K4me3 histone marks show similar overall deposition patterns between TFH and Tet+ cells, with only 123 differentially marked peaks between these cell types, and 77.6% of H3K4me3 peaks in genes with shared OCRs being present in all three cell types (TFH, Tet+, Tconv).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C82 are supported by H3K4me3 ChIPseq data (Figure 3A, Figure 3\u2014source data 1-3) showing minimal differences in H3K4me3 deposition between TFH and Tet+ cells. The data demonstrate that genes remaining open during transdifferentiation have nearly identical H3K4me3 landscapes, supporting the concept of epigenetic poising at the TFH stage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "H3K27me3 repressive marks show similar patterns between TFH and Tet+ cells, with only 167 differentially marked regions, and 95.8% of H3K27me3 marks in genes with shared OCRs being present in all three cell types, indicating these genes already had this mark at the na\u00efve and TFH stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C88 are supported by H3K27me3 ChIPseq data (Figure 3A, Figure 3\u2014source data 1-3) showing that despite TFH cells having significantly more H3K27me3 peaks overall (42,274 vs. 3,236 in Tet+), there are minimal differences in H3K27me3 deposition for genes with shared chromatin accessibility. This supports the conclusion that repressive marks are also imprinted at the TFH stage.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "H3K27Ac active marks show similar overall deposition patterns between TFH and Tet+ cells (~44,000 marks per cell type), with only 7 differentially marked regions, and 73.8% of H3K27ac marks in genes with shared OCRs being present in both TFH and Tet+ but not Tconv cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 are supported by H3K27Ac ChIPseq data (Figure 3A, Figure 3\u2014source data 1-3) showing remarkably similar H3K27ac deposition between TFH and Tet+ cells. Unlike H3K4me3 and H3K27me3, most H3K27ac marks in genes with shared OCRs were acquired at the TFH stage rather than being present in na\u00efve cells, supporting the concept of active enhancer establishment during TFH differentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "DNA methylation analysis reveals that 43.2% of differentially methylated regions (DMRs) are shared between TFH and Tet+ cells, with 70-71% of genes with differential methylation in Tet+ cells also being differentially methylated in TFH cells, primarily in intronic CpG islands.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C98 are supported by whole-genome bisulfite sequencing data (Figure 4A-B, Figure 4\u2014figure supplement 1) showing extensive sharing of methylation patterns between TFH and Tet+ cells. The statistical significance (p<2.2e-16) and high percentage of shared DMRs support the conclusion that TFH and Tet+ cells have remarkably similar methylomes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Among genes with accessible chromatin in both TFH and TR1 cells, 328 of 545 harbor DMRs, with 87.5% having similar methylation status in both TFH and Tet+ cells (p<1.85e-5), and 48.5% being differentially expressed between TR1 and TFH cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C103 are supported by integrated methylation and scMultiome data (Figure 4D) showing that genes remaining accessible during transdifferentiation share an even greater degree of methylation similarity than all genes. The lack of correlation between methylation status and differential expression (p=0.92) supports the conclusion that methylation is imprinted at the TFH stage but does not directly regulate differential expression.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C110"
+    ],
+    "result": "Specific examples of methylation patterns show that Il2 (TFH-specific) and Il10 (TR1-specific) are both hypomethylated in TFH and Tet+ cells compared to Tconv, with only minor differences between TFH and Tet+ cells, while Il21 (expressed by both) is hypomethylated in both subsets.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107, C110 are supported by detailed methylation analysis of specific loci (Figure 4\u2014figure supplement 2) showing that even genes with differential expression between TFH and TR1 cells have similar methylation patterns. The data provide specific examples supporting the general conclusion that methylation status is imprinted at the TFH stage, with only minor changes during transdifferentiation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Previous work has established that pMHCII-NP therapy triggers TFH cell expansion and transdifferentiation into TR1 cells that resolve autoimmune inflammation, with this process requiring Bcl6 and Irf4 for both TFH expansion and TR1 formation, while Prdm1 (Blimp-1) selectively gates the TFH-to-TR1 conversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C11-C19 summarize previous work by the authors (cited references) that established the TFH-to-TR1 transdifferentiation pathway. These claims provide essential context for the current study and are supported by the cited literature. The current manuscript builds on this foundation by investigating the epigenetic mechanisms underlying this process.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "BDC2.5mi/I-Ag7-specific CD4+ T-cells are autoreactive T-cells contributing to type 1 diabetes in NOD mice, and treatment with cognate pMHCII-NPs leads to expansion of anti-diabetogenic TR1 cells and reversal of diabetes, with the induced Tet+ cell pools containing ~30% TFH and ~70% TR1 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C52 describe the experimental system used in the study and are supported by cited previous work and the current data. These claims establish the biological relevance of the model system and provide context for the cell populations analyzed in the epigenetic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C56",
+      "C57"
+    ],
+    "result": "KLH-induced TFH.2 cells express lower levels of Pdcd1, Il21, Bcl6, and Tox2 and higher levels of Maf, Tcf7, Cxcr5, and Cd69 compared to TFH.1 cells, while TFH.3 cells display transcriptomic features of follicular T-regulatory cells (Foxp3+Bcl6+Bhlhe40+Icos+Il10+).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 describe the heterogeneity within the KLH-induced TFH population and are supported by cited previous work. These claims provide important context for understanding the TFH cell populations used as comparators in the epigenetic analyses, though they are not central to the main findings of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C20"
+    ],
+    "result": "The hypothesis tested in this study is that pMHCII-NP-induced conversion of TFH cells into TR1 cells involves epigenetic re-programming of the TFH precursors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C20 states the initial hypothesis of the study. However, the comprehensive epigenetic data presented actually refute this hypothesis, showing instead that TR1 genes are already epigenetically marked at the TFH stage rather than undergoing extensive epigenetic reprogramming. The study's findings demonstrate that transdifferentiation occurs through changes in TF expression rather than epigenetic reprogramming, making this hypothesis unsupported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Background knowledge establishes that chromatin modifications, histone modifications, and DNA methylation regulate T-cell differentiation, activation, and memory responses, with extensive epigenetic remodeling typically accompanying acquisition of new functional states by peripheral T-cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C42 summarize established knowledge about epigenetic regulation of T-cell differentiation and function, supported by numerous cited references. These claims provide essential background context for understanding why the findings of the current study (showing minimal epigenetic changes during TFH-to-TR1 transdifferentiation) are surprising and significant.",
+    "result_type": "MINOR"
+  }
+]

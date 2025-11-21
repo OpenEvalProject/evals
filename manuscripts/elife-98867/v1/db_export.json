@@ -1,0 +1,2303 @@
+{
+  "submission": {
+    "id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T20:46:40.424973Z",
+    "updated_at": "2025-11-21T20:46:40.424973Z"
+  },
+  "content": [
+    {
+      "id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "content_type": "manuscript",
+      "content_text": "# NK cell exhaustion in Wilson\u2019s disease revealed by single-cell RNA sequencing predicts the prognosis of cholecystitis\n\n## Authors\n\n- Yong Jin<sup>1</sup>\n- Jiayu Xing<sup>1</sup>\n- Chenyu Dai<sup>2</sup>\n- Lei Jin<sup>3</sup>\n- Wanying Zhang<sup>1</sup>\n- Qianqian Tao<sup>3</sup>\n- Mei Hou<sup>1</sup>\n- Ziyi Li<sup>3</sup>\n- Wen Yang<sup>1</sup> \u2020\n- Qiyu Feng<sup>1</sup> ([ORCID: 0009-0004-5032-7500](https://orcid.org/0009-0004-5032-7500)) \u2020\n- Hongyang Wang<sup>1</sup> \u2020\n- Qingsheng Yu<sup>2</sup> ([ORCID: 0000-0002-8074-0329](https://orcid.org/0000-0002-8074-0329)) \u2020\n\n### Affiliations\n\n1. Cancer Research Center, The First Affiliated Hospital of USTC, Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China ([ROR:04c4dkn09](https://ror.org/04c4dkn09))\n2. Department of Cadre Cardiology, The First Affiliated Hospital of Anhui University of Chinese Medicine Hefei China ([ROR:03t1yn780](https://ror.org/03t1yn780))\n3. Department of General Surgery, The First Affiliated Hospital of Anhui University of Chinese Medicine Hefei China ([ROR:03t1yn780](https://ror.org/03t1yn780))\n4. Institute of Chinese Medicine Surgery, Anhui Academy of Chinese Medicine Hefei China\n5. International Co-operation Laboratory on Signal Transduction, Eastern Hepatobiliary Surgery Hospital, Second Military Medical University Shanghai China ([ROR:043sbvg03](https://ror.org/043sbvg03))\n6. National Center for Liver Cancer, Second Military Medical University Shanghai China ([ROR:04tavpn47](https://ror.org/04tavpn47))\n\n\u2020 Corresponding author\n\n## Abstract\n\nMetabolic abnormalities associated with liver disease have a significant impact on the risk and prognosis of cholecystitis. However, the underlying mechanism remains to be elucidated. Here, we investigated this issue using Wilson\u2019s disease (WD) as a model, which is a genetic disorder characterized by impaired mitochondrial function and copper metabolism. Our retrospective clinical study found that WD patients have a significantly higher incidence of cholecystitis and a poorer prognosis. The hepatic immune cell landscape using single-cell RNA sequencing showed that the tissue immune microenvironment is altered in WD, mainly a major change in the constitution and function of the innate immune system. Exhaustion of natural killer (NK) cells is the fundamental factor, supported by the upregulated expression of inhibitory receptors and the downregulated expression of cytotoxic molecules, which was verified in clinical samples. Further bioinformatic analysis confirmed a positive correlation between NK cell exhaustion and poor prognosis in cholecystitis and other inflammatory diseases. The study demonstrated dysfunction of liver immune cells triggered by specific metabolic abnormalities in WD, with a focus on the correlation between NK cell exhaustion and poor healing of cholecystitis, providing new insights into the improvement of inflammatory diseases by assessing immune cell function.\n\n## Introduction\n\nCholecystitis refers to a group of inflammatory diseases with different etiologies and clinical courses (Elwood, 2008). While the corresponding pathological mechanisms of cholecystitis are complicated, systemic inflammation is widely recognized as a primary catalyst of cholecystitis pathology (Huffman and Schenker, 2010; Markaki et al., 2021; Laurila et al., 2005; Fu et al., 2022; Abu-Sbeih et al., 2019). Cholecystectomy is typically the preferred treatment option for patients with severe cholecystitis and gallstones, whereas medication is prescribed for those with mildly symptomatic cholecystitis or calculous cholecystitis. However, a substantial percentage of patients face the possibility of complications or recurrence (Loozen et al., 2017; van Dijk et al., 2016). Compelling evidence supports that the proportion, gene expression profile, and functional status of immune cells hold significant prognostic value (Buonacera et al., 2022; McKinney et al., 2010; McKinney et al., 2015; Sun et al., 2021; Fridman et al., 2017; Wouters and Nelson, 2018). Therefore, it is critical to comprehensively comprehend the immune cell dysfunction linked with cholecystitis, its corresponding altered characteristics, and their prognostic implications.\n\nNatural killer (NK) cells are the major innate lymphocyte subset and are found in most organs (Abel et al., 2018; Crinier et al., 2020). They produce lytic granules that eliminate infected or cancerous cells, coordinate the inflammation process, form immunological memory, and modulate antigen-presenting cell function in inflammatory diseases (Highton et al., 2021; Parisi et al., 2017; Earls and Lee, 2020). In the context of tumors and chronic infections, NK cells exhibit an exhausted phenotype, termed NK cell exhaustion, which is characterized by downregulated expression of activating receptors (e.g. NKG2D, FCGR3A), upregulated expression of inhibitory receptors (e.g. KLRC1, PD-1, TIGIT, Tim-3), decreased production of effector cytokines (e.g. IFN\u03b3, GZMB), and impaired cytolytic activity (Bi and Tian, 2017; Zhang et al., 2018). Recently, blockade of KLRC1 and TIGIT has been shown to reverse NK cell exhaustion and enhance the therapeutic effects of anti-tumor and anti-infective immunotherapies (Zhang et al., 2018; Liu et al., 2023; Zhang et al., 2019b). In addition, NK cell exhaustion has been reported to predict poor prognosis in hepatocellular carcinoma and acute myeloid leukemia; however, the correlation of NK cell exhaustion with prognosis in cholecystitis and other inflammatory diseases remains largely unexplored (Sun et al., 2019; Liu et al., 2022; Sun et al., 2017).\n\nThe liver plays a critical role in immune defense. It contains a substantial population of diverse immune cells, particularly NK cells (Crispe, 2009; Kubes and Jenne, 2018; Racanelli and Rehermann, 2006). The liver modulates these cells to mount immune responses upon encountering specific inflammatory triggers (Kubes and Jenne, 2018; Hardy et al., 2016). Furthermore, liver pathologies affect mesenchymal immune cell function and influence systemic inflammatory responses, impacting the development and outcome of inflammation-associated diseases such as cholecystitis (Armstrong et al., 2014; Matyas et al., 2021; Knab et al., 2014). Wilson\u2019s disease (WD) is a rare genetic disorder caused by mutations in the gene encoding the transmembrane copper-transporting P-type ATPase protein (Bandmann et al., 2015). It leads to deficits in mitochondrial structure and function, as well as specific alterations in liver metabolism, resulting in a variety of liver diseases. Additionally, WD is commonly associated with inflammatory conditions in the clinic (Huster et al., 2006; Medici et al., 2013; Huster, 2014; Aggarwal and Bhatt, 2020). Thus, WD, with its unique etiology, serves as an excellent model for exploring the regulation of immune cell function by hepatic metabolic abnormalities.\n\nIn this retrospective clinical study of over 600 WD patients, it was found that they had a significantly higher cholecystitis incidence than the general population. This, in turn, is associated with a poor prognosis for cholecystitis in these patients. A thorough examination of the immune cell landscape in the hepatic mesenchymal stromal microenvironment of WD patients was performed using single-cell RNA sequencing (scRNA-seq). Specifically, there were significant changes in the composition and function of the innate immune system, including an increase of mononuclear phagocytes (MPs) and NK cells, as well as enhanced pro-inflammatory characteristics. Additionally, there was an enhancement in the biological processes of antigen presentation, activation of immune response, and activation of lymphocytes. One key event among these changes was the exhaustion of NK cells, as demonstrated by an increase in the expression of inhibitory receptors KLRC1 and TIGIT and a decrease in the expression of cytotoxic molecules. Multiplex immunohistochemistry (mIHC) and flow cytometry techniques confirmed the exhaustion of NK cells in both clinical liver tissue and peripheral blood samples. Finally, our bioinformatics analysis has confirmed a positive correlation between NK cell exhaustion and poor prognosis in cholecystitis and other inflammatory diseases. Our study has demonstrated abnormal liver mesenchymal immune cell function triggered by specific metabolic dysfunction in WD, focusing on NK cell exhaustion and its correlation with poor healing of cholecystitis. These findings provide foundation for further studies of effect of hepatocytes metabolic changes on immune cell function and insights into improvement of inflammatory diseases by assessing immune cell function.\n\n## Results\n\n### WD causes poor prognosis of cholecystitis\n\nWD is a genetic disorder resulting from mutations in the ATP7B gene, exhibiting significant genetic heterogeneity with over 600 mutations or polymorphisms (Cheng et al., 2017). Through sequencing DNA samples from 20 patients with WD, we found that c. 2333G>T (p. R778L) accounted for the majority (65%) of the three most common mutations in Chinese, while c. 2804C>T (p. T935M) and c. 2975C>T (p. P992L) were not detected (Figure 1a; Yang et al., 2021). In hepatocytes, ATP7B deficiency in the trans-Golgi network (TGN) leads to abnormalities in mitochondrial function and copper metabolism, and ultimately to a wide range of liver diseases (Figure 1b; Cz\u0142onkowska et al., 2018; Roberts et al., 2008; Zischka and Lichtmannegger, 2014; Muchenditsi et al., 2021). Typical clinical manifestations are liver fibrosis and Kayser-Fleischer ring in the cornea that caused by Cu accumulation in the cornea (Figure 1c and d; Cz\u0142onkowska et al., 2018). Additionally, a lower total bilirubin and metabolic symptoms of WD patients, a lower risk of hyperglycemia (Cohort 1 and Cohort 2), are observed (Figure 1e, Figure 1\u2014figure supplement 1a). Mitochondrial stress and glycolysis assays revealed that knockout of the ATP7B (ATP7B-KO) in human hepatocyte cell lines WRL 68 significantly impaired the basal oxygen consumption rate (OCR) and capacity of ATP production, while the extracellular acidification rate (ECAR) of glycolysis and glycolysis capacity remained unchanged (Figure 1\u2014figure supplement 1b and c). These results demonstrate that WD is a disease characterized by abnormal hepatocyte metabolism.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig1-v1.jpg)\n\n**Figure 1.:** (a) DNA sequencing result of 20 WD patients was summarized in the graph. (b) The schematic diagram illustrates copper transport disturbances caused by ATP7B mutations, along with structural and functional impairments in mitochondria. Created with BioRender.com. (c) Masson-trichrome staining of liver tissues of patients with WD and control. (d) The picture of Kayser-Fleischer (KF) ring in the cornea of a patient with WD, captured during clinical examination. (e) The table of clinical statistics of patients in three cohorts. Data are mean \u00b1 SD. Unpaired two-tailed t-test and chi-square test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) The table of clinical characteristics of patients in three cohorts at baseline. Data are mean \u00b1 SD. (b) Mitochondrial stress (oxygen consumption rate [OCR]) measured in ATP7B-KO (n=3) and NC (n=3) WRL 68 cell lines. Bar charts showing the statistical results of basal respiration and ATP production. Unpaired two-tailed t-test. (c) Glycolysis stress (extracellular acidification rate [ECAR]) measured in ATP7B-KO (n=3) and NC (n=3) WRL 68 cell lines. Bar charts showing the statistical results of glycolysis, and glycolysis capacity. Unpaired two-tailed t-test.\n\nInterestingly, chronic cholecystitis emerged as the most common complication, with a notably higher incidence in WD patients (49.51%) compared to HBV patients (9.46%) in Cohort 2 (Figure 1e). Despite the comparable incidence of gallbladder in the two groups and the significantly reduced plasma concentration of total bilirubin in WD patients (Cohort 1 and Cohort 2), this finding holds (Figure 1e). Moreover, in cholecystitis patients, the proportion of cases with abnormal index was significantly higher when combined with WD, which included white blood cell (WBC), neutrophil (NEU), and lymphocyte (LYM) counts (Cohort 3, Figure 1e). Overall, these findings suggest that cholecystitis outcomes are negatively affected by WD.\n\n### Single-cell profiling of non-parenchymal cells in the liver of WD patients\n\nThe hepatic mesenchymal cells from three WD patients and three liver hemangioma patients were analyzed using the 10x Genomics platform for scRNA-seq (Figure 2a) to better understand the complicated immune cell abnormalities in WD patients. 57,384 high-quality single transcriptomes were generated, with 30,068 cells in the group of WD patients (CASE) and 27,316 in the group of liver hemangioma patients (CON). We validated 26 principal components via PCA and substantiated the grouping through UMAP dimensionality reduction cluster graph (Figure 2b and c, Figure 2\u2014figure supplement 1a). We then utilized individual cell expression profiles and reference to cell marker gene expression to implement an automated annotation method, which was further complemented by manual review and fine-tuning. This initial annotation process resulted in the classification and display of 12 significant cell clusters. The UMAP algorithm was used to segregate and display the clusters. The study identified various cell types, including hepatocytes (He et al., 2020), cholangiocytes (He et al., 2020), endothelial cells (ECs) (Li et al., 2021; Sathe et al., 2020; Wang et al., 2020d), hepatic stellate cells (HepSCs) (Bhattacharjee et al., 2021), proliferating cells (Sathe et al., 2020; Dumas et al., 2020; Durante et al., 2020), B cells (Gong et al., 2021; Wang et al., 2020c), plasma cells (Durante et al., 2020; Gong et al., 2021), T and NK cells (Gong et al., 2021; Zeng et al., 2019; Zhang et al., 2023), neutrophils (Wu et al., 2021), mast cells (Sathe et al., 2020; Zeng et al., 2019; Wu et al., 2021), MPs (Ramachandran et al., 2019), and plasmacytoid dendritic cells (pDCs) (Sathe et al., 2020; Pombo Antunes et al., 2021; Figure 2d, e and Figure 2\u2014figure supplement 1b, c). Figure 2\u2014figure supplement 1d exhibited the top 10 differently expressed genes (DEGs) for each cell type.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig2-v1.jpg)\n\n**Figure 2.:** (a) The workflow of single-cell RNA sequencing (scRNA-seq). Created with BioRender.com. (b) UMAP visualization of 26 principal components of all the single cells. (c) UMAP visualization of 26 principal components by samples. (d) UMAP visualization of 12 main cell types. (e) The dot plot showing the expression of top 3 marker genes in 12 main cell types. (f) The bar chart showing the proportion of 12 main cell types in each sample.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) UMAP visualization of principal components by six samples. (b) UMAP visualization of 12 main cell types by six samples, corresponding to Figure 2d. (c) The table displaying cell marker genes for annotation of main cell types. (d) The heatmap showing the top 10 DEGs for each cell type. (e) The bar chart showing the average percentage of different cell types in CASE (n=3) and CON (n=3). Data are mean \u00b1 SD.\n\nBased on the initial annotation, there were notable variations in the quantities and ratios of different cell types between CASE and CON. Our study observed that T and NK lineages were the primary immune cell population among all the examined samples, accounting for 56.54% in CASE and 73.55% in CON, followed by MPs which constituted 17.33% in CASE and 9.97% in CON (Figure 2f, Figure 2\u2014figure supplement 1e, and Supplementary file 1a). The significant increase in the proportion of MPs and decrease in T and NK cells suggest that MPs likely dominate the immune microenvironment remodeling in WD patients, while lymphocytes play a minor role. B cell proportions (4.53% in CASE and 2.27% in CON), plasma cell proportions (2.36% in CASE and 0.42% in CON), and pDC proportions (0.42% in CASE and 0.16% in CON) were elevated, while neutrophil proportions (3.53% in CASE and 6.45% in CON) declined. The proportion of remaining cells is shown in Supplementary file 1a.\n\n### An overview of the immune microenvironment in WD patients\n\nTo demonstrate dissimilarities in the composition of the immune microenvironment between the two groups of individuals in a more detailed manner, a secondary subtype clustering and annotation process was applied to MPs and T and NK cells (Figure 3a, b and Figure 3\u2014figure supplement 1a, b). MPs are myeloid immune cells that serve phagocytic and antigen-presenting functions. These cells, which include monocytes, macrophages, and dendritic cells, play an essential role in determining the nature of the immune response (Strauss et al., 2015). A total of 6962 MPs were identified (4439 in CASE and 2523 in CON), and they were subdivided into seven clusters through annotation (Figure 3a, Figure 3\u2014figure supplement 1a, and Supplementary file 1a). Cell marker genes for annotating cell subtypes were depicted in Figure 3\u2014figure supplement 1c and d, and Figure 3\u2014figure supplement 1e demonstrated the top 10 DEGs between the two groups (Sun et al., 2021; Sathe et al., 2020; Wang et al., 2020d; Dumas et al., 2020; Durante et al., 2020; Zeng et al., 2019; Zhang et al., 2023; Wu et al., 2021; Ramachandran et al., 2019; Pombo Antunes et al., 2021; Singh et al., 2019; Halbritter et al., 2019; Bassez et al., 2021; Popescu et al., 2019; Chen et al., 2020; Wang et al., 2020b). The DEGs were related to various cell types, including proliferating cells, macrophages, monocytes, mature dendritic cells (MatureDCs), conventional type 1 dendritic cells (cDC1), conventional type 2 dendritic cells (cDC2), and Kupffer cells (KCs). In CASE, there was a significant increase in both macrophages (25.03% in CASE versus 14.33% in CON) and KCs, the resident macrophages in the liver (26.03% in CASE versus 22.96% in CON), suggesting their involvement in promoting hepatic inflammation in metabolic liver disease (Figure 3a; Dixon et al., 2013). By contrast, the percentages of monocytes (35.45% in CASE and 41.78% in CON), cDC1 (2.14% in CASE and 5.99% in CON), and cDC2 (10.39% in CASE and 14.13% in CON) were decreased in CASE (Figure 3a).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig3-v1.jpg)\n\n**Figure 3.:** (a) UMAP visualization of mononuclear phagocytes (MPs) colored and labeled by cell subtypes (left). The bar chart showing the average percentage of different subtypes in CASE (n=3) and CON (n=3) (right). Data are mean \u00b1 SD. (b) UMAP visualization of T and NK cells colored and labeled by cell subtypes (left). The bar chart showing the average percentage of different subtypes in CASE (n=3) and CON (n=3) (right). Data are mean \u00b1 SD. (c) The heatmap showing the top 20 differently expressed genes (DEGs) for all immune cells. (d) The dot plot showing Gene Ontology (GO) enrichment on DEGs of all immune cells between CASE and CON. BP, biological processes; CC, cellular components; MF, molecular function. (e) The scatter showing the incoming and outgoing interaction strength of all cell subtypes in CASE and CON.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) UMAP visualization of cell subtypes in mononuclear phagocytes (MPs) by six samples, corresponding to Figure 3a. (b) UMAP visualization of cell subtypes in T and natural killer (NK) cells by six samples, corresponding to Figure 3b. (c) The table displaying cell marker genes for annotation of cell subtypes. (d) The dot plot showing the expression of top 3 marker genes in each cell subtypes. (e) The heatmap showing the top 10 differently expressed genes (DEGs) for each cell subtypes.\n\nSeventeen clusters were obtained through reclustering for the largest population of T and NK cells, totaling 34,339 cells (15,403 cells in CASE and 18,936 in CON) (Gong et al., 2021; Wu et al., 2021; Cella et al., 2019; Elmentaite et al., 2021; Liu et al., 2020; Wang et al., 2020a; Tirosh et al., 2016; Jaeger et al., 2021; Depuydt et al., 2020; Andor et al., 2019; Heming et al., 2021; Xin et al., 2022; Zhao et al., 2020; Williams et al., 2021; Madissoon et al., 2019; Zhang et al., 2020; Fernandez et al., 2019; Luoma et al., 2020). The clusters included ILC3_IL1R1, NKT_GNLY, NKT_IFNG, NKT_KLRG1, NK_FCER1G, NK_KLRC1, NKT_XCL2, NK_FCGR3A, CD4NaiveT_CCR7, CD4Tmem_CD40LG, CD4Treg_CTLA4, CD8MAIT_KLRB1, CD8MAIT_SLC4A10, CD8Teff_GZMH, CD8Teff_GZMK, CD8Teff_ISG15, and CD8Teff_MT1X (Figure 3b; Figure 3\u2014figure supplement 1b; Supplementary file 1a). The proportion of NK cells (40.97% and 17.07% in CASE and CON, respectively) and CD4Treg (0.92% and 0.31% in CASE and CON, respectively) was significantly increased in CASE. On the other hand, a decrease of NKT cells (28.72% in CASE and 35.26% in CON), CD8MAIT (7.76% in CASE and 22.14% in CON), and CD8Teff (14.95% in CASE and 17.88% in CON) was observed in CASE. CD4 regulatory T cells are thought to inhibit T cell activation in autoimmune and virus-related liver diseases, indicating a correlation between elevated CD4 regulatory T cells and reduced CD8 T cells in WD patients (Zhang et al., 2016). The distribution of other types of cells between the two groups is shown in Figure 3b and Supplementary file 1a.\n\nTo systematically evaluate the key functional alteration, we analyzed the top 20 DEGs in all immune cell populations. We found that the expression of genes encoding complement C1q (C1QA, C1QB, and C1QC) and HLA-DRA was significantly upregulated in CASE. Conversely, the expression of genes encoding heat shock protein (HSPA1A, HSPA1B, HSPM1, HSPA6, HSP90AB1, HSPE1, and HSPD1) was markedly downregulated in CASE (Figure 3c). The Gene Ontology (GO) analysis results demonstrate that WD enhances the abilities of antigen-presenting cells to activate immune response and related lymphocytes, through upregulating antigen processing and presentation, activation of immune response, and positive regulation of lymphocyte activation. However, heat shock proteins delivering antigens may be responsible for the downregulation of lymphocytes differentiation and T cell activation (Shevtsov and Multhoff, 2016). Next, we analyzed the cellular communication network using CellChat. The primary signal senders and receivers were shown, with their respective strength. Our findings reveal that CD8Teff, KCs, NKT, CD8MAIT, monocytes, cDC2, and macrophage were the primary participants in intercellular communication, with the high value in both incoming and outgoing interaction strength (Figure 3e). Furthermore, the incoming interaction strength of CD8Teff and NK cells was higher in CASE, suggesting the regulation of biological process by extracellular signals, while neutrophils and monocytes exhibited the lower interaction strength in both outgoing and incoming (Figure 3e). Collectively, these results demonstrate changes in the composition and effects of innate immunity in the liver of WD patients.\n\n### The dysfunction of main immune cells in WD patients\n\nTo obtain a detail analysis of function comparison in immune cells between two groups, we scored and evaluated the core functional signature of major cell types. We further clustered macrophages, which accounted for 14.33% of the MPs in CON and increased to 25.03% in CASE, resulting in the identification of four distinct subtypes (Figure 4\u2014figure supplement 1a). Interestingly, these four subtypes in the WD patients exhibited distinct gene expression profiles. Macrophages_3 in CASE displayed elevated expression levels of S100A family genes (S100A8, S100A9, S100A12, S100A6, VCAN, FCN1, and S100A4), indicating a potential contribution to MDSC-like macrophages. In contrast, Macrophages_4 in CASE were characterized by upregulation of lipid metabolism genes (FABP5, APOC1, CTSD, and PLA2G7) (Figure 4\u2014figure supplement 1b; Zhang et al., 2019a; Wang et al., 2022). By scoring various gene signatures, we compared the M1 polarization, M2 polarization, pro-inflammatory signature, and interferon response signature of four subtypes within two groups (Figure 4a). These four subtypes displayed consistently overlapped M1/M2 signatures. Significantly, the Macrophages_3 subtype exhibited a more pronounced pro-inflammatory signal in CASE, while the other subtypes showed a slight decrease. In addition, the interferon response signature showed slight elevation in four subtypes in CASE. Kupffer cells, which are liver-resident macrophages with unique functions in maintaining homeostasis, represent the most abundant population of tissue-resident macrophages in the human body (Dixon et al., 2013). KCs were also further clustered and three subtypes were obtained (Figure 4\u2014figure supplement 1c). Significant differential expression of genes related to the inflammatory response, including IL1B, CXCL2, CCL3C1, CXCL8, and CCL2, were identified between the two groups (Figure 4\u2014figure supplement 1d). Similarly, KCs subtypes in two groups also showed overlapping M1/M2 signatures, but all subtypes in CASE showed varying degrees of increase in pro-inflammatory and interferon-responsive signatures (Figure 4b).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig4-v1.jpg)\n\n**Figure 4.:** (a) The violin plots displaying M1 polarization, M2 polarization, pro-inflammatory signature, and interferon responsed signature of the four subtypes of macrophages between the two groups by gene scoring. (b) The violin plots displaying M1 polarization, M2 polarization, pro-inflammatory signature, and interferon responsed signature of the three subtypes of Kupffer cells between the two groups by gene scoring. (c) The violin plots displaying maturation, phagocytosis, chemotaxis, chemokine activity, and Type I interferon signaling pathway scores of neutrophils between the two groups by gene scoring. (d) The heatmap showing the relative expression level of genes of the three subtypes of DC cells between the two groups. The color represents the relative expression level. (e) The heatmap showing the relative expression level of genes of B cells and plasma cells between the two group. The color represents the relative expression level. (f) The dot plot showing biological process of Gene Ontology (GO) enrichment on differentially expressed genes (DEGs) in monocytes between the two group. Upper, upregulation; down, downregulation. (g) The violin plots displaying cytotoxicity and exhaustion scores of the six cell subtypes of CD8 T cells between the two groups by gene scoring. (h) The violin plots displaying Treg scores of the three cell subtypes of CD4 T cells between the two groups by gene scoring.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (a) UMAP visualization of the four further clustered subtypes of macrophages (left). The bar chart showing the percentage of each subtype across different samples (right). (b) The heatmap showing the top 10 differently expressed genes (DEGs) for each cell subtype of macrophages. (c) UMAP visualization of the three further clustered subtypes of Kupffer cells (KCs) (left). The bar chart showing the percentage of each subtype across different samples (right). (d) The heatmap showing the top 10 DEGs for each cell subtype of KCs. (e) The heatmap showing the top 20 DEGs for B cells. (f) UMAP visualization of the two further clustered subtypes of monocytes (left). The bar chart showing the percentage of each subtype across different samples (right). (g) The dot plot showing the expression of top 3 marker genes in each cell subtypes (left). The violin plot showing the expression of top 3 DEGs for two cell subtypes (right). (h) The dot plot showing the upregulated biological process of Gene Ontology (GO) enrichment on DEGs in each cell subtype between CASE and CON.\n\nNeutrophils, the most abundant leukocytes in human blood, respond to inflammatory stimuli by migrating to the site of inflammation. Its immunological functions, such as phagocytosis, reactive oxygen species generation, degranulation, and production of cytokines and chemokines, play a crucial role in the resolution of inflammation and tissue repair (Tang et al., 2021; Cho and Szabo, 2021). In CASE, a lower percentage of neutrophils (3.53% in CASE and 6.45% in CON) was observed, and the functional characteristics were subsequently evaluated. The results showed that the maturation, chemotaxis, phagocytosis, and chemokine activity scores were decreased in CASE, while the activation of the type I interferon signaling pathway was enhanced (Figure 4c).\n\nSince the biological process of antigen processing and presentation was upregulated, we calculated the relative expression intensity of genes encoding MHC molecules and complement molecules in cDC1, cDC2, and mature DCs (Figure 4d). Notably, genes encoding MHC class I molecules (HLA-A, -B, -C, -E, and -F) were significantly upregulated in the mature DCs in CASE, while genes encoding MHC class II molecules (HLA-DQA1, -DQA2, -DQB1, -DQB2, -DPA1, -DPB1, -DRA, -DRB1, and -DRB5) were all downregulated in the mature DCs. Besides, genes encoding MHC molecules were not the top significant DEGs in B cells, while the immunoglobulin genes (IGHD and IGHM) and the na\u00efve B cell marker TCL1A were significantly upregulated in CASE (Figure 4\u2014figure supplement 1e). Then the immunoglobulin genes (IGHA1, IGHA2, IGHG1, IGHG2, IGHG3, IGHG4, IGHD, and IGHM) expression was compared in B cells and plasma cells (Figure 4e). IGHA1, IGHA2, IGHG1, IGHG2, IGHG3, and IGHG4 expression were unchanged in B cells between the two group and all of examined genes were downregulated except IGHG3 in plasma cells in CASE.\n\nMonocytes accounted for the highest proportion (35.45% in CASE and 41.78% in CON), and most of them were CD14+ classical monocytes (Figure 4\u2014figure supplement 1f). Compared to CON, S100A8, S100A9, and S100A12 were the top 3 upregulated genes in classical monocytes of CASE (Figure 4\u2014figure supplement 1g). S100A8 and S100A9 are confirmed to play vital roles in modulating the inflammatory responses by recruiting leukocytes and inducing cytokine secretion during inflammation, and as an alarmin, their elevation indicates inflammation in the local environment (Wang et al., 2018; Chen et al., 2023). GO analysis of DEGs in monocytes showed a decrease in biological processes involving cytokine production, response to lipopolysaccharide and bacteria, as well as lymphocyte activation (Figure 4f).\n\nFor T cells, we performed GO analysis on DEGs in CD8 T cells between two groups. Notably, the biological processes linked to energy and lipid metabolism were upregulated in several subtypes, including CD4Tmem_CD40LG, CD4Treg_CTLA4, CD8MAIT_KLRB1, CD8MAIT_SLC4A10, CD8Teff_GZMH, and CD8Teff_GZMK. In addition, biological processes associated with response to copper ion were upregulated in the CD8Teff_MT1X subtype (Figure 4\u2014figure supplement 1h). Meanwhile, T cell subtypes showed comparable cytotoxicity scores, and there were slight changes between two groups (Figure 4g). However, CD8 T cells in CASE exhibited lower levels of exhaustion, except for CD8Teff_GZMH and CD8Teff_ISG15 (Figure 4g). It was also discovered that while the proportion of CD4Treg_CTAL4 was increased in CASE, the Treg signature was slightly lower (Figure 4h). Therefore, these results suggest that WD patients exhibit variations in immune cell function and certain biological processes.\n\n### NK cell exhaustion in WD patients\n\nThe Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis of DEGs in NK cells between CASE and CON revealed downregulation of the NK cell-mediated cytotoxicity, along with the NF-kappa B signaling pathway and chemokine signaling pathway, in CASE (Figure 5\u2014figure supplement 1a). Interestingly, GO analysis showed upregulated biological processes of oxidative phosphorylation and ATP metabolic process, implying the altered metabolic program in NK cells and immune microenvironment (Figure 5\u2014figure supplement 1b). Since the primary effect of NK cells is cytotoxicity on target cells, we compared the gene expression levels of activating receptors, inhibitory receptors, and effector molecules between two groups. The results showed significantly upregulated expression in KLRC1 and TIGIT, and significantly downregulated expression in FCGR3A, TNF, IFNG, GZMB, GNLY, and CCL4 (Figure 5a). NK cells were clustered into three NK subtypes, NK_FCER1G, NK_KLRC1, and NK_FCGR3A, by gene expression profile. Analysis of the expression of these genes in three NK subtypes yielded similar results, except for increased expression of GZMB and GNLY (Figure 5\u2014figure supplement 1c). The results were consistent across the three subtypes, suggesting that the results in total NK population were contributed by all three subtypes and not affected by a single composition. Additionally, the proportion of NK cell was higher in CASE, while the proportion of NK_FCER1G and NK_KLRC1 was higher and the proportion of NK_FCGR3A was lower in CASE (Figure 3b; Figure 5\u2014figure supplement 1d). The respective transcriptome profile was compared in CASE and CON. Consistently, KLRC1 was top-ranking in all three subtypes among the significantly upregulated DEGs, while CCL4 and genes encoding heat shock protein were top-ranking in all three subtypes among significantly downregulated DEGs (Figure 5\u2014figure supplement 1e). KLRC1 and TIGIT are inhibitory receptors expressed on NK cell surface, and their activation inhibits NK cell functions (Zhang et al., 2018; Andr\u00e9 et al., 2018). It was collectively indicated that WD patients have NK cells with exhausted status, which results in poor effector function.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig5-v1.jpg)\n\n**Figure 5.:** (a) The violin plots showing the relative expression level of genes in NK cells between the two group. ***, p<0.001; Wilcox test. (b) Representative immunofluorescence staining for NK cells marked by CD56 and expression of KLRC1 in liver tissues of WD and control. The nucleus is stained by DAPI. Scale bars, 100 \u03bcm for 40\u00d7 and 50 \u03bcm for 100\u00d7. KLRC1+ NK cells are highlighted by arrows. The bar chart showing the proportion of KLRC1+ NK cells. Quantifications were performed by assessing three random fields per slide. Data are mean \u00b1 SD. Unpaired two-tailed t-test. (c) Gating strategy applied in flow cytometry. Upper: NK cells were determined by CD3-CD56+. Down: NK cells with positive indicators (KLRC1, TIGIT, and IFN\u03b3) were recorded. (d) The bar charts showing the percentage of KLRC1+ (WD, n=5; Control, n=5), TIGIT+ (WD, n=3; Control, n=3), and IFN\u03b3+ (WD, n=4; Control, n=4) NK cells. Data are mean \u00b1 SD. Unpaired two-tailed t-test.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** (a) The dot plot showing Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment on differentially expressed genes (DEGs) in NK cells between CASE and CON. (b) The dot plot showing Gene Ontology (GO) enrichment on DEGs in NK cells between CASE and CON. BP, biological processes; CC, cellular components; MF, molecular function. (c) The heatmap showing the relative expression level of genes in three NK subtypes. The color represents the relative expression level. ns, not significant; *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001; Wilcox test. (d) The bar chart showing the proportion of three subtypes of NK cells in the two group. (e) The heatmap showing the top 20 DEGs for three subtypes of NK cells. (f) The plot showing trajectories of NK cells in CASE and CON. Upper: respective trajectory. Down: merged trajectory. (g) The heatmap showing the expression of genes in three clusters in pseudotime. The cell fate is divided into two directions, and left represents fate 1 and right represents fate 2. The expression level of genes in three clusters was represented by colors. See full gene list in Supplementary file 1b. (h) The heatmap showing the average expression of top 10 regulons in NK cells in CASE and CON. (i) The bar charts showing the percentage of NK cells (WD, n=6; Control, n=7) and CD56Bright NK cells (WD, n=7; Control, n=7). Data are mean \u00b1 SD. Unpaired two-tailed t-test.\n\nIn addition, trajectory analysis showed that NK cells in two groups exhibited a distinct differentiation trajectory. Most of the NK cells in CON differentiated toward cell fate 1, while those in CASE displayed a higher tendency for differentiation toward cell fate 2, with cell grouping occurring at the final stage (Figure 5\u2014figure supplement 1f). To ascertain the gene expression profile and the respective cell statuses of the two outcomes, we conducted pseudotime analysis of gene expression in two differentiating directions. The results showed that the gene expression of KLRC1 (included in gene cluster 1) was gradually increased along the way to cell fate 2, while the gene expression of FCGR3A, TNF, and GZMB (included in gene cluster 3) was weakened in the same direction, suggesting that cell fate 2 is a more exhausted state of NK cells (Figure 5\u2014figure supplement 1g, see full gene list in Supplementary file 1b). Consequently, these results demonstrate that NK cells differentiate toward an exhausted status in WD patients. The development, maturation, and function of NK cells are strictly regulated by transcription factors (TFs) (Brillantes and Beaulieu, 2019). Next, to assess the TFs underlying differences in NK cells between CASE and CON, we applied PYSCENIC analysis in NK cells. We found that the gene expression of T-bet (encoded by TBX21) was downregulated and Eomes (encoded by EOMES) was upregulated in CASE (Figure 5\u2014figure supplement 1h). These two constitute a pair of TFs that play significantly complementary roles in directing the transcriptional program of NK cells. Consistent with previous studies, T-bet expression was downregulated in exhausted NK cells, whereas Eomes expression was increased (Sun et al., 2019; Zhang et al., 2022; da Silva et al., 2014).\n\nTo validate NK cell exhaustion in WD patients, we performed mIHC staining on liver tissue sections and flow cytometry on peripheral blood samples. The mIHC results indicated that KLRC1+ cells were more frequently observed in NK cells marked by CD56 in the liver tissue sections of WD patients (Figure 5b). Moreover, flow cytometry was also performed to test the number and indicators expression of NK cell from the peripheral blood. After isolation from peripheral blood, NK cells were determined by CD3-CD56+ and NK cells with positive indicators (KLRC1, TIGIT, and IFN\u03b3) were recorded (Figure 5c). The results showed a significant increase in the percentage of KLRC1+ and TIGIT+ NK cells and a significant decrease in the percentage of IFN\u03b3+ NK cells in peripheral blood lymphocytes from WD patients (Figure 5d). Meanwhile, the proportion of NK cells in lymphocytes from peripheral blood and the proportion of CD56Bright NK cells in total NK cells were also calculated. The significantly higher proportion of NK cells in WD patients was consistent with the scRNA-seq data, and more CD56Bright NK cells suggested a relatively weaker effector function in WD patients (Figure 5\u2014figure supplement 1i). Therefore, these results indicated that, despite the increased proportion and the upregulated oxidative phosphorylation, NK cell exhibited exhausted status in WD patients.\n\n### NK cell exhaustion predicts poor prognosis of cholecystitis\n\nCholecystitis patients with WD exhibit poorer clinical outcomes. There is evidence demonstrating that NK cell exhaustion is correlated with poor liver cancer prognosis (Sun et al., 2019; Sun et al., 2017; Sun et al., 2015). Thus, we hypothesize that NK cell exhaustion also contributes to the worse prognosis of cholecystitis patients with WD.\n\nPrognostic models for inflammatory-related diseases in GEO were developed using machine learning methods, including random survival forest, receiver operating characteristic (ROC) curve, and Kaplan-Meier survival curves. A logistic regression algorithm was used to construct a multigene prediction model based on GSE166915 (cholecystitis) and other inflammatory diseases, namely GSE91035 (pancreatitis), GSE75037 (lung adenocarcinoma), and GSE41804 (hepatocellular carcinoma). Using stepwise regression analysis, 12 genes, KLRC1, TIGIT, HAVCR2, PDCD1, CD96, LAG3, FCGR3A, NCR3, NCR2, NCR1, KLRK1, and PRF1, were selected to obtain the best model. The results showed that the predictive model constructed from these genes had good prognostic performance, with AUC of 0.77, 0.80, 0.97, 0.90 (Figure 6\u2014figure supplement 1a\u2013d). The AUCs of the models in GSE75037 and GSE41084 were relatively high, 0.97 and 0.90, respectively.\n\nUnivariate Cox regression analysis revealed that the TIGIT (in GSE166915) and PDCD1 (in GSE75037) were risk genes with hazard ratio (HR)>1, while NCR2 (in GSE91035), HAVCR2, KLRC1, NCR3 (in GSE75037), NCR3, LAG3 (in GSE41804) were protective gene with HR<1 among 12 differently expressed markers of NK cell exhaustion (Figure 6\u2014figure supplement 1a\u2013d). Consistently, the Kaplan-Meier survival curves suggested a shorter survival time in the group with high markers of NK cell exhaustion than in the group with low markers in the GSE166915 (p=6.1e-6), GSE91035 (p=1.9e-5), GSE75037 (p=3.8e-16), and GSE41804 (p=3.0e-3) datasets (Figure 6a\u2013d). Patients with cholecystitis, pancreatitis, lung adenocarcinoma, and hepatocellular carcinoma who show high markers of NK cell exhaustion are associated with poor survival compared to those with low markers of NK cell exhaustion.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig6-v1.jpg)\n\n**Figure 6.:** (a\u2013d) Kaplan-Meier survival curves for cholecystitis, pancreatitis, lung adenocarcinoma, and hepatocellular carcinoma according to the markers of NK cell exhaustion in the GSE166915, GSE91035, GSE75037, and GSE41804 datasets.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/98867/elife-98867-fig6-figsupp1-v1.jpg)\n\n**Figure 6\u2014figure supplement 1.:** (a\u2013d) Receiver operating characteristic (ROC) curve analysis of prognostic-related markers of NK cell exhaustion and corresponding AUC values for the expression cohorts (left). Forest plot of prognostic-related markers of NK cell exhaustion based on univariate Cox regression analysis (right).\n\n## Discussion\n\nImmune cell dysfunction impacts the development, progression, and prognosis of diseases and serves as the basis for immunotherapy. The current understanding of immune cell dysfunction in inflammatory diseases is limited, which hinders the development of effective therapeutic strategies. Our retrospective clinical analysis indicates that WD contributes to the unfavorable prognosis of cholecystitis. We developed an atlas of immune cell dysfunction linked to specific metabolic disruption in WD patients, including 19 major cell types. The immune microenvironment change primarily encompasses increased proportion and strengthened function in innate immunocytes, including upregulated antigen processing and presentation and activation of immune responses. Furthermore, we conducted a comprehensive assessment and comparison of immune cell function in WD patients and control group. This includes an evaluation of pro-inflammatory and immune regulatory function in macrophages and KCs, phagocytosis and chemokine activity in neutrophils, and cytotoxicity in T cells, etc. We identified NK cell exhaustion in the WD patients, with upregulation of KLRC1 and TIGIT and downregulation of CD16, TNF, IFNG, GZMB, GNLY, and CCL4. The validation of our findings in patient liver tissues and blood samples was conducted using immunohistochemistry assays and flow cytometry. Our findings indicated that the NK cell exhaustion signature has the ability to predict and prognosticate inflammatory diseases such as cholecystitis, pancreatitis, lung adenocarcinoma, and hepatocellular carcinoma. These results unveil novel perspectives on the immune cell dysfunction role in inflammatory diseases.\n\nWD represents a model of metabolic abnormality in hepatocytes caused by ATP7B mutation. Therefore, immune cell dysfunction was induced by the extracellular signals within the reshaped tissue microenvironment. Emerging research indicates that metabolic crosstalk in the tumor microenvironment disrupts metabolic and signaling pathways in immune cells, leading to dysfunction (Hosseini et al., 2022; Park et al., 2023; Yan et al., 2023; Bader et al., 2020; Riera-Domingo et al., 2020). Targeting metabolic pathways to enhance the efficacy of immunotherapy is a promising approach. Our study found multiple metabolic abnormalities in immune cells, including the widely upregulated ATP metabolic process in T and NK cells. Interestingly, glycolysis and oxidative phosphorylation contribute to maintain the cytotoxic ability and promote expansion of NK cells (Wu et al., 2020; Poznanski and Ashkar, 2019; O\u2019Brien and Finlay, 2019). However, high rate of oxidative phosphorylation, increased proportion, and exhausted status were simultaneously observed in NK cells of WD patients. Further studies are needed to elucidate the metabolic landscape, mechanisms underlying metabolic alterations, and their role in immune cell dysfunction.\n\n## Methods\n\n### Patients and clinical samples\n\nAll the clinical data were obtained from The First Affiliated Hospital of Anhui University of Chinese Medicine. The whole blood samples and liver tissue samples were collected from patients at The First Affiliated Hospital of Anhui University of Chinese Medicine. The study was approved by the Ethics Committee of the First Affiliated Hospital of Anhui University of Traditional Chinese Medicine (approval number 2019AH-32), and the clinical study design, informed consent, and case report were also approved in the document.\n\n### Sanger sequencing\n\nThe Sanger sequencing on 20 WD patients were conducted by Sangon Biotech (Shanghai) Co., Ltd.\n\nThe primers to detect mutations are:\n\n### Cell culture, gene knockout, and metabolic assays\n\nWRL 68 cells (purchased from Guangzhou Cellcook Biotech Co., Ltd.) were cultured using DMEM high-glucose media supplemented with 10% FBS at 37\u00b0C with 5% CO2. The lentivirus-mediated CRISPR-Cas9 KO vector targeting human ATP7B was obtained from OBiO Technology (Shanghai) Co., Ltd. Cells at 30\u201340% confluency were incubated in a medium containing optimal dilutions of lentivirus, then subjected to puromycin selection to obtain the stable transfected cells. OCRs and ECARs were measured using Seahorse XF Cell Mito Stress Test Kit (103015-100, Agilent) and Seahorse XF Glycolysis Stress Test Kit (103020-100, Agilent) according to manuals in Agilent XFe96 Analyzer, respectively.\n\n### Single-cell RNA-sequencing\n\nIn the cell preparation section: For the quality check and counting of single-cell suspension, the cell survival rate is generally above 80%. The cells that have passed the test are washed and resuspended to prepare a suitable cell concentration of 700\u20131200 cells/\u03bcL for 10x Genomics Chromium. The system is operated on the machine.\n\nSteps in GEM Creation and Thermal Cycling: GEMs (Gel Bead in Emulsion) were constructed for single-cell separation according to the number of cells to be harvested. After GEMs were normally formed, GEMs were collected for reverse transcription in a PCR machine for labeling.\n\nPost Cycling Cleanup and cDNA Amplication: The GEMs were oil-treated, and the amplified cDNA was purified by magnetic beads, and then subjected to cDNA amplification and quality inspection.\n\nLibrary Preparation and Quantification: The 3\u2019Gene Expression Library was constructed with the quality-qualified cDNA. After fragmentation, adaptor ligation, sample index PCR, etc., the library is finally quantitatively examined.\n\nSequencing: The final library pool was sequenced on the Illumina HiSeq instrument using 150-base-pair paired-end reads.\n\n### Pathway enrichment analysis\n\nTo investigate the potential functions of DEGs, the GO and KEGG analysis were used with the \u2018clusterProfiler\u2019 R package 3.16.1 (Yu et al., 2012). Pathways with p_adj value less than 0.05 were considered as significantly enriched. GO gene sets including molecular function, biological process, and cellular component categories were used as reference.\n\n### Cell-cell interaction analysis\n\nCellChat (version 0.0.2) was used to analyze the intercellular communication networks from scRNA-seq data (Jin et al., 2021). A CellChat object was created using the R package process. Cell information was added into the meta slot of the object. The ligand-receptor interaction database was set, and the matching receptor inference calculation was performed.\n\n### Trajectory analysis\n\nCell differentiation trajectory was reconstructed with Monocle2 (Qiu et al., 2017). Highly variable genes were used to sort cells in order of spatial\u2010temporal differentiation. We used DDRTree to perform FindVairableFeatures and dimension reduction. Finally, the trajectory was visualized by plot_cell_trajectory function. Next, CytoTRACE (a computational method that predicts the differentiation state of cells from scRNA-seq data using gene Counts and Expression) was used to predict the differentiation potential (Gulati et al., 2020).\n\n### TF regulatory network analysis\n\nTF network was constructed by pyscenic v0.11.0 using scRNA expression matrix and TFs in AnimalTFDB (Van de Sande et al., 2020). First, GRNBoost2 predicted a regulatory network based on the co-expression of regulators and targets. CisTarget was then applied to exclude indirect targets and to search TF binding motifs. After that, AUCell was used for regulon activity quantification for every cell.\n\n### UCell gene set scoring\n\nGene set scoring was performed using the R package UCell v 1.1.0 (Andreatta and Carmona, 2021). UCell scores are based on the Mann-Whitney U statistic by ranking query genes in order of their expression levels in individual cells. Because UCell is a rank-based scoring method, it is suitable to be used in large datasets containing multiple samples and batches. The gene sets for signature scoring are listed in Supplementary file 1c.\n\n### Cell type annotation and DEGs analysis\n\nThe cell type identity of each cluster was determined with the expression of canonical markers found in the DEGs using SynEcoSys database. The markers and references are shown in Supplementary file 1d. To identify DEGs, we used the Seurat FindMarkers function based on Wilcox likelihood-ratio test with default parameters, and selected the genes expressed in more than 10% of the cells in a cluster and with an average log (Fold Change) value greater than 0.25 as DEGs. For the cell type annotation of each cluster, we combined the expression of canonical markers found in the DEGs with knowledge from literature, and displayed the expression of markers of each cell type with heatmaps that were generated with Seurat Heatmap function. Doublet cells were identified as expressing markers for different cell types, and removed manually.\n\n### Multiplex immunohistochemistry\n\nThe procedure of deparaffinization, dehydration, antigen retrieval, endogenous peroxidases quench, block, antibody incubation was conducted as standard immunohistochemistry. Solution of tyramide signal amplification (TSA) (WAS1101010, BioMed World) was applied on the slides and antibodies were removed by microwave heating. Repeat block, antibody incubation, TSA, and microwave heating to perform next cycle of staining. DAPI (WAS1301050, BioMed World) was used to stain nuclei and antifade mountant (WAS1302050, BioMed World) was applied. The primary antibody to CD56 (ab75813, Abcam) and KLRC1 (ab260035, Abcam) and secondary antibody (WAS1201100, BioMed World) were used. Image of immunofluorescence-stained slides were acquired with Nikon Eclipse Ci-L and 3DHISTECH Pannoramic MIDI II.\n\n### Flow cytometry\n\nLymphocytes were isolated from the whole blood using density gradient centrifugal method (P8610, Solarbio). Isolated cells were blocked (564219, BD Pharmingen) and stained with antibodies against CD3 (560835, BD Pharmingen), CD56 (555518, BD Pharmingen), KLRC1 (375114, BioLegend), and TIGIT (568672, BD Pharmingen). For intracellular cytokine staining, cells were stimulated for 4 hr with Leukocyte Activation Cocktail and BD GolgiPlug (550583, BD Pharmingen) according to manuals. After stimulation, cells were blocked, stained for surface markers, fixed, and permeabilized with Fixation/Permeablization Kit (554714, BD Pharmingen). Fixed cells were stained with antibodies against IFN\u03b3 (552887, BD Pharmingen).\n\n### Construction and verification of prognostic model\n\nOn the basis of the markers of NK cell exhaustion, univariate Cox analysis was conducted in cholecystitis, pancreatitis, lung adenocarcinoma, and hepatocellular carcinoma patients to screen survival-related markers of NK cell exhaustion, and markers with p-values<0.05 were retained. We conducted multivariate analysis to identify the optimal prognostic markers for the prognostic model. The risk scores of the patients were calculated based on the normalized gene expression levels and the Cox regression coefficients of selected markers. Time-dependent ROC curves were utilized to verify the prognostic performance of the model for overall survival. For Kaplan-Meier survival, we used the R software package maxstat (maximally selected rank statistics with multiple p-value approximations version: 0.7\u201325) to calculate the optimal cutoff value for RiskScore. We set the minimum group sample size to be greater than 25% and the maximum group sample size to be less than 75%, ultimately obtaining the optimal cutoff value. Based on this, patients were divided into high and low groups, and further analyzed the prognostic differences between the two groups using the R software package\u2019s survival function. The logrank test method was used to evaluate the significance of prognostic differences between different groups of samples, and significant prognostic differences were ultimately observed.\n\n### Statistical analysis\n\nStatistical analyses were performed using appropriate tests as indicated in legends (unpaired two-tailed t-test, chi-square test, and Wilcox test).\n",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Shiny Nair, Yale University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.98867.3.sa0](https://doi.org/10.7554/eLife.98867.3.sa0)\n\nThis study presents valuable findings, based on solid methods, to link metabolic dysfunction in Wilson's disease to immune cell dysregulation and poor cholecystitis outcomes. The integration of clinical data and single-cell analyses highlights NK cell exhaustion as a key factor, offering insights with potential therapeutic implications. The work will be of interest to colleagues in inflammatory and metabolic diseases.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.98867.3.sa1](https://doi.org/10.7554/eLife.98867.3.sa1)\n\nSummary:\n\nWilson's disease is a rare genetic disorder caused by mutations in the ATP7B gene. Previous studies have documented that ATP7B mutations can disrupt copper metabolism, affecting brain and liver function. In this paper, the authors performed a retrospective clinical study and found that Wilson's disease has a high incidence of cholecystitis. Single-cell RNA-seq analysis revealed changes in the immune microenvironment, including the activation of immune responses and the exhaustion of natural killer cells.\n\nStrengths:\n\nA key finding of this study is that the predominant ATP7B gene mutation in the Chinese population is the 2333G>T (p. R778L) mutation. The authors reported associations between Wilson's disease and cholecystitis, as well as the exhaustion of natural killer cells.\n\nWeaknesses:\n\nThe underlying mechanisms linking ATP7B mutations to cholecystitis and natural killer cell exhaustion remain unclear. Specifically, it is not yet determined whether copper metabolism alterations directly cause cholecystitis and natural killer cell exhaustion, or if these effects are secondary to liver dysfunction.\n\nComments on revisions:\n\nThe authors fully addressed my questions and I don't have further comments.\n",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "f8419d75-370d-4683-8435-2e3fa2224f3d",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C1",
+      "claim": "WD patients have a significantly higher incidence of cholecystitis compared to the general population.",
+      "claim_type": "EXPLICIT",
+      "source": "In this retrospective clinical study of over 600 WD patients, it was found that they had a significantly higher cholecystitis incidence than the general population.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this finding from a retrospective clinical study of over 600 WD patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "03078c72-6f3a-4226-9a75-b661f5d1b8d2",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C2",
+      "claim": "WD patients with cholecystitis have a poorer prognosis compared to other cholecystitis patients.",
+      "claim_type": "EXPLICIT",
+      "source": "This, in turn, is associated with a poor prognosis for cholecystitis in these patients.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The text directly states that WD is associated with poor prognosis for cholecystitis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "534a0147-57dd-4e34-83d1-64356c466d98",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C3",
+      "claim": "c.2333G>T (p.R778L) accounts for 65% of ATP7B mutations in the studied WD patient cohort.",
+      "claim_type": "EXPLICIT",
+      "source": "Through sequencing DNA samples from 20 patients with WD, we found that c. 2333G>T (p. R778L) accounted for the majority (65%) of the three most common mutations in Chinese, while c. 2804C>T (p. T935M) and c. 2975C>T (p. P992L) were not detected (Figure 1a; Yang et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "DNA sequencing data from 20 WD patients is presented in Figure 1a showing the mutation frequency.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "34eceae7-3d61-49d6-8501-5366ef9799fd",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C4",
+      "claim": "ATP7B deficiency in hepatocytes leads to abnormalities in mitochondrial function and copper metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "In hepatocytes, ATP7B deficiency in the trans-Golgi network (TGN) leads to abnormalities in mitochondrial function and copper metabolism, and ultimately to a wide range of liver diseases (Figure 1b; Cz\u0142onkowska et al., 2018; Roberts et al., 2008; Zischka and Lichtmannegger, 2014; Muchenditsi et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "The claim is supported by citations to prior literature and illustrated in Figure 1b.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "c67be4af-5c18-4eda-939b-98dad359aff3",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C5",
+      "claim": "WD patients have lower total bilirubin levels compared to HBV patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, a lower total bilirubin and metabolic symptoms of WD patients, a lower risk of hyperglycemia (Cohort 1 and Cohort 2), are observed (Figure 1e, Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Clinical statistics presented in Figure 1e show lower total bilirubin in WD patients.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "02b10159-41db-4329-9e73-86009622e9ac",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C6",
+      "claim": "ATP7B knockout in WRL 68 hepatocyte cell lines significantly impairs basal oxygen consumption rate and ATP production capacity.",
+      "claim_type": "EXPLICIT",
+      "source": "Mitochondrial stress and glycolysis assays revealed that knockout of the ATP7B (ATP7B-KO) in human hepatocyte cell lines WRL 68 significantly impaired the basal oxygen consumption rate (OCR) and capacity of ATP production, while the extracellular acidification rate (ECAR) of glycolysis and glycolysis capacity remained unchanged (Figure 1\u2014figure supplement 1b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Experimental data from mitochondrial stress assays shown in Figure 1\u2014figure supplement 1b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "c8c0c2ac-aee6-49a1-8eee-5ecde074a91d",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C7",
+      "claim": "Chronic cholecystitis incidence is higher in WD patients (49.51%) compared to HBV patients (9.46%) in Cohort 2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, chronic cholecystitis emerged as the most common complication, with a notably higher incidence in WD patients (49.51%) compared to HBV patients (9.46%) in Cohort 2 (Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Clinical statistics from Cohort 2 presented in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "19788111-a091-4f8c-819e-345148d5273e",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C8",
+      "claim": "In cholecystitis patients, the proportion of cases with abnormal white blood cell, neutrophil, and lymphocyte counts is significantly higher when combined with WD.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, in cholecystitis patients, the proportion of cases with abnormal index was significantly higher when combined with WD, which included white blood cell (WBC), neutrophil (NEU), and lymphocyte (LYM) counts (Cohort 3, Figure 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Clinical data from Cohort 3 shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "c90f1479-cad5-4850-8b79-04d29dfdf160",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C9",
+      "claim": "57,384 high-quality single transcriptomes were generated from scRNA-seq analysis, with 30,068 cells from WD patients and 27,316 from control patients.",
+      "claim_type": "EXPLICIT",
+      "source": "57,384 high-quality single transcriptomes were generated, with 30,068 cells in the group of WD patients (CASE) and 27,316 in the group of liver hemangioma patients (CON).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Direct statement of scRNA-seq data generation results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "78469d59-7a81-4914-b12c-22badb6a8622",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C10",
+      "claim": "12 significant cell clusters were identified through automated annotation and manual review in the scRNA-seq analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "This initial annotation process resulted in the classification and display of 12 significant cell clusters.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of the cell annotation methodology and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "a8cd8001-e1b6-4c5a-8daa-2f9e6b0d79b0",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C11",
+      "claim": "T and NK lineages are the primary immune cell population, accounting for 56.54% in CASE and 73.55% in CON.",
+      "claim_type": "EXPLICIT",
+      "source": "Our study observed that T and NK lineages were the primary immune cell population among all the examined samples, accounting for 56.54% in CASE and 73.55% in CON, followed by MPs which constituted 17.33% in CASE and 9.97% in CON (Figure 2f, Figure 2\u2014figure supplement 1e, and Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cell composition data presented in Figure 2f and supplementary materials.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "131d4f2d-abd7-46bb-878c-b75a4da14642",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C12",
+      "claim": "The proportion of mononuclear phagocytes is significantly increased in WD patients (17.33% in CASE vs 9.97% in CON).",
+      "claim_type": "EXPLICIT",
+      "source": "Our study observed that T and NK lineages were the primary immune cell population among all the examined samples, accounting for 56.54% in CASE and 73.55% in CON, followed by MPs which constituted 17.33% in CASE and 9.97% in CON (Figure 2f, Figure 2\u2014figure supplement 1e, and Supplementary file 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cell composition data from scRNA-seq analysis shown in Figure 2f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "e2e857ec-5d20-4876-a351-e1847dc3d01c",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C13",
+      "claim": "Mononuclear phagocytes likely dominate the immune microenvironment remodeling in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The significant increase in the proportion of MPs and decrease in T and NK cells suggest that MPs likely dominate the immune microenvironment remodeling in WD patients, while lymphocytes play a minor role.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inference drawn from the observed changes in cell proportions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "84472492-989f-425e-819a-5d8b19fe04b9",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C14",
+      "claim": "Macrophages are significantly increased in WD patients (25.03% in CASE versus 14.33% in CON).",
+      "claim_type": "EXPLICIT",
+      "source": "In CASE, there was a significant increase in both macrophages (25.03% in CASE versus 14.33% in CON) and KCs, the resident macrophages in the liver (26.03% in CASE versus 22.96% in CON), suggesting their involvement in promoting hepatic inflammation in metabolic liver disease (Figure 3a; Dixon et al., 2013).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Cell subtype analysis data shown in Figure 3a with citation to prior literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "1aae3349-fe7e-488e-aec1-93fdb81aae51",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C15",
+      "claim": "The proportion of NK cells is significantly increased in WD patients (40.97% in CASE and 17.07% in CON).",
+      "claim_type": "EXPLICIT",
+      "source": "The proportion of NK cells (40.97% and 17.07% in CASE and CON, respectively) and CD4Treg (0.92% and 0.31% in CASE and CON, respectively) was significantly increased in CASE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Cell subtype proportion data from scRNA-seq analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "e1cb967d-2500-4330-9579-4a960f43e612",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C16",
+      "claim": "Genes encoding complement C1q (C1QA, C1QB, and C1QC) and HLA-DRA are significantly upregulated in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the expression of genes encoding complement C1q (C1QA, C1QB, and C1QC) and HLA-DRA was significantly upregulated in CASE.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Differential gene expression analysis of immune cells.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "2738d521-b40d-47bc-96b0-1a68f7e3f152",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C17",
+      "claim": "Genes encoding heat shock proteins (HSPA1A, HSPA1B, HSPM1, HSPA6, HSP90AB1, HSPE1, and HSPD1) are markedly downregulated in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Conversely, the expression of genes encoding heat shock protein (HSPA1A, HSPA1B, HSPM1, HSPA6, HSP90AB1, HSPE1, and HSPD1) was markedly downregulated in CASE (Figure 3c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Differential gene expression data shown in Figure 3c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "1b11cd75-1534-4852-bc91-88f8b9e06147",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C18",
+      "claim": "WD enhances antigen processing and presentation, activation of immune response, and positive regulation of lymphocyte activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The Gene Ontology (GO) analysis results demonstrate that WD enhances the abilities of antigen-presenting cells to activate immune response and related lymphocytes, through upregulating antigen processing and presentation, activation of immune response, and positive regulation of lymphocyte activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "GO enrichment analysis results on differentially expressed genes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "8ba3a1de-6ec2-4f57-b1ff-66a7ca7e60b2",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C19",
+      "claim": "CD8Teff, KCs, NKT, CD8MAIT, monocytes, cDC2, and macrophage are the primary participants in intercellular communication.",
+      "claim_type": "EXPLICIT",
+      "source": "Our findings reveal that CD8Teff, KCs, NKT, CD8MAIT, monocytes, cDC2, and macrophage were the primary participants in intercellular communication, with the high value in both incoming and outgoing interaction strength (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "CellChat analysis results shown in Figure 3e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "0f234fb2-7f94-491e-9cf6-fc152d9d9463",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C20",
+      "claim": "Macrophages_3 subtype in WD patients displays elevated expression of S100A family genes (S100A8, S100A9, S100A12, S100A6, VCAN, FCN1, and S100A4).",
+      "claim_type": "EXPLICIT",
+      "source": "Macrophages_3 in CASE displayed elevated expression levels of S100A family genes (S100A8, S100A9, S100A12, S100A6, VCAN, FCN1, and S100A4), indicating a potential contribution to MDSC-like macrophages.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene expression analysis of macrophage subtypes.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "0ea0401f-9db6-4177-83b7-ca6b8b3868d9",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C21",
+      "claim": "Macrophages_4 subtype in WD patients is characterized by upregulation of lipid metabolism genes (FABP5, APOC1, CTSD, and PLA2G7).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Macrophages_4 in CASE were characterized by upregulation of lipid metabolism genes (FABP5, APOC1, CTSD, and PLA2G7) (Figure 4\u2014figure supplement 1b; Zhang et al., 2019a; Wang et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene expression data shown in Figure 4\u2014figure supplement 1b with citations.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "dc2d61b8-cd14-4d73-8bef-51aa785c6b59",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C22",
+      "claim": "Macrophages_3 subtype exhibits a more pronounced pro-inflammatory signal in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Significantly, the Macrophages_3 subtype exhibited a more pronounced pro-inflammatory signal in CASE, while the other subtypes showed a slight decrease.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene signature scoring analysis of macrophage subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "f0834e47-f679-4c80-b9ec-c42664de1024",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C23",
+      "claim": "All Kupffer cell subtypes in WD patients show varying degrees of increase in pro-inflammatory and interferon-responsive signatures.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, KCs subtypes in two groups also showed overlapping M1/M2 signatures, but all subtypes in CASE showed varying degrees of increase in pro-inflammatory and interferon-responsive signatures (Figure 4b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene signature scoring data shown in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "8ece69b7-59fa-4fb8-a5de-90e58df3e927",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C24",
+      "claim": "Neutrophils in WD patients show decreased maturation, chemotaxis, phagocytosis, and chemokine activity scores.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the maturation, chemotaxis, phagocytosis, and chemokine activity scores were decreased in CASE, while the activation of the type I interferon signaling pathway was enhanced (Figure 4c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Functional scoring analysis shown in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "57dd310c-3449-421d-af51-70cdbf6064a3",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C25",
+      "claim": "Genes encoding MHC class I molecules (HLA-A, -B, -C, -E, and -F) are significantly upregulated in mature DCs in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, genes encoding MHC class I molecules (HLA-A, -B, -C, -E, and -F) were significantly upregulated in the mature DCs in CASE, while genes encoding MHC class II molecules (HLA-DQA1, -DQA2, -DQB1, -DQB2, -DPA1, -DPB1, -DRA, -DRB1, and -DRB5) were all downregulated in the mature DCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene expression analysis of dendritic cell subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "548f10ad-7876-497e-9aec-5aa1f59ea9f5",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C26",
+      "claim": "Genes encoding MHC class II molecules are downregulated in mature DCs in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, genes encoding MHC class I molecules (HLA-A, -B, -C, -E, and -F) were significantly upregulated in the mature DCs in CASE, while genes encoding MHC class II molecules (HLA-DQA1, -DQA2, -DQB1, -DQB2, -DPA1, -DPB1, -DRA, -DRB1, and -DRB5) were all downregulated in the mature DCs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Gene expression analysis of dendritic cell subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "1c55c8a5-d649-497b-8ef1-bf7812632248",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C27",
+      "claim": "Immunoglobulin genes (IGHD and IGHM) and na\u00efve B cell marker TCL1A are significantly upregulated in B cells in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Besides, genes encoding MHC molecules were not the top significant DEGs in B cells, while the immunoglobulin genes (IGHD and IGHM) and the na\u00efve B cell marker TCL1A were significantly upregulated in CASE (Figure 4\u2014figure supplement 1e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene expression data shown in Figure 4\u2014figure supplement 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "ad4134df-bbf3-49ce-ae1d-cf1b21f804fc",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C28",
+      "claim": "S100A8, S100A9, and S100A12 are the top 3 upregulated genes in classical monocytes of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to CON, S100A8, S100A9, and S100A12 were the top 3 upregulated genes in classical monocytes of CASE (Figure 4\u2014figure supplement 1g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Differential gene expression data shown in Figure 4\u2014figure supplement 1g.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "96d5c6de-7b64-48f1-b70a-37143a80d8d2",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C29",
+      "claim": "S100A8 and S100A9 play vital roles in modulating inflammatory responses by recruiting leukocytes and inducing cytokine secretion during inflammation.",
+      "claim_type": "EXPLICIT",
+      "source": "S100A8 and S100A9 are confirmed to play vital roles in modulating the inflammatory responses by recruiting leukocytes and inducing cytokine secretion during inflammation, and as an alarmin, their elevation indicates inflammation in the local environment (Wang et al., 2018; Chen et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "c5087a7a-4a10-45b0-be85-ebcdbeec4b9a",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C30",
+      "claim": "Biological processes linked to energy and lipid metabolism are upregulated in several T cell subtypes in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the biological processes linked to energy and lipid metabolism were upregulated in several subtypes, including CD4Tmem_CD40LG, CD4Treg_CTLA4, CD8MAIT_KLRB1, CD8MAIT_SLC4A10, CD8Teff_GZMH, and CD8Teff_GZMK.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "GO enrichment analysis results on T cell subtypes.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "2f28c516-6efc-47a8-87e4-e129a5442080",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C31",
+      "claim": "NK cell-mediated cytotoxicity, NF-kappa B signaling pathway, and chemokine signaling pathway are downregulated in NK cells of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The Kyoto Encyclopedia of Genes and Genomes (KEGG) analysis of DEGs in NK cells between CASE and CON revealed downregulation of the NK cell-mediated cytotoxicity, along with the NF-kappa B signaling pathway and chemokine signaling pathway, in CASE (Figure 5\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "KEGG pathway enrichment analysis shown in Figure 5\u2014figure supplement 1a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "1a582428-f84f-43e9-b2e5-1b64ebc68889",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C32",
+      "claim": "Biological processes of oxidative phosphorylation and ATP metabolic process are upregulated in NK cells of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, GO analysis showed upregulated biological processes of oxidative phosphorylation and ATP metabolic process, implying the altered metabolic program in NK cells and immune microenvironment (Figure 5\u2014figure supplement 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "GO enrichment analysis shown in Figure 5\u2014figure supplement 1b.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "73eb1fe9-1b3d-46b0-b3d9-b16cd3052c1e",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C33",
+      "claim": "KLRC1 and TIGIT expression is significantly upregulated in NK cells of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed significantly upregulated expression in KLRC1 and TIGIT, and significantly downregulated expression in FCGR3A, TNF, IFNG, GZMB, GNLY, and CCL4 (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene expression comparison data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "48454121-90ac-4830-b051-c7ccadd40904",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C34",
+      "claim": "FCGR3A, TNF, IFNG, GZMB, GNLY, and CCL4 expression is significantly downregulated in NK cells of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed significantly upregulated expression in KLRC1 and TIGIT, and significantly downregulated expression in FCGR3A, TNF, IFNG, GZMB, GNLY, and CCL4 (Figure 5a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Gene expression comparison data shown in Figure 5a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "e4e9dd99-3c04-4c65-bce0-8ca6abef9f3b",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C35",
+      "claim": "KLRC1 and TIGIT are inhibitory receptors expressed on NK cell surface, and their activation inhibits NK cell functions.",
+      "claim_type": "EXPLICIT",
+      "source": "KLRC1 and TIGIT are inhibitory receptors expressed on NK cell surface, and their activation inhibits NK cell functions (Zhang et al., 2018; Andr\u00e9 et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "5a41dc37-3c9a-41da-b290-9f6a4f5fa21f",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C36",
+      "claim": "WD patients have NK cells with exhausted status, which results in poor effector function.",
+      "claim_type": "EXPLICIT",
+      "source": "It was collectively indicated that WD patients have NK cells with exhausted status, which results in poor effector function.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Conclusion drawn from multiple lines of gene expression and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "bc798883-be3c-4368-8962-d9824f8b93e9",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C37",
+      "claim": "NK cells in WD patients differentiate toward cell fate 2, which represents a more exhausted state.",
+      "claim_type": "EXPLICIT",
+      "source": "Most of the NK cells in CON differentiated toward cell fate 1, while those in CASE displayed a higher tendency for differentiation toward cell fate 2, with cell grouping occurring at the final stage (Figure 5\u2014figure supplement 1f).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Trajectory analysis shown in Figure 5\u2014figure supplement 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "922b1aa2-021a-4a20-af37-f76ad2f49faf",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C38",
+      "claim": "KLRC1 gene expression gradually increases along the differentiation path to cell fate 2.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed that the gene expression of KLRC1 (included in gene cluster 1) was gradually increased along the way to cell fate 2, while the gene expression of FCGR3A, TNF, and GZMB (included in gene cluster 3) was weakened in the same direction, suggesting that cell fate 2 is a more exhausted state of NK cells (Figure 5\u2014figure supplement 1g, see full gene list in Supplementary file 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Pseudotime analysis shown in Figure 5\u2014figure supplement 1g.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "8722cd97-acbf-487f-8baf-0d184e537047",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C39",
+      "claim": "T-bet (encoded by TBX21) gene expression is downregulated in NK cells of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the gene expression of T-bet (encoded by TBX21) was downregulated and Eomes (encoded by EOMES) was upregulated in CASE (Figure 5\u2014figure supplement 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PYSCENIC analysis results shown in Figure 5\u2014figure supplement 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "23b51b2e-ecc8-492c-a682-e64bf4115d87",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C40",
+      "claim": "Eomes (encoded by EOMES) gene expression is upregulated in NK cells of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "We found that the gene expression of T-bet (encoded by TBX21) was downregulated and Eomes (encoded by EOMES) was upregulated in CASE (Figure 5\u2014figure supplement 1h).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "PYSCENIC analysis results shown in Figure 5\u2014figure supplement 1h.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "fcec8f63-9e72-4108-843d-d16b47c8a4db",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C41",
+      "claim": "T-bet expression is downregulated in exhausted NK cells, whereas Eomes expression is increased.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with previous studies, T-bet expression was downregulated in exhausted NK cells, whereas Eomes expression was increased (Sun et al., 2019; Zhang et al., 2022; da Silva et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "fa83b7a8-679e-4f78-8330-d87b7aacb318",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C42",
+      "claim": "KLRC1+ cells are more frequently observed in NK cells in liver tissue sections of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The mIHC results indicated that KLRC1+ cells were more frequently observed in NK cells marked by CD56 in the liver tissue sections of WD patients (Figure 5b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Multiplex immunohistochemistry data shown in Figure 5b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "843d81f6-eade-488a-9eff-cb7d9556a422",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C43",
+      "claim": "The percentage of KLRC1+ NK cells is significantly increased in peripheral blood of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed a significant increase in the percentage of KLRC1+ and TIGIT+ NK cells and a significant decrease in the percentage of IFN\u03b3+ NK cells in peripheral blood lymphocytes from WD patients (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "bfda8f3e-db7a-4fe2-ae25-faa2e4c55cb3",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C44",
+      "claim": "The percentage of TIGIT+ NK cells is significantly increased in peripheral blood of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed a significant increase in the percentage of KLRC1+ and TIGIT+ NK cells and a significant decrease in the percentage of IFN\u03b3+ NK cells in peripheral blood lymphocytes from WD patients (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "9ccb3259-31b6-4b6d-ac58-9ad4177aa93e",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C45",
+      "claim": "The percentage of IFN\u03b3+ NK cells is significantly decreased in peripheral blood of WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The results showed a significant increase in the percentage of KLRC1+ and TIGIT+ NK cells and a significant decrease in the percentage of IFN\u03b3+ NK cells in peripheral blood lymphocytes from WD patients (Figure 5d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data shown in Figure 5d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "3b672cc8-3ff5-49ff-a5b1-d24ae80b40fb",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C46",
+      "claim": "The proportion of NK cells in lymphocytes from peripheral blood is significantly higher in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "The significantly higher proportion of NK cells in WD patients was consistent with the scRNA-seq data, and more CD56Bright NK cells suggested a relatively weaker effector function in WD patients (Figure 5\u2014figure supplement 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data shown in Figure 5\u2014figure supplement 1i.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "4f961010-e57a-41fc-86eb-d5b11da0869f",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C47",
+      "claim": "WD patients have more CD56Bright NK cells, suggesting relatively weaker effector function.",
+      "claim_type": "EXPLICIT",
+      "source": "The significantly higher proportion of NK cells in WD patients was consistent with the scRNA-seq data, and more CD56Bright NK cells suggested a relatively weaker effector function in WD patients (Figure 5\u2014figure supplement 1i).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Flow cytometry data shown in Figure 5\u2014figure supplement 1i with inference about function.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "a2a4ff26-0e3a-4bb9-9b84-391fc2f621fa",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C48",
+      "claim": "NK cell exhaustion is correlated with poor liver cancer prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "There is evidence demonstrating that NK cell exhaustion is correlated with poor liver cancer prognosis (Sun et al., 2019; Sun et al., 2017; Sun et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement supported by citations to prior literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "83de2983-7613-494f-a7b1-ca4464ae193e",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C49",
+      "claim": "A prognostic model based on 12 genes (KLRC1, TIGIT, HAVCR2, PDCD1, CD96, LAG3, FCGR3A, NCR3, NCR2, NCR1, KLRK1, and PRF1) has good prognostic performance for cholecystitis, pancreatitis, lung adenocarcinoma, and hepatocellular carcinoma.",
+      "claim_type": "EXPLICIT",
+      "source": "Using stepwise regression analysis, 12 genes, KLRC1, TIGIT, HAVCR2, PDCD1, CD96, LAG3, FCGR3A, NCR3, NCR2, NCR1, KLRK1, and PRF1, were selected to obtain the best model. The results showed that the predictive model constructed from these genes had good prognostic performance, with AUC of 0.77, 0.80, 0.97, 0.90 (Figure 6\u2014figure supplement 1a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Machine learning model construction and ROC analysis shown in Figure 6\u2014figure supplement 1a\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "092881f4-b5f4-4964-92b9-5e1ac1ddb706",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C50",
+      "claim": "TIGIT is a risk gene (HR>1) for cholecystitis prognosis.",
+      "claim_type": "EXPLICIT",
+      "source": "Univariate Cox regression analysis revealed that the TIGIT (in GSE166915) and PDCD1 (in GSE75037) were risk genes with hazard ratio (HR)>1, while NCR2 (in GSE91035), HAVCR2, KLRC1, NCR3 (in GSE75037), NCR3, LAG3 (in GSE41804) were protective gene with HR<1 among 12 differently expressed markers of NK cell exhaustion (Figure 6\u2014figure supplement 1a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Univariate Cox regression analysis shown in Figure 6\u2014figure supplement 1a\u2013d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "b202266d-c0c5-461b-97ee-288913c50e72",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C51",
+      "claim": "Patients with high markers of NK cell exhaustion have shorter survival time compared to those with low markers in cholecystitis (p=6.1e-6).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the Kaplan-Meier survival curves suggested a shorter survival time in the group with high markers of NK cell exhaustion than in the group with low markers in the GSE166915 (p=6.1e-6), GSE91035 (p=1.9e-5), GSE75037 (p=3.8e-16), and GSE41804 (p=3.0e-3) datasets (Figure 6a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Kaplan-Meier survival analysis shown in Figure 6a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "d7678f86-6a22-4aeb-90b1-837feac9e6e3",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C52",
+      "claim": "Patients with high markers of NK cell exhaustion have shorter survival time compared to those with low markers in pancreatitis (p=1.9e-5).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the Kaplan-Meier survival curves suggested a shorter survival time in the group with high markers of NK cell exhaustion than in the group with low markers in the GSE166915 (p=6.1e-6), GSE91035 (p=1.9e-5), GSE75037 (p=3.8e-16), and GSE41804 (p=3.0e-3) datasets (Figure 6a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Kaplan-Meier survival analysis shown in Figure 6b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "09379e28-0721-4464-9c34-9c6729df92ff",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C53",
+      "claim": "Patients with high markers of NK cell exhaustion have shorter survival time compared to those with low markers in lung adenocarcinoma (p=3.8e-16).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the Kaplan-Meier survival curves suggested a shorter survival time in the group with high markers of NK cell exhaustion than in the group with low markers in the GSE166915 (p=6.1e-6), GSE91035 (p=1.9e-5), GSE75037 (p=3.8e-16), and GSE41804 (p=3.0e-3) datasets (Figure 6a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Kaplan-Meier survival analysis shown in Figure 6c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "cfb7d327-0a91-4af9-a056-63ebe58c6a39",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C54",
+      "claim": "Patients with high markers of NK cell exhaustion have shorter survival time compared to those with low markers in hepatocellular carcinoma (p=3.0e-3).",
+      "claim_type": "EXPLICIT",
+      "source": "Consistently, the Kaplan-Meier survival curves suggested a shorter survival time in the group with high markers of NK cell exhaustion than in the group with low markers in the GSE166915 (p=6.1e-6), GSE91035 (p=1.9e-5), GSE75037 (p=3.8e-16), and GSE41804 (p=3.0e-3) datasets (Figure 6a\u2013d).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Kaplan-Meier survival analysis shown in Figure 6d.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "f2371c08-a780-49af-9f86-255ba2a366f8",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C55",
+      "claim": "Wilson's disease is a rare genetic disorder caused by mutations in the gene encoding the transmembrane copper-transporting P-type ATPase protein.",
+      "claim_type": "EXPLICIT",
+      "source": "Wilson's disease (WD) is a rare genetic disorder caused by mutations in the gene encoding the transmembrane copper-transporting P-type ATPase protein (Bandmann et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of WD supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "b3935eee-1036-4026-923d-436e188a668c",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C56",
+      "claim": "WD leads to deficits in mitochondrial structure and function, as well as specific alterations in liver metabolism.",
+      "claim_type": "EXPLICIT",
+      "source": "It leads to deficits in mitochondrial structure and function, as well as specific alterations in liver metabolism, resulting in a variety of liver diseases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of WD pathophysiology.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "c41e022e-9c74-47dc-aa68-2a20bc41de7d",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C57",
+      "claim": "WD is commonly associated with inflammatory conditions in the clinic.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, WD is commonly associated with inflammatory conditions in the clinic (Huster et al., 2006; Medici et al., 2013; Huster, 2014; Aggarwal and Bhatt, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Clinical observation supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "ff1340ba-9567-402a-9c1b-b361ac090944",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C58",
+      "claim": "NK cells are the major innate lymphocyte subset and are found in most organs.",
+      "claim_type": "EXPLICIT",
+      "source": "Natural killer (NK) cells are the major innate lymphocyte subset and are found in most organs (Abel et al., 2018; Crinier et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "General statement about NK cells supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "bf2a2fac-5ab1-4eee-933c-b7ad2f8b0243",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C59",
+      "claim": "NK cells produce lytic granules that eliminate infected or cancerous cells, coordinate the inflammation process, form immunological memory, and modulate antigen-presenting cell function in inflammatory diseases.",
+      "claim_type": "EXPLICIT",
+      "source": "They produce lytic granules that eliminate infected or cancerous cells, coordinate the inflammation process, form immunological memory, and modulate antigen-presenting cell function in inflammatory diseases (Highton et al., 2021; Parisi et al., 2017; Earls and Lee, 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Description of NK cell functions supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "58591f04-ee4f-45eb-90b0-6b8ce020d7ba",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C60",
+      "claim": "NK cell exhaustion is characterized by downregulated expression of activating receptors (e.g. NKG2D, FCGR3A), upregulated expression of inhibitory receptors (e.g. KLRC1, PD-1, TIGIT, Tim-3), decreased production of effector cytokines (e.g. IFN\u03b3, GZMB), and impaired cytolytic activity.",
+      "claim_type": "EXPLICIT",
+      "source": "In the context of tumors and chronic infections, NK cells exhibit an exhausted phenotype, termed NK cell exhaustion, which is characterized by downregulated expression of activating receptors (e.g. NKG2D, FCGR3A), upregulated expression of inhibitory receptors (e.g. KLRC1, PD-1, TIGIT, Tim-3), decreased production of effector cytokines (e.g. IFN\u03b3, GZMB), and impaired cytolytic activity (Bi and Tian, 2017; Zhang et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Definition of NK cell exhaustion supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "42731289-90af-44a5-b487-fb6a5cb627d1",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C61",
+      "claim": "Blockade of KLRC1 and TIGIT has been shown to reverse NK cell exhaustion and enhance the therapeutic effects of anti-tumor and anti-infective immunotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, blockade of KLRC1 and TIGIT has been shown to reverse NK cell exhaustion and enhance the therapeutic effects of anti-tumor and anti-infective immunotherapies (Zhang et al., 2018; Liu et al., 2023; Zhang et al., 2019b).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about therapeutic interventions supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "b91d1129-a7cc-4c47-be7b-bc53a5819eba",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C62",
+      "claim": "The liver contains a substantial population of diverse immune cells, particularly NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "It contains a substantial population of diverse immune cells, particularly NK cells (Crispe, 2009; Kubes and Jenne, 2018; Racanelli and Rehermann, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about liver immune composition supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "53a031f0-2cf6-4861-af7d-a8cff971372d",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C63",
+      "claim": "Liver pathologies affect mesenchymal immune cell function and influence systemic inflammatory responses, impacting the development and outcome of inflammation-associated diseases such as cholecystitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, liver pathologies affect mesenchymal immune cell function and influence systemic inflammatory responses, impacting the development and outcome of inflammation-associated diseases such as cholecystitis (Armstrong et al., 2014; Matyas et al., 2021; Knab et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about liver pathology effects supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "cd35b75a-b6cd-4d23-91de-4ead4f39651d",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C64",
+      "claim": "Systemic inflammation is widely recognized as a primary catalyst of cholecystitis pathology.",
+      "claim_type": "EXPLICIT",
+      "source": "While the corresponding pathological mechanisms of cholecystitis are complicated, systemic inflammation is widely recognized as a primary catalyst of cholecystitis pathology (Huffman and Schenker, 2010; Markaki et al., 2021; Laurila et al., 2005; Fu et al., 2022; Abu-Sbeih et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about cholecystitis pathology supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "898d061c-9fb8-4099-a7c9-f4d5bf199ac2",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C65",
+      "claim": "The proportion, gene expression profile, and functional status of immune cells hold significant prognostic value in cholecystitis.",
+      "claim_type": "EXPLICIT",
+      "source": "Compelling evidence supports that the proportion, gene expression profile, and functional status of immune cells hold significant prognostic value (Buonacera et al., 2022; McKinney et al., 2010; McKinney et al., 2015; Sun et al., 2021; Fridman et al., 2017; Wouters and Nelson, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about prognostic value supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "b5da829a-b281-434e-a796-66cb3e565e36",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C66",
+      "claim": "Metabolic crosstalk in the tumor microenvironment disrupts metabolic and signaling pathways in immune cells, leading to dysfunction.",
+      "claim_type": "EXPLICIT",
+      "source": "Emerging research indicates that metabolic crosstalk in the tumor microenvironment disrupts metabolic and signaling pathways in immune cells, leading to dysfunction (Hosseini et al., 2022; Park et al., 2023; Yan et al., 2023; Bader et al., 2020; Riera-Domingo et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about metabolic effects on immune cells supported by citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "d40d4305-4ba8-42c3-8285-86e881ef43c8",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C67",
+      "claim": "Glycolysis and oxidative phosphorylation contribute to maintain the cytotoxic ability and promote expansion of NK cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, glycolysis and oxidative phosphorylation contribute to maintain the cytotoxic ability and promote expansion of NK cells (Wu et al., 2020; Poznanski and Ashkar, 2019; O'Brien and Finlay, 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about NK cell metabolism supported by citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "71eee92a-137f-4fc0-8511-1ddcb6abab39",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C68",
+      "claim": "Kupffer cells are liver-resident macrophages that represent the most abundant population of tissue-resident macrophages in the human body.",
+      "claim_type": "EXPLICIT",
+      "source": "Kupffer cells, which are liver-resident macrophages with unique functions in maintaining homeostasis, represent the most abundant population of tissue-resident macrophages in the human body (Dixon et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about Kupffer cells supported by citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "066ec465-2933-4e9f-a5d0-bd778938fca7",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C69",
+      "claim": "Elevated CD4 regulatory T cells are correlated with reduced CD8 T cells in WD patients.",
+      "claim_type": "EXPLICIT",
+      "source": "CD4 regulatory T cells are thought to inhibit T cell activation in autoimmune and virus-related liver diseases, indicating a correlation between elevated CD4 regulatory T cells and reduced CD8 T cells in WD patients (Zhang et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about T cell relationships supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "ab7a37eb-a055-46a1-bc43-e01383495822",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C70",
+      "claim": "Heat shock proteins delivering antigens may be responsible for the downregulation of lymphocytes differentiation and T cell activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, heat shock proteins delivering antigens may be responsible for the downregulation of lymphocytes differentiation and T cell activation (Shevtsov and Multhoff, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement about heat shock protein function supported by citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "0ef696c7-5c39-422b-8e42-1c538b89f8b6",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "claim_id": "C71",
+      "claim": "The study was approved by the Ethics Committee of the First Affiliated Hospital of Anhui University of Traditional Chinese Medicine (approval number 2019AH-32).",
+      "claim_type": "EXPLICIT",
+      "source": "The study was approved by the Ethics Committee of the First Affiliated Hospital of Anhui University of Traditional Chinese Medicine (approval number 2019AH-32), and the clinical study design, informed consent, and case report were also approved in the document.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Statement of ethical approval.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "23281e5e-2542-479a-97aa-6a3f1d927909",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "WD patients have significantly higher incidence of cholecystitis (49.51% vs 9.46% in HBV patients) and poorer clinical outcomes, with higher proportions of abnormal white blood cell, neutrophil, and lymphocyte counts in cholecystitis patients with WD.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C7, and C8 provide converging clinical evidence from multiple cohorts showing both increased cholecystitis incidence and worse clinical parameters in WD patients. The data from Cohorts 2 and 3 with specific percentages and statistical comparisons support this result. However, the claim of 'over 600 WD patients' (C1) appears inconsistent with the cohort sizes shown in the figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "f1dbb3c4-a730-4630-b7b2-0d04f529b52c",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "WD is characterized by ATP7B mutations (predominantly c.2333G>T at 65%) leading to mitochondrial dysfunction, with ATP7B knockout significantly impairing basal oxygen consumption and ATP production in hepatocytes while glycolysis remains unchanged.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C6 provide genetic, mechanistic, and experimental evidence for WD pathophysiology. The mutation frequency data (C3), mechanistic understanding (C4), clinical metabolic parameters (C5), and in vitro functional assays (C6) converge to support this characterization. However, the sample size for mutation analysis (n=20) is relatively small.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "de13b489-5969-45df-8d0e-29a5d15cd59e",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Single-cell RNA sequencing of 57,384 cells identified 12 cell clusters, revealing that mononuclear phagocytes are significantly increased in WD patients (17.33% vs 9.97%) while T and NK cells are decreased (56.54% vs 73.55%), suggesting MPs dominate immune microenvironment remodeling.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C9-C13 describe the scRNA-seq methodology and key findings about immune cell composition changes. The data quality metrics, cell numbers, and proportional changes are clearly stated with supporting figures. The inference about MP dominance (C13) is reasonable given the observed compositional changes.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "480ab021-d851-4f66-b1d1-9657d5d7a68c",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "WD patients show increased macrophages (25.03% vs 14.33%) and NK cells (40.97% vs 17.07%), with upregulation of complement C1q and HLA-DRA genes, downregulation of heat shock proteins, enhanced antigen processing and immune response activation, and altered intercellular communication patterns.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C14-C19 provide detailed characterization of immune cell changes in WD through cell composition, gene expression, pathway analysis, and cell-cell communication data. The multiple lines of evidence from scRNA-seq analysis converge to support enhanced innate immune activation in WD patients.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "03c66798-9322-4c56-b357-36c23cc05af7",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Macrophage and Kupffer cell subtypes in WD patients show distinct functional profiles, with Macrophages_3 displaying elevated S100A family genes and pro-inflammatory signatures, Macrophages_4 showing upregulated lipid metabolism genes, all KC subtypes showing increased pro-inflammatory and interferon-responsive signatures, and neutrophils showing decreased maturation and functional scores.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C20-C24 describe detailed functional characterization of myeloid cell subtypes using gene expression profiling and signature scoring. The data are supported by multiple supplementary figures and show consistent patterns of altered immune cell function in WD.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "3938513c-729a-4d32-91fb-8822063f3f9d",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "WD patients show complex alterations in antigen presentation with upregulated MHC class I but downregulated MHC class II in mature DCs, upregulated immunoglobulin genes in B cells, elevated S100A8/A9/A12 in monocytes indicating inflammation, and upregulated energy and lipid metabolism in T cell subtypes.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C25-C30 describe coordinated changes across multiple immune cell types related to antigen presentation, inflammation, and metabolism. The gene expression data and GO analysis support these findings, though the functional implications of opposing MHC class I/II regulation require further investigation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "NK cells in WD patients exhibit exhaustion characterized by downregulated cytotoxicity pathways, upregulated inhibitory receptors KLRC1 and TIGIT, downregulated effector molecules (FCGR3A, TNF, IFNG, GZMB, GNLY, CCL4), upregulated oxidative phosphorylation, and preferential differentiation toward an exhausted cell fate.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31-C38 provide comprehensive evidence for NK cell exhaustion through pathway analysis, gene expression profiling, and trajectory analysis. The convergence of multiple analytical approaches (KEGG, GO, gene expression, pseudotime) strongly supports the exhaustion phenotype, though the paradox of increased oxidative phosphorylation alongside exhaustion requires mechanistic explanation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "32a46083-5edd-4f00-bd42-a418eeed59d7",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "NK cells in WD patients show transcription factor changes consistent with exhaustion, with downregulated T-bet (TBX21) and upregulated Eomes (EOMES), matching patterns observed in exhausted NK cells from prior studies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C39-C41 describe transcription factor changes supporting NK cell exhaustion. The PYSCENIC analysis data (C39, C40) align with established literature on exhausted NK cells (C41), providing mechanistic support for the exhaustion phenotype.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "459cb9be-4177-496c-8eaf-4cc122793b76",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "NK cell exhaustion in WD patients is validated in clinical samples, with increased KLRC1+ and TIGIT+ NK cells and decreased IFN\u03b3+ NK cells in both liver tissue (by mIHC) and peripheral blood (by flow cytometry), along with increased proportion of CD56Bright NK cells suggesting weaker effector function.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C42-C47 provide orthogonal validation of scRNA-seq findings using mIHC and flow cytometry on clinical samples. The consistency between tissue and blood samples, and between different methodologies, strongly supports the NK cell exhaustion phenotype. Sample sizes for flow cytometry appear adequate (n=3-7 per group).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "71189dfa-abf8-4127-a88e-1a11027fb2d3",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "A 12-gene prognostic model based on NK cell exhaustion markers shows good performance (AUC 0.77-0.97) across multiple inflammatory diseases, with high NK cell exhaustion markers associated with significantly shorter survival in cholecystitis (p=6.1e-6), pancreatitis (p=1.9e-5), lung adenocarcinoma (p=3.8e-16), and hepatocellular carcinoma (p=3.0e-3).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C49-C54 describe development and validation of a prognostic model using public datasets. The model shows good performance metrics and significant survival associations across multiple diseases. However, the model was not validated in the WD cohort itself, and the biological connection between NK exhaustion markers and cholecystitis prognosis requires mechanistic validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "480c658b-e0b6-454d-94d7-89183591f115",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Wilson's disease is a rare genetic disorder caused by ATP7B mutations leading to mitochondrial dysfunction, altered liver metabolism, and commonly associated inflammatory conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C57 provide background information on WD that is well-supported by citations to established literature. These are accurate general knowledge claims about WD pathophysiology.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "372afe1a-44d3-4a7b-a3f6-ed5bcb4eb10f",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "NK cells are major innate lymphocytes with diverse functions including cytotoxicity, inflammation coordination, and immune memory. NK cell exhaustion is characterized by specific receptor and cytokine expression patterns, and blockade of KLRC1 and TIGIT can reverse exhaustion and enhance immunotherapy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C58-C61 provide background on NK cell biology and exhaustion that is well-supported by citations to established literature. These accurately summarize current knowledge relevant to the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "01542204-d63c-493e-870a-fcd92a1ff1e5",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "The liver contains substantial immune cell populations, particularly NK cells. Liver pathologies affect immune function and systemic inflammation, impacting diseases like cholecystitis. Systemic inflammation is a primary catalyst of cholecystitis, and immune cell characteristics hold prognostic value.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C62-C65 provide background on liver immunology and cholecystitis pathology supported by appropriate citations. These establish the rationale for studying immune dysfunction in WD-associated cholecystitis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "cc8799ce-fbb6-4123-97c5-951d7326b71d",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Metabolic crosstalk in tissue microenvironments can disrupt immune cell function, and glycolysis and oxidative phosphorylation maintain NK cell cytotoxicity and expansion.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C66-C67 provide relevant background on metabolic regulation of immune function supported by recent literature. This contextualizes the metabolic findings in WD-associated immune dysfunction.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "3ad17e98-db52-4da5-a225-c4bf28739f30",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Kupffer cells are the most abundant tissue-resident macrophages in the body. Elevated CD4 regulatory T cells correlate with reduced CD8 T cells in WD patients, and heat shock proteins may be responsible for downregulation of lymphocyte differentiation and T cell activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C70 provide background information and interpretations supported by citations. C69 and C70 involve some inference about mechanisms in WD based on general principles from cited literature.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "e68d20ab-64d8-4743-bcc0-9e16c879f631",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "NK cell exhaustion is correlated with poor liver cancer prognosis based on prior literature.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C48 accurately cites prior literature establishing the prognostic significance of NK cell exhaustion in liver cancer, providing rationale for investigating this in cholecystitis.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "24cd6653-48c1-4e75-9a79-4bbf4095fb16",
+      "content_id": "1cb17779-31c4-4b44-81ae-e14701af0232",
+      "result_id": "R17",
+      "result_category": "llm",
+      "result": "The study received ethical approval from the institutional ethics committee.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C71 states the ethical approval for the study with specific approval number. This is a standard methodological detail.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "979f6aac-f96f-4f92-97b7-05bd46c4f449",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "WD patients have significantly higher incidence of cholecystitis (49.51% vs 9.46% in HBV patients) and poorer prognosis, with abnormal inflammatory markers (WBC, neutrophils, lymphocytes) more prevalent in cholecystitis patients with WD.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor states the study presents 'valuable findings' linking WD to 'poor cholecystitis outcomes.' The anonymous reviewer explicitly identifies the 'associations between Wilson's disease and cholecystitis' as a key finding and strength of the study. No concerns were raised about these clinical observations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "e6ce3313-aa0e-4ef8-840f-262b9533a76d",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The c.2333G>T (p.R778L) mutation accounts for 65% of ATP7B mutations in the studied Chinese WD patient cohort.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer explicitly identifies as a 'key finding' that 'the predominant ATP7B gene mutation in the Chinese population is the 2333G>T (p. R778L) mutation.' This is highlighted as a strength of the study with no methodological concerns raised.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "e795bf90-aa6d-4e0d-8459-6b809615addb",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "ATP7B deficiency leads to mitochondrial dysfunction, with ATP7B knockout in hepatocyte cell lines significantly impairing basal oxygen consumption rate and ATP production capacity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor describes the study as having 'solid methods' and the anonymous reviewer notes the study documented that 'ATP7B mutations can disrupt copper metabolism, affecting brain and liver function.' The in vitro mitochondrial dysfunction data (C6) is not specifically critiqued, suggesting implicit acceptance.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "de0b1227-1802-483a-b983-f3b05c16a717",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Single-cell RNA-seq analysis of 57,384 cells identified 12 cell clusters, revealing that mononuclear phagocytes are significantly increased in WD patients (17.33% vs 9.97%) and likely dominate immune microenvironment remodeling.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor praises 'the integration of clinical data and single-cell analyses' and the anonymous reviewer notes 'Single-cell RNA-seq analysis revealed changes in the immune microenvironment' as part of the study's contributions. The methodology is described as 'solid' with no specific concerns about the scRNA-seq data quality or cell composition findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "4f14a605-a0df-4e91-a3a4-ff9dc83c5714",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "WD patients show increased macrophages and NK cells, with upregulation of complement C1q and HLA-DRA genes, downregulation of heat shock proteins, and enhanced antigen processing and immune response activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The anonymous reviewer acknowledges the study revealed 'changes in the immune microenvironment, including the activation of immune responses' without raising concerns about these specific findings. The editor's statement about 'solid methods' and acceptance of immune dysregulation findings supports these claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "42bdfecd-7113-4cb2-8b94-437522c1e41f",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Detailed characterization of immune cell subtypes reveals distinct functional states in WD, including pro-inflammatory macrophage subtypes (S100A family gene expression), altered Kupffer cells, impaired neutrophil function, and dysregulated dendritic cell MHC expression.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These detailed immune cell characterizations are part of the 'single-cell analyses' praised by the editor. The anonymous reviewer notes the study revealed 'changes in the immune microenvironment' without questioning the validity of these subtype-specific findings. The comprehensive nature of these analyses contributes to the 'solid methods' assessment.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "35bccabe-cc79-4e60-89ac-c6045929f8b8",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "NK cells in WD patients exhibit an exhausted phenotype characterized by upregulated inhibitory receptors (KLRC1, TIGIT), downregulated effector molecules (FCGR3A, TNF, IFNG, GZMB), altered metabolism (upregulated oxidative phosphorylation), and differentiation toward a more exhausted state with altered transcription factor expression (decreased T-bet, increased Eomes).",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor specifically highlights 'NK cell exhaustion as a key factor' in the study. The anonymous reviewer explicitly identifies 'the exhaustion of natural killer cells' as a key finding and strength. These comprehensive molecular and functional characterizations of NK cell exhaustion are central to the study's contributions and were not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "d4607310-4f5d-4191-90fa-5f33a772e5bd",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Validation experiments confirm NK cell exhaustion in WD patients through multiplex immunohistochemistry showing increased KLRC1+ NK cells in liver tissue and flow cytometry demonstrating increased KLRC1+ and TIGIT+ NK cells with decreased IFN\u03b3+ NK cells in peripheral blood.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These validation experiments support the NK cell exhaustion findings that the editor and reviewer identified as key contributions. The editor's assessment of 'solid methods' and the reviewer's acceptance of NK cell exhaustion findings without methodological concerns indicate support for these validation data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "b6e9d225-b671-4e17-a744-d662e08b1c12",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "A prognostic model based on 12 NK cell exhaustion markers demonstrates good performance (AUC 0.77-0.97) across multiple diseases, with high markers of NK cell exhaustion associated with shorter survival in cholecystitis, pancreatitis, lung adenocarcinoma, and hepatocellular carcinoma.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor notes the work 'offers insights with potential therapeutic implications,' which aligns with the prognostic modeling. The anonymous reviewer acknowledges the study's contributions without questioning the prognostic analyses. The editor's statement that findings will be 'of interest to colleagues in inflammatory and metabolic diseases' supports the broader applicability demonstrated by this multi-disease analysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "c8a79181-e7f5-4898-ad06-2ff39b8caffd",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The mechanistic link between ATP7B mutations, NK cell exhaustion, and poor cholecystitis prognosis in WD patients.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The anonymous reviewer explicitly states as a weakness: 'The underlying mechanisms linking ATP7B mutations to cholecystitis and natural killer cell exhaustion remain unclear. Specifically, it is not yet determined whether copper metabolism alterations directly cause cholecystitis and natural killer cell exhaustion, or if these effects are secondary to liver dysfunction.' This indicates the causal mechanisms remain uncertain despite the observed associations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "005e21ce-66e7-4cbc-ac4f-33b63106d7e9",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "WD patients show distinct metabolic features including lower total bilirubin, lower hyperglycemia risk, and upregulated energy and lipid metabolism processes in T cell subtypes.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor's statement about linking 'metabolic dysfunction in Wilson's disease to immune cell dysregulation' encompasses these metabolic findings. No specific concerns were raised about these clinical and cellular metabolic observations, suggesting implicit acceptance as part of the overall metabolic-immune connection.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "48f417d0-7014-4606-8249-5566b16ad5b3",
+      "content_id": "66c8881a-3229-4af8-bd30-ca6aa2242f21",
+      "result_id": "R12",
+      "result_category": "peer",
+      "result": "Background and contextual claims about Wilson's disease, NK cells, liver immunology, cholecystitis pathology, and metabolic-immune interactions based on prior literature.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are literature-based background claims that provide context for the study. The anonymous reviewer's summary accurately reflects this background ('Wilson's disease is a rare genetic disorder caused by mutations in the ATP7B gene. Previous studies have documented that ATP7B mutations can disrupt copper metabolism'), indicating acceptance of the established knowledge framework.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "f8419d75-370d-4683-8435-2e3fa2224f3d",
+      "result_id": "23281e5e-2542-479a-97aa-6a3f1d927909"
+    },
+    {
+      "claim_id": "03078c72-6f3a-4226-9a75-b661f5d1b8d2",
+      "result_id": "23281e5e-2542-479a-97aa-6a3f1d927909"
+    },
+    {
+      "claim_id": "c8c0c2ac-aee6-49a1-8eee-5ecde074a91d",
+      "result_id": "23281e5e-2542-479a-97aa-6a3f1d927909"
+    },
+    {
+      "claim_id": "19788111-a091-4f8c-819e-345148d5273e",
+      "result_id": "23281e5e-2542-479a-97aa-6a3f1d927909"
+    },
+    {
+      "claim_id": "534a0147-57dd-4e34-83d1-64356c466d98",
+      "result_id": "f1dbb3c4-a730-4630-b7b2-0d04f529b52c"
+    },
+    {
+      "claim_id": "34eceae7-3d61-49d6-8501-5366ef9799fd",
+      "result_id": "f1dbb3c4-a730-4630-b7b2-0d04f529b52c"
+    },
+    {
+      "claim_id": "c67be4af-5c18-4eda-939b-98dad359aff3",
+      "result_id": "f1dbb3c4-a730-4630-b7b2-0d04f529b52c"
+    },
+    {
+      "claim_id": "02b10159-41db-4329-9e73-86009622e9ac",
+      "result_id": "f1dbb3c4-a730-4630-b7b2-0d04f529b52c"
+    },
+    {
+      "claim_id": "c90f1479-cad5-4850-8b79-04d29dfdf160",
+      "result_id": "de13b489-5969-45df-8d0e-29a5d15cd59e"
+    },
+    {
+      "claim_id": "78469d59-7a81-4914-b12c-22badb6a8622",
+      "result_id": "de13b489-5969-45df-8d0e-29a5d15cd59e"
+    },
+    {
+      "claim_id": "a8cd8001-e1b6-4c5a-8daa-2f9e6b0d79b0",
+      "result_id": "de13b489-5969-45df-8d0e-29a5d15cd59e"
+    },
+    {
+      "claim_id": "131d4f2d-abd7-46bb-878c-b75a4da14642",
+      "result_id": "de13b489-5969-45df-8d0e-29a5d15cd59e"
+    },
+    {
+      "claim_id": "e2e857ec-5d20-4876-a351-e1847dc3d01c",
+      "result_id": "de13b489-5969-45df-8d0e-29a5d15cd59e"
+    },
+    {
+      "claim_id": "84472492-989f-425e-819a-5d8b19fe04b9",
+      "result_id": "480ab021-d851-4f66-b1d1-9657d5d7a68c"
+    },
+    {
+      "claim_id": "1aae3349-fe7e-488e-aec1-93fdb81aae51",
+      "result_id": "480ab021-d851-4f66-b1d1-9657d5d7a68c"
+    },
+    {
+      "claim_id": "e1cb967d-2500-4330-9579-4a960f43e612",
+      "result_id": "480ab021-d851-4f66-b1d1-9657d5d7a68c"
+    },
+    {
+      "claim_id": "2738d521-b40d-47bc-96b0-1a68f7e3f152",
+      "result_id": "480ab021-d851-4f66-b1d1-9657d5d7a68c"
+    },
+    {
+      "claim_id": "1b11cd75-1534-4852-bc91-88f8b9e06147",
+      "result_id": "480ab021-d851-4f66-b1d1-9657d5d7a68c"
+    },
+    {
+      "claim_id": "8ba3a1de-6ec2-4f57-b1ff-66a7ca7e60b2",
+      "result_id": "480ab021-d851-4f66-b1d1-9657d5d7a68c"
+    },
+    {
+      "claim_id": "0f234fb2-7f94-491e-9cf6-fc152d9d9463",
+      "result_id": "03c66798-9322-4c56-b357-36c23cc05af7"
+    },
+    {
+      "claim_id": "0ea0401f-9db6-4177-83b7-ca6b8b3868d9",
+      "result_id": "03c66798-9322-4c56-b357-36c23cc05af7"
+    },
+    {
+      "claim_id": "dc2d61b8-cd14-4d73-8bef-51aa785c6b59",
+      "result_id": "03c66798-9322-4c56-b357-36c23cc05af7"
+    },
+    {
+      "claim_id": "f0834e47-f679-4c80-b9ec-c42664de1024",
+      "result_id": "03c66798-9322-4c56-b357-36c23cc05af7"
+    },
+    {
+      "claim_id": "8ece69b7-59fa-4fb8-a5de-90e58df3e927",
+      "result_id": "03c66798-9322-4c56-b357-36c23cc05af7"
+    },
+    {
+      "claim_id": "57dd310c-3449-421d-af51-70cdbf6064a3",
+      "result_id": "3938513c-729a-4d32-91fb-8822063f3f9d"
+    },
+    {
+      "claim_id": "548f10ad-7876-497e-9aec-5aa1f59ea9f5",
+      "result_id": "3938513c-729a-4d32-91fb-8822063f3f9d"
+    },
+    {
+      "claim_id": "1c55c8a5-d649-497b-8ef1-bf7812632248",
+      "result_id": "3938513c-729a-4d32-91fb-8822063f3f9d"
+    },
+    {
+      "claim_id": "ad4134df-bbf3-49ce-ae1d-cf1b21f804fc",
+      "result_id": "3938513c-729a-4d32-91fb-8822063f3f9d"
+    },
+    {
+      "claim_id": "96d5c6de-7b64-48f1-b70a-37143a80d8d2",
+      "result_id": "3938513c-729a-4d32-91fb-8822063f3f9d"
+    },
+    {
+      "claim_id": "c5087a7a-4a10-45b0-be85-ebcdbeec4b9a",
+      "result_id": "3938513c-729a-4d32-91fb-8822063f3f9d"
+    },
+    {
+      "claim_id": "2f28c516-6efc-47a8-87e4-e129a5442080",
+      "result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6"
+    },
+    {
+      "claim_id": "1a582428-f84f-43e9-b2e5-1b64ebc68889",
+      "result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6"
+    },
+    {
+      "claim_id": "73eb1fe9-1b3d-46b0-b3d9-b16cd3052c1e",
+      "result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6"
+    },
+    {
+      "claim_id": "48454121-90ac-4830-b051-c7ccadd40904",
+      "result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6"
+    },
+    {
+      "claim_id": "e4e9dd99-3c04-4c65-bce0-8ca6abef9f3b",
+      "result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6"
+    },
+    {
+      "claim_id": "5a41dc37-3c9a-41da-b290-9f6a4f5fa21f",
+      "result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6"
+    },
+    {
+      "claim_id": "bc798883-be3c-4368-8962-d9824f8b93e9",
+      "result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6"
+    },
+    {
+      "claim_id": "922b1aa2-021a-4a20-af37-f76ad2f49faf",
+      "result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6"
+    },
+    {
+      "claim_id": "8722cd97-acbf-487f-8baf-0d184e537047",
+      "result_id": "32a46083-5edd-4f00-bd42-a418eeed59d7"
+    },
+    {
+      "claim_id": "23b51b2e-ecc8-492c-a682-e64bf4115d87",
+      "result_id": "32a46083-5edd-4f00-bd42-a418eeed59d7"
+    },
+    {
+      "claim_id": "fcec8f63-9e72-4108-843d-d16b47c8a4db",
+      "result_id": "32a46083-5edd-4f00-bd42-a418eeed59d7"
+    },
+    {
+      "claim_id": "fa83b7a8-679e-4f78-8330-d87b7aacb318",
+      "result_id": "459cb9be-4177-496c-8eaf-4cc122793b76"
+    },
+    {
+      "claim_id": "843d81f6-eade-488a-9eff-cb7d9556a422",
+      "result_id": "459cb9be-4177-496c-8eaf-4cc122793b76"
+    },
+    {
+      "claim_id": "bfda8f3e-db7a-4fe2-ae25-faa2e4c55cb3",
+      "result_id": "459cb9be-4177-496c-8eaf-4cc122793b76"
+    },
+    {
+      "claim_id": "9ccb3259-31b6-4b6d-ac58-9ad4177aa93e",
+      "result_id": "459cb9be-4177-496c-8eaf-4cc122793b76"
+    },
+    {
+      "claim_id": "3b672cc8-3ff5-49ff-a5b1-d24ae80b40fb",
+      "result_id": "459cb9be-4177-496c-8eaf-4cc122793b76"
+    },
+    {
+      "claim_id": "4f961010-e57a-41fc-86eb-d5b11da0869f",
+      "result_id": "459cb9be-4177-496c-8eaf-4cc122793b76"
+    },
+    {
+      "claim_id": "83de2983-7613-494f-a7b1-ca4464ae193e",
+      "result_id": "71189dfa-abf8-4127-a88e-1a11027fb2d3"
+    },
+    {
+      "claim_id": "092881f4-b5f4-4964-92b9-5e1ac1ddb706",
+      "result_id": "71189dfa-abf8-4127-a88e-1a11027fb2d3"
+    },
+    {
+      "claim_id": "b202266d-c0c5-461b-97ee-288913c50e72",
+      "result_id": "71189dfa-abf8-4127-a88e-1a11027fb2d3"
+    },
+    {
+      "claim_id": "d7678f86-6a22-4aeb-90b1-837feac9e6e3",
+      "result_id": "71189dfa-abf8-4127-a88e-1a11027fb2d3"
+    },
+    {
+      "claim_id": "09379e28-0721-4464-9c34-9c6729df92ff",
+      "result_id": "71189dfa-abf8-4127-a88e-1a11027fb2d3"
+    },
+    {
+      "claim_id": "cfb7d327-0a91-4af9-a056-63ebe58c6a39",
+      "result_id": "71189dfa-abf8-4127-a88e-1a11027fb2d3"
+    },
+    {
+      "claim_id": "f2371c08-a780-49af-9f86-255ba2a366f8",
+      "result_id": "480c658b-e0b6-454d-94d7-89183591f115"
+    },
+    {
+      "claim_id": "b3935eee-1036-4026-923d-436e188a668c",
+      "result_id": "480c658b-e0b6-454d-94d7-89183591f115"
+    },
+    {
+      "claim_id": "c41e022e-9c74-47dc-aa68-2a20bc41de7d",
+      "result_id": "480c658b-e0b6-454d-94d7-89183591f115"
+    },
+    {
+      "claim_id": "ff1340ba-9567-402a-9c1b-b361ac090944",
+      "result_id": "372afe1a-44d3-4a7b-a3f6-ed5bcb4eb10f"
+    },
+    {
+      "claim_id": "bf2a2fac-5ab1-4eee-933c-b7ad2f8b0243",
+      "result_id": "372afe1a-44d3-4a7b-a3f6-ed5bcb4eb10f"
+    },
+    {
+      "claim_id": "58591f04-ee4f-45eb-90b0-6b8ce020d7ba",
+      "result_id": "372afe1a-44d3-4a7b-a3f6-ed5bcb4eb10f"
+    },
+    {
+      "claim_id": "42731289-90af-44a5-b487-fb6a5cb627d1",
+      "result_id": "372afe1a-44d3-4a7b-a3f6-ed5bcb4eb10f"
+    },
+    {
+      "claim_id": "b91d1129-a7cc-4c47-be7b-bc53a5819eba",
+      "result_id": "01542204-d63c-493e-870a-fcd92a1ff1e5"
+    },
+    {
+      "claim_id": "53a031f0-2cf6-4861-af7d-a8cff971372d",
+      "result_id": "01542204-d63c-493e-870a-fcd92a1ff1e5"
+    },
+    {
+      "claim_id": "cd35b75a-b6cd-4d23-91de-4ead4f39651d",
+      "result_id": "01542204-d63c-493e-870a-fcd92a1ff1e5"
+    },
+    {
+      "claim_id": "898d061c-9fb8-4099-a7c9-f4d5bf199ac2",
+      "result_id": "01542204-d63c-493e-870a-fcd92a1ff1e5"
+    },
+    {
+      "claim_id": "b5da829a-b281-434e-a796-66cb3e565e36",
+      "result_id": "cc8799ce-fbb6-4123-97c5-951d7326b71d"
+    },
+    {
+      "claim_id": "d40d4305-4ba8-42c3-8285-86e881ef43c8",
+      "result_id": "cc8799ce-fbb6-4123-97c5-951d7326b71d"
+    },
+    {
+      "claim_id": "71eee92a-137f-4fc0-8511-1ddcb6abab39",
+      "result_id": "3ad17e98-db52-4da5-a225-c4bf28739f30"
+    },
+    {
+      "claim_id": "066ec465-2933-4e9f-a5d0-bd778938fca7",
+      "result_id": "3ad17e98-db52-4da5-a225-c4bf28739f30"
+    },
+    {
+      "claim_id": "ab7a37eb-a055-46a1-bc43-e01383495822",
+      "result_id": "3ad17e98-db52-4da5-a225-c4bf28739f30"
+    },
+    {
+      "claim_id": "a2a4ff26-0e3a-4bb9-9b84-391fc2f621fa",
+      "result_id": "e68d20ab-64d8-4743-bcc0-9e16c879f631"
+    },
+    {
+      "claim_id": "0ef696c7-5c39-422b-8e42-1c538b89f8b6",
+      "result_id": "24cd6653-48c1-4e75-9a79-4bbf4095fb16"
+    },
+    {
+      "claim_id": "f8419d75-370d-4683-8435-2e3fa2224f3d",
+      "result_id": "979f6aac-f96f-4f92-97b7-05bd46c4f449"
+    },
+    {
+      "claim_id": "03078c72-6f3a-4226-9a75-b661f5d1b8d2",
+      "result_id": "979f6aac-f96f-4f92-97b7-05bd46c4f449"
+    },
+    {
+      "claim_id": "c8c0c2ac-aee6-49a1-8eee-5ecde074a91d",
+      "result_id": "979f6aac-f96f-4f92-97b7-05bd46c4f449"
+    },
+    {
+      "claim_id": "19788111-a091-4f8c-819e-345148d5273e",
+      "result_id": "979f6aac-f96f-4f92-97b7-05bd46c4f449"
+    },
+    {
+      "claim_id": "534a0147-57dd-4e34-83d1-64356c466d98",
+      "result_id": "e6ce3313-aa0e-4ef8-840f-262b9533a76d"
+    },
+    {
+      "claim_id": "34eceae7-3d61-49d6-8501-5366ef9799fd",
+      "result_id": "e795bf90-aa6d-4e0d-8459-6b809615addb"
+    },
+    {
+      "claim_id": "02b10159-41db-4329-9e73-86009622e9ac",
+      "result_id": "e795bf90-aa6d-4e0d-8459-6b809615addb"
+    },
+    {
+      "claim_id": "b3935eee-1036-4026-923d-436e188a668c",
+      "result_id": "e795bf90-aa6d-4e0d-8459-6b809615addb"
+    },
+    {
+      "claim_id": "c90f1479-cad5-4850-8b79-04d29dfdf160",
+      "result_id": "de0b1227-1802-483a-b983-f3b05c16a717"
+    },
+    {
+      "claim_id": "78469d59-7a81-4914-b12c-22badb6a8622",
+      "result_id": "de0b1227-1802-483a-b983-f3b05c16a717"
+    },
+    {
+      "claim_id": "a8cd8001-e1b6-4c5a-8daa-2f9e6b0d79b0",
+      "result_id": "de0b1227-1802-483a-b983-f3b05c16a717"
+    },
+    {
+      "claim_id": "131d4f2d-abd7-46bb-878c-b75a4da14642",
+      "result_id": "de0b1227-1802-483a-b983-f3b05c16a717"
+    },
+    {
+      "claim_id": "e2e857ec-5d20-4876-a351-e1847dc3d01c",
+      "result_id": "de0b1227-1802-483a-b983-f3b05c16a717"
+    },
+    {
+      "claim_id": "84472492-989f-425e-819a-5d8b19fe04b9",
+      "result_id": "4f14a605-a0df-4e91-a3a4-ff9dc83c5714"
+    },
+    {
+      "claim_id": "1aae3349-fe7e-488e-aec1-93fdb81aae51",
+      "result_id": "4f14a605-a0df-4e91-a3a4-ff9dc83c5714"
+    },
+    {
+      "claim_id": "e1cb967d-2500-4330-9579-4a960f43e612",
+      "result_id": "4f14a605-a0df-4e91-a3a4-ff9dc83c5714"
+    },
+    {
+      "claim_id": "2738d521-b40d-47bc-96b0-1a68f7e3f152",
+      "result_id": "4f14a605-a0df-4e91-a3a4-ff9dc83c5714"
+    },
+    {
+      "claim_id": "1b11cd75-1534-4852-bc91-88f8b9e06147",
+      "result_id": "4f14a605-a0df-4e91-a3a4-ff9dc83c5714"
+    },
+    {
+      "claim_id": "8ba3a1de-6ec2-4f57-b1ff-66a7ca7e60b2",
+      "result_id": "4f14a605-a0df-4e91-a3a4-ff9dc83c5714"
+    },
+    {
+      "claim_id": "0f234fb2-7f94-491e-9cf6-fc152d9d9463",
+      "result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f"
+    },
+    {
+      "claim_id": "0ea0401f-9db6-4177-83b7-ca6b8b3868d9",
+      "result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f"
+    },
+    {
+      "claim_id": "dc2d61b8-cd14-4d73-8bef-51aa785c6b59",
+      "result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f"
+    },
+    {
+      "claim_id": "f0834e47-f679-4c80-b9ec-c42664de1024",
+      "result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f"
+    },
+    {
+      "claim_id": "8ece69b7-59fa-4fb8-a5de-90e58df3e927",
+      "result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f"
+    },
+    {
+      "claim_id": "57dd310c-3449-421d-af51-70cdbf6064a3",
+      "result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f"
+    },
+    {
+      "claim_id": "548f10ad-7876-497e-9aec-5aa1f59ea9f5",
+      "result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f"
+    },
+    {
+      "claim_id": "1c55c8a5-d649-497b-8ef1-bf7812632248",
+      "result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f"
+    },
+    {
+      "claim_id": "ad4134df-bbf3-49ce-ae1d-cf1b21f804fc",
+      "result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f"
+    },
+    {
+      "claim_id": "2f28c516-6efc-47a8-87e4-e129a5442080",
+      "result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8"
+    },
+    {
+      "claim_id": "1a582428-f84f-43e9-b2e5-1b64ebc68889",
+      "result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8"
+    },
+    {
+      "claim_id": "73eb1fe9-1b3d-46b0-b3d9-b16cd3052c1e",
+      "result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8"
+    },
+    {
+      "claim_id": "48454121-90ac-4830-b051-c7ccadd40904",
+      "result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8"
+    },
+    {
+      "claim_id": "5a41dc37-3c9a-41da-b290-9f6a4f5fa21f",
+      "result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8"
+    },
+    {
+      "claim_id": "bc798883-be3c-4368-8962-d9824f8b93e9",
+      "result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8"
+    },
+    {
+      "claim_id": "922b1aa2-021a-4a20-af37-f76ad2f49faf",
+      "result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8"
+    },
+    {
+      "claim_id": "8722cd97-acbf-487f-8baf-0d184e537047",
+      "result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8"
+    },
+    {
+      "claim_id": "23b51b2e-ecc8-492c-a682-e64bf4115d87",
+      "result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8"
+    },
+    {
+      "claim_id": "fa83b7a8-679e-4f78-8330-d87b7aacb318",
+      "result_id": "d4607310-4f5d-4191-90fa-5f33a772e5bd"
+    },
+    {
+      "claim_id": "843d81f6-eade-488a-9eff-cb7d9556a422",
+      "result_id": "d4607310-4f5d-4191-90fa-5f33a772e5bd"
+    },
+    {
+      "claim_id": "bfda8f3e-db7a-4fe2-ae25-faa2e4c55cb3",
+      "result_id": "d4607310-4f5d-4191-90fa-5f33a772e5bd"
+    },
+    {
+      "claim_id": "9ccb3259-31b6-4b6d-ac58-9ad4177aa93e",
+      "result_id": "d4607310-4f5d-4191-90fa-5f33a772e5bd"
+    },
+    {
+      "claim_id": "3b672cc8-3ff5-49ff-a5b1-d24ae80b40fb",
+      "result_id": "d4607310-4f5d-4191-90fa-5f33a772e5bd"
+    },
+    {
+      "claim_id": "4f961010-e57a-41fc-86eb-d5b11da0869f",
+      "result_id": "d4607310-4f5d-4191-90fa-5f33a772e5bd"
+    },
+    {
+      "claim_id": "83de2983-7613-494f-a7b1-ca4464ae193e",
+      "result_id": "b6e9d225-b671-4e17-a744-d662e08b1c12"
+    },
+    {
+      "claim_id": "092881f4-b5f4-4964-92b9-5e1ac1ddb706",
+      "result_id": "b6e9d225-b671-4e17-a744-d662e08b1c12"
+    },
+    {
+      "claim_id": "b202266d-c0c5-461b-97ee-288913c50e72",
+      "result_id": "b6e9d225-b671-4e17-a744-d662e08b1c12"
+    },
+    {
+      "claim_id": "d7678f86-6a22-4aeb-90b1-837feac9e6e3",
+      "result_id": "b6e9d225-b671-4e17-a744-d662e08b1c12"
+    },
+    {
+      "claim_id": "09379e28-0721-4464-9c34-9c6729df92ff",
+      "result_id": "b6e9d225-b671-4e17-a744-d662e08b1c12"
+    },
+    {
+      "claim_id": "cfb7d327-0a91-4af9-a056-63ebe58c6a39",
+      "result_id": "b6e9d225-b671-4e17-a744-d662e08b1c12"
+    },
+    {
+      "claim_id": "f8419d75-370d-4683-8435-2e3fa2224f3d",
+      "result_id": "c8a79181-e7f5-4898-ad06-2ff39b8caffd"
+    },
+    {
+      "claim_id": "03078c72-6f3a-4226-9a75-b661f5d1b8d2",
+      "result_id": "c8a79181-e7f5-4898-ad06-2ff39b8caffd"
+    },
+    {
+      "claim_id": "5a41dc37-3c9a-41da-b290-9f6a4f5fa21f",
+      "result_id": "c8a79181-e7f5-4898-ad06-2ff39b8caffd"
+    },
+    {
+      "claim_id": "a2a4ff26-0e3a-4bb9-9b84-391fc2f621fa",
+      "result_id": "c8a79181-e7f5-4898-ad06-2ff39b8caffd"
+    },
+    {
+      "claim_id": "c67be4af-5c18-4eda-939b-98dad359aff3",
+      "result_id": "005e21ce-66e7-4cbc-ac4f-33b63106d7e9"
+    },
+    {
+      "claim_id": "c5087a7a-4a10-45b0-be85-ebcdbeec4b9a",
+      "result_id": "005e21ce-66e7-4cbc-ac4f-33b63106d7e9"
+    },
+    {
+      "claim_id": "f2371c08-a780-49af-9f86-255ba2a366f8",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "c41e022e-9c74-47dc-aa68-2a20bc41de7d",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "ff1340ba-9567-402a-9c1b-b361ac090944",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "bf2a2fac-5ab1-4eee-933c-b7ad2f8b0243",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "58591f04-ee4f-45eb-90b0-6b8ce020d7ba",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "42731289-90af-44a5-b487-fb6a5cb627d1",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "b91d1129-a7cc-4c47-be7b-bc53a5819eba",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "53a031f0-2cf6-4861-af7d-a8cff971372d",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "cd35b75a-b6cd-4d23-91de-4ead4f39651d",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "898d061c-9fb8-4099-a7c9-f4d5bf199ac2",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "b5da829a-b281-434e-a796-66cb3e565e36",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "d40d4305-4ba8-42c3-8285-86e881ef43c8",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "71eee92a-137f-4fc0-8511-1ddcb6abab39",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "066ec465-2933-4e9f-a5d0-bd778938fca7",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    },
+    {
+      "claim_id": "ab7a37eb-a055-46a1-bc43-e01383495822",
+      "result_id": "48f417d0-7014-4606-8249-5566b16ad5b3"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "19c915aa-015b-4a8b-ae11-765e757f8ee8",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "23281e5e-2542-479a-97aa-6a3f1d927909",
+      "peer_result_id": "979f6aac-f96f-4f92-97b7-05bd46c4f449",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C1, C2, C7, C8. Both evaluations support the clinical evidence linking WD to poor cholecystitis outcomes. OpenEval notes a potential inconsistency in patient numbers, while peer review highlights this as a key strength without raising this concern.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "bd6324a0-1856-4b6c-8e4b-27e62096e1b5",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "de13b489-5969-45df-8d0e-29a5d15cd59e",
+      "peer_result_id": "de0b1227-1802-483a-b983-f3b05c16a717",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C9-C13. Both evaluations support the scRNA-seq methodology and immune cell composition findings. OpenEval provides detailed assessment of data quality metrics, while peer review praises the integration of clinical data and single-cell analyses as solid methods.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "c01a311a-008d-4a3e-a08c-114cdb22085d",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "480ab021-d851-4f66-b1d1-9657d5d7a68c",
+      "peer_result_id": "4f14a605-a0df-4e91-a3a4-ff9dc83c5714",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C14-C19. Both evaluations support the detailed immune cell characterization showing enhanced innate immune activation. OpenEval emphasizes multiple converging lines of evidence, while peer review accepts these findings as part of the broader immune microenvironment changes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "0a72873a-aed2-43e2-acfd-67a07a0b4cf3",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "459cb9be-4177-496c-8eaf-4cc122793b76",
+      "peer_result_id": "d4607310-4f5d-4191-90fa-5f33a772e5bd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C42-C47. Both evaluations support the orthogonal validation of NK cell exhaustion using mIHC and flow cytometry. OpenEval notes adequate sample sizes and consistency across methodologies, while peer review accepts these as supporting the key NK cell exhaustion findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "febd47d8-15a7-49d4-b0d0-b5d2b661b58b",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "71189dfa-abf8-4127-a88e-1a11027fb2d3",
+      "peer_result_id": "b6e9d225-b671-4e17-a744-d662e08b1c12",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C49-C54. Both evaluations support the prognostic model development and validation. OpenEval notes the model was not validated in the WD cohort itself, while peer review emphasizes the therapeutic implications and broader applicability to inflammatory and metabolic diseases.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "eb014f58-8902-42e5-94a9-f2a6e4b4d91c",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6",
+      "peer_result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C31-C38 regarding NK cell exhaustion. Both evaluations support the comprehensive molecular evidence. OpenEval notes a paradox requiring mechanistic explanation (increased oxidative phosphorylation alongside exhaustion), while peer review highlights NK cell exhaustion as a key finding without raising this concern. Peer review also includes C39-C40 (transcription factors) in their NK exhaustion assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "630c76a0-6f20-43d3-aec5-63a012b492ef",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "03c66798-9322-4c56-b357-36c23cc05af7",
+      "peer_result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on claims C20-C24 regarding myeloid cell characterization. Both evaluations support these findings. OpenEval focuses specifically on myeloid subtypes, while peer review groups these with broader immune cell characterizations (C25-C28) as part of the immune microenvironment changes.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "266ab57b-d77e-48bf-9014-9340461c0a6d",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "f1dbb3c4-a730-4630-b7b2-0d04f529b52c",
+      "peer_result_id": "e6ce3313-aa0e-4ef8-840f-262b9533a76d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claim C3 regarding ATP7B mutation frequency. Both evaluations support this finding. OpenEval notes the relatively small sample size (n=20) as a limitation, while peer review explicitly identifies this as a key finding and strength without raising sample size concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "0296e8a0-aab2-4dcf-ae83-1b4378450c01",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "f1dbb3c4-a730-4630-b7b2-0d04f529b52c",
+      "peer_result_id": "e795bf90-aa6d-4e0d-8459-6b809615addb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C4 and C6. Both evaluations support the mechanistic and functional evidence. OpenEval groups C3-C6 together as converging genetic and mechanistic evidence, while peer review focuses on C4 and C6 alongside C56 (background claim) and emphasizes solid methods without specific critique of in vitro data.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "f25fe025-8fe8-4e34-bbc0-cd8dd3ffac7f",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "3938513c-729a-4d32-91fb-8822063f3f9d",
+      "peer_result_id": "42bdfecd-7113-4cb2-8b94-437522c1e41f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial agreement on claims C25-C28. Both evaluations support coordinated immune changes. OpenEval notes that opposing MHC class I/II regulation requires further investigation, while peer review accepts these as part of comprehensive immune microenvironment changes without raising this concern.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "b6ec25a6-2d57-40e9-979d-31582a4ab775",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "32a46083-5edd-4f00-bd42-a418eeed59d7",
+      "peer_result_id": "35bccabe-cc79-4e60-89ac-c6045929f8b8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C39-C40 regarding transcription factor changes. OpenEval treats these separately as mechanistic support for NK exhaustion, while peer review groups them with the broader NK cell exhaustion findings (C31-C40) as a unified key finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "04a053b9-1d77-49c7-9471-e76daa6f7ea2",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "23281e5e-2542-479a-97aa-6a3f1d927909",
+      "peer_result_id": "c8a79181-e7f5-4898-ad06-2ff39b8caffd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent perspectives on claims C1-C2. OpenEval supports the clinical associations, while peer review R10 expresses uncertainty about the causal mechanisms linking ATP7B mutations to cholecystitis, noting it remains unclear whether effects are direct or secondary to liver dysfunction.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "f2c6abb7-3bd7-40bf-8e69-1915d3ace75a",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "e68d20ab-64d8-4743-bcc0-9e16c879f631",
+      "peer_result_id": "c8a79181-e7f5-4898-ad06-2ff39b8caffd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Partial overlap on claim C48. OpenEval supports this as literature-based rationale for investigating NK exhaustion in cholecystitis, while peer review R10 questions the mechanistic link between ATP7B mutations and NK cell exhaustion, expressing uncertainty about causality.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "14efafcc-fa1d-40a9-9362-23b6d3cc9338",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "f1dbb3c4-a730-4630-b7b2-0d04f529b52c",
+      "peer_result_id": "005e21ce-66e7-4cbc-ac4f-33b63106d7e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C5 regarding metabolic parameters. OpenEval groups this with genetic evidence (C3-C6), while peer review R11 groups it with C30 as part of the metabolic-immune connection without specific concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "a116712c-bb2d-4629-9f7d-0a22455e6be0",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "3938513c-729a-4d32-91fb-8822063f3f9d",
+      "peer_result_id": "005e21ce-66e7-4cbc-ac4f-33b63106d7e9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C30 regarding metabolic changes. OpenEval includes this in coordinated immune changes requiring further investigation, while peer review accepts it as part of the metabolic dysfunction-immune dysregulation link.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "6b45bb91-f0d6-418a-8ffb-a7856dfa39bd",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "480c658b-e0b6-454d-94d7-89183591f115",
+      "peer_result_id": "48f417d0-7014-4606-8249-5566b16ad5b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C55, C57 as background information. Both evaluations support these as well-established literature-based claims about WD. OpenEval and peer review both accept the background framework without concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "7e530ad2-e61b-4c76-bb32-a68ab3afeebb",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "372afe1a-44d3-4a7b-a3f6-ed5bcb4eb10f",
+      "peer_result_id": "48f417d0-7014-4606-8249-5566b16ad5b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C58-C61 as background information. Both evaluations support these literature-based claims about NK cell biology and exhaustion. OpenEval and peer review both accept this established knowledge framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "642fa24d-c82c-4aa1-a0a0-6b36771da4b1",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "01542204-d63c-493e-870a-fcd92a1ff1e5",
+      "peer_result_id": "48f417d0-7014-4606-8249-5566b16ad5b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C62-C65 as background information. Both evaluations support these literature-based claims about liver immunology and cholecystitis. OpenEval and peer review both accept this contextual framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "48215d46-a79b-436c-a0a3-b8b4dd6e254f",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "cc8799ce-fbb6-4123-97c5-951d7326b71d",
+      "peer_result_id": "48f417d0-7014-4606-8249-5566b16ad5b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C66-C67 as background information. Both evaluations support these literature-based claims about metabolic regulation of immune function. OpenEval and peer review both accept this contextual framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "a9fc48aa-8f3b-4a89-8602-0804bd4d087a",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "3ad17e98-db52-4da5-a225-c4bf28739f30",
+      "peer_result_id": "48f417d0-7014-4606-8249-5566b16ad5b3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C68-C70 as background and interpretive information. Both evaluations support these literature-based claims. OpenEval notes some inference about WD mechanisms, while peer review accepts the background framework.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "748297bd-1952-4204-9dbe-8499c4dfaa4c",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "480c658b-e0b6-454d-94d7-89183591f115",
+      "peer_result_id": "e795bf90-aa6d-4e0d-8459-6b809615addb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Minimal overlap on claim C56. OpenEval treats this as background on WD pathophysiology, while peer review groups it with mechanistic claims C4 and C6 as part of documenting ATP7B mutation effects on copper metabolism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "8fb13015-6094-4ef3-b206-22e2e06f956c",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "24cd6653-48c1-4e75-9a79-4bbf4095fb16",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluated claim C71 regarding ethical approval as supported. No corresponding peer review evaluation found for this methodological detail.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    },
+    {
+      "id": "e33164a1-d650-4a91-8f0d-b09176928709",
+      "submission_id": "b458a14d-12c9-4f8b-a21b-6fcb16a62b38",
+      "comparison_id": "CMP23",
+      "openeval_result_id": "2ad42be6-31bf-456a-9ac9-1acf71302ac6",
+      "peer_result_id": "c8a79181-e7f5-4898-ad06-2ff39b8caffd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Divergent perspectives on claim C36. OpenEval supports this as part of comprehensive NK exhaustion evidence, while peer review R10 expresses uncertainty about the causal mechanisms linking ATP7B mutations to NK cell exhaustion.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T20:46:40.424973Z"
+    }
+  ]
+}

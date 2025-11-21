@@ -1,0 +1,2376 @@
+{
+  "submission": {
+    "id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T19:29:58.712571Z",
+    "updated_at": "2025-11-21T19:29:58.712571Z"
+  },
+  "content": [
+    {
+      "id": "13a8d732-898f-4420-875a-c60151900771",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "content_type": "manuscript",
+      "content_text": "# Unraveling the power of NAP-CNB\u2019s machine learning-enhanced tumor neoantigen prediction\n\n## Authors\n\n- Almudena Mendez-Perez<sup>1</sup>\n- Andres M Acosta-Moreno<sup>1</sup>\n- Carlos Wert-Carvajal<sup>1</sup>\n- Pilar Ballesteros-Cuartero<sup>1</sup>\n- Ruben S\u00e1nchez-Garc\u00eda<sup>1</sup>\n- Jose R Macias<sup>1</sup>\n- Rebeca Sanz-Pamplona<sup>4</sup>\n- Ramon Alemany<sup>6</sup>\n- Carlos Oscar Sorzano<sup>1</sup>\n- Arrate Munoz-Barrutia<sup>2</sup> ([ORCID: 0000-0002-1573-1661](https://orcid.org/0000-0002-1573-1661))\n- Esteban Veiga<sup>1</sup> ([ORCID: 0000-0002-7333-2466](https://orcid.org/0000-0002-7333-2466)) \u2020\n\n### Affiliations\n\n1. Centro Nacional de Biotecnolog\u00eda, Consejo Superior de Investigaciones Cient\u00edficas Madrid Spain ([ROR:015w4v032](https://ror.org/015w4v032))\n2. Departamento de Bioingenieria, Universidad Carlos III de Madrid, Legan\u00e9s Madrid Spain ([ROR:03ths8210](https://ror.org/03ths8210))\n3. University of Oxford, Department of Statistics & XChem Oxford United Kingdom ([ROR:052gg0110](https://ror.org/052gg0110))\n4. Catalan Institute of Oncology (ICO), Oncobell Program, Bellvitge Biomedical Research Institute (IDIBELL), L'Hospitalet de Llobregat Barcelona Spain ([ROR:01j1eb875](https://ror.org/01j1eb875))\n5. University Hospital Lozano Blesa, Aragon Health Research Institute (IISA), ARAID Foundation, Aragon Government Zaragoza Spain ([ROR:03fyv3102](https://ror.org/03fyv3102))\n6. Procure Program, Institut Catal\u00e0 d'Oncologia-Oncobell Program, Catalan Institute of Oncology (ICO), Oncobell Program, Bellvitge Biomedical Research Institute (IDIBELL), L'Hospitalet de Llobregat Barcelona Spain ([ROR:01nv2xf68](https://ror.org/01nv2xf68))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn this study, we present a proof-of-concept classical vaccination experiment that validates the in silico identification of tumor neoantigens (TNAs) using a machine learning-based platform called NAP-CNB. Unlike other TNA predictors, NAP-CNB leverages RNA-seq data to consider the relative expression of neoantigens in tumors. Our experiments show the efficacy of NAP-CNB. Predicted TNAs elicited potent antitumor responses in mice following classical vaccination protocols. Notably, optimal antitumor activity was observed when targeting the antigen with higher expression in the tumor, which was not the most immunogenic. Additionally, the vaccination combining different neoantigens resulted in vastly improved responses compared to each one individually, showing the worth of multiantigen-based approaches. These findings validate NAP-CNB as an innovative TNA identification platform and make a substantial contribution to advancing the next generation of personalized immunotherapies.\n\n## Introduction\n\nA new window of hope to treat previously intractable tumors is emerging through immunotherapies (Chen and Mellman, 2013). However, the response rates of these therapies remain low and relapses are common (Kalbasi and Ribas, 2020; Novello et al., 2023). Moreover, the severe undesired side effects induce many patients to abandon the treatments (Kalbasi and Ribas, 2020), highlighting the urgent need for more specific novel therapies.\n\nIn this regard, the main challenges for most anticancer immunotherapies are the identification of tumor-specific antigens (neoantigens) (Schumacher and Schreiber, 2015) to avoid undesired side effects and the development of multiantigen-based treatments with combined therapies to prevent tumor relapses (Cable et al., 2021). A possible strategy to accelerate the search for neoantigens and lower the cost of the therapy is to sequence the cancer cells using next-generation sequencing techniques and find mutations using bioinformatics tools. Finally, it tries to predict which of the mutations will be more likely to cause an immune response, i.e., neoantigen prediction. This area is relatively unexplored with only a few algorithms available (Boegel et al., 2019). The need to validate the algorithmic results has already been recognized as one of the critical steps of this approach (Vitiello and Zanetti, 2017) and this work specifically addresses it. Algorithmic proposals using deep learning have only started to appear and most of them clearly outperform the standard approaches (Bulik-Sullivan et al., 2018; Wu et al., 2019). Finding neoantigens in every cancer patient will be fundamental for personalized antitumor immunotherapies (Tran et al., 2017).\n\nWe previously developed an easy-to-use platform (NAP-CNB) (NAP stands for neoantigen prediction) that allows to identify tumor neoantigens rapidly (Wert-Carvajal et al., 2021). NAP-CNB predicts putative neoantigens employing exclusively RNA-seq reads (Wert-Carvajal et al., 2021). The tool uses a long short-term memory-based neural network to rank mutations according to their estimated major histocompatibility complex (MHC) I affinity. NAP-CNB harnesses the suitability of recurrent neural networks for sequential problems to offer high accuracy in affinity binding prediction. Hence, NAP-CNB provides an integrated and resource-efficient pipeline for in silico classification of MHC I neoepitopes. In contrast with other tools (Bjerregaard et al., 2019; Duan et al., 2014; Hasegawa et al., 2020; Hundal et al., 2016), NAP-CNB is entirely automatic and freely available online.\n\nWe found NAP-CNB to be comparable or superior to other state-of-the-art methods of murine immunogenicity prediction, like NetH2pan (DeVette et al., 2018) or MHCflurry 2.0 (O\u2019Donnell et al., 2020), in blind benchmarking. NAP-CNB presents an area under the curve of 95% for H-2Kb typings and a high positive predictive value. The results improved with post-processing which consists of a majority voting method of an ensemble of sequences presenting single amino acid substitutions. Post-processing offers a more robust scoring by substituting each amino acid for its most similar one and then classifying the ensemble as the most repeated class.\n\n## Results and discussion\n\nIn this work, we analyze in vivo the tumor neoantigen (TNA) predictive capabilities of NAP-CNB platform using the well-known murine B16 F10 melanoma as a model. For that, we synthesized the peptides corresponding to predicted TNA, used them to vaccinate mice, and analyzed the effectivity against tumor development.\n\nIn silico analysis of the B16 F10 melanoma gene expression showed several putative TNA (Wert-Carvajal et al., 2021) with different scores (predicted probability to be a TNA) and distinct gene expression quantified as fragments per kilobase million. We chose for peptide synthesis three top-scored TNA peptides (Figure 1A); *Pnp (low expression), *Adar (very low expression), *Lrrc28 (low expression). The * indicates that they are the mutated version, as indicated in the figure. The bottom-scored peptide, *Herc6 (high expression), therefore, predicted to not induce any immune reaction against the tumor, was chosen as a negative control. In addition, and in order to test whether the post-processing process offers some advantage, a top-scored peptide, *Wiz (high expression), revealed after post-processing was also synthesized (Figure 1A).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95010/elife-95010-fig1-v1.jpg)\n\n**Figure 1.:** (A) Putative B16 tumor neoantigen (TNA) identified by using the NAP-CNB platform ranked by scores of peptide sequences for a complete 12mer sequence. The TNA sequence, the mutation exclusive to tumor cells (in red), and gene name are shown. The gene expression is quantified as fragments per kilobase million (FPKM). The TNA score is also indicated. (B) Scheme of immunization. Two doses of peptides emulsified in Freund\u2019s adjuvant were subcutaneously (s.c.) injected, separated by 14 days. 14 days after the last dose the efficacy of the vaccine was analyzed by enzyme-linked immunosorbent spot (ELISpot) and intracellular cytokine staining (ICS) assays. (C) ELISpot analysis of interferon-gamma (IFN\u03b3)-producing T-cell effectors from mice vaccinated with the indicated mutated peptides. The upper images show the response of non-vaccinated (phosphate-buffered saline [PBS]) animals after stimulation with the indicated peptides, the bottom images show the response of the animals vaccinated (vaccin) with the indicated peptides after restimulation with the same peptides. It is shown duplicates from representative animals. (D) As in C but showing the mean and sd of 5 mice/group. Asterisks indicate statistically significant differences analyzed by one-way ANOVA (* represent p<0.05, **p<0.005, ***p<0.0005). (E) ICS analysis of CD8+ T-cells expressing tumor necrosis factor alpha (TNF\u03b1), perforin, or CD107a from mice vaccinated with the indicated mutated peptides: *Pnp (black triangle), *Adar (black circle), *Lrrc28 (black square), *Wiz (black rhombus), *Herc6 (gray circle), and Trp2 (green circle). The mean of the ratio of vaccinated divided by unvaccinated is shown, as the 95% confidence intervals. Intervals that do not include 1 and are therefore statistically significant are marked with *. 5 mice/group were used.\n\n### Immunogenicity analysis\n\nTo analyze the immunogenicity of the predicted TNAs, we employed immunocompetent C57BL/6J mice as the recipient model. These mice were vaccinated with individual synthetic peptides *Pnp, *Adar, *Lrrc28, *Wiz, and *Herc6, the latter serving as a putative negative control. In all cases, peptides were emulsified in Freund\u2019s adjuvant. A second vaccination boost was injected 2 weeks after the first inoculation. Four weeks after the first inoculation the immunogenicity of the predicted antigens was tested (Figure 1B). A group of mice were treated with phosphate-buffered saline (PBS)+adjuvant (non-vaccinated control).\n\nWe assessed specific cellular responses against the predicted TNAs using an enzyme-linked immunosorbent spot (ELISpot) assay (Figure 1C and D). Compared to the control group immunized with *Herc6, all vaccinated groups displayed notably elevated levels of interferon-gamma (IFN\u03b3)-secreting cells targeting TNAs. Notably, *Wiz vaccination yielded a comparatively weaker immune response. This experiment further validates the predicted non-immunogenic nature of the *Herc6 mutation.\n\nFurthermore, we evaluated the immunogenic potential of the predicted TNAs through intracellular cytokine staining (ICS) (Figure 1E). The CD8+ T-cell population from vaccinated mice was activated by presenting the TNAs on splenocytes, and the production of tumor necrosis factor alpha (TNF\u03b1), perforin, and CD107a was analyzed via flow cytometry. Vaccination with all TNAs significantly induced the expression of at least one of the specified proteins after specific stimulation. Additionally, we included a well-established positive control, tyrosinase-related protein-2 (Trp2), a well-known tumor-associated antigen that induces potent cellular responses (Castle et al., 2012). As predicted, vaccination with *Herc6 did not elicit immunogenic responses.\n\nThese data show that silico-predicted TNAs by NAP-CNB induce robust immune responses following immunization in mice.\n\n### In vivo antitumor implantation assays\n\nThe antitumor immunogenicity of predicted TNAs was further assessed using immunocompetent C57BL/6J mice, vaccinated with each synthetic peptide or with a peptide mixture containing *Pnp, *Adar, and *Lrrc28, in all cases emulsified in Freund\u2019s adjuvant. A second vaccination boost was injected 2 weeks after the first inoculation and 2 weeks before tumor implantation (B16 F10 melanoma; see experimental scheme in Figure 2A). Tumor size, as well as overall survival, was monitored over time.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95010/elife-95010-fig2-v1.jpg)\n\n**Figure 2.:** (A) Scheme of immunization. Two doses of peptides emulsified in Freund\u2019s adjuvant were subcutaneously (s.c.) injected, separated by 14 days. 14 days after the last dose the B16 F10 melanoma cells were injected s.c. in the mid-right flank of C57BL/6J host mice and the tumor size over time was analyzed using a dial caliper. (B\u2013I) Tumor growth on non-vaccinated (B) or vaccinated mice with the indicated peptide (C\u2013I) (or peptide mix (H)), monitored every 1\u20133 days. Each line corresponds to the tumor size in one animal. The median of the tumors in non-vaccinated (phosphate-buffered saline [PBS]) and vaccinated with Trp2 (positive control) are shown as dashed lines in gray and green color, respectively. Mice with tumors\u2265900 mm3 were sacrificed. Following the rules of our ethical committee, animals presenting ulcers were also sacrificed. (J) Percentage of animals showing tumors with a volume\u2264100 mm3 15 days after implantation. 4 mice/group were used.\n\nThe implanted tumor exhibited robust growth in the control group of non-vaccinated animals (PBS; Figure 2B). 15 days after implantation, all animals in this group displayed tumors with a volume exceeding 100 mm\u00b3. All animals died 22 days after tumor implantation (Figure 3A and B). Vaccination with the positive control, Trp2, showed immune responses against B16 F10 detected as slower tumor growth (Figure 2C) and incremented survival rates (Figure 3A). The median of the tumor growth in control unvaccinated mice (PBS) and vaccinated with Trp2 (positive control) are shown to compare the antitumor response of animals vaccinated with the indicated peptides. As expected, the immunization with *Herc6, in silico predicted as non-immunogenic, did not result in any positive outcome either in tumor growth (Figure 2D) or in survival rate (Figure 3A). Vaccination with *Pnp and *Lrrc28 elicited irregular antitumor responses (Figure 2E and G) with some mice showing excellent responses and other behaving similar to the negative control. These vaccinations showed slightly (not significant) incremented survival rates compared to control (Figure 3B). Vaccination with *Adar (the less expressed TNA; Figure 1A) did not reduce the tumor growth (Figure 2F) nor show any survival improvement (Figure 3B). However, the vaccination with a mixture of the three predicted TNA (Pnp, Adar, Lrrc28) induced a strong antitumor response, comparable and even better than that observed with the positive control, Trp2 (Figure 2H), resulting in a significantly increased survival (Figure 3A). In the same regard, the response against tumors in animals vaccinated with *Wiz (predicted TNA after post-processing and highly expressed) alone also elicited a powerful antitumor response (Figure 2I) with considerably improved survival (Figure 3A).\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95010/elife-95010-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) Kaplan-Meier survival curves of mice vaccinated with the indicated tumor neoantigen (TNA) peptides and challenged with B16 F10 melanoma.Comparison of survival curves has been performed using the log-rank (Mantel-Cox) test. The significant p values comparing the control (phosphate-buffered saline [PBS]) group with each other group are indicated and * represents p<0.05. 4 mice/group were used.\n\nAdditionally, as a measure of the vaccination effectiveness, it is shown the percentage of mice with tumors remained smaller than 100 mm3, 15 days after implantation (Figure 2J). Non-vaccinated animals or animals vaccinated with *Herc6 or *Adar show unsuccessful therapies. Vaccination with *Pnp or *Lrrc28 presented a successful rate of 75% and 50% respectively, and the maximum effectiveness, 100% of animals, was observed in animals vaccinated with Trp2, *Wiz, or a peptide mixture (*Pnp, *Adar, and *Lrrc28).\n\nTogether, these data show that pure in silico approaches based on machine learning algorithms are able to identify TNAs that induce strong antitumor protection, which is the major bottleneck for most immunotherapies. The rapid identification of tumor neoantigens would allow to target/attack tumors non-treatable today and will vastly improve current immunotherapies, representing a giant step forward in the global anticancer fight. In this context, we demonstrate that the algorithms running in NAP-CNB platform effectively identify TNA that can be used as anticancer targets. The proof-of-concept experiments presented herein significantly bolster the prospects of translating TNA identification into practical applications for personalized cancer treatments within society.\n\nOur findings also offer valuable insights for shaping future antitumor interventions. From a pragmatic standpoint, prioritizing TNAs with higher expression levels in the tumor, even if they elicit a comparatively weaker immunogenic response, appears to be a more promising approach. Our data confirm that employing a multiantigen therapy, targeting various tumor epitopes simultaneously, holds significant potential in averting immune escape. This underscores the importance of advancing TNA-based immunotherapy treatments against cancer within the framework of personalized medicine.\n\n## Materials and methods\n\n### Peptides\n\n*Pnp (SLITNKVVMEYENLEKANHM), *Adar (LVPLSQAWTHPPGVVNPDSC), *Lrrc28 (EPMFTFVYPTIFPLRETPMA), *Herc6 (SLVKKWRAAKKRKDREGAKR), *Wiz (TASPPPTARMMFSGLATPSL), and *Trp2 (PQIANCSVYDFFVWLHYYSV) were used for mice immunization. These peptides were synthesized at the proteomics unit from CNB-CSIC. The peptides were synthesized using the stepwise solid-phase peptide synthesis method performed on an automated peptide synthesizer (Multipep, Intavis, K\u00f6ln, Germany). The amino acid polymerization was carried out using the standard Fmoc (N-(9-fluorenyl) methoxycarbonyl) chemistry and PYBOP/N-methylmorpholine as coupling activation reagents. The Fmoc-derivatized amino acid monomers and the preloaded resins used as support were obtained from Merck. Once synthesized the peptides were cleaved from the resin with a standard scavenger-containing trifluoroacetic acid (TFA)-water cleavage solution and precipitated by addition to cold ether. The crude peptides were purified by reverse-phase chromatography on a semi-preparative HPLC system (Jasco, Tokio, Japan) equipped with a C18 reversed-phase column (Scharlab, Barcelona, Spain). A linear gradient from 5% to 60% solvent B (0.05% TFA in 95% acetonitrile) in solvent A (0.05% TFA in water) was applied for 20 min. The chosen fractions were analyzed in a MALDI TOF 4800 mass spectrometer (Applied Biosystems, Framingham, MA, USA) and those containing the peptide were lyophilized. The peptides were then reconstituted to a concentration of 1 mg/ml in sterile PBS and preserved at \u201380\u00b0C.\n\n### Mouse immunization\n\nEqual volumes of immunogens and Freund\u2019s adjuvant (Imject Freund\u2019s Complete Adjuvant (FCA) for the first dose and Imject Freund\u2019s Incomplete Adjuvant (FIA) for the second dose, from Thermo Scientific) were mixed with a double-hub needle until a thick emulsion developed. The final immunogen concentration in the mixtures was 50 \u00b5g/100 \u00b5l. C57BL/6J mice were divided into eight groups and were subcutaneously (s.c.) immunized in the left flank with PBS (group 1) or with 100 \u00b5l of the emulsions containing *Trp2 peptide (group 2), *Herc6 peptide (group 3), *Pnp peptide (group 4), Adar peptide (group 5), *Lrrc28 peptide (group 6), *Pnp, *Adar, and *Lrrc28 peptides mixture (group 7), or *Wiz peptide (group 8). Immunizations were performed at day 0 (with FCA) and day 14 (with FIA). At day 28, the efficacy of the vaccine was analyzed by ELISpot and ICS assays, and an antitumor experiment was performed.\n\n### ELISpot assay\n\nThe ELISpot assay was used to detect *Pnp, *Adar, *Lrrc28, *Herc6, and *Wiz specific IFN\u03b3-secreting cells. 96-well nitrocellulose-bottom plates pre-coated with anti-mouse IFN\u03b3 monoclonal antibody were purchased from Mabtech. The plates were blocked with RPMI-10% fetal bovine serum (FBS) for at least 30 min. After spleen processing, 3\u00d7105 splenocytes per condition were restimulated with 1 \u03bcg/ml of the corresponding peptide pool or with RPMI-10% FBS. The plates were incubated with the peptides for 48 hr at 37\u00b0C in 5% CO2 atmosphere, washed five times with PBS, and incubated with 1 \u03bcg/ml of the biotinylated anti-mouse IFN\u03b3 monoclonal antibody R4-6A2 (Mabtech) diluted in PBS-0.5% FBS for 2 hr at room temperature. The plates were then washed five times with PBS and a 1:1000 dilution of alkaline phosphatase (ALP)-conjugated streptavidin (Mabtech) was added. After 1 hr at room temperature, it was washed five times with PBS, and finally developed by adding the ready-to-use substrate solution BCIP/NBT-plus 5-bromo-4-chloro-3-indolyl phosphate/nitro blue tetrazolium chloride (Mabtech). The reaction was stopped by washing the plate with abundant water. Once it was dry, the spots were counted using the ELISpot Reader System - ELR02 - plate reader 651 (AID Autoimmun Diagnostika GmbH) with the aid of AID ELISpot reader system software (Vitro).\n\n### ICS assay\n\nThe different CD8+ T-cell adaptive immune responses were analyzed by ICS as follows. After spleen processing, 4\u00d7106 fresh splenocytes (depleted of red blood cells) were seeded on M96 plates and stimulated for 12 hr in complete RPMI 1640 medium supplemented with 10% FBS containing 1 \u03bcl/ml Brefeldin A (BD Biosciences) to inhibit cytokine secretion, 1 \u03bcl/ml monensin 1\u00d7 (eBioscience), anti-CD107a-FITC (BD Biosciences), and the peptides *Pnp, *AdaR, *Lrrc28, *Herc6, *Wiz, or Trp2 (1 \u03bcg/ml). Cells were then washed, stained for surface markers, fixed (eBioscience IC Fixation Buffer), permeabilized (eBioscience Permeabilization Buffer), and stained intracellularly with the appropriate fluorochromes. The fluorochrome-conjugated antibodies used for functional analyses were CD3-brilliant violet (BV)-510 (BD Biosciences), CD8 allophycocyanin (APC)-EFluor780 (eBioscience), PERFORIN-APC (BioLegend), and TNF\u03b1-Pacific Blue (BioLegend). Cells were acquired with an LSR-II flow cytometer (BD Biosciences). Analyses of the data were performed with the FlowJo software version 10.4.2 (Tree Star).\n\n### Cells\n\nB16 F10 melanoma cell line was obtained from American Type Culture Collection (ATCC, Manassas, VA, USA) and maintained in high glucose Dulbecco\u2019s Modified Eagle\u2019s Medium (Gibco-Life Technologies) supplemented with 10% FBS. Cell cultures were maintained at 37\u00b0C in a humidified incubator containing 5% CO2.\n\n### Antitumor experiment\n\nAt day 28 after mouse immunization, B16 F10 cells (4\u00d7105) were s.c. injected into the mid-right flank of C57BL/6J recipient mice. Tumor growth was measured every 2\u20133 days with a dial caliper, and the volume was determined by \u00bd(length\u00d7width2).\n\n### Statistical procedures\n\nOne-way ANOVA with Dunnett correction for multiple testing was used for ELISpot analysis to establish the differences within the different groups. We analyzed the ICS results by building a bootstrap distribution based on the ratio of the percentage of specific cell types between the vaccinated and unvaccinated groups. Subsequently, we determined the centered 95% confidence interval. For statistical analysis of the overall survival in the antitumor experiment, log-rank (Mantel-Cox) statistical test was performed on day 24. The statistical significances are indicated as follows: *, p<0.05; **, p<0.005; ***, p<0.001. Statistical analysis was performed using Prism Software.\n\n### Ethical statement\n\nFemale C57BL/6J mice (6\u20138 weeks of age) used for in vivo experiments were purchased from The Jackson Laboratory and stored in the animal facility of Centro Nacional de Biotecnolog\u00eda (CNB-CSIC, Madrid). In vivo studies were approved by the Ethical Committee of Animal Experimentation (CEEA) of CNB-CSIC and by the competent authority of Comunidad de Madrid (PROEX 041.4/21). Animal procedures were conformed to international guidelines and to Spanish-European law.\n",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Neeha Zaidi, https://ror.org/00za53h95 Johns Hopkins University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95010.3.sa0](https://doi.org/10.7554/eLife.95010.3.sa0)\n\nVeiga et al demonstrate the importance of incorporating RNAseq and machine learning approaches for neoantigen prediction. The evidence is convincing, and these findings contribute important information towards the selection of neoantigens for personalized antitumor vaccination.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95010.3.sa1](https://doi.org/10.7554/eLife.95010.3.sa1)\n\nSummary:\n\nThe authors of the study are trying to show that RNAseq can be used for neoantigen prediction and the machine learning approach to the prediction can reveal very useful information for the selection of neoantigens for personalized antitumor vaccination.\n\nStrengths:\n\nThe authors demonstrated that RNA expression of a neoantigen is very important factor in the selection of peptides for the creation of personalized vaccines. They proved in vivo that in silico-predicted neoantigens can trigger antitumor response in mice.\n\nWeaknesses:\n\nThe authors replied to my previous comment about the selection of the peptides for vaccination in the responses to reviewers, but didn't include that in the revised manuscript. I think all that information should be in the manuscript.\n\nHere is the original comment: \"The selection of the peptides for vaccination is not clear. Some peptides were selected before and some after processing. What processing is also not clear. The authors didn't provide the full list of peptides before and after processing, please add those. And it wasn't clear that these peptides were previously published. Looking at the previously published table with peptide from B16 F10 (https://www.nature.com/articles/s41598-021-89927-5/tables/3), there are other genes with high expression, e.g. Tab2, Tm9sf3 that have higher expression than Herc6, please clarify the choice.\"\n",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "5fbc3559-fb99-46be-8e62-a5a1315f3444",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C1",
+      "claim": "NAP-CNB is a machine learning-based platform for tumor neoantigen prediction that leverages RNA-seq data to consider the relative expression of neoantigens in tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "Unlike other TNA predictors, NAP-CNB leverages RNA-seq data to consider the relative expression of neoantigens in tumors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract as a distinguishing feature of NAP-CNB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "a7c5f385-ab36-4985-b0e8-bde17f7d7fad",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C2",
+      "claim": "Predicted tumor neoantigens by NAP-CNB elicited potent antitumor responses in mice following classical vaccination protocols.",
+      "claim_type": "EXPLICIT",
+      "source": "Our experiments show the efficacy of NAP-CNB. Predicted TNAs elicited potent antitumor responses in mice following classical vaccination protocols.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The abstract states this as a result of the experiments conducted in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "c068567d-bac1-423e-b80f-177afa8857a2",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C3",
+      "claim": "Optimal antitumor activity was observed when targeting the antigen with higher expression in the tumor, which was not the most immunogenic.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, optimal antitumor activity was observed when targeting the antigen with higher expression in the tumor, which was not the most immunogenic.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This finding is explicitly stated in the abstract as a key observation from the experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "d95646bf-e0e2-4700-81a9-731ce3df4fc7",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C4",
+      "claim": "Vaccination combining different neoantigens resulted in vastly improved responses compared to each one individually.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, the vaccination combining different neoantigens resulted in vastly improved responses compared to each one individually, showing the worth of multiantigen-based approaches.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract as a finding from the vaccination experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "8a9f7dd4-a80f-4d8f-b747-5a8dfcde6918",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C5",
+      "claim": "Response rates of cancer immunotherapies remain low and relapses are common.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the response rates of these therapies remain low and relapses are common (Kalbasi and Ribas, 2020; Novello et al., 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "78c015b9-a890-4748-8e06-d1c68b9d4c29",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C6",
+      "claim": "Severe undesired side effects of immunotherapies induce many patients to abandon treatments.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, the severe undesired side effects induce many patients to abandon the treatments (Kalbasi and Ribas, 2020), highlighting the urgent need for more specific novel therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by a citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "0ef8a4ee-a7b1-435a-a9a1-0ec8f5b7d2e5",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C7",
+      "claim": "The main challenges for most anticancer immunotherapies are the identification of tumor-specific antigens (neoantigens) to avoid undesired side effects and the development of multiantigen-based treatments with combined therapies to prevent tumor relapses.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the main challenges for most anticancer immunotherapies are the identification of tumor-specific antigens (neoantigens) (Schumacher and Schreiber, 2015) to avoid undesired side effects and the development of multiantigen-based treatments with combined therapies to prevent tumor relapses (Cable et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "c104e525-1b0a-4161-b204-bf4396aaca0c",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C8",
+      "claim": "NAP-CNB predicts putative neoantigens employing exclusively RNA-seq reads.",
+      "claim_type": "EXPLICIT",
+      "source": "NAP-CNB predicts putative neoantigens employing exclusively RNA-seq reads (Wert-Carvajal et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a feature of NAP-CNB with a citation to the original publication.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "62f4e074-4c99-430b-9150-7fcd9828a031",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C9",
+      "claim": "NAP-CNB uses a long short-term memory-based neural network to rank mutations according to their estimated major histocompatibility complex (MHC) I affinity.",
+      "claim_type": "EXPLICIT",
+      "source": "The tool uses a long short-term memory-based neural network to rank mutations according to their estimated major histocompatibility complex (MHC) I affinity.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical approach used by NAP-CNB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "4de2d7e1-6b07-4def-91c1-3c5dcca631c8",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C10",
+      "claim": "NAP-CNB is entirely automatic and freely available online.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast with other tools (Bjerregaard et al., 2019; Duan et al., 2014; Hasegawa et al., 2020; Hundal et al., 2016), NAP-CNB is entirely automatic and freely available online.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a distinguishing feature of NAP-CNB compared to other tools.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "67c0af4e-ce81-4ad3-98ae-5952c27daf1e",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C11",
+      "claim": "NAP-CNB is comparable or superior to other state-of-the-art methods of murine immunogenicity prediction, like NetH2pan or MHCflurry 2.0, in blind benchmarking.",
+      "claim_type": "EXPLICIT",
+      "source": "We found NAP-CNB to be comparable or superior to other state-of-the-art methods of murine immunogenicity prediction, like NetH2pan (DeVette et al., 2018) or MHCflurry 2.0 (O'Donnell et al., 2020), in blind benchmarking.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a comparative performance claim supported by benchmarking data and citations to the compared methods.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "4a8f91ad-ef57-44b5-a0fa-7bbe9f55d453",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C12",
+      "claim": "NAP-CNB presents an area under the curve of 95% for H-2Kb typings and a high positive predictive value.",
+      "claim_type": "EXPLICIT",
+      "source": "NAP-CNB presents an area under the curve of 95% for H-2Kb typings and a high positive predictive value.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative performance metric for NAP-CNB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "490176ff-c36b-4d41-89ca-ab1af93e15a1",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C13",
+      "claim": "B16 F10 melanoma was used as a model for in vivo analysis of NAP-CNB's tumor neoantigen predictive capabilities.",
+      "claim_type": "EXPLICIT",
+      "source": "In this work, we analyze in vivo the tumor neoantigen (TNA) predictive capabilities of NAP-CNB platform using the well-known murine B16 F10 melanoma as a model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ceec4209-bc34-45c2-830a-3b4753f4fc6e",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C14",
+      "claim": "Three top-scored TNA peptides were chosen for synthesis: *Pnp (low expression), *Adar (very low expression), *Lrrc28 (low expression).",
+      "claim_type": "EXPLICIT",
+      "source": "We chose for peptide synthesis three top-scored TNA peptides (Figure 1A); *Pnp (low expression), *Adar (very low expression), *Lrrc28 (low expression).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the selection of peptides for experimental validation, with reference to Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "1a0ab168-3a42-4d69-a712-2c0816dd5e99",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C15",
+      "claim": "*Herc6 (high expression), a bottom-scored peptide predicted to not induce any immune reaction against the tumor, was chosen as a negative control.",
+      "claim_type": "EXPLICIT",
+      "source": "The bottom-scored peptide, *Herc6 (high expression), therefore, predicted to not induce any immune reaction against the tumor, was chosen as a negative control.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the selection of a negative control peptide based on NAP-CNB predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "493b8c70-d9b2-47aa-8901-0a83cd75576b",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C16",
+      "claim": "*Wiz (high expression), a top-scored peptide revealed after post-processing, was synthesized to test whether the post-processing process offers some advantage.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, and in order to test whether the post-processing process offers some advantage, a top-scored peptide, *Wiz (high expression), revealed after post-processing was also synthesized (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the rationale for including the *Wiz peptide in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "fe0a2886-284f-4f9f-981a-95a344232250",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C17",
+      "claim": "All vaccinated groups displayed notably elevated levels of interferon-gamma (IFN\u03b3)-secreting cells targeting TNAs compared to the control group immunized with *Herc6.",
+      "claim_type": "EXPLICIT",
+      "source": "Compared to the control group immunized with *Herc6, all vaccinated groups displayed notably elevated levels of interferon-gamma (IFN\u03b3)-secreting cells targeting TNAs.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the ELISpot assay described in the manuscript.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "64e80c97-8a61-4ec4-a6bc-a05ee9606e0e",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C18",
+      "claim": "*Wiz vaccination yielded a comparatively weaker immune response in the ELISpot assay.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, *Wiz vaccination yielded a comparatively weaker immune response.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an observation from the ELISpot assay results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "bf0d8ac2-8005-4cb7-b02b-99ef85be1314",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C19",
+      "claim": "The experiment validates the predicted non-immunogenic nature of the *Herc6 mutation.",
+      "claim_type": "EXPLICIT",
+      "source": "This experiment further validates the predicted non-immunogenic nature of the *Herc6 mutation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the ELISpot results confirming NAP-CNB predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "45cfe6f9-ad42-4fd2-bcec-ce040f4c8528",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C20",
+      "claim": "Vaccination with all TNAs significantly induced the expression of at least one of TNF\u03b1, perforin, or CD107a after specific stimulation in CD8+ T-cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination with all TNAs significantly induced the expression of at least one of the specified proteins after specific stimulation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the intracellular cytokine staining (ICS) assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "657a84a9-2311-486a-b70b-d0c951f9242c",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C21",
+      "claim": "Vaccination with *Herc6 did not elicit immunogenic responses in the ICS assay.",
+      "claim_type": "EXPLICIT",
+      "source": "As predicted, vaccination with *Herc6 did not elicit immunogenic responses.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a result from the ICS assay confirming NAP-CNB predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "2cd7167b-417f-48c6-9bbb-50f6c22827dc",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C22",
+      "claim": "Silico-predicted TNAs by NAP-CNB induce robust immune responses following immunization in mice.",
+      "claim_type": "EXPLICIT",
+      "source": "These data show that silico-predicted TNAs by NAP-CNB induce robust immune responses following immunization in mice.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a summary conclusion from the immunogenicity analysis experiments.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "f4299e91-3bc8-4ff8-afe8-7c8b00c08e4f",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C23",
+      "claim": "15 days after tumor implantation, all animals in the non-vaccinated control group displayed tumors with a volume exceeding 100 mm\u00b3.",
+      "claim_type": "EXPLICIT",
+      "source": "15 days after implantation, all animals in this group displayed tumors with a volume exceeding 100 mm\u00b3.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative observation from the tumor implantation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ccb8e37e-b88d-45f1-83f4-8a80533a6ef5",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C24",
+      "claim": "All non-vaccinated control animals died 22 days after tumor implantation.",
+      "claim_type": "EXPLICIT",
+      "source": "All animals died 22 days after tumor implantation (Figure 3A and B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a survival outcome from the tumor implantation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "4c02c4d2-e6dc-4217-912d-a706e5d77ddd",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C25",
+      "claim": "Vaccination with Trp2 showed immune responses against B16 F10 detected as slower tumor growth and incremented survival rates.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination with the positive control, Trp2, showed immune responses against B16 F10 detected as slower tumor growth (Figure 2C) and incremented survival rates (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the positive control results from the tumor implantation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "017f50e7-ab51-477a-9568-a3613c786223",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C26",
+      "claim": "Immunization with *Herc6 did not result in any positive outcome either in tumor growth or in survival rate.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the immunization with *Herc6, in silico predicted as non-immunogenic, did not result in any positive outcome either in tumor growth (Figure 2D) or in survival rate (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the tumor implantation experiment confirming NAP-CNB predictions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "c04c603b-42a3-48c8-b8d7-1112d712b2f7",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C27",
+      "claim": "Vaccination with *Pnp and *Lrrc28 elicited irregular antitumor responses with some mice showing excellent responses and others behaving similar to the negative control.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination with *Pnp and *Lrrc28 elicited irregular antitumor responses (Figure 2E and G) with some mice showing excellent responses and other behaving similar to the negative control.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the variable outcomes observed in the tumor implantation experiment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "843998e6-fda3-4738-bbfd-4a010c83491a",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C28",
+      "claim": "Vaccination with *Pnp and *Lrrc28 showed slightly (not significant) incremented survival rates compared to control.",
+      "claim_type": "EXPLICIT",
+      "source": "These vaccinations showed slightly (not significant) incremented survival rates compared to control (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a survival outcome from the tumor implantation experiment with statistical assessment.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "1106a820-2c23-4292-b510-ff10e7ef09d9",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C29",
+      "claim": "Vaccination with *Adar (the less expressed TNA) did not reduce the tumor growth nor show any survival improvement.",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination with *Adar (the less expressed TNA; Figure 1A) did not reduce the tumor growth (Figure 2F) nor show any survival improvement (Figure 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the tumor implantation experiment showing lack of efficacy for the lowest expressed TNA.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "2e9c3697-072a-4d3b-abe3-e43ef772777d",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C30",
+      "claim": "Vaccination with a mixture of the three predicted TNA (Pnp, Adar, Lrrc28) induced a strong antitumor response, comparable and even better than that observed with the positive control, Trp2.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the vaccination with a mixture of the three predicted TNA (Pnp, Adar, Lrrc28) induced a strong antitumor response, comparable and even better than that observed with the positive control, Trp2 (Figure 2H), resulting in a significantly increased survival (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a key result from the tumor implantation experiment showing the benefit of multiantigen vaccination.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "c50a4e65-4a5c-41ed-b6df-32af26911b20",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C31",
+      "claim": "Vaccination with *Wiz alone elicited a powerful antitumor response with considerably improved survival.",
+      "claim_type": "EXPLICIT",
+      "source": "In the same regard, the response against tumors in animals vaccinated with *Wiz (predicted TNA after post-processing and highly expressed) alone also elicited a powerful antitumor response (Figure 2I) with considerably improved survival (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a result from the tumor implantation experiment showing the efficacy of the highly expressed TNA identified after post-processing.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "eff5a619-143a-4e94-ab17-b72880c0ef8b",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C32",
+      "claim": "Non-vaccinated animals or animals vaccinated with *Herc6 or *Adar show unsuccessful therapies (0% of mice with tumors <100 mm\u00b3 at day 15).",
+      "claim_type": "EXPLICIT",
+      "source": "Non-vaccinated animals or animals vaccinated with *Herc6 or *Adar show unsuccessful therapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the vaccination effectiveness data shown in Figure 2J.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "cb938eee-7e86-4581-a1b5-7b80cf4e2b3c",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C33",
+      "claim": "Vaccination with *Pnp or *Lrrc28 presented a successful rate of 75% and 50% respectively (percentage of mice with tumors <100 mm\u00b3 at day 15).",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination with *Pnp or *Lrrc28 presented a successful rate of 75% and 50% respectively, and the maximum effectiveness, 100% of animals, was observed in animals vaccinated with Trp2, *Wiz, or a peptide mixture (*Pnp, *Adar, and *Lrrc28).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the vaccination effectiveness analysis shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "90bb51a4-e2ba-4ace-9656-cea645d16be3",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C34",
+      "claim": "Maximum vaccination effectiveness (100% of animals with tumors <100 mm\u00b3 at day 15) was observed in animals vaccinated with Trp2, *Wiz, or a peptide mixture (*Pnp, *Adar, and *Lrrc28).",
+      "claim_type": "EXPLICIT",
+      "source": "Vaccination with *Pnp or *Lrrc28 presented a successful rate of 75% and 50% respectively, and the maximum effectiveness, 100% of animals, was observed in animals vaccinated with Trp2, *Wiz, or a peptide mixture (*Pnp, *Adar, and *Lrrc28).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a quantitative result from the vaccination effectiveness analysis shown in Figure 2J.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "c0a820ae-4c4c-44bc-925d-c70941a83b75",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C35",
+      "claim": "Pure in silico approaches based on machine learning algorithms are able to identify TNAs that induce strong antitumor protection.",
+      "claim_type": "EXPLICIT",
+      "source": "Together, these data show that pure in silico approaches based on machine learning algorithms are able to identify TNAs that induce strong antitumor protection, which is the major bottleneck for most immunotherapies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a general conclusion drawn from the experimental results.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "a394b18b-6d8a-4cbb-ae40-0bb1455b9c44",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C36",
+      "claim": "The algorithms running in NAP-CNB platform effectively identify TNA that can be used as anticancer targets.",
+      "claim_type": "EXPLICIT",
+      "source": "In this context, we demonstrate that the algorithms running in NAP-CNB platform effectively identify TNA that can be used as anticancer targets.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the experimental validation of NAP-CNB predictions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "f3e2ac0f-9806-44bc-8094-ef3d4735da0c",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C37",
+      "claim": "Prioritizing TNAs with higher expression levels in the tumor, even if they elicit a comparatively weaker immunogenic response, appears to be a more promising approach.",
+      "claim_type": "EXPLICIT",
+      "source": "From a pragmatic standpoint, prioritizing TNAs with higher expression levels in the tumor, even if they elicit a comparatively weaker immunogenic response, appears to be a more promising approach.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation and recommendation based on the experimental results comparing *Wiz (high expression, weaker immunogenicity) with other TNAs.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "2ea05bae-1f72-4581-a5f8-be4b4796f0eb",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C38",
+      "claim": "Employing a multiantigen therapy, targeting various tumor epitopes simultaneously, holds significant potential in averting immune escape.",
+      "claim_type": "EXPLICIT",
+      "source": "Our data confirm that employing a multiantigen therapy, targeting various tumor epitopes simultaneously, holds significant potential in averting immune escape.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the superior performance of the peptide mixture vaccination.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "5e870451-75c9-458e-ad26-f4c7456d7be5",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C39",
+      "claim": "Tyrosinase-related protein-2 (Trp2) is a well-known tumor-associated antigen that induces potent cellular responses.",
+      "claim_type": "EXPLICIT",
+      "source": "Additionally, we included a well-established positive control, tyrosinase-related protein-2 (Trp2), a well-known tumor-associated antigen that induces potent cellular responses (Castle et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "1f4ab3db-16b0-4c8a-89e6-d8f4fcde289d",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C40",
+      "claim": "NAP-CNB provides an integrated and resource-efficient pipeline for in silico classification of MHC I neoepitopes.",
+      "claim_type": "EXPLICIT",
+      "source": "Hence, NAP-CNB provides an integrated and resource-efficient pipeline for in silico classification of MHC I neoepitopes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes a feature of the NAP-CNB platform.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "8f7de28f-c0c5-4347-932b-4b2e70a9df4b",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C41",
+      "claim": "NAP-CNB harnesses the suitability of recurrent neural networks for sequential problems to offer high accuracy in affinity binding prediction.",
+      "claim_type": "EXPLICIT",
+      "source": "NAP-CNB harnesses the suitability of recurrent neural networks for sequential problems to offer high accuracy in affinity binding prediction.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the technical approach and rationale for NAP-CNB's design.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "94865c1d-2f91-4671-9b03-a5cce56feb28",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C42",
+      "claim": "Post-processing in NAP-CNB consists of a majority voting method of an ensemble of sequences presenting single amino acid substitutions.",
+      "claim_type": "EXPLICIT",
+      "source": "The results improved with post-processing which consists of a majority voting method of an ensemble of sequences presenting single amino acid substitutions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the post-processing methodology used in NAP-CNB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "f439a6c8-f87d-456b-820c-f80a812b144d",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C43",
+      "claim": "Post-processing offers a more robust scoring by substituting each amino acid for its most similar one and then classifying the ensemble as the most repeated class.",
+      "claim_type": "EXPLICIT",
+      "source": "Post-processing offers a more robust scoring by substituting each amino acid for its most similar one and then classifying the ensemble as the most repeated class.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes how the post-processing method works in NAP-CNB.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "d90ffb97-fb20-478b-8e52-2ceff8ab1177",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C44",
+      "claim": "The identification of tumor-specific antigens (neoantigens) is one of the main challenges for most anticancer immunotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "In this regard, the main challenges for most anticancer immunotherapies are the identification of tumor-specific antigens (neoantigens) (Schumacher and Schreiber, 2015) to avoid undesired side effects and the development of multiantigen-based treatments with combined therapies to prevent tumor relapses (Cable et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a recognized challenge in the field with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "6e5b5c5e-e775-4e91-8e25-5b42e8f06c75",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C45",
+      "claim": "The need to validate algorithmic results for neoantigen prediction has been recognized as one of the critical steps of this approach.",
+      "claim_type": "EXPLICIT",
+      "source": "The need to validate the algorithmic results has already been recognized as one of the critical steps of this approach (Vitiello and Zanetti, 2017) and this work specifically addresses it.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as established knowledge with a supporting citation, and the current work addresses this need.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "d533a513-209a-48fb-8b97-26457924e2ee",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C46",
+      "claim": "Algorithmic proposals using deep learning for neoantigen prediction have only started to appear and most of them clearly outperform the standard approaches.",
+      "claim_type": "EXPLICIT",
+      "source": "Algorithmic proposals using deep learning have only started to appear and most of them clearly outperform the standard approaches (Bulik-Sullivan et al., 2018; Wu et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a trend in the field with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ed4c5b24-3060-4027-bfd8-ec66db681434",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C47",
+      "claim": "Finding neoantigens in every cancer patient will be fundamental for personalized antitumor immunotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "Finding neoantigens in every cancer patient will be fundamental for personalized antitumor immunotherapies (Tran et al., 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a future direction with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "647077db-d734-4194-b390-5b083fabd5b8",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C48",
+      "claim": "The area of neoantigen prediction is relatively unexplored with only a few algorithms available.",
+      "claim_type": "EXPLICIT",
+      "source": "This area is relatively unexplored with only a few algorithms available (Boegel et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a characterization of the field with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "73cb5744-1515-4ae8-a885-c0c843f84ada",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C49",
+      "claim": "Immunotherapies represent a new window of hope to treat previously intractable tumors.",
+      "claim_type": "EXPLICIT",
+      "source": "A new window of hope to treat previously intractable tumors is emerging through immunotherapies (Chen and Mellman, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a general context for the field with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "f63b2d84-1c23-4d51-b106-e6a754a51036",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C50",
+      "claim": "The rapid identification of tumor neoantigens would allow to target/attack tumors non-treatable today and will vastly improve current immunotherapies.",
+      "claim_type": "EXPLICIT",
+      "source": "The rapid identification of tumor neoantigens would allow to target/attack tumors non-treatable today and will vastly improve current immunotherapies, representing a giant step forward in the global anticancer fight.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a forward-looking statement about the potential impact of neoantigen identification.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "f70810f0-e441-4082-848d-a69043d16916",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C51",
+      "claim": "The proof-of-concept experiments presented significantly bolster the prospects of translating TNA identification into practical applications for personalized cancer treatments within society.",
+      "claim_type": "EXPLICIT",
+      "source": "The proof-of-concept experiments presented herein significantly bolster the prospects of translating TNA identification into practical applications for personalized cancer treatments within society.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an interpretation of the significance of the experimental results.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "a8929799-3fae-452c-8121-6b632323a55b",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C52",
+      "claim": "C57BL/6J mice were used as the recipient model for immunogenicity analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "To analyze the immunogenicity of the predicted TNAs, we employed immunocompetent C57BL/6J mice as the recipient model.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental model used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "a7652028-8452-4dad-aedb-ee4ab0fa528f",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C53",
+      "claim": "Mice were vaccinated with individual synthetic peptides emulsified in Freund's adjuvant.",
+      "claim_type": "EXPLICIT",
+      "source": "These mice were vaccinated with individual synthetic peptides *Pnp, *Adar, *Lrrc28, *Wiz, and *Herc6, the latter serving as a putative negative control. In all cases, peptides were emulsified in Freund's adjuvant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the vaccination protocol used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "4a1bedc3-5ebb-4f14-96fb-74879d1f9688",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C54",
+      "claim": "A second vaccination boost was injected 2 weeks after the first inoculation for immunogenicity analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "A second vaccination boost was injected 2 weeks after the first inoculation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the vaccination schedule used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "e6a479bb-32f6-45d4-b068-b0c90bccd80d",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C55",
+      "claim": "Four weeks after the first inoculation the immunogenicity of the predicted antigens was tested.",
+      "claim_type": "EXPLICIT",
+      "source": "Four weeks after the first inoculation the immunogenicity of the predicted antigens was tested (Figure 1B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the timing of immunogenicity assessment in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ffca5f0a-9d5b-47d0-b13f-4bb4742cd8a1",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C56",
+      "claim": "B16 F10 melanoma cells were injected subcutaneously 2 weeks after the second vaccination boost in the antitumor experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "A second vaccination boost was injected 2 weeks after the first inoculation and 2 weeks before tumor implantation (B16 F10 melanoma; see experimental scheme in Figure 2A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This describes the timing of tumor implantation relative to vaccination in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "170c33d8-c1a0-4d29-bf6b-1fb63e9fc8cc",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C58",
+      "claim": "Tumor growth was measured every 2\u20133 days with a dial caliper, and the volume was determined by \u00bd(length\u00d7width\u00b2).",
+      "claim_type": "EXPLICIT",
+      "source": "Tumor growth was measured every 2\u20133 days with a dial caliper, and the volume was determined by \u00bd(length\u00d7width2).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the tumor measurement methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "1b300b3f-c00f-4288-a750-9d6024f3d68f",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C59",
+      "claim": "Mice with tumors \u2265900 mm\u00b3 were sacrificed.",
+      "claim_type": "EXPLICIT",
+      "source": "Mice with tumors\u2265900 mm3 were sacrificed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an ethical endpoint used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "88e3c893-10d3-464b-b657-a32164936e84",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C60",
+      "claim": "Animals presenting ulcers were sacrificed following the rules of the ethical committee.",
+      "claim_type": "EXPLICIT",
+      "source": "Following the rules of our ethical committee, animals presenting ulcers were also sacrificed.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes an ethical endpoint used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "0852fdb0-1214-4a18-9737-da5f584e1387",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C61",
+      "claim": "4 mice per group were used in the antitumor experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "4 mice/group were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size used in the antitumor experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "6773c022-214c-44b2-a6c3-72bc5dc9bb6b",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C62",
+      "claim": "5 mice per group were used in the immunogenicity analysis experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "5 mice/group were used.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the sample size used in the immunogenicity experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "bb74c0e7-1368-4636-b1ea-287a3170d56f",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C63",
+      "claim": "Peptides were synthesized using the stepwise solid-phase peptide synthesis method performed on an automated peptide synthesizer.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptides were synthesized using the stepwise solid-phase peptide synthesis method performed on an automated peptide synthesizer (Multipep, Intavis, K\u00f6ln, Germany).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the peptide synthesis methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "0f6d3cf4-1265-4e58-810f-03a00beba709",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C64",
+      "claim": "The amino acid polymerization was carried out using the standard Fmoc chemistry and PYBOP/N-methylmorpholine as coupling activation reagents.",
+      "claim_type": "EXPLICIT",
+      "source": "The amino acid polymerization was carried out using the standard Fmoc (N-(9-fluorenyl) methoxycarbonyl) chemistry and PYBOP/N-methylmorpholine as coupling activation reagents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the chemical methodology used for peptide synthesis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "a6b534ad-88f5-4034-94d8-fb9341165f1b",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C65",
+      "claim": "The crude peptides were purified by reverse-phase chromatography on a semi-preparative HPLC system.",
+      "claim_type": "EXPLICIT",
+      "source": "The crude peptides were purified by reverse-phase chromatography on a semi-preparative HPLC system (Jasco, Tokio, Japan) equipped with a C18 reversed-phase column (Scharlab, Barcelona, Spain).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the peptide purification methodology used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "79ee66a1-2938-4a00-9a6c-7a708d90984c",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C66",
+      "claim": "The final immunogen concentration in the mixtures was 50 \u00b5g/100 \u00b5l.",
+      "claim_type": "EXPLICIT",
+      "source": "The final immunogen concentration in the mixtures was 50 \u00b5g/100 \u00b5l.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the peptide concentration used for immunization.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "1790f82b-5df8-4be3-9aef-fd50f7141ecf",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C67",
+      "claim": "Immunizations were performed at day 0 with FCA and day 14 with FIA.",
+      "claim_type": "EXPLICIT",
+      "source": "Immunizations were performed at day 0 (with FCA) and day 14 (with FIA).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the vaccination schedule and adjuvant types used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ee6eec55-512b-4b82-a6c9-8145ade0271b",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C68",
+      "claim": "3\u00d710\u2075 splenocytes per condition were restimulated with 1 \u03bcg/ml of the corresponding peptide pool for the ELISpot assay.",
+      "claim_type": "EXPLICIT",
+      "source": "After spleen processing, 3\u00d7105 splenocytes per condition were restimulated with 1 \u03bcg/ml of the corresponding peptide pool or with RPMI-10% FBS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions for the ELISpot assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "1a752689-6a9c-4df7-95ef-9ff00cde737b",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C69",
+      "claim": "The ELISpot plates were incubated with the peptides for 48 hr at 37\u00b0C in 5% CO2 atmosphere.",
+      "claim_type": "EXPLICIT",
+      "source": "The plates were incubated with the peptides for 48 hr at 37\u00b0C in 5% CO2 atmosphere, washed five times with PBS, and incubated with 1 \u03bcg/ml of the biotinylated anti-mouse IFN\u03b3 monoclonal antibody R4-6A2 (Mabtech) diluted in PBS-0.5% FBS for 2 hr at room temperature.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the incubation conditions for the ELISpot assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "75d3b79a-9dd3-4fa0-8aee-9f58ee01dc36",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C70",
+      "claim": "4\u00d710\u2076 fresh splenocytes were seeded on M96 plates and stimulated for 12 hr for the ICS assay.",
+      "claim_type": "EXPLICIT",
+      "source": "After spleen processing, 4\u00d7106 fresh splenocytes (depleted of red blood cells) were seeded on M96 plates and stimulated for 12 hr in complete RPMI 1640 medium supplemented with 10% FBS containing 1 \u03bcl/ml Brefeldin A (BD Biosciences) to inhibit cytokine secretion, 1 \u03bcl/ml monensin 1\u00d7 (eBioscience), anti-CD107a-FITC (BD Biosciences), and the peptides *Pnp, *AdaR, *Lrrc28, *Herc6, *Wiz, or Trp2 (1 \u03bcg/ml).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the experimental conditions for the ICS assay.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "8cb8f78d-8534-42e9-995b-1a61b45b3e84",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C71",
+      "claim": "B16 F10 melanoma cell line was obtained from ATCC and maintained in high glucose DMEM supplemented with 10% FBS.",
+      "claim_type": "EXPLICIT",
+      "source": "B16 F10 melanoma cell line was obtained from American Type Culture Collection (ATCC, Manassas, VA, USA) and maintained in high glucose Dulbecco's Modified Eagle's Medium (Gibco-Life Technologies) supplemented with 10% FBS.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the cell line source and culture conditions.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "03638ba2-05b4-4394-9989-d43d8981bd20",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C72",
+      "claim": "One-way ANOVA with Dunnett correction for multiple testing was used for ELISpot analysis statistical testing.",
+      "claim_type": "EXPLICIT",
+      "source": "One-way ANOVA with Dunnett correction for multiple testing was used for ELISpot analysis to establish the differences within the different groups.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used for ELISpot data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "18c076e5-57a3-4184-922a-ce9c7c4b0181",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C73",
+      "claim": "ICS results were analyzed by building a bootstrap distribution based on the ratio of the percentage of specific cell types between the vaccinated and unvaccinated groups, and determining the centered 95% confidence interval.",
+      "claim_type": "EXPLICIT",
+      "source": "We analyzed the ICS results by building a bootstrap distribution based on the ratio of the percentage of specific cell types between the vaccinated and unvaccinated groups. Subsequently, we determined the centered 95% confidence interval.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used for ICS data analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ffcb78f1-b71d-487a-a2ae-b12a3fd8db12",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C74",
+      "claim": "Log-rank (Mantel-Cox) statistical test was performed on day 24 for statistical analysis of the overall survival in the antitumor experiment.",
+      "claim_type": "EXPLICIT",
+      "source": "For statistical analysis of the overall survival in the antitumor experiment, log-rank (Mantel-Cox) statistical test was performed on day 24.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the statistical method used for survival analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "0738e187-3abe-4396-af71-f181e3f6603d",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C75",
+      "claim": "Female C57BL/6J mice (6\u20138 weeks of age) used for in vivo experiments were purchased from The Jackson Laboratory.",
+      "claim_type": "EXPLICIT",
+      "source": "Female C57BL/6J mice (6\u20138 weeks of age) used for in vivo experiments were purchased from The Jackson Laboratory and stored in the animal facility of Centro Nacional de Biotecnolog\u00eda (CNB-CSIC, Madrid).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the source and characteristics of the mice used in the study.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "b6b4c596-28ed-46ca-8cdd-dfbdd5bc3b8b",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C76",
+      "claim": "In vivo studies were approved by the Ethical Committee of Animal Experimentation (CEEA) of CNB-CSIC and by the competent authority of Comunidad de Madrid (PROEX 041.4/21).",
+      "claim_type": "EXPLICIT",
+      "source": "In vivo studies were approved by the Ethical Committee of Animal Experimentation (CEEA) of CNB-CSIC and by the competent authority of Comunidad de Madrid (PROEX 041.4/21).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the ethical approval for the animal experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "b49024fa-4e05-4f76-b6bd-41b44ee3a5a0",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "claim_id": "C77",
+      "claim": "Animal procedures were conformed to international guidelines and to Spanish-European law.",
+      "claim_type": "EXPLICIT",
+      "source": "Animal procedures were conformed to international guidelines and to Spanish-European law.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This describes the regulatory compliance of the animal experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "NAP-CNB is a machine learning-based platform that uses RNA-seq data and LSTM neural networks to predict tumor neoantigens with MHC I affinity, incorporating post-processing for robust scoring. The platform is automatic, freely available online, and provides an integrated pipeline for neoepitope classification.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C8-C10, and C40-C43 collectively describe the NAP-CNB platform's technical features and capabilities. These are well-documented methodological descriptions that are internally consistent and supported by the prior publication (Wert-Carvajal et al., 2021).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "e81ff901-1ff0-44e7-810f-2ca30a1d838f",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "NAP-CNB demonstrates comparable or superior performance to state-of-the-art methods (NetH2pan, MHCflurry 2.0) with 95% AUC for H-2Kb typings and high positive predictive value in blind benchmarking.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C11-C12 report performance metrics from prior benchmarking, but the current manuscript does not present the underlying data, validation methodology, or statistical comparisons. Without access to the benchmarking details, independent verification is not possible.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "a3224857-75f3-4574-b5e9-430c32e37441",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The study used B16 F10 melanoma in C57BL/6J mice to validate NAP-CNB predictions, selecting five peptides (*Pnp, *Adar, *Lrrc28, *Wiz, *Herc6) based on NAP-CNB scores and expression levels, with appropriate controls and ethical approval.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C16 and C52-C77 describe the experimental design, model selection, peptide synthesis, and ethical compliance. The methodology is clearly documented with appropriate controls (*Herc6 as negative control, Trp2 as positive control) and follows standard practices.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "f5caf6e8-3463-4804-b734-21c7db27406a",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "NAP-CNB-predicted TNAs induced robust immune responses in mice as measured by ELISpot and ICS assays, with *Herc6 (predicted non-immunogenic) showing no response and other peptides showing elevated IFN\u03b3-secreting cells and CD8+ T-cell activation markers.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C22 are supported by appropriate immunological assays (ELISpot, ICS) with proper statistical analysis (C72: one-way ANOVA with Dunnett correction). The negative control (*Herc6) performed as predicted, and the positive results validate NAP-CNB's immunogenicity predictions. Sample size (n=5) is adequate for immunogenicity screening.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Control experiments established baseline tumor growth and survival in non-vaccinated mice, validated the positive control (Trp2), and confirmed *Herc6 as a true negative control in the B16 F10 tumor challenge model.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C23-C26 describe appropriate positive and negative controls with clear outcomes. The methodology (C56, C58-C60, C71, C74) is standard for tumor challenge studies. Statistical analysis using log-rank test is appropriate for survival data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "c3e81ad9-e739-4922-821c-5dbe48c8d689",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Individual vaccination with *Pnp and *Lrrc28 showed variable antitumor responses with modest, non-significant survival improvements, while *Adar (lowest expression) showed no efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C27-C29 report variable outcomes with small sample sizes (n=4 per group, C61). The high variability within groups and lack of statistical significance (C28) make it difficult to draw firm conclusions about these individual peptides. Larger sample sizes would be needed to determine if the observed trends are meaningful.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "05e75c10-9e10-4708-ad67-bfed6a11c323",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Vaccination with a mixture of three predicted TNAs (*Pnp, *Adar, *Lrrc28) induced strong antitumor responses comparable to or better than the positive control Trp2, with 100% of animals showing tumors <100 mm\u00b3 at day 15 and significantly increased survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30 and C34 demonstrate the efficacy of multiantigen vaccination with clear quantitative outcomes (100% effectiveness at day 15) and statistically significant survival improvement (Figure 3A, p<0.05). This represents a key finding supporting the multiantigen approach, though the small sample size (n=4) limits generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "5b012a67-8a94-4477-9c27-d0d1efd978f7",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Vaccination with *Wiz alone (high expression, identified after post-processing) elicited powerful antitumor responses with 100% effectiveness at day 15 and considerably improved survival.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C31 and C34 show that *Wiz, despite weaker immunogenicity in ELISpot (C18), produced excellent antitumor efficacy. This supports the value of considering expression levels and post-processing in neoantigen selection. However, the small sample size (n=4) limits confidence in the generalizability of this finding.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "312e3a32-ddd5-4f99-aa17-8075fa7ee336",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Optimal antitumor activity was observed with *Wiz, which had higher tumor expression but weaker immunogenicity, suggesting that prioritizing TNAs with higher expression levels may be more effective than selecting based solely on immunogenicity.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C3 and C37 propose that expression level is more important than immunogenicity based on *Wiz performance. However, this conclusion is based on a single peptide comparison with small sample sizes. The relationship between expression, immunogenicity, and efficacy requires more systematic investigation across multiple antigens to establish this as a general principle.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ae60ec25-c090-479c-b127-a094b4162359",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Multiantigen vaccination targeting various tumor epitopes simultaneously showed vastly improved responses compared to individual antigens and holds significant potential for preventing immune escape.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4 and C38 are supported by the superior performance of the peptide mixture compared to individual peptides (C30, C34). The data demonstrate synergistic effects of combining antigens, though the mechanism for preventing immune escape is inferred rather than directly demonstrated.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "d4da1a73-db3e-48c2-a221-61a07d9db470",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "NAP-CNB effectively identifies tumor neoantigens that elicit potent antitumor responses in mice, demonstrating that machine learning-based in silico approaches can identify TNAs for anticancer targets.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C22, C35, and C36 are supported by the experimental validation showing that NAP-CNB predictions correlated with immunogenicity and antitumor efficacy. The negative control (*Herc6) and positive results with predicted TNAs validate the platform's predictive capability, though the small sample sizes and single tumor model limit generalizability.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "325d79a7-fa95-4037-9696-7a16bd123155",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Vaccination effectiveness at day 15 ranged from 0% (PBS, *Herc6, *Adar) to 50-75% (*Lrrc28, *Pnp) to 100% (Trp2, *Wiz, peptide mixture).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C33 provide quantitative effectiveness metrics based on tumor size at day 15. These are clearly presented in Figure 2J and provide a useful summary measure, though the small sample size (n=4) means these percentages have wide confidence intervals.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "8a0549f7-d079-4636-8473-9424e72a3455",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "ICS assay methodology used 4\u00d710\u2076 splenocytes stimulated for 12 hours, with results analyzed using bootstrap distribution and 95% confidence intervals for the ratio of vaccinated to unvaccinated groups.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C70 and C73 describe appropriate ICS methodology and statistical analysis. The bootstrap approach for analyzing ratios is valid, though the manuscript does not specify the number of bootstrap iterations or provide details on handling zero values in the denominator.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "bb43aa7b-f32e-4d60-897f-297422ae7931",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "Current cancer immunotherapies face challenges including low response rates, relapses, severe side effects, and the need for better neoantigen identification and multiantigen approaches, representing an important but relatively unexplored area where deep learning methods show promise.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7 and C44-C49 provide appropriate background context supported by relevant citations. These claims accurately represent the current state of the field and the challenges motivating the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "79e84ecc-74ce-4cf2-a2f0-6432ad89ef57",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "Trp2 is a well-established tumor-associated antigen that induces potent cellular responses and serves as an appropriate positive control.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C39 is supported by citation to Castle et al., 2012, and Trp2's performance in the experiments (C25) validates its use as a positive control.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "717e0166-3897-4a66-bbde-9c69843f10bb",
+      "content_id": "13a8d732-898f-4420-875a-c60151900771",
+      "result_id": "R16",
+      "result_category": "llm",
+      "result": "The proof-of-concept experiments bolster prospects for translating TNA identification into practical personalized cancer treatments, with rapid neoantigen identification potentially allowing treatment of currently untreatable tumors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C51 make broad translational claims based on a single tumor model with small sample sizes. While the results are promising, the leap from B16 F10 melanoma in mice to clinical applications in diverse human cancers requires substantial additional validation. These are speculative statements about future impact rather than demonstrated results.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0",
+      "content_id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "NAP-CNB is a machine learning-based platform that uses RNA-seq data and LSTM neural networks to predict tumor neoantigens based on MHC I affinity, with performance comparable or superior to existing methods (95% AUC for H-2Kb). The platform is fully automated, freely available, and includes a post-processing step for robust scoring.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers accept the platform's capabilities without critique. Reviewer 1 states the study demonstrates 'the importance of incorporating RNAseq and machine learning approaches for neoantigen prediction' with 'convincing' evidence. Reviewer 2 acknowledges 'the machine learning approach to the prediction can reveal very useful information for the selection of neoantigens.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "d91238d7-9826-4287-8154-98dd4e7de4c3",
+      "content_id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "In vivo validation using B16 F10 melanoma showed that NAP-CNB-predicted neoantigens (*Pnp, *Adar, *Lrrc28, *Wiz) elicited robust immune responses in mice as measured by IFN\u03b3-secreting cells and CD8+ T-cell activation markers, while the predicted non-immunogenic control (*Herc6) showed no response, validating the platform's predictions.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly states as a strength that 'They proved in vivo that in silico-predicted neoantigens can trigger antitumor response in mice.' Reviewer 1 finds the overall evidence 'convincing.' Neither reviewer questions the immunogenicity data or experimental design for these assays.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2",
+      "content_id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Tumor challenge experiments demonstrated variable antitumor efficacy among individual neoantigens: *Herc6 and *Adar showed no protection, *Pnp and *Lrrc28 showed partial protection (50-75% success), while *Wiz (high expression) and the positive control Trp2 showed maximum effectiveness (100% success at day 15). The highly expressed *Wiz neoantigen provided optimal antitumor activity despite weaker immunogenicity.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 explicitly acknowledges as a strength that 'The authors demonstrated that RNA expression of a neoantigen is very important factor in the selection of peptides for the creation of personalized vaccines.' Reviewer 1 accepts these findings as part of the 'convincing' evidence. The differential efficacy based on expression levels is central to the reviewers' positive assessment.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "4aeac359-32c3-4033-b7cf-89f7a2528ace",
+      "content_id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The study found that optimal antitumor activity was observed when targeting the antigen with higher expression in the tumor (*Wiz), which was not the most immunogenic, suggesting that prioritizing TNAs with higher expression levels is a more promising approach even if they elicit comparatively weaker immunogenic responses.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is explicitly highlighted by Reviewer 2 as a key strength: 'The authors demonstrated that RNA expression of a neoantigen is very important factor in the selection of peptides.' Reviewer 1 notes this contributes 'important information towards the selection of neoantigens for personalized antitumor vaccination.' Both reviewers accept this as a significant contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "2a5cc7d6-e859-4bb5-8d8c-b8f2db7c09eb",
+      "content_id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Vaccination with a mixture of three predicted neoantigens (*Pnp, *Adar, *Lrrc28) induced strong antitumor responses comparable to or better than the positive control Trp2, with significantly increased survival and 100% effectiveness, demonstrating the value of multiantigen-based approaches for preventing immune escape.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Both reviewers accept this finding without critique. Reviewer 1 states the findings 'contribute important information towards the selection of neoantigens for personalized antitumor vaccination,' implicitly accepting the multiantigen approach. Reviewer 2 does not question this result, and it aligns with their acknowledgment of the study's demonstration of effective neoantigen selection.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "52cee38d-6d27-4473-927b-a8ace035cff8",
+      "content_id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The selection criteria for peptides tested included three top-scored TNAs with varying expression levels (*Pnp, *Adar, *Lrrc28), one bottom-scored negative control (*Herc6), and one top-scored peptide revealed after post-processing (*Wiz) to test the advantage of the post-processing step.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 raises a specific concern: 'The selection of the peptides for vaccination is not clear. Some peptides were selected before and some after processing. What processing is also not clear.' The reviewer notes this was addressed in responses but 'didn't include that in the revised manuscript. I think all that information should be in the manuscript,' indicating incomplete documentation of the selection rationale.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "7b22b5a5-c61b-4342-9424-474620be55ea",
+      "content_id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The study demonstrates that pure in silico machine learning approaches can effectively identify tumor neoantigens that induce strong antitumor protection, addressing a recognized critical need for algorithmic validation and bolstering prospects for translating TNA identification into practical personalized cancer treatments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states the findings 'contribute important information towards the selection of neoantigens for personalized antitumor vaccination' and finds the evidence 'convincing.' Reviewer 2 acknowledges the study shows 'RNAseq can be used for neoantigen prediction and the machine learning approach...can reveal very useful information.' Both reviewers accept the broader implications of the validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "f9135697-5cfb-4816-ab06-c7e1e44543aa",
+      "content_id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "The study employed standard experimental methods including C57BL/6J mice, Freund's adjuvant vaccination protocols, B16 F10 melanoma tumor challenges, ELISpot and ICS assays for immune response assessment, and appropriate statistical analyses, all conducted under approved ethical guidelines.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer raises concerns about the experimental methods, protocols, or statistical approaches. Reviewer 1 finds the evidence 'convincing' overall, and Reviewer 2's concerns are limited to documentation of peptide selection rationale rather than methodological execution. The methods are implicitly accepted as appropriate.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "15b15333-2b79-4de0-be5f-cfa880c2c62c",
+      "content_id": "aba6c698-2694-42ab-8ba6-0b5b940afe07",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The manuscript provides background context on challenges in cancer immunotherapy (low response rates, side effects, need for tumor-specific antigens), the emerging role of deep learning approaches in neoantigen prediction, and the potential impact of rapid neoantigen identification for personalized treatments.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Neither reviewer questions the background context or motivation for the study. These claims establish the rationale that both reviewers implicitly accept, as evidenced by their agreement that the study addresses an important problem in neoantigen selection for personalized vaccination.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "5fbc3559-fb99-46be-8e62-a5a1315f3444",
+      "result_id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16"
+    },
+    {
+      "claim_id": "c104e525-1b0a-4161-b204-bf4396aaca0c",
+      "result_id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16"
+    },
+    {
+      "claim_id": "62f4e074-4c99-430b-9150-7fcd9828a031",
+      "result_id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16"
+    },
+    {
+      "claim_id": "4de2d7e1-6b07-4def-91c1-3c5dcca631c8",
+      "result_id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16"
+    },
+    {
+      "claim_id": "1f4ab3db-16b0-4c8a-89e6-d8f4fcde289d",
+      "result_id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16"
+    },
+    {
+      "claim_id": "8f7de28f-c0c5-4347-932b-4b2e70a9df4b",
+      "result_id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16"
+    },
+    {
+      "claim_id": "94865c1d-2f91-4671-9b03-a5cce56feb28",
+      "result_id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16"
+    },
+    {
+      "claim_id": "f439a6c8-f87d-456b-820c-f80a812b144d",
+      "result_id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16"
+    },
+    {
+      "claim_id": "67c0af4e-ce81-4ad3-98ae-5952c27daf1e",
+      "result_id": "e81ff901-1ff0-44e7-810f-2ca30a1d838f"
+    },
+    {
+      "claim_id": "4a8f91ad-ef57-44b5-a0fa-7bbe9f55d453",
+      "result_id": "e81ff901-1ff0-44e7-810f-2ca30a1d838f"
+    },
+    {
+      "claim_id": "490176ff-c36b-4d41-89ca-ab1af93e15a1",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "ceec4209-bc34-45c2-830a-3b4753f4fc6e",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "1a0ab168-3a42-4d69-a712-2c0816dd5e99",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "493b8c70-d9b2-47aa-8901-0a83cd75576b",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "a8929799-3fae-452c-8121-6b632323a55b",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "a7652028-8452-4dad-aedb-ee4ab0fa528f",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "4a1bedc3-5ebb-4f14-96fb-74879d1f9688",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "e6a479bb-32f6-45d4-b068-b0c90bccd80d",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "0852fdb0-1214-4a18-9737-da5f584e1387",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "6773c022-214c-44b2-a6c3-72bc5dc9bb6b",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "bb74c0e7-1368-4636-b1ea-287a3170d56f",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "0f6d3cf4-1265-4e58-810f-03a00beba709",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "a6b534ad-88f5-4034-94d8-fb9341165f1b",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "79ee66a1-2938-4a00-9a6c-7a708d90984c",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "1790f82b-5df8-4be3-9aef-fd50f7141ecf",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "0738e187-3abe-4396-af71-f181e3f6603d",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "b6b4c596-28ed-46ca-8cdd-dfbdd5bc3b8b",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "b49024fa-4e05-4f76-b6bd-41b44ee3a5a0",
+      "result_id": "a3224857-75f3-4574-b5e9-430c32e37441"
+    },
+    {
+      "claim_id": "fe0a2886-284f-4f9f-981a-95a344232250",
+      "result_id": "f5caf6e8-3463-4804-b734-21c7db27406a"
+    },
+    {
+      "claim_id": "64e80c97-8a61-4ec4-a6bc-a05ee9606e0e",
+      "result_id": "f5caf6e8-3463-4804-b734-21c7db27406a"
+    },
+    {
+      "claim_id": "bf0d8ac2-8005-4cb7-b02b-99ef85be1314",
+      "result_id": "f5caf6e8-3463-4804-b734-21c7db27406a"
+    },
+    {
+      "claim_id": "45cfe6f9-ad42-4fd2-bcec-ce040f4c8528",
+      "result_id": "f5caf6e8-3463-4804-b734-21c7db27406a"
+    },
+    {
+      "claim_id": "657a84a9-2311-486a-b70b-d0c951f9242c",
+      "result_id": "f5caf6e8-3463-4804-b734-21c7db27406a"
+    },
+    {
+      "claim_id": "2cd7167b-417f-48c6-9bbb-50f6c22827dc",
+      "result_id": "f5caf6e8-3463-4804-b734-21c7db27406a"
+    },
+    {
+      "claim_id": "ee6eec55-512b-4b82-a6c9-8145ade0271b",
+      "result_id": "f5caf6e8-3463-4804-b734-21c7db27406a"
+    },
+    {
+      "claim_id": "1a752689-6a9c-4df7-95ef-9ff00cde737b",
+      "result_id": "f5caf6e8-3463-4804-b734-21c7db27406a"
+    },
+    {
+      "claim_id": "03638ba2-05b4-4394-9989-d43d8981bd20",
+      "result_id": "f5caf6e8-3463-4804-b734-21c7db27406a"
+    },
+    {
+      "claim_id": "f4299e91-3bc8-4ff8-afe8-7c8b00c08e4f",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "ccb8e37e-b88d-45f1-83f4-8a80533a6ef5",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "4c02c4d2-e6dc-4217-912d-a706e5d77ddd",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "017f50e7-ab51-477a-9568-a3613c786223",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "ffca5f0a-9d5b-47d0-b13f-4bb4742cd8a1",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "170c33d8-c1a0-4d29-bf6b-1fb63e9fc8cc",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "1b300b3f-c00f-4288-a750-9d6024f3d68f",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "88e3c893-10d3-464b-b657-a32164936e84",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "8cb8f78d-8534-42e9-995b-1a61b45b3e84",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "ffcb78f1-b71d-487a-a2ae-b12a3fd8db12",
+      "result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3"
+    },
+    {
+      "claim_id": "c04c603b-42a3-48c8-b8d7-1112d712b2f7",
+      "result_id": "c3e81ad9-e739-4922-821c-5dbe48c8d689"
+    },
+    {
+      "claim_id": "843998e6-fda3-4738-bbfd-4a010c83491a",
+      "result_id": "c3e81ad9-e739-4922-821c-5dbe48c8d689"
+    },
+    {
+      "claim_id": "1106a820-2c23-4292-b510-ff10e7ef09d9",
+      "result_id": "c3e81ad9-e739-4922-821c-5dbe48c8d689"
+    },
+    {
+      "claim_id": "2e9c3697-072a-4d3b-abe3-e43ef772777d",
+      "result_id": "05e75c10-9e10-4708-ad67-bfed6a11c323"
+    },
+    {
+      "claim_id": "90bb51a4-e2ba-4ace-9656-cea645d16be3",
+      "result_id": "05e75c10-9e10-4708-ad67-bfed6a11c323"
+    },
+    {
+      "claim_id": "c50a4e65-4a5c-41ed-b6df-32af26911b20",
+      "result_id": "5b012a67-8a94-4477-9c27-d0d1efd978f7"
+    },
+    {
+      "claim_id": "90bb51a4-e2ba-4ace-9656-cea645d16be3",
+      "result_id": "5b012a67-8a94-4477-9c27-d0d1efd978f7"
+    },
+    {
+      "claim_id": "c068567d-bac1-423e-b80f-177afa8857a2",
+      "result_id": "312e3a32-ddd5-4f99-aa17-8075fa7ee336"
+    },
+    {
+      "claim_id": "f3e2ac0f-9806-44bc-8094-ef3d4735da0c",
+      "result_id": "312e3a32-ddd5-4f99-aa17-8075fa7ee336"
+    },
+    {
+      "claim_id": "d95646bf-e0e2-4700-81a9-731ce3df4fc7",
+      "result_id": "ae60ec25-c090-479c-b127-a094b4162359"
+    },
+    {
+      "claim_id": "2ea05bae-1f72-4581-a5f8-be4b4796f0eb",
+      "result_id": "ae60ec25-c090-479c-b127-a094b4162359"
+    },
+    {
+      "claim_id": "a7c5f385-ab36-4985-b0e8-bde17f7d7fad",
+      "result_id": "d4da1a73-db3e-48c2-a221-61a07d9db470"
+    },
+    {
+      "claim_id": "2cd7167b-417f-48c6-9bbb-50f6c22827dc",
+      "result_id": "d4da1a73-db3e-48c2-a221-61a07d9db470"
+    },
+    {
+      "claim_id": "c0a820ae-4c4c-44bc-925d-c70941a83b75",
+      "result_id": "d4da1a73-db3e-48c2-a221-61a07d9db470"
+    },
+    {
+      "claim_id": "a394b18b-6d8a-4cbb-ae40-0bb1455b9c44",
+      "result_id": "d4da1a73-db3e-48c2-a221-61a07d9db470"
+    },
+    {
+      "claim_id": "eff5a619-143a-4e94-ab17-b72880c0ef8b",
+      "result_id": "325d79a7-fa95-4037-9696-7a16bd123155"
+    },
+    {
+      "claim_id": "cb938eee-7e86-4581-a1b5-7b80cf4e2b3c",
+      "result_id": "325d79a7-fa95-4037-9696-7a16bd123155"
+    },
+    {
+      "claim_id": "75d3b79a-9dd3-4fa0-8aee-9f58ee01dc36",
+      "result_id": "8a0549f7-d079-4636-8473-9424e72a3455"
+    },
+    {
+      "claim_id": "18c076e5-57a3-4184-922a-ce9c7c4b0181",
+      "result_id": "8a0549f7-d079-4636-8473-9424e72a3455"
+    },
+    {
+      "claim_id": "8a9f7dd4-a80f-4d8f-b747-5a8dfcde6918",
+      "result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931"
+    },
+    {
+      "claim_id": "78c015b9-a890-4748-8e06-d1c68b9d4c29",
+      "result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931"
+    },
+    {
+      "claim_id": "0ef8a4ee-a7b1-435a-a9a1-0ec8f5b7d2e5",
+      "result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931"
+    },
+    {
+      "claim_id": "d90ffb97-fb20-478b-8e52-2ceff8ab1177",
+      "result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931"
+    },
+    {
+      "claim_id": "6e5b5c5e-e775-4e91-8e25-5b42e8f06c75",
+      "result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931"
+    },
+    {
+      "claim_id": "d533a513-209a-48fb-8b97-26457924e2ee",
+      "result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931"
+    },
+    {
+      "claim_id": "ed4c5b24-3060-4027-bfd8-ec66db681434",
+      "result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931"
+    },
+    {
+      "claim_id": "647077db-d734-4194-b390-5b083fabd5b8",
+      "result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931"
+    },
+    {
+      "claim_id": "73cb5744-1515-4ae8-a885-c0c843f84ada",
+      "result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931"
+    },
+    {
+      "claim_id": "5e870451-75c9-458e-ad26-f4c7456d7be5",
+      "result_id": "79e84ecc-74ce-4cf2-a2f0-6432ad89ef57"
+    },
+    {
+      "claim_id": "f63b2d84-1c23-4d51-b106-e6a754a51036",
+      "result_id": "717e0166-3897-4a66-bbde-9c69843f10bb"
+    },
+    {
+      "claim_id": "f70810f0-e441-4082-848d-a69043d16916",
+      "result_id": "717e0166-3897-4a66-bbde-9c69843f10bb"
+    },
+    {
+      "claim_id": "5fbc3559-fb99-46be-8e62-a5a1315f3444",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "c104e525-1b0a-4161-b204-bf4396aaca0c",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "62f4e074-4c99-430b-9150-7fcd9828a031",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "4de2d7e1-6b07-4def-91c1-3c5dcca631c8",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "67c0af4e-ce81-4ad3-98ae-5952c27daf1e",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "4a8f91ad-ef57-44b5-a0fa-7bbe9f55d453",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "1f4ab3db-16b0-4c8a-89e6-d8f4fcde289d",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "8f7de28f-c0c5-4347-932b-4b2e70a9df4b",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "94865c1d-2f91-4671-9b03-a5cce56feb28",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "f439a6c8-f87d-456b-820c-f80a812b144d",
+      "result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0"
+    },
+    {
+      "claim_id": "a7c5f385-ab36-4985-b0e8-bde17f7d7fad",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "490176ff-c36b-4d41-89ca-ab1af93e15a1",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "ceec4209-bc34-45c2-830a-3b4753f4fc6e",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "1a0ab168-3a42-4d69-a712-2c0816dd5e99",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "493b8c70-d9b2-47aa-8901-0a83cd75576b",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "fe0a2886-284f-4f9f-981a-95a344232250",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "64e80c97-8a61-4ec4-a6bc-a05ee9606e0e",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "bf0d8ac2-8005-4cb7-b02b-99ef85be1314",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "45cfe6f9-ad42-4fd2-bcec-ce040f4c8528",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "657a84a9-2311-486a-b70b-d0c951f9242c",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "2cd7167b-417f-48c6-9bbb-50f6c22827dc",
+      "result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3"
+    },
+    {
+      "claim_id": "f4299e91-3bc8-4ff8-afe8-7c8b00c08e4f",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "ccb8e37e-b88d-45f1-83f4-8a80533a6ef5",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "4c02c4d2-e6dc-4217-912d-a706e5d77ddd",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "017f50e7-ab51-477a-9568-a3613c786223",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "c04c603b-42a3-48c8-b8d7-1112d712b2f7",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "843998e6-fda3-4738-bbfd-4a010c83491a",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "1106a820-2c23-4292-b510-ff10e7ef09d9",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "c50a4e65-4a5c-41ed-b6df-32af26911b20",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "eff5a619-143a-4e94-ab17-b72880c0ef8b",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "cb938eee-7e86-4581-a1b5-7b80cf4e2b3c",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "90bb51a4-e2ba-4ace-9656-cea645d16be3",
+      "result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2"
+    },
+    {
+      "claim_id": "c068567d-bac1-423e-b80f-177afa8857a2",
+      "result_id": "4aeac359-32c3-4033-b7cf-89f7a2528ace"
+    },
+    {
+      "claim_id": "f3e2ac0f-9806-44bc-8094-ef3d4735da0c",
+      "result_id": "4aeac359-32c3-4033-b7cf-89f7a2528ace"
+    },
+    {
+      "claim_id": "d95646bf-e0e2-4700-81a9-731ce3df4fc7",
+      "result_id": "2a5cc7d6-e859-4bb5-8d8c-b8f2db7c09eb"
+    },
+    {
+      "claim_id": "2e9c3697-072a-4d3b-abe3-e43ef772777d",
+      "result_id": "2a5cc7d6-e859-4bb5-8d8c-b8f2db7c09eb"
+    },
+    {
+      "claim_id": "2ea05bae-1f72-4581-a5f8-be4b4796f0eb",
+      "result_id": "2a5cc7d6-e859-4bb5-8d8c-b8f2db7c09eb"
+    },
+    {
+      "claim_id": "ceec4209-bc34-45c2-830a-3b4753f4fc6e",
+      "result_id": "52cee38d-6d27-4473-927b-a8ace035cff8"
+    },
+    {
+      "claim_id": "1a0ab168-3a42-4d69-a712-2c0816dd5e99",
+      "result_id": "52cee38d-6d27-4473-927b-a8ace035cff8"
+    },
+    {
+      "claim_id": "493b8c70-d9b2-47aa-8901-0a83cd75576b",
+      "result_id": "52cee38d-6d27-4473-927b-a8ace035cff8"
+    },
+    {
+      "claim_id": "c0a820ae-4c4c-44bc-925d-c70941a83b75",
+      "result_id": "7b22b5a5-c61b-4342-9424-474620be55ea"
+    },
+    {
+      "claim_id": "a394b18b-6d8a-4cbb-ae40-0bb1455b9c44",
+      "result_id": "7b22b5a5-c61b-4342-9424-474620be55ea"
+    },
+    {
+      "claim_id": "6e5b5c5e-e775-4e91-8e25-5b42e8f06c75",
+      "result_id": "7b22b5a5-c61b-4342-9424-474620be55ea"
+    },
+    {
+      "claim_id": "f70810f0-e441-4082-848d-a69043d16916",
+      "result_id": "7b22b5a5-c61b-4342-9424-474620be55ea"
+    },
+    {
+      "claim_id": "a8929799-3fae-452c-8121-6b632323a55b",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "a7652028-8452-4dad-aedb-ee4ab0fa528f",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "4a1bedc3-5ebb-4f14-96fb-74879d1f9688",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "e6a479bb-32f6-45d4-b068-b0c90bccd80d",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "ffca5f0a-9d5b-47d0-b13f-4bb4742cd8a1",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "170c33d8-c1a0-4d29-bf6b-1fb63e9fc8cc",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "1b300b3f-c00f-4288-a750-9d6024f3d68f",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "88e3c893-10d3-464b-b657-a32164936e84",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "0852fdb0-1214-4a18-9737-da5f584e1387",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "6773c022-214c-44b2-a6c3-72bc5dc9bb6b",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "bb74c0e7-1368-4636-b1ea-287a3170d56f",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "0f6d3cf4-1265-4e58-810f-03a00beba709",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "a6b534ad-88f5-4034-94d8-fb9341165f1b",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "79ee66a1-2938-4a00-9a6c-7a708d90984c",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "1790f82b-5df8-4be3-9aef-fd50f7141ecf",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "ee6eec55-512b-4b82-a6c9-8145ade0271b",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "1a752689-6a9c-4df7-95ef-9ff00cde737b",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "75d3b79a-9dd3-4fa0-8aee-9f58ee01dc36",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "8cb8f78d-8534-42e9-995b-1a61b45b3e84",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "03638ba2-05b4-4394-9989-d43d8981bd20",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "18c076e5-57a3-4184-922a-ce9c7c4b0181",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "ffcb78f1-b71d-487a-a2ae-b12a3fd8db12",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "0738e187-3abe-4396-af71-f181e3f6603d",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "b6b4c596-28ed-46ca-8cdd-dfbdd5bc3b8b",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "b49024fa-4e05-4f76-b6bd-41b44ee3a5a0",
+      "result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa"
+    },
+    {
+      "claim_id": "8a9f7dd4-a80f-4d8f-b747-5a8dfcde6918",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    },
+    {
+      "claim_id": "78c015b9-a890-4748-8e06-d1c68b9d4c29",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    },
+    {
+      "claim_id": "0ef8a4ee-a7b1-435a-a9a1-0ec8f5b7d2e5",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    },
+    {
+      "claim_id": "5e870451-75c9-458e-ad26-f4c7456d7be5",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    },
+    {
+      "claim_id": "d90ffb97-fb20-478b-8e52-2ceff8ab1177",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    },
+    {
+      "claim_id": "d533a513-209a-48fb-8b97-26457924e2ee",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    },
+    {
+      "claim_id": "ed4c5b24-3060-4027-bfd8-ec66db681434",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    },
+    {
+      "claim_id": "647077db-d734-4194-b390-5b083fabd5b8",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    },
+    {
+      "claim_id": "73cb5744-1515-4ae8-a885-c0c843f84ada",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    },
+    {
+      "claim_id": "f63b2d84-1c23-4d51-b106-e6a754a51036",
+      "result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "88e2f60a-7b4d-4f95-a3d0-6cb53d054b25",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "312e3a32-ddd5-4f99-aa17-8075fa7ee336",
+      "peer_result_id": "4aeac359-32c3-4033-b7cf-89f7a2528ace",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Perfect alignment on claims C3 and C37 regarding expression level importance over immunogenicity. OpenEval rates as UNCERTAIN due to limited evidence from single peptide comparison, while peer reviewers rate as SUPPORTED and explicitly highlight this as a key strength of the study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "e84402d3-7d14-4dca-b0f1-72758e50d7be",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "8ee3ab14-98ed-4668-94fc-8bc03eaeff16",
+      "peer_result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong overlap on NAP-CNB platform capabilities (C1, C8-C10, C40-C43). Both rate as SUPPORTED. OpenEval also includes performance metrics (C11-C12) which peer review addresses but OpenEval separately evaluates as UNCERTAIN in R2. Peer reviewers find platform capabilities 'convincing' without critique.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "327d9151-5b7a-4267-826d-e3da6af01ccc",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "e81ff901-1ff0-44e7-810f-2ca30a1d838f",
+      "peer_result_id": "dcc0d66a-a061-4b9f-8ff7-1e1c4100acb0",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval rates performance metrics claims C11-C12 as UNCERTAIN due to lack of underlying benchmarking data. Peer review R1 includes these claims in their SUPPORTED evaluation of platform capabilities, accepting them without questioning the validation methodology.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "58fa1ade-1dd2-422b-b0f0-09ae6a67713f",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "bb43aa7b-f32e-4d60-897f-297422ae7931",
+      "peer_result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "High overlap on background context claims (C5-C7, C44-C49). Both rate as SUPPORTED. OpenEval focuses on citation accuracy and field representation, while peer reviewers implicitly accept the rationale as establishing an important research problem.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "eedacd6a-cb4f-4eac-bd66-4504b1a0caea",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "ae60ec25-c090-479c-b127-a094b4162359",
+      "peer_result_id": "2a5cc7d6-e859-4bb5-8d8c-b8f2db7c09eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address multiantigen vaccination efficacy (C4, C38). Both rate as SUPPORTED. OpenEval notes mechanism is inferred rather than demonstrated, while peer reviewers accept findings as contributing important information without questioning mechanistic details. Peer R5 also includes C30 which OpenEval addresses separately in R7.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "9129600d-01d2-4bff-bb87-a54bc6d4ade4",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "a3224857-75f3-4574-b5e9-430c32e37441",
+      "peer_result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on experimental design and immunogenicity validation. OpenEval R3 covers broader methodology (C13-C16, C52-C77) rated SUPPORTED. Peer R2 focuses on immunogenicity validation (C2, C13-C22) also rated SUPPORTED, with both finding the experimental approach convincing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "f929c4fc-a2e8-4e36-98b8-aa0aae11512b",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "a3224857-75f3-4574-b5e9-430c32e37441",
+      "peer_result_id": "52cee38d-6d27-4473-927b-a8ace035cff8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R3 includes peptide selection methodology (C14-C16) as part of broader SUPPORTED methodology evaluation. Peer R6 specifically questions documentation of peptide selection rationale for these same claims, rating as UNCERTAIN due to incomplete manuscript documentation despite adequate author responses.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ce70bea3-0dd4-4283-8be9-31c1c6286d2d",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "a3224857-75f3-4574-b5e9-430c32e37441",
+      "peer_result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Substantial overlap on methodological claims (C52-C77). Both rate as SUPPORTED. OpenEval provides detailed assessment of controls and standard practices. Peer reviewers implicitly accept methods as appropriate, with no concerns raised about experimental protocols or statistical approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "c743ae4d-6d91-460d-b951-fdf30447d628",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "f5caf6e8-3463-4804-b734-21c7db27406a",
+      "peer_result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address immunogenicity assays (C17-C22). Both rate as SUPPORTED. OpenEval emphasizes appropriate statistical analysis and adequate sample size for screening. Peer reviewers explicitly state authors 'proved in vivo that in silico-predicted neoantigens can trigger antitumor response.'",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "2dcdc6a2-f998-4d48-8e9f-3f11c2d13aa6",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "f5caf6e8-3463-4804-b734-21c7db27406a",
+      "peer_result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R4 includes statistical methodology claims (C68-C69, C72) as part of immunogenicity validation rated SUPPORTED. Peer R8 includes these in broader methodological acceptance, with no concerns about statistical approaches.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "5d973a52-5ea3-4ad2-afab-e7e4fa59060d",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3",
+      "peer_result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on tumor challenge controls (C23-C26). Both rate as SUPPORTED. OpenEval emphasizes appropriate controls and statistical methods for survival data. Peer R3 accepts these findings as demonstrating RNA expression importance, focusing on biological conclusions rather than methodological details.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "8fed053f-5723-4482-9c0e-f900bfa869ac",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "a7393f9b-22b0-43ce-8798-1139a1be2cd3",
+      "peer_result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R5 includes tumor challenge methodology (C56, C58-C60, C71, C74) rated SUPPORTED. Peer R8 includes these claims in broader methodological acceptance without specific concerns about tumor challenge protocols.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "a28aeabb-4c12-41d4-8f21-e1909fa437cd",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "c3e81ad9-e739-4922-821c-5dbe48c8d689",
+      "peer_result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address variable outcomes for individual peptides (C27-C29). OpenEval rates as UNCERTAIN due to small sample sizes and lack of statistical significance. Peer R3 rates as SUPPORTED, emphasizing the biological finding that RNA expression is important rather than questioning statistical power for individual peptides.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "a2cb0dee-9b45-48b7-90c0-28e0aa6b11d8",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "05e75c10-9e10-4708-ad67-bfed6a11c323",
+      "peer_result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R7 addresses multiantigen efficacy (C30, C34) rated SUPPORTED with caveat about small sample size. Peer R3 includes C34 and related claims in broader SUPPORTED evaluation of expression level importance, accepting the efficacy findings without sample size concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "fd211c7b-1229-42c4-9f90-43708323dad0",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "05e75c10-9e10-4708-ad67-bfed6a11c323",
+      "peer_result_id": "2a5cc7d6-e859-4bb5-8d8c-b8f2db7c09eb",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address multiantigen vaccination effectiveness (C30, C34). Both rate as SUPPORTED. OpenEval emphasizes quantitative outcomes and statistical significance while noting sample size limitations. Peer reviewers accept findings as contributing important information for neoantigen selection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "74b34df0-97f7-4279-9787-e31eb18bd953",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP16",
+      "openeval_result_id": "5b012a67-8a94-4477-9c27-d0d1efd978f7",
+      "peer_result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address Wiz peptide efficacy despite weaker immunogenicity (C31, C34). Both rate as SUPPORTED. OpenEval notes this supports considering expression levels but cautions about small sample size. Peer reviewers highlight this as key evidence that RNA expression is very important for peptide selection.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ff8b6f1f-47e8-4065-868a-b56d7ab66059",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP17",
+      "openeval_result_id": "d4da1a73-db3e-48c2-a221-61a07d9db470",
+      "peer_result_id": "d91238d7-9826-4287-8154-98dd4e7de4c3",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address NAP-CNB validation (C2, C22, C35-C36). Both rate as SUPPORTED. OpenEval emphasizes correlation between predictions and outcomes while noting generalizability limits. Peer reviewers accept validation as proving in silico predictions can trigger antitumor response.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "6b12b972-9597-4ec3-93c3-4afe2d348cfa",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP18",
+      "openeval_result_id": "d4da1a73-db3e-48c2-a221-61a07d9db470",
+      "peer_result_id": "7b22b5a5-c61b-4342-9424-474620be55ea",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on platform validation implications (C35-C36). Both rate as SUPPORTED. OpenEval focuses on predictive capability validation with caveats. Peer R7 addresses broader implications for personalized vaccination, finding evidence convincing and useful for clinical translation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "d02647aa-c13b-4d3a-ab3b-2d0c5ccaed84",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP19",
+      "openeval_result_id": "325d79a7-fa95-4037-9696-7a16bd123155",
+      "peer_result_id": "08ee1f0f-93a3-480c-9aff-0709a4fb4de2",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R12 addresses quantitative effectiveness metrics (C32-C33) rated SUPPORTED with note about wide confidence intervals from small sample size. Peer R3 includes these claims in broader SUPPORTED evaluation without addressing statistical precision concerns.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "385c0d28-0c45-4ab0-a5bd-bbdf9af92830",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP20",
+      "openeval_result_id": "8a0549f7-d079-4636-8473-9424e72a3455",
+      "peer_result_id": "f9135697-5cfb-4816-ab06-c7e1e44543aa",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R13 addresses ICS methodology and bootstrap statistics (C70, C73) rated SUPPORTED but notes missing implementation details. Peer R8 includes these in broader methodological acceptance without concerns about statistical analysis documentation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "73768618-7f79-4dcc-b75c-041bf3d02a2e",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP21",
+      "openeval_result_id": "79e84ecc-74ce-4cf2-a2f0-6432ad89ef57",
+      "peer_result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address Trp2 as positive control (C39). Both rate as SUPPORTED. OpenEval validates through citation and experimental performance. Peer reviewers implicitly accept as part of background context establishing study rationale.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "ddb6f901-bccc-4434-a54c-ed4cd33ebfff",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP22",
+      "openeval_result_id": "717e0166-3897-4a66-bbde-9c69843f10bb",
+      "peer_result_id": "7b22b5a5-c61b-4342-9424-474620be55ea",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address translational implications (C51). OpenEval rates as UNCERTAIN, noting broad claims based on limited single-model validation. Peer R7 rates as SUPPORTED, accepting that findings contribute important information for personalized vaccination without questioning generalizability.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    },
+    {
+      "id": "e84980df-f537-462a-8f1c-edcc44f7b3c3",
+      "submission_id": "af6c02ab-e2db-4ec3-b54b-0bda8e3d3707",
+      "comparison_id": "CMP23",
+      "openeval_result_id": "717e0166-3897-4a66-bbde-9c69843f10bb",
+      "peer_result_id": "15b15333-2b79-4de0-be5f-cfa880c2c62c",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R16 addresses translational claims (C50-C51) rated UNCERTAIN as speculative beyond demonstrated results. Peer R9 includes C50 in background context rated SUPPORTED, accepting the motivational framing without distinguishing demonstrated results from future potential.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:29:58.712571Z"
+    }
+  ]
+}

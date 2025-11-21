@@ -1,0 +1,183 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C12",
+      "C14",
+      "C20",
+      "C67",
+      "C68"
+    ],
+    "result": "The study proposes combining Hidden Markov Models (HMM) with the Fisher kernel to predict individual traits from dynamic brain connectivity patterns. The Fisher kernel is constructed in a mathematically principled manner that preserves the structure of the HMM by respecting the Riemannian manifold geometry of the parameters. The authors claim this HMM-Fisher kernel approach accurately and reliably predicts traits from brain dynamics in fMRI data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers affirm the study's main contribution. The editor states 'the evidence supporting the authors' conclusions is compelling' and describes the work as 'important.' Two reviewers explicitly note that 'the authors addressed adequately all my comments' and 'I believe this work will be an interesting contribution to the literature,' indicating acceptance of the core methodological claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C28",
+      "C29",
+      "C34",
+      "C69"
+    ],
+    "result": "The linear Fisher kernel demonstrated higher prediction accuracy than methods that do not account for model structure (na\u00efve kernels) and time-averaged functional connectivity methods. Specifically, it significantly outperformed the linear na\u00efve kernel (p=0.031) and the Selected Edges method (p=0.031), though comparisons with some other methods were not statistically significant.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers accept these comparative findings without challenge. The editor notes the study includes 'comparing brain-behaviour prediction accuracies across a range of different traits, including out of sample assessment,' and one reviewer summarizes that 'the HMM-Fisher Kernel approach was shown to achieve higher prediction accuracy...compared to alternate kernels and measures of static connectivity,' indicating acceptance of the accuracy comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C48",
+      "C49",
+      "C50",
+      "C70"
+    ],
+    "result": "The linear Fisher kernel demonstrated superior reliability compared to other methods, with 0% risk of large errors (normalized maximum absolute error >10) and robust performance across different training set compositions. It was significantly more robust than time-averaged KL divergence (p=0.003) and Selected Edges (p<0.0001) methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the reliability findings without objection. One reviewer specifically notes the approach 'was shown to achieve higher prediction accuracy with lower variance on many individual traits,' directly acknowledging the reliability claims. The editor's statement that evidence is 'compelling' encompasses these reliability assessments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C71"
+    ],
+    "result": "Using tangent space embedding (Riemannian geometry) improved prediction accuracy for both time-varying HMM parameters and time-averaged covariance matrices. For time-averaged methods, Ridge regression in Riemannian space significantly outperformed standard Ridge regression (p=0.0313), indicating that respecting the geometric structure of predictors is important for neuroimaging prediction models.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this finding. The acceptance of the overall methodological framework and the lack of specific critique of the Riemannian geometry comparisons indicates implicit support. The editor's characterization of evidence as 'compelling' and reviewers' statements that comments were 'adequately addressed' suggest acceptance of these geometric considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Simulation studies revealed that the Fisher kernel perfectly recovered group differences in state mean amplitude (0% error) and significantly outperformed other kernels (p<0.001). However, when differences were in transition probabilities, the Fisher kernel performed significantly worse than other kernels (p<0.01). When state parameters were excluded, the Fisher kernel could recover transition probability differences, indicating it is most sensitive to state parameters rather than transition dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these simulation findings without critique. One reviewer explicitly notes 'the authors demonstrate that parameters of the HMM state matrix may be more informative in predicting behavioral/cognitive variables in this data compared to state-transition probabilities,' directly acknowledging this result. The lack of any reviewer concern about these simulations indicates acceptance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C78"
+    ],
+    "result": "In real fMRI data, state parameters (amplitude and functional connectivity patterns) were the most relevant features for Fisher kernel predictions across all behavioral traits. Removing state features significantly diminished prediction accuracy (p=0.016), while removing transition features had no significant effect (p=0.480). This pattern held across all individual variables tested.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this feature importance analysis. One reviewer's summary that 'parameters of the HMM state matrix may be more informative' directly references this finding. The absence of any reviewer questioning of the feature ablation analysis and the overall positive assessment indicate acceptance of these claims about which HMM features drive predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C66",
+      "C80"
+    ],
+    "result": "At the sample size used (N=1001), whether the HMM was trained on all subjects together versus only training subjects had no significant effect on prediction accuracy for any kernel. However, simulations showed that when training and test groups differ substantially, the Fisher kernel's performance can worsen when trained only on the training set, potentially leading to biased kernels that overestimate test subject dissimilarity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these train-test separation findings. The acceptance is implicit in the overall positive assessment and lack of specific critique. The editor's statement about 'out of sample assessment' being part of the compelling evidence suggests acceptance of the cross-validation approach and these findings about training schemes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C75"
+    ],
+    "result": "When using only one resting-state session (1200 timepoints) instead of all four sessions (4800 timepoints), the linear Fisher kernel still outperformed other HMM-based kernels, but overall accuracies were lower across all methods. This indicates that prediction of individual traits benefits from larger amounts of data per subject.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about this supplementary analysis. The implicit acceptance through overall positive assessment and lack of specific critique indicates these findings about data quantity requirements are accepted. This is treated as a supporting rather than central finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41"
+    ],
+    "result": "When HMM states were defined only in terms of covariance (functional connectivity) without mean amplitude, the Fisher kernel still outperformed other kernels at comparable accuracy levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This supplementary analysis is not specifically discussed by reviewers but is accepted implicitly through the overall positive assessment. The lack of critique and the general acceptance of the methodological framework indicate support for this robustness check.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77"
+    ],
+    "result": "Gaussian versions of the kernels were generally more error-prone and susceptible to changes in training sets compared to linear versions, although they occasionally predicted more accurately in certain runs. Additionally, Gaussian kernels are computationally more expensive, making them less practical.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings about Gaussian versus linear kernels. The acceptance is implicit in the overall positive assessment. This is treated as a methodological detail rather than a central contribution, but the lack of reviewer concern indicates acceptance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "Among the behavioral variables tested, age was best predicted, followed by language-related cognitive items (PicVocab and ReadEng, both age-adjusted and unadjusted versions).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these variable-specific findings. The editor's mention of 'a range of different traits' and one reviewer's reference to 'many individual traits' indicates acceptance of the variable-specific results. This is a descriptive finding rather than a central claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The authors acknowledge it remains to be shown how the method's performance generalizes to other datasets, including different modalities (EEG/MEG), clinical populations, older adults, different data quality, or smaller sample sizes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers implicitly accept this limitation through their overall positive assessment without demanding additional validation datasets. The editor's characterization of the work as 'timely' and of interest to the field suggests acceptance that the current demonstration is sufficient while acknowledging future work is needed.",
+    "result_type": "MINOR"
+  }
+]

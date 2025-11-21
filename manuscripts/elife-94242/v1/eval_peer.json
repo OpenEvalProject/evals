@@ -1,0 +1,216 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study recruited 8 COVID-19 patients (4 mild, 4 severe) with longitudinal blood sampling at days 0, 7, and 28 after recruitment, with an average of 5 days post-symptom onset. Severe patients experienced more extensive symptoms and required mechanical ventilation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledged the longitudinal design as a strength but raised concerns about the 'large difference in the infection timeline (onset of symptom to recruitment) between mild and severe patient cohort' which 'may bias transcriptional signatures observed between the groups.' The small cohort size (n=8) was also noted as a limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "PCA analysis revealed distinct transcriptional profiles between mild and severe patients at disease onset (D0), with 812 DEGs on D0 and 882 DEGs on D7. By D28, when most patients had recovered, transcriptional profiles converged with no differential gene expression between groups.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers described this as 'solid evidence for distinct transcriptional profiles during early COVID-19 infections' and noted that 'distinct transcriptional responses were observed between severe hospitalized patients and mild non-hospitalized individuals, especially during 0- and 7-day collection timepoints.' The convergence at D28 was not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Specific inflammatory markers (MMP9, S100A8/A9, PADI2, IL18Rap) were higher in severe patients at D0, while cytokines IFNG, CCL2, and CXCL10 showed unexpectedly low expression in severe patients compared to mild patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These differential gene expression findings were not specifically challenged by reviewers. The overall conclusion that the authors 'provide solid evidence for distinct transcriptional profiles' implicitly supports these specific molecular observations, which are part of the broader transcriptional signature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "GO and KEGG pathway analyses revealed that mild patients showed enrichment of T cell activation, NK cell-mediated cytotoxicity, and antigen processing pathways at D0 and D7, while severe patients showed enrichment of complement activation, neutrophil extracellular trap formation, and IL-17 signaling pathways.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly noted that 'signatures associated with NK cell cytotoxicity in mild and neutrophil functions in the severe group during acute infection are the chief findings reported in this manuscript.' This indicates acceptance of the pathway enrichment results as valid findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Longitudinal analysis of 828 temporally differentially expressed genes showed that mild patients exhibited sustained expression of genes involved in kinase activity and NK cell cytotoxicity (including KLRC1, KLRC3, KLRD1, KIR3DL2, NCR3, PRF1, GZMB, FASLG, ZAP70, IFNG, CD247, LAT) during acute and middle phases, while severe patients showed high neutrophil activity genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers praised the 'longitudinal measurements in individual participants at consistent collection intervals' as offering 'an added dimension to the dataset that involves temporal trajectories of genes associated with disease outcomes' and identified this as 'a key strength of the study.' The specific NK cell gene findings were not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C36",
+      "C53",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors interpret that the Th1/Th2 cell differentiation pathway was robust in mild patients and played a protective role, with better coordination between humoral and cell-mediated immunity in mild versus severe patients. They propose that early NK cell activity rather than neutrophil activity may be critical for effective adaptive immunity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers accepted the data showing pathway enrichment, these mechanistic interpretations involve speculation about causality and protective roles. Reviewers noted the study's limitations including 'heterogeneity in infection timelines and limited cohort size,' which constrain the strength of causal inferences. The interpretations are plausible but not definitively validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C46",
+      "C49"
+    ],
+    "result": "PPI network analysis identified KLRD1 (CD94), CD247, and IFNG as central hub genes in mild patients. KLRD1/CD94 was highlighted as a key node regulating both activating (NKG2E) and inhibitory (NKG2A) NK cell functions, with higher NKG2A expression in mild patients during the acute phase.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers noted the 'comprehensive' bioinformatics analyses including 'protein-protein interaction network' and stated that 'protein\u2013protein interaction analysis indicated that early-responding cytotoxic natural killer cells were associated with an effective clearance of the virus and a less severe outcome.' This indicates acceptance of the PPI findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Weighted gene co-expression network analysis (WGCNA) identified a blue module positively correlated with mild patients (containing T cell activation, NK cell cytotoxicity, and Th1/Th2 differentiation genes) and a turquoise module positively correlated with severe patients (containing neutrophil-related genes). A brown module negatively correlated with severe patients showed platelet regulation genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers specifically praised 'the use of co-expressed gene networks specific to the cohort to complement enrichment results obtained from pre-determined gene sets' as offering 'valuable insights into new associations/networks associated with disease progression.' This indicates strong support for the WGCNA findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C73",
+      "C74",
+      "C77",
+      "C78",
+      "C80"
+    ],
+    "result": "Novel NK cell receptor genes were identified as differentially expressed, including KLRK1 (NKG2D), KIR2DS4, and KLRC2 (NKG2C). NKG2D and KIR2DS4 were over-expressed in mild patients at D0 and D7, while NKG2C showed an inverted pattern with higher expression in severe patients at D28. The authors interpret NKG2C as required for effective NK cell response.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These findings are part of the broader NK cell signature that reviewers accepted. The editor's assessment that the paper is 'valuable' and provides 'solid evidence' for transcriptional profiles encompasses these specific receptor findings. The interpretation about NKG2C requirement is supported by cited literature and was not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C83",
+      "C86",
+      "C87",
+      "C91"
+    ],
+    "result": "Ten genes (FOSL1, CXCL6, CEBPB, LCN2, TNFAIP3, CXCL1, CXCL2, MMP9, S100A9, S100A8) were associated with IL-17 pathway enrichment in severe patients at D7. The authors speculate that IL-17-mediated imbalance may promote inflammatory phenotype in severe patients, while noting that Th17 cells were elevated in mild patients and Th1-related genes (IFNG, STAT4, TBX21, IL-12) were upregulated in mild patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The IL-17 pathway enrichment in severe patients was part of the accepted findings. Reviewers noted that the authors 'conclude that in mild COVID-19 infection NK cell functionality is compromised and this is connected to cytokine interactions and Th1/Th2 cell differentiation pathways cross-talk,' indicating acceptance of the Th1/Th2 findings. The mechanistic speculation was not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C56",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "The authors conclude that a regulatory transcriptional program linked to early NK cell cytotoxicity distinguishes mild from severe COVID-19, with innate immune responses being crucial for disease progression. They propose that NK cell cytotoxicity is intricately connected to Th1/Th2 differentiation and cytokine-receptor pathways, bridging innate and adaptive immunity more robustly in mild than severe patients.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers characterized the paper as 'valuable' and stated the authors 'provide solid evidence for distinct transcriptional profiles during early COVID-19 infections that may be predictive of severity.' The editor noted this is 'within the limitations of studying human patients displaying heterogeneity in infection timelines and limited cohort size,' indicating qualified support for the main conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C63",
+      "C64"
+    ],
+    "result": "The authors speculate that NK cell immune responses may be important for combating other coronaviruses and respiratory virus infections, and that neutrophil enrichment in severe cases could relate to platelet aggregation and clotting complications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are speculative extrapolations beyond the data. While reviewers accepted the core findings about NK cells in COVID-19, they did not explicitly endorse these broader speculations about other viruses or mechanistic links to coagulation. The limited cohort size noted by reviewers constrains the generalizability of such claims.",
+    "result_type": "MINOR"
+  }
+]

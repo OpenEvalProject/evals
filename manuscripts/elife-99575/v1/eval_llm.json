@@ -1,0 +1,294 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C6",
+      "C21",
+      "C22",
+      "C25",
+      "C26"
+    ],
+    "result": "The authors generated a library of 426 SNP-accessible nonsynonymous PKR variants in four selected windows of the kinase domain, with each variant linked to an average of 43 unique DNA barcodes. The experimental design focused on sites within 5 \u00c5 of eIF2\u03b1 or K3 and sites under positive selection, with strong reproducibility between biological replicates (Pearson correlation >0.98).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C21, C22, C25, and C26 collectively describe the experimental design and library generation with clear methodological details and validation. The high correlation between replicates (C26) and the use of long-read sequencing to link barcodes to variants (C25) provide strong technical support for the quality of the library.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C37",
+      "C38"
+    ],
+    "result": "The study identified multiple sites in the PKR kinase domain that harbor K3-resistant variants, with strong enrichment at sites under positive selection. Key resistant sites include Glu375 (where all variants except E375D increased K3 evasion) and multiple sites in helix \u03b1G (Glu480, Val484, Glu490, Thr491). Previously characterized K3-H47R-resistant variants were validated as K3-resistant in this screen.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C8, C27-C31, C37-C38 provide converging experimental evidence for K3-resistant variants with statistical support (Figure 2E) and structural rationalization (AlphaFold2 modeling). The validation against prior work (C27) and the statistical enrichment at positively selected sites (C38) strengthen these findings. The Glu375 results are particularly compelling with structural explanation (C29-C30).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C59"
+    ],
+    "result": "Most PKR variants maintained function when paired with nonfunctional K3\u039458, indicating that the tested regions are not highly functionally constrained. Highly constrained sites were limited and include Gly276, Gly277, Gly450, Thr451, and Thr487, mostly localized near the ATP-binding site. Proline variants generally disrupted PKR function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45 and C59 are well-supported by experimental data (Figure 3) showing that most variants retain function in the absence of K3 inhibition. The identification of specific constrained sites (C43) is supported by both experimental data and citations to prior structural work explaining their functional roles. The pattern of constraint localization near the ATP-binding site is consistent with expected kinase function requirements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Variants with low PKR functional scores versus K3 separated into two classes: those with enhanced K3 susceptibility but retained PKR function, and those with diminished kinase activity. Five sites showed especially high K3 susceptibility (Phe278, Thr373, Arg453, Phe489, Ser492), with Phe278 being conserved across vertebrates and predicted to form a pi interaction with K3-His47.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C51 describe a clear bimodal pattern in the data (Figure 4A) with structural and evolutionary context. The identification of K3-susceptible sites (C48) is supported by experimental data, and the structural explanation for Phe278 (C50) is supported by modeling and prior work (C51). The distinction between the two classes of low-scoring variants is a valuable insight from the data analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C60"
+    ],
+    "result": "PKR variants showed strong correlation in resistance between wild-type K3 and the enhanced K3-H47R variant (Spearman correlation = 0.832), indicating resilience to K3 allelic variation. However, the enhanced inhibition by K3-H47R compressed the functional score range, eliminating the significant enrichment of resistant variants at positively selected sites observed with wild-type K3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C52-C55, and C60 are supported by strong statistical correlation (C52) and experimental data across multiple figures (5A-F). The observation that positively selected sites lose their enrichment advantage against K3-H47R (C54) is an important finding, though the authors provide a reasonable explanation based on the compressed score range. The overall resilience conclusion (C60) is well-supported despite this nuance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The study identified many sites containing variants that evade K3 without losing eIF2\u03b1 targeting, with resistant variants clustering around helices \u03b1D and \u03b1G. Most sites under positive selection where improved variants were previously identified contained additional novel resistant variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 summarize key findings that are well-supported by the experimental data and comparisons to prior work. The identification of additional resistant variants at previously characterized sites (C56) validates the comprehensiveness of the approach and supports the interpretation that these are sites of general opportunity rather than isolated beneficial mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "The yeast experimental system is based on PKR toxicity in S. cerevisiae due to auto-activation and phosphorylation of yeast eIF2\u03b1, which can be partially counteracted by vaccinia K3 co-expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 describe the established yeast system used in this study, supported by citations to prior work that validated this approach. This is a well-established experimental system in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "The noncanonical helix \u03b1G in eIF2\u03b1 kinases is extended by one full turn and rotated 40\u00b0 counterclockwise with a 5 \u00c5 translation, contributing to eIF2\u03b1 binding specificity. A gradient of PKR functional scores was observed along helix \u03b1G, with highly resistant/susceptible variants at positions 480-492 shifting to neutral scores at 493-500.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 combine established structural knowledge (C32-C33, supported by citations) with experimental observations (C36) and mechanistic hypotheses (C34-C35). The structural information is well-established, and the observed gradient pattern (C36) is clearly shown in the data. The mechanistic hypotheses (C34-C35) are reasonable speculations based on structural differences between K3 and eIF2\u03b1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Variants at K3 contact sites showed significantly lower functional scores overall than non-contact sites, but the distribution was bimodal. When considering only functional variants (score > -2), K3 contact sites had significantly higher functional scores than non-contact sites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe a nuanced statistical pattern in the data with appropriate statistical testing (Hartigan's dip test for bimodality, p<0.0001). The bimodal distribution and the reversal of the relationship when filtering to functional variants is an interesting finding that suggests K3 contact sites are enriched for variants with large effects in either direction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C82",
+      "C83"
+    ],
+    "result": "AlphaFold2 predictions of PKR complexes with eIF2\u03b1 and K3 largely matched crystal structures (RMSD <1 \u00c5). The PKR-eIF2\u03b1 predicted structure likely reflects a pre-phosphorylation complex based on the low confidence score (pLDDT <50) and compact helical conformation of the eIF2\u03b1 Ser51 loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82 and C83 describe the structural modeling validation and interpretation. The RMSD values (C82) demonstrate good agreement with crystal structures, validating the modeling approach. The interpretation that the model represents a pre-phosphorylation state (C83) is a reasonable inference based on the distance Ser51 would need to travel (~17 \u00c5) and the low confidence scores for the flexible loop region.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "PKR shows little allelic diversity in the human population (all nonsynonymous variants rare in gnomAD) but exhibits sequence diversity across species. Beneficial PKR variants that evade pseudosubstrate inhibitors would be expected to be dominant based on the mechanism of eIF2\u03b1 phosphorylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61 and C62 are supported by citations to databases and prior evolutionary studies. However, C63 is speculation about dominance that, while mechanistically reasonable (supported by citation about eIF2\u03b1 phosphorylation), lacks direct experimental evidence in this study. The caveat about under-studied populations (C61) appropriately acknowledges limitations in the human diversity data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Deep mutational scanning and positive selection analysis are complementary approaches for identifying genetically pliable sites. Deep mutational scanning can illuminate sites of opportunity against pathogens that haven't exerted historical pressure and can test insertions/deletions, but is limited to testing variants in a restricted set of conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C67 provide a balanced methodological discussion supported by citations to prior work. The authors appropriately acknowledge both strengths (C65-C66) and limitations (C67) of the deep mutational scanning approach. This is a fair assessment of the complementary nature of the two approaches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The structural component most diverged between K3 and eIF2\u03b1 (a rigid helix in K3 vs. flexible loop in eIF2\u03b1) interacts with the highly constrained PKR activation loop, while K3 residues 72-83 (highly identical to eIF2\u03b1) interact with PKR's divergent helix \u03b1G. This suggests vaccinia K3 may have been evolutionarily constrained to maintain broad host range compatibility.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68 and C69 are supported by structural analysis and sequence alignment data. However, claims C70-C72 about evolutionary constraints on K3 and vaccinia host range are speculative. While the speculation is reasonable and supported by citations about vaccinia and poxvirus host ranges (C71-C72), it remains a hypothesis without direct experimental support in this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The genetic pliability of PKR's kinase domain resembles that of TRIM5\u03b1, with both having access to 'rolling hills' of resistant variants. However, unlike TRIM5\u03b1, PKR must balance pathogen conflict with enzymatic function. K3-resistant sites in PKR were found within secondary structures (helices \u03b1D and \u03b1G), contrasting with TRIM5\u03b1 and other immune proteins where resistant sites are in flexible loops.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C77 provide a thoughtful comparison to other immune proteins supported by citations. The comparison to TRIM5\u03b1 (C74-C75) is supported by prior work and data in Figure 6B. The distinction about enzymatic function (C76) and structural context (C77) are important observations that highlight unique features of PKR's evolutionary strategy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Unlike ACE2 (where positively selected sites are distant from the catalytic domain), PKR maintains pliability in the eIF2\u03b1-binding region despite its criticality. This pliability is likely enabled by the flexibility of eIF2\u03b1's Ser51 loop, which is unstructured in the PKR-eIF2\u03b1 co-crystal.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 provide a comparison to ACE2 supported by citations. Claims C80-C81 present a key conclusion about PKR pliability with a mechanistic explanation. The conclusion (C80) is well-supported by the experimental data, and the mechanistic explanation (C81) is reasonable speculation supported by structural information from cited work, though it remains somewhat speculative about the exact mechanism enabling pliability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "Evolutionary arms races arise at host-viral protein interfaces, with PKR serving as a key example. PKR is a mammalian innate immune kinase that detects viral replication and halts protein synthesis by phosphorylating eIF2\u03b1. Despite being targeted by many viral antagonists, PKR has rapidly evolving residues at the eIF2\u03b1-binding interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 provide established background knowledge about PKR and evolutionary arms races, supported by the broader scientific literature and specific citations (C5 cites Rothenburg et al., 2009 for positive selection). This background is well-established in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "PKR contains dsRNA-binding domains and a kinase domain. Upon binding dsRNA (a hallmark of viral infection), PKR undergoes homodimerization and autophosphorylation, then phosphorylates eIF2\u03b1 on Ser51, halting protein synthesis. Vertebrate PKR has many positively selected sites at the eIF2\u03b1-binding interface, despite eIF2\u03b1 being under purifying selection. Many viruses encode PKR inhibitors, including vaccinia K3 which mimics eIF2\u03b1 structure. Previous studies identified some single-residue variants that resist K3 while maintaining eIF2\u03b1 recognition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C20 provide comprehensive background on PKR mechanism, evolution, and viral antagonism, all supported by appropriate citations to prior work. This establishes the scientific context and rationale for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C73"
+    ],
+    "result": "PKR helix \u03b1G plays a critical role in eIF2\u03b1 binding and phosphorylation by inducing a conformational shift in eIF2\u03b1 that moves the Ser51 phospho-acceptor site into PKR's ATP-binding site.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C73 describes established mechanistic knowledge about PKR function. This is well-supported by prior structural and biochemical studies in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The eIF2\u03b1-binding surface of PKR is highly malleable, potentiating its evolutionary ability to combat viral inhibition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is the main conclusion of the paper, well-supported by the comprehensive experimental data showing many functional variants at the eIF2\u03b1-binding interface that can evade K3 inhibition. This conclusion integrates findings from multiple experimental conditions and is consistent with all the supporting data.",
+    "result_type": "MAJOR"
+  }
+]

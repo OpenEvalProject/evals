@@ -1,0 +1,172 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C31",
+      "C32",
+      "C33",
+      "C69",
+      "C74",
+      "C83"
+    ],
+    "result": "RiPA successfully recapitulates the differential E3 ligase selectivity observed with PROTACs: VHL, but not Cereblon, efficiently degrades WDR5, while both E3 ligases degrade Aurora A. This matches previously published PROTAC studies and demonstrates RiPA's predictive power for identifying suitable E3 ligase-target pairs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers affirm the technology's value and find the data convincing. The editor states 'The presented data are convincing' and Reviewer 1 notes the study 'includes essential controls' and confirms 'the assay's utility and accuracy.' Reviewer 2 acknowledges 'the study's strength lies in its practical application' and that the approach 'effectively mimics the potential action of a PROTAC.' No concerns were raised about these core validation findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C66"
+    ],
+    "result": "RiPA requires at least 10-fold excess of E3 ligase-encoding plasmid over target protein plasmid for efficient degradation. When this ratio is met, rapamycin induces marked reduction in target protein levels (50.2% \u00b1 5.8% for WDR5), but not at equimolar ratios.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these optimization findings without challenge. Reviewer 1 specifically praises 'essential controls in experiments' including testing different conditions. The optimization parameters are treated as methodological details that support the assay's functionality rather than contested findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C67",
+      "C68"
+    ],
+    "result": "Using lysine-less versions of luciferase and FKBP12 (all 15 lysines mutated to arginine), RiPA still induces WDR5 degradation comparable to lysine-containing tags, demonstrating that VHL directly ubiquitinates WDR5 rather than the reporter tags.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly commends 'creating and testing K-less vectors to exclude the possibility of luciferase or FKBP12 ubiquitination instead of WDR5 (the target protein)' as an essential control. This validation experiment is accepted without critique and strengthens confidence in the assay's specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C39",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "RiPA demonstrates differential E3 ligase efficacy across multiple targets: both VHL and CRBN degrade Aurora A efficiently, VHL is more effective than CRBN for Aurora B, and VHL efficiently degrades KRASG12D while CRBN shows only minor activity. Proteasomal inhibitors block degradation, confirming the mechanism.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as demonstrating the assay's broad applicability. Reviewer 1 notes that 'Different E3 ligases are tested using previously identified target proteins, confirming the assay's utility and accuracy.' The mechanistic validation with inhibitors is not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C50",
+      "C51",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "RiPA identifies FBXL12 as a novel E3 ligase for PROTAC development. FBXL12 shows superior activity to VHL in degrading WDR5 and comparable potency for KRASG12D, and successfully degrades every target protein tested, suggesting it may be a promising new E3 ligase for PROTACs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly highlights as a strength that 'The study identified a \"new\" E3 ligase that is suitable for PROTAC technology (FBXL).' The editor notes this contributes to the technology's value for 'identification of E3-ubiquitin ligases.' No concerns are raised about these findings, though the practical PROTAC development remains to be demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C73"
+    ],
+    "result": "Linker length between target protein and FKBP12 affects degradation efficiency in RiPA. The construct without any linker shows the best expression and most efficient degradation by FBXL12, with degradation decreasing as linkers become longer, possibly mimicking cooperativity in PROTAC-induced ternary complex formation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 commends 'testing different linkers (which may influence the efficacy of the degradation)' as an essential control. The linker optimization findings are accepted without critique and support the assay's ability to model PROTAC behavior.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Engineered luciferase variants with additional lysine residues can stratify E3 ligase degradative potential. Lysines added as flexible tails (LucK3, LucK6) dramatically increase degradation by FBXL12, with >60% of LucK6 degraded within 2 hours, while surface-positioned lysines (LucV1, LucV2) show similar degradation to wild-type.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as extending the assay's utility. The data are treated as demonstrating additional capabilities of the system. No concerns are raised about the lysine-rich reporter approach or its interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C45",
+      "C56"
+    ],
+    "result": "RiPA can quantitatively measure target degradation by E3 ligases when brought into proximity, is capable of inducing target ubiquitylation, can predict suitable target/E3 ligase pairs, and allows kinetic measurements in living cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states the technology is 'valuable' and 'presented data are convincing.' Reviewer 1 describes it as 'an elegant assay that is scalable, easy-to-use and applicable to a wide range of cellular models' that 'allows for the quantitative validation' and 'enables the measurement of kinetics in living cells.' Reviewer 2 affirms 'the study's strength lies in its practical application.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C84"
+    ],
+    "result": "RiPA has limitations: suitable target/E3 ligase pairs may fail if protein tags interfere, and successful RiPA pairs may not translate to PROTACs if appropriate chemical mimics cannot be found. However, RiPA can identify inappropriate E3 ligases and is anticipated to streamline PROTAC development efforts.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge limitations but with mixed emphasis. The editor notes 'additional work will be needed to optimize for high-throughput evaluation.' Reviewer 1 states 'It is not clear how feasible it would be to adapt the assay for high-throughput screens.' Reviewer 2 notes 'its application in a discovery setting, particularly for high-throughput or unbiased E3-ub ligase identification, may pose challenges' and 'PROTAC design would still be empirical,' though acknowledges 'the authors now discuss these potential difficulties' and 'provide some discussion of this limitation.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C23",
+      "C63"
+    ],
+    "result": "Current PROTAC development faces major limitations: most PROTACs use only VHL and CRBN despite 600+ E3 ligases; development is largely empirical with few design rules; many campaigns fail due to E3 ligase-target incompatibility; and certain E3 ligases are better suited for specific targets than others.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this background context without challenge. Reviewer 1 states 'The authors have addressed the crucial needs that arise during PROTAC development. In the introduction, they nicely describe the advantages and disadvantages of the PROTAC technology and explain why such an assay is needed.' This contextual framing is treated as established knowledge motivating the study.",
+    "result_type": "MINOR"
+  }
+]

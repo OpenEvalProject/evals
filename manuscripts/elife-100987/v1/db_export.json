@@ -1,0 +1,2372 @@
+{
+  "submission": {
+    "id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:35:52.610250Z",
+    "updated_at": "2025-11-21T22:35:52.610250Z"
+  },
+  "content": [
+    {
+      "id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "content_type": "manuscript",
+      "content_text": "# TRPML1 gating modulation by allosteric mutations and lipids\n\n## Authors\n\n- Ninghai Gan<sup>1</sup> ([ORCID: 0000-0001-7238-4056](https://orcid.org/0000-0001-7238-4056))\n- Yan Han<sup>2</sup> ([ORCID: 0000-0002-1207-7756](https://orcid.org/0000-0002-1207-7756))\n- Weizhong Zeng<sup>1</sup>\n- Youxing Jiang<sup>1</sup> ([ORCID: 0000-0002-1874-0504](https://orcid.org/0000-0002-1874-0504)) \u2020\n\n### Affiliations\n\n1. Howard Hughes Medical Institute and Department of Physiology, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))\n2. Department of Biophysics, University of Texas Southwestern Medical Center Dallas United States ([ROR:05byvp690](https://ror.org/05byvp690))\n\n\u2020 Corresponding author\n\n## Abstract\n\nTransient Receptor Potential Mucolipin 1 (TRPML1) is a lysosomal cation channel whose loss-of-function mutations directly cause the lysosomal storage disorder mucolipidosis type IV (MLIV). TRPML1 can be allosterically regulated by various ligands including natural lipids and small synthetic molecules and the channel undergoes a global movement propagated from ligand-induced local conformational changes upon activation. In this study, we identified a functionally critical residue, Tyr404, at the C-terminus of the S4 helix, whose mutations to tryptophan and alanine yield gain- and loss-of-function channels, respectively. These allosteric mutations mimic the ligand activation or inhibition of the TRPML1 channel without interfering with ligand binding and both mutant channels are susceptible to agonist or antagonist modulation, making them better targets for screening potent TRPML1 activators and inhibitors. We also determined the high-resolution structure of TRPML1 in complex with the PI(4,5)P2 inhibitor, revealing the structural basis underlying this lipid inhibition. In addition, an endogenous phospholipid likely from sphingomyelin is identified in the PI(4,5)P2-bound TRPML1 structure at the same hotspot for agonists and antagonists, providing a plausible structural explanation for the inhibitory effect of sphingomyelin on agonist activation.\n\n## Introduction\n\nTransient Receptor Potential Mucolipin 1 (TRPML1) is a Ca2+-permeable, non-selective, lysosomal cation channel ubiquitously expressed in mammalian cells (Dong et al., 2008; LaPlante et al., 2002; Sun et al., 2000). TRPML1 plays critical roles in many important cellular activities including lipid accumulation (Shen et al., 2012), signaling transduction (Kilpatrick et al., 2016), lysosome trafficking (Venkatachalam et al., 2015), and autophagy (Scotto Rosato et al., 2019). The loss-of-function mutations in TRPML1 directly cause the lysosomal storage disorder mucolipidosis type IV (MLIV), a neurodegenerative disease characterized by abnormal neurodevelopment, retinal degeneration, and iron-deficiency anemia (Bargal et al., 2000; Bassi et al., 2000; Gan and Jiang, 2022; Nilius et al., 2007). Because of its physiological importance and direct disease association, TRPML1 has been extensively studied and is a potential target for drug development.\n\nTRPML1 can be regulated by various ligands including both natural lipids and small synthetic molecules. The channel can be activated by the lysosome-specific phosphatidylinositol 3,5-bisphosphate (PI(3,5)P2) (Dong et al., 2010), but inhibited by the plasma membrane-enriched PI(4,5)P2 (Zhang et al., 2012). Given its pharmacological importance, many synthetic agonists and antagonists have been developed for TRPML1 activation and inhibition (Chen et al., 2014; Grimm et al., 2010; Samie et al., 2013; Shen et al., 2012). Interestingly, the mTOR (Mammalian target of rapamycin) inhibitor rapamycin and its derivatives can also synergistically activate TRPML1 with PI(3,5)P2 (Gan et al., 2022; Zhang et al., 2019). Recent studies also suggest that sphingomyelin, a major membrane component, can also modulate the TRPML1 activation (Prat Castro et al., 2022; Shen et al., 2012).\n\nSeveral TRPML1 channel structures in both open and closed conformations with various ligands have been determined (Chen et al., 2017; Fine et al., 2018; Gan et al., 2022; Schmiege et al., 2017; Schmiege et al., 2021), revealing some unique features of the TRPML1 channel. Firstly, all ligand-binding sites in the structures converge to two hot spots: The N-terminal poly-basic pocket for PIP2 and the inter-subunit interface in the middle of the membrane between S5 and S6 for agonists, antagonists, and rapamycin (Fine et al., 2018; Gan et al., 2022; Schmiege et al., 2017; Schmiege et al., 2021; Figure 1a). Secondly, all open TRPML1 structures are almost identical regardless of the activation stimuli. Thirdly, structural comparison between the open and closed conformation illustrates that TRPML1 gating is not merely a local conformational change but involves the global movement of almost the entire channel mediated by tight inter- and intra-subunit packing within the channel tetramer (Video 1). Finally, the necessity of global movement for channel activation underlies the allosteric regulation of TRPML1 by two distantly bound ligands - that is, the ligand-induced local conformational change at one site can propagate to the other site and thereby affect the binding of the other ligand (Gan et al., 2022). The high allostery of TRPML1 gating would allow us to design allosteric mutations that are remote from the channel pore but can still stabilize the channel in an open or closed state, mimicking the ligand activation or inhibition of the channel. To this end, we identified Tyr404 on the S4 helix as an allosteric site whose mutation can promote or inhibit TRPML1 gating. Furthermore, we also determined a high-resolution structure of PI(4,5)P2-inhibited TRPML1 and demonstrated that in addition to competing against PI(3,5)P2 activator for the same site, PI(4,5)P2 also allosteric inhibits small molecule agonist by stabilize the channel in the closed conformation. Furthermore, the high-resolution PI(4,5)P2-bound TRPML1 structure also revealed a bound phospholipid likely from sphingomyelin at the agonist/antagonist site, providing a plausible explanation for sphingomyelin inhibition of TRPML1.\n\n![Figure 1.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig1-v1.jpg)\n\n**Figure 1.:** (a) The structure of PI(3,5)P2/Temsirolimus-activated TRPML1 (PDB code:7SQ9) illustrating the two hot spots for ligand binding. Temsirolimus (Tem) is a rapamycin analog. (b) Ligand-induced conformational change and the zoomed-in view of the Y404 movement. Only the boxed region in (a) is shown in the structural comparison between the open (green) and closed (blue) structures. Red arrows mark the bending of S4 and upward movement of S1. (c) Sample traces of Y404W gain-of-function mutant recorded using patch clamp in whole-cell configuration with (left) or without (right) 100 \u00b5M PI(3,5)P2 in the pipette (cytosolic). Tem or agonist ML-SA1 was introduced in the bath solution (extracellular/luminal). (d) Sample traces of Y404W inhibition by antagonists ML-SI1 (left) and ML-SI3 (right) recorded using patch clamp in whole-cell configuration. The antagonists were introduced in the bath solution (extracellular/luminal). (e) Sample traces of Y404A loss-of-function mutant with 100 \u00b5M PI(3,5)P2 in the pipette (cytosolic). Tem or ML-SA1was introduced in the bath solution (extracellular/luminal). (f) ML-SA1 activation of TRPML1(WT) and Y404A mutant measured at \u2013140 mV. Data for WT is least square fits to the Hill equation with EC50=4.8 \u00b1 0.7 \u00b5M, n=0.93 \u00b1 0.10. Data points are mean \u00b1 SEM (n=5 independent experiments). (g) Current density of wild-type and mutant TRPML1 at \u2013140 mV with and without 10 \u00b5M ML-SA1. Data points are mean \u00b1 SEM (n=5 independent experiments).\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (a) Time course plots of Y404W recorded using patch clamp in whole-cell configuration with (left) or without (right) 100 \u00b5M PI(3,5)P2 in the pipette (cytosolic). Tem or agonist ML-SA1 was introduced in the bath solution (extracellular/luminal). (b) Time course plots of Y404W inhibition by antagonists ML-SI1 (left) and ML-SI3 (right) recorded using patch clamp in whole-cell configuration. The antagonists were introduced in the bath solution (extracellular/luminal). (c) Time course plots of Y404A with 100 \u00b5M PI(3,5)P2 in the pipette (cytosolic). Tem or ML-SA1was introduced in the bath solution (extracellular/luminal).\n\n![Video 1.](https://cdn.elifesciences.org/articles/100987/elife-100987-video1.mp4.jpg)\n\n## Results\n\n### Allosteric mutations at Tyr404 recapitulate TRPML1 gating\n\nOur previous study on the allosteric activation of TRPML1 by PI(3,5)P2 and rapamycin demonstrated that ligand-induced local conformational changes can propagate to distal parts of the channel through tight inter- and intra-subunit packing within the channel tetramer, allowing the channel to integrate the stimuli from these two distantly bound ligands. The PI(3,5)P2 and rapamycin-induced local conformational changes converge to the same driving force on S4 helix, resulting in a slight bend of the C-terminal half of the S4 that facilitates the channel opening (Gan et al., 2022; Figure 1b). A key interaction coupled to the S4 bending movement is the insertion of Tyr404 side chain into a pocket surrounded by S1, S3, and S4 helices where its aromatic ring is sandwiched between the side chains of Leu66 and Arg403. We hypothesized that mutations at Tyr404 that stabilize its sidechain in the pocket would facilitate channel activation; conversely, mutations that destabilize its sidechain in the pocket would negatively modulate the channel activation. To test this, we replaced Tyr404 with tryptophan and alanine, respectively, and measured the effect of these mutations on channel activity. As illustrated in the electrophysiological recordings using whole-cell patches, the Y404W mutant elicits large inward-rectifying currents without any ligands, indicating that Y404W is a gain-of-function (GOF) mutant (Figure 1c and Figure 1\u2014figure supplement 1a). Adding extra activation ligands such as PI(3,5)P2, rapamycin, or small molecule agonist ML-SA1 only marginally increases the currents. The Y404W GOF mutant mimics a ligand-activated channel, yet its mutation site is remote from the pore domain and the channel can still be allosterically inhibited by small molecule antagonists (ML-SI1 and ML-SI3; Figure 1d and Figure 1\u2014figure supplement 1b). This is distinct from other gain-of-function mutants in which proline substitutions on the S5 helix lock the pore in an open state and the channels are no longer susceptible to antagonist inhibition (Dong et al., 2009; Grimm et al., 2007; Kim et al., 2007; Nagata et al., 2008; Xu et al., 2007).\n\nY404A, on the other hand, represents a loss-of-function mutant and elicits much lower currents even in the presence of potent agonist ML-SA1 (Figure 1e and Figure 1\u2014figure supplement 1c). While ML-SA1 can potently activate the wild-type TRPML1 channel, the Y404A mutation mimics PI(4,5)P2 inhibition and allosterically inhibits ML-SA1 binding, significantly decreasing the efficacy of ML-SA1 activation (Figure 1f & g).\n\n### Structure of GOF Y404W mutant\n\nTo reveal the structural basis underlying the channel activation of the Y404W mutant, we determined its structure in the absence of any ligands to 2.86 \u00c5 resolution (Figure 2\u2014figure supplements 1\u20132, Supplementary file 1 and Materials and methods). As expected, the Y404W mutant adopts an open conformation with a structure almost identical to other ligand-activated open TRPML1, consistent with its GOF property (Figure 2a and Figure 2\u2014figure supplement 2b). Like Tyr404 in the wide-type open TRPML1, the side chain of W404 in the mutant is inserted into the pocket surrounded by S1, S3, and S4 helices and sandwiched between Leu66 and Arg403 (Figure 2b). However, the larger indole ring of Trp404 provides a better spatial fitting into the pocket than the phenol ring of Tyr404 and several surrounding residues (Lys65, Gln69, and Leu358) provide extra van der Waals contacts to the Trp404 side chain. Thus, by enhancing the stability of the aromatic side chain inside the pocket, Y404W mutation facilitates the bending of S4 which in turn propagates to the pore through the S4-S5 linker and activates the channel (Gan et al., 2022). The Y404W mutant structure demonstrates that the sidechain packing in the pocket is essential for stabilizing the open channel and the lack of such packing capacity in the Y404A mutant with a small side-chain likely destabilizes the open conformation, yielding a loss-of-function channel. It is worth noting that Arg403 plays two essential roles in TRPML1 gating: its side chain is part of the pocket that stabilizes Tyr404 in the open state; its guanidinium group forms a salt bridge with the C3 phosphate group of PI(3,5)P2 upon ligand activation (Gan et al., 2022). As expected, Arg403 is highly conserved in the TRPML channel family, and its R403C variant identified in an MLIV patient is a loss-of-function mutant (Chen et al., 2014).\n\n![Figure 2.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig2-v1.jpg)\n\n**Figure 2.:** (a) Structural comparison between PI(3,5)P2/Tem-bound open structure (green) and the Y404W mutant structure (orange). Only the front subunit and the neighboring S1-S4 regions are highlighted in color for clarity. (b) Zoomed-in views of the regions surrounding Y404 (WT, green) and W404 (mutant, orange).\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig2-figsupp1-v1.jpg)\n\n**Figure 2\u2014figure supplement 1.:** (a) Representative micrograph. (b) Flow chart of the cryo-EM data processing procedure and the Euler angle distribution of particles used in the final three-dimensional reconstruction. Selected 2D class averages are shown. The final structure represents an open state. (c) Fourier Shell Correlation curves showing the overall resolution at FSC = 0.143.\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (a) Sample density maps of the Y404W open TRPML1 structure contoured at 4 \u03c3. (b) Pore radius along the central axis in the open and closed states. PDB codes for apo closed and PI(3,5)P2/Tem-bound open are 7SQ8 and 7SQ9, respectively. (c) EM density map surrounding W404 region shown in grey mesh and contoured at 4\u03c3, key W404-interacting residues are shown in cyan. The local resolution of this region is 3.2 \u00c5.\n\n### Structure of TRPML1 in PI(4,5)P2-bound closed state\n\nWhile PI(4,5)P2 inhibits PI(3,5)P2 activation of TRPML1 by directly competing for the same binding site, it also allosterically inhibits the agonist-activated channel (Chen et al., 2017), suggesting that PI(4,5)P2 binding stabilizes the TRPML1 channel in a closed conformation. A previous low-resolution structure of TRPML1 in complex with PI(4,5)P2 revealed the approximate location of PI(4,5)P2 binding but failed to explain how its binding stabilizes the channel in the closed state and allosterically inhibits the agonist-activated channel (Fine et al., 2018). To address this, we determined the structure of PI(4,5)P2-bound TRPML1 at 2.46 \u00c5 (Figure 3a, Figure 2\u2014figure supplement 2, Figure 3\u2014figure supplements 1\u20132, Supplementary file 1 and Materials and methods). The density from the IP3 head group of PI(4,5)P2, especially the phosphate groups on C4 and C5 of the inositol, can be clearly defined in the EM map (Figure 3a\u2013c). The phosphatidyl group, however, is flexible and could not be resolved in the structure. While PI(4,5)P2 binding overlaps with that of PI(3,5)P2, their IP3 head group positions are quite different (Figure 3b\u2013e). In the PI(3,5)P2-bound structure (Figure 3d), the head group protrudes deep into the N-terminal PIP2-binding pocket enclosed by two short clamp-shaped helices of H1 and H2, and the cytosolic ends of S1 and S2 helices, allowing its C3 phosphate to engage in direct interactions with Arg403 and Tyr355 to facilitate channel activation (Gan et al., 2022). These C3 phosphate-mediated interactions are absent in PI(4,5)P2-bound structure. Instead, the head group of PI(4,5)P2 is trapped at the entrance of the pocket and forms a bridge between S1 and S2 with its phosphate groups stabilized by positively charged residues from H2, S1, and S2 (Figure 3b and c). A major conformational change between the open and closed states is an upward movement of the S1 helix, a prerequisite for Tyr404 insertion between Leu66 and Arg403 and the subsequent bending of S4 (Figure 3e). Therefore, the PI(4,5)P2-mediated bridging interaction between S1 and S2 would hinder the S1 movement and stabilize the channel in the closed conformation, exerting allosteric inhibition on agonist activation.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig3-v1.jpg)\n\n**Figure 3.:** (a) Overall structure of PI(4,5)P2-bound TRPML1 with the front subunit shown in orange cartoon and the rest shown as grey surface representation. Density for PI(4,5)P2 head group is shown in blue surface. (b) Zoomed-in view of the PI(4,5)P2-binding pocket with the density of its IP3 head group shown in blue surface. (c) Zoomed-in view of the PI(4,5)P2-binding pocket with side chains of IP3-interacting residues shown as yellow sticks. (d) Zoomed-in view of the IP3 position in the PI(3,5)P2-bound open TRPML1 structure. The C3 phosphate group directly interacts with Y355 and R403. (e) Comparison of the head group positions in PI(3,5)P2-bound open (green) and PI(4,5)P2-bound closed (orange) structures. The inositol rings PI(3,5)P2 and PI(4,5)P2 are colored yellow and cyan, respectively. The red arrow marks the upward movement of S1 from closed to open conformation.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** (a) Representative micrograph. (b) Flow chart of the cryo-EM data processing procedure and the Euler angle distribution of particles used in the final three-dimensional reconstruction. Selected 2D class averages are shown. The final structure represents an open state. (c) Fourier Shell Correlation curves showing the overall resolution at FSC = 0.143.\n\n![Figure 3\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig3-figsupp2-v1.jpg)\n\n### Endogenous sphingomyelin lipid at the agonist- and antagonist-binding site\n\nThe high-resolution structure of PI(4,5)P2-bound closed TRPML1 also reveals a well-defined density from an endogenous lipid molecule at the inter-subunit interface between S5 and S6 (Figure 4a). The lipid contains a choline head group and is likely a phosphatidylcholine (PC) or sphingomyelin (SM), the two main choline-containing phospholipid components of the outer leaflet of the plasma membrane. The tail from one of the lipid alkyl chains penetrates deep into an inter-subunit pocket in the middle of the membrane, overlapping with the hotspot for both channel agonist and antagonist (Figure 4\u2014figure supplement 1). This alkyl chain has to be displaced upon agonist or antagonist binding, suggesting that the lipid occupation would compete against agonist or antagonist binding. We suspect this bound lipid is sphingomyelin which is also enriched in the endocytic recycling compartment and has been shown to inhibit TRPML1 activity (Prat Castro et al., 2022; Schuchman, 2010; Shen et al., 2012; Slotte, 2013). Key evidence to support SM inhibition is that its enrichment can reduce the agonist (i.e. SF-51 and ML-SA1) activation of TRPML1 (Shen et al., 2012). Indeed, we did observe the reduction of SF-51-activated TRPML1 current upon SM enrichment (Figure 4b and Figure 4\u2014figure supplement 2a). However, based on our structure, we hypothesize that the role of sphingomyelin is to stabilize rather than directly inhibit the channel; the SM inhibition upon enrichment is an indirect effect attributable to its competition against agonist binding that reduces the apparent efficacy of agonist activation. This hypothesis would imply that SM can also function as an indirect activator by competing against antagonists and reducing their effectiveness in channel inhibition. The gain-of-function Y404W mutant, which is still susceptible to antagonist inhibition, provides a good system to test that. As shown in Figure 4c and Figure 4\u2014figure supplement 2b, SM shows no obvious inhibition to the mutant channel activity, whereas antagonist ML-SI1 markedly reduces the mutant channel current; upon SM enrichment, ML-SI1 inhibition is mitigated resulting in a recovery of the channel current. This observation confirms the competitive binding of SM at the hot spot for both agonists and antagonists.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig4-v1.jpg)\n\n**Figure 4.:** (a) Overall structure of PI(4,5)P2-bound TRPML1 and the zoomed-in view of the lipid-binding site. The lipid density is shown as blue surface and modeled as sphingomyelin (SM). The side chains of lipid-interacting residues are shown as yellow sticks. (b) SM inhibition effect on SF-51-activated wild-type TRPML1. (c) SM activation effect on ML-SI1-inhibited Y404W mutant. Currents shown in (b) and (c) were recorded using patch clamp in whole-cell configuration with pH 4.6 in the bath solution as the adverse effect of SM on agonist or antagonist is subtle and is measurable only at low luminal pH.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig4-figsupp1-v1.jpg)\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/100987/elife-100987-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (a) Sphingomyelin inhibition effect on SF-51-activated wild-type TRPML1. (b) SM activation effect on ML-SI1-inhibited Y404W mutant. Currents shown in (a) and (b) were recorded at \u2013140 mV using patch clamp in whole-cell configuration with pH 4.6 in the bath solution as the adverse effect of SM on agonist or antagonist is subtle and is measurable only at low luminal pH.\n\n## Discussion\n\nIn this study, we designed and analyzed the allosteric mutations at Tyr404 that recapitulate the gating of TRPML1. Replacing this tyrosine with tryptophan or alanine stabilizes or destabilizes the channel in the open state, yielding a gain- or loss-of-function mutant. The structure of the Y404W mutant adopts the same open structure as ligand-activated TRPML1, once again highlighting the global conformational change for TRPML1 channel activation. As Tyr404 is distant from the hot spots for ligand binding, the two gain- and loss-of-function mutants can still be allosterically modulated by antagonists and agonists. Thus, these allosteric mutants can mimic ligand-activated or inhibited TRPML1 without interfering with ligand binding, making them better targets for screening potent small molecule TRPML1 inhibitors and activators. We also investigated the structural basis of PI(4,5)P2 inhibition of TRPML1 by determining the PI(4,5)P2-bound structure, revealing a different binding mode by its head group at the N-terminal polybasic site than that of PI(3,5)P2. The head group of PI(4,5)P2 mediates a bridging interaction between S1 and S2 and stabilizes TRPML1 in a closed conformation. In the high-resolution PI(4,5)P2-bound TRPML1 structure, we also visualize clear density from a choline-containing phospholipid at the same site for agonists or antagonists. In light of its high membrane abundance and competing effect on agonist activation and antagonist inhibition, this bound lipid is likely from sphingomyelin.\n\n## Materials and methods\n\n**Key resources table**\n\n\n<table>\n  <thead>\n    <tr>\n      <th>Reagent type (species) or resource</th>\n      <th>Designation</th>\n      <th>Source or reference</th>\n      <th>Identifiers</th>\n      <th>Additional information</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <td>Strain, strain background (Escherichia coli)</td>\n      <td>TOP10</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 18258012</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Strain, strain background (E. coli)</td>\n      <td>DH10bac</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 10361012</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Spodoptera frugiperda)</td>\n      <td>Sf9 cells</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 11496015; RRID:CVCL_0549</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Cell line (Homo sapiens)</td>\n      <td>FreeStyle 293 F cells</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# R79007; RRID:CVCL_D603</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Transfected construct (H. sapiens)</td>\n      <td>pEZT-BM-mTRPML1-CHis</td>\n      <td>This paper</td>\n      <td>N/A</td>\n      <td>Construct made to express the protein in HEK293F cells</td>\n    </tr>\n    <tr>\n      <td>Recombinant DNA reagent</td>\n      <td>pEZT-BM</td>\n      <td>DOI:10.1016 /j.str.2016.03.004</td>\n      <td>Addgene:74099</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mcoln1_F_primer: cgCTCGAG gccgccaccATGGCCACCCCGGCGGGC</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mcoln1_R_primer: at gcggccgcTCAGTTCACCAGCAGCGA</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mcoln1_Y404A_F_primer: cttgtggaaaaatgtcagggcgcgaatgacaccgacccag</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mcoln1_Y404A_R_primer: ctgggtcggtgtcattcgcgccctgacatttttccacaag</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mcoln1_Y404W_F_primer: cttgtggaaaaatgtcagccagcgaatgacaccgaccc</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Sequence-based reagent</td>\n      <td>Mcoln1_Y404W_R_primer: gggtcggtgtcattcgctggctgacatttttccacaag</td>\n      <td>Integrated DNA Technologies</td>\n      <td>N/A</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sodium Butyrate</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# 303410</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>n-dodecyl-\u03b2-D-maltopyranoside</td>\n      <td>Anatrace</td>\n      <td>Cat# D310</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>glyco-diosgenin</td>\n      <td>Anatrace</td>\n      <td>Cat# GDN101</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ML-SA1</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# SML0627</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ML-SI1</td>\n      <td>Medchemexpress</td>\n      <td>Cat# HY-134818</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>PI(4,5)P2 diC8</td>\n      <td>Echelon</td>\n      <td>Cat# P-4508</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Sphingomyelin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# 567706</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Temsirolimus</td>\n      <td>Fisher Scientific</td>\n      <td>Cat# 52-641-0</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>ML-SI3</td>\n      <td>Selleckchem</td>\n      <td>Cat# E0026</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>SF-51</td>\n      <td>Chemspace</td>\n      <td>Cat# CSSS00121681914</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Thrombin</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# T4648</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MotionCor2</td>\n      <td>Zheng et al., 2017</td>\n      <td></td>\n      <td>https://emcore.ucsf.edu/ucsf-software</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>GCTF</td>\n      <td>Zhang, 2016; JackZhang-Lab, 2021b</td>\n      <td></td>\n      <td>https://github.com/JackZhang-Lab/GCTF</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>RELION</td>\n      <td>Scheres, 2012</td>\n      <td></td>\n      <td>http://www2.mrc-lmb.cam.ac.uk/relion</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>Chimera</td>\n      <td>Pettersen et al., 2004</td>\n      <td>RRID:SCR_004097</td>\n      <td>https://www.cgl.ucsf.edu/chimera</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PyMol</td>\n      <td>Schr\u00f6dinger</td>\n      <td>RRID:SCR_000305</td>\n      <td>https://pymol.org/2</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>COOT</td>\n      <td>Emsley et al., 2010</td>\n      <td>RRID:SCR_014222</td>\n      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>MolProbity</td>\n      <td>Chen et al., 2010</td>\n      <td></td>\n      <td>http://molprobity.biochem.duke.edu/</td>\n    </tr>\n    <tr>\n      <td>Software, algorithm</td>\n      <td>PHENIX</td>\n      <td>Adams et al., 2010</td>\n      <td></td>\n      <td>https://www.phenix-online.org</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Superose 6 Increase10/300 GL</td>\n      <td>GE Healthcare</td>\n      <td>Cat# 29091596</td>\n      <td>Used to perform gel filtration</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Ni-NTA Agarose</td>\n      <td>Qiagen</td>\n      <td>Cat# 30210</td>\n      <td>Used to purify His-tagged protein</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Amicon Ultra-15 Centrifugal Filter Units</td>\n      <td>Milliporesigma</td>\n      <td>Cat# UFC9100</td>\n      <td>Used to concentrate protein sample</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Quantifoil R 1.2/1.3 grid Au300</td>\n      <td>Quantifoil</td>\n      <td>Cat# Q37572</td>\n      <td>Used to prepare cryoEM samples</td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Cellfectin</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 10362100</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>Sf-900 II SFM medium</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 10902088</td>\n      <td>Used to culture SF9 cells</td>\n    </tr>\n    <tr>\n      <td>Other</td>\n      <td>FreeStyle 293 Expression Medium</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 12338018</td>\n      <td>Used to culture HEK293F cells</td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Antibiotic Antimycotic Solution</td>\n      <td>Sigma-Aldrich</td>\n      <td>Cat# A5955</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Chemical compound, drug</td>\n      <td>Proteinase K</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# EO0491</td>\n      <td></td>\n    </tr>\n    <tr>\n      <td>Commercial assay or kit</td>\n      <td>Lipofectamine 2000</td>\n      <td>Thermo Fisher Scientific</td>\n      <td>Cat# 11668027</td>\n      <td></td>\n    </tr>\n  </tbody>\n</table>\n\n### Protein expression and purification\n\nProtein expression and purification were performed as previously described (Gan et al., 2022). The Mus musculus Mcoln1 gene with a C-terminal thrombin cleavage site and a 10\u00d7His tag was cloned into a pEZTBM vector (Morales-Perez et al., 2016) and heterologously expressed in HEK293F cells using the BacMam system. The baculovirus was produced in Sf9 cells and used to transduce the HEK293F cells at a ratio of 1:40 (virus:HEK293F, v/v) and supplemented with 1 \u2009mM sodium butyrate to boost the protein expression. Cells were cultured in suspension at 37 \u2009\u00b0C for 48 \u2009hr and harvested by centrifugation at 3000 \u00d7 g. All purification procedures were carried out at 4 \u2009\u00b0C unless specified otherwise. The cell pellet was re-suspended in buffer A (20 \u2009mM Tris pH 8.0, 150 mM NaCl) supplemented with a pro0tease inhibitor cocktail (containing 1 \u2009mg ml\u22121 each of DNase, pepstatin, leupeptin, and aprotinin and 1 \u2009mM PMSF) and homogenized by sonication on ice. Protein was extracted with 1% (w/v) n-dodecyl-\u03b2-D-maltopyranoside (DDM; Anatrace) supplemented with 0.2% (w/v) cholesteryl hemisuccinate (CHS; Sigma-Aldrich) by gentle agitation for 2 \u2009hr. After extraction, the supernatant was collected after a 1 hr centrifugation at 48,000 \u00d7 g and incubated with Ni-NTA resin and 20 \u2009mM imidazole with gentle agitation. After 1 \u2009hr, the resin was collected on a disposable gravity column (Bio-Rad), washed with buffer B (buffer A+0.04%glyco-diosgenin [GDN; Anatrace]) with 20 \u2009mM imidazole. The washed resin was left on-column in buffer B and digested with thrombin overnight. After digestion, the flow-through was concentrated, and purified by size-exclusion chromatography on a Superose 6 10/300 GL column (GE Heathcare) pre-equilibrated with buffer B. The protein peak was collected and concentrated. For PI(4,5)P2-bound structure, purified protein was incubated with 0.5 mM PI(4,5)P2 on ice for 4 hr. The lipid ligand used in this study is PI(4,5)P2 diC8 (Echelon) HEK293F cells (RRID:CVCL_D603) were purchased from and authenticated by Thermo Fisher Scientific. The cell lines tested negative for mycoplasma contamination.\n\n### Electron microscopy data acquisition\n\nElectron microscopy data acquisition followed the protocol previously described (Gan et al., 2022). The cryo-EM grids were prepared by applying 3.5 \u2009\u03bcl protein (3.5 \u2009mg/mL) to a glow-discharged Quantifoil R1.2/1.3 200-mesh copper holey carbon grid (Quantifoil, Micro Tools GmbH) and blotted for 3.0 \u2009s under 100% humidity at 4 \u2009\u00b0C before being plunged into liquid ethane using a Mark IV Vitrobot (FEI). For the dataset of Y404W, micrographs were acquired on a Titan Krios microscope (FEI) operated at 300\u2009kV with a K3 Summit direct electron detector (Gatan), using a slit width of 20 \u2009eV on a GIF-Quantum energy filter. Data were collected using CDS (Correlated Double Sampling) mode of the K3 camera with a super resolution pixel size of 0.413 \u00c5. The defocus range was set from \u22120.9 to \u22122.2 \u03bcm. Each movie was dose-fractionated to 60 frames with a dose rate of 1e-/\u00c52/frame for a total dose of 60e-/\u00c52. The total exposure time was between 5 and 6 s. For the PI(4,5)P2-bound dataset, micrographs were acquired on a Titan Krios microscope (FEI) operated at 300\u2009kV with a Falcon4 electron detector (Thermo Fisher), using a slit width of 20 \u2009eV on a post-column Selectris X energy filter (Thermo Fisher Scientific). Data was collected using Falcon 4 camera with a pixel size of 0.738 \u00c5. The defocus range was set from \u20130.9 to \u20132.2 \u03bcm. Each movie was dose-fractionated to 60 frames with a dose rate of 1e-/\u00c52/frame for a total dose of 60e-/\u00c52. The total exposure time was between 3.5 and 4 s.\n\n### Image processing\n\nImages were processed as previously described (Gan et al., 2022). Movie frames were motion corrected and binned two times and dose-weighted using MotionCor2 (Zheng et al., 2017). The CTF parameters of the micrographs were estimated using the GCTF program (Zhang, 2016). The rest of the image processing steps were carried out using RELION 3.1 (Nakane et al., 2020; Scheres, 2012; Zivanov et al., 2018). All resolution was reported according to the gold-standard Fourier shell correlation (FSC) using the 0.143 criterion (Henderson et al., 2012). Local resolution was estimated using Relion. Aligned micrographs were manually inspected to remove those with ice contamination and bad defocus. Particles were selected using Gautomatch (K. Zhang, MRC LMB, https://github.com/JackZhang-Lab/Gautmatch; JackZhang-Lab, 2021a) and extracted using a binning factor of 3. 2D classification was performed in Relion 3.1. Selected particles after 2D classification were subjected to one around 3D classification. The mouse TRPML1 map (EMD-8883 [Chen et al., 2017]) low-pass filtered to 30 \u00c5 was used as the initial reference. Classes that showed clear features of the TRPML1 channel were combined and subjected to 3D auto-refinement and another round of 3D classification without performing particle alignment using a soft mask around the protein portion of the density. The best resolving classes were then re-extracted with the original pixel size and further refined. Beam tilt, anisotropic magnification, and per-particle CTF estimations and Bayesian polishing were performed in Relion 3.1 to improve the resolution of the final reconstruction.\n\nFor the Y404W structure dataset, a total of 4724 movies were collected and 4505 were selected after motion correction and CTF estimation. A total number of 864,698 particles were extracted from the selected micrographs and were subjected to one round of 2D classification, from which 87,846 particles were selected. After the initial 3D classification, 35,460 particles were selected and subjected to a 3D auto-refinement job and further ctf refinements, yielding a map at 2.86 \u00c5 overall resolution (Figure 2\u2014figure supplement 1).\n\nFor the PI(4,5)P2-bound dataset, a total of 8164 movies were collected and 7895 were selected after motion correction and CTF estimation. A total number of 1,065,778 particles were extracted from the selected micrographs and were subjected to one round of 2D classification, from which 555,281 particles were selected. After the initial 3D classification, 359,441 particles were selected and subjected to a 3D auto-refinement job. Next, a soft mask excluding the micelle density was applied and particles were sorted into five classes without performing alignment. From this, one classe with a total number of 60,597 particles were selected and further refined. In the postprocess step, a B-factor of \u201360 was manually given, yielding a map at 2.46 \u00c5 overall resolution (Figure 3\u2014figure supplement 1).\n\n### Model building, refinement, and validation\n\nModel building, refinement and validation followed the previously described protocol (Gan et al., 2022). The structure of mouse TRPML1 (PDB code: 5WPV) was used as the initial model and was manually adjusted in Coot (Emsley et al., 2010) and refined against the map by using the real space refinement module with secondary structure and non-crystallographic symmetry restraints in the Phenix package (Adams et al., 2010). The final structure model of Y404W includes residues 40\u2013200, 216\u2013527. The final structure model of the PI(4,5)P2-bound includes residues 39\u2013200, 216\u2013285, 296\u2013527. About 40 residues at the amino terminus and 50 residues at the carboxy terminus are disordered and not modeled. The statistics of the geometries of the models were generated using MolProbity (Chen et al., 2010). All the figures were prepared in PyMol (Schr\u00f6dinger, LLC.), UCSF Chimera (Pettersen et al., 2004). Pore radii were calculated using the HOLE program (Smart et al., 1996).\n\n### Electrophysiology\n\nElectrophysiology was carried out following a previously described protocol with minor modifications (Gan et al., 2022). For electrophysiological analysis, the two di-leucine motifs (15LL and 577LL) of mouse TRPML1 responsible for lysosomal targeting were replaced with alanines to facilitate the trafficking of the channel to the plasma membrane (Grimm et al., 2010; Vergarajauregui and Puertollano, 2006). The N-terminal GFP tagged, plasma membrane-targeting TRPML1 mutant (TRPML1-4A) and derived point mutations were overexpressed in HEK293 cells and the channel activities were directly measured by patching the plasma membrane. In this setting, the extracellular side is equivalent to the luminal side of TRPML1 in endosomes or lysosomes. Forty-eight \u2009hr after transfection, cells were dissociated by trypsin treatment and kept in complete serum-containing medium; the cells were re-plated onto 35 \u2009mm tissue culture dishes and kept in a tissue culture incubator until recording. Patch clamp in the whole-cell or inside-out configuration was used to measure TRPML1 activity on the HEK plasma membrane. The standard bath solution for whole cell current recording contained (in mM): 145 sodium methanesulfonate, 5 NaCl, 1 MgCl2, 10 HEPES buffered with Tris, pH 7.4; and the pipette solution contained (in mM): 140 caesium methanesulfonate, 5 NaCl, 5 MgCl2, 10 EGTA, 10 HEPES buffered with Tris, pH 7.4. The bath solution for inside-out configuration contained (in mM): 140 potassium methanesulfonate, 5 NaCl, 2 MgCl2, 0.4 CaCl2, 1 EGTA, 10 HEPES buffered with Tris, pH 7.4; and the pipette solution contained (in mM): 145 sodium methanesulfonate, 5 NaCl, 1 MgCl2, 0.5 EGTA, 10 HEPES buffered with Tris, pH 7.4. For whole cell recording of PI(3,5)P2-activated channel, we had to include high concentration of PI(3,5)P2 (100 \u03bcM) in the pipette solution (cytosolic side) in order to quickly obtain stable PI(3,5)P2-evoked current, likely because of the slow diffusion of this lipid ligand. PI(4,5)P2 was added in the cytosolic side, Tem, ML-SA1, ML-SI3, ML-SI1, SM were added in the bath solution. SM competition assays with SF-51 and ML-SI1 were conducted under pH 4.6. The patch pipettes were pulled from Borosilicate glassand heat polished to a resistance of 2\u20135 \u2009M\u03a9 (2\u20133 \u2009M\u03a9 for inside-out patch, and 3\u20135 \u2009M\u03a9 for whole-cell current recoding). Data were acquired using an AxoPatch 200B amplifier (Molecular Devices) and a low-pass analogue filter set to 1 \u2009kHz. The current signal was sampled at a rate of 20 \u2009kHz using a Digidata 1550B digitizer (Molecular Devices) and further analyzed with pClamp 11 software (Molecular Devices). After the patch pipette attached to the cell membrane, the giga seal (>10 G\u03a9) was formed by gentle suction. The inside-out configuration was formed by pulling the pipette away from the cell, and the pipette tip was exposed to the air for 2 s. The whole-cell configuration was formed by short zap or suction to rupture the patch. The holding potential was set to 0 \u2009mV. The whole-cell and inside-out macroscopic current recordings were obtained using voltage pulses ramped from \u2212140 \u2009mV to +50 \u2009mV over a duration of 800ms. The sample traces for the I\u2013V curves of macroscopic currents shown in each figure were obtained from recordings on the same patch. All data points are mean \u2009\u00b1\u2009s.e.m. (n\u2009\u2265\u20095).\n",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- L\u00e1szl\u00f3 Csan\u00e1dy, Semmelweis University Hungary\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.100987.3.sa0](https://doi.org/10.7554/eLife.100987.3.sa0)\n\nTransient receptor potential mucolipin 1 (TRPML1) functions as a lysosomal ion channel whose variants are associated with lysosomal storage disorder mucolipidosis type IV. This important report describes local and global structural changes driven by binding of regulatory phospholipids and by mutations that allosterically cause gain or loss of channel function. Most of the claims related to the allosteric regulation of TRPML1 are convincingly supported by two new cryo-EM structures which are evaluated within the context of previously reported TRPML1 structures, and a proposed allosteric gating mechanism is partially supported by functional electrophysiology results.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.100987.3.sa1](https://doi.org/10.7554/eLife.100987.3.sa1)\n\nTRPML1 functions as a lysosomal ion channel whose variants are associated with lysosomal storage disorder mucolipidosis type IV. Understanding the structure and function of sites involved in the allosteric control TRPML1 may provide new molecular moieties to target with prototypic drugs.\n\nGan et al provide the first high resolution cryo-EM structure of a mutant (Y404W) TRPML1 channel in the open state without any activating ligands. This new structure demonstrates how a mutation at a site some distance away from the pore can influence channel gating. The authors provide compelling electrophysiology evidence which supports the proposed Y404W gain of function effect.\n\nThe authors propose an allosteric mechanism whereby the engineered W404 sidechain provides extra van der Waals contacts within a pocket surrounded by helices of the voltage sensor-like domain (VSLD) and causes S4 bending which in turn opens the pore through the S4-S5 linker. Conversely, the authors functionally demonstrate that an alanine mutation at this site causes a loss of function. Although the authors do not provide a structure of the Y404A mutant, they propose that the alanine substitution disrupts the sidechain packing and likely destabilizes the open conformation.\n\nTRPML1 channels are regulated by PIP2 species in the cell. In the lysosomal membrane, PI(3,5)P2 activates the channel, whereas in the plasma membrane PI(4,5)P2 inhibits it. Towards understanding its lipid regulation, the authors solve a cryo-EM structure of TRPML1 bound to PI(4,5)P2 in the closed state and provide functional evidence that PI(4,5)P2 occupancy inhibits TRPML1 currents.\n\nWithin this same structure, the authors observe a density which may be attributed to sphingomyelin (or possibly phosphocholine). Using electrophysiology on WT and Y404W channels, the authors report an antagonist effect of sphingomyelin on TRPML1 currents.\n\nTaken together, the study provides convincing evidence for a gating (opening/closing) mechanism of the TRPML1 pore which can be allosterically regulated by altered side-chain packing and by lipid interactions within the VSLD.\n",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "7830feb1-2ae3-4564-8aea-4a127c34be54",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C1",
+      "claim": "TRPML1 is a lysosomal cation channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient Receptor Potential Mucolipin 1 (TRPML1) is a lysosomal cation channel whose loss-of-function mutations directly cause the lysosomal storage disorder mucolipidosis type IV (MLIV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated directly in the abstract and introduction of the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "86f5c820-da6d-4060-b8da-200fcf744cc6",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C2",
+      "claim": "Loss-of-function mutations in TRPML1 directly cause mucolipidosis type IV (MLIV).",
+      "claim_type": "EXPLICIT",
+      "source": "Transient Receptor Potential Mucolipin 1 (TRPML1) is a lysosomal cation channel whose loss-of-function mutations directly cause the lysosomal storage disorder mucolipidosis type IV (MLIV).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact stated in the abstract and supported by citations in the introduction.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "88f31141-a834-4456-9e2a-6b7780db9abb",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C3",
+      "claim": "TRPML1 can be allosterically regulated by various ligands including natural lipids and small synthetic molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPML1 can be allosterically regulated by various ligands including natural lipids and small synthetic molecules and the channel undergoes a global movement propagated from ligand-induced local conformational changes upon activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and supported by structural and functional data presented in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "d069a600-074e-46da-932b-4aaba408bcf5",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C4",
+      "claim": "TRPML1 undergoes a global movement propagated from ligand-induced local conformational changes upon activation.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPML1 can be allosterically regulated by various ligands including natural lipids and small synthetic molecules and the channel undergoes a global movement propagated from ligand-induced local conformational changes upon activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the abstract and demonstrated through structural comparisons in the manuscript.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "21e85924-358c-4f36-a747-01f6dc5eaab9",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C5",
+      "claim": "Tyr404 is a functionally critical residue at the C-terminus of the S4 helix.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identified a functionally critical residue, Tyr404, at the C-terminus of the S4 helix, whose mutations to tryptophan and alanine yield gain- and loss-of-function channels, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding of the study supported by electrophysiological and structural data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "6f1b961e-d300-4ee9-b67b-4d2be2e179fd",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C6",
+      "claim": "Y404W mutation yields a gain-of-function channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identified a functionally critical residue, Tyr404, at the C-terminus of the S4 helix, whose mutations to tryptophan and alanine yield gain- and loss-of-function channels, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by electrophysiological recordings showing large inward-rectifying currents without ligands.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "b87dfa8c-5fcb-4b87-b474-6b583c3592cf",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C7",
+      "claim": "Y404A mutation yields a loss-of-function channel.",
+      "claim_type": "EXPLICIT",
+      "source": "In this study, we identified a functionally critical residue, Tyr404, at the C-terminus of the S4 helix, whose mutations to tryptophan and alanine yield gain- and loss-of-function channels, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by electrophysiological recordings showing much lower currents even in the presence of potent agonist.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "be47c693-e6f9-4079-b941-bf4a25420951",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C8",
+      "claim": "Y404W and Y404A allosteric mutations mimic ligand activation or inhibition without interfering with ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "These allosteric mutations mimic the ligand activation or inhibition of the TRPML1 channel without interfering with ligand binding and both mutant channels are susceptible to agonist or antagonist modulation, making them better targets for screening potent TRPML1 activators and inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the ability of antagonists to inhibit Y404W and agonists to partially activate Y404A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "0455ee03-bd85-464d-a90c-63d0f0a56b8f",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C9",
+      "claim": "Both Y404W and Y404A mutant channels are susceptible to agonist or antagonist modulation.",
+      "claim_type": "EXPLICIT",
+      "source": "These allosteric mutations mimic the ligand activation or inhibition of the TRPML1 channel without interfering with ligand binding and both mutant channels are susceptible to agonist or antagonist modulation, making them better targets for screening potent TRPML1 activators and inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in electrophysiological recordings where antagonists inhibit Y404W and agonists partially activate Y404A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "4f71a83e-2d63-43de-9da3-9b0ce79c1a9c",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C10",
+      "claim": "Y404W and Y404A mutants are better targets for screening potent TRPML1 activators and inhibitors.",
+      "claim_type": "EXPLICIT",
+      "source": "These allosteric mutations mimic the ligand activation or inhibition of the TRPML1 channel without interfering with ligand binding and both mutant channels are susceptible to agonist or antagonist modulation, making them better targets for screening potent TRPML1 activators and inhibitors.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion drawn from the properties of the mutants that they mimic activated/inhibited states while remaining responsive to ligands.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "7711c5f2-93db-4de2-90d8-cf0e4789262b",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C11",
+      "claim": "A high-resolution structure of TRPML1 in complex with PI(4,5)P2 inhibitor was determined.",
+      "claim_type": "EXPLICIT",
+      "source": "We also determined the high-resolution structure of TRPML1 in complex with the PI(4,5)P2 inhibitor, revealing the structural basis underlying this lipid inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a primary finding supported by cryo-EM data and structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "4641e352-87de-48db-8811-6e8f188db92e",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C12",
+      "claim": "The PI(4,5)P2-bound TRPML1 structure reveals the structural basis underlying PI(4,5)P2 inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "We also determined the high-resolution structure of TRPML1 in complex with the PI(4,5)P2 inhibitor, revealing the structural basis underlying this lipid inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "The structure shows how PI(4,5)P2 binding stabilizes the closed conformation through bridging interactions.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "60124c79-4798-4549-b324-d4470a5c798c",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C13",
+      "claim": "An endogenous phospholipid likely from sphingomyelin is identified in the PI(4,5)P2-bound TRPML1 structure at the same hotspot for agonists and antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, an endogenous phospholipid likely from sphingomyelin is identified in the PI(4,5)P2-bound TRPML1 structure at the same hotspot for agonists and antagonists, providing a plausible structural explanation for the inhibitory effect of sphingomyelin on agonist activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the high-resolution structure showing clear density for a choline-containing lipid.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "2488ffa9-1a59-4103-b2e9-3aa535ca10cb",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C14",
+      "claim": "The bound sphingomyelin provides a plausible structural explanation for the inhibitory effect of sphingomyelin on agonist activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, an endogenous phospholipid likely from sphingomyelin is identified in the PI(4,5)P2-bound TRPML1 structure at the same hotspot for agonists and antagonists, providing a plausible structural explanation for the inhibitory effect of sphingomyelin on agonist activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural location of the lipid and functional data showing competitive effects.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "eccff455-f74f-4aa2-b9e0-27ea95aadfbc",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C15",
+      "claim": "TRPML1 is a Ca2+-permeable, non-selective, lysosomal cation channel ubiquitously expressed in mammalian cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Transient Receptor Potential Mucolipin 1 (TRPML1) is a Ca2+-permeable, non-selective, lysosomal cation channel ubiquitously expressed in mammalian cells (Dong et al., 2008; LaPlante et al., 2002; Sun et al., 2000).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the introduction with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "fcda2e0e-6bba-4ebb-be00-2c84a00e866f",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C16",
+      "claim": "TRPML1 plays critical roles in lipid accumulation.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPML1 plays critical roles in many important cellular activities including lipid accumulation (Shen et al., 2012), signaling transduction (Kilpatrick et al., 2016), lysosome trafficking (Venkatachalam et al., 2015), and autophagy (Scotto Rosato et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "6a195c27-42c7-4bdb-a515-bdbecb892465",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C17",
+      "claim": "TRPML1 plays critical roles in signaling transduction.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPML1 plays critical roles in many important cellular activities including lipid accumulation (Shen et al., 2012), signaling transduction (Kilpatrick et al., 2016), lysosome trafficking (Venkatachalam et al., 2015), and autophagy (Scotto Rosato et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "a4efdfbc-05e9-4492-94ed-6ccffd1f2c5b",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C18",
+      "claim": "TRPML1 plays critical roles in lysosome trafficking.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPML1 plays critical roles in many important cellular activities including lipid accumulation (Shen et al., 2012), signaling transduction (Kilpatrick et al., 2016), lysosome trafficking (Venkatachalam et al., 2015), and autophagy (Scotto Rosato et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "1b62a90c-6ca1-4694-b0b2-abe2069f7dfc",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C19",
+      "claim": "TRPML1 plays critical roles in autophagy.",
+      "claim_type": "EXPLICIT",
+      "source": "TRPML1 plays critical roles in many important cellular activities including lipid accumulation (Shen et al., 2012), signaling transduction (Kilpatrick et al., 2016), lysosome trafficking (Venkatachalam et al., 2015), and autophagy (Scotto Rosato et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "17886b37-b052-46d2-af42-ff4f8f14a4ea",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C20",
+      "claim": "MLIV is a neurodegenerative disease characterized by abnormal neurodevelopment, retinal degeneration, and iron-deficiency anemia.",
+      "claim_type": "EXPLICIT",
+      "source": "The loss-of-function mutations in TRPML1 directly cause the lysosomal storage disorder mucolipidosis type IV (MLIV), a neurodegenerative disease characterized by abnormal neurodevelopment, retinal degeneration, and iron-deficiency anemia (Bargal et al., 2000; Bassi et al., 2000; Gan and Jiang, 2022; Nilius et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "bbcbbc74-3f69-4f28-afee-9008356632c2",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C21",
+      "claim": "TRPML1 can be activated by the lysosome-specific phosphatidylinositol 3,5-bisphosphate (PI(3,5)P2).",
+      "claim_type": "EXPLICIT",
+      "source": "The channel can be activated by the lysosome-specific phosphatidylinositol 3,5-bisphosphate (PI(3,5)P2) (Dong et al., 2010), but inhibited by the plasma membrane-enriched PI(4,5)P2 (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "011ecf7f-c6fc-4c2c-96ae-80adca5ce80a",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C22",
+      "claim": "TRPML1 is inhibited by the plasma membrane-enriched PI(4,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "The channel can be activated by the lysosome-specific phosphatidylinositol 3,5-bisphosphate (PI(3,5)P2) (Dong et al., 2010), but inhibited by the plasma membrane-enriched PI(4,5)P2 (Zhang et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "8a6c93f3-abc7-43a2-823e-daf355647836",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C23",
+      "claim": "Many synthetic agonists and antagonists have been developed for TRPML1 activation and inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "Given its pharmacological importance, many synthetic agonists and antagonists have been developed for TRPML1 activation and inhibition (Chen et al., 2014; Grimm et al., 2010; Samie et al., 2013; Shen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "cdd7d7f8-2874-4014-a565-6969700c1a24",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C24",
+      "claim": "The mTOR inhibitor rapamycin and its derivatives can synergistically activate TRPML1 with PI(3,5)P2.",
+      "claim_type": "EXPLICIT",
+      "source": "Interestingly, the mTOR (Mammalian target of rapamycin) inhibitor rapamycin and its derivatives can also synergistically activate TRPML1 with PI(3,5)P2 (Gan et al., 2022; Zhang et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "e2d521a4-f317-4b42-a010-05308ea492f8",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C25",
+      "claim": "Sphingomyelin can modulate TRPML1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Recent studies also suggest that sphingomyelin, a major membrane component, can also modulate the TRPML1 activation (Prat Castro et al., 2022; Shen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "acbac1b4-2d17-4569-8a94-5aaf65fa3cfc",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C26",
+      "claim": "All ligand-binding sites in TRPML1 structures converge to two hot spots: the N-terminal poly-basic pocket for PIP2 and the inter-subunit interface in the middle of the membrane between S5 and S6 for agonists, antagonists, and rapamycin.",
+      "claim_type": "EXPLICIT",
+      "source": "Firstly, all ligand-binding sites in the structures converge to two hot spots: The N-terminal poly-basic pocket for PIP2 and the inter-subunit interface in the middle of the membrane between S5 and S6 for agonists, antagonists, and rapamycin (Fine et al., 2018; Gan et al., 2022; Schmiege et al., 2017; Schmiege et al., 2021; Figure 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Figure 1a, with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "c99693b0-a3ec-4ea9-ba81-0c0e6267745f",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C27",
+      "claim": "All open TRPML1 structures are almost identical regardless of the activation stimuli.",
+      "claim_type": "EXPLICIT",
+      "source": "Secondly, all open TRPML1 structures are almost identical regardless of the activation stimuli.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural comparisons from multiple studies.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "6f64c296-2dfa-4a77-8b98-73a1532af3cf",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C28",
+      "claim": "TRPML1 gating involves the global movement of almost the entire channel mediated by tight inter- and intra-subunit packing within the channel tetramer.",
+      "claim_type": "EXPLICIT",
+      "source": "Thirdly, structural comparison between the open and closed conformation illustrates that TRPML1 gating is not merely a local conformational change but involves the global movement of almost the entire channel mediated by tight inter- and intra-subunit packing within the channel tetramer (Video 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text and illustrated in Video 1.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "96f0bcc4-fb9a-4999-9b62-0ab0ec0aa0dc",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C29",
+      "claim": "The necessity of global movement for channel activation underlies the allosteric regulation of TRPML1 by two distantly bound ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the necessity of global movement for channel activation underlies the allosteric regulation of TRPML1 by two distantly bound ligands - that is, the ligand-induced local conformational change at one site can propagate to the other site and thereby affect the binding of the other ligand (Gan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "0ae52236-6a1d-4e8b-a993-800af6e7ee74",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C30",
+      "claim": "Ligand-induced local conformational change at one site can propagate to the other site and affect the binding of the other ligand in TRPML1.",
+      "claim_type": "EXPLICIT",
+      "source": "Finally, the necessity of global movement for channel activation underlies the allosteric regulation of TRPML1 by two distantly bound ligands - that is, the ligand-induced local conformational change at one site can propagate to the other site and thereby affect the binding of the other ligand (Gan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "476b9e5f-38a2-460b-9ed9-022b548a3bad",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C31",
+      "claim": "PI(3,5)P2 and rapamycin-induced local conformational changes converge to the same driving force on S4 helix, resulting in a slight bend of the C-terminal half of the S4 that facilitates channel opening.",
+      "claim_type": "EXPLICIT",
+      "source": "The PI(3,5)P2 and rapamycin-induced local conformational changes converge to the same driving force on S4 helix, resulting in a slight bend of the C-terminal half of the S4 that facilitates the channel opening (Gan et al., 2022; Figure 1b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated in the text with a supporting citation and illustrated in Figure 1b.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "35c288b8-b94e-407d-93de-c977fbd07480",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C32",
+      "claim": "A key interaction coupled to the S4 bending movement is the insertion of Tyr404 side chain into a pocket surrounded by S1, S3, and S4 helices where its aromatic ring is sandwiched between the side chains of Leu66 and Arg403.",
+      "claim_type": "EXPLICIT",
+      "source": "A key interaction coupled to the S4 bending movement is the insertion of Tyr404 side chain into a pocket surrounded by S1, S3, and S4 helices where its aromatic ring is sandwiched between the side chains of Leu66 and Arg403.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "5b78822e-86c1-429f-9501-e95e834b9e0e",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C33",
+      "claim": "Y404W mutant elicits large inward-rectifying currents without any ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "As illustrated in the electrophysiological recordings using whole-cell patches, the Y404W mutant elicits large inward-rectifying currents without any ligands, indicating that Y404W is a gain-of-function (GOF) mutant (Figure 1c and Figure 1\u2014figure supplement 1a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiological data shown in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "32a743fa-aba8-491b-bd31-1f4a86cab58f",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C34",
+      "claim": "Adding extra activation ligands such as PI(3,5)P2, rapamycin, or small molecule agonist ML-SA1 only marginally increases the currents of Y404W mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Adding extra activation ligands such as PI(3,5)P2, rapamycin, or small molecule agonist ML-SA1 only marginally increases the currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the electrophysiological recordings in Figure 1c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "5880b2af-aaea-45d3-a662-020f3758d6d0",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C35",
+      "claim": "Y404W GOF mutant is distinct from other gain-of-function mutants in which proline substitutions on the S5 helix lock the pore in an open state and the channels are no longer susceptible to antagonist inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This is distinct from other gain-of-function mutants in which proline substitutions on the S5 helix lock the pore in an open state and the channels are no longer susceptible to antagonist inhibition (Dong et al., 2009; Grimm et al., 2007; Kim et al., 2007; Nagata et al., 2008; Xu et al., 2007).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "c9baec30-7ec1-4d1a-ba90-e6d17b27f5fa",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C36",
+      "claim": "Y404A elicits much lower currents even in the presence of potent agonist ML-SA1.",
+      "claim_type": "EXPLICIT",
+      "source": "Y404A, on the other hand, represents a loss-of-function mutant and elicits much lower currents even in the presence of potent agonist ML-SA1 (Figure 1e and Figure 1\u2014figure supplement 1c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiological data shown in Figure 1e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "db8c7e95-3b37-4e47-abfa-ee0f13890025",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C37",
+      "claim": "Y404A mutation mimics PI(4,5)P2 inhibition and allosterically inhibits ML-SA1 binding, significantly decreasing the efficacy of ML-SA1 activation.",
+      "claim_type": "EXPLICIT",
+      "source": "While ML-SA1 can potently activate the wild-type TRPML1 channel, the Y404A mutation mimics PI(4,5)P2 inhibition and allosterically inhibits ML-SA1 binding, significantly decreasing the efficacy of ML-SA1 activation (Figure 1f & g).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by dose-response curves in Figure 1f showing reduced efficacy.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "1455afe0-0ad0-43a9-b8a3-9b1ae1b44aa0",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C38",
+      "claim": "The Y404W mutant structure was determined to 2.86 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To reveal the structural basis underlying the channel activation of the Y404W mutant, we determined its structure in the absence of any ligands to 2.86 \u00c5 resolution (Figure 2\u2014figure supplements 1\u20132, Supplementary file 1 and Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with reference to supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "ade8c591-df74-4877-90ba-0b628dbfe47f",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C39",
+      "claim": "The Y404W mutant adopts an open conformation with a structure almost identical to other ligand-activated open TRPML1.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, the Y404W mutant adopts an open conformation with a structure almost identical to other ligand-activated open TRPML1, consistent with its GOF property (Figure 2a and Figure 2\u2014figure supplement 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural comparison shown in Figure 2a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "f4ddcc62-856d-4ae6-a17e-40bce4bb0090",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C40",
+      "claim": "The side chain of W404 in the mutant is inserted into the pocket surrounded by S1, S3, and S4 helices and sandwiched between Leu66 and Arg403.",
+      "claim_type": "EXPLICIT",
+      "source": "Like Tyr404 in the wide-type open TRPML1, the side chain of W404 in the mutant is inserted into the pocket surrounded by S1, S3, and S4 helices and sandwiched between Leu66 and Arg403 (Figure 2b).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural analysis in Figure 2b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "7e849f0b-8e4f-4f8c-847b-20da364acade",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C41",
+      "claim": "The larger indole ring of Trp404 provides a better spatial fitting into the pocket than the phenol ring of Tyr404.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the larger indole ring of Trp404 provides a better spatial fitting into the pocket than the phenol ring of Tyr404 and several surrounding residues (Lys65, Gln69, and Leu358) provide extra van der Waals contacts to the Trp404 side chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis comparing Y404 and W404.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "ca96a179-0efc-4ea3-b7b9-fa3526476dd3",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C42",
+      "claim": "Several surrounding residues (Lys65, Gln69, and Leu358) provide extra van der Waals contacts to the Trp404 side chain.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the larger indole ring of Trp404 provides a better spatial fitting into the pocket than the phenol ring of Tyr404 and several surrounding residues (Lys65, Gln69, and Leu358) provide extra van der Waals contacts to the Trp404 side chain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the high-resolution structure.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "22527f6e-6d96-4648-906b-5d4f663f52f7",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C43",
+      "claim": "Y404W mutation facilitates the bending of S4 which in turn propagates to the pore through the S4-S5 linker and activates the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, by enhancing the stability of the aromatic side chain inside the pocket, Y404W mutation facilitates the bending of S4 which in turn propagates to the pore through the S4-S5 linker and activates the channel (Gan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from structural analysis and cited previous work.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "69737e71-8188-4dcd-a2a8-14e7c64bbf78",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C44",
+      "claim": "The lack of packing capacity in the Y404A mutant with a small side-chain likely destabilizes the open conformation, yielding a loss-of-function channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The Y404W mutant structure demonstrates that the sidechain packing in the pocket is essential for stabilizing the open channel and the lack of such packing capacity in the Y404A mutant with a small side-chain likely destabilizes the open conformation, yielding a loss-of-function channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis of Y404W and functional data of Y404A.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "bfeeb2c1-ca0b-490d-a91c-b022a5830ae8",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C45",
+      "claim": "Arg403 plays two essential roles in TRPML1 gating: its side chain is part of the pocket that stabilizes Tyr404 in the open state; its guanidinium group forms a salt bridge with the C3 phosphate group of PI(3,5)P2 upon ligand activation.",
+      "claim_type": "EXPLICIT",
+      "source": "It is worth noting that Arg403 plays two essential roles in TRPML1 gating: its side chain is part of the pocket that stabilizes Tyr404 in the open state; its guanidinium group forms a salt bridge with the C3 phosphate group of PI(3,5)P2 upon ligand activation (Gan et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural analysis with a supporting citation.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "a42d7a40-ce4c-44a7-ab98-41c18e3ff0ad",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C46",
+      "claim": "Arg403 is highly conserved in the TRPML channel family.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Arg403 is highly conserved in the TRPML channel family, and its R403C variant identified in an MLIV patient is a loss-of-function mutant (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "85c5870b-8ca7-450f-9ef9-243592db7b0a",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C47",
+      "claim": "R403C variant identified in an MLIV patient is a loss-of-function mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Arg403 is highly conserved in the TRPML channel family, and its R403C variant identified in an MLIV patient is a loss-of-function mutant (Chen et al., 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "5701e089-e7c4-4ce0-81e8-aeb41357679b",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C48",
+      "claim": "The structure of PI(4,5)P2-bound TRPML1 was determined at 2.46 \u00c5 resolution.",
+      "claim_type": "EXPLICIT",
+      "source": "To address this, we determined the structure of PI(4,5)P2-bound TRPML1 at 2.46 \u00c5 (Figure 3a, Figure 2\u2014figure supplement 2, Figure 3\u2014figure supplements 1\u20132, Supplementary file 1 and Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the results section with reference to figures and supplementary data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "12dab32a-f705-4d06-a396-ed8cf3d097db",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C49",
+      "claim": "The density from the IP3 head group of PI(4,5)P2, especially the phosphate groups on C4 and C5 of the inositol, can be clearly defined in the EM map.",
+      "claim_type": "EXPLICIT",
+      "source": "The density from the IP3 head group of PI(4,5)P2, especially the phosphate groups on C4 and C5 of the inositol, can be clearly defined in the EM map (Figure 3a\u2013c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the EM density maps in Figure 3a-c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "2f8dbc03-4918-4294-9fe9-50a3eb2e103c",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C50",
+      "claim": "The phosphatidyl group of PI(4,5)P2 is flexible and could not be resolved in the structure.",
+      "claim_type": "EXPLICIT",
+      "source": "The phosphatidyl group, however, is flexible and could not be resolved in the structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "af96d8f8-5b92-4890-9d78-e587f5477aaf",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C51",
+      "claim": "PI(4,5)P2 binding overlaps with that of PI(3,5)P2, but their IP3 head group positions are quite different.",
+      "claim_type": "EXPLICIT",
+      "source": "While PI(4,5)P2 binding overlaps with that of PI(3,5)P2, their IP3 head group positions are quite different (Figure 3b\u2013e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural comparison in Figure 3b-e.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "e3988f1d-e068-4491-8ebe-f7c25f1f9743",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C52",
+      "claim": "In the PI(3,5)P2-bound structure, the head group protrudes deep into the N-terminal PIP2-binding pocket and its C3 phosphate engages in direct interactions with Arg403 and Tyr355 to facilitate channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "In the PI(3,5)P2-bound structure (Figure 3d), the head group protrudes deep into the N-terminal PIP2-binding pocket enclosed by two short clamp-shaped helices of H1 and H2, and the cytosolic ends of S1 and S2 helices, allowing its C3 phosphate to engage in direct interactions with Arg403 and Tyr355 to facilitate channel activation (Gan et al., 2022).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is stated with a supporting citation and shown in Figure 3d.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "ae993391-f035-46b0-bd52-72ab89ccc577",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C53",
+      "claim": "C3 phosphate-mediated interactions are absent in PI(4,5)P2-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "These C3 phosphate-mediated interactions are absent in PI(4,5)P2-bound structure.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structural comparison.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "488fa031-2164-4d5f-9101-79e4b1aef1c3",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C54",
+      "claim": "The head group of PI(4,5)P2 is trapped at the entrance of the pocket and forms a bridge between S1 and S2 with its phosphate groups stabilized by positively charged residues from H2, S1, and S2.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, the head group of PI(4,5)P2 is trapped at the entrance of the pocket and forms a bridge between S1 and S2 with its phosphate groups stabilized by positively charged residues from H2, S1, and S2 (Figure 3b and c).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural analysis in Figure 3b and c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "e2aa4764-0b7d-454f-bf54-72bd1f2048b7",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C55",
+      "claim": "A major conformational change between the open and closed states is an upward movement of the S1 helix, a prerequisite for Tyr404 insertion between Leu66 and Arg403 and the subsequent bending of S4.",
+      "claim_type": "EXPLICIT",
+      "source": "A major conformational change between the open and closed states is an upward movement of the S1 helix, a prerequisite for Tyr404 insertion between Leu66 and Arg403 and the subsequent bending of S4 (Figure 3e).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by structural comparison in Figure 3e.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "e4fa7d4d-47e5-4c9e-a5fb-c819e0730239",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C56",
+      "claim": "The PI(4,5)P2-mediated bridging interaction between S1 and S2 would hinder the S1 movement and stabilize the channel in the closed conformation, exerting allosteric inhibition on agonist activation.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, the PI(4,5)P2-mediated bridging interaction between S1 and S2 would hinder the S1 movement and stabilize the channel in the closed conformation, exerting allosteric inhibition on agonist activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural analysis of PI(4,5)P2 binding and its effects on S1 movement.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "ba8b7ca9-e16f-4918-8264-8227a2b213f2",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C57",
+      "claim": "The high-resolution structure of PI(4,5)P2-bound closed TRPML1 reveals a well-defined density from an endogenous lipid molecule at the inter-subunit interface between S5 and S6.",
+      "claim_type": "EXPLICIT",
+      "source": "The high-resolution structure of PI(4,5)P2-bound closed TRPML1 also reveals a well-defined density from an endogenous lipid molecule at the inter-subunit interface between S5 and S6 (Figure 4a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural analysis in Figure 4a.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "b516ef09-31b4-4390-bac2-779d2cb15501",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C58",
+      "claim": "The lipid contains a choline head group and is likely a phosphatidylcholine (PC) or sphingomyelin (SM).",
+      "claim_type": "EXPLICIT",
+      "source": "The lipid contains a choline head group and is likely a phosphatidylcholine (PC) or sphingomyelin (SM), the two main choline-containing phospholipid components of the outer leaflet of the plasma membrane.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural density and knowledge of membrane lipid composition.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "c0c83da1-90cf-4b19-b2ab-969dd2808c7b",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C59",
+      "claim": "The tail from one of the lipid alkyl chains penetrates deep into an inter-subunit pocket in the middle of the membrane, overlapping with the hotspot for both channel agonist and antagonist.",
+      "claim_type": "EXPLICIT",
+      "source": "The tail from one of the lipid alkyl chains penetrates deep into an inter-subunit pocket in the middle of the membrane, overlapping with the hotspot for both channel agonist and antagonist (Figure 4\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is shown in the structural analysis in Figure 4\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "aa20d0e7-3d2b-4545-a6ec-5ddb2f864a9e",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C60",
+      "claim": "The alkyl chain of the bound lipid has to be displaced upon agonist or antagonist binding, suggesting that the lipid occupation would compete against agonist or antagonist binding.",
+      "claim_type": "EXPLICIT",
+      "source": "This alkyl chain has to be displaced upon agonist or antagonist binding, suggesting that the lipid occupation would compete against agonist or antagonist binding.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural location of the lipid overlapping with agonist/antagonist binding sites.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "7c1e8e62-23a3-4b33-bc91-4e40dae16146",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C61",
+      "claim": "The bound lipid is suspected to be sphingomyelin which is enriched in the endocytic recycling compartment and has been shown to inhibit TRPML1 activity.",
+      "claim_type": "EXPLICIT",
+      "source": "We suspect this bound lipid is sphingomyelin which is also enriched in the endocytic recycling compartment and has been shown to inhibit TRPML1 activity (Prat Castro et al., 2022; Schuchman, 2010; Shen et al., 2012; Slotte, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with supporting citations.",
+      "evidence_type": "[\"CITATION\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "eb29b092-4ca9-46e8-a5b8-804798735536",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C62",
+      "claim": "Sphingomyelin enrichment can reduce the agonist (i.e. SF-51 and ML-SA1) activation of TRPML1.",
+      "claim_type": "EXPLICIT",
+      "source": "Key evidence to support SM inhibition is that its enrichment can reduce the agonist (i.e. SF-51 and ML-SA1) activation of TRPML1 (Shen et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "f4049675-97f8-418c-9388-96cf742f64dd",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C63",
+      "claim": "Reduction of SF-51-activated TRPML1 current upon SM enrichment was observed.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, we did observe the reduction of SF-51-activated TRPML1 current upon SM enrichment (Figure 4b and Figure 4\u2014figure supplement 2a).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiological data in Figure 4b.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "a3301cbf-f854-48a8-95ad-4d41876ca9b1",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C64",
+      "claim": "The role of sphingomyelin is to stabilize rather than directly inhibit the channel; the SM inhibition upon enrichment is an indirect effect attributable to its competition against agonist binding that reduces the apparent efficacy of agonist activation.",
+      "claim_type": "EXPLICIT",
+      "source": "However, based on our structure, we hypothesize that the role of sphingomyelin is to stabilize rather than directly inhibit the channel; the SM inhibition upon enrichment is an indirect effect attributable to its competition against agonist binding that reduces the apparent efficacy of agonist activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the structural location of the lipid and functional data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "369b1a07-56cb-4886-88e2-ebcf54a2268b",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C65",
+      "claim": "SM can function as an indirect activator by competing against antagonists and reducing their effectiveness in channel inhibition.",
+      "claim_type": "EXPLICIT",
+      "source": "This hypothesis would imply that SM can also function as an indirect activator by competing against antagonists and reducing their effectiveness in channel inhibition.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a prediction based on the hypothesis about SM's competitive binding mechanism.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "af8b1e82-31f9-4d8f-8cbb-8f181620fd09",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C66",
+      "claim": "SM shows no obvious inhibition to the Y404W mutant channel activity.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4c and Figure 4\u2014figure supplement 2b, SM shows no obvious inhibition to the mutant channel activity, whereas antagonist ML-SI1 markedly reduces the mutant channel current; upon SM enrichment, ML-SI1 inhibition is mitigated resulting in a recovery of the channel current.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiological data in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "a05d2416-ae0e-45d7-9633-03235f3d8be0",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C67",
+      "claim": "Antagonist ML-SI1 markedly reduces the Y404W mutant channel current.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4c and Figure 4\u2014figure supplement 2b, SM shows no obvious inhibition to the mutant channel activity, whereas antagonist ML-SI1 markedly reduces the mutant channel current; upon SM enrichment, ML-SI1 inhibition is mitigated resulting in a recovery of the channel current.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiological data in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "cf7f43ac-c3be-47d7-9475-b018d8827d7c",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C68",
+      "claim": "Upon SM enrichment, ML-SI1 inhibition is mitigated resulting in a recovery of the Y404W channel current.",
+      "claim_type": "EXPLICIT",
+      "source": "As shown in Figure 4c and Figure 4\u2014figure supplement 2b, SM shows no obvious inhibition to the mutant channel activity, whereas antagonist ML-SI1 markedly reduces the mutant channel current; upon SM enrichment, ML-SI1 inhibition is mitigated resulting in a recovery of the channel current.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is demonstrated by electrophysiological data in Figure 4c.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "c2c534dd-350c-4dfc-b50b-aee9ccba6b68",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C69",
+      "claim": "The observation of SM mitigating ML-SI1 inhibition confirms the competitive binding of SM at the hot spot for both agonists and antagonists.",
+      "claim_type": "EXPLICIT",
+      "source": "This observation confirms the competitive binding of SM at the hot spot for both agonists and antagonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional data showing SM competition with antagonist.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "b6bfd78d-7904-4130-8ed9-95968279f788",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C70",
+      "claim": "PI(4,5)P2 inhibits PI(3,5)P2 activation of TRPML1 by directly competing for the same binding site.",
+      "claim_type": "EXPLICIT",
+      "source": "While PI(4,5)P2 inhibits PI(3,5)P2 activation of TRPML1 by directly competing for the same binding site, it also allosterically inhibits the agonist-activated channel (Chen et al., 2017), suggesting that PI(4,5)P2 binding stabilizes the TRPML1 channel in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "725f723b-9b78-4119-8597-8713c790a42b",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C71",
+      "claim": "PI(4,5)P2 allosterically inhibits the agonist-activated channel.",
+      "claim_type": "EXPLICIT",
+      "source": "While PI(4,5)P2 inhibits PI(3,5)P2 activation of TRPML1 by directly competing for the same binding site, it also allosterically inhibits the agonist-activated channel (Chen et al., 2017), suggesting that PI(4,5)P2 binding stabilizes the TRPML1 channel in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "019c1dae-79ef-48a7-8ad2-58df32271b9f",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C72",
+      "claim": "PI(4,5)P2 binding stabilizes the TRPML1 channel in a closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "While PI(4,5)P2 inhibits PI(3,5)P2 activation of TRPML1 by directly competing for the same binding site, it also allosterically inhibits the agonist-activated channel (Chen et al., 2017), suggesting that PI(4,5)P2 binding stabilizes the TRPML1 channel in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the functional effects and supported by the structure.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "2e9d2ea1-321f-40f8-836c-d49a71862d37",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C73",
+      "claim": "A previous low-resolution structure of TRPML1 in complex with PI(4,5)P2 revealed the approximate location of PI(4,5)P2 binding but failed to explain how its binding stabilizes the channel in the closed state and allosterically inhibits the agonist-activated channel.",
+      "claim_type": "EXPLICIT",
+      "source": "A previous low-resolution structure of TRPML1 in complex with PI(4,5)P2 revealed the approximate location of PI(4,5)P2 binding but failed to explain how its binding stabilizes the channel in the closed state and allosterically inhibits the agonist-activated channel (Fine et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated with a supporting citation.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "414df7bd-658d-4ed5-9711-8588cae4c650",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C74",
+      "claim": "In addition to competing against PI(3,5)P2 activator for the same site, PI(4,5)P2 also allosterically inhibits small molecule agonist by stabilizing the channel in the closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we also determined a high-resolution structure of PI(4,5)P2-inhibited TRPML1 and demonstrated that in addition to competing against PI(3,5)P2 activator for the same site, PI(4,5)P2 also allosteric inhibits small molecule agonist by stabilize the channel in the closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the structural analysis showing how PI(4,5)P2 binding affects S1 movement.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "89d2dabd-a1e2-4a00-88b8-3437adbf5f25",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C75",
+      "claim": "The Y404W mutant structure adopts the same open structure as ligand-activated TRPML1, highlighting the global conformational change for TRPML1 channel activation.",
+      "claim_type": "EXPLICIT",
+      "source": "The structure of the Y404W mutant adopts the same open structure as ligand-activated TRPML1, once again highlighting the global conformational change for TRPML1 channel activation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated based on structural comparison.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "1ed1fa44-3400-45aa-9dc5-0bd3d613cf62",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C76",
+      "claim": "Tyr404 is distant from the hot spots for ligand binding.",
+      "claim_type": "EXPLICIT",
+      "source": "As Tyr404 is distant from the hot spots for ligand binding, the two gain- and loss-of-function mutants can still be allosterically modulated by antagonists and agonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the structural location of Tyr404 and functional data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "c303817e-8bb6-4634-a724-d2df6053a35a",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C77",
+      "claim": "The head group of PI(4,5)P2 mediates a bridging interaction between S1 and S2 and stabilizes TRPML1 in a closed conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "The head group of PI(4,5)P2 mediates a bridging interaction between S1 and S2 and stabilizes TRPML1 in a closed conformation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is demonstrated by the structural analysis of PI(4,5)P2 binding.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "17fbfef5-2e4a-4e83-ac0a-ddaf4675d1d9",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C78",
+      "claim": "Clear density from a choline-containing phospholipid is visualized at the same site for agonists or antagonists in the high-resolution PI(4,5)P2-bound TRPML1 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "In the high-resolution PI(4,5)P2-bound TRPML1 structure, we also visualize clear density from a choline-containing phospholipid at the same site for agonists or antagonists.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is observed in the structural analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "d9383cdd-1c2b-4d3c-b01e-bede63ff1012",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C79",
+      "claim": "In light of its high membrane abundance and competing effect on agonist activation and antagonist inhibition, the bound lipid is likely from sphingomyelin.",
+      "claim_type": "EXPLICIT",
+      "source": "In light of its high membrane abundance and competing effect on agonist activation and antagonist inhibition, this bound lipid is likely from sphingomyelin.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the lipid's properties and functional effects.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "10dd1821-e12c-44c6-994e-bb4764ea0f8f",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C80",
+      "claim": "The Y404W mutant structure was determined in the absence of any ligands.",
+      "claim_type": "EXPLICIT",
+      "source": "To reveal the structural basis underlying the channel activation of the Y404W mutant, we determined its structure in the absence of any ligands to 2.86 \u00c5 resolution (Figure 2\u2014figure supplements 1\u20132, Supplementary file 1 and Materials and methods).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the methods and results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "a1a49e05-95a8-4f55-9f2d-6ebc1281c523",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C81",
+      "claim": "The local resolution of the W404 region in the Y404W structure is 3.2 \u00c5.",
+      "claim_type": "EXPLICIT",
+      "source": "The local resolution of this region is 3.2 \u00c5.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in Figure 2\u2014figure supplement 2c caption.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "a4334ca5-5e4b-46e3-8e58-55c2c5073406",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C82",
+      "claim": "ML-SA1 can potently activate the wild-type TRPML1 channel with an EC50 of 4.8 \u00b1 0.7 \u00b5M.",
+      "claim_type": "EXPLICIT",
+      "source": "Data for WT is least square fits to the Hill equation with EC50=4.8 \u00b1 0.7 \u00b5M, n=0.93 \u00b1 0.10.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is shown in the dose-response curve in Figure 1f.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "23754962-bff0-409c-8761-1934950857db",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C83",
+      "claim": "Purified TRPML1 protein was incubated with 0.5 mM PI(4,5)P2 on ice for 4 hr for the PI(4,5)P2-bound structure.",
+      "claim_type": "EXPLICIT",
+      "source": "For PI(4,5)P2-bound structure, purified protein was incubated with 0.5 mM PI(4,5)P2 on ice for 4 hr.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "5f875b58-5a62-44bc-b3ff-f5b09e24c7f1",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C84",
+      "claim": "The lipid ligand used in this study is PI(4,5)P2 diC8.",
+      "claim_type": "EXPLICIT",
+      "source": "The lipid ligand used in this study is PI(4,5)P2 diC8 (Echelon)",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "bf6c40ca-e1ff-4737-9fb7-2e38cdad4202",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C85",
+      "claim": "SM competition assays with SF-51 and ML-SI1 were conducted under pH 4.6.",
+      "claim_type": "EXPLICIT",
+      "source": "SM competition assays with SF-51 and ML-SI1 were conducted under pH 4.6.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the Materials and methods section.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "8d48c102-697d-45bf-8ec4-86c18e0a31ff",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "claim_id": "C86",
+      "claim": "The adverse effect of SM on agonist or antagonist is subtle and is measurable only at low luminal pH.",
+      "claim_type": "EXPLICIT",
+      "source": "Currents shown in (b) and (c) were recorded using patch clamp in whole-cell configuration with pH 4.6 in the bath solution as the adverse effect of SM on agonist or antagonist is subtle and is measurable only at low luminal pH.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated in the figure legend for Figure 4.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "TRPML1 is a lysosomal cation channel whose loss-of-function mutations cause MLIV, and it plays critical roles in cellular processes including lipid accumulation, signaling, lysosome trafficking, and autophagy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C2, C15-C20 are well-established background knowledge supported by multiple citations. These claims provide context for the study and are not contested by the current work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "d0e91291-2356-491b-807c-33786bfa5407",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "TRPML1 undergoes global conformational changes upon ligand binding, with ligands binding at two hotspots (N-terminal polybasic pocket and inter-subunit interface), and ligand-induced local changes propagate throughout the channel to enable allosteric regulation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C3-C4 and C21-C31 describe prior structural and functional knowledge about TRPML1 gating mechanisms, supported by citations and structural data (Figure 1a, Video 1). This establishes the foundation for the current study's investigation of allosteric mutations.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Tyr404 at the C-terminus of the S4 helix is a functionally critical residue where Y404W mutation yields a constitutively active gain-of-function channel and Y404A mutation yields a loss-of-function channel with reduced agonist efficacy.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C5-C7, C32-C34, C36-C37 are supported by electrophysiological data (Figures 1c-g) showing Y404W produces large currents without ligands while Y404A shows reduced currents even with agonist. The dose-response data (C82, Figure 1f) provides quantitative support with EC50 values.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "0ae2fc4d-738f-42e5-b1e0-daa8af1e9f9c",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Y404W and Y404A allosteric mutations mimic ligand activation or inhibition without interfering with ligand binding, as both mutants remain susceptible to modulation by agonists and antagonists.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C8-C9, C35, C76 are supported by electrophysiological data showing antagonists can inhibit Y404W (Figure 1d) and agonists can partially activate Y404A (Figure 1e). The distinction from pore-locking proline mutants (C35) is appropriately cited.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "80369360-9cc0-4ca2-ac3b-1a842261a43f",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Y404W and Y404A mutants are better targets for screening potent TRPML1 activators and inhibitors.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C10 is a forward-looking conclusion based on the properties of the mutants, but no actual screening experiments are presented to validate this assertion. This remains a hypothesis requiring future experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "1d07c084-0604-4404-99d6-d95597a680c6",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "The Y404W mutant structure at 2.86 \u00c5 resolution reveals an open conformation identical to ligand-activated TRPML1, where the larger indole ring of W404 provides better spatial fitting and additional van der Waals contacts in the pocket between S1, S3, and S4 helices, stabilizing the S4 bend that activates the channel.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C38-C44, C75, C80-C81 are supported by cryo-EM structural data (Figures 2, 2\u2014figure supplements 1-2) at 2.86 \u00c5 resolution with local resolution of 3.2 \u00c5 at the W404 region. The structural comparison with wild-type open TRPML1 (Figure 2a-b) validates the mechanism of gain-of-function.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "10d9fab1-bdc0-40ad-95c0-a8b6cbf13aea",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Arg403 plays dual essential roles in TRPML1 gating by forming part of the pocket that stabilizes Tyr404 and by forming a salt bridge with PI(3,5)P2, and the R403C MLIV patient variant is a loss-of-function mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C47 are supported by structural analysis and appropriate citations. The dual role of Arg403 is consistent with the structural data, and the R403C patient variant information is properly cited (Chen et al., 2014).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The high-resolution PI(4,5)P2-bound TRPML1 structure at 2.46 \u00c5 reveals that PI(4,5)P2 stabilizes the closed conformation by forming a bridging interaction between S1 and S2 helices, distinct from PI(3,5)P2 binding, thereby allosterically inhibiting agonist activation by hindering S1 movement required for channel opening.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C12, C48-C54, C70-C74, C77, C83-C84 are supported by high-resolution cryo-EM structural data (Figures 3, 3\u2014figure supplements 1-2) showing clear density for the PI(4,5)P2 head group and its distinct binding mode compared to PI(3,5)P2. The mechanistic explanation for allosteric inhibition through S1-S2 bridging is well-supported by structural comparisons (Figure 3e).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "An endogenous choline-containing phospholipid, likely sphingomyelin, is identified in the PI(4,5)P2-bound structure at the agonist/antagonist binding site, with its alkyl chain overlapping the ligand binding pocket, providing structural explanation for sphingomyelin's inhibitory effect on agonist activation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C13-C14, C57-C63, C78-C79 are supported by clear structural density (Figure 4a) and functional data showing SM reduces SF-51 activation (Figure 4b). The identification as sphingomyelin is appropriately qualified as 'likely' based on the choline head group and literature citations.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "007f0a48-d765-4b65-83d6-e2e6abb36caf",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Sphingomyelin functions as a competitive modulator rather than a direct inhibitor, competing with both agonists and antagonists at their binding site, as demonstrated by SM enrichment reducing agonist activation but also mitigating antagonist inhibition of the Y404W mutant.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C64-C69, C85-C86 present a mechanistic hypothesis supported by functional data (Figures 4b-c, Figure 4\u2014figure supplement 2). The competitive mechanism is validated by showing SM both reduces agonist activation (C63) and mitigates antagonist inhibition (C68). The requirement for low pH (C85-C86) is appropriately noted as a methodological constraint.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "1e002674-ff2b-41a0-b048-14a8e3186a0a",
+      "content_id": "c1092b74-9a28-4065-8a0f-a8b247fbbcab",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The upward movement of the S1 helix is a major conformational change between open and closed states, prerequisite for Tyr404 insertion and S4 bending, and PI(4,5)P2-mediated S1-S2 bridging hinders this movement to stabilize the closed conformation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C55-C56 are supported by structural comparisons (Figure 3e) showing the S1 movement and its relationship to channel gating. The mechanistic link between PI(4,5)P2 binding, S1 movement restriction, and channel inhibition is well-supported by the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "a48de6c4-29f5-4722-bc74-b0b9476ea2c8",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors identified Tyr404 as a functionally critical residue at the C-terminus of the S4 helix, demonstrating that Y404W mutation yields a gain-of-function channel with large inward-rectifying currents without ligands, while Y404A mutation yields a loss-of-function channel with much lower currents even in the presence of potent agonist ML-SA1.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer explicitly states that the authors 'provide compelling electrophysiology evidence which supports the proposed Y404W gain of function effect' and that they 'functionally demonstrate that an alanine mutation at this site causes a loss of function.' The electrophysiological data showing the functional consequences of these mutations is accepted without critique.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "b341535b-a4c6-4f11-95ac-8de0af988f83",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The Y404W and Y404A allosteric mutations mimic ligand activation or inhibition without interfering with ligand binding, and both mutant channels remain susceptible to agonist or antagonist modulation, making them better targets for screening TRPML1 modulators. This is distinct from other gain-of-function mutants that lock the pore open.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer notes that 'the two gain- and loss-of-function mutants can still be allosterically modulated by antagonists and agonists' because 'Tyr404 is distant from the hot spots for ligand binding.' The functional data showing continued ligand responsiveness is accepted, supporting the claim that these mutants are useful tools.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "b7d5a370-7908-484a-8c75-db1ef75243e5",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "The cryo-EM structure of Y404W mutant at 2.86 \u00c5 resolution reveals that it adopts an open conformation identical to ligand-activated TRPML1. The larger indole ring of Trp404 provides better spatial fitting into the pocket surrounded by S1, S3, and S4 helices with extra van der Waals contacts, facilitating S4 bending that propagates to the pore through the S4-S5 linker to activate the channel.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer states that the authors 'provide the first high resolution cryo-EM structure of a mutant (Y404W) TRPML1 channel in the open state without any activating ligands' and that they 'propose an allosteric mechanism whereby the engineered W404 sidechain provides extra van der Waals contacts within a pocket surrounded by helices of the voltage sensor-like domain (VSLD) and causes S4 bending which in turn opens the pore through the S4-S5 linker.' This structural interpretation is accepted.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "c7ce64e3-fb9e-465f-a600-7670739c0949",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "The high-resolution structure of PI(4,5)P2-bound TRPML1 at 2.46 \u00c5 reveals that PI(4,5)P2 binds at the N-terminal pocket with its head group forming a bridging interaction between S1 and S2, which hinders S1 movement and stabilizes the channel in the closed conformation, thereby allosterically inhibiting agonist activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer states that the authors 'solve a cryo-EM structure of TRPML1 bound to PI(4,5)P2 in the closed state and provide functional evidence that PI(4,5)P2 occupancy inhibits TRPML1 currents.' The structural mechanism showing how PI(4,5)P2 stabilizes the closed state through bridging interactions is accepted as explaining the allosteric inhibition.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "ff3c587e-c780-4c5c-a0c8-3822e755077d",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "The PI(4,5)P2-bound TRPML1 structure reveals a well-defined density from an endogenous choline-containing phospholipid (likely sphingomyelin or phosphatidylcholine) at the inter-subunit interface between S5 and S6, overlapping with the hotspot for agonists and antagonists, suggesting competitive binding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The reviewer notes that 'within this same structure, the authors observe a density which may be attributed to sphingomyelin (or possibly phosphocholine)' and accepts the structural observation. The identification of the lipid density and its location at the agonist/antagonist binding site is not questioned.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "f42d8d38-280c-4e35-bd2b-34e809347fd7",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "Sphingomyelin enrichment reduces agonist-activated TRPML1 currents, but the authors hypothesize that SM stabilizes rather than directly inhibits the channel, with inhibition being an indirect effect from competition against agonist binding. Supporting this, SM shows no obvious inhibition of Y404W mutant but mitigates antagonist ML-SI1 inhibition, confirming competitive binding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The reviewer states that the authors 'report an antagonist effect of sphingomyelin on TRPML1 currents' using electrophysiology, but the mechanistic interpretation is presented as a hypothesis ('we hypothesize that the role of sphingomyelin is to stabilize rather than directly inhibit'). While the functional data showing SM effects on WT and Y404W are accepted, the competitive binding mechanism remains a proposed model rather than definitively proven.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "1963d269-247e-4e96-bac3-40a756452842",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "TRPML1 gating involves global conformational changes of almost the entire channel mediated by tight inter- and intra-subunit packing. Ligand-induced local conformational changes propagate throughout the channel, with PI(3,5)P2 and rapamycin-induced changes converging on S4 helix bending, coupled to Tyr404 insertion into a pocket between S1, S3, and S4.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor's summary states that the report 'describes local and global structural changes driven by binding of regulatory phospholipids and by mutations that allosterically cause gain or loss of channel function' and that 'a proposed allosteric gating mechanism is partially supported by functional electrophysiology results.' The global conformational change mechanism is accepted based on structural comparisons.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "270c7fa3-ad70-4802-b127-d62e160323a7",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "A high-resolution structure of TRPML1 in complex with PI(4,5)P2 inhibitor was determined, revealing the structural basis underlying PI(4,5)P2 inhibition. This improves upon a previous low-resolution structure that failed to explain how PI(4,5)P2 binding stabilizes the closed state.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor's summary states that 'most of the claims related to the allosteric regulation of TRPML1 are convincingly supported by two new cryo-EM structures which are evaluated within the context of previously reported TRPML1 structures.' The high-resolution PI(4,5)P2-bound structure is accepted as a key contribution.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Background claims about TRPML1 being a lysosomal cation channel, its role in MLIV disease, cellular functions, and regulation by various ligands including PI(3,5)P2, PI(4,5)P2, synthetic agonists/antagonists, rapamycin, and sphingomyelin.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are established background facts cited from the literature. The reviewers do not question these foundational claims, which are standard knowledge in the field and properly cited.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "1e162b8e-e73f-4f52-9920-32c5f810871f",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Background structural observations about TRPML1 including convergence of ligand-binding sites to two hotspots, similarity of open structures regardless of activation stimuli, and the dual role of Arg403 in gating and PI(3,5)P2 binding.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These claims are based on previously published structures and are cited appropriately. The reviewers accept these as established context for the current study without critique.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "d707b7f8-9cf6-4fb1-b924-eea76dfc0369",
+      "content_id": "5d028af0-0bd8-4306-bbaa-2376ba0fd344",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "TRPML1 can be allosterically regulated by various ligands, and an endogenous phospholipid likely from sphingomyelin is identified in the structure at the same hotspot for agonists and antagonists, providing a plausible structural explanation for sphingomyelin's inhibitory effect on agonist activation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "The editor's summary states that 'this important report describes local and global structural changes driven by binding of regulatory phospholipids' and the reviewer accepts the structural observation of the endogenous lipid. The plausibility of the mechanistic explanation is accepted based on the structural data.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7830feb1-2ae3-4564-8aea-4a127c34be54",
+      "result_id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293"
+    },
+    {
+      "claim_id": "86f5c820-da6d-4060-b8da-200fcf744cc6",
+      "result_id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293"
+    },
+    {
+      "claim_id": "eccff455-f74f-4aa2-b9e0-27ea95aadfbc",
+      "result_id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293"
+    },
+    {
+      "claim_id": "fcda2e0e-6bba-4ebb-be00-2c84a00e866f",
+      "result_id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293"
+    },
+    {
+      "claim_id": "6a195c27-42c7-4bdb-a515-bdbecb892465",
+      "result_id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293"
+    },
+    {
+      "claim_id": "a4efdfbc-05e9-4492-94ed-6ccffd1f2c5b",
+      "result_id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293"
+    },
+    {
+      "claim_id": "1b62a90c-6ca1-4694-b0b2-abe2069f7dfc",
+      "result_id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293"
+    },
+    {
+      "claim_id": "17886b37-b052-46d2-af42-ff4f8f14a4ea",
+      "result_id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293"
+    },
+    {
+      "claim_id": "88f31141-a834-4456-9e2a-6b7780db9abb",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "d069a600-074e-46da-932b-4aaba408bcf5",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "bbcbbc74-3f69-4f28-afee-9008356632c2",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "011ecf7f-c6fc-4c2c-96ae-80adca5ce80a",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "8a6c93f3-abc7-43a2-823e-daf355647836",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "cdd7d7f8-2874-4014-a565-6969700c1a24",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "e2d521a4-f317-4b42-a010-05308ea492f8",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "acbac1b4-2d17-4569-8a94-5aaf65fa3cfc",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "c99693b0-a3ec-4ea9-ba81-0c0e6267745f",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "6f64c296-2dfa-4a77-8b98-73a1532af3cf",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "96f0bcc4-fb9a-4999-9b62-0ab0ec0aa0dc",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "0ae52236-6a1d-4e8b-a993-800af6e7ee74",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "476b9e5f-38a2-460b-9ed9-022b548a3bad",
+      "result_id": "d0e91291-2356-491b-807c-33786bfa5407"
+    },
+    {
+      "claim_id": "21e85924-358c-4f36-a747-01f6dc5eaab9",
+      "result_id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24"
+    },
+    {
+      "claim_id": "6f1b961e-d300-4ee9-b67b-4d2be2e179fd",
+      "result_id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24"
+    },
+    {
+      "claim_id": "b87dfa8c-5fcb-4b87-b474-6b583c3592cf",
+      "result_id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24"
+    },
+    {
+      "claim_id": "35c288b8-b94e-407d-93de-c977fbd07480",
+      "result_id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24"
+    },
+    {
+      "claim_id": "5b78822e-86c1-429f-9501-e95e834b9e0e",
+      "result_id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24"
+    },
+    {
+      "claim_id": "32a743fa-aba8-491b-bd31-1f4a86cab58f",
+      "result_id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24"
+    },
+    {
+      "claim_id": "c9baec30-7ec1-4d1a-ba90-e6d17b27f5fa",
+      "result_id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24"
+    },
+    {
+      "claim_id": "db8c7e95-3b37-4e47-abfa-ee0f13890025",
+      "result_id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24"
+    },
+    {
+      "claim_id": "be47c693-e6f9-4079-b941-bf4a25420951",
+      "result_id": "0ae2fc4d-738f-42e5-b1e0-daa8af1e9f9c"
+    },
+    {
+      "claim_id": "0455ee03-bd85-464d-a90c-63d0f0a56b8f",
+      "result_id": "0ae2fc4d-738f-42e5-b1e0-daa8af1e9f9c"
+    },
+    {
+      "claim_id": "5880b2af-aaea-45d3-a662-020f3758d6d0",
+      "result_id": "0ae2fc4d-738f-42e5-b1e0-daa8af1e9f9c"
+    },
+    {
+      "claim_id": "1ed1fa44-3400-45aa-9dc5-0bd3d613cf62",
+      "result_id": "0ae2fc4d-738f-42e5-b1e0-daa8af1e9f9c"
+    },
+    {
+      "claim_id": "4f71a83e-2d63-43de-9da3-9b0ce79c1a9c",
+      "result_id": "80369360-9cc0-4ca2-ac3b-1a842261a43f"
+    },
+    {
+      "claim_id": "1455afe0-0ad0-43a9-b8a3-9b1ae1b44aa0",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "ade8c591-df74-4877-90ba-0b628dbfe47f",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "f4ddcc62-856d-4ae6-a17e-40bce4bb0090",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "7e849f0b-8e4f-4f8c-847b-20da364acade",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "ca96a179-0efc-4ea3-b7b9-fa3526476dd3",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "22527f6e-6d96-4648-906b-5d4f663f52f7",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "69737e71-8188-4dcd-a2a8-14e7c64bbf78",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "89d2dabd-a1e2-4a00-88b8-3437adbf5f25",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "10dd1821-e12c-44c6-994e-bb4764ea0f8f",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "a1a49e05-95a8-4f55-9f2d-6ebc1281c523",
+      "result_id": "1d07c084-0604-4404-99d6-d95597a680c6"
+    },
+    {
+      "claim_id": "bfeeb2c1-ca0b-490d-a91c-b022a5830ae8",
+      "result_id": "10d9fab1-bdc0-40ad-95c0-a8b6cbf13aea"
+    },
+    {
+      "claim_id": "a42d7a40-ce4c-44a7-ab98-41c18e3ff0ad",
+      "result_id": "10d9fab1-bdc0-40ad-95c0-a8b6cbf13aea"
+    },
+    {
+      "claim_id": "85c5870b-8ca7-450f-9ef9-243592db7b0a",
+      "result_id": "10d9fab1-bdc0-40ad-95c0-a8b6cbf13aea"
+    },
+    {
+      "claim_id": "7711c5f2-93db-4de2-90d8-cf0e4789262b",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "4641e352-87de-48db-8811-6e8f188db92e",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "5701e089-e7c4-4ce0-81e8-aeb41357679b",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "12dab32a-f705-4d06-a396-ed8cf3d097db",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "2f8dbc03-4918-4294-9fe9-50a3eb2e103c",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "af96d8f8-5b92-4890-9d78-e587f5477aaf",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "e3988f1d-e068-4491-8ebe-f7c25f1f9743",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "ae993391-f035-46b0-bd52-72ab89ccc577",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "488fa031-2164-4d5f-9101-79e4b1aef1c3",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "b6bfd78d-7904-4130-8ed9-95968279f788",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "725f723b-9b78-4119-8597-8713c790a42b",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "019c1dae-79ef-48a7-8ad2-58df32271b9f",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "2e9d2ea1-321f-40f8-836c-d49a71862d37",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "414df7bd-658d-4ed5-9711-8588cae4c650",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "c303817e-8bb6-4634-a724-d2df6053a35a",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "23754962-bff0-409c-8761-1934950857db",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "5f875b58-5a62-44bc-b3ff-f5b09e24c7f1",
+      "result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b"
+    },
+    {
+      "claim_id": "60124c79-4798-4549-b324-d4470a5c798c",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "2488ffa9-1a59-4103-b2e9-3aa535ca10cb",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "ba8b7ca9-e16f-4918-8264-8227a2b213f2",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "b516ef09-31b4-4390-bac2-779d2cb15501",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "c0c83da1-90cf-4b19-b2ab-969dd2808c7b",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "aa20d0e7-3d2b-4545-a6ec-5ddb2f864a9e",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "7c1e8e62-23a3-4b33-bc91-4e40dae16146",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "eb29b092-4ca9-46e8-a5b8-804798735536",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "f4049675-97f8-418c-9388-96cf742f64dd",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "17fbfef5-2e4a-4e83-ac0a-ddaf4675d1d9",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "d9383cdd-1c2b-4d3c-b01e-bede63ff1012",
+      "result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63"
+    },
+    {
+      "claim_id": "a3301cbf-f854-48a8-95ad-4d41876ca9b1",
+      "result_id": "007f0a48-d765-4b65-83d6-e2e6abb36caf"
+    },
+    {
+      "claim_id": "369b1a07-56cb-4886-88e2-ebcf54a2268b",
+      "result_id": "007f0a48-d765-4b65-83d6-e2e6abb36caf"
+    },
+    {
+      "claim_id": "af8b1e82-31f9-4d8f-8cbb-8f181620fd09",
+      "result_id": "007f0a48-d765-4b65-83d6-e2e6abb36caf"
+    },
+    {
+      "claim_id": "a05d2416-ae0e-45d7-9633-03235f3d8be0",
+      "result_id": "007f0a48-d765-4b65-83d6-e2e6abb36caf"
+    },
+    {
+      "claim_id": "cf7f43ac-c3be-47d7-9475-b018d8827d7c",
+      "result_id": "007f0a48-d765-4b65-83d6-e2e6abb36caf"
+    },
+    {
+      "claim_id": "c2c534dd-350c-4dfc-b50b-aee9ccba6b68",
+      "result_id": "007f0a48-d765-4b65-83d6-e2e6abb36caf"
+    },
+    {
+      "claim_id": "bf6c40ca-e1ff-4737-9fb7-2e38cdad4202",
+      "result_id": "007f0a48-d765-4b65-83d6-e2e6abb36caf"
+    },
+    {
+      "claim_id": "8d48c102-697d-45bf-8ec4-86c18e0a31ff",
+      "result_id": "007f0a48-d765-4b65-83d6-e2e6abb36caf"
+    },
+    {
+      "claim_id": "e2aa4764-0b7d-454f-bf54-72bd1f2048b7",
+      "result_id": "1e002674-ff2b-41a0-b048-14a8e3186a0a"
+    },
+    {
+      "claim_id": "e4fa7d4d-47e5-4c9e-a5fb-c819e0730239",
+      "result_id": "1e002674-ff2b-41a0-b048-14a8e3186a0a"
+    },
+    {
+      "claim_id": "21e85924-358c-4f36-a747-01f6dc5eaab9",
+      "result_id": "a48de6c4-29f5-4722-bc74-b0b9476ea2c8"
+    },
+    {
+      "claim_id": "6f1b961e-d300-4ee9-b67b-4d2be2e179fd",
+      "result_id": "a48de6c4-29f5-4722-bc74-b0b9476ea2c8"
+    },
+    {
+      "claim_id": "b87dfa8c-5fcb-4b87-b474-6b583c3592cf",
+      "result_id": "a48de6c4-29f5-4722-bc74-b0b9476ea2c8"
+    },
+    {
+      "claim_id": "5b78822e-86c1-429f-9501-e95e834b9e0e",
+      "result_id": "a48de6c4-29f5-4722-bc74-b0b9476ea2c8"
+    },
+    {
+      "claim_id": "32a743fa-aba8-491b-bd31-1f4a86cab58f",
+      "result_id": "a48de6c4-29f5-4722-bc74-b0b9476ea2c8"
+    },
+    {
+      "claim_id": "c9baec30-7ec1-4d1a-ba90-e6d17b27f5fa",
+      "result_id": "a48de6c4-29f5-4722-bc74-b0b9476ea2c8"
+    },
+    {
+      "claim_id": "db8c7e95-3b37-4e47-abfa-ee0f13890025",
+      "result_id": "a48de6c4-29f5-4722-bc74-b0b9476ea2c8"
+    },
+    {
+      "claim_id": "be47c693-e6f9-4079-b941-bf4a25420951",
+      "result_id": "b341535b-a4c6-4f11-95ac-8de0af988f83"
+    },
+    {
+      "claim_id": "0455ee03-bd85-464d-a90c-63d0f0a56b8f",
+      "result_id": "b341535b-a4c6-4f11-95ac-8de0af988f83"
+    },
+    {
+      "claim_id": "4f71a83e-2d63-43de-9da3-9b0ce79c1a9c",
+      "result_id": "b341535b-a4c6-4f11-95ac-8de0af988f83"
+    },
+    {
+      "claim_id": "5880b2af-aaea-45d3-a662-020f3758d6d0",
+      "result_id": "b341535b-a4c6-4f11-95ac-8de0af988f83"
+    },
+    {
+      "claim_id": "1ed1fa44-3400-45aa-9dc5-0bd3d613cf62",
+      "result_id": "b341535b-a4c6-4f11-95ac-8de0af988f83"
+    },
+    {
+      "claim_id": "1455afe0-0ad0-43a9-b8a3-9b1ae1b44aa0",
+      "result_id": "b7d5a370-7908-484a-8c75-db1ef75243e5"
+    },
+    {
+      "claim_id": "ade8c591-df74-4877-90ba-0b628dbfe47f",
+      "result_id": "b7d5a370-7908-484a-8c75-db1ef75243e5"
+    },
+    {
+      "claim_id": "f4ddcc62-856d-4ae6-a17e-40bce4bb0090",
+      "result_id": "b7d5a370-7908-484a-8c75-db1ef75243e5"
+    },
+    {
+      "claim_id": "7e849f0b-8e4f-4f8c-847b-20da364acade",
+      "result_id": "b7d5a370-7908-484a-8c75-db1ef75243e5"
+    },
+    {
+      "claim_id": "ca96a179-0efc-4ea3-b7b9-fa3526476dd3",
+      "result_id": "b7d5a370-7908-484a-8c75-db1ef75243e5"
+    },
+    {
+      "claim_id": "22527f6e-6d96-4648-906b-5d4f663f52f7",
+      "result_id": "b7d5a370-7908-484a-8c75-db1ef75243e5"
+    },
+    {
+      "claim_id": "69737e71-8188-4dcd-a2a8-14e7c64bbf78",
+      "result_id": "b7d5a370-7908-484a-8c75-db1ef75243e5"
+    },
+    {
+      "claim_id": "5701e089-e7c4-4ce0-81e8-aeb41357679b",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "12dab32a-f705-4d06-a396-ed8cf3d097db",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "2f8dbc03-4918-4294-9fe9-50a3eb2e103c",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "af96d8f8-5b92-4890-9d78-e587f5477aaf",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "e3988f1d-e068-4491-8ebe-f7c25f1f9743",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "ae993391-f035-46b0-bd52-72ab89ccc577",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "488fa031-2164-4d5f-9101-79e4b1aef1c3",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "e2aa4764-0b7d-454f-bf54-72bd1f2048b7",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "e4fa7d4d-47e5-4c9e-a5fb-c819e0730239",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "019c1dae-79ef-48a7-8ad2-58df32271b9f",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "414df7bd-658d-4ed5-9711-8588cae4c650",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "c303817e-8bb6-4634-a724-d2df6053a35a",
+      "result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949"
+    },
+    {
+      "claim_id": "ba8b7ca9-e16f-4918-8264-8227a2b213f2",
+      "result_id": "ff3c587e-c780-4c5c-a0c8-3822e755077d"
+    },
+    {
+      "claim_id": "b516ef09-31b4-4390-bac2-779d2cb15501",
+      "result_id": "ff3c587e-c780-4c5c-a0c8-3822e755077d"
+    },
+    {
+      "claim_id": "c0c83da1-90cf-4b19-b2ab-969dd2808c7b",
+      "result_id": "ff3c587e-c780-4c5c-a0c8-3822e755077d"
+    },
+    {
+      "claim_id": "aa20d0e7-3d2b-4545-a6ec-5ddb2f864a9e",
+      "result_id": "ff3c587e-c780-4c5c-a0c8-3822e755077d"
+    },
+    {
+      "claim_id": "7c1e8e62-23a3-4b33-bc91-4e40dae16146",
+      "result_id": "ff3c587e-c780-4c5c-a0c8-3822e755077d"
+    },
+    {
+      "claim_id": "17fbfef5-2e4a-4e83-ac0a-ddaf4675d1d9",
+      "result_id": "ff3c587e-c780-4c5c-a0c8-3822e755077d"
+    },
+    {
+      "claim_id": "d9383cdd-1c2b-4d3c-b01e-bede63ff1012",
+      "result_id": "ff3c587e-c780-4c5c-a0c8-3822e755077d"
+    },
+    {
+      "claim_id": "eb29b092-4ca9-46e8-a5b8-804798735536",
+      "result_id": "f42d8d38-280c-4e35-bd2b-34e809347fd7"
+    },
+    {
+      "claim_id": "f4049675-97f8-418c-9388-96cf742f64dd",
+      "result_id": "f42d8d38-280c-4e35-bd2b-34e809347fd7"
+    },
+    {
+      "claim_id": "a3301cbf-f854-48a8-95ad-4d41876ca9b1",
+      "result_id": "f42d8d38-280c-4e35-bd2b-34e809347fd7"
+    },
+    {
+      "claim_id": "369b1a07-56cb-4886-88e2-ebcf54a2268b",
+      "result_id": "f42d8d38-280c-4e35-bd2b-34e809347fd7"
+    },
+    {
+      "claim_id": "af8b1e82-31f9-4d8f-8cbb-8f181620fd09",
+      "result_id": "f42d8d38-280c-4e35-bd2b-34e809347fd7"
+    },
+    {
+      "claim_id": "a05d2416-ae0e-45d7-9633-03235f3d8be0",
+      "result_id": "f42d8d38-280c-4e35-bd2b-34e809347fd7"
+    },
+    {
+      "claim_id": "cf7f43ac-c3be-47d7-9475-b018d8827d7c",
+      "result_id": "f42d8d38-280c-4e35-bd2b-34e809347fd7"
+    },
+    {
+      "claim_id": "c2c534dd-350c-4dfc-b50b-aee9ccba6b68",
+      "result_id": "f42d8d38-280c-4e35-bd2b-34e809347fd7"
+    },
+    {
+      "claim_id": "d069a600-074e-46da-932b-4aaba408bcf5",
+      "result_id": "1963d269-247e-4e96-bac3-40a756452842"
+    },
+    {
+      "claim_id": "6f64c296-2dfa-4a77-8b98-73a1532af3cf",
+      "result_id": "1963d269-247e-4e96-bac3-40a756452842"
+    },
+    {
+      "claim_id": "96f0bcc4-fb9a-4999-9b62-0ab0ec0aa0dc",
+      "result_id": "1963d269-247e-4e96-bac3-40a756452842"
+    },
+    {
+      "claim_id": "0ae52236-6a1d-4e8b-a993-800af6e7ee74",
+      "result_id": "1963d269-247e-4e96-bac3-40a756452842"
+    },
+    {
+      "claim_id": "476b9e5f-38a2-460b-9ed9-022b548a3bad",
+      "result_id": "1963d269-247e-4e96-bac3-40a756452842"
+    },
+    {
+      "claim_id": "35c288b8-b94e-407d-93de-c977fbd07480",
+      "result_id": "1963d269-247e-4e96-bac3-40a756452842"
+    },
+    {
+      "claim_id": "89d2dabd-a1e2-4a00-88b8-3437adbf5f25",
+      "result_id": "1963d269-247e-4e96-bac3-40a756452842"
+    },
+    {
+      "claim_id": "7711c5f2-93db-4de2-90d8-cf0e4789262b",
+      "result_id": "270c7fa3-ad70-4802-b127-d62e160323a7"
+    },
+    {
+      "claim_id": "4641e352-87de-48db-8811-6e8f188db92e",
+      "result_id": "270c7fa3-ad70-4802-b127-d62e160323a7"
+    },
+    {
+      "claim_id": "2e9d2ea1-321f-40f8-836c-d49a71862d37",
+      "result_id": "270c7fa3-ad70-4802-b127-d62e160323a7"
+    },
+    {
+      "claim_id": "7830feb1-2ae3-4564-8aea-4a127c34be54",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "86f5c820-da6d-4060-b8da-200fcf744cc6",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "eccff455-f74f-4aa2-b9e0-27ea95aadfbc",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "fcda2e0e-6bba-4ebb-be00-2c84a00e866f",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "6a195c27-42c7-4bdb-a515-bdbecb892465",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "a4efdfbc-05e9-4492-94ed-6ccffd1f2c5b",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "1b62a90c-6ca1-4694-b0b2-abe2069f7dfc",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "17886b37-b052-46d2-af42-ff4f8f14a4ea",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "bbcbbc74-3f69-4f28-afee-9008356632c2",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "011ecf7f-c6fc-4c2c-96ae-80adca5ce80a",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "8a6c93f3-abc7-43a2-823e-daf355647836",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "cdd7d7f8-2874-4014-a565-6969700c1a24",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "e2d521a4-f317-4b42-a010-05308ea492f8",
+      "result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b"
+    },
+    {
+      "claim_id": "acbac1b4-2d17-4569-8a94-5aaf65fa3cfc",
+      "result_id": "1e162b8e-e73f-4f52-9920-32c5f810871f"
+    },
+    {
+      "claim_id": "c99693b0-a3ec-4ea9-ba81-0c0e6267745f",
+      "result_id": "1e162b8e-e73f-4f52-9920-32c5f810871f"
+    },
+    {
+      "claim_id": "bfeeb2c1-ca0b-490d-a91c-b022a5830ae8",
+      "result_id": "1e162b8e-e73f-4f52-9920-32c5f810871f"
+    },
+    {
+      "claim_id": "a42d7a40-ce4c-44a7-ab98-41c18e3ff0ad",
+      "result_id": "1e162b8e-e73f-4f52-9920-32c5f810871f"
+    },
+    {
+      "claim_id": "85c5870b-8ca7-450f-9ef9-243592db7b0a",
+      "result_id": "1e162b8e-e73f-4f52-9920-32c5f810871f"
+    },
+    {
+      "claim_id": "b6bfd78d-7904-4130-8ed9-95968279f788",
+      "result_id": "1e162b8e-e73f-4f52-9920-32c5f810871f"
+    },
+    {
+      "claim_id": "725f723b-9b78-4119-8597-8713c790a42b",
+      "result_id": "1e162b8e-e73f-4f52-9920-32c5f810871f"
+    },
+    {
+      "claim_id": "88f31141-a834-4456-9e2a-6b7780db9abb",
+      "result_id": "d707b7f8-9cf6-4fb1-b924-eea76dfc0369"
+    },
+    {
+      "claim_id": "60124c79-4798-4549-b324-d4470a5c798c",
+      "result_id": "d707b7f8-9cf6-4fb1-b924-eea76dfc0369"
+    },
+    {
+      "claim_id": "2488ffa9-1a59-4103-b2e9-3aa535ca10cb",
+      "result_id": "d707b7f8-9cf6-4fb1-b924-eea76dfc0369"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "9f1fa0ac-1034-4763-b894-bfe024da8fbd",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "6b4e63a9-1421-4456-a3ad-c4f8a3b48d24",
+      "peer_result_id": "a48de6c4-29f5-4722-bc74-b0b9476ea2c8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the electrophysiological evidence for Y404W gain-of-function and Y404A loss-of-function mutations (C5-C7, C33-C34, C36-C37). OpenEval additionally references dose-response data (C82) and quantitative EC50 values, while peer review emphasizes the compelling nature of the functional demonstration. Both rate these claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "e1dc2697-4385-4823-9f44-ecc7b3e438ee",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "0ae2fc4d-738f-42e5-b1e0-daa8af1e9f9c",
+      "peer_result_id": "b341535b-a4c6-4f11-95ac-8de0af988f83",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations agree that the Y404W and Y404A mutants can still be modulated by agonists and antagonists (C8-C9, C35, C76). OpenEval notes the distinction from pore-locking proline mutants, while peer review emphasizes that Tyr404 is distant from ligand binding sites. However, OpenEval R4 does not address C10 (screening utility claim), which peer review includes and supports. Both rate the functional modulation claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "117247b6-b7e4-44ec-bd83-adaf3cf3e828",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1d07c084-0604-4404-99d6-d95597a680c6",
+      "peer_result_id": "b7d5a370-7908-484a-8c75-db1ef75243e5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the high-resolution cryo-EM structure of Y404W TRPML1 in the open state (C38-C44). OpenEval emphasizes the 2.86 \u00c5 resolution and local resolution details (C75, C80-C81), while peer review focuses on the allosteric mechanism whereby W404 provides van der Waals contacts causing S4 bending and pore opening. Both rate these structural claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "93f9bccf-34ef-4cc6-b1c3-279276d255c1",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b",
+      "peer_result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the PI(4,5)P2-bound structure and its allosteric inhibition mechanism (C48-C54, C72, C74, C77). OpenEval provides more comprehensive coverage including additional structural details (C11-C12, C70-C71, C73, C83-C84) and emphasizes the distinct binding mode compared to PI(3,5)P2. Peer review also includes the S1 movement mechanism (C55-C56) which OpenEval addresses separately in R11. Both rate these claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "2d077587-5c65-485c-9a5b-036befdf0219",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63",
+      "peer_result_id": "ff3c587e-c780-4c5c-a0c8-3822e755077d",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the structural observation of sphingomyelin (or phosphocholine) density at the agonist/antagonist binding site (C57-C61, C78-C79). OpenEval additionally references functional data showing SM reduces SF-51 activation (C13-C14, C62-C63), while peer review focuses on accepting the structural density observation. Both appropriately note the tentative identification of the lipid. Both rate these claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "0e221e1a-b466-4468-a5d2-9f53a93cd859",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "007f0a48-d765-4b65-83d6-e2e6abb36caf",
+      "peer_result_id": "f42d8d38-280c-4e35-bd2b-34e809347fd7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both evaluations address the sphingomyelin antagonist effect and competitive mechanism (C62-C69). OpenEval rates these claims as SUPPORTED based on functional data showing SM both reduces agonist activation and mitigates antagonist inhibition, while peer review rates them as UNCERTAIN, noting that the competitive binding mechanism is a proposed hypothesis rather than definitively proven. This represents a key disagreement in confidence level. OpenEval additionally addresses pH requirements (C85-C86) not mentioned in peer review.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "833713b8-2dab-4131-b79b-cf28b4ea7b32",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "6ad3d60f-2948-43fb-8992-f6d92fa7f293",
+      "peer_result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support the background and foundational claims about TRPML1 function, disease relevance, and regulatory mechanisms (C1-C2, C15-C20). These are established facts from the literature that neither evaluation questions. Both rate these claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "433a29f4-8a4a-431f-8f69-c48a1c7c8a05",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "d0e91291-2356-491b-807c-33786bfa5407",
+      "peer_result_id": "1963d269-247e-4e96-bac3-40a756452842",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations address prior structural knowledge about TRPML1 gating mechanisms (C4, C28-C32). OpenEval includes broader background claims (C3, C21-C27) establishing the foundation for the study, while peer review (R7) focuses on the global conformational change mechanism and accepts the allosteric gating mechanism as partially supported by functional data. Peer review also includes C75 (structural comparison). Both rate these claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "0763f1f6-f77d-463d-9751-38b7310b49b8",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "d0e91291-2356-491b-807c-33786bfa5407",
+      "peer_result_id": "62a3b3f4-bf89-474e-bcfb-a4f30ec2b13b",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on background claims (C21-C25) about TRPML1 structure and function. OpenEval R2 covers extensive prior structural knowledge (C3-C4, C21-C31), while peer R9 focuses on established background facts from literature (C1-C2, C15-C25). Both rate these foundational claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "cf43e128-56f6-470c-afd0-8deb44d49285",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "10d9fab1-bdc0-40ad-95c0-a8b6cbf13aea",
+      "peer_result_id": "1e162b8e-e73f-4f52-9920-32c5f810871f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations support claims about Arg403's dual role and the R403C patient variant (C45-C47). OpenEval emphasizes the structural analysis and appropriate citations, while peer review accepts these as established context from previously published structures. Peer review R10 also includes additional background claims (C26-C27, C70-C71) not in OpenEval R7. Both rate these claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "311129d2-2a9f-4c20-9cb1-94edec51e3eb",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1e002674-ff2b-41a0-b048-14a8e3186a0a",
+      "peer_result_id": "c7ce64e3-fb9e-465f-a600-7670739c0949",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations address the S1 movement mechanism (C55-C56) showing how PI(4,5)P2 binding restricts S1 movement and inhibits channel gating. OpenEval R11 focuses specifically on these mechanistic claims based on structural comparisons, while peer R4 includes these as part of a broader evaluation of the PI(4,5)P2 inhibition mechanism. Both rate these claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "fe88d620-0031-4460-ba52-bfea3731277e",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "5f0f92b1-df84-4639-9f4f-8f29bbf16e8b",
+      "peer_result_id": "270c7fa3-ad70-4802-b127-d62e160323a7",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations reference the high-resolution PI(4,5)P2-bound structure (C11-C12, C73). OpenEval R8 provides comprehensive structural details about the PI(4,5)P2 binding mechanism, while peer R8 (editor's summary) accepts the cryo-EM structures as convincingly supporting allosteric regulation claims. Limited overlap in specific claim IDs but both address the same structural contribution. Both rate these claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "6d0117b8-9b18-4edc-a050-c86226b605a9",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "5ae4bcde-968d-4c10-9d7f-e494ed7d7f63",
+      "peer_result_id": "d707b7f8-9cf6-4fb1-b924-eea76dfc0369",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluations address the sphingomyelin structural observation and mechanistic explanation (C13-C14). OpenEval R9 includes comprehensive coverage of SM binding and functional effects (C13-C14, C57-C63, C78-C79), while peer R11 focuses on accepting the structural observation of endogenous lipid and the plausibility of the mechanistic explanation. Both rate these claims as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "2ebc1ef4-a251-4881-aed1-35f770bed4af",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "80369360-9cc0-4ca2-ac3b-1a842261a43f",
+      "peer_result_id": "b341535b-a4c6-4f11-95ac-8de0af988f83",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "OpenEval R5 addresses C10 (screening utility claim) and rates it as UNCERTAIN because no actual screening experiments are presented to validate the assertion. Peer R2 includes C10 among claims about continued ligand responsiveness and rates it as SUPPORTED, viewing the mutants as useful tools based on their functional properties. This represents a disagreement in evaluation confidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    },
+    {
+      "id": "8155446f-04fa-42b4-a45f-f0b31c4467f4",
+      "submission_id": "a2e3bec6-48f3-4a70-b5d9-63a95d8a0f1c",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "80369360-9cc0-4ca2-ac3b-1a842261a43f",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval R5 evaluates C10 as UNCERTAIN, noting it is a forward-looking conclusion requiring future experimental validation. No corresponding isolated peer review evaluation focuses specifically on this claim, though peer R2 includes it among supported claims about the mutants' utility.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:35:52.610250Z"
+    }
+  ]
+}

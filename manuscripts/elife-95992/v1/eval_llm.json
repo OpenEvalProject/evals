@@ -1,0 +1,293 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The stalkless CTF mutant (CTF\u0394st) exhibits dramatic loss of NFAT reporter activation compared to wild-type CTF, reduced to empty vector control levels. This loss of activity is not due to differences in protein stability or membrane trafficking, as both total and cell surface expression levels of CTF\u0394st are comparable to wild-type CTF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C37 are directly supported by experimental data shown in Figures 1B-D and supplementary figures. The comparable expression levels (C36) combined with loss of reporter activity (C35) logically support the inference that the stalk is functionally required for signaling (C37). This is consistent with prior work (C38).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Synthetic stalk-derived peptides (p7, p9, p17, p19, p21) re-activate NFAT reporter signaling in CTF\u0394st-transfected cells. Peptides p7, p9, and p17 show specificity for mouse CTF\u0394st-expressing cells, while p19 and p21 activate both empty vector and CTF\u0394st-transfected cells, suggesting activation of endogenous human PC1. The solubility tag alone does not rescue CTF\u0394st signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 are supported by experimental data in Figure 1E and supplementary figures showing peptide-mediated rescue of CTF\u0394st signaling with appropriate controls. The inference that peptides act as soluble agonists in trans (C44-C45) is well-supported by the rescue data and control experiments ruling out solubility tag effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Computational modeling was performed using the cryo-EM structure of human PC1-PC2 complex to build a \u0394Stalk CTF model. Peptides p9, p17, and p21 were successfully docked to the \u0394Stalk CTF model using HPEPDOCK, with all peptides binding to the TOP domain and TOP-ECL1 interface. Peptide p21 occupied a similar binding region as the stalk in wild-type CTF.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C52 describe the computational methodology and initial docking results. The approach is clearly documented with appropriate citations and structural data. The docking results provide the starting conformations for subsequent Pep-GaMD simulations and are supported by figures showing binding locations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Pep-GaMD simulations of p9 binding to \u0394Stalk CTF revealed that p9 dissociates from the initial TOP-ECL1 binding pocket and rebinds to a slightly different region of the TOP domain. The top-ranked conformation shows polar interactions between p9 and protein residues (R3892-A2, H3864-A5) and a R3848-E4078 distance of 3.9 \u00c5, indicating a 'Closed/Active' state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C59 are supported by Pep-GaMD simulation data shown in Figure 2 and supplementary figures. The identification of the 'Bound' state with characteristic R3848-E4078 salt bridge distance is consistent across multiple independent simulations (C59), providing confidence in the computational results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Pep-GaMD simulations of p17 binding identified three low-energy states: 'Unbound,' 'Intermediate,' and 'Bound.' The 'Bound' state shows an antiparallel \u03b2-strand conformation with hydrophobic interactions at the TOP-ECL1 interface and R3848-E4078 distance of 4.1 \u00c5. The 'Intermediate' state shows a short helical turn with different TOP domain interactions and R3848-E4078 distance of 14.6 \u00c5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C70 are supported by Pep-GaMD simulation data in Figure 3 and supplementary figures. The identification of multiple binding states with distinct structural features and energetics is well-documented. However, only 2 of 5 simulations reached the 'Bound' state (C69-C70), indicating incomplete convergence, which the authors acknowledge (C126).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Pep-GaMD simulations of p21 binding identified a broad 'Bound' state with peptide folding on the TOP domain surface. The p21 peptide occupies a similar binding region as the stalk in wild-type CTF with extensive hydrophobic contacts. The R3848-E4078 distance of 3.8 \u00c5 indicates a 'Closed/Active' state, and all five simulations reached the 'Bound' state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C77 are strongly supported by Pep-GaMD simulation data in Figure 4 and supplementary figures. The consistency across all five independent simulations (C77) and large conformational changes observed (C76) provide robust evidence for the identified binding mode. The similarity to wild-type stalk binding (C73) validates the computational approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "Potts coevolution analysis of 1022 PC1 homologs identified strong interactions between the stalk and other residues. Six strongly interacting pairs were detected between the stalk and TOP domain, with multiple positions matching the 'Intermediate' and 'Bound' binding conformations from Pep-GaMD simulations. Additional interactions were found between the stalk and TM2-TM3/TM4-TM5 helices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C94 are supported by the Potts model analysis shown in Figure 5. The validation of the model through recapitulation of known structural contacts (C81-C82) and the remarkable agreement with Pep-GaMD simulation results (C85) provide strong independent evidence for the identified binding interfaces. The limitation to 394 residues (C80) is appropriately justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Residue-specific covariation analysis validated that the covarying residue pairs identified by the Potts model are consistent with biophysical interactions. Many covarying pairs exceeded the 1% threshold for statistical reliability, with patterns consistent with opposite-charge pairing, polar interactions, and hydrophobic packing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C103 are supported by the covariation analysis shown in Figure 5C. The validation that covarying pairs show chemically sensible patterns (charge complementarity, hydrophobic packing) strengthens confidence in the Potts model predictions. The use of established thresholds for statistical significance (C97) is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "MM/PBSA analysis calculated binding free energies for peptides p9, p17, and p21, with relative ranking (p21 > p9 > p17) consistent with experimental signaling data. Residue-wise energy decomposition identified key residues contributing to binding energies, with energetic contributions correlating to sequence coevolution predictions from the Potts model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C104-C110 are supported by MM/PBSA calculations presented in Tables 1-4. The agreement between computational binding free energies and experimental signaling activity (C105) validates the computational approach. The correlation with Potts model predictions (C110) provides additional orthogonal support for the identified interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C131",
+      "C132"
+    ],
+    "result": "Pep-GaMD simulations successfully refined peptide docking conformations, sampling diverse secondary structures including antiparallel \u03b2-strand and helical conformations. The bound peptides maintained \u0394Stalk CTF in the 'Closed/Active' conformation through formation of the R3848-E4078 salt bridge, initiating signal transduction from the TOP domain to the pore loop.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C132 summarize key findings from the Pep-GaMD simulations. While the authors acknowledge incomplete convergence (C126), the identification of representative low-energy conformations (C127) and consistent observation of the key R3848-E4078 interaction across peptides provides strong support for the proposed activation mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C137",
+      "C141",
+      "C142",
+      "C143"
+    ],
+    "result": "Sequence-based covariation analysis and Pep-GaMD simulations identified matching interacting pairs, providing complementary evidence for the 'Bound' and 'Intermediate' binding states. Most identified interactions between stalk and TOP domain are consistent with these binding states, suggesting evolutionary conservation of stalk TA binding states across PC1 orthologs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C143 describe the integration of computational and evolutionary analyses. The convergence of independent methods (Pep-GaMD simulations, Potts coevolution, MM/PBSA) on similar binding interfaces provides strong support for the identified interactions. The inference of evolutionary conservation (C135) is well-supported by the covariation data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "PC1 CTF-mediated NFAT reporter activation depends on the N-terminal extracellular stalk, as demonstrated by loss of activity with CTF\u0394st and rescue by synthetic stalk-derived peptides. Peptides p7, p9, and p17 specifically activate mouse CTF\u0394st-expressing cells, consistent with stalk peptides acting as soluble tethered agonists and supporting an ADGR-like activation mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C116 integrate experimental findings from cell-based assays. The combination of loss-of-function (CTF\u0394st) and gain-of-function (peptide rescue) experiments with appropriate specificity controls provides strong evidence for the stalk-dependent activation mechanism and ADGR-like TA model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149"
+    ],
+    "result": "The binding interactions of PC1 stalk peptides share similarities with adhesion GPCRs (ADGRs). Similar to the hydrophobic F/Y/LX\u03c6\u03c6\u03c6X\u03c6 motif in ADGR Stachel sequences that forms finger-like projections in TM bundle hydrophobic pits, PC1 peptide agonists p9, p17, and p21 form intense hydrophobic interactions with TOP domain hydrophobic pockets, with p21 occupying a similar binding pocket as the tethered stalk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C144-C149 compare PC1 findings to known ADGR mechanisms. The comparison is supported by structural similarities observed in simulations (C148) and consistency with previous work (C149). However, the comparison is somewhat limited as PC1 peptides bind the TOP domain rather than inserting into the TM bundle like ADGR Stachel sequences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The stalkless CTF (\u0394Stalk CTF) mimics ADPKD-associated stalk mutants by being defective in cell signaling assays and rarely forming the R3848-E4078 salt bridge. The ADPKD-associated G3052R stalk mutation shows the same reduction in activity and loss of active/closed conformation interactions as the stalkless CTF, justifying use of \u0394Stalk CTF as a representative biologically relevant mutant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 and C122-C124 are supported by citations to previous work (Pawnikar et al., 2022). The rationale for using \u0394Stalk CTF as a model system (C124) is well-justified based on its similarity to disease-associated mutations. This provides biological relevance to the computational studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C136",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "Covariation analysis has inherent limitations: it identifies interactions important during any part of the protein lifecycle without distinguishing conformational states, and structural contacts may be incompletely detected when masked by high conservation, subfamily specialization, or misalignment. Some interactions, such as between stalk-TA and TM2/TM3, may relate to conformational states necessary for GAIN/GPS domain cleavage rather than activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C140 appropriately acknowledge limitations of the coevolution analysis. These are well-established limitations of the method (C136, C139) and the authors appropriately note that not all identified interactions may relate to the activation mechanism (C138, C140). This demonstrates appropriate scientific caution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "The TOP domain hydrophobic pocket and shorter peptide binding sites may serve as candidate sites for designing therapeutic peptides or small molecules for ADPKD treatment. The current study focuses on identifying initial activating peptides, with future work planned for mutation experiments, peptide SAR, and optimization. Peptide selectivity for PC1 versus PC2 has not been tested, and potential effects of PC2 co-transfection should be considered in future studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C150-C151 are speculative about therapeutic potential without supporting data. Claims C152-C157 appropriately acknowledge study limitations and describe future work. While the therapeutic speculation is reasonable given the findings, it remains untested. The acknowledged limitations regarding PC2 selectivity (C154-C157) are important caveats.",
+    "result_type": "MINOR"
+  }
+]

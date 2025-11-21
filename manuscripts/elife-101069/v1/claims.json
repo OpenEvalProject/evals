@@ -1,0 +1,1333 @@
+[
+  {
+    "claim_id": "C1",
+    "claim": "\u00b5GUIDE is a general Bayesian framework to estimate posterior distributions of tissue microstructure parameters from any given biophysical model or signal representation.",
+    "claim_type": "EXPLICIT",
+    "source": "This work proposes \u00b5GUIDE: a general Bayesian framework to estimate posterior distributions of tissue microstructure parameters from any given biophysical model or signal representation, with exemplar demonstration in diffusion-weighted magnetic resonance imaging.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in the abstract as the main contribution of the work",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C2",
+    "claim": "\u00b5GUIDE harnesses a new deep learning architecture for automatic signal feature selection combined with simulation-based inference and efficient sampling of the posterior distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "Harnessing a new deep learning architecture for automatic signal feature selection combined with simulation-based inference and efficient sampling of the posterior distributions, \u00b5GUIDE bypasses the high computational and time cost of conventional Bayesian approaches and does not rely on acquisition constraints to define model-specific summary statistics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the abstract as a methodological feature",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C3",
+    "claim": "\u00b5GUIDE bypasses the high computational and time cost of conventional Bayesian approaches.",
+    "claim_type": "EXPLICIT",
+    "source": "Harnessing a new deep learning architecture for automatic signal feature selection combined with simulation-based inference and efficient sampling of the posterior distributions, \u00b5GUIDE bypasses the high computational and time cost of conventional Bayesian approaches and does not rely on acquisition constraints to define model-specific summary statistics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a benefit in the abstract and demonstrated through timing comparisons with MCMC",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C4",
+    "claim": "\u00b5GUIDE does not rely on acquisition constraints to define model-specific summary statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "Harnessing a new deep learning architecture for automatic signal feature selection combined with simulation-based inference and efficient sampling of the posterior distributions, \u00b5GUIDE bypasses the high computational and time cost of conventional Bayesian approaches and does not rely on acquisition constraints to define model-specific summary statistics.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a methodological advantage in the abstract",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C5",
+    "claim": "The posterior distributions obtained by \u00b5GUIDE allow to highlight degeneracies present in the model definition.",
+    "claim_type": "EXPLICIT",
+    "source": "The obtained posterior distributions allow to highlight degeneracies present in the model definition and quantify the uncertainty and ambiguity of the estimated parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in the abstract and demonstrated in results section",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C6",
+    "claim": "The posterior distributions obtained by \u00b5GUIDE quantify the uncertainty and ambiguity of the estimated parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "The obtained posterior distributions allow to highlight degeneracies present in the model definition and quantify the uncertainty and ambiguity of the estimated parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated in the abstract and demonstrated through uncertainty and ambiguity measures",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C7",
+    "claim": "Diffusion-weighted magnetic resonance imaging (dMRI) is a promising technique for characterizing brain microstructure in vivo using a paradigm called microstructure imaging.",
+    "claim_type": "EXPLICIT",
+    "source": "Diffusion-weighted magnetic resonance imaging (dMRI) is a promising technique for characterizing brain microstructure in vivo using a paradigm called microstructure imaging (Novikov et al., 2019; Alexander et al., 2019; Jelescu et al., 2020).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to established literature",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C8",
+    "claim": "Microstructure imaging quantifies histologically meaningful features of brain microstructure by fitting a forward (biophysical) model voxel-wise to the set of signals obtained from images acquired with different sensitivities.",
+    "claim_type": "EXPLICIT",
+    "source": "Traditionally, microstructure imaging quantifies histologically meaningful features of brain microstructure by fitting a forward (biophysical) model voxel-wise to the set of signals obtained from images acquired with different sensitivities, yielding model parameter maps (Alexander et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to established methodology",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C9",
+    "claim": "Most commonly used techniques rely on a non-linear curve fitting of the signal and return the optimal solution.",
+    "claim_type": "EXPLICIT",
+    "source": "Most commonly used techniques rely on a non-linear curve fitting of the signal and return the optimal solution, that is the best parameters guess of the fitting procedure.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Describes current standard practice in the field",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C10",
+    "claim": "Non-linear curve fitting may hide model degeneracy, that is all the other possible estimates that could explain the observed signal equally well.",
+    "claim_type": "EXPLICIT",
+    "source": "However, this may hide model degeneracy, that is all the other possible estimates that could explain the observed signal equally well (Jelescu et al., 2016).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work on model degeneracy",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C11",
+    "claim": "Accounting for uncertainty in parameter estimates serves various purposes, including assessing result confidence, quantifying noise effects, or assisting in experimental design.",
+    "claim_type": "EXPLICIT",
+    "source": "This uncertainty serves various purposes, including assessing result confidence (Jones, 2003), quantifying noise effects (Behrens et al., 2003), or assisting in experimental design (Alexander, 2008).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by multiple citations to prior work",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C12",
+    "claim": "A large number of studies have focused on attempting to remove degeneracies in microstructure imaging.",
+    "claim_type": "EXPLICIT",
+    "source": "Instead of attempting to remove the degeneracies, which has been the focus of a large number of studies (Palombo et al., 2023; de Almeida Martins et al., 2021; Slator et al., 2021; Jelescu et al., 2022; Warner et al., 2023; Uhl et al., 2024; Mougel et al., 2024; Olesen et al., 2022; Palombo et al., 2020; Howard et al., 2022; Jones et al., 2018; Vincent et al., 2020; Henriques et al., 2021; Afzali et al., 2021; Lampinen et al., 2023; Zhang et al., 2012; Guerreri et al., 2023; Gyori et al., 2022; Novikov et al., 2018), we propose to highlight them and present all the possible parameter values that could explain an observed signal, providing users with more information to make more confident and explainable use of the inference results.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by extensive citations to prior work",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C13",
+    "claim": "Posterior distributions are powerful tools to characterize all the possible parameter estimations that could explain an observed measurement, their uncertainty, and existing model degeneracy.",
+    "claim_type": "EXPLICIT",
+    "source": "Posterior distributions are powerful tools to characterize all the possible parameter estimations that could explain an observed measurement, their uncertainty, and existing model degeneracy (Box and Tiao, 2011).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to Bayesian statistics literature",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C14",
+    "claim": "Bayesian inference allows for the estimation of posterior distributions, traditionally approximating them using numerical methods, such as Markov-Chain-Monte-Carlo (MCMC).",
+    "claim_type": "EXPLICIT",
+    "source": "Bayesian inference allows for the estimation of these posterior distributions, traditionally approximating them using numerical methods, such as Markov-Chain-Monte-Carlo (MCMC) (Metropolis et al., 1953).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to foundational MCMC work",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C15",
+    "claim": "MCMC methods have been used in quantitative MRI to estimate brain connectivity, optimize imaging protocols, or infer crossing fibres by combining multiple spatial resolutions.",
+    "claim_type": "EXPLICIT",
+    "source": "In quantitative MRI, these methods have been used for example to estimate brain connectivity (Behrens et al., 2003), optimize imaging protocols (Alexander, 2008), or infer crossing fibres by combining multiple spatial resolutions (Sotiropoulos et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citations to prior applications",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C16",
+    "claim": "Classical Bayesian inference methods are computationally expensive and time consuming.",
+    "claim_type": "EXPLICIT",
+    "source": "However, these classical Bayesian inference methods are computationally expensive and time consuming.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a known limitation of classical methods",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C17",
+    "claim": "Classical Bayesian inference methods often require adjustments and tuning specific to each biophysical model.",
+    "claim_type": "EXPLICIT",
+    "source": "They also often require adjustments and tuning specific to each biophysical model (Harms and Roebroeck, 2018).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Supported by citation to prior work",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C18",
+    "claim": "\u00b5GUIDE extends and generalizes previous work to any forward model and without acquisition constraints.",
+    "claim_type": "EXPLICIT",
+    "source": "\u00b5GUIDE extends and generalizes previous work (Jallais et al., 2022) to any forward model and without acquisition constraints, providing fast estimations of posterior distributions voxel-wise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an extension of prior work with reference",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C19",
+    "claim": "\u00b5GUIDE provides fast estimations of posterior distributions voxel-wise.",
+    "claim_type": "EXPLICIT",
+    "source": "\u00b5GUIDE extends and generalizes previous work (Jallais et al., 2022) to any forward model and without acquisition constraints, providing fast estimations of posterior distributions voxel-wise.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a feature and demonstrated through timing comparisons",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C20",
+    "claim": "\u00b5GUIDE was demonstrated using numerical simulations on three biophysical models of increasing complexity and degeneracy.",
+    "claim_type": "EXPLICIT",
+    "source": "We demonstrate \u00b5GUIDE using numerical simulations on three biophysical models of increasing complexity and degeneracy and compare the obtained estimates with existing methods, including the classical MCMC approach.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the introduction and shown in results",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C21",
+    "claim": "\u00b5GUIDE was applied to dMRI data acquired from healthy human volunteers and participants with epilepsy.",
+    "claim_type": "EXPLICIT",
+    "source": "We then apply the proposed framework to dMRI data acquired from healthy human volunteers and participants with epilepsy.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the introduction and shown in results",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C22",
+    "claim": "\u00b5GUIDE framework is agnostic to the origin of the data and the details of the forward model.",
+    "claim_type": "EXPLICIT",
+    "source": "\u00b5GUIDE framework is agnostic to the origin of the data and the details of the forward model, so we envision its usage and utility to perform Bayesian inference of model parameters also using data from other MRI modalities (e.g. relaxation MRI) and beyond.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a design feature with implications for broader applicability",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C23",
+    "claim": "\u00b5GUIDE is comprised of two modules that are optimized together to minimize the Kullback\u2013Leibler divergence between the true posterior distribution and the estimated one.",
+    "claim_type": "EXPLICIT",
+    "source": "It is comprised of two modules that are optimized together to minimize the Kullback\u2013Leibler divergence between the true posterior distribution and the estimated one for every parameters of a given forward model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the framework overview section",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C24",
+    "claim": "The Neural Posterior Estimator (NPE) module uses normalizing flows to approximate the posterior distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "The 'Neural Posterior Estimator' (NPE) module (Papamakarios et al., 2017) uses normalizing flows (Papamakarios et al., 2021) to approximate the posterior distribution, while the 'Multi-Layer Perceptron' (MLP) module is used to reduce the data dimensionality and ensure fast and robust convergence of the NPE module.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the framework overview with citations",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C25",
+    "claim": "The Multi-Layer Perceptron (MLP) module is used to reduce the data dimensionality and ensure fast and robust convergence of the NPE module.",
+    "claim_type": "EXPLICIT",
+    "source": "The 'Neural Posterior Estimator' (NPE) module (Papamakarios et al., 2017) uses normalizing flows (Papamakarios et al., 2021) to approximate the posterior distribution, while the 'Multi-Layer Perceptron' (MLP) module is used to reduce the data dimensionality and ensure fast and robust convergence of the NPE module.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the framework overview",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C26",
+    "claim": "\u00b5GUIDE takes as input an observed data vector and relies on the definition of a biophysical or computational model.",
+    "claim_type": "EXPLICIT",
+    "source": "\u00b5GUIDE takes as input an observed data vector and relies on the definition of a biophysical or computational model (Ascoli et al., 2007; Callaghan et al., 2020; Jelescu et al., 2020).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in Figure 1 caption with citations",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C27",
+    "claim": "\u00b5GUIDE outputs a posterior distribution of the model parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "It outputs a posterior distribution of the model parameters.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in Figure 1 caption",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C30",
+    "claim": "Maximum A Posteriori (MAP) corresponds to the most likely parameter estimate.",
+    "claim_type": "EXPLICIT",
+    "source": "The three measures are the Maximum A Posteriori (MAP), which corresponds to the most likely parameter estimate; an uncertainty measure, which quantifies the dispersion of the 50% most probable samples using the interquartile range, relative to the prior range; and an ambiguity measure, which measures the Full Width at Half Maximum (FWHM), in percentage with respect to the prior range.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Defined in the framework overview section",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C31",
+    "claim": "The uncertainty measure quantifies the dispersion of the 50% most probable samples using the interquartile range, relative to the prior range.",
+    "claim_type": "EXPLICIT",
+    "source": "The three measures are the Maximum A Posteriori (MAP), which corresponds to the most likely parameter estimate; an uncertainty measure, which quantifies the dispersion of the 50% most probable samples using the interquartile range, relative to the prior range; and an ambiguity measure, which measures the Full Width at Half Maximum (FWHM), in percentage with respect to the prior range.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Defined in the framework overview section",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C32",
+    "claim": "The ambiguity measure measures the Full Width at Half Maximum (FWHM), in percentage with respect to the prior range.",
+    "claim_type": "EXPLICIT",
+    "source": "The three measures are the Maximum A Posteriori (MAP), which corresponds to the most likely parameter estimate; an uncertainty measure, which quantifies the dispersion of the 50% most probable samples using the interquartile range, relative to the prior range; and an ambiguity measure, which measures the Full Width at Half Maximum (FWHM), in percentage with respect to the prior range.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Defined in the framework overview section",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C33",
+    "claim": "A voxel is considered as degenerate if the derivative of the fitted Gaussian distributions changes signs more than once and if the two Gaussian distributions are not overlapping.",
+    "claim_type": "EXPLICIT",
+    "source": "A voxel is considered as degenerate if the derivative of the fitted Gaussian distributions changes signs more than once (i.e. multiple local maxima), and if the two Gaussian distributions are not overlapping (the distance between the two Gaussian means is inferior to the sum of their standard deviations).",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Defined in Figure 2 caption",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C34",
+    "claim": "Sharper and less biased posterior estimations are obtained using \u00b5GUIDE compared to MCMC.",
+    "claim_type": "EXPLICIT",
+    "source": "Sharper and less biased posterior estimations are obtained using \u00b5GUIDE.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in Figure 3 caption and shown in the figure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C35",
+    "claim": "The bias is similar or smaller using \u00b5GUIDE compared to MCMC.",
+    "claim_type": "EXPLICIT",
+    "source": "Results indicate that the bias is similar or smaller using \u00b5GUIDE.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated based on histogram analysis in Figure 3B",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C36",
+    "claim": "\u00b5GUIDE posterior distributions are more accurate than the ones obtained with MCMC.",
+    "claim_type": "EXPLICIT",
+    "source": "Overall, \u00b5GUIDE posterior distributions are more accurate than the ones obtained with MCMC.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Concluded from comparison results",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C37",
+    "claim": "It took on average 29.3 s to obtain the posterior distribution using MCMC on a GPU for one voxel.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, it took on average 29.3 s to obtain the posterior distribution using MCMC on a GPU (NVIDIA GeForce GT 710) for one voxel, while it only took 0.02 s for \u00b5GUIDE.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Reported timing comparison",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C38",
+    "claim": "It took 0.02 s to obtain the posterior distribution using \u00b5GUIDE for one voxel.",
+    "claim_type": "EXPLICIT",
+    "source": "Moreover, it took on average 29.3 s to obtain the posterior distribution using MCMC on a GPU (NVIDIA GeForce GT 710) for one voxel, while it only took 0.02 s for \u00b5GUIDE.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Reported timing comparison",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C39",
+    "claim": "\u00b5GUIDE is about 1500 times faster than MCMC.",
+    "claim_type": "EXPLICIT",
+    "source": "\u00b5GUIDE is about 1500 times faster than MCMC, which makes it more suitable for applying it on large datasets.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Calculated from timing comparison",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C40",
+    "claim": "Less biased MAPs with lower ambiguities and uncertainties are obtained with \u00b5GUIDE compared to manually defined summary statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "Less biased MAPs with lower ambiguities and uncertainties are obtained with \u00b5GUIDE, indicating that the MLP allows for the extraction of additional information not contained in the summary statistics, helping to solve the inverse problem with higher accuracy and precision.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated based on Figure 4 results",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C41",
+    "claim": "The MLP allows for the extraction of additional information not contained in the summary statistics.",
+    "claim_type": "EXPLICIT",
+    "source": "Less biased MAPs with lower ambiguities and uncertainties are obtained with \u00b5GUIDE, indicating that the MLP allows for the extraction of additional information not contained in the summary statistics, helping to solve the inverse problem with higher accuracy and precision.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Inferred from comparison results",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C42",
+    "claim": "\u00b5GUIDE generalizes the method developed in Jallais et al., 2022 to make it applicable to any forward model and any acquisition protocol.",
+    "claim_type": "EXPLICIT",
+    "source": "\u00b5GUIDE generalizes the method developed in Jallais et al., 2022 to make it applicable to any forward model and any acquisition protocol, while making the estimates more precise and accurate thanks to the automatic feature extraction.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a contribution relative to prior work",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C43",
+    "claim": "As the complexity of the model increases, degeneracy in the model definitions appear.",
+    "claim_type": "EXPLICIT",
+    "source": "As the complexity of the model increases, degeneracy in the model definitions appear.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in Figure 5 caption and demonstrated in the figure",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C44",
+    "claim": "\u00b5GUIDE allows to highlight degeneracies present in the model definition.",
+    "claim_type": "EXPLICIT",
+    "source": "\u00b5GUIDE allows to highlight those degeneracies present in the model definition.",
+    "source_type": [
+      "TEXT",
+      "IMAGE"
+    ],
+    "evidence": "Stated in Figure 5 caption and demonstrated",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C45",
+    "claim": "The more complex the model, the more degeneracies.",
+    "claim_type": "EXPLICIT",
+    "source": "The more complex the model, the more degeneracies.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Concluded from Tables 1 and 2 showing increasing degeneracies with model complexity",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C46",
+    "claim": "The Ball&Stick model presents no degeneracy.",
+    "claim_type": "EXPLICIT",
+    "source": "The Ball&Stick model presents no degeneracy, the SM presents some degeneracy, mostly in voxels with high likelihood of partial voluming with cerebrospinal fluid and at the white matter\u2013grey matter boundaries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated based on application to healthy volunteer data",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C47",
+    "claim": "The Standard Model presents some degeneracy, mostly in voxels with high likelihood of partial voluming with cerebrospinal fluid and at the white matter\u2013grey matter boundaries.",
+    "claim_type": "EXPLICIT",
+    "source": "The Ball&Stick model presents no degeneracy, the SM presents some degeneracy, mostly in voxels with high likelihood of partial voluming with cerebrospinal fluid and at the white matter\u2013grey matter boundaries.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated based on application to healthy volunteer data",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C48",
+    "claim": "The extended-SANDI model is the model showing the highest number of degenerate cases, mostly localized within the white matter areas characterized by complex microstructure, for example crossing fibres.",
+    "claim_type": "EXPLICIT",
+    "source": "The extended-SANDI model is the model showing the highest number of degenerate cases, mostly localized within the white matter areas characterized by complex microstructure, for example crossing fibres.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated based on application to healthy volunteer data",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C49",
+    "claim": "The axonal signal fraction estimates within the epileptic lesion show low uncertainty and ambiguity measures hence high confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "Noteworthy, the axonal signal fraction estimates within the epileptic lesion show low uncertainty and ambiguity measures hence high confidence, while orientation dispersion index estimates show high uncertainty and ambiguity suggesting low confidence, cautioning the interpretation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated based on application to epilepsy participant data",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C50",
+    "claim": "Orientation dispersion index estimates within the epileptic lesion show high uncertainty and ambiguity suggesting low confidence.",
+    "claim_type": "EXPLICIT",
+    "source": "Noteworthy, the axonal signal fraction estimates within the epileptic lesion show low uncertainty and ambiguity measures hence high confidence, while orientation dispersion index estimates show high uncertainty and ambiguity suggesting low confidence, cautioning the interpretation.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated based on application to epilepsy participant data",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C51",
+    "claim": "The extracted features contain additional information compared to the summary statistics, resulting in a notable reduction in bias, uncertainty, and ambiguity in the estimated posterior distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "The extracted features contain additional information compared to the summary statistics (see Appendix 1), resulting in a notable reduction in bias (on average 5.2-fold lower), uncertainty (on average 2.6-fold lower), and ambiguity (on average 2.7-fold lower) in the estimated posterior distributions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with quantitative comparisons",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C52",
+    "claim": "\u00b5GUIDE shows reduced bias on average 5.2-fold lower compared to summary statistics methods.",
+    "claim_type": "EXPLICIT",
+    "source": "The extracted features contain additional information compared to the summary statistics (see Appendix 1), resulting in a notable reduction in bias (on average 5.2-fold lower), uncertainty (on average 2.6-fold lower), and ambiguity (on average 2.7-fold lower) in the estimated posterior distributions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative comparison reported",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C53",
+    "claim": "\u00b5GUIDE shows reduced uncertainty on average 2.6-fold lower compared to summary statistics methods.",
+    "claim_type": "EXPLICIT",
+    "source": "The extracted features contain additional information compared to the summary statistics (see Appendix 1), resulting in a notable reduction in bias (on average 5.2-fold lower), uncertainty (on average 2.6-fold lower), and ambiguity (on average 2.7-fold lower) in the estimated posterior distributions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative comparison reported",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C54",
+    "claim": "\u00b5GUIDE shows reduced ambiguity on average 2.7-fold lower compared to summary statistics methods.",
+    "claim_type": "EXPLICIT",
+    "source": "The extracted features contain additional information compared to the summary statistics (see Appendix 1), resulting in a notable reduction in bias (on average 5.2-fold lower), uncertainty (on average 2.6-fold lower), and ambiguity (on average 2.7-fold lower) in the estimated posterior distributions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative comparison reported",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C55",
+    "claim": "\u00b5GUIDE shows reduced bias on average 5.2-fold lower and dispersion on average 6.4-fold lower on the MAP estimates for each of the three example models investigated.",
+    "claim_type": "EXPLICIT",
+    "source": "Consequently, \u00b5GUIDE improves parameters estimation over current state-of-the-art methods (e.g. Jallais et al., 2022), showing for example reduced bias (on average 5.2-fold lower) and dispersion (on average 6.4-fold lower) on the MAP estimates for each of the three example models investigated (see Figure 4).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Quantitative comparison with reference to Figure 4",
+    "evidence_type": [
+      "DATA",
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C56",
+    "claim": "\u00b5GUIDE can be extended to different organs by employing their respective acquisition encoding and forward models.",
+    "claim_type": "EXPLICIT",
+    "source": "However, our approach is not limited to brain tissue nor to diffusion-weighted MRI and can be extended to different organs by employing their respective acquisition encoding and forward models, such as NEXI for exchange estimates (Jallais et al., 2024), mcDESPOT for myelin water fraction mapping using quantitative MRI relaxation (Deoni et al., 2008), VERDICT in prostate imaging (Panagiotaki et al., 2014), or even adapted to different imaging modalities (e.g. electroencephalography and magnetoencephalography), where there is a way to link (via modelling or simulation) the observed signal to a set of parameters of interest.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with examples and citations",
+    "evidence_type": [
+      "CITATION",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C57",
+    "claim": "\u00b5GUIDE is still a model-dependent method, meaning that the training process is based on the specific model being used.",
+    "claim_type": "EXPLICIT",
+    "source": "It is important to note that \u00b5GUIDE is still a model-dependent method, meaning that the training process is based on the specific model being used.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a limitation",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C58",
+    "claim": "The number of features extracted by the MLP needs to be predetermined.",
+    "claim_type": "EXPLICIT",
+    "source": "Additionally, the number of features extracted by the MLP needs to be predetermined.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a methodological requirement",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C59",
+    "claim": "One way to determine the number of features is by matching it with the number of parameters being estimated.",
+    "claim_type": "EXPLICIT",
+    "source": "One way to determine the number of features is by matching it with the number of parameters being estimated.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Suggested as a practical approach",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C60",
+    "claim": "\u00b5GUIDE has an amortized nature where the training process is performed only once, and thereafter, the posterior estimations can be independently obtained for all voxels.",
+    "claim_type": "EXPLICIT",
+    "source": "One notable advantage of \u00b5GUIDE is its amortized nature. With this approach, the training process is performed only once, and thereafter, the posterior estimations can be independently obtained for all voxels.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an advantage of the method",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C61",
+    "claim": "This amortization enables efficient estimations of the posterior distributions.",
+    "claim_type": "EXPLICIT",
+    "source": "This amortization enables efficient estimations of the posterior distributions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a consequence of amortization",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C62",
+    "claim": "\u00b5GUIDE unlocks the possibility to process with Bayesian inference very large datasets in manageable time (e.g. approximately 6 months to process 10 k dMRI datasets).",
+    "claim_type": "EXPLICIT",
+    "source": "This unlocks the possibility to process with Bayesian inference very large datasets in manageable time (e.g. approximately 6 months to process 10 k dMRI datasets) and to include Bayesian inference in iterative processes that require the repeated computation of the posterior distributions (e.g. dMRI acquisition optimization [Alexander, 2008]).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a practical implication with example",
+    "evidence_type": [
+      "INFERENCE",
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C63",
+    "claim": "The use of SBI methods to characterize full posterior distributions as well as quantify the uncertainty in parameter estimations was first introduced in Jallais et al., 2022 for a grey matter model.",
+    "claim_type": "EXPLICIT",
+    "source": "In the dMRI community, the use of SBI methods to characterize full posterior distributions as well as quantify the uncertainty in parameter estimations was first introduced in Jallais et al., 2022 for a grey matter model.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citation to prior work",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C64",
+    "claim": "An application to crossing fibres has recently been proposed by Karimi et al., 2024.",
+    "claim_type": "EXPLICIT",
+    "source": "An application to crossing fibres has recently been proposed by Karimi et al., 2024.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citation",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C65",
+    "claim": "This work and Jallais et al., 2022 rely on Masked Autoregressive Flows (MAFs), while the work by Karimi et al., 2024 is based on Mixture Density Networks (MDNs).",
+    "claim_type": "EXPLICIT",
+    "source": "This work and Jallais et al., 2022 rely on Masked Autoregressive Flows (MAFs [Papamakarios et al., 2017]), while the work by Karimi et al., 2024 is based on Mixture Density Networks (MDNs [Bishop, 1994]).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations to methods",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C66",
+    "claim": "MAFs have been found to show superior performance compared to MDNs.",
+    "claim_type": "EXPLICIT",
+    "source": "MAFs have been found to show superior performance compared to MDNs (Gon\u00e7alves et al., 2020; Patron et al., 2022).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations to comparative studies",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C67",
+    "claim": "Changes in the tissue microstructure parameters can help clinicians decide which parameters are the most reliable and better interpret microstructure changes within diseased tissue.",
+    "claim_type": "EXPLICIT",
+    "source": "As demonstrated by our pathological example, changes in the tissue microstructure parameters can help clinicians decide which parameters are the most reliable and better interpret microstructure changes within diseased tissue.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated based on epilepsy example",
+    "evidence_type": [
+      "DATA",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C68",
+    "claim": "On large population studies, the quantified uncertainty can be taken into account when performing group statistics and to detect outliers.",
+    "claim_type": "EXPLICIT",
+    "source": "On large population studies, the quantified uncertainty can be taken into account when performing group statistics and to detect outliers.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a potential application",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C69",
+    "claim": "Gradient descent often provides a measure of confidence for each parameter estimate.",
+    "claim_type": "EXPLICIT",
+    "source": "Gradient descent often provides a measure of confidence for each parameter estimate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as existing practice",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C70",
+    "claim": "Alternative approaches use the shape of the fitted tensor itself as a measure of uncertainty for the fibre direction.",
+    "claim_type": "EXPLICIT",
+    "source": "Alternative approaches use the shape of the fitted tensor itself as a measure of uncertainty for the fibre direction (Koch et al., 2002; Parker and Alexander, 2003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations to prior methods",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C71",
+    "claim": "Repetition bootstrapping depends on repeated measurements of signal for each gradient direction, but imply a long acquisition time and cost, and are prone to motion artifacts.",
+    "claim_type": "EXPLICIT",
+    "source": "Repetition bootstrapping for example depends on repeated measurements of signal for each gradient direction, but imply a long acquisition time and cost, and are prone to motion artifacts (Lazar and Alexander, 2005; Jones, 2003).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations describing limitations",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C72",
+    "claim": "Residual bootstrapping methods resample the residuals of a regression model but this approach is heavily dependent on the model and can lead to overfitting.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, residual bootstrapping methods resample the residuals of a regression model. Yet, this approach is heavily dependent on the model and can lead to overfitting (Whitcher et al., 2008; Chung et al., 2006).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations describing limitations",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C73",
+    "claim": "Resampling methods can be problematic for sparse samples, as the bootstrapped samples tend to underestimate the true randomness of the distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "In general, resampling methods can be problematic for sparse samples, as the bootstrapped samples tend to underestimate the true randomness of the distribution (Kauermann et al., 2009).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citation",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C74",
+    "claim": "Model-fitting methods with different initializations allow to highlight degeneracies but only provide a partial description of the solution landscape.",
+    "claim_type": "EXPLICIT",
+    "source": "Model-fitting methods with different initializations, as done in for example Jelescu et al., 2016, also allow to highlight degeneracies. However, they only provide a partial description of the solution landscape, which can be interpreted as a partial posterior distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citation and comparison",
+    "evidence_type": [
+      "CITATION",
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C75",
+    "claim": "Bayesian methods estimate the full posterior distributions, offering a more accurate and precise characterization of degeneracies and uncertainties.",
+    "claim_type": "EXPLICIT",
+    "source": "In contrast, Bayesian methods estimate the full posterior distributions, offering a more accurate and precise characterization of degeneracies and uncertainties.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an advantage of Bayesian methods",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C76",
+    "claim": "The presence of noise in the signal contributes to irreducible variance, decreasing the confidence in the estimates as the noise level increases.",
+    "claim_type": "EXPLICIT",
+    "source": "The presence of noise in the signal contributes to irreducible variance, decreasing the confidence in the estimates as the noise level increases (see Appendix 2).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with reference to appendix",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C77",
+    "claim": "Another source of variance can arise from the choice of acquisition parameters.",
+    "claim_type": "EXPLICIT",
+    "source": "Another source of variance can arise from the choice of acquisition parameters.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a factor affecting variance",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C78",
+    "claim": "Under-sampled acquisitions or inadequate b-shells may fail to capture essential information about a tissue microstructure, resulting in inaccurate estimates.",
+    "claim_type": "EXPLICIT",
+    "source": "Under-sampled acquisitions or inadequate b-shells may fail to capture essential information about a tissue microstructure, such as soma or neurite radii, resulting in inaccurate estimates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a potential issue",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C79",
+    "claim": "\u00b5GUIDE can guide users in determining whether an acquisition is suitable for estimating parameters of a given model and vice versa.",
+    "claim_type": "EXPLICIT",
+    "source": "\u00b5GUIDE can guide users in determining whether an acquisition is suitable for estimating parameters of a given model and vice versa, the variance and bias of the posterior distributions estimated with \u00b5GUIDE can be used to guide the optimization of the data acquisition to maximize accuracy and precision of the model parameters estimates.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a potential application",
+    "evidence_type": [
+      "SPECULATION"
+    ]
+  },
+  {
+    "claim_id": "C80",
+    "claim": "The presence of degeneracy in the solution of the inverse problem is influenced by the complexity of the model being used and the lack of sufficient information in the data.",
+    "claim_type": "EXPLICIT",
+    "source": "The presence of degeneracy in the solution of the inverse problem is influenced by the complexity of the model being used and the lack of sufficient information in the data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an explanation for degeneracy",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C81",
+    "claim": "Researchers have introduced increasingly sophisticated models to better represent the brain tissue, such as SANDI, NEXI, and eSANDIX, that take into account an increasing number of tissue features.",
+    "claim_type": "EXPLICIT",
+    "source": "In recent years, researchers have introduced increasingly sophisticated models to better represent the brain tissue, such as SANDI (Palombo et al., 2020), NEXI (Jelescu et al., 2022), and eSANDIX (Olesen et al., 2022), that take into account an increasing number of tissue features.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations to recent models",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C82",
+    "claim": "By applying \u00b5GUIDE, it becomes possible to gain insights into the degree of degeneracy within a model and to assess the balance between model realism and the ability to accurately invert the problem.",
+    "claim_type": "EXPLICIT",
+    "source": "By applying \u00b5GUIDE, it becomes possible to gain insights into the degree of degeneracy within a model and to assess the balance between model realism and the ability to accurately invert the problem.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a benefit of the method",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C86",
+    "claim": "Point estimates algorithms, such as minimum least square or maximum likelihood estimation algorithms, allow to estimate one set of microstructure parameters that could explain an observed signal.",
+    "claim_type": "EXPLICIT",
+    "source": "Point estimates algorithms, such as minimum least square or maximum likelihood estimation algorithms, allow to estimate one set of microstructure parameters that could explain an observed signal.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a characteristic of point estimate methods",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C87",
+    "claim": "In the case of degenerate models, the solution space can be multi-modal and point estimate algorithms will hide possible solutions.",
+    "claim_type": "EXPLICIT",
+    "source": "In the case of degenerate models, the solution space can be multi-modal and those algorithms will hide possible solutions.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a limitation of point estimate methods",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C89",
+    "claim": "For forward models with large latent spaces, computing the likelihood integral explicitly becomes impractical.",
+    "claim_type": "EXPLICIT",
+    "source": "For forward models with large latent spaces, computing this integral explicitly becomes impractical.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a computational limitation",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C90",
+    "claim": "Models that do not admit a tractable likelihood are called implicit models.",
+    "claim_type": "EXPLICIT",
+    "source": "Models that do not admit a tractable likelihood are called implicit models (Diggle and Gratton, 1984).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citation defining terminology",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C91",
+    "claim": "The Sequential Neural Posterior Estimation (SNPE-C) algorithm with a single round is employed to train a neural network that directly approximates the posterior distribution.",
+    "claim_type": "EXPLICIT",
+    "source": "In this study, the Sequential Neural Posterior Estimation (SNPE-C) algorithm (Papamakarios and Murray, 2016; Greenberg et al., 2019) with a single round is employed to train a neural network that directly approximates the posterior distribution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as the method used with citations",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C92",
+    "claim": "Neural density estimators have the advantage of providing exact density evaluations, in contrast to Variational Autoencoders (VAEs) or generative adversarial networks (GANs).",
+    "claim_type": "EXPLICIT",
+    "source": "Neural density estimators have the advantage of providing exact density evaluations, in contrast to Variational Autoencoders (VAEs [Kingma and Welling, 2019]) or generative adversarial networks (GANs [Goodfellow et al., 2014]), which are better suited for generating synthetic data.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations comparing different neural network approaches",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C93",
+    "claim": "An autoregressive architecture for normalizing flows is employed, implemented via the Masked Autoregressive Flow (MAF), which is constructed by stacking five Masked Autoencoder for Distribution Estimation (MADE) models.",
+    "claim_type": "EXPLICIT",
+    "source": "An autoregressive architecture for normalizing flows is employed, implemented via the MAF (Papamakarios et al., 2017), which is constructed by stacking five Masked Autoencoder for Distribution Estimation (MADE) models (Germain et al., 2015).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as the specific architecture used with citations",
+    "evidence_type": [
+      "CITATION"
+    ]
+  },
+  {
+    "claim_id": "C95",
+    "claim": "It is often necessary to rely on a set of low-dimensional features (or summary statistics) instead of the raw data for the inference task process.",
+    "claim_type": "EXPLICIT",
+    "source": "As a consequence, it is often necessary to rely on a set of low-dimensional features (or summary statistics) instead of the raw data for the inference task process (Blum et al., 2013; Fearnhead and Prangle, 2012; Papamakarios et al., 2019).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations to prior work",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C96",
+    "claim": "Learning a set of sufficient statistics before estimating the posterior distribution makes the inference easier and offers many benefits.",
+    "claim_type": "EXPLICIT",
+    "source": "Learning a set of sufficient statistics before estimating the posterior distribution makes the inference easier and offers many benefits (see e.g. the Rao\u2013Blackwell theorem).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with reference to statistical theorem",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C97",
+    "claim": "Defining summary statistics is difficult and often requires prior knowledge of the problem at hand.",
+    "claim_type": "EXPLICIT",
+    "source": "However, defining these summary statistics is difficult and often requires prior knowledge of the problem at hand.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a challenge",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C99",
+    "claim": "\u00b5GUIDE was trained using 1 million simulations for each model, 5% of which are randomly selected to be used as a validation set.",
+    "claim_type": "EXPLICIT",
+    "source": "We use 1 million simulations for each model, 5% of which are randomly selected to be used as a validation set.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as the training procedure",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C100",
+    "claim": "Training is stopped when the validation loss does not decrease for 30 consecutive epochs.",
+    "claim_type": "EXPLICIT",
+    "source": "Training is stopped when the validation loss does not decrease for 30 consecutive epochs.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as the stopping criterion",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  },
+  {
+    "claim_id": "C102",
+    "claim": "The Ball&Stick model has the main advantage of being non-degenerate.",
+    "claim_type": "EXPLICIT",
+    "source": "This model has the main advantage of being non-degenerate.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as a property of Model 1",
+    "evidence_type": [
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C103",
+    "claim": "The Standard Model represents the dMRI signal from the brain tissue as a weighted sum of the signal from water diffusing within the neurite space and water diffusing within the extra-neurite space.",
+    "claim_type": "EXPLICIT",
+    "source": "Expanding on Model 1, this model represents the dMRI signal from the brain tissue as a weighted sum of the signal from water diffusing within the neurite space, approximated as sticks with symmetric orientation dispersion following a Watson distribution and water diffusing within the extra-neurite space, modelled as anisotropic Gaussian diffusion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the methods section for Model 2",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C104",
+    "claim": "The extended-SANDI model is a three-compartment model (intra-neurite, intra-soma, and extra-cellular space).",
+    "claim_type": "EXPLICIT",
+    "source": "This is a three-compartment model (intra-neurite, intra-soma, and extra-cellular space) where the dMRI signal from the brain tissue is modelled as a weighted sum of the signal from water diffusing within the neurite space, approximated as sticks with symmetric orientation dispersion following a Watson distribution; water diffusing within cell bodies (namely soma), modelled as restricted diffusion in spheres; and water diffusing within the extra-cellular space, modelled as isotropic Gaussian diffusion.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Described in the methods section for Model 3",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C105",
+    "claim": "Data were acquired on a Connectome 3T scanner using a single-shot spin-echo, echo-planar imaging sequence with b-values = [200, 500, 1200, 2400, 4000, 6000] s mm\u22122.",
+    "claim_type": "EXPLICIT",
+    "source": "Data were acquired on a Connectome 3T scanner using a single-shot spin-echo, echo-planar imaging sequence with b-values = [200, 500, 1200, 2400, 4000, 6000] s mm\u22122, [20, 20, 30, 61, 61, 61] uniformly distributed directions, respectively, and 13 non-diffusion-weighted images at 2 mm isotropic resolution.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as the acquisition protocol",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C106",
+    "claim": "TR was set to 3000 ms, TE to 59 ms, and the diffusion gradient duration and separation to 7 ms and 24 ms, respectively.",
+    "claim_type": "EXPLICIT",
+    "source": "TR was set to 3000 ms, TE to 59 ms, and the diffusion gradient duration and separation to 7 ms and 24 ms, respectively.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as acquisition parameters",
+    "evidence_type": [
+      "DATA"
+    ]
+  },
+  {
+    "claim_id": "C107",
+    "claim": "Short diffusion times and TE were achieved thanks to the Connectom gradients, allowing to enhance the SNR and sensitivity to small water displacements.",
+    "claim_type": "EXPLICIT",
+    "source": "Short diffusion times and TE were achieved thanks to the Connectom gradients, allowing to enhance the SNR and sensitivity to small water displacements (Jones et al., 2018; Setsompop et al., 2013).",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated with citations explaining the benefit",
+    "evidence_type": [
+      "CITATION",
+      "KNOWLEDGE"
+    ]
+  },
+  {
+    "claim_id": "C108",
+    "claim": "The noise was considered as Rician with an SNR of 50 for both subjects.",
+    "claim_type": "EXPLICIT",
+    "source": "We considered the noise as Rician with an SNR of 50 for both subjects.",
+    "source_type": [
+      "TEXT"
+    ],
+    "evidence": "Stated as an assumption in data analysis",
+    "evidence_type": [
+      "INFERENCE"
+    ]
+  }
+]

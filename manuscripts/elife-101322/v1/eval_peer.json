@@ -1,0 +1,153 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C45",
+      "C51"
+    ],
+    "result": "The authors assembled a benchmark dataset of 164 cryoEM maps containing Fabs and demonstrated that ModelAngelo-derived sequences can accurately identify V-genes, with V-gene identity improving from random baseline (0.59/0.52 and 0.56/0.53 for heavy/light chains) to 0.78/0.87 and 0.75/0.85 in the full dataset, and up to 0.89/1.00 and 0.88/1.00 at alignment score cutoffs above 80. The alignment scores in Stitch correlate with V-gene identity accuracy, enabling sequencing of antibody variable domains from cryoEM reconstructions with accuracies of up to 80-90%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this core finding, with one stating 'the tests constructed seem appropriate and fair and demonstrate that the workflow works pretty well' and another noting the work demonstrates 'it is possible to sequence antibody variable domains from cryoEM reconstructions.' The editor describes the 'strength of evidence to support its findings is considered solid.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C52"
+    ],
+    "result": "The 15% rate of sequencing errors from ModelAngelo exceeds the typical levels of somatic hypermutation observed in mature antibody sequences (1-10%), but the ModelAngelo-derived sequences can still be used to assign V-genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this finding or the interpretation that despite higher error rates than biological variation, V-gene assignment remains possible. The acknowledgment of this limitation alongside demonstrated utility is implicitly accepted through the overall positive assessment of the workflow.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C46"
+    ],
+    "result": "Complete CDR3 regions (CDRH3 and CDRL3) were covered in 66 and 68 maps respectively, with length estimation errors of 0.5\u00b13.3 residues (heavy) and 1.7\u00b16.0 residues (light), and sequence identities of 0.63 and 0.41. The moderately better accuracy for CDRH3 compared to CDRL3 is attributed to CDRH3's tighter involvement in antigen binding, resulting in better order in reconstructed maps.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these CDR3 reconstruction results or the mechanistic interpretation. The overall positive assessment of the workflow and the statement that 'the strength of evidence to support its findings is considered solid' implicitly supports these findings about CDR3 coverage and accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C47"
+    ],
+    "result": "Global FSC resolution of input maps is a poor predictor of both Stitch alignment score and inferred V-gene identity, likely because it is dominated by the bulk of the antigen rather than representing local resolution in the epitope-paratope region.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this observation or the mechanistic explanation. The finding is presented with supporting data (Figure 5) and the inference about why global resolution is not predictive is consistent with established cryoEM principles, which reviewers implicitly accept.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25"
+    ],
+    "result": "Using the CR3022 antibody (IGHV5-51/IGKV4-1) as a proof-of-principle test case, ModelAngelo and Stitch correctly identified the germline sequences, and when used as templates for LC-MS/MS peptide assembly, achieved 96% and 99% identity to true sequences. LC-MS/MS alone achieved 97-98% accuracy for this monoclonal sample, with remaining errors being challenging I/L assignments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question the CR3022 validation results. One reviewer explicitly notes 'the tests constructed seem appropriate and fair,' which would include this proof-of-principle demonstration. The high accuracy achieved supports the overall workflow validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C32",
+      "C48",
+      "C49",
+      "C54",
+      "C55"
+    ],
+    "result": "When CR3022 LC-MS/MS data is mixed with five additional monoclonal antibodies in a 5:1 background ratio, sequence accuracy drops below 0.6, but is recovered to >0.95 using either true CR3022 sequences or ModelAngelo-derived templates. ModelAngelo-derived templates improve tolerance to polyclonal backgrounds and provide functional guides for more accurate peptide assembly, though Stitch alone shows tolerance to diffuse polyclonal backgrounds from whole IgG fractions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these background mixing experiments or the conclusion that ModelAngelo-derived templates improve accuracy in complex backgrounds. One reviewer notes the work demonstrates integration of cryoEM with proteomics 'to improve the accuracy of candidate sequences,' directly supporting this finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C33"
+    ],
+    "result": "Analysis of 46 published EMPEM maps showed that 23 yielded non-zero alignment scores, with 8 having scores above 50 for both chains (estimated mean/median V-gene identity ~0.85/0.90). This demonstrates that experimental EMPEM studies may yield sufficiently detailed reconstructions to accurately narrow down candidate V-genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "One reviewer notes that 'for a small subset (~17%) of the EMPEM maps analysed the workflow was able to get convincing assignments of the V-genes,' highlighting the limited success rate. While reviewers acknowledge the workflow works for some cases, the low proportion of successful EMPEM map analysis (8/46 = 17%) suggests significant limitations in applying this approach to real polyclonal EMPEM data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "CryoEM data provides advantages over proteomics for heavy-light chain pairing (chains are in direct contact in resolved Fabs) and CDRH3 reconstruction (which is challenging in proteomics due to the hypervariable D-segment junction), while proteomics faces limitations from denaturation and digestion during sample preparation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these comparative advantages of cryoEM versus proteomics approaches. These statements are based on established knowledge about the methodologies, and the overall positive assessment of the integrated workflow implicitly supports these complementary strengths.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Both EMPEM and MS-based polyclonal antibody sequencing are limited to the top 1-10 antibodies in polyclonal mixtures, and EMPEM is biased towards bigger and well-ordered target antigens, requiring complementary approaches like HDX-MS for comprehensive polyclonal epitope mapping.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these stated limitations. The acknowledgment of methodological constraints is consistent with the limited success rate observed in the EMPEM map analysis (17%), and reviewers' overall acceptance of the work implicitly includes acceptance of these recognized limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C50",
+      "C53"
+    ],
+    "result": "Map quality is a critical bottleneck for deriving antibody sequences from cryoEM reconstructions, but ModelAngelo-derived sequences can be used to assign V-genes despite error rates exceeding somatic hypermutation levels.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly support this conclusion. One states the work demonstrates 'that it is possible to sequence antibody variable domains from cryoEM reconstructions' while acknowledging quality constraints. The editor notes 'the strength of evidence to support its findings is considered solid,' affirming both the bottleneck and the demonstrated capability.",
+    "result_type": "MAJOR"
+  }
+]

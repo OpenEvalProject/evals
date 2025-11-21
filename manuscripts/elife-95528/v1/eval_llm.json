@@ -1,0 +1,427 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "The manuscript provides historical context for fMRI development, noting that BOLD contrast was first described in 1936 but not applied to rodent MRI until 1990, and that preclinical fMRI has been crucial for method development. However, anesthetics alter brain function, limiting interpretation of awake states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10 are well-supported by extensive citations to the historical literature. These claims establish the rationale for awake mouse fMRI by documenting the history of BOLD fMRI and the limitations of anesthetized approaches. The citations are appropriate and the claims are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Awake mouse fMRI provides the most relevant functional mapping for translational studies, but faces challenges including motion artifacts, stress, and variability from different training paradigms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 are supported by appropriate citations documenting the challenges of awake mouse fMRI. The rationale for awake imaging (C11) follows logically from the limitations of anesthetized imaging (C10), and the challenges (C13-C15) are well-documented in the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "High spatiotemporal resolution reduces SNR, necessitating high-field MRI and efficient RF transceivers. While cryoprobes boost SNR, they have spatial constraints. Implantable coils offer higher SNR and reduced artifacts but require surgical implantation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C21 establish the technical rationale for the implantable coil approach. The physics principle (C16) is well-established, and the advantages and limitations of cryoprobes (C17-C18) and implantable coils (C19-C21) are supported by appropriate citations. This provides clear motivation for the study's technical approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study established an awake mouse fMRI platform using an implantable RF coil that also serves as a headpost, achieving 100 \u00b5m \u00d7 100 \u00b5m \u00d7 200 \u00b5m resolution. A 5-week training scheme resulted in increased eye movements and reduced struggling, and the coil improved B0 homogeneity and eliminated motion-related B1 variability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 describe the core technical achievement of the study. The spatial resolution (C23) is directly stated and demonstrated in the figures. The training outcomes (C24) are supported by pupil tracking data in Figure 2\u2014figure supplement 1. The technical advantages (C25-C26) are demonstrated through SNR measurements and image quality comparisons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study successfully mapped visual and vibrissa pathways in awake mice, detecting robust BOLD responses in higher-order association cortices including ACA with visual stimulation and VRA with vibrissa stimulation. VRA responses showed strong correlation with hippocampus, thalamus, and prefrontal cortical areas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 describe major functional mapping findings supported by Figures 3 and 4. The activation patterns are clearly demonstrated in the functional maps with appropriate statistical thresholds (p<0.0001). The correlation analysis (C30) is shown in Figure 5A. These findings demonstrate the capability of the platform to detect both primary sensory and higher-order cortical responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Cross-correlation analysis revealed early positive BOLD signals in the contralateral barrel cortex occurring 2 s prior to air-puff stimulation in awake mice with repetitive stimulation, which was not detected with randomized stimulation. This early activation indicates learned anticipation through the vibrissa system and association cortices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 describe a novel finding of anticipatory responses. The early BC activation is demonstrated in Figure 5 with appropriate controls (randomized stimulation paradigm). The statistical comparison (Figure 5D) shows significantly higher BOLD signals 2 s before stimulation in the repetitive group (p<0.015). The interpretation as learned anticipation (C33) is reasonable given the control experiment and is consistent with cited literature on anticipatory responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The study used 38 C57BL/6 mice (20-30 g) allocated across different experiments at 9.4 T and 14 T, with appropriate housing conditions and IACUC approval.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 describe the animal subjects and ethical compliance. The numbers and allocations are clearly stated, and IACUC approval is documented. These are standard methodological details that are appropriately reported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "Two RF coil designs were developed: a single loop for full brain coverage and a 'figure 8' design for cortical measurements with higher SNR. Each coil weighs ~2.5 g and optimizes B0 homogeneity by minimizing the air-tissue interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C47 describe the RF coil design and fabrication. The designs are shown in Figure 1 and Figure 1\u2014figure supplement 2. The weight specification (C46) and design principles (C43, C47) are clearly stated. The functional differences between designs (C44-C45) are demonstrated in the SNR measurements.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Mice underwent surgery to implant the RF coil on the skull under isoflurane anesthesia, with the coil positioned 0.3-0.5 mm above the skull surface and secured with cyanoacrylate glue and dental cement. Mice recovered for at least 1 week.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 describe the surgical procedure in appropriate detail. The anesthesia protocol (C49-C51) and coil positioning technique (C52) are clearly specified. The recovery period (C53) is reasonable for this type of procedure. These are standard methodological details.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "A 5-week training procedure was implemented with pupil recordings measured over 12 training days. Eye movements increased during Phase 3 (mock-MRI exposure) but decreased on the first day of Phase 4 (in-bore scanning), then recovered. Ultra-slow pupil dynamics (<0.02 Hz) increased during training, and motion-induced image distortion was dramatically reduced in well-trained animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C61 describe the training protocol and its effects. The training duration and phases are documented in Table 1. The pupil tracking results (C57-C60) are shown in Figure 2\u2014figure supplement 1 with appropriate quantification. The reduction in motion artifacts (C61) is demonstrated in Figure 2\u2014figure supplement 2. However, the interpretation of increased eye movements as indicating reduced stress (C24, C100) is somewhat uncertain given the complexity of stress assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "For SNR measurements, animals were anesthetized with isoflurane (1.0-2.0% maintenance), with continuous monitoring of breathing rate (50-80 breaths/min) and temperature (37\u00b0C).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65 describe the anesthesia protocol for SNR measurements. These are standard physiological monitoring parameters that are appropriately reported for anesthetized imaging studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "MRI data was acquired using 14 T and 9.4 T horizontal scanners at the Martinos Center, with detailed specifications for each system including console type, software version, and gradient capabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 provide detailed specifications of the MRI systems used. These are appropriate methodological details that enable reproducibility and interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C138"
+    ],
+    "result": "SNR was computed as mean signal divided by standard deviation of noise. The single loop coil improved SNR over 100% compared to commercial coils at 9.4 T, while the 'figure 8' coil showed a five-fold increase. SNR improvements scaled proportionally with field strength from 9.4 T to 14 T, with significant improvements up to 4 mm depth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C73 and C138 describe the SNR measurements and improvements. The calculation method (C70) is standard. The SNR improvements (C71-C72) are clearly demonstrated in Figure 1 with appropriate quantification. The depth profile (C138) is shown in Figure 1B and Figure 1\u2014figure supplement 2B. The field strength scaling (C73) is supported by citation to Pohmann et al., 2016 and is consistent with known MRI physics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "fMRI data was acquired using multi-slice 2D gradient echo EPI with TE/TR = 7 ms/1 s (effective TR = 2 s with 2 segments) at 100 \u00b5m \u00d7 100 \u00b5m \u00d7 200 \u00b5m resolution. Visual stimulation used 530 nm and 490 nm light at 5 Hz and 5.1 Hz for 8 s. Vibrissa stimulation used 10 ms air-puffs at 8 Hz for 8 s, with either fixed or randomized inter-stimulus intervals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 describe the fMRI acquisition and stimulation parameters in appropriate detail. The parameters are clearly specified and the stimulation paradigms are illustrated in Figure 3\u2014figure supplement 1. These details are essential for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C80",
+      "C81"
+    ],
+    "result": "fMRI data was processed using AFNI with a clustering threshold of 100 voxels and Pearson correlation limited to p\u22640.01 (corrected) with FDR q=0.00078.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 describe the data analysis approach. The use of AFNI is appropriate and well-cited. The statistical thresholds (C81) are clearly stated, though the relationship between the p-value threshold (p\u22640.01) and the FDR (q=0.00078) could be better explained. The processing pipeline is illustrated in Figure 3\u2014figure supplement 2.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The implantable RF coil design is based on previously published cable-free coils but eliminates the need for pickup coil positioning. While it reduces freedom of movement compared to the previous version, it offers more stable sample loading and reduced B0 offset.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C85 compare the current design to previous approaches. The design basis (C82) is appropriately cited. The advantages (C83, C85) and trade-offs (C84) are clearly stated. This provides useful context for understanding the design choices.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "Animal motion can affect B0 homogeneity and cause ghosting, and body movement can alter circuit loading causing B1 artifacts. These effects can be minimized through acclimation training, which was effective in reducing large struggling movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C90 discuss technical considerations and limitations. The effects of motion on image quality (C86, C88-C89) are based on established MRI physics principles. The effectiveness of training (C87, C90) is demonstrated in Figure 2\u2014figure supplement 2. These are important technical considerations for the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "The thin mouse skull creates significant air-tissue interface effects at ultra-high fields. Coil implantation reduced this inhomogeneity and allowed consistent shimming. The implanted coil achieved SNR comparable to cryoprobes at close distances, with the 'figure 8' coil showing five-fold improvement over commercial coils. This enables two nanoliter voxel volumes, two orders of magnitude smaller than sub-millimeter human fMRI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C95 discuss the technical advantages of the approach. The air-tissue interface issue (C91) is based on known MRI physics. The benefits of implantation (C92) are demonstrated in the figures. The SNR comparisons (C93-C94) are supported by Figure 1. The spatial resolution comparison to human fMRI (C95) is appropriately cited and mathematically correct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Despite extensive training, stress remains a confounding factor in head-fixed mice. While stress may increase eye blinking in humans, eyeblink is used for behavioral conditioning in mice, and head-fixed mice show reduced eye movements compared to free-moving mice. The increased eye movements during training may indicate alleviated stress. Pupil dynamics showed gradually increased ultra-slow oscillations during training, suggesting recovered normal behavior. However, corticosterone levels remain elevated even after 25 days of training, and further investigation is needed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C96-C105 discuss the complex issue of stress in awake mouse fMRI. While the pupil tracking data (C100, C102) is presented, the interpretation of increased eye movements as indicating reduced stress is uncertain. The authors appropriately cite evidence that head-fixed mice show reduced eye movements compared to free-moving mice (C99), which complicates the interpretation. The citation of elevated corticosterone levels (C103) suggests stress may persist despite training. The authors appropriately acknowledge the need for further investigation (C105), indicating uncertainty about the stress state of the animals.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Robust ACA activation was detected during visual stimulation in awake mice, in contrast to previous studies. Since ACA is involved in pupil dynamics and arousal state regulation, its activation provides a way to validate the conscious state of mice during scanning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C106-C109 discuss the ACA activation finding. The activation is clearly shown in Figure 3. The functional role of ACA (C108) is well-supported by citations. The interpretation that ACA activation validates the conscious state (C109) is reasonable given the known function of this region, though it is somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "Awake mouse fMRI detected activation in contralateral BC and VPM, as well as motor cortex and ipsilateral BC. Video recordings showed bilateral whisking upon air-puff, which could explain bilateral activation. Negative BOLD signals were detected across large brain areas, consistent with astrocyte-mediated negative BOLD during brain state changes. Astrocytic Ca2+ transients are coupled with both positive and negative BOLD responses, and astrocytes regulate brain state changes during locomotion and startle responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C120 discuss the vibrissa stimulation results and their interpretation. The activation patterns (C111) are shown in Figure 4. The observation of bilateral whisking (C112) from video recordings provides a plausible explanation for bilateral activation (C113). The discussion of negative BOLD signals (C115-C120) is well-supported by appropriate citations to recent literature on astrocyte-mediated BOLD responses. This provides important context for interpreting the complex activation patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Vibrissa stimulation led to robust VRA activation in awake mice. VRA is a major node of the default mode network across species, and its activation suggests higher-level cortical function contributes to vibrissa sensory processing in awake mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C123 discuss the VRA activation finding. The activation is clearly shown in Figure 4. The role of VRA in the default mode network (C122) is well-supported by citations. The interpretation that VRA activation indicates higher-level processing (C123) is reasonable given the known function of this region.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "Cross-correlation analysis revealed early BC activation 2 s before air-puff stimulation in the repetitive paradigm but not in the randomized paradigm. VRA is involved in prediction and temporal processing, and external somatosensory cues are important for prediction processing. The early BC activation shows strong correlation with VRA but VRA activation is not dependent on pre-stimulus BC activation, as shown by comparable VRA responses in both paradigms. This suggests VRA mediates external sensory perception and processes anticipated vibrissa signals but is not solely dependent on prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C137 describe the anticipatory response findings and their interpretation. The early BC activation (C126-C127) is clearly demonstrated in Figure 5 with appropriate statistical analysis (p<0.015). The control experiment with randomized stimulation (C127) strengthens the interpretation. The functional role of VRA (C128-C129) is well-supported by citations. The independence of VRA activation from pre-stimulus BC activation (C134-C135) is demonstrated by the comparable VRA responses in both paradigms (Figure 5C). The interpretation (C136-C137) is reasonable and appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C141"
+    ],
+    "result": "EPI-based T2* images from head-fixed awake mice show little air-tissue interface-induced distortion. Motion artifacts were detected at some time points but can be removed using a censoring function during analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C139-C141 describe the image quality and motion artifact handling. The image quality (C139) is demonstrated in Figure 2C and D. The motion artifacts (C140) are shown in Figure 3E and Video 2. The censoring approach (C141) is illustrated in Figure 3\u2014figure supplement 2. This demonstrates the effectiveness of the training and analysis approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Visual stimulation activated VC, SC, LGN, and ACA. Vibrissa stimulation activated contralateral BC and VPM, as well as motor cortex and ipsilateral BC. At zero time shift, VRA correlated with hippocampus, cingulate cortex, and thalamus. At -6 s time shift, stronger correlation was observed at contralateral BC in the repetitive group but not the randomized group. Time course analysis showed increased BOLD in BC before air-puff in the repetitive group (p<0.015) but not the randomized group, while VRA responses were similar between groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C142-C151 summarize the main functional mapping findings with reference to the figures. The visual stimulation results (C142) are shown in Figure 3. The vibrissa stimulation results (C143-C144) are shown in Figure 4. The correlation analysis results (C145-C148) are shown in Figure 5A-B. The time course analysis (C149-C150) is shown in Figure 5C-D with appropriate statistical testing. The similarity of VRA responses (C151) is an important control. These findings are well-supported by the data.",
+    "result_type": "MAJOR"
+  }
+]

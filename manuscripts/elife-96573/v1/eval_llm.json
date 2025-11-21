@@ -1,0 +1,313 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C99",
+      "C117",
+      "C118",
+      "C145",
+      "C146",
+      "C150"
+    ],
+    "result": "The study successfully integrated ATLAS biotelemetry and BirdScan-MR1 radar to simultaneously track Little Swift foraging behavior and aerial insect abundance. The ATLAS system provided high-frequency (~8s intervals) and high-accuracy (~10m) tracking of 32 tagged swifts, while the radar measured insect movement traffic rate (MoTR) with detection capabilities suitable for swift prey (insects 1-16mm, RCS \u22653mm\u00b2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C99, C117, C118, C145, C146, and C150 collectively establish the methodological foundation. The technical specifications are clearly documented (C117, C146), the radar's suitability for detecting swift prey is justified (C150), and the novelty of combining these systems is stated (C99). The methodology is well-described with appropriate technical details.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C42",
+      "C43",
+      "C91"
+    ],
+    "result": "Insect movement traffic rate (MoTR) varied substantially across days during the breeding season, ranging from 164.4 to 2518.9 insects km\u207b\u00b9 hr\u207b\u00b9 (mean \u00b1 SD: 1207.7 \u00b1 566.7), representing more than an order of magnitude variation. No seasonal trend was detected in MoTR (\u03c1 = -0.007, p=0.971, n=31 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C42, C43, and C91 are directly supported by radar measurements presented in Figure 1A and Table 1. The statistical test for seasonal trend is appropriate (Spearman's correlation) and clearly non-significant. The magnitude of variation is substantial and well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C6",
+      "C59",
+      "C60"
+    ],
+    "result": "Swifts exhibited significantly reduced flight distances from the breeding colony on days with high insect abundance. Both average distance (estimate <-0.001, t=-5.27, p<0.001, n=31 days) and maximum distance (estimate=-1.818, t=-3.52, p=0.001, n=31 days) showed significant negative relationships with MoTR, indicating swifts can detect prey abundance and adjust foraging distances accordingly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C6, C59, and C60 are well-supported by statistical analyses using appropriate GLMs (Gamma and Gaussian) with adequate sample sizes (n=31 days). The p-values are highly significant, and the interpretation (C59, C60) logically follows from the data. Figure 1B and 1C provide visual confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C10",
+      "C12"
+    ],
+    "result": "No significant effects of insect abundance (MoTR) were found on daily route length (estimate <-0.001, t=-1.65, p=0.123, n=15 days) or foraging duration (estimate=0.029, t=1.05, p=0.315, n=15 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C47, C10, and C12 report null results with appropriate statistical tests. However, the sample size is notably smaller (n=15 days) compared to other analyses (n=31 days), which may limit statistical power. The p-values are clearly non-significant, and the authors appropriately report these negative findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C7",
+      "C67"
+    ],
+    "result": "Colony visit frequency was significantly positively affected by MoTR (estimate=0.001, t=3.78, p<0.001, n=31 days) and negatively affected by distance from colony (estimate <-0.001, t=2.03, p=0.043, n=31 days), indicating higher provisioning rates when food was abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48, C49, C7, and C67 are supported by a multi-variable GLM analysis (Table 2) with model averaging (\u0394AIC<2). Both predictors show significant effects in expected directions. The interpretation regarding provisioning rates (C67) is reasonable given the data, though direct measurement of food delivery was not conducted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C50",
+      "C11",
+      "C74"
+    ],
+    "result": "Flight speed showed no significant relationship with insect abundance (estimate <-0.001, t=-1.33, p=0.193, n=31 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C11, and C74 report a null result with appropriate statistical testing (Gaussian GLM, n=31 days). The finding contradicts Prediction 6 but is clearly reported. The sample size is adequate for detecting effects if they existed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C8",
+      "C77"
+    ],
+    "result": "Evening arrival time at the breeding colony was significantly earlier on days with high insect abundance (estimate=-0.011, t=-2.27, p=0.034, n=23 days), supporting the prediction that swifts arrive earlier when food is abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C52, C8, and C77 are supported by statistical analysis with adequate sample size (n=23 days). The p-value is significant (p=0.034), though close to the \u03b1=0.05 threshold. The biological interpretation is consistent with predation risk-food availability trade-offs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C80"
+    ],
+    "result": "Nighttime roosting duration was consistently 10.45 \u00b1 0.68 hr and showed no correlation with the preceding day's MoTR (estimate=0.002, t=0.26, p=0.801, n=20 days). Morning departure time was also not associated with same-day MoTR (estimate=-0.005, t=-1.07, p=0.297, n=20 days).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, and C80 report descriptive statistics and null results with appropriate tests. The sample sizes (n=20 days) are adequate, and the p-values clearly indicate no significant relationships. These findings do not support Predictions 8 and 9b.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C55",
+      "C81"
+    ],
+    "result": "Morning departure time was significantly positively correlated with the previous evening's arrival time (estimate=0.634, t=2.81, p=0.016, n=14 days), suggesting a link between roosting timing across consecutive days.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C81 are supported by statistical analysis, though the sample size is smaller (n=14 days). The p-value is significant (p=0.016), and the relationship is biologically plausible. However, the mechanistic explanation remains speculative (C82, C83).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C13",
+      "C85"
+    ],
+    "result": "Inter-individual distance was significantly negatively affected by MoTR (estimate <-0.001, t=-3.12, p=0.004, n=31 days) and positively correlated with distance from colony (estimate <0.001, t=5.02, p<0.001, n=31 days), indicating swifts forage closer together when insect abundance is high.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57, C58, C13, and C85 are well-supported by multi-variable GLM analysis with adequate sample size (n=31 days). Both effects are statistically significant and in expected directions. Figure 1F provides visual confirmation. The interpretation regarding social foraging is reasonable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C68",
+      "C72",
+      "C73"
+    ],
+    "result": "Despite changes in foraging distance with prey abundance, swifts maintained constant flight effort (daily route and foraging duration unchanged), suggesting that shorter traveling distances when food is abundant did not reduce flight-related energy expenditure due to increased return trips.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65, C68, C72, and C73 provide a coherent interpretation of the pattern of results. The logic is sound: reduced distance but increased visit frequency could offset energy savings. However, this interpretation is inferential as actual energy expenditure was not measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C69",
+      "C75"
+    ],
+    "result": "The study suggests swifts optimize food provisioning to offspring rather than minimizing their own energetic costs, prioritizing reproductive output over foraging efficiency when food is abundant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C69, and C75 present a coherent interpretation of the overall findings within the framework of optimal foraging theory. The interpretation is consistent with the data showing increased visit frequency but constant flight effort. However, reproductive success was not directly measured, limiting the strength of this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C61",
+      "C62",
+      "C64"
+    ],
+    "result": "The findings suggest Little Swifts optimize foraging behavior in relation to aerial insect abundance, with potential implications for reproductive success and population dynamics. Decreased insect abundance may force birds to expend more energy foraging at greater distances, potentially impacting parental efficiency and having broader implications for insectivore ecology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14, C15, C61, C62, and C64 extend beyond the data to speculate about reproductive success and population-level consequences. While the behavioral responses to insect abundance are well-documented, the links to fitness outcomes and population dynamics are not empirically demonstrated in this study. These remain plausible hypotheses requiring further investigation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C125",
+      "C126",
+      "C127",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Extensive data filtering was applied to ensure data quality, removing 49.4% of raw data through multiple criteria including speed filters (>30 m/s), localization error thresholds (StdLoc >30.1m), spatial discontinuities (>500m gaps), and minimum tag requirements (\u22654 active tags/day). Final analysis used 415,420 positions with mean 1491\u00b1899 locations per tag per day.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C133 document the data quality control procedures. The filtering criteria are reasonable and well-justified, though removing nearly half the data is substantial. The reliance on Common Swift flight speed (C126) due to lack of species-specific data is a limitation but appropriately acknowledged. The final dataset appears robust.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "Statistical analyses employed GLMs and Spearman correlations with appropriate distribution selection (fitdistrplus package), model averaging for competing models (\u0394AIC<2), using R version 4.1.2 with two-tailed tests and \u03b1=0.05.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C161 describe appropriate statistical methods. GLMs with proper distribution selection are suitable for the data types. Model averaging for \u0394AIC<2 is a standard approach. The statistical framework is sound and well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "The authors propose speculative mechanisms for observed patterns: early evening arrival may lead to earlier morning departure due to hunger or compensatory feeding (C82, C83), and reduced inter-individual distances at high food abundance may facilitate local enhancement when individuals are close enough to detect each other (C86, C87, C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82, C83, C86, C87, and C88 are explicitly speculative explanations for observed patterns. While plausible and consistent with behavioral ecology theory, these mechanisms were not directly tested. The authors appropriately frame these as possible explanations requiring further research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The spatial distribution of insect abundance in the aerial habitat remains unclear. While some studies suggest insect bioflow is correlated over large spatial scales, patches of high concentration might be transient and spatially variable, requiring further characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92, C93, and C94 acknowledge a limitation of the current understanding. The uncertainty is appropriately stated, and the need for further research is identified. This represents an honest assessment of knowledge gaps in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C18",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "This study represents the first use of advanced tracking tools to empirically examine optimal foraging in the aerial habitat, demonstrating how integration of complementary technologies (ATLAS and radar) can expand aeroecological research and provide insights into how human-related habitat changes may affect aerial organisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18, C97, C98, C99, C100, and C101 establish the novelty and significance of the methodological approach. The claim of being 'first' (C18) is qualified with 'to the best of our knowledge' and supported by the literature review. The technological integration is indeed novel and demonstrates clear advantages for studying aerial ecology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C116",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "The study tagged 32 Little Swifts with ATLAS transmitters (1-1.15g, <5% body mass), with tags operating 0.3-39.8 days (mean 13.4\u00b110.4 days). Analysis included 841,342 localizations collected over 31 days (19 days in 2019, 12 days in 2021).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116, C121, C122, and C123 provide clear methodological details. The tag weight is appropriate (<5% body mass guideline). The variable tag longevity (0.3-39.8 days) suggests some technical issues but is honestly reported. The dataset is substantial and adequate for the analyses conducted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C41"
+    ],
+    "result": "The study tested multiple predictions derived from optimal foraging theory regarding how swifts should adjust foraging distance, visit frequency, flight speed, and timing in response to prey abundance, as well as predictions about social foraging dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C37 and C41 establish the theoretical framework and predictions tested. These are appropriately derived from optimal foraging and central-place foraging theory with proper citations. The predictions are clearly stated and testable, providing a strong hypothesis-driven framework for the study.",
+    "result_type": "MINOR"
+  }
+]

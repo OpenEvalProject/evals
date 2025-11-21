@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Transcriptomic analysis of E13.5 and adult CNS endothelial cells revealed distinct gene expression patterns, with specific BBB-related genes (Cldn1, Mfsd2a, Zic3) downregulated in adults and others (Cldn5, Sox17) upregulated in adults.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Multiple reviewers raised critical concerns about the use of cultured endothelial cells for transcriptomic analysis. Reviewer 1 stated that 'brain endothelial cells rapidly lose their organotypic features in culture' and that 'Cldn1 exhibits very low expression in vivo but is strongly upregulated in cultured ECs,' suggesting the study may be 'looking at how brain endothelial cells lose their identity in culture.' Reviewers 2 and 3 both emphasized that 'culturing of endothelial cells can have a strong effect on gene expression' and noted the authors 'do not state how long the cells were cultured.' This fundamental methodological concern undermines the validity of the transcriptomic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Pharmacological inhibition of HDACs (TSA and MS-275) and siRNA knockdown of HDAC2 in adult endothelial cells upregulated embryonic BBB genes (Cldn1, Mfsd2a, Zic3) and downregulated adult BBB genes (Cldn5), with HDAC2 showing the highest expression among class I HDACs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 noted that 'for many experiments, siRNA knockdowns are performed without validation of the efficacy of knockdown,' which raises concerns about the reliability of these findings. Additionally, Reviewer 3 stated that the observation that 'pharmacologic inhibitor experiments and conditional KO experiments targeting HDAC2 perturb EC gene expression is not particularly surprising as these proteins have broad roles in epigenetic regulation.' The lack of validation and the expected nature of the findings diminish confidence in these results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "ChIP-qPCR analysis showed differential HDAC2 occupancy and histone modifications (H3K27me3, H3K4me3) at BBB gene loci between E13.5 and adult stages, with repressive marks enriched in adults at embryonic BBB genes and active marks enriched at adult BBB genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 criticized the use of qPCR methods, stating 'the use of qPCR assays for quantifying ChIP and transcript levels is inferior to ChIPseq and RNAseq' and that 'whole genome methods permit a level of quality assessment that is not possible with qPCR methods.' The reviewer recommended the authors 'use whole genome NextGen sequencing approaches' and 'quantitatively analyze the technical quality of the data.' This methodological limitation casts doubt on the robustness of the ChIP-qPCR findings, though the underlying culture artifact concern also applies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "siRNA knockdown of Ezh2 (PRC2 component) in adult endothelial cells increased expression of embryonic BBB genes (Cldn1, Zic3, Mfsd2a) and decreased Cldn5 expression.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "As with HDAC2 knockdown experiments, Reviewer 1 noted the lack of validation for siRNA knockdown efficacy. Additionally, the cultured cell artifact concern raised by all reviewers applies to these experiments as well, undermining confidence in whether these findings reflect in vivo biology or culture-induced changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C31",
+      "C54"
+    ],
+    "result": "Endothelial-specific knockout of Hdac2 (Hdac2 ECKO) resulted in dilated vessels, increased angiogenesis, BBB leakage at E17.5, and increased vascularized brain area, demonstrating that HDAC2 is critical for BBB maturation and angiogenesis regulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly stated that 'the knockout of HDAC2 in endothelial cells resulting in BBB leakage was striking' and suggested 'investigating the mechanisms underlying this phenotype in vivo could yield important insights.' This in vivo genetic experiment avoids the culture artifact concerns and provides direct evidence for HDAC2's role in BBB development. No reviewer challenged these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C32",
+      "C55",
+      "C56"
+    ],
+    "result": "Endothelial-specific knockout of Ezh2 (Ezh2 ECKO) showed dilated vessels and subtle BBB leakage at E17.5, suggesting PRC2 is dispensable or plays a supporting role in BBB development, with HDAC2 being the primary regulator.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These in vivo genetic experiments avoid the culture artifact concerns raised by reviewers. While Reviewer 3 noted that perturbations of Polycomb are 'not particularly surprising,' no reviewer directly challenged the validity of the Ezh2 ECKO phenotype or the interpretation that it shows a milder effect than Hdac2 ECKO. The comparison between the two knockouts provides meaningful biological insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C59"
+    ],
+    "result": "Wnt signaling components showed differential regulation between E13.5 and adult, with downstream target genes (Axin2, Lef1) downregulated in adults despite upregulation of upstream components (Fzd4/6, Lrp5, Ctnnb1). Adult ECs could translocate \u03b2-catenin to the nucleus but could not activate Wnt target genes, indicating the upstream pathway is active but target genes are epigenetically silenced.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The transcriptomic analysis and cultured cell experiments showing Wnt target gene activation patterns are subject to the same culture artifact concerns raised by all reviewers. The \u03b2-catenin translocation experiment (C37) provides some support for pathway activity, but the overall interpretation relies heavily on gene expression data from cultured cells, which reviewers indicated may not reflect in vivo biology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "HDAC2 and PRC2 inhibition or deletion upregulated Wnt target genes (Axin2, Lef1) in adult CNS ECs, and ChIP-qPCR showed increased HDAC2 occupancy and repressive histone marks (H3K27me3) with decreased active marks (H3K4me3, H3K9ac) at the Axin2 promoter in adults.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These findings are subject to both the culture artifact concern and the qPCR methodology critique raised by Reviewer 2. The lack of siRNA knockdown validation noted by Reviewer 1 further weakens confidence in these results. While the ChIP-qPCR data on Axin2 provides mechanistic insight, the technical limitations undermine the strength of the evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C60",
+      "C61"
+    ],
+    "result": "Treatment of E13.5 endothelial cells with Wnt inhibitor LF3 induced adult-like BBB gene expression patterns (decreased Cldn1, Zic3, Mfsd2a; increased Cldn5, Sox17) and increased HDAC2 occupancy at Cldn1, demonstrating that low Wnt activity causes epigenetic modifications on BBB genes mediated by HDAC2.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These experiments were performed in cultured cells and are therefore subject to the culture artifact concerns raised by all reviewers. While the LF3 treatment provides a mechanistic link between Wnt signaling and epigenetic regulation, the reliance on cultured cells and qPCR methods (criticized by Reviewer 2) limits confidence in whether these findings reflect in vivo developmental processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C62"
+    ],
+    "result": "\u03b2-catenin gain-of-function (GOF) embryos showed increased angiogenesis and BBB leakage at E17.5, demonstrating that sustained Wnt/\u03b2-catenin activity prevents BBB maturation and that low Wnt pathway activity supports BBB maturation through epigenetic modifications.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These in vivo genetic experiments avoid the culture artifact concerns and provide direct evidence for the role of Wnt signaling in BBB development. No reviewer challenged these findings, and they complement the Hdac2 ECKO results to support the overall model. The \u03b2-catenin GOF phenotype provides strong evidence for the importance of Wnt pathway regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C65",
+      "C66"
+    ],
+    "result": "Transcriptomic analysis of Hdac2 ECKO embryos and MS-275-treated adult ECs revealed widespread gene expression changes affecting angiogenesis, barrier genesis, and Wnt signaling, demonstrating that HDAC2 regulates multiple aspects of endothelial cell function.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the Hdac2 ECKO transcriptomic data comes from in vivo tissue (avoiding culture artifacts), the MS-275 treatment was performed on cultured adult ECs and is subject to the culture concerns. Reviewer 2's critique of using qPCR instead of genome-wide sequencing methods also applies, though the authors did perform RNA-seq. Reviewer 3 noted these findings are 'not particularly surprising' given HDAC2's broad roles. The mixed methodology and expected nature of the findings result in uncertain evaluation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C67"
+    ],
+    "result": "Gene expression changes induced by MS-275 treatment in adult ECs (Cldn1 upregulation, Cldn5 downregulation) returned to normal 7 days after treatment withdrawal, demonstrating that epigenetic changes are reversible.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This reversibility experiment was performed in cultured cells and is subject to the culture artifact concerns raised by all reviewers. While the finding supports the concept of epigenetic reversibility, the reliance on cultured cells limits confidence in its relevance to in vivo BBB biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C50",
+      "C68"
+    ],
+    "result": "MS-275 treatment of human temporal lobe vessels significantly activated Cldn1 and Axin2 expression without affecting Cldn5, demonstrating that HDAC inhibition can partially reinstate developmental characteristics in human adult CNS endothelial cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While this experiment uses human tissue, the reviewers' concerns about culture effects and methodology still apply. The human vessel experiments provide translational relevance, but the lack of detailed methodological information and the culture-based approach limit confidence. No reviewer specifically commented on the human experiments, but the general methodological concerns would apply.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C63",
+      "C64"
+    ],
+    "result": "Wnt7a showed high expression in E13.5 ECs with null expression in adults, and MS-275 treatment activated Wnt7a expression in adult CNS ECs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These findings are based on transcriptomic analysis of cultured cells and are subject to the culture artifact concerns raised by all reviewers. The Wnt7a expression pattern is interesting but the reliability of the data is questionable given the methodological concerns.",
+    "result_type": "MINOR"
+  }
+]

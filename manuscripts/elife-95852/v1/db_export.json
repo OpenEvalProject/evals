@@ -1,0 +1,2423 @@
+{
+  "submission": {
+    "id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:19:03.946676Z",
+    "updated_at": "2025-11-21T22:19:03.946676Z"
+  },
+  "content": [
+    {
+      "id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "content_type": "manuscript",
+      "content_text": "# PUFA stabilizes a conductive state of the selectivity filter in IKs channels\n\n## Authors\n\n- Alessia Golluscio<sup>1</sup> ([ORCID: 0000-0003-4556-9869](https://orcid.org/0000-0003-4556-9869))\n- Jodene Eldstrom<sup>3</sup>\n- Jessica J Jowais<sup>1</sup>\n- Marta Elena Perez<sup>1</sup>\n- Kevin Peter Cunningham<sup>1</sup> ([ORCID: 0000-0001-6772-0107](https://orcid.org/0000-0001-6772-0107))\n- Alicia De La Cruz<sup>1</sup> ([ORCID: 0000-0002-0349-4881](https://orcid.org/0000-0002-0349-4881))\n- Xiaoan Wu<sup>1</sup>\n- Valentina Corradi<sup>5</sup>\n- D Peter Tieleman<sup>5</sup> ([ORCID: 0000-0001-5507-0688](https://orcid.org/0000-0001-5507-0688))\n- David Fedida<sup>3</sup> ([ORCID: 0000-0001-6797-5185](https://orcid.org/0000-0001-6797-5185))\n- H Peter Larsson<sup>1</sup> ([ORCID: 0000-0002-1688-2525](https://orcid.org/0000-0002-1688-2525)) \u2020\n\n### Affiliations\n\n1. Department of Physiology and Biophysics, University of Miami Miami United States ([ROR:02dgjyy92](https://ror.org/02dgjyy92))\n2. Department of Biomedical and Clinical Sciences, Link\u00f6ping University Link\u00f6ping Sweden ([ROR:05ynxx418](https://ror.org/05ynxx418))\n3. Department of Anesthesiology, Pharmacology and Therapeutics, University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))\n4. School of Life Sciences, University of Westminster London United Kingdom ([ROR:04ycpbx82](https://ror.org/04ycpbx82))\n5. Department of Biological Sciences and Centre for Molecular Simulation, University of Calgary Calgary Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))\n\n\u2020 Corresponding author\n\n## Abstract\n\nIn cardiomyocytes, the KCNQ1/KCNE1 channel complex mediates the slow delayed-rectifier current (IKs), pivotal during the repolarization phase of the ventricular action potential. Mutations in IKs cause long QT syndrome (LQTS), a syndrome with a prolonged QT interval on the ECG, which increases the risk of ventricular arrhythmia and sudden cardiac death. One potential therapeutical intervention for LQTS is based on targeting IKs channels to restore channel function and/or the physiological QT interval. Polyunsaturated fatty acids (PUFAs) are potent activators of KCNQ1 channels and activate IKs channels by binding to two different sites, one in the voltage sensor domain \u2013 which shifts the voltage dependence to more negative voltages \u2013 and the other in the pore domain \u2013 which increases the maximal conductance of the channels (Gmax). However, the mechanism by which PUFAs increase the Gmax of the IKs channels is still poorly understood. In addition, it is unclear why IKs channels have a very small single-channel conductance and a low open probability or whether PUFAs affect any of these properties of IKs channels. Our results suggest that the selectivity filter in KCNQ1 is normally unstable, contributing to the low open probability, and that the PUFA-induced increase in Gmax is caused by a stabilization of the selectivity filter in an open-conductive state.\n\n## Introduction\n\nThe voltage-gated K+ channel KCNQ1, also referred to as Kv7.1, is expressed in the heart. Here the channel associates with the accessory KCNE1 subunit, generating the so-called slow delayed-rectifier (IKs) current, an important contributor to the repolarizing phase of the ventricular action potential (AP) (Barhanin et al., 1996; Sanguinetti et al., 1996; Nerbonne and Kass, 2005). Loss-of-function mutations of the KCNQ1/KCNE1 complex are associated with long QT syndrome (LQTS) (Splawski et al., 2000; Tester and Ackerman, 2014). These LQTS mutations cause a reduction of the channel current, leading to a significant prolongation of the ventricular AP waveform that can be seen on the electrocardiogram as a prolonged QT interval (Nerbonne and Kass, 2005; Figure 1A). These channel mutations, or dysfunction, increase the risk of developing cardiac arrhythmias, which can lead to sudden cardiac death (Wu and Sanguinetti, 2016). At present, treatment of LQTS is mainly based on the usage of \u03b2-blockers (most used are long-lasting preparations such as nadolol and atenolol) and implantable cardioverter-defibrillators, especially for patients with high risk of sudden death and frequent syncope (Roden, 2008). However, both approaches do not shorten the QT interval duration. Restoring the physiological duration of the QT interval could be achieved by increasing the activity of the KCNQ1/KCNE1 channel complex (Varshneya et al., 2018; Figure 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig1-v1.jpg)\n\n**Figure 1.:** (A) (Black) Prolonged QT interval in the ECG is due to, for example, loss-of-function mutations of KCNQ1/KCNE1 channels that generate the IKs current that normally contributes to the repolarizing phase of the ventricular action potential (AP). (Red) PUFAs are potent activators of KCNQ1/KCNE1 channels that can restore the normal functioning of the channel and restore the AP duration and the QT interval. (B) Representative current traces of KCNQ1/KCNE1 in 0 \u03bcM and 20 \u03bcM of Lin-Glycine. Voltage protocol on top. (C) Conductance versus voltage curves from tail currents (measured at arrows in B). Channel activation by PUFA results in two main effects: a shift of the voltage dependence of activation (\u0394V0.5) and an increase in the channel maximum conductance (\u0394Gmax). (D) KCNQ1 transmembrane topology. Residues mutated in this study are labeled. (E) KCNQ1 top view (PDB: 6UZZ) with PUFA binding sites: Site I, at the voltage sensor domain (VSD); and Site II, at the pore domain. The four subunits are shown in four different colors. (F) Cartoon of PUFA mechanism of action. Site I, top panel. Electrostatic interactions between PUFA head groups and positively charged residues in S4 facilitate channel activation by stabilizing the outward state of S4. Site II, bottom panel. PUFA interaction with residues in the pore domain facilitates the increase in the maximum channel conductance.\n\nLike other Kv channels, KCNQ1 has a typical tetrameric structure of four \u03b1-subunits. Each \u03b1-subunit is composed of six transmembrane segments, with S1-S4 forming the voltage sensor domain (VSD) and S5-S6 forming the pore domain (PD) (Figure 1D). However, the KCNQ1/KCNE1 channel complex has a very small single-channel conductance and a very low open probability compared to other Kv channels (Werry et al., 2013). The mechanisms behind the small conductance and low open probability are not understood.\n\nPolyunsaturated fatty acids (PUFA), in particular omega 3, are known to exert a protective effect on sudden cardiac death and are recommended in the diet at least twice a week (Fernandez et al., 2021). PUFAs have been shown to increase IKs currents by a dual mechanism of action, characteristically described as a \u2018Lipoelectric mechanism\u2019 (Elinder and Liin, 2017). According to this mechanism, PUFAs can increase IKs currents by shifting the voltage dependence of activation (\u0394V0.5) toward negative voltages and increase the maximum conductance of the channel (\u0394Gmax) (Bohannon et al., 2019; Bohannon et al., 2020; Yazdi et al., 2021; Larsson et al., 2020; Wu and Larsson, 2020; Figure 1B and C).\n\nThe two PUFA effects (\u0394V0.5 and \u0394Gmax) on KCNQ1 are independent of each other and originate from the binding of PUFA to two different sites, conventionally indicated as Site I and Site II (Yazdi et al., 2021; Liin et al., 2018). Site I is found in the VSD, where the PUFA head group interacts with the positive charges in the S4 segment and causes the channel to open at more negative potentials (Liin et al., 2015). Site II is found in the pore domain, where electrostatic interactions between the PUFA head group and the positively charged residue, K326, facilitate an increase in the maximal conductance of the channel (Liin et al., 2018; Figure 1E and F).\n\nAlthough previous studies have shown the importance of K326 for PUFA in increasing Gmax through binding at Site II (Liin et al., 2018), the mechanism by which PUFAs increase Gmax is still not understood. In this study, we use a combination of two-electrode voltage-clamp, single-channel recordings, site-directed mutagenesis, and recent cryoEM structures to gain insight into the molecular mechanism underlying the Gmax effect following PUFA binding at Site II. We propose a novel mechanism where the selectivity filter of KCNQ1 is normally unstable and the binding of PUFA to Site II stabilizes a network of interactions at the selectivity filter, which, in turn, leads to a more open and stable conformation of the KCNQ1 pore and thus an increase in channel open probability.\n\n## Results\n\n### Lin-Glycine drastically increases the chance of KCNQ1/KCNE1 channel opening\n\nLin-Glycine has been shown to increase the Gmax in whole-oocyte recordings of KCNQ1/KCNE1 channels 2.5-fold (Bohannon et al., 2020). To better understand how Lin-Glycine increases Gmax, we here extended our analysis to the single-channel level to study the behavior of KCNQ1/KCNE1 in the absence and presence of Lin-Glycine (20 \u00b5M) (Figure 2). Representative traces (Figure 2A and B) and all points histograms (Figure 2C and D) suggest that there is no change in single-channel conductance between KCNQ1/KCNE1 in control and with Lin-Glycine. This shows that the Gmax effect is not due to an increase in the single-channel conductance. However, Lin-Glycine caused a decrease in the latency to first opening (in control, 1.78 \u00b1 0.36 s, n = 41 sweeps and after 20 \u00b5M Lin-Glycine, 1.03 \u00b1 0.05 s, n = 99 sweeps; p=0.0025) and an increase in the number of non-empty sweeps (Figure 2\u2014figure supplement 1). In control, there are a high number of empty sweeps as shown before for KCNQ1/KCNE1 channels (Werry et al., 2013). The average current during the single-channel sweeps was increased by 2.3 \u00b1 0.33 times (n = 4 patches, p=0.006) by the application of Lin-Glycine (Figure 2E). The number of non-empty sweeps increased 2.85-fold (2.85 \u00b1 0.85, n = 200 sweeps from four patches; p=0.001), going from a total of 41/200 non-empty sweeps in control to 99/200 when Lin-Glycine was applied. In contrast, once the channel opens, it seems to behave very similarly in control and Lin-Glycine because, in non-empty sweeps, the open probability (Po) in the last second of the traces was almost identical between control and Lin-Glycine conditions (Po = 0.78 \u00b1 0.02 [n = 8 sweeps] in control vs 0.87 \u00b1 0.04 [n = 8 sweeps] in Lin-Glycine) (Figure 2F). This high open probability was maintained in control conditions even for longer depolarizing voltage pulses, as if once the channels had opened they stayed open for the remaining of the voltage steps (Figure 2\u2014figure supplement 2). The 2.85-fold increase in the number of non-empty sweeps is very similar to the Gmax increase seen in macroscopic currents.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig2-v1.jpg)\n\n**Figure 2.:** (A, B) Ten consecutive traces of KCNQ1/KCNE1 in (A) control and (B) in the presence of Lin-Glycine (20 \u03bcM). (Top) Protocol used for the recordings. (C, D). All-point amplitude histogram of 50 consecutive traces in (C) control and (D) Lin-Glycine. Note no change in the single-channel current amplitude; however, an increase in the number of sweeps with channel opening is observed. Note that there were at least two channels in this patch. Different sweeps were assigned different colors to better visualize different types of channel behaviors. Note panels (A\u2013D) are all from the same patch. (E) Average currents of 100 sweeps in control and Lin-Glycine. (F) All-point histogram of the last second of non-empty sweeps in control and in Lin-Glycine. We estimated the open probability from the all-point amplitude histogram by Po = Sum (iN/(iestimateNtotal)), where N is the number of points for a specific current i in the histogram, iestimate = 0.4 pA from the peak of the histogram, and Ntotal = 10,000 is the total number of points in the last second of the trace. p=0.78 \u00b1 0.02 (n = 8 sweeps) and p=0.87 \u00b1 0.04 (n = 8 sweeps) for Control and Lin-Glycine, respectively, from the same patch.\n\n![Figure 2\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig2-figsupp1-v1.jpg)\n\n![Figure 2\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig2-figsupp2-v1.jpg)\n\n**Figure 2\u2014figure supplement 2.:** (A) Ten consecutive traces of KCNQ1/KCNE1in response to 20-s-long voltage steps in control solutions. (Top) Protocol used for the recordings. (B) Average currents of 57 sweeps in control solution.\n\nThe decrease in first latency is most likely due to an effect of Lin-Glycine on Site I in the VSD and related to the shift in voltage dependence caused by Lin-Glycine. In contrast, the increase in the number of non-empty sweeps is most likely an effect on Site II in the pore and related to the Gmax effect. We conclude that the Gmax effect of Lin-Glycine on KCNQ1/KCNE1 is mainly due to an increase in the Po by increasing the number of non-empty sweeps.\n\n### Crevice residues affect PUFA ability to increase Gmax\n\nIt was previously shown that PUFAs binding at Site II electrostatically interact with the positively charged residue K326, located just outside the selectivity filter (Liin et al., 2018). We tested whether another residue very close to K326, the aspartic acid at position 301, is important for the PUFA interaction at Site II. Electrophysiological analysis revealed that when KCNQ1_WT/KCNE1 was mutated to KCNQ1_D301E/KCNE1, the \u0394V0.5 was shifted similarly to the WT channel (Figure 3\u2014figure supplement 1) but a dramatic decrease of the Gmax effect of Lin-Glycine was observed, showing the importance of this residue for PUFAs interaction at Site II (Figure 3A\u2013C). However, it is not clear how PUFA binding at Site II increases Gmax.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig3-v1.jpg)\n\n**Figure 3.:** (A, B) KCNQ1_D301E/KCNE1 representative current traces (A) in 0 \u03bcM of Lin-Glycine. (B) After perfusion of 20 \u03bcM of Lin-Glycine. (C) Gmax/Gmax0 for KCNQ1/KCNE1 channels and KCNQ1_D301E /KCNE1 channels. Gmax/Gmax0 was significantly reduced for the D301E mutation compared to WT channels (p=0.0018, n = 4 oocytes). Student\u2019s t-test was used to conduct statistical analysis. (D\u2013F) Structures of crevice between S5 and S6 in KCNQ1 with S4 activated (S4 up) (D, E) and S4 resting (S4 down) (F). Residues that surround the crevice from S6 shown in blue (K326, T327, S330, V334) and from the pore helix and S5 in red (D301, A300, L303, F270). Remaining KCNQ1 residues shown in light gray. On the left is shown the location of the crevice in KCNQ1 (top) side view and (bottom) top view. (D) In MD simulations (Yazdi et al., 2021), linoleic acid (LIN: gold color) fits in a narrow crevice present in the cryoEM structure of activated state KCNQ1. (E) Same view as in (D) but without LIN. (F) In the cryoEM structure with S4 in the resting state, the crevice between K326 and D301 is too narrow to fit LIN.\n\n![Figure 3\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig3-figsupp1-v1.jpg)\n\n**Figure 3\u2014figure supplement 1.:** A similar shift in the voltage dependence of activation was found for KCNQ1_D301E/KCNE1 and KCNQ1/KCNE1 after perfusion of several concentrations of Lin-Glycine. Comparisons at 20 \u03bcM of Lin-Glycine revealed no significant difference between the effect seen in KCNQ1/KCNE1 and KCNQ1_D301E (p=0.52; n = 3 oocytes).\n\nIn our previous MD simulations (Yazdi et al., 2021) based on the cryoEM structure of KCNQ1 with S4 in the activated state, PUFA binds to residues K326 and D301 at Site II that delimit a narrow crevice (Figure 3D and E), where PUFA could fit with both the head and the tail (Figure 3D and E). However, in the recent cryoEM structure of KCNQ1 with S4 in the resting state (Mandala and MacKinnon, 2023) the crevice between K326 and D301 is now so narrow that PUFA seems unable to fit into it (Figure 3F). In addition, there are large rearrangements in the selectivity filter when comparing the cryoEM structures with S4 activated (PDB: 8SIK) and S4 resting (PDB: 8SIN) (Figure 4). We have made a video showing the changes and the reorganization of the pore between these two structures (Video 1). The conformation of the pore significantly varies between what seems like a conductive (PDB: 8SIK) and a non-conductive (PDB: 8SIN) state of the channel. For example, in the structure with S4 in the resting state, Y315 and D317 have swung outward and left their positions in which they made hydrogen bonds with two tryptophans, W305 and W304, respectively. Y315 belongs to the K+ channels signature sequence, a stretch of eight amino acids including TXXTXGYG, highly conserved among K+ channels of different families and D317 is just next to this sequence (Sansom et al., 2002; Heginbotham et al., 1994). W304 and W305 belong to the aromatic ring cuff (Figure 4C and D) that has been suggested to be important for the stability of the open state of the selectivity filter in Kv channels (Doyle et al., 1998; Larsson and Elinder, 2000).\n\n![Figure 4.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig4-v1.jpg)\n\n**Figure 4.:** (A) Selectivity filter of KCNQ1 with S4 activated (S4 up; PDB: 8SIK). Distances between D317 and W304 and between T309 and Y315 are short enough to form hydrogen bonds (dashed lines). (B) Selectivity filter of KCNQ1 with S4 in resting state (S4 down; PDB: 8SIN). Distances between D317 and W304 and between T309 and Y315 are too long for hydrogen bonds (dashed lines). Only two subunits are shown for clarity. (C, D). Aromatic cuff in KCNQ1 with (C) S4 activated and (D) resting S4. Note how P320 (red) moves away from its position in between W304 and W305 from two different subunits in the S4 down conformation.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** Each vector (shown in orange) starts from the position of a given atom in the up state (PDB ID 8SIK) and points to the position of the same atom in the down state (PDB ID 8SIN). (A) Displacement of the Ca atoms of residues 298\u2013341 is shown in orange if greater than 2 \u00c5. The side chain of such residues is shown as sticks. (B) Displacement of the side chains of residues 298\u2013341. The side chain of residues W304, W305, T309, I313, Y315, D317, K318, V319, P320, K326 are highlighted as sticks and atoms are colored based on the atomic displacement values. Scale bar is in \u00c5. In (A, B), for clarity, only one monomer of the up state of KCNQ1 is shown.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** Displacement of the Ca atoms of residues 298\u2013341 is shown if greater than 2 \u00c5. (A) Displacement of atoms (\u00c5) before the selectivity filter; (B) residues of the selectivity filter; and (C) residues located just outside the selectivity filter region.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) In Shaker, P450 sits in between the two tryptophan and stabilizes the aromatic ring cuff. (B) In contrast, in KCNQ1 the P320 is positioned further outward and away from the two tryptophan, generating a looser arrangement of the aromatic ring cuff.\n\n![Video 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-video1.mp4.jpg)\n\n**Video 1.:** Interpolation between the cryoEM structures of Kv7.1 with S4 in the activated conformation (PDB 8SIK) and S4 in the resting conformation (PDB SIN) showing the position of residues W304, W305, T309, Y315, and D317 that are important for the stability of the selectivity filter in related Kv channels. Dashed lines between residues proposed to make hydrogen bonds in Kv channels.\n\nIn addition, P320, which in the structure with an activated S4 sits in between W304 and W305 from two subunits (Figure 4C), has also swung outward in the structure with S4 in the resting state and exposed a gap between W304 and W305 in the aromatic cuff (Figure 4D, see also Video 2). The homologous proline in other Kv channels sits between the two tryptophans and stabilizes the aromatic ring cuff. Figure 4\u2014figure supplements 1 and 2 show the extent of the movement for each residue in the selectivity filter and nearby regions between the two conformations.\n\n![Video 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-video2.mp4.jpg)\n\n**Video 2.:** Interpolation between the cryoEM structures of Kv7.1 with S4 in the activated conformation (PDB 8SIK) and S4 in the resting conformation (PDB SIN) showing the position of the aromatic cuff residues W304, W305, and P320 (red) that are important for the stability of the selectivity filter in related Kv channels.\n\nBased on our single-channel data with many empty sweeps, we propose the hypothesis that the KCNQ1 selectivity filter is inherently unstable and transitions between the two conformations \u2013 one conductive state that generates the non-empty sweeps and one non-conductive state that generates the empty sweeps in the single-channel data. We further propose that PUFA binding to residues at Site II stabilizes and promotes the conductive state of the pore. If PUFA binding to K326 and D301 promotes a series of interactions that stabilize the pore, then residues at the upper part of the selectivity filter, such as Y315 and D317, might be involved in those interactions that promote an open-conductive conformation of the channel.\n\n### Residues that stabilize the selectivity filter are necessary for the Gmax effect\n\nIf our pore stability hypothesis is correct, we should see altered effects of Lin-Glycine on Gmax when residues important for the PUFA-promoted open-conductive conformation are mutated. We therefore made the mutations Y315F and D317E in KCNQ1. We tested Lin-Glycine on KCNQ1_Y315F/KCNE1 and KCNQ1_D317E/KCNE1 channels and compared the Gmax effect to that of the WT channel. The effect of Lin-Glycine was reduced on both mutant channels, with a particularly dramatic decrease for Y315F (Figure 5A). For KCNQ1_Y315F/KCNE1, we compared the effect on the voltage dependence of activation (\u0394V0.5) and we observed a similar effect as for the WT channel (Figure 5\u2014figure supplement 1), with both showing an ~\u201325 mV shift. We also tested the Y315F mutation at the single-channel level. As expected, Lin-Glycine did not increase the number of non-empty sweeps in KCNQ1_Y315F/KCNE1 channels (52/478 [10.9 % from three patches] of traces were non-empty in control and 44/533 [8.3% from three patches] of traces were non-empty in Lin-Gly) (Figure 6, Figure 6\u2014figure supplement 1). The mutation Y315F reduced the single-channel current slightly from I = 0.4 pA in wildtype to I = 0.3 pA in the Y315F mutation (Figure 6C and D). The current average of all traces showed no increase in average current by Lin-Glycine (Figure 6E). This data shows that Y315 and D317 are necessary for the ability of Lin-Glycine to increase Gmax. Conductance vs voltage curves (G\u2013V) for WT and mutant channels are shown in Figure 5\u2014figure supplement 2.\n\n![Figure 5.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig5-v1.jpg)\n\n**Figure 5.:** (A) Gmax/Gmax0 values obtained for KCNQ1_WT/KCNE1 channel (black) and mutant channels. KCNQ1_Y315F/KCNE1 (red), KCNQ1_D317D/KCNE1 (blue), KCNQ1_T309S/KCNE1 (green), and KCNQ1_P320L/KCNE1 (purple), the Gmax/Gmax0 is significantly reduced (p<0.0001 n = 4 oocytes). One-way ANOVA with Dunnett\u2019s post hoc multiple-comparisons test was used for statistical analysis. (B) Gmax/Gmax0 values for KCNQ1_T312C/KCNE1 and KCNQ1_I313S/KCNE1 (p=0.14 and p=0.10, respectively) (n = 3 oocytes). One-way ANOVA with Dunnett\u2019s post hoc multiple-comparisons test was used for statistical analysis. (C, D) Top view and side view of KCNQ1 channel with mutated residues highlighted.\n\n![Figure 5\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig5-figsupp1-v1.jpg)\n\n**Figure 5\u2014figure supplement 1.:** A similar effect in shifting the voltage dependence of activation was found for KCNQ1_Y315F/KCNE1 and KCNQ1/KCNE1 after perfusion of several concentrations of Lin-Glycine. Comparisons at 20 \u03bcM of Lin-Glycine revealed no significant difference between the effect seen in KCNQ1/KCNE1 and KCNQ1_Y315F (p=0.7435; n = 4 oocytes).\n\n![Figure 5\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig5-figsupp2-v1.jpg)\n\n**Figure 5\u2014figure supplement 2.:** GV curves in control (black) and after perfusion of 20 \u03bcM of Lin-Gly (red) for (A) KCNQ1_D301E/KCNE1, (B) KCNQ1_Y315F/KCNE1, (C) KCNQ1_P320L/KCNE1, (D) KCNQ1_T309S/KCNE1, (E) KCNQ1_D317E/KCNE1, (F) KCNQ1_I313S/KCNE1, and (G) KCNQ1_T312S/KCNE1.\n\n![Figure 6.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig6-v1.jpg)\n\n**Figure 6.:** (A, B) Ten consecutive traces of KCNQ1_Y315F/KCNE1 in (A) control and (B) in the presence of 20 \u03bcM Lin-Glycine. (Top) Protocol used for the recordings. (C, D) All-point amplitude histogram of 50 consecutive traces in (C) control and (D) Lin-Glycine. The single-channel current amplitude was reduced to 0.3 pA compared to 0.4 pA for WT KCNQ1/KCNE1 (Figure 2C and D). Note that there were at least two channels in this patch. (E) Average currents of 478 sweeps in control and 533 sweeps in Lin-Glycine. Note that panels (A\u2013D) were all from the same patch.\n\n![Figure 6\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig6-figsupp1-v1.jpg)\n\nWe also found that another residue in the pore helix, T309, was important for the Gmax effect of Lin-Glycine. The homologous residue in the Shaker channel was earlier suggested to be important for the stabilization of the selectivity filter by hydrogen bonding to one of the tryptophans in the aromatic ring (Pless et al., 2013). We generated the mutant channel KCNQ1_T309S/KCNE1 and measured the effect of Lin-Glycine. As shown in Figure 5, the effect of Lin-Glycine on Gmax of the KCNQ1/KCNE1 mutant channel was noticeably reduced compared to the WT channel showing that this residue contributes to the Gmax effect (Figure 5A). We also tested the involvement of proline, which makes up a part of the aromatic cuff in the activated state of the channel (Figure 4C) by creating the mutant channel KCNQ1_P320L/KCNE1 and found a significant reduction of the Gmax effect for this mutant (Figure 5A). All these data suggest that mutations of residues at the outer portion of the selectivity filter do affect the Gmax increase by Lin-Glycine. These data are consistent with our hypothesis that PUFAs increase the Gmax by affecting interactions that stabilize the selectivity filter.\n\nThe residues involved in the Gmax effect are found near the external region of the selectivity filter, suggesting that the network of interactions that are altered during the switch from non-conductive to conductive state is confined to the outer region of the selectivity filter and pore helix of KCNQ1/KCNE1 channels. To test the specificity of the network localization, we mutated two residues, T312 and I313, in the internal portion of the selectivity filter. As a confirmation of our hypothesis, we found that for both KCNQ1/KCNE1 mutant channels, T312S and I313S, the effect of Lin-Glycine in increasing Gmax resembled values obtained in the WT channels (2.49 \u00b1 0.98 and 2.18 \u00b1 0.05, respectively) (Figure 5B). Mutations of residues in the more intracellular region of the selectivity filter do not affect the Gmax increases, as if the interactions that stabilize the channel involve residues located near the external region of the selectivity filter.\n\nTaken together, our results suggest that the binding of PUFA to Site II increases Gmax by promoting a series of interactions that stabilize the channel pore in the conductive state. For instance, we speculate that in the conductive state, hydrogen bonds between W304-D317 and W305-Y315, which are likely absent in the non-conductive conformation of KCNQ1, are created and that PUFA binding to K326 and D301 at Site II favors the transition toward the conductive state of the channel (Figure 7).\n\n![Figure 7.](https://cdn.elifesciences.org/articles/95852/elife-95852-fig7-v1.jpg)\n\n**Figure 7.:** (A) The binding of polyunsaturated fatty acid (PUFA) to Site II between K326 and D301 induces a series of interactions between residues near the external part of the selectivity filter. W304-D317 and W305-Y315 form hydrogen bonds (dash line, black), Y315 interacts also with T309 (dash line, black), and P320 is reoriented to sit on top of W304 and W305 to favor a more stable configuration of the aromatic ring cuff. The result of those new interactions is a more stable and conductive pore. (B) In the non-conductive state, those interactions are likely to be absent and this results in a more unstable selectivity filter. Also, P320 is now flipped from its position on top of the two tryptophans of the aromatic ring cuff. (C) CryoEM selectivity filter with S4 in the activated-state representative of a conductive selectivity filter. (D) CryoEM selectivity filter with S4 in the resting state, representative of a non-conductive selectivity filter.\n\n## Discussion\n\nWe have previously proposed models in which the effect of PUFAs on IKs channels involve the binding of PUFAs to two independent sites: one at the voltage sensor (Site I) and one at the pore domain (Site II). The result is a potent activation of IKs channels, with an increase in the maximum conductance by binding to Site II and a shift of the voltage dependence of activation of the channel by binding to Site I. The mechanism of the voltage shift effects at Site I, where the PUFA head group electrostatically interacts with positively charged S4 residues and thereby facilitates channel activation, has been investigated in previous studies (Yazdi et al., 2021; Bohannon et al., 2023; Liin et al., 2018; Jowais et al., 2023). However, less is known about the molecular mechanism by which PUFA increases the maximum conductance (Gmax) of the channel following binding to Site II. A positively charged lysine at position 326 was suggested to be critical for PUFA-channel interaction, as mutations of K326 completely abolished the Gmax effect (Liin et al., 2018). We have here shown that the interaction at Site II also involves another residue, the aspartic acid 301, as mutagenesis analysis revealed that the effect of Lin-Glycine on Gmax was abolished when the residue was substituted with a glutamic acid.\n\nOur single-channel recordings revealed that Lin-Glycine decreases the latency to first opening and increases the Po. The decrease in the latency to first opening is most likely due to the binding of Lin-Glycine to Site I at the VSD and related to the shift in voltage dependence caused by Lin-Glycine (Figure 2\u2014figure supplement 1). In addition, our single-channel recordings revealed that Lin-Glycine did not change the single-channel conductance, but instead increased Gmax by increasing the Po of the channel. This increase in Po was mainly due to an increase in non-empty sweeps when Lin-Glycine was applied in comparison to control solutions.\n\nWe tested the hypothesis that the effect of Lin-Glycine involved conformational changes in the selectivity filter following PUFA binding to two residues K326 and D301 at the pore domain. Those residues delimit a small crevice that seems to change in size in different structures with S4 activated or resting (Figure 3D\u2013F) and seem to affect PUFA\u2019s ability to increase Gmax. We made several mutations in residues known to stabilize the selectivity filter of potassium channels (Y315F, D317E, T309S, and P320L; Figure 5A). The Lin-Glycine effect on the Gmax was much reduced in these mutants, suggesting that these residues are necessary for the Gmax effect. To gain further insight into the molecular interactions that could underline the Gmax effect by PUFA binding to Site II, we used the latest KCNQ1 structure with the S4 segment in the resting state (Mandala and MacKinnon, 2023). The selectivity filter in this structure showed a very different conformation of the pore region and selectivity filter of KCNQ1 compared to the structures with activated VSDs. Clearly, there will be other differences in the pore domain between structures with activated and resting VSDs, for example, the state of the activation gate. Many of the interactions that have been shown to be important for the stability of the selectivity filter are missing in the KCNQ1 structure with a resting VSD. These changes in the selectivity filter can best be seen in our interpolation video between the states with the S4 segments moving from the resting state to the activated state (Video 1). This gave us the idea that the effect of PUFAs in increasing the maximum conductance of the KCNQ1 channel is linked to their ability to stabilize the pore of the channel in a conductive state. It was previously shown that several interactions at the pore region of K+ channels are important for ensuring channel conductivity. For example, a feature conserved among K+ channels is the aromatic ring cuff that stabilizes the conducting state and plays a role in C-type inactivation (Doyle et al., 1998; Larsson and Elinder, 2000; Pless et al., 2013; Kurata and Fedida, 2006). This structure is made up of two tryptophan residues (W) and a proline residue (P) that sits in between the two tryptophan residues (Video 2). In Shaker and KcsA K+ channels, the two tryptophans are involved in C-type inactivation and modification of those interactions manipulate the extent of inactivation (Cordero-Morales et al., 2011; Yang et al., 1997). In Shaker, breaking the hydrogen bonds between the two tryptophans of the aromatic ring cuff and the aspartic acid and tyrosine at the selectivity filter causes an acceleration of the rate of C-type inactivation (Pless et al., 2013). In KCNQ1, the two tryptophans of the aromatic ring cuff correspond to W304 and W305. Another conserved residue in K+ channels important for the stability of the selectivity filter is P320 (equivalent to P450 in Shaker) that makes up part of the aromatic ring cuff. In the transition between the non-conductive and conductive state of KCNQ1, the proline pulls away from its position close to W304 and W305 and flips outward (Video 2). We hypothesize that those hydrogen bonds between W304-D317 and W305-Y315 and the proline interactions are likely absent in the non-conductive conformation of KCNQ1, thereby generating the high number of empty sweeps in control conditions. Occasionally the channel will reform these bonds and interactions and transition into the conductive conformation, thereby generating the non-empty sweeps. We hypothesize that the binding of Lin-Glycine to K326 and D301 at Site II biases the transition toward the conductive conformation, thereby increasing the number of non-empty sweeps and increasing Gmax. We here show that mutations of residues involved in these hydrogen bonds in the selectivity filter greatly reduce or abolish the Gmax effect of Lin-Glycine, as if Lin-Glycine increases the Gmax by stabilizing a conductive state of the selectivity filter through these hydrogen bonds.\n\nWe noticed that the arrangement of the aromatic ring cuff is slightly different between Shaker K+ channels and KCNQ1 channel. For instance, in Shaker, the proline residue sits in between the two tryptophan residues and stabilizes the aromatic ring cuff (Figure 4\u2014figure supplement 3A). In contrast, in KCNQ1 the proline is positioned a little further outward and away from the two tryptophan residues, thus generating a looser arrangement of the aromatic ring cuff (Figure 4\u2014figure supplement 3B). This difference might contribute to rendering the pore of KCNQ1 more unstable, resulting in a large number of empty sweeps and the characteristic flickering nature of channel openings (Eldstrom et al., 2021). In Shaker channels, the aromatic cuff seems more stable since it displays few empty sweeps and less flicker during bursts. This difference in the stability of the aromatic cuff between Shaker and KCNQ1 might explain why the effect of PUFA on Gmax is large for KCNQ1 but not seen in Shaker (B\u00f6rjesson et al., 2008; B\u00f6rjesson and Elinder, 2011) even if the residues involved in the Gmax effect are conserved between these two channels.\n\nOur single-channel data show that the KCNQ1/KCNE1 switches slowly (>10 s) between conductive and non-conductive states, giving rise to many empty sweeps and few active sweeps. However, once the channel becomes conductive during a depolarization, the channel stays conductive for the remainder of the sweep (see, e.g., Figure 2\u2014figure supplement 2 for 20 s sweeps), as if VSD activation stabilizes the conductive state. Therefore, we propose a model in which the selectivity filter is stabilized more in the non-conductive state when VSD is resting but stabilized more in the conductive state when VSD is activated. This model is consistent with the cryoEM structures of KCNQ1 with VSD resting displaying a non-conductive selectivity filter and with VSD activated displaying a conductive selectivity filter (Mandala and MacKinnon, 2023). The KCNQ1 structure with VSD resting was obtained in a low K+ solution, which in other Kv channels would promote C-type inactivation of the selectivity filter. However, we think it is the resting state of the VSD, and not the low K+, that caused the non-conductive selectivity filter in the KCNQ1 structure because a KCNQ1 structure with VSD activated in the low K+ solution had a selectivity filter that was nearly identical to the KCNQ1 structure in high K+ with VSD activated (except for fewer K+ ions in the filter in low K+ solutions) (see Suppl. Figs. S5C and S5D in Mandala and MacKinnon, 2023). Note also the currents from KCNQ1/KCNE1 channels display little external K+ dependence (a small inhibition in addition to what is expected from changes in driving force) and that KCNQ1 channels are more strongly inhibited by high extracellular K+ concentrations (Abrahamyan et al., 2023; Larsen et al., 2011) in contrast to other Kv channels, such as Shaker K+ channels, which are inactivated more in low K+ (Larsson and Elinder, 2000; Kurata and Fedida, 2006). Our studies suggest that the mechanism of PUFAs to increase KCNQ1/KCNE1 maximum conductance relies on the ability of PUFAs to favor the conductive conformation of the selectivity filter: PUFAs promote interactions between residues in the selectivity filter that stabilize the channel pore. Furthermore, we identify a crevice between K326 and D301 that is present in structures of KCNQ1 with activated VSD but not in structures where the VSD is in the resting state. We propose that PUFA binding in this crevice stabilizes the network of interactions that form the conductive form of the selectivity filter. The result is a more stable and conductive pore, which explains the increase in Gmax by PUFAs.\n\n## Materials and methods\n\n### Molecular biology\n\nKCNQ1 (UniProt: P51787) and KCNE1 (UniProt: P15382) cRNA were transcribed using the mMessage mMachine T7 kit (Ambion). KCNQ1 was co-expressed with KCNE1 subunit, following a 3:1, weight:weight (Q1:E1) cRNA ratio to make up the KCNQ1/KCNE1 currents. Site-directed mutagenesis was performed using the QuikChange II XL Mutagenesis Kit (QIAGEN Sciences) for mutations in KCNQ1. Primer sequences for mutagenesis are (mutated residues are shown in bold and altered bases are in capital letters):\n\n50 ng of complementary RNA was injected into defolliculated Xenopus laevis oocytes (Ecocyte Bioscience, Austin; Xenopus 1 Corp, Dexter) for channel expression. After RNA injection, cells were incubated for 24\u201396 hr in standard ND96 solution (96 mM NaCl, 2 mM KCl, 1 mM MgCl2, 1.8 mM CaCl2, 5 mM HEPES), 1 M sodium pyruvate and penicillin (10,000 units)-streptomycin (10 mg/ml in 0.9% NaCl; pH 7.5) at 16\u00b0C before experiments.\n\n### Two-electrode voltage clamp\n\nKCNQ1/KCNE1 currents were recorded using the two-electrode voltage clamp technique. The recording chamber was filled with ND96 solution (96 mM NaCl, 2 mM KCl, 1 mM MgCl2, 1.8 mM CaCl2, and 5 mM HEPES; pH 7.5). Pipettes were filled with 3 M KCl. PUFA Lin-Glycine was purchased from Cayman Chemicals (Ann Arbor, MI), kept in stock of 100 mM with ethanol at \u201320\u00b0C and diluted in ND96 solution the day of the experiments. Electrophysiological recordings were acquired using Clampex 10.7 software (Axon, pClamp, Molecular Devices). Lin-Glycine was perfused into the recording chamber in a pre-application step until reaching steady state, followed by an (I\u2013V) protocol to measure the current\u2013voltage relationship before and after perfusion. During PUFA application, cells were held at \u201380 mV and depolarization from \u201380 mV to 0 mV (5 s) was applied every 30 s, before stepping to \u201340 mV and then back to \u2013 80 mV. In the I\u2013V protocol, a hyperpolarized step from \u201380 mV to \u2013140 mV is applied before 20 mV voltage steps from \u2013100 mV to +60 mV. Tail currents are recorded at \u201320 mV before returning to holding potential.\n\n### Single channel recordings\n\nSingle-channel currents were recorded from transiently transfected mouse ltk- fibroblast cells (LM cells) using 1.5 \u03bcl Lipofectamine 2000 (Thermo Fisher Scientific). LM cells were bought from ATCC (Manassas, VA: ATTC number CCL-1.3; lot number 63734321) who authenticated them (STR profiling) and confirmed that the cell lines tested negative for mycoplasma contamination. Cells were transfected with 1.5 \u03bcg of pcDNA3 containing a linked KCNE1-KCNQ1 construct (Murray et al., 2016) to ensure fully KCNE1-saturated complexes, in addition to a plasmid containing green fluorescent protein to identify transfected cells. Cells were recorded from 24 to 48 hr after transfection using an Axopatch 200B amplifier, a Digidata 1440A and pClamp10 software (Molecular Devices, San Jose, CA). The bath solution contained (in mM) 135 KCl, 1 MgCl2, 1 CaCl2, 10 HEPES, 10 dextrose (pH 7.4 with KOH). The pipette solution contained (in mM) 6 NaCl, 129 MES, 1 MgCl2, 5 KCl, 1 CaCl2, 10 HEPES (pH 7.4 with NaOH). Pipettes were pulled from thick-walled borosilicate glass (Sutter Instruments, Novato, CA) using a linear multistage electrode puller (Sutter Instruments), fire polished and coated with Sylgard (Dow Corning, Midland, MI). Electrode resistance was between 40 and 80 M\u03a9 after polishing. Currents were sampled at 10 kHz, low-pass filtered at 2 kHz at acquisition and subsequently digitally filtered at 200 Hz for presentation and analysis. Data were collected using cell-attached patch configuration to minimize disruption to the patch and avoid rundown problems due to the loss of PIP2. Lin-Glycine was solubilized in DMSO and added directly to the bath. Only patches that were largely free of endogenous currents and had few channels, such that there were several blank sweeps to average for use for leak subtraction, were analyzed.\n\n### Data analysis\n\nTo measure the conductance vs voltage (G\u2013V) curve, KCNQ1/KCNE1 tail currents were measured at \u201320 mV and obtained values were plotted against the activation voltages and fitted to a Boltzmann function:\n\n$$\nG(V)=Gmin+(Gmax\u2212Gmin)/{1+exp[\u2212(V\u2212V_{50})]/s}\n$$\n\nwhere Gmin is the minimal conductance, Gmax is the maximal conductance, V50 the midpoint (which describes the voltage at which the conductance is half the maximal conductance established from the fit), and s is the slope of the curve in mV. The difference in Gmax effect, before and after application of Lin-Glycine in each oocyte, is used as a measure of the change in maximal conductance. To understand the concentration dependence of LIN-Glycine effect on Gmax, the following concentration\u2013response curve was fitted to the data:\n\n$$\nG_{max}/G_{max}^{0}=1+B/[1+(PUFA_{50}/[PUFA])^{H}]\n$$\n\nwhere B is the maximum relative increase in Gmax {(Gmax - Gmax0)/Gmax0}, PUFA50 the PUFA concentration needed to cause 50% of the maximal effect, and H is the Hill coefficient. Average values are expressed as mean \u00b1 SEM and n represents the number of experiments (unless specified).\n\nStatistical analysis was conducted using GraphPad Prism 8 (GraphPad Software, Boston, MA). Statistical tests used were one-way ANOVA with Dunnett\u2019s post hoc multiple-comparisons test (Figure 5) and Student\u2019s t-test for all other single comparisons. Number of recordings, n, always represents biological replicates. Exclusion criteria were pre-established. Cells were excluded if not expressing enough channels (<0.5 \u03bcA at +60 mV) or if not well voltage clamped (>5 mV errors).\n\nData were analyzed using Clampfit 10.7 (pCLAMP), Origin Pro (OriginLab Corporation), and GraphPad Prism 8 software (GraphPad Software).\n\n### Material availability\n\nMaterials (e.g., DNA of Kv7.1 mutants) are available under reasonable requests from scientists. Data is available as Data Source files.\n",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Jon T Sack, University of California, Davis United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.95852.4.sa0](https://doi.org/10.7554/eLife.95852.4.sa0)\n\nThis article reveals an important mechanism of KCNQ1/IKs channel gating and PUFA modulation of this mechanism. This mechanism is supported by convincing single-channel recordings, macroscopic current recordings, and mutational analyses. These findings are of importance to the ion channel field and possibly future therapeutic applications.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95852.4.sa1](https://doi.org/10.7554/eLife.95852.4.sa1)\n\nThis study comes to an interesting conclusion: a polyunsaturated fatty acid, Lin-Glycine, increases the conductance of KCNQ1/KCNE1 channels by stabilizing a state of the selectivity filter that allows K+ conduction. The stabilization of a conducting state is well supported by single channel analysis, which shows that normally infrequent opening bursts occur more often in the presence of the PUFA. The linkage to PUFA action through the selectivity filter is supported by disruption of PUFA effects by mutation of residues which change conformation in two KCNQ1 structures from the literature. A definitive functional experiment is conducted by single channel recordings with selectivity filter domain mutation Y315F which ablates the Lin-Glycine effect on Gmax. The computational exploration of two selectivity filter structures proposed to interact distinctly with Lin-Glycine is informative. Both mutation results and simulations converge on the proposed selectivity filter mechanism, although other possibilities for Lin-Glycine binding and action might be possible. Overall, the major claim of the abstract is well-supported: \"... that the selectivity filter in KCNQ1 is normally unstable ... and that the PUFA-induced increase in Gmax is caused by a stabilization of the selectivity filter in an open-conductive state.\"\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95852.4.sa2](https://doi.org/10.7554/eLife.95852.4.sa2)\n\nGolluscio et al. address one of the mechanisms of IKs (KCNQ1/KCNE1) channel upregulation by polyunsaturated fatty acids (PUFAs). PUFAs are known to upregulate KCNQ1 and KCNQ1/KCNE1 channels through two mechanisms: one shifts the voltage dependence in a negative direction, and the other increases the maximum conductance (Gmax). While the first mechanism is known to affect the voltage sensor equilibrium through a charge effect, the second mechanism is less understood. Using single-channel recordings and mutagenesis at putative PUFA binding sites, they successfully demonstrate that the selectivity filter is stabilized in a conducting state by PUFA binding, and that this is the mechanism by which PUFAs increase Gmax. Their single-channel recordings are straightforward and clearly show that the selectivity filter tends to become conductive upon PUFA binding. Since PUFAs are potential therapeutic reagents for cardiac arrhythmias such as long QT syndrome, their findings are beneficial for future research and applications of these compounds.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.95852.4.sa3](https://doi.org/10.7554/eLife.95852.4.sa3)\n\nSummary:\n\nThis manuscript reveals an important mechanism of KCNQ1/IKs channel gating such that the open state of the pore is unstable and undergoes intermittent closed and open conformations. PUFA enhances the maximum open probability of IKs by binding to a crevice adjacent to the pore and stabilize the open conformation. This mechanism is supported by convincing single channel recordings that show empty and open channel traces and the ratio of such traces is affected by PUFA. In addition, mutations of the pore residues alter PUFA effects, convincingly supporting that PUFA alters the interactions among these pore residues.\n\nStrengths:\n\nThe data are of high quality and the description is clear.\n",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "1f515325-ef19-40bf-b19a-ae47b494ad37",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C1",
+      "claim": "In cardiomyocytes, the KCNQ1/KCNE1 channel complex mediates the slow delayed-rectifier current (IKs).",
+      "claim_type": "EXPLICIT",
+      "source": "In cardiomyocytes, the KCNQ1/KCNE1 channel complex mediates the slow delayed-rectifier current (IKs), pivotal during the repolarization phase of the ventricular action potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a well-established fact in cardiac electrophysiology, supported by citations in the manuscript.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "94ce690c-377f-4496-9296-ecd3e5b973cd",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C2",
+      "claim": "IKs is pivotal during the repolarization phase of the ventricular action potential.",
+      "claim_type": "EXPLICIT",
+      "source": "In cardiomyocytes, the KCNQ1/KCNE1 channel complex mediates the slow delayed-rectifier current (IKs), pivotal during the repolarization phase of the ventricular action potential.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by references to Barhanin et al., 1996; Sanguinetti et al., 1996; Nerbonne and Kass, 2005 in the Introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "49c6d3a5-5849-4b15-ab95-bab5f179f752",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C3",
+      "claim": "Mutations in IKs cause long QT syndrome (LQTS).",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in IKs cause long QT syndrome (LQTS), a syndrome with a prolonged QT interval on the ECG, which increases the risk of ventricular arrhythmia and sudden cardiac death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Splawski et al., 2000; Tester and Ackerman, 2014 in the Introduction.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "27fab524-68dc-405e-b263-9271b1cb2004",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C4",
+      "claim": "LQTS is characterized by a prolonged QT interval on the ECG.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in IKs cause long QT syndrome (LQTS), a syndrome with a prolonged QT interval on the ECG, which increases the risk of ventricular arrhythmia and sudden cardiac death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a defining characteristic of LQTS, supported by established medical knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ca66ae4e-1fa1-4f62-b794-8d63008b75b3",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C5",
+      "claim": "LQTS increases the risk of ventricular arrhythmia and sudden cardiac death.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations in IKs cause long QT syndrome (LQTS), a syndrome with a prolonged QT interval on the ECG, which increases the risk of ventricular arrhythmia and sudden cardiac death.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations and established medical knowledge about LQTS complications.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "e64389ba-f441-41e6-928d-695ba0e3a5aa",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C6",
+      "claim": "Polyunsaturated fatty acids (PUFAs) are potent activators of KCNQ1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Polyunsaturated fatty acids (PUFAs) are potent activators of KCNQ1 channels and activate IKs channels by binding to two different sites, one in the voltage sensor domain \u2013 which shifts the voltage dependence to more negative voltages \u2013 and the other in the pore domain \u2013 which increases the maximal conductance of the channels (Gmax).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous research cited in the manuscript.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "b6efc0da-c321-47bb-8b7b-b14f98078c40",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C7",
+      "claim": "PUFAs activate IKs channels by binding to two different sites.",
+      "claim_type": "EXPLICIT",
+      "source": "Polyunsaturated fatty acids (PUFAs) are potent activators of KCNQ1 channels and activate IKs channels by binding to two different sites, one in the voltage sensor domain \u2013 which shifts the voltage dependence to more negative voltages \u2013 and the other in the pore domain \u2013 which increases the maximal conductance of the channels (Gmax).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by previous research and the current study's findings.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "0245f3d5-fa61-4003-8d99-c1b723cb5b79",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C8",
+      "claim": "PUFA binding to the voltage sensor domain shifts the voltage dependence to more negative voltages.",
+      "claim_type": "EXPLICIT",
+      "source": "Polyunsaturated fatty acids (PUFAs) are potent activators of KCNQ1 channels and activate IKs channels by binding to two different sites, one in the voltage sensor domain \u2013 which shifts the voltage dependence to more negative voltages \u2013 and the other in the pore domain \u2013 which increases the maximal conductance of the channels (Gmax).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and previous research.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "8d50be50-1f91-4332-8d91-ccbb16e451f2",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C9",
+      "claim": "PUFA binding to the pore domain increases the maximal conductance of the channels (Gmax).",
+      "claim_type": "EXPLICIT",
+      "source": "Polyunsaturated fatty acids (PUFAs) are potent activators of KCNQ1 channels and activate IKs channels by binding to two different sites, one in the voltage sensor domain \u2013 which shifts the voltage dependence to more negative voltages \u2013 and the other in the pore domain \u2013 which increases the maximal conductance of the channels (Gmax).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by experimental data shown in Figure 1C and throughout the manuscript.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "36337c2b-074f-4d88-867b-0fdf5c5fa85e",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C10",
+      "claim": "IKs channels have a very small single-channel conductance compared to other Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the KCNQ1/KCNE1 channel complex has a very small single-channel conductance and a very low open probability compared to other Kv channels (Werry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Werry et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "5c1902e1-a691-41d3-abd7-849f381c2255",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C11",
+      "claim": "IKs channels have a very low open probability compared to other Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "However, the KCNQ1/KCNE1 channel complex has a very small single-channel conductance and a very low open probability compared to other Kv channels (Werry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Werry et al., 2013 and confirmed by single-channel data in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "291c7b47-f1eb-4464-80a1-0d087c63f8a2",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C12",
+      "claim": "The selectivity filter in KCNQ1 is normally unstable, contributing to the low open probability.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the selectivity filter in KCNQ1 is normally unstable, contributing to the low open probability, and that the PUFA-induced increase in Gmax is caused by a stabilization of the selectivity filter in an open-conductive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main hypothesis of the study, supported by single-channel recordings showing many empty sweeps and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "13fa6c04-b162-446d-bdee-9100efbeb154",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C13",
+      "claim": "The PUFA-induced increase in Gmax is caused by a stabilization of the selectivity filter in an open-conductive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results suggest that the selectivity filter in KCNQ1 is normally unstable, contributing to the low open probability, and that the PUFA-induced increase in Gmax is caused by a stabilization of the selectivity filter in an open-conductive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study, supported by mutagenesis data and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "3ada78f2-0dd2-4aa8-a6e2-d1cabcb88809",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C14",
+      "claim": "Loss-of-function mutations of the KCNQ1/KCNE1 complex are associated with long QT syndrome (LQTS).",
+      "claim_type": "EXPLICIT",
+      "source": "Loss-of-function mutations of the KCNQ1/KCNE1 complex are associated with long QT syndrome (LQTS) (Splawski et al., 2000; Tester and Ackerman, 2014).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Splawski et al., 2000; Tester and Ackerman, 2014.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "27b64fd1-26db-488b-9701-75024381ba62",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C15",
+      "claim": "LQTS mutations cause a reduction of the channel current.",
+      "claim_type": "EXPLICIT",
+      "source": "These LQTS mutations cause a reduction of the channel current, leading to a significant prolongation of the ventricular AP waveform that can be seen on the electrocardiogram as a prolonged QT interval (Nerbonne and Kass, 2005; Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Nerbonne and Kass, 2005 and illustrated in Figure 1A.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "43b29c31-c869-44f5-9881-67593827c315",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C16",
+      "claim": "Channel mutations or dysfunction increase the risk of developing cardiac arrhythmias, which can lead to sudden cardiac death.",
+      "claim_type": "EXPLICIT",
+      "source": "These channel mutations, or dysfunction, increase the risk of developing cardiac arrhythmias, which can lead to sudden cardiac death (Wu and Sanguinetti, 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Wu and Sanguinetti, 2016.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "a3b48a07-5808-43bd-b0f0-c19dfbae9fca",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C17",
+      "claim": "Treatment of LQTS is mainly based on the usage of \u03b2-blockers and implantable cardioverter-defibrillators.",
+      "claim_type": "EXPLICIT",
+      "source": "At present, treatment of LQTS is mainly based on the usage of \u03b2-blockers (most used are long-lasting preparations such as nadolol and atenolol) and implantable cardioverter-defibrillators, especially for patients with high risk of sudden death and frequent syncope (Roden, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Roden, 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "a6162ba7-63d0-4f57-b9e4-38c7e0cb5e54",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C18",
+      "claim": "Current LQTS treatments do not shorten the QT interval duration.",
+      "claim_type": "EXPLICIT",
+      "source": "However, both approaches do not shorten the QT interval duration.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a limitation of current treatments.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "4401b27a-aaa3-454b-9067-f75af1fc920a",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C19",
+      "claim": "Restoring the physiological duration of the QT interval could be achieved by increasing the activity of the KCNQ1/KCNE1 channel complex.",
+      "claim_type": "EXPLICIT",
+      "source": "Restoring the physiological duration of the QT interval could be achieved by increasing the activity of the KCNQ1/KCNE1 channel complex (Varshneya et al., 2018; Figure 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Varshneya et al., 2018 and illustrated in Figure 1.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "db679412-4940-467d-b2d6-4f30a35e43cb",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C20",
+      "claim": "KCNQ1 has a typical tetrameric structure of four \u03b1-subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "Like other Kv channels, KCNQ1 has a typical tetrameric structure of four \u03b1-subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is established knowledge about Kv channel structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "aed60600-6741-46dc-a5a9-13a6797d6673",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C21",
+      "claim": "Each KCNQ1 \u03b1-subunit is composed of six transmembrane segments, with S1-S4 forming the voltage sensor domain (VSD) and S5-S6 forming the pore domain (PD).",
+      "claim_type": "EXPLICIT",
+      "source": "Each \u03b1-subunit is composed of six transmembrane segments, with S1-S4 forming the voltage sensor domain (VSD) and S5-S6 forming the pore domain (PD) (Figure 1D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is established knowledge about Kv channel structure, illustrated in Figure 1D.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "53ec93aa-dc09-441e-b9d2-da3fb909d0ad",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C22",
+      "claim": "Polyunsaturated fatty acids, in particular omega 3, are known to exert a protective effect on sudden cardiac death.",
+      "claim_type": "EXPLICIT",
+      "source": "Polyunsaturated fatty acids (PUFA), in particular omega 3, are known to exert a protective effect on sudden cardiac death and are recommended in the diet at least twice a week (Fernandez et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Fernandez et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ab95b66d-fb51-4133-beb0-91fe0cdaf761",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C23",
+      "claim": "PUFAs have been shown to increase IKs currents by a dual mechanism of action, characteristically described as a 'Lipoelectric mechanism'.",
+      "claim_type": "EXPLICIT",
+      "source": "PUFAs have been shown to increase IKs currents by a dual mechanism of action, characteristically described as a 'Lipoelectric mechanism' (Elinder and Liin, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Elinder and Liin, 2017.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ceffd118-0f55-4493-abfa-3648d8159226",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C24",
+      "claim": "The two PUFA effects (\u0394V0.5 and \u0394Gmax) on KCNQ1 are independent of each other.",
+      "claim_type": "EXPLICIT",
+      "source": "The two PUFA effects (\u0394V0.5 and \u0394Gmax) on KCNQ1 are independent of each other and originate from the binding of PUFA to two different sites, conventionally indicated as Site I and Site II (Yazdi et al., 2021; Liin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Yazdi et al., 2021; Liin et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "f53a204d-ccd8-45a3-a4b3-e72a2fe22fbf",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C25",
+      "claim": "Site I is found in the VSD, where the PUFA head group interacts with the positive charges in the S4 segment.",
+      "claim_type": "EXPLICIT",
+      "source": "Site I is found in the VSD, where the PUFA head group interacts with the positive charges in the S4 segment and causes the channel to open at more negative potentials (Liin et al., 2015).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liin et al., 2015.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "2be32938-68d9-425e-9328-5248d00398c2",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C26",
+      "claim": "Site II is found in the pore domain, where electrostatic interactions between the PUFA head group and the positively charged residue, K326, facilitate an increase in the maximal conductance of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "Site II is found in the pore domain, where electrostatic interactions between the PUFA head group and the positively charged residue, K326, facilitate an increase in the maximal conductance of the channel (Liin et al., 2018; Figure 1E and F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Liin et al., 2018 and illustrated in Figure 1E and F.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "31fe5b61-df1d-4714-827a-23d2c120e17e",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C27",
+      "claim": "Lin-Glycine has been shown to increase the Gmax in whole-oocyte recordings of KCNQ1/KCNE1 channels 2.5-fold.",
+      "claim_type": "EXPLICIT",
+      "source": "Lin-Glycine has been shown to increase the Gmax in whole-oocyte recordings of KCNQ1/KCNE1 channels 2.5-fold (Bohannon et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Bohannon et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ceb46f6a-43e7-48e2-8f57-952e6fd7d52e",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C28",
+      "claim": "Lin-Glycine does not change the single-channel conductance of KCNQ1/KCNE1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "Representative traces (Figure 2A and B) and all points histograms (Figure 2C and D) suggest that there is no change in single-channel conductance between KCNQ1/KCNE1 in control and with Lin-Glycine.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel recordings shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ef56f31a-1870-4347-8bb3-97cedae81378",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C29",
+      "claim": "The Gmax effect of Lin-Glycine is not due to an increase in the single-channel conductance.",
+      "claim_type": "EXPLICIT",
+      "source": "This shows that the Gmax effect is not due to an increase in the single-channel conductance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is inferred from the single-channel data showing no change in conductance.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "8dd6e4a7-9d3a-4d88-b129-65e5f90fd4d3",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C30",
+      "claim": "Lin-Glycine caused a decrease in the latency to first opening.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Lin-Glycine caused a decrease in the latency to first opening (in control, 1.78 \u00b1 0.36 s, n = 41 sweeps and after 20 \u00b5M Lin-Glycine, 1.03 \u00b1 0.05 s, n = 99 sweeps; p=0.0025) and an increase in the number of non-empty sweeps (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "1af12a68-8414-49e0-ae5e-a98796715af7",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C31",
+      "claim": "Lin-Glycine caused an increase in the number of non-empty sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "However, Lin-Glycine caused a decrease in the latency to first opening (in control, 1.78 \u00b1 0.36 s, n = 41 sweeps and after 20 \u00b5M Lin-Glycine, 1.03 \u00b1 0.05 s, n = 99 sweeps; p=0.0025) and an increase in the number of non-empty sweeps (Figure 2\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel data shown in Figure 2 and supplement.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "cdfb6f16-fbb5-43fc-bbfa-9d32c832a2c4",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C32",
+      "claim": "In control conditions, there are a high number of empty sweeps for KCNQ1/KCNE1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "In control, there are a high number of empty sweeps as shown before for KCNQ1/KCNE1 channels (Werry et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Werry et al., 2013 and confirmed by data in Figure 2.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ff0cf369-cb4e-4d61-8826-6d9b967aa8cb",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C33",
+      "claim": "The average current during the single-channel sweeps was increased by 2.3 \u00b1 0.33 times by the application of Lin-Glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "The average current during the single-channel sweeps was increased by 2.3 \u00b1 0.33 times (n = 4 patches, p=0.006) by the application of Lin-Glycine (Figure 2E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel data with statistical analysis shown in Figure 2E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "4b21bbab-6e2d-441c-b2c6-5a53ebc49fa4",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C34",
+      "claim": "The number of non-empty sweeps increased 2.85-fold with Lin-Glycine application.",
+      "claim_type": "EXPLICIT",
+      "source": "The number of non-empty sweeps increased 2.85-fold (2.85 \u00b1 0.85, n = 200 sweeps from four patches; p=0.001), going from a total of 41/200 non-empty sweeps in control to 99/200 when Lin-Glycine was applied.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by single-channel data with statistical analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "68c2ba45-6cd8-4037-936e-8b44bb63f6a1",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C35",
+      "claim": "Once the channel opens, the open probability (Po) in the last second of the traces was almost identical between control and Lin-Glycine conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, once the channel opens, it seems to behave very similarly in control and Lin-Glycine because, in non-empty sweeps, the open probability (Po) in the last second of the traces was almost identical between control and Lin-Glycine conditions (Po = 0.78 \u00b1 0.02 [n = 8 sweeps] in control vs 0.87 \u00b1 0.04 [n = 8 sweeps] in Lin-Glycine) (Figure 2F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel data with statistical analysis shown in Figure 2F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "858b5c9b-8819-4e12-9a4f-b23c8d7c6da8",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C36",
+      "claim": "The 2.85-fold increase in the number of non-empty sweeps is very similar to the Gmax increase seen in macroscopic currents.",
+      "claim_type": "EXPLICIT",
+      "source": "The 2.85-fold increase in the number of non-empty sweeps is very similar to the Gmax increase seen in macroscopic currents.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference connecting single-channel and macroscopic data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "78fbc4b1-f3ed-40ba-9cf0-db1e3db19895",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C37",
+      "claim": "The decrease in first latency is most likely due to an effect of Lin-Glycine on Site I in the VSD and related to the shift in voltage dependence caused by Lin-Glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in first latency is most likely due to an effect of Lin-Glycine on Site I in the VSD and related to the shift in voltage dependence caused by Lin-Glycine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known mechanism of Lin-Glycine at Site I.",
+      "evidence_type": "[\"INFERENCE\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "02de2f3b-5e7b-4d1f-8919-269fc2018bf6",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C38",
+      "claim": "The increase in the number of non-empty sweeps is most likely an effect on Site II in the pore and related to the Gmax effect.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the increase in the number of non-empty sweeps is most likely an effect on Site II in the pore and related to the Gmax effect.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on the known mechanism of Lin-Glycine at Site II.",
+      "evidence_type": "[\"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "da4c837b-aa16-42c9-9d88-b413d25cfb4c",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C39",
+      "claim": "The Gmax effect of Lin-Glycine on KCNQ1/KCNE1 is mainly due to an increase in the Po by increasing the number of non-empty sweeps.",
+      "claim_type": "EXPLICIT",
+      "source": "We conclude that the Gmax effect of Lin-Glycine on KCNQ1/KCNE1 is mainly due to an increase in the Po by increasing the number of non-empty sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the single-channel data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "863b7984-0c0c-4d67-b610-ef9164898d12",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C40",
+      "claim": "PUFAs binding at Site II electrostatically interact with the positively charged residue K326.",
+      "claim_type": "EXPLICIT",
+      "source": "It was previously shown that PUFAs binding at Site II electrostatically interact with the positively charged residue K326, located just outside the selectivity filter (Liin et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Liin et al., 2018.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "7c730d55-2139-4915-ab36-6daaf64d9189",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C41",
+      "claim": "The KCNQ1_D301E mutation dramatically decreases the Gmax effect of Lin-Glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological analysis revealed that when KCNQ1_WT/KCNE1 was mutated to KCNQ1_D301E/KCNE1, the \u0394V0.5 was shifted similarly to the WT channel (Figure 3\u2014figure supplement 1) but a dramatic decrease of the Gmax effect of Lin-Glycine was observed, showing the importance of this residue for PUFAs interaction at Site II (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "884557e8-2d16-4f4c-93f2-bed1a544bb19",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C42",
+      "claim": "D301 is important for PUFA interaction at Site II.",
+      "claim_type": "EXPLICIT",
+      "source": "Electrophysiological analysis revealed that when KCNQ1_WT/KCNE1 was mutated to KCNQ1_D301E/KCNE1, the \u0394V0.5 was shifted similarly to the WT channel (Figure 3\u2014figure supplement 1) but a dramatic decrease of the Gmax effect of Lin-Glycine was observed, showing the importance of this residue for PUFAs interaction at Site II (Figure 3A\u2013C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is inferred from the mutagenesis data showing loss of Gmax effect.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ab932d58-8adc-4eab-9819-fd298f618b58",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C43",
+      "claim": "In MD simulations, linoleic acid fits in a narrow crevice present in the cryoEM structure of activated state KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "In our previous MD simulations (Yazdi et al., 2021) based on the cryoEM structure of KCNQ1 with S4 in the activated state, PUFA binds to residues K326 and D301 at Site II that delimit a narrow crevice (Figure 3D and E), where PUFA could fit with both the head and the tail (Figure 3D and E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citation to Yazdi et al., 2021 and illustrated in Figure 3D.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "7057dde2-6ef6-4ebf-a642-feecb5f9f1e4",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C44",
+      "claim": "In the cryoEM structure of KCNQ1 with S4 in the resting state, the crevice between K326 and D301 is too narrow for PUFA to fit into it.",
+      "claim_type": "EXPLICIT",
+      "source": "However, in the recent cryoEM structure of KCNQ1 with S4 in the resting state (Mandala and MacKinnon, 2023) the crevice between K326 and D301 is now so narrow that PUFA seems unable to fit into it (Figure 3F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis of the cryoEM structure shown in Figure 3F.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "33b957d0-34b1-4a89-abd2-02548225a577",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C45",
+      "claim": "There are large rearrangements in the selectivity filter when comparing the cryoEM structures with S4 activated and S4 resting.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, there are large rearrangements in the selectivity filter when comparing the cryoEM structures with S4 activated (PDB: 8SIK) and S4 resting (PDB: 8SIN) (Figure 4).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural comparison shown in Figure 4 and Video 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "57b85eae-eaed-4165-869e-b6d2bdde5597",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C46",
+      "claim": "The conformation of the pore significantly varies between what seems like a conductive (PDB: 8SIK) and a non-conductive (PDB: 8SIN) state of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "The conformation of the pore significantly varies between what seems like a conductive (PDB: 8SIK) and a non-conductive (PDB: 8SIN) state of the channel.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis of the two cryoEM structures.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "92178f3c-10f0-40bb-95f5-71900d068b59",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C47",
+      "claim": "In the structure with S4 in the resting state, Y315 and D317 have swung outward and left their positions in which they made hydrogen bonds with two tryptophans, W305 and W304, respectively.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, in the structure with S4 in the resting state, Y315 and D317 have swung outward and left their positions in which they made hydrogen bonds with two tryptophans, W305 and W304, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis comparing the two states.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "d97cc1a5-bef9-4737-9698-6bd98fb7ee3a",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C48",
+      "claim": "Y315 belongs to the K+ channels signature sequence, a stretch of eight amino acids including TXXTXGYG, highly conserved among K+ channels of different families.",
+      "claim_type": "EXPLICIT",
+      "source": "Y315 belongs to the K+ channels signature sequence, a stretch of eight amino acids including TXXTXGYG, highly conserved among K+ channels of different families and D317 is just next to this sequence (Sansom et al., 2002; Heginbotham et al., 1994).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Sansom et al., 2002; Heginbotham et al., 1994.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "05ad6fe3-ad87-4e57-8414-4515af80f731",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C49",
+      "claim": "W304 and W305 belong to the aromatic ring cuff that has been suggested to be important for the stability of the open state of the selectivity filter in Kv channels.",
+      "claim_type": "EXPLICIT",
+      "source": "W304 and W305 belong to the aromatic ring cuff (Figure 4C and D) that has been suggested to be important for the stability of the open state of the selectivity filter in Kv channels (Doyle et al., 1998; Larsson and Elinder, 2000).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by citations to Doyle et al., 1998; Larsson and Elinder, 2000.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "88920f69-9a57-4200-b1a7-523c2d30bee7",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C50",
+      "claim": "P320 moves away from its position in between W304 and W305 from two different subunits in the S4 down conformation.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, P320, which in the structure with an activated S4 sits in between W304 and W305 from two subunits (Figure 4C), has also swung outward in the structure with S4 in the resting state and exposed a gap between W304 and W305 in the aromatic cuff (Figure 4D, see also Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 4 and Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "b02261f2-f16a-49c9-8641-1d9596b24919",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C51",
+      "claim": "The KCNQ1 selectivity filter is inherently unstable and transitions between a conductive state and a non-conductive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Based on our single-channel data with many empty sweeps, we propose the hypothesis that the KCNQ1 selectivity filter is inherently unstable and transitions between the two conformations \u2013 one conductive state that generates the non-empty sweeps and one non-conductive state that generates the empty sweeps in the single-channel data.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on single-channel data and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "6c05ace2-1083-479a-a9b9-fa2809069cdf",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C52",
+      "claim": "PUFA binding to residues at Site II stabilizes and promotes the conductive state of the pore.",
+      "claim_type": "EXPLICIT",
+      "source": "We further propose that PUFA binding to residues at Site II stabilizes and promotes the conductive state of the pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on the data and structural analysis.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "6505b747-ffcb-4bca-a408-6f950d2c24b3",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C53",
+      "claim": "The effect of Lin-Glycine on Gmax was reduced on KCNQ1_Y315F/KCNE1 mutant channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested Lin-Glycine on KCNQ1_Y315F/KCNE1 and KCNQ1_D317E/KCNE1 channels and compared the Gmax effect to that of the WT channel. The effect of Lin-Glycine was reduced on both mutant channels, with a particularly dramatic decrease for Y315F (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "5df3eb00-6d8f-4cd7-ad8d-2e11c98f8863",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C54",
+      "claim": "The effect of Lin-Glycine on Gmax was reduced on KCNQ1_D317E/KCNE1 mutant channels.",
+      "claim_type": "EXPLICIT",
+      "source": "We tested Lin-Glycine on KCNQ1_Y315F/KCNE1 and KCNQ1_D317E/KCNE1 channels and compared the Gmax effect to that of the WT channel. The effect of Lin-Glycine was reduced on both mutant channels, with a particularly dramatic decrease for Y315F (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "d4a41dd5-f7a7-4839-9b92-7df6f7736247",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C55",
+      "claim": "For KCNQ1_Y315F/KCNE1, the effect on the voltage dependence of activation (\u0394V0.5) was similar to the WT channel.",
+      "claim_type": "EXPLICIT",
+      "source": "For KCNQ1_Y315F/KCNE1, we compared the effect on the voltage dependence of activation (\u0394V0.5) and we observed a similar effect as for the WT channel (Figure 5\u2014figure supplement 1), with both showing an ~\u201325 mV shift.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "39cf1dcb-ade4-4c0b-b64b-8affef763965",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C56",
+      "claim": "Lin-Glycine did not increase the number of non-empty sweeps in KCNQ1_Y315F/KCNE1 channels.",
+      "claim_type": "EXPLICIT",
+      "source": "As expected, Lin-Glycine did not increase the number of non-empty sweeps in KCNQ1_Y315F/KCNE1 channels (52/478 [10.9 % from three patches] of traces were non-empty in control and 44/533 [8.3% from three patches] of traces were non-empty in Lin-Gly) (Figure 6, Figure 6\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel data shown in Figure 6.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "b9e74fee-bb1d-4319-88f3-f6627fbbdab3",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C57",
+      "claim": "The mutation Y315F reduced the single-channel current slightly from I = 0.4 pA in wildtype to I = 0.3 pA.",
+      "claim_type": "EXPLICIT",
+      "source": "The mutation Y315F reduced the single-channel current slightly from I = 0.4 pA in wildtype to I = 0.3 pA in the Y315F mutation (Figure 6C and D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by single-channel data shown in Figure 6C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "183b49da-7909-4cb0-a8cc-88680d84922f",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C58",
+      "claim": "Y315 and D317 are necessary for the ability of Lin-Glycine to increase Gmax.",
+      "claim_type": "EXPLICIT",
+      "source": "This data shows that Y315 and D317 are necessary for the ability of Lin-Glycine to increase Gmax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "698130c1-709d-474d-9749-dd5f35d4fed5",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C59",
+      "claim": "The effect of Lin-Glycine on Gmax of the KCNQ1_T309S/KCNE1 mutant channel was noticeably reduced compared to the WT channel.",
+      "claim_type": "EXPLICIT",
+      "source": "We generated the mutant channel KCNQ1_T309S/KCNE1 and measured the effect of Lin-Glycine. As shown in Figure 5, the effect of Lin-Glycine on Gmax of the KCNQ1/KCNE1 mutant channel was noticeably reduced compared to the WT channel showing that this residue contributes to the Gmax effect (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "8c047a81-55df-4fd7-981b-0793c65a8ec5",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C60",
+      "claim": "The homologous residue to T309 in the Shaker channel was suggested to be important for the stabilization of the selectivity filter by hydrogen bonding to one of the tryptophans in the aromatic ring.",
+      "claim_type": "EXPLICIT",
+      "source": "The homologous residue in the Shaker channel was earlier suggested to be important for the stabilization of the selectivity filter by hydrogen bonding to one of the tryptophans in the aromatic ring (Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pless et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "9d2f934e-d131-4b14-96c4-75543ec79d38",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C61",
+      "claim": "The KCNQ1_P320L/KCNE1 mutation showed a significant reduction of the Gmax effect.",
+      "claim_type": "EXPLICIT",
+      "source": "We also tested the involvement of proline, which makes up a part of the aromatic cuff in the activated state of the channel (Figure 4C) by creating the mutant channel KCNQ1_P320L/KCNE1 and found a significant reduction of the Gmax effect for this mutant (Figure 5A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "55debb30-9836-4d13-89ee-69541564f4c0",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C62",
+      "claim": "Mutations of residues at the outer portion of the selectivity filter affect the Gmax increase by Lin-Glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "All these data suggest that mutations of residues at the outer portion of the selectivity filter do affect the Gmax increase by Lin-Glycine.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "c71906e4-4c89-43f6-829d-273f204e4ce3",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C63",
+      "claim": "For both KCNQ1/KCNE1 mutant channels, T312S and I313S, the effect of Lin-Glycine in increasing Gmax resembled values obtained in the WT channels.",
+      "claim_type": "EXPLICIT",
+      "source": "As a confirmation of our hypothesis, we found that for both KCNQ1/KCNE1 mutant channels, T312S and I313S, the effect of Lin-Glycine in increasing Gmax resembled values obtained in the WT channels (2.49 \u00b1 0.98 and 2.18 \u00b1 0.05, respectively) (Figure 5B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is supported by experimental data shown in Figure 5B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "91b3150c-b77a-475d-8e74-7ba4c9d7d17d",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C64",
+      "claim": "Mutations of residues in the more intracellular region of the selectivity filter do not affect the Gmax increases.",
+      "claim_type": "EXPLICIT",
+      "source": "Mutations of residues in the more intracellular region of the selectivity filter do not affect the Gmax increases, as if the interactions that stabilize the channel involve residues located near the external region of the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutagenesis data for T312S and I313S.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "4363bf31-92e2-409c-acbd-e0cbcae2c969",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C65",
+      "claim": "The binding of PUFA to Site II increases Gmax by promoting a series of interactions that stabilize the channel pore in the conductive state.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, our results suggest that the binding of PUFA to Site II increases Gmax by promoting a series of interactions that stabilize the channel pore in the conductive state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "f997d56d-f769-4f73-8190-279a4c436c48",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C66",
+      "claim": "In the conductive state, hydrogen bonds between W304-D317 and W305-Y315 are created.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we speculate that in the conductive state, hydrogen bonds between W304-D317 and W305-Y315, which are likely absent in the non-conductive conformation of KCNQ1, are created and that PUFA binding to K326 and D301 at Site II favors the transition toward the conductive state of the channel (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation based on structural analysis and mutagenesis data, illustrated in Figure 7.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "351b1f4e-0c09-40db-9ddc-1fa18bfeb825",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C67",
+      "claim": "PUFA binding to K326 and D301 at Site II favors the transition toward the conductive state of the channel.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, we speculate that in the conductive state, hydrogen bonds between W304-D317 and W305-Y315, which are likely absent in the non-conductive conformation of KCNQ1, are created and that PUFA binding to K326 and D301 at Site II favors the transition toward the conductive state of the channel (Figure 7).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is a speculation based on the data and structural analysis, illustrated in Figure 7.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ab1e7cca-eaa6-4cbc-a067-0564abda4db2",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C68",
+      "claim": "The aromatic ring cuff stabilizes the conducting state and plays a role in C-type inactivation in K+ channels.",
+      "claim_type": "EXPLICIT",
+      "source": "For example, a feature conserved among K+ channels is the aromatic ring cuff that stabilizes the conducting state and plays a role in C-type inactivation (Doyle et al., 1998; Larsson and Elinder, 2000; Pless et al., 2013; Kurata and Fedida, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Doyle et al., 1998; Larsson and Elinder, 2000; Pless et al., 2013; Kurata and Fedida, 2006.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "c9615413-32c3-4787-8950-b547f1cc93a1",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C69",
+      "claim": "In Shaker and KcsA K+ channels, the two tryptophans are involved in C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Shaker and KcsA K+ channels, the two tryptophans are involved in C-type inactivation and modification of those interactions manipulate the extent of inactivation (Cordero-Morales et al., 2011; Yang et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Cordero-Morales et al., 2011; Yang et al., 1997.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "9be339bf-d151-4a11-a65a-7a075fca3e41",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C70",
+      "claim": "In Shaker, breaking the hydrogen bonds between the two tryptophans of the aromatic ring cuff and the aspartic acid and tyrosine at the selectivity filter causes an acceleration of the rate of C-type inactivation.",
+      "claim_type": "EXPLICIT",
+      "source": "In Shaker, breaking the hydrogen bonds between the two tryptophans of the aromatic ring cuff and the aspartic acid and tyrosine at the selectivity filter causes an acceleration of the rate of C-type inactivation (Pless et al., 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citation to Pless et al., 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "7a7bd088-bccd-4a0d-a344-2a5c3363a8ed",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C71",
+      "claim": "In KCNQ1, the two tryptophans of the aromatic ring cuff correspond to W304 and W305.",
+      "claim_type": "EXPLICIT",
+      "source": "In KCNQ1, the two tryptophans of the aromatic ring cuff correspond to W304 and W305.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on sequence alignment and structural analysis.",
+      "evidence_type": "[\"KNOWLEDGE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "719d318e-c264-4a6a-ab40-c4ad8942d918",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C72",
+      "claim": "In the transition between the non-conductive and conductive state of KCNQ1, the proline pulls away from its position close to W304 and W305 and flips outward.",
+      "claim_type": "EXPLICIT",
+      "source": "In the transition between the non-conductive and conductive state of KCNQ1, the proline pulls away from its position close to W304 and W305 and flips outward (Video 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Video 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "686e10ee-73aa-46db-bd0d-2dd2dc3168ab",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C73",
+      "claim": "Hydrogen bonds between W304-D317 and W305-Y315 and the proline interactions are likely absent in the non-conductive conformation of KCNQ1.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that those hydrogen bonds between W304-D317 and W305-Y315 and the proline interactions are likely absent in the non-conductive conformation of KCNQ1, thereby generating the high number of empty sweeps in control conditions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on structural analysis and single-channel data.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "53aa8b15-6a39-432f-839e-d562983ac414",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C74",
+      "claim": "The binding of Lin-Glycine to K326 and D301 at Site II biases the transition toward the conductive conformation, thereby increasing the number of non-empty sweeps and increasing Gmax.",
+      "claim_type": "EXPLICIT",
+      "source": "We hypothesize that the binding of Lin-Glycine to K326 and D301 at Site II biases the transition toward the conductive conformation, thereby increasing the number of non-empty sweeps and increasing Gmax.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a hypothesis based on all the data presented in the study.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "694e4215-7b27-412b-b205-908b529798a3",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C75",
+      "claim": "Mutations of residues involved in hydrogen bonds in the selectivity filter greatly reduce or abolish the Gmax effect of Lin-Glycine.",
+      "claim_type": "EXPLICIT",
+      "source": "We here show that mutations of residues involved in these hydrogen bonds in the selectivity filter greatly reduce or abolish the Gmax effect of Lin-Glycine, as if Lin-Glycine increases the Gmax by stabilizing a conductive state of the selectivity filter through these hydrogen bonds.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a conclusion based on the mutagenesis data.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "adcbcab8-a316-4c13-ad74-67c4ba934b0b",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C76",
+      "claim": "In Shaker, the proline residue sits in between the two tryptophan residues and stabilizes the aromatic ring cuff.",
+      "claim_type": "EXPLICIT",
+      "source": "For instance, in Shaker, the proline residue sits in between the two tryptophan residues and stabilizes the aromatic ring cuff (Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "4661d9ef-1dc7-4db3-8d7b-734a316faf5f",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C77",
+      "claim": "In KCNQ1 the proline is positioned a little further outward and away from the two tryptophan residues, thus generating a looser arrangement of the aromatic ring cuff.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, in KCNQ1 the proline is positioned a little further outward and away from the two tryptophan residues, thus generating a looser arrangement of the aromatic ring cuff (Figure 4\u2014figure supplement 3B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on structural analysis shown in Figure 4\u2014figure supplement 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "f9620311-b8e2-457d-80c8-8a120a46451b",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C78",
+      "claim": "The difference in the stability of the aromatic cuff between Shaker and KCNQ1 might explain why the effect of PUFA on Gmax is large for KCNQ1 but not seen in Shaker.",
+      "claim_type": "EXPLICIT",
+      "source": "This difference in the stability of the aromatic cuff between Shaker and KCNQ1 might explain why the effect of PUFA on Gmax is large for KCNQ1 but not seen in Shaker (B\u00f6rjesson et al., 2008; B\u00f6rjesson and Elinder, 2011) even if the residues involved in the Gmax effect are conserved between these two channels.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a speculation based on structural differences and cited observations, supported by citations to B\u00f6rjesson et al., 2008; B\u00f6rjesson and Elinder, 2011.",
+      "evidence_type": "[\"SPECULATION\", \"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "79136c58-42ec-4829-836a-a61ea90caae4",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C79",
+      "claim": "The KCNQ1/KCNE1 switches slowly (>10 s) between conductive and non-conductive states.",
+      "claim_type": "EXPLICIT",
+      "source": "Our single-channel data show that the KCNQ1/KCNE1 switches slowly (>10 s) between conductive and non-conductive states, giving rise to many empty sweeps and few active sweeps.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on single-channel data shown in Figure 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "2793ef1d-8617-4257-b25a-00b901f668df",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C80",
+      "claim": "Once the channel becomes conductive during a depolarization, the channel stays conductive for the remainder of the sweep.",
+      "claim_type": "EXPLICIT",
+      "source": "However, once the channel becomes conductive during a depolarization, the channel stays conductive for the remainder of the sweep (see, e.g., Figure 2\u2014figure supplement 2 for 20 s sweeps), as if VSD activation stabilizes the conductive state.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This is based on single-channel data shown in Figure 2\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "0dfce89b-b665-4774-b86b-fe5bd04e0d26",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C81",
+      "claim": "The selectivity filter is stabilized more in the non-conductive state when VSD is resting but stabilized more in the conductive state when VSD is activated.",
+      "claim_type": "EXPLICIT",
+      "source": "Therefore, we propose a model in which the selectivity filter is stabilized more in the non-conductive state when VSD is resting but stabilized more in the conductive state when VSD is activated.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a model proposed based on single-channel data and structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ef2bd864-e962-4df8-8f3e-17004fc8ee03",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C82",
+      "claim": "The KCNQ1 structure with VSD resting was obtained in a low K+ solution.",
+      "claim_type": "EXPLICIT",
+      "source": "The KCNQ1 structure with VSD resting was obtained in a low K+ solution, which in other Kv channels would promote C-type inactivation of the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on the methods described in Mandala and MacKinnon, 2023.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "b3359df7-b160-46ec-9abb-756ee37bb5fc",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C83",
+      "claim": "It is the resting state of the VSD, and not the low K+, that caused the non-conductive selectivity filter in the KCNQ1 structure.",
+      "claim_type": "EXPLICIT",
+      "source": "However, we think it is the resting state of the VSD, and not the low K+, that caused the non-conductive selectivity filter in the KCNQ1 structure because a KCNQ1 structure with VSD activated in the low K+ solution had a selectivity filter that was nearly identical to the KCNQ1 structure in high K+ with VSD activated (except for fewer K+ ions in the filter in low K+ solutions) (see Suppl. Figs. S5C and S5D in Mandala and MacKinnon, 2023).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is an inference based on comparison of structures from Mandala and MacKinnon, 2023.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "26b87320-8b96-4517-90d5-c4658d5ba368",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C84",
+      "claim": "Currents from KCNQ1/KCNE1 channels display little external K+ dependence.",
+      "claim_type": "EXPLICIT",
+      "source": "Note also the currents from KCNQ1/KCNE1 channels display little external K+ dependence (a small inhibition in addition to what is expected from changes in driving force) and that KCNQ1 channels are more strongly inhibited by high extracellular K+ concentrations (Abrahamyan et al., 2023; Larsen et al., 2011) in contrast to other Kv channels, such as Shaker K+ channels, which are inactivated more in low K+ (Larsson and Elinder, 2000; Kurata and Fedida, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is supported by citations to Abrahamyan et al., 2023; Larsen et al., 2011; Larsson and Elinder, 2000; Kurata and Fedida, 2006.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "de38458c-7308-47fe-aa3d-9dc02c858f5d",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C85",
+      "claim": "The mechanism of PUFAs to increase KCNQ1/KCNE1 maximum conductance relies on the ability of PUFAs to favor the conductive conformation of the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "Our studies suggest that the mechanism of PUFAs to increase KCNQ1/KCNE1 maximum conductance relies on the ability of PUFAs to favor the conductive conformation of the selectivity filter: PUFAs promote interactions between residues in the selectivity filter that stabilize the channel pore.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is the main conclusion of the study based on all the data presented.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ef23d9fb-d42c-48fb-8585-43b2c6240646",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C86",
+      "claim": "A crevice between K326 and D301 is present in structures of KCNQ1 with activated VSD but not in structures where the VSD is in the resting state.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, we identify a crevice between K326 and D301 that is present in structures of KCNQ1 with activated VSD but not in structures where the VSD is in the resting state.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is based on structural analysis shown in Figure 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "d6c549f2-547e-4a8f-af2b-c91e99656816",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "claim_id": "C87",
+      "claim": "PUFA binding in the crevice between K326 and D301 stabilizes the network of interactions that form the conductive form of the selectivity filter.",
+      "claim_type": "EXPLICIT",
+      "source": "We propose that PUFA binding in this crevice stabilizes the network of interactions that form the conductive form of the selectivity filter.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is a proposal based on the data and structural analysis.",
+      "evidence_type": "[\"INFERENCE\", \"SPECULATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript establishes the clinical context for KCNQ1/KCNE1 channel research by describing the role of IKs in cardiac repolarization, the association of channel mutations with LQTS, and the limitations of current treatments. These claims provide background knowledge supporting the rationale for investigating PUFA-mediated channel activation as a potential therapeutic approach.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C5 and C14-C19 are well-established facts in cardiac electrophysiology, supported by appropriate citations to the literature. These background claims accurately describe the physiological role of IKs channels, the pathophysiology of LQTS, and current treatment limitations, providing solid context for the study.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "980222e1-a0bf-42e0-9733-231de9248ce5",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The manuscript reviews prior work establishing that PUFAs activate KCNQ1/KCNE1 channels through a dual mechanism involving two independent binding sites: Site I in the voltage sensor domain (causing voltage-dependence shifts) and Site II in the pore domain (increasing maximal conductance). Lin-Glycine, a PUFA analog, increases Gmax 2.5-fold in whole-oocyte recordings.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C6-C9 and C22-C27 accurately summarize prior published work on PUFA effects on KCNQ1 channels, with appropriate citations. These claims establish the foundation for the current study's investigation into the mechanism of Gmax increase at Site II.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "46b56017-f9dc-4957-b703-9e4cf192f444",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "The manuscript describes the structural features of KCNQ1 channels and their unusual biophysical properties, including very small single-channel conductance and very low open probability compared to other Kv channels.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C10-C11 and C20-C21 are supported by appropriate citations and represent established knowledge about KCNQ1/KCNE1 channel structure and function. These properties are confirmed by the single-channel data presented in the manuscript (Figure 2).",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Single-channel recordings reveal that Lin-Glycine increases Gmax not by changing single-channel conductance, but by increasing the number of non-empty sweeps (2.85-fold increase) while maintaining similar open probability once channels open. The decrease in first latency is attributed to Site I effects, while the increase in non-empty sweeps is attributed to Site II effects.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C28-C39 are well-supported by single-channel data in Figure 2 with appropriate statistical analysis (n=4 patches, p-values reported). The 2.85-fold increase in non-empty sweeps matches the macroscopic Gmax increase, providing strong evidence for the proposed mechanism. The separation of Site I and Site II effects is a reasonable inference based on prior work.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "bea5d90d-dd88-4410-bf02-4bc33c0ef2f8",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Mutagenesis experiments demonstrate that residue D301 is critical for PUFA interaction at Site II, as the D301E mutation dramatically decreases the Gmax effect of Lin-Glycine while preserving the voltage-dependence shift.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C40-C42 are supported by experimental data in Figure 3 showing that D301E mutation abolishes the Gmax effect (p=0.0018, n=4) while maintaining the \u0394V0.5 effect. This provides strong evidence for D301's specific role at Site II, complementing prior work on K326.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "2bcee478-3660-499a-9ee1-66f2ab62c01d",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Structural analysis reveals that a crevice between K326 and D301 is present in KCNQ1 structures with activated VSD but becomes too narrow to accommodate PUFA in structures with resting VSD, suggesting state-dependent PUFA binding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C44 and C86 are supported by structural analysis of published cryoEM structures (PDB: 8SIK and 8SIN) and prior MD simulations. The visual evidence in Figure 3D-F clearly shows the crevice size difference between activated and resting states.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "edb7d966-22b2-4f0e-aff5-c52fdc66cb17",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Comparison of cryoEM structures with activated versus resting VSD reveals large conformational changes in the selectivity filter, including movement of Y315, D317, and P320 away from their positions where they form stabilizing interactions with the aromatic ring cuff (W304, W305) in the activated state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C45-C50 are supported by structural analysis shown in Figure 4 and Videos 1-2, with appropriate citations for the functional importance of these residues in other K+ channels. The structural comparisons are clearly documented and the movements are quantified in supplementary figures.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "aeeee916-3535-42f7-93b1-32431dd0dafb",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "The authors propose a model in which the KCNQ1 selectivity filter is inherently unstable and transitions between conductive and non-conductive states, with the non-conductive state stabilized when VSD is resting and the conductive state stabilized when VSD is activated. PUFA binding at Site II is proposed to bias the transition toward the conductive state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C51-C52, C73-C74, and C81 represent the central mechanistic hypothesis of the study. While the model is consistent with the single-channel data (many empty sweeps) and structural observations, it remains speculative. The evidence is indirect and alternative explanations (e.g., slow activation kinetics, subconductance states) are not fully excluded. Direct demonstration of filter instability would require additional experiments.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "1ec35fc3-81af-45ba-92c9-ada727d702a3",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Mutagenesis of residues in the outer selectivity filter region (Y315F, D317E, T309S, P320L) significantly reduces the Gmax effect of Lin-Glycine, while the Y315F mutation specifically abolishes the increase in non-empty sweeps at the single-channel level. These residues are proposed to form stabilizing interactions in the conductive state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C62 are well-supported by experimental data in Figures 5 and 6 with appropriate statistical analysis (p<0.0001 for multiple mutants, n=3-4 oocytes). The Y315F single-channel data (Figure 6) provides particularly strong evidence by showing no increase in non-empty sweeps with Lin-Glycine, directly linking this residue to the Gmax mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "d924c597-815a-4eb1-a5e0-59e7f8b907ac",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Mutations of residues in the intracellular region of the selectivity filter (T312S, I313S) do not affect the Gmax increase by Lin-Glycine, suggesting that the stabilizing interactions are localized to the external region of the selectivity filter.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C63-C64 are supported by experimental data in Figure 5B showing that T312S and I313S mutations preserve the Gmax effect (2.49\u00b10.98 and 2.18\u00b10.05 fold increases, respectively). This negative control strengthens the specificity of the outer filter residue effects.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "4cc471eb-637d-43f6-846d-8fcadfb9c2c3",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "The authors conclude that PUFA binding at Site II increases Gmax by stabilizing a network of interactions in the selectivity filter, including proposed hydrogen bonds between W304-D317 and W305-Y315, which promote a conductive conformation of the channel pore.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C65-C67, C75, C85, and C87 represent the main conclusions of the study. While the mutagenesis data strongly support the involvement of these residues in the Gmax effect, the specific molecular interactions (hydrogen bonds) are inferred from structural analysis and homology to other channels rather than directly demonstrated. The model is plausible but requires validation through additional structural or computational studies.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "1465314b-e3de-44ef-b337-0310b38fbce0",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The manuscript draws parallels between KCNQ1 and other K+ channels (Shaker, KcsA) regarding the aromatic ring cuff's role in selectivity filter stability and C-type inactivation, while noting structural differences in proline positioning that may explain why PUFAs have large Gmax effects on KCNQ1 but not Shaker.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C68-C71 and C76-C78 are supported by appropriate citations and structural comparisons shown in Figure 4\u2014figure supplement 3. The proposed explanation for differential PUFA sensitivity between KCNQ1 and Shaker is speculative but reasonable given the structural differences and cited functional data.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "fedf467b-eab7-4c3e-86be-a9976a564c01",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Single-channel data show that KCNQ1/KCNE1 switches slowly (>10 s) between conductive and non-conductive states, but once conductive during depolarization, the channel remains conductive for the remainder of the sweep, suggesting VSD activation stabilizes the conductive state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C79-C80 are supported by single-channel recordings in Figure 2 and Figure 2\u2014figure supplement 2 showing 20-second sweeps. The observation that channels stay open once activated is clearly demonstrated in the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "36b23d0a-cf58-4002-9e59-b76e73ae3371",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "The authors argue that the non-conductive selectivity filter in the KCNQ1 structure with resting VSD is due to the VSD state rather than the low K+ concentration used in structure determination, based on comparison with structures obtained under different conditions.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C82-C83 are supported by careful analysis of the published structures from Mandala and MacKinnon (2023), comparing selectivity filter conformations across different K+ concentrations and VSD states. Claim C84 is supported by appropriate citations showing KCNQ1's unusual K+ dependence compared to other Kv channels.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "a16e602a-9c28-4656-8f1b-557b500833d8",
+      "content_id": "a4971360-f257-4941-ba2e-1b1f27efde75",
+      "result_id": "R15",
+      "result_category": "llm",
+      "result": "The central hypothesis of the study is that the selectivity filter in KCNQ1 is normally unstable (contributing to low open probability) and that PUFA-induced increase in Gmax results from stabilization of the selectivity filter in an open-conductive state.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C12-C13 represent the main hypothesis stated in the abstract. While the single-channel data (many empty sweeps), mutagenesis results, and structural analysis are all consistent with this model, the evidence is largely indirect. The inherent instability of the filter is inferred rather than directly demonstrated, and alternative mechanisms are not fully excluded. The hypothesis is well-supported but requires additional validation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "f267df3d-4952-4b13-987b-9eba277b9269",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "Single-channel recordings demonstrate that Lin-Glycine does not change single-channel conductance but increases the number of non-empty sweeps by 2.85-fold and decreases latency to first opening, while open probability in non-empty sweeps remains similar between control and Lin-Glycine conditions. The authors conclude that the Gmax effect is due to increased open probability by increasing non-empty sweeps rather than changes in single-channel conductance.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers explicitly affirm these single-channel findings. Reviewer 1 states the data are 'well supported by single channel analysis, which shows that normally infrequent opening bursts occur more often in the presence of the PUFA.' Reviewer 2 notes 'Their single-channel recordings are straightforward and clearly show that the selectivity filter tends to become conductive upon PUFA binding.' Reviewer 3 emphasizes 'convincing single channel recordings that show empty and open channel traces and the ratio of such traces is affected by PUFA.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "b49ad65a-c2c1-4e38-b6ec-362df89289d2",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "The authors propose that the KCNQ1 selectivity filter is normally unstable, contributing to low open probability, and that PUFA-induced increase in Gmax is caused by stabilization of the selectivity filter in an open-conductive state. This represents the central mechanistic hypothesis linking selectivity filter instability to PUFA modulation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers unanimously support this central claim. Reviewer 1 states 'Overall, the major claim of the abstract is well-supported: \"... that the selectivity filter in KCNQ1 is normally unstable ... and that the PUFA-induced increase in Gmax is caused by a stabilization of the selectivity filter in an open-conductive state.\"' Reviewer 2 confirms 'they successfully demonstrate that the selectivity filter is stabilized in a conducting state by PUFA binding.' Reviewer 3 notes this mechanism is 'supported by convincing single channel recordings.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Mutagenesis experiments show that mutations of selectivity filter residues (D301E, Y315F, D317E, T309S, P320L) dramatically reduce or abolish the Gmax effect of Lin-Glycine, while mutations at the outer portion of the selectivity filter affect the Gmax increase. Single-channel recordings of Y315F confirm no increase in non-empty sweeps with Lin-Glycine.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers strongly support the mutagenesis data. Reviewer 1 describes 'A definitive functional experiment is conducted by single channel recordings with selectivity filter domain mutation Y315F which ablates the Lin-Glycine effect on Gmax.' Reviewer 3 states 'mutations of the pore residues alter PUFA effects, convincingly supporting that PUFA alters the interactions among these pore residues.' Reviewer 1 notes 'Both mutation results and simulations converge on the proposed selectivity filter mechanism.'",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Structural analysis of cryoEM structures reveals that a crevice between K326 and D301 is present in KCNQ1 with activated VSD but too narrow in the resting state, and that large rearrangements occur in the selectivity filter between these states, including movements of Y315, D317, and P320.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the structural analysis. Reviewer 1 states 'The computational exploration of two selectivity filter structures proposed to interact distinctly with Lin-Glycine is informative. Both mutation results and simulations converge on the proposed selectivity filter mechanism.' The editor notes the mechanism is 'supported by convincing single-channel recordings, macroscopic current recordings, and mutational analyses,' implicitly accepting the structural framework supporting these interpretations.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "4d268e8c-a5c5-4d4e-b6a2-bae725e05dad",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Mutations of residues in the more intracellular region of the selectivity filter (T312S and I313S) do not affect Gmax increases, with Lin-Glycine effects resembling WT channels, suggesting that stabilizing interactions involve residues near the external region of the selectivity filter.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These negative control experiments are implicitly supported by reviewers' acceptance of the overall mutagenesis strategy. Reviewer 3 notes 'mutations of the pore residues alter PUFA effects' without raising concerns about the specificity controls. The data support the spatial localization of the PUFA effect to the outer selectivity filter region.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "bad38992-aaa5-4b9b-8034-85662f35b2da",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The authors conclude that PUFA binding to Site II increases Gmax by promoting interactions that stabilize the channel pore in the conductive state, specifically proposing that hydrogen bonds between W304-D317 and W305-Y315 are created in the conductive state and that PUFA binding to K326 and D301 favors this transition.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers support this mechanistic conclusion while acknowledging it as interpretive. Reviewer 1 notes 'Both mutation results and simulations converge on the proposed selectivity filter mechanism, although other possibilities for Lin-Glycine binding and action might be possible.' Reviewer 2 states 'they successfully demonstrate that the selectivity filter is stabilized in a conducting state by PUFA binding, and that this is the mechanism by which PUFAs increase Gmax.' The qualification about alternative possibilities does not undermine support for the proposed mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "ddab2a98-f634-40c8-9096-2f55de5166cd",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "Single-channel data show that KCNQ1/KCNE1 switches slowly (>10 s) between conductive and non-conductive states, but once conductive during depolarization, stays conductive for the remainder of the sweep. The authors propose a model where the selectivity filter is stabilized more in the non-conductive state when VSD is resting but more in the conductive state when VSD is activated.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers accept these observations and the proposed model. Reviewer 3 explicitly states 'This manuscript reveals an important mechanism of KCNQ1/IKs channel gating such that the open state of the pore is unstable and undergoes intermittent closed and open conformations.' The model linking VSD state to selectivity filter stability is consistent with reviewers' acceptance of the overall gating mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Background claims establish that KCNQ1/KCNE1 mediates IKs current important for cardiac repolarization, mutations cause LQTS, PUFAs are potent activators acting through two independent sites (Site I in VSD shifting voltage dependence, Site II in pore domain increasing Gmax), and that Lin-Glycine increases Gmax 2.5-fold in whole-oocyte recordings.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These background claims are accepted without question by all reviewers as established knowledge and appropriate context. Reviewer 2 explicitly acknowledges 'PUFAs are known to upregulate KCNQ1 and KCNQ1/KCNE1 channels through two mechanisms' and notes 'the first mechanism is known to affect the voltage sensor equilibrium through a charge effect, the second mechanism is less understood,' framing the study's contribution appropriately.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "0cd883eb-58e0-4f9c-87a7-e0a1008c4fc0",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "The authors discuss that the aromatic ring cuff (W304/W305 in KCNQ1) stabilizes the conducting state and plays a role in C-type inactivation in K+ channels, and propose that differences in aromatic cuff stability between Shaker and KCNQ1 might explain why PUFA effects on Gmax are large for KCNQ1 but not seen in Shaker.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge these comparative structural interpretations. The discussion contextualizes the findings within broader K+ channel biology and is consistent with cited literature. No reviewer raises concerns about these comparative claims or the speculation about Shaker vs KCNQ1 differences.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "fa7191f2-6962-4044-9864-1e46e3cb802e",
+      "content_id": "c1647a1f-24b0-4e1f-a152-3511899c5a45",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "The authors argue that the resting state of the VSD, rather than low K+ concentration, caused the non-conductive selectivity filter in the KCNQ1 structure, based on comparison of structures and noting that KCNQ1/KCNE1 currents display little external K+ dependence unlike other Kv channels.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers do not challenge this interpretation of the structural data or the K+ dependence argument. The reasoning is presented as inference from structural comparisons and functional data, and reviewers' acceptance of the overall selectivity filter mechanism implicitly supports these supporting arguments.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "1f515325-ef19-40bf-b19a-ae47b494ad37",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "94ce690c-377f-4496-9296-ecd3e5b973cd",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "49c6d3a5-5849-4b15-ab95-bab5f179f752",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "27fab524-68dc-405e-b263-9271b1cb2004",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "ca66ae4e-1fa1-4f62-b794-8d63008b75b3",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "3ada78f2-0dd2-4aa8-a6e2-d1cabcb88809",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "27b64fd1-26db-488b-9701-75024381ba62",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "43b29c31-c869-44f5-9881-67593827c315",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "a3b48a07-5808-43bd-b0f0-c19dfbae9fca",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "a6162ba7-63d0-4f57-b9e4-38c7e0cb5e54",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "4401b27a-aaa3-454b-9067-f75af1fc920a",
+      "result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21"
+    },
+    {
+      "claim_id": "e64389ba-f441-41e6-928d-695ba0e3a5aa",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "b6efc0da-c321-47bb-8b7b-b14f98078c40",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "0245f3d5-fa61-4003-8d99-c1b723cb5b79",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "8d50be50-1f91-4332-8d91-ccbb16e451f2",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "53ec93aa-dc09-441e-b9d2-da3fb909d0ad",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "ab95b66d-fb51-4133-beb0-91fe0cdaf761",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "ceffd118-0f55-4493-abfa-3648d8159226",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "f53a204d-ccd8-45a3-a4b3-e72a2fe22fbf",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "2be32938-68d9-425e-9328-5248d00398c2",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "31fe5b61-df1d-4714-827a-23d2c120e17e",
+      "result_id": "980222e1-a0bf-42e0-9733-231de9248ce5"
+    },
+    {
+      "claim_id": "36337c2b-074f-4d88-867b-0fdf5c5fa85e",
+      "result_id": "46b56017-f9dc-4957-b703-9e4cf192f444"
+    },
+    {
+      "claim_id": "5c1902e1-a691-41d3-abd7-849f381c2255",
+      "result_id": "46b56017-f9dc-4957-b703-9e4cf192f444"
+    },
+    {
+      "claim_id": "db679412-4940-467d-b2d6-4f30a35e43cb",
+      "result_id": "46b56017-f9dc-4957-b703-9e4cf192f444"
+    },
+    {
+      "claim_id": "aed60600-6741-46dc-a5a9-13a6797d6673",
+      "result_id": "46b56017-f9dc-4957-b703-9e4cf192f444"
+    },
+    {
+      "claim_id": "ceb46f6a-43e7-48e2-8f57-952e6fd7d52e",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "ef56f31a-1870-4347-8bb3-97cedae81378",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "8dd6e4a7-9d3a-4d88-b129-65e5f90fd4d3",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "1af12a68-8414-49e0-ae5e-a98796715af7",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "cdfb6f16-fbb5-43fc-bbfa-9d32c832a2c4",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "ff0cf369-cb4e-4d61-8826-6d9b967aa8cb",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "4b21bbab-6e2d-441c-b2c6-5a53ebc49fa4",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "68c2ba45-6cd8-4037-936e-8b44bb63f6a1",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "858b5c9b-8819-4e12-9a4f-b23c8d7c6da8",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "78fbc4b1-f3ed-40ba-9cf0-db1e3db19895",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "02de2f3b-5e7b-4d1f-8919-269fc2018bf6",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "da4c837b-aa16-42c9-9d88-b413d25cfb4c",
+      "result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2"
+    },
+    {
+      "claim_id": "863b7984-0c0c-4d67-b610-ef9164898d12",
+      "result_id": "bea5d90d-dd88-4410-bf02-4bc33c0ef2f8"
+    },
+    {
+      "claim_id": "7c730d55-2139-4915-ab36-6daaf64d9189",
+      "result_id": "bea5d90d-dd88-4410-bf02-4bc33c0ef2f8"
+    },
+    {
+      "claim_id": "884557e8-2d16-4f4c-93f2-bed1a544bb19",
+      "result_id": "bea5d90d-dd88-4410-bf02-4bc33c0ef2f8"
+    },
+    {
+      "claim_id": "ab932d58-8adc-4eab-9819-fd298f618b58",
+      "result_id": "2bcee478-3660-499a-9ee1-66f2ab62c01d"
+    },
+    {
+      "claim_id": "7057dde2-6ef6-4ebf-a642-feecb5f9f1e4",
+      "result_id": "2bcee478-3660-499a-9ee1-66f2ab62c01d"
+    },
+    {
+      "claim_id": "ef23d9fb-d42c-48fb-8585-43b2c6240646",
+      "result_id": "2bcee478-3660-499a-9ee1-66f2ab62c01d"
+    },
+    {
+      "claim_id": "33b957d0-34b1-4a89-abd2-02548225a577",
+      "result_id": "edb7d966-22b2-4f0e-aff5-c52fdc66cb17"
+    },
+    {
+      "claim_id": "57b85eae-eaed-4165-869e-b6d2bdde5597",
+      "result_id": "edb7d966-22b2-4f0e-aff5-c52fdc66cb17"
+    },
+    {
+      "claim_id": "92178f3c-10f0-40bb-95f5-71900d068b59",
+      "result_id": "edb7d966-22b2-4f0e-aff5-c52fdc66cb17"
+    },
+    {
+      "claim_id": "d97cc1a5-bef9-4737-9698-6bd98fb7ee3a",
+      "result_id": "edb7d966-22b2-4f0e-aff5-c52fdc66cb17"
+    },
+    {
+      "claim_id": "05ad6fe3-ad87-4e57-8414-4515af80f731",
+      "result_id": "edb7d966-22b2-4f0e-aff5-c52fdc66cb17"
+    },
+    {
+      "claim_id": "88920f69-9a57-4200-b1a7-523c2d30bee7",
+      "result_id": "edb7d966-22b2-4f0e-aff5-c52fdc66cb17"
+    },
+    {
+      "claim_id": "b02261f2-f16a-49c9-8641-1d9596b24919",
+      "result_id": "aeeee916-3535-42f7-93b1-32431dd0dafb"
+    },
+    {
+      "claim_id": "6c05ace2-1083-479a-a9b9-fa2809069cdf",
+      "result_id": "aeeee916-3535-42f7-93b1-32431dd0dafb"
+    },
+    {
+      "claim_id": "686e10ee-73aa-46db-bd0d-2dd2dc3168ab",
+      "result_id": "aeeee916-3535-42f7-93b1-32431dd0dafb"
+    },
+    {
+      "claim_id": "53aa8b15-6a39-432f-839e-d562983ac414",
+      "result_id": "aeeee916-3535-42f7-93b1-32431dd0dafb"
+    },
+    {
+      "claim_id": "0dfce89b-b665-4774-b86b-fe5bd04e0d26",
+      "result_id": "aeeee916-3535-42f7-93b1-32431dd0dafb"
+    },
+    {
+      "claim_id": "6505b747-ffcb-4bca-a408-6f950d2c24b3",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "5df3eb00-6d8f-4cd7-ad8d-2e11c98f8863",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "d4a41dd5-f7a7-4839-9b92-7df6f7736247",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "39cf1dcb-ade4-4c0b-b64b-8affef763965",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "b9e74fee-bb1d-4319-88f3-f6627fbbdab3",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "183b49da-7909-4cb0-a8cc-88680d84922f",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "698130c1-709d-474d-9749-dd5f35d4fed5",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "8c047a81-55df-4fd7-981b-0793c65a8ec5",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "9d2f934e-d131-4b14-96c4-75543ec79d38",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "55debb30-9836-4d13-89ee-69541564f4c0",
+      "result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3"
+    },
+    {
+      "claim_id": "c71906e4-4c89-43f6-829d-273f204e4ce3",
+      "result_id": "d924c597-815a-4eb1-a5e0-59e7f8b907ac"
+    },
+    {
+      "claim_id": "91b3150c-b77a-475d-8e74-7ba4c9d7d17d",
+      "result_id": "d924c597-815a-4eb1-a5e0-59e7f8b907ac"
+    },
+    {
+      "claim_id": "4363bf31-92e2-409c-acbd-e0cbcae2c969",
+      "result_id": "4cc471eb-637d-43f6-846d-8fcadfb9c2c3"
+    },
+    {
+      "claim_id": "f997d56d-f769-4f73-8190-279a4c436c48",
+      "result_id": "4cc471eb-637d-43f6-846d-8fcadfb9c2c3"
+    },
+    {
+      "claim_id": "351b1f4e-0c09-40db-9ddc-1fa18bfeb825",
+      "result_id": "4cc471eb-637d-43f6-846d-8fcadfb9c2c3"
+    },
+    {
+      "claim_id": "694e4215-7b27-412b-b205-908b529798a3",
+      "result_id": "4cc471eb-637d-43f6-846d-8fcadfb9c2c3"
+    },
+    {
+      "claim_id": "de38458c-7308-47fe-aa3d-9dc02c858f5d",
+      "result_id": "4cc471eb-637d-43f6-846d-8fcadfb9c2c3"
+    },
+    {
+      "claim_id": "d6c549f2-547e-4a8f-af2b-c91e99656816",
+      "result_id": "4cc471eb-637d-43f6-846d-8fcadfb9c2c3"
+    },
+    {
+      "claim_id": "ab1e7cca-eaa6-4cbc-a067-0564abda4db2",
+      "result_id": "1465314b-e3de-44ef-b337-0310b38fbce0"
+    },
+    {
+      "claim_id": "c9615413-32c3-4787-8950-b547f1cc93a1",
+      "result_id": "1465314b-e3de-44ef-b337-0310b38fbce0"
+    },
+    {
+      "claim_id": "9be339bf-d151-4a11-a65a-7a075fca3e41",
+      "result_id": "1465314b-e3de-44ef-b337-0310b38fbce0"
+    },
+    {
+      "claim_id": "7a7bd088-bccd-4a0d-a344-2a5c3363a8ed",
+      "result_id": "1465314b-e3de-44ef-b337-0310b38fbce0"
+    },
+    {
+      "claim_id": "adcbcab8-a316-4c13-ad74-67c4ba934b0b",
+      "result_id": "1465314b-e3de-44ef-b337-0310b38fbce0"
+    },
+    {
+      "claim_id": "4661d9ef-1dc7-4db3-8d7b-734a316faf5f",
+      "result_id": "1465314b-e3de-44ef-b337-0310b38fbce0"
+    },
+    {
+      "claim_id": "f9620311-b8e2-457d-80c8-8a120a46451b",
+      "result_id": "1465314b-e3de-44ef-b337-0310b38fbce0"
+    },
+    {
+      "claim_id": "79136c58-42ec-4829-836a-a61ea90caae4",
+      "result_id": "fedf467b-eab7-4c3e-86be-a9976a564c01"
+    },
+    {
+      "claim_id": "2793ef1d-8617-4257-b25a-00b901f668df",
+      "result_id": "fedf467b-eab7-4c3e-86be-a9976a564c01"
+    },
+    {
+      "claim_id": "ef2bd864-e962-4df8-8f3e-17004fc8ee03",
+      "result_id": "36b23d0a-cf58-4002-9e59-b76e73ae3371"
+    },
+    {
+      "claim_id": "b3359df7-b160-46ec-9abb-756ee37bb5fc",
+      "result_id": "36b23d0a-cf58-4002-9e59-b76e73ae3371"
+    },
+    {
+      "claim_id": "26b87320-8b96-4517-90d5-c4658d5ba368",
+      "result_id": "36b23d0a-cf58-4002-9e59-b76e73ae3371"
+    },
+    {
+      "claim_id": "291c7b47-f1eb-4464-80a1-0d087c63f8a2",
+      "result_id": "a16e602a-9c28-4656-8f1b-557b500833d8"
+    },
+    {
+      "claim_id": "13fa6c04-b162-446d-bdee-9100efbeb154",
+      "result_id": "a16e602a-9c28-4656-8f1b-557b500833d8"
+    },
+    {
+      "claim_id": "ceb46f6a-43e7-48e2-8f57-952e6fd7d52e",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "ef56f31a-1870-4347-8bb3-97cedae81378",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "8dd6e4a7-9d3a-4d88-b129-65e5f90fd4d3",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "1af12a68-8414-49e0-ae5e-a98796715af7",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "cdfb6f16-fbb5-43fc-bbfa-9d32c832a2c4",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "ff0cf369-cb4e-4d61-8826-6d9b967aa8cb",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "4b21bbab-6e2d-441c-b2c6-5a53ebc49fa4",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "68c2ba45-6cd8-4037-936e-8b44bb63f6a1",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "858b5c9b-8819-4e12-9a4f-b23c8d7c6da8",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "da4c837b-aa16-42c9-9d88-b413d25cfb4c",
+      "result_id": "f267df3d-4952-4b13-987b-9eba277b9269"
+    },
+    {
+      "claim_id": "291c7b47-f1eb-4464-80a1-0d087c63f8a2",
+      "result_id": "b49ad65a-c2c1-4e38-b6ec-362df89289d2"
+    },
+    {
+      "claim_id": "13fa6c04-b162-446d-bdee-9100efbeb154",
+      "result_id": "b49ad65a-c2c1-4e38-b6ec-362df89289d2"
+    },
+    {
+      "claim_id": "b02261f2-f16a-49c9-8641-1d9596b24919",
+      "result_id": "b49ad65a-c2c1-4e38-b6ec-362df89289d2"
+    },
+    {
+      "claim_id": "6c05ace2-1083-479a-a9b9-fa2809069cdf",
+      "result_id": "b49ad65a-c2c1-4e38-b6ec-362df89289d2"
+    },
+    {
+      "claim_id": "7c730d55-2139-4915-ab36-6daaf64d9189",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "884557e8-2d16-4f4c-93f2-bed1a544bb19",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "6505b747-ffcb-4bca-a408-6f950d2c24b3",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "5df3eb00-6d8f-4cd7-ad8d-2e11c98f8863",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "39cf1dcb-ade4-4c0b-b64b-8affef763965",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "183b49da-7909-4cb0-a8cc-88680d84922f",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "698130c1-709d-474d-9749-dd5f35d4fed5",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "9d2f934e-d131-4b14-96c4-75543ec79d38",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "55debb30-9836-4d13-89ee-69541564f4c0",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "694e4215-7b27-412b-b205-908b529798a3",
+      "result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0"
+    },
+    {
+      "claim_id": "ab932d58-8adc-4eab-9819-fd298f618b58",
+      "result_id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a"
+    },
+    {
+      "claim_id": "7057dde2-6ef6-4ebf-a642-feecb5f9f1e4",
+      "result_id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a"
+    },
+    {
+      "claim_id": "33b957d0-34b1-4a89-abd2-02548225a577",
+      "result_id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a"
+    },
+    {
+      "claim_id": "57b85eae-eaed-4165-869e-b6d2bdde5597",
+      "result_id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a"
+    },
+    {
+      "claim_id": "92178f3c-10f0-40bb-95f5-71900d068b59",
+      "result_id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a"
+    },
+    {
+      "claim_id": "88920f69-9a57-4200-b1a7-523c2d30bee7",
+      "result_id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a"
+    },
+    {
+      "claim_id": "ef23d9fb-d42c-48fb-8585-43b2c6240646",
+      "result_id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a"
+    },
+    {
+      "claim_id": "c71906e4-4c89-43f6-829d-273f204e4ce3",
+      "result_id": "4d268e8c-a5c5-4d4e-b6a2-bae725e05dad"
+    },
+    {
+      "claim_id": "91b3150c-b77a-475d-8e74-7ba4c9d7d17d",
+      "result_id": "4d268e8c-a5c5-4d4e-b6a2-bae725e05dad"
+    },
+    {
+      "claim_id": "4363bf31-92e2-409c-acbd-e0cbcae2c969",
+      "result_id": "bad38992-aaa5-4b9b-8034-85662f35b2da"
+    },
+    {
+      "claim_id": "f997d56d-f769-4f73-8190-279a4c436c48",
+      "result_id": "bad38992-aaa5-4b9b-8034-85662f35b2da"
+    },
+    {
+      "claim_id": "351b1f4e-0c09-40db-9ddc-1fa18bfeb825",
+      "result_id": "bad38992-aaa5-4b9b-8034-85662f35b2da"
+    },
+    {
+      "claim_id": "53aa8b15-6a39-432f-839e-d562983ac414",
+      "result_id": "bad38992-aaa5-4b9b-8034-85662f35b2da"
+    },
+    {
+      "claim_id": "de38458c-7308-47fe-aa3d-9dc02c858f5d",
+      "result_id": "bad38992-aaa5-4b9b-8034-85662f35b2da"
+    },
+    {
+      "claim_id": "d6c549f2-547e-4a8f-af2b-c91e99656816",
+      "result_id": "bad38992-aaa5-4b9b-8034-85662f35b2da"
+    },
+    {
+      "claim_id": "79136c58-42ec-4829-836a-a61ea90caae4",
+      "result_id": "ddab2a98-f634-40c8-9096-2f55de5166cd"
+    },
+    {
+      "claim_id": "2793ef1d-8617-4257-b25a-00b901f668df",
+      "result_id": "ddab2a98-f634-40c8-9096-2f55de5166cd"
+    },
+    {
+      "claim_id": "0dfce89b-b665-4774-b86b-fe5bd04e0d26",
+      "result_id": "ddab2a98-f634-40c8-9096-2f55de5166cd"
+    },
+    {
+      "claim_id": "1f515325-ef19-40bf-b19a-ae47b494ad37",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "94ce690c-377f-4496-9296-ecd3e5b973cd",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "49c6d3a5-5849-4b15-ab95-bab5f179f752",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "27fab524-68dc-405e-b263-9271b1cb2004",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "ca66ae4e-1fa1-4f62-b794-8d63008b75b3",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "e64389ba-f441-41e6-928d-695ba0e3a5aa",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "b6efc0da-c321-47bb-8b7b-b14f98078c40",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "0245f3d5-fa61-4003-8d99-c1b723cb5b79",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "8d50be50-1f91-4332-8d91-ccbb16e451f2",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "36337c2b-074f-4d88-867b-0fdf5c5fa85e",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "5c1902e1-a691-41d3-abd7-849f381c2255",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "3ada78f2-0dd2-4aa8-a6e2-d1cabcb88809",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "27b64fd1-26db-488b-9701-75024381ba62",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "43b29c31-c869-44f5-9881-67593827c315",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "a3b48a07-5808-43bd-b0f0-c19dfbae9fca",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "a6162ba7-63d0-4f57-b9e4-38c7e0cb5e54",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "4401b27a-aaa3-454b-9067-f75af1fc920a",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "db679412-4940-467d-b2d6-4f30a35e43cb",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "aed60600-6741-46dc-a5a9-13a6797d6673",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "53ec93aa-dc09-441e-b9d2-da3fb909d0ad",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "ab95b66d-fb51-4133-beb0-91fe0cdaf761",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "ceffd118-0f55-4493-abfa-3648d8159226",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "f53a204d-ccd8-45a3-a4b3-e72a2fe22fbf",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "2be32938-68d9-425e-9328-5248d00398c2",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "31fe5b61-df1d-4714-827a-23d2c120e17e",
+      "result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8"
+    },
+    {
+      "claim_id": "ab1e7cca-eaa6-4cbc-a067-0564abda4db2",
+      "result_id": "0cd883eb-58e0-4f9c-87a7-e0a1008c4fc0"
+    },
+    {
+      "claim_id": "c9615413-32c3-4787-8950-b547f1cc93a1",
+      "result_id": "0cd883eb-58e0-4f9c-87a7-e0a1008c4fc0"
+    },
+    {
+      "claim_id": "9be339bf-d151-4a11-a65a-7a075fca3e41",
+      "result_id": "0cd883eb-58e0-4f9c-87a7-e0a1008c4fc0"
+    },
+    {
+      "claim_id": "7a7bd088-bccd-4a0d-a344-2a5c3363a8ed",
+      "result_id": "0cd883eb-58e0-4f9c-87a7-e0a1008c4fc0"
+    },
+    {
+      "claim_id": "adcbcab8-a316-4c13-ad74-67c4ba934b0b",
+      "result_id": "0cd883eb-58e0-4f9c-87a7-e0a1008c4fc0"
+    },
+    {
+      "claim_id": "4661d9ef-1dc7-4db3-8d7b-734a316faf5f",
+      "result_id": "0cd883eb-58e0-4f9c-87a7-e0a1008c4fc0"
+    },
+    {
+      "claim_id": "f9620311-b8e2-457d-80c8-8a120a46451b",
+      "result_id": "0cd883eb-58e0-4f9c-87a7-e0a1008c4fc0"
+    },
+    {
+      "claim_id": "ef2bd864-e962-4df8-8f3e-17004fc8ee03",
+      "result_id": "fa7191f2-6962-4044-9864-1e46e3cb802e"
+    },
+    {
+      "claim_id": "b3359df7-b160-46ec-9abb-756ee37bb5fc",
+      "result_id": "fa7191f2-6962-4044-9864-1e46e3cb802e"
+    },
+    {
+      "claim_id": "26b87320-8b96-4517-90d5-c4658d5ba368",
+      "result_id": "fa7191f2-6962-4044-9864-1e46e3cb802e"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "8e11516a-c85a-4d2a-9cd5-0b0651d5fbe6",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "62ab1b62-0cc4-408d-ab53-2d9f5030d2d2",
+      "peer_result_id": "f267df3d-4952-4b13-987b-9eba277b9269",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on single-channel data (C28-C36, C39). Both evaluations find the evidence well-supported, with peer reviewers explicitly affirming the single-channel analysis showing increased opening bursts with PUFA. OpenEval notes the 2.85-fold increase matches macroscopic data; peer reviewers emphasize the straightforward demonstration of selectivity filter conductance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "2ed9ec0e-2538-4d24-a1c7-8b13a0ba6151",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "a16e602a-9c28-4656-8f1b-557b500833d8",
+      "peer_result_id": "b49ad65a-c2c1-4e38-b6ec-362df89289d2",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address the central hypothesis (C12-C13) about selectivity filter instability and PUFA stabilization. OpenEval rates this as UNCERTAIN, noting evidence is largely indirect and alternative mechanisms not fully excluded. Peer reviewers rate it SUPPORTED, with all three reviewers unanimously affirming the major claim. This represents a key disagreement in confidence level despite similar evidence assessment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "3466c824-3574-4d77-b6c3-9ccf6f5fc83c",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "1ec35fc3-81af-45ba-92c9-ada727d702a3",
+      "peer_result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Strong agreement on mutagenesis data (C53-C62). Both evaluations find the evidence well-supported with appropriate statistics. OpenEval emphasizes Y315F single-channel data as particularly strong evidence. Peer reviewers describe the Y315F experiment as 'definitive' and note mutations convincingly support PUFA effects on pore residue interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "dfd3f866-665f-4f73-91b7-1f308d3094ca",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "d924c597-815a-4eb1-a5e0-59e7f8b907ac",
+      "peer_result_id": "4d268e8c-a5c5-4d4e-b6a2-bae725e05dad",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on negative control experiments (C63-C64). Both evaluations find T312S and I313S mutations appropriately preserve the Gmax effect, strengthening specificity of outer filter residue effects. Peer reviewers implicitly support these controls through acceptance of overall mutagenesis strategy.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "f8e4a510-5a91-461f-9be5-d2a5ca9d55d0",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "4cc471eb-637d-43f6-846d-8fcadfb9c2c3",
+      "peer_result_id": "bad38992-aaa5-4b9b-8034-85662f35b2da",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address mechanistic conclusions about hydrogen bonds and residue interactions (C65-C67, C75, C85, C87). OpenEval rates as UNCERTAIN, noting specific molecular interactions are inferred rather than directly demonstrated. Peer reviewers rate as SUPPORTED while acknowledging interpretive nature and noting 'other possibilities might be possible.' Subtle difference in confidence despite similar caveats.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "94bb7484-f690-45b1-bba7-5c40a7f87724",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "2bcee478-3660-499a-9ee1-66f2ab62c01d",
+      "peer_result_id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on structural analysis of crevice size differences (C43-C44, C86). Both evaluations find the cryoEM structure analysis and visual evidence well-supported. OpenEval emphasizes clear visual evidence in figures; peer reviewers accept structural framework as supporting functional interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "c0e28106-2859-4dc0-82d5-d0e1597a8a27",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "edb7d966-22b2-4f0e-aff5-c52fdc66cb17",
+      "peer_result_id": "f719d300-8ee2-44c7-9f32-7b1c6f6eb13a",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address structural movements and residue importance (C45-C50). OpenEval finds claims supported by structural analysis with appropriate citations. Peer reviewers affirm the computational exploration and note convergence of mutation results and simulations on the proposed mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "77eefc0d-466f-411f-82cb-bb47655028e9",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "fedf467b-eab7-4c3e-86be-a9976a564c01",
+      "peer_result_id": "ddab2a98-f634-40c8-9096-2f55de5166cd",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on single-channel observations of sustained opening (C79-C80). OpenEval finds evidence clearly demonstrated in 20-second sweep recordings. Peer reviewers accept these observations and the proposed model, with Reviewer 3 explicitly affirming the unstable open state mechanism. Peer R7 also includes C81 which OpenEval addresses separately in R8.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "fdf3b360-ddcf-451b-b636-9052822135d1",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "aeeee916-3535-42f7-93b1-32431dd0dafb",
+      "peer_result_id": "b49ad65a-c2c1-4e38-b6ec-362df89289d2",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Both address central mechanistic hypothesis about filter instability (C51-C52, C73-C74, C81). OpenEval rates as UNCERTAIN, noting the model is consistent with data but speculative, with alternative explanations not fully excluded. Peer reviewers rate the overlapping claims (C51-C52) as SUPPORTED, showing higher confidence in the proposed mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "1c35c46f-7997-4bac-b589-0bec8e00e414",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "bea5d90d-dd88-4410-bf02-4bc33c0ef2f8",
+      "peer_result_id": "bdbcccfc-5db5-42b7-a256-8999d57cd0f0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address D301E mutation effects (C41-C42). OpenEval finds strong evidence for D301's specific role at Site II. Peer reviewers include these claims within broader mutagenesis support, emphasizing how mutations alter PUFA effects and support altered pore residue interactions.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "a59ae21c-2e38-44f0-9867-43733d2afdcf",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "1465314b-e3de-44ef-b337-0310b38fbce0",
+      "peer_result_id": "0cd883eb-58e0-4f9c-87a7-e0a1008c4fc0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on comparative structural claims about KCNQ1 vs Shaker differences (C68-C71, C76-C78). Both evaluations find the structural comparisons and proposed explanation for differential PUFA sensitivity well-supported, though acknowledging speculative elements. No reviewer challenges these comparative interpretations.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "5d3ec992-30c3-414e-a578-c22cd1e68fed",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "36b23d0a-cf58-4002-9e59-b76e73ae3371",
+      "peer_result_id": "fa7191f2-6962-4044-9864-1e46e3cb802e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on structural analysis of selectivity filter conformations and K+ dependence (C82-C84). Both evaluations find the analysis of published structures and K+ dependence arguments well-supported. Peer reviewers implicitly accept these supporting arguments through acceptance of overall selectivity filter mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "4baeb8de-11dc-48b8-aa9b-490d9c6762ba",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "5a6a6e24-980e-4908-b7ad-b8100c2ebb21",
+      "peer_result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on background claims about cardiac electrophysiology, LQTS, and IKs channels (C1-C5, C14-C19). OpenEval finds these well-established facts with appropriate citations. Peer reviewers accept these as established knowledge and appropriate context without question. Peer R8 covers broader background including C6-C11, C20-C27.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "3abba09c-598a-47bd-bbdb-225ee597a86c",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "980222e1-a0bf-42e0-9733-231de9248ce5",
+      "peer_result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on prior published work on PUFA effects (C6-C9, C22-C27). OpenEval finds these claims accurately summarize prior work with appropriate citations. Peer reviewers explicitly acknowledge the established two-mechanism framework for PUFA effects on KCNQ1 channels, framing the study's contribution appropriately.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    },
+    {
+      "id": "c4d496be-2d7c-4267-a4f5-dfe34c769acf",
+      "submission_id": "2c768176-ec54-47b7-8c44-b4dbd9f05c84",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "46b56017-f9dc-4957-b703-9e4cf192f444",
+      "peer_result_id": "f63d087b-bdfc-4f2e-a114-14af6c9b14f8",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on established knowledge about KCNQ1/KCNE1 structure and function (C10-C11, C20-C21). OpenEval finds these supported by appropriate citations and confirmed by single-channel data. Peer reviewers accept these as part of the established background context for the study.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:19:03.946676Z"
+    }
+  ]
+}

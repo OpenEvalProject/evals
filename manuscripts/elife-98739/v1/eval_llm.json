@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The study applied an unsupervised Hidden Markov Model (HMM) to whole-night fMRI data from 12 non-sleep-deprived participants across two consecutive nights, identifying 21 recurring brain states without prior knowledge of PSG-based sleep staging. The HMM was trained on night 2 data using 13 principal components (retaining 40.7% variance) from 300 ROIs, with model selection based on multiple evaluation metrics converging at K=21 states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C14, C85-C89, and C105-C111 collectively provide comprehensive methodological details and results. The study design is clearly described with appropriate sample size for exploratory analysis, the HMM methodology is well-documented, and model selection criteria are explicitly stated with convergent evidence from multiple metrics (free energy, fractional occupancy, lifetime, Wilk's \u039b) all supporting K=21. The unsupervised nature of the analysis (C13) strengthens the validity of findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C34",
+      "C74",
+      "C90"
+    ],
+    "result": "The HMM model trained on night 2 data successfully generalized to night 1 data, demonstrating high reproducibility with a significant correlation (r=0.94, p<0.0001) between sleep stage distributions of HMM states across nights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C34, C74, and C90 provide converging evidence for reproducibility. The high correlation coefficient (r=0.94, p<0.0001) between nights is statistically significant and represents strong effect size. The semi-supervised prediction approach (training on night 2, testing on night 1) is methodologically sound for assessing generalizability, though the claim of 'unprecedented reproducibility' (C3) is somewhat hyperbolic without systematic comparison to prior work.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The 21 HMM states showed specific associations with PSG-defined sleep stages: 13 states were most frequently associated with N2, 2 states with N3 (states 8 and 10), 2 states with REM (states 6 and 19), 3 states with Wake (states 13, 16, 20), 1 state with undefined stage (state 4), and notably, no states were predominantly linked to N1 sleep, though state 11 was active during both N1 and N2.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C21 provide a comprehensive mapping of HMM states to PSG stages. The findings are internally consistent and supported by the data presented in Figure 2. The absence of N1-specific states (C20) is acknowledged and discussed in relation to N1's poor inter-rater reliability (C58-C59), providing theoretical support. The disproportionate number of N2-related states (13/21) aligns with N2 comprising 43% of total sleep time (C82).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C56",
+      "C57"
+    ],
+    "result": "Modularity analysis of transition probabilities identified five distinct modules: N3 module (containing 2 N3-related states and 1 undefined state with highest slow-wave density), REM module (states 6 and 19), Wake module, and two N2 modules characterized as 'light-N2' (higher transition probabilities to REM and Wake) and 'deep-N2' (low transition probabilities to REM and Wake).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 and C56-C57 describe the modularity analysis results with clear characterization of each module. The analysis was conducted independently of PSG staging (using only transition probabilities), yet modules aligned with PSG stages, providing convergent validity. The subdivision of N2 into light and deep modules is supported by transition probability patterns and aligns with prior literature (C60). The N3 module characterization is validated by slow-wave density data (C57).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Two functionally distinct REM-related states were identified: state 19 (interpreted as tonic REM) showed higher transition probability to Wake states, while state 6 (interpreted as phasic REM) occurred later in the night, had stronger functional connectivity, and occurred later within fMRI runs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C29, C61-C62 provide empirical observations about the two REM states, while C63-C66 provide interpretations linking these to tonic/phasic REM. The empirical distinctions (transition probabilities, timing, connectivity strength) are well-supported by data. However, the interpretation as tonic vs. phasic REM (C65-C66) is speculative and acknowledged as such ('might represent'). Without direct measurement of rapid eye movements or other phasic REM markers, this interpretation remains plausible but unconfirmed. The alignment with prior literature (C63-C64) provides theoretical support but not direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Within the Wake module, three wake-related states were differentiated: state 13 represented post-sleep wakefulness (occurring later in night and run, with higher physiological variation and lower transition probability to N2/N3 states), while states 16 and 20 represented pre-sleep wakefulness.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide multiple converging lines of evidence for distinguishing pre- and post-sleep wake states: temporal characteristics (C30), physiological measures (C32), and transition probabilities (C33). The interpretation is data-driven and supported by multiple independent measures. The distinction is functionally meaningful and represents a refinement beyond standard PSG staging.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C49",
+      "C50"
+    ],
+    "result": "HMM states had an average duration of 12 seconds (range 8.7-36 seconds), providing finer temporal resolution than PSG's 30-second epochs. N2-related states tended to have shorter lifetimes compared to N3, REM, and Wake states (with exception of state 13).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C23 and C49-C50 provide clear temporal characterization of HMM states. The data demonstrate that HMM analysis achieves temporal resolution at the fMRI TR level (3s) with average state duration of 12s, representing a 2.5-fold improvement over PSG's 30s epochs. The pattern of shorter N2 state lifetimes is empirically supported and referenced to Figure 3\u2014figure supplement 3. This represents a clear methodological advantage over PSG.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C67",
+      "C92"
+    ],
+    "result": "Wake-related states showed classic anticorrelation between default mode network (DMN) and its anti-correlated networks (ACNs), while sleep-related states showed same-direction activation. Functional connectivity between DMN and salience/control networks was negative during wake but positive during N3 sleep, suggesting these connections may play a critical role in sleep-wake transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C35-C38 provide clear empirical observations about activation and connectivity patterns that are well-supported by the data in Figures 4 and supplements. However, claims C67 and C92 about the 'critical role' of DMN-ACN connections in sleep transitions are interpretive and speculative (C67 explicitly states 'it is plausible'). While the observed patterns are consistent with this interpretation, causality is not established, and alternative explanations are not systematically ruled out. The interpretation is reasonable but requires validation through additional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "Functional connectivity between visual network and other sensory networks (auditory, somatomotor) was positive during wake but negative during sleep, with REM state 6 showing an exception with wake-like positive correlations. During REM states, basal ganglia and thalamus showed strong positive correlation with somatomotor and auditory networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C41 describe sensory network connectivity patterns that are clearly documented in the data (Figure 4\u2014figure supplement 2). The general pattern of positive wake/negative sleep connectivity is well-established, and the REM state 6 exception is explicitly noted and aligns with its interpretation as phasic REM with higher brain activity. The subcortical-sensory connectivity during REM is a novel observation supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C42",
+      "C91"
+    ],
+    "result": "HMM state time courses showed high similarity to PSG sleep stage time courses while providing more detailed information. Functional connectivity patterns of states belonging to the same module or related to the same PSG sleep stage were highly correlated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42 and C91 describe the relationship between HMM states and PSG stages. The high correlation of FC patterns within modules (C42, Figure 4\u2014figure supplement 3) provides internal validation of the modularity analysis. The similarity between HMM and PSG time courses (C91, Figure 3\u2014figure supplements 1-2) demonstrates that HMM captures PSG-relevant information while adding finer temporal detail. This supports the validity of the HMM approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Motion parameters decreased progressively from wake to light sleep to deep sleep, with mean motion ranging from 0.035 (N3/REM) to 0.057 (Wake). Data retention after censoring was high across all stages (92.7-99.2%), with lowest retention during wake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 provide motion quality control data showing expected patterns (less motion during deeper sleep) and high data retention rates. This addresses a potential concern about data quality during extended sleep scanning. The explicit reporting of motion statistics and censoring rates demonstrates methodological rigor. Previous work (C102) established that motion during sleep scans is comparable to resting-state scans, providing additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C46",
+      "C47"
+    ],
+    "result": "EEG spectral analysis showed N3-related states (8 and 10) had highest Delta power on both nights, and the Deep-N2 module had higher Theta and Alpha power compared to the Light-N2 module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C47 provide EEG validation of the fMRI-derived HMM states. The highest Delta power in N3 states is expected and validates the state assignments. The spectral differences between Deep-N2 and Light-N2 modules provide independent electrophysiological support for the functional subdivision of N2 sleep identified through fMRI transition probabilities. This cross-modal validation strengthens the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C48",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The HMM approach offers several advantages over PSG: finer temporal resolution (3s vs 30s epochs), superior spatial resolution (300 ROIs covering whole brain including subcortical regions vs limited scalp electrodes), automated and objective analysis eliminating inter-rater reliability issues, and explicit modeling of state transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C53 articulate clear methodological advantages of the HMM approach. Each advantage is well-supported: temporal resolution is demonstrated empirically (C49-C50), spatial coverage is inherent to fMRI methodology (C51), automation reduces subjectivity (C52, supported by citations on PSG reliability issues), and transition modeling is a core HMM feature (C53). These represent genuine improvements over PSG, though PSG retains advantages not discussed (e.g., direct neural measurement, clinical standardization).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The study acknowledges limitations including arbitrary selection of 13 principal components (40.7% variance), small sample size (n=12) despite large data per participant (~16 hr), and need for validation in diverse populations including aging and clinical groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C76 appropriately acknowledge study limitations. The PCA dimensionality choice (C73) is acknowledged as arbitrary but validated by successful generalization (C74). The small sample size (C75) is a genuine limitation, though partially offset by extensive within-subject data. The call for validation in other populations (C76) is appropriate and honest. These limitations do not invalidate the findings but appropriately constrain their generalizability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The HMM method is not limited to fMRI and could be applied to EEG data. The optimal number of sleep states is not fixed and likely depends on sample size and methodological factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C79 provide appropriate caveats about method generalizability and model selection. The potential application to EEG (C77) is reasonable given HMM is a general time-series method, supported by citations of EEG-based sleep state studies (C78). The acknowledgment that K=21 is not definitive (C79) is scientifically appropriate, as optimal model complexity depends on multiple factors. These represent honest limitations rather than weaknesses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "The current study's 8-hour recordings captured full sleep cycling including REM stages and natural N2 composition (43% of sleep), addressing limitations of prior work (Stevner et al., 2019) which used only 1-hour recordings that lacked REM and complete sleep cycles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide valid comparison to prior work. The limitation of 1-hour recordings (C80-C81) is accurately stated\u2014REM typically occurs 90 minutes after sleep onset (C6), making it impossible to capture in 1-hour recordings. The N2 composition in the current study (43%, C82) aligns with natural sleep architecture, while Stevner et al. had equal stage durations, suggesting incomplete sleep cycles. This represents a genuine methodological advance.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The salience network (SAL) is considered crucial for cognitive control and mediates interactions between externally-focused (FPN) and internally-focused (DMN) networks. During sleep, SAL's mediating function may be temporarily suspended for restoration, supported by observations of SAL disruptions following sleep deprivation and in insomnia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C68-C69 accurately describe established knowledge about SAL function (supported by citations). However, claim C70 about SAL suspension during sleep is explicitly speculative ('it is plausible'). Claims C71-C72 cite evidence of SAL disruption in sleep disorders, which is consistent with but does not prove the restoration hypothesis. The interpretation is theoretically coherent but lacks direct evidence from the current study. This represents reasonable speculation requiring future validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "The enriched understanding of brain dynamics during sleep holds potential for identifying biomarkers for sleep disorders affecting sleep-stage transitions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C93 is explicitly speculative ('holds the potential') about future clinical applications. While the detailed characterization of sleep states and transitions could theoretically inform biomarker development, no clinical validation is provided in the current study. The claim is reasonable as a future direction but represents aspiration rather than demonstrated utility. Clinical application would require validation in patient populations, which the authors acknowledge is needed (C76).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C112",
+      "C113"
+    ],
+    "result": "The study followed approved IRB protocols with informed consent. Participants maintained regular sleep for two weeks pre-experiment (verified by wearables) without sleep deprivation. Data acquisition used 3T fMRI (3s TR, 2.5mm resolution, 50 slices) and 64-channel EEG (5kHz), with standard preprocessing including artifact correction, motion censoring, and PSG scoring following AASM criteria.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C104 and C112-C113 provide comprehensive methodological details meeting standards for reproducibility. Ethical approval is documented (C94), participant preparation is described (C95-C96), acquisition parameters are specified (C97-C99), and preprocessing steps are detailed (C103-C104). The 12/16 completion rate (C100) and experimental interruptions (C101) are transparently reported. Motion quality is addressed (C102). Modularity analysis methods are cited (C112). These details enable assessment and replication of the work.",
+    "result_type": "MINOR"
+  }
+]

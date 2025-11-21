@@ -1,0 +1,326 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "The study used CODEX imaging with a 54-antigen antibody panel to analyze approximately 2000 islets from a cohort of 13 donors (2 AA+, 8 T1D, 3 non-T1D controls), generating a dataset of 7.0\u00d710^6 cells. Twenty-one cell types were identified using Leiden clustering and manual merging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C17 provide a comprehensive description of the study design, cohort composition, and analytical approach. The methodology is clearly stated with specific numbers for cohort size, imaging area, cell counts, and cell type identification. The cohort selection rationale (C12) is appropriately justified given the rarity of insulitis cases.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "\u03b2-cell frequencies were significantly reduced in T1D patients with 0-2 years disease duration compared to controls, with minimal \u03b2-cell mass remaining in patients with 5-6 years duration. PCA analysis separated donors into distinct groups based on non-endocrine cell type abundances in both islet and extra-islet compartments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C21 describe \u03b2-cell loss progression and cellular composition differences between T1D and control samples. The statistical findings (C18) and PCA separation (C20) are clearly stated with reference to figures. The conclusion that both compartments are distinct (C21) logically follows from the PCA results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "Pseudotime analysis using PAGA identified a single, non-branching trajectory of insulitis progression from Normal to Inflamed to Insulin-Depleted islets, characterized by increasing HLA-ABC expression, CD8+T cells, and macrophage/DCs. Immune cells specifically targeted islets as demonstrated by enrichment analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C27 describe the pseudotime reconstruction of islet pathogenesis. The methodology (PAGA) is appropriate for trajectory inference, and the three-stage classification (C24) is objectively defined using internal Leiden clustering. The spatial enrichment analysis (C26) provides strong evidence for islet-specific targeting. The consistency with prior work (C27) strengthens confidence in the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "IDO expression on islet vasculature was specifically associated with inflamed islets and correlated with increased CD8+T cell infiltration and elevated HLA-ABC expression in \u03b2-cells, but not with macrophage/DC abundance. This suggests IDO may function as an immunoregulatory checkpoint in T1D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C36 describe a novel finding regarding IDO expression patterns. The observations are well-documented with specific localization (C29-C30), quantification (C31), and statistical associations (C33-C35). The conclusion that IDO is an immunoregulatory checkpoint (C36) is appropriately presented as speculative ('may be') given the correlative nature of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "High-dimensional spatial phenotyping using a neural network identified heterogeneous CD8+T cell activation profiles in islets, with four distinct inflamed islet sub-clusters (I-IV) characterized by different combinations of functional markers including CD45RA, CD45RO, PD-1, LAG-3, Granzyme-B, ICOS, and CD57.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C48 describe comprehensive CD8+T cell phenotyping. The neural network approach (C37) provides high-quality marker quantification, and the identification of four sub-clusters (C43-C47) is clearly documented with specific marker profiles. The conclusion of heterogeneous activation profiles (C42, C48) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "Insulitis sub-states are conserved across T1D patients, with each donor possessing islets from multiple sub-clusters. The specific CD8+T cell activation profiles characterizing each sub-cluster were enriched within islets compared to surrounding tissue and were independent of other cell type abundances.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 establish that insulitis sub-states are patient-independent but islet-specific. The observation that each donor has multiple sub-clusters (C49) rules out donor-level factors (C50). The spatial enrichment analysis (C52-C53) and lack of association with other cell types (C54-C56) are clearly demonstrated, though the mechanism remains unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Insulin-Depleted + Immune islets showed altered CD8+T cell composition compared to Inflamed islets, with higher frequencies of CD45RA+ and TOX+ T cells (which were never co-expressed), suggesting that the activation state or persistence of these populations depends on insulin expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60 describe differences in T cell populations between Inflamed and Insulin-Depleted islets. The observations are clearly stated (C57-C59), and the conclusion about insulin-dependence (C60) is a reasonable inference from the data, though the mechanism is not established.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Lobular patterning of insulitis varies widely across T1D cases (ICC 0.17-0.74). Hierarchical linear modeling identified three extra-islet cell types (vasculature, nerves, Granzyme-B+/CD3- cells) significantly associated with lobules containing late-pseudotime islets, while CD8+T cells and macrophage/DCs were not associated with lobular patterning.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C71 describe lobular patterning analysis using appropriate statistical methods (HLM). The ICC quantification (C64-C65) demonstrates variability across cases. The identification of three associated cell types (C66-C69) is statistically supported, and the counterintuitive finding about CD8+T cells (C70) adds credibility. The speculative conclusion (C71) is appropriately cautious.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Cellular neighborhood analysis identified 75 CNs, with the top three enriched in T1D being (CD8+T cells|B cells), (Macrophage|Stromal Cells|B cells), and (Vasculature|B cells). The (CD8+T cells|B cells) CN was predominantly adjacent to the other two CNs but lacked segregated T and B cell zones characteristic of mature TLSs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C78 describe cellular neighborhood identification and characterization. The methodology (C72) is clearly explained, and the identification of B cell-enriched CNs (C74) with specific spatial relationships (C75) is well-documented. The observation that these structures lack mature TLS features (C77) is appropriately noted.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The (CD8+T cells|B cells) CN represents immature TLSs based on the presence of PNAd+ HEVs and B cell aggregation without compartmentalized zones. CD45RA+/CD62L+/CD8+T cells were observed near PNAd+ vasculature, with CD45RA enriched threefold in this CN, suggesting these structures may support naive T cell entry into the pancreas.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C83 characterize the (CD8+T cells|B cells) CN as immature TLSs. The identification of HEVs (C79) and the classification as immature TLSs (C80) are appropriately based on established criteria. The observations of CD45RA+/CD62L+ T cells (C81, C83) support the hypothesis about T cell entry (C82), though this remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Immature TLSs were found both adjacent and distant from islets, with fewer than half adjacent to islets. Islet-adjacent CD45RA+/CD62L+/CD8+T cells suggest migration from TLSs to islets. In one donor, regions with Insulin-Depleted islets were enriched in immature TLSs, implicating these structures in islet pathology even when not adjacent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C89 describe the spatial relationship between immature TLSs and islets. The quantification of adjacency (C85) and lack of compositional differences (C86) are clearly stated. The inference about T cell migration (C87) is reasonable but speculative. The spatial correlation in one donor (C88-C89) provides suggestive but limited evidence for the role of distant TLSs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study confirms the single trajectory model of insulitis proposed by Damond et al. and reports the novel finding that IDO+ vasculature is present specifically in inflamed islets with higher CD8+T cell frequencies. The loss of IDO on vasculature could be a prerequisite for \u03b2-cell death, and leveraging this checkpoint has shown promise in transplantation studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 summarize key findings and place them in context. The consistency with prior work (C90) and novelty of the IDO finding (C91-C92) are clearly stated. The speculative conclusion about IDO loss (C93) is appropriately cautious. The discussion of IDO expression discrepancies (C95-C96) demonstrates critical evaluation of conflicting literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "This study performed the first high-dimensional spatial phenotyping of CD8+T cells in T1D islets, finding that most T cells were antigen-experienced with heterogeneous populations including CD45RA+/CD69+ cells and LAG-3+/Granzyme-B+/ICOS+ cells. Only a small population of islets had Granzyme-B-expressing T cells, suggesting alternative \u03b2-cell elimination mechanisms may be involved.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 highlight the novelty and key findings of the T cell phenotyping. The claim of being 'first' (C97) is supported by the comprehensive marker panel and spatial resolution. The observations about T cell populations (C98-C101) are well-documented. The speculation about alternative mechanisms (C102) is appropriately cautious given the limited Granzyme-B expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111"
+    ],
+    "result": "The insulitis trajectory comprises four sub-clusters present in all T1D donors, with T cell activation profiles specific to the islet microenvironment. Lobules enriched in \u03b2-cell-depleted islets were also enriched in nerves, vasculature, and Granzyme-B+/CD3- cells (possibly CD56dim NK cells). The distinct cell types linked to islet invasion versus lobule patterning suggest crosstalk between compartments may be required for complete islet destruction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C111 synthesize findings about insulitis sub-states and lobular patterning. The observations are well-supported by the data (C103-C107), and the speculation about NK cells (C108) is appropriately cautious. The conclusion about compartment crosstalk (C110) is a reasonable inference, though the therapeutic implication (C111) is speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "The study identified immature TLSs away from islets where CD45RA+/CD8+T cells aggregate, and an inflamed islet sub-cluster characterized by CD45RA+ T cells. Mouse studies showing that blocking lymph node egress reduced TLS size and halted diabetes suggest that therapeutic targeting of immune cell trafficking to TLSs could help mitigate human T1D autoimmunity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C112-C116 summarize TLS findings and therapeutic implications. The observations (C112-C113) are well-documented. The mouse data (C114) provides supporting evidence, though cross-species translation is uncertain. The therapeutic speculation (C115) is appropriately cautious. The summary statement (C116) accurately reflects the study's integrative approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124"
+    ],
+    "result": "The study has several limitations including small cohort size (due to rarity of insulitis cases), inability to balance confounding factors (drug use, ICU duration, BMI), limited AA+ cases with insulitis, failure to identify myeloid heterogeneity (likely due to segmentation difficulties), and use of 2D sections which could affect adjacency relations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C117-C124 provide an honest assessment of study limitations. The cohort size limitation (C117-C119) is appropriately justified by the rarity of insulitis cases. The AA+ case limitation (C120-C121) is clearly stated. The myeloid analysis limitation (C122-C123) acknowledges technical challenges. The 2D section limitation (C124) is a standard caveat for tissue imaging studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C125",
+      "C126"
+    ],
+    "result": "Using a data-driven approach, the study mapped conserved sub-states of insulitis and integrated the spatial pathology of islet and extra-islet regions into a single model of T1D pathogenesis. The tools and computational pipelines developed will enable further investigation of immune pathology at the tissue scale that may lead to therapies for T1D.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C125-C126 provide appropriate summary statements. The claim about mapping sub-states and integrating compartments (C125) accurately reflects the study's achievements. The statement about future utility (C126) is appropriately speculative about therapeutic development while being confident about the methodological contributions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "The introduction establishes the clinical significance of T1D (affecting 8 million individuals with 0.5 million new diagnoses annually), the limited efficacy of current immunotherapies including teplizumab, and the availability of human pancreatic tissue through nPOD. Prior studies have documented increased extra-islet immune cells, elevated HLA-DR on ductal cells, peri-insulitis, variable islet infiltration rates, and TLSs in T1D patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C9 provide appropriate background context with proper citations. The epidemiological data (C1), therapeutic landscape (C2-C3), and tissue resource (C4) establish the study's rationale. The summary of prior extra-islet findings (C5-C9) appropriately motivates the study's focus on both compartments. All claims are supported by citations to relevant literature.",
+    "result_type": "MINOR"
+  }
+]

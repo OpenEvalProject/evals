@@ -1,0 +1,291 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Deletion of ahcobB and ahcobQ in A. hydrophila produces distinct phenotypic effects. While \u0394ahcobB did not affect hemolytic or swarming ability but sharply increased biofilm formation, \u0394ahcobQ did not affect hemolytic ability but significantly increased swarming and decreased biofilm formation, suggesting different biological roles for these proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C14 present consistent phenotypic data from deletion mutants shown in Figure 1, with appropriate controls and statistical analysis (C13, C14 show p<0.005). The inference in C15 that CobB and CobQ play different roles is well-supported by the contrasting phenotypes, particularly the opposite effects on biofilm formation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "AhCobB and AhCobQ belong to different protein families. AhCobB is a NAD+-dependent sirtuin with a conserved SIR2 domain homologous to bacterial CobB and human sirtuins, while AhCobQ shares an AAA_31 ATPase domain with cobalamin biosynthesis proteins and is homologous to cobyric acid synthase but not to CobB sirtuin family proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C19 and C63-C65 are supported by bioinformatics analysis shown in Figure 2A-B and database annotations. The homology analyses clearly demonstrate that despite similar naming, these proteins belong to distinct families with different conserved domains.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "AhCobQ exhibits NAD+-, Zn2+-, and ATP-independent lysine deacetylase activity. Deletion of either ahcobQ or ahcobB increased whole protein lysine acetylation levels. In vitro assays demonstrated that AhCobQ deacetylated Kac-BSA regardless of NAD+ or Zn2+ presence, was not inhibited by the sirtuin inhibitor NAM or metal chelator EDTA, and did not require ATP for activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 are well-supported by multiple complementary experiments (dot blot, western blot) shown in Figure 2C-H. The controls with AhCobB (NAD+-dependent) and AhAcuC (Zn2+-dependent) provide appropriate comparisons. The independence from cofactors is demonstrated through systematic testing with inhibitors and chelators.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C30"
+    ],
+    "result": "AhCobQ functions as a deacetylase rather than a hydrolase. LC MS/MS analysis showed that at least 15 Kac peptides in BSA had significantly decreased MS intensities after AhCobQ treatment, and synthetic peptide experiments confirmed that AhCobQ removes acetyl groups without hydrolyzing peptides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C30 are supported by LC MS/MS data (Supplementary file 1a) and synthetic peptide experiments shown in Figure 3. The MS2 spectra clearly demonstrate deacetylation without peptide hydrolysis, providing strong evidence for the deacetylase mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C4",
+      "C34"
+    ],
+    "result": "The KDAC activity of AhCobQ is located in an unidentified domain from amino acids 195-245. Truncation studies showed that the 179-264 aa fragment retained deacetylase activity while the 1-179 aa fragment did not. This KDAC domain does not share homology with Soj protein, site-determining protein, or ParA family protein in A. hydrophila.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33, C4, and C34 are supported by systematic truncation analysis shown in Figure 4. Multiple truncated proteins were tested (12 total), and the results consistently narrow the active domain to the 195-245 aa range. The bioinformatics analysis confirms this domain is distinct from homologous regions in related proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C35"
+    ],
+    "result": "AhCobQ represents a novel type of KDAC with no homology to currently known KDACs. The KDAC domain (195-245 aa) shares homology with several prokaryotic species, predominantly marine prokaryotes, but no homologous proteins were found in eukaryotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6 and C35 are supported by comprehensive bioinformatics analysis including PSI-BLAST searches shown in Figure 5. The phylogenetic analysis demonstrates homology restricted to specific bacterial genera, with no eukaryotic homologs identified, supporting the novelty of this KDAC type.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Quantitative acetylome analysis revealed distinct substrate specificities for three KDACs in A. hydrophila. Deletion of ahcobQ, ahcobB, and ahacuC led to increased abundances at 52, 370, and 197 Kac sites, respectively, with both unique and overlapping substrates. Only 531 Kac peptides (10.28% of 3163 total) were directly regulated by these three deacetylases, suggesting the presence of additional unknown KDACs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C44 are supported by comprehensive quantitative acetylome data shown in Figure 6 with appropriate statistical analysis (fold change >1.5, p<0.05). The Venn diagram analysis clearly demonstrates both unique and shared substrates. The inference about additional KDACs (C44) is reasonable given that ~90% of Kac sites are not regulated by the three known KDACs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C45"
+    ],
+    "result": "KEGG pathway analysis showed that biosynthesis of amino acids and antibiotics was enriched in the unique upregulated Kac proteins in the \u0394ahcobQ strain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C45 is supported by KEGG pathway enrichment analysis shown in Figure 6B. The pathway analysis is appropriate for the dataset and provides functional context for AhCobQ substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C76"
+    ],
+    "result": "AhCobQ deacetylates both common and specific lysine-acetylated sites compared to other KDACs. Validation experiments confirmed that AhCobQ deacetylates sites common to AhCobB and AhAcuC, as well as unique sites, and co-regulates the same Kac sites on ArcA-2 with AhCobB.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67 and C76 are supported by validation experiments shown in Figure 7 using site-specific acetylation. The western blot data clearly demonstrate both unique and shared substrate specificity, with appropriate controls for each KDAC tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C8",
+      "C90",
+      "C91"
+    ],
+    "result": "AhCobQ positively regulates ICD enzymatic activity by deacetylating K388. Western blot showed that AhCobQ, but not AhCobB or AhAcuC, significantly deacetylated ICD at K388. Acetylation at K388 decreased NADPH production, and addition of AhCobQ significantly increased the enzymatic activity of K388-acetylated ICD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53, C8, C90-C91 are supported by multiple complementary experiments shown in Figure 8, including western blot validation of deacetylation specificity and enzymatic activity assays measuring NADPH production. The data show statistical significance (p<0.001) and appropriate controls with other KDACs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C77"
+    ],
+    "result": "AhCobQ has specific protein substrates in common with other known KDACs, and the cooperation of these KDACs may play an important role in maintaining cellular acetylation homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C77 are supported by the quantitative acetylome data (Figure 6) showing overlapping substrates and validation experiments (Figure 7) demonstrating co-regulation of specific sites. The inference about cooperation in acetylation homeostasis is reasonable based on the observed substrate overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "9.9% of acetylated proteins (312/3164 Kac proteins) were regulated by ahcobB, consistent with the proportion in E. coli cobB mutant and supporting that CobB is the predominate deacetylase in some bacterial species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C75 are supported by quantitative acetylome data and appropriate citations (Weinert et al., 2013; AbouElfetouh et al., 2015). The comparison to E. coli provides context for the findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Different KDACs regulate specific Kac sites on the same protein. K331 and K449 of GyrB were deacetylated by AhCobQ and AhCobB, respectively, representing the first evidence of site-specific regulation by different KDACs on the same protein in prokaryotic cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C81 are supported by quantitative acetylome data. However, C82's claim of being \"first evidence\" is based on the authors' knowledge of the literature without systematic review. While the finding is novel and well-supported experimentally, the priority claim should be viewed cautiously.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "There is conflicting CobB annotation in UniProt database, with two distinct functions: NAD-dependent protein deacylase and ATP-dependent a,c-diamide synthase. In A. hydrophila ATCC 7966, CobB annotation is specific for NAD-dependent protein deacylase, and there is no a,c-diamide synthase homolog. The role of AhCobQ is unknown because A. hydrophila may import rather than synthesize cobalamin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C73 are supported by database analysis and appropriate citations (Galperin and Grishin, 2000; Seshadri et al., 2006). The discussion of annotation conflicts provides important context for understanding the protein nomenclature and functional predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "Structural analysis shows that GyrB K331 is located in the ATPase domain responsible for supercoiling DNA, while K449 is located in the Toprim domain required for interaction with GyrA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 are supported by 3D structure prediction and citation to Brino et al., 2000. The structural context provides mechanistic insight into the differential regulation of these sites.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ICD is a key enzyme in the TCA cycle that affects bacterial biofilm formation and virulence. In E. coli K12, there are at least 15 Kac sites on ICD with known regulatory effects, and only four sites are deacetylated by CobB. In A. hydrophila, at least ten Kac sites were identified in ICD protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 provide established background knowledge about ICD acetylation (supported by citation to Venkat et al., 2018) and new data from this study. The comparison between E. coli and A. hydrophila ICD acetylation provides important context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Background on lysine acetylation and deacetylases: Kac modifications play crucial roles in cellular functions. In prokaryotes, only two types of KDACs (Zn2+- or NAD+-dependent) have been confirmed. In eukaryotes, there are at least 18 types of HDACs in four classes in mammals, with sirtuins being NAD+-dependent and types I, II, and IV being Zn2+-dependent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2 and C54-C62 provide established background knowledge supported by appropriate citations. These claims set the context for the novelty of the findings but are not primary results of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C92"
+    ],
+    "result": "AhCobQ represents a distinctive type of KDAC with significant roles in bacterial biological functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C92 is a summary conclusion supported by the collective experimental evidence presented throughout the study, including the novel cofactor-independent mechanism, unique domain structure, specific substrate profile, and functional regulation of ICD.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,336 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The gut microbiome reduces the rate of protein uptake in LREs. GF larvae accumulated mCherry faster than CV larvae, with peak uptake occurring at 40 min in GF vs 60 min in CV larvae. By 1 hr post-gavage, GF larvae had significantly higher mCherry uptake than CV larvae, though CV larvae eventually reached similar levels by 5 hr. This effect was microbial density-dependent, requiring at least 3\u00d710^6 CFU/mL to significantly reduce uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C37 provide comprehensive kinetic data from mCherry and Lucifer Yellow gavage experiments with appropriate statistical analyses (two-way ANOVA). The experiments include proper controls showing equivalent luminal concentrations and no mCherry degradation by microbes (C31-C32), ruling out alternative explanations. The dose-response relationship (C36-C37) strengthens the causal interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "The gut microbiome reduces the rate of protein degradation in LREs. Using a pulse-chase assay with mTurquoise, the authors demonstrated that protein degradation occurred significantly faster in GF compared to CV LREs over a 1 hr imaging period.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 describe a well-designed pulse-chase experiment with appropriate statistical analysis (simple linear regression, p=0.0167). The methodology properly controls for uptake by flushing luminal protein before measuring degradation. However, only one representative experiment is shown in Figure 2, though the text mentions replication with fixed larvae.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Single-cell RNA sequencing revealed 17 intestinal cell clusters including two LRE populations (anterior and posterior), with similar proportions in GF and CV conditions except for a microbiome-dependent Cloaca 3 cluster. The Cloaca 3 cluster, present only in CV larvae, is enriched in genes related to host defense, bacterial response, and iron transport. LRE cell numbers were not significantly different between GF and CV larvae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C50 are supported by comprehensive scRNA-seq analysis with appropriate clustering methods (Seurat) and validation experiments (DQ-red BSA gavage with quantification, Figure 3E). The identification of Cloaca 3 as microbiome-dependent is well-supported by GO term analysis and marker gene expression. Sample sizes are adequate (131-381 LREs per condition).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Multiple intestinal cell types beyond LREs internalize mCherry protein, including ileocytes, goblet, acinar, enteroendocrine, immune, and best4/otop2 cells. The microbiome increased the proportion of mCherry-positive cells in several secretory cell types (enteroendocrine +25%, goblet +11%, acinar +8%) and neurons (+13%). mCherry-positive non-LRE cells express a subset of LRE-associated uptake machinery genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C64 are supported by scRNA-seq analysis of mCherry-positive cells across all clusters. The differential gene expression analysis appropriately identifies shared and distinct transcriptional programs. However, the functional significance of protein uptake in non-LRE cells remains unclear, as the authors note these cells were not labeled by DQ-red BSA (which marks lysosomal degradation).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Anterior and posterior LREs show distinct transcriptional profiles. Both express characteristic endocytic machinery (cubn, dab2, amn) and lysosome pathway genes. Anterior LREs show higher expression of bile salt transport genes (fabp6, slc10a2) and tryptophan metabolism genes (tdo2b, kmo, tdo2a, ddc), creating a gradient from anterior to posterior LREs. The two LRE populations also differ in peptidase expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C71 are supported by KEGG pathway analysis and gene expression data from scRNA-seq. The identification of regional differences is consistent with the functional heterogeneity observed in uptake kinetics. The gradient expression patterns are clearly visualized in UMAP projections and heatmaps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "The microbiome downregulates expression of several peptidase genes in posterior LREs, including cpvl (serine carboxypeptidase), ctsla (cysteine-type peptidase), and pm20d1.2 (amino acid hydrolase). These genes are predicted to localize to lysosomes and may contribute to the faster protein degradation rates observed in GF LREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 are supported by differential gene expression analysis from scRNA-seq (Figure 5F). The connection between gene expression and degradation rates (C76) is appropriately presented as speculative ('raise the possibility'), acknowledging this is correlative rather than causal evidence. The subcellular localization predictions are supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The microbiome stimulates posterior LREs to upregulate expression of genes involved in immune response to bacteria, including lrba, myd88, hsp90b1, jund, and ehd1b. These genes are involved in toll-like receptor signaling, prevention of bacterial overgrowth, LPS sensing, and inflammation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C81 are supported by differential gene expression analysis and appropriate citations for gene functions. The inference that these genes direct immune response to bacteria (C81) is reasonable given the known functions of the upregulated genes, though direct functional validation is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The microbiome stimulates expression of dopamine synthesis and signaling genes specifically in posterior LREs, including ddc (dopamine decarboxylase) and gnas (involved in dopamine receptor signaling). Posterior LREs were the only cell cluster showing significantly higher expression of these genes in CV compared to GF conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by scRNA-seq differential expression analysis with appropriate statistical testing. The specificity to posterior LREs (C85) strengthens the finding. However, the functional significance of dopamine synthesis in LREs is not explored experimentally.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The microbiome upregulates iron transport genes in LREs, including slc11a2 (iron influx), slc40a1/ferroportin (iron efflux), and meltf/melanotransferrin (iron binding and transport). This upregulation occurs in both anterior and posterior LREs and is also observed in the microbiome-dependent Cloaca 3 cluster.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C94 are supported by differential gene expression analysis from scRNA-seq. The gene functions are appropriately cited (C90-C92). The observation that melanotransferrin is a marker for Cloaca 3 (C93) provides additional support for a coordinated iron transport response to the microbiome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C95",
+      "C96"
+    ],
+    "result": "In response to microbial colonization, LREs upregulate genes involved in innate immunity, iron homeostasis, and dopamine synthesis/signaling pathways, while downregulating several peptidases that may be linked to reduced protein degradation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C96 appropriately synthesize the scRNA-seq findings from multiple prior claim groups. The connection between peptidase downregulation and reduced degradation (C96) is appropriately qualified as speculative. This represents a comprehensive summary of the transcriptional response of LREs to the microbiome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C98",
+      "C99",
+      "C101"
+    ],
+    "result": "Monoassociation experiments revealed that individual bacterial strains differentially affect LRE protein uptake. A. calcoaceticus (anti-inflammatory) only mildly reduced uptake and did not reduce endocytic machinery expression, while V. cholerae and A. caviae (pro-inflammatory) strongly reduced both LRE activity and endocytic expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C114 are supported by mCherry gavage experiments with appropriate statistical analyses (two-way ANOVA with reported p-values and sample sizes). The classification of strains as pro- or anti-inflammatory is supported by citations. This demonstrates strain-specific effects on LRE function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "V. cholerae colonization significantly reduces expression of endocytic machinery genes (dab2, cubn) and lysosomal protease genes (ctsh, ctsz) in LREs compared to GF larvae, while A. calcoaceticus does not significantly affect cubn or ctsz expression. This demonstrates that microbial colonization reduces protein uptake and degradation by modulating expression of endocytic and lysosomal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C121 are supported by quantitative HCR RNA-FISH with appropriate statistical analyses (two-way ANOVA). The spatial expression patterns along the LRE region are quantified. The differential effects of V. cholerae vs A. calcoaceticus align with their differential effects on uptake activity, supporting a mechanistic link.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "V. cholerae's effects on LRE uptake are mediated by local interactions with LREs rather than systemic effects. V. cholerae monoassociation did not affect fish growth, did not increase transcytosis (no change in pronephros signal), did not reduce luminal mCherry concentration, and required longer-term exposure (>30 min) to reduce uptake activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C154 provide comprehensive controls ruling out alternative mechanisms. The experiments appropriately test systemic effects (growth), transcytosis (pronephros signal), luminal availability (luminal concentration), and acute vs chronic effects (gavage timing). Statistical analyses are appropriate with reported p-values and sample sizes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Diet and LRE activity interactively affect the gut microbiome. Diet strongly affected microbiome composition in heterozygotes (p=0.001) but not in cubn mutants (p=0.18). Mutants had significantly different microbiomes than heterozygotes on low-protein (LP) diet (p=0.023) but not high-protein (HP) diet (p=0.34). LP-fed cubn mutants had significantly lower microbial richness than HP-fed mutants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C122-C127 are supported by 16S rRNA gene sequencing with appropriate statistical analyses (Bray Curtis distance, t-tests). The interactive effects between genotype and diet are clearly demonstrated. Sample sizes appear adequate (n=6-9 for richness analysis). The inference about combined effects (C127) is appropriately supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Diet and cubn mutation affect specific bacterial taxa. Gammaproteobacteria were more abundant in HP-fed heterozygotes, while LP-fed mutants were deficient in Alphaproteobacteria. Mutants had fewer differentially abundant taxa than heterozygotes. At the genus level, Pseudomonas was more abundant in HP-fed heterozygotes, Hassalia in LP-fed mutants, and Aeromonas in cubn mutants regardless of diet.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C133 are supported by 16S rRNA gene sequencing with appropriate differential abundance analysis (DESeq2) and reported adjusted p-values. The identification of Aeromonas enrichment in mutants (C133) is particularly important given prior results showing A. caviae reduces LRE uptake.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "Impaired LRE activity and dietary protein content interactively affect the microbiome, potentially creating a feedback loop. LP-fed cubn mutants developed a distinct microbiome with diminished richness. Aeromonas, which can reduce LRE protein uptake, was the only genus that proliferated in cubn mutants. This suggests that protein deprivation through impaired LRE activity may lead to proliferation of bacteria that further reduce protein uptake.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110, C134-C135 synthesize the 16S sequencing results and connect them to the monoassociation experiments. The proposed feedback mechanism (C110, C135) is appropriately presented as speculative but is supported by the observation that Aeromonas proliferates in mutants and A. caviae reduces uptake. This represents a key mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C136",
+      "C137",
+      "C138"
+    ],
+    "result": "The study reveals reciprocal interactions between LREs and the gut microbiome that impact host nutrition. The microbiome reduces rates of protein uptake and degradation in LREs and reduces expression of lysosomal protease genes. Specific bacteria (A. caviae, V. cholerae) reduce protein uptake and downregulate endocytic and protease genes. Impaired LRE activity and dietary protein content impact the microbiome composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C136-C138 appropriately synthesize the major findings of the study. Each component is supported by the detailed experimental results described in prior claim groups. This represents the core conclusion of the manuscript demonstrating bidirectional interactions between LREs and the microbiome.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "While microbes do not affect the number of LRE cells, they lower the expression of endocytic and protein digestion machinery in LREs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 are supported by multiple lines of evidence: LRE quantification showing no difference in cell numbers (Figure 3E), scRNA-seq showing similar proportions of LREs in GF and CV conditions, and differential gene expression analysis showing reduced expression of endocytic genes. This is a key finding distinguishing cell number from cell activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C139",
+      "C140",
+      "C142",
+      "C143",
+      "C146"
+    ],
+    "result": "The authors propose several speculative mechanisms for the observed microbiome effects on LREs: (1) downregulation of protein uptake may limit transepithelial transport of microbial products and dampen inflammation; (2) microbial suppression of absorptive gene expression may be a conserved theme across enterocyte populations; (3) tryptophan metabolism in LREs may participate in microbiome tolerance; (4) inflammation may affect LRE protein uptake; (5) iron transport by LREs may affect microbiome community composition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C139-C143, C146 are explicitly speculative proposals from the Discussion section. While these hypotheses are reasonable given the data (gene expression patterns, literature context), they lack direct experimental validation in this study. These represent important directions for future work but should not be considered established results.",
+    "result_type": "MINOR"
+  }
+]

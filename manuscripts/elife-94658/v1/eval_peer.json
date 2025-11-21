@@ -1,0 +1,102 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors performed TCR\u03b2 sequencing on 28 CRC patients to characterize TCR repertoire heterogeneity, finding variable clonotype numbers (433-27,749), CDR3 length distributions, and differences between MSI-H and MSS tumors. MSI-H tumors showed significantly lower TCR clonotype numbers compared to MSS tumors (2181 vs 5330, p=0.057), which the authors interpret as potential enrichment of neoantigen-reactive clonotypes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewers acknowledge the comprehensive patient data collection and TCR profiling as a strength of the study. One reviewer specifically notes 'The study meticulously collected and analyzed clinical data from 27 CRC patients, ensuring a robust foundation for research findings.' No concerns were raised about the TCR sequencing methodology or the characterization of repertoire heterogeneity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The authors analyzed binding features showing that immunogenic peptides had significantly higher prevalence of strong HLA binding (p<0.00001) and pHLA-TCR binding (p=0.086) compared to non-immunogenic peptides. Individual features showed PPVs of 68.5% (pHLA) and 64.3% (pHLA-TCR), while combining both features increased PPV to 76.9%. pHLA-TCR binding showed lower sensitivity but higher specificity than pHLA binding alone.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praised this analysis, noting 'The use of machine learning classifiers (RF, LR, XGB) and the combination of pHLA and pHLA-TCR binding predictions significantly enhance the model's accuracy in identifying immunogenic neoantigens, as evidenced by the high AUC values and improved sensitivity, NPV, and PPV.' No concerns were raised about these comparative binding analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C51"
+    ],
+    "result": "The authors developed a combined machine learning model integrating pHLA and pHLA-TCR binding that achieved AUC values of 0.82 (discovery) and 0.84 (validation), outperforming individual features (pHLA: 0.76/0.74; pHLA-TCR: 0.69/0.74). At >95% specificity, the combined model achieved 39.7% sensitivity, 87.7% NPV, and 65.9% PPV compared to lower values for single features. The model also showed superior ranking coverage scores (0.37) compared to individual features.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly endorsed the computational model performance, stating 'The use of machine learning classifiers (RF, LR, XGB) and the combination of pHLA and pHLA-TCR binding predictions significantly enhance the model's accuracy in identifying immunogenic neoantigens, as evidenced by the high AUC values and improved sensitivity, NPV, and PPV.' The computational predictions were accepted without methodological concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C52"
+    ],
+    "result": "The authors validated their combined model using ELISpot assays on 8 CRC patients (increased from 4 in the original submission), testing 44 peptides. The combined method identified 7 immunogenic peptides while NetMHCpan identified 3, with 6 patients showing at least one immunogenic peptide by the combined method. The combined method achieved a ranking coverage score of 0.04 versus -0.37 for NetMHCpan. Four validated neoantigens were novel and not previously reported in public databases.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor explicitly states that 'the experimental validation of the computational predictions with actual immune responses is still limited, despite the increase in sample size from 4 to 8 in this revision.' While reviewers praised the experimental validation approach ('The use of experimental validation through ELISpot assays adds a practical dimension to the study'), the editor's concern about limited validation indicates the evidence remains incomplete for fully supporting the primary claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C55",
+      "C56"
+    ],
+    "result": "The authors conclude that integrating pHLA binding with pHLA-TCR binding enhances neoantigen selection accuracy, addressing a gap in current bioinformatic workflows that do not incorporate TCR sequencing data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledged the 'novel approach' and noted that the study 'highlights the significance of combining TCR and pHLA data for advancing personalized immunotherapy strategies,' the editor's statement that 'the evidence supporting the primary claim remains somewhat incomplete' indicates that the overall conclusion about enhanced accuracy is not fully supported by the limited experimental validation provided.",
+    "result_type": "MAJOR"
+  }
+]

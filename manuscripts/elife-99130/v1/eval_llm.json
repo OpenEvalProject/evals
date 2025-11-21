@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "The triple combination of artesunate (AS), EDTA, and colistin (COL) (AEC) dramatically enhances antibacterial activity against both mcr-1- and mcr-1+ Salmonella strains in vitro. AS or EDTA alone showed no direct antibacterial activity (MICs \u2265125 mg/L), and dual combinations (AC or EC) produced only modest MIC reductions (0-133 fold). However, the AEC triple combination achieved up to 60,000-fold reduction in COL MICs, demonstrating synergistic antibacterial enhancement specifically for Salmonella and E. coli, but not intrinsically COL-resistant species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 provide consistent MIC data from Tables 1-2 showing dramatic synergy only with the triple combination. The data are internally consistent across multiple strains and the fold-change calculations are clearly documented. The specificity for certain bacterial species (C17) is appropriately demonstrated by including negative controls (intrinsically resistant strains M15 and P01).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Time-kill assays demonstrate concentration-dependent and combination-dependent antibacterial activity. At low COL concentration (0.1 mg/L), no significant antimicrobial activity was observed for any treatment over 24 hours. At higher COL concentration (2 mg/L), antibacterial activity increased in the order AEC > AC > EC > C, with the mcr-1+ strain S30 showing weaker responses than mcr-1- strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C22 are supported by time-kill curve data in Figure 1. The concentration-dependent effects are clearly shown, and the ranking of combination efficacy is consistent across strains. The observation about differential effects between mcr-1+ and mcr-1- strains (C22) is appropriately noted as an inference from the data patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The AEC combination causes severe membrane damage to Salmonella cells, affecting both outer and inner membranes. NPN and PI fluorescence assays demonstrate that AEC treatment permits ingress of both fluorophores, indicating disruption of both membrane layers. SEM imaging confirms morphological damage characterized by folds, crevices, and depressions, particularly in AC and AEC-treated groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 and C46-C48 are well-supported by complementary fluorescence assay data (Figure 2a-d) and SEM imaging (Figure 3). The use of two independent fluorescent probes (NPN for OM, PI for IM) provides orthogonal evidence for membrane disruption. SEM provides visual confirmation of the membrane damage inferred from fluorescence data. The controls are appropriate.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "AEC treatment selectively dissipates the membrane potential (\u0394\u03c8) component of the proton motive force (PMF) without significantly affecting the pH gradient (\u0394pH) component. This is demonstrated by increased DISC3(5) fluorescence but no change in BCECF-AM fluorescence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C32 are supported by PMF dissipation assays using two complementary fluorescent probes (Figure 2e-h). The selective effect on \u0394\u03c8 but not \u0394pH is clearly demonstrated. The use of appropriate fluorescent indicators for each PMF component strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The AEC combination increases total ROS accumulation in Salmonella strains, but H2O2 does not contribute to this increase. AC and AEC groups showed ROS increases at both low and high COL concentrations, while COL alone and EC groups only showed increases at high COL concentration (2 mg/L). ROS levels further increased with extended incubation (6 hr).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37 are supported by ROS and H2O2 assay data (Figure 2i-l and Figure 2\u2014figure supplement 1). The differential ROS generation patterns across treatment groups are clearly documented. The negative result for H2O2 (C36) appropriately indicates that other ROS species are responsible for the observed effects. The time-course data (C35) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Transcriptome analysis reveals extensive downregulation of chemotaxis and flagellar assembly genes after AEC treatment. Overexpression of cheA (but not other chemotaxis/flagellar genes) increases MICs 4-32 fold after EC or AEC treatment, and swimming motility is decreased. This suggests that downregulation of the chemosensory system component CheA is critical for the antibacterial synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38-C40 and C70-C73 are supported by transcriptome data (Figures 4-5), motility assays (Figure 5\u2014figure supplement 1), and overexpression experiments (Table 5). The functional validation through overexpression (C72) is particularly strong evidence linking cheA downregulation to the observed antibacterial effects. The specificity of the cheA effect (other genes did not show similar effects) strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "Transcriptome analysis shows downregulation of ABC transporter genes (opuBB, osmX, gltI, dppA, etc.) after AEC treatment. However, overexpression of these genes (opuBB, gltI, dppB, dppC) did not change MICs, suggesting that downregulation of ABC transporters alone is not sufficient to explain the antibacterial synergy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C81 are supported by transcriptome data (Figure 5e-f) and overexpression experiments (Table 5). The negative overexpression results (C80) appropriately lead to the conclusion that ABC transporter downregulation is not sufficient for the observed effects (C81). This represents good scientific reasoning\u2014testing a hypothesis and appropriately concluding when results are negative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "The virulence-related protein SpvD contributes to COL susceptibility after AEC treatment. Expression of Salmonella infection-related genes (sseJ, spvD) and ribosomal protein genes (rpmJ, rpmE) changed after treatment, and overexpression of spvD increased MICs 4-fold for AC and AEC regimens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C82-C86 are supported by transcriptome data (Figure 5\u2014figure supplement 2a) and overexpression experiments (Table 5). The functional validation through overexpression (C85) provides direct evidence for SpvD's role. The magnitude of the effect (4-fold) is modest but consistent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Artesunate (AS) can bind to MCR-1 at residues THR283, SER284, and TYR287, and this binding is critical for inhibiting MCR-1 activity. Molecular docking shows AS forms hydrogen bonds with these residues, and competitive inhibition assays with unmutated peptide (Pu) block AS binding and increase MICs 8-fold. EDTA may enhance this effect by chelating zinc ions required for MCR-1 activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C99-C104 combine RT-PCR data (Figure 5\u2014figure supplement 2b), molecular docking (Figure 5\u2014figure supplement 2e), and competitive inhibition assays (Table 6). While the docking and competitive inhibition data support AS-MCR-1 interaction, the mechanism remains partially speculative. The observation that mutated peptide (Pm) cannot remove the blocking effect when EDTA is present (C102) suggests additional complexity. The proposed zinc chelation mechanism (C103) is speculative. Direct biochemical evidence of AS-MCR-1 binding and zinc chelation would strengthen these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C44",
+      "C45"
+    ],
+    "result": "In vivo mouse infection models demonstrate that the AEC combination outperforms single and dual drug treatments. AEC-treated mice showed the lowest bacterial burden in liver (6.51 log10CFU/g) and spleen (6.52 log10CFU/g) compared to COL alone (7.44 and 7.05 log10CFU/g) and other combinations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45 are supported by in vivo data (Figure 7). The bacterial burden measurements are clearly presented with appropriate statistical analysis. The in vivo validation of the in vitro findings strengthens the overall conclusions. However, the modest effect size (~1 log reduction) and lack of survival/clinical outcome data limit the strength of the therapeutic implications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "LPS on the cell membrane is a crucial target for AEC-mediated antibacterial effects. Supplementation with various cations (Na+, K+, Ca2+, Mg2+, Mn2+, Zn2+) caused minimal changes in MICs, but LPS supplementation resulted in dose-dependent MIC increases, indicating that LPS is the primary target.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are supported by MIC assays with cation supplementation (Table 3) and LPS supplementation (Table 4). The negative result with cations (C49) and positive dose-dependent result with LPS (C50) provide strong evidence for LPS as the target. This represents good experimental design using both negative and positive controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C53",
+      "C58",
+      "C61"
+    ],
+    "result": "Metabolome analysis shows less abundant changes than transcriptome, with low correlation between the two datasets. Key metabolic changes include decreased prostaglandins (PGs) in arachidonic acid metabolism, and increased styrene, taurocholic acid, and protocatechuic acid in AEC vs. C comparisons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43, C53, C58, and C61 are supported by metabolome data (Figure 6). The observation of low transcriptome-metabolome correlation (C42) is appropriately noted. The metabolite changes are clearly documented, though the functional significance of these changes is more speculative (addressed in separate claims).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The authors hypothesize that alterations in bacterial membrane lipid composition, specifically decreased prostaglandins (PGs), may contribute to increased COL efficacy. This is based on the known roles of arachidonic acid and PGs in membrane integrity and microbial viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C57 are largely speculative (C52, C57 explicitly marked as speculation). While the metabolome data show decreased PGs (C53), and the cited literature supports roles for arachidonic acid and PGs in membrane function (C54-C56), the direct causal link between PG reduction and enhanced COL activity is not experimentally demonstrated. This represents a reasonable hypothesis requiring further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The authors propose that accumulation of toxic compounds (styrene, taurocholic acid, protocatechuic acid) contributes to membrane damage and antibacterial activity. These compounds are known to have antimicrobial properties through membrane disruption mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59-C65 combine metabolome data showing compound accumulation with literature citations about their antimicrobial properties. While the accumulation is documented (C58, C61) and the cited antimicrobial mechanisms are established (C60, C63, C64), the direct causal link to the observed antibacterial synergy (C65) is speculative. Functional validation (e.g., testing whether these compounds directly enhance COL activity) would strengthen these claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The synergistic effect of AEC is independent of mcr-1 status, though mcr-1- strains show more robust transcriptional changes. The authors propose that AS and EDTA exert synergistic effects through both broad-spectrum mechanisms (efflux pumps, membrane damage) and drug-specific mechanisms (MCR-1). Efflux pump inhibition was only observed in mcr-1- strain S16, suggesting AS targets MCR-1 rather than efflux pumps in mcr-1+ strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C87-C93 combine observations from multiple experiments. The mcr-1-independent synergy (C87) is supported by MIC data across strains. The differential transcriptional responses (C88) are documented. However, the mechanistic interpretation (C89, C93) is largely speculative. The efflux pump data (C92) support differential mechanisms between strains, but the proposed dual-mechanism model requires more direct validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The authors selected 1/8 MIC concentrations of AS and EDTA to balance antibacterial activity with potential toxicity. They discuss that COL is likely the main source of toxicity (nephrotoxicity), while EDTA and AS at the concentrations used are expected to have low toxicity based on prior literature. However, the actual toxicity of the AEC combination remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C110 appropriately discuss the toxicity considerations. The rationale for dose selection (C105) is reasonable. The toxicity assessments are based on literature citations (C106-C109) rather than direct experimental data. The acknowledgment that AEC combination toxicity is unknown (C110) is appropriately cautious. This represents responsible discussion of limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "The authors conclude that the AEC combination is a promising candidate for treating MCR-negative and -positive COL-resistant Salmonella infections. They propose that membrane damage, toxic compound accumulation, and MCR-1 inhibition work synergistically, and suggest that targeting CheA, SpvD, or MCR with AS could be an attractive therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C111-C113 represent appropriate summary conclusions based on the experimental data presented. The conclusion about AEC as a promising candidate (C111) is supported by the in vitro and in vivo data. The mechanistic summary (C112) integrates the various experimental findings. The suggestion for future research (C113) is appropriately framed as speculative. These represent reasonable conclusions with appropriate caveats.",
+    "result_type": "MAJOR"
+  }
+]

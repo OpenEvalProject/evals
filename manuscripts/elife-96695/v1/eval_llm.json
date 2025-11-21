@@ -1,0 +1,332 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C109",
+      "C110"
+    ],
+    "result": "Different antibiotics induce distinct morphological changes in M. smegmatis cells, with RIF, CIP, and MMC causing cell elongation, INH and EMB causing cell shortening, and combination treatment showing no effect on cell size. The combination treatment demonstrated synergistic effects, requiring 10-fold lower concentrations while achieving greater growth inhibition than individual drugs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C25 and C109-C110 are well-supported by experimental data in Table 1 and Figure 1, showing consistent morphological responses to different drug treatments. The synergistic effect of combination therapy is clearly demonstrated by the lower drug concentrations required and higher CFU reduction achieved.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Whole genome sequencing of M. smegmatis lineages after 60 days (~230 generations) of antibiotic treatment revealed no significant increase in mutation rates compared to untreated controls. The mutation rate remained at approximately 10^-10 per bp per generation across all treatments except UV, with a maximum of one mutation per lineage detected.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C34 are strongly supported by comprehensive WGS data (Figure 2B, Table 2). The experimental design is rigorous with 16 independent lineages per treatment and appropriate controls. The finding that antibiotics do not increase mutation rates is a major result that challenges the hypothesis of drug-induced adaptive mutagenesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Despite no increase in genomic mutation rates, mutation accumulation strains showed increased MIC values for most drugs tested (except EMB), indicating phenotypic adaptation to antibiotics without genetic changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by MIC measurement data (Figure 2C). This result is critical as it demonstrates a discrepancy between genotypic stability and phenotypic adaptation, suggesting non-genetic mechanisms of drug tolerance. The exception of EMB is noted but not explained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Different antibiotics induce distinct DNA repair gene expression patterns: INH and EMB cause downregulation, CIP and MMC cause upregulation of specific repair pathways, RIF shows minimal effect, while combination treatment causes broad upregulation of 14/38 genes including base excision repair, dNTP pool sanitization, and error-prone polymerases, with 17-fold upregulation of KatG1 peroxidase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C45 are well-supported by comprehensive qPCR data (Figure 3). The treatment-specific patterns are clearly demonstrated with appropriate statistical analysis (p<0.05). The combination treatment showing unique upregulation patterns distinct from individual drugs is a key finding linking to the low mutation rates observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "Antibiotic treatments cause drug-specific alterations in cellular dNTP pools: CIP dramatically increases dATP and dTTP (~7-fold), RIF and MMC increase dGTP and dCTP, INH decreases purines, EMB decreases all dNTPs, while combination treatment shows no significant changes. Notably, dGTP decreased across all treatments where changes occurred, and smaller cell size correlated with lower dNTP concentrations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C53 are supported by dNTP measurement data (Figure 4) with appropriate statistical analysis. The finding that combination treatment normalizes dNTP pools is significant and correlates with the low mutation rate. However, the mechanistic interpretation of dGTP's role (C82, C86) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C61"
+    ],
+    "result": "Fluctuation assays revealed a CIP tolerance rate of 10^-7 per generation, three orders of magnitude higher than the mutation rate (10^-10) determined by WGS. Pretreatment with sublethal CIP (0.3 \u03bcg/ml) for 24-96 hours induced phenotypic tolerance to lethal doses (0.5 \u03bcg/ml), with tolerance increasing over time. WGS of pretreated cells detected only a single mutation in MSMEG_6151 (lipid metabolism gene), while cells grown at higher CIP showed no mutations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C58 and C61 are well-supported by both fluctuation assay and WGS data (Figure 5, Table 2). This result is critical as it demonstrates the discrepancy between phenotypic tolerance rates and actual mutation rates, providing strong evidence that rapid drug adaptation is mediated by non-genetic factors rather than mutations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C87",
+      "C88",
+      "C89",
+      "C104",
+      "C105"
+    ],
+    "result": "The hypothesis that antibiotic treatment induces increased mutation rates in M. smegmatis was not supported. Mutation accumulation assays showed no significant increase in mutations compared to controls for any antibiotic treatment except UV (positive control). In contrast, phenotypic fluctuation assays indicated rapid adaptation mediated by non-genetic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C64, C87-C89, C104-C105 represent the core conclusion of the study, supported by the comprehensive WGS and fluctuation assay data. The conclusion that drug resistance emergence is solely attributed to phenotypic factors (C64) is well-supported by the experimental evidence showing stable genomes but increased phenotypic tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "The combination treatment induces high ROS levels (indicated by 17-fold KatG1 upregulation) and corresponding upregulation of DNA repair pathways including dNTP pool sanitation and base/nucleotide repair. This contrasts with INH alone, which downregulates KatG1 (the enzyme that activates INH), potentially increasing tolerance. The DNA repair upregulation may account for the low mutation rate under drug pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C72 are supported by qPCR data (Figure 3) and literature citations. The mechanistic interpretation linking KatG1 expression to ROS levels and DNA repair activation is logical and well-supported. However, the causal claim that DNA repair upregulation accounts for low mutation rates (C72) is inferential and would benefit from validation using DNA repair mutants.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C73",
+      "C74"
+    ],
+    "result": "Error-prone DNA polymerases DinB2 and DnaE2 showed significant upregulation without inducing a mutator phenotype, indicating that error-prone and error-free repair mechanisms are coactivated with error-free repairs predominating.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 are supported by the combination of qPCR data showing polymerase upregulation and WGS data showing no increase in mutations. This is an important mechanistic insight, though the inference that error-free repairs predominate (C74) is logical but not directly demonstrated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "EMB and INH treatments caused coordinated reductions in dNTP pools, cell size, and gene expression, consistent with bacteriostatic effects and bacterial resting states. CIP uniquely caused dNTP imbalance with elevated dTTP/dATP and increased DNA repair gene expression. Combination treatment showed minimal dNTP alterations. Notably, dGTP decreased across all treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C81 are supported by integrated analysis of dNTP, cell size, and gene expression data (Figures 3-4). The correlations are well-demonstrated, though some mechanistic interpretations remain inferential. The consistent dGTP decrease is an interesting observation but its significance (C82) remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C90",
+      "C106",
+      "C107",
+      "C108",
+      "C103"
+    ],
+    "result": "The study concludes that antibiotic exposure does not result in de novo adaptive mutagenesis under laboratory conditions, and does not support the model of antibiotic resistance development through drug pressure-induced microevolution. Instead, DNA repair pathway activation likely maintains genomic stability while non-genetic factors mediate rapid adaptation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90, C103, C106-C108 represent the main conclusions, well-supported by the comprehensive experimental data. However, the generalization to M. tuberculosis and clinical settings (C103) is appropriately cautious given the use of M. smegmatis as a model. The conclusion is limited to laboratory conditions and would require clinical validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "M. smegmatis is justified as a model organism for studying mycobacterial DNA metabolism and repair, as it shares most DNA metabolic pathways with M. tuberculosis, shows high conservation of DNA repair enzymes, and has conserved LexA proteins and thymidylate biosynthesis enzymes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 are supported by multiple literature citations establishing the validity of M. smegmatis as a model. This justification is important for the study's relevance to M. tuberculosis, though the authors appropriately acknowledge limitations in the discussion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C91"
+    ],
+    "result": "TB remains a major global health challenge with 7.5 million cases and 1.3 million deaths annually, with resurgence due to SARS-CoV-2 pandemic. M. tuberculosis poses a sustained threat due to long-term latency and antibiotic unresponsiveness, with multidrug resistance emerging in at least 17% of treatments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C91 provide epidemiological context supported by WHO citations. These are well-established facts that motivate the study but are not novel findings. The statistics are appropriately cited and provide important context for the research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10"
+    ],
+    "result": "Drug tolerance in mycobacteria arises through multiple interconnected pathways including metabolic changes, cell wall thickening, and transcriptional adaptation, with efflux pump upregulation. Since horizontal gene transfer does not function in M. tuberculosis complex, resistant genotypes can only emerge by de novo mutagenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C10 are well-supported by literature citations and represent established knowledge about mycobacterial drug tolerance mechanisms. The inference that resistance must arise by de novo mutagenesis (C10) is logical given the absence of horizontal gene transfer, though this is a key assumption tested by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "M. tuberculosis populations within patients can be heterogeneous, with coexistence of drug-resistant and drug-sensitive strains documented in clinical isolates. Mixed infections occur in up to 19% of patients and can result from multiple strain acquisition or microevolution within the host. Some strains (e.g., Beijing genotype) show higher mutation rates, while others remain stable during treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C16 are supported by multiple literature citations describing clinical observations of heterogeneity. This background establishes the clinical relevance of the study's investigation into whether drug pressure induces microevolution. The variability in mutation rates across strains is well-documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Two models exist for drug-resistant TB development: acquired resistance through microevolution during active TB, and transmitted resistance from pre-existing heterogeneous populations accumulated during latent infection. Evidence exists for both models, though distinguishing between them based on sputum samples is challenging. With 25% of the global population latently infected, patients may harbor high heterogeneity facilitating variant selection under drug pressure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C102 are well-supported by literature citations and provide important context for interpreting the study's findings. The discussion appropriately acknowledges the complexity of distinguishing between the two models in clinical settings and the limitations of culture-based diagnosis (C100). This contextualizes why the laboratory study is important but also its limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C26",
+      "C27"
+    ],
+    "result": "M. smegmatis exhibits intrinsic resistance to pyrazinamide (PZA), with no effect on cell viability even at high concentrations in acidic conditions, though PZA was included in combination treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C27 are supported by experimental data (Figure 1\u2014figure supplement 1) and literature citation. This is an important limitation of the M. smegmatis model for studying first-line TB therapy, though the authors appropriately include PZA in combination treatment to test for potential interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Mycobacterial mutation rates in the literature are consistently around 10^-10 per bp per generation, which by itself does not explain the biological diversity observed in clinical isolates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 are supported by multiple literature citations and establish the baseline mutation rate context for the study. This motivates the investigation into whether drug pressure increases mutation rates to explain clinical diversity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C75",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Increased or imbalanced dNTP pools induce mutagenesis in prokaryotes and eukaryotes, with excess dGTP being a significant contributor to mutations. However, mycobacteria uniquely have dGTP as the most abundant dNTP species and high GC content genomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75, C83-C85 are supported by literature citations and provide important context for interpreting the dNTP pool measurements. The unique mycobacterial dNTP composition is relevant for understanding why dGTP reduction might be protective (C86), though this remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C82",
+      "C86"
+    ],
+    "result": "The consistent decrease in dGTP levels across all drug treatments suggests dGTP may play a role in general stress response, and reduction in dGTP levels may contribute to minimizing DNA lesions by enhancing proofreading efficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C82 and C86 are speculative interpretations of the dGTP decrease observation (C81). While the observation is well-supported by data, the mechanistic interpretation lacks direct experimental validation. The speculation is reasonable given the literature on dGTP's role in mutagenesis, but would require targeted experiments to confirm.",
+    "result_type": "MINOR"
+  }
+]

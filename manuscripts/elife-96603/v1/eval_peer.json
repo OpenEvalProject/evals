@@ -1,0 +1,241 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "The authors developed a novel timing task where water-restricted rats performed nose-pokes with variable durations to receive water rewards. Rats were trained in short (300ms threshold) and long (1500ms threshold) phases, showing gradual increases in nose-poke durations with median durations slightly above thresholds, indicating learning of the minimal thresholds.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises fundamental concerns that the task primarily probes impulse control rather than time estimation, noting 'the task is mainly probing the animals ability to wait (that is impulse control) rather than time estimation per se' and that 'the behavioral data not support the claim of the authors in terms of what the animals are actually doing (estimating time).' The editor acknowledges the study could have benefitted from 'an improved experimental design to more clearly disambiguate correlations between neuronal patterns and not only time but also stereotypical behaviors and restraint from impulsive decisions.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "The authors used in vivo calcium imaging with GCaMP6S in the mPFC of rats performing the timing task, recording from 50-150 cells per session across multiple sessions from five rats using miniaturized microscopes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 questions whether 'animals had enough simultaneously recorded cells to perform the analyzes of Figures 2-4,' specifically noting 'rat 3 had 18 responsive neurons which probably is not enough to get robust neural sequences for the trial-by-trial analysis.' Reviewer 2 raises concerns about the temporal resolution of calcium imaging, requesting the authors 'mention upfront in the main text (result section) the temporal resolution allowed by their Ca+ probe and discuss whether it is fast enough in regard of behavioral dynamics occurring in the task.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C56",
+      "C57",
+      "C58",
+      "C76"
+    ],
+    "result": "The authors identified three distinct cell types in mPFC: start cells, duration cells, and end cells, which together constituted more than half of observed neurons. A support-vector machine classifier using start and end cell activities predicted nose-poking events with >90% accuracy, indicating high specificity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'the correlation analysis on the activation profile to separate the cells in the three groups was effective and the functional dissociation between beginning and end, and duration cells was revealing.' The editor notes 'most claims are supported by solid evidence.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C77",
+      "C78"
+    ],
+    "result": "Duration cells showed activation during specific proportions of nose-poking events, with timing modulated by total event length. When normalized to trial length, duration cells showed selective activation at fixed points in normalized time scale, with ensemble activities tiling across normalized time in sequential patterns that were stable across trials within sessions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Reviewer 1 acknowledges 'this study dissected a neural population that formed sequential patterns of activation that encoded timed intervals,' Reviewer 2 fundamentally challenges the interpretation, stating 'the authors cannot rule out that what the records reflect are movements (and the scaling of movement) rather than underlying processes of time estimation.' Reviewer 2 argues 'duration cells could reflect fidgeting or orofacial movements combined with an increasing urgency to leave the nose pokes.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C143"
+    ],
+    "result": "The authors claim that sequential patterns were not representing motivation for water rewards (based on poor sequential patterns when normalized by motivation factor) and that duration cell activities were not modulated by head movements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 2 strongly challenges these claims, stating the supplementary figure addressing movement is 'unconvincing' and raises 'new questions.' Reviewer 2 notes 'the quality of the images provided in Figure S2 is far from reassuring' and questions whether 'the temporal and spatial resolution would be good enough to make meaningful correlations.' Reviewer 2 emphasizes 'I see no effort by the authors to investigate the importance of movement and motivation during their task or seriously engage with this idea.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C69",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "A Gaussian process regression model predicted trial progress with high accuracy using duration cell activities. Peak-extracted activities from duration cells maintained high decoding power and exhibited robust sequentiality as measured by peak entropy, unlike start/end cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes 'the analysis on the stability of decoding of both the nose poking state and poking time was very informative.' No specific concerns were raised about these decoding analyses by reviewers.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C70",
+      "C71"
+    ],
+    "result": "Gradual decays in start cells and rises in end cells were observed, but the authors acknowledge these 'ramping-like' activities cannot be definitively separated from artifacts due to slow calcium sensor kinetics. Peak-extracted traces from start/end cells showed no decoding power.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly recommends 'downplaying the conclusion that: \"Together, our data suggest that sequential activity might be a more relevant coding regime than the ramping activity in representing time under physiological conditions\"' due to 'the slow time resolution of calcium imaging.' The authors' acknowledgment of this limitation is appropriate.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C27",
+      "C28",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C147",
+      "C148"
+    ],
+    "result": "Sequential patterns of duration cells were stable over weeks (70% maintained identity, >70% coded for fixed timepoints), while start/end cells showed constant dynamism (<30% maintained coding type). This stability persisted across different intervals (2-16 days) and task phases, with good cross-session decoding for duration cells but chance-level for start/end cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'the analysis on the stability of decoding of both the nose poking state and poking time was very informative.' The editor notes the study reports 'how neuronal activity in the prefrontal cortex maps time intervals during which animals wait to reach a reward, with this mapping remaining consistent across days.' No specific concerns were raised about the stability findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C25",
+      "C26",
+      "C137",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Real-time adjustment in sequence procession speed tracked trial-to-trial interval variations at individual trial level. The authors claim this provides first evidence of dynamic scaling at single-trial level, with rats capable of subjectively adjusting scaling factors for accurate time estimation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While Reviewer 1 notes the study 'formed sequential patterns of activation that covaried with the timed interval during nose poking on a trial-by-trial basis,' Reviewer 2 fundamentally challenges the interpretation that this reflects time estimation rather than 'an integration of movement and motivational factors.' The claim of novelty ('first evidence') is not specifically validated or challenged by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C138"
+    ],
+    "result": "Errors in timing behavior were primarily attributed to premature ending of time sequences (scaling errors/Type III errors) rather than absence of sequences. Correct trials showed larger scaling factors than incorrect trials, with cumulative error polarity reversing at exactly 1500ms (the reward threshold), suggesting rats perceived the threshold and adjusted scaling factors trial-by-trial.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 notes 'the analysis of incorrect trials suggests the shorter non-rewarded intervals were due to errors in the scaling of the sequential pattern of activity' but also states 'the analysis of behavioral errors could be improved' and questions aspects of Figure 4. Reviewer 2 argues 'the fact that neuronal activity reflects an integration of movement and motivational factors rather than some abstract timing appears to be well compatible with the analysis conducted on the error trials (Figure 4),' suggesting alternative interpretations are equally plausible.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C31",
+      "C32",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The authors conclude that sequential activity is a stable neural substrate representing time under physiological conditions, suggesting a designated cell population for time coding in mPFC with predetermined factors (possibly genetic programs) underlying this stability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "Reviewer 2 fundamentally challenges the core interpretation, stating 'all the data presented in this study can be explained without invoking the concept of time estimation' and that the authors 'should refrain from using big words such as subjective time estimation.' The editor notes the study 'could have benefitted from an improved experimental design to more clearly disambiguate correlations between neuronal patterns and not only time but also stereotypical behaviors.' The claim about genetic programs (C96) is particularly speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C93",
+      "C151",
+      "C152"
+    ],
+    "result": "The stability of mPFC time codes differs from hippocampal CA1 sequential activities, which showed dynamic shifts across sessions in previous studies. The authors claim this is the first demonstration of stable time code in the brain.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to hippocampal instability is based on cited literature and is not challenged by reviewers. However, the novelty claim should be tempered given Reviewer 2's fundamental concerns about whether the activity truly represents 'time estimation.'",
+    "result_type": "MINOR"
+  }
+]

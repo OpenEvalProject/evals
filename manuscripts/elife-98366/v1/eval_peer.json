@@ -1,0 +1,198 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The study analyzed 96,505 single cells from 33 lung cancer samples (26 patients), with a refined core cohort of 14 samples from 11 patients used for clinical outcome evaluation. Clinical outcomes included 4 PR, 2 SD, and 5 PD patients, classified as responders (PR) vs. non-responders (SD+PD).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "All three reviewers consistently critique the small cohort size and heterogeneous population as major limitations. Reviewer 1 states the 'small cohort size and heterogeneous population...has limited their ability to draw statistically supported conclusions,' while Reviewer 2 notes 'a very heterogeneous and small cohort where adjustments for confounding is hard' and that 'many tests for association with outcome, where necessary multiple testing adjustments negate signal.' The study design is acknowledged but the statistical power is questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C29",
+      "C32",
+      "C56"
+    ],
+    "result": "Non-responders exhibited significantly higher presence of CD4+ regulatory T cells (Treg), resident memory T cells (TRM), and TH17 cells (p<0.01), which may interfere with ICI response. Tregs were underrepresented in responders.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly acknowledges these findings as 'not surprising and well precedented' regarding Treg association with ICI resistance, stating they 'act as an additional dataset to add weight to this prior body of evidence.' The role of Th17 is noted as supplementing 'current knowledge by characterization of the TME of the tumor itself,' though prior studies used non-clinical models. The findings are accepted but considered confirmatory rather than novel.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10",
+      "C30",
+      "C31",
+      "C33",
+      "C55"
+    ],
+    "result": "Responders showed diverse activated CD8+ T cells, particularly CD8+ TEM cells (GZMK, CXCR4 expression) with modest association (p=0.06). TCR clonotype analysis showed clonal expansion was more prominent in cytotoxic CD8+ T cells in responders. CD8+ T cell activation (TEM, TEMRA/TEFF, TEX), mature NK cells, and CXCL10+ Mo-Mac cells support ICI response.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 notes that findings regarding CD8+ T cell activation in responders are 'not surprising and well precedented' and 'act as an additional dataset to add weight to this prior body of evidence.' The involvement of effector CD8+ T cells is described as consistent with most studies. While the findings are confirmatory, reviewers do not challenge the data quality or interpretation, accepting them as valid contributions to existing knowledge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C39",
+      "C40",
+      "C63",
+      "C64"
+    ],
+    "result": "Tumor cells in non-responders showed heightened transcriptional activity in NF-\u03baB and STAT3 pathways, suggesting potential inherent resistance to ICI therapy. These pathways are known to play roles in PD-L1 regulation, T cell activation, Th17 differentiation, and orchestrating immunosuppressive characteristics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states that 'association of...STAT3 and NFkB with ICI resistance' is 'not surprising and well precedented' and these findings 'act as an additional dataset to add weight to this prior body of evidence.' The pathway findings are accepted as valid confirmatory evidence, though not considered novel discoveries.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C49",
+      "C66"
+    ],
+    "result": "Integration of immune cell profiles and tumor molecular signatures achieved discriminative power (AUC) exceeding 95% in identifying patient responses to ICI treatment. Combined analysis of top tumor-immune features improved discriminative power to over 95%.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNSUPPORTED",
+    "evaluation": "All reviewers express serious concerns about this claim. Reviewer 1 states 'the authors claim a very high \"accuracy\" performance, however given the small cohort and possible overfitting due to in-sample ROC the generalization of this to other cohorts is questionable.' Reviewer 2 emphasizes 'more external validation is needed to be convincingly reproducible, especially when talking about AUC/accuracy of a predictor.' The high AUC is viewed as likely reflecting overfitting rather than true predictive power.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C42",
+      "C45",
+      "C46",
+      "C65"
+    ],
+    "result": "Tumor cell analysis revealed moderate correlation between low CNA and positive ICI response, DEGs linked to cell death/motility/activation in poor responders, responder-specific signatures associated with RFX transcription factors, and non-responder signatures regulated by STAT3/NFKB1. Low growth factor/type I interferon signaling predicted response. Tumor signatures showed modest influence in melanoma but no prognostic value in TCGA LUAD/LUSC data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 notes 'extensive analysis of the scRNAseq data with respect to immune and tumor features' as a strength, and Reviewer 2 acknowledges 'interesting analysis of cell programs/states of the (predicted) tumor cells.' However, Reviewer 1 emphasizes that 'many tests for association with outcome, where necessary multiple testing adjustments negate signal and confirmation bias likely, so biological take-aways have to be questioned.' The tumor signature findings are acknowledged but their robustness is questioned due to multiple testing issues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C50"
+    ],
+    "result": "CD4+ Treg, CD4+ TH17, PC7.neg, INT.down, and UNION.down were significantly associated with ICI response in univariate regression analysis. ICI response variation was not affected by clinical variables (tissue origin, cancer subtype, pathological stage, smoking status). Non-responder features showed higher estimates than responder features.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 states 'there are many tests for association with outcome, where necessary multiple testing adjustments negate signal and confirmation bias likely, so biological take-aways have to be questioned.' Reviewer 2 notes the 'small cohort size and heterogeneous population...has limited their ability to draw statistically supported conclusion after adjusting for multiple hypothesis testing.' The univariate associations are reported but their statistical validity after proper correction is questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C28",
+      "C67",
+      "C68"
+    ],
+    "result": "Most samples were obtained from metastatic lymph nodes rather than original tumor tissues, but the immune microenvironment within metastatic lymph nodes closely resembles that of lung tumor tissues and can predict ICI response.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The authors acknowledge this as a limitation ('potentially not reflecting the tumor microenvironment accurately'), but claim the immune landscape of metastatic lymph nodes can predict ICI response. Reviewers do not explicitly comment on this specific issue, though the overall concern about generalizability and validation suggests uncertainty about whether findings from metastatic lymph nodes truly represent the primary tumor microenvironment.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C43",
+      "C44",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Background claims establishing the context for ICI therapy in NSCLC, including PD-L1 as a biomarker, role of tumor mutation burden, T cell dynamics, and prior literature on various immune cell types and their roles in ICI response.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are literature-based contextual claims cited from prior work. Reviewers do not challenge these background statements, and Reviewer 3 explicitly acknowledges that many findings are 'well precedented' in the literature. These claims provide accepted scientific context rather than novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Methodological details including IRB approval, informed consent, patient enrollment (26 patients: 5 in clinical trials, 21 standard practice), RECIST 1.1 evaluation criteria, scRNA-seq library preparation using Chromium kits, sequencing platforms (HiSeq 2500, NovaSeq 6000), bioinformatics pipeline (Cell Ranger, Harmony batch correction), and quality control criteria.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 acknowledges 'the methodology of integrating single cell sequencing, genetic data and TCRseq data' as a main strength and notes 'high-quality immune cell type annotation including annotations based on additional ADT data' and 'integration of TCRseq to confirm subtype of T-cell annotation.' The methods are accepted as sound, though reviewers emphasize the need for better statistical approaches and external validation of results.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,359 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "A CRISPR screen using the HuEpi library with AZD5582 & I-BET151 treatment identified INTS12 as the top hit to improve this LRA combination in both J-Lat 5A8 and J-Lat 10.6 cell lines. The screen also identified other gene targets including previously validated hits (KAT5, CUL3, ACTL6A, TAF5, DNMT1, DMAP1, VPS72, YEATS4, SRCAP, ING3) and new candidates (TRRAP, RNF20, BRD2, TAF3, TAF4, UBE2D3, UBE2H). The EZH2 inhibitor Tazemetostat validated the screen prediction by increasing HIV-1 reactivation with AZD5582 & I-BET151.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The screen methodology is well-described with appropriate coverage (>500x during transduction, >3600x during treatment), biological replicates, and controls (NTCs). The identification of previously validated hits (C53, C54) provides internal validation. The Tazemetostat validation experiment (C59, Figure 1-supplement 1) provides orthogonal confirmation of screen predictions. The screen data in Figure 1B and C clearly show INTS12 as the top hit in both cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C42",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "INTS12 knockout reactivates HIV independently and synergistically improves reactivation with AZD5582 & I-BET151 treatment in J-Lat cell lines. INTS12 KO alone shows modest HIV reactivation in DMSO-treated cells, improves reactivation with either AZD5582 or I-BET151 individually, and produces maximal reactivation when combined with both LRAs. This effect is specific to INTS12 as demonstrated by complementation experiments and is not due to effects on cell viability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support this result: RT assays (C63-C67, Figure 2A-B), flow cytometry (C68, Figure 2-supplement 2), complementation experiments (C70-C71, Figure 2C), and cell viability controls (C69, Figure 2-supplement 3). The data are consistent across two J-Lat cell lines and multiple experimental approaches. Statistical significance is demonstrated with appropriate replicates (n=3). The complementation experiment is particularly strong evidence that the effect is specifically due to INTS12 loss.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C43",
+      "C72",
+      "C73",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "RNA-seq analysis demonstrates that INTS12 knockout increases HIV transcription at the RNA level and is more specific to the HIV provirus than AZD5582 & I-BET151 treatment alone. INTS12 KO alone affects only 70 upregulated and 3 downregulated genes while strongly inducing HIV (FC~8), whereas AZD5582 & I-BET151 alone affects 80 upregulated and 306 downregulated genes. The combination of INTS12 KO with AZD5582 & I-BET151 produces the highest HIV induction (FC~28) but with some loss of specificity (255 up, 159 down genes), though still much more specific than PMAi.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The RNA-seq data (Figures 3-4) provide strong quantitative evidence with biological triplicates and appropriate statistical analysis (edgeR with FDR<0.05, |log2FC|>1). The pileup analysis (C73, Figure 3B) shows consistent trends across the HIV provirus. The differential expression analysis (C77-C84, Figure 4A) clearly demonstrates the specificity advantage of INTS12 KO. The comparison to PMAi (C84, Figure 4B) provides important context. However, the authors acknowledge uncertainty about whether non-polyadenylated RNAs were captured (C75), which is a reasonable caveat.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C45",
+      "C87",
+      "C88",
+      "C89",
+      "C133"
+    ],
+    "result": "CUT&Tag experiments demonstrate that INTS12 is present at the HIV LTR promoter, suggesting direct action on HIV transcription. INTS12 localization extends past the LTR into regions associated with transcriptional pausing, consistent with known Integrator function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CUT&Tag data (C87-C88, Figure 5A and Figure 5-supplement 1) show clear INTS12 signal at the HIV LTR that is reduced in INTS12 KO cells, providing strong evidence for direct binding. The experiment was validated with two different INTS12 antibodies. The localization pattern is consistent with previous studies of Integrator members (C88). Combined with the RNA-seq specificity data (C79-C80), this supports direct rather than indirect action (C89, C133), though the inference of direct mechanism could be strengthened with additional functional experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C44",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C129",
+      "C130",
+      "C148",
+      "C150"
+    ],
+    "result": "CUT&Tag analysis of RNA polymerase II reveals that the combination of INTS12 KO with AZD5582 & I-BET151 specifically overcomes a transcriptional elongation block. Total RNAPII (RPB3) and elongation-competent RNAPII (Ser2p) show dramatic increases in the HIV gene body only with the combination treatment, while RNAPII Ser5p (not associated with elongation) shows no significant differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The CUT&Tag data for RPB3 (C90-C92, Figure 5B) and Ser2p (C93, Figure 5C) provide strong mechanistic evidence with appropriate technical replicates (3-5) and statistical analysis. The specificity of the effect to region 2 (HIV gene body) and not region 3 (downstream gene) is important. The lack of effect with Ser5p (C94, Figure 5-supplement 2) strengthens the elongation-specific interpretation. The data support the hypothesis that INTS12 KO combined with LRAs overcomes an elongation block (C95, C148), though this remains somewhat inferential. The interpretation about efficient RNAPII transit (C129-C130) is reasonable but speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C12",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C142"
+    ],
+    "result": "INTS12 knockout increases HIV-1 reactivation in primary CD4 T cells from virally suppressed PLWH ex vivo. INTS12 KO alone significantly increased viral RNA in 4 of 6 donors, and the combination with AZD5582 & I-BET151 showed further significant increases in 4 of 6 donors. The degree of reactivation correlated with reservoir size.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The primary cell data (C96-C98, Figure 6A-B) provide crucial validation in clinically relevant cells with appropriate replicates (n=3 per donor) and statistical analysis. Testing 6 different donors with varying reservoir sizes and ART treatment durations (C100, C142) strengthens generalizability. The observation that 4/6 donors showed significant effects is reasonable given biological variability. However, the sample size is modest and one donor (PH543) showed no additive effect with the combination (C99), which is appropriately noted. The correlation with reservoir size (C100) is stated but not statistically tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C131",
+      "C143",
+      "C149"
+    ],
+    "result": "Viral RNA was detected in the supernatant from CD4 T cells of all three virally suppressed PLWH tested upon INTS12 knockout, indicating production of full-length HIV RNA. This detection in supernatants is consistent with efficient transcriptional elongation and represents a critical step toward the 'kill' component of shock-and-kill strategies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The detection of viral RNA in supernatants (C13, C102-C103, Figure 6C) from all three donors tested provides strong evidence for full-length transcript production. The 72-hour timepoint is appropriate for detecting released viral RNA. The consistency across all three donors is notable. However, the sample size is limited (3 donors), and the interpretation that this represents full-length HIV (C14, C105) is inferential, though reasonable given the supernatant location. The speculation about timing differences between intracellular and supernatant measurements for donor 543 (C104) is acknowledged as uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C15",
+      "C47",
+      "C48",
+      "C112",
+      "C113",
+      "C114",
+      "C157"
+    ],
+    "result": "INTS12 knockout increases HIV reactivation with diverse classes of LRAs beyond AZD5582 & I-BET151, including TNF-\u03b1 (canonical NF-\u03baB activator), anti-CD3/CD28 (T cell receptor activation), and SAHA (HDAC inhibitor), indicating that INTS12 serves as a general block to HIV reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The data testing multiple LRA classes (C112-C113, Figure 7B) provide strong evidence for generalizability with appropriate replicates (n=3) and statistical significance. Testing mechanistically diverse LRAs (NF-\u03baB activation, TCR stimulation, chromatin modification) strengthens the conclusion that INTS12 is a general block (C48, C114). However, the number of alternative LRAs tested is limited (3 types), and the magnitude of improvement varies. The conclusion is well-supported but could be strengthened with additional LRA classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C46",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C122"
+    ],
+    "result": "A second CRISPR screen targeting all Integrator complex members predicted that the cleavage module (INTS11, INTS9, INTS4), phosphatase module (INTS5, INTS6, INTS8), and core (INTS1, INTS2, INTS7) all contribute to blocking HIV latency reversal with AZD5582 & I-BET151, while the SOSS complex and enhancer/arm modules do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Screen #2 (C108-C111, Figure 7A) provides systematic interrogation of the Integrator complex with appropriate methodology. The prediction that multiple modules are involved (C110) is supported by the screen data showing all members of cleavage, phosphatase, and core modules scoring above NTC average. The exclusion of SOSS complex and enhancer/arm modules is consistent with previous literature (C120). However, this remains a prediction from screening data without functional validation of individual members beyond INTS12. The claim that all members 'can be targeted' (C122) is somewhat overstated as it's based on screen predictions rather than validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "INTS12 may be a better therapeutic target than other Integrator complex members because it shows high specificity for HIV, localizes to the HIV promoter suggesting direct action, and previous studies suggest INTS12 knockdown does not grossly affect cell viability unlike other Integrator members. However, the function of INTS12 in diverse T cell functions and in vivo remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is largely a proposal/opinion (C132, C140) based on the data presented and literature citations. The supporting evidence includes the specificity data (C133, Figure 4A middle panel), CUT&Tag localization (Figure 5A), and citations about viability (C136-C138). However, the comparison to other Integrator members is not directly tested in this study. The speculation about mechanisms (C134-C135) is acknowledged as hypothetical. The important caveat about unknown in vivo function (C139) is appropriately stated. This represents a reasonable hypothesis for future work rather than a supported conclusion.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C141",
+      "C144"
+    ],
+    "result": "This study represents the first analysis of an Integrator complex member in ex vivo experiments using cells from virally suppressed PLWH, demonstrating that CRISPR screening in cell line models can identify targets that translate to clinically relevant primary cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim (C141) appears accurate based on the literature cited. The validation in primary cells from PLWH (Figure 6) after initial identification in cell lines (Figures 1-2) demonstrates the translational value of the screening approach (C144). This is an important methodological contribution showing that cell line screens can predict effects in primary cells, though the success rate and generalizability remain to be determined across other targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "The manuscript establishes the scientific context that the latent HIV reservoir is a major barrier to cure, that current LRA combinations including AZD5582 & I-BET151 are insufficient, and that additional blocks to reactivation exist that need to be identified and overcome.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims (C1-C37) are well-supported by appropriate citations to the literature and represent established knowledge in the HIV cure field. The specific claim about AZD5582 & I-BET151 failing to induce full-length transcription ex vivo (C36) is supported by citation to Falcinelli et al., 2022. This context appropriately motivates the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C38",
+      "C50",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The HuEpi CRISPR library was previously validated and identified ING3 as improving AZD5582 efficacy. The current screen using the same library identified overlapping hits including ING3, validating the screening approach.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims reference previous work by the authors (Hsieh et al., 2023) and provide validation for the current screening approach. The identification of previously validated hits (C53-C54) in the current screen provides internal consistency. This establishes the credibility of the screening platform.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C5",
+      "C39",
+      "C40",
+      "C41",
+      "C60",
+      "C61",
+      "C62",
+      "C106",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The manuscript provides extensive background on the Integrator complex, its known functions in transcriptional regulation, previous studies showing Integrator members affect HIV transcription, and the specific roles of different Integrator modules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These background claims about Integrator complex function and previous HIV studies are supported by appropriate citations to the literature (Welsh and Gardini 2023, Hu et al. 2023, Stadelmayer et al. 2014, Li et al. 2020, etc.). The claim that INTS12 had not been previously implicated in HIV regulation (C62) provides context for the novelty. This background appropriately frames the mechanistic interpretation of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C49",
+      "C51",
+      "C52",
+      "C74",
+      "C75"
+    ],
+    "result": "The manuscript describes methodological details including the HuEpi library composition, J-Lat cell line characteristics, and technical considerations about RNA-seq detection of polyadenylated versus non-polyadenylated transcripts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These methodological claims are appropriately documented. The HuEpi library composition (C49) is described with citation to previous work. The J-Lat cell line differences (C52) are supported by citations. The caveat about RNA detection (C75) is an appropriate acknowledgment of technical limitations. These represent standard methodological documentation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C145",
+      "C146",
+      "C147",
+      "C151",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163"
+    ],
+    "result": "The discussion synthesizes the findings into a mechanistic model where INTS12/Integrator acts on transcriptional elongation, and its removal allows HIV transcription initiation events to proceed to elongation. The discussion also identifies limitations and proposes future research directions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic synthesis (C145-C153) is a reasonable interpretation of the data, though some aspects remain speculative (C151 is explicitly stated as a hypothesis). The discussion appropriately identifies what was not examined (C158-C161) and proposes future directions (C163). The speculation about stoichiometry (C162) and recruitment dynamics (C159) are appropriately qualified as uncertain. This represents appropriate scientific discussion that distinguishes between supported conclusions and hypotheses for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C164",
+      "C165"
+    ],
+    "result": "The manuscript concludes that small-molecule drugs targeting INTS12 or Integrator complex members are not yet available but would be predicted to improve LRA efficacy for HIV reservoir reduction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an appropriate conclusion and proposal for future drug development based on the findings. The acknowledgment that such drugs don't yet exist (C164) is accurate. The prediction that they would improve LRA efficacy (C165) is a reasonable extrapolation from the genetic knockout data, though the translation from genetic to pharmacological perturbation always carries uncertainty. This represents appropriate forward-looking discussion.",
+    "result_type": "MINOR"
+  }
+]

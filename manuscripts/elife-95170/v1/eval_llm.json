@@ -1,0 +1,470 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4"
+    ],
+    "result": "Using 1003 TF ChIP-seq datasets from ENCODE, the authors identified 43,891 HOT loci across three cell lines (HepG2, K562, H1-hESC), defined as regions containing >18% of available DAPs, resulting in 25,928, 15,231, and 2732 HOT loci respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The dataset sources, numbers, and HOT loci definition are explicitly stated with clear methodology. The binning approach using logarithmic scale is described in Methods and Table 1, providing transparent criteria for HOT loci identification.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C13",
+      "C14"
+    ],
+    "result": "HOT loci represent a prevalent mode of TF-DNA interaction, comprising only 5% of DAP-bound loci but containing 51% of all ChIP-seq peaks, with individual HOT loci harboring an average of 125 DAP peaks and 68 DAPs having >80% of peaks in HOT loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These quantitative findings are explicitly stated and supported by Figure 1B. The disproportionate concentration of ChIP-seq peaks in a small fraction of loci is a key observation that establishes HOT loci as a major regulatory phenomenon.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C83"
+    ],
+    "result": "HOT loci are predominantly located near transcription start sites, with 51% in promoter regions (46% primary, 5% alternative), 25% in intronic regions, and only 24% in intergenic regions (9% >50kb from promoters).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genomic distribution is explicitly quantified and suggests functional importance for gene regulation. The percentages sum appropriately and are consistent with the interpretation that HOT loci cluster near TSSs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C84"
+    ],
+    "result": "HOT loci overlap extensively with active chromatin marks: 97% of HOT promoters and 93% of HOT enhancers are in chromatin-accessible regions, 97% overlap H3K27ac or H3K4me1, and 31% of HOT enhancers and 16% of HOT promoters are in super-enhancers, though HOT loci comprise only 9% of super-enhancer length.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The chromatin state characterization is well-supported by explicit percentages and Figure 1D-E. The data consistently show HOT loci are active regulatory regions, with appropriate statistical quantification of overlaps.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Five distinct DAP clusters were identified based on promoter/enhancer binding preferences: Cluster I (4 essential regulators, 75% prevalence), Cluster II (29 promoter-preferring DAPs, 1.7\u00d7 enrichment), Cluster III (16 enhancer-preferring DAPs, 1.9\u00d7 enrichment), Cluster IV (12 equally distributed DAPs), and Cluster V (26 enhancer-skewed DAPs, 1.3\u00d7 enrichment).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The clustering analysis is explicitly described with specific DAP counts and enrichment ratios. Figure 2D shows the hierarchical clustering, and the functional characterization of clusters is supported by PPI network analysis (C86, C87) with significant p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C91",
+      "C92"
+    ],
+    "result": "HOT loci are enriched in 3D chromatin interactions: 94% have at least one chromatin interaction, they show 2.89\u00d7 enrichment in FIREs and 2.97\u00d7 enrichment in loop anchors compared to regular enhancers, and multi-way loop contacts correlate with DAP number (rho=0.84, p<10\u207b\u2074).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The 3D chromatin analysis is well-supported with explicit statistics, correlation coefficients, and p-values. Figure 3 provides visual evidence, and the use of Hi-C data with FitHiChIP is methodologically sound. The correlation between chromatin interactions and DAP density is statistically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "ChIP-seq signal strength correlates strongly with DAP number (rho=0.97, p<10\u207b\u00b9\u2070), and six stabilizer DAPs (CREB1, RFX1, ZNF687, RAD51, ZBTB40, GPBP1L1) increase signal strength of other DAPs by 1.9\u00d7 when present, with DAP signals being 3\u00d7 stronger than H3K27ac in HOT loci.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The signal strength analysis is supported by explicit correlations and statistical tests. Figure 4 and supplements provide evidence for the stabilizer DAPs. The 1.9\u00d7 effect is statistically significant (p<10\u207b\u00b9\u2070\u2070), though the mechanistic interpretation requires caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Sequence-specific DAPs (ssDAPs) and non-sequence-specific DAPs (nssDAPs) show only small differences in ChIP-seq signal strength in HOT loci (statistically significant but small effect), with the relationship reversed between enhancers and promoters, suggesting signal intensity is not primarily determined by DNA-binding properties.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison is explicitly stated with statistical significance (p<0.001) and shown in Figure 4D. The conclusion that ChIP-seq signals don't depend on DNA-binding properties is reasonable given the small effect sizes, though this is an interpretive claim that could benefit from additional mechanistic validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C76",
+      "C77"
+    ],
+    "result": "HOT loci evolve under strong negative selection, with conservation scores strongly correlating with DAP number (rho=0.98, p<10\u207b\u00b9\u00b3\u2070), being 1.7\u00d7 more conserved than regular enhancers in vertebrates (1.45\u00d7 in placental mammals, 1.1\u00d7 in primates), and overlapping with 22 ultraconserved regions including promoters of disease-associated genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The evolutionary conservation analysis is well-supported with phastCons scores across multiple evolutionary distances, strong correlations, and explicit identification of ultraconserved regions. Figure 5A-B and supplements provide clear evidence. The disease gene associations add functional context.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C96",
+      "C97"
+    ],
+    "result": "Sequence features show differential patterns: CpG islands overlap 83% of HOT promoters but only 12% of HOT enhancers; GC content correlates with DAP number (rho=0.89, p<10\u207b\u2074) and averages 64% in HOT promoters vs 51% in HOT enhancers; repeat elements negatively correlate with DAP number (rho=-0.9, p<10\u207b\u2075).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The sequence feature analysis is explicitly quantified with strong correlations and clear statistical significance. The differential patterns between promoters and enhancers are well-documented. The conclusion that CpG islands don't explain HOT enhancers is justified by the 12% overlap.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C39",
+      "C78",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Sequence-based classification using CNNs achieved auROC of 0.91 (vs 0.86 for seq-SVM and 0.78 for feature-SVM), demonstrating that HOT locus formation is driven by DNA sequence features beyond simple GC/CpG content, with the core 400bp regions containing most predictive information.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The classification analysis is well-designed with multiple control sets and model comparisons shown in Figure 5C. The 1.3\u00d7 superiority of sequence-based over feature-based models supports the conclusion about encoded sequence information. However, the mechanistic interpretation (C99) is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C101",
+      "C102"
+    ],
+    "result": "HOT loci correlate with high gene expression: DAP number correlates with target gene expression (rho=0.56, p<10\u207b\u00b9\u2070), HOT promoters show 4.7\u00d7 higher expression than HOT enhancers, highly expressed genes (RPKM>50) are 4\u00d7 more likely to have multiple HOT loci, and HOT enhancers are 4.5\u00d7 closer to genes than regular enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The expression analysis is well-supported with explicit correlations and fold-changes. The causal interpretation (C101) is stated as a suggestion rather than proven causation, which is appropriate. The distance-DAP correlation (rho=-0.9) supports the TSS-proximity interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C73",
+      "C103",
+      "C104"
+    ],
+    "result": "HOT promoters preferentially regulate housekeeping genes (64% of HK genes regulated by HOT promoters vs 30% by regular promoters, with 21% of HOT promoters regulating 64% of HK genes) and show lower tissue specificity (tau=0.57) than regular promoters (tau=0.74), while HOT enhancers are more tissue-specific than regular enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The housekeeping gene analysis is well-quantified with clear percentages shown in Figure 6A. The tau score analysis provides statistical support (p<10\u207b\u00b9\u2070\u2070) for differential tissue specificity. The functional distinction between HOT promoters and enhancers is well-established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Tissue specificity analysis shows HOT enhancers have slightly higher tau scores than regular enhancers (0.66 vs 0.63, p<10\u207b\u00b9\u2078), while HOT promoters show dramatically lower tau scores than regular promoters (0.57 vs 0.74, p<10\u207b\u00b9\u2070\u2070, 23% decrease), indicating HOT promoters are more ubiquitous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The tau score analysis is explicitly stated with statistical significance. The small but significant difference for enhancers and large difference for promoters are both well-supported. Figure 6B provides visual confirmation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Developmental analysis shows 85% of H1 HOT loci persist in differentiated cells, but only <10% of differentiated HOT loci overlap with H1, suggesting most HOT loci are acquired during differentiation. H1 HOT loci are 1.3\u00d7 more conserved than differentiated cell HOT loci, with HOT promoters maintaining housekeeping functions while HOT enhancers expand to tissue-specific roles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The developmental analysis is well-supported by explicit overlap percentages (Figure 7A-C) and conservation data. However, the interpretation about acquisition timing (C105-C107) is somewhat speculative, and the limited number of DAPs in H1 (n=47) is a significant limitation acknowledged by the authors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C110"
+    ],
+    "result": "HOT loci show paradoxical variant patterns: depleted in INDELs (4.7 and 4.1 per kb for enhancers/promoters vs 5.5 and 6.2 for regular regions) but enriched in common SNPs (1.14\u00d7 and 1.07\u00d7 fold-enrichment), consistent with previous reports of elevated common variants in conserved TF-binding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The variant analysis is explicitly quantified with statistical significance (p<10\u207b\u2074 to p<10\u207b\u00b9\u2070\u2070). The paradox is acknowledged and contextualized with citation to Vierstra et al. 2020. Figure 8A-B provides clear evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C111"
+    ],
+    "result": "eQTLs show 2.0\u00d7 enrichment in HOT promoters vs regular promoters (p<10\u207b\u00b2\u00b9) but only moderate enrichment in HOT enhancers (1.15\u00d7, p>0.05), consistent with known TSS-proximal bias of eQTL detection due to multiple testing burden.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The eQTL analysis is well-supported with explicit enrichments and statistical tests. The interpretation about TSS-proximal bias is appropriately contextualized with GTEx citation. The lack of significance for HOT enhancers is properly reported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C112"
+    ],
+    "result": "Chromatin accessibility QTLs (caQTLs) show dramatic enrichment in enhancers vs promoters (4.1\u00d7, p<10\u207b\u00b9\u2070\u2070), with HOT promoters showing 3.0\u00d7 enrichment over regular promoters (p=0.001), confirming that caQTLs predominantly disrupt liver TF binding motifs in enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The caQTL analysis is well-supported with strong statistical significance and appropriate citation to Currin et al. 2021. The enrichment patterns are clearly quantified in Figure 8D. The mechanistic interpretation is supported by the cited study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C113"
+    ],
+    "result": "Reporter array QTLs (raQTLs) show 3.3\u00d7 enrichment in enhancers vs promoters (p<10\u207b\u00b9\u2070), with more pronounced enrichment in HOT promoters (3.6\u00d7, p<0.01) than HOT enhancers (1.8\u00d7, p<10\u207b\u00b9\u00b9), likely reflecting the enhancer-focused filtering in raQTL detection methodology.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The raQTL analysis is well-supported with appropriate citation to van Arensbergen et al. 2019 and statistical significance. The interpretation about methodological bias is reasonable given the experimental design of the cited study. Figure 8E provides evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C114",
+      "C115"
+    ],
+    "result": "GWAS variants show 1.8\u00d7 enrichment in HOT promoters (p<10\u207b\u00b9\u2070\u2070) but no significant enrichment in HOT enhancers (p>0.1), suggesting individual DAP peaks in HOT promoters are more functionally consequential when altered, while HOT enhancers are less susceptible to mutations. Only raQTLs represent causal variants, while eQTLs and caQTLs are correlative.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GWAS analysis is well-supported with clear statistical tests. The interpretation about functional consequences (C114) is reasonable but somewhat speculative. The distinction between causal and correlative QTLs (C115) is an important methodological point that is correctly stated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119"
+    ],
+    "result": "Seven liver-related GWAS traits show significant enrichment in HOT loci (p<0.001, Bonferroni corrected), with HOT enhancers showing 1.3\u00d7 greater enrichment than regular enhancers and 1.5\u00d7 greater than DHS regions, demonstrating HOT loci importance for phenotypic homeostasis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The GWAS trait analysis is well-controlled with appropriate multiple testing correction and tissue-specific validation. Figure 8G shows the enriched traits. The conclusion about phenotypic homeostasis (C119) is a reasonable interpretation of the enrichment patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Multiple lines of evidence support transcriptional condensate involvement: 24% of DAPs are LLPS proteins showing uniform distribution and overrepresentation in HOT loci (23% in >45% of HOT loci vs near-zero in shuffled controls), LLPS proteins have stronger ChIP-seq signals (p=0.002) and higher IDR content (30% vs 26%, p=0.01), RBPs are enriched (1.5 vs 1.3 log2FC, p=0.04), eRNA markers show 2.7\u00d7 enrichment, and eCLIP signals in HOT loci match coding sequences (1.31 vs 1.4 log2FC, p=0.4) while being depleted in regular regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the individual observations are well-supported with appropriate statistics and controls (Figure 9), the overall conclusion about condensate involvement (C123) is explicitly acknowledged as speculative (C125). The evidence is suggestive but correlative rather than mechanistic. The null distribution analysis (C121) strengthens the LLPS overrepresentation claim, but causality is not established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C82",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "A model of HOT locus formation based on transcriptional condensates is proposed, where condensates can initiate with one TF and cofactor (e.g., OCT4 and Mediator), then create kinetic traps that accumulate DAPs, reconciling the paradox of high sequence-based prediction accuracy despite most DAPs lacking binding motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly acknowledged as a speculative hypothesis (C125) requiring experimental validation. The model is conceptually coherent and supported by citation to Shrinivas et al. 2019 (C126), but lacks direct experimental evidence. The model's ability to reconcile contradictory observations (C128) is a strength, but remains untested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C72",
+      "C80",
+      "C81"
+    ],
+    "result": "HOT loci represent a prevalent mode of regulatory TF-DNA interactions, with 51% of all TF ChIP-seq binding events committed to HOT locus formation, challenging the classical model of enhancer activity where few TFs bind specific motifs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This overarching conclusion is well-supported by the cumulative evidence, particularly C5 showing 51% of peaks in 5% of loci. The challenge to classical models is justified given the scale of the phenomenon and the lack of motif specificity for most bound DAPs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C74"
+    ],
+    "result": "HOT enhancers are involved in tissue-specific process regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by the tau score analysis (C49), GO enrichment showing tissue-specific processes (Figure 6C), and the presence of tissue-specific pioneer factors in Cluster III (C18). The evidence converges on tissue-specific functions for HOT enhancers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "HOT loci form the foundation of human super-enhancers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by C10 showing 31% of HOT enhancers and 16% of HOT promoters are in super-enhancers, though C12 notes they represent only 9% of super-enhancer length. The claim is somewhat overstated - HOT loci are enriched in super-enhancers but don't constitute the majority of super-enhancer sequence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C79"
+    ],
+    "result": "The density of mapped ChIP-seq peaks across TF-bound loci correlates with sequence features and the expression level of flanking genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is supported by the sequence feature correlations (C36, C38, C96) and expression correlations (C40). The abstract's summary statement is justified by the detailed analyses in the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "The HOT loci defined in this study primarily constitute the 'core' and more conserved regions of HOT loci defined in previous studies (Ramaker et al. 2020, Boyle et al. 2014).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This comparison is supported by overlap analysis showing 81%, 93%, and 100% overlap in HepG2, K562, and H1 respectively, with higher conservation scores (Figure 1\u2014figure supplement 5). The 400bp window captures core regions of the 2kb windows used in prior studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "DAP clusters show significant protein-protein interaction network formation: Cluster III forms a 13/16 DAP network (p<10\u207b\u00b9\u2076) and Cluster IV forms a 12-DAP network (p<10\u207b\u00b9\u2076) with HDAC1 as the highest-degree node.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The PPI network analysis is well-supported with highly significant enrichment p-values and visualization in Figure 2\u2014figure supplement 3. This provides functional context for the DAP clusters.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "CTCF- and Cohesin-bound HOT enhancers are located significantly closer to genes (p<10\u207b\u00b9\u2070\u2070) and have significantly more overlapping DAPs (p<10\u207b\u00b9\u2070\u2070) than other HOT loci, suggesting 3D chromatin contacts mediated by CTCF-Cohesin complex partially explain DAP accumulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The analysis is well-supported with strong statistical significance and shown in Figure 2\u2014figure supplement 4. The mechanistic interpretation (C90) is reasonable but somewhat speculative - the data show association but not causation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C124"
+    ],
+    "result": "The field has shifted from viewing HOT loci as ChIP-seq artifacts to accepting them as hyperactive regulatory regions with distinct features.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This historical context is appropriately cited to Ramaker et al. 2020 and Partridge et al. 2020. The statement accurately reflects the evolution of understanding in the field.",
+    "result_type": "MINOR"
+  }
+]

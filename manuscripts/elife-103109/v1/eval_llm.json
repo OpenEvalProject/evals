@@ -1,0 +1,398 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "The study successfully generated a single-nucleus RNA-seq dataset of the POA from 6 males and 6 females of each species (24 samples total), using a pooling and computational demultiplexing strategy. After quality control, 95,057 nuclei were assigned to samples and clustered into 53 neuronal cell types with even distribution across sex and species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C48 describe the experimental design and data generation pipeline. The methods are clearly described with appropriate sample sizes (n=6 per sex per species), and the demultiplexing approach using SNP data is validated. The resulting 53 clusters with even sex/species distribution (C48) demonstrates successful technical execution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C40",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The study identified homology between 34 of 53 Peromyscus neuronal clusters and Mus POA cell types, including four cell types with known roles in mating and parenting behaviors (i18:Gal/Tac2, i23:Crh/Nts, i16:Gal/Th, and i20:Gal/Moxd1).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C60 describe the homology mapping approach and results. The use of Seurat's integration workflow to map to the established Mus POA atlas (C40) is appropriate, and the identification of behaviorally-relevant cell types (C58-C60) provides biological validation of the approach. The 15% threshold for homology assignment is empirically justified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C142"
+    ],
+    "result": "AVP neurons (cluster 34) and OXT neurons (cluster 40) are approximately 1.6-2.1 times more abundant in promiscuous P. maniculatus compared to monogamous P. polionotus, with both PVN and SON regional populations contributing to this difference. This finding corroborates previous reports of AVP neuron differences between these species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C62 report computational differential abundance (FDR=0.19 and 0.09), which are validated by immunohistochemistry (C85-C88) showing significant differences (p<0.001) in both PVN and SON regions. The consistency between computational and experimental validation, along with corroboration of prior findings (C142, C63), strongly supports this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C100"
+    ],
+    "result": "Two cell types are more abundant in monogamous P. polionotus: cluster 43 (i26:Tac1/Prok2, 3.4x higher, FDR=0.08) and cluster 20 (i16:Gal/Th, 1.6x higher, FDR=0.02). The i16:Gal/Th cell type is activated by pup exposure in Mus and may contribute to the increased parental care behavior observed in P. polionotus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 report statistically significant differential abundance. The biological interpretation (C72, C100) linking i16:Gal/Th abundance to parental care is supported by functional data from Mus (C69-C70) and known behavioral differences (C71). However, the causal link remains correlative and would require functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C90",
+      "C91",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Two male-biased cell types were identified: cluster 9 (i20:Gal/Moxd1, 1.7x higher in males, FDR=0.007) and cluster 5 (i18:Gal/Tac2, 1.5x higher, FDR=0.27). Immunostaining revealed that sex-bias in i20:Gal/Moxd1 is conserved in the BNST across species but reduced in the SDN-POA of monogamous P. polionotus, suggesting regional-specific evolution of sexual dimorphism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 identify male-biased clusters, though C74 does not reach statistical significance (FDR=0.27). The immunostaining validation (C90-C91) provides critical spatial resolution showing differential evolution of sex-bias in SDN-POA vs BNST (C94-C96). The BNST finding is statistically significant in both species, while SDN-POA shows species-specific patterns, supporting the regional evolution hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Differential expression analysis across species identified 18-3401 genes per cluster (8301 unique genes total) with no species bias. Differentially expressed genes were enriched for neuropeptide receptors (2.4x, FDR=7e-04), neuropeptides (1.5x, FDR=0.005), neurotransmitter receptors (1.3x, FDR=0.02), and voltage-gated channels (1.3x, FDR=0.03), but not for neurotransmitter synthesis/transport genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C112 describe differential expression results with appropriate statistical controls (FDR<0.05) and expression-matched background for enrichment analysis. The correlation between cluster abundance and number of DE genes (C105) is expected and validates data quality. The enrichment patterns highlight signaling molecules as key evolutionary targets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C9"
+    ],
+    "result": "P. polionotus exhibits a substantial reduction in sex-biased gene expression compared to P. maniculatus, with 0-40 sex-biased genes per cluster in P. maniculatus versus 2-27 in P. polionotus. Total counts show 204 female-biased and 194 male-biased genes in P. maniculatus, but only 170 (83%) female-biased and 70 (36%) male-biased genes in P. polionotus, driven primarily by reduction in male-biased genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C117 report a striking reduction in sex-biased gene expression in the monogamous species using appropriate statistical thresholds (FDR<0.05). The asymmetric reduction (36% of male-biased genes vs 83% of female-biased genes retained) is clearly documented. This represents a major finding linking molecular and behavioral sexual dimorphism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Only 8 female-biased genes (including X-inactivation genes Xist, Tsix, Jpx) and 11 male-biased genes (including Nrip1 and Ecel1) show conserved sex-bias in the same cell types across both species, indicating rapid evolutionary turnover of sex-biased gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C118-C123 document the limited conservation of sex-biased genes across species. The inclusion of known sex-specific genes (X-inactivation genes) and genes with established functions (C121-C123) provides validation. The low overlap despite only 2 million years divergence highlights rapid molecular evolution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131"
+    ],
+    "result": "Clusters 5 (i18:Gal/Tac2) and 9 (i20:Gal/Moxd1) are enriched for sex-biased gene expression in both species, express high levels of all four major sex-steroid hormone receptors (Esr1, Ar, Prlr, Pgr), and may function in conserved sex-specific pathways. This enrichment persists even when controlling for cell abundance differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C131 identify two cell types with consistent enrichment of sex-biased genes across species. The analysis controlling for cell abundance (C126) strengthens the finding. High expression of sex-steroid receptors (C127-C129) provides a mechanistic hypothesis (C130), though the receptors themselves don't reach significance after multiple testing correction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "Sex-biased genes are overwhelmingly enriched for neuropeptides in both species (29.5x in P. maniculatus, 36.8x in P. polionotus, FDR<2e-4). Of 69 annotated neuropeptides, 21 show sex-bias in at least one cluster, with 6 instances of conserved sex-bias in the same cell type across species. Neuropeptides show a trend toward female-bias (19 vs 9 male-biased, p=0.06).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C132-C136 demonstrate strong enrichment of neuropeptides among sex-biased genes with highly significant FDR values. The analysis of 69 neuropeptides (C133) is comprehensive, and the identification of both conserved and species-specific patterns (C135) is well-documented. The female-bias trend (C134) approaches but doesn't reach significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C99",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "The study proposes that the 3x difference in Avp expression previously reported between species results from both a 2x difference in AVP neuron number (current study) and a 1.8x difference in Avp expression within AVP neurons, suggesting evolution modulates behavior through both cis-regulatory changes and upstream neurogenesis pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 and C143-C151 integrate current findings with prior work (Bendesky et al., 2017). The combination of cell number (C147) and per-cell expression differences (C149) mathematically accounts for the bulk RNA-seq difference (C150). This represents a mechanistic advance over prior work, though the causal link to behavior (C148, C151) remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155"
+    ],
+    "result": "OXT neurons are approximately 3x more abundant in promiscuous P. maniculatus, opposite to expectations based on oxytocin's role in pair bonding. This may result from shared developmental lineage with AVP neurons, suggesting genetic changes upstream of AVP/OXT differentiation have evolved across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C152-C155 report a validated finding (C152) but the interpretation is speculative. The unexpected direction (C153) is acknowledged, and the developmental lineage explanation (C154-C155) is plausible but not tested. Alternative explanations (e.g., compensatory changes in receptor expression) are not fully explored. Further investigation is needed to understand the functional significance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C156",
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161"
+    ],
+    "result": "The galanin neuron subtype i16:Gal/Th is more abundant in the monogamous species. Galanin neurons have been shown to be activated by parental care in Mus, cichlids, and frogs, and galanin neuron number correlates with parental behavior both within and across species, suggesting an evolutionarily conserved role in parenting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C156-C161 link the current finding to extensive comparative data across vertebrates (C157-C160). The correlation between galanin neuron number and parental care is documented both within species (poison frogs, C160) and across species (current study, C161). However, the causal relationship remains to be established through functional manipulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168"
+    ],
+    "result": "The male-bias in i20:Gal/Moxd1 abundance is significantly reduced in the SDN-POA of monogamous P. polionotus but conserved in the BNST. This pattern mirrors findings in monogamous voles and suggests that sex differences in SDN-POA, but not BNST, may co-evolve with monogamy, with regional populations evolving independently.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C168 integrate current findings with comparative data from voles (C164-C166) and another monogamous Peromyscus lineage (C165). The convergent evolution across independent lineages (C167-C168) strengthens the hypothesis of co-evolution with monogamy, though the functional significance requires further testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C169",
+      "C170"
+    ],
+    "result": "Cell type i18:Gal/Tac2 (cluster 5) is activated by mating behaviors in Mus, enriched for estrogen receptor expression and sex-biased genes, and appears to play conserved sex-specific roles, possibly in mating and copulatory behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C169-C170 synthesize functional data from Mus with the current expression findings. The inference about conserved sex-specific roles (C170) is reasonable given the enrichment of sex-biased genes and sex-steroid receptors, though direct functional validation in Peromyscus is lacking.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C171",
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "The reduction in sex-biased gene expression in monogamous P. polionotus parallels the reduction in behavioral sexual dimorphism (biparental vs maternal-only care) and extends Darwin's hypothesis about sexual selection and dimorphism to the molecular level. Previous bulk RNA-seq studies failed to detect this pattern, highlighting the importance of cell-type-specific analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C171-C177 place the findings in evolutionary context. The parallel between molecular and behavioral sexual dimorphism (C176) is documented, and the failure of bulk RNA-seq to detect this pattern (C174) validates the cell-type-specific approach (C175). However, the causal relationship between molecular and behavioral dimorphism (C177) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C8",
+      "C97",
+      "C98",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "The study identified six differentially abundant cell types (four across species, two across sex) and experimentally validated three. Cell abundance and gene expression changes both contribute to differential levels of neuronally-important proteins, implicating neuropeptides and sex hormones as key evolutionary modulators of species- and sex-specific behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C8 and C97-C98 summarize the main findings with appropriate caveats about experimental validation. The integration of cell abundance and gene expression changes (C137-C139) represents a comprehensive view of molecular evolution. The identification of neuropeptides and sex hormones as key signaling classes is well-supported by the enrichment analyses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C140",
+      "C141"
+    ],
+    "result": "Background and context: The study investigates molecular mechanisms underlying behavioral differences in two closely-related deer mice species (P. maniculatus and P. polionotus, diverged ~2 million years ago) that differ in mating systems and parental care. The POA is a brain region critical for social behavior, and single-cell approaches enable investigation of both cell type abundance and gene expression evolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C36 and C140-C141 establish the scientific context and rationale. The background on genetic contributions to behavior (C1-C2), the role of cell type abundance and gene expression (C12-C15), and the behavioral differences between study species (C27-C33) are well-documented with appropriate citations. The choice of closely-related species addresses limitations of prior comparative studies (C24).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "The study successfully identified known POA cell types including AVP neurons (cluster 34), OXT neurons (cluster 40), and VIP neuron subtypes (clusters 41 and 46), with the latter representing recently-described Vip/Nms and Vip/Grp subpopulations. These cell types have well-characterized markers and anatomical locations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C56 and C79-C84 demonstrate successful identification of known cell types, providing validation of the clustering approach. The identification of VIP neuron subtypes (C54-C56) shows the resolution of the dataset. The anatomical localization (C83-C84) is consistent with known biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C101",
+      "C102"
+    ],
+    "result": "The study proposes that i20:Gal/Moxd1 cells in SDN-POA and BNST, while transcriptionally similar, may evolve differently across species, and that regional-specificity of sex-bias in these cells may be important for evolution of sex-specific behaviors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C93 explain a technical limitation (transcriptional similarity masking regional differences) that was resolved by immunostaining. Claims C101-C102 propose regional-specific evolution, which is supported by the immunostaining data showing differential patterns in SDN-POA vs BNST. However, the functional significance (C102) remains speculative.",
+    "result_type": "MAJOR"
+  }
+]

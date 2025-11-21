@@ -1,0 +1,528 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Human electromechanical simulations reproduced diverse acute and chronic post-MI ECG phenotypes observed clinically, including T-wave inversion, Brugada phenocopy, QT prolongation in acute MI, and upright T-waves with QT prolongation in chronic MI. These ECG features were preserved across variations in ionic current conductances in population of models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C51 demonstrate that simulations successfully reproduced clinically observed ECG phenotypes in both acute and chronic MI, with validation against clinical databases (C43, C48, C50) and robustness across ionic variability (C51). The consistency across population of models strengthens credibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C133",
+      "C149"
+    ],
+    "result": "In acute MI, T-wave inversion is mechanistically explained by reversed transmural repolarization gradient caused by delayed activation and 57ms APD prolongation in epicardial border zone due to potassium current inhibition. Brugada phenocopy results from stronger inhibition of sodium, calcium, and potassium currents causing activation failure and 29ms APD prolongation in border zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 and C56-C65 provide detailed mechanistic explanation linking ionic remodeling to ECG phenotypes through simulation data showing activation/repolarization maps, APD changes, and ionic current alterations. Quantitative APD measurements (57ms, 29ms) and ionic mechanisms are well-documented in Figures 2A-C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C137",
+      "C167",
+      "C170",
+      "C171"
+    ],
+    "result": "In chronic MI, upright tall T-waves result from large repolarization dispersion between border and remote zones, with T-wave duration determined by the gradient between these zones. More severe APD prolongation in remote zone (157ms vs 12ms difference) led to larger T-wave duration (162ms vs 72ms) and QT intervals (565ms vs 380ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C69-C77 provide quantitative mechanistic explanation linking remote zone APD prolongation to T-wave characteristics through simulation data. Specific APD differences (157ms vs 12ms) correlate with T-wave metrics, supported by activation/repolarization maps in Figure 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C130",
+      "C142",
+      "C144"
+    ],
+    "result": "Post-MI LVEF at resting heart rate (43-49%) was not sensitive to the extent of repolarization heterogeneity. LVEF reduction was caused by calcium amplitude reduction due to ICaL inhibition in acute MI and SERCA suppression in chronic MI, independent of repolarization dispersion. Mechanical dysfunction can be dissociated from repolarization abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C78-C92 demonstrate through simulation data that LVEF changes are driven by calcium handling rather than repolarization heterogeneity. Multiple acute phenotypes with different repolarization patterns showed similar LVEF (43-47%), and chronic cases with different repolarization dispersions had similar LVEF (48-49%), supported by Figure 4 data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C10",
+      "C145",
+      "C146",
+      "C189",
+      "C193"
+    ],
+    "result": "T-wave and QT abnormalities are better indicators of repolarization heterogeneities than LVEF in post-MI. Preserved LVEF at rest does not guarantee low arrhythmic risk, questioning the use of LVEF as the dominant biomarker in clinical risk stratification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C145-C146, C189, C193 represent the primary conclusion supported by the dissociation between LVEF and repolarization heterogeneity demonstrated throughout the study. The finding that different repolarization phenotypes show similar LVEF while ECG markers reflect underlying ionic remodeling provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C139",
+      "C174",
+      "C175"
+    ],
+    "result": "T-wave alternans were reproduced in chronic MI simulations at fast pacing (120 bpm) with preserved LVEF (49%) at resting rate (75 bpm), caused by EAD-driven and calcium-driven alternans. Key ionic mechanisms include enhanced CaMKII activity, slower calcium release, and suppressed SERCA activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C107 demonstrate T-wave alternans generation at fast pacing with preserved resting LVEF through simulation data in Figure 5. Both EAD-driven and calcium-driven mechanisms are identified with supporting ionic remodeling data. Consistency with clinical observations (C100, C175) strengthens the finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C140"
+    ],
+    "result": "In chronic MI at fast pacing, EADs in remote zone created large repolarization dispersion leading to ectopic wave propagation through electrotonic gradients, despite preserved LVEF (49%) at rest. EAD generation was driven by IKr inhibition and INaL enhancement facilitating ICaL reactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C127 provide detailed mechanistic explanation of arrhythmogenic wave propagation at fast pacing through simulation data in Figure 6. The temporal sequence of EAD generation, conduction block, membrane potential gradients, and ectopic wave propagation is well-documented with specific timing (610ms, 710ms, 810-1010ms).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "Sensitivity analysis showed that large changes in apex-to-base and transmural heterogeneities only altered T-wave amplitude but not polarity or ST-segment, and mechanical parameters did not affect ECG morphology, supporting specificity of post-MI ECG signatures to ionic current remodeling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C55 demonstrate through sensitivity analysis that ECG phenotypes are specifically driven by ionic remodeling rather than anatomical heterogeneities or mechanical parameters. This strengthens the mechanistic conclusions by ruling out confounding factors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C157"
+    ],
+    "result": "Acute MI with upright T-waves (normal ECG) corresponded to comparable transmural repolarization gradient as control with BZ3 remodeling, where slight APD shortening in epicardial border zone compensated for activation delay, resulting in negligible T-wave changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 explain the mechanism for normal ECG appearance in some acute MI cases through simulation data showing compensation between activation delay and APD shortening. This accounts for clinical variability in acute MI ECG presentations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "In Brugada phenocopy simulations, electrical activation in the infarcted region was preserved despite conduction block in border zone due to higher L-type calcium channel expression in mid-myocardium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C66 explains a specific simulation observation with reference to appendix figure showing preserved activation despite border zone block. This provides mechanistic insight into the Brugada phenocopy phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93"
+    ],
+    "result": "Simulations using population of ventricular models showed similar changes to pressure-volume loops as baseline model across variabilities in ionic current conductances for both acute and chronic post-MI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C93 demonstrates robustness of mechanical findings across population variability, supporting generalizability of LVEF results. This is shown in Figure 4 with population traces overlaid on baseline.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C131"
+    ],
+    "result": "The credibility of human electromechanical models is supported by consistency with experimental and clinical data from ionic dynamics to ECG and LVEF biomarkers. Diverse clinical ECG phenotypes were reproduced with different degrees of experimentally reported ionic remodeling, with consistency across physiological variabilities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C131 summarize the validation approach and model credibility. The multi-scale validation from cellular to organ level with comparison to clinical databases supports model credibility, though this is a summary statement rather than new data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C152",
+      "C154",
+      "C155",
+      "C159"
+    ],
+    "result": "The reversed transmural repolarization gradient caused by delayed activation and APD prolongation in epicardial border zone accounts for T-wave inversion phenotype in acute MI. T-wave inversion, Brugada phenocopy, and QT prolongation in leads facing the infarct are useful biomarkers indicating larger repolarization dispersions and/or transmural extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C159 provide mechanistic interpretation of acute MI ECG findings with support from simulation results and consistency with prior literature (C150). The conclusion about biomarker utility (C159) follows logically from the mechanistic findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C163",
+      "C173",
+      "C192"
+    ],
+    "result": "Simulated chronic ECGs recapitulated recovery of T-wave polarity through recovery of transmural repolarization gradient caused by milder IKr inhibition in chronic border zone. In patients with global QT prolongation, leads with bigger T-wave amplitudes reflect increased local repolarization heterogeneity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C173 explain chronic MI ECG evolution and provide interpretation for clinical T-wave characteristics. The mechanism linking T-wave amplitude to local heterogeneity is supported by simulation data and prior literature (C172).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C186",
+      "C187",
+      "C188"
+    ],
+    "result": "At both acute and chronic stages, ventricles with different extents of repolarization dispersion may have similar LVEF due to similar calcium reduction. Models with inducibility of alternans and arrhythmia at fast pacing may present with preserved LVEF at resting heart rates, with more preserved calcium transient magnitudes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C186-C188 explain the mechanistic basis for LVEF insensitivity to repolarization heterogeneity through calcium handling. This is supported by cellular and ventricular simulation data showing calcium amplitude correlates with LVEF independent of repolarization patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C182",
+      "C183"
+    ],
+    "result": "Both repolarization reserve remodeling (INaL and IKr) and calcium system remodeling (Jup and CaMKII) are important for EAD-driven alternans. EADs in remote zone create large repolarization dispersion facilitating abnormal electrotonic wave propagations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C182-C183 identify key ionic mechanisms for EAD-driven alternans and their arrhythmogenic consequences through simulation analysis with reference to appendix figures. This provides mechanistic insight into chronic MI arrhythmogenesis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C191"
+    ],
+    "result": "Post-MI alternans and EADs can present as alternans of T-wave morphology and prolonged QT intervals in simulated ECGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C191 links cellular phenomena (alternans, EADs) to ECG manifestations through simulation results, providing mechanistic explanation for clinical observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C194"
+    ],
+    "result": "LVEF reduction in clinical cases is more significant than in simulations due to factors other than ionic current remodeling: remote zone structural remodeling, elevated myocardium stiffness, and anatomical abnormalities.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C194 acknowledges limitations of the simulation approach by identifying factors not included in the model that contribute to clinical LVEF reduction. This is a reasonable interpretation based on known pathophysiology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201",
+      "C202",
+      "C203"
+    ],
+    "result": "The simulation framework used a CMR-based biventricular mesh with 75% transmural anterior scar (12.4% scar, 11.7% border zone of ventricular volume), calibrated diffusivities for conduction slowing in border zone, and 10-fold increased stiffness in chronic scar to mimic fibrosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C195-C203 describe the computational model setup with appropriate justification from literature for parameter choices (scar transmurality, border zone width, stiffness). The methods are clearly documented with citations supporting design decisions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Sudden cardiac death in post-MI patients is associated with electrophysiological heterogeneities and ionic remodeling, with 50% due to lethal arrhythmias. Current risk stratification based on low LVEF identifies only a small subset of patients, with significant deaths occurring in patients with preserved LVEF. The mechanistic links between LVEF and pro-arrhythmic heterogeneities are unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 and C11-C14 establish the clinical context and knowledge gap motivating the study. These are supported by citations to clinical literature and represent established knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Various ECG characteristics have been associated with post-MI arrhythmic risk including longer QT intervals, QT dispersion, prolonged Tpe, and T-wave alternans, but ECG-based risk predictors are not widely applied clinically despite promising outcomes in studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C22 review prior literature on ECG biomarkers for post-MI risk stratification, establishing clinical context. All claims are supported by citations to external literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Repolarization dispersion increases after MI due to ionic differences between border and remote zones. Acute MI border zone exhibits reduced INa, ICaL, IKr, IKs, enhanced CaMKII activity, and gap junction redistribution. After healing, ionic remodeling may partially recover but increased INaL, IKCa, and IClCa are observed in chronic border and remote zones. These changes cause conduction and repolarization abnormalities acting as substrates for ventricular tachycardia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C36 summarize experimental literature on post-MI ionic remodeling, establishing the biological basis for the computational model. All claims are supported by citations to experimental studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C37",
+      "C38"
+    ],
+    "result": "Human-based modeling and simulations of ventricular electrophysiology and mechanics have demonstrated accurate prediction of post-MI arrhythmic risk and myocardial stress and strain in prior work.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C38 cite prior computational modeling work, establishing the foundation for the current study. These are supported by citations to external literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C147",
+      "C148",
+      "C151",
+      "C153",
+      "C156",
+      "C158"
+    ],
+    "result": "T-wave inversion is commonly observed in acute MI patients and associated with arrhythmic risk. Brugada-phenocopy was observed in some acute MI patients. Normal T-waves and QT intervals are commonly observed post-intervention. Silent ECG signatures can result from reduced transmural infarct extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C158 establish clinical context for acute MI ECG variability through clinical knowledge and citations. These support the rationale for investigating multiple ECG phenotypes in simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C162",
+      "C164",
+      "C165",
+      "C166",
+      "C168",
+      "C169"
+    ],
+    "result": "Experimental studies in different species showed inconsistent results regarding chronic border zone APD. In minipigs, chronic remodeling caused shorter border zone APD than normal zone, while human chronic border zone showed slightly longer APD. This discrepancy may be due to different balance of ionic currents across species, showing benefits of human electrophysiology models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C162-C169 discuss species differences in chronic MI remodeling with citations to experimental literature. The interpretation about benefits of human models (C166) is reasonable speculation based on observed differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C172"
+    ],
+    "result": "Previous simulation studies found T-wave amplitude and area were proportional to dispersion of repolarization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C172 cites prior computational work supporting the interpretation of T-wave characteristics in the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "Increased CaMKII activity, observed in acute MI border zone and failing myocardium, is a crucial mechanism promoting alternans. Enhanced CaMKII phosphorylation may preserve contractility through phospholamban and L-type calcium channels, but increased RyR phosphorylation results in prolonged opening and enhanced spontaneous calcium sparks contributing to alternans and triggered arrhythmias.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C176-C180 review literature on CaMKII mechanisms in arrhythmogenesis, providing biological context for simulation findings. All claims are supported by citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C181",
+      "C184"
+    ],
+    "result": "Generation of EADs due to chronic post-MI ionic remodeling (IKr inhibition, INaL enhancement) is consistent with previous studies. Similar re-entrant waves caused by electrotonic gradients were observed in previous studies of acute ischemia.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C181 and C184 cite prior literature supporting the EAD mechanisms and electrotonic wave propagation observed in simulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C190"
+    ],
+    "result": "A recent clinical study of post-MI patients with preserved LVEF showed defibrillators are needed in patients with electrophysiological risk factors (prolonged QTc, increased T-wave alternans) to prevent sudden cardiac death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C190 cites recent clinical evidence supporting the study's conclusions about limitations of LVEF-based risk stratification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C94",
+      "C100"
+    ],
+    "result": "Increased incidence of T-wave alternans is commonly observed in post-MI patients. T-wave alternans under exercise testing was found to be predictive of arrhythmic events after acute post-MI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C100 establish clinical context for T-wave alternans findings through clinical knowledge and citation.",
+    "result_type": "MINOR"
+  }
+]

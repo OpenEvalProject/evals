@@ -1,0 +1,306 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "The authors developed a game-theoretical framework using multi-perturbation Shapley value analysis (MSA) to quantify optimal influence (OI) in brain networks. The framework performs virtual multi-site lesioning (~7 billion combinations) to determine how each brain region influences every other region, defining optimality as an equilibrium where no region can increase its influence further. The approach is model-agnostic, applicable to different network architectures and dynamical models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C31-C39 collectively describe a methodologically rigorous framework grounded in established game theory (Shapley values). The computational scale (7 billion lesion combinations, C39) and convergence validation (Figure 2\u2014figure supplement 1) support the claim of precise quantification. The model-agnostic nature is demonstrated through application to multiple dynamical models and connectomes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C40",
+      "C41",
+      "C42",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C86",
+      "C87"
+    ],
+    "result": "Optimal communication in brain networks follows a broadcasting regime where signals propagate across multiple parallel pathways with attenuation. Communicability (CO) showed the strongest correlation with OI (R\u00b2=0.88), but underestimates influence via longer pathways. The Spatial Autoregressive (SAR) model achieved near-perfect performance (R\u00b2=0.997) with an optimal attenuation factor of 0.43, compared to CO's overly steep 0.06.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40, C56-C68 provide quantitative evidence with strong statistical support (R\u00b2 values, p<0.0001). The comparison across multiple communication models (SPE, NE, DE, SI, CO, LAM, SAR) is systematic. The finding that CO underestimates longer pathway influence is supported by the SAR fitting analysis showing CO assumes signal decay ~7 times faster than observed. However, the generalizability is limited by poor performance in directed networks (mouse/macaque, C75-C77).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Signal influence in brain networks extends primarily through 5-8 processing steps, with peak performance at step 6 (R\u00b2=0.75). A multivariate Lasso model using steps 5, 6, and 8 predicted OI with R\u00b2=0.96. Information flow degrades substantially after 8 steps despite the network diameter being ~10 steps, with longer pathways accounting for only ~5% of communication dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 present consistent quantitative findings from both univariate and multivariate analyses. The convergence between different analytical approaches (linear regression, Lasso regularization) strengthens the conclusion. The estimate that longer pathways contribute ~5% is derived from comparing model performances, providing a reasonable quantification of their limited role.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Network topology dominates over local node dynamics in shaping optimal signal propagation. Linear, nonlinear (tanh), and Hopf neural mass models yielded highly correlated OI landscapes (R\u00b2=0.98 and 0.94 with linear model). Models fitted versus not fitted to functional connectivity also showed strong correlation (R\u00b2=0.93), indicating structural connectivity is the primary determinant of influence patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43, C95-C97 provide strong quantitative evidence (high R\u00b2 values) that OI is robust across dynamical models. The comparison includes models of increasing biophysical complexity (linear \u2192 nonlinear \u2192 Hopf), and the finding is supported by prior literature (C92). However, the authors acknowledge this may reflect the assumption of homogeneous nodes, and heterogeneous models might yield different results (Discussion).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C44",
+      "C45",
+      "C47",
+      "C104",
+      "C105",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C122",
+      "C123",
+      "C134",
+      "C135"
+    ],
+    "result": "Rich-club regions (precuneus, anterior cingulate cortex, superior prefrontal cortex) are the most influential brain regions, exploiting their topological centrality to broadcast across multiple parallel pathways. These regions exert strong influence despite weak structural connections (r=0.95 overall, but with notable deviations above regression line), compensating for weak direct connections through numerous indirect pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C45, C112-C118 provide converging evidence from multiple analyses: correlation with structural weights (r=0.95), centrality measures (Spearman's rho 0.53-0.99), and null model comparisons. The finding that influence exceeds what would be predicted from connection strength alone is supported by Figure 8 and validated across mouse/macaque connectomes (C113). The mechanism is further supported by controllability analysis (C127, C131-C133).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C55"
+    ],
+    "result": "Brain regions influence not only directly connected neighbors but also distant, unconnected regions through multi-step processing pathways. Manipulating a single region can impact global brain dynamics, extending beyond anatomically connected regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are directly supported by Figure 2 showing the OI landscape with both direct and indirect influences. The interpretation is consistent with prior work on functional coupling between distant regions (C50) and supported by citations to lesion studies (C55). This forms the empirical foundation for investigating poly-synaptic signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The default mode network exhibits substantial and homogeneous influence both within itself and across other brain modules, distinguishing it as a key orchestrator of brain-wide communication. In contrast, the auditory network shows more varied and modest influence, primarily within its own module.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C54 are supported by the module-level analysis in Figure 3, which quantifies both average influence and heterogeneity. The finding that default mode network deviates ~3% from the egalitarian baseline with lower heterogeneity provides quantitative support. However, the interpretation as 'key orchestrator' (C54) is somewhat speculative and would benefit from functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "A multivariate model using LAM, CO, and SPE explained 93% of OI variance, with LAM contributing most. At optimal parameters, SAR alone achieved near-perfect prediction (R\u00b2=0.999), dominating as the most critical variable across a wide parameter range (0.1-0.8). Simple communication models like SAR perform comparably to computationally expensive biophysically detailed models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 present clear quantitative results from systematic multivariate analysis (Figure 6C-D). The finding that SAR dominates at optimal parameters is well-supported. The comparison to neural mass models (C89) is backed by citations. However, the claim that 'little is gained' from complex models (C90) may be overstated, as the authors acknowledge limitations with heterogeneous dynamics in the Discussion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Communication models showed discrepant performance in directed networks (mouse and macaque connectomes). SAR performed marginally better in mouse (r=0.21 vs 0.17-0.18) but significantly better in macaque (r=0.92 vs 0.23-0.24). The inverted U-shaped fitting curves suggest slower spatial decay than assumed by CO, though models struggle to precisely capture optimal signal flow in larger directed networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75-C80 identify important limitations but lack sufficient analysis to explain the discrepancies. The speculation about network size (C78) is not systematically tested. The authors acknowledge that 'specific effects of network size, density, reciprocity, weight distribution, and normalization...necessitate further systematic investigation using synthetic network models.' This represents an important caveat to the main findings but requires additional work to resolve.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Null model analyses reveal that neither connectivity topology nor connection weights alone explain efficient signal propagation between weakly connected nodes. The signature of enhanced influence despite weak connections only appears when central nodes have weak links, disappearing only when both topology and weights are randomized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119-C123 describe systematic null model comparisons (topology-shuffled, weight-shuffled, fully randomized) shown in Figure 8\u2014figure supplement 2. The finding that the effect persists in both topology-preserved and weight-preserved nulls but disappears in fully random networks provides strong evidence for the interaction between topology and weights. This supports the mechanistic interpretation about rich-club broadcasting.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Analysis of spatial influence decay shows that steep decay factors lead to low variability (nodes only influence neighbors), while shallower decay rates increase variability as signals traverse longer parallel pathways. This provides evidence that central nodes utilize multiple pathways to compensate for weak direct connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C126 are supported by the analysis in Figure 10, which systematically varies the degree of spatial influence and measures spread along the second principal component. The interpretation (C126) logically follows from the data pattern. This analysis provides mechanistic insight into how broadcasting enables influence despite weak connections.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Influential nodes exhibit both high average controllability (r=0.86) and high modal controllability, clustering in the top-right of the modal controllability scatter plot. This suggests these nodes can steer the network toward both easy-to-reach and hard-to-reach dynamical states due to their extensive local and long-range connectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127, C131-C133 are supported by quantitative analysis (Figure 9\u2014figure supplement 1) and consistent with prior work on controllability (C130). The finding that influential nodes have high values for both controllability measures, despite their typical negative correlation, is notable. However, the interpretation about steering dynamics (C133) is somewhat speculative and would benefit from validation through perturbation experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The manuscript establishes the context that brain communication efficiency depends on assumed signaling dynamics, with existing models ranging from shortest path to diffusive processes. Current communication models simplify biological complexity, and no consensus exists on the precise model of optimal communication due to conflicting assumptions about signal propagation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C24 provide well-supported background context, extensively citing prior literature. These claims establish the motivation for the study by documenting the diversity of communication models and the lack of consensus. The characterization of existing models and their limitations is accurate and appropriately referenced.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C25",
+      "C26"
+    ],
+    "result": "The authors speculate that identifying structural features improving information flow could enable therapeutic targeting in disease and guide neuromorphic system design to achieve brain-like resource management.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C25-C26 are explicitly speculative (marked as SPECULATION in evidence_type). While the potential applications are plausible and supported by citations (C26), no data in the manuscript directly addresses these applications. These represent future directions rather than demonstrated results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "Game theory provides a normative framework for prescribing optimal behavior in defined scenarios, applicable even to systems without agency (e.g., behavioral ecology). This approach is well-suited for investigating how brain regions should interact to optimize communication efficiency given structural and dynamical constraints.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C30 accurately describe game theory and its applications, supported by appropriate citations. The argument for applicability to neuroscience (C30) is logical, though the inference that brain regions 'should' optimize communication requires the assumption that evolution has shaped networks toward optimality\u2014an assumption the authors acknowledge requires further empirical investigation (Discussion).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The authors conclude that signaling in the human brain is best captured by broadcasting-like dynamics, with hub regions propagating information over multiple pathways to optimize influence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 represents the main conclusion, synthesizing findings from C4, C40-C47, C86-C87, and C134. This conclusion is well-supported by the convergent evidence from multiple analyses (communication model comparisons, path length analysis, rich-club analysis). However, the limitations with directed networks (C75-C80) and the assumption of optimization should be noted.",
+    "result_type": "MAJOR"
+  }
+]

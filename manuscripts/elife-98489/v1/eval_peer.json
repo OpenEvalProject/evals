@@ -1,0 +1,139 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C30",
+      "C31",
+      "C35",
+      "C36",
+      "C41"
+    ],
+    "result": "The RTRBM successfully retrieves artificial neural assemblies and their temporal connections in simulated data, outperforming the standard RBM in terms of generalization error, pairwise moments, and particularly time-shifted moments. The RBM recovers non-diagonal weight matrices that partially account for dependencies but cannot accurately capture time-shifted moments.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states the authors 'show solid evidence that the new model outperforms their earlier model on both a simulated dataset and on whole-brain neural activity from zebrafish.' Reviewer 2 acknowledges 'the analysis is solid to support the authors claim.' The simulated data results are not challenged by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C22",
+      "C57",
+      "C59",
+      "C69"
+    ],
+    "result": "The RTRBM extension outperforms the cRBM in terms of generalization error and provides more accurate representation of moments in time on zebrafish data, with lower sum square difference for first-, second-, and time-shifted moments, though performance varies across individual fish.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 notes 'the performance improvement by RTRBM compared to their cRBM is marginal' and Reviewer 3 states 'the performance comparison for the temporal dynamics of the hidden units actually suggests that the RTRBM (significantly) underperforms where the text says (Line 235f) it outperforms the cRBM model.' This directly contradicts the authors' claims of superior performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C49",
+      "C52",
+      "C79"
+    ],
+    "result": "The trained RTRBM model maintained localized neural assemblies inherited from the cRBM, with sparse weight distributions and spatially localized sets of neurons forming clusters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 explicitly challenges this claim, stating 'whether the clusters shown in Figure 3E can indeed be described as \"spatially localized\" is debatable. Especially in view of clusters 3 and 4, this seems a stretch.' The reviewer argues that truly localized receptive fields should be 'contained in some small (compared to the overall size of the brain) or specific anatomical brain region,' which is 'clearly not the case here.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C61",
+      "C86",
+      "C87",
+      "C29"
+    ],
+    "result": "Transfer learning was used to initialize RTRBM weights with cRBM counterparts because the RTRBM did not reach the compositional phase directly. This approach successfully expanded the cRBM model to include temporal connections while maintaining sparsity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 questions the methodological consistency, noting 'when considering synthetic data, they actually seem to compare with a \"standard\" RBM model' rather than cRBM, which 'seems odd considering the overall narrative.' The reviewer states that citing inability to reach compositional phase as justification 'does not really make sense' given the transfer learning workaround was used for zebrafish data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C2",
+      "C68",
+      "C70",
+      "C80"
+    ],
+    "result": "The RTRBM captures temporal dependencies between neural assemblies through temporal weights on hidden units, providing a compact description of neural dynamics that decomposes into dynamical networks of assemblies spanning brain areas.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 questions the biological value, stating 'the biological insights from this method are constrained' and asks 'What information can we gain by knowing the effective recurrent connection between them?' The reviewer suggests 'dynamics of assemblies can be analyzed using various tools such as dimensionality reduction methods once we have identified them using cRBM,' questioning the unique contribution of RTRBM.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C67",
+      "C91"
+    ],
+    "result": "The original time-scale of assembly dynamics can be identified by estimating multiple RTRBMs at different temporal resolutions, with the Spearman correlation of moments being highest at the natural sampling rate for zebrafish data.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This methodological contribution is not challenged by any reviewer. Reviewer 1 acknowledges the authors 'show solid evidence' for their model's capabilities, which would include this temporal resolution analysis presented in Figure 4.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C24",
+      "C26",
+      "C28"
+    ],
+    "result": "The RTRBM maintains interpretable and probabilistic features of the RBM while extending it to include temporal dependencies, allowing the model to realize a combination of temporal sequences and stochastic exploration that the static cRBM cannot capture.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 describes this as 'a useful extension to a recently proposed model' and Reviewer 2 acknowledges 'being able to capture temporal assembly dynamics is an interesting feature that goes beyond many existing models.' The conceptual advance is accepted even if practical benefits are questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C44",
+      "C46"
+    ],
+    "result": "Individual fluorescence traces were successfully deconvolved using blind sparse deconvolution to obtain binarized spike traces, and model training converged successfully for each animal.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 requests 'predicted and measured neural activity traces could aid readers in evaluating model efficacy' but does not challenge the preprocessing methodology itself. The successful training is not disputed by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The cRBM is limited to capturing only static dependencies and cannot account for temporal dependencies, while neural activity driving behavior requires explicit dynamics. Current light-sheet imaging temporal resolution limits individual neuron dynamics estimation, making assembly-level temporal connections more tractable and insightful.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These motivational claims about limitations of static models and advantages of temporal approaches are not challenged by reviewers. Reviewer 2 acknowledges 'most of previous studies do not explicit modeling the temporal dynamics' and this study addresses that gap.",
+    "result_type": "MINOR"
+  }
+]

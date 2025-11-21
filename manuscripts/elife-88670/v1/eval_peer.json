@@ -1,0 +1,230 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C34",
+      "C35"
+    ],
+    "result": "The authors developed an open-source software package for real-time motor unit decomposition from EMG signals using blind-source separation (fastICA). The software was validated on data from five lower limb muscles using surface and intramuscular electrode arrays, with both synthetic and experimental validation approaches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm the value and validity of the software package. Reviewer 1 states the 'validation of the software package is compelling, suggesting that it can be successfully applied across a range of muscles and tasks.' Reviewer 2 notes 'the clarity of the presentation' and that 'Figures are especially effective.' Reviewer 3, after revision, confirms 'the method will be of use to the field.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "Manual editing of automatically decomposed motor units improved silhouette (SIL) values from ~0.82-0.89 to ~0.89-0.91 across muscles at 20% MVC, with a significant number of motor units removed during visual inspection. A SIL threshold of ~0.9 can be used to automatically filter poor quality motor unit pulse trains.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these findings about manual editing and quality metrics. Reviewer 2 explicitly notes 'statistical analyses are excellent,' which would encompass these quantitative results. The methodology for quality assessment and manual editing is accepted without critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Validation using synthetic EMG signals showed offline decomposition achieved near-perfect accuracy (99.2-100% rate of agreement). Real-time decomposition maintained high accuracy when applied to signals at the same force level (96.3-98.4%) or lower force (99.5-99.8%), but accuracy decreased when applied to higher force levels (80.3-88.6%) due to recruitment of spatially overlapping motor units.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'Validation of the software package is compelling, suggesting that it can be successfully applied across a range of muscles and tasks.' The simulation results demonstrating force-dependent accuracy are not questioned by any reviewer, indicating acceptance of these validation findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Experimental validation in tibialis anterior showed real-time decomposition achieved 93.9-95.6% rate of agreement when test and baseline forces matched. Accuracy decreased when filters were applied across different force levels (83.3-87.9%), with decreased sensitivity when applying higher-force filters to lower forces and decreased precision when applying lower-force filters to higher forces, confirming that newly recruited motor units disrupt decomposition accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 affirms the validation is 'compelling' across 'a range of muscles and tasks.' No reviewer challenges the experimental validation results or the interpretation that force level changes affect accuracy. The findings are treated as methodologically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "Testing across multiple muscles (VL, VM, GL, GM, TA) at 20% and 40% MVC showed variable accuracy, with highest rates of agreement for TA (93.6-97.3%) and lower rates for vastii (75.3-84.0%) and gastrocnemii (81.0-88.1%). The number of identified motor units ranged from 10-94 depending on muscle and electrode type.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes the validation demonstrates the software 'can be successfully applied across a range of muscles and tasks.' The between-muscle differences in accuracy are presented as findings without reviewer challenge, indicating acceptance of these results as valid characterization of the method's performance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C107"
+    ],
+    "result": "The RMSE between real-time and edited firing rates was consistently below 2 pulses per second across all muscles, with lowest values for TA (0.44-0.64 pps). These low RMSE values demonstrate that the visual biofeedback accurately represents motor unit firing activity to participants.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 states 'statistical analyses are excellent,' which encompasses these RMSE findings. No reviewer questions the accuracy of the biofeedback or the interpretation that low RMSE indicates accurate representation of firing activity. The results are accepted as demonstrating the software's capability for real-time feedback.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "Computational time analysis showed spike identification averaged 4.9\u00b13.0 ms for surface electrodes (0.37 ms per motor unit) and 32.0 ms for intramuscular arrays (due to higher sampling frequency). Total computational time including visual feedback display was always shorter than the 125 ms epoch duration, making the system truly real-time.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 notes 'the key advance presented here is that the software provides real time identification' and praises the 'clarity of the presentation.' The computational performance data supporting real-time capability is not challenged by any reviewer, indicating acceptance of these technical specifications.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Lower accuracy in vastii and gastrocnemii compared to TA may be due to greater variability in muscle-specific activation between baseline and test contractions caused by muscle redundancy. Changes in activation level can cause peaks to be misclassified as noise (decreased activation) or result in merged sources from newly recruited spatially-close motor units (increased activation).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While this is presented as speculation by the authors, no reviewer challenges this interpretation of the between-muscle differences. The explanation is consistent with the accepted experimental findings and is treated as a reasonable interpretation of the observed variability.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Motor unit yield from surface EMG was substantially lower in females (9\u00b112) than males (30\u00b113), consistent with prior literature. The cause remains unclear but may relate to tissue properties, muscle fiber properties, or innervation ratios, though evidence for sex differences comes primarily from animal studies.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges the reported sex differences in motor unit yield or questions the authors' acknowledgment of uncertainty about underlying mechanisms. The finding is presented as an important consideration for implementation, and reviewers accept this characterization without critique.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The blind-source separation algorithm requires uniqueness of motor unit action potential distributions across electrodes and consistency of motor unit filters over time. Intramuscular arrays provide higher accuracy than surface electrodes due to lower likelihood of spatially overlapping potentials. The approach is recommended for isometric contractions with stable force to maintain filter consistency, and manual editing is necessary and highly reliable across operators (99.6% agreement).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these methodological requirements and limitations. Reviewer 1 notes the validation is 'compelling' and Reviewer 2 praises the 'clarity of the presentation,' suggesting the explanation of algorithm assumptions and requirements is well-accepted. The necessity of manual editing and its reliability are not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "To overcome challenges with varying activation levels, the authors propose updating motor unit filters and classification centroids during resting periods rather than continuously (which would be computationally demanding). They recommend operators display pulse trains between contractions to monitor decomposition accuracy.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While these are proposed solutions rather than tested results, no reviewer challenges these recommendations. Reviewer 3's comment that 'the method will be of use to the field' after revision suggests acceptance of the authors' approach to addressing limitations, including these proposed solutions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C106",
+      "C108",
+      "C109"
+    ],
+    "result": "The software's main purpose is to provide real-time visual feedback based on individual or population motor unit activity. The smoothing filter duration is user-adjustable, and the authors hope the open-source software will enable neuroscientists to design new experimental paradigms for studying neural control at the motor neuron level.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 explicitly states 'the great potential that real-time decoding will provide' and Reviewer 3 notes after revision that 'the method will be of use to the field.' These statements affirm the software's intended purpose and potential impact as described by the authors.",
+    "result_type": "MAJOR"
+  }
+]

@@ -1,0 +1,220 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5"
+    ],
+    "result": "CRF_ID 2.0 extends the original CRF_ID method, which was optimized for whole-brain imaging, to multi-cell imaging applications. This advancement enables high-accuracy automated cell annotation in multi-cell images, expediting cell identification and reducing subjectivity in C. elegans and potentially other biological images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C5 establish the context and main contribution of the work. The prior development of CRF_ID for whole-brain images (C1, C2) is supported by citation. The limitation for multi-cell images (C3) motivates the current work. The advancement to CRF_ID 2.0 (C4) and its demonstrated utility (C5) are supported by experimental data presented throughout the manuscript.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C78"
+    ],
+    "result": "A new two-step coordinate axes prediction method was developed that corrects AP axes using autofluorescence landmarks and LR/DV axes by searching for bilateral symmetry. This method significantly improves axes prediction accuracy (>90% within 10\u00b0 of ground truth) and neuron ID accuracy compared to PCA-based methods, with performance comparable to manually defined axes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C36 and C78 describe the axes prediction challenge and the new solution. The experimental results in Figure 2 demonstrate significant improvements in both axes accuracy (C33, C34) and neuron ID correspondence (C35, C36). Statistical significance is reported (p<0.05), and the method addresses the specific limitation of PCA for multi-cell images (C28-C30). The approach is well-justified and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Atlas specificity is critical for optimal CRF_ID 2.0 performance. Data-driven atlases derived from the same strain and imaging conditions as the test data significantly outperform literature-based atlases (OpenWorm, NeuroPAL). Strain specificity and imaging conditions are more important than sample size, though 5-10 well-curated datasets appear sufficient for atlas construction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C52 systematically compare different atlas sources. Figure 3 provides quantitative evidence showing the glr-1 strain-specific atlas achieves highest accuracy, even with fewer datasets than NeuroPAL (C44, C45). The correlation between atlas similarity and neuron ID accuracy (C50) and the saturation analysis (C47, C48) support the conclusions. Statistical tests confirm significance (p<0.05). The finding that a single-dataset glr-1 atlas outperforms the 9-dataset NeuroPAL atlas (C45) strongly supports the importance of strain/imaging specificity (C46).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "CRF_ID 2.0 achieves automated neuron identification accuracy comparable to human annotators. Best single prediction accuracy is ~85%, with top-3 predictions reaching ~96%. The algorithm's performance matches or exceeds individual human annotators, and errors correlate with inter-annotator disagreement, suggesting the algorithm identifies the same 'difficult' neurons as humans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C64 establish ground truth methodology and compare automated vs. manual annotation. Figure 4 shows CRF_ID 2.0 performance is statistically comparable to human annotators (C59, C60, C61). The correlation between automated and manual accuracy on a per-neuron basis (C62, C63, C64) provides strong evidence that the algorithm's errors are reasonable and reflect inherent ambiguity rather than systematic failure. Leave-one-out cross-validation (C56) ensures proper evaluation methodology.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "CRF_ID 2.0 was applied to analyze neuron-specific glr-1 gene expression using both extrachromosomal and integrated transgenic reporters. Expression patterns were similar between transgene types, with high inter-individual variability. Notably, transgene expression patterns did not correlate well with CeNGEN mRNA profiling data, likely due to methodological differences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C77 describe the gene expression analysis application. The biological context (C65-C67) is supported by citations. The experimental observations (C69-C75) are supported by data in Figure 5. The lack of correlation with CeNGEN data (C76) is clearly shown, though the explanations (C77) are speculative. The finding that extrachromosomal and integrated transgenes show similar patterns (C70, C72) is well-supported by Figures 5b-c and Figure 5\u2014figure supplement 2 (C71). This demonstrates a practical application of the method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "The CRF_ID 2.0 pipeline is a multi-step optimization algorithm that extracts positional features from segmented cells and compares them against a reference atlas using a CRF model to compute probability distributions over cell identity assignments. The method was validated using 26 manually annotated volumes of glr-1p::NLS-mCherry-NLS transgenic worms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C24 describe the computational framework and experimental dataset. The CRF model approach (C19, C21) is supported by citation to Lafferty et al., 2001. The biological context for glr-1 expression (C22, C23) is supported by multiple citations. The dataset size (C24) is clearly stated and used throughout the manuscript. These claims establish the methodological foundation of the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Cell identification is a major challenge in C. elegans research, particularly for multi-cell imaging which is more common than whole-brain imaging. Multi-cell imaging is necessary for gene expression analysis (averaging ~40 neurons) and is more accessible than whole-brain imaging. Currently, no automated methods exist specifically for multi-cell images.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6-C7 and C10-C14 establish the motivation and context for the work. The importance of cell identification (C6, C7) reflects established knowledge. The lack of automated methods for multi-cell images (C10) is a key gap addressed by this work. The prevalence of multi-cell imaging (C11) and its necessity for gene expression analysis (C12, C13) are supported by citation to Taylor et al., 2021. The accessibility argument (C14) is reasonable and reflects practical considerations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "CRF_ID is based on graphical optimization using Conditional Random Fields and demonstrated superior performance compared to registration-based methods for whole-brain images. Its structured, interpretable models and modular architecture make it ideal for adaptation to multi-cell images, though multi-cell-specific modifications were necessary for optimal accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9 and C15-C17 describe the original CRF_ID method and rationale for its adaptation. The methodological basis (C8) and prior performance (C9) are supported by citation to Chaudhary et al., 2021. The advantages over other methods (C15) are supported by citations to Toyoshima et al., 2020 and Yu et al., 2021. The interpretability of structured models (C16) is a valid characterization. The need for modifications (C17) is demonstrated by the experimental results throughout the manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "CRF_ID 2.0 maintains the modular, flexible architecture of the original method, allowing heuristic-based feature selection and rapid atlas construction (seconds vs. hours for deep learning). The method can potentially be applied to diverse biological images beyond C. elegans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C79-C83 describe advantages of the CRF_ID approach that are supported by the method's design and demonstrated performance. The flexibility (C79, C81) and rapid atlas building (C82, C83) are inherent to the graphical model approach and are reasonable claims. However, C84's claim about applicability to diverse biological images is speculative and not experimentally validated in this work. While the reasoning is sound, this would require additional experimental evidence to be fully supported.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108"
+    ],
+    "result": "Detailed experimental methods are provided for strain construction, imaging protocols, manual annotation procedures, axes correction algorithms, accuracy evaluation, and gene expression analysis. Two C. elegans strains (ZC3292 and ZC3612) were used with specific imaging parameters and analysis procedures.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C108 provide comprehensive methodological details. The strain information (C85, C86), imaging parameters (C87-C96), annotation procedures (C97-C99), computational methods (C100-C102), and analysis protocols (C103-C108) are clearly described with appropriate citations where relevant. These details enable reproducibility and are consistent with the results presented. The methods are appropriate for the stated objectives.",
+    "result_type": "MINOR"
+  }
+]

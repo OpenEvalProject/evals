@@ -1,0 +1,431 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C36",
+      "C37",
+      "C38",
+      "C41",
+      "C55",
+      "C56"
+    ],
+    "result": "The study employed scRNA-seq and HCR-FISH to identify 13 distinct cell clusters in the 9-day post-evisceration regenerating intestinal anlage and mesentery of Holothuria glaberrima, with 3844 total cells analyzed (2392 from anlage, 1452 from mesentery).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological approach is clearly described (C3, C36, C37, C41), the timepoint selection is justified (C38), and the primary quantitative results are reported (C4, C55, C56). The clustering analysis is supported by appropriate statistical validation (C59) and quality control metrics are provided. The experimental design of separating anlage from mesentery tissues is sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The 13 clusters segregate into two major supra-clusters representing coelomic epithelial cells (7 clusters, 69.6% of cells) and mesenchymal cells (2 clusters, 19.1% of cells), with 4 additional clusters representing coelomocyte populations (11.3% of cells).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization is based on differential gene expression analysis (C60, C61, C67, C69) with appropriate marker genes (ERG for mesenchymal, WNT9 for epithelial) validated by prior in situ studies (C68, C70). The quantitative distribution across clusters is clearly reported (C63-C65) and the immune-related gene expression supports coelomocyte identification (C73, C80). HCR-FISH validation strengthens the conclusions (C83-C85).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C152",
+      "C153",
+      "C154"
+    ],
+    "result": "Four distinct coelomocyte/immune cell populations (C6, C10, C11, C12) were identified based on immune-related gene expression, with C6 uniquely expressing FBCD1 and C12 expressing BAR3, validated by HCR-FISH showing widespread distribution in tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The identification is based on differential expression of immune-related genes (C79, C80, C81, C82) with GO enrichment supporting immune functions (C80). HCR-FISH validation confirms distinct cell types with appropriate tissue distribution (C83-C85). The claim of being the first expression profile of coelomocyte populations in adult echinoderms (C154) is appropriately qualified. However, the exact correspondence to previously described morphological types (C153) remains to be established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Two mesenchymal cell populations (C2 and C7) were identified expressing ECM-related genes (TIMP3, HMCN1, MMP14, ERG), with C2 representing recently EMT-transitioned cells and C7 representing more differentiated mesenchymal cells, validated by HMCN1 HCR-FISH.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization is based on expression of multiple ECM-related genes (C89-C91) with support from studies in other echinoderms (C148-C149). The developmental relationship between C2 and C7 is supported by pseudotime analysis (C92, C151). HCR-FISH validation shows appropriate spatial distribution (C93-C95). However, the EMT hypothesis (C92) requires additional validation beyond gene expression and pseudotime analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C155",
+      "C156",
+      "C157"
+    ],
+    "result": "Cluster C8 represents proliferating cells expressing markers PLK1, PCNA, CDK1, KI67, and TOP2A, with higher representation in anlage (4%) than mesentery (2%), validated by KI67 HCR-FISH and BrdU labeling in the coelomic epithelium.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The proliferative identity is strongly supported by expression of multiple established proliferation markers (C98, C99) and validated by both HCR-FISH (C101) and BrdU labeling (C102). The differential distribution between anlage and mesentery (C100) is consistent with prior observations (C155). However, the exact role of C8 in the differentiation hierarchy (C156, C157) remains somewhat uncertain and requires additional lineage tracing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C158",
+      "C159"
+    ],
+    "result": "Cluster C5 represents muscle precursor cells expressing TITIN, MYL1, MYH7, ACTG, and CNN3, localized to the basal region of the coelomic epithelium, validated by MYH7 HCR-FISH and co-expression with muscle-specific antibody.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The muscle precursor identity is strongly supported by expression of multiple muscle-specific markers (C104) and validated by HCR-FISH showing appropriate spatial localization (C105, C106). Double labeling experiments confirm cells are forming contractile apparatus (C107). The characterization is consistent with prior studies (C103, C158) and comparative data from other species (C159).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C160",
+      "C161"
+    ],
+    "result": "Cluster C9 represents neuroepithelial cells expressing neuronal genes (NETR, PRD10, ELAV2, STA10/STARD10), validated by STA10 HCR-FISH and double labeling with RN1 antibody showing fiber extensions typical of differentiating neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The neuroepithelial identity is supported by expression of multiple neuronal markers (C109) with validation by HCR-FISH (C111) and double labeling showing both mRNA and protein expression (C112). The characterization is consistent with prior studies (C110, C161) and comparative data from other organisms (C160). The cells represent differentiating rather than fully mature neurons.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Cluster C4 represents differentiating coelomic epithelial cells expressing KCNQ5, SC6A9, EFNB2, and UNC5C, with cells predominantly from mesentery (67%) rather than anlage (37%), validated by UNC5C HCR-FISH showing expression in normal intestine mesothelium and regenerating mesentery.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization is based on differential gene expression (C113) with GO enrichment supporting advanced developmental stages (C114). The tissue distribution is clearly quantified (C115). HCR-FISH validation shows appropriate spatial pattern (C116, C117) supporting the interpretation that these cells are differentiating toward coelomic epithelium of the regenerated organ (C118). However, the exact identity requires further validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167",
+      "C168",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Clusters C0, C1, and C3 represent coelomic epithelial cells at different differentiation stages, with C1 and C3 predominantly in anlage (37% of anlage cells) expressing developmental genes and pluripotency markers (PIWL1, YAP1, HES1, HSP90A), while C0 is more associated with mesentery (27% of mesentery cells), validated by NET1 and TRFM HCR-FISH showing distinct spatial patterns.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The characterization is based on shared gene expression (C119, C120) with distinct spatial distributions (C121-C123). HCR-FISH validation shows clear differential expression patterns (C124-C127) supporting distinct identities (C128). The expression of pluripotency markers (C167-C169) with support from comparative studies (C170) strengthens the precursor cell hypothesis. Trajectory analysis supports developmental relationships (C164, C171). However, definitive proof of pluripotency requires lineage tracing experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C165",
+      "C166",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C181"
+    ],
+    "result": "The coelomic epithelium of the anlage is pluripotent, with cells from C1 and C3 serving as precursor populations that can differentiate into muscle (C5), neurons (C9), coelomic epithelia (C4), and mesenchymal cells (C2/C7), supported by trajectory analysis and expression of pluripotency markers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the identification of multiple differentiation pathways from epithelial precursors is well-supported by trajectory analysis (C134-C142, C164, C171) and gene expression (C166-C169), the claim of pluripotency (C10, C173) is not definitively proven. The evidence is consistent with pluripotency but lacks direct lineage tracing experiments. Support from other echinoderm species (C174-C177) is suggestive but not conclusive. The hypothesis is reasonable but requires additional experimental validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "RNA velocity and Slingshot pseudotime analyses show that C5, C9, and C4 are terminal differentiation states, C8 (proliferating cells) transitions into C1, and C1 represents the least differentiated precursor state that gives rise to C3 and C4, with C0 representing a more advanced differentiation state.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The trajectory analysis is based on appropriate computational methods (RNA velocity and Slingshot) with consistent results across different analytical approaches (C134-C142). The interpretation is supported by the biological context and gene expression patterns. However, RNA velocity analysis has inherent limitations and assumptions that should be acknowledged. The conclusions would be strengthened by experimental validation through lineage tracing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C182",
+      "C183",
+      "C184",
+      "C185",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190",
+      "C191",
+      "C192",
+      "C193",
+      "C194",
+      "C195",
+      "C196",
+      "C197",
+      "C198",
+      "C199",
+      "C200",
+      "C201"
+    ],
+    "result": "The sea cucumber intestinal anlage functions as a blastema-like structure, with the coelomic epithelium cells serving as blastemal cells that express similar signaling factors (Wnt, FGF, TGF-beta) to amphibian blastema/AEC, but differs in that cells with both blastema and AEC characteristics are found within the same epithelial layer rather than being spatially separated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The comparison to amphibian blastema is well-supported by expression of similar signaling molecules (C190, C193-C195) and functional similarities (C189, C200). The key difference in tissue organization (C197-C199) is clearly articulated. However, this is primarily a conceptual/comparative analysis rather than direct experimental demonstration. The functional equivalence is inferred from gene expression and prior functional studies rather than demonstrated de novo.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "The holothurian intestinal regeneration process involves formation of an anlage at the injured mesentery tip through dedifferentiation and proliferation of coelomic epithelial cells, which differs from classical blastemas in that proliferation occurs mainly in the epithelium rather than mesenchyme.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is a summary of established knowledge about holothurian regeneration supported by multiple prior studies (C17-C20, C27-C32). The temporal sequence is documented (C21-C24) and the key distinction from classical blastemas is clearly stated (C20). This provides essential context for interpreting the scRNA-seq results but represents prior work rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Immunocytochemical analysis of dissociated cells showed that the sequenced populations correspond to previously described cell types, with most cells (32-60%) expressing mesothelial markers, 40% mesenchymal markers, 5% immune cell markers, and 2-7% muscle markers, though mature muscle cells and neurons were not dissociated by the protocol.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The immunocytochemical characterization provides important validation that the dissociated cells represent expected populations (C42-C47, C54). The quantification is clear and the limitations of the dissociation protocol are appropriately acknowledged (C52, C53). This quality control analysis strengthens confidence in the scRNA-seq results but represents a methodological validation rather than a primary finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "The 13 identified clusters show varying sizes (21% to 1% of total cells), each contains cells from both anlage and mesentery samples, and most clusters (except C3 and C4) were statistically validated by scSHC analysis, with each cluster exhibiting distinctive gene expression profiles.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The quantitative characterization of cluster properties is clearly reported (C57, C58, C60, C61) with appropriate statistical validation (C59). The acknowledgment that C3 and C4 were not validated by scSHC is appropriate, though their uniqueness is supported by other analyses. This represents standard quality control and characterization of clustering results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "This is the first application of scRNA-seq and HCR-FISH to adult echinoderm regeneration, focusing on 9-dpe regenerating intestine where cells are undergoing dedifferentiation and differentiation, with the unexpected finding that anlage and mesentery show similar cell cluster composition explained by gradient processes and protocol limitations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The novelty claim (C143) is appropriately qualified and the study focus is clearly stated (C144). The unexpected finding of similar clusters between tissues (C145) is thoughtfully explained by biological gradients (C146) and technical limitations (C147). This represents appropriate contextualization of the study's scope and limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C35"
+    ],
+    "result": "Animals show diverse regenerative capacities across species and tissues, with echinoderms being prime examples among deuterostomes, and scRNA-seq has been successfully applied to study regeneration in various model organisms including mammals, axolotl, planaria, and echinoderm embryos.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent well-established background knowledge in regenerative biology (C11-C16) and prior applications of scRNA-seq (C35), all appropriately supported by citations. This provides necessary context but does not represent findings from the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Coelomocytes are specialized immune cells found in echinoderm coelomic fluid and organs with roles in pathogen recognition, phagocytosis, and other immune functions, and have been shown to be present in holothurian injury sites, mesentery, and regeneration anlage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge about coelomocyte biology (C75, C76) and their presence in regenerating tissues (C77), appropriately supported by citations. This provides necessary background for interpreting the coelomocyte clusters identified in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "The coelomic epithelium of regenerating tissues differs morphologically and molecularly from normal mesothelium, is composed of dedifferentiated cells, and is responsible for most cell division in the regenerating intestine.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims represent established knowledge from prior studies (C96, C97) appropriately supported by citations. This provides essential context for understanding the coelomic epithelial clusters identified in the scRNA-seq analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180"
+    ],
+    "result": "The mesentery coelomic epithelium (C0) expresses SAA1, an immune-related gene, raising the possibility that the coelomic epithelium could be a source of coelomocytes, as observed in other echinoderms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The observation of SAA1 expression in C0 is data-supported (C178) and consistent with prior localization studies (C179). The hypothesis that coelomic epithelium could generate coelomocytes is supported by observations in other echinoderms (C180) but remains speculative for this system. The authors appropriately present this as a possibility rather than a conclusion, but it requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C39"
+    ],
+    "result": "The normal intestine consists of three layers (mesothelium including coelomic epithelium and muscle, connective tissue, and luminal epithelium) that are continuous with the mesentery and body wall, and at 9 dpe the anlage consists of epithelial cells surrounding connective tissue with mesenchymal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are straightforward anatomical descriptions (C25, C26, C39) supported by the figures and consistent with established holothurian anatomy. This provides necessary structural context for interpreting the cellular analysis.",
+    "result_type": "MINOR"
+  }
+]

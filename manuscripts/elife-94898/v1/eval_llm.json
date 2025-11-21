@@ -1,0 +1,279 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C55"
+    ],
+    "result": "RIG-I has been lost independently multiple times across vertebrate evolution, with at least three independent loss events in mammals, birds, and fish. The oldest loss occurred approximately 330 million years ago in species like Erpetoichthys calabaricus, while more recent losses occurred in Gallus gallus (<42 MYA). Gene synteny analysis confirms RIG-I absence in Tupaia belangeri, Gallus gallus, and Miichthys miiuy, and suggests zebrafish lost one RIG-I copy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C6 and C55 provide converging evidence from phylogenetic analysis (C2, C3, C4), gene synteny analysis (C6), and literature citations (C1, C5, C55) documenting multiple independent RIG-I loss events across vertebrates. The TimeTree database dating and genomic analyses provide quantitative support for the evolutionary timeline and distribution of these losses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C69"
+    ],
+    "result": "M. miiuy and G. gallus cells possess receptors that recognize 5'ppp-RNA, as demonstrated by differential activation of IRF3 and IFN-1 induction by phosphorylated versus dephosphorylated viral RNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C8 provide direct experimental evidence from IRF3 dimerization assays and qPCR showing that 5'ppp-RNA is more potent than dephosphorylated RNA in activating immune responses. Claim C69 correctly infers the presence of 5'ppp-RNA receptors from this differential response pattern. The experiments include appropriate controls (dephosphorylated RNA) and multiple readouts (IRF3 activation, IFN-1 induction).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "M. miiuy LGP2 actively regulates M. miiuy MDA5's immune response to SCRV virus, functioning as an intermediate regulatory factor rather than a downstream signal transmitter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C10 is supported by co-transfection experiments (Figures 1G-I) showing that LGP2 modulates MDA5-mediated immune responses. The interpretation that LGP2 acts as a regulatory factor is consistent with the experimental data and cited literature (Saito et al., 2007), though the mechanistic details of this regulation are not fully elucidated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C16",
+      "C70"
+    ],
+    "result": "MDA5 plays a positive role in antiviral immunity in M. miiuy by activating NF-\u03baB, IRF3, IRF7, and IFN-1 signaling pathways, inducing interferon-stimulated genes, and inhibiting SCRV replication. The induction of antiviral innate immunity by SCRV-RNA depends on MDA5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C13, C16, and C70 provide comprehensive evidence from multiple experimental approaches: luciferase reporter assays (C11), qPCR for ISG expression (C12), viral plaque assays and replication studies (C13), and IRF3 dimerization assays (C16). The knockdown and overexpression experiments show consistent bidirectional effects, and the dependency on MDA5 is demonstrated through loss-of-function studies. The convergence of multiple independent assays strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C56",
+      "C57"
+    ],
+    "result": "MDA5 binds to both MAVS and STING in M. miiuy, with STING playing an important role in MDA5-mediated immune transmission. This differs from vertebrates with RIG-I, where STING exclusively binds RIG-I rather than MDA5.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C15 are supported by co-immunoprecipitation experiments (Figures 2L-M) and functional co-transfection studies (Figures 2N-O). The novel MDA5-STING interaction in RIG-I-deficient species (C57) is supported by experimental data and citations to similar findings in other RIG-I-deficient species. Claim C56 provides important context about the typical STING-RIG-I interaction in RIG-I-containing vertebrates, though this is based on general knowledge rather than experiments in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C71"
+    ],
+    "result": "M. miiuy MDA5 directly binds SCRV RNA through its RD domain, as demonstrated by RNA immunoprecipitation and domain deletion experiments. MDA5-\u0394RD cannot bind SCRV RNA or induce antiviral responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C20 and C71 provide strong evidence through RNA immunoprecipitation (C17), domain deletion studies (C18), viral replication assays (C18), and gene expression analysis (C19). The use of \u03b2-actin mRNA as a negative control (C17) and the loss of function in MDA5-\u0394RD mutants provide compelling evidence for RD domain-dependent RNA binding. The convergence of binding, functional, and expression data strongly supports the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C76"
+    ],
+    "result": "MDA5 from M. miiuy and G. gallus can recognize 5'ppp-RNA in a triphosphate-dependent manner, similar to RIG-I's canonical function. This recognition is mediated by the RD domain and is disrupted by dephosphorylation or capping of the 5'-triphosphate end.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C28 and C76 provide comprehensive evidence through multiple complementary approaches: RNA pull-down assays (C21, C24), IRF3 dimerization assays (C22, C23), EMSA with purified recombinant protein (C25), domain deletion studies (C26), and cross-species validation with G. gallus MDA5 and VSV RNA (C27). The experiments include appropriate controls (dephosphorylated and capped RNA variants) and demonstrate specificity for the 5'-triphosphate structure. The convergence of in vitro binding, cellular functional assays, and cross-species validation provides strong support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C72"
+    ],
+    "result": "SCRV infection significantly alters m6A modification of host transcripts, including increased m6A methylation of MDA5 mRNA, particularly in the exon1 region. The m6A modification of MDA5 increases upon SCRV infection or poly(I:C)-HMW stimulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 and C72 are supported by MeRIP-seq data (C29-C31), MeRIP-qPCR validation (C32-C33), and semiquantitative PCR (C32). The identification of 3060 differentially methylated peaks and specific m6A sites in MDA5 exon1 with statistical significance (p<0.05) provides quantitative support. The validation of sequencing results with independent qPCR methods strengthens the findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C34",
+      "C74"
+    ],
+    "result": "SCRV can regulate MDA5 expression through an m6A methylation mechanism, as demonstrated by luciferase reporter assays showing that cycloleucine (an m6A inhibitor) prevents SCRV-mediated degradation of MDA5-exon1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34 and C74 are supported by luciferase reporter assays using the m6A inhibitor cycloleucine (Figure 5G). The rescue of MDA5-exon1 expression by cycloleucine treatment provides evidence for m6A-dependent regulation. However, the mechanism could be more directly demonstrated with additional experiments targeting specific m6A machinery components.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "MDA5 expression shows fluctuating changes during SCRV infection, with mRNA and protein levels first significantly increasing and then returning to normal levels in both tissues (spleen and kidney) and cultured cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by time-course qPCR and Western blot data (Figures 5H-J). The biphasic expression pattern is observed across multiple experimental systems (tissues and cell culture) and with both SCRV infection and poly(I:C)-HMW stimulation, suggesting a robust and reproducible phenomenon. The pattern is consistent with MDA5 being an interferon-stimulated gene subject to feedback regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "METTL3 and METTL14 cooperatively regulate m6A methylation and directly control MDA5 expression by increasing m6A modification of MDA5 mRNA, reducing its stability, and promoting its degradation. This METTL3/14-mediated regulation suppresses MDA5's antiviral capabilities and promotes SCRV replication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C44 provide comprehensive evidence through co-immunoprecipitation (C37), global m6A quantification (C38), viral replication assays (C39), MeRIP-qPCR (C40), mRNA stability assays (C40), cycloleucine rescue experiments (C41), and functional co-transfection studies (C43). The convergence of multiple experimental approaches\u2014demonstrating protein interaction, methylation changes, mRNA stability effects, and functional consequences\u2014strongly supports the proposed mechanism. The use of cycloleucine as a pharmacological inhibitor provides additional mechanistic validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "YTHDF2 and YTHDF3 (but not YTHDF1) bind MDA5 mRNA and mediate its degradation through the METTL3/14-m6A-YTHDF2/3 regulatory network. FTO can counteract this degradation by removing m6A modifications, while ALKBH5 does not affect MDA5 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C50 are supported by RIP assays (C45), knockdown/overexpression experiments (C46), epistasis experiments with si-METTL3/14 (C47), and FTO/ALKBH5 overexpression studies (C48-C49). The specificity of YTHDF2/3 over YTHDF1 and FTO over ALKBH5 is demonstrated through direct comparisons. The ability of si-METTL3/14 to counteract YTHDF2/3 effects and of FTO to reverse YTHDF2/3 inhibition provides strong evidence for the proposed regulatory network.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "RIG-I detects short blunt-end 5'ppp-RNA while MDA5 recognizes long viral dsRNA, and 5'ppp-RNA is present in multiple RNA virus families including Flaviviridae, Paramyxoviridae, Coronaviridae, Orthomyxoviridae, and Rhabdoviridae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 are well-established facts from the literature, supported by multiple citations (Kato et al., 2006; Hornung et al., 2006; Loo and Gale, 2011). These claims provide important background context for understanding the significance of MDA5 acquiring 5'ppp-RNA recognition capability in RIG-I-deficient species.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C58",
+      "C59",
+      "C60",
+      "C61"
+    ],
+    "result": "Previous studies have shown that in RIG-I-deficient species like T. belangeri, MDA5 and LGP2 underwent positive selection and can sense RIG-I agonist viruses. MDA5 and RIG-I can recognize overlapping viruses, and in fish with RIG-I, MDA5 has stronger antiviral ability than RIG-I. RIG-I loss in chickens may explain their increased susceptibility to influenza compared to ducks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C58-C61 are supported by citations to previous studies and provide important evolutionary and functional context. These claims establish precedent for the current study's findings and help explain the biological significance of RIG-I loss and MDA5 functional compensation. The claims are appropriately attributed to prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C54",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C73"
+    ],
+    "result": "m6A modification plays a crucial role in viral immune evasion by either shielding viral RNA from RIG-I recognition or reducing host immune responses through degradation of immune transcripts. Previous studies have shown that m6A can affect viral RNA recognition, IFN-\u03b2 stability, and ISG expression, and SCRV infection increases cellular methylation levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C62-C67, and C73 are well-supported by citations to previous literature and the authors' prior work. These claims provide essential background for understanding the m6A-mediated immune evasion mechanism investigated in this study. The claims are appropriately attributed to prior studies and establish the conceptual framework for the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C68",
+      "C76",
+      "C78"
+    ],
+    "result": "The study proposes that during vertebrate evolution, MDA5 gradually acquired the ability to recognize 5'ppp-RNA (originally recognized by RIG-I), leading to functional redundancy and eventual loss of RIG-I from some vertebrate genomes. This represents a co-evolutionary arms race between 5'ppp-RNA viruses and viral receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68, C76, and C78 represent the major evolutionary hypothesis of the study, supported by the experimental demonstration that MDA5 can recognize 5'ppp-RNA (claims C21-C28), the phylogenetic evidence of multiple RIG-I losses (claims C1-C6), and the functional characterization of MDA5's antiviral activity (claims C11-C16). While the evolutionary hypothesis involves inference and speculation (C68), it is well-supported by the convergence of phylogenetic, functional, and molecular evidence. The hypothesis provides a parsimonious explanation for the observed pattern of RIG-I losses across vertebrates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C77"
+    ],
+    "result": "As a counter-strategy, 5'ppp-RNA SCRV virus can utilize the m6A methylation mechanism to degrade MDA5 and weaken its antiviral immune ability, promoting viral replication and immune evasion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C77 is supported by the comprehensive experimental evidence showing that SCRV infection increases m6A modification of MDA5 (claims C29-C33), that METTL3/14 mediate MDA5 degradation (claims C37-C44), and that this regulation suppresses antiviral responses and promotes viral replication (claim C43). The claim represents a well-supported synthesis of the m6A-related findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C79"
+    ],
+    "result": "The study provides insights into host-pathogen coevolution and the ecological and evolutionary factors contributing to immune system diversity, particularly in fish and birds as the most abundant aquatic and terrestrial vertebrates with frequent RIG-I deficiency.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75 and C79 represent appropriate summary statements about the study's broader significance. These claims are supported by the totality of the experimental and evolutionary findings, though they involve some speculation about the general implications. The focus on fish and birds as model systems for understanding RIG-I deficiency is well-justified given their abundance and frequent RIG-I loss.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,259 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C14",
+      "C15",
+      "C16",
+      "C60"
+    ],
+    "result": "Cell adhesion during early biofilm development triggers elevated persister cell formation. Adhered cells show significantly higher persister rates than planktonic cells at the same culture duration, and this persister rate increases with adhesion time while remaining stable in planktonic populations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C14-C16 provide converging experimental evidence from biphasic killing curves (Figure 1B-D) demonstrating that cell adhesion specifically increases persister formation. The data show clear temporal and population-specific patterns. C60 appropriately synthesizes these findings. The experimental design appropriately controls for culture duration by comparing adhered vs. planktonic cells from the same system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24"
+    ],
+    "result": "Elevated c-di-GMP levels in adhered cells correlate with increased persister formation. The c-di-GMP sensor shows progressive increases in R\u207b\u00b9 values (median 0.64\u21920.93\u21921.18) with adhesion time in adhered cells, while planktonic cells maintain low levels (0.31-0.35). Spatial analysis shows highest c-di-GMP at biofilm bottom layers, corresponding to highest persister rates, and FACS-sorted high c-di-GMP subpopulations show elevated persister frequencies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C24 provide multiple lines of evidence linking c-di-GMP levels to persister formation through temporal dynamics (C17-C20), spatial distribution (C21-C22), and direct sorting experiments (C23-C24). The c-di-GMP biosensor is appropriately validated and the correlation coefficient of 0.694 (C39) supports the relationship. Time-lapse imaging (C24) confirms persister phenotype with resuscitation capability.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "Genetic manipulation of c-di-GMP levels causally affects persister formation. PdeH overexpression (reducing c-di-GMP) decreases persister rates, while DgcZ overexpression (increasing c-di-GMP) increases persister rates in both adhered and planktonic cells. The catalytically inactive DgcZ-m mutant does not increase persister formation, confirming c-di-GMP synthesis is required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C25-C31 provide strong causal evidence through gain- and loss-of-function experiments with appropriate controls. The use of catalytically inactive DgcZ-m (C31) is a critical control demonstrating specificity. The bidirectional manipulation (PdeH vs. DgcZ) and consistent effects across adhered and planktonic populations strengthen the conclusion. Sample sizes (n=3) are adequate for the observed effect sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "HipH is required for c-di-GMP-mediated persister formation in biofilms. Knockout of hipH significantly reduces persister formation under elevated c-di-GMP conditions but not during exponential growth. This effect is observed in vitro biofilms and in vivo intracellular bacterial communities (IBCs) in mouse bladders, while hipA knockout has minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C36 demonstrate HipH's specific role through systematic knockout studies in multiple contexts. The KEIO library screen (C32) provides unbiased identification, and the distinction from HipA (C34) is important for specificity. The in vivo validation (C36) with appropriate sample sizes (n=9-11) strengthens clinical relevance. The context-dependence (requiring elevated c-di-GMP, C32-C33) supports the proposed regulatory mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "c-di-GMP transcriptionally regulates hipH expression. DgcZ overexpression increases hipH mRNA and protein levels, while catalytically inactive DgcZ-m does not. Single-cell fluorescence imaging shows positive correlation (r=0.694) between c-di-GMP and HipH levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C39 provide multiple lines of evidence for transcriptional regulation through qPCR (C37), fluorescence imaging (C38-C39), and appropriate negative controls (C38). The correlation coefficient of 0.694 (C39) indicates a moderate-to-strong relationship. However, the mechanism of transcriptional activation is not fully elucidated\u2014promoter analysis would strengthen this result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "c-di-GMP acts as an antitoxin to modulate HipH toxicity and control dormancy depth. HipH overexpression alone causes deep dormancy with 72\u00b15% VBNC cells and 17.9\u00b12.3% dead cells. Co-overexpression of c-di-GMP (via DosC or DgcZ) rescues growth potential in a dose-dependent manner (36\u00b16.7% with DosC, 85\u00b118% with DgcZ), reducing VBNC and death rates while increasing persister formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 demonstrate c-di-GMP's antitoxin function through dose-dependent rescue experiments. The distinction between VBNC, dead, and persister cells is important and appropriately characterized. The dose-response relationship (DosC vs. DgcZ producing different c-di-GMP levels) supports a quantitative model. However, the high variability in DgcZ rescue (85\u00b118%) suggests experimental variability that could be addressed with larger sample sizes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "HipH functions as a genotoxic DNase that induces DNA double-strand breaks. Domain deletion analysis shows the HTH DNA-binding domain (not the kinase domain) is essential for toxicity. HipH localizes to nucleoids, induces SOS response genes, cleaves plasmid DNA in vitro in a concentration-, time-, and temperature-dependent manner, and RecG overexpression rescues HipH toxicity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C51 provide comprehensive evidence for HipH's DNase activity through multiple complementary approaches: domain mapping (C44-C45), localization (C46), cellular responses (C47-C48), in vitro biochemistry (C49-C50), and genetic rescue (C51). The finding contradicts prior literature (C67-C68) but is well-supported. The in vitro DNase assay shows clear dose-response relationships. The RecG rescue (C51) provides functional validation of DSB induction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "c-di-GMP directly binds HipH and inhibits its DNase activity. Pull-down assays demonstrate physical interaction with KD=7.6 \u03bcM. c-di-GMP specifically displaces HipH from biotin-c-di-GMP complexes (cAMP and GTP do not), and c-di-GMP addition suppresses HipH's DNA cleavage activity in vitro while other nucleotides and HipB do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C57 provide strong biochemical evidence for direct c-di-GMP-HipH interaction through multiple assays. The KD determination (C53) provides quantitative binding affinity. Specificity controls with other nucleotides (C54, C56) and HipB (C57) are appropriate. The functional consequence (inhibition of DNase activity, C55) directly links binding to biological function. The use of both cell lysate and purified protein (C52) strengthens confidence in the interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "c-di-GMP reduces HipH-induced DNA damage in vivo. Cells overexpressing HipH show Gam-GFP foci (DSB marker) in 8.85\u00b11.28% of cells vs. 0.30\u00b10.12% in wild-type. Elevating c-di-GMP (via DosC or DgcZ) reduces foci to 1.34\u00b10.39% and 0.46\u00b10.19%, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 provide in vivo validation of c-di-GMP's protective effect using the established Gam-GFP DSB reporter. The dose-dependent reduction with DosC vs. DgcZ is consistent with their different c-di-GMP production capacities. The low baseline in wild-type (0.30%) provides appropriate context. Sample sizes (n=3) are adequate given the clear effects observed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "A novel toxin-antitoxin-like system involving HipH (toxin) and c-di-GMP (antitoxin) regulates genome stability and persister formation in biofilms. This system is triggered by cell adhesion and represents a noncanonical TA module where a small molecule serves as the antitoxin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 synthesize the major findings into a coherent model. The characterization as a 'TA-like system' is appropriate given that c-di-GMP is a small molecule rather than a protein antitoxin. All components are experimentally validated: adhesion trigger (C2, C14-C16), HipH as genotoxic toxin (C44-C51), c-di-GMP as antitoxin (C42-C43, C52-C59), and effects on genome stability and persister formation (throughout). This represents a conceptual advance in understanding TA systems.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "Targeting the c-di-GMP-HipH system effectively inhibits drug tolerance in UPEC infections, presenting a potential therapeutic strategy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is a broad therapeutic claim based on the hipH knockout experiments (C35-C36). While the in vivo mouse model (C36) shows reduced persister formation in \u0394hipH strains, this is a proof-of-concept genetic experiment rather than a therapeutic intervention. No pharmacological targeting, drug development, or treatment efficacy data are presented. The claim overstates the therapeutic readiness of these findings. Follow-up work developing specific HipH inhibitors or c-di-GMP modulators would be needed to support this therapeutic claim.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C7",
+      "C8",
+      "C9"
+    ],
+    "result": "Biofilms harbor high persister cell frequencies (10-1000\u00d7 higher than planktonic cells), contributing to antibiotic insensitivity and chronic infections. Persister cells are phenotypic variants that survive antibiotic treatment and can resuscitate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C7-C9 establish the background context for the study through citations to established literature. These are well-accepted concepts in the field supported by multiple prior studies. The claims appropriately frame the research question but represent prior knowledge rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "Recent evidence challenges the hypothesis that biofilm matrix limits antibiotic penetration, showing that matrix mesh size exceeds antibiotic molecule size, most antibiotics don't strongly interact with matrix, and mature biofilm cells resemble stationary phase cells metabolically.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C12 cite recent literature challenging traditional views of biofilm antibiotic tolerance. These appropriately contextualize why the authors investigated alternative mechanisms (cell adhesion-triggered persistence). The citations appear accurate based on the referenced studies. This represents important background but not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C13",
+      "C64"
+    ],
+    "result": "c-di-GMP is a well-established secondary messenger that increases during cell-surface adhesion and regulates the transition from planktonic to sessile lifestyle by influencing biofilm-related gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C64 describe established knowledge about c-di-GMP signaling in bacteria, appropriately cited to prior literature. This provides necessary background for understanding the novel findings about c-di-GMP's role as an antitoxin. The claims accurately represent current understanding in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "UPEC causes ~80% of UTIs, forms biofilms on various surfaces including catheters and bladder cells, and the UPEC16 strain used in this study is phylogenetically similar to reference strains CFT073 and UTI89.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C63 establish the clinical relevance and characterization of the bacterial strain used. The phylogenetic analysis (C63, Figure 1\u2014figure supplement 1A) appropriately validates the UPEC16 strain. These are important methodological details supporting the study's clinical relevance but represent characterization rather than major findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C65",
+      "C66"
+    ],
+    "result": "Other small metabolic molecules like (p)ppGpp and cAMP-CRP regulate bacterial persistence through distinct mechanisms involving ribosome dimerization and global metabolic regulation, respectively.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C66 cite recent literature on other persistence mechanisms to contextualize the novelty of the c-di-GMP-HipH system. The citations appear appropriate and help position this work within the broader field of persistence regulation. This is discussion/context rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Previous studies identified HipH as a Ser/Thr kinase with substrates RpmE and CsrA, and HipB as its antitoxin, but the current study challenges this characterization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 accurately cite prior literature (Gratani et al., 2023; Maeda et al., 2017) that characterized HipH differently than the current study. This appropriately acknowledges prior work while setting up the contrasting findings. The current study's evidence (C44-C57) demonstrates HipH functions primarily as a DNase, not a kinase, and that HipB does not inhibit its DNase activity (C57). This represents important correction of prior understanding.",
+    "result_type": "MINOR"
+  }
+]

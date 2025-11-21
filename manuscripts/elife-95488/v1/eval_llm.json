@@ -1,0 +1,399 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C55",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C138",
+      "C139"
+    ],
+    "result": "Acalabrutinib, Zanubrutinib, and Tirabrutinib destabilize the autoinhibited conformation of full-length BTK by disrupting SH3/SH2 domain interactions, while Pirtobrutinib uniquely stabilizes the compact autoinhibited conformation. Each inhibitor induces distinct allosteric conformational changes in full-length BTK that are not predicted from crystal structures of the isolated kinase domain.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C32, C55, C66-C73, C138-C139 are supported by convergent evidence from NMR (C55, showing W395 chemical shifts indicating inactive kinase conformation) and HDX-MS experiments (C66-C72, showing differential deuterium incorporation patterns in regulatory domains). The data demonstrate that Acalabrutinib, Zanubrutinib, and Tirabrutinib increase deuterium incorporation in SH3 domains (destabilization), while Pirtobrutinib decreases it (stabilization), with Figures 4-5 providing comprehensive spatial mapping of these changes across the full-length protein.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The BTK T474I mutation reduces kinase activity compared to wild-type, while the L528W mutation completely abolishes catalytic activity. Neither mutation increases kinase activity, indicating that enhanced catalytic function is not the mechanism of resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C78 are supported by western blot data (Figure 6a-d) showing reduced Y551 phosphorylation for T474I and complete absence for L528W. The conclusion that augmented kinase activity is not the resistance mechanism (C78) logically follows from the activity data and is consistent with prior reports (C77, supported by multiple citations).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C99",
+      "C100",
+      "C33",
+      "C34"
+    ],
+    "result": "The catalytically inactive BTK L528W mutant activates the SRC kinase HCK through a mechanism dependent on the proline-rich region of BTK but independent of BTK Y551 phosphorylation. The isolated kinase domain is insufficient for HCK activation, requiring the regulatory domains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C100, C33-C34 are supported by systematic western blot experiments (Figure 7a-f) showing: (1) L528W activates HCK despite being catalytically dead (C90), (2) Y551F double mutant retains HCK activation (C94), (3) isolated kinase domain fails to activate HCK (C95), and (4) proline-depleted mutant abolishes HCK activation (C99). The convergent evidence from domain deletion and point mutation experiments strongly supports the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C173"
+    ],
+    "result": "The BTK L528W mutant exhibits increased thermal stability compared to wild-type BTK, with a 1\u00b0C increase in melting temperature. This increased stability could potentially affect protein levels, lifetime, or trafficking in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105 and C173 are directly supported by thermal shift assay data (Figure 7g) showing Tm values of 44.9\u00b0C for WT and 46.1\u00b0C for L528W. However, C106 is speculative about in vivo consequences. While the stability increase is modest (1\u00b0C), it is reproducible and statistically significant. The speculation about functional consequences (C106) is reasonable but requires in vivo validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C153"
+    ],
+    "result": "The T474I mutation reduces but does not eliminate binding to Zanubrutinib, Tirabrutinib, and Pirtobrutinib, as evidenced by reduced protection in HDX-MS experiments. The L528W mutation completely disrupts binding to these inhibitors, showing no changes in deuterium incorporation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C115, C153 are supported by HDX-MS data (Figure 8a-d) showing differential deuterium incorporation patterns. For T474I, reduced but not absent protection in kinase domain peptides (C110) indicates weakened binding. For L528W, complete absence of deuterium incorporation changes (C113) provides strong evidence for complete loss of binding. The conclusions are consistent with prior studies (C115, Wang et al., 2022).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "NMR analysis reveals that the T474I mutation significantly reduces binding affinity to Zanubrutinib, Tirabrutinib, and Pirtobrutinib, while retaining binding to Ibrutinib and Fenebrutinib. The mutation disrupts stabilization of the inactive kinase conformation by affected inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C116-C125 are supported by NMR spectroscopy data (Figure 9) showing differential W395 chemical shift changes. The minimal spectral changes with Zanubrutinib (C116-C117), reduced upfield shifts with Tirabrutinib (C119), and multiple peaks with Pirtobrutinib suggesting fast exchange (C121) provide convergent evidence for reduced binding. The retention of Ibrutinib/Fenebrutinib binding (C122) is supported by normal spectral changes, making this a comprehensive characterization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C133",
+      "C134",
+      "C135",
+      "C136"
+    ],
+    "result": "The L528W mutation completely disrupts Zanubrutinib binding and significantly reduces binding to Tirabrutinib and Pirtobrutinib, while retaining binding to Fenebrutinib. Ibrutinib and Acalabrutinib binding are also disrupted by this mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C136 are supported by NMR data (Figure 9) showing: (1) no chemical shift changes with Zanubrutinib (C126), (2) altered spectral patterns with Tirabrutinib suggesting different binding mode (C127-C129), (3) mixed bound/unbound populations with Pirtobrutinib (C130), and (4) retention of Fenebrutinib binding (C134). The comprehensive NMR analysis across multiple inhibitors provides strong support for the differential binding effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C186",
+      "C187",
+      "C188",
+      "C189",
+      "C190"
+    ],
+    "result": "The development of C481S resistance mutation is dependent on inhibitor half-life. Short half-life inhibitors (Ibrutinib: 2-3h, Acalabrutinib: 0.6-2.8h) allow C481S mutant to escape inhibition when drug concentrations fall, while long half-life inhibitors (Zanubrutinib: 4h, Tirabrutinib: 6.5-8h, Pirtobrutinib: 20h) maintain occupancy and suppress this mutation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40, C143-C151, C186-C190 are supported by: (1) pharmacokinetic data (Table 1, C186-C190), (2) prior binding studies showing C481S binds Ibrutinib reversibly (C143-C144), and (3) clinical mutation prevalence data (Figure 1d, C22, C25-C27). The mechanistic explanation linking half-life to mutation prevalence is logical and consistent with pharmacokinetic principles (C145-C146). However, this is an inference from correlative data rather than direct experimental demonstration of the mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C182"
+    ],
+    "result": "The T474I mutation arises frequently in Tirabrutinib and Pirtobrutinib-treated patients due to disrupted drug binding combined with retained partial catalytic activity. The mutation does not disrupt Ibrutinib binding, consistent with its low occurrence in Ibrutinib-treated patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C156, C182 are supported by: (1) clinical prevalence data (C152, Figure 1d), (2) binding studies showing disrupted Tirabrutinib/Pirtobrutinib binding (C153), (3) activity data showing partial activity retention (C74-C75), and (4) retained Ibrutinib binding (C155). The mechanistic explanation (C154) logically integrates these observations. The inference about treatment options (C182) follows from the binding data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C157",
+      "C158",
+      "C159",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165"
+    ],
+    "result": "Structural analysis reveals that Zanubrutinib and Pirtobrutinib make extensive contacts with the kinase hinge region (three hydrogen bonds to E475/M477), while Ibrutinib makes only one. The central location of T474 and L528 in the active site explains why mutations at these positions differentially impact inhibitor binding based on the extent of hinge region contacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C157-C165 are supported by structural analysis (Figure 10) showing inhibitor binding modes and hydrogen bonding patterns. The correlation between number of hinge contacts and susceptibility to T474I/L528W mutations (C162) is logical and consistent with binding data. However, C165 is speculative about additional interactions with Tirabrutinib. The overall structural rationalization is sound but would benefit from co-crystal structures of mutant proteins (C166).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50"
+    ],
+    "result": "Crystal structures show that all five BTK inhibitors (Acalabrutinib, Zanubrutinib, Tirabrutinib, Pirtobrutinib, and Ibrutinib) stabilize the kinase domain in an inactive conformation with the C-helix in the '\u03b1C out' position and collapsed activation loop. Tirabrutinib uniquely shows an alternative inactive activation loop conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C50 are supported by crystal structure data (Figure 2b-g) from multiple sources (Joseph et al., 2020; Lin and Andreotti, 2023; Gomez et al., 2023; Guo et al., 2019). The structural similarity across inhibitors (C47-C49) and the unique Tirabrutinib activation loop conformation (C50) are directly observable in the structures. This provides important context but the manuscript emphasizes that solution behavior differs from crystal structures (C51, C73).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "HDX-MS and NMR analysis reveal that the T474I mutation increases dynamics in the kinase N-lobe while maintaining an active kinase conformation, whereas the L528W mutation stabilizes the autoinhibited conformation. These conformational effects are modest and unlikely to be the primary resistance mechanism.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C79-C84 are supported by HDX-MS data (Figure 6e-h) showing increased deuterium incorporation for T474I in N-lobe regions and decreased incorporation for L528W in kinase/SH3 domains. NMR data (Figure 6i) showing W395 chemical shifts corroborate these findings. The conclusion that these changes are unlikely to be the primary resistance mechanism (implicit in C78) is reasonable given the modest magnitude of changes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Clinical data show distinct mutation patterns across BTK inhibitors: Pirtobrutinib-treated patients develop T474I and L528W mutations but not C481 mutations, while Ibrutinib/Acalabrutinib-treated patients predominantly develop C481S mutations (>90%). Zanubrutinib and Tirabrutinib show mixed patterns with T474I/L528W at equal or higher frequency than C481S.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C28 are supported by clinical mutation prevalence data compiled from multiple studies (Figure 1d, Supplementary file 1) with appropriate citations. The data clearly show drug-specific mutation patterns. However, sample sizes for some inhibitors are small (Tirabrutinib n=6, Pirtobrutinib n=9), which limits statistical power. The trends are consistent across studies but would benefit from larger patient cohorts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Intact mass analysis confirms single binding site occupancy for covalent BTK inhibitors. All tested inhibitors (Acalabrutinib, Zanubrutinib, Tirabrutinib, Pirtobrutinib) decrease deuterium incorporation in kinase N-lobe and activation loop peptides, consistent with active site binding and stabilization of inactive kinase conformation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C67 are supported by intact mass spectrometry (Figure 4a) showing mass increases consistent with single inhibitor binding, and HDX-MS data (Figures 4b-c, 5a-e) showing decreased deuterium incorporation in active site regions. This is consistent with crystal structures and NMR data, providing convergent evidence for the binding mode and its effects on kinase conformation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background information on BTK inhibitors: Ibrutinib was FDA-approved in 2013 for CLL treatment by disrupting BCR signaling. Multiple BTK inhibitors are now clinically approved (Acalabrutinib, Zanubrutinib, Tirabrutinib, Pirtobrutinib, Orelabrutinib), with all except Pirtobrutinib being covalent C481-targeting inhibitors. Resistance typically develops ~2 years after treatment initiation, with mutation patterns depending on the specific inhibitor used.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 are background information supported by appropriate citations to prior literature. These establish the clinical context and rationale for the study. All claims are properly attributed to published sources and represent established knowledge in the field rather than new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The BTK kinase domain undergoes conformational changes between active and inactive states involving C-helix movement (\u03b1C in/out), W395 rotamer changes, K430:E445 salt bridge formation, and activation loop unfurling. W395 serves as an NMR probe for monitoring kinase conformational state, with chemical shift at 10.21 ppm in the active state and upfield shift upon Ibrutinib-induced inactivation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C46, C52-C54 are supported by prior work (Joseph et al., 2020, 2017) and NMR data (Figure 3). The use of W395 as a conformational probe is well-established and validated. This provides essential methodological foundation for interpreting the NMR experiments on new inhibitors but represents application of established methods rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The full-length BTK structure shows an autoinhibited conformation with dynamic PHTH domain that transiently contacts the SH3-SH2-kinase core. HDX-MS methodology shows that inhibitor binding typically decreases deuterium incorporation in the active site while allosteric inhibitors like Ibrutinib increase incorporation in regulatory domains, indicating conformational shifts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 provide methodological context supported by recent structural work (Lin et al., 2024) and prior HDX-MS studies (Joseph et al., 2020). These establish the interpretive framework for the HDX-MS experiments but are not new findings from this study. The claims accurately represent prior knowledge and established methodology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C92",
+      "C98",
+      "C169",
+      "C170",
+      "C171",
+      "C172"
+    ],
+    "result": "Prior work established that catalytically inactive BTK mutants (L528W, C481Y/F) can propagate BCR signaling through compensatory kinase activation. The C481Y/F mutant activates HCK through a Y551 phosphorylation-dependent mechanism requiring the kinase domain, distinct from the L528W mechanism characterized in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C89, C92, C98, C169-C172 are background information from prior studies (Wang et al., 2022; Yuan et al., 2022; Dhami et al., 2022) that provide context for the L528W mechanism investigation. These claims accurately represent prior findings and establish the rationale for investigating whether L528W uses a similar mechanism. The distinction between mechanisms (C92) is a key finding of the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142",
+      "C174",
+      "C175",
+      "C176",
+      "C177"
+    ],
+    "result": "Speculation on functional implications: The conformational changes induced by BTK inhibitors could alter protein-ligand interactions in vivo, potentially explaining differential efficacy across signaling pathways. The L528W mutation may require additional cellular changes for resistance, and inhibitor promiscuity may affect compensatory kinase availability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C140-C142, C174-C177 are speculative interpretations of the findings. While C141 is supported by citations showing differential efficacy (Bender et al., 2017; Li et al., 2024), the mechanistic explanations (C140, C142, C174-C177) are hypotheses requiring experimental validation. These represent reasonable speculation based on the data but lack direct experimental support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Therapeutic implications: Pirtobrutinib can inhibit C481S mutants due to long half-life. Alternative strategies include twice-daily dosing of short half-life inhibitors, using Tirabrutinib for C481S patients, Ibrutinib/Fenebrutinib for T474I patients, and PROTACs or combination therapies targeting HCK/BCL-2 for L528W patients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C178-C185 are therapeutic recommendations based on the study findings and prior work. C178 and C184 are supported by citations (Aslan et al., 2022; Dhami et al., 2022), while C179-C183, C185 are speculative proposals requiring clinical validation. C182 is supported by binding data from this study. These represent reasonable therapeutic hypotheses but are not experimentally validated treatment strategies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,301 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C24",
+      "C25",
+      "C77",
+      "C80",
+      "C81"
+    ],
+    "result": "The study analyzed 13,476 gut microbiome profiles from 479 wild baboons collected over 14 years in the Amboseli ecosystem, Kenya. Each baboon had on average 33 samples collected across 6 years of their life. The dataset represents a subset of previously published data filtered to include only baboons with precisely known ages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C24, C25, C77, C80, and C81 provide consistent and detailed information about the study design and sample collection. The sample sizes are explicitly stated with supporting methodological details, and the data provenance is clearly documented with appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "Many microbiome features change significantly with host age in baboons. All alpha diversity metrics except richness exhibited U-shaped relationships with age. Seven of ten principal components showed linear or quadratic relationships with age. Overall, 51.6% of 1440 tested features exhibited significant age associations, with 60% of phyla decreasing and only three phyla increasing with age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C40 report consistent findings from statistical analyses with appropriate FDR correction (p<0.05). The results are presented with specific percentages and effect patterns. However, C34 notes caution is warranted for patterns beyond age 20 due to small sample size (n=18 females), which is appropriately acknowledged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C41",
+      "C95",
+      "C96",
+      "C97",
+      "C98"
+    ],
+    "result": "Age-related microbiome changes in baboons differ from those in humans and chimpanzees. None of the taxa that changed with age in baboons were commonly age-associated in humans. The strongest age-related changes in baboons were in families Campylobacteraceae, Clostridiaceae, Elusimicrobiaceae, Enterobacteriaceae, and Peptostreptococcaceae, whereas human aging is associated with Akkermansia, Faecalibacterium, Bacteroidaceae, and Lachnospiraceae.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41, C97, and C98 provide specific taxonomic comparisons supported by citations. The comparison is valid and demonstrates species-specific patterns of microbiome aging. The findings are consistent with the expectation that age-related taxa differ across host populations and species.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C2",
+      "C42",
+      "C43",
+      "C62",
+      "C63"
+    ],
+    "result": "A microbiome clock was successfully developed that predicts baboon chronological age with adjusted R\u00b2 of 48.8% and median error of 1.96 years. The Gaussian process regression model with heteroscedasticity correction outperformed elastic net and Random Forest approaches. The clock explains nearly half the variance in true host chronological age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C42, C43, C62, and C63 consistently report the development and performance of the microbiome clock. The statistical metrics are clearly stated, and model comparison was performed systematically. The nested cross-validation approach is appropriate, though C87 notes a potential limitation regarding data leakage.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The microbiome clock was slightly more accurate for males (R\u00b2=50.0%, median error=1.71 years) than females (R\u00b2=48.9%, median error=2.15 years).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 report sex-stratified model performance with specific statistical metrics. The differences are modest but consistently reported. The finding is supported by the data presented in Table 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C3",
+      "C64"
+    ],
+    "result": "Male baboons exhibit older microbiome ages than females, and this pattern recapitulates well-known patterns of faster male senescence in humans and other primates. Males show a 1.4-fold higher rate of change in microbiome age as a function of chronological age compared to females, but only after sexual maturity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3 and C64 are supported by statistical analyses showing significant sex differences in microbiome aging rates (\u03b2=0.18, p<0.001 for the interaction term). The finding that this effect only appears after sexual maturity strengthens the biological interpretation. The comparison to known patterns of male senescence is appropriately cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C67",
+      "C22",
+      "C23"
+    ],
+    "result": "The baboon microbiome clock has comparable or better predictive power than human age-predicting clocks, with a median error of 1.96 years compared to 6-11 years in human clocks (accounting for the approximately 3-fold difference in lifespan).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67, C22, and C23 provide a valid comparison between the baboon and human microbiome clocks, appropriately accounting for lifespan differences. The comparison is supported by citations to the human clock studies. The relative performance advantage is clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C68"
+    ],
+    "result": "The baboon microbiome clock's ability to predict individual age is lower than age clocks based on DNA methylation patterns for both humans and baboons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C68 is supported by comparisons to epigenetic clocks in the same population (Supplementary file 1E shows epigenetic clocks achieve R\u00b2=74% for males and 60% for females vs. 50% and 48.9% for the microbiome clock). The limitation is appropriately acknowledged and explained.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C50"
+    ],
+    "result": "Individual identity explained approximately 25-50% of the variance in microbiome \u0394age for females and males respectively over the course of their lives.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 reports variance partitioning results from mixed effects models (Supplementary file 1F). The finding indicates substantial individual-level consistency in microbiome age deviations, which is biologically plausible and appropriately analyzed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C4",
+      "C52"
+    ],
+    "result": "Season predicted microbiome age in females but not males. Female baboons sampled in the dry season had microbiomes approximately 2 months older than expected (\u03b2=-0.180, p=0.021), while season did not significantly predict microbiome \u0394age in males.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4 and C52 report sex-specific seasonal effects with appropriate statistical support. The effect size is modest but statistically significant for females. The lack of effect in males is clearly stated. The biological interpretation relating to nutritional hardship during the dry season is plausible.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C5",
+      "C54",
+      "C56",
+      "C70",
+      "C71"
+    ],
+    "result": "High social dominance rank predicted old-for-age microbiomes in both sexes. Alpha males appeared approximately 4 months older than rank-10 males, while alpha females appeared approximately 1.75 years older than the lowest-ranking females. Dominance rank was the most consistent socio-ecological driver of microbiome age.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C54, C56, C70, and C71 consistently report rank effects with statistical support (males: \u03b2=0.033, p<0.001; females: \u03b2=1.745, p<0.001). However, the effect is described as 'relatively weak and noisy' for males, and the direction for females contradicts the initial prediction. The finding is unexpected but well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C60"
+    ],
+    "result": "Cumulative early-life adversity did not predict microbiome \u0394age in males, despite individual sources of adversity showing conflicting directional effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C60 reports a null finding that is explained by conflicting effects of different adversity sources (drought and maternal isolation predicted young-for-age; large group size predicted old-for-age). The lack of cumulative effect is appropriately documented in Supplementary file 1B-F.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C61"
+    ],
+    "result": "Microbiome \u0394age did not predict the timing of any developmental milestone (menarche, first birth, testicular enlargement, dispersal, adult rank attainment) or survival in either sex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C6, C7, and C61 report null findings from Cox proportional hazards models. However, the authors explicitly note these results should be treated with caution due to large numbers of censored animals, large hazard ratios, and small sample sizes for some tests (Supplementary file 1I, J). The lack of predictive power is clearly documented but the reliability of these null findings is questionable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C65",
+      "C105"
+    ],
+    "result": "Gut microbiome age largely reflects current social and environmental conditions (especially dominance rank and season) rather than past conditions or early-life adversity. Microbiome age is sensitive to transient conditions but these patterns do not have long-term consequences for development and mortality.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C65, and C105 synthesize the findings regarding temporal dynamics of microbiome age. The conclusion is supported by the pattern of results showing current conditions (rank, season) predict microbiome age while early-life adversity shows inconsistent effects and microbiome age does not predict future outcomes. This interpretation is consistent with 'recency models' of biological aging.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Social dominance rank predicts both microbiome and epigenetic age in this population. High-ranking males show old-for-age estimates in both measures and also exhibit altered immune regulation and elevated glucocorticoid levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66, C72, C73, and C74 integrate findings from the current study with prior work on epigenetic aging and physiology in the same population. The convergence of multiple aging biomarkers strengthens the interpretation that high rank in males is associated with accelerated biological aging. All claims are supported by appropriate citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "The baboon microbiome clock may be more accurate than human clocks due to: (1) relative homogeneity in host environments and lifestyles, (2) dense longitudinal sampling allowing better modeling of personalized microbiome dynamics, and (3) the Gaussian process regression approach accounting for non-linear and interactive relationships.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C100-C102 present speculative explanations for the clock's performance. While these are plausible hypotheses supported by methodological considerations, they are explicitly framed as speculation ('may be more successful') and have not been directly tested. The explanations are reasonable but lack empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C87"
+    ],
+    "result": "The training dataset was not naive to information from the host being predicted, as some samples from each host were included in the training set, potentially leading to information leakage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C87 identifies a methodological limitation that could inflate model performance estimates. This is an important caveat that affects the interpretation of the clock's accuracy. The authors appropriately acknowledge this limitation, though its quantitative impact on results is not assessed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C69"
+    ],
+    "result": "Gut microbiomes are highly personalized at the level of host species, population, and individuals, which likely limits the generalizability of the baboon clock beyond this study population.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C69 is supported by citations to prior work demonstrating microbiome personalization. This is an important limitation for the practical application of the clock. The authors appropriately acknowledge that a more generalizable clock would require training on data from multiple host populations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Quality control analyses showed that technical replicates from different batches clustered with each other rather than with their batch, indicating biological differences exceed batch effects. The final dataset had 1017-427,454 reads per sample (median=51,839) with 8492 total ASVs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83 and C84 report quality control metrics and data characteristics. The technical replicate analysis provides evidence that batch effects are minimal. The sequencing depth and ASV counts are appropriate for 16S rRNA gene sequencing studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "The introduction establishes background knowledge about biological aging, microbiome-age relationships, baboon biology, and socio-environmental factors in the Amboseli population that are known to predict health and survival outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C33 present established knowledge from prior literature, appropriately supported by citations. These claims provide necessary context for the study but do not represent novel findings. The background information is accurately presented and relevant to the study's hypotheses.",
+    "result_type": "MINOR"
+  }
+]

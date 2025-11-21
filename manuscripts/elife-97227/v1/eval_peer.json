@@ -1,0 +1,181 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C5",
+      "C7",
+      "C25",
+      "C26",
+      "C27",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "CTFFIND5 improves CTF estimation by accounting for sample thickness and tilt, leading to more accurate CTF parameters and providing valuable information about sample geometry. The software implements an extended CTF model that increases the fidelity of fits and allows Thon rings at higher resolution to be fitted reliably.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All three reviewers explicitly affirm these core claims. The editor states CTFFIND5 'leads to improved CTF determination' and describes 'compelling evidence that CTFFIND5 finds better CTF parameters than previous methods.' Reviewer 1 confirms 'the manuscript introduces novel methods inside CTFFIND5 that improve CTF estimation' and Reviewer 2 states 'the results convincingly show the added value of the program.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C37",
+      "C38",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "CTFFIND5 can measure sample tilt with an accuracy of approximately 3\u00b0 and sample thickness with an accuracy of 5 nm. Validation using tilted aquaporin crystals showed average discrepancies of 1.9\u00b0 for tilt axis direction and 1.5\u00b0 for tilt angle. Tilt series validation showed lower accuracy (2-4\u00b0 for tilt, 2.6-9.5\u00b0 for axis angles), with accuracy dependent on data quality.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'the evaluation demonstrates the performance of the new tool, with fairly accurate estimates of tilt axis, tilt angle and sample thickness.' The editor notes the evidence is 'compelling' for tilted samples. No reviewer challenges the accuracy measurements or validation approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C85",
+      "C103",
+      "C104"
+    ],
+    "result": "Tilt correction results in observation of Thon rings at higher spatial resolution. In a representative example, correcting for 12.3\u00b0 tilt improved the fit resolution from 5.9 \u00c5 to 4.6 \u00c5, with the tilt-corrected power spectrum exhibiting clearer peaks at higher resolution.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes that CTFFIND5 'provides more accurate CTF estimation' and the editor emphasizes 'compelling evidence' for improved performance with tilted samples. The specific quantitative improvements shown in Figure 1c are not challenged by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C52",
+      "C54",
+      "C56",
+      "C57",
+      "C86"
+    ],
+    "result": "CTFFIND5 implements an extended CTF model accounting for sample thickness based on McMullan et al. (2015), which allows fitting of modulations in thick samples. This results in CTF fits extending to higher resolution and provides direct readout of specimen thickness, particularly valuable for FIB-milled samples.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly states 'CTFFIND5 represents the first CTF determination tool that considers the thickness-related modulation envelope' and confirms 'CTFFIND5 thus provides more accurate CTF estimation.' Reviewer 2 notes 'the results convincingly show the added value of the program for thicker and tilted images.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Validation of thickness estimates using Beer-Lambert law and tomography showed systematic discrepancies: CTFFIND5 estimates were 14.1 nm lower than Beer-Lambert predictions (mean absolute difference 4.8 nm) and 1.05\u00d7 higher than tomography estimates. The reasons for these discrepancies are unclear, but the differences are small and CTFFIND5 estimates lie between the other two methods.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'the authors use the Lambert-Beer law on energy-filtered data and also tomographic data, thus demonstrating that the estimates are reasonable.' The systematic discrepancies are acknowledged but not challenged by reviewers, who accept the validation approach and conclusions about practical utility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C96",
+      "C97"
+    ],
+    "result": "Thickness fitting works reliably for higher exposures (~30 e-/\u00c5\u00b2) used in 2D template matching and in situ single-particle analysis, but low exposures (3-5 e-/\u00c5\u00b2) typical of cryo-tomography often preclude reliable thickness fitting. Most single-particle samples do not benefit from CTFFIND5, though some large particles like viral particles may benefit from ice thickness estimation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly acknowledges this limitation: 'While consideration of sample thickness in CTF determination sounds ideally suited for cryoET, practical application under the standard acquisition protocols in cryoET (exposure of 3-5 e/A2 per image) is still limited.' The reviewer confirms 'the authors are precise in the conclusions and clearly identify the current range of application.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "In tilt series analysis, estimated tilt angles show a roughly linear relationship with nominal stage tilt, with a ~20\u00b0 offset due to FIB milling pre-tilt. Estimated tilt axis angles (178.2\u00b0 and 179.8\u00b0) are consistent with SerialEM calibration (178.4\u00b0 and 176.3\u00b0), and pre-tilt values (20.6\u00b0 and -21.9\u00b0) match the 20\u00b0 FIB-milling angle.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 states 'the performance of the algorithm is evaluated with tilted 2D crystals and tilt-series, demonstrating accurate tilt estimation in general.' The specific validation against known experimental parameters is not challenged by any reviewer.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C91"
+    ],
+    "result": "CTFFIND5 can estimate thickness for some single-particle datasets of large particles (e.g., rotavirus), resulting in CTF fits to higher resolution. The quality-of-fit estimation extends to higher resolution in tilted and thick samples, making it a better indicator of micrograph quality than CTFFIND4.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 notes that thickness estimation 'may be a valuable resource to judge the potential for high resolution' and confirms application to 'in vitro single particle cryoEM of large specimens (e.g. viral particles).' The improved quality metrics are not challenged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CTFFIND5 performs CTF estimation in roughly one second without tilt/thickness estimation. Thickness estimation adds ~0.5 seconds, while tilt estimation increases runtime to several minutes due to exhaustive search. Near real-time estimation can be achieved using multiple CPU cores, and further optimization could improve speed.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "No reviewer challenges the runtime measurements or raises concerns about computational performance. The practical implications are implicitly accepted as the reviewers focus on the scientific value and accuracy of the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "CTFFIND5 has limitations for tilt series applications: it uses no prior information for tilt axis angle and sample tilt (unlike specialized software like Ctfplotter), resulting in reduced performance and potentially lower accuracy. There is no option to pool data from multiple tilt angles. However, it may be useful for troubleshooting angle conventions and existing pipelines may benefit from tilt correction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 implicitly acknowledges these limitations by noting the method is valuable for specific applications rather than all cryo-ET workflows. The authors' transparent discussion of limitations is not challenged, and reviewers accept the defined scope of application.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "CTF correction based on CTFFIND5 defocus estimates can reduce fringes near biological membranes in overview images. Including Wiener filter-based amplitude correction produces more naturally looking images suited for recognizing cellular features.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This application to overview images is presented as a practical benefit and is not challenged by any reviewer. It is treated as a supporting finding demonstrating the utility of the improved CTF estimates.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,268 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8"
+    ],
+    "result": "Vertebrates exhibit great diversity in segment number along the rostral-caudal axis, but the developmental origin of this evolvability is poorly understood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, and C8 establish the biological context and knowledge gap. These are well-supported statements about vertebrate diversity cited from Richardson et al., 1998, representing established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C9",
+      "C10",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Segment number is determined by the interplay between PSM morphogenesis and the segmentation clock, a molecular oscillator that controls somite formation rate and patterning accuracy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C9-C10, C12-C17 describe the established mechanistic understanding of somitogenesis, supported by multiple citations. Claims C18-C20 establish that PSM elongation mechanisms vary across species and control somitogenesis duration. These represent well-established background knowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C11",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors hypothesize that developmental modularity between the segmentation clock and PSM morphogenesis may underpin the evolvability of vertebrate segment number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C21-C23 establish the central hypothesis and define developmental modularity (Raff, 1996). The hypothesis is appropriately framed as speculation based on prior observations in corn snakes (Gomez et al., 2008) and theoretical considerations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "Prior studies suggest potential interactions between PSM morphogenesis and clock dynamics, including effects of cell rearrangements, cell division, cell ingression, and tissue convergence on clock synchrony.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C28 summarize prior experimental and theoretical work showing that morphogenesis does not affect the clock (C24) but that various morphogenetic processes could potentially affect clock dynamics (C25-C28). All claims are supported by appropriate citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C72",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The authors use a three-dimensional computational model of the zebrafish PSM and segmentation clock, parameterized with experimentally derived values, to simulate clock dynamics and cell movements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30, C72, C74-C77 describe the computational model used in the study. The model is based on prior work (Uriu et al., 2021) and uses experimentally derived parameters for zebrafish, making it appropriate for quantitative predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Varying the position of cell ingression (dorso-posterior vs. dorso-posterior+lateral-ventral) has minimal effect on clock synchrony and no effect on frequency at the PSM anterior after 1000 min.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C34 report findings from computational simulations shown in Figure 2. The results show that DP ingression has no effect while DP+LV creates only minor decreases in synchrony, with no frequency changes. The data support these conclusions, though the biological significance of 'minor' decreases is not quantified.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Clock dynamics are robust to variations in the cell motility profile, suggesting that evolution of motility and cell ingression position are not constrained by one another.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 report findings from systematic parameter exploration (Figure 3C). The lack of trends across different motility profiles supports the prediction that these parameters can evolve independently. However, this is limited to the parameter ranges tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "PSM length and cell density independently confer robustness to the clock, with length having a stronger effect. The zebrafish clock is not majorly impacted by compaction-extension during most of somitogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C43 are supported by computational results (Figures 4-5). The co-variation analysis (Figure 4\u2014figure supplement 5) supports the conclusion about relative effects. The compaction-extension simulations (Figure 5) show maintained clock dynamics for most of the simulation, though the authors acknowledge limitations at terminal stages.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C47"
+    ],
+    "result": "Cell division negatively impacts clock synchrony except when confined to the posterior PSM, suggesting a spatial threshold beyond which division does not affect anterior clock dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78 and C47 are supported by computational results (Figure 6). The simulations show that restricting division to posterior regions (x_div \u2265 175 \u03bcm) rescues synchrony. However, the biological relevance depends on whether such spatial restriction occurs in vivo, which is not definitively established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C55",
+      "C60"
+    ],
+    "result": "With coupling delay (\u03c4=21 min), synchronous oscillations cannot be achieved for DP+LV ingression, and coupling strength and delay strongly constrain the evolvability of cell ingression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51, C55, and C60 report findings from simulations with coupling delay (Figure 8). The results show that the experimentally measured parameters fail to produce synchrony, and that robustness requires specific combinations of coupling strength and delay. This is a significant finding but raises questions about model accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C4",
+      "C56",
+      "C69",
+      "C79"
+    ],
+    "result": "The zebrafish segmentation clock is broadly robust to variations in morphogenetic processes (cell ingression, motility, compaction), with robustness determined by PSM length, cell density, cell mixing rate, and clock phase coupling strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C56, C69, and C79 summarize the main computational findings. The robustness is demonstrated across multiple simulations (Figures 2-7), though with important caveats regarding cell division and coupling delay. The determinants of robustness are identified through systematic parameter exploration.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C5",
+      "C61",
+      "C62"
+    ],
+    "result": "Clock robustness is mediated by phase coupling strength and coupling delay, with delay controlled by signal transduction components, potentially constraining developmental system drift in the delta-notch pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C5 is supported by computational results (Figures 7-8). Claim C61 about coupling delay being controlled by signal transduction is cited (Lewis, 2003; Yoshioka-Kobayashi et al., 2020). However, claim C62 about constraining developmental system drift is speculative and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C6",
+      "C7",
+      "C24",
+      "C57",
+      "C64",
+      "C65",
+      "C66",
+      "C70",
+      "C80"
+    ],
+    "result": "The clock and PSM morphogenesis exhibit developmental modularity, as morphogenesis does not affect the clock (from prior studies) and clock dynamics are robust to morphogenetic changes (from current simulations).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C7, C24, C57 establish that prior studies show morphogenesis is independent of clock function. Claims C64-C66, C70, C80 conclude developmental modularity based on the computational results. The bidirectional independence supports the modularity conclusion, though the coupling delay results (C51, C55) suggest constraints on this modularity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C67",
+      "C68"
+    ],
+    "result": "The modularity of clock and morphogenesis may have contributed to the evolution of vertebrate segment number diversity and represents a present source of evolvability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C67-C68 are speculative predictions about evolutionary implications. While the modularity finding provides a plausible mechanism for evolvability, direct evidence for this evolutionary role is not provided. The claims appropriately use cautious language ('may have contributed', 'we predict').",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Cell ingression from dorsal and lateral tissues during somitogenesis likely creates local clock asynchrony, as ingressing cells do not express clock genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C83 describe established facts about cell ingression supported by citations. Claims C84-C85 present reasonable hypotheses based on this knowledge. The logic connecting non-expressing ingressing cells to local asynchrony is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "PSM length and density vary across taxa and over time, with longer PSMs and higher density predicted to confer robustness by allowing more time for synchronization and increasing neighbor number.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C87, C90, C92 describe established observations supported by citations. Claims C88-C89 present reasonable hypotheses about mechanisms. Claim C91 is supported by simulation data (Figure 4\u2014figure supplement 1). The mechanistic reasoning is sound.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C97",
+      "C98"
+    ],
+    "result": "During M-phase, clock gene expression arrests in zebrafish, causing daughter cells to lag neighbors and creating tissue asynchrony. Previous 2D models may not accurately capture this effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C94, C97-C98 describe established facts about cell division and the clock, supported by appropriate citations. Claim C95 appropriately critiques prior 2D models and justifies the 3D approach. The biological context is well-established.",
+    "result_type": "MINOR"
+  }
+]

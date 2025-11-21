@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C25",
+      "C26",
+      "C31",
+      "C32",
+      "C63",
+      "C64"
+    ],
+    "result": "The study developed a method to immobilize non-adherent AML cells for extended imaging (up to 72 hr) by combining Smart BioSurface (SBS) nanostructured titanium oxide-coated plates with methylcellulose (MC) in the culture medium. The specific protocol involved adding 20% complete medium to 80% MC on cells previously adhered to SBS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31, C32, C63, and C64 provide direct experimental evidence that the combined SBS and MC approach enabled 72-hour imaging of AML cells, with Video 1 supporting this result. The method addresses the challenge stated in C26 and C30. The specific experimental conditions (C32) and the necessity of MC after 24 hours (C64) are clearly documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "An automated image processing pipeline was developed using Fiji software that converts dual-channel FUCCI(CA)2 fluorescence images into a format suitable for automated tracking and cell cycle phase assignment. The pipeline uses HSB color space conversion, with the hue channel for phase assignment and brightness channel for tracking, successfully mapping alternating red and green signals into a single time series.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C43 describe the technical implementation of the image processing pipeline with specific details about channel usage and conversion methods. Figure 1B and 1C provide visual evidence of the pipeline's output. The approach addresses the technical challenge identified in C36-C38 regarding alternating fluorescence channels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C107",
+      "C108"
+    ],
+    "result": "A machine learning-based quality control system was developed using a random forest model trained on 2319 manually annotated tracks to automatically filter traceable from untraceable cells. The model achieved high performance (AUC=0.971, sensitivity=0.897, specificity=0.974, accuracy=0.905), which was further improved to AUC=0.975 using semi-supervised learning with pseudo-labeling. Validation showed 74% accuracy when using a probability threshold of 0.70.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C105 provide quantitative performance metrics for the machine learning model, supported by Figure 2\u2014figure supplement 1B. The validation results (C99-C100) demonstrate practical performance on real data. The training dataset composition (C107-C108) and preprocessing steps (C44-C46) are clearly documented, supporting reproducibility.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C94",
+      "C95"
+    ],
+    "result": "The automated system successfully quantified cell cycle durations at single-cell resolution over 72 hours, measuring mean cycle times of 21.5\u00b16.5 hr for NB4 cells and 24.0\u00b17.8 hr for Kasumi-1 cells, demonstrating the expected difference between these cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 provide specific quantitative measurements with standard deviations. Claims C94-C95 confirm successful quantification and detection of differences between cell lines, supported by Figure 3A and B. The results align with the known biological characteristics of these cell lines (C33).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C50",
+      "C74",
+      "C75",
+      "C76",
+      "C96",
+      "C97"
+    ],
+    "result": "The method successfully detected drug-induced cell cycle perturbations, showing that 50 nM palbociclib specifically extended the G1 phase of NB4 cells by approximately 5 hours (from 9.1\u00b15.1 hr to 14.2\u00b15.7 hr), consistent with the known mechanism of CDK2/4/6 inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C50 provides specific quantitative data on G1 phase extension. Claims C74-C76 establish the expected mechanism and confirm experimental validation shown in Figure 3B and Videos 2-4. The result demonstrates the method's ability to detect subtle drug effects (C96-C97), validating its utility for drug screening.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "The study characterized the G1/S transition phase using EdU incorporation and flow cytometry, revealing that this transition involves variable ratios of mCherry and mVenus fluorescence that can appear predominantly red, yellow, or green depending on the relative timing of mCherry degradation and mVenus accumulation. FUCCI(CA)2 mVenus levels correlate with S phase progression, with early S phase cells showing low mVenus and late S phase cells showing high mVenus.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 provide flow cytometry validation data shown in Figure 4A-B and Figure 4\u2014figure supplement 1. Claims C88-C93 document the variable appearance of G1/S transition in individual cells with imaging evidence in Figure 4C-D. The mechanistic explanation (C77-C80) is supported by fluorescence intensity data in Figure 1C. However, the practical utility of discriminating early vs. late S phase (C86-C87) is limited to populations with similar FUCCI expression levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C51"
+    ],
+    "result": "RNA-seq analysis demonstrated that the imaging protocol (SBS surface and methylcellulose) does not significantly alter the transcriptomic profile of cells, validating the method's suitability for biological investigations despite prior reports that nanostructured surfaces can affect protein expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 report the RNA-seq validation results shown in Figure 3\u2014figure supplement 2, demonstrating high correlation between pre- and post-imaging samples. This addresses the concern raised in C51 about potential effects of nanostructured surfaces. The Pearson correlation plots provide quantitative evidence supporting the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C69",
+      "C70",
+      "C71",
+      "C73"
+    ],
+    "result": "The complete workflow is fully automated, requiring only ~2 hours of human involvement to analyze up to 400 cells per condition across 12 conditions, with total execution time of 12-48 hours depending on dataset size. This represents a dramatic improvement over manual analysis which would require 40-50 hours per well. The system is freely available and accessible to researchers with basic programming knowledge.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C60 provide specific time comparisons demonstrating the efficiency gains of automation. Claims C9, C55, C69-C71 establish the automated nature and accessibility of the system. The scalability (C61-C62) and public availability (C10, C70) are clearly stated. Figure 5 illustrates the complete workflow supporting these claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C68",
+      "C98"
+    ],
+    "result": "The image and data analysis pipelines are compatible with adherent cells, demonstrated by successful analysis of 1116 MDA-MB-231 cells with a mean cell cycle duration of 24.5\u00b18.5 hr.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 provides quantitative results for adherent MDA-MB-231 cells shown in Figure 3\u2014figure supplement 1. Claims C8 and C68 state the compatibility with adherent cells, which is directly demonstrated by the experimental data. This extends the utility of the method beyond non-adherent cells.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C54",
+      "C1",
+      "C2",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The study addresses limitations of existing methods: traditional DNA content methods provide only static snapshots and lack single-cell resolution, while existing FUCCI-based tools require manual intervention. The FUCCI(CA)2 system provides tricolor demarcation of cell cycle phases (G1=red, S=green, G2/M=yellow) but non-adherent cells remain challenging to image.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C15-C18 establish the limitations of traditional methods with appropriate citations. Claims C19-C23 describe FUCCI technology and its advantages. Claim C54 identifies the specific gap in existing FUCCI analysis tools that this work addresses. These background claims are well-supported by citations and provide appropriate context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C106"
+    ],
+    "result": "The authors propose that the seeding protocol could be extended to other non-adherent cell types based on the principle that SBS engages with integrins, which are widely expressed across cell types. The protocol could also be adapted for shorter-duration imaging experiments without methylcellulose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C65-C67 are speculative about future applications (marked as INFERENCE and SPECULATION in evidence types). While the mechanistic rationale (C106) is supported by citations, no experimental validation is provided for other cell types or shorter imaging protocols. These represent reasonable hypotheses but require experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C24"
+    ],
+    "result": "Cell cycle dysregulation is a hallmark of cancer, with aberrant CDK/cyclin activity driving proliferation. Targeting cell cycle components is an important therapeutic strategy, particularly relevant for AML where chromosomal translocations disrupt differentiation and drive proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12-C14 and C24 provide standard background knowledge about cancer biology and cell cycle regulation, appropriately supported by citations. These claims establish the biological and clinical relevance of the study but do not represent novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C30",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Live imaging of non-adherent cells at multiple positions is challenging due to mechanical perturbations. NB4 cells have faster doubling time than Kasumi-1 cells, and manual annotation of cell cycle phases confirmed the expected differences between these cell lines and the impact of CDK inhibitors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 identifies a technical challenge. Claim C33 states a known characteristic of the cell lines (supported by citation). Claims C34-C35 describe qualitative validation results shown in Figure 1A. These provide preliminary validation but are superseded by the quantitative automated analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "The FUCCI(CA)2 system presents a technical challenge for automated analysis because cells alternate between mCherry and mVenus expression during the cell cycle, preventing use of a single fluorescence channel for tracking and complicating automatic cell cycle phase profiling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38 accurately describe the technical challenge posed by the FUCCI(CA)2 system's alternating fluorescence, which is inherent to its design (C22-C23). This challenge is addressed by the image processing pipeline (C39-C43), making these claims important for understanding the methodological innovation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C11",
+      "C72"
+    ],
+    "result": "The integrated approach enables precise measurement of cell cycle phase durations in non-adherent cells, validated in AML cell lines with unique cell cycle characteristics, and tested with cell cycle-modulating drugs. The system provides detailed insights from hundreds of cells under various conditions without affecting cellular responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims summarize the overall capabilities and validation of the method. Claims C4-C7 and C11 describe the method's capabilities, while C72 provides the concluding validation statement. These are supported by the detailed experimental results in other claim groups (C48-C50, C94-C97) but represent summary statements rather than specific findings.",
+    "result_type": "MINOR"
+  }
+]

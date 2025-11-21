@@ -1,0 +1,201 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "DRAM is presented as an antibody-free and bisulfite-free method for m5C detection that provides transcriptome-wide editing regions overlapping with BS-seq datasets, supports ultralow input RNA (10 ng), covers ~80% of high-confidence m5C-modified genes detected by BS-seq, identifies more potential m5C sites than BS-seq, and has a measuring resolution of around 40 nt.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor states the approach is 'potentially useful' and 'improved' with 'evidence solid according to said standards,' but emphasizes that 'uncertainty regarding false positive and false negative rates remains.' The reviewer raises critical concerns about whether 'the application of these editing tools results in editing artefacts overstating the number of actual m5C sites,' noting DRAM-seq identifies >10,000 sites compared to 'a couple of 100' after rigorous BS-seq analysis. This suggests the core claims about DRAM's performance are viewed with substantial uncertainty regarding accuracy.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C35",
+      "C36",
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "DRAM-ABE and DRAM-CBE were properly expressed in HEK293T cells with ~60% GFP-positive cells, induced specific editing near m5C sites in RPSA and AP5Z1 mRNAs (14.7% A-to-G and 13.6% C-to-U respectively), showed reduced editing in methyltransferase-deficient cells, and DRAM-seq editing events were enriched in the vicinity of BS-seq m5C sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the editor acknowledges the method is 'improved and sufficiently aligned with the standards of the field,' the reviewer's concern about 'editing artefacts overstating the number of actual m5C sites' casts doubt on whether the observed editing events truly reflect m5C modifications or represent technical artifacts. The editor's statement about 'uncertainty regarding false positive and false negative rates' directly applies to these validation experiments.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "YBX1 and ALYREF preferentially bound RNAs containing m5C modifications, with specific key amino acids (W65-N70 for YBX1, K171 for ALYREF) essential for m5C recognition, and mutations in these amino acids significantly reduced binding to m5C-containing oligonucleotides.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims about m5C reader proteins are based on previous published studies and are cited as established knowledge. Neither reviewer challenges these foundational claims about the reader proteins' specificity, which form the basis for the DRAM approach. The concerns raised are about the downstream application, not these underlying biochemical properties.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Three biological replicates revealed strong reproducibility of A-to-G/C-to-U mutations in HEK293T cells expressing DRAM-ABE and DRAM-CBE, with high overlap of DRAM-edited mRNAs across replicates, though only 55.32% of ALYREF-regulated mRNAs were detected by DRAM.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reproducibility between replicates is demonstrated, the reviewer's fundamental concern about 'editing artefacts' means that reproducible detection does not necessarily validate true m5C sites. The editor's statement about 'uncertainty regarding false positive and false negative rates' applies to the interpretation of these reproducible signals. The incomplete overlap with ALYREF-regulated mRNAs (55.32%) further suggests limitations in detection.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DRAM-seq editing events were primarily located in CDS and 3'UTR with significant enrichment in CDS, editing likelihood was higher in closer proximity to m5C sites with an editing window of approximately 20 bp before and after the m5C site, and specific motifs (AC for DRAM-CBE, U/C-A for DRAM-ABE) were enriched while control samples showed random mutations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The editor notes the approach 'might be of particular interest for sites in RNA molecules where modifications are rare,' suggesting conditional utility. However, the reviewer's concern about whether the method produces 'editing artefacts overstating the number of actual m5C sites' means these distribution patterns and motif enrichments could reflect technical biases rather than true m5C biology. The contrast with randomly distributed control mutations provides some support, but does not fully address false positive concerns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "DRAM-seq identified m5C modifications covering 79.6% of genes detected by Yang et al. 2017 and 91.9% by Huang et al. 2019, identified specific regulators like ATG16L1, ARHGEF25, FANCD2, and RPL15, and revealed involvement of m5C-modified genes in diverse biological processes including cell division, cell cycle, mRNA splicing, and DNA repair.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "The reviewer explicitly questions whether DRAM-seq's identification of '>10,000 sites containing m5C' represents a genuine increase from 'a couple of 100 (after rigorous post-hoc analysis of RNA bisulfite sequencing data) by orders of magnitude' or reflects 'editing artefacts overstating the number of actual m5C sites.' The editor's acknowledgment of 'uncertainty regarding false positive and false negative rates' directly undermines confidence in the scope and biological interpretation of these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "DRAM successfully generated PCR products from cDNAs corresponding to 250 ng, 50 ng, and 10 ng of total RNA with nearly identical Sanger traces across dilutions, did not adversely affect cell viability, and showed concentration-dependent transfection efficiency with editing efficiency decreasing as fusion protein expression diminished.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor acknowledges the method 'introduces an orthogonal approach for detecting RNA modification, without chemical modification of RNA, which often results in RNA degradation.' The low-input capability and lack of cytotoxicity are technical advantages that neither reviewer disputes. These represent methodological improvements over existing approaches, even if questions remain about accuracy.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "BS-seq is the gold standard for m5C detection but has limitations including RNA damage from bisulfite treatment, unstable detection in low abundance or highly structured RNA; antibody-based methods have limitations with specificity and low abundance RNAs; and alternative methods like TAWO-seq and Nanopore-seq face challenges with false positives and high error rates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The reviewer extensively discusses the 'short-comings of existing tools to robustly determine m5C in transcriptomes,' noting BS-seq has 'notoriously high background due to deamination artifacts' and antibody methods have 'low specificity' with 'dismal reproducibility.' The editor agrees that chemical modification 'often results in RNA degradation and therefore loss of information.' These limitations of existing methods are well-established and not disputed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C37"
+    ],
+    "result": "The DRAM system is more suitable for mRNA m5C detection than for tRNA or rRNA m5C detection because ALYREF and YBX1 are mainly responsible for mRNA m5C binding.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This claim is based on the mechanistic design of DRAM using mRNA-specific reader proteins and is supported by negative results in tRNA/rRNA experiments. Neither reviewer challenges this specificity claim, which is consistent with the known biology of ALYREF and YBX1. This represents an acknowledged limitation rather than a flaw.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C28",
+      "C29",
+      "C30",
+      "C40",
+      "C41",
+      "C42",
+      "C77",
+      "C78"
+    ],
+    "result": "Background claims about m5C as a posttranscriptional modification in mRNA involved in disease pathogenesis, its presence across RNA types, molecular functions in RNA metabolism, roles in physiological and pathological processes, the properties of m5C readers ALYREF and YBX1, deaminases APOBEC1 and TadA8e, methyltransferases NSUN2 and NSUN6, and the distribution and sequence characteristics of m5C sites.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established background claims supported by citations to previous literature. The reviewer acknowledges the biological importance of m5C and the need for better detection methods, stating 'other methods, like DRAM-seq, aiming to map m5C independently of ex situ RNA treatment with chemicals, are needed.' Neither reviewer challenges these foundational biological facts, which provide context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C63",
+      "C64",
+      "C75",
+      "C76"
+    ],
+    "result": "Specific m5C fractions were measured for RPSA (75.5%) and SZRD1 (27.25%) by BS-seq, existing methods require 100-500 ng RNA (m5C-RIP-seq) or 750-1000 ng (BS-seq), m5C-RIP-seq has ~100 nt resolution, and DRAM depends on specific recognition of m5C on ssRNA by reader proteins, theoretically avoiding false-positive effects of 5-hydroxymethylation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These technical specifications and comparisons are either based on cited literature or represent straightforward technical characteristics. The reviewer does not dispute these specific measurements or technical parameters. The claim about avoiding 5-hydroxymethylation interference is theoretical and based on the mechanism, which is logically sound even if other accuracy concerns exist.",
+    "result_type": "MINOR"
+  }
+]

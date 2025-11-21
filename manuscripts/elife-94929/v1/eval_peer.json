@@ -1,0 +1,160 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "S. agalactiae MprF synthesizes both Lys-PG from anionic PG and the novel cationic lipid Lys-Glc-DAG from neutral glycolipid Glc-DAG. This was demonstrated through deletion mutant analysis showing loss of both lipids in \u0394mprF strains and heterologous expression in S. mitis conferring synthesis of both lipids.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "All reviewers accepted this finding without challenge. Reviewer 2 explicitly states 'After the previous identification that the Streptococcus agalactiae MprF enzyme can synthesize also lysyl-glucosyl-diacylglycerol (Lys-Glc-DAG), besides the already known lysyl-phosphatidylglycerol (Lys-PG)' as established background. The editor notes this as part of 'important findings' with 'compelling' evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Heterologous expression of streptococcal MprF enzymes in S. mitis revealed differential substrate specificity: S. agalactiae MprF produces both Lys-PG and Lys-Glc-DAG; S. salivarius MprF produces only Lys-PG; S. ferus, S. sobrinus, and S. downei MprF produce only Lys-Glc-DAG. Enzymes with >60% amino acid identity to S. agalactiae MprF generally conferred Lys-Glc-DAG synthesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted these experimental findings as valid. Reviewer 2 states 'The experimental data could largely confirm this categorization' from the RBM approach. Reviewer 1 describes the work as 'compelling combination of advanced statistical analysis of sequences and experimental determination of MprF function.' The lipidomic data in Figure 2 is not questioned.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C39",
+      "C40",
+      "C41",
+      "C44",
+      "C46"
+    ],
+    "result": "A restricted Boltzmann machine-guided approach led to the discovery of a novel cationic lipid, lysyl-diglucosyl-diacylglycerol (Lys-Glc2-DAG), synthesized by Enterococcus species from the substrate diglucosyl-diacylglycerol (Glc2-DAG). All Enterococcus strains examined synthesize Lys-PG, Lys-Glc-DAG, and Lys-Glc2-DAG at varying levels, with cationic glycolipid production not previously reported for these species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This discovery is highlighted by all reviewers as a major contribution. Reviewer 1 states 'One notable outcome is (as stated in the title) the identification of a novel substrate/product.' The editor describes findings as 'important' with 'compelling' evidence validated by 'mass spectrometry-based lipid analysis experiments.' Structural identification through exact mass and tandem MS (C41) is not challenged.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "E. faecalis mprF2 (OG1RF_10760) is necessary for synthesis of all three Lys-lipids (Lys-PG, Lys-Glc-DAG, and Lys-Glc2-DAG) in E. faecalis, as demonstrated by transposon mutant analysis showing loss of all three lipids and complementation restoring synthesis. E. faecium mprF1 (EFTG_00601) can also restore Lys-PG and Lys-Glc2-DAG synthesis, while E. faecium mprF2 cannot rescue lipid synthesis.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the genetic evidence linking MprF to Lys-Glc2-DAG synthesis. Reviewer 2 notes 'The computational approach is validated by lab experiments in which LC-MS analysis reveals the specific activity of the lipid synthesizing enzymes.' The complementation experiments (Figure 7) demonstrating functional activity are not questioned by any reviewer.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Hidden unit 2 from the RBM analysis is statistically correlated with GlcN-DAG (glycolipid) substrate specificity (Fisher's exact test p=0.028), with sequences having positive activations more likely to use GlcN-DAG substrates (8/9) and negative values predominantly using PG (7/11). Hidden unit 1 shows no correlation with GlcN-DAG specificity (p=0.67).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the RBM approach and its statistical validation. Reviewer 2 states 'The RBM approach enables the successful, although not perfect, classification and categorization of MprF activity' and 'The experimental data could largely confirm this categorization.' The editor describes the application of machine learning methods as 'careful' with 'compelling' evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C69",
+      "C70"
+    ],
+    "result": "The RBM analysis identified key sequence positions including residues 684 and 742 (positions 152 and 212) that were previously experimentally demonstrated to be relevant for aminoacylated-PG production. Dataset filtering using hidden units was necessary, as the relevant hidden units were not found in models trained on the initial Pfam dataset, potentially due to noise from sequences without relevant catalytic function.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accepted the methodological approach and validation. Reviewer 1 describes it as 'careful application of machine learning methods' and notes the work will be valuable for 'researchers interested in using advanced methods to connect sequence to lipid synthesis functions.' The connection to previously validated residues (C37) provides experimental support that reviewers did not challenge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C66",
+      "C67"
+    ],
+    "result": "BLASTp analysis based on sequence similarity to S. agalactiae MprF did not identify other streptococcal MprFs capable of lysine addition to both glycolipid and phospholipid substrates, nor did it lead to identification of the novel cationic glycolipid found in Enterococcus, demonstrating limitations of sequence similarity-based approaches.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This limitation of traditional methods is implicitly accepted by reviewers as it motivates the RBM approach. Reviewer 2 notes 'The RBM approach enables the successful, although not perfect, classification' suggesting acceptance that alternative methods were needed. The contrast between BLASTp and RBM success supports the methodological innovation reviewers praised.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "The E. faecium allele EFTG_00601 represents a notable exception with sequence features placing it in quadrant one yet having GlcN-DAG activity, indicating that exact sequence determinants of GlcN-DAG specificity remain incompletely elucidated. Important residue interactions determining specificity could occur in excluded regions (N-terminal flippase domain and non-cytosolic C-terminal region).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 explicitly notes this limitation: 'The experimental data could largely confirm this categorization, although a stronger connection between synthesized lipids and enzyme activity would have further strengthened the observations.' The authors acknowledge incomplete understanding (C72), and reviewers accepted this as a limitation rather than a fatal flaw, with Reviewer 1 stating the RBM approach is 'successful, although not perfect.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Survey of lipid synthesis across bacterial species showed all strains tested synthesize Lys-PG. Among Lactobacillus strains, only L. brevis and L. paracasei synthesized Lys-Glc2-DAG (with L. paracasei at low levels). Control organisms S. aureus RN4220, B. subtilis 168, and E. acetylicum synthesize only Lys-PG.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 raises a significant concern about interpretation: 'In a few cases lipid synthesis activity is completely absent. Due to the lack of protein expression data, it is unclear if this is caused by enzyme inactivity or the overall absence of enzyme.' This uncertainty about negative results affects confidence in the survey data, though positive findings (lipid detection) are not questioned.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Experimental approach considerations: lipid production in native organisms may vary with growth phase, media, and membrane stressors. Use of heterologous host (S. mitis) for mprF expression standardizes conditions but may miss novel lipids found in native bacteria if appropriate substrates are absent.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 implicitly acknowledges these experimental challenges when noting 'Due to the lack of protein expression data, it is unclear if this is caused by enzyme inactivity or the overall absence of enzyme.' The reviewers accept the heterologous expression approach as valid despite its limitations, with no requests for additional native organism studies.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,209 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Different PKA subtypes exhibit distinct subcellular localization at rest in CA1 neurons. PKA-RII\u03b1 localizes to dendritic shafts (likely via MAP2 interaction), while PKA-RI\u03b2 and PKA-RI\u03b1 are more evenly distributed between spines and dendrites. This distribution is independent of expression level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C24-C27, C63-C65 are supported by imaging data in Figure 1 showing differential localization patterns of PKA-C when co-expressed with different regulatory subunits. The spine enrichment index quantification and expression level independence analysis (Figure 1\u2014figure supplement 1) provide robust evidence for subtype-specific localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C53"
+    ],
+    "result": "Upon physiological activation with norepinephrine, PKA catalytic subunits translocate to dendritic spines while regulatory subunits remain stationary, indicating dissociation of PKA-C from all tested PKA-R isoforms (RI\u03b1, RI\u03b2, RII\u03b1, RII\u03b2). This differential redistribution occurs across a wide range of neuromodulator concentrations and is independent of expression level.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C28-C36, C53 are strongly supported by imaging data in Figures 1 and supplements showing differential spatial dynamics between catalytic and regulatory subunits upon norepinephrine stimulation. The effect is observed at both 2 \u03bcM and 10 \u03bcM norepinephrine, and with forskolin/IBMX. Expression level independence is demonstrated in Figure 1\u2014figure supplement 1.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C34",
+      "C36",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "The differential spatial dynamics between PKA subunits indicate that at least a significant fraction of PKA dissociates upon activation. Given that PKA activity increases 100-fold upon dissociation, even partial dissociation results in marked kinase activity increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C34, C36, C53-C55 represent logical inferences from the observed differential redistribution data. The reasoning is sound: if PKA-C moves to spines while PKA-R stays in dendrites, dissociation must occur. The 100-fold activity increase upon dissociation (C54, supported by citation) strengthens the functional significance argument.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "An inseparable R-C construct (PKA-C covalently linked to PKA-RII\u03b1) exhibits distribution similar to PKA-RII\u03b1 at rest and shows diminished translocation to spines upon stimulation compared to wildtype dissociable PKA, confirming the catalytic subunit cannot separate from the regulatory subunit.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37-C40 are supported by imaging data in Figure 2 showing that the R-C fusion construct behaves like PKA-RII\u03b1 in terms of localization and fails to translocate to spines upon stimulation. This validates the construct as a non-dissociable control and is consistent with the design from Smith et al., 2017.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C66",
+      "C70"
+    ],
+    "result": "PKA is essential for long-term structural LTP of individual dendritic spines. shRNA knockdown of PKA-C attenuates LTP at 90 min post-induction, which is rescued by wildtype dissociable PKA but not by the inseparable R-C construct.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C45, C66, C70 are supported by two-photon glutamate uncaging experiments in Figure 3. The rescue experiment design is appropriate with proper controls (LacZ shRNA, shRNA-resistant constructs). The failure of R-C to rescue demonstrates that dissociation is functionally required for LTP maintenance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "PKA knockdown reduces AMPAR currents but not NMDAR currents, decreasing the AMPAR/NMDAR ratio. This deficit is rescued by wildtype dissociable PKA but not by the inseparable R-C construct, demonstrating that dissociation is required for PKA regulation of synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by paired whole-cell recording data in Figure 4. The selective effect on AMPAR currents is consistent with prior work (cited). The rescue experiment with appropriate controls demonstrates that the R-C construct cannot support normal PKA-dependent synaptic function, strengthening the dissociation requirement.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "PKA-dependent regulation of synaptic plasticity and transmission requires dissociable PKA. While the inseparable R-C construct can support cell growth in heterologous cells, it cannot support PKA functions in neurons, indicating that PKA-C dissociation from PKA-R is essential for neuronal function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C57-C60 represent the main conclusion synthesizing results from both LTP and synaptic transmission experiments. The conclusion is well-supported by the failure of R-C to rescue either phenotype (Figures 3-4). The comparison to Smith et al., 2017 (cell growth) highlights context-dependent requirements for dissociation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C9",
+      "C60"
+    ],
+    "result": "Endogenous PKA regulatory and catalytic subunits dissociate to achieve PKA function in neurons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9 and C60 represent the overarching conclusion of the manuscript. This is supported by converging evidence from imaging experiments showing differential redistribution (Figures 1-2) and functional rescue experiments demonstrating that non-dissociable PKA cannot support neuronal functions (Figures 3-4).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6"
+    ],
+    "result": "Norepinephrine activates PKA presumably via the \u03b2-adrenergic receptor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C6 is explicitly speculative (uses 'presumably'). While this is a reasonable inference based on known signaling pathways and prior work from the authors' lab, no direct evidence (e.g., \u03b2-adrenergic receptor antagonist experiments) is provided in this manuscript to confirm the mechanism.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C56"
+    ],
+    "result": "The results corroborate observations in intact non-neuronal cells using FRET imaging and biochemical measurements that showed PKA dissociation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C56 appropriately contextualizes the findings within existing literature (Walker-Gray et al., 2017; Zaccolo et al., 2000). The current neuronal data using spatial redistribution as a readout is consistent with FRET and biochemical approaches in other cell types, strengthening the generalizability of the dissociation model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C62"
+    ],
+    "result": "PKA specificity is likely mediated by mechanisms downstream of PKA dissociation, such as membrane tethering of freed PKA-C or its buffering by extra PKA-Rs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C62 is explicitly speculative (uses 'likely') and represents a hypothesis about mechanisms not directly tested in this study. While supported by citations to relevant literature, no experimental evidence is provided here to test these specific mechanisms. This represents a reasonable direction for future work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C41",
+      "C46",
+      "C54",
+      "C61",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "Background knowledge claims about PKA structure, function, activation models, and role in LTP and synaptic transmission.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3, C10-C23, C41, C46, C54, C61, C67-C69 represent established knowledge from the literature, appropriately cited. These provide necessary context for the study but are not novel findings. The citations appear appropriate and the knowledge claims are consistent with the PKA field.",
+    "result_type": "MINOR"
+  }
+]

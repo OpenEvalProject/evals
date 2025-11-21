@@ -1,0 +1,277 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C31",
+      "C32",
+      "C69",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "The authors developed PPI-hotspotID, a novel machine learning method for identifying PPI-hot spots from free protein structures, trained on the largest dataset to date comprising 414 experimentally confirmed PPI-hot spots and 504 non-hot spots from 158 nonredundant proteins. The method uses only four features: conservation, amino acid type, SASA, and gas-phase energy.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C31, C32, C69, C100-C106 collectively describe the development and training of PPI-hotspotID. The dataset construction is well-documented with clear inclusion criteria (C69, C100-C103), the feature selection process is described (C104-C106), and the method represents a novel contribution validated on an expanded dataset (C3, C4). The methodological details are sufficiently rigorous.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "PPI-hotspotID outperformed existing methods FTMap and SPOTONE, achieving sensitivity of 0.67 and F1 score of 0.71, compared to FTMap (0.07 sensitivity, 0.13 F1) and SPOTONE (0.10 sensitivity, 0.17 F1). The methods showed substantial but incomplete overlap in their predictions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C38-C44 present comparative performance metrics from Table 1. The quantitative results clearly demonstrate superior performance of PPI-hotspotID. However, the comparison may be affected by different definitions of true negatives between methods (C45, C46), which could bias the results. The Venn diagram analysis (C42-C44) provides additional validation of the complementary nature of predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C7",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "For 48 unsolved protein complexes, combining PPI-hotspotID predictions with AlphaFold-Multimer-predicted interface residues achieved better performance (sensitivity 0.70, F1 0.72) than either method alone (PPI-hotspotID: 0.58/0.66; AlphaFold-Multimer: 0.41/0.54), demonstrating that PPI-hotspotID can identify non-interface hot spots.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C55-C59 describe the complementary performance of PPI-hotspotID and AlphaFold-Multimer on unsolved complexes. The improved combined performance (C58) supports the conclusion that PPI-hotspotID identifies hot spots outside the interface (C59). However, the PPI-hotspotID model for this test excluded the 48 unsolved complexes from training, which is appropriate but results in lower performance than the full model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C8",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C108",
+      "C109"
+    ],
+    "result": "Experimental validation using eEF2 confirmed that the F794A mutation, predicted by PPI-hotspotID as the highest probability hot spot (0.67), abolished binding to CPEB2 and selectively increased HIF-1\u03b1 levels without affecting general protein synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C60-C67, C108-C109 describe experimental verification of PPI-hotspotID predictions. The co-IP experiments (C64, Figure 2b) clearly demonstrate loss of binding for F794A. The functional assays (C65-C67, Figure 2d-e) show selective effects on HIF-1\u03b1 translation. The experimental design is appropriate, using mouse eEF2 with 99% identity to human (C109) and including proper controls. Statistical significance is reported for the HIF-1\u03b1 result (C66).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "PPI-hotspotID can identify non-interface PPI-hot spots that lack direct contact with binding partners. Among 243 true hot spots in 74 proteins with complex structures, 67 (27.6%) were non-interface, and PPI-hotspotID identified 43 of these, while SPOTONE found only 5 and FTMap found none.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C47-C54, C80-C82 demonstrate PPI-hotspotID's ability to identify non-interface hot spots. The analysis of complex structures (C47, C81) provides ground truth for non-interface hot spots. The interleukin-4 example (C51-C54, Figure 1) illustrates this capability with specific residues. This represents a key advantage over structure-based methods that focus on interface residues.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "PPI-hotspotID correctly predicted all four experimentally known GCP60 PPI-hot spots, including F19 and Y46 which do not form direct hydrogen bonds with PI4K-\u03b2 but participate through van der Waals contacts with intermediate residues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 describe the GCP60 example shown in Figure 3. The structural analysis demonstrates indirect interactions through vdW contacts (C84, C85), supporting the concept of non-interface hot spots. This case study effectively illustrates PPI-hotspotID's capability to identify hot spots involved in indirect interactions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "PPI-hotspotID predicted G128 in CRADD as a hot spot, which is not apparent from the complex structure. Structural analysis and experimental data support that the G128R mutation disrupts CRADD-CRADD interactions and is associated with non-syndromic mental retardation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 describe the CRADD example shown in Figure 4. The structural rationalization (C90, C91) explains how G128R could disrupt CRADD-CRADD interactions through electrostatic repulsion with R147. The experimental validation (C92) and clinical relevance (C93) from cited literature support the prediction. This demonstrates PPI-hotspotID's ability to identify non-obvious hot spots.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Gas-phase energy was identified as an important feature for PPI-hot spot prediction, rationalized by thermodynamic principles: hot spots enhancing enthalpic contributions are energetically unstable without binding partners, while those counteracting entropic loss maintain stable scaffolds.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C76 describe the novel gas-phase energy feature and its thermodynamic rationalization. The feature importance analysis (C73) provides empirical support. The mechanistic explanation (C74-C76) is theoretically sound, though it remains a post-hoc rationalization rather than a predictive hypothesis. The dual mechanism (enthalpic vs. entropic) is plausible but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C71",
+      "C17",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The study expanded the definition of PPI-hot spots beyond alanine mutations to include mutations curated in UniProtKB that significantly impair/disrupt PPIs, creating the PPI-HotspotDB database with 4039 hot spots in 1893 proteins and deriving the PPI-Hotspot+PDBBM benchmark.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71, C17, C28-C30 describe the expanded dataset construction. The broader definition (C17) is well-justified and supported by citations. The PPI-HotspotDB database (C28) represents a significant resource. The benchmark derivation (C29, C30) with <60% sequence identity threshold is appropriate for reducing redundancy. This methodological contribution enables training on a larger, more diverse dataset.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C70"
+    ],
+    "result": "This study used a more stringent definition of true negatives (\u0394\u0394Gbind < 0.5 kcal/mol or no perturbation in binding assays) compared to SPOTONE (\u0394\u0394Gbind \u2264 2.0 kcal/mol).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45, C46, C70 describe differences in true negative definitions between methods. The stricter threshold (C46) is more conservative and reduces ambiguity in the training data. However, this difference complicates direct performance comparisons with SPOTONE, as the methods were trained on datasets with different negative class definitions. This is acknowledged but could affect the fairness of the comparison.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87"
+    ],
+    "result": "Some PPI-hotspotID-predicted residues that were not in the benchmark dataset showed intermolecular hydrogen bonds with other binding partners in available complex structures, suggesting they might be hot spots for alternative interactions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C86, C87 suggest that some predictions not validated in the current dataset might be true hot spots for other partners. While the observation of hydrogen bonds with alternative partners (C87) is interesting, this remains speculative without experimental validation. The claim is plausible given that proteins interact with multiple partners (C86), but requires further experimental verification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C107"
+    ],
+    "result": "PPI-hotspotID is available as a web server and open-source code, with computational time of 35 minutes for a 539-residue protein.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C11, C107 describe resource availability and computational performance. The web server and code availability support reproducibility and community use. The computational time (C107) provides a practical performance benchmark, though it is relatively slow for high-throughput applications.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C68",
+      "C95"
+    ],
+    "result": "The introduction establishes that experimental PPI-hot spot detection is time-consuming and costly, existing prediction methods have limitations including small validation datasets and reliance on complex structures, and conventional definitions based on alanine scanning limit available data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C12-C27, C68, C95 provide background and motivation. These claims are well-supported by citations to prior literature and accurately characterize the state of the field. The motivation for developing a new method is clear and justified. These are primarily literature review claims establishing context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C77",
+      "C78",
+      "C79",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "PPI-hotspotID differs from existing methods by leveraging evolutionary conservation, residue type, and stability principles from free structures rather than relying on complex structures or interface contacts, enabling detection of non-obvious hot spots and potential hot spots for multiple partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C37, C77-C79, C96-C99 describe methodological differences and advantages. The distinction from complex structure-based methods (C77-C79) is clear. The advantages (C96-C99) are supported by the results showing identification of non-interface hot spots. The comparison with FTMap (C33, C34) and AlphaFold-Multimer (C35) is appropriate. The claimed advantages are demonstrated in the results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "The 414 true PPI-hot spots represent only 2% of the total residues in the 158 proteins, indicating significant class imbalance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 highlights the class imbalance in the dataset. This is an important consideration for machine learning model development and evaluation. The severe imbalance (2% positive class) makes the high precision (0.76) and F1 score (0.71) more impressive, as the model must discriminate hot spots from a large background of non-hot spots.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,339 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "The Notch signaling pathway consists of multiple receptors (Notch1-4), ligands (Dll1, Dll4, Jag1, Jag2, Dll3), and Fringe glycosyltransferases that interact in cis and trans configurations in diverse cell types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4, C13-C19 describe established knowledge about Notch pathway components and their interactions, supported by citations to previous literature (C13-C15, C17, C19-C22) and general scientific knowledge (C1-C4, C16, C18). These claims provide essential background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C78",
+      "C79"
+    ],
+    "result": "All four ligands (Dll1, Dll4, Jag1, Jag2) trans-activate both Notch1 and Notch2 receptors, with Jag1-Notch1 signaling substantially weaker than other combinations. Ligand class (Delta vs. Jagged) correlates with response to Lfng, which increases Delta-mediated and decreases Jagged-mediated trans-activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7, C40-C57, C78-C79 are supported by experimental data from trans-activation assays (Figure 2A-C). The systematic characterization across ligand-receptor-Fringe combinations provides quantitative evidence for differential signaling strengths and Lfng effects. Statistical analysis (Figure 2\u2014figure supplement 1B) confirms significance of differences.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C80"
+    ],
+    "result": "Trans-activation dose-response curves show ultrasensitive responses with Hill coefficients of ~2 for most ligand-receptor pairs, with Dll1-Notch signaling exhibiting biphasic behavior and Jag1-Notch2 showing lower ultrasensitivity (~1.5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C63, C80 are supported by dose-response data (Figure 2D-G) and Hill function fitting. The ultrasensitivity analysis is methodologically sound with appropriate statistical analysis (bootstrap confidence intervals). However, some curves did not fully saturate (C58), which could affect Hill coefficient estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C64",
+      "C65"
+    ],
+    "result": "Endogenous Fringes in CHO-K1 cells show weaker effects than transfected Lfng, with endogenous Lfng modestly weakening Jagged signaling and strengthening Dll1-Notch1 signaling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C65 are supported by experimental data (Figure 2\u2014figure supplement 4) comparing endogenous Fringe effects to dLfng and Lfng conditions. The inference about Lfng dominance over Rfng (C65) is reasonable given the expression data (Supplementary file 1) and consistent with prior literature cited.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C75",
+      "C76"
+    ],
+    "result": "Key signaling behaviors are conserved between CHO-K1 and C2C12-Nkd cell lines, including weak Jag1-Notch1 trans-activation and strong Dll1/Dll4-Notch2 cis-activation, suggesting these are intrinsic properties of the ligands and receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68, C75-C76 are supported by experimental data from C2C12-Nkd cells (Figure 7A, C) showing consistency with CHO-K1 results. The inference that these are intrinsic properties (C75-C76) is reasonable given reproducibility across cell types, though limited to two cell lines.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C81",
+      "C82",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "Cis-interactions are predominantly inhibitory except for Dll1-Notch2 and Dll4-Notch2 pairs, which exhibit cis-activation stronger than trans-activation. Delta ligands cis-inhibit only Notch1 while cis-activating Notch2, whereas Jagged ligands cis-inhibit both receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C9, C81-C82, C117-C123 are supported by cis-activation and cis-modulation assay data (Figure 4B). Controls with H2B-mCherry and NGFR (C123) rule out non-specific effects. The cell density optimization (Figure 4A) and preinduction controls (Figure 4C-D, C124-C125) address potential artifacts from trans-signaling during the assay.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139"
+    ],
+    "result": "Lfng modulates cis-activation in a receptor- and ligand-specific manner. For Notch1, Lfng effects on cis-activation quantitatively resemble those on trans-activation. For Notch2, Lfng effects diverge between cis- and trans-interactions, suggesting different molecular mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C100-C106, C135-C139 are supported by experimental data comparing Lfng effects on cis- and trans-activation (Figure 5C-D). The inference about different mechanisms (C106) is reasonable given the divergent effects for Notch2, though mechanistic validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C12",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C152",
+      "C153"
+    ],
+    "result": "Cis-inhibition strength depends on the identity of the trans-ligand, cis-ligand, and receptor. Each cis-ligand preferentially inhibits trans-activation by the same ligand type. Cis-inhibition is less ultrasensitive (Hill coefficients 0.75-1.5) than trans-activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C140-C153 are supported by cis-modulation assay data with multiple trans-ligands (Figure 6). The systematic analysis across 32 coculture combinations provides strong evidence for three-component interactions. Hill coefficient analysis (C152-C153) is methodologically sound, though some curves may not have fully saturated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "Cis- and trans-signaling combine differently across ligand-receptor combinations. For Notch1, trans-activation significantly contributes beyond cis-activation. For Notch2, cis-activation alone is generally sufficient except for modest Jag2 trans-contribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C134 are supported by comparing cis-activation and cis-+trans-activation assays (Figure 5A-B). The experimental design appropriately isolates cis vs. combined signaling modes. However, the interpretation for Jag1-Notch2 (C133) involves speculation about trans-interactions limiting cis-activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116"
+    ],
+    "result": "Lfng increases Jag1 binding to Notch1 while decreasing signaling, enabling trans-inhibition through strong binding with weak activation. With Dll1, Lfng strengthens both binding and activation, while with Jagged ligands it strengthens binding but weakens activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C116 are supported by binding assay data (Figure 3G-H) and plated ligand assay data (Figure 3I). The opposite effects of Lfng on Jag1 binding vs. activation (C113) are clearly demonstrated. The inference about trans-inhibition mechanism (C114) is reasonable and consistent with cited literature, though remains somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "CHO-K1 cells exhibit negligible endogenous Notch pathway expression and were engineered with chimeric receptors (Notch-Gal4) and cotranslational reporters (mTurq2) that correlate with surface receptor expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C39 describe the experimental system. C36 is supported by citations and supplementary data. C37-C39 describe the receptor construct design and validation (Figure 1\u2014figure supplement 1A-B), showing correlation between cotranslational and surface expression. This provides essential methodological foundation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "Lfng has different impacts on cis- and trans-interactions for some ligand-receptor combinations (Jag1-Notch2, Jag2-Notch2), suggesting cis- and trans-activation may involve different molecular mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C83-C84 are based on experimental observations (Figure 5D) showing divergent Lfng effects. However, C84 is speculative about mechanisms without direct mechanistic evidence. Alternative explanations (e.g., differences in receptor clustering, membrane organization) are not ruled out. Further mechanistic studies would be needed to support this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "Cis-inhibition behavior is consistent with a competitive binding model where strongly cis-activating ligands cause no net decrease in signaling, while strongly binding cis-ligands producing weak/inactive complexes cause cis-inhibition. Cis-Jag2-Notch1 may operate in a 'mutual inactivation' regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C96 integrate experimental observations (Figures 4B, 6A) with a theoretical framework. The competitive binding model is consistent with the data and cited literature. However, C96 about 'mutual inactivation' is somewhat speculative, though supported by the unique binding/activation profile of Jag2-Notch1 and citations to modeling studies.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "For Notch1, each ligand type has a comparative advantage in cis-inhibiting trans-activation by itself compared to other ligands (e.g., Dll1 cis-inhibits trans-Dll1 more than trans-Jag2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C99 are supported by experimental data (Figure 6D) showing ligand-specific cis-inhibition patterns. This represents a novel finding about three-component interactions. The statistical analysis appears sound, though the mechanism underlying this specificity remains unclear.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Background on Notch signaling mechanisms and biological functions, including canonical trans-activation, NICD translocation, dose-dependent transcriptional responses, and Fringe modulation effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C35 provide background information supported by citations to previous literature. These establish the biological context and rationale for the study. C35 about Jag1-Notch1 trans-inhibition is presented as a possibility ('may be the case'), appropriately reflecting uncertainty in prior literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "In C2C12-Nkd cells, Dll4 and Jag2 show similar cis-interaction patterns as in CHO-K1 cells (cis-activation and cis-inhibition of Notch2, respectively), but Dll4 does not cis-activate Notch1 in C2C12-Nkd unlike weak cis-activation observed in CHO-K1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C74 are supported by experimental data (Figure 7C-D) comparing C2C12-Nkd and CHO-K1 cells. The difference in Dll4-Notch1 cis-activation between cell types (C73-C74) suggests some context-dependence, though most behaviors are conserved. This highlights both robustness and potential cell-type-specific modulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C85",
+      "C86"
+    ],
+    "result": "Lfng-dependent trans-inhibition of Notch1 by Jag1 plays key roles in angiogenesis (inhibiting Dll4-Notch1 signaling) and embryonic pancreas (inhibiting Dll1-Notch1 signaling).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C85-C86 are supported by citations to previous literature describing functional roles of Jag1-mediated trans-inhibition in specific developmental contexts. These provide biological context for the mechanistic findings but are not directly tested in this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,196 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6"
+    ],
+    "result": "The authors derive an analytical expression showing that condensate material exchange can be limited by three factors: dilute-phase flux, dense-phase mixing, or interface resistance. They propose that interface resistance arises when molecules 'bounce' from the interface without entering the dense phase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C6 establish the theoretical framework for exchange dynamics. The derivation of Equation 6 (referenced throughout) provides clear mathematical support for the three limiting factors. The bouncing mechanism (C6) is demonstrated through simulations (C41, Figure 3D-E), providing both theoretical and computational evidence for this novel mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Analysis of LAF-1 droplet FRAP data reveals a large discrepancy between measured recovery time (~1.3 hr) and mean-field predictions (~64 s), suggesting significant interface resistance that could arise from molecular bouncing at the interface.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35 are supported by reanalysis of published experimental data (Taylor et al., 2019, Figure 1C). The quantitative discrepancy between measured and predicted recovery times is clearly documented. However, the bouncing mechanism for LAF-1 specifically remains speculative, as acknowledged in the Discussion where the authors note a 10\u00b3-10\u2074 factor difference between their simulation \u03ba values and LAF-1 experimental values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C71",
+      "C72"
+    ],
+    "result": "The authors implement a sticker-spacer polymer model with heterotypic A-B binding to simulate phase separation, demonstrating that polymer sequence affects dilute/dense phase concentrations and diffusion coefficients.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C38, C71-C72 describe the simulation methodology and basic results (Figure 2). The model is well-defined with explicit interaction potentials (Equations 9-11). Equilibration is validated through consistency checks across replicates and time windows (C72). The finding that long-block polymers have lower dilute-phase concentrations (C37) is supported by both citation and simulation data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C45"
+    ],
+    "result": "Simulations reveal that interface conductance is reduced by a 'bouncing' effect where molecules fail to form bonds with the dense phase. The conductance depends on the availability of unbound stickers, which is minimized at equal stoichiometry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42, C45 are directly supported by simulation data (Figure 3D-E). The bouncing mechanism is visualized in trajectories (Figure 3E, Appendix 2). The dependence on unbound sticker availability is quantified through the parameter u (Equation 15), and all simulation results collapse onto a linear relationship (Figure 3D), providing strong evidence for the proposed mechanism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46"
+    ],
+    "result": "The reduction in binding partners at equal stoichiometry causes anomalous slowing of diffusion within condensates in the strong binding regime.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C46 is supported by citations to both experimental (Brassinne et al., 2017) and theoretical (Ronceray et al., 2022) work. This provides independent validation of the equal-stoichiometry effect observed in the authors' simulations, strengthening the mechanistic interpretation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C48",
+      "C49"
+    ],
+    "result": "Direct simulation of FRAP recovery for an A6B6 droplet shows near-perfect agreement with theoretical predictions, validating both approaches and confirming that recovery is interface-resistance limited.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C49 are supported by Figure 4D showing excellent agreement between simulation and numerical integration of the theoretical model. The conclusion that interface resistance dominates (C49) is justified by comparison with theoretical predictions in Figure 5A, where the measured recovery time matches the interface-limited regime.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C52"
+    ],
+    "result": "The authors predict a size-dependent crossover in FRAP recovery patterns: small droplets recover uniformly (interface-limited), while large droplets show progressive diffusion (mixing-limited).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C52 are supported by theoretical analysis (Equation 6) and numerical solutions (Figure 5A-B). The R vs R\u00b2 scaling argument is mathematically sound. The predicted fluorescence profiles (Figure 5B) provide testable predictions. The crossover radius for LAF-1 (~71 \u03bcm) is calculated from measured parameters.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "The authors propose multiple molecular mechanisms that could lead to bouncing: bond saturation (as in their simulations), hydrophobic burial, intramolecular base-pairing, or electrostatic repulsion from charged interfacial layers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C56-C60 are largely speculative (C57, C60) or based on limited examples (C58-C59). While the bond saturation mechanism is demonstrated in simulations, the generalization to other systems lacks direct experimental validation. The RNA hairpin example (C59) from Nguyen et al., 2022 provides some support, but the electrostatic mechanism (C60) remains hypothetical despite citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "The biological relevance of interface resistance is uncertain, as Ddx4-YFP droplets show negligible interface resistance, though multi-component systems with layering or Pickering effects may exhibit increased resistance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C63 cites experimental evidence that some in vivo condensates lack interface resistance, which contradicts the generality of the phenomenon. Claims C64-C65 are speculative about conditions that might increase resistance. The authors acknowledge this uncertainty, noting that the relevance to natural condensates requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "Interface resistance is predicted to slow condensate coarsening dynamics, with conversion-limited flux leading to qualitatively distinct scaling of condensate size with time.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C68 are supported by logical inference (C66) and citations to theoretical/experimental work (C67-C68). The connection between equilibrium exchange and coarsening is physically sound. The cited work by Ranganathan and Shakhnovich (2020) on binding site exhaustion parallels the bouncing mechanism, and Lee (2021) demonstrates distinct scaling laws.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C55",
+      "C69"
+    ],
+    "result": "The manuscript establishes background knowledge about biomolecular condensates: they dynamically exchange material with surroundings, organize cellular processes, possess distinct physical properties, and their exchange dynamics impacts biological function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C7-C16, C55, C69 represent established knowledge supported by multiple citations to prior work. These claims provide context and motivation but are not novel findings of this study. They are appropriately cited and accurately represent the current understanding of condensate biology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "The authors critically assess prior work on exchange dynamics, noting that only limited studies have addressed this question and that previous modeling was phenomenological or used mean-field approaches that neglect interfacial complexity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C21 provide a critical literature review supported by appropriate citations. The assessment that prior work was phenomenological (C20) or neglected interfacial dynamics (C21) is fair and establishes the gap this study addresses. The citations are accurate representations of the cited work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C70"
+    ],
+    "result": "The authors hypothesize that interfacial exchange will constitute an additional means of regulating condensate dynamics as condensates dissolve and reform during the cell cycle.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C70 is speculative about future biological implications. While the hypothesis is reasonable given the demonstrated interface resistance mechanism, it lacks experimental validation in biological systems. This represents a prediction rather than a demonstrated result.",
+    "result_type": "MINOR"
+  }
+]

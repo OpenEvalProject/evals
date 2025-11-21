@@ -1,0 +1,238 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Two distinct brain aging patterns were identified in 37,013 UK Biobank participants using a data-driven approach combining cross-sectional and longitudinal GMV trajectories. Pattern 1 (51.1% of participants) showed higher baseline total GMV and slower GMV decrease, while Pattern 2 showed lower baseline GMV and faster decrease, particularly in medial occipital and temporal regions. The patterns were identified using PCA and k-means clustering on regional GMV deviations at age 60.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C21-C25, and C83-C91 provide comprehensive methodological details and results supporting the identification of two brain aging patterns. The study used appropriate mixed-effects models with random intercepts and slopes (C91), validated by ICC analysis. The large sample size (37,013 participants) and longitudinal design (baseline + follow-up) provide robust evidence. Regional specificity (C23-C24) is supported by PCA loadings. Demographic similarity between patterns (C25) strengthens the finding that differences are brain-specific rather than confounded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C2",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C92"
+    ],
+    "result": "Participants with accelerated brain aging (Pattern 2) demonstrated accelerated biological aging, as measured by shorter leucocyte telomere length (p=0.009, Cohen's D=-0.028) and higher PhenoAge (p=0.019, Cohen's D=0.027). These associations remained significant after adjusting for demographic and lifestyle factors, with the PhenoAge association strengthening substantially (p=3.05\u00d710\u207b\u00b9\u2075, Cohen's D=0.092).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C26-C29 provide statistically significant evidence with appropriate adjustments for confounders. The effect sizes are small but consistent across two independent biomarkers of biological aging. The strengthening of the PhenoAge association after adjustment (C29) suggests robustness. However, the small effect sizes (Cohen's D < 0.1) indicate modest practical significance, though this is expected for complex aging phenotypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Participants with accelerated brain aging (Pattern 2) exhibited cognitive decline across multiple domains, including pairs matching (p=0.006, Cohen's D=-0.029), prospective memory (OR=0.943), fluid intelligence (p<1.00\u00d710\u207b\u00b2\u2070, Cohen's D=-0.102), and numeric memory (p=5.97\u00d710\u207b\u00b9\u00b9, Cohen's D=-0.082). These associations persisted after adjusting for demographic and socioeconomic factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C33 provide strong statistical evidence with highly significant p-values for most cognitive measures. The fluid intelligence and numeric memory findings are particularly robust (p<10\u207b\u00b9\u2070). Effect sizes are small but consistent across multiple cognitive domains, suggesting a genuine association. The use of FDR correction and adjustment for socioeconomic factors strengthens the findings. However, the cross-sectional nature limits causal inference.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Participants with accelerated brain aging (Pattern 2) showed increased genetic susceptibility to ADHD (p=0.040) and delayed brain development (p=1.48\u00d710\u207b\u2076) based on polygenic risk scores, with no significant differences for ASD, AD, PD, BIP, MDD, or SCZ after FDR correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 report PRS analysis results with appropriate FDR correction. The delayed brain development association is highly significant (p=1.48\u00d710\u207b\u2076), while ADHD is marginally significant (p=0.040). The methodology using multiple p-value thresholds (0.005-0.5) is appropriate for polygenic traits. However, the ADHD finding is at the threshold of significance after correction, and the lack of association with other disorders (C36) may reflect power limitations or true biological specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C74"
+    ],
+    "result": "The 'last in, first out' mirroring hypothesis was validated by comparing longitudinal GMV trajectories between adolescents (IMAGEN) and adults (UK Biobank). Mirroring patterns (slower decrease during development, faster during aging) were prominent in inferior temporal gyrus, caudal anterior cingulate, fusiform, and middle temporal gyrus. These patterns were stronger in Pattern 2 participants and weakened in late aging (age 75), particularly in frontal and cingulate regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C46-C50 and C74 provide descriptive evidence of regional mirroring patterns, but the validation claim (C5) is not fully supported by statistical testing. The study compares z-transformed annual percentage changes between cohorts, but no formal statistical test of the mirroring hypothesis is reported. The age-specific weakening (C49) and pattern-specific differences (C50) are interesting observations, but without quantitative metrics or significance testing, the 'validation' claim remains uncertain. The different age ranges and cohorts also introduce potential confounds.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C37",
+      "C39",
+      "C43"
+    ],
+    "result": "GWAS identified six genome-wide significant SNPs (p<5\u00d710\u207b\u2078) associated with accelerated brain aging, including rs7776725 (FAM3C intron) and rs10835187 (intergenic between LGR4-AS1 and LIN7C). These loci were mapped to genes involved in Alzheimer's disease, bone density, and ADHD.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37, C39, and C43 report GWAS findings with appropriate genome-wide significance threshold and LD clumping. The sample size (25,861 participants) is adequate for GWAS. The phenotype (individual deviation from population average GMV at age 60) is novel and well-justified. The identification of FAM3C (C39) as an additional signal compared to previous studies adds value. However, the functional interpretation relies heavily on prior literature rather than functional validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C8",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Gene expression analysis using Allen Human Brain Atlas identified genes associated with delayed brain development (990 genes, including LGR4) and accelerated brain aging (2293 genes, including ESR1 and FAM3C). PLS regression showed the first component explained 24.7% of GMV change during development (p=0.03) and 53.6% during aging (p=1.5\u00d710\u207b\u2074). BDNF-AS was associated with both processes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C58 provide detailed gene expression analysis with appropriate spatial permutation testing. The PLS approach is suitable for high-dimensional gene expression data. The convergence between GWAS-identified genes (C53-C55) and expression patterns strengthens findings. However, the modest variance explained in development (24.7%, C51) and marginal significance (p=0.03) suggest weaker associations than for aging. The use of only 6 postmortem brains in AHBA and averaging across donors limits spatial resolution and individual variability assessment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Gene set enrichment analysis revealed that genes associated with delayed brain development were enriched for synaptic signaling, forebrain development, and cAMP pathways, while genes associated with accelerated brain aging were enriched for macroautophagy, protein localization, histone modification, and neurodegeneration pathways. The authors conclude synaptic transmission is important for both processes, while autophagy and neurodegeneration are specific to aging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C60 report gene set enrichment results with FDR correction, providing statistical support. The biological interpretation (C61-C62) is reasonable given the enrichment patterns. However, the conclusions are inferential rather than experimentally validated. The enrichment analysis depends on the quality of the gene selection (FDR p<0.005) and the completeness of GO/KEGG databases. The distinction between shared (synaptic) and aging-specific (autophagy) mechanisms is plausible but would benefit from additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C82"
+    ],
+    "result": "The UK Biobank cohort had a limited number of repeated structural MRI scans, which the authors acknowledge as a limitation for estimating individual-level longitudinal trajectories.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C82 is an acknowledged limitation. With only 4,007 participants having follow-up scans out of 37,013 total (C84-C85), most participants (89%) contributed only cross-sectional data. This limits the robustness of individual trajectory estimation, though the mixed-effects modeling approach partially addresses this by borrowing strength across individuals. The authors appropriately note this limitation and report ICC and variance checks as robustness measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C44",
+      "C45"
+    ],
+    "result": "Two GWAS-identified SNPs (rs10835187 and rs779233904) were previously associated with brain imaging phenotypes. FAM3C encodes a protein involved in pancreatic cancer and Alzheimer's disease, while LIN7C encodes a protein involved in ion channel localization and has been associated with ADHD. These findings were validated by prior studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C40-C42, C44-C45 appropriately cite prior literature to contextualize the GWAS findings. The convergence with previous brain imaging GWAS (C38, C42) provides replication. The functional annotations (C40-C41, C44-C45) are supported by citations. However, these are literature-based interpretations rather than functional validation in the current study. The claims accurately represent prior work but do not constitute new findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C80"
+    ],
+    "result": "The genetic architecture underlying brain aging patterns overlaps with bone density, as evidenced by the identification of rs10835187 near LIN7C, which was previously associated with both phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C80 is an inference supported by the GWAS finding (C43) and prior literature citations. The overlap between brain aging and bone density genetics is plausible given shared aging mechanisms. However, this is a single locus observation rather than systematic genetic correlation analysis. A formal genetic correlation study (e.g., using LD score regression) would provide stronger evidence for genome-wide overlap.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Prior research has established that brain aging is associated with biological aging, cognitive decline, and neuropsychiatric disorders, and that brain development and aging show mirroring patterns. However, validation of the 'last in, first out' hypothesis has been limited by lack of large-scale longitudinal studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C20 accurately summarize prior literature with appropriate citations. These claims establish the scientific context and rationale for the current study. The statement about lack of validation (C18) is supported by the literature review. These are background claims rather than new findings, and they appropriately frame the research questions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C92"
+    ],
+    "result": "The Discussion contextualizes findings within prior literature on brain aging, neuropsychiatric disorders, disease heterogeneity, and the mirroring hypothesis. The authors note that structural brain patterns may manifest decades before cognitive decline and suggest potential clinical applications for early prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C81 and C92 appropriately cite and interpret prior literature in the Discussion. The contextualization is accurate and relevant. However, C71 (potential clinical applications) is speculative and not directly tested in this study. The claim is appropriately hedged with 'could aid' rather than definitive statements, but represents future work rather than current findings.",
+    "result_type": "MINOR"
+  }
+]

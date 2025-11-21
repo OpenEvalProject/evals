@@ -1,0 +1,222 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "The authors established a zebrafish model exhibiting excessive angiogenesis induced by high glucose treatment (6% D-glucose for >48 hours starting at 24 or 48 hpf), which they claim resembles proliferative diabetic retinopathy (PDR) more closely than previous models. The model shows dramatically increased blood vessel formation, particularly in intersegmental vessels (ISVs), with hyperbranched endothelial cells sprouting from existing vessels without significant developmental defects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C23-C28 provide converging experimental evidence from multiple treatment windows (Figure 1), glucose concentration measurements (Figure 1\u2014figure supplement 3), and imaging data showing dose-dependent effects (Figure 1\u2014figure supplement 5). The comparison to prior models (C67-C69) is supported by citations and describes more complex vascular structures than previously reported. The phenotype is well-documented with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C79",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Both caloric (D-glucose, fructose) and noncaloric monosaccharides (L-glucose, D-mannose, D-ribose, L-arabinose) induce excessive angiogenesis in zebrafish embryos, while isotonic disaccharides (lactose, maltose, sucrose) at equivalent concentrations do not cause this phenotype. This suggests the effect is specific to monosaccharides and not due to osmotic pressure, though higher concentrations of disaccharides can also induce excessive angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 are supported by systematic experimental comparisons shown in Figure 2 and supplements. The osmotic pressure control using isotonic disaccharides (C31, C83) is appropriate, and the observation that higher disaccharide concentrations also cause the phenotype (C32) is consistent with potential conversion to monosaccharides (C86). The pyruvic acid negative control (C33) further supports specificity. The conclusion that effects are not solely caloric (C79, C85) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C47",
+      "C87"
+    ],
+    "result": "High glucose treatment induces ectopic activation of quiescent endothelial cells into tip cell-like cells, characterized by dynamic filopodia extension and sprouting angiogenesis. Time-lapse imaging shows that in control embryos, few ECs extend filopodia which quickly retract, while glucose-treated embryos show many ECs initiating sprouting with extended filopodia that form complex vascular structures. The expression of tip cell markers (esm1, cxcr4a, apln) is significantly upregulated in arterial and capillary ECs after glucose treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 are supported by confocal time-lapse imaging (Figure 3, Videos 3-4) showing clear differences between control and treated embryos. The molecular evidence from single-cell sequencing (C47, Figure 3h-k) confirms upregulation of established tip cell markers, providing independent validation of the cellular phenotype. The observation that ectopic vessels are not perfused (C87) adds important characterization. The evidence converges from imaging and molecular data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Single-cell transcriptomic sequencing of 6006 endothelial cells from control and high glucose-treated embryos reveals six distinct EC clusters with characteristic marker expression. High glucose treatment increases the ratio of arterial/capillary ECs and proliferating ECs, with 1201 genes upregulated and 523 genes downregulated in arterial and capillary ECs. These differentially expressed genes are enriched in biological processes including actin filament organization, blood vessel morphogenesis, and angiogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C51 describe a comprehensive single-cell RNA-seq analysis with appropriate quality control (Figure 4\u2014figure supplements 1-2). The clustering analysis (C41-C45) shows expected marker expression patterns for different EC types (Figure 4b-h). The increased ratio of specific EC populations (C46) is consistent with the observed phenotype. The differential gene expression analysis (C50-C51) with GO enrichment provides mechanistic insights. The whole embryo transcriptome data (C48-C49) provides additional context. The computational analysis appears sound with appropriate filtering criteria.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C72",
+      "C73"
+    ],
+    "result": "Foxo1a is significantly downregulated in arterial and capillary ECs after high glucose treatment, and loss of foxo1a function leads to excessive angiogenesis. Pharmacological inhibition of Foxo1a with AS1842856 or morpholino knockdown induces excessive angiogenesis similar to glucose treatment. Conversely, overexpression of foxo1a in whole embryos or specifically in ECs significantly and partially rescues the excessive angiogenesis induced by high glucose.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 are supported by single-cell sequencing data (Figure 5c-e) and in situ hybridization (Figure 5f) showing consistent downregulation. The loss-of-function experiments (C55) using both chemical inhibitor and morpholino (Figure 5g-i) provide converging evidence. The rescue experiments (C56, Figure 6) demonstrate sufficiency and establish causality, though the rescue is partial. The prior literature (C52, C72-C73) provides strong context for Foxo1a's role in EC quiescence and diabetic complications. The evidence forms a coherent mechanistic story.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C88",
+      "C89"
+    ],
+    "result": "Marcksl1a is significantly upregulated in arterial and capillary ECs following high glucose treatment, and its overexpression in ECs leads to increased blood vessel formation. Foxo1a negatively regulates marcksl1a transcription through direct binding to two predicted binding sites (BS1 and BS2) in the marcksl1a promoter region, as demonstrated by ChIP-PCR and luciferase reporter assays. The conservation of Foxo1 DNA binding motifs between zebrafish and mice supports the validity of using mouse FOXO1 binding sequences for prediction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C58-C59 are supported by single-cell sequencing, qPCR, and ISH data (Figure 7a-d). The gain-of-function experiment (C60, Figure 7e-g) demonstrates marcksl1a's role in angiogenesis. The regulatory relationship is established through multiple lines of evidence: Foxo1a inhibition increases marcksl1a (C61), Foxo1a overexpression decreases marcksl1a (C62), ChIP-PCR shows direct binding (C63, Figure 8e), and luciferase assays confirm transcriptional regulation (C64, Figure 8f-g). The sequence conservation (C88, Figure 7\u2014figure supplement 1) and bioinformatic prediction (C89, Figure 8d) provide rational basis for the binding site analysis. The evidence is comprehensive and mechanistically sound.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C7",
+      "C65",
+      "C66",
+      "C74"
+    ],
+    "result": "Monosaccharides induce excessive angiogenesis through the foxo1a-marcksl1a pathway. Knockdown of marcksl1a effectively mitigates the excessive angiogenesis caused by both high D-glucose and L-glucose treatment, with rescue effects similar to VEGFR inhibitor Lenvatinib. This pathway mediates the differentiation of quiescent ECs into tip cells in response to both caloric and noncaloric monosaccharides.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C65-C66, and C74 represent the integrated conclusion of the mechanistic studies. The marcksl1a knockdown rescue experiments (C65, Figure 8h-n) provide strong evidence for the pathway's necessity. The comparison to Lenvatinib (Figure 7\u2014figure supplement 2) validates the angiogenic nature of the phenotype. The pathway operates for both D-glucose and L-glucose (C65), supporting the generality to noncaloric monosaccharides. The evidence from loss-of-function, gain-of-function, and rescue experiments across multiple components (foxo1a and marcksl1a) provides strong support for this pathway model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C34"
+    ],
+    "result": "The hyperbranched ectopic vessels induced by high glucose comprise both arteries and veins, as determined by live imaging analysis of the Tg(flt1:YFP::kdrl:ras-mCherry) transgenic line.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C34 is supported by imaging data in Figure 2i-j using an appropriate transgenic reporter line that differentially labels arterial and venous ECs. This characterization adds important detail about the nature of the excessive angiogenesis phenotype.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "Artificially sweetened beverages (ASBs) containing noncaloric monosaccharides have been suggested as healthier alternatives to sugar-sweetened beverages, but accumulating epidemiological studies suggest ASB consumption may be associated with increased cardiovascular risk and diabetes. The underlying mechanisms remain insufficiently documented, though several hypotheses have been proposed including effects on central nervous system circuits, gut hormones, and microbiota.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C13-C17, C75-C78 accurately summarize the epidemiological literature with appropriate citations. These claims establish the context and motivation for the study. The statements about insufficient mechanistic understanding (C2, C17) and ongoing debate (C78) are appropriately cautious and well-supported by the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C70",
+      "C71",
+      "C80"
+    ],
+    "result": "Hyperglycemia and its effects on the vascular system are major causes of morbidity and mortality in diabetes mellitus, associated with both microvascular and macrovascular complications. Excessive angiogenesis is a major pathological feature of diabetic retinopathy and nephropathy. High blood glucose levels have been demonstrated to be associated with vascular dysfunction and endothelial cell dysfunction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C12, C70-C71, and C80 provide well-established background information supported by appropriate citations to the literature. These claims accurately represent current knowledge about diabetes complications and vascular pathology.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Zebrafish is a valuable model for studying metabolic diseases including hyperglycemia and diabetic complications due to functional conservation with mammals. The combination of embryonic transparency and transgenic fluorescent reporters facilitates high-resolution vascular imaging. Previous studies have used glucose immersion to induce diabetic complications in zebrafish, but the association between noncaloric monosaccharides and vascular dysfunction has not been elucidated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C22 accurately describe the advantages of the zebrafish model system and the state of the field, supported by appropriate citations. These claims establish the rationale for using zebrafish and identify the knowledge gap addressed by the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "The findings support a possible biological mechanism underlying positive associations between noncaloric monosaccharides and microvascular complications in type 2 diabetes, suggesting that noncaloric monosaccharides might not be suitable for artificially sweetened beverage consumption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C81-C82 represent speculative extrapolations from the zebrafish data to human health implications. While the zebrafish findings are well-supported, the translational relevance to human ASB consumption requires additional validation. The concentrations used (6% monosaccharides) may not reflect physiological exposures in humans consuming ASBs. The claim about suitability for ASB consumption (C82) is particularly speculative and would require human studies or at least mammalian models to support.",
+    "result_type": "MAJOR"
+  }
+]

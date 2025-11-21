@@ -1,0 +1,388 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C165"
+    ],
+    "result": "PITAR is identified as a cancer/testis lncRNA that is significantly upregulated in glioblastoma (GBM) and glioma stem-like cells (GSCs) compared to normal tissues, with expression restricted to testis among normal tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C3, C30-C39 provide convergent evidence from multiple independent GBM cohorts (TCGA, CGGA, lab cohort), GSC datasets, pan-cancer analysis, and GTEx normal tissue data showing PITAR upregulation in GBM/GSCs and testis-restricted expression in normal tissues. The cancer/testis classification (C2, C39, C165) is appropriately inferred from this expression pattern. Multiple validation methods (RNA-seq, qRT-PCR) and biological replicates support these findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "PITAR is a 4236-nucleotide lncRNA located on chromosome 9 with four exons, confirmed as noncoding by CPAT analysis, and primarily localized to the nucleus (80%).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 describe basic molecular characteristics of PITAR supported by genomic annotation (C40-C41), computational prediction (C42), and two independent experimental methods for subcellular localization: fractionation followed by qRT-PCR (C43) and RNAScope in situ hybridization (C44). The convergence of two different localization methods strengthens confidence in the nuclear localization finding.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "PITAR silencing inhibits glioma cell proliferation, reduces viable cell count and colony formation, induces G0/G1 arrest and apoptosis, and sensitizes cells to DNA-damaging agents, but does not affect immortalized astrocytes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C52 demonstrate consistent oncogenic function of PITAR through multiple complementary assays (MTT, viable cell count, colony formation, cell cycle, apoptosis, chemosensitivity) in two independent glioma cell lines (U87, U343). The specificity for cancer cells is supported by lack of effect in immortalized astrocytes (C52). Two independent siRNAs were used, controlling for off-target effects. Statistical significance is reported for all assays.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C4",
+      "C53",
+      "C54",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "TRIM28 mRNA is a direct target of PITAR, with an 80 bp energetically favorable interaction region between PITAR exon 1 and TRIM28 3'UTR, demonstrated by ChIRP-seq, computational prediction, colocalization, and functional validation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C53-C54, C65-C72 establish PITAR-TRIM28 interaction through multiple orthogonal approaches: ChIRP-seq identified TRIM28 among 827 enriched mRNAs (C53-C54), IntaRNA predicted specific 80bp interaction region (C65), multiplexed RNAScope showed specific colocalization exceeding coincidental overlap (C66-C67), in vitro pulldown confirmed direct RNA-RNA interaction dependent on the predicted region (C68-C69), and luciferase reporter assays validated functional consequences with appropriate deletion controls (C70-C72). The convergence of computational, biochemical, and functional evidence strongly supports direct interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C73",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "PITAR interaction with TRIM28 mRNA stabilizes the transcript, increasing its half-life and resulting in elevated TRIM28 protein levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C6, C73-C76 demonstrate the mechanism of PITAR action on TRIM28 through mRNA stabilization. PITAR silencing reduces both TRIM28 mRNA (C73) and protein (C74), while actinomycin D chase experiments directly measure increased mRNA half-life in PITAR-expressing cells (C75). The conclusion (C76) that PITAR stabilizes TRIM28 mRNA is well-supported by these complementary approaches measuring both steady-state levels and decay kinetics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C7",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "PITAR regulates p53 protein levels post-translationally through TRIM28, reducing p53 steady-state levels, increasing p53 ubiquitination, and decreasing p53 half-life without affecting TP53 mRNA levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C77-C87 establish PITAR's effect on p53 through multiple lines of evidence: PITAR silencing increases p53-dependent reporter activity (C77), increases p53 and p21 protein without changing TP53 mRNA (C78-C80), while PITAR overexpression has opposite effects (C82-C83). Mechanistic studies show PITAR affects p53 protein half-life (C86) and ubiquitination (C87). Results are replicated in U343 cells (C81, C85). The post-translational mechanism is clearly demonstrated by the disconnect between mRNA and protein levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "PITAR's effects on p53 are mediated through TRIM28, as demonstrated by rescue experiments showing that TRIM28 overexpression blocks PITAR silencing effects and TRIM28 silencing blocks PITAR overexpression effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C96 provide critical epistasis experiments establishing TRIM28 as the mediator of PITAR's effects on p53. TRIM28 overexpression rescues PITAR silencing phenotypes (C88-C91), while TRIM28 silencing blocks PITAR overexpression effects (C92-C95). These bidirectional rescue experiments with appropriate controls strongly support the conclusion (C96) that PITAR acts through TRIM28. The use of 3'UTR-less TRIM28 construct is appropriate to avoid PITAR-mediated regulation of the rescue construct.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "PITAR's growth-promoting functions require wild-type p53, as PITAR silencing effects are abolished in p53-deficient cells and mutant p53-containing GSCs are insensitive to PITAR manipulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C97-C102 demonstrate p53-dependence through multiple approaches: PITAR silencing fails to inhibit colony formation or induce p53 target genes in p53-silenced U87 cells (C97-C98), PITAR manipulation affects WT p53-containing RG5 GSCs (C99-C100) but not mutant p53-containing MGG8 GSCs (C101). The conclusion (C102) is well-supported by these complementary genetic experiments. However, the manuscript states MGG8 p53 status as \"data not shown,\" which is a minor weakness.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C8",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "DNA damage induces PITAR expression in a p53-independent manner through ATM/ATR kinase signaling, and this induction is required for DNA damage-induced TRIM28 upregulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C107-C114 establish p53-independent DNA damage induction of PITAR through multiple lines of evidence: p53 overexpression does not induce PITAR/TRIM28 (C107-C108), adriamycin induces PITAR/TRIM28 (C109), this induction occurs in p53-silenced cells (C110-C111), is blocked by ATM/ATR inhibitor CGK733 (C112), and PITAR is required for DNA damage-induced TRIM28 upregulation (C113). The convergence of genetic and pharmacological evidence strongly supports the proposed pathway. The ATM/ATR dependence is consistent with established DNA damage response mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C9",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C117",
+      "C118",
+      "C119",
+      "C159"
+    ],
+    "result": "DNA damage-induced PITAR creates an incoherent feedforward loop that attenuates p53 response to DNA damage, as PITAR overexpression reduces DNA damage-induced p53 activation and PITAR silencing enhances p53 response kinetics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C103-C106, C117-C119, C159 establish the incoherent feedforward loop model through functional studies: PITAR overexpression reduces adriamycin-induced p53 activity, p53/p21 protein levels, and G2/M arrest (C103-C106), while PITAR silencing enhances the magnitude of p53/Mdm2/p21 response to irradiation without changing kinetics (C117-C118). The model (C9, C159) is well-supported by these data. However, the term \"incoherent feedforward loop\" requires both DNA damage activating p53 AND PITAR independently, which is demonstrated, and PITAR inhibiting p53, which is also shown. The model is conceptually sound and experimentally supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "PITAR silencing inhibits GSC growth in vitro and reduces glioma tumor growth and enhances survival in an intracranial orthotopic mouse model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C11, C120-C122 demonstrate anti-tumor effects of PITAR silencing through in vitro GSC assays (C10) and in vivo orthotopic xenograft experiments (C120-C121) with immunohistochemistry confirmation of reduced TRIM28 in tumors (C122). The in vivo experiments used appropriate controls (n=10 mice/group), bioluminescence imaging for tumor monitoring, and survival analysis. Statistical significance is reported. The consistency between in vitro and in vivo results strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C12",
+      "C123",
+      "C126",
+      "C127",
+      "C128",
+      "C129"
+    ],
+    "result": "PITAR overexpression enhances tumor growth in a TRIM28-dependent manner, as demonstrated by rescue experiments showing TRIM28 silencing blocks PITAR-mediated tumor promotion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C123, C126-C129 establish TRIM28-dependence of PITAR's tumor-promoting function through in vivo epistasis experiments: PITAR overexpression increases tumor growth (C123, C126), but this effect is blocked by TRIM28 silencing (C127), with corresponding changes in TRIM28 and p21 staining (C128). The conclusion (C129) is well-supported by these genetic rescue experiments in vivo. The experimental design appropriately tests the epistatic relationship between PITAR and TRIM28.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C13",
+      "C124"
+    ],
+    "result": "PITAR overexpression promotes resistance to Temozolomide chemotherapy in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13 and C124 demonstrate that PITAR overexpression confers TMZ resistance in orthotopic xenografts, with TMZ substantially inhibiting control tumors but showing reduced efficacy against PITAR-overexpressing tumors. The in vivo experimental design with TMZ treatment (100 mg/kg for 1 week) is appropriate. However, the manuscript would benefit from additional mechanistic studies or in vitro TMZ sensitivity assays to complement the in vivo findings.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C144",
+      "C145"
+    ],
+    "result": "TRIM28 is upregulated in GBM at both transcript and protein levels, and TRIM28 expression positively correlates with PITAR expression across multiple GBM cohorts and in GSCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64, C144-C145 establish TRIM28 upregulation in GBM through multiple independent datasets (CGGA, TCGA, Kamoun, Gravendeel, lab cohort) for mRNA and proteomics/IHC for protein. Positive correlation with PITAR is demonstrated across all cohorts (C60, C62). The consistency across multiple independent datasets and validation at both mRNA and protein levels strongly supports these findings. The prior literature citations (C144) provide additional context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134"
+    ],
+    "result": "PITAR expression predicts poor prognosis specifically in wild-type p53 GBM patients but not in p53 mutant or unselected GBM cohorts, and PITAR-TRIM28 correlation is significant only in wild-type p53 tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C130-C134 demonstrate p53 genotype-specific clinical relevance through correlation analysis (C130) and survival analysis (C131-C133) in TCGA GBM cohort stratified by p53 status. The finding that PITAR predicts survival only in WT p53 tumors (C132) but not in mutant p53 (C133) or unselected cohorts is consistent with the mechanistic model. Cox regression and Kaplan-Meier analyses are appropriate. However, the analysis would be strengthened by validation in an independent cohort and by multivariate analysis adjusting for other prognostic factors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "RNA-seq of PITAR-silenced cells reveals 946 differentially expressed genes enriched for cell cycle, apoptosis, and p53 pathway genes, indicating PITAR functions by interfering with p53.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 describe transcriptomic consequences of PITAR silencing with appropriate bioinformatic analysis (gene ontology, GSEA). The enrichment of p53 pathway genes supports the mechanistic model. However, the inference (C58) that PITAR \"executes its functions by interfering with p53\" is somewhat circular, as this conclusion is based partly on the observation that p53 pathway genes are affected. The RNA-seq provides supportive evidence but does not independently establish the mechanism, which is better demonstrated by the direct biochemical and functional studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C14",
+      "C169"
+    ],
+    "result": "PITAR is proposed as a potential therapeutic target for GBM based on its oncogenic functions and tumor-promoting effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C14 and C169 propose PITAR as a therapeutic target based on the functional data. While the oncogenic role of PITAR is well-established by the preceding results, the claim of therapeutic potential is speculative. True validation as a therapeutic target would require: (1) demonstration that PITAR can be effectively targeted in vivo (e.g., with ASOs or other modalities), (2) assessment of on-target toxicity in normal tissues (particularly testis where PITAR is expressed), (3) evaluation in more clinically relevant models (e.g., patient-derived xenografts, immunocompetent models), and (4) comparison with existing therapies. The current data support PITAR as a promising candidate but do not establish it as a validated therapeutic target.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164"
+    ],
+    "result": "Background claims about lncRNAs, p53, TRIM28, cancer/testis antigens, and their roles in cancer, establishing the scientific context for the study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C26, C135-C143, C152-C155, C160-C164 provide established background knowledge supported by appropriate literature citations. These claims accurately represent the current understanding of lncRNA biology, p53 regulation, TRIM28 function, and cancer/testis antigens. The citations appear appropriate and the statements are consistent with the cited literature. These background claims provide necessary context but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C1",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150",
+      "C151",
+      "C156",
+      "C157",
+      "C158",
+      "C168"
+    ],
+    "result": "PITAR is an oncogenic lncRNA that inactivates p53 by binding and stabilizing TRIM28 mRNA, representing a novel mechanism of p53 inactivation in cancer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C146-C151, C156-C158, C168 represent the central conclusion integrating multiple lines of evidence from the study. The mechanism is supported by: (1) direct PITAR-TRIM28 mRNA interaction (Result 4), (2) PITAR-mediated TRIM28 mRNA stabilization (Result 5), (3) TRIM28-dependent p53 regulation (Results 6-7), (4) p53-dependent oncogenic functions (Result 8), (5) DNA damage induction (Result 9), and (6) in vivo tumor promotion (Results 11-12). The convergence of molecular, cellular, and in vivo evidence strongly supports this central conclusion. This represents a novel mechanism of p53 regulation through lncRNA-mediated mRNA stabilization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C166",
+      "C167"
+    ],
+    "result": "Summary claims stating that PITAR silencing inhibits glioma cell and GSC growth in vitro and promotes tumor growth and TMZ resistance in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C166-C167 are summary statements of findings detailed in Results 3, 11, 12, and 13. These claims accurately summarize the demonstrated effects of PITAR manipulation on tumor growth in vitro and in vivo. The evidence supporting these summary claims is strong and comes from multiple complementary experimental approaches.",
+    "result_type": "MINOR"
+  }
+]

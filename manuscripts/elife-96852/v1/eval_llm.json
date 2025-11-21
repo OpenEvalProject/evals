@@ -1,0 +1,417 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C9",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "The study characterized gene expression dynamics during na\u00efve CD4+ T cell activation using RNA-seq across three timepoints (unstimulated, 8hr, 24hr stimulation). Differential expression analysis identified 4390 genes differentially expressed after 8hr stimulation and 3611 genes between 8hr and 24hr, which were clustered into five distinct temporal expression patterns enriched for specific biological pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C17-C26 collectively describe a well-executed RNA-seq experiment with appropriate biological replicates (N=3 donors), clear differential expression criteria (FDR<0.05, |log2FC|>1), and k-means clustering validated by pathway enrichment analysis. The expression patterns of known markers (C17-C18) and pathway enrichments (C19-C20, C24-C26) are consistent with established T cell activation biology, providing internal validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "ATAC-seq analysis revealed that CD4+ T cell activation induces dynamic changes in chromatin accessibility at 14% of open chromatin regions (25,291 DARs), while maintaining stable A/B compartmentalization (94% stable) and TAD structure (80% stable boundaries) across activation states.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 describe chromatin accessibility dynamics with appropriate statistical thresholds (FDR<0.05) and biological replicates (N=3). The finding that large-scale genome organization remains stable (C30-C31) while local accessibility changes (C28-C29) is biologically coherent and supported by the data. The 20% dynamic TAD boundaries (C32) represent meaningful structural changes during activation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "HiC analysis identified ~900,000-930,000 chromatin loops per timepoint, with 23% involving promoter-OCR contacts enriched for enhancer signatures. T cell activation resulted in significant reorganization of the promoter-OCR interactome (907 increased, 1333 decreased contacts at 8hr), with changes in chromatin architecture highly correlated with gene expression changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C43 describe comprehensive HiC analysis with high sequencing depth (~4 billion reads) and appropriate loop calling methods (Fit-HiC2, FDR<1e-6). The 40% concordance with prior pcHiC studies (C39) despite methodological differences provides external validation. The correlation between chromatin architecture changes and gene expression (C37-C38) is demonstrated through integrated analysis, and the complex regulatory architecture (median 10 OCR per gene, C40-C42) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "Transcription factor footprinting analysis identified dynamic changes in TF activity during activation, with increased accessibility at bZIP motifs (AP-1, BATF, BACH1/2) and decreased accessibility at negative regulators (EGR2, FOXP3). Motif enrichment and regulatory network analysis implicated 89 expressed TFs, with distinct networks operating in quiescent (KLF2, ETS1, IKZF1, TCF7) versus activated states (NFKB1, JUNB, MYC, IRF4, STAT5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C59 describe TF footprinting analysis using established methods (HINT-ATAC) with appropriate integration of expression data. The findings are consistent with known T cell biology (C48, C51-C58 supported by citations), and the identification of novel factors (PLAGL2, MAZ, C54, C59) represents new hypotheses. The regulatory network analysis integrates footprinting, promoter connectivity, and co-expression data, providing multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Variant-to-gene (V2G) mapping using HiC-derived promoter contacts identified 2606 putatively causal autoimmune variants at 423 GWAS signals contacting 1836 genes. Partitioned LD score regression showed enrichment for 8 autoimmune diseases (IBD, UC, T1D, SLE, CEL, ALG, ECZ, RA) but not PSO or JIA, with disease-specific enrichment patterns across gene expression clusters. Approximately 40% (753) of connected genes were dynamically regulated during activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C73 describe a systematic V2G mapping approach that reduces credible set size from 14 to 3 variants per sentinel (C60) and identifies disease-gene connections with appropriate statistical validation (partitioned LD score regression, C61-C64). The finding that variants are on average 103kb from target genes (C68), contact multiple genes (median 5, C69), and frequently skip the nearest gene (C70-C71) challenges simple nearest-gene assumptions and is well-supported by the HiC data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The study identified specific examples of dynamic variant-gene connections, including MS variant rs1077667 contacting GPR108 and TRIP10 with increased accessibility and expression at 8hr, and allergy variant rs7380290 contacting SIK1 with reduced accessibility upon activation. These genes have not been previously studied in T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74-C79 provide specific examples of the V2G approach with high-confidence variants (PP>0.99 for rs1077667, C74) and demonstrate dynamic changes in accessibility, contact frequency, and expression. The gene functions are supported by citations (C76, C78) or established knowledge (C77), and the novelty claim (C79) is reasonable given the lack of prior T cell studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "Comparison of the study's V2G predictions with other approaches showed low concordance with eQTL studies (0.6-5%) and moderate concordance with pcHiC studies (15-24%). The study uniquely predicted 562 autoimmune effector genes, with 1519 genes not predicted by eQTL approaches. Co-localization analysis showed tenfold enrichment for Soskic eQTL predictions compared to random sampling.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84-C91 describe systematic comparisons with appropriate harmonization of datasets and statistical validation (C87). The low concordance between approaches (C84-C86) is concerning but may reflect genuine biological differences between methods rather than errors. The co-localization enrichment (C87) provides some validation, though the overall low concordance suggests either high false positive rates or that different methods capture different aspects of gene regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "Precision-recall analysis against human inborn errors of immunity (HIEI) genes showed that leveraging HiC data increased sensitivity threefold (from 5% to 16%) compared to promoter-only approaches, comparable to other chromatin-based methods but 3-12 fold more sensitive than eQTL approaches. Restricting to dynamically regulated genes increased precision from 4% to 6.2% while reducing recall from 16% to 10%. The ABC model showed half the predictive power of chromatin-based V2G approaches.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C102 describe a rigorous benchmarking analysis using HIEI genes as a 'gold standard' (449 genes). The threefold improvement with HiC data (C93) and superior performance versus eQTL (C95) and ABC (C99) are well-documented. However, the interpretation requires caution: the HIEI truth set may not capture all relevant genes (C102), and the low overall recall (16%, C93) suggests either high false negative rates or that many V2G genes represent novel biology not yet characterized in humans. The precision-recall tradeoff (C96-C97) is appropriately characterized.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "The study identified evolutionarily conserved intergenic enhancers at the IL2 locus (at -46, -51, -80, -83, -85, -96, -122, -128 kb) containing autoimmune-associated SNPs. These enhancers become highly accessible and physically interact with the IL2 upstream regulatory region (URR) upon TCR/CD28 stimulation, are occupied by known IL2 regulators (AP-1, NFAT, NFkB) and novel factors (MYC, BCL6, STAT5), and can enhance transcription from the URR in reporter assays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103-C114 describe the identification and initial characterization of novel IL2 enhancers using multiple lines of evidence: evolutionary conservation (C106), GWAS SNP mapping (C107-C109), ATAC-seq (C110), HiC (C111), ChIP-seq from public data (C112-C113), and reporter assays (C114). The integration of these approaches provides strong support for the existence and activity of these enhancers. The findings are supported by established knowledge about IL2 biology (C103-C105).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "CRISPR deletion experiments in primary human CD4+ T cells and Jurkat cells showed that individual deletion of the -46, -51, -83, -85, -122, and -128 kb enhancers each reduced IL-2 production by ~50%, while deletion of the -80 kb element had little effect. The URR showed stronger effects than individual enhancers, but deletion of the entire 81.3 kb intergenic region completely abrogated IL-2 expression despite an intact URR, demonstrating that the URR is not sufficient for IL2 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C115-C122 describe functional validation experiments using CRISPR deletion in both primary cells (N=5 donors) and cell lines (N=3 replicates). The consistent effects across cell types (C117) and the dramatic phenotype of the large deletion (C120) provide strong evidence for enhancer function. The conclusion that the URR is insufficient (C121) is well-supported by the complete loss of IL-2 expression when distal enhancers are deleted. However, the ~50% reduction for individual enhancers (C115) suggests partial redundancy, and the lack of effect for the -80kb element (C116) is unexplained.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C123",
+      "C124",
+      "C125"
+    ],
+    "result": "The distal IL2 enhancers are highly accessible in quiescent memory T cell subsets (Th1, Th2, Th17, Th1-17, Th22) isolated ex vivo but show little accessibility in na\u00efve CD4+ T cells and Tregs, suggesting stable epigenetic remodeling that persists after TCR signals cease and contributes to rapid IL-2 production by memory cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C123-C125 describe ATAC-seq analysis in multiple T cell subsets isolated ex vivo, showing differential accessibility patterns consistent with known IL-2 production capabilities of these subsets. The inference about epigenetic memory (C125) is reasonable and supported by citations to prior studies showing differential IL-2 production kinetics, though direct causal evidence would require additional experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137",
+      "C138",
+      "C139",
+      "C140"
+    ],
+    "result": "The IL2 intergenic enhancers are conserved between human and mouse. Deletion of the orthologous -83 kb enhancer in mice (Il2-83-cRE-ko) did not affect T cell development but reduced IL-2 production and proliferation in vitro, reduced Treg induction (rescued by exogenous IL-2), increased Tfh differentiation and antibody responses, and reduced colitis in an IBD adoptive transfer model, demonstrating that this enhancer contributes to physiological immune responses and inflammatory disease susceptibility in vivo.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C126-C140 describe comprehensive in vivo validation in mice using CRISPR-generated knockouts. The sequence conservation (C126) and functional conservation (C128-C130) are well-demonstrated. The in vivo phenotypes (C131-C137, C139) are consistent with reduced IL-2 production and are appropriately controlled (e.g., IL-2 rescue, C132; co-transfer experiments, C139). The reduced colitis phenotype (C136-C137) is somewhat counterintuitive but may reflect reduced T cell accumulation in lymphoid tissues. The conclusion about physiological relevance (C140) is well-supported.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C141",
+      "C142"
+    ],
+    "result": "Disease-associated genetic variation influences IL2 enhancer activity, with the risk allele at the -128 kb element showing significantly less transcriptional activity than the reference allele in reporter assays. Genome-wide, 1370 autoimmune risk variants in open chromatin were predicted to influence the activity of 495 DNA binding factors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C141-C142 describe allele-specific effects on enhancer activity using reporter assays (C141, N=7 donors) and genome-wide motif disruption analysis (C142). The reporter assay provides direct evidence for functional effects of genetic variation at the IL2 locus, though the magnitude of the effect and its relationship to disease risk are not quantified. The genome-wide analysis (C142) is computational and requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147"
+    ],
+    "result": "V2G-implicated genes were highly enriched for genes shown to regulate IL-2, IL-2 receptor, CTLA-4, and proliferation in CRISPR screens (202 IL-2 regulators, 166 proliferation regulators). Query of the IMPC database identified 97 genes with immune phenotypes and 126 with hematopoietic phenotypes when knocked out in mice, representing ~30% enrichment over expected (adjP<0.05).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C147 describe validation of V2G predictions using orthogonal functional genomics data (CRISPR screens) and mouse knockout phenotypes (IMPC). The enrichments are statistically significant and provide strong support for the functional relevance of V2G-implicated genes. However, the enrichment is modest (~30% for IMPC, C147), suggesting that many V2G genes may not have obvious immune phenotypes or that the truth sets are incomplete.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C148",
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Nearly 20% of V2G-implicated genes have chemical modulators available. Pharmacological validation experiments showed that small molecules targeting GRK6, PTK6, MAP3K11, GPR183, GART, and SIK1 inhibited T cell activation in the nanomolar to micromolar range, while ligands for CHRNB1, KISS1R, and OXER1 did not significantly affect proliferation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C148-C151 describe drug-gene interaction analysis and pharmacological validation experiments (N=4 replicates). The successful validation of 6/9 tested genes (C149) provides strong support for the V2G approach, though the failure of 3 genes (C150) suggests either false positives or that these genes regulate aspects of T cell function not captured by the proliferation assay. The dose-response curves (Figure 8G) show appropriate controls and replication.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C152",
+      "C153",
+      "C154",
+      "C155",
+      "C156",
+      "C157",
+      "C158",
+      "C159"
+    ],
+    "result": "Most cRE interact with multiple genes (median 5), supporting a scenario where multiple effector genes operate at GWAS loci. The vast majority (87-95%) of chromatin-based V2G predictions are not the nearest gene, while roughly one-third of eQTL predictions are the nearest gene, suggesting that eQTL-based and GWAS-based approaches inherently implicate different types of genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C152-C159 describe systematic differences between V2G approaches, with appropriate citations to support the characterization of eQTL versus GWAS variants (C157-C158). The finding that most V2G genes are not the nearest gene (C154) challenges simple assumptions and is well-supported by the data. The inference that different approaches capture different biology (C156) is reasonable, though the low concordance could also reflect high false positive rates in one or both approaches.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C160",
+      "C161",
+      "C162",
+      "C163",
+      "C164",
+      "C165",
+      "C166",
+      "C167"
+    ],
+    "result": "Systematic comparison of 3D chromatin-based V2G studies showed highest concordance between Javierre and Burren datasets (37%) and moderate concordance with this study (24%). The higher concordance among promoter-capture datasets likely reflects their lower resolution and greater promoter-focused sequencing depth compared to HiC. Extending to multiple cell types increased recall from 17% to 27%, emphasizing how limited cell type inclusion can reduce power to detect effector genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C160-C167 describe methodological comparisons with appropriate consideration of technical differences between approaches (C162-C164). The cell type analysis (C166-C167) provides important insights into the limitations of single-cell-type studies. However, the low concordance between studies (C160-C161) raises concerns about reproducibility and suggests that method-specific biases may be substantial.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C168",
+      "C169",
+      "C170"
+    ],
+    "result": "The rate of HIEI discovery has increased over time, from ~100 known in 2000 to ~300 by 2017 (~11 per year), accelerating to ~40 per year between 2018-2021 due to next-generation sequencing and COVID-19, reaching ~450 currently recognized HIEI.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C168-C170 provide historical context for the HIEI truth set used in precision-recall analysis. The information appears to be based on general knowledge of the field and is consistent with the growth of genomic medicine. This context is important for interpreting the low recall rates observed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C177",
+      "C178",
+      "C179",
+      "C180",
+      "C181",
+      "C182",
+      "C183",
+      "C184",
+      "C185"
+    ],
+    "result": "Several V2G-implicated genes with no prior T cell studies were validated or have supporting evidence: PARK7 (recently shown to modulate Treg function), GPR108 (identified in CRISPR screen for IL-2 regulators), GPR18 (agonist inhibited activation >10\u03bcM, antagonist enhanced activation), GART (antagonist inhibited activation at 10nM), GRK6 and PTK6 (antagonists inhibited activation at nM-\u03bcM), MAP3K11 (inhibitor blocked proliferation at 100nM), GPR183 (25-hydroxycholesterol inhibited at 100nM), and SIK1 (inhibitor potently blocked activation at pM range).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C172-C185 describe validation and characterization of specific V2G-implicated genes with appropriate citations (C172-C173, C176-C177, C179-C180, C182, C184) and experimental data (C174-C175, C178, C181, C183, C185). The pharmacological validation shows a range of potencies consistent with different mechanisms of action. The SIK1 inhibitor showing pM potency (C185) is particularly striking and suggests a critical regulatory role.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The study is motivated by established knowledge that GWAS variants are enriched in CD4+ T cell regulatory regions and likely modulate gene expression to influence autoimmune disease risk. CD4+ T cells are key immune regulators that undergo large-scale transcriptional changes upon activation, and autoimmune variants may disrupt immune tolerance through effects on T cell function.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C8 provide background context supported by appropriate citations to prior work. These claims establish the scientific rationale for the study but do not represent novel findings. The statements are consistent with established knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The study identified ~1200 protein-coding genes physically connected to accessible disease-associated variants at 423 GWAS signals, with at least one-third dynamically regulated by activation. The study functionally validated novel IL2 intergenic enhancers influenced by autoimmune variants, and the implicated genes are enriched for CD4+ T cell function and inborn errors of immunity genes. Eight genes were pharmacologically validated as novel regulators of T cell activation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10-C16 summarize the main findings of the study, which are supported by the detailed results described in other claim groups. These summary claims accurately reflect the study's major contributions and are supported by the experimental evidence presented.",
+    "result_type": "MAJOR"
+  }
+]

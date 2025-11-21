@@ -1,0 +1,286 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C24",
+      "C28"
+    ],
+    "result": "The RTRBM extends the RBM by adding recurrent temporal connections between hidden units, allowing it to model temporal dependencies between neural assemblies while maintaining the probabilistic and interpretable features of the RBM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C16, C24, and C28 collectively describe the architectural properties of the RTRBM as an extension of the RBM with temporal connections. These are well-established structural properties of the model supported by citations and are consistent with the mathematical formulation presented in the methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C30",
+      "C31",
+      "C35",
+      "C36",
+      "C40",
+      "C41"
+    ],
+    "result": "On simulated data with known temporal structure, the RTRBM successfully recovers the true assembly-to-neuron weights and temporal connections, outperforming the RBM in capturing time-shifted moments while performing comparably on simultaneous moments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C19, C30-C31, C35-C36, C40-C41 are supported by the simulated data experiments shown in Figure 2. The RTRBM correctly identifies the diagonal weight structure and temporal connections, with statistically significant improvements in time-shifted moments (p<0.001) while maintaining similar performance on concurrent statistics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C44",
+      "C46",
+      "C49",
+      "C61"
+    ],
+    "result": "Transfer learning from cRBM to RTRBM successfully maintains localized neural assemblies while adding temporal connections on whole-brain zebrafish data, with training converging successfully for all animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21, C44, C46, C49, and C61 describe the transfer learning methodology and its outcomes. The approach is well-documented with evidence of successful training convergence and maintenance of sparse weight distributions (Figure 3B-C), supporting the claim that localized assemblies are preserved.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C57",
+      "C59",
+      "C60",
+      "C69"
+    ],
+    "result": "The RTRBM outperforms the cRBM on zebrafish data in terms of reconstructing first-order, second-order, and time-shifted moments, with improvements observed in the majority of animals tested.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22, C57, C59-C60, and C69 are supported by the comparative analysis in Figure 3F-G showing lower sum square differences and higher Spearman correlations for RTRBM across multiple statistical measures. The RTRBM outperformed cRBM on 4-6 out of 8 fish for different moment types, with bootstrap-based significance testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C52",
+      "C70",
+      "C79",
+      "C80"
+    ],
+    "result": "The RTRBM identifies spatially localized neural assemblies that cluster into distinct dynamical networks based on their temporal connectivity patterns, providing a compact description of neural dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52, C70, C79-C80 are supported by the clustering analysis shown in Figure 3D-E. Agglomerative clustering on the temporal weight matrix U reveals distinct clusters with characteristic connectivity patterns, and the corresponding receptive fields show spatial localization.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C4",
+      "C62",
+      "C63",
+      "C67",
+      "C91"
+    ],
+    "result": "The optimal temporal resolution for RTRBM modeling can be identified by training multiple RTRBMs at different down-sampling rates and comparing their performance, with the natural sampling rate showing highest correlation for zebrafish data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C62-C63, C67, and C91 are supported by the down-sampling analysis in Figure 4. For simulated data, performance peaked when down-sampling matched the true interaction time (\u0394t=4), and for zebrafish data, the natural sampling rate yielded highest Spearman correlations (Figure 4E).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C68"
+    ],
+    "result": "The RTRBM demonstrates functional advantages captured in temporal weights on hidden units for both simulated and experimental data, outperforming the stochastic-only cRBM in generalization error and temporal moment representation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 and C68 summarize the main findings supported by results throughout the manuscript. The temporal weights U successfully capture dynamics in both simulated (Figure 2) and zebrafish data (Figure 3), with quantitative improvements in generalization error and moment reconstruction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C29",
+      "C86",
+      "C87"
+    ],
+    "result": "The RTRBM in its current form does not intrinsically reach the compositional phase, and the use of dReLU hidden unit potentials within the RTRBM framework was not analytically tractable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29, C86-C87 report empirical limitations encountered during model development. These are honest assessments of technical challenges that motivated the transfer learning approach, and are consistent with the methodological choices described.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C88",
+      "C89"
+    ],
+    "result": "The transfer learning approach may be limiting because the cRBM-estimated assembly structure could contain an amalgam of static and dynamic connectivities, and joint estimation of assembly structure with temporal connectivities might be necessary for optimal decomposition.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C88-C89 identify potential limitations of the transfer learning approach. While C88 references Figure 2 showing the RBM conflates static and dynamic connections, the extent to which this affects the final RTRBM results on real data is not directly tested. C89 is speculative about future improvements.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C90",
+      "C92"
+    ],
+    "result": "The current RTRBM framework assumes all assemblies interact on a single time-scale, though preliminary observations suggest the model generates alternating dynamics between clusters on longer timescales than the single interaction step.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90 and C92 describe a structural limitation (single time-scale) and preliminary observations of longer-timescale dynamics. C90 is a clear limitation of the model architecture, and C92 is supported by preliminary observations from Figure 3, though this is acknowledged as exploratory.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C71"
+    ],
+    "result": "Training of an RTRBM/cRBM model can be completed in a few hours on current hardware.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C71 is supported by empirical observations stated in the methods section, where training for 10,000 epochs took approximately 3 hours on an NVIDIA RTX3090 GPU. This is a practical consideration for the feasibility of the method.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12"
+    ],
+    "result": "The cRBM, an extension of the RBM, can decompose whole-brain zebrafish activity into ~100-200 localized assemblies with sparse connections, but is limited to capturing only static dependencies without temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C8-C12 describe prior work on the cRBM (van der Plas et al., 2023) and its known limitations. These are well-supported by citations to previous work and established knowledge about the model architecture, providing context for the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C13"
+    ],
+    "result": "Neural assemblies are thought to be elementary computational units essential for cognitive functions, and while light-sheet microscopy enables whole-brain recordings, extracting activation patterns from ~100,000+ neurons remains computationally challenging, requiring explicit modeling of both stochastic and deterministic dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5-C7 and C13 provide background context supported by citations to established literature (Harris, 2005; Hebb, 1949; Ahrens et al., 2013) and general knowledge about computational neuroscience challenges. These claims establish the motivation for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C17",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C82"
+    ],
+    "result": "Previous studies using RTRBMs in other domains have shown value in extracting spatiotemporal features, and while estimating functional connectivity from large-scale data is a key objective in computational neuroscience, surprisingly few studies have attempted temporal prediction of neural activity at the whole-brain scale in zebrafish.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17, C72-C75, and C82 provide literature context supported by multiple citations. The review of prior work accurately characterizes the state of the field and positions the current work within it, though the accuracy of the literature characterization depends on the cited sources.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C93",
+      "C94"
+    ],
+    "result": "Current light-sheet imaging is limited to a few volumes per second (2-4 Hz for 30-40 planes), making individual neuron dynamics difficult to estimate, but assembly-level dynamics are expected to develop on slower timescales, and temporal connections provide better basis for separating correlation from causation than instantaneous connections.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C78, C93-C94 describe technical limitations of current imaging technology and their implications. These are supported by citations and general knowledge about imaging constraints, providing reasonable justification for focusing on assembly-level rather than single-neuron dynamics.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81"
+    ],
+    "result": "The RTRBM outperforms the classical RBM on artificial data in terms of reconstruction statistics and outperforms cRBM in accounting for temporal dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C81 summarizes comparative results supported by Figure 2 (RTRBM vs RBM on simulated data) and Figure 3 (RTRBM vs cRBM on zebrafish data). The claim is well-supported by the quantitative comparisons presented throughout the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "The RTRBM introduces temporal dependencies in a constrained way that limits additional parameters to avoid overfitting, but the increased complexity limits analytical tractability of the model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C85 describe design trade-offs in the RTRBM architecture. These are based on the mathematical structure of the model and general machine learning principles about overfitting and model complexity, representing honest assessment of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C26"
+    ],
+    "result": "The RTRBM can realize a combination of temporal sequences and stochastic exploration.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C26 is demonstrated by the sampling results shown in Figure 1F, where the RTRBM generates activity traces showing sequential activation patterns combined with stochastic variability, in contrast to the purely stochastic RBM samples.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Future improvements in imaging speed and computing hardware, along with extending the RTRBM to the compositional phase and using higher temporal resolution recordings, should enable interventional studies to verify estimated temporal connectivity through optogenetic control or laser ablation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95-C99 are speculative about future work and technological improvements. While these represent reasonable directions for future research, they are not tested in the current study and depend on technological advances and methodological developments that have not yet been demonstrated.",
+    "result_type": "MINOR"
+  }
+]

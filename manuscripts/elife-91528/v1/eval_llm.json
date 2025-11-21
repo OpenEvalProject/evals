@@ -1,0 +1,375 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "FACS enrichment successfully isolated SPGs with 85-95% purity as confirmed by PLZF+ immunocytochemistry, robust expression of SPG markers (Kit, Id4, Lin28a, Zbtb16, Gfra1), low expression of somatic cell markers, and deconvolution analysis showing predominant SSC composition (0.99 and 0.85 for PND8/PND15, 0.82 for adult).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C22-C26 provide converging evidence from multiple independent validation methods (immunocytochemistry, marker gene expression, and computational deconvolution) that consistently demonstrate high SPG enrichment. The deconvolution analysis using multiple reference datasets strengthens the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40"
+    ],
+    "result": "SPGs undergo stage-specific transcriptional changes during postnatal development, with 663 DEGs between PND8-PND15 and 2483 DEGs between PND15-adult. The majority of DEGs are stage-specific (75% of PND8-PND15 DEGs and 93% of adult DEGs), while only 4.9% show consistent directional changes across all three stages (121 consistently up-regulated, 26 consistently down-regulated).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C40 are well-supported by RNA-seq differential expression analysis with appropriate statistical thresholds (adjusted-p \u22640.05, absLog2FC \u22651). The Venn diagram analysis and quantification of overlapping DEGs provide clear evidence for stage-specific versus consistent transcriptional changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C41"
+    ],
+    "result": "DEGs between developmental stages are enriched in functionally relevant biological processes: PND8-PND15 DEGs involve cell differentiation, cilium movement, sperm motility and transcription; PND15-adult DEGs involve reproduction, spermatogenesis, cell differentiation, DNA replication, glycolysis and ECM-receptor interactions; histone gene clusters show significant down-regulation across postnatal development.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C31, C41 are supported by GO enrichment analysis of DEGs shown in Figures 1F-G and supplementary data. The functional categories identified are biologically coherent with SPG development and maturation processes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C29",
+      "C32",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Key developmental regulators show stage-specific expression patterns: Pou5f1 (Oct4) is significantly down-regulated in adult SPGs; Dnmt1 and Col4a2 are specifically down-regulated in adult SPGs, with the authors suggesting that collagen gene regulation may decrease germ-stem cell potential based on prior associations with proliferative capacity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C29, C32-C33 are supported by RNA-seq data and appropriate citations. However, C35 is speculative inference about functional consequences of collagen downregulation that lacks direct experimental validation in this study. The inference is reasonable but requires functional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "ATAC-seq identified 158,977 accessible chromatin peaks in SPGs, predominantly located at distal intergenic regions (38%), introns (28%), and promoters (23%), enriched for active histone modifications (H3K4me1/2/3) with higher enrichment for H3K4 methylation, consistent with ATAC-seq peaks marking regulatory elements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are well-supported by ATAC-seq peak calling analysis and integration with published ChIP-seq data. The genomic distribution and histone modification enrichment patterns are consistent with established ATAC-seq characteristics at regulatory elements, as supported by citations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "3212 differentially accessible regions (DARs) were identified between PND15 and adult SPGs (760 decreased, 2452 increased accessibility), predominantly in distal intergenic regions and introns, with associated genes involved in male gonad development, cell adhesion, sex differentiation and cell communication.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 are directly supported by differential accessibility analysis with appropriate statistical thresholds and GO enrichment analysis. The genomic distribution of DARs is consistent with regulatory element locations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55"
+    ],
+    "result": "DARs show distinct histone modification patterns: 51% of regions with increased accessibility carry histone PTMs from early postnatal stages, with 48% overlapping H3K4me1 (enhancer mark) and 16% overlapping H3K27ac (active regulatory mark); 80% of regions with decreased accessibility overlap H3K4me1, 33% overlap H3K27me3 (repressive mark), and none overlap H3K27ac.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C55 are well-supported by integration of ATAC-seq data with published ChIP-seq data for histone modifications. The distinct patterns of histone marks at regions with increased versus decreased accessibility provide mechanistic insight into chromatin state changes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C69",
+      "C71"
+    ],
+    "result": "Regions with decreased accessibility in adult SPGs are enriched for binding motifs of specific TF families (KLF, SP, FOXO, ETS, DMRT), with many corresponding TFs differentially expressed (10 down-regulated, 11 up-regulated). Examples include: KLF11/12/15 upregulated in adults; SP5 lowest in adults; FOXO3 increased from PND15 onwards while FOXO1 decreased in adults; ELK4 upregulated in adults; GABPA downregulated in adults; Dmrt1 progressively repressed and lowest in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C57 and specific examples (C58-C64, C69, C71) are supported by TF motif enrichment analysis integrated with RNA-seq expression data. The citations to prior functional studies of these TFs strengthen the biological interpretation. The correlation between motif enrichment and TF expression provides mechanistic insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C81",
+      "C88",
+      "C90",
+      "C91"
+    ],
+    "result": "Regions with increased accessibility in adult SPGs are enriched for binding motifs of TF families (POU, RFX, DMRT, SOX, NFY, AP-1), with a subset differentially expressed (13 down-regulated, 5 up-regulated). Key findings include: POU motifs most overrepresented; Pou1f1/Pou5f1 repressed in adults while Pou2f2 peaks at PND15; RFX2 robustly expressed in adults; NF-YA/NF-YC progressively down-regulated from PND15; AP-1 TFs (except Fosl2) constitutively expressed, with Fos and JUN robustly expressed across stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 and specific examples (C77-C79, C81, C88, C90-C91) are supported by TF motif enrichment analysis integrated with RNA-seq data. The identification of POU, RFX, and AP-1 family enrichment with corresponding expression patterns provides insight into regulatory mechanisms during SPG maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "RFX family TFs are master regulators of ciliogenesis; RFX2 is robustly expressed in adult SPGs and has been reported to induce ciliary gene expression with FOXJ (which trends toward upregulation in adults); ciliary genes are among top upregulated genes in adult SPGs, suggesting a regulatory relationship between RFX2 and ciliary gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C80, C82 are supported by citations. Claims C81, C83-C84 are supported by expression data. However, C85 is speculative inference about regulatory relationships based on co-occurrence patterns without direct mechanistic validation (e.g., ChIP-seq, perturbation experiments). The inference is reasonable but requires experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Chromatin accessibility changes at promoters show gene-specific patterns: down-regulated genes show no significant difference at promoters (despite trends) but significant increase in gene bodies; up-regulated genes show significant increases at both promoters and gene bodies. Motif analysis reveals KLF/SP motifs in both up- and down-regulated gene promoters, SOX/NFY motifs only in down-regulated promoters, and RFX/AP-1 motifs specifically in up-regulated promoters, suggesting differential TF binding may drive accessibility changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93-C98 are supported by ATAC-seq signal analysis at promoters and gene bodies with statistical testing, and motif enrichment analysis. C99 is a reasonable inference but remains speculative without direct TF binding data. The overall pattern is well-documented but mechanistic claims require validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106"
+    ],
+    "result": "Only 3.2% of DEG promoters overlap with DARs (71% associated with up-regulated genes). When extending the search to +/-100 kb, a third of DEGs associate with at least one DAR (69% with up-regulated genes). Examples include Gpx4 (upregulated with open promoter) and Braf (upregulated with increased distal accessibility). This limited overlap suggests gene expression changes are not always mirrored by chromatin accessibility changes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100-C106 are supported by systematic overlap analysis between DARs and DEGs at different genomic scales. The low correspondence between transcriptional and accessibility changes is well-documented with specific examples and consistent with cited literature (Kiani et al., 2022). This is an important negative result.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "SPGs transitioning from PND15 to adult show significantly different chromatin accessibility at 135 TE subtypes (93 decreased, 42 increased), predominantly in intergenic (68%) and intronic (25%) regions. LTR retrotransposons (ERVK and ERV1 subtypes) were most abundant among altered TEs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are supported by differential accessibility analysis of TEs with appropriate statistical thresholds and genomic annotation. The identification of LTR retrotransposons as the predominant altered TE class is clearly documented in the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "RLTR17 and RLTR9 repeats, previously reported enriched at pluripotency TF binding sites in mESCs, show decreased accessibility in adult SPGs. The promoter of Lncenc1 (a pluripotency regulator in mESCs) harbors LTR loci with decreased accessibility; RLTR17 overlaps Lncenc1 TSS and its decreased accessibility correlates with lower Lncenc1 expression in adults. Other Platr family genes (Platr27, Platr14) also show TSS overlap with LTRs with reduced accessibility and tend toward downregulation in adults.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C120 are supported by integration of ATAC-seq and RNA-seq data with appropriate citations to prior work on RLTR17 and Platr genes in mESCs. The correlation between RLTR17 accessibility and Lncenc1 expression provides mechanistic insight into pluripotency regulation during SPG maturation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C125",
+      "C126"
+    ],
+    "result": "Many LINE L1 subtypes show increased chromatin accessibility in adult SPGs, with several L1 loci located near olfactory receptor (Olfr) gene clusters on chromosomes 2, 7, and 11. More accessible L1 subtypes are highly enriched in TF motifs (ETS, E2F, FOX families), with most significant motifs belonging to SSC maintenance regulators (FOXO1, ZEB1) and TFs associated with active enhancers in stem-cell-enriched SPGs (ZBTB17, KLF5).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121-C122, C125-C126 are supported by differential accessibility analysis of LINE L1 elements, genomic annotation showing proximity to Olfr genes, and TF motif enrichment analysis. The citation to Cheng et al., 2020 for ZBTB17/KLF5 association with active enhancers strengthens the interpretation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C148",
+      "C152"
+    ],
+    "result": "The authors suggest that RLTR17 chromatin organization may regulate pluripotency programs between early postnatal and adult SPGs, and that Olfr genes may play additional roles in spermatogenesis beyond sperm physiology, based on their dynamic regulation in SPGs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C148 and C152 are speculative inferences based on observed correlations between TE accessibility, gene expression, and known functions from other systems. While the inferences are reasonable given the data and prior literature, they lack direct functional validation in SPGs. These hypotheses require experimental testing.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors conclude that postnatal SPG maturation involves overall decrease in pluripotency marker expression and differential expression of signaling/cell cycle/spermatogenesis regulators. The PND15-to-adult transition is more extensive than PND8-to-PND15 in number and magnitude of changes. There is a clear trend toward transcriptional upregulation during maturation, potentially explained by downregulation of transcriptional repressors/epigenetic silencers and global histone gene downregulation starting at PND15.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C127-C130 are well-supported by the RNA-seq differential expression analysis. Claims C131-C132 are speculative inferences about mechanisms but are reasonable given the observed patterns and supported by citation (Prado et al., 2017 for histone-chromatin relationship). The overall conclusions appropriately summarize the transcriptional dynamics.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C133",
+      "C134",
+      "C135",
+      "C136",
+      "C137"
+    ],
+    "result": "The transition from postnatal to adult SPGs involves changes in chromatin accessibility, particularly increased accessibility at regions enriched in H3K4me1 (primed enhancers) and H3K27ac (active regulatory elements). Enhancer priming has been proposed as important for SPG differentiation. Differences in accessibility may be explained by differential TF binding influenced by CpG methylation, nucleosome positioning, and the downregulation of Dnmt1 concomitant with differential expression of TFs and chromatin modifiers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133 are supported by ATAC-seq and ChIP-seq integration. C134-C136 are supported by appropriate citations. C137 is speculative inference connecting Dnmt1 downregulation to accessibility changes, which is reasonable but lacks direct mechanistic validation. The overall interpretation is well-grounded in the data and literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C138",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144"
+    ],
+    "result": "The authors conclude that transcriptional regulation and chromatin accessibility can be dissociated, with accessibility changes potentially having no immediate transcriptional effects but reflecting intermediate priming states for later activation/repression. The majority of DARs with increased accessibility overlap H3K4me1-marked primed enhancers, which may be important for responses to external cues in adult SPGs. Chromatin accessibility may not be the primary determinant of chromatin-mediated gene regulation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C138-C139 are inferences supported by the data showing limited DAR-DEG overlap and citations to prior work (Chereji et al., 2019; Kiani et al., 2022). Claims C140-C142 are supported by data integration and citations (Marco et al., 2020; Rada-Iglesias et al., 2011). C143 is speculative about functional importance. C144 is supported by citation. The interpretation appropriately acknowledges the complexity of transcription-accessibility relationships.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "Background claims about SPG biology: SPGs are undifferentiated male germ cells that are quiescent until birth, then self-renew and differentiate throughout adulthood. PGCs give rise sequentially to T1-ProSG, T2-ProSG, then SSCs. ProSG population is exhausted by PND5. By PND6-8, distinct SPG subtypes can be distinguished. SSCs divide to self-renew or generate differentiating progenitors. Diff-SPGs become spermatocytes around PND10-12, undergo meiosis to form spermatids, which develop into spermatozoa that mature in the epididymis until capable of fertilization by PND42-48.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C8-C14 describe established knowledge about SPG and spermatogenesis biology, supported by appropriate citations to prior literature. These provide necessary biological context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21"
+    ],
+    "result": "Prior work has shown that SPGs in early postnatal life have distinct transcriptional signatures with high expression of cell cycle/proliferation/transcription/RNA processing genes, while adult SPGs express genes for proliferation-differentiation balance, paracrine signaling, niche communication, and mitochondrial functions. Changes in chromatin accessibility, histone modifications, and DNA methylation have been reported, but the relationship between transcriptome dynamics and chromatin landscape during postnatal-to-adult transition has not been fully characterized.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C20 summarize prior literature with appropriate citations. C21 identifies the knowledge gap that motivates the current study. These claims appropriately contextualize the study within existing literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C153",
+      "C154"
+    ],
+    "result": "Summary claims: The study shows that SPG transcriptome is highly dynamic during postnatal development, SPGs undergo massive chromatin remodeling that partially correlates with gene expression and TF motif enrichment, genomic regions with differential accessibility are marked by enhancer/promoter histone modifications, some regions with increased accessibility correspond to TE subtypes enriched in TF motifs near DEGs. The study reveals age-dependent chromatin reorganization and provides novel high-resolution insight into transcriptome-chromatin dynamics.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C7, C153-C154 are high-level summary statements supported by the collective evidence from RNA-seq, ATAC-seq, and integrative analyses presented throughout the manuscript. These appropriately summarize the major contributions of the study.",
+    "result_type": "MAJOR"
+  }
+]

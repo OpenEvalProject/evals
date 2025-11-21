@@ -1,0 +1,251 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Endogenous RAR\u03b1 and RXR\u03b1 were successfully tagged with HaloTag using CRISPR/Cas9-mediated genome editing, and the tagged proteins retain normal expression levels, heterodimerization capability, ligand-responsive transactivation function, and nuclear localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C15 collectively demonstrate successful generation and validation of functional Halo-tagged RAR\u03b1 and RXR\u03b1 knock-in cell lines. Multiple orthogonal validation methods (western blot, co-IP, luciferase assay, confocal imaging) provide converging evidence that the tagged proteins are functional.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20"
+    ],
+    "result": "Single-molecule tracking reveals that endogenous RAR\u03b1 and RXR\u03b1 exhibit bimodal diffusion behavior with distinct slow-diffusing (bound) and fast-diffusing (mobile) populations, with RAR\u03b1 showing ~50% chromatin-bound fraction and RXR\u03b1 showing ~38% chromatin-bound fraction, reproducible across multiple clonal lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C16-C20 present quantitative SMT measurements with appropriate controls (H2B-Halo and Halo-NLS) and demonstrate reproducibility across three independent clonal lines for each protein. The bimodal diffusion behavior and fbound values are well-supported by the data in Figure 1C-D.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C21",
+      "C22"
+    ],
+    "result": "Ligand treatment with atRA does not significantly alter the chromatin-bound fraction of RAR\u03b1 or RXR\u03b1, consistent with the classic model that T2NR dimerization and chromatin binding are ligand-independent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C22 are supported by SMT data (Figure 1\u2014figure supplement 3A-B) showing no significant change in fbound upon atRA treatment. This finding contrasts with some previous studies but is consistent with the established model of ligand-independent chromatin binding for T2NRs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Overexpression of RAR\u03b1 or RXR\u03b1 leads to reduced chromatin-bound fractions compared to endogenous levels, with a negative correlation between protein concentration and fbound in single cells, indicating that chromatin binding of both proteins is saturable.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C29 present a coherent set of findings from flow cytometry and SMT experiments showing that overexpression reduces fbound for both RAR\u03b1 and RXR\u03b1. The single-cell analysis (C28) and the interpretation of saturability (C29) are well-supported by the quantitative data in Figures 2B-C and Figure 2\u2014figure supplement 1C.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Overexpression of RXR\u03b1 does not increase chromatin binding of endogenous RAR\u03b1, while overexpression of wild-type (but not dimerization-incompetent mutant) RAR\u03b1 decreases endogenous RAR\u03b1 chromatin binding, indicating that RAR\u03b1 fbound is not limited by RXR availability but requires heterodimerization with RXR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 present a key experimental result with appropriate controls (SNAP-NLS and RAR\u03b1RR mutant). The data in Figure 2F and Figure 2\u2014figure supplement 4B support the conclusion that RAR\u03b1 chromatin binding is not limited by RXR availability, which contradicts the prevailing model in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Overexpression of RAR\u03b1 increases chromatin binding of endogenous RXR\u03b1 while overexpression of RXR\u03b1 decreases it, indicating that endogenous RXR\u03b1 chromatin binding is limited by RAR availability and that RXR\u03b1 is in excess while RXR partners are limiting in U2OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 present the reciprocal experiment to C30-C34 and reach the central conclusion of the paper. The quantitative SMT data support the interpretation that RXR is in excess and RAR is limiting, which is a major finding that challenges the existing model. However, the interpretation relies on indirect inference about other RXR isoforms and partners not directly measured.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47"
+    ],
+    "result": "PAPA-SMT experiments demonstrate direct protein-protein interactions between RAR\u03b1 and RXR\u03b1 in live cells, with PAPA-reactivated molecules showing substantially higher chromatin-bound fractions than directly reactivated molecules, confirming that heterodimerization mediates chromatin binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C47 present PAPA-SMT data that directly demonstrate RAR-RXR interactions and their correlation with chromatin binding. The use of the dimerization-incompetent mutant (C44, C46) as a negative control strengthens the conclusion. The data in Figure 3B-C provide strong support for heterodimerization-dependent chromatin binding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "In U2OS cells, formation and chromatin binding of RAR-RXR heterodimers are limited by the concentration of RAR and not the core subunit RXR, contradicting the generally accepted T2NR competition model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C51 represent the main conclusion of the study, synthesizing results from both SMT and PAPA-SMT experiments. The conclusion is well-supported by the experimental data, though it relies on the assumption that other RXR isoforms and partners behave similarly to those directly measured. The finding challenges the prevailing model in the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The difference in chromatin-bound fractions between RAR\u03b1 (50%) and RXR\u03b1 (38%) despite similar molecular abundance and 1:1 stoichiometry can be explained by expression of additional RXR isoforms (likely RXR\u03b2) and other heterodimerization partners of RAR\u03b1 in U2OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C52-C54 present an interpretation of the observed difference in fbound values. While the observation (C52) is supported by data, the explanations (C53-C54) are speculative and rely on expression data from Appendix 2\u2014table 1 that is not directly validated. The authors acknowledge they did not directly measure all RXR isoforms, making this interpretation uncertain.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "Overexpressed RXR remains nearly totally unbound to chromatin (fbound similar to NLS control), consistent with endogenous RXR already being in excess such that additional RXR would remain mostly monomeric and unbound, allowing the deduction that RXR is in excess relative to its binding partners in U2OS cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C57 present a logical inference from the SMT data showing that overexpressed RXR has very low fbound. The interpretation that endogenous RXR is already in excess is well-supported by the experimental observations, though it relies on the assumption that the behavior of overexpressed protein reflects the state of the endogenous system.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60"
+    ],
+    "result": "Overexpression of RAR\u03b1 significantly reduces endogenous RAR\u03b1 expression, potentially through negative autoregulation at the transcriptional level or protein instability, possibly involving degradation of unbound RAR analogous to c-MYC/MAX heterodimers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C58 is supported by flow cytometry data (Figure 2E), but the mechanistic explanations in C59-C60 are speculative. The authors present two possible mechanisms but do not provide direct evidence to distinguish between them. The analogy to c-MYC/MAX (C60) is interesting but remains speculative without additional validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C62",
+      "C63"
+    ],
+    "result": "A 50% reduction in RAR\u03b1 upon ligand treatment does not affect the chromatin-bound fraction of either RAR\u03b1 or RXR\u03b1, suggesting that most chromatin binding of endogenous RXR\u03b1 in U2OS cells depends on heterodimerization partners other than RAR\u03b1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C63 present an observation from ligand treatment experiments and its interpretation. The data (Figure 1\u2014figure supplement 3A-B) support the observation, and the interpretation is consistent with the presence of other T2NRs in U2OS cells (Appendix 2\u2014table 1). However, the interpretation relies on indirect inference about other partners.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "An excess of RXR may ensure independent regulation of different T2NRs without disrupting crosstalk between them, though competition for RXR may occur in some cell types with different expression levels, and chromatin binding by any given T2NR likely depends on concentrations of all other T2NRs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C64-C66 present a proposed model and acknowledge limitations of the study. These are speculative statements about the broader implications of the findings and potential cell-type-specific differences. While the model is consistent with the data, it requires validation in other cell types and with other T2NRs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69"
+    ],
+    "result": "SMT and PAPA-SMT provide an empirical method to determine which components in a dimerization network are stoichiometrically limiting in a given cell type without measuring every component or interaction affinity, with potential applications to studying ligand effects and other TF dimerization networks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C69 present methodological conclusions about the utility of SMT and PAPA-SMT approaches. The study demonstrates the feasibility of this approach for the RAR-RXR system, supporting the methodological claim (C68). The potential applications (C69) are reasonable extensions but remain speculative until demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C77",
+      "C78"
+    ],
+    "result": "To calculate fbound of RAR\u03b1 and RXR\u03b1 with minimal bias and variation, at least 10,000 pooled trajectories from n\u226520 cells are needed, with variance in SMT data largely due to cell-to-cell variance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C77-C78 present methodological determinations based on subsampling analysis (Figure 1\u2014figure supplement 1E). These are important quality control measures that support the reliability of the fbound measurements throughout the study. The observation about cell-to-cell variance is consistent with previous SMT studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3"
+    ],
+    "result": "Type II nuclear receptors require heterodimerization with RXR to bind chromatin, and the prevailing model proposes this is regulated by competition for a limiting pool of RXR, but this mechanism has not been tested for endogenous proteins in live cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C3 establish the background and rationale for the study. C1 and C2 represent established knowledge supported by the literature, while C3 identifies the gap that the study addresses. These claims accurately represent the state of the field and provide appropriate context.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C4",
+      "C5"
+    ],
+    "result": "Higher expression of RAR, but not RXR, increases heterodimerization and chromatin binding in U2OS cells, indicating the limiting factor is not RXR but likely its cadre of obligate dimer binding partners.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4-C5 summarize the main finding of the study as stated in the abstract. These claims are well-supported by the combined SMT and PAPA-SMT experimental data presented throughout the manuscript, representing the central discovery that challenges the prevailing model.",
+    "result_type": "MAJOR"
+  }
+]

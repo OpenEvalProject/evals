@@ -1,0 +1,319 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "POST-IT is a non-diffusive proximity tagging system that integrates PafA from Corynebacterium glutamicum with HaloTag to enable drug-target identification in live cells. The system exploits PafA's ability to covalently transfer Pup to proximal proteins on lysine residues with low sequence selectivity, and uses HaloTag for its superior live-cell labeling efficiency and simple chemical synthesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C18-C22 collectively describe the design rationale and components of POST-IT. The system's orthogonality to eukaryotic systems, the mechanism of pupylation, and the selection of HaloTag over SNAP-tag are all supported by citations and stated design choices. The evidence is consistent with the system's intended function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "In vitro characterization demonstrates that HaloTag fusion does not impair PafA activity, truncated sPup substrates exhibit similar pupylation levels to full-length Pup, PafA retains robust activity at 20\u00b0C, and self-pupylation occurs within 10 minutes at 37\u00b0C.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by in vitro experimental data with reference to figures. The observations are consistent with the expected behavior of the engineered system and provide foundational validation for POST-IT's functionality across different temperatures and with truncated Pup substrates.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "Extensive incubation leads to polypupylation of Pup substrates, which was addressed by mutating lysine residues to arginine in TS-sPup and SBP-sPup. Mutations in both the sPup and tag regions were required to completely abolish polypupylation, while enhanced multipupylation was observed with lysine-removed sPup substrates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27-C32 describe the identification and resolution of polypupylation through systematic mutagenesis. The results are supported by experimental data with references to figures showing gel-based assays. The strategy of removing lysines to prevent polypupylation while maintaining multipupylation is logically sound and experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C47",
+      "C48"
+    ],
+    "result": "The Halo8KR-PafA mutant exhibited markedly decreased self-pupylation. A PafA mutant with S126A substitution showed substantially increased pupylation activity with reduced polypupylation. Mass spectrometry identified six lysine residues susceptible to self-pupylation in PafA, with K172 being the most frequently pupylated.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C35, C47-C48 describe the optimization of PafA to reduce self-pupylation and enhance target labeling. The results are supported by experimental data including mass spectrometry analysis (Table 1) and gel-based assays. The S126A mutation's effect differs from the cited Mtb PafA study, but this is acknowledged and experimentally demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "DH1, a HaloTag ligand derivative of dasatinib, efficiently binds to Halo8KR-PafA within 15 minutes and enables robust pupylation of SRC exclusively when HaloTag is positioned at the N-terminus of PafA. The pupylation is specific, proximity-dependent, and competitively inhibited by dasatinib.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36-C43 demonstrate the in vitro validation of POST-IT with dasatinib. The results are supported by multiple assays including fluorescence polarization, competition assays, and western blots with references to figures. The importance of N-terminal HaloTag positioning and the non-diffusive, proximity-dependent nature of labeling are well-demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "In a rapamycin-induced FKBP-FRB interaction model, PafA efficiently pupylated FKBP-EGFP in a Pup-dose dependent manner. Both SBP-sPup and SBPK4R-sPupK61R exhibited efficient pupylation in live cells, and rapamycin treatment reduced self-pupylation, suggesting PafA constantly pupylates proximal proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44-C46 validate POST-IT in live cells using a well-characterized rapamycin-induced interaction system. The results are supported by western blot data with references to figures. The observation that rapamycin reduces self-pupylation provides insight into PafA's mechanism and supports the proximity-dependent labeling model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C99"
+    ],
+    "result": "Enhanced labeling was observed with linkers longer than 10 amino acids between Halo8KR and PafA, leading to selection of an 18-amino acid linker. The S126A and K172R mutations additively enhanced pupylation activity under cellular conditions. The optimized system, Halo8KR-PafAS126A,K172R with polypupylation-free sPup, is designated POST-IT.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C99 describe the final optimization steps for POST-IT. The results are supported by experimental data showing enhanced labeling with longer linkers and additive effects of mutations. The designation of the optimized system as POST-IT is clearly stated and justified by the cumulative optimization data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C51",
+      "C52"
+    ],
+    "result": "POST-IT exhibited significant labeling activity on both exogenous and endogenous SRC in the presence of DH1. Labeling intensity increased with higher DH1 concentrations and was competitively inhibited by dasatinib, demonstrating specificity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C52 demonstrate POST-IT's functionality in live cells with both overexpressed and endogenous targets. The results are supported by western blot and pulldown data with references to figures. The dose-dependent labeling and competitive inhibition provide strong evidence for specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Mtb PafA showed no detectable labeling of short SRC, while Halo8KR-PafA from Cglu exhibited significant pupylation with sPupK61R substrates from both Cglu and Mtb, suggesting lack of orthogonality among prokaryotic PafA systems.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53-C54 compare PafA from different bacterial species. The results are supported by experimental data with reference to figures. The finding that Cglu PafA works with both Cglu and Mtb Pup substrates while Mtb PafA does not work in this system is clearly demonstrated, though the interpretation of orthogonality could be further explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C96",
+      "C97"
+    ],
+    "result": "Four additional DH derivatives (DH2-DH5) with carbamate linkers and varying lengths were synthesized based on prior reports of enhanced HTL performance. These derivatives showed significantly enhanced binding to Halo8KR-PafA and more robust pupylation of SRC both in vitro and in cells. DH5 retains comparable SRC kinase inhibitory activity to dasatinib and was selected for further experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58, C96-C97 describe the optimization of the dasatinib-HTL linker. The results are supported by multiple assays including fluorescence polarization, western blots, and kinase activity assays with references to figures. The design is guided by prior literature, and the improved performance of carbamate linkers is experimentally validated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C2",
+      "C59",
+      "C60",
+      "C98"
+    ],
+    "result": "POST-IT successfully identified eight known target proteins for dasatinib (FYN, RIPK2, MAPK14, ABL2, ABL1, CSK, LYN, SRC) with significant enrichment and two additional known targets (GAK, SIK2) with lower confidence. Among the 10 known targets, 5 are tyrosine kinases and 4 are serine/threonine kinases.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2, C59-C60, C98 report the successful identification of known dasatinib targets by POST-IT. The results are supported by mass spectrometry data with reference to a volcano plot (Figure 5A) and source data. The identification of multiple known targets with appropriate kinase classifications validates POST-IT as a target identification method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C3",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "SEPHS2 was identified as a novel protein target that binds to dasatinib. MST analysis yielded Kd values of 11.6 \u00b1 5.7 \u00b5M for DH5 and 9.1 \u00b1 0.8 \u00b5M for dasatinib binding to SEPHS2. Molecular docking analysis revealed favorable binding of dasatinib within SEPHS2's active sites (Vina score -9.9) with multiple interactions including pi-cation interaction with Lys63 and Van der Waals interaction with Gly319.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C61-C65 report the discovery and validation of SEPHS2 as a novel dasatinib target. The results are supported by mass spectrometry identification, MST binding assays, and molecular docking analysis with references to figures. The Kd values are in the low micromolar range, consistent with a genuine interaction, and the docking analysis provides structural insight into the binding mode.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C100"
+    ],
+    "result": "DC661-H1 and DC660 induced robust LC3-II bands in mammalian cell lines similar to HCQ, confirming their function as autophagy inhibitors. POST-IT coupled with SILAC identified several target proteins directly linked to autophagy regulation for DC661-H1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C100 demonstrate POST-IT's application to hydroxychloroquine derivatives. The results are supported by western blot data showing autophagy inhibition and SILAC-based mass spectrometry identifying autophagy-related targets with references to figures. This validates POST-IT's versatility for different drug classes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "TOM1, TOM1L2, and TRAPPC3 appeared to bind DC660 but failed to yield Kd values due to abnormal thermophoretic movement suggesting aggregation. VPS29 showed dose-dependent binding to DC660 (Kd = 24.95 \u00b1 11.71 \u00b5M) but no detectable binding to HCQ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C70 report MST validation of autophagy-related proteins identified by POST-IT. The results are supported by MST data with references to figures. The inability to obtain Kd values for some proteins due to aggregation is appropriately acknowledged, and the differential binding to DC660 versus HCQ provides insight into target specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C4",
+      "C71",
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "VPS37C was identified as a new target for hydroxychloroquine. MST analysis revealed very high binding affinity to DC660 (Kd = 21.5 \u00b1 9.8 nM) and moderate binding to HCQ. VPS37C was substantially enriched by POST-IT in the presence of DC661-H1, and this binding was abolished by competitive DC660 or HCQ. CETSA experiments showed VPS37C stabilization in the presence of DC660 or HCQ.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C71-C74 report the discovery and comprehensive validation of VPS37C as a novel HCQ target. The results are supported by multiple orthogonal assays including mass spectrometry, MST, pulldown, and CETSA with references to figures. The nanomolar affinity for DC660 and competitive inhibition by HCQ provide strong evidence for a genuine interaction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C5",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "POST-IT was successfully applied in live zebrafish embryos. Embryos injected with the POST-IT plasmid or from a transgenic line expressing POST-IT under a heat-shock promoter displayed robust EGFP expression without observable toxicity. Marked enrichment of endogenous SRC was observed in embryos treated with DH5 but not DMSO.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C75-C77 demonstrate POST-IT's in vivo application in zebrafish. The results are supported by imaging data showing EGFP expression without toxicity and western blot data showing SRC enrichment with DH5 treatment, with references to figures. This extends POST-IT's utility beyond cell culture to whole organisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "SEPHS2 detoxifies selenide by converting it with ATP into selenophosphate. Cancer cells frequently exhibit elevated SLC7A11/xCT expression, leading to increased selenide import and heightened demand for selenide detoxification. SEPHS2 is crucial for cancer cell survival but not for normal cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C80-C82 provide biological context for SEPHS2 as a dasatinib target. The claims are supported by citations to prior literature. This background information is relevant for understanding the potential therapeutic implications of SEPHS2 inhibition by dasatinib, though it represents prior knowledge rather than new findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "HCQ/CQ's primary effect is to inhibit fusion between autophagosomes and lysosomes, and it induces disorganization in Golgi and endosomal systems independently of autophagy. Components of ESCRT complexes regulate the final stages of autophagosome formation, with VPS37A identified as a key player in phagophore closure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C86 provide mechanistic context for HCQ/CQ action and the role of ESCRT complexes in autophagy. The claims are supported by citations to prior literature. This background is essential for interpreting the significance of VPS37C as a novel HCQ target, though it represents established knowledge rather than new findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "VPS37 proteins have structural similarities, suggesting HCQ/CQ could interact with multiple family members. Two potential mechanisms for HCQ/CQ-mediated autophagy inhibition are proposed: interference with VPS37 protein function in autophagosome closure, or active transport into lysosomes by ESCRT-I leading to lysosomal alkalization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C101-C103 propose mechanistic hypotheses based on the VPS37C finding. While structural similarity is supported by data (Figure 6\u2014figure supplement 6), the proposed mechanisms are speculative and labeled as such in the text. No direct experimental evidence is provided to test these mechanisms, making this result uncertain pending further validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "POST-IT has limitations including the requirement to synthesize HTL derivatives and potentially longer incubation times in live cells compared to in vitro. However, POST-IT does not cause noticeable toxicity, enabling generation of stable cell lines and transgenic organisms. High levels of Pup expression are important for efficient tagging.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C90 acknowledge limitations and provide recommendations for POST-IT use. The lack of toxicity is supported by experimental data in cells and zebrafish. The other claims represent honest assessment of methodological constraints and practical considerations, which is appropriate for a methods paper.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C91",
+      "C92"
+    ],
+    "result": "POST-IT represents a significant advancement in target identification, offering a non-diffusive proximity tagging system for live cells and in vivo models that overcomes limitations of traditional cell lysate methods and offers superior specificity compared to existing proximity labeling systems like TurboID.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C92 summarize the overall contribution of POST-IT. The claims are supported by the cumulative evidence from the study demonstrating non-diffusive labeling, successful target identification for two drugs including novel targets, and in vivo application. The comparison to TurboID is supported by discussion of diffusive versus non-diffusive labeling, though direct head-to-head comparison data are limited.",
+    "result_type": "MAJOR"
+  }
+]

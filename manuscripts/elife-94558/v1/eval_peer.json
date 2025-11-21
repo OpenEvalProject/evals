@@ -1,0 +1,281 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8"
+    ],
+    "result": "The authors recovered 395 unique MAGs from metagenomic sequencing of apple rootstock rhizospheres, representing diverse bacterial phyla with taxonomic annotations at multiple levels. The MAGs were obtained through assembly, binning, and de-replication of approximately 2 billion quality reads.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm the quality of the MAG recovery process, with one reviewer noting 'the authors carry out a careful model curation process based on metagenomic sequencing data.' The taxonomic diversity and phylogenetic representation are accepted without critique, and reviewers acknowledge the framework's reliance on these genome-scale models as strengthening predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Functional analysis revealed that the most frequent categories across MAGs involved primary metabolism, with variable completeness of amino acid biosynthetic pathways (99.5% for glycine to 21% for tyrosine), suggesting most bacterial species rely on external nutritional supply.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question these functional characterization findings. One reviewer notes that 'the simulations predicted some patterns of vitamin and amino acid secretion that are known to form the basis for interactions in the rhizosphere,' implicitly supporting the metabolic dependency conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16"
+    ],
+    "result": "The authors constructed 395 GSMMs from MAGs, of which 243 passed stoichiometric consistency tests. The models contained on average 1924 reactions and 1312 metabolites, with metabolic coverage comparable to recent large-scale reconstructions.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise the model construction approach, stating 'the authors carry out a careful model curation process based on metagenomic sequencing data and existing model generation tools.' The comparison to published reconstructions and quality control using MEMOTE are accepted without criticism.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Growth simulations showed higher performance on poor medium supplemented with exudates compared to poor medium alone. Growth patterns were not phylogenetically conserved, indicating selective effects of exudates that differ between species.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings, with one noting that 'the organisms predicted to grow in the first iteration of their framework (i.e., on only root exudates) broadly correspond to taxonomic groups experimentally shown to benefit from these compounds,' supporting the selective growth pattern conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Iterative MCSM simulations starting with 60 inorganic compounds and 33 root exudates supported successive growth of 84 GSMMs across five iterations. Each iteration added microbial-secreted compounds to the environment, with organic P compounds added in iteration 4 enabling additional growth.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the iterative simulation approach, stating 'they have established processes to integrate these sources of data and model specific trophic exchanges.' The methodology is described as 'well motivated and explained' with no concerns raised about the iterative growth predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "First iteration growers represented 14 of 17 phyla, dominated by Acidobacteriota, Proteobacteria, and Bacteroidota\u2014identified as primary beneficiaries of root exudates. Specialized phyla like Elusimicrobiota grew in later iterations, while orders like Rhizobiales and Burkholderiales showed iteration-dependent growth patterns.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly validate these findings, noting 'the organisms predicted to grow in the first iteration of their framework (i.e., on only root exudates) broadly correspond to taxonomic groups experimentally shown to benefit from these compounds.' The phylogenetic patterns align with known biology and are accepted without critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Throughout MCSM simulations, 158 organic compounds were secreted by microbes, including known exchange compounds such as siderophores, vitamins, coenzymes, and 11 amino acids.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm these predictions, stating 'the simulations predicted some patterns of vitamin and amino acid secretion that are known to form the basis for interactions in the rhizosphere.' The identification of known exchange compounds strengthens confidence in the framework's predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "The community-exchange network comprised 84 GSMM nodes and 203 metabolite nodes connected by 9773 edges, containing 45,972 PM paths and 571,605 PMM paths. GSMM participation showed negative correlation between first and second positions in PMM paths (Pearson = -0.279; p = 0.009).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the network construction and analysis without critique. One reviewer notes the framework provides 'detailed hypotheses on specific trophic exchanges and resource dependencies,' implicitly supporting the network-based interaction predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C45",
+      "C46"
+    ],
+    "result": "GSMMs classified as associated with sick soil (S) initiated significantly more PMM sub-networks than healthy (H) or not-associated (NA) GSMMs, suggesting non-beneficial bacteria have broader utilization potential of root-secreted carbon sources.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge these disease-association findings. The framework's ability to 'find associations between an apple tree disease state and both microbes and metabolites' is acknowledged as a strength, supporting these differential interaction patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Three root exudates were significantly more prevalent in healthy-classified paths while six were more prevalent in sick-classified paths. S-classified exudates included gallic acid and caffeic acid\u2014phenylpropanoids associated with ARD progression and potentially autotoxic effects.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these metabolite-disease associations as part of the framework's ability to generate testable hypotheses. The connection to known ARD-associated compounds (supported by citations) strengthens the evaluation, though reviewers note experimental validation would be valuable.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "A total of 79 unique microbial-secreted compounds were significantly overrepresented in either S (42) or H (41) classified paths. H-associated compounds included L-sorbose and phenylacetaladehyde, which inhibit fungal pathogens and have nematicidal properties.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the identification of functionally relevant secreted compounds, noting the framework generates 'detailed hypotheses on specific trophic exchanges.' The connection to known antimicrobial compounds supports the biological relevance of predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "The framework predicted that 4-hydroxybenzoate is metabolized by GSMM_091 to catechol, a precursor of catecholamines that increase apple tolerance to ARD. This leads to the testable prediction that 4-hydroxybenzoate can selectively enhance catecholamine-synthesizing bacteria.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly praise the generation of such predictions, stating 'the authors' simulation of trophic interactions based on cellulose degradation have generated predictions of interactions that can more readily be validated.' This specific pathway prediction exemplifies the framework's utility for hypothesis generation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "The framework combines metagenomics with constraint-based modeling using CarveMe for GSMM reconstruction without gap filling, MCSM with FVA for exchange flux determination, and metabolomics data from related apple rootstock cultivars to define root exudates.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers strongly support the methodological framework, stating it is 'well explained and motivated' and represents 'a solid framework for the metabolic modeling of microbial species.' The integration of multiple data types and careful curation process are explicitly praised as strengthening predictions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "The study is contextualized within established understanding of rhizosphere interactions, constraint-based modeling approaches, and the advantages of MAG-based GSMMs over 16S-based genome imputation for capturing in situ metabolic activities.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the conceptual framework and rationale without critique. One reviewer notes 'its reliance on genome-scale models provides a broader basis for linking sequence-based information to predictions of function on a multispecies level beyond rhizosphere microbiomes,' supporting the methodological advantages claimed.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79"
+    ],
+    "result": "The framework was applied to apple rootstock rhizospheres from soils with/without Brassicaceae seed meal amendment, supporting disease-suppressive or disease-conducive microbiomes. The authors claim the framework can be applied broadly to different environments for microbiome manipulation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers praise the framework's potential ('has potential for significant discovery'), they also note limitations: 'a more complete analysis of the method's sensitivity to environmental composition is still needed to fully interpret its conclusions.' One reviewer suggests 'further work should be done to validate the method, both using synthetic data, with a known ground truth and following up on key findings experimentally.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "Detailed methodological procedures for experimental design, MAG processing, GSMM construction and analysis, medium definitions, simulation parameters, network construction, and statistical analyses are described.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the methodological rigor, stating 'the manuscript is well written with a good balance between detail and readability. The framework steps are well motivated and explained.' The careful curation process and systematic quality control are explicitly praised.",
+    "result_type": "MINOR"
+  }
+]

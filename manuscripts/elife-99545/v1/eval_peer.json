@@ -1,0 +1,203 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C5",
+      "C6",
+      "C12",
+      "C13",
+      "C14",
+      "C31"
+    ],
+    "result": "The optimal E-I network model exhibits biologically plausible features including realistic spiking dynamics, structured connectivity implementing feature-specific competition, E-I balance, and optimal ratios of E/I neurons and connectivity strengths that match cortical measurements.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers consistently affirm these findings. Reviewer 1 states the model 'adds biological realism' and 'shows that efficient coding explains, or at least is consistent with, multiple experimentally observed properties.' Reviewer 2 notes the work 'maps efficient spiking networks onto other more classical biophysical spiking neuron models' and 'attempts to compare the model to recent single-neuron perturbation experiments.' The editor describes the analysis as 'convincing' with 'comprehensive characterisation of the model, highlighting the structured connectivity.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C33",
+      "C34",
+      "C39"
+    ],
+    "result": "Structured connectivity is necessary for optimal coding efficiency, producing stronger E-I balance, lower membrane potential variance, and lower firing rates compared to unstructured networks.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings without challenge. Reviewer 3 notes the authors 'put sensible constraints on their networks, while still maintaining the good properties these networks should have.' Reviewer 2 acknowledges the work 'studies them in more depth, which could be useful for comparing more directly to experiments.' The comparison between structured and unstructured networks is treated as a key contribution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16"
+    ],
+    "result": "Simulated photostimulation experiments replicate feature-specific competition patterns observed empirically, with E neuron stimulation increasing similarly-tuned I neuron firing and reducing similarly-tuned E neuron firing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm this result. Reviewer 1 states the authors 'show that the optimised connectivity has a like-to-like structure, which leads to the experimentally observed phenomenon of feature competition.' Reviewer 2 notes the work 'attempts to compare the model to recent single-neuron perturbation experiments' as an important contribution. No concerns are raised about these simulation results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C23",
+      "C24",
+      "C37",
+      "C41"
+    ],
+    "result": "The optimal E/I neuron ratio (2:1 to 4:1) and I-I to E-I connectivity ratio (2:1 to 3:1) match cortical measurements, with these ratios being positively correlated.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 explicitly notes 'the model's ability to replicate biological observations such as the 4:1 ratio of excitatory vs. inhibitory neurons hinges on somewhat arbitrary hyperparameter choices. Although this may limit the model's explanatory power,' they acknowledge 'the authors have made significant efforts to explore how these parameters influence their model.' Reviewer 2 states 'many of the optimality claims depend on these free parameters' and 'raises the possibility that it is not the case that the set of biophysical properties measured in the brain are accounted for by efficient coding, but rather that theories of efficient coding are flexible enough to be consistent with this regime.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C18",
+      "C35"
+    ],
+    "result": "The optimal network requires structured E-I and I-E connectivity with weak or no spike-triggered adaptation.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding. Reviewer 3 notes 'they put sensible constraints on their networks, while still maintaining the good properties these networks should have.' The analysis of adaptation effects is treated as part of the comprehensive parameter exploration that reviewers acknowledge, with no specific critiques raised about these conclusions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C36",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "Optimal efficiency requires non-zero metabolic cost, non-vanishing noise levels, and substantial non-specific external current, with the network generating intrinsic variability even without external noise.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept these findings as part of the comprehensive parameter exploration. Reviewer 1 notes 'the authors also examine how various (hyper)parameters\u2014such as adaptation timescale, the excitatory-to-inhibitory cell ratio, regularization strength, and background current\u2014affect the model.' The editor states 'the role of the many free parameters are discussed and studied in depth.' No specific concerns are raised about these parameter optimization results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C21"
+    ],
+    "result": "Decreasing the number of I neurons causes a linear increase in I neuron firing rates while E neuron firing rates remain constant.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This result is part of the parameter exploration that reviewers acknowledge. Reviewer 2 notes 'the extensive study of various parameter dependencies offers a good characterization of the model and puts its conclusions in context.' No specific concerns are raised about this prediction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C7",
+      "C25"
+    ],
+    "result": "The network performs efficient coding across multiple stimulus timescales (1-200 ms) with stable encoding error, metabolic cost, and neural dynamics.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this finding. It is treated as part of the comprehensive characterization that the editor describes as 'convincing.' The robustness analysis is implicitly accepted as part of the thorough investigation reviewers acknowledge.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "The E-I model exhibits more stable firing rates and physiologically realistic behavior compared to single cell-type models, which show excessive sensitivity to metabolic cost parameters.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this comparison. Reviewer 2 states 'this work is an important contribution in showing that such networks can be modified to be much closer to biophysical reality without losing their essential properties.' The comparison with single cell-type models is treated as supporting evidence for the biological plausibility of the E-I architecture.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C32"
+    ],
+    "result": "I neurons develop stimulus feature selectivity due to structured recurrent connectivity.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is accepted as a consequence of the structured connectivity that reviewers affirm. Reviewer 3 notes the authors 'consider a split into E and I neurons' and 'consider the coding consequences of this,' treating the emergence of I neuron selectivity as an expected outcome of the model structure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C38",
+      "C40"
+    ],
+    "result": "Moderate levels of E-I balance are optimal for coding, with structured E-I-E connectivity causing desynchronization and preventing excessive balance that would harm efficiency.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept this finding. The editor highlights 'tight instantaneous balance' as one of the key features. Reviewer 2 notes the work addresses 'long-standing puzzles about neural circuits' including 'E/I balance.' The relationship between balance and efficiency is treated as a core contribution without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C42",
+      "C43"
+    ],
+    "result": "The efficient network does not require recurrent E-E connections, with connection probability set at 0.5 by the rectification procedure.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 explicitly notes 'the revised manuscript is also more transparent about the model's limitations, such as the lack of excitatory-excitatory connectivity,' indicating acceptance of this as a model feature rather than a flaw. Reviewer 3 acknowledges 'it is not clear from an optimization perspective why the split into E and I neurons and following Dale's law would be beneficial. This would be out of scope for the current paper however,' treating this as an accepted limitation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C8",
+      "C9"
+    ],
+    "result": "Efficient coding is an established normative principle for sensory networks, with biological networks encoding information through millisecond-precise spike timing.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are background claims supported by extensive citations that reviewers do not challenge. Reviewer 2 notes 'this work is the latest among a line of research papers studying the properties of efficient spiking networks,' acknowledging the established theoretical framework. The claims provide context rather than novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C10"
+    ],
+    "result": "The network size of 400 E and 100 I units is relevant for computations within one cortical microcolumn layer.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this network size choice. It is treated as a reasonable modeling decision supported by citation. The network size is part of the model specification that reviewers accept as biologically motivated.",
+    "result_type": "MINOR"
+  }
+]

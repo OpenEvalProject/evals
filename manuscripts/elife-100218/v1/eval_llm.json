@@ -1,0 +1,307 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The authors generated a Ly49KO mouse using CRISPR/Cas9 targeting, creating fusions between Klra9/Klra17 and Klra7/Klra1 that disrupt all Ly49 genes. Flow cytometry confirmed complete loss of Ly49 surface expression in homozygous mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C46 are well-supported by genetic sequencing data (Figure 1A) and flow cytometry validation (Figure 1B). The genetic characterization includes Sanger sequencing confirming the fusion sequences and frameshift mutations, while flow cytometry demonstrates absence of all Ly49 receptors on NK cell surfaces.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Ly49KO mice show reduced KLRG1 expression (51% reduction) on NK cells while maintaining expression of other NK receptors (NKG2A, CD94, NKG2D, 2B4, CD122) and normal NK cell maturation. Heterozygous mice show reduced percentages of Ly49+ NK cells (33-41%) with normal surface expression levels except for Ly49I.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C52 are supported by comprehensive flow cytometry data in Figures 1C-D. The KLRG1 reduction is consistent with prior literature (C51 cites Corral 2000, Zhang 2019). The maturation data based on CD27/CD11b expression provides clear evidence that Ly49 deletion does not impair NK cell development.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C53",
+      "C54",
+      "C55",
+      "C59",
+      "C60"
+    ],
+    "result": "Ly49KO NK cells are defective in licensing, showing 73% reduction in IFN\u03b3 production upon anti-NK1.1 stimulation compared to wildtype, and completely unable to reject MHC-I-deficient target cells in vivo. The IFN\u03b3 production machinery remains intact as demonstrated by normal responses to PMA/ionomycin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3-C4, C53-C55, C59-C60 are strongly supported by functional assays in Figure 2. The licensing defect is demonstrated by reduced IFN\u03b3 production (Figure 2A), while the intact machinery is confirmed by PMA/ionomycin responses (Figure 2B). The in vivo rejection assay (Figure 2C) clearly shows complete loss of missing-self recognition in Ly49KO mice comparable to NK-depleted controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58",
+      "C61",
+      "C87",
+      "C88"
+    ],
+    "result": "In C57BL/6 mice, missing-self recognition depends predominantly on H-2Kb rather than H-2Db, with wildtype mice efficiently rejecting MHC-I KO and H-2Kb KO targets but only 13% rejection of H-2Db KO targets. This indicates H-2Kb is more efficiently recognized by Ly49 receptors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58, C61, C87-C88 are supported by in vivo cytotoxicity data (Figure 2C) showing differential rejection of targets lacking different MHC-I alleles. The interpretation that H-2Kb is more important for missing-self recognition is a reasonable inference from the data and is consistent with cited prior work (Johansson 2005, C87).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C62",
+      "C63",
+      "C64",
+      "C65",
+      "C102"
+    ],
+    "result": "Ly49A expression in Ly49KO/Ly49A KI D8-KODO mice closely follows NKp46 expression, with virtually all NKp46+ NK cells expressing Ly49A and NKp46- cells lacking Ly49A. Expression levels are lower than in D8-KODO controls but ubiquitous across NK cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C62-C65, C102 are well-supported by flow cytometry data in Figure 3A showing the tight correlation between NKp46 and Ly49A expression. The lower MFI compared to wildtype Ly49A is documented and consistent with prior observations (C65 cites Held 1996, Karlhofer 1994).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C85",
+      "C86"
+    ],
+    "result": "NK cells mature normally in Ly49KO and Ly49KO/Ly49A KI mice based on CD27/CD11b expression patterns in spleen, bone marrow, and liver, with only a modest increase in immature CD27+CD11b- cells in bone marrow. Expression of Ly49A alone does not alter NK cell numbers or maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C67, C85-C86 are supported by maturation analysis in Figure 3B. The data show similar percentages of mature CD27-CD11b+ NK cells across genotypes in multiple tissues. The modest increase in immature cells in bone marrow is statistically significant but does not affect overall maturation in spleen and liver, supporting the conclusion that Ly49s do not substantially affect NK cell development.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C68",
+      "C69",
+      "C8",
+      "C95",
+      "C96"
+    ],
+    "result": "KLRG1 expression is reduced in Ly49KO NK cells on both H-2b and D8-KODO backgrounds. Expression of Ly49A alone from the Ncr1 locus (chromosome 7) completely rescued KLRG1 expression to wildtype levels, indicating that inhibitory Ly49 receptors rather than regulatory elements control KLRG1 expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C68-C69, C8, C95-C96 are strongly supported by flow cytometry data in Figures 1C and 3C. The rescue experiment is particularly compelling: Ly49A expressed from a different chromosome (Ncr1 on chr7 vs Klra on chr6) restores KLRG1, arguing against cis-regulatory element effects and supporting a functional role for Ly49 receptors in KLRG1 regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C77",
+      "C7",
+      "C82"
+    ],
+    "result": "Ly49A KI NK cells on the Ly49KO D8-KODO background are fully licensed, showing complete restoration of IFN\u03b3 production and degranulation to levels comparable to Ly49A+ NK cells in D8-KODO mice. This demonstrates that Ly49A expression without other Ly49 family members can mediate NK cell licensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C74, C77, C7, C82 are strongly supported by functional data in Figure 4A. The rescue of both IFN\u03b3 production and degranulation in Ly49A KI cells to levels matching licensed Ly49A+ controls provides clear evidence that a single Ly49 receptor is sufficient for licensing. The PMA/ionomycin control (Figure 4B, C75-C76) confirms the machinery is intact.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C6",
+      "C9",
+      "C83",
+      "C103",
+      "C105"
+    ],
+    "result": "A single inhibitory Ly49 receptor (Ly49A) is sufficient to mediate missing-self rejection in vivo. D8-KODO mice efficiently rejected KODO targets while Ly49KO D8-KODO mice could not, but this defect was completely restored in Ly49KO/Ly49A KI mice. Despite lower Ly49A expression levels, these cells were fully functional.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C81, C6, C9, C83, C103, C105 represent the central finding and are strongly supported by in vivo cytotoxicity data (Figure 4C) combined with licensing data (Figure 4A). The complete rescue of missing-self rejection by Ly49A alone definitively demonstrates sufficiency. The functional competence despite lower expression (C103) is an important observation showing that expression level thresholds are not limiting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C89",
+      "C90"
+    ],
+    "result": "The efficiency of Ly49-dependent missing-self rejection depends on the characteristics of specific MHC-I alleles recognized by cognate Ly49 receptors. Ly49C and Ly49I can bind H-2Db-deficient but not H-2Kb-deficient cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C90 are supported by the differential rejection data (Figure 2C) and cited literature (Hanke 1999). However, C89 acknowledges the caveat that the cited binding studies used overexpression systems. The interpretation in C90 is a reasonable inference from the in vivo rejection data showing MHC-I allele-specific differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C94",
+      "C98"
+    ],
+    "result": "The authors acknowledge that effects of regulatory elements on KLRG1 expression cannot be completely excluded given the genomic location of Klrg1 within the NKC, and that KLRG1 expression may be modulated as a consequence of NK cell licensing.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C94 and C98 are speculative statements acknowledged by the authors. While C95-C96 provide evidence against regulatory element effects, the authors appropriately note these possibilities cannot be definitively excluded. C98 is a mechanistic hypothesis about the relationship between licensing and KLRG1 that requires further investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C101"
+    ],
+    "result": "In Ly49KO heterozygous mice, the percentage of Ly49+ NK cells is reduced for each Ly49 molecule (33-41%), but expression levels (MFI) are unaffected except for Ly49I (26% reduction), indicating that loss of one allele does not affect Ly49 surface levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C50, C101 are supported by flow cytometry data in Figure 1B. The observation that heterozygous deletion reduces the percentage of expressing cells but not expression level per cell (except Ly49I) suggests stochastic expression mechanisms rather than gene dosage effects on protein levels. This is an interesting observation about Ly49 regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Background claims establishing NK cell biology, Ly49 receptor function, missing-self recognition, and NK cell licensing based on established literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C10-C29 are background knowledge claims supported by appropriate citations to established literature. These provide necessary context for the experimental work but are not novel findings of this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "Prior work by other groups generated various Ly49-deficient mice with limitations including off-target effects on other NK receptors and potential confounding from regulatory elements. The authors' previous \u0394Ly49-1 mice showed reduced Ly49D expression suggesting regulatory locus control regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C42 accurately describe prior work with appropriate citations (B\u00e9langer 2012, Zhang 2019, Parikh 2020). These claims establish the rationale for the current study by highlighting limitations of previous approaches. The description of prior findings appears accurate based on the cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C75",
+      "C76"
+    ],
+    "result": "All NK cell populations show equivalent IFN\u03b3 production and degranulation in response to PMA/Ionomycin, indicating that the IFN\u03b3 production and degranulation machinery are not affected in any of the mouse strains.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C76 are supported by data in Figure 4B. This is an important control demonstrating that functional defects in Ly49KO cells are specific to receptor-mediated activation rather than general impairment of effector machinery. The inference in C76 is well-justified by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C84"
+    ],
+    "result": "NKG2A contributes to rejection of missing-self targets in poly(I:C)-treated mice under inflammatory conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C84 is a citation to prior work (Zhang 2019) used to acknowledge that other inhibitory receptors may contribute under specific conditions. This appropriately qualifies the authors' conclusions about Ly49 sufficiency under steady-state conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C91",
+      "C92",
+      "C93",
+      "C97",
+      "C99",
+      "C100"
+    ],
+    "result": "Background information on KLRG1 function, expression patterns, genomic location, and regulation of Ly49 expression through epigenetic mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C91-C93, C97, C99-C100 are background knowledge supported by appropriate citations. These provide context for interpreting the KLRG1 and Ly49 expression data but are not novel findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C104"
+    ],
+    "result": "Minor alterations in expression levels of various Ly49s on individual NK cells may not affect NK cell functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C104 is a reasonable inference from the observation that Ly49A KI cells with lower expression levels (C65, C102) are fully functional in licensing and missing-self rejection (C103). However, this conclusion is limited to the specific context tested and may not generalize to all expression level variations or all Ly49 receptors.",
+    "result_type": "MINOR"
+  }
+]

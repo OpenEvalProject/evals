@@ -1,0 +1,312 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C11",
+      "C14"
+    ],
+    "result": "UGGT1-KO, UGGT2-KO, and UGGT-DKO HCT116 cell lines were successfully generated and characterized. These knockout cell lines showed no significant changes in growth rate or basal ER stress marker expression compared to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11 and C14 are supported by data in Figure 1C and Figure 1\u2014figure supplement 2B, showing that knockout of UGGT1/2 does not affect cell growth or induce ER stress markers under basal conditions. This establishes that the knockout cells are viable and suitable for further experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C12",
+      "C13"
+    ],
+    "result": "The protein expression level of UGGT2 relative to UGGT1 differs between cell lines, being approximately 4.5% in HCT116 cells and 26% in HeLa cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12 and C13 are supported by experimental data in Figure 1\u2014figure supplement 2A using transfection of tagged constructs to estimate relative expression levels. The method is reasonable though indirect, relying on transfection efficiency assumptions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "UGGT1 and UGGT2 are N-glycosylated proteins, and loss of UGGT1 (but not UGGT2) impairs secretion of A1AT and EPO, and delays HA maturation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C15-C17 are supported by EndoH sensitivity data (Figure 1\u2014figure supplement 2C) and pulse-chase experiments (Figure 1\u2014figure supplement 2D-F). These results confirm the expected phenotypes of UGGT1 loss and validate the knockout cell lines.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "UGGT1 knockout accelerates the degradation of ATF6\u03b1, revealing for the first time that UGGT1 is involved in ERAD. This accelerated degradation still requires mannose trimming, as shown by kifunensine treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C23 are strongly supported by cycloheximide chase experiments in Figure 1D-F. The data clearly show that ATF6\u03b1 degradation is accelerated in UGGT1-KO and UGGT-DKO cells but not UGGT2-KO cells, and that kifunensine blocks this degradation. This is a novel finding contradicting previous literature.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31"
+    ],
+    "result": "DNJ treatment reveals that UGGT1-mediated reglucosylation reduces the probability of mannose trimming required for gpERAD. The accelerated degradation in UGGT1-KO cells is compromised by DNJ, making degradation rates similar between WT and UGGT1-KO cells. This occurs because mannose trimming still proceeds from GM9 even in the presence of DNJ, though less efficiently than from M9.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C31 are supported by cycloheximide chase experiments with DNJ (Figure 1D, G) and N-glycan profiling data (Figure 1\u2014figure supplement 4-5). The data show that DNJ treatment equalizes degradation rates between WT and UGGT1-KO cells, and that GM8 is detected even with DNJ treatment, indicating continued mannose trimming. The interpretation that glucose presence reduces mannose trimming efficiency is reasonable but somewhat inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "UGGT1 knockout accelerates degradation of the misfolded substrate NHK in a manner dependent on UGGT1's glucosyltransferase activity and N-glycosylation of the substrate.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C34 are supported by pulse-chase data in Figure 2A-C. The rescue experiment with catalytically inactive UGGT1-D1358A (C33) and the lack of effect on non-glycosylated NHK-QQQ (C34) provide strong evidence that the effect requires both UGGT1 enzymatic activity and substrate N-glycans.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38"
+    ],
+    "result": "Overexpression experiments reveal a 'tug of war' between the CNX/CRT cycle (promoted by UGGT1 and CNX) and gpERAD (promoted by EDEMs). Co-overexpression of CNX and UGGT1 retards NHK degradation, while EDEM2/3 overexpression accelerates it, and these effects can counteract each other.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 are supported by pulse-chase experiments in Figure 2D-E. The competition experiments clearly demonstrate that CNX/UGGT1 can counteract EDEM-mediated degradation, supporting the 'tug of war' model. The data are internally consistent and well-controlled.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C44"
+    ],
+    "result": "UGGT1/2 knockout does not affect the stability of properly folded, stable ER-resident proteins (Grp170, Sil1, ribophorin I, CRT) or the activity of the Golgi enzyme GnT-V.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39, C40, and C44 are supported by cycloheximide chase data (Figure 3A-D, F) and enzyme activity assays (Figure 3E). These results demonstrate selectivity of UGGT1's effect for unstable/misfolded proteins rather than stable proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C45",
+      "C46"
+    ],
+    "result": "UGGT1-mediated reglucosylation affects the fate of unstable protein variants (rRI332-Flag, EMC1-\u0394PQQ) but not their stable counterparts (ribophorin I, EMC1), demonstrating selectivity for unstable proteins.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C41-C42 and C45-C46 are supported by pulse-chase data in Figure 3D and F. The differential effects on truncated/mutant proteins versus full-length proteins provide strong evidence for UGGT1's selective role in quality control of unstable proteins.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C47",
+      "C48",
+      "C49",
+      "C56"
+    ],
+    "result": "UGGT1 is required for proper functioning of ATF6\u03b1. Loss of UGGT1 decreases ATF6\u03b1(P) protein levels, causes conformational changes (increased rigidity), and reduces ATF6\u03b1(N) production upon ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C47-C49 and C56 are supported by immunoblotting (Figure 4A, C-E) and trypsin digestion assays (Figure 4B). The data show decreased ATF6\u03b1 levels and altered structure in UGGT1-KO cells. However, the trypsin digestion data (C48) show only subtle differences and the interpretation of 'more rigid structure' is somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "UGGT1 knockout impairs ATF6\u03b1-dependent transcriptional responses (ERSE and UPRE reporters) while increasing ATF4 reporter activity in response to ER stress induced by thapsigargin.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50-C54 are supported by reporter assay data in Figure 4F-H. The data clearly show differential effects on ATF6\u03b1-dependent versus ATF4-dependent reporters in UGGT1-KO cells, with appropriate ATF6\u03b1-KO controls demonstrating specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C55",
+      "C73"
+    ],
+    "result": "UGGT1-KO and UGGT-DKO cells exhibit increased sensitivity to ER stress induced by thapsigargin treatment compared to wild-type cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55 and C73 are supported by crystal violet assay data in Figure 4I showing reduced cell viability in UGGT1-KO cells after Tg treatment. This demonstrates physiological importance of UGGT1 in ER stress tolerance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C65",
+      "C72",
+      "C89"
+    ],
+    "result": "UGGT1 is a central factor in ER protein quality control that regulates both glycoprotein folding and degradation. In wild-type cells, glycoproteins with M9 are subjected to either the CNX/CRT cycle via UGGT1-mediated reglucosylation or gpERAD via EDEM-mediated mannose trimming. In UGGT1-KO cells, glycoproteins skip the CNX/CRT cycle and undergo accelerated degradation. UGGT1 acts to prevent early degradation through a 'tug-of-war' with EDEMs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C60, C65, C72, and C89 represent the main conclusions of the paper, synthesizing results from multiple experiments. These conclusions are well-supported by the collective data showing: (1) accelerated degradation in UGGT1-KO cells (Figures 1E, 2A, 3D-F), (2) competition between CNX/UGGT1 and EDEMs (Figure 2D-E), (3) selectivity for unstable proteins (Figure 3), and (4) physiological importance for ATF6\u03b1 function (Figure 4). The model is internally consistent and supported by multiple lines of evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "Substrate degradation is modulated bidirectionally by EDEMs and UGGT1: knockout of EDEMs delays degradation while overexpression accelerates it; knockout of UGGT1 accelerates degradation while overexpression (with CNX) delays it.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61-C64 summarize results from multiple experiments (Figures 1E, 2A, 2D-E, 3D-F) and prior literature. The bidirectional modulation by EDEMs and UGGT1 supports the 'tug-of-war' model and is well-documented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "Mannose trimming is inefficient when a glucose residue is present on the A chain of N-glycans.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C66 is an inference from the observation that degradation rates are similar in WT cells, WT+DNJ cells, and UGGT1-KO+DNJ cells (Figure 1G). While the inference is reasonable, it is not directly demonstrated. The N-glycan profiling data show GM8 accumulation with DNJ treatment, but direct measurement of mannose trimming rates from GM9 versus M9 is not provided. Alternative explanations (e.g., differential substrate recognition) are not fully excluded.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "UGGT2's role in substrate degradation appears limited in HCT116 cells. UGGT2 knockout alone does not accelerate degradation, and UGGT2 overexpression does not rescue accelerated degradation in UGGT-DKO cells. However, UGGT2 loss mitigates ATF6\u03b1 transcriptional activity without affecting its cleavage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C68 and C70 are supported by data in Figures 1E, 2A, 3D, 3F, and 4D, F-G. Claim C69 is stated but data are not shown, which is a weakness. The limited role of UGGT2 is consistent with its low expression level in HCT116 cells (C12). The effect on ATF6\u03b1 transcriptional activity (C70) is interesting but mechanistically unclear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75",
+      "C78"
+    ],
+    "result": "ATF6\u03b1 may undergo structural maintenance by UGGT1 to avoid unnecessary degradation and maintain proper function. The ATF4 pathway might be activated to partially compensate for functional loss of the ERSE/UPRE pathway in UGGT1-KO cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C75 and C78 are speculative inferences. C75 is based on subtle differences in trypsin sensitivity (Figure 4B) that could have alternative explanations. C78 is based on increased ATF4 reporter activity in UGGT1-KO cells (Figure 4H), but whether this represents true compensation versus a secondary effect is unclear. Both claims are reasonable hypotheses but require additional experimental validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C18",
+      "C43",
+      "C71",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "Background information on N-glycan processing, the CNX/CRT cycle, gpERAD, UGGT1/2 properties, and prior literature findings are presented to contextualize the current study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C10, C18, C43, C71, and C79-C85 are background claims supported by appropriate citations to prior literature. These establish the context for the current work and are generally well-established facts in the field. Claim C10 describes prior work from Tannous et al., 2015 that the current study challenges.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C74",
+      "C76",
+      "C77"
+    ],
+    "result": "UGGT1 is necessary for proper functioning of ATF6\u03b1, as evidenced by decreased ERSE/UPRE reporter responses and increased ATF4 reporter activity in UGGT1-KO cells upon ER stress.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74, C76, and C77 are supported by reporter assay data in Figure 4F-H. These results demonstrate that loss of UGGT1 impairs ATF6\u03b1-dependent transcriptional responses while increasing ATF4 responses, indicating altered ER stress signaling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C90"
+    ],
+    "result": "The glucosyltransferase activity of UGGT1 is required for inhibition of early glycoprotein degradation. The fate of glycoproteins is determined by a tug-of-war between structure formation by UGGT1 and degradation by EDEMs. UGGT1 delays degradation of misfolded substrates and unstable glycoproteins including ATF6\u03b1, and ATF6\u03b1 cannot function properly without UGGT1.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C88 and C90 are summary statements from the abstract that are well-supported by the experimental data presented throughout the manuscript. These represent the main findings and conclusions of the study.",
+    "result_type": "MAJOR"
+  }
+]

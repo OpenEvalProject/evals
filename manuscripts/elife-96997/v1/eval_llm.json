@@ -1,0 +1,295 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C55",
+      "C56",
+      "C102",
+      "C103",
+      "C105",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "The study reanalyzed data from Bakkour et al., 2019, in which 30 participants completed a food choice task. Participants first rated 60 snack items on willingness to pay ($0-$3), then made binary choices between pairs of items in 210 trials (each item appearing 7 times, with 60 pairs repeated once). The experimental procedures were approved by the IRB at Columbia University.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C55-C56, and C102-C109 provide consistent and detailed descriptions of the experimental design, sample size, and procedures. These are straightforward methodological details that are internally consistent and appropriately documented.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C8"
+    ],
+    "result": "Participants chose the item with higher static value (s-value) in only 64% of trials, and overall behavior was similar to other studies using the same task.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C3 provides a specific quantitative result (64% choice consistency), and C8 contextualizes this within the literature. The low consistency rate is a key observation motivating the study's hypothesis about dynamic values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C11"
+    ],
+    "result": "Participants were more likely to select the same option when presentations of identical pairs were closer in time, with a highly significant negative regression coefficient (p<0.0001) for the number of trials between repetitions. This demonstrates that preferences are not fixed even within a single experimental session.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9-C11 present converging evidence from repeated-pair analysis with appropriate statistical testing (Figure 3, Equation 8). The inference in C11 logically follows from the temporal dependency shown in C9-C10.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "A regression model using choices from other trials predicted cynosure trial choices better than a model using explicitly reported static values (s-values). Explicit value reports have limited power to predict choices, and the values used to make binary choices differ from and drift apart from s-values during the experiment through the deliberative process.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C60-C63 are supported by the model comparison in Figure 2 and control simulations. The superiority of the choice-based model over s-values is demonstrated empirically, and the interpretation about value drift (C62-C63) follows logically from these results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C13",
+      "C15",
+      "C16",
+      "C17"
+    ],
+    "result": "Dynamic values (d-values) derived from the Reval algorithm explain choices and response times better than explicit value reports (s-values). The DDM using d-values explained more RT variance, provided better fits for all participants (by BIC), and better classified trial difficulty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13-C17 present multiple converging lines of evidence (Figures 5, 5-supplement 2) showing d-values outperform s-values in explaining both choice and RT data. The BIC comparison (C16) appropriately penalizes the additional parameter in the dynamic model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C19",
+      "C69"
+    ],
+    "result": "Control analyses using simulated data showed that the improvements in fit quality from applying Reval are neither guaranteed nor artifactual. The reduction in deviance after applying Reval was negligible in simulated data compared to actual data.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19 and C69 describe critical control analyses (Figure 6) that rule out the possibility that Reval improvements are methodological artifacts. The simulations appropriately test the null hypothesis that values are static.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C20",
+      "C21",
+      "C68",
+      "C74"
+    ],
+    "result": "Reval applied in the correct (forward) temporal order explained choices significantly better than when applied in reverse order (p<0.0001), ruling out the possibility that values are static. This effect cannot be explained by the Chen and Risen (2010) artifact. Surprisingly, backward Reval still explained choices better than static values.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20-C21 and C68-C74 present the forward-backward comparison (Figure 7) that provides strong evidence against static values. The logical reasoning in C68 is sound, and the results directly address the Chen and Risen artifact concern. The backward-better-than-static result (C21) is unexpected but explained by the ceDDM model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C23",
+      "C70",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "For most participants, revaluation was greater for chosen than unchosen items. This asymmetry may relate to unequal attention distribution, as chosen items are looked at longer and the ceDDM predicts larger revaluation with more evidence samples.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C23 presents the empirical finding (Figure 8), while C70 and C84-C87 provide mechanistic speculation supported by prior literature and model predictions. The asymmetric revaluation is a robust empirical observation, though the mechanistic explanation remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27"
+    ],
+    "result": "fMRI analysis revealed that vmPFC BOLD signal correlated significantly with d-values when controlling for s-values. A model with only s-values did not survive whole-brain correction in vmPFC, while a model with only d-values showed robust vmPFC effects surviving correction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C27 present fMRI results (Figure 9, Figure 9-supplement 1) with appropriate whole-brain correction. The differential effects of d-values vs s-values in vmPFC provide neural evidence supporting the behavioral findings. However, the fMRI analysis would benefit from more detail about potential confounds and the specificity of the vmPFC effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C29",
+      "C31",
+      "C32",
+      "C33",
+      "C91"
+    ],
+    "result": "Reval was applied to three independent datasets (Folke et al. 2016; Sepulveda et al. 2020 like-framing and dislike-framing), yielding largely similar results. The reduction in deviance was significantly greater than in simulated data for all three datasets. Forward-backward differences replicated in Folke et al. but not in Sepulveda et al., possibly due to alternating instruction blocks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C29-C33 and C91 describe replication analyses (Figure 10) across independent datasets. The partial replication strengthens confidence in the main findings, while the failure in one dataset (C33) is acknowledged and speculatively explained (C91). The mixed results suggest boundary conditions for the effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C37",
+      "C38",
+      "C39",
+      "C71",
+      "C72"
+    ],
+    "result": "The correlated-evidence drift-diffusion model (ceDDM) successfully captured the revaluation effects. After 1s of evidence sampling, correlation was 0.1062\u00b10.0113. When Reval was applied to ceDDM simulations, it increased RT range by difficulty, explained choices better in forward than backward direction, and backward Reval outperformed static values\u2014mirroring empirical patterns. This supports the interpretation that revaluation reflects dynamic value construction during deliberation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C39 and C71-C72 present the ceDDM modeling results (Figure 11) showing the model can reproduce key empirical patterns. The model provides a mechanistic account of how temporally correlated evidence samples can generate revaluation-like effects. However, C80 and C92 appropriately note this is a proof-of-principle model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "The manuscript establishes theoretical context: value-based decisions are thought to rely on comparing subjective values, with longer RTs for similar values. However, unlike perceptual decisions where evidence samples are conditionally independent, value-based decisions may involve dynamic, context-dependent valuations influenced by decision-maker mindset, which can be persistent or shift rapidly.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C51 provide theoretical background and motivation. These are primarily literature review and conceptual framing rather than novel empirical claims. The critical assessment in C46 that conditional independence is questionable for value-based decisions is the key conceptual contribution motivating the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "The authors hypothesized that if subjective values are dynamic, value-based decisions should exhibit serial dependencies. A choice provides information about the decision-maker's mindset, which likely endures longer than a single decision, making choices informative about future choices.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54 state the study's central hypothesis and reasoning. This is appropriate hypothesis generation based on the theoretical considerations in the previous result. The hypothesis is clearly testable and motivated.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59"
+    ],
+    "result": "The manuscript contrasts two explanations for choice variability: the standard view attributes it to noise in memory retrieval, while constructive value theories suggest values are constructed (not retrieved) during decisions and are sensitive to context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C59 present competing theoretical frameworks from the literature. This framing appropriately contextualizes the study's contribution within ongoing theoretical debates about value representation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "The sequential effects identified can be interpreted as choice-induced preference change (CIPC), a phenomenon documented since Festinger (1957) using free-choice paradigms. However, the revaluation effect found here cannot be explained by the Chen and Risen (2010) artifact. The approach does not require pre- and post-choice ratings but instead requires repeated item presentations. The timing of revaluation (during vs after deliberation) cannot be determined with certainty.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C77 situate the findings within the CIPC literature and address methodological concerns. The distinction from the Chen and Risen artifact is well-supported by the forward-backward analysis. The acknowledgment of uncertainty about timing (C77) is appropriate scientific caution.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The subjective value of options depends on decision-maker mindset; if mindset changes are slow, item values will be temporally correlated. The ceDDM is interpreted as a proxy for nuanced processes and belongs to a class of sequential sampling models with time-varying drift rates, similar to attentional DDM and models by Lee and Pezzulo (2022).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C83 provide theoretical interpretation and model contextualization. The acknowledgment that ceDDM is a proxy (C80) is important scientific humility. The connection to related models (C81-C83) appropriately situates the work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C93",
+      "C94"
+    ],
+    "result": "The study has several acknowledged limitations: it only examined food items with explicit value reports, generalization to other value elicitation methods and non-food items remains to be determined, perceptual decisions also show serial dependencies that may or may not reflect similar processes, and alternative stochastic processes or mechanisms (beyond past decisions) might also explain the observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C94 appropriately acknowledge study limitations and boundary conditions. These are reasonable caveats that do not undermine the main findings but identify important directions for future research.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The research contributes to understanding memory's impact on decision-making and preference formation. Prior work suggests value retrieval renders items susceptible to modification (Luettgau et al. 2020), and mere exposure increases preference (Zajonc 1968). Due to memory's associative nature, successive evidence samples are likely dependent, similar to L\u00e9vy flights in semantic space (Costa et al. 2009) and foraging behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95-C101 provide broader context and connections to related phenomena. These appropriately situate the work within cognitive science and suggest interesting parallels to other domains, though the connections remain somewhat speculative (C101).",
+    "result_type": "MINOR"
+  }
+]

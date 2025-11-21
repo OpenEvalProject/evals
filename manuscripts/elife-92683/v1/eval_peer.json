@@ -1,0 +1,163 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C15",
+      "C43",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C123",
+      "C124"
+    ],
+    "result": "The authors propose a novel framework using curiosity-driven exploration (IMGEP) and behaviorist robustness tests to map versatility and robustness competencies of GRNs across 432 systems from 30 ODE models. The framework investigates GRNs as agents navigating problem spaces toward goal states, focusing on versatility (reaching diverse goal states under interventions) and robustness (reaching goal states despite perturbations).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor states this is 'an important study' that 'develops a machine learning method to reveal hidden unknown functions and behaviors in gene regulatory networks.' Reviewer 3 notes 'the first half of the paper provides solid evidence to support an important conceptual framework' and describes it as 'an important development for exploring and understanding GRNs/dynamical systems broadly.' The conceptual framework and methodology in Figures 1-5 are explicitly praised as convincing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75",
+      "C76"
+    ],
+    "result": "Most surveyed GRN systems can reach a surprisingly wide spectrum of steady states depending on initial conditions. Curiosity search (IMGEP) significantly outperforms random search in revealing this diversity, discovering latent regions that random search cannot find efficiently. At n=290, IMGEP outperforms random search at n=900 while using only one-third of the experimental budget.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor confirms 'solid evidence is presented for the method.' Reviewer 3 states 'the authors convincingly show how these frameworks can explore and quantify the diversity of behaviors that can be displayed by GRNs' in Figures 1-5. Reviewer 2 acknowledges 'the battery of experimental models is impressive,' though they raise concerns about lack of ground truth comparison for some models.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C52",
+      "C84",
+      "C85"
+    ],
+    "result": "Among discovered steady states, several robust goal states were identified that systems consistently reach despite various perturbations (noise, pushes, walls) during traversal of transcriptional space. The median sensitivity remains relatively low across 432 systems, with impressive examples of complex yet highly-robust trajectories exhibiting detours and loops while consistently reaching the same endpoint.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'the behaviorist point of view for robustness is potentially of interest to a broad community, and to my knowledge introduces novel considerations for defining robustness in the GRN context.' The robustness testing framework and results in Figures 1-5 are described as having 'solid evidence' by both the editor and Reviewer 3.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C153",
+      "C154"
+    ],
+    "result": "Validation experiments on two simple models (BIOMD0000000341 and BIOMD0000000454) with known ground truth goal states demonstrate that the exploration pipeline can successfully re-discover these known states.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 2 specifically requested comparison to ground truth for simple models, noting 'The lack of comparison to the ground truth goal set (attractors of ODE) from arbitrary initial conditions makes it hard to evaluate the true performance/contribution of the method.' The authors addressed this by testing on models where ground truth is known, providing validation evidence in Figure 3\u2014figure supplement 1.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C90",
+      "C91"
+    ],
+    "result": "Energy landscape visualization using curiosity search trajectories reveals a new wide 'valley' of reachable states not found by random search. The landscape-generation method can visualize how external cues deform the energy landscape, creating new shaped valleys.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 states 'The analysis presented in Fig. 6 is exciting but preliminary' and questions whether 'the analysis presented in Fig. 6C is appropriate' because 'trajectories derived from dynamical perturbations do not only reflect the underlying pseudo-landscape of the GRN. Instead, they also include contributions from the perturbations themselves.' The reviewer also asks for comparison to other landscape construction methods and other GRNs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "Comparison across organism categories shows generic and Homo sapiens GRNs exhibit higher versatility than rodent/amphibian GRNs, which show higher versatility than bacteria/plant GRNs. Random network versatility is much lower (<0.026) than biological networks, suggesting versatility prevalence might be a strong invariant of biological intelligence shaped by evolution. Generic cell GRNs achieve pareto-optimal solutions for versatility-robustness tradeoff.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 states 'In Fig. 7, I'm not sure how much is possible to take away from the results as given here, as they depend sensitively on the cohort of 432 (GRN, Z) pairs used.' The reviewer notes 'comparison between organismal categories is more difficult due to low sample size; for instance, the \"plant\" and \"slime mold\" categories each only has 1 associated GRN. Additionally, the \"n/a\" category is difficult to interpret.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C92",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "For the RKIP-ERK pathway, a specific robust region (low RKIP, high ERK) associated with tumor development was identified. Six of ten robust trajectories end in the disease region despite chemical blockers. Random search discovered an intervention that successfully resets disease setpoints to healthy setpoints robustly across perturbations.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 states 'In Fig. 8, it is unclear whether the behavioral catalog generated is important to the intervention design problem of moving a system in one attractor basin to another.' The reviewer notes 'The authors note that evolutionary searches or SGD could also be used to solve the problem' and asks 'Is the analysis somehow enabled by the behavioral catalog in a way that is complementary to those methods? If not, comparison against those methods (or others e.g. optimal control) would strengthen the paper.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C116",
+      "C117",
+      "C120",
+      "C121",
+      "C122"
+    ],
+    "result": "For synthetic gene circuit engineering (oscillator design), curiosity search found 1167 oscillator configurations out of 5000 trials, compared to 42 for random search and 0 for gradient descent. CMA-ES explores more initially than SGD but converges to similar local minima. Global optimization strategies are useful for locally refining close-enough solutions discovered by curiosity search.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 states 'The analysis presented in Fig. 9 also is preliminary' and notes 'It would be a stronger result to compare their approach to more sophisticated methods, as opposed to random search and SGD. Other options from the recent literature include Bayesian techniques, sparse nonlinear regression techniques (e.g. SINDy), and evolutionary searches.' In the second round, the reviewer acknowledges 'the authors have included a comparison against CMA-ES, an evolutionary algorithm' but maintains the evidence is incomplete.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C66"
+    ],
+    "result": "The authors use a simple IMGEP variant where exploration can be seen as performing novelty search in behavior space Z.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 2 questions the adaptation of IMGEP to this setting, stating 'The proposed method is based on \"Intrinsically Motivated Goal Exploration Processes with Automatic Curriculum Learning\", which assumes state action trajectories [s_{t_0:t}, a_{t_0:t}]. However, the models used in the current work do not include external control actions, but rather only the initial conditions can be set. It is not clear from the methods whether IMGEP was adapted to this setting, and how the exploration policy was designed w/o actual time-dependent actions.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83"
+    ],
+    "result": "The authors propose a battery of empirical robustness tests inspired by behavioral science (displacement and barrier experiments), using perturbations (noise, pushes, walls) conditioned on observed GRN behavior. Perturbation magnitudes are scaled proportionally to trajectory extent, and walls are positioned where the GRN would naturally visit. This behaviorist lens on robustness can help understand non-genetic resistance in transcriptional space.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 3 explicitly states 'The behaviorist point of view for robustness is potentially of interest to a broad community, and to my knowledge introduces novel considerations for defining robustness in the GRN context.' The methodology is part of the 'solid evidence supporting the first half of their paper' according to Reviewer 3.",
+    "result_type": "MAJOR"
+  }
+]

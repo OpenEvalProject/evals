@@ -1,0 +1,322 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "The authors generated four transgenic mouse lines (Pou5f1-KO labeled with mKO2, Sox2-KO labeled with EGFP, floxed Pou5f1, and floxed Sox2) and confirmed knockout efficiency through immunostaining showing loss of Oct4 and Sox2 proteins in mKO2+ and EGFP+ embryos respectively.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 raised concerns about the knockout strategy, stating 'The knockout strategy in Fig1 is somewhat obscure, such as how is OCT4 inactivated in Oct4mKO2 heterozygotes' and requesting 'a more detailed description of the knockout strategy.' The authors addressed these concerns in revision, but the initial ambiguity suggests methodological clarity was needed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C129",
+      "C130"
+    ],
+    "result": "The study performed low-input ATAC-seq and RNA-seq on early and late morulae and ICMs, with embryos treated with MEKi from E2.5 to suppress PE development and specify ICM to EPI fate. The authors claim MEKi treatment did not alter Oct4/Sox2 target open chromatin regions and genes.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor noted 'The evidence supporting the claims of the authors is solid.' While Reviewer 3 initially questioned whether 'maternal KO might not be suitable as a control,' the authors provided data showing MEKi did not alter molecular functions (C53-C54), which reviewers accepted in revision.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "PCA of ATAC-seq data showed clear clustering by stage and genotype, with Pou5f1-KO morulae clustering close to controls while Pou5f1- and Sox2-KO ICM samples clustered separately. Analysis identified 152,393 total peaks with significant changes in KO late ICMs: 14,016 (9.2%) decreased and 11,884 (7.8%) increased in Pou5f1-KO; 6,637 (4.4%) decreased and 3,660 (2.4%) increased in Sox2-KO.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The editor stated 'The evidence supporting the claims of the authors is solid' and Reviewer 1 noted 'the conclusions of this paper are mostly well supported by data.' The ATAC-seq data quality and analysis were not specifically challenged by reviewers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "K-means clustering of differential peaks identified subsets of open chromatin regions differently affected by Pou5f1- and Sox2-KO. Peaks highly reliant on both Oct4 and Sox2 showed greater OCT-SOX motif enrichment and became open in ICM, while peaks more reliant on Oct4 were already open in morula. Over 96.8% of changed peaks were putative enhancers distal to TSSs, enriched with Sox2 CUT&RUN signals and bound by Oct4, Sox2, and Nanog in ESCs.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 challenged the enhancer definition, stating 'Signals of H3K4me1, H3K27ac, and so on are usually used to define enhancers...The definition in this manuscript is not strictly an enhancer.' This suggests the characterization of these peaks as enhancers may be overstated without additional epigenetic marks.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "RNA-seq analysis showed maternal KO embryos clustered with wildtype, Pou5f1-KO had minimal effect on transcriptome in morulae but progressively profound impact from morula to late ICM (2,485 genes altered), while Sox2-KO morulae were not significantly affected but 967 genes were altered in late ICM. Pou5f1-KO had greater effects than Sox2-KO on both chromatin and transcriptome, suggesting Oct4 plays a more important role.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 raised a critical concern about the control group, noting 'there is no significant phenotypic difference between the maternal-only KO and the maternal-zygotic KO' and questioning the authors' conclusion about 'no noticeable...molecular difference.' This challenges the validity of comparing maternal-zygotic KO to maternal KO controls and the interpretation of Oct4's relative importance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C53",
+      "C54"
+    ],
+    "result": "Down- and upregulated genes in Pou5f1- and Sox2-KO ICMs showed enrichment with genes exhibiting similar changes in studies without MEKi, confirming that MEKi did not alter the molecular functions of Oct4 and Sox2 in the ICM.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "While initially questioned, the authors provided comparative analysis with published data (Li et al., 2023; Stirparo et al., 2021) showing consistent gene expression patterns. Reviewer 1 stated in revision 'The authors have addressed my concerns so I am fine with revision in principle.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "GSEA showed genes near decreased peak centers were frequently downregulated while those near increased peaks were upregulated in KO embryos. Examples include Utf1 (decreased expression and enhancer accessibility) and Fgfr2 (increased expression and intronic peak accessibility).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The correlation between chromatin accessibility and gene expression was not challenged by reviewers. The editor noted the evidence was 'solid' and Reviewer 1 found conclusions 'mostly well supported by data.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Integration of ATAC-seq and RNA-seq data identified Sap30 and Uhrf1 as previously unknown targets of Oct4 and Sox2, which are essential for somatic cell reprogramming and embryonic development.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 specifically questioned this claim, asking 'If Oct4 and Sox2 truly activate sap 30 and Uhrf 1, what effect does interfering with both genes have on gene expression and chromatin accessibility?' This suggests the evidence for these being direct targets is insufficient without functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "Many differential ATAC-seq peaks were consistently changed in both Pou5f1- and Sox2-KO late ICMs, with consistently decreased peaks enriched near genes related to pluripotency and preimplantation development, while consistently elevated peaks were near genes related to extraembryonic lineages and organogenesis. Peaks decreased only in Pou5f1-KO were enriched for LIF signaling and blastocyst formation terms.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These ontology enrichment analyses were not challenged by reviewers. The editor noted the work presents 'a valuable finding' and Reviewer 1 found the data 'mostly well supported.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "Many pluripotency genes (Klf2, Etv5, Prdm14, Pecam1) were downregulated in Pou5f1- and Sox2-KO ICM, while TE genes (Gata3, Cdx2, Eomes) were upregulated. Nanog, Esrrb, and Klf4 were significantly downregulated in Pou5f1-KO but not or only slightly in Sox2-KO ICM. Pecam1 downregulation was confirmed at protein level with decreased chromatin accessibility at its enhancers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The transcriptional changes and their validation were not challenged by reviewers. Reviewer 1 noted 'the conclusions of this paper are mostly well supported by data' and the editor found the evidence 'solid.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C74",
+      "C75"
+    ],
+    "result": "Oct4 and Sox2 activated components of epigenetic modifiers such as Ezh2 and Sap30, suggesting their potential contribution to establishing ICM-specific epigenetic status through regulation of epigenetic modifiers.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 1 questioned the functional significance, asking 'what effect does interfering with both genes have on gene expression and chromatin accessibility?' The claim of 'potential contribution' is speculative without functional validation of these downstream targets.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "OCT-SOX, OCT, and SOX motifs were most enriched in decreased peaks in KO ICMs, along with Klf2/4 and Esrrb motifs. Elevated peaks were enriched for GATA, TEAD, EOMES, and KLF motifs but not OCT-SOX/OCT/SOX motifs. The increased peaks may represent secondary effects of upregulated TE TFs rather than direct Oct4/Sox2 targets.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewer 1 asked 'What motifs are enriched in the rising ATAC-seq peaks after knocking out of OCT4 and SOX2?' The authors provided this analysis showing TE-related motifs, which was accepted in revision. The interpretation of secondary effects is reasonable given the motif patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "The top decreased peaks in Pou5f1- and Sox2-KO early ICM were most enriched with OCT-SOX but not OCT or SOX motifs alone, suggesting Oct4 and Sox2 maintain open chromatin more effectively at OCT-SOX peaks. The accessibility of 8,993 OCT-SOX peaks decreased in both KO early and late ICM, with majority shared between Pou5f1- and Sox2-KO late ICM, indicating both TFs participate in keeping these peaks open.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This motif analysis and interpretation were not challenged by reviewers. The editor noted the work shows 'how the interplay between transcription factors SOX2 and OCT4 establishes the pluripotency network' as a 'valuable finding.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Around 50% of peaks and genes showing decreased trends in KO early ICMs were activated in control ICM during natural development. A significant reorganization of chromatin occurred upon early ICM formation (21,731 peaks activated), with elevated peaks near genes involved in LIF response, stem cell maintenance, and blastocyst formation, enriched for OCT, SOX, and OCT-SOX motifs. When Oct4 and Sox2 were absent, accessibility of these peaks decreased. Similarly, 1,115 genes were upregulated in early ICMs and enriched with genes downregulated in KO early ICM.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This temporal analysis of chromatin and transcriptome dynamics was not challenged by reviewers. The editor noted the evidence was 'solid' and the work provides valuable insights into pluripotency network establishment.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "All core pluripotency TFs except Sox2 are highly expressed in morula, but their expression does not seem sufficient to induce mature pluripotency at this stage. The authors hypothesize that Sox2, in collaboration with Oct4, activates pluripotency-related genes in early ICM. GSEA revealed enriched downregulation of PluriNetWork and ESC pluripotency pathway genes in Sox2-KO early ICMs, and significant downregulation of pluripotency genes in Pou5f1-KO early ICMs. Oct4 and Sox2 activate Utf1 and Il6st through OCT-SOX motif-containing chromatin regions, with Sox2 expression functioning as a temporal regulator.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This mechanistic model of Sox2's temporal role was not challenged by reviewers. The editor noted the work presents 'a valuable finding on how the interplay between transcription factors SOX2 and OCT4 establishes the pluripotency network.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C152"
+    ],
+    "result": "Pou5f1-KO or Sox2-KO have minimal impact on global chromatin accessibility and transcription until early blastocyst stage. Oct4 is expressed at similar levels between morulae and ICMs, while Sox2 levels are negligible in morulae but significantly upregulated in ICMs. The function of Oct4 in morulae is likely limited by insufficient Sox2 levels and possibly other factors, including epigenetic constraints.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This interpretation of the temporal differences was not challenged by reviewers. The data showing minimal effects in morulae but significant effects in ICM were accepted as supporting the model of Sox2-dependent Oct4 function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C126",
+      "C127",
+      "C128",
+      "C129",
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "A large number of pluripotency-related genes were downregulated in Pou5f1-KO ICM, contrasting with previous reports suggesting most were maintained. The authors attribute this discrepancy to experimental design differences: isolation of EPI through immunosurgery and MEKi treatment (which did not alter Oct4/Sox2 targets), removal of Pou5f1 exons 2-5 (complete ablation) versus only exon 1 in previous studies (potentially retaining partial function), and use of maternal-zygotic-KO versus conventional KO embryos (residual maternal Oct4 could have rescued previous KOs).",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While the authors provided explanations for discrepancies with previous studies, Reviewer 3 raised concerns about the control group validity, questioning the authors' statement about 'no noticeable...molecular difference' between maternal KO and maternal-zygotic KO. This challenges the foundation for claiming their results differ from previous studies due to experimental design.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C145",
+      "C146",
+      "C147",
+      "C148",
+      "C149",
+      "C150"
+    ],
+    "result": "Most OCT-SOX peaks are more affected in Pou5f1-KO than Sox2-KO ICMs, indicating Oct4 plays a more important role than Sox2 in activating putative OCT-SOX enhancers in vivo. This aligns with previous studies showing forced Oct4 expression can rescue Sox2-null ESCs. Compensation from other Sox family members is unlikely, as Sox1, Sox3, and Sox18 are expressed at extremely low levels in wildtype and Sox2-KO embryos, though Sox15 compensation cannot be completely ruled out.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewer 3 recommended 'removal of phrases such as \"absolutely priority\" and \"pivotal\" throughout the manuscript, as these terms are overly assertive without sufficient supporting evidence.' This suggests the claim that Oct4 plays a 'more important role' may be overstated, particularly given concerns about the control group validity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C151"
+    ],
+    "result": "At the blastocyst stage, Oct4 and Sox2 work together to open putative OCT-SOX enhancers and activate pluripotency-related genes, with the absence of Sox2 and other factors limiting Oct4 function in morulae.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This summary conclusion integrating the temporal and mechanistic findings was accepted by reviewers. The editor noted the work presents 'a valuable finding on how the interplay between transcription factors SOX2 and OCT4 establishes the pluripotency network.'",
+    "result_type": "MAJOR"
+  }
+]

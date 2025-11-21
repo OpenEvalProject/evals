@@ -1,0 +1,471 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C17",
+      "C113"
+    ],
+    "result": "The study establishes i* = 3 as the threshold for identifying cancer-driving nucleotides (CDNs) in TCGA databases with n = 500-1000 patients, based on theoretical modeling from a companion study showing that the probability of i recurrent hits decreases exponentially with i.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C17, and C113 collectively establish the statistical framework for CDN identification. The threshold i* = 3 is mathematically derived in the companion study and appropriately applied to TCGA data with sample sizes of 500-1000 patients. The exponential decrease in recurrence probability provides a sound theoretical basis for the cutoff.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C3",
+      "C20",
+      "C71",
+      "C109"
+    ],
+    "result": "Each cancer type in TCGA has yielded 50-150 identifiable CDNs (average ~76 strong CDNs with i\u22653), representing the currently discoverable cancer-driving mutations at present sample sizes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C20, C71, and C109 are directly supported by the data presented in Table 1, which shows CDN counts ranging from 50-178 across 12 cancer types with an average of 82.1 (close to the stated ~76). This is a core empirical finding of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C4",
+      "C21",
+      "C72",
+      "C108",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "The study estimates that approximately 10 times more CDNs remain undiscovered, with hundreds to low thousands of A1 and A2 mutations likely being CDNs that cannot be detected at current sample sizes (representing <10% detection rate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C4, C21, C72, C108, C116, C117, and C118 involve substantial extrapolation and speculation. While Table 2 shows excess A1 and A2 mutations suggesting undiscovered CDNs, the specific estimate of \"10 times more\" and \"<10% detection\" lacks rigorous statistical justification. The calculation uncertainty noted in C110 (1% error = 566 CDNs) further undermines confidence in these estimates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C5",
+      "C34",
+      "C35"
+    ],
+    "result": "CDNs tend to code for amino acids with divergent chemical properties (high \u0394Ui values), with highly recurrent CDNs showing enrichment for \u0394Ui > 0.8 and depletion for \u0394Ui < 0.4, indicating that CDNs alter amino acids in ways that expose changes to strong selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C34, and C35 are well-supported by Figure 2, which clearly shows the trend of increasing proportion of high \u0394Ui (>0.8) mutations and decreasing proportion of low \u0394Ui (<0.4) mutations as recurrence increases across six cancer types. This provides strong evidence for the selective signature of CDNs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C6",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Type II genes (CDN-harboring genes that do not meet conventional Ka/Ks > 1 criteria) outnumber type I genes (conventional cancer drivers) by 5:1 (229:45), with over 80% having only 1-2 CDN sites, representing a new class of cancer drivers missed by whole-gene analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C25, C26, C27, C28, and C29 are directly supported by Table 3 data showing the 5:1 ratio and the distribution of CDN sites per gene. The identification of type II genes as a distinct class is a logical inference from the data, though functional validation would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C23",
+      "C24"
+    ],
+    "result": "Type I genes (with Ka/Ks significantly > 1) overlap 95.7% with canonical cancer driver gene lists and include well-known drivers like TP53, PIK3CA, and EGFR.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C24 are supported by Table 3 comparison data and represent established knowledge. The high overlap validates the CDN approach's ability to identify known drivers while also discovering new ones.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "FGFR3 gene in lung cancer exemplifies type II genes, having only 8 total hits with one CDN (i=3) among 809 codons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 provides a specific example supporting the type II gene concept. The data point is verifiable and illustrates how genes with few CDNs can be identified by the nucleotide-level approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C36",
+      "C37"
+    ],
+    "result": "TP53 and PIK3CA are the only genes mutated in >15% of all cancer patients surveyed, and the prevalence of mutations in a gene is a function of the number of strong CDNs it harbors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C36 and C37 are supported by cited literature (Kandoth et al., 2013) and Figure 3A showing these genes have the highest CDN counts. The correlation between CDN number and prevalence is a reasonable inference from the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C41",
+      "C58"
+    ],
+    "result": "Canonical CDGs with many CDNs typically contribute only one CDN to tumorigenesis in each patient (observed vs. expected distribution in Figure 3B), suggesting redundancy among CDNs on the same gene, making genes with 1-2 CDN sites disproportionately important.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38, C39, C41, and C58 are supported by Figure 3B showing fewer patients with multiple CDNs on TP53 than expected. This redundancy pattern is an important finding, though the mechanism remains speculative. The inference about importance of low-CDN genes (C41) is logical but would benefit from functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C42",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C93",
+      "C94"
+    ],
+    "result": "CDNs show pan-cancer properties, with many observed in multiple cancer types (NC12 > 3) even when not meeting statistical thresholds in all types. Of 22 sites with imax > 20, 15 are CDNs in multiple cancer types (median NC12 = 9), suggesting most drivers have pan-cancer potential visible at nucleotide but not gene-level resolution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C42, C44, C45, C46, C47, C48, C93, and C94 are well-supported by Figure 4 data showing the bimodal distribution and correlation between imax and NC12 (r=0.97, p<0.001). The interpretation that this represents pan-cancer driving capacity is reasonable, though tissue-specific functional validation would strengthen the conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C121",
+      "C122",
+      "C123"
+    ],
+    "result": "IDH1 mutations at C394 and G395 exemplify pan-cancer CDNs, showing i \u226b 3 in CNS but i < 3 (yet > 0) in six other cancer types, which is statistically unlikely if not tumorigenic across tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121, C122, and C123 provide a specific example supporting the pan-cancer hypothesis. The statistical reasoning in C123 is sound\u2014observing the same mutation across multiple cancer types conditional on one high-recurrence type is unlikely under tissue-specificity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C9",
+      "C10",
+      "C22",
+      "C69"
+    ],
+    "result": "Among 50-100 coding mutations per cancer patient, 5-8 CDNs are expected but only 0-2 have been identified at present (shown in Table 4 for most cancer types).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C9, C10, C22, and C69 present a major discrepancy between expected (5-8) and observed (0-2) CDNs per patient. While the observed counts are supported by Table 4 data, the expected value of 5-8 lacks clear derivation. This appears based on the prior estimate of >5 drivers per patient (C14) but the connection is not rigorously established.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C11",
+      "C75",
+      "C76",
+      "C77",
+      "C78"
+    ],
+    "result": "The low level of CDN identification has hampered functional testing and gene-targeted therapy, as many CDNs fall on non-conventional genes while conventional genes may harbor non-CDN passenger mutations. CDNs are suitable candidates for functional testing given their strong tumorigenic strength.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11, C75, C76, C77, and C78 represent logical inferences from the incomplete CDN identification and distribution data. The assertion that incomplete identification hampers therapy is reasonable, and Table 3 supports that many CDNs are on non-conventional genes. However, these remain largely hypothetical until functional validation is performed.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C56"
+    ],
+    "result": "Patients with EGFR CDN mutations (group 1) show significantly higher survival rates with targeted therapy compared to patients with non-CDN EGFR mutations (group 2) or wild-type EGFR (p<0.001), supporting that non-CDN mutations, even on canonical genes, are not cancer drivers.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49, C50, C51, C52, and C56 are supported by Figure 5 survival analysis showing statistically significant differences (p<0.001). This is strong evidence that CDN status predicts therapeutic response. However, the analysis would benefit from more details on patient stratification, treatment regimens, and potential confounders.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "In most cancer types, 10-30% of patients have no known CDNs (>50% in breast cancer), suggesting 33% of lung cancer patients and 27.7% who receive targeted treatment may not respond well based on current CDN identification.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C53, C54, C55, and C57 are directly supported by Table 4 data. The inference about treatment response (C55, C57) is logical given the survival data in Figure 5, though it assumes current CDN lists are complete for therapeutic decision-making, which contradicts the study's main thesis about incomplete discovery.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Targeting high-prevalence genes may not yield more benefits than targeting low-prevalence genes with CDNs, as prevalence and potency may not be strongly correlated\u2014a low-prevalence CDN (i=3) may be as effective as a high-prevalence CDN (i=20) in treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C59, C60, C61, and C62 present an important hypothesis about prevalence vs. potency but lack direct empirical support. The reasoning is based on the redundancy pattern (Figure 3B) and hallmark model (Table 5), but no data directly test whether low-prevalence CDNs are equally potent therapeutically. This requires functional validation or clinical trial data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "Based on cancer hallmark gene numbers (Table 5), the possible mutation combinations driving breast cancer exceed 1 billion (1.7\u00d710^11), making it unlikely two breast cancers have the same CDG/CDN set. Gene prevalence should be inversely proportional to hallmark gene number, while potency depends on the hallmark phenotype itself.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C63, C64, C65, and C66 involve substantial speculation based on combinatorial calculations from Table 5. While the mathematical calculation is correct, it assumes each hallmark requires exactly one mutation and that all genes within a hallmark are equally likely, which are oversimplifications. The model provides a framework but lacks empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C12",
+      "C67",
+      "C68",
+      "C120"
+    ],
+    "result": "By expanding sample size to 10^5, mutations need only recur 12 times to be identified as CDNs (25\u00d7 more sensitive than 3/1000), enabling identification of most undiscovered CDNs in the A1 and A2 classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C12, C67, C68, and C120 are based on theoretical calculations from the companion study. The mathematical framework appears sound, and the sensitivity improvement calculation is straightforward. However, this remains a prediction requiring validation with actual larger datasets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C14",
+      "C70"
+    ],
+    "result": "The number of driver mutations per patient has been estimated at >5 (or 6-10) in published literature, contrasting with the 1-2 CDNs currently identified per patient in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14 and C70 accurately cite established literature estimates. This discrepancy between expected drivers and observed CDNs is central to the study's motivation, though reconciling these numbers requires the assumption that most drivers are currently undetected CDNs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C73",
+      "C79",
+      "C81",
+      "C82"
+    ],
+    "result": "A complete CDN set would enable delineation of tumor evolution paths for individual patients, identification of many more driver genes, and multiple targetable genes per patient to diminish resistance mutation probability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C73, C79, C81, and C82 represent aspirational goals based on complete CDN identification. While logically sound, these remain speculative until a complete CDN set is actually obtained and tested. The therapeutic benefits are plausible but unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Oncogenes drive tumorigenesis through gain-of-function (GOF) mutations while tumor suppressor genes use loss-of-function (LOF) mutations. LOF mutations are widespread on TSGs and less likely to recur as CDNs (evidenced by even nonsense mutation distributions). GOF mutations are targetable while LOF mutations are not, suggesting ONCs are targetable but TSGs are not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83, C84, C85, C86, C87, and C88 represent established cancer biology knowledge. The inference that LOF mutations are less likely to be CDNs (C85) is logical and supported by observed nonsense mutation distributions (C86). This provides important context for interpreting CDN distributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "Missense mutations on TSGs may often be gain-of-function rather than loss-of-function, as evidenced by cases where missense mutations are >10\u00d7 more prevalent than nonsense mutations (which cannot lose more function).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89, C90, C91, and C92 present a logical argument supported by escape-route analysis from a separate study. The reasoning is sound\u2014if missense mutations are far more prevalent than nonsense, they cannot be LOF. However, this relies on cited data rather than analysis presented in this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "The CDN approach can be applied to non-coding regions, though current whole-genome sequence numbers are insufficient for systematic detection. Preliminary analysis suggests CDN density in non-coding regions is orders of magnitude lower than in coding regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C95, C96, and C97 discuss potential applications to non-coding regions. While C96 correctly assesses data limitations, C97's claim about orders of magnitude lower density is based on preliminary analysis without presented data. This requires more rigorous analysis to support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C98",
+      "C100"
+    ],
+    "result": "CDNs can be used in cancer screening with advantages of efficiency (fewer targeted mutations) and lower false-positive rates compared to gene-based screening (which shows >50% false-positive rate).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C98 and C100 propose CDN-based screening applications. While the logic is sound, the comparison to gene-based screening's >50% false-positive rate (C100) is referenced to an appendix without sufficient detail in the main text. This application requires validation studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C13",
+      "C15",
+      "C16"
+    ],
+    "result": "Each driving mutation is present in only a small fraction of patients, but advantageous cancer-driving mutations should recur frequently in massively repeated cancer evolution, while nonrecurrent mutations are not advantageous.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C15, and C16 establish the fundamental premise of the study. C13 is an observed pattern in cancer genomics, while C15 and C16 represent the core evolutionary logic underlying the CDN approach. This premise is reasonable and forms the theoretical foundation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "At present sample sizes, a CDN has 0.3% prevalence (3/1000 patients), but at n=10^6, detection threshold drops to 5\u00d710^-5 prevalence (the theoretical limit).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18 and C19 are straightforward calculations from the i*=3 threshold and theoretical modeling. The math is correct and provides important context for understanding current detection limits and future potential.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C74",
+      "C80"
+    ],
+    "result": "Functional testing of multiple cancer-driving mutations has only recently been done for best-known mutations, and many driver genes cannot be targeted for biological or technical reasons.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C74 and C80 accurately cite published literature about current limitations in functional testing and targeted therapy. These establish the practical context and motivation for comprehensive CDN identification.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "Cancer evolution represents ultra-microevolution with massively repeated evolution, addressing the criticism that evolutionary events have sample size of one, offering opportunity to uncover complete mutation lists underlying complex traits like speciation and viral strain emergence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101, C102, C103, and C104 provide conceptual framing connecting cancer evolution to broader evolutionary biology. The arguments are well-reasoned and appropriately cited, establishing cancer as a model system for studying complex trait evolution.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "The relationships A3/S3 > A2/S2 > A1/S1 > A0/S0 are observed in 32/36 cases (Table 1), and 35/36 Obs(Ai) > Exp(Ai) relationships are observed (Table 2), though A/S ratios may underestimate selective advantages as S1-3 may have slight advantages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105, C106, and C107 accurately describe the data in Tables 1 and 2. The high frequency of expected relationships (32/36 and 35/36) provides strong evidence for positive selection on recurrent mutations. The caveat about potential underestimation (C106) is appropriately noted.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R30",
+    "claim_ids": [
+      "C115"
+    ],
+    "result": "The threshold i* = 4 may be considered unnecessarily stringent given that E[A(i\u22654)] \u226a 1 (approximately 0.001).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C115 is a reasonable interpretation of the expected value calculations. Using i*=3 instead of i*=4 is justified by the extremely low expected false positive rate at i=4, though this is a judgment call about acceptable stringency.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R31",
+    "claim_ids": [
+      "C110"
+    ],
+    "result": "A 1% error in A1 calculation would mean 566 CDNs, making A1 excesses less reliable than higher recurrence classes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C110 appropriately acknowledges uncertainty in the A1 excess calculations. This is an important caveat given the large number of A1 mutations (56,648 average) and the sensitivity of excess calculations to small percentage errors.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R32",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127",
+      "C128"
+    ],
+    "result": "The study analyzed SNV data from TCGA (GDC Data Portal, Feb 2022), requiring mutations identified by \u22652 pipelines, excluding mutations >1\u2030 frequency in gnomAD and patients with >3000 mutations, yielding 7369 patients across 12 cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C124-C128 describe the data processing pipeline. The filtering criteria are reasonable and well-justified (removing germline variants and hypermutators). The final dataset size and composition are clearly stated and appropriate for the analyses performed.",
+    "result_type": "MINOR"
+  }
+]

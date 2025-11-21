@@ -1,0 +1,325 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C38",
+      "C40",
+      "C41",
+      "C42",
+      "C50",
+      "C51"
+    ],
+    "result": "ATG5 physically associates with retromer core components VPS26, VPS29, and VPS35. This interaction was detected by proximity biotinylation LC-MS/MS and confirmed by co-immunoprecipitation experiments with both endogenous and overexpressed proteins. The association is enhanced upon lysosomal damage induced by LLOMe treatment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent methods (proximity biotinylation MS, endogenous co-IP, and overexpressed protein co-IP) consistently demonstrate physical association between ATG5 and retromer components (C3, C38, C40, C41, C50, C51). The data show both basal interaction and enhanced association upon lysosomal damage (C41, C42). Control experiments with APEX2-SGALS1 showed no enrichment of retromer subunits (C39), supporting specificity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49"
+    ],
+    "result": "VPS35 knockout cells exhibit a lysosomal hypersensitivity phenotype (LyHYP) similar to ATG5 knockout cells, characterized by increased Gal3 and ubiquitin responses to lysosomal damage. However, unlike ATG5 KO, VPS35 KO cells retain efficient ALIX recruitment to damaged lysosomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "HCM data demonstrate that VPS35 KO cells show elevated Gal3 puncta (C43) and ubiquitin response (C46) comparable to ATG5 KO, defining LyHYP (C47). Complementation with GFP-VPS35 partially rescues the phenotype (C44). The differential ALIX recruitment (C48, C49) is well-documented and mechanistically explained by ATG12-ATG3 conjugate formation specific to ATG5 absence. Controls show no increase in total lysosome numbers (C45).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57"
+    ],
+    "result": "ATG5 knockout blocks GLUT1 trafficking to the plasma membrane, causing redistribution to intracellular punctate profiles that colocalize with lysosomes. This phenotype is identical to VPS35 knockout and is accompanied by mislocalization of the retromer adaptor SNX27.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple complementary approaches demonstrate GLUT1 missorting in ATG5 KO: HCM quantification shows increased intracellular GLUT1 puncta (C52) identical to VPS35 KO (C53), colocalization with LAMP2 (C54), co-redistribution with SNX27 (C55), and biochemical enrichment in lysosomal preparations by LysoIP (C56). The data are consistent across Huh7 and HeLa cell lines with appropriate controls.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "The entire membrane atg8ylation machinery is required for proper retromer-dependent GLUT1 sorting. Knockouts of ATG3, ATG7, ATG16L1, and all principal mATG8s (hexa-KO) cause GLUT1 entrapment in lysosomes, while retromer component levels remain unchanged.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Systematic knockout analysis of atg8ylation components (ATG3, ATG5, ATG7, ATG16L1) shows consistent GLUT1 missorting phenotypes (C58). Hexa-KO cells lacking all principal mATG8s also show increased lysosomal GLUT1 (C61, C62). Importantly, retromer protein levels are unchanged in these mutants (C59), indicating the effect is not due to retromer degradation. The consistency across multiple independent knockouts strongly supports the conclusion (C60).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "The contribution of membrane atg8ylation to retromer function in GLUT1 sorting is independent of canonical autophagy. Knockouts of autophagy initiation genes ATG13 and FIP200 do not affect GLUT1 sorting, but ATG5 knockdown in FIP200 KO cells restores the GLUT1 missorting phenotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The genetic dissection is rigorous: ATG13 and FIP200 KO cells (canonical autophagy-deficient) show normal GLUT1 localization (C63, C64), while atg8ylation mutants show missorting. The epistasis experiment where ATG5 knockdown in FIP200 KO background restores GLUT1 missorting (C65) definitively demonstrates independence from canonical autophagy. This is a well-controlled experiment addressing a key mechanistic question (C66, C67).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73"
+    ],
+    "result": "ATG5 and the atg8ylation machinery, but not canonical autophagy, are required for proper Rab7 localization. Knockouts of atg8ylation genes cause Rab7 mislocalization to lysosomes, while ATG13 and FIP200 knockouts do not affect Rab7 distribution.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "HCM analysis shows increased Rab7 cytoplasmic profiles and lysosomal colocalization in all atg8ylation mutants (C70), confirmed biochemically by LysoIP (C71). Canonical autophagy mutants (ATG13, FIP200 KO) show normal Rab7 distribution (C72), paralleling the GLUT1 results. The data consistently support that atg8ylation, not autophagy, regulates Rab7 localization (C73).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "GLUT1 missorting induced by lysosomal perturbation agents (LLOMe, monensin, bafilomycin A1) is due to disrupted endolysosomal pH rather than CASM induction. ATG16L1 complementation experiments show that general membrane atg8ylation, not specifically CASM/VAIL, is required for proper GLUT1 sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lysosomal perturbation agents cause GLUT1 missorting (C75), but bafilomycin A1 (which disrupts pH but doesn't induce CASM) also causes missorting (C78, C79). TBC1D5-LC3A interactions remain unchanged under CASM conditions (C76), and constitutively active Rab7 causes GLUT1 accumulation (C77). Critically, both ATG16L1-FL and ATG16L1-E230 (CASM-deficient) complement the sorting defect (C80), demonstrating that general atg8ylation, not CASM specifically, is required (C81).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Knockouts of genes involved in lysosomal membrane homeostasis (ATG2A/B and VPS37A) cause aberrant GLUT1 trafficking similar to atg8ylation mutants. This supports the model that membrane atg8ylation maintains endolysosomal homeostasis, which is required for proper retromer-dependent sorting.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATG2A/B double KO and VPS37A KO cells both show GLUT1 accumulation in cytoplasmic puncta and increased lysosomal colocalization (C82, C83), phenocopying atg8ylation mutants. These genes are known downstream effectors of membrane atg8ylation in lysosomal repair. The data support the mechanistic model that atg8ylation maintains endolysosomal homeostasis necessary for retromer function (C84), though the pathway is indirect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "ATG5 has stronger effects on retromer function than other atg8ylation genes, which cannot be explained by differential effects on canonical autophagy. ATG5 absence reduces VPS26 and VPS35 co-immunoprecipitation with VPS29, suggesting ATG5 has additional effects on retromer complex stability or assembly beyond its role in atg8ylation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "ATG3, ATG5, and ATG7 KO have equivalent effects on LC3 puncta formation during starvation-induced autophagy (C86), ruling out differential knockout efficiency. Yet ATG5 KO consistently shows stronger effects on GLUT1 sorting. Co-IP experiments show reduced VPS26-VPS29 and VPS35-VPS29 interactions in ATG5 KO cells (C88), suggesting ATG5 affects retromer complex integrity. This supports a dual role for ATG5 (C87, C89).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C85"
+    ],
+    "result": "ATG5 and VPS35 knockout cause minor but statistically significant reductions in CI-MPR trafficking to the TGN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "HCM quantification shows statistically significant reduction in CI-MPR overlap with TGN46 in both ATG5 KO and VPS35 KO cells (C85). However, the authors appropriately note this is a minor effect and interpret it as likely indirect via endolysosomal homeostasis rather than direct retromer-mediated sorting, given the controversy about whether CI-MPR is a retromer cargo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Atg5 inactivation in myeloid lineage renders mice excessively susceptible to acute M. tuberculosis infection but this phenotype does not extend to latent tuberculosis models.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The claim about acute infection susceptibility is supported by multiple prior citations (C35). The new data from Cornell latency model experiments show no significant difference between Atg5fl/fl Lyz2Cre mice and controls in spontaneous reactivation or dexamethasone-induced reactivation (C36, Figure 1-supplement 1C-D), demonstrating phase-specific effects of Atg5.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C112"
+    ],
+    "result": "Interactions between ATG5 and retromer are independent of ATG5 conjugation status, as both ATG12-ATG5 conjugates and unconjugated ATG5 are found in retromer immunoprecipitates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP experiments using different antibodies that recognize either preferentially conjugated ATG5 or both forms show that both ATG12-ATG5 and unconjugated ATG5 co-immunoprecipitate with retromer components (C112, Figure 3A-B). This is an important mechanistic detail about the nature of the ATG5-retromer interaction.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34"
+    ],
+    "result": "Background claims establishing the known functions of ATG5, canonical and noncanonical autophagy, membrane atg8ylation machinery, and retromer complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are well-established facts from the literature, appropriately cited throughout the introduction. They provide necessary context but are not novel findings of this study. The claims accurately represent current knowledge in the field.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Background claims about Rab7 as a retromer interactor, its effects on retromer function, and the properties of Rab7 GAPs including their LIR motifs and mATG8 binding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are established facts from prior literature, appropriately cited in the discussion. They provide mechanistic context for interpreting the Rab7 mislocalization results but are not novel findings. The claims accurately represent published work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Discussion of prior work on VPS35 effects on lysosomal function and the controversy over CI-MPR sorting by retromer versus ESCPE-I complex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These claims accurately summarize prior literature and ongoing controversies in the field (C97, C98). The authors' interpretation that their CI-MPR data likely reflect indirect effects via endolysosomal homeostasis (C99) is reasonable given the minor magnitude of effects and the controversial nature of CI-MPR as a retromer cargo.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C106",
+      "C107",
+      "C108",
+      "C109"
+    ],
+    "result": "Under the basal and lysosomal damage conditions tested, TBC1D5-mATG8 interactions are unchanged, and constitutively active Rab7 causes GLUT1 retention. This differs from glucose starvation conditions where TBC1D5 sequestration by mATG8s affects GLUT1 localization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Co-IP experiments show no changes in TBC1D5-LC3A interactions under CASM-inducing conditions (C106), and overexpression of constitutively active Rab7 causes lysosomal GLUT1 retention (C107). This is appropriately interpreted as indicating different mechanisms operate under nutrient stress versus basal/lysosomal damage conditions, with supporting citations (C108, C109).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96",
+      "C110",
+      "C111",
+      "C113",
+      "C121"
+    ],
+    "result": "Summary and interpretation claims in the discussion synthesizing the major findings: ATG5 interacts with retromer, membrane atg8ylation affects retromer function through dual mechanisms (endolysosomal homeostasis and direct ATG5-retromer association), and the two systems are intertwined.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are appropriate summary statements in the discussion that accurately synthesize the experimental findings presented in the results section. The dual mechanism model (C92, C93, C94) is well-supported by the data showing both general atg8ylation effects and ATG5-specific effects. The interpretation is logical and consistent with the evidence.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C115",
+      "C116",
+      "C117",
+      "C119",
+      "C120"
+    ],
+    "result": "Speculative claims about potential broader implications: pleiotropic effects of atg8ylation gene knockouts, possible contributions to M. tuberculosis pathogenesis, roles in health and disease, and limitations regarding direct effects on retromer.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are explicitly speculative statements (C115, C116, C117, C119) or acknowledged limitations (C120) in the discussion. They represent reasonable hypotheses based on the findings but lack direct experimental support in this study. The speculation is appropriately qualified and identifies areas for future investigation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C118"
+    ],
+    "result": "In tuberculosis, diabetes (which includes glucose uptake dysregulation) is associated with increased incidence of active disease and adverse outcomes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This is an established clinical association from prior literature, appropriately cited (C118). It provides relevant context for discussing potential implications of GLUT1 missorting in tuberculosis pathogenesis but is not a novel finding of this study.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,1948 @@
+{
+  "submission": {
+    "id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T22:47:10.110522Z",
+    "updated_at": "2025-11-21T22:47:10.110522Z"
+  },
+  "content": [
+    {
+      "id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "content_type": "manuscript",
+      "content_text": "# Peptidoglycan-tethered and free forms of the Braun lipoprotein are in dynamic equilibrium in Escherichia coli\n\n## Authors\n\n- Yucheng Liang<sup>1</sup> ([ORCID: 0009-0008-5939-2842](https://orcid.org/0009-0008-5939-2842))\n- Jean-Emmanuel Hugonnet<sup>1</sup> ([ORCID: 0000-0003-4150-0944](https://orcid.org/0000-0003-4150-0944))\n- Filippo Rusconi<sup>1</sup> ([ORCID: 0000-0003-1822-0397](https://orcid.org/0000-0003-1822-0397)) \u2020\n- Michel Arthur<sup>1</sup> ([ORCID: 0000-0003-1007-636X](https://orcid.org/0000-0003-1007-636X)) \u2020\n\n### Affiliations\n\n1. Centre de Recherche des Cordeliers, Sorbonne Universit\u00e9, INSERM, Universit\u00e9 de Paris Paris France ([ROR:00dmms154](https://ror.org/00dmms154))\n2. GQE-Le Moulon/PA, Universit\u00e9 Paris-Saclay, INRAE, CNRS, AgroParisTech, IDEEV Gif-sur-Yvette France ([ROR:003vg9w96](https://ror.org/003vg9w96))\n\n\u2020 Corresponding author\n\n## Abstract\n\nPeptidoglycan (PG) is a giant macromolecule that completely surrounds bacterial cells and prevents lysis in hypo-osmotic environments. This net-like macromolecule is made of glycan strands linked to each other by two types of transpeptidases that form either 4\u21923 (PBPs) or 3\u21923 (LDTs) cross-links. Previously, we devised a heavy isotope-based PG full labeling method coupled to mass spectrometry to determine the mode of insertion of new subunits into the expanding PG network (Atze et al., 2022). We showed that PG polymerization operates according to different modes for the formation of the septum and of the lateral cell walls, as well as for bacterial growth in the presence or absence of \u03b2-lactams in engineered strains that can exclusively rely on LDTs for PG cross-linking when drugs are present. Here, we apply our method to the resolution of the kinetics of the reactions leading to the covalent tethering of the Braun lipoprotein (Lpp) to PG and the subsequent hydrolysis of that same covalent link. We find that Lpp and disaccharide-peptide subunits are independently incorporated into the expanding lateral cell walls. Newly synthesized septum PG appears to contain small amounts of tethered Lpp. LDTs did mediate intense shuffling of Lpp between PG stems leading to a dynamic equilibrium between the PG-tethered and free forms of Lpp.\n\n## Introduction\n\nThe PG is an essential component of the bacterial cell envelope that counteracts the turgor pressure of the cytoplasm thereby preventing the cell from bursting and lysing in hypoosmotic environments (Figure 1A; Rojas et al., 2018). Structural studies of the PG (Figure 1B) revealed that this giant macromolecule consists of glycan strands linked to each other by transpeptidases belonging to the PBP and LDT families, which form 4\u21923 and 3\u21923 cross-links, respectively (Glauner et al., 1988). PBPs and LDTs contain different catalytic nucleophiles (Ser versus Cys) and use different stem peptides as the acyl donor substrate (pentapeptide versus tetrapeptide) (Figure 1C; Mainardi et al., 2005). LDTs forming 3\u21923 cross-links are unessential enzymes (Magnet et al., 2008), which can participate in PG maintenance (Mor\u00e8 et al., 2019) and in \u03b2-lactam resistance acquired in vitro (Voedts et al., 2022). The LDT family includes additional enzymes (Figure 1C) that catalyze either the tethering of Lpp to PG (ErfK, Ybis, and YcfS) (Magnet et al., 2008) or the hydrolysis of the resulting covalent link (YafK) (Bahadur et al., 2021; Winkle et al., 2021). Lpp is the most abundant lipoprotein (106 copies per cell), about one-third of which is attached to PG. This dense connection between the PG and the outer membrane (OM) is thought to stabilize the bacterial envelope because mutants deficient in the tethering of Lpp to PG are viable but display increased vesiculation and lethal susceptibility to EDTA (Sanders and Pavelka, 2013). In addition, Lpp controls the distance between the inner (IM) and outer membranes, a structural feature that is critical for sensing stresses that affect the bacterial envelope (Asmar et al., 2017; Matheli\u00e9-Guinlet et al., 2020).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/91598/elife-91598-fig1-v1.jpg)\n\n**Figure 1.:** (A) Structure of the main polymers of the envelope. The envelope of gram-negative bacteria contains two membranes. The inner membrane (IM) is made of phospholipids. The outer membrane (OM) is asymmetric, with phospholipids in the inner leaflet and lipopolysaccharides (LPS) in the outer leaflet. The peptidoglycan (PG) is located in the periplasmic space delimited by the IM and the OM. The PG consists of glycan chains linked to each other by short peptides. The glycan chains consist of alternating \u03b21\u21924-linked N-acetyl-glucosamine (GlcNAc) and N-acetyl muramic acid (MurNAc) residues. The sequence of the stem peptide linked to the D-lactoyl group of MurNAc, as assembled in the cytoplasm, is L-Ala1-D-iGlu2-DAP3-D-Ala4-D-Ala5, in which DAP is a diaminopimelyl residue. Polymerization of this disaccharide-pentapeptide subunit by glycosyltransferases results in linear glycan strands that are inserted into the expanding PG network by the combined actions of space-making hydrolases and transpeptidases. The majority of the cross-links connecting D-Ala4 of a donor stem peptide to DAP3 of an acceptor stem peptide (4\u21923 cross-links) are made by D,D-transpeptidases belonging to the penicillin-binding protein (PBP) family that are the essential targets of \u03b2-lactam antibiotics. L,D-transpeptidases (LDTs) catalyze the formation of 3\u21923 cross-links connecting two DAP residues (see panel C). The Braun lipoprotein (Lpp) provides a link between the OM and the PG since its C-terminus is covalently bound to DAP residues (panel C), whereas its N-terminal Cys residue carries three alkyl chains, one of which is carried by the amino group of the C-terminal Cys residue and the other two by a glycerol moiety linked to the sulfhydryl of that residue by a thioether bond. These alkyl chains are inserted into the inner leaflet of the OM (PG-tethered form of Lpp) or into the outer leaflet of that membrane (free form of Lpp facing the bacterial cell surface). (B) Determination of peptidoglycan structure. The sacculi are extracted by the hot SDS procedure, treated with pronase and trypsin (red double arrows), and digested by muramidases that cleave the MurNAc-GlcNAc bonds (black double arrows). The structure of the resulting fragments (enclosed in rounded polygons) is determined by mass spectrometry following the reduction of N\u2011acetyl muramic acid (MurNAc) residues and separation by rpHPLC. Please note that we used the standard nomenclature for transpeptidation products in which the acyl donor and the acyl acceptor appear left and right, respectively, separated by an arrow to indicate the CO-to-NH polarity of the amide bond. (C) Reactions catalyzed by L,D-transpeptidases. In E. coli, the LDT protein family includes six paralogues that catalyze (i) the formation of 3\u21923 cross-links (YcbB and YnhG), (ii) the covalent anchoring of Lpp to PG (Ybis, YcfS, and ErfK), and (iii) the hydrolysis of the resulting PG\u2192Lpp bond (YafK). Formation of the 3\u21923 and PG\u2192Lpp bonds involves a common catalytic intermediate resulting from the nucleophilic attack of the DAP3-D-Ala4 bond of an acyl-donor tetrapeptide stem by the active Cys residue of the LDTs, the release of D-Ala4, and the formation of a D-Ala4-Cys thioester bond. For the formation of a 3\u21923 cross-link, the side-chain amino group of DAP at the third position of an acyl acceptor stem reacts with the acyl-enzyme. For the formation of a PG\u2192Lpp bond, the side-chain of the C-terminal Lys residue of Lpp (at position 58) reacts with the acyl-enzyme.\n\nThe enzymatic activity of YafK was established by incubating PG with purified YafK and detecting the products of the hydrolysis of the PG\u2192Lpp bonds (Bahadur et al., 2021; Winkle et al., 2021). Intriguingly, the deletion of yafK was not associated with any decrease in the overall Lpp-to-PG tethering in the absence of stress (Bahadur et al., 2021). The absence of phenotype associated with the deletion of yafK implies, in the wild-type strain, either that the enzyme was not produced (or active) or that hydrolysis of PG\u2192Lpp bonds by YafK is compensated by the formation of the same number of PG\u2192Lpp bonds by LDTs. Here, we used a PG labeling method (Atze et al., 2022) to distinguish between these two possibilities and determine the mode of cross-linking of newly synthesized Lpp to PG.\n\n## Results and discussion\n\n### Time-resolved characterization of the isotopic composition of the Tri\u2192KR muropeptide by mass spectrometry\n\nTo investigate the mode of tethering of Lpp to PG, bacteria were grown in a minimal medium containing [13C]glucose and [15N]ammonium chloride, thus affording fully labeled PG. At the late log phase, bacteria were transferred to a light isotope medium and the PG macromolecule was extracted from culture samples collected at various times after the medium switch. Digestion of PG with proteinases and muramidases released soluble disaccharide-peptide fragments (muropeptides) and eliminated the bulk of Lpp except for its C-terminal Arg-Lys dipeptide that remained bound to tripeptide stems (muropeptide Tri\u2192KR in Figure 1B). The isotopic composition of the Tri\u2192KR isotopologues was determined by mass spectrometry (Figure 2) and tandem mass spectrometry (Table 1). This analysis revealed that tethering of Lpp to PG did generate Tri\u2192KR isotopologues containing light and heavy moieties at both the donor (tripeptide) and acceptor (Lpp) positions.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/91598/elife-91598-fig2-v1.jpg)\n\n**Figure 2.:** Light and heavy residues are indicated in purple and in red, respectively. Mcal, calculated monoisotopic mass (see Atze et al., 2022) for the detailed description of the method used to determine Mcal values.\n\n**Table 1.**\n MS\u2013MS analysis of the four isotopologues of the Tri\u27f6KR muropeptide.\n\n\n<table>\n  <tbody>\n    <tr>\n      <td rowspan=\"3\">Deduced structure of fragments</td>\n      <td colspan=\"8\">Mass of ions generated by fragmentation of indicated isotopologues*</td>\n    </tr>\n    <tr>\n      <td colspan=\"2\">Tri\u27f6KR</td>\n      <td colspan=\"2\">Tri\u27f6KR</td>\n      <td colspan=\"2\">Tri\u27f6KR</td>\n      <td colspan=\"2\">Tri\u27f6KR</td>\n    </tr>\n    <tr>\n      <td>Mcal</td>\n      <td>Mobs</td>\n      <td>Mcal</td>\n      <td>Mobs</td>\n      <td>Mcal</td>\n      <td>Mobs</td>\n      <td>Mcal</td>\n      <td>Mobs</td>\n    </tr>\n    <tr>\n      <td>GlcNAc-MurNAcR-\u029f-Ala-D-iGlu-DAP\u27f6\u029f-Lys-\u029f-Arg\u2020</td>\n      <td>1,154.57</td>\n      <td>1,154.56</td>\n      <td>1,172.59</td>\n      <td>1,172.58</td>\n      <td>1,194.66</td>\n      <td>1,194.65</td>\n      <td>1,212.69</td>\n      <td>1,212.68</td>\n    </tr>\n    <tr>\n      <td>MurNAcR-\u029f-Ala-D-iGlu-DAP\u27f6\u029f-Lys-\u029f-Arg</td>\n      <td>951.49</td>\n      <td>951.49</td>\n      <td>969.51</td>\n      <td>969.52</td>\n      <td>982.56</td>\n      <td>982.56</td>\n      <td>1,000.58</td>\n      <td>1,000.58</td>\n    </tr>\n    <tr>\n      <td>\u029f-Ala-D-iGlu-DAP\u27f6\u029f-Lys-\u029f-Arg</td>\n      <td>674.37</td>\n      <td>674.38</td>\n      <td>692.39</td>\n      <td>692.39</td>\n      <td>693.41</td>\n      <td>693.41</td>\n      <td>711.43</td>\n      <td>711.43</td>\n    </tr>\n    <tr>\n      <td>D-iGlu-DAP\u27f6\u029f-Lys-\u029f-Arg</td>\n      <td>603.33</td>\n      <td>603.34</td>\n      <td>621.36</td>\n      <td>621.37</td>\n      <td>618.37</td>\n      <td>618.36</td>\n      <td>636.39</td>\n      <td>636.39</td>\n    </tr>\n    <tr>\n      <td>DAP\u27f6\u029f-Lys-\u029f-Arg</td>\n      <td>474.29</td>\n      <td>474.29</td>\n      <td>492.31</td>\n      <td>492.31</td>\n      <td>483.31</td>\n      <td>483.31</td>\n      <td>501.33</td>\n      <td>501.33</td>\n    </tr>\n    <tr>\n      <td>\u029f-Lys-\u029f-Arg</td>\n      <td>302.21</td>\n      <td>302.21</td>\n      <td>320.23</td>\n      <td>320.23</td>\n      <td>302.21</td>\n      <td>302.21</td>\n      <td>320.23</td>\n      <td>320.23</td>\n    </tr>\n    <tr>\n      <td>\u029f-Arg</td>\n      <td>174.11</td>\n      <td>174.11</td>\n      <td>184.12</td>\n      <td>184.12</td>\n      <td>174.11</td>\n      <td>174.11</td>\n      <td>184.12</td>\n      <td>184.12</td>\n    </tr>\n  </tbody>\n</table>\n\n_*Newly synthesized and existing moieties are indicated in purple and red, respectively. Mcal and Mobs, calculated and observed monoisotopic masses (Da), respectively.\u2020Parental ion._\n\n### Newly synthesized Lpp and stem peptides are independently incorporated into PG\n\nThe PG is polymerized from lipid II consisting of the disaccharide-pentapeptide subunit linked to the undecaprenyl lipid carrier by a pyrophosphate bond. In Gram-positive bacteria, proteins are tethered to PG by sortases that use lipid II as the acceptor of the transpeptidation reaction (Dramsi et al., 2008). Kinetic analysis of the appearance of isotopologues of the Tri\u2192KR muropeptide ruled out this mode of tethering for Lpp. Indeed, this would have resulted in the linking of newly synthesized Lpp to newly synthesized stem peptide in lipid II, thus leading to the formation of Tri\u2192KR isotopologues of the new\u2192new type, which were only detected at late times of the kinetics, when light tetrapeptide stems became abundant in the PG (Figure 3A and Supplementary file 2). The low abundance of Tri\u2192KR isotopologues of the new\u2192new type at early times of the kinetics also indicates that Lpp is not preferentially incorporated at locations in which new disaccharide-peptide subunits are incorporated into the expanding PG. Thus, the tethering of Lpp to PG and the incorporation of newly synthesized subunits are spatially independent.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/91598/elife-91598-fig3-v1.jpg)\n\n**Figure 3.:** (A) Unlabeled isotopologue containing newly synthesized muropeptide and lipoprotein (Lpp) moieties (new\u2192new). (B) Fully labeled isotopologue containing existing muropeptide and Lpp moieties (old\u2192old). (C) Hybrid isotopologue containing old and new muropeptide and Lpp moieties, respectively (old\u2192new). (D) Hybrid isotopologue containing new and old muropeptide and Lpp moieties, respectively (new\u2192old). Light and heavy moieties are indicated in purple and in red, respectively. Muropeptide analysis was performed for the BW25113 strain (black) and the \u0394yafK mutant (orange). Data are the average of three to five biological replicates. The full data set appears in Supplementary file 2. Rel. abundance, relative abundance, is defined as the ratio (%) between the intensity of the indicated isotopologue and the sum of the intensities of all four isotopologues. This implies that an isotopologue that is present at the medium switch and is neither synthesized nor degraded during the following incubation of 60 min (one generation) will display a 50% reduction in its relative abundance because the total number of stem peptides doubles in one generation.\n\n### Tethering of Lpp to septal PG might be limited\n\nThe mode of insertion of PG subunits into the expanding PG is different in the side walls and in the septum (de Jonge et al., 1989). One-at-a-time insertion of newly synthesized glycan strands into the side walls leads to a mosaic of new and old subunits gradually enriched in new subunits. In contrast, the septum mainly consists of newly synthesized PG subunits. The low abundance of new\u2192new Tri\u2192KR isotopologues at early time points (Figure 3A) thus suggests that Lpp might be incorporated in very limited amounts into nascent septal PG.\n\n### YafK hydrolyzes tripeptide\u2192Lpp bonds\n\nAfter the medium switch, the relative abundance of old\u2192old isotopologues is expected to decrease as a result of (i) the synthesis of new Lpp and PG stem peptides leading to a twofold decrease in one generation (ca. 60 min) and (ii) the hydrolysis of the tripeptide\u2192Lpp bond by YafK. Indeed, the latter reaction releases heavy Lpp, which may remain unbound (free Lpp) or subsequently cross-linked to newly synthesized peptide stems. The decrease in the relative abundance of old\u2192old isotopologues was slower in the absence of YafK (Figure 3B), thus establishing that YafK is actively hydrolyzing tripeptide\u2192Lpp bonds.\n\n### Hydrolysis of tripeptide\u2192Lpp bonds by YafK contributes to the shuffling of Lpp between old and new peptidoglycan stems\n\nAt the beginning of the kinetics (0\u201325min), the absence of YafK had little impact on the relative abundance of old\u2192new isotopologues (Figure 3C). This is expected since the bulk of the PG contains old tetrapeptide stems that act as donors in the transpeptidation reaction, thus leading to the tethering of newly synthesized Lpp to old PG. At later times, the proportion of old\u2192new isotopologues levels off earlier in the BW25113 strain than in the \u0394yafK mutant. This may be accounted for by the hydrolysis of old\u2192new isotopologues by YafK, thus generating light Lpp molecules that can be cross-linked to light tetrapeptide donor stems, the abundance of which increases after the medium switch. Thus, the larger relative abundance of new\u2192old isotopologues in the \u0394yafK mutant provides a first indication that hydrolysis of tripeptide\u2192Lpp bonds by YafK results in the shuffling of Lpp between PG stem peptides.\n\nThe relative abundance of new\u2192old isotopologues was higher in the BW25113 strain than in the \u0394yafK mutant at all incubation times (Figure 3D). The heavy Lpp molecules used for the formation of these isotopologues are expected to originate both from the old pool of free Lpp and from the YafK-mediated hydrolysis of old\u2192old isotopologues. Thus, the reduction in the relative abundance of new\u2192old isotopologues upon deletion of yafK additionally indicates that hydrolysis of tripeptide\u2192Lpp bonds by YafK results in the shuffling of Lpp between PG stem peptides.\n\n### At least 50% of the tripeptide\u2192Lpp bonds are hydrolyzed in one generation\n\nThe twofold decrease in the relative abundance of old\u2192old isotopologues over the course of one generation, as observed in the absence of YafK (Figure 3B), can be fully accounted for by the synthesis of new PG stem peptides and Lpp molecules. Indeed, if the old\u2192old Tri\u2192KR isotopologue present at the medium shift were not hydrolyzed by YafK, its absolute amount would remain constant over time. However, the relative abundance of the old\u2192old isotopologue decreases by 50% in one generation because the total amount of the Tri\u2192KR muropeptide doubles in one generation (as any of the bacterial constituents). Thus, there was no detectable loss of old\u2192old isotopologues in the \u0394yafK strain. Furthermore, the relative abundance of old Lpp present in both the old\u2192old and new\u2192old isotopologues decreased twofold in 60 min both in the BW25113 strain and in the \u0394yafK mutant (Figure 4A and B and Supplementary file 3). This implies that hydrolysis of tripeptide\u2192Lpp bonds by YafK was not associated with any proteolytic degradation of the released Lpp. In contrast, the relative abundance of old tripeptide stems present in both the old\u2192old and old\u2192new isotopologues decreased more rapidly in the BW25113 strain than in the \u0394yafK mutant (four versus twofold in 60 min; Figure 4C and D, respectively). Thus, hydrolysis of the Tri\u2192KR bond by YafK resulted in a twofold decrease in the relative abundance of old tripeptide stems in these isotopologues, providing an estimate of 50% for the proportion of tripeptide\u2192Lpp bonds hydrolyzed in one generation. This is a low estimate since old Lpp released by YafK can be cross-linked to a donor containing an old tetrapeptide stem, a reaction that regenerates old\u2192old and old\u2192new isotopologues.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/91598/elife-91598-fig4-v1.jpg)\n\n**Figure 4.:** (A, B) The relative abundance of old (red) and new (purple) lipoprotein (Lpp) moieties in the isotopologues from the BW25113 strain and the \u0394yafK mutant, respectively. The relative abundances were calculated from data appearing in Figure 3 by adding the relative abundances of the new\u2192old and old\u2192old isotopologues (red curves; old Lpp) or of the new\u2192new and old\u2192new isotopologues (purple curves; new Lpp). (C, D) The relative abundance of old (red) and new (purple) tripeptide moieties in the isotopologues from the BW25113 strain and the \u0394yafK mutant, respectively. The relative abundances were calculated from data appearing in Figure 3 by adding the relative abundances of the old\u2192old and old\u2192new isotopologues (red curves; old tripeptide) or of the new\u2192new and new\u2192old isotopologues (purple curves; new tripeptide). Data are the average of three to five biological replicates. The full data set appears in Supplementary file 3.\n\n### Conclusions\n\nHere, we show that Lpp is not tethered to PG precursors prior to their polymerization, as is the case for the reaction catalyzed by sortases in Gram-positive bacteria (Dramsi et al., 2008). Instead, Lpp is incorporated into the expanding lateral cell walls independently from their sites of expansion. The free form of Lpp faces the bacterial surfaces raising the possibility that pools of free and PG-tethered Lpp might not be in dynamic equilibrium (Asmar and Collet, 2018). This is not the case because new\u2192old isotopologues are formed in the absence of YafK (Figure 3), showing that existing (old) Lpp is translocated from the outer leaflet of the OM to the periplasm and tethered to neo-synthesized PG subunits. Since Lpp tethered to PG is expected to prevent OM budding, it has been proposed that vesicles are released from OM domains lacking PG-tethered Lpp (Schwechheimer et al., 2014; McMillan and Kuehn, 2021). The dynamic equilibrium between free and PG-tethered Lpp may, therefore, be physiologically relevant to spatially control the formation of OM vesicles, and thereby, their periplasmic content.\n\n## Materials and methods\n\nTo investigate the mode of tethering of the Braun lipoprotein to PG, the E. coli BW25113 strain, which produces the full complement of six L,D-transpeptidases, and its derivative obtained by deletion of the yafK gene, were grown in minimal medium containing [13C]glucose and [15N]ammonium chloride to obtain fully labeled PG all procedures are described in details in Atze et al., 2022. At an optical density of 0.4 at 600 nm, bacteria were centrifuged, and resuspended in a minimal medium with the same chemical composition but containing the light isotopes of carbon and nitrogen ([12C] and [14N]) for a continued incubation of 60 min corresponding to one generation. Culture samples were collected immediately before the medium switch (time = 0) and at four times after the medium switch in order to characterize the kinetics of the replacement of heavy (existing) by light (newly synthesized) isotopes. The PG macromolecule was extracted from these culture samples by the hot SDS procedure, digested with pronase and trypsin, and treated with muramidase\u2019s, which cleave the \u03b2-glycosidic bond connecting MurNAc to GlcNAc residues. This procedure led to the release of soluble disaccharide-peptide fragments (muropeptides) that were reduced with sodium borohydride (conversion of MurNAc to muramitol residues) and purified by rpHPLC. The isotopic compositions of the Tri\u2192KR isotopologues was determined by mass spectrometry and tandem mass spectrometry.\n",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "bcba2c7d-48ed-4aae-8269-40dc1a330202",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Bavesh D Kana, University of the Witwatersrand South Africa\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.91598.4.sa0](https://doi.org/10.7554/eLife.91598.4.sa0)\n\nThis useful study describes a single set of label-chase mass spectrometry experiments to confirm the molecular function of YafK as a peptidoglycan hydrolase, and to describe the timing of its attachment to the peptidoglycan. Confirmation of the molecular function of YafK is helpful for further studies to examine the function and regulation of the outer membrane-peptidoglycan link in bacteria. The evidence supporting the molecular function of YafK and that lpp molecules are shuffled on and off the peptidoglycan is solid, however, some of the other data still remain incomplete in the revised version. The work will be of interest to researchers studying lipoproteins in gram negative bacteria.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.91598.4.sa1](https://doi.org/10.7554/eLife.91598.4.sa1)\n\nThe authors present data on outer membrane vesicle (OMV) production in different mutants, but they state that this is beyond the scope of the current manuscript, which I disagree with. This data could provide valuable physiological context that is otherwise lacking. The preliminary blots suggest that YafK does not alter OMV biogenesis. I recommend repeating these blots with appropriate controls, such as blotting for proteins in the culture media, an IM protein, periplasmic protein and an OM protein to strengthen the reliability of these findings. Including this data in the manuscript, even if it does not directly support the initial hypothesis, would enhance the physiological relevance of the study. Currently, the manuscript relies completely on the experimental setup (labeling-mass spec) previously developed by the authors, which limits the broader scope and interpretability of this study.\n\nAdditionally susceptibility of strains to detergents like SDS can be tested to provide a much needed physisological context to the study.\n\nIn summary, the authors should consider revising the manuscript to improve clarity, substantiate their claims with more detailed evidence, and include additional experimental results that provide necessary physiological context to their study.\n\nComments on the revised version:\n\nRegarding my comments from last review on a new figure on OMV analysis, The authors have redirected me to their previous response and have not performed the suggested control blots. I do not get their argument that this is for specialized audience. I do not have any more comments.\n",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "be0b8f95-e225-4d2a-8da0-674f8065016f",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C1",
+      "claim": "Peptidoglycan (PG) is a giant macromolecule that completely surrounds bacterial cells and prevents lysis in hypo-osmotic environments.",
+      "claim_type": "EXPLICIT",
+      "source": "Peptidoglycan (PG) is a giant macromolecule that completely surrounds bacterial cells and prevents lysis in hypo-osmotic environments.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Rojas et al., 2018 and established scientific knowledge about peptidoglycan function.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "d7b41355-9018-47d9-9c3b-028551eeca56",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C2",
+      "claim": "The peptidoglycan net-like macromolecule is made of glycan strands linked to each other by two types of transpeptidases that form either 4\u21923 (PBPs) or 3\u21923 (LDTs) cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "This net-like macromolecule is made of glycan strands linked to each other by two types of transpeptidases that form either 4\u21923 (PBPs) or 3\u21923 (LDTs) cross-links.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Glauner et al., 1988 and established knowledge of peptidoglycan structure.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "52b56499-7ba7-4b89-8441-f4ae35fe0a12",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C3",
+      "claim": "PG polymerization operates according to different modes for the formation of the septum and of the lateral cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "We showed that PG polymerization operates according to different modes for the formation of the septum and of the lateral cell walls, as well as for bacterial growth in the presence or absence of \u03b2-lactams in engineered strains that can exclusively rely on LDTs for PG cross-linking when drugs are present.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by reference to previous work (Atze et al., 2022) where this was demonstrated.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "a2eb7481-9072-42f1-b01f-296b2009bc2a",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C4",
+      "claim": "Lpp and disaccharide-peptide subunits are independently incorporated into the expanding lateral cell walls.",
+      "claim_type": "EXPLICIT",
+      "source": "We find that Lpp and disaccharide-peptide subunits are independently incorporated into the expanding lateral cell walls.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data from isotope labeling and mass spectrometry analysis shown in Figures 2 and 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "f6795b73-ba67-4d5a-be1f-838e1f8d97fd",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C5",
+      "claim": "Newly synthesized septum PG appears to contain small amounts of tethered Lpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Newly synthesized septum PG appears to contain small amounts of tethered Lpp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the low abundance of new\u2192new Tri\u2192KR isotopologues at early time points as shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "18de6b1c-e288-456d-8d57-7ab62bcd1fa8",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C6",
+      "claim": "LDTs mediate intense shuffling of Lpp between PG stems leading to a dynamic equilibrium between the PG-tethered and free forms of Lpp.",
+      "claim_type": "EXPLICIT",
+      "source": "LDTs did mediate intense shuffling of Lpp between PG stems leading to a dynamic equilibrium between the PG-tethered and free forms of Lpp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data comparing BW25113 and \u0394yafK mutant strains shown in Figures 3 and 4.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "efb2781c-79bb-4d9a-9bd9-22db41b69f04",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C7",
+      "claim": "PBPs and LDTs contain different catalytic nucleophiles (Ser versus Cys) and use different stem peptides as the acyl donor substrate (pentapeptide versus tetrapeptide).",
+      "claim_type": "EXPLICIT",
+      "source": "PBPs and LDTs contain different catalytic nucleophiles (Ser versus Cys) and use different stem peptides as the acyl donor substrate (pentapeptide versus tetrapeptide) (Figure 1C; Mainardi et al., 2005).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Mainardi et al., 2005 and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\", \"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "e6585f36-d54d-4808-91da-26b59a6e3824",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C8",
+      "claim": "LDTs forming 3\u21923 cross-links are unessential enzymes.",
+      "claim_type": "EXPLICIT",
+      "source": "LDTs forming 3\u21923 cross-links are unessential enzymes (Magnet et al., 2008), which can participate in PG maintenance (Mor\u00e8 et al., 2019) and in \u03b2-lactam resistance acquired in vitro (Voedts et al., 2022).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Magnet et al., 2008, Mor\u00e8 et al., 2019, and Voedts et al., 2022.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "ca1e4ed1-e78d-4414-a70a-6efedf6aae86",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C9",
+      "claim": "The LDT family includes enzymes that catalyze the tethering of Lpp to PG (ErfK, Ybis, and YcfS).",
+      "claim_type": "EXPLICIT",
+      "source": "The LDT family includes additional enzymes (Figure 1C) that catalyze either the tethering of Lpp to PG (ErfK, Ybis, and YcfS) (Magnet et al., 2008) or the hydrolysis of the resulting covalent link (YafK) (Bahadur et al., 2021; Winkle et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citation to Magnet et al., 2008 and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "da93381d-5be4-40d2-877f-9640a52a45f7",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C10",
+      "claim": "YafK catalyzes the hydrolysis of the PG\u2192Lpp covalent link.",
+      "claim_type": "EXPLICIT",
+      "source": "The LDT family includes additional enzymes (Figure 1C) that catalyze either the tethering of Lpp to PG (ErfK, Ybis, and YcfS) (Magnet et al., 2008) or the hydrolysis of the resulting covalent link (YafK) (Bahadur et al., 2021; Winkle et al., 2021).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by citations to Bahadur et al., 2021 and Winkle et al., 2021, and illustrated in Figure 1C.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "4d72586c-8fda-487f-b9bf-d7844efa43ac",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C11",
+      "claim": "Lpp is the most abundant lipoprotein with 10^6 copies per cell.",
+      "claim_type": "EXPLICIT",
+      "source": "Lpp is the most abundant lipoprotein (106 copies per cell), about one-third of which is attached to PG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about Lpp abundance in E. coli.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "da899b5f-07fe-4c5f-a42d-fe1bec886866",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C12",
+      "claim": "About one-third of Lpp is attached to PG.",
+      "claim_type": "EXPLICIT",
+      "source": "Lpp is the most abundant lipoprotein (106 copies per cell), about one-third of which is attached to PG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established scientific knowledge about Lpp distribution.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "474066ba-e4a1-4192-a521-f76c12839e40",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C13",
+      "claim": "The dense connection between the PG and the outer membrane is thought to stabilize the bacterial envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "This dense connection between the PG and the outer membrane (OM) is thought to stabilize the bacterial envelope because mutants deficient in the tethering of Lpp to PG are viable but display increased vesiculation and lethal susceptibility to EDTA (Sanders and Pavelka, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sanders and Pavelka, 2013 showing phenotypes of mutants lacking Lpp-PG tethering.",
+      "evidence_type": "[\"CITATION\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "b752d9f1-c41c-40cb-bd21-5a1a6f7d4d04",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C14",
+      "claim": "Mutants deficient in the tethering of Lpp to PG are viable but display increased vesiculation and lethal susceptibility to EDTA.",
+      "claim_type": "EXPLICIT",
+      "source": "This dense connection between the PG and the outer membrane (OM) is thought to stabilize the bacterial envelope because mutants deficient in the tethering of Lpp to PG are viable but display increased vesiculation and lethal susceptibility to EDTA (Sanders and Pavelka, 2013).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Sanders and Pavelka, 2013.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "e1a207a2-ceb6-4e93-a314-9c98666d950b",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C15",
+      "claim": "Lpp controls the distance between the inner and outer membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Lpp controls the distance between the inner (IM) and outer membranes, a structural feature that is critical for sensing stresses that affect the bacterial envelope (Asmar et al., 2017; Matheli\u00e9-Guinlet et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Asmar et al., 2017 and Matheli\u00e9-Guinlet et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "2efc0e11-d138-4509-bce1-0b536a078081",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C16",
+      "claim": "The distance between the inner and outer membranes is critical for sensing stresses that affect the bacterial envelope.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, Lpp controls the distance between the inner (IM) and outer membranes, a structural feature that is critical for sensing stresses that affect the bacterial envelope (Asmar et al., 2017; Matheli\u00e9-Guinlet et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Asmar et al., 2017 and Matheli\u00e9-Guinlet et al., 2020.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "c10b141e-ee0f-4032-95b5-5e51e28bc985",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C17",
+      "claim": "The enzymatic activity of YafK was established by incubating PG with purified YafK and detecting the products of the hydrolysis of the PG\u2192Lpp bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "The enzymatic activity of YafK was established by incubating PG with purified YafK and detecting the products of the hydrolysis of the PG\u2192Lpp bonds (Bahadur et al., 2021; Winkle et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Bahadur et al., 2021 and Winkle et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "5ed5a21c-a126-4a30-8b29-9d1dcc75ee30",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C18",
+      "claim": "The deletion of yafK was not associated with any decrease in the overall Lpp-to-PG tethering in the absence of stress.",
+      "claim_type": "EXPLICIT",
+      "source": "Intriguingly, the deletion of yafK was not associated with any decrease in the overall Lpp-to-PG tethering in the absence of stress (Bahadur et al., 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Bahadur et al., 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "a1317540-ce3d-459a-a3ed-cfe4336b0a80",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C19",
+      "claim": "Tethering of Lpp to PG generates Tri\u2192KR isotopologues containing light and heavy moieties at both the donor (tripeptide) and acceptor (Lpp) positions.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that tethering of Lpp to PG did generate Tri\u2192KR isotopologues containing light and heavy moieties at both the donor (tripeptide) and acceptor (Lpp) positions.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by mass spectrometry data shown in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "968fd6ab-95fe-441a-a814-36caacde0455",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C20",
+      "claim": "Tri\u2192KR isotopologues of the new\u2192new type were only detected at late times of the kinetics, when light tetrapeptide stems became abundant in the PG.",
+      "claim_type": "EXPLICIT",
+      "source": "Indeed, this would have resulted in the linking of newly synthesized Lpp to newly synthesized stem peptide in lipid II, thus leading to the formation of Tri\u2192KR isotopologues of the new\u2192new type, which were only detected at late times of the kinetics, when light tetrapeptide stems became abundant in the PG (Figure 3A and Supplementary file 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3A and Supplementary file 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "063cd172-205c-4888-9b76-48fec840caf7",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C21",
+      "claim": "The low abundance of Tri\u2192KR isotopologues of the new\u2192new type at early times indicates that Lpp is not preferentially incorporated at locations in which new disaccharide-peptide subunits are incorporated into the expanding PG.",
+      "claim_type": "EXPLICIT",
+      "source": "The low abundance of Tri\u2192KR isotopologues of the new\u2192new type at early times of the kinetics also indicates that Lpp is not preferentially incorporated at locations in which new disaccharide-peptide subunits are incorporated into the expanding PG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "cfda1ccc-2a72-44b6-8ee6-8a0bcdbb220e",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C22",
+      "claim": "The tethering of Lpp to PG and the incorporation of newly synthesized subunits are spatially independent.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the tethering of Lpp to PG and the incorporation of newly synthesized subunits are spatially independent.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the low abundance of new\u2192new isotopologues at early time points shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "d0a9c5ab-17e1-4bd2-971d-8687241d0a98",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C23",
+      "claim": "The mode of insertion of PG subunits into the expanding PG is different in the side walls and in the septum.",
+      "claim_type": "EXPLICIT",
+      "source": "The mode of insertion of PG subunits into the expanding PG is different in the side walls and in the septum (de Jonge et al., 1989).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to de Jonge et al., 1989.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "c739f310-4543-49a6-b7ef-422cda04509f",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C24",
+      "claim": "One-at-a-time insertion of newly synthesized glycan strands into the side walls leads to a mosaic of new and old subunits gradually enriched in new subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "One-at-a-time insertion of newly synthesized glycan strands into the side walls leads to a mosaic of new and old subunits gradually enriched in new subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of peptidoglycan synthesis in lateral walls, supported by citation to de Jonge et al., 1989.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "751e3e6c-36d6-4da7-98c9-1da77a1708de",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C25",
+      "claim": "The septum mainly consists of newly synthesized PG subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the septum mainly consists of newly synthesized PG subunits.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of peptidoglycan synthesis in the septum, supported by citation to de Jonge et al., 1989.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "4af6e691-2c92-4333-aecd-f57f3d21193b",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C26",
+      "claim": "Lpp might be incorporated in very limited amounts into nascent septal PG.",
+      "claim_type": "EXPLICIT",
+      "source": "The low abundance of new\u2192new Tri\u2192KR isotopologues at early time points (Figure 3A) thus suggests that Lpp might be incorporated in very limited amounts into nascent septal PG.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data shown in Figure 3A.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "bf1f4258-2ea5-4abd-9658-5460186d7eab",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C27",
+      "claim": "YafK is actively hydrolyzing tripeptide\u2192Lpp bonds.",
+      "claim_type": "EXPLICIT",
+      "source": "The decrease in the relative abundance of old\u2192old isotopologues was slower in the absence of YafK (Figure 3B), thus establishing that YafK is actively hydrolyzing tripeptide\u2192Lpp bonds.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data comparing BW25113 and \u0394yafK mutant shown in Figure 3B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "043988c5-5753-47f2-b6f3-4ccd29bde647",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C28",
+      "claim": "At the beginning of the kinetics (0\u201325min), the absence of YafK had little impact on the relative abundance of old\u2192new isotopologues.",
+      "claim_type": "EXPLICIT",
+      "source": "At the beginning of the kinetics (0\u201325min), the absence of YafK had little impact on the relative abundance of old\u2192new isotopologues (Figure 3C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "ae86e1e2-1285-4dff-bca3-087e2f0cad1e",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C29",
+      "claim": "The bulk of the PG contains old tetrapeptide stems that act as donors in the transpeptidation reaction at early time points.",
+      "claim_type": "EXPLICIT",
+      "source": "This is expected since the bulk of the PG contains old tetrapeptide stems that act as donors in the transpeptidation reaction, thus leading to the tethering of newly synthesized Lpp to old PG.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental design and the kinetics of isotope replacement.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "fa192a06-cd39-4ad4-acde-b58f7f2ac628",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C30",
+      "claim": "The proportion of old\u2192new isotopologues levels off earlier in the BW25113 strain than in the \u0394yafK mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "At later times, the proportion of old\u2192new isotopologues levels off earlier in the BW25113 strain than in the \u0394yafK mutant.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figure 3C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "5a40de9e-8498-466f-9430-72ec34c1550f",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C31",
+      "claim": "Hydrolysis of old\u2192new isotopologues by YafK generates light Lpp molecules that can be cross-linked to light tetrapeptide donor stems.",
+      "claim_type": "EXPLICIT",
+      "source": "This may be accounted for by the hydrolysis of old\u2192new isotopologues by YafK, thus generating light Lpp molecules that can be cross-linked to light tetrapeptide donor stems, the abundance of which increases after the medium switch.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental data and the known enzymatic activity of YafK.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "55691b19-045c-4c0d-a142-aed598f5a8ad",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C32",
+      "claim": "The larger relative abundance of new\u2192old isotopologues in the \u0394yafK mutant provides an indication that hydrolysis of tripeptide\u2192Lpp bonds by YafK results in the shuffling of Lpp between PG stem peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the larger relative abundance of new\u2192old isotopologues in the \u0394yafK mutant provides a first indication that hydrolysis of tripeptide\u2192Lpp bonds by YafK results in the shuffling of Lpp between PG stem peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data comparing BW25113 and \u0394yafK mutant shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "30afc269-930e-43a9-8af3-10839d16cad0",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C33",
+      "claim": "The relative abundance of new\u2192old isotopologues was higher in the BW25113 strain than in the \u0394yafK mutant at all incubation times.",
+      "claim_type": "EXPLICIT",
+      "source": "The relative abundance of new\u2192old isotopologues was higher in the BW25113 strain than in the \u0394yafK mutant at all incubation times (Figure 3D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "0b5d7a40-5b8f-4832-a6a7-070e4f7a2c64",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C34",
+      "claim": "The heavy Lpp molecules used for the formation of new\u2192old isotopologues originate both from the old pool of free Lpp and from the YafK-mediated hydrolysis of old\u2192old isotopologues.",
+      "claim_type": "EXPLICIT",
+      "source": "The heavy Lpp molecules used for the formation of these isotopologues are expected to originate both from the old pool of free Lpp and from the YafK-mediated hydrolysis of old\u2192old isotopologues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the experimental design and the known enzymatic activity of YafK.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "7255ca2c-4994-4a43-b61b-b777cad435de",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C35",
+      "claim": "The reduction in the relative abundance of new\u2192old isotopologues upon deletion of yafK indicates that hydrolysis of tripeptide\u2192Lpp bonds by YafK results in the shuffling of Lpp between PG stem peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, the reduction in the relative abundance of new\u2192old isotopologues upon deletion of yafK additionally indicates that hydrolysis of tripeptide\u2192Lpp bonds by YafK results in the shuffling of Lpp between PG stem peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data shown in Figure 3D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "ed8755c2-92b4-4182-aca6-9f4677c0e9b7",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C36",
+      "claim": "At least 50% of the tripeptide\u2192Lpp bonds are hydrolyzed in one generation.",
+      "claim_type": "EXPLICIT",
+      "source": "At least 50% of the tripeptide\u2192Lpp bonds are hydrolyzed in one generation",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental data shown in Figure 4C and D comparing BW25113 and \u0394yafK mutant.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "99cb69ed-8543-4ba5-9cdb-dcf200813e2e",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C37",
+      "claim": "The twofold decrease in the relative abundance of old\u2192old isotopologues over the course of one generation in the absence of YafK can be fully accounted for by the synthesis of new PG stem peptides and Lpp molecules.",
+      "claim_type": "EXPLICIT",
+      "source": "The twofold decrease in the relative abundance of old\u2192old isotopologues over the course of one generation, as observed in the absence of YafK (Figure 3B), can be fully accounted for by the synthesis of new PG stem peptides and Lpp molecules.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data shown in Figure 3B and theoretical considerations about bacterial growth.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "08ad69b2-bece-4b87-9fa0-e19ce5121dff",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C38",
+      "claim": "There was no detectable loss of old\u2192old isotopologues in the \u0394yafK strain.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, there was no detectable loss of old\u2192old isotopologues in the \u0394yafK strain.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data shown in Figure 3B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "27ab3179-eaf8-4849-9f17-9a9dbdc247c6",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C39",
+      "claim": "The relative abundance of old Lpp present in both the old\u2192old and new\u2192old isotopologues decreased twofold in 60 min both in the BW25113 strain and in the \u0394yafK mutant.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, the relative abundance of old Lpp present in both the old\u2192old and new\u2192old isotopologues decreased twofold in 60 min both in the BW25113 strain and in the \u0394yafK mutant (Figure 4A and B and Supplementary file 3).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4A and B and Supplementary file 3.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "09ea96cc-339d-4fa0-858a-3ab833b4b3d9",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C40",
+      "claim": "Hydrolysis of tripeptide\u2192Lpp bonds by YafK was not associated with any proteolytic degradation of the released Lpp.",
+      "claim_type": "EXPLICIT",
+      "source": "This implies that hydrolysis of tripeptide\u2192Lpp bonds by YafK was not associated with any proteolytic degradation of the released Lpp.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the observation that old Lpp decreased twofold in both strains, as shown in Figure 4A and B.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "5b3ffcbd-7bd7-4380-9cbe-27139ccaf800",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C41",
+      "claim": "The relative abundance of old tripeptide stems present in both the old\u2192old and old\u2192new isotopologues decreased more rapidly in the BW25113 strain than in the \u0394yafK mutant (four versus twofold in 60 min).",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, the relative abundance of old tripeptide stems present in both the old\u2192old and old\u2192new isotopologues decreased more rapidly in the BW25113 strain than in the \u0394yafK mutant (four versus twofold in 60 min; Figure 4C and D, respectively).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "d972bfc2-4f40-409e-81d2-3837a8679120",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C42",
+      "claim": "Hydrolysis of the Tri\u2192KR bond by YafK resulted in a twofold decrease in the relative abundance of old tripeptide stems in old\u2192old and old\u2192new isotopologues.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, hydrolysis of the Tri\u2192KR bond by YafK resulted in a twofold decrease in the relative abundance of old tripeptide stems in these isotopologues, providing an estimate of 50% for the proportion of tripeptide\u2192Lpp bonds hydrolyzed in one generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Calculated from experimental data shown in Figure 4C and D.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "7bc0998d-a4b5-47ee-a56e-ba1fd82bc1ab",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C43",
+      "claim": "Old Lpp released by YafK can be cross-linked to a donor containing an old tetrapeptide stem, a reaction that regenerates old\u2192old and old\u2192new isotopologues.",
+      "claim_type": "EXPLICIT",
+      "source": "This is a low estimate since old Lpp released by YafK can be cross-linked to a donor containing an old tetrapeptide stem, a reaction that regenerates old\u2192old and old\u2192new isotopologues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from the known enzymatic activities of LDTs and the experimental observations.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "01d79b28-2a1f-485f-b4f1-9333d02b039d",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C44",
+      "claim": "Lpp is not tethered to PG precursors prior to their polymerization.",
+      "claim_type": "EXPLICIT",
+      "source": "Here, we show that Lpp is not tethered to PG precursors prior to their polymerization, as is the case for the reaction catalyzed by sortases in Gram-positive bacteria (Dramsi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by experimental data shown in Figures 2 and 3, and contrasted with sortase mechanism cited from Dramsi et al., 2008.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "dca02f90-7d91-404a-a3a5-5c443dda595e",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C45",
+      "claim": "In Gram-positive bacteria, proteins are tethered to PG by sortases that use lipid II as the acceptor of the transpeptidation reaction.",
+      "claim_type": "EXPLICIT",
+      "source": "In Gram-positive bacteria, proteins are tethered to PG by sortases that use lipid II as the acceptor of the transpeptidation reaction (Dramsi et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citation to Dramsi et al., 2008.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "6341fed4-5d7f-444e-ade4-b75c33806132",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C46",
+      "claim": "Lpp is incorporated into the expanding lateral cell walls independently from their sites of expansion.",
+      "claim_type": "EXPLICIT",
+      "source": "Instead, Lpp is incorporated into the expanding lateral cell walls independently from their sites of expansion.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Inferred from experimental data showing spatial independence of Lpp tethering and subunit incorporation.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "a55147f2-09bf-4f0f-978f-fa500ff2ed7b",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C47",
+      "claim": "The free form of Lpp faces the bacterial surfaces.",
+      "claim_type": "EXPLICIT",
+      "source": "The free form of Lpp faces the bacterial surfaces raising the possibility that pools of free and PG-tethered Lpp might not be in dynamic equilibrium (Asmar and Collet, 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on structural knowledge of Lpp orientation, with citation to Asmar and Collet, 2018.",
+      "evidence_type": "[\"KNOWLEDGE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "aaa3b887-006f-4a0b-a077-743362944159",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C48",
+      "claim": "Pools of free and PG-tethered Lpp are in dynamic equilibrium.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not the case because new\u2192old isotopologues are formed in the absence of YafK (Figure 3), showing that existing (old) Lpp is translocated from the outer leaflet of the OM to the periplasm and tethered to neo-synthesized PG subunits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Supported by experimental data shown in Figure 3 demonstrating formation of new\u2192old isotopologues in \u0394yafK mutant.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "2edcc62b-6545-44b5-b0c9-c009c652a493",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C49",
+      "claim": "Existing (old) Lpp is translocated from the outer leaflet of the OM to the periplasm and tethered to neo-synthesized PG subunits.",
+      "claim_type": "EXPLICIT",
+      "source": "This is not the case because new\u2192old isotopologues are formed in the absence of YafK (Figure 3), showing that existing (old) Lpp is translocated from the outer leaflet of the OM to the periplasm and tethered to neo-synthesized PG subunits.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Inferred from experimental data shown in Figure 3.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "716f549d-c236-42ae-9af8-c3f8f41e0a70",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C50",
+      "claim": "Lpp tethered to PG is expected to prevent OM budding.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Lpp tethered to PG is expected to prevent OM budding, it has been proposed that vesicles are released from OM domains lacking PG-tethered Lpp (Schwechheimer et al., 2014; McMillan and Kuehn, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on inference from structural constraints and supported by citations to Schwechheimer et al., 2014 and McMillan and Kuehn, 2021.",
+      "evidence_type": "[\"INFERENCE\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "d8ca134e-5113-4216-9ea1-94bc4f4eb59c",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C51",
+      "claim": "Vesicles are released from OM domains lacking PG-tethered Lpp.",
+      "claim_type": "EXPLICIT",
+      "source": "Since Lpp tethered to PG is expected to prevent OM budding, it has been proposed that vesicles are released from OM domains lacking PG-tethered Lpp (Schwechheimer et al., 2014; McMillan and Kuehn, 2021).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Supported by citations to Schwechheimer et al., 2014 and McMillan and Kuehn, 2021.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "79bad55f-585f-4dc3-8720-ef51a07bd6b2",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C52",
+      "claim": "The dynamic equilibrium between free and PG-tethered Lpp may be physiologically relevant to spatially control the formation of OM vesicles.",
+      "claim_type": "EXPLICIT",
+      "source": "The dynamic equilibrium between free and PG-tethered Lpp may, therefore, be physiologically relevant to spatially control the formation of OM vesicles, and thereby, their periplasmic content.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Speculative inference based on the experimental findings and cited literature.",
+      "evidence_type": "[\"DATA\", \"INFERENCE\", \"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "9eb49821-9100-4ae5-b62c-f68130b5e414",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C53",
+      "claim": "The E. coli BW25113 strain produces the full complement of six L,D-transpeptidases.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the mode of tethering of the Braun lipoprotein to PG, the E. coli BW25113 strain, which produces the full complement of six L,D-transpeptidases, and its derivative obtained by deletion of the yafK gene, were grown in minimal medium containing [13C]glucose and [15N]ammonium chloride to obtain fully labeled PG all procedures are described in details in Atze et al., 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on knowledge of the BW25113 strain genotype.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "639c8857-a695-4324-9439-0490efa591c1",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C54",
+      "claim": "Bacteria were grown in minimal medium containing [13C]glucose and [15N]ammonium chloride to obtain fully labeled PG.",
+      "claim_type": "EXPLICIT",
+      "source": "To investigate the mode of tethering of the Braun lipoprotein to PG, the E. coli BW25113 strain, which produces the full complement of six L,D-transpeptidases, and its derivative obtained by deletion of the yafK gene, were grown in minimal medium containing [13C]glucose and [15N]ammonium chloride to obtain fully labeled PG all procedures are described in details in Atze et al., 2022.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental method used, with reference to detailed procedures in Atze et al., 2022.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "89b802c2-8e1e-489f-ba23-f126cb2eace0",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C55",
+      "claim": "At an optical density of 0.4 at 600 nm, bacteria were centrifuged and resuspended in a minimal medium containing light isotopes of carbon and nitrogen for a continued incubation of 60 min corresponding to one generation.",
+      "claim_type": "EXPLICIT",
+      "source": "At an optical density of 0.4 at 600 nm, bacteria were centrifuged, and resuspended in a minimal medium with the same chemical composition but containing the light isotopes of carbon and nitrogen ([12C] and [14N]) for a continued incubation of 60 min corresponding to one generation.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "0446d1b1-eecc-4400-81a4-bf155993ae8f",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C56",
+      "claim": "The PG macromolecule was extracted from culture samples by the hot SDS procedure, digested with pronase and trypsin, and treated with muramidases.",
+      "claim_type": "EXPLICIT",
+      "source": "The PG macromolecule was extracted from these culture samples by the hot SDS procedure, digested with pronase and trypsin, and treated with muramidase's, which cleave the \u03b2-glycosidic bond connecting MurNAc to GlcNAc residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "7f4de7fe-110f-44d2-9af1-410a104dc3f2",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C57",
+      "claim": "Muramidases cleave the \u03b2-glycosidic bond connecting MurNAc to GlcNAc residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The PG macromolecule was extracted from these culture samples by the hot SDS procedure, digested with pronase and trypsin, and treated with muramidase's, which cleave the \u03b2-glycosidic bond connecting MurNAc to GlcNAc residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of muramidase enzymatic activity.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "5008a6bb-9912-4119-b856-7fb9aae6cd9b",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C58",
+      "claim": "Treatment of PG with pronase, trypsin, and muramidases led to the release of soluble disaccharide-peptide fragments (muropeptides).",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure led to the release of soluble disaccharide-peptide fragments (muropeptides) that were reduced with sodium borohydride (conversion of MurNAc to muramitol residues) and purified by rpHPLC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental method and its results.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "d7223183-cd74-49a0-8baa-d70e82a81d1d",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C59",
+      "claim": "Muropeptides were reduced with sodium borohydride resulting in conversion of MurNAc to muramitol residues.",
+      "claim_type": "EXPLICIT",
+      "source": "This procedure led to the release of soluble disaccharide-peptide fragments (muropeptides) that were reduced with sodium borohydride (conversion of MurNAc to muramitol residues) and purified by rpHPLC.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the experimental method used.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "8d8b4818-152a-451a-9eaf-221945ce5936",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C60",
+      "claim": "The isotopic compositions of the Tri\u2192KR isotopologues was determined by mass spectrometry and tandem mass spectrometry.",
+      "claim_type": "EXPLICIT",
+      "source": "The isotopic compositions of the Tri\u2192KR isotopologues was determined by mass spectrometry and tandem mass spectrometry.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Describes the analytical method used, with results shown in Figure 2 and Table 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "6fb7369d-cd43-4103-923d-0decc494ce50",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C61",
+      "claim": "The envelope of gram-negative bacteria contains two membranes.",
+      "claim_type": "EXPLICIT",
+      "source": "The envelope of gram-negative bacteria contains two membranes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of gram-negative bacterial cell envelope structure, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "653c515b-c48d-40b9-b89b-47ded8a58838",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C62",
+      "claim": "The inner membrane is made of phospholipids.",
+      "claim_type": "EXPLICIT",
+      "source": "The inner membrane (IM) is made of phospholipids.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of bacterial membrane composition, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "0ef42b68-07a5-41c5-8370-96482c56dd31",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C63",
+      "claim": "The outer membrane is asymmetric, with phospholipids in the inner leaflet and lipopolysaccharides (LPS) in the outer leaflet.",
+      "claim_type": "EXPLICIT",
+      "source": "The outer membrane (OM) is asymmetric, with phospholipids in the inner leaflet and lipopolysaccharides (LPS) in the outer leaflet.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of outer membrane structure, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "e39b6bd1-020b-4896-a248-347490d67640",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C64",
+      "claim": "The peptidoglycan is located in the periplasmic space delimited by the IM and the OM.",
+      "claim_type": "EXPLICIT",
+      "source": "The peptidoglycan (PG) is located in the periplasmic space delimited by the IM and the OM.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of bacterial cell envelope structure, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "213cfdb7-06a7-46f7-9285-f00c0e4b3b34",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C65",
+      "claim": "The PG consists of glycan chains linked to each other by short peptides.",
+      "claim_type": "EXPLICIT",
+      "source": "The PG consists of glycan chains linked to each other by short peptides.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of peptidoglycan structure, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "2870c037-0285-4d41-b52d-97168884c5c6",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C66",
+      "claim": "The glycan chains consist of alternating \u03b21\u21924-linked N-acetyl-glucosamine (GlcNAc) and N-acetyl muramic acid (MurNAc) residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The glycan chains consist of alternating \u03b21\u21924-linked N-acetyl-glucosamine (GlcNAc) and N-acetyl muramic acid (MurNAc) residues.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of peptidoglycan structure, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "7ccd818d-3d03-46c0-b5ee-7de76a429906",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C67",
+      "claim": "The sequence of the stem peptide linked to the D-lactoyl group of MurNAc, as assembled in the cytoplasm, is L-Ala1-D-iGlu2-DAP3-D-Ala4-D-Ala5.",
+      "claim_type": "EXPLICIT",
+      "source": "The sequence of the stem peptide linked to the D-lactoyl group of MurNAc, as assembled in the cytoplasm, is L-Ala1-D-iGlu2-DAP3-D-Ala4-D-Ala5, in which DAP is a diaminopimelyl residue.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of peptidoglycan precursor structure, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "1239f210-1992-4d5f-a076-d9f33f859508",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C68",
+      "claim": "Polymerization of the disaccharide-pentapeptide subunit by glycosyltransferases results in linear glycan strands that are inserted into the expanding PG network by the combined actions of space-making hydrolases and transpeptidases.",
+      "claim_type": "EXPLICIT",
+      "source": "Polymerization of this disaccharide-pentapeptide subunit by glycosyltransferases results in linear glycan strands that are inserted into the expanding PG network by the combined actions of space-making hydrolases and transpeptidases.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of peptidoglycan biosynthesis, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "6c2cc646-c100-4c4e-9176-f8de05ffb8ff",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C69",
+      "claim": "The majority of the cross-links connecting D-Ala4 of a donor stem peptide to DAP3 of an acceptor stem peptide (4\u21923 cross-links) are made by D,D-transpeptidases belonging to the penicillin-binding protein (PBP) family.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the cross-links connecting D-Ala4 of a donor stem peptide to DAP3 of an acceptor stem peptide (4\u21923 cross-links) are made by D,D-transpeptidases belonging to the penicillin-binding protein (PBP) family that are the essential targets of \u03b2-lactam antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of peptidoglycan cross-linking, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "51a93503-aab9-4b04-955c-fcf710077802",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C70",
+      "claim": "PBPs are the essential targets of \u03b2-lactam antibiotics.",
+      "claim_type": "EXPLICIT",
+      "source": "The majority of the cross-links connecting D-Ala4 of a donor stem peptide to DAP3 of an acceptor stem peptide (4\u21923 cross-links) are made by D,D-transpeptidases belonging to the penicillin-binding protein (PBP) family that are the essential targets of \u03b2-lactam antibiotics.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of \u03b2-lactam antibiotic mechanism of action.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "5070be45-739f-4bfc-a89e-67404e66b292",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C71",
+      "claim": "The Braun lipoprotein provides a link between the OM and the PG since its C-terminus is covalently bound to DAP residues.",
+      "claim_type": "EXPLICIT",
+      "source": "The Braun lipoprotein (Lpp) provides a link between the OM and the PG since its C-terminus is covalently bound to DAP residues (panel C), whereas its N-terminal Cys residue carries three alkyl chains, one of which is carried by the amino group of the C-terminal Cys residue and the other two by a glycerol moiety linked to the sulfhydryl of that residue by a thioether bond.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "Based on established knowledge of Lpp structure and function, illustrated in Figure 1A and 1C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "c61e2cbb-d5eb-4512-9e45-9f3a6b2cc4b1",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C72",
+      "claim": "The N-terminal Cys residue of Lpp carries three alkyl chains.",
+      "claim_type": "EXPLICIT",
+      "source": "The Braun lipoprotein (Lpp) provides a link between the OM and the PG since its C-terminus is covalently bound to DAP residues (panel C), whereas its N-terminal Cys residue carries three alkyl chains, one of which is carried by the amino group of the C-terminal Cys residue and the other two by a glycerol moiety linked to the sulfhydryl of that residue by a thioether bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of lipoprotein structure.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "35a6e9cc-9b9a-48ea-b635-85ee01d2b5a9",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C73",
+      "claim": "The alkyl chains of Lpp are inserted into the inner leaflet of the OM in the PG-tethered form or into the outer leaflet in the free form facing the bacterial cell surface.",
+      "claim_type": "EXPLICIT",
+      "source": "These alkyl chains are inserted into the inner leaflet of the OM (PG-tethered form of Lpp) or into the outer leaflet of that membrane (free form of Lpp facing the bacterial cell surface).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Lpp topology, illustrated in Figure 1A.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "2b40f2a0-e525-4067-94b9-d6a992607c3e",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C74",
+      "claim": "In E. coli, the LDT protein family includes six paralogues.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, the LDT protein family includes six paralogues that catalyze (i) the formation of 3\u21923 cross-links (YcbB and YnhG), (ii) the covalent anchoring of Lpp to PG (Ybis, YcfS, and ErfK), and (iii) the hydrolysis of the resulting PG\u2192Lpp bond (YafK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of E. coli LDT family, illustrated in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "aa01aee3-e008-4a12-b8f5-16977cfb595d",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C75",
+      "claim": "YcbB and YnhG catalyze the formation of 3\u21923 cross-links.",
+      "claim_type": "EXPLICIT",
+      "source": "In E. coli, the LDT protein family includes six paralogues that catalyze (i) the formation of 3\u21923 cross-links (YcbB and YnhG), (ii) the covalent anchoring of Lpp to PG (Ybis, YcfS, and ErfK), and (iii) the hydrolysis of the resulting PG\u2192Lpp bond (YafK).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of LDT enzyme activities, illustrated in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "3da3fe32-14a9-46b8-90a0-bc6dc3e8ac7c",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C76",
+      "claim": "Formation of the 3\u21923 and PG\u2192Lpp bonds involves a common catalytic intermediate resulting from the nucleophilic attack of the DAP3-D-Ala4 bond of an acyl-donor tetrapeptide stem by the active Cys residue of the LDTs.",
+      "claim_type": "EXPLICIT",
+      "source": "Formation of the 3\u21923 and PG\u2192Lpp bonds involves a common catalytic intermediate resulting from the nucleophilic attack of the DAP3-D-Ala4 bond of an acyl-donor tetrapeptide stem by the active Cys residue of the LDTs, the release of D-Ala4, and the formation of a D-Ala4-Cys thioester bond.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of LDT catalytic mechanism, illustrated in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "9ef9c082-f699-4c71-8df4-1c42055906a6",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C77",
+      "claim": "For the formation of a 3\u21923 cross-link, the side-chain amino group of DAP at the third position of an acyl acceptor stem reacts with the acyl-enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "For the formation of a 3\u21923 cross-link, the side-chain amino group of DAP at the third position of an acyl acceptor stem reacts with the acyl-enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of LDT catalytic mechanism, illustrated in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "f4705d5d-c9f5-490b-950d-0dbf31d4a470",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "claim_id": "C78",
+      "claim": "For the formation of a PG\u2192Lpp bond, the side-chain of the C-terminal Lys residue of Lpp (at position 58) reacts with the acyl-enzyme.",
+      "claim_type": "EXPLICIT",
+      "source": "For the formation of a PG\u2192Lpp bond, the side-chain of the C-terminal Lys residue of Lpp (at position 58) reacts with the acyl-enzyme.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "Based on established knowledge of Lpp-PG tethering mechanism, illustrated in Figure 1C.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "The manuscript provides background on bacterial cell envelope structure, including peptidoglycan (PG) composition, cross-linking mechanisms by PBPs and LDTs, and the structural role of the Braun lipoprotein (Lpp) in connecting the outer membrane to PG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1-C2 and C61-C73 describe established knowledge about bacterial cell envelope architecture, PG structure, and Lpp function. These are well-supported by citations to prior literature and represent accepted scientific knowledge illustrated in Figure 1A-C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "82d85266-1e6f-449c-a2b9-a143725f7247",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "The LDT enzyme family in E. coli includes six paralogues with distinct functions: YcbB and YnhG form 3\u21923 cross-links, ErfK/Ybis/YcfS tether Lpp to PG, and YafK hydrolyzes PG\u2192Lpp bonds. These enzymes share a common catalytic mechanism involving a cysteine nucleophile.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C7-C10 and C74-C78 accurately describe the LDT enzyme family based on established knowledge and prior citations (Magnet et al., 2008; Mainardi et al., 2005; Bahadur et al., 2021; Winkle et al., 2021). The catalytic mechanisms are well-characterized and illustrated in Figure 1C.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "ed164a47-9f68-479d-a1c2-70a8db1c5962",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Lpp is the most abundant lipoprotein in E. coli with approximately one-third attached to PG. This connection stabilizes the bacterial envelope and controls the distance between inner and outer membranes, which is critical for stress sensing.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C11-C16 describe established knowledge about Lpp abundance, distribution, and function, supported by citations to Sanders and Pavelka, 2013; Asmar et al., 2017; and Matheli\u00e9-Guinlet et al., 2020. The phenotypes of mutants lacking Lpp-PG tethering provide functional evidence.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "0bf292db-20a2-4a7c-b6ca-97440ab79b5b",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Prior work established that YafK hydrolyzes PG\u2192Lpp bonds in vitro, but deletion of yafK did not decrease overall Lpp-to-PG tethering in the absence of stress, suggesting either compensatory mechanisms or that YafK activity is balanced by LDT-mediated bond formation.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C17-C18 accurately report findings from Bahadur et al., 2021 and Winkle et al., 2021. The paradoxical lack of phenotype in \u0394yafK mutants motivates the current study's investigation of YafK function in vivo.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "The authors used isotope pulse-chase labeling with mass spectrometry to track Lpp-PG tethering dynamics. E. coli BW25113 and \u0394yafK strains were grown in heavy isotope medium, switched to light isotope medium, and PG was extracted and analyzed by MS/MS at multiple time points.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C53-C60 describe the experimental methodology, which is well-documented with reference to detailed procedures in Atze et al., 2022. The approach is technically sound and appropriate for tracking isotope incorporation kinetics. Results are shown in Figures 2-4 and Tables 1.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "903feba6-c16e-4f58-840a-0199faaa5563",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Lpp is not tethered to PG precursors (lipid II) prior to polymerization, unlike sortase-mediated protein anchoring in Gram-positive bacteria. Instead, Lpp is incorporated into expanding lateral cell walls independently from sites of new disaccharide-peptide subunit incorporation, as evidenced by the late appearance of new\u2192new isotopologues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C19-C22 and C44-C46 are well-supported by the isotope labeling data in Figures 2 and 3A. The low abundance of new\u2192new Tri\u2192KR isotopologues at early time points directly demonstrates spatial independence of Lpp tethering from PG subunit incorporation, distinguishing this mechanism from sortase-mediated anchoring (Dramsi et al., 2008).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "89b548d0-04e6-4368-ab45-d354e75553ac",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "The mode of PG subunit insertion differs between lateral walls (one-at-a-time insertion creating a mosaic) and septum (mainly new subunits). The low abundance of new\u2192new isotopologues at early time points suggests that Lpp is incorporated in very limited amounts into nascent septal PG.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C23-C26 and C5 combine established knowledge (C23-C25, supported by de Jonge et al., 1989) with a speculative inference (C26, C5) about septal Lpp incorporation. While the low abundance of new\u2192new isotopologues is consistent with limited septal Lpp incorporation, alternative explanations (e.g., delayed Lpp synthesis, different kinetics) are not ruled out. Direct visualization or septum-specific analysis would strengthen this conclusion.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "670bc955-42c3-43a2-9f26-31772e497aa0",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "YafK actively hydrolyzes tripeptide\u2192Lpp bonds in vivo, as demonstrated by slower decrease in old\u2192old isotopologues in the \u0394yafK mutant compared to wild-type. At early time points (0-25 min), YafK has little impact on old\u2192new isotopologues, but at later times, the proportion of old\u2192new isotopologues levels off earlier in wild-type, consistent with YafK-mediated hydrolysis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C27-C31 are well-supported by the comparative kinetic data in Figure 3B-C. The differential rates of isotopologue decay between BW25113 and \u0394yafK strains provide direct evidence for YafK activity in vivo. The interpretation that YafK hydrolyzes old\u2192new isotopologues to generate light Lpp for cross-linking to light stems is logically sound.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "557767b6-750b-493e-bbd0-610927a34e8b",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "The higher relative abundance of new\u2192old isotopologues in wild-type compared to \u0394yafK mutant at all time points indicates that YafK-mediated hydrolysis results in shuffling of Lpp between PG stem peptides. Heavy Lpp molecules used for new\u2192old formation originate from both the old pool of free Lpp and YafK-mediated hydrolysis of old\u2192old isotopologues.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C35 are supported by the experimental data in Figure 3D showing consistently higher new\u2192old isotopologues in BW25113 versus \u0394yafK. The inference that this reflects Lpp shuffling is logical and consistent with YafK's known hydrolytic activity. The proposed sources of heavy Lpp are reasonable given the experimental design.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "At least 50% of tripeptide\u2192Lpp bonds are hydrolyzed in one generation. This estimate is based on the observation that old tripeptide stems decrease fourfold in wild-type versus twofold in \u0394yafK (Figure 4C-D), while old Lpp decreases twofold in both strains (Figure 4A-B), indicating no proteolytic degradation of released Lpp. The 50% estimate is conservative since released old Lpp can be re-cross-linked to old stems.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C36-C43 present a quantitative analysis of YafK activity supported by Figure 4 data. The logic is sound: the twofold difference in old tripeptide decay rates between strains (fourfold vs. twofold) directly indicates ~50% hydrolysis by YafK. The observation that old Lpp decreases identically in both strains rules out degradation. The acknowledgment that this is a minimum estimate (C43) appropriately recognizes the possibility of re-cross-linking.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "63282f98-38e8-4d22-b6c2-4b7c1133008c",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Free and PG-tethered forms of Lpp are in dynamic equilibrium. Formation of new\u2192old isotopologues in the \u0394yafK mutant demonstrates that existing (old) Lpp from the outer leaflet of the outer membrane is translocated to the periplasm and tethered to newly synthesized PG subunits, establishing that Lpp pools are not spatially segregated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C4, C6, and C47-C49 represent a key conclusion supported by Figure 3 data. The formation of new\u2192old isotopologues in the absence of YafK (C48) directly demonstrates that old free Lpp can be tethered to new PG, requiring translocation from the outer to inner leaflet of the OM (C49). This establishes dynamic equilibrium between free and tethered Lpp pools, contradicting the possibility raised by Asmar and Collet, 2018 (C47).",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "48c585e4-d11c-4dce-9d27-134d251c15a2",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "The dynamic equilibrium between free and PG-tethered Lpp may be physiologically relevant for spatially controlling outer membrane vesicle formation and their periplasmic content, since PG-tethered Lpp is expected to prevent OM budding while vesicles are released from domains lacking tethered Lpp.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C50-C52 present a speculative physiological interpretation. While the connection between Lpp tethering and vesiculation is supported by prior work (Schwechheimer et al., 2014; McMillan and Kuehn, 2021), the specific proposal that dynamic Lpp equilibrium spatially controls vesicle formation is not directly tested. This remains a plausible hypothesis requiring experimental validation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "1ecc7f5e-680f-4e58-8f24-127ca8c3ebde",
+      "content_id": "a8116245-4f8e-4867-8b4b-26ddab52406e",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Prior work by the authors (Atze et al., 2022) showed that PG polymerization operates according to different modes for septum versus lateral wall formation, and for growth in the presence or absence of \u03b2-lactams in engineered strains relying exclusively on LDTs.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C3 accurately summarizes findings from the authors' previous publication (Atze et al., 2022), providing context for the current methodological approach. This is appropriately cited prior work.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "b81180ee-9a4b-411f-a48a-b9baca4199c4",
+      "content_id": "bcba2c7d-48ed-4aae-8269-40dc1a330202",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "YafK actively hydrolyzes tripeptide\u2192Lpp bonds, with at least 50% of these bonds hydrolyzed in one generation. This was demonstrated by comparing the kinetics of isotopologue abundance in wild-type BW25113 versus \u0394yafK mutant strains using isotope-labeling mass spectrometry.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers explicitly affirm this finding, stating 'The evidence supporting the molecular function of YafK and that lpp molecules are shuffled on and off the peptidoglycan is solid.' This directly validates the claims about YafK's hydrolytic activity and the quantification of bond hydrolysis.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "cbfe83b8-a9a1-40c6-b287-e05935004eaf",
+      "content_id": "bcba2c7d-48ed-4aae-8269-40dc1a330202",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "LDTs mediate intense shuffling of Lpp between PG stems, establishing a dynamic equilibrium between PG-tethered and free forms of Lpp. This was demonstrated by the formation of new\u2192old isotopologues and differential isotopologue patterns between wild-type and \u0394yafK strains.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers confirm this result, stating 'The evidence supporting the molecular function of YafK and that lpp molecules are shuffled on and off the peptidoglycan is solid.' This explicitly validates the dynamic equilibrium and shuffling mechanism claims.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "f09ba80c-4eda-4dc2-a9af-5a46af7fb607",
+      "content_id": "bcba2c7d-48ed-4aae-8269-40dc1a330202",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Lpp and disaccharide-peptide subunits are independently incorporated into expanding lateral cell walls, with Lpp not being tethered to PG precursors prior to polymerization. The tethering occurs spatially independently from sites of new subunit incorporation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers describe the study as confirming 'the timing of its attachment to the peptidoglycan' and do not challenge these spatial independence claims. The acceptance of the overall methodology and conclusions implicitly supports these findings about incorporation patterns.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "203404ae-5687-4367-8d66-0aae8adad54f",
+      "content_id": "bcba2c7d-48ed-4aae-8269-40dc1a330202",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "Newly synthesized septum PG appears to contain small amounts of tethered Lpp, as inferred from low abundance of new\u2192new isotopologues at early time points.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewers note 'some of the other data still remain incomplete in the revised version,' which may encompass this more speculative claim about septal PG. The claim is inferential and based on limited direct evidence, and reviewers do not explicitly validate it.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778",
+      "content_id": "bcba2c7d-48ed-4aae-8269-40dc1a330202",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "Isotope-labeling mass spectrometry experiments revealed distinct kinetic patterns of isotopologue formation (old\u2192old, old\u2192new, new\u2192old, new\u2192new) that differ between wild-type and \u0394yafK strains, demonstrating that YafK-mediated hydrolysis does not result in proteolytic degradation of released Lpp.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewers affirm the experimental approach, stating the study 'describes a single set of label-chase mass spectrometry experiments to confirm the molecular function of YafK.' The solid evidence assessment validates these detailed kinetic observations.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "eeda4792-2d39-428a-a7b5-d9d4c95bd07f",
+      "content_id": "bcba2c7d-48ed-4aae-8269-40dc1a330202",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "The dynamic equilibrium between free and PG-tethered Lpp may be physiologically relevant to spatially control the formation of OM vesicles and their periplasmic content.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "The anonymous reviewer explicitly criticizes the lack of physiological context, stating 'The authors present data on outer membrane vesicle (OMV) production in different mutants, but they state that this is beyond the scope of the current manuscript, which I disagree with.' This indicates the physiological relevance claims lack adequate experimental support.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "be0b8f95-e225-4d2a-8da0-674f8065016f",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "d7b41355-9018-47d9-9c3b-028551eeca56",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "6fb7369d-cd43-4103-923d-0decc494ce50",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "653c515b-c48d-40b9-b89b-47ded8a58838",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "0ef42b68-07a5-41c5-8370-96482c56dd31",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "e39b6bd1-020b-4896-a248-347490d67640",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "213cfdb7-06a7-46f7-9285-f00c0e4b3b34",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "2870c037-0285-4d41-b52d-97168884c5c6",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "7ccd818d-3d03-46c0-b5ee-7de76a429906",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "1239f210-1992-4d5f-a076-d9f33f859508",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "6c2cc646-c100-4c4e-9176-f8de05ffb8ff",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "51a93503-aab9-4b04-955c-fcf710077802",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "5070be45-739f-4bfc-a89e-67404e66b292",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "c61e2cbb-d5eb-4512-9e45-9f3a6b2cc4b1",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "35a6e9cc-9b9a-48ea-b635-85ee01d2b5a9",
+      "result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5"
+    },
+    {
+      "claim_id": "efb2781c-79bb-4d9a-9bd9-22db41b69f04",
+      "result_id": "82d85266-1e6f-449c-a2b9-a143725f7247"
+    },
+    {
+      "claim_id": "e6585f36-d54d-4808-91da-26b59a6e3824",
+      "result_id": "82d85266-1e6f-449c-a2b9-a143725f7247"
+    },
+    {
+      "claim_id": "ca1e4ed1-e78d-4414-a70a-6efedf6aae86",
+      "result_id": "82d85266-1e6f-449c-a2b9-a143725f7247"
+    },
+    {
+      "claim_id": "da93381d-5be4-40d2-877f-9640a52a45f7",
+      "result_id": "82d85266-1e6f-449c-a2b9-a143725f7247"
+    },
+    {
+      "claim_id": "2b40f2a0-e525-4067-94b9-d6a992607c3e",
+      "result_id": "82d85266-1e6f-449c-a2b9-a143725f7247"
+    },
+    {
+      "claim_id": "aa01aee3-e008-4a12-b8f5-16977cfb595d",
+      "result_id": "82d85266-1e6f-449c-a2b9-a143725f7247"
+    },
+    {
+      "claim_id": "3da3fe32-14a9-46b8-90a0-bc6dc3e8ac7c",
+      "result_id": "82d85266-1e6f-449c-a2b9-a143725f7247"
+    },
+    {
+      "claim_id": "9ef9c082-f699-4c71-8df4-1c42055906a6",
+      "result_id": "82d85266-1e6f-449c-a2b9-a143725f7247"
+    },
+    {
+      "claim_id": "f4705d5d-c9f5-490b-950d-0dbf31d4a470",
+      "result_id": "82d85266-1e6f-449c-a2b9-a143725f7247"
+    },
+    {
+      "claim_id": "4d72586c-8fda-487f-b9bf-d7844efa43ac",
+      "result_id": "ed164a47-9f68-479d-a1c2-70a8db1c5962"
+    },
+    {
+      "claim_id": "da899b5f-07fe-4c5f-a42d-fe1bec886866",
+      "result_id": "ed164a47-9f68-479d-a1c2-70a8db1c5962"
+    },
+    {
+      "claim_id": "474066ba-e4a1-4192-a521-f76c12839e40",
+      "result_id": "ed164a47-9f68-479d-a1c2-70a8db1c5962"
+    },
+    {
+      "claim_id": "b752d9f1-c41c-40cb-bd21-5a1a6f7d4d04",
+      "result_id": "ed164a47-9f68-479d-a1c2-70a8db1c5962"
+    },
+    {
+      "claim_id": "e1a207a2-ceb6-4e93-a314-9c98666d950b",
+      "result_id": "ed164a47-9f68-479d-a1c2-70a8db1c5962"
+    },
+    {
+      "claim_id": "2efc0e11-d138-4509-bce1-0b536a078081",
+      "result_id": "ed164a47-9f68-479d-a1c2-70a8db1c5962"
+    },
+    {
+      "claim_id": "c10b141e-ee0f-4032-95b5-5e51e28bc985",
+      "result_id": "0bf292db-20a2-4a7c-b6ca-97440ab79b5b"
+    },
+    {
+      "claim_id": "5ed5a21c-a126-4a30-8b29-9d1dcc75ee30",
+      "result_id": "0bf292db-20a2-4a7c-b6ca-97440ab79b5b"
+    },
+    {
+      "claim_id": "9eb49821-9100-4ae5-b62c-f68130b5e414",
+      "result_id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa"
+    },
+    {
+      "claim_id": "639c8857-a695-4324-9439-0490efa591c1",
+      "result_id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa"
+    },
+    {
+      "claim_id": "89b802c2-8e1e-489f-ba23-f126cb2eace0",
+      "result_id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa"
+    },
+    {
+      "claim_id": "0446d1b1-eecc-4400-81a4-bf155993ae8f",
+      "result_id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa"
+    },
+    {
+      "claim_id": "7f4de7fe-110f-44d2-9af1-410a104dc3f2",
+      "result_id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa"
+    },
+    {
+      "claim_id": "5008a6bb-9912-4119-b856-7fb9aae6cd9b",
+      "result_id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa"
+    },
+    {
+      "claim_id": "d7223183-cd74-49a0-8baa-d70e82a81d1d",
+      "result_id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa"
+    },
+    {
+      "claim_id": "8d8b4818-152a-451a-9eaf-221945ce5936",
+      "result_id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa"
+    },
+    {
+      "claim_id": "a1317540-ce3d-459a-a3ed-cfe4336b0a80",
+      "result_id": "903feba6-c16e-4f58-840a-0199faaa5563"
+    },
+    {
+      "claim_id": "968fd6ab-95fe-441a-a814-36caacde0455",
+      "result_id": "903feba6-c16e-4f58-840a-0199faaa5563"
+    },
+    {
+      "claim_id": "063cd172-205c-4888-9b76-48fec840caf7",
+      "result_id": "903feba6-c16e-4f58-840a-0199faaa5563"
+    },
+    {
+      "claim_id": "cfda1ccc-2a72-44b6-8ee6-8a0bcdbb220e",
+      "result_id": "903feba6-c16e-4f58-840a-0199faaa5563"
+    },
+    {
+      "claim_id": "01d79b28-2a1f-485f-b4f1-9333d02b039d",
+      "result_id": "903feba6-c16e-4f58-840a-0199faaa5563"
+    },
+    {
+      "claim_id": "dca02f90-7d91-404a-a3a5-5c443dda595e",
+      "result_id": "903feba6-c16e-4f58-840a-0199faaa5563"
+    },
+    {
+      "claim_id": "6341fed4-5d7f-444e-ade4-b75c33806132",
+      "result_id": "903feba6-c16e-4f58-840a-0199faaa5563"
+    },
+    {
+      "claim_id": "d0a9c5ab-17e1-4bd2-971d-8687241d0a98",
+      "result_id": "89b548d0-04e6-4368-ab45-d354e75553ac"
+    },
+    {
+      "claim_id": "c739f310-4543-49a6-b7ef-422cda04509f",
+      "result_id": "89b548d0-04e6-4368-ab45-d354e75553ac"
+    },
+    {
+      "claim_id": "751e3e6c-36d6-4da7-98c9-1da77a1708de",
+      "result_id": "89b548d0-04e6-4368-ab45-d354e75553ac"
+    },
+    {
+      "claim_id": "4af6e691-2c92-4333-aecd-f57f3d21193b",
+      "result_id": "89b548d0-04e6-4368-ab45-d354e75553ac"
+    },
+    {
+      "claim_id": "f6795b73-ba67-4d5a-be1f-838e1f8d97fd",
+      "result_id": "89b548d0-04e6-4368-ab45-d354e75553ac"
+    },
+    {
+      "claim_id": "bf1f4258-2ea5-4abd-9658-5460186d7eab",
+      "result_id": "670bc955-42c3-43a2-9f26-31772e497aa0"
+    },
+    {
+      "claim_id": "043988c5-5753-47f2-b6f3-4ccd29bde647",
+      "result_id": "670bc955-42c3-43a2-9f26-31772e497aa0"
+    },
+    {
+      "claim_id": "ae86e1e2-1285-4dff-bca3-087e2f0cad1e",
+      "result_id": "670bc955-42c3-43a2-9f26-31772e497aa0"
+    },
+    {
+      "claim_id": "fa192a06-cd39-4ad4-acde-b58f7f2ac628",
+      "result_id": "670bc955-42c3-43a2-9f26-31772e497aa0"
+    },
+    {
+      "claim_id": "5a40de9e-8498-466f-9430-72ec34c1550f",
+      "result_id": "670bc955-42c3-43a2-9f26-31772e497aa0"
+    },
+    {
+      "claim_id": "55691b19-045c-4c0d-a142-aed598f5a8ad",
+      "result_id": "557767b6-750b-493e-bbd0-610927a34e8b"
+    },
+    {
+      "claim_id": "30afc269-930e-43a9-8af3-10839d16cad0",
+      "result_id": "557767b6-750b-493e-bbd0-610927a34e8b"
+    },
+    {
+      "claim_id": "0b5d7a40-5b8f-4832-a6a7-070e4f7a2c64",
+      "result_id": "557767b6-750b-493e-bbd0-610927a34e8b"
+    },
+    {
+      "claim_id": "7255ca2c-4994-4a43-b61b-b777cad435de",
+      "result_id": "557767b6-750b-493e-bbd0-610927a34e8b"
+    },
+    {
+      "claim_id": "ed8755c2-92b4-4182-aca6-9f4677c0e9b7",
+      "result_id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa"
+    },
+    {
+      "claim_id": "99cb69ed-8543-4ba5-9cdb-dcf200813e2e",
+      "result_id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa"
+    },
+    {
+      "claim_id": "08ad69b2-bece-4b87-9fa0-e19ce5121dff",
+      "result_id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa"
+    },
+    {
+      "claim_id": "27ab3179-eaf8-4849-9f17-9a9dbdc247c6",
+      "result_id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa"
+    },
+    {
+      "claim_id": "09ea96cc-339d-4fa0-858a-3ab833b4b3d9",
+      "result_id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa"
+    },
+    {
+      "claim_id": "5b3ffcbd-7bd7-4380-9cbe-27139ccaf800",
+      "result_id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa"
+    },
+    {
+      "claim_id": "d972bfc2-4f40-409e-81d2-3837a8679120",
+      "result_id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa"
+    },
+    {
+      "claim_id": "7bc0998d-a4b5-47ee-a56e-ba1fd82bc1ab",
+      "result_id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa"
+    },
+    {
+      "claim_id": "a2eb7481-9072-42f1-b01f-296b2009bc2a",
+      "result_id": "63282f98-38e8-4d22-b6c2-4b7c1133008c"
+    },
+    {
+      "claim_id": "18de6b1c-e288-456d-8d57-7ab62bcd1fa8",
+      "result_id": "63282f98-38e8-4d22-b6c2-4b7c1133008c"
+    },
+    {
+      "claim_id": "a55147f2-09bf-4f0f-978f-fa500ff2ed7b",
+      "result_id": "63282f98-38e8-4d22-b6c2-4b7c1133008c"
+    },
+    {
+      "claim_id": "aaa3b887-006f-4a0b-a077-743362944159",
+      "result_id": "63282f98-38e8-4d22-b6c2-4b7c1133008c"
+    },
+    {
+      "claim_id": "2edcc62b-6545-44b5-b0c9-c009c652a493",
+      "result_id": "63282f98-38e8-4d22-b6c2-4b7c1133008c"
+    },
+    {
+      "claim_id": "716f549d-c236-42ae-9af8-c3f8f41e0a70",
+      "result_id": "48c585e4-d11c-4dce-9d27-134d251c15a2"
+    },
+    {
+      "claim_id": "d8ca134e-5113-4216-9ea1-94bc4f4eb59c",
+      "result_id": "48c585e4-d11c-4dce-9d27-134d251c15a2"
+    },
+    {
+      "claim_id": "79bad55f-585f-4dc3-8720-ef51a07bd6b2",
+      "result_id": "48c585e4-d11c-4dce-9d27-134d251c15a2"
+    },
+    {
+      "claim_id": "52b56499-7ba7-4b89-8441-f4ae35fe0a12",
+      "result_id": "1ecc7f5e-680f-4e58-8f24-127ca8c3ebde"
+    },
+    {
+      "claim_id": "bf1f4258-2ea5-4abd-9658-5460186d7eab",
+      "result_id": "b81180ee-9a4b-411f-a48a-b9baca4199c4"
+    },
+    {
+      "claim_id": "ed8755c2-92b4-4182-aca6-9f4677c0e9b7",
+      "result_id": "b81180ee-9a4b-411f-a48a-b9baca4199c4"
+    },
+    {
+      "claim_id": "5b3ffcbd-7bd7-4380-9cbe-27139ccaf800",
+      "result_id": "b81180ee-9a4b-411f-a48a-b9baca4199c4"
+    },
+    {
+      "claim_id": "d972bfc2-4f40-409e-81d2-3837a8679120",
+      "result_id": "b81180ee-9a4b-411f-a48a-b9baca4199c4"
+    },
+    {
+      "claim_id": "18de6b1c-e288-456d-8d57-7ab62bcd1fa8",
+      "result_id": "cbfe83b8-a9a1-40c6-b287-e05935004eaf"
+    },
+    {
+      "claim_id": "55691b19-045c-4c0d-a142-aed598f5a8ad",
+      "result_id": "cbfe83b8-a9a1-40c6-b287-e05935004eaf"
+    },
+    {
+      "claim_id": "7255ca2c-4994-4a43-b61b-b777cad435de",
+      "result_id": "cbfe83b8-a9a1-40c6-b287-e05935004eaf"
+    },
+    {
+      "claim_id": "aaa3b887-006f-4a0b-a077-743362944159",
+      "result_id": "cbfe83b8-a9a1-40c6-b287-e05935004eaf"
+    },
+    {
+      "claim_id": "2edcc62b-6545-44b5-b0c9-c009c652a493",
+      "result_id": "cbfe83b8-a9a1-40c6-b287-e05935004eaf"
+    },
+    {
+      "claim_id": "a2eb7481-9072-42f1-b01f-296b2009bc2a",
+      "result_id": "f09ba80c-4eda-4dc2-a9af-5a46af7fb607"
+    },
+    {
+      "claim_id": "063cd172-205c-4888-9b76-48fec840caf7",
+      "result_id": "f09ba80c-4eda-4dc2-a9af-5a46af7fb607"
+    },
+    {
+      "claim_id": "cfda1ccc-2a72-44b6-8ee6-8a0bcdbb220e",
+      "result_id": "f09ba80c-4eda-4dc2-a9af-5a46af7fb607"
+    },
+    {
+      "claim_id": "01d79b28-2a1f-485f-b4f1-9333d02b039d",
+      "result_id": "f09ba80c-4eda-4dc2-a9af-5a46af7fb607"
+    },
+    {
+      "claim_id": "6341fed4-5d7f-444e-ade4-b75c33806132",
+      "result_id": "f09ba80c-4eda-4dc2-a9af-5a46af7fb607"
+    },
+    {
+      "claim_id": "f6795b73-ba67-4d5a-be1f-838e1f8d97fd",
+      "result_id": "203404ae-5687-4367-8d66-0aae8adad54f"
+    },
+    {
+      "claim_id": "4af6e691-2c92-4333-aecd-f57f3d21193b",
+      "result_id": "203404ae-5687-4367-8d66-0aae8adad54f"
+    },
+    {
+      "claim_id": "a1317540-ce3d-459a-a3ed-cfe4336b0a80",
+      "result_id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778"
+    },
+    {
+      "claim_id": "968fd6ab-95fe-441a-a814-36caacde0455",
+      "result_id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778"
+    },
+    {
+      "claim_id": "043988c5-5753-47f2-b6f3-4ccd29bde647",
+      "result_id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778"
+    },
+    {
+      "claim_id": "fa192a06-cd39-4ad4-acde-b58f7f2ac628",
+      "result_id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778"
+    },
+    {
+      "claim_id": "30afc269-930e-43a9-8af3-10839d16cad0",
+      "result_id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778"
+    },
+    {
+      "claim_id": "27ab3179-eaf8-4849-9f17-9a9dbdc247c6",
+      "result_id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778"
+    },
+    {
+      "claim_id": "09ea96cc-339d-4fa0-858a-3ab833b4b3d9",
+      "result_id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778"
+    },
+    {
+      "claim_id": "79bad55f-585f-4dc3-8720-ef51a07bd6b2",
+      "result_id": "eeda4792-2d39-428a-a7b5-d9d4c95bd07f"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "0d9b9d82-5532-4fa2-90a7-03315bf00307",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "3fdeafba-08ae-4b59-8c2d-afe6c1d10ffa",
+      "peer_result_id": "b81180ee-9a4b-411f-a48a-b9baca4199c4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate YafK's hydrolytic activity and quantification of bond hydrolysis (C27, C36, C41, C42). OpenEval provides detailed technical support for the quantitative analysis, while peer reviewers explicitly affirm the evidence as 'solid,' showing strong agreement on this core finding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "ffb384bd-c63e-4352-b166-74bcb90af940",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "63282f98-38e8-4d22-b6c2-4b7c1133008c",
+      "peer_result_id": "cbfe83b8-a9a1-40c6-b287-e05935004eaf",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address the dynamic equilibrium and Lpp shuffling mechanism (C6, C32, C35, C48, C49). OpenEval emphasizes the demonstration of old free Lpp tethering to new PG and transbilayer movement, while peer reviewers explicitly validate that 'lpp molecules are shuffled on and off the peptidoglycan,' showing strong concordance.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "fd2f4eb8-62af-4072-a530-5b68bee3498c",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "903feba6-c16e-4f58-840a-0199faaa5563",
+      "peer_result_id": "f09ba80c-4eda-4dc2-a9af-5a46af7fb607",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Both address spatial independence of Lpp tethering from PG incorporation (C4, C19, C20, C21, C22, C44, C46). OpenEval provides detailed support based on isotopologue data, while peer reviewers implicitly support these findings through acceptance of the methodology and overall conclusions about attachment timing.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "0e31ec62-39e4-48f2-a9b5-6b022d8cf8ed",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "89b548d0-04e6-4368-ab45-d354e75553ac",
+      "peer_result_id": "203404ae-5687-4367-8d66-0aae8adad54f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate the speculative claim about limited septal Lpp incorporation (C5, C26). OpenEval rates this as UNCERTAIN, noting alternative explanations are not ruled out, while peer reviewers also express uncertainty, noting 'some of the other data still remain incomplete.' Both recognize the inferential nature of this claim.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "307d5ab9-cd35-428e-9932-933ba8660bfd",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "670bc955-42c3-43a2-9f26-31772e497aa0",
+      "peer_result_id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address kinetic observations from comparative strain analysis (C19, C20, C27, C28, C30, C33, C39, C40). OpenEval supports the differential decay rates as evidence for YafK activity, while peer reviewers affirm the 'label-chase mass spectrometry experiments' and describe the evidence as solid, showing agreement on experimental validity.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "a5127472-fa16-4ecb-8b7b-0756bcfcef44",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "557767b6-750b-493e-bbd0-610927a34e8b",
+      "peer_result_id": "4b53c35b-95d0-4b92-8a54-6a78e9b29778",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both evaluate isotopologue data supporting Lpp shuffling (C32, C33, C35, C39, C40). OpenEval supports the interpretation of new\u2192old isotopologues as evidence of shuffling, while peer reviewers validate the overall experimental approach and molecular function findings, showing alignment.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "12170534-e007-4f4f-903e-fc1ff028642d",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "48c585e4-d11c-4dce-9d27-134d251c15a2",
+      "peer_result_id": "eeda4792-2d39-428a-a7b5-d9d4c95bd07f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Both address physiological implications regarding vesiculation (C52). OpenEval rates this as UNCERTAIN, noting the hypothesis requires experimental validation, while peer reviewers explicitly criticize the lack of physiological context and disagree with deferring OMV data. Both identify this as inadequately supported, though peer review is more critical.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "7d78cd92-845e-492c-913a-fcb26360bf5c",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "7c293ec7-ece7-4e47-a702-abba1f3fd1e5",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates established background knowledge about bacterial cell envelope architecture, PG structure, and Lpp function (C1, C2, C61-C73). No corresponding peer review evaluation found, as reviewers focused on novel experimental findings rather than background material.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "d9c1f07b-e538-4cf1-af14-f56a0d88b58b",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "82d85266-1e6f-449c-a2b9-a143725f7247",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates established knowledge about LDT enzyme family and catalytic mechanisms (C7-C10, C74-C78). No corresponding peer review evaluation found, as this represents background information rather than novel claims requiring peer validation.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "8d5cf032-e9fc-4a04-9559-d9eae97134d3",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ed164a47-9f68-479d-a1c2-70a8db1c5962",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates established knowledge about Lpp abundance, distribution, and function (C11-C16). No corresponding peer review evaluation found, as reviewers did not separately assess this background material.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "a297bbb4-ae3b-456b-8a7d-252bbfc84cfd",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "0bf292db-20a2-4a7c-b6ca-97440ab79b5b",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates prior findings about \u0394yafK mutants from Bahadur et al., 2021 and Winkle et al., 2021 (C17, C18). No corresponding peer review evaluation found, as this represents cited prior work rather than novel findings.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "43f45741-05b6-406b-93a3-746596844e63",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "4f9e4740-da6e-4224-94a5-8c0abe8343fa",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates the experimental methodology for isotope labeling (C53-C60). No corresponding peer review evaluation found as a separate item, though peer reviewers validated the overall experimental approach in their assessment of results.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    },
+    {
+      "id": "1021e241-36a1-4178-b466-9e8e73f3bc4e",
+      "submission_id": "3aee2d94-e8d8-4b6c-8eed-33cad162a9e3",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "1ecc7f5e-680f-4e58-8f24-127ca8c3ebde",
+      "peer_result_id": null,
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": null,
+      "openeval_result_type": "MINOR",
+      "peer_result_type": null,
+      "comparison_type": "disjoint",
+      "comparison": "OpenEval evaluates a summary of prior work from Atze et al., 2022 (C3). No corresponding peer review evaluation found, as this represents previously published methodology rather than novel claims.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T22:47:10.110522Z"
+    }
+  ]
+}

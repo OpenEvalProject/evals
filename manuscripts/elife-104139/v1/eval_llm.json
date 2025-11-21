@@ -1,0 +1,436 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C26",
+      "C27",
+      "C28"
+    ],
+    "result": "ReCappable-seq analysis of HEK293T cells reveals that most genes use multiple transcription start sites (TSSs), with an average of 9.5\u00b19 TSNs per gene among 9199 genes analyzed, and only ~9% of genes containing a single TSN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C26, C27, and C28 are directly supported by ReCappable-seq data presented in Figure 1A. The experimental methodology is appropriate for TSS mapping, and the statistical summary (mean, standard deviation, percentages) is clearly reported with adequate sample size (9199 genes, 87,624 TSNs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C22",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33"
+    ],
+    "result": "Previous m6Am mapping studies incorrectly assumed single TSNs per gene, leading to misclassification. For example, SRSF1 (previously designated m6Am) has ~41.5% non-A-TSS reads, and ADAR (previously classified as Gm) has ~71% A-initiated transcripts. Only ~24% of miCLIP-identified m6Am genes are primarily composed of A-TSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C22, C29-C33 are supported by ReCappable-seq data comparing TSN diversity with previous annotations. The reanalysis of published miCLIP data (Boulias et al., 2019) with new ReCappable-seq data demonstrates systematic misclassification in prior studies. The 80% threshold for 'primarily A-TSN' is reasonable and clearly defined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Previous m6Am mapping methods (miCLIP, m6Am-seq, m6ACE-seq) show poor overlap, with only 1.1% (84/7480) of sites found in all three methods and 9.7% (728/7480) found in at least two studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 are supported by Venn diagram analysis of published datasets (Figure 1\u2014figure supplement 1E). The low overlap indicates poor reproducibility or sensitivity issues in previous methods. However, the analysis does not distinguish whether discrepancies arise from technical limitations, biological differences, or annotation errors.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C37",
+      "C93"
+    ],
+    "result": "Sodium nitrite completely converts Am to Im while leaving m6Am intact, enabling chemical-based m6Am detection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C93 are directly supported by experimental validation using m7G-ppp-Am-initiated transcripts (Figure 2\u2014figure supplement 1A). The complete conversion demonstrates the chemical specificity required for m6Am quantification. This is a critical validation for the CROWN-seq method.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C40",
+      "C41"
+    ],
+    "result": "CROWN-seq achieves high TSN enrichment (~93% of reads map to TSN) and quantitative accuracy (Pearson's r=0.992 between expected and observed m6Am levels in standards).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40 and C41 are supported by experimental data from technical replicates using m6Am standards (Figure 2B, C). The high correlation (r=0.992) demonstrates excellent quantitative accuracy. The use of defined m6Am/Am mixtures provides appropriate validation standards.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "CROWN-seq identified 219,195 high-confidence TSNs (92,278 A-TSNs) in HEK293T cells, representing 12.3-fold more A-TSNs than all previous m6Am mapping methods combined. Nearly all mRNA A-TSNs showed high non-conversion rates, and 82.8% of previously reported m6Am sites were confirmed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by CROWN-seq data with appropriate coverage thresholds (\u226520 reads). The validation against previous methods (82.8% overlap) demonstrates reliability while the 12.3-fold increase shows superior sensitivity. The high non-conversion rates in mRNA A-TSNs are consistent with high m6Am stoichiometry. Only 12.2% of newly found A-TSNs are in Gencode v45, which could indicate either novel discoveries or false positives, though PCIF1 knockout validation (C122) supports their authenticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C47",
+      "C48",
+      "C49",
+      "C123"
+    ],
+    "result": "m6Am is nearly always a high stoichiometry modification across nine human cell lines, with average stoichiometry of 0.895\u00b10.03 in most cells. Only a small subset of mRNAs show lower m6Am stoichiometry. Cell lines show some variation (e.g., Jurkat E6.1: 0.933\u00b10.1; CCD841 CoN: 0.825\u00b10.2).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C6, C47-C49, and C123 are supported by CROWN-seq data across nine cell lines with adequate coverage (\u226550 reads per A-TSN). The high stoichiometry is consistent across cell types, though some variation exists. The statistical reporting (mean\u00b1SD) is appropriate. The claim is further validated by complete conversion in PCIF1 knockout cells (C122), ruling out RNA structure artifacts.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C50",
+      "C51"
+    ],
+    "result": "mRNA m6Am stoichiometry is positively correlated with PCIF1 expression (Pearson's r and p-value reported in Figure 3B), while CTBP2 (proposed PCIF1 coactivator) shows weak correlation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50 and C51 are supported by correlation analysis across nine cell lines (Figure 3B, C). The positive correlation with PCIF1 is mechanistically expected. However, the correlation analysis uses only nine data points, limiting statistical power. The weak CTBP2 correlation challenges previous proposals about its role as a PCIF1 coactivator, though this could reflect cell-type-specific effects not captured in this dataset.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56"
+    ],
+    "result": "A subset of genes (JUN, ENO1, MYC, ACTB) show low m6Am stoichiometry in some A-TSNs. GO analysis reveals enrichment for cellular respiration, ribosomal subunits, spliceosome, and nucleosome functions. Histone genes exhibit the lowest m6Am stoichiometry, particularly clustered histone genes (6p22.1-2, 1q21.1-2) with TATA-box and T-rich sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C56 are supported by CROWN-seq data (Figure 3E, F, G) and sequence analysis. The GO enrichment analysis is appropriate, though the statistical thresholds (p<0.05, q<0.1) are standard. The association between histone gene clusters, TATA-box presence, and low m6Am is well-documented with sequence evidence. The distinction between clustered and non-clustered histone genes is mechanistically interesting.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "m6Am stoichiometry correlates with specific TSS motifs. A-TSNs with lowest 5% m6Am exhibit VA+1RR motif, while highest 5% exhibit SSCA+1GC motif. Promoters with TATA-box show lower m6Am stoichiometry, especially in histone genes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C64 are supported by sequence analysis and motif discovery (Figure 4A, B, C, D). The correlation between nucleotide composition at specific positions and m6Am levels is clearly demonstrated. The motif analysis uses appropriate percentile binning (5th and 95th percentiles). Statistical significance is reported (p-values in Figure 4C, D). The association with TATA-box is consistent with the histone gene findings (C55).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C7",
+      "C65"
+    ],
+    "result": "m6Am is associated with increased transcript expression. Transcripts with the highest m6Am levels exhibit the highest overall expression levels in wild-type HEK293T and A549 cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C65 are supported by ReCappable-seq expression quantification with ERCC spike-in normalization (Figure 5A, Figure 5\u2014figure supplement 1D). The use of spike-ins improves quantification accuracy. The correlation is demonstrated across m6Am stoichiometry bins with statistical testing (p-values reported). However, correlation does not establish causation\u2014high m6Am could be a consequence rather than cause of high expression.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69"
+    ],
+    "result": "PCIF1 knockout differentially affects transcript expression based on m6Am stoichiometry and TSS motifs. A-TSNs with higher m6Am show reduced expression, while G-TSNs slightly increase. Transcripts using SSCA+1GC motif show the largest expression drop, while VA+1RR motif transcripts show minimal change.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C69 are supported by differential expression analysis using DESeq2 with appropriate replication (Figure 5B, C, D). The motif-specific effects are statistically significant (p-values reported). The differential effects based on TSS motifs provide mechanistic insight. However, the analysis uses baseMean \u2265100 as a threshold, which may exclude lowly expressed transcripts. The lack of effect on VA+1RR transcripts despite their m6Am content suggests m6Am function is context-dependent.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "m6Am does not substantially influence mRNA stability or translation. Reanalysis of published data shows no correlation between m6Am gene index and translation efficiency or RNA stability in PCIF1 knockout cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C101 are supported by reanalysis of published ribosome profiling and SLAM-seq data (Figure 5\u2014figure supplement 1A, B, C). The use of 'm6Am gene index' is a reasonable metric that accounts for TSN diversity. However, the reanalysis relies on published data from other labs, and the lack of effect could reflect limitations in the original studies or the gene-level aggregation approach. The conclusion that m6Am effects are transcription-related (C101) is an inference that requires additional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C8",
+      "C102",
+      "C103",
+      "C104"
+    ],
+    "result": "m6Am may be linked to transcription initiation mechanisms. Certain transcription initiation complexes (e.g., those using SSCA+1GC motif) rely on m6Am for efficient expression, while others (e.g., VA+1RR motif) do not.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C8, C102-C104 are inferences based on correlations between TSS motifs, m6Am stoichiometry, and expression changes upon PCIF1 knockout. While the correlations are well-supported, the mechanistic link to transcription initiation is speculative. The authors acknowledge this is correlative evidence and suggest m6Am 'may' have roles in transcription. Direct mechanistic experiments (e.g., transcription run-on assays, Pol II ChIP) would be needed to establish causation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "CROWN-seq quantified m6Am in snRNAs (U1, U2, U4, U4ATAC, U5, U7, U11, U12) and snoRNAs, identifying 51 m6Am sites including 29 unannotated variants. snRNA m6Am shows generally low stoichiometry (<0.3), high variability between genes and cell lines. U5 snRNAs show highest variability (31.6-fold range for RNU5E-1), while U2 and U7 show high, stable levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C80 are supported by CROWN-seq data across nine cell lines (Figure 6A, B). The identification of unannotated variants demonstrates the method's discovery power. The low stoichiometry and high variability in snRNAs contrasts sharply with mRNA, suggesting different regulatory mechanisms. The quantitative measurements are precise and reproducible. The 31.6-fold variation in RNU5E-1 is striking and biologically significant.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87"
+    ],
+    "result": "snRNA m6Am stoichiometry shows poor correlation with PCIF1 (r=0.204, p=0.597) but strong negative correlation with FTO expression (r=-0.773, p=0.014). FTO knockout increases m6Am in nearly all snRNA/snoRNA by ~0.2, including in 69 annotated and 202 newly identified pseudogenes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C87 are supported by correlation analysis and FTO knockout experiments (Figure 6C, D, E, F). The strong negative correlation with FTO and the effects of FTO knockout provide compelling evidence for FTO's role in snRNA demethylation. The identification of 202 pseudogene-like transcripts by sequence similarity is methodologically sound. However, the correlation analysis uses only nine cell lines, limiting statistical power. The p-value for PCIF1 correlation (0.597) indicates no significant relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "FTO has minimal effects on mRNA m6Am (weak correlation r=-0.239, p=0.535; small increases upon knockout) and internal m6A sites near 5' ends (p=0.00037 for 235 sites). FTO preferentially demethylates m6Am in snRNA, snoRNA, and pseudogenes compared to mRNA.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88-C92 are supported by CROWN-seq data in FTO knockout cells (Figure 6\u2014figure supplement 1A, B, D, E). The differential effects on snRNA/snoRNA versus mRNA are clear and statistically significant. However, the analysis of internal m6A is limited to sites near 5' ends due to CROWN-seq's design, so conclusions about genome-wide m6A effects cannot be drawn. The p-value of 0.00037 for internal m6A changes is significant but the effect size is described as 'small.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Low m6Am levels in snRNA/snoRNA are not solely due to FTO demethylation but result from inefficient PCIF1 methylation followed by FTO demethylation. FTO is a major determinant of snRNA/snoRNA m6Am levels across cell lines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C105-C107 are inferences based on the observation that FTO knockout does not increase snRNA m6Am to mRNA levels (C83, C84) combined with the poor PCIF1 correlation (C81) and strong FTO correlation (C82). The two-step model (inefficient methylation + demethylation) is a reasonable interpretation of the data. However, this is an inference rather than direct demonstration\u2014measuring PCIF1 activity on snRNA substrates would provide stronger evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C94",
+      "C95",
+      "C96",
+      "C97"
+    ],
+    "result": "CROWN-seq is an antibody-free method with superior sensitivity compared to previous m6Am mapping methods. Previous methods were biased toward high-abundance transcripts and high-abundance TSNs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94-C97 are supported by methodological description and comparative analysis (Figure 2I, J). The antibody-free approach avoids m6Am/m6A cross-reactivity issues. The sensitivity analysis (sites per million reads) demonstrates 189.4-fold higher sensitivity than the next best method. The bias toward high-abundance transcripts in previous methods is clearly shown. However, the sensitivity comparison may be confounded by different experimental designs and cell culture conditions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C108",
+      "C109",
+      "C110",
+      "C98"
+    ],
+    "result": "CROWN-seq reveals a markedly distinct m6Am distribution from previous studies, establishing the first quantitative, transcript isoform-specific m6Am map. The earlier idea that many mRNAs contain Am is largely incorrect; m6Am is the predominant form.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98, C108-C110 are summary claims supported by the collective CROWN-seq data. The high m6Am stoichiometry across cell lines (C47-C49) contradicts early chromatography studies (C19) that suggested Am predominance. The authors provide a plausible explanation for the discrepancy (snRNA/rRNA contamination, C124). The claim of being 'first quantitative, transcript isoform-specific' map is justified by the methodology and scope of the study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "m6Am functions are more correlated with transcription initiation than mRNA stability.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C111 is a summary inference supported by the lack of stability/translation effects (C99, C100) combined with the expression and TSS motif associations (C65-C69). However, this conclusion rests on reanalysis of published data for stability/translation and correlative evidence for transcription effects. Direct mechanistic experiments would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C121",
+      "C122"
+    ],
+    "result": "RNA secondary structure does not impair conversion in CROWN-seq. Complete conversion in PCIF1 knockout cells confirms that high non-conversion rates in wild-type reflect m6Am rather than structural protection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C121 and C122 are supported by analysis of structured regions (Figure 3\u2014figure supplement 1C) and PCIF1 knockout validation. The complete conversion in knockout cells is a critical control that rules out RNA structure artifacts. This addresses a major potential confounding factor in chemical conversion methods.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C57",
+      "C58"
+    ],
+    "result": "PCIF1 binds to RNA polymerase II and is enriched in promoter regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57 and C58 are supported by citations to previous studies (Fan et al., 2003; Sugita et al., 2021). These are established findings from prior work, not new results from this study. The authors cite these facts to support their interpretation of m6Am's role in transcription.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C112",
+      "C113"
+    ],
+    "result": "YTHDF proteins do not bind m6Am based on lack of 5' end binding in previous iCLIP studies. Specific m6Am-binding proteins might enable its unique transcription functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C112 is an inference from negative data (lack of YTHDF binding at 5' ends in Patil et al., 2016). While the inference is reasonable, negative data has limitations\u2014absence of evidence is not evidence of absence. Claim C113 is speculation about potential m6Am readers. Direct binding assays would be needed to definitively rule out YTHDF binding to m6Am.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118"
+    ],
+    "result": "Speculative proposals about m6Am functions: m6Am may affect snRNA functions (splicing, transcription); PCIF1/FTO knockout phenotypes may result from altered snRNA/snoRNA; m6Am may enhance transcription elongation for SSCA+1GC motif complexes; PCIF1 may have non-catalytic functions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C114-C118 are explicitly speculative (using 'may,' 'raise the possibility,' 'it is possible'). These are reasonable hypotheses based on the data but lack direct experimental validation. C117 is acknowledged as a study limitation. C118 references a recent study (An et al., 2024) that proposed a mechanism involving PCF11, but the authors note uncertainty about whether this applies to their motif-specific findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C119",
+      "C120"
+    ],
+    "result": "An et al., 2024 suggested m6Am loss relates to enhanced premature termination and proposed m6Am sequesters PCF11 to promote transcription.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C119 and C120 accurately cite findings from An et al., 2024. These are not results from the current study but rather contextualization of the authors' findings within recent literature. The citation appears accurate based on the description provided.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C23",
+      "C24",
+      "C25",
+      "C39"
+    ],
+    "result": "Background claims about m6Am: m6Am is located at the first transcribed position in mRNA/snRNA, is the most common modified nucleotide in mRNA, is essential for diverse physiological processes, and is formed by CMTR1 and PCIF1. PCIF1 depletion affects various cellular processes. Previous studies used antibody-based mapping methods and showed m6Am is a transient intermediate in snRNA biogenesis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1, C2, C9-C25, and C39 are background knowledge supported by citations to previous literature. These establish the context for the study. The citations appear appropriate and the claims are consistent with established knowledge in the field. These are not new findings but rather accurate summaries of prior work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Interpretive claims: Early chromatography findings of high Am may reflect snRNA/rRNA contamination; genes with high m6Am gene index are likely preferentially affected by PCIF1 depletion; mRNAs initiating with m6Am may have shared regulatory mechanisms; cellular pathways targeting m6Am-initiated mRNAs are not well known.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C124-C127 are interpretations and speculations. C124 is a reasonable explanation for discrepancies with early studies but is not directly tested. C125 is a logical inference from the m6Am gene index concept. C126 is speculation about potential regulatory mechanisms. C127 is a statement about current knowledge gaps. These are reasonable interpretations but lack direct experimental support.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,309 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C2",
+      "C3",
+      "C4",
+      "C51",
+      "C52",
+      "C60",
+      "C61",
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C74",
+      "C75"
+    ],
+    "result": "CDK8/19 double knockout (iDKO) males exhibit severe reproductive system atrophy with complete infertility, characterized by reduced organ size, blocked spermatogenesis at pachytene stage, and absence of postmeiotic cells, while single knockouts show milder or no morphological phenotypes.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple independent lines of evidence (histology C63-C74, flow cytometry C97, fertility assays C60-C61, temporal analysis C75) consistently demonstrate the severe iDKO phenotype. The comparison to single knockouts (C3, C76-C77) strengthens the conclusion that both kinases must be absent for the full phenotype. Sample sizes appear adequate (n>3) with appropriate statistical tests.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "Flow cytometry analysis reveals that iDKO spermatogonia successfully enter meiosis (4n cells present) but cannot progress beyond pachytene of meiosis I, resulting in absence of haploid spermatids and massive cell death.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Flow cytometry data (C97-C101) combined with immunofluorescence staining (C102) provide converging evidence for meiotic arrest at pachytene. The presence of 4n cells but absence of 1n cells (C99-C100) logically supports the conclusion of meiotic entry followed by arrest. The inference about inability to traverse meiosis I (C103) is well-supported by the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C115",
+      "C116",
+      "C161",
+      "C163",
+      "C165",
+      "C167",
+      "C214"
+    ],
+    "result": "iDKO causes dramatic downregulation of steroidogenic genes in Leydig cells, particularly Cyp17a1 (10-fold decrease), leading to severely reduced testosterone levels while luteinizing hormone remains unchanged, indicating direct effects on Leydig cell function rather than hypothalamic-pituitary axis disruption.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple orthogonal approaches confirm this result: scRNA-seq (C110-C116), immunofluorescence (C161), Western blot (C163), and direct hormone measurements (C5, C6, C165, C167). The unchanged LH levels (C6, C167) effectively rule out upstream hormonal dysregulation. The 10-fold decrease in Cyp17a1 (C116) is dramatic and well-documented. Statistical significance is reported (p<0.01 for DEGs).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C13",
+      "C14",
+      "C15",
+      "C80",
+      "C81",
+      "C82",
+      "C194",
+      "C257"
+    ],
+    "result": "iDKO leads to complete depletion of cyclin C (CCNC) in both MEFs and testes, while single knockouts or CDK8/19 kinase inhibitor treatment preserve CCNC levels, indicating that both CDK8 and CDK19 are required for CCNC stabilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data consistently show CCNC depletion in iDKO but not single knockouts (C13-C14, C80-C82) across multiple tissue types (C194, C257). This is a key mechanistic finding supported by prior literature (C48-C49, C192). The comparison to kinase inhibitor treatment (C15, C193) strengthens the conclusion that this is a kinase-independent effect.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C177",
+      "C178",
+      "C180",
+      "C183",
+      "C259",
+      "C261"
+    ],
+    "result": "Pharmacological CDK8/19 kinase inhibition does not reproduce the iDKO phenotype: 30-day treatment with SNX631-6 at concentrations 10-fold above IC50 in testes does not affect testis size or steroidogenic gene expression in cultured Leydig cells.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Multiple lines of evidence support kinase-independent mechanism: in vivo inhibitor treatment shows no anatomical changes (C177, C259), drug concentrations in testes exceed IC50 by 10-fold (C180), and ex vivo Leydig cell treatment fails to reproduce gene expression changes (C183, C261). This is critical for distinguishing kinase-dependent from kinase-independent functions. Sample size appears adequate (n=10 for in vivo).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C18",
+      "C184",
+      "C262"
+    ],
+    "result": "The observed iDKO phenotype is likely mediated through kinase-independent activities of CDK8/19, such as CCNC stabilization, rather than through their kinase activity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This inference (C18, C184, C262) is well-supported by the combination of CCNC depletion in iDKO (C13, C257) and lack of phenotype with kinase inhibition (C11-C12, C183). The logic is sound: if kinase activity were responsible, inhibitors should reproduce the phenotype. However, the authors appropriately acknowledge this remains inferential and suggest definitive experiments (C263).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C137",
+      "C139",
+      "C140",
+      "C141",
+      "C142",
+      "C143",
+      "C144",
+      "C146",
+      "C148",
+      "C222"
+    ],
+    "result": "iDKO dramatically impacts Sertoli cells, causing re-entry into cell cycle, upregulation of G0-S and G2-M transition genes, disruption of cytoskeleton and cell-cell contacts, and activation of stress response pathways.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "scRNA-seq data (C139-C144) combined with immunofluorescence validation (C146) and GO analysis (C148) provide strong evidence for Sertoli cell dysfunction. The molecular changes are consistent with histological observations of vacuolization and loss of cell contacts (C70). The inference that these changes indicate testosterone deficiency (C148) is reasonable given the known role of androgens in Sertoli cell function.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C150",
+      "C151",
+      "C152",
+      "C153",
+      "C156",
+      "C157",
+      "C158"
+    ],
+    "result": "Spermatocytes show extensive transcriptional changes with 1650 DEGs, 99.2% upregulated, including genes involved in apoptosis, stress response, autophagy, and meiosis-specific processes (chromosome pairing, DNA recombination, histone modification).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The scRNA-seq analysis identifies large numbers of DEGs (C150-C152) with striking directional bias toward upregulation (C153), consistent with loss of negative regulation by CDK8/19. GO analysis supports functional categorization (C156-C158). The 99.2% upregulation is consistent with prior literature on CDK8/19 as negative regulators (C233-C234). However, the interpretation of meiosis gene upregulation as compensatory (C159) remains speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C172",
+      "C173",
+      "C174",
+      "C175",
+      "C176",
+      "C239",
+      "C240",
+      "C241",
+      "C242",
+      "C244"
+    ],
+    "result": "Partial recovery of spermatogenesis occurs 3-5 months after iDKO induction, with reappearance of some round spermatids and postmeiotic cells in isolated tubules, but without production of mature sperm or restoration of CYP17A1 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Time course analysis with flow cytometry (C172-C173, C239-C242) and histology (C174-C175) document partial recovery. The lack of CYP17A1 restoration (C176, C244) is important for ruling out incomplete knockout. The authors appropriately note this is incomplete recovery and speculate about possible mechanisms (C245-C246) without overclaiming. PCR confirmation of knockout (C243) strengthens the conclusion that this is not due to incomplete recombination.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C206",
+      "C207"
+    ],
+    "result": "CDK8 and CDK19 show differential expression patterns in testicular cells: CDK8 is highly expressed in Leydig cells and tubule periphery, while CDK19 is more abundant in the tubule center, with both present in multiple cell types at different spermatogenesis stages.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "IHC analysis (C89-C92) and flow cytometry (C93) provide complementary spatial and quantitative data on CDK8/19 expression. The differential localization is well-documented with appropriate imaging. The inference about roles at all spermatogenesis stages (C94) is reasonable given detection in 1n, 2n, and 4n cells. This spatial information is important for interpreting cell-type-specific effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C58",
+      "C59",
+      "C61",
+      "C62",
+      "C76",
+      "C77",
+      "C204"
+    ],
+    "result": "CDK8 iKO males are infertile due to lack of sexual behavior despite normal reproductive system morphology, producing only 2 copulative plugs and no offspring.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Fertility assay data (C58-C62) combined with histological analysis (C76-C77) clearly demonstrate behavioral infertility without morphological defects. This is an important control showing that CDK8 alone has effects distinct from the double knockout. The inference about lack of sexual activity (C62) is reasonable given few plugs despite normal morphology. However, the mechanism remains unexplored.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C84",
+      "C85"
+    ],
+    "result": "Compensatory upregulation of the paralogous kinase occurs in MEFs (CDK19 increases when CDK8 is knocked out) but not in testes, indicating tissue-specific regulation of CDK8/19 levels.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (C84) directly demonstrate differential compensation between tissues. This is an important observation for understanding why single knockouts have mild phenotypes and supports the hypothesis of functional redundancy (C191, C209). The tissue specificity (C85) is clearly shown and has implications for interpreting knockout phenotypes in different contexts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C198",
+      "C199"
+    ],
+    "result": "pSTAT1 S727 levels are not decreased in single or double knockouts and may even increase in iDKO testes, indicating that pSTAT1 S727 is not a suitable marker of CDK8/19 kinase activity in this context.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Western blot data (C86, C198) clearly show lack of correlation between CDK8/19 knockout and pSTAT1 levels. This is an important methodological finding (C87, C199) that challenges common assumptions about pharmacodynamic markers. The observation is consistent with prior literature showing context-dependent pSTAT1 regulation (C196-C197). This has implications for interpreting CDK8/19 inhibitor studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C200",
+      "C201"
+    ],
+    "result": "iDKO intestines show decreased numbers of Paneth cells and goblet cells, resembling the phenotype of intestine-specific Cdk8/Cdk19 double knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Histological analysis (C53-C54) with quantification confirms intestinal phenotype. Comparison to prior work (C200-C201) validates the model and shows consistency across different knockout strategies. Statistical significance is reported (p<0.0001). This demonstrates that the iDKO model recapitulates known phenotypes, providing validation of the approach.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C10",
+      "C181",
+      "C251"
+    ],
+    "result": "Star and Fads are downregulated in cultured Leydig cells after in vitro iDKO induction with hydroxytamoxifen, even without LH stimulation, confirming cell-autonomous effects on steroidogenic gene expression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "qRT-PCR data from ex vivo Leydig cell culture (C10, C181, C251) provide important validation that the effects are cell-autonomous and not dependent on systemic factors or LH signaling. This strengthens the conclusion that CDK8/19/CCNC directly regulate steroidogenic genes in Leydig cells (C250). However, sample sizes appear small (n=2-3) and Cyp17a1 could not be assessed due to low basal expression (C182).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C170",
+      "C171",
+      "C253"
+    ],
+    "result": "iDKO Leydig cells show increased lipid accumulation compared to wild-type, indicating that lipids are not being converted to testosterone, similar to StAR knockout mice.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Oil Red O staining (C170-C171, C253) demonstrates lipid accumulation in iDKO Leydig cells. The comparison to StAR knockout (C254) provides important context and supports the interpretation that this reflects impaired steroidogenesis rather than defective lipid synthesis. This observation argues against the alternative hypothesis that the phenotype is due to deficient lipid metabolism (C252-C253).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C33",
+      "C56",
+      "C57"
+    ],
+    "result": "CDK19 KO mice show slightly reduced fertility (32 pups vs 86 in controls) with increased copulative plugs (16 vs 10), likely due to lower pregnancy onset rate, but are otherwise asymptomatic with normal lifespan.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Fertility assay data (C55-C57) combined with general health observations (C33) demonstrate mild phenotype of CDK19 single knockout. The inference about lower pregnancy onset (C57) is reasonable given more plugs but fewer pups. This establishes an important baseline for comparison to double knockout and supports the redundancy hypothesis.",
+    "result_type": "MINOR"
+  }
+]

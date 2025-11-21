@@ -1,0 +1,133 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C4",
+      "C17",
+      "C28",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C78"
+    ],
+    "result": "CRF_ID 2.0 extends the original method to multi-cell images through a modified axes assignment procedure. The new method uses autofluorescence signals and bilateral symmetry to correct coordinate axes, achieving >90% accuracy within 10\u00b0 of ground truth and significantly improving neuron ID prediction accuracy compared to PCA-based axes prediction.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers explicitly affirm this result, with one stating the authors 'succeed in generalizing the pre-alignment procedure' and 'convincingly show that their extension accurately identifies head angle.' Another reviewer notes the method 'successfully identifies individual neurons with a fairly high accuracy.' The axes correction methodology and its impact on identification accuracy are accepted without challenge.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52"
+    ],
+    "result": "Atlas comparison experiments demonstrate that strain-matched, data-driven atlases outperform literature-derived atlases. The glr-1 strain-specific atlas achieved highest accuracy, even when derived from a single dataset it outperformed the 9-dataset NeuroPAL atlas. Saturation occurs at 5-10 datasets, and matching strain type and imaging conditions are more important than dataset number.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the value of the atlas comparison but express significant reservations. One reviewer notes 'some insights seem less clear as available data do not allow for experiments that cleanly decouple' the number of examples, completeness, and strain/imaging match. The reviewer states it is 'difficult from results to tease out if this is due to strain, imaging conditions or systematically different identifications' and notes the NeuroPAL atlas is 'an imperfect stand-in' due to missing cells. While the data volume insights are deemed 'useful,' generalization remains uncertain.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64"
+    ],
+    "result": "CRF_ID 2.0 achieves ~85% accuracy for best single prediction and 94-96% for top 2-3 predictions, matching or exceeding human annotator performance. The algorithm's errors correlate with human disagreement, and neurons easy for humans to identify are also correctly predicted by the algorithm.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers affirm the accuracy results without challenge. One reviewer states the 'method successfully identifies individual neurons with a fairly high accuracy,' and another notes the 'findings are solid and the method succeeds to identify cells with high precision.' The comparison to human performance and correlation between algorithm and human errors are implicitly accepted through lack of critique.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Gene expression analysis using CRF_ID 2.0 reveals that extrachromosomal and integrated transgenes show similar expression trends with linear correlation between reporters. Expression is highly variable among individuals, and CeNGEN mRNA data do not correlate well with transgene expression, likely due to methodological differences.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not question or critique the gene expression findings. The results are presented as a demonstration of the method's utility for 'in-vivo single-cell gene expression analysis' as noted by one reviewer. The lack of correlation with CeNGEN data and the proposed explanations are not challenged, suggesting implicit acceptance of these observations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C15",
+      "C16",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "CRF_ID 2.0 builds on the original CRF_ID framework, maintaining its advantages of interpretability, modularity, and efficiency. The method addresses an unmet need for automated multi-cell image analysis and offers advantages over registration and deep learning approaches through its graphical model structure and rapid atlas building capability.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers accept the methodological framework and its advantages. One reviewer notes the method 'builds on a previous software version' and uses 'advanced statistical approaches,' while another states it will 'be of interest to the C. elegans research community.' The claimed advantages over other methods are not disputed, and the approach is described as 'useful' and 'valuable.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C24",
+      "C97",
+      "C98",
+      "C99",
+      "C103"
+    ],
+    "result": "The study used 26 manually annotated volumes of glr-1p::NLS-mCherry-NLS transgenic worms, with annotations performed by three independent annotators. Ground truth was established by consensus (agreement of at least 2 of 3 annotators), with ~6% of cells excluded due to complete disagreement.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge the experimental design or ground truth methodology. The use of multiple annotators and consensus-based ground truth is implicitly accepted as appropriate. One reviewer notes the method works 'to allow the identification of a particular subset of neurons,' acknowledging the experimental system without critique.",
+    "result_type": "MINOR"
+  }
+]

@@ -1,0 +1,457 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C14",
+      "C15",
+      "C17",
+      "C18"
+    ],
+    "result": "The authors successfully reproduced learned pathogen avoidance behavior and elevated daf-7p::gfp expression in P0 (trained parent) and F1 generations. The P0 pathogen avoidance response was robust, and elevated daf-7p::gfp expression in ASI neurons was observed in both P0 and F1 generations, with the F1 response being strong and statistically highly significant.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7-C10, C14-C15, and C17-C18 are consistently supported by experimental data presented in Figures 1-3. The authors provide multiple independent experiments showing robust P0 learning and F1 inheritance of both behavioral and molecular phenotypes, with appropriate statistical analysis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C11",
+      "C12",
+      "C16",
+      "C19",
+      "C28",
+      "C32",
+      "C47",
+      "C55",
+      "C58",
+      "C131",
+      "C132"
+    ],
+    "result": "The authors failed to reproducibly detect transgenerational (F2) inheritance of either learned pathogen avoidance behavior or elevated daf-7p::gfp expression despite numerous experimental attempts and protocol modifications. This failure persisted across different bacterial isolates, growth temperatures, reporter strains (both multi-copy FK181 and single-copy QL296), and environmental conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C11-C12, C16, C19, C28, C32, C47, C55, C58, C131-C132 are consistently supported by extensive experimental data across 21 independent experiments (Figures 1-3, Tables 1-2). The authors systematically tested multiple variables and consistently failed to observe F2 effects, providing strong negative evidence.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C13",
+      "C135",
+      "C136"
+    ],
+    "result": "The authors conclude that this example of transgenerational epigenetic inheritance is insufficiently robust for experimental investigation of multi-generational inheritance mechanisms, though they cannot identify the specific cause of discrepancy with published results.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C13, C135-C136 represent reasonable inferences from the extensive negative F2 data (C11-C12, C16, C19, etc.). The conclusion is appropriately cautious, acknowledging both the failure to replicate and the inability to identify root causes, which is scientifically honest given the data presented.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C116",
+      "C117",
+      "C118",
+      "C138"
+    ],
+    "result": "The authors systematically tested multiple experimental variables to identify potential sources of irreproducibility, including independent bacterial isolates from different laboratories, various growth temperatures (15\u00b0C, 20\u00b0C, 25\u00b0C), and different bacterial culture conditions (aeration vs. standing cultures).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21-C24, C116-C118, C138 describe methodological controls that are documented in Tables 1-2 and throughout the Methods section. The systematic variation of experimental parameters demonstrates rigorous troubleshooting efforts.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27",
+      "C29"
+    ],
+    "result": "Growth at 25\u00b0C enhanced PA14-induced daf-7p::gfp expression in P0 animals compared to 20\u00b0C growth conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C27 and C29 are supported by experimental data in Figure 2, showing increased P0 daf-7p::gfp expression at 25\u00b0C. This is consistent with the cited literature (C25-C26) showing increased PA14 pathogenicity at 25\u00b0C.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C30"
+    ],
+    "result": "Growth at 25\u00b0C increased variability in F2 daf-7p::gfp expression, with F2 progeny showing statistically significant differences in either direction (both increases and decreases).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C30 is supported by Figure 2 data showing bidirectional F2 differences at 25\u00b0C. This increased variability without consistent directionality suggests temperature affects assay noise rather than producing a genuine inherited response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C39",
+      "C40",
+      "C41"
+    ],
+    "result": "The FK181 reporter strain (integrated multi-copy daf-7p::gfp array) exhibits genetic instability, with sporadic heritable loss of both the Rol-6 phenotype and GFP expression observed in all nine independent lines tested. This instability may reflect transgene silencing or copy number changes, consistent with known effects of small RNA pathways on multi-copy arrays.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C41 are supported by Table 3 data showing instability in 9/9 FK181 lines, with 6/9 showing heritable loss. The inference about silencing/copy number (C35, C41) is reasonable given cited literature (C40) on multi-copy array behavior. This represents an important technical concern for the field.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46"
+    ],
+    "result": "The QL296 strain (single-copy daf-7p::gfp reporter) reproduced elevated daf-7p::gfp fluorescence in P0 and F1 progeny with reduced coefficient of variation (~0.27), providing a more stable and sensitive assay system than the multi-copy FK181 reporter.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C42-C46 are supported by Figure 2 and Figure 2\u2014figure supplement 2 data. The reduced coefficient of variation (C45) is quantitatively demonstrated, and the inference about increased sensitivity (C46) is reasonable, though the improved assay still failed to detect F2 effects (C47).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C48",
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C139"
+    ],
+    "result": "Light versus dark assay conditions affected absolute choice index values but did not affect learning index (relative differences between trained and control), and neither condition enabled reliable detection of F2 inheritance. This indicates that while ambient light influences baseline behavior, it does not explain the failure to detect transgenerational inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48-C54 and C139 are supported by Figure 3 and Table 2 data. The distinction between choice index (affected by light) and learning index (unaffected) is analytically sound and demonstrates that this environmental variable does not account for the F2 replication failure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Na\u00efve worms show a bias toward PA14 in choice assays, which likely reflects aversion to the recently experienced mild pathogen OP50 rather than innate PA14 attraction. The highly significant P0 training effect is much reduced in F1, suggesting that even slight changes in na\u00efve OP50 aversion could affect detection of inherited PA14 avoidance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C65 are supported by Figure 3 data and multiple literature citations (C59, C61). The inference about OP50 aversion (C60, C62) is reasonable given OP50's mild pathogenicity. The observation about reduced F1 effects (C63-C64) and inference about detection sensitivity (C65) are logical and supported by the data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "The authors' control worms frequently showed higher choice index scores than reported in Moore et al. 2019 and Kaletsky et al. 2020, consistent with reports from other groups. Variability in na\u00efve choice across published studies may reflect differences in bacterial growth conditions, though the specific cause remains unclear due to extensive methodological differences between studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C66-C70 are supported by Figure 3 data and literature comparisons. The observation of higher control choice indices (C66-C67) is documented, and the speculation about causes (C68) is reasonable. The acknowledgment of uncertainty (C70) is appropriate given the complexity of methodological differences (C69).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C71",
+      "C72",
+      "C73",
+      "C74",
+      "C75"
+    ],
+    "result": "High Growth (HG) plates contain 8X more peptone than Normal Growth (NG) plates, supporting higher OP50 growth and potentially enhanced pathogenicity. Growth on HG plates immediately before choice assays may enhance OP50 aversion in control animals, potentially magnifying differences between trained and control groups. In experiments with significant F1 results, F1 control choice indices were consistently lower than P0 controls grown on NG plates.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C71-C75 are supported by cited literature on OP50 pathogenicity (C71), documented plate composition (C72), and Figure 3 data (C74). The inferences about HG plate effects (C73, C75) are reasonable hypotheses supported by the pathogenicity literature, though not directly tested in isolation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85",
+      "C86"
+    ],
+    "result": "Direct comparison of HG OP50 versus NG OP50 growth conditions showed that in 4/8 experiments, the learning index magnitude exceeded 0.4, but inter-experiment variability was high with inconsistent results. Fisher's exact test analysis showed 5/8 experiments with significant HG-induced OP50 avoidance. The authors interpret results as inconclusive but highlighting assay sensitivity to environmental differences and the substantial difference between NG and HG conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C76-C84 are supported by Figure 4 and Figure 4\u2014figure supplement 1 data. The high variability (C77-C79) is documented, and the interpretation as inconclusive (C82) is appropriate given inconsistent results. The inference about assay sensitivity (C83-C84) is reasonable. The speculation about contribution to irreproducibility (C86) is plausible but remains speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C88",
+      "C91",
+      "C92",
+      "C93",
+      "C94"
+    ],
+    "result": "The authors replicated the requirement for sid-1 and sid-2 in F1 inheritance of learned avoidance using strong loss-of-function alleles. Both sid-1(qt9) and sid-2(qt42) P0 animals learned to avoid PA14 (learning indices 0.43-0.87), but their F1 progeny showed no or minimal inherited learned avoidance (learning indices -0.04 to 0.08).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C88, C91-C94 are supported by Figure 5A-D data showing robust P0 learning but absent F1 inheritance in sid-1 and sid-2 mutants. The use of stronger alleles (C89-C90) than the original study strengthens confidence in the replication. This confirms a key finding from the original papers.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C95"
+    ],
+    "result": "Unexpectedly, RNAi pathway genes (rde-1, hrde-1, sid-1, sid-2) were not required for F1 inheritance of elevated daf-7p::gfp expression in ASI neurons, contrasting with their requirement for behavioral inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C95 is supported by Figure 5E-H data showing normal F1 daf-7p::gfp inheritance in all four RNAi pathway mutants. This represents an important mechanistic finding, indicating that behavioral and molecular phenotypes have distinct genetic requirements for inheritance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C96",
+      "C97"
+    ],
+    "result": "Based on the finding that daf-7 mutants fail to transmit learned avoidance (Moore et al. 2019) and the current finding that sid-1/sid-2 are not required for daf-7p::gfp inheritance, the authors conclude that sid-1 and sid-2 must act in parallel or downstream of the neuronal TGF-\u03b2 pathway for F1 behavioral inheritance, not upstream as previously proposed.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C96-C97 represent logical inference from the combination of cited results (C96) and current data (C95). The genetic epistasis logic is sound: if sid-1/sid-2 are required for behavior but not for daf-7 expression, and daf-7 is required for behavior, then sid-1/sid-2 cannot be upstream of daf-7. This contradicts the model in Kaletsky et al. 2020.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C98",
+      "C99",
+      "C100"
+    ],
+    "result": "If learned avoidance and the neuronal TGF-\u03b2 pathway act in parallel, their relative strength and activation timing may be separately regulated. This is consistent with observations that 20\u00b0C training produces more reliable P0 aversion than daf-7p::gfp upregulation, but more reliable F1 daf-7p::gfp upregulation than aversion behavior.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C98-C100 represent reasonable speculation (C98) supported by documented observations (C99-C100) from the authors' data. The differential reliability of behavioral versus molecular phenotypes across generations suggests independent regulation, consistent with the parallel pathway model.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "Reanalysis of Moore et al. 2019 RNA-seq data identified 2041 genes with differentially expressed sense-strand small RNAs (similar to published results) and 4099 genes with differentially expressed antisense small RNAs (not previously reported). Integration of mRNA and antisense small RNA data identified 116 mRNAs putatively regulated by the endogenous RNAi pathway in response to PA14 exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C101-C107 are supported by Figure 6A-C and described computational methods. The reanalysis reproduces published sense-strand results (C104-C105), validating the pipeline, and extends analysis to antisense strands (C106). The identification of 116 candidate endo-RNAi targets (C107) is methodologically sound, though functional validation would be needed to confirm regulation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C108",
+      "C109"
+    ],
+    "result": "The maco-1 gene, previously identified as a piRNA-mediated regulatory target for multigenerational PA14 response, is not targeted by many differentially expressed antisense endo-siRNAs, suggesting that the P. aeruginosa small RNA P11's effect on maco-1 is not directly mediated by the endogenous RNAi pathway.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C108-C109 are supported by Figure 6C data showing maco-1 (red dot) lacks substantial antisense small RNA changes. The inference (C109) is logical: if maco-1 regulation were mediated by endo-RNAi, differential antisense small RNAs would be expected. This suggests alternative mechanisms for P11-mediated regulation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C110",
+      "C111",
+      "C112"
+    ],
+    "result": "Gene ontology analysis revealed that 8 of 116 genes putatively regulated by endo-siRNAs (3.8-fold enrichment, p<0.0001) are annotated as innate immune response or defense response against bacteria, demonstrating that small RNA-regulated genes are differentially expressed in response to pathogen exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C110-C112 are supported by Figure 6D and Table 4 data. The enrichment analysis is statistically sound (hypergeometric distribution), and the 3.8-fold enrichment with p<0.0001 indicates genuine over-representation of immune genes among endo-RNAi targets. This supports a role for small RNAs in pathogen response.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C113",
+      "C114"
+    ],
+    "result": "The identified genes are candidates for mediating heritable pathogen aversion response, but supporting this conjecture requires determining whether these genes and their candidate small RNA regulators are differentially regulated in F1 and F2 progeny of pathogen-exposed animals.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C113-C114 appropriately characterize the current findings as hypothesis-generating rather than conclusive. The acknowledgment that F1/F2 analysis is needed (C114) is scientifically appropriate, as P0 changes alone cannot establish heritability. This represents honest assessment of the data's limitations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C115",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "The authors speculate that uncontrolled environmental variables or genetic drift may explain discrepancies with published results. They confirmed PA14 pathogenicity and observed F1 avoidance (suggesting P11 expression), and demonstrated that OP50 culture conditions dramatically affect na\u00efve behavior. Environmental differences may be systemic (humidity, contamination), and if sufficient to obscure transgenerational effects, would suggest minor ecological significance of the phenomenon.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115, C119-C127 mix supported observations (C123-C124 with Figure 1\u2014figure supplement 2 and Figure 4) with reasonable speculation (C115, C125-C127). The logic is sound but remains speculative. The inference about ecological significance (C127) is reasonable but cannot be definitively supported without identifying the actual cause of irreproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C128",
+      "C129",
+      "C130"
+    ],
+    "result": "The FK181 imaging assay measures multi-copy daf-7p::gfp expression and requires monitoring for Rol phenotype maintenance. The strain's instability may reflect sporadic transgene silencing or array rearrangements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C130 are supported by the authors' observations (C129, documented in Table 3) and represent reasonable speculation about mechanisms (C130) given known transgene behavior. This provides important context for interpreting FK181 data.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C133",
+      "C134"
+    ],
+    "result": "Raw data from Moore et al. 2019 were not available from the publisher's website or upon request, preventing quantitative comparison that might identify additional experimental parameters or explanations for discrepancies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C133-C134 document a data availability issue and appropriately acknowledge limitations (C134) this creates for understanding discrepancies. This represents an important transparency concern for the field and appropriately cautious interpretation of the replication failure.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C137"
+    ],
+    "result": "Future investigations may reveal a critical experimental or environmental variable enabling robust multigenerational inheritance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C137 represents appropriate scientific caution, acknowledging that the current failure to replicate does not definitively disprove the phenomenon. This balanced conclusion is consistent with the data showing robust P0 and F1 effects but inconsistent F2 effects.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C140",
+      "C141",
+      "C142"
+    ],
+    "result": "Given that PA14 is a lethal pathogen and OP50 is a mild pathogen, the most likely cause for discrepant results is subtle differences in OP50 physiology in post-P0 generations affecting OP50 aversion magnitude. The authors demonstrated that 24-hour exposure to more pathogenic OP50 (HG conditions) can dramatically enhance OP50 aversion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C140-C142 combine established knowledge (C140), reasonable speculation (C141), and experimental support (C142 with Figure 4 data). The hypothesis is logical and supported by the HG/NG experiments, though the speculation about this being the \"most likely cause\" (C141) remains unproven.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C143",
+      "C144",
+      "C145",
+      "C146"
+    ],
+    "result": "The F1 aversion response requires sid-1 and sid-2, but the transported substrate is not necessarily RNA, as systemic RNAi involves long dsRNA and no evidence suggests efficient small RNA transport by these proteins. The mechanism by which sid-1 and sid-2 support intergenerational epigenetic inheritance remains unknown.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C143-C146 combine experimental confirmation (C143, supported by Figure 5A-D) with appropriate caution about mechanistic interpretation (C144-C146). The skepticism about RNA transport (C144-C145) is supported by cited literature and represents scientifically sound reasoning. The acknowledgment of mystery (C146) is honest.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C147",
+      "C148"
+    ],
+    "result": "Since neither sid-1 nor sid-2 is required for F1 daf-7p::gfp inheritance, and this represents the only robust single-animal assay, the lack of a genetic handle severely hampers mechanistic investigation of this paradigm.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C147-C148 are supported by Figure 5E-H data (C147) and represent reasonable inference about experimental limitations (C148). The observation that the most robust readout (F1 daf-7p::gfp) lacks genetic requirements for key candidate genes is indeed problematic for mechanistic studies.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C149",
+      "C150",
+      "C151"
+    ],
+    "result": "Heritable pathogen-induced plasticity likely reveals fundamental evolutionary pathways, but the field has been historically challenged by environmental control difficulties and assay reproducibility. Independent reproducibility is paramount, and the authors aim for complete transparency as a model for the C. elegans heritability research community.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C149-C151 represent appropriate framing of the work's significance (C149 is reasonable speculation), accurate historical context (C150 is supported by field knowledge), and commendable scientific values (C151). The emphasis on transparency and reproducibility is well-supported by the extensive documentation provided in the manuscript.",
+    "result_type": "MINOR"
+  }
+]

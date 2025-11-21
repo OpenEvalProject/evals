@@ -1,0 +1,275 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110"
+    ],
+    "result": "The study included 21,459 ischemic stroke patients from Chongqing Emergency Center (June 2017-June 2022), divided into training (15,021 patients, 4.3% PSE incidence) and test sets (6,438 patients, 4.3% PSE incidence), with external validation from 536 patients across three hospitals (July 2022-July 2023). Patients were systematically excluded based on predefined criteria including hemorrhagic stroke, prior stroke history, TIA, unclear etiology, missing data, alternative seizure causes, seizure history, in-hospital death, and loss to follow-up.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C18-C110 provide comprehensive documentation of patient selection, sample sizes, and exclusion criteria. The methodology is clearly described with specific numbers for each exclusion category, and the external validation cohort design is appropriate. The 4.3% PSE incidence in both training and test sets suggests proper randomization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C17",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126"
+    ],
+    "result": "The study employed Random Forest imputation for missing values, LASSO regression for feature selection (20 features), SMOTEENN for class imbalance, and evaluated nine machine learning algorithms (Naive Bayes, Logistic Regression, Decision Tree, Random Forest, Gradient Boosting, MLP, XGBoost, LightGBM, KNN) with hyperparameter optimization via grid search. Statistical analyses included appropriate normality tests, variance homogeneity tests, and significance testing with p<0.05 threshold.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C17-C126 describe a methodologically sound approach to data preprocessing, feature selection, model training, and statistical analysis. The use of SMOTEENN to address class imbalance (4.3% positive cases) is appropriate, and the statistical testing procedures are standard and well-justified. However, the manuscript lacks details on random seeds for reproducibility and specific hyperparameter ranges explored.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C39",
+      "C40",
+      "C41",
+      "C42",
+      "C130"
+    ],
+    "result": "Tree-based models (RF, XGBoost, LightGBM) achieved the highest performance with AUC of 0.99, with RF achieving the highest PPV of 0.864 in the test set and 0.95 in external validation (sensitivity 0.91). The models demonstrated superior performance compared to traditional logistic regression, with excellent calibration (Brier score 0.006) and clinical utility via decision curve analysis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C26-C130 report exceptionally high performance metrics (AUC 0.99), which raises concerns about potential overfitting despite SMOTEENN balancing and external validation. The Brier score of 0.006 is extraordinarily low, suggesting near-perfect calibration that is unusual in clinical prediction. The external validation cohort was enriched for positive cases (C99), which may inflate sensitivity and PPV estimates and does not represent real-world prevalence. The claim that models outperform traditional methods (C28, C40) requires direct statistical comparison, which is not provided.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C131",
+      "C132",
+      "C133"
+    ],
+    "result": "Statistical analyses identified multiple risk factors for PSE including complications (uremia, DVT, atrial fibrillation, hyperuricemia, cerebral hernia, hydrocephalus), affected brain regions (frontal, parietal, occipital, temporal lobes, cortex, subcortex, basal ganglia, hypothalamus), demographic factors (age, gender, NIHSS), and laboratory indicators (WBC, HbA1c, CRP, TG, AST, ALT, bilirubin, urea, uric acid, APTT, PT, D-dimer, CK, CK-MB, LDH, HBDH, IMA, lactate, anion gap).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C22-C133 list numerous risk factors identified through statistical analysis, but the manuscript does not provide effect sizes, confidence intervals, or p-values for most associations. The claim that specific brain regions 'significantly contributed' (C131, C132) contradicts later findings that brain regions had smaller influence and were not selected by LASSO (C36, C58). Multiple testing correction is not mentioned despite testing numerous variables, raising concerns about false discovery rates.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C32",
+      "C33",
+      "C34",
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C61",
+      "C127",
+      "C134"
+    ],
+    "result": "SHAP analysis identified WBC, D-dimer, and NIHSS as the most crucial predictors of PSE. Female gender, higher NIHSS, and elevated levels of WBC, D-dimer, CRP, AST, CK-MB, HbA1c, bilirubin, TCO2, and LDH were associated with increased PSE risk, while lower HBDH, Plt, and APTT were also risk factors. Hypertension showed stronger association than diabetes, coronary disease, hyperlipidemia, or fatty liver. Brain regions showed minimal individual effects.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C32-C134 are supported by SHAP analysis results shown in Figure 3, which provides visual evidence of feature importance and directionality. The finding that WBC surpassed NIHSS in importance (C61) is notable and supported by the SHAP summary plot. The observation that specific brain regions had limited individual effects (C36) is consistent with their exclusion from LASSO regression (C58).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Female patients, older individuals, and those with higher NIHSS were more likely to develop PSE, with NIHSS ranking second only to WBC and D-dimer in predictive importance. However, literature shows conflicting evidence regarding age (some studies suggest <65 years is high-risk, others indicate advanced age) and gender (some studies show higher risk in females, others in males).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C48 accurately represent the study's findings and acknowledge contradictions in the literature. The authors appropriately cite supporting and contradicting evidence for both age and gender effects, demonstrating awareness of inconsistencies in the field. The finding that NIHSS is a strong predictor is well-supported by multiple citations (C44).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53",
+      "C54"
+    ],
+    "result": "Patients with diabetes, dyslipidemia, hypertension, depression, or dementia are at higher risk for PSE according to prior literature. However, this study found that patients with coronary disease, diabetes, fatty liver, hyperlipidemia, or large artery stenosis were less likely to develop epilepsy, potentially because these conditions fall into TOAST categories with clearer etiology and better treatment options, while strokes of undetermined etiology have worse prognoses. Among diabetic patients, higher HbA1c indicated poor control and higher complication risk.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C49-C54 present an interesting hypothesis about TOAST classification explaining the paradoxical protective effect of certain comorbidities (C50-C52), but this is largely speculative inference rather than tested hypothesis. The explanation relies on assumed mechanisms without direct evidence. The finding contradicts prior literature (C49) without adequate exploration of potential confounders or alternative explanations. The HbA1c observation (C53-C54) is more straightforward but lacks quantitative support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Prior literature indicates cortical infarction and large-area lesions increase PSE risk. This study found both cortical and subcortical involvement associated with increased PSE likelihood, but these regions had smaller influence compared to other features and were not selected in LASSO regression.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 appropriately reconcile study findings with prior literature. The observation that brain regions showed associations in univariate analysis but were not retained in multivariate LASSO regression (C58) suggests these effects may be mediated by other variables or have smaller independent contributions. This is a reasonable interpretation supported by the statistical results.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "WBC had the most significant impact among routine blood parameters, even surpassing NIHSS in SHAP analysis. High WBC may indicate severe inflammation/infection and increased blood viscosity, predisposing to complications. High RBC and low platelet counts were also associated with increased complication risk. CRP, an inflammation marker, is an independent prognostic factor.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C63 are supported by SHAP analysis (Figure 3) showing WBC as the top predictor. The mechanistic explanations for WBC effects (C62) are reasonable and supported by citations regarding inflammation and infection as stroke risk factors (C59-C60). The associations with RBC and platelets (C63) are consistent with known hematological risk factors in stroke.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "High LDL, low HDL, and elevated triglycerides increase PSE risk, consistent with prior literature showing HDL is protective while LDL and TG are risk factors. High cholesterol and TG increase blood viscosity and promote vascular sclerosis and clot formation. Higher D-dimer indicates more significant brain damage and increased PSE likelihood. Lower APTT and fibrinogen associate with higher PSE risk, while INR, PT, and TT have smaller impacts.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C72 are well-supported by citations to prior literature on lipid profiles (C64-C67) and align with the study's findings (C68). The mechanistic explanations for lipid effects (C69) and D-dimer (C70) are reasonable and cited. The coagulation parameter findings (C71-C72) are consistent with the SHAP analysis showing APTT as an important predictor.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82"
+    ],
+    "result": "Among liver function indicators, AST had the greatest influence, with high AST, low ALT, and low albumin impacting PSE risk. Renal function biomarkers associate with stroke recurrence and poor prognosis. Low urea and high uric acid had negative impacts, though patients with pre-existing hyperuricemia were less likely to develop epilepsy. Uric acid's antioxidant and neuroprotective properties may provide resilience in patients with normal liver/kidney function and mild hyperuricemia, while excessively high levels indicate metabolic disorders and poor prognosis.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C82 present a nuanced interpretation of uric acid's dual role, supported by citations regarding its neuroprotective properties (C80-C81). The paradoxical finding that elevated admission uric acid increases risk (C78) while pre-existing hyperuricemia is protective (C79) is interesting and the proposed mechanism (C80-C82) is plausible, though speculative. Liver enzyme findings (C73-C75) are supported by cited literature.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C83",
+      "C84",
+      "C85",
+      "C86",
+      "C87",
+      "C88",
+      "C89"
+    ],
+    "result": "Elevated CK-MB in stroke patients may not be solely cardiac-related. Cardiac enzymes are important prognostic indicators associated with stroke severity, particularly in patients with consciousness disorders. CK, CK-MB, and IMA demonstrated significant impact and high predictive value for PSE, though specific mechanisms require further research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C89 appropriately cite literature showing cardiac enzymes are prognostic in stroke (C84-C87) and acknowledge that mechanisms are not fully understood (C89). The finding that cardiac enzymes have predictive value (C88) is supported by SHAP analysis. The acknowledgment that further research is needed (C89) is appropriate given the mechanistic uncertainty.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C90",
+      "C91",
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C96"
+    ],
+    "result": "The study has several limitations: the dataset may not be fully representative and is geographically limited to Chongqing region over the past 5 years, potentially limiting generalizability. The retrospective design led to missing important predictive indicators (hemorheology, thromboelastography, hormone levels), potentially affecting model accuracy. Analysis used only initial admission data without leveraging longitudinal examination sequences. Future work could employ recurrent neural networks for temporal feature extraction.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C90-C96 provide an honest and comprehensive assessment of study limitations. The geographic and temporal limitations (C91) are valid concerns for generalizability. The acknowledgment of missing potentially valuable features (C93) and use of only baseline data (C95) are important limitations. The suggestions for future work (C94, C96) are reasonable, though speculative.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C128",
+      "C129"
+    ],
+    "result": "The model's transparency and interpretability can build trust among clinicians and support decision-making. Further prospective studies are necessary to validate clinical utility before real-world application.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C128-C129 appropriately acknowledge that despite promising results, prospective validation is required before clinical implementation. This is a responsible conclusion given the retrospective nature of the study and the need to demonstrate real-world utility and safety.",
+    "result_type": "MINOR"
+  }
+]

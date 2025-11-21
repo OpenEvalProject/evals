@@ -1,0 +1,288 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14"
+    ],
+    "result": "The ER is the largest cellular compartment with a complex morphology consisting of membranous sheets and tubular networks. It performs multiple functions including protein/lipid biosynthesis and calcium storage.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C4 and C10-C14 provide consistent descriptions of ER structure and function, supported by established knowledge and citations. These are well-established facts in cell biology that provide necessary background context for the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "ER morphology dynamics influence molecular transport, and mutations in ER morphogen genes cause various neuropathologies including hereditary spastic paraplegia, sensory neuropathy, and retinitis pigmentosa.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5 and C15-C19 establish the biological motivation for the study through cited literature. The link between ER morphogen mutations and neurological diseases is supported by multiple citations (Blackstone et al., 2011; Kornak et al., 2014; Arno et al., 2016), and C16 provides experimental support for the functional importance of ER transport.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C20",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "Active ER luminal transport has been proposed to result from tubule contractions (pinching), supported by ATP-sensitivity of GFP mobility, single-particle tracking inconsistencies with diffusion, and microscopy detection of transient narrowing points in tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6 and C20-C23 establish the tubule pinching hypothesis from prior work (Holcman et al., 2018) with multiple lines of experimental evidence including ATP depletion sensitivity, single-particle tracking, and microscopy observations. The tubular radius estimate (30-60 nm) is supported by multiple citations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C31",
+      "C32"
+    ],
+    "result": "Computational modeling of tubule contraction-driven flows reveals that pinching with biologically measured parameters produces average flow speeds of 1.3 \u00b5m/s and average edge traversal speeds of 4.4 \u00b5m/s, which are an order of magnitude lower than experimental measurements (45 \u00b5m/s) and indistinguishable from pure diffusion.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C29 and C31-C32 present the core computational findings with specific quantitative results. The P\u00e9clet number analysis (Pe~0.07) provides theoretical justification for why flows have negligible effect. The comparison between simulation (4.4 \u00b5m/s) and experiment (45 \u00b5m/s) is explicit and well-documented in Figure 2.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C33",
+      "C34"
+    ],
+    "result": "Slip boundary conditions at tubule walls have virtually no effect on average edge traversal speeds, though they change the shape of flow profiles within tubules.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C33-C34 are supported by simulation results shown in Figure 3a-b. The physical explanation that slip changes flow profile shape but not cross-sectionally averaged speeds is sound and justifies the use of no-slip boundary conditions throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C35",
+      "C36"
+    ],
+    "result": "Transport results are insensitive to ER network geometry variations, with similar distributions observed across different biological networks (C1-C4) and an idealized honeycomb network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C36 are supported by simulation results across multiple network geometries shown in Figure 2d-f. The small deviations across networks and consistency with honeycomb geometry justify using simplified network models for parameter exploration.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C37",
+      "C63",
+      "C64",
+      "C65"
+    ],
+    "result": "Biologically measured pinching parameters are inadequate to facilitate ER luminal material exchange, producing no enhancement of mixing beyond passive diffusion because the displaced fluid volume upon local contraction is too small.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C37 and C63-C65 present a key negative result from mixing simulations (Figure 4) showing overlap between active and passive transport. The mechanistic explanation (C65) that displaced volumes are too small is consistent with the theoretical analysis and provides clear physical insight.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C42"
+    ],
+    "result": "The optimal coordination of two pinches produces a time-averaged particle displacement equal to the theoretical upper bound of 8L/3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C42 is supported by mathematical derivation in the methods section and illustrated in Figure 5. The result demonstrates that even optimal coordination of multiple pinches cannot overcome the fundamental limitation of small displaced volumes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C7",
+      "C66"
+    ],
+    "result": "Reproducing experimental transport velocities requires unrealistically high values of both pinch length (spanning entire tubule) and frequency (100-1000\u00d7 faster than measured), with the combination of maximum pinch length and 10\u00d7 rate increase producing speeds above 60 \u00b5m/s.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7 and C66 are supported by systematic parameter exploration shown in Figure 6. The requirement for extreme, biologically implausible parameters (\u03b1~1000, maximum pinch lengths) to match experimental speeds strengthens the argument against the tubule pinching hypothesis.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C48",
+      "C68"
+    ],
+    "result": "Tubular junction contractions with experimentally estimated volumes (mean 0.0045 \u00b5m\u00b3) can only produce speeds matching experiments if junctions pinch 8\u00d7 faster than observed tubule contractions, making this mechanism unlikely.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C48 and C68 are supported by simulations with experimentally measured junction volumes (Figure 7). The requirement for 8\u00d7 faster contraction rates than observed makes this mechanism biologically implausible, though the experimental volume estimates provide a reasonable basis for the modeling.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C67"
+    ],
+    "result": "Perinuclear sheet contractions produce fast transport (mean ~35 \u00b5m/s) but with sharply decaying flows that have only short-range effects, unable to sustain mixing and transport beyond a few microns into the peripheral network.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C53 and C67 are supported by simulation results shown in Figure 8c-e demonstrating spatial decay of flow speeds. The sharp spatial gradient contrasts with the homogeneous profile from junction contractions, providing clear evidence for the limited range of perinuclear sheet-driven transport.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C54",
+      "C55"
+    ],
+    "result": "Peripheral sheets with estimated volumes of 0.12 \u00b1 0.04 \u00b5m\u00b3 can produce transport speeds matching experiments (~40 \u00b5m/s) provided they contract with sufficiently high rates (2.5-5\u00d7 slower than tubule pinches).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54-C55 are supported by experimental volume estimates (Figure 13) and simulations (Figure 8f-g). The contraction rates required (\u03b1\u207b\u00b9=2.5-5) are more biologically plausible than those for tubules or junctions, making peripheral sheets the most viable mechanism among those tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "The energetic cost of one peripheral sheet contraction is estimated at ~1000 ATP molecules, which is compared to kinesin motors (1 ATP per 8 nm) and muscle fibers (hundreds of thousands of ATP per second).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C56-C58 provide an energetic feasibility assessment for peripheral sheet contractions. The estimate of ~1000 ATP molecules is derived from hydrodynamic dissipation calculations (detailed in methods), and the comparisons to other biological motors provide useful context for evaluating plausibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Active transport in cellular compartments is facilitated by ATP-dependent mechanisms, with cytoplasmic currents believed to originate from motorized transport of large complexes, and tubule contractility suggested as the ER flow mechanism based on observed deformations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59-C62 provide background on active transport mechanisms in cells, supported by multiple citations. These establish the broader context for investigating ER-specific mechanisms and justify the focus on contractility-based mechanisms.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "Forces of ~30 pN are required to pinch tubules as observed empirically, which could be provided by several molecular motors working together since single motors exert ~6 pN.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C69-C71 provide force estimates from calculations detailed in methods. The comparison between required forces (30 pN) and single motor forces (6 pN) with citations suggests that multiple motors could generate the necessary forces, supporting the physical plausibility of tubule pinching.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C72",
+      "C73",
+      "C74"
+    ],
+    "result": "Alternative mechanisms for ER shape changes include hydro-osmotic instabilities (predicted to have longer wavelengths than pinching regions) and topological remodeling like ring closure (occurring over minutes, too slow for millisecond-scale transport), while width fluctuations in flat ER areas are expected based on microscopy observations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C72-C74 discuss alternative mechanisms with appropriate citations. The temporal and spatial scale arguments effectively rule out certain mechanisms (ring closure too slow, hydro-osmotic instabilities wrong wavelength) while acknowledging that sheet fluctuations are expected.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C75"
+    ],
+    "result": "For structural fluctuation-based mechanisms to facilitate luminal motion, assumptions currently not supported by empirical data are required.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C75 summarizes the main conclusion from the computational modeling work. This is supported by the systematic exploration of different mechanisms showing that matching experimental transport speeds requires extreme, biologically implausible parameters for tubule/junction contractions, or very fast contractions for peripheral sheets.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C78",
+      "C79"
+    ],
+    "result": "The reconstructed ER networks (C0-C4) have mean edge lengths around 1 \u00b5m and mean node degrees approximately 3.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C79 report structural measurements from network reconstruction shown in Figure 9e. These provide quantitative characterization of the biological networks used in simulations and justify the use of 1 \u00b5m edge lengths in idealized honeycomb networks.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C81",
+      "C82"
+    ],
+    "result": "Experimental measurements from fluorescence microscopy yield junction volumes ranging 0.0020-0.0081 \u00b5m\u00b3 (mean 0.045 \u00b5m\u00b3, SD 0.0021 \u00b5m\u00b3) and peripheral sheet volumes with mean 0.12 \u00b5m\u00b3 (SD 0.04 \u00b5m\u00b3).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C82 report experimental volume estimates from fluorescence microscopy analysis. The methodology (converting fluorescence intensity to volume using tubule calibration) is reasonable, though it relies on assumptions about intensity-volume proportionality. These measurements provide crucial input parameters for the computational models.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C83",
+      "C84"
+    ],
+    "result": "For tubule pinching, the dominant energy expenditure is in creating large membrane curvatures rather than displacing fluid, while for peripheral sheet contraction, the hydrodynamic contribution dominates the energy budget.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C83-C84 provide physical insight into the different energetic regimes for tubules versus sheets. The reasoning is sound: tubules achieve extreme curvatures with small volume displacement, while sheets displace large volumes without extreme curvatures. This is supported by detailed calculations in the methods.",
+    "result_type": "MINOR"
+  }
+]

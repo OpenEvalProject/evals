@@ -1,0 +1,249 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C39",
+      "C40",
+      "C104",
+      "C105",
+      "C106",
+      "C107",
+      "C108",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114",
+      "C115",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120",
+      "C121"
+    ],
+    "result": "The study collected 10 years of bird community data (2012-2021) from 36 islands in the Thousand Island Lake system, a subtropical reservoir formed in 1959. The study period experienced significant climatic warming (slope = 0.078, p=0.04), with breeding season temperature increasing over the decade. The sampling design included 53 transects surveyed nine times annually during breeding season (April-June), with 60 species retained after filtering.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The methodological claims are well-documented with specific details about study design, sampling effort, temporal coverage, and climate trends. The significant warming trend (C121) is statistically supported with appropriate metrics. The study system description and data collection protocols are clearly specified and internally consistent.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C45",
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C122",
+      "C123",
+      "C124",
+      "C125",
+      "C126",
+      "C127"
+    ],
+    "result": "Species Temperature Index (STI) was calculated for 60 bird species using established methods, with values averaging 19.94\u00b13.58\u00b0C and ranging from 9.30\u00b0C to 27.20\u00b0C. STI showed no significant correlation with ecological traits (dispersal ability, body size, body mass, clutch size, diet, active layer, residence type). Species were classified as warm-adapted (STI > median) or cold-adapted (STI < median), with the robustness of STI calculations verified across different distributional ranges and time windows.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The STI methodology is well-established (citing Devictor et al., 2008) and appropriately applied. The lack of correlation between STI and ecological traits (C47-C49) is properly tested statistically. Robustness checks (C127) strengthen confidence in the STI metric. The classification approach using median split is standard and appropriate for the analysis.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C50",
+      "C51",
+      "C52",
+      "C77",
+      "C78"
+    ],
+    "result": "Thermophilization was detected at both landscape and transect scales, but with different patterns. At the landscape scale, only abundance-based CTI showed a significant increasing trend (slope=0.327\u00b10.041, p<0.001), while occurrence-based CTI showed no trend. At the individual transect level, both occurrence-based (mean trend=0.124, 95% CrI: 0.108-0.137) and abundance-based CTI (slope=0.320\u00b10.021, p<0.001) showed significant increases, with the abundance response considerably stronger than occurrence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The differential responses between CTI metrics and spatial scales are clearly documented with appropriate statistical support. The finding that abundance-based CTI responds more strongly than occurrence-based CTI is consistent with cited literature (C79) and suggests population-level changes precede distributional changes. The Bayesian credible intervals and p-values support the conclusions.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C63"
+    ],
+    "result": "Thermophilization was driven by differential colonization-extinction dynamics between warm- and cold-adapted species. Warm-adapted species showed increasing colonization rates (slope=0.259, p=0.043), decreasing extinction rates, and increasing occupancy and abundance over time. Cold-adapted species showed the opposite pattern with decreasing colonization, increasing extinction (slope=-0.414, p=0.015), and declining occupancy and abundance. These opposing trends resulted in a strong negative correlation (r=-0.77) between colonization and extinction trends across species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The mechanistic decomposition of thermophilization into colonization-extinction dynamics is well-supported by statistical analyses with appropriate p-values and effect sizes. The strong correlation (C59) between colonization and extinction trends provides compelling evidence for thermal affinity as a driver. The consistency across multiple metrics (occupancy, abundance, richness) strengthens the conclusions. Figure 4 provides clear visual support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66",
+      "C72",
+      "C73",
+      "C95"
+    ],
+    "result": "Island isolation consistently mediated thermophilization dynamics: on less isolated islands (nearer to mainland), all 15 warm-adapted species increased colonization rates faster over time, while 21 of 23 cold-adapted species increased extinction rates faster. This pattern supports dispersal limitation as a primary mechanism by which habitat fragmentation mediates species range shifts under climate warming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The isolation effects are remarkably consistent across species (15/15 warm-adapted, 21/23 cold-adapted showing expected patterns), providing strong evidence for dispersal limitation. The interpretation (C95) is well-supported by the data and consistent with cited literature. The multi-species occupancy model appropriately accounts for imperfect detection and spatial structure. Figure 5 clearly illustrates these patterns.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C70",
+      "C96",
+      "C97"
+    ],
+    "result": "Island area had mixed effects on colonization-extinction dynamics. For most warm-adapted species (11 of 15), colonization rates increased faster on smaller islands, while cold-adapted species showed approximately equal splits between faster extinction on smaller (12/23) versus larger islands (11/23). Temperature monitoring data confirmed that smaller islands had diminished temperature buffering ability, supporting microclimate as a primary driver of fragmentation's mediation of thermophilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The area effects are more complex than isolation effects, but the empirical temperature data (C96) provides direct mechanistic support for the microclimate buffering hypothesis. The mixed patterns for cold-adapted species suggest multiple mechanisms may be operating. The post-hoc temperature monitoring (Figure 5\u2014figure supplement 1) strengthens the mechanistic interpretation, though it was collected in only one year (2022) on 20 islands.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C71"
+    ],
+    "result": "The study found evidence of thermophilization driven by increasing warm-adapted species and decreasing cold-adapted species in terms of colonization rate, extinction rate, occupancy rate, and population size. Critically, colonization rates of warm-adapted species increased faster on smaller or less isolated islands, while cold-adapted species were lost more quickly on closer islands. This provides support for dispersal limitation and microclimate buffering as primary mechanisms by which habitat fragmentation mediates species range shift.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These are the primary findings of the study, well-supported by the detailed analyses in other result groups. The claims integrate multiple lines of evidence (CTI trends, species-specific dynamics, fragmentation effects) into a coherent conclusion. The mechanistic interpretation (C8) is appropriately cautious, identifying dispersal limitation and microclimate buffering as 'primary proxies' rather than definitive mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C80",
+      "C82",
+      "C83"
+    ],
+    "result": "The landscape-scale analysis revealed that thermophilization was mostly due to occurrence dynamics within the region rather than exogenous community turnover. STI was identified as an effective broad indicator of relative climatic vulnerability, with species having higher thermal preferences generally benefiting from local climate warming.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The inference about within-region dynamics (C80) is logically derived from the difference between landscape and transect-level results. The conclusion about STI as a vulnerability indicator (C82-C83) is well-supported by the strong relationships between STI and temporal trends in colonization, extinction, and abundance, and is consistent with cited literature (C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C93",
+      "C94"
+    ],
+    "result": "Despite general trends, not all warm-adapted species increased and not all cold-adapted species decreased, indicating that species did not contribute equally to thermophilization.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "This nuanced observation is evident in Figures 4 and 5, which show variation in species responses. The acknowledgment of heterogeneity strengthens rather than weakens the overall conclusions by demonstrating appropriate scientific caution. This is consistent with cited literature (C94) showing similar patterns elsewhere.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C130",
+      "C131",
+      "C132",
+      "C133",
+      "C134",
+      "C135"
+    ],
+    "result": "A spatially hierarchical dynamic multi-species occupancy model (MSOM) was developed in a Bayesian framework to account for imperfect detection, with occupancy interpreted as 'use' to relax closure assumptions. Model validation showed good fit (Bayesian p-value=0.488). Bayesian linear regression and linear mixed effects models with temporal autocorrelation structures were used to analyze CTI trends.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "The statistical methodology is appropriate and well-justified. The MSOM approach properly accounts for imperfect detection, a critical issue in occupancy studies. The Bayesian p-value (C132) indicates unbiased model estimation. The interpretation of occupancy as 'use' (C131) is a reasonable accommodation for mobile species surveyed multiple times per year. The temporal autocorrelation structure (C135) appropriately addresses non-independence of repeated measures.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C101",
+      "C102",
+      "C103"
+    ],
+    "result": "The study provides conservation recommendations: better connected landscapes should be developed to remove dispersal constraints; small patches can foster establishment of warm-adapted species while large patches can act as refugia for cold-adapted species; preserving patches of diverse sizes can provide stepping stones or shelters depending on species' thermal affinity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "These conservation recommendations logically follow from the empirical findings about isolation and area effects. However, they are inferences about management implications rather than direct empirical results. The recommendations are appropriately cautious and acknowledge the differential roles of patch size for species with different thermal affinities.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C25",
+      "C26",
+      "C32",
+      "C36",
+      "C37"
+    ],
+    "result": "The study proposed three theoretical mechanisms by which habitat fragmentation could mediate thermophilization: (1) reduced microclimate buffering in small patches boosting warm-adapted species colonization and cold-adapted species extinction; (2) reduced habitat heterogeneity in fragmented patches intensifying loss of cold-adapted species and weakening colonization of warm-adapted species; (3) dispersal limitation from isolation preventing colonization of warm-adapted species and emigration of cold-adapted species.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "These are a priori hypotheses (illustrated in Figure 1) rather than empirical results. While the study found support for mechanisms 1 and 3 (microclimate buffering and dispersal limitation), the evidence for mechanism 2 (habitat heterogeneity) is less direct. The claims are appropriately framed as expectations ('may boost', 'should experience') but their status as hypotheses rather than findings should be clear.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C88",
+      "C89",
+      "C90"
+    ],
+    "result": "The study site (TIL) is positioned near the cold edge of most warm-adapted species' ranges. Combined with predictions that birds in China should move upslope or poleward under climate change, the authors infer that local climate will continue to shift warm-adapted species toward thermal optima, predicting continued population growth.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is a speculative prediction about future trends (C90) based on biogeographic positioning (C88) and cited predictions (C89). While the logic is sound, it extends beyond the 10-year study period and assumes continued warming and stable species distributions elsewhere. The prediction is appropriately framed as an inference but lacks empirical validation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C100"
+    ],
+    "result": "The authors speculate that some cold-adapted species showing increased extinction on larger islands may face stronger predation pressures, as predators like snakes and felids may increase activity under climate warming and only exist on larger islands in this system.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "This is explicitly acknowledged as post-hoc speculation (C100) to explain unexpected patterns for species like Spizixos semitorques and Pericrocotus cantonensis (C70). While the cited evidence about predator activity under warming exists, there is no direct data on predation rates or predator distributions in this study. This represents an interesting hypothesis for future work but is not empirically supported here.",
+    "result_type": "MINOR"
+  }
+]

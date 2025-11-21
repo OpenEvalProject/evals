@@ -1,0 +1,122 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C21",
+      "C22",
+      "C23"
+    ],
+    "result": "High mutational load tumors upregulate proteostasis machinery including proteasome, chaperones, mitochondrial ribosomes, and spliceosome. Gene set enrichment analysis of ~5000 significantly upregulated genes (FDR < 0.05) identified these pathways as most enriched in response to mutational load across 10,295 TCGA tumors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers acknowledge the finding as important but raise critical concerns about potential confounding. They note that 'systematic differences in expression of some genes from one tumor class to another might generate spurious associations with mutational load' and that 'some of the associations presented could arise through confounding.' Reviewers request within-cancer-type validation to strengthen causal claims.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32"
+    ],
+    "result": "High mutational load tumors show increased intron retention coupled with transcript under-expression, particularly affecting cytoplasmic ribosomes. The trend shows ~10% variation in splicing for 100-fold variation in mutational load and is robust across different PSI thresholds and alternative splicing event types.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers express significant skepticism about this finding. They note the effect is 'weak' and question why 'different events (exon skipping, intron retention, etc) should respond in the same way to ML.' They suggest 'a weak but homogeneous effect like the one shown here might result from some common confounder' and question why 'with increasing intron retention PSI threshold the fraction of under-expressed transcripts would decrease and not increase.'",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C33",
+      "C34",
+      "C36",
+      "C37",
+      "C41",
+      "C42",
+      "C43"
+    ],
+    "result": "Individual gene-level analysis shows specific chaperone families (HSP60, HSP70, HSP90, HSP100), proteasome components (19S and 20S), and mitochondrial ribosomes are upregulated with mutational load, while small heat shock proteins and cytoplasmic ribosomes are downregulated. These patterns are stable in jackknife resampling, within-cancer-type analyses, and age-stratified analyses.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "While reviewers acknowledge 'solid evidence that mutational load is associated with higher expression of genes involved in mitigation of protein misfolding,' they raise concerns about the robustness analyses. Reviewers note that jackknife (leave-one-out) analysis 'would not reveal if the signal was driven by a (small) subset of cancer types' and request true within-cancer-type analyses with 'results for specific genes, rather than broad groups' to justify claims about effects 'across almost all cancer types.'",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Expression patterns observed in TCGA tumors replicate in cancer cell lines (CCLE), including both mRNA expression and protein abundance, indicating the responses are cell-autonomous and independent of organismal effects like immune system or microenvironment.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers raise methodological concerns about the CCLE analysis. They note 'you use different model architecture for the TCGA and CCLE analysis' and question whether this was properly validated, asking 'Did you test this? Could you downsample to avoid this?' They emphasize that 'cancer type is likely a strong confounder of ML,' which could affect the interpretation of cell-autonomous effects.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "shRNA knockdown experiments show that disrupting chaperones (especially HSP100), the 19S proteasome regulatory particle, and mitochondrial ribosomes decreases viability in high mutational load cells, while disrupting cytoplasmic ribosomes increases viability. The claim states HSP100 shows effects 'across almost all cancer types.'",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Reviewers directly challenge the generalizability claims, stating that to justify claims like 'significant negative relationship between mutational load and cell viability across almost all cancer types, one needs to analyze individual cancer types.' The leave-one-out analysis presented 'would not reveal if the signal was driven by a (small) subset of cancer types.' Reviewers request individual cancer type analyses with specific genes rather than broad groups.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C57"
+    ],
+    "result": "Drug sensitivity screens show that proteasome inhibitors (6/8 significant) and some HSP90 inhibitors decrease viability in high mutational load cell lines, indicating elevated proteostasis machinery expression is causally related to viability maintenance.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise specific concerns about the drug screening results. The editor notes 'overall the authors present solid evidence' for the association between mutational load and proteostasis upregulation, and the drug data supports the causal interpretation of this relationship.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C58",
+      "C59"
+    ],
+    "result": "Broad drug screening shows most drugs do not decrease viability with mutational load, but specific categories (transcription inhibitors, cytoskeleton organization inhibitors, protein degradation inhibitors, chaperone inhibitors, protein synthesis inhibitors, and pro-apoptosis drugs) are most effective against high mutational load cells.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not raise concerns about these drug category findings. The specificity of the effect (most drugs showing no effect while specific categories show strong effects) addresses potential concerns about generic drug sensitivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C18",
+      "C19"
+    ],
+    "result": "Correlation analysis shows high collinearity among synonymous, non-synonymous, and nonsense point mutations (R>0.9) but weak collinearity between point mutations and copy number alterations (R<0.05) in TCGA tumors.",
+    "reviewer_id": "PEER_REVIEW",
+    "reviewer_name": "Peer Reviewer",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Reviewers do not challenge this descriptive finding about mutation type correlations. This serves as methodological justification for using total mutational load as the primary predictor variable.",
+    "result_type": "MINOR"
+  }
+]

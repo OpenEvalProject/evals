@@ -1,0 +1,404 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C4",
+      "C20",
+      "C28",
+      "C29",
+      "C63",
+      "C64",
+      "C106"
+    ],
+    "result": "Random connectivity in feedforward networks with hippocampal and cortical statistics leads to clustered convergence of 3-4 inputs from co-active ensembles onto dendritic segments, with stimulus-driven groups being orders of magnitude more likely than fully mixed groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C4, C20, C28, C29, C63, C64, and C106 collectively demonstrate through analytical derivations and computational simulations that random connectivity is sufficient for grouped convergence. The mathematical framework is validated by simulations, and the results show clear quantitative predictions about convergence probabilities across different network configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C5",
+      "C30",
+      "C73",
+      "C74"
+    ],
+    "result": "Sequential convergence of 3-5 inputs from temporally ordered ensembles is likely in randomly connected networks, but requires larger ensembles (~1000 neurons) compared to grouped convergence, with gap-fill sequences constituting the major fraction of sequences.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C30, C73, and C74 demonstrate through analytical and simulation approaches that sequential convergence is possible but requires greater redundancy. The finding that gap-fills dominate is well-supported by the probability calculations shown in Figure 4.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C6",
+      "C22",
+      "C40",
+      "C71",
+      "C72"
+    ],
+    "result": "Strong dendritic nonlinearities are necessary to distinguish neurons receiving stimulus-driven groups from other neurons, but even with strong nonlinearities, fully mixed groups cannot be distinguished from partially mixed groups based on single pattern responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C22, C40, C71, and C72 are supported by simulations in Figure 3 showing that weak nonlinearities fail to distinguish neuron types, while strong nonlinearities enable discrimination of stimulus-driven groups. The limitation regarding fully mixed vs. partially mixed groups is clearly demonstrated.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C41",
+      "C42",
+      "C43",
+      "C57",
+      "C102"
+    ],
+    "result": "Expression of dendritic computation as somatic selectivity requires confluence of multiple factors including low background activity, strong nonlinearities, appropriate timescales, and potentially excitatory-inhibitory balance, with hippocampal configurations being better suited than cortical configurations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C41, C42, C43, C57, and C102 synthesize findings across multiple analyses showing that structural connectivity alone is insufficient. The comparative analysis of hippocampal vs. cortical configurations (Figures 2, 4) and the role of background activity are well-demonstrated through simulations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C27"
+    ],
+    "result": "Grouped inputs at 2 \u03bcm spacing produce higher activated Calmodulin concentration compared to dispersed inputs at 10 \u03bcm spacing in a computational Ca-Calmodulin model.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C27 is directly supported by the computational model results shown in Figure 2B, demonstrating the principle of spatial clustering effects on biochemical signaling.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C38",
+      "C39"
+    ],
+    "result": "Large presynaptic ensembles yield postsynaptic neurons with diverse selectivity types (pure, partially mixed, fully mixed), with partially mixed selectivity being far more likely than pure or fully mixed selectivity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C38 and C39 are supported by the combinatorial analysis and simulation results shown in Figure 2L, which clearly demonstrates the distribution of different selectivity types.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C44",
+      "C45",
+      "C48",
+      "C51"
+    ],
+    "result": "Chemical mechanisms operating over seconds are more suitable for plasticity than ongoing computation due to vulnerability to background activity, while CICR operating at ~100-1000 ms timescales could influence both computation and plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C44, C45, C48, and C51 are supported by the analysis of noise effects on different timescales (Figure 2H-I) and theoretical considerations about the functional roles of different mechanisms. The interpretation is logical given the demonstrated vulnerability to background activity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C46",
+      "C52",
+      "C53"
+    ],
+    "result": "Electrical mechanisms work well for grouped computations but are sensitive to ectopic inputs in sequences, while chemical mechanisms show stronger sequence selectivity and are less prone to ectopic inputs outside the sequence zone.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46, C52, and C53 are supported by comparative simulations in Figures 5 and 6, which systematically test the effects of ectopic inputs on both electrical and chemical sequence selectivity mechanisms.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C54",
+      "C55",
+      "C56",
+      "C58",
+      "C96",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Despite strong dendritic sequence selectivity (~0.8), somatic selectivity is weak (0.05-0.08) due to background and non-sequential inputs across the dendritic arbor, but can be improved to 0.13-0.22 with background subtraction as a proxy for excitatory-inhibitory balance.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C54, C55, C56, C58, C96, C97, C98, and C99 are supported by network-level simulations in Figure 7. The quantitative estimates of input numbers and selectivity values are clearly demonstrated, though the EI balance mechanism is tested only as a proxy through background subtraction.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C81",
+      "C82",
+      "C83",
+      "C84",
+      "C85"
+    ],
+    "result": "For chemical sequences, ectopic inputs within the stimulus zone strongly degrade selectivity (65-81% for M<5), but longer sequences (M\u22656) show substantial recovery (20-30% dip), and ectopic inputs >2 diffusion length constants away have minimal effect.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C81-C85 are supported by systematic simulations using the bistable-switch model (Figure 5), which test ectopic inputs at various positions and for different sequence lengths with clear quantitative results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C86",
+      "C87",
+      "C88",
+      "C89",
+      "C90",
+      "C91",
+      "C92"
+    ],
+    "result": "For electrical sequences, selectivity is maximum at 2-4 \u03bcm/ms input velocities, with ectopic inputs degrading selectivity particularly when arriving at the distal end, and mid-length sequences (5-7 inputs) showing 27-53% selectivity drops while longer sequences are less affected (16-18% drop).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C86-C92 are supported by simulations using the Branco model (Figure 6), which systematically test ectopic effects across positions, timings, and sequence lengths. The results are consistent with experimental findings from Branco et al., 2010.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C100",
+      "C101"
+    ],
+    "result": "Under high noise conditions (cortex-CICR), sequence selectivity is poor (-0.03 to 0.07) even after background subtraction, demonstrating that sequence selectivity operates best under low noise conditions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C100 and C101 are supported by comparative simulations (Figure 7\u2014figure supplement 1) showing the dramatic difference between low and high noise configurations, providing clear evidence for the importance of noise levels.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C103",
+      "C104",
+      "C105"
+    ],
+    "result": "An integrated multiscale model demonstrates that electrical, grouped Ca-CaM, and chemical sequence selectivity mechanisms can coexist in a single neuron, separated by timescales (~100 ms, ~1 s, ~10 s), with each showing nonlinear selectivity for synaptic spacing and weights.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C103, C104, and C105 are supported by simulations of the integrated model (Figure 8 and supplements), which demonstrate that multiple forms of selectivity can operate simultaneously at different timescales in a biophysically detailed model.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C31",
+      "C32",
+      "C33",
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113",
+      "C114"
+    ],
+    "result": "In the olfactory system, piriform cortex neurons are predicted to receive grouped projections from 3-4 pairs of glomeruli on individual dendritic branches through random connectivity, potentially triggering NMDA spikes for odor discrimination.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31-C33 and C109-C114 apply the study's analytical framework to the olfactory system using anatomical data from cited studies. The predictions are logical applications of the general theory to a specific circuit, though they remain untested predictions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C115",
+      "C116"
+    ],
+    "result": "Optogenetic stimulation of 3-4 glomeruli combinations is predicted to show clustered glutamate release and nonlinear summation on piriform cortex dendrites.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C115 and C116 are testable predictions based on the olfactory circuit analysis, but they remain speculative until experimentally validated. The predictions are logical extensions of the theory but lack direct empirical support.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C59",
+      "C60"
+    ],
+    "result": "Branch point effects on synaptic clusters are minimal for pyramidal neurons (expected interruption ~0.05) but substantial for Purkinje cells (expected interruption ~1.0) based on morphological calculations.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C59 and C60 are supported by analytical calculations using morphological data from cited studies. However, the analysis makes conservative assumptions about cluster interruption at branch points that may not fully capture the complexity of dendritic integration across branches.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C65",
+      "C66",
+      "C67",
+      "C68",
+      "C69",
+      "C70"
+    ],
+    "result": "Noise groups are more probable in cortical than hippocampal configurations due to higher background activity, with the hippo-elec configuration showing the best signal-to-noise ratio for grouped computation, while cortex-chem shows near-impossible discrimination of stimulus-driven groups.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C65-C70 are supported by analytical calculations and simulations comparing different network configurations (Figure 2H-M). The signal-to-noise analysis provides clear quantitative comparisons across configurations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "For sequences, hippo-elec has the best signal-to-noise ratio, followed by cortex-elec and hippo-CICR, with gap-fills playing a dual role: supporting sequence completion under low noise but hampering discrimination under high noise as ensembles increase.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C80 are supported by analytical and simulation results (Figure 4I and supplements) showing signal-to-noise comparisons and the role of gap-fills. The dual interpretation of gap-fills is logical given the demonstrated probabilities.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C93",
+      "C94",
+      "C95"
+    ],
+    "result": "Neurons receiving perfect sequential connectivity (PSCSD) show slightly higher activation and selectivity for ordered sequences compared to neurons without such connectivity (PSCSDC) and compared to scrambled stimuli.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C93, C94, and C95 are supported by network simulations in Figure 7, though the effects are modest. The statistical significance is reported for the selectivity differences.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C19"
+    ],
+    "result": "Background knowledge and literature review establishing that neural ensembles represent salient events, dendrites have nonlinear mechanisms triggered by clustered inputs, and experimental evidence exists for clustered synaptic activity in multiple brain regions.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C19 represent well-established background knowledge supported by multiple citations to experimental and theoretical studies. These provide the scientific foundation and motivation for the current work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C23",
+      "C24",
+      "C25",
+      "C26"
+    ],
+    "result": "Different dendritic mechanisms operate at distinct spatiotemporal scales: electrical (50-100 \u03bcm, <50 ms), chemical (~10 \u03bcm, seconds), and CICR (~10 \u03bcm, 100-1000 ms).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23-C26 are supported by citations to experimental studies characterizing these mechanisms. These established properties form the basis for the study's analysis of different network configurations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36",
+      "C37"
+    ],
+    "result": "Mixed selectivity neurons have been observed in multiple brain regions and can expand representational dimensionality, with dendritic integration being a potential mechanism as demonstrated in vibrissal cortex.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C37 are supported by citations to experimental studies. This background establishes the functional relevance of the study's investigation of how random connectivity and dendritic nonlinearities can generate mixed selectivity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Connection probabilities in hippocampal CA3-CA1 projections are ~5% and in cortical circuits range from 5-50% based on experimental measurements.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C61 and C62 are supported by citations to multiple experimental studies measuring connectivity. These values are used as parameters in the study's analytical framework.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C47"
+    ],
+    "result": "There is conflicting evidence about whether 3-5 inputs are sufficient to trigger dendritic spikes, with some studies suggesting insufficiency while others argue strong synapses can trigger them.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C47 accurately represents a controversy in the literature based on citations to studies with differing findings. This uncertainty is appropriately acknowledged.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C49",
+      "C50"
+    ],
+    "result": "Elevated dendritic Ca2+ affects somatic activity through dendritic spikes, enhances dendrite-soma correlations, and triggers plasticity mechanisms.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49 and C50 are supported by citations to experimental studies. This background knowledge supports the functional significance of CICR mechanisms analyzed in the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C21",
+      "C107",
+      "C108"
+    ],
+    "result": "Dendritic clusters can perform combinatorial input selection and sequence recognition without requiring specialized wiring mechanisms beyond random connectivity, providing a substrate for downstream pattern decoding.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C21, C107, and C108 represent key conclusions of the study that are supported by the analytical and simulation results demonstrating sufficiency of random connectivity. However, the functional implications for downstream decoding remain somewhat speculative.",
+    "result_type": "MAJOR"
+  }
+]

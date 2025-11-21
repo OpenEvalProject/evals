@@ -1,0 +1,2518 @@
+{
+  "submission": {
+    "id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+    "user_id": null,
+    "manuscript_title": null,
+    "manuscript_doi": null,
+    "status": "completed",
+    "created_at": "2025-11-21T19:46:42.946464Z",
+    "updated_at": "2025-11-21T19:46:42.946464Z"
+  },
+  "content": [
+    {
+      "id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "content_type": "manuscript",
+      "content_text": "# Control of ciliary transcriptional programs during spermatogenesis by antagonistic transcription factors\n\n## Authors\n\n- Weihua Wang<sup>1</sup> ([ORCID: 0009-0007-3965-7375](https://orcid.org/0009-0007-3965-7375)) \u2020\n- Junqiao Xing<sup>1</sup>\n- Xiqi Zhang<sup>1</sup>\n- Hongni Liu<sup>1</sup>\n- Xingyu Liu<sup>1</sup>\n- Haochen Jiang<sup>1</sup> ([ORCID: 0009-0003-4254-6765](https://orcid.org/0009-0003-4254-6765))\n- Cheng Xu<sup>1</sup>\n- Xue Zhao<sup>1</sup>\n- Zhangfeng Hu<sup>1</sup> ([ORCID: 0000-0002-4841-8073](https://orcid.org/0000-0002-4841-8073)) \u2020\n\n### Affiliations\n\n1. Institute of Microalgae Synthetic Biology and Green Manufacturing, School of Life Sciences, Jianghan University Wuhan China ([ROR:041c9x778](https://ror.org/041c9x778))\n2. Hubei Engineering Research Center for Protection and Utilization of Special Biological Resources in the Hanjiang River Basin, School of Life Sciences, Jianghan University Wuhan China ([ROR:041c9x778](https://ror.org/041c9x778))\n3. No.1 Middle School Affiliated to Central China Normal University Wuhan China ([ROR:03x1jna21](https://ror.org/03x1jna21))\n4. Hubei Key Laboratory of Environmental and Health Effects of Persistent Toxic Substances, Jianghan University Wuhan China ([ROR:041c9x778](https://ror.org/041c9x778))\n\n\u2020 Corresponding author\n\n## Abstract\n\nExistence of cilia in the last eukaryotic common ancestor raises a fundamental question in biology: how the transcriptional regulation of ciliogenesis has evolved? One conceptual answer to this question is by an ancient transcription factor regulating ciliary gene expression in both uni- and multicellular organisms, but examples of such transcription factors in eukaryotes are lacking. Previously, we showed that an ancient transcription factor X chromosome-associated protein 5 (Xap5) is required for flagellar assembly in Chlamydomonas. Here, we show that Xap5 and Xap5-like (Xap5l) are two conserved pairs of antagonistic transcription regulators that control ciliary transcriptional programs during spermatogenesis. Male mice lacking either Xap5 or Xap5l display infertility, as a result of meiotic prophase arrest and sperm flagella malformation, respectively. Mechanistically, Xap5 positively regulates the ciliary gene expression by activating the key regulators including Foxj1 and Rfx families during the early stage of spermatogenesis. In contrast, Xap5l negatively regulates the expression of ciliary genes via repressing these ciliary transcription factors during the spermiogenesis stage. Our results provide new insights into the mechanisms by which temporal and spatial transcription regulators are coordinated to control ciliary transcriptional programs during spermatogenesis.\n\n## Introduction\n\nCilia and flagella are evolutionarily conserved hair-like microtubule organelles that project from the surfaces of most eukaryotic cells (Derderian et al., 2023; Mitchell, 2017). They play essential roles in sensory reception, signal transduction, and cell movement (Goetz and Anderson, 2010; Nachury and Mick, 2019; Singla and Reiter, 2006). The dysfunction of cilia in humans leads to an emerging class of genetic diseases called ciliopathies classified into first- and second-order ciliopathies (Ishikawa and Marshall, 2011; Lovera and L\u00fcders, 2021; Reiter and Leroux, 2017). First-order ciliopathies are caused by aberrations in ciliary proteins, and second-order ciliopathies occur due to defects in non-ciliary proteins, such as transcription factors, that are required for cilia formation and function (Reiter and Leroux, 2017).\n\nCilia are complex organelles and are dynamically regulated during development and the cell cycle (Eggenschwiler and Anderson, 2007; Kasahara and Inagaki, 2021; Santos and Reiter, 2008). The transcriptional regulation of ciliary genes must be precisely coordinated during ciliogenesis (Choksi et al., 2014; Collins et al., 2021; Lewis and Stracker, 2021; Thomas et al., 2010). In metazoans, several transcription factors, including Foxj1 and Rfxs, have been shown to be involved in directing the expression of ciliary genes (Stubbs et al., 2008; Swoboda et al., 2000; Yu et al., 2008). These key ciliary transcription factors show dynamic expression patterns during development and differentiation (Stubbs et al., 2008; Swoboda et al., 2000; Yu et al., 2008). However, how these key transcriptional programs are spatially and temporally controlled by cell type-specific transcription factors and signaling pathways in order to activate specific target ciliary genes and generate diverse cilia is largely unknown.\n\nDespite transcriptional regulation of ciliary genes is required for ciliogenesis in both uni- and multicellular organisms, the underlying mechanism mediating ciliary gene expression may be fundamentally different, as the two major transcription factors, Foxj1 and Rfxs, are absent from many unicellular organisms (Chu et al., 2010; Li et al., 2018; Piasecki et al., 2010; Vij et al., 2012). Cilia and ciliary genes have been highly conserved throughout evolution, suggesting that the regulation of ciliary genes could be programmed by yet undiscovered transcriptional mechanisms, which possibly coevolved with multicellularity. Recently, an ancient transcription factor, X chromosome-associated protein 5 (Xap5), is found to regulate ciliary gene expression in a unicellular organism, Chlamydomonas reinhardtii (Li et al., 2018). Xap5 is highly conserved among different species and is widely expressed across tissues (Martin-Tryon and Harmer, 2008; Mazzarella et al., 1997). In vertebrates, Xap5-like (Xap5l) with an intronless open reading frame originated in Therians via retrotransposition of the ancestral Xap5, and it is highly expressed during spermatogenesis (Sedlacek et al., 1999; Zhang et al., 2011). However, whether Xap5 and Xap5l play essential roles in cilia development in multicellular organisms remains unknown.\n\nHere, we show that Xap5/Xap5l are antagonistic transcription factors required for ciliary transcriptional programs during spermatogenesis. Xap5 is widely expressed in different tissues, while Xap5l is exclusively present in the testes. To explore the roles of Xap5/Xap5l in ciliogenesis, we generated a Xap5l knockout (KO) mouse line and found that Xap5l KO male mice are infertile due to the malformation of sperm flagella. Interestingly, male mice with the loss of Xap5 protein in germ cells also exhibited infertile, due to the arrest of spermatogenesis in the meiotic prophase stage. These data suggest that Xap5/Xap5l play crucial roles in sperm flagellar assembly in a spatiotemporal manner. Mechanistically, Xap5 positively modulates transcriptional rewiring of ciliary genes via activating the key regulators including Foxj1 and Rfxs during the early stage of spermatogenesis. Conversely, Xap5l negatively regulates the transcriptional program controlling ciliogenesis by repressing these ciliary transcription factors during the spermiogenesis stage. Thus, ciliary transcriptional programs are spatially and temporally controlled by Xap5/Xap5l antagonistic transcription factors during spermatogenesis.\n\n## Results\n\n### Xap5 and Xap5l are indispensable for male fertility\n\nTo explore the potential functions of Xap5/Xap5l during ciliogenesis in vivo, we performed western blot analysis to investigate the spatiotemporal expression of Xap5/Xap5l in various mouse tissues. We observed that Xap5 protein was widely expressed in diverse tissues and present at all stages of postnatal testes maturation, whereas Xap5l protein was mainly present in the testes and its level increased dramatically from postnatal day 21 (P21) and continued into adulthood (Figure 1A, B). Next, we identified the specific testicular cell types expressing Xap5/Xap5l using published single-cell RNA-seq data (Jung et al., 2019). Xap5 mRNA was found predominantly expressed in spermatogonia, while Xap5l mRNA was observed in pachytene spermatocytes, and remained until elongating spermatids (Figure 1C). Consistent with the mRNA localization patterns, immunofluorescence staining showed that Xap5 protein was mainly detected in the nuclei of spermatogonia, whereas Xap5l protein was present in the nuclei of pachytene spermatocytes and spermatids within the seminiferous tubules, and neither of Xap5 or Xap5l was detected in mature sperm (Figure 1D, Figure 1\u2014figure supplement 1).\n\n![Figure 1.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig1-v1.jpg)\n\n**Figure 1.:** (A) Detection of Xap5/Xap5l protein in different tissues of adult mice by western blot analysis. (B) Expression of Xap5/Xap5l protein during postnatal testicular development. \u03b2-Actin was used as control. (C) t-SNE plots displaying Xap5/Xap5l gene expression levels in individual cell types of mouse testis visualized using published single-cell data (Jung et al., 2019). Black arrow represents the developmental pseudotime corresponding to the developmental ordering of each cell progressing through spermatogenesis. Dot color intensity represents the expression level. Cells from different stages are color-coded. (D) Immunofluorescence staining of Xap5/Xap5l in adult WT testis. Representative spermatogonium (Sg), round spermatid (Rs), and elongating spermatid (Es) are indicated. Scale bars: 20 \u03bcm (white), 5 \u03bcm (red). (E) Similar development between WT and Xap5l KO mice. Scale bar: 1 cm. (F) Average litter size of pups obtained by fertility test. Each male was caged with two females for 2 months, five males were used for each genotype. ***p < 0.001, n.s. stands for not significant. (G) Similar appearance of WT and Xap5 cKO mice. Scale bar: 1 cm. (H) Average litter size of pups obtained by fertility test. Each male was caged with two WT females for 2 months, four males were used for each genotype. ***p < 0.001. Error bars depict means \u00b1 SEM. All p-values were calculated using an unpaired, two-tailed Student\u2019s t-test.\n\n![Figure 1\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig1-figsupp1-v1.jpg)\n\n**Figure 1\u2014figure supplement 1.:** (A) Western blot analysis showing no localization of Xap5/Xap5l in mature sperm. Western blot analysis showing the subcellular localization of endogenous Xap5 (B) and Xap5l (C). Lmnb used as a nuclear protein marker, Gapdh used as a cytoplasmic protein marker. (D) Immunofluorescence staining of Xap5/Xap5l in adult epididymis. Scale bars: 50 \u03bcm.\n\n![Figure 1\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig1-figsupp2-v1.jpg)\n\n**Figure 1\u2014figure supplement 2.:** (A) Schematic illustration of the targeting strategy for generating a Xap5l knockout mouse line using CRISPR\u2013Cas9 system. Upper panel showing genomic structure of the Xap5l gene. The location of two sgRNAs (sgRNA1 and sgRNA2) used and three primers (blue arrows) for genome PCR are indicated. Lower panel displaying nucleotide sequence of WT allele in the vicinity of two sgRNAs (red color) and the corresponding sequence of the Xap5l homozygous mutant (KO) allele. The deletion of Xap5l gene was verified by Sanger sequencing. (B) Genome PCR analysis in WT and Xap5l KO mice. (C) Detection of Xap5l in adult testes extracts of WT and Xap5l KO mice by western blot analysis. \u03b2-Actin was used as a control. (D) Schematic illustration of the targeting strategy for generating Xap5 cKO mice. The location of LoxP sites inserted and the primers (blue arrow) used for genome PCR are indicated. (E) Genome PCR analysis in WT and Xap5 cKO mice. (F) Detection of Xap5 in testes extracts of WT and Xap5 cKO mice by western blot analysis. \u03b2-Actin was used as a control.\n\nTo investigate the physiological function of the uncharacterized Xap5/Xap5l protein, we attempted to generate global KO mice using the CRISPR-Cas9 system. We successfully established a Xap5l KO mouse line (Figure 1\u2014figure supplement 2A\u2013C) and found that while all Xap5l KO mice survived to adulthood and appeared indistinguishable from the wildtype (WT) mice, Xap5l KO males were sterile (Figure 1E, F). Notably, generating mosaic F0 founders with Xap5 mutant allele proved challenging, and no F1 generation inherited the mutant alleles from the few F0 founders in over a year of breeding experiments, underscoring the critical roles of Xap5 in mouse development. Subsequently, we generated floxed-Xap5 mice and crossed them with Stra8-GFPCre knockin mice (Lin et al., 2017) to produce Xap5 germline-specific KO mice (Xap5 cKO) (Figure 1\u2014figure supplement 2D\u2013F). Similar in appearance to controls (Xap5fl/Y), all Xap5 cKO males were also found to be sterile (Figure 1G, H). Collectively, these results suggest that Xap5/Xap5l play essential roles in spermatogenesis.\n\n### Xap5 and Xap5l function at different stages of spermatogenesis\n\nTo uncover the cause of male infertility, we conducted gross and histological analyses of the testes from WT and Xap5l KO mice. There were no differences in the gross appearance of testis or in the weight of mouse body and testis between WT and Xap5l KO mice (Figure 2A), but the number of sperm collected from cauda epididymis of Xap5l KO mice was significantly lower than that from WT mice (Figure 2B), and sperm motility was significantly reduced in KO mice (Figure 2C and Figure 2\u2014videos 1 and 2). Histological analysis did not reveal any severe abnormity in the seminiferous epithelial cycle of Xap5l KO testes (Figure 2D). Further examination of the morphology and structure of cauda epididymal sperm in Xap5l KO mice revealed significantly higher rates of abnormal flagella (Figure 2E\u2013G), indicating that Xap5l is crucial for flagellar assembly during spermiogenesis.\n\n![Figure 2.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig2-v1.jpg)\n\n**Figure 2.:** (A) Similar gross testes morphology, body weight, and testis weight between WT and Xap5l KO mice. Scale bar: 1 mm. n = 6, n.s. stands for not significant. (B) Significantly reduced caudal epididymal sperm counts in Xap5l KO mice compared with WT males. n = 5, **p < 0.01. (C) Significantly reduced sperm total motility of Xap5l KO mice. n = 3, **p < 0.01. (D) H&E staining showing similar histological structure of the testes from WT and Xap5l KO mice. Scale bars: 100 \u03bcm. (E) H&E staining showing the morphology of sperm in WT and Xap5l KO mice. Scale bars: 10 \u03bcm. (F) Significantly increased abnormal sperm in Xap5l KO mice. n = 6, ***p < 0.001. (G) Electron microscopic analysis displaying ultrastructural defects in Xap5l KO sperm flagella, including cytoplasmic vacuoles enveloping mitochondrial sheath (as shown by red arrowheads), a complete lack of mitochondrial sheath (as shown by red dotted circle), two or more cross-sections of the same sperm flagellum enclosed within one cell membrane (as shown by black arrowheads), partially formed outer dense fibers, and the axonemal microtubules (as indicated by asterisks). Scale bars: 2 \u03bcm. Error bars depict means \u00b1 SEM. All p-values were calculated using an unpaired, two-tailed Student\u2019s t-test.\n\nWe also investigated the spermatogenic defects in the seminiferous tubules and epididymis of Xap5 cKO male mice. Notably, the testes of Xap5 cKO males were significantly smaller compared to WT controls at P16 and older (Figure 3A). Many seminiferous tubules in P16 and older Xap5 cKO males were vacuolated due to the absence of spermatocytes and spermatids, as indicated by the lack of XY body formation and the absence of PNA signal, a marker of spermatids and sperm, in Xap5 cKO germ cells (Figure 3B\u2013D). As a consequence, no sperm were observed in the adult cauda epididymides of Xap5 cKO mice (Figure 3E). Taken together, these data indicate that germ cell development in Xap5 cKO males was arrested in meiotic prophase, and Xap5 is indispensable for meiotic progression during spermatogenesis.\n\n![Figure 3.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig3-v1.jpg)\n\n**Figure 3.:** (A) Testes sizes, body weight, and testis weight from WT and Xap5 cKO mice at various ages were evaluated. Similar body weight was observed between WT and Xap5 cKO mice. No significant difference in size and weight was detected between WT and Xap5 cKO testes until P16. Scale bars: 1 mm. n = 5, ***p < 0.001, n.s. stands for not significant. (B) Histology of testes from WT and Xap5 cKO mice at various ages was evaluated by H&E staining. No pachytene spermatocytes were found, and many vacuolated tubules were observed in Xap5 cKO testis since P16. Black arrowheads indicate pachytene spermatocytes; black arrows indicate round spermatids. Vacuolated seminiferous tubules are indicated by asterisks. Scale bars: 20 \u03bcm (black), 2.5 \u03bcm (red). (C) Chromosome spreads staining showing pachytene spermatocytes from P16 WT male mouse. Yellow dotted circle indicates the XY body. Scale bars: 10 \u03bcm. (D) Immunofluorescence staining of PNA in adult testes indicating the absence of spermatids in Xap5 cKO mice. Scale bars: 20 \u03bcm. (E) H&E staining of adult epididymis displaying absence of sperm in Xap5 cKO mice. Scale bars: 50 \u03bcm. Error bars depict means \u00b1 SEM. All p-values were calculated using an unpaired, two-tailed Student\u2019s t-test.\n\n### Xap5 and Xap5l function as antagonistic regulators of ciliary transcriptional regulatory networks via regulating transcription factors\n\nTo gain insight into the regulatory mechanisms of Xap5l during sperm flagellar assembly, we employed RNA-seq analysis to examine mature sperm collected from the cauda epididymis of WT and Xap5l KO adult mice. Differential expression analysis identified 2093 upregulated and 267 downregulated genes in Xap5l KO sperm (Figure 4\u2014figure supplement 1A). Gene ontology analysis revealed that the upregulated genes were associated with cilia assembly or function (Figure 4A, Figure 4\u2014figure supplement 1B, C). When crossed with the previously compiled ciliogenesis-related gene list (Nemajerova et al., 2016), the upregulated genes were observed encompassing diverse structural and functional components of the ciliogenic program (Supplementary file 1 and Figure 4\u2014figure supplement 1D). Notably, several key transcription factor regulators of ciliogenesis were among the upregulated genes, including Foxj1 and Rfx families (Figure 4B, C, Figure 4\u2014figure supplement 1E). Moreover, several key regulators of spermatogenesis, particularly spermiogenesis, were identified, including Rfx2 (Kistler et al., 2015; Wu et al., 2016), Sox families (Schartl et al., 2018; Zhang et al., 2018), Taf7l (Zhou et al., 2013), and Tbpl1 (Martianov et al., 2001; Figure 4B, Figure 4\u2014figure supplement 1E). Many core ciliary genes were also upregulated, such as Cfap206 (Beckers et al., 2020) and Ift81 (Qu et al., 2020) which are critical for male fertility (Figure 4\u2014figure supplement 1E), consistent with the tight coregulation between spermiogenesis and cilia-related genes during spermatogenesis. These findings suggest that the genes identified in our study provide an excellent resource for candidates with novel ciliary or spermatogenesis-related functions, and the newly identified testes-specific protein Tulp2 (Oyama et al., 2022; Zheng et al., 2021) was selected for validation. We observed that Tulp2 KO male mice were sterile due to malformation of sperm flagella (Figure 4\u2014figure supplement 2). Overall, our results clearly indicate that Xap5l acts as a central transcriptional repressor of ciliogenesis during mouse spermatogenesis.\n\n![Figure 4.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig4-v1.jpg)\n\n**Figure 4.:** (A) Gene ontology analysis showing top 10 biological process terms significantly enriched among upregulated genes in Xap5l KO sperm. (B) Real-time PCR validation of genes involved in ciliogenesis and spermatogenesis. n = 3, **p < 0.01, ***p < 0.001, n.s. stands for not significant. (C) Detection of Foxj1 and Rfx2 in mature sperm of WT and Xap5l KO mice by western blot analysis. Gapdh was used as a control. (D) Gene ontology analysis showing top 10 biological process terms significantly enriched among downregulated genes in P16 Xap5 cKO testes. (E) Real-time PCR validation of genes involved in ciliogenesis and spermatogenesis. n = 3, *p < 0.05, **p < 0.01, ***p < 0.001, n.s. stands for not significant. (F) Detection of Foxj1 and Rfx2 in P16 testes of WT and Xap5 cKO mice by western blot analysis. Gapdh was used as a control. (G) Xap5/Xap5l occupancies at Foxj1 and Rfx2 promoters assessed by CUT&Tag-seq (left) and CUT&Tag real-time PCR (middle and right). Red boxes indicate the binding regions of Xap5 and Xap5l. n = 3, *p < 0.05, ***p < 0.001, n.s. stands for not significant. (H) A model on the involvement of Xap5 and Xap5l in the regulation of ciliogenesis during spermatogenesis. Error bars depict means \u00b1 SEM. All p-values were calculated using an unpaired, two-tailed Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 1.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig4-figsupp1-v1.jpg)\n\n**Figure 4\u2014figure supplement 1.:** (A) MA plot showing the numbers of differentially expressed genes in Xap5l KO sperm. Gene ontology analysis showing top 10 cellular component (B) and molecular function (C) terms significantly enriched among upregulated genes in Xap5l KO sperm. (D) Venn diagram representing total genes upregulated/downregulated by at least twofold in Xap5l KO sperm and published cilia-related genes (Nemajerova et al., 2016). (E) Real-time PCR validation of genes involved in ciliogenesis and spermatogenesis. n = 3, *p < 0.05, ***p < 0.001. Error bars depict means \u00b1 SEM. All p-values were calculated using an unpaired, two-tailed Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 2.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig4-figsupp2-v1.jpg)\n\n**Figure 4\u2014figure supplement 2.:** (A) Detection of Tulp2 protein in different tissues of adult mice by western blot analysis. (B) t-SNE plot displaying Tulp2 gene expression pattern during spermatogenesis visualized using published single-cell data (Jung et al., 2019). Black arrow represents the developmental pseudotime corresponding to the developmental ordering of each cell progressing through spermatogenesis. Dot color intensity represents the expression level. Cells from different stages are color-coded. (C) Immunofluorescence staining showing Tulp2 expression in the cytoplasm of round spermatids (Rs) and elongating spermatids (Es). Scale bars: 5 \u03bcm. (D) Similar development of adult WT and Tulp2 KO mice. Scale bar: 1 cm. (E) Average litter size of pups obtained by fertility test. Each male was caged with two females for 2 months. ***p < 0.001, n.s. stands for not significant. (F) Similar gross testes morphology, body weight, and testis weight between WT and Tulp2 KO mice. Scale bar: 1 mm. n = 4, n.s. stands for not significant. (G) Significantly reduced caudal epididymal sperm counts in Tulp2 KO mice compared with WT males. n = 7, ***p < 0.001. (H) Significantly reduced sperm total motility of Tulp2 KO mice. n = 3, ***p < 0.001. Significantly increased abnormal sperm in Tulp2 KO mice (I, J). Scale bars: 10 \u03bcm. n = 3, ***p < 0.001. (K) Electron microscopic analysis displaying ultrastructural defects in Tulp2 KO sperm flagella, including two cross-sections of the same sperm flagellum enclosed within one cell membrane (as shown by red arrowheads), disorganized outer dense fibers and the axonemal microtubules (as shown by red dotted circle). Scale bars: 8 \u03bcm (black), 2 \u03bcm (red). Error bars depict means \u00b1 SEM. All p-values were calculated using an unpaired, two-tailed Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 3.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig4-figsupp3-v1.jpg)\n\n**Figure 4\u2014figure supplement 3.:** (A) Heat map showing variably expressed genes in P16 Xap5 cKO testes. Number of related genes was indicated. Gene ontology analysis showing top 10 cellular component (B) and molecular function (C) terms significantly enriched among downregulated genes in Xap5 cKO testes. (D) Venn diagram representing total genes upregulated/downregulated in Xap5 cKO testes and published cilia-related genes (Nemajerova et al., 2016). (E) Venn diagram representing total genes downregulated in Xap5 cKO testes, upregulated in Xap5l KO sperm by at least twofold and published cilia-related genes (Nemajerova et al., 2016). (F) Real-time PCR validation of genes involved in ciliogenesis and spermatogenesis. n = 3, *p < 0.05, **p < 0.01, ***p < 0.001. Error bars depict means \u00b1 SEM. All p-values were calculated using an unpaired, two-tailed Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 4.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig4-figsupp4-v1.jpg)\n\n**Figure 4\u2014figure supplement 4.:** Location of Xap5 (A)- and Xap5l (B)-occupancy peaks relative to the nearest annotated gene. (C) DNA sequence identified by Homer de novo motif analysis from Xap5/Xap5l peaks. The p-value of the motif comparison is indicated. Overlapped sequences are shown in red boxes. (D) Left, overlapping genes identified by Xap5 CUT&Tag and RNA-seq analyses. Right, representative biological processes enriched among the overlapping genes that are downregulated in Xap5 cKO germ cells and bound by Xap5 (as identified by CUT&Tag). (E) Left, overlapping genes identified by Xap5l CUT&Tag and RNA-seq analyses. Right, representative biological processes enriched among the overlapping genes that are upregulated in Xap5 KO sperm and bound by Xap5l (as identified by CUT&Tag). (F) Xap5/Xap5l occupancies at Sox30 promoter assessed by CUT&Tag-seq (top) and CUT&Tag real-time PCR (bottom). Red boxes indicate the binding regions of Xap5/Xap5l. n = 3, *p < 0.05, **p < 0.01. (G) Overlapping genes among Xap5/Xap5l target genes (the 891 genes in D and the 75 genes in E) and published cilia-related genes (Nemajerova et al., 2016). Error bars depict means \u00b1 SEM. All p-values were calculated using an unpaired, two-tailed Student\u2019s t-test.\n\n![Figure 4\u2014figure supplement 5.](https://cdn.elifesciences.org/articles/94754/elife-94754-fig4-figsupp5-v1.jpg)\n\n**Figure 4\u2014figure supplement 5.:** The black arrow represents the developmental pseudotime corresponding to the developmental ordering of each cell progressing through spermatogenesis. Dot color intensity represents the relative expression level. Cells from different stages are color-coded. The gene expression was visualized using the published single-cell data (Jung et al., 2019).\n\nFurthermore, we performed RNA-seq analysis using P16 testes samples from WT and Xap5 cKO mice to explore the underlying mechanism of Xap5-mediated germ cell loss. Differential expression analysis identified 554 upregulated and 1587 downregulated genes in Xap5 cKO sperm (Figure 4\u2014figure supplement 3A). We observed that the downregulated genes in Xap5 cKO males were involved in cilium assembly or functions (Figure 4D, Figure 4\u2014figure supplement 3B\u2013D). Strikingly, many of these downregulated genes were upregulated in Xap5l KO sperm, including the key ciliogenesis regulators Foxj1 and Rfx families (Figure 4E, F, Figure 4\u2014figure supplement 3E, and Supplementary file 1). In addition, meiosis initiation marker Stra8 (Anderson et al., 2008; Ferder et al., 2019), meiosis-specific genes Spo11 (Romanienko and Camerini-Otero, 2000) and Dmc1 (Bishop et al., 1992), key transcription regulators of spermiogenesis Rfx2 (Kistler et al., 2015; Wu et al., 2016), Sox30 (Zhang et al., 2018), and Crem (Blendy et al., 1996; Nantel et al., 1996) were also downregulated in Xap5 cKO mice (Figure 4E, Figure 4\u2014figure supplement 3F), consistent with the aforementioned result that loss of Xap5 induced spermatogenesis arrest in meiotic stage.\n\nTo identify direct targets of Xap5/Xap5l, we conducted CUT&Tag analyses on P16 mouse testicular germ cells for Xap5, and on P56 mouse testicular germ cells for Xap5l. Our results revealed 23,143 peaks enriched for Xap5, compared to only 2290 peaks enriched for Xap5l (Supplementary file 1), and the limited number of enriched peaks for Xap5l suggests that the antibody used for Xap5l in the CUT&Tag experiment might have suboptimal performance. A substantial proportion of these peaks were located within promoter regions (Figure 4\u2014figure supplement 4A, B), indicating that Xap5/Xap5l primarily function to regulate the expression of protein-coding genes. De novo motif analyses showed that the binding motifs for Xap5 and Xap5l shared a conserved sequence (CCCCGCCC/GGGCGGGG) (Figure 4\u2014figure supplement 4C), suggesting that Xap5 may regulate a subset of the same downstream genes as Xap5l.\n\nTo further elucidate the target genes of Xap5 and Xap5l, we integrated our CUT&Tag data with RNA-seq datasets (Supplementary file 1). This analysis revealed that among the genes downregulated in Xap5 cKO germ cells, 891 were bound by Xap5 (Figure 4\u2014figure supplement 4D). Similarly, 75 genes upregulated in Xap5l KO sperm were occupied by Xap5l (Figure 4\u2014figure supplement 4E). GO analysis indicated that these genes are associated with cilium assembly and related functions (Figure 4\u2014figure supplement 4D\u2013G). Notably, both Foxj1 and Rfx2 are regulated and occupied by Xap5, with the conserved sequence present within the Xap5-bound regions (Figure 4G). Furthermore, real-time PCR validation of the CUT&Tag experiments confirmed that Rfx2 is also occupied by Xap5l, despite the initial CUT&Tag data not showing enriched peaks for the Rfx2 gene (Figure 4G). Unfortunately, due to the suboptimal performance of the Xap5l antibody, we did not detect the occupancy of Xap5l on the Foxj1 promoter. Nevertheless, these findings suggest that Xap5 and Xap5l regulate ciliary gene expression primarily through direct binding to the conserved motif present in these genes.\n\nConsidering the evolutionary conservation of Xap5/Xap5l protein across different species and the expression patterns of Xap5, Xap5l, Foxj1, and Rfx factors during spermatogenesis (Figure 1C, Figure 4\u2014figure supplement 5), these results suggest that Xap5 and Xap5l have antagonistic effects, and they may function upstream of the transcription factor families, including Foxj1 and Rfx factors, to coordinate the ciliogenesis during spermatogenesis (Figure 4H).\n\n## Discussion\n\nCilia and flagella are ancient organelles present in the last eukaryotic common ancestor (Mitchell, 2017). Cilia assembly and maintenance are under strict transcriptional regulation in both unicellular and multicellular organisms (Choksi et al., 2014; Collins et al., 2021; Lewis and Stracker, 2021; Thomas et al., 2010). Despite cilia and flagella having an ancient origin, the evolutionary history of ciliary gene regulation has remained an unsolved problem. The main reason is that the master ciliary transcription factors found in multicellular organisms, including Foxj1 and Rfxs, are absent from unicellular organisms (Choksi et al., 2014; Collins et al., 2021; Lewis and Stracker, 2021; Thomas et al., 2010). Previously, we showed that an ancient transcription factor, Xap5, was required for flagella assembly in the unicellular green algae Chlamydomonas (Li et al., 2018). Xap5 proteins are evolutionarily conserved across diverse organisms (Li et al., 2018; Martin-Tryon and Harmer, 2008), which offers the possibility to investigate the conservation of the role of Xap5 in multicellular organisms. In the present study, we report that Xap5 positively regulates transcriptional network of ciliary genes by activating the key regulators including Foxj1 and Rfxs during spermatogenesis.\n\nCilia are dynamic organelles, and the expression profile of ciliary genes is dynamic during the cell cycle and under certain physiological conditions (Eggenschwiler and Anderson, 2007; Kasahara and Inagaki, 2021; Santos and Reiter, 2008). Cells have developed regulatory mechanisms to generate functional cilia in a temporal and spatial manner (Choksi et al., 2014; Collins et al., 2021; Lewis and Stracker, 2021; Thomas et al., 2010). However, how ciliary transcription factors determine temporal and spatial ciliary transcriptional programs is poorly understood. Sperm flagellar assembly is likewise tightly regulated during a highly complex temporal process named spermatogenesis (Holstein et al., 2003; Thomas et al., 2010). Several key transcriptional regulators of spermatogenesis, such as Foxj1 and Rfx2, have been identified (Chen et al., 1998; Kistler et al., 2015; Wu et al., 2016). The flagellar formation of Foxj1-null sperm is severely impaired, and the Foxj1 target genes are required for sperm motility (Beckers et al., 2020; Chen et al., 1998; Weidemann et al., 2016). Rfx2 KO mice are completely sterile and Rfx2 regulates the expression of ciliary genes during spermiogenesis (Kistler et al., 2015; Wu et al., 2016). Ciliary transcription factors (Foxj1 and Rfx2) are dynamically regulated during spermatogenesis (Jung et al., 2019). Intriguingly, our results show that Xap5 and Xap5l are two conserved pairs of antagonistic transcription factors that regulate these key transcriptional regulators required for spermatogenesis.\n\nBy using western blot analysis, we found that Xap5 was ubiquitously expressed in all tissues examined, whereas Xap5l expression was restricted to the testes (Figure 1A). Interestingly, previous research found that Xap5l was widely expressed in normal tissue via using TCGA expression data (Thompson et al., 2021). Moreover, loss of Xap5/Xap5l perturbs transcriptional programs in cancer cells. At present, as shown by the recent data, we cannot rule out the possibility that Xap5l is dynamically expressed in other tissues during development. Although Xap5 and Xap5l are highly expressed in testes and critical for spermatogenesis, they are not present in mature sperm (Figure 1\u2014figure supplement 1). Thus, Xap5/Xap5l are not needed for sperm maintenance. Given the dynamic expression of Xap5/Xap5l during spermatogenesis, it will be interesting to identify the key signaling factors that regulate the timely and spatial expression of Xap5 and Xap5l.\n\nA role for Xap5 in human brain development is suggested by the association of X-linked intellectual disability (XLID) with rare Xap5 missense variants (Lee et al., 2020). However, how defects in Xap5 lead to XLID syndrome is unknown. Although there is as yet no evidence that Xap5 regulates ciliogenesis in any system besides Chlamydomonas and mice, the function in cilia could help clarify the unexplained role of Xap5 mutations in causing XLID. The possibility that Xap5 could be a ciliary transcription factor in humans would add XLID to the growing list of the second-order ciliopathies.\n\n## Materials and methods\n\n### Mice\n\nC57BL/6J strains (from Vital River Laboratories, Beijing, China) and Stra8-GFPCre knockin mice (from Cyagen Biosciences) were used. Floxed-Xap5 mice, Xap5l and Tulp2 knockout mice were generated on the C57BL/6J background using the CRISPR/Cas9 system. The sgRNA sequences used to target Xap5, Xap5l, and Tulp2 were as follows: Xap5l, sgRNA1-GGC TAC CAG AAA CAG GGA CT, sgRNA2-GGG AGT AAG GTC CCC AAA CT; Xap5, sgRNA3-CTA CAG GGC ACT TAT TAA TA, sgRNA4-ATA GTA ATT CCC CCG TGC TT; Tulp2, sgRNA5-TGA CTA ATT AGG CCC GAG AG, sgRNA6-GGT TCT TAG AGA GTC AAC GT. Experimental protocols were approved by the ethics committees of Jianghan University (number: JHDXLL2024-039). Mice were maintained in a pathogen-free environment with a room temperature of 23 \u00b1 2\u00b0C under a humidity level of 30\u201370%. The light was maintained on a 12-hr day/night cycle.\n\n### Genome PCR\n\nMouse genomic DNA was isolated from the tail tip using One Step Mouse Genotyping Kit (Vazyme, PD101), and subjected to PCR with 2 \u00d7 Taq Plus Master Mix (Vazyme, P212) following the manufacturer\u2019s instructions. The PCR products were separated by 2% agarose gel electrophoresis. The primers used are listed in Supplementary file 2.\n\n### RNA isolation and real-time PCR\n\nTotal RNA was isolated using the TRIzol reagent (Invitrogen, 15596018) and then converted to cDNA with HiScript II 1st Strand cDNA Synthesis Kit (Vazyme, R212) following the manufacturer\u2019s instructions. Real-time PCR was conducted using ChamQ SYBR qPCR Master Mix (Vazyme, Q311) on an ABI StepOnePlus real-time PCR system (Applied Biosystems). Expression values were normalized using the \u0394\u0394Ct method with Gapdh as the internal control. The primer sequences are indicated in Supplementary file 2.\n\n### Western blot analysis\n\nCell lysates from mouse tissues were prepared in RIPA buffer (Beyotime, P0013B) containing Protease Inhibitor Cocktail (Roche, 11873580001) and 1 mM Phenylmethanesulfonyl fluoride (PMSF, Sigma, 78830). Subcellular lysates of testicular nuclear and cytoplasmic fractions were prepared using Nuclear and Cytoplasmic Protein Extraction Kit (Beyotime, P0027) following the manufacturer\u2019s instructions. The protein lysates were subjected to standard immunoblotting analysis. Antibodies used were as follows: anti-\u03b2-actin (ABclonal, AC026), anti-Xap5 (Prospertech, HU-412003), anti-Xap5 (Sigma, HPA003585), anti-Xap5l (Prospertech, Hu-412001), anti-Lmnb (Proteintech, 66095\u20131-Ig), anti-Gapdh (ABclonal, AC002), anti-Foxj1 (D360355, Sangon Biotech), anti-Rfx2 (K110716P, Solarbio), and anti-Tulp2 (Prospertech, Hu-412002).\n\n### Immunofluorescence\n\nMouse testis were fixed in 4% paraformaldehyde in PBS at 4\u00b0C overnight, dehydrated in gradient ethanol, embedded in paraffin, and sectioned into 5 \u00b5m slices. After deparaffinization and rehydration, testis sections were boiled in 1 mM EDTA, pH 8.0 for 15 min using a microwave oven for antigen retrieval, followed by cooling to room temperature. The primary antibodies, including anti-Xap5 (Prospertech, HU-412003, 1:250 dilution), anti-Xap5 (Sigma, HPA003585, 1:250 dilution), anti-Xap5l (Prospertech, Hu-412001, 1:250 dilution), anti-lectin PNA, Alexa Fluor 488 Conjugate (Thermo Fisher, L21409, 1:250 dilution), and anti-Tulp2 (Prospertech, Hu-412002, 1:250 dilution), were then incubated at 4\u00b0C overnight. Subsequently, the sections were incubated with the secondary antibody donkey anti-rabbit Alexa Fluor Plus 488 (Invitrogen, A32790, 1:500 dilution) for 1 hr and DAPI for 5 min at room temperature. Images were collected using a Zeiss Axio Vert A1 microscope.\n\n### Histological analysis\n\nTestes and epididymides were fixed in Bouin\u2019s solution (sigma, HT10132) overnight at 4\u00b0C, embedded in paraffin and sectioned into 5 \u00b5m slices. The sections were then subjected to H&E staining using standard procedures and observed under a Zeiss Axio Vert A1 microscope.\n\n### Assessment of sperm counts, motility, and morphology\n\nCauda epididymides were collected from male mice and dissected in 37\u00b0C pre-warmed human tubal fluid culture medium (EasyCheck, M1130), followed by incubation at 37\u00b0C for 15 min to release the sperm. To quantify sperm abundance, the sperm suspension was fixed in 1% paraformaldehyde for 30 min. Sperm were then counted under a Zeiss \u00d710 bright-field microscope. To assess sperm motility, the sperm suspension was observed and recorded under a Leica total internal reflection fluorescence microscope. Motility was defined as any movement of the sperm flagellum during a 10-s observation cycle. After immobilization with 1% paraformaldehyde, sperm morphology was observed by H&E staining using standard procedures. Images were captured using a Zeiss Axio Vert A1 microscope equipped with a \u00d7100 oil immersion objective. Sperm without staining were also used to assess sperm morphology. For ultrastructural observation, sperm samples were fixed in 3% glutaraldehyde in 0.1 M sodium phosphate buffer (pH 7.4), and post-fixed with 1% (wt/vol) OsO4. After dehydration, the samples were placed in propylene oxide and embedded in a mixture of Epon 812 and Araldite. Ultrathin sections obtained by a Leica EM UC7 ultramicrotome were stained with uranyl acetate and lead citrate, then analyzed using a HT7700 TEM (Hitachi).\n\n### Fertility test\n\nEach of the adult male mice was mated with two females for 2 months. All the mice used were aged 6\u20138 weeks. Vaginal plugs were checked every morning, and the number of newborn pups was counted.\n\n### Chromosome spreads and immunofluorescence\n\nTesticular chromosome spreads were prepared and immunolabeled as described (Reinholdt et al., 2004). The primary antibodies used were as follows: anti-\u03b3 H2ax (Millipore, 05-636, 1:300 dilution) and anti-Sycp3 (Proteintech, 23024-1-AP, 1:300 dilution). Secondary antibodies used were Alexa Dye (AlexaFluor Plus 488/594) conjugates (Thermo Fisher) at 1:500 dilutions. Images were collected with a Zeiss Axio Vert A1 microscope.\n\n### RNA-seq analysis\n\nThe mature sperm samples from P56 mice and testis samples from P16 mice were washed three time in 1\u00d7 PBS after harvest. Total RNA was extracted from the samples using the TRIzol reagent (Invitrogen) and purified with the NEBNext Poly(A) mRNA Magnetic Isolation Module (NEB, E7490). The quality of the RNA samples was examined using the Agilent 2100 Bioanalyzer system (Agilent Technologies). Qualified RNA samples were subjected to sequencing library construction using the NEBNext Ultra II RNA Library Prep Kit for Illumina (NEB, E7775). Paired-end (2 \u00d7 150 bp) sequencing was carried out on the Illumina NovaSeq6000 platform. The sequencing reads were mapped to the Mus musculus reference genome (GRCm38/mm10) using HISAT2 v2.1.0 (Kim et al., 2015), and StringTie v1.3.3b (Pertea et al., 2015) was applied to assemble the mapped reads. Fragments Per Kilobase of transcript per Million fragments mapped (FPKM) was used to measure the expression level of a gene. Differential expression analysis was processed by DESeq2 v1.12.4 (Subramanian et al., 2005), and the significant differentially expressed genes were identified with a fold change >2. Gene ontology analysis was performed using the DAVID database.\n\n### CUT&Tag analysis\n\nThe testicular germ cells were isolated using a two-step enzymatic digestion process as previously described (Liu et al., 2017). Briefly, after removing the tunica albuginea, the testes were incubated in 1 mg/ml type IV collagenase (Sigma, C5138) at 37\u00b0C for 15 min with gentle shaking every 5 min. The resulting cell suspension was centrifuged at 1000 rpm for 3 min, and the pellet was further digested with 0.25% Trypsin-EDTA (Gibco, 25200072) at 37\u00b0C for 10 min. The digestion was terminated by adding fetal bovine serum (FBS), and the cell suspension was centrifuged at 1000 rpm for 3 min. The cell pellet was resuspended in DMEM medium containing 10% FBS and cultured at 37\u00b0C in a 5% CO2 atmosphere for 3 hr. Floating and weakly adherent cells were collected as germ cells. CUT&Tag and CUT&Tag real-time PCR were performed according to the manufacturer\u2019s protocol using the Hyperactive Universal CUT&Tag Assay Kit for Illumina Pro (Vazyme, TD904). Approximately 100,000 germ cells were used per sample. For real-time PCR, IgG sera were used as a negative control for the Xap5 CUT&Tag, while lysates from Xap5l KO testis were incubated with the Xap5l antibody as a negative control for the Xap5l CUT&Tag. DNA spike in was used as the internal control. The primer sequences are indicated in Supplementary file 2.\n\nFor analysis, quality control and read trimming were performed using FastQC (v0.11.9) with default parameters and Trimmomatic (v0.39) with the following parameters: ILLUMINACLIP:NexteraPE-PE.fa:2:30:10:8:true LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:8. Clean reads were aligned with bowtie2 (v2.4.4) (Langmead and Salzberg, 2012) against the M. musculus (mm39) genome with the parameters -X 1000 --very-sensitive. PCR duplicates were removed using picard\u2019s MarkDuplicates with default parameters. Peak calling was conducted using using MACS2 (v2.1.4) with the parameters -f BAMPE -B --SPMR --keep-dup all. Peaks were annotated to the nearest feature using ChIPseeker (v1.32.0) (Yu et al., 2015). Motif finding and annotation were performed using Homer findMotifsGenome.pl and annotatePeaks.pl functions, respectively (Heinz et al., 2010). Track screen shots were produced in IGV (version 2.18.1) (Robinson et al., 2023).\n\n### Statistical analysis\n\nStatistical analyses were conducted using GraphPad Prism 8.0.2 software. All data were presented as mean \u00b1 SEM. Values of p < 0.05 were considered statistically significant. Statistical significance between two groups was calculated using an unpaired, parametric, two-sided Student\u2019s t-test.\n\n### Materials availability\n\nThe authors declare that all the materials supporting the findings of this study are available within the article and its supplementary files or from the corresponding author upon reasonable request.\n",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "content_type": "peer_review",
+      "content_text": "# Peer review - Round 1\n\nEditors:\n- Wei Yan, Washington State University United States\n\nReviewers:\n- (Reviewers not individually listed)\n\n## Review text\n\nDOI: [10.7554/eLife.94754.3.sa0](https://doi.org/10.7554/eLife.94754.3.sa0)\n\nThis valuable study presents data suggesting the critical roles of two ancient proteins, XAP5 and XAP5L, in regulating the transcriptional program of ciliogenesis during mouse spermatogenesis. The supporting data are solid, and this work will be of interest to biomedical researchers studying ciliogenesis and reproduction.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94754.3.sa1](https://doi.org/10.7554/eLife.94754.3.sa1)\n\nSummary:\n\nWang et al. generate XAP5 and XAP5L knockout mice and find that they are male infertile due to spermatogonial/meiotic arrest and reduced sperm motility, respectively. CUT & Tag data were added in this revision in order to support that XAP5 and XAP5L are antagonistic transcription factors of cilliogenesis.\n\nStrengths:\n\nKnockout mouse models provided strong evidence to indicate that XAP5 and XAP5L are critical for spermatogenesis. RNA-seq and CUT & Tag are valuable sources to further explore their molecular mechanisms.\n\nWeaknesses:\n\nThe authors claim that XAP5 and XAP5L transcriptionally regulate sperm flagella development; however, expression, physiological role, and molecular evidence do not well support this concept. This reviewer still thinks the physiological roles of XAP5 and XAP5l are different. (i) XAP5 is expressed at spermatogonia within testes while XAP5l is localized at round/elongating spermatids (their expressions are different). (ii) Spermatogenesis was arrested at spermatogonia/early spermatocyte stage in Xap5-KO mice while sperm abnormalities were observed in Xap5l-KO mice (their roles are different). This reviewer still can't get the authors' viewpoint that XAP5 and XAP5l are 'antagonistic relationship' to regulate sperm flagella development. RNA-seq and CUT & Tag data are valuable source; however, this reviewer suggests exploring how XAP5 regulates spermatogonia differentiation and how XAP5l regulates sperm flagella motility.\n\n\n---\n\n# Peer review - Round 1\n\nReviewers:\n- Anonymous Reviewer\n\n## Review text\n\nDOI: [10.7554/eLife.94754.3.sa2](https://doi.org/10.7554/eLife.94754.3.sa2)\n\nIn this study, Wang et al., report the significance of XAP5L and XAP5 in spermatogenesis which are involved in transcriptional regulation of the ciliary gene in testes. In a previous study, the authors demonstrated that XAP5 is a transcription factor required for flagellar assembly in Chlamydomonas. Continuing from their previous study, the authors examined conserved role of the XAP5 and XAP5L, which are the orthologue pair in mammals.\n\nXAP5 and XAP5L express ubiquitously and testis specifically, respectively, and their absence in testes causes male infertility with defective spermatogenesis. Interestingly, XAP5 deficiency arrest germ cell development at pachytene stage, whereas XAP5L absence causes impaired flagellar formation. RNA-seq analyses demonstrated that XAP5 deficiency suppresses ciliary gene expression including Foxj1 and Rfx family genes in early testis. By contrast, XAP5L deficiency abnormally remains Foxj1 and Rfx genes in mature sperm. From the results, the authors conclude that XAP5 and XAP5L are the antagonistic transcription factor to function at the upstream of Foxj1 and Rfx family genes.\n\nThe current version of the manuscript well represents this reviewer's initial concerns and supports author's claim. Key transcription factors for ciliogenesis, Foxj1 and Rfx2, are direct downstream targets for XAP5 and XAP5L and their common motifs well explain their antagonistic function in sperm flagellar development. All the results well demonstrate that ancient transcription factors, XAP5 and XAP5L, are upstream transcription factors to modulate flagellar development in male mammalian germ line.\n",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    }
+  ],
+  "prompts": [
+    {
+      "id": "7b23fa081598e399",
+      "prompt_text": "claim extraction prompt",
+      "prompt_type": "extract",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "8e6aa149e11d7c3d",
+      "prompt_text": "llm evaluation prompt",
+      "prompt_type": "eval_llm",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "1c6c18821b3701fb",
+      "prompt_text": "peer evaluation prompt",
+      "prompt_type": "eval_peer",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "4ce77dae25853f70",
+      "prompt_text": "comparison prompt",
+      "prompt_type": "compare",
+      "model": "claude-sonnet-4-5-20250929",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    }
+  ],
+  "claims": [
+    {
+      "id": "016a001d-cd65-4359-93a7-fda81defb7fe",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C1",
+      "claim": "Cilia and flagella exist in the last eukaryotic common ancestor.",
+      "claim_type": "EXPLICIT",
+      "source": "Existence of cilia in the last eukaryotic common ancestor raises a fundamental question in biology: how the transcriptional regulation of ciliogenesis has evolved?",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This is stated as a premise in the abstract without supporting data in the manuscript itself, drawing on established scientific knowledge.",
+      "evidence_type": "[\"KNOWLEDGE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "6ef62e76-4308-4fa1-a188-1b2fd2a63b69",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C2",
+      "claim": "Xap5 is required for flagellar assembly in Chlamydomonas.",
+      "claim_type": "EXPLICIT",
+      "source": "Previously, we showed that an ancient transcription factor X chromosome-associated protein 5 (Xap5) is required for flagellar assembly in Chlamydomonas.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim references previous work by the authors, supported by citation to prior research.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "a231fb35-088b-4c34-9d93-ee28aeec3a65",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C3",
+      "claim": "Male mice lacking Xap5 display infertility due to meiotic prophase arrest.",
+      "claim_type": "EXPLICIT",
+      "source": "Male mice lacking either Xap5 or Xap5l display infertility, as a result of meiotic prophase arrest and sperm flagella malformation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data presented in the manuscript, including histological analysis and fertility tests.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "7463687e-ce08-49f2-a17b-a64873880f6c",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C4",
+      "claim": "Male mice lacking Xap5l display infertility due to sperm flagella malformation.",
+      "claim_type": "EXPLICIT",
+      "source": "Male mice lacking either Xap5 or Xap5l display infertility, as a result of meiotic prophase arrest and sperm flagella malformation, respectively.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data including sperm morphology analysis and electron microscopy.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "662cf9dd-83bb-43d1-8b65-d351a9d5cb87",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C5",
+      "claim": "Xap5 positively regulates ciliary gene expression by activating key regulators including Foxj1 and Rfx families during early spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Mechanistically, Xap5 positively regulates the ciliary gene expression by activating the key regulators including Foxj1 and Rfx families during the early stage of spermatogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data, CUT&Tag analysis, and western blot showing Xap5 binding and regulation of these transcription factors.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "660103e8-d140-4ec7-a19e-1681ef1669c5",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C6",
+      "claim": "Xap5l negatively regulates the expression of ciliary genes via repressing ciliary transcription factors during spermiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In contrast, Xap5l negatively regulates the expression of ciliary genes via repressing these ciliary transcription factors during the spermiogenesis stage.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by RNA-seq data showing upregulation of ciliary genes in Xap5l KO mice and CUT&Tag analysis.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "bc9eff5f-72cf-4003-a1b1-702d0ff81ba9",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C7",
+      "claim": "Cilia and flagella are evolutionarily conserved hair-like microtubule organelles that project from the surfaces of most eukaryotic cells.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia and flagella are evolutionarily conserved hair-like microtubule organelles that project from the surfaces of most eukaryotic cells (Derderian et al., 2023; Mitchell, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "9fe97128-c01d-4be7-94f6-8166edb68ac7",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C8",
+      "claim": "Cilia play essential roles in sensory reception, signal transduction, and cell movement.",
+      "claim_type": "EXPLICIT",
+      "source": "They play essential roles in sensory reception, signal transduction, and cell movement (Goetz and Anderson, 2010; Nachury and Mick, 2019; Singla and Reiter, 2006).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "5aa82ca1-9f0c-4f9e-97ba-0b8ca95134a6",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C9",
+      "claim": "Dysfunction of cilia in humans leads to ciliopathies classified into first- and second-order ciliopathies.",
+      "claim_type": "EXPLICIT",
+      "source": "The dysfunction of cilia in humans leads to an emerging class of genetic diseases called ciliopathies classified into first- and second-order ciliopathies (Ishikawa and Marshall, 2011; Lovera and L\u00fcders, 2021; Reiter and Leroux, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "ce016a4e-0d53-4f62-a90e-a7f43a22c4c1",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C10",
+      "claim": "First-order ciliopathies are caused by aberrations in ciliary proteins.",
+      "claim_type": "EXPLICIT",
+      "source": "First-order ciliopathies are caused by aberrations in ciliary proteins, and second-order ciliopathies occur due to defects in non-ciliary proteins, such as transcription factors, that are required for cilia formation and function (Reiter and Leroux, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "1af5f187-b766-41fb-80ea-d41660de4f29",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C11",
+      "claim": "Second-order ciliopathies occur due to defects in non-ciliary proteins, such as transcription factors, that are required for cilia formation and function.",
+      "claim_type": "EXPLICIT",
+      "source": "First-order ciliopathies are caused by aberrations in ciliary proteins, and second-order ciliopathies occur due to defects in non-ciliary proteins, such as transcription factors, that are required for cilia formation and function (Reiter and Leroux, 2017).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "c273f6a2-de51-4e79-865f-5dc7a6e77fa1",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C12",
+      "claim": "Cilia are dynamically regulated during development and the cell cycle.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia are complex organelles and are dynamically regulated during development and the cell cycle (Eggenschwiler and Anderson, 2007; Kasahara and Inagaki, 2021; Santos and Reiter, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "b422a00b-c1e3-4ea8-b58d-a668bf8475ed",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C13",
+      "claim": "The transcriptional regulation of ciliary genes must be precisely coordinated during ciliogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "The transcriptional regulation of ciliary genes must be precisely coordinated during ciliogenesis (Choksi et al., 2014; Collins et al., 2021; Lewis and Stracker, 2021; Thomas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "7c4d68fe-f7ec-4823-aab3-5043b66119c3",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C14",
+      "claim": "In metazoans, Foxj1 and Rfxs are involved in directing the expression of ciliary genes.",
+      "claim_type": "EXPLICIT",
+      "source": "In metazoans, several transcription factors, including Foxj1 and Rfxs, have been shown to be involved in directing the expression of ciliary genes (Stubbs et al., 2008; Swoboda et al., 2000; Yu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "b5c7e7f5-dfa9-4fff-9eda-ac05739b9f06",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C15",
+      "claim": "Key ciliary transcription factors show dynamic expression patterns during development and differentiation.",
+      "claim_type": "EXPLICIT",
+      "source": "These key ciliary transcription factors show dynamic expression patterns during development and differentiation (Stubbs et al., 2008; Swoboda et al., 2000; Yu et al., 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "b722134d-a150-48fb-8e96-984c1508bf64",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C16",
+      "claim": "Foxj1 and Rfxs are absent from many unicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite transcriptional regulation of ciliary genes is required for ciliogenesis in both uni- and multicellular organisms, the underlying mechanism mediating ciliary gene expression may be fundamentally different, as the two major transcription factors, Foxj1 and Rfxs, are absent from many unicellular organisms (Chu et al., 2010; Li et al., 2018; Piasecki et al., 2010; Vij et al., 2012).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "0e8131f6-db7f-47f0-be8c-8e153e05c6f3",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C17",
+      "claim": "Xap5 is an ancient transcription factor that regulates ciliary gene expression in Chlamydomonas reinhardtii.",
+      "claim_type": "EXPLICIT",
+      "source": "Recently, an ancient transcription factor, X chromosome-associated protein 5 (Xap5), is found to regulate ciliary gene expression in a unicellular organism, Chlamydomonas reinhardtii (Li et al., 2018).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "337e1dea-67f8-4d37-b972-4c37cf34c020",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C18",
+      "claim": "Xap5 is highly conserved among different species and is widely expressed across tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "Xap5 is highly conserved among different species and is widely expressed across tissues (Martin-Tryon and Harmer, 2008; Mazzarella et al., 1997).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "89996e4f-9cf9-47f0-817e-cae6ec08911a",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C19",
+      "claim": "In vertebrates, Xap5l originated in Therians via retrotransposition of the ancestral Xap5.",
+      "claim_type": "EXPLICIT",
+      "source": "In vertebrates, Xap5-like (Xap5l) with an intronless open reading frame originated in Therians via retrotransposition of the ancestral Xap5, and it is highly expressed during spermatogenesis (Sedlacek et al., 1999; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "bb5b863a-2793-476b-a33b-285c11230e82",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C20",
+      "claim": "Xap5l is highly expressed during spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In vertebrates, Xap5-like (Xap5l) with an intronless open reading frame originated in Therians via retrotransposition of the ancestral Xap5, and it is highly expressed during spermatogenesis (Sedlacek et al., 1999; Zhang et al., 2011).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature and experimental data from western blot analysis.",
+      "evidence_type": "[\"CITATION\", \"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "7ff025e8-f5af-45fe-b956-2ed7e9c19eee",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C21",
+      "claim": "Xap5 protein is widely expressed in diverse tissues.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Xap5 protein was widely expressed in diverse tissues and present at all stages of postnatal testes maturation, whereas Xap5l protein was mainly present in the testes and its level increased dramatically from postnatal day 21 (P21) and continued into adulthood (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "9f27e6e0-c90f-489d-9f10-36de3070a5c5",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C22",
+      "claim": "Xap5 protein is present at all stages of postnatal testes maturation.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Xap5 protein was widely expressed in diverse tissues and present at all stages of postnatal testes maturation, whereas Xap5l protein was mainly present in the testes and its level increased dramatically from postnatal day 21 (P21) and continued into adulthood (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "62cc3f2e-2e76-4757-b53b-6f65c827d0ef",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C23",
+      "claim": "Xap5l protein is mainly present in the testes.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Xap5 protein was widely expressed in diverse tissues and present at all stages of postnatal testes maturation, whereas Xap5l protein was mainly present in the testes and its level increased dramatically from postnatal day 21 (P21) and continued into adulthood (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "8123be15-a317-4860-9c46-4246a208cbb8",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C24",
+      "claim": "Xap5l protein level increases dramatically from postnatal day 21 and continues into adulthood.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Xap5 protein was widely expressed in diverse tissues and present at all stages of postnatal testes maturation, whereas Xap5l protein was mainly present in the testes and its level increased dramatically from postnatal day 21 (P21) and continued into adulthood (Figure 1A, B).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 1B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "b825400d-42d8-483b-af9a-72718d332890",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C25",
+      "claim": "Xap5 mRNA is predominantly expressed in spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Xap5 mRNA was found predominantly expressed in spermatogonia, while Xap5l mRNA was observed in pachytene spermatocytes, and remained until elongating spermatids (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNA-seq data analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "6e654db8-9798-4617-a868-141d582d1e55",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C26",
+      "claim": "Xap5l mRNA is observed in pachytene spermatocytes and remains until elongating spermatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Xap5 mRNA was found predominantly expressed in spermatogonia, while Xap5l mRNA was observed in pachytene spermatocytes, and remained until elongating spermatids (Figure 1C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by single-cell RNA-seq data analysis shown in Figure 1C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "63bc5b2f-e8e5-4223-9236-2c72720b12a3",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C27",
+      "claim": "Xap5 protein is mainly detected in the nuclei of spermatogonia.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the mRNA localization patterns, immunofluorescence staining showed that Xap5 protein was mainly detected in the nuclei of spermatogonia, whereas Xap5l protein was present in the nuclei of pachytene spermatocytes and spermatids within the seminiferous tubules, and neither of Xap5 or Xap5l was detected in mature sperm (Figure 1D, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "f2196120-22f0-417c-a03f-bbd20a12af8d",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C28",
+      "claim": "Xap5l protein is present in the nuclei of pachytene spermatocytes and spermatids within the seminiferous tubules.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the mRNA localization patterns, immunofluorescence staining showed that Xap5 protein was mainly detected in the nuclei of spermatogonia, whereas Xap5l protein was present in the nuclei of pachytene spermatocytes and spermatids within the seminiferous tubules, and neither of Xap5 or Xap5l was detected in mature sperm (Figure 1D, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence data shown in Figure 1D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "5a32b3f6-4d19-4cf6-ba10-7d603b2ece4b",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C29",
+      "claim": "Neither Xap5 nor Xap5l is detected in mature sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Consistent with the mRNA localization patterns, immunofluorescence staining showed that Xap5 protein was mainly detected in the nuclei of spermatogonia, whereas Xap5l protein was present in the nuclei of pachytene spermatocytes and spermatids within the seminiferous tubules, and neither of Xap5 or Xap5l was detected in mature sperm (Figure 1D, Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by immunofluorescence and western blot data shown in Figure 1D and Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "06e540cc-41c7-426b-9135-2d98eb9c12f8",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C30",
+      "claim": "Xap5l KO mice survive to adulthood and appear indistinguishable from wildtype mice.",
+      "claim_type": "EXPLICIT",
+      "source": "We successfully established a Xap5l KO mouse line (Figure 1\u2014figure supplement 2A\u2013C) and found that while all Xap5l KO mice survived to adulthood and appeared indistinguishable from the wildtype (WT) mice, Xap5l KO males were sterile (Figure 1E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by observational data and images shown in Figure 1E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "b6af2e81-cf9b-46ce-a158-b6247bc390a3",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C31",
+      "claim": "Xap5l KO males are sterile.",
+      "claim_type": "EXPLICIT",
+      "source": "We successfully established a Xap5l KO mouse line (Figure 1\u2014figure supplement 2A\u2013C) and found that while all Xap5l KO mice survived to adulthood and appeared indistinguishable from the wildtype (WT) mice, Xap5l KO males were sterile (Figure 1E, F).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fertility test data shown in Figure 1F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "54221f8e-3fc8-457e-b7ea-f4a6412c5d67",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C32",
+      "claim": "Generating mosaic F0 founders with Xap5 mutant allele is challenging.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, generating mosaic F0 founders with Xap5 mutant allele proved challenging, and no F1 generation inherited the mutant alleles from the few F0 founders in over a year of breeding experiments, underscoring the critical roles of Xap5 in mouse development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations during the generation of knockout mice.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "0c8ee0b9-6365-451e-bd48-d3a8ec72994f",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C33",
+      "claim": "No F1 generation inherited the Xap5 mutant alleles from F0 founders in over a year of breeding experiments.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, generating mosaic F0 founders with Xap5 mutant allele proved challenging, and no F1 generation inherited the mutant alleles from the few F0 founders in over a year of breeding experiments, underscoring the critical roles of Xap5 in mouse development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is based on experimental observations during breeding experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "9d20701d-4d36-4dfe-9db9-7c87f0897603",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C34",
+      "claim": "Xap5 plays critical roles in mouse development.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, generating mosaic F0 founders with Xap5 mutant allele proved challenging, and no F1 generation inherited the mutant alleles from the few F0 founders in over a year of breeding experiments, underscoring the critical roles of Xap5 in mouse development.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the difficulty in generating viable Xap5 knockout mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "6c3e3022-b6c0-4c34-bc8e-e38e10a3f6dd",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C35",
+      "claim": "All Xap5 cKO males are sterile.",
+      "claim_type": "EXPLICIT",
+      "source": "Similar in appearance to controls (Xap5fl/Y), all Xap5 cKO males were also found to be sterile (Figure 1G, H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by fertility test data shown in Figure 1H.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "8a52ae69-ab47-44f4-87cb-e0624b070f0b",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C36",
+      "claim": "Xap5/Xap5l play essential roles in spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Collectively, these results suggest that Xap5/Xap5l play essential roles in spermatogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the sterility phenotypes observed in both Xap5 cKO and Xap5l KO males.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "638a43ec-dfa0-4b49-8a92-a3e5fd774269",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C37",
+      "claim": "There are no differences in the gross appearance of testis or in the weight of mouse body and testis between WT and Xap5l KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no differences in the gross appearance of testis or in the weight of mouse body and testis between WT and Xap5l KO mice (Figure 2A), but the number of sperm collected from cauda epididymis of Xap5l KO mice was significantly lower than that from WT mice (Figure 2B), and sperm motility was significantly reduced in KO mice (Figure 2C and Figure 2\u2014videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by morphological analysis and weight measurements shown in Figure 2A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "7f410dd1-73e4-4301-a1f3-41b5e1eb31c7",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C38",
+      "claim": "The number of sperm collected from cauda epididymis of Xap5l KO mice is significantly lower than that from WT mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no differences in the gross appearance of testis or in the weight of mouse body and testis between WT and Xap5l KO mice (Figure 2A), but the number of sperm collected from cauda epididymis of Xap5l KO mice was significantly lower than that from WT mice (Figure 2B), and sperm motility was significantly reduced in KO mice (Figure 2C and Figure 2\u2014videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by sperm count data shown in Figure 2B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "203ffdb8-11de-4b7c-a510-379ee3eaff9a",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C39",
+      "claim": "Sperm motility is significantly reduced in Xap5l KO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "There were no differences in the gross appearance of testis or in the weight of mouse body and testis between WT and Xap5l KO mice (Figure 2A), but the number of sperm collected from cauda epididymis of Xap5l KO mice was significantly lower than that from WT mice (Figure 2B), and sperm motility was significantly reduced in KO mice (Figure 2C and Figure 2\u2014videos 1 and 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by motility assay data shown in Figure 2C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "9faf849f-0151-4bc6-964a-60792a7e4f4f",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C40",
+      "claim": "Histological analysis did not reveal any severe abnormity in the seminiferous epithelial cycle of Xap5l KO testes.",
+      "claim_type": "EXPLICIT",
+      "source": "Histological analysis did not reveal any severe abnormity in the seminiferous epithelial cycle of Xap5l KO testes (Figure 2D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by H&E staining data shown in Figure 2D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "897ed5c1-b8af-4d16-a7b1-f7cc4418dbfd",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C41",
+      "claim": "Xap5l KO mice show significantly higher rates of abnormal flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "Further examination of the morphology and structure of cauda epididymal sperm in Xap5l KO mice revealed significantly higher rates of abnormal flagella (Figure 2E\u2013G), indicating that Xap5l is crucial for flagellar assembly during spermiogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by morphological analysis and electron microscopy data shown in Figure 2E-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "95aa0bf5-b7a0-40fa-90f2-08de054826db",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C42",
+      "claim": "Xap5l is crucial for flagellar assembly during spermiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Further examination of the morphology and structure of cauda epididymal sperm in Xap5l KO mice revealed significantly higher rates of abnormal flagella (Figure 2E\u2013G), indicating that Xap5l is crucial for flagellar assembly during spermiogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the observation of abnormal flagella in Xap5l KO mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "08f83b32-164b-4539-b02f-984d5f981106",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C43",
+      "claim": "The testes of Xap5 cKO males are significantly smaller compared to WT controls at P16 and older.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, the testes of Xap5 cKO males were significantly smaller compared to WT controls at P16 and older (Figure 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by testis size and weight measurements shown in Figure 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "883f6f06-9066-4ed5-b545-e6e48fb288be",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C44",
+      "claim": "Many seminiferous tubules in P16 and older Xap5 cKO males are vacuolated due to the absence of spermatocytes and spermatids.",
+      "claim_type": "EXPLICIT",
+      "source": "Many seminiferous tubules in P16 and older Xap5 cKO males were vacuolated due to the absence of spermatocytes and spermatids, as indicated by the lack of XY body formation and the absence of PNA signal, a marker of spermatids and sperm, in Xap5 cKO germ cells (Figure 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological analysis shown in Figure 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "0227d1fe-90d6-45b2-b625-2ee1db041f91",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C45",
+      "claim": "No sperm are observed in the adult cauda epididymides of Xap5 cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "As a consequence, no sperm were observed in the adult cauda epididymides of Xap5 cKO mice (Figure 3E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by histological analysis shown in Figure 3E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "21ed1389-a743-4568-a3a0-cfdcba05c572",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C46",
+      "claim": "Germ cell development in Xap5 cKO males is arrested in meiotic prophase.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that germ cell development in Xap5 cKO males was arrested in meiotic prophase, and Xap5 is indispensable for meiotic progression during spermatogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the absence of post-meiotic cells in Xap5 cKO testes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "534a95ff-9391-446f-b74e-4dceb5deb1d0",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C47",
+      "claim": "Xap5 is indispensable for meiotic progression during spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Taken together, these data indicate that germ cell development in Xap5 cKO males was arrested in meiotic prophase, and Xap5 is indispensable for meiotic progression during spermatogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the meiotic arrest phenotype observed in Xap5 cKO mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "3de82af6-bbed-48e7-b216-114273abb871",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C48",
+      "claim": "2093 genes are upregulated in Xap5l KO sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis identified 2093 upregulated and 267 downregulated genes in Xap5l KO sperm (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "a28ae0bc-2ba8-419e-ad24-e5f6dc165261",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C49",
+      "claim": "267 genes are downregulated in Xap5l KO sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis identified 2093 upregulated and 267 downregulated genes in Xap5l KO sperm (Figure 4\u2014figure supplement 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 4\u2014figure supplement 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "9199ee50-9b96-4f1c-8aad-07ef67ffe0b4",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C50",
+      "claim": "The upregulated genes in Xap5l KO sperm are associated with cilia assembly or function.",
+      "claim_type": "EXPLICIT",
+      "source": "Gene ontology analysis revealed that the upregulated genes were associated with cilia assembly or function (Figure 4A, Figure 4\u2014figure supplement 1B, C).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 4A and Figure 4\u2014figure supplement 1B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "b470b805-6fb7-4e0d-a6cd-eb8c76effa2d",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C51",
+      "claim": "Several key transcription factor regulators of ciliogenesis, including Foxj1 and Rfx families, are among the upregulated genes in Xap5l KO sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, several key transcription factor regulators of ciliogenesis were among the upregulated genes, including Foxj1 and Rfx families (Figure 4B, C, Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data and validation by real-time PCR and western blot shown in Figure 4B, C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "0b019912-3d1f-43c5-9ccc-7e0d8250756e",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C52",
+      "claim": "Several key regulators of spermatogenesis, including Rfx2, Sox families, Taf7l, and Tbpl1, are upregulated in Xap5l KO sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Moreover, several key regulators of spermatogenesis, particularly spermiogenesis, were identified, including Rfx2 (Kistler et al., 2015; Wu et al., 2016), Sox families (Schartl et al., 2018; Zhang et al., 2018), Taf7l (Zhou et al., 2013), and Tbpl1 (Martianov et al., 2001; Figure 4B, Figure 4\u2014figure supplement 1E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 4B and Figure 4\u2014figure supplement 1E, with citations to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "c7e941be-972e-43a3-899b-e9faad475e41",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C53",
+      "claim": "Core ciliary genes such as Cfap206 and Ift81 are upregulated in Xap5l KO sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Many core ciliary genes were also upregulated, such as Cfap206 (Beckers et al., 2020) and Ift81 (Qu et al., 2020) which are critical for male fertility (Figure 4\u2014figure supplement 1E), consistent with the tight coregulation between spermiogenesis and cilia-related genes during spermatogenesis.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 4\u2014figure supplement 1E, with citations to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "51e53f28-7560-412a-ad38-d04b93ff0c3c",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C54",
+      "claim": "Tulp2 KO male mice are sterile due to malformation of sperm flagella.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that Tulp2 KO male mice were sterile due to malformation of sperm flagella (Figure 4\u2014figure supplement 2).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by experimental data shown in Figure 4\u2014figure supplement 2.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "859a12d9-5ea7-4f7a-bceb-1a402e898d42",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C55",
+      "claim": "Xap5l acts as a central transcriptional repressor of ciliogenesis during mouse spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Overall, our results clearly indicate that Xap5l acts as a central transcriptional repressor of ciliogenesis during mouse spermatogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the upregulation of ciliary genes in Xap5l KO mice.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "a0ed6875-9bd3-4a29-9e38-3009abeb13f8",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C56",
+      "claim": "554 genes are upregulated in P16 Xap5 cKO testes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis identified 554 upregulated and 1587 downregulated genes in Xap5 cKO sperm (Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "5dd46c02-b358-48a1-b4c9-4362ce60cd24",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C57",
+      "claim": "1587 genes are downregulated in P16 Xap5 cKO testes.",
+      "claim_type": "EXPLICIT",
+      "source": "Differential expression analysis identified 554 upregulated and 1587 downregulated genes in Xap5 cKO sperm (Figure 4\u2014figure supplement 3A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 4\u2014figure supplement 3A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "0675e417-5f22-4b15-ab5c-ff41a322ddc8",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C58",
+      "claim": "The downregulated genes in Xap5 cKO males are involved in cilium assembly or functions.",
+      "claim_type": "EXPLICIT",
+      "source": "We observed that the downregulated genes in Xap5 cKO males were involved in cilium assembly or functions (Figure 4D, Figure 4\u2014figure supplement 3B\u2013D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 4D and Figure 4\u2014figure supplement 3B-D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "15d3ff74-a5ae-4082-a56b-9cdf5c36f2b2",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C59",
+      "claim": "Many downregulated genes in Xap5 cKO males are upregulated in Xap5l KO sperm, including Foxj1 and Rfx families.",
+      "claim_type": "EXPLICIT",
+      "source": "Strikingly, many of these downregulated genes were upregulated in Xap5l KO sperm, including the key ciliogenesis regulators Foxj1 and Rfx families (Figure 4E, F, Figure 4\u2014figure supplement 3E, and Supplementary file 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data and validation by real-time PCR and western blot shown in Figure 4E, F.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "ca68f299-7a2d-4d8d-920f-6ed5b7da2f0f",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C60",
+      "claim": "Meiosis initiation marker Stra8, meiosis-specific genes Spo11 and Dmc1, and key transcription regulators Rfx2, Sox30, and Crem are downregulated in Xap5 cKO mice.",
+      "claim_type": "EXPLICIT",
+      "source": "In addition, meiosis initiation marker Stra8 (Anderson et al., 2008; Ferder et al., 2019), meiosis-specific genes Spo11 (Romanienko and Camerini-Otero, 2000) and Dmc1 (Bishop et al., 1992), key transcription regulators of spermiogenesis Rfx2 (Kistler et al., 2015; Wu et al., 2016), Sox30 (Zhang et al., 2018), and Crem (Blendy et al., 1996; Nantel et al., 1996) were also downregulated in Xap5 cKO mice (Figure 4E, Figure 4\u2014figure supplement 3F), consistent with the aforementioned result that loss of Xap5 induced spermatogenesis arrest in meiotic stage.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by RNA-seq data shown in Figure 4E and Figure 4\u2014figure supplement 3F, with citations to published literature.",
+      "evidence_type": "[\"DATA\", \"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "24c52304-8d89-4f20-a6f5-e675767859d4",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C61",
+      "claim": "23,143 peaks are enriched for Xap5 in CUT&Tag analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed 23,143 peaks enriched for Xap5, compared to only 2290 peaks enriched for Xap5l (Supplementary file 1), and the limited number of enriched peaks for Xap5l suggests that the antibody used for Xap5l in the CUT&Tag experiment might have suboptimal performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by CUT&Tag sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "758845be-af22-4de7-b9be-5eb3fc1825eb",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C62",
+      "claim": "2290 peaks are enriched for Xap5l in CUT&Tag analysis.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed 23,143 peaks enriched for Xap5, compared to only 2290 peaks enriched for Xap5l (Supplementary file 1), and the limited number of enriched peaks for Xap5l suggests that the antibody used for Xap5l in the CUT&Tag experiment might have suboptimal performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by CUT&Tag sequencing data.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "e753fd26-5e0c-4993-8165-ef544d53cca4",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C63",
+      "claim": "The antibody used for Xap5l in the CUT&Tag experiment might have suboptimal performance.",
+      "claim_type": "EXPLICIT",
+      "source": "Our results revealed 23,143 peaks enriched for Xap5, compared to only 2290 peaks enriched for Xap5l (Supplementary file 1), and the limited number of enriched peaks for Xap5l suggests that the antibody used for Xap5l in the CUT&Tag experiment might have suboptimal performance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the limited number of enriched peaks for Xap5l.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "1118f264-d502-4c48-9d10-d606dce9723d",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C64",
+      "claim": "A substantial proportion of Xap5/Xap5l peaks are located within promoter regions.",
+      "claim_type": "EXPLICIT",
+      "source": "A substantial proportion of these peaks were located within promoter regions (Figure 4\u2014figure supplement 4A, B), indicating that Xap5/Xap5l primarily function to regulate the expression of protein-coding genes.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by CUT&Tag data analysis shown in Figure 4\u2014figure supplement 4A, B.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "a8c199e5-9e39-433c-88ea-726a6c126248",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C65",
+      "claim": "Xap5/Xap5l primarily function to regulate the expression of protein-coding genes.",
+      "claim_type": "EXPLICIT",
+      "source": "A substantial proportion of these peaks were located within promoter regions (Figure 4\u2014figure supplement 4A, B), indicating that Xap5/Xap5l primarily function to regulate the expression of protein-coding genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the location of binding peaks in promoter regions.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "e814685c-d625-4f38-a2f1-0e9fa3f0a787",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C66",
+      "claim": "The binding motifs for Xap5 and Xap5l share a conserved sequence (CCCCGCCC/GGGCGGGG).",
+      "claim_type": "EXPLICIT",
+      "source": "De novo motif analyses showed that the binding motifs for Xap5 and Xap5l shared a conserved sequence (CCCCGCCC/GGGCGGGG) (Figure 4\u2014figure supplement 4C), suggesting that Xap5 may regulate a subset of the same downstream genes as Xap5l.",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by motif analysis shown in Figure 4\u2014figure supplement 4C.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "1014ccdc-b87b-4b5b-8a59-c40acedc4e0f",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C67",
+      "claim": "Xap5 may regulate a subset of the same downstream genes as Xap5l.",
+      "claim_type": "EXPLICIT",
+      "source": "De novo motif analyses showed that the binding motifs for Xap5 and Xap5l shared a conserved sequence (CCCCGCCC/GGGCGGGG) (Figure 4\u2014figure supplement 4C), suggesting that Xap5 may regulate a subset of the same downstream genes as Xap5l.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the shared binding motif between Xap5 and Xap5l.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "7d9d68b4-2805-44e4-90fb-414cba929ebc",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C68",
+      "claim": "Among the genes downregulated in Xap5 cKO germ cells, 891 are bound by Xap5.",
+      "claim_type": "EXPLICIT",
+      "source": "This analysis revealed that among the genes downregulated in Xap5 cKO germ cells, 891 were bound by Xap5 (Figure 4\u2014figure supplement 4D).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integrated analysis of CUT&Tag and RNA-seq data shown in Figure 4\u2014figure supplement 4D.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "05dae274-0962-43c6-b92a-618d492d62a5",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C69",
+      "claim": "75 genes upregulated in Xap5l KO sperm are occupied by Xap5l.",
+      "claim_type": "EXPLICIT",
+      "source": "Similarly, 75 genes upregulated in Xap5l KO sperm were occupied by Xap5l (Figure 4\u2014figure supplement 4E).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by integrated analysis of CUT&Tag and RNA-seq data shown in Figure 4\u2014figure supplement 4E.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "312b08e8-dad2-48c1-b638-336647655ddc",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C70",
+      "claim": "Genes bound by Xap5/Xap5l are associated with cilium assembly and related functions.",
+      "claim_type": "EXPLICIT",
+      "source": "GO analysis indicated that these genes are associated with cilium assembly and related functions (Figure 4\u2014figure supplement 4D\u2013G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by gene ontology analysis shown in Figure 4\u2014figure supplement 4D-G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "181b3f96-8d6c-4e25-a2ab-c5ab6dc66828",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C71",
+      "claim": "Both Foxj1 and Rfx2 are regulated and occupied by Xap5.",
+      "claim_type": "EXPLICIT",
+      "source": "Notably, both Foxj1 and Rfx2 are regulated and occupied by Xap5, with the conserved sequence present within the Xap5-bound regions (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by CUT&Tag data shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "11d111bd-ef61-4db2-ac81-d4a2b1295458",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C72",
+      "claim": "Rfx2 is occupied by Xap5l.",
+      "claim_type": "EXPLICIT",
+      "source": "Furthermore, real-time PCR validation of the CUT&Tag experiments confirmed that Rfx2 is also occupied by Xap5l, despite the initial CUT&Tag data not showing enriched peaks for the Rfx2 gene (Figure 4G).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by CUT&Tag real-time PCR validation shown in Figure 4G.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "d1603e2b-8d10-4115-849c-56f783197679",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C73",
+      "claim": "Xap5 and Xap5l regulate ciliary gene expression primarily through direct binding to the conserved motif present in these genes.",
+      "claim_type": "EXPLICIT",
+      "source": "Nevertheless, these findings suggest that Xap5 and Xap5l regulate ciliary gene expression primarily through direct binding to the conserved motif present in these genes.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the CUT&Tag data showing binding of Xap5/Xap5l to conserved motifs in ciliary genes.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "c5cba30f-dbd2-4926-adcb-94f91132a7a2",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C74",
+      "claim": "Xap5 and Xap5l have antagonistic effects.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the evolutionary conservation of Xap5/Xap5l protein across different species and the expression patterns of Xap5, Xap5l, Foxj1, and Rfx factors during spermatogenesis (Figure 1C, Figure 4\u2014figure supplement 5), these results suggest that Xap5 and Xap5l have antagonistic effects, and they may function upstream of the transcription factor families, including Foxj1 and Rfx factors, to coordinate the ciliogenesis during spermatogenesis (Figure 4H).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the opposing effects of Xap5 and Xap5l on ciliary gene expression.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "a6e89dfa-ba1c-4d8f-8c13-704cd861eb6a",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C75",
+      "claim": "Xap5 and Xap5l may function upstream of transcription factor families including Foxj1 and Rfx factors to coordinate ciliogenesis during spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Considering the evolutionary conservation of Xap5/Xap5l protein across different species and the expression patterns of Xap5, Xap5l, Foxj1, and Rfx factors during spermatogenesis (Figure 1C, Figure 4\u2014figure supplement 5), these results suggest that Xap5 and Xap5l have antagonistic effects, and they may function upstream of the transcription factor families, including Foxj1 and Rfx factors, to coordinate the ciliogenesis during spermatogenesis (Figure 4H).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is inferred from the regulatory relationships observed in the data.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "466d1cc5-16f1-49cc-9201-c79a325f6e94",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C76",
+      "claim": "The master ciliary transcription factors Foxj1 and Rfxs are absent from unicellular organisms.",
+      "claim_type": "EXPLICIT",
+      "source": "Despite cilia and flagella having an ancient origin, the evolutionary history of ciliary gene regulation has remained an unsolved problem. The main reason is that the master ciliary transcription factors found in multicellular organisms, including Foxj1 and Rfxs, are absent from unicellular organisms (Choksi et al., 2014; Collins et al., 2021; Lewis and Stracker, 2021; Thomas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "c5ff26a7-ba82-4811-a8ef-896a518307c3",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C77",
+      "claim": "Xap5 positively regulates transcriptional network of ciliary genes by activating key regulators including Foxj1 and Rfxs during spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "In the present study, we report that Xap5 positively regulates transcriptional network of ciliary genes by activating the key regulators including Foxj1 and Rfxs during spermatogenesis.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by experimental data from RNA-seq, CUT&Tag, and validation experiments.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "cb2368ac-7dbe-4adc-ae20-3de3ac2289e8",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C78",
+      "claim": "The expression profile of ciliary genes is dynamic during the cell cycle and under certain physiological conditions.",
+      "claim_type": "EXPLICIT",
+      "source": "Cilia are dynamic organelles, and the expression profile of ciliary genes is dynamic during the cell cycle and under certain physiological conditions (Eggenschwiler and Anderson, 2007; Kasahara and Inagaki, 2021; Santos and Reiter, 2008).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "6040cdcc-9e88-4206-aa12-5df938e21417",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C79",
+      "claim": "Sperm flagellar assembly is tightly regulated during spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Sperm flagellar assembly is likewise tightly regulated during a highly complex temporal process named spermatogenesis (Holstein et al., 2003; Thomas et al., 2010).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "a6488909-14a0-4fc0-9ce8-adef99f74a52",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C80",
+      "claim": "Foxj1 and Rfx2 are key transcriptional regulators of spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Several key transcriptional regulators of spermatogenesis, such as Foxj1 and Rfx2, have been identified (Chen et al., 1998; Kistler et al., 2015; Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "abb21db4-64ca-4d23-8a2a-acbd02d605d6",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C81",
+      "claim": "The flagellar formation of Foxj1-null sperm is severely impaired.",
+      "claim_type": "EXPLICIT",
+      "source": "The flagellar formation of Foxj1-null sperm is severely impaired, and the Foxj1 target genes are required for sperm motility (Beckers et al., 2020; Chen et al., 1998; Weidemann et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "72405891-4781-4128-b6c7-00818bb08149",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C82",
+      "claim": "Rfx2 KO mice are completely sterile.",
+      "claim_type": "EXPLICIT",
+      "source": "Rfx2 KO mice are completely sterile and Rfx2 regulates the expression of ciliary genes during spermiogenesis (Kistler et al., 2015; Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "8ad498d2-b975-4d85-b6d3-231c7b13b3fa",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C83",
+      "claim": "Rfx2 regulates the expression of ciliary genes during spermiogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Rfx2 KO mice are completely sterile and Rfx2 regulates the expression of ciliary genes during spermiogenesis (Kistler et al., 2015; Wu et al., 2016).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citations to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "e2b8d2ca-aa15-4b9a-908c-f99ad7fa4079",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C84",
+      "claim": "Ciliary transcription factors (Foxj1 and Rfx2) are dynamically regulated during spermatogenesis.",
+      "claim_type": "EXPLICIT",
+      "source": "Ciliary transcription factors (Foxj1 and Rfx2) are dynamically regulated during spermatogenesis (Jung et al., 2019).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "d6a5909e-b717-4bd6-aaa8-c96b15e5c203",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C85",
+      "claim": "Xap5 is ubiquitously expressed in all tissues examined.",
+      "claim_type": "EXPLICIT",
+      "source": "By using western blot analysis, we found that Xap5 was ubiquitously expressed in all tissues examined, whereas Xap5l expression was restricted to the testes (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "484619c2-5f1c-4e0f-b1db-525a06be8edc",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C86",
+      "claim": "Xap5l expression is restricted to the testes.",
+      "claim_type": "EXPLICIT",
+      "source": "By using western blot analysis, we found that Xap5 was ubiquitously expressed in all tissues examined, whereas Xap5l expression was restricted to the testes (Figure 1A).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot data shown in Figure 1A.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "45256260-4485-4e8f-bdbd-eb3ee6955d93",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C87",
+      "claim": "Xap5 and Xap5l are not present in mature sperm.",
+      "claim_type": "EXPLICIT",
+      "source": "Although Xap5 and Xap5l are highly expressed in testes and critical for spermatogenesis, they are not present in mature sperm (Figure 1\u2014figure supplement 1).",
+      "source_type": "[\"TEXT\", \"IMAGE\"]",
+      "evidence": "This claim is supported by western blot and immunofluorescence data shown in Figure 1\u2014figure supplement 1.",
+      "evidence_type": "[\"DATA\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "ee85365f-1bc2-449f-bccb-11870aaa8d8f",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C88",
+      "claim": "Xap5/Xap5l are not needed for sperm maintenance.",
+      "claim_type": "EXPLICIT",
+      "source": "Thus, Xap5/Xap5l are not needed for sperm maintenance.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is inferred from the absence of Xap5/Xap5l in mature sperm.",
+      "evidence_type": "[\"INFERENCE\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "bc673db9-6c4f-433c-98c5-982f8c81377c",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C89",
+      "claim": "X-linked intellectual disability (XLID) is associated with rare Xap5 missense variants.",
+      "claim_type": "EXPLICIT",
+      "source": "A role for Xap5 in human brain development is suggested by the association of X-linked intellectual disability (XLID) with rare Xap5 missense variants (Lee et al., 2020).",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is supported by citation to published literature.",
+      "evidence_type": "[\"CITATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "3b4f41ac-567c-4118-bf4b-bb8bbc2fd14b",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "claim_id": "C90",
+      "claim": "Xap5 may be a ciliary transcription factor in humans.",
+      "claim_type": "EXPLICIT",
+      "source": "The possibility that Xap5 could be a ciliary transcription factor in humans would add XLID to the growing list of the second-order ciliopathies.",
+      "source_type": "[\"TEXT\"]",
+      "evidence": "This claim is speculative, based on the findings in mice and the association with XLID.",
+      "evidence_type": "[\"SPECULATION\"]",
+      "prompt_id": "7b23fa081598e399",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    }
+  ],
+  "results": [
+    {
+      "id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R1",
+      "result_category": "llm",
+      "result": "Xap5 and Xap5l exhibit distinct spatiotemporal expression patterns during spermatogenesis. Xap5 is ubiquitously expressed across tissues and throughout testicular development, with predominant expression in spermatogonia. Xap5l is testis-specific, dramatically increases from P21, and is expressed in pachytene spermatocytes through elongating spermatids. Neither protein is present in mature sperm.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C21-C29 and C85-C87 are well-supported by multiple complementary experimental approaches including western blot (Figure 1A, B), single-cell RNA-seq analysis (Figure 1C), and immunofluorescence (Figure 1D, Figure 1\u2014figure supplement 1). The data consistently demonstrate the distinct temporal and spatial expression patterns of these two proteins during spermatogenesis.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "453450fd-7ef3-4c6a-8510-8c9e460e25c2",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R2",
+      "result_category": "llm",
+      "result": "Both Xap5l KO and Xap5 cKO male mice are sterile, demonstrating that Xap5 and Xap5l play essential roles in spermatogenesis. Xap5l KO mice are otherwise viable and phenotypically normal, while Xap5 cKO males also appear normal but exhibit complete sterility.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C30-C31 and C35-C36 are supported by fertility testing data (Figure 1F, H) showing zero litter production from knockout males. The generation of viable Xap5l KO mice and conditional Xap5 cKO mice provides clear genetic evidence for the essential role of these proteins in male fertility.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "f166cd75-a9ba-4169-8f40-bd9656df7964",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R3",
+      "result_category": "llm",
+      "result": "Xap5 plays critical roles in mouse development, as evidenced by the difficulty in generating mosaic F0 founders with Xap5 mutant alleles and the failure to obtain F1 inheritance of mutant alleles over a year of breeding.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C32-C34 are supported by experimental observations during mouse generation. The inability to establish germline transmission of Xap5 mutations despite successful generation of mosaic founders strongly suggests embryonic lethality or severe developmental defects, necessitating the conditional knockout approach.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "d4262367-538b-42b6-807e-605c9d777881",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R4",
+      "result_category": "llm",
+      "result": "Xap5l KO mice exhibit sperm flagellar defects without gross testicular abnormalities. While testis appearance and weight are normal, sperm count is significantly reduced, motility is impaired, and abnormal flagellar morphology is prevalent, indicating Xap5l is crucial for flagellar assembly during spermiogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C37-C42 are well-supported by comprehensive phenotypic analysis including morphological assessment (Figure 2A), sperm counts (Figure 2B), motility assays (Figure 2C), histology (Figure 2D), and electron microscopy (Figure 2E-G). The data consistently demonstrate flagellar defects as the primary cause of sterility in Xap5l KO mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "4a7c4c78-8148-4a3c-9e9d-b8a2a81897a0",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R5",
+      "result_category": "llm",
+      "result": "Xap5 cKO males exhibit meiotic arrest during spermatogenesis. Testes are significantly smaller from P16 onward, seminiferous tubules are vacuolated due to absence of spermatocytes and spermatids, and no sperm are present in the epididymis, indicating germ cell development arrests in meiotic prophase.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C43-C47 are supported by testis size measurements (Figure 3A), histological analysis (Figure 3B-D), chromosome spreads, PNA staining, and epididymal examination (Figure 3E). The data consistently demonstrate meiotic arrest as the mechanism underlying sterility in Xap5 cKO mice, distinct from the post-meiotic defects in Xap5l KO mice.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "f9377de4-3b83-4c74-b63e-f8b2b7a74de2",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R6",
+      "result_category": "llm",
+      "result": "Xap5l acts as a transcriptional repressor of ciliogenesis during spermatogenesis. RNA-seq of Xap5l KO sperm reveals 2093 upregulated genes associated with cilia assembly and function, including key transcription factors (Foxj1, Rfx families), spermatogenesis regulators (Rfx2, Sox families, Taf7l, Tbpl1), and core ciliary genes (Cfap206, Ift81).",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C48-C53 and C55 are supported by RNA-seq data (Figure 4\u2014figure supplement 1A), gene ontology analysis (Figure 4A, Figure 4\u2014figure supplement 1B-C), and validation by real-time PCR and western blot (Figure 4B, C). The upregulation of ciliary genes in the absence of Xap5l provides strong evidence for its role as a transcriptional repressor.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "ca4fb61c-bc99-4807-8a57-3391412072a5",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R7",
+      "result_category": "llm",
+      "result": "Tulp2 KO male mice are sterile due to malformation of sperm flagella, validating Tulp2 as a novel gene involved in flagellar assembly identified from the Xap5l KO RNA-seq screen.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claim C54 is supported by comprehensive phenotypic characterization of Tulp2 KO mice (Figure 4\u2014figure supplement 2) including fertility tests, sperm counts, motility assays, morphological analysis, and electron microscopy. This validates the predictive value of the RNA-seq screen for identifying novel ciliary/spermatogenesis genes.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "0a20e257-1597-4927-b445-3a496acd64e6",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R8",
+      "result_category": "llm",
+      "result": "Xap5 positively regulates ciliary gene expression during early spermatogenesis. RNA-seq of P16 Xap5 cKO testes shows 1587 downregulated genes involved in cilium assembly, including Foxj1 and Rfx families that are upregulated in Xap5l KO sperm. Meiosis markers (Stra8, Spo11, Dmc1) and spermiogenesis regulators (Rfx2, Sox30, Crem) are also downregulated.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C56-C60 are supported by RNA-seq data (Figure 4\u2014figure supplement 3A), gene ontology analysis (Figure 4D, Figure 4\u2014figure supplement 3B-D), and validation by real-time PCR and western blot (Figure 4E, F). The overlap between genes downregulated in Xap5 cKO and upregulated in Xap5l KO (Figure 4\u2014figure supplement 3E) provides strong evidence for antagonistic regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R9",
+      "result_category": "llm",
+      "result": "Xap5 and Xap5l directly bind to ciliary gene promoters through a conserved DNA motif (CCCCGCCC/GGGCGGGG). CUT&Tag analysis identified 23,143 Xap5 peaks and 2290 Xap5l peaks, predominantly in promoter regions. Integration with RNA-seq data revealed 891 Xap5-bound downregulated genes and 75 Xap5l-bound upregulated genes associated with cilium assembly. Both proteins directly bind and regulate Foxj1 and Rfx2.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claims C61-C73 are partially supported but have significant limitations. While Xap5 CUT&Tag data appears robust (23,143 peaks), the authors acknowledge suboptimal Xap5l antibody performance (C63), yielding only 2290 peaks. The Rfx2 occupancy by Xap5l (C72) required PCR validation because peaks were not detected in the initial CUT&Tag data, and Foxj1 occupancy by Xap5l could not be confirmed. These technical limitations reduce confidence in the comprehensiveness of Xap5l target identification.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "ac3de5a4-fb7d-4830-8526-1cdbf31728e1",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R10",
+      "result_category": "llm",
+      "result": "Xap5 and Xap5l function as antagonistic transcription factors that coordinate ciliogenesis during spermatogenesis by acting upstream of Foxj1 and Rfx transcription factor families. Xap5 activates ciliary gene expression during early spermatogenesis, while Xap5l represses these genes during late spermatogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C74-C75 are supported by the integration of multiple lines of evidence: opposing expression patterns (Figure 1C, Figure 4\u2014figure supplement 5), opposite effects on ciliary gene expression (Figures 4A-F), shared DNA binding motifs (Figure 4\u2014figure supplement 4C), and direct regulation of key transcription factors (Figure 4G). The model of antagonistic regulation is well-supported by the data.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "a94fcae2-8370-4d40-b495-d9da4353dd0d",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R11",
+      "result_category": "llm",
+      "result": "Background claims establishing the evolutionary conservation of cilia, their functions, ciliopathies, dynamic regulation during development, and the role of transcription factors (Foxj1, Rfx) in ciliary gene regulation in metazoans but their absence in unicellular organisms.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C1, C7-C16, C76, C78-C84 are supported by appropriate citations to published literature and represent established knowledge in the field. These provide necessary context for the study but are not novel findings.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "bd8db369-afe1-4b37-9157-0d290193e6a2",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R12",
+      "result_category": "llm",
+      "result": "Prior work established that Xap5 is an ancient, conserved transcription factor required for flagellar assembly in Chlamydomonas and that Xap5l originated via retrotransposition in Therians. The current study extends this to show Xap5 positively regulates ciliary genes by activating Foxj1 and Rfxs during mammalian spermatogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C2, C17-C20 are supported by citations to prior work. Claim C77 represents the key finding of the current study, supported by the experimental data (RNA-seq, CUT&Tag, validation experiments). This bridges the evolutionary gap between unicellular and multicellular ciliary gene regulation.",
+      "result_type": "MAJOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "dd7e2869-73b5-4119-8bea-acae924c311d",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R13",
+      "result_category": "llm",
+      "result": "Xap5 and Xap5l are not present in mature sperm and therefore are not needed for sperm maintenance, only for spermatogenesis.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Claims C87-C88 are supported by western blot and immunofluorescence data (Figure 1\u2014figure supplement 1) showing absence of both proteins in mature sperm. The inference that they are not needed for sperm maintenance (C88) is reasonable given their absence in functional mature sperm.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "397ed647-ddac-427b-a42d-4b9588b04eec",
+      "content_id": "283096c8-6061-4fc1-a2e4-a98e107385b0",
+      "result_id": "R14",
+      "result_category": "llm",
+      "result": "X-linked intellectual disability (XLID) is associated with rare Xap5 missense variants, suggesting Xap5 may function as a ciliary transcription factor in human brain development, potentially adding XLID to second-order ciliopathies.",
+      "reviewer_id": "OpenEval",
+      "reviewer_name": "OpenEval",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Claim C89 is supported by citation to published literature (Lee et al., 2020). However, claim C90 is explicitly speculative, as acknowledged by the authors' use of \"possibility\" and \"could be.\" No experimental evidence is provided in this manuscript to demonstrate Xap5 regulates ciliogenesis in human brain or that XLID is a ciliopathy. This represents a hypothesis for future investigation.",
+      "result_type": "MINOR",
+      "prompt_id": "8e6aa149e11d7c3d",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R1",
+      "result_category": "peer",
+      "result": "The authors characterize the expression patterns of Xap5 and Xap5l proteins and mRNA during spermatogenesis. Xap5 is ubiquitously expressed across tissues and throughout testis development, with mRNA predominantly in spermatogonia. Xap5l is testis-specific, increases dramatically from P21, with mRNA in pachytene spermatocytes through elongating spermatids. Neither protein is detected in mature sperm.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "All reviewers accept these expression data without challenge. The editor notes 'supporting data are solid,' and Reviewer 3 explicitly states the results 'well demonstrate' the findings. The expression patterns are central to establishing the temporal roles of these proteins.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "134d352f-26f2-401b-b96b-bb5477a61fd9",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R2",
+      "result_category": "peer",
+      "result": "Xap5l KO male mice are sterile with reduced sperm count, significantly reduced motility, and abnormal flagella morphology, despite normal testis appearance and seminiferous epithelial cycle. This indicates Xap5l is crucial for flagellar assembly during spermiogenesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 acknowledges 'knockout mouse models provided strong evidence' for the critical role in spermatogenesis. Reviewer 2 notes 'sperm abnormalities were observed in Xap5l-KO mice.' The phenotypic characterization is accepted as demonstrating Xap5l's role in flagellar development.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "253c7f02-86d5-4d87-aed4-e53d7e355742",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R3",
+      "result_category": "peer",
+      "result": "Xap5 cKO male mice show meiotic arrest with smaller testes from P16 onward, vacuolated seminiferous tubules lacking spermatocytes and spermatids, and no sperm in epididymides. This demonstrates Xap5 is indispensable for meiotic progression during spermatogenesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 states 'knockout mouse models provided strong evidence' for critical roles. Reviewer 2 notes 'spermatogenesis was arrested at spermatogonia/early spermatocyte stage in Xap5-KO mice.' The meiotic arrest phenotype is accepted as demonstrating Xap5's essential role.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "5a85149d-e6b7-430e-9883-a78859baa01e",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R4",
+      "result_category": "peer",
+      "result": "RNA-seq analysis of Xap5l KO sperm reveals 2093 upregulated genes associated with cilia assembly, including key transcription factors Foxj1 and Rfx families, as well as regulators of spermiogenesis and core ciliary genes. This indicates Xap5l acts as a transcriptional repressor of ciliogenesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 1 notes 'RNA-seq and CUT & Tag are valuable sources' and Reviewer 3 states 'RNA-seq analyses demonstrated that XAP5L deficiency abnormally remains Foxj1 and Rfx genes in mature sperm.' The transcriptional repressor role is accepted based on the upregulation of ciliary genes in the knockout.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "eb0bc0a9-44ff-415e-8a8e-aaf77249fccc",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R5",
+      "result_category": "peer",
+      "result": "RNA-seq of P16 Xap5 cKO testes shows 1587 downregulated genes involved in cilium assembly, including Foxj1 and Rfx families that are upregulated in Xap5l KO. Meiosis markers and key transcription regulators are also downregulated, consistent with meiotic arrest.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 states 'RNA-seq analyses demonstrated that XAP5 deficiency suppresses ciliary gene expression including Foxj1 and Rfx family genes in early testis.' The downregulation of ciliary genes and meiotic markers is accepted as supporting Xap5's activator role.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "91156bd0-5759-4474-a37f-8eb234ab2930",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R6",
+      "result_category": "peer",
+      "result": "CUT&Tag analysis reveals Xap5 and Xap5l bind to promoter regions with a shared conserved motif (CCCCGCCC/GGGCGGGG). Both proteins directly bind and regulate Foxj1 and Rfx2, with 891 Xap5-bound genes downregulated in Xap5 cKO and 75 Xap5l-bound genes upregulated in Xap5l KO, associated with cilium assembly.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 3 explicitly states 'Key transcription factors for ciliogenesis, Foxj1 and Rfx2, are direct downstream targets for XAP5 and XAP5L and their common motifs well explain their antagonistic function.' The CUT&Tag data demonstrating direct binding is accepted as strong evidence for the regulatory mechanism.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "8cddddb2-1895-4da5-a9f7-fa82eb942db9",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R7",
+      "result_category": "peer",
+      "result": "The authors propose that Xap5 and Xap5l have antagonistic effects, functioning upstream of Foxj1 and Rfx transcription factor families to coordinate ciliogenesis during spermatogenesis. Xap5 positively regulates ciliary genes during early spermatogenesis while Xap5l negatively regulates them during spermiogenesis.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "UNCERTAIN",
+      "evaluation": "Reviewer 2 explicitly challenges this interpretation, stating 'This reviewer still can't get the authors' viewpoint that XAP5 and XAP5l are \"antagonistic relationship\" to regulate sperm flagella development' and notes their expressions and roles are different. While Reviewer 3 accepts the antagonistic model, the conflicting interpretations indicate uncertainty about this overarching mechanistic claim.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "33c13ca8-cf02-4e84-9168-bc6ab1bfbca0",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R8",
+      "result_category": "peer",
+      "result": "Male mice lacking Xap5 display infertility due to meiotic prophase arrest, while male mice lacking Xap5l display infertility due to sperm flagella malformation.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "Reviewer 2 summarizes these findings without challenge: 'XAP5 deficiency arrest germ cell development at pachytene stage, whereas XAP5L absence causes impaired flagellar formation.' The distinct phenotypes are accepted by all reviewers as core findings.",
+      "result_type": "MAJOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "00059476-4439-47c1-8fbf-ab854a5a64a5",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R9",
+      "result_category": "peer",
+      "result": "Tulp2 KO male mice are sterile due to malformation of sperm flagella.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This finding is presented as supporting data for the upregulation of ciliary genes in Xap5l KO. No reviewer challenges this result, and it serves as validation of the functional importance of genes regulated by Xap5l.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "2283b202-7c96-4e9f-944d-7edbc212bb7f",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R10",
+      "result_category": "peer",
+      "result": "Background claims establishing the evolutionary conservation of cilia, the role of transcription factors in ciliogenesis, the absence of Foxj1/Rfxs from unicellular organisms, previous work on Xap5 in Chlamydomonas, and the association of Xap5 with X-linked intellectual disability.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "These are background/contextual claims supported by citations to published literature. No reviewer challenges these foundational statements, which establish the rationale for the study. They are treated as accepted knowledge rather than novel findings requiring evaluation.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "7013afdd-c1c7-4e4f-a2f0-118dab54a316",
+      "content_id": "c30d7d3e-5aad-4ff2-88f2-42734bd89168",
+      "result_id": "R11",
+      "result_category": "peer",
+      "result": "Xap5/Xap5l are not needed for sperm maintenance, inferred from their absence in mature sperm.",
+      "reviewer_id": "PEER_REVIEW",
+      "reviewer_name": "Peer Reviewer",
+      "evaluation_type": "SUPPORTED",
+      "evaluation": "This inference follows logically from the accepted expression data showing absence in mature sperm. No reviewer challenges this interpretation, treating it as a straightforward conclusion from the localization studies.",
+      "result_type": "MINOR",
+      "prompt_id": "1c6c18821b3701fb",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    }
+  ],
+  "claim_results": [
+    {
+      "claim_id": "7ff025e8-f5af-45fe-b956-2ed7e9c19eee",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "9f27e6e0-c90f-489d-9f10-36de3070a5c5",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "62cc3f2e-2e76-4757-b53b-6f65c827d0ef",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "8123be15-a317-4860-9c46-4246a208cbb8",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "b825400d-42d8-483b-af9a-72718d332890",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "6e654db8-9798-4617-a868-141d582d1e55",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "63bc5b2f-e8e5-4223-9236-2c72720b12a3",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "f2196120-22f0-417c-a03f-bbd20a12af8d",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "5a32b3f6-4d19-4cf6-ba10-7d603b2ece4b",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "d6a5909e-b717-4bd6-aaa8-c96b15e5c203",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "484619c2-5f1c-4e0f-b1db-525a06be8edc",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "45256260-4485-4e8f-bdbd-eb3ee6955d93",
+      "result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96"
+    },
+    {
+      "claim_id": "06e540cc-41c7-426b-9135-2d98eb9c12f8",
+      "result_id": "453450fd-7ef3-4c6a-8510-8c9e460e25c2"
+    },
+    {
+      "claim_id": "b6af2e81-cf9b-46ce-a158-b6247bc390a3",
+      "result_id": "453450fd-7ef3-4c6a-8510-8c9e460e25c2"
+    },
+    {
+      "claim_id": "6c3e3022-b6c0-4c34-bc8e-e38e10a3f6dd",
+      "result_id": "453450fd-7ef3-4c6a-8510-8c9e460e25c2"
+    },
+    {
+      "claim_id": "8a52ae69-ab47-44f4-87cb-e0624b070f0b",
+      "result_id": "453450fd-7ef3-4c6a-8510-8c9e460e25c2"
+    },
+    {
+      "claim_id": "54221f8e-3fc8-457e-b7ea-f4a6412c5d67",
+      "result_id": "f166cd75-a9ba-4169-8f40-bd9656df7964"
+    },
+    {
+      "claim_id": "0c8ee0b9-6365-451e-bd48-d3a8ec72994f",
+      "result_id": "f166cd75-a9ba-4169-8f40-bd9656df7964"
+    },
+    {
+      "claim_id": "9d20701d-4d36-4dfe-9db9-7c87f0897603",
+      "result_id": "f166cd75-a9ba-4169-8f40-bd9656df7964"
+    },
+    {
+      "claim_id": "638a43ec-dfa0-4b49-8a92-a3e5fd774269",
+      "result_id": "d4262367-538b-42b6-807e-605c9d777881"
+    },
+    {
+      "claim_id": "7f410dd1-73e4-4301-a1f3-41b5e1eb31c7",
+      "result_id": "d4262367-538b-42b6-807e-605c9d777881"
+    },
+    {
+      "claim_id": "203ffdb8-11de-4b7c-a510-379ee3eaff9a",
+      "result_id": "d4262367-538b-42b6-807e-605c9d777881"
+    },
+    {
+      "claim_id": "9faf849f-0151-4bc6-964a-60792a7e4f4f",
+      "result_id": "d4262367-538b-42b6-807e-605c9d777881"
+    },
+    {
+      "claim_id": "897ed5c1-b8af-4d16-a7b1-f7cc4418dbfd",
+      "result_id": "d4262367-538b-42b6-807e-605c9d777881"
+    },
+    {
+      "claim_id": "95aa0bf5-b7a0-40fa-90f2-08de054826db",
+      "result_id": "d4262367-538b-42b6-807e-605c9d777881"
+    },
+    {
+      "claim_id": "08f83b32-164b-4539-b02f-984d5f981106",
+      "result_id": "4a7c4c78-8148-4a3c-9e9d-b8a2a81897a0"
+    },
+    {
+      "claim_id": "883f6f06-9066-4ed5-b545-e6e48fb288be",
+      "result_id": "4a7c4c78-8148-4a3c-9e9d-b8a2a81897a0"
+    },
+    {
+      "claim_id": "0227d1fe-90d6-45b2-b625-2ee1db041f91",
+      "result_id": "4a7c4c78-8148-4a3c-9e9d-b8a2a81897a0"
+    },
+    {
+      "claim_id": "21ed1389-a743-4568-a3a0-cfdcba05c572",
+      "result_id": "4a7c4c78-8148-4a3c-9e9d-b8a2a81897a0"
+    },
+    {
+      "claim_id": "534a95ff-9391-446f-b74e-4dceb5deb1d0",
+      "result_id": "4a7c4c78-8148-4a3c-9e9d-b8a2a81897a0"
+    },
+    {
+      "claim_id": "3de82af6-bbed-48e7-b216-114273abb871",
+      "result_id": "f9377de4-3b83-4c74-b63e-f8b2b7a74de2"
+    },
+    {
+      "claim_id": "a28ae0bc-2ba8-419e-ad24-e5f6dc165261",
+      "result_id": "f9377de4-3b83-4c74-b63e-f8b2b7a74de2"
+    },
+    {
+      "claim_id": "9199ee50-9b96-4f1c-8aad-07ef67ffe0b4",
+      "result_id": "f9377de4-3b83-4c74-b63e-f8b2b7a74de2"
+    },
+    {
+      "claim_id": "b470b805-6fb7-4e0d-a6cd-eb8c76effa2d",
+      "result_id": "f9377de4-3b83-4c74-b63e-f8b2b7a74de2"
+    },
+    {
+      "claim_id": "0b019912-3d1f-43c5-9ccc-7e0d8250756e",
+      "result_id": "f9377de4-3b83-4c74-b63e-f8b2b7a74de2"
+    },
+    {
+      "claim_id": "c7e941be-972e-43a3-899b-e9faad475e41",
+      "result_id": "f9377de4-3b83-4c74-b63e-f8b2b7a74de2"
+    },
+    {
+      "claim_id": "859a12d9-5ea7-4f7a-bceb-1a402e898d42",
+      "result_id": "f9377de4-3b83-4c74-b63e-f8b2b7a74de2"
+    },
+    {
+      "claim_id": "51e53f28-7560-412a-ad38-d04b93ff0c3c",
+      "result_id": "ca4fb61c-bc99-4807-8a57-3391412072a5"
+    },
+    {
+      "claim_id": "a0ed6875-9bd3-4a29-9e38-3009abeb13f8",
+      "result_id": "0a20e257-1597-4927-b445-3a496acd64e6"
+    },
+    {
+      "claim_id": "5dd46c02-b358-48a1-b4c9-4362ce60cd24",
+      "result_id": "0a20e257-1597-4927-b445-3a496acd64e6"
+    },
+    {
+      "claim_id": "0675e417-5f22-4b15-ab5c-ff41a322ddc8",
+      "result_id": "0a20e257-1597-4927-b445-3a496acd64e6"
+    },
+    {
+      "claim_id": "15d3ff74-a5ae-4082-a56b-9cdf5c36f2b2",
+      "result_id": "0a20e257-1597-4927-b445-3a496acd64e6"
+    },
+    {
+      "claim_id": "ca68f299-7a2d-4d8d-920f-6ed5b7da2f0f",
+      "result_id": "0a20e257-1597-4927-b445-3a496acd64e6"
+    },
+    {
+      "claim_id": "24c52304-8d89-4f20-a6f5-e675767859d4",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "758845be-af22-4de7-b9be-5eb3fc1825eb",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "e753fd26-5e0c-4993-8165-ef544d53cca4",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "1118f264-d502-4c48-9d10-d606dce9723d",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "a8c199e5-9e39-433c-88ea-726a6c126248",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "e814685c-d625-4f38-a2f1-0e9fa3f0a787",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "1014ccdc-b87b-4b5b-8a59-c40acedc4e0f",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "7d9d68b4-2805-44e4-90fb-414cba929ebc",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "05dae274-0962-43c6-b92a-618d492d62a5",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "312b08e8-dad2-48c1-b638-336647655ddc",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "181b3f96-8d6c-4e25-a2ab-c5ab6dc66828",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "11d111bd-ef61-4db2-ac81-d4a2b1295458",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "d1603e2b-8d10-4115-849c-56f783197679",
+      "result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8"
+    },
+    {
+      "claim_id": "c5cba30f-dbd2-4926-adcb-94f91132a7a2",
+      "result_id": "ac3de5a4-fb7d-4830-8526-1cdbf31728e1"
+    },
+    {
+      "claim_id": "a6e89dfa-ba1c-4d8f-8c13-704cd861eb6a",
+      "result_id": "ac3de5a4-fb7d-4830-8526-1cdbf31728e1"
+    },
+    {
+      "claim_id": "016a001d-cd65-4359-93a7-fda81defb7fe",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "bc9eff5f-72cf-4003-a1b1-702d0ff81ba9",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "9fe97128-c01d-4be7-94f6-8166edb68ac7",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "5aa82ca1-9f0c-4f9e-97ba-0b8ca95134a6",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "ce016a4e-0d53-4f62-a90e-a7f43a22c4c1",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "1af5f187-b766-41fb-80ea-d41660de4f29",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "c273f6a2-de51-4e79-865f-5dc7a6e77fa1",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "b422a00b-c1e3-4ea8-b58d-a668bf8475ed",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "7c4d68fe-f7ec-4823-aab3-5043b66119c3",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "b5c7e7f5-dfa9-4fff-9eda-ac05739b9f06",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "b722134d-a150-48fb-8e96-984c1508bf64",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "466d1cc5-16f1-49cc-9201-c79a325f6e94",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "cb2368ac-7dbe-4adc-ae20-3de3ac2289e8",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "6040cdcc-9e88-4206-aa12-5df938e21417",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "a6488909-14a0-4fc0-9ce8-adef99f74a52",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "abb21db4-64ca-4d23-8a2a-acbd02d605d6",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "72405891-4781-4128-b6c7-00818bb08149",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "8ad498d2-b975-4d85-b6d3-231c7b13b3fa",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "e2b8d2ca-aa15-4b9a-908c-f99ad7fa4079",
+      "result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d"
+    },
+    {
+      "claim_id": "6ef62e76-4308-4fa1-a188-1b2fd2a63b69",
+      "result_id": "bd8db369-afe1-4b37-9157-0d290193e6a2"
+    },
+    {
+      "claim_id": "0e8131f6-db7f-47f0-be8c-8e153e05c6f3",
+      "result_id": "bd8db369-afe1-4b37-9157-0d290193e6a2"
+    },
+    {
+      "claim_id": "337e1dea-67f8-4d37-b972-4c37cf34c020",
+      "result_id": "bd8db369-afe1-4b37-9157-0d290193e6a2"
+    },
+    {
+      "claim_id": "89996e4f-9cf9-47f0-817e-cae6ec08911a",
+      "result_id": "bd8db369-afe1-4b37-9157-0d290193e6a2"
+    },
+    {
+      "claim_id": "bb5b863a-2793-476b-a33b-285c11230e82",
+      "result_id": "bd8db369-afe1-4b37-9157-0d290193e6a2"
+    },
+    {
+      "claim_id": "c5ff26a7-ba82-4811-a8ef-896a518307c3",
+      "result_id": "bd8db369-afe1-4b37-9157-0d290193e6a2"
+    },
+    {
+      "claim_id": "45256260-4485-4e8f-bdbd-eb3ee6955d93",
+      "result_id": "dd7e2869-73b5-4119-8bea-acae924c311d"
+    },
+    {
+      "claim_id": "ee85365f-1bc2-449f-bccb-11870aaa8d8f",
+      "result_id": "dd7e2869-73b5-4119-8bea-acae924c311d"
+    },
+    {
+      "claim_id": "bc673db9-6c4f-433c-98c5-982f8c81377c",
+      "result_id": "397ed647-ddac-427b-a42d-4b9588b04eec"
+    },
+    {
+      "claim_id": "3b4f41ac-567c-4118-bf4b-bb8bbc2fd14b",
+      "result_id": "397ed647-ddac-427b-a42d-4b9588b04eec"
+    },
+    {
+      "claim_id": "7ff025e8-f5af-45fe-b956-2ed7e9c19eee",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "9f27e6e0-c90f-489d-9f10-36de3070a5c5",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "62cc3f2e-2e76-4757-b53b-6f65c827d0ef",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "8123be15-a317-4860-9c46-4246a208cbb8",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "b825400d-42d8-483b-af9a-72718d332890",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "6e654db8-9798-4617-a868-141d582d1e55",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "63bc5b2f-e8e5-4223-9236-2c72720b12a3",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "f2196120-22f0-417c-a03f-bbd20a12af8d",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "5a32b3f6-4d19-4cf6-ba10-7d603b2ece4b",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "d6a5909e-b717-4bd6-aaa8-c96b15e5c203",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "484619c2-5f1c-4e0f-b1db-525a06be8edc",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "45256260-4485-4e8f-bdbd-eb3ee6955d93",
+      "result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4"
+    },
+    {
+      "claim_id": "06e540cc-41c7-426b-9135-2d98eb9c12f8",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "b6af2e81-cf9b-46ce-a158-b6247bc390a3",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "6c3e3022-b6c0-4c34-bc8e-e38e10a3f6dd",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "8a52ae69-ab47-44f4-87cb-e0624b070f0b",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "638a43ec-dfa0-4b49-8a92-a3e5fd774269",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "7f410dd1-73e4-4301-a1f3-41b5e1eb31c7",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "203ffdb8-11de-4b7c-a510-379ee3eaff9a",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "9faf849f-0151-4bc6-964a-60792a7e4f4f",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "897ed5c1-b8af-4d16-a7b1-f7cc4418dbfd",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "95aa0bf5-b7a0-40fa-90f2-08de054826db",
+      "result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9"
+    },
+    {
+      "claim_id": "54221f8e-3fc8-457e-b7ea-f4a6412c5d67",
+      "result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742"
+    },
+    {
+      "claim_id": "0c8ee0b9-6365-451e-bd48-d3a8ec72994f",
+      "result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742"
+    },
+    {
+      "claim_id": "9d20701d-4d36-4dfe-9db9-7c87f0897603",
+      "result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742"
+    },
+    {
+      "claim_id": "08f83b32-164b-4539-b02f-984d5f981106",
+      "result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742"
+    },
+    {
+      "claim_id": "883f6f06-9066-4ed5-b545-e6e48fb288be",
+      "result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742"
+    },
+    {
+      "claim_id": "0227d1fe-90d6-45b2-b625-2ee1db041f91",
+      "result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742"
+    },
+    {
+      "claim_id": "21ed1389-a743-4568-a3a0-cfdcba05c572",
+      "result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742"
+    },
+    {
+      "claim_id": "534a95ff-9391-446f-b74e-4dceb5deb1d0",
+      "result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742"
+    },
+    {
+      "claim_id": "3de82af6-bbed-48e7-b216-114273abb871",
+      "result_id": "5a85149d-e6b7-430e-9883-a78859baa01e"
+    },
+    {
+      "claim_id": "a28ae0bc-2ba8-419e-ad24-e5f6dc165261",
+      "result_id": "5a85149d-e6b7-430e-9883-a78859baa01e"
+    },
+    {
+      "claim_id": "9199ee50-9b96-4f1c-8aad-07ef67ffe0b4",
+      "result_id": "5a85149d-e6b7-430e-9883-a78859baa01e"
+    },
+    {
+      "claim_id": "b470b805-6fb7-4e0d-a6cd-eb8c76effa2d",
+      "result_id": "5a85149d-e6b7-430e-9883-a78859baa01e"
+    },
+    {
+      "claim_id": "0b019912-3d1f-43c5-9ccc-7e0d8250756e",
+      "result_id": "5a85149d-e6b7-430e-9883-a78859baa01e"
+    },
+    {
+      "claim_id": "c7e941be-972e-43a3-899b-e9faad475e41",
+      "result_id": "5a85149d-e6b7-430e-9883-a78859baa01e"
+    },
+    {
+      "claim_id": "859a12d9-5ea7-4f7a-bceb-1a402e898d42",
+      "result_id": "5a85149d-e6b7-430e-9883-a78859baa01e"
+    },
+    {
+      "claim_id": "a0ed6875-9bd3-4a29-9e38-3009abeb13f8",
+      "result_id": "eb0bc0a9-44ff-415e-8a8e-aaf77249fccc"
+    },
+    {
+      "claim_id": "5dd46c02-b358-48a1-b4c9-4362ce60cd24",
+      "result_id": "eb0bc0a9-44ff-415e-8a8e-aaf77249fccc"
+    },
+    {
+      "claim_id": "0675e417-5f22-4b15-ab5c-ff41a322ddc8",
+      "result_id": "eb0bc0a9-44ff-415e-8a8e-aaf77249fccc"
+    },
+    {
+      "claim_id": "15d3ff74-a5ae-4082-a56b-9cdf5c36f2b2",
+      "result_id": "eb0bc0a9-44ff-415e-8a8e-aaf77249fccc"
+    },
+    {
+      "claim_id": "ca68f299-7a2d-4d8d-920f-6ed5b7da2f0f",
+      "result_id": "eb0bc0a9-44ff-415e-8a8e-aaf77249fccc"
+    },
+    {
+      "claim_id": "24c52304-8d89-4f20-a6f5-e675767859d4",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "758845be-af22-4de7-b9be-5eb3fc1825eb",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "e753fd26-5e0c-4993-8165-ef544d53cca4",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "1118f264-d502-4c48-9d10-d606dce9723d",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "a8c199e5-9e39-433c-88ea-726a6c126248",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "e814685c-d625-4f38-a2f1-0e9fa3f0a787",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "1014ccdc-b87b-4b5b-8a59-c40acedc4e0f",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "7d9d68b4-2805-44e4-90fb-414cba929ebc",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "05dae274-0962-43c6-b92a-618d492d62a5",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "312b08e8-dad2-48c1-b638-336647655ddc",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "181b3f96-8d6c-4e25-a2ab-c5ab6dc66828",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "11d111bd-ef61-4db2-ac81-d4a2b1295458",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "d1603e2b-8d10-4115-849c-56f783197679",
+      "result_id": "91156bd0-5759-4474-a37f-8eb234ab2930"
+    },
+    {
+      "claim_id": "662cf9dd-83bb-43d1-8b65-d351a9d5cb87",
+      "result_id": "8cddddb2-1895-4da5-a9f7-fa82eb942db9"
+    },
+    {
+      "claim_id": "660103e8-d140-4ec7-a19e-1681ef1669c5",
+      "result_id": "8cddddb2-1895-4da5-a9f7-fa82eb942db9"
+    },
+    {
+      "claim_id": "c5cba30f-dbd2-4926-adcb-94f91132a7a2",
+      "result_id": "8cddddb2-1895-4da5-a9f7-fa82eb942db9"
+    },
+    {
+      "claim_id": "a6e89dfa-ba1c-4d8f-8c13-704cd861eb6a",
+      "result_id": "8cddddb2-1895-4da5-a9f7-fa82eb942db9"
+    },
+    {
+      "claim_id": "c5ff26a7-ba82-4811-a8ef-896a518307c3",
+      "result_id": "8cddddb2-1895-4da5-a9f7-fa82eb942db9"
+    },
+    {
+      "claim_id": "a231fb35-088b-4c34-9d93-ee28aeec3a65",
+      "result_id": "33c13ca8-cf02-4e84-9168-bc6ab1bfbca0"
+    },
+    {
+      "claim_id": "7463687e-ce08-49f2-a17b-a64873880f6c",
+      "result_id": "33c13ca8-cf02-4e84-9168-bc6ab1bfbca0"
+    },
+    {
+      "claim_id": "51e53f28-7560-412a-ad38-d04b93ff0c3c",
+      "result_id": "00059476-4439-47c1-8fbf-ab854a5a64a5"
+    },
+    {
+      "claim_id": "016a001d-cd65-4359-93a7-fda81defb7fe",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "6ef62e76-4308-4fa1-a188-1b2fd2a63b69",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "bc9eff5f-72cf-4003-a1b1-702d0ff81ba9",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "9fe97128-c01d-4be7-94f6-8166edb68ac7",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "5aa82ca1-9f0c-4f9e-97ba-0b8ca95134a6",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "ce016a4e-0d53-4f62-a90e-a7f43a22c4c1",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "1af5f187-b766-41fb-80ea-d41660de4f29",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "c273f6a2-de51-4e79-865f-5dc7a6e77fa1",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "b422a00b-c1e3-4ea8-b58d-a668bf8475ed",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "7c4d68fe-f7ec-4823-aab3-5043b66119c3",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "b5c7e7f5-dfa9-4fff-9eda-ac05739b9f06",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "b722134d-a150-48fb-8e96-984c1508bf64",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "0e8131f6-db7f-47f0-be8c-8e153e05c6f3",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "337e1dea-67f8-4d37-b972-4c37cf34c020",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "89996e4f-9cf9-47f0-817e-cae6ec08911a",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "bb5b863a-2793-476b-a33b-285c11230e82",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "466d1cc5-16f1-49cc-9201-c79a325f6e94",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "cb2368ac-7dbe-4adc-ae20-3de3ac2289e8",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "6040cdcc-9e88-4206-aa12-5df938e21417",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "a6488909-14a0-4fc0-9ce8-adef99f74a52",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "abb21db4-64ca-4d23-8a2a-acbd02d605d6",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "72405891-4781-4128-b6c7-00818bb08149",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "8ad498d2-b975-4d85-b6d3-231c7b13b3fa",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "e2b8d2ca-aa15-4b9a-908c-f99ad7fa4079",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "bc673db9-6c4f-433c-98c5-982f8c81377c",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "3b4f41ac-567c-4118-bf4b-bb8bbc2fd14b",
+      "result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f"
+    },
+    {
+      "claim_id": "ee85365f-1bc2-449f-bccb-11870aaa8d8f",
+      "result_id": "7013afdd-c1c7-4e4f-a2f0-118dab54a316"
+    }
+  ],
+  "comparisons": [
+    {
+      "id": "6a20bb35-edec-4dfc-83e2-6489e8555bd1",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP1",
+      "openeval_result_id": "3cfb39b1-1ec4-401f-9041-68dd5f1d1e96",
+      "peer_result_id": "06f23a6e-2b4d-4469-b9be-ec2fcd6ffcc4",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C21-C29, C85-C87. Both evaluations find the expression data well-supported by multiple experimental approaches (western blot, RNA-seq, immunofluorescence). Both rate as SUPPORTED with high confidence.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "558c9dfa-68a0-4a6c-91c0-2fafadcac04d",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP2",
+      "openeval_result_id": "f9377de4-3b83-4c74-b63e-f8b2b7a74de2",
+      "peer_result_id": "5a85149d-e6b7-430e-9883-a78859baa01e",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C48-C53, C55. Both evaluations accept the RNA-seq data demonstrating Xap5l's role as a transcriptional repressor of ciliary genes. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "41dd131f-65f1-42b2-bf93-30769d0c5fc8",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP3",
+      "openeval_result_id": "ca4fb61c-bc99-4807-8a57-3391412072a5",
+      "peer_result_id": "00059476-4439-47c1-8fbf-ab854a5a64a5",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claim C54. Both evaluations accept the Tulp2 KO validation data without challenge. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "7dad1c07-bbae-48b5-b7a5-5ddea09e01a3",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP4",
+      "openeval_result_id": "0a20e257-1597-4927-b445-3a496acd64e6",
+      "peer_result_id": "eb0bc0a9-44ff-415e-8a8e-aaf77249fccc",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Perfect agreement on claims C56-C60. Both evaluations accept the RNA-seq data showing downregulation of ciliary genes in Xap5 cKO, supporting its activator role. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "b79d9d6a-36fe-4f92-b707-38de0500353f",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP5",
+      "openeval_result_id": "ad1d3c02-ac2b-484c-8d4f-0c040e72cea8",
+      "peer_result_id": "91156bd0-5759-4474-a37f-8eb234ab2930",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C61-C73. OpenEval rates as UNCERTAIN due to technical limitations (suboptimal Xap5l antibody, only 2290 peaks, PCR validation needed for Rfx2). Peer review rates as SUPPORTED, with Reviewer 3 accepting CUT&Tag data as strong evidence for direct binding.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "fe0bab46-8cb0-4613-83d7-5a8ff6646d02",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP6",
+      "openeval_result_id": "d4262367-538b-42b6-807e-605c9d777881",
+      "peer_result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C37-C42 regarding Xap5l KO flagellar defects. Both evaluations accept the comprehensive phenotypic characterization. Both rate as SUPPORTED. Peer R2 also covers C30-C31, C35-C36 which OpenEval addresses separately in R2.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "712754b2-3725-4fac-9e72-ce63fdb86d0e",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP7",
+      "openeval_result_id": "453450fd-7ef3-4c6a-8510-8c9e460e25c2",
+      "peer_result_id": "134d352f-26f2-401b-b96b-bb5477a61fd9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C30-C31, C35-C36. Both evaluations accept fertility testing data showing sterility. Both rate as SUPPORTED. Peer R2 also includes C37-C42 which OpenEval addresses separately in R4.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "7f3fc5f9-d5e1-497a-aff4-6819bb0b00d8",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP8",
+      "openeval_result_id": "4a7c4c78-8148-4a3c-9e9d-b8a2a81897a0",
+      "peer_result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C43-C47 regarding Xap5 cKO meiotic arrest. Both evaluations accept the histological and phenotypic data. Both rate as SUPPORTED. Peer R3 also covers C32-C34 which OpenEval addresses separately in R3.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "80f9b2e1-ff0d-44de-aefb-a646c0a63590",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP9",
+      "openeval_result_id": "f166cd75-a9ba-4169-8f40-bd9656df7964",
+      "peer_result_id": "253c7f02-86d5-4d87-aed4-e53d7e355742",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "Partial overlap on claims C32-C34 regarding embryonic lethality necessitating conditional knockout. Both evaluations accept this finding. Both rate as SUPPORTED. Peer R3 also includes C43-C47 which OpenEval addresses separately in R5.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "f22b226b-961f-4e2e-b2f3-b534a3e8fa31",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP10",
+      "openeval_result_id": "ac3de5a4-fb7d-4830-8526-1cdbf31728e1",
+      "peer_result_id": "8cddddb2-1895-4da5-a9f7-fa82eb942db9",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "UNCERTAIN",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "partial",
+      "comparison": "Disagreement on claims C74-C75 regarding antagonistic regulation model. OpenEval rates as SUPPORTED based on integration of multiple evidence lines. Peer review rates as UNCERTAIN, with Reviewer 2 explicitly challenging the antagonistic interpretation, noting different expression patterns and roles.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "8718b33f-74c8-4c95-b9b1-5fdd83c6a443",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP11",
+      "openeval_result_id": "a94fcae2-8370-4d40-b495-d9da4353dd0d",
+      "peer_result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C1, C7-C16, C76, C78-C84 (background/contextual claims). Both evaluations accept these as established knowledge supported by literature citations. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "2c5b2674-ff06-4891-8129-bf0e45e4cd48",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP12",
+      "openeval_result_id": "bd8db369-afe1-4b37-9157-0d290193e6a2",
+      "peer_result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C2, C17-C20 (background claims) and C77 (key finding). Both evaluations accept these, with C77 representing the novel contribution bridging evolutionary gaps. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "8c9ba965-f692-493a-a91e-11837ab37290",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP13",
+      "openeval_result_id": "dd7e2869-73b5-4119-8bea-acae924c311d",
+      "peer_result_id": "7013afdd-c1c7-4e4f-a2f0-118dab54a316",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "agree",
+      "comparison": "Agreement on claims C87-C88. Both evaluations accept the absence of proteins in mature sperm and the inference that they are not needed for maintenance. Both rate as SUPPORTED.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "0ffe0e89-f2b6-4fea-b1ac-3ab68810a1e1",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP14",
+      "openeval_result_id": "397ed647-ddac-427b-a42d-4b9588b04eec",
+      "peer_result_id": "2283b202-7c96-4e9f-944d-7edbc212bb7f",
+      "openeval_evaluation_type": "UNCERTAIN",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MINOR",
+      "peer_result_type": "MINOR",
+      "comparison_type": "partial",
+      "comparison": "Agreement on claims C89-C90. Both evaluations recognize C89 as supported by literature and C90 as speculative. OpenEval explicitly rates as UNCERTAIN noting lack of experimental evidence. Peer review includes these in background claims without specific challenge.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    },
+    {
+      "id": "76d97e16-b767-4a43-8ad0-6665a28bfe65",
+      "submission_id": "9c9de64f-c484-4a5f-931c-04a3ee967cb9",
+      "comparison_id": "CMP15",
+      "openeval_result_id": "ac3de5a4-fb7d-4830-8526-1cdbf31728e1",
+      "peer_result_id": "33c13ca8-cf02-4e84-9168-bc6ab1bfbca0",
+      "openeval_evaluation_type": "SUPPORTED",
+      "peer_evaluation_type": "SUPPORTED",
+      "openeval_result_type": "MAJOR",
+      "peer_result_type": "MAJOR",
+      "comparison_type": "agree",
+      "comparison": "OpenEval R10 addresses antagonistic regulation model (C74-C75) while Peer R8 addresses distinct phenotypes (C3-C4). These are related but distinct aspects - the phenotypic differences support but do not fully establish the antagonistic regulatory mechanism.",
+      "prompt_id": "4ce77dae25853f70",
+      "created_at": "2025-11-21T19:46:42.946464Z"
+    }
+  ]
+}

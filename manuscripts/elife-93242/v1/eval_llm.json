@@ -1,0 +1,237 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18",
+      "C75",
+      "C76",
+      "C77",
+      "C78",
+      "C79",
+      "C80",
+      "C81"
+    ],
+    "result": "The study uses the DRIAMS dataset comprising 765,048 AMR measurements from 55,773 spectra across four hospitals and 74 drugs. Data were preprocessed into 6000-dimensional vectors, with DRIAMS-A split temporally (pre-2018 for training, 2018 for validation/test) and other hospitals reserved for transfer learning experiments.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C14-C18 and C75-C81 provide comprehensive documentation of the dataset characteristics, preprocessing steps, and data splitting strategy. The temporal split is well-justified (C78) for realistic evaluation. Dataset sizes are explicitly stated with appropriate detail for reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C19",
+      "C21",
+      "C22",
+      "C45",
+      "C46",
+      "C57",
+      "C97",
+      "C98",
+      "C99",
+      "C100",
+      "C101"
+    ],
+    "result": "The dual-branch neural network architecture with Morgan fingerprints for drug embedding and medium-sized (3.2M parameter) MLP spectrum embedders achieves superior performance compared to previous approaches. Morgan fingerprints consistently outperform other drug embedding strategies, and nonlinear multi-layer embedders substantially outperform linear baselines.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19, C21-C22, C45-C46, C57 are directly supported by experimental results shown in Figure 2 and referenced appendix figures. The performance comparisons are systematic across multiple architectures and embedding strategies. Claims C98-C101 provide reasonable interpretations of why certain architectures perform better, though these remain somewhat speculative.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C23",
+      "C47",
+      "C82",
+      "C83"
+    ],
+    "result": "Species-specific recommender models trained for the 25 most common species outperform general recommenders across all evaluated metrics (ROC-AUC, Prec@1(-), Macro ROC-AUC), covering 91.27% of the test set.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C23 and C47 are directly supported by Table 2 comparisons showing consistent performance improvements for species-specific models. The dataset coverage (C83) is explicitly documented. However, C47 appropriately notes this conclusion is contingent on current data availability and may change with more data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C24",
+      "C25",
+      "C49",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62",
+      "C84",
+      "C85"
+    ],
+    "result": "Dual-branch recommenders outperform species-drug-specific classifiers (logistic regression, XGBoost, MLPs) on patient-averaged metrics (ROC-AUC, Prec@1(-)), though logistic regression achieves best performance on species-drug macro ROC-AUC. The authors argue patient-averaged metrics are more clinically relevant for drug recommendation tasks.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24-C25, C49, C58-C59 are supported by Table 3 comparisons across 200 species-drug combinations covering 70.28% of test data. The metric-dependent performance differences are clearly documented. Claims C60-C62 provide reasonable justification for prioritizing patient-averaged metrics, though this represents a methodological choice rather than an empirical finding.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C20",
+      "C26",
+      "C27",
+      "C48",
+      "C63",
+      "C64",
+      "C86",
+      "C87"
+    ],
+    "result": "Models pre-trained on DRIAMS-A and fine-tuned on small datasets (1000 spectra) from three other hospitals (DRIAMS-B, C, D) consistently outperform models trained from scratch, demonstrating efficient transfer learning. Morgan fingerprints provide particular advantage in low-data transfer scenarios.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C20, C26-C27 are supported by Figure 3 showing consistent transfer learning benefits across hospitals and sample sizes. The experimental design (C86-C87) appropriately simulates realistic low-data scenarios. Claims C63-C64 provide plausible mechanistic explanations for transfer learning success, though these remain somewhat speculative interpretations.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C28",
+      "C29",
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C37"
+    ],
+    "result": "UMAP visualization of learned spectrum embeddings reveals that the model spontaneously groups spectra by species without explicit supervision, captures hierarchical taxonomic relationships (genus-level clustering), and shows resistance-status subclustering within species, particularly for multidrug-resistant S. epidermidis and S. aureus variants.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C28-C33 and C37 are supported by Figure 4 visualizations showing clear species clustering, taxonomic structure, and resistance-associated patterns. The observation that species clustering emerges without explicit species labels (C37) is particularly notable. However, UMAP visualizations can be sensitive to hyperparameters, and the biological interpretation of embedding structure should be considered exploratory.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C34",
+      "C35",
+      "C36"
+    ],
+    "result": "Models trained on one hospital may not transfer well to other hospitals due to differences in protocols, spatial epidemiology, and instrument variation. Prior work on DRIAMS showed hospital-specific effects with best performance when training and testing on the same hospital.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C34-C36 appropriately cite prior work (Weis et al., 2022; Humphries, 2022) documenting hospital-specific effects. The reasoning about sources of variation (protocols, epidemiology, instruments) is well-grounded in domain knowledge. This provides important context for the transfer learning experiments.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C38",
+      "C39",
+      "C66",
+      "C67",
+      "C68"
+    ],
+    "result": "The authors identify multiple factors limiting model performance: labeling errors from MIC measurement variability and changing EUCAST norms, lack of MALDI-TOF-specific architectures, insufficient data for rare species/drugs, and inherent technological limitations of MALDI-TOF MS.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C38-C39 provide reasonable concerns about label quality, supported by domain knowledge about MIC measurement error and evolving clinical standards. However, no quantitative assessment of labeling error rates is provided. Claims C66-C68 are explicitly speculative (\"we postulate\") about performance limitations without empirical validation of these specific factors' contributions.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44",
+      "C69",
+      "C70",
+      "C71"
+    ],
+    "result": "The authors discuss important limitations for clinical deployment: bacterial resistance evolution will degrade model performance over time, the model may overrecommend broad-spectrum antibiotics (conflicting with stewardship goals), and clinical decisions require incorporating patient-specific factors beyond the model's scope. Uncertainty quantification would be valuable for medical applications.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C44 and C69-C71 represent thoughtful discussion of practical limitations and potential negative consequences. C40 is established biological knowledge. Claims C42-C44 about potential overrecommendation of broad-spectrum antibiotics are reasonable inferences but remain speculative without empirical validation. C69-C70 appropriately identify important considerations for clinical implementation.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53"
+    ],
+    "result": "The study employs patient-averaged (spectrum-macro) metrics: ROC-AUC measuring ranking quality of resistance predictions, and Prec@1(-) measuring correctness of top-ranked susceptible drug recommendations, which corresponds to treatment success rate if the top recommendation is always administered.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C53 provide clear definitions of the evaluation metrics used. The ROC-AUC definition (C51) is standard. The Prec@1(-) metric (C52-C53) is appropriately defined and its clinical interpretation is reasonable, though the assumption that \"top recommendation is always administered\" (C53) is somewhat simplified relative to actual clinical practice.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "All models were trained using Adam optimizer for maximum 50 epochs with batch size 128, linear learning rate warmup over 250 steps, validation checks every 0.1 epochs, and early stopping after 10 checks without validation ROC-AUC improvement.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C93 provide detailed training procedures that appear standard and reasonable. The frequent validation checks (every 0.1 epoch, C91) are justified given that each epoch involves multiple passes over individual samples. Early stopping criterion (C92-C93) is appropriate. These details support reproducibility.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C50",
+      "C72",
+      "C73"
+    ],
+    "result": "The authors conclude this work represents the first proof-of-concept for large-scale MALDI-TOF-based antimicrobial drug recommenders, demonstrating potential to greatly extend clinical diagnostic value of MALDI-TOF MS, with emphasis on using per-patient metrics for evaluation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C50, C72-C73 represent reasonable summary conclusions supported by the experimental results. The characterization as \"first proof of concept\" (C72) for large-scale recommenders is justified given prior work focused on specific species-drug combinations (C11). The emphasis on per-patient metrics (C73) is a methodological contribution, though the choice of metrics involves subjective judgment about clinical relevance.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13"
+    ],
+    "result": "The introduction establishes context: MALDI-TOF MS is routinely used for rapid species identification requiring only overnight culture; AMR caused 1.27 million deaths in 2019 and could reach 10 million by 2050; some resistance mechanisms fall outside MALDI-TOF's m/z range, but prior studies show some resistant strains can be predicted; previous work focused on specific species-drug combinations; the DRIAMS dataset enables unprecedented scale for AMR prediction studies.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C13 provide appropriate background context with proper citations. Mortality statistics (C5-C7) are from cited sources. Claims about MALDI-TOF limitations (C8) and prior work scope (C10-C11) are appropriately referenced. The characterization of DRIAMS enabling \"unprecedented scale\" (C13) is reasonable given the dataset's breadth. These claims establish motivation but are not primary results.",
+    "result_type": "MINOR"
+  }
+]

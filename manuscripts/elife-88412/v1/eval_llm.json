@@ -1,0 +1,445 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C3",
+      "C16",
+      "C17",
+      "C23"
+    ],
+    "result": "VGCC abundance predicts release probability within, but not between, synaptic subtypes. At both type Ib and type Is inputs, Cac levels positively correlate with Pr among individual synapses (C16, C17), demonstrating that VGCC abundance can predict heterogeneous release properties within each input type (C3). However, VGCC levels do not explain differences in Pr between the two inputs (C23).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C3, C16, C17, and C23 are well-supported by functional imaging data (Figure 1E, F) showing positive correlations within inputs and similar overall Cac levels between inputs despite different Pr. The statistical analysis (Figure 1J) confirms significantly different slopes for the Cac-Pr relationship at the two inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C4",
+      "C18",
+      "C19",
+      "C20",
+      "C21",
+      "C22"
+    ],
+    "result": "Average VGCC levels are similar at type Ib and type Is active zones despite differences in release probability. Confocal imaging reveals that Cac levels are the same at both inputs (C18) with similar distributions (C19), yet the relationship between VGCC levels and Pr differs between inputs (C20, C21). The same range of VGCC levels supports higher release probabilities at type Is synapses (C22).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C18-C22 are supported by confocal imaging data (Figure 1G-J) showing no significant difference in average Cac levels between inputs, similar distributions, but significantly different slopes in the Cac-Pr relationship. This provides strong evidence that VGCC abundance alone does not explain differences in Pr between inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C5",
+      "C26",
+      "C27",
+      "C28",
+      "C29",
+      "C30"
+    ],
+    "result": "VGCCs are more densely organized at high-Pr type Is active zones. STORM imaging reveals that while cluster size (C26) and localization number (C27) are similar between inputs, VGCC density is significantly higher at type Is AZs (C28). This finding is consistent with prior SMLM studies (C29) and suggests that compact VGCC organization increases coupling to synaptic vesicles, contributing to the steeper Cac-Pr relationship at type Is synapses (C30).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C5, C26-C30 are well-supported by STORM imaging data (Figure 2F-I) showing higher calculated VGCC density at type Is AZs despite similar cluster sizes and localization numbers. The inference about tighter coupling (C30) is reasonable given the density data combined with functional imaging results, though direct coupling measurements would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C7",
+      "C33",
+      "C34",
+      "C35"
+    ],
+    "result": "Bruchpilot levels are lower at high-Pr type Is inputs, resulting in a higher Cac:Brp ratio. Confocal imaging shows significantly lower Brp levels at type Is AZs (C33), which combined with similar Cac levels yields a higher Cac:Brp ratio at type Is synapses (C34). The authors hypothesize this promotes compact VGCC organization (C35).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C7, C33-C34 are supported by confocal imaging data (Figure 3A-C). However, C35 is a hypothesis rather than a demonstrated result. While the correlation between higher Cac:Brp ratio and higher VGCC density is consistent with this hypothesis, the causal relationship has not been experimentally tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C9",
+      "C36",
+      "C37",
+      "C38",
+      "C39"
+    ],
+    "result": "Bruchpilot levels positively correlate with Pr within, but not between, inputs. At type Ib AZs, Brp levels positively correlate with Pr (C36, C37), and a similar correlation is observed at type Is AZs (C38). This indicates that Brp contributes differently to synaptic heterogeneity within versus between inputs (C39), paralleling the pattern observed for VGCCs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C9, C36-C39 are supported by citations to prior work for type Ib (C36) and confocal imaging data showing correlation at type Is AZs (Figure 3D). The inference that Brp contributes differently within versus between inputs (C39) is well-supported by the data showing positive correlations within inputs but lower overall levels at high-Pr inputs.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C40",
+      "C41",
+      "C42",
+      "C43",
+      "C44"
+    ],
+    "result": "Bruchpilot has differential requirements at type Ib versus type Is synapses. In brp null mutants, Cac levels are diminished at both inputs (C40, C41), but the relative decrease is significantly greater at type Ib AZs (C42), indicating greater Brp dependence at low-Pr synapses (C43). This suggests additional factors establish input-specific differences in Brp dependence (C44).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C40-C43 are well-supported by confocal imaging data in brp-/- mutants (Figure 3G, H) showing reduced Cac levels at both inputs with a greater relative decrease at type Ib. C44 is speculation based on these observations, which is reasonable but not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C49",
+      "C50",
+      "C51"
+    ],
+    "result": "Presynaptic homeostatic potentiation involves rapid VGCC accumulation at both low- and high-Pr active zones. PhTx treatment induces significant increases in both Brp (C49) and Cac (C50) levels at type Is AZs, similar to type Ib, demonstrating that PHP involves rapid VGCC accumulation at both inputs (C51).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C49-C51 are well-supported by confocal imaging data (Figure 4C, D) showing increased Brp and Cac levels at both type Ib and Is AZs following PhTx treatment. This provides strong evidence for conserved mechanisms of homeostatic potentiation across synaptic subtypes.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C55",
+      "C56",
+      "C57",
+      "C58"
+    ],
+    "result": "Bruchpilot has input-specific roles in regulating VGCC dynamics during homeostatic plasticity. In brp-/- mutants, PhTx fails to induce Cac accumulation at either input (C55, C56), but Cac levels significantly decrease at type Is AZs while remaining unchanged at type Ib (C57), revealing an input-specific role for Brp in maintaining VGCC levels during AZ reorganization (C58).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C55-C58 are supported by confocal imaging data in brp-/- mutants following PhTx treatment (Figure 4G). The differential effects at the two inputs provide strong evidence for input-specific Brp functions during homeostatic plasticity, though the underlying mechanisms remain to be determined.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C6",
+      "C81",
+      "C82",
+      "C83",
+      "C85"
+    ],
+    "result": "Straightjacket/\u03b12\u03b4-3 levels are lower at high-Pr type Is inputs, indicating variable \u03b1:\u03b12\u03b4-3 stoichiometry. Confocal imaging of endogenously tagged Stj reveals significantly lower levels at type Is AZs (C81), while Cac and Ca-\u03b2 are present in similar ratios at both inputs (C82). This indicates that \u03b1:\u03b12\u03b4-3 stoichiometry is not always 1:1 in vivo and differs between synaptic subtypes (C83), suggesting a pool of VGCCs lacking \u03b12\u03b4-3 that may be enriched at high-Pr synapses (C85).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C6, C81-C83, C85 are supported by confocal imaging data (Figure 6E, F) showing similar Ca-\u03b2 but lower Stj levels at type Is AZs. The inference about variable stoichiometry (C83) and a pool of VGCCs lacking \u03b12\u03b4-3 (C85) is well-supported by the data and consistent with prior mammalian studies cited.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C8",
+      "C86",
+      "C87",
+      "C88"
+    ],
+    "result": "Straightjacket levels positively correlate with Pr within, but not between, inputs. Stj and Cac levels are highly positively correlated at both type Is (C86) and type Ib (C87) AZs. Since Cac levels correlate with Pr within inputs, this indicates Stj levels also positively correlate with Pr within, but not between, inputs (C88).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8, C86-C88 are supported by confocal imaging data (Figure 6G, H) showing strong positive correlations between Stj and Cac at individual AZs of both inputs. The inference about Stj-Pr correlation (C88) is logical given the established Cac-Pr correlations, though direct Stj-Pr correlation data would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C10",
+      "C91",
+      "C92",
+      "C93"
+    ],
+    "result": "Straightjacket and Bruchpilot are dynamically increased during homeostatic potentiation at both inputs. Following PhTx treatment, Stj levels increase by similar percentages at type Ib and Is AZs (27% and 26%, respectively) (C91), while Cac levels increase by 33% and 30% (C92). The similar increases suggest coordinated regulation (C93) of these proteins during PHP at both inputs (C10).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C10, C91-C93 are well-supported by confocal imaging data (Figures 4C, D and 7C) showing increased Brp, Cac, and Stj levels at both inputs following PhTx treatment. The similar percentage increases provide strong evidence for coordinated regulation during homeostatic plasticity.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C95",
+      "C124"
+    ],
+    "result": "Straightjacket levels are elevated during chronic homeostatic plasticity, maintaining the difference in stoichiometry. In GluRIIA-/- animals, Stj levels are elevated at both type Ib and Is inputs (18% and 17%, respectively) (C95). The similar increases at both inputs suggest the difference in Cac:Stj stoichiometry is maintained during chronic PHP (C124).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C95 and C124 are supported by confocal imaging data (Figure 7D-F) showing increased Stj levels at both inputs in GluRIIA-/- animals. The inference about maintained stoichiometry (C124) is reasonable given the similar percentage increases, though direct measurement of Cac:Stj ratios in chronic PHP would strengthen this conclusion.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C98"
+    ],
+    "result": "A two-mechanism model explains synaptic diversity. The authors propose that (1) nanoscale spatial organization and relative molecular content establish distinct average basal release probabilities between inputs, and (2) coordinated modulation of VGCC and active zone protein abundance independently tunes Pr among individual synapses of distinct inputs.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C98 represents a model synthesizing the collective findings of the study. It is well-supported by the data showing: (1) higher VGCC density and different Cac:Brp and Cac:Stj ratios at type Is synapses, and (2) positive correlations between VGCC/Brp/Stj levels and Pr within each input type. This model provides a coherent framework for understanding the results.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C1",
+      "C2",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15"
+    ],
+    "result": "Type Ib and type Is motor neurons form synapses with distinct release properties. Type Ib synapses have low Pr and facilitate (C1), while type Is synapses have higher Pr and depress (C2) in response to high-frequency stimulation. Cacophony is the sole Cav2 \u03b1 subunit responsible for triggering synaptic transmission in Drosophila (C11, C12). Type Is synapses exhibit heterogeneity and higher average Pr than type Ib (C13, C14), with relatively more high-Pr AZs (C15).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1-C2, C11-C15 are supported by citations to prior work and functional imaging data (Figure 1B-D). These claims establish the experimental system and basic properties of the two synaptic subtypes being studied.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C24",
+      "C25"
+    ],
+    "result": "Type Is active zones experience greater Ca2+ influx and exhibit tighter VGCC-SV coupling than type Ib. Type Is AZs experience approximately twofold greater Ca2+ influx than type Ib (C24), and type Ib synapses are more sensitive to EGTA, indicating looser VGCC-SV coupling (C25).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C24 and C25 are supported by citations to prior published work (He et al., 2023; Lu et al., 2016). These claims provide important context from the literature that helps interpret the current findings on VGCC organization.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C31",
+      "C32"
+    ],
+    "result": "Brp/CAST/ELKS proteins are central organizers of VGCCs and SV release sites. These proteins function as central organizers at developing synapses (C31), and Brp is more densely arranged at type Is AZs as measured by SMLM and STED imaging (C32).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C31 and C32 are supported by citations to prior published work. These claims provide important background on Brp function and prior observations of its organization at the two synaptic subtypes.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C45",
+      "C46",
+      "C47",
+      "C48"
+    ],
+    "result": "Presynaptic homeostatic potentiation is induced by glutamate receptor inhibition. Drosophila motor neurons homeostatically increase neurotransmitter release in response to glutamate receptor inhibition (C45). PhTx induces acute PHP within minutes (C46), involving rapid changes in VGCC and AZ protein levels at type Ib AZs (C47) and occurring at both type Ib and Is synapses (C48).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C45-C48 are supported by citations to prior published work. These claims establish the homeostatic plasticity paradigm used in the study and provide context for the experimental manipulations.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C52",
+      "C53",
+      "C54",
+      "C59",
+      "C60"
+    ],
+    "result": "Bruchpilot regulates multiple aspects of presynaptic homeostatic potentiation at type Ib synapses. At type Ib AZs, Brp regulates PHP-induced accumulation of Unc13A and Syntaxin-1A (C52), increases Cac density and decreases channel mobility (C53), and becomes more densely organized during PHP (C54). PhTx induces decreased Cac mobility in wild-type (C59) but increased mobility in brp-/- mutants (C60).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C52-C54, C59-C60 are supported by citations to prior published work (B\u00f6hme et al., 2019; Ghelani et al., 2023; Mrestani et al., 2021). These claims provide important context from the literature on Brp's role in PHP at type Ib synapses.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C63",
+      "C64",
+      "C65",
+      "C66",
+      "C67"
+    ],
+    "result": "VGCC auxiliary subunits regulate channel trafficking and function. \u03b12\u03b4 and \u03b2 subunits regulate forward trafficking, membrane insertion, and function (C63). \u03b2 subunits interact intracellularly with \u03b1 subunits (C64), while \u03b12\u03b4 subunits are largely extracellular (C65) and interact with extracellular proteins to promote synaptogenesis (C66). The Drosophila genome encodes one Cav2 \u03b1 subunit, one \u03b2 subunit, and three \u03b12\u03b4 subunits (C67).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C63-C67 are supported by citations to prior work and established knowledge about VGCC structure. These claims provide essential background on VGCC auxiliary subunits and the Drosophila VGCC complement.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C68",
+      "C69",
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Drosophila VGCC auxiliary subunits have characterized roles. Ca-\u03b2 is the sole \u03b2 subunit and enhances Ca2+ transients in sensory neurons (C68, C69). Stj/\u03b12\u03b4-3 has roles in Ca2+ channel clustering, homeostatic plasticity, and synapse organization at the NMJ (C70). Stolid promotes dendritic Cac expression in motor neurons (C71), while Ma2d functions in muscle (C72).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C68-C72 are supported by citations to prior published work. These claims provide important background on the known functions of Drosophila VGCC auxiliary subunits.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C75",
+      "C76",
+      "C77"
+    ],
+    "result": "Endogenously tagged VGCC auxiliary subunits show distinct expression patterns. All tagged subunits are expressed in the synaptic neuropil (C73), with Ca-\u03b2 enriched in mushroom bodies (C74). Only Ca-\u03b2 and Stj are present at the larval NMJ (C75), consistent with Stolid not regulating Ca2+ transients there (C76). Ca-\u03b2 is also expressed in muscle (C77).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C77 are supported by confocal imaging data (Figure 5F-H) showing expression patterns of endogenously tagged subunits. These findings validate the tagged lines and establish which subunits are present at the NMJ.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80"
+    ],
+    "result": "Ca-\u03b2 and Stj localize to active zones with similar levels of Ca-\u03b2 at both inputs. Both Ca-\u03b2 and Stj localize to AZs (C78), with Brp rings surrounding VGCC puncta including Ca-\u03b2 (C79). Ca-\u03b2 levels are similar at type Ib and Is AZs (C80).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C80 are supported by super-resolution and confocal imaging data (Figure 6A, B, E). These findings establish the localization of auxiliary subunits and show that Ca-\u03b2, like Cac, is present at similar levels at both inputs.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C61",
+      "C62"
+    ],
+    "result": "Potentiating synapses must coordinate VGCC accumulation and stabilization, with greater Brp dependence at high-Pr synapses. The authors speculate that synapses must coordinate accumulation of new VGCCs with stabilization of existing channels (C61), and that this is more dependent on Brp at high-Pr AZs (C62).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claims C61 and C62 are speculation based on the differential effects of brp loss on Cac levels during PHP at the two inputs (Figure 4G). While the speculation is reasonable given the data, it represents a hypothesis rather than a demonstrated result. Direct experiments testing VGCC accumulation versus stabilization would be needed to support this claim.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R24",
+    "claim_ids": [
+      "C84",
+      "C89",
+      "C90",
+      "C116",
+      "C117",
+      "C118",
+      "C119",
+      "C120"
+    ],
+    "result": "\u03b12\u03b4 subunits may transiently interact with \u03b1 subunits, and Stj regulates Cac trafficking. Studies suggest \u03b12\u03b4 interactions with \u03b1 subunits may be transient, leading to a pool of VGCCs lacking \u03b12\u03b4 (C84, C116, C117). Overexpression of \u03b12\u03b4 increases \u03b1 subunit abundance (C89), while \u03b1 overexpression alone does not (C90). Stj is required and rate-limiting for Cac accumulation (C118) and functions upstream of membrane insertion (C119), though a C. elegans study suggests auxiliary subunits may promote membrane stabilization (C120).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C84, C89-C90, C116-C120 are supported by citations to prior published work. These claims provide important context from the literature on \u03b12\u03b4-\u03b1 subunit interactions and Stj function, helping to interpret the current findings on variable stoichiometry.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R25",
+    "claim_ids": [
+      "C94",
+      "C96"
+    ],
+    "result": "Stj is required for Cac accumulation during chronic homeostatic plasticity. Cac abundance is increased in chronic PHP induced by GluRIIA loss (C94), and Stj is required for Cac accumulation at type Ib AZs during both acute and chronic PHP (C96).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C94 and C96 are supported by citations to prior published work (Gratz et al., 2019; Li et al., 2018; Petersen et al., 1997; Wang et al., 2016; Zhang et al., 2023). These claims provide important context on Stj's role in homeostatic plasticity.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R26",
+    "claim_ids": [
+      "C97"
+    ],
+    "result": "Multiple key active zone proteins distinguish synapses within, but not between, inputs at baseline and during plasticity. The abundance of Cac, Brp, and Stj distinguishes low- and high-Pr synapses within inputs but shows different patterns between inputs, both at baseline and during homeostatic plasticity.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C97 is an inference from the collective data showing that these proteins correlate with Pr within inputs but show different overall patterns between inputs. This synthesis is well-supported by the data presented throughout the study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R27",
+    "claim_ids": [
+      "C99",
+      "C100",
+      "C101",
+      "C102",
+      "C103",
+      "C104",
+      "C105",
+      "C106",
+      "C107"
+    ],
+    "result": "VGCC number correlates with Pr in some systems but not others. VGCC number positively correlates with Pr in hippocampus (C99), immature calyx of Held (C100), and developing Drosophila NMJ (C101). However, the mature calyx has higher Pr with fewer channels (C102), and cerebellar stellate cells form high-Pr synapses with lower VGCC levels (C103). In CA1 pyramidal neurons, raising Ca2+ influx at low-Pr synapses doesn't equalize Pr (C104), with Munc-13 differences proposed to establish synapse-specific properties (C105). Tighter VGCC-SV coupling is observed at high-Pr stellate synapses (C106) and mature calyx (C107).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C99-C107 are supported by citations to prior published work. These claims provide important context from the literature showing the paradoxical relationship between VGCC number and Pr across different systems, motivating the current study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R28",
+    "claim_ids": [
+      "C109",
+      "C110",
+      "C111",
+      "C112",
+      "C113"
+    ],
+    "result": "Brp has synapse-specific roles and interacts with multiple active zone proteins. Brp interacts with AZ proteins to promote Cac clustering, organize SVs, and recruit Unc13A (C109). Type Ib and Is synapses have distinct Brp requirements (C110), supported by studies in Drosophila (C111) and mammalian synapses (C112). A transcriptomic study provides a starting point for identifying regulators of molecular differences (C113).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C109-C113 are supported by citations to prior work and data from the current study (Figures 3, 4). These claims provide context on Brp function and synapse-specific roles, supporting the interpretation of the current findings.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R29",
+    "claim_ids": [
+      "C114",
+      "C115",
+      "C121",
+      "C122",
+      "C123",
+      "C125"
+    ],
+    "result": "VGCC subunit genes are alternatively spliced, and \u03b12\u03b4-3 is a drug target. VGCC subunit genes are extensively alternatively spliced across species (C114). \u03b2 and \u03b12\u03b4 subunits are generally considered positive regulators (C115). In mammals, \u03b1-Neurexin inhibits Ca2+ currents in channels containing \u03b12\u03b4-3 (C121), and Drosophila Neurexin loss reduces release (C122). A transcriptomic study found no differences in Stj splice isoforms between inputs (C123). \u03b12\u03b4-3 is a drug target for epilepsy, pain, and anxiety (C125).",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C114-C115, C121-C123, C125 are supported by citations to prior work and established knowledge. These claims provide broader context on VGCC diversity, potential mechanisms for functional differences, and clinical relevance.",
+    "result_type": "MINOR"
+  }
+]

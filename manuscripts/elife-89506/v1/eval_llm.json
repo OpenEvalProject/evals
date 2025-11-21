@@ -1,0 +1,368 @@
+[
+  {
+    "result_id": "R1",
+    "claim_ids": [
+      "C30",
+      "C31",
+      "C32",
+      "C33",
+      "C34",
+      "C96"
+    ],
+    "result": "Bulk RNA-based BCR repertoires are dominated by plasma cells across different peripheral compartments, with the exception of IgM-producing plasma cells in tumors which are underrepresented in bulk tumor BCR repertoires.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C30-C34 and C96 collectively demonstrate through experimental comparison of sorted plasma cells and bulk samples (Figure 2) that bulk BCR repertoires closely resemble plasma cell repertoires in terms of overlap, isotype composition, and clonal distribution. The exception for IgM in tumors (C33-C34) is well-documented with statistical support.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R2",
+    "claim_ids": [
+      "C35",
+      "C36",
+      "C37",
+      "C38",
+      "C97",
+      "C98",
+      "C99"
+    ],
+    "result": "Tumor BCR repertoires show significantly greater similarity to tumor-draining lymph nodes than to peripheral blood, indicating that draining LNs contain a higher proportion of tumor-related BCR clonotypes and are a better source for studying anti-tumor B-cell responses.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C35-C38 and C97-C99 are supported by multiple overlap metrics (F2, D, R) shown in Figure 3 and supplementary figures. The data consistently demonstrate higher tumor/LN overlap compared to tumor/PBMC overlap across multiple patients and isotypes, with appropriate statistical testing.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R3",
+    "claim_ids": [
+      "C39",
+      "C40",
+      "C41",
+      "C42"
+    ],
+    "result": "IgG-expressing tumor-infiltrating B-cells show preferential association with lymph nodes and avoid systemic circulation, while IgA-expressing tumor-infiltrating B-cells are more likely to be found in peripheral blood.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C39-C42 are supported by isotype-specific overlap analysis shown in Figures 3E and 3F. The differential overlap patterns for IgG versus IgA repertoires provide consistent evidence for distinct trafficking patterns, though the mechanistic interpretation remains inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R4",
+    "claim_ids": [
+      "C43",
+      "C44",
+      "C45"
+    ],
+    "result": "Tumor BCR repertoires exhibit significantly higher clonality than PBMC or draining LN repertoires, with melanoma tumors showing lower IgM percentages compared to other cancer types, and isotype composition correlating between tumors and non-tumor tissues.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C43-C45 are supported by clonality analysis (Figures 3C, 3D) and isotype correlation data (Figures 3G, 3H) with appropriate statistical testing. The Shannon-Wiener index calculation is properly applied and the correlations are quantified with p-values.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R5",
+    "claim_ids": [
+      "C46",
+      "C47",
+      "C48",
+      "C49",
+      "C50",
+      "C100",
+      "C101",
+      "C102"
+    ],
+    "result": "CDR-H3 length is increased in tumor BCR repertoires compared to PBMC, particularly for IgA and IgG isotypes, with the exception of colorectal cancer IgA repertoires which show reduced CDR-H3 length, potentially indicating less mature and more polyreactive antibodies in tumors.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C46-C50 and C100-C102 are supported by CDR-H3 length analysis shown in Figure 4A-B and supplementary figures with statistical testing. However, the mechanistic interpretations (C50, C100-C102) are speculative and rely on cited literature rather than direct experimental validation in this study.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R6",
+    "claim_ids": [
+      "C51",
+      "C52",
+      "C53",
+      "C54",
+      "C55",
+      "C56",
+      "C63",
+      "C103"
+    ],
+    "result": "Tumor-infiltrating B-cells show altered CDR-H3 physicochemical properties (decreased kf4, kf5, kf6, lower hydropathy) compared to circulating B-cells, suggesting a less mature and less specific BCR repertoire that may indicate less stringent control for antibody-producing B cell development in the tumor microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C51-C56 and C63, C103 are supported by Kidera factor analysis shown in Figure 4C-D. The data show statistically significant differences in multiple CDR-H3 properties between tissues. However, the interpretation of these differences as indicating 'less mature' and 'less specific' repertoires (C63, C103) relies heavily on cited literature (Grimsholm et al., 2020) rather than direct functional validation.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R7",
+    "claim_ids": [
+      "C64",
+      "C65",
+      "C66"
+    ],
+    "result": "No significant difference in somatic hypermutation intensity was found between tissues for the top 100 most frequent clonotypes overall, but IgG clonotypes from lung cancer samples show significantly higher hypermutation levels compared to other cancer types.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C64-C66 are supported by hypermutation analysis with Figure 4E showing statistically significant differences between cancer types for IgG. The interpretation linking this to mutational load in lung cancer (C66) is speculative but reasonable.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R8",
+    "claim_ids": [
+      "C67",
+      "C68",
+      "C69",
+      "C104",
+      "C105"
+    ],
+    "result": "Clonal groups show isotype-dependent tissue distribution patterns: IgA-dominated groups are evenly distributed across tissues, IgG-dominated groups preferentially reside in tumors and LNs, and IgM-dominated groups show strong preference for colorectal cancer tumors, reflecting true clonal behavior rather than quantitative prevalence.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C67-C69 and C104-C105 are supported by triangle plot analysis shown in Figure 5B-D with appropriate normalization for isotype usage. The chi-square test for goodness of fit supports the conclusion that tissue distribution is not random. The interpretation of 'true clonal behavior' (C105) is justified by the normalization approach.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R9",
+    "claim_ids": [
+      "C70",
+      "C71",
+      "C72"
+    ],
+    "result": "Within a group of tumor-draining lymph nodes, individual LNs show differential involvement in interaction with the tumor, with some LNs showing significantly higher BCR repertoire overlap with tumors than others, suggesting inequality in access to tumor antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C70-C72 are supported by F2 metric analysis and network visualization shown in Figure 6A-B for colorectal cancer patients. The data clearly show differential overlap between different LNs and tumors in patient ccp2, though not in ccp3. The interpretation of 'inequality in access to tumor antigens' (C72) is reasonable but inferential.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R10",
+    "claim_ids": [
+      "C73",
+      "C74",
+      "C109"
+    ],
+    "result": "Significant spatial heterogeneity exists within individual lymph nodes, with different fragments showing differential overlap with tumor repertoires and differential distribution of tumor-dominated clonal groups, indicating that the BCR landscape of a lymph node remains heterogeneous despite chronic antigen exposure.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C73-C74 and C109 are supported by intra-LN analysis shown in Figure 7A-B for patient lcp3. The data demonstrate statistically significant differences in tumor overlap between LN fragments. The conclusion about persistent spatial heterogeneity (C109) is well-supported by the experimental data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R11",
+    "claim_ids": [
+      "C78",
+      "C79",
+      "C80",
+      "C81",
+      "C82",
+      "C83",
+      "C84"
+    ],
+    "result": "Intratumoral BCR repertoire heterogeneity varies significantly between patients, with some tumors showing homogeneous repertoires dominated by IgA and others showing heterogeneous repertoires with fragment-specific clonal groups; heterogeneity combined with high clonality may indicate formation of tertiary lymphoid structures, which were confirmed by immunohistochemistry.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C78-C84 are supported by intratumoral heterogeneity analysis (Figure 7C-D, supplementary figures) and immunohistochemistry data (Figure S4). The F2 metric analysis confirms significant differences between tumor fragments versus replicates. The hypothesis linking heterogeneity and clonality to TLS formation (C82) is speculative but supported by the immunohistochemistry confirmation of TLS presence (C83-C84).",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R12",
+    "claim_ids": [
+      "C4",
+      "C85",
+      "C86"
+    ],
+    "result": "Tumor-expanded BCR clonotypes are less hypermutated than non-expanded clonotypes, are not attributed to actively hypermutating clonal groups, and the largest expanded clonotypes are predominantly of IgM isotype.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C4, C85-C86 are supported by expanded clonotype analysis using EdgeR shown in Figure 8. The data demonstrate statistically significant differences in mutation levels between expanded and non-expanded clonotypes (Figure 8F). The observation about clonal group membership (C85) is based on direct analysis of the data.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R13",
+    "claim_ids": [
+      "C87",
+      "C88",
+      "C113"
+    ],
+    "result": "Phylogeny inferred from short CDR-H3 sequences generally reflects the true phylogeny from full-length sequences (correlation ~0.7), but fails to detect some significant differences between isotypes that are apparent in long sequences, representing a limitation of the 150 bp read length used in this study.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C87-C88 and C113 are supported by comparison of phylogenetic trees from short and long sequences with correlation analysis (p<6*10^-16). The authors appropriately acknowledge the limitation (C113) and provide validation data. However, the sample size for this validation is limited to one patient (lcp3).",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R14",
+    "claim_ids": [
+      "C89",
+      "C90",
+      "C91"
+    ],
+    "result": "In steady-state equilibrium without defined time-controlled antigenic stimulus, CDR-H3 properties (strength, charge, kf4) do not correlate with position on phylogenetic trees, and most large clonal lineages show negative selection (dN/dS <1), suggesting only a few immunoglobulin clonal groups show definitive signs of positive selection.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C89-C91 are supported by phylogenetic analysis shown in supplementary Figure S5C-D. The lack of correlation between CDR-H3 properties and tree position is demonstrated, and dN/dS analysis shows values <1 for large trees. The interpretation (C91) is reasonable given the data, though it acknowledges the limitation of studying steady-state rather than acute immune responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R15",
+    "claim_ids": [
+      "C92",
+      "C93",
+      "C94",
+      "C95",
+      "C6",
+      "C112"
+    ],
+    "result": "B-cells may be selected according to their CDR-H3 physicochemical properties before activating somatic hypermutation, as evidenced by differences in kf4, interaction strength, and charge between clonotypes belonging to clonal lineages versus those that do not, with tissue-specific patterns suggesting selection occurs before SHM.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C92-C95, C6, and C112 are supported by analysis of CDR-H3 properties depending on clonal status shown in supplementary Figure S6. The data show statistically significant differences between 'singles' and clonal group members in multiple properties. However, the conclusion that selection occurs 'before' SHM (C95, C6) is inferential and based on the assumption that clonal group membership indicates active SHM, which may not always be true.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R16",
+    "claim_ids": [
+      "C1",
+      "C7"
+    ],
+    "result": "Current understanding suggests tumors may be infiltrated with diffuse B cells or develop organized lymphoid structures where somatic hypermutation occurs locally, and B-cell infiltration is often a positive prognostic factor, especially with tertiary lymphoid structure formation.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C1 and C7 represent established knowledge in the field and are appropriately cited. These claims provide context for the study but are not novel findings from this work.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R17",
+    "claim_ids": [
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "C18"
+    ],
+    "result": "Tumor-infiltrating B-cells may act through multiple mechanisms including antigen presentation, cytokine production, and antibody production with various effector functions that depend on isotype and specificity, with these processes influenced by the tumor microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C8-C18 represent established knowledge from cited literature and provide mechanistic context for the study. These are not novel findings but appropriate background information.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R18",
+    "claim_ids": [
+      "C19",
+      "C20",
+      "C21",
+      "C22",
+      "C23",
+      "C24",
+      "C25",
+      "C26",
+      "C27",
+      "C28",
+      "C29"
+    ],
+    "result": "Various BCR repertoire features including IGH expression, clonality, IgG1 proportion, V-segment usage, and specific antibody motifs have been associated with clinical outcomes in multiple cancer types, as established by previous research.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C19-C29 represent prior work from cited literature that motivates the current study. These are appropriately cited and provide important context but are not findings from this manuscript.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R19",
+    "claim_ids": [
+      "C57",
+      "C58",
+      "C59",
+      "C60",
+      "C61",
+      "C62"
+    ],
+    "result": "Established relationships exist between B-cell maturation stage and CDR-H3 properties, and between antibody specificity/polyreactivity and CDR-H3 characteristics such as length, charge, and hydrophobicity, as documented in prior literature.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C57-C62 represent established knowledge from cited literature (Grimsholm et al., 2020; Rabia et al., 2018; Laffy et al., 2017; Prigent, 2016; Wardemann et al., 2003; Larimore et al., 2012; Lecerf et al., 2019) that provides the interpretive framework for the authors' findings. These are not novel findings from this study.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R20",
+    "claim_ids": [
+      "C75",
+      "C76",
+      "C77",
+      "C106",
+      "C107",
+      "C108",
+      "C110"
+    ],
+    "result": "Prior research has established that intratumoral genetic and immune heterogeneity are correlated, TCR repertoire heterogeneity reflects tumor mutation distribution and affects clinical outcomes, and germinal centers within lymph nodes share clonal composition to some extent.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C75-C77 and C106-C108, C110 represent established findings from cited literature that provide context for interpreting the BCR repertoire heterogeneity findings in this study. These are appropriately cited background claims.",
+    "result_type": "MINOR"
+  },
+  {
+    "result_id": "R21",
+    "claim_ids": [
+      "C2",
+      "C3"
+    ],
+    "result": "Draining lymph nodes are differentially involved in interaction with the tumor site, and significant heterogeneity exists between different parts of a single lymph node.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claims C2-C3 are core findings supported by multiple lines of evidence including LN-to-LN heterogeneity analysis (Figure 6) and intra-LN heterogeneity analysis (Figure 7A-B). These represent novel observations about spatial organization of anti-tumor B-cell responses.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R22",
+    "claim_ids": [
+      "C5"
+    ],
+    "result": "There is a shift in CDR-H3 properties towards less mature and less specific BCR repertoire in tumor-infiltrating B-cells compared to circulating B-cells, which may indicate less stringent control for antibody-producing B cell development in tumor microenvironment.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "SUPPORTED",
+    "evaluation": "Claim C5 is supported by comprehensive CDR-H3 property analysis (Figure 4) showing multiple statistically significant differences between tumor and PBMC repertoires. However, the mechanistic interpretation about 'less stringent control' is inferential and not directly tested.",
+    "result_type": "MAJOR"
+  },
+  {
+    "result_id": "R23",
+    "claim_ids": [
+      "C111"
+    ],
+    "result": "The most expanded BCR clonotypes in heterogeneous tumors rarely overlap between fragments, probably representing clonotypes that recognize subclonal tumor antigens.",
+    "reviewer_id": "OpenEval",
+    "reviewer_name": "OpenEval",
+    "evaluation_type": "UNCERTAIN",
+    "evaluation": "Claim C111 is based on intratumoral heterogeneity data (Figure 8) showing fragment-specific expanded clonotypes. However, the interpretation that these recognize 'subclonal tumor antigens' is speculative and not validated. The authors acknowledge this needs direct testing of antigen specificity.",
+    "result_type": "MAJOR"
+  }
+]
